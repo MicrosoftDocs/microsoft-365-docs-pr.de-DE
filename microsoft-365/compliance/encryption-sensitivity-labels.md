@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Konfigurieren Sie Vertraulichkeitsbezeichnungen für die Verschlüsselung, die Ihre Daten durch Einschränken von Zugriff und Nutzung schützt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b862cbffcc4268876444618f7c2708c04b63630e
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 83ed515d5ac6ea853c3e6a822fae0a03f73fc37c
+ms.sourcegitcommit: 9e4b3df05eff94fe1be4ef8618a7ce6f2fca3658
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561716"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49904030"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung
 
@@ -178,6 +178,9 @@ Als bewährte Methode sollten Sie besser Gruppen anstelle von Benutzern verwende
 
 Diese Einstellung schränkt den Zugriff der Benutzer auf den Inhalt nicht ein, der von der Bezeichnung verschlüsselt wird, während sie den Inhalt weiterhin verschlüsselt und Ihnen Optionen zum Einschränken des Inhalts (Berechtigungen) und zum Zugriff auf (Ablauf und Offlinezugriff) bietet. Die Anwendung, die die verschlüsselten Inhalte öffnet, muss die verwendete Authentifizierung unterstützen können. Aus diesem Grund funktionieren Partner-Sozialnetwerkanbieter wie Google und die Authentifizierung mit einer Einmalkennung nur für E-Mail und nur dann, wenn Sie Exchange Online verwenden. Microsoft-Konten können mit Office 365-Apps und dem [Azure Information Protection-Viewer](https://portal.azurerms.com/#/download)verwendet werden.
 
+> [!NOTE]
+> Erwägen Sie die Verwendung dieser Einstellung mit [SharePoint- und OneDrive-Integration in Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) wenn Vertraulichkeitsbezeichnungen [für Office-Dateien in SharePoint und OneDrive aktiviert](sensitivity-labels-sharepoint-onedrive-files.md) sind.
+
 Einige typische Szenarien für die Einstellung "Alle authentifizierten Benutzer":
 
 - Es ist Ihnen egal, wer auf den Inhalt zugreift, aber Sie möchten die Verwendung einschränken. So möchten Sie beispielsweise nicht, dass der Inhalt bearbeitet, kopiert oder gedruckt wird.
@@ -274,7 +277,7 @@ So können Die Benutzer mithilfe des Azure Information Protection-Clients mit ei
 
 Bei der integrierten Bezeichnung sehen die Benutzer dasselbe Dialogfeld, wenn Sie Folgendes auswählen:
 
-- Windows: Registerkarte **Datei** > **Info** > **Dokument schützen** > **Zugriff einschränken** > **Eingeschränkter Zugriff**
+- Windows: Registerkarte **"Datei"** > **Info** > **Dokument schützen** > **Zugriff einschränken** > **Eingeschränkter Zugriff**
 
 - macOS: Registerkarte **Überprüfen** > **Schutz** > **Berechtigungen** > **Eingeschränkter Zugriff**
 
@@ -383,11 +386,11 @@ Durch die Verschlüsselung Ihrer sensibelsten Dokumente und E-Mails können Sie 
 
 - Die Funktion [Automatisches Speichern](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) in Office-Apps (Windows-, Mac-, Android-und IOS) ist für verschlüsselte Dateien deaktiviert. Benutzern wird eine Meldung angezeigt, dass die Datei eingeschränkte Berechtigungen hat, die entfernt werden müssen, bevor das automatische Speichern aktiviert werden kann.
 
-- Das Öffnen verschlüsselter Dateien in Office-Apps (Windows, Mac, Android und iOS) kann länger dauern.
+- Das Öffnen verschlüsselter Dateien in Office-Anwendungen (Windows, Mac, Android und iOS) kann länger dauern.
 
 - Wenn beim [Auschecken des Dokuments in SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de) mithilfe einer Office-App eine Bezeichnung hinzugefügt wird, die Verschlüsselung anwendet, und der Benutzer dann das Auschecken verwirft, bleibt das Dokument mit der Bezeichnung versehen und wird verschlüsselt.
 
-- Die folgenden Aktionen für verschlüsselte Dateien werden von Office-Apps (Windows, Mac, Android und iOS) nicht unterstützt und Benutzern wird eine Fehlermeldung angezeigt, dass etwas schief gelaufen ist. Allerdings kann die SharePoint-Funktionalität als Alternative verwendet werden:
+- Die folgenden Aktionen für verschlüsselte Dateien werden von Office-Apps (Windows, Mac, Android und IOS) nicht unterstützt und Benutzern wird eine Fehlermeldung angezeigt, dass etwas schief gelaufen ist. Allerdings kann die SharePoint-Funktionalität als Alternative verwendet werden:
 
   - Anzeigen, wiederherstellen und speichern von Kopien früherer Versionen. Alternativ können Benutzer diese Aktionen mit Office im Web durchführen, wenn sie Folgendes verwenden: [Aktivieren und Konfigurieren der Versionsverwaltung für eine Liste oder Bibliothek](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
   - Ändern des Namens oder des Speicherorts der Dateien. Alternativ können Benutzer in SharePoint [eine Datei, einen Ordner oder einen Link in einer Dokumentbibliothek umbenennen](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185).
@@ -413,3 +416,6 @@ Bevor Sie Verschlüsselung verwenden können, müssen Sie möglicherweise einige
     - Für Exchange Online lesen Sie die Anweisungen für [Exchange Online: Konfigurieren von IRM](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
     - For das lokale Exchange müssen Sie den [RMS-Connector bereitstellen und Ihre Exchange-Server konfigurieren](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 
 
+## <a name="next-steps"></a>Nächste Schritte
+
+Müssen Sie Ihre gekennzeichneten und verschlüsselten Dokumente mit Personen außerhalb Ihrer Organisation teilen?  Informationen hierzu finden Sie unter [Teilen verschlüsselter Dokumente mit externen Benutzern](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).

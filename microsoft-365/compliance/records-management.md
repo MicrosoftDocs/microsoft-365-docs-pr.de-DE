@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Mit der Datensatzverwaltung in Microsoft 365 können Sie Ihre Aufbewahrungszeitpläne auf einen Dateiplan anwenden, der die Aufbewahrung, die Datensatzdeklaration und die Löschung verwaltet.
-ms.openlocfilehash: 0057be98c79ec07018d86f3130d7e03d68c74446
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 1f6ab392abbf55851e1f084507d3f1658c3cf264
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790201"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905234"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Weitere Informationen zur Datensatzverwaltung in Microsoft 365
 
@@ -85,7 +85,7 @@ Eine Standard-Aufbewahrungsbezeichnung verfügt über Aufbewahrungseinstellungen
 |Löschen|Zulässig <sup>1</sup> |**Gesperrt** |**Gesperrt**| **Gesperrt**|
 |Kopie|Zulässig |Allowed | Zulässig| Zulässig|
 |Innerhalb eines Containers bewegen<sup>2</sup>|Zulässig |Zulässig | Allowed| Zulässig|
-|Über Container hinweg bewegen <sup>2</sup>|Zulässig |Zulässig, wenn nie entsperrt | Zulässig| **Gesperrt**|
+|Über Container hinweg bewegen <sup>2</sup>|Zulässig |Zulässig, wenn nie entsperrt | **Gesperrt** | **Gesperrt**|
 |Öffnen/Lesen|Zulässig |Zulässig | Zulässig| Allowed|
 |Ändern der Bezeichnung|Zulässig |Zulässig – nur Container-Administrator | Zulässig – nur Container-Administrator| **Gesperrt**
 |Bezeichnung entfernen|Zulässig |Zulässig – nur Container-Administrator | Zulässig – nur Container-Administrator| **Gesperrt**

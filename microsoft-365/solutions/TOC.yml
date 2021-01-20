@@ -93,6 +93,22 @@
           href: information-protection-deploy-monitor-respond.md
 - name: Workload-Lösungen und -Szenarien
   items:
+    - name: Übersicht
+      href: workload-solutions-scenarios-overview.md
+    - name: Verwaltung von Mandanten
+      items:
+        - name: Übersicht
+          href: tenant-management-overview.md
+        - name: Schritt 1. Ihre Mandanten
+          href: tenant-management-tenants.md
+        - name: "Schritt\_2. Optimales Netzwerk"
+          href: tenant-management-networking.md
+        - name: "Schritt\_3. Identität"
+          href: tenant-management-identity.md
+        - name: "Schritt\_4. Migration"
+          href: tenant-management-migration.md
+        - name: "Schritt\_5. Verwaltung von Geräten und Apps"
+          href: tenant-management-device-management.md
     - name: Teamwork und Zusammenarbeit
       items:
         - name: Architekturposter für Microsoft Teams

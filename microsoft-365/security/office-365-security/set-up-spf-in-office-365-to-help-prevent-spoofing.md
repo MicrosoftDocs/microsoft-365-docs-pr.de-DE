@@ -18,33 +18,34 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie ein DNS-Eintrag (Domain Name Service) für die Verwendung von SPF (Sender Policy Framework) mit Ihrer benutzerdefinierten Domäne in Office 365 aktualisiert wird.
-ms.openlocfilehash: a6cd2a0cf60812bb874c1be63fb2d294cda6d6aa
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: 536f727ee71db70490259179ff8e47009c547f89
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881717"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905223"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Einrichten von SPF zum Verhindern von Spoofing
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-- [Voraussetzungen <a name="UpdateSPFTXT"></a>](#updating-your-spf-txt-record-for-office-365-a-nameUpdateSPFTXT)
-- [Erstellen / Aktualisieren Ihres SPF TXT-Eintrags für Office 365 <a name="CreateUpdateSPFTXT"></a>](#to-create-or-update-your-spf-txt-record-a-namecreateupdatespftxta)
-    - [Wie kann ich Subdomänen behandeln? <a name="SPFandSubdomains"></a>](#how-to-handle-subdomains-a-namespfandsubdomainsa)
-- [SPF-Problembehandlung und bewährte Verfahren <a name="TshootingSPF"></a>](#next-steps-after-you-set-up-spf-for-office-365-a-nametshootingspfa)
-- [Erweiterte SPF-Beispiele <a name="AdvancedSPFexs"></a>](#more-information-about-spf-a-nameadvancedspfexsa)
+- [Voraussetzungen](#prerequisites)
+- [Erstellen oder aktualisieren Sie Ihren SPF TXT-Eintrag](#create-or-update-your-spf-txt-record)   
+  - [Wie kann ich Subdomänen behandeln?](#how-to-handle-subdomains)
+- [Was ist der Zweck der SPF-E-Mail-Authentifizierung?](#what-does-spf-email-authentication-actually-do)   
+   - [Problembehandlung von SPF](#troubleshooting-spf)
+- [Weitere Informationen zu SPF](#more-information-about-spf)
 
 Dieser Artikel enthält Informationen zum Aktualisieren eines DNS-Eintrags (Domain Name Service) für die Verwendung von SPF (Sender Policy Framework) -E-Mail-Authentifizierung mit Ihrer benutzerdefinierten Domäne in Office 365.
 
 SPF hilft bei der Überprüfung ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne gesendet werden. Es ist ein erster Schritt zur Einrichtung der anderen empfohlenen E-Mail-Authentifizierungsmethoden DMARC und DKIM (zwei weitere in Office 365 unterstützte E-Mail-Authentifizierungsmethoden).
 
-## <a name="updating-your-spf-txt-record-for-office-365"></a>Aktualisieren Ihres SPF TXT-Eintrags für Office 365 <a name="UpdateSPFTXT"></a>
+## <a name="prerequisites"></a>Voraussetzungen
 
 > [!IMPORTANT]
 > Wenn Sie ein **kleines Unternehmen** sind oder mit IP-Adressen oder DNS-Konfigurationen nicht vertraut sind, wenden Sie sich an Ihre Internet-Domänenregistrierungsstelle (z. B. GoDaddy, Bluehost, web.com), um Hilfe zur DNS-Konfiguration von SPF (und anderen E-Mail-Authentifizierungsmethoden) zu erhalten. *Ebenfalls*, wenn Sie keine benutzerdefinierte URL gekauft haben oder verwenden (d. h. die URL, die Sie und Ihre Kunden durchsuchen, um Office 365 zu erreichen, endet auf **onmicrosoft.com**), wurde SPF für Sie im Office 365-Dienst eingerichtet. In diesem Fall sind keine weiteren Schritte mehr erforderlich. Vielen Dank fürs Lesen.
 
-Bevor Sie den TXT-Eintrag im DNS aktualisieren, müssen Sie einige Informationen sammeln, die für die Erstellung des Eintrags erforderlich sind. Erweiterte Beispiele und eine ausführlichere Erläuterung zur unterstützten SPF-Syntax finden Sie unter [Funktionsweise von SPF zur Verhinderung von Spoofing und Phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
+Bevor Sie den SPF TXT-Eintrag für Office 365 im externen DNS erstellen oder aktualisieren, müssen Sie einige Informationen sammeln, die für die Erstellung des Eintrags erforderlich sind. Erweiterte Beispiele und eine ausführlichere Erläuterung zur unterstützten SPF-Syntax finden Sie unter [Funktionsweise von SPF zur Verhinderung von Spoofing und Phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
 
 Sammeln Sie folgende Informationen:
 
@@ -59,7 +60,7 @@ Sammeln Sie folgende Informationen:
 > [!IMPORTANT]
 > Für die Verwendung einer benutzerdefinierten Domäne erfordert Office 365, einen SPF (Sender Policy Framework) TXT-Eintrag Ihrem DNS-Eintrag hinzuzufügen, um Spoofing zu verhindern.
 
-## <a name="create-or-update-your-spf-txt-record"></a>Erstellen oder Aktualisieren Sie den SPF TXT-Eintrag <a name="CreateUpdateSPFTXT"></a>
+## <a name="create-or-update-your-spf-txt-record"></a>Erstellen oder aktualisieren Sie Ihren SPF TXT-Eintrag
 
 1. Machen Sie sich mit der SPF-Syntax in der folgenden Tabelle vertraut.
 
@@ -98,7 +99,7 @@ Sammeln Sie folgende Informationen:
 
 4. Testen Sie Ihren SPF TXT-Eintrag.
 
-## <a name="how-to-handle-subdomains"></a>Wie kann ich Subdomänen behandeln? <a name="SPFandSubdomains"></a>
+## <a name="how-to-handle-subdomains"></a>Wie kann ich Subdomänen behandeln?
 
 Es ist wichtig zu beachten, *dass Sie für jede Subdomäne einen separaten Eintrag erstellen müssen, da Subdomänen nicht den SPF-Eintrag der Domäne der obersten Ebene erben*.
 
@@ -108,7 +109,7 @@ Ein zusätzlicher Wildcard-SPF-Eintrag (`*.`) ist für jede Domäne und Subdomä
 *.subdomain.contoso.com. IN TXT "v=spf1 -all"
 ```
 
-## <a name="next-steps"></a>Nächste Schritte <a name="TshootingSPF"></a>
+## <a name="troubleshooting-spf"></a>Problembehandlung von SPF
 
 Gibt es Probleme mit Ihrem SPF TXT-Eintrag? Lesen Sie [Problembehandlung: Bewährte Methoden für SPF in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
 
@@ -129,7 +130,7 @@ Wenn Sie bereits E-Mail für Office 365 eingerichtet haben, haben Sie bereits di
 
 - Sie möchten DKIM und DMARC einrichten (empfohlen).
 
-## <a name="more-information-about-spf"></a>Weitere Informationen zu SPF <a name="AdvancedSPFexs"></a>
+## <a name="more-information-about-spf"></a>Weitere Informationen zu SPF
 
 Erweiterte Beispiele, eine ausführlichere Erläuterung zur unterstützten SPF-Syntax, zu Spoofing, zur Problembehandlung und zur Unterstützung von SPF durch Office 365 finden Sie unter [How SPF works to prevent spoofing and phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
 
