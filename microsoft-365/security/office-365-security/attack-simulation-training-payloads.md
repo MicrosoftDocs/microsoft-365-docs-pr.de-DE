@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratoren können erfahren, wie Sie benutzerdefinierte Nutzlasten für das Training zur Angriffssimulation in Microsoft Defender für Office 365 erstellen.
-ms.openlocfilehash: 45311ad4c4eb09c8238d278475248680fbc66287
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 86a962dc3117708ac71195b9efc336fa30c573dd
+ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877128"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49908341"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Erstellen einer benutzerdefinierten Nutzlast für Angriffssimulationsschulungen
 
@@ -39,7 +39,7 @@ Jetzt ist es an der Zeit, Ihre Nutzlast zu erstellen. Geben Sie den Namen, die E
 
 Zum Erstellen Ihrer Nutzlast steht ein Rich-Text-Editor zur Verfügung. Sie können auch eine E-Mail importieren, die Sie zuvor erstellt haben. Wenn Sie den Textkörper der E-Mail erstellen, nutzen Sie die dynamischen Tags, um die E-Mail an Ihre Ziele zu personalisieren.  Klicken **Sie auf den Link "Phishing",** um die zuvor ausgewählte Phishing-URL dem Nachrichtentext hinzuzufügen.
 
-![Phishinglink und dynamische Tags, die in der Nutzlasterstellung für Microsoft Defender für Office 365 hervorgehoben sind](../../media/attack-sim-preview-payload-email-body.png)
+![Phishinglink und dynamische Tags, die bei der Erstellung der Nutzlast für Microsoft Defender für Office 365 hervorgehoben sind](../../media/attack-sim-preview-payload-email-body.png)
 
 > [!TIP]
 > Um Zeit zu sparen, aktivieren Sie die Option, um alle Links in der E-Mail-Nachricht durch **den Phishinglink zu ersetzen.**
@@ -50,7 +50,7 @@ Nachdem Sie die Nutzlast nach Ihren Wünschen erstellen möchten, klicken Sie au
 
 Indikatoren helfen Mitarbeitern bei der Angriffssimulation, den Hinweis zu verstehen, nach dem sie bei zukünftigen Angriffen suchen können. Klicken Sie zu Beginn auf **"Indikator hinzufügen".**
 
-Wählen Sie in der Dropdownliste einen Indikator aus, den Sie verwenden möchten. Diese Liste ist so krümmt, dass sie die häufigsten Hinweise enthält, die in Phishing-E-Mail-Nachrichten angezeigt werden. Stellen Sie nach der Auswahl sicher, dass die Anzeigeplatzierung im Textkörper der E-Mail festgelegt **ist,** und klicken Sie auf **"Text auswählen".** Markieren Sie den Teil Ihrer Nutzlast, in dem dieser Indikator angezeigt wird, und klicken Sie auf **"Auswählen".**
+Wählen Sie in der Dropdownliste einen Indikator aus, den Sie verwenden möchten. Diese Liste ist so behandelt, dass sie die häufigsten Hinweise enthält, die in Phishing-E-Mail-Nachrichten angezeigt werden. Stellen Sie nach der Auswahl sicher, dass die Anzeigeplatzierung im Textkörper der E-Mail festgelegt **ist,** und klicken Sie auf **"Text auswählen".** Markieren Sie den Teil Ihrer Nutzlast, in dem dieser Indikator angezeigt wird, und klicken Sie auf **"Auswählen".**
 
 ![Hervorgehobener Text im Nachrichtentext, der einem Indikator im Angriffssimulationstraining hinzugefügt werden soll](../../media/attack-sim-preview-select-text.png)
 
@@ -58,10 +58,10 @@ Fügen Sie eine benutzerdefinierte Beschreibung hinzu, um den Indikator zu besch
 
 ## <a name="review-payload"></a>Nutzlast überprüfen
 
-Sie sind damit fertig, Ihre Nutzlast zu erstellen. Jetzt ist es an der Zeit, die Details zu überprüfen und eine Vorschau Ihrer Nutzlast anzuzeigen. Die Vorschau enthält alle Von Ihnen erstellten Indikatoren. In diesem Schritt können Sie jeden Teil der Nutzlast bearbeiten. Sobald sie erfüllt ist, **übermitteln Sie** Ihre Nutzlast.
+Sie sind damit fertig, Ihre Nutzlast zu erstellen. Jetzt ist es an der Zeit, die Details zu überprüfen und eine Vorschau Ihrer Nutzlast anzuzeigen. Die Vorschau enthält alle Von Ihnen erstellten Indikatoren. In diesem Schritt können Sie jeden Teil der Nutzlast bearbeiten. Sobald sie erfüllt ist, können **Sie Ihre** Nutzlast übermitteln.
 
 > [!IMPORTANT]
-> Nutzlasten, die Sie erstellt haben, haben **den Mandanten** als Quelle. Stellen Sie beim Auswählen von Nutzlasten sicher, dass Sie den Mandanten nicht **herausfiltern.**
+> Nutzlasten, die Sie erstellt haben, haben **den Mandanten** als Quelle. Stellen Sie bei der Auswahl von Nutzlasten sicher, dass Sie den Mandanten nicht **herausfiltern.**
 
 ## <a name="related-links"></a>Verwandte Links
 

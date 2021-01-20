@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365-Verschlüsselungs Ketten
+title: Microsoft 365-Verschlüsselungsketten
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -16,875 +16,843 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-description: Zeigen Sie eine vollständige Liste der Stammzertifikate und Zertifizierungsstellen (CAS) in Microsoft 365 an.
-ms.openlocfilehash: c2a623d1e52318e954efbc843b036f99314a2feb
-ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
+description: Zeigen Sie eine vollständige Liste der Stammzertifikate und Zertifizierungsstelle (CAs) in Microsoft 365 an.
+ms.openlocfilehash: 96499cbf2eae554ecddc9bc7bcf622db2515f980
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48580963"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905264"
 ---
-# <a name="microsoft-365-encryption-chains"></a>Microsoft 365-Verschlüsselungs Ketten
+# <a name="microsoft-365-encryption-chains"></a>Microsoft 365-Verschlüsselungsketten
 
-Microsoft 365 nutzt eine Reihe unterschiedlicher Zertifikatanbieter. Im folgenden wird die vollständige Liste der bekannten Microsoft 365-Stammzertifikate beschrieben, die Kunden beim Zugriff auf Microsoft 365 auftreten können. Informationen zu den Zertifikaten, die Sie möglicherweise in ihrer eigenen Infrastruktur installieren müssen, finden Sie unter [Planen von Drittanbieter-SSL-Zertifikaten für Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates). Die folgenden Zertifikatinformationen gelten für alle weltweiten und nationalen Cloud-Instanzen von Microsoft 365.
+Microsoft 365 nutzt eine Reihe verschiedener Zertifikatanbieter. Im Folgenden wird die vollständige Liste der bekannten Microsoft 365-Stammzertifikate beschrieben, die Kunden beim Zugriff auf Microsoft 365 möglicherweise finden. Informationen zu den Zertifikaten, die Sie möglicherweise in Ihrer eigenen Infrastruktur installieren müssen, finden Sie unter [Plan for third-party SSL certificates for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates). Die folgenden Zertifikatinformationen gelten für alle weltweiten und nationalen Cloudinstanzen von Microsoft 365.
 
-Letzte Änderung: **10/16/2020**
+Last updated: **16.10.2020**
 
 >[!NOTE]
->Informationen zu Zertifikaten, die für **DoD-und gcc-High** -Kunden gelten, finden Sie unter [Microsoft 365 Encryption Chains-DoD und gcc High](encryption-office-365-certificate-chains-itar.md).
+>Zertifikatinformationen, die für **DOD-** und GCC High-Kunden gelten, finden Sie unter [Microsoft 365-Verschlüsselungsketten – DOD und GCC High](encryption-office-365-certificate-chains-itar.md).
 
-| **Zertifikattyp** | **P7B herunterladen** | **CRL-Endpunkte** | **OCSP-Endpunkte** | **AIA-Endpunkte** |
+| **Zertifikattyp** | **P7b-Download** | **CRL Endpoints** | **OCSP-Endpunkte** | **AIA Endpoints** |
 | --- | --- | --- | --- | --- |
-| Öffentlich vertrauenswürdige Stammzertifikate | [Microsoft 365-Stammzertifikat-Bundle (P7B)](https://download.microsoft.com/download/4/a/b/4ab1c940-826b-444b-b287-b7a902e68da0/m365_root_certs_20201012.p7b) | crl.globalsign.net<br>www.d-trust.net | Nicht zutreffend | Nicht zutreffend |
+| Öffentlich vertrauenswürdige Stammzertifikate | [Microsoft 365-Stammzertifikatbundl (P7B)](https://download.microsoft.com/download/4/a/b/4ab1c940-826b-444b-b287-b7a902e68da0/m365_root_certs_20201012.p7b) | crl.globalsign.net<br>www.d-trust.net | Nicht zutreffend | Nicht zutreffend |
 | Öffentlich vertrauenswürdige Zwischenzertifikate | [Microsoft 365 Intermediate Certificate Bundle (P7B)](https://download.microsoft.com/download/1/4/7/14777f28-3fde-4958-aebf-bd192a4a7fac/m365_intermediate_certs_20201013.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
 
-Erweitern Sie die unten aufgeführten Stamm-und zwischen Abschnitte, um weitere Details zu den Zertifikatanbietern anzuzeigen.
+Erweitern Sie die unten stehenden Stamm- und Zwischenabschnitte, um weitere Details zu den Zertifikatanbietern anzuzeigen.
 
-## <a name="microsoft-365-root-certificate-details"></a>**Microsoft 365-Stammzertifikat Details**
+## <a name="microsoft-365-root-certificate-details"></a>**Microsoft 365-Stammzertifikatdetails**
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 
-| **Betreff** | CN = Baltimore Cybertrust-Stamm<br>OU = Cybertrust<br>O = Baltimore<br>C = IE |
+| **Betreff** | CN=CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
 | --- | --- |
-| **Seriennummer** | 02:00:00: B9 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Seriennummer** | 02:00:00:B9 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha1RSA |
-| **Gültigkeit nicht vor** | Mai 12 18:46:00 2000 UTC |
-| **Gültigkeit nicht nach** | Mai 12 23:59:00 2025 UTC |
-| **ID des Antragstellerschlüssels** | E5:9d: 59:30:82:47:58: cc: AC: Fa: 08:54:36:86:7B: 3A: B5:04:4D: F0 |
+| **Gültigkeit noch nicht vorher** | 12. Mai 18:46:00 2000 UTC |
+| **Gültigkeit nicht nach** | 12. Mai 23:59:00 2025 UTC |
+| **Subject Key Identifier** | e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Fingerabdruck (SHA-1)** | D4DE20D05E66FC53FE1A50882C78DB2852CAE474 |
 | **Fingerabdruck (SHA-256)** | 16AF57A9F676B0AB126095AA5EBADEF22AB31119D644AC95CD4B93DBF3F26AEB |
-| **PIN (SHA-256)** | Y9mvm0exBk1JoQ57f9Vm28jKo5lFm/woKcVxrYxu80o = |
+| **Pin (SHA-256)** | Y9mvm0exBk1JoQ57f9Vm28jKo5lFm/woKcVxrYxu80o= |
 
-### <a name="cnnic-root"></a>**CNNIC-Stamm**
+### <a name="cnnic-root"></a>**#A0**
 
-| **Betreff** | CN = CNNIC-Stamm<br>O = CNNIC<br>C = CN |
+| **Betreff** | CN=CNNIC ROOT<br>O=CNNIC<br>C=CN |
 | --- | --- |
 | **Seriennummer** | 49:33:00:01 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha1RSA |
-| **Gültigkeit nicht vor** | Apr 16 07:09:14 2007 UTC |
-| **Gültigkeit nicht nach** | Apr 16 07:09:14 2027 UTC |
-| **ID des Antragstellerschlüssels** | 65: F2:31: AD: 2a: F7: F7: DD: 52:96:0A: C7:02: C1:0E: EF: A6: D5:3B: 11 |
-| **Autoritäts Schlüssel-ID** | keyid: 65: F2:31: AD: 2a: F7: F7: DD: 52:96:0A: C7:02: C1:0E: EF: A6: D5:3B: 11 |
+| **Gültigkeit noch nicht vorher** | 16. April 07:09:14 2007 UTC |
+| **Gültigkeit nicht nach** | 16. April 07:09:14 2027 UTC |
+| **Subject Key Identifier** | 65:f2:31:ad:2a:f7:f7:dd:52:96:0a:c7:02:c1:0e:ef:a6:d5:3b:11 |
+| **Autoritätsschlüssel-ID** | keyid:65:f2:31:ad:2a:f7:f7:dd:52:96:0a:c7:02:c1:0e:ef:a6:d5:3b:11 |
 | **Fingerabdruck (SHA-1)** | 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F |
 | **Fingerabdruck (SHA-256)** | E28393773DA845A679F2080CC7FB44A3B7A1C3792CB7EB7729FDCB6A8D99AEA7 |
-| **PIN (SHA-256)** | H0IkzshPyZztiB/2/P0 + IfjFGcVHqmpd094kcwLOUNE = |
+| **Pin (SHA-256)** | H0IkzshPyZztiB/2/P0+IfjFGcVHqmpd094kcwLOUNE= |
 
-### <a name="digicert-global-root-ca"></a>**Globale Stammzertifizierungsstelle Digicert**
+### <a name="digicert-global-root-ca"></a>**Globale Stammzertifizierungsstelle digiCert**
 
-| **Betreff** | CN = Digicert globale Stammzertifizierungsstelle<br>OU = www. Digicert. com<br>O = Digicert Inc.<br>C = US |
+| **Betreff** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
-| **Seriennummer** | 08:3B: E0:56:90:42:46: B1: a1:75:6a: C9:59:91: C7:4a |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Seriennummer** | 08:3B:E0:56:90:42:46:B1:A1:75:6A:C9:59:91:C7:4A |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha1RSA |
-| **Gültigkeit nicht vor** | Nov 10 00:00:00 2006 UTC |
-| **Gültigkeit nicht nach** | Nov 10 00:00:00 2031 UTC |
-| **ID des Antragstellerschlüssels** | 03: de: 50:35:56: D1:4C: BB: 66: F0: a3: E2:1B: 1B: C3:97: B2:3D: D1:55 |
-| **Autoritäts Schlüssel-ID** | keyid: 03: de: 50:35:56: D1:4C: BB: 66: F0: a3: E2:1B: 1B: C3:97: B2:3D: D1:55 |
+| **Gültigkeit noch nicht vorher** | 10. November 00:00:00 2006 UTC |
+| **Gültigkeit nicht nach** | 10. November 00:00:00 2031 UTC |
+| **Subject Key Identifier** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Autoritätsschlüssel-ID** | keyid:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Fingerabdruck (SHA-1)** | A8985D3A65E5E5C4B2D7D66D40C6DD2FB19C5436 |
 | **Fingerabdruck (SHA-256)** | 4348A0E9444C78CB265E058D5E8944B4D84F9662BD26DB257F8934A443C70161 |
-| **PIN (SHA-256)** | r/mIkG3eEpVdm + u/ko/cwxzOMo1bk4TyHIlByibiA5E = |
+| **Pin (SHA-256)** | r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E= |
 
-### <a name="digicert-global-root-g2"></a>**Digicert, globales Stammverzeichnis G2**
+### <a name="digicert-global-root-g2"></a>**DigiCert Global Root G2**
 
-| **Betreff** | CN = Digicert globales Stammverzeichnis G2<br>OU = www. Digicert. com<br>O = Digicert Inc.<br>C = US |
+| **Betreff** | CN=DigiCert Global Root G2<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Digicert globales Stammverzeichnis G2, ou = www. Digicert. com, O = Digicert Inc, C = US |
-| **Seriennummer** | 03:3A: F1: E6: A7:11: A9: a0: BB: 28:64: B1:1D: 09: Fa: E5 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048-Bits |
+| **Aussteller** | CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US |
+| **Seriennummer** | 03:3A:F1:E6:A7:11:A9:A0:BB:28:64:B1:1D:09:FA:E5 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048-Bit |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Donnerstag, 1. August 2013 5:00 Uhr |
-| **Gültigkeit nicht bis** | Mittwoch, Januar 2038 4:00 Uhr |
-| **ID des Antragstellerschlüssels** | 4E2254201895E6E36EE60FFAFAB912ED06178F39 |
-| **Autoritäts Schlüssel-ID** | KeyID: 4E: 22:54:20:18:95: E6: E3:6E: E6:: Fa: Fa: B9:12: Ed: 06:17:8F: 39 |
+| **Gültigkeit noch nicht vorher** | Donnerstag, 1. August 2013 05:00 |
+| **Gültigkeit erst nach** | Freitag, 15. Januar 2038 04:00 |
+| **Subject Key Identifier** | 4E2254201895E6E36EE60FFAFAB912ED06178F39 |
+| **Autoritätsschlüssel-ID** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:fa:b9:12:ed:06:17:8f:39 |
 | **Fingerabdruck (SHA-1)** | DF3C24F9BFD666761B268073FE06D1CC8D4F82A4 |
 | **Fingerabdruck (SHA-256)** | CB3CCBB76031E5E0138F8DD39A23F9DE47FFC35E43C1144CEA27D46A5AB1CB5F |
 
-### <a name="digicert-high-assurance-ev-root-ca"></a>**Digicert High Assurance EV-Stammzertifizierungsstelle**
+### <a name="digicert-high-assurance-ev-root-ca"></a>**DigiCert High Assurance EV Root CA**
 
-| **Betreff** | CN = Digicert High Assurance EV-Stammzertifizierungsstelle<br>OU = www. Digicert. com<br>O = Digicert Inc.<br>C = US |
+| **Betreff** | CN=DigiCert High Assurance EV Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
-| **Seriennummer** | 02: AC: 5C: 26:6a: 0B: 40:9 v: 8F: 0B: 79: F2: AE: 46:25:77 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Seriennummer** | 02:AC:5C:26:6A:0B:40:9B:8F:0B:79:F2:AE:46:25:77 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha1RSA |
-| **Gültigkeit nicht vor** | Nov 10 00:00:00 2006 UTC |
-| **Gültigkeit nicht nach** | Nov 10 00:00:00 2031 UTC |
-| **ID des Antragstellerschlüssels** | B1:3E: C3:69:03: F8: BF: 47:01: D4:98:26:1a: 08:02: EF: 63:64:2B: C3 |
-| **Autoritäts Schlüssel-ID** | keyid: B1:3E: C3:69:03: F8: BF: 47:01: D4:98:26:1a: 08:02: EF: 63:64:2B: C3 |
+| **Gültigkeit noch nicht vorher** | 10. November 00:00:00 2006 UTC |
+| **Gültigkeit nicht nach** | 10. November 00:00:00 2031 UTC |
+| **Subject Key Identifier** | b1:3e:c3:69:03:f8:bf:47:01:d4:98:26:1a:08:02:ef:63:64:2b:c3 |
+| **Autoritätsschlüssel-ID** | keyid:b1:3e:c3:69:03:f8:bf:47:01:d4:98:26:1a:08:02:ef:63:64:2b:c3 |
 | **Fingerabdruck (SHA-1)** | 5FB7EE0633E259DBAD0C4C9AE6D38F1A61C7DC25 |
 | **Fingerabdruck (SHA-256)** | 7431E5F4C3C1CE4690774F0B61E05440883BA9A01ED00BA6ABD7806ED3B118CF |
-| **PIN (SHA-256)** | WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18 = |
+| **Pin (SHA-256)** | WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18= |
 
-### <a name="d-trust-root-class-3-ca-2-2009"></a>**D-Trust-Stammklasse 3 ca 2 2009**
+### <a name="d-trust-root-class-3-ca-2-2009"></a>**D-TRUST Root Class 3 CA 2 2009**
 
-| **Betreff** | CN = D-Trust Stammklasse 3 ca 2 2009<br>O = D-Trust GmbH<br>C = de |
+| **Betreff** | CN=D-TRUST Root Class 3 CA 2 2009<br>O=D-Trust GmbH<br>C=DE |
 | --- | --- |
-| **Seriennummer** | 09:83: F3 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Seriennummer** | 09:83:F3 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Nov 05 08:35:58 2009 UTC |
-| **Gültigkeit nicht nach** | Nov 05 08:35:58 2029 UTC |
-| **ID des Antragstellerschlüssels** | FD: da: 14: C4:9F: 30: de: 21: BD: 1E: 42:39: FC: ab: 63:23:49: E0: F1:84 |
+| **Gültigkeit noch nicht vorher** | 05. November 08:35:58 2009 UTC |
+| **Gültigkeit nicht nach** | 05. November 08:35:58 2029 UTC |
+| **Subject Key Identifier** | fd:da:14:c4:9f:30:de:21:bd:1e:42:39:fc:ab:63:23:49:e0:f1:84 |
 | **Fingerabdruck (SHA-1)** | 58E8ABB0361533FB80F79B1B6D29D3FF8D5F00F0 |
 | **Fingerabdruck (SHA-256)** | 49E7A442ACF0EA6287050054B52564B650E4F49E42E348D6AA38E039E957B1C1 |
-| **PIN (SHA-256)** | 7KDxgUAs56hlKzG00DbfJH46MLf0GlDZHsT5CwBrQ6E = |
+| **Pin (SHA-256)** | 7KDxgUAs56hlKzG00DbfJH46MLf0GlDZHsT5CwBrQ6E= |
 | **CRL-URLs** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_2009.crl |
 
-### <a name="d-trust-root-class-3-ca-2-ev-2009"></a>**D-Trust-Stammklasse 3 ca 2 EV 2009**
+### <a name="d-trust-root-class-3-ca-2-ev-2009"></a>**D-TRUST Root Class 3 CA 2 EV 2009**
 
-| **Betreff** | CN = D-Trust Stammklasse 3 ca 2 EV 2009<br>O = D-Trust GmbH<br>C = de |
+| **Betreff** | CN=D-TRUST Root Class 3 CA 2 EV 2009<br>O=D-Trust GmbH<br>C=DE |
 | --- | --- |
-| **Seriennummer** | 09:83: F4 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Seriennummer** | 09:83:F4 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Nov 05 08:50:46 2009 UTC |
-| **Gültigkeit nicht nach** | Nov 05 08:50:46 2029 UTC |
-| **ID des Antragstellerschlüssels** | D3:94:8a: 4C: 62:13:2a: 19:2e: cc: AF: 72:8a: 7D: 36: D7:9a: 1C: DC: 67 |
+| **Gültigkeit noch nicht vorher** | 05. November 08:50:46 2009 UTC |
+| **Gültigkeit nicht nach** | 05. November 08:50:46 2029 UTC |
+| **Subject Key Identifier** | d3:94:8a:4c:62:13:2a:19:2e:cc:af:72:8a:7d:36:d7:9a:1c:dc:67 |
 | **Fingerabdruck (SHA-1)** | 96C91B0B95B4109842FAD0D82279FE60FAB91683 |
-| **Fingerabdruck (SHA-256)** | EEC5496B988CE98625B934092EEC2908BED0B0F316C2D4730C84EAF1F3D34881 |
-| **PIN (SHA-256)** | /zQvtsTIvTCkcG9zSJU58Z5uSMwF9GJUZU9mENvFQOk = |
+| **Fingerabdruck (SHA-256)** | BENN496B988CE98625B934092EEC2908BED0B0F316C2D4730C84EAF1F3D34881 |
+| **Pin (SHA-256)** | /zQvtsTIvTCkcG9zSJU58Z5uSMwF9GJUZU9mENvFQOk= |
 | **CRL-URLs** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%20EV%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_ev\_2009.crl |
 
-### <a name="dst-root-ca-x3"></a>**DST-Stammzertifizierungsstelle X3**
+### <a name="dst-root-ca-x3"></a>**Stammzertifizierungsstelle X3 der Stammzertifizierungsstelle**
 
-| **Betreff** | CN = DST-Stammzertifizierungsstelle X3<br>O = digitale Signatur Trust Co. |
+| **Betreff** | CN=DST Root CA X3<br>O=Digital Signature Trust Co. |
 | --- | --- |
-| **Seriennummer** | 44: AF: B0:80: D6: a3:27: BA: 89:30:39:86:2e: F8:40:6B |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Seriennummer** | 44:AF:B0:80:D6:A3:27:BA:89:30:39:86:2E:F8:40:6B |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha1RSA |
-| **Gültigkeit nicht vor** | Sep 30 21:12:19 2000 UTC |
-| **Gültigkeit nicht nach** | Sep 30 14:01:15 2021 UTC |
-| **ID des Antragstellerschlüssels** | C4: A7: B1: A4:7B: 2C: 71: Fa: DB: E1:4B: 90:75: FF: C4:15:60:85:89:10 |
+| **Gültigkeit noch nicht vorher** | 30. Sep 21:12:19 2000 UTC |
+| **Gültigkeit nicht nach** | 30. Sep 14:01:15 2021 UTC |
+| **Subject Key Identifier** | c4:a7:b1:a4:7b:2c:71:fa:db:e1:4b:90:75:ff:c4:15:60:85:89:10 |
 | **Fingerabdruck (SHA-1)** | DAC9024F54D8F6DF94935FB1732638CA6AD77C13 |
 | **Fingerabdruck (SHA-256)** | 0687260331A72403D909F105E69BCF0D32E1BD2493FFC6D9206D11BCD6770739 |
-| **PIN (SHA-256)** | Vjs8r4z + 80wjNcr1YKepWQboSIRi63WsWXhIMN + eWys = |
+| **Pin (SHA-256)** | Vjs8r4z+80wjNcr1YKepWQboSIRi63WsWXhIMN+eWys= |
 
-### <a name="entrust-root-certification-authority---g2"></a>**Entrust-Stammzertifizierungsstelle – G2**
+### <a name="entrust-root-certification-authority---g2"></a>**Beauftragen der Stammzertifizierungsstelle – G2**
 
-| **Betreff** | CN = Entrust-Stammzertifizierungsstelle-G2<br>OU = &quot; (c) 2009 Entrust, Inc. – nur für autorisierte Verwendung&quot;<br>OU = siehe www.Entrust.net/legal-terms<br>O = &quot; Entrust, Inc.&quot;<br>C = US |
+| **Betreff** | CN=Vererbung der Stammzertifizierungsstelle – G2<br>OU= &quot; (c) 2009 Entrust, Inc. – nur zur autorisierten Verwendung&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
-| **Seriennummer** | 4a: 53:8c: 28 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Seriennummer** | 4A:53:8C:28 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Jul 07 17:25:54 2009 UTC |
-| **Gültigkeit nicht nach** | Dec 07 17:55:54 2030 UTC |
-| **ID des Antragstellerschlüssels** | 6a: 72:26:7a: D0:1E: EF: 7D: E7:3B: 69:51: D4:6C: 8 d: 9F: 90:12:66: ab |
+| **Gültigkeit noch nicht vorher** | Juli 07 17:25:54 2009 UTC |
+| **Gültigkeit nicht nach** | 07. Dezember 17:55:54 2030 UTC |
+| **Subject Key Identifier** | 6a:72:26:7a:d0:1e:ef:7d:e7:3b:69:51:d4:6c:8d:9f:90:12:66:ab |
 | **Fingerabdruck (SHA-1)** | 8CF427FD790C3AD166068DE81E57EFBB932272D4 |
 | **Fingerabdruck (SHA-256)** | 43DF5774B03E7FEF5FE40D931A7BEDF1BB2E6B42738C4E6D3841103D3AA7F339 |
-| **PIN (SHA-256)** | du6FkDdMcVQ3u8prumAo6t3i3G27uMP2EOhR8R0at/U = |
+| **Pin (SHA-256)** | du6FkDdMcVQ3u8prumAo6t3i3G27uMP2EOppR8R0at/U= |
 
 ### <a name="entrustnet-certification-authority-2048"></a>**Entrust.net Certification Authority (2048)**
 
-| **Betreff** | CN = Entrust. NET-Zertifizierungsstelle (2048)<br>OU = (c) 1999 Entrust.net Limited<br>OU = www. Entrust. net/CPS \_ 2048 incorp. durch Ref. (Limit s liab.)<br>O = Entrust. net |
+| **Betreff** | CN=Entrust.net Certification Authority (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. by ref. (limit s liab.)<br>O=Entrust.net |
 | --- | --- |
-| **Seriennummer** | 38:63: de: F8 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Seriennummer** | 38:63:DE:F8 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha1RSA |
-| **Gültigkeit nicht vor** | Dec 24 17:50:51 1999 UTC |
-| **Gültigkeit nicht nach** | Jul 24 14:15:12 2029 UTC |
-| **ID des Antragstellerschlüssels** | 55: E4:81: D1:11:80: be: D8:89: B9:08: a3:31: F9: a1:24:09:16: B9:70 |
+| **Gültigkeit noch nicht vorher** | 24. Dezember 17:50:51 1999 UTC |
+| **Gültigkeit nicht nach** | 24. Juli 14:15:12 2029 UTC |
+| **Subject Key Identifier** | 55:e4:81:d1:11:80:be:d8:89:b9:08:a3:31:f9:a1:24:09:16:b9:70 |
 | **Fingerabdruck (SHA-1)** | 503006091D97D4F5AE39F7CBE7927D7D652D3431 |
 | **Fingerabdruck (SHA-256)** | 6DC47172E01CBCB0BF62580D895FE2B8AC9AD4F873801E0C10B9C837D21EB177 |
-| **PIN (SHA-256)** | HqPF5D7WbC2imDpCpKebHpBnhs6fG1hiFBmgBGOofTg = |
+| **Pin (SHA-256)** | HqPF5D7WbC2imDpCpKebHpBnhs6fG1hiFBmgBGOofTg= |
 
-### <a name="globalsign"></a>**GlobalSign**
+### <a name="globalsign-root-ca---r1"></a>**Stammzertifizierungsstelle "GlobalSign" – R1**
 
-| **Betreff** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign-Stammzertifizierungsstelle-R2 |
+| **Betreff** | CN=GlobalSign-Stammzertifizierungsstelle<br>OU=Stammzertifizierungsstelle<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
-| **Seriennummer** | 04:00:00:00:00:01: zu: 86:26: E6:0d |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Seriennummer** | 04:00:00:00:00:01:15:4B:5A:C3:94 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha1RSA |
-| **Gültigkeit nicht vor** | Dec 15 08:00:00 2006 UTC |
-| **Gültigkeit nicht nach** | Dec 15 08:00:00 2021 UTC |
-| **ID des Antragstellerschlüssels** | 9 – 7: E2:07:57:67:1C: 1E: C0:6a: 06: de: 59: B4:9a: 2D: DF: DC: 19:86:2E |
-| **Autoritäts Schlüssel-ID** | keyid: 9a: E2:07:57:67:1C: 1E: C0:6a: 06: de: 59: B4:9a: 2D: DF: DC: 19:86:2E |
-| **Fingerabdruck (SHA-1)** | 75E0ABB6138512271C04F85FDDDE38E4B7242EFE |
-| **Fingerabdruck (SHA-256)** | CA42DD41745FD0B81EB902362CF9D8BF719DA1BD1B1EFC946F5B4C99F42C1B9E |
-| **PIN (SHA-256)** | iie1VXtL7HzAMF +/PVPR9xzT80kQxdZeJ + zduCB3uj0 = |
-| **CRL-URLs** | http://crl.globalsign.net/root-r2.crl |
+| **Gültigkeit noch nicht vorher** | 01. Sep 12:00:00 1998 UTC |
+| **Gültigkeit nicht nach** | Jan 28 12:00:00 2028 UTC |
+| **Subject Key Identifier** | 60:7b:66:1a:45:0d:97:ca:89:50:2f:7d:04:cd:34:a8:ff:fc:fd:4b |
+| **Fingerabdruck (SHA-1)** | B1BC968BD4F49D622AA89A81F2150152A41D829C |
+| **Fingerabdruck (SHA-256)** | EBD41040E4BB3EC742C9E381D31EF2A41A48B6685C96E7CEF3C1DF6CD4331C99 |
+| **Pin (SHA-256)** | K87oWBWM9UZfyddvDfoxL+8lpNyoUB2ptGtn0fv6G2Q= |
 
-### <a name="globalsign"></a>**GlobalSign**
+### <a name="globalsign-root-ca---r3"></a>**Stammzertifizierungsstelle "GlobalSign" – R3**
 
-| **Betreff** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign-Stammzertifizierungsstelle-R3 |
+| **Betreff** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R3 |
 | --- | --- |
-| **Aussteller** | CN = GlobalSign, O = GlobalSign, ou = GlobalSign Root CA-R3 |
-| **Seriennummer** | 04:00:00:00:00:01:21:58:53:08: a2 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048-Bits |
+| **Aussteller** | CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R3 |
+| **Seriennummer** | 04:00:00:00:00:01:21:58:53:08:A2 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048-Bit |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Mittwoch, März 18, 2009 3:00 Uhr |
-| **Gültigkeit nicht bis** | Sonntag, März 18, 2029 3:00 Uhr |
-| **ID des Antragstellerschlüssels** | 8FF04B7FA82E4524AE4D50FA639A8BDEE2DD1BBC |
-| **Autoritäts Schlüssel-ID** | KeyID: 8F: F0:4B: 7F: A8:2e: 45:24: AE: 4D: 50: Fa: 63:9a: 8B: de: E2: DD: 1B: BC |
+| **Gültigkeit noch nicht vorher** | Mittwoch, 18. März 2009 03:00 |
+| **Gültigkeit erst nach** | Sonntag, 18. März 2029 03:00 |
+| **Subject Key Identifier** | 8FF04B7FA82E4524AE4D50FA639A8BDEE2DD1BBC |
+| **Autoritätsschlüssel-ID** | KeyID:8f:f0:4b:7f:a8:2e:45:24:ae:4d:50:fa:63:9a:8b:de:e2:dd:1b:bc |
 | **Fingerabdruck (SHA-1)** | D69B561148F01C77C54578C10926DF5B856976AD |
 | **Fingerabdruck (SHA-256)** | CBB522D7B7F127AD6A0113865BDF1CD4102E7D0759AF635A7CF4720DC963C53B |
 
-### <a name="globalsign-root-ca"></a>**GlobalSign Root CA**
+### <a name="thawte-primary-root-ca---g3"></a>**thawte Primary Root CA - G3**
 
-| **Betreff** | CN = GlobalSign-Stammzertifizierungsstelle<br>OU = Stammzertifizierungsstelle<br>O = GlobalSign NV-SA<br>C = be |
+| **Betreff** | CN=thawte Primary Root CA - G3<br>OU= &quot; (c) 2008 thawte, Inc. – nur zur autorisierten Verwendung&quot;<br>OU=Certification Services Division<br>O= &quot; thawte, Inc.&quot;<br>C=US |
 | --- | --- |
-| **Seriennummer** | 04:00:00:00:00:01:15:4B: 5A: C3:94 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
-| **Signaturalgorithmus** | sha1RSA |
-| **Gültigkeit nicht vor** | Sep 01 12:00:00 1998 UTC |
-| **Gültigkeit nicht nach** | Jan 28 12:00:00 2028 UTC |
-| **ID des Antragstellerschlüssels** | 60:7B: 66:1a: 45:0d: 97: ca: 89:50:2F: 7D: 04: CD: 34: A8: FF: FC: FD: 4B |
-| **Fingerabdruck (SHA-1)** | B1BC968BD4F49D622AA89A81F2150152A41D829C |
-| **Fingerabdruck (SHA-256)** | EBD41040E4BB3EC742C9E381D31EF2A41A48B6685C96E7CEF3C1DF6CD4331C99 |
-| **PIN (SHA-256)** | K87oWBWM9UZfyddvDfoxL + 8lpNyoUB2ptGtn0fv6G2Q = |
-
-### <a name="thawte-primary-root-ca---g3"></a>**primäres Thawte-Stammverzeichnis ca-G3**
-
-| **Betreff** | CN = Thawte Primary Root CA-G3<br>OU = &quot; (c) 2008 Thawte, Inc. – nur für autorisierte Verwendung&quot;<br>OU = Certification Services Division<br>O = &quot; Thawte, Inc.&quot;<br>C = US |
-| --- | --- |
-| **Seriennummer** | 60:01:97: B7:46: A7: EA: B4: B4:9a: D6:4B: 2F: F7:90: FB |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Seriennummer** | 60:01:97:B7:46:A7:EA:B4:B4:9A:D6:4B:2F:F7:90:FB |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Apr 02 00:00:00 2008 UTC |
-| **Gültigkeit nicht nach** | Dec 01 23:59:59 2037 UTC |
-| **ID des Antragstellerschlüssels** | AD: 6C: AA: 94:60:9/9: Ed: E4: FF: Fa: 3E: 0A: 74:2B: 63:03: F7: B6:59: BF |
+| **Gültigkeit noch nicht vorher** | Apr 02 00:00:00 2008 UTC |
+| **Gültigkeit nicht nach** | 01. Dezember 23:59:59 2037 UTC |
+| **Subject Key Identifier** | ad:6c:aa:94:60:9c:ed:e4:ff:fa:3e:0a:74:2b:63:03:f7:b6:59:bf |
 | **Fingerabdruck (SHA-1)** | F18B538D1BE903B6A6F056435B171589CAF36BF2 |
 | **Fingerabdruck (SHA-256)** | 4B03F45807AD70F21BFC2CAE71C9FDE4604C064CF5FFB686BAE5DBAAD7FDD34C |
-| **PIN (SHA-256)** | GQbGEk27Q4V40A4GbVBUxsN/D6YCjAVUXgmU7drshik = |
+| **Pin (SHA-256)** | GQbGEk27Q4V40A4GbVBUxsN/D6YCjAVUXgmU7drshik= |
 
-### <a name="verisign-class-3-public-primary-certification-authority---g5"></a>**VeriSign Class 3 Public Primary Certification Authority-G5**
+### <a name="verisign-class-3-public-primary-certification-authority---g5"></a>**Öffentliche primäre Zertifizierungsstelle der VeriSign-Klasse 3 – G5**
 
-| **Betreff** | CN = VeriSign Class 3 Public Primary Certification Authority-G5<br>OU = &quot; (c) 2006 VeriSign, Inc. – nur für autorisierte Verwendung&quot;<br>OU = VeriSign Trust-Netzwerk<br>O = &quot; VeriSign, Inc.&quot;<br>C = US |
+| **Betreff** | CN=VeriSign Class 3 Public Primary Certification Authority - G5<br>OU= &quot; (c) 2006 VeriSign, Inc. – nur zur autorisierten Verwendung&quot;<br>OU=VeriSign Trust Network<br>O= &quot; VeriSign, Inc.&quot;<br>C=US |
 | --- | --- |
-| **Seriennummer** | 18: da: D1:9e: 26:7D: E8: BB: 4a: 21:58: CD: cc: 6b: 3B: 4a |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Seriennummer** | 18:DA:D1:9E:26:7D:E8:BB:4A:21:58:CD:CC:6B:3B:4A |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha1RSA |
-| **Gültigkeit nicht vor** | Nov 08 00:00:00 2006 UTC |
-| **Gültigkeit nicht nach** | Jul 16 23:59:59 2036 UTC |
-| **ID des Antragstellerschlüssels** | 7F: D3:65: A7: C2: DD: EC: BB: F0:30:09: F3:43:39: Fa: 02: AF: 33:31:33 |
+| **Gültigkeit noch nicht vorher** | 08. November 00:00:00 2006 UTC |
+| **Gültigkeit nicht nach** | 16. Juli 23:59:59 2036 UTC |
+| **Subject Key Identifier** | 7f:d3:65:a7:c2:dd:ec:bb:f0:30:09:f3:43:39:fa:02:af:33:31:33 |
 | **Fingerabdruck (SHA-1)** | 4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5 |
 | **Fingerabdruck (SHA-256)** | 9ACFAB7E43C8D880D06B262A94DEEEE4B4659989C3D0CAF19BAF6405E41AB7DF |
-| **PIN (SHA-256)** | JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg = |
+| **Pin (SHA-256)** | JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg= |
 
-## <a name="microsoft-365-intermediate-certificate-details"></a>**Details zu Microsoft 365 Intermediate-Zertifikaten**
+## <a name="microsoft-365-intermediate-certificate-details"></a>**Microsoft 365 Intermediate Certificate Details**
 
 ### <a name="cnnic-sha256-ssl"></a>**CNNIC SHA256 SSL**
 
-| **Betreff** | CN = CNNIC SHA256 SSL <br>O = CNNIC SHA256 SSL <br>C = CN |
+| **Betreff** | CN=CNNIC SHA256 SSL <br>O=CNNIC SHA256 SSL <br>C=CN |
 | --- | --- |
-| **Aussteller** | CN = CNNIC-Stamm <br>O = CNNIC <br>C = CN |
+| **Aussteller** | CN=CNNIC ROOT <br>O=CNNIC <br>C=CN |
 | **Seriennummer** | 49:33:00:7C |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Dec 18 12:32:18 2014 UTC |
-| **Gültigkeit nicht nach** | Dec 18 12:32:18 2024 UTC |
-| **ID des Antragstellerschlüssels** | B7: D1:59:8B: 8c: 0d: 06:28:47:23:00:3A: 36:04: A5: EE: 38:76:53:3C |
-| **Autoritäts Schlüssel-ID** | keyid: 65: F2:31: AD: 2a: F7: F7: DD: 52:96:0A: C7:02: C1:0E: EF: A6: D5:3B: 11 |
+| **Gültigkeit noch nicht vorher** | 18. Dezember 12:32:18 2014 UTC |
+| **Gültigkeit nicht nach** | 18. Dezember 12:32:18 2024 UTC |
+| **Subject Key Identifier** | b7:d1:59:8b:8c:0d:06:28:47:23:00:3a:36:04:a5:ee:38:76:53:3c |
+| **Autoritätsschlüssel-ID** | keyid:65:f2:31:ad:2a:f7:f7:dd:52:96:0a:c7:02:c1:0e:ef:a6:d5:3b:11 |
 | **Fingerabdruck (SHA-1)** | FC844648FC708433921BE88B18C48787A3E2813E |
 | **Fingerabdruck (SHA-256)** | FA8B9F99DBB94E7B772AA9190846E777047C15C7A3BF4A1AF9C0CA984A689511 |
-| **PIN (SHA-256)** | dKZRcLDh7hBNZTmTIHOGJ6C2Om/ITjUCPkOnLTnrZXk = |
+| **Pin (SHA-256)** | dKZRcLDh7hBNZTmTIHOGJ6C2Om/ITjUCPkOnLTnrZXk= |
 | **AIA-URLs** | http://www.cnnic.cn/download/cert/CNNICROOT.cer |
 | **CRL-URLs** | ldap:///CN=crl1,%20OU=crl,%20O=CNNIC,%20C=CN?certificateRevocationList;binary,authorityRevocationList;binary,deltaRevocationList;binary<br>http://crl.cnnic.cn/download/rootsha2crl/CRL1.crl |
-| **OCSP-URLs** | <http://ocspcnnicroot.cnnic.cn> |
+| **OCSP URLs** | <http://ocspcnnicroot.cnnic.cn> |
 
-### <a name="d-trust-ssl-class-3-ca-1-2009"></a>**D-Trust SSL-Klasse 3 ca 1 2009**
+### <a name="d-trust-ssl-class-3-ca-1-2009"></a>**D-TRUST SSL Class 3 CA 1 2009**
 
-| **Betreff** | CN = D-Trust SSL-Klasse 3 ca 1 2009<br>O = D-Trust GmbH<br>C = de |
+| **Betreff** | CN=D-TRUST SSL Class 3 CA 1 2009<br>O=D-Trust GmbH<br>C=DE |
 | --- | --- |
-| **Aussteller** | CN = D-Trust Stammklasse 3 ca 2 2009<br>O = D-Trust GmbH<br>C = de |
-| **Alternativer Antragsteller Name** | RFC822 Name=Info@d-Trust.net<br>URL =http://www.d-trust.net |
+| **Aussteller** | CN=D-TRUST Root Class 3 CA 2 2009<br>O=D-Trust GmbH<br>C=DE |
+| **Alternativer Subject Name** | RFC822-Name=info@d-trust.net<br>URL=http://www.d-trust.net |
 | **Seriennummer** | 09:90:63 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Nov 12 12:46:55 2009 UTC |
-| **Gültigkeit nicht nach** | Nov 05 08:35:58 2029 UTC |
-| **ID des Antragstellerschlüssels** | 50:19:32:94:9a: C4: B5:04:4D: 56: D0: C0:83:21: D5:35:55: B0: B1:7a |
-| **Autoritäts Schlüssel-ID** | keyid: FD: da: 14: C4:9F: 30: de: 21: BD: 1E: 42:39: FC: ab: 63:23:49: E0: F1:84 |
+| **Gültigkeit noch nicht vorher** | 12. November 12:46:55 2009 UTC |
+| **Gültigkeit nicht nach** | 05. November 08:35:58 2029 UTC |
+| **Subject Key Identifier** | 50:19:32:94:9a:c4:b5:04:4d:56:d0:c0:83:21:d5:35:55:b0:b1:7a |
+| **Autoritätsschlüssel-ID** | keyid:fd:da:14:c4:9f:30:de:21:bd:1e:42:39:fc:ab:63:23:49:e0:f1:84 |
 | **Fingerabdruck (SHA-1)** | 2FC5DE6528CDBE50A14C382FC1DE524FAABF95FC |
 | **Fingerabdruck (SHA-256)** | 6AC159B4C2BC8E729F3B84642EF1286BCC80D775FE278C740ADA468D59439025 |
-| **PIN (SHA-256)** | 9w0QP9HzLXkfs + 4zENaUFq2XKcQON1oyksoJ + Gg2AZE = |
+| **Pin (SHA-256)** | 9w0QP9HzLXkfs+4zENaUFq2XKcQON1 boaksoJ+Gg2AZE= |
 | **CRL-URLs** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_2009.crl |
-| **OCSP-URLs** | http://root-c3-ca2-2009.ocsp.d-trust.net |
+| **OCSP URLs** | http://root-c3-ca2-2009.ocsp.d-trust.net |
 
-### <a name="d-trust-ssl-class-3-ca-1-ev-2009"></a>**D-Trust SSL-Klasse 3 ca 1 EV 2009**
+### <a name="d-trust-ssl-class-3-ca-1-ev-2009"></a>**D-TRUST SSL Class 3 CA 1 EV 2009**
 
-| **Betreff** | CN = D-Trust SSL-Klasse 3 ca 1 EV 2009<br>O = D-Trust GmbH<br>C = de |
+| **Betreff** | CN=D-TRUST SSL Class 3 CA 1 EV 2009<br>O=D-Trust GmbH<br>C=DE |
 | --- | --- |
-| **Aussteller** | CN = D-Trust Stammklasse 3 ca 2 EV 2009<br>O = D-Trust GmbH<br>C = de |
-| **Alternativer Antragsteller Name** | RFC822 Name=Info@d-Trust.net<br>URL =http://www.d-trust.net |
+| **Aussteller** | CN=D-TRUST Root Class 3 CA 2 EV 2009<br>O=D-Trust GmbH<br>C=DE |
+| **Alternativer Subject Name** | RFC822-Name=info@d-trust.net<br>URL=http://www.d-trust.net |
 | **Seriennummer** | 09:90:64 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Nov 12 12:52:43 2009 UTC |
-| **Gültigkeit nicht nach** | Nov 05 08:50:46 2029 UTC |
-| **ID des Antragstellerschlüssels** | AC: Ed: A5:9d: 7a: a2: B6:43: F1:18:8a: 25:6a: 6C: B1: cc: A8: F2:5A: D4 |
-| **Autoritäts Schlüssel-ID** | keyid: D3:94:8a: 4C: 62:13:2a: 19:2e: cc: AF: 72:8a: 7D: 36: D7:9a: 1C: DC: 67 |
+| **Gültigkeit noch nicht vorher** | 12. November 12:52:43 2009 UTC |
+| **Gültigkeit nicht nach** | 05. November 08:50:46 2029 UTC |
+| **Subject Key Identifier** | ac:ed:a5:9d:7a:a2:b6:43:f1:18:8a:25:6a:6c:b1:cc:a8:f2:5a:d4 |
+| **Autoritätsschlüssel-ID** | keyid:d3:94:8a:4c:62:13:2a:19:2e:cc:af:72:8a:7d:36:d7:9a:1c:dc:67 |
 | **Fingerabdruck (SHA-1)** | 1069423D308D0FC54575059638560FC7556E32B3 |
 | **Fingerabdruck (SHA-256)** | B0935DC04B4E60C0C42DEF7EC57A1B1D8F958D17988E71CC80A8CF5E635BA5B4 |
-| **PIN (SHA-256)** | lv5BNZ5aWd27ooolULDolFTwIaaWjHvG4yyH3rss4X8 = |
+| **Pin (SHA-256)** | lv5BNZ5aWd27ooolULDolFTwIaaWjHvG4yyH3rss4X8= |
 | **CRL-URLs** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%20EV%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_ev\_2009.crl |
-| **OCSP-URLs** | http://root-c3-ca2-ev-2009.ocsp.d-trust.net |
+| **OCSP URLs** | http://root-c3-ca2-ev-2009.ocsp.d-trust.net |
 
-### <a name="digicert-basic-rsa-cn-ca-g2"></a>**Digicert Basic RSA CN ca G2**
+### <a name="digicert-basic-rsa-cn-ca-g2"></a>**DigiCert Basic RSA CN CA G2**
 
-| **Betreff** | CN = Digicert Basic RSA CN ca G2<br>O = Digicert Inc.<br>C = US |
+| **Betreff** | CN=DigiCert Basic RSA CN CA G2<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Digicert globale Stammzertifizierungsstelle, ou = www. Digicert. com, O = Digicert Inc, C = US |
-| **Seriennummer** | 02: F7: E1: F9:82: BA: D0:09: AF: F4:7D: C9:57:41: B2: F6 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048-Bits |
+| **Aussteller** | CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US |
+| **Seriennummer** | 02:F7:E1:F9:82:BA:D0:09:AF:F4:7D:C9:57:41:B2:F6 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048-Bit |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Mittwoch, März 4, 2020 4:04 Uhr |
-| **Gültigkeit nicht bis** | Montag, März 4, 2030 4:04 Uhr |
-| **ID des Antragstellerschlüssels** | 06BDA69B60795031BED5A9024AA0D095538B2F34 |
-| **Autoritäts Schlüssel-ID** | KeyID: 03: de: 50:35:56: D1:4C: BB: 66: F0: a3: E2:1B: 1B: C3:97: B2:3D: D1:55 |
+| **Gültigkeit noch nicht vorher** | Mittwoch, 4. März 2020 04:04 |
+| **Gültigkeit erst nach** | Montag, 4. März 2030 04:04 |
+| **Subject Key Identifier** | 06BDA69B60795031BED5A9024AA0D095538B2F34 |
+| **Autoritätsschlüssel-ID** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Fingerabdruck (SHA-1)** | 4D1FA5D1FB1AC3917C08E43F65015E6AEA571179 |
 | **Fingerabdruck (SHA-256)** | CB57B3FF2040CB269497625BC90FA9D7B4ED4938C6F60F42F69AFDF508AC2993 |
 | **CRL-URLs** | http://crl.digicert.cn/DigiCertGlobalRootCA.crl |
-| **OCSP-URLs** | http://ocsp.digicert.cn |
+| **OCSP URLs** | http://ocsp.digicert.cn |
 
-### <a name="digicert-cloud-services-ca-1"></a>**Digicert Cloud Services-Zertifizierungsstellen-1**
 
-| **Betreff** | CN = Digicert Cloud Services ca-1<br>O = Digicert Inc.<br>C = US |
+### <a name="digicert-cloud-services-ca-1"></a>**DigiCert Cloud Services CA-1**
+
+| **Betreff** | CN=DigiCert Cloud Services CA-1<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Digicert globale Stammzertifizierungsstelle<br>OU = www. Digicert. com<br>O = Digicert Inc.<br>C = US |
-| **Seriennummer** | 01:9e: C1: C6: BD: 3f: 59:7B: B2:0C: 33:38: E5:51: D8:77 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Aussteller** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Seriennummer** | 0F:17:1A:48:C6:F2:23:80:92:18:CD:2E:D6:DD:C0:E8 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048-Bit |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Aug 04 12:00:00 2015 UTC |
-| **Gültigkeit nicht nach** | Aug 04 12:00:00 2030 UTC |
-| **ID des Antragstellerschlüssels** | DD: 51: D0: a2:31:73: A9:73: AE: 8F: B4:01:7E: 5D: 8c: 57: CB: 9F: F0: F7 |
-| **Autoritäts Schlüssel-ID** | keyid: 03: de: 50:35:56: D1:4C: BB: 66: F0: a3: E2:1B: 1B: C3:97: B2:3D: D1:55 |
-| **Fingerabdruck (SHA-1)** | 81B68D6CD2F221F8F534E677523BB236BBA1DC56 |
-| **Fingerabdruck (SHA-256)** | 2F6889961A7CA7067E8BA103C2CF9B9A924F8CA293F11178E23A1978D2F133D3 |
-| **PIN (SHA-256)** | UgpUVparimk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE = |
-| **CRL-URLs** | http://crl4.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl3.digicert.com/DigiCertGlobalRootCA.crl |
-| **OCSP-URLs** | http://ocsp.digicert.com |
-
-### <a name="digicert-cloud-services-ca-1"></a>**Digicert Cloud Services-Zertifizierungsstellen-1**
-
-| **Betreff** | CN = Digicert Cloud Services ca-1<br>O = Digicert Inc.<br>C = US |
-| --- | --- |
-| **Aussteller** | CN = Digicert globale Stammzertifizierungsstelle, ou = www. Digicert. com, O = Digicert Inc, C = US |
-| **Seriennummer** | unsichere: 17:1a: 48: C6: F2:23:80:92:18: CD: 2e: D6: DD: C0: E8 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048-Bits |
-| **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Donnerstag, 24. September 2020 5:00 Uhr |
-| **Gültigkeit nicht bis** | Dienstag, 24. September 2030 4:59 Uhr |
-| **ID des Antragstellerschlüssels** | DD51D0A23173A973AE8FB4017E5D8C57CB9FF0F7 |
-| **Autoritäts Schlüssel-ID** | KeyID: 03: de: 50:35:56: D1:4C: BB: 66: F0: a3: E2:1B: 1B: C3:97: B2:3D: D1:55 |
+| **Gültigkeit noch nicht vorher** | Donnerstag, 24. September 2020 17:00 |
+| **Gültigkeit erst nach** | Dienstag, 24. September 2030 16:59 |
+| **Subject Key Identifier** | DD51D0A23173A973AE8FB4017E5D8C57CB9FF0F7 |
+| **Autoritätsschlüssel-ID** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Fingerabdruck (SHA-1)** | B3F6B64A07BB9611F47174407841F564FB991F29 |
 | **Fingerabdruck (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 |
-| **CRL-URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
-| **OCSP-URLs** | http://ocsp.digicert.com |
+| **Pin (SHA-256)** | UgpUVqamk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE= |
+| **CRL-URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl <br> http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="digicert-sha2-extended-validation-server-ca"></a>**Digicert SHA2 Extended Validation Server-Zertifizierungsstelle**
+### <a name="digicert-sha2-extended-validation-server-ca"></a>**DigiCert SHA2 Extended Validation Server CA**
 
-| **Betreff** | CN = Digicert SHA2 Extended Validation Server-Zertifizierungsstelle<br>OU = www. Digicert. com<br>O = Digicert Inc.<br>C = US |
+| **Betreff** | CN=DigiCert SHA2 Extended Validation Server CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Digicert High Assurance EV-Stammzertifizierungsstelle, ou = www. Digicert. com, O = Digicert Inc, C = US |
-| **Seriennummer** | 0C: 79: A9:44: B0:8c: 11:95:20:92:61:5f: E2:6b: 1D: 83 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048-Bits |
+| **Aussteller** | CN=DigiCert High Assurance EV Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US |
+| **Seriennummer** | 0C:79:A9:44:B0:8C:11:95:20:92:61:5F:E2:6B:1D:83 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048-Bit |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Dienstag, 22. Oktober 2013 5:00 Uhr |
-| **Gültigkeit nicht bis** | Sonntag, Oktober 22, 2028 5:00 Uhr |
-| **ID des Antragstellerschlüssels** | 3DD350A5D6A0ADEEF34A600A65D321D4F8F8D60F |
-| **Autoritäts Schlüssel-ID** | KeyID: B1:3E: C3:69:03: F8: BF: 47:01: D4:98:26:1a: 08:02: EF: 63:64:2B: C3 |
-| **Fingerabdruck (SHA-1)** | 7E2F3A4F8FE8FA8A5730AECA029696637E986F3F |
+| **Gültigkeit noch nicht vorher** | Dienstag, 22. Oktober 2013 05:00 |
+| **Gültigkeit erst nach** | Sonntag, 22. Oktober 2028 05:00 |
+| **Subject Key Identifier** | 3DD350A5D6A0ADEEF34A600A65D321D4F8F8D60F |
+| **Autoritätsschlüssel-ID** | KeyID:b1:3e:c3:69:03:f8:bf:47:01:d4:98:26:1a:08:02:ef:63:64:2b:c3 |
+| **Fingerabdruck (SHA-1)** | 7E2F3A4F8FE8FA8A5730AECA029696637E986F3F3F |
 | **Fingerabdruck (SHA-256)** | 403E062A2653059113285BAF80A0D4AE422C848C9F78FAD01FC94BC5B87FEF1A |
 | **CRL-URLs** | http://crl4.digicert.com/DigiCertHighAssuranceEVRootCA.crl |
-| **OCSP-URLs** | http://ocsp.digicert.com |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="digicert-sha2-high-assurance-server-ca"></a>**Digicert SHA2 High Assurance Server-Zertifizierungsstelle**
+### <a name="digicert-sha2-high-assurance-server-ca"></a>**DigiCert SHA2 High Assurance Server CA**
 
-| **Betreff** | CN = Digicert SHA2 High Assurance Server-Zertifizierungsstelle<br>OU = www. Digicert. com<br>O = Digicert Inc.<br>C = US |
+| **Betreff** | CN=DigiCert SHA2 High Assurance Server CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Digicert High Assurance EV-Stammzertifizierungsstelle<br>OU = www. Digicert. com<br>O = Digicert Inc.<br>C = US |
-| **Seriennummer** | 04: E1: E7: A4: DC: 5C: F2: F3:4T: C0:2B: 42: B8:5D: 15:9F |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Aussteller** | CN=DigiCert High Assurance EV Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Seriennummer** | 04:E1:E7:A4:DC:5C:F2:F3:6D:C0:2B:42:B8:5D:15:9F |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Oct 22 12:00:00 2013 UTC |
-| **Gültigkeit nicht nach** | Oct 22 12:00:00 2028 UTC |
-| **ID des Antragstellerschlüssels** | 51:68: FF: 90: AF: 02:07:75:3C: cc: D9:65:64:62: a2:12: B8:59:72:3B |
-| **Autoritäts Schlüssel-ID** | keyid: B1:3E: C3:69:03: F8: BF: 47:01: D4:98:26:1a: 08:02: EF: 63:64:2B: C3 |
+| **Gültigkeit noch nicht vorher** | 22. Oktober 12:00:00 2013 UTC |
+| **Gültigkeit nicht nach** | 22. Oktober 12:00:00 2028 UTC |
+| **Subject Key Identifier** | 51:68:ff:90:af:02:07:75:3c:cc:d9:65:64:62:a2:12:b8:59:72:3b |
+| **Autoritätsschlüssel-ID** | keyid:b1:3e:c3:69:03:f8:bf:47:01:d4:98:26:1a:08:02:ef:63:64:2b:c3 |
 | **Fingerabdruck (SHA-1)** | A031C46782E6E6C662C2C87C76DA9AA62CCABD8E |
 | **Fingerabdruck (SHA-256)** | 19400BE5B7A31FB733917700789D2F0A2471C0C9D506C0E504C06C16D7CB17C0 |
-| **PIN (SHA-256)** | k2v657xBsOVe1PQRwOsHsw3bsGT2VzIqz5K + 59sNQws = |
+| **Pin (SHA-256)** | k2v657xBsOVe1PQRwOsHsw3bsGT2VzIqz5K+59sNQws= |
 | **CRL-URLs** | http://crl4.digicert.com/DigiCertHighAssuranceEVRootCA.crl |
-| **OCSP-URLs** | http://ocsp.digicert.com |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="digicert-sha2-secure-server-ca"></a>**Digicert SHA2 Secure Server-Zertifizierungsstelle**
+### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 Secure Server CA**
 
-| **Betreff** | CN = Digicert SHA2 Secure Server-Zertifizierungsstelle<br>O = Digicert Inc.<br>C = US |
+| **Betreff** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Digicert globale Stammzertifizierungsstelle<br>OU = www. Digicert. com<br>O = Digicert Inc.<br>C = US |
-| **Seriennummer** | 01: FD: a3: EB: 6E: ca: 75: C8:88:43:8B: 72:4B: CF: BC: 91 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Aussteller** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Seriennummer** | 01:FD:A3:EB:6E:CA:75:C8:88:43:8B:72:4B:CF:BC:91 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Mär 08 12:00:00 2013 UTC |
-| **Gültigkeit nicht nach** | Mär 08 12:00:00 2023 UTC |
-| **ID des Antragstellerschlüssels** | unsichere: 80:61:1C: 82:31:61: D5:2F: 28: E7:8-8:46:38: B4:2C: E1: C6: D9: E2 |
-| **Autoritäts Schlüssel-ID** | keyid: 03: de: 50:35:56: D1:4C: BB: 66: F0: a3: E2:1B: 1B: C3:97: B2:3D: D1:55 |
+| **Gültigkeit noch nicht vorher** | Mrz 08 12:00:00 2013 UTC |
+| **Gültigkeit nicht nach** | 08. März 12:00:00 2023 UTC |
+| **Subject Key Identifier** | 0f:80:61:1c:82:31:61:d5:2f:28:e7:8d:46:38:b4:2c:e1:c6:d9:e2 |
+| **Autoritätsschlüssel-ID** | keyid:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Fingerabdruck (SHA-1)** | 1FB86B1168EC743154062E8C9CC5B171A4B7CCB4 |
 | **Fingerabdruck (SHA-256)** | 154C433C491929C5EF686E838E323664A00E6A0D822CCC958FB4DAB03E49A08F |
-| **PIN (SHA-256)** | 5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w = |
+| **Pin (SHA-256)** | 5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w= |
 | **CRL-URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
-| **OCSP-URLs** | http://ocsp.digicert.com |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="digicert-sha2-secure-server-ca"></a>**Digicert SHA2 Secure Server-Zertifizierungsstelle**
+### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 Secure Server CA**
 
-| **Betreff** | CN = Digicert SHA2 Secure Server-Zertifizierungsstelle<br>O = Digicert Inc.<br>C = US |
+| **Betreff** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Digicert globale Stammzertifizierungsstelle, ou = www. Digicert. com, O = Digicert Inc, C = US |
-| **Seriennummer** | 02:74:2e: AA: 17: ca: 8E: 21: C7:17: BB: 1f: FC: FD: 0C: a0 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048-Bits |
+| **Aussteller** | CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US |
+| **Seriennummer** | 02:74:2E:AA:17:CA:8E:21:C7:17:BB:1F:FC:FD:0C:A0 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048-Bit |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Dienstag, September 22, 2020 5:00 Uhr |
-| **Gültigkeit nicht bis** | Sonntag, September 22, 2030 4:59 Uhr |
-| **ID des Antragstellerschlüssels** | 0F80611C823161D52F28E78D4638B42CE1C6D9E2 |
-| **Autoritäts Schlüssel-ID** | KeyID: 03: de: 50:35:56: D1:4C: BB: 66: F0: a3: E2:1B: 1B: C3:97: B2:3D: D1:55 |
+| **Gültigkeit noch nicht vorher** | Dienstag, 22. September 2020 17:00 |
+| **Gültigkeit erst nach** | Sonntag, 22. September 2030 16:59 |
+| **Subject Key Identifier** | 0F80611C823161D52F28E78D4638B42CE1C6D9E2 |
+| **Autoritätsschlüssel-ID** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Fingerabdruck (SHA-1)** | 626D44E704D1CEABE3BF0D53397464AC8080142C |
 | **Fingerabdruck (SHA-256)** | C1AD7778796D20BCA65C889A2655021156528BB62FF5FA43E1B8E5A83E3D2EAA |
 | **CRL-URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
-| **OCSP-URLs** | http://ocsp.digicert.com |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="digicert-tls-rsa-sha256-2020-ca1"></a>**Digicert TLS RSA SHA256 2020 CA1**
+### <a name="digicert-tls-rsa-sha256-2020-ca1"></a>**DigiCert TLS RSA SHA256 2020 CA1**
 
-| **Betreff** | CN = Digicert TLS RSA SHA256 2020 CA1<br>O = Digicert Inc.<br>C = US |
+| **Betreff** | CN=DigiCert TLS RSA SHA256 2020 CA1<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Digicert globale Stammzertifizierungsstelle, ou = www. Digicert. com, O = Digicert Inc, C = US |
-| **Seriennummer** | 0a: 35:08: D5:5C: 29:2B: 01:7D: F8: AD: 65: C0: undicht: F7: E4 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048-Bits |
+| **Aussteller** | CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US |
+| **Seriennummer** | 0A:35:08:D5:5C:29:2B:01:7D:F8:AD:65:C0:0F:F7:E4 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048-Bit |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Mittwoch, September 23, 2020 5:00 Uhr |
-| **Gültigkeit nicht bis** | Montag, September 23, 2030 4:59 Uhr |
-| **ID des Antragstellerschlüssels** | B76BA2EAA8AA848C79EAB4DA0F98B2C59576B9F4 |
-| **Autoritäts Schlüssel-ID** | KeyID: 03: de: 50:35:56: D1:4C: BB: 66: F0: a3: E2:1B: 1B: C3:97: B2:3D: D1:55 |
+| **Gültigkeit noch nicht vorher** | Mittwoch, 23. September 2020 17:00 |
+| **Gültigkeit erst nach** | Montag, 23. September 2030 16:59 |
+| **Subject Key Identifier** | B76BA2EAA8AA848C79EAB4DA0F98B2C59576B9F4 |
+| **Autoritätsschlüssel-ID** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Fingerabdruck (SHA-1)** | 6938FD4D98BAB03FAADB97B34396831E3780AEA1 |
 | **Fingerabdruck (SHA-256)** | 25768713D3B459F9382D2A594F85F34709FD2A8930731542A4146FFB246BEC69 |
 | **CRL-URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
-| **OCSP-URLs** | http://ocsp.digicert.com |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="entrust-certification-authority---l1c"></a>**Entrust-Zertifizierungsstelle – L1C**
+### <a name="entrust-certification-authority---l1c"></a>**Beauftragen der Zertifizierungsstelle – L1C**
 
-| **Betreff** | CN = Entrust-Zertifizierungsstelle – L1C<br>OU = &quot; (c) 2009 Entrust, Inc.&quot;<br>OU = www. Entrust. net/RPA wird durch Verweis übernommen<br>O = &quot; Entrust, Inc.&quot;<br>C = US |
+| **Betreff** | CN=Vererbungszertifizierungsstelle – L1C<br>OU= &quot; (c) 2009 Entrust, Inc.&quot;<br>OU=www.entrust.net/rpa ist nach Referenz integriert<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Entrust. NET-Zertifizierungsstelle (2048)<br>OU = (c) 1999 Entrust.net Limited<br>OU = www. Entrust. net/CPS \_ 2048 incorp. durch Ref. (Limits liab.)<br>O = Entrust. net |
-| **Seriennummer** | 4C: 0E: 8c: 39 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Aussteller** | CN=Entrust.net Certification Authority (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. by ref. (limits liab.)<br>O=Entrust.net |
+| **Seriennummer** | 4C:0E:8C:39 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha1RSA |
-| **Gültigkeit nicht vor** | Nov 11 15:40:40 2011 UTC |
-| **Gültigkeit nicht nach** | Nov 12 02:51:17 2021 UTC |
-| **ID des Antragstellerschlüssels** | 1E: F1: ab: 89:06: F8:49: undicht: 01:33:77: EE: 14:7a: EE: 19:7C: 93:28:4D |
-| **Autoritäts Schlüssel-ID** | keyid: 55: E4:81: D1:11:80: be: D8:89: B9:08: a3:31: F9: a1:24:09:16: B9:70 |
+| **Gültigkeit noch nicht vorher** | 11. November 15:40:40 2011 UTC |
+| **Gültigkeit nicht nach** | 12. November 02:51:17 2021 UTC |
+| **Subject Key Identifier** | 1e:f1:ab:89:06:f8:49:0f:01:33:77:ee:14:7a:ee:19:7c:93:28:4d |
+| **Autoritätsschlüssel-ID** | keyid:55:e4:81:d1:11:80:be:d8:89:b9:08:a3:31:f9:a1:24:09:16:b9:70 |
 | **Fingerabdruck (SHA-1)** | C53E73073F93CE7895DE7484126BC303DAB9E657 |
 | **Fingerabdruck (SHA-256)** | 0EE4DAF71A85D842D23F4910FD4C909B7271861931F1D5FEAC868225F52700E2 |
-| **PIN (SHA-256)** | VFv5NemtodoRftw8KsvFb8AoCWwOJL6bOJS + Ui0bQ94 = |
+| **Pin (SHA-256)** | VFv5NemtodoRftw8KsvFb8AoCWwOJL6bOJS+Ui0bQ94= |
 | **CRL-URLs** | http://crl.entrust.net/2048ca.crl |
-| **OCSP-URLs** | http://ocsp.entrust.net |
+| **OCSP URLs** | http://ocsp.entrust.net |
 
-### <a name="entrust-certification-authority---l1k"></a>**Entrust-Zertifizierungsstelle – L1K**
+### <a name="entrust-certification-authority---l1k"></a>**Beauftragen der Zertifizierungsstelle – L1K**
 
-| **Betreff** | CN = Entrust-Zertifizierungsstelle – L1K<br>OU = &quot; (c) 2012 Entrust, Inc. – nur für autorisierte Verwendung&quot;<br>OU = siehe www.Entrust.net/legal-terms<br>O = &quot; Entrust, Inc.&quot;<br>C = US |
+| **Betreff** | CN=Vererbungszertifizierungsstelle – L1K<br>OU= &quot; (c) 2012 Entrust, Inc. – nur zur autorisierten Verwendung&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Entrust-Stammzertifizierungsstelle-G2<br>OU = &quot; (c) 2009 Entrust, Inc. – nur für autorisierte Verwendung&quot;<br>OU = siehe www.Entrust.net/legal-terms<br>O = &quot; Entrust, Inc.&quot;<br>C = US |
-| **Seriennummer** | 0E: e9:4C: C3:00:00:00:00:51: D3:77:85 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Aussteller** | CN=Vererbung der Stammzertifizierungsstelle – G2<br>OU= &quot; (c) 2009 Entrust, Inc. – nur zur autorisierten Verwendung&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **Seriennummer** | 0E:E9:4C:C3:00:00:00:00:51:D3:77:85 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Oct 05 19:13:56 2015 UTC |
-| **Gültigkeit nicht nach** | Dec 05 19:43:56 2030 UTC |
-| **ID des Antragstellerschlüssels** | 82: a2:70:74: DD: BC: 53:3f: CF: 7B: D4: F7: CD: 7F: A7:60: C6:0A: 4C: BF |
-| **Autoritäts Schlüssel-ID** | keyid: 6a: 72:26:7a: D0:1E: EF: 7D: E7:3B: 69:51: D4:6C: 4D: 9F: 90:12:66: ab |
+| **Gültigkeit noch nicht vorher** | Okt 05 19:13:56 2015 UTC |
+| **Gültigkeit nicht nach** | 05. Dezember 19:43:56 2030 UTC |
+| **Subject Key Identifier** | 82:a2:70:74:dd:bc:53:3f:cf:7b:d4:f7:cd:7f:a7:60:c6:0a:4c:bf |
+| **Autoritätsschlüssel-ID** | keyid:6a:72:26:7a:d0:1e:ef:7d:e7:3b:69:51:d4:6c:8d:9f:90:12:66:ab |
 | **Fingerabdruck (SHA-1)** | F21C12F46CDB6B2E16F09F9419CDFF328437B2D7 |
 | **Fingerabdruck (SHA-256)** | 13EFB39A2F6654E8C67BD04F4C6D4C90CD6CAB5091BCEDC73787F6B77D3D3FE7 |
-| **PIN (SHA-256)** | 980Ionqp3wkYtN9SZVgMzuWQzJta1nfxNPwTem1X0uc = |
+| **Pin (SHA-256)** | 980Ionqp3wkYtN9SZVgMzuWQzJta1nfxNPwTem1X0uc= |
 | **CRL-URLs** | http://crl.entrust.net/g2ca.crl |
-| **OCSP-URLs** | http://ocsp.entrust.net |
+| **OCSP URLs** | http://ocsp.entrust.net |
 
-### <a name="globalsign-extended-validation-ca---sha256---g2"></a>**GlobalSign Extended Validation-Zertifizierungsstelle-SHA256-G2**
+### <a name="globalsign-extended-validation-ca---sha256---g2"></a>**GlobalSign Extended Validation CA - SHA256 - G2**
 
-| **Betreff** | CN = GlobalSign Extended Validation-Zertifizierungsstelle-SHA256-G2<br>O = GlobalSign NV-SA<br>C = be |
+| **Betreff** | CN=GlobalSign Extended Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
-| **Aussteller** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign-Stammzertifizierungsstelle-R2 |
-| **Seriennummer** | 04:00:00:00:00:01:44:4E: F0:4a: 55 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Aussteller** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign-Stammzertifizierungsstelle - R2 |
+| **Seriennummer** | 04:00:00:00:00:01:44:4E:F0:4A:55 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Feb 20 10:00:00 2014 UTC |
-| **Gültigkeit nicht nach** | Dec 15 08:00:00 2021 UTC |
-| **ID des Antragstellerschlüssels** | Da: 40:77:43:65:1C: F8: FE: A7: E3: F4:64:82:3E: 4D: 43:13:22:31:02 |
-| **Autoritäts Schlüssel-ID** | keyid: 9a: E2:07:57:67:1C: 1E: C0:6a: 06: de: 59: B4:9a: 2D: DF: DC: 19:86:2E |
+| **Gültigkeit noch nicht vorher** | 20. Februar 10:00:00 2014 UTC |
+| **Gültigkeit nicht nach** | 15. Dezember 08:00:00 2021 UTC |
+| **Subject Key Identifier** | da:40:77:43:65:1c:f8:fe:a7:e3:f4:64:82:3e:4d:43:13:22:31:02 |
+| **Autoritätsschlüssel-ID** | keyid:9b:e2:07:57:67:1c:1e:c0:6a:06:de:59:b4:9a:2d:df:dc:19:86:2e |
 | **Fingerabdruck (SHA-1)** | 65BE102BE26928650E0EF54DC8F4F15AF5F98E8B |
 | **Fingerabdruck (SHA-256)** | 24F91C0705A0A5338641B365FB0D9D9709B56297CFF1857E73C02C1636D486AA |
-| **PIN (SHA-256)** | LvRiGEjRqfzurezaWuj8Wie2gyHMrW5Q06LspMnox7A = |
+| **Pin (SHA-256)** | LvRiGEjRqfzurezaWuj8Wie2gyHMrW5Q06LspMnox7A= |
 | **CRL-URLs** | http://crl.globalsign.net/root-r2.crl |
-| **OCSP-URLs** | http://ocsp.globalsign.com/rootr2 |
+| **OCSP URLs** | http://ocsp.globalsign.com/rootr2 |
 
-### <a name="globalsign-extended-validation-ca---sha256---g3"></a>**GlobalSign Extended Validation-Zertifizierungsstelle-SHA256-G3**
+### <a name="globalsign-extended-validation-ca---sha256---g3"></a>**GlobalSign Extended Validation CA - SHA256 - G3**
 
-| **Betreff** | CN = GlobalSign Extended Validation-Zertifizierungsstelle-SHA256-G3<br>O = GlobalSign NV-SA<br>C = be |
+| **Betreff** | CN=GlobalSign Extended Validation CA - SHA256 - G3<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
-| **Aussteller** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign-Stammzertifizierungsstelle-R3 |
-| **Seriennummer** | 48: A4:02: DD: 27:92:0d: a2:08:34:9d: D1:99:7B |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Aussteller** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R3 |
+| **Seriennummer** | 48:A4:02:DD:27:92:0D:A2:08:34:9D:D1:99:7B |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Sep 21 00:00:00 2016 UTC |
-| **Gültigkeit nicht nach** | Sep 21 00:00:00 2026 UTC |
-| **ID des Antragstellerschlüssels** | DD: B3: E7:4T: A8:2e: E8: C5:4E: 6E: CF: 74: E6:75:3C: 94:15: CE: E8:1D |
-| **Autoritäts Schlüssel-ID** | keyid: 8F: F0:4B: 7F: A8:2e: 45:24: AE: 4D: 50: Fa: 63:9a: 8B: de: E2: DD: 1B: BC |
+| **Gültigkeit noch nicht vorher** | 21. Sep 00:00:00 2016 UTC |
+| **Gültigkeit nicht nach** | 21. Sep 00:00:00 2026 UTC |
+| **Subject Key Identifier** | dd:b3:e7:6d:a8:2e:e8:c5:4e:6e:cf:74:e6:75:3c:94:15:ce:e8:1d |
+| **Autoritätsschlüssel-ID** | keyid:8f:f0:4b:7f:a8:2e:45:24:ae:4d:50:fa:63:9a:8b:de:e2:dd:1b:bc |
 | **Fingerabdruck (SHA-1)** | 6023192FE7B59D2789130A9FE4094F9B5570D4A2 |
 | **Fingerabdruck (SHA-256)** | AED5DD9A5339685DFB029F6D89A14335A96512C3CACC52B2994AF8B6B37FA4D2 |
-| **PIN (SHA-256)** | 86fLIetopQLDNxFZ0uMI66Xpl1pFgLlHHn9v6kT0i4I = |
+| **Pin (SHA-256)** | 86fLIetopQLDNxFZ0uMI66Xpl1pFgLlHHn9v6kT0i4I= |
 | **CRL-URLs** | http://crl.globalsign.com/root-r3.crl |
-| **OCSP-URLs** | http://ocsp2.globalsign.com/rootr3 |
+| **OCSP URLs** | http://ocsp2.globalsign.com/rootr3 |
 
-### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign-Organisationsüberprüfung-Zertifizierungsstelle-SHA256-G2**
+### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign Organization Validation CA - SHA256 - G2**
 
-| **Betreff** | CN = GlobalSign Organization Validation-Zertifizierungsstelle-SHA256-G2<br>O = GlobalSign NV-SA<br>C = be |
+| **Betreff** | CN=GlobalSign Organization Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
-| **Aussteller** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign-Stammzertifizierungsstelle-R3 |
-| **Seriennummer** | 04:00:00:00:00:01:31:89: C6:44: C9 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Aussteller** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R3 |
+| **Seriennummer** | 04:00:00:00:00:01:31:89:C6:44:C9 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Aug 02 10:00:00 2011 UTC |
-| **Gültigkeit nicht nach** | Aug 02 10:00:00 2022 UTC |
-| **ID des Antragstellerschlüssels** | 96: de: 61: F1: BD: 1C: 16:29:53:1C: C0: cc: 7D: 3B: 83:00:40: E6:1a: 7C |
-| **Autoritäts Schlüssel-ID** | keyid: 8F: F0:4B: 7F: A8:2e: 45:24: AE: 4D: 50: Fa: 63:9a: 8B: de: E2: DD: 1B: BC |
+| **Gültigkeit noch nicht vorher** | August 10:00:00 2011 UTC |
+| **Gültigkeit nicht nach** | August 10:00:00 2022 UTC |
+| **Subject Key Identifier** | 96:de:61:f1:bd:1c:16:29:53:1c:c0:cc:7d:3b:83:00:40:e6:1a:7c |
+| **Autoritätsschlüssel-ID** | keyid:8f:f0:4b:7f:a8:2e:45:24:ae:4d:50:fa:63:9a:8b:de:e2:dd:1b:bc |
 | **Fingerabdruck (SHA-1)** | EF90B2B86F4756EBE7D36FF3015D63523A0076E9 |
 | **Fingerabdruck (SHA-256)** | 0B339212D7CFF17A2C59E35669B58E77350133750A78DA9404770EDD470DEF76 |
-| **PIN (SHA-256)** | IQBnNBEiFuhj + 8x6X8XLgh01V9Ic5/V3IRQLNFFc7v4 = |
+| **Pin (SHA-256)** | IQBnNBEiFuhj+8x6X8XLgh01V9Ic5/V3IRQLNFFc7v4= |
 | **CRL-URLs** | http://crl.globalsign.net/root-r3.crl |
-| **OCSP-URLs** | http://ocsp2.globalsign.com/rootr3 |
+| **OCSP URLs** | http://ocsp2.globalsign.com/rootr3 |
 
-### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign-Organisationsüberprüfung-Zertifizierungsstelle-SHA256-G2**
+### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign Organization Validation CA - SHA256 - G2**
 
-| **Betreff** | CN = GlobalSign Organization Validation-Zertifizierungsstelle-SHA256-G2<br>O = GlobalSign NV-SA<br>C = be |
+| **Betreff** | CN=GlobalSign Organization Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
-| **Aussteller** | CN = GlobalSign-Stammzertifizierungsstelle<br>OU = Stammzertifizierungsstelle<br>O = GlobalSign NV-SA<br>C = be |
-| **Seriennummer** | 04:00:00:00:00:01:44:4E: F0:42:47 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Aussteller** | CN=GlobalSign-Stammzertifizierungsstelle<br>OU=Stammzertifizierungsstelle<br>O=GlobalSign nv-sa<br>C=BE |
+| **Seriennummer** | 04:00:00:00:00:01:44:4E:F0:42:47 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Feb 20 10:00:00 2014 UTC |
-| **Gültigkeit nicht nach** | Feb 20 10:00:00 2024 UTC |
-| **ID des Antragstellerschlüssels** | 96: de: 61: F1: BD: 1C: 16:29:53:1C: C0: cc: 7D: 3B: 83:00:40: E6:1a: 7C |
-| **Autoritäts Schlüssel-ID** | keyid: 60:7B: 66:1a: 45:0d: 97: ca: 89:50:2F: 7D: 04: CD: 34: A8: FF: FC: FD: 4B |
+| **Gültigkeit noch nicht vorher** | 20. Februar 10:00:00 2014 UTC |
+| **Gültigkeit nicht nach** | 20. Februar 10:00:00 2024 UTC |
+| **Subject Key Identifier** | 96:de:61:f1:bd:1c:16:29:53:1c:c0:cc:7d:3b:83:00:40:e6:1a:7c |
+| **Autoritätsschlüssel-ID** | keyid:60:7b:66:1a:45:0d:97:ca:89:50:2f:7d:04:cd:34:a8:ff:fc:fd:4b |
 | **Fingerabdruck (SHA-1)** | 902EF2DEEB3C5B13EA4C3D5193629309E231AE55 |
 | **Fingerabdruck (SHA-256)** | 74EF335E5E18788307FB9D89CB704BEC112ABD23487DBFF41C4DED5070F241D9 |
-| **PIN (SHA-256)** | IQBnNBEiFuhj + 8x6X8XLgh01V9Ic5/V3IRQLNFFc7v4 = |
+| **Pin (SHA-256)** | IQBnNBEiFuhj+8x6X8XLgh01V9Ic5/V3IRQLNFFc7v4= |
 | **CRL-URLs** | http://crl.globalsign.net/root.crl |
-| **OCSP-URLs** | http://ocsp.globalsign.com/rootr1 |
+| **OCSP URLs** | http://ocsp.globalsign.com/rootr1 |
 
-### <a name="globalsign-organization-validation-ca---sha256---g3"></a>**GlobalSign-Organisationsüberprüfung-Zertifizierungsstelle-SHA256-G3**
+### <a name="globalsign-organization-validation-ca---sha256---g3"></a>**GlobalSign Organization Validation CA - SHA256 - G3**
 
-| **Betreff** | CN = GlobalSign Organization Validation ca-SHA256-G3<br>O = GlobalSign NV-SA<br>C = be |
+| **Betreff** | CN=GlobalSign Organization Validation CA - SHA256 - G3<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
-| **Aussteller** | CN = GlobalSign-Stammzertifizierungsstelle, ou = Stammzertifizierungsstelle, O = GlobalSign NV-SA, C = be |
-| **Seriennummer** | 47:07: B1:01:9a: 0C: 57: AD: 39: B3: E1:7D: A9: F9 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048-Bits |
+| **Aussteller** | CN=GlobalSign-Stammzertifizierungsstelle, OU=Stammzertifizierungsstelle, O=GlobalSign nv-sa, C=BE |
+| **Seriennummer** | 47:07:B1:01:9A:0C:57:AD:39:B3:E1:7D:A9:F9 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048-Bit |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Donnerstag, 3. September 2015 5:00 Uhr |
-| **Gültigkeit nicht bis** | Mittwoch, 3. September 2025 5:00 Uhr |
-| **ID des Antragstellerschlüssels** | 6886B87D7AD96D496B872F188B15346CD7B47A0E |
-| **Autoritäts Schlüssel-ID** | KeyID: 60:7B: 66:1a: 45:0d: 97: ca: 89:50:2F: 7D: 04: CD: 34: A8: FF: FC: FD: 4B |
+| **Gültigkeit noch nicht vorher** | Donnerstag, 3. September 2015 17:00 |
+| **Gültigkeit erst nach** | Mittwoch, 3. September 2025 17:00 |
+| **Subject Key Identifier** | 6886B87D7AD96D496B872F188B15346CD7B47A0E |
+| **Autoritätsschlüssel-ID** | KeyID:60:7b:66:1a:45:0d:97:ca:89:50:2f:7d:04:cd:34:a8:ff:fc:fd:4b |
 | **Fingerabdruck (SHA-1)** | 20D1EBAB5A71587B9116E4C74415D1A85B0DDDA5 |
 | **Fingerabdruck (SHA-256)** | 699D54B7482A5D329331EA0415CC2EDCD60FDA01D19E71D054196BCE0677735C |
 | **CRL-URLs** | http://crl.globalsign.com/root.crl |
-| **OCSP-URLs** | http://ocsp.globalsign.com/rootr1 |
+| **OCSP URLs** | http://ocsp.globalsign.com/rootr1 |
 
 ### <a name="globalsign-rsa-ov-ssl-ca-2018"></a>**GlobalSign RSA OV SSL CA 2018**
 
-| **Betreff** | CN = GlobalSign RSA OV SSL CA 2018<br>O = GlobalSign NV-SA<br>C = be |
+| **Betreff** | CN=GlobalSign RSA OV SSL CA 2018<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
-| **Aussteller** | CN = GlobalSign, O = GlobalSign, ou = GlobalSign Root CA-R3 |
-| **Seriennummer** | 01: EE: 5f: 22:1D: FC: 62:3B: D4:33:3A: 85:57 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048-Bits |
+| **Aussteller** | CN=GlobalSign, O=GlobalSign, OU=GlobalSign Root CA - R3 |
+| **Seriennummer** | 01:EE:5F:22:1D:FC:62:3B:D4:33:3A:85:57 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048-Bit |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Dienstag, 20. November 2018 4:00 Uhr |
-| **Gültigkeit nicht bis** | Montag, November 20, 2028 4:00 Uhr |
-| **ID des Antragstellerschlüssels** | F8EF7FF2CD7867A8DE6F8F248D88F1870302B3EB |
-| **Autoritäts Schlüssel-ID** | KeyID: 8F: F0:4B: 7F: A8:2e: 45:24: AE: 4D: 50: Fa: 63:9a: 8B: de: E2: DD: 1B: BC |
+| **Gültigkeit noch nicht vorher** | Dienstag, 20. November 2018 16:00 |
+| **Gültigkeit erst nach** | Montag, 20. November 2028 16:00 |
+| **Subject Key Identifier** | F8EF7FF2CD7867A8DE6F8F248D88F1870302B3EB |
+| **Autoritätsschlüssel-ID** | KeyID:8f:f0:4b:7f:a8:2e:45:24:ae:4d:50:fa:63:9a:8b:de:e2:dd:1b:bc |
 | **Fingerabdruck (SHA-1)** | DFE83023062B997682708B4EAB8E819AFF5D9775 |
-| **Fingerabdruck (SHA-256)** | B676FFA3179E8812093A1B5EAFEE876AE7A6AAF231078DAD1BFB21CD2893764A |
+| **Fingerabdruck (SHA-256)** | B676FFA3179E8812093A1B5E UHR 876AE7A6AAF231078DAD1BFB21CD2893764A |
 | **CRL-URLs** | http://crl.globalsign.com/root-r3.crl |
-| **OCSP-URLs** | http://ocsp2.globalsign.com/rootr3 |
+| **OCSP URLs** | http://ocsp2.globalsign.com/rootr3 |
 
-### <a name="lets-encrypt-authority-x3"></a>**Lassen Sie uns die Autorität X3 verschlüsseln**
+### <a name="lets-encrypt-authority-x3"></a>**Let's Encrypt Authority X3**
 
-| **Betreff** | CN = Let es Encrypt Authority X3<br>O = verschlüsseln wir<br>C = US |
+| **Betreff** | CN=Let's Encrypt Authority X3<br>O=Let's Encrypt<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = DST-Stammzertifizierungsstelle X3<br>O = digitale Signatur Trust Co. |
-| **Seriennummer** | 0a: 01:41:42:00:00:01:53:85:73:6a: 0B: 85: EC: A7:08 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Aussteller** | CN=DST Root CA X3<br>O=Digital Signature Trust Co. |
+| **Seriennummer** | 0A:01:41:42:00:00:01:53:85:73:6A:0B:85:EC:A7:08 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Mär 17 16:40:46 2016 UTC |
-| **Gültigkeit nicht nach** | Mär 17 16:40:46 2021 UTC |
-| **ID des Antragstellerschlüssels** | A8:4a: 6a: 63:04:7D: DD: BA: E6: D1:39: B7: A6:45:65: EF: F3: A8: EC: a1 |
-| **Autoritäts Schlüssel-ID** | keyid: C4: A7: B1: A4:7B: 2C: 71: Fa: DB: E1:4B: 90:75: FF: C4:15:60:85:89:10 |
+| **Gültigkeit noch nicht vorher** | 17. März 16:40:46 2016 UTC |
+| **Gültigkeit nicht nach** | 17. März 16:40:46 2021 UTC |
+| **Subject Key Identifier** | a8:4a:6a:63:04:7d:dd:ba:e6:d1:39:b7:a6:45:65:ef:f3:a8:ec:a1 |
+| **Autoritätsschlüssel-ID** | keyid:c4:a7:b1:a4:7b:2c:71:fa:db:e1:4b:90:75:ff:c4:15:60:85:89:10 |
 | **Fingerabdruck (SHA-1)** | E6A3B45B062D509B3382282D196EFE97D5956CCB |
 | **Fingerabdruck (SHA-256)** | 25847D668EB4F04FDD40B12B6B0740C567DA7D024308EB6C2C96FE41D9DE218D |
-| **PIN (SHA-256)** | YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg = |
+| **Pin (SHA-256)** | YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg= |
 | **AIA-URLs** | http://apps.identrust.com/roots/dstrootcax3.p7c |
 | **CRL-URLs** | http://crl.identrust.com/DSTROOTCAX3CRL.crl |
-| **OCSP-URLs** | http://isrg.trustid.ocsp.identrust.com |
+| **OCSP URLs** | http://isrg.trustid.ocsp.identrust.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Microsoft Azure TLS ausstellende Zertifizierungsstelle 01**
+### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Microsoft Azure TLS Issuing CA 01**
 
-| **Betreff** | CN = Microsoft Azure TLS-Ausgabe-Zertifizierungsstelle 01<br>O = Microsoft Corporation<br>C = US |
+| **Betreff** | CN=Microsoft Azure TLS Issuing CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Digicert globales Stammverzeichnis G2, ou = www. Digicert. com, O = Digicert Inc, C = US |
-| **Seriennummer** | 0a: AF: A6: C5: ca: 63: C4:51:41: EA: 3B: E1: F7: C7:53:17 |
-| **Länge des öffentlichen Schlüssels** | RSA 4096-Bits |
+| **Aussteller** | CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US |
+| **Seriennummer** | 0A:AF:A6:C5:CA:63:C4:51:41:EA:3B:E1:F7:C7:53:17 |
+| **Länge des öffentlichen Schlüssels** | RSA 4096 Bit |
 | **Signaturalgorithmus** | sha384RSA |
-| **Gültigkeit nicht vor** | Mittwoch, 29. Juli 2020 5:30 Uhr |
-| **Gültigkeit nicht bis** | Donnerstag, 27. Juni 2024 4:59 Uhr |
-| **ID des Antragstellerschlüssels** | 0F205DD7A15795DB92CF2BD0C7C27704CE728076 |
-| **Autoritäts Schlüssel-ID** | KeyID: 4E: 22:54:20:18:95: E6: E3:6E: E6:: Fa: Fa: B9:12: Ed: 06:17:8F: 39 |
+| **Gültigkeit noch nicht vorher** | Mittwoch, 29. Juli 2020 05:30 |
+| **Gültigkeit erst nach** | Donnerstag, 27. Juni 2024 16:59 |
+| **Subject Key Identifier** | 0F205DD7A15795DB92CF2BD0C7C27704CE728076 |
+| **Autoritätsschlüssel-ID** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:fa:b9:12:ed:06:17:8f:39 |
 | **Fingerabdruck (SHA-1)** | 2F2877C5D778C31E0F29C7E371DF5471BD673173 |
 | **Fingerabdruck (SHA-256)** | 24C7299864E0A2A6964F551C0E8DF2461532FA8C48E4DBBB6080716691F190E5 |
 | **CRL-URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
-| **OCSP-URLs** | http://ocsp.digicert.com |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft Azure TLS ausstellende CA 02**
+### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft Azure TLS Issuing CA 02**
 
-| **Betreff** | CN = Microsoft Azure TLS ausstellende CA 02<br>O = Microsoft Corporation<br>C = US |
+| **Betreff** | CN=Microsoft Azure TLS Issuing CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Digicert globales Stammverzeichnis G2, ou = www. Digicert. com, O = Digicert Inc, C = US |
-| **Seriennummer** | 0C: 6a: e9:7C: CE: D5:99:83:86:90: a0:0A: 9e: A5:32:14 |
-| **Länge des öffentlichen Schlüssels** | RSA 4096-Bits |
+| **Aussteller** | CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US |
+| **Seriennummer** | 0C:6A:E9:7C:CE:D5:99:83:86:90:A0:0A:9E:A5:32:14 |
+| **Länge des öffentlichen Schlüssels** | RSA 4096 Bit |
 | **Signaturalgorithmus** | sha384RSA |
-| **Gültigkeit nicht vor** | Mittwoch, 29. Juli 2020 5:30 Uhr |
-| **Gültigkeit nicht bis** | Donnerstag, 27. Juni 2024 4:59 Uhr |
-| **ID des Antragstellerschlüssels** | 00AB91FC216226979AA8791B61419060A96267FD |
-| **Autoritäts Schlüssel-ID** | KeyID: 4E: 22:54:20:18:95: E6: E3:6E: E6:: Fa: Fa: B9:12: Ed: 06:17:8F: 39 |
+| **Gültigkeit noch nicht vorher** | Mittwoch, 29. Juli 2020 05:30 |
+| **Gültigkeit erst nach** | Donnerstag, 27. Juni 2024 16:59 |
+| **Subject Key Identifier** | 00AB91FC216226979AA8791B61419060A96267FD |
+| **Autoritätsschlüssel-ID** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:fa:b9:12:ed:06:17:8f:39 |
 | **Fingerabdruck (SHA-1)** | E7EEA674CA718E3BEFD90858E09F8372AD0AE2AA |
 | **Fingerabdruck (SHA-256)** | 15A98761EBE011554DA3A46D206B0812CB2EB69AE87AAA11A6DD4CB84ED5142A |
 | **CRL-URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
-| **OCSP-URLs** | http://ocsp.digicert.com |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft Azure TLS ausstellende CA 05**
+### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft Azure TLS Issuing CA 05**
 
-| **Betreff** | CN = Microsoft Azure TLS ausstellende CA 05<br>O = Microsoft Corporation<br>C = US |
+| **Betreff** | CN=Microsoft Azure TLS Issuing CA 05<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Digicert globales Stammverzeichnis G2, ou = www. Digicert. com, O = Digicert Inc, C = US |
-| **Seriennummer** | 0d: 7B: Ed: e9:7D: 82:09:96:7a: 52:63:1B: 8B: DD: 18: BD |
-| **Länge des öffentlichen Schlüssels** | RSA 4096-Bits |
+| **Aussteller** | CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US |
+| **Seriennummer** | 0D:7B:ED:E9:7D:82:09:96:7A:52:63:1B:8B:DD:18:BD |
+| **Länge des öffentlichen Schlüssels** | RSA 4096 Bit |
 | **Signaturalgorithmus** | sha384RSA |
-| **Gültigkeit nicht vor** | Mittwoch, 29. Juli 2020 5:30 Uhr |
-| **Gültigkeit nicht bis** | Donnerstag, 27. Juni 2024 4:59 Uhr |
-| **ID des Antragstellerschlüssels** | C7B29C7F1CE3B85AEFE9681AA85D94C126526A68 |
-| **Autoritäts Schlüssel-ID** | KeyID: 4E: 22:54:20:18:95: E6: E3:6E: E6:: Fa: Fa: B9:12: Ed: 06:17:8F: 39 |
+| **Gültigkeit noch nicht vorher** | Mittwoch, 29. Juli 2020 05:30 |
+| **Gültigkeit erst nach** | Donnerstag, 27. Juni 2024 16:59 |
+| **Subject Key Identifier** | C7B29C7F1CE3B85AEFE9681AA85D94C126526A68 |
+| **Autoritätsschlüssel-ID** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:fa:b9:12:ed:06:17:8f:39 |
 | **Fingerabdruck (SHA-1)** | 6C3AF02E7F269AA73AFD0EFF2A88A4A1F04ED1E5 |
 | **Fingerabdruck (SHA-256)** | D6831BA43607F5AC19778D627531562AF55145F191CAB5EFAFA0E0005442B302 |
 | **CRL-URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
-| **OCSP-URLs** | http://ocsp.digicert.com |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft Azure TLS ausstellende CA 06**
+### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft Azure TLS Issuing CA 06**
 
-| **Betreff** | CN = Microsoft Azure TLS-Ausgabe-Zertifizierungsstelle 06<br>O = Microsoft Corporation<br>C = US |
+| **Betreff** | CN=Microsoft Azure TLS Issuing CA 06<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Digicert globales Stammverzeichnis G2, ou = www. Digicert. com, O = Digicert Inc, C = US |
-| **Seriennummer** | 02: E7:91:71: FB: 80:21: e9:3f: E2: D9:83:83:4C: 50: C0 |
-| **Länge des öffentlichen Schlüssels** | RSA 4096-Bits |
+| **Aussteller** | CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US |
+| **Seriennummer** | 02:E7:91:71:FB:80:21:E9:3F:E2:D9:83:83:4C:50:C0 |
+| **Länge des öffentlichen Schlüssels** | RSA 4096 Bit |
 | **Signaturalgorithmus** | sha384RSA |
-| **Gültigkeit nicht vor** | Mittwoch, 29. Juli 2020 5:30 Uhr |
-| **Gültigkeit nicht bis** | Donnerstag, 27. Juni 2024 4:59 Uhr |
-| **ID des Antragstellerschlüssels** | D5C1673AC2A39DF477525B59123829E65568BBA5 |
-| **Autoritäts Schlüssel-ID** | KeyID: 4E: 22:54:20:18:95: E6: E3:6E: E6:: Fa: Fa: B9:12: Ed: 06:17:8F: 39 |
+| **Gültigkeit noch nicht vorher** | Mittwoch, 29. Juli 2020 05:30 |
+| **Gültigkeit erst nach** | Donnerstag, 27. Juni 2024 16:59 |
+| **Subject Key Identifier** | D5C1673AC2A39DF477525B59123829E65568BBA5 |
+| **Autoritätsschlüssel-ID** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:fa:b9:12:ed:06:17:8f:39 |
 | **Fingerabdruck (SHA-1)** | 30E01761AB97E59A06B41EF20AF6F2DE7EF4F7B0 |
 | **Fingerabdruck (SHA-256)** | 48FF8B494668C752304B48BFE818758987DEF6582E5F09B921F4B60BB3D6A8DD |
 | **CRL-URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
-| **OCSP-URLs** | http://ocsp.digicert.com |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="microsoft-it-tls-ca-1"></a>**Microsoft IT TLS-Zertifizierungsstelle 1**
+### <a name="microsoft-it-tls-ca-1"></a>**Microsoft IT TLS CA 1**
 
-| **Betreff** | CN = Microsoft IT TLS-Zertifizierungsstelle 1<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = Washington<br>C = US |
+| **Betreff** | CN=Microsoft IT TLS CA 1<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Baltimore Cybertrust-Stamm<br>OU = Cybertrust<br>O = Baltimore<br>C = IE |
-| **Seriennummer** | 08: B8:7a: 50:1B: be: "9": da: 2D: 16:4D: 3E: 39:51: BF: 55 |
-| **Länge des öffentlichen Schlüssels** | RSA 4096 Bits (e 65537) |
+| **Aussteller** | CN=CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
+| **Seriennummer** | 08:B8:7A:50:1B:BE:9C:DA:2D:16:4D:3E:39:51:BF:55 |
+| **Länge des öffentlichen Schlüssels** | RSA 4096 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Mai 20 12:51:28 2016 UTC |
-| **Gültigkeit nicht nach** | Mai 20 12:51:28 2024 UTC |
-| **ID des Antragstellerschlüssels** | 58:88:9F: D6: DC: 9:: 48:22: B7:14:3E: FF: 84:88: E8: E6:85: FF: Fa: 7D |
-| **Autoritäts Schlüssel-ID** | keyid: E5:9d: 59:30:82:47:58: cc: AC: Fa: 08:54:36:86:7B: 3A: B5:04:4D: F0 |
+| **Gültigkeit noch nicht vorher** | 20. Mai 12:51:28 2016 UTC |
+| **Gültigkeit nicht nach** | 20. Mai 12:51:28 2024 UTC |
+| **Subject Key Identifier** | 58:88:9f:d6:dc:9c:48:22:b7:14:3e:ff:84:88:e8:e6:85:ff:fa:7d |
+| **Autoritätsschlüssel-ID** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Fingerabdruck (SHA-1)** | 417E225037FBFAA4F95761D5AE729E1AEA7E3A42 |
 | **Fingerabdruck (SHA-256)** | 4FF404F02E2CD00188F15D1C00F4B6D1E38B5A395CF85314EAEBA855B6A64B75 |
-| **PIN (SHA-256)** | xjXxgkOYlag7jCtR5DreZm9b61iaIhd + G3 + b2LiybIw = |
+| **Pin (SHA-256)** | xjXxgkOYlag7jCtR5DreZm9b61iaIhd+J3+b2LiybIw= |
 | **CRL-URLs** | http://crl3.digicert.com/Omniroot2025.crl |
-| **OCSP-URLs** | http://ocsp.digicert.com |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="microsoft-it-tls-ca-2"></a>**Microsoft IT TLS-Zertifizierungsstelle 2**
+### <a name="microsoft-it-tls-ca-2"></a>**Microsoft IT TLS CA 2**
 
-| **Betreff** | CN = Microsoft IT TLS-Zertifizierungsstelle 2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = Washington<br>C = US |
+| **Betreff** | CN=Microsoft IT TLS CA 2<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Baltimore Cybertrust-Stamm<br>OU = Cybertrust<br>O = Baltimore<br>C = IE |
-| **Seriennummer** | in: 2C: 10: C9:5B: 06: C0:93:7F: B8: D4:49: F8:3E: 85:69 |
-| **Länge des öffentlichen Schlüssels** | RSA 4096 Bits (e 65537) |
+| **Aussteller** | CN=CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
+| **Seriennummer** | 0F:2C:10:C9:5B:06:C0:93:7F:B8:D4:49:F8:3E:85:69 |
+| **Länge des öffentlichen Schlüssels** | RSA 4096 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Mai 20 12:51:57 2016 UTC |
-| **Gültigkeit nicht nach** | Mai 20 12:51:57 2024 UTC |
-| **ID des Antragstellerschlüssels** | 91:9e: 3B: 44:6C: 3D: 57:9 c: 42:77:2a: 34: D7: Z4: D1: cc: 4a: 97:2C: da |
-| **Autoritäts Schlüssel-ID** | keyid: E5:9d: 59:30:82:47:58: cc: AC: Fa: 08:54:36:86:7B: 3A: B5:04:4D: F0 |
+| **Gültigkeit noch nicht vorher** | 20. Mai 12:51:57 2016 UTC |
+| **Gültigkeit nicht nach** | 20. Mai 12:51:57 2024 UTC |
+| **Subject Key Identifier** | 91:9e:3b:44:6c:3d:57:9c:42:77:2a:34:d7:4f:d1:cc:4a:97:2c:da |
+| **Autoritätsschlüssel-ID** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Fingerabdruck (SHA-1)** | 54D9D20239080C32316ED9FF980A48988F4ADF2D |
 | **Fingerabdruck (SHA-256)** | 4E107C981B42ACBE41C01067E16D44DB64814D4193E572317EA04B87C79C475F |
-| **PIN (SHA-256)** | wBdPad95AU7OgLRs0FU/E6ILO1MSCM84kJ9y0H + TT7s = |
+| **Pin (SHA-256)** | wBdPad95AU7OgLRs0FU/E6ILO1MSCM84kJ9y0H+TT7s= |
 | **CRL-URLs** | http://crl3.digicert.com/Omniroot2025.crl |
-| **OCSP-URLs** | http://ocsp.digicert.com |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="microsoft-it-tls-ca-4"></a>**Microsoft IT TLS-Zertifizierungsstelle 4**
+### <a name="microsoft-it-tls-ca-4"></a>**Microsoft IT TLS CA 4**
 
-| **Betreff** | CN = Microsoft IT TLS ca 4<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = Washington<br>C = US |
+| **Betreff** | CN=Microsoft IT TLS CA 4<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Baltimore Cybertrust-Stamm<br>OU = Cybertrust<br>O = Baltimore<br>C = IE |
-| **Seriennummer** | 0B: 6a: B3: B0:3E: B1: A9: F6: C4:60:92:6a: A8: CD: FE: B3 |
-| **Länge des öffentlichen Schlüssels** | RSA 4096 Bits (e 65537) |
+| **Aussteller** | CN=CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
+| **Seriennummer** | 0B:6A:B3:B0:3E:B1:A9:F6:C4:60:92:6A:A8:CD:FE:B3 |
+| **Länge des öffentlichen Schlüssels** | RSA 4096 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Mai 20 12:52:38 2016 UTC |
-| **Gültigkeit nicht nach** | Mai 20 12:52:38 2024 UTC |
-| **ID des Antragstellerschlüssels** | 7a: 7B: 8c: C1: CF: E7: a0: ca: 1C: D4:6b: Fa: FB: E1:33: C3: in: 1a: a2:9d |
-| **Autoritäts Schlüssel-ID** | keyid: E5:9d: 59:30:82:47:58: cc: AC: Fa: 08:54:36:86:7B: 3A: B5:04:4D: F0 |
+| **Gültigkeit noch nicht vorher** | 20. Mai 12:52:38 2016 UTC |
+| **Gültigkeit nicht nach** | 20. Mai 12:52:38 2024 UTC |
+| **Subject Key Identifier** | 7a:7b:8c:c1:cf:e7:a0:ca:1c:d4:6b:fa:fb:e1:33:c3:0f:1a:a2:9d |
+| **Autoritätsschlüssel-ID** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Fingerabdruck (SHA-1)** | 8A38755D0996823FE8FA3116A277CE446EAC4E99 |
 | **Fingerabdruck (SHA-256)** | 5FFAC43E0DDC5B4AF2B696F6BC4DB7E91DF314BB8FE0D0713A0B1A7AD2A68FAC |
-| **PIN (SHA-256)** | wUY9EOTJmS7Aj4fDVCu/KeE + + mV7FgIcbn4WhMz1I2k = |
+| **Pin (SHA-256)** | wUY9EOTJmS7Aj4fDVCu/KeE++mV7FgIcbn4WhMz1I2k= |
 | **CRL-URLs** | http://crl3.digicert.com/Omniroot2025.crl |
-| **OCSP-URLs** | http://ocsp.digicert.com |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="microsoft-it-tls-ca-5"></a>**Microsoft IT TLS ca 5**
+### <a name="microsoft-it-tls-ca-5"></a>**Microsoft IT TLS CA 5**
 
-| **Betreff** | CN = Microsoft IT TLS ca 5<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = Washington<br>C = US |
+| **Betreff** | CN=Microsoft IT TLS CA 5<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Baltimore Cybertrust-Stamm<br>OU = Cybertrust<br>O = Baltimore<br>C = IE |
-| **Seriennummer** | 08:88: CD: 52:5f: 19:24:44:4D: 14: A5:82:91: de: B9:52 |
-| **Länge des öffentlichen Schlüssels** | RSA 4096 Bits (e 65537) |
+| **Aussteller** | CN=CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
+| **Seriennummer** | 08:88:CD:52:5F:19:24:44:4D:14:A5:82:91:DE:B9:52 |
+| **Länge des öffentlichen Schlüssels** | RSA 4096 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Mai 20 12:53:03 2016 UTC |
-| **Gültigkeit nicht nach** | Mai 20 12:53:03 2024 UTC |
-| **ID des Antragstellerschlüssels** | 08: FE: 25:9F: 74: EA: 87:04: C2: BC: BB: 8E: A8:38:5f: 33: C6: D1:6C: 65 |
-| **Autoritäts Schlüssel-ID** | keyid: E5:9d: 59:30:82:47:58: cc: AC: Fa: 08:54:36:86:7B: 3A: B5:04:4D: F0 |
+| **Gültigkeit noch nicht vorher** | 20. Mai 12:53:03 2016 UTC |
+| **Gültigkeit nicht nach** | 20. Mai 12:53:03 2024 UTC |
+| **Subject Key Identifier** | 08:fe:25:9f:74:ea:87:04:c2:bc:bb:8e:a8:38:5f:33:c6:d1:6c:65 |
+| **Autoritätsschlüssel-ID** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Fingerabdruck (SHA-1)** | AD898AC73DF333EB60AC1F5FC6C4B2219DDB79B7 |
 | **Fingerabdruck (SHA-256)** | F0EE5914ED94C7252D058B4E39808AEE6FA8F62CF0974FB7D6D2A9DF16E3A87F |
-| **PIN (SHA-256)** | RCbqB + W8nwjznTeP4O6VjqcwdxIgI79eBpnBKRr32gc = |
+| **Pin (SHA-256)** | RCbqB+W8nwjznTeP4O6VjqcwdxIgI79eBpnBKRr32gc= |
 | **CRL-URLs** | http://crl3.digicert.com/Omniroot2025.crl |
-| **OCSP-URLs** | http://ocsp.digicert.com |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="microsoft-rsa-tls-ca-01"></a>**Microsoft RSA TLS-Zertifizierungsstelle 01**
+### <a name="microsoft-rsa-tls-ca-01"></a>**Microsoft RSA TLS CA 01**
 
-| **Betreff** | CN = Microsoft RSA TLS-Zertifizierungsstelle 01<br>O = Microsoft Corporation<br>C = US |
+| **Betreff** | CN=Microsoft RSA TLS CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Baltimore Cybertrust root, ou = Cybertrust, O = Baltimore, C = IE |
-| **Seriennummer** | 5F: 14:96:: 20:20:69:99: Z4: D5: C7: AC: 78:89:41: E2 |
-| **Länge des öffentlichen Schlüssels** | RSA 4096-Bits |
+| **Aussteller** | CN=CyberTrust Root, OU=CyberTrust, O=Baltimore, C=IE |
+| **Seriennummer** | 0F:14:96:5F:20:20:69:99:4F:D5:C7:AC:78:89:41:E2 |
+| **Länge des öffentlichen Schlüssels** | RSA 4096 Bit |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Dienstag, 21. Juli 2020 4:00 Uhr |
-| **Gültigkeit nicht bis** | Dienstag, 8. Oktober 2024 12:00 Uhr |
-| **ID des Antragstellerschlüssels** | B5760C3011CEC792424D4CC75C2CC8A90CE80B64 |
-| **Autoritäts Schlüssel-ID** | KeyID: E5:9d: 59:30:82:47:58: cc: AC: Fa: 08:54:36:86:7B: 3A: B5:04:4D: F0 |
+| **Gültigkeit noch nicht vorher** | Dienstag, 21. Juli 2020 16:00 |
+| **Gültigkeit erst nach** | Dienstag, 8. Oktober 2024 12:00 |
+| **Subject Key Identifier** | B5760C3011CEC792424D4CC75C2CC8A90CE80B64 |
+| **Autoritätsschlüssel-ID** | KeyID:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Fingerabdruck (SHA-1)** | 703D7A8F0EBF55AAA59F98EAF4A206004EB2516A |
 | **Fingerabdruck (SHA-256)** | 04EEEA8E50B4775B3C24797262917EE50002EC4C75B56CDF3EE1C18CFCA5BA52 |
 | **CRL-URLs** | http://crl3.digicert.com/Omniroot2025.crl |
-| **OCSP-URLs** | http://ocsp.digicert.com |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="microsoft-rsa-tls-ca-02"></a>**Microsoft RSA TLS-Zertifizierungsstelle 02**
+### <a name="microsoft-rsa-tls-ca-02"></a>**Microsoft RSA TLS CA 02**
 
-| **Betreff** | CN = Microsoft RSA TLS-Zertifizierungsstelle 02<br>O = Microsoft Corporation<br>C = US |
+| **Betreff** | CN=Microsoft RSA TLS CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Baltimore Cybertrust root, ou = Cybertrust, O = Baltimore, C = IE |
-| **Seriennummer** | Autobahn: A7:47:22: C5:3D: 88: C8:1f: 58:9e: FB: 1f: 9d: 4a: 3A |
-| **Länge des öffentlichen Schlüssels** | RSA 4096-Bits |
+| **Aussteller** | CN=CyberTrust Root, OU=CyberTrust, O=Baltimore, C=IE |
+| **Seriennummer** | 0F:A7:47:22:C5:3D:88:C8:0F:58:9E:FB:1F:9D:4A:3A |
+| **Länge des öffentlichen Schlüssels** | RSA 4096 Bit |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Dienstag, 21. Juli 2020 4:00 Uhr |
-| **Gültigkeit nicht bis** | Dienstag, 8. Oktober 2024 12:00 Uhr |
-| **ID des Antragstellerschlüssels** | FF2F7FE106F438F32DED258D98C2FE0EF66CFCFA |
-| **Autoritäts Schlüssel-ID** | KeyID: E5:9d: 59:30:82:47:58: cc: AC: Fa: 08:54:36:86:7B: 3A: B5:04:4D: F0 |
+| **Gültigkeit noch nicht vorher** | Dienstag, 21. Juli 2020 16:00 |
+| **Gültigkeit erst nach** | Dienstag, 8. Oktober 2024 12:00 |
+| **Subject Key Identifier** | FF2F7FE106F438F32DED258D98C2FE0EF66CFCFA |
+| **Autoritätsschlüssel-ID** | KeyID:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Fingerabdruck (SHA-1)** | B0C2D2D13CDD56CDAA6AB6E2C04440BE4A429C75 |
 | **Fingerabdruck (SHA-256)** | 05E4005DB0C382F3BD66B47729E9011577601BF6F7B287E9A52CED710D258346 |
 | **CRL-URLs** | http://crl3.digicert.com/Omniroot2025.crl |
-| **OCSP-URLs** | http://ocsp.digicert.com |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="symantec-class-3-ev-ssl-ca---g3"></a>**Symantec Class 3 EV SSL CA-G3**
+### <a name="symantec-class-3-ev-ssl-ca---g3"></a>**Symantec Class 3 EV SSL CA - G3**
 
-| **Betreff** | CN = Symantec Class 3 EV SSL CA-G3<br>OU = Symantec Trust-Netzwerk<br>O = Symantec Corporation<br>C = US |
+| **Betreff** | CN=Symantec Class 3 EV SSL CA - G3<br>OU=Symantec Trust Network<br>O=Symantec Corporation<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = VeriSign Class 3 Public Primary Certification Authority-G5<br>OU = &quot; (c) 2006 VeriSign, Inc. – nur für autorisierte Verwendung&quot;<br>OU = VeriSign Trust-Netzwerk<br>O = &quot; VeriSign, Inc.&quot;<br>C = US |
-| **Alternativer Antragsteller Name** | Verzeichnisadresse: CN = SymantecPKI-1-533 |
-| **Seriennummer** | 7e: E1:4a: 6F: 6F: EF: F2: D3:7F: 3f: AD: 65:4D: 3A: da: B4 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Aussteller** | CN=VeriSign Class 3 Public Primary Certification Authority - G5<br>OU= &quot; (c) 2006 VeriSign, Inc. – nur zur autorisierten Verwendung&quot;<br>OU=VeriSign Trust Network<br>O= &quot; VeriSign, Inc.&quot;<br>C=US |
+| **Alternativer Subject Name** | Verzeichnisadresse: CN=SymantecPKI-1-533 |
+| **Seriennummer** | 7E:E1:4A:6F:6F:EF:F2:D3:7F:3F:AD:65:4D:3A:DA:B4 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Oct 31 00:00:00 2013 UTC |
-| **Gültigkeit nicht nach** | Oct 30 23:59:59 2023 UTC |
-| **ID des Antragstellerschlüssels** | 01:59: ab: E7: DD: 3A: 0B: 59: A6:64:63: D6: CF: 20:07:57: D5:91: E7:6a |
-| **Autoritäts Schlüssel-ID** | keyid: 7F: D3:65: A7: C2: DD: EC: BB: F0:30:09: F3:43:39: Fa: 02: AF: 33:31:33 |
+| **Gültigkeit noch nicht vorher** | 31. Oktober 00:00:00 2013 UTC |
+| **Gültigkeit nicht nach** | 30. Oktober 23:59:59 2023 UTC |
+| **Subject Key Identifier** | 01:59:ab:e7:dd:3a:0b:59:a6:64:63:d6:cf:20:07:57:d5:91:e7:6a |
+| **Autoritätsschlüssel-ID** | keyid:7f:d3:65:a7:c2:dd:ec:bb:f0:30:09:f3:43:39:fa:02:af:33:31:33 |
 | **Fingerabdruck (SHA-1)** | E3FC0AD84F2F5A83ED6F86F567F8B14B40DCBF12 |
 | **Fingerabdruck (SHA-256)** | 9E6BC5F9ECC52460E8EDC02C644D1BE1CB9F2316F41DAF3B616A0B2058294B31 |
-| **PIN (SHA-256)** | gMxWOrX4PMQesK9qFNbYBxjBfjUvlkn/vN1n + L9lE5E = |
+| **Pin (SHA-256)** | gMxWOrX4PMQesK9qFNbYBxjBfjUvlkn/vN1n+L9lE5E= |
 | **CRL-URLs** | http://s1.symcb.com/pca3-g5.crl |
-| **OCSP-URLs** | http://s2.symcb.com |
+| **OCSP URLs** | http://s2.symcb.com |
 
-### <a name="symantec-class-3-secure-server-ca---g4"></a>**Symantec Class 3 Secure Server ca-G4**
+### <a name="symantec-class-3-secure-server-ca---g4"></a>**Symantec Class 3 Secure Server CA - G4**
 
-| **Betreff** | CN = Symantec Class 3 Secure Server ca-G4<br>OU = Symantec Trust-Netzwerk<br>O = Symantec Corporation<br>C = US |
+| **Betreff** | CN=Symantec Class 3 Secure Server CA - G4<br>OU=Symantec Trust Network<br>O=Symantec Corporation<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = VeriSign Class 3 Public Primary Certification Authority-G5<br>OU = &quot; (c) 2006 VeriSign, Inc. – nur für autorisierte Verwendung&quot;<br>OU = VeriSign Trust-Netzwerk<br>O = &quot; VeriSign, Inc.&quot;<br>C = US |
-| **Alternativer Antragsteller Name** | Verzeichnisadresse: CN = SymantecPKI-1-534 |
-| **Seriennummer** | 51:3f: B9:74:38:70: B7:34:40:41:4D: 30:93:06:99: FF |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Aussteller** | CN=VeriSign Class 3 Public Primary Certification Authority - G5<br>OU= &quot; (c) 2006 VeriSign, Inc. – nur zur autorisierten Verwendung&quot;<br>OU=VeriSign Trust Network<br>O= &quot; VeriSign, Inc.&quot;<br>C=US |
+| **Alternativer Subject Name** | Verzeichnisadresse: CN=SymantecPKI-1-534 |
+| **Seriennummer** | 51:3F:B9:74:38:70:B7:34:40:41:8D:30:93:06:99:FF |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Oct 31 00:00:00 2013 UTC |
-| **Gültigkeit nicht nach** | Oct 30 23:59:59 2023 UTC |
-| **ID des Antragstellerschlüssels** | 5F: 60: CF: 61:90:55: DF: 84:43:14:8a: 60:2a: B2: F5:7a: F4:43:18: EF |
-| **Autoritäts Schlüssel-ID** | keyid: 7F: D3:65: A7: C2: DD: EC: BB: F0:30:09: F3:43:39: Fa: 02: AF: 33:31:33 |
+| **Gültigkeit noch nicht vorher** | 31. Oktober 00:00:00 2013 UTC |
+| **Gültigkeit nicht nach** | 30. Oktober 23:59:59 2023 UTC |
+| **Subject Key Identifier** | 5f:60:cf:61:90:55:df:84:43:14:8a:60:2a:b2:f5:7a:f4:43:18:ef |
+| **Autoritätsschlüssel-ID** | keyid:7f:d3:65:a7:c2:dd:ec:bb:f0:30:09:f3:43:39:fa:02:af:33:31:33 |
 | **Fingerabdruck (SHA-1)** | FF67367C5CD4DE4AE18BCCE1D70FDABD7C866135 |
 | **Fingerabdruck (SHA-256)** | EAE72EB454BF6C3977EBD289E970B2F5282949190093D0D26F98D0F0D6A9CF17 |
-| **PIN (SHA-256)** | 9n0izTnSRF + W4W4JTq51avSXkWhQB8duS2bxVLfzXsY = |
+| **Pin (SHA-256)** | 9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY= |
 | **CRL-URLs** | http://s1.symcb.com/pca3-g5.crl |
-| **OCSP-URLs** | http://s2.symcb.com |
+| **OCSP URLs** | http://s2.symcb.com |
 
-### <a name="thawte-sha256-ssl-ca"></a>**Thawte-SHA256-SSL-Zertifizierungsstelle**
+### <a name="thawte-sha256-ssl-ca"></a>**thawte SHA256 SSL CA**
 
-| **Betreff** | CN = Thawte SHA256 SSL-Zertifizierungsstelle<br>O = &quot; Thawte, Inc.&quot;<br>C = US |
+| **Betreff** | CN=thawte SHA256 SSL CA<br>O= &quot; thawte, Inc.&quot;<br>C=US |
 | --- | --- |
-| **Aussteller** | CN = Thawte Primary Root CA-G3<br>OU = &quot; (c) 2008 Thawte, Inc. – nur für autorisierte Verwendung&quot;<br>OU = Certification Services Division<br>O = &quot; Thawte, Inc.&quot;<br>C = US |
-| **Alternativer Antragsteller Name** | Verzeichnisadresse: CN = VeriSignMPKI-2-415 |
-| **Seriennummer** | 36:34:9e: 18: C9:9:: 26:69: B6:56:2e: 6C: E5: AD: 71:32 |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Aussteller** | CN=thawte Primary Root CA - G3<br>OU= &quot; (c) 2008 thawte, Inc. – nur zur autorisierten Verwendung&quot;<br>OU=Certification Services Division<br>O= &quot; thawte, Inc.&quot;<br>C=US |
+| **Alternativer Subject Name** | Verzeichnisadresse: CN=VeriSignMPKI-2-415 |
+| **Seriennummer** | 36:34:9E:18:C9:9C:26:69:B6:56:2E:6C:E5:AD:71:32 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Mai 23 00:00:00 2013 UTC |
-| **Gültigkeit nicht nach** | Mai 22 23:59:59 2023 UTC |
-| **ID des Antragstellerschlüssels** | 2B: 9a: 35: AE: 01:18:38:30: E1:70:7a: 05: E0:11:76: a3: CE: BD: 90:14 |
-| **Autoritäts Schlüssel-ID** | keyid: AD: 6C: AA: 94:60:9:: Ed: E4: FF: Fa: 3E: 0A: 74:2B: 63:03: F7: B6:59: BF |
+| **Gültigkeit noch nicht vorher** | 23. Mai 00:00:00 2013 UTC |
+| **Gültigkeit nicht nach** | 22. Mai 23:59:59 2023 UTC |
+| **Subject Key Identifier** | 2b:9a:35:ae:01:18:38:30:e1:70:7a:05:e0:11:76:a3:ce:bd:90:14 |
+| **Autoritätsschlüssel-ID** | keyid:ad:6c:aa:94:60:9c:ed:e4:ff:fa:3e:0a:74:2b:63:03:f7:b6:59:bf |
 | **Fingerabdruck (SHA-1)** | 67D147D5DAB7F28D663CA5B7A9568F087427B9F7 |
 | **Fingerabdruck (SHA-256)** | 3F3AF9C9CC2C7599EF8F6DD7CA516CFC1797D7D12002254F3BFD0D4D0FE9DE86 |
-| **PIN (SHA-256)** | /36ymPAVaJl3QDyB1lUkVf9GqJNug0R8JJPDN6348p8 = |
+| **Pin (SHA-256)** | /36ymPAVaJl3QDyB1lUkVf9GqJNug0R8JJPDN6348p8= |
 | **CRL-URLs** | http://crl.thawte.com/ThawtePCA-G3.crl |
-| **OCSP-URLs** | http://ocsp.thawte.com |
+| **OCSP URLs** | http://ocsp.thawte.com |
 
-### <a name="verizon-akamai-sureserver-ca-g14-sha2"></a>**Verizon Akamai SureServer ca G14-SHA2**
+### <a name="verizon-akamai-sureserver-ca-g14-sha2"></a>**Verizon Akamai SureServer CA G14-SHA2**
 
-| **Betreff** | CN = Verizon Akamai SureServer ca G14-SHA2<br>OU = Cybertrust<br>O = Verizon Enterprise-Lösungen<br>L = Amsterdam<br>C = nl |
+| **Betreff** | CN=Verizon Akamai SureServer CA G14-SHA2<br>OU=Cybertrust<br>O=Verizon Enterprise Solutions<br>L=Amsterdam<br>C=NL |
 | --- | --- |
-| **Aussteller** | CN = Baltimore Cybertrust-Stamm<br>OU = Cybertrust<br>O = Baltimore<br>C = IE |
-| **Seriennummer** | 07:27: A4:6B |
-| **Länge des öffentlichen Schlüssels** | RSA 2048 Bits (e 65537) |
+| **Aussteller** | CN=CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
+| **Seriennummer** | 07:27:A4:6B |
+| **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit nicht vor** | Apr 02 14:36:10 2014 UTC |
+| **Gültigkeit noch nicht vorher** | 02. Apr 14:36:10 2014 UTC |
 | **Gültigkeit nicht nach** | Apr 02 14:35:52 2021 UTC |
-| **ID des Antragstellerschlüssels** | F8: BD: Fa: AF: 73:77: C6: C7:1B: F9:4B: 4D: 11: A7: D1:33: AF: AF: 72:11 |
-| **Autoritäts Schlüssel-ID** | keyid: E5:9d: 59:30:82:47:58: cc: AC: Fa: 08:54:36:86:7B: 3A: B5:04:4D: F0 |
+| **Subject Key Identifier** | f8:bd:fa:af:73:77:c6:c7:1b:f9:4b:4d:11:a7:d1:33:af:af:72:11 |
+| **Autoritätsschlüssel-ID** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Fingerabdruck (SHA-1)** | 6AD2B04E2196E48BF685752890E811CD2ED60606 |
 | **Fingerabdruck (SHA-256)** | 7373D219B42547E41BCB752BCBCBE93F592FF6F99C340CE57B73D38C3EC0BA98 |
-| **PIN (SHA-256)** | 8XFPrRr4VxmEIYKUu35QtR3oGbduX1AlrBzaBUHgp7c = |
+| **Pin (SHA-256)** | 8XFPrRr4VxmEIYKUu35QtR3oGbduX1AlrBzaBUHgp7c= |
 | **AIA-URLs** | https://cacert.omniroot.com/baltimoreroot.crt<br>https://cacert.omniroot.com/baltimoreroot.der |
 | **CRL-URLs** | http://cdp1.public-trust.com/CRL/Omniroot2025.crl |
-| **OCSP-URLs** | http://ocsp.omniroot.com/baltimoreroot |
+| **OCSP URLs** | http://ocsp.omniroot.com/baltimoreroot |
 
-## <a name="additional-certificate-paths"></a>**Zusätzliche Zertifikat Pfade**
+## <a name="additional-certificate-paths"></a>**Zusätzliche Zertifikatpfade**
 
-Die folgende Liste enthält ältere Zertifikate, die nicht oben enthalten sind und mit der obigen Liste im Laufe der Zeit zusammengeführt werden.
+Die folgende Liste enthält Legacyzertifikate, die oben nicht enthalten sind und mit der obigen Liste im Laufe der Zeit zusammengeführt werden.
 
 evsecure-aia.verisign.com<br>
 sa.symcb.com<br>
 sd.symcb.com<br>
-\*. OmniRoot.com<br>
-\*. VeriSign.com<br>
-\*. symcb.com<br>
-\*. symcd.com<br>
-\*. VeriSign.net<br>
-\*. GeoTrust.com<br>
-\*. Entrust.net<br>
-\*. Public-Trust.com<br>
+\*.omniroot.com<br>
+\*.verisign.com<br>
+\*.symcb.com<br>
+\*.symcd.com<br>
+\*.verisign.net<br>
+\*.geotrust.com<br>
+\*.entrust.net<br>
+\*.public-trust.com<br>
 EVIntl-ocsp.verisign.com<br>
 EVSecure-ocsp.verisign.com<br>
 isrg.trustid.ocsp.identrust.com<br>

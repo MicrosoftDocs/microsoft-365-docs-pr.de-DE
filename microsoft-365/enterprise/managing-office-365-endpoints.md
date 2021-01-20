@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Erfahren Sie, wie Sie Office 365-Endpunkte verwalten, damit sie mit der Netzwerkarchitektur Ihrer Unternehmensorganisation funktionieren.
-ms.openlocfilehash: a616e5f45fee77a02e7b4df7e19ed9e1b0d31d22
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: 41dceae78d80a78b023517e8b6c5c5c0d73da2ef
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787951"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905285"
 ---
 # <a name="managing-office-365-endpoints"></a>Verwalten von Office 365-Endpunkten
 
@@ -146,7 +146,7 @@ Sie sehen eine Office 365 zugeordnete IP-Adresse, über die Sie weitere Informat
 1. Überprüfen Sie mithilfe eines CIDR-Rechners, ob die IP-Adresse in einem größeren veröffentlichten Bereich enthalten ist, z. B. dem für [IPv4](https://www.ipaddressguide.com/cidr) oder [IPv6](https://www.ipaddressguide.com/ipv6-cidr).. Beispielsweise enthält 40.96.0.0/13 die IP-Adresse 40.103.0.1, obwohl 40.96 nicht mit 40.103 übereinstimmt.
 2. Überprüfen Sie mithilfe einer [Whois-Abfrage](https://dnsquery.org/), ob die IP-Adresse einem Partner gehört. Wenn die IP-Adresse von Microsoft betrieben wird, kann es sich um einen internen Partner handeln. Viele Partnernetzwerk-Endpunkte werden als zur _Standardkategorie_ gehörend aufgelistet, für die keine IP-Adressen veröffentlicht werden.
 3. Die IP-Adresse darf nicht Teil von Office 365 oder einer Abhängigkeit sein. Die Office 365-Netzwerkendpunkt-Veröffentlichung umfasst nicht alle Microsoft-Netzwerkendpunkte.
-4. Überprüfen Sie das Zertifikat. Stellen Sie mit einem Browser eine Verbindung mit der IP-Adresse mithilfe von *HTTPS://, \<IP_ADDRESS\>* und überprüfen Sie die im Zertifikat aufgeführten Domänen, um zu verstehen, welche Domänen der IP-Adresse zugeordnet sind. Wenn es sich um eine Microsoft-eigene IP-Adresse handelt, die nicht in der Liste der Office 365-IP-Adressen enthalten ist, ist sie wahrscheinlich einem Microsoft CDN wie  *MSOCDN.NET*  oder einer anderen Microsoft-Domäne ohne veröffentlichte IP-Informationen zugeordnet. Wenn Sie feststellen, dass es sich bei der Domäne auf dem Zertifikat um eine Domäne handelt, für die die IP-Adresse aufgelistet sein sollte, teilen Sie uns dies bitte mit.
+4. Überprüfen Sie das Zertifikat. Stellen Sie mit einem Browser eine Verbindung mit der IP-Adresse mithilfe von *HTTPS://, \<IP_ADDRESS\>* und überprüfen Sie die im Zertifikat aufgeführten Domänen, um zu verstehen, welche Domänen der IP-Adresse zugeordnet sind. Wenn es sich um eine Microsoft-eigene IP-Adresse handelt, die nicht in der Liste der Office 365-IP-Adressen enthalten ist, ist sie wahrscheinlich einem Microsoft CDN  *wie MSOCDN.NET*  oder einer anderen Microsoft-Domäne ohne veröffentlichte IP-Informationen zugeordnet. Wenn Sie feststellen, dass es sich bei der Domäne auf dem Zertifikat um eine Domäne handelt, für die die IP-Adresse aufgelistet sein sollte, teilen Sie uns dies bitte mit.
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Einige Office 365-URLs verweisen auf CNAME-Einträge anstelle von A-Einträgen im DNS. Was muss ich mit den CNAME-Einträgen tun?
@@ -161,7 +161,7 @@ Diese CNAME-Umleitungen sind ein normaler Bestandteil des DNS, und für den Clie
 
 Ein Proxyserver überprüft die ursprüngliche URL, die im obigen Beispiel serviceA.office.com ist, und diese URL wird in die Office 365-Veröffentlichung einbezogen. Der Proxy Server fordert die DNS-Auflösung dieser URL in eine IP-Adresse an und empfängt IP_1. Er überprüft dabei nicht die Einträge der zwischengeschalteten CNAME-Einträge.
 
-Hart codierte Konfigurationen oder das Zulassen von Datenverkehr basierend auf indirekten FQDNs von Office 365 wird nicht empfohlen, von Microsoft nicht unterstützt, und es ist bekannt, dass dies Probleme mit der Kundenkonnektivität verursacht. DNS-Lösungen, die die CNAME-Umleitung blockieren oder die Office 365-DNS-Einträge andernfalls falsch auflösen, können bei aktivierter DNS-Rekursion über die DNS-bedingte Weiterleitung behoben werden (für direkt verwendete vollständig qualifizierte Office 365-Domänennamen). Viele Netzwerkperimeterprodukte von Drittanbietern integrieren die empfohlene Umgehung des Office 365-Endpunktdatenverkehrs mithilfe des [Office 365-IP-Adress-](microsoft-365-ip-web-service.md)und -URL-Webdiensts in ihre Konfiguration.
+Hart kodierte Konfigurationen oder Whitelisting basierend auf indirekten FQDNs von Office 365 werden nicht empfohlen, werden von Microsoft nicht unterstützt und verursachen bekannte zeitverursachen Probleme mit der Kundenkonnektivität. DNS-Lösungen, die die #A0 blockieren oder anderweitig fälschlicherweise Office 365-DNS-Einträge auflösen, können über #A1 mit aktivierter #A2 oder mithilfe von #A3 gelöst werden. Viele Netzwerkperimeterprodukte von Drittanbietern integrieren die empfohlene Office 365-Endpunkt-Whitelist in ihre Konfiguration mithilfe des [Office 365-IP-Adress- und URL-Webdiensts.](microsoft-365-ip-web-service.md)
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Warum enthalten Microsoft-Domänennamen Namen wie "nsatc.net" oder "akadns.net"?
