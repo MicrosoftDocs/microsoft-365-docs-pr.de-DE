@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie Teams bereitstellen, in denen hochgradig vertrauliche Daten geschützt sind.
-ms.openlocfilehash: 045f1b1d1ebf03eb70554dc5964acb0a12e0060f
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 2679a8a0bd8cf5cc3d35d517e8a44921fc4fdbc1
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870851"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921134"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Teams für den Schutz hochgradig vertraulicher Daten konfigurieren
 
@@ -153,7 +153,7 @@ So beschränken Sie die Websitefreigabe auf die Besitzer
 2. Klicken Sie auf der Symbolleiste des Teams auf **Dateien**.
 3. Klicken Sie auf die drei Punkte "(…)" und dann auf **In SharePoint öffnen**.
 4. Klicken Sie in der Symbolleiste der zugrunde liegenden SharePoint-Website auf das Symbol "Einstellungen" und anschließend auf **Websiteberechtigungen**.
-5. Klicken Sie im Bereich "Websiteberechtigungen" unter **Freigabeeinstellungen** auf **Freigabeeinstellungen ändern**.
+5. Klicken Sie im Bereich **Websiteberechtigungen** unter **Websitefreigabe** auf **Ändern, wie Mitglieder teilen können**.
 6. Wählen Sie unter **Freigabeberechtigungen** die Option **Nur Websitebesitzer können Dateien, Ordner und die Website teilen** aus.
 7. Legen Sie **Zugriffsanforderungen zulassen** auf **Aus** fest, und klicken Sie dann auf **Speichern**.
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über die Microsoft-Produktivitätsbewertung.
-ms.openlocfilehash: e052d1189379bb00a05b574e6568e9e718285d50
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 8ba1ceb57cd322a67e7b154700a8ac90c62f5ef0
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688331"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921242"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft-Produktivitätsbewertung 
 
@@ -87,6 +87,9 @@ Die Produktivitätsbewertung steht nur im Microsoft 365 Admin Center zur Verfüg
 - Microsoft Teams-Administrator 
 - Globaler Leser 
 - Berichteleser 
+
+> [!NOTE]
+> Nur ein IT-Experte mit der Rolle „Globaler Administrator“ kann einen Mandanten für die Produktivitätsbewertung registrieren oder auswählen.
 
 Bitte beachten Sie, dass die Informationen nur zur Weiterentwicklung der digitalen Transformationen mit Microsoft 365 vorgesehen sind und daher mit Umsicht weitergegeben werden sollten. 
 

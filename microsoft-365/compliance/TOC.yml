@@ -96,16 +96,17 @@
       href: information-protection.md
     - name: Typen vertraulicher Informationen
       items:
+        - name: Weitere Informationen zu Typen vertraulicher Informationen
+          href: sensitive-information-type-learn-about.md
         - name: Entitätsdefinitionen für Typen vertraulicher Informationstypen
           href: sensitive-information-type-entity-definitions.md
         - name: Wonach die DLP-Funktionen suchen
           href: what-the-dlp-functions-look-for.md
         - name: Anpassen eines benutzerdefinierten vertraulichen Informationstyps
           href: customize-a-built-in-sensitive-information-type.md
-        - name: Benutzerdefinierten Typen vertraulicher Informationen
-          href: custom-sensitive-info-types.md
-        - name: Erstellen benutzerdefinierter Typen vertraulicher Informationen mit exakter Datenübereinstimmung
+        - name: Erstellen benutzerdefinierter Typen vertraulicher Informationen mit genauer Datenübereinstimmung
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: Erste Schritte mit benutzerdefinierten Typen vertraulicher Informationen
         - name: Verwenden Sie das exakte Daten-Übereinstimmungsschema und den Gestaltungsvorlagenkatalog-Assistenten
           href: sit-edm-wizard.md
         - name: 'Ändern Sie das Schema für die genaue Datenübereinstimmung, um eine konfigurierbare Übereinstimmung zu verwenden'

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie Teams mit grundlegendem Schutz bereitstellen.
-ms.openlocfilehash: 16f37175c3aa7b420745e6126de1aa96368d618a
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 11554dbd7e33a77c9f6397ae9c5e91669f537081
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613442"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921870"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Konfigurieren von Teams mit grundlegendem Schutz
 
@@ -87,7 +87,7 @@ So aktualisieren Sie die Freigabeeinstellungen der Website
 1. Klicken Sie auf der Symbolleiste des Teams auf **Dateien**.
 2. Klicken Sie auf **In SharePoint öffnen**.
 3. Klicken Sie in der Symbolleiste der SharePoint-Website auf das Symbol "Einstellungen" und anschließend auf **Websiteberechtigungen**.
-4. Klicken Sie im Bereich **Websiteberechtigungen** unter **Freigabeeinstellungen** auf **Freigabeeinstellungen ändern**.
+4. Klicken Sie im Bereich **Websiteberechtigungen** unter **Websitefreigabe** auf **Ändern, wie Mitglieder teilen können**.
 5. Wählen Sie unter **Freigabeberechtigungen** die Option **Websitebesitzer und -mitglieder sowie Personen mit Bearbeitungsberechtigungen können Dateien und Ordner freigeben, aber nur Websitebesitzer können die Website freigeben**, und klicken Sie dann auf **Speichern**.
 
 ## <a name="additional-protections"></a>Zusätzliche Schutzfunktionen
