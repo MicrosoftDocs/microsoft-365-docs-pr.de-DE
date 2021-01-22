@@ -16,268 +16,269 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Nachdem Sie ein freigegebenes Postfach erstellt haben, sollten Sie einige Einstellungen für die Benutzer konfigurieren, beispielsweise e-Mail-Weiterleitung und automatische Antworten. Möglicherweise möchten Sie später andere Einstellungen ändern, beispielsweise den Postfachnamen oder die Mitglieder.
-ms.openlocfilehash: a007b3ca810bdfc00176e71a737a510230f18113
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: Nachdem Sie ein freigegebenes Postfach erstellt haben, sollten Sie einige Einstellungen für die Benutzer konfigurieren, z. B. E-Mail-Weiterleitung und automatische Antworten. Später möchten Sie möglicherweise andere Einstellungen ändern, z. B. den Postfachnamen oder die Mitglieder.
+ms.openlocfilehash: fe5d35be556b8edf5456bc2c0b820dc0ce77e323
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445675"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926606"
 ---
-# <a name="configure-shared-mailbox-settings"></a><span data-ttu-id="7226d-104">Konfigurieren der Einstellungen für das freigegebene Postfach</span><span class="sxs-lookup"><span data-stu-id="7226d-104">Configure shared mailbox settings</span></span>
+# <a name="configure-shared-mailbox-settings"></a><span data-ttu-id="5495a-104">Konfigurieren der Einstellungen für das freigegebene Postfach</span><span class="sxs-lookup"><span data-stu-id="5495a-104">Configure shared mailbox settings</span></span>
 
-<span data-ttu-id="7226d-105">Nachdem Sie [ein freigegebenes Postfach erstellt](create-a-shared-mailbox.md)haben, sollten Sie einige Einstellungen für die Postfachbenutzer konfigurieren, beispielsweise e-Mail-Weiterleitung und automatische Antworten.</span><span class="sxs-lookup"><span data-stu-id="7226d-105">After you have [created a shared mailbox](create-a-shared-mailbox.md), you'll want to configure some settings for the mailbox users, such as email forwarding and automatic replies.</span></span> <span data-ttu-id="7226d-106">Möglicherweise möchten Sie später andere Einstellungen ändern, beispielsweise den Postfachnamen, Mitglieder oder Mitgliedsberechtigungen.</span><span class="sxs-lookup"><span data-stu-id="7226d-106">Later, you might want to change other settings, such as the mailbox name, members, or member permissions.</span></span> 
+<span data-ttu-id="5495a-105">Nachdem Sie ein [freigegebenes](create-a-shared-mailbox.md)Postfach erstellt haben, sollten Sie einige Einstellungen für die Postfachbenutzer konfigurieren, z. B. die E-Mail-Weiterleitung und automatische Antworten.</span><span class="sxs-lookup"><span data-stu-id="5495a-105">After you have [created a shared mailbox](create-a-shared-mailbox.md), you'll want to configure some settings for the mailbox users, such as email forwarding and automatic replies.</span></span> <span data-ttu-id="5495a-106">Später möchten Sie möglicherweise andere Einstellungen ändern, z. B. den Postfachnamen, Mitglieder oder Mitgliedsberechtigungen.</span><span class="sxs-lookup"><span data-stu-id="5495a-106">Later, you might want to change other settings, such as the mailbox name, members, or member permissions.</span></span> 
 
-## <a name="change-the-name-or-email-alias-of-a-shared-mailbox-or-change-the-primary-email-address"></a><span data-ttu-id="7226d-107">Ändern des Namens oder des e-Mail-Alias eines freigegebenen Postfachs oder Ändern der primären e-Mail-Adresse</span><span class="sxs-lookup"><span data-stu-id="7226d-107">Change the name or email alias of a shared mailbox, or change the primary email address</span></span>
+## <a name="change-the-name-or-email-alias-of-a-shared-mailbox-or-change-the-primary-email-address"></a><span data-ttu-id="5495a-107">Ändern des Namens oder des E-Mail-Alias eines freigegebenen Postfachs oder der primären E-Mail-Adresse</span><span class="sxs-lookup"><span data-stu-id="5495a-107">Change the name or email alias of a shared mailbox, or change the primary email address</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="7226d-108">Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.</span><span class="sxs-lookup"><span data-stu-id="7226d-108">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
+1. <span data-ttu-id="5495a-108">Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.</span><span class="sxs-lookup"><span data-stu-id="5495a-108">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="7226d-109">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="7226d-109">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="5495a-109">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="5495a-109">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="7226d-110">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="7226d-110">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="5495a-110">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="5495a-110">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
-2. <span data-ttu-id="7226d-111">Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann **Bearbeiten** neben **Name, e-Mail, e-Mail-Aliase**aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-111">Select the shared mailbox you want to edit, and then select **Edit** next to **Name, Email, Email aliases**.</span></span>
+2. <span data-ttu-id="5495a-111">Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann **"Bearbeiten"** neben **"Name", "E-Mail", "E-Mail-Aliase" aus.**</span><span class="sxs-lookup"><span data-stu-id="5495a-111">Select the shared mailbox you want to edit, and then select **Edit** next to **Name, Email, Email aliases**.</span></span>
 
-3. <span data-ttu-id="7226d-112">Geben Sie einen neuen Namen ein, oder fügen Sie einen weiteren Alias hinzu.</span><span class="sxs-lookup"><span data-stu-id="7226d-112">Enter a new name, or add another alias.</span></span> <span data-ttu-id="7226d-113">Wenn Sie die primäre e-Mail-Adresse ändern möchten, muss Ihr Postfach über mehr als einen e-Mail-Alias verfügen.</span><span class="sxs-lookup"><span data-stu-id="7226d-113">If you want to change the primary email address, your mailbox must have more than one email alias.</span></span>
+3. <span data-ttu-id="5495a-112">Geben Sie einen neuen Namen ein, oder fügen Sie einen anderen Alias hinzu.</span><span class="sxs-lookup"><span data-stu-id="5495a-112">Enter a new name, or add another alias.</span></span> <span data-ttu-id="5495a-113">Wenn Sie die primäre E-Mail-Adresse ändern möchten, muss Ihr Postfach mehrere E-Mail-Aliase haben.</span><span class="sxs-lookup"><span data-stu-id="5495a-113">If you want to change the primary email address, your mailbox must have more than one email alias.</span></span>
 
-4. <span data-ttu-id="7226d-114">Wählen Sie **Speichern** aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-114">Select **Save**.</span></span>
+4. <span data-ttu-id="5495a-114">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="5495a-114">Select **Save**.</span></span>
 
-## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a><span data-ttu-id="7226d-115">Weiterleiten von E-Mails, die an ein freigegebenes Postfach gesendet wurden</span><span class="sxs-lookup"><span data-stu-id="7226d-115">Forward emails that are sent to a shared mailbox</span></span>
+## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a><span data-ttu-id="5495a-115">Weiterleiten von E-Mails, die an ein freigegebenes Postfach gesendet wurden</span><span class="sxs-lookup"><span data-stu-id="5495a-115">Forward emails that are sent to a shared mailbox</span></span>
 
-<span data-ttu-id="7226d-116">Sie müssen dem freigegebenen Postfach keine Lizenz zuweisen, um an Sie gesendete e-Mails weiterzuleiten.</span><span class="sxs-lookup"><span data-stu-id="7226d-116">You do not need to assign a license to the shared mailbox in order to forward email that's sent to it.</span></span> <span data-ttu-id="7226d-117">Sie können die Nachrichten an eine beliebige gültige e-Mail-Adresse oder Verteilerliste weiterleiten.</span><span class="sxs-lookup"><span data-stu-id="7226d-117">You can forward the messages to any valid email address or distribution list.</span></span>
+<span data-ttu-id="5495a-116">Sie müssen dem freigegebenen Postfach keine Lizenz zuweisen, um an dieses gesendete E-Mails weiterleiten zu können.</span><span class="sxs-lookup"><span data-stu-id="5495a-116">You do not need to assign a license to the shared mailbox in order to forward email that's sent to it.</span></span> <span data-ttu-id="5495a-117">Sie können die Nachrichten an eine beliebige gültige E-Mail-Adresse oder Verteilerliste weiterleiten.</span><span class="sxs-lookup"><span data-stu-id="5495a-117">You can forward the messages to any valid email address or distribution list.</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="7226d-118">Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.</span><span class="sxs-lookup"><span data-stu-id="7226d-118">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
+1. <span data-ttu-id="5495a-118">Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.</span><span class="sxs-lookup"><span data-stu-id="5495a-118">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="7226d-119">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="7226d-119">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="5495a-119">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="5495a-119">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="7226d-120">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="7226d-120">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="5495a-120">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="5495a-120">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
-2. <span data-ttu-id="7226d-121">Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann **e-Mail Weiterleitung** \> **Bearbeiten**aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-121">Select the shared mailbox you want to edit, then select **Email forwarding** \> **Edit**.</span></span>
+2. <span data-ttu-id="5495a-121">Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann **"E-Mail-Weiterleitung** \> **bearbeiten" aus.**</span><span class="sxs-lookup"><span data-stu-id="5495a-121">Select the shared mailbox you want to edit, then select **Email forwarding** \> **Edit**.</span></span>
     
-3. <span data-ttu-id="7226d-122">Legen Sie die Umschaltfläche **auf**ein und geben Sie eine e-Mail-Adresse ein, an die die Nachrichten weitergeleitet werden sollen.</span><span class="sxs-lookup"><span data-stu-id="7226d-122">Set the toggle to **On**, and enter one email address to forward the messages to.</span></span> <span data-ttu-id="7226d-123">Es kann sich um eine beliebige gültige e-Mail-Adresse handeln.</span><span class="sxs-lookup"><span data-stu-id="7226d-123">It can be any valid email address.</span></span> <span data-ttu-id="7226d-124">Um an mehrere Adressen weiterzuleiten, müssen Sie [eine Verteilergruppe](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists) für die Adressen erstellen und dann den Namen der Gruppe in dieses Feld eingeben.</span><span class="sxs-lookup"><span data-stu-id="7226d-124">To forward to multiple addresses, you need to [create a distribution group](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists) for the addresses, and then enter the name of the group in this box.</span></span>
+3. <span data-ttu-id="5495a-122">Legen Sie die Umschalttaste auf **"Ein"** und geben Sie eine E-Mail-Adresse ein, an die die Nachrichten weitergeleitet werden sollen.</span><span class="sxs-lookup"><span data-stu-id="5495a-122">Set the toggle to **On**, and enter one email address to forward the messages to.</span></span> <span data-ttu-id="5495a-123">Dies kann eine beliebige gültige E-Mail-Adresse sein.</span><span class="sxs-lookup"><span data-stu-id="5495a-123">It can be any valid email address.</span></span> <span data-ttu-id="5495a-124">Zum Weiterleiten an mehrere Adressen [](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists) müssen Sie eine Verteilergruppe für die Adressen erstellen und dann den Namen der Gruppe in dieses Feld eingeben.</span><span class="sxs-lookup"><span data-stu-id="5495a-124">To forward to multiple addresses, you need to [create a distribution group](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists) for the addresses, and then enter the name of the group in this box.</span></span>
     
-4. <span data-ttu-id="7226d-125">Wählen Sie **Speichern** aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-125">Select **Save**.</span></span>
+4. <span data-ttu-id="5495a-125">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="5495a-125">Select **Save**.</span></span>
 
-## <a name="send-automatic-replies-from-a-shared-mailbox"></a><span data-ttu-id="7226d-126">Senden von automatischen Antworten aus einem freigegebenen Postfach</span><span class="sxs-lookup"><span data-stu-id="7226d-126">Send automatic replies from a shared mailbox</span></span>
+## <a name="send-automatic-replies-from-a-shared-mailbox"></a><span data-ttu-id="5495a-126">Senden von automatischen Antworten aus einem freigegebenen Postfach</span><span class="sxs-lookup"><span data-stu-id="5495a-126">Send automatic replies from a shared mailbox</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="7226d-127">Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.</span><span class="sxs-lookup"><span data-stu-id="7226d-127">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
+1. <span data-ttu-id="5495a-127">Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.</span><span class="sxs-lookup"><span data-stu-id="5495a-127">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="7226d-128">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="7226d-128">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="5495a-128">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="5495a-128">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="7226d-129">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="7226d-129">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="5495a-129">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="5495a-129">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
-2. <span data-ttu-id="7226d-130">Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann **automatische Antworten** \> **Bearbeiten**aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-130">Select the shared mailbox you want to edit, then select **Automatic replies** \> **Edit**.</span></span>
+2. <span data-ttu-id="5495a-130">Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann **"Automatische Antworten** \> **Bearbeiten" aus.**</span><span class="sxs-lookup"><span data-stu-id="5495a-130">Select the shared mailbox you want to edit, then select **Automatic replies** \> **Edit**.</span></span>
     
-3. <span data-ttu-id="7226d-131">Setzen Sie den Schalter auf **Ein**, und wählen Sie aus, ob die Antwort an Personen innerhalb oder außerhalb Ihrer Organisation gesendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="7226d-131">Set the toggle to **On**, and choose whether to send the reply to people inside your organization or outside your organization.</span></span>
+3. <span data-ttu-id="5495a-131">Setzen Sie den Schalter auf **Ein**, und wählen Sie aus, ob die Antwort an Personen innerhalb oder außerhalb Ihrer Organisation gesendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="5495a-131">Set the toggle to **On**, and choose whether to send the reply to people inside your organization or outside your organization.</span></span>
 
-4. <span data-ttu-id="7226d-132">Geben Sie die Antwort ein, die Sie an Personen innerhalb Ihrer Organisation senden möchten.</span><span class="sxs-lookup"><span data-stu-id="7226d-132">Enter the reply you want to send to people inside your organization.</span></span> <span data-ttu-id="7226d-133">Sie können nur Text (keine Bilder) hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="7226d-133">You can't add images, only text.</span></span>
+4. <span data-ttu-id="5495a-132">Geben Sie die Antwort ein, die Sie an Personen innerhalb Ihrer Organisation senden möchten.</span><span class="sxs-lookup"><span data-stu-id="5495a-132">Enter the reply you want to send to people inside your organization.</span></span> <span data-ttu-id="5495a-133">Sie können nur Text (keine Bilder) hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="5495a-133">You can't add images, only text.</span></span>
 
-5. <span data-ttu-id="7226d-134">Wenn Sie *auch* eine Antwort an Personen außerhalb Ihrer Organisation senden möchten, aktivieren Sie das Kontrollkästchen, die Antwort erhalten soll, und geben Sie den Text ein.</span><span class="sxs-lookup"><span data-stu-id="7226d-134">If you want to *also* send a reply to people outside your organization, select the check box, who you want to get the reply, and type the text.</span></span> <span data-ttu-id="7226d-135">Es ist nicht möglich, eine Antwort nur an Personen außerhalb Ihrer Organisation (ohne Einbeziehung von Personen innerhalb Ihrer Organisation) zu senden.</span><span class="sxs-lookup"><span data-stu-id="7226d-135">There's no way to only send to people outside your organization but not to people inside your organization.</span></span>
+5. <span data-ttu-id="5495a-134">Wenn Sie auch *eine* Antwort an Personen außerhalb Ihrer Organisation senden möchten, aktivieren Sie das Kontrollkästchen, wer die Antwort erhalten soll, und geben Sie den Text ein.</span><span class="sxs-lookup"><span data-stu-id="5495a-134">If you want to *also* send a reply to people outside your organization, select the check box, who you want to get the reply, and type the text.</span></span> <span data-ttu-id="5495a-135">Es ist nicht möglich, eine Antwort nur an Personen außerhalb Ihrer Organisation (ohne Einbeziehung von Personen innerhalb Ihrer Organisation) zu senden.</span><span class="sxs-lookup"><span data-stu-id="5495a-135">There's no way to only send to people outside your organization but not to people inside your organization.</span></span>
 
-6. <span data-ttu-id="7226d-136">Wählen Sie **Speichern** aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-136">Select **Save**.</span></span>
+6. <span data-ttu-id="5495a-136">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="5495a-136">Select **Save**.</span></span>
 
-## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a><span data-ttu-id="7226d-137">Jedem erlauben, die gesendeten E-Mails (die Antworten) anzuzeigen</span><span class="sxs-lookup"><span data-stu-id="7226d-137">Allow everyone to see the Sent email (the replies)</span></span>
+## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a><span data-ttu-id="5495a-137">Jedem erlauben, die gesendeten E-Mails (die Antworten) anzuzeigen</span><span class="sxs-lookup"><span data-stu-id="5495a-137">Allow everyone to see the Sent email (the replies)</span></span>
 
-<span data-ttu-id="7226d-p108">Nachrichten, die aus dem freigegebenen Postfach gesendet wurden, werden standardmäßig nicht im Ordner "Gesendete Elemente" dieses Postfachs gespeichert. Stattdessen werden sie im Ordner "Gesendete Elemente" der Person gespeichert, die die Nachricht gesendet hat.</span><span class="sxs-lookup"><span data-stu-id="7226d-p108">By default, messages sent from the shared mailbox aren't saved to the Sent Items folder of the shared mailbox. Instead, they are saved to the Sent Items folder of the person who sent the message.</span></span>
+<span data-ttu-id="5495a-p108">Nachrichten, die aus dem freigegebenen Postfach gesendet wurden, werden standardmäßig nicht im Ordner "Gesendete Elemente" dieses Postfachs gespeichert. Stattdessen werden sie im Ordner "Gesendete Elemente" der Person gespeichert, die die Nachricht gesendet hat.</span><span class="sxs-lookup"><span data-stu-id="5495a-p108">By default, messages sent from the shared mailbox aren't saved to the Sent Items folder of the shared mailbox. Instead, they are saved to the Sent Items folder of the person who sent the message.</span></span>
 
-<span data-ttu-id="7226d-140">Wenn Sie zulassen möchten, dass alle Benutzer die gesendeten e-Mails anzeigen können, bearbeiten Sie im Admin Center die Einstellungen für freigegebene Postfächer, und wählen Sie **Gesendete Elemente** \> **Bearbeiten**aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-140">If you want to allow everyone to see the Sent email, in the admin center, edit the shared mailbox settings, and select **Sent items** \> **Edit**.</span></span>
+<span data-ttu-id="5495a-140">Wenn Sie zulassen möchten, dass allen Benutzern die gesendete E-Mail angezeigt wird, bearbeiten Sie im Admin Center die Einstellungen für das freigegebene Postfach, und wählen Sie "Gesendete **Elemente** \> **bearbeiten" aus.**</span><span class="sxs-lookup"><span data-stu-id="5495a-140">If you want to allow everyone to see the Sent email, in the admin center, edit the shared mailbox settings, and select **Sent items** \> **Edit**.</span></span>
 
 
-## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a><span data-ttu-id="7226d-141">Auswählen der apps, die ein freigegebenes Postfach für den Zugriff auf Microsoft e-Mail verwenden kann</span><span class="sxs-lookup"><span data-stu-id="7226d-141">Choose the apps that a shared mailbox can use to access Microsoft email</span></span>
+## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a><span data-ttu-id="5495a-141">Auswählen der Apps, die ein freigegebenes Postfach für den Zugriff auf Microsoft-E-Mails verwenden kann</span><span class="sxs-lookup"><span data-stu-id="5495a-141">Choose the apps that a shared mailbox can use to access Microsoft email</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="7226d-142">Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.</span><span class="sxs-lookup"><span data-stu-id="7226d-142">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
+1. <span data-ttu-id="5495a-142">Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.</span><span class="sxs-lookup"><span data-stu-id="5495a-142">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="7226d-143">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="7226d-143">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="5495a-143">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="5495a-143">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="7226d-144">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="7226d-144">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="5495a-144">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="5495a-144">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
-2. <span data-ttu-id="7226d-145">Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann **e-Mail apps** \> **Bearbeiten**aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-145">Select the shared mailbox you want to edit, then select **Email apps** \> **Edit**.</span></span>
+2. <span data-ttu-id="5495a-145">Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann **"E-Mail-Apps** \> **bearbeiten" aus.**</span><span class="sxs-lookup"><span data-stu-id="5495a-145">Select the shared mailbox you want to edit, then select **Email apps** \> **Edit**.</span></span>
 
-3. <span data-ttu-id="7226d-146">Legen Sie die Umschaltfläche für alle apps, die Mitglieder für den Zugriff auf das freigegebene Postfach verwenden können, auf **ein** fest.</span><span class="sxs-lookup"><span data-stu-id="7226d-146">Set the toggle to **On** for all of the apps you want members to be able to use to access the shared mailbox.</span></span> <span data-ttu-id="7226d-147">Legen Sie die Umschaltfläche für alle apps, die Sie nicht verwenden möchten, auf **Off** fest.</span><span class="sxs-lookup"><span data-stu-id="7226d-147">Set the toggle to **Off** for any apps you don't want them to use.</span></span> 
+3. <span data-ttu-id="5495a-146">Legen Sie die Umschalt auf **"Ein"** für alle Apps, die Mitglieder für den Zugriff auf das freigegebene Postfach verwenden sollen.</span><span class="sxs-lookup"><span data-stu-id="5495a-146">Set the toggle to **On** for all of the apps you want members to be able to use to access the shared mailbox.</span></span> <span data-ttu-id="5495a-147">Legen Sie die Umschalt auf **"Aus"** für alle Apps, die sie nicht verwenden sollen.</span><span class="sxs-lookup"><span data-stu-id="5495a-147">Set the toggle to **Off** for any apps you don't want them to use.</span></span> 
 
-4. <span data-ttu-id="7226d-148">Wählen Sie **Speichern** aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-148">Select **Save**.</span></span>
+4. <span data-ttu-id="5495a-148">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="5495a-148">Select **Save**.</span></span>
 
 
-## <a name="put-a-shared-mailbox-on-litigation-hold"></a><span data-ttu-id="7226d-149">Speichern eines freigegebenen Postfachs für das Beweissicherungsverfahren</span><span class="sxs-lookup"><span data-stu-id="7226d-149">Put a shared mailbox on litigation hold</span></span>
+## <a name="put-a-shared-mailbox-on-litigation-hold"></a><span data-ttu-id="5495a-149">Ein freigegebenes Postfach in das Archiv für Rechtsstreitigkeiten setzen</span><span class="sxs-lookup"><span data-stu-id="5495a-149">Put a shared mailbox on litigation hold</span></span>
 
-<span data-ttu-id="7226d-150">Weitere Informationen zum Beweissicherungsverfahren finden Sie unter [Create a Litigation Hold](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold).</span><span class="sxs-lookup"><span data-stu-id="7226d-150">To learn more about litigation hold, see [Create a Litigation Hold](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold).</span></span>
+<span data-ttu-id="5495a-150">Weitere Informationen zum Halten von Rechtsstreitigkeiten finden Sie unter [Create a Litigation Hold](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold).</span><span class="sxs-lookup"><span data-stu-id="5495a-150">To learn more about litigation hold, see [Create a Litigation Hold](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold).</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="7226d-151">Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.</span><span class="sxs-lookup"><span data-stu-id="7226d-151">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
+1. <span data-ttu-id="5495a-151">Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.</span><span class="sxs-lookup"><span data-stu-id="5495a-151">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="7226d-152">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="7226d-152">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="5495a-152">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="5495a-152">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="7226d-153">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="7226d-153">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="5495a-153">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="5495a-153">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
-2. <span data-ttu-id="7226d-154">Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann Bearbeitungs **Prozess halten** aus \> **Edit**.</span><span class="sxs-lookup"><span data-stu-id="7226d-154">Select the shared mailbox you want to edit, then select **Litigation hold** \> **Edit**.</span></span>
+2. <span data-ttu-id="5495a-154">Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann "Rechtsstreitigkeiten  \> **archivieren" aus.**</span><span class="sxs-lookup"><span data-stu-id="5495a-154">Select the shared mailbox you want to edit, then select **Litigation hold** \> **Edit**.</span></span>
 
-3. <span data-ttu-id="7226d-155">Legen Sie die Umschaltfläche **auf ein**fest.</span><span class="sxs-lookup"><span data-stu-id="7226d-155">Set the toggle to **On**.</span></span> 
+3. <span data-ttu-id="5495a-155">Setzen Sie den Umschalter auf **"Ein".**</span><span class="sxs-lookup"><span data-stu-id="5495a-155">Set the toggle to **On**.</span></span> 
 
-4. <span data-ttu-id="7226d-156">Geben Sie optional eine Dauer, eine Notiz zum Haltestatus und eine URL mit weiteren Informationen ein.</span><span class="sxs-lookup"><span data-stu-id="7226d-156">Optionally, enter a duration, s note about the hold, and a URL with more information.</span></span>  
+4. <span data-ttu-id="5495a-156">Geben Sie optional eine Dauer, eine Notiz zum Halte halte und eine URL mit weiteren Informationen ein.</span><span class="sxs-lookup"><span data-stu-id="5495a-156">Optionally, enter a duration, s note about the hold, and a URL with more information.</span></span>  
 
-5. <span data-ttu-id="7226d-157">Wählen Sie **Speichern** aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-157">Select **Save**.</span></span>
+5. <span data-ttu-id="5495a-157">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="5495a-157">Select **Save**.</span></span>
 
 
-## <a name="add-or-remove-members"></a><span data-ttu-id="7226d-158">Hinzufügen oder Entfernen von Mitgliedern</span><span class="sxs-lookup"><span data-stu-id="7226d-158">Add or remove members</span></span>
+## <a name="add-or-remove-members"></a><span data-ttu-id="5495a-158">Hinzufügen oder Entfernen von Mitgliedern</span><span class="sxs-lookup"><span data-stu-id="5495a-158">Add or remove members</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="7226d-159">Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.</span><span class="sxs-lookup"><span data-stu-id="7226d-159">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
+1. <span data-ttu-id="5495a-159">Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.</span><span class="sxs-lookup"><span data-stu-id="5495a-159">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="7226d-160">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="7226d-160">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="5495a-160">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="5495a-160">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="7226d-161">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="7226d-161">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="5495a-161">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="5495a-161">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
-2. <span data-ttu-id="7226d-162">Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und klicken Sie dann auf **Mitglieder** \> **Bearbeiten**.</span><span class="sxs-lookup"><span data-stu-id="7226d-162">Select the shared mailbox you want to edit, then select **Members** \> **Edit**.</span></span>
+2. <span data-ttu-id="5495a-162">Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann **"Mitglieder** \> **bearbeiten" aus.**</span><span class="sxs-lookup"><span data-stu-id="5495a-162">Select the shared mailbox you want to edit, then select **Members** \> **Edit**.</span></span>
 
-3. <span data-ttu-id="7226d-163">Führen Sie einen der folgenden Schritte aus:</span><span class="sxs-lookup"><span data-stu-id="7226d-163">Do one of the following:</span></span>
-   - <span data-ttu-id="7226d-164">Klicken Sie zum Hinzufügen von Mitgliedern auf **Mitglieder hinzufügen**, suchen Sie nach einem Mitglied, das hinzugefügt werden soll, und wählen Sie dann **Speichern**aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-164">To add members, select **Add members**, search for or select a member to add, and then select **Save**.</span></span>
-   - <span data-ttu-id="7226d-165">Um Mitglieder zu entfernen, verwenden Sie das Suchfeld, um bei Bedarf nach dem Element zu suchen, wählen Sie das **X** neben dem Namen des Mitglieds aus, und wählen Sie dann **Speichern**aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-165">To remove members, use the Search box to search for the member if necessary, select the **X** next to the member's name, and then select **Save**.</span></span> 
+3. <span data-ttu-id="5495a-163">Führen Sie einen der folgenden Schritte aus:</span><span class="sxs-lookup"><span data-stu-id="5495a-163">Do one of the following:</span></span>
+   - <span data-ttu-id="5495a-164">Wählen Sie zum Hinzufügen von Mitgliedern die Option **"Mitglieder hinzufügen"** aus, suchen Oder wählen Sie ein hinzuzufügendes Mitglied aus, und wählen Sie dann **"Speichern" aus.**</span><span class="sxs-lookup"><span data-stu-id="5495a-164">To add members, select **Add members**, search for or select a member to add, and then select **Save**.</span></span>
+   - <span data-ttu-id="5495a-165">Um Mitglieder zu entfernen, verwenden Sie das Suchfeld, um bei Bedarf nach dem Mitglied zu suchen, wählen Sie **das X** neben dem Namen des Mitglieds aus, und wählen Sie dann Speichern **aus.**</span><span class="sxs-lookup"><span data-stu-id="5495a-165">To remove members, use the Search box to search for the member if necessary, select the **X** next to the member's name, and then select **Save**.</span></span> 
 
-4. <span data-ttu-id="7226d-166">Wählen Sie erneut **Speichern** aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-166">Select **Save** again.</span></span>
+4. <span data-ttu-id="5495a-166">Wählen Sie **erneut "Speichern"** aus.</span><span class="sxs-lookup"><span data-stu-id="5495a-166">Select **Save** again.</span></span>
 
-## <a name="add-or-remove-permissions-of-members"></a><span data-ttu-id="7226d-167">Hinzufügen oder Entfernen von Berechtigungen für Mitglieder</span><span class="sxs-lookup"><span data-stu-id="7226d-167">Add or remove permissions of members</span></span>
+## <a name="add-or-remove-permissions-of-members"></a><span data-ttu-id="5495a-167">Hinzufügen oder Entfernen von Berechtigungen von Mitgliedern</span><span class="sxs-lookup"><span data-stu-id="5495a-167">Add or remove permissions of members</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="7226d-168">Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.</span><span class="sxs-lookup"><span data-stu-id="7226d-168">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
+1. <span data-ttu-id="5495a-168">Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.</span><span class="sxs-lookup"><span data-stu-id="5495a-168">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="7226d-169">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="7226d-169">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="5495a-169">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="5495a-169">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="7226d-170">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="7226d-170">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="5495a-170">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="5495a-170">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
-2. <span data-ttu-id="7226d-171">Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, **und wählen Sie dann Benutzer** \> **Berechtigungen anpassen**aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-171">Select the shared mailbox you want to edit, then select **Members** \> **Customize permissions**.</span></span>
+2. <span data-ttu-id="5495a-171">Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann Berechtigungen zum **Anpassen** \> **von Mitgliedern aus.**</span><span class="sxs-lookup"><span data-stu-id="5495a-171">Select the shared mailbox you want to edit, then select **Members** \> **Customize permissions**.</span></span>
 
-3. <span data-ttu-id="7226d-172">Wählen Sie neben der Berechtigung, die Sie für ein Mitglied ändern möchten, die Option **Bearbeiten** aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-172">Select **Edit** next to the permission you want to change for a member.</span></span> 
+3. <span data-ttu-id="5495a-172">Wählen **Sie "Bearbeiten"** neben der Berechtigung aus, die Sie für ein Mitglied ändern möchten.</span><span class="sxs-lookup"><span data-stu-id="5495a-172">Select **Edit** next to the permission you want to change for a member.</span></span> 
 
-4. <span data-ttu-id="7226d-173">Führen Sie einen der folgenden Schritte aus:</span><span class="sxs-lookup"><span data-stu-id="7226d-173">Do one of the following:</span></span>
-   - <span data-ttu-id="7226d-174">Um diese Berechtigung einem zusätzlichen Mitglied zu erteilen, wählen Sie **Berechtigungen hinzufügen**, suchen oder Auswählen eines hinzuzufügenden Elements aus, und wählen Sie dann **Speichern**aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-174">To give that permission to an additional member, select **Add permissions**, search for or select a member to add, and then select **Save**.</span></span>
-   - <span data-ttu-id="7226d-175">Wenn Sie die Berechtigung eines Mitglieds entfernen möchten, verwenden Sie das Suchfeld, um nach dem Mitglied zu suchen, falls erforderlich, wählen Sie das **X** neben dem Namen des Mitglieds aus, und wählen Sie dann **Speichern**aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-175">To remove the permission from a member, use the Search box to search for the member if necessary,  select the **X** next to the member's name, and then select **Save**.</span></span> 
+4. <span data-ttu-id="5495a-173">Führen Sie einen der folgenden Schritte aus:</span><span class="sxs-lookup"><span data-stu-id="5495a-173">Do one of the following:</span></span>
+   - <span data-ttu-id="5495a-174">Um diese Berechtigung einem zusätzlichen Mitglied zu erteilen, wählen Sie "Berechtigungen hinzufügen" **aus,** suchen sie nach einem hinzuzufügende Mitglied, oder wählen Sie es aus, und wählen Sie dann **"Speichern" aus.**</span><span class="sxs-lookup"><span data-stu-id="5495a-174">To give that permission to an additional member, select **Add permissions**, search for or select a member to add, and then select **Save**.</span></span>
+   - <span data-ttu-id="5495a-175">Um die Berechtigung von einem Mitglied zu entfernen, verwenden Sie das Suchfeld, um bei Bedarf nach dem Mitglied zu suchen, wählen Sie **das X** neben dem Namen des Mitglieds aus, und wählen Sie dann Speichern **aus.**</span><span class="sxs-lookup"><span data-stu-id="5495a-175">To remove the permission from a member, use the Search box to search for the member if necessary,  select the **X** next to the member's name, and then select **Save**.</span></span> 
 
-4. <span data-ttu-id="7226d-176">Wählen Sie erneut **Speichern** aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-176">Select **Save** again.</span></span>
+4. <span data-ttu-id="5495a-176">Wählen Sie **erneut "Speichern"** aus.</span><span class="sxs-lookup"><span data-stu-id="5495a-176">Select **Save** again.</span></span>
 
-## <a name="show-or-hide-a-shared-mailbox-in-the-global-address-list"></a><span data-ttu-id="7226d-177">Ein-oder Ausblenden eines freigegebenen Postfachs in der globalen Adressliste</span><span class="sxs-lookup"><span data-stu-id="7226d-177">Show or hide a shared mailbox in the global address list</span></span>
+## <a name="show-or-hide-a-shared-mailbox-in-the-global-address-list"></a><span data-ttu-id="5495a-177">Ein- oder Ausblenden eines freigegebenen Postfachs in der globalen Adressliste</span><span class="sxs-lookup"><span data-stu-id="5495a-177">Show or hide a shared mailbox in the global address list</span></span>
 
-<span data-ttu-id="7226d-178">Wenn Sie das freigegebene Postfach nicht in der globalen Adressliste anzeigen möchten, wird das Postfach nicht in der Adressliste Ihrer Organisation angezeigt, es erhält jedoch weiterhin e-Mail-Nachrichten, die an es gesendet werden.</span><span class="sxs-lookup"><span data-stu-id="7226d-178">If you choose not to show the shared mailbox in the global address list, the mailbox won't appear in your organization's address list, but it will still receive email sent to it.</span></span> 
+<span data-ttu-id="5495a-178">Wenn Sie das freigegebene Postfach nicht in der globalen Adressliste anzeigen möchten, wird das Postfach nicht in der Adressliste Ihrer Organisation angezeigt, es erhält jedoch weiterhin E-Mails, die an das Postfach gesendet werden.</span><span class="sxs-lookup"><span data-stu-id="5495a-178">If you choose not to show the shared mailbox in the global address list, the mailbox won't appear in your organization's address list, but it will still receive email sent to it.</span></span> 
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="7226d-179">Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.</span><span class="sxs-lookup"><span data-stu-id="7226d-179">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
+1. <span data-ttu-id="5495a-179">Wechseln Sie im Admin Center zur Seite **Gruppen** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Freigegebene Postfächer</a>.</span><span class="sxs-lookup"><span data-stu-id="5495a-179">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="7226d-180">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="7226d-180">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="5495a-180">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="5495a-180">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="7226d-181">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="7226d-181">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="5495a-181">Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** > **Freigegebene Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="5495a-181">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
-2. <span data-ttu-id="7226d-182">Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann **in globale Adresslisten** \> **Bearbeitung**anzeigen aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-182">Select the shared mailbox you want to edit, then select **Show in global address list** \> **Edit**.</span></span>
+2. <span data-ttu-id="5495a-182">Wählen Sie das freigegebene Postfach aus, das Sie bearbeiten möchten, und wählen Sie dann "In globaler **Adressliste anzeigen"** \> **aus.**</span><span class="sxs-lookup"><span data-stu-id="5495a-182">Select the shared mailbox you want to edit, then select **Show in global address list** \> **Edit**.</span></span>
 
-3. <span data-ttu-id="7226d-183">Legen Sie die Umschaltfläche **auf ein**  oder **aus**fest.</span><span class="sxs-lookup"><span data-stu-id="7226d-183">Set the toggle to **On**  or **Off**.</span></span> 
+3. <span data-ttu-id="5495a-183">Setzen Sie den Umschalter auf **Ein oder** **Aus.**</span><span class="sxs-lookup"><span data-stu-id="5495a-183">Set the toggle to **On**  or **Off**.</span></span> 
 
-4. <span data-ttu-id="7226d-184">Wählen Sie **Speichern** aus.</span><span class="sxs-lookup"><span data-stu-id="7226d-184">Select **Save**.</span></span>
+4. <span data-ttu-id="5495a-184">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="5495a-184">Select **Save**.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="7226d-185">Wenn Sie ein freigegebenes Postfach aus der Adressliste ausblenden, ist es für neue freigegebene Post Fach Mitglieder unmöglich, das ausgeblendete Postfach Ihrem Outlook-Profil hinzuzufügen, bis das freigegebene Postfach erneut in der Adressliste angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="7226d-185">Hiding a shared mailbox from address list will make it impossible for new shared mailbox members to add the hidden mailbox to their Outlook profile until the shared mailbox is again shown in the address list.</span></span> 
+> <span data-ttu-id="5495a-185">Das Ausblenden eines freigegebenen Postfachs aus der Adressliste macht es für neue freigegebene Postfachmitglieder unmöglich, das ausgeblendete Postfach zu ihrem Outlook-Profil hinzuzufügen, bis das freigegebene Postfach wieder in der Adressliste angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="5495a-185">Hiding a shared mailbox from address list will make it impossible for new shared mailbox members to add the hidden mailbox to their Outlook profile until the shared mailbox is again shown in the address list.</span></span> 
 
-## <a name="related-articles"></a><span data-ttu-id="7226d-186">Verwandte Artikel</span><span class="sxs-lookup"><span data-stu-id="7226d-186">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="5495a-186">Verwandte Artikel</span><span class="sxs-lookup"><span data-stu-id="5495a-186">Related articles</span></span>
 
-[<span data-ttu-id="7226d-187">Informationen zu freigegebenen Postfächern</span><span class="sxs-lookup"><span data-stu-id="7226d-187">About shared mailboxes</span></span>](about-shared-mailboxes.md)
+[<span data-ttu-id="5495a-187">Informationen zu freigegebenen Postfächern</span><span class="sxs-lookup"><span data-stu-id="5495a-187">About shared mailboxes</span></span>](about-shared-mailboxes.md)
 
-[<span data-ttu-id="7226d-188">Erstellen eines freigegebenen Postfachs</span><span class="sxs-lookup"><span data-stu-id="7226d-188">Create a shared mailbox</span></span>](create-a-shared-mailbox.md)
+[<span data-ttu-id="5495a-188">Erstellen eines freigegebenen Postfachs</span><span class="sxs-lookup"><span data-stu-id="5495a-188">Create a shared mailbox</span></span>](create-a-shared-mailbox.md)
 
-[<span data-ttu-id="7226d-189">Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach</span><span class="sxs-lookup"><span data-stu-id="7226d-189">Convert a user mailbox to a shared mailbox</span></span>](convert-user-mailbox-to-shared-mailbox.md)
+[<span data-ttu-id="5495a-189">Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach</span><span class="sxs-lookup"><span data-stu-id="5495a-189">Convert a user mailbox to a shared mailbox</span></span>](convert-user-mailbox-to-shared-mailbox.md)
 
-[<span data-ttu-id="7226d-190">Entfernen einer Lizenz aus einem freigegebenen Postfach</span><span class="sxs-lookup"><span data-stu-id="7226d-190">Remove a license from a shared mailbox</span></span>](remove-license-from-shared-mailbox.md)
+[<span data-ttu-id="5495a-190">Entfernen einer Lizenz aus einem freigegebenen Postfach</span><span class="sxs-lookup"><span data-stu-id="5495a-190">Remove a license from a shared mailbox</span></span>](remove-license-from-shared-mailbox.md)
 
-[<span data-ttu-id="7226d-191">Beheben von Problemen mit freigegebenen Postfächern</span><span class="sxs-lookup"><span data-stu-id="7226d-191">Resolve issues with shared mailboxes</span></span>](resolve-issues-with-shared-mailboxes.md)
+[<span data-ttu-id="5495a-191">Beheben von Problemen mit freigegebenen Postfächern</span><span class="sxs-lookup"><span data-stu-id="5495a-191">Resolve issues with shared mailboxes</span></span>](resolve-issues-with-shared-mailboxes.md)
