@@ -1,5 +1,5 @@
 ---
-title: E-Mail importieren und umleiten
+title: Importieren und Umleiten von E-Mails
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,42 +16,43 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Hier erfahren Sie, wie Sie e-Mails in Microsoft 365for Business importieren.
-ms.openlocfilehash: ae72662c779d230addb3b15d0d486900328fa602
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Erfahren Sie, wie Sie E-Mails in Microsoft 365For Business importieren.
+ms.openlocfilehash: a53552ddead1ed69a7c9b77bb8021a6340690059
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701972"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927175"
 ---
-# <a name="import-email-to-microsoft-365-for-business"></a>Importieren von e-Mails an Microsoft 365 for Business 
+# <a name="import-email-to-microsoft-365-for-business"></a>Importieren von E-Mails in Microsoft 365 Business 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
 
-Nachdem Sie sich bei Microsoft 365 angemeldet haben, haben Sie möglicherweise weiterhin e-Mails an ein altes Konto gesendet. Wenn Sie beispielsweise ein Gmail-oder Outlook-Konto für Arbeit verwendet haben. Sie können weiterhin sowohl die neuen als auch die alten Konten verwenden, oder Sie können die Daten aus dem alten Konto in Ihre neue importieren.
+Nach der Anmeldung für Microsoft 365 haben Sie möglicherweise noch E-Mails an ein altes Konto. Beispielsweise, wenn Sie ein Gmail- oder Outlook-Konto für die Arbeit verwendet haben. Sie können weiterhin sowohl das neue als auch das alte Konto verwenden, oder Sie können die Daten aus dem alten Konto in Ihr neues Konto importieren.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-### <a name="step-1-export-your-old-email"></a>Schritt 1: Exportieren Sie Ihre alten e-Mails.
+### <a name="step-1-export-your-old-email"></a>Schritt 1: Exportieren Sie Ihre alten E-Mails.
 
-1. Wählen Sie in Outlook  **Datei**, **Öffnen und exportieren** und dann **importieren/exportieren** aus.
-2. Wählen Sie  **in eine Datei exportieren** aus, und wählen Sie dann  **weiter** aus.
-3. Wählen Sie  **Outlook-Datendatei** aus, und wählen Sie dann  **weiter** aus.
-4. Wählen Sie Ihr altes e-Mail-Konto aus.
-5. Stellen Sie sicher, dass Sie Unterordner einschließen. Klicken Sie dann auf  **weiter**.
-6. Wählen Sie  **Durchsuchen** aus, und wechseln Sie zu einem Speicherort, der sich einfach merken lässt, beispielsweise auf dem Desktop. Klicken Sie auf  **OK** und dann auf **Fertig stellen**.
-7. Lassen Sie die Kenn Wortfelder leer, und wählen Sie dann **OK** aus.
+1. Wählen Sie in Outlook **"Datei",** **"Öffnen" und "Exportieren"** und dann **"Importieren/Exportieren" aus.**
+2. Wählen **Sie "In eine Datei exportieren"** und dann **"Weiter" aus.**
+3. Wählen Sie **"Outlook-Datendatei"** und dann **"Weiter" aus.**
+4. Wählen Sie Ihr altes E-Mail-Konto aus.
+5. Stellen Sie sicher, dass Sie Unterordner hinzufügen. Wählen Sie dann **"Weiter" aus.**
+6. Wählen  **Sie "Durchsuchen"** aus, und wechseln Sie zu einem leicht zu merken speicherort, z. B. Ihrem Desktop. Wählen Sie **"OK"** und dann **"Fertig stellen" aus.**
+7. Lassen Sie die Kennwortfelder leer, und wählen Sie dann **OK aus.**
 
-    Ihr altes e-Mail-Konto wurde exportiert.
+    Ihr altes E-Mail-Konto wurde exportiert.
 
-### <a name="step-2-import-your-old-email-into-your-new-email-account"></a>Schritt 2: Importieren Sie Ihre alten e-Mails in Ihr neues e-Mail-Konto.
+### <a name="step-2-import-your-old-email-into-your-new-email-account"></a>Schritt 2: Importieren Ihrer alten E-Mails in Ihr neues E-Mail-Konto
 
-1. Wählen Sie in Outlook  **Datei**, **Öffnen**,  **exportieren** und dann **importieren/exportieren** aus.
-2. Wählen Sie  **aus einem anderen Programm oder einer anderen Datei importieren aus** , und wählen Sie dann  **weiter** aus.
-3. Wählen Sie  **Outlook-Datendatei** aus, und wählen Sie dann  **weiter** aus.
-4. Wählen Sie  **Durchsuchen** aus, und wechseln Sie zu der Datei, die Sie soeben exportiert haben. Wählen Sie Sie aus, und klicken Sie dann auf  **Öffnen** und dann auf **weiter**.
-5. Stellen Sie sicher, dass Sie Unterordner einschließen und dass Sie Elemente in denselben Ordner in Ihrem neuen e-Mail-Konto importieren. Wählen Sie **Fertig stellen** aus.
+1. Wählen Sie in Outlook **"Datei",** **"Öffnen",** **"Exportieren"** und dann **"Importieren/Exportieren" aus.**
+2. Wählen **Sie "Aus einem anderen Programm oder einer anderen Datei importieren"** und dann **"Weiter" aus.**
+3. Wählen Sie **"Outlook-Datendatei"** und dann **"Weiter" aus.**
+4. Wählen  **Sie "Durchsuchen"** aus, und wechseln Sie zu der Datei, die Sie gerade exportiert haben. Wählen Sie es aus, und wählen Sie dann **"Öffnen"** und dann **"Weiter" aus.**
+5. Stellen Sie sicher, dass Sie Unterordner hinzufügen und Elemente in denselben Ordner in Ihrem neuen E-Mail-Konto importieren. Wählen Sie **Fertig stellen** aus.

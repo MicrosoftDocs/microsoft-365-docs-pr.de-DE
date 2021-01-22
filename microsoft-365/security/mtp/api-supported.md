@@ -3,7 +3,7 @@ title: Unterstützte Microsoft 365 Defender-APIs
 description: Unterstützte Microsoft 365 Defender-APIs
 keywords: MTP, APIs, API
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: dbb7613dae3755b0fb794a3d68b5b424d765cc62
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: ee03e5a255a88c084403842e7bf0319c06c0517b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719322"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926198"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>Unterstützte Microsoft 365 Defender-APIs 
 
@@ -40,24 +41,24 @@ ms.locfileid: "49719322"
 
 Artikel | Beschreibung
 -|-
-[Erweiterte Suche-API](api-advanced-hunting.md) | Führen Sie erweiterte Jagd Abfragen aus.
+[Erweiterte Suche-API](api-advanced-hunting.md) | Führen Sie Erweiterte Suchabfragen aus.
 [Vorfall-APIs](api-incident.md) | Auflisten und Aktualisieren von Vorfällen sowie anderer praktischer Aufgaben.
 
 ### <a name="endpoint-uris"></a>Endpunkt-URIs
 
-Der Basis-URI für die beiden Haupt-APIs lautet: https://api.security.microsoft.com . Um eine bessere Leistung zu erzielen, verwenden Sie einen Server näher an Ihrem Standort:
+Der Basis-URI für beide haupt-APIs ist: https://api.security.microsoft.com . Um eine bessere Leistung zu erzielen, verwenden Sie einen Server, der näher an Ihrem Geografischen Standort ist:
 
-- Vereinigte Staaten: API-US.Security.Microsoft.com
-- Europa: API-EU.Security.Microsoft.com
-- Vereinigtes Königreich: API-UK.Security.Microsoft.com
+- Usa: api-us.security.microsoft.com
+- Europa: api-eu.security.microsoft.com
+- Vereinigtes Königreich: api-uk.security.microsoft.com
 
-Token können durch den Zugriff erworben werden https://api.security.microsoft.com .
+Token können durch Zugriff auf erworben https://api.security.microsoft.com werden.
 
-Alle APIs entlang des `/api` Pfads verwenden das [OData](https://docs.microsoft.com/odata/overview) -Protokoll, beispielsweise https://api.security.microsoft.com/api/incidents .
+Alle APIs entlang des `/api` Pfads verwenden das [OData-Protokoll,](https://docs.microsoft.com/odata/overview) z. B. https://api.security.microsoft.com/api/incidents .
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Microsoft 365 Defender-APIs (Übersicht)](api-overview.md)
+- [Übersicht über Microsoft 365 Defender-APIs](api-overview.md)
 - [Zugreifen auf die Microsoft Threat Protection-APIs](api-access.md)
-- [Informationen zu API-Grenzwerten und Lizenzierung](api-terms.md)
-- [Grundlegendes zu Fehlercodes](api-error-codes.md)
+- [Informationen zu API-Beschränkungen und Lizenzierung](api-terms.md)
+- [Fehlercodes verstehen](api-error-codes.md)

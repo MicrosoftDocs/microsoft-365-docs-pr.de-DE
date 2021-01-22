@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Windows 10 pro-Geräterichtlinien mit Microsoft 365 Business Premium
+title: Verwalten von Windows 10 Pro-Geräterichtlinien mit Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,37 +16,38 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie Windows 10 pro-Geräterichtlinien mit Microsoft 365 Business Premium verwalten.
-ms.openlocfilehash: 9052859f03035a76bf69b7c8c23c75ae00353846
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Erfahren Sie, wie Sie Windows 10 Pro-Geräterichtlinien mit Microsoft 365 Business Premium verwalten.
+ms.openlocfilehash: f42c175543ae16ae645c17997b20ed67aa5d705c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702385"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926006"
 ---
-# <a name="manage-windows-10-pro-device-policies"></a>Verwalten von Windows 10 pro-Geräterichtlinien
+# <a name="manage-windows-10-pro-device-policies"></a>Verwalten von Windows 10 Pro-Geräterichtlinien
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSL?autoplay=false]
 
-Sie können Microsoft 365 Business verwenden, um sicherzustellen, dass Windows Defender Antivirus auf Windows 10-Geräten aktiviert ist und Microsoft-Updates automatisch auf die Geräte der Benutzer heruntergeladen werden.
+Sie können Microsoft 365 Business verwenden, um sicherzustellen, dass Windows Defender Antivirus auf Windows 10-Geräten aktiviert ist und die Updates von Microsoft automatisch auf die Geräte der Benutzer heruntergeladen werden.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
 1. Melden Sie sich beim Microsoft 365 Admin Center an.
-1. Wählen Sie unter **Richtlinien** die Option Richtlinie hinzufügen aus.
-1. Geben Sie im Bereich **Richtlinie hinzufügen** unter **Richtlinienname** einen Namen ein, und wählen Sie dann unter **Richtlinientyp** die Option **Windows 10-Gerätekonfiguration** aus.
-1. Wählen Sie **sichere Windows 10-Geräte** aus, um die unter Einstellungen anzuzeigen.
-1. Stellen Sie sicher, dass Sie **PCs vor Viren und anderen Bedrohungen mithilfe von Windows Defender Antivirus schützen** und **Windows 10-Geräte automatisch auf dem neuesten Stand halten** , wenn Sie aktiviert sind.
-1. Unter **wer werden diese Einstellungen erhalten?** sind alle Benutzer standardmäßig ausgewählt, Sie können jedoch die Option **Change** auswählen, um alle Sicherheitsgruppen auszuwählen, die Sie erstellt haben.
-1. Um das Erstellen der Richtlinie abzuschließen, wählen Sie **Hinzufügen** aus.
-1. Wählen Sie auf der Seite **Richtlinie hinzufügen** die Option **Schließen** aus.
-1. Bestätigen Sie auf der Admin Center-Startseite, dass Ihre neue Richtlinie hinzugefügt wurde, indem Sie **Richtlinien** auswählen und ihre Richtlinie auf der Seite **Richtlinien** überprüfen.
-1. Um zu überprüfen, ob die Richtlinie wirksam ist, wechseln Sie auf dem Windows 10-Gerät eines Benutzers zu Windows Update, wählen Sie **Erweiterte Optionen** aus, und vergewissern Sie sich, dass die Einstellungen abgeblendet sind.
+1. Wählen **Sie unter "Richtlinien"** die Option "Richtlinie hinzufügen" aus.
+1. Geben Sie **im Bereich "Richtlinie hinzufügen"** einen Namen unter "Richtlinienname" **ein,** und wählen Sie dann unter "Richtlinientyp" die **Windows 10-Gerätekonfiguration** **aus.**
+1. Wählen **Sie "Sichere Windows 10-Geräte"** aus, um die Untereinstellungen zu sehen.
+1. Stellen Sie sicher, dass PCs mithilfe von **Windows Defender Antivirus-** und Windows **10-Geräte** automatisch auf dem neuesten Stand sind.
+1. Unter **"Wer wird diese Einstellungen erhalten?"** werden standardmäßig alle Benutzer ausgewählt, Aber Sie können **"Ändern"** auswählen, um alle sicherheitsgruppen auszuwählen, die Sie erstellt haben.
+1. Um die Erstellung der Richtlinie zu beenden, wählen Sie **"Hinzufügen" aus.**
+1. Wählen Sie **auf der Seite "Richtlinie hinzufügen"** die Option **"Schließen" aus.**
+1. Bestätigen Sie auf der Admin Center-Startseite, dass  Die neue Richtlinie hinzugefügt wurde, indem Sie auf der Seite "Richtlinien" die Richtlinien auswählen und ihre **Richtlinie** überprüfen.
+1. Um zu überprüfen, ob die Richtlinie wirksam wurde, wechseln Sie auf dem Windows 10-Gerät eines Benutzers zu Windows Update, wählen Sie **"Erweiterte** Optionen" aus, und vergewissern Sie sich, dass die Einstellungen abgeblendet sind.
 
-    Klicken Sie dann auf **auswählen, wie Updates zugestellt werden**, und bestätigen Sie, dass die Einstellungen abgeblendet sind und die folgende Meldung angezeigt wird: **einige Einstellungen werden von Ihrer Organisation ausgeblendet oder verwaltet**.
+    Klicken Sie dann auf "Wie Updates zugestellt werden", und vergewissern Sie sich, dass die Einstellungen ausgegraut sind und die folgende Meldung angezeigt wird: Einige Einstellungen werden von Ihrer Organisation **ausgeblendet oder verwaltet.**
 

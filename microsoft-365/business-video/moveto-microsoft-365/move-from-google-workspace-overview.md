@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Ihre Daten und Benutzer von Google Workspace zu Microsoft 365 Business verschieben.
-ms.openlocfilehash: 70a90883d1edb0c87522174562a7f39006b732b6
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 49fc163821f74ca42a07353e59ed4439b6d52023
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794631"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49924990"
 ---
 # <a name="switch-from-google-workspace---overview"></a>Wechseln von Google Workspace – Übersicht
 
@@ -41,7 +42,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Daten, E-Mails und Benutzer von 
 |Schritt 4|[Hinzufügen Ihrer Google Workspace-Domäne zu Microsoft 365](add-google-domain.md) </br> Nachdem Sie überprüft haben, dass Sie derEn Domäne besitzen, die Sie für E-Mails verwenden, können Sie und alle anderen Benutzer ihre alte E-Mail verwenden, um sich bei Microsoft 365 Business Premium zu anmelden. |
 |Schritt 5 | [Installieren Sie Office-Apps und Microsoft Teams.](../install-office.md)</br> Alle Personen, die über Microsoft 365-Lizenzen verfügen, sollten die Office-Apps auf ihren Arbeitsgeräten installieren.|
 |Schritt 6 | [Migrieren Sie die E-Mail- und Kalenderelemente aller Benutzer.](migrate-email.md)</br> In diesem Schritt führen Sie eine Exchange Online-Migration aus, um alle E-Mails, Kalender und Kontakte von Google Workspace zu verschieben.  |
-|Schritt 7 | [Verbinden Sie die Domäne mit Microsoft 365.](connect-domain-tom365.md) </br> Nachdem Sie eine Verbindung hergestellt haben, wird die Domänen-E-Mail an Microsoft 365 gesendet, und alle Ihre Microsoft 365-Dienste funktionieren.|
+|Schritt 7 | [Verbinden Sie die Domäne mit Microsoft 365.](connect-domain-tom365.md) </br> Nachdem Sie die Verbindung hergestellt haben, wird die Domänen-E-Mail an Microsoft 365 gesendet, und alle Ihre Microsoft 365-Dienste funktionieren.|
 |Schritt 8|Verwenden [Sie Mover, um alle Daten](mover-migrate-files.md) von Laufwerk zu OneDrive und von freigegebenen Laufwerken auf Teamwebsites zu verschieben.</br> In diesem Schritt werden alle Daten auf persönlichen und freigegebenen Laufwerken kopiert und nach Microsoft 365 verschoben.|
 |Schritt 9| [Stellen Sie Google Workspace ein,](cancel-google.md) aber behalten Sie Ihre Domäne bei. </br> Wenn Google Ihre Domäne verwaltet, können Sie sie dort auch behalten, nachdem Sie Ihr Google Workspace-Abonnement eingestellt haben. Sie können ihn auch auf einen anderen DNS-Host verschieben, wenn Sie möchten.|
 |||

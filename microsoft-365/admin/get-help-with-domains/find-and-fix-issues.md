@@ -14,7 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -22,21 +24,21 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Erfahren Sie, wie Sie Probleme einkreisen können, die beim Einrichten einer benutzerdefinierten Domäne auftreten. Stellen Sie zunächst sicher, dass die DNS-Einträge ordnungsgemäß eingerichtet sind.
-ms.openlocfilehash: d2935a7fcc134f7f6d2dd06a5b4e0e0a8761ad8a
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 786df75f3f8a514e9b3c2a7666d715c9abd082bd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658519"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926390"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Suchen und Beheben von Problemen, nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
-Das Einrichten Ihrer Domäne für die Zusammenarbeit mit Microsoft 365 kann eine Herausforderung darstellen. Das DNS-System ist Nitpicky, mit dem Sie arbeiten können, und das DNS-Setup für Ihre Domäne betrifft wichtige geschäftliche Aktivitäten wie e-Mail!
+Die Einrichtung Ihrer Domäne für die Arbeit mit Microsoft 365 kann eine Herausforderung darstellen. Das DNS-System ist sehr sorgfältig für die Arbeit, und das DNS-Setup für Ihre Domäne wirkt sich auf wichtige Geschäftsaktivitäten wie E-Mail aus!
 
 > [!NOTE]
-> Sie können nach Problemen mit Ihrer Domäne suchen, indem Sie deren Status überprüfen. Wechseln Sie zu **Setup**  >  **Domänen** , und zeigen Sie die Benachrichtigungen in der Spalte **Status** an. Wenn ein Problem angezeigt wird, wählen Sie „Weitere Aktionen“ aus (die drei Punkte), und wählen Sie dann **Integrität überprüfen** aus. In dem Bereich, der nun geöffnet wird, werden alle mit Ihrer Domäne auftretenden Probleme beschrieben.
+> Sie können nach Problemen mit Ihrer Domäne suchen, indem Sie deren Status überprüfen. Wechseln Sie zu "Setupdomänen",  >   und zeigen Sie die Benachrichtigungen in der Spalte **"Status"** an. Wenn ein Problem angezeigt wird, wählen Sie „Weitere Aktionen“ aus (die drei Punkte), und wählen Sie dann **Integrität überprüfen** aus. In dem Bereich, der nun geöffnet wird, werden alle mit Ihrer Domäne auftretenden Probleme beschrieben.
   
 ## <a name="whats-going-on"></a>Was ist los?
 
@@ -44,7 +46,7 @@ Das Einrichten Ihrer Domäne für die Zusammenarbeit mit Microsoft 365 kann eine
     
 - [Outlook funktioniert nicht?](#outlook-isnt-working)
     
-- [Alle e-Mails wurden zu Microsoft 365 gewechselt, und Sie wollten nur, dass Ihre e-Mail gewechselt wird?](#everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch)
+- [Die E-Mails aller Benutzer wurden zu Microsoft 365 umgestellt, und Sie wollten nur, dass Ihre E-Mail-Adresse wechselt?](#everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch)
 
 - [Sie können den Status eines Schulkontos oder des Kontos einer gemeinnützigen Organisation nicht bestätigen?](#cant-confirm-non-profit-or-school-account-status)
 
@@ -59,7 +61,7 @@ Es gibt einige häufige Gründe dafür, dass die Domänenüberprüfung nicht wie
   
 1. **Der Wert des Prüfeintrags ist nicht ganz korrekt.** Vergewissern Sie sich, dass Sie den exakten Wert kopiert und in den TXT-Prüfeintrag bei Ihrem DNS-Host eingefügt haben. Ein häufiges Problem ist, dass der Teil "MS=" des Eintrags fehlt. Diese Angabe ist ebenfalls erforderlich! 
     
-2. **Der Datensatz wurde nicht gespeichert.** Bei einigen DNS-Hosts müssen Sie einen zusätzlichen Schritt ausführen, um die Zonendatei (in der der DNS-Eintrag gespeichert ist) zu speichern, damit Sie über das Internet aktualisiert wird. Stellen Sie sicher, dass Sie Ihre Änderungen gespeichert haben, damit Microsoft 365 den Datensatz sehen und überprüfen kann. 
+2. **Der Datensatz wurde nicht gespeichert.** Bei einigen DNS-Hosts müssen Sie einen zusätzlichen Schritt zum Speichern der Zonendatei (in der der DNS-Eintrag gespeichert ist) unternehmen, damit sie über das Internet aktualisiert wird. Stellen Sie sicher, dass Sie Ihre Änderungen gespeichert haben, damit Microsoft 365 den Datensatz sehen und überprüfen kann. 
     
 3. **Der Eintrag wurde noch nicht im Internet aktualisiert.** In der Regel dauert es nur ein paar Minuten, bis wir den neuen Eintrag sehen können, aber gelegentlich kann es auch ein paar Stunden dauern. 
     
@@ -68,27 +70,27 @@ Es gibt einige häufige Gründe dafür, dass die Domänenüberprüfung nicht wie
 
 Wenn Sie Ihren MX-Eintrag und andere DNS-Einträge für Ihre Domäne ordnungsgemäß eingerichtet haben, aber Ihr E-Mail-Programm nicht funktioniert, können wir Ihnen dabei helfen, [Ihre Probleme mit Outlook zu beheben](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues).
   
-## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>Alle e-Mails wurden zu Microsoft 365 gewechselt, und Sie wollten nur, dass Ihre e-Mail gewechselt wird?
+## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>Die E-Mails aller Benutzer wurden zu Microsoft 365 umgestellt, und Sie wollten nur, dass Ihre E-Mails wechseln?
 <a name="BKMK_EmailSwitched"> </a>
 
-Wenn Sie Ihre Domäne zu Microsoft 365 hinzufügen, wird der MX-Eintrag Ihrer Domäne in der Regel aktualisiert (von Ihnen oder von Microsoft 365), um auf Microsoft 365 zu deuten, und alle e-Mails, die an diese Domäne gesendet werden, beginnen mit Microsoft 365. Stellen Sie sicher, dass Sie in Microsoft 365 Postfächer für alle Benutzer erstellt haben, die e-Mails in Ihrer Domäne haben, bevor Sie den MX-Eintrag ändern.
+Wenn Sie Ihre Domäne zu Microsoft 365 hinzufügen, wird in der Regel der MX-Eintrag Ihrer Domäne (von Ihnen oder Microsoft 365) aktualisiert, um auf Microsoft 365 zu verweisen, und alle an diese Domäne gesendeten E-Mails werden an Microsoft 365 gesendet. Stellen Sie sicher, dass Sie Postfächer in Microsoft 365 für alle Benutzer erstellt haben, die über E-Mails in Ihrer Domäne verfügen, bevor Sie den MX-Eintrag ändern.
   
-Was geschieht, wenn Sie e-Mails nicht für alle Benutzer Ihrer Domäne nach Microsoft 365 bewegen möchten? Sie können [stattdessen ein Pilotprojekt von Microsoft 365 mit nur wenigen e-Mail-Adressen](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)ausführen.
+Was passiert, wenn Sie keine E-Mails für alle Benutzer in Ihrer Domäne nach Microsoft 365 verschieben möchten? Sie können stattdessen schritte zum [Piloten von Microsoft 365 mit nur wenigen E-Mail-Adressen ausführen.](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)
   
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>Sie können den Status eines Schulkontos oder des Kontos einer gemeinnützigen Organisation nicht bestätigen?
 <a name="BKMK_validateAcct"> </a>
 
-Es gibt eine Reihe von Szenarios, in denen Sie lediglich die Domäne Ihrer Organisation bestätigen und keine Dienste einrichten müssen. Um beispielsweise Microsoft 365 zu beweisen, dass Ihre Organisation für ein Schul Abonnement qualifiziert ist.
+Es gibt eine Reihe von Szenarios, in denen Sie lediglich die Domäne Ihrer Organisation bestätigen und keine Dienste einrichten müssen. Zum Beispiel, um Microsoft 365 nachzuweisen, dass Ihre Organisation für ein Schulabonnement qualifiziert ist.
   
-Lesen Sie den Leitfaden unter [verify your Microsoft 365 Domain to prove Ownership, Non-Profit oder Education Status, oder aktivieren Sie jammern](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) , um sicherzustellen, dass Sie alle erforderlichen Schritte abgeschlossen haben. Der Vorgang ist für jede Situation ein wenig anders. 
+Lesen Sie die Anweisungen unter "Überprüfen Ihrer [Microsoft 365-Domäne"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) zum Nachweis des Besitzes, der gemeinnützigen Organisation oder des Bildungsstatus oder zum Aktivieren von Yammer, um sicherzustellen, dass Sie alle erforderlichen Schritte abgeschlossen haben. Der Vorgang ist für jede Situation ein wenig anders. 
   
 ## <a name="services-not-working-with-your-domain"></a>Dienste funktionieren nicht mit Ihrer Domäne?
 <a name="BKMK_Test"> </a>
 
-Wir können Sie beim Diagnostizieren von Problemen mit der DNS-Einrichtung Ihrer Domäne unterstützen. In der Domänen-Problembehandlung in Microsoft 365 werden alle Datensätze angezeigt, die repariert werden müssen, und genau das, worauf die Datensätze festgelegt werden müssen. 
+Wir können Sie beim Diagnostizieren von Problemen mit der DNS-Einrichtung Ihrer Domäne unterstützen. In der Problembehandlung für Domänen in Microsoft 365 werden alle Einträge, die behoben werden müssen, und genau das, worauf die Einträge festgelegt werden müssen, gezeigt. 
 
 > [!TIP]
-> Haben Sie Ihren DNS richtig eingerichtet, aber e-Mails funktionieren nicht in Outlook auf Ihrem Desktop? Sehen Sie sich die [unterschiedlichen Nachrichtenfluss Szenarien an, die Sie mit Microsoft 365 haben können](https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices) , um sicherzustellen, dass Sie die Dinge ordnungsgemäß für Ihr Unternehmen eingerichtet haben. Weitere Informationen zur Problembehandlung mit e-Mails finden Sie hier: [Beheben von Outlook-Problemen](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
+> Haben Sie Ihr DNS ordnungsgemäß eingerichtet, aber E-Mail funktioniert nicht in Outlook auf Ihrem Desktop? Sehen Sie sich die verschiedenen E-Mail-Flussszenarien an, die Sie mit [Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices) haben können, um sicherzustellen, dass Alles ordnungsgemäß für Ihr Unternehmen eingerichtet ist. Oder erhalten Sie weitere Hilfe zur Problembehandlung mit E-Mails hier: [Beheben von Outlook-Problemen.](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues) 
   
 ## <a name="accessing-your-website-isnt-working"></a>Sie können nicht auf Ihre Website zugreifen?
 <a name="BKMK_Website"> </a>
@@ -97,10 +99,10 @@ Wenn Sie alle DNS-Probleme behoben haben, aber weiterhin Probleme auftreten, fü
   
 - Benutzer können auf Ihre Website unter "www.mydomain.com" nicht zugreifen: [Diagnostizieren von Websiteproblemen](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
     
-- Sie können einen Eintrag oder CNAME-Eintrag nicht so aktualisieren, dass er auf Ihre Website verweist: [Aktualisieren von benutzerdefinierten DNS-Einträgen in Microsoft 365](../dns/add-or-edit-custom-dns-records.md)
+- Sie können Ihren A- oder #A0 nicht so aktualisieren, dass er auf Ihre Website verweisen kann: Aktualisieren benutzerdefinierter #A1 [in Microsoft 365](../dns/add-or-edit-custom-dns-records.md)
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Problembehandlung: Überwachen von Daten zu überprüfter Domänen Änderung](https://docs.microsoft.com/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain)
+[Problembehandlung: Überwachen von Daten bei überprüften Domänenänderung](https://docs.microsoft.com/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain)
 
     

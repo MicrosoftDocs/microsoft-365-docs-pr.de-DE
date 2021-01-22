@@ -16,31 +16,32 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: In diesem Artikel erfahren Sie, wie Sie Outlook für Ihre Microsoft 365-e-Mail einrichten.
-ms.openlocfilehash: 4c49b658be254f81cd8231a71837afc4d848fd92
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Erfahren Sie, wie Sie Outlook für Ihre Microsoft 365-E-Mail einrichten.
+ms.openlocfilehash: 9ccb654daf8e7cf9748de4213b9a07ecdff9edbb
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702232"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925922"
 ---
-# <a name="set-up-outlook-for-microsoft-365-for-business-email"></a>Einrichten von Outlook für Microsoft 365 for Business-e-Mails 
+# <a name="set-up-outlook-for-microsoft-365-for-business-email"></a>Einrichten von Outlook für Microsoft 365 Business-E-Mails 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-Nachdem Sie die Office-Apps installiert haben, möchten Sie&#39;Outlook so einrichten, dass e-Mails, Kalender und Kontakte verwendet werden. Hier&#39;s how.
+Nachdem Sie die Office-Apps installiert haben,&#39;Outlook so einrichten, dass es mit der Verwendung von E-Mails, Kalendern und Kontakten beginnt. Hier&#39;Wie.
 
 1. Öffnen Sie das Startmenü. Suchen Sie nach Outlook, und wählen Sie es aus.
-2. Geben Sie Ihre Microsoft 365-e-Mail-Adresse ein, und wählen Sie  **verbinden** aus.
-3. Geben Sie weitere e-Mail-Adressen ein, die Sie verwenden möchten, beispielsweise Ihre frühere oder persönliche e-Mail-Adresse. Wählen Sie  **weiter** aus.
-4. Wenn Sie dazu aufgefordert werden, geben Sie ein Kennwort ein, und wählen Sie dann  **Anmelden** aus.
-5. Nachdem Sie alle Ihre Konten hinzugefügt haben, wählen Sie aus, ob Sie Outlook Mobile einrichten oder bis zu einem späteren Zeitpunkt warten möchten.
-6. Wählen Sie  **Fertig** aus. Es kann einige Minuten dauern, bis Outlook Ihre e-Mails und andere Daten herunterlädt.
+2. Geben Sie Ihre Microsoft 365-E-Mail-Adresse ein, und wählen Sie **"Verbinden" aus.**
+3. Geben Sie alle zusätzlichen E-Mail-Adressen ein, die Sie verwenden möchten, z. B. Ihre vorherige oder persönliche E-Mail-Adresse. Wählen Sie **"Weiter" aus.**
+4. Wenn Sie dazu aufgefordert werden, geben Sie ein Kennwort ein, und wählen Sie **"Anmelden" aus.**
+5. Nachdem alle Ihre Konten hinzugefügt wurden, wählen Sie aus, ob Sie Outlook Mobile einrichten oder bis zu einem späteren Zeitpunkt warten möchten.
+6. Select  **Done**. Es kann einige Minuten dauern, bis Outlook Ihre E-Mails und andere Daten heruntergeladen hat.
 
-Jetzt können Sie e-Mails für die von Ihnen hinzugefügten Konten anzeigen. Sie können auch den Kalender, Kontakte und Aufgaben anzeigen.
+Jetzt können Sie E-Mails für die konten anzeigen, die Sie hinzugefügt haben. Sie können auch Ihren Kalender, Ihre Kontakte und Ihre Aufgaben anzeigen.

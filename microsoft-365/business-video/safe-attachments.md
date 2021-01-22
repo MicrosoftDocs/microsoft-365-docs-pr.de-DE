@@ -1,5 +1,5 @@
 ---
-title: Verwalten sicherer Anlagen
+title: Sichere Anlagen verwalten
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,38 +16,39 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Hier erfahren Sie, wie Sie sichere Anlagen verwalten.
-ms.openlocfilehash: ea1dc20b8e9e51701730a72b8e8194d2abbfac99
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Erfahren Sie, wie Sie sichere Anlagen verwalten.
+ms.openlocfilehash: 75146a05a091cf91a77ee3bc9bb63c813d84dce3
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701936"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926102"
 ---
-# <a name="manage-safe-attachments"></a>Verwalten sicherer Anlagen
+# <a name="manage-safe-attachments"></a>Sichere Anlagen verwalten
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtn3I?autoplay=false]
 
-Microsoft Defender für Office 365, früher als Microsoft 365 ATP oder Advanced Threat Protection bezeichnet, trägt zum Schutz Ihres Unternehmens gegen Dateien bei, die schädlichen Inhalt in Outlook, OneDrive, SharePoint und Microsoft Teams enthalten.
+Microsoft Defender für Office 365 , früher als Microsoft 365 ATP oder Advanced Threat Protection bezeichnet, schützt Ihr Unternehmen vor Dateien, die schädliche Inhalte in Outlook, OneDrive, SharePoint und Teams enthalten.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Wechseln Sie zum [Admin Center](https://admin.microsoft.com), und wählen Sie **Setup** aus.
-1. Scrollen Sie nach unten, um den **Schutz vor erweiterten Bedrohungen zu erweitern**. Wählen Sie **anzeigen**, **Verwalten** und dann **sichere ATP-Anlagen** aus.
-1. Wählen Sie die Regel für sichere Anlagen aus, und klicken Sie dann auf das Symbol **Bearbeiten** .
-1. Wählen Sie **Einstellungen** aus, und stellen Sie sicher, dass der Block ausgewählt ist.
-1. Scrollen Sie nach unten. Wählen Sie **Umleitung aktivieren** aus, und geben Sie Ihre e-Mail-Adresse oder die Adresse der Person ein, die die blockierten Anlagen überprüfen soll.
-1. Wählen Sie **angewendet auf** aus, und wählen Sie dann Ihren Domänennamen aus.
-1. Wählen Sie alle zusätzlichen Domänen aus, die Sie besitzen (beispielsweise Ihre onmicrosoft.com-Domäne), auf die die Regel angewendet werden soll. Klicken Sie auf **Hinzufügen** und dann auf **OK**.
+1. Wechseln Sie zum [Admin Center,](https://admin.microsoft.com)und wählen Sie **Setup aus.**
+1. Scrollen Sie nach unten, **um den Schutz vor erweiterten Bedrohungen zu erhöhen.** Wählen **Sie "Ansicht",** **"Verwalten"** und dann **"ATP-sichere Anlagen" aus.**
+1. Wählen Sie ihre Regel für sichere Anlagen aus, und wählen Sie dann das Symbol **"Bearbeiten"** aus.
+1. Wählen Sie **Einstellungen** aus, und stellen Sie dann sicher, dass "Blockieren" ausgewählt ist.
+1. Scrollen Sie nach unten. Wählen **Sie "Umleitung aktivieren"** aus, und geben Sie Ihre E-Mail-Adresse oder die Adresse der Person ein, die die blockierten Anlagen überprüfen soll.
+1. Wählen **Sie "Angewendet auf"** und dann Ihren Domänennamen aus.
+1. Wählen Sie alle zusätzlichen Domänen aus, die Sie besitzen (z. B. Onmicrosoft.com Domäne), auf die die Regel angewendet werden soll. Wählen Sie **"Hinzufügen"** und dann **"OK" aus.**
 1. Klicken Sie auf **Speichern**.
 
-Ihre Regel für ATP-sichere Anlagen wurde aktualisiert.
+Die Regel für atP-sichere Anlagen wurde aktualisiert.
 
-Da dieser Schutz nun vorhanden ist, können Sie keine Schadsoftware in Outlook, OneDrive, SharePoint oder Microsoft Teams öffnen. Neben den betroffenen Dateien befinden sich rote Schilde. Wenn ein Benutzer versucht, eine blockierte Datei zu öffnen, wird eine Warnmeldung angezeigt.
+Nachdem der Schutz nun besteht, können Sie keine schädliche Datei aus Outlook, OneDrive, SharePoint oder Teams öffnen. Betroffene Dateien haben rote Schilde neben ihnen. Wenn jemand versucht, eine blockierte Datei zu öffnen, wird eine Warnmeldung angezeigt.
 
-Nachdem Ihre Richtlinie für eine Weile eingerichtet wurde, besuchen Sie die Seite Berichte, um zu sehen, was gescannt wurde.
+Nachdem Ihre Richtlinie eine Weile in Der Organisation war, besuchen Sie die Seite "Berichte", um zu sehen, was überprüft wurde.

@@ -1,6 +1,6 @@
 ---
-title: Tool für die Bereitschaftsbewertung
-description: Erläutert die Vom Tool ausgeführten Prüfungen und die Bedeutung der Ergebnisse
+title: Tools zur Bewertung der Bereitschaft
+description: Erläutert die beiden Tools, die ausgeführten Prüfungen und die Bedeutung der Ergebnisse.
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,20 +9,26 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9c19a037ec280320d0800fe2c65f595e4b1010dd
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 9fbd24185288265d698288e0d5e63e8b3c2afd10
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840361"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921846"
 ---
-# <a name="readiness-assessment-tool"></a>Tool für die Bereitschaftsbewertung
+# <a name="readiness-assessment-tools"></a>Tools zur Bewertung der Bereitschaft
 
-Für eine möglichst reibungslose Benutzererfahrung bei der Registrierung bei Microsoft Managed Desktop gibt es wichtige Einstellungen und andere Parameter, die Sie im Voraus festlegen müssen. Sie können dieses Tool verwenden, um diese Einstellungen zu überprüfen und detaillierte Schritte zum Beheben nicht richtiger Probleme zu erhalten.
+Für eine möglichst reibungslose Benutzererfahrung bei der Registrierung bei Microsoft Managed Desktop gibt es Einstellungen und andere Parameter, die Sie im Voraus festlegen müssen, sowie bestimmte Geräte- und Netzwerkanforderungen, die erfüllt werden müssen. Ein Tool, auf das über das Microsoft Managed Desktop Admin Portal zugegriffen wird, überprüft verwaltungsbezogene Einstellungen. Ein weiteres Tool, das heruntergeladen werden kann, überprüft die individuellen Geräteanforderungen und Netzwerkeinstellungen. Sie können diese Tools verwenden, um diese Einstellungen zu überprüfen und detaillierte Schritte zum Beheben nicht richtiger Informationen zu erhalten.
 
-Das Tool überprüft Einstellungen in Microsoft Endpoint Manager (insbesondere Microsoft Intune), Azure Active Directory (Azure AD) und Microsoft 365, um sicherzustellen, dass sie mit Microsoft Managed Desktop funktionieren. Microsoft Managed Desktop bewahrt die daten, die diesen Überprüfungen zugeordnet sind, 12 Monate nach dem letzten Ausführen einer Überprüfung in Ihrer Azure AD-Organisation (Mandant) auf. Nach 12 Monaten behalten wir sie in nicht identifizierter Form bei.  Sie können die gesammelten Daten löschen.
+## <a name="downloadable-readiness-assessment-checker-for-devices-and-network"></a>Herunterladbare Überprüfung der Bereitschaftsbewertung für Geräte und Netzwerke
 
-Jeder Benutzer, der mindestens die Rolle des Intune-Administrators hat, kann dieses Tool ausführen, aber zwei der Prüfungen[(](readiness-assessment-fix.md#conditional-access-policies) Richtlinien für bedingten Zugriff und mehrstufige Authentifizierung [erfordern](readiness-assessment-fix.md#multifactor-authentication) mehr Berechtigungen.
+Weitere Informationen zur Verwendung der herunterladbaren Überprüfung der Bereitschaftsbewertung finden Sie unter "Überprüfung der Herunterladbaren [Bereitschaftsbewertung".](readiness-assessment-downloadable.md)
+
+## <a name="online-readiness-assessment-tool-for-management-settings"></a>Tool für die Onlinebereitschaftsbewertung für Verwaltungseinstellungen
+
+Das Onlinetool überprüft einstellungen in Microsoft Endpoint Manager (insbesondere Microsoft Intune), Azure Active Directory (Azure AD) und Microsoft 365, um sicherzustellen, dass sie mit Microsoft Managed Desktop funktionieren. Microsoft Managed Desktop bewahrt die daten, die diesen Überprüfungen zugeordnet sind, 12 Monate nach dem letzten Ausführen einer Überprüfung in Ihrer Azure AD-Organisation (Mandant) auf. Nach 12 Monaten behalten wir sie in nicht identifizierter Form bei. Sie können die gesammelten Daten löschen.
+
+Dieses Tool kann von allen Benutzern mit mindestens der Rolle "Intune-Administrator" ausgeführt werden, aber zwei der Prüfungen[(](readiness-assessment-fix.md#conditional-access-policies) Richtlinien für bedingten Zugriff und mehrstufige Authentifizierung [erfordern](readiness-assessment-fix.md#multifactor-authentication) zusätzliche Berechtigungen.
  
 Das Bewertungstool überprüft diese Elemente:
 
@@ -52,14 +58,14 @@ Das Bewertungstool überprüft diese Elemente:
 
 |Scheck  |Beschreibung  |
 |---------|---------|
-|Ad-hoc-Abonnements für Enterprise State Roaming     | Empfiehlt, eine Einstellung zu überprüfen, die (bei Festlegung auf "false") möglicherweise verhindert, dass Enterprise State Roaming ordnungsgemäß funktioniert.  |
+|"Ad hoc"-Abonnements für Enterprise State Roaming     | Empfiehlt, eine Einstellung zu überprüfen, die (bei Festlegung auf "false") möglicherweise verhindert, dass Enterprise State Roaming ordnungsgemäß funktioniert.  |
 |Enterprise State Roaming     | Empfiehlt, zu überprüfen, ob Enterprise State Roaming aktiviert ist.       |
 |Lizenzen     | Überprüft, ob Sie die erforderlichen Lizenzen [erhalten haben](prerequisites.md#more-about-licenses)         |
 |Mehrstufige Authentifizierung     | Überprüft, ob die mehrstufige Authentifizierung nicht auf alle Benutzer angewendet wird (die mehrstufige Authentifizierung darf nicht versehentlich auf Microsoft Managed Desktop-Dienstkonten angewendet werden.)|
 |Namen von Sicherheitskontos   | Überprüft, ob keine Benutzernamen mit denen in Konflikt stehen, die Microsoft Managed Desktop für die eigene Verwendung reserviert.        |
 |Sicherheitsadministratorrollen     | Überprüft, ob Benutzern mit Rollen "Sicherheitsleseprogramm", "Sicherheitsoperator" oder "Globaler Leser" diese Rollen in Microsoft Defender for Endpoint zugewiesen wurden.         |
 |Sicherheitsstandards | Überprüft, ob in Ihrer Azure AD-Organisation Sicherheitseinstellungen in Azure Active Directory aktiviert sind. |
-|Zurücksetzen von Kennwörtern durch den Benutzer     | Überprüft, ob die Self-Service-Kennwortzurücksetzung aktiviert ist.        |
+|Zurücksetzen von Kennwörtern durch den Benutzer     | Überprüft, ob die Self-Service-Kennwortzurücksetzung aktiviert ist        |
 |Standardbenutzerrolle     | Überprüft, ob Benutzer Standardbenutzer sind und nicht über lokale Administratorrechte verfügen         |
 
 

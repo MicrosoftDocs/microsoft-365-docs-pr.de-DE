@@ -1,9 +1,9 @@
 ---
-title: Beheben von Problemen mit Microsoft 365 Defender-Diensten
-description: Suchen von Lösungen und umgehen mit bekannten Problemen mit Microsoft 365 Defender
-keywords: Problembehandlung beim Microsoft-Bedrohungsschutz, Problembehandlung, Azure ATP, Probleme, Add-on, Seite "Einstellungen"
+title: Behandeln von Problemen mit dem Microsoft 365 Defender-Dienst
+description: Suchen von Lösungen und Arbeiten mit bekannten Microsoft 365 Defender-Problemen
+keywords: Problembehandlung bei Microsoft Threat Protection, Problembehandlung, Azure ATP, Probleme, Add-On, Einstellungsseite
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b7b6ea55d084c114b79dfee0e061b09c8ede8632
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: m365d
+ms.openlocfilehash: 414743fa5ba25b9d2714c1dd08dd38e34ec94372
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760458"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925718"
 ---
-# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Beheben von Problemen mit Microsoft 365 Defender-Diensten
+# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Behandeln von Problemen mit dem Microsoft 365 Defender-Dienst
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,20 +35,20 @@ ms.locfileid: "49760458"
 **Gilt für:**
 - Microsoft 365 Defender
 
-In diesem Abschnitt werden Probleme behandelt, die bei der Verwendung des Microsoft 365 Defender-Diensts auftreten können.
+In diesem Abschnitt werden Probleme behandelt, die auftreten können, wenn Sie den Microsoft 365 Defender-Dienst verwenden.
 
-## <a name="i-dont-see-microsoft-365-defender-content"></a>Microsoft 365 Defender-Inhalt wird nicht angezeigt
+## <a name="i-dont-see-microsoft-365-defender-content"></a>Microsoft 365 -Defender-Inhalte werden nicht angezeigt
 
-Wenn im Navigationsbereich keine Funktionen wie die Vorfälle, das Wartungs Center oder die Suche in Ihrem Portal angezeigt werden, müssen Sie sicherstellen, dass Ihr Mandant über die entsprechenden Lizenzen verfügt.
+Wenn im Navigationsbereich keine Funktionen wie Vorfälle, Das Aktionscenter oder die Suche in Ihrem Portal angezeigt werden, müssen Sie überprüfen, ob Ihr Mandant über die entsprechenden Lizenzen verfügt.
 
 Weitere Informationen finden Sie unter [Voraussetzungen](prerequisites.md).
 
-## <a name="microsoft-defender-for-identity-alerts-are-not-showing-up-in-the-microsoft-365-defender-incidents"></a>Microsoft Defender für Identitäts Warnungen wird nicht in den Microsoft 365 Defender-Vorfällen angezeigt
+## <a name="microsoft-defender-for-identity-alerts-are-not-showing-up-in-the-microsoft-365-defender-incidents"></a>Microsoft Defender for Identity-Warnungen werden in den Microsoft 365 Defender-Vorfällen nicht angezeigt
 
-Wenn Sie Microsoft Defender for Identity in Ihrer Umgebung bereitgestellt haben, aber Defender für Identitäts Warnungen als Teil von Microsoft 365 Defender-Vorfällen nicht angezeigt wird, müssen Sie sicherstellen, dass die Microsoft Cloud App Security and Defender for Identity Integration aktiviert ist.
+Wenn Sie Microsoft Defender for Identity in Ihrer Umgebung bereitgestellt haben, aber im Rahmen von Microsoft 365 Defender-Vorfällen keine Defender for Identity-Warnungen angezeigt werden, müssen Sie sicherstellen, dass die Integration von Microsoft Cloud App Security und Defender for Identity aktiviert ist.
 
 Weitere Informationen finden Sie unter [Microsoft Defender for Identity Integration](https://docs.microsoft.com/cloud-app-security/mdi-integration).
 
-## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>Wo befindet sich die Seite "Einstellungen" für die Aktivierung des Diensts?
+## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>Wo befindet sich die Einstellungsseite zum Aktivieren des Diensts?
 
-Um Microsoft 365 Defender zu aktivieren, greifen Sie auf **Einstellungen** im Navigationsbereich im Microsoft 365 Security Center zu. Dieses Navigationselement ist nur sichtbar, wenn Sie über die [erforderlichen Berechtigungen und Lizenzen](mtp-enable.md#check-license-eligibility-and-required-permissions)verfügen.
+Um Microsoft 365 Defender  zu aktivieren, greifen Sie über den Navigationsbereich im Microsoft 365 Security Center auf die Einstellungen zu. Dieses Navigationselement ist nur sichtbar, wenn Sie über die erforderlichen [Berechtigungen und Lizenzen verfügen.](mtp-enable.md#check-license-eligibility-and-required-permissions)

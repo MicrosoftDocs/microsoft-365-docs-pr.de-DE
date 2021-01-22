@@ -1,5 +1,5 @@
 ---
-title: Hilfe oder Support erhalten
+title: Anfordern von Hilfe oder Support
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,58 +16,59 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie Administratorhilfe oder Support in Microsoft 365 Business Premium erhalten.
-ms.openlocfilehash: f33778c5c8b8ebfe71bd7acc6d203327a2fd7e94
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Erfahren Sie, wie Sie Hilfe oder Support für Administratoren in Microsoft 365 Business Premium erhalten.
+ms.openlocfilehash: bcfe140ec87b50048db570ad4efe4575135b3191
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702250"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927166"
 ---
-# <a name="get-help-or-support"></a>Hilfe oder Support erhalten
+# <a name="get-help-or-support"></a>Anfordern von Hilfe oder Support
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
-Sie müssen sofort mit jemandem sprechen? Administratoren haben Ihre Kontodetails beim Anruf des Supports parat.
+Sie müssen sofort mit einer Person sprechen? Administratoren können Ihre Kontodetails bereit haben, wenn Sie den Support anrufen.
 
-Sie sind kein Administrator? Testen Sie den [Microsoft-Support](https://go.microsoft.com/fwlink/?linkid=860695) für private und geschäftliche Endbenutzer.
+Sie sind kein Administrator? Testen [Sie den Microsoft-Support](https://go.microsoft.com/fwlink/?linkid=860695) für Heim- und Geschäfts-Endbenutzer.
 
-- **Rufen Sie in den Vereinigten Staaten 1 800 865 9408 auf**.
-- **Rufen Sie in Australien 1 800 197 503**.
-- **Rufen Sie in Kanada 1 800 865 9408**.
-- **Rufen Sie in Großbritannien 0800 032 6417**.
+- **Rufen Sie in den USA 1 800 865 9408 an.**
+- **In Australien, call 1 800 197 503**.
+- **In Kanada, call 1 800 865 9408**.
+- **Rufen Sie im Vereinigten Königreich 0800 032 6417 an.**
 
-Der Abrechnungssupport wird in Englisch von 9.00 bis 17.00 Uhr (9.00 – 18.00 Uhr in Australien), Montag – Freitag, bereitgestellt.
+Abrechnungssupport wird montags bis freitags von 09:00 bis 17:00 Uhr (9:00–18:00 Uhr in Australien) in Englisch bereitgestellt.
 Technischer Support wird in Englisch 24 Stunden am Tag, 7 Tage die Woche geboten.
 
-Informationen zur Microsoft 365-oder Microsoft 365 Business Premium-Support-Telefonnummer für Ihr Land oder Ihre Region finden Sie unter [kontaktieren des Supports für Business-Produkte](https://support.microsoft.com/office/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+Informationen zur Microsoft 365- oder Microsoft 365 Business Premium-Supporttelefonnummer für Ihr Land oder Ihre Region finden Sie unter Kontaktieren des Support [für Geschäftsprodukte.](https://support.microsoft.com/office/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-In Microsoft 365 Business Premium gibt es mehrere Möglichkeiten, Hilfe oder Unterstützung zu erhalten. Hilfe finden Sie im Microsoft Admin Center, in einem Microsoft Store oder von einem Microsoft-Lösungsanbieter.
+In Microsoft 365 Business Premium gibt es mehrere Möglichkeiten, Hilfe oder Hilfe zu erhalten. Hilfe finden Sie im Microsoft Admin Center, in einem Microsoft Store oder bei einem Microsoft-Lösungsanbieter.
 
 ### <a name="get-help-in-the-admin-center"></a>Hilfe im Admin Center erhalten
 
-1. Melden Sie sich mit Ihren geschäftlichen Anmeldeinformationen bei [Office.com](https://office.com) an, und wählen Sie admin aus.
-1. Klicken Sie unten auf der Seite auf **Hilfe benötigen?** , um den Support-Assistenten zu öffnen.
-1. Geben Sie Ihre Frage ein, und wählen Sie dann das Symbol " **Nachricht senden** " aus.
-1. Überprüfen Sie die Ergebnisse, und wählen Sie die gewünschte Option aus.
-1. Wenn Sie weitere Hilfe benötigen, wählen Sie das **Kontakt** Symbol aus.
-1. Geben Sie auf der Seite **Kontakt Support** Informationen zu Ihrer Frage ein, und geben Sie dann Ihre Kontaktinformationen ein. Wählen Sie aus, wie Sie kontaktiert werden möchten, und wählen Sie dann **Kontakt mit mir** aus.
+1. Melden Sie sich bei [office.com](https://office.com) mit Ihren Anmeldeinformationen an, und wählen Sie "Administrator" aus.
+1. Wählen Sie unten auf der Seite **"Benötigen Sie Hilfe?"** aus, um den Supportassistenten zu öffnen.
+1. Geben Sie Ihre Frage ein, und wählen Sie dann das Symbol "Nachricht **senden"** aus.
+1. Überprüfen Sie die Ergebnisse, und wählen Sie die option aus.
+1. Wenn Sie weitere Hilfe benötigen, wählen Sie das **Kontaktsymbol** aus.
+1. Geben Sie **auf der Seite "Support kontaktieren"** Informationen zu Ihrer Frage ein, und geben Sie dann Ihre Kontaktinformationen ein. Wählen Sie aus, wie Sie kontaktiert werden sollen, und wählen Sie dann **"Kontakt" aus.**
 
-    Ihre Dienstanforderung wurde gesendet. Eine Zusammenfassung Ihrer Anforderung finden Sie auf der Seite **Service Anforderung** .
+    Ihre Serviceanfrage wurde gesendet. Auf der Seite "Serviceanfrage" wird eine Zusammenfassung **Ihrer Anforderung** angezeigt.
 
 ### <a name="work-with-a-solution-provider"></a>Arbeiten mit einem Lösungsanbieter
 
-1. Wenn Sie ein größeres Projekt oder Problem haben und mit einem Berater sprechen möchten, wenden Sie sich an einen Microsoft Solution Provider.
-1. Um einen Lösungsanbieter zu finden, suchen Sie in Ihrem Browser nach "Microsoft Solution Providers".
-1. Wählen Sie die Seite **Microsoft Solution Provider** s aus.
-1. Geben Sie Ihren Standort, die Größe Ihrer Organisation und die Art der Unterstützung ein, nach der Sie suchen. Wählen Sie **go** aus.
-1. Wählen Sie auf der Seite **Microsoft Solution Provider suchen** den gewünschten Lösungsanbieter aus der Liste aus.
+1. Wenn Sie ein größeres Projekt oder Problem haben und mit einem Berater sprechen möchten, erwägen Sie einen Microsoft-Lösungsanbieter.
+1. Um einen Lösungsanbieter zu finden, suchen Sie in Ihrem Browser nach "Microsoft-Lösungsanbieter".
+1. Wählen Sie die **Seite des Microsoft-Lösungsanbieters** aus.
+1. Geben Sie Ihren Standort, die Größe Ihrer Organisation und den Supporttyp ein, den Sie suchen. Select **Go**.
+1. Wählen Sie **auf der Seite "Microsoft-Lösungsanbieter** suchen" den lösungsanbieter aus der Liste aus.
 
-    Der von Ihnen ausgewählte Dienstanbieter wird Sie kontaktieren.
+    Der Dienstanbieter, den Sie auswählen, kontaktiert Sie.

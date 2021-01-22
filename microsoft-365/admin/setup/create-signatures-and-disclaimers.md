@@ -18,33 +18,34 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-may2020
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: Informationen zum Verwalten von e-Mail-Signaturen, einschließlich rechtlicher Haftungsausschlüssen oder Offenlegungserklärungen für alle e-Mail-Nachrichten, die Ihre Organisation betreten oder verlassen.
-ms.openlocfilehash: 9e438b42eb95dced4c3b99d21c66011365b180c9
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+description: Erfahren Sie, wie Sie E-Mail-Signaturen verwalten, einschließlich rechtlicher Haftungsausschlüsse oder Offenlegungserklärungen für alle E-Mail-Nachrichten, die in Ihre Organisation ein- oder aus ihrer Organisation gehen.
+ms.openlocfilehash: c8d63a11a75b9b53de9cabdf1f4baabc61cc3e42
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906501"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926918"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Erstellen von organisationsweiten Signaturen und Haftungsausschlüssen
 
- Sie können e-Mail-Signaturen verwalten, indem Sie e-Mail-Nachrichten, die Ihre Organisation betreten oder verlassen, eine e-Mail-Signatur, einen rechtlichen Haftungsausschluss oder eine Offenlegungserklärung Sie können es so einrichten, dass es auf alle eingehenden und ausgehenden Nachrichten angewendet wird, wie unten dargestellt. Sie können es auch auf bestimmte Nachrichten anwenden, wie die, die bestimmte Wörter oder Textmuster enthalten.
+ Sie können E-Mail-Signaturen verwalten, indem Sie eine E-Mail-Signatur, einen Haftungsausschluss oder eine Offenlegungserklärung zu den E-Mail-Nachrichten hinzufügen, die in Ihre Organisation ein- oder austritten. Sie können sie so einrichten, dass sie auf alle eingehenden und ausgehenden Nachrichten angewendet wird, wie unten dargestellt. Sie können es auch auf bestimmte Nachrichten anwenden, z. B. nachrichten, die bestimmte Wörter oder Textmuster enthalten.
 
- Sehen Sie sich ein kurzes Video über die Erstellung einer unternehmensweiten e-Mail-Signatur an. <br><br>
+ Sehen Sie sich ein kurzes Video zum Erstellen einer unternehmensweiten E-Mail-Signatur an. <br><br>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Erstellen einer Signatur, die auf alle Nachrichten angewendet wird
 
 > [!TIP]
-> Organisationsweite Signaturen werden als "Haftungsausschlüsse" bezeichnet, unabhängig davon, was diese enthalten. Sie können beispielsweise lediglich eine Signatur sein oder auch Ihre Adresse, den rechtlichen Haftungsausschluss oder andere Informationen, die Sie verwenden möchten.
+> Organisationsweite Signaturen werden als "Haftungsausschlüsse" bezeichnet, unabhängig davon, was sie enthalten. Sie können z. B. nur eine Signatur sein oder auch Ihre Adresse, den Haftungsausschluss oder andere Informationen enthalten, die Sie wünschen.
     
 ::: moniker range="o365-worldwide"
 
@@ -64,33 +65,33 @@ Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?
 
 ::: moniker-end
 
-1. Wählen Sie das App- ![ Startfeld aus ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) , und wählen Sie dann **Admin** aus.
+1. Select the app launcher ![ The app launcher ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) icon, and then select **Admin**.
    
-    Sie können die gesuchte App nicht finden? Wählen Sie im App-Startfeld **alle apps** aus, um eine alphabetische Liste der apps anzuzeigen, die Ihnen zur Verfügung stehen. Hier können Sie nach einer bestimmten App suchen. 
+    Sie können die gesuchte App nicht finden? Wählen Sie im Startfeld der App alle **Apps** aus, um eine alphabetische Liste der verfügbaren Apps zu erhalten. Hier können Sie nach einer bestimmten App suchen. 
     
-2. Wählen Sie **Admin Center** aus, und wählen Sie dann **Exchange** aus.
+2. Wählen **Sie Admin Center** und dann Exchange **aus.**
     
-3. Wählen Sie unter Nachrichtenfluss die Option **Regeln** aus.
+3. Wählen Sie unter "Nachrichtenfluss" die **Option "Regeln" aus.**
     
-4. Wählen Sie das **+** Symbol (hinzufügen) aus, und wählen Sie **Haftungsausschlüsse anwenden** aus.
+4. Wählen Sie das **+** Symbol (Hinzufügen) und **Haftungsausschlüsse anwenden aus.**
     
 5. Benennen Sie die Regel.
     
-6. Wählen Sie unter **diese Regel anwenden** **die Option [für alle Nachrichten anwenden]** aus.
+6. Wählen **Sie unter "Diese Regel anwenden"** **die Option [Auf alle Nachrichten anwenden] aus.**
     
     > [!TIP]
-    > [Erfahren Sie mehr](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) zum Anwenden von Bedingungen, wenn der Haftungsausschluss nicht auf alle Nachrichten angewendet werden soll. (Dieser Bereichs Übersichtsartikel ist für Exchange Server, gilt aber auch für Microsoft 365.) 
+    > [Erfahren Sie mehr](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) zum Anwenden von Bedingungen, wenn der Haftungsausschluss nicht auf alle Nachrichten angewendet werden soll. (Dieser Artikel zum Thema Exchange Server gilt jedoch auch für Microsoft 365.) 
   
 7. Lassen Sie unter "Folgendes ausführen" die Option **Haftungsausschluss anfügen** ausgewählt. 
     
-8.  Wählen Sie **Text eingeben** aus, und geben Sie Ihren Haftungsausschluss ein. 
+8.  Wählen **Sie "Text eingeben"** aus, und geben Sie ihren Haftungsausschluss ein. 
     
     > [!TIP]
-    > [Erfahren Sie mehr](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) zum Formatieren von Haftungsausschlüssen. (Dieser Formatierungs Artikel ist für Exchange Server, gilt aber auch für Microsoft 365.) 
+    > [Erfahren Sie mehr](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) zum Formatieren von Haftungsausschlüssen. (Dieser Formatierungsartikel ist für Exchange Server, gilt aber auch für Microsoft 365.) 
 
-9. Wählen Sie **einen auswählen** aus, und wählen Sie **umbrechen** als Fallback Option aus. Klicken Sie dann auf **OK**. Dies bedeutet: Wenn der Haftungsausschluss wegen Verschlüsselung oder einer anderen E-Mail-Einstellung nicht hinzugefügt werden kann, wird er in einen Nachrichtenumschlag eingeschlossen.
+9. Wählen **Sie eine Option aus,** und wählen Sie **"Umbruch** als Ausweichoption" aus. Klicken Sie dann auf **OK**. Dies bedeutet: Wenn der Haftungsausschluss wegen Verschlüsselung oder einer anderen E-Mail-Einstellung nicht hinzugefügt werden kann, wird er in einen Nachrichtenumschlag eingeschlossen.
     
-10. Lassen Sie **Diese Regel mit Schweregrad überwachen** aktiviert. Wählen Sie dann einen der Werte **Niedrig** , **Mittel** oder **Hoch** aus, der im Nachrichtenprotokoll verwendet werden soll. 
+10. Lassen Sie **Diese Regel mit Schweregrad überwachen** aktiviert. Wählen Sie dann einen der Werte **Niedrig**, **Mittel** oder **Hoch** aus, der im Nachrichtenprotokoll verwendet werden soll. 
     
 11. Wählen Sie **Erzwingen** aus, um den Haftungsausschluss sofort zu aktivieren, wenn Sie ihn nicht zuerst testen möchten. 
     
@@ -100,18 +101,18 @@ Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?
     
 ## <a name="limitations-of-organization-wide-signatures"></a>Einschränkungen von organisationsweiten Signaturen
 
-Beim Verwalten von e-Mail-Signaturen in Microsoft 365 können Sie Folgendes nicht ausführen:
+Folgende Schritte sind beim Verwalten von E-Mail-Signaturen in Microsoft 365 nicht verfügbar:
   
-- Einfügen der Signatur direkt unter der letzten e-Mail-Antwort oder Weiterleitung
+- Einfügen der Signatur direkt unter der neuesten E-Mail-Antwort oder Weiterleitung
     
-- Anzeigen von serverseitigen e-Mail-Signaturen im Ordner "Gesendete Elemente" der Benutzer
+- Anzeigen serverseitiger E-Mail-Signaturen in den Ordnern "Gesendete Elemente" von Benutzern
     
-- Einbetten von Bildern in e-Mail-Signaturen
+- Einbetten von Bildern in E-Mail-Signaturen
     
-- Zeilen überspringen, die Variablen enthalten, die nicht aktualisiert werden konnten (beispielsweise, weil der Wert für einen Benutzer nicht angegeben wurde)
+- Zeilen überspringen, die Variablen enthalten, die nicht aktualisiert werden konnten (z. B. weil der Wert nicht für einen Benutzer bereitgestellt wurde)
     
-Um diese und andere Funktionen zum Verwalten von e-Mail-Signaturen zu erhalten, verwenden Sie ein Drittanbietertool. Führen Sie eine Internetsuche für die **e-Mail-Signatur Software** aus. Eine Reihe dieser Anbieter sind Microsoft Gold-Partner, deren Software diese Funktionen bereitstellt. 
+Um diese und andere Funktionen zum Verwalten von E-Mail-Signaturen zu erhalten, verwenden Sie ein Drittanbietertool. Bitte suchen Sie im Internet nach **E-Mail-Signatursoftware.** Eine Reihe dieser Anbieter sind Microsoft Gold Partner, und ihre Software bietet diese Funktionen. 
   
 ## <a name="more-resources"></a>Weitere Ressourcen
 
-- Informationen zur Verwendung von PowerShell finden Sie unter [organisationsweite Nachrichten Haftungsausschlüsse, Signaturen, Fußzeilen oder Kopfzeilen in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) .
+- Informationen zur Verwendung von PowerShell finden Sie unter Organisationsweite [Haftungsausschlüsse, Signaturen,](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) Fußzeilen oder Kopfzeilen in Exchange Online.

@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Ihre Domäne mit Microsoft 365 verbinden.
-ms.openlocfilehash: c7827b93b56560579b31bd2abb5a852467565103
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 1bec66a43026321ddf1979c73902a533bee3a07b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794642"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925110"
 ---
 # <a name="connect-your-domain-to-microsoft-365-for-business"></a>Verbinden Ihrer Domäne mit Microsoft 365 Business
 
@@ -43,12 +44,12 @@ Zuerst müssen Sie vorhandene DNS-Einträge aus Google löschen, dann können wi
 1. Scrollen Sie nach unten zu **synthetischen Datensätzen,** öffnen **Sie Google Workspace,** wählen **Sie "Löschen"** und **dann** erneut "Löschen" aus.
 1. Scrollen Sie nach unten zu **benutzerdefinierten** Ressourceneinträgen, und löschen Sie alle vorhandenen DNS-Einträge, die angezeigt werden, einschließlich aller, die Sie möglicherweise zuvor für Microsoft 365 erstellt haben.
 1. Wechseln Sie zum [Microsoft 365 Admin Center.](https://admin.microsoft.com)
-1. Wählen Sie im linken Navigations navig, **Alle anzeigen**, **Einstellungen**, **Domänen**.
+1. In the left nav, choose, **Show all**, **Settings**, **Domains**.
 1. Wählen Sie dann Ihre Standarddomäne aus.
 1. Select **Continue setup**, then, to connect your domain, choose  **Continue**.
 1. Scrollen Sie nach unten, um die DNS-Einträge, die nach Google kopiert werden müssen, zu sehen.
 1. Öffnen **Sie MX-Einträge,** und kopieren Sie den Eintrag unter "Verweist auf **Adresse"** oder "Wert".
-1. Kehren Sie zu Google zurück, und öffnen Sie im Abschnitt **"Benutzerdefinierte** Ressourceneinträge" das Eintragstypdropdown, und wählen Sie **MX aus.**
+1. Kehren Sie zu Google zurück, und öffnen Sie im Abschnitt **"Benutzerdefinierte Ressourceneinträge"** das Eintragstypdropdown, und wählen Sie **MX aus.**
 1. Fügen Sie **in das Feld "Daten"** den kopierten Datensatz ein.
 1. Wählen Sie dann **Hinzufügen** aus.
 1. Wiederholen Sie den Vorgang für CNAME- und TXT-Einträge, und fügen Sie die Werte auf der Google #A0 hinzu.

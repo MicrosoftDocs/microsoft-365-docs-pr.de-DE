@@ -1,5 +1,5 @@
 ---
-title: Aktualisieren der Zahlungsmethode
+title: Aktualisieren Ihrer Zahlungsmethode
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,20 +16,21 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie Ihre Zahlungsmethode für Microsoft 365 for Business aktualisieren.
-ms.openlocfilehash: a7424b4d104b83921f46024a1493444c9de547d1
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Erfahren Sie, wie Sie Ihre Zahlungsmethode für Microsoft 365 Business aktualisieren.
+ms.openlocfilehash: b29aea838e2682035ac56ef31291a5628854df79
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702011"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925862"
 ---
-# <a name="update-yor-payment-method-for-your-subscription"></a>Aktualisieren Ihrer Zahlungsmethode für Ihr Abonnement
+# <a name="update-yor-payment-method-for-your-subscription"></a>Aktualisieren der Yor-Zahlungsmethode für Ihr Abonnement
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 
@@ -38,13 +39,13 @@ Sie können die Zahlungsmethode für Ihr Microsoft 365 Business-Abonnement ganz 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an.
-1. Wählen Sie **Abrechnung** und dann **Zahlungsmethoden** aus. Sie sehen alle Kreditkarten, die Sie in der Datei haben.
+1. Wählen Sie **"Abrechnung"** und dann **"Zahlungsmethoden" aus.** Es werden alle Kreditkarten angezeigt, die Sie in der Datei haben.
 1. So bearbeiten Sie eine vorhandene Karte:
-    1. Wählen Sie die drei Punkte neben der Karte aus, und wählen Sie **Zahlungsmethode bearbeiten** aus.
+    1. Wählen Sie die drei Punkte neben der Karte aus, und wählen Sie **"Zahlungsmethode bearbeiten" aus.**
     1. Geben Sie den Sicherheitscode für Ihre Karte ein.
     1. Sie können das Ablaufdatum, den Namen auf der Karte und andere Details ändern.
-    1. Wenn Sie die Änderungen abgeschlossen haben, wählen Sie **Speichern** aus.
+    1. Wenn Sie ihre Änderungen abgeschlossen haben, wählen Sie **"Speichern" aus.**
 1. So fügen Sie eine neue Karte hinzu:
     1. Wählen Sie **Zahlungsmethode hinzufügen** aus.
-    1. Wählen Sie in der Dropdownliste **Zahlungsmethode auswählen** die Zahlungsmethode aus, die Sie verwenden möchten.
-    1. Geben Sie die Kartendetails ein, und wählen Sie **Hinzufügen** aus.
+    1. Wählen Sie in der Dropdownliste  "Zahlungsmethode auswählen" die Zahlungsmethode aus, die Sie verwenden möchten.
+    1. Geben Sie die Kartendetails ein, und wählen Sie **"Hinzufügen" aus.**

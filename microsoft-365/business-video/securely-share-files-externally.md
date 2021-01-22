@@ -16,31 +16,32 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Ihre Geschäftsdateien sicher extern freigeben.
-ms.openlocfilehash: 2ffb9067b73daad8591f6563640ca95ac4c8724b
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: c2e611d6a6fc6fb239302d2b9d4960471cd5f707
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702382"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925982"
 ---
-# <a name="securely-share-files-externally"></a>Sicheres Freigeben von Dateien extern
+# <a name="securely-share-files-externally"></a>Sicheres Freigeben von Dateien für Personen außerhalb Ihrer Organisation
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0?autoplay=false]
 
-In Microsoft 365 for Business ist es ganz einfach, Dateien für Personen in Ihrer Organisation freizugeben, aber manchmal müssen Sie auch für Personen außerhalb Ihrer Organisation freigeben. Wenn Sie Dateien sicher mit ihren Kunden teilen möchten, können Sie einen sicheren Link senden.
+In Microsoft 365 Business ist es einfach, Dateien für Personen in Ihrer Organisation zu teilen, aber manchmal müssen Sie sie auch für Personen außerhalb Ihrer Organisation freigeben. Um Dateien sicher für Ihre Kunden zu teilen, können Sie einen sicheren Link senden.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Klicken Sie oben in der Dokumentbibliothek auf Ihrer SharePoint-Website auf **neu**, und wählen Sie dann **Ordner** aus.
+1. Klicken Sie oben in der Dokumentbibliothek auf Ihrer SharePoint-Website auf **"Neu",** und wählen Sie dann **"Ordner" aus.**
 1. Geben Sie dem Ordner einen Namen, und klicken Sie dann auf **Erstellen**.
-1. Laden Sie die Dateien, die Sie freigeben möchten, in die neue Bibliothek hoch, oder wählen Sie **neu** , um neue Dokumente direkt in der Bibliothek zu erstellen.
-1. Wählen Sie Ihren neuen Ordner in der Dokumentbibliothek aus, und klicken Sie dann auf die Schaltfläche **Freigeben** .
-1. Klicken Sie im Fenster **Link senden** auf die Liste oben, wählen Sie **bestimmte Personen** aus, wählen Sie **Bearbeitung zulassen** aus, und klicken Sie dann auf über **nehmen**.
-1. Geben Sie im Fenster **Link senden** die e-Mail-Adresse des Kunden ein, geben Sie eine Nachricht ein, und wählen Sie **senden** aus.
+1. Laden Sie die Dateien, die Sie freigeben möchten, in die neue Bibliothek hoch, oder wählen Sie **"Neu"** aus, um neue Dokumente direkt in der Bibliothek zu erstellen.
+1. Wählen Sie ihren neuen Ordner in der Dokumentbibliothek aus, und klicken Sie dann auf die Schaltfläche **"Freigeben".**
+1. Klicken Sie **im Fenster "Link** senden" oben auf die Liste, wählen Sie **"Bestimmte** Personen", "Bearbeitung **zulassen"** und dann "Übernehmen" **aus.**
+1. Geben Sie **im Fenster "Link senden"** die E-Mail-Adresse Ihres Kunden ein, geben Sie eine Nachricht ein, und wählen Sie **"Senden" aus.**
 
-    Ihr Kunde erhält eine e-Mail mit einem Bestätigungscode, den er an sich selbst senden muss, um auf den Ordner zuzugreifen. Wenn die e-Mails nicht gefunden werden können, sollten Sie deren Spam Ordner überprüfen.
+    Ihr Kunde erhält eine E-Mail mit einem Überprüfungscode, die er an sich selbst senden muss, um auf Ihren Ordner zu zugreifen. Wenn sie die E-Mail nicht finden können, sollten sie ihren Spamordner überprüfen.

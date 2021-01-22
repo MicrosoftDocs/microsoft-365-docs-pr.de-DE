@@ -1,5 +1,5 @@
 ---
-title: Migrieren von Dateien nach OneDrive
+title: Verschieben Ihrer Dateien auf OneDrive
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,35 +16,36 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: In diesem Artikel erfahren Sie, wie Sie Dateien in OneDrive migrieren.
-ms.openlocfilehash: 8fa6439472389ad851dca3961a515ebfb967f402
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Erfahren Sie, wie Sie Ihre Dateien nach OneDrive verschieben.
+ms.openlocfilehash: 5a708ba797dbb735c71f181fc287fb831004112b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702139"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927214"
 ---
-# <a name="move-files-to-onedrive"></a>Dateien in OneDrive
+# <a name="move-files-to-onedrive"></a>Verschieben von Dateien auf OneDrive
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341?autoplay=false]
 
-Nachdem Sie sich für Microsoft 365 Business Premium angemeldet haben, möchten Sie&#39;die vorhandenen Arbeitsdateien in OneDrive für Unternehmen kopieren. OneDrive ist ein guter Ort zum Speichern persönlicher Arbeitsdateien oder vertraulicher Geschäftsdateien, für die Sie den Zugriff steuern möchten.
+Nachdem Sie sich für Microsoft 365 Business Premium registrieren,&#39;Ihre vorhandenen Arbeitsdateien nach OneDrive for Business kopieren. OneDrive ist ein guter Ort zum Speichern persönlicher Arbeitsdateien oder vertraulicher Geschäftsdateien, auf die Sie den Zugriff steuern möchten.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Wählen Sie unter Windows die Schaltfläche  **Start** aus.
+1. Wählen Sie in Windows die  **Schaltfläche "Start"** aus.
 2. Suchen Sie nach OneDrive, und wählen Sie es aus.
-3. Geben Sie Ihre geschäftliche e-Mail-Adresse ein.
-4. Wählen Sie anmelden aus, und klicken Sie dann  **auf**  **weiter**.
-5. Gehen Sie durch das kurze Lernprogramm, und wählen Sie dann  **meinen OneDrive Ordner öffnen** aus. Wenn Sie auch die persönliche Version von OneDrive verwenden,&#39;Sie hier angezeigt.
+3. Geben Sie Ihre E-Mail-Adresse für Ihre Arbeit ein.
+4. Wählen Sie **"Anmelden"** und dann **"Weiter" aus.**
+5. Wechseln Sie durch das kurze Lernprogramm, und wählen Sie dann **"Meinen #A0 öffnen" aus.** Wenn Sie auch die persönliche Version von OneDrive verwenden, wird&#39;hier zu sehen sein.
 6. Wechseln Sie im Datei-Explorer zu den Dateien, die Sie kopieren möchten.
-7. Wählen Sie die Dateien aus, und ziehen Sie Sie dann per Drag & Drop in ihren OneDrive-Ordner. Blaue Kreis Pfeile neben ihren Dateien bedeuten, dass Sie&#39;erneut mit der Cloud synchronisieren. Wenn Sie die Synchronisierung&#39;erneut durchgeführt haben, werden grüne Häkchen angezeigt.
+7. Wählen Sie die Dateien aus, und legen Sie sie per Drag #A0 Drop in Ihren #A1 ab. Blaue kreisförmige Pfeile neben Ihren Dateien bedeuten, dass&#39;mit der Cloud synchronisiert werden können. Wenn sie&#39;erneut synchronisiert haben, werden grüne Häkungen angezeigt.
 
-Sie können nicht nur lokal an Ihren OneDrive-Dateien arbeiten, sondern auch über Ihren Webbrowser darauf zugreifen:
+Sie können nicht nur lokal an Ihren #A0 arbeiten, sondern auch über Ihren Webbrowser darauf zugreifen:
 
-1. Melden Sie sich in Ihrem Webbrowser bei Office.com mit ihrer geschäftlichen e-Mail-Adresse an.
-2. Wählen Sie  **OneDrive** aus. Alle Ihre Dateien werden aufgelistet, und Sie können Sie im Browser von jedem Computer aus bearbeiten.
+1. Melden Sie sich in Ihrem Webbrowser bei office.com Ihrer E-Mail-Adresse an.
+2. Wählen  **Sie OneDrive** aus. Alle Ihre Dateien sind aufgeführt, und Sie können von jedem Beliebigen Computer aus im Browser an ihnen arbeiten.

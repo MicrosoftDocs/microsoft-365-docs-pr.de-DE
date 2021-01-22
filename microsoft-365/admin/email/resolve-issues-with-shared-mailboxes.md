@@ -16,38 +16,39 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Versuchen Sie diese Lösungen, wenn Probleme mit freigegebenen Postfächern auftreten.
-ms.openlocfilehash: c889d3aa2fab8c2dce4cc2a8a00ef49a905363a1
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: Probieren Sie diese Lösungen aus, wenn Probleme mit freigegebenen Postfächern auftreten.
+ms.openlocfilehash: ba62db76edff6e4ab3d738ed0af8db2a40c18394
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445507"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926486"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Beheben von Problemen mit freigegebenen Postfächern
 
-Wenn beim Erstellen oder Verwenden eines freigegebenen Postfachs Fehlermeldungen angezeigt werden, versuchen Sie es mit den folgenden Lösungsmöglichkeiten. 
+Wenn beim Erstellen oder Verwenden eines freigegebenen Postfachs Fehlermeldungen angezeigt werden, probieren Sie diese möglichen Lösungen aus. 
 
 ## <a name="error-when-creating-shared-mailboxes"></a>Fehler beim Erstellen freigegebener Postfächer
 <a name="bkmk_Fix"> </a>
 
-Wenn die Fehlermeldung angezeigt wird, **wird die Proxyadresse "SMTP: <freigegebener Postfachname \> " bereits von den Proxyadressen oder legacyExchangeDN von " \<name> " verwendet. Wählen Sie eine andere Proxyadresse aus**, d. h., Sie versuchen, dem freigegebenen Postfach einen bereits verwendeten Namen zu geben. Beispiel: Sie möchten freigegebenen Postfächern die Namen "info@domaene1" und "info@domaene2" geben. Sie können auf zwei Arten vorgehen:
+Wenn die Fehlermeldung angezeigt wird, wird die Proxyadresse "smtp:<shared mailbox name" bereits von den Proxyadressen oder **\> LegacyExchangeDN von " " \<name> verwendet. Wählen Sie eine andere Proxyadresse** aus. Das bedeutet, dass Sie versuchen, dem freigegebenen Postfach einen Namen zu geben, der bereits verwendet wird. Beispiel: Sie möchten freigegebenen Postfächern die Namen "info@domaene1" und "info@domaene2" geben. Sie können auf zwei Arten vorgehen:
 
-  - Verwenden Sie Windows PowerShell. In diesem Blogbeitrag finden Sie Anweisungen: [Erstellen freigegebener Postfächer mit gleichem Alias in verschiedenen Domänen](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+  - Verwenden Sie Windows PowerShell. Anweisungen zum Erstellen freigegebener Postfächer mit demselben Alias in verschiedenen Domänen finden Sie [in diesem Blogbeitrag.](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     
-  - Nennen Sie das zweite freigegebene Postfach etwas anderes als den Anfang, um den Fehler zu umgehen. Benennen Sie dann im Admin Center das freigegebene Postfach So um, wie es sein soll.
+  - Benennen Sie das zweite freigegebene Postfach anders als zu Beginn, um den Fehler zu beheben. Benennen Sie dann im Admin Center das freigegebene Postfach in das um, was es sein soll.
 
-## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Fehler beim Senden von Berechtigungen bei Verwendung eines freigegebenen Postfachs
+## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Fehler beim Nicht-Senden von Berechtigungen bei Verwendung eines freigegebenen Postfachs
 
-Wenn Sie ein freigegebenes Postfach erstellt und anschließend versuchen, eine Nachricht daraus zu senden, erhalten Sie möglicherweise Folgendes:
+Wenn Sie ein freigegebenes Postfach erstellt haben und dann versuchen, eine Nachricht davon zu senden, erhalten Sie möglicherweise dies:
 
-**Diese Nachricht konnte nicht gesendet werden. Sie verfügen nicht über die Berechtigung, die Nachricht im Namen des angegebenen Benutzers zu senden.**
+**Diese Nachricht konnte nicht gesendet werden. Sie verfügen nicht über die Berechtigung, die Nachricht im Auftrag des angegebenen Benutzers zu senden.**
 
-Diese Meldung wird angezeigt, wenn bei Microsoft 365 ein Problem mit der Replikationswartezeit auftritt. Es sollte in einer Stunde oder so verschwinden, wenn die Informationen zu Ihrem neuen freigegebenen Postfach (oder hinzugefügter Benutzer) in allen unseren Rechenzentren repliziert werden. Warten Sie eine Stunde, und versuchen Sie dann erneut, eine Nachricht zu senden.
+Diese Meldung wird angezeigt, wenn bei Microsoft 365 ein Replikationslatenzproblem auftritt. Sie sollte in einer Stunde oder so gelöscht werden, wenn die Informationen zu Ihrem neuen freigegebenen Postfach (oder hinzugefügten Benutzer) in allen unseren Rechenzentren repliziert werden. Warten Sie eine Stunde, und versuchen Sie dann erneut, eine Nachricht zu senden.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

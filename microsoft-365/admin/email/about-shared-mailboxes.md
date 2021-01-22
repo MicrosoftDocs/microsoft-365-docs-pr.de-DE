@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Freigegebene Postfächer werden verwendet, wenn mehrere Personen auf dasselbe Postfach zugreifen müssen. Erfahren Sie, was Sie wissen müssen, bevor Sie ein freigegebenes Postfach erstellen.
-ms.openlocfilehash: cc94ae30edcc7a8307328230989dc4a883732b0e
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+description: Freigegebene Postfächer werden verwendet, wenn mehrere Personen Zugriff auf dasselbe Postfach benötigen. Erfahren Sie, was Sie wissen müssen, bevor Sie ein freigegebenes Postfach erstellen.
+ms.openlocfilehash: 744c4fece24cf1fa5ee7259a0d722ff123ff2664
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568294"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926510"
 ---
 # <a name="about-shared-mailboxes"></a>Info zu freigegebenen Postfächern
 
@@ -34,29 +35,29 @@ Freigegebene Postfächer werden verwendet, wenn mehrere Personen Zugriff auf das
 
 Benutzer, die über Berechtigungen für das Gruppenpostfach verfügen, können Nachrichten mit der "Senden als"- oder "Senden im Auftrag von"-Postfach-E-Mail-Adresse senden, sofern der Administrator dem jeweiligen Benutzer die entsprechende Berechtigung erteilt hat. Dies ist besonders nützlich für Hilfe- und Support-Postfächer, da Benutzer E-Mails von "Contoso-Support" oder der "Rezeption von Gebäude A" senden können.
 
-Bevor Sie [ein freigegebenes Postfach erstellen](create-a-shared-mailbox.md), sollten Sie folgende Punkte kennen:
+Bevor Sie [ein freigegebenes Postfach erstellen,](create-a-shared-mailbox.md)sollten Sie dies wissen:
 
-- **Lizenzen:** Ihr freigegebenes Postfach kann bis zu 50 GB Daten speichern, ohne dass Sie ihm eine Lizenz zuweisen. Anschließend müssen Sie dem Postfach eine Lizenz zuweisen, um mehr Daten speichern zu können. Weitere Informationen zur Lizenzierung freigegebener Postfächer finden Sie unter [Exchange Online Limits](https://technet.microsoft.com/library/exchange-online-limits.aspx#StorageLimits). Wenn ein freigegebenes Postfach die Speichergrenze erreicht, können Sie E-Mails noch eine Zeitlang empfangen, aber keine neuen E-Mails mehr senden. Danach wird auch der Empfang von E-Mails beendet. Absender für das Postfach erhalten einen Unzustellbarkeitsbericht.
+- **Lizenzen:** Ihr freigegebenes Postfach kann bis zu 50 GB Daten speichern, ohne ihm eine Lizenz zu zuweisen. Anschließend müssen Sie dem Postfach eine Lizenz zuweisen, um mehr Daten speichern zu können. Weitere Informationen zur Lizenzierung freigegebener Postfächer finden Sie unter [Exchange Online-Beschränkungen.](https://technet.microsoft.com/library/exchange-online-limits.aspx#StorageLimits) Wenn ein freigegebenes Postfach die Speichergrenze erreicht, können Sie E-Mails noch eine Zeitlang empfangen, aber keine neuen E-Mails mehr senden. Danach wird auch der Empfang von E-Mails beendet. Absender für das Postfach erhalten einen Unzustellbarkeitsbericht.
 
-- **Benutzerberechtigungen:** Sie müssen Benutzern Berechtigungen (Mitgliedschaft) erteilen, um das freigegebene Postfach zu verwenden. Nur Personen innerhalb Ihrer Organisation können ein freigegebenes Postfach nutzen.
+- **Benutzerberechtigungen:** Sie müssen Benutzern Berechtigungen (Mitgliedschaft) für die Verwendung des freigegebenen Postfachs erteilen. Nur Personen innerhalb Ihrer Organisation können ein freigegebenes Postfach nutzen.
 
-- **Externe Benutzer:** Sie können nicht Personen außerhalb Ihres Unternehmens (wie Personen mit einem Gmail-Konto) Zugriff auf Ihr freigegebenes Postfach gewähren. Wenn Sie dies tun möchten, sollten Sie stattdessen eine Gruppe für Outlook erstellen. Weitere Informationen finden Sie unter [Erstellen einer Microsoft 365-Gruppe im Admin Center](../create-groups/create-groups.md).
+- **Externe Benutzer:** Sie können Personen außerhalb Ihres Unternehmens (z. B. Personen mit einem Gmail-Konto) keinen Zugriff auf Ihr freigegebenes Postfach geben. Wenn Sie dies tun möchten, sollten Sie stattdessen eine Gruppe für Outlook erstellen. Weitere Informationen finden Sie unter [Erstellen einer Microsoft 365-Gruppe im Admin Center.](../create-groups/create-groups.md)
 
-- **Verwendung mit Outlook:** Zusätzlich zur Verwendung von Outlook im Internet aus Ihrem Browser für den Zugriff auf freigegebene Postfächer können Sie auch die Outlook für IOS-APP oder die Outlook für Android-App verwenden. Weitere Informationen finden Sie unter [Hinzufügen eines freigegebenen Postfachs zu Outlook Mobile](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f). Eine weitere Möglichkeit besteht darin, eine Gruppe für Ihr freigegebenes Postfach zu erstellen. Weitere Informationen hierzu finden Sie unter [Vergleichen von Gruppen](../create-groups/compare-groups.md).
+- **Verwenden mit Outlook:** Zusätzlich zur Verwendung von Outlook im Web über Ihren Browser für den Zugriff auf freigegebene Postfächer können Sie auch die Outlook für iOS-App oder die Outlook für Android-App verwenden. Weitere Informationen finden Sie unter [Hinzufügen eines freigegebenen Postfachs zu Outlook Mobile](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f). Eine weitere Möglichkeit besteht in der Erstellung einer Gruppe für Ihr freigegebenes Postfach. Weitere Informationen hierzu finden Sie unter [Vergleichen von Gruppen](../create-groups/compare-groups.md).
 
-- **Verschlüsselung:** Sie können e-Mails, die von einem freigegebenen Postfach gesendet werden, nicht verschlüsseln. Dies liegt daran, dass ein freigegebenes Postfach keinen eigenen Sicherheitskontext (Benutzername/Kennwort) aufweist, sodass ihm kein Schlüssel zugewiesen werden kann. Wenn mehr als eine Person Mitglied ist und Sie e-Mails senden/empfangen, die Sie mit ihren eigenen Schlüsseln verschlüsselt haben, können andere Mitglieder möglicherweise die e-Mails lesen, und andere möglicherweise nicht, je nachdem, mit welchem öffentlichen Schlüssel die e-Mail verschlüsselt wurde.
+- **Verschlüsselung:** Von einem freigegebenen Postfach gesendete E-Mails können nicht verschlüsselt werden. Dies liegt daran, dass ein freigegebenes Postfach nicht über einen eigenen Sicherheitskontext (Benutzername/Kennwort) verfügt, sodass ihm kein Schlüssel zugewiesen werden kann. Wenn mehr als eine Person Mitglied ist und sie E-Mails senden/empfangen, die sie mit ihren eigenen Schlüsseln verschlüsselt haben, können andere Mitglieder die E-Mail möglicherweise lesen, andere möglicherweise nicht, je nachdem, mit welchem öffentlichen Schlüssel die E-Mail verschlüsselt wurde.
 
-- **Post Fach Konvertierung:** Sie können Benutzerpostfächer in freigegebene Postfächer konvertieren. Lesen Sie dazu [Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach](convert-user-mailbox-to-shared-mailbox.md).
+- **Postfachkonvertierung:** Sie können Benutzerpostfächer in freigegebene Postfächer konvertieren. Lesen Sie dazu [Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach](convert-user-mailbox-to-shared-mailbox.md).
 
-- **Administratorrollen:** Benutzer mit globalen Administrator-oder Exchange-Administratorrollen können freigegebene Postfächer erstellen.
+- **Administratorrollen:** Benutzer mit globalen Administrator- oder Exchange-Administratorrollen können freigegebene Postfächer erstellen.
 
-- **Abonnementanforderungen:** Um ein freigegebenes Postfach zu erstellen, müssen Sie einen Microsoft 365 for Business-Plan abonnieren, der e-Mails enthält (Exchange Online Dienst). Das Microsoft 365 apps for Business-Abonnement enthält keine e-Mails. Microsoft 365 Business Standard enthält e-Mail.
+- **Abonnementanforderungen:** Zum Erstellen eines freigegebenen Postfachs müssen Sie einen Microsoft 365 Business-Plan abonnieren, der E-Mails (den Exchange Online-Dienst) enthält. Das Microsoft 365 Apps for Business-Abonnement enthält keine E-Mails. Microsoft 365 Business Standard enthält E-Mails.
 
-- **Anmelden:** Ein freigegebenes Postfach ist nicht für die direkte Anmeldung durch das zugehörige Benutzerkonto vorgesehen. Sie sollten die Anmeldung für das freigegebene Postfachkonto immer blockieren und blockiert lassen.
+- **Anmelden:** Ein freigegebenes Postfach ist nicht für die direkte Anmeldung über das zugeordnete Benutzerkonto vorgesehen. Sie sollten die Anmeldung für das freigegebene Postfachkonto immer blockieren und blockieren.
 
-- **Zu viele Benutzer:** Wenn zu viele designierte Benutzer gleichzeitig auf ein freigegebenes Postfach zugreifen, kann es vorkommen, dass eine Verbindung mit diesem Postfach nicht hergestellt wird. In diesem Fall können Sie die Anzahl der Benutzer verringern oder eine andere Arbeitsauslastung wie eine Microsoft 365-Gruppe oder einen öffentlichen Ordner verwenden.
+- **Zu viele Benutzer:** Wenn zu viele festgelegte Benutzer gleichzeitig auf ein freigegebenes Postfach zugreifen, können sie möglicherweise zeitweise keine Verbindung mit diesem Postfach herstellen. In diesem Fall können Sie die Anzahl der Benutzer reduzieren oder eine andere Arbeitsauslastung verwenden, z. B. eine Microsoft 365-Gruppe oder einen öffentlichen Ordner.
 
-- **Löschen von Nachrichten:** Leider können Sie nicht verhindern, dass Personen Nachrichten in einem freigegebenen Postfach löschen. Die einzige Möglichkeit besteht darin, eine Microsoft 365-Gruppe anstelle eines freigegebenen Postfachs zu erstellen. Eine Gruppe in Outlook ist wie ein freigegebenes Postfach. Einen Vergleich der beiden Informationen finden Sie unter [Compare Groups](../create-groups/compare-groups.md). Weitere Informationen zu Gruppen finden Sie unter Weitere Informationen [zu Gruppen](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+- **Nachrichtenlöschung:** Leider können Sie nicht verhindern, dass Personen Nachrichten in einem freigegebenen Postfach löschen. Die einzige Möglichkeit besteht in der Erstellung einer Microsoft 365-Gruppe anstelle eines freigegebenen Postfachs. Eine Gruppe in Outlook ist wie ein freigegebenes Postfach. Einen Vergleich der beiden Finden Sie unter Vergleichen [von Gruppen.](../create-groups/compare-groups.md) Weitere Informationen zu Gruppen finden Sie [unter Weitere Informationen zu Gruppen.](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

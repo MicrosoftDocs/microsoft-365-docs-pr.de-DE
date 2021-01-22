@@ -1,5 +1,5 @@
 ---
-title: Installieren von Microsoft Office Apps
+title: Installieren von Microsoft Office-Apps
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Hier erfahren Sie, wie Sie Microsoft Office Apps installieren.
-ms.openlocfilehash: 7b50a639f5f2945c524d268502636d7a809f3866
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Erfahren Sie, wie Sie Microsoft Office installieren.
+ms.openlocfilehash: abbeb8fdaa36956014ef955f853616cdb7d4e83c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702107"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925014"
 ---
 # <a name="install-office-apps"></a>Installieren von Office-Apps 
 
@@ -34,12 +35,12 @@ ms.locfileid: "49702107"
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-Microsoft Office-Apps finden Sie im  **Startmenü** . Wenn Sie diese nicht sehen, können Sie Sie selbst installieren, wenn Sie&#39;t angezeigt werden.
+Microsoft Office Apps finden Sie im **Startmenü.** Wenn sie nicht&#39;, können Sie sie selbst installieren.
 
-1. Wechseln Sie zu Office.com. Möglicherweise müssen Sie sich mit Ihrem Arbeitskonto anmelden.
-2. Wählen Sie **Install Office**   >   **Microsoft 365 apps**   >   **Run** aus, und wählen Sie dann **Ja** aus.
-3. Die Office-Apps werden installiert. Der Vorgang kann mehrere Minuten dauern. Klicken Sie nach Abschluss des Vorgangs auf  **Schließen**.
-4. Um Microsoft Teams zu installieren, wechseln Sie zur Seite Office.com, und wählen Sie  **Teams** aus.
-5. Rufen Sie die Windows-App ab, und wählen Sie dann  **Ausführen** aus. Microsoft Teams zeigt eine Eingabeaufforderung an, wenn die Installation abgeschlossen ist.
+1. Wechseln Sie zu office.com. Möglicherweise müssen Sie sich mit Ihrem Arbeitskonto anmelden.
+2. Wählen **Sie "Office**   >   **Microsoft 365-Apps installieren"** und dann   >    "Ja" **aus.**
+3. Die Office-Apps werden installiert. Der Vorgang kann mehrere Minuten dauern. Wählen Sie nach Abschluss des Vorgangs **"Schließen" aus.**
+4. To install Microsoft Teams, go to the office.com page, and choose  **Teams**.
+5. Holen Sie sich die Windows-App, und wählen Sie dann **Ausführen aus.** Teams zeigt eine Eingabeaufforderung an, wenn die Installation abgeschlossen ist.
 
-Die Office-Apps, die Sie jetzt installiert haben, werden nun im  **Startmenü** angezeigt.
+Die installierten Office-Apps werden nun im  **Startmenü** angezeigt.

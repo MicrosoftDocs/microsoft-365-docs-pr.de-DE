@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: Hier erfahren Sie, wie Sie Add-Ins für Benutzer und Gruppen in Ihrer Organisation mithilfe einer zentralisierten Bereitstellung im Admin Center bereitstellen können.
-ms.openlocfilehash: 37fac34449ee39366778e29c0eeddf1fc7bfdd37
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+description: Erfahren Sie, wie Sie Mithilfe der zentralen Bereitstellung im Admin Center Add-Ins für Benutzer und Gruppen in Ihrer Organisation bereitstellen.
+ms.openlocfilehash: ef7237f20780cb67bc84561ad8617dd8da6f8b82
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698290"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926354"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Bereitstellen von Add-Ins im Admin Center
 
@@ -36,80 +38,80 @@ ms.locfileid: "49698290"
 
 ::: moniker-end
 
-[] Office-Add-Ins helfen Ihnen beim Personalisieren Ihrer Dokumente und beim Optimieren der Art und Weise, wie Sie im Web auf Informationen zugreifen (lesen Sie [Erste Schritte mit Ihrem Office-Add-In](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Als Administrator können Sie Office-Add-Ins für die Benutzer in Ihrer Organisation mithilfe des Features für die zentralisierte Bereitstellung im Microsoft 365 Admin Center bereitstellen. Die zentrale Bereitstellung ist die empfohlene und funktionsreichste Möglichkeit für die meisten Administratoren, um Add-Ins für Benutzer und Gruppen innerhalb einer Organisation bereitzustellen. 
+[] Office-Add-Ins helfen Ihnen beim Personalisieren Ihrer Dokumente und beim Optimieren der Art und Weise, wie Sie im Web auf Informationen zugreifen (lesen Sie [Erste Schritte mit Ihrem Office-Add-In](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Als Administrator können Sie Office-Add-Ins für die Benutzer in Ihrer Organisation mithilfe des Features "Zentrale Bereitstellung" im Microsoft 365 Admin Center bereitstellen. Die zentrale Bereitstellung ist die empfohlene und funktionsreichste Methode für die meisten Administratoren zum Bereitstellen von Add-Ins für Benutzer und Gruppen innerhalb einer Organisation. 
 
-Weitere Informationen zum ermitteln, ob Ihre Organisation eine zentralisierte Bereitstellung unterstützenkann, finden Sie unter [bestimmen, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert](centralized-deployment-of-add-ins.md).
+Weitere Informationen dazu, wie Sie ermitteln können, ob Ihre Organisation die zentrale Bereitstellung unterstützen kann, finden Sie unter Ermitteln, ob die zentrale Bereitstellung von [Add-Ins für Ihre Organisation funktioniert.](centralized-deployment-of-add-ins.md)
 
-Weitere Informationen zum Verwalten von Add-Ins nach der Bereitstellung finden Sie unter [Verwalten von Add-Ins im Admin Center](manage-addins-in-the-admin-center.md) .
+Weitere Informationen zum Verwalten von Add-Ins nach der Bereitstellung finden Sie unter Verwalten von [Add-Ins im Admin Center.](manage-addins-in-the-admin-center.md)
   
 > [!NOTE]
->  Für Word verwenden Excel und PowerPoint einen [SharePoint-App-Katalog](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) zum Bereitstellen von Add-Ins für Benutzer in einer lokalen Umgebung ohne Verbindung mit Microsoft 365 und/oder Unterstützung für SharePoint-Add-Ins erforderlich. Für Outlook verwenden Sie die Exchange-Systemsteuerung für die Bereitstellung in einer lokalen Umgebung ohne Verbindung mit Microsoft 365.
+>  Für Word verwenden Excel und PowerPoint einen [SharePoint-App-Katalog,](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) um Add-Ins für Benutzer in einer lokalen Umgebung ohne Verbindung zu Microsoft 365 und/oder unterstützung für SharePoint-Add-Ins zu bereitstellen. Verwenden Sie für Outlook die Exchange-Systemsteuerung, um sie in einer lokalen Umgebung ohne Verbindung mit Microsoft 365 zu bereitstellen.
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Empfohlene Vorgehensweise für die Bereitstellung von Office-Add-Ins
 
-Für das Rollout von Add-Ins mithilfe eines phasenweisen Ansatzes wird Folgendes empfohlen:
+Zum Rollout von Add-Ins mithilfe eines phasenweiser Ansatzes wird Folgendes empfohlen:
   
-1. Stellen Sie das Add-In für eine kleine Gruppe von Projektbeteiligten und Mitgliedern der IT-Abteilung bereit. Wenn die Bereitstellung erfolgreich ist, fahren Sie mit Schritt 2 fort.
+1. Stellen Sie das Add-In für eine kleine Gruppe von Projektbeteiligten und Mitgliedern der IT-Abteilung bereit. Wenn die Bereitstellung erfolgreich ist, wechseln Sie zu Schritt 2.
     
-2. Stellen Sie das Add-in für mehr Personen innerhalb des Unternehmens bereit. Werten Sie die Ergebnisse erneut aus, und fahren Sie bei erfolgreicher Ausführung mit der vollständigen Bereitstellung fort.
+2. Sie können das Add-in für weitere Personen im Unternehmen rollouten. Werten Sie erneut die Ergebnisse aus, und fahren Sie bei erfolgreicher Bereitstellung mit der vollständigen Bereitstellung fort.
     
-3. Führen Sie eine vollständige Einführung für alle Benutzer aus.
+3. Führen Sie ein vollständiges Rollout für alle Benutzer durch.
     
-Je nach Größe der Zielgruppe können Sie die Roll-out-Schritte hinzufügen oder entfernen.
+Je nach Größe der Zielgruppe können Sie Rolloutschritte hinzufügen oder entfernen.
   
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Bereitstellen eines Office-Add-Ins mithilfe des Admin Centers
 
-Bevor Sie beginnen, lesen Sie [ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert](centralized-deployment-of-add-ins.md).
+Bevor Sie beginnen, lesen Sie "Ermitteln", ob die zentrale Bereitstellung von [Add-Ins für Ihre Organisation funktioniert.](centralized-deployment-of-add-ins.md)
   
-1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> **-Add-ins** . Wenn die **Add-in-** Seite nicht angezeigt wird, wechseln Sie zur Seite mit den **Einstellungen** für \> **integrierte apps** \> **-Add-ins** .
+1. Wechseln Sie im Admin Center zur **Seite** \> **"Einstellungen-Add-Ins".** Wenn die **Add-In-Seite** nicht angezeigt wird, wechseln Sie zur Seite "Integrierte Einstellungen für  \>  \> **Apps-Add-Ins".**
     
-2. Wählen Sie oben auf der Seite **Add-in bereitstellen** aus, und wählen Sie dann **weiter** aus.
+2. Wählen Sie oben auf der Seite **"Add-In** bereitstellen" und dann **"Weiter" aus.**
  
     > [!NOTE]
-    > Das Admin Center wird mit integrierten Apps auf die Bereitstellungsumgebung aktualisiert. Wenn die oben beschriebenen Schritte nicht angezeigt werden, wechseln Sie zum Abschnitt zentralisierte bereit Stellung, indem Sie auf  >  **integrierte apps** für Einstellungen gehen. Wählen Sie oben auf der Seite **integrierte apps** die Option **Add-ins** aus.
+    > Das Admin Center wird auf die Bereitstellungserfahrung mit integrierten Apps aktualisiert. Wenn die oben genannten Schritte nicht angezeigt werden, wechseln Sie zum Abschnitt "Zentrale Bereitstellung", indem Sie **zu**"Integrierte  >  **Einstellungen"-Apps wechseln.** On the top of the **Integrated apps** page, choose **Add-ins**.
     
 3. Wählen Sie eine Option aus und folgen Sie den Anweisungen. 
   
-4. Wenn Sie die Option zum Hinzufügen eines Add-Ins aus dem Office Store ausgewählt haben, müssen Sie die Add-in-Auswahl vornehmen. </br>
+4. Wenn Sie die Option zum Hinzufügen eines Add-Ins aus dem Office Store ausgewählt haben, treffen Sie ihre Add-In-Auswahl. </br>
 
-    Sie können die verfügbaren Add-Ins nach Kategorien anzeigen: **vorgeschlagen für Sie**, **Bewertung** oder **Name**. In der Office Store sind nur ﻿kostenlose Add-Ins verfügbar. Kostenpflichtige Add-Ins werden derzeit nicht unterstützt. Nachdem Sie ein Add-in ausgewählt haben, akzeptieren Sie die Bedingungen, um den Vorgang fortzusetzen. <br/> 
-
-    > [!NOTE] 
-    > Mit der Option Office Store werden Updates und Verbesserungen automatisch für Benutzer bereitgestellt.
-
-5. Wählen Sie auf der nächsten Seite **Alle**, **Bestimmte Benutzer/Gruppen** oder **Nur ich** aus, um anzugeben, für wen das Add-in bereitgestellt wird. Suchen Sie im Suchfeld nach bestimmten Benutzern oder Gruppen. <br/>
+    Sie können verfügbare Add-Ins nach Kategorien anzeigen: **Für** Sie vorgeschlagen, **Bewertung** oder **Name**. Im Office Store sind nur kostenlose Add-Ins verfügbar. Kostenpflichtige Add-Ins werden derzeit nicht unterstützt. Nachdem Sie ein Add-In ausgewählt haben, akzeptieren Sie die Allgemeinen Geschäftsbedingungen, um fortzufahren. <br/> 
 
     > [!NOTE] 
-    > Weitere Informationen zu anderen Status, die für ein Add-in gelten, finden Sie unter [Add-in States](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center.md).
+    > Mit der Office Store-Option werden Updates und Verbesserungen automatisch für Benutzer bereitgestellt.
+
+5. Wählen Sie auf der nächsten Seite **Alle**, **Bestimmte Benutzer/Gruppen** oder **Nur ich** aus, um anzugeben, für wen das Add-in bereitgestellt wird. Verwenden Sie das Suchfeld, um nach bestimmten Benutzern oder Gruppen zu suchen. <br/>
+
+    > [!NOTE] 
+    > Weitere Informationen zu anderen Zustände, die für ein Add-In gelten, finden Sie unter [Add-In-Zustände.](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center.md)
   
 6. Wählen Sie **Bereitstellen**.
   
-7. Wenn das Add-in bereitgestellt wird, wird ein grünes Häkchen angezeigt. Befolgen Sie die Anweisungen auf der Seite, um das Add-in zu testen.
+7. Wenn das Add-in bereitgestellt wird, wird ein grünes Teilchen angezeigt. Befolgen Sie die Anweisungen auf der Seite, um das Add-in zu testen.
 
     > [!NOTE]
-    > Benutzer müssen Office möglicherweise neu starten, um das Add-in-Symbol auf dem App-Menüband anzuzeigen. Outlook-Add-Ins können bis zu 24 Stunden dauern, bis Sie auf App-menübändern angezeigt werden.
+    > Benutzer müssen Office möglicherweise neu starten, um das Add-In-Symbol im Menüband der App anzeigen zu können. Es kann bis zu 24 Stunden dauern, bis Outlook-Add-Ins auf den Menübändern der App angezeigt werden.
     
-8. Wenn Sie fertig sind, wählen Sie **weiter** aus. Wenn Sie nur für sich selbst bereitgestellt haben, können Sie ändern auswählen, **der Zugriff auf das Add-in hat** , um mehr Benutzern bereitzustellen.
+8. Wenn Sie fertig sind, wählen Sie **"Weiter" aus.** Wenn Sie nur für sich selbst bereitgestellt haben, können Sie "Ändern, wer Zugriff auf das **Add-In** hat" auswählen, um die Bereitstellung für mehr Benutzer zu ermöglichen.
 
-    Wenn Sie das Add-in für andere Mitglieder Ihrer Organisation bereitgestellt haben, befolgen Sie die Anweisungen, um die Bereitstellung des Add-ins anzukündigen. <br/>
+    Wenn Sie das Add-in für andere Mitglieder Ihrer Organisation bereitgestellt haben, folgen Sie den Anweisungen, um die Bereitstellung des Add-Ins ankündigen. <br/>
   
-    Es wird empfohlen, Benutzer und Gruppen darüber zu informieren, dass das bereitgestellte Add-in verfügbar ist. Sie sollten eine e-Mail senden, in der beschrieben wird, wann und wie das Add-in verwendet wird. Einschließen oder Verknüpfen von Hilfeinhalten oder FAQs, die Benutzern helfen können, wenn Probleme mit dem Add-in auftreten.
+    Es ist eine bewährte Methode, Benutzer und Gruppen darüber zu informieren, dass das bereitgestellte Add-In verfügbar ist. Erwägen Sie das Senden einer E-Mail, in der beschrieben wird, wann und wie das Add-in verwendet wird. Fügen Sie Hilfeinhalte oder häufig gestellte Fragen hinzu, die Benutzern bei Problemen mit dem Add-in helfen können, oder verknüpfen Sie diese.
   
 ### <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>Überlegungen beim Zuweisen eines Add-Ins zu Benutzern und Gruppen
 
 Administratoren können jedem oder bestimmten Benutzern und Gruppen ein Add-In zuweisen. Jede Option hat Auswirkungen:
   
-- **Jeder Benutzer** Mit dieser Option wird das Add-in allen Benutzern in der Organisation zugewiesen. Verwenden Sie diese Option nur in Ausnahmefällen, da sie wirklich die gesamte Organisation betrifft. 
+- **Jeder** Mit dieser Option wird das Add-in jedem Benutzer in der Organisation zugewiesen. Verwenden Sie diese Option nur in Ausnahmefällen, da sie wirklich die gesamte Organisation betrifft. 
     
-- **Benutzer** Wenn Sie ein Add-in einem einzelnen Benutzer zuweisen und dann das Add-in für einen neuen Benutzer bereitstellen, müssen Sie zuerst den neuen Benutzer hinzufügen.
+- **Benutzer** Wenn Sie einem einzelnen Benutzer ein Add-In zuweisen und das Add-in dann einem neuen Benutzer bereitstellen, müssen Sie zuerst den neuen Benutzer hinzufügen.
     
-- **Gruppen** Wenn Sie ein Add-in einer Gruppe zuweisen, werden Benutzern, die der Gruppe hinzugefügt werden, automatisch das Add-in zugewiesen. Wenn ein Benutzer aus einer Gruppe entfernt wird, verliert der Benutzer den Zugriff auf das Add-in. In beiden Fällen ist vom Administrator keine weitere Aktion erforderlich. 
+- **Gruppen** Wenn Sie ein Add-In einer Gruppe zuweisen, wird Benutzern, die der Gruppe hinzugefügt werden, automatisch das Add-In zugewiesen. Wenn ein Benutzer aus einer Gruppe entfernt wird, verliert der Benutzer den Zugriff auf das Add-In. In beiden Fällen ist vom Administrator keine zusätzliche Aktion erforderlich. 
 
-- **Nur ich** Wenn Sie ein Add-in nur für sich selbst zuweisen, wird das Add-in nur Ihrem Konto zugewiesen, was ideal zum Testen des Add-Ins ist.
+- **Just me** Wenn Sie ein Add-In nur sich selbst zuweisen, wird das Add-in nur Ihrem Konto zugewiesen, das sich ideal zum Testen des Add-Ins eignet.
     
-Die richtige Option für Ihre Organisation hängt von Ihrer Konfiguration ab. Es wird jedoch empfohlen, Zuordnungen mithilfe von Gruppen zu erstellen. Als Administrator ist es möglicherweise einfacher, Add-Ins mithilfe von Gruppen zu verwalten und die Mitgliedschaft dieser Gruppen zu steuern, anstatt einzelne Benutzer jedes Mal zuzuweisen. In einigen Situationen möchten Sie möglicherweise den Zugriff auf eine kleine Gruppe von Benutzern einschränken, indem Sie Benutzer manuell zuweisen, indem Sie Zuweisungen an bestimmte Benutzer vornehmen.
+Die richtige Option für Ihre Organisation hängt von Ihrer Konfiguration ab. Es wird jedoch empfohlen, Zuweisungen mithilfe von Gruppen zu erstellen. Als Administrator ist es möglicherweise einfacher, Add-Ins mithilfe von Gruppen zu verwalten und die Mitgliedschaft dieser Gruppen zu steuern, anstatt jedes Mal einzelne Benutzer zuzuordnen. In einigen Situationen können Sie den Zugriff auf eine kleine Gruppe von Benutzern einschränken, indem Sie Zuweisungen für bestimmte Benutzer vornehmen, indem Sie Benutzer manuell zuweisen.
   
-## <a name="more-about-office-add-ins-security"></a>Weitere Informationen zur Sicherheit von Office-Add-ins
+## <a name="more-about-office-add-ins-security"></a>Weitere Informationen zur Sicherheit von Office-Add-Ins
 
 Office-Add-Ins sind eine Kombination aus einer XML-Manifestdatei, die einige Metadaten zum Add-In enthält, aber vor allem auf eine Webanwendung verweist, die den gesamten Code und die Logik enthält. Add-Ins können verschiedene Bereiche von Funktionen umfassen. So können Add-Ins beispielsweise Folgendes:
   
@@ -130,7 +132,7 @@ Aktualisierungen für Add-Ins werden auf folgende Weise ausgeführt:
 - **Line-of-Business-Add-In:** In diesem Fall, in dem ein Administrator ein Manifest explizit hochgeladen hat, erfordert das Add-In, dass der Administrator eine neue Manifestdatei zur Unterstützung von Metadatenänderungen hochlädt. Beim nächsten Starten der jeweiligen Office-Anwendungen wird das Add-In aktualisiert. Die Webanwendung kann sich jederzeit ändern. 
 
     > [!NOTE]
-    > Administratoren müssen ein Lob-Add-in nicht für eine Aktualisierung entfernen.   Im Abschnitt Add-Ins kann der Administrator einfach auf das Lob-Add-in klicken und die **Schaltfläche Aktualisieren** in der unteren rechten Ecke auswählen. Das Update funktioniert nur, wenn die Version des neuen Add-ins größer ist als das des vorhandenen Add-Ins.   
+    > Der Administrator muss kein BRANCHEN-Add-In entfernen, um ein Update zu machen.   Im Abschnitt "Add-Ins" kann der Administrator einfach auf  das BRANCHEN-Add-In klicken und in der unteren rechten Ecke die Schaltfläche "Aktualisieren" auswählen. Das Update funktioniert nur, wenn die Version des neuen Add-Ins größer als die des vorhandenen Add-Ins ist.   
     
 - **Office Store-Add-In:** Wenn ein Administrator ein Add-In aus dem Office Store ausgewählt hat und dieses Add-In im Office Store aktualisiert wird, wird das Add-In später in der zentralen Bereitstellung aktualisiert. Beim nächsten Starten der jeweiligen Office-Anwendungen wird das Add-In aktualisiert. Die Webanwendung kann sich jederzeit ändern. 
   
@@ -138,10 +140,10 @@ Aktualisierungen für Add-Ins werden auf folgende Weise ausgeführt:
 
 [Verwalten von Add-Ins im Admin Center](manage-addins-in-the-admin-center.md)
 
-[Erstellen Sie Ihr erstes Word-Aufgabenbereich-Add-in](https://docs.microsoft.com/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator).
+[Erstellen Sie Ihr erstes Word-Aufgabenbereich-Add-In.](https://docs.microsoft.com/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator)
 
 [Minderjährige und Erwerb von Add-Ins aus dem Store](minors-and-acquiring-addins-from-the-store.md)
   
-[Verwenden von PowerShell-Cmdlets für zentralisierte Bereitstellung zum Verwalten von Add-ins](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
+[Verwenden von Zentralen Bereitstellungs-PowerShell-Cmdlets zum Verwalten von Add-Ins](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
   
-[Problembehandlung: Benutzer können keine Add-Ins sehen](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[Problembehandlung: Dem Benutzer werden keine Add-Ins angezeigt](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)

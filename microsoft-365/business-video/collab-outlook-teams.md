@@ -1,5 +1,5 @@
 ---
-title: Zusammenarbeit mit Outlook und Microsoft Teams
+title: Zusammenarbeit mithilfe von Outlook und Teams
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,38 +16,39 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: In diesem Artikel erfahren Sie, wie Sie mit Outlook und Microsoft Teams zusammenarbeiten.
-ms.openlocfilehash: aac1782de441db7521f4f9b7da540b417cb25f14
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Erfahren Sie, wie Sie Outlook und Microsoft Teams für die Zusammenarbeit verwenden.
+ms.openlocfilehash: 3d5ac6dd157b0469800a3dd6f841ec1a5c1d1ed9
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702307"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927346"
 ---
 # <a name="use-outlook-and-teams-together"></a>Gemeinsames Verwenden von Outlook und Teams 
 
-Wenn Sie mit ihren Mitarbeitern, Partnern, Kunden und anderen Personen in Ihrem kleinen Unternehmen kommunizieren, verwenden Sie Outlook und Microsoft Teams in Microsoft 365. In Outlook finden Sie e-Mails, Kalender, Kontakte und Aufgaben, während Sie in Microsoft Teams Unterhaltungen, Dateien, Besprechungen und schnellen Zugriff auf apps von Microsoft und Drittanbietern finden. Im folgenden finden Sie eine Übersicht darüber, wie Sie die einzelnen in Ihrem Unternehmen verwenden können.
+Wenn Sie mit Ihren Mitarbeitern, Partnern, Kunden und anderen Personen in Ihrem Kleinunternehmen kommunizieren, verwenden Sie Outlook und Teams in Microsoft 365. In Outlook finden Sie E-Mails, Kalender, Kontakte und Aufgaben, während Sie in Teams Unterhaltungen, Dateien, Besprechungen und schnellen Zugriff auf Microsoft- und Drittanbieter-Apps finden. Hier finden Sie eine Zusammenfassung, wie Sie die einzelnen in Ihrem Unternehmen verwenden können.
 
 ## <a name="microsoft-outlook"></a>Microsoft Outlook
 
-- Überprüfen von Nachrichten innerhalb und außerhalb des Unternehmens, einschließlich neuer Leads für Ihr Unternehmen.
-- Überprüfen Sie Ihre Kalender, fügen Sie Termine hinzu und planen Sie Besprechungen ein.
-- Fügen Sie die Namen, Nummern und e-Mails der Personen, mit denen Sie zusammenarbeiten, als Kontakte hinzu.
-- Erstellen Sie Aufgaben, Notizen und andere Möglichkeiten, um ihre kurzfristigen und langfristigen Projekte im Vordergrund zu halten.
+- Überprüfen Sie Nachrichten von innerhalb und außerhalb des Unternehmens, einschließlich neuer Leads für Ihr Unternehmen.
+- Überprüfen Sie Ihre Kalender, fügen Sie Termine hinzu, und planen Sie Besprechungen.
+- Fügen Sie die Namen, Zahlen und E-Mails der Personen hinzu, mit der Sie als Kontakte arbeiten.
+- Erstellen Sie Aufgaben, Notizen und andere Möglichkeiten, um über Ihre kurzfristigen und langfristigen Projekte auf dem Neuen zu bleiben.
 
 :::image type="content" source="../media/outlook-model.png" alt-text="Ein stilisiertes Bild der Outlook-Startseite.":::
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-- Haben Sie umfassende Echt Zeit Unterhaltungen mit Ihrem Team, und laden Sie Kunden oder Gäste zur Unterhaltung ein.
-- Sie können private Chats oder Anrufe tätigen und Ihren Bildschirm miteinander teilen.
-- Planen und an Besprechungen mit Mitarbeitern und Gästen teilnehmen.
-- Hinzufügen oder Freigeben von Dateien aus der zugeordneten SharePoint-Website oder OneDrive für Unternehmen.
-- Fügen Sie Microsoft Teams weitere apps wie Planner, Power BI oder GitHub hinzu.
+- Führen Sie umfangreiche Echtzeitunterhaltungen mit Ihrem Team durch, und laden Sie Clients oder Gäste zur Unterhaltung ein.
+- Haben Sie private Chats oder Anrufe, und teilen Sie Ihren Bildschirm miteinander.
+- Planen und Teilnehmen an Besprechungen mit Mitarbeitern und Gästen.
+- Hinzufügen oder Freigeben von Dateien von der zugeordneten #A0 oder OneDrive for Business.
+- Fügen Sie weitere Apps wie Planner, Power BI oder GitHub zu Teams hinzu.
 
 :::image type="content" source="../media/teams-model.png" alt-text="Ein stilisiertes Bild der Microsoft Teams-Startseite."::: 
 

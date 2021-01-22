@@ -16,47 +16,48 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Ihren PC mit Microsoft 365 Business verbinden.
-ms.openlocfilehash: 715f20ecd8f10d3d21fbdfac2953369504f02dec
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 61adae68541233ffb7b7087174c4633995b28fdd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702301"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927310"
 ---
-# <a name="connect-your-pc-to-microsoft-365-business-premium"></a>Verbinden Sie Ihren PC mit Microsoft 365 Business Premium
+# <a name="connect-your-pc-to-microsoft-365-business-premium"></a>Verbinden Ihres PCs mit Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3?autoplay=false]
 
 ## <a name="try-it"></a>Probieren Sie es aus!
-Nachdem Sie Microsoft 365 Business Premium (früher als Microsoft 365 Business bezeichnet) eingerichtet haben, müssen Sie und Ihre Mitarbeiter einige Schritte ausführen, um die Sicherheits-und Verwaltungsfeatures vollständig nutzen zu können. Hier&#39;s how.
+Nachdem Sie Microsoft 365 Business Premium (früher als Microsoft 365 Business bezeichnet) eingerichtet haben, müssen Sie und Ihre Mitarbeiter einige Schritte ausführen, um die Sicherheits- und Verwaltungsfunktionen voll zu nutzen. Hier&#39;Wie.
 
-Stellen Sie zunächst sicher, dass Windows 10 pro installiert ist:
+Stellen Sie zunächst sicher, dass Windows 10 Pro installiert ist:
 
-1. Klicken Sie auf  **Start** , suchen Sie in der  **System** Steuerung, und wählen Sie Sie aus.
-2. Wählen Sie **System und Sicherheits**   >   **System** aus, und bestätigen Sie Ihre Windows-Edition.
+1. Wählen  **Sie "Start"** aus, suchen  **Sie nach der Systemsteuerung,** und wählen Sie sie aus.
+2. Wählen **Sie System und**   >   **Sicherheitssystem** aus, und bestätigen Sie Ihre Windows-Edition.
 
-Stellen Sie als nächstes eine Verbindung mit Microsoft 365 Business her:
+Stellen Sie als Nächstes eine Verbindung mit Microsoft 365 Business herzustellen:
 
-1. Wählen Sie  **Start** aus, und wählen Sie dann das Symbol  **Einstellungen** aus.
-2. Wählen Sie **Accounts**  >   **Access work oder School**   >   **Connect** aus.
-3. Wählen Sie  **dieses Gerät mit Azure Active Directory verbinden** aus.
-4. Geben Sie die e-Mail-Adresse für Ihr Microsoft 365-Konto ein, und wählen Sie  **weiter** aus.
-5. Geben Sie Ihr Kennwort ein, wählen Sie  **Anmelden** aus, und stellen Sie sicher, dass Sie der richtigen Organisation beitreten.
-6. Wählen Sie  **beitreten** aus, und klicken Sie dann auf  **Fertig**.
+1. Wählen  **Sie "Start"** und dann das Symbol  **"Einstellungen"** aus.
+2. Wählen Sie **Accounts**  >   **Access work or school** Connect   >   **aus.**
+3. Wählen **Sie "Dieses Gerät mit Azure Active Directory verbinden" aus.**
+4. Geben Sie die E-Mail-Adresse für Ihr Microsoft 365-Konto ein, und wählen Sie **"Weiter" aus.**
+5. Geben Sie Ihr Kennwort ein, wählen  **Sie "Anmelden"** aus, und vergewissern Sie sich, dass Sie der richtigen Organisation beitreten.
+6. Wählen Sie **"Beitreten"** und dann **"Fertig" aus.**
 
-Je nachdem, wie Ihr Unternehmen Microsoft 365 Business eingerichtet hat, wird möglicherweise eine Benachrichtigung zur Verschlüsselung Ihres PCs angezeigt. So verschlüsseln Sie Ihren PC:
+Je nachdem, wie Ihr Unternehmen Microsoft 365 Business eingerichtet hat, wird möglicherweise eine Benachrichtigung zum Verschlüsseln Ihres PCs angezeigt. So verschlüsseln Sie Ihren PC:
 
-1. Wählen Sie die Nachricht  **Verschlüsselung erforderlich**  aus.
-2. Wählen Sie  **I Don&#39;t andere datenträgerverschlüsselungssoftware installiert haben, alle meine Datenträger verschlüsseln** aus, und wählen Sie dann  **Ja** aus. Es wird ein  **BitLocker-Start**  Fenster mit einer Statusanzeige angezeigt.
-3. Wählen Sie im Fenster wählen Sie aus,  **wie Ihr Laufwerk beim Start frei**  gegeben werden soll die Option **PIN eingeben (empfohlen)** aus.
-4. Geben Sie Ihre PIN ein, und geben Sie Sie erneut ein, um Sie zu überprüfen. Wählen Sie  **Pin festlegen** aus.
-5. Wählen Sie eine Methode zum Speichern eines Schlüssels für die Wiederherstellung der Verschlüsselung aus, und wählen Sie dann  **weiter** aus.
-6. Wählen Sie aus, wie viel von Ihrem Laufwerk verschlüsselt werden soll, und wählen Sie dann  **weiter** aus.
-7. Wählen Sie einen Verschlüsselungsmodus aus, wählen Sie  **weiter** aus, und wählen Sie dann  **weiter** aus. Ihr Laufwerk wird nun verschlüsselt. Sie können während des Verschlüsselungsprozesses weiter arbeiten.
+1. Wählen Sie die  **für die Verschlüsselung benötigte Nachricht**  aus.
+2. Select  **I don&#39;have any other disk encryption software installed, encrypt all my disks,** and then select  **Yes**. Es wird ein  **Start-BitLocker-Fenster**  mit einer Statusleiste angezeigt.
+3. Wählen Sie **im Startfenster auswählen,** wie das Laufwerk entsperrt werden soll, **die EINGABETASTE (empfohlen) aus.**
+4. Geben Sie Ihre PIN ein, und geben Sie sie dann erneut ein, um sie zu überprüfen. Wählen Sie  **"PIN festlegen"** aus.
+5. Wählen Sie eine Methode zum Speichern eines Verschlüsselungswiederherstellungsschlüssels aus, und wählen Sie dann **"Weiter" aus.**
+6. Wählen Sie aus, wie viel Laufwerk verschlüsselt werden soll, und wählen Sie dann **"Weiter" aus.**
+7. Wählen Sie einen Verschlüsselungsmodus, dann **"Weiter"** und dann **"Weiter" aus.** Ihr Laufwerk wird jetzt verschlüsselt. Sie können während des Verschlüsselungsprozesses weiterarbeiten.
 
-Ihr PC ist jetzt von Microsoft 365 Business geschützt und verwaltet.
+Ihr PC ist jetzt durch Microsoft 365 Business geschützt und verwaltet.

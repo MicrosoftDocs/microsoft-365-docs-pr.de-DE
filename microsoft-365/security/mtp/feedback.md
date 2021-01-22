@@ -1,9 +1,9 @@
 ---
-title: Geben Sie Feedback zu Microsoft 365 Defender
+title: Bereitstellen von Feedback zu Microsoft 365 Defender
 description: Bereitstellen von Produktfeedback zu Microsoft 365 Defender
 keywords: Feedback, m365-Sicherheit, Sicherheit, 365, Funktionen
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 56f8bd0ff303ff38f8b3a577f6bc7aa58f21a745
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: a06f7254a892b8fd9942940946699ecb23707387
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846729"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926738"
 ---
-# <a name="provide-feedback-on-microsoft-365-defender"></a>Geben Sie Feedback zu Microsoft 365 Defender
+# <a name="provide-feedback-on-microsoft-365-defender"></a>Bereitstellen von Feedback zu Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,12 +35,12 @@ ms.locfileid: "48846729"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Ihr Feedback hilft uns, Ihre Umgebung vor fortgeschrittenen Angriffen besser zu schützen. Teilen Sie Ihre Erfahrungen, Impressionen und Anforderungen, indem Sie Feedback bereitstellen.
+Ihr Feedback hilft uns, Ihre Umgebung besser vor erweiterten Angriffen zu schützen. Teilen Sie Ihre Erfahrungen, Impressionen und Anforderungen, indem Sie Feedback geben.
 
-1. Wählen Sie in einem beliebigen Teil des Portals **Feedback geben** aus. 
+1. Wählen Sie in einem beliebigen Teil des Portals Feedback **aus.** 
 
-    ![Schaltfläche "Bild der Feedback"](../../media/feedback.png)
+    ![Abbildung der Feedbackschaltfläche](../../media/feedback.png)
 
-2. Bewerten Sie Ihre Erfahrungen, und geben Sie Details darüber an, was Ihnen gefällt oder wo eine Verbesserung vorgenommen werden kann. Sie können auch festlegen, dass Sie über das Feedback kontaktiert werden möchten. 
+2. Bewerten Sie Ihre Erfahrung, und geben Sie Details dazu an, was Ihnen gefallen hat oder wo Verbesserungen vorgenommen werden können. Sie können auch auswählen, dass Sie über das Feedback kontaktiert werden. 
 
 3. Wählen Sie **Senden** aus.

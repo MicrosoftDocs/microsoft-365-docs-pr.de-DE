@@ -18,16 +18,32 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
-ms.openlocfilehash: 107447226b9b75f371e23f8dd06ec29860571c63
-ms.sourcegitcommit: 86f75cf77a7a446a79226ca530bd7b5eb39189cb
-ms.translationtype: HT
+ms.openlocfilehash: cd32ce21e18b16660c4292c98ebcc0f7cb982173
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49717031"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921566"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Vorbereitung für die Migration von Microsoft Cloud Deutschland
 
-| Schritte: | Beschreibung | Betrifft | Auswirkung |
+
+Verwenden Sie diese Links, um zu den für Ihre Organisation relevanten Schritten vor der Arbeit zu kommen:
+
+- Gehen Sie für alle Abonnements [wie unten angezeigt vor.](#applies-to-everyone)
+- Wenn Sie Exchange Online oder eine Hybridbereitstellung von Exchange verwenden, gehen Sie [wie in diesem Schritt vor.](#exchange-online)
+- Wenn Sie SharePoint Online verwenden, gehen Sie [wie in diesem Schritt vor.](#sharepoint-online)
+- Wenn Sie eine Lösung für die mobile Geräteverwaltung (Mobile Device Management, MDM) eines Drittanbieters verwenden, gehen [Sie wie in diesem Schritt vor.](#mobile)
+- Wenn Sie In Office 365 integrierte Drittanbieter-Dienst- oder Branchen-Apps verwenden, gehen Sie wie in diesem [Schritt vor.](#line-of-business-apps)
+- Wenn Sie auch über die in Ihrem Office 365-Abonnement enthaltenen Azure-Dienste hinaus verwenden, gehen Sie [wie in diesem Schritt vor.](#azure)
+- Wenn Sie auch Dynamics 365 verwenden, gehen Sie [wie hier vor.](#dynamics365)
+- Wenn Sie auch Power BI verwenden, gehen Sie [wie in diesem Schritt vor.](#power-bi)
+- For DNS changes, do [this step](#dns).
+- Wenn Sie Verbundidentität verwenden, gehen Sie [wie unten bezeichnet vor.](#federated-identity)
+
+## <a name="applies-to-everyone"></a>Gilt für alle
+
+| Schritt(e) | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
 | Stellen Sie die Netzwerkkonnektivität mit [Office 365-Dienst-URLs und -IP-Adressen](https://aka.ms/o365urls) sicher. | Alle Clients und Dienste des Kunden, die für den Zugriff auf den Office 365-Dienst verwendet werden, müssen auf die Endpunkte für Office 365-Dienste zugreifen können. | Alle Kunden, die umsteigen, und Kunden mit Netzwerkzugriff, der auf Microsoft Cloud Deutschland beschränkt ist. | Erforderliche Aktion. Wenn keine Aktion ausgeführt wird, kann dies zu Fehlern beim Dienst oder bei der Clientsoftware führen. |
 | Überprüfen und Vorbereiten von migrationsbezogenen DNS-Änderungen. | Der Kunde bereitet DNS-Einträge für Exchange Online und Exchange Online Protection (MX-Eintrag usw.) vor. | Exchange Online-Kunden | Dies ist eine empfohlene Aktion. „Keine Aktion“ bedeutet, dass E-Mails von migrierten Kunden über Microsoft Cloud Deutschland weitergeleitet werden, bis die Dienste von Microsoft Cloud Deutschland deaktiviert werden. |
@@ -44,17 +60,52 @@ ms.locfileid: "49717031"
 
 ## <a name="exchange-online"></a>Exchange Online
 
-| Schritte: | Beschreibung | Betrifft | Auswirkung |
+| Schritt(e) | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
 | Benachrichtigen Sie externe Partner über den bevorstehenden Umstieg zu Office 365-Diensten. | Verfügbare Adressraumkonfigurationen ermöglichen die Freigabe von Frei-/Gebucht-Informationen mit Office 365. | Exchange Online-Kunden, die die Freigabe von Kalendern und verfügbarem Adressraum aktiviert haben. | Erforderliche Aktion.  Wenn diese Aktion nicht ausgeführt wird, kann dies in einer späteren Phase der Kundenmigration zu einem Dienst- oder Clientausfall führen. |
 |||||
 
-Wenn Sie eine Exchange-Hybridumgebung haben:
+<!--
+Reworked as text:
 
-| Schritte: | Beschreibung | Betrifft | Auswirkung |
+**Step:** Notify external partners of the upcoming transition to Office 365 services.
+
+**Description:** Availability address space configurations allow sharing of free/busy information with Office 365. | Exchange Online customers who have enabled sharing calendar and availability address space.
+
+**Applies to:** Exchange Online customers who have enabled sharing calendar and availability address space.
+
+**Impact:** Required action.  Failure to do so may result in service or client failure at a later phase of customer migration.
+
+- **Step:** Notify external partners of the upcoming transition to Office 365 services.
+
+- **Description:** Availability address space configurations allow sharing of free/busy information with Office 365. | Exchange Online customers who have enabled sharing calendar and availability address space.
+
+- **Applies to:** Exchange Online customers who have enabled sharing calendar and availability address space.
+
+- **Impact:** Required action.  Failure to do so may result in service or client failure at a later phase of customer migration.
+
+--> 
+
+
+### <a name="for-hybrid-exchange"></a>Für Hybrid-Exchange
+
+| Schritt(e) | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
 | Deinstallieren Sie frühere Versionen des Assistenten für die Hybridkonfiguration (HCW), und installieren und führen Sie dann die neueste Version 17.0.5378.0 von [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) aus. | Die neueste Version des HCW enthält die erforderlichen Updates zur Unterstützung von Kunden, die von Microsoft Cloud Deutschland zu Office 365-Diensten wechseln. <br><br> Updates umfassen Änderungen an den lokalen Zertifikateinstellungen für den Sendeconnector und den Empfangsconnector. | Exchange Online-Kunden, die die Hybridbereitstellung ausführen | Erforderliche Aktion. Wenn Sie diese Aktion nicht ausführen, kann dies zu einem Dienst- oder Clientausfall führen. |
 |||||
+
+<!--
+Reworked as text:
+
+**Step:** Uninstall previous versions of Hybrid Configuration wizard (HCW), and then install and execute the latest version, 17.0.5378.0, from [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard).
+
+**Description:** The latest version of the HCW includes necessary updates to support customers who are transitioning from Microsoft Cloud Deutschland to Office 365 Services. <br><br> Updates include changes to on-premises certificate settings for Send connector and Receive connector.
+
+**Applies to:** Exchange Online customers running Hybrid deployment
+
+**Impact:** Required action. Failure to do so may result in service or client failure.
+-->
+
 
 ## <a name="sharepoint-online"></a>Microsoft Office SharePoint Online
 
@@ -90,6 +141,26 @@ Wenn Sie einen Drittanbieterdienst oder branchenspezifische Apps verwenden, die 
 | Ermitteln Sie, welche Azure-Dienste verwendet werden, und bereiten Sie die künftige Migration von Deutschland zum Office 365-Dienstmandanten vor, indem Sie mit ihren Partnern zusammenarbeiten. Befolgen Sie die Schritte im [Playbook zur Azure-Migration](https://docs.microsoft.com/azure/germany/germany-migration-main). | Die Migration von Azure-Ressourcen liegt in der Verantwortung des Kunden und erfordert manuellen Anstrengungen beim Ausführen der vorgeschriebenen Schritte. Für eine erfolgreiche Migration von Azure-Diensten ist es wichtig, dass Sie verstehen, welche Dienste in der Organisation verwendet werden. <br><br> Kunden von Office 365 Deutschland mit Azure-Abonnements unter derselben Identitätspartition (Organisation) müssen die von Microsoft vorgeschriebene Reihenfolge bei der Migration von Abonnement und Diensten einhalten. | Azure-Kunden | - Kunden können mehrere Azure-Abonnements haben, von denen jedes Abonnement Infrastruktur-, Dienst und Plattformkomponenten enthält. <br><br> - Administratoren sollten Abonnements und Beteiligte identifizieren, um sicherzustellen, dass im Rahmen dieses Migrationsereignisses eine schnelle Migration und Überprüfung möglich ist. <br><br> Wenn Sie die Migration dieser Abonnements und Azure-Komponenten nicht innerhalb der vorgegebenen Zeitachse erfolgreich abgeschlossen haben, wirkt sich dies auf den Abschluss des Office- und Azure AD-Umstiegs auf Office 365-Dienste aus. Dies kann zu Datenverlusten führen.  <br><br> - Eine Benachrichtigung über das Nachrichtencenter signalisiert den Punkt, an dem die von Kunden durchgeführte Migration beginnen kann. |
 |||||
 
+<!--
+Reworked as text:
+
+**Step:** Determine which Azure services are in use and prepare for future migration from Germany to the Office 365 services tenant by working with your partners. Follow the steps described in the [Azure migration playbook](https://docs.microsoft.com/azure/germany/germany-migration-main).
+
+**Description:** Migration of Azure resources is a customer responsibility and requires manual effort following prescribed steps. Understanding what services are in use in the organization is key to successful migration of Azure services. 
+
+Office 365 Germany customers who have Azure subscriptions under the same identity partition (organization) must follow the Microsoft-prescribed order when they can begin subscription and services migration.
+
+**Applies to:** Azure Customers
+
+**Impact:** 
+
+- Customers may have multiple Azure subscriptions, each subscription containing infrastructure, services, and platform components. 
+- Administrators should identify subscriptions and stakeholders to ensure prompt migration and validation is possible as part of this migration event.
+
+  Failing to successfully complete migration of these subscriptions and Azure components within the prescribed timeline will affect completion of the Office and Azure AD transition to Office 365 services and may result in data loss.
+- A Message center notification will signal the point at which customer-led migration can begin.
+-->
+
 ## <a name="dynamics-365"></a>Dynamics 365
 
 | Schritte: | Beschreibung | Betrifft | Auswirkung |
@@ -99,7 +170,7 @@ Wenn Sie einen Drittanbieterdienst oder branchenspezifische Apps verwenden, die 
 
 ## <a name="power-bi"></a>Power BI
 
-| Schritte: | Beschreibung | Betrifft | Auswirkung |
+| Schritt(e) | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
 | Entfernen von Objekten aus Power BI-Abonnements, die nicht von Power BI Microsoft Cloud Deutsch nach Office 365-Diensten migriert werden. | Für die Migration von Power BI-Diensten sind Kundenaktionen erforderlich, um bestimmte Artefakte wie Datasets und Dashboards zu löschen. | Power BI-Kunden | Administratoren müssen möglicherweise die folgenden Elemente aus Ihrem Abonnement entfernen: <br> - Echtzeit-Datasets (beispielsweise Streaming- oder Push-Datasets). <br> - Lokale Power BI-Konfiguration des Datengateways und die Datenquelle. |
 |||||
@@ -108,7 +179,7 @@ Wenn Sie einen Drittanbieterdienst oder branchenspezifische Apps verwenden, die 
 
 | Schritte: | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
-| Überprüfen und Vorbereiten der DNS-Änderung, wenn der aktuelle DNS einen MSOID-CNAME-Eintrag enthält. | Kundeneigene Änderungen an DNS-Zonen | Kunden von Office-Clientdiensten | Aktualisieren Sie die Gültigkeitsdauer (Time to Live, TTL) für kundeneigene DNS-Einträge auf 5 Minuten, wenn ein MSOID-CNAME vorhanden ist. |
+| Entfernen Sie MSOID, CName aus dem kundeneigenen DNS, wenn es jederzeit vor der Azure #A0 vorhanden ist. Eine Gültigkeitsdauer von 5 Minuten kann festgelegt werden, damit die Änderung schnell wirksam werden kann. | Kundeneigene Änderungen an DNS-Zonen | Kunden von Office-Clientdiensten | 
 |||||
 
 ## <a name="federated-identity"></a>Identitätsverbund

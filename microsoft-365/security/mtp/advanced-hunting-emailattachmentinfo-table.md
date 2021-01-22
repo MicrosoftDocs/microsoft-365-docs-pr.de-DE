@@ -1,10 +1,10 @@
 ---
 title: Tabelle "EmailAttachmentInfo" im Schema "Erweiterte Suche"
 description: Hier erfahren Sie mehr über die in der Tabelle "EmailAttachmentInfo" des Schemas "Erweiterte Suche" enthaltenen Informationen zu Anlagen.
-keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, EmailAttachmentInfo, Netzwerknachrichten-ID, Absender, Empfänger, Anlagen-ID, Anlagenname, Schadsoftware-Urteil
+keywords: Erweiterte Suche, Bedrohungssuche, Suche nach Cyberbedrohungen, Microsoft Threat Protection, Microsoft 365, Mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, EmailAttachmentInfo, Netzwerk-Nachrichten-ID, Absender, Empfänger, Anlagen-ID, Anlagenname, Schadsoftware-Bewert
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ mms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6d88303b34f78abc857e9aec749bf2f58090f43a
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.technology: m365d
+ms.openlocfilehash: c6cab4d813eba79e298d0082072888e3ef1ad1cd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667649"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927002"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -36,7 +37,7 @@ ms.locfileid: "49667649"
 
 
 
-Die `EmailAttachmentInfo` Tabelle im [Advanced Hunting](advanced-hunting-overview.md) -Schema enthält Informationen zu Anlagen in e-Mails, die von Microsoft Defender für Office 365 verarbeitet wurden. Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
+Die Tabelle im Schema für die erweiterte Suche enthält Informationen zu Anlagen in E-Mails, die von `EmailAttachmentInfo` Microsoft Defender für Office 365 verarbeitet wurden. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
 Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter [Referenz zur erweiterten Suche](advanced-hunting-schema-tables.md).
 
@@ -44,18 +45,18 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
 | `AttachmentId` | string | Eindeutiger Bezeichner für die E-Mail-Anlage |
-| `NetworkMessageId` | string | Eindeutiger Bezeichner für die von Microsoft 365 generierte e-Mail |
+| `NetworkMessageId` | string | Eindeutiger Bezeichner für die E-Mail, generiert von Microsoft 365 |
 | `SenderFromAddress` | string | Für E-Mail-Empfänger im E-Mail-Client in der FROM-Kopfzeile angezeigte Absender-E-Mail-Adresse |
 | `RecipientEmailAddress` | string | E-Mail-Adresse des Empfängers oder E-Mail-Adresse des Empfängers nach Erweiterung der Verteilerliste |
 | `FileName` | string | Name der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `FileType` | string | Dateierweiterungstyp |
 | `SHA256` | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
 | `MalwareFilterVerdict` | string | Bewertung des E-Mail-Filterstapels, ob die E-Mail Schadsoftware enthält: Schadsoftware, keine Schadsoftware |
-| `MalwareDetectionMethod` | string | Methode zum Erkennen von Schadsoftware in der e-Mail: Antischadsoftware-Modul, Datei Zuverlässigkeit, sichere Anlagen |
-| `SenderDisplayName` | Zeichenfolge | Name des Absenders, der im Adressbuch angezeigt wird, normalerweise eine Kombination aus einem bestimmten oder Vornamen, einer mittleren Initiale und einem Nachnamen oder Familiennamen |
-| `SenderObjectId` | Zeichenfolge | Eindeutiger Bezeichner für das Konto des Absenders in Azure AD |
-| `ThreatTypes` | Zeichenfolge | Urteil aus dem e-Mail-Filter Stapel, ob die e-Mail Malware, Phishing oder andere Bedrohungen enthält |
-| `ThreatNames` | Zeichenfolge | Erkennungsname für Schadsoftware oder andere gefundene Bedrohungen |
+| `MalwareDetectionMethod` | string | Methode zum Erkennen von Schadsoftware in der E-Mail: Antischalwaremodul, Dateire reputation, sichere Anlagen |
+| `SenderDisplayName` | string | Name des Absenders, der im Adressbuch angezeigt wird, in der Regel eine Kombination aus einem Vor- oder Vornamen, einem Vornamen und einem Nachnamen oder Nachnamen |
+| `SenderObjectId` | string | Eindeutige ID für das Konto des Absenders in Azure AD |
+| `ThreatTypes` | string | Überprüfen sie aus dem E-Mail-Filterstapel, ob die E-Mail Schadsoftware, Phishing oder andere Bedrohungen enthält. |
+| `ThreatNames` | string | Erkennungsname für Schadsoftware oder andere gefundene Bedrohungen |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
