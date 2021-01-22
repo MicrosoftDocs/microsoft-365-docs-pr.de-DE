@@ -1,8 +1,8 @@
 ---
-title: Daten Überwachungs & Berichterstellung – Sicherheitscenter
-description: Erfahren Sie, wie Sie Benutzeraktivitäten nachverfolgen können, die zu unbefugter Offenlegung von Daten im Microsoft 365 Security Center führen könnten.
-keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Überwachung, Bericht, Daten
-ms.prod: microsoft-365-enterprise
+title: Datenüberwachung & Berichterstellung – Security Center
+description: Erfahren Sie, wie Sie Benutzeraktivitäten nachverfolgen können, die zu einer nicht autorisierten Offenlegung von Daten im Microsoft 365 Security Center führen können.
+keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Überwachen, Bericht, Daten
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,25 +17,26 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5763c3e3152586285d27bcbc8214e1ee36641c3
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.technology: m365d
+ms.openlocfilehash: a71f7a7284c2734c4cab2d4e9501a17f4e9ec6e7
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429395"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930438"
 ---
-# <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Datenüberwachung und-Berichterstellung im Microsoft 365 Security Center
+# <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Datenüberwachung und Berichterstellung im Microsoft 365 Security Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Die Kategorie **Daten** hilft beim Nachverfolgen von Benutzeraktivitäten, die zu einer nicht autorisierten Datenweitergabe führen könnten. Dabei handelt es sich um die überarbeiten vorhandener DLP-Richtlinien Berichte sowie einen DLP-Richtlinien Übereinstimmungs Bericht eines Drittanbieters.
+Die Kategorie **Daten** hilft beim Nachverfolgen von Benutzeraktivitäten, die zu einer nicht autorisierten Datenweitergabe führen könnten. Dabei handelt es sich um die Überarbeitung vorhandener DLP-Richtlinienberichte sowie eines DLP-Übereinstimmungsberichts eines Drittanbieters.
 
 Sie sehen Folgendes:
 
 - Benutzer, die die meisten Dateien aus Cloud-Apps teilen
-- Wie viele DLP-Richtlinien Übereinstimmungen aufgetreten sind
+- Wie viele Übereinstimmungen mit der DLP-Richtlinie aufgetreten sind
 - Anzahl der gemeldeten DLP-Richtlinien-Außerkraftsetzungen oder falsch positiven Meldungen
-- Wie viele DLP-Richtlinien Übereinstimmungen in Cloud-Diensten von Drittanbietern über die Microsoft Cloud-App-Sicherheit aufgetreten sind
+- Wie viele Übereinstimmungen mit der DLP-Richtlinie wurden in Clouddiensten von Drittanbietern über Microsoft Cloud App Security erzielt?
 
-![Seite "Datenkategorie der Berichte"](../../media/data.png)
+![Seite "Datenkategorie von Berichten"](../../media/data.png)

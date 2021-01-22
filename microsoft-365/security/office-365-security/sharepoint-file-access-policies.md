@@ -1,10 +1,10 @@
 ---
-title: Empfohlene Richtlinien für sichere Dokumente – Microsoft 365 für Unternehmen | Microsoft-Dokumente
+title: Empfohlene Richtlinien für sichere Dokumente – Microsoft 365 Enterprise | Microsoft Docs
 description: Beschreibt die Richtlinien für Microsoft-Empfehlungen zum Schutz des Zugriffs auf SharePoint-Dateien.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,85 +17,86 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 7e8104e234bd1b724bc62fb1a9b401ab83a2bcb4
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.technology: mdo
+ms.openlocfilehash: a3485896cae5e41808cfd16a77d484a35c768a6d
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357527"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931770"
 ---
-# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Richtlinien Empfehlungen für das Sichern von SharePoint-Websites und-Dateien
+# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Richtlinienempfehlungen zum Sichern von SharePoint-Websites und -Dateien
 
-In diesem Artikel wird beschrieben, wie Sie die empfohlenen Identitäts-und Gerätezugriffs Richtlinien zum Schutz von SharePoint und OneDrive für Unternehmen implementieren. Dieser Leitfaden basiert auf den [allgemeinen Richtlinien für Identitäts-und Geräte Zugriff](identity-access-policies.md).
+In diesem Artikel wird beschrieben, wie Sie die empfohlenen Identitäts- und Gerätezugriffsrichtlinien zum Schutz von SharePoint und OneDrive for Business implementieren. Dieser Leitfaden baut auf den [allgemeinen Identitäts- und Gerätezugriffsrichtlinien auf.](identity-access-policies.md)
 
-Diese Empfehlungen basieren auf drei verschiedenen Ebenen von Sicherheit und Schutz für SharePoint-Dateien, die basierend auf der Granularität Ihrer Anforderungen angewendet werden können: **Baseline**, **sensibel** und **streng reguliert**. Weitere Informationen zu diesen Sicherheitsebenen und zu den empfohlenen Clientbetriebssystemen, auf die diese Empfehlungen verweisen, finden Sie in [der Übersicht](microsoft-365-policies-configurations.md).
+Diese Empfehlungen basieren auf drei verschiedenen Sicherheits- und Schutzebenen für SharePoint-Dateien, die basierend auf der Granularität Ihrer Anforderungen angewendet werden **können:** **Basisplan,** vertraulich und hochgradig **reguliert.** Weitere Informationen zu diesen Sicherheitsebenen und den empfohlenen Clientbetriebssystemen, auf die in diesen Empfehlungen verwiesen wird, finden Sie in [der Übersicht.](microsoft-365-policies-configurations.md)
 
-Zusätzlich zur Implementierung dieser Anleitung müssen Sie sicherstellen, dass Sie SharePoint-Websites mit der richtigen Schutz Menge konfigurieren, einschließlich der Festlegung geeigneter Berechtigungen für vertrauliche und stark regulierte Inhalte.
+Stellen Sie zusätzlich zur Implementierung dieser Anleitung sicher, dass Sie die SharePoint-Websites mit dem richtigen Schutz konfigurieren, einschließlich der Festlegung geeigneter Berechtigungen für vertrauliche und stark regulierte Inhalte.
 
-## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>Aktualisieren allgemeiner Richtlinien, um SharePoint und OneDrive für Unternehmen einzubeziehen
+## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>Aktualisieren gängiger Richtlinien für SharePoint und OneDrive for Business
 
-Zum Schutz von Dateien in SharePoint und OneDrive zeigt das folgende Diagramm, welche Richtlinien aus den allgemeinen Richtlinien für Identitäts-und Geräte Zugriff zu aktualisieren sind.
+Zum Schutz von Dateien in SharePoint und OneDrive zeigt das folgende Diagramm, welche Richtlinien aus den allgemeinen Identitäts- und Gerätezugriffsrichtlinien aktualisiert werden.
 
-[![Zusammenfassung der Richtlinienaktualisierungen für den Schutz des Zugriffs auf Teams und deren abhängigen Dienste](../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)
+[![Zusammenfassung der Richtlinienupdates zum Schutz des Zugriffs auf Teams und seine abhängigen Dienste](../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)
 
-[Anzeigen einer größeren Version dieses Bilds](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)
+[Sehen Sie sich eine größere Version dieses Bilds an.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)
 
-Wenn Sie SharePoint beim Erstellen der allgemeinen Richtlinien einbezogen haben, müssen Sie nur die neuen Richtlinien erstellen. Für Richtlinien für bedingten Zugriff umfasst SharePoint OneDrive.
+Wenn Sie SharePoint beim Erstellen der allgemeinen Richtlinien eingeschlossen haben, müssen Sie nur die neuen Richtlinien erstellen. Für Richtlinien für bedingten Zugriff enthält SharePoint OneDrive.
 
-Die neuen Richtlinien implementieren den Geräteschutz für vertrauliche und stark regulierte Inhalte, indem bestimmte Zugriffsanforderungen auf von Ihnen angegebene SharePoint-Websites angewendet werden.
+Die neuen Richtlinien implementieren den Geräteschutz für vertrauliche und stark regulierte Inhalte, indem bestimmte Zugriffsanforderungen auf von Ihnen festgelegte SharePoint-Websites angewendet werden.
 
-In der folgenden Tabelle sind die Richtlinien aufgeführt, die Sie entweder überprüfen und aktualisieren oder neu für SharePoint erstellen müssen. Die allgemeinen Richtlinien verweisen auf die zugehörigen Konfigurationsanweisungen im Artikel [Allgemeine Richtlinien für Identitäts-und Geräte Zugriff](identity-access-policies.md) .
+In der folgenden Tabelle sind die Richtlinien aufgeführt, die Sie entweder überprüfen und aktualisieren oder neue für SharePoint erstellen müssen. Die allgemeinen Richtlinien sind mit den zugehörigen Konfigurationsanweisungen im Artikel ["Allgemeine Identitäts- und Gerätezugriffsrichtlinien"](identity-access-policies.md) verknüpft.
 
 |Schutzebene|Richtlinien|Weitere Informationen|
 |---|---|---|
-|**Basisplan**|[MFA erforderlich, wenn das Anmelde Risiko *Mittel* groß oder *hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einbeziehen von SharePoint in die Zuordnung von Cloud-apps.|
-||[Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Einbeziehen von SharePoint in die Zuordnung von Cloud-apps.|
-||[Anwenden von App-Datenschutzrichtlinien](identity-access-policies.md#apply-app-data-protection-policies)|Stellen Sie sicher, dass alle empfohlenen apps in der Liste der Apps enthalten sind. Achten Sie darauf, die Richtlinie für jede Plattform (Ios, Android, Windows) zu aktualisieren.|
-||[Kompatible PCs erforderlich](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Einbeziehen von SharePoint in die Liste der Cloud-apps.|
-||[Verwenden von App-erzwungenen Einschränkungen in SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Fügen Sie diese neue Richtlinie hinzu. Dadurch wird Azure Active Directory (Azure AD) mitgeteilt, die in SharePoint angegebenen Einstellungen zu verwenden. Diese Richtlinie gilt für alle Benutzer, wirkt sich jedoch nur auf den Zugriff auf Websites aus, die in SharePoint-Zugriffsrichtlinien enthalten sind.|
-|**Vertraulich**|[MFA erforderlich, wenn das Anmelde Risiko *niedrig*, *Mittel* oder *hoch* ist](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einbeziehen von SharePoint in die Zuweisungen von Cloud-apps.|
-||[Erfordern von kompatiblen PCs *und* mobilen Geräten](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Schließen Sie SharePoint in die Liste der Cloud-apps ein.|
-||[SharePoint-Zugriffssteuerungsrichtlinie](#sharepoint-access-control-policies): zulassen des reinen Browser Zugriffs auf bestimmte SharePoint-Websites von nicht verwalteten Geräten.|Dadurch wird verhindert, dass Dateien bearbeitet und heruntergeladen werden. Verwenden von PowerShell zum Angeben von Websites|
-|**Streng geregelt**|[*Immer* MFA erforderlich](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Einbeziehen von SharePoint in die Zuordnung von Cloud-apps.|
-||[SharePoint-Zugriffssteuerungsrichtlinie](#use-app-enforced-restrictions-in-sharepoint): Blockieren des Zugriffs auf bestimmte SharePoint-Websites von nicht verwalteten Geräten.|Verwenden von PowerShell zum Angeben von Websites|
+|**Basisplan**|[MFA erforderlich, wenn das Anmelderisiko *mittel oder* hoch *ist*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Fügen Sie SharePoint in die Zuweisung von Cloud-Apps ein.|
+||[Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Fügen Sie SharePoint in die Zuweisung von Cloud-Apps ein.|
+||[Anwenden von APP-Datenschutzrichtlinien](identity-access-policies.md#apply-app-data-protection-policies)|Stellen Sie sicher, dass alle empfohlenen Apps in der Liste der Apps enthalten sind. Achten Sie darauf, die Richtlinie für jede Plattform (iOS, Android, Windows) zu aktualisieren.|
+||[Kompatible PCs erforderlich](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Fügen Sie SharePoint in die Liste der Cloud-Apps ein.|
+||[Verwenden erzwungener Einschränkungen für Apps in SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Fügen Sie diese neue Richtlinie hinzu. Dies weist Azure Active Directory (Azure AD) an, die in SharePoint angegebenen Einstellungen zu verwenden. Diese Richtlinie gilt für alle Benutzer, betrifft jedoch nur den Zugriff auf Websites, die in den SharePoint-Zugriffsrichtlinien enthalten sind.|
+|**Vertraulich**|[MFA erforderlich, wenn das Anmelderisiko *niedrig,* *mittel oder* hoch *ist*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Fügen Sie SharePoint in die Zuweisungen von Cloud-Apps ein.|
+||[Kompatible *PCs* und mobile Geräte erforderlich](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Fügen Sie SharePoint in die Liste der Cloud-Apps ein.|
+||[SharePoint-Zugriffssteuerungsrichtlinie:](#sharepoint-access-control-policies)Zulassen des ausschließlichen Browserzugriffs auf bestimmte SharePoint-Websites von nicht verwalteten Geräten aus.|Dadurch wird das Bearbeiten und Herunterladen von Dateien verhindert. Verwenden Sie PowerShell, um Websites anzugeben.|
+|**Streng geregelt**|[*MFA* immer erforderlich](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Fügen Sie SharePoint in die Zuweisung von Cloud-Apps ein.|
+||[SharePoint-Zugriffssteuerungsrichtlinie:](#use-app-enforced-restrictions-in-sharepoint)Blockieren des Zugriffs auf bestimmte SharePoint-Websites von nicht verwalteten Geräten.|Verwenden Sie PowerShell, um Websites anzugeben.|
 |
 
-## <a name="use-app-enforced-restrictions-in-sharepoint"></a>Verwenden von App-erzwungenen Einschränkungen in SharePoint
+## <a name="use-app-enforced-restrictions-in-sharepoint"></a>Verwenden von von apps erzwungenen Einschränkungen in SharePoint
 
-Wenn Sie Zugriffssteuerungen in SharePoint implementieren, müssen Sie diese Richtlinie für den bedingten Zugriff in Azure AD erstellen, um Azure AD zum Erzwingen der in SharePoint konfigurierten Richtlinien zu informieren. Diese Richtlinie gilt für alle Benutzer, wirkt sich jedoch nur auf den Zugriff auf die Websites aus, die Sie mithilfe von PowerShell angeben, wenn Sie die Zugriffssteuerungen in SharePoint erstellen.
+Wenn Sie Zugriffssteuerungen in SharePoint implementieren, müssen Sie diese Richtlinie für bedingten Zugriff in Azure AD erstellen, damit Azure AD die richtlinien erzwingen kann, die Sie in SharePoint konfigurieren. Diese Richtlinie gilt für alle Benutzer, betrifft jedoch nur den Zugriff auf die Websites, die Sie mithilfe von PowerShell angeben, wenn Sie die Zugriffssteuerungen in SharePoint erstellen.
 
-Informationen zum Konfigurieren dieser Richtlinie finden Sie unter "blockieren oder begrenzen des Zugriffs auf bestimmte SharePoint-Websitesammlungen oder OneDrive-Konten" unter [Steuern des Zugriffs von nicht verwalteten Geräten](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
+Informationen zum Konfigurieren dieser Richtlinie finden Sie unter "Blockieren oder Einschränken des Zugriffs auf bestimmte #A0 oder OneDrive-Konten" im Thema "Steuern des Zugriffs von nicht [verwalteten Geräten".](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
 
-## <a name="sharepoint-access-control-policies"></a>SharePoint-Zugriffssteuerungsrichtlinien
+## <a name="sharepoint-access-control-policies"></a>Zugriffssteuerungsrichtlinien für SharePoint
 
-Microsoft empfiehlt, Inhalte auf SharePoint-Websites mit vertraulichen und streng reglementierten Inhalten mit Gerätezugriffs Steuerelementen zu schützen. Hierzu erstellen Sie eine Richtlinie, die den Schutzgrad und die Websites angibt, auf die der Schutz angewendet werden soll.
+Microsoft empfiehlt, Inhalte auf SharePoint-Websites mit vertraulichen und hochgradig regulierten Inhalten mit Gerätezugriffssteuerungen zu schützen. Erstellen Sie dazu eine Richtlinie, die die Schutzebene und die Websites angibt, auf die der Schutz angewendet werden soll.
 
-- Vertrauliche Websites: nur Browser Zugriff zulassen. Dadurch wird verhindert, dass Benutzer Dateien bearbeiten und herunterladen können.
+- Vertrauliche Websites: Nur Browserzugriff zulassen. Dadurch wird verhindert, dass Benutzer Dateien bearbeiten und herunterladen.
 - Stark regulierte Websites: Blockieren des Zugriffs von nicht verwalteten Geräten.
 
-Weitere Informationen finden Sie unter "blockieren oder begrenzen des Zugriffs auf bestimmte SharePoint-Websitesammlungen oder OneDrive-Konten" im [Steuerelement Zugriff von nicht verwalteten Geräten](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
+Weitere Informationen finden Sie unter "Blockieren oder Einschränken des Zugriffs auf bestimmte #A0 oder OneDrive-Konten" im Steuerelement für den Zugriff von [nicht verwalteten Geräten.](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
 
-## <a name="how-these-policies-work-together"></a>Zusammenarbeit dieser Richtlinien
+## <a name="how-these-policies-work-together"></a>Funktionsweise dieser Richtlinien
 
-Es ist wichtig zu wissen, dass die Berechtigungen für SharePoint-Websites in der Regel auf geschäftlichen Anforderungen für den Zugriff auf Websites basieren. Diese Berechtigungen werden von Websitebesitzern verwaltet und können sehr dynamisch sein. Durch die Verwendung von SharePoint-Gerätezugriffs Richtlinien wird der Schutz für diese Websites sichergestellt, unabhängig davon, ob Benutzer einer Azure Ad Gruppe zugeordnet sind, die dem Basisplan, dem vertraulichen oder dem hoch regulierten Schutz unterliegt.
+Es ist wichtig zu wissen, dass Berechtigungen für die SharePoint-Website in der Regel auf geschäftsbezogenen Zugriffsberechtigungen für Websites basieren. Diese Berechtigungen werden von Websitebesitzern verwaltet und können hochgradig dynamisch sein. Die Verwendung von Richtlinien für den Gerätezugriff in SharePoint gewährleistet den Schutz dieser Websites, unabhängig davon, ob Benutzer einer Azure AD-Gruppe zugewiesen sind, die dem grundlegenden, vertraulichen oder hochgradig regulierten Schutz zugeordnet ist.
 
-Die folgende Abbildung enthält ein Beispiel dafür, wie SharePoint-Gerätezugriffs Richtlinien den Zugriff auf Websites für einen Benutzer schützen.
+Die folgende Abbildung enthält ein Beispiel dafür, wie SharePoint-Gerätezugriffsrichtlinien den Zugriff auf Websites für einen Benutzer schützen.
 
-[![Beispiel für den Schutz von Websites durch SharePoint-Gerätezugriffs Richtlinien](../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)
+[![Beispiel für den Schutz von Websites durch SharePoint-Gerätezugriffsrichtlinien](../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)
 
-[Anzeigen einer größeren Version dieses Bilds](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)
+[Sehen Sie sich eine größere Version dieses Bilds an.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)
 
-James verfügt über grundlegende Richtlinien für bedingten Zugriff, aber ihm kann der Zugriff auf SharePoint-Websites mit vertraulichem oder stark reguliertem Schutz gewährt werden.
+James hat grundlegende Richtlinien für bedingten Zugriff zugewiesen, aber er kann Zugriff auf SharePoint-Websites mit vertraulichem oder hochgradig regulierten Schutz erhalten.
 
-- Wenn James auf eine vertrauliche oder stark regulierte Website zugreift, die er bei der Verwendung seines PCs verwendet, wird sein Zugriff gewährt, solange sein PC konform ist.
-- Wenn James auf eine vertrauliche Website zugreift, die er bei der Verwendung seines nicht verwalteten Telefons verwendet, das für Basisbenutzer zulässig ist, erhält er aufgrund der für diese Website konfigurierten Gerätezugriffs Richtlinie nur Browser Zugriff auf die vertrauliche Website.
-- Wenn James auf eine stark regulierte Website zugreift, die er bei der Verwendung seines nicht verwalteten Telefons verwendet, wird er aufgrund der für diese Website konfigurierten Zugriffsrichtlinie blockiert. Er kann nur über seinen verwalteten und kompatiblen PC auf diese Website zugreifen.
+- Wenn James auf eine vertrauliche oder stark regulierte Website zu zugegriffen hat, ist er Mitglied der Verwendung seines PCs, wird sein Zugriff gewährt, solange sein PC kompatibel ist.
+- Wenn James auf eine vertrauliche Website zukommt, ist er Mitglied der Verwendung seines nicht verwalteten Telefons, das für Basisbenutzer zulässig ist, und erhält aufgrund der für diese Website konfigurierten Gerätezugriffsrichtlinie nur Browserzugriff auf die vertrauliche Website.
+- Wenn James auf eine stark regulierte Website zu zugegriffen hat, ist er Mitglied der Verwendung seines nicht verwalteten Telefons, wird er aufgrund der für diese Website konfigurierten Zugriffsrichtlinie blockiert. Er kann nur über seinen verwalteten und kompatiblen PC auf diese Website zugreifen.
 
 ## <a name="next-step"></a>Nächster Schritt
 
-![Schritt 4: Richtlinien für Microsoft 365 Cloud-apps](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Schritt 4: Richtlinien für Microsoft 365-Cloud-Apps](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
-Konfigurieren von Richtlinien für bedingten Zugriff für:
+Konfigurieren Sie Richtlinien für bedingten Zugriff für:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)

@@ -1,7 +1,7 @@
 ---
-title: Identitäts- und Gerätezugriffsrichtlinien zum Zulassen des Gast- und externen Benutzerzugriffs auf B2B - Microsoft 365 Enterprise | Microsoft Docs
+title: Identitäts- und Gerätezugriffsrichtlinien zum Zulassen des Gast- und externen Benutzerzugriffs – Microsoft 365 Enterprise | Microsoft Docs
 description: Beschreibt die empfohlenen Richtlinien für bedingten Zugriff und verwandte Richtlinien zum Schutz des Zugriffs von Gästen und externen Benutzern.
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
 ms.author: josephd
 author: JoeDavies-MSFT
@@ -17,12 +17,13 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 4ee6cb93e5c943d704950e28ba4dc70a246429a6
-ms.sourcegitcommit: 89097fb648987567b9493b9d94c85c5990562874
+ms.technology: mdo
+ms.openlocfilehash: 2ef494f8e383f50f16b1e64f6387b6e5d62459c4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49845076"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932610"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Richtlinien zum Zulassen des Gastzugriffs und des externen B2B-Benutzerzugriffs
 
@@ -48,7 +49,7 @@ In der folgenden Tabelle sind die Richtlinien aufgeführt, die Sie entweder erst
 ||[MFA erforderlich, wenn das Anmelderisiko *mittel oder* hoch *ist*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Ändern Sie diese Richtlinie, um Gäste und externe Benutzer auszuschließen.|
 ||[Kompatible PCs erforderlich](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Ändern Sie diese Richtlinie, um Gäste und externe Benutzer auszuschließen.|
 
-Wenn Sie Gäste und externe Benutzer in Richtlinien für bedingten Zugriff ein- oder ausschließen möchten, aktivieren Sie für Aufgaben > Benutzer und Gruppen **> Ein-** oder Ausschließen alle Gastbenutzer und **externen Benutzer.**
+Wenn Sie Gäste und externe Benutzer in Richtlinien für bedingten Zugriff ein- oder ausschließen möchten, aktivieren Sie für Aufgaben > Benutzer und Gruppen **> Ein-** oder Ausschließen alle Gast- und **externen Benutzer.**
 
 ![Bildschirmaufnahme von Steuerelementen für das Ausschließen von Gästen und externen Benutzern](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 

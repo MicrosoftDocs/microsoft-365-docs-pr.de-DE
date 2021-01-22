@@ -4,7 +4,7 @@ description: Microsoft 365 Defender ist eine koordinierte Bedrohungsschutzlösun
 keywords: Einführung in Microsoft Threat Protection, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Geräte, Gerät, Identität, Benutzer, Daten, Anwendungen, Vorfälle, automatisierte Untersuchung und Wartung, erweiterte Suche
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: 1884f0dae87bf068d134430ada78e44d713fd4d9
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: m365d
+ms.openlocfilehash: e80a3d094ac8f5724bbe7daf72a0ded7d30091ba
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780520"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930570"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -60,7 +61,7 @@ In diesem interaktiven Leitfaden erfahren Sie, wie Sie Ihre Organisation mit Mic
 
 
 Microsoft 365 Defender Suite schützt: 
-- **Endpunkte mit Microsoft Defender for Endpoint** – Microsoft Defender for Endpoint ist eine einheitliche Endpunktplattform für vorbeugenden Schutz, Erkennung nach Sicherheitsverletzungen, automatisierte Untersuchung und Reaktion. 
+- **Endpunkte mit Microsoft Defender for Endpoint** – Microsoft Defender für Endpunkte ist eine einheitliche Endpunktplattform für vorbeugenden Schutz, Erkennung nach Sicherheitsverletzungen, automatisierte Untersuchung und Reaktion. 
 - **E-Mail und Zusammenarbeit mit Microsoft Defender für Office 365** – Defender für Office 365 schützt Ihre Organisation vor böswilligen Bedrohungen durch E-Mail-Nachrichten, Links (URLs) und Tools für die Zusammenarbeit. 
 - **Identitäten** mit Microsoft Defender for Identity und Azure AD Identity Protection – Microsoft Defender for Identity verwendet Active Directory-Signale, um fortgeschrittene Bedrohungen, gefährdete Identitäten und böswillige Insideraktionen zu identifizieren, zu erkennen und zu untersuchen, die gegen Ihre Organisation gerichtet sind. 
 - **Anwendungen mit Microsoft Cloud App Security** – Microsoft Cloud App Security ist eine umfassende saaS-übergreifende Lösung, die tiefe Sichtbarkeit, starke Datenkontrollen und erweiterten Bedrohungsschutz für Ihre Cloud-Apps bietet. 

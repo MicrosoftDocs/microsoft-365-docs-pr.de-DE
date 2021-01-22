@@ -4,7 +4,7 @@ description: Informationen zu Informationen im Zusammenhang mit der Azure Active
 keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, Mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, Datei, IP-Adresse, Gerät, Computer, Benutzer, Konto, Identität, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 1830eeec674c4948bd6492780ef8a0a8039111b8
-ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
+ms.technology: m365d
+ms.openlocfilehash: b574717d0ba5621d85c8e73f36ddc72b062a1494
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784287"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931038"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -38,7 +39,7 @@ ms.locfileid: "49784287"
 
  
 
-Die Tabelle im Schema für die erweiterte Suche enthält Informationen zu interaktiven und `AADSignInEventsBeta` nicht interaktiven Azure Active Directory-Anmeldungen. Erfahren Sie mehr über Anmeldungen in Azure Active Directory-Anmeldeaktivitätsberichten [– Vorschau.](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins)
+Die Tabelle im Schema für die erweiterte Suche `AADSignInEventsBeta` enthält Informationen zu interaktiven und nicht interaktiven Azure Active Directory-Anmeldungen. Erfahren Sie mehr über Anmeldungen in [Azure Active Directory-Anmeldeaktivitätsberichten – Vorschau.](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins)
 
 Verwenden Sie diese Referenz, um Abfragen zu erstellen, die Informationen aus der Tabelle zurückgeben.
 Informationen zu anderen Tabellen im Schema „Erweiterte Suche“ finden Sie unter [Referenz zur erweiterten Suche](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
@@ -56,7 +57,7 @@ Informationen zu anderen Tabellen im Schema „Erweiterte Suche“ finden Sie un
 | `ErrorCode`                       | int        | Enthält den Fehlercode, wenn ein Anmeldefehler auftritt. Eine Beschreibung eines bestimmten Fehlercodes finden Sie unter <https://aka.ms/AADsigninsErrorCodes> .                                     |
 | `CorrelationId`                   | string        | Eindeutiger Bezeichner des Anmeldeereigniss                                                                                                                                              |
 | `SessionId`                       | string        | Eindeutige Nummer, die einem Benutzer vom Server einer Website für die Dauer des Besuchs oder der Sitzung zugewiesen wurde                                                                                     |
-| `AccountDisplayName`              | string        | Name des Kontobenutzers, der im Adressbuch angezeigt wird. In der Regel eine Kombination aus einem Vor- oder Vornamen, einem Vornamen und einem Nachnamen oder Nachnamen.                             |
+| `AccountDisplayName`              | string        | Name des Kontobenutzers, der im Adressbuch angezeigt wird. In der Regel eine Kombination aus einem Vor- oder Vornamen, einer mittleren Initiale und einem Nachnamen oder Nachnamen.                             |
 | `AccountObjectId`                 | string        | Eindeutiger Bezeichner für das Konto in Azure AD                                                                                                                                       |
 | `AccountUpn`                      | string        | Benutzerprinzipalname (UPN) des Kontos                                                                                                                                            |
 | `IsExternalUser`                  | int        | Gibt an, ob der angemeldete Benutzer extern ist. Mögliche Werte: -1 (nicht festgelegt), 0 (nicht extern), 1 (extern).                                                                   |
@@ -77,7 +78,7 @@ Informationen zu anderen Tabellen im Schema „Erweiterte Suche“ finden Sie un
 | `TokenIssuerType`                 | int        | Gibt an, ob der Tokenherausgeber Azure Active Directory (0) oder Active Directory Federation Services (1) ist.                                                                             |
 | `RiskLevelAggregated`                       | int        | Aggregierte Risikostufe während der Anmeldung. Mögliche Werte: 0 (aggregierte Risikostufe nicht festgelegt), 1 (keine), 10 (niedrig), 50 (mittel) oder 100 (hoch).                               |
 | `RiskDetails`                      | int        | Details zum risikoigen Status des angemeldeten Benutzers                                                                                                                            |
-| `RiskState`                       | int        | Gibt den riskante Benutzerstatus an. Mögliche Werte: 0 (keine), 1 (als sicher bestätigt), 2 (behoben), 3 (verworfen), 4 (gefährdet) oder 5 (als gefährdet bestätigt).                                |
+| `RiskState`                       | int        | Gibt den riskante Benutzerstatus an. Mögliche Werte: 0 (keine), 1 (bestätigt sicher), 2 (behoben), 3 (verworfen), 4 (gefährdet) oder 5 (als gefährdet bestätigt).                                |
 | `UserAgent`                       | string        | Benutzer-Agent-Informationen aus dem Webbrowser oder einer anderen Clientanwendung                                                                                                             |
 | `ClientAppUsed`                   | string        | Gibt die verwendete Client-App an.                                                                                                                                                       |
 | `Browser`                         | string        | Details zur Version des Browsers, der für die Anmeldung verwendet wird                                                                                                                            |

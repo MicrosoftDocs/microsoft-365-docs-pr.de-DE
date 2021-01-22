@@ -1,9 +1,9 @@
 ---
-title: Genehmigen oder Ablehnen ausstehender Aktionen im Anschluss an eine automatisierte Untersuchung
+title: Genehmigen oder Ablehnen ausstehender Aktionen nach einer automatischen Untersuchung
 description: Verwenden des Info-Centers zum Verwalten von Aktionen im Zusammenhang mit automatisierten Untersuchungen und Reaktionen
 keywords: Aktion, Center, autoair, automatisiert, Untersuchung, Reaktion, Problembehebung
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,14 +21,15 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 12/09/2020
-ms.openlocfilehash: b34f4a532571d6215500ab2bec022489fd462d0f
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: m365d
+ms.openlocfilehash: 3776dea4a5a24f4695a5c617325af14f1f03494f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683367"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930378"
 ---
-# <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Genehmigen oder Ablehnen ausstehender Aktionen im Anschluss an eine automatisierte Untersuchung
+# <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Genehmigen oder Ablehnen ausstehender Aktionen nach einer automatischen Untersuchung
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,12 +40,12 @@ ms.locfileid: "49683367"
 Wenn eine automatisierte Untersuchung ausgeführt wird, kann dies zu einer oder mehreren empfohlenen [Abhilfemaßnahmen](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) führen, für die eine Genehmigung erforderlich ist. So kann beispielsweise ein Cluster von E-Mail-Nachrichten gelöscht oder eine in Quarantäne befindliche Datei entfernt werden müssen. Es ist wichtig, ausstehende Aktionen so bald wie möglich zu genehmigen (oder abzulehnen), damit Ihre automatisierten Untersuchungen zeitnah fortgesetzt und abgeschlossen werden können. 
 
 > [!TIP]
-> Wenn Sie glauben, dass durch automatisierte Ermittlungs-und Antwortfunktionen in Microsoft 365 Defender etwas übersehen oder fälschlicherweise erkannt wurde, lassen Sie es uns wissen! Weitere Informationen finden Sie unter [How to Report false positives/negatives in Automated Investigation and Response (Air) Capabilities in Microsoft 365 Defender](mtp-autoir-report-false-positives-negatives.md).
+> Wenn Sie denken, dass etwas von automatisierten Untersuchungs- und Antwortfeatures in Microsoft 365 Defender übersehen oder falsch erkannt wurde, lassen Sie es uns wissen! Erfahren [Sie, wie Sie falsch positive/negative Ergebnisse in automatisierten Untersuchungs- und Reaktionsfunktionen (AIR) in Microsoft 365 Defender melden.](mtp-autoir-report-false-positives-negatives.md)
 
-Ausstehende Aktionen können mithilfe des [Aktions Centers](#review-a-pending-action-in-the-action-center) oder der [Ansicht Details der Untersuchung](#review-a-pending-action-in-the-investigation-details-view)überprüft und genehmigt werden.
+Ausstehende Aktionen können mithilfe des [](#review-a-pending-action-in-the-action-center) Aktionscenters oder der Ansicht "Untersuchungsdetails" überprüft [und genehmigt werden.](#review-a-pending-action-in-the-investigation-details-view)
 
 > [!NOTE]
-> Sie müssen über [geeignete Berechtigungen verfügen](mtp-action-center.md#required-permissions-for-action-center-tasks), um Abhilfemaßnahmen genehmigen oder ablehnen zu können. Weitere Informationen finden Sie unter [Prerequisites for Automated Investigation and Response in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
+> Sie müssen über [geeignete Berechtigungen verfügen](mtp-action-center.md#required-permissions-for-action-center-tasks), um Abhilfemaßnahmen genehmigen oder ablehnen zu können. Weitere Informationen finden Sie unter [Voraussetzungen für die automatisierte Untersuchung und Reaktion in Microsoft 365 Defender](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 
 ## <a name="review-a-pending-action-in-the-action-center"></a>Überprüfen einer ausstehenden Aktion im Info-Center
 
@@ -66,7 +67,31 @@ Ausstehende Aktionen können mithilfe des [Aktions Centers](#review-a-pending-ac
 
 2. Wählen Sie ein Element in der Liste aus, und wählen Sie dann **Genehmigen** oder **Ablehnen** aus.
 
+## <a name="undo-completed-actions"></a>Abgeschlossene Aktionen rückgängig machen
+
+Wenn Sie festgestellt haben, dass ein Gerät oder eine Datei keine Bedrohung darstellt, können Sie die ergriffenen Abhilfemaßnahmen rückgängig machen, unabhängig davon, ob diese Aktionen automatisch oder manuell ausgeführt wurden. Im Aktionscenter können Sie auf **der** Registerkarte "Verlauf" eine der folgenden Aktionen rückgängig machen:  
+
+| Aktionsquelle | Unterstützte Aktionen |
+|:---|:---|
+| – Automatisierte Untersuchung <br/>– Microsoft Defender Antivirus <br/>– Manuelle Reaktionsaktionen | - Gerät isolieren <br/>– Einschränken der Codeausführung <br/>– Isolieren einer Datei <br/>– Entfernen eines Registrierungsschlüssels <br/>– Beenden eines Diensts <br/>– Deaktivieren eines Treibers <br/>– Entfernen eines geplanten Vorgangs |
+
+### <a name="to-undo-a-remediation-action"></a>So machen Sie eine Wartungsaktion rückgängig
+
+1. Wechseln Sie zum Aktionscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ), und melden Sie sich an.
+
+2. Wählen Sie **auf der** Registerkarte "Verlauf" eine Aktion aus, die Rückgängig gemacht werden soll.
+
+3. Wählen Sie im Bereich auf der rechten Seite des Bildschirms **"Rückgängig" aus.**
+
+### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>So entfernen Sie eine Datei auf mehreren Geräten aus der Quarantäne 
+
+1. Wechseln Sie zum Aktionscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ), und melden Sie sich an.
+
+2. Wählen Sie **auf der Registerkarte** "Verlauf" eine Datei mit dem Aktionstyp **"Quarantäne" aus.**
+
+3. Wählen Sie im Bereich auf der rechten Seite des Bildschirms **"Auf X** weitere Instanzen dieser Datei anwenden" und dann **"Rückgängig" aus.**
+
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Anzeigen der Details und Ergebnisse einer automatischen Untersuchung](mtp-autoir-results.md)
-- [Behandeln von falsch positiven/negativen Ergebnissen in automatisierten Ermittlungs-und Antwortfunktionen](mtp-autoir-report-false-positives-negatives.md)
+- [Behandeln falsch positiver/negativer Ergebnisse in automatisierten Untersuchungs- und Reaktionsfunktionen](mtp-autoir-report-false-positives-negatives.md)

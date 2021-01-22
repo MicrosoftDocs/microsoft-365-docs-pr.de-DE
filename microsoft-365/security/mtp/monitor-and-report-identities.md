@@ -1,8 +1,8 @@
 ---
-title: Identitätsüberwachung und-Berichterstellung-Sicherheitscenter
-description: In diesem Artikel wird beschrieben, wie Sie die Benutzer in Ihrer Organisation überwachen und verdächtige oder riskante Verhaltensweisen im Auge behalten können.
-keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Überwachung, Bericht, Identität, Benutzer
-ms.prod: microsoft-365-enterprise
+title: Identitätsüberwachung und -berichterstellung – Security Center
+description: Beschreibt, wie Sie die Benutzer in Ihrer Organisation überwachen und verdächtige oder riskante Verhaltensweisen nachverfolgen können.
+keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, überwachen, Bericht, Identität, Benutzer
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,26 +17,27 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2f938fba565d52658776d4a7573592026695f9ee
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.technology: m365d
+ms.openlocfilehash: 31c000871fe644f614da597912698792c5dc72ca
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429371"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930534"
 ---
-# <a name="identity-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Identitätsüberwachung und-Berichterstellung im Microsoft 365 Security Center
+# <a name="identity-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Identitätsüberwachung und -berichterstellung im Microsoft 365 Security Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Überwachen der Identitäten in Ihrer Organisation und verfolgen von verdächtigen oder riskanten Verhaltensweisen In der Kategorie **Identitäten** von **Berichten**können Sie Folgendes nachverfolgen:
+Überwachen Sie die Identitäten in Ihrer Organisation, und verfolgen Sie verdächtige oder riskante Verhaltensweisen. In der **Kategorie "Identitäten"** **von "Berichte"** können Sie:
 
 * Benutzer, die am häufigsten entdeckte Anomalien aufweisen
 * Anzahl der Benutzer, die mithilfe von Richtlinien für den bedingten Zugriff als gefährdet eingestuft wurden
 * Anzahl globaler Administratoren in Ihrer Organisation
 
-![Seite "Identitys category of Reports"](../../media/identities.png)
+![Kategorie "Identitäten" der Seite "Berichte"](../../media/identities.png)
 
-Für Benutzer mit bestimmten Erkennungen können Sie die spezifische Warnung und Untersuchung im Microsoft Defender Security Center durchsuchen. Zu den Erkennungen gehören Anomalien wie Benutzer, die sich über unbekannte Speicherorte anmelden.
+Für Benutzer mit bestimmten Erkennungen können Sie die spezifische Warnung untersuchen und im Microsoft Defender Security Center untersuchen. Zu den Erkennungen gehören Anomalien, z. B. Benutzer, die sich von unbekannten Orten aus anmelden.
 
-Eine vollständige Gruppe von Risikoereignissen finden Sie unter [Azure Active Directory Risk Events](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-risk-events).
+Eine vollständige Reihe von Risikoereignissen finden Sie unter [Azure Active Directory-Risikoereignisse.](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-risk-events)

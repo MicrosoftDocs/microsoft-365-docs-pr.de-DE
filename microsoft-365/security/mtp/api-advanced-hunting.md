@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365 Defender Advanced Hunting API
-description: Hier erfahren Sie, wie Sie erweiterte Jagd Abfragen mit der erweiterten Jagd-API von Microsoft 365 Defender ausführen können.
+title: Microsoft 365 Defender advanced hunting API
+description: Erfahren Sie, wie Sie Abfragen für die erweiterte Suche mit der Api für die erweiterte Suche von Microsoft 365 Defender ausführen.
 keywords: Erweiterte Suche, APIs, API, MTP, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e7cd9192ec25e01ed06b77cb2b39357cb9df79bd
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 4213773c3305c28f0913013d8f7634c083811f52
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719380"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932082"
 ---
-# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender Advanced Hunting API
+# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender Advanced hunting API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,34 +38,34 @@ ms.locfileid: "49719380"
 > [!IMPORTANT]
 > Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
 
-[Advanced Hunting](advanced-hunting-overview.md) ist ein Tool zur Gefahren Suche, das [speziell konstruierte Abfragen](advanced-hunting-query-language.md) verwendet, um die letzten 30 Tage der Ereignisdaten in Microsoft 365 Defender zu untersuchen. Sie können erweiterte Jagd Abfragen verwenden, um ungewöhnliche Aktivitäten zu prüfen, mögliche Bedrohungen zu erkennen und sogar auf Angriffe zu reagieren. Die erweiterte Jagd-API ermöglicht das Programmgesteuertes von Abfrageereignis Daten.
+[Die erweiterte Suche](advanced-hunting-overview.md) ist ein Tool zur [Bedrohungssuche,](advanced-hunting-query-language.md) das speziell konstruierte Abfragen verwendet, um die Ereignisdaten der letzten 30 Tage in Microsoft 365 Defender zu untersuchen. Sie können erweiterte Suchabfragen verwenden, um ungewöhnliche Aktivitäten zu untersuchen, mögliche Bedrohungen zu erkennen und sogar auf Angriffe zu reagieren. Mit der API für die erweiterte Suche können Sie Ereignisdaten programmgesteuert abfragen.
 
-## <a name="quotas-and-resource-allocation"></a>Kontingente und Ressourcenzuteilung
+## <a name="quotas-and-resource-allocation"></a>Kontingente und Ressourcenzuordnung
 
 Die folgenden Bedingungen beziehen sich auf alle Abfragen.
 
-1. Abfragen erforschen und Zurückgeben von Daten aus den letzten 30 Tagen.
+1. Abfragen untersuchen und geben Daten aus den letzten 30 Tagen zurück.
 2. Ergebnisse können bis zu 100.000 Zeilen zurückgeben.
-3. Sie können bis zu 10 Anrufe pro Minute pro Mandant vornehmen.
-4. Sie haben 10 Minuten Spielzeit pro Stunde pro Mandant.
-5. Sie verfügen über vier Gesamtstunden des laufenden Zeit Tages pro Mandant.
-6. Wenn eine einzelne Anforderung länger als 10 Minuten ausgeführt wird, tritt ein Timeout auf, und es wird ein Fehler zurückgegeben.
-7. Ein `429` HTTP-Antwortcode gibt an, dass Sie ein Kontingent erreicht haben, entweder nach der Anzahl der gesendeten Anforderungen oder nach der zugewiesenen Laufzeit. Der Antworttext enthält die Zeit, bis das von Ihnen erreichte Kontingent zurückgesetzt wird.
+3. Sie können bis zu 10 Anrufe pro Minute und Mandant erstellen.
+4. Sie haben 10 Minuten Laufzeit pro Stunde und Mandant.
+5. Sie haben insgesamt vier Stunden Laufzeit pro Tag pro Mandant.
+6. Wenn eine einzelne Anforderung länger als 10 Minuten ausgeführt wird, tritt ein Zeitfehler auf und es wird ein Fehler zurückgegeben.
+7. Ein HTTP-Antwortcode gibt an, dass Sie ein Kontingent erreicht haben, entweder durch die Anzahl der gesendeten Anforderungen oder durch die `429` zugewiesene Laufzeit. Der Antworttext enthält die Zeit bis zum Zurücksetzen des erreichten Kontingents.
 
 ## <a name="permissions"></a>Berechtigungen
 
-Eine der folgenden Berechtigungen ist erforderlich, um die erweiterte Jagd-API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Access the Microsoft 365 Defender Protection APIs](api-access.md)
+Zum Aufrufen der API für die erweiterte Suche ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter Zugriff auf [die Microsoft 365 Defender Protection-APIs.](api-access.md)
 
 Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 -|-|-
-Anwendung | AdvancedHunting. Read. all | Ausführen erweiterter Abfragen
-Delegiert (Geschäfts-, Schul- oder Unikonto) | AdvancedHunting. Read | Ausführen erweiterter Abfragen
+Anwendung | AdvancedHunting.Read.All | Ausführen erweiterter Abfragen
+Delegiert (Geschäfts-, Schul- oder Unikonto) | AdvancedHunting.Read | Ausführen erweiterter Abfragen
 
 >[!Note]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
 >
->- Der Benutzer muss über die AD-Rolle "Daten anzeigen" verfügen.
->- Der Benutzer muss auf dem Gerät basierend auf Gerätegruppen Einstellungen Zugriff haben.
+>- Der Benutzer benötigt die Ad-Rolle "Daten anzeigen"
+>- Der Benutzer muss basierend auf den Gerätegruppeneinstellungen Zugriff auf das Gerät haben.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -76,30 +77,30 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
 
 Kopfzeile | Wert
 -|-
-Authorization | Bearer {Token} **Hinweis: erforderlich**
+Authorization | Bearer {token} **Hinweis: erforderlich**
 Content-Type | application/json
 
 ## <a name="request-body"></a>Anforderungstext
 
-Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an:
+Stellen Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern zur Verfügung:
 
 Parameter | Typ | Beschreibung
 -|-|-
-Abfrage | Text | Die auszuführende Abfrage. **Hinweis: erforderlich**
+Abfrage | Text | Die Abfrage, die ausgeführt werden soll. **Hinweis: erforderlich**
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich verläuft, gibt Sie `200 OK` ein _QueryResponse_ -Objekt im Antworttext zurück.
+Wenn die Methode erfolgreich ist, wird `200 OK` ein _QueryResponse -Objekt_ im Antworttext zurückgegeben.
 
-Das Response-Objekt enthält drei Eigenschaften der obersten Ebene:
+Das Antwortobjekt enthält drei Eigenschaften der obersten Ebene:
 
-1. Stats-ein Wörterbuch der Abfrage Leistungsstatistik.
-2. Schema – das Schema der Antwort, eine Liste mit Name-Type-Paaren für jede Spalte.
-3. Ergebnisse – eine Liste erweiterter Jagd Ereignisse.
+1. Statistiken – Ein Wörterbuch mit Abfrageleistungsstatistiken.
+2. Schema – Das Schema der Antwort, eine Liste der Name-Type für jede Spalte.
+3. Ergebnisse – Eine Liste der Ereignisse der erweiterten Suche.
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel sendet ein Benutzer die Abfrage unten und empfängt ein API-Antwortobjekt mit `Stats` , `Schema` und `Results` .
+Im folgenden Beispiel sendet ein Benutzer die folgende Abfrage und empfängt ein API-Antwortobjekt mit `Stats` , `Schema` und `Results` .
 
 ### <a name="query"></a>Abfrage
 
@@ -110,7 +111,7 @@ Im folgenden Beispiel sendet ein Benutzer die Abfrage unten und empfängt ein AP
 
 ```
 
-### <a name="response-object"></a>Response-Objekt
+### <a name="response-object"></a>Antwortobjekt
 
 ```json
 {
@@ -177,6 +178,6 @@ Im folgenden Beispiel sendet ein Benutzer die Abfrage unten und empfängt ein AP
 ## <a name="related-articles"></a>Verwandte Artikel
 
 - [Zugreifen auf die Microsoft 365 Defender-APIs](api-access.md)
-- [Informationen zu API-Grenzwerten und Lizenzierung](api-terms.md)
-- [Grundlegendes zu Fehlercodes](api-error-codes.md)
+- [Informationen zu API-Beschränkungen und Lizenzierung](api-terms.md)
+- [Fehlercodes verstehen](api-error-codes.md)
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

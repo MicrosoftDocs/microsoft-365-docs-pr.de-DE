@@ -1,10 +1,10 @@
 ---
-title: AlertEvidence-Tabelle im Advanced Hunting-Schema
-description: Informationen zu den Warnungen in der AlertEvidence-Tabelle des erweiterten Jagd Schemas finden Sie hier.
-keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, alertinfo, Warnung, Entitäten, Evidence, File, IP-Adresse, Gerät, Computer, Benutzer, Konto
+title: Tabelle "AlertEvidence" im Schema "Erweiterte Suche"
+description: Informationen zu Warnungen in der Tabelle "AlertEvidence" des Schemas für die erweiterte Suche
+keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, AlertInfo, Warnung, Entitäten, Nachweis, Datei, IP-Adresse, Gerät, Computer, Benutzer, Konto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 549eed005e06a7d52ce2f881820ae9fdeffdfea7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: c01b0aae1eff3d9b4add632aff0f13cb56941a30
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847680"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932304"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -34,7 +35,7 @@ ms.locfileid: "48847680"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Die `AlertEvidence` Tabelle im [Advanced Hunting](advanced-hunting-overview.md) -Schema enthält Informationen zu verschiedenen Entitäten – Dateien, IP-Adressen, URLs, Benutzer oder Geräte –, die Warnungen von Microsoft Defender für Endpoint, Microsoft Defender für Office 365, Microsoft Cloud App Security und Microsoft Defender for Identity zugeordnet sind. Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
+Die Tabelle im Schema für die erweiterte Suche enthält Informationen zu verschiedenen Entitäten – Dateien, IP-Adressen, URLs, Benutzer oder Geräte – die Warnungen von `AlertEvidence` Microsoft Defender für Endpoint, Microsoft Defender für Office 365, Microsoft Cloud App Security und Microsoft Defender for Identity zugeordnet sind. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
 Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter [Referenz zur erweiterten Suche](advanced-hunting-schema-tables.md).
 
@@ -42,36 +43,36 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
 | `AlertId` | string | Eindeutiger Bezeichner der Warnung |
-| `ServiceSource` | string | Produkt oder Dienst, der die Warnungsinformationen bereitgestellt hat |
-| `EntityType` | string | Objekttyp, beispielsweise eine Datei, ein Prozess, ein Gerät oder ein Benutzer |
-| `EvidenceRole` | string | Wie die Entität an einer Warnung beteiligt ist und angibt, ob Sie betroffen ist oder lediglich mit ihr zusammenhängen soll |
-| `EvidenceDirection` | string | Gibt an, ob es sich bei der Entität um die Quelle oder das Ziel einer Netzwerkverbindung handelt. |
+| `ServiceSource` | string | Produkt oder Dienst, das die Warnungsinformationen bereitgestellt hat |
+| `EntityType` | string | Objekttyp, z. B. eine Datei, ein Prozess, ein Gerät oder ein Benutzer |
+| `EvidenceRole` | string | Wie die Entität an einer Warnung beteiligt ist, die angibt, ob sie betroffen ist oder lediglich in Beziehung steht |
+| `EvidenceDirection` | string | Gibt an, ob die Entität die Quelle oder das Ziel einer Netzwerkverbindung ist. |
 | `FileName` | string | Name der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `FolderPath` | string | Ordner mit der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `SHA1` | string | SHA-1 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
-| `SHA256` | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde. Dieses Feld wird in der Regel nicht aufgefüllt, wenn es verfügbar ist, verwenden Sie die SHA1-Spalte. |
-| `FileSize` | int | Größe der Datei in Bytes |
-| `ThreatFamily` | string | Schadsoftware-Familie, unter der die verdächtige oder böswillige Datei oder der Prozess klassifiziert wurde |
+| `SHA256` | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde. Dieses Feld ist in der Regel nicht aufgefüllt– verwenden Sie die SHA1-Spalte, wenn verfügbar. |
+| `FileSize` | int | Größe der Datei in Byte |
+| `ThreatFamily` | string | Schadsoftwarefamilie, unter der die verdächtige oder schädliche Datei oder der Prozess klassifiziert wurde |
 | `RemoteIP` | string | IP-Adresse, mit der eine Verbindung hergestellt wurde |
 | `RemoteUrl` | string | URL oder vollqualifizierter Domänenname (FQDN), mit der bzw. dem eine Verbindung hergestellt wurde |
 | `AccountName` | string | Benutzername des Kontos |
 | `AccountDomain` | string | Domäne des Kontos |
 | `AccountSid` | string | Sicherheits-ID (SID) des Kontos |
-| `AccountObjectId` | string | Eindeutiger Bezeichner für das Konto in Azure Active Directory |
-| `DeviceId` | string | Eindeutiger Bezeichner für das Gerät im Dienst |
+| `AccountObjectId` | string | Eindeutige ID für das Konto in Azure Active Directory |
+| `DeviceId` | string | Eindeutige ID für das Gerät im Dienst |
 | `DeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Computers |
-| `LocalIP` | string | IP-Adresse, die dem lokalen Gerät zugewiesen ist, das während der Kommunikation verwendet wird |
+| `LocalIP` | string | DIE IP-Adresse, die dem lokalen Gerät zugewiesen ist, das während der Kommunikation verwendet wird |
 | `NetworkMessageId` | string | Eindeutiger Bezeichner für die von Office 365 generierte E-Mail |
 | `EmailSubject` | string | Betreff der E-Mail |
 | `ApplicationId` | string | Eindeutiger Bezeichner für die Anwendung |
 | `Application` | string | Anwendung, die die aufgezeichnete Aktion ausgeführt hat |
-| `ProcessCommandLine` | string | Befehlszeile, die zum Erstellen des neuen Prozesses verwendet wird |
-| `AdditionalFields` | string | Weitere Informationen zum Ereignis im JSON-Array Format |
+| `ProcessCommandLine` | string | Befehlszeile zum Erstellen des neuen Prozesses |
+| `AdditionalFields` | string | Zusätzliche Informationen zu dem Ereignis im JSON-Array-Format |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Suchen auf Geräten, in E-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
+- [Suche über Geräte, E-Mails, Apps und Identitäten hinweg](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)

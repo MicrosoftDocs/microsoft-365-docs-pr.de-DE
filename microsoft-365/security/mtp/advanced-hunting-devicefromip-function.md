@@ -1,10 +1,10 @@
 ---
-title: DeviceFromIP ()-Funktion in Advanced Hunting for Microsoft 365 Defender
-description: Erfahren Sie, wie Sie die DeviceFromIP ()-Funktion verwenden, um die Geräte abzurufen, denen eine bestimmte IP-Adresse zugewiesen wurde.
-keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Gerät, devicefromIP, Funktion, Anreicherung
+title: DeviceFromIP()-Funktion bei der erweiterten Suche nach Microsoft 365 Defender
+description: Erfahren Sie, wie Sie die DeviceFromIP()-Funktion verwenden, um die Geräte zu erhalten, denen eine bestimmte IP-Adresse zugewiesen wurde.
+keywords: Erweiterte Suche, Bedrohungssuche, Suche nach Cyberbedrohungen, Microsoft Threat Protection, Microsoft 365, mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Gerät, DevicefromIP, Funktion, Anreicherung
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 65409dd93f3703f1af115178c4cd9fa470fb7497
-ms.sourcegitcommit: 25ac2736a66bb72c0d574c3fbde7472ac98d5321
+ms.technology: m365d
+ms.openlocfilehash: 86373c903252fde4ab71c80a81404428a7366da7
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "49741108"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931302"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
@@ -38,14 +39,14 @@ ms.locfileid: "49741108"
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 
-Verwenden Sie die `DeviceFromIP()` -Funktion in Ihren [erweiterten Jagd](advanced-hunting-overview.md) Abfragen, um schnell eine Liste der Geräte zu erhalten, die zu einem bestimmten Zeitpunkt einer bestimmten IP-Adresse zugewiesen wurden. 
+Verwenden Sie die Funktion in Ihren Abfragen für die erweiterte Suche, um schnell die Liste der Geräte zu erhalten, die zu einem bestimmten Zeitpunkt einer bestimmten `DeviceFromIP()` IP-Adresse [](advanced-hunting-overview.md) zugewiesen wurden. 
 
 Diese Funktion gibt eine Tabelle mit den folgenden Spalten zurück:
 
 | Spalte | Datentyp | Beschreibung |
 |------------|-------------|-------------|
 | `IP` | string | IP-Adresse  |
-| `DeviceId` | Zeichenfolge | Eindeutiger Bezeichner für das Gerät im Dienst |
+| `DeviceId` | string | Eindeutige ID für das Gerät im Dienst |
 
 
 ## <a name="syntax"></a>Syntax
@@ -58,13 +59,13 @@ invoke DeviceFromIP()
 
 Diese Funktion wird als Teil einer Abfrage aufgerufen.
 
-- **x**– der erste Parameter ist normalerweise bereits eine Spalte in der Abfrage. In diesem Fall ist dies die Spalte mit dem Namen `IP` , die IP-Adresse, für die Sie eine Liste der Geräte anzeigen möchten, die ihr zugewiesen wurden. Es sollte sich um eine lokale IP-Adresse handeln. Externe IP-Adressen werden nicht unterstützt.
-- **y**– ein zweiter optionaler Parameter ist der `Timestamp` , der die Funktion anweist, die zuletzt zugewiesenen Geräte aus einem bestimmten Zeitpunkt zu erhalten. Wenn nicht angegeben, gibt die Funktion die neuesten verfügbaren Datensätze zurück.
+- **x**– Der erste Parameter ist in der Regel bereits eine Spalte in der Abfrage. In diesem Fall handelt es sich um die Spalte namens "IP-Adresse", für die eine Liste der Geräte angezeigt werden soll, die ihr `IP` zugewiesen wurden. Es sollte eine lokale IP-Adresse sein. Externe IP-Adressen werden nicht unterstützt.
+- **y**– Ein zweiter optionaler Parameter ist der , der die Funktion anweisen soll, die neuesten zugewiesenen Geräte aus einem `Timestamp` bestimmten Zeitpunkt zu erhalten. Wenn nicht angegeben, gibt die Funktion die neuesten verfügbaren Datensätze zurück.
 
 ## <a name="example"></a>Beispiel
 
 
-### <a name="get-the-latest-devices-that-have-been-assigned-specific-ip-addresses"></a>Abrufen der neuesten Geräte, denen bestimmte IP-Adressen zugewiesen wurden
+### <a name="get-the-latest-devices-that-have-been-assigned-specific-ip-addresses"></a>Holen Sie sich die neuesten Geräte, denen bestimmte IP-Adressen zugewiesen wurden
 
 ```kusto
 DeviceNetworkEvents 

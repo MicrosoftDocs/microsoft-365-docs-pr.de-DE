@@ -1,8 +1,8 @@
 ---
-title: App Monitoring & Reporting – Security Center
-description: Hier erfahren Sie, wie Sie in Ihrer Organisation einen besseren Einblick in die Cloud-App-Nutzung erhalten. Umfasst verschiedene Arten von apps, deren Risikograd und Warnungen.
-keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Monitor, Bericht, Apps
-ms.prod: microsoft-365-enterprise
+title: App-Überwachung & Berichterstellung - Security Center
+description: Erfahren Sie, wie Sie mehr Einblicke in die Verwendung von Cloud-Apps in Ihrer Organisation erhalten. Umfasst verschiedene Arten von Apps, ihr Risikoniveau und Warnungen.
+keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, überwachen, Bericht, Apps
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,58 +17,59 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f73c6b010677cdc481655d1d5310872fd1a99126
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.technology: m365d
+ms.openlocfilehash: ed5fcfc16c08272a6a1d55af210ab48528538048
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920514"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930522"
 ---
-# <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>App-Überwachung und Berichterstellung im Microsoft 365 Security Center
+# <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Überwachung und Berichterstellung von Apps im Microsoft 365 Security Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Diese Berichte bieten einen besseren Einblick in die Verwendung von Cloud-apps in Ihrer Organisation. Umfasst verschiedene Arten von apps, deren Risikograd und Warnungen.
+Diese Berichte bieten mehr Einblick in die Verwendung von Cloud-Apps in Ihrer Organisation. Umfasst verschiedene Arten von Apps, deren Risikostufe und Warnungen.
 
 ## <a name="monitor-email-accounts-at-risk"></a>Überwachung von gefährdeten E-Mail-Konten
 
-**E-Mail-Schutz** zeigt e-Mail-Konten gefährdet an. Sie können ein Konto auswählen, das im Microsoft Defender Security Center weiter untersucht werden soll.
+**Beim E-Mail-Schutz** sind E-Mail-Konten gefährdet. Sie können ein Konto auswählen, um es im Microsoft Defender Security Center weiter zu untersuchen.
 
 ![E-Mail-Schutzkarte](../../media/email-protection.png)
 
 ## <a name="monitor-app-permissions-granted-by-users"></a>Überwachen der von Benutzern erteilten App-Berechtigungen
 
-**Cloud-App-Sicherheit – OAuth-apps** listet apps auf, die von der Cloud-App-Sicherheit erkannt wurden, denen Benutzerberechtigungen erteilt wurden. Der Risikokatalog von Cloud App Security umfasst über 16.000 apps, die mit über 70 Risikofaktoren bewertet werden.
+**Cloud App Security – OAuth-Apps** listen von Cloud App Security ermittelte Apps auf, die von Benutzern Berechtigungen erhalten haben. Der Risikokatalog von Cloud App Security umfasst über 16.000 Apps, die mit über 70 Risikofaktoren bewertet werden.
 
-Die Risikofaktoren beginnen mit allgemeinen Informationen, beispielsweise mit dem App-Herausgeber. Anschließend werden Sicherheitsmaßnahmen und-Steuerelemente verschoben, beispielsweise ob die APP die Verschlüsselung in Rest unterstützt oder ein Überwachungsprotokoll der Benutzeraktivität bereitstellt.
+Die Risikofaktoren beginnen mit allgemeinen Informationen, z. B. dem App-Herausgeber. Sie wechselt dann zu Sicherheitsmaßnahmen und -kontrollen, z. B. ob die App die Verschlüsselung im Ruhedienst unterstützt oder ein Überwachungsprotokoll der Benutzeraktivität enthält.
 
-![Cloud App Security OAuth apps Card](../../media/cloud-app-security-oauth-apps.png)
+![Cloud App Security OAuth-Apps-Karte](../../media/cloud-app-security-oauth-apps.png)
 
 ## <a name="monitor-cloud-app-user-accounts"></a>Überwachen von Cloud-App-Benutzerkonten
 
-**Cloud-App-Konten für die Überprüfung** listet Konten auf, die möglicherweise Aufmerksamkeit erfordern.
+**Cloud-App-Konten für Rezensionen** listen Konten auf, die möglicherweise Aufmerksamkeit erfordern.
 
-![Cloud-App-Konten für Überprüfungs Karte](../../media/cloud-app-accounts-for-review.png)
+![Cloud -App-Konten für Überprüfungskarte](../../media/cloud-app-accounts-for-review.png)
 
-## <a name="understand-which-cloud-apps-are-used"></a>Grundlegendes zu den verwendeten Cloud-apps
+## <a name="understand-which-cloud-apps-are-used"></a>Verstehen, welche Cloud-Apps verwendet werden
 
-**Erkannte Cloud-Apps (Kategorien)** zeigen an, welche Arten von apps in Ihrer Organisation verwendet werden. Sie enthält Links zum Cloud Discovery-Dashboard in der Cloud-App-Sicherheit. Weitere Informationen finden Sie unter [Quick Start: Arbeiten mit entdeckten apps](https://docs.microsoft.com/cloud-app-security/discovered-apps).  
+**Ermittelte Cloud-Apps (Kategorien)** zeigen, welche Arten von Apps in Ihrer Organisation verwendet werden. Es ist mit dem Cloud -Discovery-Dashboard in Cloud App Security verknüpft. Weitere Informationen finden Sie unter [Schnellstart: Arbeiten mit ermittelten Apps.](https://docs.microsoft.com/cloud-app-security/discovered-apps)  
 
-![Entdeckte Cloud Apps-Kategorien Karte](../../media/discovered-cloud-apps-categories.png)
+![Karte "Kategorien für ermittelte Cloud-Apps"](../../media/discovered-cloud-apps-categories.png)
 
-## <a name="monitor-where-users-access-cloud-apps"></a>Überwachen der Benutzer auf Cloud-apps
+## <a name="monitor-where-users-access-cloud-apps"></a>Überwachen, wo Benutzer auf Cloud-Apps zugreifen
 
-**Cloud-App-Aktivitäts Speicherorte** zeigen an, wo Benutzer auf Cloud-apps zugreifen.
+**Cloud-App-Aktivitätsstandorte** zeigen an, wo Benutzer auf Cloud-Apps zugreifen.
 
-![Cloud-App-Aktivitäts Speicherkarte](../../media/cloud-app-activity-locations.png)
+![Cloud App Activity Locations Card](../../media/cloud-app-activity-locations.png)
 
-## <a name="monitor-health-for-infrastructure-workloads"></a>Überwachen der Integrität von Infrastruktur Auslastungen
+## <a name="monitor-health-for-infrastructure-workloads"></a>Überwachen der Integrität für Infrastrukturarbeitslasten
 
-**Infrastruktur Integrität** zeigt Integritätsstatus Warnungen für Infrastruktur Arbeitslasten in Azure Defender an.
+**Der Infrastrukturstatus** zeigt Integritätsstatuswarnungen für Infrastrukturarbeitsauslastungen in Azure Defender an.
 
-Azure Defender bietet einheitliches Sicherheitsmanagement und Defender für Office 365 über lokale und Cloud-Arbeitslasten hinweg. Sie können Sicherheitsdaten aus unterschiedlichen Quellen, einschließlich Firewalls und anderen Partnerlösungen, sammeln, durchsuchen und analysieren.
+Azure Defender bietet eine einheitliche Sicherheitsverwaltung und Defender für Office 365 für lokale und Cloud-Workloads. Sie können Sicherheitsdaten aus verschiedenen Quellen, einschließlich Firewalls und anderen Partnerlösungen, sammeln, durchsuchen und analysieren.
 
-Weitere Informationen finden Sie unter [Dokumentation zu Azure Defender](https://docs.microsoft.com/azure/security-center/).
+Weitere Informationen finden Sie in der [Azure Defender-Dokumentation.](https://docs.microsoft.com/azure/security-center/)
 
-![Infrastruktur-Integritäts Karte](../../media/infrastructure-health.png)
+![Infrastrukturintekarte](../../media/infrastructure-health.png)

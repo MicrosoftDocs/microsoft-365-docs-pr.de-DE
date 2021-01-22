@@ -3,7 +3,7 @@ title: Vorfallbenachrichtigungen in Microsoft 365 Defender erhalten
 description: Erfahren Sie, wie Sie Regeln erstellen, um E-Mail-Benachrichtigungen für Vorfälle in Microsoft 365 Defender zu erhalten.
 keywords: Vorfall, E-Mail, E-Mail-Notationen, konfigurieren, Benutzer, Postfach, E-Mail, Vorfälle
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f25be4de3f25db869957474c3cb32b20e9f7aa53
-ms.sourcegitcommit: 88d358d778804b26d5e41c53b4f725d01a78112b
+ms.technology: m365d
+ms.openlocfilehash: 9db025818fdd5eb2635a9a676e4a10e20f3036b6
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49848891"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930978"
 ---
 # <a name="get-incident-notifications-by-email"></a>Vorfallbenachrichtigungen per E-Mail erhalten
 
@@ -46,7 +47,7 @@ Die E-Mail-Benachrichtigung enthält wichtige Details zu dem Vorfall, z. B. den 
 
 >[!NOTE]
 >Sie benötigen die Berechtigungen "Sicherheitseinstellungen verwalten", um E-Mail-Benachrichtigungseinstellungen zu konfigurieren. Wenn Sie sich für die Verwendung der grundlegenden Berechtigungsverwaltung entschieden haben, können Benutzer mit Sicherheitsadministrator- oder globalen Administratorrollen E-Mail-Benachrichtigungen für Sie konfigurieren. <br> <br>
-Ebenso können Sie, wenn Ihre Organisation die rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) verwendet, Benachrichtigungen nur basierend auf Gerätegruppen erstellen, bearbeiten, löschen und empfangen, die Sie verwalten dürfen.
+Wenn Ihre Organisation die rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) verwendet, können Sie entsprechend nur Benachrichtigungen basierend auf Gerätegruppen erstellen, bearbeiten, löschen und empfangen, die Sie verwalten dürfen.
 
 ## <a name="create-rules-for-incident-notifications"></a>Erstellen von Regeln für Vorfallbenachrichtigungen
 
@@ -59,7 +60,7 @@ Erstellen Sie zum Einrichten Ihrer ersten E-Mail-Benachrichtigung für Vorfälle
     ![Erstellen eines Regelfensters für Vorfall-E-Mail-Notififen](../../media/incidentemailnotif1.png) 
 4. Wählen **Sie "Weiter"** aus, um zu den **Benachrichtigungseinstellungen zu wechseln.** Hier können Sie angeben:
     - **Warnungsschweregrad** : Wählen Sie den Warnungsschweregrad aus, der eine Vorfallbenachrichtigung auslöst. Wenn Sie beispielsweise nur über Vorfälle mit hohem Schweregrad informiert werden möchten, wählen Sie "Hoch" aus.
-    - **Gerätegruppenbereich** – In dieser Dropdownliste werden alle Gerätegruppen angezeigt, auf die der Benutzer zugreifen kann. Wählen Sie aus, für welche Gerätegruppen Sie die Regeln für die Vorfallbenachrichtigung erstellen.
+    - **Gerätegruppenbereich** – In dieser Dropdownliste werden alle Gerätegruppen angezeigt, auf die der Benutzer zugreifen kann. Wählen Sie aus, für welche Gerätegruppen Sie vorfallbenachrichtigungsregeln erstellen.
     - **Nur beim ersten Auftreten pro** Vorfall benachrichtigen – Wenn Sie diese Option auswählen, wird nur bei der ersten Warnung eine E-Mail-Benachrichtigung gesendet, die Ihrer anderen Auswahl entspricht. Spätere Updates oder Warnungen im Zusammenhang mit dem Vorfall lösen keine Benachrichtigung aus.
     - **Name der Organisation angeben** – Gibt an, ob der Name des Kunden in der E-Mail-Benachrichtigung angezeigt wird oder nicht.
     - **Mandantenspezifische Portallink hinzufügen** – Fügt einen Link mit der Mandanten-ID hinzu, um den Zugriff auf einen bestimmten Mandanten zu ermöglichen.
