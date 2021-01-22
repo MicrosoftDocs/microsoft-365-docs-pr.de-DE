@@ -16,33 +16,34 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Hier erfahren Sie, wie Sie die mehrstufige Authentifizierung aktivieren.
-ms.openlocfilehash: 4f7cd51a8a6a412b8aed2e0855727eeb48fc522b
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Erfahren Sie, wie Sie die mehrstufige Authentifizierung aktivieren.
+ms.openlocfilehash: 1485875d1d40d93dab7a04d4e3d81016ac1536f3
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702346"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927766"
 ---
 # <a name="turn-on-multi-factor-authentication"></a>Aktivieren der mehrstufigen Authentifizierung
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
-Mehrstufige Authentifizierung bedeutet, dass Sie und Ihre Mitarbeiter mehr als eine Möglichkeit zur Anmeldung bei Microsoft 365 bereitstellen müssen, um eine der einfachsten Möglichkeiten zur Sicherung Ihres Unternehmens zu bieten.
+Die mehrstufige Authentifizierung bedeutet, dass Sie und Ihre Mitarbeiter mehrere Möglichkeiten für die Anmeldung bei Microsoft 365 bereitstellen müssen, eine der einfachsten Methoden zum Sichern Ihres Unternehmens.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
 1. Wechseln Sie zum Admin Center unter [https://admin.microsoft.com](https://admin.microsoft.com).
-1. Wählen Sie  **Alle anzeigen** aus, und wählen Sie dann das **Azure Active Directory Admin Center** aus.
-1. Wählen Sie **Azure Active Directory**, **Eigenschaften**, **Sicherheitsstandards verwalten** aus.
-1. Wählen Sie unter **Sicherheitsstandards aktivieren** die Option **Ja** und dann **Speichern** aus.
+1. Wählen **Sie "Alle anzeigen"** und dann **das Azure Active Directory Admin Center aus.**
+1. Wählen **Sie Azure Active Directory**, **Eigenschaften**, **Sicherheitseinstellungen verwalten aus.**
+1. Wählen **Sie unter "Sicherheitseinstellungen aktivieren"** die Option **"Ja"** und dann "Speichern" **aus.**
 
 > [!NOTE]
-> Für neue Abonnements werden sichere Standardwerte automatisch aktiviert.
+> Bei neuen Abonnements werden sichere Standardeinstellungen automatisch aktiviert.
 
-Wenn sich die ausgewählten Mitarbeiter das nächste Mal anmelden, werden Sie aufgefordert, die Microsoft Authenticator-App auf Ihren Telefonen für eine zweite Form der Authentifizierung einzurichten.
+Wenn sich die ausgewählten Mitarbeiter das nächste Mal anmelden, werden sie aufgefordert, die Microsoft Authenticator-App auf ihren Telefonen für eine zweite Authentifizierungsform einrichten.

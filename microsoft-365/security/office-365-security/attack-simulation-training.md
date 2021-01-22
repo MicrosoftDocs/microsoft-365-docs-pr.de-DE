@@ -5,18 +5,19 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Administratoren können lernen, wie Sie Phishingangriffe simulieren und ihre Benutzer mithilfe von Angriffssimulationsschulungen in Microsoft Defender für Office 365 zur Phishingverhütung schulen.
-ms.openlocfilehash: 56ee8b7c11187ee6883bffc9b41961d2783e1ff4
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.technology: mdo
+ms.openlocfilehash: f22fe8633d8ffa8856f851369739a0f12364342b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877152"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929202"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simulieren eines Phishingangriffs
 
@@ -24,9 +25,9 @@ Mit dem Training zur Angriffssimulation in Microsoft Defender für Office 365 k�
 
 Informationen zu den ersten Schritte zum Training zur Angriffssimulation finden Sie unter ["Erste Schritte mit dem Attack Simulation Training".](attack-simulation-training-get-started.md)
 
-Um einen simulierten Phishingangriff zu starten, öffnen Sie das [Microsoft 365 Security Center,](https://security.microsoft.com/)wechseln Sie zu **"E-Mail &** Collaboration Attack Simulation Training", und wechseln Sie zur Registerkarte \>  [**"Simulationen".**](https://security.microsoft.com/attacksimulator?viewid=simulations)
+Um einen simulierten Phishingangriff zu starten, öffnen Sie das [Microsoft 365 Security Center,](https://security.microsoft.com/)wechseln Sie zu **"E-Mail &** Zusammenarbeit – \> **Angriffssimulationstraining",** und wechseln Sie zur Registerkarte [**"Simulationen".**](https://security.microsoft.com/attacksimulator?viewid=simulations)
 
-Wählen **Sie unter Simulationen** die Option **+ Starten einer Simulation aus.**
+Wählen **Sie unter Simulationen** **+ Starten sie eine Simulation aus.**
 
 ![Starten einer Simulationsschaltfläche im Microsoft 365 Security Center](../../media/attack-sim-preview-launch.png)
 
@@ -53,7 +54,7 @@ Nachdem Sie das Verfahren ausgewählt und auf **"Weiter"** geklickt haben, geben
 
 Als Nächstes müssen Sie entweder eine Nutzlast aus dem bereits vorhandenen Nutzlastkatalog auswählen.
 
-Nutzlasten verfügen über eine Reihe von Datenpunkten, die Ihnen bei der Auswahl helfen:
+Nutzlasten haben eine Reihe von Datenpunkten, die Ihnen bei der Auswahl helfen:
 
 - **Die Klickrate** zählt, wie viele Personen auf diese Nutzlast geklickt haben.
 - **Die vorhergesagte Kompromissrate** prognostizieren den Prozentsatz der Personen, die von dieser Nutzlast basierend auf historischen Daten für die Nutzlast von Microsoft Defender für Office 365-Kunden gefährdet werden.
@@ -88,9 +89,9 @@ Wählen Sie das **Fälligkeitsdatum der** Schulung aus, um sicherzustellen, dass
 > [!NOTE]
 > Wenn Sie kurse und Module selbst auswählen, können Sie weiterhin die empfohlenen Inhalte sowie alle verfügbaren Kurse und Module anzeigen.
 >
-> ![Hinzufügen empfohlener Schulungen zur Angriffssimulation im Microsoft 365 Security Center](../../media/attack-sim-preview-add-training.png)
+> ![Hinzufügen empfohlener Schulungen im Rahmen der Angriffssimulationsschulung im Microsoft 365 Security Center](../../media/attack-sim-preview-add-training.png)
 
-In den nächsten Schritten müssen  Sie Schulungen hinzufügen, wenn Sie sich dafür entschieden haben, sie selbst auszuwählen, und Ihre Angebotsseite für Schulungen anpassen. Sie können eine Vorschau der Angebotsseite für Schulungen anzeigen und den Header und textkörper ändern.
+In den nächsten Schritten müssen  Sie Schulungen hinzufügen, wenn Sie sich dafür entschieden haben, sie selbst auszuwählen, und Ihre Angebotsseite für Schulungen anpassen. Sie können eine Vorschau der Angebotsseite für Schulungen anzeigen sowie den Header und Textkörper ändern.
 
 ## <a name="launch-details-and-review"></a>Startdetails und Überprüfung
 
@@ -98,4 +99,4 @@ Nachdem nun alles konfiguriert ist, können Sie diese Simulation sofort starten 
 
 **Aktivieren Sie die Regionen-bezogene Zeitzonenzustellung,** um ihren Mitarbeitern während der Arbeitszeiten basierend auf ihrer Region simulierte Angriffsnachrichten zu senden.
 
-Wenn Sie fertig sind, klicken Sie auf **"Weiter",** und überprüfen Sie die Details ihrer Simulation. Klicken Sie **auf "Bearbeiten"** auf einen der Teile, um zurück zu gehen und alle Details zu ändern, die geändert werden müssen. Klicken Sie anschließend auf **"Absenden".**
+Wenn Sie fertig sind, klicken Sie auf **"Weiter",** und überprüfen Sie die Details ihrer Simulation. Klicken Sie **auf "Bearbeiten"** auf einen der Teile, um zurück zu wechseln und alle Details zu ändern, die geändert werden müssen. Klicken Sie anschließend auf **"Absenden".**

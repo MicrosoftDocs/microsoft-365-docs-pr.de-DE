@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Mithilfe von Mover Google-Dateien zu Microsoft 365 Business migrieren.
-ms.openlocfilehash: a6f9dbf7803cb552c23b6c6abb13d13d6f3eda5d
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 99040e4846aba084f40536e88f0aed70998f48be
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794639"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928198"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business"></a>Migrieren von Google-Dateien zu Microsoft 365 Business 
 
@@ -35,7 +36,7 @@ ms.locfileid: "49794639"
 Wenn Sie zu Microsoft 365 Business wechseln, sollten Sie Ihre Dateien von Google Drive migrieren. Sie können die Mover-App verwenden, um Dateien von persönlichen und freigegebenen Laufwerken zu verschieben. Weitere Informationen finden Sie unter [Mover Cloud Migration](https://docs.microsoft.com/sharepointmigration/mover-plan-migration)
 
 > [!NOTE]
-> Mover erstellt eine Kopie der Dateien und verschiebt die Kopien nach Microsoft 365 Business. Die Originaldateien bleiben auch in Google Drives.
+> Mover erstellt eine Kopie der Dateien und verschiebt die Kopien nach Microsoft 365 Business. Die originalen Dateien bleiben auch in Google Drives.
 
 ## <a name="before-you-start"></a>Vor der Bereitstellung
 
@@ -53,14 +54,14 @@ Alle Benutzer sollten sich bei Microsoft 365 Business angemeldet und OneDrive fo
 
 1. Choose **Domain Install**, then **Continue**.
 
-1. Überprüfen Sie die Berechtigungen, aktivieren Sie das Kontrollkästchen, um den Bedingungen zu zustimmen, und wählen Sie dann **"Zulassen",**"Weiter" und dann "Fertig" **aus.**
+1. Überprüfen Sie die Berechtigungen, aktivieren Sie das Kontrollkästchen, um den Bedingungen zu zustimmen, und wählen Sie dann **"Zulassen",** **"Weiter"** und dann "Fertig" **aus.**
 
 ### <a name="create-connectors-and-run-the-migration"></a>Erstellen von Connectors und Ausführen der Migration
 
 1. Zurück zu **Google Workspace Marketplace-Apps.**
 1. Aktualisieren Sie Ihren Browser, und wählen Sie die **Mover-App** aus.
 1. Scrollen Sie nach unten, und wählen Sie den universellen Navigationslink aus.
-1. Wählen **Sie "Neuen Connector autorisieren"** aus, **suchen Sie nach G Suite (Administrator)** und wählen Sie **"Autorisieren"** aus.
+1. Wählen **Sie "Neuen Connector autorisieren",** suchen **Sie nach G Suite (Administrator)** und wählen Sie **"Autorisieren" aus.**
 1. Ändern Sie **den Anzeigenamen,** wenn Sie möchten, und wählen Sie **"Autorisieren" aus.**
 1. Wählen Sie ein Google-Administratorkonto aus, überprüfen Sie die Berechtigungen, und wählen Sie dann **"Zulassen" aus.**
 
@@ -68,10 +69,10 @@ Alle Benutzer sollten sich bei Microsoft 365 Business angemeldet und OneDrive fo
 
 1. Wählen **Sie unter Ziel auswählen** die Option **"Neuen Connector autorisieren"** aus, suchen Sie nach Office **365,** und wählen Sie **"Autorisieren" aus.**
 1. Um der Mover-App in Ihrem Azure Active Directory Berechtigungen zu erteilen, navigieren Sie zu [aka.ms/Office365MoverAuth](https://aka.ms/Office365MoverAuth).
-1. Wählen **Sie Office 365 Mover**, **Berechtigungen,** **Administratorzuwilligung für Ihr Unternehmen.**
+1. Wählen **Sie Office 365 Mover**, **Berechtigungen**, **Administratorzuwilligung für Ihr Unternehmen erteilen.**
 1. Wählen Sie Ihr Konto aus, überprüfen Sie die Berechtigungen, und wählen Sie **"Annehmen" aus.**
 1. Choose **Properties** and verify that **User assignment required?** is turned on.
-1. Kehren Sie zur Mover-App zurück, ändern Sie den **Anzeigenamen,** wählen Sie bei Auswahl von "Autorisieren" **und** dann ein Microsoft-Administratorkonto aus.
+1. Kehren Sie zur Mover-App zurück, ändern Sie den **Anzeigenamen,** wenn Sie möchten, wählen Sie **"Autorisieren"** aus, und wählen Sie dann ein Microsoft-Administratorkonto aus.
 
     Mover informiert Sie über die Anzahl von SharePoint Online-Websites (oder SPO)-Websites und Benutzern, die es ermittelt hat.
 1. Choose **Continue Migration Setup**, select Add **Users**, then Automatically Discover and **Add Users**.

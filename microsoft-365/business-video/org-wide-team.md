@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Hier erfahren Sie, wie Sie ein organisationsweites Team in Microsoft Teams erstellen.
-ms.openlocfilehash: 900b5e39bd8d42c9c80b5307e224f9a59c67eb6a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Erfahren Sie, wie Sie ein organisationsweites Team in Microsoft Teams erstellen.
+ms.openlocfilehash: 5df4ebce8e80babd8bd3e70004829c997a127a55
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701957"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928174"
 ---
 # <a name="create-an-org-wide-team"></a>Erstellen eines organisationsweiten Teams
 
@@ -34,22 +35,22 @@ ms.locfileid: "49701957"
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-Erstellen Sie ein organisationsweites Team in Microsoft Teams, zu dem jeder in Ihrem Unternehmen gehören kann. Wenn Sie Microsoft 365 weitere Benutzer hinzufügen, werden diese automatisch zu diesem Team hinzugefügt.
+Erstellen Sie ein organisationsweites Team in Microsoft Teams, an dem jeder in Ihrem Unternehmen teilnehmen kann. Wenn Sie weitere Benutzer zu Microsoft 365 hinzufügen, werden diese automatisch diesem Team hinzugefügt.
 
-1. Wählen Sie in Microsoft Teams  **Teams** und dann **Team erstellen aus.**
-2. Wählen Sie  **ein Team von Grund auf neu erstellen**.
-3. Wählen Sie  **Create a org-Wide Team** aus.
+1. Wählen Sie in Microsoft Teams  **"Teams"** und dann **"Team erstellen" aus.**
+2. Wählen **Sie "Team von Grund auf neu erstellen" aus.**
+3. Wählen **Sie "Organisationsweites Team erstellen" aus.**
 
 > [!NOTE]
 > Sie müssen ein Microsoft 365-Administrator sein, um diese Option anzeigen zu können.
 
-1. Geben Sie Ihrem Team einen Namen, fügen Sie eine Beschreibung hinzu, und wählen Sie dann  **Erstellen** aus.
+1. Geben Sie Ihrem Team einen Namen, fügen Sie eine Beschreibung hinzu, und wählen Sie dann **Erstellen aus.**
 
-In Ihrem Team sind Kanäle. Der allgemeine Kanal wird automatisch erstellt. Sie können zusätzliche Kanäle, getrennte Unterhaltungen und Dateien für verschiedene Abteilungen, Ereignisse oder Projekte hinzufügen.
+Innerhalb Ihres Teams befinden sich Kanäle. Der Kanal "Allgemein" wird automatisch erstellt. Sie können zusätzliche Kanäle, separate Unterhaltungen und Dateien für verschiedene Abteilungen, Ereignisse oder Projekte hinzufügen.
 
-Versuchen Sie Folgendes:
+Führen Sie einen der folgenden Schritte aus:
 
-- Verwenden Sie die Registerkarte  **Beiträge** für organisationsweite Unterhaltungen und Ankündigungen, beispielsweise eine Willkommensnachricht für alle Benutzer.
-- Auf der Registerkarte  **Dateien** können Sie neue Dokumente erstellen, an denen jeder mitwirken kann, beispielsweise ein Microsoft Word Dokument. Oder vorhandene Dokumente per Drag & Drop auf die Registerkarte  **Dateien** verschieben.
-- Verwenden Sie die Registerkarte  **wiki** , um kurze Notizen zu erstellen. Und wählen Sie das Plus **+** Zeichen () aus, um apps oder Dateien als zusätzliche Registerkarten hinzuzufügen.
-- Mit den Registerkarten auf der linken Seite können Sie die letzten Aktivitäten anzeigen, mit anderen Teammitgliedern chatten, die Teams, denen Sie angehören, und den Kalender anzeigen. Sie können Sprach-und Videoanrufe für andere Team Benutzer tätigen und Dateien anzeigen, an denen Sie zuletzt gearbeitet haben.
+- Verwenden Sie  **die Registerkarte** "Beiträge" für organisationsweite Unterhaltungen und Ankündigungen, z. B. eine Willkommensnachricht für alle.
+- Auf der  **Registerkarte "Dateien"** können Sie neue Dokumente erstellen, zu der jeder beitragen kann, z. B. ein Microsoft Word-Dokument. Sie können vorhandene Dokumente auch per Drag and Drop auf die Registerkarte  **"Dateien"** verschieben.
+- Verwenden Sie die  **Registerkarte "Wiki",** um sich schnell Notizen zu machen. Und wählen Sie das Pluszeichen ( **+** ) aus, um Apps oder Dateien als zusätzliche Registerkarten hinzuzufügen.
+- Mit den Registerkarten auf der linken Seite können Sie aktuelle Aktivitäten anzeigen, mit anderen Teammitgliedern chatten, die Teams, zu denen Sie gehören, und Ihren Kalender anzeigen. Sie können Sprach- und Videoanrufe an andere Teambenutzer stellen und Dateien anzeigen, an der Sie zuletzt gearbeitet haben.

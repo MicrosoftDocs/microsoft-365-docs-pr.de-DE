@@ -1,5 +1,5 @@
 ---
-title: Abrufen des Administrator Mobile App
+title: Abrufen der mobilen Administrator-App
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,47 +16,48 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie die Microsoft 365-Administrator Mobile App auf Ihrem Telefon installieren.
-ms.openlocfilehash: cb69dbe02e91ab4eb29b14ac5e71e91bed6cdb88
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Erfahren Sie, wie Sie die mobile Microsoft 365 Admin-App auf Ihrem Telefon installieren.
+ms.openlocfilehash: 110e691858537a90a7bee03b4318a5f415b3e83f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702155"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927538"
 ---
-# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installieren des Microsoft 365-Administrator Mobile App auf Ihrem Telefon
+# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installieren der mobilen Microsoft 365 Admin-App auf Ihrem Telefon
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWe8Kw?autoplay=false]
 
-Sie können den Microsoft 365-Administrator Mobile App verwenden, um Benutzer zu verwalten, die Dienst Integrität zu überwachen und andere Administratoraufgaben von Ihrem Telefon aus auszuführen.
+Sie können die mobile Microsoft 365 Admin-App verwenden, um Benutzer zu verwalten, den Dienstzustand zu überwachen und andere Administratoraufgaben von Ihrem Telefon aus auszuführen.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Um den Microsoft 365-Administrator Mobile App zu erhalten, suchen Sie im App Store nach dem  **Microsoft 365-Administrator**  und installieren Sie das Gerät.
-2. Melden Sie sich mit ihrer globalen Administrator-e-Mail-Adresse an, und zeigen Sie das Dashboard an, um Dienststatus anzuzeigen, Benutzerlizenzen zu überwachen und Nachrichten und Dienstanforderungen anzuzeigen.
-3. Im folgenden finden Sie einige häufige Aufgaben, die Sie mit der APP erledigen können:
+1. Um die mobile Microsoft 365 Admin-App zu erhalten, suchen Sie im App Store für Ihr Gerät nach  **Microsoft 365-Administrator,**  und installieren Sie es.
+2. Melden Sie sich mit Ihrer globalen Administrator-E-Mail-Adresse an, und zeigen Sie das Dashboard an, um den Dienstzustand anzuzeigen, Benutzerlizenzen zu überwachen und Nachrichten und Serviceanfragen anzuzeigen.
+3. Hier sind einige allgemeine Aufgaben, die Sie mit der App ausführen können:
 
 ### <a name="reset-a-users-password"></a>Zurücksetzen eines Benutzerkennworts
 
-1. Wählen Sie unter  **Quick Links** die Option  **Users** aus.
-2. Wählen Sie auf der Seite  **Benutzer**  den Namen des Benutzers aus, und wählen Sie dann  **Kennwort zurücksetzen** aus.
-3. Wenn Sie festlegen möchten, dass der Benutzer sein neues Kennwort bei der ersten Anmeldung ändern muss, aktivieren Sie das Kontrollkästchen  **bei der ersten Anmeldung ändern**  , und wählen Sie dann  **Zurücksetzen** aus.
-4. Wenn Sie zur Bestätigung aufgefordert werden, klicken Sie auf  **Ja** und dann auf  **OK**.
-5. Im Fenster  **Freigabe Kennwort**  können Sie das neue Kennwort optional in einer e-Mail-oder Textnachricht an den Benutzer senden.
+1. Wählen **Sie unter Schnelllinks** **"Benutzer" aus.**
+2. Wählen Sie **auf der** Seite "Benutzer" den Namen des Benutzers und dann **"Kennwort zurücksetzen" aus.**
+3. Wenn Sie festlegen möchten, dass der Benutzer sein neues Kennwort  bei der ersten Anmeldung ändern muss, aktivieren Sie das Kontrollkästchen "Bei der ersten Anmeldung ändern" und dann **"Zurücksetzen".**
+4. Wenn Sie zur Bestätigung aufgefordert werden, wählen **Sie "Ja"** und dann **"OK" aus.**
+5. Im Fenster  **"Kennwort freigeben"**  können Sie das neue Kennwort optional per E-Mail oder Textnachricht an den Benutzer senden.
 
 ### <a name="add-a-user-to-a-group"></a>Hinzufügen eines Benutzers zu einer Gruppe
 
-1. Wählen Sie unter  **schnell Links** die Option  **Gruppen** aus.
-2. Wählen Sie auf der Seite  **Gruppen**  die Gruppe aus, der Sie einen Benutzer hinzufügen möchten, und klicken Sie dann auf  **Mitglieder bearbeiten** und anschließend auf  **Mitglied hinzufügen**.
+1. Wählen **Sie unter Schnelllinks** **"Gruppen" aus.**
+2. Wählen Sie **auf** der Seite "Gruppen" die Gruppe aus, der Sie einen Benutzer hinzufügen möchten, und wählen Sie dann "Mitglieder bearbeiten" **und** dann **"Mitglied hinzufügen" aus.**
 3. Wählen Sie den Benutzer aus, den Sie hinzufügen möchten.
-4. Wenn Sie zur Bestätigung aufgefordert werden, klicken Sie auf  **Ja** und dann auf  **OK**.
+4. Wenn Sie zur Bestätigung aufgefordert werden, wählen **Sie "Ja"** und dann **"OK" aus.**
 
 ### <a name="turn-on-notifications"></a>Aktivieren von Benachrichtigungen
 
-1. Wählen Sie im Hauptmenü den Eintrag  **Einstellungen** aus.
-2. Wählen Sie unter  **App-Einstellungen** die Option  **Benachrichtigungen** aus.
-3. Aktivieren Sie die Kontrollkästchen neben  **Dienst Integrität**  und  **Nachrichten Center**.
+1. Wählen Sie im Hauptmenü **"Einstellungen" aus.**
+2. Wählen **Sie unter "App-Einstellungen"**"Benachrichtigungen" **aus.**
+3. Aktivieren Sie die Kontrollkästchen neben **Dienstinteg und** **Nachrichtencenter.**

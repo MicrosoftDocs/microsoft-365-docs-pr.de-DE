@@ -1,10 +1,10 @@
 ---
-title: Bewährte Methoden für erweiterte Jagd Abfragen in Microsoft 365 Defender
-description: Hier erfahren Sie, wie Sie schnell, effizient und fehlerfrei Jagd Abfragen für Bedrohungen mit Advanced Hunting erstellen.
-keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schema, Kusto, Timeout vermeiden, Befehlszeilen, Prozess-ID, optimieren, bewährte Methode, Analyse, Join, Zusammenfassung
+title: Bewährte Methoden für erweiterte Suchabfragen in Microsoft 365 Defender
+description: Erfahren Sie, wie Sie schnelle, effiziente und fehlerfreie Abfragen zur Bedrohungssuche mit erweiterter Suche erstellen.
+keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, mtp, m365, Suche, Abfrage, Telemetrie, Schema, Kusto, Timeout vermeiden, Befehlszeilen, Prozess-ID, optimieren, bewährte Methode, analysieren, beitreten, zusammenfassen
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 2b2ac519e63e5a7cba648dba67d2780bb7600e14
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: cc6110cdd7dd71f80f6897cfbb0026ccce301cf7
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843072"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928474"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Bewährte Methoden für Erweiterte Suchanfragen
 
@@ -34,17 +35,17 @@ ms.locfileid: "48843072"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Wenden Sie diese Empfehlungen an, um schneller Ergebnisse zu erzielen und Timeouts beim durchführen komplexer Abfragen zu vermeiden. Weitere Informationen zur Verbesserung der Abfrageleistung finden Sie in[Bewährte Methoden für Kusto Anfragen](https://docs.microsoft.com/azure/kusto/query/best-practices).
+Wenden Sie diese Empfehlungen an, um ergebnisse schneller zu erhalten und Timeouts beim Ausführen komplexer Abfragen zu vermeiden. Weitere Informationen zur Verbesserung der Abfrageleistung finden Sie in[Bewährte Methoden für Kusto Anfragen](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
-## <a name="understand-cpu-resource-quotas"></a>Grundlegendes zu CPU-Ressourcen Kontingenten
-Je nach Größe hat jeder Mandant Zugriff auf eine festgelegte Menge an CPU-Ressourcen, die für die Ausführung von erweiterten Jagd Abfragen reserviert sind. Ausführliche Informationen zu verschiedenen Dienst Beschränkungen finden [Sie unter Erweiterte Jagd Kontingente und Nutzungsparameter](advanced-hunting-limits.md).
+## <a name="understand-cpu-resource-quotas"></a>Verstehen von CPU-Ressourcenkontingenten
+Je nach Größe hat jeder Mandant Zugriff auf eine bestimmte Menge von CPU-Ressourcen, die für die Ausführung von Abfragen für die erweiterte Suche reserviert sind. Ausführliche Informationen zu verschiedenen Dienstbeschränkungen finden Sie unter Kontingente für die erweiterte [Suche und Verwendungsparameter.](advanced-hunting-limits.md)
 
-Kunden, die mehrere Abfragen regelmäßig ausführen, sollten den Verbrauch nachverfolgen und die Optimierungs Anleitungen in diesem Artikel anwenden, um die Unterbrechung zu minimieren, die durch Überschreitung der Kontingente oder Nutzungsparameter verursacht wird.
+Kunden, die regelmäßig mehrere Abfragen ausführen, sollten den Verbrauch nachverfolgen und die Optimierungsanleitungen in diesem Artikel anwenden, um Unterbrechungen aufgrund von Überschreitungen von Kontingenten oder Verwendungsparametern zu minimieren.
 
 ## <a name="general-optimization-tips"></a>Allgemeine Optimierungstipps
 
-- **Größe neuer Abfragen** – Wenn Sie vermuten, dass eine Abfrage ein umfangreiches Resultset zurückgibt, bewerten Sie Sie zunächst mithilfe des [Count-Operators](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator). Use [Limit](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) oder sein Synonym `take` , um große Resultsets zu vermeiden.
-- **Filter früh anwenden** – Anwenden von Zeit Filtern und anderen Filtern, um das DataSet zu reduzieren, insbesondere vor der Verwendung von Transformations-und Analysefunktionen wie [SUBSTRING ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction), [Replace ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction), [Trim ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction), [ToUpper ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction)oder [parse_json ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Im Beispiel unten wird die Analysefunktion [extractjson ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) verwendet, nachdem die Anzahl der Datensätze durch die Filteroperatoren reduziert wurde.
+- **Größe neuer Abfragen –** Wenn Sie vermuten, dass eine Abfrage ein umfangreiches Ergebnisset zurück gibt, bewerten Sie es zuerst mit dem [Count-Operator.](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator) Verwenden [Sie den Grenzwert](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) oder sein `take` Synonym, um große Ergebnismengen zu vermeiden.
+- Frühzeitiges Anwenden von Filtern **–** Wenden Sie Zeitfilter und andere Filter an, um den Datensatz zu reduzieren, insbesondere vor der Verwendung von Transformations- und Analysefunktionen, wie z. B. [Teilzeichenfolge()](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction), [Replace()](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction), [trim()](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction), [toupper()](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction)oder [parse_json()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Im folgenden Beispiel wird die Analysefunktion [extractjson()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) verwendet, nachdem Filteroperatoren die Anzahl der Datensätze reduziert haben.
 
     ```kusto
     DeviceEvents
@@ -54,20 +55,20 @@ Kunden, die mehrere Abfragen regelmäßig ausführen, sollten den Verbrauch nach
     | extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
      ```
 
-- **Has Beats enthält** – um unnötige Suche nach Teilzeichenfolgen in Wörtern zu vermeiden, verwenden Sie den- `has` Operator anstelle von `contains` . [Informationen zu Zeichenfolgenoperatoren](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
-- **In bestimmten Spalten suchen** – suchen Sie in einer bestimmten Spalte, anstatt Volltextsuchen in allen Spalten auszuführen. Verwenden Sie nicht `*` , um alle Spalten zu überprüfen.
-- **Groß-** und Kleinschreibung für die Geschwindigkeit – bei der Suche nach Groß-/Kleinschreibung werden spezifischere und meist leistungsfähigere Suchvorgänge durchgeführt. Namen von [Zeichenfolgenoperatoren](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)mit Berücksichtigung der Groß-/Kleinschreibung, beispielsweise `has_cs` und `contains_cs` , werden normalerweise mit beendet `_cs` . Sie können auch den gleich-Operator mit Berücksichtigung der groß `==` -/Kleinschreibung anstelle von verwenden `=~` .
-- **Analysieren, nicht extrahieren** – wenn möglich, verwenden Sie den [Analyse Operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) oder eine Analysefunktion wie [parse_json ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Vermeiden `matches regex` Sie den Zeichenfolgenoperator oder die [extract ()-Funktion](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction), die beide regulären Ausdruck verwenden. Reservieren Sie die Verwendung von regulärem Ausdruck für komplexere Szenarien. [Lesen Sie mehr über Analysefunktionen](#parse-strings)
-- **Filter Tables not Expressions** : Filtern Sie nicht nach einer berechneten Spalte, wenn Sie nach einer Tabellenspalte filtern können.
-- **Kein drei** stelliger Begriff – vermeiden Sie einen Vergleich oder eine Filterung mit Ausdrücken mit drei oder weniger Zeichen. Diese Begriffe sind nicht indiziert und entsprechen diesen, erfordern mehr Ressourcen.
-- **Projekt selektiv** – machen Sie Ihre Ergebnisse leichter verständlich, indem Sie nur die benötigten Spalten projizieren. Das projizieren bestimmter Spalten vor dem Ausführen eines [Joins](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) oder ähnlicher Vorgänge trägt ebenfalls zur Leistungsverbesserung bei.
+- **Has-Takte enthält**- Um zu vermeiden, dass Teilzeichenfolgen in Wörtern unnötig durchsucht werden, verwenden Sie den `has` Operator anstelle von `contains` . [Informationen zu Zeichenfolgenoperatoren](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
+- **In bestimmten Spalten suchen –** Suchen Sie in einer bestimmten Spalte, anstatt Volltextsuchen über alle Spalten hinweg ausführen. Überprüfen Sie nicht `*` alle Spalten.
+- **Geschwindigkeitssensibles bei der Schreibung**– Suche unter Schreibungsempfindlicher ist spezifischer und in der Regel performanter. Namen von Zeichenfolgenoperatoren, bei der [die Kleinschreibung beachtet](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)wird, z. B. `has_cs` und , `contains_cs` enden im Allgemeinen mit `_cs` . Sie können auch den Operator "Equals" anstelle von "Equals" verwenden, bei dem die `==` Zwischen- und Kleinschreibung beachtet `=~` wird.
+- **Analysieren, nicht extrahieren –** Verwenden Sie [](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) nach Möglichkeit den Analyseoperator oder eine Analysefunktion wie [parse_json()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction). Vermeiden Sie `matches regex` den Zeichenfolgenoperator oder die [Extract()-Funktion,](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction)die beide einen regulären Ausdruck verwenden. Reservieren Sie die Verwendung regulärer Ausdrücke für komplexere Szenarien. [Weitere Informationen zur Analyse von Funktionen](#parse-strings)
+- **Filtern von Tabellen ohne Ausdrücke**– Filtern Sie nicht nach einer berechneten Spalte, wenn Sie nach einer Tabellenspalte filtern können.
+- **Keine Drei-Zeichen-Begriffe**– Vermeiden Sie das Vergleichen oder Filtern mit Begriffen mit drei oder weniger Zeichen. Diese Begriffe werden nicht indiziert, und für deren Abgleich sind weitere Ressourcen erforderlich.
+- **Projekt selektiv –** Vereinfachen Sie das Verständnis Ihrer Ergebnisse, indem Sie nur die benötigten Spalten projiziert. Das Projiziert bestimmter Spalten vor dem Ausführen von [Verknüpfungsvorgängen](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) oder ähnlichen Vorgängen hilft auch, die Leistung zu verbessern.
 
 ## <a name="optimize-the-join-operator"></a>Optimieren des `join` Operators
-Der [Join-Operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) führt Zeilen aus zwei Tabellen zusammen, indem er Werte in angegebenen Spalten abstimmt. Wenden Sie diese Tipps an, um Abfragen zu optimieren, die diesen Operator verwenden.
+Der [Verknüpfungsoperator](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) führt Zeilen aus zwei Tabellen zusammen, indem Werte in angegebenen Spalten übereinstimmen. Wenden Sie diese Tipps an, um Abfragen zu optimieren, die diesen Operator verwenden.
 
-- **Kleinere Tabelle links** – der `join` Operator vergleicht Datensätze in der Tabelle auf der linken Seite der JOIN-Anweisung mit Datensätzen auf der rechten Seite. Durch die kleinere Tabelle auf der linken Seite müssen weniger Datensätze abgeglichen werden, wodurch die Abfrage beschleunigt wird. 
+- **Kleinere Tabelle links –** Der Operator gleicht Datensätze in der Tabelle auf der linken Seite der Join-Anweisung mit Datensätzen `join` auf der rechten Seite ab. Wenn die kleinere Tabelle auf der linken Seite angezeigt wird, müssen weniger Datensätze übereinstimmen, was die Abfrage beschleunigt. 
 
-    In der folgenden Tabelle reduzieren wir die linke Tabelle `DeviceLogonEvents` auf nur drei bestimmte Geräte abdecken, bevor Sie es mit `IdentityLogonEvents` SIDs-Konten hinzufügen.
+    In der folgenden Tabelle reduzieren wir die linke Tabelle so, dass nur drei bestimmte Geräte berücksichtigt werden, bevor sie mit `DeviceLogonEvents` den Konto-SIDs `IdentityLogonEvents` verknüpfen.
  
     ```kusto
     DeviceLogonEvents 
@@ -80,9 +81,9 @@ Der [Join-Operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/j
     on AccountSid
     ```
 
-- **Verwenden Sie die Geschmacksrichtung Inner Join** – das standardmäßige [Join-Aroma](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-flavors) oder der [innerunique-Join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor) dedupliziert Zeilen in der linken Tabelle mit dem Join-Schlüssel, bevor eine Zeile für jede Übereinstimmung mit der rechten Tabelle zurückgegeben wird. Wenn die linke Tabelle mehrere Zeilen mit dem gleichen Wert für den Schlüssel aufweist `join` , werden diese Zeilen dedupliziert, um für jeden eindeutigen Wert eine einzelne zufällige Zeile zu hinterlassen.
+- Verwenden Sie die **inner-join-Variante**– Die standardmäßige Verknüpfungskonfiguration oder die [innerunique-join dedupliziert](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor) Zeilen in der linken Tabelle durch die Verknüpfungsschlüssel, bevor für jede Übereinstimmung mit der rechten Tabelle eine Zeile zurückgegeben wird. [](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-flavors) Wenn die linke Tabelle mehrere Zeilen mit demselben Wert für den Schlüssel enthält, werden diese Zeilen so dedupliziert, dass für jeden eindeutigen Wert eine einzelne zufällige `join` Zeile übrig bleibt.
 
-    Dieses Standardverhalten kann wichtige Informationen aus der linken Tabelle weglassen, die nützliche Einblicke bieten können. Beispielsweise wird in der folgenden Abfrage nur eine e-Mail mit einer bestimmten Anlage angezeigt, auch wenn dieselbe Anlage mit mehreren e-Mail-Nachrichten gesendet wurde:
+    Dieses Standardverhalten kann wichtige Informationen aus der linken Tabelle weg lassen, die nützliche Einblicke liefern können. Die folgende Abfrage zeigt beispielsweise nur eine E-Mail mit einer bestimmten Anlage an, auch wenn dieselbe Anlage mit mehreren E-Mail-Nachrichten gesendet wurde:
 
     ```kusto
     EmailAttachmentInfo
@@ -91,7 +92,7 @@ Der [Join-Operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/j
     | join (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
     ```
 
-    Um diese Einschränkung zu beheben, wenden wir den Geschmacksmuster [Inner Join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor) an, indem `kind=inner` Sie angeben, dass alle Zeilen in der linken Tabelle mit übereinstimmenden Werten in der rechten angezeigt werden sollen:
+    Um diese Einschränkung zu umgehen, wenden wir die inner [-Join-Variante](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor) an, indem wir angeben, dass alle Zeilen in der linken Tabelle mit übereinstimmenden `kind=inner` Werten rechts angezeigt werden:
     
     ```kusto
     EmailAttachmentInfo
@@ -99,9 +100,9 @@ Der [Join-Operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/j
     | where Subject == "Document Attachment" and FileName == "Document.pdf"
     | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
     ```
-- **Beitreten von Datensätzen aus einem Zeitfenster** – bei der Untersuchung von Sicherheitsereignissen suchen Analysten nach verwandten Ereignissen, die um den gleichen Zeitraum erfolgen. Das Anwenden des gleichen Ansatzes bei Verwendung `join` von profitiert auch von der Leistung, indem die Anzahl der zu überprüfenden Datensätze reduziert wird
+- **Datensätze aus einem Zeitfenster** verbinden – Bei der Untersuchung von Sicherheitsereignissen suchen Analysten nach verwandten Ereignissen, die ungefähr während desselben Zeitraums auftreten. Das Anwenden desselben Ansatzes bei Verwendung hat auch Vorteile für die Leistung, indem die Anzahl der `join` zu überprüfende Datensätze reduziert wird.
     
-    Die folgende Abfrage sucht innerhalb von 30 Minuten nach dem Empfang einer schädlichen Datei nach Anmeldeereignissen:
+    Die folgende Abfrage prüft innerhalb von 30 Minuten nach Dem Empfang einer schädlichen Datei auf Anmeldeereignisse:
 
     ```kusto
     EmailEvents
@@ -115,7 +116,7 @@ Der [Join-Operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/j
     ) on AccountName 
     | where (LogonTime - EmailReceivedTime) between (0min .. 30min)
     ```
-- **Anwenden von Zeit Filtern auf beiden Seiten** – selbst wenn Sie ein bestimmtes Zeitfenster nicht untersuchen, kann das Anwenden von Zeit Filtern sowohl auf der linken als auch auf der rechten Seite die Anzahl der zu überprüfenden Datensätze verringern und die Leistung verbessern `join` . Die folgende Abfrage gilt `Timestamp > ago(1h)` für beide Tabellen, sodass nur Datensätze aus der letzten Stunde verknüpft werden:
+- **Anwenden von** Zeitfiltern auf beide Seiten – Auch wenn Sie ein bestimmtes Zeitfenster nicht untersuchen, kann das Anwenden von Zeitfiltern sowohl für die linke als auch für die rechte Tabelle die Anzahl der Datensätze reduzieren, um die Leistung zu überprüfen und `join` zu verbessern. Die folgende Abfrage gilt für beide Tabellen, sodass nur Datensätze aus der letzten `Timestamp > ago(1h)` Stunde zusammen treten:
 
     ```kusto
     EmailAttachmentInfo
@@ -124,9 +125,9 @@ Der [Join-Operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/j
     | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
     ```  
 
-- **Verwenden von Hints for Performance** – verwenden Sie Hinweise mit dem `join` Operator, um das Back-End anzuweisen, die Last zu verteilen, wenn ressourcenintensive Vorgänge ausgeführt werden. [Weitere Informationen über Join-Hinweise](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-hints)
+- **Verwenden Sie Hinweise für die** Leistung – Verwenden Sie Hinweise mit dem Operator, um das Back-End anweisen, die Last beim Ausführen `join` ressourcenintensiver Vorgänge zu verteilen. [Weitere Informationen zu Verknüpfungshinweisen](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-hints)
 
-    Beispielsweise hilft der **[shuffle-Hinweis](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery)** beim Verknüpfen von Tabellen mithilfe eines Schlüssels mit hoher Kardinalität die Abfrageleistung – ein Schlüssel mit vielen eindeutigen Werten wie der `AccountObjectId` in der folgenden Abfrage:
+    Der Hinweis **["Shuffle"](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery)** trägt beispielsweise zur Verbesserung der Abfrageleistung bei, wenn Tabellen mit einem Schlüssel mit hoher Karität ( einem Schlüssel mit vielen eindeutigen Werten) wie der folgenden Abfrage zusammengef?pft `AccountObjectId` werden:
 
     ```kusto
     IdentityInfo
@@ -138,7 +139,7 @@ Der [Join-Operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/j
     on AccountObjectId 
     ```
     
-    Der **[Übertragungs Hinweis](https://docs.microsoft.com/azure/data-explorer/kusto/query/broadcastjoin)** hilft, wenn die linke Tabelle klein ist (bis zu 100.000 Datensätze), und die Rechte Tabelle ist extrem groß. Die folgende Abfrage versucht beispielsweise, an einigen e-Mails teilzunehmen, bei denen es sich um bestimmte Themen mit _allen_ Nachrichten mit Links in der `EmailUrlInfo` Tabelle handelt:
+    Der **[Übertragungshinweis hilft,](https://docs.microsoft.com/azure/data-explorer/kusto/query/broadcastjoin)** wenn die linke Tabelle klein (bis zu 100.000 Datensätze) und die rechte Tabelle sehr groß ist. Die folgende Abfrage versucht beispielsweise, einige E-Mails mit  bestimmten Themen mit allen Nachrichten zu verbinden, die Links in der Tabelle `EmailUrlInfo` enthalten:
 
     ```kusto
     EmailEvents 
@@ -147,25 +148,25 @@ Der [Join-Operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/j
     ```
 
 ## <a name="optimize-the-summarize-operator"></a>Optimieren des `summarize` Operators
-Der [Operator "zusammenfassen](https://docs.microsoft.com/azure/data-explorer/kusto/query/summarizeoperator) " aggregiert den Inhalt einer Tabelle. Wenden Sie diese Tipps an, um Abfragen zu optimieren, die diesen Operator verwenden.
+Der [Operator "Summarize"](https://docs.microsoft.com/azure/data-explorer/kusto/query/summarizeoperator) aggregiert den Inhalt einer Tabelle. Wenden Sie diese Tipps an, um Abfragen zu optimieren, die diesen Operator verwenden.
 
-- Suchen Sie nach unter **schiedlichen Werten** – verwenden Sie im allgemeinen `summarize` die Suche nach unterschiedlichen Werten, die sich wiederholende Werte haben können. Es kann nicht erforderlich sein, es zum Aggregieren von Spalten zu verwenden, die keine sich wiederholenden Werte aufweisen.
+- **Suche nach unterschiedlichen** Werten – im Allgemeinen verwenden Sie diese, um `summarize` unterschiedliche Werte zu finden, die sich wiederholen können. Es kann unnötig sein, damit Spalten zu aggregieren, die keine sich wiederholenden Werte haben.
 
-    Während eine einzelne e-Mail Teil mehrerer Ereignisse sein kann, ist das Beispiel unten _keine_ effiziente Verwendung, `summarize` da eine Netzwerknachrichten-ID für eine einzelne e-Mail immer mit einer eindeutigen Absenderadresse geliefert wird.
+    Obwohl eine einzelne E-Mail Teil mehrerer Ereignisse  sein kann, ist das folgende Beispiel keine effiziente Verwendung, da eine Netzwerknachrichten-ID für eine einzelne E-Mail immer eine eindeutige Absenderadresse `summarize` enthält.
  
     ```kusto
     EmailEvents  
     | where Timestamp > ago(1h)
     | summarize by NetworkMessageId, SenderFromAddress   
     ```
-    Der `summarize` Operator kann problemlos durch ersetzt werden `project` , wodurch möglicherweise dieselben Ergebnisse erzielt werden, während weniger Ressourcen beansprucht werden:
+    Der Operator kann einfach durch ersetzt werden, was potenziell dieselben Ergebnisse liefert `summarize` `project` und weniger Ressourcen verbraucht:
 
     ```kusto
     EmailEvents  
     | where Timestamp > ago(1h)
     | project NetworkMessageId, SenderFromAddress   
     ```
-    Das folgende Beispiel ist eine effizientere Verwendung von `summarize` , da es mehrere unterschiedliche Instanzen einer Absenderadresse geben kann, die eine e-Mail an dieselbe Empfängeradresse sendet. Solche Kombinationen sind unterschiedlich und sind wahrscheinlich Duplikate.
+    Das folgende Beispiel ist eine effizientere Verwendung, da es mehrere unterschiedliche Instanzen einer Absenderadresse gibt, die E-Mails an dieselbe `summarize` Empfängeradresse sendet. Solche Kombinationen sind weniger unterschiedlich und haben wahrscheinlich Duplikate.
 
     ```kusto
     EmailEvents  
@@ -173,9 +174,9 @@ Der [Operator "zusammenfassen](https://docs.microsoft.com/azure/data-explorer/ku
     | summarize by SenderFromAddress, RecipientEmailAddress   
     ```
 
-- **Die Abfrage shuffle** – während Sie `summarize` am besten in Spalten mit sich wiederholenden Werten verwendet wird, können dieselben Spalten auch eine _hohe Kardinalität_ oder eine große Anzahl eindeutiger Werte aufweisen. Wie der `join` Operator können Sie auch den [shuffle-Hinweis](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery) anwenden, `summarize` um die Verarbeitungslast zu verteilen und möglicherweise die Leistung zu verbessern, wenn Sie auf Spalten mit hoher Kardinalität arbeiten.
+- **Verfälsten** Sie die Abfrage . Dies wird zwar am besten in Spalten mit sich wiederholenden Werten verwendet, aber dieselben Spalten können auch eine hohe Karoität oder eine große Anzahl `summarize` eindeutiger Werte haben.  Wie der Operator können Sie auch den `join` [Shuffle-Hinweis](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery) anwenden, um die Verarbeitungslast zu verteilen und die Leistung beim Arbeiten mit Spalten mit hoher `summarize` Karoität potenziell zu verbessern.
 
-    Die folgende Abfrage verwendet `summarize` , um eine eindeutige Empfänger-e-Mail-Adresse zu zählen, die in den Hunderttausenden in großen Organisationen ausgeführt werden kann. Um die Leistung zu verbessern, umfasst es `hint.shufflekey` Folgendes:
+    Die folgende Abfrage wird verwendet, um unterschiedliche Empfänger-E-Mail-Adressen zu zählen, die in großen Organisationen in Hunderten von Tausenden `summarize` ausgeführt werden können. Um die Leistung zu verbessern, umfasst `hint.shufflekey` es:
 
     ```kusto
     EmailEvents  
@@ -183,9 +184,9 @@ Der [Operator "zusammenfassen](https://docs.microsoft.com/azure/data-explorer/ku
     | summarize hint.shufflekey = RecipientEmailAddress count() by Subject, RecipientEmailAddress
     ```
 
-## <a name="query-scenarios"></a>Abfrage Szenarien
+## <a name="query-scenarios"></a>Abfrageszenarien
 
-### <a name="identify-unique-processes-with-process-ids"></a>Identifizieren von eindeutigen Prozessen mit Prozess-IDs
+### <a name="identify-unique-processes-with-process-ids"></a>Identifizieren eindeutiger Prozesse mit Prozess-IDs
 Prozess-IDs (PIDs) werden in Windows für neue Prozesse wiederverwendet. Allein können sie nicht als eindeutige Identifikatoren für bestimmte Prozesse dienen.
 
 Um einen eindeutiger Bezeichner für einen Prozess auf einer bestimmten Maschine abzurufen, verwenden Sie die Prozess-ID zusammen mit der Prozesserstellungszeit. Wenn Sie Daten um Prozesse zusammenführen oder zusammenfassen, fügen Sie Spalten für die Maschinenkennung (entweder `DeviceId` oder`DeviceName`), die Prozess-ID (`ProcessId`oder`InitiatingProcessId`) und die Prozesserstellungszeit (`ProcessCreationTime` oder`InitiatingProcessCreationTime`) hinzu.
@@ -203,18 +204,18 @@ InitiatingProcessCreationTime, InitiatingProcessFileName
 
 Die Query fasst sowohl`InitiatingProcessId` als auch`InitiatingProcessCreationTime` zusammen, um einen einzelnen Prozess darzustellen, ohne mehrere Prozesse mit derselben Prozess-ID miteinander zu vermischen.
 
-### <a name="query-command-lines"></a>Abfragebefehls Zeilen
-Es gibt zahlreiche Möglichkeiten, eine Befehlszeile zu erstellen, um eine Aufgabe auszuführen. Beispielsweise kann ein Angreifer auf eine Bilddatei ohne Pfad, ohne Dateierweiterung, mit Umgebungsvariablen oder mit Anführungszeichen verweisen. Der Angreifer kann auch die Reihenfolge der Parameter ändern oder mehrere Anführungszeichen und Leerzeichen hinzufügen.
+### <a name="query-command-lines"></a>Abfragebefehlszeilen
+Es gibt zahlreiche Möglichkeiten, eine Befehlszeile zu erstellen, um eine Aufgabe auszuführen. Beispielsweise könnte ein Angreifer auf eine Bilddatei ohne Pfad, ohne Dateierweiterung, mithilfe von Umgebungsvariablen oder mit Anführungszeichen verweisen. Der Angreifer könnte auch die Reihenfolge der Parameter ändern oder mehrere Anführungszeichen und Leerzeichen hinzufügen.
 
-Wenden Sie die folgenden Methoden an, um dauerhafte Abfragen um Befehlszeilen zu erstellen:
+Wenden Sie die folgenden Methoden an, um dauerhaftere Abfragen um Befehlszeilen zu erstellen:
 
-- Identifizieren Sie die bekannten Prozesse (beispielsweise *net.exe* oder *psexec.exe* ), indem Sie Sie in den dateinamenfeldern abgleichen, anstatt die Befehlszeile selbst zu filtern.
-- Analysieren von Befehlszeilen Abschnitten mithilfe der [parse_command_line ()-Funktion](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) 
+- Identifizieren Sie die bekannten Prozesse (z. *B.net.exe* oder *psexec.exe),* indem Sie die Dateinamenfelder abgleichen, anstatt nach der Befehlszeile selbst zu filtern.
+- Analysieren von Befehlszeilenabschnitten mithilfe der [parse_command_line()-Funktion](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) 
 - Wenn Sie nach Befehlszeilenargumenten suchen, suchen Sie nicht nach einer genauen Übereinstimmung für mehrere unabhängige Argumente in einer bestimmten Reihenfolge. Verwenden Sie stattdessen reguläre Ausdrücke oder verwenden Sie mehrere separate enthaltene Operatoren.
-- Verwenden Sie Übereinstimmungen zwischen Groß- und Kleinschreibung. Verwenden Sie beispielsweise, und `=~` `in~` `contains` anstelle von `==` , `in` und `contains_cs` .
-- Um die Methoden zur Verschleierung von Befehlszeilen zu verringern, sollten Sie das Entfernen von Anführungszeichen, das Ersetzen von Kommas durch Leerzeichen und das Ersetzen mehrerer aufeinander folgender Leerzeichen durch ein einzelnes Leerzeichen Es gibt komplexere Verschleierung-Techniken, die andere Ansätze erfordern, aber diese Optimierungen können dazu beitragen, häufige zu behandeln.
+- Verwenden Sie Übereinstimmungen zwischen Groß- und Kleinschreibung. Verwenden Sie z. B. `=~` , und anstelle von , und `in~` `contains` `==` `in` `contains_cs` .
+- Um Techniken zur Verhängung von Befehlszeilen zu minimieren, sollten Sie Anführungszeichen entfernen, Kommas durch Leerzeichen ersetzen und mehrere aufeinander folgende Leerzeichen durch ein einziges Leerzeichen ersetzen. Es gibt komplexere Verschleierungstechniken, die andere Ansätze erfordern, aber diese Optimierungen können dabei helfen, allgemeine Techniken zu adressieren.
 
-Die folgenden Beispiele zeigen verschiedene Möglichkeiten zum Erstellen einer Abfrage, die nach der Datei *net.exe* sucht, um den Firewalldienst "mpssvc" zu beenden:
+Die folgenden Beispiele zeigen verschiedene Möglichkeiten zum Erstellen einer Abfrage, die nach der Datei sucht, *net.exe* den Firewalldienst "MpsSvc" zu beenden:
 
 ```kusto
 // Non-durable query - do not use
@@ -233,8 +234,8 @@ DeviceProcessEvents
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```
 
-### <a name="ingest-data-from-external-sources"></a>Aufnehmen von Daten aus externen Quellen
-Wenn Sie lange Listen oder große Tabellen in Ihre Abfrage einbeziehen möchten, verwenden Sie den [externaldata-Operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/externaldata-operator) , um Daten aus einem angegebenen URI zu erfassen. Sie können Daten aus Dateien in txt, CSV, JSON oder [anderen Formaten](https://docs.microsoft.com/azure/data-explorer/ingestion-supported-formats)abrufen. Im folgenden Beispiel wird gezeigt, wie Sie die umfangreiche Liste der von MalwareBazaar (abuse.ch) bereitgestellten SHA-256-Hashes für Schadsoftware verwenden können, um Anhänge in e-Mails zu überprüfen:
+### <a name="ingest-data-from-external-sources"></a>Aufnahmedaten aus externen Quellen
+Um lange Listen oder große Tabellen in ihre Abfrage zu integrieren, verwenden Sie den [Operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/externaldata-operator) für externe Daten, um Daten aus einem angegebenen URI zu übernehmen. Sie können Daten aus Dateien in TXT-, CSV-, JSON- oder anderen [Formaten erhalten.](https://docs.microsoft.com/azure/data-explorer/ingestion-supported-formats) Das folgende Beispiel zeigt, wie Sie die umfangreiche Liste der Schadsoftware SHA-256-Hashes verwenden können, die von MalwareBazaar (abuse.ch) bereitgestellt werden, um Anlagen in E-Mails zu überprüfen:
 
 ```kusto
 let abuse_sha256 = (externaldata(sha256_hash: string )
@@ -251,21 +252,21 @@ SHA256,MalwareFilterVerdict,MalwareDetectionMethod
 ```
 
 ### <a name="parse-strings"></a>Analysieren von Zeichenfolgen
-Es gibt verschiedene Funktionen, die Sie verwenden können, um Zeichenfolgen effizient zu verarbeiten, die analysiert oder konvertiert werden müssen. 
+Es gibt verschiedene Funktionen, mit deren Hilfe Sie Zeichenfolgen effizient verarbeiten können, die eine Analyse oder Konvertierung benötigen. 
 
-| String | Funktion | Verwendungsbeispiel |
+| Zeichenfolge | Funktion | Verwendungsbeispiel |
 |--|--|--|
-| Befehlszeilen | [parse_command_line ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) | Extrahieren Sie den Befehl und alle Argumente. | 
-| Paths | [parse_path ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsepathfunction) | Extrahieren Sie die Abschnitte eines Datei-oder Ordnerpfads. |
-| Versionsnummern | [parse_version ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-versionfunction) | Dekonstruieren Sie eine Versionsnummer mit bis zu vier Abschnitten und bis zu acht Zeichen pro Abschnitt. Verwenden Sie die analysierten Daten, um das Versions Alter zu vergleichen. |
-| IPv4-Adressen | [parse_ipv4 ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-ipv4function) | Konvertiert eine IPv4-Adresse in eine lange ganze Zahl. Verwenden Sie [ipv4_compare ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/ipv4-comparefunction), um IPv4-Adressen ohne Konvertierung zu vergleichen. |
-| IPv6-Adressen | [parse_ipv6 ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-ipv6function)  | Konvertieren Sie eine IPv4-oder IPv6-Adresse in die kanonische IPv6-Notation. Verwenden Sie [ipv6_compare ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/ipv6-comparefunction), um IPv6-Adressen zu vergleichen. |
+| Befehlszeilen | [parse_command_line()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) | Extrahieren Sie den Befehl und alle Argumente. | 
+| Paths | [parse_path()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsepathfunction) | Extrahieren Sie die Abschnitte eines Datei- oder Ordnerpfads. |
+| Versionsnummern | [parse_version()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-versionfunction) | Deconstruct a version number with up to four sections and up to eight characters per section. Verwenden Sie die analysierten Daten, um das Versionsalter zu vergleichen. |
+| IPv4-Adressen | [parse_ipv4()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-ipv4function) | Konvertieren Einer IPv4-Adresse in eine lange ganze Zahl. Verwenden Sie zum Vergleichen von IPv4-Adressen, ohne sie zu [konvertieren, ipv4_compare()](https://docs.microsoft.com/azure/data-explorer/kusto/query/ipv4-comparefunction). |
+| IPv6-Adressen | [parse_ipv6()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-ipv6function)  | Konvertieren Sie eine IPv4- oder eine IPv6-Adresse in die kanonische IPv6-Notation. Verwenden Sie zum Vergleichen von IPv6-Adressen [ipv6_compare()](https://docs.microsoft.com/azure/data-explorer/kusto/query/ipv6-comparefunction). |
 
-Informationen zu allen unterstützten Analysefunktionen finden [Sie unter Kusto String Functions](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalarfunctions#string-functions). 
+Informationen zu allen unterstützten Analysefunktionen finden Sie [unter Kusto-Zeichenfolgenfunktionen.](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalarfunctions#string-functions) 
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Dokumentation zur Kusto-Abfragesprache](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
+- [Dokumentation zur Abfragesprache von Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
 - [Kontingente und Verwendungsparameter](advanced-hunting-limits.md)
-- [Behandeln von erweiterten Jagd Fehlern](advanced-hunting-errors.md)
+- [Behandeln von Fehlern bei der erweiterten Suche](advanced-hunting-errors.md)
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)

@@ -1,10 +1,10 @@
 ---
-title: Erweiterte Jagd Kontingente und Nutzungsparameter in Microsoft 365 Defender
-description: Grundlegendes zu verschiedenen Kontingenten und Nutzungsparametern (Service Limits), mit denen der erweiterte Jagd Dienst reaktionsfähig bleibt
-keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schema, Kusto, CPU-Grenze, Abfrage Grenzwert, Ressourcen, maximale Ergebnisse, Kontingent, Parameter, Zuweisung
+title: Erweiterte Kontingente und Verwendungsparameter in Microsoft 365 Defender
+description: Verstehen verschiedener Kontingente und Verwendungsparameter (Dienstbeschränkungen), die den dienst für die erweiterte Suche reaktionsfähig halten
+keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, mtp, m365, Suche, Abfrage, Telemetrie, Schema, Kusto, CPU-Grenzwert, Abfragegrenzwert, Ressourcen, maximale Ergebnisse, Kontingent, Parameter, Zuordnung
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: bab63d9e5939f87f6a1edbf62d256b82552e4fe9
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 3d3b1055408b51e8d217f2abcb0e83ef7dd74949
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847368"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929790"
 ---
-# <a name="advanced-hunting-quotas-and-usage-parameters"></a>Erweiterte Jagd Kontingente und Nutzungsparameter
+# <a name="advanced-hunting-quotas-and-usage-parameters"></a>Erweiterte Kontingente und Verwendungsparameter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,23 +35,23 @@ ms.locfileid: "48847368"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Um den Dienst leistungsfähig und reaktionsfähig zu halten, setzt Advanced Hunting verschiedene Kontingente und Nutzungsparameter (auch bekannt als "Service Limits"). Diese Kontingente und Parameter gelten für Abfragen, die manuell und durch [benutzerdefinierte Erkennungsregeln](custom-detection-rules.md)ausgeführt werden. Kunden, die regelmäßig mehrere Abfragen ausführen, sollten den Verbrauch nachverfolgen und [bewährte Methoden zur Optimierung anwenden](advanced-hunting-best-practices.md) , um Störungen zu minimieren.
+Um die Leistungsfähigkeit und Reaktionsfähigkeit des Diensts zu halten, legt die erweiterte Suche verschiedene Kontingente und Verwendungsparameter (auch als "Dienstbeschränkungen" bezeichnet) fest. Diese Kontingente und Parameter gelten für Abfragen, die manuell und durch benutzerdefinierte [Erkennungsregeln ausgeführt werden.](custom-detection-rules.md) Kunden, die regelmäßig mehrere Abfragen ausführen, sollten den Verbrauch nachverfolgen und bewährte Optimierungsmethoden anwenden, [um](advanced-hunting-best-practices.md) Unterbrechungen zu minimieren.
 
-Lesen Sie die folgende Tabelle, um die vorhandenen Kontingente und Nutzungsparameter zu verstehen.
+In der folgenden Tabelle finden Sie Informationen zu vorhandenen Kontingenten und Verwendungsparametern.
 
-| Quota oder Parameter | Größe | Aktualisierungszyklus | Beschreibung |
+| Kontingent oder Parameter | Größe | Aktualisierungszyklus | Beschreibung |
 |--|--|--|--|
-| Datenbereich | 30 Tage | Jede Abfrage | Jede Abfrage kann Daten von bis zu den letzten 30 Tagen nachschlagen. |
-| Ergebnismenge | 10.000 Zeilen | Jede Abfrage | Jede Abfrage kann bis zu 10.000 Datensätze zurückgeben. |
-| Timeout | 10 Minuten | Jede Abfrage | Jede Abfrage kann bis zu 10 Minuten lang ausgeführt werden. Wenn der Dienst nicht innerhalb von 10 Minuten abgeschlossen ist, wird ein Fehler angezeigt.
-| CPU-Ressourcen | Basierend auf der Mandanten Größe | -Auf die Stunde und dann alle 15 Minuten<br>-Täglich um 12 Uhr | Der Dienst erzwingt das tägliche und das 15-minütige Kontingent separat. Für jedes Kontingent wird bei jeder Ausführung einer Abfrage ein [Fehler angezeigt](advanced-hunting-errors.md) , und der Mandant hat mehr als 10% der zugeordneten Ressourcen verbraucht. Abfragen werden blockiert, wenn der Mandant 100% bis nach dem nächsten täglichen oder 15-minütigen Zyklus erreicht hat. |
+| Datenbereich | 30 Tage | Jede Abfrage | Jede Abfrage kann Daten von bis zu den letzten 30 Tagen nachschauen. |
+| Ergebnissatz | 10.000 Zeilen | Jede Abfrage | Jede Abfrage kann bis zu 10.000 Datensätze zurückgeben. |
+| Timeout | 10 Minuten | Jede Abfrage | Jede Abfrage kann bis zu 10 Minuten lang ausgeführt werden. Wenn sie nicht innerhalb von 10 Minuten abgeschlossen wird, zeigt der Dienst einen Fehler an.
+| CPU-Ressourcen | Basierend auf der Mandantengröße | - In der Stunde und dann alle 15 Minuten<br>- Täglich um 12 Uhr | Der Dienst erzwingt das tägliche und das 15-Minuten-Kontingent separat. Für jedes Kontingent zeigt das [Portal](advanced-hunting-errors.md) einen Fehler an, wenn eine Abfrage ausgeführt wird und der Mandant mehr als 10 % der zugewiesenen Ressourcen verbraucht hat. Abfragen werden blockiert, wenn der Mandant 100 % erreicht hat, bis nach dem nächsten täglichen oder 15-minütigen Zyklus. |
 
 >[!NOTE] 
->Eine separate Gruppe von Kontingenten und Parametern gilt für erweiterte Jagd Abfragen, die über die API ausgeführt werden. [Lesen Sie mehr über erweiterte Jagd-APIs](https://docs.microsoft.com/microsoft-365/security/mtp/api-advanced-hunting)
+>Ein separater Satz von Kontingenten und Parametern gilt für Abfragen der erweiterten Suche, die über die API ausgeführt werden. [Informationen zu APIs für die erweiterte Suche](https://docs.microsoft.com/microsoft-365/security/mtp/api-advanced-hunting)
 
 ## <a name="related-topics"></a>Verwandte Themen
 
 - [Bewährte Methoden für die erweiterte Suche](advanced-hunting-best-practices.md)
-- [Behandeln von erweiterten Jagd Fehlern](advanced-hunting-errors.md)
+- [Behandeln von Fehlern bei der erweiterten Suche](advanced-hunting-errors.md)
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Benutzerdefinierte Erkennungen – Übersicht](custom-detections-overview.md)

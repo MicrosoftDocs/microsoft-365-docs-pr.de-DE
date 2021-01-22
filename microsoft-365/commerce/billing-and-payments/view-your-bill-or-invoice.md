@@ -18,7 +18,7 @@ ms.collection:
 - commerce
 ms.custom:
 - TopSMBIssues
-- okr_SMB
+- okr_smb
 - BCS160
 - MET150
 - MOE150
@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: Suchen Sie Ihre Rechnung oder Ihren Kontoauszug im Microsoft 365 Admin Center. Sie können auch eine Kopie Ihrer Rechnung speichern und ausdrucken.
 ms.date: 07/31/2020
-ms.openlocfilehash: 31d48ea846cbbdfb87cce4042ffea959e30d6fa1
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 5bf257847ec880855841035792c7714fd24d9b68
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552538"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928532"
 ---
 # <a name="view-your-bill-or-invoice"></a>Anzeigen Ihrer Rechnung
 

@@ -1,5 +1,5 @@
 ---
-title: Einrichten von Schutz gegen Phishing
+title: Einrichten des Antiphishingschutzes
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,37 +16,38 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie Anti-Phishing-Schutz einrichten.
-ms.openlocfilehash: f3a1399c8a6a51c7b14af7ffea8fbaea39cd1541
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Erfahren Sie, wie Sie den Antiphishingschutz einrichten.
+ms.openlocfilehash: bcb6b8bac316b4b74c505656cb9a93e7a87e0830
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702235"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927874"
 ---
-# <a name="set-up-anti-phishing"></a>Einrichten von Anti-Phishing
+# <a name="set-up-anti-phishing"></a>Einrichten von Antiphishing
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvt9r?autoplay=false]
 
-Phishing ist ein böswilliger Angriff, bei dem eine e-Mail so aussieht, als ob Sie von einer bekannten Quelle gesendet wurde, aber versucht, Ihre persönlichen Informationen zu erfassen. Standardmäßig enthält Microsoft 365 einen Schutz vor Phishing, aber Sie können diesen Schutz erweitern, indem Sie die Einstellungen verfeinern. Werfen wir einen Blick.
+Phishing ist ein böswilliger Angriff, bei dem eine E-Mail so aussieht, als wäre sie von einer vertrauten Quelle gesendet worden, aber es wird versucht, Ihre persönlichen Informationen zu sammeln. Standardmäßig enthält Microsoft 365 antiphishingschutz, Sie können diesen Schutz jedoch erhöhen, indem Sie die Einstellungen optimieren. Werfen wir einen Blick darauf.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Wählen Sie im Admin Center unter die [https://admin.microsoft.com](https://admin.microsoft.com) Option **Security**, **Threat Management**, **Policy** und dann **ATP Anti-Phishing** aus.
-1. Wählen Sie **Standardrichtlinie** aus, um Sie zu verfeinern.
-1. Wählen Sie im Abschnitt **Identitätswechsel** die Option **Bearbeiten** aus.
-1. Wechseln Sie zu zu **schützende Domänen hinzufügen** , und wählen Sie die Umschaltfläche aus, um automatisch die Domänen einzuschließen, die Sie besitzen.
-1. Wechseln Sie zu **Aktionen**, öffnen Sie die Dropdownliste, **Wenn e-Mails von einem imitierten Benutzer gesendet** werden, und wählen Sie die gewünschte Aktion aus.
+1. Wählen Sie im Admin Center unter [https://admin.microsoft.com](https://admin.microsoft.com) **"Sicherheit",** **"Bedrohungsverwaltung",** **"Richtlinie"** und dann **"ATP-Antiphishing" aus.**
+1. Wählen Sie **die Standardrichtlinie aus,** um sie zu verfeinern.
+1. Wählen Sie **im Abschnitt "Identitätswechsel"** die Option **"Bearbeiten" aus.**
+1. Wechseln Sie **zu "Domänen hinzufügen", um sie** zu schützen, und wählen Sie die Umschaltschalte aus, um automatisch die Domänen hinzuzufügen, die Sie besitzen.
+1. Go to **Actions**, open the drop-down **If email is sent by an impersonated user,** and choose the action you want.
 
-    Öffnen Sie die Dropdownliste, **Wenn e-Mails von einer imitierten Domäne gesendet werden** , und wählen Sie die gewünschte Aktion aus.
-1. Klicken Sie **auf Identitätswechsel-Sicherheitstipps aktivieren**. Wählen Sie aus, ob Tipps für Benutzer bereitgestellt werden sollen, wenn das System imitierte Benutzer, Domänen oder ungewöhnliche Zeichen erkennt. Klicken Sie auf **Speichern**.
-1. Wählen Sie **Mailbox Intelligence** aus, und stellen Sie sicher, dass Sie aktiviert ist. Auf diese Weise können Ihre e-Mails effizienter durch das Erlernen von Verwendungsmustern sein.
-1. Wählen Sie **vertrauenswürdige Absender und Domänen hinzufügen** aus. Hier können Sie e-Mail-Adressen oder Domänen hinzufügen, die nicht als Identitätswechsel klassifiziert werden sollen.
-1. Wählen Sie **Einstellungen überprüfen**, stellen Sie sicher, dass alles richtig ist, wählen Sie **Speichern** und dann **Schließen** aus.
+    Öffnen Sie die **Dropdownliste, wenn E-Mails von einer imitierten** Domäne gesendet werden, und wählen Sie die Aktion aus, die Sie verwenden möchten.
+1. Wählen **Sie Sicherheitstipps zum Aktivieren des Identitätswechsels aus.** Wählen Sie aus, ob Benutzern Tipps bereitgestellt werden sollen, wenn das System imitierte Benutzer, Domänen oder ungewöhnliche Zeichen erkennt. Klicken Sie auf **Speichern**.
+1. Wählen **Sie "Postfachintelligenz"** aus, und stellen Sie sicher, dass sie aktiviert ist. Dadurch können Ihre E-Mails effizienter sein, indem Sie Nutzungsmuster erlernen.
+1. Wählen **Sie "Vertrauenswürdige Absender und Domänen hinzufügen" aus.** Hier können Sie E-Mail-Adressen oder Domänen hinzufügen, die nicht als Identitätswechsel klassifiziert werden sollen.
+1. Choose **Review your settings,** make sure everything is correct, select **Save**, then **Close**.
 
     Ihre Organisation bietet jetzt besseren Schutz vor Phishing-Bedrohungen.

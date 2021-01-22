@@ -3,7 +3,7 @@ title: Übersicht über Vorfälle in Microsoft 365 Defender
 description: Untersuchen Sie Vorfälle, die auf Geräten, bei Benutzern und in Postfächern auftreten.
 keywords: Vorfälle, Warnungen, untersuchen, Korrelation, Angriff, Computer, Geräte, Benutzer, Identitäten, Identität, Postfach, E-Mail, 365, Microsoft, m365
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6149b6f128b3c96d2338e325caa8df835c292b13
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.technology: m365d
+ms.openlocfilehash: 7fcbecddd5e8f83e9c78d6db90939fbfc2f2df07
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357611"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929282"
 ---
 # <a name="incidents-overview-in-microsoft-365-defender"></a>Übersicht über Vorfälle in Microsoft 365 Defender
 
@@ -36,26 +37,26 @@ ms.locfileid: "49357611"
 **Gilt für:**
 - Microsoft 365 Defender
 
-> Möchten Sie Microsoft 365 Defender erfahren? Sie können [es in einer Laborumgebung auswerten](https://aka.ms/mtp-trial-lab) oder [ihr Pilotprojekt in der Produktion ausführen](https://aka.ms/m365d-pilotplaybook).
+> Möchten Sie Microsoft 365 Defender erleben? Sie können [es in einer Laborumgebung auswerten oder](https://aka.ms/mtp-trial-lab) ihr Pilotprojekt in der Produktion [ausführen.](https://aka.ms/m365d-pilotplaybook)
 >
 
 
-Vorfälle basieren auf entsprechenden Warnungen. Warnungen werden erstellt, wenn in Ihrem Netzwerk ein bösartiges Ereignis oder eine schädliche Aktivität erkannt wird. Einzelne Warnungen liefern wertvolle Anhaltspunkte für einen fortlaufenden Angriff. Angriffe verwenden jedoch in der Regel verschiedene Vektoren und Techniken für die Durchführung einer Sicherheitsverletzung. Einzelne Anhaltspunkte zusammen zu stellen, kann herausfordernd und zeitaufwändig sein.
+Vorfälle basieren auf verwandten Warnungen. Warnungen werden erstellt, wenn in Ihrem Netzwerk ein bösartiges Ereignis oder eine schädliche Aktivität erkannt wird. Einzelne Warnungen liefern wertvolle Hinweise zu einem angriffsverdingten Angriff. Bei Angriffen werden jedoch in der Regel verschiedene Vektoren und Techniken zum Durchführen einer Verletzung verwendet. Das Zusammensuchen einzelner Hinweise kann schwierig und zeitaufwändig sein.
 
 Dieses kurze Video bietet eine Übersicht über Vorfälle in Microsoft 365 Defender.
 <br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Bei einem Vorfall handelt es sich um eine Sammlung korrelierter Warnungen, aus denen sich die Geschichte eines Angriffs zusammensetzt. Böswillige und verdächtige Ereignisse, die sich in unterschiedlichen Geräten, Benutzern und Post Fach Entitäten im Netzwerk befinden, werden automatisch von Microsoft 365 Defender aggregiert. Durch das Gruppieren von zugehörigen Warnungen in einen Vorfall erhalten Sicherheits Verteidiger eine umfassende Ansicht eines Angriffs. 
+Ein Vorfall ist eine Sammlung korrelierter Warnungen, die die Geschichte eines Angriffs zusammenstellen. Bösartige und verdächtige Ereignisse, die in verschiedenen Geräte-, Benutzer- und Postfachentitäten im Netzwerk gefunden werden, werden automatisch von Microsoft 365 Defender aggregiert. Das Gruppieren verwandter Warnungen in einem Vorfall bietet Sicherheitsverteidigern einen umfassenden Überblick über einen Angriff. 
 
-Beispielsweise können Sicherheits Verteidiger sehen, wo der Angriff gestartet wurde, welche Taktik verwendet wurde und wie weit der Angriff in das Netzwerk verlaufen ist. Sie können auch den Umfang des Angriffs sehen, wie viele Geräte, Benutzer und Postfächer betroffen waren, wie schwerwiegend die Auswirkungen waren, und andere Details zu betroffenen Entitäten.
+Sicherheitsaktivisten können z. B. sehen, wo der Angriff begonnen hat, welche Taktiken verwendet wurden und wie weit der Angriff in das Netzwerk gelaufen ist. Sie können auch den Umfang des Angriffs sehen, z. B. wie viele Geräte, Benutzer und Postfächer betroffen waren, wie schwer die Auswirkungen waren und weitere Details zu betroffenen Entitäten.
 
-Wenn diese Option aktiviert ist, kann Microsoft 365 Defender die einzelnen Warnungen automatisch mithilfe von Automatisierung und künstlicher Intelligenz untersuchen und lösen. Sicherheits Verteidiger können auch zusätzliche korrekturschritte ausführen, um den Angriff direkt aus der Vorfallansicht zu lösen. 
+Wenn diese Option aktiviert ist, kann Microsoft 365 Defender die einzelnen Warnungen automatisch durch Automatisierung und künstliche Intelligenz untersuchen und beheben. Sicherheitsaktivisten können auch zusätzliche Korrekturschritte ausführen, um den Angriff direkt aus der Sicht der Vorfälle zu beheben. 
 
-Vorfälle aus den letzten 30 Tagen werden in der Vorfall Warteschlange angezeigt. Von hier aus können Sicherheits Verteidiger sehen, welche Vorfälle basierend auf der Risikostufe und anderen Faktoren priorisiert werden sollten. 
+Vorfälle aus den letzten 30 Tagen werden in der Vorfallwarteschlange angezeigt. Von hier aus können Sicherheitsaktivisten sehen, welche Vorfälle basierend auf der Risikostufe und anderen Faktoren priorisiert werden sollten. 
 
-Sicherheits Verteidiger können Vorfälle auch umbenennen, Sie einzelnen Analysten zuweisen, Vorfälle klassifizieren und Tags hinzufügen, um eine bessere und Benutzer spezifischere Vorfall Verwaltungserfahrung zu erzielen.
+Sicherheitsaktivisten können Vorfälle auch umbenennen, einzelnen Analysten zuweisen, Vorfälle klassifizieren und Kategorien hinzufügen, um eine bessere und angepasste Vorfallsverwaltung zu ermöglichen.
 
 
 

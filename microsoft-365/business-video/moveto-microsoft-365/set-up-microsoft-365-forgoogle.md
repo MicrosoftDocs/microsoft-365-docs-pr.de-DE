@@ -15,24 +15,25 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Microsoft 365 so einrichten, dass es für die Migration von Google Workspace bereit ist.
-ms.openlocfilehash: ec8813f62febbd1c4ee2afa6877e4be505a75a81
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 42b8cd86ec03c4d4b43a4d32a1cee56e94bb7147
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794634"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928186"
 ---
 # <a name="set-up-microsoft-365-for-google-workspace-migration"></a>Einrichten der Migration von Microsoft 365 für Google Workspace
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4JD2Y?autoplay=false]
 
-Zum Migrieren von E-Mails, Kalendern und Kontakten aus Google Workspace müssen Sie Microsoft 365 Business Premium mit einer temporären Domäne einrichten, bis Ihre Geschäftsdomäne für die Verwendung mit Ihrem Abonnement bereit ist.
+Zum Migrieren von E-Mails, Kalendern und Kontakten aus Google Workspace müssen Sie Microsoft 365 Business Premium mit einer temporären Domäne einrichten, bis Ihre Unternehmensdomäne für die Verwendung mit Ihrem Abonnement bereit ist.
 
 ## <a name="try-it"></a>Probieren Sie es aus! 
 

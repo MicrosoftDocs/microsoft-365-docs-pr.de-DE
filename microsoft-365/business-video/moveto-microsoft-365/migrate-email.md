@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie E-Mails, Kontakte und Kalender von Google Workspace zu Microsoft 365 Business migrieren.
-ms.openlocfilehash: ab70a43fb7c26c23ebc9024b1cd2803c164a0aa4
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: cb751b1d2f18b226021bb6f218b62f3ae426f6a4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794647"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928246"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Migrieren von Geschäftlichen E-Mails und Kalendern aus Google Workspace
 
@@ -134,7 +135,7 @@ Sobald Sie fertig sind, können Sie migrieren.
 1. Überprüfen Sie die Administrator-E-Mail-Adresse, die Sie zu Testzwecken verwenden möchten. 
 1. Select **Choose File**, navigate to the JSON file you created earlier (usually in the Downloads folder on your computer), choose it, select **Open**, then **Next**. 
 1. Geben Sie einen Namen in das Feld **"Neuer Migrationsbatchname" ein.**
-1. Geben Sie die Von Ihnen erstellte Unterdomäne im Feld **Zielzustellungsdomäne** ein, wählen Sie **"Weiter"** und dann **"Neu" aus.** 
+1. Geben Sie die von Ihnen erstellte Unterdomäne im Feld **Zielzustellungsdomäne** ein, wählen Sie **"Weiter"** und dann **"Neu" aus.** 
 1. Nachdem die Informationen gespeichert wurden, wählen Sie **OK aus.** 
 
     Sie können jetzt den Status Ihrer Migration anzeigen. 

@@ -1,10 +1,10 @@
 ---
 title: Übersicht über benutzerdefinierte Erkennungen in Microsoft 365 Defender
-description: Grundlegendes zum Erstellen von benutzerdefinierten Erkennungen und Generieren von Benachrichtigungen mithilfe der erweiterten Suche
-keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, benutzerdefinierte Erkennungen, Schema, Kusto, Microsoft 365, Microsoft Threat Protection
+description: Verstehen, wie Sie die erweiterte Suche verwenden können, um benutzerdefinierte Erkennungen zu erstellen und Warnungen zu generieren
+keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, benutzerdefinierte Erkennungen, Schema, Kusto, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,12 +17,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: fe2b9f1b52fa2c8d9031bb58597992f3dda91520
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: ae9617a55fd5efb40a3aba07202ebfb1494d4db6
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843912"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928808"
 ---
 # <a name="custom-detections-overview"></a>Benutzerdefinierte Erkennungen – Übersicht
 
@@ -32,13 +33,13 @@ ms.locfileid: "48843912"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Mit benutzerdefinierten Erkennungen können Sie proaktiv auf verschiedene Ereignisse und Systemzustände überwachen und darauf reagieren, einschließlich mutmaßlicher Sicherheitsverletzungen und falsch konfigurierter Endpunkte. Dies wird durch anpassbare Erkennungsregeln ermöglicht, die automatisch Warnungen und Reaktions Aktionen auslösen.
+Mit benutzerdefinierten Erkennungen können Sie proaktiv verschiedene Ereignisse und Systemzustände überwachen und darauf reagieren, einschließlich mutmaßlicher Sicherheitsverletzungen und falsch konfigurierter Endpunkte. Dies wird durch anpassbare Erkennungsregeln ermöglicht, die automatisch Warnungen sowie Reaktionsaktionen auslösen.
 
-Benutzerdefinierte Erkennungen arbeiten mit [Advanced Hunting](advanced-hunting-overview.md), die eine leistungsstarke, flexible Abfragesprache bietet, die eine umfassende Reihe von Ereignis-und Systeminformationen aus Ihrem Netzwerk abdeckt. Sie können festlegen, dass Sie in regelmäßigen Intervallen ausgeführt werden, indem Sie Warnungen generieren und Reaktions Aktionen ausführen, wenn Übereinstimmungen vorliegen.
+Benutzerdefinierte Erkennungen funktionieren [bei](advanced-hunting-overview.md)der erweiterten Suche, die eine leistungsstarke, flexible Abfragesprache bietet, die eine breite Palette von Ereignis- und Systeminformationen aus Ihrem Netzwerk umfasst. Sie können festlegen, dass sie in regelmäßigen Intervallen ausgeführt werden, Warnungen generieren und bei Übereinstimmungen Reaktionsaktionen ausführen.
 
-Benutzerdefinierte Erkennungen stellen Folgendes bereit:
-- Warnungen für regelbasierte Erkennungen, die aus erweiterten Jagd Abfragen erstellt wurden
-- Automatische Antwort Aktionen
+Benutzerdefinierte Erkennungen bieten:
+- Warnungen für regelbasierte Erkennungen, die aus abfragen der erweiterten Suche erstellt wurden
+- Automatische Antwortaktionen
 
 ## <a name="related-topic"></a>Verwandtes Thema
 - [Erstellen und Verwalten von benutzerdefinierten Erkennungsregeln](custom-detection-rules.md)

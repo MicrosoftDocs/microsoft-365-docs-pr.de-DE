@@ -1,5 +1,5 @@
 ---
-title: Überprüfen der Verwendungsberichte
+title: Überprüfen von Verwendungsberichten
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,32 +16,33 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Hier erfahren Sie, wie Sie die Informationen aus Verwendungsberichten verwenden.
-ms.openlocfilehash: 898f72f3c89981cc7ea8112cd157239d42b08d20
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Erfahren Sie, wie Sie die Informationen aus Verwendungsberichten verwenden.
+ms.openlocfilehash: e69362a9190eda71cd7ab42fb404b6e715a5c48e
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702176"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927682"
 ---
-# <a name="review-usage-reports-in-microsoft-365"></a>Überprüfen der Verwendungsberichte in Microsoft 365
+# <a name="review-usage-reports-in-microsoft-365"></a>Überprüfen von Verwendungsberichten in Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SOFC?autoplay=false]
 
-Erfahren Sie, wie Mitarbeiter Microsoft 365-Dienste wie e-Mail oder OneDrive verwenden, und ergreifen Sie Maßnahmen.
+Erfahren Sie, wie Mitarbeiter Microsoft 365-Dienste wie E-Mail oder OneDrive nutzen und Maßnahmen ergreifen.
 
-Im [Admin Center](https://admin.microsoft.com)werden alle verfügbaren Berichte angezeigt.
+Im [Admin Center](https://admin.microsoft.com)können Sie alle verfügbaren Berichte anzeigen.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Wechseln Sie zu **Berichte** und dann auf **Verwendung**. Suchen Sie nach Details für einen Bericht, indem Sie einen auswählen. Der Bericht "aktive Benutzer" zeigt an, welche Dienste am häufigsten von den Personen in Ihrem Unternehmen verwendet werden.
-1. Als Beispiel sehen wir uns den OneDrive-Bericht an. Hier können wir sehen, wie viele Personen ein Konto haben, Sie können auch die Anzahl der Gesamt-und aktiven Dateien sowie den verwendeten Speicher anzeigen. Um alle anderen Berichte anzuzeigen, wechseln Sie zum Dropdownmenü.
-1. Hier können Sie sich den Bericht über die Verwendung von e-Mail-apps ansehen und sehen, welche Methoden Ihre Mitarbeiter am häufigsten verwenden, um auf Ihre e-Mails zuzugreifen. Sie können auch spezifische Informationen für eine einzelne Person anzeigen, die Details sind jedoch standardmäßig ausgeblendet. Um die einzelnen Benutzer Details anzuzeigen, wechseln Sie zu **Einstellungen**, und klicken **Sie dann auf Dienste &-Add-ins**.
-1. Im Berichtsbereich können wir den anonymen Bezeichner aktivieren. Nun schließen wir das Panel und kommen wieder zu **Berichten**, **Nutzungs**-und **e-Mail-Aktivitäten**. Hier finden Sie Informationen, die für eine einzelne Person spezifisch sind.
+1. Wechseln Sie **zu "Berichte"** und dann **"Verwendung".** Suchen Sie Details für jeden Bericht, indem Sie einen auswählen. Der Bericht "Aktive Benutzer" zeigt, welche Dienste von den Personen in Ihrem Unternehmen am häufigsten verwendet werden.
+1. Als Beispiel sehen wir uns den #A0 an. Hier sehen Sie, wie viele Personen über ein Konto verfügen. Sie können auch die Gesamtzahl der und die aktiven Dateien sowie den verwendeten Speicher anzeigen. Um alle anderen Berichte anzuzeigen, wechseln Sie zum Dropdownmenü.
+1. Hier können wir einen Blick auf den Nutzungsbericht der E-Mail-App werfen und sehen, welche Methoden Ihre Mitarbeiter am häufigsten für den Zugriff auf ihre E-Mails verwenden. Sie können auch Informationen anzeigen, die für eine Einzelperson spezifisch sind, die Details sind jedoch standardmäßig ausgeblendet. Um die Details der einzelnen Benutzer anzuzeigen, wechseln Sie zu "Einstellungen" und dann zu "Dienste" **& Add-Ins.**
+1. Im Berichtbereich können wir den anonymen Bezeichner aktivieren. Jetzt schließen wir den Bereich und kommen wieder zu **Berichten,** Verwendung **und** **E-Mail-Aktivität.** Hier finden Sie Informationen, die für eine Einzelperson spezifisch sind.
 
-    Denken Sie daran, wenn Sie jemals stecken geblieben sind, können Sie jederzeit zur Hilfe zurückkehren, in der Sie Informationen zu dem bestimmten Bericht erhalten, den Sie anzeigen.
+    Denken Sie daran, wenn Sie jemals nicht mehr weiterkommen, können Sie jederzeit zur Hilfe wechseln, die Ihnen Informationen zu dem jeweiligen Bericht liefert, den Sie anzeigen.

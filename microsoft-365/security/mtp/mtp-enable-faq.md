@@ -1,9 +1,9 @@
 ---
 title: Häufig gestellte Fragen beim Aktivieren von Microsoft 365 Defender
-description: Hier finden Sie Antworten auf die am häufigsten gestellten Fragen zu Lizenzierung, Berechtigungen, anfänglichen Einstellungen und anderen Produkten und Diensten im Zusammenhang mit der Aktivierung von Microsoft 365 Defender.
-keywords: häufig gestellte Fragen, FAQ, gcc, erste Schritte, Aktivieren von MTP, Microsoft Threat Protection, M365, Sicherheit, Datenspeicherort, erforderliche Berechtigungen, Lizenz Berechtigung, Seite "Einstellungen"
+description: Erhalten Sie Antworten auf die am häufigsten gestellten Fragen zu Lizenzierung, Berechtigungen, Anfänglichen Einstellungen und anderen Produkten und Diensten im Zusammenhang mit der Aktivierung von Microsoft 365 Defender.
+keywords: Häufig gestellte Fragen, HÄUFIG gestellte Fragen, GCC, erste Schritte, MTP aktivieren, Microsoft Threat Protection, M365, Sicherheit, Datenspeicherort, erforderliche Berechtigungen, Lizenzberechtigung, Einstellungsseite
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3dae9f208f5bb08d694322eb9f7cff35986930da
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.technology: m365d
+ms.openlocfilehash: 2cb9aed070959644e3660188835386118d5f4d9b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920490"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930186"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Häufig gestellte Fragen beim Aktivieren von Microsoft 365 Defender
 
@@ -34,42 +35,42 @@ ms.locfileid: "48920490"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Hier finden Sie Antworten auf die am häufigsten gestellten Fragen zum Aktivieren von [Microsoft 365 Defender](microsoft-threat-protection.md), einschließlich der erforderlichen Lizenzen und Berechtigungen, der Bereitstellung von Supportdiensten und der anfänglichen Einstellungen.
+Lesen Sie Antworten auf die am häufigsten gestellten Fragen zum Aktivieren von [Microsoft 365 Defender,](microsoft-threat-protection.md)einschließlich der erforderlichen Lizenzen und Berechtigungen, der Bereitstellung von Supportdiensten und anfänglichen Einstellungen.
 
-Anweisungen zum Aktivieren des Diensts finden [Sie unter Aktivieren von Microsoft 365 Defender](mtp-enable.md).
+Anweisungen zum Aktivieren des Diensts finden Sie unter ["Aktivieren von Microsoft 365 Defender".](mtp-enable.md)
 
-## <a name="i-dont-have-a-microsoft-365-e5-license-can-i-still-use-microsoft-365-defender"></a>Ich habe keine Microsoft 365 E5-Lizenz. Kann ich weiterhin Microsoft 365 Defender verwenden?
+## <a name="i-dont-have-a-microsoft-365-e5-license-can-i-still-use-microsoft-365-defender"></a>Ich habe keine Microsoft 365 E5-Lizenz. Kann ich Weiterhin Microsoft 365 Defender verwenden?
 
-Kunden mit den folgenden nicht-E5-Lizenzen können Microsoft 365 Defender verwenden:
+Kunden mit den folgenden Nicht-E5-Lizenzen können Microsoft 365 Defender verwenden:
 
 - Microsoft Defender für Endpunkt
 - Microsoft Defender for Identity
 - Microsoft Cloud App-Sicherheit
-- Verteidiger für Office 365 (Plan 2)
+- Defender für Office 365 (Plan 2)
  
-Eine vollständige Liste unterstützter Lizenzen [finden Sie in den Lizenzierungsanforderungen](prerequisites.md#licensing-requirements).
+Eine vollständige Liste der unterstützten Lizenzen finden Sie [in den Lizenzierungsanforderungen.](prerequisites.md#licensing-requirements)
 
-## <a name="do-i-need-to-install-or-deploy-anything-to-start-using-microsoft-365-defender"></a>Muss ich etwas installieren oder bereitstellen, um mit Microsoft 365 Defender zu beginnen?
+## <a name="do-i-need-to-install-or-deploy-anything-to-start-using-microsoft-365-defender"></a>Muss ich etwas installieren oder bereitstellen, um mit der Verwendung von Microsoft 365 Defender zu beginnen?
 
-Nein, Microsoft 365 Defender konsolidiert Daten von Microsoft 365-Sicherheitsdiensten, die Sie bereits bereitgestellt haben. Sobald Sie die Funktion aktiviert haben, werden Vorfall-, Automatisierungs-und Jagd Erfahrungen im Rahmen der bereitgestellten Produkte ausgeführt. Wenn keines dieser Produkte ordnungsgemäß bereitgestellt wird, zeigt Microsoft 365 Defender keine Daten an und kann keine Aktionen ausführen.
+Nein, Microsoft 365 Defender konsolidiert Daten aus Microsoft 365-Sicherheitsdiensten, die Sie bereits bereitgestellt haben. Sobald Sie sie aktivieren, funktionieren die Vorfall-, Automatisierungs- und Sucheerfahrungen im Rahmen der bereitgestellten Produkte. Wenn keines dieser Produkte ordnungsgemäß bereitgestellt ist, zeigt Microsoft 365 Defender keine Daten an und kann keine Maßnahmen ergreifen.
 
-Zur Optimierung Ihrer Microsoft 365 Defender-Erlebnisse wird empfohlen, *alle* unterstützten [Microsoft 365-Sicherheitsprodukte und-Dienste](deploy-supported-services.md)bereitzustellen.
+Um Ihre Microsoft 365 Defender-Erfahrungen  zu optimieren, empfehlen wir die Bereitstellung aller unterstützten [Microsoft 365-Sicherheitsprodukte und -Dienste.](deploy-supported-services.md)
 
-## <a name="where-does-microsoft-365-defender-process-and-store-my-data"></a>Wo verarbeitet und speichert Microsoft 365 Defender meine Daten?
-Microsoft 365 Defender wählt automatisch einen optimalen Standort für das Rechenzentrum aus, in dem konsolidierte Daten verarbeitet und gespeichert werden. Wenn Sie über Microsoft Defender für Endpoint verfügen, wird derselbe Speicherort ausgewählt, der von Defender für Endpoint verwendet wird.
+## <a name="where-does-microsoft-365-defender-process-and-store-my-data"></a>Wo werden meine Daten von Microsoft 365 Defender verarbeiten und gespeichert?
+Microsoft 365 Defender wählt automatisch einen optimalen Speicherort für das Rechenzentrum aus, in dem konsolidierte Daten verarbeitet und gespeichert werden. Wenn Sie über Microsoft Defender für Endpoint verfügen, wählt es den gleichen Speicherort aus, der auch von Defender für Endpoint verwendet wird.
 
 >[!NOTE]
->Microsoft Defender für Endpoint stellt in den Datencentern der Europäischen Union (EU) automatisch Rückstellungen bereit, wenn Sie über Azure Defender aktiviert werden. Microsoft 365 Defender wird automatisch im gleichen EU-Rechenzentrum für Kunden bereitgestellt, die Microsoft Defender für Endpoint auf diese Weise bereitgestellt haben. 
+>Microsoft Defender for Endpoint wird automatisch in Rechenzentren der Europäischen Union (EU) bereitgestellt, wenn sie über Azure Defender aktiviert sind. Microsoft 365 Defender wird automatisch im selben EU-Rechenzentrum für Kunden bereitgestellt, die Microsoft Defender for Endpoint auf diese Weise bereitgestellt haben. 
 
-Der Speicherort des Rechenzentrums wird vor und nach der Einrichtung des Diensts auf der Seite Einstellungen für Microsoft 365 Defender ( **Settings > Microsoft 365 Defender** ) angezeigt. Wenn Sie lieber einen anderen rechenzentrumsstandort verwenden möchten, wählen Sie **need help?** im Microsoft 365 Security Center aus, um den Microsoft-Support zu kontaktieren.
+Der Standort des Rechenzentrums wird vor und nach der Bereitstellung des Diensts auf der Einstellungsseite für Microsoft 365 Defender ( Einstellungen >**Microsoft 365 Defender) angezeigt.** Wenn Sie lieber einen anderen Rechenzentrumsstandort verwenden möchten, wählen Sie **Hilfe?** im Microsoft 365 Security Center aus, um den Support von Microsoft zu kontaktieren.
 
 ## <a name="where-can-i-access-microsoft-365-defender"></a>Wo kann ich auf Microsoft 365 Defender zugreifen?
 
-Microsoft 365 Defender steht im Microsoft 365 Security Center zur Verfügung. Um zum Sicherheitscenter zu wechseln, navigieren Sie zur URL [https://security.microsoft.com](https://security.microsoft.com) .
+Microsoft 365 Defender ist im Microsoft 365 Security Center verfügbar. Um zum Security Center zu wechseln, navigieren Sie zur [https://security.microsoft.com](https://security.microsoft.com) URL.
 
-##  <a name="what-permissions-do-i-need-to-access-microsoft-365-defender-in-microsoft-365-security-center"></a>Welche Berechtigungen benötige ich für den Zugriff auf Microsoft 365 Defender im Microsoft 365 Security Center?
+##  <a name="what-permissions-do-i-need-to-access-microsoft-365-defender-in-microsoft-365-security-center"></a>Welche Berechtigungen muss ich für den Zugriff auf Microsoft 365 Defender im Microsoft 365 Security Center benötigen?
 
-Konten, denen die folgenden Azure Active Directory (AD)-Rollen zugewiesen sind, können auf Microsoft 365 Defender-Funktionen und-Daten zugreifen:
+Konten, denen die folgenden Azure Active Directory (AD)-Rollen zugewiesen sind, können auf Microsoft 365 -Defender-Funktionen und -Daten zugreifen:
 
 - Globaler Administrator
 - Sicherheitsadministrator
@@ -78,27 +79,27 @@ Konten, denen die folgenden Azure Active Directory (AD)-Rollen zugewiesen sind, 
 - Sicherheitsleseberechtigter
 
 >[!NOTE]
->Rollenbasierte Zugriffssteuerungseinstellungen in Microsoft Defender für Endpoint beeinflussen den Zugriff auf Daten. Weitere Informationen finden Sie unter [Managing Access to Microsoft 365 Defender](mtp-permissions.md).
+>Rollenbasierte Zugriffssteuerungseinstellungen in Microsoft Defender for Endpoint beeinflussen den Zugriff auf Daten. Weitere Informationen finden Sie unter Verwalten [des Zugriffs auf Microsoft 365 Defender](mtp-permissions.md).
 
 ## <a name="what-time-zone-does-microsoft-365-defender-default-to"></a>In welcher Zeitzone wird Microsoft 365 Defender standardmäßig verwendet?
-Standardmäßig zeigt Microsoft 365 Defender Zeit Informationen in der UTC-Zeitzone an. Sie können diese Einstellung so ändern, dass Sie Ihre lokale Zeitzone verwendet. [Informationen zum Festlegen der Zeitzone](mtp-time-zone.md)
+Standardmäßig zeigt Microsoft 365 Defender Zeitinformationen in der Zeitzone UTC an. Sie können diese Einstellung so ändern, dass Ihre lokale Zeitzone verwendet wird. [Informationen zum Festlegen der Zeitzone](mtp-time-zone.md)
 
-## <a name="how-can-i-learn-about-new-microsoft-365-defender-feature-and-ui-updates"></a>Wie kann ich neue Features von Microsoft 365 Defender und Benutzeroberflächen Updates erfahren?
+## <a name="how-can-i-learn-about-new-microsoft-365-defender-feature-and-ui-updates"></a>Wie kann ich mehr über neue Features und Benutzeroberflächenupdates für Microsoft 365 Defender erfahren?
 
-Microsoft stellt regelmäßig Informationen über die verschiedenen Kanäle bereit, einschließlich:
+Microsoft stellt regelmäßig Informationen über die verschiedenen Kanäle zur Verfügung, darunter:
 
 - Das [Nachrichtencenter](../../admin/manage/message-center.md) im Microsoft 365 Admin Center
-- Blogposts in der [Microsoft 365 Security & Compliance Tech-Community](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
+- Blogbeiträge in der [Microsoft 365 Security & Compliance Tech Community](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
 
-Holen Sie sich die neuesten öffentlich verfügbaren Benutzeroberflächen, indem Sie die [Vorschaufunktionen](preview.md)aktivieren.
+Erhalten Sie die neuesten öffentlich verfügbaren Funktionen, indem Sie [Vorschaufeatures aktivieren.](preview.md)
 
-## <a name="is-microsoft-365-defender-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>Ist Microsoft 365 Defender für US Government Community Cloud (gcc) oder gcc High verfügbar?
+## <a name="is-microsoft-365-defender-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>Ist Microsoft 365 Defender für US Government Community Cloud (GCC) oder GCC High verfügbar?
 Zurzeit ist Microsoft Threat Protection dafür nicht verfügbar.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Microsoft 365 Defender (Übersicht)](microsoft-threat-protection.md)
-- [Aktivieren Sie Microsoft 365 Defender](mtp-enable.md).
+- [Übersicht über Microsoft 365 Defender](microsoft-threat-protection.md)
+- [Aktivieren Sie Microsoft 365 Defender.](mtp-enable.md)
 - [Lizenzierungsanforderungen und andere Voraussetzungen](prerequisites.md)
 - [Bereitstellen unterstützter Dienste](deploy-supported-services.md)
 - [Vorschaufeatures aktivieren](preview.md)

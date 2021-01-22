@@ -16,41 +16,42 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Hier erfahren Sie, wie Sie Richtlinien zur Verhinderung von Datenverlusten verwalten.
-ms.openlocfilehash: 93c06af0203a5eb590d22d86e597d7485d7af238
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Erfahren Sie, wie Sie Richtlinien zur Verhinderung von Datenverlust verwalten.
+ms.openlocfilehash: e963cf85fee887b6e91c6e54b00aaa9e5174e3b6
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702244"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927958"
 ---
-# <a name="prevent-data-loss-with-dlp"></a>Verhindern von Datenverlust mit DLP
+# <a name="prevent-data-loss-with-dlp"></a>Verhindern von Datenverlusten mit DLP
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3TGvL?autoplay=false]
 
-Policies zur Verhinderung von Datenverlusten helfen beim identifizieren und Schützen vertraulicher Informationen Ihres Unternehmens wie Sozialversicherungsnummern oder medizinischen Datensätzen. 
+Richtlinien zur Verhinderung von Datenverlust helfen dabei, vertrauliche Informationen Ihres Unternehmens zu identifizieren und zu schützen, z. B. Sozialversicherungsnummern oder Krankenakten. 
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Um zu beginnen, wechseln Sie zum [Admin Center](https://admin.microsoft.com), und wählen Sie **Setup** aus.
-1. Scrollen Sie nach unten, um die **Verhinderung von Datenverlust einzurichten**, und wählen Sie dann **anzeigen** und dann **Verwalten** aus.
-1. Zum Bearbeiten einer Richtlinie wählen Sie Sie aus, wählen Sie **Richtlinie bearbeiten** aus, und wählen Sie dann zu ändernde Elemente aus. Wählen Sie beispielsweise **Orte** aus, um zu ändern, was gescannt wird.
-1. Um die Überprüfung auf Inhalte in Microsoft Teams zu aktivieren, aktivieren Sie die Umschaltfläche in die Position **ein** , und wählen Sie dann **Speichern** aus.
-1. Wählen Sie zum Bearbeiten von Richtlinieneinstellungen die Option **Bearbeiten** aus.
-1. Sie müssen separate Regeln festlegen, die auf kleine und große Mengen vertraulicher Inhalte angewendet werden, die erkannt wurden. Erweitern Sie die Regel für geringes Volumen. Klicken Sie auf **Regel bearbeiten**.
-1. Überprüfen Sie Ihre Einstellungen, und passen Sie Sie bei Bedarf an. Sie können beispielsweise festlegen, dass **der e-Mail-Text angepasst** und **der richtlinientipp Text angepasst** werden soll. Klicken Sie auf **Speichern**.
-1. Wiederholen Sie diese Schritte für die Regel für hohe Lautstärke. Klicken Sie auf **Speichern** und dann auf **Schließen**.
-1. Wählen Sie zum Erstellen einer neuen Richtlinie **Richtlinie erstellen** aus.
-1. Sie können eine benutzerdefinierte Richtlinie erstellen oder mit einer Vorlage beginnen. Um beispielsweise eine HIPAA-Richtlinie zu erstellen, wählen Sie die Vorlage **Medizin und Integrität** aus, und wählen Sie dann **US-Krankenversicherungsgesetz (HIPAA)** aus. Wählen Sie **Weiter** aus.
+1. To get started, go to the [admin center,](https://admin.microsoft.com)and select **Setup**.
+1. Scrollen Sie nach unten zu **"Verhinderung von Datenverlust einrichten",** und wählen Sie dann **"Ansicht"** und dann **"Verwalten" aus.**
+1. Um eine Richtlinie zu bearbeiten, wählen Sie sie aus, **wählen** Sie "Richtlinie bearbeiten" und dann aus, was Sie ändern möchten. Wählen Sie beispielsweise **"Speicherorte"** aus, um zu ändern, was gescannt wird.
+1. Um die Überprüfung auf Inhalte in Microsoft Teams  zu aktivieren, schalten Sie den Umschalter auf die Ein-Position, und wählen Sie dann **Speichern aus.**
+1. Um Richtlinieneinstellungen zu bearbeiten, wählen Sie **"Bearbeiten" aus.**
+1. Sie müssen separate Regeln festlegen, die für kleine und große Mengen von erkannten vertraulichen Inhalten gelten. Erweitern Sie die Regel für geringes Volumen. Choose **Edit rule**.
+1. Überprüfen Sie Ihre Einstellungen, und passen Sie sie nach Bedarf an. Sie können z.  B. den E-Mail-Text anpassen und **den Richtlinientipptext anpassen.** Klicken Sie auf **Speichern**.
+1. Wiederholen Sie dies für die Regel für hohe Lautstärke. Wählen Sie **"Speichern"** und dann **"Schließen" aus.**
+1. Wählen Sie zum Erstellen einer neuen Richtlinie die Option **"Richtlinie erstellen" aus.**
+1. Sie können eine benutzerdefinierte Richtlinie erstellen oder mit einer Vorlage beginnen. Um beispielsweise eine HIPAA-Richtlinie zu erstellen, wählen Sie die Vorlage "Medical **and health"** und dann den **U.S. Health Insurance Act (HIPAA) aus.** Wählen Sie **Weiter** aus.
 1. Geben Sie einen Namen und eine Beschreibung für Ihre Richtlinie ein. Wählen Sie **Weiter** aus.
-1. Wählen Sie die zu überprüfenden Speicherorte aus. Wählen Sie **Weiter** aus.
-1. Wählen Sie den Inhaltstyp aus, den Sie schützen möchten. Wählen Sie **Weiter** aus.
-1. Wählen Sie aus, was geschehen soll, wenn vertrauliche Informationen erkannt werden. Wählen Sie **Weiter** aus.
-1. Passen Sie Ihre Zugriffs-und Außerkraftsetzungs Berechtigungen an. Wählen Sie **Weiter** aus.
+1. Wählen Sie die zu überprüfende Speicherorte aus. Wählen Sie **Weiter** aus.
+1. Wählen Sie den Inhaltstyp aus, der geschützt werden soll. Wählen Sie **Weiter** aus.
+1. Wählen Sie aus, was passieren soll, wenn vertrauliche Informationen erkannt werden. Wählen Sie **Weiter** aus.
+1. Passen Sie Ihren Zugriff an, und überschreiben Sie Berechtigungen. Wählen Sie **Weiter** aus.
 1. Wählen Sie aus, wann die Richtlinie wirksam werden soll. Wählen Sie **Weiter** aus.
-1. Überprüfen Sie Ihre Einstellungen, und wählen Sie **Erstellen** aus. Nachdem Ihre Richtlinie wirksam wurde, werden e-Mails, die die beschriebenen vertraulichen Informationen enthalten, blockiert, und der Absender, der versucht hat, diese Informationen zu senden, wird eine Warnmeldung angezeigt.
+1. Überprüfen Sie Ihre Einstellungen, und wählen Sie **"Erstellen" aus.** Nachdem Ihre Richtlinie wirksam wurde, werden E-Mails mit den beschriebenen vertraulichen Informationen blockiert, und dem Absender, der versucht hat, diese Informationen zu senden, wird eine Warnmeldung angezeigt.

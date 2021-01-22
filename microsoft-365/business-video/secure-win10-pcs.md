@@ -16,19 +16,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: In diesem Artikel erfahren Sie, wie Sie Windows 10-Schutzrichtlinien mit Microsoft 365 Business Premium einrichten.
-ms.openlocfilehash: e2ef5c3c3d1dbc07e1c3705389eb757e720c9182
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: Erfahren Sie, wie Sie Windows 10-Schutzrichtlinien mit Microsoft 365 Business Premium einrichten.
+ms.openlocfilehash: dadb24c5de46ef13ea64c4e164cf6edfd4592b35
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49702044"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928006"
 ---
-# <a name="secure-windows-10-pcs"></a>Sichere Windows 10-PCs
+# <a name="secure-windows-10-pcs"></a>Sichern von Windows 10-PCs
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF?autoplay=false]
  
@@ -36,12 +37,12 @@ ms.locfileid: "49702044"
 
 Nachdem Sie den Geräteschutz in Microsoft 365 Business eingerichtet haben, führen Sie die folgenden Schritte aus, um Ihre Windows 10-Computer zu schützen.
 
-1. Wählen Sie im Microsoft 365 Admin Center die Option  **Setup** aus.
-2. Wählen Sie unter  **Windows-Computer sichern die** Option  **Ansicht** aus.
-3. Lesen Sie die Informationen auf der Seite  **Secure your Windows 10 Computers**  , damit Sie die Richtlinien und deren Auswirkungen auf Ihre Benutzer verstehen.
-4. Wählen Sie  **Erste Schritte** aus.
-5. Überprüfen Sie im Fensterbereich  **Einstellungen von Windows 10**  die Optionen, und passen Sie Sie bei Bedarf an. Bewegen Sie den Mauszeiger über die QuickInfo, um weitere Informationen zu einer Richtlinie zu erhalten.
-6. Unter  **wem sollte die Richtlinie gelten?** , wählen Sie aus, ob Ihre Auswahl auf alle Benutzer in Ihrer Organisation oder auf bestimmte Sicherheitsgruppen angewendet werden soll.
-7. Wählen Sie  **Save Changes** aus.
+1. Wählen Sie im Microsoft 365 Admin Center **Setup aus.**
+2. Wählen **Sie unter "Windows-Computer sichern"** die Option **"Ansicht" aus.**
+3. Überprüfen Sie die Informationen auf der Seite  **"Windows 10-Computer sichern",**  damit Sie die Richtlinien und ihre Auswirkungen auf Ihre Benutzer verstehen.
+4. Wählen Sie **"Erste Schritte" aus.**
+5. Überprüfen Sie  **im Windows 10-Einstellungsbereich**  die Optionen, und passen Sie sie bei Bedarf an. Zeigen Sie auf die QuickInfo, um mehr über eine Richtlinie zu erfahren.
+6. Auf  **wen sollte die Richtlinie angewendet werden?** , wählen Sie aus, ob Ihre Auswahl auf alle Benutzer in Ihrer Organisation oder auf bestimmte Sicherheitsgruppen angewendet wird.
+7. Wählen Sie **"Änderungen speichern" aus.**
 
-Microsoft 365 Business unterstützt jetzt den Schutz Ihrer Windows 10-Computer.
+Microsoft 365 Business hilft ihnen jetzt, Ihre Windows 10-Computer zu schützen.

@@ -1,10 +1,10 @@
 ---
-title: IdentityDirectoryEvents-Tabelle im Advanced Hunting-Schema
-description: Informationen zu Domänencontroller-und Active Directory Ereignissen in der IdentityDirectoryEvents-Tabelle des Advanced Hunting-Schemas
-keywords: Erweiterte Suche, Bedrohungs Suche, Cyber-Bedrohungs Suche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, IdentityDirectoryEvents, Domänencontroller, Active Directory, Azure ATP, Identitäten
+title: Tabelle "IdentityDirectoryEvents" im Schema "Erweiterte Suche"
+description: Informationen zu Domänencontroller- und Active Directory-Ereignissen in der Tabelle "IdentityDirectoryEvents" des Schemas für die erweiterte Suche
+keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, Mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, IdentityDirectoryEvents, Domänencontroller, Active Directory, Azure ATP, Identitäten
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 41b429e32122d6cc58a746649c8a0428f0a90b0f
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 95090b0f4abe0b0f0552c81495936f4f2261cf8e
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847428"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929934"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -34,43 +35,43 @@ ms.locfileid: "48847428"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Die `IdentityDirectoryEvents` Tabelle im [Advanced Hunting](advanced-hunting-overview.md) -Schema enthält Ereignisse, die einen lokalen Domänencontroller mit Active Directory (AD) umfassen. In dieser Tabelle werden verschiedene identitätsbezogene Ereignisse erfasst, wie Kennwortänderungen, Kennwortablauf und Benutzerprinzipalnamen (User Principal Name, UPN) geändert. Außerdem werden Systemereignisse auf dem Domänencontroller erfasst, wie die Planung von Aufgaben und die PowerShell-Aktivität. Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
+Die Tabelle im Schema für die erweiterte Suche enthält Ereignisse mit einem lokalen Domänencontroller, auf `IdentityDirectoryEvents` dem Active Directory (AD) ausgeführt [](advanced-hunting-overview.md) wird. In dieser Tabelle werden verschiedene identitätsbezogene Ereignisse erfasst, z. B. Kennwortänderungen, Kennwortablauf und Benutzerprinzipalnamen(UPN)-Änderungen. Außerdem werden Systemereignisse auf dem Domänencontroller erfasst, z. B. das Planen von Aufgaben und PowerShell-Aktivitäten. Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
 >[!TIP]
-> Ausführliche Informationen zu den `ActionType` von einer Tabelle unterstützten Ereignistypen (Values) finden Sie in der [integrierten Schemareferenz](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) , die im Sicherheitscenter verfügbar ist.
+> Ausführliche Informationen zu den Ereignistypen (Werten), die von einer Tabelle unterstützt werden, finden Sie in der integrierten Schemareferenz, die im `ActionType` Security Center verfügbar ist. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
 
 Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter [Referenz zur erweiterten Suche](advanced-hunting-schema-tables.md).
 
 | Spaltenname | Datentyp | Beschreibung |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
-| `ActionType` | string | Typ der Aktivität, die das Ereignis ausgelöst hat. Details finden Sie [in der in-Portal-Schemareferenz](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) . |
+| `ActionType` | string | Typ der Aktivität, die das Ereignis ausgelöst hat. Weitere Informationen [finden Sie in der In-Portal-Schemareferenz.](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
 | `Application` | string | Anwendung, die die aufgezeichnete Aktion ausgeführt hat |
-| `TargetAccountUpn` | string | Benutzerprinzipalname (User Principal Name, UPN) des Kontos, auf das die aufgezeichnete Aktion angewendet wurde |
+| `TargetAccountUpn` | string | Benutzerprinzipalname (UPN) des Kontos, auf das die aufgezeichnete Aktion angewendet wurde |
 | `TargetAccountDisplayName` | string | Anzeigename des Kontos, auf das die aufgezeichnete Aktion angewendet wurde |
 | `TargetDeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Geräts, auf das die aufgezeichnete Aktion angewendet wurde |
 | `DestinationDeviceName` | string | Name des Geräts, auf dem die Serveranwendung ausgeführt wird, die die aufgezeichnete Aktion verarbeitet hat |
-| `DestinationIPAddress` | string | IP-Adresse des Geräts, auf dem die Serveranwendung ausgeführt wird, die die aufgezeichnete Aktion verarbeitet hat |
-| `DestinationPort` | string | Ziel Port der Aktivität |
-| `Protocol` | string | Während der Kommunikation verwendete Protokolle |
+| `DestinationIPAddress` | string | Die IP-Adresse des Geräts, auf dem die Serveranwendung ausgeführt wird, die die aufgezeichnete Aktion verarbeitet hat |
+| `DestinationPort` | string | Zielport der Aktivität |
+| `Protocol` | string | Protokoll, das während der Kommunikation verwendet wird |
 | `AccountName` | string | Benutzername des Kontos |
 | `AccountDomain` | string | Domäne des Kontos |
 | `AccountUpn` | string | Benutzerprinzipalname (UPN) des Kontos |
 | `AccountSid` | string | Sicherheits-ID (SID) des Kontos |
-| `AccountObjectId` | string | Eindeutiger Bezeichner für das Konto in Azure Active Directory |
-| `AccountDisplayName` | string | Name des Kontobenutzers, der im Adressbuch angezeigt wird. Normalerweise eine Kombination aus einem angegebenen oder Vornamen, einer mittleren Initiation und einem Nachnamen oder Nachnamen. |
+| `AccountObjectId` | string | Eindeutige ID für das Konto in Azure Active Directory |
+| `AccountDisplayName` | string | Name des Kontobenutzers, der im Adressbuch angezeigt wird. In der Regel eine Kombination aus einem Vor- oder Vornamen, einer mittleren Initiierung und einem Nachnamen oder Nachnamen. |
 | `DeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Geräts |
 | `IPAddress` | string | Dem Gerät während der Kommunikation zugewiesene IP-Adresse |
 | `Port` | string | Während der Kommunikation verwendeter TCP-Port |
 | `Location` | string | Ort, Land oder anderer geografischer Standort, der dem Ereignis zugeordnet ist |
-| `ISP` | string | Internet Dienstanbieter, der der IP-Adresse zugeordnet ist |
+| `ISP` | string | Internetdienstanbieter, der der IP-Adresse zugeordnet ist |
 | `ReportId` | long | Eindeutiger Bezeichner für das Ereignis |
-| `AdditionalFields` | string | Zusätzliche Informationen zur Entität oder zum Ereignis |
+| `AdditionalFields` | string | Zusätzliche Informationen über die Entität oder das Ereignis |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
 - [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)
-- [Suchen auf Geräten, in E-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md)
+- [Suche über Geräte, E-Mails, Apps und Identitäten hinweg](advanced-hunting-query-emails-devices.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)

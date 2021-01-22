@@ -4,7 +4,7 @@ description: Informationen zu Ereignissen im Zusammenhang mit Microsoft 365-E-Ma
 keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, EmailEvents, Netzwerknachrichten-ID, Absender, Empfänger, Anlagen-ID, Anlagenname, Malware-Bewert, Phishing-Bewert, Anlagenanzahl, Linkanzahl, URL-Anzahl
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6dbd7473074212c6bc257e683288040056426048
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: m365d
+ms.openlocfilehash: 48a0fe53cb92214d616887741c0c260edf1653c2
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780272"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928986"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -47,7 +48,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
 | `EmailId` | string | Eindeutige E-Mail- und Empfänger-ID |
-| `NetworkMessageId` | string | Eindeutiger Bezeichner für die von Microsoft 365 generierte E-Mail |
+| `NetworkMessageId` | string | Eindeutiger Bezeichner für die E-Mail, generiert von Microsoft 365 |
 | `InternetMessageId` | string | Öffentlich sichtbarer Bezeichner für die E-Mail-Nachricht, die vom sendenden E-Mail-System festgelegt wird |
 | `SenderMailFromAddress` | string | Absender-E-Mail-Adresse in der Kopfzeile "MAIL FROM", auch als Umschlagabsender oder als Return-Path-Adresse bezeichnet |
 | `SenderFromAddress` | string | Für E-Mail-Empfänger im E-Mail-Client in der FROM-Kopfzeile angezeigte Absender-E-Mail-Adresse |
@@ -73,12 +74,12 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `EmailLanguage` | string | Erkannte Sprache des E-Mail-Inhalts |
 | `OrgLevelAction` | string | Aktion, die für die E-Mail als Reaktion auf Übereinstimmungen mit einer auf Organisationsebene definierten Richtlinie ergriffen wird |
 | `OrgLevelPolicy` | string | Organisationsrichtlinie, die die Aktion für die E-Mail ausgelöst hat |
-| `UserLevelAction` | string | Aktion, die für die E-Mail als Reaktion auf Übereinstimmungen mit einer vom Empfänger definierten Postfachrichtlinie ergriffen wird |
+| `UserLevelAction` | string | Aktion, die für die E-Mail als Reaktion auf Übereinstimmungen mit einer vom Empfänger definierten Postfachrichtlinie ergriffen wurde |
 | `UserLevelPolicy` | string | Endbenutzerpostfachrichtlinie, die die Aktion für die E-Mail ausgelöst hat |
 | `Connectors` | string | Benutzerdefinierte Anweisungen, die den E-Mail-Fluss der Organisation und die Art und Weise definieren, wie die E-Mail geroutet wurde |
 | `SenderDisplayName` | string | Name des Absenders, der im Adressbuch angezeigt wird, in der Regel eine Kombination aus einem Vor- oder Vornamen, einem Vornamen und einem Nachnamen oder Nachnamen |
 | `SenderObjectId` | string |Eindeutige ID für das Konto des Absenders in Azure AD |
-| `ThreatTypes` | string | Überprüfen des E-Mail-Filterstapels, ob die E-Mail Schadsoftware, Phishing oder andere Bedrohungen enthält |
+| `ThreatTypes` | string | Überprüfen sie aus dem E-Mail-Filterstapel, ob die E-Mail Schadsoftware, Phishing oder andere Bedrohungen enthält. |
 | `ThreatNames` | string |Erkennungsname für Schadsoftware oder andere gefundene Bedrohungen |
 | `DetectionMethods` | string | Methoden zum Erkennen von Schadsoftware, Phishing oder anderen Bedrohungen, die in der E-Mail gefunden werden |
 
