@@ -1,84 +1,85 @@
 ---
-title: Verwenden von Microsoft Defender für Office 365 zusammen mit Microsoft Defender für Endpoint
+title: Verwenden von Microsoft Defender für Office 365 zusammen mit Microsoft Defender für Endpunkt
 f1.keywords:
 - NOCSH
-keywords: Integration, Microsoft Defender, ATP
+keywords: integration, Microsoft Defender, ATP
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/29/2020
+ms.date: 01/21/2021
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Verwenden Sie Microsoft Defender für Office 365 zusammen mit Microsoft Defender für Endpoint, um ausführlichere Informationen zu Bedrohungen für Ihre Geräte und e-Mail-Inhalte zu erhalten.
+description: Verwenden Sie Microsoft Defender für Office 365 zusammen mit Microsoft Defender for Endpoint, um detailliertere Informationen zu Bedrohungen gegen Ihre Geräte und E-Mail-Inhalte zu erhalten.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8cc78e7d674facb371ea98125b6857502031d26e
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 24b81bb4c445c44d7c0228fa1c4440faff642816
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616512"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939332"
 ---
-# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a><span data-ttu-id="43e64-104">Verwenden von Microsoft Defender für Office 365 zusammen mit Microsoft Defender für Endpoint</span><span class="sxs-lookup"><span data-stu-id="43e64-104">Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint</span></span>
+# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a><span data-ttu-id="500b7-104">Verwenden von Microsoft Defender für Office 365 zusammen mit Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="500b7-104">Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-<span data-ttu-id="43e64-105">[Microsoft Defender für Office 365](office-365-atp.md) kann für die Zusammenarbeit mit [Microsoft Defender für Endpoint](https://docs.microsoft.com/windows/security/threat-protection)konfiguriert werden.</span><span class="sxs-lookup"><span data-stu-id="43e64-105">[Microsoft Defender for Office 365](office-365-atp.md) can be configured to work with [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection).</span></span>
+<span data-ttu-id="500b7-105">[Microsoft Defender für Office 365 kann für](office-365-atp.md) die Verwendung mit [Microsoft Defender for Endpoint konfiguriert werden.](https://docs.microsoft.com/windows/security/threat-protection)</span><span class="sxs-lookup"><span data-stu-id="500b7-105">[Microsoft Defender for Office 365](office-365-atp.md) can be configured to work with [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection).</span></span>
 
-<span data-ttu-id="43e64-106">Die Integration von Microsoft Defender für Office 365 mit Microsoft Defender für Endpoint kann Ihren sicherheitsvorgängen helfen, das Team zu überwachen und schnell Maßnahmen zu ergreifen, wenn die Geräte der Benutzer gefährdet sind.</span><span class="sxs-lookup"><span data-stu-id="43e64-106">Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint can help your security operations team monitor and take action quickly if users' devices are at risk.</span></span> <span data-ttu-id="43e64-107">Wenn beispielsweise die Integration aktiviert ist, kann Ihr Sicherheits Betriebsteam die Geräte anzeigen, die von einer erkannten e-Mail-Nachricht potenziell betroffen sind, sowie die Anzahl der letzten Warnungen, die für diese Geräte in Microsoft Defender für Endpoint generiert wurden.</span><span class="sxs-lookup"><span data-stu-id="43e64-107">For example, once integration is enabled, your security operations team will be able to see the devices that are potentially affected by a detected email message, as well as how many recent alerts were generated for those devices in Microsoft Defender for Endpoint.</span></span>
+<span data-ttu-id="500b7-106">Die Integration von Microsoft Defender für Office 365 in Microsoft Defender for Endpoint kann Ihrem Sicherheitsteam dabei helfen, die Geräte der Benutzer zu überwachen und schnell maßnahmen zu ergreifen.</span><span class="sxs-lookup"><span data-stu-id="500b7-106">Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint can help your security operations team monitor and take action quickly if users' devices are at risk.</span></span> <span data-ttu-id="500b7-107">Wenn beispielsweise die Integration aktiviert ist, kann Ihr Sicherheitsteam die Geräte anzeigen, die potenziell von einer erkannten E-Mail-Nachricht betroffen sind, sowie die Vielen kürzlich generierten Warnungen für diese Geräte in Microsoft Defender for Endpoint.</span><span class="sxs-lookup"><span data-stu-id="500b7-107">For example, once integration is enabled, your security operations team will be able to see the devices that are potentially affected by a detected email message, as well as how many recent alerts were generated for those devices in Microsoft Defender for Endpoint.</span></span>
 
-<span data-ttu-id="43e64-108">In der folgenden Abbildung wird dargestellt, wie die Registerkarte **Geräte** aussieht, wenn Microsoft Defender für die Endpunkt Integration aktiviert ist:</span><span class="sxs-lookup"><span data-stu-id="43e64-108">The following image depicts what the **Devices** tab looks like have Microsoft Defender for Endpoint integration enabled:</span></span>
+<span data-ttu-id="500b7-108">Die folgende Abbildung zeigt, wie die Registerkarte **"Geräte"** aussieht, wenn Microsoft Defender für Endpunkt integration aktiviert ist:</span><span class="sxs-lookup"><span data-stu-id="500b7-108">The following image depicts what the **Devices** tab looks like have Microsoft Defender for Endpoint integration enabled:</span></span>
 
-![Wenn Microsoft Defender für Endpoint aktiviert ist, können Sie eine Liste der Geräte mit Warnungen anzeigen.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
+![Wenn Microsoft Defender für Endpunkt aktiviert ist, können Sie eine Liste der Geräte mit Warnungen anzeigen.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
-<span data-ttu-id="43e64-110">In diesem Beispiel können Sie sehen, dass die Empfänger der erkannten e-Mail-Nachricht vier Geräte und eine Warnung besitzen.</span><span class="sxs-lookup"><span data-stu-id="43e64-110">In this example, you can see that the recipients of the detected email message have four devices and one has an alert.</span></span> <span data-ttu-id="43e64-111">Wenn Sie auf den Link für ein Gerät klicken, wird seine Seite im Sicherheits Center von Microsoft Defender geöffnet ( <https://securitycenter.windows.com> ).</span><span class="sxs-lookup"><span data-stu-id="43e64-111">Clicking the link for a device opens its page in the Microsoft Defender Security Center (<https://securitycenter.windows.com>).</span></span>
+<span data-ttu-id="500b7-110">In diesem Beispiel können Sie sehen, dass die Empfänger der erkannten E-Mail-Nachricht über vier Geräte und eines über eine Warnung verfügen.</span><span class="sxs-lookup"><span data-stu-id="500b7-110">In this example, you can see that the recipients of the detected email message have four devices and one has an alert.</span></span> <span data-ttu-id="500b7-111">Wenn Sie auf den Link für ein Gerät klicken, wird seine Seite im Microsoft Defender Security Center ( <https://securitycenter.windows.com> ) geöffnet.</span><span class="sxs-lookup"><span data-stu-id="500b7-111">Clicking the link for a device opens its page in the Microsoft Defender Security Center (<https://securitycenter.windows.com>).</span></span>
 
 > [!TIP]
-> <span data-ttu-id="43e64-112">**[Erfahren Sie mehr über das Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (auch als Microsoft Defender für Endpoint-Portal bezeichnet).</span><span class="sxs-lookup"><span data-stu-id="43e64-112">**[Learn more about the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (also referred to as the Microsoft Defender for Endpoint portal.)</span></span>
+> <span data-ttu-id="500b7-112">**[Erfahren Sie mehr über das Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (auch als Microsoft Defender für Endpunktportal bezeichnet).</span><span class="sxs-lookup"><span data-stu-id="500b7-112">**[Learn more about the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (also referred to as the Microsoft Defender for Endpoint portal.)</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="43e64-113">Anforderungen</span><span class="sxs-lookup"><span data-stu-id="43e64-113">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="500b7-113">Anforderungen</span><span class="sxs-lookup"><span data-stu-id="500b7-113">Requirements</span></span>
 
-- <span data-ttu-id="43e64-114">Ihre Organisation muss Microsoft Defender für Office 365 (oder Office 365 E5) und Microsoft Defender für Endpoint haben.</span><span class="sxs-lookup"><span data-stu-id="43e64-114">Your organization must have Microsoft Defender for Office 365 (or Office 365 E5) and Microsoft Defender for Endpoint.</span></span>
+- <span data-ttu-id="500b7-114">Ihre Organisation muss über Microsoft Defender für Office 365 (oder Office 365 E5) und Microsoft Defender for Endpoint verfügen.</span><span class="sxs-lookup"><span data-stu-id="500b7-114">Your organization must have Microsoft Defender for Office 365 (or Office 365 E5) and Microsoft Defender for Endpoint.</span></span>
 
-- <span data-ttu-id="43e64-115">Sie müssen ein globaler Administrator sein oder über eine Sicherheitsadministrator Rolle (beispielsweise Sicherheitsadministrator) verfügen, die im [Security & Compliance Center](https://protection.office.com)zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="43e64-115">You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in the [Security & Compliance Center](https://protection.office.com).</span></span> <span data-ttu-id="43e64-116">(Siehe [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md))</span><span class="sxs-lookup"><span data-stu-id="43e64-116">(See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md))</span></span>
+- <span data-ttu-id="500b7-115">Sie müssen ein globaler Administrator sein oder über eine Sicherheitsadministratorrolle (z. B. Sicherheitsadministrator) im [Security & Compliance Center verfügen.](https://protection.office.com)</span><span class="sxs-lookup"><span data-stu-id="500b7-115">You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in the [Security & Compliance Center](https://protection.office.com).</span></span> <span data-ttu-id="500b7-116">(Siehe [Berechtigungen im Security & Compliance Center)](permissions-in-the-security-and-compliance-center.md)</span><span class="sxs-lookup"><span data-stu-id="500b7-116">(See [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md))</span></span>
 
-- <span data-ttu-id="43e64-117">Sie müssen sowohl im Sicherheits & Compliance Center als auch im Sicherheitscenter von Microsoft Defender Zugriff auf beide [Explorer-(oder Echt Zeit Erkennungen)](threat-explorer.md) haben.</span><span class="sxs-lookup"><span data-stu-id="43e64-117">You must have access to both [Explorer (or real-time detections)](threat-explorer.md) in the Security & Compliance Center and the Microsoft Defender Security Center.</span></span>
+- <span data-ttu-id="500b7-117">Sie müssen zugriff auf [Explorer (oder Echtzeiterkennungen)](threat-explorer.md) im Security & Compliance Center und im Microsoft Defender Security Center haben.</span><span class="sxs-lookup"><span data-stu-id="500b7-117">You must have access to both [Explorer (or real-time detections)](threat-explorer.md) in the Security & Compliance Center and the Microsoft Defender Security Center.</span></span>
 
-## <a name="to-integrate-microsoft-defender-for-office-365-with-microsoft-defender-for-endpoint"></a><span data-ttu-id="43e64-118">So integrieren Sie Microsoft Defender für Office 365 mit Microsoft Defender für Endpoint</span><span class="sxs-lookup"><span data-stu-id="43e64-118">To integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint</span></span>
+## <a name="to-integrate-microsoft-defender-for-office-365-with-microsoft-defender-for-endpoint"></a><span data-ttu-id="500b7-118">So integrieren Sie Microsoft Defender für Office 365 in Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="500b7-118">To integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint</span></span>
 
-<span data-ttu-id="43e64-119">Die Integration von Microsoft Defender für Office 365 mit Microsoft Defender für Endpoint wird mithilfe des Security & Compliance Centers und des Sicherheitscenters von Microsoft Defender eingerichtet.</span><span class="sxs-lookup"><span data-stu-id="43e64-119">Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint is set up by using both the Security & Compliance Center AND the Microsoft Defender Security Center.</span></span>
+<span data-ttu-id="500b7-119">Die Integration von Microsoft Defender für Office 365 in Microsoft Defender for Endpoint wird mithilfe des Security & Compliance Center und des Microsoft Defender Security Center eingerichtet.</span><span class="sxs-lookup"><span data-stu-id="500b7-119">Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint is set up by using both the Security & Compliance Center AND the Microsoft Defender Security Center.</span></span>
 
-1. <span data-ttu-id="43e64-120">Wechseln Sie als globaler Administrator oder Sicherheitsadministrator zu und melden Sie sich an <https://protection.office.com> .</span><span class="sxs-lookup"><span data-stu-id="43e64-120">As a global administrator or a security administrator, go to <https://protection.office.com> and sign in.</span></span> <span data-ttu-id="43e64-121">(Hiermit gelangen Sie zum Office 365 Security & Compliance Center.)</span><span class="sxs-lookup"><span data-stu-id="43e64-121">(This takes you to the Office 365 Security & Compliance Center.)</span></span>
+1. <span data-ttu-id="500b7-120">Wechseln Sie als globaler Administrator oder Sicherheitsadministrator zu und <https://protection.office.com> melden Sie sich an.</span><span class="sxs-lookup"><span data-stu-id="500b7-120">As a global administrator or a security administrator, go to <https://protection.office.com> and sign in.</span></span> <span data-ttu-id="500b7-121">(Dies führt Sie zum Office 365 Security & Compliance Center.)</span><span class="sxs-lookup"><span data-stu-id="500b7-121">(This takes you to the Office 365 Security & Compliance Center.)</span></span>
 
-2. <span data-ttu-id="43e64-122">Wählen Sie im Navigationsbereich **Threat Management** \> **Explorer** aus.</span><span class="sxs-lookup"><span data-stu-id="43e64-122">In the navigation pane, choose **Threat management** \> **Explorer**.</span></span>
+2. <span data-ttu-id="500b7-122">Wählen Sie im Navigationsbereich den **Bedrohungsverwaltungs-Explorer** \> **aus.**</span><span class="sxs-lookup"><span data-stu-id="500b7-122">In the navigation pane, choose **Threat management** \> **Explorer**.</span></span>
 
-   ![Explorer im Menü "Threat Management"](../../media/ThreatMgmt-Explorer-nav.png)
+   ![Explorer im Menü "Bedrohungsverwaltung"](../../media/ThreatMgmt-Explorer-nav.png)
 
-3. <span data-ttu-id="43e64-124">Wählen Sie in der oberen rechten Ecke des Bildschirms **Defender for Endpoint Settings** aus.</span><span class="sxs-lookup"><span data-stu-id="43e64-124">In the upper right corner of the screen, choose **Defender for Endpoint Settings**.</span></span>
+3. <span data-ttu-id="500b7-124">Wählen Sie in der oberen rechten Ecke des Bildschirms **Defender für Endpunkteinstellungen (MDE-Einstellungen) aus.**</span><span class="sxs-lookup"><span data-stu-id="500b7-124">In the upper right corner of the screen, choose **Defender for Endpoint Settings (MDE Settings)**.</span></span>
 
-4. <span data-ttu-id="43e64-125">Aktivieren Sie im Dialogfeld Microsoft Defender für Endpunkt Verbindung die Option **Verbindung mit Microsoft Defender für Endpunkt herstellen**.</span><span class="sxs-lookup"><span data-stu-id="43e64-125">In the Microsoft Defender for Endpoint connection dialog box, turn on **Connect to Microsoft Defender for Endpoint**.</span></span>
+4. <span data-ttu-id="500b7-125">Aktivieren Sie im Dialogfeld "Verbindung mit Microsoft Defender für Endpunkt" die Verbindung **mit Microsoft Defender für Endpunkt.**</span><span class="sxs-lookup"><span data-stu-id="500b7-125">In the Microsoft Defender for Endpoint connection dialog box, turn on **Connect to Microsoft Defender for Endpoint**.</span></span>
 
-   ![Microsoft Defender für Endpunkt Verbindung](../../media/Explorer-WDATPConnection-dialog.png)
+   ![Microsoft Defender für Endpunktverbindung](../../media/Explorer-WDATPConnection-dialog.png)
 
-5. <span data-ttu-id="43e64-127">Wechseln Sie zum Microsoft Defender-Sicherheits Center ( <https://securitycenter.windows.com> ).</span><span class="sxs-lookup"><span data-stu-id="43e64-127">Go to the Microsoft Defender Security Center (<https://securitycenter.windows.com>).</span></span>
+5. <span data-ttu-id="500b7-127">Wechseln Sie zum Microsoft Defender Security Center ( <https://securitycenter.windows.com> ).</span><span class="sxs-lookup"><span data-stu-id="500b7-127">Go to the Microsoft Defender Security Center (<https://securitycenter.windows.com>).</span></span>
 
-6. <span data-ttu-id="43e64-128">Klicken Sie in der Navigationsleiste auf **Einstellungen**.</span><span class="sxs-lookup"><span data-stu-id="43e64-128">In the navigation bar, choose **Settings**.</span></span> <span data-ttu-id="43e64-129">Wählen Sie dann unter **Allgemein** die Option **Erweiterte Funktionen** aus.</span><span class="sxs-lookup"><span data-stu-id="43e64-129">Then, under **General**, choose **Advanced features**.</span></span>
+6. <span data-ttu-id="500b7-128">Wählen Sie in der Navigationsleiste Einstellungen **aus.**</span><span class="sxs-lookup"><span data-stu-id="500b7-128">In the navigation bar, choose **Settings**.</span></span> <span data-ttu-id="500b7-129">Wählen Sie dann unter **"Allgemein"** die Option **"Erweiterte Features" aus.**</span><span class="sxs-lookup"><span data-stu-id="500b7-129">Then, under **General**, choose **Advanced features**.</span></span>
 
-7. <span data-ttu-id="43e64-130">Scrollen Sie nach unten zu **Office 365 Threat Intelligence-Verbindung**, und schalten Sie die Verbindung ein.</span><span class="sxs-lookup"><span data-stu-id="43e64-130">Scroll down to **Office 365 Threat Intelligence connection**, and turn the connection on.</span></span>
+7. <span data-ttu-id="500b7-130">Scrollen Sie nach unten **zur Office 365 Threat** Intelligence-Verbindung, und aktivieren Sie die Verbindung.</span><span class="sxs-lookup"><span data-stu-id="500b7-130">Scroll down to **Office 365 Threat Intelligence connection**, and turn the connection on.</span></span>
 
    ![Office 365 Threat Intelligence-Verbindung](../../media/mdatp-oatptoggle.png)
 
-## <a name="related-articles"></a><span data-ttu-id="43e64-132">Verwandte Artikel</span><span class="sxs-lookup"><span data-stu-id="43e64-132">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="500b7-132">Verwandte Artikel</span><span class="sxs-lookup"><span data-stu-id="500b7-132">Related articles</span></span>
 
-[<span data-ttu-id="43e64-133">Funktionen für die Untersuchung und Reaktion auf Bedrohungen in Office 365</span><span class="sxs-lookup"><span data-stu-id="43e64-133">Threat investigation and response capabilities in Office 365</span></span>](office-365-ti.md)
+[<span data-ttu-id="500b7-133">Untersuchungs- und Reaktionsfunktionen für Bedrohungen in Office 365</span><span class="sxs-lookup"><span data-stu-id="500b7-133">Threat investigation and response capabilities in Office 365</span></span>](office-365-ti.md)
 
-[<span data-ttu-id="43e64-134">Microsoft Defender für Office 365</span><span class="sxs-lookup"><span data-stu-id="43e64-134">Microsoft Defender for Office 365</span></span>](office-365-atp.md)
+[<span data-ttu-id="500b7-134">Microsoft Defender für Office 365</span><span class="sxs-lookup"><span data-stu-id="500b7-134">Microsoft Defender for Office 365</span></span>](office-365-atp.md)
 
-[<span data-ttu-id="43e64-135">Microsoft Defender für Endpoint</span><span class="sxs-lookup"><span data-stu-id="43e64-135">Microsoft Defender for Endpoint</span></span>](https://docs.microsoft.com/windows/security/threat-protection)
+[<span data-ttu-id="500b7-135">Microsoft Defender für Endpunkt</span><span class="sxs-lookup"><span data-stu-id="500b7-135">Microsoft Defender for Endpoint</span></span>](https://docs.microsoft.com/windows/security/threat-protection)
