@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -19,12 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie mithilfe des Angriffssimulators simulierte Phishing- und Kennwortangriffe in ihren Microsoft 365 E5- oder Microsoft Defender für Office 365 Plan 2-Organisationen ausführen.
-ms.openlocfilehash: f07cbbdac5d9b988301e9dfc3cb4446f7b44fca6
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a9abca803c21baa7fcb5f0ab7b3d4c497c4473b8
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49871097"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939320"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Angriffssimulator in Microsoft Defender für Office 365
 
@@ -53,7 +54,7 @@ Wenn Ihre Organisation über Microsoft Defender für Office 365 Plan 2 verfügt,
 
 ## <a name="spear-phishing-campaigns"></a>Phishingkampagnen mit Speerspitze
 
-*Phishing* ist ein allgemeiner Begriff für E-Mail-Angriffe, die versuchen, vertrauliche Informationen in Nachrichten zu stehlen, die von legitimen oder vertrauenswürdigen Absendern zu sein scheinen. *Bei Phishing* handelt es sich um einen gezielten Phishingangriff, bei dem fokussierte und angepasste Inhalte verwendet werden, die speziell auf die Zielempfänger zugeschnitten sind (in der Regel nach der Aufarbeitung der Empfänger durch den Angreifer).
+*Phishing* ist ein allgemeiner Begriff für E-Mail-Angriffe, die versuchen, vertrauliche Informationen in Nachrichten zu stehlen, die von legitimen oder vertrauenswürdigen Absendern zu sein scheinen. *Bei Phishing* handelt es sich um einen gezielten Phishingangriff, bei dem gezielt fokussierte und angepasste Inhalte verwendet werden, die speziell auf die Zielempfänger zugeschnitten sind (in der Regel nach der Aufarbeitung der Empfänger durch den Angreifer).
 
 Im Angriffssimulator sind zwei verschiedene Arten von Phishingkampagnen verfügbar:
 
@@ -153,9 +154,10 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die E-Mail-Nachricht dire
 
    - Geben Sie **in das Feld "Name"** einen eindeutigen Anzeigenamen für die Kampagne ein. Klicken Sie nicht auf Vorlage **verwenden,** da Sie die E-Mail-Nachricht später im Assistenten erstellen.
 
-   - Klicken **Sie auf Vorlage verwenden,** und wählen Sie eine integrierte oder benutzerdefinierte E-Mail-Vorlage aus. Nachdem Sie die Vorlage ausgewählt haben, wird das Feld **"Name"** automatisch basierend auf der Vorlage ausgefüllt, Aber Sie können den Namen ändern.
+   - Klicken **Sie auf Vorlage verwenden,** und wählen Sie eine integrierte oder benutzerdefinierte E-Mail-Vorlage aus. Nachdem Sie die Vorlage ausgewählt haben, wird das Feld **"Name"** basierend auf der Vorlage automatisch ausgefüllt, Sie können den Namen jedoch ändern.
 
-   ![Phishingstartseite](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+   > [!div class="mx-imgBorder"]
+   > ![Phishingstartseite](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
@@ -214,11 +216,12 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die E-Mail-Nachricht dire
 
    - `${username}` fügt den Namen des Empfängers ein.
 
-   - `${loginserverurl}` Fügt den Wert der **Phishing-Anmeldeserver-URL** ein.
+   - `${loginserverurl}` fügt den Wert der **Phishing-Anmeldeserver-URL** ein.
 
    Für Kampagnen mit **Phishing (Anlage)** sollten Sie den Link aus dem Nachrichtentext entfernen (andernfalls enthält die Nachricht sowohl einen Link als auch eine Anlage, und Linkklicks werden in einer Anlagenkampagne nicht nachverfolgt). 
 
-   ![Verfassen des E-Mail-Textkörpers](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+   > [!div class="mx-imgBorder"]
+   > ![Verfassen des E-Mail-Textkörpers](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
@@ -257,17 +260,17 @@ Im Angriffssimulator stehen Ihnen zwei verschiedene Arten von Kennwortangriffska
 
    - Klicken **Sie auf "Adressbuch",** um die Empfänger (Benutzer oder Gruppen) für die Kampagne auszuwählen. Jeder Zielempfänger muss über ein Exchange Online-Postfach verfügen. Wenn Sie auf **"Filtern"** und **"Anwenden"** klicken, ohne ein Suchkriterium ein eingeben zu müssen, werden alle Empfänger zurückgegeben und der Kampagne hinzugefügt.
 
-   - Klicken **Sie auf "Importieren"** und dann **auf "Datei importieren",** um einen durch Kommas getrennten Wert (CSV) oder eine durch Zeilen getrennte Datei mit E-Mail-Adressen zu importieren. Jede Zeile muss die E-Mail-Adresse des Empfängers enthalten.
+   - Klicken **Sie auf "Importieren"** und dann **auf "Datei importieren",** um einen durch Kommas getrennten Wert (CSV) oder eine durch Zeilen getrennte Datei von E-Mail-Adressen zu importieren. Jede Zeile muss die E-Mail-Adresse des Empfängers enthalten.
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
-5. Wählen Sie **im Schritt "Angriffseinstellungen** auswählen" die Aktion basierend auf dem Kampagnentyp aus:
+5. Wählen Sie **im Schritt "Angriffseinstellungen** auswählen" basierend auf dem Kampagnentyp aus, was zu tun ist:
 
    - **Brute Force Password (Dictionary Attack):** Gehen Sie wie folgt vor:
 
      - **Geben Sie Kennwörter manuell** ein: Geben Sie in **der** Eingabetaste ein Kennwortfeld ein, geben Sie ein Kennwort ein, und drücken Sie dann die EINGABETASTE. Wiederholen Sie diesen Schritt so oft wie nötig.
 
-     - **Hochladen von Kennwörtern** aus einer Wörterbuchdatei: Klicken Sie auf **"Hochladen",** um eine vorhandene Textdatei zu importieren, die ein Kennwort in jeder Zeile und eine leere letzte Zeile enthält. Die Textdatei muss eine Größe von 10 MB oder weniger haben und darf nicht mehr als 30.000 Kennwörter enthalten.
+     - **Hochladen von Kennwörtern** aus einer Wörterbuchdatei: Klicken Sie auf **"Hochladen",** um eine vorhandene Textdatei zu importieren, die ein Kennwort in jeder Zeile und eine leere letzte Zeile enthält. Die Textdatei muss mindestens 10 MB groß sein und darf nicht mehr als 30.000 Kennwörter enthalten.
 
    - **Kennwort-Spray-Angriff:** Geben Sie in den **Kennwörtern,** die im Angriffsfeld verwendet werden, ein Kennwort ein.
 
@@ -289,7 +292,7 @@ Wenn die Kampagne abgeschlossen ist, ändert sich der Status in **Angriff abgesc
 
 Mit einer der vorherigen Aktionen gelangen Sie zu einer Seite mit dem Namen **"Angriffsdetails".** Die Informationen, die auf dieser Seite für jeden Kampagnentyp verfügbar sind, werden in den folgenden Abschnitten beschrieben.
 
-### <a name="spear-phishing-credentials-harvest-campaign-results"></a>Phishing (Credentials Harvest) – Kampagnenergebnisse
+### <a name="spear-phishing-credentials-harvest-campaign-results"></a>Ergebnisse der Kampagnenergebnisse der Phishingkampagne (Credentials Harvest)
 
 Die folgenden Informationen sind auf der Seite **"Angriffsdetails"** für jede Kampagne verfügbar:
 
@@ -311,17 +314,17 @@ Die folgenden Informationen sind auf der Seite **"Angriffsdetails"** für jede K
 
 - **Durchschnittliche** Anmeldeinformationen: Die Summe der Zeit, die jeder für die Eingabe seiner Anmeldeinformationen brauchte, dividiert durch die Anzahl der Benutzer, die ihre Anmeldeinformationen eingegeben haben.
 
-- **Erfolgsrate für Anmeldeinformationen:** Ein Prozentsatz, der von (Anzahl der Benutzer, die ihre Anmeldeinformationen eingegeben haben) / der Gesamtzahl der **benutzerorientierten Benutzer berechnet wird.**
+- **Erfolgsrate von Anmeldeinformationen:** Ein Prozentsatz, der von (Anzahl der Benutzer, die ihre Anmeldeinformationen eingegeben haben) / der Gesamtzahl der **benutzerorientierten Benutzer berechnet wird.**
 
 - Ein Balkendiagramm, das zeigt, auf den **link geklickt** und **Anmeldeinformationen Zahlen** pro Tag angegeben.
 
-- Ein Kreisdiagramm, das zeigt, auf den **Link geklickt** **wurde,** die angegebenen Anmeldeinformationen und die Prozentsätze **"Keine"** für die Kampagne.
+- Ein Kreisdiagramm, in dem der Link **geklickt,** die angegebenen Anmeldeinformationen und der Prozentsatz **"Keine"** für die Kampagne angezeigt werden.
 
 - Im **Abschnitt "Gefährdete Benutzer"** werden die Details der Benutzer aufgeführt, die auf den Link geklickt haben:
 
   - Die E-Mail-Adresse des Benutzers
 
-  - Datum/Uhrzeit, an dem/der auf den Link geklickt wurde.
+  - Das Datum/die Uhrzeit, an dem/der auf den Link geklickt wurde.
 
   - Die Client-IP-Adresse.
 
@@ -337,11 +340,11 @@ Die folgenden Informationen sind auf der Seite **"Angriffsdetails"** für jede K
 
 - **Gesamtzahl der benutzerorientierten Benutzer**
 
-- **Erfolgreiche Versuche:** Die Anzahl der Benutzer, die die Anlage geöffnet oder heruntergeladen und geöffnet haben (Die Vorschau zählt nicht).
+- **Erfolgreiche Versuche:** Die Anzahl der Benutzer, die die Anlage geöffnet oder heruntergeladen und geöffnet haben (Vorschau wird nicht gezählt).
 
 - **Gesamterfolgsrate:** Ein Prozentsatz, der von erfolgreichen Versuchen berechnet  /  **wird. Zielbenutzer insgesamt.**
 
-- **Schnellste Anlagenöffnzeit:** Wie lange das Öffnen der Anlage durch den ersten Benutzer nach dem Starten der Kampagne gezeit hat.
+- **Schnellste Anlageneröffnungszeit:** Wie lange es ge dauere, bis der erste Benutzer die Anlage geöffnet hat, nachdem Sie die Kampagne gestartet haben.
 
 - **Durchschnittliche Anlageneröffnungszeit:** Die Summe der Zeit, in der alle Benutzer die Anlage geöffnet haben, dividiert durch die Anzahl der Benutzer, die die Anlage geöffnet haben.
 

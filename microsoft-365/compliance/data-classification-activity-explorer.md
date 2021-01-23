@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Aktivitäten-Explorer rundet die Funktionalität der Datenklassifizierungsfunktion ab, indem Sie die Aktionen, die Benutzer mit Ihren beschrifteten Inhalten durchführen, anzeigen und filtern können.
-ms.openlocfilehash: 0175f41ca3fbcfc685acf933cc0cd97af6aa61ad
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 6825c00373617011db28fa484f272086f887ea40
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379202"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921633"
 ---
 # <a name="get-started-with-activity-explorer"></a>Erste Schritte mit dem Aktivitäten-Explorer
 
@@ -51,6 +51,8 @@ Jedem Konto, das auf die Datenklassifizierung zugreift und sie verwendet, muss e
 - Office 365 (E5)
 - Advanced Compliance (E5)-Add-on
 - Advanced Threat Intelligence (E5)-Add-on
+- Microsoft 365 E5/A5 Info Protection & Governance
+- Microsoft 365 E5/A5 Compliance
 
 ### <a name="permissions"></a>Berechtigungen
 

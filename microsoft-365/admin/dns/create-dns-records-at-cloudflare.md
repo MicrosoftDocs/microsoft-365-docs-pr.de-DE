@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
-description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Cloudflare für Microsoft einrichten.
-ms.openlocfilehash: 110bd96c0eecf40ae96efe7055d82a8d12dde607
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und dns-Einträge für E-Mail, Skype for Business Online und andere Dienste bei Cloudflare für Microsoft einrichten.
+ms.openlocfilehash: 8d5dd7779f07fd42dd230ee33c40849da3519d26
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657960"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939272"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Erstellen von DNS-Einträgen bei Cloudflare für Microsoft
 
@@ -48,7 +48,7 @@ Nachdem Sie diese Einträge bei Cloudflare hinzugefügt haben, ist Ihre Domäne 
   
 Als Sie sich bei Cloudflare registriert haben, haben Sie mithilfe des **Setup**-Prozesses von Cloudflare eine Domäne hinzugefügt. 
   
-Die Domäne, die Sie hinzugefügt haben, wurde von Cloudflare oder einer separaten Domänenregistrierungsstelle erworben. Um DNS-Einträge für Ihre Domäne in Microsoft 365 zu überprüfen und zu erstellen, müssen Sie zuerst die Namenserver bei Ihrer Domänenregistrierungsstelle ändern, damit Sie die Cloudflare-Namenserver verwenden.
+Die hinzugefügte Domäne wurde von Cloudflare oder einer separaten Domänenregistrierungsstelle erworben. Zum Überprüfen und Erstellen von DNS-Einträgen für Ihre Domäne in Microsoft 365 müssen Sie zuerst die Namenserver bei Ihrer Domänenregistrierungsstelle so ändern, dass sie die Namenserver von Cloudflare verwenden.
   
 Wenn Sie die Namenserver der Domäne auf der Website Ihrer Domänenregistrierungsstelle selbst ändern möchten, führen Sie diese Schritte aus:
   
@@ -62,12 +62,12 @@ Wenn Sie die Namenserver der Domäne auf der Website Ihrer Domänenregistrierung
     |Zweiter Namenserver  <br/> |Verwenden Sie den von Cloudflare bereitgestellten Wert für den Namenserver.  <br/> |
    
     > [!TIP]
-    > You should use at least two name server records. Wenn andere Namenserver aufgeführt sind, sollten Sie Sie löschen. 
+    > You should use at least two name server records. Wenn andere Namenserver aufgelistet sind, sollten Sie sie löschen. 
   
 3. Speichern Sie Ihre Änderungen.
     
 > [!NOTE]
-> Es kann mehrere Stunden dauern, bis Ihre Namenservereinträge im Internet im DNS-System aktualisiert wurden. Dann sind Ihre Microsoft-e-Mails und andere Dienste für die Verwendung Ihrer Domäne festgelegt. 
+> Es kann mehrere Stunden dauern, bis Ihre Namenservereinträge im Internet im DNS-System aktualisiert wurden. Dann sind Ihre Microsoft-E-Mails und andere Dienste so eingerichtet, dass sie mit Ihrer Domäne funktionieren. 
   
 ## <a name="add-a-txt-record-for-verification"></a>Hinzufügen eines TXT-Eintrags zur Überprüfung
 <a name="BKMK_verify"> </a>
@@ -79,24 +79,24 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
   
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://www.cloudflare.com/a/login) zu Ihrer Domänenseite bei Cloudflare. Sie werden aufgefordert, sich zuerst anzumelden.
   
-2. Wählen Sie auf der **Start** Seite die Domäne aus, die Sie aktualisieren möchten. 
+2. Wählen Sie **auf der Startseite** die Domäne aus, die Sie aktualisieren möchten. 
   
-3. Wählen Sie auf der Seite **Übersicht** für Ihre Domäne **DNS** aus.
+3. Wählen Sie **auf der Seite "Übersicht"** für Ihre Domäne **DNS aus.**
 
   
-4. Klicken Sie auf der Seite **DNS-Verwaltung** auf **Datensatz hinzufügen**, und wählen Sie dann die Werte aus der folgenden Tabelle aus. 
+4. Klicken Sie auf der Seite **"DNS-Verwaltung"** auf "Eintrag hinzufügen", und wählen Sie dann die Werte aus der folgenden Tabelle aus. 
     
-    |**Typ**|**Name**|**Automatic TTL**|**Content**|
+    | Typ | Name | Automatic TTL | Inhalt |
     |:-----|:-----|:-----|:----|
-    |TXT  <br/> |@  <br/> |30 Minuten  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihre spezifischen **Ziel-oder Punkt-zu-Adresse** -Werte aus der Tabelle.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)    |
+    |TXT  <br/> |@  <br/> |30 Minuten  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Ziel- oder **Verweist-auf-Adresse-Wert** aus der Tabelle.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)    |
   
     
-5. Wählen Sie **Speichern** aus.
+5. Klicken Sie auf **Speichern**.
   
   
 9. Warten Sie einige Minuten, bevor Sie fortfahren, damit der soeben erstellte Eintrag im Internet aktualisiert werden kann.
     
-Nachdem Sie den Eintrag auf der Website Ihrer Domänenregistrierungsstelle hinzugefügt haben, kehren Sie zu Microsoft zurück und suchen nach dem Datensatz.
+Nachdem Sie den Eintrag auf der Website Ihrer Domänenregistrierungsstelle hinzugefügt haben, wechseln Sie zurück zu Microsoft und suchen nach dem Eintrag.
   
 Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
@@ -123,43 +123,43 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://www.cloudflare.com/a/login) zu Ihrer Domänenseite bei Cloudflare. Sie werden aufgefordert, sich zuerst anzumelden.
   
-2. Wählen Sie auf der **Start** Seite die Domäne aus, die Sie aktualisieren möchten. 
+2. Wählen Sie **auf der Startseite** die Domäne aus, die Sie aktualisieren möchten. 
   
-3. Wählen Sie auf der Seite **Übersicht** für Ihre Domäne **DNS** aus.
+3. Wählen Sie **auf der Seite "Übersicht"** für Ihre Domäne **DNS aus.**
 
   
-4. Klicken Sie auf der Seite **DNS-Verwaltung** auf **Datensatz hinzufügen**, und wählen Sie dann die Werte aus der folgenden Tabelle aus. 
+4. Klicken Sie auf der Seite **"DNS-Verwaltung"** auf "Eintrag **hinzufügen",** und wählen Sie dann die Werte aus der folgenden Tabelle aus. 
     
-    |**Typ**|**Name**|**Mail server**|**Priorität**|**TTL**|
+    | Typ | Name | Mail server | Priority | TTL |
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Holen Sie sich Ihr  *\<domain-key\>*  Microsoft 365-Konto.   [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md) |1   <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 Minuten  <br/> |
+    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Holen Sie  *\<domain-key\>*  sich Ihr Konto von Ihrem Microsoft 365-Konto.   [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md) |1   <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 Minuten  <br/> |
    
 
   
-5. Wählen Sie **Speichern** aus.
+5. Klicken Sie auf **Speichern**.
   
 9. Wenn es im Abschnitt **MX Records** andere MX-Einträge gibt, löschen Sie einen davon durch Klicken auf das Symbol **Löschen (X)**. 
   
-10. Wählen Sie im Dialogfeld Bestätigung die Option **Löschen** aus, um die Änderungen zu bestätigen. 
+10. Wählen Sie im Bestätigungsdialogfeld **"Löschen"** aus, um Ihre Änderungen zu bestätigen. 
 
   
-## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Hinzufügen der sechs CNAME-Einträge, die für Microsoft erforderlich sind
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Hinzufügen der sechs für Microsoft erforderlichen #A0
 <a name="BKMK_add_CNAME"> </a>
 
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://www.cloudflare.com/a/login) zu Ihrer Domänenseite bei Cloudflare. Sie werden aufgefordert, sich zuerst anzumelden.
     
   
-2. Wählen Sie auf der **Start** Seite die Domäne aus, die Sie aktualisieren möchten. 
+2. Wählen Sie **auf der Startseite** die Domäne aus, die Sie aktualisieren möchten. 
   
-3. Wählen Sie auf der Seite **Übersicht** für Ihre Domäne **DNS** aus.
+3. Wählen Sie **auf der Seite "Übersicht"** für Ihre Domäne **DNS aus.**
 
   
 4. Fügen Sie den ersten der fünf CNAME-Einträge hinzu.
     
-    Klicken Sie auf der Seite **DNS-Verwaltung** auf **Datensatz hinzufügen**, und wählen Sie dann die Werte aus der folgenden Tabelle aus.
+    Klicken Sie auf der Seite **"DNS-Verwaltung"** auf "Eintrag **hinzufügen",** und wählen Sie dann die Werte aus der folgenden Tabelle aus.
     
     
-    |**Typ**|**Name**|**Target**|**TTL**|
+    | Typ | Name | Ziel | TTL |
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |30 Minuten  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |30 Minuten  <br/> |
@@ -169,9 +169,9 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     |CNAME  <br/> |msoid  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 Minuten  <br/> |
     
   
-5. Wählen Sie das Symbol für den **DNS-Datenverkehr** (Orange Cloud) aus, um die Cloudflare-Server zu umgehen.
+5. Wählen Sie das **Symbol "DNS-Datenverkehr"** aus (ändern Sie die orangefarbene Cloud in grau), um die Cloudflare-Server zu umgehen.
   
-6. Wählen Sie **Speichern** aus.
+6. Klicken Sie auf **Speichern**.
   
 7. Fügen Sie die fünf anderen CNAME-Einträge hinzu.
 
@@ -185,19 +185,19 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://www.cloudflare.com/a/login) zu Ihrer Domänenseite bei Cloudflare. Sie werden aufgefordert, sich zuerst anzumelden.
     
   
-2. Wählen Sie auf der **Start** Seite die Domäne aus, die Sie aktualisieren möchten. 
+2. Wählen Sie **auf der Startseite** die Domäne aus, die Sie aktualisieren möchten. 
   
-3. Wählen Sie auf der Seite **Übersicht** für Ihre Domäne **DNS** aus.
+3. Wählen Sie **auf der Seite "Übersicht"** für Ihre Domäne **DNS aus.**
 
   
-4. Klicken Sie auf der Seite **DNS-Verwaltung** auf **Datensatz hinzufügen**, und wählen Sie dann die Werte aus der folgenden Tabelle aus.  
+4. Klicken Sie auf der Seite **"DNS-Verwaltung"** auf "Eintrag hinzufügen", und wählen Sie dann die Werte aus der folgenden Tabelle aus.  
     
-    |**Typ**|**Name**|**TTL**|**Content**|
+    | Typ | Name | TTL | Inhalt |
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |@  <br/> |30 Minuten  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.   |
 
  
-5. Wählen Sie **Speichern** aus.
+5. Klicken Sie auf **Speichern**.
     
 
   
@@ -205,25 +205,25 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
-> Beachten Sie, dass Cloudflare für die bereitstellungdieser Funktionalität verantwortlich ist. Wenn Sie Diskrepanzen zwischen den folgenden Schritten und der aktuellen Cloudflare-GUI (grafische Benutzeroberfläche) sehen, nutzen Sie die [Cloudflare-Community](https://community.cloudflare.com/). 
+> Bitte beachten Sie, dass Cloudflare dafür verantwortlich ist, diese Funktionalität verfügbar zu machen. Falls Sie Unterschiede zwischen den folgenden Schritten und der aktuellen Cloudflare-GUI (grafische Benutzeroberfläche) sehen, nutzen Sie die [Cloudflare Community.](https://community.cloudflare.com/) 
 
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://www.cloudflare.com/a/login) zu Ihrer Domänenseite bei Cloudflare. Sie werden aufgefordert, sich zuerst anzumelden.
       
-2. Wählen Sie auf der **Start** Seite die Domäne aus, die Sie aktualisieren möchten. 
+2. Wählen Sie **auf der Startseite** die Domäne aus, die Sie aktualisieren möchten. 
   
-3. Wählen Sie auf der Seite **Übersicht** für Ihre Domäne **DNS** aus.
+3. Wählen Sie **auf der Seite "Übersicht"** für Ihre Domäne **DNS aus.**
   
 4. Fügen Sie den ersten der zwei SRV-Einträge hinzu.
 
-    Klicken Sie auf der Seite **DNS-Verwaltung** auf **Datensatz hinzufügen**, und wählen Sie dann die Werte aus der ersten Zeile der folgenden Tabelle aus.
+    Klicken Sie auf der Seite **"DNS-Verwaltung"** auf "Eintrag hinzufügen", und wählen Sie dann die Werte aus der ersten Zeile der folgenden Tabelle aus.
         
-    |**Type**|**Service**|**Protocol**|**Name**|**TTL**|**Priority**|**Weight**|**Port**|**Target**|
+    | Typ | Dienst | Protokoll | Name | TTL | Priorität | Schriftbreite | Port | Ziel |
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|_sip |TLS |Verwenden Sie Ihre *domain_name*; Beispiel: contoso.com  |30 Minuten | 100|1  |443 |sipfed.online.lync.com  |
-    |SRV|_sipfederationtls | TCP|Verwenden Sie Ihre *domain_name*; Beispiel: contoso.com   |30 Minuten |100 |1  |5061 | sipfed.online.lync.com |
+    |SRV|_sip |TLS |Verwenden Sie *ihre domain_name*; Beispiel: contoso.com  |30 Minuten | 100|1  |443 |sipfed.online.lync.com  |
+    |SRV|_sipfederationtls | TCP|Verwenden Sie *ihre domain_name*; Beispiel: contoso.com   |30 Minuten |100 |1  |5061 | sipfed.online.lync.com |
 
   
-5. Wählen Sie **Speichern** aus.
+5. Klicken Sie auf **Speichern**.
 
   
 6. Fügen Sie den anderen SRV-Eintrag hinzu, indem Sie die Werte aus der zweiten Zeile der Tabelle auswählen. 

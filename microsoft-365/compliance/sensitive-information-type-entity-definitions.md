@@ -18,20 +18,28 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Security Compliance Center umfasst 80 Typen vertraulicher Informationen, die Sie in Ihren &amp; DLP-Richtlinien verwenden können. Dieses Thema enthält eine Liste aller dieser vertraulichen Informationstypen und zeigt, was eine DLP-Richtlinie sucht, wenn sie den jeweiligen Typen erkennt.
-ms.openlocfilehash: 584e2fe2353c1f80545a3742a44163cb26ee2c29
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: b70f335fd0742e6bc34957058c6e695530e83507
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881784"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927131"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Entitätsdefinitionen für Typen vertraulicher Informationstypen
 
-Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Compliance Center umfasst viele vertrauliche Informationstypen, die Sie in Ihren DLP-Richtlinien verwenden können. Dieses Thema enthält eine Liste aller dieser vertraulichen Informationstypen und zeigt, was eine DLP-Richtlinie sucht, wenn sie den jeweiligen Typen erkennt. Ein vertraulicher Informationstyp wird durch ein Muster definiert, das durch einen regulären Ausdruck oder eine Funktion identifiziert werden kann. Darüber hinaus können auch belegende Hinweise wie Schlüsselwörter oder Prüfsummen zum Identifizieren eines Typs vertraulicher Informationen verwendet werden. Beim Auswertungsprozess können auch die Zuverlässigkeitsstufe und die Näherung herangezogen werden.
+Ein vertraulicher Informationstyp wird durch ein Muster definiert, das durch einen regulären Ausdruck oder eine Funktion identifiziert werden kann. Darüber hinaus können auch belegende Hinweise wie Schlüsselwörter oder Prüfsummen zum Identifizieren eines Typs vertraulicher Informationen verwendet werden. Beim Auswertungsprozess können auch die Zuverlässigkeitsstufe und die Näherung herangezogen werden.
 
 Typen vertraulicher Informationen erfordern eines der folgenden Abonnements:
 - Microsoft 365 E3
 - Microsoft 365 E5
+
+Typen vertraulicher Informationen werden in folgenden Bereichen verwendet:
+
+- [Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md) 
+- [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
+- [Aufbewahrungsbezeichnungen](retention.md)
+- [Kommunikationscompliance](communication-compliance.md)
+- [Richtlinien für die automatische Kennzeichnung](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
 ## <a name="aba-routing-number"></a>ABA-Routingnummer
 
@@ -48,7 +56,7 @@ Formatiert:
 - Ein Bindestrich
 - eine Ziffer
 
-Unformatiert: neun aufeinanderfolgende Ziffern, die mit 0, 1, 2, 3, 6, 7 oder 8 beginnen 
+Unformatiert: neun aufeinanderfolgende Ziffern beginnend mit 0, 1, 2, 3, 6, 7 oder 8 
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -56,11 +64,11 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wird, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_aba_routing findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_ABA_Routing wurde gefunden.
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_aba_routing findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -119,7 +127,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_argentina_national_id findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_argentina_national_id gefunden.
 
@@ -168,12 +176,12 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_australia_bank_account_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_australia_bank_account_number wurde gefunden.
 - Der reguläre Ausdruck Regex_australia_bank_account_number_bsb findet Inhalte, die dem Muster entsprechen.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_australia_bank_account_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_australia_bank_account_number wurde gefunden.
 
@@ -211,7 +219,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - iaea
 
 ## <a name="australia-business-number"></a>Australische Geschäftsnummer
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -241,11 +249,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_australian_business_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_australian_business_number gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_australian_business_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -301,11 +309,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_Australian_Company_Number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Australian_Company_Number gefunden.
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_Australian_Company_Number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -361,7 +369,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Regex_australia_drivers_license_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_australia_drivers_license_number wurde gefunden.
 - Es wurde kein Schlüsselwort aus Keyword_australia_drivers_license_number_exclusions gefunden.
@@ -503,7 +511,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_australian_medical_account_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Australia_Medical_Account_Number wurde gefunden.
 - Die Prüfsumme stimmt.
@@ -550,7 +558,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Regex_australia_passport_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_passport oder Keyword_australia_passport_number wurde gefunden.
 
@@ -626,7 +634,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_australian_tax_file_number findet Inhalte, die dem Muster entsprechen.
 - Es wurde kein Schlüsselwort aus Keyword_Australia_Tax_File_Number oder Keyword_number_exclusions gefunden.
 - Die Prüfsumme stimmt.
@@ -671,7 +679,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
   
 - Der reguläre Ausdruck  `Regex_austria_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_austria_eu_driver's_license_number` wurde gefunden. 
@@ -725,7 +733,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences
 - driver' lic
 - driver' lics
-- driver' license
+- Driver' license
 - driver' licenses
 - Driver' licence
 - driver' licences
@@ -774,7 +782,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences #
 - driver' lic #
 - driver' lics #
-- driver' license #
+- Driver' license #
 - driver' licenses #
 - Driver' licence #
 - driver' licences #
@@ -847,7 +855,7 @@ Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
   
 - Der reguläre Ausdruck  `Regex_austria_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_austria_eu_national_id_card` gefunden. 
@@ -870,7 +878,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - national id
 - personalausweis republik österreich
 
-## <a name="austria-passport-number"></a>Österreich - Reisepassnummer
+## <a name="austria-passport-number"></a>Österreich- Reisepassnummer
 
 ### <a name="format"></a>Format
 
@@ -890,12 +898,12 @@ nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_austria_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_austria_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date1` findet das Datum im Format "DD.MM.JJJJ" oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Das Datum im Format TT.MM.JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_austria_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_austria_eu_passport_number` wurde gefunden. 
     
@@ -969,11 +977,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wird, wenn:
 - Die Funktion  `Func_austria_eu_ssn_or_equivalent` findet Inhalte, die dem Muster entsprechen. 
 - es wurde ein Schlüsselwort  `Keywords_austria_eu_ssn_or_equivalent` gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_austria_eu_ssn_or_equivalent` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -1025,7 +1033,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="format"></a>Format
 
-neun Ziffern mit optionalem Bindestrich und Schrägstrich
+Neun Ziffern mit optionalem Bindestrich und Schrägstrich
   
 ### <a name="pattern"></a>Muster
 
@@ -1043,11 +1051,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_austria_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_austria_eu_tax_file_number` gefunden. 
     
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_austria_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -1089,7 +1097,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - Steuernummer
  
 ## <a name="austria-value-added-tax"></a>Umsatzsteuer für Österreich
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -1121,11 +1129,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_Austria_Value_Added_Tax findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Austria_Value_Added_Tax gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_Austria_Value_Added_Tax findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -1181,7 +1189,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck CEP_Regex_AzureDocumentDBAuthKey findet Inhalte, die dem Muster entsprechen.
 - Der reguläre Ausdruck CEP_CommonExampleKeywords **findet keine** Inhalte, die dem Muster entsprechen.
 
@@ -1232,7 +1240,7 @@ Die Zeichenfolge "Server", "Server" oder "Datenquelle", gefolgt von den Im folge
 - Null bis zwei Leerzeichen
 - Ein Gleichheitszeichen (=)
 - Null bis zwei Leerzeichen
-- ein oder mehrere Zeichen, die kein Semikolon (;), Anführungszeichen (") oder Apostroph (') sind
+- Ein oder mehrere Zeichen, die kein Semikolon (;), Anführungszeichen (") oder Apostroph (') sind
 - Ein Semikolon (;), Anführungszeichen (") oder Apostroph (')
 
 ### <a name="checksum"></a>Prüfsumme
@@ -1241,8 +1249,8 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck CEP_Regex_AzureConnectionString findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
+- Der reguläre Ausdruck CEP_Regex_AzureConnectionString inhalt, der dem Muster entspricht.
 - Der reguläre Ausdruck CEP_CommonExampleKeywords **findet keine** Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -1301,7 +1309,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck CEP_Regex_AzureIoTConnectionString findet Inhalte, die dem Muster entsprechen.
 - Der reguläre Ausdruck CEP_CommonExampleKeywords **findet keine** Inhalte, die dem Muster entsprechen.
 
@@ -1351,7 +1359,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck CEP_Regex_AzurePublishSettingPasswords findet Inhalte, die dem Muster entsprechen.
 - Der reguläre Ausdruck CEP_CommonExampleKeywords **findet keine** Inhalte, die dem Muster entsprechen.
 
@@ -1384,7 +1392,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="azure-redis-cache-connection-string"></a>Verbindungszeichenfolge des Azure Redis-Caches
+## <a name="azure-redis-cache-connection-string"></a>Azure Redis cache connection string
 
 ### <a name="format"></a>Format
 
@@ -1407,7 +1415,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck CEP_Regex_AzureRedisCacheConnectionString inhalt, der dem Muster entspricht.
 - Der reguläre Ausdruck CEP_CommonExampleKeywords **findet keine** Inhalte, die dem Muster entsprechen.
 
@@ -1461,8 +1469,8 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck CEP_Regex_AzureSAS findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+- Der reguläre Ausdruck CEP_Regex_AzureSAS inhalt, der dem Muster entspricht.
 
 ```xml
 <!--Azure SAS-->
@@ -1501,8 +1509,8 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck CEP_Regex_AzureServiceBusConnectionString findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+- Der reguläre Ausdruck CEP_Regex_AzureServiceBusConnectionString inhalt, der dem Muster entspricht.
 - Der reguläre Ausdruck CEP_CommonExampleKeywords **findet keine** Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -1559,7 +1567,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck CEP_Regex_AzureStorageAccountKey findet Inhalte, die dem Muster entsprechen.
 - Der reguläre Ausdruck CEP_AzureEmulatorStorageAccountFilter **findet keine** Inhalte, die dem Muster entsprechen.
 - Der reguläre Ausdruck CEP_CommonExampleKeywords **findet keine** Inhalte, die dem Muster entsprechen.
@@ -1617,7 +1625,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck CEP_Regex_AzureStorageAccountKeyGeneric findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -1644,7 +1652,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_belgium_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus `Keywords_eu_driver's_license_number` oder `Keywords_belgium_eu_driver's_license_number` wurde gefunden.
     
@@ -1713,7 +1721,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Driver's licences
 - dl #
 - dls #
 - driverlic #
@@ -1747,7 +1755,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences #
 - driver' lic #
 - driver' lics #
-- driver' license #
+- Driver' license #
 - driver' licenses #
 - Driver' licence #
 - driver' licences #
@@ -1811,7 +1819,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 11 Ziffern plus Trennzeichen:
 - sechs Ziffern und zwei optionale Punkte im Format YY. MM.DD für das Geburtsdatum 
 - Ein optionales Trennzeichen von Punkt, Strich, Leerzeichen 
-- drei aufeinander folgende Ziffern (ungerade für 15- und 15-15-500er-Nummern, auch für Frauen) 
+- drei fortlaufende Ziffern (ungerade für 15- und 15-5-800er-Ziffern, auch für Frauen) 
 - Ein optionales Trennzeichen von Punkt, Strich, Leerzeichen 
 - Zwei Prüfziffern
 
@@ -1821,12 +1829,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_belgium_national_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_belgium_national_number gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn:
 - Die Funktion Func_belgium_national_number findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -1920,12 +1928,12 @@ nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
- Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_belgium_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_belgium_eu_passport_number` wurde gefunden. 
 - Der reguläre Ausdruck findet Datum im Format TT MM JJ oder ein `Regex_eu_passport_date2` Schlüsselwort aus oder wird `Keywords_eu_passport_date` `Keywords_belgium_eu_passport_number` gefunden
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_belgium_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_belgium_eu_passport_number` wurde gefunden. 
 
@@ -1985,7 +1993,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="belgium-value-added-tax-number"></a>Umsatzsteuernummer für Belgien
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -2017,11 +2025,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_belgium_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_belgium_value_added_tax_number gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_belgium_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -2078,12 +2086,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_brazil_cpf findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_brazil_cpf gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_brazil_cpf findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -2141,12 +2149,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_brazil_cnpj findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_brazil_cnpj gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_brazil_cnpj findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -2218,12 +2226,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_brazil_rg findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_brazil_rg gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_brazil_rg findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -2270,7 +2278,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_bulgaria_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_bulgaria_eu_driver's_license_number` wurde gefunden. 
     
@@ -2323,7 +2331,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences
 - driver' lic
 - driver' lics
-- driver' license
+- Driver' license
 - driver' licenses
 - Driver' licence
 - driver' licences
@@ -2338,7 +2346,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Driver's licences
 - dl #
 - dls #
 - driverlic #
@@ -2372,7 +2380,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences #
 - driver' lic #
 - driver' lics #
-- driver' license #
+- Driver' license #
 - driver' licenses #
 - Driver' licence #
 - driver' licences #
@@ -2387,7 +2395,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Driver's license #
 - Driver's licenses #
 - Driver's licence #
-- driver's licences #
+- Driver's licences #
 - Führerschein 
 - driving license
 - dlno #
@@ -2437,7 +2445,7 @@ Zehn Ziffern ohne Leerzeichen und Trennzeichen
   
 - sechs Ziffern, die dem Geburtsdatum entsprechen (YYMMDD) 
 - zwei Ziffern, die der Geburtsreihenfolge entsprechen
-- eine Ziffer, die dem Geschlecht entspricht: Eine gleichmäßige Ziffer für männlich und eine ungerade Ziffer für Frau
+- eine Ziffer, die dem Geschlecht entspricht: Eine gleichmäßige Ziffer für männlich und eine ungerade Ziffer für Eine Frau
 - Eine Prüfziffer
 
 ### <a name="checksum"></a>Prüfsumme
@@ -2446,11 +2454,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_bulgaria_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_bulgaria_eu_national_id_card` gefunden. 
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_bulgaria_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -2518,7 +2526,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - униформгражданскине. #
 
 
-## <a name="bulgaria-passport-number"></a>Bulgarien Reisepassnummer
+## <a name="bulgaria-passport-number"></a>Bulgarien - Reisepassnummer
 
 ### <a name="format"></a>Format
 
@@ -2534,12 +2542,12 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_bulgaria_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_bulgaria_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date1` findet das Datum im Format "DD.MM.JJJJ" oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Das Datum im Format TT.MM.JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_bulgaria_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_bulgaria_eu_passport_number` wurde gefunden. 
 
@@ -2615,12 +2623,12 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_canada_bank_account_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_canada_bank_account_number wurde gefunden.
 - Der reguläre Ausdruck Regex_canada_bank_account_transit_number findet Inhalte, die dem Muster entsprechen.
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_canada_bank_account_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_canada_bank_account_number wurde gefunden.
 
@@ -2682,7 +2690,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_[province_name]_drivers_license_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_[province_name]_drivers_license_name wurde gefunden.
 - Ein Schlüsselwort aus Keyword_canada_drivers_license wurde gefunden.
@@ -2900,7 +2908,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Regex_canada_health_service_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_canada_health_service_number wurde gefunden.
 
@@ -2947,7 +2955,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Regex_canada_passport_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_canada_passport_number oder Keyword_passport wurde gefunden.
 
@@ -2989,7 +2997,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - パスポート
 - パスポート番号
 - ポ .
-- パスポート#
+- パスポート＃
 - Numéro de passeport
 - Passeport n °
 - Passeport Non
@@ -3015,7 +3023,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_canada_phin findet Inhalte, die dem Muster entsprechen.
 - Es werden mindestens zwei Schlüsselwörter aus Keyword_canada_phin oder Keyword_canada_provinces gefunden.
 
@@ -3093,7 +3101,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_canadian_sin findet Inhalte, die dem Muster entsprechen.
 - Mindestens zwei dieser eine beliebige Kombination der folgenden Aktionen aus:
     - Ein Schlüsselwort aus Keyword_sin wurde gefunden.
@@ -3101,7 +3109,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
     - Die Funktion Func_eu_date findet ein Datum in das richtige Datumsformat.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_unformatted_canadian_sin findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_sin wurde gefunden.
 - Die Prüfsumme stimmt.
@@ -3177,12 +3185,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_chile_id_card findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_chile_id_card gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_chile_id_card findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -3250,7 +3258,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 18 Ziffern:
 - sechs Ziffern, bei denen es sich um einen Adresscode handelt 
 - Acht Ziffern im Format "YYYYMMDD", die das Geburtsdatum sind 
-- drei Ziffern, bei denen es sich um einen Bestellcode handelt 
+- Drei Ziffern, bei denen es sich um einen Bestellcode handelt 
 - Eine Ziffer, die eine Prüfziffer ist
 
 ### <a name="checksum"></a>Prüfsumme
@@ -3259,12 +3267,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_china_resident_id findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_china_resident_id gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_china_resident_id findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -3313,7 +3321,7 @@ Ja, die Luhn-Prüfsumme
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_credit_card findet Inhalte, die dem Muster entsprechen.
 - Eine der folgenden Bedingungen trifft zu:
     - Ein Schlüsselwort aus Keyword_cc_verification wurde gefunden.
@@ -3321,7 +3329,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
     - Die Funktion Func_expiration_date findet ein Datum im richtigen Datumsformat.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_credit_card findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -3566,13 +3574,13 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - Nein. do cartao
 - クレジットカード番号
 - クレジットカードナンバー
-- クレジットカード#
+- クレジットカード＃
 - クレジットカード
 - クレジット
 - クレカ
 - カード番号
 - カードナンバー
-- カード#
+- カード＃
 - アメックス
 - アメリカンエクスプレス
 - アメリカン エクスプレス
@@ -3611,7 +3619,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
   
 - Der reguläre Ausdruck  `Regex_croatia_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus `Keywords_eu_driver's_license_number` oder `Keywords_croatia_eu_driver's_license_number` wurde gefunden. 
@@ -3776,7 +3784,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_croatia_id_card findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_croatia_id_card gefunden.
 
@@ -3805,7 +3813,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - osobni identifikacijski broj
 - Persönliche Identifikationsnummer
 - zeitzni broj
-- zeitzni identifikacijski broj
+- nimzni identifikacijski broj
 - tax id
 - steueridentifikation nein
 - Steueridentifikationsnummer
@@ -3840,12 +3848,12 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_croatia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_croatia_eu_passport_number` wurde gefunden. 
 - Der reguläre Ausdruck `Regex_eu_passport_date1` findet das Datum im Format "DD.MM.JJJJ" oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_croatia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_croatia_eu_passport_number` wurde gefunden. 
     
@@ -3911,12 +3919,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_croatia_oib_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_croatia_eu_tax_file_number gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_croatia_oib_number findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -3947,7 +3955,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - osobni id
 - osobni identifikacijski broj
 - Persönliche Identifikationsnummer
-- zeitzni broj
+- tinzni broj
 - zeitzni identifikacijski broj
 - tax id
 - steueridentifikation nein
@@ -3983,7 +3991,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_cyprus_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_cyprus_eu_driver's_license_number` wurde gefunden.
 
@@ -4100,7 +4108,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Driver's license #
 - Driver's licenses #
 - Driver's licence #
-- driver's licences #
+- Driver's licences #
 - Führerschein 
 - driving license
 - dlno #
@@ -4123,7 +4131,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - dlno
 - dl number
 
-#### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver A0 s_license_number
+#### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver's_license_number
 
 - άδεια οδήγησης
 - αριθμό άδειας οδήγησης
@@ -4152,7 +4160,7 @@ nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_cyprus_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_cyprus_eu_national_id_card` gefunden. 
     
@@ -4194,12 +4202,12 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_cyprus_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_cyprus_eu_passport_number` wurde gefunden. 
 - Der reguläre Ausdruck `Regex_cyprus_eu_passport_date` findet Datum im Format TT/MM/JJJJ oder ein Schlüsselwort wurde `Keywords_cyprus_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_cyprus_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_cyprus_eu_passport_number` wurde gefunden.  
     
@@ -4288,11 +4296,11 @@ nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_cyprus_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_cyprus_eu_tax_file_number` gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_cyprus_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -4360,7 +4368,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_czech_republic_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_czech_republic_eu_driver's_license_number` wurde gefunden. 
 
@@ -4413,7 +4421,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences
 - driver' lic
 - driver' lics
-- driver' license
+- Driver' license
 - driver' licenses
 - Driver' licence
 - driver' licences
@@ -4524,12 +4532,12 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_czech_republic_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_czech_republic_eu_passport_number` wurde gefunden. 
 - Der reguläre Ausdruck `Regex_eu_passport_date1` findet das Datum im Format "DD.MM.JJJJ" oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_czech_republic_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_czech_republic_eu_passport_number` wurde gefunden. 
     
@@ -4610,13 +4618,13 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 
 - Die Funktion Func_czech_id_card findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_czech_id_card gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 
 - Die Funktion Func_czech_id_card_new_format findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
@@ -4702,7 +4710,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_denmark_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_denmark_eu_driver's_license_number` wurde gefunden. 
     
@@ -4755,7 +4763,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences
 - driver' lic
 - driver' lics
-- driver' license
+- Driver' license
 - driver' licenses
 - Driver' licence
 - driver' licences
@@ -4770,7 +4778,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Driver's licences
 - dl #
 - dls #
 - driverlic #
@@ -4804,7 +4812,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences #
 - driver' lic #
 - driver' lics #
-- driver' license #
+- Driver' license #
 - driver' licenses #
 - Driver' licence #
 - driver' licences #
@@ -4819,7 +4827,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Driver's license #
 - Driver's licenses #
 - Driver's licence #
-- driver's licences #
+- Driver's licences #
 - Führerschein 
 - driving license
 - dlno #
@@ -4864,12 +4872,12 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_denmark_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_denmark_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date2` findet Das Datum im Format TT MM JJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Der reguläre Ausdruck `Regex_eu_passport_date2` findet Datum im Format TT MM JJ oder ein Schlüsselwort gefunden `Keywords_eu_passport_date` wurde
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_denmark_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_denmark_eu_passport_number` wurde gefunden. 
     
@@ -4925,7 +4933,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Ablaufdatum
 
 
-## <a name="denmark-personal-identification-number"></a>Dänemark Persönliche Identifikationsnummer
+## <a name="denmark-personal-identification-number"></a>Dänemark persönliche Identifikationsnummer
 
 ### <a name="format"></a>Format
 
@@ -4944,12 +4952,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Func_denmark_eu_tax_file_number inhalt, der dem Muster entspricht.
 - Ein Schlüsselwort aus Keyword_denmark_id gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Func_denmark_eu_tax_file_number inhalt, der dem Muster entspricht.
 - Die Prüfsumme stimmt.
 
@@ -5051,8 +5059,8 @@ zwei Buchstaben gefolgt von sieben Ziffern
 ### <a name="pattern"></a>Muster
 
 Das Muster muss Folgendes enthalten:
-- Ein Buchstabe (groß-/kleinschreibungsempfindlich) aus dieser Gruppe möglicher Buchstaben: abcdefghjklmnprstux, ein Registrierungscode 
-- Ein Buchstabe (ohne Schreibung), bei dem es sich um den ersten Buchstaben des Nachnamens oder der Ziffer "9" des Registranten handelt
+- Ein Buchstabe (ohne Schreibung) aus dieser Gruppe möglicher Buchstaben: abcdefghjklmnprstux, ein Registrantcode 
+- ein Buchstabe (ohne Schreibung), bei dem es sich um den ersten Buchstaben des Nachnamens oder der Ziffer "9" des Registranten handelt
 - sieben Ziffern, von denen die letzte die Prüfziffer ist
 
 ### <a name="checksum"></a>Prüfsumme
@@ -5061,12 +5069,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_dea_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort wurde `Keyword_dea_number` gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_dea_number findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -5110,7 +5118,7 @@ zwei Buchstaben gefolgt von sechs Ziffern
 
 zwei Buchstaben und sechs Ziffern:
   
-- Die Buchstaben "ET" (groß- und kleinschreibungsempfindlich) 
+- Die Buchstaben "ET" (Groß-/Kleinschreibung wird nicht beachtet) 
 - sechs Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
@@ -5119,7 +5127,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_estonia_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_estonia_eu_driver's_license_number` wurde gefunden. 
     
@@ -5172,7 +5180,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences
 - driver' lic
 - driver' lics
-- driver' license
+- Driver' license
 - driver' licenses
 - Driver' licence
 - driver' licences
@@ -5187,7 +5195,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Driver's licences
 - dl #
 - dls #
 - driverlic #
@@ -5221,7 +5229,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences #
 - driver' lic #
 - driver' lics #
-- driver' license #
+- Driver' license #
 - driver' licenses #
 - Driver' licence #
 - driver' licences #
@@ -5236,7 +5244,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Driver's license #
 - Driver's licenses #
 - Driver's licence #
-- driver's licences #
+- Driver's licences #
 - Führerschein 
 - driving license
 - dlno #
@@ -5294,11 +5302,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_estonia_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_estonia_eu_national_id_card` gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_estonia_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -5370,12 +5378,12 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_estonia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_estonia_eu_passport_number` wurde gefunden. 
 - Der reguläre Ausdruck `Regex_eu_passport_date1` findet das Datum im Format "DD.MM.JJJJ" oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_estonia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_estonia_eu_passport_number` wurde gefunden. 
     
@@ -5444,7 +5452,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_eu_debit_card findet Inhalte, die dem Muster entsprechen.
 - Mindestens eine der folgenden Bedingungen trifft zu:
     - Ein Schlüsselwort aus Keyword_eu_debit_card wurde gefunden.
@@ -5536,7 +5544,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - checkcards 
 - undekaart 
 - cirrus 
-- cirrus-edc-des 
+- cirrus-edc-eines 
 - controlekaart 
 - controlekaarten 
 - credit card 
@@ -5587,7 +5595,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - maestro 
 - master card 
 - master cards 
-- zu 
+- mastercard 
 - unter 
 - mc 
 - mister cash 
@@ -5658,7 +5666,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - visa plus 
 - visa electron 
 - visto 
-- zeit 
+- visum 
 - vpay   
 
 #### <a name="keyword_card_security_terms_dict"></a>Keyword_card_security_terms_dict
@@ -5729,7 +5737,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - speldblok 
 - veiligheid nr 
 - igheidsaantal 
-- zeitigheidscode 
+- codigheidscode 
 - igheidsnummer 
 - verfalldatum 
 
@@ -5814,7 +5822,7 @@ Dies sind die Entitäten im vertraulichen Informationstyp "EU Driver's License N
 
 ## <a name="eu-national-identification-number"></a>Nationale EU-Identifikationsnummer
 
-Dies sind die Entitäten im vertraulichen Informationstyp "NATIONALE IDENTIFIKATIONSNUMMER".
+Dies sind die Entitäten im vertraulichen Informationstyp "Eu-nationale Identifikationsnummer".
 
 - [Österreich](#austria-identity-card)
 - [Belgien](#belgium-national-number)
@@ -5879,7 +5887,7 @@ Dies sind die Entitäten im Vertraulichen Informationstyp "EU-Reisepassnummer". 
 - [Vereinigtes Königreich](#us--uk-passport-number)
 
 
-## <a name="eu-social-security-number-or-equivalent-identification"></a>EU-Sozialversicherungsnummer oder gleichwertige Identifikation
+## <a name="eu-social-security-number-or-equivalent-identification"></a>Sozialversicherungsnummer der EU oder gleichwertige Identifikation
 
 Dies sind die Entitäten, die sich in der EU-Sozialversicherungsnummer oder einem gleichwertigen Typ vertraulicher Informationen zur Identifizierung befinden.
 
@@ -5953,7 +5961,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_finland_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_finland_eu_driver's_license_number` wurde gefunden. 
     
@@ -6021,7 +6029,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Driver's licences
 - dl #
 - dls #
 - driverlic #
@@ -6070,7 +6078,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Driver's license #
 - Driver's licenses #
 - Driver's licence #
-- driver's licences #
+- Driver's licences #
 - Führerschein 
 - driving license
 - dlno #
@@ -6133,7 +6141,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Regex_Finland_European_Health_Insurance_Number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Finland_European_Health_Insurance_Number gefunden.
 
@@ -6177,7 +6185,7 @@ sechs Ziffern plus ein Zeichen, das ein Hunderterzeichen plus drei Ziffern plus 
 
 Das Muster muss Folgendes enthalten:
 - sechs Ziffern im Format DDMMYY, die ein Geburtsdatum sind 
-- 100-Markierung (entweder '-', '+' oder 'a') 
+- 1.000er-Markierung (entweder '-', '+' oder 'a') 
 - Dreistellige persönliche Identifikationsnummer 
 - Eine Ziffer oder ein Buchstabe (Groß-/Kleinschreibung wird nicht beachtet), bei der es sich um eine Prüfziffer handelt
 
@@ -6187,12 +6195,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion, Func_finnish_national_id Inhalt findet, der dem Muster entspricht
 - Ein Schlüsselwort aus Keyword_finnish_national_id gefunden
 - Prüfsummenprüfungen
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion, Func_finnish_national_id Inhalt findet, der dem Muster entspricht
 - Prüfsummenprüfungen
 
@@ -6276,7 +6284,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_finland_passport_number inhalt, der dem Muster entspricht.
 - Ein Schlüsselwort aus Keywords_eu_passport_number_common oder Keyword_finland_passport_number wurde gefunden.
 
@@ -6334,7 +6342,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_french_drivers_license findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_french_drivers_license gefunden.
 
@@ -6479,7 +6487,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="france-health-insurance-number"></a>Französische Gesundheitsversicherungsnummer
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -6507,7 +6515,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Regex_France_Health_Insurance_Number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_France_Health_Insurance_Number gefunden.
 
@@ -6545,7 +6553,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_france_cni findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_france_eu_national_id_card gefunden.
 
@@ -6596,7 +6604,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_fr_passport findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_passport wurde gefunden.
 
@@ -6635,7 +6643,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
       
 ## <a name="france-social-security-number-insee-or-equivalent-identification"></a>Französische Sozialversicherungsnummer (INSEE) oder gleichwertige Identifikation
-Diese Entität für vertrauliche Informationstypen ist im Vertraulichen Informationstyp "Sozialversicherungsnummer" und "Äquivalente ID" der EU enthalten und steht als eigenständige Entität für vertrauliche Informationstypen zur Verfügung.
+Diese Entität des Typs "Vertrauliche Informationen" ist im Vertraulichen Informationstyp "Sozialversicherungsnummer" und "Äquivalente ID" der EU enthalten und steht als eigenständige Entität für vertrauliche Informationstypen zur Verfügung.
 
 ### <a name="format"></a>Format
 
@@ -6659,7 +6667,7 @@ Eine DLP-Richtlinie ist zu 95 % sicher, dass diese Art von vertraulichen Inform
 - Ein Schlüsselwort aus Keyword_fr_insee wurde gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_french_insee oder Func_fr_insee findet Inhalte, die dem Muster entsprechen.
 - Es wurde kein Schlüsselwort aus Keyword_fr_insee gefunden.
 - Die Prüfsumme stimmt.
@@ -6738,11 +6746,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_france_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_france_eu_tax_file_number` gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_france_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -6818,11 +6826,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_france_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_france_value_added_tax_number gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_france_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -6874,7 +6882,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_german_drivers_license findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_german_drivers_license_number wurde gefunden.
 - Die Prüfsumme stimmt.
@@ -6970,7 +6978,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Driver's licences
 - dl #
 - dls #
 - driverlic #
@@ -7004,7 +7012,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences #
 - driver' lic #
 - driver' lics #
-- driver' license #
+- Driver' license #
 - driver' licenses #
 - Driver' licence #
 - driver' licences #
@@ -7041,7 +7049,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - dlno
 
 
-## <a name="germany-identity-card-number"></a>Deutschland Identity Card Number
+## <a name="germany-identity-card-number"></a>Deutschland - Personalausweisnummer
 
 ### <a name="format"></a>Format
 
@@ -7064,8 +7072,8 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_germany_id_card inhalt, der dem Muster entspricht.
+Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Der reguläre Ausdruck Regex_germany_id_card findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_germany_id_card gefunden.
 
 ```xml
@@ -7117,12 +7125,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_german_passport findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus `Keyword_german_passport` oder `Keywords_eu_passport_number_common` wurde gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_german_passport_data findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus `Keyword_german_passport` oder `Keywords_eu_passport_number_common` wurde gefunden.
 - Die Prüfsumme stimmt.
@@ -7157,7 +7165,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
-- reise 2013
+- reise ohne
 - passeport no.
 - passeport no
 
@@ -7200,11 +7208,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_germany_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_germany_eu_tax_file_number` gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_germany_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -7280,11 +7288,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_germany_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_germany_value_added_tax_number gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_germany_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -7328,7 +7336,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_greece_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_greece_eu_driver's_license_number` wurde gefunden. 
     
@@ -7396,7 +7404,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Driver's licences
 - dl #
 - dls #
 - driverlic #
@@ -7445,7 +7453,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Driver's license #
 - Driver's licenses #
 - Driver's licence #
-- driver's licences #
+- Driver's licences #
 - Führerschein 
 - driving license
 - dlno #
@@ -7501,11 +7509,11 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Regex_greece_id_card findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_greece_id_card gefunden.
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_greece_id_card findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -7551,12 +7559,12 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_greece_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_greece_eu_passport_number` wurde gefunden. 
 - Der reguläre Ausdruck `Regex_greece_eu_passport_date` findet datums im Format TT MMM JJ (Beispiel - 28 August 19) oder ein Schlüsselwort `Keywords_greece_eu_passport_date` gefunden wurde
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_greece_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_greece_eu_passport_number` wurde gefunden. 
     
@@ -7607,7 +7615,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="greece-social-security-number-amka"></a>Griechenland Sozialversicherungsnummer (AMKA)
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -7630,11 +7638,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_greece_eu_ssn` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_greece_eu_ssn_or_equivalent` gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_greece_eu_ssn` findet Inhalte, die dem Muster entsprechen. 
 
 ```xml
@@ -7665,7 +7673,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="greece-tax-identification-number"></a>Steueridentifikationsnummer für Griechenland
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -7686,7 +7694,7 @@ Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
   
 - Der reguläre Ausdruck  `Regex_greece_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_greece_eu_tax_file_number` gefunden. 
@@ -7752,12 +7760,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_hong_kong_id_card findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_hong_kong_id_card gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn:
 - Die Funktion Func_hong_kong_id_card findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -7836,7 +7844,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
   
 - Der reguläre Ausdruck  `Regex_hungary_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_hungary_eu_driver's_license_number` wurde gefunden. 
@@ -7889,7 +7897,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences
 - driver' lic
 - driver' lics
-- driver' license
+- Driver' license
 - driver' licenses
 - Driver' licence
 - driver' licences
@@ -7904,7 +7912,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Driver's licences
 - dl #
 - dls #
 - driverlic #
@@ -7953,7 +7961,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Driver's license #
 - Driver's licenses #
 - Driver's licence #
-- driver's licences #
+- Driver's licences #
 - Führerschein 
 - driving license
 - dlno #
@@ -8000,7 +8008,7 @@ Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
 
 11 Ziffern:
   
-- Eine Ziffer, die dem Geschlecht entspricht (1-männlich, 2-frau, andere Zahlen sind auch für Bürger möglich, die vor 1900 oder mit doppelter Bürgerschaft bzw. mit doppelter Bürgerschaft 1900 sind) 
+- Eine Ziffer, die dem Geschlecht entspricht (1-männlich, 2-frau, andere Nummern sind auch für Bürger möglich, die vor 1900 oder Mitberechtigerechten sind) 
 - Sechs Ziffern, die dem Geburtsdatum entsprechen (YYMMDD)
 - Drei Ziffern, die einer Seriennummer entsprechen
 - Eine Prüfziffer
@@ -8011,12 +8019,12 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
   
 - Die Funktion  `Func_hungary_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_hungary_eu_national_id_card` gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
   
 - Die Funktion  `Func_hungary_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
     
@@ -8066,12 +8074,12 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_hungary_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_hungary_eu_passport_number` wurde gefunden. 
 - Der reguläre Ausdruck findet Datum im Format `Regex_hungary_eu_passport_date` TT MMM/MMM JJ (Beispiel - 01 MÁR/MRT 12) oder ein Schlüsselwort `Keywords_eu_passport_date` wurde gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_hungary_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_hungary_eu_passport_number` wurde gefunden. 
     
@@ -8136,12 +8144,12 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
   
 - Die Funktion  `Func_hungary_eu_ssn_or_equivalent` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_hungary_eu_ssn_or_equivalent` gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
   
 - Die Funktion  `Func_hungary_eu_ssn_or_equivalent` findet Inhalte, die dem Muster entsprechen. 
     
@@ -8182,7 +8190,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="hungary-tax-identification-number"></a>Steueridentifikationsnummer für Ungarn
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -8207,12 +8215,12 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
   
 - Die Funktion  `Func_hungary_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_hungary_eu_tax_file_number` gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
   
 - Die Funktion  `Func_hungary_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
@@ -8262,8 +8270,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - uSt-Nummer
 
 
-## <a name="hungary-value-added-tax-number"></a>Mehrwert-Steuernummer für Ungarn
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+## <a name="hungary-value-added-tax-number"></a>Ungarn - Mehrwert-Steuernummer
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -8279,7 +8287,7 @@ Alphanumerisches Muster mit 10 Zeichen
 Alphanumerisches Muster mit 10 Zeichen:
 
 - 2 Buchstaben - HU oder Hu
-- Optionaler Platz
+- Optionaler Speicherplatz
 - 8 Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -8288,12 +8296,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 
 - Die Funktion Func_hungarian_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_hungarian_value_added_tax_number gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 
 - Die Funktion Func_hungarian_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 
@@ -8327,7 +8335,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - áfa szám
 
 
-## <a name="india-permanent-account-number-pan"></a>Indien – dauerhafte Kontonummer (PAN)
+## <a name="india-permanent-account-number-pan"></a>Indien – permanente Kontonummer (PAN)
 
 ### <a name="format"></a>Format
 
@@ -8348,11 +8356,11 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_india_permanent_account_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_india_permanent_account_number gefunden.
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Regex_india_permanent_account_number findet Inhalte, die dem Muster entsprechen.
 
 
@@ -8400,12 +8408,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_india_aadhaar findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_india_aadhar gefunden.
 - Die Prüfsumme stimmt.
 - 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 
 - Die Funktion Func_india_aadhaar findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
@@ -8456,7 +8464,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 
 - Der reguläre Ausdruck Regex_indonesia_id_card findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_indonesia_id_card gefunden.
@@ -8493,7 +8501,7 @@ Das Muster muss Folgendes enthalten:
 - 1-7 Gruppen mit vier Buchstaben oder Ziffern (kann durch Leerzeichen getrennt werden)
 - 1 bis 3 Buchstaben oder Ziffern
 
-Das Format für jedes Land ist leicht unterschiedlich. Der Typ vertraulicher IBAN-Informationen deckt die folgenden 60 Länder ab:
+Das Format für jedes Land ist etwas anders. Der Typ vertraulicher IBAN-Informationen deckt die folgenden 60 Länder ab:
 
 ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk, sm, tn, tr, vg
 
@@ -8503,7 +8511,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 
 - Die Funktion Func_iban findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
@@ -8537,11 +8545,11 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Ein Schlüsselwort aus Dictionary_icd_10_updated gefunden.
 - Ein Schlüsselwort aus Dictionary_icd_10_codes gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Ein Schlüsselwort aus Dictionary_icd_10_ wurde gefunden.
 
 ```xml
@@ -8561,7 +8569,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 Ein beliebiger Begriff aus Dictionary_icd_10_updated Schlüsselwörterbuch, der auf der International [Classification of Diseases, Tenth Revision, Modification Modification (ICD-10-CM) basiert.](https://go.microsoft.com/fwlink/?linkid=852604) Dieser Typ sucht nur nach dem Begriff, nicht nach den Versicherungscodes.
 
-Ein beliebiger Begriff aus Dictionary_icd_10_codes Schlüsselwörterbuch, der auf der [International Classification of Diseases, Tenth Revision, Modification Modification (ICD-10-CM) basiert.](https://go.microsoft.com/fwlink/?linkid=852604) Dieser Typ sucht nur nach Versicherungscodes, nicht nach der Beschreibung.
+Ein beliebiger Begriff aus Dictionary_icd_10_codes Schlüsselwörterbuch, der auf der International [Classification of Diseases, Tenth Revision, Modification Modification (ICD-10-CM) basiert.](https://go.microsoft.com/fwlink/?linkid=852604) Dieser Typ sucht nur nach Versicherungscodes, nicht nach der Beschreibung.
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>Internationale Klassifikation von Krankheit (ICD-9-CM)
 
@@ -8579,11 +8587,11 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Ein Schlüsselwort aus Dictionary_icd_9_updated gefunden.
 - Ein Schlüsselwort aus Dictionary_icd_9_codes gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Ein Schlüsselwort aus Dictionary_icd_9_updated gefunden.
 
 ```xml
@@ -8622,7 +8630,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Für IPv6 ist eine DLP-Richtlinie zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Für IPv6 hat eine DLP-Richtlinie eine hohe Sicherheit, dass diese Art von vertraulichen Informationen erkannt wurde, wenn in der Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_ipv6_address findet Inhalte, die dem Muster entsprechen.
 - Es wurde kein Schlüsselwort aus Keyword_ipaddress gefunden.
 
@@ -8668,7 +8676,7 @@ Für IPv6 ist eine DLP-Richtlinie zu 95 % sicher, dass diese Art von vertraulic
 - internet protocol
 - IP-כתובת ה 
 
-## <a name="ireland-drivers-license-number"></a>Ireland driver's license number
+## <a name="ireland-drivers-license-number"></a>Führerscheinnummer Irland
 
 ### <a name="format"></a>Format
 
@@ -8679,7 +8687,7 @@ Sechs Ziffern, gefolgt von vier Buchstaben
 Sechs Ziffern und vier Buchstaben:
   
 - Sechs Ziffern
-- Vier Buchstaben (Groß-/Kleinschreibung nicht beachtet)
+- Vier Buchstaben (groß-/klein geschrieben)
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -8687,7 +8695,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
   
 - Der reguläre Ausdruck  `Regex_ireland_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_ireland_eu_driver's_license_number` wurde gefunden. 
@@ -8756,7 +8764,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Driver's licences
 - dl #
 - dls #
 - driverlic #
@@ -8805,7 +8813,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Driver's license #
 - Driver's licenses #
 - Driver's licence #
-- driver's licences #
+- Driver's licences #
 - Führerschein 
 - driving license
 - dlno #
@@ -8853,12 +8861,12 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_ireland_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_ireland_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck findet Das Datum im Format `Regex_ireland_eu_passport_date` TT MMM/MMM JJJJ (Beispiel - 01 BEA/MAI 1988) oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Der reguläre Ausdruck findet datums im Format `Regex_ireland_eu_passport_date` TT MMM/MMM JJJJ (Beispiel - 01 BEA/MAI 1988) oder ein Schlüsselwort gefunden `Keywords_eu_passport_date` wurde
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_ireland_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_ireland_eu_passport_number` wurde gefunden.
     
@@ -8944,12 +8952,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_ireland_pps findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_ireland_eu_national_id_card gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_ireland_pps findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -8973,9 +8981,9 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - Clientidentitätsdienst
 - identification number
 - Persönliche ID-Nummer
-- Private öffentliche Dienstnummer
+- Persönliche öffentliche Dienstnummer
 - Persönlicher Dienst nein
-- phearsphe seirbhíse poiblí
+- phearsane seirbhíse poiblí
 - pps no
 - pps number
 - pps num
@@ -9014,7 +9022,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - tin #
 
 
-## <a name="israel-bank-account-number"></a>Israels Bankkontonummer
+## <a name="israel-bank-account-number"></a>Israel bank account number
 
 ### <a name="format"></a>Format
 
@@ -9038,7 +9046,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Regex_israel_bank_account_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_israel_bank_account_number wurde gefunden.
 
@@ -9079,7 +9087,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_israeli_national_id_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Israel_National_ID wurde gefunden.
 - Die Prüfsumme stimmt.
@@ -9138,7 +9146,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Regex_italy_drivers_license_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_italy_drivers_license_number wurde gefunden.
 
@@ -9165,7 +9173,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - patenti guida
 
 ## <a name="italy-fiscal-code"></a>Finanzcode für Italien
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -9182,7 +9190,7 @@ Eine 16-stellige Kombination aus Buchstaben und Ziffern:
 - drei Buchstaben, die den ersten drei Konsonanten im Familiennamen entsprechen
 - drei Buchstaben, die den ersten, dritten und vierten Konsonanten im Vornamen entsprechen
 - zwei Ziffern, die den letzten Ziffern des Geburtsjahrs entsprechen
-- Ein Buchstabe, der dem Buchstaben für den Geburtsmonat entspricht– Buchstaben werden in alphabetischer Reihenfolge verwendet, aber es werden nur die Buchstaben A bis E, H, L, M, P, R bis T verwendet (also ist Januar A und Oktober ist R).
+- Ein Buchstabe, der dem Buchstaben für den Geburtsmonat entspricht– Buchstaben werden in alphabetischer Reihenfolge verwendet, es werden jedoch nur die Buchstaben A bis E, H, L, M, P, R bis T verwendet (also ist Januar A und Oktober ist R).
 - zwei Ziffern, die dem Tag des Geburtsmonats entsprechen– um zwischen den Geschlechten zu unterscheiden, werden 40 zum Geburtstag für Frauen hinzugefügt.
 - vier Ziffern, die der Ortswahl entsprechen, die für die Herkunft der Person spezifisch ist (länderweite Codes werden für fremde Länder verwendet)
 - Eine Paritätsziffer
@@ -9193,11 +9201,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_italy_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_italy_eu_national_id_card` gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_italy_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -9270,12 +9278,12 @@ nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_italy_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_italy_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck findet Datum im Format `Regex_italy_eu_passport_date` TT MMM/MMM JJJJ (Beispiel - 01 GEN/JAN 1988) oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Der reguläre Ausdruck findet Datum im Format `Regex_italy_eu_passport_date` TT MMM/MMM JJJJ (Beispiel - 01 GEN/JAN 1988) oder ein Schlüsselwort `Keywords_eu_passport_date` wurde gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_italy_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_italy_eu_passport_number` wurde gefunden. 
     
@@ -9361,11 +9369,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_italy_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_italy_value_added_tax_number gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_italy_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -9413,14 +9421,14 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_jp_bank_account findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_jp_bank_account wurde gefunden.
 - Eine der folgenden Bedingungen trifft zu:
 - Die Funktion Func_jp_bank_account_branch_code findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_jp_bank_branch_code wurde gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_jp_bank_account findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_jp_bank_account wurde gefunden.
 
@@ -9511,7 +9519,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_jp_drivers_license_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_jp_drivers_license_number wurde gefunden.
 
@@ -9567,7 +9575,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="japan-my-number---corporate"></a>Japan – Meine Nummer – Unternehmen
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -9591,11 +9599,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_japanese_my_number_corporate findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_japanese_my_number_corporate gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_japanese_my_number_corporate findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -9628,7 +9636,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="japan-my-number---personal"></a>Japan – Eigene Nummer – Persönlich
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -9655,11 +9663,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_japanese_my_number_personal findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_japanese_my_number_personal gefunden.
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_japanese_my_number_personal findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -9679,7 +9687,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keyword_japan_my_number_personal"></a>Keyword_japan_my_number_personal
 
-- my number
+- Meine Nummer
 - マイナンバー
 - 個人番号
 - 共通番号
@@ -9707,7 +9715,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_jp_passport findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_jp_passport wurde gefunden.
 
@@ -9732,11 +9740,11 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - パスポート
 - パスポート番号
 - パスポートナンバー
-- パスポート#
+- パスポート＃
 - パスポート #
 - ポ .
 - 旅券番号
-- 旅券番号#
+- 旅券番号＃
 - 旅券番号♯
 - 旅券ナンバー
 
@@ -9760,7 +9768,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Regex_jp_residence_card_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_jp_residence_card_number gefunden.
 
@@ -9801,7 +9809,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_jp_resident_registration_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_jp_resident_registration_number wurde gefunden.
 
@@ -9851,11 +9859,11 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_jp_sin findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_jp_sin wurde gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_jp_sin_pre_1997 findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_jp_sin wurde gefunden.
 
@@ -9907,7 +9915,7 @@ drei Buchstaben gefolgt von sechs Ziffern
 
 drei Buchstaben und sechs Ziffern:
   
-- drei Buchstaben (Groß-/Kleinschreibung wird nicht beachtet) 
+- drei Buchstaben (Groß-/Kleinschreibung nicht beachtet) 
 - sechs Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
@@ -9916,7 +9924,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_latvia_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_latvia_eu_driver's_license_number` wurde gefunden. 
     
@@ -9984,7 +9992,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Driver's licences
 - dl #
 - dls #
 - driverlic #
@@ -10018,7 +10026,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences #
 - driver' lic #
 - driver' lics #
-- driver' license #
+- Driver' license #
 - driver' licenses #
 - Driver' licence #
 - driver' licences #
@@ -10033,7 +10041,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Driver's license #
 - Driver's licenses #
 - Driver's licence #
-- driver's licences #
+- Driver's licences #
 - Führerschein 
 - driving license
 - dlno #
@@ -10093,11 +10101,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_latvia_eu_national_id_card` oder der reguläreEx findet `Regex_latvia_eu_national_id_card_new_format` Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_latvia_eu_national_id_card` gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_latvia_eu_national_id_card` oder der reguläreEx findet `Regex_latvia_eu_national_id_card_new_format` Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -10194,7 +10202,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - tin #
 - Wählernummer
 
-## <a name="latvia-passport-number"></a>Lettisch Reisepassnummer
+## <a name="latvia-passport-number"></a>Lettisch - Reisepassnummer
 
 ### <a name="format"></a>Format
 
@@ -10213,12 +10221,12 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_latvia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_latvia_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date1` findet das Datum im Format "DD.MM.JJJJ" oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Das Datum im Format TT.MM.JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_latvia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_latvia_eu_passport_number` wurde gefunden. 
     
@@ -10292,7 +10300,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_lithuania_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_lithuania_eu_driver's_license_number` wurde gefunden. 
     
@@ -10360,7 +10368,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Driver's licences
 - dl #
 - dls #
 - driverlic #
@@ -10409,7 +10417,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Driver's license #
 - Driver's licenses #
 - Driver's licence #
-- driver's licences #
+- Driver's licences #
 - Führerschein 
 - driving license
 - dlno #
@@ -10466,11 +10474,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_lithuania_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_lithuania_eu_tax_file_number` gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_lithuania_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -10543,12 +10551,12 @@ nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_lithuania_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_lithuania_eu_passport_number` wurde gefunden. 
 - Der reguläre Ausdruck `Regex_eu_passport_date3` findet Das Datum im Format TT MM JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_lithuania_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_lithuania_eu_passport_number` wurde gefunden. 
     
@@ -10619,7 +10627,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_luxemburg_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_luxemburg_eu_driver's_license_number` wurde gefunden. 
     
@@ -10721,7 +10729,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences #
 - driver' lic #
 - driver' lics #
-- driver' license #
+- Driver' license #
 - driver' licenses #
 - Driver' licence #
 - driver' licences #
@@ -10765,8 +10773,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - fahr
 - Zungeschäin
 
-## <a name="luxemburg-national-identification-number-natural-persons"></a>Nationale Identifikationsnummer (natürliche Personen) in Luxemburg
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+## <a name="luxemburg-national-identification-number-natural-persons"></a>Nationale Identifikationsnummer luxemburgisch (natürliche Personen)
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -10790,11 +10798,11 @@ ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_luxemburg_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_luxemburg_eu_national_id_card` gefunden. 
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_luxemburg_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
 
 
@@ -10856,12 +10864,12 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_luxemburg_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_luxemburg_eu_passport_number` wurde gefunden. 
 - Der reguläre Ausdruck `Regex_eu_passport_date3` findet Das Datum im Format TT MM JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_luxemburg_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_luxemburg_eu_passport_number` wurde gefunden. 
     
@@ -10952,11 +10960,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_luxemburg_eu_tax_file_number_non_natural` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_luxemburg_eu_tax_file_number` gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_luxemburg_eu_tax_file_number_non_natural` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -11041,7 +11049,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_malaysia_id_card_number inhalt, der dem Muster entspricht.
 - Ein Schlüsselwort aus Keyword_malaysia_id_card_number gefunden.
 
@@ -11107,7 +11115,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_malta_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_malta_eu_driver's_license_number` wurde gefunden. 
     
@@ -11175,7 +11183,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Driver's licences
 - dl #
 - dls #
 - driverlic #
@@ -11279,11 +11287,11 @@ Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_malta_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_malta_eu_national_id_card` gefunden. 
     
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_malta_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -11311,7 +11319,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - numru ta 'identifikazzjoni tat-taxxa
 - numru ta 'identifikazzjoni uniku
 - numru ta' identità uniku
-- numru tas-servizz tas-
+- numru tas-servizz ta
 - numru tat-taxxa
 - Persönlicher numerischer Code
 - Eindeutige Identifikationsnummer
@@ -11335,12 +11343,12 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_malta_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_malta_eu_passport_number` wurde gefunden. 
 - Ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_malta_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_malta_eu_passport_number` wurde gefunden. 
     
@@ -11399,7 +11407,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 Für Nser aus Malta:
 - sieben Ziffern und ein Buchstabe im angegebenen Muster
   
-Nicht-Malta-Nser und -Entitäten:
+Nischisch-nisch-nisch(n) und -Entitäten(n):
 - neun Ziffern
   
 ### <a name="pattern"></a>Muster
@@ -11419,12 +11427,12 @@ Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläreEx  `Regex_malta_eu_tax_file_number`  oder `Regex_malta_eu_tax_file_number_non_maltese_national` sucht Inhalte, die dem Muster entsprechen. 
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
+- Der reguläreEx  `Regex_malta_eu_tax_file_number`  oder `Regex_malta_eu_tax_file_number_non_maltese_national` der gefundene Inhalt, der dem Muster entspricht. 
 - Es wurde ein Schlüsselwort  `Keywords_malta_eu_tax_file_number` gefunden. 
     
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläreEx  `Regex_malta_eu_tax_file_number` oder `Regex_malta_eu_tax_file_number_non_maltese_national` sucht Inhalte, die dem Muster entsprechen. 
+Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Der reguläreEx  `Regex_malta_eu_tax_file_number` oder `Regex_malta_eu_tax_file_number_non_maltese_national` der gefundene Inhalt, der dem Muster entspricht. 
     
 ```xml
       <!-- Malta Tax ID Number -->
@@ -11458,7 +11466,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - numru ta 'identifikazzjoni tat-taxxa
 - numru ta 'identifikazzjoni uniku
 - numru ta' identità uniku
-- numru tas-servizz tas-
+- numru tas-servizz ta
 - numru tat-taxxa
 - Persönlicher numerischer Code
 - tax id
@@ -11489,7 +11497,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="pattern"></a>Muster
 
-Acht neun Ziffern:
+89 Ziffern:
 - drei Ziffern 
 - Ein Leerzeichen (optional) 
 - drei Ziffern 
@@ -11502,7 +11510,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_netherlands_bsn findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_netherlands_bsn gefunden.
 - Die Prüfsumme stimmt.
@@ -11531,7 +11539,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - Personenbezogene Nummer
 - persoonlijk nummer
 - persoonlijke num codiert
-- persoonsgemillen
+- persoonsgeagaen
 - persoonsnummer
 - sociaal-fiscaal nummer
 - Social-Fiscal-Nummer
@@ -11559,7 +11567,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_netherlands_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_netherlands_eu_driver's_license_number` wurde gefunden. 
     
@@ -11612,7 +11620,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences
 - driver' lic
 - driver' lics
-- driver' license
+- Driver' license
 - driver' licenses
 - Driver' licence
 - driver' licences
@@ -11627,7 +11635,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Driver's licences
 - dl #
 - dls #
 - driverlic #
@@ -11726,12 +11734,12 @@ nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_netherlands_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_netherlands_eu_passport_number` wurde gefunden. 
 - Der reguläre Ausdruck findet Datum im Format `Regex_netherlands_eu_passport_date` TT MMM/MMM JJJJ (Beispiel - 26 MAA/MAR 2012)
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_netherlands_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_netherlands_eu_passport_number` wurde gefunden. 
     
@@ -11779,7 +11787,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - paspoort nr
 
 ## <a name="netherlands-tax-identification-number"></a>Niederländische Steueridentifikationsnummer
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -11800,11 +11808,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_netherlands_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_netherlands_eu_tax_file_number` gefunden. 
     
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_netherlands_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -11826,13 +11834,13 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 - btw nummer
 - zeitânske tax identification
-- hubild impuesto id number
+- huweise impuesto id number
 - hubild impuesto identification
 - identificatienummer belasting
 - identificatienummer van belasting
 - impuesto identification number
 - impuesto number
-- unter" belasting id nummer
+- untere unterlasting id nummer
 - unterding identificatie
 - unter anderem belasting identificatienummer
 - untere unterlastingnummer
@@ -11879,9 +11887,9 @@ Alphanumerisches Muster mit 14 Zeichen:
 
 - N oder n
 - L oder l
-- Optionaler Abstand, Punkt oder Bindestrich
+- Optionaler Leerzeichen, Punkt oder Bindestrich
 - neun Ziffern
-- Optionaler Abstand, Punkt oder Bindestrich
+- Optionaler Leerzeichen, Punkt oder Bindestrich
 - B oder b
 - zwei Ziffern
 
@@ -11891,11 +11899,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_netherlands_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_netherlands_value_added_tax_number gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_netherlands_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -11923,8 +11931,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - btw-nummer
 
 
-## <a name="new-zealand-bank-account-number"></a>Neuseeland – Bankkontonummer
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+## <a name="new-zealand-bank-account-number"></a>Bankkontonummer für Neuseeland
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -11954,11 +11962,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_new_zealand_bank_account_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_new_zealand_bank_account_number gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_new_zealand_bank_account_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -12010,11 +12018,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_newzealand_driver_license_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_newzealand_driver_license_number gefunden.
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn:
 - Die Funktion Func_newzealand_driver_license_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -12093,7 +12101,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - driver's lic #
 - Driver's lics #
 - Driver's licence #
-- driver's licences #
+- Driver's licences #
 - international driving permit
 - international driving permits
 - nz automobile association
@@ -12101,7 +12109,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="new-zealand-inland-revenue-number"></a>New Zealand inland revenue number
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -12128,11 +12136,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_new_zealand_inland_revenue_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_new_zealand_inland_revenue_number gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_new_zealand_inland_revenue_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -12160,7 +12168,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Inlandsumsatznummer
 
 
-## <a name="new-zealand-ministry-of-health-number"></a>Gesundheitsministeriumsnummer für Neuseeland
+## <a name="new-zealand-ministry-of-health-number"></a>Gesundheitsministeriumsnummer neuseelands
 
 ### <a name="format"></a>Format
 
@@ -12178,12 +12186,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_new_zealand_ministry_of_health_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_nz_terms wurde gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_new_zealand_ministry_of_health_number findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -12218,7 +12226,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ## <a name="new-zealand-social-welfare-number"></a>Telefonnummer für soziale Netzwerke in Neuseeland
 
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -12234,7 +12242,7 @@ neun Ziffern
 neun Ziffern
 
 - drei Ziffern
-- Ein optionaler Bindestrich
+- Optionaler Bindestrich
 - drei Ziffern
 - Ein optionaler Bindestrich
 - drei Ziffern
@@ -12245,11 +12253,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_newzealand_social_welfare_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_newzealand_social_welfare_number gefunden.
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn:
 - Die Funktion Func_newzealand_social_welfare_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -12272,7 +12280,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 - soziale Netzwerke #
 - soziale Netzwerke #
-- Social social social social no.
+- Soziale Netzwerke Nein.
 - Social social social social number
 - swn #
 
@@ -12296,12 +12304,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_norway_id_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_norway_id_number gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_norway_id_numbe findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -12351,7 +12359,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_philippines_unified_id inhalt, der dem Muster entspricht.
 - Ein Schlüsselwort aus Keyword_philippines_id gefunden.
 
@@ -12396,7 +12404,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_poland_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_poland_eu_driver's_license_number` wurde gefunden. 
     
@@ -12464,7 +12472,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Driver's licences
 - dl #
 - dls #
 - driverlic #
@@ -12498,7 +12506,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences #
 - driver' lic #
 - driver' lics #
-- driver' license #
+- Driver' license #
 - driver' licenses #
 - Driver' licence #
 - driver' licences #
@@ -12550,7 +12558,7 @@ drei Buchstaben und sechs Ziffern
 
 ### <a name="pattern"></a>Muster
 
-Drei Buchstaben (Groß-/Kleinschreibung nicht beachtet), gefolgt von sechs Ziffern
+drei Buchstaben (Groß-/Kleinschreibung nicht beachtet), gefolgt von sechs Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -12558,7 +12566,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_polish_national_id findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_polish_national_id_passport_number wurde gefunden.
 - Die Prüfsumme stimmt.
@@ -12604,12 +12612,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_pesel_identification_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_pesel_identification_number wurde gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_pesel_identification_number findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -12658,7 +12666,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_polish_passport_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_polish_national_id_passport_number wurde gefunden.
 - Die Prüfsumme stimmt.
@@ -12709,11 +12717,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_polish_regon_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_polish_regon_number gefunden.
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_polish_regon_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -12735,7 +12743,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - regon id
 - Statistische Zahl
 - Statistische ID
-- statistische Nein
+- statistisches Nein
 - Regonnummer
 - regonid #
 - regonno #
@@ -12749,7 +12757,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="poland-tax-identification-number"></a>Polnische Steueridentifikationsnummer
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -12770,7 +12778,7 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_poland_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_poland_eu_tax_file_number` gefunden. 
     
@@ -12834,7 +12842,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Regex_portugal_citizen_card findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_portugal_citizen_card gefunden.
 
@@ -12880,7 +12888,7 @@ zwei Muster – zwei Buchstaben gefolgt von 5-8 Ziffern mit Sonderzeichen
 ### <a name="pattern"></a>Muster
 
 Muster 1: Zwei Buchstaben gefolgt von 5/6 mit Sonderzeichen:
-- Zwei Buchstaben (Groß-/Kleinschreibung nicht beachtet)
+- Zwei Buchstaben (groß-/kleinschreibungsempfindlich)
 - Ein Bindestrich 
 - Fünf oder sechs Ziffern
 - Ein Leerzeichen
@@ -12900,7 +12908,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_portugal_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_portugal_eu_driver's_license_number` wurde gefunden. 
     
@@ -12953,7 +12961,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences
 - driver' lic
 - driver' lics
-- driver' license
+- Driver' license
 - driver' licenses
 - Driver' licence
 - driver' licences
@@ -13002,7 +13010,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences #
 - driver' lic #
 - driver' lics #
-- driver' license #
+- Driver' license #
 - driver' licenses #
 - Driver' licence #
 - driver' licences #
@@ -13073,12 +13081,12 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_portugal_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_portugal_eu_passport_number` wurde gefunden. 
 - Der reguläre Ausdruck `Regex_eu_passport_date1` findet das Datum im Format "DD.MM.JJJJ" oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_portugal_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_portugal_eu_passport_number` wurde gefunden.
     
@@ -13160,11 +13168,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_portugal_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_portugal_eu_tax_file_number` gefunden. 
     
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_portugal_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -13226,7 +13234,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_romania_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_romania_eu_driver's_license_number` wurde gefunden. 
     
@@ -13343,7 +13351,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Driver's license #
 - Driver's licenses #
 - Driver's licence #
-- driver's licences #
+- Driver's licences #
 - Führerschein 
 - driving license
 - dlno #
@@ -13377,7 +13385,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - permis conducere
 
 ## <a name="romania-personal-numeric-code-cnp"></a>Rumänien – persönlicher numerischer Code (CNP)
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -13401,11 +13409,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_romania_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_romania_eu_national_id_card` gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_romania_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -13490,12 +13498,12 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_romania_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_romania_eu_passport_number` wurde gefunden. 
 - Der reguläre Ausdruck findet Das Datum im Format `Regex_romania_eu_passport_date` TT MMM/MMM JJ (Beispiel- 01 FEB/FEB 10) oder ein Schlüsselwort `Keywords_eu_passport_date` gefunden wurde
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_romania_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_romania_eu_passport_number` wurde gefunden. 
     
@@ -13549,7 +13557,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 
 ## <a name="russia-passport-number-domestic"></a>Russische Reisepassnummer Inland
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -13576,7 +13584,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Regex_Russian_Passport_Number_Domestic findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Russian_Passport_Number gefunden.
 
@@ -13611,7 +13619,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="russia-passport-number-international"></a>Russische Reisepassnummer international
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -13636,7 +13644,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Regex_Russian_Passport_Number_International findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Russian_Passport_Number gefunden.
 
@@ -13686,7 +13694,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Regex_saudi_arabia_national_id findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_saudi_arabia_national_id wurde gefunden.
 
@@ -13731,12 +13739,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Regex_singapore_nric findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_singapore_nric gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Regex_singapore_nric findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -13785,7 +13793,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_slovakia_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_slovakia_eu_driver's_license_number` wurde gefunden. 
     
@@ -13853,7 +13861,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Driver's licences
 - dl #
 - dls #
 - driverlic #
@@ -13887,7 +13895,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences #
 - driver' lic #
 - driver' lics #
-- driver' license #
+- Driver' license #
 - driver' licenses #
 - Driver' licence #
 - driver' licences #
@@ -13902,7 +13910,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Driver's license #
 - Driver's licenses #
 - Driver's licence #
-- driver's licences #
+- Driver's licences #
 - Führerschein 
 - driving license
 - dlno #
@@ -13958,11 +13966,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_slovakia_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_slovakia_eu_national_id_card` gefunden. 
     
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_slovakia_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -14008,7 +14016,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 - ssn
 - személyi igkrüvány szám
 - személyi igkrüvány száma
-- személyigejvány szám
+- személyigamentovány szám
 - Steuerdatei nein
 - tax file number
 - tax id
@@ -14044,12 +14052,12 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_slovakia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_slovakia_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date1` findet das Datum im Format "DD.MM.JJJJ" oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Das Datum im Format TT.MM.JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_slovakia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_slovakia_eu_passport_number` wurde gefunden. 
     
@@ -14122,7 +14130,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_slovenia_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_slovenia_eu_driver's_license_number` wurde gefunden. 
     
@@ -14175,7 +14183,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences
 - driver' lic
 - driver' lics
-- driver' license
+- Driver' license
 - driver' licenses
 - Driver' licence
 - driver' licences
@@ -14239,7 +14247,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Driver's license #
 - Driver's licenses #
 - Driver's licence #
-- driver's licences #
+- Driver's licences #
 - Führerschein 
 - driving license
 - dlno #
@@ -14298,11 +14306,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_slovenia_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_slovenia_eu_national_id_card` gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_slovenia_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -14368,12 +14376,12 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_slovenia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_slovenia_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date1` findet das Datum im Format "DD.MM.JJJJ" oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Das Datum im Format TT.MM.JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_slovenia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_slovenia_eu_passport_number` wurde gefunden. 
     
@@ -14455,11 +14463,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_slovenia_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_slovenia_eu_tax_file_number` gefunden. 
     
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_slovenia_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -14523,7 +14531,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_south_africa_identification_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_south_africa_identification_number gefunden.
 - Die Prüfsumme stimmt.
@@ -14557,8 +14565,8 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 13 Ziffern:
 - sechs Ziffern im Format "YYMMDD", die das Geburtsdatum sind 
 - Ein Bindestrich 
-- Eine Ziffer, die durch das Hundertjahr und das Geschlecht bestimmt wird 
-- Vierstelliger "Region-of-Birth"-Code 
+- Eine Ziffer, die durch das Geschlecht und das Geschlecht bestimmt wird 
+- Vierstelliger Code für Geburtsregion 
 - Eine Ziffer, die verwendet wird, um Personen zu unterscheiden, für die die vorherigen Nummern identisch sind 
 - eine Prüfziffer.
 
@@ -14568,12 +14576,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_south_korea_resident_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_south_korea_resident_number gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_south_korea_resident_number findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -14604,7 +14612,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="format"></a>Format
 
-acht Ziffern gefolgt von einem Zeichen
+Acht Ziffern gefolgt von einem Zeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -14619,11 +14627,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_spain_eu_DL_and_NI_number_citizen` oder `Func_spain_eu_DL_and_NI_number_foreigner` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_spain_eu_driver's_license_number` wurde gefunden. 
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_spain_eu_DL_and_NI_number_citizen` oder `Func_spain_eu_DL_and_NI_number_foreigner` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -14703,7 +14711,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Driver's licences
 - dl #
 - dls #
 - driverlic #
@@ -14737,7 +14745,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences #
 - driver' lic #
 - driver' lics #
-- driver' license #
+- Driver' license #
 - driver' licenses #
 - Driver' licence #
 - driver' licences #
@@ -14752,7 +14760,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Driver's license #
 - Driver's licenses #
 - Driver's licence #
-- driver's licences #
+- Driver's licences #
 - Führerschein 
 - driving license
 - dlno #
@@ -14792,7 +14800,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - licencia manejo
 
 ## <a name="spain-dni"></a>Spanien DNI
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -14801,7 +14809,7 @@ Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
 
 ### <a name="format"></a>Format
 
-acht Ziffern gefolgt von einem Zeichen
+Acht Ziffern gefolgt von einem Zeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -14817,11 +14825,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_spain_eu_DL_and_NI_number_citizen` oder `Func_spain_eu_DL_and_NI_number_foreigner` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_spain_eu_national_id_card"` gefunden. 
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_spain_eu_DL_and_NI_number_citizen` oder `Func_spain_eu_DL_and_NI_number_foreigner` findet Inhalte, die dem Muster entsprechen. 
 
     
@@ -14891,12 +14899,12 @@ Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_spain_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_spain_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_spain_eu_passport_date` findet Das Datum im Format TT-MM-JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Der reguläre Ausdruck `Regex_spain_eu_passport_date` findet Datum im Format TT-MM-JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_spain_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_spain_eu_passport_number` wurde gefunden.
     
@@ -14981,7 +14989,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_spanish_social_security_number findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -15047,11 +15055,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_spain_eu_tax_file_number` oder `Func_spain_eu_DL_and_NI_number_citizen` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_spain_eu_tax_file_number` gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_spain_eu_tax_file_number` oder `Func_spain_eu_DL_and_NI_number_citizen` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -15130,7 +15138,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck CEP_Regex_SQLServerConnectionString findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus CEP_GlobalFilter **wurde nicht** gefunden.
 - Der reguläre Ausdruck CEP_PasswordPlaceHolder **findet keine** Inhalte, die dem Muster entsprechen.
@@ -15167,7 +15175,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - Kennwort oder Pwd gefolgt von:
     - Gleichheitszeichen (=)
     - Kleiner als Symbol (<)
-    - Eine beliebige Kombination aus 1-200 Zeichen, die Groß- oder Kleinbuchstaben, Ziffern, ein Sternchen (*), einen Bindestrich (-), eine Unterstreichung (_) oder ein Leerzeichen sind.
+    - Eine beliebige Kombination aus 1 bis 200 Zeichen, die Groß- oder Kleinbuchstaben, Ziffern, Ein Sternchen (*), Bindestrich (-), Unterstreichung (_) oder Leerzeichen sind
     - Größer als Symbol (>)
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
@@ -15184,7 +15192,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="sweden-drivers-license-number"></a>Schweden - Führerscheinnummer
+## <a name="sweden-drivers-license-number"></a>Führerscheinnummer Für Schweden
 
 ### <a name="format"></a>Format
 
@@ -15204,7 +15212,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck  `Regex_sweden_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
 - Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_sweden_eu_driver's_license_number` wurde gefunden. 
     
@@ -15257,7 +15265,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver'licences
 - driver' lic
 - driver' lics
-- driver' license
+- Driver' license
 - driver' licenses
 - Driver' licence
 - driver' licences
@@ -15272,7 +15280,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Driver's licences
 - dl #
 - dls #
 - driverlic #
@@ -15379,12 +15387,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion `Func_swedish_national_identifier` findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort wurde `Keywords_swedish_national_identifier` gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion `Func_swedish_national_identifier` findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -15440,7 +15448,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_sweden_passport_number inhalt, der dem Muster entspricht.
 - Eine der folgenden Bedingungen ist wahr:
     - Ein Schlüsselwort aus Keyword_passport gefunden.
@@ -15485,7 +15493,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - パスポート 
 - パスポート番号 
 - ポ . 
-- パスポート# 
+- パスポート＃ 
 - Numéro de passeport 
 - Passeport n ° 
 - Passeport Non 
@@ -15496,7 +15504,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 
 ## <a name="sweden-tax-identification-number"></a>Steueridentifikationsnummer für Schweden
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -15505,7 +15513,7 @@ Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
 
 ### <a name="format"></a>Format
 
-zehn Ziffern und ein Symbol im angegebenen Muster
+Zehn Ziffern und ein Symbol im angegebenen Muster
   
 ### <a name="pattern"></a>Muster
 
@@ -15524,11 +15532,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_sweden_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_sweden_eu_tax_file_number` gefunden. 
     
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion  `Func_sweden_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -15598,7 +15606,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_swift findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_swift wurde gefunden.
 
@@ -15651,7 +15659,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - 銀行コード
 
 ## <a name="switzerland-ssn-ahv-number"></a>Schweiz SSN AHV-Nummer
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -15680,11 +15688,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_swiss_social_security_number_ahv findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_swiss_social_security_number_ahv gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_swiss_social_security_number_ahv findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -15714,7 +15722,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Persönliche Identifikation nein.
 - insuranceno #
 - uniqueidno #
-- eindeutiger Identifikationsnr.
+- eindeutige Identifikation nein.
 - avs number
 - Persönliche Identität no versicherungsnummer
 - identifikationsnummer
@@ -15743,12 +15751,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_taiwanese_national_id findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_taiwanese_national_id wurde gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_taiwanese_national_id findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -15784,7 +15792,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - 簽名或蓋章 
 - 簽章   
    
-## <a name="taiwan-passport-number"></a>Taiwan Reisepassnummer
+## <a name="taiwan-passport-number"></a>Taiwan Passport Number
 
 ### <a name="format"></a>Format
 
@@ -15805,7 +15813,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_taiwan_passport inhalt, der dem Muster entspricht.
 - Ein Schlüsselwort aus Keyword_taiwan_passport gefunden.
 
@@ -15850,7 +15858,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_taiwan_resident_certificate inhalt, der dem Muster entspricht.
 - Ein Schlüsselwort aus Keyword_taiwan_resident_certificate gefunden.
 
@@ -15898,11 +15906,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_Thai_Citizen_Id findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Thai_Citizen_Id gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_Thai_Citizen_Id findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -15945,11 +15953,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_Turkish_National_Id findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Turkish_National_Id gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_Turkish_National_Id findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -15986,7 +15994,7 @@ Kombination aus 18 Buchstaben und Ziffern im angegebenen Format
 18 Buchstaben und Ziffern:
 - fünf Buchstaben (Groß-/Kleinschreibung nicht beachtet) oder die Ziffer "9" statt eines Buchstabens 
 - Eine Ziffer 
-- fünf Ziffern im Datumsformat MMDDY für das Geburtsdatum (das siebte Zeichen wird um 50 erhöht, wenn der Treiber frau ist, d. h. 51 bis 62 anstelle von 01 bis 12)
+- fünf Ziffern im Datumsformat MMDDY für das Geburtsdatum (7. Zeichen wird um 50 erhöht, wenn der Treiber frau ist, d. h. 51 bis 62 anstelle von 01 bis 12)
 - zwei Buchstaben (Groß-/Kleinschreibung nicht beachtet) oder die Ziffer "9" statt eines Buchstabens 
 - fünf Ziffern
 
@@ -15996,7 +16004,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_uk_drivers_license findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_uk_drivers_license wurde gefunden.
 - Die Prüfsumme stimmt.
@@ -16017,7 +16025,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 - DVLA 
 - light vans 
-- quadrills 
+- quad aus 
 - motor cars 
 - 125cc 
 - sidecar 
@@ -16047,7 +16055,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_uk_electoral findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_uk_electoral wurde gefunden.
 
@@ -16083,9 +16091,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 10 bis 17 Stellen:
 - Drei oder zehn Ziffern 
-- ein Leerzeichen 
+- Ein Leerzeichen 
 - drei Ziffern 
-- ein Leerzeichen 
+- Ein Leerzeichen 
 - vier Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -16094,7 +16102,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_uk_nhs_number findet Inhalte, die dem Muster entsprechen.
 - Eine der folgenden Bedingungen trifft zu:
     - Ein Schlüsselwort aus Keyword_uk_nhs_number wurde gefunden.
@@ -16151,7 +16159,7 @@ sieben Zeichen oder neun Zeichen durch Leerzeichen oder Bindestriche getrennt
 
 zwei mögliche Muster:
 
-- zwei Buchstaben (gültige NINOs verwenden nur bestimmte Zeichen in diesem Präfix, die von diesem Muster überprüft werden; groß-/kleinschreibung wird nicht beachtet)
+- zwei Buchstaben (gültige NINOs verwenden nur bestimmte Zeichen in diesem Präfix, die dieses Muster überprüft; groß-/klein geschrieben)
 - sechs Ziffern
 - Entweder 'A', 'B', 'C' oder 'D' (wie das Präfix sind nur bestimmte Zeichen im Suffix zulässig; die Kleinschreibung wird nicht beachtet)
 
@@ -16173,11 +16181,11 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_uk_nino findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_uk_nino wurde gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_uk_nino findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -16219,7 +16227,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
     
 ## <a name="uk-unique-taxpayer-reference-number"></a>Vereinigtes Königreich Eindeutige Steuernummer
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -16241,7 +16249,7 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_uk_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
 - Es wurde ein Schlüsselwort  `Keywords_uk_eu_tax_file_number` gefunden. 
     
@@ -16293,7 +16301,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_usa_bank_account_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_usa_Bank_Account wurde gefunden.
 
@@ -16347,7 +16355,7 @@ Abhängig vom Bundesstaat
 
 ### <a name="pattern"></a>Muster
 
-hängt vom Zustand ab – z. B. New York:
+hängt vom Status ab – z. B. New York:
 - Neun Ziffern, die wie ddd ddd ddd formatiert sind, entsprechen.
 - Neun Ziffern wie "ddddddd" entsprechen nicht.
 
@@ -16357,12 +16365,12 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_new_york_drivers_license_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_[state_name]_drivers_license_name wurde gefunden.
 - Ein Schlüsselwort aus Keyword_us_drivers_license gefunden.
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_new_york_drivers_license_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_[state_name]_drivers_license_name wurde gefunden.
 - Ein Schlüsselwort aus Keyword_us_drivers_license_abbreviations wurde gefunden.
@@ -16500,10 +16508,10 @@ neun Ziffern, die mit "9" beginnen und eine "7" oder "8" als vierte Ziffer entha
 ### <a name="pattern"></a>Muster
 
 formatiert:
-- die Ziffer "9" 
+- Die Ziffer "9" 
 - zwei Ziffern 
 - Ein Leerzeichen oder Gedankenstrich 
-- eine "7" oder "8" 
+- "7" oder "8" 
 - eine Ziffer 
 - ein Leerzeichen oder Bindestrich 
 - vier Ziffern
@@ -16520,15 +16528,15 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_formatted_itin findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_itin wurde gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_unformatted_itin findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_itin wurde gefunden.
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_formatted_itin oder Func_unformatted_itin findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -16593,15 +16601,15 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist besonders sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_ssn findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_ssn wurde gefunden.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_unformatted_ssn findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_ssn wurde gefunden.
 
-Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_randomized_formatted_ssn findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_ssn wurde gefunden.
 
@@ -16666,7 +16674,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Die Funktion Func_usa_uk_passport findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_passport wurde gefunden.
 
@@ -16693,7 +16701,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - パスポート 
 - パスポート番号 
 - ポ . 
-- パスポート# 
+- パスポート＃ 
 - Numéro de passeport 
 - Passeport n ° 
 - Passeport Non 
@@ -16703,7 +16711,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Passeportn ° 
 
 ## <a name="ukraine-passport-domestic"></a>Ukraine passport domestic
-Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
+Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
 - Informationssteuerung
@@ -16724,7 +16732,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Regex_Ukraine_Passport_Domestic findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Ukraine_Passport_Domestic gefunden.
 
@@ -16760,7 +16768,7 @@ Dieser Typ vertraulicher Informationen ist nur für die Verwendung in:
 
 ### <a name="format"></a>Format
 
-Alphanumerisches Muster mit acht Zeichen
+alphanumerisches Muster mit acht Zeichen
 
 ### <a name="pattern"></a>Muster
 
@@ -16774,7 +16782,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Regex_Ukraine_Passport_International findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Ukraine_Passport_International gefunden.
 

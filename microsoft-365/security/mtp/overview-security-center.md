@@ -18,12 +18,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 831b205d0839f6347ac887db0d3c3f0b1d9a4f3d
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: b47ec915bc9f5f51df8ed425e7bfd76966bb989e
+ms.sourcegitcommit: 8b3ff6e9f8931327b6f0541fd882107687cd123e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932826"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49942778"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 Security Center – Übersicht
 
@@ -31,9 +31,9 @@ ms.locfileid: "49932826"
 
 > Möchten Sie Microsoft 365 Defender erleben? Sie können [es in einer Laborumgebung auswerten oder](https://aka.ms/mtp-trial-lab) ihr Pilotprojekt in der Produktion [ausführen.](https://aka.ms/m365d-pilotplaybook)
 >
-Die Verwaltung der Sicherheit Ihres Unternehmens zum Schutz vor einer sich ständig weiterentwickelnden Bedrohungslandschaft bringt viele Herausforderungen mit sich. Möglicherweise verfügen Sie über zu viele Sicherheitslösungen mit verschiedenen Stellen, um viele Steuerelemente zu konfigurieren. Möglicherweise haben Sie Schwierigkeiten damit, zu wissen, welche Steuerelemente die effektivsten sind und welche neue Herausforderungen für Ihre Mitarbeiter mit sich bringen. Es kann für Sicherheitsteams schwierig sein, das richtige Gleichgewicht zwischen Sicherheit und Produktivität zu finden.
+Die Verwaltung der Sicherheit Ihres Unternehmens zum Schutz vor einer sich ständig weiterentwickelnden Bedrohungslandschaft bringt viele Herausforderungen mit sich. Möglicherweise verfügen Sie über zu viele Sicherheitslösungen mit verschiedenen Orten, um viele Steuerelemente zu konfigurieren. Möglicherweise haben Sie Schwierigkeiten damit, zu wissen, welche Steuerelemente die effektivsten sind und was neue Herausforderungen für Ihre Mitarbeiter mit sich bringt. Es kann für Sicherheitsteams schwierig sein, das richtige Gleichgewicht zwischen Sicherheit und Produktivität zu finden.
 
-Enter Microsoft 365 security center – the new home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. Hier können Sie ganz einfach den Sicherheitszustand Ihrer Organisation anzeigen, Geräte, Benutzer und Apps konfigurieren und Warnungen zu verdächtigen Aktivitäten erhalten. Das Microsoft 365 Security Center soll Sicherheitsadministratoren und Sicherheitsteams dabei helfen, ihre Organisation zu verwalten und zu schützen.
+Geben Sie das Microsoft 365 Security Center ein– die neue Startseite für die Überwachung und Verwaltung der Sicherheit in Ihren Microsoft-Identitäten, -Daten, -Geräten, -Apps und -Infrastruktur. Hier können Sie ganz einfach den Sicherheitszustand Ihrer Organisation anzeigen, Geräte, Benutzer und Apps konfigurieren und Warnungen zu verdächtigen Aktivitäten erhalten. Das Microsoft 365 Security Center soll Sicherheitsadministratoren und Sicherheitsteams dabei helfen, ihre Organisation zu verwalten und zu schützen.
 
 Das neue Microsoft 365 Security Center und [das Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) sind spezielle Arbeitsbereiche, die den Anforderungen von Sicherheits- und Complianceteams entsprechen. Diese Lösungen sind in microsoft 365-Dienste integriert und bieten umsetzbare Einblicke, um Risiken zu verringern und Ihr digitales Angebot zu schützen.
 
@@ -44,18 +44,26 @@ Besuchen Sie das Microsoft 365 Security Center unter [https://security.microsoft
 > [!NOTE]
 > Ihnen muss eine entsprechende Rolle zugewiesen sein, z. B. globaler Administrator, Sicherheitsadministrator, Sicherheitsoperator oder Sicherheitsleseprogramm in Azure Active Directory, um auf das Microsoft 365 Security Center zugreifen zu können.
 
-
-## <a name="lets-take-a-closer-look"></a>Werfen wir einen genaueren Blick darauf.
+## <a name="at-a-glance-view-of-your-microsoft-365-environment"></a>Übersicht über Ihre Microsoft 365-Umgebung
 
 Auf **der Startseite** werden viele der gängigen Karten angezeigt, die Sicherheitsteams benötigen. Die Zusammensetzung von Karten und Daten hängt von der Benutzerrolle ab. Da das Microsoft 365 Security Center die rollenbasierte Zugriffssteuerung verwendet, sehen verschiedene Rollen Karten, die für ihre täglichen Aufträge aussagekräftiger sind.  
 
-Diese Informationen auf einen Blick helfen Ihnen, mit den neuesten Aktivitäten in Ihrer Organisation auf dem Neuesten zu bleiben. Das Microsoft 365 Security Center vereint Signale aus verschiedenen Quellen, um eine ganzheitliche Ansicht Ihrer Microsoft 365-Umgebung zu bieten.
+Diese Informationen auf einen Blick helfen Ihnen, mit den neuesten Aktivitäten in Ihrer Organisation auf dem Neuesten zu bleiben. Das Microsoft 365 Security Center vereint Signale aus verschiedenen Quellen, um eine ganzheitliche Ansicht Ihrer Microsoft 365-Umgebung zu präsentieren.
+
+Lose fallen die Karten in die folgenden Kategorien:
+
+- **Identitäten**– Überwachen Sie die Identitäten in Ihrer Organisation, und verfolgen Sie verdächtige oder riskante Verhaltensweisen. [Weitere Informationen zum Identitätsschutz](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+- **Daten** – Helfen Beim Nachverfolgen von Benutzeraktivitäten, die zu einer nicht autorisierten Offenlegung von Daten führen können.
+- **Geräte** – Erhalten Sie aktuelle Informationen zu Warnungen, Sicherheitsverletzungen und anderen Bedrohungen auf Ihren Geräten.
+- **Apps** – Erhalten Sie Einen Einblick in die Verwendung von Cloud-Apps in Ihrer Organisation. [Erfahren Sie mehr über von Cloud App Security ermittelte Apps](https://docs.microsoft.com/cloud-app-security/discovered-apps)
+
+## <a name="explore-what-the-security-center-has-to-offer"></a>Entdecken Sie, was das Security Center zu bieten hat
 
 Das Microsoft 365 Security Center umfasst Folgendes:
 
 * **Startseite** – Erhalten Sie einen Überblick über den allgemeinen Sicherheitszustand Ihrer Organisation.
 * **Vorfälle –** Sehen Sie sich die umfassendere Geschichte eines Angriffs an, indem Sie die Punkte verbinden, die bei einzelnen Warnungen auf Entitäten angezeigt werden. Sie wissen genau, wo ein Angriff begonnen hat, welche Geräte betroffen sind, wer betroffen war und wo die Bedrohung liegt.
-* **Warnungen** – Erhalten Sie einen besseren Einblick in alle Warnungen in Ihrer Microsoft 365-Umgebung. Enthält Warnungen von Microsoft Cloud App Security, Microsoft Defender für Office 365, Azure Active Directory, Microsoft Defender for Identity und Microsoft Defender für Endpoint. Verfügbar für E3- und E5-Kunden.  
+* **Warnungen** – Erhalten Sie einen besseren Einblick in alle Warnungen in Ihrer Microsoft 365-Umgebung. Enthält Warnungen von Microsoft Cloud App Security, Microsoft Defender für Office 365, Azure Active Directory, Microsoft Defender for Identity und Microsoft Defender für Endpunkt. Verfügbar für E3- und E5-Kunden.  
 * **Action Center** – Reduzieren Sie das Volumen der Warnungen, die Ihr Sicherheitsteam manuell adressieren muss, sodass sich Ihr Sicherheitsteam auf komplexere Bedrohungen und andere hochwertige Initiativen konzentrieren kann.
 * **Berichte** – Erhalten Sie die Details und Informationen, die Sie benötigen, um Ihre Benutzer, Geräte, Apps und vieles mehr besser zu schützen.
 * **Sicherheitsbewertung** – Verbessern Sie Ihren allgemeinen Sicherheitsstatus mit der Microsoft-Sicherheitsbewertung. Diese Seite enthält eine Übersicht über die verschiedenen Sicherheitsfeatures und -funktionen, die Sie aktiviert haben, sowie Empfehlungen für Verbesserungsbereiche.
@@ -70,7 +78,7 @@ In diesen Themen erfahren Sie mehr über die Überwachung, Überprüfung und Rea
 
 - Verbinden der Punkte bei Warnungen über [Vorfälle](incident-queue.md)
 - Automatische Behebung von Bedrohungen mithilfe [der automatisierten Untersuchung und Behebung](mtp-autoir.md)
-- Überprüfen und Verbessern Ihres Sicherheitsstands ganzheitlich mit [der Microsoft Secure Score](microsoft-secure-score.md)
+- Überprüfen und verbessern Sie Ihren Sicherheitsstand ganzheitlich mit [der Microsoft Secure Score.](microsoft-secure-score.md)
 - Anzeigen [von Geräten](device-profile.md) in Ihrem Netzwerk
 - [Melden](monitoring-and-reporting.md) des Status Ihrer Identitäten, Daten, Geräte, Apps und Infrastruktur
 - [Proaktive Suche nach Bedrohungen für](advanced-hunting-overview.md) Angriffsversuche und Angriffsaktivitäten, die Ihre E-Mails, Daten, Geräte und Konten betreffen

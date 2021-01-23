@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: a0f4307cc0ed42a8ed53cdeefdb0a7b32eb36d35
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 39abcbde82c2902b091b42db3dbc8e1ee2cbd924
+ms.sourcegitcommit: 8b3ff6e9f8931327b6f0541fd882107687cd123e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930582"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49942790"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -71,7 +71,7 @@ Ihre Bewertung wird in Echtzeit aktualisiert, um die Informationen auf den Seite
 
 Jede Verbesserungsaktion hat einen Wert von 10 Punkten oder weniger, und die meisten werden binär wertungiert. Wenn Sie die Verbesserungsaktion implementieren, z. B. eine neue Richtlinie erstellen oder eine bestimmte Einstellung aktivieren, erhalten Sie 100 % der Punkte. Bei anderen Verbesserungsmaßnahmen werden Punkte als Prozentsatz der Gesamtkonfiguration gegeben.
 
-Eine Verbesserungsaktion gibt beispielsweise an, dass Sie 10 Punkte erhalten, indem Sie alle Benutzer mit mehrstufiger Authentifizierung schützen. Sie haben nur 50 von 100 Benutzern insgesamt geschützt, sodass Sie eine Teilpunktzahl von 5 Punkt erhalten würden (50 geschützt /100 insgesamt * 10 max pts = 5 Pts).
+Eine Verbesserungsaktion gibt beispielsweise an, dass Sie 10 Punkte erhalten, indem Sie alle Benutzer mit mehrstufiger Authentifizierung schützen. Sie haben nur 50 von 100 Benutzern insgesamt geschützt, sodass Sie eine Teilpunktzahl von 5 Punkt erhalten würden (50 geschützte /100 insgesamt * 10 max Pts = 5 Pts).
 
 ### <a name="products-included-in-secure-score"></a>Produkte in Sicherheitsbewertung
 
@@ -82,6 +82,7 @@ Derzeit gibt es Empfehlungen für die folgenden Produkte:
 - Microsoft Defender für Endpunkt
 - Microsoft Defender for Identity
 - Cloud-App-Sicherheit
+- Microsoft Teams
 
 Empfehlungen für andere Sicherheitsprodukte werden in Kürze verfügbar sein. Die Empfehlungen decken nicht alle Angriffsflächen ab, die jedem Produkt zugeordnet sind, aber sie sind ein guter Basisplan. Sie können die Verbesserungsmaßnahmen auch als „über Drittanbieter abgedeckt“ oder „ durch alternative Korrektur abgedeckt“ markieren.
 
@@ -96,7 +97,7 @@ Wenn Sie Sicherheitseinstellungen aktivieren, erhalten Sie vollständige Punkte 
 - Aktivieren der Richtlinie zum Blockieren der Legacyauthentifizierung (7 Punkte)
 
 >[!IMPORTANT]
->Sicherheitseinstellungen umfassen Sicherheitsfeatures, die ähnliche Sicherheit wie die "Anmelderisikorichtlinie" und Verbesserungsmaßnahmen der "Benutzerrisikorichtlinie" bieten. Anstatt diese Richtlinien auf den Sicherheitseinstellungen zu setzen, wird empfohlen, ihre Status auf "Gelöst durch alternative Gegenmaßnahmen" zu aktualisieren.
+>Sicherheitseinstellungen umfassen Sicherheitsfeatures, die ähnliche Sicherheit wie die "Anmelderisikorichtlinie" und Verbesserungsmaßnahmen der "Benutzerrisikorichtlinie" bieten. Anstatt diese Richtlinien über die Sicherheitseinstellungen hinaus zu erstellen, wird empfohlen, ihre Status auf "Gelöst durch alternative Gegenmaßnahmen" zu aktualisieren.
 
 ## <a name="required-permissions"></a>Erforderliche Berechtigungen
 

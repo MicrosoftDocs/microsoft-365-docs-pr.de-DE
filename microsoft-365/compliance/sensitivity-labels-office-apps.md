@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Benutzer mit Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobile und das Web arbeiten und welche Apps Vertraulichkeitsbezeichnungen unterstützen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 17ded34d5e386c4de3c2241d0465b63381a11906
-ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
+ms.openlocfilehash: d84735cc51b26df6b4c28ffc3bf8fb99f896f1ae
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905274"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925695"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-Wenn Sie [](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) Vertraulichkeitsbezeichnungen aus dem Microsoft 365 Compliance Center oder einem gleichwertigen Bezeichnungscenter veröffentlicht haben, werden sie in den Office-Apps angezeigt, damit Benutzer Daten klassifizieren und schützen können, während sie erstellt oder bearbeitet werden.
+Wenn Sie [](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) Vertraulichkeitsbezeichnungen aus dem Microsoft 365 Compliance Center oder einem gleichwertigen Bezeichnungscenter veröffentlicht haben, werden sie in den Office-Apps für Benutzer angezeigt, um Daten zu klassifizieren und zu schützen, während sie erstellt oder bearbeitet werden.
 
 Verwenden Sie die Informationen in diesem Artikel, um Sie bei der erfolgreichen Verwaltung von Vertraulichkeitsbezeichnungen in Office-Apps zu unterstützen. Identifizieren Sie beispielsweise die Mindestversionen von Apps, die Sie für die Unterstützung der integrierten Bezeichnung benötigen, und verstehen Sie die Interaktionen mit dem Azure Information Protection-Client für einheitliche Bezeichnungen und die Kompatibilität mit anderen Apps und Diensten.
 
@@ -41,7 +41,7 @@ Um Vertraulichkeitsbezeichnungen mit diesen eigenständigen Editionen von Office
 
 Für jede Funktion sind in den folgenden Tabellen die Mindestversion von Office aufgeführt, die Sie benötigen, um Vertraulichkeitsbezeichnungen mithilfe integrierter Bezeichnungen zu unterstützen. Oder wenn sich die Bezeichnungsfunktion in der öffentlichen Vorschau befindet oder für eine zukünftige Version überprüft wird. Verwenden Sie [die Microsoft 365-Roadmap](https://aka.ms/MIPC/Roadmap) für Details zu zukünftigen Versionen.
 
-Neue Versionen von Office-Apps werden zu unterschiedlichen Zeiten für verschiedene Updatekanäle zur Verfügung stellen. Weitere Informationen, einschließlich der Konfiguration Ihres Updatekanals, damit Sie eine neue Bezeichnungsfunktion testen können, die Sie interessieren, finden Sie unter Übersicht über Updatekanäle für [Microsoft 365-Apps.](https://docs.microsoft.com/DeployOffice/overview-update-channels) Neue Funktionen, die sich in der privaten Vorschau befinden, sind nicht in der Tabelle enthalten, aber Sie können diesen Vorschauen beitreten, indem Sie Ihre Organisation für das private Vorschauprogramm von [Microsoft Information Protection nominieren.](https://aka.ms/mip-preview)
+Neue Versionen von Office-Apps werden zu unterschiedlichen Zeiten für verschiedene Updatekanäle zur Verfügung stellen. Weitere Informationen, einschließlich der Konfiguration Ihres Updatekanals, damit Sie eine neue Bezeichnungsfunktion testen können, die Sie interessieren, finden Sie unter Übersicht über Updatekanäle für [Microsoft 365-Apps.](https://docs.microsoft.com/DeployOffice/overview-update-channels) Neue Funktionen, die sich in der privaten Vorschau befinden, sind nicht in der Tabelle enthalten, aber Sie können möglicherweise an diesen Vorschauen teilnehmen, indem Sie Ihre Organisation für das private Vorschauprogramm von [Microsoft Information Protection nominieren.](https://aka.ms/mip-preview)
 
 > [!NOTE]
 > Die Namen der Updatekanäle für Office-Apps wurden kürzlich geändert. Beispielsweise ist monatlicher Kanal jetzt aktueller Kanal, und Office Insider ist jetzt Beta-Kanal. Weitere Informationen finden Sie unter ["Änderungen am Aktualisieren von Kanälen für Microsoft 365-Apps".](https://docs.microsoft.com/deployoffice/update-channels-changes)
@@ -61,13 +61,13 @@ Die aufgeführten Zahlen sind die mindestversion der Office-Anwendung, die für 
 |[Erfordern einer Begründung zum Ändern einer Bezeichnung](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Bereitstellen eines Hilfelinks zu einer benutzerdefinierten Hilfeseite](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Inhalt markieren](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables)                                              | 2010+           | 16,42+     | 2,42+ | 16.0.13328+ | Überprüft |
+|[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables)                                              | 2010+           | 16,42+     | 2,42+ | 16.0.13328+ | Derzeit überprüft |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16,35+   | Derzeit überprüft   | Derzeit überprüft         | Derzeit überprüft                                                        |
-|[Anzeigen der Bezeichnungsverwendung mit Der Analyse](label-analytics.md) von Bezeichnungen und Senden von Daten für Administratoren                      | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider)            | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider)        | Überprüft   | Überprüft         | Ja <sup>\*</sup>                                                        |
-|[Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](sensitivity-labels.md#what-label-policies-can-do)   | Vorschau: Roll out to [Current Channel (Vorschau)](https://office.com/insider)             | Vorschau: Roll out to [Current Channel (Vorschau)](https://office.com/insider)         | Überprüft   | Vorschau: [Betakanal](https://office.com/insider)         | Überprüft                                            
-|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Roll out: 16.44+ | Überprüft | Überprüft | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|Unterstützung [der automatischen](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) Dokumentverfassung und [gemeinsamen](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) Dokumentautorisierung für mit Bezeichnungen versehene und verschlüsselte Dokumente | Überprüft | Überprüft | Überprüft | Überprüft | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16,35+   | Derzeit überprüft   | Derzeit überprüft         | Überprüft                                                        |
+|[Anzeigen der Bezeichnungsverwendung mit Bezeichnungsanalysen](label-analytics.md) und Senden von Daten für Administratoren                      | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider)            | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider)        | Überprüft   | Derzeit überprüft         | Ja <sup>\*</sup>                                                        |
+|[Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](sensitivity-labels.md#what-label-policies-can-do)   | Vorschau: Roll out to [Current Channel (Vorschau)](https://office.com/insider)             | Vorschau: Roll out to [Current Channel (Vorschau)](https://office.com/insider)         | Derzeit überprüft   | Vorschau: [Betakanal](https://office.com/insider)         | Derzeit überprüft                                            
+|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Roll out: 16.44+ | Derzeit überprüft | Derzeit überprüft | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|Unterstützung [der automatischen](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) Dokumentverfassung und [gemeinsamen](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) Dokumentautorisierung für mit Bezeichnungen versehene und verschlüsselte Dokumente | Überprüft | Überprüft | Überprüft | Derzeit überprüft | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 **Fußnote:**
@@ -85,12 +85,12 @@ Die aufgeführten Zahlen sind die mindestversion der Office-Anwendung, die für 
 |[Erfordern einer Begründung zum Ändern einer Bezeichnung](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Bereitstellen eines Hilfelinks zu einer benutzerdefinierten Hilfeseite](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Inhalt markieren](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
-|[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables)                                              | Überprüft                     | Überprüft                 | Überprüft         | Überprüft           | Überprüft               |
+|[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables)                                              | Derzeit überprüft                     | Derzeit überprüft                 | Derzeit überprüft         | Derzeit überprüft           | Derzeit überprüft               |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
-|[Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider))                        | 16,43+                     | 4.57.0+            | 4.2037.4+                | Ja                |
-|[Anzeigen der Bezeichnungsverwendung mit Der Analyse](label-analytics.md) von Bezeichnungen und Senden von Daten für Administratoren                      | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider)                       | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider)                    | Überprüft           | Überprüft               | Ja               |
-|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16,44+                    | Überprüft           | Überprüft               | Ja |
+|[Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider))                        | 16,43+                     | Überprüft            | Derzeit überprüft                | Ja                |
+|[Anzeigen der Bezeichnungsverwendung mit Bezeichnungsanalysen](label-analytics.md) und Senden von Daten für Administratoren                      | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider)                       | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider)                    | Derzeit überprüft           | Derzeit überprüft               | Ja               |
+|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16,44+                    | Derzeit überprüft           | Derzeit überprüft               | Ja |
 |
 
 
@@ -102,15 +102,15 @@ Der integrierte Office-Bezeichnungsclient lädt Vertraulichkeitsbezeichnungen un
 - Microsoft 365 Security Center
 - Office 365 Security & Compliance Center
 
-Um den integrierten Office-Bezeichnungsclient zu verwenden, [](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) müssen Sie eine oder mehrere Bezeichnungsrichtlinien für Benutzer aus einem der aufgeführten Admin Center und eine unterstützte Version von [Office veröffentlichen.](#support-for-sensitivity-label-capabilities-in-apps)
+Um den integrierten Office-Bezeichnungsclient zu verwenden, [](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) müssen Sie eine oder mehrere Bezeichnungsrichtlinien für Benutzer aus einem der aufgelisteten Admin Center und eine unterstützte Version von [Office veröffentlichen.](#support-for-sensitivity-label-capabilities-in-apps)
 
 Wenn beide Bedingungen erfüllt sind, Sie jedoch den integrierten Office-Bezeichnungsclient deaktivieren müssen, verwenden Sie die folgende Gruppenrichtlinieneinstellung:
 
 1. Navigieren Sie **zu Benutzerkonfiguration/Administrative Vorlagen/Microsoft Office 2016/Sicherheitseinstellungen.**
 
-2. Legen **Sie die Vertraulichkeitsfunktion in Office** zum Anwenden und Anzeigen von Vertraulichkeitsbezeichnungen auf **0 .** 
+2. Legen **Sie die Vertraulichkeitsfunktion in Office zum Anwenden und Anzeigen von Vertraulichkeitsbezeichnungen** auf **0 .** 
  
-Stellen Sie diese Einstellung mithilfe von Gruppenrichtlinien oder mithilfe des [Office-Cloudrichtliniendiensts zur Verfügung.](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service) Die Einstellung wird wirksam, wenn die Office-Apps neu gestartet werden.
+Stellen Sie diese Einstellung mithilfe von Gruppenrichtlinien oder mithilfe des [Office-Cloudrichtliniendiensts zur Verfügung.](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service) Die Einstellung wird beim Neustart von Office-Apps wirksam.
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Integrierter Office-Bezeichnungsclient und der Azure Information Protection-Client
 
@@ -149,7 +149,7 @@ Wenn Benutzer ein Dokument oder eine E-Mail anfänglich mit Bezeichnungen verseh
 
 - Ein Benutzer wendet die Bezeichnung **"Vertraulich \** Alle Mitarbeiter" auf ein Dokument an, und diese Bezeichnung ist so konfiguriert, dass Verschlüsselungseinstellungen für alle Benutzer in der Organisation angewendet werden. Dieser Benutzer konfiguriert dann manuell die IRM-Einstellungen, um den Zugriff auf einen Benutzer außerhalb Ihrer Organisation einzuschränken. Das Endergebnis ist ein Dokument mit der Bezeichnung "Vertraulich **\** Alle Mitarbeiter und verschlüsselt", aber Benutzer in Ihrer Organisation können es nicht wie erwartet öffnen.
 
-- Ein Benutzer wendet die Bezeichnung **"Vertraulich \** Empfänger nur" auf eine E-Mail an, und diese E-Mail ist so konfiguriert, dass die Verschlüsselungseinstellung **"Nicht weiterleiten" angewendet wird.** Dieser Benutzer konfiguriert dann manuell die IRM-Einstellungen, sodass die E-Mail uneingeschränkt ist. Das Endergebnis ist, dass die E-Mail von Empfängern weitergeleitet werden kann, obwohl sie die Bezeichnung "Vertraulich **\ Empfänger nur"** hat.
+- Ein Benutzer wendet die Bezeichnung **"Vertraulich \** Empfänger nur" auf eine E-Mail an, und diese E-Mail ist so konfiguriert, dass die Verschlüsselungseinstellung **"Nicht weiterleiten" angewendet wird.** Dieser Benutzer konfiguriert dann manuell die IRM-Einstellungen, sodass die E-Mail uneingeschränkt ist. Das Endergebnis ist, dass die E-Mail von Empfängern weitergeleitet werden kann, obwohl die Bezeichnung "Vertraulich **\ Empfänger nur" angegeben** ist.
 
 - Ein Benutzer wendet die **Bezeichnung "Allgemein"** auf ein Dokument an, und diese Bezeichnung ist nicht für die Verschlüsselung konfiguriert. Dieser Benutzer konfiguriert dann manuell die IRM-Einstellungen, um den Zugriff auf das Dokument einzuschränken. Das Endergebnis ist ein Dokument  mit der Bezeichnung "Allgemein", das aber auch Verschlüsselung verwendet, sodass einige Benutzer es nicht wie erwartet öffnen können.
 
@@ -159,7 +159,7 @@ Stellen Sie für eine konsistentere Bezeichnungserfahrung mit aussagekräftiger 
 
 - Stellen Sie für Ausnahmefälle, in denen Benutzer eigene Berechtigungen zuweisen müssen, Bezeichnungen zur Verfügung, mit denen Benutzer [ihre eigenen Berechtigungen zuweisen können.](encryption-sensitivity-labels.md#let-users-assign-permissions) 
 
-- Anstatt Benutzer die Verschlüsselung manuell zu entfernen, nachdem sie eine Bezeichnung mit Verschlüsselung ausgewählt haben, stellen Sie eine Alternative zur Unterbezeichnung zur Verfügung, wenn Benutzer eine Bezeichnung mit derselben Klassifizierung, aber ohne Verschlüsselung benötigen. Beispiel:
+- Anstatt Benutzer die Verschlüsselung manuell zu entfernen, nachdem sie eine Bezeichnung mit Verschlüsselung ausgewählt haben, stellen Sie eine Alternative zu Einerbezeichnungen zur Verfügung, wenn Benutzer eine Bezeichnung mit derselben Klassifizierung, aber ohne Verschlüsselung benötigen. Beispiel:
     - **Vertraulich \ Alle Mitarbeiter**
     - **Vertraulich \ Jeder (keine Verschlüsselung)**
 
@@ -169,7 +169,7 @@ Stellen Sie für eine konsistentere Bezeichnungserfahrung mit aussagekräftiger 
 
 ## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>Anwenden von Vertraulichkeitsbezeichnungen auf Dateien, E-Mails und Anlagen
 
-Benutzer können jeweils nur eine Bezeichnung für jedes Dokument oder jede E-Mail anwenden.
+Benutzer können für jedes Dokument oder jede E-Mail jeweils nur eine Bezeichnung anwenden.
 
 Wenn Sie eine E-Mail-Nachricht mit Anlagen beschriften, erben die Anlagen die Bezeichnung nicht mit einer Ausnahme:
 
@@ -178,7 +178,7 @@ Wenn Sie eine E-Mail-Nachricht mit Anlagen beschriften, erben die Anlagen die Be
 Andernfalls: 
 
 - Wenn die Anlagen über eine Bezeichnung verfügen, behalten sie ihre ursprünglich angewendete Bezeichnung bei.
-- Wenn die Anlagen ohne Bezeichnung verschlüsselt sind, bleibt die Verschlüsselung erhalten, sie werden jedoch nicht mit Bezeichnungen versehen.
+- Wenn die Anlagen ohne Bezeichnung verschlüsselt werden, bleibt die Verschlüsselung erhalten, sie werden jedoch nicht mit Bezeichnungen versehen.
 - Wenn die Anlagen keine Bezeichnung haben, bleiben sie unbeschriftet.
 
 ## <a name="sensitivity-label-compatibility"></a>Kompatibilität von Vertraulichkeitsbezeichnungen
@@ -199,7 +199,7 @@ Wenn Sie ein Dokument oder eine E-Mail beschriften, wird die Bezeichnung als Met
 
 Wenn Sie Also Dokumente für eine andere Organisation freigeben, die unterschiedliche Bezeichnungsnamen verwendet, kann jede Organisation eine eigene Bezeichnung anwenden und sehen, die auf das Dokument angewendet wird. Die folgenden Elemente einer angewendeten Bezeichnung sind jedoch für Benutzer außerhalb Ihrer Organisation sichtbar:
 
-- Inhaltsmarkierungen. Wenn eine Bezeichnung eine Kopfzeile, fußzeile oder ein Wasserzeichen hinzuf?scht, werden diese direkt dem Inhalt hinzugefügt und bleiben sichtbar, bis sie von jemandem geändert oder gelöscht werden.
+- Inhaltsmarkierungen. Wenn eine Bezeichnung eine Kopfzeile, Fußzeile oder ein Wasserzeichen hinzuf?scht, werden diese direkt dem Inhalt hinzugefügt und bleiben sichtbar, bis sie von jemandem geändert oder gelöscht werden.
 
 - Der Name und die Beschreibung der zugrunde liegenden Schutzvorlage aus einer Bezeichnung, die Verschlüsselung angewendet hat. Diese Informationen werden in einer Meldungsleiste am oberen Rand des Dokuments angezeigt, um Informationen darüber, wer zum Öffnen des Dokuments autorisiert ist, sowie deren Nutzungsrechte für dieses Dokument zur Verfügung zu stellen.
 
@@ -213,7 +213,7 @@ Wenn externe Benutzer kein Konto in Azure Active Directory haben, können sie si
     
     Der Vorteil dieser Option besteht in der Einschränkung des Zugriffs und der Rechte auf bestimmte Benutzer, indem Sie ihre E-Mail-Adresse in den Verschlüsselungseinstellungen angeben. Der Nachteil ist der Verwaltungsaufwand für die Kontoerstellung und -koordination mit der Bezeichnungskonfiguration.
 
-- Eine weitere Möglichkeit besteht in der Verwendung der SharePoint- und #A0 [in Azure AD B2B (Vorschau),](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) sodass Gastkonten automatisch erstellt werden, wenn Ihre Benutzer Links freigeben.
+- Eine weitere Option besteht in der Verwendung der SharePoint- und #A0 [in Azure AD B2B (Vorschau),](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) sodass Gastkonten automatisch erstellt werden, wenn Ihre Benutzer Links freigeben.
     
     Der Vorteil dieser Option ist ein minimaler Verwaltungsaufwand, da die Konten automatisch erstellt werden, und eine einfachere Bezeichnungskonfiguration. In diesem Szenario müssen Sie [](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) die Verschlüsselungsoption "Authentifizierten Benutzer hinzufügen" auswählen, da Sie die E-Mail-Adressen nicht im Voraus kennen. Der Nachteil ist, dass Sie mit dieser Einstellung die Zugriffsrechte und Nutzungsrechte nicht auf bestimmte Benutzer beschränken können.
 
@@ -231,7 +231,7 @@ Das automatische Gastkonto wird in diesem Szenario aufgrund der Replikationslate
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Anwenden von Inhaltskennzeichnung und -verschlüsselung durch Office-Apps
 
-In Office-Apps werden Inhaltskennzeichnung und -verschlüsselung mit einer Vertraulichkeitsbezeichnung je nach verwendeter App unterschiedlich angewendet.
+In Office-Apps wird die Inhaltskennzeichnung und -verschlüsselung mit einer Vertraulichkeitsbezeichnung je nach verwendeter App unterschiedlich angewendet.
 
 | App | Inhaltskennzeichnung | Verschlüsselung |
 | --- | --- | --- |
@@ -279,7 +279,7 @@ Wenn Sie eine Vertraulichkeitsbezeichnung für Inhaltsmarkierungen konfigurieren
 
 #### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Festlegen unterschiedlicher visueller Markierungen für Word, Excel, PowerPoint und Outlook
 
-Als zusätzliche Variable können Sie visuelle Markierungen pro Office-Anwendungstyp konfigurieren, indem Sie eine "If.App"-Variablen-Anweisung in der Textzeichenfolge verwenden und den Anwendungstyp mithilfe der Werte **Word,** **Excel,** **PowerPoint** oder **Outlook** identifizieren. Sie können diese Werte auch abkürzen, was erforderlich ist, wenn Sie mehrere Werte in derselben If.App-Anweisung angeben möchten.
+Als zusätzliche Variable können Sie visuelle Markierungen pro Office-Anwendungstyp konfigurieren, indem Sie eine "If.App"-Variable-Anweisung in der Textzeichenfolge verwenden und den Anwendungstyp mithilfe der Werte **Word,** **Excel,** **PowerPoint** oder **Outlook** identifizieren. Sie können diese Werte auch abkürzen, was erforderlich ist, wenn Sie mehrere Werte in derselben If.App-Anweisung angeben möchten.
 
 > [!NOTE]
 > Der Vollständigkeit halber sind Anweisungen für Outlook enthalten, die derzeit jedoch nur vom Azure Information Protection-Client für einheitliche Bezeichnungen unterstützt werden.
