@@ -241,18 +241,6 @@
                       href: mtp/custom-detections-overview.md
                     - name: Erstellen und Verwalten von Erkennungsregeln
                       href: mtp/custom-detection-rules.md
-            - name: Berichte
-              items:
-                - name: Überwachen und Anzeigen von Berichten
-                  href: mtp/monitoring-and-reporting.md
-                - name: Identitätsüberwachung und Berichterstellung
-                  href: mtp/monitor-and-report-identities.md
-                - name: Datenüberwachung und Berichterstellung
-                  href: mtp/monitor-data.md
-                - name: Geräteüberwachung und Berichterstellung
-                  href: mtp/monitor-devices.md
-                - name: App-Überwachung und Berichterstellung
-                  href: mtp/monitor-apps.md
         - name: Referenz
           items:
             - name: Berechtigungen und Einstellungen
