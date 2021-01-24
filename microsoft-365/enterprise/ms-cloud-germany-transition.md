@@ -21,7 +21,7 @@ ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verstehen.'
 ms.openlocfilehash: 28344f1249e4f51bb9802bf19ca7561182610a7c
 ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/21/2021
 ms.locfileid: "49921592"
@@ -57,7 +57,7 @@ Die folgenden Dienste werden im Rahmen der Migration durch Microsoft migriert:
 
 \*\*Während der Migration von Microsoft Cloud Deutschland in die deutschen Rechenzentrumsregionen werden bestehende Skype for Business Online-Kunden auf Microsoft Teams umgestellt. Weitere Informationen finden Sie unter [Erste Schritte mit dem Microsoft Teams-Upgrade](https://aka.ms/SkypeToTeams-Home).
 
-\*\*\*Die Voraussetzungen und Auswirkungen der Migration für diese Dienste sind im Artikel [Dynamics 365 Customer Engagement](https://aka.ms/d365ceoptin) beschrieben.
+\*\*\*Die Voraussetzungen und Auswirkungen der Migration für diese Dienste sind im Artikel [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) beschrieben.
 
 Office 365 Video wird am 1. März 2021 eingestellt. Wenn Sie Ihren Office 365-Mandanten in die Regionen der neuen deutschen Rechenzentren migrieren, wird Office 365 Video nach Abschluss der SharePoint Online-Migration nicht unterstützt. Weitere Informationen finden Sie unter [Microsoft Cloud Deutschland-Zeitachse](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline).
 
@@ -65,9 +65,9 @@ Office 365 Video wird am 1. März 2021 eingestellt. Wenn Sie Ihren Office 365-Ma
 
 Diese Abbildung zeigt die neun Phasen der Migration in die neuen deutschen Rechenzentren.
 
-![Die neun Phasen der Migration in die neuen Rechenzentren in Deutschland](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![Die neun Phasen der Migration in die neuen deutschen Rechenzentren](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
-Diese Phasen beginnen, wenn Sie [sich für die Migration entscheiden.](https://aka.ms/office365germanymoveoptin) Die meisten Migrationsphasen werden nach und nach als Back-End-Dienstvorgänge durchgeführt, bei denen nur wenige Kundeninteraktionen erforderlich sind. Ab wann Maßnahmen auf Kundenseite erforderlich sind sowie der allgemeine Stand der Migration werden während des Migrationsprozesses über das Nachrichtencenter des Microsoft 365 Admin Centers mitgeteilt. Zu den kundenseitig erforderlichen Maßnahmen zählen beispielsweise durch Kunden verwaltete DNS-Updates, die Neukonfiguration des Hybrid-Setups für Kunden von Exchange-Hybridlösungen oder Azure-Migrationen.
+Diese Phasen beginnen mit Ihrer [Anmeldung für die Migration](https://aka.ms/office365germanymoveoptin). Die meisten Migrationsphasen werden nach und nach als Back-End-Dienstvorgänge durchgeführt, bei denen nur wenige Kundeninteraktionen erforderlich sind. Ab wann Maßnahmen auf Kundenseite erforderlich sind sowie der allgemeine Stand der Migration werden während des Migrationsprozesses über das Nachrichtencenter des Microsoft 365 Admin Centers mitgeteilt. Zu den kundenseitig erforderlichen Maßnahmen zählen beispielsweise durch Kunden verwaltete DNS-Updates, die Neukonfiguration des Hybrid-Setups für Kunden von Exchange-Hybridlösungen oder Azure-Migrationen.
 
 Die Migration beginnt nicht unmittelbar bei der Anmeldung. Ihre Organisation wird der Liste von Mandanten hinzugefügt, die für eine spätere Migration geplant sind. Sie können mit den Vorbereitungsphasen jetzt beginnen, da diese für eine erfolgreiche Migration und anschließende Nutzung wesentlich sind:
 
@@ -205,7 +205,7 @@ Wenn Sie Azure mit Office 365, Dynamics 365 oder Power BI verwenden, müssen Sie
 
 **Dynamics 365 und Power BI**
 
-Melden Sie sich noch heute für die von Microsoft gesteuerte Migration für [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) und [Power BI](https://aka.ms/PBIOptIn) an. Sobald wir bereit sind, Ihre Migration zu starten, werden wir Sie darüber über das Nachrichtencenter im Microsoft 365 Admin Center informieren.
+Melden Sie sich noch heute für die von Microsoft gesteuerte Migration für [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) und [Power BI](https://aka.ms/pbioptin) an. Sobald wir bereit sind, Ihre Migration zu starten, werden wir Sie darüber über das Nachrichtencenter im Microsoft 365 Admin Center informieren.
 
 ### <a name="will-the-price-change-for-the-office-365-services-that-i-use"></a>Werden sich die Preise für die von mir verwendeten Office 365-Dienste ändern?
 
@@ -304,6 +304,6 @@ Der Weg durch die Umstellung:
 
 Cloud-Apps
 
-- [Informationen zum Dynamics 365-Migrationsprogramm](https://aka.ms/d365ceoptin)
+- [Informationen zum Dynamics 365-Migrationsprogramm](https://aka.ms/D365ceOptIn)
 - [Informationen zum Power BI-Migrationsprogramm](https://aka.ms/pbioptin)
 - [Erste Schritte mit dem Upgrade von Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
