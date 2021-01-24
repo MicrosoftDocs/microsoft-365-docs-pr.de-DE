@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sind Sie bereit für die Implementierung von Vertraulichkeitsbezeichnungen, um die Daten Ihrer Organisation zu schützen, aber nicht sicher, wo Sie beginnen sollten? Hier finden Sie einige praktische Anleitungen, die Ihnen auf dem Weg zu Bezeichnungen helfen.
-ms.openlocfilehash: 36cd6a82363c330688de071d1e09ce8f0bfdd16c
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: 4568fd59734153d2f0fc3cffde21ad8319ddc04b
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709559"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921611"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Erste Schritte mit Vertraulichkeitsbezeichnungen
 
@@ -54,7 +54,7 @@ Im Folgenden werden die grundlegenden Schritte für die Bereitstellung und Anwen
 
 Eine Reihe verschiedener Abonnements unterstützen Vertraulichkeitsbezeichnungen, und die Lizenzierungsanforderungen für Benutzer hängen von den von Ihnen verwendeten Features ab.
 
-Die Optionen für die Lizenzierung Ihrer Benutzer zur Nutzung der Microsoft 365-Compliancefeatures ab dem 1. April 2020 finden Sie im [Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD). Informationen zu Vertraulichkeitsbezeichnungen finden Sie im Abschnitt [Informationsschutz](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) und im zugehörigen PDF- oder Excel-Download.
+Die Optionen für die Lizenzierung Ihrer Benutzer zur Nutzung der Microsoft 365-Compliancefeatures, finden Sie im [Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD). Informationen zu Vertraulichkeitsbezeichnungen finden Sie im Abschnitt [Informationsschutz](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) und im zugehörigen PDF- oder Excel-Download.
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>Für das Erstellen und Verwalten von Vertraulichkeitsbezeichnungen erforderliche Berechtigungen
 
@@ -73,7 +73,7 @@ Eine erfolgreiche Strategie zur Bereitstellung von Vertraulichkeitsbezeichnungen
 
 Wir empfehlen, mithilfe der Tabelle im nächsten Abschnitt ihre ein oder zwei wichtigsten Szenarien zu ermitteln, die Ihre wirksamsten geschäftlichen Anforderungen abbilden. Kehren Sie nach dem Bereitstellen dieser Szenarien zur Liste zurück, um die nächsten ein oder zwei Prioritäten für die Bereitstellung zu ermitteln.
 
-Weitere allgemeine Hinweise zur Bereitstellung finden Sie im Microsoft 365 Information Protection & Compliance Deployment Acceleration Guide zum Herunterladen. Weitere Informationen finden Sie im Blogbeitrag [Microsoft Information Protection and Compliance Deployment Acceleration Guide](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-compliance-deployment/ba-p/1403493).
+Weitere allgemeine Hinweise zur Bereitstellung finden Sie im herunterladbaren Data Loss Prevention and Microsoft Information Protection Deployment Acceleration Guide zum Herunterladen. Weitere Informationen finden Sie im Blogbeitrag [Microsoft 365 Information Protection and Compliance Deployment Acceleration Guides](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-365-information-protection-and-compliance-deployment/ba-p/2076404).
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>Häufige Szenarien für Vertraulichkeitsbezeichnungen
 
