@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
 ms.openlocfilehash: cd32ce21e18b16660c4292c98ebcc0f7cb982173
 ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/21/2021
 ms.locfileid: "49921566"
@@ -28,20 +28,20 @@ ms.locfileid: "49921566"
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Vorbereitung für die Migration von Microsoft Cloud Deutschland
 
 
-Verwenden Sie diese Links, um zu den für Ihre Organisation relevanten Schritten vor der Arbeit zu kommen:
+Über diese Links gelangen Sie zu den Schritten für die Vorarbeit, die für Ihre Organisation relevant ist:
 
-- Gehen Sie für alle Abonnements [wie unten angezeigt vor.](#applies-to-everyone)
-- Wenn Sie Exchange Online oder eine Hybridbereitstellung von Exchange verwenden, gehen Sie [wie in diesem Schritt vor.](#exchange-online)
-- Wenn Sie SharePoint Online verwenden, gehen Sie [wie in diesem Schritt vor.](#sharepoint-online)
-- Wenn Sie eine Lösung für die mobile Geräteverwaltung (Mobile Device Management, MDM) eines Drittanbieters verwenden, gehen [Sie wie in diesem Schritt vor.](#mobile)
-- Wenn Sie In Office 365 integrierte Drittanbieter-Dienst- oder Branchen-Apps verwenden, gehen Sie wie in diesem [Schritt vor.](#line-of-business-apps)
-- Wenn Sie auch über die in Ihrem Office 365-Abonnement enthaltenen Azure-Dienste hinaus verwenden, gehen Sie [wie in diesem Schritt vor.](#azure)
-- Wenn Sie auch Dynamics 365 verwenden, gehen Sie [wie hier vor.](#dynamics365)
-- Wenn Sie auch Power BI verwenden, gehen Sie [wie in diesem Schritt vor.](#power-bi)
-- For DNS changes, do [this step](#dns).
-- Wenn Sie Verbundidentität verwenden, gehen Sie [wie unten bezeichnet vor.](#federated-identity)
+- Befolgen Sie [diese Schritte](#applies-to-everyone) für alle Abonnements.
+- Führen Sie [diesen Schritt](#exchange-online) aus, wenn Sie Exchange Online oder eine Exchange-Hybridversion verwenden.
+- Führen Sie [diesen Schritt](#sharepoint-online) aus, wenn Sie SharePoint Online verwenden.
+- Fphren Sie [diesen Schritt](#mobile) aus, wenn Sie eine MDM-Lösung (Mobile Device Management) eines Drittanbieters verwenden.
+- Führen Sie [diesen Schritt](#line-of-business-apps) aus, wenn Sie einen Drittanbieterdienst oder branchenspezifische Apps verwenden, die in Office 365 integriert sind.
+- Führen Sie [diesen Schritt](#azure) aus, wenn Sie außer den in Ihrem Office 365-Abonnement enthaltenen noch weitere Azure-Dienste nutzen.
+- Führen Sie [diesen Schritt](#dynamics365) aus, wenn Sie außerdem Dynamics 365 verwenden.
+- Führen Sie [diesen Schritt](#power-bi) aus, wenn Sie außerdem Power BI verwenden.
+- Führen Sie [diesen Schritt](#dns) für DNS-Änderungen aus.
+- Führen Sie [diese Schritte](#federated-identity) aus, wenn Sie einen Identitätsverbund nutzen.
 
-## <a name="applies-to-everyone"></a>Gilt für alle
+## <a name="applies-to-everyone"></a>Gilt für alle Benutzer
 
 | Schritt(e) | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
@@ -87,7 +87,7 @@ Reworked as text:
 --> 
 
 
-### <a name="for-hybrid-exchange"></a>Für Hybrid-Exchange
+### <a name="for-hybrid-exchange"></a>Für Exchange-Hybridbereitstellung
 
 | Schritt(e) | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
@@ -179,7 +179,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 
 | Schritte: | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
-| Entfernen Sie MSOID, CName aus dem kundeneigenen DNS, wenn es jederzeit vor der Azure #A0 vorhanden ist. Eine Gültigkeitsdauer von 5 Minuten kann festgelegt werden, damit die Änderung schnell wirksam werden kann. | Kundeneigene Änderungen an DNS-Zonen | Kunden von Office-Clientdiensten | 
+| Entfernen Sie MSOID, CNAME aus dem DNS des Kunden, wenn es vor der Azure AD-Umstellung existiert. Ein TTL von 5 Minuten kann eingestellt werden, sodass die Änderung schnell greift. | Kundeneigene Änderungen an DNS-Zonen | Kunden von Office-Clientdiensten | 
 |||||
 
 ## <a name="federated-identity"></a>Identitätsverbund
