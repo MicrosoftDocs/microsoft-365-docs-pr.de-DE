@@ -7,15 +7,17 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 localization_priority: Priority
 description: Nutzen Sie die Taxonomie von Terminologiespeicher, wenn Sie einen Extraktor in Ihrem Dokumentverständnismodell in Microsoft SharePoint Syntex erstellen.
-ms.openlocfilehash: cf396d14a497981389cc336c5efd121f36392181
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: aff2df6a96fdfee7380651f68e647019e9485658
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709548"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49975739"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Nutzung der Terminologiespeichertaxonomie beim Erstellen eines Extraktors
 
@@ -33,13 +35,13 @@ Ihr Modell identifiziert und klassifiziert beispielsweise alle **Vertrags** doku
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Verwenden Sie eine Spalte für verwaltete Metadaten in Ihrem Extraktor
 
-Ausdruckssätze werden im Terminologiespeicher für verwaltete Metadatendienste (MMS) im SharePoint Online Admin Center konfiguriert. Im folgenden Beispiel ist der [Ausdruckssatz](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) für *Vertragsdienste* so konfiguriert, dass er eine Reihe von Begriffen enthält, einschließlich *Kreativ*.  Die Details dafür zeigen, dass der Begriff drei Synonyme (*Design*, *Grafiken* und *Topographie*) aufweist, und die Synonyme sollten in *Kreativ* übersetzt werden. 
+Ausdruckssätze werden im Terminologiespeicher für verwaltete Metadatendienste (MMS) im SharePoint Online Admin Center konfiguriert. Im folgenden Beispiel ist der [Ausdruckssatz](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) für *Vertragsdienste* so konfiguriert, dass er mehrere Begriffe enthält, einschließlich *Kreativ*.  Die Details dafür zeigen, dass der Begriff drei Synonyme (*Design*, *Grafiken* und *Topographie*) aufweist, und die Synonyme sollten in *Kreativ* übersetzt werden. 
 
    ![Ausdruckssatz](../media/content-understanding/term-store.png)</br>
 
-Es kann mehrere Gründe geben, warum Sie möglicherweise ein Synonym in Ihrem Ausdruckssatz verwenden möchten. Beispielsweise kann es veraltete Ausdrücke, umbenannte Ausdrücke oder Abweichungen zwischen den Abteilungen Ihres Unternehmens bei der Benennung geben.
+Es kann viele Gründe geben, warum Sie möglicherweise ein Synonym in Ihrem Ausdruckssatz verwenden möchten. Beispielsweise kann es veraltete Ausdrücke, umbenannte Ausdrücke oder Abweichungen zwischen den Abteilungen Ihres Unternehmens bei der Benennung geben.
 
-Damit Sie das Feld für verwaltete Metadaten beim Erstellen Ihres Extraktors in Ihrem Modell auswählen können, müssen Sie es als [Site-Spalte für verwaltete Metadaten hinzufügen](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). Nachdem Sie die Site-Spalte hinzugefügt haben, können Sie diese auswählen, wenn Sie den Extraktor für Ihr Modell erstellen.
+Damit das Feld für verwaltete Metadaten zur Auswahl steht, wenn Sie Ihren Extraktor in Ihrem Modell erstellen, müssen Sie [es als Sitespalte für verwaltete Metadaten hinzufügen](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). Nachdem Sie die Sitespalte hinzugefügt haben, können Sie diese auswählen, wenn Sie den Extraktor für Ihr Modell erstellen.
 
    ![Vertragsservice](../media/content-understanding/contract-services.png)</br>
 
