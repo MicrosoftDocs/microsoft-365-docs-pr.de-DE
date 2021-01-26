@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können erfahren, wie Sie das Übermittlungsportal im Security & Compliance Center verwenden, um verdächtige E-Mails, verdächtige Phishing-E-Mails, Spam und andere potenziell schädliche Nachrichten, URLs und Dateien zur Überprüfung an Microsoft zu übermitteln.
-ms.openlocfilehash: 432a245530d7906ae8babbc54176480d36315351
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 879a13e7c059495e653b79c424b227fe9f35a498
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864948"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976603"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Verwenden von Administrator-Übermittlung, um verdächtige Spam- oder Phishing-Nachrichten, URLs und Dateien an Microsoft zu übermitteln
 
@@ -32,7 +33,15 @@ ms.locfileid: "49864948"
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online können Administratoren das Übermittlungsportal im Security & Compliance Center verwenden, um E-Mail-Nachrichten, URLs und Anlagen zur Überprüfung an Microsoft zu übermitteln.
 
-Wenn Sie eine E-Mail übermitteln, erhalten Sie Informationen zu allen Richtlinien, die die eingehende E-Mail möglicherweise in Ihren Mandanten zugelassen haben, sowie zur Untersuchung aller URLs und Anlagen in der E-Mail. Zu den Richtlinien, die eine E-Mail möglicherweise zugelassen haben, gehören die Liste sicherer Absender eines einzelnen Benutzers sowie Richtlinien auf Mandantenebene wie Exchange-Nachrichtenflussregeln (auch als Transportregeln bekannt).
+Wenn Sie eine E-Mail-Nachricht übermitteln, erhalten Sie:
+
+1. **E-Mail-Authentifizierungsprüfung:** Details dazu, ob die E-Mail-Authentifizierung erfolgreich war oder nicht, als sie zugestellt wurde.
+2. **Richtlinientreffer:** Informationen zu allen Richtlinien, die möglicherweise eingehende E-Mails in Ihrem Mandanten zugelassen oder blockiert haben, und überschreiben unsere Dienstfilter-Verdingungen.
+3. **Nutzlast-Reputation/-Detonation:** Untersuchung aller URLs und Anlagen in der Nachricht.
+4. **Analyse der** Benotung: Überprüfen Sie, ob Nachrichten bösartig sind oder nicht.
+
+> [!IMPORTANT]
+> Die Nutzlast-Reputations-/Detonation- und Bewertungsanalyse wird nicht in allen Mandanten durchgeführt. Es wird verhindert, dass Informationen außerhalb der Organisation liegen, wenn Daten aus Compliancegründen nicht die Mandantengrenze verlassen sollen.
 
 Weitere Möglichkeiten zum Senden von E-Mail-Nachrichten, URLs und Anlagen an Microsoft finden Sie unter "Nachrichten und Dateien an [Microsoft melden".](report-junk-email-messages-to-microsoft.md)
 
@@ -77,7 +86,7 @@ Weitere Möglichkeiten zum Senden von E-Mail-Nachrichten, URLs und Anlagen an Mi
 
 4. Wenn Sie fertig sind, klicken Sie auf die Schaltfläche **"Absenden".**
 
-![Beispiel für die URL-Übermittlung](../../media/submission-flyout-email.PNG)
+   ![Beispiel für die URL-Übermittlung](../../media/submission-flyout-email.PNG)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Senden einer verdächtigen URL an Microsoft
 
@@ -91,7 +100,7 @@ Weitere Möglichkeiten zum Senden von E-Mail-Nachrichten, URLs und Anlagen an Mi
 
 3. Wenn Sie fertig sind, klicken Sie auf die Schaltfläche **"Absenden".**
 
-![Beispiel für die E-Mail-Übermittlung](../../media/submission-url-flyout.png)
+   ![Beispiel für die E-Mail-Übermittlung](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>Übermitteln einer verdächtigen Datei an Microsoft
 
@@ -107,7 +116,7 @@ Weitere Möglichkeiten zum Senden von E-Mail-Nachrichten, URLs und Anlagen an Mi
 
 4. Wenn Sie fertig sind, klicken Sie auf die Schaltfläche **"Absenden".**
 
-![Beispiel für Anlagenübermittlung](../../media/submission-file-flyout.PNG)
+   ![Beispiel für Anlagenübermittlung](../../media/submission-file-flyout.PNG)
 
 ## <a name="view-admin-submissions"></a>Anzeigen von Administratorübermittlungen
 

@@ -1,106 +1,101 @@
 ---
 title: Attribute für Richtlinien für Informationsbarrieren
-f1.keywords:
-- NOCSH
-ms.author: chrfox
-author: chrfox
+description: Dieser Artikel ist eine Referenz für die Azure Active Directory-Benutzerkontoattribute, die Sie zum Definieren von Segmenten von Informationsbarrieren verwenden können.
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: Dies ist ein Referenzartikel zu den Azure Active Directory-Benutzerkonto Attributen, die Sie zum Definieren von Informations Sperr Segmenten verwenden.
+f1.keywords:
+- NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6b6fb9cbbe5840888114ba99a604d16117ec795d
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 5e7815dbcfc6129685322a250351276476f8a9e3
+ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307994"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980048"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Attribute für Richtlinien für Informationsbarrieren
 
-Bestimmte Attribute in Azure Active Directory können verwendet werden, um Benutzer zu segmentieren. Nachdem Segmente definiert wurden, können diese Segmente als Filter für Richtlinien für Informationsbarrieren verwendet werden. Beispielsweise können Sie mithilfe von **Department** Segmente von Benutzern nach Abteilung in Ihrer Organisation definieren (sofern kein einzelner Mitarbeiter gleichzeitig für zwei Abteilungen arbeitet). 
+Bestimmte Attribute in Azure Active Directory können verwendet werden, um Benutzer zu segmentieren. Nachdem Segmente definiert wurden, können diese Segmente als Filter für Richtlinien für Informationsbarrieren verwendet werden. Sie können beispielsweise **"Abteilung"** verwenden, um Segmente von Benutzern nach Abteilung in Ihrer Organisation zu definieren (vorausgesetzt, dass kein einzelner Mitarbeiter gleichzeitig für zwei Abteilungen arbeitet).
 
-In diesem Artikel wird beschrieben, wie Sie Attribute mit Informationsbarrieren verwenden, und es wird eine Liste der Attribute bereitgestellt, die verwendet werden können. Wenn Sie mehr über Informationsbarrieren erfahren möchten, lesen Sie die folgenden Ressourcen:
+Dieser Artikel beschreibt die Verwendung von Attributen mit Informationsbarrieren und enthält eine Liste der Attribute, die verwendet werden können. Weitere Informationen zu Informationsbarrieren finden Sie in den folgenden Ressourcen:
+
 - [Informationsbarrieren](information-barriers.md)
 - [Definieren von Richtlinien für Informationsbarrieren in Microsoft Teams](information-barriers-policies.md)
 - [Bearbeiten oder Entfernen von Richtlinien für Informationsbarrieren](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>Verwenden von Attributen in Richtlinien für Informationsbarrieren
 
-Die in diesem Artikel aufgeführten Attribute können verwendet werden, um Segmente von Benutzern zu definieren oder zu bearbeiten. Ihre definierten Segmente dienen als Parameter (als *UserGroupFilter* -Werte bezeichnet) in [Richtlinien für Informationsbarrieren](information-barriers-policies.md).
+Die in diesem Artikel aufgeführten Attribute können zum Definieren oder Bearbeiten von Benutzersegmenten verwendet werden. Die definierten Segmente dienen als Parameter (so genannte *UserGroupFilter-Werte)* in [Richtlinien für Informationsbarrieren.](information-barriers-policies.md)
 
-1. Bestimmen Sie, welches Attribut zum Definieren von Segmenten verwendet werden soll. (Weitere Informationen finden Sie im Abschnitt " [Reference](#reference) " in diesem Artikel.)
+1. Bestimmen Sie, welches Attribut Sie zum Definieren von Segmenten verwenden möchten. (Weitere Informationen finden Sie im [Abschnitt "Referenz"](#reference) in diesem Artikel.)
 
-2. Stellen Sie sicher, dass die Benutzerkonten Werte für die in Schritt 1 ausgewählten Attribute eingegeben haben. Zeigen Sie die Benutzerkontodetails an, und bearbeiten Sie Benutzerkonten bei Bedarf, um Attributwerte einzubeziehen. 
+2. Stellen Sie sicher, dass für die Benutzerkonten Werte für die Attribute angegeben sind, die Sie in Schritt 1 ausgewählt haben. Zeigen Sie Die Details des Benutzerkontos an, und bearbeiten Sie bei Bedarf Benutzerkonten so, dass Attributwerte enthalten sind. 
 
-    - Informationen zum Bearbeiten mehrerer Konten (oder zum Bearbeiten eines einzelnen Kontos mithilfe von PowerShell) finden Sie unter [Konfigurieren von Benutzerkontoeigenschaften mit Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell).
+    - Informationen zum Bearbeiten mehrerer Konten (oder zum Bearbeiten eines einzelnen Kontos mithilfe von PowerShell) finden Sie unter Konfigurieren von Benutzerkontoeigenschaften mit [Office 365 PowerShell.](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
-    - Informationen zum Bearbeiten eines einzelnen Kontos finden Sie unter [Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers mithilfe von Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+    - Informationen zum Bearbeiten eines einzelnen Kontos finden Sie unter Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers [mithilfe von Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
-3. [Definieren Sie Segmente mithilfe von PowerShell](information-barriers-policies.md#define-segments-using-powershell), ähnlich wie in den folgenden Beispielen:
+3. [Definieren Sie Segmente mit PowerShell,](information-barriers-policies.md#define-segments-using-powershell)ähnlich wie in den folgenden Beispielen:
 
-    |Beispiel  |Cmdlet  |
-    |---------|---------|
-    |Definieren eines Segments namens Segment1 mit dem Department-Attribut     | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"`        |
-    |Definieren Sie ein Segment, das als segmenta bezeichnet wird, indem Sie das Attribut "Attributs" verwenden (angenommen, dieses Attribut enthält Gruppennamen, beispielsweise "bluegroup").     | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"`        |
-    |Definieren Sie ein Segment namens Daytrader mit ExtensionAttribute1 (angenommen, dieses Attribut enthält Auftragstitel wie "Daytrader").|`New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
+    |**Beispiel**|**Cmdlet**|
+    |:----------|:---------|
+    | Definieren eines Segments namens "Segment1" mithilfe des Attributs "Department" | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"` |
+    | Definieren Sie ein Segment namens "SegmentA" mit dem Attribut "MemberOf" (angenommen, dieses Attribut enthält Gruppennamen, z. B. "BlueGroup"). | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"` |
+    | Definieren Sie ein Segment namens DayTraders mithilfe von ExtensionAttribute1 (angenommen, dieses Attribut enthält Auftragstitel, z. B. "DayTrader"). | `New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
 
     > [!TIP]
-    > Wenn Sie Segmente definieren, verwenden Sie für alle Segmente dasselbe Attribut. Wenn Sie beispielsweise einige Segmente mithilfe von *Department*definieren, definieren Sie alle Segmente mithilfe von *Department*. Definieren Sie einige Segmente nicht mithilfe von *Department* und anderen mithilfe von "Redefine *".* Stellen Sie sicher, dass sich Ihre Segmente nicht überschneiden. Jeder Benutzer sollte genau einem Segment zugeordnet werden. 
+    > Verwenden Sie beim Definieren von Segmenten dasselbe Attribut für alle Segmente. Wenn Sie beispielsweise einige Segmente mithilfe von *Abteilung* definieren, definieren Sie alle Segmente mithilfe von *Abteilung*. Definieren Sie einige Segmente nicht mithilfe von *Department* und andere nicht mit *MemberOf*. Stellen Sie sicher, dass sich Ihre Segmente nicht überschneiden. Jedem Benutzer sollte genau ein Segment zugewiesen werden.
 
 ## <a name="reference"></a>Referenz
 
 In der folgenden Tabelle sind die Attribute aufgeführt, die Sie mit Informationsbarrieren verwenden können.
 
-|Name der Azure Active Directory-Eigenschaft<br/>(LDAP-Anzeigename)  |Exchange-Eigenschaftsname  |
-|---------|---------|
-|Gemeinsame Dokument       | Gemeinsame Dokument        |
-|Company     |Company         |
-|Abteilung     |Abteilung         |
-|ExtensionAttribute1 |CustomAttribute1  |
-|ExtensionAttribute2 |CustomAttribute2  |
-|ExtensionAttribute3 |CustomAttribute3  |
-|ExtensionAttribute4 |CustomAttribute4  |
-|ExtensionAttribute5 |CustomAttribute5  |
-|ExtensionAttribute6 |CustomAttribute6  |
-|ExtensionAttribute7 |CustomAttribute7  |
-|ExtensionAttribute8 |CustomAttribute8  |
-|ExtensionAttribute9 |CustomAttribute9  |
-|ExtensionAttribute10 |CustomAttribute10  |
-|ExtensionAttribute11 |CustomAttribute11  |
-|ExtensionAttribute12 |CustomAttribute12  |
-|ExtensionAttribute13 |CustomAttribute13  |
-|ExtensionAttribute14 |CustomAttribute14  |
-|ExtensionAttribute15 |CustomAttribute15  |
-|MSExchExtensionCustomAttribute1 |ExtensionCustomAttribute1 |
-|MSExchExtensionCustomAttribute2 |ExtensionCustomAttribute2 |
-|MSExchExtensionCustomAttribute3 |ExtensionCustomAttribute3 |
-|MSExchExtensionCustomAttribute4 |ExtensionCustomAttribute4 |
-|MSExchExtensionCustomAttribute5 |ExtensionCustomAttribute5 |
-|MailNickname |Alias |
-|PhysicalDeliveryOfficeName |Office |
-|PostalCode |PostalCode |
-|ProxyAddresses |EmailAddresses |
-|StreetAddress |StreetAddress |
-|TargetAddress |ExternalEmailAddress |
-|UsageLocation |UsageLocation |
-|UserPrincipalName    |UserPrincipalName    |
-|E-Mail    |WindowsEmailAddress    |
-|Beschreibung    |Beschreibung    |
-|MemberOf    |MemberOfGroup    |
+|**Azure Active Directory-Eigenschaftenname <br/> (LDAP-Anzeigename)**|**Name der Exchange-Eigenschaft**|
+|:---------------------------------------------------------------|:-------------------------|
+| Co | Co |
+| Company | Company |
+| Abteilung | Abteilung |
+| ExtensionAttribute1 | CustomAttribute1 |
+| ExtensionAttribute2 | CustomAttribute2 |
+| ExtensionAttribute3 | CustomAttribute3 |
+| ExtensionAttribute4 | CustomAttribute4 |
+| ExtensionAttribute5 | CustomAttribute5 |
+| ExtensionAttribute6 | CustomAttribute6 |
+| ExtensionAttribute7 | CustomAttribute7 |
+| ExtensionAttribute8 | CustomAttribute8 |
+| ExtensionAttribute9 | CustomAttribute9 |
+| ExtensionAttribute10 | CustomAttribute10 |
+| ExtensionAttribute11 | CustomAttribute11 |
+| ExtensionAttribute12 | CustomAttribute12 |
+| ExtensionAttribute13 | CustomAttribute13 |
+| ExtensionAttribute14 | CustomAttribute14 |
+| ExtensionAttribute15 | CustomAttribute15 |
+| MSExchExtensionCustomAttribute1 | ExtensionCustomAttribute1 |
+| MSExchExtensionCustomAttribute2 | ExtensionCustomAttribute2 |
+| MSExchExtensionCustomAttribute3 | ExtensionCustomAttribute3 |
+| MSExchExtensionCustomAttribute4 | ExtensionCustomAttribute4 |
+| MSExchExtensionCustomAttribute5 | ExtensionCustomAttribute5 |
+| MailNickname | Alias |
+| PhysicalDeliveryOfficeName | Office |
+| PostalCode | PostalCode |
+| ProxyAddresses | EmailAddresses |
+| StreetAddress | StreetAddress |
+| TargetAddress | ExternalEmailAddress |
+| UsageLocation | UsageLocation |
+| UserPrincipalName | UserPrincipalName |
+| E-Mail | WindowsEmailAddress |
+| Beschreibung | Beschreibung |
+| MemberOf | MemberOfGroup |
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="resources"></a>Ressourcen
 
-[Definieren von Richtlinien für Informationsbarrieren in Microsoft Teams](information-barriers-policies.md)
-
-[Problembehandlung bei Informationsbarrieren](information-barriers-troubleshooting.md)
-
-[Informationsbarrieren](information-barriers.md)
-
-
-
+- [Definieren von Richtlinien für Informationsbarrieren in Microsoft Teams](information-barriers-policies.md)
+- [Problembehandlung bei Informationsbarrieren](information-barriers-troubleshooting.md)
+- [Informationsbarrieren](information-barriers.md)

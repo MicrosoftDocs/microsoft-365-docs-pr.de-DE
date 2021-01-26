@@ -1,5 +1,5 @@
 ---
-title: Rolle "Topic Experiences" (Vorschau)
+title: Rollen "Themenerfahrungen" (Vorschau)
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,83 +8,85 @@ ms.topic: article
 ms.service: ''
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-description: Erfahren Sie mehr über Benutzerrollen in Thema Erfahrungen.
-ms.openlocfilehash: ed4d40aa7bb91a85e28aba7ace99edf580c427a5
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+description: Erfahren Sie mehr über Benutzerrollen in Themenerfahrungen.
+ms.openlocfilehash: b649ea81d8e5b036e9332e9c87b67a951b5905a7
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698902"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49975693"
 ---
-# <a name="topic-experiences-roles-preview"></a>Rolle "Topic Experiences" (Vorschau)
+# <a name="topic-experiences-roles-preview"></a>Rollen "Themenerfahrungen" (Vorschau)
 
 > [!Note] 
-> Der Inhalt dieses Artikels ist für Project Cortex private Preview. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
+> Der Inhalt dieses Artikels ist für Project Cortex Private Preview vorgesehen. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
 
 
-Wenn Sie Themen Erfahrungen in Ihrer Microsoft 365-Umgebung verwenden, können Ihre Benutzer die folgenden Rollen haben:
--   Themenansicht
--   Thema Mitwirkender
+Wenn Sie Themenerfahrungen in Ihrer Microsoft 365-Umgebung verwenden, können Ihre Benutzer die folgenden Rollen haben:
+-   Themenanzeige
+-   Mitwirkender des Themas
 -   Knowledge Manager
--   Wissens Administrator
+-   Wissensadministrator
 
-## <a name="topic-viewer"></a>Themenansicht
+## <a name="topic-viewer"></a>Themenanzeige
 
-Thema Viewer sind Benutzer in Ihrer Organisation, die hervorgehobene Themen in ihrer modernen SharePoint-Website und in der SharePoint-Suche anzeigen können. Sie können hervorgehobene Themen auswählen, um weitere Details dazu in einer Themen Seite anzuzeigen. 
+Themenanzeigen sind Benutzer in Ihrer Organisation, die hervorgehobene Themen auf ihrer modernen SharePoint-Website und in der SharePoint-Suche anzeigen können. Sie können hervorgehobene Themen auswählen, um weitere Details zu diesen Themen auf einer Themenseite anzuzeigen. 
 
-Für die Themen Hervorhebungen und ihre Themenseiten, die für einen Themen Betrachter sichtbar sein sollen, muss der Benutzer:
--   Ihr Microsoft 365-Administrator erhält [eine Lizenz zum Thema Experiences License](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) .
--   Sie haben die Möglichkeit, über Sichtbarkeit für Themen zu verfügen. Dies erfolgt über den Knowledge-Administrator auf der Seite Einstellungen für Themen Erlebnisse im Microsoft 365 Admin Center.
+Damit Themenher highlights und ihre Themenseiten für einen Themenanzeiger sichtbar sind, muss der Benutzer:
+-   [Erhalten Sie von ihrem](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) Microsoft 365-Administrator eine Lizenz für Themenerfahrungen.
+-   Sie können Themen einsichten. Dies wird vom Wissensadministrator auf der Seite "Einstellungen für Themenerfahrungen" im Microsoft 365 Admin Center durchgeführt.
 
 
-## <a name="topic-contributors"></a>Thema Mitwirkende
+## <a name="topic-contributors"></a>Mitwirkende an Themen
 
-Mitwirkende des Themas sind Benutzer in Ihrer Organisation, die nicht nur über Berechtigungen für die Themen Anzeige verfügen, sondern auch ein vorhandenes Thema bearbeiten oder ein neues Thema erstellen können. Sie haben eine wichtige Rolle in der manuellen "kuratierten" Informationen in einer Themen Seite (sowohl AI als auch manuell bereitgestellt), um ihre Qualität zu gewährleisten.
+Mitwirkende an Themen sind Benutzer in Ihrer Organisation, die nicht nur über Berechtigungen für die Themenanzeige verfügen, sondern auch ein vorhandenes Thema bearbeiten oder ein neues Thema erstellen können. Sie spielen eine wichtige Rolle beim manuellen "Aus curating" der Informationen auf einer Themenseite (sowohl ai als auch manuell bereitgestellt), um die Qualität sicherzustellen.
 
-Benutzern, die über die Berechtigung "Thema mitwirken" verfügen, wird **auf den Themen** Seiten eine Schaltfläche angezeigt, die es Ihnen ermöglicht, ein Thema zu aktualisieren und zu veröffentlichen.
+Benutzern mit Berechtigungen für mitwirkende Themen wird eine Schaltfläche "Bearbeiten" auf Themenseiten angezeigt, mit der sie ein Thema aktualisieren und veröffentlichen können. 
 
-Ein Thema Mitwirkender kann auch ein neues Thema über die Themen Center-Website erstellen und veröffentlichen.
+Ein Mitwirkender eines Themas kann auch ein neues Thema über seine Themencenterwebsite erstellen und veröffentlichen.
 
-Um ein Thema erstellen und bearbeiten zu können, muss der Benutzer Folgendes tun:
+Um ein Thema erstellen und bearbeiten zu können, muss der Benutzer:
 
--   Ihr Microsoft 365-Administrator erhält [eine Lizenz zum Thema Experiences License](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) .
--   [Berechtigungen zum Erstellen und Bearbeiten von Themen zugewiesen werden](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center). Dies erfolgt über den Knowledge-Administrator auf der Seite Einstellungen für Themen Erlebnisse im Microsoft 365 Admin Center.
+-   [Erhalten Sie von ihrem](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) Microsoft 365-Administrator eine Lizenz für Themenerfahrungen.
+-   [Ihnen werden Berechtigungen zum Erstellen und Bearbeiten von Themen zugewiesen.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center) Dies wird vom Wissensadministrator auf der Seite "Einstellungen für Themen" im Microsoft 365 Admin Center durchgeführt.
 
 ## <a name="knowledge-managers"></a>Wissensmanager
 
-Wissensmanager sind Benutzer, die Themen in Ihrer Organisation verwalten.  Die Themen Verwaltung erfolgt über die Seite Themen verwalten im Themen Center und ist nur für Wissensmanager sichtbar.
+Wissensmanager sind Benutzer, die Themen in Ihrer Organisation verwalten.  Die Themenverwaltung erfolgt über die Seite "Themen verwalten" im Themencenter und ist nur für Wissensmanager sichtbar.
 
-Auf der Seite Themen verwalten können ein Wissensmanager die folgenden Aufgaben ausführen:
--   Alle AI-vorgeschlagenen Themen anzeigen.
--   Überprüfen Sie die Themen, um zu bestätigen, dass Sie gültig sind.
--   Entfernen Sie Themen, die Sie nicht für Ihre Benutzer sichtbar machen möchten.
+Auf der Seite "Themen verwalten" können Wissensmanager die folgenden Aufgaben ausführen:
+-   Zeigen Sie alle themen vorgeschlagenen AI-Themen an.
+-   Überprüfen Sie die Themen, um zu bestätigen, dass sie gültig sind.
+-   Entfernen Sie Themen, die Sie ihren Benutzern nicht sichtbar machen möchten.
 
 
 Darüber hinaus kann ein Knowledge Manager vorhandene Themen bearbeiten oder neue erstellen.
 
-Um Themen verwalten zu können, muss der Benutzer folgende Aufgaben erfüllen:
--   Ihr Microsoft 365-Administrator erhält [eine Lizenz zum Thema Experiences License](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) .
--   [Berechtigungen zum Verwalten von Themen zugewiesen werden](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center)). Dies erfolgt über den Knowledge-Administrator auf der Seite Einstellungen für Themen Erlebnisse im Microsoft 365 Admin Center.
+Um Themen verwalten zu können, muss der Benutzer:
+-   [Erhalten Sie von ihrem](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) Microsoft 365-Administrator eine Lizenz für Themenerfahrungen.
+-   [Ihnen werden Berechtigungen zum Verwalten von Themen zugewiesen).](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center) Dies wird vom Wissensadministrator auf der Seite "Einstellungen für Themen" im Microsoft 365 Admin Center durchgeführt.
 
-Benutzer mit guten Gesamt Kenntnissen Ihres Unternehmens können gute Kandidaten für die Knowledge Manager-Rolle sein. Diese Personen verfügen möglicherweise nicht nur über das wissen, ob Themen gültig sind oder nicht, sondern kennen möglicherweise auch Personen innerhalb des Unternehmens, die sich auf diese Themen beziehen.
+Benutzer mit einem guten Gesamtwissen über Ihr Unternehmen können gute Kandidaten für die Rolle des Knowledge Managers sein. Diese Personen verfügen möglicherweise nicht nur über das Wissen, ob Themen gültig sind oder nicht, sondern auch Personen innerhalb des Unternehmens, die mit diesen Themen in Verbindung stehen.
 
 
-## <a name="knowledge-admins"></a>Wissens-Admins
+## <a name="knowledge-admins"></a>Wissensadministratoren
 
-Knowledge-Administratoren sind Administratoren, die Themen Erfahrungen in Ihrer Microsoft 365-Umgebung einrichten und konfigurieren. Sie verwalten auch die Einstellungen für das Thema Erfahrungen, nachdem die Einrichtung abgeschlossen wurde. Die Knowledge admin-Rolle erfordert, dass Sie ein Microsoft 365 Global-oder SharePoint-Administrator sind, da Setup und Verwaltung im Microsoft 365 Admin Center ausgeführt werden.
-Während des Setups können Knowledge-Administratoren Themen Erfahrungen für folgende Aufgaben konfigurieren:
+Wissensadministratoren sind Administratoren, die Themenerfahrungen in Ihrer Microsoft 365-Umgebung einrichten und konfigurieren. Sie verwalten auch die Einstellungen für "Themenerfahrungen", nachdem die Einrichtung abgeschlossen ist. Die Rolle des Wissensadministrators erfordert, dass Sie ein globaler Microsoft 365- oder -SharePoint-Administrator sind, da Setup und Verwaltung im Microsoft 365 Admin Center durchgeführt werden.
+Während des Setups können Wissensadministratoren Die Themenerfahrungen für folgende Aufgaben konfigurieren:
 
 -   Wählen Sie aus, welche SharePoint-Websites für Themen gecrawlt werden sollen.
--   Wählen Sie aus, welche lizenzierten Benutzer Themen anzeigen können (Thema Betrachter).
--   Wählen Sie aus, welche Themen von der Identifizierung ausgeschlossen werden sollen.
--   Wählen Sie aus, mit welchen lizenzierten Benutzern Themen erstellt und bearbeitet werden können (Thema Mitwirkende).
--   Wählen Sie aus, welche lizenzierten Benutzer Themen verwalten können (Wissensmanager).
--   Nennen Sie das Thema Center.
+-   Wählen Sie aus, welche lizenzierten Benutzer Themen (Themenanzeiger) anzeigen können.
+-   Wählen Sie aus, welche Themen nicht identifiziert werden sollen.
+-   Wählen Sie aus, welche lizenzierten Benutzer Themen erstellen und bearbeiten können (Mitwirkende an Themen).
+-   Wählen Sie aus, welche lizenzierten Benutzer Themen (Wissensmanager) verwalten können.
+-   Benennen Sie das Themencenter.
 
-Wissensmanager müssen in der Lage sein, mit allen thematischen Erfahrungen von Beteiligten in Ihrer Organisation zu koordinieren und zu wissen, wie Sie diese konfigurieren. Wenn beispielsweise ein neues Projekt vertrauliche Informationen enthält, muss der Knowledge Manager informiert werden, damit Sie sicherstellen können, dass die SharePoint-Website nicht für Themen gecrawlt wird oder bestimmte Themen Namen ausgeschlossen werden müssen.
+Wissensmanager müssen sich mit allen Projektbeteiligten in ihrer Organisation abstimmen können, um zu wissen, wie sie konfiguriert werden können. Wenn ein neues Projekt beispielsweise vertrauliche Informationen enthält, muss der Knowledge Manager informiert werden, damit er sicherstellen kann, dass die SharePoint-Website nicht nach Themen gecrawlt wird, oder bestimmte Themennamen müssen ausgeschlossen werden.
 
 
 ## <a name="see-also"></a>Weitere Informationen:

@@ -1,6 +1,6 @@
 ---
-title: 'Microsoft SharePoint Syntex Adoption: Erste Schritte'
-description: In diesem Artikel erfahren Sie, wie Sie SharePoint-Syntex in Ihrer Organisation verwenden und implementieren, um Ihre geschäftlichen Probleme zu lösen.
+title: 'Einführung von Microsoft SharePoint Syntex: Erste Schritte'
+description: Erfahren Sie, wie Sie SharePoint Syntex in Ihrer Organisation verwenden und implementieren, um Ihre Geschäftlichen Probleme zu lösen.
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -8,187 +8,189 @@ ms.date: 7/20/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 441f28e36ced25b2e5af3f71235995c8b021f779
-ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
+ms.openlocfilehash: 7a0bd04121d7400cced22e43a539bd21c45a7fc3
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49771871"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976572"
 ---
-# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex Adoption: Erste Schritte
+# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Einführung von Microsoft SharePoint Syntex: Erste Schritte
 
-Stellen Sie sich die intelligenten Inhaltsdienste vor, die in SharePoint Syntex als drei Teile verfügbar sind:
+Stellen Sie sich die intelligenten Inhaltsdienste vor, die in SharePoint Syntex verfügbar sind, und haben drei Teile:
 
-- **Inhalts Verständnis:** Erstellen von codebasierten AI-Modellen zum klassifizieren und Extrahieren von Informationen aus Inhalten zum automatischen Anwenden von Metadaten für die Ermittlung und Wiederverwendung von wissen. Erfahren Sie mehr über das [Verständnis von Inhalten](document-understanding-overview.md).
-- **Inhaltsverarbeitung:** Automatisieren Sie die Erfassung, Einnahme und Kategorisierung von Inhalten und rationalisieren Sie Inhalts zentrierte Prozesse mithilfe von Power Automation. Erfahren Sie mehr über die [Inhaltsverarbeitung](form-processing-overview.md).
-- **Inhalts Konformität:** Steuern und Verwalten von Inhalten zur Verbesserung der Sicherheit und Steuerung mit Integration in Microsoft Information Protection.
+- **Inhaltserkenntnisse: Erstellen** Sie keine Code-KI-Modelle, um Informationen aus Inhalten zu klassifizieren und zu extrahieren, um Metadaten automatisch für die Ermittlung und Wiederverwendung von Wissen anzuwenden. Erfahren Sie mehr über [das Verständnis von Inhalten.](document-understanding-overview.md)
+- **Inhaltsverarbeitung:** Automatisieren Sie die Erfassung, Aufnahme und Kategorisierung von Inhalten, und optimieren Sie inhaltsorientierte Prozesse mithilfe von Power Automate. Erfahren Sie mehr über [die Inhaltsverarbeitung.](form-processing-overview.md)
+- **Inhaltskonformität:** Steuern und Verwalten von Inhalten zur Verbesserung der Sicherheit und Governance mit der Integration in Microsoft Information Protection.
 
-Mit den neuen AI-Diensten und-Funktionen können Sie Apps für Inhalts verstehen und Klassifizierung direkt in den Inhalts Verwaltungs Fluss mithilfe von SharePoint-Syntex erstellen. Es gibt zwei verschiedene Möglichkeiten, ihre Inhalte zu verstehen. Der verwendete Modelltyp basiert auf dem Dateiformat und dem Anwendungsfall:
+Mit neuen AI-Diensten und -Funktionen können Sie Apps zum Verständnis und zur Klassifizierung von Inhalten direkt in den Inhaltsverwaltungsfluss mit SharePoint Syntex erstellen. Es gibt zwei verschiedene Möglichkeiten, Ihre Inhalte zu verstehen. Der von Ihnen verwendeten Modelltyp basiert auf dem Dateiformat und dem Verwendungsfall:
 
-| Formularverarbeitung | Dokument Verständnis |
+| Formularverarbeitung | Grundlegendes zu Dokumenten |
 |:-------|:-------|
-| Erstellt aus der Dokumentbibliothek. | Erstellt im inhaltscenter, Teil von SharePoint-Syntex. |
-| In Ai Builder erstelltes Modell. | Modell, das in systemeigener Schnittstelle erstellt wurde. |
-| Wird für semi-strukturierte Dateiformate verwendet. | Wird für unstrukturierte Dateiformate verwendet. |
-| Settable-Klassifizierung. | Schulungs-und Klassifizierungs Module mit optionalen Extraktionsfunktionen. |
+| Erstellt aus Dokumentbibliothek. | Erstellt im Inhaltscenter, Teil von SharePoint Syntex. |
+| Modell, das im Generator für künstliche Intelligenz erstellt wurde. | Modell, das in der systemeigenen Schnittstelle erstellt wurde. |
+| Wird für halbstrukturierte Dateiformate verwendet. | Wird für unstrukturierte Dateiformate verwendet. |
+| Settable-Klassifikator. | Trainierbare Klassifizierung mit optionalen Extraktionen. |
 | Auf eine einzelne Bibliothek beschränkt. | Kann auf mehrere Bibliotheken angewendet werden. |
-| Zug auf PDF, JPG, PNG-Format, insgesamt 50 MB/500 PP. | Zug auf 5-10 PDF-, Office-oder e-Mail-Dateien, einschließlich negativer Beispiele. |
+| Schulen Sie das PDF-, JPG-, PNG-Format, insgesamt 50 MB/500 S.. | Schulen Sie 5-10 PDF-, Office- oder E-Mail-Dateien, einschließlich negativer Beispiele. |
 
-In der folgenden Tabelle wird die Verfügbarkeit und Lizenzierung für SharePoint-Syntex erläutert:
+In der folgenden Tabelle werden Verfügbarkeit und Lizenzierung für SharePoint Syntex erläutert:
 
-| Formularverarbeitung | Dokument Verständnis |
+| Formularverarbeitung | Grundlegendes zu Dokumenten |
 |:-------|:-------|
-| Die Formularverarbeitung basiert auf der Power Platform. <br>Informationen zur globalen Verfügbarkeit für Power Platform und AI Builder finden Sie unter [Power Platform Availability](https://dynamics.microsoft.com/geographic-availability/). | In allen Regionen verfügbar. |
-| Verwendet AI Builder Credits.<br>Guthaben können in Batches von 1M erworben werden.<br>1M Credits sind enthalten, wenn 300 + SharePoint Syntex-Lizenzen erworben wurden.<br>1M Credits erlaubt die Verarbeitung von 2000 Datei Seiten. | Modelle funktionieren in allen lateinischen Alphabet Sprachen. Zusätzlich zu Englisch: Deutsch, Schwedisch, Französisch, Spanisch, Italienisch und Portugiesisch. |
-| Bereitgestellt für die standardmäßige gemeinsame Datendienst Umgebung. | Verfügt nicht über Kapazitätseinschränkungen. |
+| Die Formularverarbeitung basiert auf Power Platform. <br>Informationen zur globalen Verfügbarkeit für Power Platform und AI Builder finden Sie unter [Power Platform Availability](https://dynamics.microsoft.com/geographic-availability/). | In allen Regionen verfügbar. |
+| Verwendet AI Builder-Guthaben.<br>Guthaben können in Batches von 1M erworben werden.<br>1M-Guthaben ist enthalten, wenn mehr als 300 SharePoint -Syntex-Lizenzen erworben werden.<br>1M-Guthaben ermöglicht die Verarbeitung von 2.000 Dateiseiten. | Modelle funktionieren in allen Sprachen des lateinischen Alphabets. Zusätzlich zu Englisch: Deutsch, Schwedisch, Französisch, Spanisch, Italienisch und Portugiesisch. |
+| Wird für die standardmäßige allgemeine Datendienstumgebung bereitgestellt. | Es gelten keine Kapazitätseinschränkungen. |
 
-Weitere Informationen zu den Credits und Einheiten des AI-Generators finden Sie unter [AI Builder Licensing](https://docs.microsoft.com/ai-builder/administer-licensing).
+Weitere Informationen zu Guthaben und Einheiten des AI Builders finden Sie unter [AI Builder-Lizenzierung.](https://docs.microsoft.com/ai-builder/administer-licensing)
 
-SharePoint Syntex integriert sich in Microsoft 365-Compliance-Features wie:
+SharePoint Syntex ist in Microsoft 365-Compliancefeatures integriert, wie:
 
-- Aufbewahrungs Bezeichnungen, die Datensatzrichtlinie basierend auf dem Dokument Alter oder externen Ereignissen definieren.
-- Vertraulichkeits Bezeichnungen, die DLP-, Verschlüsselungs-, Freigabe-und bedingten Zugriffsrichtlinien festlegen.
+- Aufbewahrungsbezeichnungen, die Datensatzrichtlinien basierend auf dem Dokumentalter oder externen Ereignissen definieren.
+- Vertraulichkeitsbezeichnungen, die DLP-, Verschlüsselungs-, Freigabe- und Richtlinien für bedingten Zugriff festlegen.
 
-Benutzer können Bezeichnungen anwenden oder Sie können automatisch von SharePoint Syntex AI-Modellen angewendet werden. Analysen und Dateipläne bieten eine skalierte Verwaltung der Bezeichnungs Verwendung und-Richtlinien.
+Benutzer können Bezeichnungen anwenden, oder sie können automatisch von SharePoint Syntex-AI-Modellen angewendet werden. Analyse- und Dateipläne bieten eine skalierte Verwaltung der Bezeichnungsverwendung und -richtlinien.
 
-## <a name="identify-pilot-business-scenarios-to-optimize"></a>Identifizieren von Pilot Geschäftsszenarien zur Optimierung
+## <a name="identify-pilot-business-scenarios-to-optimize"></a>Identifizieren von Zu optimierende Pilotgeschäftsszenarien
 
-Um die Verwendung von SharePoint-Syntex in Ihrer Organisation vorzubereiten, müssen Sie zunächst die Szenarien verstehen, in denen es hilfreich sein wird. Das Warum hilft festzustellen, welches Modell benötigt wird und wie Sie Ihre Organisation basierend auf der Position strukturieren, auf der das Modell angewendet wird. Im folgenden finden Sie einige Szenarien, in denen das Dokument Verständnis Ihrem Unternehmen helfen kann:
+Um sich auf die Verwendung von SharePoint Syntex in Ihrer Organisation vorzubereiten, müssen Sie zunächst die Szenarien verstehen, in denen es nützlich sein wird. Die Gründe hierfür sind hilfreich, um zu bestimmen, welches Modell benötigt wird und wie Sie Ihre Organisation basierend darauf strukturieren, wo das Modell angewendet wird. Im Folgenden finden Sie einige Szenarien, in denen Dokumentverständnissen Ihrer Organisation helfen können:
 
-- Inhaltsverarbeitung: Verarbeiten von Verträgen, Arbeitsanweisungen und anderen Formular artigen Dokumenten. Nehmen Sie die Formulare in die Form, trainieren Sie das Modell, um die Felder zu verstehen und zuzuordnen, und führen Sie dann Ihre Formulare aus, um die Daten automatisch zu erfassen. Weitere Informationen finden Sie unter [Übersicht über die Formularverarbeitung](form-processing-overview.md).
-- Rechnungsanalyse: ziehen Sie die relevanten Details aus Ihren Rechnungen heraus, und stellen Sie sicher, dass Sie den Richtlinien entsprechen oder entsprechend verarbeitet werden.
+- Inhaltsverarbeitung: Verarbeiten von Verträgen, Arbeitsanweisungen und anderen formular like-Dokumenten. Nehmen Sie die Formulare auf, schulen Sie das Modell, um die Felder zu verstehen und zu zuordnungieren, und führen Sie dann Die Formulare aus, um die Daten automatisch zu erfassen. Weitere Informationen finden Sie in der [Übersicht über die Formularverarbeitung.](form-processing-overview.md)
+- Rechnungsanalyse: Ziehen Sie die relevanten Details aus Ihren Rechnungen heraus, und stellen Sie sicher, dass sie den Richtlinien entsprechen oder entsprechend verarbeitet werden.
 
-Überlegen Sie, wie SharePoint-Syntex Ihrer Organisation helfen kann:
+Überlegen Sie, wie SharePoint Syntex Ihrer Organisation helfen kann:
 
 - Automatisieren von Geschäftsprozessen
 - Verbessern der Suchgenauigkeit
-- Verwalten des Compliance-Risikos
+- Verwalten von Compliancerisiken
 
-### <a name="form-processing-scenario-example"></a>Beispiel für Formular Verarbeitungs Szenario
+### <a name="form-processing-scenario-example"></a>Beispiel für ein Formularverarbeitungsszenario
 
-Beispielsweise können Sie einen Prozess mithilfe von SharePoint Syntex und Power Automation Features zum Nachverfolgen und Überwachen von Rechnungen einrichten.
+Sie können z. B. einen Prozess mit SharePoint Syntex- und Power Automate-Features einrichten, um Rechnungen nachverfolgt und zu überwachen.
 
-1. Einrichten einer Bibliothek zum Speichern der Rechnungsdokumente.
-1. Trainieren Sie das Modell, um Felder in den Dokumenten zu erkennen.
+1. Richten Sie eine Bibliothek zum Speichern der Rechnungsdokumente ein.
+1. Schulen Sie das Modell, um Felder in den Dokumenten zu erkennen.
 1. Extrahieren Sie die Felder, die Sie nachverfolgen möchten, in eine Liste.
-1. Richten Sie einen Fluss ein, um Sie für bestimmte Ereignisse zu benachrichtigen, beispielsweise:
+1. Richten Sie einen Fluss ein, um Sie bei bestimmten Ereignissen zu benachrichtigen, z. B.:
     - Eine neue Rechnung wird hinzugefügt.
-    - Eine Rechnung ist über das Fälligkeitsdatum gevergangen.
-    - Eine Rechnung gilt für einen Betrag, der größer als ihr automatischer Genehmigungs Betrag ist.
+    - Eine Rechnung liegt nach ihrem Fälligkeitsdatum.
+    - Eine Rechnung ist für einen Betrag, der größer als Der Betrag für die automatische Genehmigung ist.
 
-![Nachverfolgen und Überwachen von Rechnungen mit SharePoint Syntex und Power Automation](../media/content-understanding/process-invoices-flow.png)
+![Nachverfolgen und Überwachen von Rechnungen mit SharePoint Syntex und Power Automate](../media/content-understanding/process-invoices-flow.png)
 
-Wenn Sie dieses Szenario automatisieren, können Sie Folgendes tun:
+Wenn Sie dieses Szenario automatisieren, können Sie:
 
-- Sparen Sie Zeit und Geld, indem Sie Daten automatisch aus den Rechnungen extrahieren und nicht manuell.
-- Verringern Sie mögliche Fehler und stellen Sie eine bessere Compliance sicher, indem Sie Workflows verwenden, um auf die Rechnungen zu reagieren und Sie über etwaige Probleme zu informieren.
+- Sparen Sie Zeit und Geld, indem Sie Daten automatisch aus den Rechnungen extrahieren, anstatt dies manuell zu tun.
+- Reduzieren Sie potenzielle Fehler, und stellen Sie eine bessere Compliance sicher, indem Sie Workflows verwenden, um auf Rechnungen zu handeln und Sie über Probleme zu informieren.
 
-### <a name="document-understanding-scenario-example"></a>Dokument Understanding Scenario (Beispiel)
+### <a name="document-understanding-scenario-example"></a>Beispiel für ein Szenario zum Verstehen von Dokumenten
 
-Als weiteres Beispiel können Sie einen Prozess zum Identifizieren von Verträgen einrichten, die Ihr Unternehmen mit anderen Unternehmen oder Einzelpersonen hat. Sie können ein Modell einrichten, um wichtige Informationen aus diesen Verträgen zu extrahieren, beispielsweise den Namen des Clients, Gebühren, Termine oder andere wichtige Informationen, und diese der Bibliothek als Felder hinzufügen, die Sie schnell anzeigen können. Sie können auch eine Aufbewahrungs Bezeichnung für die Dokumentbibliothek anwenden, um sicherzustellen, dass Verträge vor einem bestimmten Zeitraum nicht für die entsprechende Einhaltung ihrer Geschäftsbestimmungen gelöscht werden können.
+Als weiteres Beispiel können Sie einen Prozess einrichten, um Verträge zu identifizieren, die Ihr Unternehmen mit anderen Unternehmen oder Einzelpersonen abgeschlossen hat. Sie können ein Modell einrichten, um wichtige Informationen aus diesen Verträgen zu extrahieren, z. B. den Clientnamen, Gebühren, Datumsangaben oder andere wichtige Informationen, und diese Informationen der Bibliothek als Felder hinzufügen, die Sie schnell anzeigen können. Und Sie können eine Aufbewahrungsbezeichnung auf die Dokumentbibliothek anwenden, um sicherzustellen, dass Verträge nicht vor einem bestimmten Zeitraum gelöscht werden können, um Ihre geschäftsspezifischen Bestimmungen zu erfüllen.
 
-1. Beginnen Sie im inhaltscenter, und erstellen Sie ein neues Dokument grundlegendes Modell für Verträge.
-1. Laden Sie Beispiel Dokumente für positive und negative Beispiele hoch, und führen Sie dann das Training aus, um Vertragsdokumente zu identifizieren und die Ergebnisse zu überprüfen.
-1. Schulen Sie den Extraktor, um Felder in den Verträgen zu identifizieren, beispielsweise den Clientnamen, die Gebühr und das Datum, und testen Sie dann den Extraktor.
+1. Beginnen Sie im Inhaltscenter, und erstellen Sie ein neues Dokument-Grundlegendes-Modell für Verträge.
+1. Laden Sie Beispieldokumente für positive und negative Beispiele hoch, führen Sie dann die Schulung aus, um Vertragsdokumente zu identifizieren und die Ergebnisse zu überprüfen.
+1. Schulen Sie die Extraktion, um Felder in den Verträgen zu identifizieren, z. B. client name, fee, and date, and then test the extractor.
 1. Wenn das Modell abgeschlossen ist, wenden Sie das Modell auf eine Bibliothek an, in der Sie Verträge hochladen können.
-1. Wenden Sie eine Aufbewahrungs Bezeichnung auf das Feld Date an, sodass Verträge in der Bibliothek für die Dauer aufbewahrt werden, die Ihre Organisation für Verträge benötigt.
+1. Wenden Sie eine Aufbewahrungsbezeichnung auf das Datumsfeld an, damit Verträge für die Dauer, die Ihre Organisation für Verträge benötigt, in der Bibliothek aufbewahrt werden.
 
-![Nachverfolgen und Überwachen von Verträgen mit SharePoint-Syntex und Aufbewahrungs Bezeichnungen](../media/content-understanding/process-contracts-flow.png)
+![Nachverfolgen und Überwachen von Verträgen mit SharePoint Syntex und Aufbewahrungsbezeichnungen](../media/content-understanding/process-contracts-flow.png)
 
-Wenn Sie dieses Szenario automatisieren, können Sie Folgendes tun:
+Wenn Sie dieses Szenario automatisieren, können Sie:
 
-- Sparen Sie Zeit und Geld, indem Sie automatisch Daten aus den Verträgen extrahieren und nicht manuell.
-- Stellen Sie eine bessere Compliance sicher, indem Sie Aufbewahrungs Bezeichnungen verwenden, um sicherzustellen, dass die Verträge ordnungsgemäß aufbewahrt werden.
+- Sparen Sie Zeit und Geld, indem Sie Daten automatisch aus den Verträgen extrahieren, anstatt dies manuell zu tun.
+- Sicherstellen einer besseren Einhaltung durch Die Verwendung von Aufbewahrungsbezeichnungen, um sicherzustellen, dass die Verträge angemessen aufbewahrt werden.
 
 ### <a name="tips-for-identifying-scenarios"></a>Tipps zum Identifizieren von Szenarien
 
-Wenn Sie sich überlegen, welche Geschäftsszenarien Sie berücksichtigen sollten, stellen Sie sich die folgenden Fragen:
+Wenn Sie überlegen, welche Geschäftsszenarien Sie berücksichtigen sollten, stellen Sie sich die folgenden Fragen:
 
-- Löst es ein echtes Problem?
-- Wird es weit verbreitet sein oder weit reichende Auswirkungen haben?
-- Ist es erhältlich?
+- Wird damit ein echtes Problem gelöst?
+- Wird sie weit verbreitet sein oder große Auswirkungen haben?
+- Ist sie erhältlich?
 - Können Sie den Erfolg messen?
 
-Priorisieren von Szenarien basierend auf der Auswirkung und der einfachen Implementierung. Machen Sie Ihren anfänglichen Fokusbereich zu einem höheren Wirkungs Szenario, das ebenfalls problemlos implementiert werden kann. Priorisieren von Szenarien mit niedrigeren Auswirkungen, die nur schwer zu implementieren sind.
+Priorisieren Sie Szenarien basierend auf auswirkungen und einfacher Implementierung. Machen Sie Ihre anfänglichen Fokusszenarien mit höheren Auswirkungen, die auch einfach implementiert werden können. De priorisieren Sie Szenarien mit geringeren Auswirkungen, die schwer zu implementieren sind.
 
-## <a name="identify-roles--responsibilities"></a>Identifizieren von Rollen & Verantwortlichkeiten
+## <a name="identify-roles--responsibilities"></a>Identifizieren von Rollen & Zuständigkeiten
 
-Bestimmen, wer in Ihrer Organisation die Modelle erstellen und verwalten wird? Möglicherweise sind die folgenden Rollen beteiligt:
+Bestimmen Sie, wer in Ihrer Organisation die Modelle erstellen und verwalten wird? Die folgenden Rollen können beteiligt sein:
 
-| SharePoint/Knowledge-Administrator | Power Platform-Administrator | Knowledge Manager | Modell Besitzer |
+| SharePoint/Knowledge Admin | Power Platform Admin | Knowledge Manager | Modellbesitzer |
 |:-------|:-------|:-------|:-------|
-| Aad-Rolle| Rolle hinzufügen | Aad-Rolle | Experten |
-| Konfigurieren der Formularverarbeitung | Konfigurieren einer allgemeinen Datendienst Umgebung für die Formularverarbeitung | Sammeln von Anwendungsfällen | Sammeln von Geschäfts Anwendungsfällen |
-| Verwalten von Inhalts Centern und Berechtigungen| Kaufen und Zuordnen von AIB-Gutschriften | Etablieren bewährter Methoden und Überprüfen der Modellanalyse | Erstellen und Anwenden von Modellen |
+| Rolle "AAD"| Rolle "ADD" | Rolle "AAD" | Experten |
+| Konfigurieren der Formularverarbeitung | Konfigurieren einer allgemeinen Datendienstumgebung für die Formularverarbeitung | Sammeln von Verwendungsfällen | Sammeln von Geschäftsnutzungsfällen |
+| Verwalten von Inhaltscentern und Berechtigungen| Erwerben und Zuordnen von AIB-Guthaben | Einrichten bewährter Methoden und Überprüfen der Modellanalyse | Erstellen und Anwenden von Modellen |
 
-Knowledge Manager, Besitzer von Geschäftsprozessen und Inhaltsmodell Besitzer erstellen Beispiel Modelle und Champion Adoption in der Organisation.
-Andere Personen, die beteiligt sein können: Compliance-Administrator, Taxonomie-Manager.
+Knowledge Manager, Geschäftsprozessbesitzer und Besitzer des Inhaltsmodells erstellen Beispielmodelle und verteidigern die Einführung in der Organisation.
+Andere, die möglicherweise beteiligt sind: Complianceadministrator, Taxonomiemanager.
 
-Wo werden die Modelle erstellt und angewendet? Gibt es vorhandene Prozesse oder Repositories, die verbessert werden könnten?
+Wo werden die Modelle erstellen und angewendet? Gibt es vorhandene Prozesse oder Repositorys, die erweitert werden können?
 
-- Formularverarbeitung: entscheiden, welche Websites eine Formular Verarbeitungsaktion erhalten.
-- Dokument Verständnis: Sie können mehrere inhaltscenter für verschiedene Geschäftsbereiche erstellen.
+- Formularverarbeitung: Entscheiden Sie, auf welchen Websites eine Formularverarbeitungsaktion angezeigt wird.
+- Dokumentverständnis: Sie können mehrere Inhaltscenter für verschiedene Geschäftsbereiche erstellen.
 
 ## <a name="strategic-positioning"></a>Strategische Positionierung
 
-Arbeiten Sie mit Beteiligten zusammen, um sicherzustellen, dass Sie auf der Strategie für die Verwendung von SharePoint-Syntex ausgerichtet sind. Untersuchung und Bereitstellung der folgenden Ressourcen, um diese Positionierung zu unterstützen:
+Arbeiten Sie mit den Beteiligten zusammen, um sicherzustellen, dass sie an der Strategie für die Verwendung von SharePoint Syntex ausgerichtet sind. Recherchiert und stellt die folgenden Ressourcen zur Unterstützung dieser Positionierung zur Verfügung:
 
 - Geschäftsergebnisse:
-  - Potenzielle Finanzergebnisse
-  - Mögliche Agilitäts Ergebnisse
-  - Geschäftsergebnis Vorlage
-- Stakeholder/Exec Sponsor Buy-in/Alignment
-  - Business Case-Decks
+  - Mögliche Geschäftsergebnisse
+  - Mögliche Agilitätsergebnisse
+  - Geschäftsergebnisvorlage
+- Projektbeteiligten/Exec Sponsor Buy-In/Ausrichtung
+  - Geschäftsfall decks
   - Finanzmodelle
-  - Unternehmens Bereitschaft – Kultur
+  - Unternehmensbereitschaft – Kultur
 
 ## <a name="identify-stakeholders"></a>Bestimmen der Beteiligten
 
-Identifizieren Sie die Beteiligten für Ihr Projekt.
+Identifizieren Sie die Projektbeteiligten.
 
 |Rolle |Responsibilities |Abteilung |
 |:-------|:-------|:--------|
-| Executive Sponsor (s)   | Übermitteln von Weitblick und Werten auf höherer Ebene für das Unternehmen   |  Führungskräfte   |
-| Projektleitung (en) | Überwachen des gesamten Start Ausführungs-und Rollout Prozesses | Projektmanagement |
-| Wissens Administratoren| Erstellen und Verwalten der inhaltscenter | IT oder andere Abteilung|
-| Inhalts-Manager und Modell Besitzer| Sammeln von Anwendungsfällen und erstellen und Anwenden von Modellen | Jede Abteilung|
-| Experten | Unterstützung bei der Evangelisierung und Verwaltung der Objektbehandlung | Jede Abteilung (Mitarbeiter) |
+| Geschäftsleitungssponsor(en)   | Kommunizieren von visionären Und Werten auf hoher Ebene für das Unternehmen   |  Führungskräfte   |
+| Projektleiter | Überwachen des gesamten Startausführungs- und Rolloutprozesses | Projektmanagement |
+| Wissensadministratoren| Erstellen und Verwalten der Inhaltscenter | IT oder andere Abteilung|
+| Inhaltsmanager und Modellbesitzer| Sammeln von Verwendungsfällen und Erstellen und Anwenden von Modellen | Jede Abteilung|
+| Experten | Unterstützung bei der Verankündigung und Verwaltung der Behandlung von Ablehnungen | Jede Abteilung (Mitarbeiter) |
 | Mandantenadministrator | Konfigurieren von Einstellungen auf Mandantenebene | IT-Abteilung|
-| Power Platform-Administrator| Konfigurieren der gemeinsamen Datendienste-Umgebung | IT-Abteilung|
+| Power Platform-Administrator| Konfigurieren einer allgemeinen Datendiensteumgebung | IT-Abteilung|
 
 > [!Note]
-> Obwohl es empfehlenswert ist, jede dieser Rollen während des Rollouts zu erfüllen, werden Sie möglicherweise feststellen, dass Sie nicht alle benötigen, um mit ihrer identifizierten Lösung zu beginnen.
+> Obwohl wir empfehlen, jede dieser Rollen während des Rollouts zu erfüllen, stellen Sie möglicherweise fest, dass Sie nicht alle für die ersten Schritte mit Ihrer identifizierten Lösung benötigen.
 
-## <a name="readiness-checklist"></a>Prüfliste für die Bereitschaft
+## <a name="readiness-checklist"></a>Prüfliste zur Bereitschaft
 
-Um sich für die Implementierung von SharePoint-Syntex vorzubereiten, müssen Sie Folgendes tun:
+Um sich auf die Implementierung von SharePoint Syntex zu bereiten, müssen Sie:
 
-![Bereitschaft für das Verständnis von Inhalten](../media/content-understanding/cu-adoption-readinesschecklist.png)
+![Bereitschaft zum Verständnis von Inhalten](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
-1. Planen des Endstatus
-    - Dokument Understanding Models sind die Mittel, nicht das Ende.
-    - Planen Sie die Nutzbarmachung des Werts extrahierter Metadaten mit:
+1. Planen des Endzustands
+    - Dokumentergnungsmodelle sind die Mittel, nicht das Ende.
+    - Planen Sie die Nutzung des Werts extrahierter Metadaten mit:
       - Suche
       - Filtern und Anzeigen von Formatierungen
       - Compliance
       - Automatisierung
 2. Identifizieren
-    - Verstehen der vorhandenen Informationsarchitektur und der Verwendung von Inhaltsverwaltungsfunktionen
-    - Sind alle vorhandenen Inhaltstypen gute Kandidaten für Modelle?
-    - Welche vorhandenen Prozesse werden durch Metadaten verbessert?
+    - Verstehen der vorhandenen Verwendung von Informationsarchitektur und Inhaltsverwaltungsfeatures.
+    - Sind vorhandene Inhaltstypen gut für Modelle geeignet?
+    - Welche vorhandenen Prozesse würden durch Metadaten verbessert?
 3. Entwurf
-    - Entwerfen Ihrer Herangehensweise an Informationsarchitektur, verwaltete Metadaten und Inhaltstypen
-    - Entwerfen Sie den Prozess für Definition, Erstellung und Verwaltung.
+    - Entwerfen Des Ansatzes für Informationsarchitektur, verwaltete Metadaten und Inhaltstypen
+    - Entwerfen sie den Prozess für Definition, Erstellung, Verwaltung.
 
-## <a name="engage-your-organization"></a>Einbinden Ihrer Organisation
+## <a name="engage-your-organization"></a>Engagement Ihrer Organisation
 
-1. Identifizieren von Pfahl Haltern, bestätigen von Szenarien und entwickeln des Projektplans.
-1. Konfigurieren von Einstellungen und Anwenden von Lizenzen
-1. Beginnen Sie mit Awareness and Training – rekrutieren Sie Champions.
-1. Stufenweises Rollout.  
-1. Sammeln von Feedback und durchlaufen.
-1. Wenn die Nutzung bei Bedarf wächst, planen Sie alle AI Builder-Gutschriften.
+1. Identifizieren Sie Projektinhaber, bestätigen Sie Szenarien, und entwickeln Sie einen Projektplan.
+1. Konfigurieren Sie Einstellungen, und wenden Sie Lizenzen an.
+1. Sensibilisierung und Schulung – Rekrutieren von Champions.
+1. Einführung in Phasen.  
+1. Sammeln von Feedback und Iterieren.
+1. Mit der Nutzung wächst der Plan für alle AI Builder-Guthaben nach Bedarf.

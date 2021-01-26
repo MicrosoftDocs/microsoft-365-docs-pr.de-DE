@@ -1,6 +1,6 @@
 ---
-title: Bereitstellen des Schutzes vor Bedrohungen durch Netzwerksicherheit in Microsoft 365
-description: Erfahren Sie, wie Sie Bedrohungsschutzdienste und Funktionen für die Sicherheit des IT-Netzwerks in Microsoft 365 E5 bereitstellen.
+title: Bereitstellen von Bedrohungsschutzfunktionen in Microsoft 365
+description: Erfahren Sie, wie Sie Bedrohungsschutzdienste und Sicherheitsfunktionen in Microsoft 365 E5 bereitstellen.
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,18 +15,18 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 79352aca2012e6615f41b19f4a77fc5cf125f4c4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 2da2ace96b731baedea9142e211e9301db69000d
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926750"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976573"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Bereitstellen von Bedrohungsschutzfunktionen in Microsoft 365
 
-[Schadsoftware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)und komplexe Cyberangriffe, z. B. dateilose [Bedrohungen,](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)sind häufig vorkommen. Unternehmen müssen sich und ihre Kunden mit effektiven Funktionen für die Sicherheit des IT-Netzwerks schützen. Solche Angriffe können große Probleme für Ihre Organisation verursachen, von Einem Verlust des Vertrauens bis hin zu finanziellen Problemen, ausfallbedrohenden Ausfallzeiten und vielem mehr. Der Schutz vor Bedrohungen ist wichtig, aber es kann schwierig sein, zu bestimmen, wo die Zeit, der Aufwand und die Ressourcen Ihrer Organisation konzentriert werden sollten. 
+[Schadsoftware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)und komplexe Cyberangriffe, z. B. dateilose [Bedrohungen,](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)sind häufig vorkommen. Unternehmen müssen sich und ihre Kunden mit effektiven FUNKTIONEN für die IT-Sicherheit schützen. Cyberangriffe können große Probleme für Ihre Organisation verursachen, von einem Vertrauensverlust bis hin zu finanziellen Problemen, ausfallende Ausfallzeiten und vielem mehr. Der Schutz vor Bedrohungen ist wichtig, aber es kann eine Herausforderung sein, zu bestimmen, wo die Zeit, der Aufwand und die Ressourcen Ihrer Organisation konzentriert werden sollten. 
 
-Sicherheitslösungen von Microsoft sind in unsere Produkte und Dienste integrierte. Automatisierungs- und Machine Learning-Funktionen verringern die Belastung Ihrer Sicherheitsteams, um sicherzustellen, dass die richtigen Elemente behandelt werden. Und die Stärke von Microsoft-Netzwerksicherheitslösungen baut auf Billionen von Signalen auf, die wir täglich in unserem [Intelligent Security Graph verarbeiten.](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph) Microsoft 365-Sicherheitslösungen umfassen [Microsoft 365 Defender,](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)eine Lösung, die Signale über Ihre E-Mails, Daten, Geräte und Identitäten hinweg zusammen bringt, um ein Bild von erweiterten Bedrohungen für Ihre Organisation zu zeichnen.
+Sicherheitslösungen von Microsoft sind in unsere Produkte und Dienste integrierte. Automatisierungs- und Machine Learning-Funktionen verringern die Belastung Ihrer Sicherheitsteams, um sicherzustellen, dass die richtigen Elemente behandelt werden. Und die Stärke von Sicherheitslösungen von Microsoft baut auf Billionen von Signalen auf, die wir täglich in unserem [Intelligent Security Graph verarbeiten.](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph) Microsoft 365-Sicherheitslösungen umfassen [Microsoft 365 Defender,](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)eine Lösung, die Signale über Ihre E-Mails, Daten, Geräte und Identitäten hinweg zusammen bringt, um ein Bild von erweiterten Bedrohungen für Ihre Organisation zu zeichnen.
 
 
 Schauen Sie sich dieses Video an, um einen Überblick über den Bereitstellungsprozess zu erhalten.
@@ -39,7 +39,7 @@ Verwenden Sie diesen Artikel als Leitfaden für die Implementierung Ihrer Bedroh
 
 [Mit Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise-e5-business-software?activetab=pivot%3aoverviewtab) können Sie Ihre Organisation mit adaptiver, integrierter Intelligenz schützen. Mit den Bedrohungsschutzfunktionen in Microsoft 365 E5 können Sie erweiterte Bedrohungen, gefährdete Identitäten und böswillige Aktionen in Ihrer lokalen und Cloudumgebung erkennen und untersuchen.
 
-In Microsoft 365 E5 sind Funktionen zum Schutz vor Bedrohungen standardmäßig integriert. Signale von jeder Funktion erhöhen die Gesamtfähigkeit, Bedrohungen zu erkennen und darauf zu reagieren. Die kombinierten Funktionen bieten im Vergleich zur Ausführung von Nicht-Microsoft-Produkten den besten Schutz für Organisationen, insbesondere multinationale Organisationen. Die folgende Abbildung zeigt die Dienste und Funktionen zum Schutz vor Bedrohungen in Microsoft 365 E5, die in diesem Artikel beschrieben werden.
+In Microsoft 365 E5 sind Funktionen zum Schutz vor Bedrohungen standardmäßig integriert. Signale von jeder Funktion erhöhen die Gesamtfähigkeit, Bedrohungen zu erkennen und darauf zu reagieren. Der kombinierte Satz von Funktionen bietet im Vergleich zur Ausführung von Nicht-Microsoft-Produkten den besten Schutz für Organisationen, insbesondere multinationale Organisationen. Die folgende Abbildung zeigt die Bedrohungsschutzdienste und -funktionen in Microsoft 365 E5, die in diesem Artikel beschrieben werden.
 
 ![Übersicht über Microsoft 365 Defender](../media/solutions-architecture-center/deploy-threat-protection-across-m365-overview.png)
 

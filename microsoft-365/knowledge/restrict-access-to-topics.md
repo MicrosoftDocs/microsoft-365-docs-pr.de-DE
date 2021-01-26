@@ -1,6 +1,6 @@
 ---
 title: Einschränken des Zugriffs auf Themen
-description: Vorgehensweise Ausschließen von Themen, damit diese nicht erkannt werden.
+description: So schließen Sie Themen aus, um zu verhindern, dass sie gefunden werden.
 author: efrene
 ms.author: efrene
 manager: pamgreen
@@ -8,41 +8,43 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: b23d01585d9282132d9e55c74bb22bcdc6ca314a
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: f7e8406ee7090387d4500f69955330466f28c6c0
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698960"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976145"
 ---
-# <a name="restrict-access-to-topics-in-topic-experiences"></a>Einschränken des Zugriffs auf Themen in Thema Erfahrungen
+# <a name="restrict-access-to-topics-in-topic-experiences"></a>Einschränken des Zugriffs auf Themen in Themenerfahrungen
 
-In Themenbereichen sollten die Beteiligten in Ihrer Organisation möglicherweise sicherstellen, dass bestimmte Themen nicht erkannt und für Ihre lizenzierten Benutzer verfügbar gemacht werden. Sie arbeiten beispielsweise an einem Projekt, für das Sie noch keine Informationen verfügbar machen möchten. Während Office 365 Berechtigungen für Websites, Dateien und andere Ressourcen verhindern, dass Benutzer in Themen vertrauliche Informationen von Benutzern anzeigen können, gibt es zusätzliche Schutzvorkehrungen, um zu verhindern, dass bestimmte Themen jemals erkannt werden.
+In den Themenerfahrungen möchten Die Beteiligten in Ihrer Organisation möglicherweise sicherstellen, dass bestimmte Themen nicht ermittelt und für Ihre lizenzierten Benutzer verfügbar gemacht werden. Sie arbeiten beispielsweise an einem Projekt, zu dem Sie noch keine Informationen verfügbar machen möchten. Während Office 365-Berechtigungen für Websites, Dateien und andere Ressourcen Verhindern, dass Benutzer von Themenerfahrungen vertrauliche Informationen in Themen anzeigen, gibt es zusätzliche Sicherheitsvorkehrungen, um zu verhindern, dass bestimmte Themen jemals gefunden werden.
 
-Während Knowledge-Administratoren die Einstellungen für das Wissensnetzwerk steuern, um zu verhindern, dass Themen entdeckt werden, müssen Wissensmanager und andere Beteiligte wissen, wie dies geschieht, damit Sie gemeinsam daran arbeiten können.
+Während Wissensadministratoren die Einstellungen des Wissensnetzwerks steuern, um zu verhindern, dass Themen gefunden werden, müssen Wissensmanager und andere Beteiligte wissen, wie dies geschieht, damit sie gemeinsam daran arbeiten können.
 
 > [!Important] 
-> In diesem Artikel wird beschrieben, wie Sie verhindern können, dass Themen über AI identifiziert oder in Ihrer Umgebung als zusätzliche Sicherheitsvorkehrungen betrachtet werden. Es ist wichtig zu beachten, dass die Benutzer in den Themen Erfahrungen keine Elemente in einem Thema anzeigen dürfen, auf die Sie über Office 365 Berechtigungen nicht zugreifen können. Selbst wenn ein Benutzer ein Thema, dessen Dateien, Websites und Seiten anzeigen kann, sind ihm keine Office 365 Berechtigungen zur Anzeige angezeigt. Stellen Sie sicher, dass die Berechtigungen für vertrauliche Dateien ordnungsgemäß festgelegt sind, sollten Sie die primäre Sicherheits Sicherung sein.
+> In diesem Artikel werden Möglichkeiten beschrieben, wie Sie verhindern können, dass Themen über KI identifiziert oder in Ihrer Umgebung als zusätzliche Sicherheitsvorkehrungen angezeigt werden. Es ist wichtig zu beachten, dass Benutzer in den Themenerfahrungen nichts in einem Thema anzeigen dürfen, auf das sie nicht über Office 365-Berechtigungen zugreifen dürfen. Auch wenn ein Benutzer ein Thema anzeigen kann, sind seine Dateien, Websites und Seiten, für die er keine Office 365-Berechtigungen zum Anzeigen hat, für sie nicht sichtbar. Stellen Sie sicher, dass Berechtigungen für vertrauliche Dateien ordnungsgemäß festgelegt sind, damit die Sicherheit gewährleistet ist.
 
 ## <a name="prevent-topics-from-being-identified"></a>Verhindern, dass Themen identifiziert werden
 
-Der Wissens Administrator kann den Zugriff auf bestimmte Themen einschränken, indem er verhindert, dass er in der anfänglichen Indizierung gefunden wird. Es gibt zwei Möglichkeiten, dies in den Einstellungen des Knowledge Network-Administrators im Microsoft 365 Admin Center zu tun.
+Der Wissensadministrator kann den Zugriff auf bestimmte Themen einschränken, indem er verhindert, dass sie bei der anfänglichen Indizierung gefunden werden. Es gibt zwei Möglichkeiten, dies in den Administratoreinstellungen des Knowledge Network im Microsoft 365 Admin Center zu tun.
  
-- [Wählen Sie SharePoint-Websites aus, die von der Themen Ermittlung ausgeschlossen](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery#select-sharepoint-topic-sources)werden sollen: mit dieser Einstellung können Sie verhindern, dass bestimmte SharePoint-Websites für Themen gecrawlt werden.
-- [Themen nach Namen ausschließen](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery#exclude-topics-by-name): Administratoren können diese Einstellung verwenden, um zu verhindern, dass bestimmte Themen nach Namen erkannt werden. In den Einstellungen des Wissensnetzwerk Administrators kann ein Administrator eine Liste von Themen hochladen, die in einer CSV-Datei ausgeschlossen werden sollen. Sie können Themen ausschließen, die genaue oder partielle Übereinstimmungen mit einem Themen Namen aufweisen.
+- [Auswählen von SharePoint-Websites, die von der](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery#select-sharepoint-topic-sources)Themenermittlung ausgeschlossen werden: Sie können diese Einstellung verwenden, um zu verhindern, dass bestimmte SharePoint-Websites nach Themen gecrawlt werden.
+- [Themen nach Namen ausschließen:](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery#exclude-topics-by-name)Administratoren können diese Einstellung verwenden, um zu verhindern, dass bestimmte Themen nach Namen ermittelt werden. In den Administratoreinstellungen des Knowledge Network kann ein Administrator eine Liste von Themen hochladen, die in einer CSV-Datei ausgeschlossen werden sollen. Sie können Themen ausschließen, die genaue oder teilweise Übereinstimmungen mit einem Themennamen haben.
 
 ## <a name="prevent-topics-from-being-viewed-by-specific-users"></a>Verhindern, dass Themen von bestimmten Benutzern angezeigt werden
 
-Wissens Administratoren können auch [auswählen, wer Themen in Ihrer Organisation anzeigen kann](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules). Mit dieser Einstellung können Sie auswählen, welche lizenzierten Benutzer alle Themen anzeigen können. In einer Pilotumgebung können Sie beispielsweise nur zulassen, dass eine kleine Gruppe von Benutzern Themen anzeigen kann.
+Wissensadministratoren können auch [auswählen, wer Themen in Ihrer Organisation anzeigen kann.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules) Mit dieser Einstellung können Sie auswählen, welche lizenzierten Benutzer alle Themen anzeigen können. In einer Pilotumgebung können Sie beispielsweise nur einer kleinen Gruppe von Benutzern erlauben, Themen anzeigen zu können.
 
-## <a name="remove-topics-from-being-viewed"></a>Entfernen von Themen aus der Ansicht
+## <a name="remove-topics-from-being-viewed"></a>Entfernen von Themen aus der Anzeige
 
-Wissensmanager können auswählen, [Themen zu entfernen](https://docs.microsoft.com/microsoft-365/knowledge/manage-topics) , damit Benutzer Sie nicht mehr sehen können. Auf der Seite **Themen verwalten** im **Themen Center** können Knowledge Manager auswählen, bestimmte Themen abzulehnen, um zu verhindern, dass Sie angezeigt werden. Themen können entfernt werden, unabhängig davon, ob Sie den Status "vorgeschlagen" oder "bestätigt" aufweisen.
+Wissensmanager können Themen [entfernen,](https://docs.microsoft.com/microsoft-365/knowledge/manage-topics) damit Benutzer sie nicht mehr sehen können. Auf der **Seite "Themen verwalten"** im **Themencenter** können Knowledge Manager bestimmte Themen ablehnen, um zu verhindern, dass sie angezeigt werden. Themen können unabhängig davon entfernt werden, ob sie sich in einem vorgeschlagenen oder bestätigten Zustand befinden.
 
-Entfernte Themen können bei Bedarf später als sichtbare Themen wieder hinzugefügt werden. 
+Entfernte Themen können später bei Bedarf wieder als angezeigte Themen hinzugefügt werden. 
 
 
 ## <a name="see-also"></a>Weitere Informationen:

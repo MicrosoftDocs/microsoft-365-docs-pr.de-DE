@@ -1,5 +1,5 @@
 ---
-title: 'Thema Experiences Topic Discovery and Kuration (Preview) '
+title: 'Thema "Erfahrungssuche und -curation" (Vorschau) '
 description: Übersicht über die Art und Weise, wie Themen ermittelt werden.
 ms.author: efrene
 author: efrene
@@ -8,49 +8,51 @@ audience: admin
 ms.topic: article
 ms.service: ''
 ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 2d885d841b280e345d90742fe003bb443160c21f
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: ea0bbc1f7d34ff01fcf446bfa4bbd0b95f310c4c
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698949"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976167"
 ---
-# <a name="topic-experiences-discovery-and-curation-preview"></a>Thema Experiences Discovery and Kuration (Preview)
+# <a name="topic-experiences-discovery-and-curation-preview"></a>Entdecken und Krümmen von Themenerfahrungen (Vorschau)
 
 > [!Note] 
-> Der Inhalt dieses Artikels ist für Project Cortex private Preview. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
+> Der Inhalt dieses Artikels ist für Project Cortex Private Preview vorgesehen. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
 
-Mit dem Thema Erfahrungen werden Wissensinformationen in Ihrer Microsoft 365-Umgebung in Wissen umgewandelt. Wir haben alle Erfahrung im Lesen von Dokumenten und Website Seiten, auf denen wir mit nicht vertrauten Begriffen auftreten. Oft beenden wir das, was wir tun, um wertvolle Zeit zu verbringen, um weitere Informationen zu suchen.
+Themenerfahrungen wandeln Wissensinformationen in Wissen in Ihrer Microsoft 365-Umgebung um. Wir haben alle erfahren durch Dokumente und Websiteseiten gelesen, auf denen Begriffe auftreten, mit denen wir nicht vertraut sind. Wir beenden oft, was wir tun, um viel Zeit mit der Suche nach weiteren Informationen zu verbringen.
 
-In diesem Thema werden Microsoft Graph und AI verwendet, um **Themen** in Ihrer Organisation zu identifizieren.  Ein Thema ist eine Phrase oder ein Begriff, die eine bestimmte Bedeutung für eine Organisation hat, in der Benutzer davon profitieren, wenn Sie eine Wiki-Seite dazu anzeigen können. AI sucht nach Personen und Inhalten, die mit dem Thema verbunden sind, und wenn genug erkannt wird, wird es zu einem vorgeschlagenen Thema.
+Was Topic Experiences macht, ist die Verwendung von Microsoft Graph und KI, um **Themen** in Ihrer Organisation zu identifizieren.  Ein Thema ist ein Ausdruck oder Ausdruck, der eine bestimmte Bedeutung für eine Organisation hat, wobei Benutzer davon profitieren würden, wenn sie eine Wiki-Seite darüber anzeigen können. Ai sucht nach Personen und Inhalten, die mit dem Thema verbunden sind, und wird, wenn genug gefunden, zu einem vorgeschlagenen Thema.
 
-Die von AI generierten Themen Informationen werden zu einer **Themen Seite** hinzugefügt, die Folgendes enthalten kann:
+Die von AI generierten Themeninformationen werden einer **Themenseite hinzugefügt,** die:
 - Eine kurze Beschreibung des Themas.
 - Alternative Namen für das Thema.
-- Personen, die vielleicht mehr über das Thema wissen.
-- Websites, Dateien und Seiten, die im Zusammenhang mit dem Thema stehen könnten.
+- Personen, die möglicherweise mehr über das Thema wissen.
+- Websites, Dateien und Seiten, die möglicherweise im Zusammenhang mit dem Thema stehen.
 
-Das Thema Erfahrungen stellt dann sicher, dass jede Instanz eines Themas auf allen modernen SharePoint-Website Seiten in Ihrem Mandanten hervorgehoben wird. Wenn ein Benutzer neugierig ist, mehr über ein Thema zu erfahren, kann er das markierte Thema auswählen, um eine **Zusammenfassungs** Karte für das Thema anzuzeigen, die eine kurze Beschreibung enthält. Wenn Sie weitere Informationen erhalten möchten, können Sie in der Zusammenfassung einen Link zu den **Themen Details** auswählen, um die Detailseite des Themas zu öffnen.
+Themenerfahrungen stellen dann sicher, dass jede Instanz eines Themas auf allen modernen SharePoint-Websiteseiten in Ihrem Mandanten hervorgehoben ist. Wenn ein Benutzer mehr über ein Thema erfahren möchte, kann er  das hervorgehobene Thema auswählen, um eine Zusammenfassungskarte für Themen mit einer kurzen Beschreibung zu erhalten. Und wenn sie mehr erfahren möchten, können sie einen **Link** "Themendetails" in der Zusammenfassung auswählen, um die detaillierte Themenseite zu öffnen.
 
-![Highlights des Themas](../media/knowledge-management/saturn.png) </br>
+![Themenhighlights](../media/knowledge-management/saturn.png) </br>
 
-Darüber hinaus können Benutzer auch über die Microsoft-Suche nach Themen suchen.
+Darüber hinaus können Benutzer auch Themen über Microsoft Search finden.
 
 
-## <a name="topic-curation"></a>Thema Kuration
+## <a name="topic-curation"></a>Themenkrümmung
 
-Topic Experiences begrüßt die menschliche "Kuration", um die Qualität ihrer Themen zu verbessern. Während AI zunächst die Themen identifiziert und vorschlägt, werden manuell Aktualisierungen an Inhalten von Mitwirkenden vorgenommen, Bestätigung von Benutzern für von AI generierte Inhalte und Feedback zum Nutzen von Themen sind unerlässlich.
+Themenerfahrungen begrüßen die menschliche "Curation", um die Qualität Ihrer Themen zu verbessern. Während AI zunächst Themen identifiziert und vorschlägt, sind manuell vorgenommene Aktualisierungen von Inhalten von Mitwirkenden, die Bestätigung von Benutzern für von AI generierte Inhalte und Feedback zur Nützlichkeit von Themen unerlässlich.
 
-- Von AI generierte Themen ("vorgeschlagene Themen") können von **Wissensmanagern** in Ihrer Organisation überprüft werden. Auf der Seite Themen verwalten im Themen Center können Sie auswählen, ob Sie Sie als gültig bestätigen oder ablehnen, um zu verhindern, dass Sie angezeigt werden.
+- Von KI generierte Themen ("vorgeschlagene Themen") können von Knowledge **Managern** in Ihrer Organisation überprüft werden. Auf der Seite "Themen verwalten" im Themencenter können sie sie als gültig bestätigen oder ablehnen, um zu verhindern, dass sie angezeigt werden.
 
-- Sie können allen lizenzierten Benutzern Berechtigungen zum *Erstellen und bearbeiten* erteilen, damit Sie Änderungen an vorhandenen Themen vornehmen oder bei Bedarf neue Themen erstellen können. 
+- Sie können allen *lizenzierten* Benutzern Berechtigungen zum Erstellen und Bearbeiten von Themen zuweisen, damit diese bei Bedarf Änderungen an vorhandenen Themen vornehmen oder neue Themen erstellen können. 
 
-- Selbst Benutzer, die nur über Lesezugriff auf Topic (Topic Viewer) verfügen, werden aufgefordert, die Nützlichkeit bestimmter Themen zu überprüfen.
+- Selbst Benutzer, die nur Lesezugriff auf das Thema haben (Themenanzeiger), werden aufgefordert, die Nützlichkeit bestimmter Themen zu überprüfen.
 
-Selbst mit menschlichen Kuration sucht AI kontinuierlich nach weiteren Informationen zu Themen und sucht nach der Überprüfung durch die Menschen. Wenn AI beispielsweise denkt, dass Sie eine Person sind, die als Experte für ein Thema fixiert werden sollte, werden Sie aufgefordert, dies zu bestätigen. 
+Auch bei der menschlichen Curation sucht KI ständig nach weiteren Informationen zu Themen und sucht nach einer menschlichen Überprüfung. Wenn AI beispielsweise der Meinung ist, dass Sie eine Person sind, die als Experte an ein Thema angeheftet werden sollte, wird sie Sie bitten, dies zu bestätigen. 
 
 
 

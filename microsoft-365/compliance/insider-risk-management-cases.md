@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 84b17b70aa9b95727036e8f1febd4d0adec740a9
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: feabf3083b0ff1d182884c66fc2b2fd890275a0a
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841222"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976212"
 ---
 # <a name="insider-risk-management-cases"></a>Insider-Risikomanagement-Fälle
 
@@ -175,8 +175,7 @@ So fügen Sie einen Mitwirkenden zu einem Fall hinzu:
 2. Wählen Sie einen Fall aus, und wählen Sie dann die Registerkarte **"Mitwirkende"** aus.
 3. Wählen Sie **"Mitwirkender hinzufügen" aus.**
 4. Beginnen Sie **im** Dialogfeld "Mitwirkender hinzufügen" mit der Eingabe des Namens des Benutzers, den Sie hinzufügen möchten, und wählen Sie dann den Benutzer aus der Liste der vorgeschlagenen Benutzer aus. Diese Liste wird aus dem Azure Active Directory Ihres Mandantenabonnements generiert.
-5. Wählen Sie **im Dialogfeld** Mitwirkender hinzufügen die Zugriffsebene für den Mitwirkenden aus. Sie können **"Permanent" oder** **"Temporary" auswählen.**
-6. Wählen **Sie "Hinzufügen"** aus, um den Benutzer als Mitwirkender hinzuzufügen, oder wählen Sie **"Abbrechen"** aus, um das Dialogfeld zu schließen, ohne den Benutzer als Mitwirkenden hinzuzufügen.
+5. Wählen **Sie "Hinzufügen"** aus, um den Benutzer als Mitwirkender hinzuzufügen, oder wählen Sie **"Abbrechen"** aus, um das Dialogfeld zu schließen, ohne den Benutzer als Mitwirkenden hinzuzufügen.
 
 ## <a name="case-actions"></a>Fallmaßnahmen
 
