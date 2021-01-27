@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: e3cd36fe6a7f075516d7778094ff5dd29480bfd9
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: ec5085b2d0a828300cb90fb260cb293eda4b9433
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794127"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988181"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informationen zur Aufbewahrung für Microsoft Teams
 
@@ -38,7 +38,10 @@ Informationen zu anderen Arbeitsbereichen finden Sie unter:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Lieferumfang für Aufbewahrung und Löschung
 
-Die folgenden Teams-Elemente können über Aufbewahrungsrichtlinien für Teams beibehalten oder gelöscht werden: Chat- und Kanalnachrichten, einschließlich eingebetteter Bilder, Tabellen, Hypertextlinks und Links zu anderen Teams-Nachrichten und -Dateien. Chatnachrichten umfassen alle Namen der Personen im Chat, und Kanalmeldungen umfassen den Teamnamen und den Nachrichtentitel (sofern vorhanden). 
+Die folgenden Teams-Elemente können unter Verwendung von Aufbewahrungsrichtlinien für Teams aufbewahrt und gelöscht werden: Chatnachrichten und Kanalnachrichten, einschließlich eingebetteter Bilder, Tabellen, Hypertextlinks und Links zu anderen Teams-Nachrichten und Dateien sowie [Karteninhalte](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chatnachrichten umfassen alle Namen der Personen im Chat, und Kanalmeldungen umfassen den Teamnamen und den Nachrichtentitel (sofern vorhanden). 
+
+> [!NOTE]
+> Die Einbindung von Karteninhalten ist eine neue Funktion, die Mandanten gegenwärtig zur Verfügung gestellt wird. Weitere Informationen finden Sie unter [Microsoft 365 Compliance-Funktionen für adaptive Karteninhalte über Apps in Teams jetzt verfügbar](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
 Teams-Nachrichten in privaten Kanälen und Reaktionen von anderen Personen in der Form von Emoticons sind nicht enthalten.
 

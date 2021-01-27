@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über die Microsoft-Produktivitätsbewertung.
-ms.openlocfilehash: 8ba1ceb57cd322a67e7b154700a8ac90c62f5ef0
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 9f3e24d4af6858f106cde937940d5f0be1a4f85f
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921242"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988068"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft-Produktivitätsbewertung 
 
@@ -80,13 +80,14 @@ Für Mitarbeitererfahrungsdaten benötigen Sie ein Abonnement für Microsoft 365
 
 Die Produktivitätsbewertung steht nur im Microsoft 365 Admin Center zur Verfügung und kann nur von IT-Experten genutzt werden, die über eine der folgenden Rollen verfügen:  
 
-- Globaler Administrator 
+- Globaler Administrator
 - Exchange-Administrator
-- SharePoint-Administrator 
-- Skype for Business-Administrator 
-- Microsoft Teams-Administrator 
-- Globaler Leser 
-- Berichteleser 
+- SharePoint-Administrator
+- Skype for Business-Administrator
+- Microsoft Teams-Administrator
+- Globaler Leser
+- Berichteleser
+- Leseberechtigter für Verwendungszusammenfassungsberichte
 
 > [!NOTE]
 > Nur ein IT-Experte mit der Rolle „Globaler Administrator“ kann einen Mandanten für die Produktivitätsbewertung registrieren oder auswählen.

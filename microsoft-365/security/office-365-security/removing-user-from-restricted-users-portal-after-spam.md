@@ -10,7 +10,6 @@ audience: ITPro
 ms.topic: how-to
 f1_keywords:
 - ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -19,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: Hier erfahren Administratoren, wie sie Benutzer aus dem Portal für eingeschränkte Benutzer in Office 365 entfernen können. Benutzer werden aufgrund des Versands von ausgehenden Spamnachrichten zum Portal für eingeschränkte Benutzer hinzugefügt, in der Regel als Folge einer Kontokompromittierung.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bca9366fdb8cacdc58c12757e870c8ead8f1fa7a
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 779e769b76299edf9b6d205f64bed4738f2f2499
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683055"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988192"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Entfernen von blockierten Benutzern aus dem Portal "Eingeschränkte Benutzer" in Office 365
 
@@ -71,7 +72,7 @@ Im Security & Compliance Center oder in Exchange Online PowerShell können Admin
 5. Klicken Sie zur Änderungsbestätigung auf **Ja**.
 
    > [!NOTE]
-   > Es kann bis zu 30 Minuten oder länger dauern, bis Einschränkungen aufgehoben werden.
+   > Es kann bis zu 24 Stunden dauern, bis alle Einschränkungen für den Benutzer aufgehoben sind.
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>Überprüfen der Warnungseinstellungen für eingeschränkte Benutzer
 
@@ -82,7 +83,7 @@ Die standardmäßige Benachrichtigungsrichtlinie mit dem Namen **Benutzer, desse
 
 1. Wechseln Sie im Security & Compliance Center zu **Benachrichtigungen** \> **Benachrichtigungsrichtlinien**.
 
-2. Wählen Sie die Benachrichtigung **Benutzer, dessen E-Mail-Versand blockiert wurde**.
+2. Wählen Sie die Benachrichtigung **Benutzer, dessen E-Mail-Versand blockiert wurde** aus.
 
 3. Überprüfen oder konfigurieren Sie im Flyout die folgenden Einstellungen:
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Verwenden Sie das Tool für die Inhaltssuche im Security & Compliance Center, um Chatdaten von Teams für lokale Benutzer in einer Exchange-Hybridbereitstellung zu suchen und zu exportieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9620c48056545e6d6cf053040849acfe0a1bc68e
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: 23f8ea08de3d7fdbbc36274374d315ef0cb66a84
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868013"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976202"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Suche nach Teams-Chatdaten für lokale Benutzer
 
@@ -34,6 +34,8 @@ Hier sind die Anforderungen und Einschränkungen für das Aktivieren von cloudba
 - Die Benutzerkonten in Ihrem lokalen Verzeichnisdienst (z. B. Active Directory) müssen mit Azure Active Directory, dem Verzeichnisdienst in Microsoft 365, synchronisiert werden. Dies bedeutet, dass in Microsoft 365 ein E-Mail-Benutzerkonto erstellt wird, das einem Benutzer zugeordnet ist, dessen primäres Postfach sich in der lokalen Organisation befindet.
 
 - Der Benutzer, dessen primäres Postfach in der lokalen Organisation gespeichert ist, muss eine Microsoft Teams-Lizenz und mindestens eine Exchange Online Plan 1-Lizenz zugewiesen haben.
+
+- Wenn Ihre Organisation nicht über eine Exchange-Hybridbereitstellung verfügt, müssen Sie Ihr lokales Exchange-Schema mit Azure Active Directory synchronisieren. Wenn Sie das nicht tun, besteht möglicherweise das Risiko, dass in Exchange Online cloudbasierte Postfächer für Benutzer dupliziert werden, die über ein Postfach in Ihrer lokalen Exchange-Organisation verfügen.
 
 - Im cloudbasierten Speicherbereich werden nur die Teams-Chatdaten im Zusammenhang mit einem lokalen Benutzer gespeichert. Ein lokaler Benutzer kann in keiner Weise auf diesen Speicherbereich zugreifen.
 
