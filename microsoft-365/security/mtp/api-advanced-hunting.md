@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4213773c3305c28f0913013d8f7634c083811f52
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 99f39a10de6231a72220c5c2a90ec915b1a4e44a
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932082"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988116"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender Advanced hunting API
 
@@ -46,11 +46,14 @@ Die folgenden Bedingungen beziehen sich auf alle Abfragen.
 
 1. Abfragen untersuchen und geben Daten aus den letzten 30 Tagen zurück.
 2. Ergebnisse können bis zu 100.000 Zeilen zurückgeben.
-3. Sie können bis zu 10 Anrufe pro Minute und Mandant erstellen.
-4. Sie haben 10 Minuten Laufzeit pro Stunde und Mandant.
-5. Sie haben insgesamt vier Stunden Laufzeit pro Tag pro Mandant.
+3. Sie können bis zu 15 Anrufe pro Minute und Mandant erstellen.
+4. Sie haben 10 Minuten Ausführungszeit pro Stunde und Mandant.
+5. Sie haben insgesamt vier Stunden Laufzeit pro Tag und Mandant.
 6. Wenn eine einzelne Anforderung länger als 10 Minuten ausgeführt wird, tritt ein Zeitfehler auf und es wird ein Fehler zurückgegeben.
-7. Ein HTTP-Antwortcode gibt an, dass Sie ein Kontingent erreicht haben, entweder durch die Anzahl der gesendeten Anforderungen oder durch die `429` zugewiesene Laufzeit. Der Antworttext enthält die Zeit bis zum Zurücksetzen des erreichten Kontingents.
+7. Ein HTTP-Antwortcode gibt an, dass Sie ein Kontingent erreicht haben, entweder durch die Anzahl der gesendeten Anforderungen oder durch die `429` zugewiesene Laufzeit. Lesen Sie den Antworttext, um den Grenzwert zu verstehen, den Sie erreicht haben. 
+
+> [!NOTE]
+> Alle oben aufgeführten Kontingente (z. B. 15 Anrufe pro Min.) sind pro Mandantengröße. Diese Kontingente sind das Minimum.
 
 ## <a name="permissions"></a>Berechtigungen
 

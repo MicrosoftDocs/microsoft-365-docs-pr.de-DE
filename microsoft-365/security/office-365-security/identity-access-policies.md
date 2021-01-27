@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: a928044df2c4185cff71db4883dcc1ddf30cdf3e
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 511f044960c5b723c8e10f6644007036c45d1f44
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932586"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988092"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 
@@ -47,7 +47,7 @@ Hier ist eine einseitige PDF-Zusammenfassung mit Links zu den einzelnen Richtlin
 Im restlichen Teil dieses Artikels wird beschrieben, wie Sie diese Richtlinien konfigurieren.
 
 > [!NOTE]
-> Die Verwendung der mehrstufigen Authentifizierung (MFA) wird empfohlen, bevor Sie Geräte in Intune registrieren, um sicherzustellen, dass das Gerät im Besitz des beabsichtigten Benutzers ist. Sie müssen Geräte in Intune registrieren, bevor Sie Richtlinien zur Gerätekonformität erzwingen können.
+> Die Verwendung der mehrstufigen Authentifizierung (Multi-Factor Authentication, MFA) wird empfohlen, bevor Sie Geräte in Intune registrieren, um sicherzustellen, dass das Gerät im Besitz des beabsichtigten Benutzers ist. Sie müssen Geräte in Intune registrieren, bevor Sie Richtlinien zur Gerätekonformität erzwingen können.
 
 Um Ihnen Zeit zum Ausführen dieser Aufgaben zu geben, wird empfohlen, die Basisrichtlinien in der in dieser Tabelle aufgeführten Reihenfolge zu implementieren. Die Richtlinien für die MFA für vertrauliche und hochgradig regulierte Schutzebenen können jedoch jederzeit implementiert werden.
 
@@ -69,7 +69,7 @@ Um Ihnen Zeit zum Ausführen dieser Aufgaben zu geben, wird empfohlen, die Basis
 
 Identifizieren Sie vor dem Konfigurieren von Richtlinien die Azure AD-Gruppen, die Sie für jede Schutzebene verwenden. In der Regel gilt der grundlegende Schutz für alle In der Organisation. Einem Benutzer, der sowohl für den grundlegenden als auch den vertraulichen Schutz einbezogen wird, werden alle Basisrichtlinien sowie die vertraulichen Richtlinien angewendet. Der Schutz ist kumulativ, und die restriktivste Richtlinie wird erzwungen.
 
-Eine empfohlene Vorgehensweise besteht in der Erstellung einer Azure AD-Gruppe für den Ausschluss des bedingten Zugriffs. Fügen Sie diese Gruppe allen Richtlinien für bedingten  Zugriff im Wert **"Ausschließen"** der Einstellung "Benutzer und Gruppen" im Abschnitt **"Zuweisungen"** hinzu. Auf diese Weise erhalten Sie eine Methode, um einem Benutzer während der Behandlung von Zugriffsproblemen Zugriffsrechte zu ermöglichen. Dies wird nur als temporäre Lösung empfohlen. Überwachen Sie diese Gruppe auf Änderungen, und stellen Sie sicher, dass die Ausschlussgruppe nur wie beabsichtigt verwendet wird.
+Eine empfohlene Vorgehensweise besteht in der Erstellung einer Azure AD-Gruppe für den Ausschluss des bedingten Zugriffs. Fügen Sie diese Gruppe allen Richtlinien für bedingten  Zugriff im Wert **"Ausschließen"** der Einstellung "Benutzer und Gruppen" im Abschnitt **"Zuweisungen"** hinzu. Dadurch erhalten Sie eine Methode zum Bereitstellen des Zugriffs für einen Benutzer während der Behandlung von Zugriffsproblemen. Dies wird nur als temporäre Lösung empfohlen. Überwachen Sie diese Gruppe auf Änderungen, und stellen Sie sicher, dass die Ausschlussgruppe nur wie beabsichtigt verwendet wird.
 
 Hier ist ein Beispiel für gruppenzuweisung und Ausschlüsse für MFA erforderlich.
 
@@ -85,7 +85,7 @@ Dies sind die Ergebnisse:
 
 - Mitglieder der Gruppe "Top Secret Project X" müssen immer MFA verwenden.
 
-  In diesem Fall entsprechen Mitglieder der Gruppe "Top Secret Project X" sowohl den Basisrichtlinien als auch den streng regulierten Richtlinien für bedingten Zugriff. Die Zugriffssteuerungen für beide Richtlinien werden kombiniert. Da die Zugriffssteuerung für die stark regulierte Richtlinie für bedingten Zugriff restriktiver ist, wird sie verwendet.
+  In diesem Fall entsprechen Die Mitglieder der Gruppe "Top Secret Project X" sowohl den Basisrichtlinien als auch den streng regulierten Richtlinien für bedingten Zugriff. Die Zugriffssteuerungen für beide Richtlinien werden kombiniert. Da die Zugriffssteuerung für die stark regulierte Richtlinie für bedingten Zugriff restriktiver ist, wird sie verwendet.
 
 Seien Sie vorsichtig, wenn Sie auf Gruppen und Benutzer höhere Schutzebenen anwenden. Beispielsweise müssen Mitglieder der Gruppe "Streng geheimes Projekt X" bei jeder Anmeldung MFA verwenden, auch wenn sie nicht an stark regulierten Inhalten für Project X arbeiten.
 
@@ -95,7 +95,7 @@ Alle Azure AD-Gruppen, die im Rahmen dieser Empfehlungen erstellt wurden, müsse
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>MFA basierend auf dem Anmelderisiko erforderlich
 
-Ihre Benutzer sollten sich vor der Verwendung für MFA registrieren lassen. Wenn Sie über Microsoft 365 E5, Microsoft 365 E3 mit dem Identitäts-& Threat Protection-Add-On, Office 365 mit EMS E5 oder einzelne Azure AD Premium P2-Lizenzen verfügen, können Sie die MFA-Registrierungsrichtlinie mit Azure AD Identity Protection verwenden, um zu verlangen, dass benutzer sich für MFA registrieren. Die [erforderliche Arbeit umfasst](identity-access-prerequisites.md) die Registrierung aller Benutzer mit MFA.
+Ihre Benutzer sollten sich vor der Verwendung für MFA registrieren lassen. Wenn Sie über Microsoft 365 E5, Microsoft 365 E3 mit dem Identitäts-& Threat Protection-Add-On, Office 365 mit EMS E5 oder einzelne Azure AD Premium -P2-Lizenzen verfügen, können Sie die Registrierungsrichtlinie für die MFA mit Azure AD Identity Protection verwenden, um zu verlangen, dass sich Benutzer für MFA registrieren. Die [erforderliche Arbeit umfasst](identity-access-prerequisites.md) die Registrierung aller Benutzer mit MFA.
 
 Nachdem Ihre Benutzer registriert wurden, können Sie MFA für die Anmeldung mit einer neuen Richtlinie für bedingten Zugriff verlangen.
 
@@ -110,7 +110,7 @@ Im Abschnitt **"Aufgaben":**
 
 |Einstellung|Eigenschaften|Werte|Hinweise|
 |---|---|---|---|
-|Benutzer und Gruppen|Einschließen|**Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen aus:** Wählen Sie bestimmte Gruppen aus, die Zielbenutzerkonten enthalten.|Beginnen Sie mit der Gruppe, die Pilotbenutzerkonten enthält.|
+|Benutzer und Gruppen|Einschließen|**Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen** aus: Wählen Sie bestimmte Gruppen aus, die Zielbenutzerkonten enthalten.|Beginnen Sie mit der Gruppe, die Pilotbenutzerkonten enthält.|
 ||Ausschließen|**Benutzer und Gruppen:** Wählen Sie Ihre Ausnahmegruppe für bedingten Zugriff aus. Dienstkonten (App-Identitäten).|Die Mitgliedschaft sollte bei Bedarf temporär geändert werden.|
 |Cloud-Apps oder -Aktionen|**Cloud apps > Include**|**Wählen Sie Apps** aus: Wählen Sie die Apps aus, auf die diese Richtlinie angewendet werden soll. Wählen Sie beispielsweise Exchange Online aus.||
 |Bedingungen|||Konfigurieren Sie Bedingungen, die für Ihre Umgebung und Anforderungen spezifisch sind.|
@@ -211,25 +211,25 @@ App Protection Policies (APP) definieren, welche Apps zulässig sind und welche 
 
 Das Framework für den Schutz von APP-Daten ist in drei verschiedene Konfigurationsebenen geordnet, auf der jede Ebene auf der vorherigen Ebene aufbaut:
 
-- **Der grundlegende Datenschutz in** Unternehmen (Stufe 1) stellt sicher, dass Apps mit einer PIN geschützt und verschlüsselt sind und selektive Zurücklöschvorgänge durchführt. Für Android-Geräte überprüft diese Stufe den Android-Geräte-Nachweis. Dies ist eine Einstiegsebenenkonfiguration, die eine ähnliche Steuerung des Datenschutzes in Exchange Online-Postfachrichtlinien bietet und DIE IT und die Benutzerpopulation in APP einleite.
-- **Der verbesserte Datenschutz** in Unternehmen (Stufe 2) führt Mechanismen zur Verhinderung von Datenverlusten und Mindestanforderungen des Betriebssystems ein. Dies ist die Konfiguration, die für die meisten mobilen Benutzer gilt, die auf Arbeits- oder Schuldaten zugreifen.
+- **Der grundlegende Datenschutz** in Unternehmen (Stufe 1) stellt sicher, dass Apps mit einer PIN geschützt und verschlüsselt sind und selektive Zurücklöschvorgänge durchführt. Für Android-Geräte überprüft diese Stufe den Android-Geräte-Nachweis. Dies ist eine Einstiegsebenenkonfiguration, die eine ähnliche Steuerung des Datenschutzes in Exchange Online-Postfachrichtlinien bietet und DIE IT und die Benutzerpopulation in APP einleite.
+- **Der erweiterte Datenschutz** in Unternehmen (Stufe 2) führt Mechanismen zur Verhinderung von Datenverlusten und Mindestanforderungen des Betriebssystems ein. Dies ist die Konfiguration, die für die meisten mobilen Benutzer gilt, die auf Arbeits- oder Schuldaten zugreifen.
 - **Der hohe Datenschutz in** Unternehmen (Stufe 3) führt erweiterte Datenschutzmechanismen, eine erweiterte PIN-Konfiguration und app-mobile Bedrohungsabwehr ein. Diese Konfiguration ist für Benutzer wünschenswert, die auf Daten mit hohem Risiko zugreifen.
 
 Um die spezifischen Empfehlungen für die einzelnen Konfigurationsebenen und die mindesten zu schützende Apps zu sehen, überprüfen Sie das [Datenschutzframework mithilfe von App-Schutzrichtlinien.](https://docs.microsoft.com/mem/intune/apps/app-protection-framework)
 
-Unter Verwendung der in Identitäts- und [Gerätezugriffskonfigurationen](microsoft-365-policies-configurations.md)beschriebenen Prinzipien sind die Schutzebenen "Basisplan" und "Vertraulich" eng mit den erweiterten Datenschutzeinstellungen der Stufe 2 im Unternehmen verknüpft. Die Schutzebene für hochgradig regulierte Daten ist eng mit den Einstellungen für hohen Datenschutz in Unternehmen der Stufe 3 verknüpft.
+Unter Verwendung der in Identitäts- und [Gerätezugriffskonfigurationen](microsoft-365-policies-configurations.md)beschriebenen Prinzipien sind die Schutzebenen "Basisplan" und "Vertraulich" eng mit den erweiterten Datenschutzeinstellungen der Stufe 2 im Unternehmen verknüpft. Die Schutzebene "Streng reguliert" ist eng mit den Einstellungen für hohen Datenschutz der Stufe 3 im Unternehmen verknüpft.
 
 |Schutzebene|App-Schutz-Richtlinie|Weitere Informationen|
 |---|---|---|
 |Baseline|[Erweiterter Datenschutz auf Ebene 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Die in Ebene 2 erzwungenen Richtlinieneinstellungen umfassen alle richtlinieneinstellungen, die für Stufe 1 empfohlen werden, und fügen nur die folgenden Richtlinieneinstellungen hinzu oder aktualisieren sie, um mehr Steuerelemente und eine komplexere Konfiguration als Stufe 1 zu implementieren.|
-|Vertraulich|[Erweiterter Datenschutz auf Ebene 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Die in Ebene 2 erzwungenen Richtlinieneinstellungen umfassen alle richtlinieneinstellungen, die für Ebene 1 empfohlen werden, und fügen nur die folgenden Richtlinieneinstellungen hinzu oder aktualisieren sie, um mehr Steuerelemente und eine komplexere Konfiguration als Stufe 1 zu implementieren.|
-|Hochgradig reguliert|[Hoher Datenschutz für Unternehmen der Stufe 3](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|Die in Ebene 3 erzwungenen Richtlinieneinstellungen umfassen alle Richtlinieneinstellungen, die für die Ebene 1 und 2 empfohlen werden, und fügen nur die folgenden Richtlinieneinstellungen hinzu oder aktualisieren sie, um mehr Steuerelemente und eine komplexere Konfiguration als Stufe 2 zu implementieren.|
+|Vertraulich|[Erweiterter Datenschutz auf Ebene 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Die in Ebene 2 erzwungenen Richtlinieneinstellungen umfassen alle richtlinieneinstellungen, die für Stufe 1 empfohlen werden, und fügen nur die folgenden Richtlinieneinstellungen hinzu oder aktualisieren sie, um mehr Steuerelemente und eine komplexere Konfiguration als Stufe 1 zu implementieren.|
+|Hochgradig reguliert|[Hoher Datenschutz für Unternehmen der Stufe 3](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|Die in Ebene 3 erzwungenen Richtlinieneinstellungen umfassen alle richtlinieneinstellungen, die für die Ebene 1 und 2 empfohlen werden, und fügen nur die folgenden Richtlinieneinstellungen hinzu oder aktualisieren sie, um mehr Steuerelemente und eine komplexere Konfiguration als Stufe 2 zu implementieren.|
 |
 
 Zum Erstellen einer neuen App-Schutzrichtlinie für jede Plattform (iOS und Android) innerhalb von Microsoft Endpoint Manager mithilfe der Datenschutzframeworkeinstellungen können Sie:
 
 1. Erstellen Sie die Richtlinien manuell, indem Sie die Schritte in "Erstellen und Bereitstellen von [App-Schutzrichtlinien mit Microsoft Intune" ausführen.](https://docs.microsoft.com/mem/intune/apps/app-protection-policies)
-2. Importieren Sie die [Intune App Protection Policy Configuration Framework-JSON-Beispielvorlagen](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) mit den [PowerShell-Skripts von Intune.](https://github.com/microsoftgraph/powershell-intune-samples)
+2. Importieren Sie die [Beispiel-Intune-App-Schutzrichtlinien-Konfigurationsframework-JSON-Vorlagen](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) mit [den PowerShell-Skripts von Intune.](https://github.com/microsoftgraph/powershell-intune-samples)
 
 ## <a name="require-approved-apps-and-app-protection"></a>Erfordert genehmigte Apps und app-Schutz
 
@@ -243,6 +243,8 @@ Um die Richtlinie für bedingten Zugriff zu erstellen, die genehmigte Apps und d
    > Diese Richtlinie stellt sicher, dass mobile Benutzer mithilfe der entsprechenden Apps auf alle Office-Endpunkte zugreifen können.
 
 Wenn Sie den mobilen Zugriff auf Exchange Online aktivieren, implementieren Sie [Block ActiveSync-Clients,](secure-email-recommended-policies.md#block-activesync-clients)die Exchange ActiveSync, die die Standardauthentifizierung nutzen, daran hindert, eine Verbindung mit Exchange Online zu herstellen. Diese Richtlinie ist nicht in der Abbildung oben in diesem Artikel dargestellt. Es wird in Richtlinienempfehlungen zum Sichern von E-Mails [beschrieben und abgebildet.](secure-email-recommended-policies.md)
+
+Um die Richtlinie für bedingten Zugriff zu erstellen, die Edge für iOS und Android erfordert, führen Sie "Schritt 2: Konfigurieren einer Azure AD-Richtlinie für bedingten Zugriff für Microsoft 365" in Szenario [2 aus: Browser-Apps](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-2-browser-apps-require-approved-apps-with-app-protection-policies)erfordern genehmigte Apps mit App-Schutzrichtlinien, die Edge für iOS und Android ermöglichen, aber andere Webbrowser für mobile Geräte daran blockieren, eine Verbindung mit Microsoft 365-Endpunkten zu herstellen.
 
  Diese Richtlinien nutzen die Erteilungssteuerelemente ["Genehmigte Client-App erforderlich"](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) und ["App-Schutzrichtlinie erforderlich".](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)
 
@@ -280,7 +282,7 @@ Um Gerätekonformitätsrichtlinien zu erstellen, melden Sie sich mit Ihren Admin
 
 Damit Gerätekonformitätsrichtlinien bereitgestellt werden können, müssen sie Benutzergruppen zugewiesen werden. Sie weisen eine Richtlinie zu, nachdem Sie sie erstellt und gespeichert haben. Wählen Sie im Admin Center die Richtlinie und dann **"Zuordnungen" aus.** Nachdem Sie die Gruppen ausgewählt haben,  die sie erhalten möchten, wählen Sie "Speichern" aus, um diese Gruppenzuweisung zu speichern und die Richtlinie bereitstellen.
 
-Eine schrittweise Anleitung zum Erstellen von Compliancerichtlinien in Intune finden Sie unter "Erstellen einer Compliancerichtlinie [in Microsoft Intune"](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) in der Intune-Dokumentation.
+Schrittweise Anleitungen zum Erstellen von Compliancerichtlinien in Intune finden Sie unter "Erstellen einer Compliancerichtlinie [in Microsoft Intune"](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) in der Intune-Dokumentation.
 
 ### <a name="recommended-settings-for-windows-10-and-later"></a>Empfohlene Einstellungen für Windows 10 und höher
 
@@ -345,7 +347,7 @@ So fordern Sie kompatible PCs an:
 
 7. For **Include**, choose **Select apps > Select**, and then select the desired apps from the Cloud **apps** list. Wählen Sie beispielsweise Exchange Online aus. Wählen **Sie "Auswählen"** aus, wenn Sie fertig sind.
 
-8. Wenn Sie kompatible PCs (aber keine kompatiblen Smartphones und Tablets) benötigen **möchten,** wählen Sie unter "Aufgaben" die Option "Bedingungen > **Geräteplattformen" aus.** Wählen **Sie "Ja"** für **"Konfigurieren" aus.** Wählen **Sie "Geräteplattformen auswählen",** **"Windows"** und **"macOS"** und dann "Fertig" **aus.**
+8. Wenn Sie kompatible PCs (aber keine kompatiblen Telefone und Tablets) benötigen **möchten,** wählen Sie unter "Aufgaben" die Option "Bedingungen > **Geräteplattformen" aus.** Wählen **Sie "Ja"** für **"Konfigurieren" aus.** Wählen **Sie "Geräteplattformen auswählen",** **"Windows"** und **"macOS"** und dann "Fertig" **aus.**
 
 9. Wählen **Sie unter "Access"-Steuerelemente** **"Gewähren" aus.**
 
@@ -367,9 +369,9 @@ So fordern Sie die Kompatibilität für alle Geräte an:
 
 5. Wählen **Sie unter**"Zuweisungen" **"Benutzer und Gruppen"** aus, und geben Sie an, auf wen die Richtlinie angewendet werden soll. Schließen Sie auch die Ausschlussgruppe für bedingten Zugriff aus.
 
-6. Wählen **Sie unter "Aufgaben"** **die Option "Cloud-Apps oder -Aktionen" aus.**
+6. Wählen **Sie unter "Aufgaben"** die **Option "Cloud-Apps oder -Aktionen" aus.**
 
-7. Wählen **Sie** für "Include" die Option **"Apps > Auswählen"** aus, und wählen Sie dann die gewünschten Apps aus der Liste der **Cloud-Apps** aus. Wählen Sie beispielsweise Exchange Online aus. Wählen **Sie "Auswählen"** aus, wenn Sie fertig sind.
+7. For **Include**, choose **Select apps > Select**, and then select the desired apps from the Cloud **apps** list. Wählen Sie beispielsweise Exchange Online aus. Wählen **Sie "Auswählen"** aus, wenn Sie fertig sind.
 
 8. Wählen **Sie unter "Access"-Steuerelemente** **"Gewähren" aus.**
 
