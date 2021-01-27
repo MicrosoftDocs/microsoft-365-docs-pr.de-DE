@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen, wie die Aufbewahrung für SharePoint und OneDrive funktioniert.
-ms.openlocfilehash: 0ce3a95754bcffd118d78b7919eb6773d3f14b54
-ms.sourcegitcommit: 9e4b3df05eff94fe1be4ef8618a7ce6f2fca3658
+ms.openlocfilehash: 253b4f2c09468b45b8e6102f585a8e4b7bbe4e4e
+ms.sourcegitcommit: ddbc6f8ebadf2f8149dff910b743535cbc3fa3c8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49903990"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "49992501"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informationen zur Aufbewahrung für SharePoint und OneDrive
 
@@ -57,15 +57,23 @@ Aufbewahrungsrichtlinien und Bezeichnungsrichtlinien für die automatische Anwen
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>Wie die Aufbewahrung für SharePoint und OneDrive funktioniert
 
-Zur Unterstützung der Aufbewahrung erstellen SharePoint und OneDrive ein permanentes Dokumentenarchiv, sofern es noch nicht vorhanden ist. Sie können diese Bibliothek auf der Seite **Websiteinhalte** der Website auf oberster Ebene der Websitesammlung anzeigen. Die meisten Benutzer können das permanente Dokumentarchiv nicht anzeigen, da es nur für Websitesammlungsadministratoren sichtbar ist.
-  
-Wenn jemand versucht, ein Dokument zu ändern oder zu löschen, das der Aufbewahrung der Inhalte unterliegt, wird geprüft, ob der Inhalt seit der Anwendung der Aufbewahrungseinstellungen geändert wurde. Wenn dies die erste Änderung seit Anwendung der Aufbewahrungseinstellungen ist, wird der Inhalt in das permanente Dokumentarchiv kopiert. Dies ermöglicht dem Benutzer das Ändern oder Löschen des ursprünglichen Inhalts. Jeder Inhalt in einer Websitesammlung kann unabhängig von den Aufbewahrungseinstellungen in das permanente Dokumentenarchiv kopiert werden.
+Um Inhalte zu speichern, die aufbewahrt werden müssen, erstellen SharePoint und OneDrive ein permanentes Dokumentarchiv, falls noch nicht vorhanden. Sie können diese Bibliothek auf der Seite **Websiteinhalte** der Website auf oberster Ebene der Websitesammlung anzeigen. Die meisten Benutzer können das permanente Dokumentarchiv nicht anzeigen, da es nur für Websitesammlungsadministratoren sichtbar ist.
+
+Elemente in SharePoint, die eine Standard-Aufbewahrungsbezeichnung haben (die das Element nicht als Datensatz deklariert), benötigen das permanente Dokumentarchiv nicht, da diese Elemente an ihrem ursprünglichen Speicherort verbleiben. SharePoint verhindert, dass Benutzer Elemente löschen, wenn die angewandte Aufbewahrungsbezeichnung so konfiguriert ist, dass der Inhalt beibehalten wird. Die SharePoint-Versionierung bewahrt ältere Versionen, wenn Elemente bearbeitet werden. Für andere Szenarien wird jedoch das permanente Dokumentarchiv verwendet, wenn Elemente aufbewahrt werden müssen:
+- Elemente in OneDrive mit standardmäßigen Aufbewahrungsbezeichnungen
+- Elemente in SharePoint oder OneDrive, die Aufbewahrungbezeichnungen haben, die sie zu einem Datensatz erklären, und das Element ist für die Bearbeitung freigeschaltet
+- Elemente, für die Aufbewahrungsrichtlinien gelten
+
+Um diesen Inhalt zu bewahren, wenn ein Benutzer versucht, ihn zu ändern oder zu löschen, wird überprüft, ob der Inhalt geändert wurde, seit die Aufbewahrungseinstellungen angewendet wurden. Wenn dies die erste Änderung seit Anwendung der Aufbewahrungseinstellungen ist, wird der Inhalt in das permanente Dokumentarchiv kopiert. Dies ermöglicht dem Benutzer das Ändern oder Löschen des ursprünglichen Inhalts. Jeder Inhalt in einer Websitesammlung kann unabhängig von den Aufbewahrungseinstellungen in das permanente Dokumentenarchiv kopiert werden.
   
 Ein Zeitgeberauftrag bereinigt in regelmäßigen Abständen das permanente Dokumentarchiv. Dieser vergleicht sämtliche Inhalte im permanenten Dokumentarchiv mit allen Abfragen, die von den Aufbewahrungseinstellungen für diese Inhalte verwendet werden. Inhalte, die älter als die darin konfigurierte Aufbewahrungszeit sind, werden aus dem permanenten Dokumentarchiv sowie vom ursprünglichen Speicherort gelöscht, sofern sie dort noch vorhanden sind. Dieser Zeitgeberauftrag wird alle sieben Tage ausgeführt, was bedeutet, dass es bis zu sieben Tage dauern kann, bis Inhalte gelöscht werden.
   
 Dieses Verhalten gilt für Inhalte, die bei Anwendung der Aufbewahrungseinstellungen vorhanden sind. Außerdem werden für Aufbewahrungsrichtlinien alle neuen Inhalte, die erstellt oder der Websitesammlung hinzugefügt werden, nachdem sie in die Richtlinie eingeschlossen wurden, auch nach dem Löschen aufbewahrt. Neue Inhalte werden jedoch nicht bei der ersten Bearbeitung in das permanente Dokumentarchiv kopiert, sondern nur, wenn sie gelöscht werden. Wenn Sie alle Versionen einer Datei aufbewahren möchten, müssen Sie die [Versionsverwaltung](#how-retention-works-with-document-versions) aktivieren.
   
-Ein Benutzer erhält eine Fehlermeldung, wenn er versucht, Bibliotheken, Listen, Ordner oder Websites zu löschen, für die eine Aufbewahrungsrichtlinie gilt. Ein Benutzer kann einen Ordner löschen, wenn er zuerst Dateien im Ordner verschiebt oder löscht, die der Richtlinie unterliegen. Außerdem wird das permanente Dokumentarchiv in dieser Phase erstellt und nicht, wenn Sie eine Aufbewahrungsrichtlinie erstellen oder eine Aufbewahrungsbezeichnung anwenden. Zum Testen Ihrer Aufbewahrung müssen Sie daher zuerst ein Dokument in einer Website bearbeiten oder löschen, die einer Aufbewahrungsrichtlinie unterliegt oder auf die Aufbewahrungsbezeichnungen angewendet werden, und dann zum permanenten Dokumentarchiv wechseln, um die aufbewahrte Kopie anzuzeigen.
+Benutzer sehen eine Fehlermeldung, wenn sie versuchen, eine Bibliothek, eine Liste, einen Ordner oder eine Website zu löschen, die der Aufbewahrungspflicht unterliegen. Sie können einen Ordner löschen, wenn sie zuerst alle aufbewahrungspflichtigen Dateien im Ordner verschieben oder löschen.
+
+> [!NOTE]
+> Da das permanente Dokumentarchiv nur erstellt wird, wenn es benötigt wird, und nicht, wenn Sie eine Aufbewahrungsrichtlinie oder eine Aufbewahrungsbezeichnung anwenden, müssen Sie zunächst ein Element, das der Aufbewahrungspflicht unterliegt, bearbeiten oder löschen, damit dies funktioniert. Wechseln Sie dann zum permanenten Dokumentarchiv, um die aufbewahrte Kopie anzuzeigen.
   
 Nachdem auf Inhalte in einem OneDrive-Konto oder einer SharePoint-Site Aufbewahrungseinstellungen angewendet wurden, sind die Inhaltspfade davon abhängig, ob die Aufbewahrungseinstellungen der Aufbewahrung und dem Löschen, der reinen Aufbewahrung oder dem reinen Löschen dienen.
 
