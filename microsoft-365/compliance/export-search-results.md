@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Microsoft 365 Compliance Center auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte von SharePoint- und OneDrive for #A0 werden als systemeigene #A1 exportiert.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12c8755d4ca8b5ff97582b879c07fe103c996ecf
-ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
+ms.openlocfilehash: 7027593768238b3d9a465eaa6038d92234c32f82
+ms.sourcegitcommit: ddbc6f8ebadf2f8149dff910b743535cbc3fa3c8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49799702"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "49992511"
 ---
 # <a name="export-content-search-results"></a>Exportieren von Inhaltssuchergebnissen
 
@@ -49,7 +49,7 @@ Beim Exportieren der Ergebnisse einer Inhaltssuche werden die Ergebnisse vorbere
 
   - Microsoft Edge <sup>2</sup>
   
-    ODER
+    OR
 
   - Microsoft Internet Explorer 10 und neuere Versionen
   
@@ -158,9 +158,12 @@ Im nächsten Schritt laden Sie die Suchergebnisse aus dem Azure Storage-Speicher
   
    2. Klicken Sie auf **Durchsuchen**, um das Verzeichnis anzugeben, in das die Dateien mit den Suchergebnissen heruntergeladen werden sollen.
   
-      > [!NOTE]
-      > Aufgrund der hohen Datenträgeraktivität (Lese- und Schreibvorgänge) sollten Sie die Suchergebnisse auf ein lokales Laufwerk herunterladen. laden Sie sie nicht auf ein zugeordnetes Netzlaufwerk oder einen anderen Netzwerkspeicherort herunter. 
-  
+      > [!IMPORTANT]
+      >  Aufgrund hoher Netzwerkaktivität während des Downloads sollten Sie suchergebnisse nur an einen Speicherort auf einem internen Laufwerk auf Ihrem lokalen Computer herunterladen. Befolgen Sie die folgenden Richtlinien, um eine optimale Downloaderfahrung zu bieten: <br/>
+      >- Laden Sie die Suchergebnisse nicht in einen UNC-Pfad, ein zugeordnetes Netzlaufwerk, ein externes #A0 oder ein synchronisiertes OneDrive for #A1 herunter.<br/>
+      >- Deaktivieren Sie die Virenschutzprüfung für den Ordner, in den Sie das Suchergebnis herunterladen.<br/>
+      >- Laden Sie Suchergebnisse für gleichzeitige Downloadaufträge in verschiedene Ordner herunter.
+
 6. Klicken Sie zum Herunterladen der Suchergebnisse auf Ihren Computer auf **Starten**.
   
     Das **eDiscovery-Exporttool** zeigt Statusinformationen zum Exportvorgang an, einschließlich einer Schätzung der Anzahl (und Größe) der verbleibenden Elemente, die heruntergeladen werden sollen. Wenn der Exportvorgang abgeschlossen ist, können Sie auf die Dateien am Speicherort zugreifen, an dem sie heruntergeladen wurden.

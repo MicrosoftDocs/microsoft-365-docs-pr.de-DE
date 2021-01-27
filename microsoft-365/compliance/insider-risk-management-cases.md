@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: feabf3083b0ff1d182884c66fc2b2fd890275a0a
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: c128f9e0c5754305e8b4d785c6a88931bc3ea976
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976212"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988171"
 ---
 # <a name="insider-risk-management-cases"></a>Insider-Risikomanagement-Fälle
 
@@ -159,15 +159,13 @@ So fügen Sie einem Fall eine Notiz hinzu
 
 ### <a name="contributors"></a>Mitwirkende
 
-Auf der Registerkarte **Mitwirkende** können Risikoanalysten und Ermittler weitere Mitwirkende zu dem Fall hinzufügen. Standardmäßig werden alle Benutzer, denen die Rollen **"Insider Risk Management Analysts"** und **"Insider Risk Management Investigators"** zugewiesen sind, als Mitwirkende für jeden aktiven und geschlossenen Fall aufgeführt.
+Auf der Registerkarte **Mitwirkende** können Risikoanalysten und Ermittler weitere Mitwirkende zu dem Fall hinzufügen. Standardmäßig werden alle Benutzer, denen die Rollen **"Insider Risk Management Analysts"** und **"Insider Risk Management Investigators"** zugewiesen sind, als Mitwirkende für jeden aktiven und geschlossenen Fall aufgeführt. Nur Benutzer, denen die Rolle **"Insider Risk Management Investigators"** zugewiesen ist, verfügen über die Berechtigung zum Anzeigen von Dateien und Nachrichten im Inhalts-Explorer.
 
-Alle Fälle des Insider-Risikomanagements müssen mit angemessenen Zugriffssteuerungen verwaltet werden, damit die Vertraulichkeit und Integrität der Untersuchung aufrechterhalten wird. Um die Zugriffssteuerung für Fälle aufrechtzuerhalten, werden Benutzern ein oder zwei Arten von Zugriff auf Fälle zugewiesen:
+Temporärer Zugriff auf einen Fall kann gewährt werden, indem ein Benutzer als Mitwirkender hinzugefügt wird. Mitwirkende haben alle Fallverwaltungskontrollen für den jeweiligen Fall, mit Ausnahme von:
 
-- **Dauerhafter** Zugriff: Benutzern mit den Rollen **"Insider Risk Management Analysts"** und **"Insider Risk Management Investigators"** wird automatisch dauerhafter Zugriff gewährt, wenn der Fall aus einer Warnung erstellt wird. Dauerhafter Zugriff gewährt den vollständigen Zugriff auf den Fall während der Lebensdauer des Falls, und ermöglicht es der Person, weitere Mitwirkende zu dem Fall hinzuzufügen.
-- **Temporärer** Zugriff: Der temporäre Zugriff wird Benutzern nur von Mitwirkenden gewährt, die dauerhaften Zugriff auf den Fall haben. In der Regel wird diese Zugriffsebene Benutzern gewährt, die einem Fall Notizen hinzufügen müssen. Mitwirkende mit temporärem Zugriff können auf alle Steuerelemente für das Fallmanagement zugreifen, ausgenommen:
-    - Die Berechtigung, Warnungen zu bestätigen oder zu verwerfen
-    - Die Berechtigung, die Mitwirkenden eines Falles zu bearbeiten
-    - Die Berechtigung, Dateien und Nachrichten im Inhaltsexplorer anzuzeigen
+- Die Berechtigung, Warnungen zu bestätigen oder zu verwerfen
+- Die Berechtigung, die Mitwirkenden eines Falles zu bearbeiten
+- Die Berechtigung, Dateien und Nachrichten im Inhaltsexplorer anzuzeigen
 
 So fügen Sie einen Mitwirkenden zu einem Fall hinzu:
 
