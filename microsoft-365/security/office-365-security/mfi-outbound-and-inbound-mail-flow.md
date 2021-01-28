@@ -1,60 +1,61 @@
 ---
-title: Einblicke in den ausgehenden und eingehenden Nachrichtenfluss im Nachrichtenfluss-Dashboard
+title: Einblick in den Nachrichtenfluss ausgehender und eingehender Nachrichten im Nachrichtenflussdashboard
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
-description: Administratoren können sich über den ausgehenden und eingehenden Nachrichtenfluss Insight im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: cff7c3a14b62475903729f4528652f192c2da09f
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+description: Administratoren können sich über den Einblick in den Nachrichtenfluss ausgehender und eingehender Nachrichten im Dashboard für den Nachrichtenfluss im Security & Compliance Center informieren.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e46a0ebf0c14e31462d1e86d8a8d8c08486337af
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877669"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029822"
 ---
-# <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Einblicke in den ausgehenden und eingehenden Nachrichtenfluss im Security & Compliance Center
+# <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Einblick in den Ausgehenden und eingehenden Nachrichtenfluss im Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Der Einblicke für **ausgehende und eingehende e-Mails** im [Nachrichtenfluss-Dashboard](mail-flow-insights-v2.md) im [Security & Compliance Center](https://protection.office.com) kombiniert die Informationen aus dem [connectorbericht](view-mail-flow-reports.md#connector-report) und dem früheren TLS-Übersichts **Bericht** an einem zentralen Ort.
+Der **Einblick** in ausgehende und [](mail-flow-insights-v2.md) eingehende Nachrichten im Nachrichtenflussdashboard im Security [](view-mail-flow-reports.md#connector-report) [& Compliance Center](https://protection.office.com) kombiniert die Informationen aus dem Connectorbericht und dem früheren **TLS-Übersichtsbericht** an einem Ort.
 
-Das Widget zeigt die TLS-Verschlüsselung an, die für die Verbindung verwendet wird, wenn Nachrichten an und von Ihrer Organisation zugestellt werden. Die Verbindungen, die mit anderen e-Mail-Diensten hergestellt werden, werden durch TLS verschlüsselt, wenn beide Seiten TLS anbieten. Das Widget bietet eine Momentaufnahme der letzten Woche des Nachrichtenflusses.
+Das Widget zeigt die TLS-Verschlüsselung an, die für die Verbindung verwendet wird, wenn Nachrichten an Und von Ihrer Organisation zugestellt werden. Die Verbindungen, die mit anderen E-Mail-Diensten hergestellt werden, werden von TLS verschlüsselt, wenn TLS von beiden Seiten angeboten wird. Das Widget bietet eine Momentaufnahme der letzten Woche des Nachrichtenflusses.
 
-![Fluss-Widget für ausgehende und eingehende Nachrichten im Nachrichtenfluss-Dashboard im Security & Compliance Center](../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png)
+![Widget für ausgehenden und eingehenden Nachrichtenfluss im Nachrichtenflussdashboard im Security & Compliance Center](../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png)
 
-Die Informationen im Widget beziehen sich auf Connectors und TLS-Nachrichtenschutz in Microsoft 365. Weitere Informationen finden Sie unter den folgenden Themen:
+Die Informationen im Widget stehen im Zusammenhang mit Connectors und dem Schutz von TLS-Nachrichten in Microsoft 365. Weitere Informationen finden Sie unter den folgenden Themen:
 
 - [Konfigurieren des Nachrichtenflusses mit Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
-- [Wie Exchange Online TLS zum Sichern von e-Mail-Verbindungen verwendet](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections)
+- [Wie Exchange Online mithilfe von TLS E-Mail-Verbindungen schützt](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections)
 - [Technische Referenzdetails zur Verschlüsselung in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/technical-reference-details-about-encryption)
 
-## <a name="message-protected-in-transit-by-tls"></a>Nachricht ist bei der Übertragung geschützt (durch TLS)
+## <a name="message-protected-in-transit-by-tls"></a>Nachricht, die bei der Übertragung geschützt ist (durch TLS)
 
-Wenn Sie auf das Widget **Details anzeigen** klicken, zeigt das Flyout **Nachricht geschützt in Transit (über TLS)** den TLS-Schutz für Nachrichten an, die in Ihre Organisation eingehen und diese verlassen.
+Wenn Sie **auf** "Details anzeigen" im Widget klicken, wird im Flyout "Nachricht, die während der Übertragung **(durch TLS)** geschützt ist" der TLS-Schutz für Nachrichten angezeigt, die in Ihre Organisation ein- und austritten.
 
-![Nachrichten, die in der Übertragung geschützt sind (durch TLS), die angezeigt werden, nachdem Sie auf dem Widget für ausgehende und eingehende e-Mails auf Details anzeigen klicken.](../../media/mfi-outbound-and-inbound-mail-flow-report-details.png)
+![Nachrichten, die bei der Übertragung (durch TLS) geschützt sind und angezeigt werden, nachdem Sie im Widget für ausgehende und eingehende E-Mails auf Details anzeigen geklickt haben](../../media/mfi-outbound-and-inbound-mail-flow-report-details.png)
 
-Derzeit ist TLS 1,2 die sicherste Version von TLS, die von Microsoft 365 angeboten wird. Häufig müssen Sie die TLS-Verschlüsselung kennen, die für Compliance-Überprüfungen verwendet wird. Sie haben wahrscheinlich keine direkte Beziehung zu den meisten Quell-und Ziel-e-Mail-Servern (Sie besitzen diese nicht und auch nicht Microsoft), sodass Sie nicht viele Optionen zum Verbessern der TLS-Verschlüsselung haben, die von diesen Servern verwendet wird.
+Derzeit ist TLS 1.2 die sicherste Version von TLS, die von Microsoft 365 angeboten wird. Häufig müssen Sie die TLS-Verschlüsselung kennen, die für Compliance-Überwachungen verwendet wird. Wahrscheinlich haben Sie keine direkte Beziehung mit den meisten Quell- und Ziel-E-Mail-Servern (Sie besitzen sie nicht, und microsoft auch nicht), sodass Sie nicht viele Optionen haben, um die von diesen Servern verwendete TLS-Verschlüsselung zu verbessern.
 
-Sie können jedoch [Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) verwenden, um den bestmöglichen TLS-Schutz für Nachrichten sicherzustellen, die zwischen Ihren e-Mail-Servern und Microsoft 365 gesendet werden. Der e-Mail-Fluss zwischen Microsoft 365 und ihren eigenen e-Mail-Servern oder Servern, die zu ihren Partnern gehören, ist häufig wichtiger und sensibler als reguläre Nachrichten, daher sollten Sie zusätzliche Sicherheit und Wachsamkeit für diese Nachrichten anwenden.
+Sie können jedoch Connectors [verwenden,](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) um den besten verfügbaren TLS-Schutz für Nachrichten sicherzustellen, die zwischen Ihren E-Mail-Servern und Microsoft 365 gesendet werden. Der E-Mail-Fluss zwischen Microsoft 365 und Ihren eigenen E-Mail-Servern oder -Servern, die Zu Ihren Partnern gehören, ist häufig wichtiger und vertraulicher als normale Nachrichten, daher sollten Sie zusätzliche Sicherheit und Meldungen auf diese Nachrichten anwenden.
 
-Sie können ein Upgrade oder eine Korrektur ihrer eigenen e-Mail-Server durchführen, um die verwendete TLS-Verschlüsselung zu verbessern oder Ihre Partner zu erreichen, um dasselbe zu tun. Im **Bericht "Connector** " werden sowohl das Nachrichtenfluss Volumen als auch die TLS-Verschlüsselung für Nachrichten angezeigt, die Ihre Microsoft 365-Connectors verwenden.
+Sie können Ihre eigenen E-Mail-Server aktualisieren oder korrigieren, um die verwendete TLS-Verschlüsselung zu verbessern, oder sich an Ihre Partner zu halten, um dies zu tun. Im **Connectorbericht werden** sowohl das Nachrichtenflussvolumen als auch die TLS-Verschlüsselung für Nachrichten angezeigt, die Ihre Microsoft 365-Connectors verwenden.
 
-Sie können auf den Link **connectorbericht** klicken, um zum [connectorbericht](view-mail-flow-reports.md#connector-report)zu wechseln. Die folgenden Einblicke stehen möglicherweise auf der Seite **connectorbericht** zur Verfügung, wenn die zugeordnete Bedingung erkannt wurde:
+Sie können auf den **Connectorberichtslink klicken,** um zum [Connectorbericht zu wechseln.](view-mail-flow-reports.md#connector-report) Die folgenden Erkenntnisse sind möglicherweise auf der Seite **"Connectorbericht"** verfügbar, wenn die zugeordnete Bedingung erkannt wurde:
 
-- **Inbound-Partner-Konnektor, der signifikante TLS 1.0-Nachrichtenübermittlung sieht**
-- **Eingehender onpremises-Konnektor, der signifikante TLS 1.0-Nachrichtenübermittlung sieht**
+- **Eingehender Partnerconnector mit erheblichem TLS1.0-Nachrichtenfluss**
+- **Eingehender OnPremises-Connector mit erheblichem TLS1.0-Nachrichtenfluss**
 
-Für TLS 1,0-Verbindungen müssen Sie Ihren e-Mail-Server oder den Server Ihres Partners wirklich aktualisieren oder reparieren lassen, um Probleme zu vermeiden, wenn die TLS 1,0-Unterstützung in Microsoft 365 schließlich veraltet ist.
+Für TLS 1.0-Verbindungen müssen Sie ihren E-Mail-Server oder den Server Ihres Partners aktualisiert oder behoben haben, um Probleme zu vermeiden, wenn der TLS 1.0-Support in Microsoft 365 möglicherweise nicht mehr unterstützt wird.
 
 ## <a name="see-also"></a>Siehe auch
 
-Informationen zu weiteren Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Weitere Informationen zu anderen Einblicken im Nachrichtenflussdashboard finden Sie unter "Einblicke in den Nachrichtenfluss" [im Security & Compliance Center.](mail-flow-insights-v2.md)

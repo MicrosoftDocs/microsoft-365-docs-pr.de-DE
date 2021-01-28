@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,19 +17,21 @@ ms.collection:
 - m365initiative-defender-office365
 description: Administratoren können häufig gestellte Fragen und Antworten zu isolierten Nachrichten in Exchange Online Protection (EOP) anzeigen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 58ddb5847706aef3d2c3b8ea8cd9a96fd65a9b3d
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: abd2304e83d2814cab55d13312535bd94308d8be
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794412"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032601"
 ---
 # <a name="quarantined-messages-faq"></a>Häufig gestellte Fragen zu isolierten Nachrichten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Dieses Thema enthält häufig gestellte Fragen und Antworten zu isolierten E-Mail-Nachrichten für Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständige Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer.
+Dieses Thema enthält häufig gestellte Fragen und Antworten zu E-Mail-Nachrichten in Quarantäne für Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständige Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer.
 
 Fragen und Antworten zum Antispamschutz finden Sie unter Häufig gestellte Fragen zum [Antispamschutz.](anti-spam-protection-faq.md)
 
@@ -48,11 +49,11 @@ Standardmäßig werden Nachrichten, die von der Spamfilterung als Spam oder Mass
 
 ## <a name="how-do-i-give-users-access-to-the-quarantine"></a>Wie vererbe ich Benutzern Zugriff auf die Quarantäne?
 
-Ein Benutzer muss über ein gültiges Konto verfügen, um auf seine eigenen Nachrichten in Quarantäne zugreifen zu können. Für eigenständiges EOP müssen Benutzer als E-Mail-Benutzer in EOP dargestellt werden (manuell erstellt oder über die Verzeichnissynchronisierung erstellt). Weitere Informationen zum Verwalten von Benutzern in eigenständigen EOP-Umgebungen finden Sie unter [Verwalten von E-Mail-Benutzern in EOP.](manage-mail-users-in-eop.md)
+Ein Benutzer muss über ein gültiges Konto verfügen, um auf seine eigenen Nachrichten in Quarantäne zugreifen zu können. Für eigenständiges EOP müssen Benutzer als E-Mail-Benutzer in EOP dargestellt werden (manuell erstellt oder über verzeichnissynchronisierung erstellt). Weitere Informationen zum Verwalten von Benutzern in eigenständigen EOP-Umgebungen finden Sie unter [Verwalten von E-Mail-Benutzern in EOP.](manage-mail-users-in-eop.md)
 
 ## <a name="what-messages-can-end-users-access-in-quarantine"></a>Auf welche Nachrichten können Endbenutzer in Quarantäne zugreifen?
 
-Benutzer können auf Spam-, Massen-E-Mails und (ab April 2020) Phishingnachrichten zugreifen, bei denen sie Empfänger sind. Endbenutzer können nicht auf In-Quarantäne-Schadsoftware, Phishing mit hoher  Sicherheit oder Nachrichten zugreifen, die aufgrund der Aktion zum Isolieren der Nachricht an die gehostete Quarantäne in Nachrichtenflussregeln (auch als Transportregeln bekannt) isoliert wurden. Weitere Informationen zu Benutzern, die auf isolierte Nachrichten zugreifen, finden Sie unter "Suchen und Veröffentlichen von Isolierten Nachrichten [als Benutzer".](find-and-release-quarantined-messages-as-a-user.md)
+Benutzer können auf Spam-, Massen-E-Mails und (ab April 2020) Phishingnachrichten zugreifen, bei denen sie Empfänger sind. Endbenutzer können nicht auf In-Quarantäne-Schadsoftware, Phishing mit hoher  Sicherheit oder Nachrichten zugreifen, die aufgrund der Aktion "Nachricht an gehostete Quarantäne senden" in Nachrichtenflussregeln (auch als Transportregeln bekannt) isoliert wurden. Weitere Informationen zu Benutzern, die auf isolierte Nachrichten zugreifen, finden Sie unter "Suchen und Veröffentlichen von Isolierten Nachrichten [als Benutzer".](find-and-release-quarantined-messages-as-a-user.md)
 
 ## <a name="how-long-are-messages-kept-in-the-quarantine"></a>Wie lange werden Nachrichten unter Quarantäne gestellt?
 
@@ -66,22 +67,45 @@ Nach Ablauf des Zeitraums werden die Nachrichten gelöscht und können nicht wie
 
 Im Security & Compliance Center können Sie bis zu 100 Nachrichten gleichzeitig auswählen und frei geben.
 
-Administratoren können die [Cmdlets "Get-QuarantineMessage"](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) und ["Release-QuarantineMessage"](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage) in Exchange Online PowerShell oder in der eigenständigen EOP PowerShell verwenden, um isolierte Nachrichten in einer Massensendung zu finden und frei zu geben und falsch positive Ergebnisse als Massenmeldung zu melden.
+Administratoren können die [Cmdlets "Get-QuarantineMessage"](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) und ["Release-QuarantineMessage"](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage) in Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwenden, um isolierte Nachrichten in einer Massensendung zu finden und frei zu geben und falsch positive Ergebnisse in Massen zu melden.
 
 ## <a name="are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a>Werden bei der Suche nach in der Quarantäne isolierte Nachrichten Platzhalterzeichen unterstützt? Kann ich für eine bestimmte Domäne nach Nachricht in Quarantäne suchen?
 
 Platzhalter werden im Security & Compliance Center nicht unterstützt. Wenn Sie beispielsweise nach einem Absender suchen, müssen Sie die vollständige E-Mail-Adresse angeben. Sie können jedoch Platzhalter in Exchange Online PowerShell oder in der eigenständigen EOP PowerShell verwenden.
 
-Führen Sie beispielsweise den folgenden Befehl aus, um Nachrichten in Spamquarantäne von allen Absendern in der Domäne contoso.com:
+Kopieren Sie beispielsweise den folgenden PowerShell-Code in Editor, und speichern Sie die Datei als PS1 an einem Speicherort, den Sie leicht finden können (z. B. C:\Data\QuarantineRelease.ps1).
+
+Führen Sie dann nach dem Herstellen einer Verbindung mit [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) oder [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)den folgenden Befehl aus, um das Skript auszuführen:
 
 ```powershell
-$CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contoso.com"}
+& C:\Data\QuarantineRelease.ps1
 ```
 
-Führen Sie dann den folgenden Befehl aus, um diese Nachrichten für alle ursprünglichen Empfänger frei zu geben:
+Das Skript führt die folgenden Aktionen aus:
+
+- Suchen Sie unveröffentlichte Nachrichten, die von allen Absendern in der Domäne fabrikam als Spam isoliert wurden. Die maximale Anzahl von Ergebnissen beträgt 50.000 (50 Seiten mit 1000 Ergebnissen).
+- Speichern Sie die Ergebnisse in einer CSV-Datei.
+- Geben Sie die übereinstimmenden isolierten Nachrichten für alle ursprünglichen Empfänger frei.
 
 ```powershell
-$CQ | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+$Page = 1
+$List = $null
+
+Do
+{
+Write-Host "Getting Page " $Page
+
+$List = (Get-QuarantineMessage -Type Spam -PageSize 1000 -Page $Page | where {$_.Released -like "False" -and $_.SenderAddress -like "*fabrikam.com"})
+Write-Host "                     " $List.count " rows in this page match"
+Write-Host "                                                             Exporting list to appended CSV for logging"
+$List | Export-Csv -Path "C:\Data\Quarantined Message Matches.csv" -Append -NoTypeInformation
+
+Write-Host "Releasing page " $Page
+$List | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+
+$Page = $Page + 1
+
+} Until ($Page -eq 50)
 ```
 
 Nachdem Sie eine Nachricht freigegeben haben, können Sie sie nicht mehr los.

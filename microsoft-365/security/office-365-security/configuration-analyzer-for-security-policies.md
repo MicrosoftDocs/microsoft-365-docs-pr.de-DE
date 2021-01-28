@@ -9,135 +9,134 @@ ms.reviewer: ''
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratoren erfahren, wie Sie mithilfe der Konfigurationsanalyse Sicherheitsrichtlinien finden und beheben können, die unter den vordefinierten Sicherheitsrichtlinien für Standard Schutz und strenge Schutzbedingungen liegen.
-ms.openlocfilehash: af7cf269151c7e947a0a2f653ce8638d46ccd905
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Administratoren können erfahren, wie Sie mithilfe der Konfigurationsanalyse Sicherheitsrichtlinien finden und beheben, die unterhalb der voreingestellten Sicherheitsrichtlinien "Standardschutz" und "Strenger Schutz" liegen.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 04027e78a2683c6c33954bb548c502497c5e8323
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658661"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029478"
 ---
-# <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Konfigurationsanalyse für Schutzrichtlinien in EoP und Microsoft Defender für Office 365
+# <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Konfigurationsanalyse für Schutzrichtlinien in EOP und Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-> [!NOTE]
-> Die in diesem Artikel beschriebenen Funktionen befinden sich in der Vorschau, sind nicht in allen Organisationen verfügbar und können geändert werden. Weitere Informationen zum Veröffentlichungszeitplan finden Sie in der [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=config%2Canalyzer).
+Die Konfigurationsanalyse im Security & Compliance Center bietet einen zentralen Ort zum Suchen und Beheben von Sicherheitsrichtlinien, in denen sich die Einstellungen unter den Standardschutz- und Strengschutzprofileinstellungen in vordefinierten Sicherheitsrichtlinien [befinden.](preset-security-policies.md)
 
-Configuration Analyzer im Security & Compliance Center bietet einen zentralen Standort, um Sicherheitsrichtlinien zu finden und zu beheben, bei denen die Einstellungen unter den Standard mäßigen Schutz-und strengen Schutzprofil Einstellungen in [vordefinierten Sicherheitsrichtlinien](preset-security-policies.md)liegen.
+Die folgenden Richtlinientypen werden von der Konfigurationsanalyse analysiert:
 
-Die folgenden Richtlinientypen werden vom Configuration Analyzer analysiert:
+- **Exchange Online Protection (EOP)-Richtlinien:** Dazu gehören Microsoft 365-Organisationen mit Exchange Online-Postfächern und eigenständige EOP-Organisationen ohne Exchange Online-Postfächer:
 
-- **Exchange Online Protection (EoP)-Richtlinien**: Dies umfasst Microsoft 365-Organisationen mit Exchange Online Postfächern und eigenständigen EoP-Organisationen ohne Exchange Online Postfächern:
+  - [Antispamrichtlinien](configure-your-spam-filter-policies.md).
+  - [Richtlinien für An malware](configure-anti-malware-policies.md).
+  - [EOP Antiphishingrichtlinien](set-up-anti-phishing-policies.md#spoof-settings).
 
-  - [Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md).
-  - [Anti-Malware-Richtlinien](configure-anti-malware-policies.md).
-  - [EoP-Anti-Phishing-Richtlinien](set-up-anti-phishing-policies.md#spoof-settings).
+- **Microsoft Defender für Office 365-Richtlinien:** Dazu gehören Organisationen mit Microsoft 365 E5- oder Defender für Office 365-Add-On-Abonnements:
 
-- **Microsoft Defender für Office 365-Richtlinien**: Dies umfasst Organisationen mit Microsoft 365 E5 oder Defender für Office 365 Add-on-Abonnements:
+  - Antiphishingrichtlinien in Microsoft Defender für Office 365, die Folgendes umfassen:
 
-  - Anti-Phishing-Richtlinien in Microsoft Defender für Office 365, die Folgendes umfassen:
-
-    - Dieselben [spoofeinstellungen](set-up-anti-phishing-policies.md#spoof-settings) , die in den EoP-Richtlinien zum Schutz vor Phishing verfügbar sind.
-    - [Einstellungen für Identitätswechsel](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-    - [Erweiterte Phishing-Schwellenwerte](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+    - Die gleichen [Spoofeinstellungen,](set-up-anti-phishing-policies.md#spoof-settings) die in den EOP-Anti-Phishing-Richtlinien verfügbar sind.
+    - [Identitätswechseleinstellungen](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+    - [Erweiterte Phishingschwellenwerte](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
   - [Richtlinien für sichere Links](set-up-atp-safe-links-policies.md).
 
   - [Richtlinien für sichere Anlagen](set-up-atp-safe-attachments-policies.md).
 
-Die **Standard mäßigen** und **strengen** Richtlinien Einstellungswerte, die als Baselines verwendet werden, werden in den [empfohlenen Einstellungen für EoP und Microsoft Defender für Office 365 Sicherheit](recommended-settings-for-eop-and-office365-atp.md)beschrieben.
+Die **Standard-** und Strict-Richtlinieneinstellungswerte, die als Basiswerte verwendet werden, werden in den empfohlenen Einstellungen für EOP und [Microsoft Defender für Office 365-Sicherheit beschrieben.](recommended-settings-for-eop-and-office365-atp.md) 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Wenn Sie direkt zur Seite **Configuration Analyzer** wechseln möchten, verwenden Sie <https://protection.office.com/configurationAnalyzer> .
+- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **"Konfigurationsanalyse" zu** wechseln, verwenden Sie <https://protection.office.com/configurationAnalyzer> .
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen im Security & Compliance Center Berechtigungen zugewiesen werden.
-  - Sie müssen Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein, um die Konfigurationsanalyse verwenden **und** Updates für Sicherheitsrichtlinien vornehmen zu können.
-  - Für den schreibgeschützten Zugriff auf die Konfigurationsanalyse müssen Sie ein Mitglied der Rollengruppen " **globaler Leser** " oder " **Sicherheits Leser** " sein.
+  - Um die Konfigurationsanalyse **zu** verwenden und Sicherheitsrichtlinien zu aktualisieren, müssen Sie Mitglied der Rollengruppe **"Organisationsverwaltung"** oder **"Sicherheitsadministrator"** sein.
+  - Für den schreibgeschützten Zugriff auf die Konfigurationsanalyse müssen  Sie Mitglied der Rollengruppe "Globaler Leser" oder **"Sicherheitsleser"** sein.
 
   Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-  **Hinweise**:
+  > [!NOTE]
+  >  
+  > - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  > 
+  > - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
-  - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
+## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>Verwenden der Konfigurationsanalyse im Security & Compliance Center
 
-## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>Verwenden des Configuration Analyzer im Security & Compliance Center
+Wechseln Sie im Security & Compliance Center zu **"Richtlinienkonfigurationsanalyse für** die \>  \> **Bedrohungsverwaltung".**
 
-Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** \> **Configuration Analyzer**.
-
-![Configuration Analyzer-Widget auf der Seite "Threat Management- \> Richtlinie"](../../media/configuration-analyzer-widget.png)
+![Konfigurationsanalyse-Widget auf der Seite \> "Bedrohungsverwaltungsrichtlinie"](../../media/configuration-analyzer-widget.png)
 
 Die Konfigurationsanalyse verfügt über zwei Hauptregisterkarten:
 
-- **Einstellungen und Empfehlungen**: Sie wählen Standard oder Strict aus und vergleichen diese Einstellungen mit Ihren vorhandenen Sicherheitsrichtlinien. In den Ergebnissen können Sie die Werte Ihrer Einstellungen anpassen, um Sie auf die gleiche Stufe wie Standard oder Strict zu bringen.
+- **Einstellungen und Empfehlungen:** Sie wählen "Standard" oder "Streng" aus und vergleichen diese Einstellungen mit Ihren vorhandenen Sicherheitsrichtlinien. In den Ergebnissen können Sie die Werte Ihrer Einstellungen anpassen, um sie auf die gleiche Stufe wie "Standard" oder "Streng" zu bringen.
 
-- **Analyse und Verlauf der Konfigurations Drift**: in dieser Ansicht können Sie Richtlinienänderungen im Laufe der Zeit verfolgen.
+- **Konfigurations-Drift-Analyse und -Verlauf:** In dieser Ansicht können Sie Richtlinienänderungen im Laufe der Zeit nachverfolgen.
 
-### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Registerkarte Einstellungen und Empfehlungen in der Konfigurationsanalyse
+### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Registerkarte "Einstellung und Empfehlungen" in der Konfigurationsanalyse
 
-Standardmäßig wird die Registerkarte im Vergleich zum Standard Schutzprofil geöffnet. Sie können zum Vergleich des strengen Schutz Profils wechseln, indem Sie auf **strenge Empfehlungen anzeigen** klicken. Um zurück zu wechseln, wählen Sie **Standard Empfehlungen anzeigen** aus.
+Standardmäßig wird die Registerkarte im Vergleich zum Standardschutzprofil geöffnet. Sie können zum Vergleich des Strengschutzprofils wechseln, indem Sie auf **"Strenge Empfehlungen anzeigen" klicken.** Um zurück zu wechseln, wählen **Sie "Standardempfehlungen anzeigen" aus.**
 
 ![Ansicht "Einstellungen und Empfehlungen" in der Konfigurationsanalyse](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
-Standardmäßig enthält die Spalte **Richtliniengruppen/Einstellungsname** eine reduzierte Ansicht der verschiedenen Typen von Sicherheitsrichtlinien und der Anzahl von Einstellungen, die verbessert werden müssen (sofern vorhanden). Die Typen von Richtlinien lauten wie folgt:
+Standardmäßig enthält  die Spalte "Richtliniengruppe/Einstellungsname" eine reduzierte Ansicht der verschiedenen Typen von Sicherheitsrichtlinien und die Anzahl der Einstellungen, die gegebenenfalls verbessert werden müssen. Die Richtlinientypen sind:
 
-- **Anti-Spam**
-- **Anti-Phishing**
-- **Anti-Malware**
-- **ATP-sichere Anlagen** (wenn Ihr Abonnement Microsoft Defender für Office 365 enthält)
-- **ATP-sichere Links** (wenn Ihr Abonnement Microsoft Defender für Office 365 enthält)
+- **Antispam**
+- **Antiphishing**
+- **Ansoftware**
+- **ATP-sichere Anlagen** (wenn Ihr Abonnement Microsoft Defender für Office 365 umfasst)
+- **ATP Safe Links** (wenn Ihr Abonnement Microsoft Defender für Office 365 enthält)
 
-In der Standardansicht wird alles reduziert. Neben den einzelnen Richtlinien gibt es eine Zusammenfassung der Vergleichsergebnisse aus ihren Richtlinien (die Sie ändern können) und die Einstellungen in den entsprechenden Richtlinien für die Standard mäßigen oder strengen Schutzprofile (die Sie nicht ändern können). Die folgenden Informationen für das Schutzprofil, mit dem Sie verglichen werden, werden angezeigt:
+In der Standardansicht ist alles reduziert. Neben jeder Richtlinie gibt es eine Zusammenfassung der Vergleichsergebnisse aus Ihren Richtlinien (die Sie ändern können) und den Einstellungen in den entsprechenden Richtlinien für die Standard- oder Strict -Schutzprofile (die Sie nicht ändern können). Für das Schutzprofil, mit dem Sie einen Vergleich erstellen, werden die folgenden Informationen angezeigt:
 
-- **Grün**: alle Einstellungen in allen vorhandenen Richtlinien sind mindestens so sicher wie das Schutzprofil.
-- **Amber**: eine kleine Anzahl von Einstellungen in den vorhandenen Richtlinien ist nicht so sicher wie das Schutzprofil.
-- **Rot**: eine beträchtliche Anzahl von Einstellungen in den vorhandenen Richtlinien ist nicht so sicher wie das Schutzprofil. Dabei kann es sich um einige Einstellungen in vielen Richtlinien oder um viele Einstellungen in einer Richtlinie handeln.
+- **Grün:** Alle Einstellungen in allen vorhandenen Richtlinien sind mindestens so sicher wie das Schutzprofil.
+- **Neu:** Eine kleine Anzahl von Einstellungen in den vorhandenen Richtlinien ist nicht so sicher wie das Schutzprofil.
+- **Rot:** Eine erhebliche Anzahl von Einstellungen in den vorhandenen Richtlinien ist nicht so sicher wie das Schutzprofil. Dies können einige Einstellungen in vielen Richtlinien oder viele Einstellungen in einer Richtlinie sein.
 
-Für günstige Vergleiche wird der Text angezeigt: **alle Einstellungen folgen** den \<**Standard** or **Strict**\> **Empfehlungen**. Andernfalls wird die Anzahl der empfohlenen Einstellungen angezeigt, die geändert werden sollten.
+Für vorteilhafte Vergleiche wird der Text angezeigt: **Alle Einstellungen folgen** \<**Standard** or **Strict**\> **Empfehlungen.** Andernfalls wird die Anzahl der empfohlenen Einstellungen angezeigt, die geändert werden müssen.
 
-Wenn Sie den **Namen der Richtliniengruppe/Einstellung** erweitern, werden alle Richtlinien und die zugehörigen Einstellungen in jeder spezifischen Richtlinie, die Aufmerksamkeit erfordern, aufgedeckt. Sie können auch einen bestimmten Richtlinientyp erweitern (beispielsweise **Anti-Spam**), um nur die Einstellungen in diesen Richtlinientypen anzuzeigen, die Ihre Aufmerksamkeit erfordern.
+Wenn Sie den Namen **der Richtliniengruppe/-einstellung** erweitern, werden alle Richtlinien und die zugehörigen Einstellungen in jeder bestimmten Richtlinie angezeigt, die Aufmerksamkeit erfordern. Sie können auch einen bestimmten Richtlinientyp (z. B. **Antispam)** erweitern, um nur die Einstellungen in den Richtlinientypen zu sehen, die Ihre Aufmerksamkeit erfordern.
 
-Wenn der Vergleich keine Empfehlungen für Verbesserungen (grün) hat, zeigt das Erweitern der Richtlinie nichts. Wenn es eine Reihe von Verbesserungsempfehlungen gibt (Amber oder rot), werden die Einstellungen, die Aufmerksamkeit erfordern, aufgedeckt, und entsprechende Informationen werden in den folgenden Spalten angezeigt:
+Wenn der Vergleich keine Verbesserungsempfehlungen enthält (grün), wird durch das Erweitern der Richtlinie nichts offen. Wenn es eine Reihe von Verbesserungsempfehlungen gibt (rot oder rot), werden die Einstellungen aufgedeckt, die Aufmerksamkeit erfordern, und entsprechende Informationen werden in den folgenden Spalten angezeigt:
 
-- Der Name der Einstellung, die Ihre Aufmerksamkeit erfordert. Im vorherigen Screenshot ist dies beispielsweise der **Schwellenwert für Massen-e-Mails** in einer Anti-Spam-Richtlinie.
+- Der Name der Einstellung, die Ihre Aufmerksamkeit erfordert. Im vorherigen Screenshot ist dies beispielsweise der Schwellenwert für Massen-E-Mails **in** einer Antispamrichtlinie.
 
-- **Richtlinie**: der Name der betroffenen Richtlinie, die die Einstellung enthält.
+- **Richtlinie:** Der Name der betroffenen Richtlinie, die die Einstellung enthält.
 
-- **Angewendet auf**: die Anzahl der Benutzer, auf die die betroffenen Richtlinien angewendet wurden.
+- **Angewendet auf:** Die Anzahl der Benutzer, auf die die betroffenen Richtlinien angewendet werden.
 
-- **Aktuelle Konfiguration**: der aktuelle Wert der Einstellung.
+- **Aktuelle Konfiguration:** Der aktuelle Wert der Einstellung.
 
-- **Zuletzt geändert**: das Datum, an dem die Richtlinie zuletzt geändert wurde.
+- **Letzte Änderung:** Das Datum, an dem die Richtlinie zuletzt geändert wurde.
 
-- **Empfehlungen**: der Wert der Einstellung im Standard mäßigen oder strengen Schutzprofil. Klicken Sie auf über **nehmen**, um den Wert der Einstellung in Ihrer Richtlinie so zu ändern, dass er dem empfohlenen Wert im Schutzprofil entspricht. Wenn die Änderung erfolgreich war, wird die Meldung angezeigt: **Empfehlungen wurden erfolgreich angenommen**. Klicken Sie auf **Aktualisieren** , um die reduzierte Anzahl von Empfehlungen und das Entfernen der spezifischen Einstellung/Richtlinienzeile aus den Ergebnissen anzuzeigen.
+- **Empfehlungen:** Der Wert der Einstellung im Standard- oder Strict-Schutzprofil. Klicken Sie auf "Übernehmen", um den Wert der Einstellung in Ihrer Richtlinie an den empfohlenen Wert im Schutzprofil **zu ändern.** Wenn die Änderung erfolgreich ist, wird die Meldung angezeigt: **Empfehlungen wurden erfolgreich angenommen.** Klicken **Sie auf** "Aktualisieren", um die reduzierte Anzahl von Empfehlungen und das Entfernen der spezifischen Einstellung/Richtlinienzeile aus den Ergebnissen zu sehen.
 
-### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Konfigurations Drift Analyse und Registerkarte Verlauf in der Konfigurationsanalyse
+### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Registerkarte "Konfigurations-Driftanalyse und Verlauf" in der Konfigurationsanalyse
 
 Auf dieser Registerkarte können Sie die Änderungen nachverfolgen, die Sie an Ihren benutzerdefinierten Sicherheitsrichtlinien vorgenommen haben. Standardmäßig werden die folgenden Informationen angezeigt:
 
 - **Zuletzt geändert**
 - **Geändert von**
-- **Einstellungs Name**
-- **Richtlinie**
-- **Type**
+- **Einstellungsname**
+- **Policy**
+- **Typ**
 
-Klicken Sie auf **Filter**, um die Ergebnisse zu filtern. Im eingeblendeten **Filter** -Flyout können Sie aus den folgenden Filtern auswählen:
+Klicken Sie auf **Filter**, um die Ergebnisse zu filtern. Im **angezeigten Filterf** flyout können Sie aus den folgenden Filtern auswählen:
 
-- **Startzeit** und **Endzeit** (Datum)
-- **Standard Schutz** oder **strenger Schutz**
+- **Startzeit und** **Endzeit** (Datum)
+- **Standardschutz oder** **strenger Schutz**
 
-Klicken Sie auf **exportieren**, um die Ergebnisse in eine CSV-Datei zu exportieren.
+Klicken Sie auf "Exportieren", um die Ergebnisse in eine **CSV-Datei zu exportieren.**
 
-![Konfigurations Drift Analyse und Verlaufsansicht in der Konfigurationsanalyse](../../media/configuration-analyzer-configuration-drift-analysis-view.png)
+![Konfigurations-Driftanalyse und Verlaufsansicht in der Konfigurationsanalyse](../../media/configuration-analyzer-configuration-drift-analysis-view.png)

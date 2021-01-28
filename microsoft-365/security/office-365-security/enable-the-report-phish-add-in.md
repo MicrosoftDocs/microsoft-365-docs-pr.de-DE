@@ -3,7 +3,7 @@ title: Aktivieren des Berichts-Phish-Add-Ins
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: Admin
 ms.topic: how-to
@@ -16,22 +16,22 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie das Phishing-Add-In "Melden" für Outlook und Outlook im Web, für einzelne Benutzer oder ihre gesamte Organisation aktivieren.
-ms.openlocfilehash: 2ea6a9bf9b00fc844aede6daeb9fc11f23c81e4a
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.openlocfilehash: 6d86fdc710539bc3c74eb94f8931ca48a0c992c1
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865270"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029138"
 ---
-# <a name="enable-the-report-phishing-add-in"></a>Aktivieren des Phishing-Add-Ins "Melden"
+# <a name="enable-the-report-phishing-add-in"></a>Aktivieren des Add-Ins „Phishing melden“
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
 > [!NOTE]
-> Wenn Sie ein Administrator in einer Microsoft 365-Organisation mit Exchange Online-Postfächern sind, empfehlen wir die Verwendung des Übermittlungsportals im Security & Compliance Center. Weitere Informationen finden Sie unter ["Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft ".](admin-submission.md)
+> Wenn Sie ein Administrator in einer Microsoft 365-Organisation mit Exchange Online-Postfächern sind, empfehlen wir die Verwendung des Übermittlungsportals im Security & Compliance Center. Weitere Informationen finden Sie unter "Use Admin Submission", um verdächtige [Spam-, Phishing-, URLs-](admin-submission.md)und Dateien an Microsoft zu übermitteln.
 
-Die "Nachricht melden" und "Phishing melden"-Add-Ins für Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) ermöglichen Es Benutzern, falsch positive Ergebnisse (eine gute E-Mail als schlecht markiert) oder falsch negative Ergebnisse (ungültige E-Mails sind zulässig) einfach zur Analyse an Microsoft und seine Partner zu melden.
+Die "Nachricht melden" und "Phishing melden"-Add-Ins für Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) ermöglichen Es Benutzern, falsch positive Ergebnisse (eine gute E-Mail als schlecht markiert) oder falsch negative Ergebnisse (ungültige E-Mails sind zulässig) zur Analyse an Microsoft und seine Partner zu melden.
 
 Microsoft verwendet diese Übermittlungen, um die Effektivität von E-Mail-Schutztechnologien zu verbessern. Nehmen wir beispielsweise an, dass Benutzer viele Nachrichten mit dem Phishing-Add-In "Melden" melden. Diese Informationen werden im [Sicherheitsdashboard und](security-dashboard.md) anderen Berichten angezeigt. Das Sicherheitsteam Ihrer Organisation kann diese Informationen als Hinweis darauf verwenden, dass Antiphishingrichtlinien möglicherweise aktualisiert werden müssen.
 
@@ -70,7 +70,7 @@ Wenn Sie ein globaler Administrator oder Exchange Online-Administrator sind und 
 
 3. Überprüfen Sie im angezeigten Dialogfeld die Nutzungsbedingungen und die Datenschutzrichtlinie, und klicken Sie dann auf **"Weiter".**
 
-4. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Firmenkonto (zur geschäftlichen Nutzung) oder Ihrem Microsoft-Konto (zur persönlichen Nutzung) an.
+4. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Firmenkonto (zur geschäftlichen Nutzung) oder Ihrem Microsoft-Konto (zur persönlichen Verwendung) an.
 
 Nachdem das Add-in installiert und aktiviert wurde, werden die folgenden Symbole angezeigt:
 
@@ -87,21 +87,23 @@ Nachdem das Add-in installiert und aktiviert wurde, werden die folgenden Symbole
 > [!NOTE]
 > Es kann bis zu 12 Stunden dauern, bis das Add-in in Ihrer Organisation angezeigt wird.
 
-1. Wechseln Sie im Microsoft 365 Admin Center zur Seite Einstellungen, integrierte Apps **&-Add-Ins,** und klicken Sie dann auf <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> **"Add-In bereitstellen".**
+1. Wechseln Sie im Microsoft 365 Admin Center  zur Seite \> **"Einstellungen-Add-Ins".** Wenn die <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> **Add-In-Seite**  nicht angezeigt wird, wechseln \>  \>   Sie oben auf der Seite "Integrierte Apps" zum Link "Integrierte Apps".
+
+2. Wählen Sie oben auf der Seite **"Add-In** bereitstellen" und dann **"Weiter" aus.**
 
    ![Seite "Dienste und Add-Ins" im Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. Überprüfen Sie **im angezeigten Flyout** "Neues Add-In bereitstellen" die Informationen, und klicken Sie dann auf **"Weiter".**
+3. Überprüfen Sie **im angezeigten Flyout** "Neues Add-In bereitstellen" die Informationen, und klicken Sie dann auf **"Weiter".**
 
-3. Klicken Sie auf der nächsten Seite auf **"Aus Store auswählen".**
+4. Klicken Sie auf der nächsten Seite auf **"Aus Store auswählen".**
 
    ![Bereitstellen einer neuen Add-In-Seite](../../media/NewAddInScreen2.png)
 
-4. Klicken Sie auf **der angezeigten Seite "Add-In** auswählen" in das  Suchfeld, geben **Sie "Phishing** melden" ein, und klicken Sie dann auf das Suchsymbol  ![ ](../../media/search-icon.png) . Suchen Sie in der Ergebnisliste nach **"Phishing melden",** und klicken Sie dann auf **"Hinzufügen".**
+5. Klicken Sie auf **der angezeigten Seite "Add-In** auswählen" in das  Suchfeld, geben **Sie "Phishing** melden" ein, und klicken Sie dann auf das Suchsymbol  ![ ](../../media/search-icon.png) . Suchen Sie in der Ergebnisliste nach **"Phishing melden",** und klicken Sie dann auf **"Hinzufügen".**
 
-5. Überprüfen Sie im angezeigten Dialogfeld die Lizenzierungs- und Datenschutzinformationen, und klicken Sie dann auf **"Weiter".**
+6. Überprüfen Sie im angezeigten Dialogfeld die Lizenzierungs- und Datenschutzinformationen, und klicken Sie dann auf **"Weiter".**
 
-6. Konfigurieren Sie auf der angezeigten Seite **"Add-In** konfigurieren" die folgenden Einstellungen:
+7. Konfigurieren Sie auf der angezeigten Seite **"Add-In** konfigurieren" die folgenden Einstellungen:
 
    - **Zugewiesene Benutzer:** Wählen Sie einen der folgenden Werte aus:
 
@@ -117,9 +119,9 @@ Nachdem das Add-in installiert und aktiviert wurde, werden die folgenden Symbole
 
    Klicken Sie nach Abschluss des Abschlusses auf **"Bereitstellen".**
 
-7. Auf der **angezeigten Seite "Phishingbericht** bereitstellen" wird ein Fortschrittsbericht angezeigt, gefolgt von einer Bestätigung, dass das Add-in bereitgestellt wurde. Klicken Sie nach dem Lesen der Informationen auf **"Weiter".**
+8. Auf der **angezeigten Seite "Phishingbericht** bereitstellen" wird ein Fortschrittsbericht angezeigt, gefolgt von einer Bestätigung, dass das Add-in bereitgestellt wurde. Klicken Sie nach dem Lesen der Informationen auf **"Weiter".**
 
-8. Überprüfen Sie **auf der angezeigten** Seite "Add-In ankündigen" die Informationen, und klicken Sie dann auf **"Schließen".**
+9. Überprüfen Sie **auf der angezeigten** Seite "Add-In ankündigen" die Informationen, und klicken Sie dann auf **"Schließen".**
 
 ## <a name="learn-how-to-use-the-report-phishing-add-in"></a>Informationen zur Verwendung des Phishing-Add-Ins "Melden"
 
@@ -135,7 +137,7 @@ Personen, denen das Add-In zugewiesen ist, werden die folgenden Symbole angezeig
 
 ## <a name="review-or-edit-settings-for-the-report-phishing-add-in"></a>Überprüfen oder Bearbeiten von Einstellungen für das Phishing-Add-In "Melden"
 
-1. Wechseln Sie im Microsoft 365 Admin Center zur Seite "Dienste **&-Add-Ins"** unter <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> .
+1. Wechseln Sie im Microsoft 365 Admin Center  zur Seite \> **"Einstellungen-Add-Ins".** Wenn die <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> **Add-In-Seite**  nicht angezeigt wird, wechseln \>  \>   Sie oben auf der Seite "Integrierte Apps" zum Link "Integrierte Apps".
 
 2. Suchen Sie das **Phishing-Add-In "Melden",** und wählen Sie es aus.
 

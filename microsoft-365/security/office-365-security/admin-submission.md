@@ -3,7 +3,7 @@ title: Administratorübermittlungen
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -19,12 +19,12 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie das Übermittlungsportal im Security & Compliance Center verwenden, um verdächtige E-Mails, verdächtige Phishing-E-Mails, Spam und andere potenziell schädliche Nachrichten, URLs und Dateien zur Überprüfung an Microsoft zu übermitteln.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 879a13e7c059495e653b79c424b227fe9f35a498
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: ed417db93bc2f3efa6b85b0ef97c10b5941cd8eb
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976603"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029514"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Verwenden von Administrator-Übermittlung, um verdächtige Spam- oder Phishing-Nachrichten, URLs und Dateien an Microsoft zu übermitteln
 
@@ -41,7 +41,7 @@ Wenn Sie eine E-Mail-Nachricht übermitteln, erhalten Sie:
 4. **Analyse der** Benotung: Überprüfen Sie, ob Nachrichten bösartig sind oder nicht.
 
 > [!IMPORTANT]
-> Die Nutzlast-Reputations-/Detonation- und Bewertungsanalyse wird nicht in allen Mandanten durchgeführt. Es wird verhindert, dass Informationen außerhalb der Organisation liegen, wenn Daten aus Compliancegründen nicht die Mandantengrenze verlassen sollen.
+> Die Nutzlast-Reputations-/Detonation- und Bewertungsanalyse wird nicht in allen Mandanten durchgeführt. Informationen werden am Verlassen der Organisation blockiert, wenn Daten aus Compliancegründen nicht die Mandantengrenze verlassen sollen.
 
 Weitere Möglichkeiten zum Senden von E-Mail-Nachrichten, URLs und Anlagen an Microsoft finden Sie unter "Nachrichten und Dateien an [Microsoft melden".](report-junk-email-messages-to-microsoft.md)
 
@@ -90,7 +90,7 @@ Weitere Möglichkeiten zum Senden von E-Mail-Nachrichten, URLs und Anlagen an Mi
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Senden einer verdächtigen URL an Microsoft
 
-1. Wählen Sie **im Abschnitt "Objekttyp"** **die URL aus.** Geben Sie in das angezeigte Feld die vollständige URL ein (z. B. `https://www.fabrikam.com/marketing.html` ).
+1. Wählen Sie **im Abschnitt "Objekttyp"** die **URL aus.** Geben Sie in das angezeigte Feld die vollständige URL ein (z. B. `https://www.fabrikam.com/marketing.html` ).
 
 2. Wählen Sie **im Abschnitt "Gründe für die** Übermittlung" eine der folgenden Optionen aus:
 
@@ -171,7 +171,7 @@ Wenn eine Außerkraftsetzung gefunden wurde, sollte die Erneutes Scannen in eini
 
 Klicken Sie auf **die Registerkarte "URL".**
 
-Sie können auf die Schaltfläche **"Spaltenoptionen"** am unteren Rand der Seite klicken, um Spalten in der Ansicht hinzuzufügen oder zu entfernen:
+Sie können auf die Schaltfläche **"Spaltenoptionen"** am unteren Rand der Seite klicken, um Spalten aus der Ansicht hinzuzufügen oder zu entfernen:
 
 - **Date**
 - **Übermittlungs-ID**
@@ -186,7 +186,7 @@ Sie können auf die Schaltfläche **"Spaltenoptionen"** am unteren Rand der Seit
 
 Klicken Sie auf die **Registerkarte "Anlagen".**
 
-Sie können auf die Schaltfläche **"Spaltenoptionen"** am unteren Rand der Seite klicken, um Spalten in der Ansicht hinzuzufügen oder zu entfernen:
+Sie können auf die Schaltfläche **"Spaltenoptionen"** am unteren Rand der Seite klicken, um Spalten aus der Ansicht hinzuzufügen oder zu entfernen:
 
 - **Date**
 - **Übermittlungs-ID**
@@ -205,7 +205,7 @@ Wenn Sie das Report [Message-Add-In,](enable-the-report-message-add-in.md)das [P
 
 2. Wählen Sie **die Registerkarte "Benutzerübermittlungen"** aus, und klicken Sie dann auf **"Neue Übermittlung".**
 
-Sie können auf die Schaltfläche **"Spaltenoptionen"** am unteren Rand der Seite klicken, um Spalten in der Ansicht hinzuzufügen oder zu entfernen:
+Sie können auf die Schaltfläche **"Spaltenoptionen"** am unteren Rand der Seite klicken, um Spalten aus der Ansicht hinzuzufügen oder zu entfernen:
 
 - **Übermittelt am**
 - **Übermittelt von**<sup>\*</sup>
@@ -218,7 +218,7 @@ Sie können auf die Schaltfläche **"Spaltenoptionen"** am unteren Rand der Seit
 
 Im oberen Seitenanfang können Sie ein Startdatum, ein Enddatum und (standardmäßig) einen Filter nach **Absender** eingeben, indem Sie einen Wert in das Feld eingeben und auf die Schaltfläche Aktualisieren ![ ](../../media/scc-quarantine-refresh.png) klicken. Update
 
-Um die Filterkriterien zu ändern, klicken Sie auf die Schaltfläche **"Absender",** und wählen Sie einen der folgenden Werte aus:
+Klicken Sie zum Ändern der Filterkriterien auf die Schaltfläche **"Absender",** und wählen Sie einen der folgenden Werte aus:
 
 - **Absenderdomäne**
 - **Betreff**
@@ -238,7 +238,7 @@ Zum Exportieren der Ergebnisse klicken **Sie** oben auf der Seite auf "Exportier
 
 2. Wählen Sie die **Registerkarte "Benutzerdefiniertes Postfach"** aus.
 
-Sie können auf die Schaltfläche **"Spaltenoptionen"** am unteren Rand der Seite klicken, um Spalten in der Ansicht hinzuzufügen oder zu entfernen:
+Sie können auf die Schaltfläche **"Spaltenoptionen"** am unteren Rand der Seite klicken, um Spalten aus der Ansicht hinzuzufügen oder zu entfernen:
 
 - **Übermittelt am**
 - **Übermittelt von**<sup>\*</sup>

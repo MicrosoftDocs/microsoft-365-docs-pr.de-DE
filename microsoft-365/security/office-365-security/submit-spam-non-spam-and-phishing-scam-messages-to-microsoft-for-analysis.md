@@ -3,26 +3,27 @@ title: Manuelles Übermitteln von Nachrichten zur Analyse an Microsoft
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: Administratoren und Endbenutzer können erfahren, wie Sie Nachrichten (gute E-Mails, die als ungültige oder ungültige E-Mails zugelassen sind) zur Analyse an Microsoft senden.
+description: Administratoren und Endbenutzer können erfahren, wie Sie Nachrichten (gute E-Mails, die als ungültige oder ungültige E-Mails zulässig sind) zur Analyse an Microsoft senden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 94747b1d0a1aef746a63abada977aa47270ae4e2
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: d5d3b7a51c39b85af8a6fae84f525da6d806789c
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865080"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029584"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Manuelles Übermitteln von Nachrichten zur Analyse an Microsoft
 
@@ -42,9 +43,9 @@ Sie und Ihre Benutzer können diesen Prozess unterstützen, indem Sie falsch pos
 ## <a name="submit-false-negatives-to-microsoft"></a>Übermitteln falsch negativer Meldungen an Microsoft
 
 > [!TIP]
-> Anstatt die folgenden Verfahren zum Melden falsch negativer Negative zu verwenden, können Benutzer in Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) das Report Message-Add-In oder das Phishing-Add-In "Melden" verwenden. Informationen zum Installieren und Verwenden dieser Tools finden Sie unter "Aktivieren des [Add-Ins](enable-the-report-message-add-in.md) "Nachricht melden" und "Aktivieren des [Phishing-Add-Ins "Melden"](enable-the-report-phish-add-in.md).
+> Anstatt die folgenden Verfahren zum Melden falsch negativer Negative zu verwenden, können Benutzer in Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) das Report Message-Add-In oder das Phishing-Add-In "Melden" verwenden. Informationen zum Installieren und Verwenden dieser Tools finden Sie unter "Aktivieren des [Nachrichten-Add-Ins](enable-the-report-message-add-in.md) "Melden" und "Aktivieren des [Phishing-Add-Ins "Melden"](enable-the-report-phish-add-in.md).
 
-Wenn Sie eine Nachricht erhalten, die die Spamfilterung passiert hat, die als Spam oder Phishing identifiziert worden sein sollte, können Sie die Nachricht an die Microsoft Spam Analysis- und Microsoft Phishing Analysis Teams übermitteln. Die Analysten überprüfen die Nachricht und fügen sie den dienstweiten Filtern hinzu, wenn sie die Klassifizierungskriterien erfüllt.
+Wenn Sie eine Nachricht erhalten, die die Spamfilterung passiert hat, die als Spam oder Phishing identifiziert worden sein sollte, können Sie die Nachricht gegebenenfalls an die Microsoft-Teams für die Spamanalyse und die Microsoft-Phishinganalyse übermitteln. Die Analysten überprüfen die Nachricht und fügen sie den dienstweiten Filtern hinzu, wenn sie die Klassifizierungskriterien erfüllt.
 
 1. Erstellen Sie eine neue leere E-Mail-Nachricht mit einem der folgenden Empfänger:
 
@@ -65,12 +66,12 @@ Wenn Sie eine Nachricht erhalten, die die Spamfilterung passiert hat, die als Sp
 3. Klicken Sie nach Abschluss des Abschlusses auf **"Senden".**
 
 > [!TIP]
-> Administratoren haben mehrere Möglichkeiten, bestimmte Nachrichten zu blockieren, die falsch als Spam identifiziert werden. Weitere Informationen finden Sie unter [Erstellen von Listen blockierter Absender in EOP](create-block-sender-lists-in-office-365.md).
+> Administratoren haben mehrere Möglichkeiten, bestimmte Nachrichten zu blockieren, die falsch als Spam erkannt werden. Weitere Informationen finden Sie unter [Erstellen von Listen blockierter Absender in EOP](create-block-sender-lists-in-office-365.md).
 
 ## <a name="submit-false-positives-to-microsoft"></a>Übermitteln falsch positiver Ergebnisse an Microsoft
 
 > [!TIP]
-> Anstatt die folgenden Verfahren zum Melden falsch positiver Ergebnisse zu verwenden, können Benutzer in Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) das Add-In "Nachricht melden" oder das "Phishing-Add-In melden" verwenden. Informationen zum Installieren und Verwenden dieser Tools finden Sie unter "Aktivieren des [Add-Ins](enable-the-report-message-add-in.md) "Nachricht melden" und "Aktivieren des [Phishing-Add-Ins "Melden"](enable-the-report-phish-add-in.md).
+> Anstatt die folgenden Verfahren zum Melden falsch positiver Ergebnisse zu verwenden, können Benutzer in Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) das Add-In "Nachricht melden" oder das "Phishing-Add-In melden" verwenden. Informationen zum Installieren und Verwenden dieser Tools finden Sie unter "Aktivieren des [Nachrichten-Add-Ins](enable-the-report-message-add-in.md) "Melden" und "Aktivieren des [Phishing-Add-Ins "Melden"](enable-the-report-phish-add-in.md).
 
 
 Wenn eine Nachricht fälschlicherweise als Spam identifiziert wurde, können Sie die Nachricht an das Microsoft Spam Analysis Team übermitteln. Die Analysten werten die Nachricht aus, und (abhängig von den Ergebnissen der Analyse) können die dienstweiten Filter angepasst werden, um die Nachricht zu durchkommen.

@@ -3,7 +3,7 @@ title: Benutzerübermittlungsrichtlinie
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -14,22 +14,22 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Administratoren können erfahren, wie Sie ein Postfach konfigurieren, um Spam- und Phishing-E-Mails zu sammeln, die von Benutzern gemeldet werden.
+description: Administratoren können erfahren, wie Sie ein Postfach so konfigurieren, dass Spam- und Phishing-E-Mails gesammelt werden, die von Benutzern gemeldet werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9759bbae1dc49b80859198e11e6f85383cdf2f66
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 28848908934057cc898eeca489cd2ee21f30692f
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988128"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029762"
 ---
 # <a name="user-submissions-policy"></a>Benutzerübermittlungsrichtlinie
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-In Microsoft 365-Organisationen mit Exchange Online-Postfächern können Sie ein Postfach angeben, um Nachrichten zu empfangen, die Benutzer als bösartig oder nicht schädlich melden. Wenn Benutzer Nachrichten mithilfe der verschiedenen Berichtsoptionen übermitteln, können Sie dieses Postfach verwenden, um Nachrichten abzufangen (nur an das benutzerdefinierte Postfach zu senden) oder Kopien von Nachrichten zu empfangen (an das benutzerdefinierte Postfach und Microsoft senden). Dieses Feature funktioniert mit den folgenden Nachrichtenberichtsoptionen:
+In Microsoft 365-Organisationen mit Exchange Online-Postfächern können Sie ein Postfach angeben, um Nachrichten zu empfangen, die Benutzer als bösartig oder nicht schädlich melden. Wenn Benutzer Nachrichten mithilfe der verschiedenen Berichtsoptionen übermitteln, können Sie dieses Postfach verwenden, um Nachrichten abzufangen (nur an das benutzerdefinierte Postfach senden) oder Kopien von Nachrichten zu empfangen (an das benutzerdefinierte Postfach und Microsoft senden). Dieses Feature funktioniert mit den folgenden Nachrichtenberichtsoptionen:
 
 - [Das Berichtsnachrichten-Add-In](enable-the-report-message-add-in.md)
 
@@ -44,7 +44,7 @@ In Microsoft 365-Organisationen mit Exchange Online-Postfächern können Sie ein
 
 Sie können auch Tools für die Nachrichtenberichterstattung von Drittanbietern konfigurieren, um Nachrichten an das von Ihnen festgelegte Postfach weiter zu senden.
 
-Die Übermittlung von vom Benutzer gemeldeten Nachrichten an ein benutzerdefiniertes Postfach anstatt direkt an Microsoft ermöglicht Es Ihren Administratoren, Nachrichten mithilfe der Administratorübermittlung selektiv und manuell an Microsoft [zu melden.](admin-submission.md)
+Das Senden von vom Benutzer gemeldeten Nachrichten an ein benutzerdefiniertes Postfach anstatt direkt an Microsoft ermöglicht Es Ihren Administratoren, Nachrichten mithilfe der Administratorübermittlung selektiv und manuell an Microsoft [zu melden.](admin-submission.md)
 
 ## <a name="custom-mailbox-prerequisites"></a>Voraussetzungen für benutzerdefinierte Postfächer
 
@@ -58,7 +58,7 @@ Verwenden Sie die folgenden Artikel, um die erforderlichen Komponenten zu konfig
 
 - Erstellen Sie eine Ansoftwarerichtlinie, um die automatische Bereinigung der Schadsoftware zur Nullstunde zu deaktivieren. Weitere [Informationen finden Sie unter "Verwenden des Security & Compliance Center](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) zum Erstellen von An malware-Richtlinien, um die automatische Bereinigung der Schadsoftware zur Nullstunde **auf** "Aus" **zu setzen.**
 
-- Erstellen Sie eine Spamfilterrichtlinie, um die automatische Bereinigung zur Nullstunde (ZAP) für Spam und Phishing im benutzerdefinierten Postfach zu deaktivieren. Verwenden Sie das Security & Compliance Center, um [Antispamrichtlinien](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) zu erstellen und die Kontrollkästchen **"Ein"** für **Spam ZAP** und **Phish ZAP zu löschen.**
+- Erstellen Sie eine Spamfilterrichtlinie, um die automatische Bereinigung zur Nullstunde (ZAP) für Spam und Phishing im benutzerdefinierten Postfach zu deaktivieren. Weitere Informationen finden Sie im Security & Compliance Center, um [Antispamrichtlinien](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) zu erstellen und die Kontrollkästchen **"Ein"** für **Spam ZAP** und **Phish ZAP zu löschen.**
 
 - Deaktivieren Sie die Junk-E-Mail-Regel im benutzerdefinierten Postfach. Verwenden [Sie "Junk-E-Mail-Einstellungen für Exchange Online-Postfächer konfigurieren",](configure-junk-email-settings-on-exo-mailboxes.md) um die Junk-E-Mail-Regel zu deaktivieren. Nach der Deaktivierung kann EOP Nachrichten nicht mehr in den  Junk-E-Mail-Ordner verschieben, basierend auf der Spamfilterungsaktion "Nachricht in Junk-E-Mail-Ordner oder die Sammlung von Listen sicherer Adressen für das Postfach verschieben".
 
@@ -73,7 +73,7 @@ Nachdem Sie überprüft haben, ob Ihr Postfach alle zutreffenden Voraussetzungen
   - **Organisationsverwaltung** oder **Sicherheitsadministrator** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
   - **Organisationsverwaltung** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- Sie benötigen Zugriff auf Exchange Online PowerShell. Wenn das Konto, das Sie verwenden möchten, keinen Zugriff auf Exchange Online PowerShell hat, erhalten Sie eine Fehlermeldung, die beim Angeben des Übermittlungspostfachs wie dies aussieht:
+- Sie benötigen Zugriff auf Exchange Online PowerShell. Wenn das Konto, das Sie verwenden möchten, keinen Zugriff auf Exchange Online PowerShell hat, erhalten Sie eine Fehlermeldung, die wie dies aussieht, wenn Sie das Übermittlungspostfach angeben:
 
   > Angeben einer E-Mail-Adresse in Ihrer Domäne
 

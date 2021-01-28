@@ -8,16 +8,16 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6e904eee5a132d271ec32ee99a19380463e53193
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: ee2e473f947f35d4f0d192005718a26e89590fab
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881773"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032657"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop-Geräte 
 
-Microsoft Managed Desktop wertet regelmäßig Geräte aus, die in den Dienst einbezogen werden sollen. In diesem Artikel werden die Anforderungen für die Registrierung eines Geräts in Microsoft Managed Desktop beschrieben, und es werden die spezifischen Geräte aufgeführt, die derzeit unterstützt werden.
+Microsoft Managed Desktop wertet regelmäßig Geräte aus, die in den Dienst aufgenommen werden sollen. In diesem Artikel werden die spezifischen Geräte aufgeführt, die derzeit unterstützt werden. Eine allgemeinere Erklärung der Geräteanforderungen finden Sie unter [Geräteanforderungen.](device-requirements.md)
 
 Weitere Informationen zu Microsoft Managed Desktop finden Sie in der Dokumentation und den Ressourcen zu [Microsoft Managed Desktop.](https://docs.microsoft.com/microsoft-365/managed-desktop/) 
 
@@ -28,14 +28,14 @@ Um bei Microsoft Managed Desktop registriert zu werden, muss ein Gerät eines de
 Die links zu Geräten hier sind nur zu Ihrer Referenz. Wenn Sie Geräte bestellen möchten, arbeiten Sie mit Ihren kommerziellen Kanalkontakten zusammen, um sicherzustellen, dass Sie die richtigen Konfigurationen auswählen. In dieser Tabelle ist das *Archivdatum* das Datum, an dem diese Modelle einer kürzeren Microsoft Managed #A0 unterliegen. Alle nach diesem Datum integrierten Geräte erhalten keine vollständige Drei-Jahres-Laufzeit des Support von Microsoft Managed Desktop. Archivierte Geräte werden auch auf in [Microsoft Managed Desktop archivierten Geräten aufgeführt.](archived-device-list.md) *Das Datum der* Determinierung ist das Datum, an dem dieses Modell überhaupt nicht mehr von Microsoft Managed Desktop unterstützt wird. An diesem Datum werden alle registrierten Geräte dieses Modells aus Microsoft Managed Desktop entfernt, unabhängig davon, wann sie registriert wurden.
 
 >[!NOTE]
->Geräte können dieser Tabelle jederzeit hinzugefügt werden, wir werden jedoch 90 Tage vor Änderungen, die sich auf das Archiv- oder Das ende des Datums für die Determinierung ausdingen, kündigen. Die zuletzt hinzugefügten Geräte sind mit * *\** _gekennzeichnet.
+>Geräte können dieser Tabelle jederzeit hinzugefügt werden, wir werden jedoch 90 Tage vor Änderungen, die sich auf das Archiv- oder das Auspensionsdatum ausdingen, kündigen. Die zuletzt hinzugefügten Geräte sind mit * *\** _gekennzeichnet.
 
 
 ## <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop Devices
 
 ### <a name="dell"></a>Dell
 
-| Modell    | Mindestspezifikationen  | Zusätzliche Anforderungen    | Archivdatum   | Auspensionsdatum   |
+| Modell    | Mindestspezifikationen  | Zusätzliche Anforderungen    | Archivdatum   | Datum der Auspension   |
 |----------|----------------|---------------------------|----------------|--------------------|
 | [Dell Precision 5310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR-Kamera erforderlich | 28. April 2022  | 28. April 2025 |
 | [Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR-Kamera erforderlich | 28. April 2022 | 28. April 2025  |
@@ -50,7 +50,7 @@ Die links zu Geräten hier sind nur zu Ihrer Referenz. Wenn Sie Geräte bestelle
 
 ### <a name="hp"></a>HP
 
-| Modell    | Mindestspezifikationen  | Zusätzliche Anforderungen    | Archivdatum   | Auspensionsdatum   |
+| Modell    | Mindestspezifikationen  | Zusätzliche Anforderungen    | Archivdatum   | Datum der Auspension   |
 |----------|----------------|---------------------------|----------------|--------------------|
 | [HP EliteBook 830 / 840 / 850 G7 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 GB / Intel i5 / 8 GB RAM | SKU mit 9MZ21AV | 30. November 2021 | 30. November 2024 |
 | [HP EliteBook x360 830 G7 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g7-notebook-pc-p-1f6c0ut-aba-1) | 256 GB / Intel i5 / 8 GB RAM | SKU mit 9MZ21AV | 30. November 2021 | 30. November 2024 |
@@ -64,7 +64,7 @@ Die links zu Geräten hier sind nur zu Ihrer Referenz. Wenn Sie Geräte bestelle
 
 ### <a name="microsoft"></a>Microsoft
 
-| Modell    | Mindestspezifikationen  | Zusätzliche Anforderungen    | Archivdatum   | Auspensionsdatum   |
+| Modell    | Mindestspezifikationen  | Zusätzliche Anforderungen    | Archivdatum   | Datum der Auspension   |
 |----------|----------------|---------------------------|----------------|--------------------|
 | [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB RAM | Keine | 21. Mai 2022 | 21. Mai 2027 |
 | [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB / Intel Core M3 / 8 GB RAM | Keine | 21. Mai 2022 | 21. Mai 2027 |

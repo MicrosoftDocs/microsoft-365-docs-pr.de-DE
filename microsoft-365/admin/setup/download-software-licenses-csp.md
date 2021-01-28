@@ -1,5 +1,5 @@
 ---
-title: Herunterladen von unbefristeten Software- und Produktlizenzschlüsseln
+title: Herunterladen von unbefristeten Software- und Produktlizenzschlüsseln, die über das Cloud Solution Provider (CSP)-Programm erworben wurden
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,18 +18,18 @@ search.appverid:
 ms.custom:
 - AdminSurgePortfolio
 description: Erfahren Sie, wie Sie die Software- und Produktlizenzschlüssel für unbefristete Software herunterladen, die über das Cloud Solution Provider (CSP)-Programm erworben wurde.
-ms.openlocfilehash: bd9584e6a160f713cdfbfbcdac876b2e18b94110
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 9e55161111ae1796e8254a60ecdc693592988386
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877227"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029398"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>Herunterladen von unbefristeten Software- und Produktlizenzschlüsseln
 
 In diesem Artikel wird erläutert, wie Sie Software- und Produktlizenzschlüssel für unbefristete Software herunterladen, die über das Cloud Solution Provider (CSP)-Programm erworben wurde.
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Sie müssen ein globaler Administrator sein, um die Schritte in diesem Artikel ausführen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../add-users/about-admin-roles.md).
 

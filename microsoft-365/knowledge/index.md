@@ -14,17 +14,17 @@ ms.collection:
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 description: Erfahren Sie, wie Sie Ressourcen für Themenerfahrungen finden.
-ms.openlocfilehash: a9069b8723cb23a406fcce3b96a53b3de2a07568
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: afba6930c30ad59dc95abb255eadab501b01f189
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976179"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029608"
 ---
 # <a name="introduction-to-topic-experiences-preview"></a>Einführung in die Themenerfahrungen (Vorschau)
 
 > [!Note] 
-> Der Inhalt dieses Artikels ist für Project Cortex Private Preview vorgesehen. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
+> Der Inhalt dieses Artikels ist für Project Cortex Private Preview. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
 
 </br>
 
@@ -39,18 +39,18 @@ Die Ressourcen auf dieser Seite sind darauf ausgelegt, Ihnen den Einstieg in das
 
 ## <a name="get-started"></a>Erste Schritte
 
-Die Ressourcen in diesem Abschnitt helfen Ihnen, mehr über die Themenerfahrungen zu erfahren und zu erfahren, wie sie Ihnen helfen können.
+Die Ressourcen in diesem Abschnitt helfen Ihnen, mehr über die Themenerfahrungen zu erfahren und wie sie Ihnen helfen können.
 
 | Diese Informationen finden Sie unter: | Hilfreiche Ressource: |
 |:-----|:-----|
-|Weitere Informationen zum Thema Dokumentverständnis|[Übersicht über die Themenerfahrungen](topic-experiences-overview.md)|
-|Erfahren Sie, wie Themen von AI ermittelt und erstellt werden|[Ermittlung von Themenerfahrungen](topic-experiences-discovery.md)|
+|Weitere Informationen zu Themenerfahrungen|[Übersicht über die Themenerfahrungen](topic-experiences-overview.md)|
+|Erfahren Sie, wie Themen von AI entdeckt und vorgeschlagen werden|[Ermittlung von Themenerfahrungen](topic-experiences-discovery.md)|
 |Informationen zur Themensicherheit|[Thema "Erfahrungen mit Sicherheit und Datenschutz"](topic-experiences-security-privacy.md)|
 
 
 ## <a name="adoption"></a>Einführung
 
-Erfahren Sie mehr über die Verwendung und Implementierung von Themenerfahrungen in Ihrer Organisation, die Ihnen bei der Lösung Ihrer Geschäftsprobleme helfen: 
+Erfahren Sie mehr über die Verwendung und Implementierung von Themenerfahrungen in Ihrer Organisation, um Ihnen bei der Lösung Ihrer Geschäftsprobleme zu helfen: 
 
 | Diese Informationen finden Sie unter: | Hilfreiche Ressource: |
 |:-----|:-----|

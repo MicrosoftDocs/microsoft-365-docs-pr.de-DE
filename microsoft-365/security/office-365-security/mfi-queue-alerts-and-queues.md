@@ -1,95 +1,96 @@
 ---
-title: Queues Insight im Nachrichtenfluss-Dashboard
+title: Einblick in Warteschlangen im Nachrichtenflussdashboard
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: Administratoren können erfahren, wie Sie das Warteschlangen-Widget im Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um den nicht erfolgreichen e-Mail-Fluss an Ihre lokalen oder Partnerorganisationen über ausgehende Connectors zu überwachen.
-ms.openlocfilehash: a1563c61620ef9f1ae97739681f426fd0ea38bd8
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Administratoren können erfahren, wie Sie das Widget "Warteschlangen" im Dashboard für den Nachrichtenfluss im Security & Compliance Center verwenden, um den nicht erfolgreichen Nachrichtenfluss über ausgehende Connectors zu ihrer lokalen oder Partnerorganisation zu überwachen.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 73e97cbbd05e298013e9e686053a969d587ad5cf
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659250"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029150"
 ---
-# <a name="queues-insight-in-the-security--compliance-center"></a>Warteschlangen Einblicke im Security & Compliance Center
+# <a name="queues-insight-in-the-security--compliance-center"></a>Einblicke in Warteschlangen im Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Wenn Nachrichten nicht über Connectors von Ihrer Organisation an Ihre lokalen oder Partner-e-Mail-Server gesendet werden können, werden die Nachrichten in Microsoft 365 in die Warteschlange eingereiht. Häufige Beispiele, die diese Bedingung verursachen, sind:
+Wenn Nachrichten nicht über Connectors von Ihrer Organisation an Ihre lokalen oder Partner-E-Mail-Server gesendet werden können, werden die Nachrichten in microsoft 365 in die Warteschlange gestellt. Häufige Beispiele für diese Bedingung sind:
 
-- Der Connector ist nicht ordnungsgemäß konfiguriert.
-- In Ihrer lokalen Umgebung wurden Netzwerk-oder Firewall-Änderungen vorgenommen.
+- Der Connector ist falsch konfiguriert.
+- In Ihrer lokalen Umgebung wurden Netzwerk- oder Firewalländerungen vorgenommen.
 
-Microsoft 365 fährt fort, die Zustellung für 24 Stunden zu wiederholen. Nach 24 Stunden laufen die Nachrichten ab und werden an die Absender in Unzustellbarkeitsberichten (auch als Unzustellbarkeitsberichte oder Bounce-Nachrichten bezeichnet) zurückgegeben.
+Microsoft 365 retry to delivery for 24 hours. Nach 24 Stunden laufen die Nachrichten ab und werden in Unzustellbarkeitsberichten (auch als Unzustellbarkeitsnachrichten oder Unzustellbarkeitsnachrichten bekannt) an die Absender zurückgesendet.
 
-Wenn das e-Mail-Volumen in der Warteschlange den vordefinierten Schwellenwert überschreitet (der Standardwert ist 200 Nachrichten), stehen die Informationen an den folgenden Speicherorten zur Verfügung:
+Wenn das E-Mail-Volume in der Warteschlange den vordefinierten Schwellenwert überschreitet (der Standardwert ist 200 Nachrichten), stehen die Informationen an den folgenden Stellen zur Verfügung:
 
-- Die **Queues** Insight im [Nachrichtenfluss-Dashboard](mail-flow-insights-v2.md) im [Security & Compliance Center](https://protection.office.com). Weitere Informationen finden Sie im Abschnitt " [Queues Insight" im Abschnitt "Nachrichtenfluss-Dashboard](#queues-insight-in-the-mail-flow-dashboard) " in diesem Artikel.
+- Der **Einblick in Warteschlangen** im [Nachrichtenflussdashboard](mail-flow-insights-v2.md) im [Security & Compliance Center.](https://protection.office.com) Weitere Informationen finden Sie in den Einblicken in Warteschlangen im Abschnitt zum [Nachrichtenflussdashboard](#queues-insight-in-the-mail-flow-dashboard) in diesem Artikel.
 
-- Im Alerts-Dashboard im [Security & Compliance Center](https://protection.office.com) (**Alerts** -Dashboard oder) wird eine **Warnung in den** Benachrichtigungen für Benachrichtigungen angezeigt \>  <https://protection.office.com/alertsdashboard> .
+- Eine Warnung wird  im Dashboard "Warnungen" im Security & Compliance Center **(Dashboard** für Warnungen oder ) in [den](https://protection.office.com) letzten Warnungen \>  <https://protection.office.com/alertsdashboard> angezeigt.
 
-  ![Aktuelle Benachrichtigungen im Alerts-Dashboard im Security & Compliance Center](../../media/mfi-queued-messages-alert.png)
+  ![Aktuelle Warnungen im Benachrichtigungsdashboard im Security & Compliance Center](../../media/mfi-queued-messages-alert.png)
 
-- Administratoren erhalten eine e-Mail-Benachrichtigung basierend auf der Konfiguration der Standard Warnungs Richtlinie mit dem Namen " **Nachrichten wurden verzögert**. Informationen zum Konfigurieren der Benachrichtigungseinstellungen für diese Warnung finden Sie im nächsten Abschnitt.
+- Administratoren erhalten eine E-Mail-Benachrichtigung, die auf der Konfiguration der standardmäßigen Warnungsrichtlinie namens **"Nachrichten wurden verzögert" basiert.** Informationen zum Konfigurieren der Benachrichtigungseinstellungen für diese Warnung finden Sie im nächsten Abschnitt.
 
   Weitere Informationen zu Warnungsrichtlinien finden Sie unter [Warnungsrichtlinien im Security & Compliance Center](../../compliance/alert-policies.md).
 
-## <a name="customize-queue-alerts"></a>Anpassen von Warteschlangen Warnungen
+## <a name="customize-queue-alerts"></a>Anpassen von Warteschlangenwarnungen
 
-1. Wechseln Sie im [Security & Compliance Center](https://protection.office.com) **zu Alerts** \> **Alerts Policies** oder Open <https://protection.office.com/alertpolicies> .
+1. Wechseln Sie [im Security & Compliance Center](https://protection.office.com)zu Warnungsrichtlinien, oder öffnen Sie  \>  . <https://protection.office.com/alertpolicies>
 
-2. Suchen und wählen Sie auf der Seite " **Warnungsrichtlinien** " die Richtlinie mit dem Namen " **Nachrichten wurden verzögert**" aus.
+2. Suchen Und wählen **Sie auf der** Seite "Warnungsrichtlinien" die Richtlinie mit dem Namen **"Nachrichten wurden verzögert" aus.**
 
-3. In der **Meldung verzögertes** Flyout, das geöffnet wird, können Sie die Warnung aktivieren oder deaktivieren und die Benachrichtigungseinstellungen konfigurieren.
+3. Im **flyout "Nachricht wurde verzögert",** das geöffnet wird, können Sie die Warnung aktivieren oder deaktivieren und die Benachrichtigungseinstellungen konfigurieren.
 
-   ![Nachrichten wurden verzögert Warnungsrichtlinien Details das Security & Compliance Center](../../media/mfi-queued-messages-alert-policy.png)
+   ![Nachrichten wurden verzögert Warnungsrichtliniendetails im Security & Compliance Center](../../media/mfi-queued-messages-alert-policy.png)
 
-   - **Status**: Sie können die Warnung aktivieren oder deaktivieren.
+   - **Status:** Sie können die Warnung ein- oder ausschalten.
 
-   - Grenzwert für **e-Mail-Empfänger** und **tägliche Benachrichtigung**: Klicken Sie auf **Bearbeiten** , um die folgenden Einstellungen zu konfigurieren:
+   - **E-Mail-Empfänger** **und Grenzwert für tägliche Benachrichtigungen:** Klicken Sie auf **"Bearbeiten",** um die folgenden Einstellungen zu konfigurieren:
 
-4. Klicken Sie auf **Bearbeiten**, um die Benachrichtigungseinstellungen zu konfigurieren. Konfigurieren Sie im eingeblendeten **Editor-Richtlinien** Flyout die folgenden Einstellungen:
+4. Klicken Sie auf Bearbeiten, um die Benachrichtigungseinstellungen **zu konfigurieren.** Konfigurieren Sie **im angezeigten** Flyout "Richtlinie bearbeiten" die folgenden Einstellungen:
 
-   - **Senden von e-Mail-Benachrichtigungen**: der Standardwert ist "on".
-   - **E-Mail-Empfänger**: der Standardwert ist **TenantAdmins**.
-   - **Grenzwert für tägliche Benachrichtigung**: der Standardwert ist **No Limit**.
-   - **Threshold**: der Standardwert ist 200.
+   - **E-Mail-Benachrichtigungen** senden: Der Standardwert ist aktiviert.
+   - **E-Mail-Empfänger:** Der Standardwert ist **TenantAdmins**.
+   - **Grenzwert für tägliche** Benachrichtigungen: Der Standardwert ist **"No limit".**
+   - **Schwellenwert:** Der Standardwert ist 200.
 
-   ![Benachrichtigungseinstellungen in den Nachrichten wurden verzögert Warnungsrichtlinien Details das Security & Compliance Center](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
+   ![Benachrichtigungseinstellungen in den Nachrichten wurden verzögert Warnungsrichtlinie Details im Security & Compliance Center](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
 
-5. Wenn Sie fertig sind, klicken Sie auf **Speichern** und **Schließen**.
+5. Wenn Sie fertig sind, klicken Sie auf **"Speichern"** und **"Schließen".**
 
-## <a name="queues-insight-in-the-mail-flow-dashboard"></a>Queues Insight im Nachrichtenfluss-Dashboard
+## <a name="queues-insight-in-the-mail-flow-dashboard"></a>Einblick in Warteschlangen im Nachrichtenflussdashboard
 
-Auch wenn das Nachrichten Volume in der Warteschlange den Schwellenwert nicht überschreitet und eine Warnung generiert hat, können Sie weiterhin die **Warteschlangen** Einblicke im [Nachrichtenfluss-Dashboard](mail-flow-insights-v2.md) verwenden, um Nachrichten anzuzeigen, die länger als eine Stunde in die Warteschlange gestellt wurden, und Aktionen durchführen, bevor die Anzahl der in der Warteschlange befindlichen Nachrichten zu groß wird.
+Auch wenn das Nachrichtenvolume in der Warteschlange den Schwellenwert nicht überschritten  und eine Warnung [](mail-flow-insights-v2.md) generiert hat, können Sie die Einblicke in Warteschlangen im Nachrichtenflussdashboard verwenden, um Nachrichten anzuzeigen, die länger als eine Stunde in die Warteschlange eingereiht wurden, und Maßnahmen ergreifen, bevor die Anzahl der in die Warteschlange eingereihten Nachrichten zu groß wird.
 
-![Warteschlangen-Widget im Nachrichtenfluss-Dashboard im Security & Compliance Center](../../media/mfi-queues-widget.png)
+![Warteschlangen-Widget im Nachrichtenflussdashboard im Security & Compliance Center](../../media/mfi-queues-widget.png)
 
-Wenn Sie auf die Anzahl der Nachrichten im Widget klicken, wird ein Flyout mit **Nachrichten in der Warteschlange** mit den folgenden Informationen angezeigt:
+Wenn Sie auf die Anzahl der  Nachrichten im Widget klicken, wird ein Flyout in der Warteschlange mit den folgenden Informationen angezeigt:
 
-- **Anzahl von Nachrichten in der Warteschlange**
-- **Connectorname**: Klicken Sie auf den Namen des Connectors, um den Connector im Exchange Admin Center (EAC) zu verwalten.
-- **Warteschlangen-Anfangszeit**
-- **Älteste Nachrichten abgelaufen**
+- **Anzahl der Nachrichten in der Warteschlange**
+- **Connectorname:** Klicken Sie auf den Connectornamen, um den Connector im Exchange Admin Center (EAC) zu verwalten.
+- **Startzeit der Warteschlange**
+- **Älteste Nachrichten sind abgelaufen**
 - **Zielserver**
 - **Letzte IP-Adresse**
 - **Letzter Fehler**
-- **Beheben von** Problemen: häufige Probleme und Lösungen sind verfügbar. Wenn es sich um einen **Fix-jetzt** -Link handelt, klicken Sie darauf, um das Problem zu beheben. Klicken Sie andernfalls auf alle verfügbaren Links, um weitere Informationen zu dem Fehler und möglichen Lösungen zu erhalten.
+- **Problembehebt:** Häufige Probleme und Lösungen sind verfügbar. If is a **Fix it now** link is available, click it to fix the problem. Klicken Sie andernfalls auf alle verfügbaren Links, um weitere Informationen zu dem Fehler und möglichen Lösungen zu erhalten.
 
-![Details nach dem Klicken auf die Warteschlangen Insight im Nachrichtenfluss-Dashboard](../../media/mfi-queues-details.png)
+![Details nach dem Klicken auf den Einblick "Warteschlangen" im Nachrichtenflussdashboard](../../media/mfi-queues-details.png)
 
-Das gleiche Flyout wird angezeigt, nachdem Sie in den Details einer **verzögerten Warnung Nachrichten** auf **Warteschlange anzeigen** klicken.
+Das gleiche Flyout wird angezeigt, nachdem Sie **in** den Details einer Benachrichtigung auf "Warteschlange anzeigen" **geklickt** haben.
 
-![Nachrichten wurden im Security & Compliance Center mit Warnungsdetails verzögert](../../media/mfi-queued-messages-alert-details.png)
+![Nachrichten wurden im Security & Compliance Center verzögert](../../media/mfi-queued-messages-alert-details.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-Informationen zu weiteren Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Weitere Informationen zu anderen Einblicken im Nachrichtenflussdashboard finden Sie unter "Einblicke in den Nachrichtenfluss" [im Security & Compliance Center.](mail-flow-insights-v2.md)
