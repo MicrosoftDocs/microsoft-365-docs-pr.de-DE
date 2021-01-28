@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ressourcen, die Sie bei der Einhaltung behördlicher Vorschriften für Informationsgovernance und Datensatzverwaltung unterstützen
-ms.openlocfilehash: f8641af2ec839c9ed3f4d029b4f6de52fe7033e3
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 891dd3f37e70ae94dbae96baaa7c38b71456305b
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941420"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032566"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Behördliche Vorschriften für Informationsgovernance und Datensatzverwaltung
 
@@ -29,6 +29,18 @@ ms.locfileid: "48941420"
 Die auf dieser Seite vorgestellten Ressourcen unterstützen Sie dabei, spezifische behördliche Vorschriften für Informationsgovernance und Datensatzverwaltung in Microsoft 365 einzuhalten. In jedem Abschnitt dieses Dokuments werden eine oder mehrere verwandte Bestimmungen behandelt und alle verfügbaren Anleitungen oder Analysen Dritter dazu aufgeführt, wie Microsoft 365 konfiguriert werden kann, um die beschriebenen Anforderungen zu erfüllen.
 
 Diese Ressourcen stehen zum Download auf der Seite [Datenschutzressourcen, häufig gestellte Fragen und Whitepaper](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) des Service Trust Portals zur Verfügung.
+
+## <a name="new-zealand-public-records-act"></a>New Zealand Public Records Act
+
+**Unterstützung der Complianceverpflichtungen des New Zealand Public Records Act durch Microsoft 365** - [Bewertung herunterladen](https://aka.ms/NZPRA)
+
+Zutreffende Workloads: SharePoint, OneDrive, Microsoft Teams, Exchange und Skype for Business
+
+Dieser im Januar 2021 veröffentlichte Bericht wurde in Zusammenarbeit mit Microsoft Neuseeland erstellt, um die Eignung der Microsoft 365-Dienste für das Aufzeichnen, Speichern und die Erfüllung von Vorgaben für elektronische Datensätze zu ermitteln, die in den folgenden Bestimmungen festgelegt sind: 
+
+- Der New Zealand Public Records Act 2005 legt Richtlinien für die Erhaltung von öffentlichen Archiven und Archiven lokaler Behörden in Neuseeland fest.
+
+Dieser Bericht hilft Ihnen zu verstehen, wie die Systemaspekte des New Zealand Public Records Act 2005 (PRA) bei der Verwendung von Microsoft 365 erreicht werden können.
 
 ## <a name="sec-17a-4f-finra-4511c-and-cftc-131c-d"></a>SEC 17a-4(f), FINRA 4511(c) und CFTC 1.31(c)-(d)
 

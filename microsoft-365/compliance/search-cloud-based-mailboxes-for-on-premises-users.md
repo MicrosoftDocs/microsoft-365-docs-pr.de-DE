@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Verwenden Sie das Tool für die Inhaltssuche im Security & Compliance Center, um Chatdaten von Teams für lokale Benutzer in einer Exchange-Hybridbereitstellung zu suchen und zu exportieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 23f8ea08de3d7fdbbc36274374d315ef0cb66a84
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 7bdcba3a14b2ee6d14210d3525e20ec507166a5d
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976202"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029715"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Suche nach Teams-Chatdaten für lokale Benutzer
 
@@ -39,10 +39,8 @@ Hier sind die Anforderungen und Einschränkungen für das Aktivieren von cloudba
 
 - Im cloudbasierten Speicherbereich werden nur die Teams-Chatdaten im Zusammenhang mit einem lokalen Benutzer gespeichert. Ein lokaler Benutzer kann in keiner Weise auf diesen Speicherbereich zugreifen.
 
-- Sie müssen eine Anfrage an den Microsoft-Support senden, damit Ihre Organisation für lokale Benutzer nach Teams-Chatdaten suchen kann. Informationen hierzu finden Sie in diesem Artikel unter [Einreichen einer Anforderung an den Microsoft-Support, dieses Feature zu aktivieren](#filing-a-request-with-microsoft-support-to-enable-this-feature).
-
 > [!NOTE]
-> Unterhaltungen eines Teams-Kanals werden immer in dem cloudbasierten Postfach gespeichert, das dem Team zugeordnet ist. Das bedeutet, dass Sie die Inhaltssuche zum Durchsuchen von Kanal-Unterhaltungen verwenden können, ohne dass Sie eine Supportanfrage einreichen müssen. Weitere Informationen zum Durchsuchen von Unterhaltungen in Teams-Kanälen finden Sie unter [Durchsuchen von Microsoft Teams und Microsoft 365-Gruppen](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
+> Kanalunterhaltungen eines Teams werden immer in dem cloudbasierten Postfach gespeichert, das dem Team zugeordnet ist. Das bedeutet, das Sie nach Kanalunterhaltungen suchen können. Weitere Informationen zum Durchsuchen von Unterhaltungen in Teams-Kanälen finden Sie unter [Durchsuchen von Microsoft Teams und Microsoft 365-Gruppen](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
   
 ## <a name="how-it-works"></a>Funktionsweise
 
@@ -54,20 +52,7 @@ Die folgende Abbildung zeigt den Workflow, wie Teams-Chatdaten für lokale Benut
   
 Zusätzlich zu dieser neuen Funktion können Sie die Inhaltssuche weiterhin dazu verwenden, um für lokale Benutzer Teams-Inhalte in der cloudbasierten SharePoint-Website und dem Exchange-Postfach, die mit jedem Microsoft Team und den 1xN-Chatdaten von Teams im Exchange Online-Postfach für cloudbasierte Benutzer verknüpft sind, zu suchen, in der Vorschau anzuzeigen und zu exportieren.
 
-## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>Einreichen einer Anforderung an den Microsoft-Support, dieses Feature zu aktivieren
 
-Sie müssen eine Anforderung beim Microsoft-Support stellen, damit Ihre Organisation die grafische Benutzeroberfläche im Security & Compliance Center verwenden kann, um für lokale Benutzer nach Teams-Chatdaten zu suchen. Dieses Feature ist in der Security & Compliance Center PowerShell verfügbar. Sie müssen keine Supportanforderung für die Verwendung von PowerShell zum Suchen nach Teams-Chatdaten für lokale Benutzer einreichen.
-  
-Geben Sie die folgenden Informationen an, wenn Sie die Anforderung an den Microsoft-Support senden:
-  
-- Der Standarddomänenname Ihrer Organisation.
-
-- Der Mandantenname und die Mandanten-ID Ihrer Organisation. Sie finden diese im Azure Active Directory-Portal (unter **Verwalten von** \> **Eigenschaften**). Lesen Sie [Suchen Ihrer Microsoft 365-Mandanten-ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
-
-- Der folgende Titel oder eine Beschreibung des Zwecks der Supportanforderung: "Anwendungs-Inhaltssuche für lokale Benutzer aktivieren". Auf diese Weise kann die Anforderung an das eDiscovery Engineering-Team geleitet werden, das die Anforderung umsetzt.
-
-Wenn die technischen Änderungen vorgenommen wurden, erhalten Sie vom Microsoft-Support ein voraussichtliches Bereitstellungsdatum. Der Bereitstellungsvorgang dauert in der Regel 2 bis 3 Wochen, nachdem Sie die Supportanfrage abgeschickt haben.
-  
 ### <a name="what-happens-after-this-feature-is-enabled"></a>Was geschieht nach der Aktivierung dieses Features?
 
 Nachdem dieses Feature in Ihrer Organisation bereitgestellt wurde, werden die folgenden Änderungen in der Inhaltssuche und in Suchvorgängen, die mit einem eDiscovery-Fall im Security & Compliance Center verknüpft sind, vorgenommen:
