@@ -1,5 +1,5 @@
 ---
-title: Setup Übersicht für Microsoft 365 für Kampagnen
+title: Setupübersicht für Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -24,45 +24,45 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Setup Übersicht für Microsoft 365 für Kampagnen
-ms.openlocfilehash: 17d8b90c5dc15009340454491c57802d7ac1b496
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: Setupübersicht für Microsoft 365 Business Premium für Kampagnen oder andere Unternehmen
+ms.openlocfilehash: c3d5687453aeaa2d9ace66491e3a900113a69ed1
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526852"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044252"
 ---
-# <a name="set-up-microsoft-365-for-campaigns"></a>Einrichten von Microsoft 365 für Kampagnen
+# <a name="set-up-microsoft-365"></a>Einrichten von Microsoft 365
 
-In diesem Artikel wird der Vorgang des Einrichtens von Microsoft 365 für Kampagnen beschrieben. Jeder mit Microsoft 365 Business Premium kann diese Anleitung verwenden, um die Sicherheit zu verstärken. 
+In diesem Artikel wird das Einrichten von Microsoft 365 beschrieben. Jeder Benutzer mit Microsoft 365 Business Premium kann diesen Leitfaden verwenden, um die Sicherheit zu erhöhen.
 
-## <a name="admins-set-up-microsoft-365-for-campaigns"></a>Administratoren: Einrichten von Microsoft 365 für Kampagnen
-Im folgenden Diagramm wird beschrieben, wie Microsoft 365 für Kampagnen von Administratoren eingerichtet wurde.
+## <a name="admins-set-up-microsoft-365"></a>Administratoren: Einrichten von Microsoft 365
 
-![Schritte zum Einrichten von Microsoft 365 für Kampagnen](../media/M365-democracy-SetUpProcess.png)
+Das folgende Diagramm beschreibt, wie Administratoren Microsoft 365 einrichten.
 
-Für Kampagnen, die sich für spezielle Preise qualifizieren, beginnen Sie mit dem [Anfordern einer Einladung von Microsoft](https://m365forcampaigns.microsoft.com/), und melden [Sie sich dann bei Microsoft 365 für Kampagnen](m365-campaigns-sign-up.md)an. Führen Sie zum Abschließen [des Setups den Setup-Assistenten](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) aus, um die Kerneinstellungen zu konfigurieren.
+![Schritte zum Einrichten von Microsoft 365](../media/M365-democracy-SetUpProcess.png)
 
-Nachdem Sie [sich für Microsoft 365 Business Premium registriert](../business/sign-up.md)haben, führen Sie für alle anderen Organisationen das Setup durch, indem Sie [den Setup-Assistenten ausführen](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) , um die Kerneinstellungen zu konfigurieren.
+Für Kampagnen, die für Sonderpreise in Frage kommen, beginnen Sie, indem Sie eine Einladung von [Microsoft](https://m365forcampaigns.microsoft.com/)anfordern und sich dann für [Microsoft 365 für Kampagnen anmelden.](m365-campaigns-sign-up.md) Führen Sie zum Abschließen des [Setups den Setup-Assistenten aus,](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) um die Haupteinstellungen zu konfigurieren.
 
-Stoßen Sie für alle Organisationen Sicherheitsschutz durch: [Schützen von Administratorkonten](m365-campaigns-protect-admin-accounts.md), [Schützen des Zugriffs auf e-Mails und Daten](m365-campaigns-conditional-access.md)und [erhöhen des Bedrohungsschutzes](m365-campaigns-increase-protection.md).
+Nachdem Sie sich für [Microsoft 365 Business Premium](../business/sign-up.md)angemeldet haben, [](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) führen Sie die Einrichtung für alle anderen Organisationen aus, indem Sie den Setup-Assistenten ausführen, um die Haupteinstellungen zu konfigurieren.
 
+Erhöhen Sie den Sicherheitsschutz für alle Organisationen, indem [Sie](m365-campaigns-protect-admin-accounts.md)Administratorkonten schützen, den Zugriff auf [E-Mails](m365-campaigns-conditional-access.md)und Daten schützen und den [Bedrohungsschutz erhöhen.](m365-campaigns-increase-protection.md)
 
- ## <a name="everyone-set-up-your-devices"></a>Jeder: Einrichten der Geräte 
- 
-Benutzer müssen sich einige Minuten Zeit nehmen, um Geräte für die Verwendung dieser Umgebung einzurichten. Für Ihre Hauptbenutzer (diejenigen, die die höchsten Wert Ziele für Hacker sind) können Sie neue Geräte einrichten und vorab konfigurieren. Auf diese Weise können Sie beginnen, wenn Sie sich mit Ihren Microsoft 365-Anmeldeinformationen anmelden. 
+## <a name="everyone-set-up-your-devices"></a>Jeder: Einrichten Ihrer Geräte
 
-![Setupvorgang für Benutzer Geräte](../media/m365-democracy-user-device-setup.png)
+Die Einrichtung von Geräten für diese Umgebung dauert ein paar Minuten. Für Ihre wichtigsten Benutzer (die die wichtigsten Ziele für Hacker sind) können Sie neue Geräte einrichten und vorab konfigurieren. Dies hilft ihnen beim Einstieg, wenn sie sich mit ihren Microsoft 365-Anmeldeinformationen anmelden.
+
+![Einrichtungsprozess für Benutzergeräte](../media/m365-democracy-user-device-setup.png)
   
-So richten Sie Benutzer Geräte ein: 
-1. Jeder Benutzer [richtet seine mobilen Geräte](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)ein. 
-2. Bei nicht verwalteten Geräten richten Benutzer ihre [PCs und Macs](m365-campaigns-protect-pcs-macs.md)ein. Für wichtige Mitarbeiter wird empfohlen, dass Sie [verwaltete Geräte](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) für einen noch besseren Schutz verwenden. Für alle Geräte sollten Sie die mehrstufige [Authentifizierung](m365-campaigns-multifactor-authenication.md)einrichten. 
-3. Alle Benutzer sollten erfahren, wie Sie sich selbst und Ihre Kampagne schützen, indem Sie über [Phishing und andere Angriffe](m365-campaigns-phishing-and-attacks.md)lernen. Diese [Infografik](m365-campaigns-protect-campaign-infographic.md) kann Ihren Benutzern auch helfen, zu verstehen, wie Sie Ihre Kampagne vor Onlinebedrohungen schützen.
+So richten Sie Benutzergeräte ein:
+
+1. Jeder Benutzer [richtet seine mobilen Geräte ein.](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)
+2. Für nicht verwaltete Geräte richten Benutzer ihre [PCs und Macs ein.](m365-campaigns-protect-pcs-macs.md)
+Für wichtige Mitarbeiter wird empfohlen, [verwaltete](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) Geräte für noch besseren Schutz zu verwenden. Für alle Geräte sollten Sie die mehrstufige Authentifizierung [einrichten.](m365-campaigns-multifactor-authenication.md)
+3. Alle Benutzer sollten lernen, wie sie sich und Ihre Kampagne schützen können, indem sie mehr über [Phishing und andere Angriffe erfahren.](m365-campaigns-phishing-and-attacks.md) Diese [Infografik kann](m365-campaigns-protect-campaign-infographic.md) Ihren Benutzern auch helfen, zu verstehen, wie Sie Ihre Kampagne vor Onlinebedrohungen schützen können.
 
 ## <a name="contact-support"></a>wenden Sie sich an den Support,
 
  **Wenn Sie den Support kontaktieren müssen:**
   
-Als Microsoft 365-Administrator haben Sie Zugriff auf unser Kundensupport Team, ** [kontaktieren des Supports für Business-Produkte – Administratorhilfe](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
-    
-
+Als Microsoft 365-Administrator haben Sie Zugriff auf unser Kundensupportteam, wenden Sie sich an den Support für **[Geschäftsprodukte - Administratorhilfe](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**

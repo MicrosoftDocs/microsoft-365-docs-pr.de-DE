@@ -1,5 +1,5 @@
 ---
-title: Melden Sie sich bei Microsoft 365 für Kampagnen an.
+title: Anmelden bei Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,24 +22,26 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Melden Sie sich bei Microsoft 365 für Kampagnen an. Schützen Sie Ihre Kampagne vor Cyber Bedrohungen für e-Mail, Daten und Kommunikation.
-ms.openlocfilehash: a11db9a16718d435842508504d7e7f0cba5df898
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+description: Melden Sie sich bei Microsoft 365 an. Schützen Sie Ihr Unternehmen, Ihre Praxis oder Ihre Kampagne vor Cybersicherheitsbedrohungen für E-Mails, Daten und Kommunikation.
+ms.openlocfilehash: d2bc0ddbfbc839f1b389b844544f33c444012fb4
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131988"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044204"
 ---
-# <a name="sign-in-to-microsoft-365-for-campaigns"></a>Melden Sie sich bei Microsoft 365 für Kampagnen an.
+# <a name="sign-in-to-microsoft-365"></a>Anmelden bei Microsoft 365
 
-## <a name="for-campaign-admins"></a>Für Kampagnen Administratoren
-Wenn Sie sich für Microsoft 365 für Kampagnen angemeldet haben, sind Sie der Microsoft 365-Administrator. Hier erfahren Sie, wie Sie sich anmelden: 
-1. Suchen Sie den Benutzernamen und das Kennwort, die wir an die e-Mail-Adresse gesendet haben, die Sie uns in Schritt 2 der [Registrierungsschritte](m365-campaigns-sign-up.md#steps-to-sign-up)gegeben haben.
-2. Wechseln Sie im Browser zum Microsoft 365 Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> . 
+## <a name="for-business-or-campaign-admins"></a>Für Geschäfts- oder Kampagnenadministratoren
+
+Wenn Sie sich für Microsoft 365 angemeldet haben, sind Sie der Microsoft 365-Administrator. So melden Sie sich an:
+
+1. Suchen Sie den Benutzernamen und das Kennwort, die wir an die E-Mail-Adresse gesendet haben, die Sie uns in Schritt 2 der Schritte zur [Anmeldung gegeben haben.](m365-campaigns-sign-up.md#steps-to-sign-up)
+2. Wechseln Sie im Browser zum Microsoft 365 Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> .
 3. Geben Sie Ihren Benutzernamen und Ihr Kennwort ein. Wählen Sie **Anmelden** aus.
-4. Suchen Sie oben rechts auf der Seite das Steuerelement **Vorschau** . Wählen Sie **Preview on** aus, damit Sie alle in [Bump up Protection für Ihre Kampagne](m365-campaigns-security-overview.md)beschriebenen Steuerelemente verwenden können.
+4. Suchen Sie oben rechts auf der Seite die **Vorschau auf dem** Steuerelement. Wählen **Sie "Vorschau"** aus, damit Sie alle in "Aufprallschutz" für [Ihre Kampagne beschriebenen Steuerelemente verwenden können.](m365-campaigns-security-overview.md)
 
-## <a name="for-campaign-staff"></a>Für Kampagnen Mitarbeiter
-Einrichten von Kampagnen Mitarbeitern wie unter [Benutzer hinzufügen](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) beschrieben Sie können auf der Seite **Benutzer hinzufügen** auch Kennwörter zurücksetzen und erneut senden.
-Alle Kampagnen Mitarbeiter können sich bei anmelden <a href="https://office.com" target="_blank">https://Office.com</a> .
+## <a name="for-staff"></a>Für Mitarbeiter
 
+Richten Sie Mitarbeiter ein, wie unter "Benutzer [hinzufügen"](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) beschrieben. Sie können Kennwörter auch auf der Seite "Benutzer hinzufügen" zurücksetzen **und** erneut senden.
+Alle Mitarbeiter können sich unter <a href="https://office.com" target="_blank">https://Office.com</a> anmelden.

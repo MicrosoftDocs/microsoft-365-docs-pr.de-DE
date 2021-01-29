@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: In diesem Artikel erfahren Sie, wie Sie Satellitenstandorte hinzufügen und Ihren Mandanten für Microsoft 365 Multi-Geo konfigurieren.
-ms.openlocfilehash: 4276d8ff70fed99e74f2cbab29386c81da06d17b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb907c02a4714c5a2d8e47245321252e7186a8a7
+ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690446"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50040568"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 Multi-Geo-Mandantenkonfiguration
 
@@ -110,7 +110,10 @@ Wir empfehlen, die Einstellung des bevorzugten Datenspeicherorts von Benutzern i
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>Bereitstellung von OneDrive und Auswirkungen auf den bevorzugten Datenspeicherort
 
-Wenn für einen Benutzer bereits eine OneDrive-Website im Mandanten erstellt wurde, wird beim Festlegen des bevorzugten Speicherorts die vorhandene OneDrive-Bereitstellung nicht automatisch verschoben. Informationen zum Migrieren der OneDrive-Umgebung eines Benutzers finden Sie unter [Verschieben von One Drive for Business](move-onedrive-between-geo-locations.md). Befolgen Sie die Anweisungen zum Migrieren von OneDrive zwischen geografischen Standorten. (Bitte beachten Sie, dass Exchange-Postfächer automatisch migriert werden, wenn Sie den PDL eines Benutzers festlegen.)
+Wenn für einen Benutzer bereits eine OneDrive-Website im Mandanten erstellt wurde, wird beim Festlegen des bevorzugten Speicherorts die vorhandene OneDrive-Bereitstellung nicht automatisch verschoben. Informationen zum Verschieben des OneDrive eines Benutzers finden Sie unter [OneDrive for Business Geo Move](move-onedrive-between-geo-locations.md).
+
+> [!NOTE]
+> Exchange Online verlagert das Postfach des Benutzers automatisch, wenn sich die PLD ändert und "MailboxRegion" nicht mehr mit dem Code für den geografischen Standort der Postfachdatenbank entspricht. Weitere Informationen finden Sie unter [Verwalten von Exchange Online-Postfächern in einer Multi-Geo-Umgebung.](https://docs.microsoft.com/microsoft-365/enterprise/administering-exchange-online-multi-geo)
 
 Wenn ein Benutzer nicht über eine OneDrive-Website innerhalb des Mandanten verfügt, wird OneDrive in Übereinstimmung mit den jeweiligen PDL-Einstellungen bereitgestellt, sofern der PDL des Benutzers einem der Satellitenstandorte des Unternehmens entspricht.
 

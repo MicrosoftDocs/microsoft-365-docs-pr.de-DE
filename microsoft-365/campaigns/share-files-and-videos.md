@@ -24,49 +24,48 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Freigeben von Dateien und Videos in Ihrer Kampagne mit Microsoft Teams und SharePoint.
-ms.openlocfilehash: d8f9df1befe720dbcd2affc56ff02f29c037216b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+description: Freigeben von Dateien und Videos innerhalb Ihrer Kampagne mit Microsoft Teams und SharePoint.
+ms.openlocfilehash: d6d168c196a8571cab86a1be57f5b26782bc4d3f
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132012"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044180"
 ---
 # <a name="share-files-and-videos"></a>Freigeben von Dateien und Videos
 
-Wenn Sie steuern müssen, wer Ihre Dateien anzeigen kann und wer Sie bearbeiten kann, müssen Sie die Dateien an einem sicheren Ort speichern, wo Sie sicherstellen können, dass die Berechtigungen ordnungsgemäß angewendet werden. Sie können Microsoft Teams verwenden, um Ihre Dateien zu speichern und die Dateien dann entweder innerhalb oder außerhalb Ihrer Kampagne mithilfe von Microsoft Teams oder durch Senden von SharePoint-Links freizugeben. Wenn Sie einen Link anstelle einer e-Mail-Anlage senden, wissen Sie, wer die Dateien anzeigt und ändert, und Sie können ohne Ihre Berechtigung nicht angezeigt oder geändert werden. 
+Wenn Sie steuern müssen, wer Ihre Dateien anzeigen und bearbeiten kann, müssen Sie die Dateien an einem sicheren Ort speichern, an dem Sie sicherstellen können, dass die Berechtigungen entsprechend angewendet werden. Sie können Microsoft Teams verwenden, um Ihre Dateien zu speichern, und dann die Dateien entweder innerhalb oder außerhalb Ihrer Firma, Praxis oder Kampagne mithilfe von Microsoft Teams oder durch Senden von SharePoint-Links freigeben. Das Senden eines Links anstelle einer E-Mail-Anlage bedeutet, dass Sie wissen, wer die Dateien anzeigen und ändern kann, und dass sie ohne Ihre Erlaubnis nicht angezeigt oder geändert werden können.
 
-![Diagramm eines Microsoft Teams-Fensters, das Register "Dateien" und "Get Link" im Menü anzeigen](../media/m365-democracy-teams-sharefiles.png)
+![Diagramm eines Microsoft Teams-Fensters, in dem die Registerkarte "Dateien" und der Link "Get" im Menü angezeigt werden](../media/m365-democracy-teams-sharefiles.png)
 
-Mit Ihren Dateien in Microsoft Teams und SharePoint können Sie die Dateien auch zusammen bearbeiten und sich gegenseitig die Änderungen ansehen. Verwenden Sie Microsoft Teams, um Dateien innerhalb einer politischen Kampagne freizugeben. Wenn Sie extern für Personen außerhalb der Kampagne freigeben möchten, können Sie diese als Gäste zu einem Team hinzufügen oder Ihnen eine sichere SharePoint-Verknüpfung senden.
+Mit Ihren Dateien in Microsoft Teams und SharePoint können Sie auch gemeinsam an den Dateien arbeiten und sich gegenseitig ihre Änderungen überprüfen. Verwenden Sie Microsoft Teams, um Dateien innerhalb eines Unternehmens, einer Praxis oder einer Kampagne zu teilen. Wenn Sie externe Freigaben für Personen außerhalb Ihrer Organisation benötigen, können Sie sie als Gäste zu einem Team hinzufügen oder ihnen einen sicheren SharePoint-Link senden.
 
-Sie können auch Microsoft Stream zum Speichern und Freigeben von Videos für Ihre Kampagne verwenden. Diese Videos sind für die Öffentlichkeit nicht sichtbar, daher eignen Sie sich ideal für interne Kampagnen Nachrichten.
+Sie können Microsoft Stream auch verwenden, um Videos intern zu speichern und zu teilen. Diese Videos können nicht für die Öffentlichkeit angezeigt werden, sodass sie ideal für interne Kampagnennachrichten geeignet sind.
 
 ## <a name="best-practices"></a>Bewährte Methoden
 
-Verwenden Sie diese Methoden, um Dateien und Videos sicher freizugeben:
+Verwenden Sie diese Methoden, um Dateien und Videos sicher zu teilen:
 
-1. Speichern Sie Dateien in Microsoft Teams oder SharePoint, und stellen Sie sicher, dass nur die Personen, die Zugriff auf diese Dateien benötigen, diese besitzen. 
-2. Wenn Sie freigeben möchten, fügen Sie keine Dateien an eine e-Mail an. Wählen Sie stattdessen **Link** aus Microsoft Teams oder SharePoint abrufen aus, und senden Sie den Link in der e-Mail.
-3. Wenn Sie eine Datei extern freigeben möchten, fügen Sie den Benutzer Ihrem Team als Gast hinzu, oder verwenden Sie SharePoint, um einen sicheren Link zu erhalten, um nur diese Datei freizugeben.
-4. Verwenden Sie Microsoft Stream, um Videos zu hosten, die Ihre Kampagne anzeigen soll. 
-5. Verwenden Sie Microsoft Teams oder SharePoint zum Speichern von Videodateien, für die Ihr Team zusammenarbeiten oder freigeben muss.
+1. Speichern Sie Dateien in Microsoft Teams oder SharePoint, und stellen Sie sicher, dass nur die Personen, die Zugriff auf diese Dateien benötigen, diese haben.
+2. Wenn Sie freigeben möchten, fügen Sie keine Dateien an eine E-Mail an. Wählen Sie stattdessen **"Link von** Microsoft Teams oder SharePoint erhalten" aus, und senden Sie den Link per E-Mail.
+3. Wenn Sie eine Datei extern freigeben möchten, fügen Sie den Benutzer als Gast zu Ihrem Team hinzu, oder verwenden Sie SharePoint, um einen sicheren Link zum Freigeben dieser Datei zu erhalten.
+4. Verwenden Sie Microsoft Stream, um Videos zu hosten, die Ihre Kampagne anzeigen soll.
+5. Verwenden Sie Microsoft Teams oder SharePoint, um Videodateien zu speichern, die Ihr Team für die Zusammenarbeit oder Freigabe benötigt.
 
- 
 ## <a name="set-up"></a>Einrichten
 
-Führen Sie die folgenden Schritte aus, um ein Team zu erstellen und Gäste wie Inserenten oder Finanzierungspartner hinzuzufügen.
+Führen Sie die folgenden Schritte aus, um ein Team zu erstellen und Gäste hinzuzufügen, z. B. Werbekunden oder Finanzpartner.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-Wenn Sie einen sicheren Link für einen Gast freigeben möchten, ohne Microsoft Teams zu verwenden, führen Sie die folgenden Schritte aus:
+Führen Sie die folgenden Schritte aus, um einen sicheren Link für einen Gast ohne Verwendung von Microsoft Teams zu teilen.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0]
 
-Führen Sie die folgenden Schritte aus, um Videos zu erstellen und freizugeben.
+Führen Sie die folgenden Schritte aus, um Videos zu erstellen und zu teilen.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
 
-Laden Sie eine Infografik in [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) oder [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) herunter, um einen schnellen Überblick über die Möglichkeiten zum Freigeben von Dateien zu erhalten.
+Laden Sie eine Infografik in [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) oder [PowerPoint herunter,](https://go.microsoft.com/fwlink/?linkid=2079438) um einen schnellen Überblick über die Möglichkeiten zum Freigeben Ihrer Dateien zu erhalten.
 
-[![Eine Illustration zur Freigabe von Dateien für verschiedene Benutzer](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)
+[![Abbildung der Freigabe von Dateien für unterschiedliche Benutzer](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)

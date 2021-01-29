@@ -22,48 +22,46 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erstellen Sie eine Kommunikationswebsite für Ihre Kampagne.
-ms.openlocfilehash: 5bd0dd36188f5ec1d550c9baa875e18debd99528
-ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
+description: Erstellen Sie eine Kommunikationswebsite für Ihre Kampagne oder Ihr Unternehmen.
+ms.openlocfilehash: c9624694e2174de47cb53ece8b1077fd7a5b59c5
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49569963"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044659"
 ---
-# <a name="create-a-communications-site-for-your-campaign"></a>Erstellen einer Kommunikationswebsite für Ihre Kampagne
+# <a name="create-a-communications-site"></a>Erstellen einer Kommunikationswebsite
 
-Eine hervorragende Möglichkeit, Prioritäten zu kommunizieren, Strategiedokumente freizugeben und bevorstehende Ereignisse hervorzuheben, ist die Verwendung einer Kommunikationswebsite in SharePoint. Kommunikationswebsites sind für die gemeinsame Nutzung von Dingen über die gesamte Kampagne hinweg. Es handelt sich um Ihre interne Kampagnenwebsite.
+Eine hervorragende Möglichkeit, Prioritäten zu kommunizieren, Strategiedokumente gemeinsam zu nutzen und bevorstehende Ereignisse zu hervorheben, ist die Verwendung einer Kommunikationswebsite in SharePoint. Kommunikationswebsites sind für die gemeinsame Nutzung von Dingen im gesamten Unternehmen oder in der gesamten Kampagne. Dies ist Ihre interne Strategiewebsite.
 
 ## <a name="best-practices"></a>Bewährte Methoden
 
-Fügen Sie die folgenden Elemente auf Ihrer Kommunikationswebsite ein:
+Fügen Sie die folgenden Elemente in Ihre Kommunikationswebsite ein:
 
-1. Hinzufügen Ihres Kampagnenlogos und der Farben als Kopfzeilen Bild und-Design
-2. Führen Sie mit ihrer Strategie, Nachrichten, wichtigen Dokumenten, einem Verzeichnis und häufig gestellten FAQ in einem **Hero-Webpart**.
-3. Fügen Sie eine Kandidaten-Anweisung in das Team in einem **Text Webpart** ein.
-4. Hinzufügen von Kampagnenereignissen zu einem **Event-Webpart** , damit jeder sehen kann, was kommt.
-5. Fügen Sie Fotos hinzu, die Benutzer in einem **Bildgalerie-Webpart** verwenden oder freigeben können.
+1. Fügen Sie Ihr Logo und Ihre Farben als Kopfzeilenbild und Design hinzu.
+2. Führen Sie mit Ihrer Strategie, Nachricht, wichtigen Dokumenten, einem Verzeichnis und häufig gestellten Fragen in einem **Hero-Web part.**
+3. Schließen Sie einen CEO- oder Kandidatenbesprechung für das Team in ein **Text-Web part ein.**
+4. Hinzufügen von Ereignissen zu einem **Ereignis-Web part,** damit jeder sehen kann, was kommt.
+5. Hinzufügen von Fotos, die Benutzer verwenden oder einem Bildkatalog-Web **part freigeben können.**
 
-![Diagramm einer SharePoint-Kommunikationsseite mit Platz für gemeinsame Elemente, die eine Kampagne benötigen würde](../media/m365-democracy-comms-site.png)
+![Diagramm einer SharePoint-Kommunikationsseite mit Platz für allgemeine Elemente, die eine Kampagne benötigen würde](../media/m365-democracy-comms-site.png)
 
-## <a name="infographic-create-a-communications-site-infographic"></a>Infografik: Erstellen einer Infografik für eine Kommunikationswebsite 
-Die folgenden Links für PowerPoint und PDF können heruntergeladen und im Tabloid-Format (auch Ledger, 11 x 17 oder a3 genannt) gedruckt werden.
+## <a name="infographic-create-a-communications-site-infographic"></a>Infografik: Erstellen einer Infografik für Kommunikationswebsites
 
-[![Bild für Kommunikationswebsite-InfoGraph](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
+Die folgenden Links für PowerPoint und PDF können im Tabloidformat (auch bekannt als Ledger, 11 x 17 oder A3) heruntergeladen und gedruckt werden.
 
-[PDF-Datei](downloads/M365CampaignsCreateCommunicationSite.pdf)  |  [PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
+[![Abbildung der Infografik für Kommunikationswebsites](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
+[PDF](downloads/M365CampaignsCreateCommunicationSite.pdf)  |  [PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
 
 ## <a name="set-it-up"></a>Einrichtung
 
 1. Melden Sie sich bei https://Office.com an.
-2. Wählen Sie in der oberen linken Ecke der Seite das App-Start Symbol aus, und wählen Sie dann die **SharePoint** -Kachel aus. Wenn die **SharePoint** -Kachel nicht angezeigt wird, klicken Sie auf die Kachel " **Websites** " oder " **alle** ", wenn SharePoint nicht sichtbar ist.
-3. Klicken Sie oben auf der SharePoint-Startseite auf **+ Website erstellen** , und wählen Sie die Option **Kommunikationswebsite** aus.
+2. Wählen Sie in der oberen linken Ecke der Seite das Symbol für das App-Startfeld und dann die **SharePoint-Kachel** aus. Wenn die Kachel **"SharePoint"** nicht angezeigt wird, klicken Sie auf **die** Kachel "Websites" oder "Alle", wenn SharePoint nicht sichtbar ist. 
+3. Klicken Sie oben auf der SharePoint-Startseite auf **+Website erstellen,** und wählen Sie die Option **"Kommunikationswebsite"** aus.
 
-Hier finden Sie Informationen zu [Kommunikationswebsites](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) und zum [Erstellen einer Kommunikationswebsite in SharePoint Online](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb).
-
+Erfahren Sie [mehr über Kommunikationswebsites](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) und das Erstellen [einer Kommunikationswebsite in SharePoint Online.](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)
 
 ## <a name="admin-settings"></a>Administratoreinstellungen
 
-Wenn der Link **+ Create** Site nicht angezeigt wird, ist Self-Service Site Creation in Microsoft 365 möglicherweise nicht verfügbar. Um eine Teamwebsite zu erstellen, wenden Sie sich an die Person, die Microsoft 365 in Ihrer Organisation verwaltet. Wenn Sie ein Microsoft 365-Administrator sind, finden Sie weitere Informationen unter [Manage Site Creation in SharePoint Online](https://docs.microsoft.com/sharepoint/manage-site-creation) , um Self-Service Site Creation für Ihre Organisation zu aktivieren oder [Websites im neuen SharePoint Admin Center zu verwalten](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center) , um eine Website aus dem SharePoint Online Admin Center zu erstellen.
-  
+Wenn der Link **+Website** erstellen nicht zu sehen ist, ist die Self-Service-Websiteerstellung in Microsoft 365 möglicherweise nicht verfügbar. Wenden Sie sich zum Erstellen einer Teamwebsite an die Person, die Microsoft 365 in Ihrer Organisation verwaltet. If you're a Microsoft 365 admin, see [Manage site creation in SharePoint Online](https://docs.microsoft.com/sharepoint/manage-site-creation) to enable self-service site creation for your organization or Manage sites in the new [SharePoint admin center](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center) to create a site from the SharePoint Online admin center.  

@@ -8,8 +8,7 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 11/05/2020
-ms.service: O365-seccomp
+ms.date: 01/28/2021
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -21,12 +20,14 @@ description: Erste Schritte mit automatisierten Untersuchungs- und Reaktionsfunk
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 570fb3c9d180d3167cfc5a4e3c3825102875b74f
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: ee448e31ccbddbf1d1d5653614ec75fa94768b3b
+ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865008"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50040532"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatisierte Untersuchung und Reaktion (AIR) in Microsoft Defender für Office 365
 
@@ -67,7 +68,7 @@ Eine Warnung wird ausgelöst, und ein Sicherheitsspielbuch startet eine automati
 > [!IMPORTANT]
 > In Microsoft Defender für Office 365 werden keine Korrekturaktionen automatisch ausgeführt. Abhilfemaßnahmen werden nur nach Genehmigung durch das Sicherheitsteam Ihrer Organisation ausgeführt.
 >
-> Die Funktionen von AIR sparen Ihrem Sicherheitsteam Zeit, indem Sie Abhilfemaßnahmen identifizieren und die details bereitstellen, die für eine fundierte Entscheidung erforderlich sind.
+> Die Funktionen von AIR sparen Ihrem Sicherheitsteam Zeit, indem Sie Abhilfemaßnahmen identifizieren und die Details bereitstellen, die für eine fundierte Entscheidung erforderlich sind.
 
 Während und nach jeder automatisierten Untersuchung kann Ihr Sicherheitsteam:
 
@@ -94,7 +95,7 @@ Die Funktionen von AIR sind in [Microsoft Defender für Office 365](office-365-a
 
 5. [Sichere Links und sichere Anlagen](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365).
 
-6. [Sichere Anlagen für SharePoint, OneDrive und Microsoft Teams.](protect-against-threats.md#part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
+6. [Sichere Anlagen für SharePoint, OneDrive und Microsoft Teams.](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
 
 7. [Automatische Bereinigung zur Nullstunde für E-Mails.](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
 
@@ -105,12 +106,12 @@ Die Funktionen von AIR sind in [Microsoft Defender für Office 365](office-365-a
 Microsoft 365 bietet viele integrierte Warnungsrichtlinien, mit denen Der Missbrauch von Exchange-Administratorberechtigungen, Schadsoftwareaktivitäten, potenzielle externe und interne Bedrohungen sowie Risiken der Informationsverwaltung identifiziert werden können. Einige der [standardmäßigen Warnungsrichtlinien können](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) automatisierte Untersuchungen auslösen. In der folgenden Tabelle werden die Warnungen beschrieben, die automatisierte Untersuchungen auslösen, ihren Schweregrad im Microsoft 365 Security Center und deren Generierung:
 
 |Warnung|Severity|Wie die Warnung generiert wird|
-|---|---|---|
-|Ein potenziell schädlicher URL-Klick wurde erkannt.|**High**|Diese Warnung wird generiert, wenn eine der folgenden Bedingungen auftritt: <ul><li>Ein Benutzer, der durch [sichere Links](atp-safe-links.md) in Ihrer Organisation geschützt ist, klickt auf einen schädlichen Link.</li><li>Von Microsoft Defender für Office 365 identifizierte Änderungen der Diktierung für URLs</li><li>Benutzer überschreiben Warnungsseiten für sichere Links (basierend auf der Richtlinie für sichere [Links in Ihrer Organisation).](set-up-atp-safe-links-policies.md)</li></ul> <p> Weitere Informationen zu Ereignissen, die diese Warnung auslösen, finden Sie unter ["Einrichten von Richtlinien für sichere Links".](set-up-atp-safe-links-policies.md)|
+|:---|:---|:---|
+|Ein potenziell schädlicher URL-Klick wurde erkannt.|**High**|Diese Warnung wird generiert, wenn eine der folgenden Bedingungen auftritt: <ul><li>Ein Benutzer, der durch [sichere Links](atp-safe-links.md) in Ihrer Organisation geschützt ist, klickt auf einen schädlichen Link.</li><li>Von Microsoft Defender für Office 365 identifizierte Änderungen der Diktats für URLs</li><li>Benutzer überschreiben Warnungsseiten für sichere Links (basierend auf der Richtlinie für sichere [Links in Ihrer Organisation).](set-up-atp-safe-links-policies.md)</li></ul> <p> Weitere Informationen zu Ereignissen, die diese Warnung auslösen, finden Sie unter ["Einrichten von Richtlinien für sichere Links".](set-up-atp-safe-links-policies.md)|
 |Eine E-Mail-Nachricht wird von einem Benutzer als Schadsoftware oder Phishing gemeldet.|**Informational**|Diese Warnung wird generiert, wenn Benutzer in Ihrer Organisation Nachrichten mithilfe des [Add-Ins](enable-the-report-message-add-in.md) "Nachricht melden" oder "Phishing melden" als [Phishing-E-Mail melden.](enable-the-report-phish-add-in.md)|
 |E-Mail-Nachrichten, die Schadsoftware enthalten, werden nach der Zustellung entfernt|**Informational**|Diese Warnung wird generiert, wenn E-Mail-Nachrichten, die Schadsoftware enthalten, an Postfächer in Ihrer Organisation zugestellt werden. Wenn dieses Ereignis auftritt, entfernt Microsoft die infizierten Nachrichten aus Exchange Online-Postfächern, indem die automatische Bereinigung zur [Nullstunde verwendet wird.](zero-hour-auto-purge.md)|
 |E-Mail-Nachrichten mit Phishing-URLs werden nach der Zustellung entfernt.|**Informational**|Diese Warnung wird generiert, wenn Nachrichten mit Phishing an Postfächer in Ihrer Organisation zugestellt werden. Wenn dieses Ereignis auftritt, entfernt Microsoft die infizierten Nachrichten aus Exchange Online-Postfächern, indem die automatische Bereinigung zur [Nullstunde verwendet wird.](zero-hour-auto-purge.md)|
-|Verdächtige Muster für das Senden von E-Mails werden erkannt|**Medium**|Diese Warnung wird generiert, wenn jemand in Ihrer Organisation verdächtige E-Mails gesendet hat und das Senden von E-Mails eingeschränkt werden kann. Dies ist eine frühe Warnung für verhalten, die darauf hinweisen könnte, dass das Konto gefährdet ist, aber nicht streng genug, um den Benutzer einzuschränken. <p> Obwohl es selten ist, kann eine von dieser Richtlinie generierte Warnung eine Anomalie sein. Es ist jedoch eine gute Idee zu überprüfen, ob [das Benutzerkonto gefährdet ist.](responding-to-a-compromised-email-account.md)|
+|Verdächtige Muster für das Senden von E-Mails werden erkannt|**Medium**|Diese Warnung wird generiert, wenn jemand in Ihrer Organisation verdächtige E-Mails gesendet hat und das Senden von E-Mails eingeschränkt werden kann. Dies ist eine frühzeitige Warnung für Verhalten, die darauf hinweisen könnte, dass das Konto gefährdet ist, aber nicht streng genug, um den Benutzer einzuschränken. <p> Obwohl es selten ist, kann eine durch diese Richtlinie generierte Warnung eine Anomalie sein. Es ist jedoch eine gute Idee zu überprüfen, ob [das Benutzerkonto gefährdet ist.](responding-to-a-compromised-email-account.md)|
 |Ein Benutzer kann keine E-Mails senden|**High**|Diese Warnung wird generiert, wenn jemand in Ihrer Organisation am Senden ausgehender E-Mails eingeschränkt ist. Dies führt in der Regel dazu, dass [ein E-Mail-Konto gefährdet ist.](responding-to-a-compromised-email-account.md) <p> Weitere Informationen zu eingeschränkten Benutzern finden Sie unter "Entfernen blockierter Benutzer aus dem Portal für [eingeschränkte Benutzer" in Microsoft 365.](removing-user-from-restricted-users-portal-after-spam.md)|
 |
 
@@ -124,12 +125,12 @@ Berechtigungen werden über bestimmte Rollen erteilt, z. B. die in der folgenden
 |Aufgabe|Rolle(en) erforderlich|
 |---|---|
 |Einrichten von AIR-Features|Eine der folgenden Rollen: <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li></ul> <p> Diese Rollen können in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im Security & Compliance Center zugewiesen [werden.](permissions-in-the-security-and-compliance-center.md)|
-|Starten einer automatisierten Untersuchung <p> --- oder --- <p> Genehmigen oder Ablehnen empfohlener Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im Security & Compliance Center zugewiesen [sind:](permissions-in-the-security-and-compliance-center.md) <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li><li>Sicherheitsleseberechtigter <br> --- und --- </li><li>Suchen und Löschen (diese Rolle wird nur im [Security & Compliance Center zugewiesen.](permissions-in-the-security-and-compliance-center.md) Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und die Rolle "Suchen und Löschen" zu dieser neuen Rollengruppe hinzufügen.</li></ul>|
+|Starten einer automatisierten Untersuchung <p> --- oder --- <p> Genehmigen oder Ablehnen empfohlener Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im Security & Compliance Center zugewiesen [sind:](permissions-in-the-security-and-compliance-center.md) <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li><li>Sicherheitsoperator</li><li>Sicherheitsleseberechtigter <br> --- und --- </li><li>Suchen und Löschen (diese Rolle wird nur im [Security & Compliance Center zugewiesen.](permissions-in-the-security-and-compliance-center.md) Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und die Rolle "Suchen und Löschen" zu dieser neuen Rollengruppe hinzufügen.</li></ul>|
 |
 
 ## <a name="required-licenses"></a>Erforderliche Lizenzen
 
-[Microsoft Defender für Office 365 Plan 2-Lizenzen](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) sollten zugewiesen werden:
+[Microsoft Defender für Office 365 Plan 2-Lizenzen](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) sollten zugewiesen werden für:
 
 - Sicherheitsadministratoren (einschließlich globaler Administratoren)
 - Das Sicherheitsteam Ihrer Organisation (einschließlich Sicherheitsleser und Personen mit der Rolle "Suchen und **Löschen")**
