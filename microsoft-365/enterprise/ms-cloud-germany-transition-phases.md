@@ -3,7 +3,7 @@ title: Aktionen und Auswirkungen der Migrationsphasen für die Migration von Mic
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/15/2020
+ms.date: 01/26/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
-ms.openlocfilehash: f0c81813522be1f9d759980df98995f1adb261c5
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 0d508607877b86d6f6df6a6465fada67e385fba0
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921622"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029198"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Aktionen und Auswirkungen der Migrationsphasen für die Migration von Microsoft Cloud Deutschland (generell)
 
@@ -35,7 +35,7 @@ Die Phasen und ihre Aktionen stellen sicher, dass kritische Daten und Erfahrunge
 
 Die folgenden Abschnitte enthalten Aktionen und Auswirkungen für Workloads, während sie die verschiedenen Phasen der Migration durchlaufen. Überprüfen Sie die Tabellen und stellen Sie fest, welche Aktionen oder Auswirkungen auf Ihre Organisation zutreffen. Stellen Sie sicher, dass Sie vorbereitet sind, die Schritte in den jeweiligen Phasen wie erforderlich auszuführen. Wenn die erforderlichen Schritte nicht ausgeführt werden, kann dies zu einem Ausfall des Dienstes führen und der Abschluss der Migration zu den Office 365-Diensten kann sich verzögern.
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online-phase-5-of-9"></a>Exchange Online (Phase 5 von 9)
 
 | Schritt(e) | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
@@ -58,7 +58,7 @@ Zusätzliche Überlegungen:
 
 Um mehr über die Unterschiede zwischen Organisationen bei der Migration und nach der Migration von Exchange Online-Ressourcen zu erfahren, lesen Sie die Informationen in [Kundenerfahrung während der Migration zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition-experience.md).
 
-## <a name="exchange-online-protection"></a>Exchange Online Protection
+## <a name="exchange-online-protection-phase-6-of-9"></a>Exchange Online Protection (Phase 6 von 9)
 
 Die Backend-Funktionen von Exchange Online Protection (EOP) werden in die neue Region Deutschland kopiert. 
 
@@ -67,7 +67,7 @@ Die Backend-Funktionen von Exchange Online Protection (EOP) werden in die neue R
 | Migration des Exchange Online-Routing und von historischen Nachrichtendetails. | Exchange Online ermöglicht das Weiterleiten von externen Hosts auf Office 365. Die externen MX-Datensätze werden umgestellt, um auf die EOP-Dienste weiterzuleiten. Die Mandanten-Konfiguration und historische Details werden migriert. | Exchange Online-Kunden | – Microsoft-verwaltete DNS-Einträge werden von Office 365 Deutschland EOP zu Office 365-Diensten aktualisiert. <br><br> – Kunden sollten währen 30 Tagen nach dem EOP Dual Write auf die EOP-Migration warten. Anderenfalls kann es zu einem Datenverlust kommen. |
 |||||
 
-## <a name="sharepoint-online"></a>Microsoft Office SharePoint Online
+## <a name="sharepoint-online-phase-4-of-9"></a>SharePoint Online (Phase 4 von 9)
 
 | Schritt(e) | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
@@ -87,7 +87,7 @@ Zusätzliche Überlegungen:
 - Microsoft Cloud Deutschland-Kunden, deren SharePoint Online-Instanz bereits migriert wurde, müssen SharePoint Online-PowerShell-Modul/Microsoft.SharePointOnline.CSOM auf Version 16.0.20717.12000 oder höher aktualisieren. Andernfalls schlagen Verbindungen zu SharePoint Online über PowerShell oder das clientseitige Objektmodell fehl.
 
 
-## <a name="skype-for-business-online"></a>Skype for Business Online
+## <a name="skype-for-business-online-phase-7-of-9"></a>Skype for Business Online (Phase 7 von 9)
 
 | Schritt(e) | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|

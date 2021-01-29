@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: Erfahren Sie, wie Finanzdienstleistungsinstitute mit Microsoft 365 und Teams die Einhaltung der finanziellen Sicherheit gewährleisten und effektiv zusammenarbeiten können.
 f1.keywords: NOCSH
-ms.openlocfilehash: ff4ce29e42ea3a8a5619f514373041c1e8c3e138
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 1d1c3886a38636e7e72774f8b2bb5ce574d1c7a6
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558478"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029954"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Wichtige Überlegungen zur Compliance und Sicherheit der Banken und Kapitalmärkte in den Vereinigten Staaten
 
@@ -319,7 +319,7 @@ Microsoft 365 hat vor kurzem eine Insider-Risikomanagementlösung eingeführt, d
 
 Beispielsweise kann das Insider-Risikomanagement in Microsoft 365 Signale vom Windows 10-Desktop eines Benutzers, wie das Kopieren von Dateien auf ein USB-Laufwerk oder das Versenden von E-Mails an ein persönliches E-Mail-Konto, mit Aktivitäten von Online-Diensten wie Office 365 E-Mail, SharePoint Online, Microsoft Teams oder OneDrive for Business korrelieren, um Datenexfiltrationsmuster zu erkennen. Es kann diese Aktivitäten auch mit Mitarbeitern korrelieren, die eine Organisation verlassen, was ein übliches Datenexfiltrationsmuster ist. Es kann mehrere Aktivitäten und Verhaltensweisen im Laufe der Zeit überwachen. Wenn sich gemeinsame Muster herauskristallisieren, kann es Warnungen auslösen und den Ermittlern helfen, sich auf die wichtigsten Aktivitäten zu konzentrieren, um einen Richtlinienverstoß mit einem hohen Maß an Vertrauen zu überprüfen. Das Insider-Risikomanagement kann Daten von Ermittlern pseudo-anonymisieren, um die Einhaltung von Datenschutzbestimmungen zu unterstützen, und gleichzeitig Schlüsselaktivitäten aufdecken, die ihnen helfen, Untersuchungen effizient durchzuführen. Es ermöglicht den Ermittlern, wichtige Aktivitätsdaten zu verpacken und sicher an die Personal- und Rechtsabteilung zu senden, und zwar nach gemeinsamen Eskalations-Workflows, um Fälle für Abhilfemaßnahmen aufzuzeigen.
 
-Das Insider-Risikomanagement in Microsoft 365 erhöht die Möglichkeiten von Organisationen zur Überwachung und Untersuchung von Insider-Risiken erheblich, während Organisationen gleichzeitig die Möglichkeit haben, die Datenschutzbestimmungen einzuhalten und etablierten Eskalationspfaden zu folgen, wenn Fälle ein Handeln auf höherer Ebene erfordern.
+Das Insider-Risikomanagement in Microsoft 365 erhöht die Möglichkeiten von Organisationen zur Überwachung und Untersuchung von Insider-Risiken erheblich, während Organisationen gleichzeitig die Möglichkeit haben, die Datenschutzbestimmungen einzuhalten und etablierten Eskalationspfaden zu folgen, wenn Fälle ein Handeln auf höherer Ebene erfordern. Weitere Informationen über das Insider-Risikomanagement in Microsoft 365 finden Sie unter [Moderne Risikoproblembereiche und Workflow im Insider-Risikomanagement in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management?view=o365-worldwide).
 
 ![Ein Callcenter-Mitarbeiter, der in einer Kabine arbeitet, tippt, während er einen Bildschirm betrachtet.](../media/clo17-call-center-006.jpg)
  
