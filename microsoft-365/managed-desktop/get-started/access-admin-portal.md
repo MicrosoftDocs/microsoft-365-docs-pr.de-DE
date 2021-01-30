@@ -10,19 +10,19 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 09427d163b8b5e47911b6df26e5acf0fcd1f3524
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: c2a5b7f837d6c43369301820019732ca3aef83bf
+ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841351"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50053847"
 ---
 # <a name="access-the-admin-portal"></a>Zugreifen auf das Verwaltungsportal
 
-Ihr Gateway zum Microsoft Managed Desktop Service ist das Microsoft [Azure-Portal.](https://portal.azure.com) Weitere Informationen zur Allgemeinen Verwendung und Anpassung Ihrer Azure-Portal-Erfahrung finden Sie in der [Dokumentation zum Azure-Portal.](https://docs.microsoft.com/azure/azure-portal/) In der Vorschau jetzt verfügbar, finden Sie auch Microsoft Managed Desktop im [Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Wenn Sie mit den Funktionen dieses Portals für die Geräteverwaltung nicht vertraut sind, lesen Sie die [Microsoft Endpoint Manager-Dokumentation.](https://docs.microsoft.com/mem/)
+Ihr Gateway zum Microsoft Managed Desktop-Dienst ist [Microsoft Endpoint Manager.](https://endpoint.microsoft.com/) Wenn Sie mit den Funktionen dieses Portals für die Geräteverwaltung nicht vertraut sind, lesen Sie die [Microsoft Endpoint Manager-Dokumentation.](https://docs.microsoft.com/mem/)
 
 > [!NOTE]
-> Sie greifen jedoch auf Microsoft Managed Desktop zu, in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) oder im [Azure-Portal,](https://portal.azure.com)und die folgenden Browser werden unterstützt:
+> In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) werden die folgenden Browser unterstützt:
 > - Microsoft Edge (neueste Version)
 > - Microsoft Internet Explorer 11
 > - Safari (neueste Version, nur Mac)
@@ -36,14 +36,14 @@ Jede der folgenden Rollen kann zugewiesen werden, um unterschiedliche Zugriffseb
 |Azure AD-Rolle  |Microsoft Managed Desktop-Berechtigungen  |
 |---------|---------|
 |Globaler Administrator     | Administratoren mit dieser Rolle verfügen über Lese- und **Schreibberechtigungen** für alle Features im Microsoft Managed Desktop Admin-Portal.         |
-|Globaler Leser     | Administratoren mit dieser Rolle verfügen über schreibgeschützte Berechtigungen für **alle Features** im Microsoft Managed Desktop Admin-Portal.         |
+|Globaler Leser     | Administratoren mit dieser Rolle verfügen über schreibgeschützte Berechtigungen **für alle Features** im Microsoft Managed Desktop Admin-Portal.         |
 |Intune-Dienstadministrator     |  Administratoren mit dieser Rolle verfügen über Lese- und **Schreibberechtigungen** für Features, die sich nicht auf die Sicherheit im Microsoft Managed Desktop Admin Portal bezogen haben.       |
 |Dienstsupportadministrator     | Administratoren mit dieser Rolle  verfügen über schreibgeschützte Berechtigungen  für Features, die sich nicht auf Die Sicherheit und Schreibberechtigungen zum Verwalten von Supportanfragen im Microsoft Managed Desktop Admin Portal bezogen haben.         |
 |Sicherheitsadministrator | Administratoren mit dieser Rolle  verfügen über schreibgeschützte Berechtigungen für alle Features und Schreibberechtigungen für sicherheitsbezogene Features **in** Microsoft Managed Desktop im Verwaltungsportal. |
 |Sicherheitsleseberechtigter |Administratoren mit dieser Rolle verfügen über schreibgeschützte Berechtigungen für **alle Features** im Microsoft Managed Desktop Admin-Portal.|
 
 > [!IMPORTANT]
-> Nur die Rolle "Globaler Administrator" verfügt über die erforderlichen Berechtigungen, um *Ihre* Organisation bei Microsoft Managed Desktop zu registrieren. Beachten Sie, dass Azure Active Directory-Rollen Benutzerkonten berechtigungen für eine Vielzahl von Microsoft-Diensten zuweisen. Nach Abschluss der Registrierung bei Microsoft Managed Desktop sollten  Sie die Rolle immer mit den geringsten Berechtigungen verwenden, die zum Ausführen anderer Aufgaben erforderlich sind.
+> Nur die Rolle "Globaler Administrator" verfügt über die erforderlichen Berechtigungen, um Ihre Organisation bei Microsoft Managed Desktop zu registrieren.  Beachten Sie, dass Azure Active Directory-Rollen Benutzerkonten berechtigungen für eine Vielzahl von Microsoft-Diensten zuweisen. Nach Abschluss der Registrierung bei Microsoft Managed Desktop sollten  Sie die Rolle immer mit den geringsten Berechtigungen verwenden, die zum Ausführen anderer Aufgaben erforderlich sind.
 
  
 |Benutzerdefinierte Rolle  |Microsoft Managed Desktop-Berechtigungen  |

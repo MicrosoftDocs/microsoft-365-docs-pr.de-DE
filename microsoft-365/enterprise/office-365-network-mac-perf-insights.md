@@ -14,169 +14,182 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Network Insights (Vorschau)
-ms.openlocfilehash: 9e324af8ea2b81d0ca672b079afc74bededce695
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d6786ce6cd58ce6f350804fbbacd272b8c077dc0
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200769"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055473"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 Network Insights (Vorschau)
 
-**Netzwerk Einblicke** sind Leistungs Metriken, die von Ihrem Microsoft 365-Mandanten gesammelt werden und nur für administrative Benutzer in Ihrem Mandanten verfügbar sind. Einblicke werden im Microsoft 365 Admin Center unter angezeigt <https://portal.microsoft.com/adminportal/home#/networkperformance> .
+**Netzwerkeinblicke** sind Leistungsmetriken, die von Ihrem Microsoft 365-Mandanten erfasst werden und nur von Administratorbenutzern in Ihrem Mandanten angezeigt werden können. Einblicke werden im Microsoft 365 Admin Center unter <https://portal.microsoft.com/adminportal/home#/networkperformance> angezeigt.
 
-Mithilfe von Insights sollen Netzwerkperimeter für Ihre Office-Standorte entworfen werden. Jede Insight enthält Live-Details zu den Leistungsmerkmalen eines bestimmten allgemeinen Problems für jeden geografischen Standort, auf den Benutzer auf ihren Mandanten zugreifen.
+Einblicke sollen beim Entwerfen von Netzwerkperimetern für Ihre Bürostandorte helfen. Jeder Einblick bietet Livedetails zu den Leistungsmerkmalen für ein bestimmtes häufiges Problem für jeden geografischen Standort, an dem Benutzer auf Ihren Mandanten zugreifen.
 
-Es gibt sechs spezifische Netzwerk Einblicke, die für jeden Office-Standort angezeigt werden können:
+Es gibt sechs spezifische Netzwerkeinblicke, die für jeden Bürostandort angezeigt werden können:
 
-- [Ausstieg aus dem backhauld-Netzwerk](#backhauled-network-egress)
+- [Backhauled network egress](#backhauled-network-egress)
+- [Netzwerkvermittlergerät](#network-intermediary-device)
 - [Bessere Leistung für Kunden in Ihrer Nähe erkannt](#better-performance-detected-for-customers-near-you)
-- [Verwenden eines nicht optimalen Exchange Online-Dienst-Front-Door](#use-of-a-non-optimal-exchange-online-service-front-door)
-- [Verwenden eines nicht optimalen SharePoint Online-Dienst-Front-Door](#use-of-a-non-optimal-sharepoint-online-service-front-door)
-- [Niedrige Downloadgeschwindigkeit von SharePoint-Haustür](#low-download-speed-from-sharepoint-front-door)
-- [China-Benutzer optimales Netzwerk Austritt](#china-user-optimal-network-egress)
+- [Verwenden einer nicht optimalen Front-Door des Exchange Online-Diensts](#use-of-a-non-optimal-exchange-online-service-front-door)
+- [Verwenden einer nicht optimalen SharePoint Online-Dienst-Eingangstür](#use-of-a-non-optimal-sharepoint-online-service-front-door)
+- [Niedrige Downloadgeschwindigkeit von der SharePoint-Front-Door](#low-download-speed-from-sharepoint-front-door)
+- [Optimaler Netzwerk-Ausgangs in China](#china-user-optimal-network-egress)
 
-Es gibt zwei Netzwerk Einblicke auf Mandantenebene, die für den Mandanten angezeigt werden können. Diese werden auch auf den producvitivy-Ergebnisseiten angezeigt:
+Es gibt zwei Netzwerkeinblicke auf Mandantenebene, die für den Mandanten angezeigt werden können. Diese werden auch auf den Produkvitivy-Bewertungsseiten angezeigt:
 
-- [Auswirkungen von Verbindungsproblemen auf Exchange-Stichproben Verbindungen](#exchange-sampled-connections-impacted-by-connectivity-issues)
-- [Durch Verbindungsprobleme beeinträchtigte SharePoint-Stichproben Verbindungen](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
+- [Exchange-Beispielverbindungen, die von Konnektivitätsproblemen betroffen sind](#exchange-sampled-connections-impacted-by-connectivity-issues)
+- [Von Konnektivitätsproblemen betroffene In-SharePoint-Beispielverbindungen](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
 
 >[!IMPORTANT]
->Netzwerk Einblicke, Leistungsempfehlungen und Bewertungen im Microsoft 365 Admin Center befinden sich derzeit im Vorschaustatus und stehen nur für Microsoft 365-Mandanten zur Verfügung, die im Feature Preview-Programm registriert wurden.
+>Netzwerkeinblicke, Leistungsempfehlungen und Bewertungen im Microsoft 365 Admin Center befinden sich derzeit im Vorschaustatus und sind nur für Microsoft 365-Mandanten verfügbar, die für das Featurevorschauprogramm registriert wurden.
 
-## <a name="backhauled-network-egress"></a>Ausstieg aus dem backhauld-Netzwerk
+## <a name="backhauled-network-egress"></a>Backhauled network egress
 
-Diese Einblicke werden angezeigt, wenn der Network Insights-Dienst erkennt, dass der Abstand zwischen einem bestimmten Benutzerstandort und dem Netzwerk Ausgang größer als 500 Meilen (800 Kilometer) ist und angibt, dass der Microsoft 365-Datenverkehr zu einem gemeinsamen Internet-Edge-Gerät oder-Proxy zurückgezogen wird.
+Dieser Einblick wird angezeigt, wenn der Netzwerkinblickedienst erkennt, dass der Abstand zwischen einem bestimmten Benutzerstandort und dem Netzwerkeinsprung größer als 500 Meilen (800 Kilometer) ist, was bedeutet, dass microsoft 365-Datenverkehr zu einem gemeinsamen Internetedgegerät oder -proxy zurückgestürzt wird.
 
-Diese Einblicke wird in einigen zusammenfassungsansichten als "Ausstieg" abgekürzt.
+Dieser Einblick wird in einigen Zusammenfassungsansichten als "Egress" abgekürzt.
 
-![Ausstieg aus dem backhauld-Netzwerk](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
+![Backhauled network egress](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
 
 ### <a name="what-does-this-mean"></a>Szenario
 
-Dadurch wird feststellen, dass der Abstand zwischen dem Bürostandort und dem Netzwerk Ausstieg mehr als 500 Meilen (800 Kilometer) beträgt. Der Standort des Büros wird durch einen verborgenen Clientcomputer Speicherort identifiziert, und der Netzwerk Ausgangsspeicherort wird mithilfe von Reverse IP Address to Location Databases identifiziert. Der Office-Standort ist möglicherweise ungenau, wenn Windows-Ortungsdienste auf Computern deaktiviert sind. Der Netzwerk Ausgangsspeicherort ist möglicherweise ungenau, wenn die Datenbankinformationen der Reverse-IP-Adresse ungenau sind.
+Dies gibt an, dass der Abstand zwischen Bürostandort und Netzwerk aus dem Netzwerk mehr als 500 Meilen (800 Kilometer) beträgt. Der Bürostandort wird durch einen verschleierten Standort des Clientcomputers identifiziert, und der Netzwerk-Ausgangsstandort wird mithilfe der umgekehrten IP-Adresse für Standortdatenbanken identifiziert. Der Bürostandort ist möglicherweise ungenau, wenn die Windows Location Services auf Computern deaktiviert sind. Der Netzwerk-Ausgangsspeicherort ist möglicherweise ungenau, wenn die Informationen der Reverse-IP-Adressdatenbank ungenau sind.
 
-Details für diese Einblicke sind der Office-Standort, der geschätzte Prozentsatz des Gesamt Mandanten Benutzers am Standort, der aktuelle Netzwerk Ausgangsstandort, die Relevanz des Ausgangs Standorts, der Abstand zwischen dem Standort und dem aktuellen Ausgangspunkt, das Datum, an dem die Bedingung erstmals erkannt wurde, und das Datum, an dem die Bedingung aufgelöst wurde.
+Zu den Details für diesen Einblick gehören der Bürostandort, der geschätzte Prozentsatz des gesamten Mandantenbenutzers am Standort, der aktuelle Netzwerk-Ausgangsstandort, die Relevanz des Ausgangspunkts, der Abstand zwischen dem Standort und dem aktuellen Ausgangspunkt, das Datum, an dem die Bedingung zum ersten Mal erkannt wurde, und das Datum, an dem die Bedingung aufgelöst wurde.
 
 ### <a name="what-should-i-do"></a>Was soll ich machen?
 
-Für diese Einblicke empfehlen wir den Netzwerk Ausstieg näher am Office-Standort, damit die Konnektivität optimal zum globalen Microsoft-Netzwerk und zur nächsten Microsoft 365-Dienst Haustür weitergeleitet werden kann. Das Schließen des Netzwerk Ausstiegs für Benutzer in Office-Standorten ermöglicht auch in Zukunft eine verbesserte Leistung, da Microsoft in Zukunft sowohl Netzwerk Points of Presence als auch Microsoft 365 Service-Front-Doors erweitert.
+Für diesen Einblick empfehlen wir, den Netzwerkeingang näher am Bürostandort zu verwenden, damit die Konnektivität optimal zum globalen Netzwerk von Microsoft und zur nächstgelegenen Microsoft 365-Dienst-Front-Door geroutet werden kann. Ein enger Netzwerkeinschluss zu den Bürostandorten der Benutzer ermöglicht auch in Zukunft eine bessere Leistung, da Microsoft in Zukunft sowohl netzwerkstandorte als auch Microsoft 365-Dienst-Front-Doors erweitert.
 
-Weitere Informationen zum Beheben dieses Problems finden Sie unter Ausgangs [Netzwerkverbindungen lokal](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) in [Office 365 Netzwerk Verbindungs Prinzipien](microsoft-365-network-connectivity-principles.md).
+Weitere Informationen zur Behebung dieses Problems [](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) finden Sie unter "Prinzipien von Netzwerkverbindungen in [Office 365 Network Connectivity".](microsoft-365-network-connectivity-principles.md)
+
+## <a name="network-intermediary-device"></a>Netzwerkvermittlergerät
+
+Dieser Einblick wird angezeigt, wenn wir Geräte zwischen Ihren Benutzern und dem Netzwerk von Microsoft erkannt haben, die sich auf die Office 365-Benutzeroberfläche auswirken können. Es wird empfohlen, diese für bestimmten Microsoft 365-Netzwerkdatenverkehr zu umgehen, der für Microsoft-Rechenzentren bestimmt ist. Diese Empfehlung wird zusätzlich in den Prinzipien der [Microsoft 365-Netzwerkkonnektivität beschrieben.](microsoft-365-network-connectivity-principles.md)
+
+### <a name="what-does-this-mean"></a>Szenario
+
+Zwischengeschaltete Netzwerkgeräte wie Proxyserver, VPNs und Geräte zur Verhinderung von Datenverlusten können sich auf die Leistung und Stabilität von Microsoft 365-Clients auswirken, bei denen Datenverkehr zwischengeschaltet wird.
+
+### <a name="what-should-i-do"></a>Was soll ich machen?
+
+Konfigurieren Sie das Netzwerkvermittlergerät, das erkannt wurde, um die Verarbeitung für Microsoft 365-Netzwerkdatenverkehr zu umgehen.
 
 ## <a name="better-performance-detected-for-customers-near-you"></a>Bessere Leistung für Kunden in Ihrer Nähe erkannt
 
-Diese Einblicke werden angezeigt, wenn der Network Insights-Dienst erkennt, dass eine beträchtliche Anzahl von Kunden in Ihrem Metro-Bereich eine bessere Leistung hat als Benutzer in Ihrer Organisation an diesem Standort.
+Dieser Einblick wird angezeigt, wenn der Netzwerkinblickedienst erkennt, dass eine erhebliche Anzahl von Kunden in Ihrer Region in Ihrer Region eine bessere Leistung hat als Benutzer in Ihrer Organisation an diesem Bürostandort.
 
-Diese Einblicke wird in einigen zusammenfassungsansichten als "Peers" abgekürzt.
+Dieser Einblick wird in einigen Zusammenfassungsansichten als "Peers" abgekürzt.
 
 ![Relative Netzwerkleistung](../media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
 
 ### <a name="what-does-this-mean"></a>Szenario
 
-In dieser Einblicke wird die Gesamtleistung von Microsoft 365-Kunden in derselben Stadt wie dieser Standort untersucht. Diese Einblicke wird angezeigt, wenn die durchschnittliche Wartezeit Ihrer Benutzer 10% über der durchschnittlichen Wartezeit von benachbarten Mandanten liegt.
+Dieser Einblick untersucht die Gesamtleistung von Microsoft 365-Kunden in derselben Stadt wie dieser Bürostandort. Dieser Einblick wird angezeigt, wenn die durchschnittliche Wartezeit Ihrer Benutzer um 10 % über der durchschnittlichen Wartezeit benachbarter Mandanten liegt.
 
 ### <a name="what-should-i-do"></a>Was soll ich machen?
 
-Es kann viele Gründe für diese Bedingung geben, einschließlich Wartezeit in Ihrem Unternehmensnetzwerk oder ISP, Engpässe oder Architektur Designprobleme. Überprüfen Sie die Wartezeit zwischen den einzelnen Hops in der Route zwischen Ihrem Office-Netzwerk und der aktuellen Microsoft 365-Haustür. Weitere Informationen finden Sie unter [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
+Es kann viele Gründe für diese Bedingung geben, z. B. Wartezeiten in Ihrem Unternehmensnetzwerk oder Internetdienstanbieter, Engpässe oder Architekturentwurfsprobleme. Überprüfen Sie die Wartezeit zwischen jedem Hop in der Route zwischen Ihrem Büronetzwerk und der aktuellen Microsoft 365-Eingangstür. Weitere Informationen finden Sie unter ["Prinzipien der Microsoft 365-Netzwerkkonnektivität".](microsoft-365-network-connectivity-principles.md)
 
-## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>Verwenden eines nicht optimalen Exchange Online-Dienst-Front-Door
+## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>Verwenden eines nicht optimalen Front-Door-Diensts für den Exchange Online-Dienst
 
-Diese Einblicke werden angezeigt, wenn der Network Insights-Dienst erkennt, dass Benutzer an einem bestimmten Standort keine Verbindung mit einer optimalen Exchange Online Dienst-Haustür herstellen.
+Dieser Einblick wird angezeigt, wenn der Netzwerkinblickedienst erkennt, dass Benutzer an einem bestimmten Standort keine Verbindung mit einer optimalen Front-Door des Exchange Online-Diensts herstellen.
 
-Diese Einblicke wird in einigen zusammenfassungsansichten als "Routing" abgekürzt.
+Dieser Einblick wird in einigen Zusammenfassungsansichten als "Routing" abgekürzt.
 
-![Nicht optimale Exo-Haustür](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
+![Nicht optimale EXO-Front-Door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
 ### <a name="what-does-this-mean"></a>Szenario
 
-Wir führen Exchange Online Service-Fronttüren auf, die für die Verwendung aus der Office-Standort Stadt mit guter Leistung geeignet sind. Wenn der aktuelle Test die Verwendung eines Exchange Online-Dienst-Front-Doors nicht in dieser Liste zeigt, wird diese Empfehlung aufgerufen.
+Wir listen die Front-Doors des Exchange Online-Diensts auf, die sich für die Verwendung in der Stadt am Bürostandort mit guter Leistung eignen. Wenn der aktuelle Test die Verwendung einer Front-Door eines Exchange Online-Diensts zeigt, die nicht in dieser Liste enthalten ist, wird diese Empfehlung angezeigt.
 
 ### <a name="what-should-i-do"></a>Was soll ich machen?
 
-Die Verwendung eines nicht optimalen Exchange Online Dienst-Front-Door könnte durch Netzwerk Backhaul vor dem Ausstieg des Unternehmensnetzwerks verursacht werden, in diesem Fall empfehlen wir den Ausstieg aus dem lokalen und direkten Netzwerk. Es kann auch durch die Verwendung eines Remote-DNS-rekursive Auflösungs Servers verursacht werden, in dem der Fall empfohlen wird, den DNS-rekursive Auflösungs Server mit dem Netzwerk Ausstieg auszurichten.
+Die Verwendung einer nicht optimalen Front-Door des Exchange Online-Diensts kann durch eine Netzwerk-Backhaul vor dem Auskommen des Unternehmensnetzwerks verursacht werden. In diesem Fall wird ein lokaler und direkter Netzwerkein-/-abgress empfohlen. Es kann auch durch die Verwendung eines DNS-Rekursiven Resolver-Remoteservers verursacht werden. In diesem Fall wird empfohlen, den DNS-Rekursiven Resolverserver an den Netzwerkentress auszurichten.
 
-## <a name="use-of-a-non-optimal-sharepoint-online-service-front-door"></a>Verwenden eines nicht optimalen SharePoint Online-Dienst-Front-Door
+## <a name="use-of-a-non-optimal-sharepoint-online-service-front-door"></a>Verwenden einer nicht optimalen SharePoint Online-Dienst-Eingangstür
 
-Diese Einblicke werden angezeigt, wenn der Network Insights-Dienst erkennt, dass Benutzer an einem bestimmten Standort keine Verbindung mit der nächstgelegenen SharePoint Online Dienst-Haustür herstellen.
+Dieser Einblick wird angezeigt, wenn der Netzwerkinblickedienst erkennt, dass Benutzer an einem bestimmten Standort keine Verbindung mit der nächstgelegenen SharePoint Online -Dienst-Front-Door herstellen.
 
-Diese Einblicke wird in einigen zusammenfassungsansichten als "ausschließend" abgekürzt.
+Dieser Einblick wird in einigen Zusammenfassungsansichten als "Afd" abgekürzt.
 
-![Nicht optimale SPO-Haustür](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
+![Nicht optimaler SPO-Front-Door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
 
 ### <a name="what-does-this-mean"></a>Szenario
 
-Wir identifizieren die SharePoint Online-Dienst-Haustür, mit der der Testclient eine Verbindung herstellt. Für die Office-Standort Stadt vergleichen wir dies mit der erwarteten SharePoint Online-Service-Haustür für diese Stadt. Wenn er nicht übereinstimmt, machen wir diese Empfehlung.
+Wir identifizieren die Front-Door des SharePoint Online-Diensts, mit der der Testclient eine Verbindung herstellen soll. Für die Bürostandort-Stadt vergleichen wir dies dann mit dem erwarteten SharePoint Online-Service-Eingangstor für diese Stadt. Wenn sie nicht übereinstimmen, wird diese Empfehlung empfohlen.
 
 ### <a name="what-should-i-do"></a>Was soll ich machen?
 
-Die Verwendung eines nicht optimalen SharePoint Online Dienst-Front-Door könnte durch Netzwerk Backhaul vor dem Ausstieg des Unternehmensnetzwerks verursacht werden, in diesem Fall empfehlen wir den Ausstieg aus dem lokalen und direkten Netzwerk. Es kann auch durch die Verwendung eines Remote-DNS-rekursive Auflösungs Servers verursacht werden, in dem der Fall empfohlen wird, den DNS-rekursive Auflösungs Server mit dem Netzwerk Ausstieg auszurichten.
+Die Verwendung einer nicht optimalen SharePoint Online -Dienst-Front-Door kann durch eine Netzwerk-Backhaul vor dem Auskommen des Unternehmensnetzwerks verursacht werden. In diesem Fall empfehlen wir lokalen und direkten Netzwerkein- und -abgress. Es kann auch durch die Verwendung eines DNS-Rekursiven Resolver-Remoteservers verursacht werden. In diesem Fall wird empfohlen, den DNS-Rekursiven Resolverserver an den Netzwerkentress auszurichten.
 
-## <a name="low-download-speed-from-sharepoint-front-door"></a>Niedrige Downloadgeschwindigkeit von SharePoint-Haustür
+## <a name="low-download-speed-from-sharepoint-front-door"></a>Geringe Downloadgeschwindigkeit von der SharePoint-Front-Door
 
-Diese Einblicke werden angezeigt, wenn der Network Insights-Dienst erkennt, dass die Bandbreite zwischen dem jeweiligen Office-Standort und SharePoint Online kleiner als 1 Mbit/s ist.
+Dieser Einblick wird angezeigt, wenn der Netzwerkinblickedienst erkennt, dass die Bandbreite zwischen dem bestimmten Bürostandort und SharePoint Online weniger als 1 MBps beträgt.
 
-Diese Einblicke wird in einigen zusammenfassungsansichten als "Durchsatz" abgekürzt.
+Dieser Einblick wird in einigen Zusammenfassungsansichten als "Durchsatz" abgekürzt.
 
 ### <a name="what-does-this-mean"></a>Szenario
 
-Die Downloadgeschwindigkeit, die ein Benutzer von SharePoint Online-und OneDrive für Unternehmen-Dienst-Fronttüren erhalten kann, wird in Megabytes pro Sekunde (Mbps) gemessen. Wenn dieser Wert kleiner als 1 Mbit/s ist, stellen wir diese Einblicke bereit.
+Die Downloadgeschwindigkeit, die ein Benutzer von SharePoint Online und OneDrive for #A0 erhalten kann, wird in Megabyte pro Sekunde (MBIT/s) gemessen. Wenn dieser Wert kleiner als 1 MBps ist, geben wir diesen Einblick.
 
 ### <a name="what-should-i-do"></a>Was soll ich machen?
 
-Um die Downloadgeschwindigkeit zu verbessern, muss die Bandbreite möglicherweise erhöht werden. Alternativ kann es zu Netzwerküberlastung zwischen Benutzercomputern am Office-Standort und der Front-Door-SharePoint Online Dienst geben. Dies wird manchmal als Überlastungs Verlust bezeichnet und schränkt die Downloadgeschwindigkeit ein, die Benutzern zur Verfügung steht, auch wenn genügend Bandbreite zur Verfügung steht.
+Um die Downloadgeschwindigkeit zu verbessern, muss die Bandbreite möglicherweise erhöht werden. Alternativ kann es zu Netzwerküberlastungen zwischen Benutzergeräten am Bürostandort und der Fronttür des SharePoint Online-Diensts kommen. Dies wird manchmal als überlastet bezeichnet und schränkt die Downloadgeschwindigkeit ein, die Benutzern zur Verfügung steht, auch wenn ausreichend Bandbreite verfügbar ist.
 
-## <a name="china-user-optimal-network-egress"></a>China-Benutzer optimales Netzwerk Austritt
+## <a name="china-user-optimal-network-egress"></a>Optimaler Netzwerk-Ausgangs in China
 
-Diese Einblicke werden angezeigt, wenn Ihre Organisation über Benutzer in China verfügt, die sich mit Ihrem Microsoft 365-Mandanten an anderen geografischen Standorten verbinden. 
+Dieser Einblick wird angezeigt, wenn Ihre Organisation Benutzer in China hat, die sich mit Ihrem Microsoft 365-Mandanten an anderen geografischen Standorten verbinden. 
 
 ### <a name="what-does-this-mean"></a>Szenario
 
-Wenn Ihre Organisation über private WAN-Konnektivität verfügt, wird empfohlen, eine Netzwerk-WAN-Schaltung von Ihren Office-Standorten in China aus zu konfigurieren, die über einen Netzwerk Austritt mit dem Internet an einem der folgenden Standorte verfügt:
+Wenn Ihre Organisation über private WAN-Verbindungen verfügt, wird empfohlen, eine Netzwerk-WAN-Leitung von Ihren Niederlassungen in China aus zu konfigurieren, die an einem der folgenden Standorte über einen Netzwerkentgang zum Internet verfügt:
 
-- Hongkong (SAR)
+- Hongkong
 - Japan
 - Taiwan
 - Südkorea
 - Singapur
 - Malaysia
 
-Internet Ausstieg weiter Weg von Benutzern als diese Standorte verringern die Leistung, und der Ausstieg in China kann aufgrund von grenzüberschreitender Überlastung zu hohen Latenz-und Verbindungsproblemen führen.
+Der Internetaustritt von Benutzern als diese Standorte wird die Leistung beeinträchtigen, und ein Abgang in China kann aufgrund von überlastungsübergreifenden Verbindungen zu hohen Wartezeiten und Konnektivitätsproblemen führen.
 
 ### <a name="what-should-i-do"></a>Was soll ich machen?
 
-Weitere Informationen zum Minimieren von Leistungsproblemen im Zusammenhang mit dieser Einblicke finden Sie unter [Office 365 Global Tenant Performance Optimization for China users](microsoft-365-networking-china.md).
+Weitere Informationen zum Beheben von Leistungsproblemen im Zusammenhang mit diesem Einblick finden Sie unter [Microsoft 365 globale](microsoft-365-networking-china.md)Mandantenleistungsoptimierung für Benutzer in China.
 
-## <a name="exchange-sampled-connections-impacted-by-connectivity-issues"></a>Auswirkungen von Verbindungsproblemen auf Exchange-Stichproben Verbindungen
+## <a name="exchange-sampled-connections-impacted-by-connectivity-issues"></a>Exchange-Beispielverbindungen, die von Konnektivitätsproblemen betroffen sind
 
-In dieser Erkenntnis wird angezeigt, wenn 50% oder mehr der Stichproben Verbindungen betroffen sind. Die Auswirkungen werden durch die Exchange-Bewertung für jedes Beispiel unter 60% definiert.
+Dieser Einblick wird angezeigt, wenn 50 % oder mehr der in der Stichprobe verwendeten Verbindungen betroffen sind. Die Auswirkung wird durch die Exchange-Bewertung definiert, die für jede Stichprobe unter 60 % liegt.
 
 ### <a name="what-does-this-mean"></a>Szenario
 
-Dies deutet darauf hin, dass bei der Mehrzahl Ihrer Benutzer wahrscheinlich Probleme mit der Benutzerfreundlichkeit auftreten, wenn Outlook eine Verbindung mit Exchange Online herstellt. Der Prozentsatz der Beispiele stellt wahrscheinlich den Prozentsatz der Benutzer dar, die unter 60 Punkten angezeigt werden.  
+Dies ist ein Hinweis darauf, dass bei der Mehrzahl der Benutzer wahrscheinlich Probleme mit der Benutzererfahrung auftreten, wenn Outlook eine Verbindung mit Exchange Online herstellen kann. Der Prozentsatz der Stichproben stellt wahrscheinlich den Prozentsatz der Benutzer dar, die weniger als 60 Punkte anzeigen.  
 
 ### <a name="what-should-i-do"></a>Was soll ich machen?
 
-Aktivieren Sie die Sichtbarkeit der Office-standortnetzwerk Konnektivität, falls noch nicht geschehen. Sie möchten ermitteln, welche Büros von einer schlechten Netzwerkverbindung betroffen sind, die sich auf Exchange auswirkt, und Wege finden, um den Netzwerkperimeter bei jedem zu verbessern, der die Benutzer mit dem Netzwerk von Microsoft verbindet.
+Aktivieren Sie die Sichtbarkeit der Netzwerkkonnektivität des Bürostandorts, wenn Sie dies noch nicht getan haben. Sie möchten ermitteln, welche Büros von einer schlechten Netzwerkkonnektivität betroffen sind, die Sich auf Exchange ausdingt, und nach Möglichkeiten suchen, den Netzwerkperimeter zu verbessern, der die Benutzer mit dem Netzwerk von Microsoft verbindet.
 
-## <a name="sharepoint-sampled-connections-impacted-by-connectivity-issues"></a>Durch Verbindungsprobleme beeinträchtigte SharePoint-Stichproben Verbindungen
+## <a name="sharepoint-sampled-connections-impacted-by-connectivity-issues"></a>Von Konnektivitätsproblemen betroffene In-SharePoint-Beispielverbindungen
 
-In dieser Erkenntnis wird angezeigt, wenn 50% oder mehr der Stichproben Verbindungen betroffen sind. Die Auswirkungen werden durch die SharePoint-Bewertung unter 40% für jedes Beispiel definiert.
+Dieser Einblick wird angezeigt, wenn 50 % oder mehr der in der Stichprobe verwendeten Verbindungen betroffen sind. Die Auswirkung wird durch die SharePoint-Bewertung definiert, die für jede Stichprobe unter 40 % liegt.
 
 ### <a name="what-does-this-mean"></a>Szenario
 
-Dies deutet darauf hin, dass die Mehrzahl der Benutzer wahrscheinlich Probleme mit der Benutzerfreundlichkeit bei SharePoint und OneDrive auftreten. Der Prozentsatz der Beispiele stellt wahrscheinlich den Prozentsatz der Benutzer dar, die unter 40 Punkten angezeigt werden.  
+Es ist ein Hinweis darauf, dass die Mehrzahl Ihrer Benutzer wahrscheinlich Probleme mit Der Benutzererfahrung mit SharePoint und OneDrive haben. Der Prozentsatz der Stichproben stellt wahrscheinlich den Prozentsatz der Benutzer dar, die weniger als 40 Punkte anzeigen.  
 
 ### <a name="what-should-i-do"></a>Was soll ich machen?
 
-Aktivieren Sie die Sichtbarkeit der Office-standortnetzwerk Konnektivität, falls noch nicht geschehen. Sie möchten ermitteln, welche Büros von einer schlechten Netzwerkkonnektivität betroffen sind, die sich auf SharePoint auswirkt, und Wege finden, um den Netzwerkperimeter bei jedem zu verbessern, der die Benutzer mit dem Netzwerk von Microsoft verbindet.
+Aktivieren Sie die Sichtbarkeit der Netzwerkkonnektivität des Bürostandorts, wenn Sie dies noch nicht getan haben. Sie möchten ermitteln, welche Büros von einer schlechten Netzwerkkonnektivität betroffen sind, die Sich auf SharePoint auswirken, und nach Möglichkeiten suchen, den Netzwerkperimeter zu verbessern, der die Benutzer mit dem Netzwerk von Microsoft verbindet.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 Netzwerkbewertung (Vorschau)](office-365-network-mac-perf-score.md)
+[Microsoft 365-Netzwerkbewertung (Vorschau)](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 Network Connectivity Test Tool (Vorschau)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365-Tool zum Testen der Netzwerkkonnektivität (Vorschau)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Network Connectivity Location Services (Vorschau)](office-365-network-mac-location-services.md)

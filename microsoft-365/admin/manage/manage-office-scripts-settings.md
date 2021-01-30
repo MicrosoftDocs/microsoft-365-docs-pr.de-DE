@@ -1,5 +1,5 @@
 ---
-title: Office-Skripts-Einstellungen verwalten
+title: Einstellungen für Office-Skripts verwalten
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -15,23 +15,23 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
-description: Hier erfahren Sie, wie Sie Office-Skripteinstellungen für Benutzer in Ihrer Organisation verwalten.
-ms.openlocfilehash: 44e2a5c0e0577db344fdbb00a110674df3e71bdc
-ms.sourcegitcommit: 04f196528a7a91b404478553433af3fa94d7eee7
+description: Erfahren Sie, wie Sie Einstellungen für Office-Skripts für Benutzer in Ihrer Organisation verwalten.
+ms.openlocfilehash: 75d0a9d9e98652fc11eab7e8a7d6c826be031f6e
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47317493"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058423"
 ---
-# <a name="manage-office-scripts-settings"></a>Office-Skripts-Einstellungen verwalten
+# <a name="manage-office-scripts-settings"></a>Einstellungen für Office-Skripts verwalten
 
-Office-Skripts ermöglichen Benutzern das Automatisieren von Aufgaben durch aufzeichnen, bearbeiten und Ausführen von Skripts in Excel im Internet. Office-Skripts arbeiten mit Power Automation, und Benutzer führen Skripts für Arbeitsmappen mithilfe des Excel Online (Business)-Connectors aus. Microsoft 365-Administratoren können Office-Skripteinstellungen im Microsoft 365 Admin Center verwalten.
+Mit Office Scripts können Benutzer Aufgaben automatisieren, indem Skripts in Excel im Web aufgezeichnet, bearbeitet und ausgeführt werden. Office Scripts funktioniert mit Power Automate, und Benutzer führen Skripts in Arbeitsmappen mithilfe des Excel Online (Business)-Connectors aus. Microsoft 365-Administratoren können Einstellungen für Office-Skripts über das Microsoft 365 Admin Center verwalten.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Zum Verwalten von Office-Skripteinstellungen müssen Sie ein globaler Administrator sein. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../add-users/about-admin-roles.md).
+- Zum Verwalten von Einstellungen für Office-Skripts müssen Sie ein globaler Administrator sein. Weitere Informationen finden Sie unter ["Informationen zu Administratorrollen".](../add-users/about-admin-roles.md)
 
-- Stellen Sie sicher, dass Benutzer in Ihrer Organisation über eine gültige Lizenz für einen Microsoft 365-oder Office 365-Geschäfts-oder-edu-Plan verfügen, der Zugriff auf Office-Desktop-Apps umfasst, beispielsweiseeines der folgenden Pläne:
+- Stellen Sie sicher, dass Benutzer in Ihrer Organisation über eine gültige Lizenz für einen kommerziellen Microsoft 365- oder Office 365-Bildungsplan verfügen, der Zugriff auf Office-Desktop-Apps umfasst, z. B. einen der folgenden Pläne:
 
     - Microsoft 365 Business Standard
     - Microsoft 365 Apps for Business
@@ -43,52 +43,66 @@ Office-Skripts ermöglichen Benutzern das Automatisieren von Aufgaben durch aufz
 
 ## <a name="manage-availability-of-office-scripts-and-sharing-of-scripts"></a>Verwalten der Verfügbarkeit von Office-Skripts und der Freigabe von Skripts
 
-1. Wechseln Sie im Microsoft 365 Admin Center zur Registerkarte **Settings** \> **org Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services</a> .
+1. Wechseln Sie im Microsoft 365 Admin Center zur Registerkarte **"Einstellungen** \> **für** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Organisationseinstellungen".</a>
 
-2. Wählen Sie **Office-Skripts**aus.
+2. Wählen Sie **Office-Skripts aus.**
 
-3. Office-Skripts sind standardmäßig aktiviert, und jeder in Ihrer Organisation kann auf das Feature und die Freigabe von Skripts zugreifen und diese verwenden. Wenn Sie Office-Skripts für Ihre Organisation deaktivieren möchten, deaktivieren Sie das Kontrollkästchen zulassen, dass **Benutzer ihre Aufgaben in Excel im Internet automatisieren** .
+3. Office-Skripts sind standardmäßig aktiviert, und jeder in Ihrer Organisation kann auf das Feature zugreifen und es verwenden und Skripts freigeben. Deaktivieren Sie das Kontrollkästchen "Benutzern das Automatisieren ihrer Aufgaben **in Excel im Web** ermöglichen", um die Office-Skripts für Ihre Organisation zu deaktivieren.
 
-4. Wenn Sie zuvor Office-Skripts für Ihre Organisation deaktiviert haben und Sie wieder aktivieren möchten, wählen Sie **Benutzer können Ihre Aufgaben in Excel im Internet automatisieren**aus, und geben Sie dann an, wer auf das Feature zugreifen und dieses verwenden kann:
+4. Wenn Sie zuvor die Office-Skripts für Ihre Organisation deaktiviert haben und wieder aktivieren möchten, wählen Sie "Benutzern das Automatisieren ihrer Aufgaben **in Excel im Web** ermöglichen" aus, und geben Sie dann an, wer auf das Feature zugreifen und es verwenden kann:
 
-    - Wenn Sie allen Benutzern in Ihrer Organisation den Zugriff auf und die Verwendung von Office-Skripts gestatten möchten, lassen Sie **alle** (Standard) ausgewählt. 
+    - Um allen Benutzern in Ihrer Organisation den Zugriff auf und die Verwendung von Office-Skripts zu ermöglichen, lassen Sie **"Jeder"** (Standard) ausgewählt.
 
-    - Wenn Sie nur Mitgliedern einer bestimmten Gruppe den Zugriff auf und die Verwendung von Office-Skripts gestatten möchten, wählen Sie **bestimmte Gruppe**aus, und geben Sie dann den Namen oder e-Mail-Alias der Gruppe ein, um ihn der Zulassungsliste hinzuzufügen. Sie können nur eine Gruppe zur Zulassungsliste hinzufügen, und es muss sich um einen der folgenden Typen handeln:
+    - Um nur Mitgliedern einer bestimmten Gruppe den Zugriff auf und die Verwendung von Office-Skripts zu ermöglichen, wählen Sie eine bestimmte Gruppe **aus,** und geben Sie dann den Namen oder E-Mail-Alias der Gruppe ein, um sie der Liste "Zulassen" hinzuzufügen. Sie können nur eine Gruppe zur Liste der zulässigen Gruppen hinzufügen, und dies muss einer der folgenden Typen sein:
         - Microsoft 365-Gruppe
         - Verteilergruppe
         - Sicherheitsgruppe
         - E-Mail-aktivierte Sicherheitsgruppe
     
-        Weitere Informationen zu den verschiedenen Typen von Gruppen finden Sie unter [Compare Groups](../create-groups/compare-groups.md).
+        Weitere Informationen zu den verschiedenen Gruppentypen finden Sie unter [Vergleichen von Gruppen.](../create-groups/compare-groups.md)
 
-5. Um Benutzern mit Zugriff auf Office-Skripts das Freigeben Ihrer Skripts für andere Personen in Ihrer Organisation zu ermöglichen, wählen Sie **Benutzer mit Zugriff auf Office-Skripts zulassen, dass Ihre Skripts für andere Personen in der Organisation freigegeben**werden. Das Freigeben von Skripts außerhalb einer Organisation ist nicht zulässig.
+5. Damit Benutzer mit Zugriff auf Office-Skripts ihre Skripts für andere Personen in Ihrer Organisation freigeben können, wählen Sie "Benutzern mit Zugriff auf Office-Skripts erlauben" aus, ihre Skripts für andere Personen in der **Organisation zu freigeben.** Das Freigeben von Skripts außerhalb einer Organisation ist nicht zulässig.
  
     > [!NOTE]
-    > Wenn Sie später die Skript Freigabe für Ihre Organisation deaktivieren, können Benutzer weiterhin zuvor freigegebene Skripts ausführen.
+    > Wenn Sie später die Skriptfreigabe für Ihre Organisation deaktivieren, können Benutzer weiterhin zuvor freigegebene Skripts ausführen.
  
-6. Geben Sie an, welche Benutzer mit Zugriff auf Office-Skripts Ihre Skripts freigeben können:
+6. Geben Sie an, welche Benutzer mit Zugriff auf Office-Skripts ihre Skripts freigeben können:
     
-    - Damit alle Benutzer, die Zugriff auf Office-Skripts haben, Ihre Skripts freigeben können, lassen Sie **alle** (Standard) ausgewählt.
+    - Damit alle Benutzer mit Zugriff auf Office-Skripts ihre Skripts freigeben können, lassen Sie **"Jeder"** (Standard) ausgewählt.
 
-    - Wenn Sie nur Mitgliedern einer bestimmten Gruppe mit Zugriff auf Office-Skripts das Freigeben Ihrer Skripts gestatten möchten, wählen Sie **bestimmte Gruppe**aus, und geben Sie dann den Namen oder e-Mail-Alias der Gruppe ein, um Sie der Zulassungsliste hinzuzufügen. Sie können nur eine Gruppe zur Zulassungsliste hinzufügen, und es muss sich um einen der folgenden Typen handeln:
+    - Damit nur Mitglieder einer bestimmten Gruppe mit Zugriff auf Office-Skripts ihre Skripts freigeben können, wählen Sie eine bestimmte Gruppe **aus,** und geben Sie dann den Namen oder E-Mail-Alias der Gruppe ein, um sie der Liste "Zulassen" hinzuzufügen. Sie können nur eine Gruppe zur Liste der zulässigen Gruppen hinzufügen, und dies muss einer der folgenden Typen sein:
         - Microsoft 365-Gruppe
         - Verteilergruppe
         - Sicherheitsgruppe
         - E-Mail-aktivierte Sicherheitsgruppe
     
-        Weitere Informationen zu den verschiedenen Typen von Gruppen finden Sie unter [Compare Groups](../create-groups/compare-groups.md).
+        Weitere Informationen zu den verschiedenen Gruppentypen finden Sie unter [Vergleichen von Gruppen.](../create-groups/compare-groups.md)
 
-7. Klicken Sie auf **Speichern**.
+7. Damit Benutzer ihre Office-Skripts in Power Automate-Flüssen ausführen können, wählen Sie "Benutzern mit Zugriff auf Office-Skripts die Ausführung ihrer Skripts mit **Power Automate erlauben" aus.** Auf diese Weise können Benutzer Flussschritte mit der Skriptoption "Ausführen" des [Excel Online (Business)-Connectors](/connectors/excelonlinebusiness) **hinzufügen.**
 
-    Es kann bis zu 48 Stunden dauern, bis Änderungen an Office-Skripteinstellungen wirksam werden.
+    - Damit alle Benutzer mit Zugriff auf Office-Skripts ihre Skripts in Flüssen verwenden können, lassen Sie **"Jeder"** (Standard) ausgewählt.
+
+    - Damit nur Mitglieder einer bestimmten Gruppe mit Zugriff auf Office-Skripts ihre Skripts in Flüssen verwenden können, wählen Sie eine bestimmte Gruppe **aus,** und geben Sie dann den Namen oder E-Mail-Alias der Gruppe ein, um sie der Liste "Zulassen" hinzuzufügen. Sie können der Liste "Zulassen" nur eine Gruppe hinzufügen, und dies muss einer der folgenden Typen sein:
+        - Microsoft 365-Gruppe
+        - Verteilergruppe
+        - Sicherheitsgruppe
+        - E-Mail-aktivierte Sicherheitsgruppe
+
+        Weitere Informationen zu den verschiedenen Gruppentypen finden Sie unter [Vergleichen von Gruppen.](../create-groups/compare-groups.md)
+
+    - Weitere Informationen zur Verwendung von Office-Skripts mit Power Automate, einschließlich der Auswirkungen auf Ihre Richtlinien zur Verhinderung von Datenverlust, finden Sie unter Ausführen von [Office-Skripts mit Power Automate.](/office/dev/scripts/develop/power-automate-integration)
+
+8. Wählen Sie **Speichern** aus.
+
+    Es kann bis zu 48 Stunden dauern, bis Änderungen an den Einstellungen für Office-Skripts wirksam werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Da Office-Skripts mit Power Automation verwendet werden, sollten Sie die vorhandenen DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) überprüfen, um sicherzustellen, dass die Daten Ihrer Organisation geschützt bleiben, während Benutzer Office-Skripts verwenden. Weitere Informationen finden Sie unter [Richtlinien zur Verhinderung von Datenverlust (DLP)](/power-automate/prevent-data-loss).
+Da Office Scripts mit Power Automate verwendet werden können, sollten Sie Ihre vorhandenen Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) überprüfen, um sicherzustellen, dass die Daten Ihrer Organisation geschützt bleiben, während Benutzer Office Scripts verwenden. Weitere Informationen finden Sie unter Richtlinien zur [Verhinderung von Datenverlust (Data Loss Prevention, DLP).](/power-automate/prevent-data-loss)
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Technische Dokumentation zu Office-Skripts](/office/dev/scripts/) (Linkseite) \
-[Einführung in Office-Skripts in Excel](https://support.microsoft.com/office/9fbe283d-adb8-4f13-a75b-a81c6baf163a) (Artikel) \
-[Freigeben von Office-Skripts in Excel für das Internet](https://support.microsoft.com/office/226eddbc-3a44-4540-acfe-fccda3d1122b) (Artikel) \
-[Aufzeichnen, bearbeiten und Erstellen von Office-Skripts in Excel im Internet](/office/dev/scripts/tutorials/excel-tutorial) (Artikel)
+[Technische Dokumentation zu Office Scripts](/office/dev/scripts/) (Linkseite)\
+[Einführung in Office Scripts in Excel](https://support.microsoft.com/office/9fbe283d-adb8-4f13-a75b-a81c6baf163a) (Artikel)\
+[Freigeben von Office-Skripts in Excel für das Web](https://support.microsoft.com/office/226eddbc-3a44-4540-acfe-fccda3d1122b) (Artikel)\
+[Aufzeichnen, Bearbeiten und Erstellen von Office-Skripts in Excel im Web](/office/dev/scripts/tutorials/excel-tutorial) (Artikel)

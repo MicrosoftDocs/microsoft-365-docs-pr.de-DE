@@ -1,5 +1,5 @@
 ---
-title: Dienst Verschlüsselung
+title: Dienstverschlüsselung
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -13,47 +13,46 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: 'Zusammenfassung: Grundlegendes zur Ausfallsicherheit von Daten in Microsoft Office 365.'
-ms.openlocfilehash: fbd2672986046a4f6d25c47b011eaef0a87d90e1
-ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
+description: 'Zusammenfassung: Informationen zur Datenresilienz in Microsoft Office 365.'
+ms.openlocfilehash: 89f3fbcc90cee0ad822156014ee4ac9e04fe3371
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777049"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058548"
 ---
-# <a name="service-encryption"></a>Dienst Verschlüsselung
+# <a name="service-encryption"></a>Dienstverschlüsselung
 
-Zusätzlich zur Verschlüsselung auf Volumen Ebene verwenden Exchange Online, Skype for Business, SharePoint Online und OneDrive für Unternehmen auch die Dienst Verschlüsselung zum Verschlüsseln von Kundendaten. Die Dienst Verschlüsselung ermöglicht zwei wichtige Verwaltungsoptionen:
+Zusätzlich zur Verwendung der Verschlüsselung auf Volumeebene verwenden Exchange Online, Microsoft Teams, SharePoint Online und OneDrive for Business auch die Dienstverschlüsselung, um Kundendaten zu verschlüsseln. Die Dienstverschlüsselung ermöglicht zwei Schlüsselverwaltungsoptionen:
 
 ## <a name="microsoft-managed-keys"></a>Von Microsoft verwaltete Schlüssel
-Microsoft verwaltet alle kryptografischen Schlüssel einschließlich der Stammschlüssel für die Dienst Verschlüsselung. Diese Option ist derzeit standardmäßig für Exchange Online, SharePoint Online OneDrive für Unternehmen aktiviert. Von Microsoft verwaltete Schlüssel wird die Standarddienst Verschlüsselung bereitgestellt, es sei denn, Sie verwenden den Kundenschlüssel an Bord. Wenn Sie zu einem späteren Zeitpunkt beschließen, die Verwendung des Kunden Schlüssels zu beenden, ohne den Pfad der Datenbereinigung zu befolgen, bleiben Ihre Daten mit den von Microsoft verwalteten Schlüsseln verschlüsselt. Ihre Daten werden immer mindestens auf dieser Standardstufe verschlüsselt. 
+Microsoft verwaltet alle kryptografischen Schlüssel einschließlich der Stammschlüssel für die Dienstverschlüsselung. Diese Option ist derzeit standardmäßig für Exchange Online, SharePoint Online, OneDrive for Business aktiviert. Von Microsoft verwaltete Schlüssel bieten standardmäßige Dienstverschlüsselung, es sei denn, Sie entscheiden sich für das Onboarding mit Customer Key. Wenn Sie zu einem späteren Zeitpunkt entscheiden, den Kundenschlüssel nicht mehr zu verwenden, ohne dem Pfad zur Datenbereinigung zu folgen, bleiben Ihre Daten mit den von Microsoft verwalteten Schlüsseln verschlüsselt. Ihre Daten werden auf dieser Standardstufe immer mindestens verschlüsselt. 
 
 ## <a name="customer-key"></a>Kundenschlüssel
-Sie geben die mit der Dienst Verschlüsselung verwendeten Stammschlüssel an und verwalten diese Schlüssel mithilfe von Azure Key Vault. Microsoft verwaltet alle anderen Schlüssel. Diese Option wird als Kundenschlüssel bezeichnet und steht derzeit für Exchange Online, SharePoint Online und OneDrive für Unternehmen zur Verfügung. (Zuvor als erweiterte Verschlüsselung mit BYOK bezeichnet. Weitere Informationen finden Sie unter [Enhancing transparency and Control for Office 365 Customers](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) for the Original Announcement.)
+Sie liefern Stammschlüssel, die mit der Dienstverschlüsselung verwendet werden, und verwalten diese Schlüssel mithilfe von Azure Key Vault. Microsoft verwaltet alle anderen Schlüssel. Diese Option heißt Customer Key und ist derzeit für Exchange Online, SharePoint Online und OneDrive for Business verfügbar. (Früher als erweiterte Verschlüsselung mit BYOK bezeichnet. Informationen zur ursprünglichen Ankündigung finden Sie unter Verbessern der Transparenz und Kontrolle für [Office 365-Kunden.)](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/)
 
-Die Dienst Verschlüsselung bietet mehrere Vorteile:
+Die Dienstverschlüsselung bietet mehrere Vorteile:
 
-- Bietet eine zusätzliche Schutzebene auf BitLocker.
+- Bietet eine zusätzliche Schutzebene über BitLocker.
 
-- Ermöglicht die Trennung von Administratoren des Windows-Betriebssystems vom Zugriff auf Anwendungsdaten, die vom Betriebssystem gespeichert oder verarbeitet werden.
+- Ermöglicht die Trennung von Windows-Betriebssystemadministratoren vom Zugriff auf Vom Betriebssystem gespeicherte oder verarbeitete Anwendungsdaten.
 
-- Enthält eine Option für Kundenschlüssel, mit der mehrere mandantenfähige Dienste für eine mandantenorientierte Schlüsselverwaltung bereitstellen können.
+- Enthält eine Kundenschlüsseloption, die es mehr mandantendienstigen Diensten ermöglicht, die Schlüsselverwaltung pro Mandant zu ermöglichen.
 
-- Verbessert die Fähigkeit von Microsoft 365, die Anforderungen von Kunden zu erfüllen, die bestimmte Compliance-Anforderungen hinsichtlich der Verschlüsselung haben.
+- Verbessert die Fähigkeit von Microsoft 365, die Anforderungen von Kunden zu erfüllen, die bestimmte Complianceanforderungen hinsichtlich verschlüsselung haben.
 
-Mit dem Kundenschlüssel können Sie eigene kryptografische Schlüssel generieren, indem Sie entweder ein lokales Hardware-Service Modul (HSM) oder ein Azure Key Vault (AKV) verwenden. Unabhängig davon, wie Sie den Schlüssel generieren, verwenden Sie AKV, um die von Office 365 verwendeten kryptografischen Schlüssel zu steuern und zu verwalten. Nachdem Ihre Schlüssel in AKV gespeichert wurden, können Sie als Stamm einer der keychains verwendet werden, die ihre Postfachdaten oder-Dateien verschlüsseln.
+Mithilfe von Customer Key können Sie eigene Kryptografieschlüssel mithilfe eines lokalen Hardwaredienstmoduls (Hardware Service Module, HSM) oder Azure Key Vault (AKV) generieren. Unabhängig davon, wie Sie den Schlüssel generieren, verwenden Sie AKV zum Steuern und Verwalten der kryptografischen Schlüssel, die von Office 365 verwendet werden. Nachdem Ihre Schlüssel in AKV gespeichert wurden, können sie als Stamm einer der Schlüsselbunde verwendet werden, die Ihre Postfachdaten oder -dateien verschlüsselt.
 
-Ein weiterer Vorteil von Customer Key ist die Kontrolle, die Sie über die Fähigkeit von Microsoft haben, Ihre Daten zu verarbeiten. Wenn Sie Daten aus Office 365 entfernen möchten, beispielsweise wenn Sie den Dienst mit Microsoft beenden oder einen Teil der in der Cloud gespeicherten Daten entfernen möchten, können Sie dies tun und den Kundenschlüssel als technische Steuerung verwenden. Durch das Entfernen von Daten wird sichergestellt, dass niemand, einschließlich Microsoft, auf die Daten zugreifen oder diese verarbeiten kann. Kundenschlüssel wird zusätzlich zu den Kunden-Lockbox ergänzt, die Sie zum Steuern des Zugriffs auf Ihre Daten durch Microsoft-Mitarbeiter verwenden.
+Ein weiterer Vorteil von Customer Key ist die Kontrolle über die Fähigkeit von Microsoft, Ihre Daten zu verarbeiten. Wenn Sie Daten aus Office 365 entfernen möchten, z. B. wenn Sie den Dienst bei Microsoft beenden oder einen Teil Ihrer in der Cloud gespeicherten Daten entfernen möchten, können Sie dies tun und Customer Key als technische Steuerung verwenden. Durch das Entfernen von Daten wird sichergestellt, dass niemand, einschließlich Microsoft, auf die Daten zugreifen oder diese verarbeiten kann. Customer Key ist zusätzlich und ergänzt die Kunden-Lockbox, die Sie verwenden, um den Zugriff auf Ihre Daten durch Microsoft-Mitarbeiter zu steuern.
 
-Informationen zum Einrichten des Kunden Schlüssels für Microsoft 365 für Exchange Online, Skype for Business, SharePoint Online, einschließlich Team Websites und OneDrive für Unternehmen, finden Sie in den folgenden Artikeln:
+Informationen zum Einrichten von Customer Key für Microsoft 365 für Exchange Online, Microsoft Teams, SharePoint Online, einschließlich Teamwebsites und OneDrive for Business, finden Sie in den folgenden Artikeln:
 
 - [Dienstverschlüsselung mit Kundenschlüssel](customer-key-overview.md)
 
-- [Einrichten des Kunden Schlüssels](customer-key-set-up.md)
+- [Einrichten des Kundenschlüssels](customer-key-set-up.md)
 
-- [Verwalten des Kunden Schlüssels](customer-key-manage.md)
+- [Verwalten von Kundenschlüsseln](customer-key-manage.md)
 
-- [Rollen oder Drehen eines Kunden Schlüssels oder eines Verfügbarkeits Schlüssels](customer-key-availability-key-roll.md)
+- [Rollen oder Drehen eines Kundenschlüssels oder eines Verfügbarkeitsschlüssels](customer-key-availability-key-roll.md)
 
-- [Grundlegendes zum Verfügbarkeits Schlüssel](customer-key-availability-key-understand.md)
-
+- [Verstehen des Verfügbarkeitsschlüssels](customer-key-availability-key-understand.md)

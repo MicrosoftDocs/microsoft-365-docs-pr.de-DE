@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 8a4fb7da33a9f689b13a516b7a3066c492bd7de9
-ms.sourcegitcommit: ddbc6f8ebadf2f8149dff910b743535cbc3fa3c8
+ms.openlocfilehash: 953dc90a7e4e09cb75e45347b30dd6b409754bd0
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "49992490"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055549"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Darstellungen zu Microsoft 365-Produktivitätslösungen
 
@@ -29,7 +29,7 @@ Die logische Architektur von Produktivitätsdiensten in Microsoft 365, beginnend
 
 | Element | Beschreibung |
 |:-----|:-----|
-|[![Poster zur logischen Architektur von Teams](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Aktualisiert: Januar 2021   |Microsoft bietet eine Reihe von Produktivitätsdiensten für die Zusammenarbeit in den Bereichen Datengovernance, Sicherheit und Compliancefunktionen. <br/> <br/>Diese Illustrationen geben einen Einblick in die logische Architektur der Produktivitätsdienste für Enterprise Architekten, beginnend mit Microsoft Teams.|
+|[![Poster zur logischen Architektur von Teams](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Aktualisiert: Januar 2021   |Microsoft bietet eine Reihe von Produktivitätsdiensten für die Zusammenarbeit in den Bereichen Datengovernance, Sicherheit und Compliancefunktionen. <br/> <br/>Diese Illustrationen geben einen Einblick in die logische Architektur der Produktivitätsdienste für Enterprise Architekten, beginnend mit Microsoft Teams.|
 
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>Gruppen in Microsoft 365 für IT-Architekten
@@ -43,12 +43,12 @@ Was IT-Architekten über Gruppen in Microsoft 365 wissen müssen
 
 Microsoft 365 umfasst ein breites Spektrum an Funktionen für Informationsschutz und Compliance. Zusammen mit den Produktivitätstools von Microsoft sollen diese Funktionen Organisationen bei der Zusammenarbeit in Echtzeit helfen und gleichzeitig strenge gesetzliche Complianceframeworks einhalten. 
 
-Diese Abbildung verwendet eine der am stärksten regulierten Branchen, Finanzdienstleistungen, um zu veranschaulichen, wie diese Funktionen zur Einhaltung gängiger gesetzlicher Vorschriften angewendet werden können. Sie können diese Abbildungen für Ihre eigene Verwendung anpassen. 
+Diese Abbildung verwendet eine der am stärksten regulierten Branchen, Finanzdienstleistungen, um zu veranschaulichen, wie diese Funktionen zur Einhaltung gängiger gesetzlicher Vorschriften angewendet werden können. Sie können diese Illustrationen für Ihren eigenen Gebrauch anpassen. 
 
 
 | Element | Beschreibung |
 |:-----|:-----|
-|[![Modellposter: Microsoft 365-Funktionen für Informationsschutz und Compliance](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Englisch: [Download als](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \| [PDF-Download als Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Japanisch: [Als PDF als Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf) \| [herunterladen](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> Aktualisiert: November 2020|Umfasst: <ul><li>  Microsoft Information Protection und Verhinderung von Datenverlust</li><li>Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen </li><li>Informationsbarrieren</li><li>Kommunikationscompliance</li><li>Insiderrisiko</li><li>Erfassung von Drittanbieterdaten</li>|
+|[![Modellposter: Funktionen von Microsoft 365 Informationsschutz und Compliance](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Englisch: [Als PDF herunterladen](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Als Visio herunterladen](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japanische: [Als PDF herunterladen](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Als Visio herunterladen](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Aktualisiert: November 2020|Enthält: <ul><li>  Microsoft Information Protection und Verhinderung von Datenverlust</li><li>Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen </li><li>Informationsbarrieren</li><li>Kommunikationscompliance</li><li>Insider-Risiko</li><li>Datenerfassung durch Drittanbieter</li>|
 
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>Sicherheit und Datenschutz für Organisationen, die in mehreren Regionen agieren
@@ -84,7 +84,7 @@ Erweiterter eDiscovery-End-to-End-Workflow und -Datenfluss, einschließlich in M
 
 | Element | Beschreibung |
 |:-----|:-----|
-|[![Modellposter: Advanced eDiscovery Architecture in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Als Bild anzeigen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Als PDF herunterladen](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| [Als Visio herunterladen](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Aktualisiert: Oktober 2020|Umfasst: <ul><li>  End-to-End-Workflow in einer einzigen Umgebung</li><li>End-to-End-Workflow in einer Microsoft 365 Multi-Geo-Umgebung </li><li>End-to-End-Datenfluss, der den EDRM-Workflow unterstützt</li> |
+|[![Modellposter: Advanced eDiscovery Architecture in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Als Bild anzeigen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Als PDF herunterladen](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| [Als Visio herunterladen](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Aktualisiert: Oktober 2020|Enthält: <ul><li>  End-to-End-Workflow in einer einzelnen Umgebung</li><li>End-to-End-Workflow in einer Microsoft 365 Multi-Geo-Umgebung </li><li>End-to-End-Datenfluss, der den EDRM-Workflow unterstützt</li> |
   
 <!--
 
@@ -137,7 +137,7 @@ Mit Microsoft 365 und anderen Cloudtechnologien von Microsoft können Sie Ihren 
 
 [![Poster "Fördern von Remotemitarbeitern"](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf) <br/>
 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf)  |  [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) <br>
-Aktualisiert: Juli 2020
+Aktualisiert im Juli 2020
 
 Weitere Informationen finden Sie im Artikel zu diesem Poster: [Unterstützen von Remotemitarbeitern mit Microsoft 365](empower-people-to-work-remotely.md).
 

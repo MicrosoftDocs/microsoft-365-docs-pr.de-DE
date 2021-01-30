@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d7c2ccb12cb096359e558af9e1b4a962a9130be5
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: aba0a6ab2c82c038eda8e66890c0c95303dea947
+ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929634"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50053835"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Expertenschulungen zur erweiterten Suche erhalten
 
@@ -40,13 +40,21 @@ Steigern Sie Ihr Wissen über die erweiterte Suche schnell mit _tracking the adv
 
 | Titel | Beschreibung | Uhr | Abfragen | 
 |--|--|--|--|
-| Teil 1: Grundlagen zu KQL | In dieser Folge werden die Grundlagen der erweiterten Suche in Microsoft 365 Defender behandelt. Erfahren Sie mehr über die verfügbaren Daten zur erweiterten Suche sowie grundlegende #A0 und -Operatoren. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [DATEI "CSL"](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
-| Teil 2: Beitritte | Erfahren Sie mehr über Daten bei der erweiterten Suche und das Verbinden von Tabellen. Erfahren Sie mehr über , und Verknüpfungen, und verstehen Sie die Nuancen der `inner` `outer` `unique` `semi` standardmäßigen `innerunique` Kusto-Verknüpfung. | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [DATEI "CSL"](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
-| Teil 3: Zusammenfassung, Pivotieren und Visualisieren von Daten | Nachdem Sie nun gelernt haben, Daten zu filtern, zu bearbeiten und zusammenzufassen, zu quantifizieren, zu pivotieren und zu visualisieren, ist es an der Zeit, Daten zusammenzufassen, zu quantifizieren, zu pivotieren und zu visualisieren. In diesem Abschnitt werden der `summarize` Operator und verschiedene Berechnungen erläutert, während zusätzliche Tabellen in das Schema eingeführt werden. Außerdem lernen Sie, Datasets in Diagramme zu verwandeln, die Ihnen beim Extrahieren von Einblicken helfen können. | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [CSL-Datei](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
-| Teil 4: Lassen Sie uns die Suche beginnen! Anwenden von KQL auf die Vorfallverfolgung | In dieser Folge lernen Sie, einige Angreiferaktivitäten nachverfolgt zu haben. Wir verwenden unser verbessertes Verständnis von Kusto und der erweiterten Suche, um einen Angriff nachverfolgt zu werden. Lernen Sie die tatsächlichen Tricks kennen, die in diesem Bereich verwendet werden, einschließlich der AbCs der Cybersicherheit und wie Sie sie auf die Reaktion auf Vorfälle anwenden. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [CSL-Datei](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)
+| Teil 1: Grundlagen zu KQL | In dieser Folge werden die Grundlagen der erweiterten Suche in Microsoft 365 Defender behandelt. Erfahren Sie mehr über die verfügbaren Daten zur erweiterten Suche sowie grundlegende #A0 und -Operatoren. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [CSL-Datei](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
+| Teil 2: Beitritte | Erfahren Sie mehr über Daten bei der erweiterten Suche und das Verbinden von Tabellen. Erfahren Sie mehr über , und Verknüpfungen, und verstehen Sie die Nuancen der `inner` `outer` `unique` `semi` standardmäßigen `innerunique` Kusto-Verknüpfung. | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [CSL-Datei](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
+| Teil 3: Zusammenfassung, Pivotieren und Visualisieren von Daten | Nachdem Sie nun gelernt haben, Daten zu filtern, zu bearbeiten und zusammenzufassen, zu quantifizieren, zu pivotieren und zu visualisieren, ist es an der Zeit, Daten zusammenzufassen, zu quantifizieren, zu pivotieren und zu visualisieren. In diesem Teil werden der `summarize` Operator und verschiedene Berechnungen erläutert, während zusätzliche Tabellen in das Schema eingeführt werden. Außerdem lernen Sie, Datasets in Diagramme zu verwandeln, die Ihnen beim Extrahieren von Einblicken helfen können. | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [DATEI "CSL"](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
+| Teil 4: Lassen Sie uns die Suche beginnen! Anwenden von KQL auf die Vorfallverfolgung | In dieser Folge lernen Sie, einige Angreiferaktivitäten nachverfolgt zu haben. Wir verwenden unser verbessertes Verständnis von Kusto und der erweiterten Suche, um einen Angriff nachverfolgt zu werden. Lernen Sie die tatsächlichen Tricks kennen, die in diesem Bereich verwendet werden, einschließlich der AbCs der Cybersicherheit und wie Sie sie auf die Reaktion auf Vorfälle anwenden. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [DATEI "CSL"](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl) 
 
-## <a name="how-to-use-the-csl-file"></a>Verwenden der CSL-Datei
-Bevor Sie eine Folge starten, greifen Sie auf gitHub auf die entsprechende [Kusto-CSL-Datei](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/tree/master/Webcasts/TrackingTheAdversary) zu, und kopieren Sie den Inhalt in den Abfrageeditor für die erweiterte Suche. Während Sie sich eine Folge ansehen, können Sie die kopierten Inhalte verwenden, um dem Sprecher zu folgen und Abfragen ausführen. 
+
+Erhalten Sie weitere Expertenschulungen mit *L33TSP3AK: Erweiterte Suche in Microsoft 365 Defender,* einer Webcastreihe für Analysten, die ihr technisches Wissen und ihre praktischen Fähigkeiten bei der Durchführung von Sicherheitsuntersuchungen mithilfe der erweiterten Suche in Microsoft 365 Defender erweitern wollen. 
+
+| Titel | Beschreibung | Uhr | Abfragen | 
+|--|--|--|--|
+| Teil 1  | In dieser Folge lernen Sie unterschiedliche bewährte Methoden für die Ausführung erweiterter Suchabfragen. Zu den behandelten Themen gehören: Optimieren Ihrer Abfragen, Verwenden der erweiterten Suche nach Ransomware, Behandeln von JSON als dynamischen Typ und Arbeiten mit externen Datenoperatoren. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [DATEI "CSL"](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.csl)
+
+
+## <a name="how-to-use-the-csl-file"></a>So verwenden Sie die CSL-Datei
+Bevor Sie eine Folge starten, greifen Sie auf die entsprechende [Kusto-CSL-Datei auf GitHub](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/tree/master/Webcasts/TrackingTheAdversary) zu, und kopieren Sie den Inhalt in den Abfrageeditor für die erweiterte Suche. Während Sie sich eine Folge ansehen, können Sie die kopierten Inhalte verwenden, um dem Sprecher zu folgen und Abfragen ausführen. 
 
 Der folgende Auszug aus einer CSL-Datei zeigt einen umfassenden Satz von Anleitungen, die als Kommentare mit gekennzeichnet `//` sind.
 
