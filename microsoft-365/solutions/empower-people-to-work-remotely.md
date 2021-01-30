@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: Vergewissern Sie sich, dass Sie alle Features in Microsoft 365 aktiviert haben, um die Produktivität der Remotearbeitskraft zu maximieren und den sicheren Zugriff auf Ihre Server, Daten und die Cloud aufrechtzuerhalten.
-ms.openlocfilehash: c6f17f2a80fa37abe43ceabc7a06c86c80eeadbd
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: aa72ba0c47acdd507bf86a082c9b4c2a87e3f1ef
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616356"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055519"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Fördern von Remotemitarbeitern mit Microsoft 365
 
@@ -37,11 +37,16 @@ Microsoft 365 bietet die Möglichkeit, Ihre Mitarbeiter zu befähigen, Remote zu
 
 ![Fördern Ihrer Remotemitarbeiter mit Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
+>[!Note]
+>Wenn Sie neu bei Microsoft 365 sind, sehen Sie sich [diese Ressourcen](https://www.microsoft.com/microsoft-365) an.
+>
+
 Schauen Sie sich dieses Video an, um einen Überblick über den Bereitstellungsprozess zu erhalten.
+<br>
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
-Diese Lösung bietet die folgenden Hauptfunktionen.
+Für IT-Experten, die Onsite- und cloudbasierte Infrastrukturen verwalten, um die Produktivität der Mitarbeiter zu steigern, bietet diese Lösung folgende wichtigen Funktionen:
 
 - Verbunden
 

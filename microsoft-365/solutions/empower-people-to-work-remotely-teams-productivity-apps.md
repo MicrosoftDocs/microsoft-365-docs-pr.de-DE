@@ -17,21 +17,24 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Ermöglichen Sie es Ihren Benutzern, mit Teams, Exchange, SharePoint und anderen Microsoft 365-Diensten produktiv zu arbeiten.
-ms.openlocfilehash: 57e862769533b8c076513874e7f6daafdbe836da
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: ce19085a358861238e9a7cd4d650246d08fd272d
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681408"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055491"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Schritt 5: Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter
 
 Um produktiv zu sein, müssen die Mitarbeiter miteinander kommunizieren und zusammenarbeiten. Sie müssen sich treffen, per Sprach- und Textnachricht chatten, neue Inhalte erstellen und Informationen und Dateien gemeinsam nutzen, E-Mails austauschen und Kalender und Aufgaben verwalten. Microsoft 365 bietet Cloud-basierte Dienste für alle diese wichtigen Funktionen:
 
-- Verwenden Sie Microsoft Teams, das einen gemeinsamen Kommunikationsknotenpunkt für Besprechungen, Chats und die Speicherung von Dateien für die Organisation, für die Abteilungen und für kleine Teams und Einzelpersonen bietet, damit die Benutzer in Verbindung bleiben, obwohl sie getrennt arbeiten. 
-- Verwenden Sie zum Austauschen von E-Mails und Verwalten von Kalendern, Kontakten und Aufgaben Exchange Online und den Outlook-Client.
-- Verwenden Sie zum Speichern und Zusammenarbeiten an Dateien SharePoint und OneDrive. Diese können Sie innerhalb eines Webbrowsers oder in Teams verwenden.
-- Für das Erstellen neuer Inhalte oder die Zusammenarbeit an vorhandenen Inhalten sind die Microsoft 365-Apps Versionen von Word, PowerPoint, Excel und Outlook, die auf Ihrem lokalen Computer installiert sind und die laufenden Feature- und Sicherheitsupdates erhalten.
+| IT-Funktion | Komponenten von Microsoft 365 | Beschreibung |
+|:-------|:-----|:-------|
+| E-Mail-Dienste | Exchange Online | E-Mail-Austausch und Verwalten von Kalendern, Kontakten und Aufgaben mit dem Outlook-Client. |
+| Unternehmens-Chat, VoIP (Voice over IP) und teambasierte Zusammenarbeit | Microsoft Teams | Gemeinsamer Kommunikationsknotenpunkt für Besprechungen, Chats und die Speicherung von Dateien für die Organisation, für Abteilungen sowie für kleine Teams und Einzelpersonen, damit die Benutzer in Verbindung bleiben, obwohl sie getrennt arbeiten. |
+| Intranetwebsites, Zusammenarbeit an Dokumenten | SharePoint und OneDrive | Speichern von und Zusammenarbeiten an Dateien in einem Webbrowser oder in Teams. |
+| Office-Anwendungen für Desktop- und mobile Geräte | Microsoft 365 Apps | Erstellen neuer Inhalte oder Zusammenarbeit an vorhandenen Inhalten mit Versionen von Word, PowerPoint, Excel und Outlook, die auf Ihrem lokalen Computer installiert sind und die laufenden Feature- und Sicherheitsupdates erhalten. |
+||||
 
 ![Verwenden von Teams, Outlook, SharePoint, OneDrive und Microsoft 365-Apps, um produktiv zu bleiben](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 
