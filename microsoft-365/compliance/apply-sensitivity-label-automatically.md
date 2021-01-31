@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch Dateien und E-Mails zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 40cb270ee7084b50ed9ef58b9598f16e76dffa36
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 190b06a719775fbbf14c94a4fd817d3242a95e6c
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929491"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044745"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -138,7 +138,7 @@ Darüber hinaus können Sie, ähnlich wie bei der Konfiguration der DLP-Richtlin
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Konfigurieren von trainierbaren Klassifizierungen für eine Bezeichnung
 
-Diese Option befindet zurzeit in der Vorschau.
+Diese Option befindet zurzeit in der Vorschau. Wenn Sie diese Option verwenden, stellen Sie sicher, dass Sie in Ihrem Mandanten mindestens eine andere Vertraulichkeitsbezeichnung veröffentlicht haben, die für die automatische Bezeichnung und die [Option "Vertrauliche Informationstypen"](#configuring-sensitive-info-types-for-a-label) konfiguriert ist.
 
 Wenn Sie die Option **Trainierbare Klassifizierungen** auswählen, wählen Sie eine oder mehrere der integrierten trainierbaren Klassifizierungen von Microsoft aus. Wenn Sie eigene benutzerdefinierte trainierbare Klassifizierungen erstellt haben, können Sie diese auch auswählen:
 

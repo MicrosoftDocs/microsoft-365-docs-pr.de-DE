@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Erfahren Sie, wie Sie Compliance Manager im Microsoft-Vertrauens-Portal verwenden, um den Datenschutz und die gesetzlichen Vorschriften zu erfüllen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac0cd758717161e3b5cf727dd478d1e06f0d6375
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: f527aae2d36e392ecd646d48263a01b20a0785e8
+ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682808"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50050399"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft Compliance-Manager (klassisch)
 
 > [!IMPORTANT]
-> **Compliance Manager ist jetzt allgemein im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) verfügbar. Wir empfehlen Kunden dringend, den Compliance Manager (klassisch) nicht mehr zu verwenden und zum neuen Compliance Manager zu wechseln, um von dessen reichhaltiger Benutzererfahrung und aktualisierter Kontrollzuordnung zu profitieren. Bitte lesen Sie unsere [Compliance Manager-Dokumentation](compliance-manager.md), um den neuen Compliance Manager im Microsoft 365 Compliance Center einzurichten und zu verwenden.**
+> **Der Compliance-Manager (klassisch) wird bald aus dem Microsoft Service Trust-Portal entfernt.** Wir empfehlen Ihnen, zum neuen [Compliance-Manager im Microsoft 365 Compliance Center](https://compliance.microsoft.com/) zu wechseln, der eine verbesserte Benutzerfreundlichkeit und eine aktualisierte Steuerelementzuordnung bietet. Kunden, die über Bewertungen der klassischen Version verfügen, müssen im neuen Compliance-Manager neue Bewertungen erstellen. Vorhandene Daten, einschließlich Ihrer Bewertungen, Kontrollmechanismen und anderer Daten, werden nicht zum neuen Compliance-Manager übertragen. [Weitere Informationen zum Übergang](compliance-manager-faq.md#whats-happening-to-compliance-manager-classic-in-the-service-trust-portal).
 
 *Der Compliance-Manager ist nicht in Office 365, betrieben von 21Vianet, Office 365 Deutschland, Office 365 US Government Community High (GCC) High oder Office 365 Department of Defense verfügbar.*
 
