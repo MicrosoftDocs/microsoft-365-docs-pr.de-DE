@@ -22,12 +22,12 @@ description: Verwenden Sie Vertraulichkeitsbezeichnungen aus dem Microsoft Infor
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2a4b66de9996ec0ea7047ca44ae3750a917c4cc2
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 2e334e57b84bea7985983527e600be731e4de20c
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921679"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058518"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informationen zu Vertraulichkeitsbezeichnungen
 
@@ -42,6 +42,11 @@ Hier ein Beispiel zur Anzeige verfügbarer Vertraulichkeitsbezeichnungen aus der
 ![Vertraulichkeitsbezeichnung auf dem Excel-Menüband und in der Statusleiste](../media/Sensitivity-label-in-Excel.png)
 
 Um Vertraulichkeitsbezeichnungen anwenden zu können müssen die Benutzer mit ihrem Microsoft 365-Geschäfts-, -Schul- oder -Unikonto angemeldet sein.
+
+> [!NOTE]
+> Vertraulichkeitsbezeichnungen werden neu für Mandanten der US-Regierung (GCC und GCC-H) unterstützt. Weitere Informationen finden Sie in den Anmerkungen zu dieser Version von Microsoft 365 Apps for Enterprise, [Version 2101: 26. Januar](https://docs.microsoft.com/officeupdates/current-channel#version-2101-january-26).
+>
+> Informationen zum Azure Information Protection-Client und -Scanner mit einheitlichen Bezeichnungen finden Sie unter [Azure Information Protection Premium – Dienstbeschreibung für Behörden](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
 Sie können Vertraulichkeitsbezeichnungen zu Folgendem verwenden:
   
@@ -195,7 +200,7 @@ Wenn Sie eine Kennzeichnungsrichtlinie konfigurieren, können Sie:
 
     ![Links zu weiteren Informationen auf der Schaltfläche „Vertraulichkeit“ im Menüband](../media/Sensitivity-label-learn-more.png)
 
-Nachdem Sie eine Bezeichnungsrichtlinie erstellt haben, die Benutzern und Gruppen neue Vertraulichkeitsbezeichnungen zuweist, sehen die Benutzer diese Bezeichnungen innerhalb von 30 Minuten in ihren Office-Apps. Erlauben Sie jedoch bis zu 24 Stunden für diese Bezeichnungsänderungen. 
+Nachdem Sie eine Bezeichnungsrichtlinie erstellt haben, die Benutzern und Gruppen neue Vertraulichkeitsbezeichnungen zuweist, sehen die Benutzer diese Bezeichnungen in ihren Office-Apps. Erlauben Sie bis zu 24 Stunden, bis die neuesten Änderungen in Ihrer gesamten Organisation repliziert wurden.
 
 Es gibt keine Beschränkung für die Anzahl der Vertraulichkeitsbezeichnungen, die Sie erstellen und veröffentlichen können, mit einer Ausnahme: Wenn bei der die Bezeichnung Verschlüsselung angewendet wird, gibt es maximal 500 Bezeichnungen, die Sie erstellen können. Allerdings gilt als bewährte Methode, um den Verwaltungsaufwand für die Administratoren und die Komplexität für die Benutzer zu verringern, die Anzahl der Bezeichnungen möglichst gering zu halten. Praxisnahe Bereitstellungen haben sich als weit weniger effektiv erwiesen, wenn Benutzer mehr als fünf Hauptbezeichnungen oder mehr als fünf Unterbezeichnungen pro Hauptbezeichnung zuordnen.
 
