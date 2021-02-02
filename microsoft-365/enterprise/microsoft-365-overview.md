@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/15/2019
+ms.date: 02/01/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Bietet eine Einführung in die Komponenten, Pläne und Bereitstellungspfade für Microsoft 365 Enterprise.
-ms.openlocfilehash: 0916fa97daec166a7bae8b19e3c9efbd693f4874
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 324e5166dd722f9fcd682db7e536a4b864365025
+ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846964"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50068973"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Übersicht über Microsoft 365 Enterprise
 
@@ -85,7 +85,7 @@ Dieses zweiseitige Poster bietet eine schnelle Methode, um Ihre vorhandene Infra
 
 [Windows 7](https://aka.ms/win7upgrade) erreichte am **14. Januar 2020** das Ende des Supports.
 
-Der Support für diese Produkte endete am **13. Oktober 2020** :
+Der Support für diese Produkte endete am **13. Oktober 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
@@ -131,6 +131,24 @@ Ein Beispiel dafür, wie eine fiktive, aber repräsentative multinationale Organ
 - [Microsoft 365 Government](https://www.microsoft.com/microsoft-365/government)
 
   Ermöglichen Sie den Mitarbeitern des öffentlichen Sektors der Vereinigten Staaten eine sichere Zusammenarbeit.
+
+## <a name="best-together-with-surface-and-the-edge-browser"></a>Optimale Kombination mit Surface und dem Microsoft Edge-Browser
+
+Optimieren Sie die integrierte und sichere Produktivität Ihrer Benutzer mit der besten Kombination aus Microsoft 365 Enterprise, Microsoft Surface-Geräten und dem Microsoft Edge-Browser. Diese produktübergreifende Integration bietet:
+
+- Eine allgemeine Infrastruktur für Identitäts- und Anmeldesicherheit.
+- Integrierte lokale und Cloud-Apps für Suche, Zusammenarbeit, Produktivität und Compliance.
+- Umfassende und integrierte Sicherheit für Hardware, Browser, lokale Apps und Cloud-Apps.
+- Eine allgemeine Infrastruktur für die IT-Verwaltung von Installationen und Updates.
+
+Nachfolgend finden Sie ein Beispiel für eine Unternehmensorganisation.
+
+![Eine Unternehmensorganisation mit Microsoft 365, Surface-Geräten und dem Microsoft Edge-Browser](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
+
+Weitere Informationen und Konfigurationsbeispiele für kleine und mittelgroße Unternehmen sowie Bildungseinrichtungen erhalten Sie, indem Sie das [Poster „Optimale Kombination“](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf) herunterladen.
+
+[![Abbildung des Posters „Optimale Kombination mit Surface und dem Microsoft Edge-Browser“](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
+
 
 ## <a name="microsoft-365-training"></a>Microsoft 365-Schulung
 
