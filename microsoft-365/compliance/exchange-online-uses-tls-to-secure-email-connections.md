@@ -18,24 +18,24 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Erfahren Sie, wie Exchange Online und Microsoft 365 TLS (Transport Layer Security) und Forward Secrecy (FS) zum Sichern der E-Mail-Kommunikation verwenden. Außerdem erhalten Sie Informationen zu dem Zertifikat, das von Microsoft für Exchange Online ausgestellt wurde.
-ms.openlocfilehash: 507a152130113868293d8d08441f298e5f5ae512
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 67be87bc07399af9469728383af1caf604bf1372
+ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058458"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50066828"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Wie Exchange Online mithilfe von TLS E-Mail-Verbindungen schützt
 
 Erfahren Sie, wie Exchange Online und Microsoft 365 TLS (Transport Layer Security) und Forward Secrecy (FS) zum Sichern der E-Mail-Kommunikation verwenden. Bietet außerdem Informationen über das von Microsoft für Exchange Online ausgestellte Zertifikat.
   
-## <a name="tls-basics-for-microsoft-365-and-exchange-online"></a>Grundlagen zu TLS für Microsoft 365 und Exchange Online
+## <a name="tls-basics-for-microsoft-365-and-exchange-online"></a>Grundlegendes zu TLS für Microsoft 365 und Exchange Online
 
-Transport Layer Security (TLS) und SSL, das vor TLS vorhanden war, sind kryptografische Protokolle, die die Kommunikation über ein Netzwerk sichern, indem Sicherheitszertifikate zum Verschlüsseln einer Verbindung zwischen Computern verwendet werden. TLS ersetzt Secure Sockets Layer (SSL) und wird häufig als SSL 3.1 bezeichnet. Für Exchange Online verwenden wir TLS zum Verschlüsseln der Verbindungen zwischen unseren Exchange-Servern und den Verbindungen zwischen unseren Exchange-Servern und anderen Servern, z. B. Ihren lokalen Exchange-Servern oder den E-Mail-Servern Ihrer Empfänger. Nachdem die Verbindung verschlüsselt ist, werden alle über diese Verbindung gesendeten Daten über den verschlüsselten Kanal gesendet. Wenn Sie eine Nachricht weiterleiten, die über eine TLS-verschlüsselte Verbindung gesendet wurde, ist diese Nachricht nicht unbedingt verschlüsselt. Dies liegt daran, dass TLS die Nachricht nicht verschlüsselt, sondern nur die Verbindung.
+Transport Layer Security (TLS) und SSL, das vor TLS vorhanden war, sind kryptografische Protokolle, die die Kommunikation über ein Netzwerk sichern, indem Sicherheitszertifikate zum Verschlüsseln einer Verbindung zwischen Computern verwendet werden. TLS ersetzt Secure Sockets Layer (SSL) und wird häufig als SSL 3.1 bezeichnet. Für Exchange Online verwenden wir TLS zum Verschlüsseln der Verbindungen zwischen unseren Exchange-Servern und den Verbindungen zwischen unseren Exchange-Servern und anderen Servern, z. B. Ihren lokalen Exchange-Servern oder den E-Mail-Servern Ihrer Empfänger. Nachdem die Verbindung verschlüsselt ist, werden alle über diese Verbindung gesendeten Daten über den verschlüsselten Kanal gesendet. Wenn Sie eine Nachricht weiterleiten, die über eine TLS-verschlüsselte Verbindung gesendet wurde, ist diese Nachricht nicht unbedingt verschlüsselt. Der Grund dafür ist, dass TLS die Nachricht nicht verschlüsselt, sondern nur die Verbindung.
   
 Wenn Sie die Nachricht verschlüsseln möchten, müssen Sie eine Verschlüsselungstechnologie verwenden, die den Nachrichteninhalt verschlüsselt, z. B. Office-Nachrichtenverschlüsselung. Unter [Email encryption in Office 365](email-encryption.md) und [Office 365 Message Encryption (OME)](ome.md) erhalten Sie weitere Informationen zu den Verschlüsselungsoptionen für Nachrichten in Office 365. 
   
-Es wird empfohlen, TLS in Situationen zu verwenden, in denen Sie einen sicheren Korrespondenzkanal zwischen Microsoft und Ihrer lokalen Organisation oder einer anderen Organisation einrichten möchten, z. B. einem Partner. Exchange Online versucht immer, TLS zuerst zum Sichern Ihrer E-Mails zu verwenden, dies ist jedoch nicht immer möglich, wenn die andere Seite keine Sicherheit für TLS bietet. Lesen Sie weiter, um herauszufinden, wie Sie alle E-Mails mithilfe von Connectors an Ihre lokalen Server oder wichtige Partner *sichern können.* 
+Es wird empfohlen, TLS in Situationen zu verwenden, in denen Sie einen sicheren Korrespondenzkanal zwischen Microsoft und Ihrer lokalen Organisation oder einer anderen Organisation einrichten möchten, z. B. einem Partner. Exchange Online versucht immer, TLS zuerst zum Sichern Ihrer E-Mails zu verwenden, dies ist jedoch nicht immer möglich, wenn die andere Partei keine Sicherheit für TLS bietet. Lesen Sie weiter, um herauszufinden, wie Sie alle E-Mails mithilfe von Connectors an Ihre lokalen Server oder wichtige Partner *sichern können.* 
 
 Um unseren Kunden die beste Verschlüsselung zu bieten, verfügt Microsoft über veraltete Transport Layer Security (TLS)-Versionen 1.0 und 1.1 in [Office 365](tls-1.0-and-1.1-deprecation-for-office-365.md) und [Office 365 GCC.](tls-1-2-in-office-365-gcc.md) Sie können jedoch weiterhin eine unverschlüsselte SMPT-Verbindung ohne TLS verwenden. Die E-Mail-Übertragung ohne Verschlüsselung wird nicht empfohlen.  
   
@@ -45,7 +45,7 @@ Exchange Online-Server verschlüsseln Verbindungen mit anderen Exchange Online-S
   
 ## <a name="how-microsoft-365-uses-tls-between-microsoft-365-and-external-trusted-partners"></a>So verwendet Microsoft 365 TLS zwischen Microsoft 365 und externen, vertrauenswürdigen Partnern
 
-Standardmäßig verwendet Exchange Online immer opportunistisches TLS. Dies bedeutet, dass Exchange Online immer versucht, Verbindungen mit der sichersten Version von TLS zuerst zu verschlüsseln, und arbeitet dann in der Liste der TLS-Verschlüsselungen, bis eine gefunden wird, auf die sich beide Parteien einigen können. Wenn Sie Exchange Online nicht so konfiguriert haben, dass Nachrichten an diesen Empfänger nur über sichere Verbindungen gesendet werden, wird die Nachricht standardmäßig unverschlüsselt gesendet, wenn die Empfängerorganisation die TLS-Verschlüsselung nicht unterstützt. Opportunistisches TLS ist für die meisten Unternehmen ausreichend. Für Unternehmen, die Complianceanforderungen haben, z. B. medizinische, Bank- oder Behördenorganisationen, können Sie Exchange Online jedoch so konfigurieren, dass TLS erforderlich oder erzwingen wird. Anweisungen finden Sie unter ["Konfigurieren des Nachrichtenflusses mithilfe von Connectors in Office 365".](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)
+Standardmäßig verwendet Exchange Online immer opportunistisches TLS. Dies bedeutet, dass Exchange Online immer versucht, Verbindungen mit der sichersten Version von TLS zuerst zu verschlüsseln, und arbeitet dann in der Liste der TLS-Verschlüsselungen, bis eine gefunden wird, auf die sich beide Seiten einigen können. Wenn Sie Exchange Online nicht so konfiguriert haben, dass Nachrichten an diesen Empfänger nur über sichere Verbindungen gesendet werden, wird die Nachricht standardmäßig unverschlüsselt gesendet, wenn die Empfängerorganisation die TLS-Verschlüsselung nicht unterstützt. Opportunistisches TLS ist für die meisten Unternehmen ausreichend. Für Unternehmen, die Complianceanforderungen haben, z. B. medizinische, Bank- oder Behördenorganisationen, können Sie Exchange Online jedoch so konfigurieren, dass TLS erforderlich oder erzwingen wird. Anweisungen finden Sie unter ["Konfigurieren des Nachrichtenflusses mithilfe von Connectors in Office 365".](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)
   
 Wenn Sie TLS zwischen Ihrer Organisation und einer vertrauenswürdigen Partnerorganisation konfigurieren möchten, kann Exchange Online die erzwungene TLS verwenden, um vertrauenswürdige Kommunikationskanäle zu erstellen. Bei der erzwungenen TLS ist es erforderlich, dass sich die Partnerorganisation bei Exchange Online mit einem Sicherheitszertifikat authentifiziert, sodass E-Mail-Nachrichten an Sie gesendet werden können. Ihr Partner muss seine eigenen Zertifikate verwalten, um dies zu tun. In Exchange Online verwenden wir Connectors, um Nachrichten zu schützen, die Sie vor unbefugtem Zugriff senden, bevor sie beim E-Mail-Anbieter des Empfängers ankommen. Informationen zur Verwendung von Connectors zum Konfigurieren des Nachrichtenflusses finden Sie unter "Konfigurieren des [Nachrichtenflusses mithilfe von Connectors in Office 365".](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)
   
@@ -63,7 +63,7 @@ Die von Exchange Online verwendeten Zertifikatinformationen werden in der folgen
   
  **Aktuelle Zertifikatinformationen, gültig ab dem 3. September 2018**
   
-|**Attribut**|**Wert**|
+| Attribut | Wert |
 |:-----|:-----|
 |Aussteller des Stammzertifikats der Zertifizierungsstelle  <br/> |GlobalSign-Stammzertifizierungsstelle – R1 <br/> |
 |Name des Zertifikats  <br/> |mail.protection.outlook.com  <br/> |
@@ -77,7 +77,7 @@ Um einen reibungslosen Übergang sicherzustellen, stellen wir die alten Zertifik
   
 ****
 
-|**Attribut**|**Wert**|
+| Attribut | Wert |
 |:-----|:-----|
 |Aussteller des Stammzertifikats der Zertifizierungsstelle  <br/> |Baltimore CyberTrust Root  <br/> |
 |Name des Zertifikats  <br/> |mail.protection.outlook.com  <br/> |
@@ -89,19 +89,22 @@ Um einen reibungslosen Übergang sicherzustellen, stellen wir die alten Zertifik
 
 Das neue Zertifikat wird von einer anderen Zertifizierungsstelle (CA) ausgestellt als das vorherige von Exchange Online verwendete Zertifikat. Aus diesem Grund müssen Sie möglicherweise einige Aktionen ausführen, um das neue Zertifikat zu verwenden.
 
-Das neue Zertifikat erfordert eine Verbindung mit den Endpunkten der neuen Zertifizierungsstelle als Teil der Zertifikats-Validierung. Wenn dies nicht der Fehler ist, kann dies zu negativen Auswirkungen auf den E-Mail-Fluss führen. Wenn Sie Ihre E-Mail-Server mit Firewalls schützen, mit denen die E-Mail-Server nur eine Verbindung mit bestimmten Zielen herstellen können, müssen Sie überprüfen, ob der Server das neue Zertifikat überprüfen kann. Führen Sie die folgenden Schritte aus, um zu bestätigen, dass der Server das neue Zertifikat verwenden kann:
+Das neue Zertifikat erfordert eine Verbindung mit den Endpunkten der neuen Zertifizierungsstelle als Teil der Validierung des Zertifikats. Wenn dies nicht der Fehler ist, kann dies zu negativen Auswirkungen auf den E-Mail-Fluss führen. Wenn Sie Ihre E-Mail-Server mit Firewalls schützen, mit denen die E-Mail-Server nur eine Verbindung mit bestimmten Zielen herstellen können, müssen Sie überprüfen, ob der Server das neue Zertifikat überprüfen kann. Führen Sie die folgenden Schritte aus, um zu bestätigen, dass der Server das neue Zertifikat verwenden kann:
 
 1. Stellen Sie eine Verbindung mit Exchange Server lokalen Windows PowerShell, und führen Sie dann den folgenden Befehl aus:  
   `certutil -URL https://crl.globalsign.com/gsorganizationvalsha2g3.crl`
-2. Wählen Sie im angezeigten Fenster **"Abrufen" aus.**
-3. Wenn das Hilfsprogramm seine Überprüfung abgeschlossen hat, gibt es einen Status zurück. Wenn der Status **"OK"** angezeigt wird, kann ihr E-Mail-Server das neue Zertifikat erfolgreich überprüfen. Wenn dies nicht der Fehler ist, müssen Sie ermitteln, was zu einem Fehler der Verbindungen führt. Höchstwahrscheinlich müssen Sie die Einstellungen einer Firewall aktualisieren. Die vollständige Liste der Endpunkte, auf die zugegriffen werden muss, umfasst Folgendes:
+
+1. Wählen Sie im angezeigten Fenster **"Abrufen" aus.**
+
+1. Wenn das Hilfsprogramm seine Überprüfung abgeschlossen hat, gibt es einen Status zurück. Wenn der Status **"OK"** angezeigt wird, kann ihr E-Mail-Server das neue Zertifikat erfolgreich überprüfen. Wenn dies nicht der Fehler ist, müssen Sie ermitteln, was zu einem Fehler der Verbindungen führt. Höchstwahrscheinlich müssen Sie die Einstellungen einer Firewall aktualisieren. Die vollständige Liste der Endpunkte, auf die zugegriffen werden muss, umfasst Folgendes:
     - ocsp.globalsign.com
-     - crl.globalsign.com
-     - secure.globalsign.com   
+    - crl.globalsign.com
+    - secure.globalsign.com   
 
 In der Regel erhalten Sie updates für Ihre Stammzertifikate automatisch über Windows Update. Einige Bereitstellungen verfügen jedoch über zusätzliche Sicherheit, die verhindert, dass diese Updates automatisch ausgeführt werden. In diesen gesperrten Bereitstellungen, in denen Windows Update Stammzertifikate nicht automatisch aktualisieren kann, müssen Sie sicherstellen, dass das richtige Zertifikat der Stammzertifizierungsstelle installiert ist, indem Sie die folgenden Schritte ausführen:
 1.  Stellen Sie eine Verbindung mit Exchange Server lokalen Windows PowerShell, und führen Sie dann den folgenden Befehl aus:  
   `certmgr.msc`
+
 2. Vergewissern **Sie sich unter Vertrauenswürdige Stammzertifizierungsstelle/Zertifikate,** dass das neue Zertifikat aufgeführt ist.
 
 ## <a name="get-more-information-about-tls-and-microsoft-365"></a>Weitere Informationen zu TLS und Microsoft 365

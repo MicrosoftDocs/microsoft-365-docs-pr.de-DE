@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 80123674644b47c76becb92fa08c21f4668614b2
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: 284036fecf53252bb29878482dbf6dec42eeeaeb
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980057"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071260"
 ---
 # <a name="define-information-barrier-policies"></a>Definieren von Richtlinien für Informationsbarrieren
 
@@ -320,4 +320,6 @@ Wenn das Cmdlet abgeschlossen ist, erfüllt Contoso rechtliche und branchenkonfo
 ## <a name="resources"></a>Ressourcen
 
 - [Übersicht über Informationsbarrieren](information-barriers.md)
-- [Informationsbarrieren in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Weitere Informationen zu Informationsbarrieren in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [Weitere Informationen zu Informationsbarrieren in SharePoint Online](/sharepoint/information-barriers)
+- [Weitere Informationen zu Informationsbarrieren in OneDrive](/onedrive/information-barriers)

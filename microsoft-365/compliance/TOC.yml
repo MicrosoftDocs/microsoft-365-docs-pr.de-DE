@@ -152,8 +152,6 @@
           href: encryption-sensitivity-labels.md
         - name: Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
           href: apply-sensitivity-label-automatically.md
-        - name: Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen
-          href: label-analytics.md
         - name: 'Verwenden von Vertraulichkeitsbezeichnungen für Teams, Gruppen und Websites'
           href: sensitivity-labels-teams-groups-sites.md
         - name: Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/16/2020
+ms.date: 2/1/2021
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -17,23 +17,23 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Zeigen Sie eine vollständige Liste der Stammzertifikate und Zertifizierungsstelle (CAs) in Microsoft 365 an.
-ms.openlocfilehash: 96499cbf2eae554ecddc9bc7bcf622db2515f980
-ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
+ms.openlocfilehash: 3dd85ae9ec4e691c8b3dce03256e1afb1fcb6274
+ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905264"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50068930"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Microsoft 365-Verschlüsselungsketten
 
-Microsoft 365 nutzt eine Reihe verschiedener Zertifikatanbieter. Im Folgenden wird die vollständige Liste der bekannten Microsoft 365-Stammzertifikate beschrieben, die Kunden beim Zugriff auf Microsoft 365 möglicherweise finden. Informationen zu den Zertifikaten, die Sie möglicherweise in Ihrer eigenen Infrastruktur installieren müssen, finden Sie unter [Plan for third-party SSL certificates for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates). Die folgenden Zertifikatinformationen gelten für alle weltweiten und nationalen Cloudinstanzen von Microsoft 365.
+Microsoft 365 nutzt eine Reihe verschiedener Zertifikatanbieter. Im Folgenden wird die vollständige Liste der bekannten Microsoft 365-Stammzertifikate beschrieben, die Kunden beim Zugriff auf Microsoft 365 möglicherweise finden. Informationen zu den Zertifikaten, die Sie möglicherweise in Ihrer eigenen Infrastruktur installieren müssen, finden Sie unter "Planen von [Drittanbieter-SSL-Zertifikaten für Microsoft 365".](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates) Die folgenden Zertifikatinformationen gelten für alle weltweiten und nationalen Cloudinstanzen von Microsoft 365.
 
 Last updated: **16.10.2020**
 
 >[!NOTE]
 >Zertifikatinformationen, die für **DOD-** und GCC High-Kunden gelten, finden Sie unter [Microsoft 365-Verschlüsselungsketten – DOD und GCC High](encryption-office-365-certificate-chains-itar.md).
 
-| **Zertifikattyp** | **P7b-Download** | **CRL Endpoints** | **OCSP-Endpunkte** | **AIA Endpoints** |
+| **Zertifikattyp** | **Herunterladen von P7b** | **CRL Endpoints** | **OCSP-Endpunkte** | **AIA Endpoints** |
 | --- | --- | --- | --- | --- |
 | Öffentlich vertrauenswürdige Stammzertifikate | [Microsoft 365-Stammzertifikatbundl (P7B)](https://download.microsoft.com/download/4/a/b/4ab1c940-826b-444b-b287-b7a902e68da0/m365_root_certs_20201012.p7b) | crl.globalsign.net<br>www.d-trust.net | Nicht zutreffend | Nicht zutreffend |
 | Öffentlich vertrauenswürdige Zwischenzertifikate | [Microsoft 365 Intermediate Certificate Bundle (P7B)](https://download.microsoft.com/download/1/4/7/14777f28-3fde-4958-aebf-bd192a4a7fac/m365_intermediate_certs_20201013.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
@@ -321,6 +321,23 @@ Erweitern Sie die unten stehenden Stamm- und Zwischenabschnitte, um weitere Deta
 | **CRL-URLs** | http://crl.digicert.cn/DigiCertGlobalRootCA.crl |
 | **OCSP URLs** | http://ocsp.digicert.cn |
 
+### <a name="digicert-cloud-services-ca-1"></a>**DigiCert Cloud Services CA-1**
+
+| **Betreff** | CN=DigiCert Cloud Services CA-1<br>O=DigiCert Inc<br>C=US |
+| --- | --- |
+| **Aussteller** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Seriennummer** | 01:9E:C1:C6:BD:3F:59:7B:B2:0C:33:38:E5:51:D8:77 |
+| **Länge des öffentlichen Schlüssels** | RSA 2048-Bit |
+| **Signaturalgorithmus** | sha256RSA |
+| **Gültigkeit noch nicht vorher** | 4. August 2015 12:00 |
+| **Gültigkeit erst nach** | 4. August 2030 12:00 Uhr |
+| **Subject Key Identifier** | dd:51:d0:a2:31:73:a9:73:ae:8f:b4:01:7e:5d:8c:57:cb:9f:f0:f7 |
+| **Autoritätsschlüssel-ID** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Fingerabdruck (SHA-1)** | 81B68D6CD2f221F8F534E677523BB236BBA1DC56 |
+| **Fingerabdruck (SHA-256)** | 2F6889961A7CA7067E8BA103C2CF9B9A924F8CA293F11178E23A1978D2F133D3 |
+| **Pin (SHA-256)** | UgpUVqamk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE= |
+| **CRL-URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### <a name="digicert-cloud-services-ca-1"></a>**DigiCert Cloud Services CA-1**
 
@@ -330,15 +347,15 @@ Erweitern Sie die unten stehenden Stamm- und Zwischenabschnitte, um weitere Deta
 | **Seriennummer** | 0F:17:1A:48:C6:F2:23:80:92:18:CD:2E:D6:DD:C0:E8 |
 | **Länge des öffentlichen Schlüssels** | RSA 2048-Bit |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit noch nicht vorher** | Donnerstag, 24. September 2020 17:00 |
-| **Gültigkeit erst nach** | Dienstag, 24. September 2030 16:59 |
-| **Subject Key Identifier** | DD51D0A23173A973AE8FB4017E5D8C57CB9FF0F7 |
-| **Autoritätsschlüssel-ID** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Gültigkeit noch nicht vorher** | 25. September 2020 00:00 |
+| **Gültigkeit nicht nach** | 24. September 2030 23:59 |
+| **Subject Key Identifier** | dd:51:d0:a2:31:73:a9:73:ae:8f:b4:01:7e:5d:8c:57:cb:9f:f0:f7 |
+| **Autoritätsschlüssel-ID** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Fingerabdruck (SHA-1)** | B3F6B64A07BB9611F47174407841F564FB991F29 |
-| **Fingerabdruck (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 |
+| **Fingerabdruck (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 | -
 | **Pin (SHA-256)** | UgpUVqamk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE= |
-| **CRL-URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl <br> http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
-| **OCSP URLs** | http://ocsp.digicert.com |
+| **CRL-URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP URLs** | http://ocsp.digicert.com
 
 ### <a name="digicert-sha2-extended-validation-server-ca"></a>**DigiCert SHA2 Extended Validation Server CA**
 
@@ -383,7 +400,7 @@ Erweitern Sie die unten stehenden Stamm- und Zwischenabschnitte, um weitere Deta
 | **Seriennummer** | 01:FD:A3:EB:6E:CA:75:C8:88:43:8B:72:4B:CF:BC:91 |
 | **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit noch nicht vorher** | Mrz 08 12:00:00 2013 UTC |
+| **Gültigkeit noch nicht vorher** | 08. März 12:00:00 2013 UTC |
 | **Gültigkeit nicht nach** | 08. März 12:00:00 2023 UTC |
 | **Subject Key Identifier** | 0f:80:61:1c:82:31:61:d5:2f:28:e7:8d:46:38:b4:2c:e1:c6:d9:e2 |
 | **Autoritätsschlüssel-ID** | keyid:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
@@ -467,7 +484,7 @@ Erweitern Sie die unten stehenden Stamm- und Zwischenabschnitte, um weitere Deta
 
 | **Betreff** | CN=GlobalSign Extended Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
-| **Aussteller** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign-Stammzertifizierungsstelle - R2 |
+| **Aussteller** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R2 |
 | **Seriennummer** | 04:00:00:00:00:01:44:4E:F0:4A:55 |
 | **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
@@ -786,7 +803,7 @@ Erweitern Sie die unten stehenden Stamm- und Zwischenabschnitte, um weitere Deta
 | **Betreff** | CN=Symantec Class 3 Secure Server CA - G4<br>OU=Symantec Trust Network<br>O=Symantec Corporation<br>C=US |
 | --- | --- |
 | **Aussteller** | CN=VeriSign Class 3 Public Primary Certification Authority - G5<br>OU= &quot; (c) 2006 VeriSign, Inc. – nur zur autorisierten Verwendung&quot;<br>OU=VeriSign Trust Network<br>O= &quot; VeriSign, Inc.&quot;<br>C=US |
-| **Alternativer Subject Name** | Verzeichnisadresse: CN=SymantecPKI-1-534 |
+| **Alternativer Betreffname** | Verzeichnisadresse: CN=SymantecPKI-1-534 |
 | **Seriennummer** | 51:3F:B9:74:38:70:B7:34:40:41:8D:30:93:06:99:FF |
 | **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
@@ -827,7 +844,7 @@ Erweitern Sie die unten stehenden Stamm- und Zwischenabschnitte, um weitere Deta
 | **Seriennummer** | 07:27:A4:6B |
 | **Länge des öffentlichen Schlüssels** | RSA 2048 Bit (e 65537) |
 | **Signaturalgorithmus** | sha256RSA |
-| **Gültigkeit noch nicht vorher** | 02. Apr 14:36:10 2014 UTC |
+| **Gültigkeit noch nicht vorher** | Apr 02 14:36:10 2014 UTC |
 | **Gültigkeit nicht nach** | Apr 02 14:35:52 2021 UTC |
 | **Subject Key Identifier** | f8:bd:fa:af:73:77:c6:c7:1b:f9:4b:4d:11:a7:d1:33:af:af:72:11 |
 | **Autoritätsschlüssel-ID** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |

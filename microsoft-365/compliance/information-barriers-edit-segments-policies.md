@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 62e9910a1b94862ba23ecdc63c0fea1ec644043a
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: 3a95ccb476960424b701f522aacce78576e6f68f
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980078"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071280"
 ---
 # <a name="manage-information-barrier-policies"></a>Verwalten von Richtlinien für Informationsbarrieren
 
@@ -166,6 +166,8 @@ Nachdem Sie mit der Anwendung von Richtlinien für Informationsbarrieren begonne
 
 - [Übersicht über Informationsbarrieren](information-barriers.md)
 - [Definieren von Richtlinien für Informationsbarrieren](information-barriers-policies.md)
-- [Weitere Informationen zu Informationsbarrieren in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Weitere Informationen zu Informationsbarrieren in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [Weitere Informationen zu Informationsbarrieren in SharePoint Online](/sharepoint/information-barriers)
+- [Weitere Informationen zu Informationsbarrieren in OneDrive](/onedrive/information-barriers)
 - [Attribute für Richtlinien für Informationsbarrieren](information-barriers-attributes.md)
 - [Problembehandlung bei Informationsbarrieren](information-barriers-troubleshooting.md)

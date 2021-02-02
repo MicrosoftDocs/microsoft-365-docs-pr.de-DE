@@ -1,7 +1,7 @@
 ---
 title: Benennungsänderungen im Microsoft 365 Defender Advanced Hunting-Schema
 description: Nachverfolgen und Überprüfen von Namensänderungen in Tabellen und Spalten im Schema für die erweiterte Suche
-keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Daten, Namensänderungen, Umbenennen, Microsoft Threat Protection
+keywords: Erweiterte Suche, Bedrohungssuche, Suche nach Cyberbedrohungen, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Daten, Benennungsänderungen, Umbenennen, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 483fedd1fb152e3df5311c981b305e621ec2aec3
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3f03543b03dca5fe426700ffff4f5c6edb8fa3c7
+ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932202"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50066869"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schema der erweiterten Suche – Namensänderungen
 
@@ -47,10 +47,32 @@ Namensänderungen werden automatisch auf Abfragen angewendet, die im Security Ce
 
 | Tabellenname | Ursprünglicher Spaltenname | Neuer Spaltenname | Änderungsgrund
 |--|--|--|--|
-| [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailAction | EmailAction | Kundenfeedback |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailActionPolicy | EmailActionPolicy | Kundenfeedback |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | FinalEmailActionPolicyGuid | EmailActionPolicyGuid | Kundenfeedback |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailAction` | `EmailAction` | Kundenfeedback |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailActionPolicy` | `EmailActionPolicy` | Kundenfeedback |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailActionPolicyGuid` | `EmailActionPolicyGuid` | Kundenfeedback |
 
+## <a name="january-2021"></a>Januar 2021
+
+| Spaltenname | Name des ursprünglichen Werts | Name des neuen Werts | Änderungsgrund
+|--|--|--|--|
+| `DetectionSource` | MCAS |    Microsoft Cloud App-Sicherheit | Rebranding |
+| `DetectionSource` | WindowsDefenderAtp|   EDR| Rebranding |
+| `DetectionSource` | WindowsDefenderAv | Antivirus | Rebranding |
+| `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | Rebranding |
+| `DetectionSource` | CustomerTI |  Benutzerdefinierte TI | Rebranding |
+| `DetectionSource` | OfficeATP | Microsoft Defender für Office 365 | Rebranding |
+| `DetectionSource` | MTP   | Microsoft 365 Defender | Rebranding |
+| `DetectionSource` | AzureATP |    Microsoft Defender for Identity | Rebranding |
+| `DetectionSource` | CustomDetection   | Benutzerdefinierte Erkennung | Rebranding |
+| `DetectionSource` | AutomatedInvestigation |Automatisierte Untersuchung | Rebranding |
+| `DetectionSource` | ThreatExperts | Microsoft-Bedrohungsexperten | Rebranding |
+| `DetectionSource` | 3rd party TI | Drittanbietersensoren | Rebranding |
+| `ServiceSource` | Microsoft Defender ATP| Microsoft Defender für Endpunkt | Rebranding |
+|`ServiceSource` |Microsoft Threat Protection   | Microsoft 365 Defender | Rebranding |
+| `ServiceSource` | Office 365 ATP  |Microsoft Defender für Office 365 | Rebranding |
+| `ServiceSource` |Azure ATP    |Microsoft Defender for Identity | Rebranding |
+
+`DetectionSource` ist in der Tabelle ["AlertInfo"](advanced-hunting-alertinfo-table.md) verfügbar. `ServiceSource` ist in den [Tabellen "AlertEvidence" und](advanced-hunting-alertevidence-table.md) ["AlertInfo"](advanced-hunting-alertinfo-table.md) verfügbar. 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)

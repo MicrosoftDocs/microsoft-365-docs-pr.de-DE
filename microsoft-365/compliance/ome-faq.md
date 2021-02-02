@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen? Suchen Sie hier nach einer Antwort.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4be3ff4be1d5bf8b81d06ea17a8345e4c843b150
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: a88d853905ed8462972c9f423254a49424974bb7
+ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058538"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50066838"
 ---
 # <a name="message-encryption-faq"></a>Häufig gestellte Fragen zur Nachrichtenverschlüsselung
 
@@ -50,7 +50,7 @@ Um die neuen Funktionen von OME verwenden zu können, benötigen Sie einen der f
 
 - Sie können Azure Information Protection Plan 1 auch den folgenden Plänen hinzufügen, um die neuen Funktionen für die Office 365-Nachrichtenverschlüsselung zu erhalten: Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard oder Office 365 Enterprise E1.
 
-- Jeder Benutzer, der von der Office 365-Nachrichtenverschlüsselung profitieren kann, muss lizenziert sein, um von der Funktion abgedeckt zu werden.
+- Jeder Benutzer, der von der Office 365-Nachrichtenverschlüsselung profitieren kann, muss lizenziert sein, damit er von diesem Feature abgedeckt wird.
 
 - Die vollständige Liste finden Sie in den [Exchange Online-Dienstbeschreibungen](https://technet.microsoft.com/library/exchange-online-service-description.aspx) für die Office 365-Nachrichtenverschlüsselung.
 
@@ -60,9 +60,9 @@ Ja. Microsoft empfiehlt, dass Sie die Schritte zum Einrichten von BYOK ausführe
   
 Weitere Informationen zu BYOK finden Sie unter [Planung und Implementierung Ihres Azure Information Protection-Mandantenschlüssels.](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key)
   
-## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Ändern OME und BYOK mit Azure Information Protection den Ansatz von Microsoft für Datenanforderungen von Drittanbietern, z. B. Einladungen?
+## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Ändern OME und BYOK mit Azure Information Protection den Ansatz von Microsoft bei Datenanforderungen von Drittanbietern wie Vorladungen?
 
-Nein. OME und die Option zum Bereitstellen und Steuern Ihrer eigenen Verschlüsselungsschlüssel, die als BYOK bezeichnet werden, von Azure Information Protection wurden nicht für die Reaktion auf Vorladungen von Strafverfolgungsbehörden entwickelt. OME wurde mit BYOK für Azure Information Protection für Compliance-orientierte Kunden entwickelt. Microsoft nimmt Anfragen von Drittanbietern für Kundendaten sehr ernst. Als Clouddienstanbieter setzen wir uns immer für den Datenschutz von Kundendaten ein. Für den Fall, dass wir eine Vorladung erhalten, versuchen wir immer, den Dritten an den Kunden umzuleiten, um die Informationen zu erhalten. (Lesen Sie den Blog von Brad Smith: Schützen von [Kundendaten vor Behörden-Schnüffing).](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/) Wir veröffentlichen regelmäßig detaillierte Informationen zu der Anforderung, die wir erhalten. Weitere Informationen zu Datenanforderungen von Drittanbietern finden Sie unter [Reagieren](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) auf Anfragen von Behörden und Strafverfolgungsbehörden für den Zugriff auf Kundendaten im Microsoft Trust Center. Siehe auch "Offenlegung von Kundendaten" in den [Onlinedienstbedingungen (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)
+Nein. OME und die Option zum Bereitstellen und Steuern Ihrer eigenen Verschlüsselungsschlüssel, die als BYOK bezeichnet werden, von Azure Information Protection wurden nicht für die Reaktion auf Vorladungen von Strafverfolgungsbehörden entwickelt. OME wurde mit BYOK für Azure Information Protection für Compliance-orientierte Kunden entwickelt. Microsoft nimmt Anfragen von Drittanbietern für Kundendaten sehr ernst. Als Clouddienstanbieter setzen wir uns immer für den Datenschutz von Kundendaten ein. Für den Fall, dass wir eine Vorladung erhalten, versuchen wir immer, den Dritten an den Kunden umzuleiten, um die Informationen zu erhalten. (Lesen Sie den Blog von Brad Smith: [Schützen von Kundendaten vor Behörden-Schnüffing).](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/) Wir veröffentlichen regelmäßig detaillierte Informationen zu der Anforderung, die wir erhalten. Weitere Informationen zu Datenanforderungen von Drittanbietern finden Sie unter [Reagieren](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) auf Anfragen von Behörden und Strafverfolgungsbehörden für den Zugriff auf Kundendaten im Microsoft Trust Center. Siehe auch "Offenlegung von Kundendaten" in den [Onlinedienstbedingungen (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>Wie ist dieses Feature mit älteren Features der Office 365-Nachrichtenverschlüsselung (OME) und der Verwaltung von Informationsrechten (Information Rights Management, IRM) verbunden?
 
@@ -70,7 +70,7 @@ Die neuen Funktionen für die Office 365-Nachrichtenverschlüsselung sind eine W
   
 **Vergleich von älteren OME-, IRM- und neuen OME-Funktionen**
 
-|**Funktionalität**|**Frühere Versionen von OME**|**IRM**|**Neue Funktionen von OME**|
+| Funktion | Frühere Versionen von OME | IRM | Neue OME-Funktionen |
 |:-----|:-----|:-----|:-----|
 |**Senden einer verschlüsselten E-Mail**|Nur über Exchange-Nachrichtenflussregeln|Von Outlook für Windows, Outlook für Mac oder Outlook im Web initiierter Endbenutzer; oder über Exchange-Nachrichtenflussregeln|Von Outlook für Windows, Outlook für Mac oder Outlook im Web initiierter Endbenutzer; oder über Nachrichtenflussregeln|
 |**Rechteverwaltung**|-|Option "Nicht weiterleiten" und benutzerdefinierte Vorlagen|Option "Nicht weiterleiten", "Nur verschlüsseln", Standardvorlagen und benutzerdefinierte Vorlagen|
@@ -86,7 +86,7 @@ Weitere [Informationen finden Sie unter Einrichten neuer Office 365-Nachrichtenv
 
 Sie können weiterhin die vorherige Version von OME verwenden, sie ist zu diesem Zeitpunkt nicht veraltet. Wir ermutigen Organisationen jedoch dringend, die neue und verbesserte OME-Lösung zu verwenden. Kunden, die OME noch nicht bereitgestellt haben, können keine neue Bereitstellung der vorherigen Version von OME einrichten.
   
-## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>Meine Organisation verwendet Active Directory Rights Management. Kann ich diese Funktionalität verwenden?
+## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>Meine Organisation verwendet Active Directory Rights Management. Kann ich diese Funktion verwenden?
 
 Nein. Wenn Sie Exchange Online mit active Directory Rights Management Service (AD RMS) verwenden, können Sie diese neuen Funktionen nicht sofort aktivieren. Stattdessen müssen Sie [AD RMS zuerst zu Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) migrieren.
   
@@ -104,7 +104,7 @@ Microsoft 365-Benutzer können Outlook für Windows und Mac (2013 und 2016), Out
 
 ## <a name="what-email-clients-support-the-encrypt-only-protected-emails"></a>Welche E-Mail-Clients unterstützen nur verschlüsselte E-Mails?
 
-Microsoft 365-Benutzer können Outlook für PC Version 2019 und Microsoft 365 verwenden, um E-Mails zu erstellen, die durch die Richtlinie zum Verschlüsseln geschützt sind.  Das bedeutet, dass Nachrichten, auf die die neue Richtlinie zum Verschlüsseln angewendet wurde, direkt in Outlook im Web, in Outlook für iOS und Android und jetzt in Outlook für PC, Version 2019 und Microsoft 365, gelesen werden können.
+Microsoft 365-Benutzer können Outlook für PC, Version 2019, und Microsoft 365 verwenden, um E-Mails zu erstellen, die durch die Richtlinie zum Verschlüsseln geschützt sind.  Das bedeutet, dass Nachrichten, auf die die neue Richtlinie zum Verschlüsseln angewendet wurde, direkt in Outlook im Web, in Outlook für iOS und Android und jetzt in Outlook für PC, Version 2019 und Microsoft 365, gelesen werden können.
 
 ## <a name="is-there-a-size-limit-for-messages-you-can-send-with-ome"></a>Gibt es eine Größenbeschränkung für Nachrichten, die Sie mit OME senden können?
 
@@ -112,9 +112,9 @@ Ja. Die maximale Nachrichtengröße, die Sie mit OME senden können, einschließ
 
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Welche Dateitypen werden als Anlagen in geschützten E-Mails unterstützt? Erben Anlagen die Schutzrichtlinien, die geschützten E-Mails zugeordnet sind?
 
-Sie können einen beliebigen Dateityp an eine geschützte E-Mail anfügen. Mit einer Ausnahme werden Schutzrichtlinien nur auf die Dateiformate angewendet, die in dateitypen erwähnt werden, die vom [Azure Information Protection Client unterstützt werden.](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types) OME unterstützt nicht die 97-2003-Versionen der folgenden Office-Programme: Word (DOC), Excel (XLS) und PowerPoint (.ppt).
+Sie können einen beliebigen Dateityp an eine geschützte E-Mail anfügen. Mit einer Ausnahme werden Schutzrichtlinien nur auf die Dateiformate angewendet, die in den Dateitypen erwähnt werden, die vom [Azure Information Protection Client unterstützt werden.](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types) OME unterstützt nicht die 97-2003-Versionen der folgenden Office-Programme: Word (DOC), Excel (XLS) und PowerPoint (.ppt).
 
-Wenn ein Dateiformat unterstützt wird, z. B. eine Word-, Excel- oder PowerPoint-Datei, ist die Datei immer geschützt, auch nachdem die Anlage vom Empfänger heruntergeladen wurde. Nehmen wir beispielsweise an, dass eine Anlage durch "Nicht weiterleiten" geschützt ist. Der ursprüngliche Empfänger lädt die Datei herunter, erstellt eine Nachricht an einen neuen Empfänger und fügt die Datei an. Wenn der neue Empfänger die Datei empfängt, kann der Empfänger die geschützte Datei nicht öffnen.
+Wenn ein Dateiformat unterstützt wird, z. B. eine Word-, Excel- oder PowerPoint-Datei, wird die Datei immer geschützt, auch nachdem die Anlage vom Empfänger heruntergeladen wurde. Nehmen wir beispielsweise an, dass eine Anlage durch "Nicht weiterleiten" geschützt ist. Der ursprüngliche Empfänger lädt die Datei herunter, erstellt eine Nachricht an einen neuen Empfänger und fügt die Datei an. Wenn der neue Empfänger die Datei empfängt, kann der Empfänger die geschützte Datei nicht öffnen.
   
 ## <a name="are-pdf-file-attachments-supported"></a>Werden PDF-Dateianlagen unterstützt?
 
@@ -130,14 +130,14 @@ Führen Sie den folgenden Befehl in [Exchange Online PowerShell](https://docs.mi
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
 
-Mit der PDF-Verschlüsselung können Sie vertrauliche PDF-Dokumente durch sichere Kommunikation oder sichere Zusammenarbeit schützen. Für alle Outlook-Clients erben Nachrichten und ungeschützte PDF-Anlagen den OME-Schutz der Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) oder der Nachrichtenflussregel in Exchange Online. Wenn ein Outlook im Web-Benutzer ein ungeschütztes PDF-Dokument anfügen und nachrichtenschutziert, erbt die Nachricht außerdem den Schutz der Nachricht. Benutzer können die verschlüsselten Anlagen nur in Anwendungen öffnen, die geschützte PDFs unterstützen (z. B. das OME-Portal und den Azure Information Protection Viewer).
+Mit der PDF-Verschlüsselung können Sie vertrauliche PDF-Dokumente durch sichere Kommunikation oder sichere Zusammenarbeit schützen. Für alle Outlook-Clients erben Nachrichten und ungeschützte PDF-Anlagen den OME-Schutz der Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) oder der Nachrichtenflussregel in Exchange Online. Wenn ein Outlook im Web-Benutzer ein ungeschütztes PDF-Dokument anfügen und nachrichtenschutziert, erbt die Nachricht den Schutz der Nachricht. Benutzer können die verschlüsselten Anlagen nur in Anwendungen öffnen, die geschützte PDFs unterstützen (z. B. das OME-Portal und den Azure Information Protection Viewer).
 
 > [!IMPORTANT]
 > Der Outlook-Desktopclient unterstützt keine PDF-Verschlüsselung.
 
 ## <a name="are-onedrive-for-business-attachments-supported"></a>Werden OneDrive for #A0 unterstützt?
 
-Not yet. OneDrive for #A0 werden nicht unterstützt, und Endbenutzer können keine E-Mails verschlüsseln, die eine OneDrive for #A1 der Cloud enthalten.
+Not yet. OneDrive for #A0 werden nicht unterstützt, und Endbenutzer können E-Mails, die eine OneDrive for #A1 enthalten, nicht verschlüsseln.
   
 ## <a name="what-email-clients-support-preview-of-encrypted-attachments-in-protected-emails"></a>Welche E-Mail-Clients unterstützen die Vorschau verschlüsselter Anlagen in geschützten E-Mails?
 
@@ -150,7 +150,7 @@ Outlook im Web unterstützt die Sperrung geschützter E-Mails.  Weitere [Informa
 
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>Kann ich Nachrichten durch Das Einrichten von Richtlinien automatisch verschlüsseln?
 
-Ja. Verwenden Sie Nachrichtenflussregeln in Exchange Online, um eine Nachricht basierend auf bestimmten Bedingungen automatisch zu verschlüsseln. Sie können beispielsweise Richtlinien erstellen, die auf der Empfänger-ID, der Empfängerdomäne oder dem Inhalt im Textkörper oder Betreff der Nachricht basieren. Weitere [Informationen finden Sie unter Definieren von Nachrichtenflussregeln zum Verschlüsseln von E-Mail-Nachrichten in Office 365.](define-mail-flow-rules-to-encrypt-email.md)
+Ja. Verwenden Sie Nachrichtenflussregeln in Exchange Online, um eine Nachricht basierend auf bestimmten Bedingungen automatisch zu verschlüsseln. Sie können beispielsweise Richtlinien erstellen, die auf der Empfänger-ID, der Empfängerdomäne oder dem Inhalt des Nachrichtentexts oder Betreffs basieren. Weitere [Informationen finden Sie unter Definieren von Nachrichtenflussregeln zum Verschlüsseln von E-Mail-Nachrichten in Office 365.](define-mail-flow-rules-to-encrypt-email.md)
   
 ## <a name="can-i-automatically-remove-encryption-on-incoming-and-outgoing-mail"></a>Kann ich die Verschlüsselung für eingehende und ausgehende E-Mails automatisch entfernen?
 
@@ -205,13 +205,13 @@ In der folgenden Tabelle sind die unterstützten Clients für freigegebene Postf
 
 Es gibt derzeit zwei bekannte Einschränkungen:
 
-- Sie können Anlagen zu E-Mails, die Sie auf mobilen Geräten empfangen, nicht mithilfe von Outlook Mobile öffnen.
+- Sie können Keine Anlagen zu E-Mails öffnen, die Sie auf mobilen Geräten mit Outlook Mobile erhalten.
 
 - Die Zuweisung über eine E-Mail-aktivierte Sicherheitsgruppe wird nicht unterstützt. Wir unterstützen nur den Zugriff durch direkte Benutzerzuweisung auf das freigegebene Postfach, und die automatische Zuordnung ist für Exchange Online aktiviert. Die automatischeMapping ist für Exchange Online standardmäßig aktiviert.
 
 **So weisen Sie dem freigegebenen Postfach einen Benutzer zu**
 
-1. [Herstellen einer Verbindung mit Exchange Online mithilfe von Remote PowerShell](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx).
+1. [Stellen Sie mithilfe von Remote PowerShell eine Verbindung mit Exchange Online herzustellen.](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx)
 
 2. Führen Sie Add-MailboxPermission cmdlet mit dem Parameter "Automapping" aus. In diesem Beispiel wird Ayla Vollzugriff auf ein Supportpostfach erteilt.
 
