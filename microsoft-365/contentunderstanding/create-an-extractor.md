@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Erfahren Sie, wie Sie in Microsoft Office SharePoint Syntex einen Extraktor erstellen.
-ms.openlocfilehash: 7417805f51bb3a1c7b993ce2cd72137478abbc02
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: dd26b049f71688804cd5110a5a0bb7c87950be94
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976543"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080487"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Extraktor in Microsoft SharePoint Syntex erstellen
 
@@ -57,6 +57,14 @@ Durch das Erstellen eines Extraktors wird die Extraktorseite geöffnet. Dort seh
 
  
 Wenn Sie die Beschriftung der Dateien abgeschlossen haben, zeigt ein Benachrichtigungsbanner an, dass Sie zur Schulung fortfahren können.  Sie können noch weitere Dokumente beschriften oder mit der Schulung fortfahren. 
+
+### <a name="use-find-to-search-your-file"></a>Verwenden Sie „Suchen“, um Ihre Datei zu durchsuchen
+Sie können das Feature <b>Suchen</b> verwenden, um nach einer Entität in Ihrem Dokument zu suchen, die Sie beschriften möchten.
+
+   ![In Datei suchen](../media/content-understanding/find-feature.png) 
+
+Das Feature „Suchen“ ist hilfreich, wenn Sie ein großes Dokument durchsuchen oder wenn es mehrere Instanzen der Entität im Dokument gibt. Wenn Sie mehrere Instanzen finden, können Sie in den Suchergebnissen die Instanz auswählen, die Sie benötigen, um zu diesem Ort im Viewer zu wechseln, sodass Sie sie beschriften können.
+
 
 ## <a name="add-an-explanation"></a>Hinzufügen einer Erläuterung
 

@@ -184,8 +184,6 @@
               href: email/resolve-issues-with-shared-mailboxes.md
         - name: Posteingang mit Relevanz einrichten
           href: setup/configure-focused-inbox.md
-        - name: Info zu E-Mail-Zusammenarbeit
-          href: email/email-collaboration.md
         - name: Hinzufügen eines Benutzers oder Kontakts zu einer Verteilergruppe
           href: email/add-user-or-contact-to-distribution-list.md
         - name: Verwaltung von Clutter für Ihre Organisation
