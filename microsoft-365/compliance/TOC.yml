@@ -232,57 +232,63 @@
     - name: 'Verhinderung von Datenverlust (Data Loss Prevention, DLP)'
       items:
         - name: Mehr zum Schutz vor Datenverlust
-          href: data-loss-prevention-policies.md
-        - name: Verhinderung von Datenverlust (DLP) und Microsoft Teams
-          href: dlp-microsoft-teams.md
-        - name: Informationen zur Verhinderung von Datenverlust am Endpunkt
-          href: endpoint-dlp-learn-about.md
-        - name: "Verhinderung von Datenverlust am Endpunkt\_– Erste Schritte"
-          href: endpoint-dlp-getting-started.md
-        - name: Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen für die Verhinderung von Datenverlust am Endpunkt
-          href: endpoint-dlp-configure-proxy.md
-        - name: Nutzen der Verhinderung von Datenverlust am Endpunkt
-          href: endpoint-dlp-using.md
-        - name: "Verhinderung von Datenverlust am Endpunkt\_– Onboarding-Tools und -Methoden für Windows\_10-Geräte"
           items:
-            - name: "Onboarding-Tools und -Methoden für Windows\_10-Computer"
-              href: dlp-configure-endpoints.md
-            - name: "Onboarding von Windows\_10-Geräten über Gruppenrichtlinie"
-              href: dlp-configure-endpoints-gp.md
-            - name: "Onboarding von Windows\_10-Geräten mithilfe von Tools für die Verwaltung von Mobilgeräten"
-              href: dlp-configure-endpoints-mdm.md
-            - name: "Onboarding von Windows\_10-Geräten mithilfe von Configuration Manager"
-              href: dlp-configure-endpoints-sccm.md
-            - name: "Onboarding von Windows\_10-Geräten mithilfe eines lokalen Skripts"
-              href: dlp-configure-endpoints-script.md
-            - name: Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)
-              href: dlp-configure-endpoints-vdi.md
-        - name: Erste Schritte mit der DLP-Standardrichtlinie
-          href: get-started-with-the-default-dlp-policy.md
-        - name: Erstellen einer DLP-Richtlinie aus einer Vorlage
-          href: create-a-dlp-policy-from-a-template.md
-        - name: 'Erstellen, Testen und Optimieren einer DLP-Richtlinie'
-          href: create-test-tune-dlp-policy.md
-        - name: Verwenden von Benachrichtigungen und Richtlinientipps in DLP-Richtlinien
-          href: use-notifications-and-policy-tips.md
-        - name: Benachrichtigungen für DLP-Richtlinien konfigurieren und anzeigen (Preview)
-          href: dlp-configure-view-alerts-policies.md
-        - name: Inhalt der DLP-Richtlinienvorlagen
-          href: what-the-dlp-policy-templates-include.md
-        - name: Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI oder anderen Eigenschaften
-          href: protect-documents-that-have-fci-or-other-properties.md
-        - name: Anzeigen der DLP-Berichte
-          href: view-the-dlp-reports.md
-        - name: Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten
-          href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-        - name: Funktionsweise von DLP zwischen dem Security & Compliance Center und Exchange Admin Center
-          href: how-dlp-works-between-admin-centers.md
-        - name: Verwenden von Vertraulichkeitsbezeichnungen als Bedingungen in DLP-Richtlinien (Vorschau)
-          href: dlp-sensitivity-label-as-condition.md
-        - name: Verwenden von Richtlinien zur Verhinderung von Datenverlust für nicht von Microsoft stammende Cloud-Apps
-          href: dlp-use-policies-non-microsoft-cloud-apps.md
-        - name: 'DLP-Richtlinien: Bedingungen und Ausnahmen (Vorschau)'
-          href: dlp-conditions-and-exceptions.md
+            - name: Mehr zum Schutz vor Datenverlust
+              href: data-loss-prevention-policies.md
+            - name: Informationen zur Verhinderung von Datenverlust am Endpunkt
+              href: endpoint-dlp-learn-about.md
+        - name: Erste Schritte mit DLP
+          items:
+            - name: Erste Schritte mit der DLP-Standardrichtlinie
+              href: get-started-with-the-default-dlp-policy.md
+            - name: Erstellen einer DLP-Richtlinie aus einer Vorlage
+              href: create-a-dlp-policy-from-a-template.md
+            - name: 'Erstellen, Testen und Optimieren einer DLP-Richtlinie'
+              href: create-test-tune-dlp-policy.md
+            - name: "Verhinderung von Datenverlust am Endpunkt\_– Erste Schritte"
+              href: endpoint-dlp-getting-started.md
+            - name: Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen für die Verhinderung von Datenverlust am Endpunkt
+              href: endpoint-dlp-configure-proxy.md
+            - name: "Verhinderung von Datenverlust am Endpunkt\_– Onboarding-Tools und -Methoden für Windows\_10-Geräte"
+              items:
+                - name: "Onboarding-Tools und -Methoden für Windows\_10-Computer"
+                  href: dlp-configure-endpoints.md
+                - name: "Onboarding von Windows\_10-Geräten über Gruppenrichtlinie"
+                  href: dlp-configure-endpoints-gp.md
+                - name: "Onboarding von Windows\_10-Geräten mithilfe von Tools für die Verwaltung von Mobilgeräten"
+                  href: dlp-configure-endpoints-mdm.md
+                - name: "Onboarding von Windows\_10-Geräten mithilfe von Configuration Manager"
+                  href: dlp-configure-endpoints-sccm.md
+                - name: "Onboarding von Windows\_10-Geräten mithilfe eines lokalen Skripts"
+                  href: dlp-configure-endpoints-script.md
+                - name: Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)
+                  href: dlp-configure-endpoints-vdi.md
+        - name: Verwenden von DLP
+          items:
+            - name: Verhinderung von Datenverlust (DLP) und Microsoft Teams
+              href: dlp-microsoft-teams.md
+            - name: Nutzen der Verhinderung von Datenverlust am Endpunkt
+              href: endpoint-dlp-using.md
+            - name: Verwenden von Benachrichtigungen und Richtlinientipps in DLP-Richtlinien
+              href: use-notifications-and-policy-tips.md
+            - name: Inhalt der DLP-Richtlinienvorlagen
+              href: what-the-dlp-policy-templates-include.md
+            - name: Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI oder anderen Eigenschaften
+              href: protect-documents-that-have-fci-or-other-properties.md
+            - name: Anzeigen der DLP-Berichte
+              href: view-the-dlp-reports.md
+            - name: Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten
+              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+            - name: Funktionsweise von DLP zwischen dem Security & Compliance Center und Exchange Admin Center
+              href: how-dlp-works-between-admin-centers.md
+            - name: Benachrichtigungen für DLP-Richtlinien konfigurieren und anzeigen (Preview)
+              href: dlp-configure-view-alerts-policies.md
+            - name: Verwenden von Vertraulichkeitsbezeichnungen als Bedingungen in DLP-Richtlinien (Vorschau)
+              href: dlp-sensitivity-label-as-condition.md
+            - name: Verwenden von Richtlinien zur Verhinderung von Datenverlust für nicht von Microsoft stammende Cloud-Apps
+              href: dlp-use-policies-non-microsoft-cloud-apps.md
+            - name: 'DLP-Richtlinien: Bedingungen und Ausnahmen (Vorschau)'
+              href: dlp-conditions-and-exceptions.md
 - name: Verwalten der Informationsgovernance
   items:
     - name: Ihre Daten verwalten
@@ -729,6 +735,8 @@
       items:
         - name: Durchsuchen des Überwachungsprotokolls
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: Verwenden eines PowerShell-Skripts zum Durchsuchen des Überwachungsprotokolls
+          href: audit-log-search-script.md
         - name: Aktivieren oder Deaktivieren der Überwachungsprotokollsuche
           href: turn-audit-log-search-on-or-off.md
         - name: Detaillierte Eigenschaften im Überwachungsprotokoll
