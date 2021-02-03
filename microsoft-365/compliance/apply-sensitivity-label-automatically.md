@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch Dateien und E-Mails zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 190b06a719775fbbf14c94a4fd817d3242a95e6c
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 4bbea7810c20d72ef75bbb5602b1daddfce45576
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044745"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084676"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -227,9 +227,9 @@ Workflow für die Richtlinie zum automatischen Bezeichnen:
 
 1. Erstellen und konfigurieren Sie eine Richtlinie zum automatischen Bezeichnen.
 
-2. Führen Sie die Richtlinie im Simulationsmodus aus, und warten Sie 24 Stunden, bis die Simulation abgeschlossen ist.
+2. Führen Sie die Richtlinie im Simulationsmodus aus. Dies kann bis zu 48 Stunden dauern.
 
-3. Überprüfen Sie die Ergebnisse, und verfeinern Sie Ihre Richtlinie bei Bedarf. Führen Sie die Richtlinie im Simulationsmodus erneut aus, und warten Sie wieder 24 Stunden, bis die Simulation abgeschlossen ist.
+3. Überprüfen Sie die Ergebnisse, und verfeinern Sie Ihre Richtlinie bei Bedarf. Führen Sie den Simulationsmodus erneut aus, und warten Sie, bis er erneut abgeschlossen ist.
 
 4. Wiederholen Sie Schritt 3 nach Bedarf.
 

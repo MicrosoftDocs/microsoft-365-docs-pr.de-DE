@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit dem Inhalts-Explorers zur Datenklassifizierung können Sie beschriftete Elemente systemintern anzeigen.
-ms.openlocfilehash: 9beeab0c0b00ac1ac37c9df53e14a2f3f2914422
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 19ad68d3c32046754e366919e8c4e66336945624
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701152"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080724"
 ---
 # <a name="get-started-with-content-explorer"></a>Erste Schritte mit dem Inhalts-Explorer
 
@@ -47,8 +47,6 @@ Jedem Konto, das auf die Datenklassifizierung zugreift und sie verwendet, muss e
 
 Um Zugriff auf die Registerkarte „Inhalts-Explorer“ zu erhalten, muss einem Konto die Mitgliedschaft in einer dieser Rollen oder Rollengruppen zugewiesen werden. 
 
-Mithilfe einer [DLP-Richtlinie](data-loss-prevention-policies.md) können vertrauliche Informationen geschützt werden, die als **vertraulicher Informationstyp** definiert sind. Microsoft 365 umfasst [Definitionen für viele gängige Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md) in vielen verschiedenen Regionen, die für Sie verfügbar sind. Beispielsweise Kreditkartennummern, Bankkontonummern, Personalausweisnummern und Windows Live ID-Dienstnummern.
-
 **Microsoft 365-Rollengruppen**
 
 - Globaler Administrator
@@ -66,7 +64,7 @@ Der Zugriff auf den Inhalts-Explorer ist hochgradig eingeschränkt, da Sie damit
 > [!IMPORTANT]
 > Diese Berechtigungen ersetzen die Berechtigungen, die den Elementen lokal zugewiesen sind, was die Anzeige des Inhalts ermöglicht. 
 
-Es gibt zwei Rollen, die den Zugriff auf den Inhalts-Explorer gewähren:
+Es gibt zwei Rollen, die Zugriff auf den Inhalts-Explorer gewähren, und diese werden mithilfe des [Microsoft Security & Compliance Centers](https://protection.office.com/permissions)gewährt:
 
 - **Inhalts Explorer-Listenanzeige**: Durch die Mitgliedschaft in dieser Rollengruppe können Sie jedes Element und dessen Speicherort in der Listenansicht anzeigen. Die Rolle `data classification list viewer` wurde dieser Rollengruppe bereits zugewiesen.
 

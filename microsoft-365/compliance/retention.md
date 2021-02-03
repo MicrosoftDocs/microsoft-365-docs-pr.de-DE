@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 751b88ea3dde0c4cf2a33dded26a032a1e320b5e
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: d834cc53677c8b7c01ed4bec40ed51983d41e9da
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071310"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084624"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -77,7 +77,7 @@ Ausführlichere Informationen zur Funktionsweise von Aufbewahrungseinstellungen 
 
 ## <a name="retention-policies-and-retention-labels"></a>Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
-Sie können sowohl Aufbewahrungsrichtlinien als auch Aufbewahrungsbezeichnungen mit Bezeichnungsrichtlinien verwenden, um Ihre Aufbewahrungseinstellungen den Inhalten zuzuweisen. 
+Verwenden Sie zum Zuweisen der Aufbewahrungseinstellungen auf Inhalte **Aufbewahrungsrichtlinien** und **Aufbewahrungsrichtlinien mit Bezeichnungsrichtlinien**. Sie können nur eine dieser Methoden verwenden oder kombinieren.
 
 Verwenden Sie eine Aufbewahrungsrichtlinie, um dieselben Aufbewahrungseinstellungen für Inhalte auf einer Website- oder Postfachebene zuzuweisen, und verwenden Sie eine Aufbewahrungsbezeichnung, um Aufbewahrungseinstellungen auf Elementebene (Ordner, Dokument, E-Mail) zuzuweisen.
 

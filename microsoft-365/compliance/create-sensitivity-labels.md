@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Eine Anforderung für alle Microsoft Information Protection-Lösungen: Erstellen, Konfigurieren und Veröffentlichen Sie Vertraulichkeitsbezeichnungen, um die Dokumente und E-Mails Ihres Unternehmens zu klassifizieren und zu schützen.'
-ms.openlocfilehash: 60865b40582416ac2ac963c4a8c68353b06fc6d4
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: b7943259d3a20cbf4fd6d8b0b57ca7c027e74d3f
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071290"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084656"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
@@ -186,7 +186,7 @@ Um eine vorhandene Bezeichnungsrichtlinie zu bearbeiten, markieren Sie sie, und 
 
 Über diese Schaltfläche wird der Assistent **Richtlinie erstellen** gestartet, mit dem Sie die Bezeichnungen und die Bezeichnungseinstellungen bearbeiten können. Wenn Sie den Assistenten abschließen, werden alle Änderungen automatisch für die ausgewählten Benutzer und Dienste repliziert.
 
-Wenn Sie integrierte Bezeichnungen für Windows, macOS, iOS und Android verwenden, sehen die Benutzer die neuen Bezeichnungen innerhalb von vier Stunden in ihren Office-Apps und innerhalb einer Stunde in Office im Web. Es kann jedoch bis zu 24 Stunden dauern, bis die Änderungen für alle Apps und Dienste repliziert wurden.
+Wenn Sie integrierte Bezeichnungen für Office-Apps unter Windows, macOS, iOS und Android verwenden, sehen die Benutzer die neuen Bezeichnungen innerhalb von vier Stunden und innerhalb einer Stunde in Office im Web. Es kann jedoch bis zu 24 Stunden dauern, bis die Änderungen für alle Apps und Dienste repliziert wurden.
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Zusätzliche Bezeichnungsrichtlinieneinstellungen mit Security & Compliance Center PowerShell
 
