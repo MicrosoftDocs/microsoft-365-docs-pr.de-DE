@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie benutzerdefinierte vertrauliche Informationstypen mit genauer Datenübereinstimmungsklassifizierung erstellen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9b905e73fe471cc034eae42726a5a86d91a359a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d3d94d585ca0a0e88fb442e658d57bf000ce49bb
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928819"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080516"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Erstellen von benutzerdefinierten vertraulichen Informationstypen mit genauer Datenübereinstimmungsklassifizierung
 
@@ -54,8 +54,8 @@ Die EDM-basierte Klassifikation ermöglicht es Ihnen, benutzerdefinierte vertrau
 > - Chinesisch (traditionell)
 > - Koreanisch
 > - Japanisch
-
->Diese Unterstützung ist für vertrauliche Informationstypen verfügbar. Mehr dazu finden Sie in den [Versionshinweisen (Vorschau) zur Unterstützung des Informationsschutzes für Doppelbyte-Zeichensätze](mip-dbcs-relnotes.md).
+> 
+> Diese Unterstützung ist für vertrauliche Informationstypen verfügbar. Mehr dazu finden Sie in den [Versionshinweisen (Vorschau) zur Unterstützung des Informationsschutzes für Doppelbyte-Zeichensätze](mip-dbcs-relnotes.md).
 
 ## <a name="required-licenses-and-permissions"></a>Erforderliche Lizenzen und Berechtigungen
 
@@ -146,7 +146,7 @@ Das obige XML-Beispiel verwendet die Felder `caseInsensitive` und `ignoredDelimi
 
 Wenn Sie das Feld ***caseInsensitive** _ in Ihre Schemadefinition aufnehmen, das auf den Wert von `true` festgelegt ist, schließt EDM ein Element nicht aus, das auf Groß- und Kleinschreibung für das `PatientID` Feld basiert. EDM wird also sehen, dass `PatientID` _ *FOO-1234** und **fOo-1234** identisch sind.
 
-Wenn Sie das Feld **_ignoredDelimiters_*_ mit unterstützten Zeichen einfügen, ignoriert EDM diese Zeichen im `PatientID`. EDM wird also sehen, dass`PatientID` _* FOO-1234** und `PatientID` **FOO#1234** identisch sind. Das Banner `ignoredDelimiters` unterstützt alle nicht alphanumerischen Zeichen. Hier einige Beispiele:
+Wenn Sie das Feld **ignoredDelimiters** _ mit unterstützten Zeichen einfügen, ignoriert EDM diese Zeichen im `PatientID`. EDM wird also sehen, dass `PatientID` _ *FOO-1234** und `PatientID` **FOO#1234** identisch sind. Das Banner `ignoredDelimiters` unterstützt alle nicht alphanumerischen Zeichen. Hier einige Beispiele:
 - \.
 - \-
 - \/
@@ -210,7 +210,7 @@ In diesem Beispiel, in dem beide, `caseInsensitive` und `ignoredDelimiters`, ver
 
       - **idMatch**: Dieses Feld verweist auf das primäre Element für EDM.
         - Stimmt überein mit: gibt das Feld an, das in der exakten Suche verwendet werden soll. Sie geben den Namen eines durchsuchbaren Felds im EDM-Schema für den Datenspeicher an.
-        - Klassifizierung: Dieses Feld gibt die Übereinstimmung für den vertraulichen Typ an, der EDM-Nachschlagevorgänge auslöst. Sie können den Namen oder die GUID einer vorhandenen integrierten oder benutzerdefinierten Klassifizierung angeben.
+        - Klassifizierung: Dieses Feld gibt die Übereinstimmung für den vertraulichen Typ an, der EDM-Nachschlagevorgänge auslöst. Sie können den Namen oder die GUID eines vorhandenen integrierten oder benutzerdefinierten vertraulichen Informationstyps angeben. Beachten Sie, dass alle Zeichenfolgen, die dem angegebenen vertraulichen Informationstyp entspricht, gehasht sind und mit jedem Eintrag in der Tabelle mit vertraulichen Informationen verglichen werden. Um Leistungsprobleme zu vermeiden, sollten Sie bei Verwendung eines benutzerdefinierten vertraulichen Informationstyps als Klassifizierungselement in EDM keinen Inhaltstyp verwenden, der einem großen Prozentsatz des Inhalts entspricht (z. B. "beliebige Zahl" oder "beliebiges aus fünf Buchstaben bestehendes Wort"). Fügen Sie hierzu unterstützende Schlüsselwörter hinzu oder schließen Sie Formatierung in die Definition des benutzerdefinierten vertraulichen Klassifizierungsinformationstyps ein. 
 
       - **Übereinstimmung:** Dieses Feld verweist auf zusätzliche Nachweise, die sich in der Nähe von "idMatch" befinden.
         - Stimmt überein mit: Sie geben einen Feldnamen im EDM-Schema für den Datenspeicher an.
@@ -369,7 +369,7 @@ Wenn Sie den Hashvorgang und das Hochladen von einem Computer aus durchführen m
 Wenn Sie Ihre vertrauliche Datendatei im Klartext nicht verfügbar machen möchten, können Sie den Hashvorgang auf einem Computer an einem sicheren Ort durchführen, und dann die Hashdatei und die Saltdatei auf einen Computer kopieren, der für das Hochladen eine direkte Verbindung mit Ihrem Microsoft 365-Mandanten herstellen kann. In diesem Szenario benötigen Sie das den EDM-Upload-Agenten auf beiden Computern.
 
 > [!IMPORTANT]
-> Wenn Sie den Assistenten für Exact Data Match Schema und vertraulicher Informationstyp verwendet haben, um Ihre Schema- und Musterdateien zu erstellen, **_müssen_* Sie das Schema für dieses Verfahren herunterladen.
+> Wenn Sie den Assistenten für Exact Data Match Schema und vertraulicher Informationstyp verwendet haben, um Ihre Schema- und Musterdateien zu erstellen, ***müssen** Sie das Schema für dieses Verfahren herunterladen.
 
 #### <a name="prerequisites"></a>Voraussetzungen
 
@@ -380,11 +380,11 @@ Wenn Sie Ihre vertrauliche Datendatei im Klartext nicht verfügbar machen möcht
     - Ihre vertrauliche Elementdatei im CSV-Format (in unseren Beispielen **"PatientRecords.csv"**)
     -  sowie die Output-Hash- und-Saltdateien
     - Den Namen des Datenspeichers aus der Datei **EDM.xml** (in diesem Beispiel `PatientRecords`)
-- Wenn Sie den Assistenten für den [Exact Data Match Schema and vertraulicher Informationstyp](sit-edm-wizard.md) verwendet haben, **_müssen Sie_* ihn _ herunterladen
+- Wenn Sie den Assistenten für das [Schema exakter Datenübereinstimmung und den vertraulichen Informationstyp](sit-edm-wizard.md) verwendet haben, ***müssen*** Sie ihn herunterladen.
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Einrichten der Sicherheitsgruppe und des Benutzerkontos
 
-1. Als globaler Administrator gehen Sie zum Verwaltungszentrum über den entsprechenden [Link für Ihr Abonnement](#portal-links-for-your-subscription) und [erstellen Sie eine Sicherheitsgruppe](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) namens _*EDM\_DataUploaders**.
+1. Als globaler Administrator gehen Sie über den entsprechenden [Link für Ihr Abonnement](#portal-links-for-your-subscription) zum Verwaltungszentrum und [erstellen Sie eine Sicherheitsgruppe](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) namens **EDM\_DataUploaders**.
 
 2. Fügen Sie einen oder mehrere Benutzer zu der **EDM\_DataUploaders**-Sicherheitsgruppe hinzu. (Diese Benutzer verwalten die Datenbank mit vertraulichen Informationen.)
 
@@ -415,13 +415,13 @@ Dieser Computer muss direkten Zugriff auf Ihren Microsoft 365-Mandanten haben.
 
 2. Laden Sie den für Ihr Abonnement geeigneten [EDM-Upload-Agenten](#links-to-edm-upload-agent-by-subscription-type) herunter und installieren Sie ihn in das im ersten Schritt erstellte Verzeichnis.
 
-> [!NOTE]
-> Der EDM-Upload-Agent unter den oben aufgeführten Links wurde aktualisiert, um automatisch einen Saltwert zu den Hashdaten hinzuzufügen. Alternativ können Sie auch ihren eigenen Saltwert angeben. Sobald Sie diese Version verwendet haben, können Sie die vorherige Version des EDM-Upload-Agenten nicht mehr verwenden.
->
-> Sie können Daten mit dem EDM-Upload-Agenten nur zwei Mal pro Tag in einen bestimmten Datenspeicherort hochladen.
+   > [!NOTE]
+   > Der EDM-Upload-Agent unter den oben aufgeführten Links wurde aktualisiert, um automatisch einen Saltwert zu den Hashdaten hinzuzufügen. Alternativ können Sie auch ihren eigenen Saltwert angeben. Sobald Sie diese Version verwendet haben, können Sie die vorherige Version des EDM-Upload-Agenten nicht mehr verwenden.
+   >
+   > Sie können Daten mit dem EDM-Upload-Agenten nur zwei Mal pro Tag in einen bestimmten Datenspeicherort hochladen.
 
-> [!TIP]
-> Um eine Liste der unterstützten Befehlsparameter zu erhalten, führen Sie den Agenten ohne Argumente aus. Zum Beispiel "EdmUploadAgent.exe".
+   > [!TIP]
+   > Um eine Liste der unterstützten Befehlsparameter zu erhalten, führen Sie den Agenten ohne Argumente aus. Zum Beispiel "EdmUploadAgent.exe".
 
 2. Autorisieren Sie den EDM-Upload-Agenten Öffnen Sie dafür die Eingabeaufforderung (als Administrator), wechseln Sie ins Verzeichnis **C:\EDM\Data** und führen Sie dann den folgenden Befehl aus:
 
@@ -429,25 +429,25 @@ Dieser Computer muss direkten Zugriff auf Ihren Microsoft 365-Mandanten haben.
 
 3. Melden Sie sich mit Ihrem Microsoft 365-Geschäfts-, Schul- oder Unikonto an, das der Sicherheitsgruppe „EDM_DataUploaders“hinzugefügt wurde. Ihre Mandanteninformationen werden aus dem Benutzerkonto extrahiert, um die Verbindung herzustellen.
 
-OPTIONAL: Wenn Sie den Assistenten für Exact Data Match Schema und vertraulicher Informationstyp verwendet haben, um Ihre Schema- und Musterdateien zu erstellen, führen Sie den folgenden Befehl in einem Eingabeaufforderungsfenster aus:
+   OPTIONAL: Wenn Sie den Assistenten für Exact Data Match Schema und vertraulicher Informationstyp verwendet haben, um Ihre Schema- und Musterdateien zu erstellen, führen Sie den folgenden Befehl in einem Eingabeaufforderungsfenster aus:
 
-`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+   `EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
 
 4. Um den Hashvorgang durchzuführen die vertraulichen Daten hochzuladen, führen Sie den folgenden Befehl in der Eingabeaufforderung aus:
 
-`EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
+   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
 
-Beispiel: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
+   Beispiel: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-Dadurch wird dem Hashwert automatisch ein zufällig generierter Saltwert hinzugefügt, um die Sicherheit zu vergrößern. Wenn Sie optional einen eigenen Saltwert verwenden möchten, fügen Sie dem Befehl **/Salt <saltvalue>** hinzu. Dieser Wert muss 64 Zeichen umfassen und darf nur die Zeichen a-z und die Ziffern 0-9 enthalten.
+   Dadurch wird dem Hashwert automatisch ein zufällig generierter Saltwert hinzugefügt, um die Sicherheit zu vergrößern. Wenn Sie optional einen eigenen Saltwert verwenden möchten, fügen Sie dem Befehl **/Salt <saltvalue>** hinzu. Dieser Wert muss 64 Zeichen umfassen und darf nur die Zeichen a-z und die Ziffern 0-9 enthalten.
 
 5. Überprüfen Sie den Uploadstatus, indem Sie den folgenden Befehl ausführen:
 
-`EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>`
+   `EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>`
 
-Beispiel: **EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords**
+   Beispiel: **EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords**
 
-Suchen Sie nach dem Status in **ProcessingInProgress**. Überprüfen Sie den Status alle paar Minuten, bis er sich zu **Abgeschlossen** geändert hat. Sobald der Status „Abgeschlossen“ angezeigt wird, können Sie die EDM-Daten verwenden.
+   Suchen Sie nach dem Status in **ProcessingInProgress**. Überprüfen Sie den Status alle paar Minuten, bis er sich zu **Abgeschlossen** geändert hat. Sobald der Status „Abgeschlossen“ angezeigt wird, können Sie die EDM-Daten verwenden.
 
 #### <a name="separate-hash-and-upload"></a>Trennen von Hash und Upload
 
@@ -459,39 +459,38 @@ OPTIONAL: Wenn Sie den Assistenten für Exact Data Match Schema und vertrauliche
 
 1. Führen Sie in den Eingabeaufforderungsfenstern den folgenden Befehl aus:
 
-`EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] >`
+   `EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] >`
 
-Beispiel:
+   Beispiel:
 
-> **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
+   > **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-Dadurch wird eine Hashdatei und eine Saltdatei mit diesen Erweiterungen ausgegeben, wenn Sie die Option **/Salt <saltvalue>** nicht angegeben haben:
-- .EdmHash
-- .EdmSalt
+   Dadurch wird eine Hashdatei und eine Saltdatei mit diesen Erweiterungen ausgegeben, wenn Sie die Option **/Salt <saltvalue>** nicht angegeben haben:
+   - .EdmHash
+   - .EdmSalt
 
 2. Kopieren Sie diese Dateien auf sichere Weise auf den Computer, den Sie verwenden, um Ihre CSV-Datei mit den vertraulichen Elementen (PatientRecords) in ihren-Mandanten hochzuladen.
 
-Führen Sie zum Hochladen gehashter Daten den folgenden Befehl in der Windows-Eingabeaufforderung aus:
+   Führen Sie zum Hochladen gehashter Daten den folgenden Befehl in der Windows-Eingabeaufforderung aus:
 
-`EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
+   `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
-Zum Beispiel:
+   Zum Beispiel:
 
-> **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
-
-
-Führen Sie zur Überprüfung, ob Ihre vertraulichen Daten hochgeladen wurden, den folgenden Befehl in der Windows-Eingabeaufforderung aus:
+   > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
 
-`EdmUploadAgent.exe /GetDataStore`
+   Führen Sie zur Überprüfung, ob Ihre vertraulichen Daten hochgeladen wurden, den folgenden Befehl in der Windows-Eingabeaufforderung aus:
 
-Sie sehen eine Liste der Datenspeicher und wann sie zuletzt aktualisiert wurden.
+   `EdmUploadAgent.exe /GetDataStore`
 
-Wenn Sie alle Daten sehen möchten, die in einen bestimmten Store hochgeladen wurden, führen Sie den folgenden Befehl in einer Windows-Eingabeaufforderung aus:
+   Sie sehen eine Liste der Datenspeicher und wann sie zuletzt aktualisiert wurden.
 
-`EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
+   Wenn Sie alle Daten sehen möchten, die in einen bestimmten Store hochgeladen wurden, führen Sie den folgenden Befehl in einer Windows-Eingabeaufforderung aus:
 
-Fahren Sie mit dem Einrichten des Prozesses und des Zeitplans für [Aktualisieren der Datenbank für vertrauliche Informationen](#refreshing-your-sensitive-information-database) fort.
+   `EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
+
+   Fahren Sie mit dem Einrichten des Prozesses und des Zeitplans für [Aktualisieren der Datenbank für vertrauliche Informationen](#refreshing-your-sensitive-information-database) fort.
 
 Sie können nun die EDM-basierte Klassifikation mit Ihren Microsoft Cloud Services verwenden. Sie können beispielsweise [eine DLP-Richtlinie mithilfe der EDM-basierten Klassifizierung](#to-create-a-dlp-policy-with-edm) einrichten.
 
@@ -620,7 +619,7 @@ Vertrauliche EDM-Informationstypen für die folgenden Szenarien sind derzeit in 
 
 5. Wählen Sie auf der Registerkarte **Speicherorte auswählen** **Bestimmte Speicherorte auswählen** und wählen Sie dann **Weiter**.
 
-6. Wählen Sie in der Spalte **Status** **Exchange-E-Mail, OneDrive-Konten, Teams-Chat und Kanalnachricht** und dann **Weiter** aus.
+6. Wählen Sie in der Spalte **Status** die Option **Exchange-E-Mail, OneDrive-Konten, Teams-Chat und Kanalnachricht** und dann **Weiter** aus.
 
 7. Wählen Sie auf der Registerkarte **Richtlinieneinstellungen** **Erweiterte Einstellungen verwenden** und dann **Weiter**.
 
@@ -654,4 +653,3 @@ Vertrauliche EDM-Informationstypen für die folgenden Szenarien sind derzeit in 
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
 - [Ändern Sie das Schema für die genaue Datenübereinstimmung, um eine konfigurierbare Übereinstimmung zu verwenden](sit-modify-edm-schema-configurable-match.md)
-

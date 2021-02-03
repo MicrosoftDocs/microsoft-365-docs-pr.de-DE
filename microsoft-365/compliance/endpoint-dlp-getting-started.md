@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Richten Sie Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ein, um Dateiaktivitäten zu überwachen und schützende Maßnahmen für diese Dateien auf Endpunkten anzuwenden.
-ms.openlocfilehash: c9b7b10328e80a70f14b8fb40a3bf91cb89dbc88
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: c337d5ccd05ee665b62c9ce5a68abbd8084da943
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867959"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080818"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Erste Schritte mit Endpunkt-DLP
 
@@ -77,6 +77,9 @@ Endpunkt-DLP-Daten können im [Aktivitäten-Explorer](data-classification-activi
 - Compliance-Administrator
 - Sicherheitsadministrator
 - Compliancedaten-Administrator
+- Globale Leseberechtigung
+- Benutzer mit Leseberechtigung für Sicherheitsfunktionen
+- Berichtleseberechtigter
 
 ### <a name="prepare-your-endpoints"></a>Vorbereiten der Endpunkte
 
@@ -86,11 +89,13 @@ Vergewissern Sie sich, dass die Windows 10-Geräte, auf die Sie Endpunkt-DLP anw
 
 2. Antimalware-Clientversion ist 4.18.2009.7 oder neuer. Überprüfen Sie die aktuelle Version, indem Sie die Windows-Sicherheits-App öffnen, das Symbol Einstellungen und dann Info auswählen. Die Versionsnummer wird unter Antimalware-Clientversion aufgeführt. Aktualisieren Sie auf die neueste Antimalware-Clientversion, indem Sie Windows Update KB4052623 installieren. 
 
-> [!NOTE]
-> Es wird keine der Windows-Sicherheitskomponenten benötigt. Sie können Endpoint DLP unabhängig vom Windows-Sicherheitsstatus ausführen. [Der Echtzeitschutz und der Verhaltensmonitor](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) müssen jedoch aktiviert sein.
+   > [!NOTE]
+   > Es wird keine der Windows-Sicherheitskomponenten benötigt. Sie können Endpoint DLP unabhängig vom Windows-Sicherheitsstatus ausführen. [Der Echtzeitschutz und der Verhaltensmonitor](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) müssen jedoch aktiviert sein.
  
-
-3. Die folgenden Windows-Updates sind installiert. Hinweis: Diese Updates sind keine Voraussetzung für die Einbindung eines Geräts an Endpunkt-DLP, enthalten jedoch Fixes für wichtige Probleme und müssen daher vor der Verwendung des Produkts installiert werden.
+3. Die folgenden Windows-Updates sind installiert. 
+ 
+   > [!NOTE]
+   > Diese Updates sind keine Voraussetzung für die Einbindung eines Geräts an Endpunkt-DLP, enthalten jedoch Fixes für wichtige Probleme und müssen daher vor der Verwendung des Produkts installiert werden.
 
     - Für Windows 10 1809 – KB4559003, KB4577069, KB4580390
     - Für Windows 10 1903 oder 1909 – KB4559004, KB4577062, KB4580386
@@ -198,7 +203,7 @@ Nach Abschluss des Endpunkt-Onboardings sollten diese in der Tabelle der **Gerä
 ## <a name="next-steps"></a>Nächste Schritte
 Jetzt, da Geräte eingebunden sind und entsprechende Aktivitätsdaten im Aktivitäten-Explorer angezeigt werden, können Sie mit dem nächsten Schritt fortfahren, bei dem Sie DLP-Richtlinien zum Schutz Ihrer vertraulichen Elemente erstellen werden.
 
-- [Nutzung von Endpunkt-DLP (Vorschau)](endpoint-dlp-using.md)
+- [Nutzen der Verhinderung von Datenverlust am Endpunkt](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Siehe auch
 
