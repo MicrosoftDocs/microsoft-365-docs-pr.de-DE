@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ae9617a55fd5efb40a3aba07202ebfb1494d4db6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: de9fb28f09b88cf1730f3bb3539234f6a03ec2e3
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928808"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080713"
 ---
 # <a name="custom-detections-overview"></a>Benutzerdefinierte Erkennungen – Übersicht
 
@@ -35,12 +35,13 @@ ms.locfileid: "49928808"
 
 Mit benutzerdefinierten Erkennungen können Sie proaktiv verschiedene Ereignisse und Systemzustände überwachen und darauf reagieren, einschließlich mutmaßlicher Sicherheitsverletzungen und falsch konfigurierter Endpunkte. Dies wird durch anpassbare Erkennungsregeln ermöglicht, die automatisch Warnungen sowie Reaktionsaktionen auslösen.
 
-Benutzerdefinierte Erkennungen funktionieren [bei](advanced-hunting-overview.md)der erweiterten Suche, die eine leistungsstarke, flexible Abfragesprache bietet, die eine breite Palette von Ereignis- und Systeminformationen aus Ihrem Netzwerk umfasst. Sie können festlegen, dass sie in regelmäßigen Intervallen ausgeführt werden, Warnungen generieren und bei Übereinstimmungen Reaktionsaktionen ausführen.
+Benutzerdefinierte Erkennungen funktionieren [bei](advanced-hunting-overview.md)der erweiterten Suche, die eine leistungsstarke, flexible Abfragesprache bietet, die eine vielzahl von Ereignis- und Systeminformationen aus Ihrem Netzwerk umfasst. Sie können festlegen, dass sie in regelmäßigen Intervallen ausgeführt werden, Warnungen generieren und bei Übereinstimmungen Reaktionsaktionen ausführen.
 
 Benutzerdefinierte Erkennungen bieten:
 - Warnungen für regelbasierte Erkennungen, die aus abfragen der erweiterten Suche erstellt wurden
 - Automatische Antwortaktionen
 
-## <a name="related-topic"></a>Verwandtes Thema
+## <a name="see-also"></a>Siehe auch
 - [Erstellen und Verwalten von benutzerdefinierten Erkennungsregeln](custom-detection-rules.md)
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
+- [Migrieren erweiterter Suchabfragen von Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mdatp.md)

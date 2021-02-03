@@ -18,12 +18,12 @@ description: Erfahren Sie, wie Sie Richtlinien für sichere Anlagen definieren, 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5a26d214fe99d0053bf178d7d85a0b526d64f887
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 9343ce222f1deb84e900f0d6f18e7d55daa73372
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988080"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084613"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Einrichten von Richtlinien für sichere Anlagen in Microsoft Defender für Office 365
 
@@ -61,8 +61,8 @@ In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden:
-  - Zum Erstellen, Ändern und Löschen von Richtlinien für sichere  Links müssen  Sie Mitglied der Rollengruppe "Organisationsverwaltung" oder "Sicherheitsadministrator" im Security & Compliance **Center** und Mitglied der Rollengruppe "Organisationsverwaltung" in Exchange Online sein. 
-  - Für den schreibgeschützten Zugriff auf Richtlinien für sichere  Links müssen  Sie Mitglied der Rollengruppe "Globaler Leser" oder "Sicherheitsleser" im Security & Compliance Center sein.
+  - Zum Erstellen, Ändern und Löschen von Richtlinien für sichere  Anlagen müssen Sie Mitglied der Rollengruppe "Organisationsverwaltung" oder  "Sicherheitsadministrator" im Security & Compliance **Center** und Mitglied der Rollengruppe "Organisationsverwaltung" in Exchange Online sein. 
+  - Für den schreibgeschützten Zugriff auf Richtlinien für sichere  Anlagen müssen  Sie Mitglied der Rollengruppe "Globaler Leser" oder "Sicherheitsleser" im Security & Compliance Center sein.
 
   Weitere Informationen finden Sie unter ["Berechtigungen" im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) und in Exchange [Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 

@@ -9,7 +9,6 @@ author: levinec
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,12 +16,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f8f105215b23ec49318c133714e758e2a2a9c1df
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 7c0bb1701cf030692bc98218b38be00cae57a2bd
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870921"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080701"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Bewerten von Microsoft Defender für Office 365
 
@@ -56,7 +57,7 @@ Mit der vereinfachten Einrichtung können Sie sich auf:
 - Analysieren des Berichts für Eine Aktion
 - Präsentieren des Bewertungsergebniss
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 ### <a name="licensing"></a>Lizenzierung
 
@@ -104,7 +105,7 @@ Die erweiterte Filterung für Connectors ermöglicht Mandanten die Verwendung de
 
 ### <a name="urls"></a>URLs
 
-URLs werden während des Nachrichtenflusses detoniert. Wenn Sie nicht möchten, dass bestimmte URLs detoniert werden, verwalten Sie Ihre Liste der zulässigen URLs entsprechend. Weitere Informationen finden Sie unter "Verwalten von URLs" in der Liste [der zulässigen/blockierten](tenant-allow-block-list.md) Mandanten.
+URLs werden während des Nachrichtenflusses detoniert. Wenn Sie nicht möchten, dass bestimmte URLs detoniert werden, verwalten Sie Ihre Liste der zulässigen URLs entsprechend. Weitere [Informationen finden Sie unter "Verwalten der Liste zulässiger/blockierter Mandanten".](tenant-allow-block-list.md)
 
 URL-Links in den Textkörpern der E-Mail-Nachricht werden nicht umschließen, um die Auswirkungen der Kunden zu mindern.
 
@@ -157,7 +158,7 @@ Ihr Microsoft Defender für Office 365-Evaluierungsbericht wird einmal pro Tag g
 
 ### <a name="exchange-rules-optional"></a>Exchange-Regeln (optional)
 
-Wenn Sie über ein vorhandenes Gateway verfügen, sollten Sie die Filterung umgehen, da es die erweiterte Filterung für Connectors aktiviert und die eingehende Absender-IP-Adresse ändert. Um dies zu umgehen, navigieren Sie zum Exchange Admin Center, und erstellen Sie eine Richtlinie von SCL -1 (wenn Sie noch keine haben). Details zu den Regelkomponenten und deren Funktionsweise finden Sie unter Nachrichtenflussregeln (Transportregeln) in Exchange Online.
+Wenn Sie über ein vorhandenes Gateway verfügen, aktiviert das Aktivieren des Evaluierungsmodus die erweiterte Filterung für Connectors. Dadurch wird die Filtergenauigkeit verbessert, indem die IP-Adresse des eingehenden Absenders geändert wird. Dies kann die Filterbesprechungen ändern, und wenn Sie Exchange Online Protection nicht umgehen, kann dies die Zusicherung für bestimmte Nachrichten ändern. In diesem Fall sollten Sie die Filterung vorübergehend umgehen, um die Auswirkungen zu analysieren. Um dies zu umgehen, navigieren Sie zum Exchange Admin Center, und erstellen Sie eine Richtlinie von SCL -1 (wenn Sie noch keine haben). Details zu den Regelkomponenten und deren Funktionsweise finden Sie unter Nachrichtenflussregeln (Transportregeln) in Exchange Online.
 
 ## <a name="evaluate-capabilities"></a>Auswerten von Funktionen
 

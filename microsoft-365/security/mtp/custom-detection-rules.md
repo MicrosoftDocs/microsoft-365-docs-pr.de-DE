@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8c7e47e66f9e5543cc122c5b5154207cae836d2a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d58292f658446259bfab5b1b55c8b462d081421c
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932922"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080623"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Erstellen und Verwalten von benutzerdefinierten Erkennungsregeln
 
@@ -37,17 +37,17 @@ ms.locfileid: "49932922"
 
 Benutzerdefinierte Erkennungsregeln sind Regeln, die Sie mithilfe erweiterter [Suchabfragen entwerfen und](advanced-hunting-overview.md) optimieren können. Mit diesen Regeln können Sie proaktiv verschiedene Ereignisse und Systemzustände überwachen, einschließlich mutmaßlicher Sicherheitsverletzungen und falsch konfigurierter Endpunkte. Sie können festlegen, dass sie in regelmäßigen Intervallen ausgeführt werden, Warnungen generieren und bei Übereinstimmungen Reaktionsaktionen ausführen.
 
-## <a name="required-permissions-for-managing-custom-detections"></a>Erforderliche Berechtigungen zum Verwalten von benutzerdefinierten Erkennungen
+## <a name="required-permissions-for-managing-custom-detections"></a>Erforderliche Berechtigungen für die Verwaltung von benutzerdefinierten Erkennungen
 
 Zum Verwalten von benutzerdefinierten Erkennungen muss Ihnen eine der folgenden Rollen zugewiesen sein:
 
 - **Sicherheitsadministrator**– Benutzer mit dieser [Azure Active](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) Directory-Rolle können Sicherheitseinstellungen im Microsoft 365 Security Center und anderen Portalen und Diensten verwalten.
 
-- **Sicherheitsoperator**– Benutzer mit dieser [Azure Active](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) Directory-Rolle können Warnungen verwalten und haben globalen schreibgeschützten Zugriff auf sicherheitsbezogene Features, einschließlich aller Informationen im Microsoft 365 Security Center. Diese Rolle ist nur dann für die Verwaltung von benutzerdefinierten Erkennungen ausreichend, wenn die rollenbasierte Zugriffssteuerung (RBAC) in Microsoft Defender for Endpoint deaktiviert ist. Wenn Sie rbAC konfiguriert haben,  benötigen Sie auch die Berechtigung zum Verwalten von Sicherheitseinstellungen für Defender for Endpoint.
+- **Sicherheitsoperator**– Benutzer mit dieser [Azure Active](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) Directory-Rolle können Warnungen verwalten und haben globalen schreibgeschützten Zugriff auf sicherheitsbezogene Features, einschließlich aller Informationen im Microsoft 365 Security Center. Diese Rolle ist nur dann für die Verwaltung von benutzerdefinierten Erkennungen ausreichend, wenn die rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) in Microsoft Defender for Endpoint deaktiviert ist. Wenn Sie rbAC konfiguriert haben,  benötigen Sie auch die Berechtigung zum Verwalten von Sicherheitseinstellungen für Defender for Endpoint.
 
 Um die erforderlichen Berechtigungen zu verwalten, kann **ein globaler Administrator:**
 
-- Weisen Sie **die Rolle des Sicherheitsadministrators** oder des Sicherheitsoperators im Microsoft [365 Admin Center](https://admin.microsoft.com/) unter  **"Rollensicherheitsadministrator"**  >  **zu.**
+- Weisen Sie **die Rolle des Sicherheitsadministrators** oder der Sicherheitsoperatorrolle im Microsoft [365 Admin Center](https://admin.microsoft.com/) unter  **"Rollensicherheitsadministrator"**  >  **zu.**
 - Überprüfen Sie die Einstellungen für die rollen rechte Zugriffsberechtigung für Microsoft Defender for Endpoint im [Microsoft Defender Security Center](https://securitycenter.windows.com/) unter **"Einstellungsberechtigungsrollen".**  >    >   Wählen Sie die entsprechende Rolle aus, um die Berechtigung zum Verwalten **von Sicherheitseinstellungen zu** erteilen.
 
 > [!NOTE]
@@ -85,7 +85,7 @@ Zum Erstellen einer benutzerdefinierten Erkennungsregel muss die Abfrage die fol
 >[!NOTE]
 >Unterstützung für zusätzliche Entitäten wird hinzugefügt, wenn dem Schema für die erweiterte Suche neue Tabellen [hinzugefügt werden.](advanced-hunting-schema-tables.md)
 
-Einfache Abfragen, z. B. solche, die den Oder-Operator nicht zum Anpassen oder Aggregieren von Ergebnissen verwenden, geben in der Regel diese `project` `summarize` allgemeinen Spalten zurück.
+Einfache Abfragen, z. B. solche, die den Oder-Operator nicht zum Anpassen oder Aggregieren von Ergebnissen verwenden, geben in der Regel `project` `summarize` diese allgemeinen Spalten zurück.
 
 Es gibt verschiedene Möglichkeiten, um sicherzustellen, dass komplexere Abfragen diese Spalten zurückgeben. Wenn Sie es z. B. vorziehen, nach Entitäten unter einer Spalte wie zu aggregieren und zu zählen, können Sie sie trotzdem zurückgeben und aus dem neuesten Ereignis abrufen, das jedes eindeutige `DeviceId` `Timestamp` Ereignis `ReportId` `DeviceId` enthält.
 
@@ -119,9 +119,9 @@ Wählen Sie mit der Abfrage im Abfrage-Editor die Option "Erkennungsregel **erst
 Wenn Sie eine neue Regel speichern oder bearbeiten, wird sie ausgeführt und sucht nach Übereinstimmungen aus den daten der letzten 30 Tage. Die Regel wird dann in festen Intervallen erneut ausgeführt, und es wird eine Lookbackdauer basierend auf der von Ihnen festgelegten Häufigkeit angewendet:
 
 - **Alle 24 Stunden**– wird alle 24 Stunden ausgeführt und überprüft Daten aus den letzten 30 Tagen
-- **Alle 12 Stunden**– wird alle 12 Stunden ausgeführt, dabei werden Daten aus den letzten 24 Stunden überprüft.
+- **Alle 12 Stunden**– wird alle 12 Stunden ausgeführt und überprüft Dabei werden Daten aus den letzten 24 Stunden überprüft.
 - **Alle 3 Stunden –** wird alle 3 Stunden ausgeführt und überprüft Dabei werden Daten aus den letzten 6 Stunden überprüft.
-- **Jede Stunde –** wird stündlich ausgeführt und überprüft Daten aus den letzten 2 Stunden
+- **Jede Stunde**– wird stündlich ausgeführt und überprüft Daten aus den letzten 2 Stunden
 
 >[!TIP]
 > Match the time filters in your query with the lookback duration. Ergebnisse außerhalb der Lookbackdauer werden ignoriert.  
@@ -131,7 +131,7 @@ Wählen Sie die Häufigkeit aus, mit der die Erkennungen überwacht werden. Ber�
 ### <a name="3-choose-the-impacted-entities"></a>3. Wählen Sie die betroffenen Entitäten aus.
 Identifizieren Sie die Spalten in den Abfrageergebnissen, in denen Sie erwarten, die am stärksten betroffene oder betroffene Entität zu finden. Beispielsweise kann eine Abfrage Absender- ( oder ) und `SenderFromAddress` `SenderMailFromAddress` Empfängeradressen ( `RecipientEmailAddress` ) zurückgeben. Die Identifizierung, welche dieser Spalten die am wichtigsten betroffenen Entitäten darstellen, hilft dem Dienst, relevante Warnungen zu aggregieren, Vorfälle zu korrelieren und Reaktionsaktionen zu erreichen.
 
-Sie können für jeden Entitätstyp (Postfach, Benutzer oder Gerät) nur eine Spalte auswählen. Spalten, die von Ihrer Abfrage nicht zurückgegeben werden, können nicht ausgewählt werden.
+Sie können für jeden Entitätstyp (Postfach, Benutzer oder Gerät) nur eine Spalte auswählen. Spalten, die nicht von der Abfrage zurückgegeben werden, können nicht ausgewählt werden.
 
 ### <a name="4-specify-actions"></a>4. Angeben von Aktionen.
 Ihre benutzerdefinierte Erkennungsregel kann automatisch Aktionen auf Geräten, Dateien oder Benutzern ausführen, die von der Abfrage zurückgegeben werden.
@@ -148,7 +148,7 @@ Diese Aktionen werden auf Geräte in der `DeviceId` Spalte der Abfrageergebnisse
 Wenn diese Option ausgewählt ist, können Sie die Aktion "Quarantänedatei" auf Dateien in der , oder Spalte der  `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` Abfrageergebnisse anwenden. Diese Aktion löscht die Datei vom aktuellen Speicherort und platziert eine Kopie in Quarantäne.
 
 #### <a name="actions-on-users"></a>Aktionen für Benutzer
-Wenn diese Option **ausgewählt** ist, wird der Benutzer als gefährdete Aktion für Benutzer in der Oder -Spalte der `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` Abfrageergebnisse markiert. Diese Aktion legt die Risikostufe für Benutzer in Azure Active Directory auf "hoch" fest und löst entsprechende [Identitätsschutzrichtlinien aus.](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+Wenn diese Option **ausgewählt** ist, wird der Benutzer als gefährdete Aktion für Benutzer in der , oder Spalte der `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` Abfrageergebnisse markiert. Diese Aktion legt die Risikostufe für Benutzer in Azure Active Directory auf "hoch" fest und löst entsprechende [Identitätsschutzrichtlinien aus.](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
 
 > [!NOTE]
 > Die Aktion "Zulassen" oder "Blockieren" für benutzerdefinierte Erkennungsregeln wird derzeit in Microsoft 365 Defender nicht unterstützt.
@@ -205,9 +205,10 @@ Wechseln Sie auf dem Bildschirm mit den Regeldetails **(** Suche nach benutzerde
 Wechseln Sie auf dem Bildschirm mit den Regeldetails **(** Suche nach benutzerdefinierten Erkennungen  >    >  **[Regelname]**) zu "Ausgelöste Aktionen", in dem die auf Übereinstimmungen mit der Regel basierenden Aktionen aufgeführt sind.
 
 >[!TIP]
->Verwenden Sie die Auswahlspalte [&#10003;] links neben der Tabelle, um schnell Informationen anzeigen und Aktionen für ein Element in einer Tabelle zu ergreifen.
+>Verwenden Sie die Auswahlspalte [&#10003;] am linken Ende der Tabelle, um schnell Informationen anzeigen und Aktionen für ein Element in einer Tabelle zu ergreifen.
 
-## <a name="related-topic"></a>Verwandtes Thema
+## <a name="see-also"></a>Siehe auch
 - [Benutzerdefinierte Erkennungen – Übersicht](custom-detections-overview.md)
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Erlernen der Abfragesprache für die erweiterte Suche](advanced-hunting-query-language.md)
+- [Migrieren erweiterter Suchabfragen von Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mdatp.md)
