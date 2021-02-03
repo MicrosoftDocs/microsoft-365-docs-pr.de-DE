@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Weitere Informationen über Erklärungstypen in Microsoft SharePoint Syntex
-ms.openlocfilehash: 9a65c5de5321ee623a3d1a1e4260c0bcb2ad331e
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 2c2997fd165339cc43f7f007050f343794021a23
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975955"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080588"
 ---
 # <a name="introduction-to-explanation-types"></a>Einführung in Erklärungstypen
 
@@ -123,6 +123,31 @@ Es gibt drei Token in *(Mobil)*:
 Konfigurieren Sie die Einstellung für die Näherung so, dass sie einen Wert von 0 bis 3 aufweist.
 
    ![Beispiel einer Näherung](../media/content-understanding/proximity-example.png)</br>
+
+
+## <a name="configure-where-phrases-occur-in-the-document"></a>Konfigurieren Sie, wo Ausdrücke im Dokument vorkommen.
+
+Wenn Sie eine Erklärung erstellen, wird standardmäßig im gesamten Dokument nach dem Ausdruck gesucht, den Sie extrahieren möchten. Sie können jedoch die erweiterte Einstellung <b>Wo diese Ausdrücke vorkommen</b> verwenden, um eine bestimmte Stelle im Dokument zu isolieren, an der ein Ausdruck vorkommt. Dies ist in Situationen hilfreich, in denen ähnliche Instanzen eines Ausdrucks möglicherweise an einer anderen Stelle im Dokument auftreten und Sie sicherstellen möchten, dass der richtige Ausdruck ausgewählt ist. Unter Bezugnahme auf unser Dokument mit medizinischen Empfehlungen wird der **überweisende Arzt** immer im ersten Absatz des Dokuments erwähnt. Mit der Einstellung <b>Wo diese Ausdrücke vorkommen</b> können Sie in diesem Beispiel Ihre Erklärung so konfigurieren, dass nach dieser Bezeichnung nur im Anfangsabschnitt des Dokuments oder an einer anderen Stelle gesucht wird, an der sie möglicherweise vorkommt.
+
+   ![Einstellung „Wo diese Ausdrücke vorkommen“](../media/content-understanding/phrase-location.png)</br>
+
+Sie können für diese Einstellung die folgenden Optionen auswählen:
+
+- An beliebiger Stelle in der Datei: Es wird das gesamte Dokument nach dem Ausdruck durchsucht.
+- Anfang der Datei: Das Dokument wird vom Anfang bis zur Position des Ausdrucks durchsucht.</br> 
+   ![Anfang der Datei](../media/content-understanding/beginning-of-file.png)</br>
+Im Viewer können Sie das Auswahlfeld manuell anpassen, um die Position einzugeben, an der die Phase erscheint. Der Wert <b>Endposition</b> wird aktualisiert und zeigt die Anzahl der Token an, die im ausgewählten Bereich enthalten sind. Beachten Sie, dass Sie auch den Endpositionswert aktualisieren können, um den ausgewählten Bereich anzupassen.</br>
+   ![Positionsfeld „Anfang der Datei“](../media/content-understanding/beginning-box.png)</br>
+
+- Ende der Datei: Das Dokument wird vom Ende bis zur Position des Ausdrucks durchsucht.</br> 
+   ![Ende der Datei](../media/content-understanding/end-of-file.png)</br>
+Im Viewer können Sie das Auswahlfeld manuell anpassen, um die Position einzugeben, an der die Phase erscheint. Der Wert <b>Startposition</b> wird aktualisiert und zeigt die Anzahl der Token an, die im ausgewählten Bereich enthalten sind. Beachten Sie, dass Sie auch den Startpositionswert aktualisieren können, um den ausgewählten Bereich anzupassen.</br> 
+   ![Positionsfeld „Ende der Datei“](../media/content-understanding/end-box.png)</br>
+- Benutzerdefiniert: Das Dokument wird in einem bestimmten Bereich innerhalb des Dokuments nach der Position des Ausdrucks durchsucht.</br> 
+   ![Benutzerdefinierter Bereich](../media/content-understanding/custom-file.png)</br>
+Im Viewer können Sie das Auswahlfeld manuell anpassen, um die Position einzugeben, an der die Phase erscheint. Für diese Einstellung müssen Sie je eine Position <b>Start</b> und <b>Ende</b> auswählen. Diese Werte stellen die Anzahl der Token ab dem Anfang des Dokuments dar. Sie können diese Werte zwar manuell eingeben, doch ist es einfacher, das Auswahlfeld im Viewer manuell anzupassen.</br> 
+   
+
 
 ## <a name="use-explanation-templates"></a>Verwenden von Erklärungsvorlagen
 
