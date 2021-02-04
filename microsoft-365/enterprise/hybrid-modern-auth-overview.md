@@ -15,13 +15,13 @@ ms.collection:
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: In diesem Artikel erfahren Sie mehr über die moderne Hybrid Authentifizierung und die Voraussetzungen für die Verwendung mit lokalen Skype for Business-und Exchange-Servern.
-ms.openlocfilehash: dbd108d9b04445838ce8e88a921af717ebd763be
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+description: In diesem Artikel erfahren Sie mehr über die moderne Hybridauthentifizierung und die Voraussetzungen für die Verwendung mit lokalen Skype for Business- und Exchange-Servern.
+ms.openlocfilehash: b9b48f591f74bd508b20a851ec48a0d7132d6a84
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487720"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097104"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Moderne Hybridauthentifizierung, Übersicht und Voraussetzungen für die Verwendung mit lokalen Skype for Business- und Exchange-Servern
 
@@ -48,7 +48,7 @@ Die Verwaltung von Benutzeridentitäten mit moderner Authentifizierung gibt Admi
 
 Seien Sie sich bewusst, dass aufgrund der engen Zusammenarbeit von Skype for Business mit Exchange das Anmeldeverhalten, das Benutzer des Skype for Business-Clients sehen werden, durch den Status der modernen Authentifizierung von Exchange beeinflusst wird. Dies gilt auch, wenn Sie über eine hybride Skype for Business-Architektur mit _geteilter Domäne_ verfügen, in der Sie sowohl Skype for Business Online als auch lokal Skype for Business haben, wobei die Benutzer an beiden Standorten verwaltet werden.
 
-Weitere Informationen zur modernen Authentifizierung in Office 365 finden Sie unter [Office 365 App-Support: moderne Authentifizierung](microsoft-365-client-support-modern-authentication.md).
+Weitere Informationen zur modernen Authentifizierung in Office 365 finden Sie unter [Office 365 Client App Support - Multi-Factor Authentication](microsoft-365-client-support-multi-factor-authentication.md).
 
 > [!IMPORTANT]
 > Seit August 2017 ist die moderne Authentifizierung (MA) auf allen neuen Office 365-Mandanten, die Skype for Business Online und Exchange Online umfassen, standardmäßig aktiviert. Bereits vorhandene Mandanten haben keine Änderung in Ihrem Standard-MA-Status, aber alle neuen Mandanten unterstützen automatisch den erweiterten Satz von Identitätsfeatures, die oben aufgelistet sind. Um Ihren MA-Status zu überprüfen, lesen Sie den Abschnitt [Überprüfen Sie den Status der modernen Authentifizierung Ihrer lokalen Umgebung](hybrid-modern-auth-overview.md#BKMK_CheckStatus).
@@ -147,7 +147,7 @@ Weitere Informationen zum Cmdlet "Get-CsOAuthConfiguration" finden Sie unter [Ge
 
 - **Exchange-Client- und Protokollanforderungen**
 
-    Die Verfügbarkeit der modernen Authentifizierung wird durch die Kombination aus Client, Protokoll und Konfiguration bestimmt. Wenn die moderne Authentifizierung nicht vom Client, Protokoll und/oder der Konfiguration unterstützt wird, nutzt der Client weiterhin die Legacy Authentifizierung.
+    Die Verfügbarkeit der modernen Authentifizierung wird durch die Kombination aus Client, Protokoll und Konfiguration bestimmt. Wenn die moderne Authentifizierung vom Client, Protokoll und/oder der Konfiguration nicht unterstützt wird, nutzt der Client weiterhin die Legacyauthentifizierung.
   
     Die folgenden Clients und Protokolle unterstützen die moderne Authentifizierung mit lokalem Exchange, wenn die moderne Authentifizierung in der Umgebung aktiviert ist:
 
@@ -158,10 +158,10 @@ Weitere Informationen zum Cmdlet "Get-CsOAuthConfiguration" finden Sie unter [Ge
   |Outlook für iOS und Android  <br/> | Microsoft-Synchronisierungstechnologie <br/> |Weiter Informationen finden Sie unter [Verwenden der modernen Hybridauthentifizierung mit Outlook für iOS und Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).  <br/> |
   |Exchange ActiveSync-Clients (z. B. iOS11 Mail)  <br/> |Exchange ActiveSync  <br/> |Bei Exchange ActiveSync-Clients, die die moderne Authentifizierung unterstützen, müssen Sie das Profil neu erstellen, um von der Standardauthentifizierung zur modernen Authentifizierung zu wechseln.  <br/> |
 
-    Clients und/oder Protokolle, die nicht aufgeführt sind (beispielsweise POP3), unterstützen die moderne Authentifizierung mit lokalem Exchange nicht und setzen auch nach der Aktivierung der modernen Authentifizierung in der Umgebung die Nutzung von Legacy Authentifizierungsmechanismen fort.
+    Clients und/oder Protokolle, die nicht aufgeführt sind (z. B. POP3), unterstützen keine moderne Authentifizierung mit lokalem Exchange und nutzen auch nach der Aktivierung der modernen Authentifizierung in der Umgebung weiterhin Legacyauthentifizierungsmechanismen.
 
 - **Allgemeine Voraussetzungen**
-  - Für Ressourcengesamtstruktur Szenarien ist eine bidirektionale Vertrauensstellung mit der Kontogesamtstruktur erforderlich, um sicherzustellen, dass die richtigen sid-Lookups bei Hybriden modernen Authentifizierungsanforderungen ausgeführt werden. 
+  - Für Szenarien mit ressourcenbasierter Gesamtstruktur ist eine zweistufige Vertrauensstellung mit der Konto gesamtstruktur erforderlich, um sicherzustellen, dass bei Anforderungen der modernen Hybridauthentifizierung ordnungsgemäße SID-Lookups ausgeführt werden. 
   - Wenn Sie AD FS verwenden, sollten Sie Windows 2012 R2 AD FS 3.0 und höher für Verbund verwenden.
   - Bei den Identitätskonfigurationen handelt es sich um alle Typen, die von Azure AD Connect unterstützt werden, z. B. Kennwort-Hashsynchronisierung, Pass-Through-Authentifizierung und lokale STS, die von Office 365 unterstützt werden.
   - Azure AD Connect ist für die Benutzerreplikation und Synchronisierung konfiguriert und funktionsfähig.

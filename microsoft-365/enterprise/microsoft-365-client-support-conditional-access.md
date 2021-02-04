@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365-Client-App-Support: bedingter Zugriff'
+title: 'Microsoft 365-Client-App-Unterstützung: Bedingter Zugriff'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,41 +14,41 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-description: In diesem Artikel erfahren Sie, welche Plattformen, Clients und PowerShell-Module den bedingten Zugriff für Microsoft 365 unterstützen.
+description: In diesem Artikel erfahren Sie, welche Plattformen, Clients und PowerShell-Module bedingten Zugriff für Microsoft 365 unterstützen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc187a26cd3aa644888312327b07fc9a116950cc
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+ms.openlocfilehash: 969dd9d712fe124458273144b3e7974e03ade9e0
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806682"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097246"
 ---
-# <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365-Client-App-Support: bedingter Zugriff
+# <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365-Client-App-Unterstützung: Bedingter Zugriff
 
-Auf dem modernen Arbeitsplatz können Benutzer über verschiedene Geräte und apps von überall auf die Ressourcen Ihrer Organisation zugreifen. Das bedeutet, dass die Fokussierung nur darauf, wer auf eine Ressource zugreifen kann, nicht mehr ausreicht. In Ihrer Organisation muss auch unterstützt werden, wie und wo auf eine Ressource in ihrer Zugriffs Steuerungsinfrastruktur zugegriffen wird.
+Am modernen Arbeitsplatz können Benutzer von überall aus über verschiedene Geräte und Apps auf die Ressourcen Ihrer Organisation zugreifen. Aus diesem Grund reicht es nicht mehr aus, sich darauf zu konzentrieren, wer auf eine Ressource zugreifen kann. Ihre Organisation muss auch unterstützen, wie und wo in Ihrer Zugriffssteuerungsinfrastruktur auf eine Ressource zugegriffen wird.
 
-Mit Azure Active Directory Gerät, Standort und mehrstufigen Authentifizierungs basierten bedingten Zugriff können Sie diese neue Anforderung erfüllen. Bedingter Zugriff ist eine Funktion von Azure Active Directory, mit der Sie Steuerelemente für den Zugriff auf apps in Ihrer Umgebung erzwingen können, die alle auf spezifischen Bedingungen basieren und von einem zentralen Standort aus verwaltet werden.
+Mit dem Azure Active Directory-Gerät, dem Standort und dem mehrstufigen authentifizierungsbasierten bedingten Zugriff können Sie diese neue Anforderung erfüllen. Bedingter Zugriff ist eine Funktion von Azure Active Directory, mit der Sie Steuerelemente für den Zugriff auf Apps in Ihrer Umgebung erzwingen können, die alle auf bestimmten Bedingungen basieren und von einem zentralen Ort verwaltet werden.
 
-Erfahren Sie mehr über [Azure Active Directory bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/).
+Erfahren Sie mehr über [den bedingten Zugriff in Azure Active Directory.](/azure/active-directory/conditional-access/)
 
 ## <a name="supported-clients--platforms"></a>Unterstützte Clients & Plattformen
 
-Die neuesten Versionen der folgenden Clients und Plattformen unterstützen den bedingten Zugriff. Weitere Informationen zur Plattformunterstützung in Microsoft 365 finden Sie unter [System Requirements for Microsoft 365](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
+Die neuesten Versionen der folgenden Clients und Plattformen unterstützen bedingten Zugriff. Weitere Informationen zur Plattformunterstützung in Microsoft 365 finden Sie unter [Systemanforderungen für Microsoft 365](/microsoft-365/microsoft-365-and-office-resources).
 
 <br>
 <br>
 
-| Clients | Android | iOS | Mac| Windows 10 <br> Moderne apps| Windows 10 <br> Desktop |
+| Clients | Android | iOS | Mac| Windows 10 <br> Moderne Apps| Windows 10 <br> Desktop |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| Azure Active Directory Administrator | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
-| Access | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
-| Azure-Administrator | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
+| Azure Active Directory Admin | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
+| Zugriff | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
+| Azure Admin | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
 | Unternehmensportal | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | N/V |
 | Cortana | Geplant | Geplant | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) | N/V |
 | Delve | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
 | Microsoft Edge | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
 | Excel | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) |
-| Exchange Online Administrator | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
+| Exchange Online Admin | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
 | Formulare | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
 | Office 365 Admin | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |  |
 | Kaizala | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
@@ -67,20 +67,20 @@ Die neuesten Versionen der folgenden Clients und Plattformen unterstützen den b
 | Publisher | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
 | Skype for Business | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend ||
 | SharePoint | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
-| SharePoint Online Administrator | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
+| SharePoint Online Admin | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
 | Kurznotizen | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) | N/V |
 | Stream | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
 | Sway | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) | N/V |
 | Teams | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | N/V | ![Unterstützt](../media/check-mark.png) |
-| Aufgabe | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | N/V |
+| To Do | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | N/V |
 | Visio | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) | Nicht zutreffend | Nicht zutreffend | ![Unterstützt](../media/check-mark.png) |
 | Whiteboard | Geplant | ![Unterstützt](../media/check-mark.png) | N/V | ![Unterstützt](../media/check-mark.png) | N/V |
 | Word | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) |
-| Analyse am Arbeitsplatz | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
+| Arbeitsplatzanalyse | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
 | Yammer | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | ![Unterstützt](../media/check-mark.png) | N/V | ![Unterstützt](../media/check-mark.png) |
 
 ## <a name="supported-powershell-modules"></a>Unterstützte PowerShell-Module
 
-- [Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0)
-- [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
-- [SharePoint Online-PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
+- [SharePoint Online-PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)

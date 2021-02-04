@@ -1,5 +1,5 @@
 ---
-title: Microsoft Productivity Score-Kommunikation
+title: Microsoft Productivity Score – Kommunikation
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,173 +18,173 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Details zum Produktivitäts Ergebnis der Kommunikation – Personen Erfahrung.
-ms.openlocfilehash: b688063c10749d15fc5b00b629ee18afedba927e
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+description: Details zur Kommunikations-Produktivitäts-Bewertung.
+ms.openlocfilehash: de59a57f1c856d94836b59eba6a4869831fe700a
+ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712579"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099712"
 ---
-# <a name="communication--people-experiences"></a>Kommunikation – Personen Erfahrungen
+# <a name="communication--people-experiences"></a>Kommunikation – Personenerfahrungen
 
-Die Produktivitäts Bewertung unterstützt die Reise zur digitalen Transformation mit Einblicken darüber, wie Ihre Organisation Microsoft 365 verwendet, und die Technologie Erfahrungen, die Sie unterstützen. Das Bewertungsergebnis Ihrer Organisation reflektiert Messungen der Mitarbeiter- und Technologieerfahrung und kann mit Benchmarks von Organisationen verglichen werden, die größenmäßig Ihrer ähnlich sind. Die Kategorie "Kommunikation" ist Teil der Measures "People Experiences". Weitere Informationen finden Sie unter Übersicht über die [Produktivitäts Bewertung](productivity-score.md) und Lesen der [Datenschutzerklärung von Microsoft](https://privacy.microsoft.com/privacystatement).
+Die Produktivitätsswertung unterstützt den Weg zur digitalen Transformation mit Einblicken darüber, wie Ihre Organisation Microsoft 365 verwendet, und den Technologieerfahrungen, die dies unterstützen. Das Bewertungsergebnis Ihrer Organisation reflektiert Messungen der Mitarbeiter- und Technologieerfahrung und kann mit Benchmarks von Organisationen verglichen werden, die größenmäßig Ihrer ähnlich sind. Die Kommunikationskategorie ist Teil der Personenerfahrungsmaßnahmen. Weitere Informationen finden Sie in der [Übersicht über die Produktivitätsergebnis](productivity-score.md) und in [den Datenschutzbestimmungen von Microsoft.](https://privacy.microsoft.com/privacystatement)
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Für die ersten Schritte mit den Kommunikations Einblicken müssen Personen in Ihrer Organisation lizenziert werden für:
+Um mit Kommunikationseinblicken zu beginnen, müssen Personen in Ihrer Organisation für:
 
 - Microsoft Teams
 - Yammer
 - Exchange Online
 
-Weitere Informationen finden Sie unter [Zuweisen von Lizenzen zu Benutzern](../manage/assign-licenses-to-users.md).
+Weitere Informationen finden Sie unter [Zuweisen von Lizenzen zu Benutzern.](../manage/assign-licenses-to-users.md)
 
-Nachdem Personen in den oben genannten Produkten mindestens einmal in den letzten 28 Tagen aktiv waren, werden Sie beginnen, die Einblicke zu sehen.
+Nachdem Personen in den letzten 28 Tagen mindestens einmal in den oben genannten Produkten aktiv waren, können Sie die Einblicke sehen.
 
-## <a name="why-your-organizations-communication-score-matters"></a>Gründe für das Kommunikations Ergebnis Ihrer Organisation 
+## <a name="why-your-organizations-communication-score-matters"></a>Warum die Kommunikationswertung Ihrer Organisation wichtig ist 
 
-Microsoft ist bewusst, dass die Benutzer unterschiedliche Kommunikationsanforderungen haben. Um eine schnelle Antwort auf eine Frage zu erhalten, können Sie eine Sofortnachricht senden. Wenn Sie Statusaktualisierungen an Ihre Führungskräfte senden möchten, können Sie eine e-Mail-Nachricht auswählen. Um eine breitere Zielgruppe zu erreichen, können Sie eine Community-Nachricht veröffentlichen. Microsoft 365 ermöglicht diese Flexibilität in den Kommunikationsmodi an die Anforderungen aller Benutzer anzupassen. Untersuchungen zeigen, dass die Verwendung von Echt Zeit Kommunikationswerkzeugen eine einheitlichere Organisation schafft und die Moral unabhängig vom Standort aufbaut. [Siehe Beweise](https://go.microsoft.com/fwlink/?linkid=2127669).
+Microsoft versteht, dass Benutzer unterschiedliche Kommunikationsanforderungen haben. Um eine schnelle Antwort auf eine Frage zu erhalten, können Sie eine Chatnachricht senden. Wenn Sie Statusupdates an Ihre Führung senden möchten, können Sie eine E-Mail-Nachricht auswählen. Um eine breitere Zielgruppe zu erreichen, können Sie eine Communitynachricht veröffentlichen. Microsoft 365 ermöglicht diese Flexibilität in den Kommunikationsmodi, um die Anforderungen aller Benutzer zu erfüllen. Untersuchungen zeigen, dass die Verwendung von Echtzeitkommunikationstools eine einheitlichere Organisation und unabhängig vom Standort eine ethischere Einrichtung schafft. [Sehen Sie sich den Nachweis an.](https://go.microsoft.com/fwlink/?linkid=2127669)
 
-## <a name="how-we-calculate-the-communication-score"></a>Berechnung des Kommunikations Ergebnisses
+## <a name="how-we-calculate-the-communication-score"></a>Berechnen der Kommunikationsergebnis
 
-Für die Kommunikation bieten wir eine wichtige Einblicke, die die wichtigsten Metriken im Zusammenhang mit der Kommunikation in Ihrer Organisation enthält, kombiniert mit einem Bewertungs Framework für die Verwendung dieser Metriken, um die Bewertung Ihrer Organisation zu berechnen.
+Für die Kommunikation bieten wir einen primären Einblick, der die wichtigsten Metriken im Zusammenhang mit der Kommunikation in Ihrer Organisation in Kombination mit einem Bewertungsframework für die Verwendung dieser Metriken zur Berechnung der Bewertung Ihrer Organisation enthält.
 
-### <a name="primary-insight"></a>Primäre Einblicke
+### <a name="primary-insight"></a>Primärer Einblick
 
-Microsoft 365 bietet Benutzern die Flexibilität, alle Kommunikationsstile anzupassen, indem Sie mehrere Modi anbieten. Die primäre Einblicke bietet eine Maßnahme für Personen in Ihrer Organisation, die mehrere Modi zur Kommunikation verwenden.
+Microsoft 365 bietet Personen die Flexibilität, den Kommunikationsstil aller Benutzer zu passen, indem mehrere Modi angeboten werden. Der primäre Einblick bietet ein Maß an Personen in Ihrer Organisation, die mehrere Modi für die Kommunikation verwenden.
 
-:::image type="content" source="../../media/primaryinsight.png" alt-text="Primäre Einblicke in die Kommunikationsmodi.":::
+:::image type="content" source="../../media/primaryinsight.png" alt-text="Primärer Einblick in Kommunikationsmodi.":::
 
-1. **Kopfzeile:** Stellt die Schlüssel Metrik von Personen bereit, die mehr als einen Kommunikationsmodus verwenden, nämlich:
+1. **Header:** Stellt die Schlüsselmetrik von Personen zur Verfügung, die mehr als einen Kommunikationsmodus verwenden:
 
-   - Senden von e-Mails über Exchange
+   - Senden von E-Mails über Exchange
    - Senden von Nachrichten über Teams
-   - Veröffentlichen von Communities in "jammern"
+   - Veröffentlichen von Communitys in Yammer
 
-   Diese Schlüssel Metrik wird als Prozentsatz aller Personen angezeigt, die zwei oder mehr Exchange, Teams oder jammern verwenden. 
+   Diese Schlüsselmetrik wird als Prozentsatz aller Personen angezeigt, die zwei oder mehr von Exchange, Teams oder Yammer. 
 
-2. **Body:** Enthält weitere Informationen darüber, wie Flexibilität in den Kommunikationsmodi für Personen in Ihrer Organisation wertvoll ist.
+2. **Textkörper:** Enthält weitere Informationen darüber, wie Flexibilität in den Kommunikationsmodi für Personen in Ihrer Organisation von Wert ist.
 
-3. **Visualisierung des aktuellen Status:**
+3. **Visualisierung des aktuellen Zustands:**
 
-   - Horizontale Leiste, wobei der blaue Teil den in der Kopfzeile ausgedrückten Prozentwert darstellt
-   - Markiert den (Zähler/Nenner), der für die Berechnung des in der Kopfzeile ausgedrückten Prozentsatzes verwendet wird:
-     - **Zähler**: Anzahl der Personen, die in den letzten 28 Tagen mehr als einen Kommunikationsmodus verwenden
-     - **Nenner**: Anzahl der Personen, die in den letzten 28 Tagen für mehr als ein Kommunikationsprodukt als aktiviert gekennzeichnet sind
-   - Der **Peer-Benchmarkwert** der Schlüssel Metrik wird auch als Prozentwert angezeigt.
+   - Horizontaler Balken, wobei der blaue Teil den in der Kopfzeile ausgedrückten Prozentsatz darstellt
+   - Hebt den (Zähler/Nenner) hervor, der zum Berechnen des in der Kopfzeile ausgedrückten Prozentsatzes verwendet wird:
+     - **Zähler:** Anzahl der Personen, die in den letzten 28 Tagen mehr als einen Kommunikationsmodus verwendet haben
+     - **Nenner:** Anzahl der Personen, die in den letzten 28 Tagen für mehr als ein Kommunikationsprodukt aktiviert wurden
+   - **Der Peer benchmark** value of the key metric is also shown as a percentage
 
-4. **Anzeigen von Kommunikationsressourcen:** Wenn Sie hier klicken, werden alle Supportinhalte in Form von Videos/Artikeln im Zusammenhang mit der Kommunikation eingetragen. Von diesen können Sie zur benutzerdefinierten Wiedergabeliste für die Kommunikation und anschließend für alle Produktivitäts Bewertungskategorien navigieren.
+4. **Anzeigen von Kommunikationsressourcen:** Wenn Sie hier klicken, werden alle Supportinhalte in Form von Videos/Artikeln im Zusammenhang mit der Kommunikation angezeigt. Von diesen können Sie zur benutzerdefinierten Wiedergabeliste für kommunikation und anschließend für alle Kategorien der Produktivitätsergebnis navigieren.
 
-#### <a name="trend-visualization-of-primary-insight"></a>Trend Visualisierung der primären Einblicke
+#### <a name="trend-visualization-of-primary-insight"></a>Trendvisualisierung der primären Einblicke
 
- Dieses Diagramm stellt den Trend des Zählers der wichtigsten Metrik in der primären Einsicht dar – also die Anzahl der Personen in Ihrer Organisation, die mehr als einen Kommunikationsmodus in den letzten 180 Tagen verwenden. Hierbei ist der Tageswert ein Aggregat der Anzahl von Personen, die in den letzten 28 Tagen mehrere Kommunikationsformen verwenden.
+ Dieses Diagramm zeigt den Trend des Zählers der Schlüsselmetrik in den primären Einblicken, d. h. die Anzahl der Personen in Ihrer Organisation, die in den letzten 180 Tagen mehr als einen Kommunikationsmodus verwendet haben. Hier ist der tägliche Wert ein Aggregat der Anzahl der Personen, die in den letzten 28 Tagen mehrere Formen der Kommunikation verwendet haben.
 
-:::image type="content" source="../../media/trend-communication.png" alt-text="Diagramm, in dem die Anzahl der Personen angezeigt wird, die mehr als einen Modus zum kommunizieren im Vergleich zur Zeit verwenden.":::
+:::image type="content" source="../../media/trend-communication.png" alt-text="Diagramm, in dem die Anzahl der Personen angezeigt wird, die mehr als einen Modus für die Kommunikation im Vergleich zur Zeit verwenden.":::
 
 ### <a name="scoring-model"></a>Bewertungsmodell
 
-Die Kommunikations Bewertung für Ihre Organisation misst auf einer aggregierten (Organisations-) Ebene, unabhängig davon, ob Personen in einem 28-tägigen Fenster ständig über mehrere Modi zwischen e-Mail-, Chat-und Community-Beiträgen kommunizieren.  
+Die Kommunikationssendpunktzahl für Ihre Organisation misst auf gesamter (Organisationsebene), ob Benutzer konsistent über mehrere Modi zwischen E-Mails, Chats und Communitybeiträgen über ein 28-tägiges Fenster kommunizieren.  
 
-Ergebnisse werden auf der einzelnen Benutzerebene nicht bereitgestellt.
+Bewertungen werden nicht auf der Ebene der einzelnen Benutzer bereitgestellt.
 
-## <a name="explore-how-your-organization-communicates"></a>Untersuchen der Kommunikation in Ihrer Organisation
+## <a name="explore-how-your-organization-communicates"></a>Erfahren Sie, wie Ihre Organisation kommuniziert
 
-Außerdem stellen wir Ihnen Informationen zur Verfügung, die Sie dabei unterstützen, die Kommunikation Ihrer Organisation zu verbreiten. Diese zusätzlichen Metriken haben keinen direkten Einfluss auf das Produktivitäts Ergebnis, sondern können Ihnen dabei helfen, einen Aktionsplan als Teil Ihrer digitalen Transformation zu erstellen.
+Wir stellen Ihnen auch Informationen zur Verfügung, die Ihnen helfen, einen Einblick in die Kommunikation Ihrer Organisation zu erhalten. Diese zusätzlichen Metriken haben keinen direkten Einfluss auf Ihre Produktivitätsergebnis, sondern können Ihnen dabei helfen, einen Aktionsplan als Teil Ihrer digitalen Transformation zu erstellen.
 
 ### <a name="breakdown-of-communication-by-modes"></a>Aufschlüsselung der Kommunikation nach Modi
 
-:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Aufschlüsselung der Kommunikationsmodi]":::
+:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Aufschlüsselung der Kommunikationsmodi.]":::
 
-1. **Kopfzeile:** Hebt das Ziel der Einblicke hervor, um eine detaillierte Zusammenfassung der verschiedenen Kommunikationsmodi bereitzustellen, die in der Kommunikation berücksichtigt werden.
+1. **Header:** Hebt das Ziel der Einblicke hervor, eine detaillierte Aufschlüsselung der verschiedenen Kommunikationsmodi zu ermöglichen, die in der Kommunikation berücksichtigt werden.
 
-2. **Body:** Enthält Informationen zum Nutzen verschiedener Modi für die Freigabe von wissen.
+2. **Textkörper:** Enthält Informationen zum Nutzen der Verwendung verschiedener Modi für die Freigabe von Wissen.
 
-3. **Visualisierung:** Die Aufteilung stellt die Verwendung für jeden Modus dar. Der farbige Teil und der Anteil auf jeder Leiste stellen die Anzahl der Personen dar, die e-Mails, Nachrichten oder Community-Beiträge als Prozentsatz der für diesen Modus aktivierten Personen senden:
+3. **Visualisierung:** Die Aufschlüsselung stellt die Verwendung für jeden Modus dar. Der farbige Teil und der Bruchteil auf jedem Balken stellen die Anzahl der Personen dar, die E-Mails, Nachrichten oder Communitybeiträge als Prozentsatz der Personen senden, die für den jeweiligen Modus aktiviert sind:
 
-   - **Personen, die e-Mails senden:** Der farbige Teil und der Bruchstellen den Prozentsatz der für Exchange aktivierten Benutzer dar, die e-Mails senden. Dieser Anteil wird aus folgenden Bauteilen aufgebaut:
+   - **Personen, die E-Mails senden:** Der farbige Teil und der Bruchteil stellen den Prozentsatz der Exchange-aktivierten Benutzer dar, die E-Mails senden. Dieser Bruchteil besteht aus:
    
-     - **Zähler**: Personen, die in den letzten 28 Tagen e-Mails gesendet haben.
-     - **Nenner**: Personen, die in den letzten 28 Tagen für Exchange aktiviert wurden.
+     - **Zähler:** Personen, die in den letzten 28 Tagen E-Mails gesendet haben.
+     - **Nenner:** Personen, die in den letzten 28 Tagen für Exchange aktiviert wurden.
      
-   - **Personen, die Nachrichten in Microsoft Teams senden:** Der farbige Teil und der Bruchstellen den Prozentsatz der Benutzer dar, die für Microsoft Teams aktiviert sind, die Nachrichten senden. Dieser Anteil wird aus folgenden Bauteilen aufgebaut:
+   - **Personen, die Nachrichten in Microsoft Teams senden:** Der farbige Teil und der Bruchteil stellen den Prozentsatz der Benutzer dar, die für Microsoft Teams aktiviert sind, die Nachrichten senden. Dieser Bruch besteht aus:
    
-     - **Zähler**: Personen, die in den letzten 28 Tagen Nachrichten in Microsoft Teams gesendet haben.
-     - **Nenner**: Personen, die in den letzten 28 Tagen für Microsoft Teams aktiviert wurden.
+     - **Zähler:** Personen, die nachrichten in Microsoft Teams in den letzten 28 Tagen gesendet haben.
+     - **Nenner:** Personen, die in den letzten 28 Tagen für Microsoft Teams aktiviert wurden.
      
-   - **Personen Beitrag in Communities:** Der farbige Teil und der Bruchstellen den Prozentsatz der für das Jammern aktivierten Benutzer dar, die in Communities veröffentlicht werden. Dieser Anteil wird aus folgenden Bauteilen aufgebaut:
+   - **Personen, die in Communitys posten:** Der farbige Teil und der Bruchteil stellen den Prozentsatz der Benutzer dar, die für die Yammer, die in Communitys veröffentlicht werden. Dieser Bruchteil besteht aus:
    
-     - **Zähler:** Personen, die in "jammern"-Communities in den letzten 28 Tagen veröffentlichen.
-     - **Nenner:** Personen, die in den letzten 28 Tagen für jammern aktiviert sind.
+     - **Zähler:** Personen, die in Yammer communitys in den letzten 28 Tagen veröffentlicht wurden.
+     - **Nenner:** Personen, die in Yammer 28 Tagen aktiviert wurden.
           
-4. **Anzeigen von verwandtem Inhalt:** Wählen Sie diesen Link aus, um sortierte Videos und andere verwandte Hilfeinhalte anzuzeigen.
+4. **Anzeigen von verwandten Inhalten:** Wählen Sie diesen Link aus, um sortierte Videos und andere verwandte Hilfeinhalte anzuzeigen.
 
-### <a name="mentions-in-emails"></a>@Mentions in e-Mails
+### <a name="mentions-in-emails"></a>@mentions in E-Mails
 
 :::image type="content" source="../../media/emailmentions.png" alt-text="! [E-Mails mit Erwähnungen.]":::
 
-1. **Kopfzeile:** Hebt die Anhebung der Antwortrate für neue e-Mail-Threads hervor, die in den letzten 28 Tagen gestartet wurden, wenn Sie @Mentions enthalten.
+1. **Header:** Hebt den Anstieg der Antwortrate für neue E-Mail-Threads hervor, die in den letzten 28 Tagen gestartet wurden, wenn sie @mentions.
 
-2. **Body:** Enthält Informationen zum Nutzen von @Mentions in e-Mails. Darüber hinaus werden Personen, die @Mentions verwenden, als Prozentsatz aller Benutzer ausgedrückt, die in den letzten 28 Tagen eine e-Mail gesendet haben.
+2. **Textkörper:** Stellt Informationen zum Wert der Verwendung von @mentions in E-Mails zur Verfügung. Darüber hinaus wird der Prozentsatz @mentions Benutzer, die in den letzten 28 Tagen eine E-Mail gesendet haben, in Prozent ausgedrückt.
 
-3. **Visualisierung:** Aufschlüsselung der Antwortrate für neue e-Mail-Threads, je nachdem, ob Sie @Mentions hatten oder nicht:
+3. **Visualisierung:** Bricht die Antwortrate für neue E-Mail-Threads basierend darauf auf, ob sie @mentions oder nicht:
 
-   - **Antworten auf e-Mails mit \@ Erwähnungen:** der farbige Teil und der Bruchstellen die Antwortrate für neue e-Mail-Threads dar, die @Mentions enthalten. Dieser Anteil wird aus folgenden Bauteilen aufgebaut:
+   - **Antworten auf E-Mails mit \@ Erwähnungen:** Der farbige Teil und der Bruchteil stellen die Antwortrate für neue E-Mail-Threads dar, die @mentions. Dieser Bruchteil besteht aus:
    
-     - **Zähler:** Neue e-Mail-Threads mit @Mentions, die in den letzten 28 Tagen gestartet und eine Antwort erhalten haben.
-     - **Nenner:** Neue e-Mail-Threads mit @Mentions, die in den letzten 28 Tagen gestartet wurden.
+     - **Zähler:** Neue E-Mail-Threads mit @mentions, die in den letzten 28 Tagen gestartet und eine Antwort erhalten haben.
+     - **Nenner:** Neue E-Mail-Threads mit @mentions, die in den letzten 28 Tagen gestartet wurden.
      
-   - **Antworten auf e-Mails ohne \@ Erwähnungen:** der farbige Teil und der Bruchstellen die Antwortrate für neue e-Mail-Threads dar, die @Mentions enthalten. Dieser Anteil wird aus folgenden Bauteilen aufgebaut:
+   - **Antworten auf E-Mails ohne \@ Erwähnungen:** Der farbige Teil und der Bruchteil stellen die Antwortrate für neue E-Mail-Threads dar, die @mentions. Dieser Bruch besteht aus:
    
-     - **Zähler:** Neue e-Mail-Threads, die keine @Mentions enthalten, die in den letzten 28 Tagen gestartet wurden und auch eine Antwort erhalten haben.
-     - **Nenner:** Neue e-Mail-Threads, die nicht @Mentions enthalten, die in den letzten 28 Tagen gestartet wurden.
+     - **Zähler:** Neue E-Mail-Threads, die keine @mentions, die in den letzten 28 Tagen gestartet wurden und ebenfalls eine Antwort erhalten haben.
+     - **Nenner:** Neue E-Mail-Threads, @mentions, die in den letzten 28 Tagen gestartet wurden.
      
-4. **Anzeigen von verwandtem Inhalt:** Wählen Sie diesen Link aus, um sortierte Videos und andere verwandte Hilfeinhalte anzuzeigen.
+4. **Anzeigen von verwandten Inhalten:** Wählen Sie diesen Link aus, um sortierte Videos und andere verwandte Hilfeinhalte anzuzeigen.
 
 
-### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>Aufschlüsselung von Nachrichten nach Typ in Microsoft Teams
+### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>Aufschlüsselung der Nachrichten nach Typ in Microsoft Teams
 
-:::image type="content" source="../../media/teamsmessages.png" alt-text="! [Microsoft Teams-Nachrichtentypen.]":::
+:::image type="content" source="../../media/teamsmessages.png" alt-text="! [Teams-Nachrichtentypen.]":::
 
-1. **Kopfzeile:** Hebt die Personen, die Kanal Nachrichten gesendet haben, als Prozentsatz der Personen an, die in den letzten 28 Tagen jede Art von Nachricht (einschließlich Chat und Kanal Nachrichten) gesendet haben.
+1. **Header:** Hebt die Personen, die Kanalnachrichten gesendet haben, als Prozentsatz der Personen hervor, die in den letzten 28 Tagen eine beliebige Art von Nachricht (einschließlich Chat- und Kanalnachrichten) gesendet haben.
 
-2. **Body:** Enthält Informationen zum Nutzen von Kanal Nachrichten in Microsoft Teams.
+2. **Textkörper:** Stellt Informationen zum Wert der Verwendung von Kanalnachrichten in Microsoft Teams zur Verfügung.
 
-3. **Visualisierung:** Bricht die Verwendung von Chat-und Kanal Nachrichten ab:
+3. **Visualisierung:** Unterbricht die Verwendung von Chat- und Kanalnachrichten:
 
-      - **Personen, die Chatnachrichten senden:** Der farbige Teil und der Bruchstellen die Verwendung von Chatnachrichten in Personen dar, die Nachrichten in Microsoft Teams gesendet haben. Der Bruch wird aus folgenden Bauteilen aufgebaut:
+      - **Personen, die Chatnachrichten senden:** Der farbige Teil und der Bruchteil stellen die Verwendung von Chatnachrichten innerhalb von Personen dar, die Nachrichten in Microsoft Teams gesendet haben. Die Bruchzahl wird aus:
       
         - **Zähler:** Personen, die in den letzten 28 Tagen Chatnachrichten in Microsoft Teams gesendet haben.
         - **Nenner:** Personen, die in den letzten 28 Tagen Nachrichten in Microsoft Teams gesendet haben.
         
-      - **Personen, die Kanal Nachrichten senden:** Der farbige Teil und der Bruchstellen die Verwendung von Kanal Nachrichten in Personen dar, die Nachrichten in Microsoft Teams senden. Der Bruch wird aus folgenden Bauteilen aufgebaut:
+      - **Personen, die Kanalnachrichten senden:** Der farbige Teil und der Bruchteil stellen die Verwendung von Kanalnachrichten innerhalb von Personen dar, die Nachrichten in Microsoft Teams senden. Die Bruchzahl wird aus:
       
-        - **Zähler:** Personen, die in den letzten 28 Tagen Chatnachrichten in Microsoft Teams gesendet haben.
+        - **Zähler:** Personen, die in den letzten 28 Tagen Kanalnachrichten in Microsoft Teams gesendet haben.
         - **Nenner:** Personen, die in den letzten 28 Tagen Nachrichten in Microsoft Teams gesendet haben.
         
-4. **Anzeigen von verwandtem Inhalt:** Wählen Sie diesen Link aus, um sortierte Videos und andere verwandte Hilfeinhalte anzuzeigen.
+4. **Anzeigen von verwandten Inhalten:** Wählen Sie diesen Link aus, um sortierte Videos und andere verwandte Hilfeinhalte anzuzeigen.
 
-### <a name="questions-and-answers-in-yammer"></a>Fragen und Antworten in "jammern"
+### <a name="questions-and-answers-in-yammer"></a>Fragen und Antworten in Yammer
 
-:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Fragen und Antworten in jammern]"::: 
+:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Fragen und Antworten in Yammer]"::: 
 
-1. **Kopfzeile:** Markiert die als "Fragen zu Jammer" markierten Beiträge, die eine Antwort erhalten haben, die als &quot; beste Antwort &quot; als Prozentsatz aller Beiträge markiert ist, die als Fragen zu "jammern" in den letzten 28 Tagen gekennzeichnet sind.
+1. **Header:** Hebt die Beiträge hervor, die als Fragen auf Yammer gekennzeichnet sind und die in den letzten 28 Tagen eine Als beste Antwort gekennzeichnete Antwort als Prozentsatz aller Beiträge erhalten haben, die in Yammer als Fragen markiert &quot; &quot; wurden.
 
-2. **Body:** Enthält Informationen zum Nutzen von Fragen und Antworten in "jammern" zum Teilen von wissen.
+2. **Textkörper:** Enthält Informationen zum Nutzen der Verwendung von Fragen und Antworten in Yammer wissen teilen.
 
-3. **Visualisierung:** Die Verwendung der Fragen-und Antwortfunktion in Ihrer Organisation wird unterbrochen:
+3. **Visualisierung:** Unterbricht die Verwendung des Features "Fragen und Antworten" in Ihrer Organisation:
 
-   - **Fragen:** Der farbige Teil des Balkens und die zugehörige Zahlstellen die Gesamtzahl der in den letzten 28 Tagen als Fragen markierten Beiträge dar.
-   - **Fragen mit Antworten:** Der farbige Teil des Balkens und die zugehörige Zahlstellen die Anzahl der als Fragen markierten Beiträge dar und haben in den letzten 28 Tagen Antworten erhalten.
-   - **Fragen mit besten Antworten:** Der farbige Teil des Balkens und die zugehörige Zahlstellen die Anzahl der Beiträge dar, die als Fragen markiert wurden und &quot; &quot; in den letzten 28 Tagen auch eine beste Antwort erhalten haben.
+   - **Fragen:** Der farbige Teil der Leiste und die zugehörige Anzahl stellt die Gesamtzahl der Beiträge dar, die in den letzten 28 Tagen als Fragen markiert wurden.
+   - **Fragen mit Antworten:** Der farbige Teil der Leiste und die zugehörige Zahl stellt die Anzahl der Beiträge dar, die als Fragen markiert sind und in den letzten 28 Tagen Antworten erhalten haben.
+   - **Fragen mit besten Antworten:** Der farbige Teil der Leiste und die zugehörige Anzahl stellen die Anzahl der Beiträge dar, die als Fragen gekennzeichnet wurden und in den letzten 28 Tagen auch eine beste &quot; &quot; Antwort erhalten haben.
       
-4. **Anzeigen von verwandtem Inhalt:** Wählen Sie diesen Link aus, um sortierte Videos und andere verwandte Hilfeinhalte anzuzeigen.
+4. **Anzeigen von verwandten Inhalten:** Wählen Sie diesen Link aus, um sortierte Videos und andere verwandte Hilfeinhalte anzuzeigen.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Microsoft 365 apps Health – Technologie Erlebnisse](apps-health.md) (Artikel) \
-[Content Collaboration – Personen Erfahrungen](content-collaboration.md) (Artikel) \
-[Besprechungen – Personen Erfahrungen](meetings.md) (Artikel) \
-[Mobilität – Personen Erfahrungen](mobility.md) (Artikel) \
-[Datenschutz-Steuerelemente für Produktivitäts Bewertung](privacy.md) (Artikel) \
-[Teamwork – People Experiences](teamwork.md) (Artikel)
+[Integrität von Microsoft 365-Apps – Technologieerfahrungen](apps-health.md) (Artikel)\
+[Zusammenarbeit an Inhalten – Benutzererfahrungen](content-collaboration.md) (Artikel)\
+[Besprechungen – Benutzererfahrungen](meetings.md) (Artikel)\
+[Mobilität – Benutzererfahrungen](mobility.md) (Artikel)\
+[Datenschutzsteuerelemente für die Produktivitätsergebnis](privacy.md) (Artikel)\
+[Teamarbeit – Personenerfahrungen](teamwork.md) (Artikel)

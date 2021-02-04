@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 511f044960c5b723c8e10f6644007036c45d1f44
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 5f1f9d8c5f4e507e62de1b815d2345fc6b70bfea
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988092"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097282"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 
@@ -54,7 +54,7 @@ Um Ihnen Zeit zum Ausführen dieser Aufgaben zu geben, wird empfohlen, die Basis
 |Schutzebene|Richtlinien|Weitere Informationen|
 |---|---|---|
 |**Basisplan**|[MFA erforderlich, wenn das Anmelderisiko *mittel oder* hoch *ist*](#require-mfa-based-on-sign-in-risk)||
-||[Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](#block-clients-that-dont-support-modern-authentication)|Clients, die keine moderne Authentifizierung verwenden, können Richtlinien für bedingten Zugriff umgehen, daher ist es wichtig, diese zu blockieren.|
+||[Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](#block-clients-that-dont-support-multi-factor)|Clients, die keine moderne Authentifizierung verwenden, können Richtlinien für bedingten Zugriff umgehen, daher ist es wichtig, diese zu blockieren.|
 ||[Nutzer mit hohem Risiko müssen das Kennwort ändern](#high-risk-users-must-change-password)|Erzwingt, dass Benutzer ihr Kennwort bei der Anmeldung ändern, wenn für ihr Konto Aktivität mit hohem Risiko erkannt wird.|
 ||[Anwenden von Richtlinien zum Schutz von App-Daten](#apply-app-data-protection-policies)|Eine Intune App Protection-Richtlinie pro Plattform (Windows, iOS/iPadOS, Android).|
 ||[Genehmigte Apps und App-Schutz erforderlich](#require-approved-apps-and-app-protection)|Erzwingt den Schutz mobiler Apps für Smartphones und Tablets mit iOS, iPadOS oder Android.|
@@ -69,7 +69,7 @@ Um Ihnen Zeit zum Ausführen dieser Aufgaben zu geben, wird empfohlen, die Basis
 
 Identifizieren Sie vor dem Konfigurieren von Richtlinien die Azure AD-Gruppen, die Sie für jede Schutzebene verwenden. In der Regel gilt der grundlegende Schutz für alle In der Organisation. Einem Benutzer, der sowohl für den grundlegenden als auch den vertraulichen Schutz einbezogen wird, werden alle Basisrichtlinien sowie die vertraulichen Richtlinien angewendet. Der Schutz ist kumulativ, und die restriktivste Richtlinie wird erzwungen.
 
-Eine empfohlene Vorgehensweise besteht in der Erstellung einer Azure AD-Gruppe für den Ausschluss des bedingten Zugriffs. Fügen Sie diese Gruppe allen Richtlinien für bedingten  Zugriff im Wert **"Ausschließen"** der Einstellung "Benutzer und Gruppen" im Abschnitt **"Zuweisungen"** hinzu. Dadurch erhalten Sie eine Methode zum Bereitstellen des Zugriffs für einen Benutzer während der Behandlung von Zugriffsproblemen. Dies wird nur als temporäre Lösung empfohlen. Überwachen Sie diese Gruppe auf Änderungen, und stellen Sie sicher, dass die Ausschlussgruppe nur wie beabsichtigt verwendet wird.
+Eine empfohlene Vorgehensweise besteht in der Erstellung einer Azure AD-Gruppe für den Ausschluss des bedingten Zugriffs. Fügen Sie diese Gruppe allen Richtlinien für bedingten  Zugriff im Wert **"Ausschließen"** der Einstellung "Benutzer und Gruppen" im Abschnitt **"Zuweisungen"** hinzu. Auf diese Weise erhalten Sie eine Methode, um einem Benutzer während der Behandlung von Zugriffsproblemen Zugriffsrechte zu ermöglichen. Dies wird nur als temporäre Lösung empfohlen. Überwachen Sie diese Gruppe auf Änderungen, und stellen Sie sicher, dass die Ausschlussgruppe nur wie beabsichtigt verwendet wird.
 
 Hier ist ein Beispiel für gruppenzuweisung und Ausschlüsse für MFA erforderlich.
 
@@ -108,9 +108,9 @@ In den folgenden Tabellen werden die Richtlinieneinstellungen für bedingten Zug
 
 Im Abschnitt **"Aufgaben":**
 
-|Einstellung|Eigenschaften|Werte|Hinweise|
+|Setting|Eigenschaften|Werte|Hinweise|
 |---|---|---|---|
-|Benutzer und Gruppen|Einschließen|**Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen** aus: Wählen Sie bestimmte Gruppen aus, die Zielbenutzerkonten enthalten.|Beginnen Sie mit der Gruppe, die Pilotbenutzerkonten enthält.|
+|Benutzer und Gruppen|Einschließen|**Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen aus:** Wählen Sie bestimmte Gruppen aus, die Zielbenutzerkonten enthalten.|Beginnen Sie mit der Gruppe, die Pilotbenutzerkonten enthält.|
 ||Ausschließen|**Benutzer und Gruppen:** Wählen Sie Ihre Ausnahmegruppe für bedingten Zugriff aus. Dienstkonten (App-Identitäten).|Die Mitgliedschaft sollte bei Bedarf temporär geändert werden.|
 |Cloud-Apps oder -Aktionen|**Cloud apps > Include**|**Wählen Sie Apps** aus: Wählen Sie die Apps aus, auf die diese Richtlinie angewendet werden soll. Wählen Sie beispielsweise Exchange Online aus.||
 |Bedingungen|||Konfigurieren Sie Bedingungen, die für Ihre Umgebung und Anforderungen spezifisch sind.|
@@ -130,7 +130,7 @@ Wenden Sie die Risikoebeneneinstellungen basierend auf der Zielschutzebene an.
 
 Im Abschnitt **"Access-Steuerelemente":**
 
-|Einstellung|Eigenschaften|Werte|Aktion|
+|Setting|Eigenschaften|Werte|Aktion|
 |---|---|---|---|
 |Gewähren|**Grant access**||Auswählen|
 |||**Mehrstufige Authentifizierung erforderlich**|Scheck|
@@ -143,25 +143,25 @@ Wählen Sie schließlich **"Ein"** für **"Richtlinie aktivieren"** und dann **"
 
 Erwägen Sie auch die Verwendung des [Tools "Was wäre](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) wenn", um die Richtlinie zu testen.
 
-## <a name="block-clients-that-dont-support-modern-authentication"></a>Sperrt Clients, die moderne Authentifizierung nicht unterstützen
+## <a name="block-clients-that-dont-support-multi-factor"></a>Blockieren von Clients, die keine mehrstufigen Clients unterstützen
 
-Verwenden Sie die Einstellungen in diesen Tabellen für eine Richtlinie für bedingten Zugriff, um Clients zu blockieren, die die moderne Authentifizierung nicht unterstützen.
+Verwenden Sie die Einstellungen in diesen Tabellen für eine Richtlinie für bedingten Zugriff, um Clients zu blockieren, die die mehrstufige Authentifizierung nicht unterstützen.
 
-In [diesem Artikel finden](../../enterprise/microsoft-365-client-support-modern-authentication.md) Sie eine Liste der Clients in Microsoft 365, die die moderne Authentifizierung unterstützen.
+In [diesem Artikel finden](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md) Sie eine Liste der Clients in Microsoft 365, die die mehrstufige Authentifizierung unterstützen.
 
 Im Abschnitt **"Aufgaben":**
 
-|Einstellung|Eigenschaften|Werte|Hinweise|
+|Setting|Eigenschaften|Werte|Hinweise|
 |---|---|---|---|
 |Benutzer und Gruppen|Einschließen|**Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen** aus: Wählen Sie bestimmte Gruppen aus, die Zielbenutzerkonten enthalten.|Beginnen Sie mit der Gruppe, die Pilotbenutzerkonten enthält.|
-||Ausschließen|**Benutzer und Gruppen:** Wählen Sie Ihre Ausnahmegruppe für bedingten Zugriff aus. Dienstkonten (App-Identitäten).|Die Mitgliedschaft sollte bei Bedarf temporär geändert werden.|
+||Ausschließen|**Benutzer und Gruppen:** Wählen Sie Ihre Ausnahmegruppe für bedingten Zugriff aus. Dienstkonten (App-Identitäten).|Die Mitgliedschaft sollte bei Bedarf vorübergehend geändert werden.|
 |Cloud-Apps oder -Aktionen|**Cloud apps > Include**|**Wählen Sie Apps** aus: Wählen Sie die Apps aus, die den Clients entspricht, die die moderne Authentifizierung nicht unterstützen.||
 |Bedingungen|**Client-Apps**|Wählen **Sie "Ja"** für **"Konfigurieren" aus.** <p> Deaktivieren Der Kontrollkästchen für **Browser- und** **mobile Apps und Desktopclients**||
 |
 
 Im Abschnitt **"Access-Steuerelemente":**
 
-|Einstellung|Eigenschaften|Werte|Aktion|
+|Setting|Eigenschaften|Werte|Aktion|
 |---|---|---|---|
 |Gewähren|**Zugriff blockieren**||Auswählen|
 ||**Alle ausgewählten Steuerelemente erforderlich**||Auswählen|
@@ -211,25 +211,25 @@ App Protection Policies (APP) definieren, welche Apps zulässig sind und welche 
 
 Das Framework für den Schutz von APP-Daten ist in drei verschiedene Konfigurationsebenen geordnet, auf der jede Ebene auf der vorherigen Ebene aufbaut:
 
-- **Der grundlegende Datenschutz** in Unternehmen (Stufe 1) stellt sicher, dass Apps mit einer PIN geschützt und verschlüsselt sind und selektive Zurücklöschvorgänge durchführt. Für Android-Geräte überprüft diese Stufe den Android-Geräte-Nachweis. Dies ist eine Einstiegsebenenkonfiguration, die eine ähnliche Steuerung des Datenschutzes in Exchange Online-Postfachrichtlinien bietet und DIE IT und die Benutzerpopulation in APP einleite.
+- **Der grundlegende Datenschutz in** Unternehmen (Stufe 1) stellt sicher, dass Apps mit einer PIN geschützt und verschlüsselt sind und selektive Zurücklöschvorgänge durchführt. Für Android-Geräte überprüft diese Stufe den Android-Geräte-Nachweis. Dies ist eine Einstiegsebenenkonfiguration, die eine ähnliche Steuerung des Datenschutzes in Exchange Online-Postfachrichtlinien bietet und DIE IT und die Benutzerpopulation in APP einleite.
 - **Der erweiterte Datenschutz** in Unternehmen (Stufe 2) führt Mechanismen zur Verhinderung von Datenverlusten und Mindestanforderungen des Betriebssystems ein. Dies ist die Konfiguration, die für die meisten mobilen Benutzer gilt, die auf Arbeits- oder Schuldaten zugreifen.
-- **Der hohe Datenschutz in** Unternehmen (Stufe 3) führt erweiterte Datenschutzmechanismen, eine erweiterte PIN-Konfiguration und app-mobile Bedrohungsabwehr ein. Diese Konfiguration ist für Benutzer wünschenswert, die auf Daten mit hohem Risiko zugreifen.
+- **Der hohe Datenschutz** in Unternehmen (Stufe 3) führt erweiterte Datenschutzmechanismen, eine erweiterte PIN-Konfiguration und app-mobile Bedrohungsabwehr ein. Diese Konfiguration ist für Benutzer wünschenswert, die auf Daten mit hohem Risiko zugreifen.
 
 Um die spezifischen Empfehlungen für die einzelnen Konfigurationsebenen und die mindesten zu schützende Apps zu sehen, überprüfen Sie das [Datenschutzframework mithilfe von App-Schutzrichtlinien.](https://docs.microsoft.com/mem/intune/apps/app-protection-framework)
 
-Unter Verwendung der in Identitäts- und [Gerätezugriffskonfigurationen](microsoft-365-policies-configurations.md)beschriebenen Prinzipien sind die Schutzebenen "Basisplan" und "Vertraulich" eng mit den erweiterten Datenschutzeinstellungen der Stufe 2 im Unternehmen verknüpft. Die Schutzebene "Streng reguliert" ist eng mit den Einstellungen für hohen Datenschutz der Stufe 3 im Unternehmen verknüpft.
+Unter Verwendung der in Identitäts- und [Gerätezugriffskonfigurationen](microsoft-365-policies-configurations.md)beschriebenen Prinzipien sind die Schutzebenen "Basisplan" und "Vertraulich" eng mit den erweiterten Datenschutzeinstellungen der Stufe 2 im Unternehmen verknüpft. Die Schutzebene für hochgradig regulierte Daten ist eng mit den Einstellungen für hohen Datenschutz in Unternehmen der Stufe 3 verknüpft.
 
 |Schutzebene|App-Schutz-Richtlinie|Weitere Informationen|
 |---|---|---|
 |Baseline|[Erweiterter Datenschutz auf Ebene 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Die in Ebene 2 erzwungenen Richtlinieneinstellungen umfassen alle richtlinieneinstellungen, die für Stufe 1 empfohlen werden, und fügen nur die folgenden Richtlinieneinstellungen hinzu oder aktualisieren sie, um mehr Steuerelemente und eine komplexere Konfiguration als Stufe 1 zu implementieren.|
 |Vertraulich|[Erweiterter Datenschutz auf Ebene 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|Die in Ebene 2 erzwungenen Richtlinieneinstellungen umfassen alle richtlinieneinstellungen, die für Stufe 1 empfohlen werden, und fügen nur die folgenden Richtlinieneinstellungen hinzu oder aktualisieren sie, um mehr Steuerelemente und eine komplexere Konfiguration als Stufe 1 zu implementieren.|
-|Hochgradig reguliert|[Hoher Datenschutz für Unternehmen der Stufe 3](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|Die in Ebene 3 erzwungenen Richtlinieneinstellungen umfassen alle richtlinieneinstellungen, die für die Ebene 1 und 2 empfohlen werden, und fügen nur die folgenden Richtlinieneinstellungen hinzu oder aktualisieren sie, um mehr Steuerelemente und eine komplexere Konfiguration als Stufe 2 zu implementieren.|
+|Hochgradig reguliert|[Hoher Datenschutz für Unternehmen der Stufe 3](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|Die in Ebene 3 erzwungenen Richtlinieneinstellungen umfassen alle Richtlinieneinstellungen, die für die Ebene 1 und 2 empfohlen werden, und fügen nur die folgenden Richtlinieneinstellungen hinzu oder aktualisieren sie, um mehr Steuerelemente und eine komplexere Konfiguration als Stufe 2 zu implementieren.|
 |
 
 Zum Erstellen einer neuen App-Schutzrichtlinie für jede Plattform (iOS und Android) innerhalb von Microsoft Endpoint Manager mithilfe der Datenschutzframeworkeinstellungen können Sie:
 
 1. Erstellen Sie die Richtlinien manuell, indem Sie die Schritte in "Erstellen und Bereitstellen von [App-Schutzrichtlinien mit Microsoft Intune" ausführen.](https://docs.microsoft.com/mem/intune/apps/app-protection-policies)
-2. Importieren Sie die [Beispiel-Intune-App-Schutzrichtlinien-Konfigurationsframework-JSON-Vorlagen](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) mit [den PowerShell-Skripts von Intune.](https://github.com/microsoftgraph/powershell-intune-samples)
+2. Importieren Sie die [Intune App Protection Policy Configuration Framework-JSON-Beispielvorlagen](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) mit den [PowerShell-Skripts von Intune.](https://github.com/microsoftgraph/powershell-intune-samples)
 
 ## <a name="require-approved-apps-and-app-protection"></a>Erfordert genehmigte Apps und app-Schutz
 
@@ -248,7 +248,7 @@ Um die Richtlinie für bedingten Zugriff zu erstellen, die Edge für iOS und And
 
  Diese Richtlinien nutzen die Erteilungssteuerelemente ["Genehmigte Client-App erforderlich"](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) und ["App-Schutzrichtlinie erforderlich".](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)
 
-Durch das Blockieren der Legacyauthentifizierung für andere Client-Apps auf iOS- und Android-Geräten wird sichergestellt, dass diese Clients Richtlinien für bedingten Zugriff nicht umgehen können. Wenn Sie den Anweisungen in diesem Artikel folgen, haben Sie bereits Blockclients konfiguriert, die die moderne [Authentifizierung nicht unterstützen.](#block-clients-that-dont-support-modern-authentication)
+Durch das Blockieren der Legacyauthentifizierung für andere Client-Apps auf iOS- und Android-Geräten wird sichergestellt, dass diese Clients Richtlinien für bedingten Zugriff nicht umgehen können. Wenn Sie den Anweisungen in diesem Artikel folgen, haben Sie bereits Blockclients konfiguriert, die die moderne [Authentifizierung nicht unterstützen.](#block-clients-that-dont-support-multi-factor)
 
 <!---
 With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several Conditional Access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).

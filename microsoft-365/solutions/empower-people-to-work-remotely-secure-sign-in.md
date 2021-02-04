@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Fordern Sie Ihre Remote-Mitarbeiter auf, sich mit der Mehrstufigen Authentifizierung (MFA) anzumelden.
-ms.openlocfilehash: 85bac90085b47b5114db875c822d98aa1365cf97
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 7df6b1335c0ca45c06eee98eeff89f59b6365807
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558164"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097140"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Schritt 1. Erhöhen Sie die Anmeldesicherheit für Remote-Mitarbeiter mit MFA
 
@@ -38,12 +38,12 @@ Es gibt drei Möglichkeiten, von Ihren Nutzern die Verwendung von MFA basierend 
 |---------|---------|
 |Alle Microsoft 365-Pläne (ohne Azure AD Premium P1- oder P2-Lizenzen)     |[Aktivieren Sie die Sicherheitsstandards in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Zu den Sicherheitsstandards in Azure AD gehört MFA für Nutzer und Administratoren.   |
 |Microsoft 365 E3 (einschließlich Azure AD Premium P1-Lizenzen)     | Verwenden Sie [Allgemeine Richtlinien für den bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common), um die folgenden Richtlinien zu konfigurieren: <br>- [MFA für Administratoren erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [MFA für alle Nutzer erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Blockieren von Legacy-Authentifizierung](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (einschließlich Azure AD Premium P2-Lizenzen)     | Nutzen Sie Azure AD-Identity Protection, beginnen Sie mit der Implementierung des von Microsoft [empfohlenen Satzes von bedingtem Zugriff und zugehörigen Richtlinien](../security/office-365-security/identity-access-policies.md), indem Sie diese Richtlinien erstellen:<br> - [MFA erforderlich, wenn das Anmelderisiko mittel oder hoch ist](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Nutzer mit hohem Risiko müssen das Kennwort ändern](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E5 (einschließlich Azure AD Premium P2-Lizenzen)     | Nutzen Sie Azure AD-Identity Protection, beginnen Sie mit der Implementierung des von Microsoft [empfohlenen Satzes von bedingtem Zugriff und zugehörigen Richtlinien](../security/office-365-security/identity-access-policies.md), indem Sie diese Richtlinien erstellen:<br> - [MFA erforderlich, wenn das Anmelderisiko mittel oder hoch ist](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br>- [Nutzer mit hohem Risiko müssen das Kennwort ändern](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ## <a name="security-defaults"></a>Sicherheitsstandards
 
-Die Sicherheitsstandards sind eine neue Funktion für kostenpflichtige Microsoft 365- und Office 365- oder Testabonnements, die nach dem 21. Oktober 2019 erstellt wurden. Bei diesen Abonnements sind die Sicherheitsstandards aktiviert, sodass **alle Nutzer MFA mit der Microsoft Authenticator-App verwenden müssen** _.
+Die Sicherheitsstandards sind eine neue Funktion für kostenpflichtige Microsoft 365- und Office 365- oder Testabonnements, die nach dem 21. Oktober 2019 erstellt wurden. Bei diesen Abonnements sind die Sicherheitsstandards aktiviert, sodass ***alle Nutzer MFA mit der Microsoft Authenticator-App verwenden müssen***.
  
 Nutzer haben 14 Tage Zeit, sich mit ihrem Smartphone mit der Microsoft Authenticator-App für MFA zu registrieren. Dies beginnt mit der ersten Anmeldung, nachdem die Sicherheitsstandards aktiviert wurden. Nach Ablauf von 14 Tagen kann sich der Nutzer erst nach Abschluss der MFA-Registrierung anmelden.
 
@@ -91,7 +91,7 @@ Diese Tabelle zeigt die Ergebnisse der Aktivierung von MFA mit Sicherheitsstanda
 
 | Methode | Aktiviert | Deaktiviert | Zusätzliche Authentifizierungsmethode |
 |:-------|:-----|:-------|:-------|
-| _ *Sicherheitsstandards**  | Richtlinien für bedingten Zugriff können nicht verwendet werden | Richtlinien für den bedingten Zugriff können verwendet werden | Microsoft Authenticator-App |
+| **Sicherheitsstandards**  | Richtlinien für bedingten Zugriff können nicht verwendet werden | Richtlinien für den bedingten Zugriff können verwendet werden | Microsoft Authenticator-App |
 | **Richtlinien für bedingten Zugriff** | Wenn welche aktiviert sind, können Sie die Sicherheitsstandards nicht aktivieren | Wenn alle deaktiviert sind, können Sie die Sicherheitsstandards aktivieren  | Werden vom Benutzer während der MFA-Registrierung festgelegt  |
 ||||
 

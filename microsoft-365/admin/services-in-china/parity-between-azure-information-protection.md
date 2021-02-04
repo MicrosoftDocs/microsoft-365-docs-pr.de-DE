@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: Erfahren Sie mehr über Azure Information Protection (AIP) für Office 365, betrieben von 21Vianet, und wie Sie es für Kunden in China konfigurieren.
 monikerRange: o365-21vianet
-ms.openlocfilehash: cee50384587ffc3e1e43eb9c6bb07d2e0ced7e13
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 300e7633237511fb9de64199ae7cf54594f2239e
+ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988044"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099678"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Azure Information Protection-Unterstützung für Office 365, betrieben von 21Vianet
 
@@ -51,12 +51,14 @@ Die folgende Liste enthält die bestehenden Lücken zwischen AIP für Office 365
 
 - Der [mobile Viewer](/azure/information-protection/rms-client/mobile-app-faq) wird von Azure China 21Vianet nicht unterstützt.
 
+- Der AIP-Bereich des Azure-Portals ist für Kunden in China nicht verfügbar. Verwenden [Sie PowerShell-Befehle,](#step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) anstatt Aktionen im Portal auszuführen, z. B. das Installieren des lokalen Scanners und das Verwalten Ihrer Inhaltsscanaufträge.
+
 ## <a name="configure-aip-for-customers-in-china"></a>Konfigurieren von AIP für Kunden in China
 
 So konfigurieren Sie AIP für Kunden in China:
 1. [Aktivieren Sie die Rechteverwaltung für den Mandanten.](#step-1-enable-rights-management-for-the-tenant)
 
-2. [Konfigurieren Sie die DNS-Verschlüsselung.](#step-2-configure-dns-encryption)
+2. [Konfigurieren sie die DNS-Verschlüsselung.](#step-2-configure-dns-encryption)
 
 3. [Installieren und konfigurieren Sie den AIP-Client für einheitliche Bezeichnungen.](#step-3-install-and-configure-the-aip-unified-labeling-client)
 
@@ -76,7 +78,7 @@ Damit die Verschlüsselung ordnungsgemäß funktioniert, muss RMS für den Manda
     4. Stellen Sie eine Verbindung mit dem Dienst mithilfe von `Connect-AipService -environmentname azurechinacloud` .
     5. Führen Sie `(Get-AipServiceConfiguration).FunctionalState` die Ausführung aus, und überprüfen Sie, ob der Status `Enabled` .
 
-2. Wenn der Funktionsstatus "ist" `Disabled` ist, führen Sie `Enable-AipService` .
+2. Wenn der Funktionsstatus `Disabled` ist, führen Sie `Enable-AipService` .
 
 ### <a name="step-2-configure-dns-encryption"></a>Schritt 2: Konfigurieren der DNS-Verschlüsselung
 
@@ -140,13 +142,13 @@ AIP-Apps unter Windows benötigen den folgenden Registrierungsschlüssel, um sie
 - Typ = `REG_DWORD`
 
 > [!IMPORTANT]
-> Stellen Sie sicher, dass Sie den Registrierungsschlüssel nach einer Deinstallation nicht löschen. Wenn der Schlüssel leer, falsch oder nicht vorhanden ist, verhält sich die Funktionalität wie der Standardwert (Standardwert = 0 für die kommerzielle Cloud). Wenn der Schlüssel leer oder falsch ist, wird dem Protokoll auch ein Druckfehler hinzugefügt.
+> Stellen Sie sicher, dass Sie den Registrierungsschlüssel nach einer Deinstallation nicht löschen. Wenn der Schlüssel leer, falsch oder nicht vorhanden ist, verhält sich die Funktionalität als Standardwert (Standardwert = 0 für die kommerzielle Cloud). Wenn der Schlüssel leer oder falsch ist, wird dem Protokoll auch ein Druckfehler hinzugefügt.
 
 ### <a name="step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs"></a>Schritt 5: Installieren des lokalen AIP-Scanners und Verwalten von Inhaltsscanaufträgen
 
 Installieren Sie den lokalen AIP-Scanner, um Ihr Netzwerk und Ihre Inhaltsfreigaben auf vertrauliche Daten zu überprüfen, und wenden Sie Klassifizierungs- und Schutzbezeichnungen an, wie in der Richtlinie Ihrer Organisation konfiguriert.
 
-Verwenden Sie beim Installieren des Scanners und beim Verwalten Ihrer Aufträge zum Überprüfen von Inhalten die folgenden Cmdlets anstelle der Azure-Portal-Schnittstelle, die von den kommerziellen Angeboten verwendet wird:<br><br>
+Verwenden Sie bei der Installation des Scanners und beim Verwalten Ihrer Inhaltsscanaufträge die folgenden Cmdlets anstelle der Azure-Portal-Schnittstelle, die von den kommerziellen Angeboten verwendet wird:<br><br>
 
 | Cmdlet | Beschreibung |
 |--|--|

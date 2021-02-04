@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie, wie Sie das Report Message-Add-In für Outlook und Outlook im Web, für einzelne Benutzer oder ihre gesamte Organisation aktivieren.
+description: Erfahren Sie, wie Sie das Report Message-Add-In für Outlook und Outlook im Web, für einzelne Benutzer oder die gesamte Organisation aktivieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1f8cffaa6346ec7f426da3c862014ed85a9a367
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 9b21472736cff2fd0eed7da5495ab6aae597032f
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029232"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094855"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivieren des Add-Ins „Nachrichten melden“
 
@@ -32,7 +32,7 @@ ms.locfileid: "50029232"
 > [!NOTE]
 > Wenn Sie ein Administrator in einer Microsoft 365-Organisation mit Exchange Online-Postfächern sind, empfehlen wir die Verwendung des Übermittlungsportals im Security & Compliance Center. Weitere Informationen finden Sie unter ["Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft ".](admin-submission.md)
 
-Die "Nachricht melden" und "Phishing melden"-Add-Ins für Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) ermöglichen es Benutzern, falsch positive Ergebnisse (eine gute E-Mail als schlecht markiert) oder falsch negative Ergebnisse (ungültige E-Mails sind zulässig) einfach zur Analyse an Microsoft und seine Partner zu melden.
+Die "Nachricht melden" und "Phishing melden"-Add-Ins für Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) ermöglichen Es Benutzern, falsch positive Ergebnisse (eine gute E-Mail als schlecht markiert) oder falsch negative Ergebnisse (ungültige E-Mails sind zulässig) zur Analyse an Microsoft und seine Partner zu melden.
 
 Microsoft verwendet diese Übermittlungen, um die Effektivität von E-Mail-Schutztechnologien zu verbessern. Wenn Benutzer beispielsweise viele Nachrichten melden, die mithilfe des Add-Ins "Nachricht melden" als Junk-E-Mail gekennzeichnet wurden, muss das Sicherheitsteam Ihrer Organisation möglicherweise [Antispamrichtlinien anpassen.](configure-your-spam-filter-policies.md)
 
@@ -52,10 +52,11 @@ Wenn Sie ein globaler Administrator oder Exchange Online-Administrator sind und 
   - Outlook 2013 SP1 oder höher
   - Outlook 2016 für Mac
   - Outlook im Lieferumfang von Microsoft 365 Apps for Enterprise
+  - Outlook-App für iOS und Android
 
 - Das Report Message-Add-In ist für Postfächer in lokalen Exchange-Organisationen nicht verfügbar.
 
-- Sie können gemeldete Nachrichten so konfigurieren, dass sie kopiert oder an ein von Ihnen festgelegtes Postfach umgeleitet werden. Weitere Informationen finden Sie unter [Benutzerübermittlungsrichtlinien.](user-submission.md)
+- Sie können gemeldete Nachrichten so konfigurieren, dass sie kopiert oder an ein von Ihnen festgelegtes Postfach umgeleitet werden. Weitere Informationen finden Sie unter [Richtlinien für Benutzerübermittlungen.](user-submission.md)
 
 - Ihr vorhandener Webbrowser sollte mit dem Add-In "Nachricht melden" funktionieren. Wenn Sie jedoch feststellen, dass das Add-in nicht verfügbar ist oder nicht wie erwartet funktioniert, versuchen Sie es in einem anderen Browser.
 
@@ -73,13 +74,13 @@ Wenn Sie ein globaler Administrator oder Exchange Online-Administrator sind und 
 
 3. Überprüfen Sie im angezeigten Dialogfeld die Nutzungsbedingungen und die Datenschutzrichtlinie, und klicken Sie dann auf **"Weiter".**
 
-4. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Firmenkonto (zur geschäftlichen Nutzung) oder Ihrem Microsoft-Konto (zur persönlichen Verwendung) an.
+4. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Firmenkonto (zur geschäftlichen Nutzung) oder Ihrem Microsoft-Konto (zur persönlichen Nutzung) an.
 
 Nachdem das Add-in installiert und aktiviert wurde, werden die folgenden Symbole angezeigt:
 
 - In Outlook sieht das Symbol wie hier dargestellt aus:
 
-  ![Add-In-Symbol "Nachricht melden" für Outlook](../../media/OutlookReportMessageIcon.png)
+  ![Symbol für Das Add-In"-Symbol "Nachricht melden" für Outlook](../../media/OutlookReportMessageIcon.png)
 
 - In Outlook im Web sieht das Symbol wie hier dargestellt aus:
 
@@ -154,7 +155,7 @@ Wenn Sie Benutzer über das Add-In "Nachricht melden" benachrichtigen, fügen Si
 
 1. Wechseln Sie im Microsoft 365 Admin Center  zur Seite \> **"Einstellungen-Add-Ins".** Wenn die <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> **Add-In-Seite**  nicht angezeigt wird, wechseln \>  \>   Sie oben auf der Seite "Integrierte Apps" zum Link "Integrierte Apps".
 
-   ![Seite "Add-Ins Dienste und Dienste" im neuen Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Seite Add-Ins Dienste und Dienste im neuen Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. Suchen Sie das Add-In **"Nachricht melden",** und wählen Sie es aus.
 

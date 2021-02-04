@@ -13,15 +13,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Erhalten Sie die neuesten hardwarebasierten Isolationsanforderungen. Verhindern Sie, dass aktuelle und neue Angriffe wie Exploits oder schädliche Links die Produktivität der Mitarbeiter und die Unternehmenssicherheit beeinträchtigen.
+description: Holen Sie sich die neuesten Informationen zur hardwarebasierten Isolation. Verhindern Sie, dass aktuelle und neue Angriffe wie Exploits oder bösartige Links die Produktivität der Mitarbeiter und die Unternehmenssicherheit beeinträchtigen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9a9c9270f61661982108da518d1bf24d2a717b6a
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: cf02f6776eb68537486b49c4fe45e8f88eeb38c6
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029726"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094879"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard für Office für Administratoren
 
@@ -40,10 +40,10 @@ Microsoft Defender Application Guard für Office (Application Guard für Office)
 ### <a name="minimum-software-requirements"></a>Mindestanforderungen an die Software
 
 * **Windows 10**: Windows 10 Enterprise Edition, Client Build Version 2004 (20H1) Build 19041 oder höher
-* **Office**: Office Current Channel Build Version 2011 16.0.13530.10000 oder höher
-* **Updatepaket:** Kumulatives monatliches Sicherheitsupdate für Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
+* **Office:** Office Current Channel Build Version 2011 16.0.13530.10000 oder höher. Sowohl 32-Bit- als auch 64-Bit-Versionen von Office werden unterstützt.
+* **Updatepaket**: Windows 10 kumulatives monatliches Sicherheitsupdate [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
-Ausführliche Systemanforderungen finden Sie in den [Systemanforderungen für Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Weitere Informationen zu Office-Updatekanälen finden Sie unter [Übersicht über Updatekanäle für Microsoft 365.](https://docs.microsoft.com/deployoffice/overview-update-channels)
+Ausführliche Systemanforderungen finden Sie in den [Systemanforderungen für Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Weitere Informationen zu Office-Updatekanälen finden Sie [unter Übersicht über Updatekanäle für Microsoft 365.](https://docs.microsoft.com/deployoffice/overview-update-channels)
 
 ### <a name="licensing-requirements"></a>Lizenzierungsanforderungen
 
@@ -55,7 +55,7 @@ Ausführliche Systemanforderungen finden Sie in den [Systemanforderungen für Mi
 
 1. Herunterladen und Installieren der kumulativen monatlichen **Sicherheitsupdates für Windows 10 KB4571756**.
 
-2. Wählen **Sie Microsoft Defender Application Guard** unter "Windows-Features" aus, und wählen Sie **"OK" aus.** Wenn Sie das Application Guard-Feature aktivieren, wird ein Systemneustart aufgefordert. Sie können den Neustart jetzt oder nach Schritt 3 durchführen.
+2. Wählen **Sie Microsoft Defender Application Guard** unter "Windows-Features" aus, und wählen Sie **"OK" aus.** Wenn Sie das Application Guard-Feature aktivieren, wird ein Systemneustart aufgefordert. Sie können einen Neustart jetzt oder nach Schritt 3 durchführen.
 
    ![Dialogfeld "Windows-Features" mit AG](../../media/ag03-deploy.png)
 
@@ -77,7 +77,7 @@ Ausführliche Systemanforderungen finden Sie in den [Systemanforderungen für Mi
 
 ### <a name="set-diagnostics--feedback-to-send-full-data"></a>Festlegen des Feedbacks & Diagnose, um vollständige Daten zu senden
 
-Dieser Schritt stellt sicher, dass die zum Identifizieren und Beheben von Problemen erforderlichen Daten Microsoft erreichen. Führen Sie die folgenden Schritte aus, um die Diagnose auf Ihrem Windows-Gerät zu aktivieren:
+Mit diesem Schritt wird sichergestellt, dass die zum Identifizieren und Beheben von Problemen erforderlichen Daten Microsoft erreichen. Führen Sie die folgenden Schritte aus, um die Diagnose auf Ihrem Windows-Gerät zu aktivieren:
 
 1. Öffnen **Sie "Einstellungen"** im Startmenü.
 
@@ -115,7 +115,7 @@ Beim Öffnen sollte die Datei einige visuelle Indikatoren anzeigen, dass die Dat
 
 ## <a name="configure-application-guard-for-office"></a>Konfigurieren von Application Guard für Office
 
-Office unterstützt die folgenden Richtlinien, damit Sie die Funktionen von Application Guard für Office konfigurieren können. Diese Richtlinien können über Gruppenrichtlinien oder den Office-Cloudrichtliniendienst konfiguriert werden.
+Office unterstützt die folgenden Richtlinien, mit denen Sie die Funktionen von Application Guard für Office konfigurieren können. Diese Richtlinien können über Gruppenrichtlinien oder den Office-Cloudrichtliniendienst konfiguriert werden.
 
 > [!NOTE]
 > Durch das Konfigurieren dieser Richtlinien können einige Funktionen für Dateien deaktiviert werden, die in Application Guard für Office geöffnet werden.
@@ -123,20 +123,20 @@ Office unterstützt die folgenden Richtlinien, damit Sie die Funktionen von Appl
 |Richtlinie|Beschreibung|
 |---|---|
 |Verwenden Sie Application Guard nicht für Office.|Wenn Sie diese Richtlinie aktivieren, werden Word, Excel und PowerPoint dazu zwingen, den Isolationscontainer "Geschützte Ansicht" anstelle von Application Guard für Office zu verwenden. Diese Richtlinie kann verwendet werden, um Application Guard für Office vorübergehend zu deaktivieren, wenn probleme beim Aktivieren für Microsoft Edge auftreten.|
-|Konfigurieren der Vorerstellung von Application Guard für Office-Container|Diese Richtlinie bestimmt, ob der Application Guard für Office-Container zum Isolieren nicht vertrauenswürdiger Dateien vorab erstellt wurde, um die Laufzeitleistung zu verbessern. Wenn Sie diese Einstellung aktivieren, können Sie die Anzahl der Tage angeben, um mit der Vorerstellung eines Containers fortzufahren oder den Container von der in Office integrierten Heuristik vorab erstellen zu lassen.
+|Konfigurieren der Vorerstellung von Application Guard für Office-Container|Diese Richtlinie bestimmt, ob der Application Guard für Office-Container zum Isolieren nicht vertrauenswürdiger Dateien vorab erstellt wurde, um die Laufzeitleistung zu verbessern. Wenn Sie diese Einstellung aktivieren, können Sie die Anzahl der Tage angeben, um die vor dem Erstellen eines Containers fortzufahren, oder den Container von der integrierten Heuristik von Office vorab erstellen lassen.
 |Kopieren/Einfügen für In Application Guard für Office geöffnete Office-Dokumente nicht zulassen|Wenn Sie diese Richtlinie aktivieren, wird verhindert, dass ein Benutzer Inhalte aus einem In Application Guard für Office geöffneten Dokument in ein Außerhalb geöffnetes Dokument kopiert und einfügen kann.|
 |Deaktivieren der Hardwarebeschleunigung in Application Guard für Office|Diese Richtlinie steuert, ob Application Guard für Office die Hardwarebeschleunigung zum Rendern von Grafiken verwendet. Wenn Sie diese Einstellung aktivieren, verwendet Application Guard für Office das softwarebasierte Rendering (CPU) und wird keine Grafiktreiber von Drittanbietern laden oder mit verbundener Grafikhardware interagieren.
 |Deaktivieren des Schutzes nicht unterstützter Dateitypen in Application Guard für Office|Diese Richtlinie steuert, ob Application Guard für Office das Öffnen nicht unterstützter Dateitypen blockiert oder ob die Umleitung zur geschützten Ansicht aktiviert wird.
-|Deaktivieren des Kamera- und Mikrofonzugriffs für Dokumente, die in Application Guard für Office geöffnet wurden|Wenn Sie diese Richtlinie aktivieren, wird der Zugriff von Office auf die Kamera und das Mikrofon in Application Guard für Office entfernt.|
+|Deaktivieren des Kamera- und Mikrofonzugriffs für Dokumente, die in Application Guard für Office geöffnet wurden|Durch Aktivieren dieser Richtlinie wird der Zugriff von Office auf die Kamera und das Mikrofon in Application Guard für Office entfernt.|
 |Einschränken des Druckens von Dokumenten, die in Application Guard für Office geöffnet werden|Durch Aktivieren dieser Richtlinie werden die Drucker, auf die ein Benutzer drucken kann, aus einer in Application Guard für Office geöffneten Datei begrenzt. Sie können diese Richtlinie beispielsweise verwenden, um Benutzer auf das Drucken in PDF zu beschränken.|
-|Verhindern, dass Benutzer Application Guard for Office Protection für Dateien entfernen|Wenn Sie diese Richtlinie aktivieren, wird die Option (innerhalb der Office-Anwendungserfahrung) zum Deaktivieren des Application Guard für Office-Schutzes oder zum Öffnen einer Datei außerhalb von Application Guard für Office entfernt. <p> **Hinweis:** Benutzer können diese Richtlinie weiterhin umgehen, indem sie die Mark-of-the-Web-Eigenschaft manuell aus der Datei entfernen oder ein Dokument an einen vertrauenswürdigen Speicherort verschieben.|
+|Verhindern, dass Benutzer Application Guard for Office Protection für Dateien entfernen|Wenn Sie diese Richtlinie aktivieren, wird die Option (innerhalb der Office-Anwendungserfahrung) zum Deaktivieren von Application Guard for Office Protection oder zum Öffnen einer Datei außerhalb von Application Guard für Office entfernt. <p> **Hinweis:** Benutzer können diese Richtlinie weiterhin umgehen, indem sie die Mark-of-the-Web-Eigenschaft manuell aus der Datei entfernen oder ein Dokument an einen vertrauenswürdigen Speicherort verschieben.|
 |
 
 > [!NOTE]
 > Die folgenden Richtlinien erfordern, dass sich der Benutzer abmeldet und sich erneut bei Windows anmeldet, um wirksam zu werden:
 >
 > * Kopieren/Einfügen für Dokumente deaktivieren, die in Application Guard für Office geöffnet wurden
-> * Einschränken des Druckens für Dokumente, die in Application Guard für Office geöffnet wurden
+> * Einschränken des Druckens für Dokumente, die in Application Guard für Office geöffnet werden
 > * Deaktivieren des Kamera- und Mikrofonzugriffs auf Dokumente, die in Application Guard für Office geöffnet wurden
 
 ## <a name="submit-feedback"></a>Feedback senden
@@ -169,7 +169,7 @@ Wenn beim Starten von Application Guard für Office Probleme auftreten, wird emp
 
    5. Wählen Sie die **Kachel "Aufzeichnung beenden"** aus.
 
-   6. Lassen Sie alle ausgeführten Application Guard-Instanz(en) auch für einige Minuten nach der Übermittlung geöffnet, sodass auch containerdiagnosen erfasst werden können.
+   6. Lassen Sie alle ausgeführten Application Guard-Instanzen geöffnet, auch für einige Minuten nach der Übermittlung, damit auch containerdiagnosen erfasst werden können.
 
 8. Fügen Sie alle relevanten Screenshots oder Dateien im Zusammenhang mit dem Problem an.
 
@@ -194,11 +194,11 @@ Sie können Microsoft Defender für Office 365 auch für die Verwendung mit Defe
   ![Dialogfeld mit der Aussage, dass diese Funktion nicht verfügbar ist, um Die Sicherheit zu gewährleisten](../../media/ag10-limitations.png)
 
   > [!NOTE]
-  > Raten Sie Benutzern, den Schutz nur zu entfernen, wenn sie der Datei und ihrer Quelle vertrauen oder woher sie stammt.
+  > Empfehlen Sie Benutzern, den Schutz nur zu entfernen, wenn sie der Datei und ihrer Quelle vertrauen oder woher sie stammt.
 
 * Aktive Inhalte in Dokumenten wie Makros und ActiveX sind in Application Guard für Office deaktiviert. Benutzer müssen den Application Guard-Schutz entfernen, um aktive Inhalte zu aktivieren.
 
-* Nicht vertrauenswürdige Dateien aus Netzwerkfreigaben oder Dateien, die von OneDrive, OneDrive for Business oder SharePoint Online aus einer anderen Organisation freigegeben wurden, sind in Application Guard schreibgeschützt geöffnet. Benutzer können eine lokale Kopie dieser Dateien speichern, um weiterhin im Container zu arbeiten, oder den Schutz entfernen, um direkt mit der Originaldatei zu arbeiten.
+* Nicht vertrauenswürdige Dateien aus Netzwerkfreigaben oder Dateien, die von OneDrive, OneDrive for Business oder SharePoint Online aus einer anderen Organisation freigegeben wurden, werden in Application Guard als schreibgeschützt geöffnet. Benutzer können eine lokale Kopie dieser Dateien speichern, um weiterhin im Container zu arbeiten, oder den Schutz entfernen, um direkt mit der Originaldatei zu arbeiten.
 
 * Dateien, die durch die Verwaltung von Informationsrechten (Information Rights Management, IRM) geschützt sind, werden standardmäßig blockiert. Wenn Benutzer solche Dateien in der geschützten Ansicht öffnen möchten, muss ein Administrator Richtlinieneinstellungen für nicht unterstützte Dateitypen für die Organisation konfigurieren.
 
@@ -208,7 +208,7 @@ Sie können Microsoft Defender für Office 365 auch für die Verwendung mit Defe
 
 * Die Netzwerkkonnektivität ist für den ersten Start von Application Guard nach der Installation erforderlich. Die Konnektivität ist erforderlich, damit Application Guard die Lizenz überprüfen kann.
 
-* Im Abschnitt "Informationen" des Dokuments zeigt die *Eigenschaft "Zuletzt* geändert von" möglicherweise **WDAGUtilityAccount** als Benutzer an. WDAGUtilityAccount ist der anonyme Benutzer, der in Application Guard konfiguriert ist. Die Identität des Desktopbenutzers wird nicht innerhalb des Application Guard-Containers freigegeben.
+* Im Abschnitt "Informationen" des Dokuments wird in der Eigenschaft "Zuletzt geändert *von"* möglicherweise **"WDAGUtilityAccount"** als Benutzer angezeigt. WDAGUtilityAccount ist der anonyme Benutzer, der in Application Guard konfiguriert ist. Die Identität des Desktopbenutzers wird nicht innerhalb des Application Guard-Containers freigegeben.
 
 ## <a name="performance-optimizations-for-application-guard-for-office"></a>Leistungsoptimierungen für Application Guard für Office
 
@@ -221,10 +221,10 @@ Um Benutzern die erwartete Dateiöffnungserfahrung zu bieten, verwendet Applicat
 Wenn diese Heuristik erfüllt ist, erstellt Office nach der Anmeldung bei Windows vorab einen Application Guard-Container für den Benutzer. Während dieser Vorgang vor der Erstellung ausgeführt wird, kann die Leistung des Systems langsam sein, aber der Effekt wird behoben, sobald der Vorgang abgeschlossen ist.
 
 > [!NOTE]
-> Die Hinweise, die für die Heuristik zum Voraberstelle des Containers erforderlich sind, werden von Denkanwendungen generiert, wenn sie von einem Benutzer verwendet werden. Wenn ein Benutzer Office auf einem neuen System installiert, auf dem Application Guard aktiviert ist, erstellt Office den Container erst vor dem ersten Öffnen eines nicht vertrauenswürdigen Dokuments im System. Der Benutzer stellt fest, dass das Öffnen dieser ersten Datei in Application Guard länger dauert.
+> Die Hinweise, die für die Heuristik zum Voraberstelle des Containers erforderlich sind, werden von den Office-Anwendungen generiert, wenn sie von einem Benutzer verwendet werden. Wenn ein Benutzer Office auf einem neuen System installiert, auf dem Application Guard aktiviert ist, erstellt Office den Container erst vor dem ersten Öffnen eines nicht vertrauenswürdigen Dokuments im System. Der Benutzer stellt fest, dass das Öffnen dieser ersten Datei in Application Guard länger dauert.
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
 * Durch Das Auswählen von Weblinks (oder `http` ) wird der Browser nicht `https` geöffnet.
 * Das Pasting von Inhalten oder Bildern im Rich-Text-Format (Rich Text Format, RTF) in Office-Dokumenten, die mit Application Guard geöffnet wurden, wird derzeit nicht unterstützt.
-* Updates für .NET führen dazu, dass Dateien in Application Guard nicht geöffnet werden. Um dieses Problem zu umgehen, können Benutzer ihr Gerät neu starten, wenn sie auf diesen Fehler kommen. Erfahren Sie mehr über das Problem beim Empfangen einer Fehlermeldung, wenn Sie versuchen, [Windows Defender Application Guard oder Windows Sandbox zu öffnen.](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)
+* Updates für .NET führen dazu, dass Dateien in Application Guard nicht geöffnet werden. Um dieses Problem zu umgehen, können Benutzer ihr Gerät neu starten, wenn sie auf diesen Fehler kommen. Erfahren Sie mehr über das Problem beim Empfangen einer Fehlermeldung beim Versuch, Windows Defender [Application Guard oder Windows Sandbox zu öffnen.](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)

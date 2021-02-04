@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Freigegebene Postfächer werden verwendet, wenn mehrere Personen Zugriff auf dasselbe Postfach benötigen. Erfahren Sie, was Sie wissen müssen, bevor Sie ein freigegebenes Postfach erstellen.
-ms.openlocfilehash: c8d29ac2dfe8670181064e61a7fba145ae00fed1
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: f5d46af5abdd528ce3db817dbabce015ed5abade
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058447"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094721"
 ---
 # <a name="about-shared-mailboxes"></a>Info zu freigegebenen Postfächern
 
@@ -43,7 +43,7 @@ Bevor Sie [ein freigegebenes Postfach erstellen,](create-a-shared-mailbox.md)sol
 
 - **Externe Benutzer:** Sie können Personen außerhalb Ihres Unternehmens (z. B. Personen mit einem Gmail-Konto) keinen Zugriff auf Ihr freigegebenes Postfach geben. Wenn Sie dies tun möchten, sollten Sie stattdessen eine Gruppe für Outlook erstellen. Weitere Informationen finden Sie unter [Erstellen einer Microsoft 365-Gruppe im Admin Center.](../create-groups/create-groups.md)
 
-- **Verwenden mit Outlook:** Zusätzlich zur Verwendung von Outlook im Web über Ihren Browser für den Zugriff auf freigegebene Postfächer können Sie auch die Outlook für iOS-App oder die Outlook für Android-App verwenden. Weitere Informationen finden Sie unter [Hinzufügen eines freigegebenen Postfachs zu Outlook Mobile](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f). Eine weitere Möglichkeit besteht in der Erstellung einer Gruppe für Ihr freigegebenes Postfach. Weitere Informationen hierzu finden Sie unter [Vergleichen von Gruppen](../create-groups/compare-groups.md).
+- **Verwenden mit Outlook:** Zusätzlich zur Verwendung von Outlook im Web über Ihren Browser für den Zugriff auf freigegebene Postfächer können Sie auch die Outlook für iOS-App oder die Outlook für Android-App verwenden. Weitere Informationen finden Sie unter [Hinzufügen eines freigegebenen Postfachs zu Outlook Mobile.](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f) Eine weitere Möglichkeit besteht in der Erstellung einer Gruppe für Ihr freigegebenes Postfach. Weitere Informationen hierzu finden Sie unter [Vergleichen von Gruppen](../create-groups/compare-groups.md).
 
 - **Verschlüsselung:** Von einem freigegebenen Postfach gesendete E-Mails können nicht verschlüsselt werden. Dies liegt daran, dass ein freigegebenes Postfach nicht über einen eigenen Sicherheitskontext (Benutzername/Kennwort) verfügt, sodass ihm kein Schlüssel zugewiesen werden kann. Wenn mehrere Personen Mitglied sind und sie E-Mails senden/empfangen, die sie mit ihren eigenen Schlüsseln verschlüsselt haben, können andere Mitglieder die E-Mail möglicherweise lesen, andere möglicherweise nicht, je nachdem, mit welchem öffentlichen Schlüssel die E-Mail verschlüsselt wurde.
 
@@ -61,7 +61,7 @@ Bevor Sie [ein freigegebenes Postfach erstellen,](create-a-shared-mailbox.md)sol
 
 
 > [!NOTE]
-> Für den Zugriff auf ein freigegebenes Postfach muss ein Benutzer über eine Exchange Online-Lizenz verfügen, für das freigegebene Postfach ist jedoch keine separate Lizenz erforderlich. Ohne Lizenz sind freigegebene Postfächer auf 50 GB beschränkt. Um die Größenbeschränkung auf 100 GB zu erhöhen, muss dem freigegebenen Postfach eine Exchange Online Plan 2-Lizenz oder eine Exchange Online Plan 1-Lizenz mit einer Exchange Online-Archivierung-Add-On-Lizenz zugewiesen werden. Dadurch können Sie auch die Archivierung mit automatischer Erweiterung für eine unbegrenzte Menge an Archivspeicherkapazität aktivieren. Ebenso muss das freigegebene Postfach über eine Exchange Online Plan 2-Lizenz oder eine Exchange Online Plan 1-Lizenz mit einer Exchange Online-Archivierung-Add-On-Lizenz verfügen, wenn Sie für ein freigegebenes Postfach das Rechtsstreitigkeiten aktivieren möchten. Wenn Sie erweiterte Features wie Microsoft Defender für Office 365, Advanced eDiscovery oder automatische Aufbewahrungsrichtlinien anwenden möchten, muss das freigegebene Postfach für diese Features lizenziert werden.
+> Für den Zugriff auf ein freigegebenes Postfach muss ein Benutzer über eine Exchange Online-Lizenz verfügen, für das freigegebene Postfach ist jedoch keine separate Lizenz erforderlich. Zu jedem freigegebenen Postfach gehört ein entsprechendes Benutzerkonto. Haben Sie festgestellt, dass Sie beim Erstellen des freigegebenen Postfachs nicht zur Eingabe eines Kennworts aufgefordert wurden? Das Konto verfügt über ein Kennwort, das jedoch vom System generiert wurde (unbekannt). Sie sollten das Konto nicht für die Anmeldung am freigegebenen Postfach verwenden. Ohne Lizenz sind freigegebene Postfächer auf 50 GB beschränkt. Um die Größenbeschränkung auf 100 GB zu erhöhen, muss dem freigegebenen Postfach eine Exchange Online Plan 2-Lizenz oder eine Exchange Online Plan 1-Lizenz mit einer Exchange Online-Archivierung-Add-On-Lizenz zugewiesen werden. Auf diese Weise können Sie auch die Archivierung mit automatischer Erweiterung für eine unbegrenzte Menge an Archivspeicherkapazität aktivieren. Ebenso muss das freigegebene Postfach über eine Exchange Online Plan 2-Lizenz oder eine Exchange Online Plan 1-Lizenz mit einer Exchange Online-Archivierung-Add-On-Lizenz verfügen, wenn Sie für ein freigegebenes Postfach das Rechtsstreitigkeiten aktivieren möchten. Wenn Sie erweiterte Features wie Microsoft Defender für Office 365, Advanced eDiscovery oder automatische Aufbewahrungsrichtlinien anwenden möchten, muss das freigegebene Postfach für diese Features lizenziert werden.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

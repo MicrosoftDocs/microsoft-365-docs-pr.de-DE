@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Microsoft 365-Gruppen.
-ms.openlocfilehash: b3bc0c30f4ac292da7af46678fc742854984db12
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 5d5c15c13d46738ac9de701b5a39f47274b9f1e5
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925350"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094733"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Übersicht über Microsoft 365-Gruppen für Administratoren
 
@@ -64,9 +64,9 @@ Als Administrator haben Sie die folgenden Möglichkeiten:
 
 Wenn Sie eine automatisiertere Möglichkeit zum Verwalten des Lebenszyklus Ihrer Microsoft 365-Gruppen bevorzugen, können Sie Ablaufrichtlinien verwenden, um Gruppen in einem bestimmten Zeitintervall zu ablaufen. Die Besitzer der Gruppe erhalten 30, 15 und 1 Tag vor Ablauf der Gruppe eine E-Mail, mit der sie die Gruppe verlängern können, wenn sie noch benötigt wird. Siehe: [Ablaufrichtlinie für Microsoft 365-Gruppen.](office-365-groups-expiration-policy.md)
 
-Sie können Gruppen entweder über das Microsoft 365 Admin Center oder [mithilfe von PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershel) durchführen.
+Sie können Gruppen entweder über das Microsoft 365 Admin Center oder [mithilfe von PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell) durchführen.
 
-Wenn Sie viele Benutzer haben, z. B. in einem großen Unternehmen oder Unternehmen, haben Sie möglicherweise viele Benutzer, die Gruppen für verschiedene Zwecke erstellen. Es wird dringend empfohlen, den [Plan für governance in Microsoft 365-Gruppen](plan-for-groups-governance.md) auf bewährte Methoden zu überprüfen.
+Wenn Sie viele Benutzer haben, z. B. in einem großen Unternehmen oder Unternehmen, haben Sie möglicherweise viele Benutzer, die Gruppen für verschiedene Zwecke erstellen. Es wird dringend empfohlen, dass Sie den [Plan für governance in Microsoft 365-Gruppen](plan-for-groups-governance.md) überprüfen, um bewährte Methoden zu erhalten.
 
 ## <a name="group-limits"></a>Grenzwerte für Gruppen
 
@@ -94,10 +94,10 @@ Sie können Vertraulichkeitsbezeichnungen erstellen, die die Benutzer in Ihrer O
 - Zugriff externer Benutzer
 - Nicht verwalteter Gerätezugriff
 
-Sie können z. B. eine Bezeichnung mit dem Namen "Streng *vertraulich"* erstellen und angeben, dass alle mit dieser Bezeichnung erstellten Gruppen privat sind und keine externen Benutzer zulassen. Wenn Benutzer in Ihrer Organisation diese Bezeichnung während der Gruppenerstellung auswählen, wird die Gruppe auf "Privat" festgelegt, und Gruppenmitglieder können der Gruppe keine externen Benutzer hinzufügen.
+Sie können beispielsweise eine Bezeichnung mit dem Namen "Streng *vertraulich"* erstellen und angeben, dass alle mit dieser Bezeichnung erstellten Gruppen privat sind und keine externen Benutzer zulassen. Wenn Benutzer in Ihrer Organisation diese Bezeichnung während der Gruppenerstellung auswählen, wird die Gruppe auf "Privat" festgelegt, und Gruppenmitglieder können der Gruppe keine externen Benutzer hinzufügen.
 
 > [!IMPORTANT]
-> Wenn Sie zurzeit Klassifizierungsbezeichnungen verwenden, stehen sie Benutzern, die Gruppen erstellen, nach der Aktivierung von Vertraulichkeitsbezeichnungen nicht mehr zur Verfügung. 
+> Wenn Sie derzeit Klassifizierungsbezeichnungen verwenden, stehen sie Benutzern, die Gruppen erstellen, nach der Aktivierung von Vertraulichkeitsbezeichnungen nicht mehr zur Verfügung. 
 
 Informationen zum Erstellen, Verwalten und Verwenden von Vertraulichkeitsbezeichnungen finden Sie unter Verwenden von Vertraulichkeitsbezeichnungen zum Schutz von [Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites.](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
 
@@ -110,7 +110,7 @@ Alle Microsoft 365-Abonnements mit Exchange Online und SharePoint Online unterst
 
 Wenn Sie über einen Nur-Exchange-Plan verfügen, können Sie weiterhin die Features für freigegebenen Posteingang und freigegebenen Kalender von Gruppen in Outlook erhalten, aber Sie erhalten nicht die Dokumentbibliothek, Planner oder eine der anderen Funktionen.
 
-Microsoft 365-Gruppen funktionieren mit Azure Active Directory. Welche Gruppenfeatures Sie erhalten, hängt davon ab, über welches Azure Active Directory-Abonnement Sie verfügen und welche Lizenzen dem Organisator der Gruppe zugewiesen sind.
+Microsoft 365-Gruppen können mit Azure Active Directory verwendet werden. Welche Gruppenfeatures Sie erhalten, hängt davon ab, über welches Azure Active Directory-Abonnement Sie verfügen und welche Lizenzen dem Organisator der Gruppe zugewiesen sind.
 
 > [!IMPORTANT]
 > Wenn Sie über ein Azure AD -Premium-Abonnement verfügen, können Benutzer für alle Gruppenfeatures der Gruppe beitreten, unabhängig davon, ob ihnen eine AAD -P1-Lizenz zugewiesen ist. Die Lizenzierung wird nicht erzwungen.

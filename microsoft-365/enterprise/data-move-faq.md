@@ -14,16 +14,16 @@ f1.keywords:
 - NOCSH
 description: Hier finden Sie Antworten auf häufig gestellte Fragen (FAQ) zum Verschieben von Kerndaten in einen neuen geografischen Raum des Office 365-Rechenzentrums.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 49ddcbf3a1aa8d91bd8202894e114fe50624720a
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: a7e59622e35604ebd9befbbe17a8a125ed15e101
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780260"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094655"
 ---
 # <a name="data-move-general-faq"></a>Allgemeine häufig gestellte Fragen zur Datenverschiebung
 
-Hier finden Sie Antworten auf allgemeine Fragen zum Verschieben von Ruhekerndaten in eine neue Rechenzentrums-Geo.
+Hier finden Sie Antworten auf allgemeine Fragen zum Verschieben von Ruhekerndaten in eine neue geografische Rechenzentrums-Geo.
   
 ## <a name="what-customers-are-eligible-to-request-a-move"></a>Welche Kunden können eine Verschiebung anfordern?
   
@@ -60,7 +60,7 @@ Einige der Microsoft 365-Dienste befinden sich möglicherweise in unterschiedlic
 
  ## <a name="where-is-my-core-customer-data-located"></a>Wo befinden sich meine Kundenkerndaten?
 
-Mandantenadministratoren von Kunden können die Datenspeicherortkarte jederzeit im Admin Center anzeigen, um die wichtigsten Ruhespeicherortdaten für jeden Dienst zu bestätigen, insbesondere für ihren Mandanten.  Darüber hinaus veröffentlichen wir den Standort von Geografischen Datencentern, Rechenzentren und den Standort von Office 365-Kundendaten auf den [interaktiven Microsoft 365-Rechenzentrumszuordnungen ](https://office.com/datamaps) als Referenz für die aktuellen Standardkundenkerndaten an Ruhestandorten für neue Mandanten. Sie können den Speicherort Ihrer ruhenen Kundendaten über den Abschnitt "Datenspeicherort" unter Ihrem Organisationsprofil im Microsoft 365 Admin Center überprüfen.  
+Mandantenadministratoren von Kunden können die Datenspeicherortkarte jederzeit im Admin Center anzeigen, um die wichtigsten Ruhespeicherortdaten für jeden Dienst zu bestätigen, insbesondere für ihren Mandanten.  Außerdem veröffentlichen wir den Standort von Geografischen Datencentern, Rechenzentren und den Standort von Office 365-Kundendaten auf den [interaktiven Microsoft 365-Rechenzentrumszuordnungen ](https://office.com/datamaps) als Referenz für die aktuellen Standardkundenkerndaten an Ruheorten für neue Mandanten. Sie können den Speicherort Ihrer ruhenen Kundendaten über den Abschnitt "Datenspeicherort" unter Ihrem Organisationsprofil im Microsoft 365 Admin Center überprüfen.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>Wann kann ich eine Verschiebung beantragen?
   
@@ -108,7 +108,7 @@ Es ist nicht möglich, das Ihrem Mandanten zugeordnete Registrierungsland zu än
   
 ## <a name="what-happens-if-we-are-in-process-of-email-data-migration-to-microsoft-365-during-the-exchange-online-move"></a>Was geschieht, wenn die E-Mail-Datenmigration zu Microsoft 365 während der Exchange Online-Verschiebung durchgeführt wird?
 
-Dies ist ein sehr häufig auftretendes Szenario, das vollständig unterstützt wird. Die Cloudmigration zwischen den geografischen Datencentern wirkt sich nicht auf lokale Migrationen zu Cloudpostfachmigrationen aus.
+Dies ist ein sehr häufig auftretendes Szenario, das vollständig unterstützt wird.  Die Cloudmigration zwischen den geografischen Datencentern wirkt sich nicht auf lokale Migrationen zu Cloudpostfachmigrationen aus.
   
  ## <a name="can-i-pilot-some-users"></a>Kann ich einen Test mit einigen Benutzern durchführen?
   
@@ -130,9 +130,9 @@ Ja. Microsoft unterhält ein großes weltweites Netzwerk mit öffentlichen Inter
 
 ## <a name="my-tenant-has-configured-the-multi-geo-add-on-can-i-still-enroll-in-my-tenant-in-the-microsoft-365-move-program-to-change-my-default-geo-and-move-any-user-not-in-a-satellite-region-to-the-new-default-geo"></a>Mein Mandant hat das [Multi Geo-Add-On](https://aka.ms/multi-geo)konfiguriert. Kann ich mich in meinem Mandanten weiterhin für das Microsoft 365-Verschiebungsprogramm registrieren, um meine geografischen Standardeinstellung zu ändern und Benutzer, die sich nicht in einer Satellitenregion befinden, in den neuen standardmäßigen geografischen Raum verschieben?
 
-Ja, Ihr Mandant ist für die Registrierung berechtigt, aber es gibt einige wichtige Überlegungen, da die Mandantenverlegung für Kunden, die Multi-Geo konfiguriert haben, nicht vollständig unterstützt wird.
+Ja, Ihr Mandant ist für die Registrierung berechtigt, aber es gibt wesentliche Überlegungen, da die Mandantenverlegung für Kunden, die Multi-Geo konfiguriert haben, nicht vollständig unterstützt wird.
 
-SharePoint Online und OneDrive for Business können über dieses Programm nicht auf die neue #A0 auf Mandantenebene migriert werden. Der Kundenadministrator kann OneDrive for #A0 so konfigurieren, dass sie mithilfe von Multi-Geo in eine beliebige verfügbare Region wechseln, aber der Standardspeicherort für den Mandanten kann nicht geändert werden, nachdem Multi-Geo für einen Mandanten konfiguriert wurde.
+SharePoint Online und OneDrive for Business können über dieses Programm nicht auf die neue #A0 auf Mandantenebene migriert werden. Der Kundenadministrator kann OneDrive for #A0 so konfigurieren, dass sie mithilfe von Multi-Geo in eine beliebige verfügbare Region umgestellt werden. Der Standardspeicherort für den Mandanten kann jedoch nicht geändert werden, nachdem Multi-Geo für einen Mandanten konfiguriert wurde.
 
 Für Kunden, die sich für die Migration entscheiden– wir verschieben alle Exchange Online-Postfächer von Ihrem aktuellen geografischen Standardbereich in Ihre neue lokale Rechenzentrumsregion und aktualisieren die Exchange Online-Standardregion. In Multi-Geo-Satellitenregionen konfigurierte EXO-Postfächer werden nicht verschoben, um die gewünschte Datenaufbewahrung in Satellitenregionen weiterhin zu respektieren. 
 

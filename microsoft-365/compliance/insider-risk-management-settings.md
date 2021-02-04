@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: dd72ded935b9108e4b2699f5ddb6d320f5c32e69
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: ba851a7ad6243b9b3b6bc69432bd2b3036d6b269
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841256"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094766"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Erste Schritte mit Einstellungen für das Insider-Risikomanagement
 
@@ -105,7 +105,7 @@ In diesem Bereitstellungsszenario integrieren Sie Geräte, die noch nicht onboar
 3. Wählen Sie **Geräteverwaltung** aus, um die Liste der **Geräte** zu öffnen. Die Liste ist leer, solange keine Geräte eingebunden sind.
 4. Wählen Sie **Onboarding** aus, um mit dem Onboarding-Prozess zu beginnen.
 5. Wählen Sie in der Liste der Bereitstellungsmethode die Art und Weise aus, wie Sie auf diesen weiteren Geräten bereitstellen möchten, und laden Sie **dann das Paket herunter.** 
-6. Führen Sie die unter [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) beschriebenen entsprechenden Verfahren aus. Über diesen Link gelangen Sie zu einer Zielseite, auf der Sie auf Microsoft Defender für Endpunkt-Verfahren zugreifen können, die dem in Schritt 5 ausgewählten Bereitstellungspaket entsprechen:
+6. Führen Sie die unter [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) beschriebenen entsprechenden Verfahren aus. Über diesen Link gelangen Sie zu einer Zielseite, auf der Microsoft Defender für Endpunkt-Prozeduren beschrieben werden, die dem in Schritt 5 ausgewählten Bereitstellungspaket entsprechen:
     - Onboarding von Windows 10-Computern mithilfe von Gruppenrichtlinien
     - Onboarding von Windows-Computern mithilfe von Microsoft Endpoint Configuration Manager
     - Onboarding von Windows 10-Computern mit Tools für die Verwaltung von Mobilgeräten
@@ -127,7 +127,7 @@ Wenn Microsoft Defender for Endpoint bereits bereitgestellt ist und Endpunkte vo
 3. Wählen Sie **Geräteverwaltung** aus, um die Liste der **Geräte** zu öffnen. Es sollte die Liste der Geräte angezeigt werden, die bereits Berichte für Microsoft Defender für Endpunkt erstellen.
 4. Wählen **Sie "Onboarding"** aus, wenn Sie weitere Geräte integrieren müssen.
 5. Wählen Sie in der Liste der Bereitstellungsmethode die Art und Weise aus, wie Sie auf diesen weiteren Geräten bereitstellen möchten, und laden Sie dann **das Paket herunter.** 
-6. Führen Sie die unter [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) beschriebenen entsprechenden Verfahren aus. Über diesen Link gelangen Sie zu einer Zielseite, auf der Sie auf Microsoft Defender für Endpunkt-Verfahren zugreifen können, die dem in Schritt 5 ausgewählten Bereitstellungspaket entsprechen:
+6. Führen Sie die unter [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) beschriebenen entsprechenden Verfahren aus. Über diesen Link gelangen Sie zu einer Zielseite, auf der Microsoft Defender für Endpunkt-Prozeduren beschrieben werden, die dem in Schritt 5 ausgewählten Bereitstellungspaket entsprechen:
     - Onboarding von Windows 10-Computern mithilfe von Gruppenrichtlinien
     - Onboarding von Windows-Computern mithilfe von Microsoft Endpoint Configuration Manager
     - Onboarding von Windows 10-Computern mit Tools für die Verwaltung von Mobilgeräten
@@ -165,9 +165,7 @@ Mit Hilfe von Zeitrahmen für Richtlinien können Sie vergangene und zukünftige
 
 ## <a name="intelligent-detections"></a>Intelligente Erkennungen
 
-Intelligente Erkennungseinstellungen helfen zu verfeinern, wie die Erkennung riskanter Aktivitäten für Warnungen verarbeitet wird. Unter bestimmten Umständen müssen Sie möglicherweise zu ignorierende Dateitypen definieren, oder Sie möchten eine Erkennungsstufe für Dateien erzwingen, um einen Mindestbalken für Warnungen zu definieren. Wenn Sie anstößige Sprachrichtlinien verwenden, müssen Sie möglicherweise die Erkennungsempfindlichkeit erhöhen oder verringern, um die Anzahl der gemeldeten Richtlinienübereinstimmungen zu kontrollieren. Verwenden Sie diese Einstellungen, um das gesamte Warnungsvolumen, Dateitypausschlüsse, Dateivolumegrenzwerte und die Erkennungsempfindlichkeit für anstößige Sprache zu steuern.
-
-![Einstellungen für intelligente Erkennungen des Insider-Risikomanagements](../media/insider-risk-settings-detections.png)
+Intelligente Erkennungseinstellungen helfen zu verfeinern, wie die Erkennung riskanter Aktivitäten für Warnungen verarbeitet wird. Unter bestimmten Umständen müssen Sie möglicherweise zu ignorierende Dateitypen definieren, oder Sie möchten eine Erkennungsstufe für Dateien erzwingen, um einen Mindestbalken für Warnungen zu definieren. Verwenden Sie diese Einstellungen, um das allgemeine Warnungsvolumen, Dateitypausschlüsse und Dateivolumegrenzwerte zu steuern.
 
 ### <a name="anomaly-detections"></a>Anomalie-Erkennungen
 
@@ -175,17 +173,6 @@ Zu den Anomalie-Erkennungen gehören Einstellungen für Dateityp-Ausschlüsse un
 
 - **Dateitypausschlüsse:** Um bestimmte Dateitypen von allen Übereinstimmungen mit Insider-Risikomanagement-Richtlinien auszuschließen, geben Sie Dateityperweiterungen durch Kommas getrennt ein. Um beispielsweise bestimmte Arten von Musikdateien von den Richtlinienübereinstimmungen auszuschließen, können Sie *AAC, MP3, WAV, WMA* in das Feld **Dateityp-Ausschlüsse** eingeben. Dateien mit diesen Erweiterungen würden von allen Richtlinien zum Insider-Risikomanagement ignoriert werden.
 - **Grenzwert für dateivolume:** Geben Sie die Anzahl der Dateien ein, um eine mindeste Dateiebene zu definieren, bevor Aktivitätswarnungen in den Richtlinien für Insiderrisiken gemeldet werden. Sie würden beispielsweise "10" eingeben, wenn Sie keine Warnungen zu Insiderrisiken generieren möchten, wenn ein Benutzer 10 Dateien oder weniger herunterläutet, selbst wenn die Richtlinien diese Aktivität als Anomalie betrachten.
-
-### <a name="offensive-language-detections"></a>Erkennung anstößiger Sprache
-
->[!IMPORTANT]
->Ab dem 16. Oktober 2020 können Sie mithilfe dieser Vorlage keine Richtlinien mehr erstellen. Alle aktiven Richtlinien, die diese Vorlage verwenden, funktionieren, bis sie im Januar 2021 endgültig entfernt werden. Die integrierte Klassifizierung für anstößige Sprache, die diese Vorlage unterstützt, wird nicht mehr unterstützt, da sie eine hohe Anzahl falsch positiver Ergebnisse erzeugt hat. Um Risikoprobleme für anstößige Sprache zu beheben, empfehlen wir die Verwendung von Microsoft 365-Richtlinien zur [Kommunikationskonformität.](communication-compliance.md) Weitere Informationen zu integrierten Klassifizierungen finden Sie unter ["Erste Schritte mit trainierbaren Klassifizierungen".](classifier-get-started-with.md)
-
-Um die Empfindlichkeit des Klassifizierers für anstößige Sprache für Richtlinien anzupassen, welche die Vorlage *Anstößige Sprache in E-Mail* verwenden, wählen Sie eine der folgenden Einstellungen aus:
-
-- **Niedrig:** Die niedrigste Vertraulichkeitsstufe mit dem breitesten Bereich für die Erkennung von anstößigen Sprache und Gesinnung. Die Wahrscheinlichkeit falsch positiver Ergebnisse bei anstößigen Sprachübereinstimmungen ist erhöht.
-- **Mittel**: Die mittlere Vertraulichkeitsstufe mit einem ausgeglichenen Bereich für die Erkennung von anstößigen Sprache und Gesinnung. Die Wahrscheinlichkeit falsch positiver Ergebnisse bei anstößigen Sprachübereinstimmungen ist durchschnittlich.
-- **Hoch:** Die höchste Vertraulichkeitsstufe mit einem schmalen Bereich für die Erkennung von anstößigen Sprache und Gesinnung. Die Wahrscheinlichkeit falsch positiver Ergebnisse bei anstößigen Sprachübereinstimmungen ist niedrig.
 
 ### <a name="alert-volume"></a>Warnungsvolumen
 
@@ -249,7 +236,7 @@ Die folgenden Felder und Werte werden für Insider-Risikomanagement-Warnungen f�
 | Name | Richtlinienname für die Insider-Risikomanagement-Richtlinie, die die Warnung generiert hat. |
 | PolicyId | Die GUID der Insider-Risikomanagement-Richtlinie, die die Warnung ausgelöst hat. |
 | Severity | Der Schweregrad der Warnung. Die Werte sind *Hoch,* *Mittel* oder *Niedrig.* |
-| Source | Die Quelle der Warnung. Der Wert ist *Office 365 Security & Compliance*. |
+| Quelle | Die Quelle der Warnung. Der Wert ist *Office 365 Security & Compliance*. |
 | Status | Der Status der Warnung. Die Werte sind *aktiv* *(Überprüfung* im Insider-Risiko), *Investigating* *(Bestätigt* im Insider-Risiko), *Gelöst* *(gelöst* im Insider-Risiko), *Abgelehnt* *(in* Insider-Risiko verworfen). |
 | Version | Die Version des Sicherheits- und Kompatibilitätsbenachrichtigungsschemas. |
 
