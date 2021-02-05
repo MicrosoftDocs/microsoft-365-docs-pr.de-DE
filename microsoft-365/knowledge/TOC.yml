@@ -1,22 +1,22 @@
-- name: Erste Schritte mit Topic Experiences
+- name: Erste Schritte mit Microsoft Viva
   items:
-    - name: Topic Experiences – Einführung
+    - name: Einführung in Microsoft Viva
       href: index.md
-    - name: Topic Experiences – Übersicht
+    - name: Microsoft Viva – Übersicht
       href: topic-experiences-overview.md
-    - name: Topic Experiences entdecken und kuratieren
+    - name: Microsoft Viva – Entdecken und organisatorische Aufgaben
       href: topic-experiences-discovery-curation.md
-    - name: Topic Experiences – Rollen
+    - name: Microsoft Viva – Rollen
       href: topic-experiences-roles.md
     - name: Bereiten Sie Ihre Umgebung vor
       href: topic-experiences-get-ready.md
 - name: Setup und Verwaltung
   items:
-    - name: Topic Sicherheit
+    - name: Sicherheit von Themen
       href: topic-experiences-security-privacy.md
-    - name: Topic Experiences planen
+    - name: Planen von Themen
       href: plan-topic-experiences.md
-    - name: Topic Experiences einrichten
+    - name: Einrichten von Themen
       href: set-up-topic-experiences.md
     - name: Topic Entdecken verwalten
       href: topic-experiences-discovery.md
@@ -38,6 +38,8 @@
       href: edit-a-topic.md
     - name: Sicherheitskürzung
       href: topic-experiences-security-trimming.md
+    - name: Suchen nach Themen
+      href: search.md
 - name: Einführung
   items:
     - name: Erste Schritte mit Driving Adoption

@@ -2,8 +2,8 @@
 title: Einrichten der Multi-Faktor-Authentifizierung für Benutzer
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Hier erfahren Sie, wie Sie die Multi-Faktor-Authentifizierung für Ihre Organisation einrichten.
 monikerRange: o365-worldwide
-ms.openlocfilehash: db858cbd4242a096261942fd12b911ecff43f71f
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 5ea367e64108e80ee7429ec700cf2ac0551aeab2
+ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558210"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50105151"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
 
@@ -100,3 +100,9 @@ Wenn bisher die veraltete MFA auf Benutzerbasis aktiviert ist, müssen Sie diese
 - [Was ist mehrstufige Authentifizierung?](https://support.microsoft.com/help/4577374/what-is-multifactor-authentication)
 - [Wie sie sich nach der Registrierung anmelden](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [Wie sie die zusätzliche Überprüfungsmethode ändern können](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
+
+## <a name="related-topics"></a>Verwandte Themen
+
+[Video: Aktivieren der mehrstufigen Authentifizierung](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
+
+[Video: Aktivieren der mehrstufigen Authentifizierung für Ihr Telefon](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)
