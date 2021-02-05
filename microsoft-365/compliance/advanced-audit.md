@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Die erweiterte Überwachung in Microsoft 365 bietet neue Überwachungsfunktionen, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen.
-ms.openlocfilehash: 83ff462ada02c9b262cfcaadb6bd48e47376cc0f
-ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
+ms.openlocfilehash: f265a30a3d43b592a7d297e2137fd6b9ff4acfb4
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "49740362"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097151"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Erweiterte Überwachung in Microsoft 365
 
@@ -116,7 +116,9 @@ Um nach SearchQueryInitiatedExchange-Überwachungsaufzeichnungen zu suchen, kön
 Sie können auch den Befehl [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell ausführen.
 
 > [!NOTE]
-> Damit (vom angegebenen E5-Benutzer ausgeführte) SearchQueryInitiatedExchange-Ereignisse in die Suchergebnisse für das Überwachungsprotokoll einbezogen werden, müssen Sie in Exchange Online PowerShell folgenden Befehl ausführen: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.
+> Damit (vom angegebenen E5-Benutzer ausgeführte) SearchQueryInitiatedExchange-Ereignisse in die Suchergebnisse für das Überwachungsprotokoll einbezogen werden, müssen Sie in Exchange Online PowerShell folgenden Befehl ausführen: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.<br/><br/>
+In einer Multi-Geo-Umgebung müssen Sie den Befehl **Set-Mailbox** in der Gesamtstruktur ausführen, in der sich das Postfach des Benutzers befindet. Um den Speicherort des Postfachs eines Benutzers zu identifizieren, verwenden Sie folgenden Befehl: `Get-Mailbox <user identity> | FL MailboxLocations`.
+Wenn der Befehl „`Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}`“ zuvor in einer Gesamtstruktur ausgeführt wurde, die sich von der unterscheidet, in der sich das Postfach des Benutzers befindet, müssen Sie den Wert „SearchQueryInitiated“ aus dem Postfach des Benutzers entfernen (durch Ausführen von `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`) und ihn dann dem Postfach des Benutzers in der Gesamtstruktur hinzufügen, in der sich das Benutzerpostfach befindet.
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
@@ -129,7 +131,9 @@ Um nach SearchQueryInitiatedSharePoint-Überwachungsaufzeichnungen zu suchen, k�
 Sie können auch den Befehl [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell ausführen.
 
 > [!NOTE]
-> Damit (vom angegebenen E5-Benutzer ausgeführte) SearchQueryInitiatedSharePoint-Ereignisse in die Suchergebnisse für das Überwachungsprotokoll einbezogen werden, müssen Sie in Exchange Online PowerShell folgenden Befehl ausführen: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.
+> Damit (vom angegebenen E5-Benutzer ausgeführte) SearchQueryInitiatedExchange-Ereignisse in die Suchergebnisse für das Überwachungsprotokoll einbezogen werden, müssen Sie in Exchange Online PowerShell folgenden Befehl ausführen: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.<br/><br/>
+In einer Multi-Geo-Umgebung müssen Sie den Befehl **Set-Mailbox** in der Gesamtstruktur ausführen, in der sich das Postfach des Benutzers befindet. Um den Speicherort des Postfachs eines Benutzers zu identifizieren, verwenden Sie folgenden Befehl: `Get-Mailbox <user identity> | FL MailboxLocations`.
+Wenn der Befehl „`Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}`“ zuvor in einer Gesamtstruktur ausgeführt wurde, die sich von der unterscheidet, in der sich das Postfach des Benutzers befindet, müssen Sie den Wert „SearchQueryInitiated“ aus dem Postfach des Benutzers entfernen (durch Ausführen von `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`) und ihn dann dem Postfach des Benutzers in der Gesamtstruktur hinzufügen, in der sich das Benutzerpostfach befindet.
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Zugriff mit hoher Bandbreite auf die Office 365-Verwaltungsaktivitäts-API
 

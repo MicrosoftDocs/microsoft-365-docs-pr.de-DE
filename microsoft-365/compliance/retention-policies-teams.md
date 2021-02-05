@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: ebf1efe99e57084e2384e7499b3f72dab2b872c2
-ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
+ms.openlocfilehash: efbdee1fd5ee3c8c48aca9cbaf9e5a85a107edb4
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50050389"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094688"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informationen zur Aufbewahrung für Microsoft Teams
 
@@ -43,7 +43,7 @@ Die folgenden Teams-Elemente können unter Verwendung von Aufbewahrungsrichtlini
 > [!NOTE]
 > Die Einbindung von Karteninhalten ist eine neue Funktion, die Mandanten gegenwärtig zur Verfügung gestellt wird. Weitere Informationen finden Sie unter [Microsoft 365 Compliance-Funktionen für adaptive Karteninhalte über Apps in Teams jetzt verfügbar](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-Teams-Nachrichten in privaten Kanälen und Reaktionen von anderen Personen in der Form von Emoticons sind nicht enthalten.
+Teams-Nachrichten in privaten Kanälen, Code-Ausschnitte und Reaktionen von anderen Personen in der Form von Emoticons sind nicht enthalten.
 
 E-Mails und Dateien, die Sie mit Teams verwenden, sind in den Aufbewahrungsrichtlinien für Teams nicht beinhaltet. Diese Elemente haben ihre eigenen Aufbewahrungsrichtlinien.
 

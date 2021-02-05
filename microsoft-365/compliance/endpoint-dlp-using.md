@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) so konfigurieren können, dass Microsoft 365-EPDLP-Speicherorte (Endpoint Data Loss Prevention) verwendet werden.
-ms.openlocfilehash: 531fd5506aeb255e261c3cce35473f1ddad2aa42
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 15a540c323c8f49cfa6c15358cfec89034667378
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667810"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094796"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Nutzen der Verhinderung von Datenverlust am Endpunkt
 
@@ -80,11 +80,19 @@ Sie können steuern, ob sensible Dateien, die durch Ihre Richtlinien geschützt 
 
 Wenn der Listenmodus auf **Blockieren** festgelegt ist, können Benutzer keine vertraulichen Elemente in diese Domänen hochladen. Wenn eine Upload-Aktion blockiert wird, weil ein Element von einer DLP-Richtlinie betroffen ist, generiert DLP entweder eine Warnung oder sperrt den Upload des vertraulichen Elements.
 
-Wenn der Listenmodus auf **Zulassen** festgelegt ist, können Benutzer vertrauliche Elemente **_nur_* _ in diese Domänen hochladen, während der Uploadzugriff auf alle anderen Domänen nicht zulässig ist.
+Wenn der Listenmodus auf **Zulassen** festgelegt ist, können Benutzer vertrauliche Elemente **_nur_** in diese Domänen hochladen, während der Uploadzugriff auf alle anderen Domänen nicht zulässig ist.
 
 #### <a name="unallowed-browsers"></a>Nicht zulässige Browser
 
 Sie können Browser hinzufügen, die anhand ihrer ausführbaren Namen identifiziert werden und am Zugriff auf Dateien gehindert werden, die den Bedingungen einer erzwungenen DLP-Richtlinie entsprechen, bei denen die Einschränkung von Clouddienst-Uploads auf „Blockieren“ oder „Blockieren/außer Kraft setzen“ festgelegt ist. Wenn diese Browser am Zugriff auf eine Datei gehindert werden, wird den Endbenutzern eine Popupbenachrichtigung angezeigt, in der sie aufgefordert werden, die Datei über Edge Chromium zu öffnen.
+
+### <a name="business-justification-in-policy-tips"></a>Geschäftliche Begründung in Richtlinientipps
+
+Sie können mit den Optionen für die geschäftliche Begründung in den DLP-Richtlinientipp-Benachrichtigung steuern, wie Benutzer interagieren. Diese Option erscheint, wenn ein Benutzer eine Aktivität durchführt, die durch die Einstellung **Sperren mit Überschreiben** in einer DLP-Richtlinie geschützt ist. Sie können eine der folgenden Optionen auswählen:
+
+- Standardmäßig kann der Benutzer entweder eine integrierte Begründung auswählen oder seinen eigenen Text eingeben.
+- Benutzer können nur eine integrierte Begründung auswählen.
+- Benutzer können nur ihre eigene Begründung eingeben.
 
 
 ## <a name="tying-dlp-settings-together"></a>DLP-Einstellungen kombinieren
@@ -99,7 +107,7 @@ Um diese Einschränkung nutzen zu können, müssen Sie drei wichtige Elemente ko
 
 2. Hinzufügen der Browser, die nicht berechtigt sind, auf bestimmte vertrauliche Elemente zuzugreifen, wenn eine DLP-Richtlinienübereinstimmung gegeben ist.
 
-3. Konfigurieren von DLP-Richtlinien, um die Arten von vertraulichen Elementen zu definieren, für die Uploads auf diese Orte beschränkt werden sollen, indem Sie _ *Zu Clouddiensten hochladen** und **Zugriff durch nicht zulässige Browser** aktivieren.
+3. Konfigurieren von DLP-Richtlinien, um die Arten von vertraulichen Elementen zu definieren, für die Uploads auf diese Orte beschränkt werden sollen, indem Sie **Zu Clouddiensten hochladen** und **Zugriff durch nicht zulässige Browser** aktivieren.
 
 Sie können weitere neue Dienste, Apps und Richtlinien hinzufügen, um Ihre Beschränkungen zur Erfüllung Ihrer geschäftlichen Anforderungen und zum Schutz vertraulicher Daten auszudehnen und restriktiver zu machen. 
 
