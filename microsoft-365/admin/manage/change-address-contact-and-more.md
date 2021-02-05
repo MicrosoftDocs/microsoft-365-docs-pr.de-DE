@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Erfahren Sie, wie Sie Änderungen an Ihrem Organisationsprofil, beispielsweise Bezeichnung der Organisation, Adresse, Telefonnummer, technischer Kontakt und E-Mail-Adresse vornehmen können.
-ms.openlocfilehash: 334bd1bee0571ba173987b7767465e8d82d7efe9
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 3c3a936c8961373a94dc8b8978dbc274048af09c
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058435"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114225"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Ändern der Adresse, des technischen Kontakts und anderer Informationen Ihrer Organisation
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
   
@@ -73,15 +73,15 @@ Als Administrator können Sie Ihre alternative E-Mail-Adresse zum Zurücksetzen 
 
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center.</a>
 
-2. Wählen Sie in der Kopfzeile Ihr Profilsymbol und dann "Konto **anzeigen" aus.**
+2. Wählen Sie in der Kopfzeile Ihr Profilsymbol aus, und wählen Sie dann **"Konto anzeigen" aus.**
 
 3. Wählen Sie auf der linken Seite **Sicherheitsinformationen aus.**
 
-4. Wählen Sie im Abschnitt "E-Mail" die Option **"Ändern" aus.**
+4. Wählen Sie im Abschnitt "E-Mail" die **Option "Ändern" aus.**
 
 5. Bearbeiten Sie die Adresse im **Feld "Alternative E-Mail",** und wählen Sie dann **"Weiter" aus.**
 
-6. Geben Sie den Code ein, der an die alternative E-Mail-Adresse gesendet wurde, und wählen Sie **"OK"** aus, um die Änderung zu überprüfen.
+6. Geben Sie den An die alternative E-Mail-Adresse gesendeten Code ein, und wählen Sie **"OK"** aus, um die Änderung zu überprüfen.
 Informationen zum Ändern anderer Profilinformationen finden Sie unter ["Ändern Ihrer Kontakteinstellungen"](change-contact-preferences.md) oder ["Ändern der Anzeigesprache".](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx)
   
 ### <a name="email-signatures"></a>E-Mail-Signaturen

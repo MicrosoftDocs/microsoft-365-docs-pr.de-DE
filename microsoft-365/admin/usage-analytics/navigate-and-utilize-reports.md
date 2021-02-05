@@ -19,66 +19,66 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
-description: Hier erfahren Sie, wie Sie die Berichte mithilfe von Navigationsregisterkarten und Filtern anzeigen können.
-ms.openlocfilehash: 3a43d638d50c2e9415dde3bc7c547a7ba3b9d5bd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Erfahren Sie, wie Sie die Berichte mithilfe von Navigationsregisterkarten und Filtern anzeigen.
+ms.openlocfilehash: aa7508b65d2a2b949c8e6737e92171ebb95812e1
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401482"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114273"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Navigieren in und Verwenden von Berichten in Microsoft 365-Verwendungsanalyse
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
-Das Dashboard bietet Ihnen einen schnellen Überblick über die wichtigsten Metriken für die Verwendung und Einführung. Wenn Sie die Metriken auf oberster Ebene auswählen, können Sie auf Berichte zugreifen, die weitere Details und Einblicke bieten. Jede Registerkarte Bericht enthält Datenvisualisierungen speziell für einen Aspekt der Verwendung und Einführung für Ihre Organisation. Die erfassten Daten werden im Titel jedes Berichts erläutert, und es wird eine Kachel mit weiteren Informationen zu den Visualisierungen auf der angezeigten Berichts Registerkarte angezeigt.
+Das Dashboard bietet Ihnen einen schnellen Überblick über die wichtigsten Metriken für die Verwendung und Einführung. Durch Auswählen der Metriken auf oberster Ebene können Sie auf Berichte zugreifen, die weitere Details und Einblicke bieten. Jede Berichtsregisterkarte enthält Datenvisualisierungen speziell für einen Aspekt der Nutzung und Akzeptanz für Ihre Organisation. Die gesammelten Daten werden im Titel jedes Berichts erläutert, und es wird eine Kachel mit weiteren Informationen zu den Visualisierungen auf der Berichtsregisterkarte angezeigt, die Sie anzeigen.
 
 Nachfolgend finden Sie einige Tipps zu den ersten Schritten mit Ihren Berichten:
 
-- Verwenden Sie die Navigationsregisterkarten auf der linken Seite oder eine zugehörige Metrik auf der Seite " **Executive Summary** ", um zu jedem Bericht auf oberster Ebene zu navigieren.
+- Verwenden Sie die Navigationsregisterkarten auf der linken  Seite oder auf einer verwandten Metrik auf der Seite "Zusammenfassung", um zu jedem Bericht auf oberster Ebene zu navigieren.
 
-    ![Zeigt die Navigationsregisterkarten auf der linken Seite an.](../../media/navigate-usage-analytics1.png)
+    ![Zeigt die Navigationsregisterkarten auf der linken Seite an](../../media/navigate-usage-analytics1.png)
 
-- Verwenden Sie die Navigationsregisterkarten oben auf jedem Bericht auf oberster Ebene, um zu anderen Berichten innerhalb dieser Ebene zu navigieren.
+- Verwenden Sie die Navigationsregisterkarten oben in jedem Bericht auf oberster Ebene, um zu verschiedenen Berichten innerhalb dieser Ebene zu navigieren.
 
     ![Zeigt die Navigationsregisterkarten oben in jedem Bericht an.](../../media/navigate-usage-analytics2.png)
 
-- Viele Berichte enthalten einen datenschnitt, in dem Sie nach dem Produkt, dem AAD-Attribut oder der Aktivität filtern können, die Sie anzeigen möchten. Dabei kann es sich um eine Einzelauswahl oder um eine Mehrfachauswahl handeln.
+- Viele Berichte enthalten einen Datenschnitt, in dem Sie nach dem Produkt, dem AAD-Attribut oder der Aktivität filtern können, die Sie anzeigen möchten. Dabei kann es sich entweder um eine Einzelauswahl oder eine Mehrfachauswahl handelt.
 
-    ![Zeigt einen datenschnitt an.](../../media/navigate-usage-analytics3.png)
+    ![Zeigt einen Datenschnitt an](../../media/navigate-usage-analytics3.png)
 
-    ![Zeigt einen datenschnitt an.](../../media/navigate-usage-analytics4.png)
+    ![Zeigt einen Datenschnitt an](../../media/navigate-usage-analytics4.png)
 
 
 - Zeigen Sie auf Datenpunkte, um ein Popup mit Details anzuzeigen.
 
-    ![Zeigt Hover-Beispiel](../../media/navigate-usage-analytics6.png)
+    ![Zeigt ein Hoverbeispiel](../../media/navigate-usage-analytics6.png)
 
-Der Benutzer, der die Vorlagen-App instanziiert hat, kann den Bericht auf seine Anforderungen anpassen. So passen Sie die Vorlagen-APP an:
+Der Benutzer, der die Vorlagen-App instanziiert hat, kann den Bericht an seine Anforderungen anpassen. So passen Sie die Vorlagen-App an:
 
-- Klicken Sie oben im Bericht auf **Bericht bearbeiten** .
+- Wählen **Sie oben im** Bericht "Bericht bearbeiten" aus.
 
-    ![Zeigt den Bearbeitungs Bericht an.](../../media/navigate-usage-analytics7.png)
+    ![Zeigt den Bericht "Bearbeiten" an](../../media/navigate-usage-analytics7.png)
 
 
 - Erstellen Sie mithilfe der zugrunde liegenden [Datasets](usage-analytics-data-model.md) eigene Visualisierungen.
 
 - Verwenden Sie Power BI Desktop, um eigene Datenquellen einzubeziehen.
 
-Um Ihre Berichte freizugeben, wählen Sie einfach die Schaltfläche Freigeben aus. ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) oben auf der Seite.
+Um Ihre Berichte zu teilen, wählen Sie einfach die Schaltfläche "Freigeben" aus. ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) am oberen Rand der Seite.
 
-Informationen zum Anpassen der Berichte finden Sie unter [Anpassen der Berichte in Microsoft 365-Verwendungsanalyse](customize-reports.md).
+Informationen zum Anpassen der Berichte finden Sie unter Anpassen der Berichte [in Microsoft 365-Verwendungsanalysen.](customize-reports.md)
 
 Viele weitere Informationen finden Sie in der Power BI-Dokumentation:
 
-- [Power BI grundlegende Konzepte](https://docs.microsoft.com/power-bi/service-basic-concepts)
+- [Grundlegende Konzepte für Power BI](https://docs.microsoft.com/power-bi/service-basic-concepts)
 
-    Hier finden Sie Informationen zu Dashboard, Datasets, Berichten und anderen Power BI-Konzepten.
+    Erfahren Sie mehr über Dashboards, Datasets, Berichte und andere Power BI-Konzepte.
 
 - [Erste Schritte mit Power BI](https://docs.microsoft.com/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
 
@@ -86,4 +86,4 @@ Viele weitere Informationen finden Sie in der Power BI-Dokumentation:
 
 - [Freigeben von Dashboards und Berichten](https://docs.microsoft.com/power-bi/service-share-dashboards)
 
-    Hier erfahren Sie, wie Sie Berichte für Kollegen oder Personen außerhalb Ihrer Organisation freigeben. Sie können auch den Bericht oder eine gefilterte Version des Berichts freigeben.
+    Erfahren Sie, wie Sie Berichte für Kollegen oder Personen außerhalb Ihrer Organisation freigeben. Sie können auch den Bericht oder eine gefilterte Version des Berichts freigeben.

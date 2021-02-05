@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 5b7ba0db52f06f7b3f6fce596015b56c8e46c6c2
-ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
+ms.openlocfilehash: d22cef41fb1d6dc3fde39681ad84edc510440b11
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50068953"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110007"
 ---
 # <a name="access-the-admin-portal"></a>Zugreifen auf das Verwaltungsportal
 
@@ -59,9 +59,9 @@ Wenn Sie Hilfe beim Zuweisen von Azure Active Directory-Rollen benötigen, lesen
 > [!NOTE]
 > Zu den Sicherheitsfeatures gehören die sicherheitsbezogene Kommunikation, die Verwaltung von Sicherheitskontakten, die Verwaltung sicherheitsbezogener Supportanfragen und der Zugriff auf sicherheitsbezogene Berichte. 
 
-### <a name="assigning-built-in-roles-to-administrators"></a>Zuweisen von integrierten Rollen zu Administratoren
+### <a name="assigning-built-in-roles-to-user"></a>Zuweisen von integrierten Rollen zu Benutzern
 
-Zum Verwalten integrierter Rollen gibt es eine Sicherheitsgruppe für jede benutzerdefinierte Rolle mit dem Namen "Moderne Arbeitsplatzrollen - _Rollenname"_(z. B. "Moderne Arbeitsplatzrollen – Sicherheits-Manager"). Führen Sie die folgenden Schritte aus, um Benutzer einer dieser Sicherheitsgruppen zuzuordnen:
+Zur einfachen Verwaltung integrierter Rollen gibt es eine Sicherheitsgruppe für jede benutzerdefinierte Rolle mit dem Namen "Moderne Arbeitsplatzrollen - Rollenname"(z. B. "Moderne Arbeitsplatzrollen – Sicherheits-Manager"). Führen Sie die folgenden Schritte aus, um Benutzer einer dieser Sicherheitsgruppen zuzuordnen:
 1.  Wechseln Sie zum Microsoft Endpoint Manager-Portal.
 2.  Wählen **Sie Gruppen** auf der linken Seite aus.
 3.  Suchen Sie **nach modernen Arbeitsplatzrollen,** und wählen Sie dann die Gruppe aus, die der Rolle zugeordnet ist, die Sie zuweisen möchten. 
@@ -71,3 +71,16 @@ Zum Verwalten integrierter Rollen gibt es eine Sicherheitsgruppe für jede benut
 
 > [!NOTE]
 > Das Schachteln von Sicherheitsgruppen für die Rollenzuweisung wird derzeit nicht unterstützt. 
+
+### <a name="assigning-built-in-roles-to-groups"></a>Zuweisen von integrierten Rollen zu Gruppen
+
+Wenn Sie einer vorhandenen Gruppe eine oder mehrere der integrierten Rollen zuweisen müssen, führen Sie die folgenden Schritte aus:
+1. Wechseln Sie zu [portal.azure.com](https://portal.azure.com/).
+2. Suchen sie nach Enterprise-Anwendungen, und öffnen **Sie sie.**
+3. Ändern Sie den **Anwendungstypfilter** in _"Microsoft Applications",_ und wählen Sie dann **"Übernehmen" aus.**
+4. Suchen Sie nach _Kunden-APIs für modernen Arbeitsplatz, und wählen Sie sie aus._
+5. Wählen **Sie im** Bereich auf der linken Seite Benutzer und Gruppen aus, und wählen Sie dann + **Benutzer/Gruppe hinzufügen aus.**
+6. Suchen Sie in Benutzern und Gruppen nach **der gruppe, die Sie möchten.**
+7. Suchen Sie unter "Rolle auswählen" nach der entsprechenden **Rolle,** und wählen Sie sie aus.
+8. Select **Assign**.
+ 

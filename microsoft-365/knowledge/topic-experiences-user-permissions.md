@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Themen Berechtigungen in Microsoft 365
+title: Verwalten von Themenberechtigungen in Microsoft -Themen
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,41 +9,40 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: Erfahren Sie, wie Sie Themen Berechtigungen in Microsoft 365 verwalten.
-ms.openlocfilehash: b42bcf25f7b7516fb2b8b6e6b052d94fa6c4ea94
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+description: Erfahren Sie, wie Sie Themenberechtigungen in Microsoft Topics verwalten.
+ms.openlocfilehash: 6592103526a86671a3ff42c698c1243f63be7fef
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668302"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107395"
 ---
-# <a name="manage-topic-permissions-in-microsoft-365"></a>Verwalten von Themen Berechtigungen in Microsoft 365
+# <a name="manage-topic-permissions-in-microsoft-viva-topics"></a>Verwalten von Themenberechtigungen in Microsoft -Themen
 
-Sie können Themen Berechtigungseinstellungen im [Microsoft 365 Admin Center](https://admin.microsoft.com)verwalten. Sie müssen ein globaler Administrator oder SharePoint-Administrator sein, um diese Aufgaben ausführen zu können.
+Sie können Die Einstellungen für Themenberechtigungen im [Microsoft 365 Admin Center verwalten.](https://admin.microsoft.com) Sie müssen ein globaler Administrator oder ein SharePoint-Administrator sein, um diese Aufgaben ausführen zu können.
 
-Mit Themen Berechtigungseinstellungen können Sie Folgendes auswählen:
+Mit Den Einstellungen für Themenberechtigungen können Sie wählen:
 
-- Die Benutzer können Themen erstellen und bearbeiten: neue Themen erstellen, die während der Suche nicht gefunden wurden, oder vorhandene Themen Details bearbeiten.
-- Welche Benutzer Themen verwalten können: greifen Sie auf das Thema Management Center zu, und zeigen Sie Feedback zu Themen sowie Themen über den Lebenszyklus an.
+- Welche Benutzer Themen erstellen und bearbeiten können: Erstellen Sie neue Themen, die während der Suche nicht gefunden wurden, oder bearbeiten Sie vorhandene Themendetails.
+- Welche Benutzer Themen verwalten können: Greifen Sie auf das Themenverwaltungscenter zu, zeigen Sie Feedback zu Themen an, und verschieben Sie Themen durch den Lebenszyklus.
 
-## <a name="to-access-topics-management-settings"></a>So greifen Sie auf Themen Verwaltungseinstellungen zu:
+## <a name="to-access-topics-management-settings"></a>So greifen Sie auf Die Themenverwaltungseinstellungen zu:
 
-1. Klicken Sie im Microsoft 365 Admin Center auf **Einstellungen** und dann auf **org-Einstellungen**.
-2. Klicken Sie auf der Registerkarte **Dienste** auf **Wissensnetzwerk**.
+1. Klicken Sie im Microsoft 365 Admin Center auf **"Einstellungen"** und dann auf **"Organisationseinstellungen".**
+2. Klicken Sie **auf der** Registerkarte "Dienste" auf **"Themenerfahrungen".**
 
-    ![Verbinden von Personen mit wissen](../media/admin-org-knowledge-options-completed.png) 
+    ![Verbinden von Personen mit Wissen](../media/admin-org-knowledge-options-completed.png) 
 
-3. Wählen Sie die Registerkarte **Thema Berechtigungen** aus. In den folgenden Abschnitten finden Sie Informationen zu den einzelnen Einstellungen.
+3. Wählen Sie die Registerkarte **"Themenberechtigungen"** aus. Informationen zu den einzelnen Einstellungen finden Sie in den folgenden Abschnitten.
 
-    ![Wissen-Netzwerk-Einstellungen](../media/knowledge-network-settings-topic-permissions.png) 
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-permissions.png) 
 
-## <a name="change-who-has-permissions-to-update-topic-details"></a>Ändern, wer über Berechtigungen zum Aktualisieren von Themen Details verfügt
+## <a name="change-who-has-permissions-to-update-topic-details"></a>Ändern der Personen, die über Berechtigungen zum Aktualisieren von Themendetails verfügen
 
-So aktualisieren Sie die Benutzer, die Berechtigungen zum Erstellen und Bearbeiten von Themen haben:
+So aktualisieren Sie, wer über Berechtigungen zum Erstellen und Bearbeiten von Themen verfügt:
 
-1. Wählen Sie auf der Registerkarte **Thema Berechtigungen** unter **Wer kann Themen erstellen und bearbeiten** aus die Option **Bearbeiten** aus.
-2. Auf der Seite für die **Erstellung und Bearbeitung von Themen** können Sie Folgendes auswählen:
+1. Wählen Sie **auf der Registerkarte "Themenberechtigungen"** unter "Wer kann Themen **erstellen und bearbeiten"** die Option **"Bearbeiten" aus.**
+2. Auf der **Seite "Wer kann Themen erstellen und** bearbeiten" können Sie folgende Einstellungen auswählen:
     - **Jeder in Ihrer Organisation**
     - **Nur ausgewählte Personen oder Sicherheitsgruppen**
     - **Niemand**
@@ -54,8 +53,8 @@ So aktualisieren Sie die Benutzer, die Berechtigungen zum Erstellen und Bearbeit
 
 So aktualisieren Sie, wer über Berechtigungen zum Verwalten von Themen verfügt:
 
-1. Wählen Sie auf der Registerkarte **Thema Berechtigungen** unter **Benutzer können Themen verwalten die** Option **Bearbeiten** aus.
-2. Auf der Seite **Themen, die Themen verwalten können** , können Sie Folgendes auswählen:
+1. Wählen Sie **auf der Registerkarte "Themenberechtigungen"** unter **"Wer kann** Themen verwalten" die Option **"Bearbeiten" aus.**
+2. Auf der **Seite "Wer kann Themen verwalten"** können Sie folgende Auswählen:
     - **Jeder in Ihrer Organisation**
     - **Ausgewählte Personen oder Sicherheitsgruppen**
 
@@ -65,8 +64,8 @@ So aktualisieren Sie, wer über Berechtigungen zum Verwalten von Themen verfügt
 
 ## <a name="see-also"></a>Siehe auch
 
-[Verwalten der Themen Ermittlung in Microsoft 365](topic-experiences-discovery.md)
+[Verwalten der Themenermittlung in Microsoft -Themen](topic-experiences-discovery.md)
 
-[Verwalten der Themen Sichtbarkeit in Microsoft 365](topic-experiences-knowledge-rules.md)
+[Verwalten der Sichtbarkeit von Themen in Microsoft -Themen](topic-experiences-knowledge-rules.md)
 
-[Ändern des Namens des Themen Centers in Microsoft 365](topic-experiences-administration.md)
+[Ändern des Namens des Themencenters in Microsoft Topics](topic-experiences-administration.md)

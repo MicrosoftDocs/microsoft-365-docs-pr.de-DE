@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ea96780846507e7fc3edccb28e04055ce79261fa
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: 7e5dc3ef4a79b1bdbcde9a7a15fec84efe9b92c9
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980098"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50109961"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Untersuchen und Beheben von Warnungen zur Kommunikationscompliance
 
@@ -106,7 +106,8 @@ Nach der Überprüfung der Grundlagen der Nachricht ist es an der Zeit, eine Nac
 - **Anmerkungenansicht**: In dieser Ansicht können Prüfer Anmerkungen direkt zu der Nachricht hinzufügen, die in der Nachrichtenansicht gespeichert werden.
 - **Benutzerhistorie**: Die Ansicht "Benutzerhistorie" zeigt alle anderen Warnungen an, die durch eine Richtlinie zur Kommunikationscompliance für den Benutzer, der die Nachricht sendet, generiert wurden.
 - **Nachrichtendetailansicht:** Erweiterte Ansicht von Nachrichtenmetadaten und Konfigurationsinformationen.
-- **Mustererkennungsbenachrichtigung (Vorschau):** Viele Läster- und Mobbingaktionen im Laufe der Zeit und beinhalten das erneute Ausführen von Instanzen desselben Verhaltens durch einen Benutzer. Die *erkannte Benachrichtigung* "Muster" wird in den Warnungsdetails angezeigt und weckt die Aufmerksamkeit auf die Warnung. Die Erkennung von Mustern wird auf Richtlinienbasis durchgeführt und wertet das Verhalten der letzten 30 Tage aus, wenn mindestens zwei Nachrichten von einem Absender an denselben Empfänger gesendet werden. Ermittler und Prüfer können diese Benachrichtigung verwenden, um wiederholtes Verhalten zu identifizieren, um die Warnung gegebenenfalls auszuwerten.
+- **Benachrichtigung über** Mustererkennung: Viele Läster- und Mobbingaktionen im Laufe der Zeit und beinhalten das erneute Ausführen von Instanzen desselben Verhaltens durch einen Benutzer. Die *erkannte Benachrichtigung* "Muster" wird in den Warnungsdetails angezeigt und weckt die Aufmerksamkeit auf die Warnung. Die Erkennung von Mustern wird auf Richtlinienbasis durchgeführt und wertet das Verhalten der letzten 30 Tage aus, wenn mindestens zwei Nachrichten von einem Absender an denselben Empfänger gesendet werden. Ermittler und Prüfer können diese Benachrichtigung verwenden, um wiederholtes Verhalten zu identifizieren, um die Warnung gegebenenfalls auszuwerten.
+- **Ansicht "Übersetzen anzeigen":** In dieser Ansicht wird der  Text von Warnmeldungen automatisch in die Sprache konvertiert, die in der Einstellung "Angezeigte Sprache" im Microsoft 365-Abonnement für jeden Prüfer konfiguriert ist. Die Ansicht "Übersetzen" hilft dabei, die Ermittlungsunterstützung für Organisationen mit mehrsprachigen Benutzern zu erweitern, und es entfällt die Notwendigkeit zusätzlicher Übersetzungsdienste außerhalb des Überprüfungsprozesses für die Kommunikationskonformität. Mithilfe von Microsoft Translate-Diensten kann die Übersetzungsansicht bei Bedarf aktiviert und deaktiviert werden und unterstützt eine Vielzahl von Sprachen. Eine vollständige Liste der unterstützten Sprachen finden Sie unter [Microsoft Translator Languages](https://www.microsoft.com/translator/business/languages/). In der Übersetzungssprachenliste *aufgeführte Sprachen* werden in der Übersetzungsansicht unterstützt.
 
     ![Steuerelemente für die Nachrichtenansicht der Kommunikationskonformität](../media/communication-compliance-message-views.png)
 

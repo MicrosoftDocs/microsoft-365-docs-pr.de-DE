@@ -20,16 +20,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f958a2f6854ca34b0d24a527e2517c848885ad1c
-ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
+ms.openlocfilehash: 442f0dd13415c4ca435cdf69336d1fb07a9e045d
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2021
-ms.locfileid: "49883684"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50109924"
 ---
 # <a name="get-started-with-communication-compliance"></a>Erste Schritte mit der Kommunikationscompliance
 
-Verwenden Sie Richtlinien zur Kommunikationskonformität, um die Benutzerkommunikation zur Untersuchung durch interne oder externe Prüfer zu identifizieren. Weitere Informationen dazu, wie Richtlinien zur Kommunikationskonformität Ihnen bei der Überwachung der Kommunikation in Ihrer Organisation helfen können, finden Sie unter Richtlinien zur Kommunikationskonformität [in Microsoft 365.](communication-compliance.md) Wenn Sie überprüfen möchten, wie Contoso schnell eine Kommunikationskonformitätsrichtlinie zur Überwachung auf anstößige Sprache in Microsoft Teams, Exchange Online und Yammer konfiguriert hat, sehen Sie sich diese [Fallstudie an.](communication-compliance-case-study.md)
+Verwenden Sie Richtlinien zur Kommunikationskonformität, um die Benutzerkommunikation zur Untersuchung durch interne oder externe Prüfer zu identifizieren. Weitere Informationen dazu, wie Richtlinien zur Kommunikationskonformität Ihnen bei der Überwachung der Kommunikation in Ihrer Organisation helfen können, finden Sie unter Kommunikations-Compliance-Richtlinien [in Microsoft 365.](communication-compliance.md) Wenn Sie überprüfen möchten, wie Contoso schnell eine Kommunikationskonformitätsrichtlinie zur Überwachung auf anstößige Sprache in Microsoft Teams, Exchange Online und Yammer konfiguriert hat, sehen Sie sich diese [Fallstudie an.](communication-compliance-case-study.md)
 
 ## <a name="subscriptions-and-licensing"></a>Abonnements und Lizenzierung
 
@@ -42,8 +42,8 @@ Bevor Sie mit der Kommunikationskonformität beginnen, sollten Sie Ihr [Microsof
 - Microsoft 365 A3-Abonnement + das Microsoft 365 A5 Compliance-Add-On
 - Microsoft 365 A3-Abonnement + das Microsoft 365 A5 Insider Risk Management-Add-On
 - Microsoft 365 -G5-Abonnement (kostenpflichtig oder Testversion)
-- Microsoft 365 G5-Abonnement + das Microsoft 365 G5 Compliance-Add-On
-- Microsoft 365 G5-Abonnement + das Microsoft 365 G5 Insider Risk Management-Add-On
+- Microsoft 365 -G5-Abonnement + das Microsoft 365 G5 Compliance-Add-On
+- Microsoft 365 -G5-Abonnement + das Microsoft 365 G5-Add-On "Insider Risk Management"
 - Office 365 Enterprise E5-Abonnement (kostenpflichtig oder Testversion)
 - Office 365 A5-Abonnement (kostenpflichtig oder Testversion)
 - Office 365 Enterprise E3-Abonnement + das Office 365 Advanced Compliance-Add-On (nicht mehr verfügbar für neue Abonnements, siehe Hinweis)
@@ -51,9 +51,9 @@ Bevor Sie mit der Kommunikationskonformität beginnen, sollten Sie Ihr [Microsof
 Benutzern, die in Richtlinien zur Kommunikationskonformität enthalten sind, muss eine der oben genannten Lizenzen zugewiesen werden.
 
 >[!IMPORTANT]
->Office 365 Advanced Compliance wird nicht mehr als eigenständiges Abonnement verkauft. Wenn aktuelle Abonnements ablaufen, sollten Kunden zu einem der oben genannten Abonnements überwechseln, das dieselben oder zusätzliche Kompatibilitätsfeatures enthält.
+>Office 365 Advanced Compliance wird nicht mehr als eigenständiges Abonnement verkauft. Wenn aktuelle Abonnements ablaufen, sollten Kunden zu einem der oben genannten Abonnements überwechseln, das dieselben oder zusätzliche Compliancefeatures enthält.
 
-Wenn Sie nicht über einen vorhandenen Office 365 Enterprise E5-Plan verfügen und die Kommunikationskonformität [](https://www.microsoft.com/microsoft-365/enterprise) testen möchten, können Sie [Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) zu Ihrem vorhandenen Abonnement hinzufügen oder sich für eine Testversion von Office 365 Enterprise E5 registrieren.
+Wenn Sie nicht über einen vorhandenen Office 365 Enterprise E5-Plan verfügen und die Kommunikationskonformität [](https://www.microsoft.com/microsoft-365/enterprise) testen möchten, können Sie [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) zu Ihrem vorhandenen Abonnement hinzufügen oder sich für eine Testversion von Office 365 Enterprise E5 registrieren.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Schritt 1 (erforderlich): Aktivieren von Berechtigungen für die Kommunikationskonformität
 
@@ -62,7 +62,7 @@ Wenn Sie nicht über einen vorhandenen Office 365 Enterprise E5-Plan verfügen u
 
 Es gibt fünf Rollengruppen, die zum Konfigurieren von Berechtigungen zum Verwalten von Kommunikationskonformitätsfeatures verwendet werden. Um  die Kommunikationskonformität als Menüoption im Microsoft 365 Compliance Center verfügbar zu machen und mit diesen Konfigurationsschritten fortzufahren, müssen Sie den Rollengruppen *"Communication Compliance"* oder *"Communication Compliance Admin"* zugewiesen sein. Um nach der Erstkonfiguration auf Kommunikationskonformitätsfeatures zugreifen und diese verwalten zu können, müssen Benutzer Mitglied mindestens einer Rollengruppe für die Kommunikationskonformität sein.
 
-Je nachdem, wie Sie Kommunikationsrichtlinien und Warnungen verwalten möchten, müssen Sie Benutzer bestimmten Rollengruppen zuweisen. Sie haben die Möglichkeit, Bestimmten Rollengruppen Benutzer mit unterschiedlichen Complianceaufgaben zuzuordnen, um verschiedene Bereiche der Kommunikationskonformitätsfeatures zu verwalten. Sie können auch alle Benutzerkonten für designierte Administratoren, Analysten, Ermittler  und Betrachter der Rollengruppe "Kommunikationskonformität" zuweisen. Verwenden Sie eine einzelne Rollengruppe oder mehrere Rollengruppen, um ihre Anforderungen für die Verwaltung der Richtlinienkonformität am besten zu erfüllen.
+Je nachdem, wie Sie Kommunikationsrichtlinien und Warnungen verwalten möchten, müssen Sie Benutzer bestimmten Rollengruppen zuweisen. Sie haben die Möglichkeit, Bestimmten Rollengruppen Benutzer mit unterschiedlichen Complianceaufgaben zuzuordnen, um verschiedene Bereiche der Kommunikationskonformitätsfeatures zu verwalten. Sie können auch alle Benutzerkonten für designierte Administratoren, Analysten, Ermittler  und Betrachter der Rollengruppe "Kommunikationskonformität" zuweisen. Verwenden Sie eine einzelne Rollengruppe oder mehrere Rollengruppen, um ihre Anforderungen für die Verwaltung der Richtlinienkonformität optimal zu erfüllen.
 
 Wählen Sie beim Konfigurieren der Kommunikationskonformität aus den folgenden Rollengruppenoptionen aus:
 
@@ -72,7 +72,7 @@ Wählen Sie beim Konfigurieren der Kommunikationskonformität aus den folgenden 
 | **Kommunikationskonformitätsadministrator** | Verwenden Sie diese Rollengruppe, um zunächst die Kommunikationskonformität zu konfigurieren und später Administratoren für die Kommunikationskonformität in eine definierte Gruppe zu untergtrennen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Richtlinien zur Kommunikationskonformität, globale Einstellungen und Rollengruppenzuweisungen erstellen, lesen, aktualisieren und löschen. Benutzer, die dieser Rollengruppe zugewiesen sind, können keine Benachrichtigungen anzeigen. |
 | **Communication Compliance Analyst** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die als Kommunikations-Compliance-Analysten fungieren. Benutzer, die dieser Rollengruppe zugewiesen sind, können Richtlinien anzeigen, in denen sie als Prüfer zugewiesen sind, Nachrichtenmetadaten (keine Nachrichteninhalte) anzeigen, an zusätzliche Prüfer eskalieren oder Benachrichtigungen an Benutzer senden. Analysten können ausstehende Warnungen nicht beheben. |
 | **Kommunikations-Compliance-Ermittler** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die als Ermittler der Kommunikationskonformität fungieren. Benutzer, die dieser Rollengruppe zugewiesen sind, können Nachrichtenmetadaten und -inhalte anzeigen, an weitere Prüfer eskalieren, zu einem Advanced eDiscovery-Fall eskalieren, Benachrichtigungen an Benutzer senden und die Warnung auflösen. |
-| **Kommunikations-Compliance-Viewer** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die Kommunikationsberichte verwalten. Benutzer, die dieser Rollengruppe zugewiesen sind, können auf der Startseite für die Kommunikationskonformität auf alle Berichts widgets zugreifen und alle Berichte zur Kommunikationskonformität anzeigen. |
+| **Communication Compliance Viewer** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die Kommunikationsberichte verwalten. Benutzer, die dieser Rollengruppe zugewiesen sind, können auf der Startseite für die Kommunikationskonformität auf alle Berichts widgets zugreifen und alle Berichte zur Kommunikationskonformität anzeigen. |
 
 ### <a name="option-1-assign-all-compliance-users-to-the-communication-compliance-role-group"></a>Option 1: Zuweisen aller Compliancebenutzer zur Rollengruppe "Kommunikationskonformität"
 
@@ -140,7 +140,7 @@ Wenn Sie eine Organisation mit einer lokalen Bereitstellung von Exchange oder ei
 
 Um überwachte Benutzer in großen Unternehmensorganisationen zu verwalten, müssen Sie möglicherweise alle Benutzer über große Gruppen hinweg überwachen. Sie können PowerShell verwenden, um eine Verteilergruppe für eine globale Richtlinie zur Kommunikationskonformität für die zugewiesene Gruppe zu konfigurieren. Auf diese Weise können Sie Tausende von Benutzern mit einer einzigen Richtlinie überwachen und die Richtlinie zur Kommunikationskonformität aktualisieren, sobald neue Mitarbeiter Ihrer Organisation beitreten.
 
-1. Erstellen Sie [eine](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) dedizierte Verteilergruppe für Ihre globale Richtlinie zur Kommunikationskonformität mit den folgenden Eigenschaften: Stellen Sie sicher, dass diese Verteilergruppe nicht für andere Zwecke oder andere Office 365-Dienste verwendet wird.
+1. Erstellen Sie [eine](/powershell/module/exchange/new-distributiongroup) dedizierte Verteilergruppe für Ihre globale Richtlinie zur Kommunikationskonformität mit den folgenden Eigenschaften: Stellen Sie sicher, dass diese Verteilergruppe nicht für andere Zwecke oder andere Office 365-Dienste verwendet wird.
 
     - **MemberDepartRestriction = Closed**. Stellt sicher, dass Benutzer sich selbst nicht aus der Verteilergruppe entfernen können.
     - **MemberJoinRestriction = Closed**. Stellt sicher, dass Benutzer sich selbst nicht zur Verteilergruppe hinzufügen können.
@@ -150,7 +150,7 @@ Um überwachte Benutzer in großen Unternehmensorganisationen zu verwalten, müs
     New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
     ```
 
-2. Wählen Sie ein nicht verwendetes [benutzerdefiniertes Exchange-Attribut aus,](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes) um Benutzer nachverfolgt zu werden, die der Kommunikationskonformitätsrichtlinie in Ihrer Organisation hinzugefügt wurden.
+2. Wählen Sie ein nicht verwendetes [benutzerdefiniertes Exchange-Attribut aus,](/Exchange/recipients/mailbox-custom-attributes) um Benutzer nachverfolgt zu werden, die der Kommunikationskonformitätsrichtlinie in Ihrer Organisation hinzugefügt wurden.
 
 3. Führen Sie das folgende PowerShell-Skript nach einem wiederkehrenden Zeitplan aus, um Der Kommunikationskonformitätsrichtlinie Benutzer hinzuzufügen:
 
@@ -169,8 +169,8 @@ Um überwachte Benutzer in großen Unternehmensorganisationen zu verwalten, müs
 
 Weitere Informationen zum Einrichten von Gruppen finden Sie unter:
 
-- [Erstellen und Verwalten von Verteilergruppen](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [Übersicht über Microsoft 365-Gruppen](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups)
+- [Erstellen und Verwalten von Verteilergruppen](/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
+- [Übersicht über Microsoft 365-Gruppen](/office365/admin/create-groups/office-365-groups)
 
 ## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>Schritt 4 (optional): Überprüfen, ob Yammer mandanten im nativen Modus ist
 
@@ -178,8 +178,8 @@ Im nativen Modus befinden sich Yammer Benutzer in Azure Active Directory (Azure 
 
 Weitere Informationen zum Konfigurieren von Yammer im nativen Modus finden Sie unter:
 
-- [Übersicht über Yammer nativen Modus in Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)
-- [Konfigurieren eines Yammer-Netzwerks für den nativen Modus für Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode)
+- [Übersicht über Yammer nativen Modus in Microsoft 365](/yammer/configure-your-yammer-network/overview-native-mode)
+- [Konfigurieren eines Yammer-Netzwerks für den nativen Modus für Microsoft 365](/yammer/configure-your-yammer-network/native-mode)
 
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>Schritt 5 (erforderlich): Erstellen einer Kommunikationskonformitätsrichtlinie
   
@@ -198,7 +198,7 @@ Weitere Informationen zum Konfigurieren von Yammer im nativen Modus finden Sie u
 
     - Bestätigen oder aktualisieren Sie den Richtliniennamen. Richtliniennamen können nicht mehr geändert werden, nachdem die Richtlinie erstellt wurde.
     
-    - Wählen Sie die Zu überwachenden Benutzer oder Gruppen aus, einschließlich der Auswahl von Benutzern oder Gruppen, die Sie ausschließen möchten. Wenn Sie die Vorlage für Interessenkonflikte verwenden, wählen Sie zwei Gruppen oder zwei Benutzer aus, um die interne Kommunikation zu überwachen.
+    - Wählen Sie die Zu überwachenden Benutzer oder Gruppen aus, einschließlich der Auswahl von Benutzern oder Gruppen, die Sie ausschließen möchten. Wenn Sie die Vorlage für Interessenkonflikte verwenden, wählen Sie zwei Gruppen oder zwei Benutzer aus, die auf die interne Kommunikation überwacht werden sollen.
     
     - Wählen Sie die Prüfer für die Richtlinie aus. Prüfer sind einzelne Benutzer, und alle Prüfer müssen über Postfächer verfügen, die auf Exchange Online gehostet werden. Die hier hinzugefügten Prüfer sind die Prüfer, aus denen Sie wählen können, wenn Sie eine Warnung im Untersuchungs- und Wartungsworkflow eskalieren. Wenn Prüfer einer Richtlinie hinzugefügt werden, erhalten sie automatisch eine E-Mail-Nachricht, die sie über die Zuweisung an die Richtlinie benachrichtigt und Links zu Informationen zum Überprüfungsprozess enthält.
     
@@ -208,11 +208,11 @@ Weitere Informationen zum Konfigurieren von Yammer im nativen Modus finden Sie u
 
     - Geben Sie der Richtlinie einen Namen und eine Beschreibung. Richtliniennamen können nicht mehr geändert werden, nachdem die Richtlinie erstellt wurde.
     
-    - Wählen Sie die Zu überwachende Benutzer oder Gruppen aus, einschließlich aller Benutzer in Ihrer Organisation, bestimmter Benutzer und Gruppen oder anderer Benutzer und Gruppen, die Sie ausschließen möchten.
+    - Wählen Sie die zu überwachende Benutzer oder Gruppen aus, einschließlich aller Benutzer in Ihrer Organisation, bestimmter Benutzer und Gruppen oder anderer Benutzer und Gruppen, die Sie ausschließen möchten.
     
-    - Wählen Sie die Prüfer für die Richtlinie aus. Prüfer sind einzelne Benutzer, und alle Prüfer müssen über Postfächer verfügen, die auf Exchange Online gehostet werden. Die hier hinzugefügten Prüfer sind die Prüfer, aus denen Sie beim Eskalieren einer Warnung im Untersuchungs- und Wartungsworkflow wählen können. Wenn Prüfer einer Richtlinie hinzugefügt werden, erhalten sie automatisch eine E-Mail-Nachricht, die sie über die Zuweisung an die Richtlinie benachrichtigt und Links zu Informationen zum Überprüfungsprozess enthält.
+    - Wählen Sie die Prüfer für die Richtlinie aus. Prüfer sind einzelne Benutzer, und alle Prüfer müssen über Postfächer verfügen, die auf Exchange Online gehostet werden. Die hier hinzugefügten Prüfer sind die Prüfer, aus denen Sie wählen können, wenn Sie eine Warnung im Untersuchungs- und Wartungsworkflow eskalieren. Wenn Prüfer einer Richtlinie hinzugefügt werden, erhalten sie automatisch eine E-Mail-Nachricht, die sie über die Zuweisung an die Richtlinie benachrichtigt und Links zu Informationen zum Überprüfungsprozess enthält.
     
-    - Wählen Sie die zu scannende Kommunikationskanäle aus, einschließlich Exchange, Microsoft Teams, Yammer oder Skype for Business. Sie können auch Drittanbieterquellen überprüfen, wenn Sie einen Connector in Microsoft 365 konfiguriert haben.
+    - Wählen Sie die zu überprüfende Kommunikationskanäle aus, einschließlich Exchange, Microsoft Teams, Yammer oder Skype for Business. Sie können auch Drittanbieterquellen überprüfen, wenn Sie einen Connector in Microsoft 365 konfiguriert haben.
     
     - Wählen Sie die zu überwachende Kommunikationsrichtung aus, einschließlich eingehender, ausgehender oder interner Kommunikation.
     

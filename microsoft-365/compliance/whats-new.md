@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Unabhängig davon, ob sie neue Lösungen zum Compliance Center hinzufügen, vorhandene Features basierend auf Ihrem Feedback aktualisieren oder aktuelle und aktualisierte Dokumentationen zur Verfügung stellt, hilft Ihnen Microsoft 365, auf dem neuesten Stand der sich ständig ändernden Compliancelandschaft zu bleiben. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4fcc0c9317ed0f302c03ba4bda0b536b57889660
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: 682f736456ebe822ee5a34de0175003fd7516920
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066818"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50113974"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Neuerungen in Microsoft 365 Compliance
 
@@ -79,7 +79,7 @@ Die [Rollengruppe "Datensatzverwaltung"](get-started-with-records-management.md#
 
 ### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
 
-- [Automatisches Beschriften von Daten in Azure Purview (Vorschau)](https://docs.microsoft.com/en-us/azure/purview/create-sensitivity-label). Sie können jetzt Vertraulichkeitsbezeichnungen erstellen und automatisch auf Ressourcen in Azure Purview anwenden, z. B. Dateien in Azure Blob Storage und Datenbankspalten in SQL Server.
+- [Automatisches Beschriften von Daten in Azure Purview (Vorschau)](https://docs.microsoft.com/azure/purview/create-sensitivity-label). Sie können jetzt Vertraulichkeitsbezeichnungen erstellen und automatisch auf Ressourcen in Azure Purview anwenden, z. B. Dateien in Azure Blob Storage und Datenbankspalten in SQL Server.
 - [Benutzer müssen eine Bezeichnung auf Elemente anwenden.](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) Diese neue Option wird auch als "obligatorische Bezeichnung" bezeichnet und erfordert, dass Benutzer eine Vertraulichkeitsbezeichnung in den jeweiligen Szenarien auswählen und anwenden.
 
 ## <a name="november-2020"></a>November 2020

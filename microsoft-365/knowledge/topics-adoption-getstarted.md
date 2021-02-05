@@ -1,6 +1,6 @@
 ---
-title: Erste Schritte mit der Einführung von Themen Erfahrungen (Vorschau)
-description: Erfahren Sie, wie Sie die Einführung von Themen Erfahrungen in Ihrer Organisation steuern können.
+title: Erste Schritte bei der Einführung von Microsoft -Themen
+description: Erfahren Sie, wie Sie die Einführung von Microsoft -Themen in Ihrer Organisation unterstützen.
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -12,158 +12,155 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 ROBOTS: NOINDEX
-ms.openlocfilehash: 45469e17870a58966a42a13116b6ba645071722c
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 3548cb31f782052a3bd4da1802077a343b5da01f
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698531"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107530"
 ---
-# <a name="get-started-driving-adoption-of-topic-experiences-preview"></a>Erste Schritte mit der Einführung von Themen Erfahrungen (Vorschau)
+# <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>Erste Schritte bei der Einführung von Microsoft -Themen
 
-> [!Note]
-> Der Inhalt dieses Artikels ist für Project Cortex private Preview. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
+Bevor Sie mit der Einführung beginnen, müssen Sie sich mit den Konzepten im Umgang mit Wissensmanagement und Themen im Thema "Themen" aus der Erfahrung machen. Das folgende Diagramm zeigt, was während der Themenerkennung und -curation geschieht:
 
-Bevor Sie mit der Einführung beginnen, müssen Sie sich mit den Konzepten im Zusammenhang mit Knowledge Management und Themen Erfahrungen vertraut machen. Das folgende Diagramm zeigt, was bei der Ermittlung und Kuration von Themen geschieht:
+![Architektur von "Themen"](../media/knowledge-management/topic-management-architecture.png)
 
-![Architektur des Themas Experiences](../media/knowledge-management/topic-management-architecture.png)
+- **Ermittlung:** Benutzer können Wissen in den Apps, die sie täglich verwenden, über Themenkarten entdecken – sie können auch Themen in Microsoft Search entdecken.
+- **Curation:** Experten (Subject Matter Experts, SMEs) verfeinern Themen über Themenseiten, und KI lernt aus ihren Beiträgen. Das Themencenter enthält Themenseiten, die Benutzer erkunden und von Experten verwalten können.
+- **Identifikation:** Mit Microsoft Graph und Künstlicher Intelligenz (AI) werden Wissen und Personen (Themen, Fertigkeiten und so weiter) identifiziert und automatisch in verwandten Themen organisiert. SharePoint-Inhalte werden mit Sicherheitsinhalten indiziert.
+- **Erweiterung:** Mit Microsoft Graph-Inhaltsconnectors (in Kürze verfügbar) können Sie Wissen aus externen Diensten und Datenrepositorys nutzen.
 
-- **Discovery**: Benutzer können wissen in den Apps entdecken, die Sie täglich über Themenkarten verwenden – Sie können auch Themen in Microsoft Search entdecken.
-- **Kuration**: Experten für Sachverständige (KMU) verfeinern Themen über Themenseiten, und AI lernt aus Ihren Eingaben. Das Themen Center enthält Themenseiten, die Benutzer erkunden können und von denen Experten verwaltet werden können.
-- **Identification**: mit Microsoft Graph und Artificial Intelligence (AI) wissen und Personen (Themen, Fertigkeiten, ein so weiter) werden identifiziert und automatisch in verwandten Themen organisiert. SharePoint-Inhalte werden mit Sicherheitsinhalten indiziert.
-- **Erweiterung**: mit Microsoft Graph-Inhalts-Konnektoren (in Kürze) können Sie wissen aus externen Diensten und Daten Repositories aufnehmen.
+Weitere Informationen finden Sie in der [Übersicht für](topic-experiences-overview.md) eine Einführung.
 
-Weitere Informationen finden Sie unter [Übersicht](topic-experiences-overview.md) über die Einführung.
+Beachten Sie, dass:
 
-Beachten Sie Folgendes:
+- Die Themenermittlung wird verbessert, wenn mehr Inhalte verfügbar sind.
+- Die Sicherheit, der Datenschutz und der Speicherort Ihrer Daten bleiben erhalten, obwohl die Informationen in einer neuen Besensung präsentiert werden.
+- Benutzer benötigen eine Lizenz zum Anzeigen von Themen.
+- Die Ermittlung wird zunächst für englischsprachige Inhalte verwendet.
 
-- Die Thema Ermittlung wird verbessert, wenn mehr Inhalte zur Verfügung stehen.
-- Die Sicherheit, der Datenschutz und der Speicherort Ihrer Daten bleiben erhalten, auch wenn die Informationen in einer neuen Benutzeroberfläche angezeigt werden.
-- Benutzer benötigen eine Lizenz zum Anzeigen von Themen Erfahrungen.
-- Die Ermittlung erfolgt zunächst auf englischsprachigen Inhalten.
+Um die Vorbereitung zu unterstützen, sollten Sie sich die folgenden Fragen durchdingen:
 
-Um die Vorbereitung zu erleichtern, denken Sie über diese Fragen nach:
-
-- Welche Inhalte sollten für die Themen Ermittlung verwendet werden?
-- Von wem werden Themen verwaltet?
-- Wem werden Themenkarten und Highlights angezeigt?
+- Welche Inhalte sollten für die Themenermittlung verwendet werden?
+- Wer verwaltet Themen?
+- Wer wird Themenkarten und Highlights sehen?
 - Welche Themen werden erwartet?
 
-Lesen Sie diese Liste der Voraussetzungen, um das meiste aus den Themen Erfahrungen herausholen:
+Sehen Sie sich diese Liste der Voraussetzungen an, damit Sie die Themen von Sichten am besten aus der Übersicht machen können:
 
 |Produkt oder Feature |Beschreibung |
 |:-------|:--------|
-|SharePoint Online mit modernen SharePoint-Seiten |Das Thema Mining umfasst nur Inhalte auf SharePoint-Websites, und Themenkarten können nur auf modernen Seiten angezeigt werden.|
-|Microsoft Graph |Sie können steuern, ob Themen in die Suche einbezogen oder ausgeschlossen werden oder mit den Microsoft Graph-Einstellungen vertiefen. |
+|SharePoint Online mit modernen SharePoint-Seiten |Das ThemaMining umfasst nur Inhalte auf SharePoint-Websites, und Themenkarten können nur auf modernen Seiten angezeigt werden.|
+|Microsoft Graph |Sie können mit den Microsoft Graph-Einstellungen steuern, ob Themen in die Suche oder delve aufgenommen oder von dieser ausgeschlossen werden. |
 
-## <a name="plan-for-adoption"></a>Plan für die Einführung
+## <a name="plan-for-adoption"></a>Planen der Einführung
 
-Um die Einführung von Themen Erfahrungen zu planen, müssen Sie Folgendes tun:
+Zum Planen der Einführung von "Topics" müssen Sie folgende Punkte einplanen:
 
 ![Schritte zur Planung der Einführung](../media/knowledge-management/km-adoption-plan-adoption.png)
 
-1. Planen der Vorgehensweise und der Zielszenarien:
-    - Denken Sie daran, die [Szenarien](#target-scenarios)zu definieren und zu priorisieren.
-    - Denken Sie an die [beteiligten](#identify-stakeholders) und Projektteammitglieder, die Sie einbeziehen müssen.  
-    - Finden Sie heraus, welche geschäftlichen Auswirkungen Sie auf Ihr Unternehmen haben möchten und wie Sie den [Erfolg messen](#create-a-success-plan).
+1. Planen Sie Den Ansatz und die Zielszenarien:
+    - Denken Sie darüber nach, die Szenarien zu definieren und zu [priorisieren.](#target-scenarios)
+    - Denken Sie an die [Projektbeteiligten](#identify-stakeholders) und Projektteammitglieder, die Sie benötigen.  
+    - Erfahren Sie, welche geschäftlichen Auswirkungen Sie erzielen möchten und wie Sie den [Erfolg messen werden.](#create-a-success-plan)
 
-2. Ihre Organisation einbinden:
-    - Identifizieren Sie die Geschäftsgruppen und Geschäftsteams, die einbezogen werden müssen, und gewinnen Sie eine Ausrichtung über diese und die Szenarien, die Sie planen.
-    - Beginnen Sie darüber nachzudenken, wie Sie Early Adopter einbinden, um kritisches, frühes Feedback zu erhalten, damit Sie die beste Lösung durchlaufen können.
-    - Beginnen Sie mit dem Erstellen der Community, und überlegen Sie, wie Sie mit diesen verschiedenen Gruppen in Ihrer Organisation Themen Erfahrungen nutzen können.
+2. Interagieren Sie Mit Ihrer Organisation:
+    - Identifizieren Sie die Geschäftsbereichen und Geschäftsteams, die beteiligt sein müssen, und ermitteln Sie die Ausrichtung in diesen und den szenarien, die Sie planen.
+    - Denken Sie darüber nach, wie Sie einige Early Adopter für ein kritisches, frühes Feedback engagieren können, damit Sie die beste Lösung finden können.
+    - Beginnen Sie mit dem Erstellen der Community, und überlegen Sie, wie Themen in Ihrer Organisation von diesen verschiedenen Gruppen verwendet werden können.
 
-3. Schulen Sie Ihre Organisation: die meisten Menschen verstehen das Konzept der Themen intuitiv und wissen, wie Themenkarten relevante Informationen kompilieren und den Wert verstehen und sehen. Möglicherweise möchten Sie jedoch Schulungen erstellen, die auf Ihre eigene Kultur und Organisation zugeschnitten sind, um zu zeigen, wie Sie die Verwendung von thematischen Erfahrungen in Ihrer Organisation wünschen. Einige Schulungsressourcen:
-    - [Ressourcen Center für Project Cortex](https://aka.ms/projectcortex). Enthält Übersichten und Featureinformationen, aufgezeichnete Office-Stunden Videos und Präsentationen sowie Informationen zu Partnern und deren angeboten.
-    - Demnächst, Schulungsvideos und Hilfe für Endbenutzer.
+3. Schulen Sie Ihre Organisation: Die meisten Benutzer verstehen intuitiv das Konzept von Themen und wie Themenkarten relevante Informationen kompilieren und den Wert verstehen und sehen. Vielleicht möchten Sie aber schulungen erstellen, die auf Ihre eigene Kultur und Organisation zugeschnitten sind, um zu zeigen, wie Themen verwendet werden sollen. Einige Schulungsressourcen:
+    - [Project Cortex Resource Center](https://aka.ms/projectcortex). Enthält Übersichten und Featureinformationen, aufgezeichnete Videos und Präsentationen zur Bürozeit sowie Informationen zu Partnern und ihren Angeboten.
+    - In Kürze werden Schulungsvideos und Hilfe für Endbenutzer zur Verfügung stellen.
 
-4. [Erstellen eines Champion-Netzwerks](#build-a-champion-network):
-    - Möglicherweise sind bereits Communities of Practice oder Champion Networks vorhanden. Dies sind großartige Möglichkeiten, um sich gegenseitig zu unterstützen und zu evangelisieren und Peers miteinander zu befassen. Und Sie können Erfolgsgeschichten teilen, die wirklich wertvoll sein können. Sie können Ratschläge bieten und Spannung generieren.
+4. [Erstellen Sie ein Champion-Netzwerk:](#build-a-champion-network)
+    - Möglicherweise verfügen Sie bereits über Communitys von Praxis- oder Championsnetzwerken. Dies sind großartige Möglichkeiten, um soziale Netzwerke zu isieren und zu besennen und Gleichgesinnte an der gegenseitigen Hilfe zu beteiligen. Und sie können Erfolgsgeschichten teilen, die wirklich hilfreich sein können. Sie können Ratschläge anbieten und Begeisterung erzeugen.
 
 ### <a name="target-scenarios"></a>Zielszenarien
 
-Das Warum hilft festzustellen, welches Modell benötigt wird und wie Sie Ihre Organisation basierend auf der Position strukturieren, auf der das Modell angewendet wird. Im folgenden finden Sie einige Szenarien, in denen das Knowledge Management Ihrer Organisation helfen kann:
+Sie müssen bestimmen, wie Sie Themen in Ihrer Organisation verwenden möchten, bevor Sie mit Themen erfolgreich sein können. Hier sind einige Szenarien, in denen Wissensverwaltung und Themen Ihrer Organisation helfen können:
 
-- Onboarding-Rolle & Schulung: Grundlegendes zur Terminologie, zu wichtigen Projekten und zur Kultur einer neuen Organisation zählen wichtige Schritte beim Onboarding. Durch die einfache Ermittlung von Themen können neue Mitarbeiter schnell auf neue Aufträge, Rollen oder Projekte eingehen.
-- Fachwissen und Informationsaustausch: Wenn Themen verwaltet und gemeinsam genutzt werden, können Personen in ihren Organisationen leichter nach Informationen und Experten suchen, die Sie bei der täglichen Arbeit unterstützen.
-- Erweiterte Entscheidungsfindung und verbesserte Markteinführung: Wenn Informationen und Experten leicht zu erreichen sind, können Sie Entscheidungen einfacher treffen und Projekte mit Zeitaufwand abrasieren.
+- Rollen-&-Schulung: Das Verständnis der Terminologie, der wichtigsten Projekte und der Kultur einer neuen Organisation sind wichtige Schritte beim Onboarding. Die einfache Suche nach Themen kann neuen Mitarbeitern dabei helfen, schnell mit neuen Positionen, Rollen oder Projekten zu arbeiten.
+- Suche nach Fachwissen und Gemeinsame Nutzung von Informationen: Wenn Themen verwaltet und freigegeben werden, können Personen in Ihren Organisationen leichter Informationen und Experten finden, die ihnen bei ihrer täglichen Arbeit helfen.
+- Erweiterte Entscheidungsfindung und verbesserte Markteinführungszeit: Wenn Informationen und Experten leicht zu erreichen sind, können Sie Entscheidungen einfacher treffen und Zeit für Projekte schattieren.
 
-Hier ist beispielsweise ein Szenario für das Rollen Onboarding:
+Hier ist beispielsweise ein Szenario für das Rollen-Onboarding:
 
-- Ein Mitarbeiter (Jordanien) übernimmt eine neue Rolle oder wurde neu eingestellt und beginnt gerade mit einer Rolle. Jordan möchte sich so schnell wie möglich an-und produktiv engagieren. Aber Jordanien braucht auch Hilfe bei der Suche nach einem Ausgangspunkt.
-- Ein Kollege (Kim), der in der Rolle vor Jordanien war, hat Themenseiten erstellt, die neue Mitarbeiter und andere Personen, die nach diesen Informationen suchen, unterstützen können.
-- Kim war ein KMU und hatte Berechtigungen, sich unbestätigte Themenseiten anzuschauen. Unbestätigte Themenseiten sind hervorragende Ausgangspunkte für das, was die AI entdeckt und erstellt hat, und Kim konnte Sie bearbeiten, um Experten-Ressourcen, Definitionen hinzuzufügen und andere Ressourcen zu fixieren.
-- Während Jordanien einen neuen Beitrag in SharePoint liest, sieht Jordanien ein Themen Highlight und zeigt den Mauszeiger an, um schnell eine Definition des Ausdrucks zu erhalten und mit weiteren Fragen in Kontakt zu treten. Zuvor hätte Jordanien möglicherweise nach diesen Informationen suchen und Kollegen kontaktieren müssen, um zu sehen, wer etwas Fragen sollte.
-- Das verfügbar machen dieser Informationen über das Thema Erfahrungen kann leistungsfähig sein, da diese Informationen zwar möglicherweise bereits vorhanden waren, aber möglicherweise in einem Silo und schwer auffindbar sind. Wenn Sie diese in die von Jordanien verwendeten Anwendungen einbringen und Jordanien bei der Suche nach diesen Experten unterstützen, können Sie auch ein Gefühl für Engagement und Community fördern. Es kann auch dazu beitragen, dass Jordanien sich stärker im Umgang mit der neuen Rolle stärkt.
+- Ein Mitarbeiter (Jordanien) übernimmt eine neue Rolle oder wurde neu eingestellt und beginnt gerade mit einer Rolle. Jordanien möchte sich so schnell wie möglich einmischen und produktiv arbeiten. Aber Jordanien benötigt auch Hilfe bei der Suche nach einem Ausgangspunkt.
+- Eine Kollegein (Kim), die in der Rolle war, bevor Jordanien Themenseiten erstellt hat, die neue Mitarbeiter und alle anderen Personen unterstützen können, die nach diesen Informationen suchen.
+- Kim war ein MITTELSTAND und verfügte über berechtigungen zum Betrachten nicht bestätigter Themenseiten. Nicht bestätigte Themenseiten sind hervorragende Ausgangspunkte für das, was die KI entdeckt und erstellt hat, und Kim konnte sie bearbeiten, um Expertenressourcen, Definitionen und andere Ressourcen hinzuzufügen.
+- Während Jordanien einen neuen Beitrag auf SharePoint durchlesen kann, wird ein Thema hervorgehoben und mit der Maus darüber bewegt, um schnell eine Definition des Begriffs zu erhalten und mit wem sie sich mit weiteren Fragen in Verbindung setzen können. Zuvor hatte Jordanien möglicherweise nach diesen Informationen gejagt und sich mit Kollegen in Verbindung setzen müssen, um zu sehen, wer etwas fragen sollte.
+- Die Enignung dieser Informationen über Themen kann sehr leistungsfähig sein, da diese Informationen zwar zuvor verfügbar waren, aber möglicherweise isoliert und schwer zu finden waren. Die Einbindung in die Von Jordanien verwendeten Anwendungen und die Unterstützung dieser Experten können ebenfalls ein Gefühl des Engagements und der Community fördern. Es kann ihnen auch helfen, sich im Umgang mit der neuen Rolle befähigt zu fühlen.
 
 Nachdem Sie Ihre Szenarien identifiziert haben, können Sie die Szenarien priorisieren:
 
-Eine Möglichkeit zum priorisieren besteht darin, ihre Szenarien in einem Raster darzustellen, in dem die Auswirkung im Vergleich zur einfachen Implementierung angezeigt wird. Suchen Sie nach Szenarien mit hoher Auswirkung, die einfach zu implementieren sind. Stellen Sie diese als oberste Priorität dar. Geringe Auswirkungen und schwer zu implementierende Szenarien stellen die niedrigste Priorität dar. Wenn Sie einen schnellen Gewinn mit hoher Auswirkung und einfach zu implementierenden Szenarien haben, können Sie die Benutzer aufregen und die Möglichkeiten der Verwendung von Themen sehen.
+Eine Möglichkeit, diese zu priorisieren, besteht in der Darstellung Ihrer Szenarien in einem Raster mit Auswirkungen und einfacher Implementierung. Suchen Sie nach Szenarien mit hohen Auswirkungen, die einfach zu implementieren sind, und machen Sie diese zu Ihrer obersten Priorität. Szenarien mit geringen Auswirkungen und schwer zu implementierende Szenarien haben die niedrigste Priorität. Wenn Sie einen schnellen Gewinn mit einem leistungsstarken, einfach zu implementierende Szenario haben, hilft es Ihnen, sich zu freuen und die Möglichkeiten der Verwendung von Themen zu sehen.
 
-![Hohe Auswirkungen, einfach zu implementierende Szenarien haben hohe Priorität](../media/knowledge-management/topics-prioritize-scenarios.png)
+![Hohe Auswirkungen, einfache Implementierung von Szenarien haben hohe Priorität](../media/knowledge-management/topics-prioritize-scenarios.png)
 
-Wählen Sie ein paar wichtige Szenarien aus, auf die Sie sich zunächst konzentrieren sollten, arbeiten Sie mit ihren Early Adopters zusammen, um Feedback zu erhalten, und stellen Sie dann phasenweise ein. Auf diese Weise können Sie durchlaufen, Verbesserungen vornehmen und Feedback erhalten, damit Sie die Einführung im Laufe der Zeit erhöhen können. 
+Wählen Sie einige wichtige Szenarien aus, auf die Sie sich zunächst konzentrieren sollten, arbeiten Sie mit Ihren Early Adoptern zusammen, um Feedback zu erhalten, und setzen Sie den Rollout dann in Phasen durch. Auf diese Weise können Sie iterieren, Verbesserungen vorzunehmen und Feedback zu erhalten, damit Sie die Akzeptanz im Laufe der Zeit wachsen können. 
 
 ### <a name="identify-stakeholders"></a>Bestimmen der Beteiligten
 
-Identifizieren Sie die Beteiligten für Ihr Projekt. Die Hauptrollen sind der Executive Sponsor, der Erfolgs Besitzer und die Champions.
+Identifizieren Sie die Projektbeteiligten. Die wichtigsten Rollen sind der Hauptsponsor, der Besitzer des Erfolgs und Champions.
 
 |Rolle |Responsibilities |Abteilung |
 |:-------|:-------|:--------|
-| Executive Sponsor (s)   | Übermitteln von Weitblick und Werten auf höherer Ebene für das Unternehmen   |  Führungskräfte   |
-| Projektleitung (en) | Überwachen des gesamten Start Ausführungs-und Rollout Prozesses | Projektmanagement |
-| Wissens Administratoren| Einrichten und Konfigurieren von Themen Erfahrungen | IT-Abteilung |
+| Geschäftsleitungssponsor(en)   | Kommunizieren von visionären Und Werten auf hoher Ebene für das Unternehmen   |  Führungskräfte   |
+| Projektleiter | Überwachen des gesamten Startausführungs- und Rolloutprozesses | Projektmanagement |
+| Wissensadministratoren| Einrichten und Konfigurieren von "Themen" | IT-Abteilung |
 | Wissensmanager | Verwalten von Themen und Überwachen der Taxonomie | Jede Abteilung |
-| Taxonomie-Manager | Überwachen der Taxonomie | Jede Abteilung |
-| Sachverständige und Thema Mitwirkende | Erstellen oder Überprüfen von Themen und Beschreibungen | Jede Abteilung |
-| Experten | Unterstützung bei der Evangelisierung und Verwaltung der Objektbehandlung | Jede Abteilung (Mitarbeiter) |
+| Taxonomiemanager | Überwachen der Taxonomie | Jede Abteilung |
+| Experten und Themen mitwirkende Themen | Generieren oder Überprüfen von Themen und Beschreibungen | Jede Abteilung |
+| Experten | Unterstützung bei der Verankündigung und Verwaltung der Behandlung von Ablehnungen | Jede Abteilung (Mitarbeiter) |
 | Mandantenadministrator | Konfigurieren von Einstellungen auf Mandantenebene | IT-Abteilung |
-| Power Platform-Administrator| Konfigurieren der gemeinsamen Datendienste-Umgebung | IT-Abteilung |
-| Suchadministrator oder-Manager | Konfigurieren von Sucheinstellungen | IT-Abteilung |
+| Power Platform-Administrator| Konfigurieren einer allgemeinen Datendiensteumgebung | IT-Abteilung |
+| Suchadministrator oder -manager | Konfigurieren von Sucheinstellungen | IT-Abteilung |
 
-In einer größeren Organisation haben Sie möglicherweise auch mehrere Personen in diesen Rollen, und Sie müssen die Koordination zwischen Ihnen fördern. In einem kleineren Unternehmen kann eine einzelne Person mehrere dieser Rollen ausführen. Unterschiedliche Rollen sind möglicherweise stärker in unterschiedliche Phasen des Projekts involviert. Einige Personen sind beispielsweise stärker an der Einrichtung der Features beteiligt (mandantenadministratoren), während andere sich erst dann engagieren, wenn Sie mit der Definition von Themen beginnen, die in der Nachhaltigkeit involviert sind (Fachexperten und Champions).
+In einer größeren Organisation sind möglicherweise auch mehrere Personen in diesen Rollen, und Sie müssen die Koordination untereinander verbessern. In einem kleineren Unternehmen kann eine einzelne Person mehrere dieser Rollen ausführen. Unterschiedliche Rollen sind in verschiedenen Phasen des Projekts möglicherweise stärker beteiligt. Mandantenadministratoren sind beispielsweise stärker an der Einrichtung der Features beteiligt, während Experten und Experten erst mit der Definition von Themen beginnen.
  
-Obwohl es empfehlenswert ist, jede dieser Rollen während des Rollouts zu erfüllen, werden Sie möglicherweise feststellen, dass Sie nicht alle benötigen, um mit ihrer identifizierten Lösung zu beginnen.
+Obwohl wir empfehlen, jede dieser Rollen während des Rollouts zu erfüllen, stellen Sie möglicherweise fest, dass Sie nicht alle für die ersten Schritte mit Ihrer identifizierten Lösung benötigen.
 
-### <a name="create-a-success-plan"></a>Erstellen eines Erfolgs Plans
+### <a name="create-a-success-plan"></a>Erstellen eines Erfolgsplans
 
-Verwenden Sie diese Indikatoren, um den Erfolg von Themen Erfahrungen in Ihrer Organisation zu messen. Schau auf:
+Verwenden Sie diese Indikatoren, um den Erfolg von Topics in Ihrer Organisation zu messen. Schau auf:
 
 1. Verwendung des Themas:
-      - Themen Impressionen
-      - Anzahl der Themen – sowohl bestätigt als auch unbestätigt in ihrer kuratierten Themenliste.
-      - Die Anzahl der veröffentlichten Themenseiten.
-1. Endbenutzer Feedback von Themenkarten.
-1. Führen Sie Umfragen zur Mitarbeiterzufriedenheit durch. Themen sollten die Fähigkeit der Mitarbeiter, Informationen zu finden, verbessern, also Wege finden, um Ihre Eingaben und Ihr Feedback dazu zu sammeln.
-1. Positive Auswirkungen auf die Such Analyse. Da Themen in der Suchumgebung angezeigt werden, können Sie im Laufe der Zeit niedrigere Raten von verlassenen suchen sehen, da die Themen in der Suche leichter auffindbar sind. 
+      - Themenaufrufe
+      - Anzahl der Themen – sowohl bestätigt als auch nicht bestätigt in der Liste der behandelten Themen.
+      - Anzahl der veröffentlichten Themenseiten.
+1. Endbenutzerfeedback von Themenkarten.
+1. Durchführen von Umfragen zur Mitarbeiterzufriedenheit. Themen sollten die Fähigkeit der Mitarbeiter verbessern, Informationen zu finden, sodass Sie Möglichkeiten finden, ihre Input und Ihr Feedback zu dieser Erfahrung zu sammeln.
+1. Positive Auswirkungen auf die Suchanalyse. Da Themen in der Sucherfahrung angezeigt werden, werden im Laufe der Zeit möglicherweise niedrigere Raten abgebrochener Suchen angezeigt, da Benutzer die Themen einfacher in der Suche finden können. 
 
-### <a name="build-a-champion-network"></a>Erstellen eines Champion-Netzwerks
+### <a name="build-a-champion-network"></a>Erstellen eines Championnetzwerks
 
-Erstellen Sie ein Champion-Netzwerk in Ihrer Organisation. Champions sind wichtig, da Sie folgende Möglichkeiten haben:
+Erstellen Sie ein Championnetzwerk in Ihrer Organisation. Champions sind wichtig, da sie:
 
-- Erstellen eines Einfluss Kreises zwischen den Teams
-- & Wartung des Drive Topic Managements
+- Erstellen eines Kreises von Einfluss innerhalb ihrer Teams
+- Laufwerk zur Themenverwaltung & Wartung
 
-Sie können Champions aus unterschiedlichen Rollen rekrutieren – Wissensmanager und Experten für Fachfragen.
+Sie können Experten aus unterschiedlichen Rollen rekrutieren – Knowledge Manager und Experten.
 
-Viele Champion-Netzwerke nutzen jammern als Plattform. In jammern können Leute Fragen stellen und Antworten erhalten und Erfolgsgeschichten teilen. Es ist schwierig, das Wort allein zu erhalten, damit Sie sich auf das Netzwerk von Personen in Ihrem Unternehmen verlassen können, um Ihren Kollegen Ratschläge zu geben und zu zeigen, wie Ihr Team Themen Erfahrungen verwendet, damit andere Teams über ihre eigenen Szenarien nachdenken können.
+Viele Championnetzwerke verwenden Yammer als Plattform. In Yammer können Personen Fragen stellen und Antworten erhalten und Erfolgsgeschichten teilen. Es ist schwierig, das Wort allein zu verwenden, sodass Sie sich auf das Netzwerk von Personen in Ihrem Unternehmen verlassen können, um Ihren Kollegen Ratschläge zu geben und zu zeigen, wie ihr Team "Themen" verwendet, damit andere Teams ihre eigenen Szenarien ins Blick nehmen können.
 
-Einige Organisationen verwenden Hackathons (formell oder formlos, virtuell oder persönlich), um Gruppen von Personen zu sammeln, die an einem bestimmten Projekt arbeiten. Sie können beispielsweise Ihre Experten für Sachverständige sammeln und diese zusammenarbeiten lassen, um eine Reihe von Themenseiten zu kuratierten.
+Einige Organisationen verwenden Hackathons (formell oder informell, virtuell oder persönlich), um Gruppen von Personen zu sammeln, um an einem bestimmten Projekt zu arbeiten. Beispielsweise könnten Sie Ihre Fachexperten zusammenbringen und diese zusammen an der Härtung einer Reihe von Themenseiten arbeiten lassen.
 
-Überlegen Sie, wie Sie Ihre Champions erkennen können. Belohnen Sie Ihre Aktivitäten, geben Sie Ihnen etwas Anerkennung, und generieren Sie ein sichtbares Gefühl und Engagement in der Gemeinschaft, damit Sie das Gefühl haben, zu etwas beizutragen, und Sie erhalten auch etwas zurück.
+Überlegen Sie, wie Sie Ihre Champions erkennen können. Belohnen Sie ihre Aktivitäten, geben Sie ihnen eine gewisse Anerkennung, und generieren Sie ein sichtbares Community-Gefühl und Engagement, sodass sie das Gefühl haben, zu etwas beizutragen, und sie erhalten auch etwas von ihren Investitionen zurück.
 
-Nun, da Sie bereit sind, das Rollout durchzuführen, möchten Sie sicherstellen, dass Sie das laufende Engagement fördern.
+Nun, da Sie bereit für die Einführung sind, möchten Sie sicherstellen, dass Sie kontinuierliches Engagement fördern.
 
-- Verwalten aktiver Jammer Gruppen für ihre Champions.
-- Freigeben von Erfolgsgeschichten.
-- Regelmäßige hosten zusätzlicher Engagement-Ereignisse zum Freigeben von Geschichten oder zum Einführen neuer Features.
+- Verwalten Sie aktive Yammer Gruppen für Ihre Champions.
+- Teilen von Erfolgsgeschichten.
+- Hosten Sie in regelmäßigen Abständen Engagementereignisse, um Geschichten zu teilen oder neue Features einzuführen.
 - Stellen Sie Herausforderungen für Personen und führen Sie Wettbewerbe aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wenn Sie bereit sind, die Themen Erfahrungen zu vereinen, müssen Sie die beteiligten Personen erhalten.
+Wenn Sie zum Rollout von "Themen" bereit sind, müssen Sie die Beteiligten an der Einführung beteiligen.
 
-- Beginnen Sie mit der Einführung des Feature-Sets und dem Gedanken an Ihre Szenarien.
-- Sammeln der Beteiligten und Erstellen von Szenarien
-- Fahren Sie mit der Community fort, und überlegen Sie, wie Sie Sie einbinden.
-- Führen Sie dann die Vorbereitungsschritte aus. Einige können technische Bereitschaft und einige geschäftliche Bereitschaft sein.
-- Schließlich, zu knüpfen und zu fördern.
+- Beginnen Sie mit der Einführung der Feature-Gruppe, und machen Sie sich Gedanken über ihre Szenarien.
+- Sammeln Sie die Beteiligten, und erstellen Sie Szenarien.
+- Machen Sie sich gedanken darüber, wie Sie die Community erreichen möchten.
+- Führen Sie dann die Vorbereitungsschritte aus. Einige sind möglicherweise technische Bereitschaft und einige Geschäftsbereitschaft.
+- Zum Schluss socialisieren und bewerben.

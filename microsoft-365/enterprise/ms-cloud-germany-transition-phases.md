@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
-ms.openlocfilehash: 0d508607877b86d6f6df6a6465fada67e385fba0
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
-ms.translationtype: HT
+ms.openlocfilehash: c0fdfc83bbdb8ec4c2f408cef113a487908957bf
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029198"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110029"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Aktionen und Auswirkungen der Migrationsphasen für die Migration von Microsoft Cloud Deutschland (generell)
 
@@ -34,6 +34,26 @@ Mandanten-Migrationen von Microsoft Cloud Deutschland in die Region Deutschland 
 Die Phasen und ihre Aktionen stellen sicher, dass kritische Daten und Erfahrungen zu den Office 365-Diensten migriert werden. Nachdem Ihr Mandant der Migrations-Warteschlange hinzugefügt wurde, wird jeder Workload als eine Reihe von Schritten abgeschlossen, die auf dem Backend-Dienst ausgeführt werden. Einige Workloads erfordern möglicherweise Aktionen des Administrators (oder Benutzers), oder die Migration kann die Verwendung der ausgeführten Phasen beeinflussen, die unter [Wie ist die Migration organisiert?](ms-cloud-germany-transition.md#how-is-the-migration-organized) diskutiert werden.
 
 Die folgenden Abschnitte enthalten Aktionen und Auswirkungen für Workloads, während sie die verschiedenen Phasen der Migration durchlaufen. Überprüfen Sie die Tabellen und stellen Sie fest, welche Aktionen oder Auswirkungen auf Ihre Organisation zutreffen. Stellen Sie sicher, dass Sie vorbereitet sind, die Schritte in den jeweiligen Phasen wie erforderlich auszuführen. Wenn die erforderlichen Schritte nicht ausgeführt werden, kann dies zu einem Ausfall des Dienstes führen und der Abschluss der Migration zu den Office 365-Diensten kann sich verzögern.
+
+## <a name="sharepoint-online-phase-4-of-9"></a>SharePoint Online (Phase 4 von 9)
+
+| Schritt(e) | Beschreibung | Betrifft | Auswirkung |
+|:-------|:-----|:-------|:-------|
+| SharePoint und OneDrive werden überführt. | SharePoint und OneDrive werden in dieser Phase von Microsoft Cloud Deutschland zu Office 365-Diensten migriert. Bestehende URLs von Microsoft Cloud Deutschland bleiben erhalten (Beispiel: `contoso.sharepoint.de`) Tokens, die von Microsoft Cloud Deutschland oder Office 365-Diensten herausgegeben wurden, bleiben während dem Übergang gültig. | SharePoint-Kunden | – Inhalte werden für zwei kurze Perioden während der Migration schreibgeschützt sein. Währen dieser Zeit wird ein Banner „Sie können Inhalte nicht bearbeiten“ in SharePoint angezeigt. <br><br> – Der Suchindex bleibt nicht erhalten, und es kann bis zu 10 Tage dauern, bis er wieder aufgebaut ist. <br><br> – SharePoint/OneDrive-Inhalte werden für zwei kurze Perioden während der Migration schreibgeschützt sein. Benutzer werden während dieser Zeit kurzfristig ein Banner „Sie können Inhalte nicht bearbeiten“ sehen. <br><br> – Der Suchindex ist möglicherweise nicht verfügbar, während der Index neu aufgebaut wird. Während dieser Periode geben Suchanfragen möglicherweise unvollständige Resultate zurück. <br><br> – Vorhandene Websites bleiben erhalten. |
+|||||
+
+Zusätzliche Überlegungen:
+
+- Nach Abschluss der SharePoint Online-Migration in die Region Deutschland werden Datenindizes neu erstellt. Funktionen, die von Suchindizes abhängig sind, können betroffen sein, bis die Neuindizierung abgeschlossen ist.
+
+- Wenn Ihre Organisation immer noch SharePoint 2010-Workflows verwendet, werden diese nach 31. Dezember 2021 nicht mehr funktionieren. SharePoint 2013-Workflows bleiben unterstützt, obwohl sie ab 1. November 2020 für neue Mandaten standardmäßig ausgeschaltet werden. Wenn die Migration zu den SharePoint Onlinediensten abgeschlossen ist, empfehlen wir, dass Sie zu Power Automate oder anderen unterstützten Lösungen wechseln.
+
+- Nach Abschluss der OneDrive-Migration in die Region Deutschland werden Datenindizes neu erstellt. Funktionen, die von Suchindizes abhängig sind, können betroffen sein, während die Neuindizierung im Gange ist.
+
+- Microsoft Cloud Deutschland-Kunden, deren SharePoint Online-Instanz noch nicht migriert wurde, müssen bei Version 16.0.20616.12000 (oder niedriger) von SharePoint Online-PowerShell-Modul/Microsoft.SharePointOnline.CSOM bleiben. Andernfalls schlagen Verbindungen zu SharePoint Online über PowerShell oder das clientseitige Objektmodell fehl.
+
+- Microsoft Cloud Deutschland-Kunden, deren SharePoint Online-Instanz bereits migriert wurde, müssen SharePoint Online-PowerShell-Modul/Microsoft.SharePointOnline.CSOM auf Version 16.0.20717.12000 oder höher aktualisieren. Andernfalls schlagen Verbindungen zu SharePoint Online über PowerShell oder das clientseitige Objektmodell fehl.
+
 
 ## <a name="exchange-online-phase-5-of-9"></a>Exchange Online (Phase 5 von 9)
 
@@ -67,24 +87,6 @@ Die Backend-Funktionen von Exchange Online Protection (EOP) werden in die neue R
 | Migration des Exchange Online-Routing und von historischen Nachrichtendetails. | Exchange Online ermöglicht das Weiterleiten von externen Hosts auf Office 365. Die externen MX-Datensätze werden umgestellt, um auf die EOP-Dienste weiterzuleiten. Die Mandanten-Konfiguration und historische Details werden migriert. | Exchange Online-Kunden | – Microsoft-verwaltete DNS-Einträge werden von Office 365 Deutschland EOP zu Office 365-Diensten aktualisiert. <br><br> – Kunden sollten währen 30 Tagen nach dem EOP Dual Write auf die EOP-Migration warten. Anderenfalls kann es zu einem Datenverlust kommen. |
 |||||
 
-## <a name="sharepoint-online-phase-4-of-9"></a>SharePoint Online (Phase 4 von 9)
-
-| Schritt(e) | Beschreibung | Betrifft | Auswirkung |
-|:-------|:-----|:-------|:-------|
-| SharePoint und OneDrive werden überführt. | SharePoint und OneDrive werden in dieser Phase von Microsoft Cloud Deutschland zu Office 365-Diensten migriert. Bestehende URLs von Microsoft Cloud Deutschland bleiben erhalten (Beispiel: `contoso.sharepoint.de`) Tokens, die von Microsoft Cloud Deutschland oder Office 365-Diensten herausgegeben wurden, bleiben während dem Übergang gültig. | SharePoint-Kunden | – Inhalte werden für zwei kurze Perioden während der Migration schreibgeschützt sein. Währen dieser Zeit wird ein Banner „Sie können Inhalte nicht bearbeiten“ in SharePoint angezeigt. <br><br> – Der Suchindex bleibt nicht erhalten, und es kann bis zu 10 Tage dauern, bis er wieder aufgebaut ist. <br><br> – SharePoint/OneDrive-Inhalte werden für zwei kurze Perioden während der Migration schreibgeschützt sein. Benutzer werden während dieser Zeit kurzfristig ein Banner „Sie können Inhalte nicht bearbeiten“ sehen. <br><br> – Der Suchindex ist möglicherweise nicht verfügbar, während der Index neu aufgebaut wird. Während dieser Periode geben Suchanfragen möglicherweise unvollständige Resultate zurück. <br><br> – Vorhandene Websites bleiben erhalten. |
-|||||
-
-Zusätzliche Überlegungen:
-
-- Nach Abschluss der SharePoint Online-Migration in die Region Deutschland werden Datenindizes neu erstellt. Funktionen, die von Suchindizes abhängig sind, können betroffen sein, bis die Neuindizierung abgeschlossen ist.
-
-- Wenn Ihre Organisation immer noch SharePoint 2010-Workflows verwendet, werden diese nach 31. Dezember 2021 nicht mehr funktionieren. SharePoint 2013-Workflows bleiben unterstützt, obwohl sie ab 1. November 2020 für neue Mandaten standardmäßig ausgeschaltet werden. Wenn die Migration zu den SharePoint Onlinediensten abgeschlossen ist, empfehlen wir, dass Sie zu Power Automate oder anderen unterstützten Lösungen wechseln.
-
-- Nach Abschluss der OneDrive-Migration in die Region Deutschland werden Datenindizes neu erstellt. Funktionen, die von Suchindizes abhängig sind, können betroffen sein, während die Neuindizierung im Gange ist.
-
-- Microsoft Cloud Deutschland-Kunden, deren SharePoint Online-Instanz noch nicht migriert wurde, müssen bei Version 16.0.20616.12000 (oder niedriger) von SharePoint Online-PowerShell-Modul/Microsoft.SharePointOnline.CSOM bleiben. Andernfalls schlagen Verbindungen zu SharePoint Online über PowerShell oder das clientseitige Objektmodell fehl.
-
-- Microsoft Cloud Deutschland-Kunden, deren SharePoint Online-Instanz bereits migriert wurde, müssen SharePoint Online-PowerShell-Modul/Microsoft.SharePointOnline.CSOM auf Version 16.0.20717.12000 oder höher aktualisieren. Andernfalls schlagen Verbindungen zu SharePoint Online über PowerShell oder das clientseitige Objektmodell fehl.
 
 
 ## <a name="skype-for-business-online-phase-7-of-9"></a>Skype for Business Online (Phase 7 von 9)

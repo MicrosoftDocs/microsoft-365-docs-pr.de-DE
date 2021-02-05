@@ -12,110 +12,83 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: Erfahren Sie, welche Zahlungsoptionen für Ihr Microsoft 365 for Business-Abonnement zur Verfügung stehen.
+description: Erfahren Sie, welche Zahlungsoptionen für Ihr Microsoft 365 Business-Abonnement verfügbar sind.
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-ms.openlocfilehash: 778906219c03e8cc79ccebb368b84642639a8467
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+- commerce
+ms.openlocfilehash: 858b42dbb647e472bcb3e95ddcba850f03ab11f1
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638435"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114825"
 ---
-# <a name="pay-for-your-subscription"></a>Bezahlen für Ihr Abonnement
+# <a name="how-to-pay-for-your-subscription"></a>So bezahlen Sie Ihr Abonnement
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
-Beim Einrichten Ihres Abonnements können Sie zwischen Zahlung mit Kreditkarte oder Bankkonto und Zahlung auf Rechnung (Scheck oder Überweisung) wählen. Die Zahlungsmethode, die Sie auswählen, verwenden wir auch für nachfolgende Abrechnungszeiträume, sofern Sie nicht Ihre [Zahlungsmethode ändern](change-payment-method.md).
+Sie können eine Kredit- oder Debitkarte oder ein Bankkonto verwenden, um Ihr Abonnement zu bezahlen. In einigen Fällen können Sie per Rechnung bezahlen, indem Sie eine Scheck- oder elektronische Überweisung (Electronic Funds Transfer, EFT) verwenden. Wenn Sie über ein Abrechnungsprofil verfügen, unterscheiden sich Ihre Optionen geringfügig. Wenn Sie nicht sicher sind, ob Ihr Konto über ein Abrechnungsprofil verfügt, lesen Sie die Informationen [zu den Abrechnungsprofilen.](manage-billing-profiles.md)
 
-> [!NOTE]
+**Möchten Sie nur herausfinden, wo Sie Ihre Rechnungszahlung senden können?** Wenn Sie Ihre Rechnung per Scheck oder EFT (Electronic Funds Transfer) bezahlen, lesen Sie, wo sende ich meinen Scheck oder eine [EFT-Zahlung?](#where-do-i-send-my-check-or-eft-payment)
+
+## <a name="before-you-begin"></a>Bevor Sie loslegen
+
+- Sie müssen ein Global- oder Billing-Administrator sein, um die in diesem Artikel beschriebenen Schritte durchführen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+- Die Zahlungsmethode, die Sie beim Auschecken auswählen, ist die Zahlungsmethode, die wir für alle zukünftigen Abrechnungszeiträume verwenden. Sie können sie jederzeit ändern.
+
+## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Zahlung per Kredit- oder Debitkarte oder Bankkonto
+
+> [!IMPORTANT]
 > Zahlung per Bankeinzug ist in einigen Ländern oder Regionen nicht verfügbar.
 
-## <a name="pay-by-credit-card-or-bank-account"></a>Bezahlen mit Kreditkarte oder Bankkonto
+Sie können Ihr Abonnement mit einer Kredit- oder Debitkarte oder einem Bankkonto bezahlen. Wenn Sie mit einer dieser Zahlungsmethoden bezahlen, berechnen wir diese Zahlungsmethode weiterhin, bis das Abonnement abläuft oder storniert wird. Sie können [Zahlungsmethoden verwalten](manage-payment-methods.md), wann immer notwendig. Sie können auf Wunsch auch [eine Kopie Ihrer Rechnung per E-Mail erhalten](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email).
 
-Wenn Sie mit Kreditkarte oder Bankkonto bezahlen, wird Ihnen die Abonnementgebühr automatisch am Tag nach dem Rechnungsdatum bis zum Ende der Laufzeit Ihres Abonnements belastet. Sie können [Zahlungsmethoden verwalten](manage-payment-methods.md), wann immer notwendig. Sie können auf Wunsch auch [Erhalten einer Kopie Ihrer Rechnung per E-Mail](#receive-a-copy-of-your-billing-statement-in-email).
+## <a name="paying-by-invoice"></a>Zahlung per Rechnung
 
-### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a>Was geschieht, wenn meine Kreditkarte abgelehnt wurde und meine Zahlung überfällig ist?
+In einigen Fällen können Sie Ihr Abonnement per Rechnung mit einem Scheck oder EFT bezahlen. Um zur Zahlung per Rechnung berechtigt zu sein, müssen Sie:
 
-Wenn Sie mit Kreditkarte bezahlen und Ihre Kreditkarte abgelehnt wird, erhalten Sie eine E-Mail, in der Sie darüber informiert werden, dass wir die Zahlung nicht verarbeiten konnten. Dies kann mehrere Ursachen haben, z. B. wenn die Kreditkarte abgelaufen ist. Wir werden mehrmals im Abstand von einigen Tagen versuchen, die Transaktion durchzuführen. Wenn diese Versuche fehlschlagen, werden Sie jedes Mal per E-Mail über diesen Fehlversuch benachrichtigt. Sie können jederzeit die Funktion **Saldo ausgleichen** verwenden, um Ihre Kreditkarteninformationen zu ändern und die Zahlung sofort zu senden.
+- Etablierter Kunde sein
+- Abonnementkosten, die einen bestimmten Betrag übersteigen (dieser Betrag variiert je nach Dienststandort)
+- Bestehen einer Bonitätsprüfung
 
-> [!NOTE]
-> Wenn Sie den offenen Saldo für Ihr Abonnement mit einer anderen Kreditkarte bezahlen, wird diese Karte bei allen zukünftigen automatischen Zahlungen für das Abonnement belastet.
-
-::: moniker range="o365-worldwide"
-
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-
-2. Suchen Sie das Abonnement mit dem ausstehenden Saldo. Wählen Sie im Abschnitt **Abrechnung** neben **Abonnement weist überfällige Zahlung auf** die Option **Saldo ausgleichen** aus.
-
-3. Wenn Sie der Kreditkarteninhaber sind, können Sie das Ablaufdatum für die Karte ändern, eine andere Karte auswählen oder [eine neue Karte hinzufügen](manage-payment-methods.md).
-
-    > [!NOTE]
-    > Wenn Sie die Funktion **Saldo ausgleichen** verwenden, wird Ihnen der gesamte offene Saldo, den Ihr Konto aufweist, belastet. Das kann mehr als der Betrag sein, der an anderer Stelle als fällig angezeigt wird.
-
-4. Wenn Sie nicht der Inhaber der Kreditkarte sind, können Sie eine andere Kreditkarte auswählen oder [eine neue Karte hinzufügen](manage-payment-methods.md).
-
-5. Nachdem Sie die Kreditkarteninformationen aktualisiert oder die zum Bezahlen des Abonnements verwendete Kreditkarte geändert haben, wählen **Speichern** aus.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-
-2. Wählen Sie das Abonnement aus, das Sie ändern möchten. Wählen Sie im Abschnitt **Meine Rechnung** die Option **Jetzt bezahlen** aus.
-
-3. Wenn Sie der Kreditkarteninhaber sind, können Sie das Ablaufdatum für die Karte ändern, eine andere Karte auswählen oder [eine neue Karte hinzufügen](manage-payment-methods.md).
-
-    > [!NOTE]
-    > Wenn Sie die Funktion **Jetzt bezahlen** verwenden, wird Ihnen der gesamte offene Saldo, den Ihr Konto aufweist, belastet. Das kann mehr als der Betrag sein, der an anderer Stelle als fällig angezeigt wird.
-
-4. Wenn Sie nicht der Inhaber der Kreditkarte sind, können Sie eine andere Kreditkarte auswählen oder [eine neue Karte hinzufügen](manage-payment-methods.md).
-
-5. Nachdem Sie die Kreditkarteninformationen aktualisiert oder die zum Bezahlen des Abonnements verwendete Kreditkarte geändert haben, wählen **Senden** aus. Es wird eine Bestätigungsmeldung angezeigt, die besagt: "Ihre Zahlungsmethode wurde aktualisiert, und alle offenen Beträge wurden beglichen. Vielen Dank!"
-
-::: moniker-end
-
-## <a name="pay-by-invoice-check-or-eft"></a>Zahlung per Rechnung (Scheck oder Überweisung)
-
-Wenn die Kosten für Ihr Abonnement einen bestimmten Betrag (dieser ist abhängig vom Standort des Diensts) übersteigen, haben Sie die Möglichkeit per Rechnung zu bezahlen und den Betrag per Banküberweisung oder Scheck zu begleichen. Bei größeren Rechnungsbeträgen kann eine Bonitätsprüfung erforderlich werden. Wenn eine Bonitätsprüfung erforderlich ist, werden Sie darüber informiert, wenn Sie Ihre Abonnements kaufen. Außerdem erhalten Sie, wenn Sie einer Kontaktaufnahme zugestimmt haben, eine E-Mail, die weitere Informationen zur Beantragung einer Kreditgenehmigung enthält. Bonitätsprüfungen dauern in der Regel nicht länger als zwei Werktage.
+Wenn eine Bonitätsprüfung erforderlich ist, werden Sie benachrichtigt, wenn Sie Ihr Abonnement kaufen. Wenn Sie der Kontaktaufnahme zustimmen, erhalten Sie eine E-Mail mit weiteren Informationen zum Beantragen einer Kreditgenehmigung. Bonitätsprüfungen dauern in der Regel nicht länger als zwei Werktage.
 
 > [!NOTE]
-> Kunden, die in Brasilien leben, können für ein Abonnement mit einem Boleto Bancario bezahlen. Wenn Sie diese Option ausgewählt haben, wird das Zahlungsbillet innerhalb von 10 Arbeitstagen nach dem Bestelldatum an die beim Abonnementkauf angegebene E-Mail gesendet. Das Fälligkeitsdatum ist 30 Tage nach dem Bestelldatum. Wenn Sie Ihren Boleto nicht per E-Mail erhalten, überprüfen Sie Ihren Spamordner, oder wenden Sie sich an den Support. <br><br>Wenn Sie es vorziehen, können Sie per elektronischer Überweisung bezahlen. Agentur und Kontonummer befinden sich am Ende Ihrer Rechnung. Sie müssen Ihre Rechnungsnummer in das Feld "Überweisungs-ID" eingeben.
+> Kunden, die in Brasilien leben, können für ein Abonnement mit einem Boleto Bancario bezahlen. Wenn Sie diese Option ausgewählt haben, wird das Zahlungsbillet innerhalb von 10 Arbeitstagen nach dem Bestelldatum an die beim Abonnementkauf angegebene E-Mail gesendet. Das Fälligkeitsdatum ist 30 Tage nach dem Bestelldatum. Wenn Sie Ihren Boleto nicht per E-Mail erhalten, überprüfen Sie Ihren Spamordner, oder wenden Sie sich an den Support.
+>
+> Wenn Sie es vorziehen, können Sie per elektronischer Überweisung bezahlen. Agentur und Kontonummer befinden sich am Ende Ihrer Rechnung. Sie müssen Ihre Rechnungsnummer in das Feld "Überweisungs-ID" eingeben.
 
-Wenn Sie für Ihr Abonnement per Rechnung bezahlen, erhalten Sie eine E-Mail-Nachricht, in der Ihnen mitgeteilt wird, dass Ihre Rechnung zum Anzeigen bereitsteht. Diese E-Mail enthält keine Kopie Ihrer Rechnung. Allerdings können Sie auf Wunsch auch [Erhalten einer Kopie Ihrer Rechnung per E-Mail](#receive-a-copy-of-your-billing-statement-in-email). Ihre Rechnung enthält Details zu Ihren Zahlungsoptionen. Wenn Sie beim Kauf eines Abonnements eine Bestellnummer (PO) eingeben, wird diese auf Ihre Rechnung angezeigt. Informationen zum Zugriff auf Rechnungen finden Sie unter [Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md).
+Wenn Sie per Rechnung für Ihr Abonnement bezahlen, erhalten Sie eine E-Mail, sobald Ihre Rechnung angezeigt werden kann. Diese E-Mail enthält keine Kopie Ihrer Rechnung. Sie können jedoch eine Kopie Ihrer Rechnung per [E-Mail erhalten.](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email) Ihre Rechnung enthält Details zu Ihren Zahlungsoptionen und dem Ort, an den sie gesendet werden kann. Wenn Sie beim Kauf eines Abonnements eine Bestellnummer (PO) eingeben, wird diese auf Ihre Rechnung angezeigt. Informationen zum Zugriff auf Rechnungen finden Sie unter [Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md).
+
+## <a name="what-if-i-have-an-outstanding-balance"></a>Was passiert, wenn noch eine Saldoforderung existiert?
+
+Wenn die Zahlungsmethode für die Datei nicht berechnet werden kann, senden wir eine E-Mail, in der Sie wissen, dass ein Problem vor liegt. Die E-Mail gibt kurz an, was das Problem ist, und enthält einen Link, über den Sie den ausstehenden Saldo überprüfen können. Die Transaktion wird weiterhin alle paar Tage für 30 Tage erneut ausgeführt, während der sich das Abonnement in einer Kulanzfrist befindet. Jedes Mal, wenn eine Transaktion fehlschlägt, erhalten Sie eine E-Mail-Benachrichtigung über den Fehler.
+
+Wenn Sie die Zahlungsmethode mit dem fälligen Betrag persönlich hinzugefügt haben, können Sie den Saldo ausgleichen verwenden, **um** eine Zahlung zu machen. Die Zahlungsmethode, die Sie zum Bezahlen des überfälligen Betrags verwenden, wird zur neuen Zahlungsmethode für alle Abonnements, die die abgelehnte Zahlungsmethode verwendet haben.
+
+1. Wechseln Sie im Admin Center zur Seite  >  **"Abrechnungsrechnungen & Zahlungen",** und wählen Sie dann die Registerkarte <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">"Zahlungsmethoden"</a> aus.
+1. In einer Warnmeldung wird angezeigt, welche Zahlungsmethode abgelehnt wurde. Wählen **Sie Saldo ausgleichen aus.**
+1. Wählen Sie im rechten Bereich eine andere Zahlungsmethode aus, oder wählen **Sie "Neue Zahlungsmethode hinzufügen" aus.**
+1. Nachdem Sie die Zahlungsmethodeninformationen aktualisiert haben, wählen Sie **"Speichern" aus.**
+
+Wenn Sie die Zahlungsmethode, die zum Bezahlen des Abonnements verwendet wurde, nicht hinzugefügt haben, müssen Sie die Zahlungsmethode durch eine Zahlungsmethode ersetzen, die Sie zuvor hinzugefügt haben, oder durch eine neue Zahlungsmethode.
+
+## <a name="where-do-i-send-my-check-or-eft-payment"></a>Wohin sende ich meinen Scheck oder die Zahlung per elektronischem Zahlungsverkehr?
+
+[Überprüfen Sie Ihre Rechnung](view-your-bill-or-invoice.md) auf Zahlungsanweisungen. Sie können auch die nachstehende Dropdownliste verwenden, um Zahlungsanweisungen für Ihr Land oder Ihre Region zu finden. Wenn Sie nicht sicher sind, wie viel Sie fällig sind, können Sie Ihre Rechnung und den **Abrechnungsverlauf** online auf der Registerkarte "Rechnungen" auf der Seite & <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Rechnungen</a> überprüfen.
 
 > [!NOTE]
-> Standardmäßig werden die Abrechnungs Benachrichtigungen Ihrer Organisation an die Microsoft-e-Mail-Adresse und die Alternative e-Mail-Adresse jedes globalen und abrechnungsadministrators in Ihrer Organisation gesendet. Informationen zum Ändern der alternativen E-Mail-Adresse finden Sie unter [Ändern der Rechnungsadresse](change-your-billing-addresses.md).
-
-### <a name="can-i-pay-my-bill-online"></a>Kann ich meine Rechnung online bezahlen?
-
-Wenn Ihr Abonnement für die Zahlung per Rechnung eingerichtet ist, können nicht wir Onlinezahlungen leider nicht direkt akzeptieren. Sie können Ihre [Zahlungsmethode jedoch in Zahlung per Kreditkarte oder Bankkonto ändern](change-payment-method.md), sodass der fällige Betrag am Ende des jeweiligen Dienstzeitraums automatisch von Ihrer Kreditkarte bzw. Ihrem Bankkonto abgebucht wird. Für Azure finden Sie Informationen unter [Ändern der zum Bezahlen eines Azure-Abonnements verwendeten Kreditkarte](https://go.microsoft.com/fwlink/p/?LinkId=718057).
-
-> [!NOTE]
-> Wenn Sie die Zahlungsmethode auf automatische Kreditkartenzahlungen umstellen, müssen Sie zuerst alle offenen Posten bezahlen. Überprüfen Sie Ihre Rechnung auf Zahlungsoptionen und -anweisungen. Weitere Informationen finden Sie Untergrund [Legendes zu Ihrer Rechnung oder Rechnung](understand-your-invoice2.md).
-
-### <a name="where-do-i-send-my-check-or-eft-payment"></a>Wohin sende ich meinen Scheck oder die Zahlung per elektronischem Zahlungsverkehr?
-
-> [!NOTE]
-> Eine Zahlung per Scheck ist nur in einigen Ländern möglich. Befolgen Sie die nachstehenden Zahlungsanweisungen für Ihr Land/Ihre Region, oder [überprüfen Sie Ihre Rechnung](understand-your-invoice2.md).
-
-Wenn Sie nicht genau wissen, wie hoch die offenen Forderungen sind, können Sie [Ihre Rechnung und den Abrechnungsverlauf online überprüfen](view-your-bill-or-invoice.md). Für Azure finden Sie Informationen unter [Herunterladen der Azure-Rechnung und der täglichen Nutzungsdaten](https://go.microsoft.com/fwlink/p/?LinkId=718058).
+> Die Zahlung per Scheck ist nur in einigen Ländern verfügbar.
 
  **Wählen Sie im nachstehend gezeigten Dropdownmenü das Land oder die Region für den "Rechnungsempfänger" aus.**
 
@@ -273,44 +246,20 @@ Wenn Sie nicht genau wissen, wie hoch die offenen Forderungen sind, können Sie 
 > - [Sambia](../pay/zambia.md)
 > - [Simbabwe](../pay/zimbabwe.md)
 
-## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>Erhalten einer Kopie Ihrer Rechnung per E-Mail
+## <a name="can-i-pay-my-invoice-online"></a>Kann ich meine Rechnung online bezahlen?
 
-Sie können auf Wunsch eine Kopie Ihrer Rechnung als E-Mail-Anlage erhalten. In diesem Fall sollten Sie Folgendes beachten:
+Sie können Ihre Rechnung nicht online bezahlen. Sie müssen die Zahlung per Scheck oder EFT übermiten.
 
-- Es wird eine E-Mail sowohl an die primäre als auch die alternative E-Mail-Adresse jeder Person gesendet, die als Benachrichtigungsempfänger aufgeführt ist.
+## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Kann ich von meiner aktuellen Zahlungsmethode zur Zahlung per Rechnung wechseln?
 
-- Sie erhalten zwei separate E-Mails: Eine E-Mail, die Sie darüber informiert, dass Ihre Rechnung bereitsteht, und die Anweisungen zum Anmelden beim Admin Center und Anzeigen der Rechnung enthält, und eine zweite E-Mail mit der Rechnung als Anlage.
+Sie können auf Zahlung per Rechnung nur umstellen, wenn Ihr Abonnement über einem bestimmten Betrag hinaus geht. Sie müssen zunächst einen ausstehenden Saldo auf der Kredit- oder Debitkarte oder dem Bankkonto bezahlen, bevor Sie zur Zahlung per Rechnung wechseln können. Informationen zum Ändern von Zahlungsmethoden finden Sie unter [Ändern einer Zahlungsmethode für ein einzelnes Abonnement.](manage-payment-methods.md#change-a-payment-method-for-a-single-subscription)
 
-### <a name="to-receive-your-billing-statement-in-email"></a>So erhalten Sie die Rechnung per E-Mail
+## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>Kann ich von Zahlung per Rechnung zu einer anderen Zahlungsmethode wechseln?
 
-::: moniker range="o365-worldwide"
-
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Abrechnungsbenachrichtigungen</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Abrechnungsbenachrichtigungen</a>.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Abrechnungsbenachrichtigungen</a>.
-
-::: moniker-end
-
-2. Setzen Sie unter **Möchten Sie die Rechnung als E-Mail-Anlage erhalten?** die Umschaltfläche auf **Ein**.
-
-    Sie können den Empfang von Rechnungs-E-Mails jederzeit beenden, indem Sie die Umschaltfläche auf **Aus** setzen.
-
-## <a name="need-to-switch-payment-methods"></a>Müssen Sie die Zahlungsmethoden wechseln?
-
-Wenn sich Ihre ursprünglichen Beweggründe für die Auswahl von Rechnung, Kreditkarte oder Bankkonto geändert haben, beispielsweise wenn Sie Ihr Abonnement so anpassen, dass der Rechnungsbetrag niedriger ist und Sie somit nicht mehr für die Abrechnung per Rechnung berechtigt sind, können Sie Ihre Zahlungsmethode ändern. Weitere Informationen finden Sie unter [Ändern der Zahlungsmethode](change-payment-method.md).
+Sie können nicht automatisch von Zahlung per Rechnung zu Zahlung mit einer anderen Zahlungsmethode wechseln. Stattdessen müssen [](../try-or-buy-microsoft-365.md#buy-a-different-subscription) Sie ein anderes Abonnement kaufen, das mit einer Kredit- oder Debitkarte oder einem Bankkonto bezahlt [wird,](../subscriptions/move-users-different-subscription.md)alle Benutzer in das neue Abonnement verschieben und dann das alte Abonnement [kündigen.](../subscriptions/cancel-your-subscription.md)
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Zahlungsmethoden verwalten](manage-payment-methods.md)
-
-[Ihre Rechnung verstehen](understand-your-invoice2.md)
+[Zahlungsmethoden verwalten](manage-payment-methods.md) (Artikel)\
+[Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md) (Artikel)\
+[Verstehen Ihrer Rechnung](understand-your-invoice2.md) (Artikel)

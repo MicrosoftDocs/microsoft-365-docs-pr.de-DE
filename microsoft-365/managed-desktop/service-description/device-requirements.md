@@ -9,23 +9,23 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 88b1ba657b4823d90a41b28b01362760676410ba
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: a6b5cbbcb2f48797130b080d9d1dd1e6427d4fb8
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032691"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110051"
 ---
 # <a name="device-requirements"></a>Geräteanforderungen
 
 Microsoft Managed Desktop wertet regelmäßig die Geräteanforderungen aus, die in den Dienst einbezogen werden sollen. In diesem Artikel werden die Hardware- und Softwareanforderungen beschrieben, die ein Gerät erfüllen muss, um mit Microsoft Managed Desktop arbeiten zu können. Sie können basierend auf [](device-list.md) diesen Anforderungen eine Liste bestimmter Geräte überprüfen, die bereits für die Verwendung mit dem Dienst genehmigt wurden.
 
 > [!NOTE]
-> Diese Anforderungen können sich jederzeit ändern, wir werden diese Änderungen jedoch 90 Tage lang beachten. Die Anforderungen, die zuletzt geändert wurden, sind mit **\*** gekennzeichnet. 
+> Diese Anforderungen können sich jederzeit ändern, wir werden jedoch 30 Tage über Änderungen an den Hardwareanforderungen verfügen. Die Anforderungen, die zuletzt geändert wurden, sind mit **\*** gekennzeichnet. 
 
 ## <a name="check-hardware-requirements"></a>Überprüfen der Hardwareanforderungen
 
-Neben der Überprüfung der Gerätespezifikationen können [](../get-ready/readiness-assessment-downloadable.md) Sie auch die herunterladbare Überprüfung der Bereitschaftsbewertung verwenden, um zu überprüfen, ob ein bestimmtes Gerät die erforderlichen Anforderungen erfüllt. Dieses Tool überprüft außerdem Netzwerkeinstellungen und Endpunkte, die ebenfalls erforderlich sind, damit der Dienst funktioniert.
+Neben der Überprüfung der Gerätespezifikationen können [](../get-ready/readiness-assessment-downloadable.md) Sie auch die herunterladbare Überprüfung der Bereitschaftsbewertung verwenden, um sicherzustellen, dass ein bestimmtes Gerät die erforderlichen Anforderungen erfüllt. Dieses Tool überprüft außerdem Netzwerkeinstellungen und Endpunkte, die auch für die Dienstarbeit erforderlich sind.
 
 ## <a name="minimum-requirements"></a>Mindestanforderungen
 
@@ -46,7 +46,7 @@ Das Gerät muss von einem der folgenden Hersteller hergestellt worden sein:
 Auf dem Gerät muss diese Software vorinstalliert sein:
 
 - Windows 10 Enterprise, Pro oder Pro Workstation Edition
-- {Die 64-Bit-Version von Office klick-und-run {Ich verdprüfe den Namen mit Office-Kollegen]}
+- Die 64-Bit-Version Microsoft Office Klick-und-Ausführen 
 - Alle anwendbaren Gerätetreiber
 
 
@@ -66,7 +66,7 @@ Weitere Informationen zu diesen Funktionen und den zugehörigen Technologien, di
 
 Geräte sollten die folgenden Grenzwerte für Speicher und Arbeitsspeicher erfüllen oder überschreiten:
 
-- Das Startlaufwerk muss ein anderer Typ als eine Festplatte sein. Beispielsweise sind SSD-, NVMe- und eMMC-Laufwerke eine gültige Wahl.
+- Das Startlaufwerk muss einen anderen Typ als eine Festplatte haben. Beispielsweise sind SSD-, NVMe- und eMMC-Laufwerke eine gültige Wahl.
 - Das Startlaufwerk muss eine Kapazität von mindestens 128 GB haben.
 
 Wenn das Gerät nach dem 1. Juli 2020 hergestellt wurde, sollte es auch über eine IR-Kamera, einen Fingerabdruckleser oder beides verfügen, um [Windows Hello zu unterstützen.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)

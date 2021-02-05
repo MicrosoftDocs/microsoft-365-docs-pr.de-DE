@@ -1,5 +1,5 @@
 ---
-title: Ändern des Namens des Themen Centers in Microsoft 365
+title: Ändern des Namens des Themencenters in Microsoft Topics
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,44 +9,43 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: Hier erfahren Sie, wie Sie den Namen des Themen Centers in Microsoft 365 ändern.
-ms.openlocfilehash: 63ce6b75d26ad600d1241a70fcbd616ecc98a4d2
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+description: Erfahren Sie, wie Sie den Namen des Themencenters in Microsoft -Themen ändern.
+ms.openlocfilehash: 91f0693ba24e412812e1b8db19cfcf0febd2ec66
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668144"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107723"
 ---
-# <a name="change-the-name-of-the-topic-center-in-microsoft-365"></a>Ändern des Namens des Themen Centers in Microsoft 365
+# <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>Ändern des Namens des Themencenters in Microsoft Topics
 
-Sie können den Namen Ihres Themen Centers im [Microsoft 365 Admin Center](https://admin.microsoft.com)ändern. Sie müssen ein globaler Administrator oder SharePoint-Administrator sein, um diese Aufgaben ausführen zu können.
+Sie können den Namen Ihres Themencenters im [Microsoft 365 Admin Center ändern.](https://admin.microsoft.com) Sie müssen ein globaler Administrator oder ein SharePoint-Administrator sein, um diese Aufgaben ausführen zu können.
 
-## <a name="to-access-topics-management-settings"></a>So greifen Sie auf Themen Verwaltungseinstellungen zu:
+## <a name="to-access-topics-management-settings"></a>So greifen Sie auf Die Themenverwaltungseinstellungen zu:
 
-1. Klicken Sie im Microsoft 365 Admin Center auf **Einstellungen** und dann auf **org-Einstellungen**.
-2. Klicken Sie auf der Registerkarte **Dienste** auf **Wissensnetzwerk**.
+1. Klicken Sie im Microsoft 365 Admin Center auf **"Einstellungen"** und dann auf **"Organisationseinstellungen".**
+2. Klicken Sie **auf der** Registerkarte "Dienste" auf **"Themenerfahrungen".**
 
-    ![Verbinden von Personen mit wissen](../media/admin-org-knowledge-options-completed.png) 
+    ![Verbinden von Personen mit Wissen](../media/admin-org-knowledge-options-completed.png) 
 
-3. Wählen Sie die Registerkarte **Themen Center** aus. In den folgenden Abschnitten finden Sie Informationen zu den einzelnen Einstellungen.
+3. Wählen Sie die **Registerkarte "Themencenter"** aus. Informationen zu den einzelnen Einstellungen finden Sie in den folgenden Abschnitten.
 
-    ![Wissen-Netzwerk-Einstellungen](../media/knowledge-network-settings-topic-center.png) 
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
 
-##  <a name="update-your-topic-center-name"></a>Aktualisieren des Namens des Themen Centers
+##  <a name="update-your-topic-center-name"></a>Aktualisieren des Themencenternamens
 
-So ändern Sie den Namen des Themen Centers
+So ändern Sie den Namen des Themencenters
 
-1. Wählen Sie auf der Registerkarte **Themen Center** unter **Name des Themas**" **Bearbeiten**" aus.
-2. Geben Sie auf der Seite **Themen Center Namen bearbeiten** im Feld **Themen Center Name** den neuen Namen für Ihr Themen Center ein.
+1. Wählen Sie **auf der Registerkarte "Themencenter"** unter dem **Namen** des Themencenters **"Bearbeiten" aus.**
+2. Geben Sie **auf der Seite**  "Name des Themencenters bearbeiten" im Feld "Themencentername" den neuen Namen für Ihr Themencenter ein.
 3. Wählen Sie **Speichern** aus.
 
-    ![Bearbeiten des Themen Center namens](../media/manage-topic-center-name.png)  
+    ![Bearbeiten des Themencenternamens](../media/manage-topic-center-name.png)  
 
 ## <a name="see-also"></a>Siehe auch
 
-[Verwalten der Themen Ermittlung in Microsoft 365](topic-experiences-discovery.md)
+[Verwalten der Themenermittlung in Microsoft -Themen](topic-experiences-discovery.md)
 
-[Verwalten der Themen Sichtbarkeit in Microsoft 365](topic-experiences-knowledge-rules.md)
+[Verwalten der Sichtbarkeit von Themen in Microsoft -Themen](topic-experiences-knowledge-rules.md)
 
-[Verwalten von Themen Berechtigungen in Microsoft 365](topic-experiences-user-permissions.md)
+[Verwalten von Themenberechtigungen in Microsoft -Themen](topic-experiences-user-permissions.md)

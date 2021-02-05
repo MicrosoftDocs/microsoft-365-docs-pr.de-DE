@@ -1,5 +1,5 @@
 ---
-title: Verwalten der Themen Sichtbarkeit in Microsoft 365
+title: Verwalten der Sichtbarkeit von Themen in Microsoft -Themen
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,52 +9,51 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: Hier erfahren Sie, wie Sie die Sichtbarkeit von Themen in Microsoft 365 verwalten.
-ms.openlocfilehash: e2f09d06051d3fc8314a17d55f97aab305c0d358
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+description: Erfahren Sie, wie Sie die Sichtbarkeit von Themen in Microsoft Topics verwalten.
+ms.openlocfilehash: cd6a712687a63c3d131ee678c6c408f516c7b529
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668270"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107665"
 ---
-# <a name="manage-topic-visibility-in-microsoft-365"></a>Verwalten der Themen Sichtbarkeit in Microsoft 365
+# <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>Verwalten der Sichtbarkeit von Themen in Microsoft -Themen
 
-Sie können die Gruppe von Benutzern verwalten, die Themen Highlights, Themenkarten und das Themen Center im [Microsoft 365 Admin Center](https://admin.microsoft.com)anzeigen können. Sie müssen ein globaler Administrator oder SharePoint-Administrator sein, um diese Aufgaben ausführen zu können.
+Sie können die Gruppe von Benutzern verwalten, die Themenhighlights, Themenkarten und das Themencenter im [Microsoft 365 Admin Center sehen können.](https://admin.microsoft.com) Sie müssen ein globaler Administrator oder ein SharePoint-Administrator sein, um diese Aufgaben ausführen zu können.
 
-## <a name="to-access-topics-management-settings"></a>So greifen Sie auf Themen Verwaltungseinstellungen zu:
+## <a name="to-access-topics-management-settings"></a>So greifen Sie auf Die Themenverwaltungseinstellungen zu:
 
-1. Klicken Sie im Microsoft 365 Admin Center auf **Einstellungen** und dann auf **org-Einstellungen**.
-2. Klicken Sie auf der Registerkarte **Dienste** auf **Wissensnetzwerk**.
+1. Klicken Sie im Microsoft 365 Admin Center auf **"Einstellungen"** und dann auf **"Organisationseinstellungen".**
+2. Klicken Sie **auf der** Registerkarte "Dienste" auf **"Themenerfahrungen".**
 
-    ![Verbinden von Personen mit wissen](../media/admin-org-knowledge-options-completed.png) 
+    ![Verbinden von Personen mit Wissen](../media/admin-org-knowledge-options-completed.png) 
 
-3. Wählen Sie die Registerkarte **Themen Sichtbarkeit** aus. In den folgenden Abschnitten finden Sie Informationen zu den einzelnen Einstellungen.
+3. Wählen Sie die **Registerkarte "Thema sichtbarkeit"** aus. Informationen zu den einzelnen Einstellungen finden Sie in den folgenden Abschnitten.
 
-    ![Wissen-Netzwerk-Einstellungen](../media/knowledge-network-settings-topic-visibility.png) 
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-visibility.png) 
 
-##  <a name="change-who-can-see-topics-in-your-organization"></a>Ändern der Personen, die Themen in Ihrer Organisation anzeigen können
+##  <a name="change-who-can-see-topics-in-your-organization"></a>Ändern, wer Themen in Ihrer Organisation sehen kann
 
-Sie können die Benutzer ändern, die Themen in Ihrer Organisation anzeigen können.
+Sie können die Benutzer ändern, die Themen in Ihrer Organisation sehen können.
 
-1. Wählen Sie auf der Registerkarte **Thema Visibility** unter **wer Themen im Wissensnetzwerk sehen kann die** Option **Bearbeiten** aus.
-2. Auf der Seite " **Wer kann Themen auf der Wissensnetzwerk Seite sehen** " wählen Sie aus, wer Zugriff auf Themen Details haben soll, wie beispielsweise hervorgehobene Themen, Themenkarten, Themen Antworten auf der Suche und Themenseiten. Sie können Folgendes auswählen:
+1. On the **Topic visibility** tab, under Who can **see topics,** select **Edit**.
+2. Auf der **Seite "Wer** kann Themen anzeigen" wählen Sie aus, wer Zugriff auf Themendetails hat, z. B. hervorgehobene Themen, Themenkarten, Themenantworten in der Suche und Themenseiten. Sie können dies auswählen:
     - **Jeder in Ihrer Organisation**
     - **Nur ausgewählte Personen oder Sicherheitsgruppen**
     - **Niemand**
 
-    ![Wer Themen sehen kann](../media/k-manage-who-can-see-topics.png) 
+    ![Wer kann Themen sehen?](../media/k-manage-who-can-see-topics.png) 
 
 3. Klicken Sie auf **Speichern**.  
  
 > [!Note] 
-> Während diese Einstellung es Ihnen ermöglicht, einen beliebigen Benutzer in Ihrer Organisation auszuwählen, können nur Benutzer, denen die Lizenzen für ein Themen Erlebnis zugewiesen sind, Themen anzeigen.
+> Während Sie mit dieser Einstellung beliebige Benutzer in Ihrer Organisation auswählen können, können nur Benutzer, denen Themenerfahrungslizenzen zugewiesen sind, Themen anzeigen.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Verwalten der Themen Ermittlung in Microsoft 365](topic-experiences-discovery.md)
+[Verwalten der Themenermittlung in Microsoft -Themen](topic-experiences-discovery.md)
 
-[Verwalten von Themen Berechtigungen in Microsoft 365](topic-experiences-user-permissions.md)
+[Verwalten von Themenberechtigungen in Microsoft -Themen](topic-experiences-user-permissions.md)
 
-[Ändern des Namens des Themen Centers in Microsoft 365](topic-experiences-administration.md)
+[Ändern des Namens des Themencenters in Microsoft Topics](topic-experiences-administration.md)
 

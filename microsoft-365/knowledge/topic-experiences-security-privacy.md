@@ -1,5 +1,5 @@
 ---
-title: Thema Experiences Security and Privacy
+title: Sicherheit und Datenschutz in Microsoft Topics
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,84 +9,83 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: Informationen zum Planen von Sicherheits-und Datenschutzthemen in Microsoft 365
-ms.openlocfilehash: b3c33a49b8273c5f7830f08de17af9757a858413
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+description: Erfahren Sie, wie Sie Sicherheit und Datenschutz in Microsoft -Themen planen.
+ms.openlocfilehash: be5be01bce117a80bd95ee268c193889eccea67f
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698497"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107792"
 ---
-# <a name="topic-experiences-security-and-privacy"></a>Thema Experiences Security and Privacy
+# <a name="microsoft-viva-topics-security-and-privacy"></a>Sicherheit und Datenschutz in Microsoft Topics
 
-In den Themen Erfahrungen werden vorhandene Inhalts Sicherheitsfeatures in Microsoft 365 sowie Wissensnetzwerk-Steuerelemente verwendet, um zu steuern, welche AI-generierten Inhalte Benutzern in Ihrer Organisation angezeigt werden. Dies ist die Kombination aus Microsoft 365-Sicherheitseinstellungen (Berechtigungen für Websites, Dateien und Ordner) und Verwaltungseinstellungen für Themen, die bestimmen, was ein bestimmter Benutzer in Themen sehen kann.
+Themen verwenden vorhandene Inhaltssicherheitsfeatures in Microsoft 365 zusammen mit administrativen Steuerelementen, um zu steuern, welche von AI generierten Inhalte Benutzern in Ihrer Organisation angezeigt werden. Es ist die Kombination aus Microsoft 365-Sicherheitseinstellungen (Berechtigungen für Websites, Dateien und Ordner) und Themen-Administratoreinstellungen, die bestimmen, was ein Benutzer in Themen sehen kann.
 
-Durch das Einrichten des Wissensnetzwerks werden keine vorhandenen Zugriffssteuerungen für Inhalte in Ihrer Organisation geändert. Benutzer können nur sehen, worauf Sie bereits Zugriff haben.
+Durch das Einrichten von Themen werden keine vorhandenen Zugriffssteuerungen für Inhalte in Ihrer Organisation geändert. Benutzer sehen nur, worauf sie bereits Zugriff haben.
 
-In diesem Artikel wird beschrieben, wie das Thema Erfahrungen aus Sicherheitsgründen und den Optionen, die Wissens Administratoren und Knowledge Manager haben, die Themen Sichtbarkeit steuern müssen, verwendet werden. Lesen Sie diesen Artikel im Rahmen ihrer [Planung für Themen Erfahrungen](plan-topic-experiences.md).
+In diesem Artikel wird beschrieben, wie Themen aus Sicherheitsperspektive funktionieren und welche Optionen Wissensadministratoren und Wissensmanager haben, um die Sichtbarkeit des Themas zu steuern. Lesen Sie diesen Artikel im Rahmen Ihrer [Planung für Themen.](plan-topic-experiences.md)
 
-Sie sollten mit Themen [Erfahrungen](topic-experiences-overview.md), dem [Themen Center](topic-center-overview.md)und der [Arbeit mit Themen im Thema Center](manage-topics.md) vertraut sein, bevor Sie diesen Artikel lesen.
+Bevor Sie diesen Artikel lesen, [](topic-center-overview.md)sollten Sie mit [](manage-topics.md) themen, dem Themencenter und der Arbeit mit Themen im Themencenter vertraut sein. [](topic-experiences-overview.md)
 
 ## <a name="what-users-can-see-in-topics"></a>Was Benutzer in Themen sehen können
 
-Um Themen anzuzeigen, muss ein Benutzer:
+Um Themen zu sehen, muss ein Benutzer:
 
-- Haben Sie ein Thema Erfahrungen Lizenz
-- Ein [Themen Betrachter](topic-experiences-knowledge-rules.md#change-who-can-see-topics-in-your-organization), [Mitwirkender oder Wissensmanager](topic-experiences-user-permissions.md) sein
+- Lizenz für "Themen"
+- Ein [Themenanzeiger,](topic-experiences-knowledge-rules.md#change-who-can-see-topics-in-your-organization) [Mitwirkender oder Knowledge Manager sein](topic-experiences-user-permissions.md)
 
-Diese beiden Dinge ermöglichen Benutzern den Zugriff auf das Themen Center, sodass Sie Highlights und Themenkarten anzeigen können.
+Diese beiden Dinge ermöglichen Benutzern den Zugriff auf das Themencenter und das Anzeigen von Highlights und Themenkarten.
 
-Thema Mitwirkende haben zusätzlich [Erstellen und bearbeiten](topic-experiences-user-permissions.md#change-who-has permissions-to-update-topic-details) von Berechtigungen für Themen, und Knowledge Manager können Themen bestätigen oder entfernen.
+Die Mitwirkenden von Themen verfügen außerdem über [Berechtigungen](topic-experiences-user-permissions.md) zum Erstellen und Bearbeiten von Themen, und Wissensmanager können Themen bestätigen oder entfernen.
 
-Wenn ein Thema erstmals erkannt wird, können es Knowledge Manager im Themen Center anzeigen. Je nach Vollständigkeit und Relevanz des Themas wird das Thema in den Themenkarten möglicherweise vom Thema Betrachter angezeigt.
+Wenn ein Thema zum ersten Mal entdeckt wird, können Wissensmanager es im Themencenter sehen. Je nach Vollständigkeit und Relevanz des Themas wird den Themenbetrachtern das Thema möglicherweise in Themenkarten angezeigt.
 
-Themen können Informationen enthalten, die von AI generiert werden, sowie Informationen, die von Mitwirkenden oder Wissensmanagern hinzugefügt oder bearbeitet wurden.
+Themen können informationen enthalten, die von AI generiert werden, sowie Informationen, die von Themen mitwirkenden oder Wissensmanagern hinzugefügt oder bearbeitet wurden.
 
 - Informationen in einem Thema, das von AI hinzugefügt wurde, sind nur für Personen sichtbar, die Zugriff auf den Quellinhalt haben.
-- Text, der manuell von einem Thema Mitwirkenden oder Wissensmanager hinzugefügt oder bearbeitet wurde, ist für jeden sichtbar, der das Thema sehen kann.
+- Text, der von einem Mitwirkenden oder Wissensmanager manuell hinzugefügt oder bearbeitet wurde, ist für jeden sichtbar, der das Thema sehen kann.
 
-Thema Betrachter und Mitwirkende können die Liste der bestätigten und veröffentlichten Themen im Thema Center anzeigen, aber die Details des Themas, die eine bestimmte Person sehen kann, hängen von den Berechtigungen ab, die Sie für das Quellmaterial haben, und darüber, ob das Thema manuell bearbeitet wurde.
+Themenanzeiger und Mitwirkende können die Liste der bestätigten und veröffentlichten Themen im Themencenter anzeigen, aber die Themendetails, die eine bestimmte Person sehen kann, hängen von den Berechtigungen ab, die sie für das Quellmaterial haben, und davon, ob das Thema manuell bearbeitet wurde.
 
-In der folgenden Tabelle wird beschrieben, was Benutzer – Thema Betrachter, Mitwirkende und Wissensmanager – in einem bestimmten Thema basierend auf Ihren Berechtigungen sehen können.
+In der folgenden Tabelle wird beschrieben, was Benutzer – Themenanzeiger, Mitwirkende und Wissensmanager – basierend auf ihren Berechtigungen in einem bestimmten Thema sehen können.
 
-|Thema-Element|Was Benutzer sehen können|
+|Themaelement|Was Benutzer sehen können|
 |:---------|:------------------|
-|Name des Themas|Benutzer können den Thema Namen aller Themen im Thema Center anzeigen. Einige Themen sind möglicherweise nicht sichtbar, wenn Sie eine geringe Relevanz für den Benutzer haben.|
-|Beschreibung des Themas|Von AI generierte Beschreibungen sind nur für Benutzer sichtbar, die über Berechtigungen für den Quellinhalt verfügen. Manuell eingegebene oder bearbeitete Beschreibungen sind für alle Benutzer sichtbar.|
-|Personen|Angeheftete Personen sind für alle Benutzer sichtbar. Vorgeschlagene Personen sind nur für Benutzer sichtbar, die über Berechtigungen für den Quellinhalt verfügen.|
+|Themaname|Benutzer können den Themennamen aller Themen im Themencenter sehen. Einige Themen sind möglicherweise nicht sichtbar, wenn sie eine geringe Relevanz für den Benutzer haben.|
+|Themenbeschreibung|Von AI generierte Beschreibungen sind nur für Benutzer sichtbar, die über Berechtigungen für den Quellinhalt verfügen. Manuell eingegebene oder bearbeitete Beschreibungen sind für alle Benutzer sichtbar.|
+|Personen|Angeheftierte Personen sind für alle Benutzer sichtbar. Vorgeschlagene Personen sind nur für Benutzer sichtbar, die über Berechtigungen für den Quellinhalt verfügen.|
 |Dateien|Dateien sind nur für Benutzer sichtbar, die über Berechtigungen für den Quellinhalt verfügen.|
 |Seiten|Seiten sind nur für Benutzer sichtbar, die über Berechtigungen für den Quellinhalt verfügen.|
 |Websites|Websites sind nur für Benutzer sichtbar, die über Berechtigungen für den Quellinhalt verfügen.|
 
 ## <a name="best-practices"></a>Bewährte Methoden
 
-In den Themen Erfahrungen werden Benutzern Informationen basierend auf den vorhandenen Berechtigungen für Inhalte präsentiert. Microsoft 365 bietet eine Vielzahl von Möglichkeiten, um sicherzustellen, dass vertrauliche Inhalte auf geeignete Benutzer beschränkt sind. Über standardmäßige Team-oder Websiteberechtigungen hinaus können Sie [Vertraulichkeits Bezeichnungen](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) oder [Verhinderung von Datenverlusten](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) verwenden, um den Zugriff auf Inhalte und [Zugriffs](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) Überprüfungen einzuschränken, um den Benutzer Zugriff auf vertrauliche Informationen regelmäßig
+Themen stellen Benutzern Informationen basierend auf ihren vorhandenen Berechtigungen für Inhalte zur Verfügung. Microsoft 365 bietet eine Vielzahl von Möglichkeiten, um sicherzustellen, dass vertrauliche Inhalte auf geeignete Benutzer beschränkt sind. Neben standardmäßigen Team- oder Websiteberechtigungen [](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) können Sie Vertraulichkeitsbezeichnungen [](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) oder die Verhinderung von Datenverlust verwenden, um den Zugriff auf Inhalte und Zugriffsüberprüfungen einzuschränken, um den Benutzerzugriff auf vertrauliche Informationen regelmäßig zu überprüfen. [](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
 
-Es wird empfohlen, dass Sie diese Tools verwenden, um sicherzustellen, dass Ihre Inhaltsberechtigungen in Ihrer Organisation ordnungsgemäß festgelegt sind. Thema-Erlebnisse können dann nützliche und geeignete Informationen für Ihre Benutzer bereitstellen.
+Es wird empfohlen, diese Tools zu verwenden, um sicherzustellen, dass Ihre Inhaltsberechtigungen in Ihrer Organisation entsprechend festgelegt werden. Themenerfahrungen können ihren Benutzern dann nützliche und geeignete Informationen bereitstellen.
 
-Wenn Themen vorhanden sind, die Sie vollständig aus Themenbereichen ausschließen möchten, können Sie auch folgende Aufgaben ausführen:
+Wenn es Themen gibt, die Sie vollständig aus der Themenerfahrung ausschließen möchten, können Sie auch:
 
-- [Ausschließen vertraulicher SharePoint-Websites von der Themen Ermittlung](topic-experiences-discovery.md#select-sharepoint-topic-sources). Inhalte auf diesen Websites werden in den Themen Erfahrungen nicht angezeigt.
+- [Ausschließen vertraulicher SharePoint-Websites von der Themenermittlung.](topic-experiences-discovery.md#select-sharepoint-topic-sources) Inhalte auf diesen Websites werden in den Themenerfahrungen nicht angezeigt.
 
-- [Themen nach Namen ausschließen](topic-experiences-discovery.md#exclude-topics-by-name). Themen, die explizit ausgeschlossen werden, werden in den Themen Erfahrungen nicht angezeigt.
+- [Ausschließen von Themen nach Namen.](topic-experiences-discovery.md#exclude-topics-by-name) Explizit ausgeschlossene Themen werden in den Themenerfahrungen nicht angezeigt.
 
-- Lassen Sie die Knowledge Manager Themen im Themen Center entfernen.
+- Möchten Sie wissen, dass Manager Themen im Themencenter entfernen.
 
-Außerdem werden diese bewährten Methoden empfohlen:
+Darüber hinaus empfehlen wir die folgenden bewährten Methoden:
 
-- Rekrutieren von Wissensmanagern aus unterschiedlichen Bereichen Ihrer Organisation. Mit Wissensmanagern mit einer Vielzahl von Fachwissen und dem Zugriff auf den zugrunde liegenden Inhalt, der von AI verwendet wird, können Sie das nützlichste wissen für Ihre Benutzer erfinden und vertrauliche Informationen entfernen, wenn diese gefunden werden.
+- Rekrutieren Sie Wissensmanager aus verschiedenen Bereichen Ihrer Organisation. Wissensmanager mit einer Vielzahl von Fachkenntnissen – und Zugriff auf die von AI verwendeten zugrunde liegenden Inhalte – können Ihnen dabei helfen, die nützlichsten Kenntnisse für Ihre Benutzer zu vermitteln und vertrauliche Informationen zu entfernen, wenn sie gefunden werden.
 
-- Richten Sie einen Workflow zum Anfordern von Änderungen ein. Wissensmanager oder Team-oder Websitebesitzer sollten über einen Prozess verfügen, bei dem Sie den Ausschluss von Themen oder Websites anfordern können, wenn neue Projekte in Ihrer Organisation gestartet werden oder wenn Inhalte mit unangemessenen Berechtigungseinstellungen gefunden werden.
+- Richten Sie einen Workflow zum Anfordern von Änderungen ein. Wissensmanager oder Team- oder Websitebesitzer sollten über einen Prozess verfügen, in dem sie den Ausschluss von Themen oder Websites anfordern können, wenn neue Projekte in Ihrer Organisation gestartet werden oder wenn sie Inhalte mit unangemessenen Berechtigungseinstellungen finden.
 
-- Achten Sie beim Erstellen von Themenbeschreibungen auf die Benutzergruppe und die Vertraulichkeit von Informationen. Diese Beschreibungen sind möglicherweise für Benutzer sichtbar, die nicht über Berechtigungen für den Quellinhalt für das Thema verfügen.
+- Beachten Sie beim Erstellen von Themenbeschreibungen die Zielgruppe und die Vertraulichkeit von Informationen. Diese Beschreibungen sind möglicherweise für Benutzer sichtbar, die nicht über Berechtigungen für die Quellinhalte für das Thema verfügen.
 
-Während Sie die Berechtigungen für einzelne Themenseiten ändern können, um den Zugriff auf eine bestimmte Benutzergruppe einzuschränken, wird dieser Ansatz aufgrund des hohen Verwaltungsaufwands nicht empfohlen.
+Sie können zwar die Berechtigungen auf einzelnen Themenseiten ändern, um den Zugriff auf eine bestimmte Gruppe von Benutzern zu einengen, wir empfehlen diesen Ansatz jedoch aufgrund des hohen Verwaltungsaufwands nicht.
 
 ## <a name="see-also"></a>Siehe auch
 
 [Konfigurieren von Teams mit drei Schutzebenen](../solutions/configure-teams-three-tiers-protection.md)
 
-[Planen von Themen Erfahrungen](plan-topic-experiences.md)
+[Topic Experiences planen](plan-topic-experiences.md)
 
-[Einrichten von Themen Erfahrungen](set-up-topic-experiences.md)
+[Topic Experiences einrichten](set-up-topic-experiences.md)

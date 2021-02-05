@@ -235,8 +235,6 @@
           href: manage/change-address-contact-and-more.md
         - name: Aktualisieren Sie Ihre Administrator-Kontaktinformationen
           href: manage/update-phone-number-and-email-address.md
-        - name: Festlegen der Kennwortablaufrichtlinie
-          href: manage/set-password-expiration-policy.md
         - name: Anpassen des App-Startfelds
           href: manage/customize-the-app-launcher.md
         - name: Apps an das Startprogramm für Apps der Benutzer anheften

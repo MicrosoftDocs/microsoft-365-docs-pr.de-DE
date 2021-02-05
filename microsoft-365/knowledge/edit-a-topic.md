@@ -1,9 +1,10 @@
 ---
-title: 'Bearbeiten eines vorhandenen Themas in "Themenerfahrungen" (Vorschau) '
-description: Bearbeiten eines vorhandenen Themas in "Themenerfahrungen".
+title: 'Bearbeiten eines vorhandenen Themas in Microsoft -Themen '
+description: Bearbeiten eines vorhandenen Themas in Microsoft Topics.
 author: efrene
 ms.author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
@@ -12,18 +13,14 @@ ms.collection:
 - m365initiative-topics
 ms.service: ''
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 79321ce7fc661fd95090c280eae0bcecd332221a
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 4194328804285f93f023092f1c7ac31d31a581da
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976293"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107460"
 ---
-# <a name="edit-an-existing-topic-preview"></a>Bearbeiten eines vorhandenen Themas (Vorschau)
-
-> [!Note] 
-> Der Inhalt dieses Artikels ist für Project Cortex Private Preview vorgesehen. [Erfahren Sie mehr über Project Cortex](https://aka.ms/projectcortex).
+# <a name="edit-an-existing-topic"></a>Bearbeiten eines vorhandenen Themas 
 
 </br>
 
@@ -31,36 +28,93 @@ ms.locfileid: "49976293"
 
 </br>
 
-In den Themenerfahrungen können Sie ein vorhandenes Thema bearbeiten. Möglicherweise müssen Sie dies tun, wenn Sie eine vorhandene Themenseite korrigieren oder zusätzliche Informationen hinzufügen möchten. 
+In "Themen zu Thema" können Sie ein vorhandenes Thema bearbeiten. Möglicherweise müssen Sie dies tun, wenn Sie eine vorhandene Themenseite korrigieren oder zusätzliche Informationen hinzufügen möchten. 
+
+> [!Note] 
+> Während die Informationen in einem Thema, das von AI gesammelt wird, aus Sicherheitsgründen gekürzt [werden,](topic-experiences-security-trimming.md)beachten Sie, dass Informationen, die Sie beim Bearbeiten eines vorhandenen Themas manuell hinzufügen, für alle Benutzer sichtbar sind, die über Berechtigungen zum Anzeigen von Themen verfügen. 
 
 ## <a name="requirements"></a>Anforderungen
 
 Um ein vorhandenes Thema zu bearbeiten, müssen Sie:
-- Sie verfügen über eine Topic Experiences-Lizenz.
-- Sie verfügen über Berechtigungen für [**Personen, die Themen erstellen oder bearbeiten können.**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) Wissensadministratoren können Benutzern diese Berechtigung in den Themeneinstellungen des Knowledge Network erteilen. 
+- Sie verfügen über eine Lizenz für "Topics".
+- Sie verfügen über Berechtigungen für [**Personen, die Themen erstellen oder bearbeiten können.**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) Wissensadministratoren können Benutzern diese Berechtigung in den Themen "Themen" erteilen. 
 
 > [!Note] 
 > Benutzer, die über die Berechtigung zum Verwalten von Themen im Themencenter (Knowledge Manager) verfügen, verfügen bereits über Berechtigungen zum Erstellen und Bearbeiten von Themen.
 
-## <a name="edit-a-topic-page"></a>Bearbeiten einer Themenseite
+## <a name="how-to-edit-a-topic-page"></a>Bearbeiten einer Themenseite
 
-Wenn Sie über Berechtigungen zum Bearbeiten einer Themenseite verfügen, können  Sie nach dem Öffnen des Themas oben rechts auf der Seite "Bearbeiten" sehen.
+Benutzer mit  der Berechtigung "Wer kann Themen erstellen oder bearbeiten" können ein Thema bearbeiten, <b></b> indem sie die Themenseite in einer Themenauswahl öffnen und dann oben rechts auf der Themenseite die Schaltfläche "Bearbeiten" auswählen. Die Themenseite kann auch über die Startseite des Themencenters geöffnet werden, auf der Sie alle Themen finden können, zu denen Sie eine Verbindung haben.
 
-   ![Steuerelement bearbeiten](../media/knowledge-management/topic-page-edit.png) </br> 
+   ![Schaltfläche "Bearbeiten"](../media/knowledge-management/edit-button.png) </br> 
 
-1. Wählen Sie auf der Themenseite **"Bearbeiten" aus.**
+Wissensmanager können Themen auch direkt auf der Seite "Themen verwalten" bearbeiten, indem sie das Thema auswählen und dann <b>auf</b> der Symbolleiste "Bearbeiten" auswählen.
 
-2. Nehmen Sie die änderungen vor, die Sie an der Seite vornehmen müssen. Dies schließt Aktualisierungen an den folgenden Feldern ein:
+   ![Thema "Bearbeiten" in "Themen verwalten"](../media/knowledge-management/manage-topics-edit.png) </br> 
 
-    -  Alternative Namen
-    -  Beschreibung
-    -  Angeheftete Personen
-    -  Dateien und Seiten
-    -  Websites
+### <a name="to-edit-a-topic-page"></a>So bearbeiten Sie eine Themenseite
 
-    Sie können der Seite auch statische Elemente hinzufügen, z. B. Text, Bilder oder Links, indem Sie das Zeichenbereichssymbol auswählen.
+1. Wählen Sie auf der Themenseite **"Bearbeiten" aus.** Auf diese Weise können Sie bei Bedarf Änderungen an der Themenseite vornehmen.
 
-3. Wählen **Sie "Erneut veröffentlichen"** aus, um Ihre Änderungen zu speichern.
+   ![Steuerelement bearbeiten](../media/knowledge-management/topic-page-edit.png) </br>  
+
+
+2. Geben Sie <b>im Abschnitt "Alternative</b> Namen" alle anderen Namen ein, auf die das Thema möglicherweise verwiesen wird. 
+
+    ![Alternative Namen](../media/knowledge-management/alt-names.png) </br> 
+3. Geben Sie <b>im Abschnitt</b> "Beschreibung" einige Sätze ein, die das Thema beschreiben. Wenn bereits eine Beschreibung vorhanden ist, aktualisieren Sie sie bei Bedarf.
+
+    ![Beschreibungsabschnitt](../media/knowledge-management/description.png)</br>
+
+4. Im Abschnitt <b>"Angeheftierte</b> Personen" können Sie eine Person "anheften", um sie als Experten für das Thema zu zeigen. Geben Sie zunächst ihren Namen oder <b></b> ihre E-Mail-Adresse in das Feld "Neuen Benutzer hinzufügen" ein, und wählen Sie dann den Benutzer aus den Suchergebnissen aus, den Sie hinzufügen möchten. Sie können sie auch "entfernen", indem Sie auf der Benutzerkarte das Symbol "Aus Liste entfernen" auswählen. <b></b>
+ 
+    ![Hinzufügen angehefteter Personen](../media/knowledge-management/pinned-people.png)</br>
+
+    Der <b>Abschnitt "Vorgeschlagene</b> Personen" zeigt Benutzern, dass AI der Meinung ist, dass es sich bei dem Thema von der Verbindung zu Ressourcen zu diesem Thema als Experten für das Thema halten könnte. Sie können den Status von "Vorgeschlagen" in "Angeheftet" ändern, indem Sie auf der Benutzerkarte das Symbol "Anheften" auswählen.
+
+   ![Anheften einer vorgeschlagenen Personen](../media/knowledge-management/suggested-people.png)</br>
+
+5. Im Abschnitt <b>"Angeheftierte</b> Dateien und Seiten" können Sie eine Datei oder eine SharePoint-Websiteseite, die dem Thema zugeordnet ist, hinzufügen oder "anheften".
+
+   ![Abschnitt "Angeheftete Dateien und Seiten"](../media/knowledge-management/pinned-files-and-pages.png)</br>
+ 
+    Wenn Sie eine neue Datei hinzufügen möchten, wählen Sie "Hinzufügen" <b>aus,</b>wählen Sie die SharePoint-Website aus Ihren Websites mit häufigen oder gefolgten Websites aus, und wählen Sie dann die Datei aus der Dokumentbibliothek der Website aus.
+
+    Sie können auch die Linkoption <b>"Von"</b> verwenden, um eine Datei oder Seite hinzuzufügen, indem Sie die URL angeben. 
+
+6. Im <b>Abschnitt "Vorgeschlagene Dateien und Seiten"</b> werden Dateien und Seiten angezeigt, die ai vorschlägt, dem Thema zugeordnet zu werden.
+
+   ![Abschnitt "Vorgeschlagene Dateien und Seiten"](../media/knowledge-management/suggested-files-and-pages.png)</br>
+
+    Sie können eine vorgeschlagene Datei oder Seite an eine angeheftet Datei oder Seite erstellen, indem Sie das angeheftet Symbol auswählen.
+
+7.  Im <b>Abschnitt "Verwandte Websites"</b> werden Websites mit Informationen zum Thema angezeigt. 
+
+    ![Abschnitt "Verwandte Websites"](../media/knowledge-management/related-sites.png)</br>
+
+    Sie können eine verwandte <b></b> Website hinzufügen, indem Sie "Hinzufügen" auswählen und dann entweder nach der Website suchen oder sie in der Liste der häufig verwendeten oder zuletzt verwendeten Websites auswählen.</br>
+    
+    ![Auswählen einer Website](../media/knowledge-management/sites.png)</br>
+
+8. Im <b>Abschnitt "Verwandte Themen"</b> werden Verbindungen zwischen Themen angezeigt. Sie können eine Verbindung zu einem <b></b> anderen Thema hinzufügen, indem Sie die Schaltfläche "Mit einem verwandten Thema verbinden" auswählen, dann den Namen des verwandten Themas eingeben und in den Suchergebnissen auswählen. 
+
+   ![Abschnitt "Verwandte Themen"](../media/knowledge-management/related-topic.png)</br>  
+
+    Sie können dann eine Beschreibung der Beziehung zwischen den Themen geben und Aktualisieren <b>auswählen.</b></br>
+
+   ![Beschreibung verwandter Themen](../media/knowledge-management/related-topics-update.png)</br> 
+
+   Das verwandte Thema, das Sie hinzugefügt haben, wird als verbundenes Thema angezeigt.
+
+   ![Verbundene verwandte Themen](../media/knowledge-management/related-topics-final.png)</br> 
+
+
+9. Sie können der Seite auch statische Elemente hinzufügen, z. B. Text, Bilder oder Links, indem Sie das Zeichenbereichssymbol auswählen, das Sie unterhalb der Kurzbeschreibung finden. Wenn Sie es auswählen, wird die SharePoint-Toolbox geöffnet, aus der Sie das Element auswählen können, das Sie der Seite hinzufügen möchten.
+
+   ![Zeichenbereichssymbol](../media/knowledge-management/webpart-library.png)</br> 
+
+
+10. Wählen **Sie "Veröffentlichen"** oder **"Erneut veröffentlichen"** aus, um Ihre Änderungen zu speichern. **Die Veröffentlichung ist** ihre verfügbare Option, wenn das Thema bereits veröffentlicht wurde.
 
 
 ## <a name="see-also"></a>Weitere Informationen:

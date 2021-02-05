@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 3eaa6481c2f1b0d41066a8cea1b28d776f786a1b
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 3a88c48e6915b03316b29d80d2a0f7550d4b5d32
+ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094776"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50105162"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Erste Schritte mit dem Insider-Risikomanagement
 
@@ -41,10 +41,13 @@ Bevor Sie mit dem Insider-Risikomanagement beginnen, sollten Sie Ihr [Microsoft 
 - Microsoft 365 A5-Abonnement (kostenpflichtig oder Testversion)
 - Microsoft 365 A3-Abonnement + das Microsoft 365 A5 Compliance-Add-On
 - Microsoft 365 A3-Abonnement + das Microsoft 365 A5 Insider Risk Management-Add-On
+- Microsoft 365 -G5-Abonnement (kostenpflichtig oder Testversion)
+- Microsoft 365 -G5-Abonnement + das Microsoft 365 G5 Compliance-Add-On
+- Microsoft 365 -G5-Abonnement + das Microsoft 365 G5-Add-On "Insider Risk Management"
 
 Benutzern, die in den Richtlinien für das Insiderrisikomanagement enthalten sind, muss eine der oben genannten Lizenzen zugewiesen werden.
 
-Wenn Sie nicht über einen vorhandenen Microsoft 365 Enterprise E5-Plan verfügen und das Insiderrisikomanagement ausprobieren [](https://www.microsoft.com/microsoft-365/enterprise) möchten, können Sie [Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) zu Ihrem vorhandenen Abonnement hinzufügen oder sich für eine Testversion von Microsoft 365 Enterprise E5 registrieren.
+Wenn Sie nicht über einen vorhandenen Microsoft 365 Enterprise E5-Plan verfügen und das Insiderrisikomanagement ausprobieren [](https://www.microsoft.com/microsoft-365/enterprise) möchten, können Sie [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) zu Ihrem vorhandenen Abonnement hinzufügen oder sich für eine Testversion von Microsoft 365 Enterprise E5 registrieren.
 
 ## <a name="step-1-enable-permissions-for-insider-risk-management"></a>Schritt 1: Aktivieren von Berechtigungen für das Insider-Risikomanagement
 
@@ -63,7 +66,7 @@ Abhängig von der Struktur Ihres Compliance Management-Teams haben Sie Optionen,
 | **Insider-Risikomanagement-Prüfer** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Datenprüfer für Insiderrisiken fungieren. Benutzer in dieser Rollengruppe können auf alle Insider-Risikomanagement-Warnungen, Fälle, Benachrichtigungsvorlagen und den Inhalts-Explorer zugreifen. |
 
 > [!NOTE]
-> Diese Rollengruppen werden derzeit von Privileged Identity Management (PIM) nicht unterstützt. Weitere Informationen zu PIM finden Sie unter [Zuweisen von Azure AD-Rollen in Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
+> Diese Rollengruppen werden derzeit von Privileged Identity Management (PIM) nicht unterstützt. Weitere Informationen zu PIM finden Sie unter [Zuweisen von Azure AD-Rollen in Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
 
 ### <a name="add-users-to-an-insider-risk-management-role-group"></a>Hinzufügen von Benutzern zu einer Rollengruppe für das Insiderrisikomanagement
 

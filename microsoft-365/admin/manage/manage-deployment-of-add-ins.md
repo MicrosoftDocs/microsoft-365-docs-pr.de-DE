@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Erfahren Sie, wie Sie Mithilfe der zentralen Bereitstellung im Admin Center Add-Ins für Benutzer und Gruppen in Ihrer Organisation bereitstellen.
-ms.openlocfilehash: ef7237f20780cb67bc84561ad8617dd8da6f8b82
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 5d17242d98f0e58ec4bfbcfd5b7014e6a6e0a6c5
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926354"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114501"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Bereitstellen von Add-Ins im Admin Center
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -49,7 +49,7 @@ Weitere Informationen zum Verwalten von Add-Ins nach der Bereitstellung finden S
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Empfohlene Vorgehensweise für die Bereitstellung von Office-Add-Ins
 
-Zum Rollout von Add-Ins mithilfe eines phasenweiser Ansatzes wird Folgendes empfohlen:
+Für das Rollout von Add-Ins mit einem phasenweisem Ansatz wird Folgendes empfohlen:
   
 1. Stellen Sie das Add-In für eine kleine Gruppe von Projektbeteiligten und Mitgliedern der IT-Abteilung bereit. Wenn die Bereitstellung erfolgreich ist, wechseln Sie zu Schritt 2.
     
@@ -136,7 +136,7 @@ Aktualisierungen für Add-Ins werden auf folgende Weise ausgeführt:
     
 - **Office Store-Add-In:** Wenn ein Administrator ein Add-In aus dem Office Store ausgewählt hat und dieses Add-In im Office Store aktualisiert wird, wird das Add-In später in der zentralen Bereitstellung aktualisiert. Beim nächsten Starten der jeweiligen Office-Anwendungen wird das Add-In aktualisiert. Die Webanwendung kann sich jederzeit ändern. 
   
-## <a name="learn-more"></a>Weitere Informationen
+## <a name="learn-more"></a>Mehr erfahren
 
 [Verwalten von Add-Ins im Admin Center](manage-addins-in-the-admin-center.md)
 
@@ -146,4 +146,4 @@ Aktualisierungen für Add-Ins werden auf folgende Weise ausgeführt:
   
 [Verwenden von Zentralen Bereitstellungs-PowerShell-Cmdlets zum Verwalten von Add-Ins](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
   
-[Problembehandlung: Dem Benutzer werden keine Add-Ins angezeigt](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[Problembehandlung: Benutzer sieht keine Add-Ins](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)

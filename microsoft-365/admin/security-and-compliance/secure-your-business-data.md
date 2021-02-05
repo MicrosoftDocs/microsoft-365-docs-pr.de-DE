@@ -22,30 +22,30 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Schützen Sie Ihre Geschäftlichen E-Mails und Daten vor Cyberbedrohungen, einschließlich Ransomware, Phishing und schädlichen Anlagen. '
-ms.openlocfilehash: a329d2879309812a516191fdbd1858ad10e4beeb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3ae6d896d5ef060e2f077167f81e2029a3a143ac
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926330"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114405"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Die 10 besten Methoden zum Sichern von Microsoft 365 Business-Plänen
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
-Wenn Sie eine kleine oder mittelständische Organisation sind, die einen der Geschäftspläne von Microsoft verwendet, und Ihre Art von Organisation von Cyberkriminellen und Hackern ausgerichtet ist, verwenden Sie die Anleitungen in diesem Artikel, um die Sicherheit Ihrer Organisation zu erhöhen. Dieser Leitfaden hilft Ihrer Organisation, die ziele zu erreichen, die im Handbuch zur [Cybersicherheitskampagne der "University Cybersecurity" beschrieben sind.](https://go.microsoft.com/fwlink/p/?linkid=2015598)
+Wenn Sie eine kleine oder mittelständische Organisation sind, die einen der Geschäftspläne von Microsoft verwendet, und Ihre Art von Organisation von Cyberkriminellen und Hackern ausgerichtet ist, verwenden Sie die Anleitungen in diesem Artikel, um die Sicherheit Ihrer Organisation zu erhöhen. Dieser Leitfaden hilft Ihrer Organisation, die ziele zu erreichen, die im Handbuch zur [Cybersicherheitskampagne der "University Cybersecurity Campaign" beschrieben sind.](https://go.microsoft.com/fwlink/p/?linkid=2015598)
 
 Microsoft empfiehlt, die in der folgenden Tabelle aufgeführten Aufgaben auszuführen, die für Ihren Serviceplan gelten.
 
 ||Aufgabe|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|---|
-|1 |[Einrichten der mehrstufigen Authentifizierung](secure-your-business-data.md#setup)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2 |[Schulen der Benutzer](secure-your-business-data.md#train)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[Einrichten der mehrstufigen Authentifizierung](secure-your-business-data.md#setup)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|2|[Schulen der Benutzer](secure-your-business-data.md#train)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[Verwenden dedizierter Administratorkonten](secure-your-business-data.md#admin)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Erhöhen des Schutzniveaus vor Schadsoftware in E-Mails](secure-your-business-data.md#malware)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[Schutz vor Ransomware](secure-your-business-data.md#ransomware)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -55,14 +55,14 @@ Microsoft empfiehlt, die in der folgenden Tabelle aufgeführten Aufgaben auszuf�
 |9 |[Schutz vor schädlichen Anlagen und Dateien mit sicheren Anlagen](secure-your-business-data.md#atp)||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10 |[Schutz vor Phishingangriffen mit sicheren Links](secure-your-business-data.md#phishingatp)||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-Bevor Sie beginnen, überprüfen Sie Ihre [Microsoft 365-Sicherheitsüberprüfung](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) im Microsoft 365 Security Center. Über ein zentrales Dashboard können Sie die Sicherheit für Ihre Microsoft 365-Identitäten, -Daten, -Apps, -Geräte und -Infrastruktur überwachen und verbessern. Sie erhalten Punkte zum Konfigurieren empfohlener Sicherheitsfeatures, zum Ausführen sicherheitsbezogener Aufgaben (z. B. zum Anzeigen von Berichten) oder zum Adressieren von Empfehlungen mit einer Drittanbieteranwendung oder -software. Mit zusätzlichen Einblicken und mehr Einblick in einen größeren Satz von Produkten und Diensten von Microsoft können Sie sich sicher fühlen, über den Sicherheitszustand Ihrer Organisation zu berichten.
+Bevor Sie beginnen, überprüfen Sie Ihre [Microsoft 365-Sicherheitsüberprüfung](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) im Microsoft 365 Security Center. Über ein zentrales Dashboard können Sie die Sicherheit für Ihre Microsoft 365-Identitäten, -Daten, -Apps, -Geräte und -Infrastruktur überwachen und verbessern. Sie erhalten Punkte zum Konfigurieren empfohlener Sicherheitsfeatures, zum Ausführen sicherheitsbezogener Aufgaben (z. B. zum Anzeigen von Berichten) oder zum Adressieren von Empfehlungen mit einer Drittanbieteranwendung oder -software. Mit zusätzlichen Einblicken und mehr Einblick in eine breitere Palette von Produkten und Diensten von Microsoft können Sie sicher sein, dass Sie über den Sicherheitszustand Ihrer Organisation berichten.
 
 ![Screenshot der Microsoft Secure Score](../../media/secure-score.png)
 
 ## <a name="1-set-up-multi-factor-authentication"></a>1: Einrichten der mehrstufigen Authentifizierung
 <a name="setup"> </a>
 
-Die Verwendung der mehrstufigen Authentifizierung ist eine der einfachsten und effektivsten Methoden, um die Sicherheit Ihrer Organisation zu erhöhen. Es ist einfacher, als es klingt. Wenn Sie sich anmelden, bedeutet die mehrstufige Authentifizierung, dass Sie einen Code von Ihrem Telefon eingeben, um Zugriff auf Microsoft 365 zu erhalten. Dies kann verhindern, dass Hacker die Kontrolle übernimmt, wenn sie Ihr Kennwort kennen. Die mehrstufige Authentifizierung wird auch als Überprüfung in zwei Schritten bezeichnet. Einzelpersonen können die Überprüfung in zwei Schritten den meisten Konten ganz einfach hinzufügen, z. B. ihren Google- oder Microsoft-Konten. Hier erfahren Sie, wie [Sie Ihrem persönlichen Microsoft-Konto die](https://go.microsoft.com/fwlink/p/?linkid=2016403)Überprüfung in zwei Schritten hinzufügen.
+Die Verwendung der mehrstufigen Authentifizierung ist eine der einfachsten und effektivsten Methoden, um die Sicherheit Ihrer Organisation zu erhöhen. Es ist einfacher, als es klingt. Wenn Sie sich anmelden, bedeutet die mehrstufige Authentifizierung, dass Sie einen Code von Ihrem Telefon eingeben, um Zugriff auf Microsoft 365 zu erhalten. Dies kann verhindern, dass Hacker die Kontrolle übernimmt, wenn sie Ihr Kennwort kennen. Die mehrstufige Authentifizierung wird auch als Überprüfung in zwei Schritten bezeichnet. Einzelpersonen können die Überprüfung in zwei Schritten den meisten Konten problemlos hinzufügen, z. B. ihren Google- oder Microsoft-Konten. Hier erfahren Sie, wie [Sie Ihrem persönlichen Microsoft-Konto die](https://go.microsoft.com/fwlink/p/?linkid=2016403)Überprüfung in zwei Schritten hinzufügen.
 
 Für Unternehmen, die Microsoft 365 verwenden, fügen Sie eine Einstellung hinzu, die erfordert, dass sich Ihre Benutzer mit der mehrstufigen Authentifizierung anmelden. Wenn Sie diese Änderung ändern, werden Benutzer aufgefordert, ihr Telefon bei der nächsten Anmeldung für die zweistufige Authentifizierung zu einrichten.
 Ein Schulungsvideo zum Einrichten von MFA und zum Abschließen der Einrichtung durch Benutzer finden Sie unter Einrichten von [MFA](https://support.microsoft.com/office/e12187b8-216a-4490-9e3b-df34a06fb787) und [Benutzersetset.](https://support.microsoft.com/office/a32541df-079c-420d-9395-9d59354f7225)
@@ -88,7 +88,7 @@ Ausführliche Informationen und vollständige Empfehlungen finden Sie unter [Ein
 ## <a name="2-train-your-users"></a>2: Schulen Der Benutzer
 <a name="train"> </a>
 
-Das Handbuch zur [Cybersicherheitskampagne](https://go.microsoft.com/fwlink/p/?linkid=2015598) der "University University" bietet hervorragende Anleitungen zum Aufbau einer starken Kultur des Sicherheitsbewusstseins in Ihrer Organisation, einschließlich der Schulung von Benutzern zur Identifizierung von Phishingangriffen.
+Das Handbuch zur Cybersicherheitskampagne der "University [OfEnding](https://go.microsoft.com/fwlink/p/?linkid=2015598) School" bietet hervorragende Anleitungen zum Einrichten einer starken Kultur des Sicherheitsbewusstseins in Ihrer Organisation, einschließlich der Schulung von Benutzern zur Identifizierung von Phishingangriffen.
 
 Zusätzlich zu dieser Anleitung empfiehlt Microsoft Ihren Benutzern, die in diesem Artikel beschriebenen Aktionen zu ergreifen: Schützen Ihres Kontos und Ihrer Geräte [vor Hackern und Schadsoftware.](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6) Diese setzen sich wie folgt zusammen:
 
@@ -115,7 +115,7 @@ Die Administratorkonten, die Sie zum Verwalten Ihrer Microsoft 365-Umgebung verw
 
 - Melden Sie sich nach Abschluss der Administratoraufgaben unbedingt von der Browsersitzung ab.
 
-## <a name="4-raise-the-level-of-protection-against-malware-in-mail"></a>4: Erhöhen des Schutzniveaus vor Schadsoftware in E-Mails
+## <a name="4-raise-the-level-of-protection-against-malware-in-mail"></a>4: Erhöhen des Schutzes vor Schadsoftware in E-Mails
 <a name="malware"> </a>
 
 Ihre Microsoft 365-Umgebung bietet Schutz vor Schadsoftware. Sie können diesen Schutz jedoch erhöhen, indem Sie Anlagen mit Dateitypen blockieren, die häufig für Schadsoftware verwendet werden. Um den Schutz vor Schadsoftware in E-Mails zu ergänzen, sehen Sie sich ein [kurzes](https://support.microsoft.com/office/02b5783a-eea0-42e8-8856-62440718c3f0)Schulungsvideo an, oder führen Sie die folgenden Schritte aus:
@@ -143,7 +143,7 @@ Sie können vor Ransomware schützen, indem Sie eine oder mehrere Nachrichtenflu
 
 - Warnen Sie Benutzer vor dem Öffnen von Office-Dateianlagen, die Makros enthalten. Ransomware kann in Makros ausgeblendet werden, daher warnen wir Benutzer davor, diese Dateien von Personen zu öffnen, die sie nicht kennen.
 
-- Blockieren sie Dateitypen, die Ransomware oder anderen schädlichen Code enthalten können. Wir beginnen mit einer allgemeinen Liste von ausführbaren Dateien (in der folgenden Tabelle aufgeführt). Wenn Ihre Organisation einen dieser ausführbaren Typen verwendet und Sie erwarten, dass diese in E-Mails gesendet werden, fügen Sie diese der vorherigen Regel hinzu (warnen Sie die Benutzer).
+- Blockieren sie Dateitypen, die Ransomware oder anderen schädlichen Code enthalten können. Wir beginnen mit einer allgemeinen Liste von ausführbaren Dateien (in der folgenden Tabelle aufgeführt). Wenn Ihre Organisation einen dieser ausführbaren Typen verwendet und Sie davon aus gehen, dass diese in E-Mails gesendet werden, fügen Sie diese der vorherigen Regel hinzu (warnen Sie die Benutzer).
 
 Um eine E-Mail-Transportregel zu erstellen, zeigen Sie ein [kurzes](https://support.microsoft.com/office/a9ecca03-42a6-4867-b9fd-38e3f6bb06ad)Schulungsvideo an, oder führen Sie die folgenden Schritte aus:
 
@@ -159,7 +159,7 @@ Um eine E-Mail-Transportregel zu erstellen, zeigen Sie ein [kurzes](https://supp
 
 6. Klicken Sie auf **Speichern**.
     
-| Einstellung | Warnen von Benutzern vor dem Öffnen von Anlagen von Office-Dateien | Blockieren von Dateitypen, die Ransomware oder anderen schädlichen Code enthalten könnten |
+| Setting | Warnen von Benutzern vor dem Öffnen von Anlagen von Office-Dateien | Blockieren von Dateitypen, die Ransomware oder anderen schädlichen Code enthalten könnten |
 |:-----|:-----|:-----|
 |Name  <br/> |Anti-Ransomware-Regel: Benutzer warnen  <br/> |Anti-Ransomware-Regel: Blockieren von Dateitypen  <br/> |
 |Wenden Sie diese Regel an, wenn . . .  <br/> |Eine Anlage . . . Dateierweiterung entspricht . . .  <br/> |Eine Anlage . . . Dateierweiterung entspricht . . .  <br/> |
@@ -195,11 +195,11 @@ So erstellen Sie eine E-Mail-Transportregel:
 
 6. Klicken Sie auf **Speichern**.
 
-|Einstellung|Ablehnen automatischer Weiterleitung von E-Mails an externe Domänen|
+|Setting|Ablehnen automatischer Weiterleitung von E-Mails an externe Domänen|
 |---|---|
 |Name|Verhindern der automatischen Weiterleitung von E-Mails an externe Domänen|
 |Wenden Sie diese Regel an, wenn ...|Der Absender . . . ist extern/intern . . . Innerhalb der Organisation|
-|Bedingung hinzufügen|Der Empfänger . . . extern/intern ist. . . Außerhalb der Organisation|
+|Bedingung hinzufügen|Der Empfänger . . . ist extern/intern . . . Außerhalb der Organisation|
 |Bedingung hinzufügen|Die Nachrichteneigenschaften . . . den Nachrichtentyp enthalten. . . Automatische Weiterleitung|
 |Gehen Sie wie folgt vor...|Nachricht blockieren . . . die Nachricht ablehnen und eine Erklärung enthalten.|
 |Bereitstellen von Nachrichtentext|Die automatische Weiterleitung von E-Mails außerhalb dieser Organisation wird aus Sicherheitsgründen verhindert.|
@@ -238,7 +238,7 @@ Weitere Informationen finden Sie unter Senden, Anzeigen und Antworten auf versch
 ## <a name="8-protect-your-email-from-phishing-attacks"></a>8. Schützen Ihrer E-Mails vor Phishingangriffen
 <a name="phishing"> </a>
 
-Wenn Sie eine oder mehrere benutzerdefinierte Domänen für Ihre Microsoft 365-Umgebung konfiguriert haben, können Sie den gezielten Antiphishingschutz konfigurieren. Der Antiphishingschutz, ein Bestandteil von Microsoft Defender für Office 365, kann Ihre Organisation vor böswilligen Phishingangriffen auf Identitätswechsel und anderen Phishingangriffen schützen. Wenn Sie keine benutzerdefinierte Domäne konfiguriert haben, müssen Sie dies nicht tun.
+Wenn Sie eine oder mehrere benutzerdefinierte Domänen für Ihre Microsoft 365-Umgebung konfiguriert haben, können Sie den gezielten Antiphishingschutz konfigurieren. Der Antiphishingschutz, ein Bestandteil von Microsoft Defender für Office 365, kann Ihre Organisation vor phishingbasierten Phishingangriffen auf Identitätswechsel und anderen Phishingangriffen schützen. Wenn Sie keine benutzerdefinierte Domäne konfiguriert haben, müssen Sie dies nicht tun.
 
 Es wird empfohlen, mit diesem Schutz zu beginnen, indem Sie eine Richtlinie zum Schutz Ihrer wichtigsten Benutzer und Ihrer benutzerdefinierten Domäne erstellen.
 
@@ -256,14 +256,14 @@ Um eine Antiphishingrichtlinie in Defender für Office 365 zu erstellen, sehen S
 
 5. Geben Sie den Namen, die Beschreibung und die Einstellungen für Ihre Richtlinie wie im folgenden Diagramm empfohlen an. Weitere Informationen finden Sie unter "Informationen zur [Antiphishingrichtlinie in Microsoft Defender für Office 365".](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)
 
-6. Nachdem Sie Ihre Einstellungen überprüft haben, wählen **Sie** diese Richtlinie erstellen oder **speichern** aus.
+6. Nachdem Sie Ihre Einstellungen überprüft haben, wählen **Sie** diese Richtlinie erstellen oder **speichern**(entsprechend).
 
 |Einstellung oder Option|Empfohlene Einstellung|
 |---|---|
 |Name|Domänen- und wertvollste Kampagnenmitarbeiter|
 |Beschreibung|Stellen Sie sicher, dass die wichtigsten Mitarbeiter und unsere Domäne nicht imitiert werden.|
 |Zu schützende Benutzer hinzufügen|Select **+ Add a condition, The recipient is**. Geben Sie Benutzernamen ein, oder geben Sie die E-Mail-Adresse des Kandidaten, Kampagnenmanagers und anderer wichtiger Mitarbeiter ein. Sie können bis zu 20 interne und externe Adressen hinzufügen, die Sie vor Identitätswechsel schützen möchten.|
-|Zu schützende Domänen hinzufügen|Select **+ Add a condition, The recipient domain is**. Geben Sie die benutzerdefinierte Domäne ein, die Ihrem Microsoft 365-Abonnement zugeordnet ist, sofern Sie eine definiert haben. Sie können mehrere Domänen eingeben.|
+|Zu schützende Domänen hinzufügen|Select **+ Add a condition, The recipient domain is**. Geben Sie die benutzerdefinierte Domäne ein, die Ihrem Microsoft 365-Abonnement zugeordnet ist, wenn Sie eine definiert haben. Sie können mehrere Domänen eingeben.|
 |Aktionen auswählen|Wenn E-Mails von einem imitierten Benutzer gesendet werden: Wählen Sie "Nachricht an eine andere E-Mail-Adresse umleiten" **aus,** und geben Sie dann die E-Mail-Adresse des Sicherheitsadministrators ein. Beispiel: securityadmin@contoso.com. <br/> Wenn E-Mails von einer imitierten Domäne gesendet werden: Wählen Sie **"Nachricht isolieren" aus.**|
 |Mailbox Intelligence|Standardmäßig wird die Mailbox Intelligence ausgewählt, wenn Sie eine neue Anti-Phishing-Richtlinie erstellen. Lassen Sie diese Einstellung auf **Ein**, um optimale Ergebnisse zu erzielen.|
 |Vertrauenswürdige Absender und Domänen hinzufügen|Definieren Sie in diesem Beispiel keine Außerkraftsetzungen.|
@@ -291,7 +291,7 @@ Um eine Richtlinie für sichere Anlagen zu erstellen, zeigen Sie ein [kurzes](ht
 
 6. Wenden Sie die Einstellungen in der folgenden Tabelle an.
 
-7. Nachdem Sie Ihre Einstellungen überprüft haben, wählen **Sie** diese Richtlinie erstellen oder **speichern** aus.
+7. Nachdem Sie Ihre Einstellungen überprüft haben, wählen **Sie** diese Richtlinie erstellen oder **speichern**(entsprechend).
 
 |Einstellung oder Option|Empfohlene Einstellung|
 |---|---|
@@ -329,7 +329,7 @@ So ändern Sie die Standardrichtlinie:
 
 2. Geben Sie unter Einstellungen, die für Inhalte **in Office 365** gelten, eine URL ein, die blockiert werden soll, z. B. example.com _,_ und wählen Sie **+** aus.
 
-3. Wählen **Sie** unter Einstellungen, die für Inhalte außer E-Mail gelten, **Office 365-Anwendungen** **aus,** und verfolgen Sie nicht, wenn Benutzer auf sichere Links klicken, und lassen Sie Benutzer nicht durch sichere Links zu der ursprünglichen **URL klicken.**
+3. Wählen **Sie** unter Einstellungen, die für Inhalte außer E-Mail gelten, **Office 365-Anwendungen** **aus,** und verfolgen Sie nicht, wenn Benutzer auf sichere Links klicken, und lassen Sie benutzer nicht durch sichere Links zu der ursprünglichen **URL klicken.**
 
 4. Klicken Sie auf **Speichern**.
 

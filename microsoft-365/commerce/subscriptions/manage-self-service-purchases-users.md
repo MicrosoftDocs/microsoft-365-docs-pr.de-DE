@@ -14,97 +14,97 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Benutzer können erfahren, wie Sie Ihre Self-Service-Käufe verwalten.
-ms.openlocfilehash: a94a474bf2a5c506f4e6ed02659cd10d371fb779
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+description: Benutzer können erfahren, wie sie ihre Self-Service-Käufe verwalten.
+ms.openlocfilehash: 5f541706c2b4787e5add53b34a90c0f2113efb11
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367155"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114681"
 ---
 # <a name="manage-self-service-purchases-users"></a>Self-Service-Einkäufe (Benutzer) verwalten
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
-Als Benutzer können Sie Abonnements für bestimmte Produkte kaufen und Personen in Ihrem Teamlizenzen für diese Abonnements zuweisen. Sie sind für das bezahlen von Self-Service-Käufen verantwortlich, die Sie tätigen. Sie können Ihre Abonnements im Microsoft 365 Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin.Microsoft.com</a>verwalten.
+Als Benutzer können Sie Abonnements für bestimmte Produkte kaufen und Benutzern in Ihrem Team Lizenzen für diese Abonnements zuweisen. Sie sind für die Bezahlung von Self-Service-Käufen, die Sie tätigen, verantwortlich. Sie können Ihre Abonnements im Microsoft 365 Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
 
-Ihr Administrator hat eine schreibgeschützte Ansicht für alle Abonnements, die Sie kaufen. Sie können das Produkt, den Käufer Namen, die erworbenen Abonnements, das Ablaufdatum, den Kaufpreis und die zugewiesenen Benutzer für jedes Abonnement sehen, das Sie kaufen.
+Ihr Administrator hat einen schreibgeschützten Einblick in alle Abonnements, die Sie kaufen. Sie können das Produkt, den Käufernamen, erworbene Abonnements, das Ablaufdatum, den Verkaufspreis und die zugewiesenen Benutzer für jedes Abonnement anzeigen, das Sie kaufen.
 
 ## <a name="view-your-subscriptions"></a>Anzeigen Ihrer Abonnements
 
-Sie können eine Liste aller erworbenen Self-Service-Abonnements anzeigen.
+Sie können eine Liste aller gekauften Self-Service-Abonnements anzeigen.
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-2. Wählen Sie auf der Registerkarte **Produkte** das Filtersymbol aus, und wählen Sie dann **Self-Service** aus.
+2. Wählen Sie **auf der** Registerkarte "Produkte" das Filtersymbol und dann **"Self-Service" aus.**
 
-## <a name="how-to-buy-more-or-reduce-licenses"></a>Mehr kaufen oder reduzieren von Lizenzen
+## <a name="how-to-buy-more-or-reduce-licenses"></a>So erwerben Sie mehr oder reduzieren Lizenzen
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-2. Wählen Sie auf der Registerkarte **Produkte** das Abonnement aus, für das Sie mehr kaufen oder Lizenzen reduzieren möchten.
-3. Wählen Sie **Lizenzen kaufen** oder **Lizenzen entfernen** aus.
-4. Geben Sie im rechten Bereich im Feld **Gesamt Lizenzen** die Gesamtzahl der Lizenzen ein, die Sie für dieses Abonnement wünschen, und wählen Sie dann **Speichern** aus. Wenn Sie beispielsweise 100 Lizenzen haben und 5 weitere hinzufügen möchten, geben Sie 105.
+2. Wählen Sie **auf der** Registerkarte "Produkte" das Abonnement aus, für das Sie weitere Lizenzen erwerben oder lizenzen reduzieren möchten.
+3. Wählen **Sie "Lizenzen kaufen"** oder **"Lizenzen entfernen" aus.**
+4. Geben Sie im rechten Bereich im **Feld** Lizenzen insgesamt die Gesamtzahl der Lizenzen ein, die Sie für dieses Abonnement benötigen, und wählen Sie dann **"Speichern" aus.** Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen möchten, geben Sie 105 ein.
 
-## <a name="assign-or-unassign-licenses"></a>Zuweisen oder Aufheben der Zuweisung von Lizenzen
+## <a name="assign-or-unassign-licenses"></a>Zuweisen oder Zuweisen von Lizenzen
 
 ### <a name="to-assign-licenses"></a>So weisen Sie Lizenzen zu
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> .
+1. Wechseln Sie im Admin Center zur Seite "Abrechnungslizenzen".  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>
 2. Wählen Sie das Abonnement aus, für das Sie Lizenzen zuweisen möchten.
-3. Wählen Sie **Lizenzen zuweisen** aus.
+3. Wählen Sie **"Lizenzen zuweisen"** aus.
 4. Beginnen Sie im Bereich **Lizenzen an Benutzer zuweisen** mit der Eingabe eines Namens, und wählen Sie ihn dann aus den Ergebnissen aus, um ihn der Liste hinzuzufügen. Sie können bis zu 20 Benutzer gleichzeitig hinzufügen.
     > [!NOTE]
-    > Sie können nur Personen in Ihrer Organisation Lizenzen zuweisen.
-5. Wählen Sie **assign** und dann **Close** aus.
+    > Sie können Nur Personen in Ihrer Organisation Lizenzen zuweisen.
+5. Wählen Sie **"Zuweisen"** und dann **"Schließen" aus.**
 
-### <a name="to-unassign-licenses"></a>So heben Sie die Zuweisung von Lizenzen auf
+### <a name="to-unassign-licenses"></a>So entsennen Sie Lizenzen
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> .
-2. Wählen Sie das Produkt aus, für das Sie die Zuweisung von Lizenzen aufheben möchten.
-3. Wählen Sie die Benutzer aus, denen Sie die Zuweisung von Lizenzen entgegensetzen möchten.
-4. Wählen Sie **Lizenzen** aufheben aus.
-5. Wählen Sie im Feld **Zuweisungs Lizenzen** aufheben **aus.**
+1. Wechseln Sie im Admin Center zur Seite "Abrechnungslizenzen".  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>
+2. Wählen Sie das Produkt aus, für das Sie lizenzen zuweisen möchten.
+3. Wählen Sie die Benutzer aus, von den Sie lizenzen zuweisen möchten.
+4. Choose **Unassign licenses**.
+5. Wählen Sie **im Feld "Lizenzen nicht zuweisen"** die Option **"Zuweisen" aus.**
 
 ## <a name="cancel-a-subscription"></a>Kündigen eines Abonnements
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 2. Suchen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie kündigen möchten. Wählen Sie **Weitere Aktionen** (drei Punkte) und dann **Abonnement kündigen** aus.
-3. Wählen Sie im Bereich **Abonnement kündigen** einen Grund aus, warum Sie kündigen. Geben Sie optional Ihr Feedback.
+3. Wählen Sie im Bereich **Abonnement kündigen** einen Grund aus, warum Sie kündigen. Geben Sie optional Ihr Feedback ein.
 4. Klicken Sie auf **Speichern**.
 
-## <a name="manage-your-payment-details"></a>Zahlungsdetails verwalten
+## <a name="manage-your-payment-details"></a>Verwalten Ihrer Zahlungsdetails
 
-1. Wechseln Sie im Admin Center zur Seite **Billing** Bills  >  **& Payments**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing Profiles</a> .
+1. Wechseln Sie im Admin Center zur Seite  >  **abrechnungsabrechnungen &**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Abrechnungsprofile.</a>
 2. Wählen Sie in der Liste ein Abrechnungsprofil aus.
-3. Wählen Sie auf der Seite Abrechnungsprofil Details unter **Zahlungsmethode** eine der folgenden Optionen aus:
+3. Wählen Sie auf der Seite mit den Abrechnungsprofildetails **unter** Zahlungsmethode eine der folgenden Optionen aus:
     - Wenn Sie eine vorhandene Zahlungsmethode aktualisieren möchten, wählen Sie **Bearbeiten** aus.
-    - Wenn Sie eine neue Zahlungsmethode hinzufügen möchten, wählen Sie **ersetzen** aus.
-4. Geben Sie im rechten Bereich die Kartendetails ein, und wählen Sie dann **Speichern** aus.
+    - Wenn Sie eine neue Zahlungsmethode hinzufügen möchten, wählen Sie **"Ersetzen" aus.**
+4. Geben Sie im rechten Bereich die Kartendetails ein, und wählen Sie **"Speichern" aus.**
 
 ### <a name="update-an-existing-payment-method"></a>Aktualisieren einer vorhandenen Zahlungsmethode
 
-1. Wechseln Sie im Admin Center zur Seite **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & Zahlungen</a> .
-2. Wählen Sie auf der Registerkarte **Zahlungsmethoden** eine vorhandene Zahlungsmethode aus der Liste aus.
-3. Klicken Sie im rechten Bereich auf **Bearbeiten**. Sie können den Sicherheitscode, das Ablaufdatum, den Namen auf der Karte und die Adresse ändern.
-4. Nehmen Sie alle erforderlichen Änderungen vor, und wählen Sie dann **Speichern** aus.
+1. Wechseln Sie im Admin Center zur **Seite**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">"Abrechnungsabrechnungen & Zahlungen".</a>
+2. Wählen Sie **auf der** Registerkarte Zahlungsmethoden eine vorhandene Zahlungsmethode aus der Liste aus.
+3. Wählen Sie im rechten Bereich **"Bearbeiten" aus.** Sie können den Sicherheitscode, das Ablaufdatum, den Namen auf der Karte und die Adresse ändern.
+4. Nehmen Sie alle erforderlichen Änderungen vor, und wählen Sie dann **"Speichern" aus.**
 
-### <a name="add-a-new-payment-method"></a>Neue Zahlungsmethode hinzufügen
+### <a name="add-a-new-payment-method"></a>Hinzufügen einer neuen Zahlungsmethode
 
-1. Wechseln Sie im Admin Center zur Seite **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & Zahlungen</a> .
-2. Wählen Sie auf der Registerkarte **Zahlungsmethoden** die Option **Zahlungsmethode hinzufügen** aus.
-3. Geben Sie im Bereich **Zahlungsmethode hinzufügen** die Informationen für die neue Zahlungsmethode ein, und wählen Sie dann **Hinzufügen** aus.
+1. Wechseln Sie im Admin Center zur **Seite**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">"Abrechnungsabrechnungen & Zahlungen".</a>
+2. Wählen Sie **auf der Registerkarte** Zahlungsmethoden die Option Zahlungsmethode hinzufügen **aus.**
+3. Geben Sie **im Bereich Zahlungsmethode hinzufügen** die Informationen für die neue Zahlungsmethode ein, und wählen Sie dann **"Hinzufügen" aus.**
 
 ## <a name="view-your-invoices"></a>Anzeigen Ihrer Rechnungen
 
-1. Wechseln Sie im Admin Center zur Seite **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & Zahlungen</a> .
-2. Wählen Sie auf der Registerkarte **Rechnungen** die Rechnung aus, die Sie anzeigen möchten. Wenn keine Rechnungen sichtbar sind, ändern Sie die **letzten 3 Monate** in die **letzten 6 Monate** , oder **Geben Sie einen Datumsbereich** an.
+1. Wechseln Sie im Admin Center zur **Seite**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">"Abrechnungen & Zahlungen".</a>
+2. Wählen Sie **auf der** Registerkarte "Rechnungen" die Rechnung aus, die Sie anzeigen möchten. Wenn keine Rechnungen angezeigt werden, ändern Sie die letzten **3** Monate in die letzten **6** Monate, oder geben **Sie einen Datumsbereich an.**
 
-## <a name="need-help-contact-us"></a>Benötigen Sie Hilfe? Kontaktieren Sie uns.
+## <a name="need-help-contact-us"></a>Benötigen Sie Hilfe? Wenden Sie sich an uns.
 
-Häufige Fragen zum Self-Service-Einkauf finden Sie unter [Self-Service Purchases FAQ](self-service-purchase-faq.md).
+Häufig gestellte Fragen zu Self-Service-Käufen finden Sie unter Häufig gestellte Fragen zu [Self-Service-Käufen.](self-service-purchase-faq.md)
 
-Wenn Sie Fragen haben oder Hilfe bei Self-Service-Käufen benötigen, [wenden Sie sich an den Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+Wenn Sie Fragen haben oder Hilfe bei Self-Service-Käufen benötigen, wenden [Sie sich an den Support.](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)

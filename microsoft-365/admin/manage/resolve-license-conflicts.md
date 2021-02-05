@@ -20,24 +20,24 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
-description: Hier erfahren Sie, wie Sie Lizenz Konflikte mit Ihrem Microsoft 365 for Business-Abonnement beheben.
-ms.openlocfilehash: a7f0b5cbca98a0550954e322c6fbe51d93627ee4
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Erfahren Sie, wie Sie Lizenzkonflikte mit Ihrem Microsoft 365 Business-Abonnement lösen.
+ms.openlocfilehash: 284a6b169c02314dd2bbd0e13c10c081cb50f58d
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645083"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114453"
 ---
 # <a name="resolve-license-conflicts"></a>Lösen von Lizenzkonflikten
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
-Es wird empfohlen, dass Sie die Lizenzen erwerben, die Sie für Ihr Abonnement benötigen, bevor Sie neue Benutzer erstellen. Auf diese Weise kann neuen Benutzern beim Erstellen der Benutzerkonten eine Lizenz zugewiesen werden. Wenn Sie Benutzern bereits alle Lizenzen zugewiesen haben, einige der Lizenzen jedoch abgelaufen sind, oder wenn Sie versuchen, eine Lizenz zu entfernen, die bereits einem Benutzer zugewiesen ist, treten Lizenzkonflikte auf. Weitere Informationen finden Sie unter [Entfernen von Lizenzen aus Ihrem Abonnement](../../commerce/licenses/remove-licenses-from-subscription.md).
+Es wird empfohlen, dass Sie die Lizenzen erwerben, die Sie für Ihr Abonnement benötigen, bevor Sie neue Benutzer erstellen. Auf diese Weise kann neuen Benutzern beim Erstellen der Benutzerkonten eine Lizenz zugewiesen werden. Wenn Sie Benutzern bereits alle Lizenzen zugewiesen haben, einige der Lizenzen jedoch abgelaufen sind, oder wenn Sie versuchen, eine Lizenz zu entfernen, die bereits einem Benutzer zugewiesen ist, treten Lizenzkonflikte auf. Weitere Informationen finden Sie unter ["Entfernen von Lizenzen aus Ihrem Abonnement".](../../commerce/licenses/remove-licenses-from-subscription.md)
   
 ## <a name="how-do-i-view-license-conflicts"></a>Wie kann ich Lizenzkonflikte anzeigen?
 
@@ -59,14 +59,14 @@ Es wird empfohlen, dass Sie die Lizenzen erwerben, die Sie für Ihr Abonnement b
 
 ::: moniker-end
 
-2. Prüfen Sie die Spalte **Status** auf Informationen zum Konflikt. Wenn ein Konflikt vorliegt, wird eine Warnmeldung angezeigt, die besagt, dass ein oder mehrere Benutzer eine gültige Lizenz benötigen.
+2. Prüfen Sie die Spalte **Status** auf Informationen zum Konflikt. Wenn ein Konflikt vor besteht, wird eine Warnmeldung angezeigt, dass mindestens ein Benutzer eine gültige Lizenz benötigt.
 
     > [!NOTE]
     > Die Spalte **Status** wird nicht angezeigt, wenn keine Konflikte vorhanden sind.
 
 ## <a name="how-do-i-resolve-license-conflicts"></a>Wie kann ich Lizenzkonflikte lösen?
 
-Sie können Lizenz Konflikte lösen, indem Sie entweder [mehr Lizenzen kaufen](../../commerce/licenses/buy-licenses.md) oder [Lizenzen von Benutzern entfernen, die diese nicht mehr benötigen](remove-licenses-from-users.md). Optional können Sie auch [ein Benutzerkonto löschen, um eine Lizenz freizugeben](../add-users/delete-a-user.md).
+Sie können Lizenzkonflikte lösen, indem Sie entweder [weitere](../../commerce/licenses/buy-licenses.md) Lizenzen erwerben oder Lizenzen von Benutzern entfernen, die [diese nicht mehr benötigen.](remove-licenses-from-users.md) Optional können Sie auch [ein Benutzerkonto löschen, um eine Lizenz freizugeben](../add-users/delete-a-user.md).
   
 ## <a name="related-articles"></a>Verwandte Artikel
 
