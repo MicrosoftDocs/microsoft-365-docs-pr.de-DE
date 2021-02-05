@@ -1,5 +1,5 @@
 ---
-title: Ändern des Namens des Themen Centers in Microsoft 365
+title: Ändern des Namens des Themencenters in Microsoft Topics
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,44 +9,43 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: Hier erfahren Sie, wie Sie den Namen des Themen Centers in Microsoft 365 ändern.
-ms.openlocfilehash: 63ce6b75d26ad600d1241a70fcbd616ecc98a4d2
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+description: Erfahren Sie, wie Sie den Namen des Themencenters in Microsoft -Themen ändern.
+ms.openlocfilehash: 91f0693ba24e412812e1b8db19cfcf0febd2ec66
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668144"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107723"
 ---
-# <a name="change-the-name-of-the-topic-center-in-microsoft-365"></a><span data-ttu-id="13882-103">Ändern des Namens des Themen Centers in Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="13882-103">Change the name of the topic center in Microsoft 365</span></span>
+# <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a><span data-ttu-id="cda4e-103">Ändern des Namens des Themencenters in Microsoft Topics</span><span class="sxs-lookup"><span data-stu-id="cda4e-103">Change the name of the topic center in Microsoft Viva Topics</span></span>
 
-<span data-ttu-id="13882-104">Sie können den Namen Ihres Themen Centers im [Microsoft 365 Admin Center](https://admin.microsoft.com)ändern.</span><span class="sxs-lookup"><span data-stu-id="13882-104">You can change the name of your topic center in the [Microsoft 365 admin center](https://admin.microsoft.com).</span></span> <span data-ttu-id="13882-105">Sie müssen ein globaler Administrator oder SharePoint-Administrator sein, um diese Aufgaben ausführen zu können.</span><span class="sxs-lookup"><span data-stu-id="13882-105">You must be a global administrator or SharePoint administrator to perform these tasks.</span></span>
+<span data-ttu-id="cda4e-104">Sie können den Namen Ihres Themencenters im [Microsoft 365 Admin Center ändern.](https://admin.microsoft.com)</span><span class="sxs-lookup"><span data-stu-id="cda4e-104">You can change the name of your topic center in the [Microsoft 365 admin center](https://admin.microsoft.com).</span></span> <span data-ttu-id="cda4e-105">Sie müssen ein globaler Administrator oder ein SharePoint-Administrator sein, um diese Aufgaben ausführen zu können.</span><span class="sxs-lookup"><span data-stu-id="cda4e-105">You must be a global administrator or SharePoint administrator to perform these tasks.</span></span>
 
-## <a name="to-access-topics-management-settings"></a><span data-ttu-id="13882-106">So greifen Sie auf Themen Verwaltungseinstellungen zu:</span><span class="sxs-lookup"><span data-stu-id="13882-106">To access topics management settings:</span></span>
+## <a name="to-access-topics-management-settings"></a><span data-ttu-id="cda4e-106">So greifen Sie auf Die Themenverwaltungseinstellungen zu:</span><span class="sxs-lookup"><span data-stu-id="cda4e-106">To access topics management settings:</span></span>
 
-1. <span data-ttu-id="13882-107">Klicken Sie im Microsoft 365 Admin Center auf **Einstellungen** und dann auf **org-Einstellungen**.</span><span class="sxs-lookup"><span data-stu-id="13882-107">In the Microsoft 365 admin center, click **Settings**, then **Org settings**.</span></span>
-2. <span data-ttu-id="13882-108">Klicken Sie auf der Registerkarte **Dienste** auf **Wissensnetzwerk**.</span><span class="sxs-lookup"><span data-stu-id="13882-108">On the **Services** tab, click **Knowledge network**.</span></span>
+1. <span data-ttu-id="cda4e-107">Klicken Sie im Microsoft 365 Admin Center auf **"Einstellungen"** und dann auf **"Organisationseinstellungen".**</span><span class="sxs-lookup"><span data-stu-id="cda4e-107">In the Microsoft 365 admin center, click **Settings**, then **Org settings**.</span></span>
+2. <span data-ttu-id="cda4e-108">Klicken Sie **auf der** Registerkarte "Dienste" auf **"Themenerfahrungen".**</span><span class="sxs-lookup"><span data-stu-id="cda4e-108">On the **Services** tab, click **Topic experiences**.</span></span>
 
-    ![Verbinden von Personen mit wissen](../media/admin-org-knowledge-options-completed.png) 
+    ![Verbinden von Personen mit Wissen](../media/admin-org-knowledge-options-completed.png) 
 
-3. <span data-ttu-id="13882-110">Wählen Sie die Registerkarte **Themen Center** aus. In den folgenden Abschnitten finden Sie Informationen zu den einzelnen Einstellungen.</span><span class="sxs-lookup"><span data-stu-id="13882-110">Select the **Topic center** tab. See the following sections for information about each setting.</span></span>
+3. <span data-ttu-id="cda4e-110">Wählen Sie die **Registerkarte "Themencenter"** aus. Informationen zu den einzelnen Einstellungen finden Sie in den folgenden Abschnitten.</span><span class="sxs-lookup"><span data-stu-id="cda4e-110">Select the **Topic center** tab. See the following sections for information about each setting.</span></span>
 
-    ![Wissen-Netzwerk-Einstellungen](../media/knowledge-network-settings-topic-center.png) 
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
 
-##  <a name="update-your-topic-center-name"></a><span data-ttu-id="13882-112">Aktualisieren des Namens des Themen Centers</span><span class="sxs-lookup"><span data-stu-id="13882-112">Update your topic center name</span></span>
+##  <a name="update-your-topic-center-name"></a><span data-ttu-id="cda4e-112">Aktualisieren des Themencenternamens</span><span class="sxs-lookup"><span data-stu-id="cda4e-112">Update your topic center name</span></span>
 
-<span data-ttu-id="13882-113">So ändern Sie den Namen des Themen Centers</span><span class="sxs-lookup"><span data-stu-id="13882-113">To change the name of the topic center</span></span>
+<span data-ttu-id="cda4e-113">So ändern Sie den Namen des Themencenters</span><span class="sxs-lookup"><span data-stu-id="cda4e-113">To change the name of the topic center</span></span>
 
-1. <span data-ttu-id="13882-114">Wählen Sie auf der Registerkarte **Themen Center** unter **Name des Themas**" **Bearbeiten**" aus.</span><span class="sxs-lookup"><span data-stu-id="13882-114">On the **Topic center** tab, under **Topic center name**, select **Edit**.</span></span>
-2. <span data-ttu-id="13882-115">Geben Sie auf der Seite **Themen Center Namen bearbeiten** im Feld **Themen Center Name** den neuen Namen für Ihr Themen Center ein.</span><span class="sxs-lookup"><span data-stu-id="13882-115">On the **Edit topic center name** page, in the **Topic center name** box, type the new name for your topic center.</span></span>
-3. <span data-ttu-id="13882-116">Wählen Sie **Speichern** aus.</span><span class="sxs-lookup"><span data-stu-id="13882-116">Select **Save**</span></span>
+1. <span data-ttu-id="cda4e-114">Wählen Sie **auf der Registerkarte "Themencenter"** unter dem **Namen** des Themencenters **"Bearbeiten" aus.**</span><span class="sxs-lookup"><span data-stu-id="cda4e-114">On the **Topic center** tab, under **Topic center name**, select **Edit**.</span></span>
+2. <span data-ttu-id="cda4e-115">Geben Sie **auf der Seite**  "Name des Themencenters bearbeiten" im Feld "Themencentername" den neuen Namen für Ihr Themencenter ein.</span><span class="sxs-lookup"><span data-stu-id="cda4e-115">On the **Edit topic center name** page, in the **Topic center name** box, type the new name for your topic center.</span></span>
+3. <span data-ttu-id="cda4e-116">Wählen Sie **Speichern** aus.</span><span class="sxs-lookup"><span data-stu-id="cda4e-116">Select **Save**</span></span>
 
-    ![Bearbeiten des Themen Center namens](../media/manage-topic-center-name.png)  
+    ![Bearbeiten des Themencenternamens](../media/manage-topic-center-name.png)  
 
-## <a name="see-also"></a><span data-ttu-id="13882-118">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="13882-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cda4e-118">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="cda4e-118">See also</span></span>
 
-[<span data-ttu-id="13882-119">Verwalten der Themen Ermittlung in Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="13882-119">Manage topic discovery in Microsoft 365</span></span>](topic-experiences-discovery.md)
+[<span data-ttu-id="cda4e-119">Verwalten der Themenermittlung in Microsoft -Themen</span><span class="sxs-lookup"><span data-stu-id="cda4e-119">Manage topic discovery in Microsoft Viva Topics</span></span>](topic-experiences-discovery.md)
 
-[<span data-ttu-id="13882-120">Verwalten der Themen Sichtbarkeit in Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="13882-120">Manage topic visibility in Microsoft 365</span></span>](topic-experiences-knowledge-rules.md)
+[<span data-ttu-id="cda4e-120">Verwalten der Sichtbarkeit von Themen in Microsoft -Themen</span><span class="sxs-lookup"><span data-stu-id="cda4e-120">Manage topic visibility in Microsoft Viva Topics</span></span>](topic-experiences-knowledge-rules.md)
 
-[<span data-ttu-id="13882-121">Verwalten von Themen Berechtigungen in Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="13882-121">Manage topic permissions in Microsoft 365</span></span>](topic-experiences-user-permissions.md)
+[<span data-ttu-id="cda4e-121">Verwalten von Themenberechtigungen in Microsoft -Themen</span><span class="sxs-lookup"><span data-stu-id="cda4e-121">Manage topic permissions in Microsoft Viva Topics</span></span>](topic-experiences-user-permissions.md)
