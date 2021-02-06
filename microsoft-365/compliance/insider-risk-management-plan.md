@@ -1,7 +1,7 @@
 ---
 title: Planen des Insider-Risikomanagements
-description: Hier erfahren Sie, wie Sie die Verwendung von Richtlinien für Insider Risk Management in Ihrer Organisation planen.
-keywords: Microsoft 365, Insider Risiko, Risikomanagement, Compliance
+description: Erfahren Sie, wie Sie die Verwendung von Richtlinien für das Insiderrisikomanagement in Ihrer Organisation planen.
+keywords: Microsoft 365, Insider-Risiko, Risikomanagement, Compliance
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -12,83 +12,83 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e8bf55cf3c27170c471dd45a68fd1ec2fa4a615b
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: f2581c4756a57926ab4a4539be8c383b0479e567
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357444"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126624"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planen des Insider-Risikomanagements
 
-Bevor Sie mit dem [Insider Risk Management](insider-risk-management.md) in Ihrer Organisation beginnen, müssen Sie wichtige Planungsaktivitäten und-Überlegungen durch Ihre IT-und Compliance-Management Teams überprüfen. Durch ein gründliches Verständnis und die Planung der Bereitstellung in den folgenden Bereichen können Sie sicherstellen, dass die Implementierung und Verwendung von Insider Risikomanagement-Features reibungslos verläuft und mit den bewährten Methoden für die Lösung abgestimmt wird.
+Bevor Sie mit dem [Insiderrisikomanagement](insider-risk-management.md) in Ihrer Organisation beginnen, gibt es wichtige Planungsaktivitäten und Überlegungen, die von Ihren Teams für Informationstechnologie und Complianceverwaltung überprüft werden sollten. Sorgfältiges Verständnis und sorgfältige Planung der Bereitstellung in den folgenden Bereichen tragen dazu bei, dass Ihre Implementierung und Verwendung von Features für das Insider-Risikomanagement reibungslos funktioniert und mit den bewährten Methoden für die Lösung abgestimmt ist.
 
-## <a name="work-with-stakeholders-in-your-organization"></a>Arbeiten mit Beteiligten in Ihrer Organisation
+## <a name="work-with-stakeholders-in-your-organization"></a>Zusammenarbeit mit Beteiligten in Ihrer Organisation
 
-Identifizieren Sie die entsprechenden Beteiligten in Ihrer Organisation für die Zusammenarbeit bei der Durchführung von Aktionen in Warnungen und Fällen für Insider Risiken. Einige empfohlene beteiligte, die in die anfängliche Planung einbezogen werden sollten, und der End-to-End- [Workflow für Insider-Risikomanagement](insider-risk-management.md#workflow) sind Personen aus den folgenden Bereichen Ihrer Organisation:
+Identifizieren Sie die entsprechenden Beteiligten in Ihrer Organisation, um gemeinsam Maßnahmen für Warnungen und Fälle des Insider-Risikomanagements zu ergreifen. Einige empfohlene Beteiligte, die in die anfängliche [](insider-risk-management.md#workflow) Planung und den End-to-End-Workflow für das Insiderrisikomanagement mit einplanen sollten, sind Personen aus den folgenden Bereichen Ihrer Organisation:
 
 - Informationstechnologie
 - Compliance
 - Datenschutz
 - Sicherheit
-- Personalabteilung
+- Personalwesen
 - Rechtliche Hinweise
 
-## <a name="determine-any-regional-compliance-requirements"></a>Bestimmen der regionalen Compliance-Anforderungen
+## <a name="determine-any-regional-compliance-requirements"></a>Ermitteln von regionalen Complianceanforderungen
 
-Unterschiedliche geographische und organisatorische Bereiche haben möglicherweise Compliance-und Datenschutzanforderungen, die sich von anderen Bereichen Ihrer Organisation unterscheiden. Arbeiten Sie mit den Beteiligten in diesen Bereichen zusammen, um sicherzustellen, dass Sie die Compliance-und Datenschutzkontrollen im Insider Risikomanagement verstehen und wie Sie in verschiedenen Bereichen Ihrer Organisation verwendet werden sollten. In einigen Szenarien erfordern Compliance-und Datenschutzanforderungen möglicherweise Richtlinien, mit denen einige Beteiligte anhand von Untersuchungen und Fällen basierend auf dem Fall eines Benutzers oder behördlicher oder Richtlinien mäßiger Anforderungen für den Bereich benannt oder eingeschränkt werden.
+Unterschiedliche geografische und organisatorische Bereiche haben möglicherweise Compliance- und Datenschutzanforderungen, die sich von anderen Bereichen Ihrer Organisation unterscheiden. Arbeiten Sie mit den Beteiligten in diesen Bereichen zusammen, um sicherzustellen, dass sie die Compliance- und Datenschutzkontrollen im Insider-Risikomanagement verstehen und wie sie in verschiedenen Bereichen Ihrer Organisation verwendet werden sollten. In einigen Szenarien erfordern Compliance- und Datenschutzanforderungen möglicherweise Richtlinien, die bestimmte Beteiligte basierend auf dem Fall für einen Benutzer oder behördlichen oder richtlinienbezogenen Anforderungen für diesen Bereich für Untersuchungen und Fälle festlegen oder einschränken.
 
-Wenn Sie Anforderungen an bestimmte Teilnehmer haben, die an Falluntersuchungen beteiligt sind, die Benutzer in bestimmten Regionen, Rollen oder Abteilungen einbeziehen, möchten Sie möglicherweise separate (auch wenn identische) [Richtlinien für das Insider Risikomanagement](insider-risk-management-policies.md) implementieren, die auf die verschiedenen Regionen und Populationen abzielen. Diese Konfiguration erleichtert es den richtigen Beteiligten, Fälle zu selektieren und zu verwalten, die für Ihre Rollen und Regionen relevant sind. Darüber hinaus sollten Sie in der Lage sein, Prozesse und Richtlinien für Regionen zu erstellen, in denen Prüfer und Prüfer dieselbe Sprache wie die Benutzer sprechen, um den Eskalationsprozess für Warnungen und Fälle beim Insider Risikomanagement zu rationalisieren.
+Wenn Sie Anforderungen haben, dass bestimmte Beteiligte an Falluntersuchungen beteiligt sind, an denen Benutzer in bestimmten Regionen, Rollen oder Abteilungen beteiligt sind, sollten Sie separate (auch wenn [identische)](insider-risk-management-policies.md) Richtlinien für das Insiderrisikomanagement für die verschiedenen Regionen und Populationen implementieren. Diese Konfiguration erleichtert den richtigen Beteiligten die Trikotierung und Verwaltung von Fällen, die für ihre Rollen und Regionen relevant sind. Darüber hinaus sollten Sie die Erstellung von Prozessen und Richtlinien für Regionen in Betracht ziehen, in denen Ermittler und Prüfer die gleiche Sprache sprechen wie die Benutzer, um den Eskalationsprozess für Warnungen und Fälle des Insider-Risikomanagements zu optimieren.
 
-## <a name="plan-for-the-review-and-investigation-workflow"></a>Planen des Workflows für Überprüfung und Untersuchung
+## <a name="plan-for-the-review-and-investigation-workflow"></a>Planen des Überprüfungs- und Untersuchungsworkflows
 
-Wählen Sie dedizierte Beteiligte aus, um die Warnungen und Fälle auf einer regulären Kadenz im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)zu überwachen und zu überprüfen. Stellen Sie sicher, dass Sie verstehen, wie Sie verschiedenen Beteiligten die verschiedenen Rollengruppen zuordnen, die im Insider Risikomanagement verfügbar sind.
+Wählen Sie dedizierte Beteiligte aus, um die Warnungen und Fälle regelmäßig im [Microsoft 365 Compliance Center zu überwachen und zu überprüfen.](https://compliance.microsoft.com/) Stellen Sie sicher, dass Sie verstehen, wie Sie den verschiedenen Rollengruppen, die im Insider-Risikomanagement verfügbar sind, unterschiedliche Beteiligte zuweisen.
 
-Abhängig von der Struktur Ihres Compliance Management-Teams haben Sie Optionen, um Benutzern bestimmte Rollengruppen zuzuweisen, um unterschiedliche Gruppen von Funktionen zum Verwalten von Insiderrisiken zu verwalten. Wählen Sie unter diese Rollengruppen Optionen beim Konfigurieren des Insider Risikomanagements:
+Abhängig von der Struktur Ihres Compliance Management-Teams haben Sie Optionen, um Benutzern bestimmte Rollengruppen zuzuweisen, um unterschiedliche Gruppen von Funktionen zum Verwalten von Insiderrisiken zu verwalten. Wählen Sie bei der Konfiguration des Insider-Risikomanagements aus diesen Rollengruppenoptionen:
 
 | **Rollengruppe** | **Rollenberechtigungen** |
 | :---- | :---------------- |
-| **Insider Risiko Management** | Verwenden Sie diese Rollengruppe zum Verwalten des Risikomanagements für Ihr Unternehmen in einer einzigen Gruppe. Wenn Sie alle Benutzerkonten für designierte Administratoren, Analytiker und Prüfer hinzufügen, können Sie Berechtigungen für das Insider-Risikomanagement in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für Insider-Risikomanagement. Diese Konfiguration ist die einfachste Möglichkeit, um schnell mit dem Insider Risiko-Management zu beginnen, und eignet sich gut für Organisationen, die keine separaten Berechtigungen benötigen, die für getrennte Benutzergruppen definiert werden.|
-| **Insider Risk Management-Administrator** | Verwenden Sie diese Rollengruppe, um zunächst das Insider Risikomanagement zu konfigurieren und später Insider Risiko Administratoren in eine definierte Gruppe zu unter trennen.  Benutzer in dieser Rollengruppe können Verwaltungsrichtlinien, globale Einstellungen und Rollengruppenzuweisungen für Insiderrisiken erstellen, lesen, aktualisieren und löschen. |
-| **Insider Risk Management Analysten** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Analysten im Falle eines Insiderrisikos fungieren. Benutzer in dieser Rollengruppe können auf alle Alerts-, Cases-und Notices-Vorlagen für Insider-Risikomanagement zugreifen. Sie könne nicht auf den Inhalts-Explorer für Insider-Risiken zugreifen. |
-| **Insider Risk Management Investigators** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Datenprüfer für Insiderrisiken fungieren. Benutzer in dieser Rollengruppe können in allen Fällen auf alle Alerts für Insider-Risikomanagement,-Fälle,-Benachrichtigungsvorlagen und den Inhalts-Explorer zugreifen. |
+| **Insider Risk Management** | Verwenden Sie diese Rollengruppe zum Verwalten des Risikomanagements für Ihr Unternehmen in einer einzigen Gruppe. Wenn Sie alle Benutzerkonten für designierte Administratoren, Analytiker und Prüfer hinzufügen, können Sie Berechtigungen für das Insider-Risikomanagement in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für Insider-Risikomanagement. Diese Konfiguration ist die einfachste Möglichkeit, schnell mit dem Insider-Risikomanagement zu beginnen, und ist gut geeignet für Organisationen, die keine separaten Berechtigungen benötigen, die für separate Benutzergruppen definiert sind.|
+| **Administrator des Insider-Risikomanagements** | Verwenden Sie diese Rollengruppe, um zunächst das Insiderrisikomanagement zu konfigurieren und später Insider-Risikoadministratoren in eine definierte Gruppe zu untergtrennen.  Benutzer in dieser Rollengruppe können Verwaltungsrichtlinien, globale Einstellungen und Rollengruppenzuweisungen für Insiderrisiken erstellen, lesen, aktualisieren und löschen. |
+| **Insider-Risikomanagement-Analysten** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Analysten im Falle eines Insiderrisikos fungieren. Benutzer in dieser Rollengruppe können auf alle Vorlagen für Insider-Risikomanagement, -fälle und -benachrichtigungen zugreifen. Sie könne nicht auf den Inhalts-Explorer für Insider-Risiken zugreifen. |
+| **Insider-Risikomanagement-Prüfer** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Datenprüfer für Insiderrisiken fungieren. Benutzer in dieser Rollengruppe können für alle Fälle auf alle Insider-Risikomanagement-Warnungen, -Fälle, -Benachrichtigungsvorlagen und den Inhalts-Explorer zugreifen. |
 
-## <a name="understand-requirements-and-dependencies"></a>Grundlegendes zu Anforderungen und Abhängigkeiten
+## <a name="understand-requirements-and-dependencies"></a>Verstehen von Anforderungen und Abhängigkeiten
 
-Je nachdem, wie Sie Richtlinien für die Verwaltung von Insider Risiken implementieren möchten, müssen Sie über die entsprechenden Microsoft 365-Lizenzierungs Abonnements verfügen und einige Lösungs Voraussetzungen verstehen und planen.
+Je nachdem, wie Sie Insider-Risikomanagement-Richtlinien implementieren möchten, benötigen Sie die richtigen Microsoft 365-Lizenzierungsabonnements und verstehen und planen einige Lösungsvoraussetzungen.
 
-**Lizenzierung:** Das Insider Risk Management steht im Rahmen einer großen Auswahl von Microsoft 365-Lizenzierungs Abonnements zur Verfügung. Ausführliche Informationen finden Sie im Artikel [Erste Schritte mit Insider-Risikomanagement](insider-risk-management-configure.md#subscriptions-and-licensing) .
+**Lizenzierung:** Das Risikomanagement für Insider ist im Rahmen einer breiten Auswahl an Microsoft 365-Lizenzierungsabonnements verfügbar. Weitere Informationen finden Sie im Artikel ["Erste Schritte mit dem Insider-Risikomanagement".](insider-risk-management-configure.md#subscriptions-and-licensing)
 
-Wenn Sie keinen vorhandenen Microsoft 365 Enterprise E5-Plan haben und das Insider Risk Management testen möchten, können Sie Microsoft 365 zu Ihrem vorhandenen Abonnement [Hinzufügen](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) oder [sich für eine Testversion](https://www.microsoft.com/microsoft-365/enterprise) von Microsoft 365 Enterprise E5 registrieren.
+Wenn Sie nicht über einen vorhandenen Microsoft 365 Enterprise E5-Plan verfügen und das Insiderrisikomanagement ausprobieren [](https://www.microsoft.com/microsoft-365/enterprise) möchten, können Sie [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) zu Ihrem vorhandenen Abonnement hinzufügen oder sich für eine Testversion von Microsoft 365 Enterprise E5 registrieren.
 
-**Richtlinienvorlagen Anforderungen:** Je nach der ausgewählten Richtlinienvorlage gibt es Anforderungen, die Sie vor dem Konfigurieren des Insider Risk Managements in Ihrer Organisation verstehen und planen müssen:
+**Richtlinienvorlagenanforderungen:** Je nach der von Ihnen verwendeten Richtlinienvorlage müssen Sie die Anforderungen verstehen und planen, bevor Sie das Insiderrisikomanagement in Ihrer Organisation konfigurieren:
 
-- Wenn Sie die Vorlage " **Datendiebstahl durch** ablegende Benutzer" verwenden, müssen Sie einen Microsoft 365-HR-Connector für die regelmäßige Einfuhr von Rücktritts-und Kündigungsdatum-Informationen für Benutzer in Ihrer Organisation konfigurieren. Lesen Sie den Artikel [Importieren von Daten mit dem HR-Connector](import-hr-data.md) , um schrittweise Anleitungen zum Konfigurieren des Microsoft 365 HR-Connectors für Ihre Organisation zu erhalten.
-- Bei der Verwendung von **Daten** Verlust Vorlagen müssen Sie mindestens eine DLP-Richtlinie (Data Loss Prevention) konfigurieren, um vertrauliche Informationen in Ihrer Organisation zu definieren und Insider Risikowarnungen für DLP-Richtlinienwarnungen mit hohem Schweregrad zu erhalten. Eine schrittweise Anleitung zum Konfigurieren von DLP-Richtlinien für Ihre Organisation finden Sie unter [erstellen, testen und Optimieren eines DLP-Richtlinien](create-test-tune-dlp-policy.md) Artikels.
-- Wenn Sie **Sicherheitsrichtlinien-übertretungs** Vorlagen verwenden, müssen Sie Microsoft Defender für Endpoint for Insider Risk Management Integration in das Defender Security Center aktivieren, um Warnungen zu Sicherheitsverletzungen zu importieren. Eine schrittweise Anleitung zur Aktivierung von Defender für die Endpunkt Integration mit dem Insider Risk Management finden Sie im Artikel [configure Advanced Features in Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features) .
-- Wenn Sie **verärgerte Benutzer** Vorlagen verwenden, müssen Sie einen Microsoft 365 HR-Connector für die regelmäßige Importleistung oder Herabstufung von Statusinformationen für Benutzer in Ihrer Organisation konfigurieren. Lesen Sie den Artikel [Importieren von Daten mit dem HR-Connector](import-hr-data.md) , um schrittweise Anleitungen zum Konfigurieren des Microsoft 365 HR-Connectors für Ihre Organisation zu erhalten.
+- Wenn Sie  den Datendiebstahl durch die Vorlage "Verlassene Benutzer" verwenden, müssen Sie einen Microsoft 365 -PERSONAL-Connector so konfigurieren, dass regelmäßig Informationen zum Datum der Kündigung für Benutzer in Ihrer Organisation importiert werden. Schrittweise [Anleitungen zum](import-hr-data.md) Konfigurieren des Microsoft 365 -PERSONAL-Connectors für Ihre Organisation finden Sie im Artikel zum Importieren von Daten mit dem HR-Connector.
+- Wenn Sie Vorlagen für **Datenlecks** verwenden, müssen Sie mindestens eine Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) konfigurieren, um vertrauliche Informationen in Ihrer Organisation zu definieren und Benachrichtigungen über Insiderrisiken für Warnungen zu Richtlinien mit hohem Schweregrad zu erhalten. Schrittweise [Anleitungen zum Konfigurieren von DLP-Richtlinien](create-test-tune-dlp-policy.md) für Ihre Organisation finden Sie im Artikel zum Erstellen, Testen und Optimieren eines DLP-Richtlinienartikels.
+- Wenn Sie **Vorlagen für Sicherheitsrichtlinienverletzungen** verwenden, müssen Sie Microsoft Defender for Endpoint für die Integration des Insider-Risikomanagements im Defender Security Center aktivieren, um Warnungen zu Sicherheitsverletzungen zu importieren. Schrittweise [Anleitungen zum](/windows/security/threat-protection/microsoft-defender-atp/advanced-features) Aktivieren der Integration von Defender for Endpoint in das Insider-Risikomanagement finden Sie im Artikel "Konfigurieren erweiterter Features in Microsoft Defender".
+- Wenn Sie **unzufriedene** Benutzervorlagen verwenden, müssen Sie einen Microsoft 365 -PERSONAL-Connector so konfigurieren, dass regelmäßig Leistungs- oder Herabstufungsstatusinformationen für Benutzer in Ihrer Organisation importiert werden. Schrittweise [Anleitungen zum](import-hr-data.md) Konfigurieren des Microsoft 365 -HR-Connectors für Ihre Organisation finden Sie im Artikel zum Importieren von Daten mit dem HR-Connector.
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Testen mit einer kleinen Gruppe von Benutzern in einer Produktionsumgebung
 
-Bevor Sie die Lösung weitgehend in Ihrer Produktionsumgebung aktivieren, können Sie die Richtlinien mit einer kleinen Gruppe von Produktionsbenutzern testen, während Sie die erforderlichen Compliance-, Datenschutz-und rechts Prüfungen in Ihrer Organisation durchführen. Für die Bewertung des Insider Risikomanagements in einer Testumgebung müssen Sie simulierte Benutzeraktionen und andere Signale generieren, um Warnungen für die Selektierung und für die Verarbeitung von Fällen zu erstellen. Dieser Ansatz ist für die meisten Organisationen nicht praktikabel, daher wird das Testen des Insider Risikomanagements mit einer kleinen Gruppe von Benutzern in einer Produktionsumgebung bevorzugt.
+Bevor Sie die Lösung allgemein in Ihrer Produktionsumgebung aktivieren, sollten Sie die Richtlinien mit einer kleinen Gruppe von Produktionsbenutzern testen und gleichzeitig die erforderlichen Compliance-, Datenschutz- und rechtlichen Überprüfungen in Ihrer Organisation durchführen. Die Auswertung des Insiderrisikomanagements in einer Testumgebung erfordert, dass Sie simulierte Benutzeraktionen und andere Signale generieren, um Warnungen für die Triage und Fälle für die Verarbeitung zu erstellen. Dieser Ansatz ist für die meisten Organisationen nicht praktikabel, daher wird das Testen des Insiderrisikomanagements mit einer kleinen Gruppe von Benutzern in einer Produktionsumgebung bevorzugt.
 
-Lassen Sie das Anonymisierungs Feature in den Richtlinieneinstellungen aktiviert, um Benutzeranzeigenamen in der Insider Risiko-Verwaltungskonsole während dieser Tests zu anonymisieren, um den Datenschutz innerhalb des Tools beizubehalten. Diese Einstellung trägt zum Schutz der Privatsphäre von Benutzern bei, die Richtlinien Übereinstimmungen aufweisen, und kann zur Förderung der Objektivität bei Daten Ermittlungs-und Analyse Überprüfungen für Insider Risikowarnungen beitragen.
+Lassen Sie das Anonymisierungsfeature in den Richtlinieneinstellungen aktiviert, um Benutzeranzeigenamen während dieser Tests in der Verwaltungskonsole für Insider zu anonymisieren, um den Datenschutz innerhalb des Tools zu gewährleisten. Diese Einstellung trägt zum Schutz des Datenschutzes von Benutzern bei, die Richtlinien mit Übereinstimmungen haben, und kann die Objektivität bei Der Untersuchung von Daten und Analyseüberprüfungen für Insider-Risikowarnungen fördern.
 
-Wenn Sie unmittelbar nach der Konfiguration einer Richtlinie für die Verwaltung von Insider Risiken keine Benachrichtigungen sehen, kann dies bedeuten, dass der minimale Risiko Grenzwert noch nicht erfüllt ist. Ein guter Weg, um zu überprüfen, ob die Richtlinie ausgelöst wird und wie erwartet funktioniert, ist, zu sehen, ob der Benutzer für die Richtlinie auf der Seite **Benutzer** im Bereich ist.
+Wenn unmittelbar nach der Konfiguration einer Richtlinie für das Insiderrisikomanagement keine Warnungen angezeigt werden, bedeutet dies möglicherweise, dass der Schwellenwert für das Mindestrisiko noch nicht erreicht wurde. Eine gute Möglichkeit, um zu überprüfen, ob die Richtlinie ausgelöst wird und wie erwartet funktioniert, besteht in der Überprüfung, ob sich der Benutzer im Bereich der Richtlinie auf der Seite **"Benutzer"** befindet.
 
-## <a name="resources-for-stakeholders"></a>Ressourcen für beteiligte
+## <a name="resources-for-stakeholders"></a>Ressourcen für Projektbeteiligten
 
-Teilen Sie die Insider Risk Management-Dokumentation den Beteiligten in Ihrer Organisation mit, die in Ihrem Verwaltungs-und Wartungs Workflow enthalten sind:
+Teilen Sie die Dokumentation zum Insider-Risikomanagement mit den Beteiligten in Ihrer Organisation, die in Ihrem Verwaltungs- und Wartungsworkflow enthalten sind:
 
 - [Erstellen und Verwalten von Insider-Risikorichtlinien](insider-risk-management-policies.md)
 - [Untersuchen von Insider-Risikowarnungen](insider-risk-management-alerts.md)
 - [Maßnahmen bei Insider-Risikofällen ergreifen](insider-risk-management-cases.md)
-- [Überprüfen der Falldaten im Inhalts-Explorer für Insider Risiken](insider-risk-management-content-explorer.md)
+- [Überprüfen von Falldaten mit dem Insider-Risiko-Inhalts-Explorer](insider-risk-management-content-explorer.md)
 - [Erstellen von Vorlagen für Benachrichtigungen zu Insider-Risiken](insider-risk-management-notices.md)
 
-## <a name="ready-to-get-started"></a>Sind Sie bereit loszulegen?
+## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?
 
-Können Sie das Insider Risk Management für Ihre Organisation konfigurieren? Lesen Sie die folgenden Artikel:
+Sind Sie bereit, das Insider-Risikomanagement für Ihre Organisation zu konfigurieren? Lesen Sie die folgenden Artikel:
 
-- [Erste Schritte mit den Einstellungen für das Insider Risikomanagement](insider-risk-management-settings.md) können Sie globale Richtlinieneinstellungen konfigurieren.
-- Beginnen [Sie mit dem Insider Risikomanagement](insider-risk-management-configure.md) , um Voraussetzungen zu konfigurieren, Richtlinien zu erstellen und Benachrichtigungen zu erhalten.
+- [Beginnen Sie mit den Einstellungen für das Insider-Risikomanagement,](insider-risk-management-settings.md) um globale Richtlinieneinstellungen zu konfigurieren.
+- [Beginnen Sie mit dem Insider-Risikomanagement,](insider-risk-management-configure.md) um die Voraussetzungen zu konfigurieren, Richtlinien zu erstellen und mit dem Empfangen von Warnungen zu beginnen.

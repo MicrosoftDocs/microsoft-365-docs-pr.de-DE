@@ -1,22 +1,39 @@
 ---
-title: "Manage which Office features appear in What's New" f1.keywords:
-- NOCSH ms.author: danbrown author: DHB-MSFT manager: scotv audience: Admin ms.topic: article ms.service: o365-administration localization_priority: Normal ms.collection:
+title: Verwalten, welche Office-Features in "Was ist neu" angezeigt werden
+f1.keywords:
+- NOCSH
+ms.author: danbrown
+author: DHB-MSFT
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC ms.custom: AdminSurgePortfolio search.appverid:
+- Adm_TOC
+ms.custom: AdminSurgePortfolio
+search.appverid:
 - BCS160
 - MET150
-- MOE150 description: "Decide which Office features to show or hide when a user chooses Help > What's New in their Office app on Windows by using the "What's new in Office" feature in the Microsoft 365 admin center."
+- MOE150
+description: Entscheiden Sie mithilfe des Features "Neues in Office" im Microsoft 365 Admin Center, welche Office-Features ein- oder ausgeblendet werden, wenn ein Benutzer die Hilfe > What's New in their Office app on Windows aus.
+ms.openlocfilehash: d0b5bc3e643b306d9a38a707fed50ab546249c2b
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50122348"
 ---
-
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Verwalten, welche Office-Features in "Was ist neu" angezeigt werden
 
-Wenn ein wichtiges Office-Feature veröffentlicht wird, erhalten Benutzer eine Meldung darüber, wenn sie in ihrer Office-App unter Windows "Hilfe  >  **what's New"** auswählen.
+Wenn ein wichtiges Office-Feature veröffentlicht wird, erhalten Benutzer eine Meldung darüber, wenn sie hilfe  >  **what's New** in ihrer Office-App unter Windows auswählen.
 
 Sie können steuern, welche dieser Featuremeldungen Ihren Benutzern angezeigt werden, indem Sie das Feature "Neues **in Office"** im Microsoft 365 Admin Center verwenden. Wenn Sie eine Featurenachricht für Ihre Benutzer ausblenden möchten, können Sie jederzeit später wiederkommen und sie für sie anzeigen.
 
 > [!NOTE]
-> - Wenn Sie eine Featurenachricht für Ihre Benutzer ausblenden, wird das Feature in der Office-App nicht deaktiviert.
+> - Wenn Sie eine Featurenachricht von Ihren Benutzern ausblenden, wird das Feature in der Office-App nicht deaktiviert.
 > - Ihnen muss entweder die rolle "Globaler Administrator" oder die Administratorrolle "Office-Apps" zugewiesen sein, um das Feature "Neues **in Office" verwenden zu** können.
 
 ## <a name="show-or-hide-new-features"></a>Ein- oder ausblenden neuer Funktionen 
@@ -35,11 +52,11 @@ Sie können auf der  Seite "Neu" auch mehrere Features auf der Seite "Office-Fea
 > [!NOTE]
 > - Wenn ein Feature in mehreren Office-Apps verfügbar ist, blendet das Festlegen des Features auf **"Ausgeblendet"** die Featuremeldung in allen diesen Office-Apps aus.
 > - Alle Featuremeldungen werden Benutzern standardmäßig angezeigt. Dies ist der Standardstatus für alle Features, und der Status ändert sich nur, wenn Sie eine Featuremeldung ausblenden oder anzeigen möchten.
-> - Sie können das Feature "Neues **in Office"** auch über das Microsoft 365 Apps Admin Center ( ) [https://config.office.com](https://config.office.com) nutzen. Das Feature befindet sich unter **"Customization**  >  **What's New Management".**
+> - Sie können das Feature "Neues **in Office"** auch über das Microsoft 365 Apps Admin Center ( [https://config.office.com](https://config.office.com) ) nutzen. Das Feature befindet sich unter **"Customization**  >  **What's New Management".**
 
 ## <a name="list-of-features"></a>Liste der Features
 
-Sie können filtern, welche Features auf der Seite "Neu verwalten" angezeigt **werden.** Sie können nach Kanal, Anwendung oder Status oder nach einer kombination filtern.
+Sie können filtern, welche Features auf der Seite "Neue Funktionen verwalten" **angezeigt** werden. Sie können nach Kanal, Anwendung oder Status oder nach einer Kombination davon filtern.
 
 Neue Features werden auf der Seite basierend auf dem folgenden Zeitplan angezeigt:
 
@@ -48,7 +65,7 @@ Neue Features werden auf der Seite basierend auf dem folgenden Zeitplan angezeig
 |**Kanal** <br/> |**Date** <br/> |**Ergreifen von Maßnahmen** <br/> |
 |**Current** <br/> |15. des Monats  <br/> |1 - 3 Wochen vor der monatlichen Version <br/> |
 |**Monatlicher Enterprise-Kanal** <br/> |Monatserstes  <br/> |Zwei Wochen vor der Hauptversion mit neuen Features |
-|**Semi-Annual Enterprise (Vorschau)** <br/> |1. September und 1. März <br/> | 2 Wochen vor der Hauptversion, die neue Features bietet|
+|**Semi-Annual Enterprise (Vorschau)** <br/> |1. September und 1. März <br/> | 2 Wochen vor der Hauptversion mit neuen Features|
 |**Semi-Annual Enterprise** <br/> |1. Januar und 1. Juli <br/> | 2 Wochen vor der Hauptversion, die neue Features bietet<br/> |
 
 Weitere Informationen dazu, wann neue Versionen für jeden Updatekanal veröffentlicht werden, finden Sie im Updateverlauf für [Microsoft 365-Apps (nach Datum aufgeführt).](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)

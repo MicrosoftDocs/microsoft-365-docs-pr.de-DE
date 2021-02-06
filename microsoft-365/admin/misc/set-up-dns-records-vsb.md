@@ -19,14 +19,13 @@ search.appverid:
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie, wie Sie Ihre Domäne bestätigen und DNS-Einträge mit Microsoft 365 erstellen.
 ms.custom:
-- okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 206b435130e8e77ed1540432e3bbeff7f16463bf
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: c5c33af8a5635d1092aec2f1bffdfc942f2e4851
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658205"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126335"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Verbinden Ihrer Domäne zu Microsoft 365
 

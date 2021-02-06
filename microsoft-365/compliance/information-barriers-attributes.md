@@ -13,16 +13,16 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5e7815dbcfc6129685322a250351276476f8a9e3
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: c45a2733c1fa7cf6d05cff747a9cfcdba1b124cc
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980048"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126162"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Attribute für Richtlinien für Informationsbarrieren
 
-Bestimmte Attribute in Azure Active Directory können verwendet werden, um Benutzer zu segmentieren. Nachdem Segmente definiert wurden, können diese Segmente als Filter für Richtlinien für Informationsbarrieren verwendet werden. Sie können beispielsweise **"Abteilung"** verwenden, um Segmente von Benutzern nach Abteilung in Ihrer Organisation zu definieren (vorausgesetzt, dass kein einzelner Mitarbeiter gleichzeitig für zwei Abteilungen arbeitet).
+Bestimmte Attribute in Azure Active Directory können verwendet werden, um Benutzer zu segmentieren. Nachdem Segmente definiert wurden, können diese Segmente als Filter für Richtlinien für Informationsbarrieren verwendet werden. Sie können beispielsweise **"Abteilung"** verwenden, um Benutzersegmente nach Abteilung in Ihrer Organisation zu definieren (vorausgesetzt, dass kein einzelner Mitarbeiter gleichzeitig für zwei Abteilungen arbeitet).
 
 Dieser Artikel beschreibt die Verwendung von Attributen mit Informationsbarrieren und enthält eine Liste der Attribute, die verwendet werden können. Weitere Informationen zu Informationsbarrieren finden Sie in den folgenden Ressourcen:
 
@@ -38,9 +38,9 @@ Die in diesem Artikel aufgeführten Attribute können zum Definieren oder Bearbe
 
 2. Stellen Sie sicher, dass für die Benutzerkonten Werte für die Attribute angegeben sind, die Sie in Schritt 1 ausgewählt haben. Zeigen Sie Die Details des Benutzerkontos an, und bearbeiten Sie bei Bedarf Benutzerkonten so, dass Attributwerte enthalten sind. 
 
-    - Informationen zum Bearbeiten mehrerer Konten (oder zum Bearbeiten eines einzelnen Kontos mithilfe von PowerShell) finden Sie unter Konfigurieren von Benutzerkontoeigenschaften mit [Office 365 PowerShell.](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
+    - Informationen zum Bearbeiten mehrerer Konten (oder zum Bearbeiten eines einzelnen Kontos mithilfe von PowerShell) finden Sie unter Konfigurieren von Benutzerkontoeigenschaften mit [Office 365 PowerShell.](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
-    - Informationen zum Bearbeiten eines einzelnen Kontos finden Sie unter Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers [mithilfe von Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+    - Informationen zum Bearbeiten eines einzelnen Kontos finden Sie unter Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers [mithilfe von Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 3. [Definieren Sie Segmente mit PowerShell,](information-barriers-policies.md#define-segments-using-powershell)ähnlich wie in den folgenden Beispielen:
 
@@ -51,7 +51,7 @@ Die in diesem Artikel aufgeführten Attribute können zum Definieren oder Bearbe
     | Definieren Sie ein Segment namens DayTraders mithilfe von ExtensionAttribute1 (angenommen, dieses Attribut enthält Auftragstitel, z. B. "DayTrader"). | `New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
 
     > [!TIP]
-    > Verwenden Sie beim Definieren von Segmenten dasselbe Attribut für alle Segmente. Wenn Sie beispielsweise einige Segmente mithilfe von *Abteilung* definieren, definieren Sie alle Segmente mithilfe von *Abteilung*. Definieren Sie einige Segmente nicht mithilfe von *Department* und andere nicht mit *MemberOf*. Stellen Sie sicher, dass sich Ihre Segmente nicht überschneiden. Jedem Benutzer sollte genau ein Segment zugewiesen werden.
+    > Wenn Sie Segmente definieren, verwenden Sie dasselbe Attribut für alle Segmente. Wenn Sie beispielsweise einige Segmente mithilfe von *Abteilung* definieren, definieren Sie alle Segmente mithilfe von *Abteilung*. Definieren Sie einige Segmente nicht mithilfe von *Department* und andere nicht mit *MemberOf*. Stellen Sie sicher, dass sich Ihre Segmente nicht überschneiden. Jedem Benutzer sollte genau ein Segment zugewiesen werden.
 
 ## <a name="reference"></a>Referenz
 

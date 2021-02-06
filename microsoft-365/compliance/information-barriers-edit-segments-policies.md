@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 3a95ccb476960424b701f522aacce78576e6f68f
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 0d46459f61b29c6bdb457c7e0c82e9147e7709ba
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071280"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126140"
 ---
 # <a name="manage-information-barrier-policies"></a>Verwalten von Richtlinien für Informationsbarrieren
 
@@ -28,7 +28,7 @@ Nachdem Sie Richtlinien [für](information-barriers-policies.md)Informationsbarr
 |**Aktion**|**Beschreibung**|
 |:---------|:--------------|
 | [Bearbeiten von Benutzerkontoattributen](#edit-user-account-attributes) | Füllen Sie Attribute in Azure Active Directory aus, die zum Definieren von Segmenten verwendet werden können.<br/>Bearbeiten Sie Benutzerkontoattribute, wenn Benutzer in bestimmten Segmenten, in denen sie enthalten sein sollten, nicht enthalten sind, um zu ändern, in welchen Segmenten Benutzer enthalten sind oder um Segmente mit unterschiedlichen Attributen zu definieren. |
-| [Bearbeiten eines Segments](#edit-a-segment) | Bearbeiten Sie Segmente, wenn Sie ändern möchten, wie ein Segment definiert ist. <br/>Beispielsweise könnten Sie ursprünglich Segmente  mit Department definiert haben und nun ein anderes Attribut verwenden, z. B. *MemberOf*. |
+| [Bearbeiten eines Segments](#edit-a-segment) | Bearbeiten Sie Segmente, wenn Sie ändern möchten, wie ein Segment definiert ist. <br/>Beispielsweise haben Sie vielleicht ursprünglich Segmente mit *Department* definiert und möchten jetzt ein anderes Attribut verwenden, z. B. *MemberOf*. |
 | [Bearbeiten einer Richtlinie ](#edit-a-policy) | Bearbeiten Sie eine Richtlinie für Informationsbarrieren, wenn Sie ändern möchten, wie eine Richtlinie funktioniert.<br/>Anstatt beispielsweise die Kommunikation zwischen zwei Segmenten zu blockieren, können Sie festlegen, dass die Kommunikation nur zwischen bestimmten Segmenten möglich sein soll. |
 | [Festlegen einer Richtlinie auf den inaktiven Status](#set-a-policy-to-inactive-status) |Legen Sie eine Richtlinie auf den inaktiven Status ein, wenn Sie Änderungen an einer Richtlinie vornehmen möchten oder wenn eine Richtlinie nicht wirksam sein soll. |
 | [Entfernen einer Richtlinie](#remove-a-policy) | Entfernen Sie eine Richtlinie für Informationsbarrieren, wenn Sie keine bestimmte Richtlinie mehr benötigen. |
@@ -37,7 +37,7 @@ Nachdem Sie Richtlinien [für](information-barriers-policies.md)Informationsbarr
 | [Problembehandlung bei Informationsbarrieren](information-barriers-troubleshooting.md) | Lesen Sie diesen Artikel, wenn unerwartete Probleme mit Informationsbarrieren auftreten. |
 
 > [!IMPORTANT]
-> Zum Ausführen der in diesem Artikel beschriebenen Aufgaben muss Ihnen eine entsprechende Rolle zugewiesen werden, z. B. eine der folgenden:<br/>– Globaler Microsoft 365 Enterprise-Administrator<br/>– Globaler Administrator<br/>– Complianceadministrator<br/>- IB Compliance Management (dies ist eine neue Rolle!)<br><br>Weitere Informationen zu voraussetzungen für Informationsbarrieren finden Sie unter [Voraussetzungen (für Richtlinien für Informationsbarrieren)](information-barriers-policies.md#prerequisites).<br><br> Stellen Sie sicher, dass Sie eine [Verbindung mit security & Compliance Center PowerShell herstellen.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+> Zum Ausführen der in diesem Artikel beschriebenen Aufgaben muss Ihnen eine entsprechende Rolle zugewiesen werden, z. B. eine der folgenden:<br/>– Globaler Microsoft 365 Enterprise-Administrator<br/>– Globaler Administrator<br/>– Complianceadministrator<br/>- IB Compliance Management (dies ist eine neue Rolle!)<br><br>Weitere Informationen zu voraussetzungen für Informationsbarrieren finden Sie unter [Voraussetzungen (für Richtlinien für Informationsbarrieren)](information-barriers-policies.md#prerequisites).<br><br> Stellen Sie sicher, dass Sie eine Verbindung mit [security & Compliance Center PowerShell herstellen.](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="edit-user-account-attributes"></a>Bearbeiten von Benutzerkontoattributen
 
@@ -53,9 +53,9 @@ Verwenden Sie dieses Verfahren, um Attribute zu bearbeiten, die zum Segmentieren
 
 3. Bearbeiten Sie ein oder mehrere Benutzerkonten, um Werte für das Attribut zu enthalten, das Sie im vorherigen Schritt ausgewählt haben. Verwenden Sie eines der folgenden Verfahren, um diese Aktion zu ergreifen:
 
-    - Informationen zum Bearbeiten eines einzelnen Kontos finden Sie unter Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers [mithilfe von Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+    - Informationen zum Bearbeiten eines einzelnen Kontos finden Sie unter Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers [mithilfe von Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
-    - Informationen zum Bearbeiten mehrerer Konten (oder zum Bearbeiten eines einzelnen Kontos mithilfe von PowerShell) finden Sie unter Konfigurieren von Benutzerkontoeigenschaften mit [Office 365 PowerShell.](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
+    - Informationen zum Bearbeiten mehrerer Konten (oder zum Bearbeiten eines einzelnen Kontos mithilfe von PowerShell) finden Sie unter Konfigurieren von Benutzerkontoeigenschaften mit [Office 365 PowerShell.](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
 ## <a name="edit-a-segment"></a>Bearbeiten eines Segments
 
@@ -88,7 +88,7 @@ Wenn Sie die Bearbeitung von Segmenten [](information-barriers-policies.md#part-
 
 2. Verwenden Sie **das Cmdlet "Set-InformationBarrierPolicy"** mit einem **Parameter "Identity",** und geben Sie die Änderungen an, die Sie vornehmen möchten.
 
-    Beispiel: Angenommen, eine Richtlinie wurde definiert, um zu blockieren, dass das Segment *"Forschung"* mit den *Vertriebs-* und Marketingsegmenten *kommuniziert.* Die Richtlinie wurde mit diesem Cmdlet definiert: `New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
+    Beispiel: Angenommen, eine Richtlinie wurde definiert, um zu blockieren, dass das Segment *"Forschung"* mit den Segmenten *"Vertrieb"* und *"Marketing" kommuniziert.* Die Richtlinie wurde mit diesem Cmdlet definiert: `New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
 
     Angenommen, wir möchten sie so  ändern, dass Personen im Segment "Forschung" nur mit Personen im Personalabteilungssegment *kommunizieren* können. Um diese Änderung zu ändern, verwenden wir dieses Cmdlet: `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
 
@@ -118,7 +118,7 @@ Wenn Sie die Bearbeitung von Segmenten [](information-barriers-policies.md#part-
 
 An diesem Punkt wird eine oder mehrere Richtlinien für Informationsbarrieren auf den inaktiven Status festgelegt. Von hier aus können Sie eine der folgenden Aktionen ausführen:
 
-- Behalten Sie dies bei (eine Richtlinie, die auf den inaktiven Status festgelegt ist, hat keine Auswirkungen auf Benutzer)
+- Behalten Sie dies bei (eine Richtlinie, die auf den inaktiven Status festgelegt ist, hat keine Auswirkung auf Benutzer)
 - [Bearbeiten einer Richtlinie ](#edit-a-policy) 
 - [Entfernen einer Richtlinie](#remove-a-policy)
 

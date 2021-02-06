@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
 ms.openlocfilehash: c0fdfc83bbdb8ec4c2f408cef113a487908957bf
 ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/05/2021
 ms.locfileid: "50110029"

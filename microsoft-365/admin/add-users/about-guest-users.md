@@ -15,51 +15,50 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie die Liste "Gastbenutzer" im Microsoft 365 Admin Center aufgefüllt wird.
-ms.openlocfilehash: 338b86d7f32eb2a2ecbacc3d7d1e00124c3804e4
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+description: Erfahren Sie, wie die Liste der Gastbenutzer im Microsoft 365 Admin Center aufgefüllt wird.
+ms.openlocfilehash: 7610e22be5cf229c9c0b71dd1282f8138452fe67
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751436"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126093"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Gastbenutzer im Microsoft 365 Admin Center
 
-Alle Gäste, die Sie Ihren Microsoft Teams-, SharePoint-oder Azure-Active Directory hinzufügen, werden auch der Liste " **Gastbenutzer** " im Microsoft Admin Center hinzugefügt. Gäste können an Besprechungen teilnehmen, Dokumente anzeigen und in Microsoft Teams chatten, zu denen Sie eingeladen sind.
-Sobald ein Benutzer in der Liste " **Gastbenutzer** " angezeigt wird, können Sie den Zugriff dort entfernen.
+Alle Gäste, die Sie Zu Ihren Microsoft Teams, SharePoint  oder Azure Active Directory hinzufügen, werden auch der Liste der Gastbenutzer im Microsoft Admin Center hinzugefügt. Gäste können an Besprechungen teilnehmen, Dokumente anzeigen und in Teams chatten, zu dem sie eingeladen werden.
+Sobald ein Benutzer in der Liste der **Gastbenutzer angezeigt** wird, können Sie seinen Zugriff dort entfernen.
 
-Um Gastbenutzer anzuzeigen, erweitern Sie im Microsoft 365 Admin Center im linken Navigationsbereich **Benutzer**, und wählen Sie dann **Gastbenutzer** aus.
+Erweitern Sie zum Anzeigen von Gastbenutzern im Microsoft 365 Admin Center im linken Navigationsbereich **"Benutzer",** und wählen Sie dann **"Gastbenutzer" aus.**
 
 ## <a name="add-guests-to-teams"></a>Hinzufügen von Gästen zu Teams
 
-Informationen zum Hinzufügen eines Gasts zu Microsoft Teams finden Sie im folgenden Video: <br><br>
+Informationen zum Hinzufügen eines Gasts zu Teams finden Sie im folgenden Video: <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
 ## <a name="join-a-team-as-a-guest"></a>Treten Sie einem Team als Gast bei
 
-Um als Gast an einem Team teilzunehmen, sehen Sie sich das folgende Video an:<br><br>
+Informationen zum Beitreten zu einem Team als Gast finden Sie im folgenden Video:<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys]
 
 ## <a name="add-guests-in-azure-active-directory"></a>Hinzufügen von Gästen in Azure Active Directory
 
-Weitere Informationen zum Hinzufügen von Gästen in der Azure-Active Directory finden Sie unter [Hinzufügen von Gastbenutzern](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
+Informationen zum Hinzufügen von Gästen im Azure Active Directory finden Sie unter ["Hinzufügen von Gastbenutzern".](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)
 
-Nachdem Sie einen Benutzer hinzugefügt haben, können Sie diese auch einer Gruppe zuweisen oder Ihnen Zugriff auf eine app in Ihrer Organisation gewähren. Nachdem Sie einen Benutzer im Azure AD-Portal hinzugefügt haben, wird dieser Benutzer auch auf der Seite " **Gastbenutzer** " im Microsoft 365 Admin Center aufgeführt.
-Nachdem ein Benutzer der Liste " **Gastbenutzer** " hinzugefügt wurde, kann er Gruppen im Microsoft 365 Admin Center [hinzugefügt](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) werden.
+Nachdem Sie einen Benutzer hinzugefügt haben, können Sie diesen auch einer Gruppe zuweisen oder ihm Zugriff auf eine App in Ihrer Organisation geben. Nachdem Sie einen Benutzer im Azure AD-Portal hinzugefügt haben,  wird dieser Benutzer auch auf der Seite "Gastbenutzer" im Microsoft 365 Admin Center aufgeführt.
+Nachdem ein Benutzer zur  Liste der Gastbenutzer [](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) hinzugefügt wurde, kann er gruppen im Microsoft 365 Admin Center hinzugefügt werden.
 
-Weitere Informationen finden Sie unter [Hinzufügen von Gästen in loser Schüttung](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) , um mehrere Gäste zur Zusammenarbeit mit Ihrer Organisation einzuladen.
+Sehen [Sie sich das Massen hinzufügen von Gästen](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) an, um mehrere Gäste zur Zusammenarbeit mit Ihrer Organisation einzu einladen.
 
 
 ## <a name="remove-a-guest"></a>Entfernen eines Gasts
 
-1. Erweitern Sie im Microsoft 365 Admin Center die Option **Benutzer** , und wählen Sie dann **Gastbenutzer** aus.
-1. Wählen Sie auf der Seite **Gastbenutzer** den Benutzer aus, den Sie entfernen möchten, und klicken Sie dann auf **Benutzer löschen**. 
+1. Erweitern Sie im Microsoft 365 Admin Center **"Benutzer",** und wählen Sie dann **"Gastbenutzer" aus.**
+1. Wählen Sie **auf der Seite "Gastbenutzer"** den Benutzer aus, den Sie entfernen möchten, und wählen Sie dann **"Benutzer löschen" aus.** 
 
-Informationen zum Entfernen von Benutzern im Azure AD-Portal finden Sie unter [Entfernen eines Gastbenutzers und von Ressourcen](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources).
+Informationen zum Entfernen von Benutzern im Azure AD-Portal finden Sie unter ["Entfernen eines Gastbenutzers und von Ressourcen".](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)

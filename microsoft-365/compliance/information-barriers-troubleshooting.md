@@ -13,21 +13,21 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39ac5c2f12b8947bce26d426cac83e57cd4c87ae
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: 3810dd977ef0d25642ba86a2b62a036c9a4ace06
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980038"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126562"
 ---
 # <a name="troubleshooting-information-barriers"></a>Problembehandlung bei Informationsbarrieren
 
-[Informationsbarrieren](information-barriers.md) können Dazu beitragen, dass Ihre Organisation den gesetzlichen Anforderungen und Branchenbestimmungen entspricht. Mit Informationsbarrieren können Sie beispielsweise die Kommunikation zwischen bestimmten Benutzergruppen einschränken, um Interessenkonflikte oder andere Probleme zu vermeiden. (Weitere Informationen zum Einrichten von Informationsbarrieren finden Sie unter "Definieren von [Richtlinien für Informationsbarrieren".)](information-barriers-policies.md)
+[Informationsbarrieren](information-barriers.md) können Dazu beitragen, dass Ihre Organisation den gesetzlichen Anforderungen und Branchenbestimmungen entspricht. Beispielsweise können Sie mit Informationsbarrieren die Kommunikation zwischen bestimmten Benutzergruppen einschränken, um einen Interessenkonflikt oder andere Probleme zu vermeiden. (Weitere Informationen zum Einrichten von Informationsbarrieren finden Sie unter "Definieren von [Richtlinien für Informationsbarrieren".)](information-barriers-policies.md)
 
 Für den Fall, dass nach dem Auftreten von Informationsbarrieren unerwartete Probleme auftreten, können Sie einige Schritte ausführen, um diese Probleme zu beheben. Verwenden Sie diesen Artikel als Leitfaden.
 
 > [!IMPORTANT]
-> Zum Ausführen der in diesem Artikel beschriebenen Aufgaben muss Ihnen eine entsprechende Rolle zugewiesen werden, z. B. eine der folgenden:<br/>– Globaler Microsoft 365 Enterprise-Administrator<br/>– globaler Administrator<br/>– Complianceadministrator<br/>- IB Compliance Management (dies ist eine neue Rolle!)<p>Weitere Informationen zu voraussetzungen für Informationsbarrieren finden Sie unter [Voraussetzungen (für Richtlinien für Informationsbarrieren)](information-barriers-policies.md#prerequisites).<p>Stellen Sie sicher, [dass Sie eine Verbindung mit Security & Compliance Center PowerShell herstellen.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+> Zum Ausführen der in diesem Artikel beschriebenen Aufgaben muss Ihnen eine entsprechende Rolle zugewiesen werden, z. B. eine der folgenden:<br/>– Globaler Microsoft 365 Enterprise-Administrator<br/>– globaler Administrator<br/>– Complianceadministrator<br/>- IB Compliance Management (dies ist eine neue Rolle!)<p>Weitere Informationen zu voraussetzungen für Informationsbarrieren finden Sie unter [Voraussetzungen (für Richtlinien für Informationsbarrieren)](information-barriers-policies.md#prerequisites).<p>Stellen Sie sicher, [dass Sie eine Verbindung mit Security & Compliance Center PowerShell herstellen.](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>Problem: Benutzer werden unerwarteterweise an der Kommunikation mit anderen in Microsoft Teams blockiert. 
 
@@ -53,9 +53,9 @@ Bestimmen Sie, ob die Benutzer von einer Richtlinie für Informationsbarrieren b
 
     |**Syntax**|**Beispiel**|
     |:---------|:----------|
-    | `Get-InformationBarrierPolicy` <p> Verwenden Sie Details, z. B. die Richtlinien-GUID (ExoPolicyId), die Sie im vorherigen Schritt erhalten haben, als Identitätswert. | `Get-InformationBarrierPolicy -Identity b42c3d0f-49e9-4506-a0a5-bf2853b5df6f` <p> In diesem Beispiel erhalten wir detaillierte Informationen zur Richtlinie für Informationsbarrieren, die exoPolicyId *b42c3d0f-49e9-4506-a0a5-bf2853b5df6f hat.* |
+    | `Get-InformationBarrierPolicy` <p> Verwenden Sie Details, z. B. die Richtlinien-GUID (ExoPolicyId), die Sie im vorherigen Schritt erhalten haben, als Identitätswert. | `Get-InformationBarrierPolicy -Identity b42c3d0f-49e9-4506-a0a5-bf2853b5df6f` <p> In diesem Beispiel erhalten wir detaillierte Informationen zur Richtlinie für Informationsbarrieren mit der ExoPolicyId *b42c3d0f-49e9-4506-a0a5-bf2853b5df6f*. |
 
-    Suchen Sie nach dem Ausführen des Cmdlets in den Ergebnissen nach **AssignedSegment-,** **SegmentsAllowed-** und **SegmentsBlocked-Werten.**
+    Suchen Sie nach dem Ausführen des Cmdlets in den Ergebnissen nach den Werten **AssignedSegment,** **SegmentsAllowed** und **SegmentsBlocked.**
 
     Beispielsweise haben wir nach dem Ausführen des `Get-InformationBarrierPolicy` Cmdlets Folgendes in der Ergebnisliste gesehen:
 
@@ -102,7 +102,7 @@ Stellen Sie sicher, dass die benutzer in einer Richtlinie für Informationsbarri
 
     |**Ergebnisse**|**Nächste Schritte**|
     |:----------|:------------------|
-    | Es werden keine Segmente für die ausgewählten Benutzer aufgelistet. | Führen Sie einen der folgenden Schritte aus:<br/>– Weisen Sie Benutzern ein vorhandenes Segment zu, indem Sie ihre Benutzerprofile in Azure Active Directory bearbeiten. (Siehe [Konfigurieren von Benutzerkontoeigenschaften mit Office 365 PowerShell.)](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- Definieren Sie ein Segment mithilfe eines [unterstützten Attributs für Informationsbarrieren.](information-barriers-attributes.md) Definieren Sie dann entweder [eine neue Richtlinie,](information-barriers-policies.md#part-2-define-information-barrier-policies) oder bearbeiten Sie eine [vorhandene Richtlinie,](information-barriers-edit-segments-policies.md#edit-a-policy) um dieses Segment zu enthalten. |
+    | Es werden keine Segmente für die ausgewählten Benutzer aufgelistet. | Führen Sie einen der folgenden Schritte aus:<br/>– Weisen Sie Benutzern ein vorhandenes Segment zu, indem Sie ihre Benutzerprofile in Azure Active Directory bearbeiten. (Siehe [Konfigurieren von Benutzerkontoeigenschaften mit Office 365 PowerShell.)](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- Definieren Sie ein Segment mithilfe eines [unterstützten Attributs für Informationsbarrieren.](information-barriers-attributes.md) Definieren Sie dann entweder [eine neue Richtlinie,](information-barriers-policies.md#part-2-define-information-barrier-policies) oder bearbeiten Sie eine [vorhandene Richtlinie,](information-barriers-edit-segments-policies.md#edit-a-policy) um dieses Segment zu enthalten. |
     | Segmente werden aufgelistet, aber diesen Segmenten werden keine Richtlinien für Informationsbarrieren zugewiesen. | Führen Sie einen der folgenden Schritte aus:<br/>- [Definieren einer neuen Richtlinie für Informationsbarrieren](information-barriers-policies.md#part-2-define-information-barrier-policies) für jedes segment in Frage <br/>- [Bearbeiten einer vorhandenen Richtlinie für Informationsbarrieren,](information-barriers-edit-segments-policies.md#edit-a-policy) um sie dem richtigen Segment zuzuordnen |
     | Segmente werden aufgelistet und sind jeweils in einer Richtlinie für Informationsbarrieren enthalten. | – Führen Sie das `Get-InformationBarrierPolicy` Cmdlet aus, um zu überprüfen, ob Richtlinien für Informationsbarrieren aktiv sind<br/>– Führen Sie das `Get-InformationBarrierPoliciesApplicationStatus` Cmdlet aus, um zu bestätigen, dass die Richtlinien angewendet wurden.<br/>– Führen Sie das `Start-InformationBarrierPoliciesApplication` Cmdlet aus, um alle Richtlinien für aktive Informationsbarrieren anzuwenden |
 
@@ -123,7 +123,7 @@ Richtlinien für Informationsbarrieren werden Segmenten von Benutzern zugewiesen
 
 2. Überprüfen Sie die Ergebnisse, um zu sehen, ob Richtlinien für Informationsbarrieren zugewiesen sind und zu welchen Segmenten die Benutzer gehören.
 
-3. Um einen Benutzer aus einem Segment zu entfernen, das von Informationsbarrieren betroffen ist, aktualisieren Sie die Profilinformationen des Benutzers [in Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+3. Um einen Benutzer aus einem Segment zu entfernen, das von Informationsbarrieren betroffen ist, aktualisieren Sie die Profilinformationen des Benutzers [in Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 4. Warten Sie etwa 30 Minuten, bis FwdSync auftritt. Oder führen Sie das `Start-InformationBarrierPoliciesApplication` Cmdlet aus, um alle Richtlinien für aktive Informationsbarrieren anzuwenden.
 
@@ -147,8 +147,8 @@ Beachten Sie, dass beim Ausführen des Richtlinienanwendungs-Cmdlets Richtlinien
   
     |**Status**|**Nächster Schritt**|
     |:---------|:------------|
-    | **Nicht gestartet** | If it has been more than 45 minutes since the **Start-InformationBarrierPoliciesApplication** cmdlet has been run, review your audit log to see if there are any errors in policy definitions, or some other reason why the application has not started. |
-    | **Fehlgeschlagen** | Wenn die Anwendung fehlgeschlagen ist, überprüfen Sie Das Überwachungsprotokoll. Überprüfen Sie auch Ihre Segmente und Richtlinien. Sind Benutzer mehreren Segmenten zugewiesen? Werden Segmenten mehr als eine Poliicie zugewiesen? Bearbeiten Sie bei Bedarf [Segmente](information-barriers-edit-segments-policies.md#edit-a-segment) [und/oder](information-barriers-edit-segments-policies.md#edit-a-policy)Richtlinien, und führen Sie dann das Cmdlet **"Start-InformationBarrierPoliciesApplication"** erneut aus. |
+    | **Nicht gestartet** | Wenn das Cmdlet **"Start-InformationBarrierPoliciesApplication"** seit mehr als 45 Minuten ausgeführt wurde, überprüfen Sie das Überwachungsprotokoll, um zu prüfen, ob Fehler in Richtliniendefinitionen oder ein anderer Grund für das Nichtstarten der Anwendung aufgetreten sind. |
+    | **Fehlgeschlagen** | Wenn die Anwendung fehlgeschlagen ist, überprüfen Sie Das Überwachungsprotokoll. Überprüfen Sie auch Ihre Segmente und Richtlinien. Sind Benutzer mehreren Segmenten zugewiesen? Sind allen Segmenten mehr als eine Poliicie zugewiesen? Bearbeiten Sie bei Bedarf [Segmente](information-barriers-edit-segments-policies.md#edit-a-segment) [und/oder](information-barriers-edit-segments-policies.md#edit-a-policy)Richtlinien, und führen Sie dann das Cmdlet **"Start-InformationBarrierPoliciesApplication"** erneut aus. |
     | **In Bearbeitung** | Wenn die Anwendung noch ausgeführt wird, lassen Sie mehr Zeit, bis sie abgeschlossen ist. Wenn es mehrere Tage gezeit ist, sammeln Sie Ihre Überwachungsprotokolle, und wenden Sie sich dann an den Support. |
 
 ## <a name="issue-information-barrier-policies-are-not-being-applied-at-all"></a>Problem: Richtlinien für Informationsbarrieren werden überhaupt nicht angewendet
@@ -157,15 +157,15 @@ In diesem Fall haben Sie Segmente definiert, Richtlinien für Informationsbarrie
 
 ### <a name="what-to-do"></a>Vorgehensweise
 
-Stellen Sie sicher, dass in Ihrer Organisation keine Richtlinien [für das Exchange-Adressbuch](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) verwendet werden. Solche Richtlinien verhindern, dass Richtlinien für Informationsbarrieren angewendet werden.
+Stellen Sie sicher, dass in Ihrer Organisation keine [Richtlinien für das Exchange-Adressbuch](/exchange/address-books/address-book-policies/address-book-policies) verwendet werden. Solche Richtlinien verhindern, dass Richtlinien für Informationsbarrieren angewendet werden.
 
-1. Stellen Sie eine Verbindung mit [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) her.
+1. Stellen Sie eine Verbindung mit [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) her.
 
-2. Führen Sie [das Cmdlet "Get-AddressBookPolicy"](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy) aus, und überprüfen Sie die Ergebnisse.
+2. Führen Sie [das Cmdlet "Get-AddressBookPolicy"](/powershell/module/exchange/get-addressbookpolicy) aus, und überprüfen Sie die Ergebnisse.
 
     |**Ergebnisse**|**Nächster Schritt**|
     |:----------|:------------|
-    | Richtlinien für das Exchange-Adressbuch sind aufgeführt | [Adressbuchrichtlinien entfernen](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
+    | Richtlinien für das Exchange-Adressbuch sind aufgeführt | [Adressbuchrichtlinien entfernen](/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
     | Es sind keine Adressbuchrichtlinien vorhanden |Überprüfen Der Überwachungsprotokolle, um herauszufinden, warum die Richtlinienanwendung einen Fehler meldet |
 
 3. [Anzeigen des Status von Benutzerkonten, Segmenten, Richtlinien oder Richtlinienanwendung.](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application)
@@ -193,13 +193,13 @@ Wenn Sie das `Get-InformationBarrierPoliciesApplicationStatus` Cmdlet ausführen
 $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
 ```
 
-2. Überprüfen Sie die detaillierte Ausgabe aus dem Überwachungsprotokoll auf die Werte der `"UserId"` Felder `"ErrorDetails"` und Felder. Dies gibt Ihnen den Grund für den Fehler an. Sie können diesen PowerShell-Code kopieren und für Ihre Variablen ändern.
+2. Überprüfen Sie die detaillierte Ausgabe aus dem Überwachungsprotokoll auf die Werte der `"UserId"` `"ErrorDetails"` Felder. Dadurch erhalten Sie den Grund für den Fehler. Sie können diesen PowerShell-Code kopieren und für Ihre Variablen ändern.
 
 ```powershell
    $DetailedLogs[1] |fl
 ```
 
-Beispiel:
+Zum Beispiel:
 
 > "UserId": Benutzer1
 >

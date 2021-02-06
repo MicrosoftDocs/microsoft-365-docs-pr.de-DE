@@ -19,18 +19,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5925ad7641370b26d0a272968a13028b74b81ef4
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: 1b9bef180fed9c3afa3b3d8d2319a1fa0260ed14
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50109996"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126594"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Fallstudie – Contoso konfiguriert schnell eine Richtlinie für anstößige Sprache für Microsoft Teams, Exchange und Yammer Kommunikation
 
-Die Kommunikationskonformität in Microsoft 365 trägt dazu bei, Kommunikationsrisiken zu minimieren, indem Sie unangemessene Nachrichten in Ihrer Organisation erkennen, erfassen und auf diese weise agieren können. Mit vordefinierten und benutzerdefinierten Richtlinien können Sie die interne und externe Kommunikation auf Richtlinien übereinstimmungen überprüfen, damit sie von bestimmten Prüfern überprüft werden können. Prüfer können gescannte E-Mails, Microsoft Teams, Yammer oder Drittanbieterkommunikationen in Ihrer Organisation untersuchen und geeignete Abhilfemaßnahmen ergreifen, um sicherzustellen, dass sie den Nachrichtenstandards Ihrer Organisation entsprechen.
+Die Kommunikationskonformität in Microsoft 365 trägt dazu bei, Kommunikationsrisiken zu minimieren, indem Sie unangemessene Nachrichten in Ihrer Organisation erkennen, erfassen und auf diese weise agieren können. Mit vordefinierten und benutzerdefinierten Richtlinien können Sie die interne und externe Kommunikation auf Richtlinien übereinstimmungen überprüfen, damit sie von bestimmten Prüfern überprüft werden können. Prüfer können überprüfte E-Mails, Microsoft Teams, Yammer oder Drittanbieterkommunikationen in Ihrer Organisation untersuchen und geeignete Abhilfemaßnahmen ergreifen, um sicherzustellen, dass sie den Nachrichtenstandards Ihrer Organisation entsprechen.
 
-Die Contoso Corporation ist eine fiktive Organisation, die schnell eine Richtlinie zur Überwachung auf anstößige Sprache konfigurieren muss. Sie haben Microsoft 365 in erster Linie für E-Mail, Microsoft Teams und Yammer für ihre Benutzer verwendet, haben jedoch neue Anforderungen, um Unternehmensrichtlinien in Der Umgebung von Belästigungen am Arbeitsplatz durchzusetzen. Contoso-IT-Administratoren und Compliancespezialisten verfügen über grundlegende Kenntnisse der Grundlagen der Arbeit mit Microsoft 365 und suchen nach end-to-end-Anleitungen für den schnellen Einstieg in die Kommunikationskonformität.
+Die Contoso Corporation ist eine fiktive Organisation, die schnell eine Richtlinie zur Überwachung auf anstößige Sprache konfigurieren muss. Sie haben Microsoft 365 in erster Linie für E-Mail, Microsoft Teams und Yammer für ihre Benutzer verwendet, haben jedoch neue Anforderungen, um Unternehmensrichtlinien gegen Belästigungen am Arbeitsplatz durchzusetzen. Contoso-IT-Administratoren und Compliancespezialisten verfügen über grundlegende Kenntnisse der Grundlagen der Arbeit mit Microsoft 365 und suchen nach end-to-end-Anleitungen für den schnellen Einstieg in die Kommunikationskonformität.
 
 In dieser Fallstudie werden die Grundlagen für die schnelle Konfiguration einer Richtlinie zur Kommunikationscompliance zur Überwachung der Kommunikation auf anstößige Sprache behandelt. Diese Anleitung enthält:
 
@@ -59,15 +59,15 @@ Der erste Schritt besteht in der Bestätigung, dass die Microsoft 365-Lizenzieru
 - Microsoft 365 A3-Abonnement + das Microsoft 365 A5 Compliance-Add-On
 - Microsoft 365 A3-Abonnement + das Microsoft 365 A5 Insider Risk Management-Add-On
 - Microsoft 365 -G5-Abonnement (kostenpflichtig oder Testversion)
-- Microsoft 365 -G5-Abonnement + das Microsoft 365 G5 Compliance-Add-On
-- Microsoft 365 -G5-Abonnement + das Microsoft 365 G5-Add-On "Insider Risk Management"
+- Microsoft 365 G5-Abonnement + das Microsoft 365 G5 Compliance-Add-On
+- Microsoft 365 G5-Abonnement + das Microsoft 365 G5 Insider Risk Management-Add-On
 - Office 365 Enterprise E5-Abonnement (kostenpflichtig oder Testversion)
 - Office 365 Enterprise E3-Abonnement + das Office 365 Advanced Compliance-Add-On (nicht mehr verfügbar für neue Abonnements, siehe Hinweis)
 
 Außerdem müssen sie bestätigen, dass Benutzern, die in Richtlinien zur Kommunikationskonformität enthalten sind, eine der oben genannten Lizenzen zugewiesen werden muss.
 
 >[!IMPORTANT]
->Office 365 Advanced Compliance wird nicht mehr als eigenständiges Abonnement verkauft. Wenn aktuelle Abonnements ablaufen, sollten Kunden zu einem der oben genannten Abonnements überwechseln, das dieselben oder zusätzliche Compliancefeatures enthält.
+>Office 365 Advanced Compliance wird nicht mehr als eigenständiges Abonnement verkauft. Wenn aktuelle Abonnements ablaufen, sollten Kunden zu einem der oben genannten Abonnements überwechseln, das dieselben oder zusätzliche Kompatibilitätsfeatures enthält.
 
 Contoso-IT-Administratoren gehen wie folgt vor, um die Lizenzierungsunterstützung für Contoso zu überprüfen:
 
@@ -79,14 +79,14 @@ Contoso-IT-Administratoren gehen wie folgt vor, um die Lizenzierungsunterstützu
 
 ### <a name="permissions-for-communication-compliance"></a>Berechtigungen für die Kommunikationskonformität
 
-Es gibt fünf Rollengruppen, die zum Konfigurieren von Berechtigungen zum Verwalten von Kommunikationskonformitätsfeatures verwendet werden. Um  die Kommunikationskonformität als Menüoption im Microsoft 365 Compliance Center verfügbar zu machen und mit diesen Konfigurationsschritten fortzufahren, wird den Administratoren von Contoso die Administratorrolle *"Kommunikationskonformität"* zugewiesen.
+Es gibt fünf Rollengruppen, die zum Konfigurieren von Berechtigungen zum Verwalten von Kommunikationskonformitätsfeatures verwendet werden. Um  die Kommunikationskonformität als Menüoption im Microsoft 365 Compliance Center zur Verfügung zu stellen und mit diesen Konfigurationsschritten fortzufahren, wird den Administratoren von Contoso die Administratorrolle *"Kommunikationskonformität"* zugewiesen.
 
 Contoso entscheidet sich  für die Verwendung der Rollengruppe "Kommunikationskonformität", um der Gruppe alle Kommunikationskonformitätsadministratoren, Analysten, Ermittler und Betrachter zuzuordnen. Dies erleichtert Contoso den schnellen Einstieg und erfüllt die Complianceverwaltungsanforderungen am besten.
 
 |**Rolle**|**Rollenberechtigungen**|
 |:-----|:-----|
 | **Kommunikationskonformität** | Verwenden Sie diese Rollengruppe, um die Kommunikationskonformität für Ihre Organisation in einer einzigen Gruppe zu verwalten. Durch Hinzufügen aller Benutzerkonten für designierte Administratoren, Analysten, Ermittler und Betrachter können Sie Berechtigungen zur Kommunikationskonformität in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für die Kommunikationskonformität. Diese Konfiguration ist die einfachste Möglichkeit, schnell mit der Kommunikationskonformität zu beginnen, und ist gut geeignet für Organisationen, die keine separaten Berechtigungen benötigen, die für separate Benutzergruppen definiert sind. |
-| **Kommunikationskonformitätsadministrator** | Verwenden Sie diese Rollengruppe, um zunächst die Kommunikationskonformität zu konfigurieren und später Administratoren für die Kommunikationskonformität in eine definierte Gruppe zu untergtrennen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Richtlinien zur Kommunikationskonformität, globale Einstellungen und Rollengruppenzuweisungen erstellen, lesen, aktualisieren und löschen. Benutzer, die dieser Rollengruppe zugewiesen sind, können keine Benachrichtigungen anzeigen. |
+| **Kommunikationskonformitätsadministrator** | Verwenden Sie diese Rollengruppe, um zunächst die Kommunikationskonformität zu konfigurieren und später Administratoren für die Kommunikationskonformität in eine definierte Gruppe zu untergtrennen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Kommunikationskonformitätsrichtlinien, globale Einstellungen und Rollengruppenzuweisungen erstellen, lesen, aktualisieren und löschen. Benutzer, die dieser Rollengruppe zugewiesen sind, können keine Benachrichtigungen anzeigen. |
 | **Communication Compliance Analyst** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die als Kommunikations-Compliance-Analysten fungieren. Benutzer, die dieser Rollengruppe zugewiesen sind, können Richtlinien anzeigen, in denen sie als Prüfer zugewiesen sind, Nachrichtenmetadaten (keine Nachrichteninhalte) anzeigen, an zusätzliche Prüfer eskalieren oder Benachrichtigungen an Benutzer senden. Analysten können ausstehende Warnungen nicht beheben. |
 | **Kommunikations-Compliance-Ermittler** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die als Ermittler der Kommunikationskonformität fungieren. Benutzer, die dieser Rollengruppe zugewiesen sind, können Nachrichtenmetadaten und -inhalte anzeigen, an weitere Prüfer eskalieren, zu einem Advanced eDiscovery-Fall eskalieren, Benachrichtigungen an Benutzer senden und die Warnung auflösen. |
 | **Communication Compliance Viewer** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die Kommunikationsberichte verwalten. Benutzer, die dieser Rollengruppe zugewiesen sind, können auf der Startseite für die Kommunikationskonformität auf alle Berichts widgets zugreifen und alle Berichte zur Kommunikationskonformität anzeigen. |
@@ -116,23 +116,23 @@ Die schnellste Möglichkeit, auf die Lösung zu  zugreifen, besteht in der direk
 
 ### <a name="starting-from-the-microsoft-365-compliance-center"></a>Beginnend mit dem Microsoft 365 Compliance Center
 
-Eine weitere einfache Möglichkeit für Contoso-IT-Administratoren und Compliancespezialisten, auf die Kommunikationskonformitätslösung zu zugreifen, besteht in der direkten Anmeldung beim **Microsoft 365 Compliance Center** [( https://compliance.microsoft.com)](https://compliance.microsoft.com). Nach der Anmeldung müssen die Benutzer lediglich das Steuerelement **Alle anzeigen** auswählen, um alle Compliance-Lösungen anzuzeigen, und dann die Lösung **Kommunikationscompliance** auswählen, um zu beginnen.
+Eine weitere einfache Möglichkeit für Contoso-IT-Administratoren und Compliance-Experten, auf die Kommunikationskonformitätslösung zu zugreifen, besteht in der direkten Anmeldung beim **Microsoft 365 Compliance Center** [( https://compliance.microsoft.com)](https://compliance.microsoft.com). Nach der Anmeldung müssen die Benutzer lediglich das Steuerelement **Alle anzeigen** auswählen, um alle Compliance-Lösungen anzuzeigen, und dann die Lösung **Kommunikationscompliance** auswählen, um zu beginnen.
 
 ![Compliance Center](../media/communication-compliance-case-center.png)
 
 ### <a name="starting-from-the-microsoft-365-solution-catalog"></a>Beginnend mit dem Microsoft 365-Lösungskatalog
 
-Contoso-IT-Administratoren und Compliancespezialisten können auch auf die Kommunikationskonformitätslösung zugreifen, indem Sie den Microsoft 365-Lösungskatalog auswählen. Durch Auswählen  **des** Abschnitts "Katalog" im Abschnitt "Lösungen" im linken Navigationsbereich im **Microsoft 365 Compliance Center** können sie den Lösungskatalog mit allen Microsoft 365-Compliancelösungen öffnen. Beim Scrollen nach unten zum **Abschnitt "Insider-Risikomanagement"** können Contoso-IT-Administratoren die Kommunikationskonformität für die ersten Schritte auswählen. Contoso-IT-Administratoren entscheiden sich auch für die Verwendung des Steuerelements "In Navigation anzeigen", um die Kommunikationskonformitätslösung für den schnelleren Zugriff an den linken Navigationsbereich zu anheften, wenn sie sich in Zukunft anmelden.
+Contoso-IT-Administratoren und Compliancespezialisten können auch auf die Kommunikationskonformitätslösung zugreifen, indem Sie den Microsoft 365-Lösungskatalog auswählen. Durch Auswählen  **des** Abschnitts "Katalog" im Abschnitt "Lösungen" im linken Navigationsbereich im **Microsoft 365 Compliance Center** können sie den Lösungskatalog mit allen Microsoft 365-Compliancelösungen öffnen. Wenn Sie zum Abschnitt **"Insider-Risikomanagement"** scrollen, können Contoso-IT-Administratoren die Kommunikationskonformität für die ersten Schritte auswählen. Contoso-IT-Administratoren entscheiden sich auch für die Verwendung des Steuerelements "In Navigation anzeigen", um die Kommunikationskonformitätslösung für den schnelleren Zugriff an den linken Navigationsbereich zu anheften, wenn sie sich in Zukunft anmelden.
 
 ![Lösungskatalog](../media/communication-compliance-case-solution.png)
 
 ### <a name="starting-from-the-microsoft-365-admin-center"></a>Beginnend mit dem Microsoft 365 Admin Center
 
-Um beim Starten vom Microsoft 365 Admin Center aus auf die Kommunikationskonformität zu zugreifen, melden sich contoso-IT-Administratoren und Compliancespezialisten beim Microsoft 365 Admin Center [an https://admin.microsoft.com) (](https://admin.microsoft.com) und navigieren Sie zu Microsoft **365 Admin Center**  >  **Compliance**.
+Um auf die Kommunikationskonformität zu zugreifen, wenn Sie vom Microsoft 365 Admin Center aus starten, melden sich contoso-IT-Administratoren und Compliancespezialisten beim Microsoft 365 Admin Center [an (und https://admin.microsoft.com)](https://admin.microsoft.com) navigieren Sie zu Microsoft **365 Admin Center**  >  **Compliance).**
 
 ![Link zur Kommunikationskonformität](../media/communication-compliance-case-compliance-link.png)
 
-Diese Aktion öffnet das **Office 365 Security and Compliance Center** und muss den Link zum Microsoft **365 Compliance Center** auswählen, der im Banner oben auf der Seite bereitgestellt wird.
+Diese Aktion öffnet das **Office 365 Security and Compliance Center,** und sie müssen den Link zum **Microsoft 365 Compliance Center** auswählen, der im Banner oben auf der Seite bereitgestellt wird.
 
 ![Office 365 Security and Compliance Center](../media/communication-compliance-case-scc.png)
 
@@ -140,7 +140,7 @@ Im **Microsoft 365 Compliance Center** wählen Contoso -IT-Administratoren "Alle
 
 ![Menü "Kommunikationskonformität"](../media/communication-compliance-case-show-all.png)
 
-Nachdem Sie **"Alle anzeigen"** ausgewählt haben, können die Contoso-IT-Administratoren auf die Kommunikationskonformitätslösung zugreifen.
+Nachdem Sie **"Alle anzeigen"** ausgewählt haben, können die Contoso-IT-Administratoren auf die Lösung zur Kommunikationskonformität zugreifen.
 
 ![Übersicht der Kommunikationscompliance](../media/communication-compliance-case-overview.png)
 
@@ -158,7 +158,7 @@ Die IT-Administratoren von Contoso überprüfen und vervollständigen die [Schri
 
 Die Kommunikationskonformität setzt voraus, dass Yammer Mandanten für eine Organisation sich im nativen Modus befindet, um in privaten Nachrichten und öffentlichen Communityunterhaltungen auf anstößige Sprache zu überwachen.
 
-Contoso-IT-Administratoren stellen sicher, dass sie die Informationen im Artikel "Übersicht über den Yammer nativen Modus [in Microsoft 365"](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) lesen und die Schritte zum Ausführen des Migrationstools im Artikel "Konfigurieren ihres Yammer-Netzwerks für den nativen Modus für [Microsoft 365"](/yammer/configure-your-yammer-network/native-mode) ausführen.
+Contoso-IT-Administratoren stellen sicher, dass sie die Informationen im Artikel "Übersicht über den Yammer nativen Modus [in Microsoft 365"](/yammer/configure-your-yammer-network/overview-native-mode) lesen und die Schritte zum Ausführen des Migrationstools im Artikel "Konfigurieren ihres Yammer-Netzwerks für den nativen Modus für [Microsoft 365"](/yammer/configure-your-yammer-network/native-mode) ausführen.
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>Einrichten einer Gruppe für Benutzer im Bereich
 
@@ -184,7 +184,7 @@ Wenn alle Voraussetzungen erfüllt sind, sind die IT-Administratoren und die Com
     ![Vorlage für anstößige Sprache der Kommunikationskonformität](../media/communication-compliance-case-template.png)
 
 2. Im Assistenten für Richtlinienvorlagen arbeiten die IT-Administratoren und Compliance-Spezialisten von Contoso zusammen, um die drei erforderlichen Felder auszufüllen: **Richtliniennamen**, **Zu beaufsichtigende Benutzer oder Gruppen** und **Prüfer**.
-3. Da der Assistent für Richtlinien bereits einen Namen für die Richtlinie vorgeschlagen hat, beschließen die IT-Administratoren und Compliance-Spezialisten, den vorgeschlagenen Namen beizubehalten und sich auf die übrigen Bereiche zu konzentrieren. Sie wählen die Gruppe  *"Alle* Benutzer" für die Zu überwachenden Benutzer oder Gruppen und die Compliancespezialisten aus, die Richtlinienwarnungen für das Feld "Prüfer" untersuchen und **beaufsichtigen** sollen. Der letzte Schritt zum Konfigurieren der Richtlinie und zum Sammeln von Warnungsinformationen besteht in der Auswahl von **"Richtlinie erstellen".**
+3. Da der Assistent für Richtlinien bereits einen Namen für die Richtlinie vorgeschlagen hat, beschließen die IT-Administratoren und Compliance-Spezialisten, den vorgeschlagenen Namen beizubehalten und sich auf die übrigen Bereiche zu konzentrieren. Sie wählen die Gruppe  *"Alle* Benutzer" für die Zu überwachenden Benutzer oder Gruppen und die Compliancespezialisten aus, die Richtlinienwarnungen für das Feld "Prüfer" untersuchen und **beaufsichtigen** sollen. Der letzte Schritt zum Konfigurieren der Richtlinie und zum Sammeln von Warnungsinformationen besteht in der Auswahl der Option **"Richtlinie erstellen".**
 
     ![Assistent für kommunikationskonforme anstößige Sprache](../media/communication-compliance-case-wizard.png)
 

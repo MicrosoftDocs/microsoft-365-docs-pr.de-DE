@@ -1,6 +1,6 @@
 ---
 title: Informationen zur Verwaltung des privilegierten Zugriffs
-description: Dieser Artikel bietet eine Übersicht über die Verwaltung privilegierter Zugriffsrechte in Microsoft 365, einschließlich Antworten auf häufig gestellte Fragen (FAQs).
+description: Dieser Artikel bietet eine Übersicht über privileged access management in Microsoft 365, einschließlich Antworten auf häufig gestellte Fragen (FAQs).
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -20,44 +20,44 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
-ms.openlocfilehash: dc7c6807e8c89b4146784e5be7f57472777a4c84
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 059e1653d7db9140dbc80fd69fe36e95a744b079
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613329"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126604"
 ---
 # <a name="learn-about-privileged-access-management"></a>Informationen zur Verwaltung des privilegierten Zugriffs
 
-Die Verwaltung des privilegierten Zugriffs ermöglicht eine präzise steuerbare Zugriffskontrolle über privilegierte Administratoraufgaben in Office 365. Dies kann Ihre Organisation vor Angriffen schützen, bei denen vorhandene privilegierte Administratorkonten mit kontinuierlichem Zugang auf vertrauliche Daten oder kritische Konfigurationseinstellungen verwendet werden. Für die privilegierte Zugriffsverwaltung müssen Benutzer Just-in-Time-Zugriff anfordern, um erhöhte und privilegierte Aufgaben über einen umfangreichen und zeitgebundenen Genehmigungsworkflow abzuschließen. Diese Konfiguration ermöglicht Benutzern einen einfacheren Zugriff, um die jeweilige Aufgabe auszuführen, ohne dass vertrauliche Daten oder wichtige Konfigurationseinstellungen gefährdet werden. Durch die Aktivierung der privilegierten Zugriffsverwaltung in Microsoft 365 kann Ihre Organisation mit NULL stehenden rechten arbeiten und eine Verteidigungsstufe gegenständige administrative Zugriffs Sicherheitsrisiken bieten.
+Die Verwaltung des privilegierten Zugriffs ermöglicht eine präzise steuerbare Zugriffskontrolle über privilegierte Administratoraufgaben in Office 365. Dies kann Ihre Organisation vor Angriffen schützen, bei denen vorhandene privilegierte Administratorkonten mit kontinuierlichem Zugang auf vertrauliche Daten oder kritische Konfigurationseinstellungen verwendet werden. Bei der Verwaltung des privilegierten Zugriffs müssen Benutzer Just-in-Time-Zugriff anfordern, um Aufgaben mit erhöhten und privilegierten Rechten über einen sehr bereichs- und zeitgebundenen Genehmigungsworkflow auszuführen. Diese Konfiguration ermöglicht Benutzern einen einfacheren Zugriff, um die jeweilige Aufgabe auszuführen, ohne dass vertrauliche Daten oder wichtige Konfigurationseinstellungen gefährdet werden. Die Aktivierung der Verwaltung des privilegierten Zugriffs in Microsoft 365 ermöglicht Es Ihrer Organisation, ohne ständige Berechtigungen zu arbeiten und eine Schutzebene gegen ständige Sicherheitslücken im Administrativen Zugriff zu bieten.
 
-Eine kurze Übersicht über den integrierten Workflow "Customer Lockbox" und "privileged Access Management" finden Sie in diesem [Customer Lockbox-und privileged Access Management-Video](https://go.microsoft.com/fwlink/?linkid=2066800).
+Eine kurze Übersicht über die integrierte Kunden-Lockbox und den Workflow für die Verwaltung des privilegierten Zugriffs finden Sie in diesem Video zur Verwaltung von Kunden-Lockbox und [privilegiertem Zugriff.](https://go.microsoft.com/fwlink/?linkid=2066800)
 
 ## <a name="layers-of-protection"></a>Schutzstufen
 
-Die privilegierte Zugriffsverwaltung ergänzt andere Daten-und Zugriffs Funktionsschutz Funktionen in der Microsoft 365-Sicherheitsarchitektur. Das Einschließen einer privilegierten Zugriffsverwaltung als Teil eines integrierten und mehrschichtigen Sicherheitsansatzes stellt ein Sicherheitsmodell bereit, das den Schutz von vertraulichen Informationen und Microsoft 365-Konfigurationseinstellungen maximiert. Wie im Diagramm dargestellt, basiert die Verwaltung privilegierter Zugriffsrechte auf dem Schutz der systemeigenen Verschlüsselung von Microsoft 365-Daten und dem Sicherheitsmodell der rollenbasierten Zugriffssteuerung von Microsoft 365-Diensten. Bei Verwendung mit [Azure AD privilegierten Identitätsverwaltung](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)bieten diese beiden Features Zugriffssteuerung mit Just-in-Time-Zugriff in unterschiedlichen Bereichen.
+Privileged Access Management ergänzt andere Datenschutz- und Zugriffsfunktionsschutz in der Microsoft 365-Sicherheitsarchitektur. Die Einbeziehung von Privileged Access Management als Teil eines integrierten und mehrschichtigen Sicherheitsansatzes bietet ein Sicherheitsmodell, das den Schutz vertraulicher Informationen und Microsoft 365-Konfigurationseinstellungen maximiert. Wie im Diagramm dargestellt, basiert die Verwaltung des privilegierten Zugriffs auf dem Schutz, der mit der systemeigenen Verschlüsselung von Microsoft 365-Daten bereitgestellt wird, und dem rollenbasierten Sicherheitsmodell für die Zugriffssteuerung von Microsoft 365-Diensten. Bei Verwendung mit [Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure)bieten diese beiden Features die Zugriffssteuerung mit Just-in-Time-Zugriff in unterschiedlichen Bereich.
 
-![Mehrstufiger Schutz in Microsoft 365](../media/pam-layered-protection.png)
+![Mehrschichtigen Schutz in Microsoft 365](../media/pam-layered-protection.png)
 
-Die Verwaltung von privilegierten Zugriffsrechten wird auf **Taskebene** definiert und auf der Ebene des Bereichs durchgeführt, während Azure AD privilegierte Identitätsverwaltung den Schutz auf **Rollen** Ebene mit der Möglichkeit zur Ausführung mehrerer Aufgaben anwendet. Azure AD Privileged Identity Management ermöglicht in erster Linie die Verwaltung der Zugriffe für AD-Rollen und Rollengruppen, während die Verwaltung privilegierter Zugriffe in Microsoft 365 nur auf Aufgabenebene erfolgt.
+Die Verwaltung des privilegierten Zugriffs  wird auf Aufgabenebene definiert und festgelegt, während Azure AD Privileged Identity Management Schutz auf Rollenebene mit der Möglichkeit bietet, mehrere Aufgaben auszuführen.  Azure AD Privileged Identity Management ermöglicht in erster Linie die Verwaltung der Zugriffe für AD-Rollen und Rollengruppen, während die Verwaltung privilegierter Zugriffe in Microsoft 365 nur auf Aufgabenebene erfolgt.
 
-- **Aktivieren der privilegierten Zugriffsverwaltung, wobei bereits Azure AD privilegierte Identitätsverwaltung verwendet wird:** Das Hinzufügen einer privilegierten Zugriffsverwaltung bietet eine weitere granulare Schicht von Schutz-und Überwachungsfunktionen für privilegierten Zugriff auf Microsoft 365-Daten.
+- **Aktivieren der Verwaltung des privilegierten Zugriffs, während Azure AD Privileged Identity Management bereits verwendet wird:** Das Hinzufügen von Privileged Access Management bietet eine weitere granulare Schutz- und Überwachungsebene für privilegierten Zugriff auf Microsoft 365-Daten.
 
-- **Aktivieren Azure AD privilegierter Identitätsverwaltung, während Sie bereits die privilegierte Zugriffsverwaltung in Office 365 verwenden:**  Das Hinzufügen Azure AD privilegierter Identitätsverwaltung zur privilegierten Zugriffsverwaltung kann den privilegierten Zugriff auf Daten außerhalb von Microsoft 365 erweitern, die in erster Linie von Benutzerrollen oder Identität definiert werden.  
+- **Aktivieren von Azure AD Privileged Identity Management, während die Verwaltung des privilegierten Zugriffs bereits in Office 365 verwendet wird:**  Durch das Hinzufügen von Azure AD Privileged Identity Management zur Verwaltung des privilegierten Zugriffs kann der privilegierte Zugriff auf Daten außerhalb von Microsoft 365 erweitert werden, die in erster Linie durch Benutzerrollen oder Identität definiert sind.  
 
-## <a name="privileged-access-management-architecture-and-process-flow"></a>Privilegierte Zugriffs Verwaltungsarchitektur und Prozessfluss
+## <a name="privileged-access-management-architecture-and-process-flow"></a>Architektur und Prozessablauf der Verwaltung des privilegierten Zugriffs
 
-Jeder der folgenden Prozessabläufe gibt einen Überblick über die Architektur des privilegierten Zugriffs und deren Interaktion mit dem Microsoft 365-Substrat, der Überwachung und der Exchange-Verwaltungs Remoterunspace.
+Jeder der folgenden Prozessabläufe beschreibt die Architektur des privilegierten Zugriffs und seine Interaktion mit dem Microsoft 365-Substrate, der Überwachung und dem Exchange-Verwaltungs-Runspace.
 
 ### <a name="step-1-configure-a-privileged-access-policy"></a>Schritt 1: Richtlinie für privilegierten Zugriff konfigurieren
 
-Wenn Sie eine Richtlinie für privilegierten Zugriff mit dem [Microsoft 365 Admin Center](https://admin.microsoft.com) oder der Exchange-Verwaltungskonsole konfigurieren, definieren Sie die Richtlinie und die Features für den privilegierten Zugriff und die Richtlinien Attribute im Microsoft 365-Substrat. Die Aktivitäten werden im Security &amp; Compliance Center protokolliert. Die Richtlinie ist jetzt aktiviert und bereit, eingehende Genehmigungsanforderungen zu bearbeiten.
+Wenn Sie eine Richtlinie für den privilegierten Zugriff mit dem [Microsoft 365 Admin Center](https://admin.microsoft.com) oder der Exchange Management PowerShell konfigurieren, definieren Sie die Richtlinien- und Featureprozesse für privilegierten Zugriff sowie die Richtlinienattribute im Microsoft 365-Substrate. Die Aktivitäten werden im Security &amp; Compliance Center protokolliert. Die Richtlinie ist jetzt aktiviert und bereit, eingehende Genehmigungsanforderungen zu bearbeiten.
 
-![Schritt 1: Richtlinienerstellung](../media/pam-step1-policy-creation.jpg)
+![Schritt 1: Erstellen von Richtlinien](../media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>Schritt 2: Zugriffsanforderung
 
-Im [Microsoft 365 Admin Center](https://admin.microsoft.com) oder mit der Exchange-Verwaltungs-PowerShell können Benutzer Zugriff auf Erweiterte oder privilegierte Aufgaben anfordern. Das Feature für privilegierten Zugriff sendet die Anforderung an das Microsoft 365-Substrat zur Verarbeitung mit der konfigurierten Zugriffsrichtlinie für Berechtigungen und zeichnet die Aktivität in den Security &amp; Compliance Center-Protokollen auf.
+Im [Microsoft 365 Admin Center](https://admin.microsoft.com) oder mit der Exchange-Verwaltungs-PowerShell können Benutzer Zugriff auf erhöhte oder privilegierte Aufgaben anfordern. Das Feature für privilegierten Zugriff sendet die Anforderung an das Microsoft 365-Substrate zur Verarbeitung gemäß der konfigurierten Berechtigungszugriffsrichtlinie und zeichnet die Aktivität in den Security Compliance Center-Protokollen &amp; auf.
 
 ![Schritt 2: Zugriffsanforderung](../media/pam-step2-access-request.jpg)
 
@@ -69,36 +69,36 @@ Eine Genehmigungsanforderung wird generiert und die ausstehende Anforderungsbena
 
 ### <a name="step-4-access-processing"></a>Schritt 4: Zugriffsverarbeitung
 
-Bei einer genehmigten Anforderung wird die Aufgabe vom Exchange-Verwaltungs-Runspace verarbeitet. Die Genehmigung wird gegen die Richtlinie für privilegierten Zugriff geprüft und vom Microsoft 365-Substrat verarbeitet. Alle Aktivitäten für den Vorgang werden im Security &amp; Compliance Center protokolliert.
+Bei einer genehmigten Anforderung wird die Aufgabe vom Exchange-Verwaltungs-Runspace verarbeitet. Die Genehmigung wird gegen die Richtlinie für privilegierten Zugriff geprüft und vom Microsoft 365-Substrat verarbeitet. Alle Aktivitäten für die Aufgabe werden im Security &amp; Compliance Center protokolliert.
 
 ![Schritt 4: Zugriffsverarbeitung](../media/pam-step4-access-processing.jpg)
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-### <a name="what-skus-can-use-privileged-access-in-office-365"></a>Welche SKUs können in Office 365 privilegierten Zugriff verwenden?
+### <a name="what-skus-can-use-privileged-access-in-office-365"></a>Welche SKUs können privilegierten Zugriff in Office 365 verwenden?
 
-Die privilegierte Zugriffsverwaltung steht Kunden für eine große Auswahl an Microsoft 365-und Office 365-Abonnements und-Add-ons zur Verfügung. Weitere Informationen finden Sie unter [Erste Schritte mit privilegierten Zugriffsverwaltung](privileged-access-management-configuration.md) .
+Privileged Access Management steht Kunden für eine breite Auswahl an Microsoft 365- und Office 365-Abonnements und -Add-Ons zur Verfügung. Weitere [Informationen finden Sie unter "Erste Schritte mit der Verwaltung des privilegierten](privileged-access-management-configuration.md) Zugriffs".
 
-### <a name="when-will-privileged-access-support-office-365-workloads-beyond-exchange"></a>Wann unterstützt der privilegierte Zugriff Office 365 Arbeitsauslastungen jenseits von Exchange?
+### <a name="when-will-privileged-access-support-office-365-workloads-beyond-exchange"></a>Wann unterstützt der privilegierte Zugriff Office 365-Workloads über Exchange hinaus?
 
-Die privilegierte Zugriffsverwaltung steht in Kürze in anderen Office 365 Arbeitsauslastungen zur Verfügung. Weitere Informationen finden Sie in der [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap) .
+Privileged access management will be available in other Office 365 workloads soon. Weitere Informationen finden Sie in der [Microsoft 365-Roadmap.](https://www.microsoft.com/microsoft-365/roadmap)
 
-### <a name="my-organization-needs-more-than-30-privileged-access-policies-will-this-limit-be-increased"></a>Meine Organisation benötigt mehr als 30 privilegierte Zugriffsrichtlinien, wird dieser Grenzwert erhöht?
+### <a name="my-organization-needs-more-than-30-privileged-access-policies-will-this-limit-be-increased"></a>Meine Organisation benötigt mehr als 30 Richtlinien für privilegierten Zugriff. Wird dieser Grenzwert erhöht?
 
-Ja, das Erhöhen der aktuellen Begrenzung von 30 privilegierten Zugriffsrichtlinien pro Organisation erfolgt in der Feature-Roadmap.
+Ja, das Erhöhen des aktuellen Grenzwerts von 30 Richtlinien für privilegierten Zugriff pro Organisation steht in der Feature-Roadmap.
 
-### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>Muss ich ein globaler Administrator sein, um den privilegierten Zugriff in Office 365 zu verwalten?
+### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>Muss ich ein globaler Administrator sein, um privilegierten Zugriff in Office 365 zu verwalten?
 
-Nein, Sie müssen die Rolle "Exchange-Rollenverwaltung" Konten zuweisen, die den privilegierten Zugriff in Office 365 verwalten. Wenn Sie die Rolle "Rollenverwaltung" nicht als eigenständige Konto Berechtigung konfigurieren möchten, umfasst die globale Administrator Rolle standardmäßig diese Rolle und kann den privilegierten Zugriff verwalten. Benutzer, die in der Gruppe einer genehmigenden Person enthalten sind, müssen kein globaler Administrator sein oder die Rolle "Rollenverwaltung" zugewiesen haben, um Anforderungen mit PowerShell zu überprüfen und zu genehmigen.
+Nein, Sie benötigen die Exchange-Rollenverwaltungsrolle, die Konten zugewiesen ist, die privilegierten Zugriff in Office 365 verwalten. Wenn Sie die Rolle "Rollenverwaltung" nicht als eigenständige Kontoberechtigung konfigurieren möchten, umfasst die Rolle "Globaler Administrator" diese Rolle standardmäßig und kann privilegierten Zugriff verwalten. Benutzer, die in der Gruppe der genehmigenden Benutzer enthalten sind, müssen kein globaler Administrator sein oder die Rolle "Rollenverwaltung" zum Überprüfen und Genehmigen von Anforderungen mit PowerShell zugewiesen haben.
 
-### <a name="how-is-privileged-access-management-related-to-customer-lockbox"></a>Wie bezieht sich die privilegierte Zugriffsverwaltung auf die kundensperre?
+### <a name="how-is-privileged-access-management-related-to-customer-lockbox"></a>Wie ist die Verwaltung des privilegierten Zugriffs mit der Kunden-Lockbox verbunden?
 
-[Kunden-Lockbox](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests) ermöglicht eine Ebene der Zugriffssteuerung für Organisationen, wenn Microsoft auf Daten zugreift. Die privilegierte Zugriffsverwaltung ermöglicht eine granulare Zugriffssteuerung innerhalb einer Organisation für alle Microsoft 365-privilegierten Aufgaben.
+[Die Kunden-Lockbox](/office365/admin/manage/customer-lockbox-requests) ermöglicht organisationen eine Zugriffskontrolle, wenn Microsoft auf Daten zulässt. Privileged access management allows granular access control within an organization for all Microsoft 365 privileged tasks.
 
-## <a name="ready-to-get-started"></a>Sind Sie bereit loszulegen?
+## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?
 
-Beginnen [Sie mit der Konfiguration Ihrer Organisation für die privilegierte Zugriffsverwaltung](privileged-access-management-configuration.md).
+Beginnen [Sie mit der Konfiguration Ihrer Organisation für die Verwaltung des privilegierten Zugriffs.](privileged-access-management-configuration.md)
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-[Interaktiver Leitfaden: überwachen und Steuern von Administratoraufgaben mit privilegierter Zugriffsverwaltung](https://content.cloudguides.com/guides/Privileged%20Access%20Management)
+[Interaktives Handbuch: Überwachen und Steuern von Administratoraufgaben mit Privileged Access Management](https://content.cloudguides.com/guides/Privileged%20Access%20Management)

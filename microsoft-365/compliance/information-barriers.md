@@ -16,18 +16,18 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 003347d46bed2529831a92681e73630d58a1f653
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 1ef09fbf7a517950ae182472e4b4d5ef896d65e5
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071270"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126542"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>Informationen zu Informationsbarrieren in Microsoft 365
 
 Microsoft Cloud Services umfassen leistungsstarke Funktionen für Kommunikation und Zusammenarbeit. Angenommen, Sie möchten die Kommunikation und Zusammenarbeit zwischen zwei Gruppen einschränken, um ein Interessenkonflikt in Ihrer Organisation zu vermeiden. Oder Sie möchten die Kommunikation und Zusammenarbeit zwischen bestimmten Personen innerhalb Ihrer Organisation einschränken, um interne Informationen zu schützen. Microsoft 365 ermöglicht die Kommunikation und Zusammenarbeit zwischen Gruppen und Organisationen. Gibt es also eine Möglichkeit, die Kommunikation und Zusammenarbeit zwischen bestimmten Benutzergruppen bei Bedarf einzuschränken? Mit Informationsbarrieren können Sie!
 
-Microsoft Teams, SharePoint Online und OneDrive for Business unterstützen Informationsbarrieren. Wenn Ihr [Abonnement](#required-licenses-and-permissions) Informationsbarrieren enthält, kann ein Complianceadministrator oder ein Administrator für Informationsbarrieren Richtlinien definieren, um die Kommunikation zwischen Benutzergruppen in Microsoft Teams zu ermöglichen oder zu verhindern. Richtlinien für Informationsbarrieren können in folgenden Situationen verwendet werden:
+Microsoft Teams, SharePoint Online und OneDrive for Business unterstützen Informationsbarrieren. Vorausgesetzt, Ihr [Abonnement](#required-licenses-and-permissions) enthält Informationsbarrieren, ein Complianceadministrator oder ein Administrator für Informationsbarrieren kann Richtlinien definieren, um die Kommunikation zwischen Benutzergruppen in Microsoft Teams zu ermöglichen oder zu verhindern. Richtlinien für Informationsbarrieren können in folgenden Situationen verwendet werden:
 
 - Der Benutzer in der Gruppe "Tagesklasse" sollte keine Dateien mit dem Marketingteam kommunizieren oder mit ihm teilen.
 - Finanzmitarbeiter, die an vertraulichen Unternehmensinformationen arbeiten, sollten keine Dateien mit bestimmten Gruppen innerhalb ihrer Organisation kommunizieren oder mit diesen teilen.
@@ -38,7 +38,7 @@ Microsoft Teams, SharePoint Online und OneDrive for Business unterstützen Infor
 > [!IMPORTANT]
 > Informationsbarrieren ***unterstützen** nur _ Zwei-Wege-Einschränkungen. One way restrictions, such as marketing can communicate and collaborate with day traders, but day traders cannot communicate and collaborate with marketing _*_is not supported_**.
 
-Für alle diese Beispielszenarien (und vieles mehr) können Richtlinien für Informationsbarrieren definiert werden, um die Kommunikation und Zusammenarbeit in Microsoft Teams, SharePoint Online und OneDrive zu verhindern oder zu ermöglichen. Solche Richtlinien können verhindern, dass Benutzer mit personen, die sie nicht sollten, anrufen oder chatten, oder personen können nur mit bestimmten Gruppen in Microsoft Teams kommunizieren. Wenn Richtlinien für Informationsbarrieren in Kraft sind, wenn Benutzer, die von diesen Richtlinien abgedeckt werden, versuchen, mit anderen in Microsoft Teams zu kommunizieren und mit ihnen zusammenzuarbeiten, werden SharePoint Online- oder #A0 durchgeführt, um Kommunikation und Zusammenarbeit (gemäß definition durch Richtlinien für Informationsbarrieren) zu verhindern (oder zu erlauben).
+Für alle diese Beispielszenarien (und vieles mehr) können Richtlinien für Informationsbarrieren definiert werden, um die Kommunikation und Zusammenarbeit in Microsoft Teams, SharePoint Online und OneDrive zu verhindern oder zu ermöglichen. Solche Richtlinien können verhindern, dass Benutzer mit personen, die sie nicht sollten, anrufen oder chatten, oder personen können nur mit bestimmten Gruppen in Microsoft Teams kommunizieren. Wenn Richtlinien für Informationsbarrieren in Kraft sind, wenn Benutzer, die von diesen Richtlinien abgedeckt werden, versuchen, mit anderen in Microsoft Teams zu kommunizieren und mit ihnen zusammenzuarbeiten, werden SharePoint Online- oder #A0 durchgeführt, um Kommunikation und Zusammenarbeit zu verhindern (oder zu erlauben) (wie durch Richtlinien für Informationsbarrieren definiert).
 
 Weitere Informationen zur Benutzererfahrung mit Informationsbarrieren finden Sie unter:
 
@@ -47,7 +47,7 @@ Weitere Informationen zur Benutzererfahrung mit Informationsbarrieren finden Sie
 - [Informationsbarrieren in OneDrive](/onedrive/information-barriers)
 
 > [!IMPORTANT]
-> Derzeit gelten Informationsbarrieren nicht für die E-Mail-Kommunikation. Darüber hinaus sind Informationsbarrieren unabhängig von [Compliance-Grenzen.](set-up-compliance-boundaries.md)<p> Bevor Sie Richtlinien für Informationsbarrieren definieren und anwenden, stellen Sie sicher, dass in Ihrer Organisation keine Richtlinien für das [Exchange-Adressbuch](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) wirksam sind. (Informationsbarrieren basieren auf Adressbuchrichtlinien.)
+> Derzeit gelten Informationsbarrieren nicht für die E-Mail-Kommunikation. Darüber hinaus sind Informationsbarrieren unabhängig von [Compliance-Grenzen.](set-up-compliance-boundaries.md)<p> Bevor Sie Richtlinien für Informationsbarrieren definieren und anwenden, stellen Sie sicher, dass in Ihrer Organisation keine Richtlinien für das [Exchange-Adressbuch](/exchange/address-books/address-book-policies/address-book-policies) wirksam sind. (Informationsbarrieren basieren auf Adressbuchrichtlinien.)
 
 ## <a name="what-happens-with-information-barriers"></a>Was mit Informationsbarrieren geschieht
 
@@ -73,7 +73,7 @@ In SharePoint Online und OneDrive bestimmen und verhindern Richtlinien für Info
 
 - Hinzufügen eines Mitglieds zu einer Website
 - Zugreifen auf Website oder Inhalt durch einen Benutzer
-- Freigeben von Website oder Inhalten für einen anderen Benutzer
+- Freigeben von Website- oder Inhalten für einen anderen Benutzer
 - Durchsuchen einer Website
 
 Weitere Informationen zur Benutzererfahrung mit Informationsbarrieren finden Sie unter [Informationsbarrieren in SharePoint Online.](/sharepoint/information-barriers)
@@ -88,7 +88,7 @@ Informationsbarrieren werden jetzt ins Rollen gebracht und sind in Abonnements e
 - Microsoft 365 Compliance E5/A5
 - Microsoft 365 Insider Risk Management
 
-Weitere Informationen finden Sie unter [Microsoft 365-Lizenzierungsanleitungen für & Compliance.](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
+Weitere Informationen finden Sie unter [Microsoft 365-Lizenzierungsanleitungen für & Compliance.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
 
 Zum [Definieren oder Bearbeiten von](information-barriers-policies.md)Richtlinien für Informationsbarrieren muss Ihnen eine der folgenden Rollen zugewiesen sein:
 
