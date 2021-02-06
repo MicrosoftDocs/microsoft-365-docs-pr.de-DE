@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ressourcen, die Sie bei der Einhaltung behördlicher Vorschriften für Informationsgovernance und Datensatzverwaltung unterstützen
-ms.openlocfilehash: 891dd3f37e70ae94dbae96baaa7c38b71456305b
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: e46abc4efec356cfd058414063d3e76ffe8ff224
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032566"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50109934"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Behördliche Vorschriften für Informationsgovernance und Datensatzverwaltung
 
@@ -34,7 +34,7 @@ Diese Ressourcen stehen zum Download auf der Seite [Datenschutzressourcen, häuf
 
 **Unterstützung der Complianceverpflichtungen des New Zealand Public Records Act durch Microsoft 365** - [Bewertung herunterladen](https://aka.ms/NZPRA)
 
-Zutreffende Workloads: SharePoint, OneDrive, Microsoft Teams, Exchange und Skype for Business
+Zutreffende Workloads: Microsoft Office SharePoint Online, OneDrive, Microsoft Teams und Exchange
 
 Dieser im Januar 2021 veröffentlichte Bericht wurde in Zusammenarbeit mit Microsoft Neuseeland erstellt, um die Eignung der Microsoft 365-Dienste für das Aufzeichnen, Speichern und die Erfüllung von Vorgaben für elektronische Datensätze zu ermitteln, die in den folgenden Bestimmungen festgelegt sind: 
 
