@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Aufbewahrungsrichtlinien für Überwachungsprotokolle sind Bestandteil der neuen erweiterten Überwachungsfunktionen in Microsoft 365. Mit einer Aufbewahrungsrichtlinie für Überwachungsprotokolle können Sie festlegen, wie lange Überwachungsprotokolle in Ihrer Organisation aufbewahrt werden sollen.
-ms.openlocfilehash: c106024e5426972f6637d6226b385d1179516d4d
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: eeddf4c963284acaa908e07ddfdae77ec0bb080c
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870944"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114934"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle
 
@@ -51,21 +51,19 @@ Die erweiterte Überwachung in Microsoft 365 stellt eine Standardaufbewahrungsri
 
 - Alle benutzerdefinierten (von Ihrer Organisation erstellten) Aufbewahrungsrichtlinien für Überwachungsprotokolle haben Vorrang vor der Standardaufbewahrungsrichtlinie. Wenn Sie beispielsweise eine Aufbewahrungsrichtlinie für Überwachungsprotokolle für Exchange-Postfachaktivitäten erstellen, die einen Aufbewahrungszeitraum von weniger als einem Jahr vorsieht, werden die Überwachungsdatensätze für Exchange-Postfachaktivitäten für die in der benutzerdefinierten Richtlinie festgelegte kürzere Dauer aufbewahrt.
 
-## <a name="create-an-audit-log-retention-policy-in-the-compliance-center"></a>Erstellen einer Aufbewahrungsrichtlinie für Überwachungsprotokolle im Compliance Center
+## <a name="create-an-audit-log-retention-policy"></a>Erstellen einer Aufbewahrungsrichtlinie für Überwachungsprotokolle
 
-1. Wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com), und melden Sie sich mit dem Benutzerkonto an, dem die Rolle "Organisationskonfiguration"im Security & Compliance Center zugewiesen ist.
+1. Wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com), und melden Sie sich mit dem Benutzerkonto an, dem auf der Berechtigungsseite im Security & Compliance Center die Rolle "Organisationskonfiguration" zugewiesen ist.
 
 2. Klicken Sie im linken Bereich des Microsoft 365 Compliance Center auf **Alle anzeigen** und dann auf **Überwachung**.
 
-    Die Seite **Überwachung** wird angezeigt.
+3. Klicken Sie auf die Registerkarte **Aufbewahrungsrichtlinien für die Überwachung**.
 
-    ![Die Suchseite des Überwachungsprotokolls im Compliance Center](../media/AuditLogRetentionPolicy1.png)
+4. Klicken Sie auf **Aufbewahrungsrichtlinie für die Überwachung erstellen**, und füllen Sie dann auf der Flyoutseite die folgenden Felder aus:
 
-3. Klicken Sie auf **Richtlinie zur Überwachungsaufbewahrung erstellen**, und füllen Sie dann die folgenden Felder auf der Flyout-Seite aus:
+    ![Flyoutseite "Neue Aufbewahrungsrichtlinie für die Überwachung"](../media/CreateAuditLogRetentionPolicy.png)
 
-    ![Flyoutseite "Aufbewahrungsrichtlinien für die Überwachung"](../media/AuditLogRetentionPolicy2.png)
-
-   1. **Name:** Der Name der Aufbewahrungsrichtlinie für Überwachungsprotokolle. Dieser Name muss in Ihrer Organisation eindeutig sein.
+   1. **Richtlinienname:** Der Name der Aufbewahrungsrichtlinie für Überwachungsprotokolle. Dieser Name muss in Ihrer Organisation eindeutig sein und kann nach dem Erstellen der Richtlinie nicht mehr geändert werden.
 
    2. **Beschreibung:** Optional, aber hilfreich, um Informationen zur Richtlinie bereitzustellen, z. B. den Datensatztyp oder den Workload, die in der Richtlinie angegebenen Benutzer sowie die Dauer.
 
@@ -81,11 +79,44 @@ Die erweiterte Überwachung in Microsoft 365 stellt eine Standardaufbewahrungsri
 
    6. **Priorität:** Dieser Wert bestimmt die Reihenfolge, in der Aufbewahrungsrichtlinien für Überwachungsprotokolle in Ihrer Organisation angewandt werden. Ein höherer Wert weist auf eine höhere Priorität hin.  So würde beispielsweise eine Richtlinie mit einem Prioritätswert von **5** Vorrang vor einer Richtlinie mit einem Prioritätswert von **0** haben. Wie zuvor erläutert, hat jede benutzerdefinierte Aufbewahrungsrichtlinie für Überwachungsprotokolle Vorrang vor der Standardrichtlinie für Ihre Organisation.
 
-4. Klicken Sie auf **Speichern**, um die neue Aufbewahrungsrichtlinie für Überwachungsprotokolle zu erstellen.
+5. Klicken Sie auf **Speichern**, um die neue Aufbewahrungsrichtlinie für Überwachungsprotokolle zu erstellen.
 
-## <a name="create-an-audit-log-retention-policy-in-powershell"></a>Erstellen einer Aufbewahrungsrichtlinie für Überwachungsprotokolle in PowerShell
+   Die neue Richtlinie wird in der Liste auf der Registerkarte **Aufbewahrungsrichtlinien für die Überwachung** angezeigt.
 
-Aufbewahrungsrichtlinien für Überwachungsprotokolle können auch mithilfe von Security & Compliance Center PowerShell erstellt werden.
+## <a name="manage-audit-log-retention-policies"></a>Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle
+
+Aufbewahrungsrichtlinien für Überwachungsprotokolle werden auf der Registerkarte **Aufbewahrungsrichtlinien für die Überwachung** (auch als *Dashboard* bezeichnet) angezeigt. Über das Dashboard können Sie Aufbewahrungsrichtlinien anzeigen, bearbeiten und löschen.
+
+### <a name="view-policies-in-the-dashboard"></a>Anzeigen von Richtlinien im Dashboard
+
+Aufbewahrungsrichtlinien für Überwachungsprotokolle werden im Dashboard aufgelistet. Ein Vorteil des Anzeigens von Richtlinien im Dashboard besteht darin, dass Sie auf die Spalte **Priorität** klicken können, damit die Richtlinien nach der Priorität aufgelistet werden, mit der sie angewendet werden. Wie zuvor erläutert, steht ein höherer Wert für eine höhere Priorität.
+
+![Spalte "Priorität" im Dashboard für "Aufbewahrungsrichtlinien für die Überwachung"](../media/AuditLogRetentionDashboardPriority.png)
+
+Sie können außerdem eine Richtlinie auswählen, damit deren Einstellungen auf der Flyoutseite angezeigt werden.
+
+> [!NOTE]
+> Die standardmäßige Aufbewahrungsrichtlinie für Überwachungsprotokolle für Ihre Organisation wird nicht im Dashboard angezeigt.
+
+### <a name="edit-policies-in-the-dashboard"></a>Bearbeiten von Richtlinien im Dashboard
+
+Wenn Sie eine Richtlinie bearbeiten möchten, klicken Sie darauf, um die Flyoutseite anzuzeigen. Sie können eine oder mehrere Einstellungen ändern und die Änderungen dann speichern.
+
+
+> [!IMPORTANT]
+> Wenn Sie das Cmdlet **New-UnifiedAuditLogRetentionPolicy** verwenden, können Sie eine Aufbewahrungsrichtlinie für Überwachungsprotokolle für Datensatztypen oder Aktivitäten erstellen, die im Tool zum **Erstellen von Aufbewahrungsrichtlinien für die Überwachung** im Dashboard nicht verfügbar sind. In diesem Fall werden Sie nicht in der Lage sein, die Richtlinie über das Dashboard für **Aufbewahrungsrichtlinien für die Überwachung** zu bearbeiten (beispielsweise die Aufbewahrungsdauer ändern oder Aktivitäten hinzufügen oder entfernen).  Sie können die Richtlinie im Compliance Center nur anzeigen oder löschen. Um die Richtlinie zu ändern, müssen Sie das Cmdlet [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy) im PowerShell des Security & Compliance Centers verwenden.<br/><br/>**Tipp:** Oben auf der Flyoutseite wird eine Nachricht zu Richtlinien angezeigt, die mittels PowerShell bearbeitet werden müssen.
+
+### <a name="delete-policies-in-the-dashboard"></a>Löschen von Richtlinien im Dashboard
+
+Klicken Sie zum Löschen einer Richtlinie auf das **Löschsymbol**![Löschsymbol ](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg), und bestätigen Sie dann, dass Sie die Richtlinie tatsächlich löschen möchten. Die Richtlinie wird aus dem Dashboard entfernt, es kann jedoch bis zu 30 Minuten dauern, bis die Richtlinie aus Ihrer Organisation entfernt wurde.
+
+## <a name="create-and-manage-audit-log-retention-policies-in-powershell"></a>Erstellen und Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle in PowerShell
+
+Aufbewahrungsrichtlinien für Überwachungsprotokolle können auch mithilfe von Security & Compliance Center PowerShell erstellt und verwaltet werden. Ein Grund für die Verwendung von PowerShell ist das Erstellen einer Richtlinie für einen Datensatztyp oder eine Aktivität, der bzw. die auf der Benutzeroberfläche nicht verfügbar ist.
+
+### <a name="create-an-audit-log-retention-policy-in-powershell"></a>Erstellen einer Aufbewahrungsrichtlinie für Überwachungsprotokolle in PowerShell
+
+Gehen Sie folgendermaßen vor, um eine Aufbewahrungsrichtlinie für Überwachungsprotokolle in PowerShell zu erstellen:
 
 1. [Stellen Sie eine Verbindung mit der Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
@@ -113,41 +144,41 @@ New-UnifiedAuditLogRetentionPolicy -Name "SixMonth retention for admin logons" -
 
 Weitere Informationen finden Sie unter [New-UnifiedAuditLogRetentionPolicy-](https://docs.microsoft.com/powershell/module/exchange/new-unifiedauditlogretentionpolicy).
 
-## <a name="view-audit-log-retention-policies"></a>Anzeigen von Aufbewahrungsrichtlinien für Überwachungsprotokolle
+### <a name="view-policies-in-powershell"></a>Anzeigen von Richtlinien in PowerShell
 
-Zurzeit können benutzerdefinierte Aufbewahrungsrichtlinien für Überwachungsprotokolle nur mithilfe des Cmdlets **Get-UnifiedAuditRetentionPolicy** in Security & Compliance Center PowerShell angezeigt werden. Hier ist ein Beispielbefehl zum Anzeigen der Einstellungen (die Sie im vorherigen Schritt konfiguriert haben) für die Aufbewahrungsrichtlinien für Überwachungsprotokolle in Ihrer Organisation. Mit diesem Befehl werden die Richtlinien von der höchsten bis zur niedrigsten Priorität sortiert.
+Verwenden Sie das Cmdlet [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy) in Security & Compliance Center PowerShell, um Aufbewahrungsrichtlinien für Überwachungsprotokolle anzuzeigen.
+
+Hier ist ein Beispielbefehl zum Anzeigen der Einstellungen für alle Aufbewahrungsrichtlinien für Überwachungsprotokolle in Ihrer Organisation. Mit diesem Befehl werden die Richtlinien von der höchsten bis zur niedrigsten Priorität sortiert.
 
 ```powershell
 Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending | FL Priority,Name,Description,RecordTypes,Operations,UserIds,RetentionDuration
 ```
 
 > [!NOTE]
-> Zurzeit gibt das Cmdlet **Get-UnifiedAuditLogRetentionPolicy** nicht die Standardrichtlinie für Überwachungsprotokolle für Ihre Organisation zurück.
+> Das Cmdlet **Get-UnifiedAuditLogRetentionPolicy** gibt nicht die standardmäßige Aufbewahrungsrichtlinie für Überwachungsprotokolle für Ihre Organisation zurück.
 
-Weitere Informationen finden Sie unter [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy).
+### <a name="edit-policies-in-powershell"></a>Bearbeiten von Richtlinien in PowerShell
 
-## <a name="some-audit-log-retention-policies-not-supported-in-the-ui"></a>Einige Aufbewahrungsrichtlinien für Überwachungsprotokolle, die auf der Benutzeroberfläche nicht unterstützt werden.
+Verwenden Sie das Cmdlet [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy) in Security & Compliance Center PowerShell, um eine bestehende Aufbewahrungsrichtlinie für Überwachungsprotokolle zu bearbeiten.
 
-Wenn Sie das Cmdlet **New-UnifiedAuditLogRetentionPolicy** verwenden, können Sie eine Aufbewahrungsrichtlinie für Überwachungsprotokolle für Datensatztypen oder Aktivitäten erstellen, die im Tool **Erstellen von Aufbewahrungsrichtlinien für die Überwachung** im Microsoft 365 Compliance Center nicht verfügbar sind. In diesem Fall werden Sie nicht in der Lage sein, die Richtlinie aus der Registerkarte **Aufbewahrungsrichtlinien für die Überwachung** im Compliance Center zu bearbeiten (beispielsweise die Aufbewahrungsdauer ändern oder Aktivitäten hinzufügen oder entfernen).  Sie können die Richtlinie im Compliance Center nur anzeigen oder löschen. Um die Richtlinie zu ändern, müssen Sie das Cmdlet **Set-UnifiedAuditLogRetentionPolicy** im PowerShell des Security & Compliance Centers verwenden.
+### <a name="delete-policies-in-powershell"></a>Löschen von Richtlinien in PowerShell
+
+Verwenden Sie das Cmdlet [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) in Security & Compliance Center PowerShell, um eine Aufbewahrungsrichtlinie für Überwachungsprotokolle zu löschen. Es kann bis zu 30 Minuten dauern, bis die Richtlinie aus Ihrer Organisation entfernt wurde.
 
 ## <a name="more-information"></a>Weitere Informationen
 
-- Verwenden Sie das Cmdlet **Set-UnifiedAuditLogRetentionPolicy** in Security & Compliance Center PowerShell, um eine bestehende Aufbewahrungsrichtlinie für Überwachungsprotokolle zu ändern. Weitere Informationen finden Sie unter [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy).
+Wie bereits erwähnt, werden Überwachungseinträge für Vorgänge in Azure Active Directory, Exchange und SharePoint standardmäßig für ein Jahr aufbewahrt. In der folgenden Tabelle sind alle Datensatztypen (für jeden dieser Dienste) aufgelistet, die in der standardmäßigen Aufbewahrungsrichtlinie für Überwachungsprotokolle enthalten sind. Dies bedeutet, dass Überwachungsprotokolle für jeden Vorgang mit diesem Datensatztyp für ein Jahr aufbewahrt werden, es sei denn, eine benutzerdefinierte Aufbewahrungsrichtlinie für Überwachungsprotokolle hat Vorrang in Hinblick auf einen bestimmten Datensatztyp, Vorgang oder Benutzer. Der Enumerationswert (der als Wert für die RecordType-Eigenschaft in einem Überwachungsdatensatz angezeigt wird) ist in Klammern angezeigt.
 
-- Verwenden Sie das Cmdlet **Remove-UnifiedAuditLogRetentionPolicy** in Security & Compliance Center PowerShell, um eine Aufbewahrungsrichtlinie für Überwachungsprotokolle zu löschen. Es kann bis zu 30 Minuten dauern, bis die Richtlinie entfernt wurde. Weitere Informationen finden Sie unter [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy).
-
-- Wie bereits erwähnt, werden Überwachungseinträge für Vorgänge in Azure Active Directory, Exchange und SharePoint für ein Jahr aufbewahrt. In der folgenden Tabelle sind alle Datensatztypen (für jeden dieser Dienste) aufgelistet, die in der standardmäßigen Aufbewahrungsrichtlinie für Überwachungsprotokolle enthalten sind. Dies bedeutet, dass Überwachungsprotokolle für jeden Vorgang mit diesem Datensatztyp für ein Jahr aufbewahrt werden, es sei denn, eine benutzerdefinierte Aufbewahrungsrichtlinie für Überwachungsprotokolle hat Vorrang in Hinblick auf einen bestimmten Datensatztyp, Vorgang oder Benutzer. Der Enumerationswert (der als Wert für die RecordType-Eigenschaft in einem Überwachungsdatensatz angezeigt wird) ist in Klammern angezeigt.
-
-   |AzureActiveDirectory |Exchange  |SharePoint|
-   |:---------|:---------|:---------|
-   |AzureActiveDirectory (8)|ExchangeAdmin (1)|ComplianceDLPSharePoint (11)|
-   |AzureActiveDirectoryAccountLogon (9)|ExchangeItem (2)|ComplianceDLPSharePointClassification (33)|
-   |AzureActiveDirectoryStsLogon (15)|Campaign (62)|Project (35)|
-   ||ComplianceDLPExchange (13)|SharePoint (4)|
-   ||ComplianceSupervisionExchange (68)|SharePointCommentOperation (37)|
-   ||CustomerKeyServiceEncryption (69)|SharePointContentTypeOperation (55)|
-   ||ExchangeAggregatedOperation (19)|SharePointFieldOperation (56)|
-   ||ExchangeItemAggregated (50)|SharePointFileOperation (6)|
-   ||ExchangeItemGroup (3)|SharePointListOperation (36)|
-   ||InformationBarrierPolicyApplication (53)|SharePointSharingOperation (14)|
-   ||||
+|AzureActiveDirectory |Exchange  |SharePoint|
+|:---------|:---------|:---------|
+|AzureActiveDirectory (8)|ExchangeAdmin (1)|ComplianceDLPSharePoint (11)|
+|AzureActiveDirectoryAccountLogon (9)|ExchangeItem (2)|ComplianceDLPSharePointClassification (33)|
+|AzureActiveDirectoryStsLogon (15)|Campaign (62)|Project (35)|
+||ComplianceDLPExchange (13)|SharePoint (4)|
+||ComplianceSupervisionExchange (68)|SharePointCommentOperation (37)|
+||CustomerKeyServiceEncryption (69)|SharePointContentTypeOperation (55)|
+||ExchangeAggregatedOperation (19)|SharePointFieldOperation (56)|
+||ExchangeItemAggregated (50)|SharePointFileOperation (6)|
+||ExchangeItemGroup (3)|SharePointListOperation (36)|
+||InformationBarrierPolicyApplication (53)|SharePointSharingOperation (14)|
+||||
