@@ -666,6 +666,8 @@
               href: themes-in-advanced-ediscovery.md
             - name: Verwenden des Relevanzmoduls für Datenanalyse
               href: using-relevance.md
+            - name: Ausmusterung des Relevanzmoduls
+              href: relevance-module-retirement.md
         - name: Exportieren von Falldaten
           href: exporting-data-ediscover20.md
           items:
