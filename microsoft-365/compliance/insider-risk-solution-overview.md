@@ -15,20 +15,20 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 71eb42c0912edc258b1a33698f1942140d91feb3
-ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
+ms.openlocfilehash: 6c8d0dee3b1452c9a43b6b0b1b36e96f19e5abcd
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50105196"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150629"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Insider Risk-Lösungen in Microsoft 365
 
-Insiderrisiken sind eines der obersten Bedenken von Sicherheits- und Complianceexperten am modernen Arbeitsplatz. Branchenstudien haben gezeigt, dass Insiderrisiken häufig mit bestimmten Benutzerereignissen oder -aktivitäten verbunden sind. Der Schutz Ihrer Organisation vor diesen Risiken kann schwierig zu identifizieren und schwer zu mindern sein. Zu den Risiken von Insidern gehören Sicherheitsrisiken in einer Vielzahl von Bereichen, die zu großen Problemen für Ihre Organisation führen können, angefangen beim Verlust des geistigen Eigentums bis hin zu Belästigungen am Arbeitsplatz und vielem mehr. In der folgenden Abbildung werden häufige Insiderrisiken dargestellt:
+Insiderrisiken sind eines der obersten Bedenken von Sicherheits- und Complianceexperten am modernen Arbeitsplatz. Branchenstudien haben gezeigt, dass Insiderrisiken häufig mit bestimmten Benutzerereignissen oder -aktivitäten verbunden sind. Der Schutz Ihrer Organisation vor diesen Risiken kann schwierig zu identifizieren und schwer zu mindern sein. Zu den Risiken von Insidern gehören Sicherheitsrisiken in einer Vielzahl von Bereichen, die zu großen Problemen für Ihre Organisation führen können, angefangen beim Verlust geistigen Eigentums bis hin zu Belästigungen am Arbeitsplatz und vielem mehr. In der folgenden Abbildung werden allgemeine Insiderrisiken dargestellt:
 
 ![Bedrohungen für Insiderrisiken](../media/ir-solution-threats.png)
 
-Microsoft 365-Features zur Risikoverhütung sind in unsere Produkte und Lösungen für Insiderrisiken konzipiert und integrierte. Diese Lösungen arbeiten zusammen und verwenden erweiterte Dienst- und Drittanbieterindikatoren, mit deren Hilfe Sie Risikoaktivitäten schnell erkennen, ausarbeiten und darauf reagieren können. Die meisten Lösungen bieten ihren Datenanalysten und Ermittlern einen umfassenden Erkennungs-, Warnungs- und Wartungsworkflow, mit dem diese Risiken schnell reagieren und minimiert werden können.
+Microsoft 365-Features zur Risikoverhütung sind in unsere Produkte und Lösungen für Insiderrisiken konzipiert und integrierte. Diese Lösungen arbeiten zusammen und verwenden erweiterte Dienst- und Drittanbieterindikatoren, mit deren Hilfe Sie Risikoaktivitäten schnell erkennen, ausarbeiten und darauf reagieren können. Die meisten Lösungen bieten einen umfassenden Erkennungs-, Warnungs- und Korrekturworkflow für Datenanalysten und Ermittler, mit dem sie diese Risiken schnell eindürfen und minimieren können.
 
 | Risikosymbol | Risiken | Kommunikationscompliance | Insider-Risikomanagement | Informationsbarrieren | Verwaltung privilegierter Zugriffe |
 | :---- | :-------- | :--------------------------- | :-------------------------- |:-------------------------| :--------------------------------|
@@ -51,7 +51,7 @@ Verwenden Sie diese Microsoft 365-Funktionen und -Features, um Ihre Organisation
 
 ### <a name="communication-compliance"></a>Kommunikationscompliance
 
-Die Kommunikationskonformität trägt dazu bei, Kommunikationsrisiken zu minimieren, indem Sie unangemessene Nachrichten in Ihrer Organisation erkennen, erfassen und auf diese eindingen. Die Kommunikationskonformität ist in den folgenden Abonnements verfügbar:
+Die Kommunikationskonformität trägt dazu bei, Kommunikationsrisiken zu minimieren, indem sie Ihnen dabei hilft, unangemessene Nachrichten in Ihrer Organisation zu erkennen, zu erfassen und zu handeln. Die Kommunikationskonformität ist in den folgenden Abonnements verfügbar:
 
 - Microsoft 365 E5-Abonnement (kostenpflichtig oder Testversion)
 - Microsoft 365 E3-Abonnement + das Microsoft 365 E5 Compliance-Add-On
@@ -68,7 +68,7 @@ Die Kommunikationskonformität trägt dazu bei, Kommunikationsrisiken zu minimie
 
 ### <a name="insider-risk-management"></a>Insider-Risikomanagement
 
-Das Risikomanagement von Insidern trägt dazu bei, interne Risiken zu minimieren, indem Sie böswillige und unbeabsichtigte Aktivitäten in Ihrer Organisation erkennen, untersuchen und auf diese weise handeln können.
+Das Risikomanagement von Insidern trägt dazu bei, interne Risiken zu minimieren, indem Sie es Ihnen ermöglichen, böswillige und unbeabsichtigte Aktivitäten in Ihrer Organisation zu erkennen, zu untersuchen und zu handeln.
 
 Das Risikomanagement für Insider ist in den folgenden Abonnements verfügbar:
 
@@ -79,12 +79,12 @@ Das Risikomanagement für Insider ist in den folgenden Abonnements verfügbar:
 - Microsoft 365 A3-Abonnement + das Microsoft 365 A5 Compliance-Add-On
 - Microsoft 365 A3-Abonnement + das Microsoft 365 A5 Insider Risk Management-Add-On
 - Microsoft 365 -G5-Abonnement (kostenpflichtig oder Testversion)
-- Microsoft 365 -G5-Abonnement + das Microsoft 365 G5 Compliance-Add-On
-- Microsoft 365 -G5-Abonnement + das Microsoft 365 G5-Add-On "Insider Risk Management"
+- Microsoft 365 G3-Abonnement + das Microsoft 365 G5 Compliance-Add-On
+- Microsoft 365 G3-Abonnement + das Microsoft 365 G5 Insider Risk Management-Add-On
 
 ### <a name="information-barriers"></a>Informationsbarrieren
 
-Informationsbarrieren ermöglichen es Ihnen, die Kommunikation und Zusammenarbeit zwischen zwei internen Gruppen einzuschränken, um zu verhindern, dass in Ihrer Organisation ein Interessenkonflikt auftritt.
+Informationsbarrieren ermöglichen Es Ihnen, die Kommunikation und Zusammenarbeit zwischen zwei internen Gruppen einzuschränken, um zu verhindern, dass in Ihrer Organisation ein Interessenkonflikt auftritt.
 
 Informationsbarrieren sind in den folgenden Abonnements verfügbar:
 
@@ -98,7 +98,7 @@ Informationsbarrieren sind in den folgenden Abonnements verfügbar:
 - Microsoft 365 A3-Abonnement + das Microsoft 365 A5 Compliance-Add-On
 - Microsoft 365 A3-Abonnement + das Microsoft 365 A5 Insider Risk Management-Add-On
 
-### <a name="privileged-access-management"></a>Verwaltung privilegierter Zugriffe
+### <a name="privileged-access-management"></a>Verwaltung des privilegierten Zugriffs
 
 Privileged access management allows granular access control over privileged Exchange Online admin tasks in Office 365. Dies kann Ihre Organisation vor Angriffen schützen, bei denen vorhandene privilegierte Administratorkonten mit kontinuierlichem Zugang auf vertrauliche Daten oder kritische Konfigurationseinstellungen verwendet werden.
 
@@ -117,16 +117,16 @@ Privileged Access Management ist in den folgenden Abonnements verfügbar:
 
 Richten Sie die folgenden Microsoft 365-Lösungen ein, um Ihre Organisation vor Insiderrisiken zu schützen:
 
-![Insider-Risiko-Lösung – tief gehende Verteidigung](../media/ir-solution-defense-in-depth.png)
+![Detaillierte Abwehr von Insider-Risikolösungen](../media/ir-solution-defense-in-depth.png)
 
-1. Konfigurieren und Erstellen [von Richtlinien für die Kommunikationskonformität.](communication-compliance-solution-overview.md)
+1. Konfigurieren und Erstellen [von Richtlinien zur Kommunikationskonformität.](communication-compliance-solution-overview.md)
 2. Konfigurieren und Erstellen von [Richtlinien für das Insider-Risikomanagement.](insider-risk-management-solution-overview.md)
-3. Optional: Konfigurieren und Erstellen von [Richtlinien für Informationsbarrieren.](information-barriers-solution-overview.md)
+3. Optional: Konfigurieren und Erstellen von [Richtlinien für Informationsbarrieren](information-barriers-solution-overview.md).
 4. Optional: Aktivieren und Konfigurieren von [Privileged Access Management](privileged-access-management-solution-overview.md).
 
 ## <a name="illustrations-with-examples"></a>Illustrationen mit Beispielen
 
-Um Ihnen bei der Planung einer integrierten Strategie für die Implementierung von Microsoft 365-Insider-Risikofunktionen zu helfen, laden Sie den *Microsoft 365-Informationsschutz-* und Compliancefunktionensatz mit Illustrationen herunter. Informationen zu Den Funktionen für Insiderrisiken finden Sie auf den Abbildungsseiten der Architektur 5-7. Sie können diese Illustrationen für Ihren eigenen Gebrauch anpassen.
+Um Ihnen bei der Planung einer integrierten Strategie für die Implementierung von Microsoft 365-Insider-Risikofunktionen zu helfen, laden Sie den *Microsoft 365-Informationsschutz* und die Compliance-Funktionen mit Illustrationen herunter. Informationen zu Den Funktionen für Insiderrisiken finden Sie auf den Abbildungsseiten der Architektur 5-7. Sie können diese Illustrationen für Ihren eigenen Gebrauch anpassen.
 
 | Element | Beschreibung |
 |:-----|:------------|
@@ -134,14 +134,14 @@ Um Ihnen bei der Planung einer integrierten Strategie für die Implementierung v
 
 ## <a name="training"></a>Schulung
 
-Die Schulung Ihrer Administratoren und Ihres Complianceteams in den Grundlagen jeder Lösung für Insiderrisiken kann Ihrer Organisation helfen, schneller mit Ihren Bereitstellungs- und Implementierungsbemühungen zu beginnen. 
+Wenn Sie Ihre Administratoren und Ihr Complianceteam in den Grundlagen jeder Lösung für Insiderrisiken trainieren, können Sie Ihrer Organisation den Einstieg in Ihre Bereitstellungs- und Implementierungsbemühungen schneller machen. 
 
 Microsoft 365 bietet die folgenden Ressourcen, um diese Benutzer in Ihrer Organisation zu informieren und zu schulen:
 
 | Lösung/Bereich | Ressourcen |
 |:------------------|:--------------|
 | Verwalten von Insider-Risiken in Microsoft 365 |[Vollständiger Lernpfad](/learn/paths/m365-compliance-insider) <br> Dieser Lernpfad umfasst alle einzelnen Lösungsmodule für Kommunikations-Compliance, Insider-Risikomanagement, Informationsbarrieren und Privileged Access Management. Wählen Sie diesen Lernpfad aus, um alle Module zu vervollständigen. |
-| Kommunikationscompliance | [Lernmodul: Vorbereiten der Kommunikationskonformität in Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> Dieses Modul hilft Ihnen, die Grundlagen zur Identifizierung und Behebung von Verstößen gegen Richtlinien im Code-of-Conduct mit der Kommunikationskonformität zu erlernen, die Voraussetzungen zu erfüllen, die vor dem Erstellen von Richtlinien zur Kommunikationskonformität erforderlich sind, und erfahren mehr über die Typen von integrierten, vordefinierten Richtlinienvorlagen in der Kommunikationskonformität. |
-| Insider-Risikomanagement | [Lernmodul: Insider-Risikomanagement in Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> Dieses Modul hilft Ihnen zu erfahren, wie das Insiderrisikomanagement in Microsoft 365 dazu beitragen kann, interne Risiken in einer Organisation zu verhindern, zu erkennen und zu enthalten, erfahren Sie mehr über die Typen von integrierten, vordefinierten Richtlinienvorlagen, verstehen Sie die grundlegenden Voraussetzungen, die vor der Erstellung von Richtlinien für Insiderrisiken erforderlich sind, und erläutert die Arten von Aktionen, die Sie für Fälle des Insiderrisikomanagements ergreifen können. |
-| Informationsbarrieren | [Lernmodul: Planen von Informationsbarrieren](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> Dieses Modul hilft Ihnen, zu erfahren, wie Richtlinien für Informationsbarrieren Ihrer Organisation dabei helfen können, die Einhaltung relevanter Branchenstandards und -vorschriften zu gewährleisten, listet die Arten von Situationen auf, in denen Informationsbarrieren anwendbar wären, erläutert den Prozess der Erstellung einer Richtlinie für Informationsbarrieren und erläutert, wie unerwartete Probleme nach dem Auftreten von Informationsbarrieren behoben werden können. |
-| Verwaltung privilegierter Zugriffe | [Lernmodul: Implementieren von Privileged Access Management](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> Dieses Modul hilft Ihnen, den Unterschied zwischen Privileged Access Management und Privileged Identity Management zu verstehen, den Prozessablauf für die Verwaltung des privilegierten Zugriffs zu verstehen und die Grundlagen der Konfiguration und Aktivierung von Privileged Access Management zu verstehen. |
+| Kommunikationscompliance | [Lernmodul: Vorbereiten der Kommunikationskonformität in Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> Dieses Modul hilft Ihnen, die Grundlagen zur Identifizierung und Behebung von Verstößen gegen Richtlinien im Code-of-Conduct mit der Kommunikationskonformität zu erlernen, die voraussetzungen zu erfüllen, die vor dem Erstellen von Richtlinien zur Kommunikationskonformität erforderlich sind, und erfahren mehr über die Typen von integrierten, vordefinierten Richtlinienvorlagen in der Kommunikationskonformität. |
+| Insider-Risikomanagement | [Lernmodul: Insider-Risikomanagement in Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> Dieses Modul hilft Ihnen, zu erfahren, wie das Insiderrisikomanagement in Microsoft 365 dazu beitragen kann, interne Risiken in einer Organisation zu verhindern, zu erkennen und zu enthalten, erfahren Sie mehr über die Typen von integrierten, vordefinierten Richtlinienvorlagen, verstehen Sie die grundlegenden Voraussetzungen, die vor der Erstellung von Richtlinien für Insiderrisiken erforderlich sind, und erläutert die Arten von Aktionen, die Sie für Fälle des Insiderrisikomanagements ergreifen können. |
+| Informationsbarrieren | [Lernmodul: Planen von Informationsbarrieren](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> Dieses Modul hilft Ihnen, zu erfahren, wie Richtlinien für Informationsbarrieren Ihrer Organisation dabei helfen können, die Einhaltung relevanter Branchenstandards und -vorschriften zu gewährleisten, listet die Arten von Situationen auf, in denen Informationsbarrieren anwendbar wären, erläutert den Prozess der Erstellung einer Richtlinie für Informationsbarrieren und hilft zu erläutern, wie unerwartete Probleme nach dem Auftreten von Informationsbarrieren behoben werden können. |
+| Verwaltung des privilegierten Zugriffs | [Lernmodul: Implementieren von Privileged Access Management](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> Dieses Modul hilft Ihnen, den Unterschied zwischen Privileged Access Management und Privileged Identity Management zu verstehen, den Prozessablauf für die Verwaltung des privilegierten Zugriffs zu verstehen und die Grundlagen der Konfiguration und Aktivierung von Privileged Access Management zu verstehen. |
