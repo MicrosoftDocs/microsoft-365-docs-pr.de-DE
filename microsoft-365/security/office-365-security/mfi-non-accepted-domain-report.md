@@ -14,17 +14,21 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie den Bericht über nicht akzeptierte Domänen im Nachrichtenflussdashboard im Security & Compliance Center verwenden, um Nachrichten aus Ihrer lokalen Organisation zu überwachen, in denen die Domäne des Absenders nicht in Microsoft 365 konfiguriert ist.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 401d566158ca3f730af94fab60c471484e244a16
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 573fb0ba2bf7981b6eb7df4eec7c8c4e5d596cac
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029846"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150820"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Nicht akzeptierter Domänenbericht im Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Der Bericht "Nicht akzeptierte Domäne" im Nachrichtenflussdashboard im [Security & Compliance Center](https://protection.office.com) zeigt Informationen zu Nachrichten von Ihrer lokalen E-Mail-Organisation an, in denen die Domäne des Absenders nicht als akzeptierte Domäne in Ihrer Microsoft 365-Organisation konfiguriert ist.  [](mail-flow-insights-v2.md)
 
@@ -49,7 +53,7 @@ Wenn Sie in einer **Berichtsansicht auf "Details anzeigen"** klicken, werden die
 - **Date**
 - **Name des eingehenden Connectors**
 - **Absenderdomäne**
-- **Anzahl der Nachrichten**
+- **Nachrichtenanzahl**
 - **Beispielmeldungen:** Die Nachrichten-IDs eines Beispiels betroffener Nachrichten.
 
 Wenn Sie in einer **Detailtabelle auf Filter** klicken, können Sie einen Datumsbereich mit **Startdatum** und **Enddatum angeben.**
@@ -61,7 +65,7 @@ Wenn Sie eine Zeile in der Tabelle auswählen, wird ein Flyout mit den folgenden
 - **Date**
 - **Name des eingehenden Connectors**
 - **Absenderdomäne**
-- **Anzahl der Nachrichten**
+- **Nachrichtenanzahl**
 - **Beispielmeldungen:** Sie können auf "Beispielmeldungen **anzeigen"** klicken, um die Ergebnisse der Nachrichtenverfolgung für ein Beispiel der betroffenen Nachrichten zu sehen. [](message-trace-scc.md)
 
 ![Details flyout after selecting a row in Details table view in the Non-accepted domain report](../../media/mfi-non-accepted-domain-report-details-flyout.png)

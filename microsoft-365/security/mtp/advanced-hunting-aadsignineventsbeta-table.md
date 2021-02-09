@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b574717d0ba5621d85c8e73f36ddc72b062a1494
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 174db150920d2d95c043bb5d6e5a4593ea1ea39d
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145427"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -39,7 +39,7 @@ ms.locfileid: "49931038"
 
  
 
-Die Tabelle im Schema für die erweiterte Suche `AADSignInEventsBeta` enthält Informationen zu interaktiven und nicht interaktiven Azure Active Directory-Anmeldungen. Erfahren Sie mehr über Anmeldungen in [Azure Active Directory-Anmeldeaktivitätsberichten – Vorschau.](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins)
+Die Tabelle im Schema für die erweiterte Suche enthält Informationen zu interaktiven und `AADSignInEventsBeta` nicht interaktiven Azure Active Directory-Anmeldungen. Erfahren Sie mehr über Anmeldungen in Azure Active Directory-Anmeldeaktivitätsberichten [– Vorschau.](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins)
 
 Verwenden Sie diese Referenz, um Abfragen zu erstellen, die Informationen aus der Tabelle zurückgeben.
 Informationen zu anderen Tabellen im Schema „Erweiterte Suche“ finden Sie unter [Referenz zur erweiterten Suche](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
@@ -57,12 +57,12 @@ Informationen zu anderen Tabellen im Schema „Erweiterte Suche“ finden Sie un
 | `ErrorCode`                       | int        | Enthält den Fehlercode, wenn ein Anmeldefehler auftritt. Eine Beschreibung eines bestimmten Fehlercodes finden Sie unter <https://aka.ms/AADsigninsErrorCodes> .                                     |
 | `CorrelationId`                   | string        | Eindeutiger Bezeichner des Anmeldeereigniss                                                                                                                                              |
 | `SessionId`                       | string        | Eindeutige Nummer, die einem Benutzer vom Server einer Website für die Dauer des Besuchs oder der Sitzung zugewiesen wurde                                                                                     |
-| `AccountDisplayName`              | string        | Name des Kontobenutzers, der im Adressbuch angezeigt wird. In der Regel eine Kombination aus einem Vor- oder Vornamen, einer mittleren Initiale und einem Nachnamen oder Nachnamen.                             |
+| `AccountDisplayName`              | string        | Name des Kontobenutzers, der im Adressbuch angezeigt wird. In der Regel eine Kombination aus einem Vor- oder Vornamen, einem Vornamen und einem Nachnamen oder Nachnamen.                             |
 | `AccountObjectId`                 | string        | Eindeutiger Bezeichner für das Konto in Azure AD                                                                                                                                       |
 | `AccountUpn`                      | string        | Benutzerprinzipalname (UPN) des Kontos                                                                                                                                            |
 | `IsExternalUser`                  | int        | Gibt an, ob der angemeldete Benutzer extern ist. Mögliche Werte: -1 (nicht festgelegt), 0 (nicht extern), 1 (extern).                                                                   |
-| `IsGuestUser`                     | Boolescher Wert       | Gibt an, ob der angemeldete Benutzer ein Gast im Mandanten ist.                                                                                                                  |
-| `AlternateSignInName`             | string        | Der lokale Benutzerprinzipalname (UPN) des Benutzers, der sich bei Azure AD anmelden soll                                                                                                            |
+| `IsGuestUser`                     | boolean       | Gibt an, ob der angemeldete Benutzer ein Gast im Mandanten ist.                                                                                                                  |
+| `AlternateSignInName`             | string        | Der lokale Benutzerprinzipalname (UPN) des Benutzers, der sich bei Azure AD an-                                                                                                            |
 | `LastPasswordChangeTimestamp`     | Datum/Uhrzeit        | Datum und Uhrzeit der letzten Änderung des Kennworts durch den Angemeldeten                                                                                                              |
 | `ResourceDisplayName`             | string        | Anzeigename der Ressource, auf die zugegriffen wird                                                                                                                                               |
 | `ResourceId`                      | string        | Eindeutiger Bezeichner der Ressource, auf die zugegriffen wird                                                                                                                                          |
@@ -71,7 +71,7 @@ Informationen zu anderen Tabellen im Schema „Erweiterte Suche“ finden Sie un
 | `AadDeviceId`                     | string   |      Eindeutiger Bezeichner für das Gerät in Azure AD                                                                                                                                                                               |
 | `OSPlatform`                      | string        | Die Plattform des Betriebssystem, das auf dem Computer ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7.  |
 | `DeviceTrustType`                 | string        | Gibt den Vertrauenstyp des Geräts an, das sich angemeldet hat. Nur für Szenarien mit verwalteten Geräten. Mögliche Werte sind Workplace, AzureAd und ServerAd.                                     |
-| `IsManaged`                       | int       | Gibt an, ob das Gerät, das die Anmeldung initiiert hat, ein verwaltetes Gerät (1) oder kein verwaltetes Gerät ist (0)                                                                         |
+| `IsManaged`                       | int       | Gibt an, ob das Gerät, das die Anmeldung initiiert hat, ein verwaltetes Gerät (1) oder kein verwaltetes Gerät (0) ist.                                                                         |
 | `IsCompliant`                     | int       | Gibt an, ob das Gerät, das die Anmeldung initiiert hat, kompatibel (1) oder nicht kompatibel (0) ist.                                                                                       |
 | `AuthenticationProcessingDetails` | string        | Details zum Authentifizierungsprozessor                                                                                                                                          |
 | `AuthenticationRequirement`       | string        | Für die Anmeldung erforderlicher Authentifizierungstyp. Mögliche Werte: multiFactorAuthentication (MFA war erforderlich) und singleFactorAuthentication (keine MFA erforderlich).                |
@@ -85,7 +85,7 @@ Informationen zu anderen Tabellen im Schema „Erweiterte Suche“ finden Sie un
 | `ConditionalAccessPolicies`       | string        | Details zu den Richtlinien für bedingten Zugriff, die auf das Anmeldeereignis angewendet werden                                                                                                             |
 | `ConditionalAccessStatus`         | int        | Status der Richtlinien für bedingten Zugriff, die auf die Anmeldung angewendet werden. Mögliche Werte sind 0 (angewendete Richtlinien), 1 (Fehler beim Anwenden von Richtlinien) oder 2 (Richtlinien nicht angewendet).      |
 | `IPAddress`                       | string        | Dem Endpunkt zugewiesene und während der zugehörigen Netzwerkkommunikation verwendete IP-Adresse                                                                                                  |
-| `CountryCode`                     | string        | Aus zwei Buchstaben bestehter Code, der das Land angibt, in dem die Client-IP-Adresse geolokaliert ist                                                                                                    |
+| `Country`                     | string        | Aus zwei Buchstaben bestehter Code, der das Land angibt, in dem die Client-IP-Adresse geolokaliert ist                                                                                                    |
 | `State`                           | string        | Status, in dem die Anmeldung erfolgt ist( sofern verfügbar)                                                                                                                                      |
 | `City`                            | string        | Ort, in dem sich der Kontobenutzer befindet                                                                                                                                              |
 | `Latitude`                        | string        | Die Koordinaten von Nord nach Süd des Anmeldestandorts                                                                                                                              |

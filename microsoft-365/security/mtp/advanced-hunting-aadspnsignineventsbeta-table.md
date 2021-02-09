@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 172c400df3adea70a2e2d2e37547fa39e0d3b9cf
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3eba2459fd9a0af1963ca8d1446b22fc0b1bdb93
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145403"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -54,7 +54,7 @@ Informationen zu anderen Tabellen im Schema „Erweiterte Suche“ finden Sie un
 | `Timestamp` | Datum/Uhrzeit      | Datum und Uhrzeit, wann der Datensatz generiert wurde                                                                                                     |
 | `Application`          | string        | Anwendung, die die aufgezeichnete Aktion ausgeführt hat                                                                                                   |
 | `ApplicationId`        | string        | Eindeutiger Bezeichner für die Anwendung                                                                                                           |
-| `IsManagedIdentity`    | Boolescher Wert       | Gibt an, ob die Anmeldung von einer verwalteten Identität initiiert wurde.                                                                               |
+| `IsManagedIdentity`    | boolean       | Gibt an, ob die Anmeldung von einer verwalteten Identität initiiert wurde.                                                                               |
 | `ErrorCode`            | int        | Enthält den Fehlercode, wenn ein Anmeldefehler auftritt. Eine Beschreibung eines bestimmten Fehlercodes finden Sie unter <https://aka.ms/AADsigninsErrorCodes> . |
 | `CorrelationId`        | string        | Eindeutiger Bezeichner des Anmeldeereigniss                                                                                                          |
 | `ServicePrincipalName` | string        | Name des Dienstprinzipal, der die Anmeldung initiiert hat                                                                                        |
@@ -63,7 +63,7 @@ Informationen zu anderen Tabellen im Schema „Erweiterte Suche“ finden Sie un
 | `ResourceId`           | string        | Eindeutiger Bezeichner der Ressource, auf die zugegriffen wird                                                                                                      |
 | `ResourceTenantId`     | string        | Eindeutiger Bezeichner des Mandanten der Ressource, auf die zugegriffen wird                                                                                        |
 | `IPAddress`            | string        | Dem Endpunkt zugewiesene und während der zugehörigen Netzwerkkommunikation verwendete IP-Adresse                                                              |
-| `CountryCode`          | string        | Aus zwei Buchstaben bestehter Code, der das Land angibt, in dem die Client-IP-Adresse geolokaliert ist                                                                |
+| `Country`          | string        | Aus zwei Buchstaben bestehter Code, der das Land angibt, in dem die Client-IP-Adresse geolokaliert ist                                                                |
 | `State`                | string        | Status, in dem die Anmeldung erfolgt ist( sofern verfügbar)                                                                                                  |
 | `City`                 | string        | Ort, in dem sich der Kontobenutzer befindet                                                                                                          |
 | `Latitude`             | string        | Die Koordinaten von Nord nach Süd des Anmeldestandorts                                                                                          |

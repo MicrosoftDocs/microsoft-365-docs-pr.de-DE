@@ -1,6 +1,6 @@
 ---
 title: Tabelle "DeviceProcessEvents" im Schema "Erweiterte Suche"
-description: Erfahren Sie mehr über den Prozess zum Erstellen oder Erstellen von Ereignissen in der DeviceProcessEventstable des Schemas für die erweiterte Suche
+description: Erfahren Sie mehr über den Prozess, der Ereignisse zum Erstellen oder Erstellen in der DeviceProcessEventstable des Schemas für die erweiterte Suche enthält.
 keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Prozesserstellenevents, DeviceProcessEvents, Prozess-ID, Befehlszeile, DeviceProcessEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7ad4fa530c3bc44169f7785aad95a3205f2cb8d9
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 6f94b861aa73d01f9e906d41bc52a9724552cd33
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931146"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145511"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -58,15 +58,19 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `ProcessId` | int | Prozess-ID (PID) des neu erstellten Prozesses |
 | `ProcessCommandLine` | string | Befehlszeile zum Erstellen des neuen Prozesses |
 | `ProcessIntegrityLevel` | string | Integritätsebene des neu erstellten Prozesses. Windows weist Prozesse Integritätsstufen basierend auf bestimmten Merkmalen zu, z. B. wenn sie aus einem heruntergeladenen Internet gestartet wurden. Diese Integritätsstufen beeinflussen Berechtigungen für Ressourcen |
-| `ProcessTokenElevation` | string | Tokentyp, der angibt, ob die Rechteerweiterung der Benutzerzugriffssteuerung (User Access Control, UAC) auf den neu erstellten Prozess angewendet wurde. |
+| `ProcessTokenElevation` | string | Gibt den Typ der Tokenerweiterung an, die auf den neu erstellten Prozess angewendet wird. Mögliche Werte: TokenElevationTypeLimited (restricted), TokenElevationTypeDefault (Standard) und TokenElevationTypeFull (elevated) |
 | `ProcessCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit der Prozesserg nung |
 | `AccountDomain` | string | Domäne des Kontos |
 | `AccountName` | string | Benutzername des Kontos |
 | `AccountSid` | string | Sicherheits-ID (SID) des Kontos |
+| `AccountUpn` | string | Benutzerprinzipalname (UPN) des Kontos |
+| `AccountObjectId` | string | Eindeutiger Bezeichner für das Konto in Azure AD |
 | `LogonId` | string | Bezeichner für eine Anmeldesitzung. Dieser Bezeichner ist auf demselben Computer nur zwischen Neustarts eindeutig. |
 | `InitiatingProcessAccountDomain` | string | Domäne des Kontos, das den für das Ereignis verantwortlichen Prozess verwendet hat |
 | `InitiatingProcessAccountName` | string | Benutzername des Kontos, das den für das Ereignis verantwortlichen Prozess verwendet hat |
 | `InitiatingProcessAccountSid` | string | Sicherheits-ID (SID) des Kontos, das den für das Ereignis verantwortlichen Prozess verwendet hat |
+| `InitiatingProcessAccountUpn` | string | Benutzerprinzipalname (UPN) des Kontos, das den für das Ereignis verantwortlichen Prozess verwendet hat |
+| `InitiatingProcessAccountObjectId` | string | Azure AD-Objekt-ID des Benutzerkontos, das den für das Ereignis verantwortlichen Prozess ausgeführt hat |
 | `InitiatingProcessLogonId` | string | Bezeichner für eine Anmeldesitzung des Prozesses, der das Ereignis initiiert hat. Dieser Bezeichner ist auf demselben Computer nur zwischen Neustarts eindeutig. |
 | `InitiatingProcessIntegrityLevel` | string | Integritätsstufe des Prozesses, der das Ereignis initiiert hat. Windows weist Prozesse Integritätsstufen basierend auf bestimmten Merkmalen zu, z. B. wenn sie über einen Internetdownload gestartet wurden. Diese Integritätsstufen beeinflussen Berechtigungen für Ressourcen |
 | `InitiatingProcessTokenElevation` | string | Tokentyp, der angibt, ob die Rechteerweiterung der Benutzerzugriffssteuerung (User Access Control, UAC) auf den Prozess angewendet wurde, der das Ereignis initiiert hat. |
@@ -74,6 +78,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `InitiatingProcessSHA256` | string | SHA-256 des Prozesses (Bilddatei), der das Ereignis initiiert hat. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
 | `InitiatingProcessMD5` | string | #A0 des Prozesses (Bilddatei), der das Ereignis initiiert hat |
 | `InitiatingProcessFileName` | string | Name des Prozesses, der das Ereignis initiiert hat |
+| `InitiatingProcessFileSize` | long | Größe der Datei, die den für das Ereignis verantwortlichen Prozess verwendet hat |
 | `InitiatingProcessId` | int | Prozess-ID (PID) des Prozesses, der das Ereignis initiiert hat |
 | `InitiatingProcessCommandLine` | string | Befehlszeile zum Ausführen des Prozesses, der das Ereignis initiiert hat |
 | `InitiatingProcessCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu dem der Prozess, der das Ereignis initiiert hat, gestartet wurde |
@@ -83,6 +88,8 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `InitiatingProcessParentCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, an dem das übergeordnete Element des für das Ereignis verantwortlichen Prozesses gestartet wurde |
 | `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte in Verbindung mit den Spalten "DeviceName" und "Timestamp" verwendet werden. |
 | `AppGuardContainerId` | string | Bezeichner für den virtualisierten Container, der von Application Guard zum Isolieren der Browseraktivität verwendet wird |
+| `AdditionalFields` | string | Zusätzliche Informationen zu dem Ereignis im JSON-Array-Format |
+| `FileSize` | long | Größe der Datei in Byte |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1df1295b3386b94e3737c53ac8226c719c8bfa08
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 87ac6194374e8e042cf9d00271b17dd8bb785d64
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145349"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -35,7 +35,7 @@ ms.locfileid: "49929922"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Die Tabelle im Schema für die erweiterte Suche enthält Informationen zu Authentifizierungsaktivitäten, die über Ihr lokales Active Directory, das von Microsoft Defender für Identitäts- und Authentifizierungsaktivitäten im Zusammenhang mit microsoft-Onlinediensten, die von Microsoft Cloud App Security erfasst werden, vorgenommen `IdentityLogonEvents` werden. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
+Die Tabelle im Schema für die erweiterte Suche enthält Informationen zu Authentifizierungsaktivitäten, die über Ihr lokales Active Directory erfolgt, das von Microsoft Defender für Identitäts- und Authentifizierungsaktivitäten im Zusammenhang mit microsoft-Onlinediensten erfasst wird, die von Microsoft Cloud App Security erfasst `IdentityLogonEvents` werden. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
 >[!TIP]
 > Ausführliche Informationen zu den Ereignistypen (Werten), die von einer Tabelle unterstützt werden, finden Sie in der integrierten Schemareferenz, die im `ActionType` Security Center verfügbar ist. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
@@ -49,7 +49,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
 | `ActionType` | string | Typ der Aktivität, die das Ereignis ausgelöst hat. Details finden Sie in der [In-Portal-Schemareferenz.](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
-| `LogonType` | string | Typ der Anmeldesitzung, insbesondere:<br><br> - **Interaktiv** – Benutzer interagiert über die lokale Tastatur und den Bildschirm physisch mit dem Computer.<br><br> - **Remote interaktive Anmeldungen (RDP):** Benutzer interagiert remote mit dem Computer mithilfe von Remotedesktop, Terminaldiensten, Remoteunterstützung oder anderen RDP-Clients.<br><br> - **Netzwerk** – Sitzung, die initiiert wird, wenn über PsExec auf den Computer zugegriffen wird oder wenn auf freigegebene Ressourcen auf dem Computer zugegriffen wird, z. B. Drucker und freigegebene Ordner<br><br> - **Batch** – Von geplanten Vorgängen initiierte Sitzung<br><br> - **Dienst** – Von Diensten initiierte Sitzung beim Start |
+| `LogonType` | string | Typ der Anmeldesitzung, insbesondere:<br><br> - **Interaktiv** – Benutzer interagiert über die lokale Tastatur und den Bildschirm physisch mit dem Computer.<br><br> - **Remote interaktive Anmeldungen (RDP):** Benutzer interagiert remote mit dem Computer mithilfe von Remotedesktop, Terminaldiensten, Remoteunterstützung oder anderen RDP-Clients.<br><br> - **Netzwerk** – Sitzung, die initiiert wird, wenn über PsExec auf den Computer zugegriffen wird oder wenn auf freigegebene Ressourcen auf dem Computer zugegriffen wird, z. B. Drucker und freigegebene Ordner<br><br> - **Batch** – Von geplanten Vorgängen initiierte Sitzung<br><br> - **Dienst** – Sitzung, die von Diensten initiiert wird, während sie gestartet werden |
 | `Application` | string | Anwendung, die die aufgezeichnete Aktion ausgeführt hat |
 | `Protocol` | string | Verwendetes Netzwerkprotokoll |
 | `FailureReason` | string | Informationen, die erläutern, warum die aufgezeichnete Aktion fehlgeschlagen ist |
@@ -63,8 +63,10 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `DeviceType` | string | Gerätetyp |
 | `OSPlatform` | string | Die Plattform des Betriebssystem, das auf dem Computer ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. |
 | `IPAddress` | string | Dem Endpunkt zugewiesene und während der zugehörigen Netzwerkkommunikation verwendete IP-Adresse |
+| `Port` | string | Während der Kommunikation verwendeter TCP-Port |
 | `DestinationDeviceName` | string | Name des Geräts, auf dem die Serveranwendung ausgeführt wird, die die aufgezeichnete Aktion verarbeitet hat |
 | `DestinationIPAddress` | string | Die IP-Adresse des Geräts, auf dem die Serveranwendung ausgeführt wird, die die aufgezeichnete Aktion verarbeitet hat |
+| `DestinationPort` | string | Zielport der zugehörigen Netzwerkkommunikation |
 | `TargetDeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Geräts, auf das die aufgezeichnete Aktion angewendet wurde |
 | `TargetAccountDisplayName` | string | Anzeigename des Kontos, auf das die aufgezeichnete Aktion angewendet wurde |
 | `Location` | string | Ort, Land oder anderer geografischer Standort, der dem Ereignis zugeordnet ist |

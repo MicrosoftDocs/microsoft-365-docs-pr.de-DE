@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: f7f6dcaa9c1e007f6b83f897539bdabe9faa0b96
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: 459b0fd246455f46a1c1ff497379487de9fdb61d
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142265"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows and Office deployment lab kit
 
@@ -72,7 +72,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 ### <a name="prepare-applications"></a>Vorbereiten von Anwendungen    
 
 - Readiness Toolkit für Office  
-- MSIX Packaging and Conversion of Win32 applications   
+- MSIX Packen und Konvertieren von Win32-Anwendungen   
 
 ### <a name="deploy-windows-10"></a>Bereitstellen von Windows 10   
 
@@ -85,7 +85,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
 - In der Cloud verwaltete Bereitstellung  
 - Lokal verwaltete Bereitstellung    
-- Bereitstellung von Microsoft 365 Apps for Enterprise auf Nicht-AD-geräten 
+- Microsoft 365 Apps for enterprise Deployment on Non-AD Joined Devices 
 - Vom Unternehmen verwaltete Bereitstellung mit Configuration Manager
 - Vom Unternehmen verwaltete Bereitstellung mit Microsoft Intune  
 - Branchenbereitstellung und -verwaltung mit Microsoft Intune
@@ -99,7 +99,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
 [Herunterladen des Deployment Lab Kit für Windows und Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* Die installierte Basisplanversion 2002 kann mithilfe und in der Konsole auf Version 2010 aktualisiert werden. Verwenden Sie eine Internetverbindung mit breiter Bandbreite, um diese Inhalte herunterzuladen, und warten Sie 30 bis 45 Minuten für die automatische Bereitstellung. Die Laborumgebung erfordert mindestens 16 GB verfügbaren Arbeitsspeicher und 150 GB freien Speicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Arbeitsspeicher und 300 GB freier Speicherplatz empfohlen. Das Kit läuft am 7. Februar 2021 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.
+* Die installierte Basisplanversion 2002 kann mithilfe und in der Konsole auf Version 2010 aktualisiert werden. Verwenden Sie eine Internetverbindung mit breiter Bandbreite, um diese Inhalte herunterzuladen, und warten Sie 30 bis 45 Minuten für die automatische Bereitstellung. Die Laborumgebung erfordert mindestens 16 GB verfügbaren Arbeitsspeicher und 150 GB freien Speicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Arbeitsspeicher und 300 GB freier Speicherplatz empfohlen. Das Kit läuft am 11. Februar 2021 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.
 
 ## <a name="additional-guidance"></a>Zusätzliche Anleitung
 

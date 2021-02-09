@@ -1,7 +1,7 @@
 ---
 title: Tabelle "DeviceLogonEvents" im Schema "Erweiterte Suche"
 description: Informationen zu Authentifizierungs- oder Anmeldeereignissen in der Tabelle "DeviceLogonEvents" des Schemas für die erweiterte Suche
-keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, Mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, Anmeldeinformationen, DeviceLogonEvents, Authentifizierung, Anmeldung, Anmelden
+keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, Anmeldeinformationen, DeviceLogonEvents, Authentifizierung, Anmeldung, Anmelden
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3a5666cc106365876956c8e313f9cd2f5a996e6f
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 60455c0a66548654da52544e3d7ece84aecb9cf3
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931230"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145439"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -53,17 +53,22 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `AccountDomain` | string | Domäne des Kontos |
 | `AccountName` | string | Benutzername des Kontos |
 | `AccountSid` | string | Sicherheits-ID (SID) des Kontos |
-| `LogonType` | string | Typ der Anmeldesitzung, insbesondere:<br><br> - **Interaktiv** – Benutzer interagiert über die lokale Tastatur und den Bildschirm physisch mit dem Computer.<br><br> - **Remote interaktive Anmeldungen (RDP):** Benutzer interagiert remote mit dem Computer mithilfe von Remotedesktop, Terminaldiensten, Remoteunterstützung oder anderen RDP-Clients.<br><br> - **Netzwerk** – Sitzung, die initiiert wird, wenn über PsExec auf den Computer zugegriffen wird oder wenn auf freigegebene Ressourcen auf dem Computer zugegriffen wird, z. B. Drucker und freigegebene Ordner<br><br> - **Batch** – Von geplanten Vorgängen initiierte Sitzung<br><br> - **Dienst** – Von Diensten initiierte Sitzung beim Start<br> |
+| `Protocol` | string | Protokoll, das während der Kommunikation verwendet wird |
+| `FailureReason` | string | Informationen, die erläutern, warum die aufgezeichnete Aktion fehlgeschlagen ist |
+| `LogonType` | string | Typ der Anmeldesitzung, insbesondere:<br><br> - **Interaktiv** – Benutzer interagiert über die lokale Tastatur und den Bildschirm physisch mit dem Computer.<br><br> - **Remote interaktive Anmeldungen (RDP):** Benutzer interagiert remote mit dem Computer mithilfe von Remotedesktop, Terminaldiensten, Remoteunterstützung oder anderen RDP-Clients.<br><br> - **Netzwerk** – Sitzung, die initiiert wird, wenn über PsExec auf den Computer zugegriffen wird oder wenn auf freigegebene Ressourcen auf dem Computer zugegriffen wird, z. B. Drucker und freigegebene Ordner<br><br> - **Batch** – Von geplanten Vorgängen initiierte Sitzung<br><br> - **Dienst** – Sitzung, die von Diensten initiiert wird, während sie gestartet werden<br> |
 | `LogonId` | string | Bezeichner für eine Anmeldesitzung. Dieser Bezeichner ist auf demselben Computer nur zwischen Neustarts eindeutig. |
 | `RemoteDeviceName` | string | Name des Computers, der einen Remotevorgang auf dem betroffenen Computer ausgeführt hat. Je nach gemeldeten Ereignis kann dieser Name ein vollqualifizierter Domänenname (FQDN), ein NetBIOS-Name oder ein Hostname ohne Domäneninformationen sein. |
 | `RemoteIP` | string | IP-Adresse, mit der eine Verbindung hergestellt wurde |
 | `RemoteIPType` | string | Typ der IP-Adresse, z. B. Öffentlich, Privat, Reserviert, Loopback, Teredo, FourToSixMapping und Broadcast |
 | `RemotePort` | int | DER PORT auf dem Remotegerät, mit dem eine Verbindung hergestellt wurde |
 | `AdditionalFields` | string | Zusätzliche Informationen zu dem Ereignis im JSON-Array-Format |
+| `InitiatingProcessFileSize` | long | Größe der Datei, die den für das Ereignis verantwortlichen Prozess verwendet hat |
 | `InitiatingProcessAccountDomain` | string | Domäne des Kontos, das den für das Ereignis verantwortlichen Prozess verwendet hat |
 | `InitiatingProcessAccountName` | string | Benutzername des Kontos, das den für das Ereignis verantwortlichen Prozess verwendet hat |
 | `InitiatingProcessAccountSid` | string | Sicherheits-ID (SID) des Kontos, das den für das Ereignis verantwortlichen Prozess verwendet hat |
-| `InitiatingProcessIntegrityLevel` | string | Integritätsebene des Prozesses, der das Ereignis initiiert hat. Windows weist Prozesse Integritätsstufen basierend auf bestimmten Merkmalen zu, z. B. wenn sie über einen Internetdownload gestartet wurden. Diese Integritätsstufen beeinflussen Berechtigungen für Ressourcen |
+| `InitiatingProcessAccountUpn` | string | Benutzerprinzipalname (UPN) des Kontos, das den für das Ereignis verantwortlichen Prozess verwendet hat |
+| ` InitiatingProcessAccountObjectId` | string | Azure AD-Objekt-ID des Benutzerkontos, das den für das Ereignis verantwortlichen Prozess ausgeführt hat |
+| `InitiatingProcessIntegrityLevel` | string | Integritätsstufe des Prozesses, der das Ereignis initiiert hat. Windows weist Prozesse Integritätsstufen basierend auf bestimmten Merkmalen zu, z. B. wenn sie über einen Internetdownload gestartet wurden. Diese Integritätsstufen beeinflussen Berechtigungen für Ressourcen |
 | `InitiatingProcessTokenElevation` | string | Tokentyp, der angibt, ob die Rechteerweiterung der Benutzerzugriffssteuerung (User Access Control, UAC) auf den Prozess angewendet wurde, der das Ereignis initiiert hat. |
 | `InitiatingProcessSHA1` | string | SHA-1 des Prozesses (Bilddatei), der das Ereignis initiiert hat |
 | `InitiatingProcessSHA256` | string | SHA-256 des Prozesses (Bilddatei), der das Ereignis initiiert hat. Dieses Feld ist in der Regel nicht aufgefüllt. Verwenden Sie die Spalte "SHA1", falls verfügbar. |
@@ -71,14 +76,14 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `InitiatingProcessFileName` | string | Name des Prozesses, der das Ereignis initiiert hat |
 | `InitiatingProcessId` | int | Prozess-ID (PID) des Prozesses, der das Ereignis initiiert hat |
 | `InitiatingProcessCommandLine` | string | Befehlszeile zum Ausführen des Prozesses, der das Ereignis initiiert hat |
-| `InitiatingProcessCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, an dem der Prozess, der das Ereignis initiiert hat, gestartet wurde |
+| `InitiatingProcessCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu dem der Prozess, der das Ereignis initiiert hat, gestartet wurde |
 | `InitiatingProcessFolderPath` | string | Ordner, der den Prozess (Bilddatei) enthält, der das Ereignis initiiert hat |
 | `InitiatingProcessParentId` | int | Prozess-ID (PID) des übergeordneten Prozesses, der den für das Ereignis verantwortlichen Prozess aussing |
 | `InitiatingProcessParentFileName` | string | Name des übergeordneten Prozesses, der den für das Ereignis verantwortlichen Prozess aussing |
 | `InitiatingProcessParentCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, an dem das übergeordnete Element des für das Ereignis verantwortlichen Prozesses gestartet wurde |
 | `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte in Verbindung mit den Spalten "DeviceName" und "Timestamp" verwendet werden. |
 | `AppGuardContainerId` | string | Bezeichner für den virtualisierten Container, der von Application Guard zum Isolieren der Browseraktivität verwendet wird |
-| `IsLocalAdmin` | Boolescher Wert | Boolescher Indikator dafür, ob der Benutzer ein lokaler Administrator auf dem Computer ist |
+| `IsLocalAdmin` | boolean | Boolescher Indikator dafür, ob der Benutzer ein lokaler Administrator auf dem Computer ist |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

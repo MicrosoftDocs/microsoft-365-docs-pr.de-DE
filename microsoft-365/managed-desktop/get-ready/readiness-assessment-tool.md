@@ -9,26 +9,26 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9fbd24185288265d698288e0d5e63e8b3c2afd10
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 1a00f7d5fb37cc9eea3f9454d473703084960864
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921846"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142933"
 ---
 # <a name="readiness-assessment-tools"></a>Tools zur Bewertung der Bereitschaft
 
-Für eine möglichst reibungslose Benutzererfahrung bei der Registrierung bei Microsoft Managed Desktop gibt es Einstellungen und andere Parameter, die Sie im Voraus festlegen müssen, sowie bestimmte Geräte- und Netzwerkanforderungen, die erfüllt werden müssen. Ein Tool, auf das über das Microsoft Managed Desktop Admin Portal zugegriffen wird, überprüft verwaltungsbezogene Einstellungen. Ein weiteres Tool, das heruntergeladen werden kann, überprüft die individuellen Geräteanforderungen und Netzwerkeinstellungen. Sie können diese Tools verwenden, um diese Einstellungen zu überprüfen und detaillierte Schritte zum Beheben nicht richtiger Informationen zu erhalten.
+Für eine möglichst reibungslose Benutzererfahrung bei der Registrierung bei Microsoft Managed Desktop gibt es Einstellungen und andere Parameter, die Sie im Voraus festlegen müssen, sowie bestimmte Geräte- und Netzwerkanforderungen, die erfüllt werden müssen. Ein Tool, auf das über das Microsoft Managed Desktop Admin Portal zugegriffen wird, überprüft verwaltungsbezogene Einstellungen. Ein anderes Tool, das heruntergeladen werden kann, überprüft die individuellen Geräteanforderungen und Netzwerkeinstellungen. Sie können diese Tools verwenden, um diese Einstellungen zu überprüfen und detaillierte Schritte zum Beheben nicht richtiger Informationen zu erhalten.
 
 ## <a name="downloadable-readiness-assessment-checker-for-devices-and-network"></a>Herunterladbare Überprüfung der Bereitschaftsbewertung für Geräte und Netzwerke
 
-Weitere Informationen zur Verwendung der herunterladbaren Überprüfung der Bereitschaftsbewertung finden Sie unter "Überprüfung der Herunterladbaren [Bereitschaftsbewertung".](readiness-assessment-downloadable.md)
+Weitere Informationen zur Verwendung des herunterladbaren Überprüfungsprüffelds für die Bereitschaftsbewertung finden Sie unter "Überprüfung der Herunterladbaren [Bereitschaftsbewertung".](readiness-assessment-downloadable.md)
 
-## <a name="online-readiness-assessment-tool-for-management-settings"></a>Tool für die Onlinebereitschaftsbewertung für Verwaltungseinstellungen
+## <a name="online-readiness-assessment-tool-for-management-settings"></a>Tool zur Bewertung der Onlinebereitschaft für Verwaltungseinstellungen
 
 Das Onlinetool überprüft einstellungen in Microsoft Endpoint Manager (insbesondere Microsoft Intune), Azure Active Directory (Azure AD) und Microsoft 365, um sicherzustellen, dass sie mit Microsoft Managed Desktop funktionieren. Microsoft Managed Desktop bewahrt die daten, die diesen Überprüfungen zugeordnet sind, 12 Monate nach dem letzten Ausführen einer Überprüfung in Ihrer Azure AD-Organisation (Mandant) auf. Nach 12 Monaten behalten wir sie in nicht identifizierter Form bei. Sie können die gesammelten Daten löschen.
 
-Dieses Tool kann von allen Benutzern mit mindestens der Rolle "Intune-Administrator" ausgeführt werden, aber zwei der Prüfungen[(](readiness-assessment-fix.md#conditional-access-policies) Richtlinien für bedingten Zugriff und mehrstufige Authentifizierung [erfordern](readiness-assessment-fix.md#multifactor-authentication) zusätzliche Berechtigungen.
+Jeder Benutzer mit mindestens der Rolle "Globaler Leser" oder "Intune-Administrator" kann dieses Tool ausführen, aber zwei der Prüfungen[(](readiness-assessment-fix.md#conditional-access-policies) Richtlinien für bedingten Zugriff und mehrstufige Authentifizierung [erfordern](readiness-assessment-fix.md#multifactor-authentication) zusätzliche Berechtigungen.
  
 Das Bewertungstool überprüft diese Elemente:
 
@@ -76,7 +76,7 @@ Das Bewertungstool überprüft diese Elemente:
 |OneDrive for Business     | Überprüft, ob OneDrive for Business nicht unterstützte Einstellungen verwendet.        |
 
 
-Für jede Überprüfung gibt das Tool eines von vier möglichen Ergebnissen an:
+Für jede Prüfung wird das Tool eines von vier möglichen Ergebnissen melden:
 
 
 |Ergebnis  |Bedeutung  |
@@ -84,7 +84,7 @@ Für jede Überprüfung gibt das Tool eines von vier möglichen Ergebnissen an:
 |Bereit     | Es ist keine Aktion erforderlich, bevor Sie die Registrierung abschließen.        |
 |Empfehlung    | Führen Sie die Schritte im Tool aus, um die beste Erfahrung mit der Registrierung und für Benutzer zu bieten. Sie *können* die Registrierung abschließen, aber Sie müssen diese Probleme beheben, bevor Sie Ihr erstes Gerät bereitstellen.        |
 |Nicht bereit | *Die Registrierung wird fehlschlagen,* wenn Sie diese Probleme nicht beheben. Führen Sie die Schritte im Tool aus, um sie zu beheben.        |
-|Error | Die Azure Active Director (AD)-Rolle, die Sie verwenden, verfügt nicht über ausreichende Berechtigungen, um diese Überprüfung ausführen zu können. |
+|Fehler | Die Azure Active Director (AD)-Rolle, die Sie verwenden, verfügt nicht über ausreichende Berechtigungen, um diese Überprüfung ausführen zu können. |
 
 ## <a name="after-enrollment"></a>Nach der Registrierung
 

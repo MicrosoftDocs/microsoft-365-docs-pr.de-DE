@@ -11,61 +11,66 @@ ms.topic: overview
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: In dieser Lösung erfahren Sie, wie die häufigsten Cyber-Angriffe in Microsoft 365 Aussehen und wie Sie darauf reagieren können.
+description: Diese Lösung teilt Ihnen mit, wie die häufigsten Cybersicherheitsangriffe in Microsoft 365 aussehen können und wie Sie darauf reagieren.
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 221303d43620e89b8200392961d8aa0916c82763
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 8dd7a90255fdd3e083a5d7306cac2e9ca6411024
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198703"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150183"
 ---
 # <a name="security-incident-response"></a>Reaktion auf Sicherheitsvorfälle
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
- **Zusammenfassung:** In dieser Lösung erfahren Sie, welche Indikatoren für die häufigsten Cyber-Angriffe in Office 365 gelten, wie Sie einen bestimmten Angriff positiv bestätigen und wie Sie darauf reagieren.
+ **Zusammenfassung:** Diese Lösung teilt Ihnen mit, welche Indikatoren für die häufigsten Cybersicherheitsangriffe in Office 365 stehen, wie Sie jeden Angriff bestätigen und wie Sie darauf reagieren.
 
-## <a name="learn-how-to-respond-to-cyberattacks"></a>Erfahren Sie, wie Sie auf Cyberangriffe Antworten
+## <a name="learn-how-to-respond-to-cyberattacks"></a>Erfahren Sie, wie Sie auf Cyberangriffe reagieren
 
-Nicht alle Cyberangriffe können vereitelt werden. Angreifer suchen ständig nach neuen Schwächen in ihrer Defensiv Strategie, oder Sie nutzen alte. Wenn Sie wissen, wie ein Angriff erkannt werden kann, können Sie schneller darauf reagieren, wodurch die Dauer des Sicherheitsvorfalls verkürzt wird.
+Nicht alle Cyberangriffe können vereitelt werden. Angreifer suchen ständig nach neuen Schwächen in Ihrer Strategie für die Abwehr oder nutzen alte aus. Wenn Sie wissen, wie Sie einen Angriff erkennen, können Sie schneller darauf reagieren, was die Dauer des Sicherheitsvorfalls verkürzt.
 
-Diese Artikelreihe hilft Ihnen zu verstehen, welche Art von Angriff in Microsoft 365 möglicherweise aussieht, und gibt Ihnen die Schritte, die Sie ergreifen können, um zu reagieren. Sie sind schnelle Einstiegspunkte für das Verständnis:
+Diese Artikelreihe hilft Ihnen zu verstehen, wie ein bestimmter Angriffstyp in Microsoft 365 aussehen könnte, und enthält Schritte, mit deren Hilfe Sie reagieren können. Sie sind schnelle Einstiegspunkte für das Verständnis:
 
 - Was der Angriff ist und wie er funktioniert.
 
-- Welche Zeichen, die als Indikatoren für Kompromisse (IOC) bezeichnet werden, zu suchen und wie Sie gesucht werden sollen.
+- Welche Zeichen, so genannte IOC (Indicators of Compromise), zu suchen sind und wie sie zu suchen sind.
 
-- Wie der Angriff positiv bestätigt wird.
+- Bestätigen des Angriffs
 
-- Schritte zum Abschneiden des Angriffs und zum besseren Schutz Ihrer Organisation in der Zukunft.
+- Schritte, die unternommen werden müssen, um den Angriff zu verhindern und Ihre Organisation in Zukunft besser zu schützen.
 
-- Enthält Links zu detaillierten Informationen zu den einzelnen Angriffstypen.
+- Links zu detaillierten Informationen zu jedem Angriffstyp.
 
-Überprüfen Sie hier monatlich, da weitere Artikel im Laufe der Zeit hinzugefügt werden.
+Schauen Sie sich hier monatlich an, da im Laufe der Zeit weitere Artikel hinzugefügt werden.
 
-## <a name="detect-and-remediate-articles"></a>Erkennen und korrigieren von Artikeln
+## <a name="detect-and-remediate-articles"></a>Erkennen und Beh nen von Artikeln
 
 - [Erkennen und Korrigieren von unerlaubter Zustimmung in Office 365](detect-and-remediate-illicit-consent-grants.md)
 
 - [Erkennen und Korrigieren von Outlook-Regeln und benutzerdefinierten Formularen für Einschleusungsangriffe in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
-## <a name="incident-response-articles"></a>Vorfall Antwort Artikel
+## <a name="incident-response-articles"></a>Artikel zur Reaktion auf Vorfälle
 
 - [Reagieren auf ein angegriffenes E-Mail-Konto in Office 365](responding-to-a-compromised-email-account.md)
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sichern von Microsoft 365 wie ein Profi für Internetsicherheit
 
-Ihr Microsoft 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen für Sicherheit, die Sie zum Schutz Ihrer Daten und Ihrer Benutzer verwenden können.  Verwenden Sie die [Microsoft 365-Sicherheits-Roadmap – die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](security-roadmap.md) , um die von Microsoft empfohlenen bewährten Methoden zum Sichern Ihrer Microsoft 365-Organisation zu implementieren.
+Ihr Microsoft 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen für Sicherheit, die Sie zum Schutz Ihrer Daten und Ihrer Benutzer verwenden können.  Verwenden Sie die Microsoft 365-Sicherheits-Roadmap – die wichtigsten Prioritäten für die ersten [30 Tage, 90](security-roadmap.md) Tage und darüber hinaus, um von Microsoft empfohlene bewährte Methoden zum Sichern Ihrer Microsoft 365-Organisation zu implementieren.
 
 - Aufgaben, die in den ersten 30 Tagen ausgeführt werden sollten.  Diese sind unmittelbar gültig und haben nur geringe Auswirkungen für die Benutzer.
 
-- Aufgaben, die innerhalb von 90 Tagen ausgeführt werden sollten. Diese benötigen ein wenig mehr Zeit, um ihre Sicherheitslage zu planen und zu implementieren, jedoch erheblich zu verbessern.
+- Aufgaben, die innerhalb von 90 Tagen ausgeführt werden sollten. Diese nehmen etwas mehr Zeit in Die Planung und Implementierung, verbessern aber ihren Sicherheitslage erheblich.
 
 - Über 90 Tage hinaus. Diese Verbesserungen werden in den ersten 90 Tagen Ihrer Arbeit umgesetzt.

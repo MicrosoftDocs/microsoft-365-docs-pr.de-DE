@@ -1,7 +1,7 @@
 ---
 title: Tabelle "EmailUrlInfo" im Schema "Erweiterte Suche"
 description: Hier erfahren Sie mehr über die URL- oder Linkinformationen in der Tabelle "EmailUrlInfo" des Schemas "Erweiterte Suche".
-keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, EmailUrlInfo, Netzwerk-Nachrichten-ID, URL, Link
+keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, Mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, EmailUrlInfo, Netzwerk-Nachrichten-ID, URL, Link
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 56d35e2812d895215cbe76deb6791695380abc50
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 76a2389eace73ee9d21962c8c618e0dac9994de0
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929718"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145463"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -35,16 +35,17 @@ ms.locfileid: "49929718"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Die Tabelle im Schema für die erweiterte Suche enthält Informationen zu URLs in E-Mails und Anlagen, die von `EmailUrlInfo` Microsoft Defender für Office 365 verarbeitet werden. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
+Die Tabelle im Schema für die erweiterte Suche enthält Informationen zu URLs in E-Mails und Anlagen, die von `EmailUrlInfo` Microsoft Defender für Office 365 verarbeitet werden. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben. 
 
 Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter [Referenz zur erweiterten Suche](advanced-hunting-schema-tables.md).
 
 | Spaltenname | Datentyp | Beschreibung |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
-| `UrlId` | string | Eindeutiger Bezeichner für die URL in der Betreffzeile, im Textkörper oder in der Anlage der E-Mail |
-| `NetworkMessageId` | string | Eindeutiger Bezeichner für die von Microsoft 365 generierte E-Mail |
+| `NetworkMessageId` | string | Eindeutiger Bezeichner für die E-Mail, generiert von Microsoft 365 |
 | `Url` | string | Vollständige URL in der Betreffzeile, im Textkörper oder in der Anlage der E-Mail |
+| `UrlDomain` | string | Domänen- oder Hostname der URL |
+| `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte in Verbindung mit den Spalten "DeviceName" und "Timestamp" verwendet werden. |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

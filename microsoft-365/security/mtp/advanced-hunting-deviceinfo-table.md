@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e445902ee83b734f84d02607905413a14c016b8f
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 6462096a6c1b44ee11299f652a54f261d0355523
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931278"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145367"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -37,7 +37,7 @@ ms.locfileid: "49931278"
 
 
 
-Die Tabelle im Schema für die erweiterte Suche enthält Informationen zu Computern in der Organisation, einschließlich Betriebssystemversion, aktiver Benutzer `DeviceInfo` und Computername. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
+Die Tabelle im Schema für die erweiterte Suche enthält Informationen zu Computern in der Organisation, einschließlich Betriebssystemversion, aktiven Benutzern `DeviceInfo` und Computernamen. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
 Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter [Referenz zur erweiterten Suche](advanced-hunting-schema-tables.md).
 
@@ -51,10 +51,12 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `OSArchitecture` | string | Die Architektur des Betriebssystem, das auf dem Computer ausgeführt wird. |
 | `OSPlatform` | string | Die Plattform des Betriebssystem, das auf dem Computer ausgeführt wird. Dies weist auf bestimmte Betriebssysteme hin, einschließlich Variationen innerhalb derselben Familie, z. B. Windows 10 und Windows 7. |
 | `OSBuild` | string | Buildversion des Betriebssystems, das auf dem Computer ausgeführt wird |
-| `IsAzureADJoined` | Boolescher Wert | Boolescher Indikator dafür, ob der Computer mit Azure Active Directory verbunden ist |
+| `IsAzureADJoined` | boolean | Boolescher Indikator dafür, ob der Computer mit Azure Active Directory verbunden ist |
+| `DeviceObjectId` | string | Eindeutiger Bezeichner für das Gerät in Azure AD |
 | `LoggedOnUsers` | string | Liste aller Benutzer, die zum Zeitpunkt des Ereignisses im JSON-Array-Format auf dem Computer angemeldet sind |
 | `RegistryDeviceTag` | string | Computertag, das über die Registrierung hinzugefügt wurde |
 | `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte in Verbindung mit den Spalten "DeviceName" und "Timestamp" verwendet werden. |
+|`AdditionalFields` | string | Zusätzliche Informationen zu dem Ereignis im JSON-Array-Format |
 | `OSVersion` | string | Die Version des Betriebssystem, das auf dem Computer ausgeführt wird. |
 | `MachineGroup` | string | Computergruppe des Computers. Diese Gruppe wird von der rollenbasierten Zugriffssteuerung verwendet, um den Zugriff auf den Computer zu bestimmen. |
 

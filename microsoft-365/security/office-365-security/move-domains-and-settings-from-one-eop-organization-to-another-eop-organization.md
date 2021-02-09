@@ -1,5 +1,5 @@
 ---
-title: Domänen & Einstellungen von einer EoP-Organisation zu einer anderen migrieren
+title: Verschieben von Domänen & Einstellungen von einer EOP-Organisation in eine andere
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,29 +8,32 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
-description: In diesem Artikel erfahren Sie, wie Sie Domänen und Einstellungen von einer Microsoft Exchange Online Protection (EoP)-Organisation (Mandant) zu einer anderen migrieren.
-ms.openlocfilehash: 485911ff7ac94c820d6f1e0f7cfa54da08943054
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: In diesem Artikel erfahren Sie, wie Sie Domänen und Einstellungen von einer Microsoft Exchange Online Protection (EOP)-Organisation (Mandant) in eine andere verschieben.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 4cfb5c31728174f7f7307e9492abc03a62f8bf9a
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614822"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150760"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Verschieben von Domänen und Einstellungen zwischen EOP-Organisationen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+-  [Exchange Online Protection als eigenständige Lösung](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 Änderungen in den Geschäftsanforderungen können manchmal erfordern, dass eine Microsoft Exchange Online Protection (EOP)-Organisation (ein Mandant) in zwei separate Organisationen unterteilt wird, zwei Organisationen in einer zusammengefasst oder Ihre Domänen und EOP-Einstellungen von einer Organisation zu einer anderen verschoben werden. Das Verschieben einer EOP-Organisaton zu einer zweiten EOP-Organisation kann ein Problem darstellen, doch mit ein paar einfachen Remote Windows PowerShell-Skripts und etwas Vorbereitung kann dies in einem relativ kleinen Wartungszeitfenster erreicht werden.
 
 > [!NOTE]
 >
-> - Einstellungen können auf zuverlässige Weise nur von einer eigenständigen EOP (Standard)-Organisation zu entweder einer anderen EOP Standard-Organisation oder einer EOP Premium-Organisation (Exchange Enterprise CAL mit Diensten) oder von einer EOP Premium-Organisation zu einer anderen EOP Premium-Organisation verschoben werden. Da einige Premium-Features in EoP-Standardorganisationen nicht unterstützt werden, ist die Verschiebung von einer EoP Premium-Organisation in eine EoP-Standardorganisation möglicherweise nicht erfolgreich.
+> - Einstellungen können auf zuverlässige Weise nur von einer eigenständigen EOP (Standard)-Organisation zu entweder einer anderen EOP Standard-Organisation oder einer EOP Premium-Organisation (Exchange Enterprise CAL mit Diensten) oder von einer EOP Premium-Organisation zu einer anderen EOP Premium-Organisation verschoben werden. Da einige Premiumfeatures in EOP -Standard-Organisationen nicht unterstützt werden, ist der Umzug von einer EOP -Premium-Organisation zu einer EOP -Standard-Organisation möglicherweise nicht erfolgreich.
 >
 > - Diese Anweisungen gelten nur für filternde EOP-Organisationen. Es gibt weitere Überlegungen beim Verschieben zwischen Exchange Online-Organisationen. Exchange Online-Organisationen werden in diesen Anweisungen nicht berücksichtigt.
 
@@ -48,21 +51,21 @@ Um die Quellorganisation in der Zielorganisation erneut zu erstellen, müssen Si
 - E-Mail-Benutzer
 - Gruppen
 - Antispam
-  - Anti-Spam-Richtlinien (auch als Inhaltsfilter Richtlinien bezeichnet)
-  - Richtlinien für ausgehende Spamfilter
-  - Verbindungsfilter Richtlinien
-- Anti-Malware-Richtlinien
+  - Antispamrichtlinien (auch als Inhaltsfilterrichtlinien bekannt)
+  - Filterrichtlinien für ausgehende Spamnachrichten
+  - Verbindungsfilterrichtlinien
+- Richtlinien für Ansoftware
 - Connectors
-- Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet)
+- Nachrichtenflussregeln (auch bekannt als Transportregeln)
 
   > [!NOTE]
-  > Die Unterstützung von Cmdlets für den Export und Import der Nachrichtenfluss Regelsammlung wird derzeit nur für EoP Premium-Abonnement Pläne unterstützt.
+  > Die Unterstützung von Cmdlets für den Export und Import der Nachrichtenflussregelsammlung wird derzeit nur für EOP -Premium-Abonnementpläne unterstützt.
 
-Die einfachste Möglichkeit zum Sammeln aller Einstellungen ist die Verwendung von PowerShell. Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+Die einfachste Möglichkeit, alle Einstellungen zu erfassen, ist die Verwendung von PowerShell. Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 Als Nächstes können Sie alle Einstellungen sammeln und sie in eine XML-Datei exportieren, um sie in den Zielmandanten zu importieren. Im Allgemeinen können Sie bei jeder Einstellung die Ausgabe des Cmdlets **Get** in das Cmdlet **Export-Clixml** übergeben, um die Einstellungen in XML-Dateien zu speichern, wie im folgenden Beispielcode dargestellt.
 
-Erstellen Sie in eigenständiger EoP-PowerShell ein Verzeichnis mit dem Namen Export an einem Speicherort, der leicht zu finden und in dieses Verzeichnis geändert werden kann. Beispiel:
+Erstellen Sie in der eigenständigen EOP PowerShell ein Verzeichnis mit dem Namen "Exportieren" an einem Ort, der leicht zu finden und in dieses Verzeichnis geändert werden kann. Zum Beispiel:
 
 ```PowerShell
 mkdir C:\EOP\Export
@@ -72,7 +75,7 @@ mkdir C:\EOP\Export
 cd C:\EOP\Export
 ```
 
-Das folgende Skript kann verwendet werden, um alle e-Mail-Benutzer, Gruppen, Anti-Spam-Einstellungen, Antischadsoftware-Einstellungen, Connectors und Nachrichtenfluss Regeln in der Quellorganisation zu erfassen. Kopieren Sie den folgenden Text, fügen Sie ihn in einem Texteditor ein, z. B. Editor, speichern Sie die Datei als Source_EOP_Settings.ps1 im eben erstellten Verzeichnis "Export", und führen Sie den folgenden Befehl aus:
+Das folgende Skript kann verwendet werden, um alle E-Mail-Benutzer, Gruppen, Antispameinstellungen, Ansoftwareeinstellungen, Connectors und Nachrichtenflussregeln in der Quellorganisation zu erfassen. Kopieren Sie den folgenden Text, fügen Sie ihn in einem Texteditor ein, z. B. Editor, speichern Sie die Datei als Source_EOP_Settings.ps1 im eben erstellten Verzeichnis "Export", und führen Sie den folgenden Befehl aus:
 
 ```PowerShell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"
@@ -176,13 +179,13 @@ Foreach ($domain in $Domains) {
 }
 ```
 
-Jetzt können Sie die Informationen aus dem Microsoft 365 Admin Center ihrer Zielorganisation überprüfen und sammeln, damit Sie Ihre Domänen schnell überprüfen können, wenn die Zeit gekommen ist:
+Jetzt können Sie die Informationen aus dem Microsoft 365 Admin Center Ihrer Zielorganisation überprüfen und sammeln, damit Sie Ihre Domänen schnell überprüfen können, wenn der Zeitpunkt kommt:
 
-1. Melden Sie sich beim Microsoft 365 Admin Center unter an <https://portal.office.com> .
+1. Melden Sie sich beim Microsoft 365 Admin Center unter <https://portal.office.com> an.
 
 2. Klicken Sie auf **Domänen**.
 
-   Wenn Domänen nicht angezeigt werden, klicken Sie auf **Navigation anpassen**, wählen Sie **Setup** aus, und klicken Sie dann auf **Speichern**.
+   Wenn keine Domänen angezeigt werden, klicken Sie auf "Navigation **anpassen",** wählen **Sie "Setup"** aus, und klicken Sie dann auf **"Speichern".**
 
 3. Klicken Sie auf die einzelnen **Setup starten**-Links, und fahren Sie dann mit dem Setup-Assistenten fort.
 
@@ -190,7 +193,7 @@ Jetzt können Sie die Informationen aus dem Microsoft 365 Admin Center ihrer Zie
 
 5. Protokollieren Sie den MX- oder TXT-Eintrag, den Sie für die Überprüfung Ihrer Domäne benötigen, und beenden Sie den Setup-Assistenten.
 
-6. Fügen Sie die TXT-Überprüfungseinträge zu Ihren DNS-Einträgen hinzu. Dadurch können Sie die Domänen in der Quellorganisation schneller überprüfen, nachdem sie aus der Zielorganisation entfernt wurden. Weitere Informationen zum Konfigurieren von DNS finden Sie unter [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostanbieter für Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+6. Fügen Sie die TXT-Überprüfungseinträge zu Ihren DNS-Einträgen hinzu. Dadurch können Sie die Domänen in der Quellorganisation schneller überprüfen, nachdem sie aus der Zielorganisation entfernt wurden. Weitere Informationen zum Konfigurieren von DNS finden Sie unter [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>Schritt 3: Erzwingen, dass Absender-E-Mails in die Warteschlange kommen
 
@@ -200,14 +203,14 @@ Eine Möglichkeit, wie Sie die Einreihung von Absender-E-Mails in die Warteschla
 
 Eine andere Möglichkeit ist das Setzen eines ungültigen MX-Eintrags in den einzelnen Domänen, in denen sich die DNS-Einträge für Ihre Domäne befinden (auch als DNS-Hostingdienst bezeichnet). Dadurch werden die Absender-E-Mails in die Warteschlange eingereiht, und das Senden wird erneut versucht (in der Regel erfolgen Wiederholungsversuche 48 Stunden lang, das kann aber je nach Anbieter variieren). Sie können invalid.outlook.com als ein ungültiges MX-Ziel verwenden. Wenn Sie den TTL-Wert (Time to Live) für den MX-Eintrag auf fünf Minuten heruntersetzen, wird die Verteilung der Änderung an die DNS-Anbieter beschleunigt.
 
-Weitere Informationen zum Konfigurieren von DNS finden Sie unter [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostanbieter für Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Weitere Informationen zum Konfigurieren von DNS finden Sie unter [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
 
 > [!IMPORTANT]
 > Andere Anbieter reihen E-Mails unterschiedlich lang in die Warteschlange ein. Sie müssen Ihren neuen Mandanten schnell einrichten und Ihre DNS-Einstellungen wiederherstellen, um zu verhindern, dass Unzustellbarkeitsberichte an den Absender gesendet werden, wenn die Warteschlangenzeit ausläuft.
 
 ## <a name="step-4-remove-users-groups-and-domains-from-the-source-organization"></a>Schritt 4: Entfernen von Benutzern, Gruppen und Domänen aus der Quellorganisation
 
-Das folgende Skript entfernt Benutzer, Gruppen und Domänen aus dem Quellmandanten mithilfe von Azure Active Directory PowerShell. Kopieren Sie den folgenden Text, fügen Sie ihn in einem Texteditor ein, z. B. Editor, speichern Sie die Datei unter C:\EOP\Export\Remove_Users_and_Groups.ps1, und führen Sie den folgenden Befehl aus:
+Mit dem folgenden Skript werden Benutzer, Gruppen und Domänen mithilfe von Azure Active Directory PowerShell aus dem Quell mandanten entfernt. Kopieren Sie den folgenden Text, fügen Sie ihn in einem Texteditor ein, z. B. Editor, speichern Sie die Datei unter C:\EOP\Export\Remove_Users_and_Groups.ps1, und führen Sie den folgenden Befehl aus:
 
 ```PowerShell
 & "C:\EOP\Export\Remove_Users_and_Groups.ps1"
@@ -248,7 +251,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>Schritt 5: Überprüfen von Domänen für die Zielorganisation
 
-1. Melden Sie sich beim Admin Center an <https://portal.office.com> .
+1. Melden Sie sich beim Admin Center unter <https://portal.office.com> an.
 
 2. Klicken Sie auf **Domänen**.
 
@@ -930,4 +933,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Schritt 8: Wiederherstellen Ihrer DNS-Einstellungen zum Beenden der E-Mail-Warteschlange
 
-Wenn Sie Ihre MX-Einträge auf eine ungültige Adresse festlegen, damit die Absender während des Übergangs e-Mails in die Warteschlange eingereiht haben, müssen Sie Sie auf den korrekten Wert zurücksetzen, der im [Admin Center](https://admin.microsoft.com)angegeben ist. Weitere Informationen zum Konfigurieren von DNS finden Sie unter [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostanbieter für Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Wenn Sie ihre MX-Einträge auf eine ungültige Adresse festgelegt haben, damit die Absender während des Übergangs E-Mails in die Warteschlange stellen, müssen Sie sie auf den korrekten Wert festlegen, wie im [Admin Center](https://admin.microsoft.com)angegeben. Weitere Informationen zum Konfigurieren von DNS finden Sie unter [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)

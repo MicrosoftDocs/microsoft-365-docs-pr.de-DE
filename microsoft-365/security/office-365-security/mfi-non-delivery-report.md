@@ -14,17 +14,21 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie den Bericht über Unzustellbarkeitsdetails im Nachrichtenflussdashboard im Security & Compliance Center verwenden, um die am häufigsten gefundenen Fehlercodes in Unzustellbarkeitsberichten (auch als Unzustellbarkeitsnachrichten bezeichnet) von Absendern in Ihrer Organisation zu überwachen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dbd27fc818a46a983874a04f0e313c622e047ea5
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: af4beefb8ba15fd7d98b11ec2571eee65a99e4e3
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029834"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150159"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Unzustellungsbericht im Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Der  Unzustellbarkeitsbericht [](mail-flow-insights-v2.md) im Nachrichtenflussdashboard im [Security & Compliance Center](https://protection.office.com) zeigt die häufigsten Fehlercodes in Unzustellbarkeitsberichten (auch NDRs oder Unzustellbarkeitsnachrichten bezeichnet) für Benutzer in Ihrer Organisation an. Dieser Bericht enthält die Details von Unzustellungsberichten, damit Sie Probleme mit der Zustellung von E-Mails beheben können.
 

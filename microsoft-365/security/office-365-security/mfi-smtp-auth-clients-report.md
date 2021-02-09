@@ -14,27 +14,31 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie den Einblick in die SMTP-Authentifizierung und den Bericht im Nachrichtenflussdashboard im Security & Compliance Center verwenden, um E-Mail-Absender in ihrer Organisation zu überwachen, die authentifizierte SMTP (SMTP AUTH) zum Senden von E-Mail-Nachrichten verwenden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: afceb767f6ebfeed96deb6362e05bb088b548c3d
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 3476ee2f9388245fb105a0910fa7b7d11ec3aeee
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029162"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150243"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Einblick und Bericht für SMTP-Authentifizierungsclients im Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-In den Einblicken der [](mail-flow-insights-v2.md) **SMTP-Authentifizierungsclients** im Nachrichtenflussdashboard und dem zugehörigen [SMTP-Authentifizierungsclientbericht](#smtp-auth-clients-report) im Security & Compliance Center wird die Verwendung des SMTP AUTH-Clientübermittlungsprotokolls durch Benutzer oder Systemkonten in Ihrer Organisation hervorgehoben. [](https://protection.office.com) Dieses Legacyprotokoll (das die Endpunkt-smtp.office365.com verwendet) bietet nur die Standardauthentifizierung und ist anfällig für die Verwendung durch gefährdete Konten zum Senden von E-Mails. Der Einblick und der Bericht ermöglichen es Ihnen, ungewöhnliche Aktivitäten für SMTP AUTH-E-Mail-Übermittlungen zu überprüfen. Außerdem werden die TLS-Verwendungsdaten für Clients oder Geräte mit SMTP AUTH angezeigt.
+In den Einblicken der [](mail-flow-insights-v2.md) **SMTP-Authentifizierungsclients** im Nachrichtenflussdashboard und dem zugehörigen [SMTP-Authentifizierungsclientbericht](#smtp-auth-clients-report) im Security & Compliance Center wird die Verwendung des SMTP AUTH-Clientübermittlungsprotokolls durch Benutzer oder Systemkonten in Ihrer Organisation hervorgehoben. [](https://protection.office.com) Dieses Legacyprotokoll (das die Endpunkt-smtp.office365.com verwendet) bietet nur die Standardauthentifizierung und ist anfällig für die Verwendung durch gefährdete Konten zum Senden von E-Mails. Mit den Einblicken und dem Bericht können Sie nach ungewöhnlichen Aktivitäten für SMTP AUTH-E-Mail-Übermittlungen suchen. Außerdem werden die TLS-Verwendungsdaten für Clients oder Geräte mit SMTP AUTH angezeigt.
 
 Das Widget gibt die Anzahl der Benutzer oder Dienstkonten an, die das SMTP-Authentifizierungsprotokoll in den letzten 7 Tagen verwendet haben.
 
-![WIDGET für SMTP-Authentifizierungsclients im Nachrichtenflussdashboard im Security & Compliance Center](../../media/mfi-smtp-auth-clients-report-widget.png)
+![SMTP-Authentifizierungsclients-Widget im Nachrichtenflussdashboard im Security & Compliance Center](../../media/mfi-smtp-auth-clients-report-widget.png)
 
 Wenn Sie auf die Anzahl der Nachrichten im Widget klicken, wird ein Flyout für **SMTP-Authentifizierungsclients** angezeigt. Das Flyout bietet eine aggregierte Ansicht der Verwendung und der Volumes von TLS für die letzte Woche.
 
-![Detailf flyout nach dem Klicken auf das Widget "SMTP-Authentifizierungsclients" im Nachrichtenflussdashboard](../../media/mfi-smtp-auth-clients-report-details.png)
+![Detailf flyout nach dem Klicken auf das Widget "SMTP-Authentifizierungsclients" im Dashboard für den Nachrichtenfluss](../../media/mfi-smtp-auth-clients-report-details.png)
 
 Sie können auf den Bericht **"SMTP-Authentifizierungsclients"** klicken, um zum Bericht "SMTP-Authentifizierungsclients" zu wechseln, wie im nächsten Abschnitt beschrieben.
 

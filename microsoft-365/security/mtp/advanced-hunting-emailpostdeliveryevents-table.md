@@ -1,7 +1,7 @@
 ---
 title: Tabelle "EmailPostDeliveryEvents" im Schema "Erweiterte Suche"
 description: Informationen zu Post-Delivery-Aktionen für Microsoft 365-E-Mails in der Tabelle "EmailPostDeliveryEvents" des Schemas für die erweiterte Suche
-keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, EmailPostDeliveryEvents, Netzwerknachrichten-ID, Absender, Empfänger, Anlagen-ID, Anlagenname, Malware-Bewert, Phishing-Bewert, Anlagenanzahl, Linkanzahl, URL-Anzahl
+keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, Mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, EmailPostDeliveryEvents, Netzwerknachrichten-ID, Absender, Empfänger, Anlagen-ID, Anlagenname, Malware-Bewert, Phishing-Bewert, Anlagenanzahl, Linkanzahl, URL-Anzahl
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d7920be05156320411f3907cbcdae88d315b5136
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 774676e15e9018b13674149b6a2e147a91000814
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929706"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145499"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -45,8 +45,7 @@ Um weitere Informationen zu einzelnen E-Mail-Nachrichten zu erhalten, können Si
 | Spaltenname | Datentyp | Beschreibung |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
-| `EventId` | string | Eindeutiger Bezeichner für das Ereignis |
-| `NetworkMessageId` | string | Eindeutiger Bezeichner für die von Microsoft 365 generierte E-Mail |
+| `NetworkMessageId` | string | Eindeutiger Bezeichner für die E-Mail, generiert von Microsoft 365 |
 | `InternetMessageId` | string | Öffentlich sichtbarer Bezeichner für die E-Mail-Nachricht, die vom sendenden E-Mail-System festgelegt wird |
 | `Action` | string | Für die Entität ergriffene Aktion |
 | `ActionType` | string | Aktivitätstyp, der das Ereignis ausgelöst hat: Manuelle Wartung, Phish ZAP, Schadsoftware ZAP |
@@ -54,13 +53,14 @@ Um weitere Informationen zu einzelnen E-Mail-Nachrichten zu erhalten, können Si
 | `ActionResult` | string | Ergebnis der Aktion |
 | `RecipientEmailAddress` | string | E-Mail-Adresse des Empfängers oder E-Mail-Adresse des Empfängers nach Erweiterung der Verteilerliste |
 | `DeliveryLocation` | string | Der Ort, an den die E-Mail zugestellt wurde: "Posteingang/Ordner", "lokal"/"extern", "Junk", "Quarantäne", "Fehler", „Verloren“ oder "Gelöschte Elemente" |
+| `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte in Verbindung mit den Spalten "DeviceName" und "Timestamp" verwendet werden. |
 
 ## <a name="supported-event-types"></a>Unterstützte Ereignistypen
 In dieser Tabelle werden Ereignisse mit den folgenden Werten `ActionType` erfasst:
 
-- **Manuelle Korrektur:** Ein Administrator hat manuell Aktionen für eine E-Mail-Nachricht nach derEn Zugestellt an das Benutzerpostfach ergreifen. Dazu gehören Aktionen, die manuell über [den Bedrohungs-Explorer](../office-365-security/threat-explorer.md) oder Genehmigungen von automatisierten Untersuchungs- und [Reaktionsaktionen (AIR) ergriffen werden.](mtp-autoir-actions.md)
+- **Manuelle Korrektur:** Ein Administrator hat manuell Aktionen für eine E-Mail-Nachricht nach derEn Zugestellt an das Benutzerpostfach ergreifen. Dazu gehören Aktionen, die manuell über [den Threat Explorer](../office-365-security/threat-explorer.md) oder Genehmigungen von [automatisierten Untersuchungs- und Reaktionsaktionen (AIR) ergriffen werden.](mtp-autoir-actions.md)
 - **Phish ZAP** – [Zap (Zero-hour Auto Purge)](../office-365-security/zero-hour-auto-purge.md) hat nach der Zustellung eine Aktion für eine Phishing-E-Mail-Nachricht ergreifen.
-- **Schadsoftware ZAP** – Zap hat eine E-Mail-Nachricht, die nach der Zustellung Schadsoftware enthält, automatisch gelöscht (Zero-Hour Auto Purge, ZAP) gelöscht.
+- **Schadsoftware ZAP** – Zap hat eine E-Mail-Nachricht, die nach der Zustellung Schadsoftware enthält, zur Nullstunde automatisch gelöscht.
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
