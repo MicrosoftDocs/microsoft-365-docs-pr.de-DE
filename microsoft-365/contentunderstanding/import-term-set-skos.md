@@ -11,16 +11,16 @@ ms.service: ''
 ms.collection: enabler-strategic
 search.appverid: ''
 localization_priority: Priority
-ms.openlocfilehash: ba0f240caa8b3452783436e9a35c53d44baba894
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 3d6efce9b6414444793da54d9c6d7be47d6a9a5c
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976435"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145079"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importieren eines Ausdruckssatzes mithilfe eines SKOS-basierten Formats
 
-Sie können einen Ausdruckssatz mit einem SKOS-basierten Format importieren. Ausführliche Informationen zum Format finden Sie unter [SharePoint-Taxonomie SKOS-Format Referenz](skos-format-reference.md).
+Sie können einen Ausdruckssatz mit einem SKOS-basierten Format importieren. Ausführliche Informationen zum Format finden Sie unter [SharePoint-Taxonomie SKOS-Format Referenz](skos-format-reference.md). Dieses Feature benötigt eine [SharePoint Syntex](index.md)-Lizenz.
 
 Es wird empfohlen, Ihre Importdateien auf weniger als 20.000 Ausdrücke zu belassen. Größere Dateien können die Zeit für die Überprüfung und den Import verlängern.
 

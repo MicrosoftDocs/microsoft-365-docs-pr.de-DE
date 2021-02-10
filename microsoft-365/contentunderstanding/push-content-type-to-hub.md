@@ -12,12 +12,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-ms.openlocfilehash: 89c03a70da364bd4b945debc64de02255dec15e1
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 22d146b1d376bab134e82ad7d1313cb7881ca45b
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975715"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50144971"
 ---
 # <a name="push-content-types-to-a-hub"></a>Senden von Inhaltstypen per Push auf einen Hub
 
@@ -28,7 +28,7 @@ ms.locfileid: "49975715"
 </br>
 
 
-Um wichtige Inhaltstypen für SharePoint-Bibliotheken und -Listen durchweg verfügbar zu machen, können Sie sie an die von Ihnen ausgewählten Hubs senden. Durch das Senden der Inhaltstypen per Push werden sie automatisch zu allen neuen Listen und Bibliotheken hinzugefügt, die auf den mit dem Hub verknüpften Sites erstellt wurden, sowie zu allen neuen Sites, die dem Hub hinzugefügt wurden.
+Um wichtige Inhaltstypen für SharePoint-Bibliotheken und -Listen durchweg verfügbar zu machen, können Sie sie an die von Ihnen ausgewählten Hubs senden. Durch das Senden der Inhaltstypen per Push werden sie automatisch zu allen neuen Listen und Bibliotheken hinzugefügt, die auf den mit dem Hub verknüpften Sites erstellt wurden, sowie zu allen neuen Sites, die dem Hub hinzugefügt wurden. Dieses Feature benötigt eine [SharePoint Syntex](index.md)-Lizenz.
 
 Damit diese Funktion funktioniert, müssen die geposteten Inhaltstypen bereits veröffentlicht sein.
 
