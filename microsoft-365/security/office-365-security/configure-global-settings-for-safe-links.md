@@ -8,7 +8,6 @@ manager: dansimp
 audience: Admin
 ms.topic: how-to
 ms.date: ''
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,43 +15,49 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratoren können erfahren, wie Sie globale Einstellungen (die Liste "folgende URLs blockieren" und Schutz für Office 365-Apps) für sichere Links in Microsoft Defender für Office 365 anzeigen und konfigurieren.
-ms.openlocfilehash: bc44432d4d9478e4c6a2414a70acc785c5b2c005
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+description: Administratoren können erfahren, wie Sie globale Einstellungen (die Liste "Folgende URLs blockieren" und Schutz für Office 365-Apps) für sichere Links in Microsoft Defender für Office 365 anzeigen und konfigurieren.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 885fe6a06cce054bea6d6f20c24c5c1f2a159c07
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682906"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165727"
 ---
-# <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Konfigurieren globaler Einstellungen für sichere Links in Microsoft Defender für Office 365
+# <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Konfigurieren der globalen Einstellungen für sichere Links in Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die über [Microsoft Defender für Office 365](office-365-atp.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu Safelinks in Outlook sucht, lesen Sie [Erweiterte Outlook.com-Sicherheit](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Microsoft Defender für Office 365](office-365-atp.md) verfügen. Informationen zu Safelinks in Outlook finden Sie unter Advanced [Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-"Sichere Links" ist ein Feature in [Microsoft Defender für Office 365](office-365-atp.md) , das die URL-Überprüfung eingehender e-Mail-Nachrichten im Nachrichtenfluss und die Zeit der Klick Überprüfung von URLs und Links in e-Mail-Nachrichten und an anderen Speicherorten bereitstellt. Weitere Informationen finden Sie unter [sichere Links in Microsoft Defender für Office 365](atp-safe-links.md).
+Sichere Links ist ein Feature in [Microsoft Defender für Office 365,](office-365-atp.md) das die URL-Überprüfung eingehender E-Mail-Nachrichten im Nachrichtenfluss sowie die Zeit der Klicküberprüfung von URLs und Links in E-Mail-Nachrichten und an anderen Speicherorten bietet. Weitere Informationen finden Sie unter ["Sichere Links" in Microsoft Defender für Office 365.](atp-safe-links.md)
 
-Sie konfigurieren die meisten Einstellungen für sichere Links in Richtlinien für sichere Links. Anweisungen finden Sie unter [Einrichten von Richtlinien zu sicheren Links in Microsoft Defender für Office 365](set-up-atp-safe-links-policies.md).
+Die meisten Einstellungen für sichere Links werden in Richtlinien für sichere Links konfiguriert. Anweisungen finden Sie unter [Einrichten von Richtlinien für sichere Links in Microsoft Defender für Office 365.](set-up-atp-safe-links-policies.md)
 
-Aber sichere Links verwendet auch globale Einstellungen, die für alle Benutzer gelten, die in allen aktiven Richtlinien für sichere Links enthalten sind. Dieser Bereich für globale Einstellungen:
+Sichere Links verwenden jedoch auch globale Einstellungen, die für alle Benutzer gelten, die in aktiven Richtlinien für sichere Links enthalten sind. Dieser globale Einstellungsbereich:
 
-- Die Liste **folgende URLs blockieren** Weitere Informationen finden Sie in [der Liste "folgende URLs blockieren" für sichere Links](atp-safe-links.md#block-the-following-urls-list-for-safe-links)
-- Schutz für sichere Links für Office 365-apps. Weitere Informationen finden Sie unter [Einstellungen für sichere Links für Office 365 apps](atp-safe-links.md#safe-links-settings-for-office-365-apps).
+- Die **Liste der folgenden URLs blockieren.** Weitere Informationen finden Sie unter ["Blockieren der folgenden URLs" für sichere Links.](atp-safe-links.md#block-the-following-urls-list-for-safe-links)
+- Schutz sicherer Links für Office 365-Apps. Weitere Informationen finden Sie unter Einstellungen für [sichere Links für Office 365-Apps.](atp-safe-links.md#safe-links-settings-for-office-365-apps)
 
-Sie können die globalen Einstellungen für sichere Links im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für berechtigte Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EoP PowerShell für Organisationen ohne Exchange Online Postfächer, aber mit Microsoft Defender für Office 365 Add-on-Abonnements) konfigurieren.
+Sie können die globalen Einstellungen für sichere Links im Security & Compliance Center oder in PowerShell konfigurieren (Exchange Online PowerShell für berechtigte Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online-Postfächer, aber mit Microsoft Defender für Office 365-Add-On-Abonnements).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Die Features, die von globalen Einstellungen für sichere Links bereitgestellt werden, werden nur auf Benutzer angewendet, die in Active Safe Links-Richtlinien enthalten sind. Es gibt keine integrierte Richtlinie oder Standardrichtlinie für sichere Links, daher müssen Sie mindestens eine Richtlinie für sichere Links erstellen, damit diese globalen Einstellungen aktiv sind. Anweisungen finden Sie unter [Einrichten von Richtlinien zu sicheren Links in Microsoft Defender für Office 365](set-up-atp-safe-links-policies.md).
+- Die von den globalen Einstellungen für sichere Links bereitgestellten Features werden nur auf Benutzer angewendet, die in aktiven Richtlinien für sichere Links enthalten sind. Es gibt keine integrierte oder standardmäßige Richtlinie für sichere Links. Daher müssen Sie mindestens eine Richtlinie für sichere Links erstellen, damit diese globalen Einstellungen aktiv sind. Anweisungen finden Sie unter [Einrichten von Richtlinien für sichere Links in Microsoft Defender für Office 365.](set-up-atp-safe-links-policies.md)
 
-- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Wenn Sie direkt zur Seite **sichere Links** wechseln möchten, verwenden Sie <https://protection.office.com/safelinksv2> .
+- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite "Sichere **Links" zu** wechseln, verwenden Sie <https://protection.office.com/safelinksv2> .
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen im Security & Compliance Center Berechtigungen zugewiesen werden.
-  - Um die globalen Einstellungen für sichere Links zu konfigurieren, müssen Sie Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein.
-  - Für den schreibgeschützten Zugriff auf die globalen Einstellungen für sichere Links müssen Sie Mitglied der Rollengruppen " **globaler Leser** " oder " **Sicherheits Leser** " sein.
+  - Zum Konfigurieren der globalen Einstellungen für sichere Links müssen Sie Mitglied der Rollengruppe **"Organisationsverwaltung"** oder **"Sicherheitsadministrator"** sein.
+  - Für den schreibgeschützten Zugriff auf die globalen Einstellungen für sichere  Links müssen Sie Mitglied der Rollengruppe "Globaler Leser" oder "Sicherheitsleser"  sein.
 
   Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -61,31 +66,31 @@ Sie können die globalen Einstellungen für sichere Links im Security & Complian
   - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
   - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
-- Unsere empfohlenen Werte für die globalen Einstellungen für sichere Links finden Sie unter [Safe Links Settings](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings).
+- Die empfohlenen Werte für die globalen Einstellungen für sichere Links finden Sie unter Einstellungen für [sichere Links.](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings)
 
-- Erlauben Sie bis zu 30 Minuten, bis eine neue oder aktualisierte Richtlinie angewendet wird.
+- Es kann bis zu 30 Minuten dauern, bis eine neue oder aktualisierte Richtlinie angewendet wird.
 
-- [Für Office 365 werden fortlaufend neue Features zu Microsoft Defender hinzugefügt](office-365-atp.md#new-features-in-microsoft-defender-for-office-365). Wenn neue Features hinzugefügt werden, müssen Sie möglicherweise Anpassungen an Ihren bestehenden Richtlinien für sichere Links vornehmen.
+- [Microsoft Defender für Office 365](office-365-atp.md#new-features-in-microsoft-defender-for-office-365)werden ständig neue Features hinzugefügt. Wenn neue Features hinzugefügt werden, müssen Sie möglicherweise Anpassungen an Ihren vorhandenen Richtlinien für sichere Links vornehmen.
 
-## <a name="configure-the-block-the-following-urls-list-in-the-security--compliance-center"></a>Konfigurieren der Liste "folgende URLs blockieren" im Security & Compliance Center
+## <a name="configure-the-block-the-following-urls-list-in-the-security--compliance-center"></a>Konfigurieren der Liste "Blockieren der folgenden URLs" im Security & Compliance Center
 
-In der Liste der **folgenden URLs blockieren** werden die Links aufgeführt, die immer durch das Scannen sicherer Hyperlinks in unterstützten apps blockiert werden sollten. Weitere Informationen finden Sie in [der Liste "folgende URLs blockieren" für sichere Links](atp-safe-links.md#block-the-following-urls-list-for-safe-links).
+In **der Liste "Blockieren" der** folgenden URLs werden die Links identifiziert, die von der Überprüfung auf sichere Links in unterstützten Apps immer blockiert werden sollten. Weitere Informationen finden Sie unter ["Blockieren der folgenden URLs" für sichere Links.](atp-safe-links.md#block-the-following-urls-list-for-safe-links)
 
-1. Wechseln Sie im Security & Compliance Center zu Richtlinien für die **Gefahrenmanagement** \> **Richtlinie** \> **ATP-sichere Links**, und klicken Sie dann auf **globale Einstellungen**.
+1. Wechseln Sie & Security & Compliance  Center zu "AtP-Richtlinien für sichere Links", und klicken Sie dann auf \>  \>  **"Globale Einstellungen".**
 
-2. Wechseln Sie in der Liste **Richtlinie für sichere Links für Ihre Organisation** , die angezeigt wird, zum Feld **folgende URLs blockieren** .
+2. Wechseln Sie **in der** angezeigten Richtlinie für sichere Links für Ihre Organisation zum Feld "Folgende **URLs** blockieren".
 
-3. Konfigurieren Sie einen oder mehrere Einträge wie unter [Eingabesyntax für die Liste "Blockieren der folgenden URLs"](atp-safe-links.md#entry-syntax-for-the-block-the-following-urls-list)beschrieben.
+3. Konfigurieren Sie einen oder mehrere Einträge, wie in der Eintragssyntax für die Liste ["Folgende URLs blockieren" beschrieben.](atp-safe-links.md#entry-syntax-for-the-block-the-following-urls-list)
 
    Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
-### <a name="configure-the-block-the-following-urls-list-in-powershell"></a>Konfigurieren der Liste "Blockieren der folgenden URLs" in PowerShell
+### <a name="configure-the-block-the-following-urls-list-in-powershell"></a>Konfigurieren der Liste "Folgende URLs blockieren" in PowerShell
 
-Ausführliche Informationen zur Eingabesyntax finden Sie unter [Entry-Syntax für die Liste "Blockieren der folgenden URLs"](atp-safe-links.md#entry-syntax-for-the-block-the-following-urls-list).
+Weitere Informationen zur Eintragssyntax finden Sie in der Eintragssyntax für die Liste ["Blockieren der folgenden URLs".](atp-safe-links.md#entry-syntax-for-the-block-the-following-urls-list)
 
-Sie können das Cmdlet **Get-AtpPolicyForO365** verwenden, um vorhandene Einträge in der _BlockURLs_ -Eigenschaft anzuzeigen.
+Mit dem **Cmdlet "Get-AtpPolicyForO365"** können Sie vorhandene Einträge in der Eigenschaft _"BlockURLs"_ anzeigen.
 
-- Verwenden Sie die folgende Syntax in Exchange Online PowerShell oder Exchange Online Protection PowerShell, um Werte hinzuzufügen, die vorhandene Einträge ersetzen sollen:
+- Verwenden Sie die folgende Syntax in Exchange Online PowerShell oder Exchange Online Protection PowerShell, um Werte hinzuzufügen, die vorhandene Einträge ersetzen:
 
   ```powershell
   Set-AtpPolicyForO365 -BlockUrls "Entry1","Entry2",..."EntryN"
@@ -94,65 +99,65 @@ Sie können das Cmdlet **Get-AtpPolicyForO365** verwenden, um vorhandene Einträ
   In diesem Beispiel werden der Liste die folgenden Einträge hinzugefügt:
 
   - Blockieren Sie die Domäne, Unterdomänen und Pfade für fabrikam.com.
-  - Untersuchung der Unterdomäne blockieren, jedoch nicht die übergeordnete Domäne oder andere Unterdomänen in tailspintoys.com
+  - Blockieren der Unterdomänenforschung, aber nicht der übergeordneten Domäne oder anderer Unterdomänen in tailspintoys.com
 
   ```powershell
   Set-AtpPolicyForO365 -BlockUrls "fabrikam.com","https://research.tailspintoys.com*"
   ```
 
-- Verwenden Sie die folgende Syntax, um Werte hinzuzufügen oder zu entfernen, ohne andere vorhandene Einträge zu beeinflussen:
+- Verwenden Sie die folgende Syntax, um Werte ohne Auswirkungen auf andere Einträge hinzuzufügen oder zu entfernen:
 
   ```powershell
   Set-AtpPolicyForO365 -BlockUrls @{Add="Entry1","Entry2"...; Remove="Entry3","Entry4"...}
   ```
 
-  In diesem Beispiel wird ein neuer Eintrag für adatum.com hinzugefügt, und der Eintrag für fabrikam.com wird entfernt.
+  In diesem Beispiel wird ein neuer Eintrag für adatum.com und der Eintrag für die fabrikam.com.
 
   ```powershell
   Set-AtpPolicyForO365 -BlockUrls @{Add="adatum.com"; Remove="fabrikam"}
   ```
 
-## <a name="configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center"></a>Konfigurieren von Schutz für sichere Links für Office 365 apps im Security & Compliance Center
+## <a name="configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center"></a>Konfigurieren des Schutzes sicherer Links für Office 365-Apps im Security & Compliance Center
 
-Sicherer Links Schutz für Office 365 apps gilt für Dokumente in unterstützten Office-Desktop-, Mobil-und Webanwendungen. Weitere Informationen finden Sie unter [Einstellungen für sichere Links für Office 365 apps](atp-safe-links.md#safe-links-settings-for-office-365-apps).
+Der Schutz sicherer Links für Office 365-Apps gilt für Dokumente in unterstützten Office-Desktop-, Mobile- und Web-Apps. Weitere Informationen finden Sie unter Einstellungen für [sichere Links für Office 365-Apps.](atp-safe-links.md#safe-links-settings-for-office-365-apps)
 
-1. Wechseln Sie im Security & Compliance Center zu Richtlinien für die **Gefahrenmanagement** \> **Richtlinie** \> **ATP-sichere Links**, und klicken Sie dann auf **globale Einstellungen**.
+1. Wechseln Sie & Security & Compliance  Center zu "AtP-Richtlinien für sichere Links", und klicken Sie dann auf \>  \>  **"Globale Einstellungen".**
 
-2. Konfigurieren Sie in der angezeigten **Richtlinie für sichere Links für Ihre Organisation** , die angezeigt wird, die folgenden Einstellungen im Abschnitt **Einstellungen, die für Inhalt außer e-Mail gelten** :
+2. Konfigurieren Sie **in** der angezeigten Richtlinie für sichere Links für Ihre Organisation die folgenden Einstellungen in den Einstellungen, die für Inhalte außer im Abschnitt "E-Mail" **gelten:**
 
-   - **Office 365 Anwendungen**: Stellen Sie sicher, dass die Umschaltfläche auf der rechten Seite ist, um sichere Links für unterstützte Office 365 apps zu aktivieren: ![ Einschalten ](../../media/scc-toggle-on.png) .
+   - **Office 365-Anwendungen:** Stellen Sie sicher, dass der Umschalter rechts ist, um sichere Links für unterstützte Office 365-Apps zu aktivieren: ![ Umschalten. ](../../media/scc-toggle-on.png)
 
-   - **Nicht nachverfolgen, wenn Benutzer auf sichere Links klicken**: bewegen Sie die Umschaltfläche nach links, um Benutzerklicks in Bezug auf blockierte URLs in unterstützten Office 365 apps nachzuverfolgen: ![ Deaktivieren ](../../media/scc-toggle-off.png) .
+   - **Nicht** verfolgen, wenn Benutzer auf "Sichere Links" klicken: Umschalten nach links, um Benutzerklicks im Zusammenhang mit blockierten URLs in unterstützten Office 365-Apps nachverfolgt: ![ Umschalten. ](../../media/scc-toggle-off.png)
 
-   - **Benutzer können nicht über sichere Links auf die ursprüngliche URL klicken**: Vergewissern Sie sich, dass die Umschaltfläche auf der rechten Seite ist, um zu verhindern, dass Benutzer die ursprüngliche Blockierte URL in unterstützten Office 365 apps: ![ Einschalten ](../../media/scc-toggle-on.png) .
+   - Benutzer dürfen nicht über sichere Links zur ursprünglichen **URL** klicken: Überprüfen Sie, ob die Umschalte auf der rechten Seite ist, um zu verhindern, dass Benutzer auf die ursprüngliche blockierte URL in unterstützten Office 365-Apps klicken: ![ Umschalten. ](../../media/scc-toggle-on.png)
 
    Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
-### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>Konfigurieren von Schutz für sichere Links für Office 365 apps in PowerShell
+### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>Konfigurieren des Schutzes sicherer Links für Office 365-Apps in PowerShell
 
-Wenn Sie lieber mithilfe von PowerShell den Schutz für sichere Links für Office 365 apps konfigurieren möchten, verwenden Sie die folgende Syntax in Exchange Online PowerShell oder Exchange Online Protection PowerShell:
+Wenn Sie lieber PowerShell zum Konfigurieren des Schutzes sicherer Links für Office 365-Apps verwenden möchten, verwenden Sie die folgende Syntax in Exchange Online PowerShell oder Exchange Online Protection PowerShell:
 
 ```powershell
 Set-AtpPolicyForO365 [-EnableSafeLinksForO365Clients <$true | $false> [-AllowClickThrough <$true | $false>] [-TrackClicks <$true | $false>]
 ```
 
-In diesem Beispiel werden die folgenden Einstellungen für den Schutz von sicheren Links in Office 365 apps konfiguriert:
+In diesem Beispiel werden die folgenden Einstellungen für den Schutz sicherer Links in Office 365-Apps konfiguriert:
 
-- Sichere Links für Office 365 apps sind aktiviert (der Parameter _EnableSafeLinksForO365Clients_ wird nicht verwendet, und der Standardwert ist $true).
-- Benutzerklicks im Zusammenhang mit blockierten URLs in unterstützten Office 365-apps werden nachverfolgt.
-- Benutzer dürfen nicht auf die ursprüngliche Blockierte URL in unterstützten Office 365 apps klicken (der Parameter _AllowClickThrough_ wird nicht verwendet, und der Standardwert ist $false).
+- Sichere Links für Office 365-Apps sind aktiviert (der Parameter _"EnableSafeLinksForO365Clients"_ wird nicht verwendet, und der Standardwert ist $true).
+- Benutzerklicks im Zusammenhang mit blockierten URLs in unterstützten Office 365-Apps werden nachverfolgt.
+- Benutzer dürfen nicht auf die ursprüngliche blockierte URL in unterstützten Office 365-Apps klicken (der Parameter _"AllowClickThrough"_ wird nicht verwendet, und der Standardwert ist $false).
 
 ```powershell
 Set-AtpPolicyForO365 -TrackClicks $true
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Wie können Sie feststellen, dass diese Verfahren erfolgreich waren?
 
-Führen Sie einen der folgenden Schritte aus, um sicherzustellen, dass Sie die globalen Einstellungen für sichere Links erfolgreich konfiguriert haben (die Liste **folgende URLs blockieren** und die Office 365 Einstellungen für den App-Schutz):
+Gehen Sie wie folgt vor, um sicherzustellen, dass Sie die globalen Einstellungen für sichere Links (die Liste "Folgende **URLs** blockieren" und die Office 365-App-Schutzeinstellungen) erfolgreich konfiguriert haben:
 
-- Wechseln Sie im Security & Compliance Center zu Richtlinien für die **Gefahrenmanagement** \> **Richtlinie** \> **ATP-sichere Links**, klicken Sie auf **globale Einstellungen**, und überprüfen Sie die Einstellungen in der angezeigten ausklapp Leiste.
+- Wechseln Sie im Security & Compliance  Center zu "AtP-Sichere Links" für die Bedrohungsverwaltung, klicken Sie auf "Globale Einstellungen", und überprüfen Sie die angezeigten Einstellungen \>  \> im Flyout. 
 
 - Führen Sie in Exchange Online PowerShell oder Exchange Online Protection PowerShell den folgenden Befehl aus, und überprüfen Sie die Einstellungen:
 

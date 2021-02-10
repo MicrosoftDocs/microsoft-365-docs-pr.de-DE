@@ -7,7 +7,6 @@ ms.reviewer: kshi
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,62 +14,68 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über sichere Dokumente in Microsoft 365 E5 oder Microsoft 365 E5 Security.
-ms.openlocfilehash: 1bf802422dc05babaf5e2616468f8326b7007dc8
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 47bb6c66d51575c91b829e9688a074aaf9a18ab5
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682937"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166651"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Sichere Dokumente in Microsoft 365 E5
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Microsoft Defender für Office 365 Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Safe Documents ist ein Feature in Microsoft 365 E5 oder Microsoft 365 E5 Security, das [Microsoft Defender für Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) zum Überprüfen von Dokumenten und Dateien verwendet, die in der [geschützten Ansicht](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)geöffnet werden.
+"Sichere Dokumente" ist ein Feature in Microsoft 365 E5 oder Microsoft 365 E5 Security, das [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) zum Überprüfen von Dokumenten und Dateien verwendet, die in der geschützten Ansicht geöffnet [werden.](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sichere Dokumente sind nur für Benutzer mit *Microsoft 365 E5* -oder *Microsoft 365 E5-Sicherheits* Lizenzen verfügbar. Diese Lizenzen sind nicht in Microsoft Defender für Office 365 Pläne enthalten.
+- Sichere Dokumente sind nur für Benutzer mit *Microsoft 365 E5-* oder *Microsoft 365 E5 -Sicherheitslizenzen* verfügbar. Diese Lizenzen sind nicht in Microsoft Defender für Office 365-Pläne enthalten.
 
-- Sichere Dokumente werden in Microsoft 365 apps for Enterprise (früher als Office 365 ProPlus bezeichnet) Version 2004 oder höher unterstützt.
+- Sichere Dokumente werden in Microsoft 365 Apps for Enterprise (früher bekannt als Office 365 ProPlus) Version 2004 oder höher unterstützt.
 
-- Sie öffnen das Security & Compliance Center unter <https://protection.office.com>. Um direkt zur Seite **ATP-sichere Anlagen** zu wechseln, öffnen Sie <https://protection.office.com/safeattachmentv2> .
+- Sie öffnen das Security & Compliance Center unter <https://protection.office.com>. Öffnen Sie die Seite **"ATP-sichere Anlagen", um** direkt zur Seite "AtP-sichere Anlagen" zu <https://protection.office.com/safeattachmentv2> wechseln.
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen im Security & Compliance Center Berechtigungen zugewiesen werden.
-  - Zum Konfigurieren von Einstellungen für sichere Dokumente müssen Sie Mitglied der Rollengruppen " **Organisationsverwaltung** " oder " **Sicherheits Administrator** " sein.
-  - Für den schreibgeschützten Zugriff auf Einstellungen für sichere Dokumente müssen Sie Mitglied der Rollengruppen " **globaler Leser** " oder " **Sicherheits Leser** " sein.
+  - Zum Konfigurieren der Einstellungen für sichere Dokumente müssen Sie Mitglied der Rollengruppe **"Organisationsverwaltung"** oder **"Sicherheitsadministrator"** sein.
+  - Für den schreibgeschützten Zugriff auf Einstellungen für sichere  Dokumente müssen Sie Mitglied der Rollengruppe "Globaler Leser" oder "Sicherheitsleser"  sein.
 
   Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-  **Hinweise**:
+  > [!NOTE]
+  > 
+  > - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  >
+  > - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
-  - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
+### <a name="how-does-microsoft-handle-your-data"></a>Wie geht Microsoft mit Ihren Daten um?
 
-### <a name="how-does-microsoft-handle-your-data"></a>Wie verarbeitet Microsoft Ihre Daten?
+Um Sie zu schützen, sendet "Sichere Dokumente" Dateien zur Analyse an die [Microsoft Defender for Endpoint-Cloud.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) Details dazu, wie Microsoft Defender for Endpoint Ihre Daten verarbeitet, finden Sie hier: [Microsoft Defender für Endpunkt-Datenspeicherung und Datenschutz.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 
-Damit Sie geschützt bleiben, sendet Safe Documents Dateien zur Analyse an den [Microsoft Defender für die Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) Wolke. Ausführliche Informationen dazu, wie Microsoft Defender für Endpoint Ihre Daten verarbeitet, finden Sie hier: [Microsoft Defender for Endpoint Data Storage and Privacy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
+Von "Sichere Dokumente" gesendete Dateien werden in Defender nicht über die für die Analyse benötigte Zeit hinaus aufbewahrt (in der Regel weniger als 24 Stunden).
 
-Dateien, die von sicheren Dokumenten gesendet werden, werden in Defender nicht über die für die Analyse erforderliche Zeit hinweg aufbewahrt (in der Regel weniger als 24 Stunden).
+## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Konfigurieren sicherer Dokumente mithilfe & Security & Compliance Center
 
-## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Konfigurieren sicherer Dokumente mithilfe des Security & Compliance Center
+1. Wechseln Sie im Security & Compliance  Center zu "Richtlinie für die Bedrohungsverwaltung " \>  \> **ATP Sichere Anlagen",** und klicken Sie dann auf **"Globale Einstellungen".**
 
-1. Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** \> **ATP Safe Attachments**, und klicken Sie dann auf **globale Einstellungen**.
+2. Konfigurieren Sie **im angezeigten** Flyout der globalen Einstellungen die folgenden Einstellungen:
 
-2. Konfigurieren Sie in den angezeigten **globalen Einstellungen** die folgenden Einstellungen:
+   - **Aktivieren Sie "Sichere Dokumente für Office-Clients":** Umschalten nach rechts, um das Feature zu aktivieren: ![ Umschalten. ](../../media/scc-toggle-on.png)
 
-   - **Aktivieren sicherer Dokumente für Office-Clients**: bewegen Sie die Umschaltfläche nach rechts, um das Feature zu aktivieren: Einschalten ![ ](../../media/scc-toggle-on.png) .
-
-   - **Personen können durch die geschützte Ansicht klicken, selbst wenn sichere Dokumente die Datei als bösartig Kenn** zeichnen: Es wird empfohlen, diese Option deaktiviert zu lassen (lassen Sie die Umschaltfläche Links: ![ Deaktivieren ](../../media/scc-toggle-off.png) ).
+   - **Zulassen,** dass Benutzer durch die geschützte Ansicht klicken, auch wenn "Sichere Dokumente" die Datei als bösartig identifiziert: Es wird empfohlen, diese Option deaktiviert zu lassen (umschalten sie links zu lassen: ![ Umschalten). ](../../media/scc-toggle-off.png)
 
    Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
-   ![Einstellungen für sichere Dokumente nach dem auswählen globaler Einstellungen auf der Seite sichere Anlagen.](../../media/safe-docs.png)
+   ![Einstellungen für sichere Dokumente nach Auswahl der globalen Einstellungen auf der Seite "Sichere Anlagen".](../../media/safe-docs.png)
 
-### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Konfigurieren sicherer Dokumente mithilfe Exchange Online PowerShell
+### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Konfigurieren sicherer Dokumente mithilfe von Exchange Online PowerShell
 
 Verwenden Sie die folgende Syntax:
 
@@ -78,22 +83,22 @@ Verwenden Sie die folgende Syntax:
 Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true | $false>
 ```
 
-- Der Parameter _EnableSafeDocs_ aktiviert oder deaktiviert sichere Dokumente für die gesamte Organisation.
-- Der Parameter _AllowSafeDocsOpen_ ermöglicht oder verhindert, dass Benutzer die geschützte Ansicht (also das Öffnen des Dokuments) verlassen, wenn das Dokument als bösartig gekennzeichnet wurde.
+- Der _Parameter "EnableSafeDocs"_ aktiviert oder deaktiviert "Sichere Dokumente" für die gesamte Organisation.
+- Der _Parameter "AllowSafeDocsOpen"_ ermöglicht oder verhindert, dass Benutzer die geschützte Ansicht verlassen (d. h. das Dokument öffnen), wenn das Dokument als bösartig identifiziert wurde.
 
-In diesem Beispiel werden sichere Dokumente für die gesamte Organisation aktiviert, und es wird verhindert, dass Benutzer Dokumente öffnen, die als "bösartig" aus geschützter Ansicht identifiziert wurden.
+In diesem Beispiel wird "Sichere Dokumente" für die gesamte Organisation aktiviert und verhindert, dass Benutzer Dokumente öffnen, die in der geschützten Ansicht als bösartig eingestuft wurden.
 
 ```powershell
 Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Sets-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365).
 
 ### <a name="how-do-i-know-this-worked"></a>Woher weiß ich, dass der Vorgang erfolgreich war?
 
-Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie sichere Dokumente aktiviert und konfiguriert haben:
+Um zu überprüfen, ob Sie "Sichere Dokumente" aktiviert und konfiguriert haben, gehen Sie wie folgt vor:
 
-- Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Policy** \> **ATP Attachments**, klicken Sie auf **globale Einstellungen**, und überprüfen Sie die **Option sichere Dokumente für Office-Clients aktivieren** , und **ermöglichen Sie den Benutzern, durch die geschützte Ansicht zu klicken, selbst wenn die Datei von sicheren Dokumenten als schädliche Einstellungen identifiziert** wird.
+- Wechseln Sie im Security & Compliance  Center zu "Bedrohungsverwaltungsrichtlinie \>  \> **ATP**    Sichere Anlagen", klicken Sie auf "Globale Einstellungen", und überprüfen Sie die Schaltfläche "Sichere Dokumente für Office-Clients aktivieren", und lassen Sie zu, dass Benutzer durch die geschützte Ansicht klicken, auch wenn "Sichere Dokumente" die Datei als schädliche Einstellungen identifiziert.
 
 - Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, und überprüfen Sie die Eigenschaftswerte:
 
@@ -101,7 +106,7 @@ Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie sichere
   Get-AtpPolicyForO365 | Format-List *SafeDocs*
   ```
 
-- Die folgenden Dateien sind verfügbar, um den Schutz geschützter Dokumente zu testen. Diese Dokumente ähneln der EICAR.TXT Datei zum Testen von Antischadsoftware-und Antivirenprogramme. Die Dateien sind nicht schädlich, aber Sie werden Schutz für sichere Dokumente auslösen.
+- Die folgenden Dateien stehen zum Testen des Schutzes sicherer Dokumente zur Verfügung. Diese Dokumente ähneln der EICAR.TXT zum Testen von Ansoftware- und Antivirenlösungen. Die Dateien sind nicht schädlich, lösen aber den Schutz sicherer Dokumente aus.
 
   - [SafeDocsDemo.docx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.docx)
   - [SafeDocsDemo.pptx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.pptx)

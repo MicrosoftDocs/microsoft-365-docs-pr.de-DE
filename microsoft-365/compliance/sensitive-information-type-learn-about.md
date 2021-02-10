@@ -1,5 +1,5 @@
 ---
-title: Informationen zu Typen vertraulicher Informationen
+title: Weitere Informationen zu Typen vertraulicher Informationen
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 896a529d67faddb45b2672ca077f5a8e3b19827e
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 91366e8f255d277d4d40de4c4cd3330283da718c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49933081"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166450"
 ---
-# <a name="learn-about-sensitive-information-types"></a>Informationen zu Typen vertraulicher Informationen
+# <a name="learn-about-sensitive-information-types"></a>Weitere Informationen zu Typen vertraulicher Informationen
 
 Das Identifizieren und Klassifizieren vertraulicher Elemente, die von Ihren Organisationen kontrolliert werden, ist der erste Schritt in der Information [Protection-Teilung.](protect-information.md)  Microsoft 365 bietet drei Möglichkeiten zum Identifizieren von Elementen, sodass sie klassifiziert werden können:
 
@@ -50,7 +50,7 @@ Jede Entität für vertrauliche Informationstypen wird durch die folgenden Felde
 - muster: Ein Muster definiert, was ein vertraulicher Informationstyp erkennt. Sie besteht aus den folgenden Komponenten:
     - Primäres Element – das Hauptelement, nach dem der Typ vertraulicher Informationen sucht. Es kann sich um einen regulären **Ausdruck** mit oder ohne Prüfsummenüberprüfung, eine **Schlüsselwortliste,** ein **Schlüsselwortwörterbuch** oder eine Funktion **sein.**
     - Unterstützendes Element – Elemente, die als unterstützende Nachweise fungieren, die dazu beitragen, die Konfidenz der Übereinstimmung zu erhöhen. Beispiel: Schlüsselwort "SSN" in der Nähe einer SSN-Nummer. Dabei kann es sich um einen regulären Ausdruck mit oder ohne Prüfsummenüberprüfung, Stichwortliste und Schlüsselwortverzeichnis sein.
-    - Konfidenzniveau – Die Konfidenzniveaus (hoch, mittel, niedrig) geben an, wie viele unterstützende Nachweise zusammen mit dem primären Element erkannt wurden. Je mehr unterstützende Nachweise ein Element enthält, desto höher ist die Konfidenz, dass ein übereinstimmende Element die vertraulichen Informationen enthält, die Sie suchen.
+    - Konfidenzniveau – Die Konfidenzniveaus (hoch, mittel, niedrig) spiegeln wider, wie viele unterstützende Nachweise zusammen mit dem primären Element erkannt wurden. Je mehr unterstützende Nachweise ein Element enthält, desto höher ist die Konfidenz, dass ein übereinstimmende Element die vertraulichen Informationen enthält, die Sie suchen.
     - Näherung – Anzahl der Zeichen zwischen primärem und unterstützendem Element
 
 ![Diagramm von bestätigenden Nachweisen und Näherungsfenster](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
@@ -84,7 +84,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
 - Der reguläre Ausdruck Regex_argentina_national_id findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_argentina_national_id gefunden.
 
@@ -106,13 +106,13 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Identität 
 - Identification National Identity Card 
 - DNI 
-- Nationales NIC-Personenregistrierungsregister 
+- Nationales NIC-Registrierungsregister von Personen 
 - Documento Nacional de Identidad 
 - Registro Nacional de las Personas 
 - Identidad 
 - Identificación 
 
-### <a name="more-on-confidence-levels"></a>Weitere Informationen zu Konfidenzstufen
+### <a name="more-on-confidence-levels"></a>Weitere Informationen zu Vertrauensebenen
 
 In einer Entitätsdefinition für vertrauliche Informationstypen spiegelt die Konfidenzstufe **wider,** wie viele unterstützende Nachweise zusätzlich zum primären Element erkannt werden. Je mehr unterstützende Nachweise ein Element enthält, desto höher ist die Konfidenz, dass ein übereinstimmende Element die vertraulichen Informationen enthält, die Sie suchen. Übereinstimmungen mit einem hohen Konfidenzniveau enthalten beispielsweise mehr unterstützende Nachweise in der Nähe des primären Elements, während Übereinstimmungen mit einem niedrigen Konfidenzniveau nur wenig bis keine unterstützenden Nachweise in unmittelbarer Nähe enthalten würden. 
 
@@ -137,6 +137,8 @@ Zum Erstellen von benutzerdefinierten Typen für vertrauliche Informationen im S
 
 
 > [!NOTE]
+> Verbesserte Vertrauensebenen sind für die sofortige Verwendung in der Verhinderung von Datenverlust für Microsoft 365-Dienste, Microsoft Information Protection für Microsoft 365-Dienste, Kommunikationskonformität, Informationssteuerung und Datensatzverwaltung verfügbar.
+
 > Microsoft 365 Information Protection unterstützt jetzt in der Vorschau Doppelbyte-Zeichensatz-Sprachen für:
 > - Chinesisch (vereinfacht)
 > - Chinesisch (traditionell)

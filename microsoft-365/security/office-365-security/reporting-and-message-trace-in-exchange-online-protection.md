@@ -8,59 +8,64 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
-description: In diesem Artikel erfahren Sie mehr über Berichte und Problembehandlungstools, die Microsoft Exchange Online Protection (EoP)-Administratoren zur Verfügung stehen.
-ms.openlocfilehash: 856e99e55e6b67d1d22a30e2f55f60857eb4fe75
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+description: In diesem Artikel erfahren Sie mehr über Berichte und Problembehandlungstools, die Microsoft Exchange Online (EOP)-Administratoren zur Verfügung stehen.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 86c9eb0ee050c4c1a40ef7f29ea3d01dc202be9a
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020891"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166675"
 ---
-# <a name="reporting-and-message-trace-in-eop"></a>Berichterstellung und Nachrichtenablaufverfolgung in EoP
+# <a name="reporting-and-message-trace-in-eop"></a>Berichterstellung und Nachrichtenverfolgung in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer bietet EoP viele verschiedene Berichte, mit denen Sie den Gesamtstatus und die Integrität Ihrer Organisation ermitteln können. Außerdem gibt es Tools, mit denen Sie die Problembehebung für bestimmte Ereignisse (wenn beispielsweise eine Nachricht nicht beim gewünschten Empfänger ankommt) durchführen können, sowie Überwachungsberichte zur Einhaltung von Vorschriften.
+In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer bietet EOP viele verschiedene Berichte, mit denen Sie den Allgemeinen Status und die Integrität Ihrer Organisation ermitteln können. Außerdem gibt es Tools, mit denen Sie die Problembehebung für bestimmte Ereignisse (wenn beispielsweise eine Nachricht nicht beim gewünschten Empfänger ankommt) durchführen können, sowie Überwachungsberichte zur Einhaltung von Vorschriften.
 
 ## <a name="usage-reports"></a>Verwendungsberichte
 
-**Microsoft 365 Groups-Aktivität** : Anzeigen von Informationen zur Anzahl von Microsoft 365-Gruppen, die erstellt und verwendet werden.
+**Microsoft 365-Gruppenaktivität:** Anzeigen von Informationen zur Anzahl der Microsoft 365-Gruppen, die erstellt und verwendet werden.
 
-**E-Mail-Aktivität** : Anzeigen von Informationen zur Anzahl der gesendeten, empfangenen und eingelesenen Nachrichten in ihrer gesamten Organisation und von bestimmten Benutzern.
+**E-Mail-Aktivität:** Zeigen Sie Informationen über die Anzahl von Nachrichten an, die in Ihrer gesamten Organisation sowie von bestimmten Benutzern gesendet, empfangen und gelesen wurden.
 
-**E-Mail-App-Nutzung** : Anzeigen von Informationen zu den verwendeten e-Mail-apps Diese umfassen die Gesamtzahl der Verbindungen für die einzelnen Apps und die Versionen von Outlook, die eine Verbindung herstellen.
+**E-Mail-App-Nutzung:** Informationen zu den verwendeten E-Mail-Apps anzeigen. Diese umfassen die Gesamtzahl der Verbindungen für die einzelnen Apps und die Versionen von Outlook, die eine Verbindung herstellen.
 
-**Postfachnutzung** : Anzeigen von Informationen zu verwendetem Speicher, Kontingent Verbrauch, Elementanzahl und letzter Aktivität (Sende-oder Leseaktivität) für Postfächer.
+**Postfachnutzung:** Informationen zu verwendeter Speichernutzung, Kontingentnutzung, Elementanzahl und letzter Aktivität (Senden oder Lesen) für Postfächer anzeigen.
 
 Weitere Informationen finden Sie in den folgenden Ressourcen:
 
-- [Microsoft 365-Berichte im Admin Center-Microsoft 365-Gruppen](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
+- [Microsoft 365-Berichte im Admin Center – Microsoft 365-Gruppen](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
 
-- [Microsoft 365-Berichte im Admin Center-e-Mail-Aktivität](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
+- [Microsoft 365-Berichte im Admin Center – E-Mail-Aktivität](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
 
-- [Microsoft 365-Berichte im Admin Center-Nutzung von e-Mail-apps](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
+- [Microsoft 365-Berichte im Admin Center – Nutzung von E-Mail-Apps](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
 
-- [Microsoft 365-Berichte im Admin Center-Postfachnutzung](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
+- [Microsoft 365-Berichte im Admin Center – Postfachnutzung](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
 
-## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Security & Compliance Reports im Microsoft 365 Admin Center
+## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Sicherheitsberichte & Complianceberichte im Microsoft 365 Admin Center
 
 Diese erweiterten Berichte bieten eine interaktive Berichterstellung für EOP-Administratoren, die Zusammenfassungsinformationen und das Anzeigen von Detailinformationen umfasst.
 
-**Verteidiger für Office 365** : Anzeigen von Informationen zu sicheren Links und sicheren Anlagen, die Teil von Microsoft Defender für Office 365 sind.
+**Defender für Office 365**: Anzeigen von Informationen zu sicheren Links und sicheren Anlagen, die Teil von Microsoft Defender für Office 365 sind.
 
-**EoP** : Anzeigen von Informationen zu Malwareerkennungen, gefälschten e-Mails, Spamerkennungen und dem Nachrichtenfluss zu und von Ihrer Organisation.
+**EOP:** Anzeigen von Informationen zu Schadsoftwareerkennungen, Spoof-E-Mails, Spamerkennungen und E-Mail-Fluss zu und von Ihrer Organisation.
 
 [Anzeigen von Berichten für Defender für Office 365](view-reports-for-atp.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Benutzerdefinierte Berichte mit Microsoft Graph
 
-Programmgesteuertes Erstellen von Berichten, die im Admin Center mithilfe von Microsoft Graph verfügbar sind. Weitere Informationen finden Sie unter [Übersicht über Microsoft Graph](https://docs.microsoft.com/graph/overview) und [Arbeiten mit Office 365 Nutzungsberichten in Microsoft Graph](https://docs.microsoft.com/graph/api/resources/report).
+Programmgesteuertes Erstellen von Berichten, die im Admin Center verfügbar sind, mithilfe von Microsoft Graph. Weitere Informationen finden Sie unter [Übersicht über Microsoft Graph](https://docs.microsoft.com/graph/overview) und arbeiten mit Office [365-Verwendungsberichten in Microsoft Graph.](https://docs.microsoft.com/graph/api/resources/report)
 
 ## <a name="message-trace"></a>Nachrichtenablaufverfolgung
 
@@ -68,11 +73,11 @@ Ermöglicht das Nachverfolgen von E-Mails auf dem Weg durch EOP. Sie können erm
 
 Mit diesen Informationen können Sie in effizienter Weise Fragen der Benutzer beantworten, Probleme mit dem Nachrichtenfluss behandeln und Richtlinienänderungen überprüfen und müssen seltener den technischen Support um Unterstützung bitten.
 
-Siehe [Nachrichtenablaufverfolgung im Security & Compliance Center](message-trace-scc.md).
+Siehe [Nachrichtenverfolgung im Security & Compliance Center](message-trace-scc.md).
 
 ## <a name="audit-logging"></a>Überwachungsprotokollierung
 
-Verfolgt bestimmte Änderungen durch Administratoren Ihrer Organisation. Diese Berichte können Sie zum Behandeln von Konfigurationsproblemen sowie zum Ermitteln der Ursache von Sicherheits- oder Kompatibilitätsproblemen heranziehen. Siehe [Überwachungsberichte in EoP](auditing-reports-in-eop.md).
+Verfolgt bestimmte Änderungen durch Administratoren Ihrer Organisation. Diese Berichte können Sie zum Behandeln von Konfigurationsproblemen sowie zum Ermitteln der Ursache von Sicherheits- oder Kompatibilitätsproblemen heranziehen. Siehe ["Überwachungsberichte" in EOP](auditing-reports-in-eop.md).
 
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>Meldung und Verfügbarkeit und Latenz Nachrichtenverfolgungsdaten
 
@@ -88,4 +93,4 @@ In der folgenden Tabelle wird beschrieben, wann und für wie lange EOP-Berichte 
 |
 
 > [!NOTE]
-> Die Verfügbarkeit und Wartezeit von Daten ist identisch, unabhängig davon, ob Sie über das Admin Center oder Remote-PowerShell angefordert wird.
+> Datenverfügbarkeit und Latenz sind gleich, unabhängig davon, ob sie über das Admin Center oder die Remote-PowerShell angefordert werden.

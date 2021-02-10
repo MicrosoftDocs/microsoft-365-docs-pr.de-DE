@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 11/21/2019
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -18,23 +17,23 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie ein DNS-Eintrag (Domain Name Service) für die Verwendung von SPF (Sender Policy Framework) mit Ihrer benutzerdefinierten Domäne in Office 365 aktualisiert wird.
-ms.openlocfilehash: 536f727ee71db70490259179ff8e47009c547f89
-ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: fbed28047b88a3eff75f574fc4d2581a75f15518
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905223"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166231"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Einrichten von SPF zum Verhindern von Spoofing
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-- [Voraussetzungen](#prerequisites)
-- [Erstellen oder aktualisieren Sie Ihren SPF TXT-Eintrag](#create-or-update-your-spf-txt-record)   
-  - [Wie kann ich Subdomänen behandeln?](#how-to-handle-subdomains)
-- [Was ist der Zweck der SPF-E-Mail-Authentifizierung?](#what-does-spf-email-authentication-actually-do)   
-   - [Problembehandlung von SPF](#troubleshooting-spf)
-- [Weitere Informationen zu SPF](#more-information-about-spf)
+**Gilt für**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Dieser Artikel enthält Informationen zum Aktualisieren eines DNS-Eintrags (Domain Name Service) für die Verwendung von SPF (Sender Policy Framework) -E-Mail-Authentifizierung mit Ihrer benutzerdefinierten Domäne in Office 365.
 

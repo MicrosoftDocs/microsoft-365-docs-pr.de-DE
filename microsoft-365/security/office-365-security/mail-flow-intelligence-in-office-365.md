@@ -14,17 +14,21 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratoren können mithilfe von Connectors (auch als Nachrichtenflussintelligenz bekannt) mehr über die Fehlercodes erfahren, die der Nachrichtenzustellung zugeordnet sind.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c7d4277d1ce3baeabcb5b1795b5d57583fbc8245
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 864b69bf650a4e460376ae988a9ce4abc4c61ad4
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029256"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167071"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Intelligenter Nachrichtenfluss in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer verwenden Sie normalerweise einen Connector, um E-Mail-Nachrichten von EOP an Ihre lokale E-Mail-Umgebung weiter zu routen. Sie können auch einen Connector verwenden, um Nachrichten von Microsoft 365 an eine Partnerorganisation weiter zu routen. Wenn Microsoft 365 diese Nachrichten nicht über den Connector zu senden kann, werden sie in die Warteschlange in Microsoft 365 eingereiht. Microsoft 365 wird die Zustellung für jede Nachricht 24 Stunden lang wiederholen. Nach 24 Stunden läuft die Nachricht in der Warteschlange ab, und die Nachricht wird an den ursprünglichen Absender in einem Unzustellbarkeitsbericht (auch als NDR oder Unzustellbarkeitsnachricht bekannt) zurückgegeben.
 
@@ -40,7 +44,7 @@ Dieser Fehler bedeutet normalerweise, dass Microsoft 365 versucht hat, eine Verb
 
 - Der MX-Eintrag Ihrer Domäne hat sich kürzlich geändert, und die DNS-Server verfügen weiterhin über zuvor zwischengespeicherte DNS-Informationen für Ihre Domäne.
 
-### <a name="how-do-i-fix-error-code-450-44312"></a>Wie behebt ich fehlercode 450 4.4.312?
+### <a name="how-do-i-fix-error-code-450-44312"></a>Wie kann ich fehlercode 450 4.4.312 beheben?
 
 - Arbeiten Sie mit Ihrem DNS-Hostingdienst zusammen, um das Problem mit Ihrer Domäne zu identifizieren und zu beheben.
 
@@ -74,7 +78,7 @@ Dieser Fehler bedeutet in der Regel, dass microsoft 365 beim Herstellen einer Ve
 
     1. Wechseln Sie in der EAC zu **"Nachrichtenflussconnectors".** \> 
 
-    2. Wählen Sie den Connector mit dem **"Von"-Wert** **"Office 365"** und dem **"To** value **Your organization's email server"** aus, und gehen Sie wie folgt vor:
+    2. Wählen Sie den Connector mit dem **Von-Wert** **Office 365** und dem To-Value-E-Mail-Server Ihrer Organisation aus, und gehen Sie wie folgt vor:  
 
        - Löschen des Connectors durch Klicken **auf** das Symbol ![ "Entfernen löschen"](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 

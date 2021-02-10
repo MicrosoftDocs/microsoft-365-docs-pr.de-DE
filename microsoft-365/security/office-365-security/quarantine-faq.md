@@ -19,17 +19,21 @@ description: Administratoren können häufig gestellte Fragen und Antworten zu i
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: abd2304e83d2814cab55d13312535bd94308d8be
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: 019f1c103ef1aaf7641072cd1259d22e83f0de4c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032601"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166927"
 ---
 # <a name="quarantined-messages-faq"></a>Häufig gestellte Fragen zu isolierten Nachrichten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Dieses Thema enthält häufig gestellte Fragen und Antworten zu E-Mail-Nachrichten in Quarantäne für Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständige Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer.
 
@@ -45,7 +49,7 @@ Nur Administratoren können Nachrichten verwalten, die für Schadsoftware isolie
 
 ## <a name="how-do-i-quarantine-spam"></a>Wie isoliere ich Spam?
 
-Standardmäßig werden Nachrichten, die von der Spamfilterung als Spam oder Massen-E-Mail klassifiziert wurden, an das Postfach des Benutzers zugestellt und in den Junk-E-Mail-Ordner verschoben. Sie können jedoch antispamrichtlinien erstellen und konfigurieren, um Spam- oder Massen-E-Mail-Nachrichten stattdessen zu isolieren. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
+Standardmäßig werden Nachrichten, die von der Spamfilterung als Spam oder Massen-E-Mail klassifiziert wurden, an das Postfach des Benutzers zugestellt und in den Junk-E-Mail-Ordner verschoben. Sie können jedoch Antispamrichtlinien erstellen und konfigurieren, um Spam- oder Massen-E-Mail-Nachrichten stattdessen zu isolieren. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="how-do-i-give-users-access-to-the-quarantine"></a>Wie vererbe ich Benutzern Zugriff auf die Quarantäne?
 
@@ -53,11 +57,11 @@ Ein Benutzer muss über ein gültiges Konto verfügen, um auf seine eigenen Nach
 
 ## <a name="what-messages-can-end-users-access-in-quarantine"></a>Auf welche Nachrichten können Endbenutzer in Quarantäne zugreifen?
 
-Benutzer können auf Spam-, Massen-E-Mails und (ab April 2020) Phishingnachrichten zugreifen, bei denen sie Empfänger sind. Endbenutzer können nicht auf In-Quarantäne-Schadsoftware, Phishing mit hoher  Sicherheit oder Nachrichten zugreifen, die aufgrund der Aktion "Nachricht an gehostete Quarantäne senden" in Nachrichtenflussregeln (auch als Transportregeln bekannt) isoliert wurden. Weitere Informationen zu Benutzern, die auf isolierte Nachrichten zugreifen, finden Sie unter "Suchen und Veröffentlichen von Isolierten Nachrichten [als Benutzer".](find-and-release-quarantined-messages-as-a-user.md)
+Benutzer können auf Spam-, Massen-E-Mails und (ab April 2020) Phishingnachrichten zugreifen, bei denen sie Empfänger sind. Endbenutzer können nicht auf In-Quarantäne-Schadsoftware, Phishing mit hoher  Sicherheit oder Nachrichten zugreifen, die aufgrund der Aktion "Nachricht an gehostete Quarantäne senden" in Nachrichtenflussregeln (auch als Transportregeln bekannt) isoliert wurden. Weitere Informationen zu Benutzern, die auf isolierte Nachrichten zugreifen, finden Sie unter "Suchen und Veröffentlichen von Nachrichten in Quarantäne [als Benutzer".](find-and-release-quarantined-messages-as-a-user.md)
 
 ## <a name="how-long-are-messages-kept-in-the-quarantine"></a>Wie lange werden Nachrichten unter Quarantäne gestellt?
 
-Sie konfigurieren mithilfe von Antispamrichtlinien, wie lange Spam-, Phishing- und Massen-E-Mail-Nachrichten in Quarantäne bleiben. Der Standardwert beträgt 30 Tage, was auch der Höchstwert ist. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)
+Sie konfigurieren mithilfe von Antispamrichtlinien, wie lange Spam-, Phishing- und Massen-E-Mail-Nachrichten in Quarantäne bleiben. Der Standardwert beträgt 30 Tage, was auch der Höchstwert ist. Weitere Informationen finden Sie unter ["Konfigurieren von Antispamrichtlinien in EOP"](configure-your-spam-filter-policies.md)
 
 Bei Nachrichten, die von der Nachrichtenflussregelaktion "Nachricht in gehostete Quarantäne isolieren" isoliert **wurden,** werden die Nachrichten 30 Tage lang in Quarantäne gehalten. Sie können diese Dauer nicht konfigurieren.
 

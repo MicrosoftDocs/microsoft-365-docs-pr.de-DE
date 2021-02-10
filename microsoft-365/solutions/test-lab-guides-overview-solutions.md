@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 02/09/2021
 audience: ITPro
 ms.topic: overview
 ms.prod: microsoft-365-enterprise
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - Ent_Architecture
-description: Verwenden Sie Test Lab Guides, um Microsoft 365-Lösungen und-Szenarien in einer Entwicklungs-/Test Umgebung zu erstellen.
-ms.openlocfilehash: 7254596da5b2b8b32a01468d3ff1f34d4efd8db8
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+description: Verwenden Sie Testumgebungsanleitungen, um Microsoft 365-Lösungen und -Szenarien in einer Entwicklungs-/Testumgebung zu erstellen.
+ms.openlocfilehash: 10ddfc9cb9f9135b352be50c555811342ae0bd2b
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521301"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166183"
 ---
 # <a name="test-lab-guides-for-solutions-and-scenarios"></a>Testumgebungsleitfäden für Lösungen und Szenarien
 
@@ -34,5 +34,6 @@ Testumgebungsanleitungen ermöglichen die Erstellung repräsentativer Umgebungen
   
 ![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Testen Sie [diese Test Umgebungs Anleitung](team-security-isolation-dev-test.md) , um ein Team mit Sicherheitsisolierung einzurichten.
+Probieren [Sie diese Testumgebungsanleitung](team-security-isolation-dev-test.md) aus, um ein Team mit Sicherheitsisolation zu einrichten.
 
+Weitere Anleitungen zu Microsoft 365-Features und -Konfigurationen finden Sie unter [Microsoft 365 Enterprise Test Lab Guides](../enterprise/m365-enterprise-test-lab-guides.md).

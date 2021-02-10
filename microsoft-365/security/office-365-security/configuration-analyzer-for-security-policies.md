@@ -18,17 +18,21 @@ ms.collection:
 description: Administratoren können erfahren, wie Sie mithilfe der Konfigurationsanalyse Sicherheitsrichtlinien finden und beheben, die unterhalb der voreingestellten Sicherheitsrichtlinien "Standardschutz" und "Strenger Schutz" liegen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04027e78a2683c6c33954bb548c502497c5e8323
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: a78452cb3a7e4cb65c72d98b9322f217309a6d6f
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029478"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165907"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Konfigurationsanalyse für Schutzrichtlinien in EOP und Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Die Konfigurationsanalyse im Security & Compliance Center bietet einen zentralen Ort zum Suchen und Beheben von Sicherheitsrichtlinien, in denen sich die Einstellungen unter den Standardschutz- und Strengschutzprofileinstellungen in vordefinierten Sicherheitsrichtlinien [befinden.](preset-security-policies.md)
 
@@ -44,7 +48,7 @@ Die folgenden Richtlinientypen werden von der Konfigurationsanalyse analysiert:
 
   - Antiphishingrichtlinien in Microsoft Defender für Office 365, die Folgendes umfassen:
 
-    - Die gleichen [Spoofeinstellungen,](set-up-anti-phishing-policies.md#spoof-settings) die in den EOP-Anti-Phishing-Richtlinien verfügbar sind.
+    - Dieselben [Spoofeinstellungen,](set-up-anti-phishing-policies.md#spoof-settings) die in den EOP-Antiphishingrichtlinien verfügbar sind.
     - [Identitätswechseleinstellungen](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Erweiterte Phishingschwellenwerte](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
@@ -84,7 +88,7 @@ Die Konfigurationsanalyse verfügt über zwei Hauptregisterkarten:
 
 - **Konfigurations-Drift-Analyse und -Verlauf:** In dieser Ansicht können Sie Richtlinienänderungen im Laufe der Zeit nachverfolgen.
 
-### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Registerkarte "Einstellung und Empfehlungen" in der Konfigurationsanalyse
+### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Registerkarte "Einstellungen und Empfehlungen" in der Konfigurationsanalyse
 
 Standardmäßig wird die Registerkarte im Vergleich zum Standardschutzprofil geöffnet. Sie können zum Vergleich des Strengschutzprofils wechseln, indem Sie auf **"Strenge Empfehlungen anzeigen" klicken.** Um zurück zu wechseln, wählen **Sie "Standardempfehlungen anzeigen" aus.**
 
@@ -98,7 +102,7 @@ Standardmäßig enthält  die Spalte "Richtliniengruppe/Einstellungsname" eine r
 - **ATP-sichere Anlagen** (wenn Ihr Abonnement Microsoft Defender für Office 365 umfasst)
 - **ATP Safe Links** (wenn Ihr Abonnement Microsoft Defender für Office 365 enthält)
 
-In der Standardansicht ist alles reduziert. Neben jeder Richtlinie gibt es eine Zusammenfassung der Vergleichsergebnisse aus Ihren Richtlinien (die Sie ändern können) und den Einstellungen in den entsprechenden Richtlinien für die Standard- oder Strict -Schutzprofile (die Sie nicht ändern können). Für das Schutzprofil, mit dem Sie einen Vergleich erstellen, werden die folgenden Informationen angezeigt:
+In der Standardansicht ist alles reduziert. Neben jeder Richtlinie finden Sie eine Zusammenfassung der Vergleichsergebnisse aus Ihren Richtlinien (die Sie ändern können) und den Einstellungen in den entsprechenden Richtlinien für die Standard- oder Strict-Schutzprofile (die Sie nicht ändern können). Für das Schutzprofil, mit dem Sie einen Vergleich erstellen, werden die folgenden Informationen angezeigt:
 
 - **Grün:** Alle Einstellungen in allen vorhandenen Richtlinien sind mindestens so sicher wie das Schutzprofil.
 - **Neu:** Eine kleine Anzahl von Einstellungen in den vorhandenen Richtlinien ist nicht so sicher wie das Schutzprofil.
@@ -129,8 +133,8 @@ Auf dieser Registerkarte können Sie die Änderungen nachverfolgen, die Sie an I
 - **Zuletzt geändert**
 - **Geändert von**
 - **Einstellungsname**
-- **Policy**
-- **Typ**
+- **Richtlinie**
+- **Type**
 
 Klicken Sie auf **Filter**, um die Ergebnisse zu filtern. Im **angezeigten Filterf** flyout können Sie aus den folgenden Filtern auswählen:
 

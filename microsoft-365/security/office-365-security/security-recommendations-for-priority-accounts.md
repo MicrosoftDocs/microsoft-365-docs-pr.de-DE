@@ -1,5 +1,5 @@
 ---
-title: Sicherheitsempfehlungen für Prioritätskonten in Microsoft 365
+title: Sicherheitsempfehlungen für Prioritätskonten in Microsoft 365, Prioritätskonten, Prioritätskonten in Office 365, Prioritätskonten in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,12 +20,12 @@ ms.collection:
 description: Administratoren können erfahren, wie Sie die Sicherheitseinstellungen erhöhen und Berichte, Warnungen und Untersuchungen für Prioritätskonten in ihren Microsoft 365-Organisationen verwenden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 10890a5fe797439de0bfc28bf28a216318016908
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 814ca47ee48e844e313f7d75640643a0b659c527
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929306"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166369"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Sicherheitsempfehlungen für Prioritätskonten in Microsoft 365
 
@@ -50,13 +50,13 @@ Microsoft 365 und Microsoft Defender für Office 365 enthalten mehrere wichtige 
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>Erhöhen der Anmeldesicherheit für Prioritätskonten
 
-Für Prioritätskonten ist erhöhte Anmeldesicherheit erforderlich. Sie können die Anmeldesicherheit erhöhen, indem Sie die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) erfordern und Legacyauthentifizierungsprotokolle deaktivieren.
+Prioritätskonten erfordern erhöhte Anmeldesicherheit. Sie können die Anmeldesicherheit erhöhen, indem Sie die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) erfordern und Legacyauthentifizierungsprotokolle deaktivieren.
 
 Anweisungen finden Sie unter [Schritt 1. Erhöhen Sie die Anmeldesicherheit für Remotemitarbeiter mit MFA.](https://docs.microsoft.com/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in) Obwohl es in diesem Artikel um Remotemitarbeiter geht, gelten die gleichen Konzepte für Benutzer mit Priorität.
 
 **Hinweis:** Es wird dringend empfohlen, legacybasierte Authentifizierungsprotokolle für alle Benutzer mit Priorität global zu deaktivieren, wie im vorherigen Artikel beschrieben. Wenn Ihre geschäftlichen Anforderungen Sie daran hindern, bietet Exchange Online die folgenden Steuerelemente, um den Umfang der Legacyauthentifizierungsprotokolle zu begrenzen:
 
-- Sie können [](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) Authentifizierungsrichtlinien und [Clientzugriffsregeln](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) in Exchange Online verwenden, um Standardauthentifizierungs- und Legacyauthentifizierungsprotokolle wie POP3, IMAP4 und authentifizierte SMTP für bestimmte Benutzer zu blockieren oder zu erlauben.
+- Sie können [Authentifizierungsrichtlinien](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) und [Clientzugriffsregeln](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) in Exchange Online verwenden, um Standardauthentifizierungs- und Legacyauthentifizierungsprotokolle wie POP3, IMAP4 und authentifizierte SMTP für bestimmte Benutzer zu blockieren oder zu erlauben.
 
 - Sie können den POP3- und den IMAP4-Zugriff auf einzelne Postfächer deaktivieren. Sie können authentifizierte SMTP auf Organisationsebene deaktivieren und für bestimmte Postfächer aktivieren, für die dies noch erforderlich ist. Anweisungen finden Sie in den folgenden Themen:
   - [Aktivieren oder Deaktivieren des POP3- oder IMAP4-Zugriffs für einen Benutzer](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
@@ -70,17 +70,17 @@ Benutzer mit Priorität erfordern strengere Aktionen für die verschiedenen Schu
 
 Anstatt beispielsweise Nachrichten, die als Spam klassifiziert wurden, in den Junk-E-Mail-Ordner zu senden, sollten Sie dieselben Nachrichten unter Quarantäne stellen, wenn sie für Prioritätskonten vorgesehen sind.
 
-Sie können diesen strikten Ansatz für Prioritätskonten implementieren, indem Sie das Profil "Strict" in vordefinierten Sicherheitsrichtlinien verwenden.
+Sie können diesen strikten Ansatz für Prioritätskonten implementieren, indem Sie das Profil "Strict" in voreingestellten Sicherheitsrichtlinien verwenden.
 
 Voreingestellte Sicherheitsrichtlinien sind ein bequemer und zentraler Ort, um die empfohlenen "Strict"-Richtlinieneinstellungen für alle Schutzmaßnahmen in EOP und Defender für Office 365 anzuwenden. Weitere Informationen finden Sie unter [voreingestellte Sicherheitsrichtlinien in EOP und Microsoft Defender für Office 365](preset-security-policies.md).
 
-Weitere Informationen dazu, wie sich die Strict-Richtlinieneinstellungen von den Standard- und Standardrichtlinieneinstellungen unterscheiden, finden Sie unter "Empfohlene Einstellungen für EOP und [Microsoft Defender für Office 365-Sicherheit".](recommended-settings-for-eop-and-office365-atp.md)
+Weitere Informationen dazu, wie sich die Strikte Richtlinieneinstellungen von den Standard- und Standardrichtlinieneinstellungen unterscheiden, finden Sie unter "Empfohlene Einstellungen für EOP und [Microsoft Defender für Office 365-Sicherheit".](recommended-settings-for-eop-and-office365-atp.md)
 
 ## <a name="apply-user-tags-to-priority-accounts"></a>Anwenden von Benutzertags auf Prioritätskonten
 
 Benutzertags in Microsoft Defender für Office 365 Plan 2 (als Teil von Microsoft 365 E5 oder einem Add-On-Abonnement) sind eine Möglichkeit, bestimmte Benutzer oder Benutzergruppen in Berichten und Vorfalluntersuchungen schnell zu identifizieren und zu klassifizieren.
 
-**Prioritätskonten** ist eine Art von integriertem Benutzertag (auch als Systemtag bezeichnet), mit dem Sie Vorfälle und Warnungen identifizieren können, die Prioritätskonten betreffen. Weitere Informationen zu **Prioritätskonten finden** Sie unter ["Verwalten und Überwachen von Prioritätskonten".](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)
+**Bei Prioritätskonten** handelt es sich um eine Art von integriertem Benutzertag (auch als Systemtag bezeichnet), mit dem Sie Vorfälle und Warnungen identifizieren können, die Prioritätskonten betreffen. Weitere Informationen zu **Prioritätskonten finden** Sie unter ["Verwalten und Überwachen von Prioritätskonten".](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)
 
 Sie können auch benutzerdefinierte Tags erstellen, um Ihre Prioritätskonten weiter zu identifizieren und zu klassifizieren. Weitere Informationen finden Sie unter [Benutzertags.](user-tags.md) Beachten Sie, dass Sie **Prioritätskonten** (Systemtags) auf derselben Benutzeroberfläche wie benutzerdefinierte Benutzertags verwalten können.
 
@@ -120,12 +120,12 @@ Microsoft 365 bietet die folgenden Ressourcen, um Benutzer in Ihrer Organisation
 |Mehrstufige Authentifizierung|[Überprüfung in zwei Schritten: Was ist die zusätzliche Überprüfungsseite?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Dieser Artikel hilft Endbenutzern zu verstehen, was die mehrstufige Authentifizierung ist und warum sie in Ihrer Organisation verwendet wird.|
 |Schulung zur Angriffssimulation|[Erste Schritte mit dem Angriffssimulationstraining](attack-simulation-training-get-started.md)|Mit der Schulung zur Angriffssimulation in Microsoft Defender für Office 365 Plan 2 können Administratoren simulierte Phishingangriffe auf bestimmte Benutzergruppen konfigurieren, starten und nachverfolgen.|
 
-Darüber hinaus empfiehlt Microsoft, dass Benutzer die in diesem Artikel beschriebenen Aktionen ausführen: Schützen Ihres Kontos und Ihrer Geräte [vor Hackern und Schadsoftware.](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6) Diese setzen sich wie folgt zusammen:
+Darüber hinaus empfiehlt Microsoft Benutzern, die in diesem Artikel beschriebenen Aktionen zu ergreifen: Schützen Ihres Kontos und Ihrer Geräte [vor Hackern und Schadsoftware.](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6) Diese setzen sich wie folgt zusammen:
 
 - Verwenden von starken Kennwörtern
 - Schützen von Geräten
 - Aktivieren von Sicherheitsfeatures auf Windows 10- und Mac-PCs (für nicht verwaltete Geräte)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 [Ankündigung von Prioritätskontoschutz in Microsoft Defender für Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)

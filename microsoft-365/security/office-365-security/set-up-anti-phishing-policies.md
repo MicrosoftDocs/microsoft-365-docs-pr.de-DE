@@ -8,7 +8,6 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: ''
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
@@ -16,17 +15,23 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Administratoren können sich über die Antiphishingrichtlinien informieren, die in Exchange Online Protection (EOP) und Microsoft Defender für Office 365 verfügbar sind.
-ms.openlocfilehash: f1ffebbca2d3a77d1a0c10d14205e52108614043
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a97d95ab4d7cf0146ea6d6d008230ee6aa678d80
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908353"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166381"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Antiphishingrichtlinien in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Richtlinien zum Konfigurieren von Antiphishingschutzeinstellungen sind in Microsoft 365-Organisationen mit Exchange Online-Postfächern, eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächern und Microsoft Defender für Office 365-Organisationen verfügbar.
 
@@ -44,7 +49,7 @@ Die hohen Unterschiede zwischen Antiphishingrichtlinien in EOP und Antiphishingr
 |Feature|Antiphishingrichtlinien in EOP|Antiphishingrichtlinien in Microsoft Defender für Office 365|
 |---|:---:|:---:|
 |Automatisch erstellte Standardrichtlinie|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
-|Erstellen benutzerdefinierter Richtlinien|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
+|Erstellen Sie benutzerdefinierte Richtlinien|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
 |Richtlinieneinstellungen<sup>\*</sup>|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
 |Identitätswechseleinstellungen||![Häkchen](../../media/checkmark.png)|
 |Spoofeinstellungen|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
@@ -77,7 +82,7 @@ Die folgenden Richtlinieneinstellungen sind in Antiphishingrichtlinien in EOP un
   - **Der Empfänger ist Mitglied von**: Einer oder mehreren Gruppen in Ihrer Organisation.
   - **Die Empfängerdomäne ist:** Eine oder mehrere der konfigurierten akzeptierten Domänen in Microsoft 365.
 
-  - **Außer wenn:** Ausnahmen für die Regel. Die Einstellungen und das Verhalten sind genau wie die Bedingungen:
+  - **Außer wenn**: Ausnahmen für die Regel. Die Einstellungen und das Verhalten sind genau wie die Bedingungen:
 
     - **Empfänger lautet**
     - **Der Empfänger ist Mitglied von**
@@ -100,7 +105,7 @@ Die folgenden Spoofeinstellungen sind in Antiphishingrichtlinien in EOP und Micr
   >
   > - Sie müssen den Antis spoofingschutz nicht deaktivieren, wenn Ihr #A0 nicht auf Microsoft 365 verweisen kann. stattdessen aktivieren Sie die erweiterte Filterung für Connectors. Anweisungen finden Sie unter ["Erweiterte Filterung für Connectors in Exchange Online".](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
   >
-  > - Durch das Deaktivieren des Antis spoofing-Schutzes wird nur impliziter Spoofingschutz von überprüfungen der [zusammengesetzten Authentifizierung](email-validation-and-authentication.md#composite-authentication) deaktiviert. Wenn der Absender explizite [DMARC-Überprüfungen](use-dmarc-to-validate-email.md) nicht besteht, bei denen die Richtlinie auf Quarantäne oder Zurückweisen festgelegt ist, wird die Nachricht weiterhin isoliert oder abgelehnt.
+  > - Durch das Deaktivieren des Antis spoofing-Schutzes wird nur der implizite Spoofingschutz von [zusammengesetzten Authentifizierungsprüfungen](email-validation-and-authentication.md#composite-authentication) deaktiviert. Wenn der Absender explizite [DMARC-Überprüfungen](use-dmarc-to-validate-email.md) nicht besteht, bei denen die Richtlinie auf Quarantäne oder Zurückweisen festgelegt ist, wird die Nachricht weiterhin isoliert oder abgelehnt.
 
   Für Nachrichten von blockierten gefälschten Absendern können Sie auch die Aktion für die Nachrichten angeben:
 
@@ -128,11 +133,11 @@ Die **Einstellung "Nicht authentifizierter Absender"** aktiviert oder deaktivier
 
 Um zu verhindern, dass das Fragezeichen oder das Tag Nachrichten von bestimmten Absendern hinzugefügt werden, haben Sie die folgenden Optionen:
 
-- Zulassen des Spoofings des Absenders in der Spoofing-Intelligence-Richtlinie. Diese Aktion verhindert, dass das "Via"-Tag in Nachrichten des Absenders angezeigt wird, wenn die Identifizierung nicht authentifizierter Absender deaktiviert ist. Anweisungen finden Sie unter [Konfigurieren der Spoofintelligenz in Microsoft 365.](learn-about-spoof-intelligence.md)
+- Zulassen des Spoofings des Absenders in der Spoofing-Intelligence-Richtlinie. Diese Aktion verhindert, dass das "Via"-Tag in Nachrichten des Absenders angezeigt wird, wenn die Identifizierung nicht authentifizierter Absender deaktiviert ist. Anweisungen finden Sie unter [Konfigurieren von Spoofing Intelligence in Microsoft 365.](learn-about-spoof-intelligence.md)
 
 - [Konfigurieren Sie die E-Mail-Authentifizierung](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) für die Absenderdomäne.
   - Für das Fragezeichen auf dem Foto des Absenders sind SPF oder DKIM die wichtigsten.
-  - Bestätigen Sie für das "via"-Tag die Domäne in der DKIM-Signatur oder die **MAIL FROM-Adresse** entspricht (oder ist eine Unterdomäne der Domäne in der Von-Adresse).
+  - Bestätigen Sie für das "via"-Tag die Domäne in der DKIM-Signatur oder die **MAIL FROM-Adresse,** die der Domäne in der "Von"-Adresse entspricht (oder eine Unterdomäne ist).
 
 Weitere Informationen finden Sie unter ["Identifizieren verdächtiger Nachrichten in Outlook.com und Outlook im Web"](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
@@ -145,7 +150,7 @@ In diesem Abschnitt werden die Richtlinieneinstellungen beschrieben, die nur in 
 
 ### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Identitätswechseleinstellungen in Antiphishingrichtlinien in Microsoft Defender für Office 365
 
-Identitätswechsel ist der Ort, an dem der Absender oder die E-Mail-Domäne des Absenders in einer Nachricht einem echten Absender oder einer echten Domäne ähnelt:
+Der Identitätswechsel ist der Ort, an dem der Absender oder die E-Mail-Domäne des Absenders in einer Nachricht einem echten Absender oder einer echten Domäne ähnelt:
 
 - Ein Beispiel für einen Identitätswechsel der Domäne contoso.com ist ćóntoso.com.
 - Ein Beispiel für einen Identitätswechsel der Benutzerin michelle@contoso.com ist michele@contoso.com.
@@ -156,19 +161,19 @@ Die folgenden Identitätswechseleinstellungen sind nur in Antiphishingrichtlinie
 
 - **Zu schützende Benutzer:** Verhindert, dass die angegebene interne oder externe E-Mail-Adresse als **Nachrichtensender imitiert wird.** Sie erhalten beispielsweise eine E-Mail-Nachricht vom Stellvertretenden President Ihres Unternehmens, in der Sie aufgefordert werden, ihr interne Unternehmensinformationen zu senden. Würdest du es tun? Viele Personen würden die Antwort senden, ohne zu denken.
 
-  Sie können geschützte Benutzer verwenden, um interne und externe Absender-E-Mail-Adressen zum Schutz vor Identitätswechsel hinzuzufügen. Diese Liste  der Absender, die vor Benutzerwechsel geschützt sind, ist anders als die Liste der Empfänger, auf die die Richtlinie angewendet [](#policy-settings) wird (alle Empfänger für die Standardrichtlinie; bestimmte Empfänger, wie im Abschnitt "Angewendet auf" im Abschnitt "Richtlinieneinstellungen" konfiguriert).  
+  Sie können geschützte Benutzer verwenden, um interne und externe Absender-E-Mail-Adressen zum Schutz vor Identitätswechsel hinzuzufügen. Diese Liste der Absender, die vor Benutzerwechsel geschützt sind, ist anders als die Liste der Empfänger, auf die  die Richtlinie angewendet [](#policy-settings) wird (alle Empfänger für die Standardrichtlinie; bestimmte Empfänger, wie in der Einstellung "Angewendet auf" im Abschnitt "Richtlinieneinstellungen" konfiguriert).  
 
   > [!NOTE]
   >
   > - In jeder Antiphishingrichtlinie können Sie maximal 60 geschützte Benutzer (Absender-E-Mail-Adressen) angeben. Sie können nicht denselben geschützten Benutzer in mehreren Richtlinien angeben. Unabhängig davon, wie viele Richtlinien für einen Empfänger gelten, beträgt die maximale Anzahl geschützter Benutzer (Absender-E-Mail-Adressen) für jeden einzelnen Empfänger also 60. Weitere Informationen zur Richtlinienpriorität und dazu, wie die Richtlinienverarbeitung beendet wird, nachdem die erste Richtlinie angewendet wurde, finden Sie unter "Reihenfolge und [Rangfolge des E-Mail-Schutzes".](how-policies-and-protections-are-combined.md)
   >
-  > - Der Schutz vor Identitätswechsel funktioniert nicht, wenn Absender und Empfänger zuvor per E-Mail kommuniziert haben. Wenn Absender und Empfänger nie per E-Mail kommuniziert haben, wird die Nachricht als Identitätswechselversuch identifiziert.
+  > - Der Schutz vor Identitätswechsel funktioniert nicht, wenn der Absender und der Empfänger zuvor per E-Mail kommuniziert haben. Wenn Absender und Empfänger nie per E-Mail kommuniziert haben, wird die Nachricht als Identitätswechselversuch identifiziert.
 
   Standardmäßig sind keine Absender-E-Mail-Adressen für identitätswechselschutz in **Benutzer zum Schutz konfiguriert.** Daher werden E-Mail-Adressen von Absendern standardmäßig nicht durch Identitätswechselschutz abgedeckt, weder in der Standardrichtlinie noch in benutzerdefinierten Richtlinien.
 
-  Wenn Sie der Liste "Benutzer" interne oder externe  E-Mail-Adressen hinzufügen, um die Liste zu schützen, unterliegen Nachrichten von diesen Absendern Überprüfungen zum Identitätswechselschutz.  Die Nachricht wird auf  Identitätswechsel überprüft, wenn  die Nachricht an einen Empfänger gesendet wird, für den die Richtlinie gilt (alle Empfänger für die Standardrichtlinie; **Angewendet auf Empfänger** in benutzerdefinierten Richtlinien). Wenn ein Identitätswechsel in der E-Mail-Adresse des Absenders erkannt wird, werden die Aktionen zum Schutz vor Identitätswechsel für Benutzer auf die Nachricht angewendet (was mit der Nachricht zu tun ist, ob Sicherheitstipps für imitierte Benutzer angezeigt werden sollen usw.).
+  Wenn Sie der Liste "Benutzer" interne oder externe  E-Mail-Adressen zum Schutz hinzufügen, unterliegen Nachrichten von diesen Absendern Überprüfungen zum Identitätswechselschutz.  Die Nachricht wird auf  Identitätswechsel überprüft, wenn  die Nachricht an einen Empfänger gesendet wird, für den die Richtlinie gilt (alle Empfänger für die Standardrichtlinie; **Angewendet auf Empfänger** in benutzerdefinierten Richtlinien). Wenn ein Identitätswechsel in der E-Mail-Adresse des Absenders erkannt wird, werden die Aktionen zum Schutz vor Identitätswechsel für Benutzer auf die Nachricht angewendet (was mit der Nachricht zu tun ist, ob Sicherheitstipps für imitierte Benutzer angezeigt werden sollen usw.).
 
-- **Zu schützende** Domänen: Verhindert, dass die angegebenen Domänen in der Domäne des Absenders der **Nachricht imitiert werden.** Beispielsweise alle Domänen, die Sie besitzen[(](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)akzeptierte Domänen ) oder bestimmte Domänen (Domänen, die Sie besitzen oder Partnerdomänen). Diese Liste  der Absenderdomänen, die vor Identitätswechsel  geschützt sind, ist anders als die Liste der Empfänger, auf die die [](#policy-settings) Richtlinie angewendet wird (alle Empfänger für die Standardrichtlinie; bestimmte Empfänger, wie im Abschnitt "Angewendet auf" im Abschnitt "Richtlinieneinstellungen" konfiguriert). 
+- **Zu schützende** Domänen: Verhindert, dass die angegebenen Domänen in der Domäne des Absenders der **Nachricht imitiert werden.** Beispielsweise alle Domänen, die Sie besitzen[(](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)akzeptierte Domänen ) oder bestimmte Domänen (Domänen, die Sie besitzen oder Partnerdomänen). Diese Liste  der Absenderdomänen, die vor Identitätswechsel  geschützt sind, ist anders als die Liste der Empfänger, auf die die [](#policy-settings) Richtlinie angewendet wird (alle Empfänger für die Standardrichtlinie; bestimmte Empfänger, wie in der Einstellung "Angewendet auf" im Abschnitt "Richtlinieneinstellungen" konfiguriert). 
 
   > [!NOTE]
   > Die maximale Anzahl geschützter Domänen, die Sie in allen Antiphishingrichtlinien definieren können, beträgt 50.
@@ -217,7 +222,7 @@ Die folgenden Identitätswechseleinstellungen sind nur in Antiphishingrichtlinie
   - **Benachrichtigung und Hinzufügen weiterer Adressen zur Zeile "Bcc"**
   - **Löschen der Nachricht, bevor sie zugestellt wird**
 
-- **Vertrauenswürdige Absender und Domänen:** Ausnahmen für die Einstellungen zum Identitätswechselschutz. Nachrichten von den angegebenen Absender- und Absenderdomänen werden von der Richtlinie nie als identitätswechselbasierte Angriffe klassifiziert. Anders ausgedrückt: Die Aktion für geschützte Absender, geschützte Domänen oder Postfachintelligenzschutz wird nicht auf diese vertrauenswürdigen Absender oder Absenderdomänen angewendet. Der Höchstwert für diese Listen beträgt ca. 1.000 Einträge.
+- **Vertrauenswürdige Absender und Domänen:** Ausnahmen für die Identitätswechselschutzeinstellungen. Nachrichten von den angegebenen Absender- und Absenderdomänen werden von der Richtlinie nie als identitätswechselbasierte Angriffe klassifiziert. Anders ausgedrückt: Die Aktion für geschützte Absender, geschützte Domänen oder Postfachintelligenzschutz wird nicht auf diese vertrauenswürdigen Absender oder Absenderdomänen angewendet. Der Höchstwert für diese Listen beträgt ca. 1.000 Einträge.
 
 ### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Erweiterte Phishingschwellenwerte in Antiphishingrichtlinien in Microsoft Defender für Office 365
 

@@ -15,17 +15,21 @@ ms.collection:
 description: Erfahren Sie, wie Sie das Microsoft-Add-In "Junk-E-Mail-Berichterstellung" installieren und verwenden, um Spam-, Nichtspam- und Phishingnachrichten an Microsoft zu melden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 896ef89149e5ef65ea96b2b21e1010c29fa7a7fc
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 171bdc43e565a0890cddcd1e48208b49774a5315
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029420"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167347"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installieren und Verwenden des Junk-E-Mail-Berichterstellungs-Add-Ins für Microsoft Outlook
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
 > Wenn Sie das Junk-E-Mail-Berichterstellungs-Add-In derzeit nicht verwenden, empfehlen wir stattdessen das [Add-In](enable-the-report-message-add-in.md) "Nachricht melden" oder das ["Phishing-Add-In](enable-the-report-phish-add-in.md) melden". Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
@@ -59,9 +63,9 @@ In diesem Thema wird erläutert, wie Sie das Junk-E-Mail-Berichterstellungs-Add-
 
    - Wählen Sie mehrere Nachrichten aus, klicken Sie mit der rechten Maustaste, und wählen Sie dann **"Als Junk melden"** oder "Als Phishing **melden" aus.**
 
-     ![Melden mehrerer Junk- oder Phishing-E-Mail-Nachrichten mit der rechten Maustaste](../../media/junk-email-reporting-right-click-multiple.png)
+     ![Melden mehrerer Junk- oder Phishing-E-Mail-Nachrichten per Rechtsklick](../../media/junk-email-reporting-right-click-multiple.png)
 
-2. Lesen Sie im angezeigten Dialogfeld die Informationen, und klicken Sie auf **"Bericht".** Wenn Sie Ihre Meinung ändern, klicken Sie auf **"Nicht melden".**
+2. Lesen Sie im angezeigten Dialogfeld die Informationen, und klicken Sie auf **"Bericht".** Wenn Sie Ihre Meinung ändern, klicken Sie auf **"Nicht melden"**.
 
    ![Dialogfeld "Als Junk melden"](../../media/junk-email-reporting-report-as-junk-dialog.png)
 
@@ -74,7 +78,7 @@ In diesem Thema wird erläutert, wie Sie das Junk-E-Mail-Berichterstellungs-Add-
 
    Wenn Sie überprüfen möchten, ob die Nachrichten gesendet wurden, öffnen Sie den Ordner **Gesendete Objekte**, in dem die gesendeten Nachrichten angezeigt werden sollten.
 
-## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>Verwenden des Junk-E-Mail-Berichts-Add-Ins zum Melden von Nichtspam- und Phishingnachrichten aus dem Junk-E-Mail-Ordner
+## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>Verwenden des Add-Ins "Junk-E-Mail-Berichterstellung" zum Melden von Nichtspam- und Phishingnachrichten aus dem Junk-E-Mail-Ordner
 
 1. Verwenden Sie im Junk-E-Mail-Ordner eine der folgenden Methoden, um falsch positive Spam- oder Phishingnachrichten zu melden:
 
@@ -88,7 +92,7 @@ In diesem Thema wird erläutert, wie Sie das Junk-E-Mail-Berichterstellungs-Add-
 
    - Wählen Sie mehrere Nachrichten aus, klicken Sie mit der rechten Maustaste, und wählen Sie dann "Als Nicht-Junk-E-Mail **melden"** oder **"Als Phishing melden" aus.**
 
-     ![Melden mehrerer Junk- oder Phishing-E-Mail-Nachrichten durch Rechtsklick im Junk-E-Mail-Ordner](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
+     ![Melden mehrerer Nicht-Junk- oder Phishing-E-Mail-Nachrichten durch Rechtsklick im Junk-E-Mail-Ordner](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
 2. Lesen Sie im angezeigten Dialogfeld die Informationen, und klicken Sie auf **"Bericht".** Wenn Sie Ihre Meinung ändern, klicken Sie auf **"Nicht melden"**.
 
@@ -152,7 +156,7 @@ Wählen Sie den Pfeil nach unten neben **Junk** aus, um weitere Optionen anzuzei
 
    - `MaxMessageSelection` gibt die maximale Anzahl von Nachrichten an, die Sie für eine einzelne Übermittlung auswählen können. Gültige Werte sind 1 bis 50. Der Standardwert ist 15.
 
-   - `BccEmailAddress` gibt zusätzliche Bcc-Empfänger an, die eine Kopie aller Benutzerübermittlungen erhalten. Der Standardwert ist leer (keine weiteren Bcc-Empfänger).
+   - `BccEmailAddress` gibt zusätzliche Bcc-Empfänger an, die eine Kopie aller Benutzerübermittlungen erhalten. Der Standardwert ist leer (keine zusätzlichen Bcc-Empfänger).
 
    In diesem Beispiel wird die 64-Bit-Version des Add-Ins aus dem angegebenen Pfad mit den Standardeinstellungen installiert.
 
@@ -177,7 +181,7 @@ Um zu überprüfen, ob Sie das Junk-E-Mail-Berichterstellungs-Add-In erfolgreich
 
   - **Melden als Junk-E-Mail**
   - **Melden als Phishing**
-  - **Junk-Berichtsoptionen**
+  - **Optionen für die Junk-Berichterstellung**
   - **Melden der Junk-Online-Hilfe**
 
   ![Melden von Junk- oder Phishing-E-Mails über das Menüband](../../media/junk-email-reporting-ribbon.png)
@@ -186,7 +190,7 @@ Um zu überprüfen, ob Sie das Junk-E-Mail-Berichterstellungs-Add-In erfolgreich
 
   - **Melden als Junk-E-Mail**
   - **Melden als Phishing**
-  - **Junk-Berichtsoptionen**
+  - **Optionen für die Junk-Berichterstellung**
   - **Melden der Junk-Online-Hilfe**
 
   ![Melden von Junk- oder Phishing-E-Mails per Rechtsklick](../../media/junk-email-reporting-right-click.png)
@@ -202,7 +206,7 @@ Um zu überprüfen, ob Sie das Junk-E-Mail-Berichterstellungs-Add-In erfolgreich
 
   ![Melden sie keine Junk- oder Phishing-E-Mails aus dem Menüband im Junk-E-Mail-Ordner.](../../media/junk-email-reporting-junk-folder-ribbon.png)
 
-  ![Melden sie keine Junk- oder Phishing-E-Mails, wenn Sie mit der rechten Maustaste in den Junk-E-Mail-Ordner klicken.](../../media/junk-email-reporting-junk-folder-right-click.png)
+  ![Melden sie keine Junk- oder Phishing-E-Mails durch Rechtsklick im Junk-E-Mail-Ordner.](../../media/junk-email-reporting-junk-folder-right-click.png)
 
   ![Melden mehrerer Nicht-Junk- oder Phishing-E-Mail-Nachrichten durch Rechtsklick im Junk-E-Mail-Ordner](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
@@ -238,9 +242,9 @@ Nachdem Sie Outlook geschlossen haben, verwenden Sie eines der folgenden Verfahr
 
 Wenn Sie Outlook nach der Deinstallation öffnen, sollten die Junk-, nicht Junk- und Phishingberichtsoptionen weg sein.
 
-## <a name="troubleshooting-the-junk-email-reporting-add-in"></a>Problembehandlung für das Junk-E-Mail-Bericht-Add-In
+## <a name="troubleshooting-the-junk-email-reporting-add-in"></a>Problembehandlung für das Junk-E-Mail-Berichterstellungs-Add-In
 
-Gelegentlich können Probleme mit Outlook nach dem Hinzufügen des Junk-E-Mail-Berichterstellungs-Add-Ins angezeigt werden. In diesem Abschnitt werden Probleme beschrieben, die auftreten können, sowie Tipps zum Beheben dieser Probleme.
+Gelegentlich können Probleme mit Outlook nach dem Hinzufügen des Junk-E-Mail-Berichterstattungs-Add-Ins angezeigt werden. In diesem Abschnitt werden Probleme beschrieben, die auftreten können, sowie Tipps zum Beheben dieser Probleme.
 
 ### <a name="troubleshooting-for-users"></a>Problembehandlung für Benutzer
 

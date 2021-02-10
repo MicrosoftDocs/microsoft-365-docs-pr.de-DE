@@ -8,78 +8,83 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
-description: Administratoren können sich über die verfügbaren und bevorzugten Optionen informieren, um eingehende Nachrichten in Exchange Online Protection (EoP) zu blockieren.
-ms.openlocfilehash: 7894a6cfe665539fa8c00f5911c4a588b9cf7ebc
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Administratoren können sich über die verfügbaren und bevorzugten Optionen zum Blockieren eingehender Nachrichten in Exchange Online Protection (EOP) informieren.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: d77457567d4c3f9f4a8620021a7fb41615f0594d
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203191"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165655"
 ---
-# <a name="create-blocked-sender-lists-in-eop"></a>Erstellen blockierter Absenderlisten in EoP
+# <a name="create-blocked-sender-lists-in-eop"></a>Erstellen von Listen blockierter Absender in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online-oder eigenständigen Exchange Online Schutzorganisationen (EoP) ohne Exchange Online Postfächer bietet EoP mehrere Möglichkeiten zum Blockieren von e-Mails von unerwünschten Absendern. Zu diesen Optionen gehören blockierte Absender in Outlook, blockierte Absenderlisten oder blockierte Domänenlisten in den antispamregeln, Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) und die IP-Sperrliste (Verbindungsfilterung). Sie können diese Optionen gemeinsam als _Blockierte Absenderlisten_betrachten.
+In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer bietet EOP mehrere Möglichkeiten zum Blockieren von E-Mails von unerwünschten Absendern. Diese Optionen umfassen blockierte Absender in Outlook, Listen blockierter Absender oder blockierte Domänen in Antispamrichtlinien, Exchange-Nachrichtenflussregeln (auch als Transportregeln bekannt) und die IP-Sperrliste (Verbindungsfilterung). Zusammen können Sie sich diese Optionen als Listen _blockierter Absender ausdingen._
 
-Die beste Methode zum Blockieren von Absendern variiert im Wirkungsbereich. Für einen einzelnen Benutzer kann es sich bei der richtigen Lösung um von Outlook blockierte Absender handeln. Für viele Benutzer wäre eine der anderen Optionen besser geeignet. Die folgenden Optionen werden sowohl nach Wirkungsbereich als auch in der Breite bewertet. Die Liste wird von schmal zu breit, aber *Lesen Sie die Details* für vollständige Empfehlungen.
+Die beste Methode zum Blockieren von Absendern hängt vom Wirkungsbereich ab. Für einen einzelnen Benutzer können blockierte Absender in Outlook die richtige Lösung sein. Für viele Benutzer wäre eine der anderen Optionen besser geeignet. Die folgenden Optionen werden nach Wirkungsbereich und Umfang bewertet. Die Liste reicht von schmal bis breit, aber lesen *Sie die Spezifischen* für vollständige Empfehlungen.
 
-1. In Outlook blockierte Absender (die Liste der blockierten Absender, die in jedem Postfach gespeichert ist)
+1. Blockierte Absender in Outlook (liste blockierter Absender, die in jedem Postfach gespeichert ist)
 
-2. Listen blockierter Absender oder blockierter Domänen (Anti-Spam-Richtlinien)
+2. Listen blockierter Absender oder blockierter Domänen (Antispamrichtlinien)
 
 3. Nachrichtenflussregeln
 
 4. Die IP-Sperrliste (Verbindungsfilterung)
 
 > [!NOTE]
-> Sie können zwar organisationsweite Block Einstellungen zum Beheben von falsch negativen (verpassten Spam) verwenden, Sie sollten diese Nachrichten jedoch auch zur Analyse an Microsoft übermitteln. Durch das Verwalten von falsch negativen mithilfe von Sperrlisten wird der Verwaltungsaufwand erheblich gesteigert. Wenn Sie Sperrlisten verwenden, um verpasste Spam abzulenken, müssen Sie das Thema [Berichtsmeldungen und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md) weitergeben.
+> Sie können zwar organisationsweite Blockierungseinstellungen verwenden, um falsch negative Ergebnisse (verpasste Spamnachrichten) zu adressieren, sie sollten diese Nachrichten jedoch auch zur Analyse an Microsoft übermitteln. Die Verwaltung falsch negativer Meldungen mithilfe von Sperrlisten erhöht den Verwaltungsaufwand erheblich. Wenn Sie Sperrlisten verwenden, um verpasste Spamnachrichten zu entschärfen, müssen Sie das Thema "Nachrichten und Dateien an [Microsoft](report-junk-email-messages-to-microsoft.md) melden" bereithalten.
 
-Im Gegensatz dazu können Sie auch mehrere Optionen verwenden, um e-Mails aus bestimmten Quellen mithilfe _sicherer Absenderlisten_immer zuzulassen. Weitere Informationen finden Sie unter [Erstellen von Listen sicherer Absender](create-safe-sender-lists-in-office-365.md).
+Im Gegensatz dazu haben Sie auch mehrere Optionen, um E-Mails aus bestimmten Quellen immer mithilfe von Listen sicherer _Absender zu erlauben._ Weitere Informationen finden Sie unter [Erstellen von Listen sicherer Absender](create-safe-sender-lists-in-office-365.md).
 
-## <a name="email-message-basics"></a>Grundlagen der e-Mail-Nachricht
+## <a name="email-message-basics"></a>Grundlagen von E-Mail-Nachrichten
 
-Eine standardmäßige SMTP-E-Mail besteht aus einem *Nachrichten-Envelope* und dem Nachrichteninhalt. Der Nachrichtenumschlag enthält Informationen, die für die Übermittlung und Zustellung der Nachricht zwischen SMTP-Servern erforderlich sind. Der Nachrichteninhalt enthält Nachrichtenkopffelder (zusammenfassend als *Nachrichtenkopf* bezeichnet) sowie den Nachrichtentext. Der Nachrichtenumschlag wird in RFC 5321 beschrieben, und der Nachrichtenkopf wird in RFC 5322 beschrieben. Empfänger sehen den tatsächlichen Nachrichtenumschlag nie, da er vom Nachrichtenübertragungsprozess generiert wird und nicht tatsächlich Teil der Nachricht ist.
+Eine standardmäßige SMTP-E-Mail besteht aus einem *Nachrichten-Envelope* und dem Nachrichteninhalt. Der Nachrichtenumschlag enthält Informationen, die für die Übermittlung und Übermittlung der Nachricht zwischen den SMTP-Servern erforderlich sind. Der Nachrichteninhalt enthält Nachrichtenkopffelder (zusammenfassend als *Nachrichtenkopf* bezeichnet) sowie den Nachrichtentext. Der Nachrichtenumschlag wird in RFC 5321 beschrieben, und der Nachrichtenkopf wird in RFC 5322 beschrieben. Empfänger sehen den tatsächlichen Nachrichtenumschlag nie, da er vom Nachrichtenübermittlungsprozess generiert wird und nicht tatsächlich Teil der Nachricht ist.
 
-- Die `5321.MailFrom` Adresse (auch bekannt als **Mail from** Address, P1 Sender oder Envelope Sender) ist die e-Mail-Adresse, die in der SMTP-Übertragung der Nachricht verwendet wird. Diese e-Mail-Adresse wird in der Regel im Headerfeld **Return-Path** in der Nachrichtenkopfzeile aufgezeichnet (obwohl es möglich ist, dass der Absender eine andere e-Mail-Adresse für den **Rückgabepfad** festlegt). Wenn die Nachricht nicht zugestellt werden kann, ist dies der Empfänger für den Unzustellbarkeitsbericht (auch bekannt als NDR-oder Bounce-Nachricht).
+- Die Adresse (auch als `5321.MailFrom` MAIL **FROM-Adresse,** Absender von E-Mails oder Umschlagsender bezeichnet) ist die E-Mail-Adresse, die bei der SMTP-Übermittlung der Nachricht verwendet wird. Diese **E-Mail-Adresse** wird in der Regel im Kopfzeilenfeld "Return-Path" im Nachrichtenkopf aufgezeichnet (obwohl der Absender eine andere **Absender-E-Mail-Adresse** festlegen kann). Wenn die Nachricht nicht zugestellt werden kann, ist dies der Empfänger für den Unzustellbarkeitsbericht (auch als NDR oder Unzustellbarkeitsnachricht bekannt).
 
-- Die `5322.From` (auch bekannt als **von** -Adresse oder P2-Absender bezeichnet) ist die e-Mail-Adresse im Feld **von** -Kopfzeile und die e-Mail-Adresse des Absenders, die in e-Mail-Clients angezeigt wird.
+- The `5322.From` (also known as the **From** address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients.
 
-Häufig sind die `5321.MailFrom` und `5322.From` -Adressen identisch (Kommunikation zwischen Mensch und Person). Wenn e-Mails jedoch im Namen einer anderen Person gesendet werden, können die Adressen unterschiedlich sein.
+Häufig sind die `5321.MailFrom` Und-Adressen identisch (Kommunikation von Person `5322.From` zu Person). Wenn E-Mails jedoch im Auftrag einer anderen Person gesendet werden, können die Adressen unterschiedlich sein.
 
-Listen für blockierte Absender und Blockierte Domänen in antispamregeln in EoP überprüfen sowohl die-als `5321.MailFrom` auch- `5322.From` Adressen. Von Outlook blockierte Absender wird nur die `5322.From` Adresse verwendet.
+Listen blockierter Absender und blockierte Domänen in Antispamrichtlinien in EOP überprüfen sowohl die `5321.MailFrom` Adressliste als auch `5322.From` die Adressen. Blockierte Absender in Outlook verwenden nur die `5322.From` Adresse.
 
-## <a name="use-outlook-blocked-senders"></a>Verwenden von Outlook-blockierten Absendern
+## <a name="use-outlook-blocked-senders"></a>Verwenden von blockierten Absendern in Outlook
 
-Wenn nur eine kleine Anzahl von Benutzern unerwünschte e-Mails empfangen hat, können Benutzer oder Administratoren die Absender-e-Mail-Adressen der Liste blockierter Absender im Postfach hinzufügen. Anweisungen finden Sie unter [Konfigurieren von Junk-e-Mail-Einstellungen für Exchange Online-Postfächer](configure-junk-email-settings-on-exo-mailboxes.md).
+Wenn nur eine kleine Anzahl von Benutzern unerwünschte E-Mails erhalten hat, können Benutzer oder Administratoren die Absender-E-Mail-Adressen der Liste blockierter Absender im Postfach hinzufügen. Anweisungen finden Sie unter [Konfigurieren von Junk-E-Mail-Einstellungen für Exchange Online-Postfächer.](configure-junk-email-settings-on-exo-mailboxes.md)
 
-Wenn Nachrichten aufgrund der Liste blockierter Absender eines Benutzers erfolgreich blockiert werden, enthält das Kopfzeilenfeld **X-Forefront-Antispam-Report** den Wert `SFV:BLK` .
+Wenn Nachrichten aufgrund der Liste blockierter Absender eines Benutzers erfolgreich blockiert werden, enthält das **Kopfzeilenfeld X-Forefront-Antispam-Report** den `SFV:BLK` Wert.
 
 > [!NOTE]
-> Wenn es sich bei den unerwünschten Nachrichten um Newsletter von einer seriösen und erkennbaren Quelle handelt, ist das kündigen der e-Mail eine weitere Option, um den Empfang der Nachrichten durch den Benutzer zu beenden.
+> Wenn es sich bei den unerwünschten Nachrichten um Newsletter aus einer seriösen und wiedererkennbaren Quelle handelt, ist das Abbestellen der E-Mail eine weitere Option, um zu verhindern, dass der Benutzer die Nachrichten empfängt.
 
-## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Verwenden blockierter Absenderlisten oder blockierter Domänenlisten
+## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Verwenden von Listen blockierter Absender oder blockierter Domänen
 
-Wenn mehrere Benutzer betroffen sind, ist der Bereich breiter, daher lautet die nächste beste Option "Listen blockierter Absender" oder "Blockierte Domänen" in den Antispam-Richtlinien. Nachrichten von Absendern in den Listen werden als **Spam**gekennzeichnet, und die Aktion, die Sie für das **Spam** Filter-Urteil konfiguriert haben, wird in der Nachricht vorgenommen. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md).
+Wenn mehrere Benutzer betroffen sind, ist der Bereich breiter, sodass die nächste beste Option blockierte Absenderlisten oder Blockierte Domänenlisten in Antispamrichtlinien sind. Nachrichten von Absendern in den Listen werden als **Spam** gekennzeichnet, und  die Aktion, die Sie für die Spamfilter-Filter-Entscheidung konfiguriert haben, wird für die Nachricht verwendet. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md).
 
-Der maximale Grenzwert für diese Listen beträgt ca. 1000 Einträge.
+Der Höchstwert für diese Listen beträgt ca. 1.000 Einträge.
 
-## <a name="use-mail-flow-rules"></a>Verwenden von Nachrichtenfluss Regeln
+## <a name="use-mail-flow-rules"></a>Verwenden von Nachrichtenflussregeln
 
-Wenn Sie Nachrichten blockieren müssen, die an bestimmte Benutzer oder in der gesamten Organisation gesendet werden, können Sie Nachrichtenfluss Regeln verwenden. Nachrichtenfluss Regeln sind flexibler als Block Absenderlisten oder blockierte Absenderdomänen Listen, da Sie auch nach Stichwörtern oder anderen Eigenschaften in den unerwünschten Nachrichten suchen können.
+Wenn Sie Nachrichten blockieren müssen, die an bestimmte Benutzer oder die gesamte Organisation gesendet werden, können Sie Nachrichtenflussregeln verwenden. Nachrichtenflussregeln sind flexibler als Listen blockierter Absender oder blockierter Absenderdomänen, da sie auch nach Schlüsselwörtern oder anderen Eigenschaften in den unerwünschten Nachrichten suchen können.
 
-Unabhängig von den Bedingungen oder Ausnahmen, die Sie zum Identifizieren der Nachrichten verwenden, konfigurieren Sie die Aktion, um die SCL-Bewertung (Spam Confidence Level) der Nachricht auf 9 festzulegen, wodurch die Nachricht als **Spam mit hoher Vertrauens**Würdigkeit gekennzeichnet wird. Weitere Informationen finden Sie unter [Verwenden von Nachrichtenfluss Regeln zum Festlegen der SCL-Bewertung in Nachrichten](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+Unabhängig von den Bedingungen oder Ausnahmen, die Sie zum Identifizieren der Nachrichten verwenden, konfigurieren Sie die Aktion, um die SCL (Spam Confidence Level) der Nachricht auf 9 zu setzen, wodurch die Nachricht als Spam mit hoher Confidence markiert **wird.** Weitere Informationen finden Sie unter [Verwenden von Nachrichtenflussregeln zum Festlegen der SCL in Nachrichten.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
 > [!IMPORTANT]
-> Es ist ganz einfach, *übermäßig* aggressive Regeln zu erstellen, daher ist es wichtig, dass Sie nur die Nachrichten identifizieren, die Sie mit ganz bestimmten Kriterien blockieren möchten. Achten Sie außerdem darauf, die Überwachung für die Regel zu aktivieren und die Ergebnisse der Regel zu testen, um sicherzustellen, dass alles wie erwartet funktioniert.
+> Es ist einfach, Regeln zu erstellen, die zu *aggressiv* sind. Daher ist es wichtig, dass Sie nur die Nachrichten identifizieren, die Sie mithilfe sehr spezifischer Kriterien blockieren möchten. Aktivieren Sie außerdem die Überwachung der Regel, und testen Sie die Ergebnisse der Regel, um sicherzustellen, dass alles wie erwartet funktioniert.
 
-## <a name="use-the-ip-block-list"></a>Verwenden der IP-Sperrliste
+## <a name="use-the-ip-block-list"></a>Verwenden der Liste blockierter IP-Adressen
 
-Wenn es nicht möglich ist, eine der anderen Optionen zum Blockieren eines Absenders zu verwenden *, sollten Sie* die IP-Sperrliste in der Verbindungsfilter Richtlinie verwenden. Weitere Informationen finden Sie unter [Configure the connection filter policy](configure-the-connection-filter-policy.md). Es ist wichtig, die Anzahl der blockierten IPS auf ein Minimum zu beschränken, sodass die Blockierung ganzer IP-Adressbereiche *nicht* empfohlen wird.
+Wenn es nicht möglich ist, eine der anderen Optionen zum Blockieren eines Absenders zu *verwenden,* sollten Sie nur dann die IP-Sperrliste in der Verbindungsfilterrichtlinie verwenden. Weitere Informationen finden Sie unter [Configure the connection filter policy](configure-the-connection-filter-policy.md). Es ist wichtig, die Anzahl der blockierten IPs auf ein Minimum zu beschränken, daher wird das Blockieren ganzer IP-Adressbereiche *nicht* empfohlen.
 
-Sie sollten *insbesondere* vermeiden, IP-Adressbereiche hinzuzufügen, die zu Verbraucher Diensten (beispielsweise Outlook.com) oder gemeinsam genutzten Infrastrukturen gehören, und außerdem sicherstellen, dass Sie die Liste blockierter IP-Adressen im Rahmen der regulären Wartung überprüfen.
+Sie  sollten insbesondere das Hinzufügen von IP-Adressbereichen vermeiden, die zu Verbraucherdiensten (z. B. outlook.com) oder gemeinsam genutzten Infrastrukturen gehören, und außerdem sicherstellen, dass Sie die Liste der blockierten IP-Adressen im Rahmen der regelmäßigen Wartung überprüfen.

@@ -19,22 +19,27 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 261c375aa17e4a3bc8f7d1b469d82621cf4ae45b
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: 653b16b7b3f6637440e3740830ffe9f9a51c6dd8
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097128"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166507"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Richtlinienempfehlungen für sichere E-Mails
 
-In diesem Artikel wird beschrieben, wie Sie die empfohlenen Identitäts- und Gerätezugriffsrichtlinien implementieren, um E-Mail- und E-Mail-Clients der Organisation zu schützen, die moderne Authentifizierung und bedingten Zugriff unterstützen. Dieser Leitfaden baut auf den [allgemeinen Identitäts- und](identity-access-policies.md) Gerätezugriffsrichtlinien auf und enthält auch einige zusätzliche Empfehlungen.
+**Gilt für**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+
+
+In diesem Artikel wird beschrieben, wie Sie die empfohlenen Identitäts- und Gerätezugriffsrichtlinien implementieren, um E-Mail- und E-Mail-Clients der Organisation zu schützen, die moderne Authentifizierung und bedingten Zugriff unterstützen. Dieser Leitfaden basiert auf den [allgemeinen Identitäts- und](identity-access-policies.md) Gerätezugriffsrichtlinien und enthält auch einige zusätzliche Empfehlungen.
 
 Diese Empfehlungen basieren auf drei verschiedenen Sicherheits- und Schutzebenen, die basierend auf der Granularität Ihrer Anforderungen angewendet werden **können:** **Basisplan,** vertraulich und hochgradig **reguliert.** Weitere Informationen zu den Sicherheitsebenen und den empfohlenen Clientbetriebssystemen, auf die hier verwiesen wird, finden Sie in der [Einführung zu den empfohlenen Sicherheitsrichtlinien und -konfigurationen](microsoft-365-policies-configurations.md).
 
-Diese Empfehlungen erfordern, dass Ihre Benutzer moderne E-Mail-Clients verwenden, einschließlich Outlook für iOS und Android auf mobilen Geräten. Outlook für iOS und Android bietet Unterstützung für die besten Features von Office 365. Diese mobilen Outlook-Apps sind auch mit Sicherheitsfunktionen entworfen, die die mobile Nutzung unterstützen und mit anderen Microsoft Cloud Security Funktionen zusammenarbeiten. Weitere Informationen finden Sie unter Häufig gestellte Fragen zu [Outlook für iOS und Android.](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq)
+Diese Empfehlungen erfordern, dass Ihre Benutzer moderne E-Mail-Clients verwenden, einschließlich Outlook für iOS und Android auf mobilen Geräten. Outlook für iOS und Android bietet Unterstützung für die besten Features von Office 365. Diese mobilen Outlook-Apps sind auch mit Sicherheitsfunktionen entworfen, die die mobile Verwendung unterstützen und mit anderen Microsoft Cloud Security Funktionen zusammenarbeiten. Weitere Informationen finden Sie unter Häufig gestellte Fragen zu [Outlook für iOS und Android.](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq)
 
-## <a name="update-common-policies-to-include-email"></a>Aktualisieren gängiger Richtlinien, um E-Mails zu enthalten
+## <a name="update-common-policies-to-include-email"></a>Aktualisieren gängiger Richtlinien mit E-Mails
 
 Zum Schutz von E-Mails zeigt das folgende Diagramm, welche Richtlinien anhand der allgemeinen Identitäts- und Gerätezugriffsrichtlinien aktualisiert werden müssen.
 
@@ -54,14 +59,14 @@ Wenn Sie Exchange Online und Outlook beim Einrichten in den Bereich der Richtlin
 ||[Erfordert genehmigte Apps und app-Schutz](identity-access-policies.md#require-approved-apps-and-app-protection)|Hinzufügen von Exchange Online in die Liste der Cloud-Apps|
 ||[Kompatible PCs erforderlich](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Hinzufügen von Exchange Online in die Liste der Cloud-Apps|
 ||[Blockieren von ActiveSync-Clients](#block-activesync-clients)|Hinzufügen dieser neuen Richtlinie|
-|**Vertraulich**|[MFA erforderlich, wenn das Anmelderisiko *niedrig,* *mittel oder* hoch *ist*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Hinzufügen von Exchange Online in die Zuweisung von Cloud-Apps|
+|**Vertraulich**|[MFA erforderlich, wenn das Anmelderisiko *niedrig,* *mittel oder* *hoch ist*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Hinzufügen von Exchange Online in die Zuweisung von Cloud-Apps|
 ||[Kompatible *PCs* und mobile Geräte erforderlich](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Hinzufügen von Exchange Online in die Liste der Cloud-Apps|
 |**Streng geregelt**|[*MFA* immer erforderlich](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Hinzufügen von Exchange Online in die Zuweisung von Cloud-Apps|
 |
 
 ## <a name="block-activesync-clients"></a>Blockieren von ActiveSync-Clients
 
-Diese Richtlinie hindert ActiveSync-Clients daran, andere Richtlinien für bedingten Zugriff zu umgehen. Die Richtlinienkonfiguration gilt nur für ActiveSync-Clients. Durch Auswählen **[der Option "App-Schutzrichtlinie erforderlich"](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)** blockiert diese Richtlinie ActiveSync-Clients. Details zum Erstellen dieser Richtlinie finden Sie unter "App-Schutzrichtlinie erforderlich" für den [Cloud-App-Zugriff mit bedingten Zugriff.](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
+Diese Richtlinie hindert ActiveSync-Clients daran, andere Richtlinien für bedingten Zugriff zu umgehen. Die Richtlinienkonfiguration gilt nur für ActiveSync-Clients. Durch Die Auswahl **[der Richtlinie "App-Schutz erforderlich"](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)** blockiert diese Richtlinie ActiveSync-Clients. Details zum Erstellen dieser Richtlinie finden Sie unter "App-Schutzrichtlinie erforderlich" für den [Cloud-App-Zugriff mit bedingten Zugriff.](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
 
 - Folgen Sie "Schritt 2: Konfigurieren einer Azure AD-Richtlinie für bedingten Zugriff für Exchange Online mit ActiveSync (EAS)" in Szenario [1: Office 365-Apps](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)erfordern genehmigte Apps mit App-Schutzrichtlinien, die Exchange ActiveSync-Clients, die die Standardauthentifizierung nutzen, daran hindert, eine Verbindung mit Exchange Online zu herstellen.
 
@@ -69,19 +74,19 @@ Sie können auch Authentifizierungsrichtlinien verwenden, um die [Standardauthen
 
 ## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>Einschränken des Zugriffs auf Exchange Online aus Outlook im Web
 
-Sie können die Möglichkeit für Benutzer einschränken, Anlagen von Outlook im Web auf umnanageten Geräten herunterzuladen. Benutzer auf diesen Geräten können diese Dateien mit Office Online anzeigen und bearbeiten, ohne dass die Dateien auf dem Gerät übertragen und gespeichert werden. Sie können auch blockieren, dass Benutzern Anlagen auf einem nicht verwalteten Gerät angezeigt werden.
+Sie können die Möglichkeit für Benutzer einschränken, Anlagen von Outlook im Web auf umnanageten Geräten herunterzuladen. Benutzer auf diesen Geräten können diese Dateien mit Office Online anzeigen und bearbeiten, ohne die Dateien auf dem Gerät zu übertragen und zu speichern. Sie können auch blockieren, dass Benutzern Anlagen auf einem nicht verwalteten Gerät angezeigt werden.
 
 Die Schritte sind hier aufgeführt:
 
 1. [Stellen Sie eine Verbindung mit einer Exchange Online Remote -PowerShell-Sitzung.](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
 2. Wenn Sie noch keine OWA-Postfachrichtlinie haben, erstellen Sie eine mit dem [Cmdlet "New-OwaMailboxPolicy".](https://docs.microsoft.com/powershell/module/exchange/new-owamailboxpolicy)
-3. Wenn Sie das Anzeigen von Anlagen zulassen, aber kein Herunterladen zulassen möchten, verwenden Sie diesen Befehl:
+3. Wenn Sie das Anzeigen von Anlagen, aber kein Herunterladen zulassen möchten, verwenden Sie diesen Befehl:
 
    ```powershell
    Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnly
    ```
 
-4. Wenn Sie Anlagen blockieren möchten, verwenden Sie den folgenden Befehl:
+4. Wenn Sie Anlagen blockieren möchten, verwenden Sie diesen Befehl:
 
    ```powershell
    Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
@@ -99,7 +104,7 @@ Die Schritte sind hier aufgeführt:
 
 Um sicherzustellen, dass Benutzer von iOS- und Android-Geräten nur mit Outlook für iOS und Android auf Arbeits- oder Schulinhalte zugreifen können, benötigen Sie eine Richtlinie für bedingten Zugriff für diese potenziellen Benutzer.
 
-Weitere Informationen zum Konfigurieren dieser Richtlinie finden Sie unter "Verwalten des Zugriffs auf die Messagingzusammenarbeit mithilfe [von Outlook für iOS und Android".]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)
+Informationen zum Konfigurieren dieser Richtlinie finden Sie unter "Verwalten des Zugriffs auf die [Messagingzusammenarbeit mithilfe von Outlook für iOS und Android".]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)
 
 ## <a name="set-up-message-encryption"></a>Einrichten der Nachrichtenverschlüsselung
 

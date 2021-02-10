@@ -8,41 +8,46 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
-description: Microsoft hat verschiedene Richtlinien und Verfahren entwickelt und mehrere bewährte Methoden für die Industrie eingeführt, um unsere Benutzer vor missbräuchlichen, unerwünschten oder böswilligen e-Mails zu schützen.
-ms.openlocfilehash: b971823201fb805c9e17da8402250065d274668d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Microsoft hat verschiedene Richtlinien, Verfahren entwickelt und mehrere bewährte Methoden aus der Branche übernommen, um unsere Benutzer vor beleidigenden, unerwünschten oder schädlichen E-Mails zu schützen.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 01df2e8c1cc8a8ca68688377c4cad6ade91b5623
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202375"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166855"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referenz: Richtlinien, Methoden und Anleitungen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft ist bestrebt, die vertrauenswürdigste Benutzerfreundlichkeit im Internet bereitzustellen. Daher hat Microsoft verschiedenen Richtlinien, Verfahren entwickelt und mehrere bewährte Branchenmethoden übernommen, um unsere Benutzer vor beleidigenden, unerwünschten oder schädlichen E-Mails zu schützen. Absender, die versuchen, e-Mails an Benutzer zu senden, sollten sicherstellen, dass Sie die Anleitungen in diesem Artikel vollständig verstehen und befolgen, um diese Bemühungen zu unterstützen und potenzielle Zustellungsprobleme zu vermeiden.
+Microsoft ist bestrebt, die vertrauenswürdigste Benutzerfreundlichkeit im Internet bereitzustellen. Daher hat Microsoft verschiedenen Richtlinien, Verfahren entwickelt und mehrere bewährte Branchenmethoden übernommen, um unsere Benutzer vor beleidigenden, unerwünschten oder schädlichen E-Mails zu schützen. Absender, die versuchen, E-Mails an Benutzer zu senden, sollten sicherstellen, dass sie die Anweisungen in diesem Artikel vollständig verstehen und folgen, um dabei zu helfen und potenzielle Zustellungsprobleme zu vermeiden.
 
-Wenn Sie nicht nach diesen Richtlinien und Anleitungen handeln, ist es möglich, dass unser Supportteam Sie nicht unterstützen kann. Wenn Sie die Richtlinien, Methoden und Anleitungen, die in diesem Artikel vorgestellt werden, beachten, und trotzdem Probleme bei der Übermittlung basierend auf der IP-Adresse des Absenders haben, führen Sie bitte die Schritte aus, um eine Delisting-Anforderung zu übermitteln. Anweisungen finden Sie unter [Verwenden des Delist-Portals, um sich selbst aus der Liste blockierter Absender zu entfernen](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Wenn Sie nicht nach diesen Richtlinien und Anleitungen handeln, ist es möglich, dass unser Supportteam Sie nicht unterstützen kann. Wenn Sie die Richtlinien, Methoden und Anleitungen, die in diesem Artikel vorgestellt werden, beachten, und trotzdem Probleme bei der Übermittlung basierend auf der IP-Adresse des Absenders haben, führen Sie bitte die Schritte aus, um eine Delisting-Anforderung zu übermitteln. Anweisungen finden Sie unter [Verwenden des Listendelist-Portals, um sich selbst aus der Liste blockierter Absender zu entfernen.](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
 
 ## <a name="general-microsoft-policies"></a>Allgemeine Microsoft-Richtlinien
 
-An Microsoft 365-Benutzer gesendete e-Mails müssen alle Microsoft-Richtlinien für die e-Mail-Übermittlung und die Verwendung von Microsoft 365 einhalten.
+An Microsoft 365-Benutzer gesendete E-Mails müssen allen Microsoft-Richtlinien entsprechen, die die E-Mail-Übertragung und Verwendung von Microsoft 365 regeln.
 
-- Für Microsoft 365 geltende Dienstbedingungen; insbesondere das Verbot der Verwendung des Diensts zum Spam oder zur Verteilung von Schadsoftware.
+- Nutzungsbedingungen für Microsoft 365; insbesondere das Verboten, den Dienst zum Spam oder zum Verteilen von Schadsoftware zu verwenden.
 
 - [Microsoft-Servicevertrag](https://www.microsoft.com/servicesagreement/)
 
 ## <a name="governmental-regulations"></a>Einhaltung von gesetzlichen Vorschriften
 
-An Microsoft 365-Benutzer gesendete e-Mails müssen alle geltenden Gesetze und Vorschriften für die e-Mail-Kommunikation in der jeweiligen Jurisdiktion einhalten.
+An Microsoft 365-Benutzer gesendete E-Mails müssen alle geltenden Gesetze und Bestimmungen zur E-Mail-Kommunikation in der anwendbaren Gerichtsbarkeit einhalten.
 
 - [CAN-SPAM Act: Compliance-Leitfaden für Unternehmen](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -50,13 +55,13 @@ An Microsoft 365-Benutzer gesendete e-Mails müssen alle geltenden Gesetze und V
 
 ## <a name="technical-guidelines"></a>Technische Richtlinien
 
-E-Mail-Nachrichten, die an Microsoft 365 gesendet werden, sollten den einschlägigen Empfehlungen entsprechen, die in den unten stehenden Dokumenten aufgeführt sind (einige Links sind nur in Englisch verfügbar).
+An Microsoft 365 gesendete E-Mails sollten den anwendbaren Empfehlungen entsprechen, die in den folgenden Dokumenten aufgeführt sind (einige Links sind nur in Englisch verfügbar).
 
 - [RFC 2505: Anti-Spam Recommendations for SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920: SMTP Service Extension for Command Pipelining](https://www.ietf.org/rfc/rfc2920.txt)
 
-Darüber hinaus müssen e-Mail-Server, die eine Verbindung mit Microsoft 365 herstellen, die folgenden Anforderungen erfüllen:
+Darüber hinaus müssen E-Mail-Server, die eine Verbindung mit Microsoft 365 herstellen, die folgenden Anforderungen erfüllen:
 
 - Absender muss allen technischen Standards für die Übermittlung von Internet-E-Mails entsprechen - gemäß der Veröffentlichungen der Internet Engineering Task Force (IETF) von The Internet Society, einschließlich RFC 5321, RFC 5322 und anderen.
 
@@ -76,9 +81,9 @@ Darüber hinaus müssen e-Mail-Server, die eine Verbindung mit Microsoft 365 her
 
 Absender, ISPs und andere Dienstanbietern sollten die Zuverlässigkeit Ihrer ausgehenden IP-Adressen aktiv verwalten.
 
-## <a name="microsoft-365-limits"></a>Microsoft 365-Beschränkungen
+## <a name="microsoft-365-limits"></a>Microsoft 365-Grenzwerte
 
-Absender müssen die Microsoft 365-Grenzwerte einhalten, die unter [Exchange Online Protection Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)aufgeführt sind.
+Absender müssen die microsoft 365-Grenzwerte einhalten, die in [den Exchange Online Protection-Beschränkungen aufgeführt sind.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
 
 ## <a name="email-delivery-resources-and-organizations"></a>E-Mail-Übermittlungsressourcen und -Organisationen
 
@@ -88,11 +93,11 @@ Microsoft arbeitet aktiv mit Branchenvertretern und Dienstanbietern zusammen, um
 
 - [Online Trust Alliance](https://www.otalliance.org/resources)
 
-- [E-Mail-Absender & Anbieter Koalition](https://www.espcoalition.org/)
+- [Email Sender & Provider Union](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>Missbrauchs- und Spamberichte
 
-Informationen zum Melden von unrechtmäßigen, missbräuchlichen, unerwünschten oder böswilligen e-Mails finden Sie unter [Report Messages and files to Microsoft](report-junk-email-messages-to-microsoft.md). Das Senden dieser Kommunikationstypen stellt einen Verstoß gegen die Microsoft-Richtlinie dar, und es werden entsprechende Aktionen für bestätigte Berichte ausgeführt.
+Informationen zum Melden unrechtmäßiger, beleidigender, unerwünschter oder schädlicher E-Mails finden Sie unter "Nachrichten und Dateien an [Microsoft melden".](report-junk-email-messages-to-microsoft.md) Das Senden dieser Kommunikationsarten stellt einen Verstoß gegen die Microsoft-Richtlinie dar, und es werden geeignete Maßnahmen für bestätigte Berichte ergriffen.
 
 ## <a name="law-enforcement"></a>Strafverfolgung
 

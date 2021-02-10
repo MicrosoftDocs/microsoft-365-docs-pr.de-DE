@@ -8,7 +8,6 @@ manager: dansimp
 audience: Admin
 ms.topic: how-to
 ms.date: ''
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,16 +16,22 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie Richtlinien für sichere Links und globale Einstellungen für sichere Links in Microsoft Defender für Office 365 anzeigen, erstellen, ändern und löschen.
-ms.openlocfilehash: ef83d0dba1de03aa2b36384474791783e926059f
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 71ea33f1f6fbebf6d87a4b42ad3bd96a60597b90
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780532"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166267"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Einrichten von Richtlinien für sichere Links in Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Gilt für**
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > Dieser Artikel richtet sich an Geschäftskunden, die über [Microsoft Defender für Office 365](office-365-atp.md) verfügen. Informationen zu Safelinks in Outlook finden Sie unter Advanced [Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -55,7 +60,7 @@ In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite "Sichere **Links" zu** gelangen, verwenden Sie <https://protection.office.com/safelinksv2> .
+- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite "Sichere **Links" zu** wechseln, verwenden Sie <https://protection.office.com/safelinksv2> .
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -63,12 +68,12 @@ In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten 
   - Zum Erstellen, Ändern und Löschen von Richtlinien für sichere  Links müssen  Sie Mitglied der Rollengruppe "Organisationsverwaltung" oder "Sicherheitsadministrator" im Security & Compliance **Center** und Mitglied der Rollengruppe "Organisationsverwaltung" in Exchange Online sein. 
   - Für den schreibgeschützten Zugriff auf Richtlinien für sichere  Links müssen Sie Mitglied der Rollengruppe "Globaler Leser" oder **"Sicherheitsleser"** sein.
 
-  Weitere Informationen finden Sie unter ["Berechtigungen" im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) und in Exchange [Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
+  Weitere Informationen finden Sie unter ["Berechtigungen" im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) und berechtigungen in Exchange [Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
-  **Hinweise**:
-
-  - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
+  > [!NOTE]
+  > 
+  > - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  . - Die **Rollengruppe "Organisationsverwaltung** nur anzeigen" in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch den schreibgeschützten Zugriff auf das Feature.
 
 - Die empfohlenen Einstellungen für Richtlinien für sichere Links finden Sie unter Richtlinieneinstellungen für [sichere Links.](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings)
 
@@ -96,11 +101,11 @@ Beim Erstellen einer benutzerdefinierten Richtlinie für sichere Links im Securi
 
    - **Wählen Sie die Aktion für unbekannte potenziell schädliche URLs in** Nachrichten aus: Aktivieren Sie **diese** Option, um den Schutz sicherer Links für Links in E-Mail-Nachrichten zu aktivieren.
 
-   - **Wählen Sie die Aktion für unbekannte oder potenziell** schädliche URLs in Microsoft Teams aus: Aktivieren Sie **diese** Option, um den Schutz sicherer Links für Links in Teams zu aktivieren.
+   - **Wählen Sie die Aktion für unbekannte oder** potenziell  schädliche URLs in Microsoft Teams aus: Aktivieren Sie diese Option, um den Schutz sicherer Links für Links in Teams zu aktivieren.
 
    - **Anwenden der Echtzeit-URL-Überprüfung** auf verdächtige Links und Links, die auf Dateien verweisen: Wählen Sie diese Einstellung aus, um das Scannen von Links in E-Mail-Nachrichten in Echtzeit zu aktivieren.
 
-   - **Warten Sie, bis die URL-Überprüfung** abgeschlossen ist, bevor Sie die Nachricht zustellen: Wählen Sie diese Einstellung aus, um auf den Abschluss der Echtzeit-URL-Überprüfung zu warten, bevor Sie die Nachricht zustellen.
+   - **Warten Sie, bis die URL-Überprüfung** abgeschlossen ist, bevor Die Nachricht zustellt: Wählen Sie diese Einstellung aus, um auf den Abschluss der Echtzeit-URL-Überprüfung zu warten, bevor Sie die Nachricht zustellen.
 
    - **Sichere Links auf** innerhalb der Organisation gesendete E-Mail-Nachrichten anwenden: Wählen Sie diese Einstellung aus, um die Richtlinie für sichere Links auf Nachrichten zwischen internen Absendern und internen Empfängern anzuwenden.
 
@@ -114,15 +119,15 @@ Beim Erstellen einer benutzerdefinierten Richtlinie für sichere Links im Securi
 
      Um einen vorhandenen Eintrag zu entfernen, wählen Sie ihn aus, und klicken Sie dann auf ![Schaltflächensymbol löschen](../../media/ITPro-EAC-DeleteIcon.png).
 
-     Informationen zur Eintragssyntax finden Sie in der Eintragssyntax für die Liste ["Die folgenden URLs dürfen](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)nicht neu geschrieben werden".
+     Eine Eintragssyntax finden Sie in der Eintragssyntax für die Liste ["Die folgenden URLs](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)dürfen nicht neu geschrieben werden".
 
    Ausführliche Informationen zu diesen Einstellungen finden Sie unter Einstellungen für sichere [Links für](atp-safe-links.md#safe-links-settings-for-email-messages) E-Mail-Nachrichten und Einstellungen für sichere Links für [Microsoft Teams.](atp-safe-links.md#safe-links-settings-for-microsoft-teams)
 
-   Weitere Informationen zu den empfohlenen Werten für Standard- und Strikte Richtlinieneinstellungen finden Sie unter Richtlinieneinstellungen für [sichere Links.](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings)
+   Weitere empfohlene Werte für Standard- und Strikte Richtlinieneinstellungen finden Sie unter Richtlinieneinstellungen für [sichere Links.](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings)
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
-5. Identifizieren Sie auf der angezeigten Seite "Angewendet **auf"** die internen Empfänger, auf die die Richtlinie angewendet wird.
+5. Identifizieren Sie **auf der angezeigten** Seite "Angewendet auf" die internen Empfänger, auf die die Richtlinie angewendet wird.
 
    Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Bei mehreren Werten derselben Bedingung oder Ausnahme wird ODER-Logik verwendet (z. B. _\<recipient1\>_ oder _\<recipient2\>_). Bei unterschiedlichen Bedingungen oder Ausnahmen wird UND-Logik verwendet (z. B. _\<recipient1\>_ und _\<member of group 1\>_).
 
@@ -150,7 +155,7 @@ Beim Erstellen einer benutzerdefinierten Richtlinie für sichere Links im Securi
 
    Klicken Sie nach Abschluss des Vorgangs auf **Fertig stellen**.
 
-## <a name="use-the-security--compliance-center-to-view-safe-links-policies"></a>Verwenden des Security & Compliance Centers zum Anzeigen von Richtlinien für sichere Links
+## <a name="use-the-security--compliance-center-to-view-safe-links-policies"></a>Verwenden des Security & Compliance Center zum Anzeigen von Richtlinien für sichere Links
 
 1. Wechseln Sie im Security & Compliance Center zu **"AtP-sichere** Links" zur Richtlinie zur \>  \> **Bedrohungsverwaltung.**
 
@@ -162,11 +167,11 @@ Beim Erstellen einer benutzerdefinierten Richtlinie für sichere Links im Securi
 
 1. Wechseln Sie im Security & Compliance Center zu **"AtP-sichere** Links" zur Richtlinie zur \>  \> **Bedrohungsverwaltung.**
 
-2. Wählen Sie **auf der Seite "Sichere** Links" eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
+2. Wählen Sie auf der Seite **"Sichere** Links" eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
 
 3. Klicken Sie in den angezeigten Richtliniendetails auf **"Richtlinie bearbeiten".**
 
-Die verfügbaren Einstellungen im angezeigten Flyout sind identisch mit den einstellungen, die im Abschnitt "Verwenden des [Security & Compliance Centers](#use-the-security--compliance-center-to-create-safe-links-policies) zum Erstellen von Richtlinien für sichere Links" beschrieben sind.
+Die verfügbaren Einstellungen im angezeigten Flyout sind identisch mit den einstellungen, die im Abschnitt "Verwenden des Security & Compliance Center zum Erstellen von Richtlinien für sichere [Links" beschrieben](#use-the-security--compliance-center-to-create-safe-links-policies) sind.
 
 Informationen zum Aktivieren oder Deaktivieren einer Richtlinie oder zum Festlegen der Prioritätsreihenfolge der Richtlinie finden Sie in den folgenden Abschnitten.
 
@@ -188,7 +193,8 @@ Weitere Informationen über die Prioritätsreihenfolge und darüber, wie mehrere
 
 Richtlinien für sichere Links werden in der Reihenfolge angezeigt, in der sie verarbeitet werden (die erste Richtlinie hat den **Prioritätswert** 0).
 
-**Hinweis:** Im Security & Compliance Center können Sie die Priorität der Richtlinie für sichere Links erst ändern, nachdem Sie sie erstellt haben. In PowerShell können Sie die Standardpriorität überschreiben, wenn Sie die Regel für sichere Links erstellen (die sich auf die Priorität vorhandener Regeln auswirken kann).
+> [!NOTE]
+> Im Security & Compliance Center können Sie die Priorität der Richtlinie für sichere Links erst ändern, nachdem Sie sie erstellt haben. In PowerShell können Sie die Standardpriorität überschreiben, wenn Sie die Regel für sichere Links erstellen (die sich auf die Priorität vorhandener Regeln auswirken kann).
 
 Zum Ändern der Priorität einer Richtlinie verschieben Sie die Richtlinie in der Liste nach oben oder unten (Sie können den **Priorität**-Wert im Security & Compliance Center nicht direkt ändern).
 
@@ -233,16 +239,16 @@ Das Erstellen einer Richtlinie für sichere Links in PowerShell besteht aus zwei
 1. Erstellen Sie die Richtlinie für sichere Links.
 2. Erstellen Sie die Regel für sichere Links, die die Richtlinie für sichere Links angibt, auf die die Regel angewendet wird.
 
- **Hinweise**:
-
-- Sie können eine neue Regel für sichere Links erstellen und ihr eine vorhandene, nicht zugeordnete Richtlinie für sichere Links zuweisen. Eine Regel für sichere Links kann nicht mehr als einer Richtlinie für sichere Links zugeordnet werden.
-
-- Sie können die folgenden Einstellungen für neue Richtlinien für sichere Links in PowerShell konfigurieren, die im Security & Compliance Center erst nach dem Erstellen der Richtlinie verfügbar sind:
-
-  - Erstellen Sie die neue Richtlinie als deaktiviert _(aktiviert_ `$false` im **Cmdlet "New-SafeLinksRule").**
-  - Legen Sie die Priorität der Richtlinie während der Erstellung (_Priorität_ ) im _\<Number\>_ **Cmdlet "New-SafeLinksRule"** festgelegt.
-
-- Eine neue Richtlinie für sichere Links, die Sie in PowerShell erstellen, wird erst im Security & Compliance Center angezeigt, wenn Sie die Richtlinie einer Regel für sichere Links zuweisen.
+> [!NOTE]
+> 
+> - Sie können eine neue Regel für sichere Links erstellen und ihr eine vorhandene, nicht zugeordnete Richtlinie für sichere Links zuweisen. Eine Regel für sichere Links kann nicht mehr als einer Richtlinie für sichere Links zugeordnet werden.
+> 
+> - Sie können die folgenden Einstellungen für neue Richtlinien für sichere Links in PowerShell konfigurieren, die im Security & Compliance Center erst nach dem Erstellen der Richtlinie verfügbar sind:
+> 
+>   - Erstellen Sie die neue Richtlinie als deaktiviert _(aktiviert_ `$false` im **Cmdlet "New-SafeLinksRule").**
+>   - Legen Sie die Priorität der Richtlinie während der Erstellung (_Priorität_ ) im _\<Number\>_ **Cmdlet "New-SafeLinksRule"** festgelegt.
+> 
+> - Eine neue Richtlinie für sichere Links, die Sie in PowerShell erstellen, wird erst im Security & Compliance Center angezeigt, wenn Sie die Richtlinie einer Regel für sichere Links zuweisen.
 
 #### <a name="step-1-use-powershell-to-create-a-safe-links-policy"></a>Schritt 1: Erstellen einer Richtlinie für sichere Links mithilfe von PowerShell
 
@@ -252,11 +258,11 @@ Verwenden Sie die folgende Syntax, um eine Richtlinie für sichere Links zu erst
 New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
 
-**Hinweise**:
-
-- Details zur Eintragssyntax, die für den Parameter _"DoNotRewriteUrls"_ verwendet werden soll, finden Sie in der Eintragssyntax für die Liste "Die folgenden URLs nicht [umschreiben".](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)
-
-- Zusätzliche Syntax, die Sie für den Parameter _"DoNotRewriteUrls"_ verwenden können, wenn Sie vorhandene Richtlinien für sichere Links mithilfe des Cmdlets **"Set-SafeLinksPolicy"** ändern, finden Sie im Abschnitt "Verwenden von [PowerShell](#use-powershell-to-modify-safe-links-policies) zum Ändern von Richtlinien für sichere Links" weiter unten in diesem Artikel.
+> [!NOTE]
+> 
+> - Details zur Eintragssyntax, die für den Parameter _"DoNotRewriteUrls"_ verwendet werden soll, finden Sie in der Eintragssyntax für die Liste ["Folgende URLs nicht umschreiben".](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)
+> 
+> - Zusätzliche Syntax, die Sie für den Parameter _"DoNotRewriteUrls"_ verwenden können, wenn Sie vorhandene Richtlinien für sichere Links mithilfe des Cmdlets **"Set-SafeLinksPolicy"** ändern, finden Sie im Abschnitt "Verwenden von [PowerShell](#use-powershell-to-modify-safe-links-policies) zum Ändern von Richtlinien für sichere Links" weiter unten in diesem Artikel.
 
 In diesem Beispiel wird eine Richtlinie für sichere Links namens "Contoso All" mit den folgenden Werten erstellt:
 
@@ -287,7 +293,7 @@ In diesem Beispiel wird eine Regel für sichere Links namens "Contoso All" mit d
 - Die Regel ist der Richtlinie für sichere Links namens "Contoso All" zugeordnet.
 - Die Regel gilt für alle Empfänger in der contoso.com Domäne.
 - Da der Parameter _"Priority"_ nicht verwendet wird, wird die Standardpriorität verwendet.
-- Die Regel ist aktiviert (der Parameter _"Enabled"_ wird nicht verwendet, und der Standardwert ist `$true` " ).
+- Die Regel ist aktiviert (der Parameter _"Enabled"_ wird nicht verwendet, und der Standardwert ist " `$true` ).
 
 ```powershell
 New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs contoso.com
@@ -353,12 +359,12 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-SafeL
 
 Sie können eine Richtlinie für sichere Links in PowerShell nicht umbenennen (das **Cmdlet "Set-SafeLinksPolicy"** hat keinen _Parameter "Name")._ Wenn Sie eine Richtlinie für sichere Links im Security & Compliance Center umbenennen, benennen Sie nur die Regel für sichere Links _um._
 
-Die einzige zusätzliche Überlegung zum Ändern von Richtlinien für sichere Links in PowerShell ist die verfügbare Syntax für den Parameter _"DoNotRewriteUrls"_ (die Liste ["Folgende URLs](atp-safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)dürfen nicht neu geschrieben werden" ):
+Die einzige zusätzliche Überlegung zum Ändern von Richtlinien für sichere Links in PowerShell ist die verfügbare Syntax für den Parameter _"DoNotRewriteUrls"_ (die Liste ["Folgende URLs](atp-safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)nicht umschreiben" ):
 
 - Verwenden Sie die folgende Syntax, um Werte hinzuzufügen, die vorhandene Einträge `"Entry1","Entry2,..."EntryN"` ersetzen:
 - Verwenden Sie die folgende Syntax, um Werte ohne Auswirkungen auf andere Einträge hinzuzufügen oder zu entfernen: `@{Add="Entry1","Entry2"...; Remove="Entry3","Entry4"...}`
 
-Andernfalls sind dieselben Einstellungen verfügbar, wenn Sie eine Richtlinie für sichere Links erstellen, wie in Schritt [1 beschrieben:](#step-1-use-powershell-to-create-a-safe-links-policy) Verwenden von PowerShell zum Erstellen eines Richtlinienabschnitts für sichere Links weiter oben in diesem Artikel.
+Andernfalls sind dieselben Einstellungen verfügbar, wenn Sie eine Richtlinie für sichere Links erstellen, wie in Schritt 1: Verwenden von [PowerShell](#step-1-use-powershell-to-create-a-safe-links-policy) zum Erstellen eines Richtlinienabschnitts für sichere Links weiter oben in diesem Artikel beschrieben.
 
 Verwenden Sie folgende Syntax, um eine Richtlinie für sichere Links zu ändern:
 
@@ -374,7 +380,7 @@ Die einzige Einstellung, die nicht verfügbar ist, wenn Sie eine Regel für sich
 
 Andernfalls sind dieselben Einstellungen verfügbar, wenn Sie eine Regel erstellen, wie in Schritt [2 beschrieben:](#step-2-use-powershell-to-create-a-safe-links-rule) Verwenden von PowerShell zum Erstellen eines Regelabschnitts für sichere Links weiter oben in diesem Artikel.
 
-Verwenden Sie die folgende Syntax, um eine Regel für sichere Links zu ändern:
+Verwenden Sie folgende Syntax, um eine Regel für sichere Links zu ändern:
 
 ```PowerShell
 Set-SafeLinksRule -Identity "<RuleName>" <Settings>
@@ -422,7 +428,8 @@ In diesem Beispiel wird die Priorität der Regel namens „Marketing Department�
 Set-SafeLinksRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Hinweis:** Verwenden Sie zum Festlegen der Priorität einer neuen Regel beim Erstellen stattdessen den Parameter _"Priority"_ im **Cmdlet "New-SafeLinksRule".**
+> [!NOTE]
+> Verwenden Sie zum Festlegen der Priorität einer neuen Regel beim Erstellen stattdessen den Parameter _"Priority"_ im **Cmdlet "New-SafeLinksRule".**
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule).
 

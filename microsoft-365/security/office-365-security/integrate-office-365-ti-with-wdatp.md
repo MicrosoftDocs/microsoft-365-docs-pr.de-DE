@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Microsoft Defender für Office 365 zusammen mit Microsoft Defender für Endpunkt
+title: Verwenden von Microsoft Defender für Office 365 zusammen mit Microsoft Defender for Endpoint
 f1.keywords:
 - NOCSH
 keywords: integration, Microsoft Defender, ATP
@@ -19,14 +19,14 @@ description: Verwenden Sie Microsoft Defender für Office 365 zusammen mit Micro
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24b81bb4c445c44d7c0228fa1c4440faff642816
-ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
+ms.openlocfilehash: 035834e1e4855c0e47defed06043a5fdbd0e63bd
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49939332"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166087"
 ---
-# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Verwenden von Microsoft Defender für Office 365 zusammen mit Microsoft Defender for Endpoint
+# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Verwenden von Microsoft Defender für Office 365 zusammen mit Microsoft Defender für Endpunkt
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "49939332"
 
 Die Integration von Microsoft Defender für Office 365 in Microsoft Defender for Endpoint kann Ihrem Sicherheitsteam dabei helfen, die Geräte der Benutzer zu überwachen und schnell maßnahmen zu ergreifen. Wenn beispielsweise die Integration aktiviert ist, kann Ihr Sicherheitsteam die Geräte anzeigen, die potenziell von einer erkannten E-Mail-Nachricht betroffen sind, sowie die Vielen kürzlich generierten Warnungen für diese Geräte in Microsoft Defender for Endpoint.
 
-Die folgende Abbildung zeigt, wie die Registerkarte **"Geräte"** aussieht, wenn Microsoft Defender für Endpunkt integration aktiviert ist:
+Die folgende Abbildung zeigt, wie die **Registerkarte** "Geräte" aussieht, wenn die Integration von Microsoft Defender für Endpunkt aktiviert ist:
 
 ![Wenn Microsoft Defender für Endpunkt aktiviert ist, können Sie eine Liste der Geräte mit Warnungen anzeigen.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
@@ -74,7 +74,7 @@ Die Integration von Microsoft Defender für Office 365 in Microsoft Defender for
 
 7. Scrollen Sie nach unten **zur Office 365 Threat** Intelligence-Verbindung, und aktivieren Sie die Verbindung.
 
-   ![Office 365 Threat Intelligence-Verbindung](../../media/mdatp-oatptoggle.png)
+   ![Verbindung mit Office 365 Threat Intelligence](../../media/mdatp-oatptoggle.png)
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

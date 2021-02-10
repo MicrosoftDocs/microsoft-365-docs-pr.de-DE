@@ -7,21 +7,24 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Befolgen Sie diese bewährten Empfehlungen für eigenständigen Exchange Online Protection (EOP), um sich für den Erfolg zu konfigurieren und häufige Konfigurationsfehler zu vermeiden.
-ms.openlocfilehash: a229f8a269037296fa2b97ff7211343549b33685
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1a38454ceaba7f95dff172335dc374530efca20a
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864888"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165931"
 ---
-# <a name="best-practices-for-configuring-standalone-eop"></a>Bewährte Methoden zum Konfigurieren von eigenständigem EOP
+# <a name="best-practices-for-configuring-standalone-eop"></a>Bewährte Methoden für die Konfiguration von EOP als eigenständige Lösung
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+-  [Exchange Online Protection als eigenständige Lösung](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 Befolgen Sie diese bewährten Empfehlungen für eigenständigen Exchange Online Protection (EOP), um sich für den Erfolg zu konfigurieren und häufige Konfigurationsfehler zu vermeiden. In diesem Thema wird vorausgesetzt, dass Sie den Setup-Prozess bereits abgeschlossen haben. Wenn Sie das EOP-Setup nicht abgeschlossen haben, finden Sie weitere Informationen unter [Einrichten Ihres EOP-Diensts](set-up-your-eop-service.md).
 
@@ -35,7 +38,7 @@ Wenn Ihre Organisation über vorhandene Benutzerkonten in einer lokalen Active D
 
 ## <a name="recommended-settings"></a>Empfohlene Einstellungen
 
-Wir befähigen Sicherheitsadministratoren, ihre Sicherheitseinstellungen an die Anforderungen ihrer Organisation anzupassen. Obwohl es in der Regel zwei Sicherheitsebenen in EOP und Microsoft Defender für Office 365 gibt, die wir empfehlen: Standard und Strict. Diese Einstellungen sind in den empfohlenen Einstellungen für [EOP und Microsoft Defender für Office 365-Sicherheit aufgeführt.](recommended-settings-for-eop-and-office365-atp.md)
+Wir befähigen Sicherheitsadministratoren, ihre Sicherheitseinstellungen an die Anforderungen ihrer Organisation anzupassen. Obwohl es in der Regel zwei Sicherheitsebenen in EOP und Microsoft Defender für Office 365 gibt, die empfohlen werden: Standard und Streng. Diese Einstellungen sind in den empfohlenen Einstellungen für [EOP und Microsoft Defender für Office 365-Sicherheit aufgeführt.](recommended-settings-for-eop-and-office365-atp.md)
 
 ### <a name="miscellaneousnon-policy-settings"></a>Verschiedene/Nicht-Richtlinien-Einstellungen
 
@@ -72,7 +75,7 @@ Um die Spamfilterung im Dienst für alle zu verbessern, sollten Sie falsch posit
 
 ## <a name="create-mail-flow-rules"></a>Erstellen von Nachrichtenflussregeln
 
-Erstellen Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet) oder benutzerdefinierte Filter, um Ihre Geschäftlichen Anforderungen zu erfüllen.
+Erstellen Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet) oder benutzerdefinierte Filter, um Ihre Geschäftsanforderungen zu erfüllen.
 
 Wenn Sie eine neue Regel in die Produktion übernehmen, wählen Sie zunächst einen der Testmodi aus, um die Wirkung der Regeln zu überprüfen. Wenn Sie sicher sind, dass die Regel so funktioniert wie beabsichtigt, ändern Sie den Regelmodus in **Erzwingen**.
 

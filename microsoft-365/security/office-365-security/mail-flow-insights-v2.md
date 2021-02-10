@@ -13,17 +13,21 @@ description: Administratoren können sich über die Einblicke und Berichte infor
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef9498d19e79cf670fbae52171b78b0c44c45910
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: b65e235e3446fa62bca1c9f8aef73f2387b1140b
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029362"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167095"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Nachrichtenfluss-Einblicke im Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Administratoren können das Nachrichtenflussdashboard im Security & Compliance Center verwenden, um Trends, Einblicke zu erkennen und Maßnahmen zur Behebung von Problemen im Zusammenhang mit dem Nachrichtenfluss in ihrer Organisation zu ergreifen.
 
@@ -55,7 +59,7 @@ Die verfügbaren Einblicke sind:
 
 - [Übersicht über den Top-Domain-e-Mail-Datenstrom](mfi-domain-mail-flow-status-insight.md)
 
-<sup>1</sup> Dieser Einblick wird im Bereich **"Empfohlen** für Sie" des Dashboards für den Nachrichtenfluss erst angezeigt, nachdem das Problem erkannt wurde. Andernfalls wird sie nicht mehr zu sehen sein.
+<sup>1</sup> Dieser Einblick wird im Bereich "Empfohlen für **Sie"** des Dashboards für den Nachrichtenfluss erst angezeigt, nachdem das Problem erkannt wurde. Andernfalls wird sie nicht mehr zu sehen sein.
 
 <sup>2</sup> Dieser Einblick wird nicht im Nachrichtenflussdashboard [](view-mail-flow-reports.md#forwarding-report) angezeigt, sondern auf der Seite "Weiterleitungsbericht", nachdem das Problem erkannt wurde. Andernfalls wird sie nicht mehr zu sehen sein.
 

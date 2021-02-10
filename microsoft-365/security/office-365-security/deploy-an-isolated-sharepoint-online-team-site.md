@@ -8,25 +8,29 @@ manager: laurawi
 ms.date: 07/30/2019
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
-description: Verwenden Sie dieses Schritt-für-Schritt-Bereitstellungshandbuch, um eine isolierte SharePoint Online Teamwebsite in Microsoft Office 365 zu erstellen und zu konfigurieren.
-ms.openlocfilehash: 5b37868759dd91fc49fb8354db893f52b8f534dd
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+description: Verwenden Sie dieses schrittweise Bereitstellungshandbuch zum Erstellen und Konfigurieren einer isolierten SharePoint Online-Teamwebsite in Microsoft Office 365.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1b1f0342afc92b4540330417ad0fc9cabe1dc8a8
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561739"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165499"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Bereitstellen einer isolierten SharePoint Online-Teamwebsite
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
  **Zusammenfassung:** Mithilfe dieser schrittweisen Anleitung können Sie eine neue isolierte SharePoint Online-Teamwebsite bereitstellen.
 
@@ -43,19 +47,19 @@ In dieser Phase erstellen Sie die drei Azure AD-basierten Zugriffsgruppen für d
 
 Bestimmen Sie den Satz von Benutzerkonten, die den SharePoint Online-Administratoren für die isolierte Teamwebsite entsprechen.
 
-Wenn Sie Benutzerkonten und Gruppen über Microsoft 365 verwalten und Windows PowerShell verwenden möchten, erstellen Sie eine Liste der Benutzerprinzipalnamen (UPNs) (Beispiel UPN: belindan@contoso.com).
+Wenn Sie Benutzerkonten und Gruppen über Microsoft 365 verwalten und Windows PowerShell verwenden möchten, erstellen Sie eine Liste ihrer Benutzerprinzipalnamen (UPNs) (Beispiel UPN: belindan@contoso.com).
 
 ### <a name="step-2-list-the-members-for-the-site"></a>Schritt 2: Auflisten der Mitglieder für die Website
 
 Bestimmen Sie den Satz von Benutzerkonten, die den Mitgliedern der isolierten Teamwebsite entsprechen, diejenigen, die an den in der Website gespeicherten Ressourcen zusammenarbeiten.
 
-Wenn Sie Benutzerkonten und Gruppen über Microsoft 365 verwalten und PowerShell verwenden möchten, erstellen Sie eine Liste Ihrer UPNs. Wenn die Website viele Mitglieder hat, können Sie die Liste der UPNs in einer Textdatei speichern und alle mit einem einzigen PowerShell-Befehl hinzufügen.
+Wenn Sie Benutzerkonten und Gruppen über Microsoft 365 verwalten und PowerShell verwenden möchten, erstellen Sie eine Liste ihrer UPNs. Wenn die Website viele Mitglieder hat, können Sie die Liste der UPNs in einer Textdatei speichern und alle mit einem einzigen PowerShell-Befehl hinzufügen.
 
 ### <a name="step-3-list-the-viewers-for-the-site"></a>Schritt 3: Auflisten der Betrachter für die Website
 
 Bestimmen Sie den Satz von Benutzerkonten, die den Betrachtern der isolierten Teamwebsite entsprechen, diejenigen, die die auf der Website gespeicherten Ressourcen anzeigen, aber nicht ändern oder direkt an ihren Inhalten zusammenarbeiten können.
 
-Wenn Sie Benutzerkonten und Gruppen über Microsoft 365 verwalten und PowerShell verwenden möchten, erstellen Sie eine Liste Ihrer UPNs. Wenn die Website viele Mitglieder hat, können Sie die Liste der UPNs in einer Textdatei speichern und alle mit einem einzigen PowerShell-Befehl hinzufügen.
+Wenn Sie Benutzerkonten und Gruppen über Microsoft 365 verwalten und PowerShell verwenden möchten, erstellen Sie eine Liste ihrer UPNs. Wenn die Website viele Mitglieder hat, können Sie die Liste der UPNs in einer Textdatei speichern und alle mit einem einzigen PowerShell-Befehl hinzufügen.
 
 Zu den Betrachtern der Website können die Unternehmensführung, Rechtsberater oder Projektbeteiligte aus mehreren Abteilungen gehören.
 
@@ -73,7 +77,7 @@ Sie müssen die folgenden Zugriffsgruppen in Azure AD erstellen:
 
 3. Klicken Sie auf dem Blatt **Gruppen - Alle Gruppen** auf **+ Neue Gruppe**.
 
-4. Auf dem **neuen Gruppen** Blatt:
+4. Auf dem **Blatt "Neue Gruppe":**
 
    - Wählen Sie unter **Gruppentyp** die Option **Sicherheit** aus.
 
@@ -88,7 +92,7 @@ Sie müssen die folgenden Zugriffsgruppen in Azure AD erstellen:
 6. Wiederholen Sie die Schritte 3 bis 5 für weitere Gruppen.
 
 > [!NOTE]
-> Sie müssen das Azure-Portal verwenden, um die Gruppen zu erstellen, damit die Office-Features für diese aktiviert sind. Wenn ein SharePoint Online isolierter Standort später als streng vertrauliche Website mit einer Azure Information Protection-Bezeichnung konfiguriert wird, um Dateien zu verschlüsseln und bestimmten Gruppen Berechtigungen zuzuweisen, müssen die zulässigen Gruppen mit aktivierten Office-Features erstellt worden sein. Sie können die Einstellung für Office-Features einer Azure Active Directory-Gruppe nicht mehr ändern, nachdem sie erstellt wurde.
+> Sie müssen das Azure-Portal verwenden, um die Gruppen zu erstellen, damit die Office-Features für diese aktiviert sind. Wenn eine isolierte SharePoint Online-Website später als streng vertrauliche Website mit einer Azure Information Protection-Bezeichnung konfiguriert wird, um Dateien zu verschlüsseln und bestimmten Gruppen Berechtigungen zu erteilen, müssen die zulässigen Gruppen mit aktivierten Office-Features erstellt worden sein. Sie können die Einstellung für Office-Features einer Azure Active Directory-Gruppe nicht mehr ändern, nachdem sie erstellt wurde.
 
 Hier ist die resultierende Konfiguration mit den drei Websitezugriffsgruppen.
 
@@ -98,17 +102,17 @@ Hier ist die resultierende Konfiguration mit den drei Websitezugriffsgruppen.
 
 Führen Sie in diesem Schritt die folgenden Aufgaben aus:
 
-1. Fügen Sie die Liste der Benutzer aus Schritt 1 zur Zugriffsgruppe der Websiteadministratoren hinzu.
-2. Fügen Sie die Liste der Benutzer aus Schritt 2 zur Zugriffsgruppe der Websitemitglieder hinzu.
-3. Fügen Sie die Liste der Benutzer aus Schritt 3 zur Zugriffsgruppe der Website Betrachter hinzu.
+1. Fügen Sie die Liste der Benutzer aus Schritt 1 der Zugriffsgruppe der Websiteadministratoren hinzu.
+2. Fügen Sie die Liste der Benutzer aus Schritt 2 der Zugriffsgruppe der Websitemitglieder hinzu.
+3. Fügen Sie die Liste der Benutzer aus Schritt 3 der Zugriffsgruppe der Websitebetrachter hinzu.
 
-Wenn Sie Benutzerkonten und Gruppen über Active Directory-Domänendienste (AD DS) verwalten, fügen Sie mithilfe der normalen AD DS Benutzer-und Gruppen Verwaltungsverfahren Benutzer zu den entsprechenden Zugriffsgruppen hinzu, und warten Sie mit Ihrem Microsoft 365-Abonnement auf die Synchronisierung.
+Wenn Sie Benutzerkonten und Gruppen über Active Directory Domain Services (AD DS) verwalten, fügen Sie Benutzer mithilfe Ihrer normalen AD DS-Benutzer- und Gruppenverwaltungsverfahren zu den entsprechenden Zugriffsgruppen hinzu, und warten Sie auf die Synchronisierung mit Ihrem Microsoft 365-Abonnement.
 
 Wenn Sie Benutzerkonten und Gruppen über Office 365 verwalten, können Sie das Microsoft 365 Admin Center oder PowerShell verwenden. Wenn Sie doppelte Gruppennamen für eine der Zugriffsgruppen haben, sollten Sie das Microsoft 365 Admin Center verwenden.
 
-Melden Sie sich für das Microsoft 365 Admin Center mit einem Benutzerkonto an, dem die Rolle "Benutzerkonto Administrator" oder "Unternehmensadministrator" zugewiesen wurde, und verwenden Sie Gruppen zum Hinzufügen der entsprechenden Benutzerkonten und Gruppen zu den entsprechenden Zugriffsgruppen.
+Melden Sie sich im Microsoft 365 Admin Center mit einem Benutzerkonto an, dem die Rolle "Benutzerkontoadministrator" oder "Unternehmensadministrator" zugewiesen wurde, und verwenden Sie Gruppen, um die entsprechenden Benutzerkonten und Gruppen den entsprechenden Zugriffsgruppen hinzuzufügen.
 
-Stellen Sie für PowerShell zunächst [eine Verbindung mit dem Azure Active Directory PowerShell for Graph-Modul her](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Stellen Sie für PowerShell zunächst eine Verbindung mit dem [Azure Active Directory PowerShell für Graph-Modul bereit.](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 Verwenden Sie dann den folgenden Befehlsblock, um ein einzelnes Benutzerkonto zu einer Zugriffsgruppe hinzuzufügen:
 
@@ -154,23 +158,23 @@ Hier ist die resultierende Konfiguration mit den drei Websitezugriffsgruppen mit
 
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>Phase 2: Erstellen und Konfigurieren der isolierten Teamwebsite
 
-In dieser Phase erstellen Sie die isolierte SharePoint Online-Website und konfigurieren die Berechtigungen für die SharePoint Online-Standardberechtigungsstufen zur Verwendung der neuen Azure AD-basierten Zugriffsgruppen. Standardmäßig umfassen neue Teamwebsites eine Microsoft 365-Gruppe und andere zugehörige Ressourcen, in diesem Fall erstellen wir jedoch eine Teamwebsite ohne Microsoft 365-Gruppe. Auf diese Weise können Berechtigungen vollständig über SharePoint verwaltet werden.
+In dieser Phase erstellen Sie die isolierte SharePoint Online-Website und konfigurieren die Berechtigungen für die SharePoint Online-Standardberechtigungsstufen zur Verwendung der neuen Azure AD-basierten Zugriffsgruppen. Standardmäßig enthalten neue Teamwebsites eine Microsoft 365-Gruppe und andere verwandte Ressourcen, aber in diesem Fall erstellen wir eine Teamwebsite ohne Microsoft 365-Gruppe. Dadurch können Berechtigungen vollständig über SharePoint beibehalten werden.
 
 Erstellen Sie zuerst mit den folgenden Schritten die SharePoint Online-Teamwebsite.
 
-1. Melden Sie sich beim Microsoft 365 Admin Center mit einem Konto an, das auch für die Verwaltung der SharePoint Online Teamwebsite (SharePoint Online Administrator) verwendet wird. Hilfe finden Sie unter [Where to sign in to Office 365 (Wo kann ich mich bei Office 365 anmelden?)](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Melden Sie sich beim Microsoft 365 Admin Center mit einem Konto an, das auch zum Verwalten der SharePoint Online-Teamwebsite (ein SharePoint Online-Administrator) verwendet wird. Hilfe finden Sie unter [Where to sign in to Office 365 (Wo kann ich mich bei Office 365 anmelden?)](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
-2. Klicken Sie im Microsoft 365 Admin Center unter **Admin** Centers auf **SharePoint**.
+2. Klicken Sie im Microsoft 365 Admin Center unter **Admin Center** auf **SharePoint.**
 
-3. Erweitern Sie im SharePoint Admin Center den Knoten **Websites** , und klicken Sie dann auf **aktive Standorte**.
+3. Erweitern Sie im SharePoint Admin Center Websites, **und** klicken Sie auf **"Aktive Websites".**
 
-4. Klicken Sie auf **Erstellen**, und wählen Sie dann **andere Optionen** aus.
+4. Klicken **Sie auf**"Erstellen", und wählen Sie dann **"Andere Optionen" aus.**
 
-5. Wählen Sie in der Liste **Vorlage auswählen** die Option **Team Website** aus.
+5. Wählen Sie **in der Vorlagenliste** "Vorlage auswählen" die **Option "Teamwebsite" aus.**
 
 6. Geben Sie unter **Websitename** einen Namen für die Teamwebsite ein.
 
-7. Geben Sie in **Primärer Administrator** das Konto ein, mit dem Sie angemeldet sind.
+7. Geben **Sie im primären** Administrator das Konto ein, mit dem Sie angemeldet sind.
 
 8. Klicken Sie auf **Fertig stellen**.
 
@@ -178,17 +182,17 @@ Konfigurieren Sie als Nächstes auf der neuen SharePoint Online-Teamwebsite die 
 
 1. Klicken Sie in der Symbolleiste auf das Symbol „Einstellungen“ und anschließend auf **Websiteberechtigungen**.
 
-2. Klicken Sie unter **Website Freigabe** auf **ändern, wie Mitglieder freigegeben werden können**.
+2. Klicken **Sie unter "Websitefreigabe"** **auf "Ändern, wie Mitglieder freigeben können".**
 
-3. Wählen Sie die **einzigen Websitebesitzer können Dateien, Ordner und die Website freigeben**.
+3. Wählen Sie **die Option "Nur Websitebesitzer können Dateien, Ordner und die Website freigeben" aus.**
 
-4. Festlegen von **Zugriffsanforderungen** auf **aus** zulassen.
+4. Legen Sie **Zugriffsanforderungen auf "Zulassen"** auf **"Aus" festgelegt.**
 
 5. Klicken Sie auf **Speichern**.
 
-6. Klicken Sie im Bereich **Berechtigungen** auf **Erweiterte Berechtigungseinstellungen**.
+6. Klicken Sie **im Bereich "Berechtigungen"** auf **"Erweiterte Berechtigungseinstellungen".**
 
-7. Klicken Sie auf der Registerkarte **Berechtigungen** in Ihrem Browser auf **\<site name> Mitglieder** in der Liste.
+7. Klicken Sie **auf** der Registerkarte "Berechtigungen" in Ihrem Browser auf **\<site name> "Mitglieder"** in der Liste.
 
 8. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
 
@@ -196,7 +200,7 @@ Konfigurieren Sie als Nächstes auf der neuen SharePoint Online-Teamwebsite die 
 
 10. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
 
-11. Klicken Sie in der Liste auf **\<site name> Besitzer** .
+11. Klicken **\<site name> Sie** in der Liste auf "Besitzer".
 
 12. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
 
@@ -204,7 +208,7 @@ Konfigurieren Sie als Nächstes auf der neuen SharePoint Online-Teamwebsite die 
 
 14. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
 
-15. Klicken Sie in der Liste auf **\<site name> Besucher** .
+15. Klicken Sie in **\<site name> der** Liste auf "Besucher".
 
 16. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
 
@@ -214,9 +218,9 @@ Konfigurieren Sie als Nächstes auf der neuen SharePoint Online-Teamwebsite die 
 
 Die Ergebnisse dieser Berechtigungseinstellungen sehen folgendermaßen aus:
 
-- Die SharePoint-Gruppe **\<site name> Besitzer** enthält die Zugriffsgruppe der Websiteadministratoren, in der alle Mitglieder über die Berechtigungsstufe **Vollzugriff** verfügen.
-- Die SharePoint-Gruppe **\<site name> Mitglieder** enthält die Zugriffsgruppe der Websitemitglieder, in der alle Mitglieder über die Berechtigungsstufe **Bearbeiten** verfügen.
-- Die SharePoint-Gruppe **\<site name> Besucher** enthält die Zugriffsgruppe der Website Betrachter, in der alle Mitglieder über die Berechtigungsstufe **Lesen** verfügen.
+- Die **\<site name> Besitzer-SharePoint-Gruppe** enthält die Zugriffsgruppe der Websiteadministratoren, in der alle Mitglieder über die Berechtigungsstufe **"Vollzugriff"** verfügen.
+- Die **\<site name> Mitglieder-SharePoint-Gruppe** enthält die Zugriffsgruppe der Websitemitglieder, in der alle Mitglieder über die Berechtigungsstufe **"Bearbeiten"** verfügen.
+- Die **\<site name> Besucher-SharePoint-Gruppe** enthält die Zugriffsgruppe der Websiteanzeigen, in der alle Mitglieder über die Berechtigungsstufe **"Lesen"** verfügen.
 - Mitglieder können keine anderen Mitglieder einladen, und Nichtmitglieder können keinen Zugriff anfordern.
 
 Hier ist die resultierende Konfiguration mit den drei SharePoint-Gruppen für die Website, die für die Verwendung der Zugriffsgruppen konfiguriert ist, die mit Benutzerkonten oder Azure AD-Gruppen ausgefüllt werden.

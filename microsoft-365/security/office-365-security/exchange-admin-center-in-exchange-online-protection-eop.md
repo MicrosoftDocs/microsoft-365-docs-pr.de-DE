@@ -8,49 +8,52 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie mehr über die Webverwaltungsoberfläche in eigenständigen Exchange Online Schutz (EoP).
-ms.openlocfilehash: fc76ecd6dafcf9453a0c6de14917c96c950f8370
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Erfahren Sie mehr über die Webverwaltungsschnittstelle in eigenständigem Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 81af6c64d2ec3204d0c9d46888bbfe21335955bd
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659666"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166219"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Exchange Admin Center in EOP als eigenständige Lösung
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+-  [Exchange Online Protection als eigenständige Lösung](https://go.microsoft.com/fwlink/?linkid=2148611)
 
-Das Exchange Admin Center (EAC) ist eine webbasierte Verwaltungskonsole für eigenständige Exchange Online Schutz (EoP).
+Die Exchange Admin Center (EAC) ist eine webbasierte Verwaltungskonsole für eigenständige Exchange Online Protection (EOP).
 
 Suchen Sie die Exchange Online-Version dieses Themas? Weitere Informationen finden Sie unter [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
-## <a name="open-the-eac-in-eop"></a>Öffnen der Exchange-Verwaltungskonsole in EoP
+## <a name="open-the-eac-in-eop"></a>Öffnen der EAC in EOP
 
-Eigenständige EoP-Kunden können mithilfe der folgenden Methoden auf die Exchange-Verwaltungskonsole zugreifen:
+Kunden von eigenständigem EOP können mithilfe der folgenden Methoden auf die EAC zugreifen:
 
-- **Aus dem Microsoft 365 Admin Center**:
+- **Aus dem Microsoft 365 Admin Center:**
 
-  1. Wechseln Sie zu, <https://admin.microsoft.com> und klicken Sie auf **Alle anzeigen**.
+  1. Wechseln Sie zu <https://admin.microsoft.com> , und klicken Sie auf **"Alle anzeigen".**
 
-     ![Klicken Sie im Microsoft 365 Admin Center auf alle anzeigen.](../../media/m365-center-show-all.png)
+     ![Klicken Sie im Microsoft 365 Admin Center auf "Alle anzeigen"](../../media/m365-center-show-all.png)
 
-  2. Klicken Sie im angezeigten Abschnitt **Admin Centers** auf **alle Admin Center**.
+  2. Klicken Sie im angezeigten Abschnitt **"Admin Center"** auf **"Alle Admin Center".**
 
-     ![Klicken Sie auf alle Admin Center im Microsoft 365 Admin Center](../../media/m365-center-select-all-admin-centers.png)
+     ![Klicken Sie im Microsoft 365 Admin Center auf "Alle Admin Center".](../../media/m365-center-select-all-admin-centers.png)
 
-  3. Klicken Sie auf der Seite **alle Admin Center** , die angezeigt wird, auf **Exchange Online Schutz**.
+  3. Klicken Sie **auf der angezeigten** Seite "Alle Admin Center" auf **Exchange Online Protection**.
 
 - Wechseln Sie direkt zu `https://admin.protection.outlook.com/ecp/` .
 
-## <a name="common-user-interface-elements-in-the-eac-in-eop"></a>Allgemeine Elemente der Benutzeroberfläche in der Exchange-Verwaltungskonsole in EoP
+## <a name="common-user-interface-elements-in-the-eac-in-eop"></a>Allgemeine Benutzeroberflächenelemente in der EAC in EOP
 
 In diesem Abschnitt werden die Elemente der Benutzeroberfläche der Exchange-Verwaltungskonsole beschrieben.
 
@@ -60,20 +63,20 @@ In diesem Abschnitt werden die Elemente der Benutzeroberfläche der Exchange-Ver
 
 Dies ist die erste Navigationsebene für die meisten Aufgaben, die Sie in der Exchange-Verwaltungskonsole ausführen. Der Featurebereich ist nach Funktionsbereichen organisiert.
 
-- **Recipients**: Hier werden Gruppen und externe Kontakte angezeigt.
+- **Empfänger:** Hier werden Gruppen und externe Kontakte angezeigt.
 
-- **Berechtigungen**: Hier können Sie Administratorrollen verwalten.
+- **Berechtigungen:** Hier verwalten Sie Administratorrollen.
 
-- **Compliance-Verwaltung**: Hier finden Sie den Administrator-Rollengruppen Bericht und den Bericht admin-Überwachungsprotokoll.
+- **Verwaltung der** Richtlinienkonformität: Hier finden Sie den Administrator-Rollengruppenbericht und den Administrator-Überwachungsprotokollbericht.
 
-- **Schutz**: Hier können Sie Antischadsoftware-Richtlinien, die standardmäßige Verbindungsfilter Richtlinie und DKIM verwalten.
+- **Schutz:** Hier können Sie An malware-Richtlinien, die Standardrichtlinie für Verbindungsfilter und DKIM verwalten.
 
   > [!NOTE]
-  > Sie sollten Antischadsoftware-Richtlinien und die standardmäßige Verbindungsfilter Richtlinie im Security & Compliance Center verwalten. Weitere Informationen finden Sie unter [configure Anti-Malware Policies in EoP](configure-anti-malware-policies.md) und [Konfigurieren der Verbindungsfilterung in EoP](configure-the-connection-filter-policy.md).
+  > Im Security & Compliance Center sollten Sie Ansoftwarerichtlinien und die Standardrichtlinie für Verbindungsfilter verwalten. Weitere Informationen finden Sie unter [Configure anti-malware policies in EOP](configure-anti-malware-policies.md) and [Configure connection filtering in EOP](configure-the-connection-filter-policy.md).
 
-- **Nachrichtenfluss**: Hier können Sie Nachrichtenfluss Regeln (auch bekannt als Transportregeln), akzeptierte Domänen und Connectors verwalten sowie den Weg zur Ausführung der Nachrichtenablaufverfolgung.
+- **Nachrichtenfluss:** Hier verwalten Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet), akzeptierte Domänen und Connectors sowie die Nachrichtenablaufverfolgung.
 
-- **Hybrid**: Dies ist der Ort, an dem Sie den [Assistenten für die Hybrid Konfiguration](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)ausführen können und auf dem Sie das [Exchange Online-PowerShell-Modul](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)installieren können.
+- **Hybrid:** Hier können Sie den Assistenten für [die Hybridkonfiguration](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)ausführen und das [Exchange Online -PowerShell-Modul installieren.](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)
 
 ### <a name="tabs"></a>Registerkarten
 
@@ -107,21 +110,21 @@ Wenn Sie in der Listenansicht ein Objekt auswählen, werden Informationen zu die
 
 ### <a name="me-tile-and-help"></a>Ich-Kachel und Hilfe
 
-Über die **Ich**-Kachel können Sie sich bei der Exchange-Verwaltungskonsole abmelden und als ein anderer Benutzer anmelden. Im  ![ Dropdownmenü Hilfe-Hilfesymbol ](../../media/ITPro-EAC-HelpIcon.gif) können Sie die folgenden Aktionen ausführen:
+Über die **Ich**-Kachel können Sie sich bei der Exchange-Verwaltungskonsole abmelden und als ein anderer Benutzer anmelden. Im Dropdownmenü ![ "Hilfehilfesymbol" ](../../media/ITPro-EAC-HelpIcon.gif) können Sie die folgenden Aktionen ausführen:
 
-- **Hilfe**: Klicken Sie auf ![ Hilfesymbol ](../../media/ITPro-EAC-HelpIcon.gif) , um den Inhalt der Online Hilfe anzuzeigen.
-- **Feedback**: hinterlassen Sie Feedback.
-- **Community**: Stellen Sie eine Frage für Find Answers in den Community-Foren bereit.
-- **Hilfe Blase deaktivieren**: in der Hilfe-Sprechblase wird Kontexthilfe für Felder angezeigt, wenn Sie ein Objekt erstellen oder bearbeiten. Sie können die Hilfe Blase deaktivieren oder aktivieren, wenn Sie deaktiviert wurde.
-- **Befehlsprotokollierung anzeigen**: Es wird ein neues Fenster geöffnet, in dem die entsprechenden PowerShell-Befehle basierend auf den in der Exchange-Verwaltungskonsole konfigurierten angezeigt werden.
+- **Hilfe**: Klicken Sie ![ auf das ](../../media/ITPro-EAC-HelpIcon.gif) Hilfesymbol, um die Onlinehilfeinhalte anzuzeigen.
+- **Feedback:** Geben Sie Feedback.
+- **Community:** Stellen Sie eine Frage, um Antworten in den Communityforen zu finden.
+- **Hilfeblase deaktivieren:** Die Hilfeblase zeigt kontextbezogene Hilfe für Felder an, wenn Sie ein Objekt erstellen oder bearbeiten. Sie können die Hilfesprechblase deaktivieren oder aktivieren, wenn sie deaktiviert wurde.
+- **Befehlsprotokollierung** anzeigen: Ein neues Fenster wird geöffnet, in dem die entsprechenden PowerShell-Befehle basierend auf den in der EAC konfigurierten Einstellungen angezeigt werden.
 
 ## <a name="supported-browsers"></a>Unterstützte Browser
 
-Für eine optimale Nutzung des EAC sollten Sie immer die neuesten Browser, Office-Clients und Apps verwenden. Zudem wird empfohlen, dass Sie Softwareupdates installieren, sobald sie verfügbar werden. Weitere Informationen zu den unterstützten Browsern und Systemanforderungen für den Dienst finden Sie unter [System Requirements for Office](https://products.office.com/office-system-requirements).
+Für eine optimale Nutzung des EAC sollten Sie immer die neuesten Browser, Office-Clients und Apps verwenden. Zudem wird empfohlen, dass Sie Softwareupdates installieren, sobald sie verfügbar werden. Weitere Informationen zu den unterstützten Browsern und Systemanforderungen für den Dienst finden Sie unter [Systemanforderungen für Office.](https://products.office.com/office-system-requirements)
 
 ## <a name="supported-languages"></a>Unterstützte Sprachen
 
-Die folgenden Sprachen werden für die Exchange-Verwaltungskonsole in eigenständigen EoP unterstützt und zur Verfügung gestellt.
+Die folgenden Sprachen werden für die EAC im eigenständigen EOP unterstützt und verfügbar.
 
 - Amharisch
 - Arabisch

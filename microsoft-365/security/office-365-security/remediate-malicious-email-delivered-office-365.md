@@ -1,135 +1,138 @@
 ---
-title: Beheben böswilliger e-Mails, die in Office 365 bereitgestellt wurden
+title: Behebung bösartiger E-Mails, die in Office 365 zugestellt wurden
 author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-ms.service: O365-seccomp
 audience: admin
 f1.keywords:
 - NOCSH
 localization_priority: Normal
 MS.collection: ''
 search.appverid: MET150
-description: Behebung von Bedrohungen
+description: Bedrohungsbehebung
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 67b27102ff9319e334b5ff1e006fe49f14d3f1ed
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 2f623957a79ccd76702482cd23b4d8ce219603f6
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620575"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166879"
 ---
-# <a name="remediate-malicious-email-delivered-in-office-365"></a>Beheben von in Office 365 zugestellten böswilligen e-Mails
+# <a name="remediate-malicious-email-delivered-in-office-365"></a>Behebung bösartiger E-Mails, die in Office 365 zugestellt wurden
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+-    [Microsoft Defender für Office 365 Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
-Die Wiederherstellung bedeutet, dass eine vorgeschriebene Aktion gegen eine Bedrohung erfolgt. Böswillige e-Mail-Nachrichten, die an Ihre Organisation gesendet werden, können entweder durch das System, durch eine automatische Bereinigung (Zero-Hour Auto Purge) oder durch Sicherheitsteams durch Korrekturaktionen wie *Verschieben in den Posteingang*, verschieben in *Junk*, *verschieben zu gelöschten Elementen*, *Soft Delete* oder *Hard Delete* bereinigt werden. Mit Microsoft Defender für Office 365 P2/E5 können Sicherheitsteams Bedrohungen in e-Mail-und Zusammenarbeitsfunktionen durch manuelle und automatisierte Untersuchung beheben.
+Abhilfe bedeutet, eine vorgeschriebene Maßnahme gegen eine Bedrohung zu ergreifen. Bösartige E-Mails, die an Ihre Organisation gesendet werden, können entweder vom System, durch die automatische Bereinigung (Zero-Hour Auto Purge, ZAP) oder durch Sicherheitsteams durch Abhilfemaßnahmen wie das Verschieben in den *Posteingang,* das Verschieben in Junk-E-Mails, das Verschieben in gelöschte *Elemente,* das soft *delete* oder das hard *delete* bereinigt werden. Microsoft Defender für Office 365 P2/E5 ermöglicht Sicherheitsteams die Behebung von Bedrohungen in E-Mail und Zusammenarbeitsfunktionen durch manuelle und automatisierte Untersuchung.
 
 > [!NOTE]
-> Um böswillige e-Mails zu beheben, benötigen Sicherheitsteams die *Such-und Säuberungs* Rolle, die Ihnen zugewiesen ist. Die Rollenzuweisung erfolgt über Berechtigungen im Security and Compliance Center.
+> Um bösartige E-Mails zu bereinigen, benötigen Sicherheitsteams *die* Ihnen zugewiesene Rolle "Suchen und Löschen". Die Rollenzuweisung erfolgt über Berechtigungen im Security and Compliance Center.
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Was Sie wissen müssen, bevor Sie beginnen
 
-Administratoren können erforderliche Aktionen für e-Mails durchführen, aber um diese Aktionen genehmigt zu erhalten, muss Ihnen die *Such-und Säuberungs* Rolle über **Sicherheits & Compliance Center** \> - **Berechtigungen** zugewiesen sein. Ohne die "Suche und Säuberung"-Rolle, die einer der Rollengruppen hinzugefügt wurde, können Sie die Aktion nicht ausführen.
+Administratoren können die erforderlichen Maßnahmen für E-Mails ergreifen. Um  diese Aktionen zu genehmigten, müssen ihnen jedoch die Rolle "Suchen und Löschen" über die Berechtigungen des **Security & Compliance Center zugewiesen** \> **sein.** Ohne die Rolle "Suchen und Löschen", die einer der Rollengruppen hinzugefügt wurde, können sie die Aktion nicht ausführen.
 
-## <a name="manual-and-automated-remediation"></a>Manuelle und automatische Korrektur
+## <a name="manual-and-automated-remediation"></a>Manuelle und automatisierte Wartung
 
-*Manuelle* Suche erfolgt, wenn Sicherheitsteams Bedrohungen manuell mithilfe der Such-und Filterfunktionen in Threat Explorer identifizieren. Manuelle e-Mail-Korrektur kann durch jede e-Mail-Ansicht (*Schadsoftware*, *Phishing* oder *alle e-Mail*-Nachrichten) ausgelöst werden, nachdem Sie eine Gruppe von e-Mails identifiziert haben, die behoben werden müssen.
-
-> [!div class="mx-imgBorder"]
-> [![Manuelle Suche in Office 365 Bedrohungs-Explorer nach Datum.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
-
-Sicherheitsteams können mit dem Threat-Explorer auf verschiedene Weise e-Mails auswählen:
-
-- E-Mails per Hand auswählen: Verwenden Sie Filter in verschiedenen Ansichten. Wählen Sie bis zu 100 e-Mails aus, die Sie korrigieren möchten.
-
-- Abfrageauswahl: Wählen Sie eine gesamte Abfrage aus, indem Sie die obere Schaltfläche " **Alle auswählen** " verwenden. Dieselbe Abfrage wird auch in den Details zur Mailübermittlung von Action Center angezeigt.
-
-- Abfrageauswahl mit Ausschluss: Manchmal möchten Sicherheitsteams e-Mail-Nachrichten beheben, indem Sie eine gesamte Abfrage auswählen und bestimmte e-Mails manuell aus der Abfrage ausschließen. Dazu kann ein Administrator das Kontrollkästchen **Alle auswählen** verwenden und nach unten scrollen, um e-Mails manuell auszuschließen. Die Abfrage kann maximal 1.000 e-Mails enthalten. Die maximale Anzahl von Ausschlüssen ist 100.
-
-Sobald e-Mails über den Threat Explorer ausgewählt wurden, können Sie die Wiederherstellung starten, indem Sie eine direkte Aktion durchführen oder e-Mails für eine Aktion anschlangen:
-
-- Direkte Genehmigung: Wenn Aktionen wie *Verschieben in den Posteingang*, in *Junk* verschieben, *zu gelöschten Elementen* verschieben, *Soft Delete* oder *Hard Delete* von Sicherheitspersonal ausgewählt werden, das über entsprechende Berechtigungen verfügt, und die nächsten korrekturschritte befolgt werden, wird mit dem Korrekturprozess begonnen, die ausgewählte Aktion auszuführen. Ein temporäres Flyout zeigt eine laufende Wiederherstellung an.
-
-- Genehmigung in zwei Schritten: eine Aktion "zur Korrektur hinzufügen" kann von Administratoren vorgenommen werden, die nicht über die entsprechenden Berechtigungen verfügen oder die auf die Ausführung der Aktion warten müssen. In diesem Fall werden die Ziel-e-Mails einem Behebungs Container hinzugefügt. Die Genehmigung ist erforderlich, bevor die Wiederherstellung ausgeführt wird.
-
-**Automatisierte Ermittlungs-und Antwort** Aktionen werden durch Warnungen oder durch Sicherheits Operations Teams aus dem Threat Explorer ausgelöst. Hierzu gehören möglicherweise Empfohlene Korrekturaktionen, die von einem Sicherheits Betriebsteam genehmigt werden müssen. Diese Aktionen sind auf der Registerkarte **Aktion** in der automatischen Untersuchung enthalten.
+*Die manuelle Suche* erfolgt, wenn Sicherheitsteams Bedrohungen mithilfe der Such- und Filterfunktionen im Bedrohungs-Explorer manuell erkennen. Manuelle E-Mail-Korrekturen können über eine beliebige E-Mail-Ansicht *(Schadsoftware,* Phishing oder alle E-Mails) ausgelöst werden, nachdem Sie eine Gruppe von E-Mails identifiziert haben, die behoben werden müssen.
 
 > [!div class="mx-imgBorder"]
-> [![E-Mail mit Schadsoftware auf der Seite "zapped", bei der die Ausführung von zap angezeigt wird.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
+> [![Manuelle Suche im Office 365 Threat Explorer nach Datum.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
-Im Action Center werden alle Korrekturen (entweder direkte Genehmigung oder Genehmigung in zwei Schritten), die im Threat Explorer erstellt wurden, sowie genehmigte Aktionen, die aus automatischen Untersuchungen stammen, angezeigt. Greifen Sie über den linken Navigationsbereich unter **Review** \> - **Wartungs Center** auf diese zu.
+Sicherheitsteams können den Bedrohungs-Explorer verwenden, um E-Mails auf verschiedene Weise auszuwählen:
+
+- Wählen Sie E-Mails von Hand aus: Verwenden Sie Filter in verschiedenen Ansichten. Wählen Sie bis zu 100 E-Mails zur Behebung aus.
+
+- Abfrageauswahl: Wählen Sie eine gesamte Abfrage aus, indem Sie die Schaltfläche "Alle oben **auswählen"** verwenden. Dieselbe Abfrage wird auch in den Details zur E-Mail-Übermittlung im Action Center angezeigt.
+
+- Abfrageauswahl mit Ausschluss: Manchmal möchten Sicherheitsteams E-Mails möglicherweise durch Auswählen einer vollständigen Abfrage und manuelles Ausschließen bestimmter E-Mails aus der Abfrage entfernen. Dazu kann ein Administrator das Kontrollkästchen "Alle **auswählen"** verwenden und einen Bildlauf nach unten durchführen, um E-Mails manuell auszuschließen. Die Abfrage kann maximal 1.000 E-Mails speichern. Die maximale Anzahl von Ausschlüssen beträgt 100.
+
+Sobald E-Mails über den Bedrohungs-Explorer ausgewählt wurden, können Sie mit der Problembehebung beginnen, indem Sie direkte Maßnahmen ergreifen oder E-Mails für eine Aktion in die Warteschlange einreihen:
+
+- Direkte Genehmigung: Wenn Von Sicherheitsmitarbeitern, die über die entsprechenden Berechtigungen verfügen, Aktionen wie das Verschieben in den *Posteingang,* das Verschieben in Junk-E-Mails, das Verschieben zu gelöschten *Elementen,* das "Soft *Delete"* oder das hard *delete* ausgewählt werden und die nächsten Schritte zur Behebung ausgeführt werden, beginnt der Korrekturprozess mit der Ausführung der ausgewählten Aktion. Ein temporäres Flyout zeigt Korrekturen an.
+
+- Genehmigung in zwei Schritt: Eine Aktion zum Hinzufügen zur Problembehebung kann von Administratoren ausgeführt werden, die nicht über die entsprechenden Berechtigungen verfügen oder mit der Ausführung der Aktion warten müssen. In diesem Fall werden die gezielten E-Mails einem Wartungscontainer hinzugefügt. Bevor die Korrektur ausgeführt wird, ist eine Genehmigung erforderlich.
+
+**Automatisierte Untersuchungs- und Reaktionsaktionen** werden durch Warnungen oder von Sicherheitsteams aus dem Bedrohungs-Explorer ausgelöst. Dazu können empfohlene Abhilfemaßnahmen gehören, die von einem Sicherheitsteam genehmigt werden müssen. Diese Aktionen sind in der **automatischen** Untersuchung auf der Registerkarte "Aktion" enthalten.
 
 > [!div class="mx-imgBorder"]
-> [![Das Aktionscenter mit einer Liste von Bedrohungen nach Datum und Schweregrad.](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
+> [![Mail with malware in "Zapped" page showing time of Zap execution.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-Das Wartungs Center zeigt alle Korrekturaktionen für die letzten 30 Tage an. Durch Threat Explorer ausgeführte Aktionen werden nach dem Namen aufgelistet, den das Sicherheits Betriebsteam beim Erstellen der Korrektur bereitgestellt hat. Durch automatisierte Untersuchungen ausgeführte Aktionen haben Titel, die mit der zugehörigen Warnung beginnen, die die Untersuchung ausgelöst hat, beispielsweise "zap-e-Mail-Cluster...".
+Alle Korrekturen (entweder die direkte Genehmigung oder die Genehmigung in zwei Stufen), die im Bedrohungs-Explorer erstellt wurden, sowie genehmigte Aktionen aus automatisierten Untersuchungen werden im Action Center angezeigt. Greifen Sie über den linken Navigationsbereich im **Review Action** Center auf \> **diese zu.**
 
-Öffnen Sie ein beliebiges Behebungs Element, um Details dazu anzuzeigen, einschließlich Name, Erstellungsdatum, Beschreibung, Bedrohungs Schweregrad und Status. Außerdem werden die folgenden zwei Registerkarten angezeigt.
+> [!div class="mx-imgBorder"]
+> [![Das Action Center mit einer Liste der Bedrohungen nach Datum und Schweregrad.](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
 
-- Registerkarte **e-Mail-Übermittlung** : zeigt die Anzahl der e-Mails an, die über den Threat Explorer oder automatisierte Untersuchungen zur Korrektur übermittelt wurden. Diese e-Mail-Nachrichten können Aktionen unterliegen.
+Im Action Center werden alle Korrekturaktionen für die letzten 30 Tage gezeigt. Über den Bedrohungs-Explorer ergriffene Aktionen werden nach dem Namen aufgelistet, den das Sicherheitsteam beim Erstellen der Problembehebung bereitgestellt hat. Aktionen, die durch automatisierte Untersuchungen ausgeführt werden, haben Titel, die mit der zugehörigen Warnung beginnen, die die Untersuchung ausgelöst hat, z. B. "Zap-E-Mail-Cluster... ".
+
+Öffnen Sie ein Korrekturelement, um Details dazu anzuzeigen, einschließlich Name, Erstellungsdatum, Beschreibung, Schweregrad der Bedrohung und Status. Außerdem werden die folgenden beiden Registerkarten angezeigt.
+
+- **Registerkarte** "E-Mail-Übermittlung": Zeigt die Anzahl der E-Mails an, die über den Bedrohungs-Explorer oder automatisierte Untersuchungen übermittelt wurden, die behoben werden sollen. Diese E-Mails können aktionensfähig oder nicht aktionsfähig sein.
 
   > [!div class="mx-imgBorder"]
-  > [![Das Action Center mit Aktionen und nicht Aktionen-Bedrohungen.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
+  > [![Das Action Center mit Aktionen und nicht umsetzbaren Bedrohungen.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
 
-  - **Aktionable**: e-Mails an den folgenden Cloud-Postfachspeicher Orten können verarbeitet und verschoben werden:
+  - **Aktionen: E-Mails** in den folgenden Cloudpostfachspeicherorten können verwendet und verschoben werden:
     - Posteingang
     - Junk-E-Mail
     - Ordner gelöscht
-    - Ordner "vorläufig gelöscht"
+    - Ordner "Soft-deleted"
 
       > [!NOTE]
-      > Derzeit kann nur ein Benutzer mit Zugriff auf das Postfach Elemente aus einem vorläufig gelöschten Ordner wiederherstellen.
+      > Derzeit kann nur ein Benutzer mit Zugriff auf das Postfach Elemente aus einem nicht gelöschten Ordner wiederherstellen.
 
-  - **Keine Aktion** möglich: e-Mails an den folgenden Speicherorten können in Korrekturaktionen nicht bearbeitet oder verschoben werden:
+  - **Nicht aktionsfähig:** E-Mails an den folgenden Speicherorten können nicht in Abhilfemaßnahmen verwendet oder verschoben werden:
     - Quarantäne
-    - Hart gelöschter Ordner
+    - Gelöschter Ordner
     - Lokal/extern
-    - Fehlgeschlagen/gelöscht
+    - Failed/dropped
 
-  Verdächtige Nachrichten werden entweder als behebbar oder nicht behebbar kategorisiert. In den meisten Fällen kombinieren behebbare und nicht behebbare Nachrichten gleich insgesamt gesendete Nachrichten. In seltenen Fällen ist dies jedoch nicht der Fall. Dies kann aufgrund von System Verzögerungen, Timeouts oder abgelaufenen Nachrichten passieren. Nachrichten laufen basierend auf dem Aufbewahrungszeitraum für Threat Explorer für Ihre Organisation ab.
+  Verdächtige Nachrichten werden entweder als "behbar" oder "nicht behbbar" kategorisiert. In den meisten Fällen sind behbare und nicht behbare Nachrichten gleich der Gesamtzahl der übermittelten Nachrichten. In seltenen Fällen ist dies jedoch möglicherweise nicht der Fall. Dies kann aufgrund von Systemverzögerungen, Timeouts oder abgelaufenen Nachrichten geschehen. Nachrichten laufen basierend auf dem Aufbewahrungszeitraum des Bedrohungs-Explorers für Ihre Organisation ab.
 
-  Wenn Sie alte Nachrichten nicht nach dem Aufbewahrungszeitraum für den Threat-Explorer Ihrer Organisation remediationieren, empfiehlt es sich, die Remediation von Elementen erneut zu versuchen, wenn Zahl Inkonsistenzen angezeigt werden. Bei System Verzögerungen werden Korrektur Aktualisierungen in der Regel innerhalb weniger Stunden aktualisiert.
+  Wenn Sie alte Nachrichten nach dem Aufbewahrungszeitraum des Threat Explorer Ihrer Organisation nicht beheumdern, ist es ratsam, die Behebung von Elementen zu wiederholen, wenn Inkonsistenzen von Nummern angezeigt werden. Bei Systemverzögerungen werden Korrekturupdates in der Regel innerhalb weniger Stunden aktualisiert.
 
-  Wenn der Aufbewahrungszeitraum Ihrer Organisation für e-Mails im Threat-Explorer 30 Tage beträgt und Sie e-Mails wiederholen, die 29-30 Tage zurückgehen, kann die Anzahl der e-Mail-Übermittlungs Zahlen möglicherweise nicht immer addiert werden. Die e-Mails haben möglicherweise bereits begonnen, den Aufbewahrungszeitraum zu verschieben.
+  Wenn der Aufbewahrungszeitraum für E-Mails in Ihrer Organisation im Bedrohungs-Explorer 30 Tage beträgt und Sie E-Mails 29 bis 30 Tage zurückbestellen, wird die Anzahl der E-Mail-Übermittlungen möglicherweise nicht immer addiert. Möglicherweise sind die E-Mails bereits aus dem Aufbewahrungszeitraum herausgelaufen.
 
-  Wenn die Korrekturen für eine Weile im Status "in Bearbeitung" stecken, liegt dies wahrscheinlich an System Verzögerungen. Es kann bis zu ein paar Stunden dauern, bis es behoben wurde. Möglicherweise werden Variationen bei der Anzahl der e-Mail-Übermittlungen angezeigt, da einige der e-Mails möglicherweise nicht zu Beginn der Wiederherstellung aufgrund von System Verzögerungen in die Abfrage aufgenommen wurden. Es empfiehlt sich, in diesen Fällen erneut zu remediationieren.
+  Wenn Korrekturen eine Weile im Status "In Bearbeitung" hängen bleiben, liegt dies wahrscheinlich an Systemverzögerungen. Die Behebung kann bis zu ein paar Stunden dauern. Möglicherweise werden Variationen bei der Anzahl der E-Mail-Übermittlungen angezeigt, da einige der E-Mails möglicherweise zu Beginn der Korrektur aufgrund von Systemverzögerungen nicht in die Abfrage einbezogen wurden. In solchen Fällen ist es eine gute Idee, die Behebung zu wiederholen.
 
   > [!NOTE]
-  > Um optimale Ergebnisse zu erzielen, sollte die Korrektur in Batches von 50.000 oder weniger erfolgen.
+  > Für optimale Ergebnisse sollten Korrekturen in Batches von 50.000 oder weniger durchgeführt werden.
 
-  Bei der Wiederherstellung werden nur behebbare e-Mails verarbeitet. Nicht behebbare e-Mails können vom Office 365-e-Mail-System nicht wiederhergestellt werden, da Sie nicht in Cloud-Postfächern gespeichert sind.
+  Während der Korrektur werden nur behbare E-Mails verwendet. Nicht behierbare E-Mails können nicht vom Office 365-E-Mail-System behoben werden, da sie nicht in Cloudpostfächern gespeichert werden.
 
-  Administratoren können bei Bedarf Aktionen für e-Mails in Quarantäne durchführen, aber diese e-Mails laufen aus der Quarantäne, wenn Sie nicht manuell gelöscht werden. E-Mails, die aufgrund schädlicher Inhalte isoliert wurden, sind von Benutzern nicht zugänglich, sodass Sicherheitsmitarbeiter keine Maßnahmen ergreifen müssen, um Bedrohungen in der Quarantäne loszuwerden. Wenn die e-Mails lokal oder extern sind, kann der Benutzer kontaktiert werden, um die Verdächtigen e-Mails zu adressieren. Oder die Administratoren können separate e-Mail-Server/Sicherheitstools zum Entfernen verwenden. Diese e-Mails können identifiziert werden, indem der externe Filter " *Delivery Location = on-Prem* " im Threat Explorer angewendet wird. Bei fehlgeschlagenen oder gelöschten e-Mails oder e-Mails, für die Benutzer nicht zugänglich sind, gibt es keine e-Mail zur Minderung, da diese Mails das Postfach nicht erreichen.
+  Administratoren können bei Bedarf Aktionen für E-Mails in Quarantäne ergreifen, aber diese E-Mails laufen aus der Quarantäne, wenn sie nicht manuell gelöscht werden. E-Mails, die aufgrund schädlicher Inhalte isoliert wurden, sind für Benutzer nicht zugänglich, sodass Sicherheitsmitarbeiter keine Maßnahmen ergreifen müssen, um Bedrohungen in Quarantäne zu löschen. Wenn die E-Mails lokal oder extern sind, kann der Benutzer kontaktiert werden, um die verdächtige E-Mail zu adressieren. Oder die Administratoren können separate E-Mail-Server/Sicherheitstools zum Entfernen verwenden. Diese E-Mails können identifiziert werden, indem sie den Zustellungsort *= den* externen Filter vor Ort im Bedrohungs-Explorer anwenden. Bei fehlgeschlagenen oder verworfenen E-Mails oder E-Mails, auf die Benutzer nicht zugreifen können, gibt es keine E-Mail, die abgemildert werden kann, da diese E-Mails nicht das Postfach erreichen.
 
-  In der folgenden Abbildung wird gezeigt, wie eine Übermittlung im Wartungs Center aussieht. Eine Korrektur kann mehrere Übermittlungen enthalten. Wenn mehrere Aktionen durch eine automatisierte Untersuchung genehmigt werden, wird jede e-Mail-oder e-Mail-Cluster Aktion in derselben Korrektur wie eine andere Übermittlung angezeigt.
+  Die folgende Abbildung zeigt, wie eine Übermittlung im Aktionscenter aussieht. Eine Korrektur kann mehrere Übermittlungen enthalten. Wenn mehrere Aktionen über eine automatisierte Untersuchung genehmigt werden, wird jede E-Mail- oder E-Mail-Clusteraktion in derselben Korrektur wie eine andere Übermittlung angezeigt.
 
   > [!div class="mx-imgBorder"]
-  > [![Zap-e-Mail-Cluster-Flyout-Bereich.](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
+  > [![ZAP-E-Mail-Cluster-Flyoutpanel.](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
 
-  Wählen Sie ein e-Mail-Übermittlungs Element aus, um die Details dieser Korrektur anzuzeigen, beispielsweise die Abfrage (wenn die Korrektur durch automatische Untersuchungen oder Bedrohungs-Explorer durch Auswählen einer Abfrage ausgelöst wird) sowie die Start-und Endzeit der Korrektur. Außerdem wird eine Liste der Nachrichten angezeigt, die zur Behebung übermittelt wurden. Wenn Nachrichten aus dem Aufbewahrungszeitraum für Threat Explorer entfernt werden, verschwinden die Nachrichten aus dieser Liste. In der Liste werden auch einzelne Nachrichten angezeigt, die behoben werden können.
+  Wählen Sie ein E-Mail-Übermittlungselement aus, um die Details dieser Korrektur anzuzeigen, z. B. die Abfrage (wenn die Korrektur durch automatisierte Untersuchungen oder den Bedrohungs-Explorer durch Auswählen einer Abfrage ausgelöst wird) und die Start- und Endzeiten der Korrektur. Außerdem wird eine Liste der Nachrichten angezeigt, die zur Behebung übermittelt wurden. Wenn Nachrichten aus dem Aufbewahrungszeitraum des Bedrohungs-Explorers entfernt werden, werden die Nachrichten aus dieser Liste entfernt. In der Liste werden auch einzelne Meldungen angezeigt, die wiederherstellungsfähig sind.
 
-- **Aktionsprotokolle**: auf dieser Registerkarte werden die vermittelten Nachrichten angezeigt, einschließlich des genehmigten Datums, des Administrators, der die Aktion, die Aktion, den Status und die Anzahl genehmigt hat.
+- **Aktionsprotokolle:** Auf dieser Registerkarte werden die Nachrichten angezeigt, die behoben wurden, einschließlich genehmigten Datums, Administrator, der die Aktion genehmigt hat, Aktion, Status und Anzahl.
 
-  Status kann wie folgt lauten:
+  Status kann sein:
 
-  - **Gestartet**: die Korrektur wird ausgelöst.
-  - In der **Warteschlange**: die Korrektur wird zur Minderung von e-Mails in die Warteschlange eingereiht.
-  - **In Bearbeitung**: Minderung wird ausgeführt.
-  - **Abgeschlossen**: Minderung auf alle behebbaren e-Mails, die entweder erfolgreich oder mit einigen Fehlern abgeschlossen wurden.
-  - **Fehler**: Es wurden keine Korrekturen erfolgreich ausgeführt.
+  - **Gestartet:** Die Korrektur wird ausgelöst.
+  - **In die** Warteschlange eingereiht: Die Problembehebung wird zur Behebung von E-Mails in die Warteschlange eingereiht.
+  - **In Bearbeitung:** Die Gegenmaßnahmen werden ausgeführt.
+  - **Abgeschlossen:** Ausgleich für alle behierbaren E-Mails, die entweder erfolgreich oder mit einigen Fehlern abgeschlossen wurden.
+  - **Fehler:** Es wurden keine Korrekturen erfolgreich abgeschlossen.
 
-  Da nur behebbare e-Mails bearbeitet werden können, wird die Bereinigung jeder e-Mail als erfolgreich oder fehlgeschlagen angezeigt. Aus den insgesamt behebbaren e-Mails werden erfolgreiche und fehlgeschlagene Schadensbegrenzende Maßnahmen gemeldet.
+  Da nur behbare E-Mails reagiert werden können, wird die Bereinigung jeder E-Mail als erfolgreich oder fehlgeschlagen angezeigt. Aus den insgesamt behierbaren E-Mails werden erfolgreiche und fehlgeschlagene Gegenmaßnahmen gemeldet.
 
-  - **Erfolg**: die gewünschte Aktion bei behebbaren e-Mails wurde durchgeführt. Beispiel: ein Administrator möchte e-Mails aus Postfächern entfernen, sodass der Administrator die Aktion von e-Mails mit weichen Löschaktionen ausführt. Wenn im ursprünglichen Ordner keine behebbare e-Mail gefunden wird, nachdem die Aktion ausgeführt wurde, wird der Status als erfolgreich angezeigt.
+  - **Erfolg:** Die gewünschte Aktion für beh wiederbehbare E-Mails wurde durchgeführt. Beispiel: Ein Administrator möchte E-Mails aus Postfächern entfernen, sodass der Administrator die Aktion zum soft-deleting von E-Mails ergreift. Wenn eine behbare E-Mail im ursprünglichen Ordner nicht gefunden wird, nachdem die Aktion abgeschlossen wurde, wird der Status als erfolgreich angezeigt.
 
-  - **Fehler**: die gewünschte Aktion bei behebbaren e-Mails ist fehlgeschlagen. Beispiel: ein Administrator möchte e-Mails aus Postfächern entfernen, sodass der Administrator die Aktion von e-Mails mit weichen Löschaktionen ausführt. Wenn nach dem Ausführen der Aktion noch eine behebbare e-Mail im Postfach gefunden wird, wird der Status als Fehler angezeigt.
+  - **Fehler:** Die gewünschte Aktion für beh wiederbearbeitbare E-Mails ist fehlgeschlagen. Beispiel: Ein Administrator möchte E-Mails aus Postfächern entfernen, sodass der Administrator die Aktion zum soft-deleting von E-Mails ergreift. Wenn eine behbare E-Mail im Postfach gefunden wird, nachdem die Aktion ergriffen wurde, wird der Status als fehlgeschlagen angezeigt.
 
-  Wählen Sie im Aktionsprotokoll ein beliebiges Element aus, um Korrektur Details anzuzeigen. Wenn die Details "erfolgreich" oder "nicht im Postfach gefunden" sagen, wurde das Element bereits aus dem Postfach entfernt. Bei der Wiederherstellung ist manchmal ein systemischer Fehler aufgetreten. In diesen Fällen empfiehlt es sich, die Wiederherstellung erneut zu versuchen.
+  Wählen Sie ein beliebiges Element im Aktionsprotokoll aus, um Korrekturdetails anzuzeigen. Wenn die Details "erfolgreich" oder "im Postfach nicht gefunden" sagen, wurde dieses Element bereits aus dem Postfach entfernt. Manchmal tritt während der Wartung ein Fehler auf. In diesen Fällen ist es eine gute Idee, die Problembehebung zu wiederholen.
 
-  Für den Fall einer großen Batchverarbeitung können Sie auch die Nachrichten zur Korrektur per e-Mail-Übermittlung und Nachrichten exportieren, die über Aktionsprotokolle behoben wurden. Der Export Grenzwert wird auf 100K-Datensätze erhöht.
+  Bei der Behebung großer Batches können Sie auch die zur Korrektur gesendeten Nachrichten über die E-Mail-Übermittlung und Nachrichten exportieren, die über Aktionsprotokolle behoben wurden. Der Exportgrenzwert wird auf 100.000 Datensätze erhöht.
 
-  Die Wiederherstellung ist ein leistungsfähiges Tool zum Abwehren von Bedrohungen und zum Adressieren verdächtiger e-Mails. Es hilft, eine Organisation sicher zu halten.
+  Die Problembehebung ist ein leistungsstarkes Tool, um Bedrohungen zu mindern und verdächtige E-Mails zu adressieren. Dies trägt dazu bei, eine Organisation zu schützen.
