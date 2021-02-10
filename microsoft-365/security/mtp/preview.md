@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ce0f1ae41b57db398c7ec84e078897a7345c1b9a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 9156025990e8da61006ac1d3b81a71be5580e00c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930078"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167383"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender –Vorschaufeatures
 
@@ -37,7 +37,7 @@ ms.locfileid: "49930078"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Der Microsoft 365 Defender-Dienst wird ständig aktualisiert, um neue Featureverbesserungen und -funktionen zu bieten.
+Der Microsoft 365 Defender-Dienst wird ständig aktualisiert, um neue Featureerweiterungen und -funktionen zu bieten.
 
 Erfahren Sie mehr über die neuen Features in der Microsoft 365 Defender Preview-Version, und gehören Sie zu den ersten, die bevorstehende Features testen, indem Sie die Vorschau aktivieren.
 
@@ -52,19 +52,20 @@ Aktivieren Sie die Einstellung für die Vorschauerfahrung, um zu den ersten zu g
 
 2. Wählen **Sie Microsoft 365 Defender aus.**
 
-
 3. Wählen Sie **Vorschaufeatures** > **Aktivieren Sie Vorschaufeatures**. 
 
-3. Klicken Sie auf **Speichern**.
+4. Klicken Sie auf **Speichern**.
 
 Sie wissen, dass Sie Vorschaufeatures aktiviert haben, wenn Sie sehen, dass das Kontrollkästchen **Vorschaufeatures aktivieren** aktiviert ist. 
 
 ## <a name="preview-features"></a>Vorschaufeatures
 Die folgenden Features und Verbesserungen sind derzeit in der Vorschau verfügbar:
 
-- **[Microsoft 365 Defender-APIs](api-overview.md)** – Mit den microsoft 365 Defender-APIs auf 365-Ebene können Sie Workflows basierend auf den freigegebenen Vorfall- und erweiterten Tabellen für die Suche automatisieren. 
+### <a name="improved-microsoft-365-security-center"></a>Verbessertes Microsoft 365 Security Center
+Das verbesserte [Microsoft 365 Security Center](https://security.microsoft.com) ist jetzt in der öffentlichen Vorschau verfügbar. Diese neue Erfahrung bringt Defender für Endpoint, Defender für Office 365, Microsoft 365 Defender und vieles mehr in das Microsoft 365 Security Center. Dies ist die neue Startseite für die Verwaltung Ihrer Sicherheitskontrollen. [Erfahren Sie, was es Neues gibt](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center).
+
+- **[Microsoft 365 Defender Threat Analytics-Bericht](threat-analytics.md)** – Bedrohungsanalyse hilft Ihnen, auf aktive Angriffe zu reagieren und die Auswirkungen zu minimieren. Sie können auch mehr über Angriffsversuche erfahren, die von Microsoft 365 -Defender-Lösungen blockiert werden, und vorbeugende Maßnahmen ergreifen, um das Risiko einer weiteren Gefährdung zu verringern und die Resilienz zu erhöhen. Im Rahmen der einheitlichen Sicherheitserfahrung ist die Bedrohungsanalyse jetzt für Microsoft Defender für Endpoint und Microsoft Defender für Office E5-Lizenzinhaber verfügbar.
+- **[Microsoft 365 Defender-APIs](api-overview.md)** – Mit den Microsoft 365 Defender-APIs der obersten Ebene können Sie Workflows basierend auf den freigegebenen Vorfällen und erweiterten Tabellen für die Suche automatisieren. 
 - **[Ergreifen Sie Maßnahmen bei der erweiterten Suche](advanced-hunting-take-action.md)**– sie können schnell Bedrohungen enthalten oder gefährdete Objekte, die Sie bei der erweiterten [Suche finden, adressieren.](advanced-hunting-overview.md)
 - **[Schemareferenz im Portal –](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** Informationen zu Schematabellen für die erweiterte Suche direkt im Security Center erhalten. Zusätzlich zu Tabellen- und Spaltenbeschreibungen enthält diese Referenz unterstützte Ereignistypen `ActionType` (Werte) und Beispielabfragen.
 - **[DeviceFromIP() function](advanced-hunting-devicefromip-function.md)**— Get information about which devices have been assigned a specific IP address or addresses at a given time range.
-
-

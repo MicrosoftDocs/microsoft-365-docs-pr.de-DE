@@ -22,17 +22,20 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 4ccc023a72ca450b1f0a433410206ccce59cb5f1
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 451a6b19139502a3765795694860e884a7a469bf
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142975"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175751"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>So melden Sie falsch positive/negative Ergebnisse in automatisierten Untersuchungs- und Reaktionsfunktionen
 
-**Gilt für:**
-- Microsoft Defender für Office 365
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Gilt für**
+- [Microsoft Defender für Office 365 Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Wenn funktionen für die automatische Untersuchung und Reaktion [(AIR) in Office 365](automated-investigation-response-office.md) etwas übersehen oder falsch erkannt haben, gibt es Schritte, die Ihr Sicherheitsteam unternehmen kann, um dies zu beheben. Zu diesen Aktionen gehören:
 
@@ -81,7 +84,7 @@ Im Action Center können Sie Korrekturaktionen sehen, die ergriffen wurden, und 
 4. Wählen Sie ein Element aus. Der Flyoutbereich wird geöffnet. 
 5. Wählen Sie im Flyoutbereich **"Rückgängig" aus.** (Nur Aktionen, die rückgängig gemacht werden können, verfügen über eine **Schaltfläche "Rückgängig".)**
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 - [Microsoft Defender für Office 365](office-365-atp.md)
 - [Automatisierte Untersuchungen in Microsoft Defender für Office 365](office-365-air.md)

@@ -19,16 +19,20 @@ description: Während und nach einer automatisierten Untersuchung in Microsoft 3
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7ebfa8bb7060b633bdb48c77bc661477ad3e201b
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 36cce42d0986cc793753d247d97315616f86f986
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142513"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175598"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Details und Ergebnisse einer automatisierten Untersuchung in Microsoft 365
 
-Wenn eine [automatisierte Untersuchung](office-365-air.md) in Microsoft Defender für [Office 365](office-365-atp.md)stattfindet, sind Details zu dieser Untersuchung während und nach dem automatisierten Untersuchungsprozess verfügbar. Wenn Sie über die erforderlichen Berechtigungen verfügen, können Sie diese Details in Ihrem Security Center anzeigen. Untersuchungsdetails bieten Ihnen den aktuellen Status und die Möglichkeit, ausstehende Aktionen zu genehmigen.
+**Gilt für**
+- [Microsoft Defender für Office 365 Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+Wenn eine [automatisierte Untersuchung](office-365-air.md) in Microsoft Defender für [Office 365](office-365-atp.md)stattfindet, sind Details zu dieser Untersuchung während und nach dem automatisierten Untersuchungsprozess verfügbar. Wenn Sie über die erforderlichen Berechtigungen verfügen, können Sie diese Details im Microsoft 365 Security Center anzeigen. Untersuchungsdetails bieten Ihnen den aktuellen Status und die Möglichkeit, ausstehende Aktionen zu genehmigen.
 
 > [!TIP]
 > Sehen Sie sich die neue, einheitliche Untersuchungsseite im Microsoft 365 Security Center an. Weitere Informationen finden Sie unter [(NEU!) Einheitliche Untersuchungsseite](../mtp/mtp-autoir-results.md#new-unified-investigation-page).

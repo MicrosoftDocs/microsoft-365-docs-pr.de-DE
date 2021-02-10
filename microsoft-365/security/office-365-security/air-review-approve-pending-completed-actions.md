@@ -19,12 +19,12 @@ description: Erfahren Sie mehr über Abhilfemaßnahmen bei automatisierten Unter
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: bcff8f12133ea16e3d91e293943be1593eaf9659
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 3fb77fa41ff3e9af995cf80b9f4024aa92a51212
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142693"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176015"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Überprüfen und Verwalten von Wartungsaktionen in Office 365
 
@@ -35,6 +35,10 @@ Da automatisierte Untersuchungen von E-mail-& zusammenarbeitsinhalten  zu Bekün
 - Deaktivieren der externen E-Mail-Weiterleitung
 
 Diese Abhilfemaßnahmen werden erst dann ergriffen, wenn sie vom Sicherheitsteam genehmigt werden. Es wird empfohlen, alle ausstehenden Aktionen so bald wie möglich zu überprüfen und zu genehmigen, damit Ihre automatisierten Untersuchungen zeitnah abgeschlossen werden. In einigen Fällen können Sie eine Korrekturaktion rückgängig machen.
+
+**Gilt für**
+- [Microsoft Defender für Office 365 Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="approve-or-reject-pending-actions"></a>Genehmigen (oder Ablehnen) ausstehender Aktionen
 
@@ -70,6 +74,6 @@ Diese Abhilfemaßnahmen werden erst dann ergriffen, wenn sie vom Sicherheitsteam
 - [Verwenden des Bedrohungs-Explorers](threat-explorer.md)
 - [So melden Sie falsch positive/negative Ergebnisse in automatisierten Untersuchungs- und Reaktionsfunktionen](air-report-false-positives-negatives.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 - [Anzeigen von Details und Ergebnissen einer automatisierten Untersuchung in Office 365](air-view-investigation-results.md)

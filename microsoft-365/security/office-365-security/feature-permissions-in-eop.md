@@ -8,150 +8,153 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
-description: Erfahren Sie mehr über die Berechtigungen, die für Aufgaben in eigenständigen Exchange Online Schutz erforderlich sind.
-ms.openlocfilehash: ae43dc2223b17d3b73f9b76fa6bde8fb9cb95e77
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Erfahren Sie mehr über die Berechtigungen, die für Aufgaben in eigenständigem Exchange Online Protection erforderlich sind.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 4f1f364e684f2d1d76f26f573e66fbd50bf5138b
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202867"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167395"
 ---
 # <a name="permissions-in-standalone-eop"></a>Berechtigungen in EOP als eigenständige Lösung
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+-  [Exchange Online Protection als eigenständige Lösung](https://go.microsoft.com/fwlink/?linkid=2148611)
 
-Eigenständiger Exchange Online Schutz (EoP) ohne Exchange Online Postfächer verwenden das Berechtigungsmodell für die rollenbasierte Zugriffssteuerung (Role Based Access Control, RBAC), um Ihren Administratoren einfach Berechtigungen zu gewähren. Sie können die Berechtigungsfunktionen in eigenständigen EoP verwenden, um Ihre neue Organisation schnell bereitzustellen und zu starten.
+Als eigenständiges Exchange Online Protection (EOP) ohne Exchange Online-Postfächer wird das Modell der rollenbasierten Zugriffssteuerung (Role Based Access Control, RBAC) verwendet, um Administratoren problemlos Berechtigungen zu erteilen. Sie können die Berechtigungsfeatures in EOP als eigenständige Lösung verwenden, um Ihre neue Organisation schnell in Betrieb zu setzen.
 
-Informationen zum Erteilen von Berechtigungen für Benutzer finden Sie unter [Verwalten von Administratorrollengruppen in EoP](manage-admin-role-group-permissions-in-eop.md).
+Informationen zum Erteilen von Berechtigungen für Benutzer finden Sie unter [Verwalten von Administrator-Rollengruppen in EOP.](manage-admin-role-group-permissions-in-eop.md)
 
-Weitere Informationen zu Berechtigungen in Microsoft 365 finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+Weitere Informationen zu Berechtigungen in Microsoft 365 finden Sie unter [Informationen zu Administratorrollen.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
 
 ## <a name="role-based-permissions"></a>Rollenbasierte Berechtigungen
 
-Die Administratorberechtigungen, die Sie Benutzern erteilen, basieren auf Verwaltungsrollen. Eine Verwaltungsrolle definiert die Cmdlets, die für eine Reihe von bestimmten Aufgaben zur Verfügung stehen. Da die Exchange-Verwaltungskonsole (EAC) und die eigenständige EoP-PowerShell Cmdlets verwenden, erteilt der Zugriff auf ein Cmdlet dem Benutzer die Berechtigung, die zugehörigen Aufgaben in der Exchange-Verwaltungskonsole oder in der eigenständigen EoP-PowerShell auszuführen. Beispielsweise definiert die Rolle "e-Mail-Empfänger" die Cmdlets, die zum Ändern von e-Mail-Benutzern erforderlich sind.
+Die Administratorberechtigungen, die Sie Benutzern gewähren, basieren auf Verwaltungsrollen. Eine Verwaltungsrolle definiert die Cmdlets, die für eine Reihe von bestimmten Aufgaben verfügbar sind. Da sowohl das Exchange Admin Center (EAC) als auch die eigenständige EOP PowerShell Cmdlets verwenden, erteilt die Gewährung des Zugriffs auf ein Cmdlet dem Benutzer die Berechtigung, die zugehörigen Aufgaben im EAC oder in der eigenständigen EOP PowerShell auszuführen. Beispielsweise definiert die Rolle "E-Mail-Empfänger" die Cmdlets, die zum Ändern von E-Mail-Benutzern erforderlich sind.
 
-In eigenständigen EoP sind Administratorrollen die einzige Verwaltungsrolle, die verfügbar ist (es gibt keine Endbenutzerrollen oder Richtlinien für Rollenzuweisungen).
+In EOP als eigenständige Lösung sind Verwaltungsrollen die einzige Art von Verwaltungsrolle, die verfügbar ist (es gibt keine Endbenutzerrollen oder Rollenzuweisungsrichtlinien).
 
 ## <a name="role-groups"></a>Rollengruppen
 
-Um Benutzern die Zuweisung von Rollen zu erleichtern, verwendet eigenständige EoP Rollengruppen. Verwaltungsrollen werden Rollengruppen zugewiesen, und die Rollengruppenmitglieder erhalten die Berechtigungen, die den Rollen zugeordnet sind. In anderen Worten: Verwaltungsrollen werden nicht direkt Benutzern zugewiesen; Sie werden der Rollengruppe zugewiesen. Dieses Modell ermöglicht Ihnen, viele Rollengruppenmitgliedern gleichzeitig zuzuweisen. Mitglieder der Rollengruppe können e-Mail-Benutzer, e-Mail-aktivierte Sicherheitsgruppen, Benutzer aus dem Microsoft 365 Admin Center und andere Rollengruppen sein.
+Um benutzern das Zuweisen von Rollen zu erleichtern, verwendet EOP als eigenständige Lösung Rollengruppen. Verwaltungsrollen werden Rollengruppen zugewiesen, und die Rollengruppenmitglieder erhalten die Berechtigungen, die den Rollen zugeordnet sind. Mit anderen Worten, Verwaltungsrollen werden Benutzern nicht direkt zugewiesen. sie sind Rollengruppen zugewiesen. Mit diesem Modell können Sie vielen Rollengruppenmitgliedern auf einmal viele Rollen zuweisen. Rollengruppenmitglieder können E-Mail-Benutzer, E-Mail-aktivierte Sicherheitsgruppen, Benutzer aus dem Microsoft 365 Admin Center und andere Rollengruppen sein.
 
 Die folgende Abbildung zeigt die Beziehung zwischen Benutzern, Rollengruppen und Rollen.
 
 ![Rolle, Rollengruppe und Mitglied - Beziehung](../../media/ITPro_Security_RBAC_EXO_SimplifiedRoleGroupRelationship.png)
 
-Die verfügbaren Rollengruppen in eigenständigen EoP werden in der folgenden Tabelle beschrieben.
+Die verfügbaren Rollengruppen in eigenständigem EOP werden in der folgenden Tabelle beschrieben.
 
 ****
 
 |Rollengruppe|Beschreibung|Zugewiesene Standardrollen|
 |---|---|---|
-|ComplianceManagement|Konfigurieren und Verwalten von Kompatibilitätseinstellungen innerhalb der Organisation, einschließlich der Verhinderung von Datenverlust (DLP), wenn Ihr Abonnement über DLP-Funktionen verfügt. <br/><br/> Mitglieder der Rolle " [Konformitäts Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) " in Azure AD erhalten automatisch die Berechtigungen dieser Rollengruppe.|Überwachungsprotokolle <br/><br/> Compliance-Verwaltung <br/><br/> Verwaltung von Informationsrechten <br/><br/> Aufbewahrungsverwaltung <br/><br/> Überwachungsprotokolle nur anzeigen <br/><br/> Schreibgeschützte Konfiguration <br/><br/> Schreibgeschützte Empfänger|
-|ContentExplorerContentViewer|Nicht verwendet.|Daten Klassifizierungs-Inhaltsanzeige|
-|ContentExplorerListViewer|Nicht verwendet.|Listenanzeige für Datenklassifizierung|
-|Helpdesk|Anzeigen und Verwalten von e-Mail-Benutzern|Kennwort zurücksetzen <br/><br/> Benutzeroptionen <br/><br/> Schreibgeschützte Empfänger|
-|HygieneManagement|Verwalten von Schutzfunktionen (Anti-Spam, Antischadsoftware usw.).|Transport Hygiene <br/><br/> Schreibgeschützte Konfiguration <br/><br/> Schreibgeschützte Empfänger|
-|MailFlowAdministrator|Anzeigen und Verwalten von akzeptierten Domänen und Connectors|Remote-und akzeptierte Domänen <br/><br/> Schreibgeschützte Empfänger|
-|Mitglied|Administratorzugriff auf die gesamte Organisation und die Möglichkeit, nahezu jede Aufgabe auszuführen. <br/><br/> Mitglieder der [globalen Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) Rolle in Azure AD erhalten automatisch die Berechtigungen dieser Rollengruppe. <br/><br/> **Wichtig**: da es sich bei der Mitglied-Rollengruppe um eine leistungsstarke Rolle handelt, sollten nur Benutzer, die administrative Aufgaben auf Organisationsebene ausführen, Mitglieder dieser Rollengruppe sein.|Antischadsoftware <br/><br/> Antispam <br/><br/> Überwachungsprotokolle <br/><br/> Complianceadministrator <br/><br/> Dynamische Verteilergruppen <br/><br/> Verwaltung von Informationsrechten <br/><br/> Erstellen von E-Mail-Empfängern <br/><br/> E-Mail-Empfänger <br/><br/> Nachrichtenverfolgung <br/><br/> Migration <br/><br/> Organisations Client Zugriff <br/><br/> Organisationskonfiguration <br/><br/> Organisations Transport Einstellungen <br/><br/> Quarantäne <br/><br/> Empfängerrichtlinien <br/><br/> Remote-und akzeptierte Domänen <br/><br/> Kennwort zurücksetzen <br/><br/> Aufbewahrungsverwaltung <br/><br/> Rollenverwaltung <br/><br/> Sicherheitsadministrator <br/><br/> Erstellen und Mitgliedschaft von Sicherheitsgruppen <br/><br/> Sicherheitsleseberechtigter <br/><br/> Vertraulichkeits Bezeichnung-Administrator <br/><br/> Aufsicht <br/><br/> Transport Hygiene <br/><br/> Transportregeln <br/><br/> Benutzeroptionen <br/><br/> Nur anzeigen Antischadsoftware <br/><br/> Nur-anzeigen-Antispam <br/><br/> Überwachungsprotokolle nur anzeigen <br/><br/> Schreibgeschützte Konfiguration <br/><br/> Nur-Ansicht-Quarantäne <br/><br/> Schreibgeschützte Empfänger <br/><br/> Bedrohungs Intelligenz mit Ansichts Schutz|
+|ComplianceManagement|Konfigurieren und Verwalten von Complianceeinstellungen innerhalb der Organisation, einschließlich DLP (Data Loss Prevention, Verhinderung von Datenverlust), wenn Ihr Abonnement über DLP-Funktionen verfügt. <p> Mitglieder der [Rolle "Complianceadministrator"](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) in Azure AD erhalten automatisch die Berechtigungen dieser Rollengruppe.|Überwachungsprotokolle <p> Verwaltung der Richtlinienkonformität <p> Verwaltung von Informationsrechten <p> Aufbewahrungsverwaltung <p> Überwachungsprotokolle nur anzeigen <p> Schreibgeschützte Konfiguration <p> Schreibgeschützte Empfänger|
+|ContentExplorerContentViewer|Nicht verwendet.|Inhaltsanzeige für die Datenklassifizierung|
+|ContentExplorerListViewer|Nicht verwendet.|Datenklassifizierungslistenanzeige|
+|HelpDesk|Anzeigen und Verwalten von E-Mail-Benutzern.|Kennwort zurücksetzen <p> Benutzeroptionen <p> Schreibgeschützte Empfänger|
+|HygieneManagement|Verwalten von Schutzfunktionen (Antispam, Ansoftware usw.).|Transportschutz <p> Schreibgeschützte Konfiguration <p> Schreibgeschützte Empfänger|
+|MailFlowAdministrator|Anzeigen und Verwalten akzeptierter Domänen und Connectors|Remote- und akzeptierte Domänen <p> Schreibgeschützte Empfänger|
+|OrganizationManagement|Administratorzugriff auf die gesamte Organisation und die Möglichkeit, nahezu jede Aufgabe auszuführen. <p> Mitglieder der Rolle ["Globaler Administrator"](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) in Azure AD erhalten automatisch die Berechtigungen dieser Rollengruppe. <p> **Wichtig:** Da die Rollengruppe "OrganizationManagement" eine leistungsstarke Rolle ist, sollten nur Benutzer, die Verwaltungsaufgaben auf Organisationsebene ausführen, Mitglied dieser Rollengruppe sein.|Antischalware <p> AntiSpam <p> Überwachungsprotokolle <p> Complianceadministrator <p> Dynamische Verteilergruppen <p> Verwaltung von Informationsrechten <p> Erstellen von E-Mail-Empfängern <p> E-Mail-Empfänger <p> Nachrichtenverfolgung <p> Migration <p> Organisationsclientzugriff <p> Organisationskonfiguration <p> Organisationstransporteinstellungen <p> Quarantäne <p> Empfängerrichtlinien <p> Remote- und akzeptierte Domänen <p> Kennwort zurücksetzen <p> Aufbewahrungsverwaltung <p> Rollenverwaltung <p> Sicherheitsadministrator <p> Erstellung und Mitgliedschaft in Sicherheitsgruppen <p> Sicherheitsleseberechtigter <p> Administrator für Vertraulichkeitsbezeichnungen <p> Aufsicht <p> Transportschutz <p> Transportregeln <p> Benutzeroptionen <p> View-Only Antischalware <p> View-Only AntiSpam <p> Überwachungsprotokolle nur anzeigen <p> Schreibgeschützte Konfiguration <p> View-Only Quarantäne <p> Schreibgeschützte Empfänger <p> View-Only Threat Intelligence|
 |QuarantineAdministrator|Verwalten von Nachrichten in Quarantäne für alle Empfänger.|Quarantäne|
-|RecipientManagement|Erstellen, verwalten und Entfernen von Empfängerobjekten in der Organisation.|Dynamische Verteilergruppen <br/><br/> Erstellen von E-Mail-Empfängern <br/><br/> E-Mail-Empfänger <br/><br/> Nachrichtenverfolgung <br/><br/> Migration <br/><br/> Empfängerrichtlinien <br/><br/> Kennwort zurücksetzen|
-|RecordsManagement|Konfigurieren von Kompatibilitätsfeatures wie Aufbewahrungsrichtlinientags, Nachrichtenklassifikationen und Nachrichtenfluss Regeln (auch bekannt als Transportregeln)|Nachrichtenverfolgung <br/><br/> Aufbewahrungsverwaltung <br/><br/> Transportregeln|
-|SecurityAdministrator|Konfigurieren Sie alle Aspekte des Schutzes in der Organisation (Anti-Spam, Antischadsoftware, Antispoofing, Quarantäne usw.). <br/><br/> Mitglieder der Rolle " [Sicherheits Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) " in Azure AD erhalten automatisch die Berechtigungen dieser Rollengruppe.|Antischadsoftware <br/><br/> Antispam <br/><br/> Überwachungsprotokolle <br/><br/> Quarantäne <br/><br/> Sicherheitsadministrator <br/><br/> Vertraulichkeits Bezeichnung-Administrator <br/><br/> Nur anzeigen Antischadsoftware <br/><br/> Nur-anzeigen-Antispam <br/><br/> Überwachungsprotokolle nur anzeigen <br/><br/> Nur-Ansicht-Quarantäne <br/><br/> Bedrohungs Intelligenz mit Ansichts Schutz|
-|SecurityReader|Nur-Ansicht-Zugriff auf alle Aspekte des Schutzes in der Organisation (Antispam, Antischadsoftware, Antispoofing, Quarantäne usw.). <br/><br/> Mitglieder der [Sicherheits Leser](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) Rolle in Azure AD erhalten automatisch die Berechtigungen dieser Rollengruppe.|Sicherheitsleseberechtigter <br/><br/> Nur anzeigen Antischadsoftware <br/><br/> Nur-anzeigen-Antispam <br/><br/> Nur-Ansicht-Quarantäne <br/><br/> Bedrohungs Intelligenz mit Ansichts Schutz|
-|TenantAdmins|Die Mitgliedschaft in dieser Rollengruppe wird in allen Diensten synchronisiert und zentral verwaltet. Standardmäßig ist dieser Rollengruppe keine Rollen zugewiesen. Sie ist jedoch Mitglied der Rollengruppe "Organisationsverwaltung" und erbt diese Berechtigungen.|keine|
-|ViewOnlyOrganizationManagement|Zeigen Sie Empfänger-, Schutz-und Konfigurationsobjekte sowie deren Eigenschaften in der Organisation an.|Complianceadministrator <br/><br/> Sicherheitsadministrator <br/><br/> Sicherheitsleseberechtigter <br/><br/> Vertraulichkeits Bezeichnung-Administrator <br/><br/> Schreibgeschützte Konfiguration <br/><br/> Schreibgeschützte Empfänger|
+|RecipientManagement|Erstellen, Verwalten und Entfernen von Empfängerobjekten in der Organisation.|Dynamische Verteilergruppen <p> Erstellen von E-Mail-Empfängern <p> E-Mail-Empfänger <p> Nachrichtenverfolgung <p> Migration <p> Empfängerrichtlinien <p> Kennwort zurücksetzen|
+|RecordsManagement|Konfigurieren von Kompatibilitätsfeatures, z. B. Aufbewahrungsrichtlinientags, Nachrichtenklassifikationen und Nachrichtenflussregeln (auch als Transportregeln bekannt).|Nachrichtenverfolgung <p> Aufbewahrungsverwaltung <p> Transportregeln|
+|SecurityAdministrator|Konfigurieren Sie alle Aspekte des Schutzes in der Organisation (Antispam, Ansoftware, Antis spoofing, Quarantäne usw.). <p> Mitglieder der Rolle ["Sicherheitsadministrator"](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) in Azure AD erhalten automatisch die Berechtigungen dieser Rollengruppe.|Antischalware <p> AntiSpam <p> Überwachungsprotokolle <p> Quarantäne <p> Sicherheitsadministrator <p> Administrator für Vertraulichkeitsbezeichnungen <p> View-Only Antischalware <p> View-Only AntiSpam <p> Überwachungsprotokolle nur anzeigen <p> View-Only Quarantäne <p> View-Only Threat Intelligence|
+|SecurityReader|Nur-Ansicht-Zugriff auf alle Aspekte des Schutzes in der Organisation (Antispam, Ansoftware, Antis spoofing, Quarantäne usw.). <p> Mitglieder der Rolle ["Sicherheitsleseprogramm"](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) in Azure AD erhalten automatisch die Berechtigungen dieser Rollengruppe.|Sicherheitsleseberechtigter <p> View-Only Antischalware <p> View-Only AntiSpam <p> View-Only Quarantäne <p> View-Only Threat Intelligence|
+|TenantAdmins|Die Mitgliedschaft in dieser Rollengruppe wird über dienste hinweg synchronisiert und zentral verwaltet. Dieser Rollengruppe werden standardmäßig keine Rollen zugewiesen. Sie ist jedoch Mitglied der Rollengruppe "Organisationsverwaltung" und erbt diese Berechtigungen.|n/v|
+|ViewOnlyOrganizationManagement|Anzeigen von Empfänger-, Schutz- und Konfigurationsobjekten und deren Eigenschaften in der Organisation.|Complianceadministrator <p> Sicherheitsadministrator <p> Sicherheitsleseberechtigter <p> Administrator für Vertraulichkeitsbezeichnungen <p> Schreibgeschützte Konfiguration <p> Schreibgeschützte Empfänger|
 |
 
-Wenn Sie in einer kleinen Organisation mit nur wenigen Administratoren arbeiten, müssen Sie diese Benutzer möglicherweise nur der Rollengruppe "Organisationsverwaltung" hinzufügen, und Sie müssen möglicherweise nie die anderen Rollengruppen verwenden. Wenn Sie in einer größeren Organisation arbeiten, verfügen Sie möglicherweise über Administratoren, die bestimmte Aufgaben ausführen, beispielsweise die Empfängerkonfiguration. In diesen Fällen können Sie einen Administrator zur Rollengruppe "Empfängerverwaltung" und einen weiteren Administrator zur Rollengruppe "Organisationsverwaltung" hinzufügen. Diese Administratoren können dann Ihre spezifischen Bereiche verwalten, aber Sie verfügen nicht über Berechtigungen zum Verwalten von Bereichen, für die Sie nicht zuständig sind.
+Wenn Sie in einer kleinen Organisation mit nur wenigen Administratoren arbeiten, müssen Sie diese Benutzer möglicherweise nur der Rollengruppe "Organisationsverwaltung" hinzufügen, und Sie müssen möglicherweise nie die anderen Rollengruppen verwenden. Wenn Sie in einer größeren Organisation arbeiten, haben Sie möglicherweise Administratoren, die bestimmte Aufgaben ausführen, z. B. die Empfängerkonfiguration. In diesen Fällen können Sie der Rollengruppe "Empfängerverwaltung" einen Administrator und der Rollengruppe "Organisationsverwaltung" einen weiteren Administrator hinzufügen. Diese Administratoren können dann ihre spezifischen Bereiche verwalten, aber sie verfügen nicht über Berechtigungen zum Verwalten von Bereichen, für die sie nicht verantwortlich sind.
 
-Wenn die integrierten Rollengruppen in Exchange Online nicht für die Aufgabenbereiche Ihrer Administratoren geeignet sind, können Sie Rollengruppen erstellen und Rollen zu diesen Gruppen hinzufügen. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in eigenständigen EoP](manage-admin-role-group-permissions-in-eop.md).
+Wenn die integrierten Rollengruppen in Exchange Online nicht für die Aufgabenbereiche Ihrer Administratoren geeignet sind, können Sie Rollengruppen erstellen und Rollen zu diesen Gruppen hinzufügen. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in EOP als eigenständige Lösung.](manage-admin-role-group-permissions-in-eop.md)
 
 ## <a name="roles"></a>Rollen
 
-Die integrierten Rollen, die in eigenständigen EoP verfügbar sind, werden in der folgenden Tabelle beschrieben.
+Die integrierten Rollen, die in EOP als eigenständige Lösung verfügbar sind, werden in der folgenden Tabelle beschrieben.
 
 ****
 
-|Rolle * *|Beschreibung|Standardrollengruppen Zuweisungen|
+|Role**|Beschreibung|Standardzuweisungen für Rollengruppen|
 |---|---|---|
-|Antischadsoftware|Anzeigen und Ändern der Konfiguration und der Berichte für Antischadsoftware-Features.|Mitglied <br/><br/> SecurityAdministrator|
-|Antispam|Anzeigen und Ändern der Konfiguration und der Berichte für Anti-Spam-Features.|Mitglied <br/><br/> SecurityAdministrator|
-|Überwachungsprotokolle|Durchsuchen Sie das administratorüberwachungsprotokoll, und zeigen Sie die Ergebnisse an.|ComplianceManagement <br/><br/> Mitglied <br/><br/> SecurityAdministrator|
-|Kompatibilitäts Administrator<sup>\*</sup>||ComplianceManagement <br/><br/> Mitglied <br/><br/> ViewOnlyOrganizationManagement|
-|Daten Klassifizierungs-Inhaltsanzeige<sup>\*</sup>||ContentExplorerContentViewer|
-|Listenanzeige für Datenklassifizierung<sup>\*</sup>||
-|Dynamische Verteilergruppen|Erstellen und verwalten Sie alle Verteilergruppen, e-Mail-aktivierten Sicherheitsgruppen und Mitglieder.|Mitglied <br/><br/> RecipientManagement|
-|Verwaltung von Informationsrechten<sup>\*</sup>||ComplianceManagement <br/><br/> Mitglied|
-|Erstellen von E-Mail-Empfängern|Erstellen und Entfernen von e-Mail-Benutzern.|Mitglied <br/><br/> RecipientManagement|
-|E-Mail-Empfänger|Ändern vorhandener e-Mail-Benutzer|Mitglied <br/><br/> RecipientManagement|
-|Nachrichtenverfolgung<sup>\*</sup>||Mitglied <br/><br/> RecipientManagement <br/><br/> Datensatzverwaltung|
-|Migration<sup>\*</sup>||Mitglied <br/><br/> RecipientManagement|
-|MyBaseOptions|Ermöglicht Benutzern das Anzeigen Ihrer eigenen isolierten Nachrichten. <br/><br/> Diese Rolle wird Benutzern automatisch zugewiesen, und Sie können Sie nicht manuell zuweisen.|keine|
-|Organisations Client Zugriff<sup>\*</sup>||Mitglied|
-|Organisationskonfiguration|Anzeigen von Berichten|Mitglied|
-|Organisations Transport Einstellungen<sup>\*</sup>||Mitglied|
-|Quarantäne|Verwalten aller Typen von isolierten Nachrichten für alle Empfänger.|Mitglied <br/><br/> QuarantineAdministrator <br/><br/> SecurityAdministrator|
-|Empfängerrichtlinien<sup>\*</sup>||Mitglied <br/><br/> RecipientManagement|
-|Remote-und akzeptierte Domänen|Verwalten von Remotedomänen, akzeptierten Domänen und Connectors|MailFlowAdministrator <br/><br/> Mitglied|
-|Kennwort zurücksetzen<sup>\*</sup>||Helpdesk <br/><br/> Mitglied <br/><br/> RecipientManagement|
-|Aufbewahrungsverwaltung<sup>\*</sup>||ComplianceManagement <br/><br/> Mitglied <br/><br/> RecordsManagement|
-|Rollenverwaltung|Erstellen und Verwalten von Rollengruppen.|Mitglied|
-|Sicherheitsadministrator|Verwalten der Konfiguration und der Berichte für alle Sicherheits-und Schutzfunktionen.|Mitglied <br/><br/> SecurityAdministrator <br/><br/> ViewOnlyOrganizationManagement|
-|Erstellen und Mitgliedschaft von Sicherheitsgruppen|Erstellen und Verwalten von e-Mail-aktivierten Sicherheitsgruppen.|Mitglied|
-|Sicherheitsleseberechtigter|Zeigen Sie die Konfiguration und die Berichte für Sicherheits-und Schutzfunktionen an.|Organisationsverwaltung <br/><br/> SecurityReader <br/><br/> ViewOnlyOrganizationManagement|
-|Vertraulichkeits Bezeichnung-Administrator<sup>\*</sup>||Mitglied <br/><br/> SecurityAdministrator <br/><br/> ViewOnlyOrganizationManagement|
-|Aufsicht<sup>\*</sup>||Mitglied|
-|Transport Hygiene|Verwalten von Antischadsoftware, Anti-Spam-Funktionen und Antispoofing-Features.|HygieneManagement <br/><br/> Mitglied|
-|Transportregeln|Erstellen und Verwalten von Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet).|Mitglied <br/><br/> RecordsManagement|
-|Benutzeroptionen|Ändern vorhandener e-Mail-Benutzer|Helpdesk <br/><br/> Mitglied|
-|Nur anzeigen Antischadsoftware|Anzeigen der Konfiguration und der Berichte für Antischadsoftware-Features.|Mitglied <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
-|Nur-anzeigen-Antispam|Anzeigen der Konfiguration und der Berichte für Antispam-Features.|Mitglied <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
-|Überwachungsprotokolle nur anzeigen|Durchsuchen Sie das administratorüberwachungsprotokoll, und zeigen Sie die Ergebnisse an.|ComplianceManagement <br/><br/> Mitglied <br/><br/> SecurityAdministrator|
-|Schreibgeschützte Konfiguration|Zeigen Sie alle Organisations-und Nachrichtenfluss Einstellungen (nicht Empfänger) in der Organisation an.|ComplianceManagement <br/><br/> HygieneManagement <br/><br/> Mitglied <br/><br/> ViewOnlyOrganizationManagement|
-|Nur-Ansicht-Quarantäne|Zeigt alle isolierten Nachrichten für alle Empfänger an.|Mitglied <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
-|Schreibgeschützte Empfänger|Anzeigen von Empfänger Eigenschaften und Ausführen der Nachrichtenablaufverfolgung.|ComplianceManagement <br/><br/> Helpdesk <br/><br/> HygieneManagement <br/><br/> MailFlowAdministrator <br/><br/>  Mitglied <br/><br/> ViewOnlyOrganizationManagement|
-|Bedrohungs Intelligenz mit Ansichts Schutz<sup>\*</sup>||Mitglied <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
+|Antischalware|Anzeigen und Ändern der Konfiguration und der Berichte für Anti-Malware-Features.|OrganizationManagement <p> SecurityAdministrator|
+|AntiSpam|Anzeigen und Ändern der Konfiguration und der Berichte für Antispamfunktionen.|OrganizationManagement <p> SecurityAdministrator|
+|Überwachungsprotokolle|Durchsuchen Sie das Administrator-Überwachungsprotokoll, und zeigen Sie die Ergebnisse an.|ComplianceManagement <p> OrganizationManagement <p> SecurityAdministrator|
+|Complianceadministrator<sup>\*</sup>||ComplianceManagement <p> OrganizationManagement <p> ViewOnlyOrganizationManagement|
+|Inhaltsanzeige für die Datenklassifizierung<sup>\*</sup>||ContentExplorerContentViewer|
+|Datenklassifizierungslistenanzeige<sup>\*</sup>||
+|Dynamische Verteilergruppen|Erstellen und verwalten Sie alle Verteilergruppen, E-Mail-aktivierten Sicherheitsgruppen und Mitglieder.|OrganizationManagement <p> RecipientManagement|
+|Verwaltung von Informationsrechten<sup>\*</sup>||ComplianceManagement <p> OrganizationManagement|
+|Erstellen von E-Mail-Empfängern|Erstellen und Entfernen von E-Mail-Benutzern.|OrganizationManagement <p> RecipientManagement|
+|E-Mail-Empfänger|Ändern vorhandener E-Mail-Benutzer.|OrganizationManagement <p> RecipientManagement|
+|Nachrichtenverfolgung<sup>\*</sup>||OrganizationManagement <p> RecipientManagement <p> Datensatzverwaltung|
+|Migration<sup>\*</sup>||OrganizationManagement <p> RecipientManagement|
+|MyBaseOptions|Ermöglicht Benutzern das Anzeigen ihrer eigenen isolierten Nachrichten. <p> Diese Rolle wird Benutzern automatisch zugewiesen, und Sie können sie nicht manuell zuweisen.|n/v|
+|Organisationsclientzugriff<sup>\*</sup>||OrganizationManagement|
+|Organisationskonfiguration|Anzeigen von Berichten|OrganizationManagement|
+|Organisationstransporteinstellungen<sup>\*</sup>||OrganizationManagement|
+|Quarantäne|Verwalten aller Arten von isolierten Nachrichten für alle Empfänger.|OrganizationManagement <p> QuarantineAdministrator <p> SecurityAdministrator|
+|Empfängerrichtlinien<sup>\*</sup>||OrganizationManagement <p> RecipientManagement|
+|Remote- und akzeptierte Domänen|Verwalten von Remotedomänen, akzeptierten Domänen und Connectors.|MailFlowAdministrator <p> OrganizationManagement|
+|Kennwort zurücksetzen<sup>\*</sup>||HelpDesk <p> OrganizationManagement <p> RecipientManagement|
+|Aufbewahrungsverwaltung<sup>\*</sup>||ComplianceManagement <p> OrganizationManagement <p> RecordsManagement|
+|Rollenverwaltung|Erstellen und Verwalten von Rollengruppen.|OrganizationManagement|
+|Sicherheitsadministrator|Verwalten Der Konfiguration und der Berichte für alle Sicherheits- und Schutzfeatures.|OrganizationManagement <p> SecurityAdministrator <p> ViewOnlyOrganizationManagement|
+|Erstellung und Mitgliedschaft in Sicherheitsgruppen|Erstellen und Verwalten von E-Mail-aktivierten Sicherheitsgruppen.|OrganizationManagement|
+|Sicherheitsleseberechtigter|Zeigen Sie die Konfiguration und Berichte für Sicherheits- und Schutzfeatures an.|Organisationsverwaltung <p> SecurityReader <p> ViewOnlyOrganizationManagement|
+|Administrator für Vertraulichkeitsbezeichnungen<sup>\*</sup>||OrganizationManagement <p> SecurityAdministrator <p> ViewOnlyOrganizationManagement|
+|Aufsicht<sup>\*</sup>||OrganizationManagement|
+|Transportschutz|Verwalten von Anti-Malware, Antispamfunktionen und Antis spoofing-Features.|HygieneManagement <p> OrganizationManagement|
+|Transportregeln|Erstellen und Verwalten von Nachrichtenflussregeln (auch bekannt als Transportregeln).|OrganizationManagement <p> RecordsManagement|
+|Benutzeroptionen|Ändern vorhandener E-Mail-Benutzer.|HelpDesk <p> OrganizationManagement|
+|View-Only Antischalware|Zeigen Sie die Konfiguration und Berichte für Ansoftwarefunktionen an.|OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
+|View-Only AntiSpam|Zeigen Sie die Konfiguration und Berichte für Antispamfunktionen an.|OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
+|Überwachungsprotokolle nur anzeigen|Durchsuchen Sie das Administrator-Überwachungsprotokoll, und zeigen Sie die Ergebnisse an.|ComplianceManagement <p> OrganizationManagement <p> SecurityAdministrator|
+|Schreibgeschützte Konfiguration|Anzeigen aller Organisations- und E-Mail-Flusseinstellungen (ohne Empfänger) in der Organisation.|ComplianceManagement <p> HygieneManagement <p> OrganizationManagement <p> ViewOnlyOrganizationManagement|
+|View-Only Quarantäne|Alle isolierten Nachrichten für alle Empfänger anzeigen.|OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
+|Schreibgeschützte Empfänger|Anzeigen von Empfängereigenschaften und Ausführen der Nachrichtenverfolgung.|ComplianceManagement <p> HelpDesk <p> HygieneManagement <p> MailFlowAdministrator <p>  OrganizationManagement <p> ViewOnlyOrganizationManagement|
+|View-Only Threat Intelligence<sup>\*</sup>||OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
 |
 
-<sup>\*</sup> Obwohl diese Rolle verfügbar ist, wird Sie im Grunde nichts Nützliches in eigenständigen EoP.
+<sup>\*</sup> Obwohl diese Rolle verfügbar ist, ist sie in eigenständigem EOP im Wesentlichen nicht hilfreich.
 
-## <a name="microsoft-365-permissions-in-standalone-eop"></a>Microsoft 365-Berechtigungen in eigenständigen EoP
+## <a name="microsoft-365-permissions-in-standalone-eop"></a>Microsoft 365-Berechtigungen in EOP als eigenständige Lösung
 
-Wenn Sie einen Benutzer im Microsoft 365 Admin Center erstellen, können Sie festlegen, ob dem Benutzer verschiedene Administratorrollen wie globaler Administrator, Dienstadministrator, Kennwort-Administrator usw. zugewiesen werden sollen. Einige, jedoch nicht alle, Microsoft 365-Rollen erteilen dem Benutzer Administratorberechtigungen in EoP.
+Wenn Sie einen Benutzer im Microsoft 365 Admin Center erstellen, können Sie auswählen, ob Sie dem Benutzer verschiedene Administratorrollen zuweisen möchten, z. B. globaler Administrator, Dienstadministrator, Kennwortadministrator und so weiter. Einige, aber nicht alle Microsoft 365-Rollen gewähren dem Benutzer Administratorberechtigungen in EOP.
 
 > [!NOTE]
-> Das Konto, das Sie zum Erstellen ihrer eigenständigen EoP-Organisation verwendet haben, wird automatisch der globalen Administratorrolle zugewiesen.
+> Das Konto, das Sie zum Erstellen Ihrer eigenständigen EOP-Organisation verwendet haben, wird automatisch der globalen Administratorrolle zugewiesen.
 
-In der folgenden Tabelle sind die Microsoft 365-Rollen und die eigenständigen EoP-Rollengruppen aufgelistet, denen Sie entsprechen. Weitere Informationen zu diesen Rollen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+In der folgenden Tabelle sind die Microsoft 365-Rollen und die eigenständigen EOP-Rollengruppen aufgeführt, denen sie entsprechen. Weitere Informationen zu diesen Rollen finden Sie unter ["Informationen zu Administratorrollen".](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
 
 ****
 
-|Microsoft 365-Rolle|EoP-Rollengruppe|
+|Microsoft 365-Rolle|Rollengruppe "EOP"|
 |---|---|
-|Exchange-Administrator|Mitglied|
-|Globaler Administrator|Mitglied <br/><br/> **Hinweis**: die globale Administratorrolle und die Mitglied-Rollengruppe sind über eine spezielle Rollengruppe "Unternehmens Administrator" verbunden. Die Rollengruppe "Unternehmens Administrator" wird intern verwaltet und kann nicht direkt geändert werden.|
-|Kennwortadministrator|Helpdesk|
-|Globaler Leser|ViewOnlyOrganizationManagement|
+|Exchange-Administrator|OrganizationManagement|
+|Globaler Administrator|OrganizationManagement <p> **Hinweis:** Die globale Administratorrolle und die Rollengruppe "OrganizationManagement" sind mithilfe einer speziellen Rollengruppe "Unternehmensadministrator" miteinander verknüpft. Die Rollengruppe "Unternehmensadministrator" wird intern verwaltet und kann nicht direkt geändert werden.|
+|Kennwortadministrator|HelpDesk|
+|Globale Leseberechtigung|ViewOnlyOrganizationManagement|
 |Sicherheitsadministrator|SecurityAdministrator|
 |Benutzer mit Leseberechtigung für Sicherheitsfunktionen|SecurityReader|
 |
 
-Andere Microsoft 365-Rollen verfügen nicht über eine entsprechende EoP-Rollengruppe und erteilen keine administrativen Berechtigungen in EoP. Weitere Informationen zum Zuweisen einer Microsoft 365-Rolle zu einem Benutzer finden Sie unter [Zuweisen von Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles).
+Andere Microsoft 365-Rollen verfügen nicht über eine entsprechende EOP-Rollengruppe und gewähren keine Administratorberechtigungen in EOP. Weitere Informationen zum Zuweisen einer Microsoft 365-Rolle zu einem Benutzer finden Sie unter [Zuweisen von Administratorrollen.](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
 
-Benutzern können in EoP Administratorrechte erteilt werden, ohne Sie zu Microsoft 365-Rollen hinzuzufügen. Hierzu fügen Sie den Benutzer als Mitglied einer EoP-Rollengruppe hinzu. Der Benutzer erhält Berechtigungen in EoP, erhält aber keine Berechtigungen in anderen Microsoft 365-Arbeitsauslastungen.
+Benutzern können Administratorrechte in EOP gewährt werden, ohne sie zu Microsoft 365-Rollen hinzufügen zu müssen. Dazu fügen Sie den Benutzer als Mitglied einer EOP-Rollengruppe hinzu. Der Benutzer bekommt Berechtigungen in EOP, aber keine Berechtigungen in anderen Microsoft 365-Workloads.
 
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
-Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie eine Rollengruppe erfolgreich kopiert haben:
+Gehen Sie wie folgt vor, um sicherzustellen, dass Sie eine Rollengruppe erfolgreich kopiert haben:
 
-- Wechseln Sie in der Exchange-Verwaltungskonsole zu **Berechtigungen** \> **Administratorrollen**, und überprüfen Sie, ob die Rollengruppe aufgeführt (oder nicht aufgeführt) ist. Wählen Sie die Rollengruppe aus, und überprüfen Sie die Einstellungen im Detail **Edit** Bereich, oder klicken Sie auf ![ Bearbeitungssymbol bearbeiten ](../../media/ITPro-EAC-EditIcon.png) , um die Einstellungen zu überprüfen.
+- Wechseln Sie in der  EAC zu "Administratorrollen für Berechtigungen", und stellen Sie sicher, dass die Rollengruppe \> aufgeführt (oder nicht aufgeführt) ist. Wählen Sie die Rollengruppe aus, und überprüfen  Sie die Einstellungen im Detailbereich, oder klicken Sie auf das ![ Bearbeitungssymbol, ](../../media/ITPro-EAC-EditIcon.png) um die Einstellungen zu überprüfen.
 
-- Ersetzen Sie in Exchange Online PowerShell \<Role Group Name\> durch den Namen der Rollengruppe, und führen Sie den folgenden Befehl aus, um zu überprüfen, ob die Rollengruppe vorhanden ist (oder nicht vorhanden ist), und überprüfen Sie die Einstellungen:
+- Ersetzen Sie in Exchange Online PowerShell den Namen der Rollengruppe, und führen Sie den folgenden Befehl aus, um zu überprüfen, ob die Rollengruppe vorhanden (oder nicht vorhanden) ist, und überprüfen Sie die \<Role Group Name\> Einstellungen:
 
-    ```PowerShell
-    Get-RoleGroup -Identity "<Role Group Name>" | Format-List
-    ```
+  ```PowerShell
+  Get-RoleGroup -Identity "<Role Group Name>" | Format-List
+  ```

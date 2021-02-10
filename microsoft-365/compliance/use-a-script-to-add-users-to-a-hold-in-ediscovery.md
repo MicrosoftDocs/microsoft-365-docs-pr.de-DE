@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: Erfahren Sie, wie Sie ein Skript ausführen, um Postfächer & OneDrive for & einem neuen Archiv hinzuzufügen, das einem eDiscovery-Fall im Microsoft 365 Compliance Center zugeordnet ist.
-ms.openlocfilehash: 72fd9b8e7b63b36399d055e2eb710e8b53967e44
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 278e8e051165eca906e9b454268068cbbe6aef05
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126438"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175574"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Verwenden eines Skripts zum Hinzufügen von Benutzern zu einem Haltebereich in einem Core eDiscovery-Fall
 
@@ -45,13 +45,13 @@ Hier sind die Schritte, um dies zu geschehen:
 
 - Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Security & Compliance Center und ein SharePoint Online-Administrator sein, um das Skript in Schritt 3 ausführen zu können. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office 365 Security & Compliance Center](assign-ediscovery-permissions.md).
 
-- Einem Archiv, das einem eDiscovery-Fall im Security & Compliance Center zugeordnet ist, können maximal 1.000 Postfächer und 100 Websites hinzugefügt werden. Wenn jeder Benutzer, den Sie in die Warteschleife setzen möchten, über eine OneDrive for #A0 verfügt, können Sie mithilfe des Skripts in diesem Artikel maximal 100 Benutzer zu einem Haltewert hinzufügen.
+- Einem Archiv, das einem eDiscovery-Fall im Security & Compliance Center zugeordnet ist, können maximal 1.000 Postfächer und 100 Websites hinzugefügt werden. Unter der Annahme, dass jeder Benutzer, den Sie in die Warteschleife setzen möchten, über eine OneDrive for #A0 verfügt, können Sie mithilfe des Skripts in diesem Artikel maximal 100 Benutzer zu einem Haltewert hinzufügen.
 
 - Speichern Sie die Liste der Benutzer, die Sie in Schritt 2 erstellt haben, und das Skript in Schritt 3 im selben Ordner. Dies erleichtert die Ausführung des Skripts.
 
 - Das Skript fügt die Liste der Benutzer einem neuen Halteraum hinzu, der einem vorhandenen Fall zugeordnet ist. Stellen Sie sicher, dass der Fall, dem Sie den Halteraum zuordnen möchten, erstellt wird, bevor Sie das Skript ausführen.
 
-- Das Skript in diesem Artikel unterstützt die moderne Authentifizierung beim Herstellen einer Verbindung mit Security & Compliance Center PowerShell und SharePoint Online Management Shell. Sie können das Skript wie folgt verwenden, wenn Sie eine Microsoft 365- oder Microsoft 365 -GCC-Organisation sind. If you are an Office 365 Germany organization, a Microsoft 365 GCC High organization, or a Microsoft 365 DoD organization, you will have to edit the script to successfully run it. Insbesondere müssen Sie die Zeile bearbeiten und die `Connect-IPPSSession` *Parameter ConnectionUri* und *AzureADAuthorizationEndpointUri* (und die entsprechenden Werte für Ihren Organisationstyp) verwenden, um eine Verbindung mit Security & Compliance Center PowerShell herzustellen. Weitere Informationen finden Sie in den Beispielen in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+- Das Skript in diesem Artikel unterstützt die moderne Authentifizierung beim Herstellen einer Verbindung mit Security & Compliance Center PowerShell und SharePoint Online Management Shell. Sie können das Skript wie folgt verwenden, wenn Sie eine Microsoft 365- oder Microsoft 365 GCC-Organisation sind. If you are an Office 365 Germany organization, a Microsoft 365 GCC High organization, or a Microsoft 365 DoD organization, you will have to edit the script to successfully run it. Insbesondere müssen Sie die Zeile bearbeiten und die `Connect-IPPSSession` *Parameter ConnectionUri* und *AzureADAuthorizationEndpointUri* (und die entsprechenden Werte für Ihren Organisationstyp) verwenden, um eine Verbindung mit Security & Compliance Center PowerShell herzustellen. Weitere Informationen finden Sie in den Beispielen in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
 
 - Das Skript trennt automatisch die Verbindung zu Security & Compliance Center PowerShell und SharePoint Online Management Shell.
 
@@ -67,7 +67,7 @@ Wechseln Sie [zu "Einrichten der SharePoint](https://go.microsoft.com/fwlink/p/?
 
 ## <a name="step-2-generate-a-list-of-users"></a>Schritt 2: Generieren einer Liste von Benutzern
 
-Das Skript in Schritt 3 erstellt ein Archiv, das einem eDiscovery-Fall zugeordnet ist, und fügt die Postfächer und OneDrive for #A0 einer Liste von Benutzern zum Haltespeicher hinzu. Sie können einfach die E-Mail-Adressen in eine Textdatei eingeben oder einen Befehl in Windows PowerShell ausführen, um eine Liste der E-Mail-Adressen zu erhalten und sie in einer Datei zu speichern (in dem Ordner, in dem Sie das Skript in Schritt 3 speichern).
+Mit dem Skript in Schritt 3 wird ein Archiv erstellt, das einem eDiscovery-Fall zugeordnet ist, und die Postfächer und OneDrive for #A0 einer Liste von Benutzern zum Archiv hinzufügen. Sie können einfach die E-Mail-Adressen in eine Textdatei eingeben oder einen Befehl in Windows PowerShell ausführen, um eine Liste der E-Mail-Adressen zu erhalten und sie in einer Datei zu speichern (in dem Ordner, in dem Sie das Skript in Schritt 3 speichern).
   
 Hier sehen Sie einen PowerShell-Befehl (den Sie mithilfe der Remote-PowerShell ausführen, die mit Ihrer Exchange Online-Organisation verbunden ist), um eine Liste der E-Mail-Adressen für alle Benutzer in Ihrer Organisation zu erhalten und in einer Textdatei mit dem Namen HoldUsers.txt.
   
@@ -81,15 +81,15 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 Wenn Sie das Skript in diesem Schritt ausführen, werden Sie zur Eingabe der folgenden Informationen aufgefordert. Stellen Sie sicher, dass diese Informationen bereit sind, bevor Sie das Skript ausführen.
   
-- **Ihre Benutzeranmeldeinformationen:** Das Skript verwendet Ihre Anmeldeinformationen, um eine Verbindung mit dem Security & Compliance Center mit der Remote-PowerShell herzustellen. Diese Anmeldeinformationen werden auch für den Zugriff auf SharePoint Online verwendet, um die OneDrive for #A0 für die Benutzerliste zu erhalten.
+- **Ihre Benutzeranmeldeinformationen:** Das Skript verwendet Ihre Anmeldeinformationen, um eine Verbindung mit Security & Compliance Center mit PowerShell herzustellen. Diese Anmeldeinformationen werden auch für den Zugriff auf SharePoint Online verwendet, um die OneDrive for #A0 für die Benutzerliste zu erhalten.
 
-- **Name Ihrer Meine Website-Domäne:** Die Domäne "Meine Website" ist die Domäne, die alle OneDrive for #A0 in Ihrer Organisation enthält. Wenn beispielsweise die URL für Ihre Meine Website-Domäne ist, geben Sie ein, wenn das Skript Sie zur Eingabe des Namens Ihrer Meine **https://contoso-my.sharepoint.com**  `contoso` Website-Domäne anfordert.
+- **Name Ihrer SharePoint-Domäne:** Das Skript fordert Sie zur Eingabe dieses Namens auf, damit eine Verbindung mit dem SharePoint Admin Center hergestellt werden kann. Außerdem wird der Domänenname für die #A0 in Ihrer Organisation verwendet. Wenn beispielsweise die URL für Ihr Admin Center und die URL für OneDrive ist, geben Sie ein, wenn Das Skript Sie zur Eingabe Ihres `https://contoso-admin.sharepoint.com` `https://contoso-my.sharepoint.com` `contoso` Domänennamens anfordern.
 
 - **Name des Falls:** Der Name eines vorhandenen Falls. Das Skript erstellt einen neuen Halteraum, der diesem Fall zugeordnet ist.
 
-- **Der Name der Halteschleife:** Der Name des Halteraums, den das Skript erstellt und dem angegebenen Fall zuzuordnen ist.
+- **Der Name der Halteschleife:** Der Name des Halteraums, den das Skript erstellt und dem angegebenen Fall zuzuordnen.
 
-- **Suchabfrage für einen abfragebasierten Halteraum:** Sie können ein abfragebasiertes Haltefeld erstellen, sodass nur der Inhalt, der den angegebenen Suchkriterien entspricht, in einem Haltefeld platziert wird. Drücken Sie einfach die **EINGABETASTE,** wenn Sie zur Eingabe einer Suchabfrage aufgefordert werden, um alle Inhalte in der Warteschleife zu platzieren.
+- **Suchabfrage für ein abfragebasiertes Haltefeld:** Sie können ein abfragebasiertes Haltefeld erstellen, sodass nur der Inhalt, der die angegebenen Suchkriterien erfüllt, in einem Haltefeld platziert wird. Drücken Sie einfach die **EINGABETASTE,** wenn Sie zur Eingabe einer Suchabfrage aufgefordert werden, um alle Inhalte in der Warteschleife zu platzieren.
 
 - **Aktivieren des Haltepunkts oder nicht:** Sie können das Skript aktivieren lassen, nachdem es erstellt wurde, oder Sie können das Skript den Halteraum erstellen lassen, ohne ihn zu aktivieren. Wenn sie das Skript nicht aktivieren, können Sie es später im Security & Compliance Center oder durch Ausführen der folgenden PowerShell-Befehle aktivieren:
 
@@ -103,7 +103,7 @@ Wenn Sie das Skript in diesem Schritt ausführen, werden Sie zur Eingabe der fol
 
 - **Name der Textdatei mit** der Liste der Benutzer – Der Name der Textdatei aus Schritt 2, die die Liste der Benutzer enthält, die dem Halteraum hinzugefügt werden. Wenn sich diese Datei im selben Ordner wie das Skript befindet, geben Sie einfach den Namen der Datei ein (z. B. HoldUsers.txt). Wenn sich die Textdatei in einem anderen Ordner befindet, geben Sie den vollständigen Pfadnamen der Datei ein.
 
-Nachdem Sie die Vom Skript zur Eingabe aufgeforderten Informationen gesammelt haben, besteht der letzte Schritt im Ausführen des Skripts, um den neuen Halteraum zu erstellen und Benutzer hinzuzufügen.
+Nachdem Sie die Vom Skript zur Eingabe aufgeforderten Informationen gesammelt haben, besteht der letzte Schritt im Ausführen des Skripts zum Erstellen des neuen Halteraums und hinzufügen von Benutzern.
   
 1. Speichern Sie den folgenden Text in Windows PowerShell Skriptdatei, indem Sie das Dateinamensuffix `.ps1` . Beispiel: `AddUsersToHold.ps1`.
 
