@@ -19,26 +19,26 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
-description: Hier erfahren Sie, wie Sie Ihre bevorzugten niederländischer im Nachrichtencenter so festlegen, dass Beiträge automatisch übersetzt werden.
+description: Erfahren Sie, wie Sie im Nachrichtencenter Ihre bevorzugte Sprache festlegen, damit Beiträge automatisch übersetzt werden.
 ms.openlocfilehash: f998ee8f95ea9bd23ef16cef9e65eeaf4945680e
 ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/27/2020
 ms.locfileid: "44399740"
 ---
-# <a name="language-translation-for-message-center-posts"></a>Sprachübersetzung für Nachrichtencenter-Beiträge
+# <a name="language-translation-for-message-center-posts"></a>Sprachübersetzung für Nachrichtencenterbeiträge
 
-Nachrichtencenter-Beiträge werden nur aufgrund der Aktualität der bereitgestellten Informationen in Englisch verfasst, können aber automatisch in der Sprache angezeigt werden, die in Ihren persönlichen Spracheinstellungen für Microsoft 365 angegeben ist. Wenn Sie für Ihre bevorzugte Sprache etwas anderes als Englisch festlegen, wird im Nachrichtencenter eine Option zum automatischen Übersetzen von Beiträgen angezeigt. Die Nachrichten werden maschinell in Ihre bevorzugte Sprache übersetzt, das heißt, ein Computer hat die Übersetzung erstellt. Diese Option steuert die Standardansicht, doch können Sie auch Beiträge über das Dropdownmenü in jede der Sprachen, die wir für Übersetzungen unterstützen, übersetzen und darin anzeigen lassen. Wenn Sie "Englisch" auswählen, setzen wir die Nachricht auf die ursprüngliche englische Version zurück.
+Nachrichtencenterbeiträge sind nur aufgrund der Aktualität der von uns geposteten Informationen in Englisch verfasst, können jedoch automatisch in der Sprache angezeigt werden, die mit Ihren persönlichen Spracheinstellungen für Microsoft 365 festgelegt wurde. Wenn Sie für Ihre bevorzugte Sprache etwas anderes als Englisch festlegen, wird im Nachrichtencenter eine Option zum automatischen Übersetzen von Beiträgen angezeigt. Die Nachrichten werden maschinell in Ihre bevorzugte Sprache übersetzt, das heißt, ein Computer hat die Übersetzung erstellt. Diese Option steuert die Standardansicht, doch können Sie auch Beiträge über das Dropdownmenü in jede der Sprachen, die wir für Übersetzungen unterstützen, übersetzen und darin anzeigen lassen. Wenn Sie "Englisch" auswählen, setzen wir die Nachricht auf die ursprüngliche englische Version zurück.
   
 > [!IMPORTANT]
 > Bevor Sie Ihre Spracheinstellungen für das Nachrichtencenter auswählen können, müssen Sie Ihre bevorzugte Sprache festlegen. Wenn für Ihre Sprache "Englisch" festgelegt wurde, werden keine Übersetzungsoptionen angezeigt. Sie können keine bevorzugte Sprache für andere angeben; jede Person muss diese Einstellung für sich selbst ändern. 
   
 ## <a name="set-your-preferred-language"></a>Festlegen Ihrer bevorzugten Sprache
 
-1. Wählen Sie auf der Microsoft 365-Verwaltungskonsole oder der Startseite das Symbol "Einstellungen" in der oberen rechten Ecke des Fensters aus.
+1. Wählen Sie im Microsoft 365 Admin Center oder auf der Startseite in der oberen rechten Ecke des Fensters das Symbol „Einstellungen“ aus.
   
-2. Wählen Sie unter **Sprache und Zeitzone**die Option **Alle anzeigen** aus, um die verfügbaren Optionen anzuzeigen. Wählen Sie im Dropdownmenü die gewünschte Sprache aus, und wählen Sie dann **Speichern**aus. Microsoft 365 wird versuchen, die neue Sprache zu aktualisieren und anzuzeigen. Wenn das nicht sofort geschieht oder wenn es zu lange zu dauern scheint, können Sie entweder die Ansicht in Ihrem Browser aktualisieren oder sich abmelden und dann erneut anmelden.
+2. Wählen Sie unter **Sprache und Zeitzone** die Option **Alle anzeigen** aus, um die verfügbaren Optionen anzuzeigen. Wählen Sie im Dropdownmenü Ihre gewünschte Sprache aus, und klicken Sie dann auf **Speichern**. Microsoft 365 wird versuchen, die neue Sprache zu aktualisieren und anzuzeigen. Wenn das nicht sofort geschieht oder wenn es zu lange zu dauern scheint, können Sie entweder die Ansicht in Ihrem Browser aktualisieren oder sich abmelden und dann erneut anmelden.
   
 ## <a name="machine-translation-in-message-center"></a>Maschinelle Übersetzung im Nachrichtencenter
 
