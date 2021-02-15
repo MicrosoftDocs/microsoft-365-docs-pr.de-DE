@@ -30,6 +30,8 @@
       href: model-usage-analytics.md
     - name: Nutzung der Terminologiespeichertaxonomie beim Erstellen eines Extraktors
       href: leverage-term-store-taxonomy.md
+    - name: Barrierefreiheitsmodus für SharePoint Syntex
+      href: accessibility-mode.md
 - name: Einführung
   items:
     - name: Erste Schritte mit der Einführung
