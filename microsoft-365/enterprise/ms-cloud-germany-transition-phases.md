@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
-ms.openlocfilehash: c0fdfc83bbdb8ec4c2f408cef113a487908957bf
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
-ms.translationtype: HT
+ms.openlocfilehash: 9dc2f4c0923f52bfc83a9177b595a6955a3afa8f
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50110029"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242734"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Aktionen und Auswirkungen der Migrationsphasen für die Migration von Microsoft Cloud Deutschland (generell)
 
@@ -96,6 +96,15 @@ Die Backend-Funktionen von Exchange Online Protection (EOP) werden in die neue R
 | Wechseln von Skype for Business zu Microsoft Teams. | Bestehende Skype for Business-Kunden werden auf Office 365-Dienste in Europa migriert und anschließend auf Microsoft Teams in der Region Deutschland der Office 365-Dienste umgestellt. | Skype for Business-Kunden | – Benutzer können sich am Migrationsdatum nicht bei Skype for Business anmelden. Zehn Tage vor der Migration werden Sie im Admin Center über den Zeitpunkt der Migration informiert, und erneut, wenn die Migration beginnt. <br><br> – Die Richtlinienkonfiguration wird migriert.  <br><br> – Die Benutzer werden nach Teams migriert und verfügen nach der Migration nicht mehr über Skype for Business. <br><br> – Die Benutzer müssen den Teams-Desktopclient installiert haben. Die Installation erfolgt während der 10 Tage über Richtlinien in der Skype for Business-Infrastruktur. Wenn dies jedoch fehlschlägt, müssen Benutzer den Client manuell herunterladen oder eine Verbindung mit einem unterstützten Browser herstellen. <br><br> – Kontakte und Besprechungen werden nach Teams migriert. <br><br> – Benutzer können sich während der Übergangszeit der Dienste nach Office 365-Dienste nicht in Skype for Business anmelden und auch nicht, bevor die Kunden-DNS-Einträge abgeschlossen sind. <br><br> – Kontakte und vorhandene Besprechungen werden weiterhin als Skype for Business-Besprechungen funktionieren.  |
 |||||
 
+
+## <a name="office-apps-phase-8-of-9"></a>Office Apps (Phase 8 von 9)
+
+| Schritt(e) | Beschreibung | Betrifft | Auswirkung |
+|:-------|:-----|:-------|:-------|
+| Clients, Office Online während der Office-Client-Übernahmemigration, Azure AD finalisiert den Mandantenbereich so, dass er auf die Office 365-Dienste verweist. | Mit dieser Konfigurationsänderung können Office-Clients aktualisiert und auf die Office 365-Dienstendpunkte verweisen. | Alle Office-Kunden | – Benachrichtigen Sie die Benutzer, dass _alle_ Office-Apps geschlossen werden, und melden Sie sich dann erneut an (oder erzwingen Sie den Neustart der Clients und die Anmeldung der Benutzer), damit die Office-Clients die Änderung übernehmen können. <br><br> – Informieren Sie die Benutzer und Mitarbeiter des Helpdesks, dass Benutzern *möglicherweise* ein Office-Banner angezeigt wird, das sie dazu auffordert, Office-Apps innerhalb von 72 Stunden nach der Übernahmemigration zu reaktivieren. <br><br> – Alle Office-Anwendungen auf privaten Computern müssen geschlossen werden, und die Benutzer müssen sich abmelden und dann erneut anmelden. Melden Sie sich in der gelben Aktivierungsleiste an, um die Office 365-Dienste zu reaktivieren. <br><br> – Gemeinsam genutzte Computer erfordern Aktionen, die mit privaten Computern vergleichbar sind, erfordern aber keine spezielle Vorgehensweise. <br><br> – Auf mobilen Geräten müssen sich die Benutzer von Apps abmelden, sie schließen und sich dann erneut anmelden. |
+|||||
+
+
 ## <a name="office-services"></a>Office-Dienste
 
 Der Dienst „zuletzt verwendet“ (most recently used, MRU) in Office ist eine Übernahme des Deutschland-Dienstes zu Office 365-Dienste, keine Migration.  Nach der Migration vom Office.com-Portal werden nur MRU-Links von der Seite der Office 365-Dienste sichtbar sein. MRU-Links vom Deutschland-Dienst werden nicht als MRU-Links in den Office 365-Diensten sichtbar sein. MRU-Links in Office 365 sind erst verfügbar, wenn die Mandanten-Migration abgeschlossen ist.
@@ -116,7 +125,7 @@ Der Dienst „zuletzt verwendet“ (most recently used, MRU) in Office ist eine 
 
 Erste Schritte:
 
-- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
+- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
 - [Hilfe zur Microsoft Cloud Deutschland-Migration Assistance](https://aka.ms/germanymigrateassist)
 - [So können Sie sich für die Migration anmelden](ms-cloud-germany-migration-opt-in.md)
 - [Kundenerfahrung während der Migration](ms-cloud-germany-transition-experience.md)
@@ -124,7 +133,7 @@ Erste Schritte:
 Der Weg durch die Umstellung:
 
 - [Zusätzliche Vorarbeit](ms-cloud-germany-transition-add-pre-work.md)
-- Zusätzliche Informationen für [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräte](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräte](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud-Apps:
 

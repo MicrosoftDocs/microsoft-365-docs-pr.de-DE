@@ -275,6 +275,8 @@
                   href: mtp/device-profile.md
                 - name: Feedback geben
                   href: mtp/feedback.md
+                - name: Zugriff auf Managed Security Service Provider (MSSP) bereitstellen
+                  href: mtp/mssp-access.md
                 - name: Erstellen von ServiceNow-Tickets und -Aufgaben
                   items:
                     - name: Übersicht über die ServiceNow-Integration

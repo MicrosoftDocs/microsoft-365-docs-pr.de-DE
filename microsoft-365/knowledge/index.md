@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-topics
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Ressourcen für Microsoft -Themen finden.
-ms.openlocfilehash: 3e75dfcfa17e5604e04b6f5e49be9019b1679110
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: d5c54bda3432fc9a1ff5ce4342cc523544eb6e78
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107170"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242866"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Einführung in Microsoft -Themen
 
@@ -39,9 +39,12 @@ Die Ressourcen in diesem Abschnitt helfen Ihnen, mehr darüber zu erfahren, was 
 
 | Diese Informationen finden Sie unter: | Hilfreiche Ressource: |
 |:-----|:-----|
-|Weitere Informationen zu Themen zu Themen in Der Sprache|[Übersicht über Microsoft -Themen](topic-experiences-overview.md)|
-|Erfahren Sie, wie Themen von AI erkannt und vorgeschlagen werden|[Ermittlung von Microsoft -Themen](topic-experiences-discovery.md)|
+|Weitere Informationen zu Themen zu Thema|[Übersicht über Microsoft -Themen](topic-experiences-overview.md)|
+|Erfahren Sie, wie Themen von AI entdeckt und vorgeschlagen werden|[Ermittlung von Microsoft -Themen](topic-experiences-discovery.md)|
 |Informationen zur Themensicherheit|[Sicherheit und Datenschutz in Microsoft Zwischending](topic-experiences-security-privacy.md)|
+|Erfahren Sie, wie Sie Themen zu Themen erhalten|[Microsoft -Themen-Produktseite](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
+|Ressourcen finden Sie im Microsoft Tech Community Resource Center.|[Microsoft Viva Topics Tech Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
+
 
 
 ## <a name="adoption"></a>Einführung

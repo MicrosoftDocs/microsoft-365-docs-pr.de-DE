@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
+title: Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,16 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Erfahren Sie, wie Benutzer mit Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobile und das Web arbeiten und welche Apps Vertraulichkeitsbezeichnungen unterstützen.
+description: Informationen für IT-Administratoren zum Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobil und das Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95da9753d773e3bb9724a8d0ae2ab0e2f2618c27
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 3f2be9310e6230bf0530670796dea56f775f365d
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233717"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242665"
 ---
-# <a name="use-sensitivity-labels-in-office-apps"></a>Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
+# <a name="manage-sensitivity-labels-in-office-apps"></a>Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
@@ -41,7 +41,7 @@ Um Vertraulichkeitsbezeichnungen mit diesen eigenständigen Editionen von Office
 
 Für jede Funktion sind in den folgenden Tabellen die Mindestversion von Office aufgeführt, die Sie benötigen, um Vertraulichkeitsbezeichnungen mithilfe integrierter Bezeichnungen zu unterstützen. Oder wenn sich die Bezeichnungsfunktion in der öffentlichen Vorschau befindet oder für eine zukünftige Version überprüft wird. Verwenden Sie [die Microsoft 365-Roadmap](https://aka.ms/MIPC/Roadmap) für Details zu zukünftigen Versionen.
 
-Neue Versionen von Office-Apps werden zu unterschiedlichen Zeiten für verschiedene Updatekanäle verfügbar gemacht. Weitere Informationen, einschließlich der Konfiguration Ihres Updatekanals, damit Sie eine neue Bezeichnungsfunktion testen können, die Sie interessieren, finden Sie unter Übersicht über Updatekanäle für [Microsoft 365-Apps.](https://docs.microsoft.com/DeployOffice/overview-update-channels) Neue Funktionen, die sich in der privaten Vorschau befinden, sind nicht in der Tabelle enthalten, aber Sie können diesen Vorschauen beitreten, indem Sie Ihre Organisation für das private Vorschauprogramm von [Microsoft Information Protection nominieren.](https://aka.ms/mip-preview)
+Neue Versionen von Office-Apps werden zu unterschiedlichen Zeiten für verschiedene Updatekanäle zur Verfügung stellen. Weitere Informationen, einschließlich der Konfiguration Ihres Updatekanals, damit Sie eine neue Bezeichnungsfunktion testen können, die Sie interessieren, finden Sie unter Übersicht über Updatekanäle für [Microsoft 365-Apps.](https://docs.microsoft.com/DeployOffice/overview-update-channels) Neue Funktionen, die sich in der privaten Vorschau befinden, sind nicht in der Tabelle enthalten, aber Sie können möglicherweise an diesen Vorschauen teilnehmen, indem Sie Ihre Organisation für das private Vorschauprogramm von [Microsoft Information Protection nominieren.](https://aka.ms/mip-preview)
 
 > [!NOTE]
 > Die Namen der Updatekanäle für Office-Apps wurden kürzlich geändert. Beispielsweise ist monatlicher Kanal jetzt aktueller Kanal, und Office Insider ist jetzt Beta-Kanal. Weitere Informationen finden Sie unter ["Änderungen am Aktualisieren von Kanälen für Microsoft 365-Apps".](https://docs.microsoft.com/deployoffice/update-channels-changes)
@@ -63,7 +63,7 @@ Die aufgeführten Zahlen sind die mindestversion der Office-Anwendung, die für 
 |[Inhalt markieren](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables)                                              | 2010+           | 16,42+     | 2,42+ | 16.0.13328+ | Überprüft |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16,35+   | Derzeit überprüft   | Derzeit überprüft         | Derzeit überprüft                                                        |
+|[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16,35+   | Überprüft   | Überprüft         | Überprüft                                                        |
 |[Erste Schritte mit der Datenklassifizierung](data-classification-overview.md) und dem Senden von Daten für Administratoren                      | 2011+ | 16,43+ | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider) | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider) | Ja <sup>\*</sup>                                                        |
 |[Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider)             | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider)         | Überprüft   | Roll out: 16.0.13628+ | Überprüft                                            
 |[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Roll out: 16.44+ | Überprüft | Überprüft | [Ja – Opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -102,15 +102,15 @@ Der integrierte Office-Bezeichnungsclient lädt Vertraulichkeitsbezeichnungen un
 - Microsoft 365 Security Center
 - Office 365 Security & Compliance Center
 
-Um den integrierten Office-Bezeichnungsclient zu verwenden, [](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) müssen Sie eine oder mehrere Bezeichnungsrichtlinien für Benutzer aus einem der aufgelisteten Admin Center und eine unterstützte Version von [Office veröffentlichen.](#support-for-sensitivity-label-capabilities-in-apps)
+Um den integrierten Office-Bezeichnungsclient zu verwenden, [](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) müssen Sie eine oder mehrere Bezeichnungsrichtlinien für Benutzer aus einem der aufgeführten Admin Center und eine unterstützte Version von [Office veröffentlichen.](#support-for-sensitivity-label-capabilities-in-apps)
 
 Wenn beide Bedingungen erfüllt sind, Sie jedoch den integrierten Office-Bezeichnungsclient deaktivieren müssen, verwenden Sie die folgende Gruppenrichtlinieneinstellung:
 
 1. Navigieren Sie **zu Benutzerkonfiguration/Administrative Vorlagen/Microsoft Office 2016/Sicherheitseinstellungen.**
 
-2. Legen **Sie die Vertraulichkeitsfunktion in Office** zum Anwenden und Anzeigen von Vertraulichkeitsbezeichnungen auf **0 .** 
+2. Legen **Sie die Vertraulichkeitsfunktion in Office zum Anwenden und Anzeigen von Vertraulichkeitsbezeichnungen** auf **0 .** 
  
-Stellen Sie diese Einstellung mithilfe von Gruppenrichtlinien oder mithilfe des [Office-Cloudrichtliniendiensts zur Verfügung.](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service) Die Einstellung wird beim Neustart von Office-Apps wirksam.
+Stellen Sie diese Einstellung mithilfe von Gruppenrichtlinien oder mithilfe des [Office-Cloudrichtliniendiensts zur Verfügung.](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service) Die Einstellung wird wirksam, wenn die Office-Apps neu gestartet werden.
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Integrierter Office-Bezeichnungsclient und der Azure Information Protection-Client
 
@@ -118,7 +118,7 @@ Wenn Benutzer einen der Azure Information Protection-Clients[installiert](https:
 
 Um die integrierte Bezeichnung anstelle des Azure Information Protection-Clients für Office-Apps zu verwenden, befolgen Sie die Anweisungen aus dem vorherigen Abschnitt, legen Sie jedoch die Gruppenrichtlinieneinstellung "Vertraulichkeitsfeature **in Office** verwenden" zum Anwenden und Anzeigen von Vertraulichkeitsbezeichnungen auf **1** festgelegt. 
 
-Alternativ können Sie das Office-Add-In Azure Information Protection deaktivieren **oder entfernen.** Diese Methode eignet sich für einen einzelnen Computer und Ad-hoc-Tests. Anweisungen finden Sie unter Anzeigen, Verwalten und Installieren von [Add-Ins in Office-Programmen.](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d) 
+Alternativ können Sie das Office-Add-In Azure Information Protection deaktivieren **oder entfernen.** Diese Methode eignet sich für einen einzelnen Computer und Ad-hoc-Tests. Anweisungen finden Sie unter Anzeigen, Verwalten und [Installieren von Add-Ins in Office-Programmen.](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d) 
 
 Wenn Sie dieses Office-Add-In deaktivieren oder entfernen, bleibt der Azure Information Protection-Client installiert, sodass Sie weiterhin Dateien außerhalb Ihrer Office-Apps beschriften können. Beispielsweise mithilfe des Datei-Explorers oder powerShell.
 
@@ -128,7 +128,7 @@ Informationen dazu, welche Features von den Azure Information Protection-Clients
 
 Office-Apps mit integrierter Bezeichnung für Word-, Excel- und PowerPoint-Dateien unterstützen das Open XML-Format (z. B. DOCX und XLSX), aber nicht das Microsoft Office 97-2003-Format (z. B. DOC und XLS). Wenn ein Dateityp für die integrierte Bezeichnung  nicht unterstützt wird, ist die Schaltfläche "Vertraulichkeit" in der Office-App nicht verfügbar.
 
-Der Azure Information Protection-Client für einheitliche Bezeichnungen unterstützt sowohl das Open XML-Format als auch das Microsoft Office 97-2003-Format. Weitere Informationen finden Sie unter Dateitypen, die vom [Azure Information Protection einheitlichen Bezeichnungsclient](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-file-types) aus dem Administratorhandbuch dieses Clients unterstützt werden.
+Der Azure Information Protection-Client für einheitliche Bezeichnungen unterstützt sowohl das Open XML-Format als auch das Microsoft Office 97-2003-Format. Weitere Informationen finden Sie im Administratorhandbuch dieses Clients unter Dateitypen, die vom [Azure Information Protection-Client](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-file-types) für einheitliche Bezeichnungen unterstützt werden.
 
 Weitere Bezeichnungslösungen finden Sie in der Dokumentation zu unterstützten Dateitypen.
 
@@ -205,7 +205,9 @@ Wenn Sie Also Dokumente für eine andere Organisation freigeben, die unterschied
 
 ### <a name="sharing-encrypted-documents-with-external-users"></a>Freigeben verschlüsselter Dokumente für externe Benutzer
 
-Zusätzlich zur Einschränkung des Zugriffs auf Benutzer in Ihrer eigenen Organisation können Sie den Zugriff auf alle anderen Benutzer erweitern, die über ein Konto in Azure Active Directory verfügen. Alle Office-Apps und andere [RMS-freundliche](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) Anwendungen können verschlüsselte Dokumente öffnen, nachdem der Benutzer sich erfolgreich authentifiziert hat.
+Zusätzlich zur Einschränkung des Zugriffs auf Benutzer in Ihrer eigenen Organisation können Sie den Zugriff auf alle anderen Benutzer erweitern, die über ein Konto in Azure Active Directory verfügen. Wenn Ihre Organisation jedoch Richtlinien für bedingten Zugriff verwendet, finden Sie [im nächsten Abschnitt](#conditional-access-policies) weitere Überlegungen.
+
+Alle Office-Apps und andere [RMS-freundliche](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) Anwendung können verschlüsselte Dokumente öffnen, nachdem der Benutzer sich erfolgreich authentifiziert hat. 
 
 Wenn externe Benutzer kein Konto in Azure Active Directory haben, können sie sich mithilfe von Gastkonten in Ihrem Mandanten authentifizieren. Diese Gastkonten können auch für den Zugriff auf freigegebene Dokumente in SharePoint oder OneDrive verwendet werden, wenn Sie Vertraulichkeitsbezeichnungen für #A0 [in SharePoint und OneDrive aktiviert haben:](sensitivity-labels-sharepoint-onedrive-files.md)
 
@@ -213,11 +215,11 @@ Wenn externe Benutzer kein Konto in Azure Active Directory haben, können sie si
     
     Der Vorteil dieser Option besteht in der Einschränkung des Zugriffs und der Rechte auf bestimmte Benutzer, indem Sie ihre E-Mail-Adresse in den Verschlüsselungseinstellungen angeben. Der Nachteil ist der Verwaltungsaufwand für die Kontoerstellung und -koordination mit der Bezeichnungskonfiguration.
 
-- Eine weitere Möglichkeit besteht in der Verwendung der SharePoint- und #A0 [in Azure AD B2B (Vorschau),](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) sodass Gastkonten automatisch erstellt werden, wenn Ihre Benutzer Links freigeben.
+- Eine weitere Option besteht in der Verwendung der SharePoint- und #A0 [in Azure AD B2B (Vorschau),](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) sodass Gastkonten automatisch erstellt werden, wenn Ihre Benutzer Links freigeben.
     
     Der Vorteil dieser Option ist ein minimaler Verwaltungsaufwand, da die Konten automatisch erstellt werden, und eine einfachere Bezeichnungskonfiguration. In diesem Szenario müssen Sie [](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) die Verschlüsselungsoption "Authentifizierten Benutzer hinzufügen" auswählen, da Sie die E-Mail-Adressen nicht im Voraus kennen. Der Nachteil ist, dass Sie mit dieser Einstellung die Zugriffsrechte und Nutzungsrechte nicht auf bestimmte Benutzer beschränken können.
 
-Externe Benutzer können auch ein Microsoft-Konto für verschlüsselte Dokumente verwenden, wenn sie Microsoft 365-Apps (früher[Office 365-Apps)](https://docs.microsoft.com/deployoffice/name-change)unter Windows verwenden und unter macOS (Ab Version 16.42), Android (Version 16.0.13029+) und iOS (Version 2.42+) neu unterstützt werden. Beispielsweise gibt jemand ein verschlüsseltes Dokument für sie weiter, und die Verschlüsselungseinstellungen geben ihre Gmail-E-Mail-Adresse an. Dieser Benutzer kann ein eigenes Microsoft-Konto erstellen, das seine Gmail-E-Mail-Adresse verwendet. Nach der Anmeldung mit diesem Konto können sie das Dokument öffnen und entsprechend den für diesen Benutzer angegebenen Nutzungseinschränkungen bearbeiten. Ein exemplarische Vorgehensweisenbeispiel für dieses Szenario finden Sie unter [Öffnen und Bearbeiten des geschützten Dokuments.](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)
+Externe Benutzer können auch ein Microsoft-Konto für verschlüsselte Dokumente verwenden, wenn sie Microsoft 365-Apps (früher[Office 365-Apps)](https://docs.microsoft.com/deployoffice/name-change)unter Windows verwenden und neu unter macOS (Version 16.42+ unterstützt), Android (Version 16.0.13029+) und iOS (Version 2.42+ ) verwenden. Beispielsweise gibt jemand ein verschlüsseltes Dokument für sie weiter, und die Verschlüsselungseinstellungen geben ihre Gmail-E-Mail-Adresse an. Dieser Benutzer kann ein eigenes Microsoft-Konto erstellen, das seine Gmail-E-Mail-Adresse verwendet. Nach der Anmeldung mit diesem Konto können sie das Dokument öffnen und entsprechend den für diesen Benutzer angegebenen Nutzungseinschränkungen bearbeiten. Ein Exemplarische Vorgehensweisenbeispiel für dieses Szenario finden Sie unter [Öffnen und Bearbeiten des geschützten Dokuments.](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)
 
 > [!NOTE]
 > Die E-Mail-Adresse für das Microsoft-Konto muss mit der angegebenen E-Mail-Adresse übereinstimmen, um den Zugriff auf die Verschlüsselungseinstellungen einzuschränken.
@@ -228,6 +230,16 @@ Das automatische Gastkonto wird in diesem Szenario aufgrund der Replikationslate
 
 > [!TIP]
 > Da Sie nicht sicher sein können, dass externe Benutzer eine unterstützte #A0 verwenden, ist die Freigabe von Links aus SharePoint und OneDrive nach dem Erstellen von Gastkonten (für bestimmte Benutzer) oder bei Verwendung der SharePoint- und #A1 in [Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) (für jeden authentifizierten Benutzer) eine zuverlässigere Methode zur Unterstützung der sicheren Zusammenarbeit mit externen Benutzern.
+
+### <a name="conditional-access-policies"></a>Richtlinien für bedingten Zugriff
+
+Wenn Ihre Organisation Azure [Active Directory-Richtlinien](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)für bedingten Zugriff implementiert hat, überprüfen Sie die Konfiguration dieser Richtlinien. Wenn die Richtlinien Azure Information Protection enthalten und die Richtlinie auf externe Benutzer erweitert wird, müssen diese externen Benutzer über ein Gastkonto in Ihrem Mandanten verfügen, auch wenn sie über ein Azure AD-Konto in ihrem eigenen Mandanten verfügen.
+
+Ohne dieses Gastkonto können sie das verschlüsselte Dokument nicht öffnen und eine Fehlermeldung anzeigen. Der Meldungstext könnte sie darüber informieren, dass ihr Konto als externer Benutzer im Mandanten hinzugefügt werden muss, mit der falschen Anweisung Abmelden und erneut mit einem anderen **Azure Active Directory-Benutzerkonto anmelden.**
+
+Wenn Sie in Ihrem Mandanten keine Gastkonten für externe Benutzer erstellen und konfigurieren können, die Dokumente öffnen müssen, die mit Ihren Bezeichnungen verschlüsselt sind, müssen Sie Entweder Azure Information Protection aus den Richtlinien für bedingten Zugriff entfernen oder externe Benutzer aus den Richtlinien ausschließen.
+
+Weitere Informationen zu bedingten Zugriff und Azure Information Protection, dem verschlüsselungsdienst, der von Vertraulichkeitsbezeichnungen verwendet wird, finden Sie in der häufig gestellten Frage. Ich sehe, dass [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work) als verfügbare Cloud-App für bedingten Zugriff aufgeführt ist– wie funktioniert dies?
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Anwenden von Inhaltskennzeichnung und -verschlüsselung durch Office-Apps
 
@@ -315,11 +327,11 @@ Beispiele:
 ## <a name="require-users-to-apply-a-label-to-their-email-and-documents"></a>Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden
 
 > [!IMPORTANT]
-> Auch als obligatorische Bezeichnung bezeichnet, unterstützen derzeit nicht alle Apps auf allen Plattformen die Richtlinieneinstellung "Benutzer zum Anwenden einer Bezeichnung auf ihre E-Mails und **Dokumente verpflichten".**
+> Auch als obligatorische Bezeichnung bezeichnet, unterstützen nicht alle Apps auf allen Plattformen derzeit die Richtlinieneinstellung "Benutzer zum Anwenden einer Bezeichnung auf ihre E-Mails und **Dokumente verpflichten".**
 > 
 > Der [Azure Information Protection-Client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) für einheitliche Bezeichnungen unterstützt obligatorische Bezeichnungen und für [](#support-for-sensitivity-label-capabilities-in-apps) in Office-Apps integrierte Bezeichnungen. Weitere Informationen finden Sie in den Tabellen im Abschnitt "Funktionen" auf dieser Seite.
 
-Wenn diese Richtlinieneinstellung ausgewählt ist, müssen Benutzer, denen die Richtlinie zugewiesen ist, in den folgenden Szenarien eine Vertraulichkeitsbezeichnung auswählen und anwenden:
+Wenn diese Richtlinieneinstellung ausgewählt ist, müssen benutzer, denen die Richtlinie zugewiesen ist, in den folgenden Szenarien eine Vertraulichkeitsbezeichnung auswählen und anwenden:
 
 - Für den Azure Information Protection-Client für einheitliche Bezeichnungen:
     - Für Dokumente (Word, Excel, PowerPoint): Wenn ein unbeschriftetes Dokument gespeichert wird oder Benutzer das Dokument schließen.

@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 03b73901512522edec7fdbc579eaf4073eed5d48
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1fd32aa688256f1ac8e63eec902c3a18b2143f09
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167467"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242914"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft Defender für Endpunkt im Microsoft 365 Security Center
 
@@ -37,11 +37,14 @@ ms.locfileid: "50167467"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft Defender für Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
 
-Das verbesserte [Microsoft 365 Security Center](overview-security-center.md) kombiniert Sicherheitsfunktionen, die Bedrohungen durch E-Mail, Zusammenarbeit, Identität und Geräte [https://security.microsoft.com](https://security.microsoft.com) schützen, erkennen, untersuchen und darauf reagieren. Dieses Security Center vereint Funktionen aus vorhandenen Microsoft-Sicherheitsportalen, einschließlich Microsoft Defender Security Center und office 365 Security & Compliance Center.
+Das verbesserte [Microsoft 365 Security Center](overview-security-center.md) kombiniert Sicherheitsfunktionen, die E-Mail-, Zusammenarbeits-, Identitäts- und Gerätebedrohungen schützen, erkennen, untersuchen und darauf [https://security.microsoft.com](https://security.microsoft.com) reagieren. Dieses Security Center vereint Funktionen aus vorhandenen Microsoft-Sicherheitsportalen, einschließlich Microsoft Defender Security Center und office 365 Security & Compliance Center.
 
 Wenn Sie mit dem Microsoft Defender Security Center vertraut sind, beschreibt dieser Artikel einige der Änderungen und Verbesserungen im verbesserten Microsoft 365 Security Center. Es gibt jedoch einige neue und aktualisierte Elemente, die Sie beachten müssen.
 
 In der Vergangenheit war [das Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/portal-overview) die Startseite für Microsoft Defender for Endpoint. Unternehmenssicherheitsteams haben es verwendet, um Warnungen über potenzielle fortgeschrittene beständige Bedrohungsaktivitäten oder Datenschutzverletzungen zu überwachen und zu unterstützen. Um die Anzahl der Portale zu reduzieren, ist das Microsoft 365 Security Center die Startseite für die Überwachung und Verwaltung der Sicherheit in Ihren Microsoft-Identitäten, -Daten, -Geräten, -Apps und -Infrastruktur.
+
+Microsoft Defender für Endpunkt im Microsoft 365 Security Center unterstützt das Gewähren des Zugriffs auf verwaltete Sicherheitsdienstanbieter [(Managed Security Service Providers, MSSPs)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) auf die gleiche Weise, wie der Zugriff im [Microsoft Defender Security Center gewährt wird.](mssp-access.md)
+
 
 > [!IMPORTANT]
 > Was Sie im Microsoft 365 Security Center sehen, hängt von Ihren aktuellen Abonnements ab. Wenn Sie beispielsweise keine Lizenz für Microsoft Defender für Office 365 haben, wird der Abschnitt "E-Mail & Zusammenarbeit" nicht angezeigt.
@@ -68,7 +71,7 @@ Diese Tabelle ist eine Kurzübersicht über die Änderungen zwischen dem Microso
 |**Bereich**  |**Beschreibung der Änderung**  |
 |---------|---------|
 |Suche   |  Anstatt in der Überschrift zu sein, wird die Suchleiste von Microsoft Defender für Endpunkte unter dem Abschnitt "Endpunkte" angezeigt. Sie können weiterhin nach Geräten, Dateien, Benutzern, URLs, IPs, Sicherheitsrisiken, Software und Empfehlungen suchen.  |
-|[Dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  Dies ist Ihr Dashboard für den Sicherheitsbetrieb. Sehen Sie sich eine Übersicht darüber an, wie viele aktive Warnungen ausgelöst wurden, welche Geräte gefährdet sind, welche Benutzer gefährdet sind, und den Schweregrad für Warnungen, Geräte und Benutzer. Sie können auch sehen, ob Geräte Sensorprobleme haben, Ihren gesamten Dienstzustand und wie nicht aufgelöste Warnungen erkannt wurden. |
+|[Dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  Dies ist Ihr Dashboard für den Sicherheitsbetrieb. Sehen Sie sich eine Übersicht darüber an, wie viele aktive Warnungen ausgelöst wurden, welche Geräte gefährdet sind, welche Benutzer gefährdet sind, und den Schweregrad für Warnungen, Geräte und Benutzer. Sie können auch sehen, ob Geräte Sensorprobleme haben, ihren gesamten Dienstzustand und wie nicht aufgelöste Warnungen erkannt wurden. |
 |Geräteübersicht | Keine Änderungen. |
 |[Bedrohungs- und Sicherheitsrisikomanagement](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Der Name wurde so verkürzt, dass er in den Navigationsbereich passt. Es ist identisch mit dem Abschnitt zur Verwaltung von Bedrohungen und Sicherheitslücken, darunter befinden sich alle Seiten.     |
 | Partner und APIs | Keine Änderungen. |
@@ -82,7 +85,7 @@ Diese Tabelle ist eine Kurzübersicht über die Änderungen zwischen dem Microso
 
 |**Bereich**  |**Beschreibung der Änderung**  |
 |---------|---------|
-| Berichte  | Hier finden Sie Berichte zu Endpunkten & E-Mail-Zusammenarbeit, einschließlich Bedrohungsschutz, Geräteintehität und Compliance sowie anfällige Geräte. |
+| Berichte  | Hier finden Sie Berichte zu Endpunkten und & E-Mail-Zusammenarbeit, einschließlich Bedrohungsschutz, Geräteintehität und Compliance sowie anfällige Geräte. |
 | Gesundheitswesen  |  Zurzeit werden Links zur Seite "Dienstzustand" im [Microsoft 365 Admin Center angezeigt.](https://admin.microsoft.com/) |
 | Einstellungen |  Verwalten Sie Ihre Einstellungen für das Microsoft 365 Security Center, Microsoft 365 Defender, Endpunkte, E-Mail& Zusammenarbeit, Identitäten und Geräteermittlung.   |
 
@@ -103,7 +106,7 @@ Vereint die Vorfall- und Warnungsverwaltung über Ihre E-Mails, Geräte und Iden
 
 Proaktive Suche nach Bedrohungen, Schadsoftware und schädlichen Aktivitäten in Ihren Endpunkten, Office 365-Postfächern und mehr mithilfe [erweiterter Suchabfragen.](advanced-hunting-overview.md) Diese leistungsstarken Abfragen können verwendet werden, um Bedrohungsindikatoren und -entitäten auf bekannte und potenzielle Bedrohungen zu suchen und zu überprüfen.
 
-[Benutzerdefinierte Erkennungsregeln](custom-detection-rules.md) können aus Abfragen für die erweiterte Suche erstellt werden, damit Sie proaktiv auf Ereignisse achten können, die ein Anzeichen für Sicherheitsverletzungen und falsch konfigurierte Geräte sein können.
+[Benutzerdefinierte Erkennungsregeln](custom-detection-rules.md) können aus Abfragen für die erweiterte Suche erstellt werden, damit Sie proaktiv auf Ereignisse achten können, die ein Hinweis auf Sicherheitsverletzungen und falsch konfigurierte Geräte sein können.
 
 
 ### <a name="action-center"></a>Aktionscenter
@@ -120,9 +123,9 @@ Erhalten Sie Informationen zu Bedrohungen von erfahrenen Microsoft-Sicherheitsex
 - Vorfallansicht im Zusammenhang mit den Bedrohungen.
 - Verbesserte Erfahrung zum schnellen Identifizieren und Verwenden von Informationen mit Aktionen in den Berichten.
 
-Sie können auf Bedrohungsanalysen entweder über die obere linke Navigationsleiste im Microsoft 365 Security Center oder über eine dedizierte Dashboardkarte zugreifen, die die am besten gefährdeten Bedrohungen für Ihre Organisation zeigt.
+Sie können auf die Bedrohungsanalyse entweder über die obere linke Navigationsleiste im Microsoft 365 Security Center oder über eine dedizierte Dashboardkarte zugreifen, die die am besten gefährdeten Bedrohungen für Ihre Organisation zeigt.
 
-Erfahren Sie mehr über das Nachverfolgen [und Reagieren auf neue Bedrohungen mit Bedrohungsanalysen.](https://docs.microsoft.com/microsoft-365/security/mtp/threat-analytics)
+Weitere Informationen zum Nachverfolgen und Reagieren auf [neue Bedrohungen mit Bedrohungsanalysen](https://docs.microsoft.com/microsoft-365/security/mtp/threat-analytics)
 
 ### <a name="endpoints-section"></a>Abschnitt "Endpoints"
 

@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 335fd660a2e132944a25e129b2f2fe03b51fda21
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: fa8a7170b3e738e4c90263ef3994238e328e982b
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529493"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242722"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Vorbereiten auf die Registrierung in Microsoft Managed Desktop
 
@@ -26,4 +26,5 @@ In diesen Themen werden die Schritte beschrieben, die Sie in Ihrem Unternehmen a
 - [Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop](certs-wifi-lan.md)
 - [Voraussetzungen von Druckressourcen für Microsoft Managed Desktop](printing.md)
 - [Anwendungen in Microsoft Managed Desktop](apps.md)
+- [Verwenden des Tools zur Bereitschaftsbewertung](readiness-assessment-tool.md)
 

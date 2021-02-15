@@ -1,5 +1,5 @@
 ---
-title: Anwenden einer Aufbewahrungsbezeichnung auf ein Dokumentverständnismodell
+title: Anwenden einer Aufbewahrungsbezeichnung auf ein Modell
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -11,15 +11,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: In diesem Artikel wird die Anwendung einer Aufbewahrungsbezeichnung auf ein Dokumentverständnismodell erläutert.
-ms.openlocfilehash: 6dcd81b580b7bf0801641bbd019e1b99ecfe7338
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+description: In diesem Artikel wird die Anwendung einer Aufbewahrungsbezeichnung auf ein Modell in SharePoint Syntex erläutert.
+ms.openlocfilehash: 48c0b983316cfe29019d09cb20546fa4b325b3b0
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976555"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242771"
 ---
-# <a name="apply-a-retention-label-to-a-document-understanding-model"></a>Anwenden einer Aufbewahrungsbezeichnung auf ein Dokumentverständnismodell
+# <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>Anwenden einer Aufbewahrungsbezeichnung auf ein Modell in SharePoint Syntex
 
 </br>
 
@@ -28,14 +28,14 @@ ms.locfileid: "49976555"
 </br>
 
 
-Sie können auf einfache Weise eine [Aufbewahrungsbezeichnung](https://docs.microsoft.com/microsoft-365/compliance/retention) auf ein Dokumentverständnismodell in Microsoft SharePoint Syntex anwenden.
+Sie können auf einfache Weise eine [Aufbewahrungsbezeichnung](https://docs.microsoft.com/microsoft-365/compliance/retention) auf ein Modell in Microsoft SharePoint Syntex anwenden. Sie können dies sowohl für Dokumentverständnis- als auch Formularverarbeitungsmodelle tun.
 
-Aufbewahrungsbezeichnungen ermöglichen es Ihnen, Aufbewahrungseinstellungen auf die Dokumente anzuwenden, die von Ihrem Dokumentverständnismodell identifiziert werden.  Sie könnten beispielsweise wollen, dass Ihr Modell nicht nur sämtliche *Versicherungsbestätigungen* erkennt, die in Ihre Dokumentbibliothek hochgeladen werden, sondern auf diese auch eine *Geschäftlich*-Aufbewahrungsbezeichnung anwendet, damit diese Dokumente für den angegebenen Zeitraum (beispielsweise für die nächsten fünf Monate) nicht gelöscht werden können.
+Aufbewahrungsbezeichnungen ermöglichen es Ihnen, Aufbewahrungseinstellungen auf die Dokumente anzuwenden, die von Ihrem Modell identifiziert werden.  Sie könnten beispielsweise wollen, dass Ihr Modell nicht nur sämtliche *Versicherungsbestätigungen* erkennt, die in Ihre Dokumentbibliothek hochgeladen werden, sondern auf diese auch eine *Geschäftlich*-Aufbewahrungsbezeichnung anwendet, damit diese Dokumente für den angegebenen Zeitraum (beispielsweise für die nächsten fünf Monate) nicht gelöscht werden können.
 
-Über die Modelleinstellungen auf der Startseite Ihres Modells können Sie eine bereits vorhandene Aufbewahrungsbezeichnung auf Ihr Dokumentverständnismodell anwenden. 
+Über die Modelleinstellungen auf der Startseite Ihres Modells können Sie eine bereits vorhandene Aufbewahrungsbezeichnung auf Ihr Modell anwenden. 
 
 > [!Important]
-> Damit Aufbewahrungsbezeichnungen für die Anwendung auf Ihre Inhaltsverständnismodelle verfügbar sind, müssen sie [im Microsoft 365 Compliance Center erstellt und veröffentlicht werden](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
+> Damit Aufbewahrungsbezeichnungen für die Anwendung auf Ihre Dokumentverständnismodelle verfügbar sind, müssen sie [im Microsoft 365 Compliance Center erstellt und veröffentlicht werden](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
 
 ## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>So fügen Sie einem Dokumentverständnismodell eine Aufbewahrungsbezeichnung hinzu
 
@@ -69,6 +69,62 @@ Auf der Ansichtsseite Ihres Modells in Ihrer Dokumentbibliothek wird eine neue S
 
 
 So wird beispielsweise auf alle *Versicherungsbestätigungen*, die von Ihrem Modell identifiziert wurden, auch die *Geschäftlich*-Aufbewahrungsbezeichnung angewendet, wodurch sie für fünf Monate nicht aus der Dokumentbibliothek gelöscht werden können. Wenn versucht wird, eine solche Datei aus der Dokumentbibliothek zu löschen, wird eine Fehlermeldung angezeigt mit dem Hinweis, dass dies aufgrund der angewendeten Aufbewahrungsbezeichnung nicht zulässig ist.
+
+## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>So fügen Sie einem Formularverarbeitungsmodell eine Aufbewahrungsbezeichnung hinzu
+
+> [!Important]
+> Damit Aufbewahrungsbezeichnungen für die Anwendung auf Ihre Formularverarbeitungsmodelle verfügbar sind, müssen sie [im Microsoft 365 Compliance Center erstellt und veröffentlicht werden](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
+
+Sie können eine Aufbewahrungsbezeichnung entweder auf ein Formularverarbeitungsmodell anwenden, wenn Sie ein Modell erstellen, oder auf ein vorhandenes Modell anwenden.
+
+### <a name="to-add-a-retention-label-when-you-create-a-form-processing-model"></a>So fügen Sie eine Aufbewahrungsbezeichnung hinzu, wenn Sie ein Formularverarbeitungsmodell erstellen
+
+1. Wenn Sie ein [Formularverarbeitungsmodell erstellen](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model), wählen Sie <b>erweiterte Einstellungen</b> aus.
+2. Wählen Sie unter <b>Erweiterte Einstellungen</b> im Abschnitt <b>Aufbewahrungsbezeichnung</b> das Menü aus, und wählen Sie dann die Aufbewahrungsbezeichnung aus, die Sie auf das Modell anwenden möchten.</b>
+
+ 
+     ![Hinzufügen zu einem neuen Formularverarbeitungsmodell](../media/content-understanding/retention-label-forms.png)</br>
+
+3.  Nachdem Sie die verbleibenden Modelleinstellungen abgeschlossen haben, wählen Sie <b>Erstellen</b> aus, um Ihr Modell zu erstellen.
+
+### <a name="to-add-a-retention-label-to-an-existing-form-processing-model"></a>So fügen Sie einem bestehenden Formularverarbeitungsmodell eine Aufbewahrungsbezeichnung hinzu
+
+Sie können einem bestehenden Formularverarbeitungsmodell auf verschiedene Arten eine Aufbewahrungsbezeichnung hinzufügen:
+- Über das Menü „Automatisieren“ in der Dokumentbibliothek
+- Über die Einstellungen der Aktiven Modelle in der Dokumentbibliothek 
+
+
+#### <a name="to-add-a-retention-label-to-an-existing-form-processing-model-through-the-automate-menu"></a>So fügen Sie einem bestehenden Formularverarbeitungsmodell über das Menü „Automatisieren“ eine Aufbewahrungsbezeichnung hinzu
+
+Sie können einem vorhandenen Formularverarbeitungsmodell, das Ihnen gehört, über das Menü „Automatisieren“ in der Dokumentbibliothek, auf die das Modell angewendet wird, eine Aufbewahrungsbezeichnung hinzufügen.
+
+
+1. Wählen Sie in Ihrer Dokumentbibliothek, auf die das Formularverarbeitungsmodell angewendet wird, das Menü <b>Automatisieren</b>, anschließend <b>KI-Generator</b> und dann <b>Formularverarbeitungsmodelldetails anzeigen</b> aus.
+
+   ![Menü „Automatisieren“](../media/content-understanding/automate-menu.png)</br>
+
+2. Wählen Sie in den Modelldetails im Bereich <b>Aufbewahrungsbezeichnung</b> die Aufbewahrungsbezeichnung aus, die Sie anwenden möchten.  Klicken Sie dann auf <b>Speichern</b>.
+
+     ![Hinzufügen zu einem bestehenden Formularverarbeitungsmodell](../media/content-understanding/retention-label-model-details.png)</br> 
+
+#### <a name="to-add-a-retention-label-to-an-existing-form-processing-model-in-the-active-model-settings"></a>So fügen Sie einem bestehenden Formularverarbeitungsmodell in Einstellungen der Aktiven Modelle eine Aufbewahrungsbezeichnung hinzu
+
+Sie können einem vorhandenen Formularverarbeitungsmodell, das Ihnen gehört, über die Einstellungen der Aktiven Modelle in der Dokumentbibliothek, auf die das Modell angewendet wird, eine Aufbewahrungsbezeichnung hinzufügen.
+
+1. Wählen Sie in der SharePoint-Dokumentbibliothek, auf die das Modell angewendet ist, das Symbol <b>Aktive Modelle anzeigen</b> und dann <b>Aktive Modelle anzeigen</b>.</b>
+
+   ![Aktive Modelle anzeigen](../media/content-understanding/info-du.png)</br> 
+
+2. Wählen Sie unter <b>Aktive Modelle</b>das Formularverarbeitungsmodell aus, auf das Sie die Aufbewahrungsbezeichnung anwenden möchten.
+
+     ![Modelldetails](../media/content-understanding/retention-label-model-details.png)</br> 
+
+
+3. Wählen Sie in den Modelldetails im Bereich <b>Aufbewahrungsbezeichnung</b> die Aufbewahrungsbezeichnung aus, die Sie anwenden möchten.  Klicken Sie dann auf <b>Speichern</b>.
+
+> [!NOTE]
+> Sie müssen der Modellbesitzer sein, damit der Bereich für Modelleinstellungen bearbeitet werden kann. 
+
 
 ## <a name="see-also"></a>Siehe auch
 [Erstellen einer Klassifizierung](create-a-classifier.md)

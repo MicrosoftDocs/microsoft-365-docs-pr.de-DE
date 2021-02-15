@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: 675a98656655521095096a535d4ee8352885e70c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2541519ad9082383c5381452722d023f23760798
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166460"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242711"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informationen zur Aufbewahrung für Microsoft Teams
 
@@ -43,21 +43,22 @@ Die folgenden Teams-Elemente können unter Verwendung von Aufbewahrungsrichtlini
 > [!NOTE]
 > Die Einbindung von Karteninhalten ist eine neue Funktion, die Mandanten gegenwärtig zur Verfügung gestellt wird. Weitere Informationen finden Sie unter [Microsoft 365 Compliance-Funktionen für adaptive Karteninhalte über Apps in Teams jetzt verfügbar](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-Teams-Nachrichten in privaten Kanälen, Code-Ausschnitte und Reaktionen von anderen Personen in der Form von Emoticons sind nicht enthalten.
+Teams-Nachrichten in privaten Kanälen werden für Aufbewahrungsrichtlinien derzeit nicht unterstützt. Codeausschnitte, aufgezeichnete Spracherinnerungen aus dem mobilen Microsoft Teams-Client und Reaktionen von anderen in Form von Emoticons werden bei Verwendung von Aufbewahrungsrichtlinien für Teams nicht berücksichtigt.
 
 E-Mails und Dateien, die Sie mit Teams verwenden, sind in den Aufbewahrungsrichtlinien für Teams nicht beinhaltet. Diese Elemente haben ihre eigenen Aufbewahrungsrichtlinien.
-
-Die folgenden Postfächer nach "RecipientTypeDetails" werden für Teams-Aufbewahrungsrichtlinien unterstützt:
-
-- MailUser
-- UserMailbox
-- GroupMailbox
-- ArbitrationMailbox
-- SharedMailbox
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>Funktionsweise der Aufbewahrung mit Microsoft Teams
 
 Sie können eine Aufbewahrungsrichtlinie für die Aufbewahrung und Löschung von Daten von Chats und Kanalnachrichten in Microsoft Teams verwenden. Im Hintergrund werden Exchange-Postfächer zum Speichern dieser Nachrichten verwendet. Daten von Teams-Chats werden in einem verborgenen Ordner im Postfach jedes Benutzers gespeichert, der am Chat teilnimmt. Ein ähnlicher verborgener Ordner im Gruppenpostfach wird für Teams-Kanalnachrichten genutzt.
+
+Diese Postfächer sind nach ihrem Attribut "RecipientTypeDetails" aufgelistet:
+
+- **UserMailbox**: In diesen Postfächern werden Nachrichten für Teams-Benutzer gespeichert, die über ein Exchange Online-Postfach verfügen.
+- **MailUser**: In diesen Postfächern werden Nachrichten für Teams-Benutzer gespeichert, die über ein Postfach für einen lokalen Exchange-Server und nicht über Exchange Online verfügen.
+- **User**: In diesen Postfächern werden Nachrichten für Teams-Benutzer gespeichert, die nicht über ein Postfach für Exchange Online oder einen lokalen Exchange-Server verfügen.
+- **GroupMailbox**: In diesen Postfächern werden Nachrichten für Teams-Kanäle gespeichert.
+
+Andere Postfachtypen, z. B. RoomMailbox, die für Teams-Konferenzräume verwendet werden, werden für Teams-Aufbewahrungsrichtlinien nicht unterstützt.
 
 Es ist wichtig zu verstehen, dass Microsoft Teams einen Azure-Chatdienst verwendet, der diese Daten ebenfalls speichert, und standardmäßig werden die Daten von diesem Dienst unbefristet gespeichert. Wenn Sie Teams-Nachrichten aus Compliancegründen löschen müssen, empfehlen wir Ihnen aus diesem Grund, Aufbewahrungsrichtlinien für Teams zu verwenden, mit denen diese Daten sowohl aus den Exchange-Postfächern als auch aus dem zugrunde liegenden Azure-unterstützten Chatdienst endgültig gelöscht werden können. Weitere Informationen über die zugrunde liegende Architektur finden Sie unter [Sicherheit und Compliance in Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258), insbesondere im Abschnitt [Information Protection-Architektur](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 

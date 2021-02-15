@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 35d4615057deee81285ba950a157f28160b6eefa
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 2b543dbc8132f261814aec45e713874971b9b5d1
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107256"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242882"
 ---
 # <a name="create-a-new-topic"></a>Ein neues Thema erstellen 
 
@@ -38,7 +38,19 @@ Um ein neues Thema zu erstellen, müssen Sie:
 > [!Note] 
 > Benutzer, die über die Berechtigung zum Verwalten von Themen im Themencenter (Knowledge Manager) verfügen, verfügen bereits über Berechtigungen zum Erstellen und Bearbeiten von Themen.
 
-## <a name="to-create-a-new-topic"></a>So erstellen Sie ein neues Thema:
+## <a name="to-create-a-topic"></a>So erstellen Sie ein Thema
+
+Sie können ein neues Thema an zwei Stellen erstellen:
+
+- Startseite des Themencenters: Jeder  lizenzierte Benutzer mit der Berechtigung "Wer kann Themen erstellen oder <b></b> bearbeiten" (Mitwirkende) kann ein neues Thema im Themencenter erstellen, indem er das Menü "Neu" und die Seite "Thema" <b>auswählt.</b></br> 
+
+    ![Neues Thema aus dem Themencenter](../media/knowledge-management/new-topic.png) </br> 
+
+- Seite "Themen verwalten":  Jeder lizenzierte Benutzer mit der Berechtigung "Wer kann Themen verwalten" (Wissensverwalter) kann ein neues Thema auf der Seite "Themen verwalten" im Themencenter erstellen, indem er die Seite "Neues <b>Thema" aus wählt.</b></br> 
+
+    ![Neues Thema aus "Verwalten von Themen"](../media/knowledge-management/new-topic-topic-center.png) </br> 
+
+### <a name="to-create-a-new-topic"></a>So erstellen Sie ein neues Thema:
 
 1. Geben Sie **im Abschnitt "Name dieses Themas"** den Namen des neuen Themas ein.
 
@@ -66,11 +78,11 @@ Um ein neues Thema zu erstellen, müssen Sie:
     Sie können auch die Linkoption <b>"Von"</b> verwenden, um eine Datei oder Seite hinzuzufügen, indem Sie die URL angeben. 
 
 
-6.  Im <b>Abschnitt "Verwandte Websites"</b> werden Websites mit Informationen zum Thema angezeigt. 
+6.  Im <b>Abschnitt "Verwandte Websites"</b> werden Websites mit Informationen zu diesem Thema angezeigt. 
 
     ![Abschnitt "Verwandte Websites"](../media/knowledge-management/related-sites.png)</br>
 
-    Sie können eine verwandte <b></b> Website hinzufügen, indem Sie "Hinzufügen" auswählen und dann entweder nach der Website suchen oder sie in der Liste der häufig verwendeten oder zuletzt verwendeten Websites auswählen.</br>
+    Sie können eine verwandte <b></b> Website hinzufügen, indem Sie "Hinzufügen" auswählen und dann entweder nach der Website suchen oder sie aus der Liste der häufig verwendeten oder zuletzt verwendeten Websites auswählen.</br>
     
     ![Website auswählen](../media/knowledge-management/sites.png)</br>
 
