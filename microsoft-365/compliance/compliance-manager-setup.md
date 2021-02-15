@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Festlegen von Microsoft Compliance -Manager-Benutzerberechtigungen und -rollen und Konfigurieren automatisierter Tests von Aktionen. Verwalten des Benutzerverlaufs und Filtern der Dashboardansicht
-ms.openlocfilehash: e130fc3438fc8b4674b752e25fc473ee0dd55ae4
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: c032f537dd0a24632cc702f8363697b85df7e7ca
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870910"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233773"
 ---
 # <a name="get-started-with-compliance-manager"></a>Erste Schritte mit Compliance-Manager
 
@@ -32,9 +32,9 @@ ms.locfileid: "49870910"
 
 Der Compliance Manager ist für Organisationen mit Office 365- und Microsoft 365-Lizenzen sowie für Kunden der US Government Community Cloud (GCC) Moderate und GCC High verfügbar. Verfügbarkeits- und Verwaltungsfunktionen der Bewertung hängen von Ihrem Lizenzvertrag ab.  [Anzeigen von Dienstbeschreibungsdetails.](https://go.microsoft.com/fwlink/?linkid=2132371)
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Der globale Microsoft 365-Administrator für Ihre Organisation ist wahrscheinlich der erste Benutzer, der auf den Compliance Manager zu zugegriffen hat. Wir empfehlen, dass sich der globale Administrator anmeldet und Benutzerberechtigungen wie unten beschrieben beim ersten Besuch des Compliance-Managers festlegen.
+Der globale Microsoft 365-Administrator für Ihre Organisation ist wahrscheinlich der erste Benutzer, der auf den Compliance Manager zu zugegriffen hat. Wir empfehlen, dass sich der globale Administrator anmeldet und Benutzerberechtigungen wie unten beschrieben festlegen, wenn er den Compliance Manager zum ersten Mal besucht.
 
 ## <a name="sign-in"></a>Anmelden
 
@@ -49,7 +49,7 @@ Der Compliance-Manager verwendet ein rollenbasiertes Berechtigungsmodell für di
 
 ### <a name="where-to-set-permissions"></a>Festlegen von Berechtigungen
 
-Die Person, die die globale Administratorrolle für Ihre Organisation hat, kann Benutzerberechtigungen für den #A0 festlegen. Berechtigungen können im Office 365 Security & Compliance Center sowie in Azure Active Directory (Azure AD) festgelegt werden.
+Die Person, die die globale Administratorrolle für Ihre Organisation hat, kann Benutzerberechtigungen für den Compliance-Manager festlegen. Berechtigungen können im Office 365 Security & Compliance Center sowie in Azure Active Directory (Azure AD) festgelegt werden.
 
 > [!NOTE]
 > Kunden in einer hohen Umgebung der US Government Community (GCC) können nur Benutzerberechtigungen und Rollen für den Compliance Manager in Azure AD festlegen. Weitere Informationen zu Azure AD-Anweisungen und Rollentypdefinitionen finden Sie weiter unten.
@@ -58,11 +58,11 @@ Führen Sie zum Festlegen von Berechtigungen und Zuweisen von Rollen im Office 3
 
 1. Wechseln Sie zum [Office 365 Security & Compliance Center,](https://protection.office.com/) und **wählen** Sie im linken Navigationsbereich "Berechtigungen" aus.
 
-2. Suchen Sie die Rollengruppe, der Sie einen oder mehrere Benutzer hinzufügen möchten, und aktivieren Sie das Kontrollkästchen links vom Gruppennamen. (Weitere Informationen finden [Sie in der Liste der Rollen und zugehörigen Funktionen weiter unten.](#role-types) Die Rollengruppennamen imitieren den Rollennamen.)
+2. Suchen Sie die Rollengruppe, der Sie einen oder mehrere Benutzer hinzufügen möchten, und aktivieren Sie das Kontrollkästchen links vom Gruppennamen. (Weitere Informationen finden Sie unten in der Liste der Rollen [und zugehörigen Funktionen.](#role-types) Die Rollengruppennamen imitieren den Rollennamen.)
 
 3. Wählen Sie im Flyoutbereich für diese Gruppe unter der **Kopfzeile** "Mitglieder" die Option **"Bearbeiten"** aus.
 
-4. Wählen Sie **Mitglieder auswählen aus.** Ein weiteres Flyoutfenster wird angezeigt.
+4. Wählen Sie **"Mitglieder auswählen" aus.** Ein weiteres Flyoutfenster wird angezeigt.
 
 5. Wählen **Sie +Hinzufügen** aus, um einen oder mehrere Benutzer auszuwählen, die der Gruppe hinzugefügt werden.
 
@@ -100,19 +100,19 @@ In der folgenden Tabelle sind die Funktionen aufgeführt, die von den einzelnen 
 Mit den Compliance-Manager-Einstellungen im Microsoft 365 Compliance Center können Sie automatische Tests von Verbesserungsmaßnahmen aktivieren und deaktivieren. Mit den Einstellungen können Sie auch die Daten von Benutzern verwalten, die Verbesserungsmaßnahmen zugeordnet sind, einschließlich der Möglichkeit, Verbesserungsmaßnahmen einem anderen Benutzer neu zuzuweisen.  Nur Personen mit einer globalen Administrator- oder Compliance-Manager-Administratorrolle können auf die Compliance-Manager-Einstellungen zugreifen.
 
 > [!NOTE]
-> Das Feature für automatisierte Tests ist für Kunden in GCC High Umgebungen nicht verfügbar, da die Sicherheitsprüfung in diesen Umgebungen nicht verfügbar ist. GCC High-Kunden müssen ihre Verbesserungsmaßnahmen manuell implementieren und testen.
+> Das automatisierte Testfeature ist für Kunden in GCC High Umgebungen nicht verfügbar, da die Sicherheitspunktzahl in diesen Umgebungen nicht verfügbar ist. GCC High customers will need to manually implement and test their improvement actions.
 
 ### <a name="set-up-automated-testing"></a>Einrichten von automatisierten Tests
 
 Einige Verbesserungsmaßnahmen im Compliance Manager werden auch von [der Microsoft Secure Score überwacht.](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) Sie können automatisierte Tests von Aktionen einrichten, die gemeinsam überwacht werden, was bedeutet, dass beim Testen und Aktualisieren einer Aktion in der Sicherheitswertung diese Ergebnisse mit denselben Aktionen im Compliance-Manager synchronisiert werden und auf Ihre Compliance-Bewertung angezählt werden.
 
-Automatische Tests sind für Organisationen, die im Compliance Manager neu sind, standardmäßig aktiviert. Wenn Sie Microsoft 365 oder Office 365 zum ersten Mal bereitstellen, dauert es ungefähr sieben Tage, bis die Sicherheitswertung Daten vollständig erfasst und in Ihre Compliance-Bewertung einbe berücksichtigt hat.  Wenn automatisierte Tests aktiviert sind, wird das Testdatum der Aktion nicht aktualisiert, aber der Teststatus wird aktualisiert. Wenn neue Bewertungen erstellt werden, enthalten Bewertungen automatisch Microsoft-Steuerelementbewertungen und die Integration der Sicherheitsbewertung.
+Automatische Tests sind für Organisationen, die im Compliance Manager neu sind, standardmäßig aktiviert. Wenn Sie Microsoft 365 oder Office 365 zum ersten Mal bereitstellen, dauert es ungefähr sieben Tage, bis die Sicherheitsergebniszahl Daten vollständig erfasst und in Ihre Compliance-Bewertung einbe berücksichtigt hat.  Wenn automatisierte Tests aktiviert sind, wird das Testdatum der Aktion nicht aktualisiert, aber der Teststatus wird aktualisiert. Wenn neue Bewertungen erstellt werden, enthalten Bewertungen automatisch Microsoft-Steuerelementbewertungen und die Integration der Sicherheitsbewertung.
 
 Der globale Administrator für Ihre Organisation kann die Einstellungen für automatisierte Tests jederzeit ändern. Sie können automatisierte Tests auf allgemeine Verbesserungsmaßnahmen deaktivieren oder für einzelne Aktionen aktivieren. Befolgen Sie die nachstehenden Anweisungen, um Ihre Einstellungen für automatisierte Tests zu ändern.
 
 #### <a name="to-manage-your-automated-testing-settings"></a>So verwalten Sie die Einstellungen für automatisierte Tests:
 
-1. Wählen **Sie** im Microsoft 365 Compliance Center von einer beliebigen Stelle im [Microsoft 365 Compliance Center die Option "Einstellungen" im linken Navigationsbereich aus.](https://compliance.microsoft.com/)
+1. Wählen **Sie** im Microsoft [365](https://compliance.microsoft.com/)Compliance Center im linken Navigationsbereich einstellungen aus.
 
 2. Wählen Sie auf der Einstellungsseite den **Compliance-Manager aus.**
 
@@ -128,7 +128,7 @@ Der globale Administrator für Ihre Organisation kann die Einstellungen für aut
 
 ### <a name="manage-user-history"></a>Verwalten des Benutzerverlaufs
 
-Mithilfe **der Einstellungen für die Verwaltung des** Benutzerverlaufs können Sie schnell erkennen, welche Benutzer mit Verbesserungsmaßnahmen im Compliance-Manager gearbeitet haben. Die identifizierbaren Benutzerdaten im Zusammenhang mit Verbesserungsmaßnahmen umfassen alle durchgeführten Implementierungs- und Testarbeiten, hochgeladene Dokumente und alle von ihnen eingegebenen Notizen. Möglicherweise müssen Sie diese Art von Daten verstehen und abrufen, um die Complianceanforderungen Ihrer Organisation zu erfüllen.
+Mit **den Einstellungen für die Verwaltung des** Benutzerverlaufs können Sie schnell ermitteln, welche Benutzer mit Verbesserungsmaßnahmen im Compliance-Manager gearbeitet haben. Die identifizierbaren Benutzerdaten im Zusammenhang mit Verbesserungsmaßnahmen umfassen alle durchgeführten Implementierungs- und Testarbeiten, hochgeladene Dokumente und alle von ihnen eingegebenen Notizen. Möglicherweise müssen Sie diese Art von Daten verstehen und abrufen, um die Complianceanforderungen Ihrer Organisation zu erfüllen.
 
 Mit den Einstellungen für den Benutzerverlauf können Sie auch alle Verbesserungsmaßnahmen von einem Benutzer an einen anderen zuweisen.
 
@@ -140,7 +140,7 @@ Mit den Einstellungen für den Benutzerverlauf können Sie auch alle Verbesserun
 
 3. Wählen **Sie im linken Navigationsbereich "Benutzerverlauf** verwalten" aus.
 
-Auf **der Seite "Benutzerverlauf verwalten"** wird eine Liste aller Benutzer nach E-Mail-Adresse angezeigt, die einer Verbesserungsaktion zugewiesen sind. Verwenden Sie die **Schaltfläche "Suchen",** um einen bestimmten Benutzer schnell zu finden, indem Sie seine E-Mail-Adresse eingeben.
+Auf **der Seite "Benutzerverlauf verwalten"** wird eine Liste aller Benutzer nach E-Mail-Adresse angezeigt, die einer Verbesserungsaktion zugewiesen sind. Verwenden Sie **die Schaltfläche "Suchen",** um einen bestimmten Benutzer schnell zu finden, indem Sie seine E-Mail-Adresse eingeben.
 
 Rechts neben der E-Mail-Adresse  jedes Benutzers enthält das Dropdownmenü "Auswählen" Optionen zum Exportieren eines Berichts, zum erneuten Zuweisen von Verbesserungsmaßnahmen oder zum Löschen des Verlaufs. Details zu den einzelnen Optionen finden Sie in den einzelnen Abschnitten weiter unten.
 
@@ -152,7 +152,7 @@ Der Bericht gibt den Status der Verbesserungsaktion ab dem Erstellungsdatum wied
 
 **Führen Sie die folgenden Schritte aus, um einen Bericht nach Benutzer zu exportieren:**
 
-1. Wählen **Sie** im Microsoft 365 Compliance Center von einer beliebigen Stelle im [Microsoft 365 Compliance Center die Option "Einstellungen" im linken Navigationsbereich aus.](https://compliance.microsoft.com/)
+1. Wählen **Sie** im Microsoft [365](https://compliance.microsoft.com/)Compliance Center im linken Navigationsbereich einstellungen aus.
 
 2. Wählen Sie auf der Einstellungsseite den **Compliance-Manager aus.**
 
@@ -170,7 +170,7 @@ Sie können Verbesserungsmaßnahmen von einem Benutzer zu einem anderen zuweisen
 
 **Führen Sie die folgenden Schritte aus, um Verbesserungsmaßnahmen einem anderen Benutzer neu zuzuweisen:**
 
-1. Wählen **Sie** im Microsoft 365 Compliance Center von einer beliebigen Stelle im [Microsoft 365 Compliance Center die Option "Einstellungen" im linken Navigationsbereich aus.](https://compliance.microsoft.com/)
+1. Wählen **Sie** im Microsoft [365](https://compliance.microsoft.com/)Compliance Center im linken Navigationsbereich einstellungen aus.
 
 2. Wählen Sie auf der Einstellungsseite den **Compliance-Manager aus.**
 
@@ -182,14 +182,14 @@ Sie können Verbesserungsmaßnahmen von einem Benutzer zu einem anderen zuweisen
 
 6. Geben Sie **im Feld Benutzer suchen** den Namen oder die E-Mail-Adresse des Benutzers ein, dem Sie die Verbesserungsmaßnahmen zuweisen *möchten.*
 
-7. Wenn der Name des beabsichtigten Benutzers unter Verbesserungsmaßnahmen zugewiesen **wird,** wählen Sie den Benutzer aus, und wählen Sie dann **"Aktionen zuweisen" aus.**
+7. Wenn der Name des beabsichtigten Benutzers unter Verbesserungsmaßnahmen zugewiesen **wird,** wählen Sie den Benutzer aus, und wählen Sie dann **Aktionen zuweisen aus.**
 
 8. Nach Abschluss der Neuzuweisung wird im Flyoutbereich eine Bestätigungsmeldung angezeigt, die bestätigt, dass alle Verbesserungsmaßnahmen des vorherigen Benutzers dem neuen Benutzer neu zugewiesen wurden. Wenn Sie eine Benachrichtigung über einen Fehler bei der Neuzuweisung erhalten, schließen Sie das Fenster, und versuchen Sie es erneut. Um den Flyoutbereich zu schließen, wählen Sie **"Fertig"** aus.
 
 Der neue Zugewiesene erhält eine E-Mail, dass er einer Verbesserungsaktion zugewiesen wurde. Die E-Mail enthält einen direkten Link zur Detailseite der Verbesserungsaktion.
  
  > [!NOTE]
-> Wenn Sie eine Aktion mit einer ausstehenden Aktualisierung erneut zuweisen, wird der direkte Link zu der Aktion in der E-Mail zur Neuzuweisung nicht mehr aktualisiert, wenn das Update nach der neu zugewiesenen Aktualisierung akzeptiert wird. Sie können dieses Problem beheben, indem Sie die Aktion dem Benutzer erneut zuweisen, nachdem das Update akzeptiert wurde. Erfahren Sie mehr über [Updates für Verbesserungsmaßnahmen.](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions)
+> Wenn Sie eine Aktion mit einer ausstehenden Aktualisierung erneut zuweisen, wird der direkte Link zu der Aktion in der E-Mail zur Neuzuweisung nicht mehr aktualisiert, wenn das Update nach der neu zugewiesenen Neuzuweisung akzeptiert wird. Sie können dieses Problem beheben, indem Sie die Aktion dem Benutzer erneut zuweisen, nachdem das Update akzeptiert wurde. Erfahren Sie mehr über [Updates für Verbesserungsmaßnahmen.](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions)
 
 #### <a name="delete-user-history"></a>Löschen des Benutzerverlaufs
 
@@ -197,7 +197,7 @@ Durch das Löschen des Verlaufs eines Benutzers wird der Benutzer als Besitzer v
 
 Führen Sie die folgenden Schritte aus, um den Verlauf eines Benutzers zu löschen:
 
-1. Wählen **Sie** im Microsoft 365 Compliance Center von einer beliebigen Stelle im [Microsoft 365 Compliance Center die Option "Einstellungen" im linken Navigationsbereich aus.](https://compliance.microsoft.com/)
+1. Wählen **Sie** im Microsoft [365](https://compliance.microsoft.com/)Compliance Center im linken Navigationsbereich einstellungen aus.
 
 2. Wählen Sie auf der Einstellungsseite den **Compliance-Manager aus.**
 
@@ -219,7 +219,7 @@ Das Compliance-Manager-Dashboard bietet Ihnen einen Überblick über Ihren aktue
 
 ### <a name="overall-compliance-score"></a>Compliance-Gesamtergebnis
 
-Ihre Compliance-Bewertung wird oben deutlich präsentiert. Sie zeigt einen Prozentsatz an, der auf Punkten basiert, die zur Durchführung von Verbesserungsmaßnahmen erreicht werden können, die wichtige Datenschutzstandards und -vorschriften erfüllen. Punkte aus [Microsoft-Aktionen,](compliance-manager-assessments.md#microsoft-actions-tab)die von Microsoft verwaltet werden, zählen auch auf Ihre Compliance-Bewertung.
+Ihre Compliance-Bewertung wird oben an oberster Stelle präsentiert. Sie zeigt einen Prozentsatz an, der auf Punkten basiert, die zur Durchführung von Verbesserungsmaßnahmen erreicht werden können, die wichtige Datenschutzstandards und -vorschriften erfüllen. Punkte aus [Microsoft-Aktionen,](compliance-manager-assessments.md#microsoft-actions-tab)die von Microsoft verwaltet werden, zählen auch auf Ihre Compliance-Bewertung.
 
 Wenn Sie zum ersten Mal zum Compliance-Manager kommen, basiert Ihre anfängliche Bewertung auf der [Microsoft 365-Datenschutzgrundlinie.](compliance-manager-assessments.md#data-protection-baseline-default-assessment) Bei dieser grundlegenden Bewertung, die für alle Organisationen verfügbar ist, handelt es sich um eine Reihe von Kontrollen, die allgemeine branchenübliche Vorschriften und Standards umfassen. Der Compliance-Manager überprüft Ihre vorhandenen Microsoft 365-Lösungen und erstellt eine erste Bewertung basierend auf Ihren aktuellen Datenschutz- und Sicherheitseinstellungen. Wenn Sie Bewertungen hinzufügen, die für Ihre Organisation relevant sind, wird Ihre Bewertung für Sie aussagekräftiger.
 
@@ -242,7 +242,7 @@ In diesem Abschnitt erhalten Sie eine detailliertere Ansicht Ihrer Bewertung auf
 
 ### <a name="filtering-your-dashboard-view"></a>Filtern der Dashboardansicht
 
-Sie können Ihre Dashboardansicht filtern, um nur die Elemente im Zusammenhang mit bestimmten Vorschriften und Standards, Lösungen, Aktionstypen, Bewertungsgruppen oder Datenschutzkategorien anzuzeigen. Wenn Sie Ihre Ansicht auf diese Weise filtern, wird auch die Bewertung auf Ihrem Dashboard gefiltert, die zeigt, wie viele Punkte Sie anhand Ihrer Filterkriterien aus den insgesamt möglichen Punkten erzielt haben.
+Sie können Ihre Dashboardansicht filtern, um nur die Elemente im Zusammenhang mit bestimmten Vorschriften und Standards, Lösungen, Aktionstypen, Bewertungsgruppen oder Datenschutzkategorien anzuzeigen. Wenn Sie Ihre Ansicht auf diese Weise filtern, wird auch die Bewertung auf Ihrem Dashboard gefiltert, und es wird angezeigt, wie viele Punkte Sie anhand Ihrer Filterkriterien aus den insgesamt möglichen Punkten erzielt haben.
 
 So wenden Sie Filter an:
 
@@ -258,7 +258,7 @@ So entfernen Sie Filter:
 
 ## <a name="improvement-actions-page"></a>Seite "Verbesserungsmaßnahmen"
 
-[Verbesserungsmaßnahmen](compliance-manager-improvement-actions.md) sind Aktionen, die von Ihrer Organisation verwaltet werden. Die Arbeit mit Verbesserungsmaßnahmen trägt dazu bei, Ihre Complianceaktivitäten zu zentralisieren und sich an den Datenschutzbestimmungen und -standards auszurichten. Jede Verbesserungsaktion enthält detaillierte Implementierungsanleitungen und einen Link, um Sie in die entsprechende Lösung zu starten. Verbesserungsmaßnahmen können Benutzern in Ihrer Organisation zugewiesen werden, um Implementierungs- und Testarbeiten durchzuführen. Sie können auch Dokumentationen, Notizen und Statusaktualisierungen innerhalb der Verbesserungsaktion speichern.
+[Verbesserungsmaßnahmen](compliance-manager-improvement-actions.md) sind Aktionen, die von Ihrer Organisation verwaltet werden. Die Arbeit mit Verbesserungsmaßnahmen trägt dazu bei, Ihre Complianceaktivitäten zu zentralisieren und sich an den Datenschutzbestimmungen und -standards auszurichten. Jede Verbesserungsaktion bietet detaillierte Implementierungsanleitungen und einen Link, über den Sie in die entsprechende Lösung gestartet werden können. Verbesserungsmaßnahmen können Benutzern in Ihrer Organisation zugewiesen werden, um Implementierungs- und Testarbeiten durchzuführen. Sie können auch Dokumentationen, Notizen und Statusaktualisierungen innerhalb der Verbesserungsaktion speichern.
 
 ### <a name="view-your-improvement-actions"></a>Anzeigen Ihrer Verbesserungsmaßnahmen
 
@@ -266,7 +266,7 @@ Das Compliance-Manager-Dashboard zeigt Ihre **wichtigsten Verbesserungsmaßnahme
 
 Auf der Seite "Verbesserungsmaßnahmen" werden alle Verbesserungsmaßnahmen angezeigt, die von Ihrer Organisation verwaltet werden. Aktionen, die von Microsoft verwaltet werden, können in jeder Bewertung angezeigt werden (erfahren Sie mehr über [Microsoft-Aktionen).](compliance-manager-assessments.md#microsoft-actions-tab)
 
-Wenn Ihre Seite mit Verbesserungsmaßnahmen eine lange Liste von Aktionen enthält, kann es hilfreich sein, Ihre Ansicht zu filtern. Wählen **Sie "Filter"** in der oberen rechten Ecke der Aktionsliste aus. Wenn der **Flyoutbereich** "Filter" angezeigt wird, wählen Sie Ihre Kriterien basierend auf Vorschriften und Standards, Lösung und Gruppe aus. Sie können Ihre Ansicht auch anpassen, indem **Sie** in der oberen rechten Ecke "Gruppe" auswählen. Wählen Sie im Dropdownmenü die Option aus, um sie nach Gruppe, Lösung, Kategorie, Aktionstyp oder Status anzuzeigen.
+Wenn Ihre Seite mit Verbesserungsmaßnahmen eine lange Liste von Aktionen enthält, kann es hilfreich sein, Ihre Ansicht zu filtern. Wählen **Sie "Filter"** in der oberen rechten Ecke der Aktionsliste aus. Wenn der **Flyoutbereich** "Filter" angezeigt wird, wählen Sie Ihre Kriterien basierend auf Vorschriften und Standards, Lösung und Gruppe aus. Sie können Ihre Ansicht auch anpassen, indem **Sie** in der oberen rechten Ecke "Gruppe" auswählen. Wählen Sie im Dropdownmenü die Option aus, die nach Gruppe, Lösung, Kategorie, Aktionstyp oder Status angezeigt werden soll.
 
 In der Standardansicht für diese Seite werden keine Verbesserungsmaßnahmen mit dem Teststatus **"Passed" angezeigt.** Zum Anzeigen von Aktionen, die die Tests bestanden haben, aktivieren Sie das Kontrollkästchen **"Übergeben"** im Flyoutbereich "Filter". Nur Aktionen mit dem Teststatus **"Bestanden"** werden in Richtung Ihrer Bewertung gezählt. Einige Aktionen zeigen möglicherweise eine **ausstehende Aktualisierungsbezeichnung an.** Erfahren Sie mehr über [Updates für Verbesserungsmaßnahmen.](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions)
 
@@ -316,13 +316,13 @@ Es gibt zwei Möglichkeiten, wie Sie auf diesem Bildschirm Maßnahmen ergreifen 
 
 1. Wählen Sie in der Zeile der vorgesehenen Lösung unter der Spalte **"Verbleibende** Aktionen" die Nummer mit dem Hyperlink aus. Es wird eine gefilterte Ansicht des Bildschirms mit Verbesserungsmaßnahmen mit nicht getesteten Verbesserungsmaßnahmen für diese Lösung angezeigt.
 
-2. Wählen Sie in der Zeile der vorgesehenen Lösung unter der **Spalte** Projektmappe öffnen die Option **Öffnen aus.** Sie sehen die Lösung oder den Speicherort im Microsoft 365- und Office 365 Security and Compliance Center, wo Sie die empfohlene Aktion ergreifen können.
+2. Wählen Sie in der Zeile der vorgesehenen Lösung unter der Spalte Projektmappe **öffnen** die Option **Öffnen aus.** Sie sehen die Lösung oder den Speicherort im Microsoft 365- und Office 365 Security and Compliance Center, wo Sie die empfohlene Aktion ergreifen können.
 
 ## <a name="assessments-page"></a>Bewertungsseite
 
-Auf der Seite "Bewertungen" werden alle [Bewertungen aufgeführt,](compliance-manager-assessments.md) die Sie für Ihre Organisation eingerichtet haben. Ihr Compliancebewertungs denominator wird durch alle Ihre nachverfolgten Bewertungen bestimmt. Wenn Sie weitere Bewertungen hinzufügen, werden weitere Verbesserungsmaßnahmen auf Ihrer Seite mit Verbesserungsmaßnahmen aufgeführt, und Ihr Nenner der Compliancebewertung nimmt zu.
+Auf der Bewertungsseite werden alle [Bewertungen aufgeführt,](compliance-manager-assessments.md) die Sie für Ihre Organisation eingerichtet haben. Ihr Compliancebewertungs denominator wird durch alle Ihre nachverfolgten Bewertungen bestimmt. Wenn Sie weitere Bewertungen hinzufügen, werden weitere Verbesserungsmaßnahmen auf Ihrer Seite mit Verbesserungsmaßnahmen aufgeführt, und Ihr Nenner der Compliancebewertung nimmt zu.
 
-Auf der Bewertungsseite werden die wichtigsten Informationen zu den einzelnen Bewertungen zusammengefasst:
+Auf der Bewertungsseite werden die wichtigsten Informationen zu jeder Bewertung zusammengefasst:
 
 - **Bewertung:** Name der Bewertung
 - **Status:**
@@ -330,9 +330,9 @@ Auf der Bewertungsseite werden die wichtigsten Informationen zu den einzelnen Be
     - **Unvollständig** – mindestens ein Steuerelement hat den Status "fehlgeschlagen".
     - **Keine** – alle Steuerelemente wurden noch nicht getestet
     - **In Bearbeitung** – Verbesserungsmaßnahmen haben einen anderen Status, z. B. "In Bearbeitung", "Teilweise Gutschrift" oder "Nicht erkannt"
-- **Bewertungsfortschritt:** Der Prozentsatz der Arbeit, die in Richtung des Abschlusses ausgeführt wurde, gemessen durch die Anzahl der erfolgreich getesteten Steuerelemente.
+- **Bewertungsfortschritt:** Der Prozentsatz der Arbeit, die in Richtung des Abschlusses durchgeführt wurde, gemessen durch die Anzahl der erfolgreich getesteten Steuerelemente.
 - **Ihre Verbesserungsmaßnahmen:** die Anzahl der abgeschlossenen Aktionen, um die Implementierung Ihrer Steuerelemente zu erfüllen
-- **Microsoft-Aktionen:** Die Anzahl der abgeschlossenen Aktionen zur Erfüllung der Implementierung von Microsoft-Steuerelementen.
+- **Microsoft-Aktionen:** Die Anzahl der abgeschlossenen Aktionen, um die Implementierung von Microsoft-Steuerelementen zu erfüllen
 - **Gruppe:** Name der Gruppe, zu der die Bewertung gehört
 - **Produkt**: zugeordneter Microsoft 365-Dienst
 - **Verordnung:** der regulatorische Standard, die Richtlinie oder das Recht, das für die Bewertung gilt

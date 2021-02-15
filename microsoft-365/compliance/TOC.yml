@@ -156,7 +156,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps
+        - name: Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
           href: sensitivity-labels-office-apps.md
     - name: Verschlüsselung
       items:

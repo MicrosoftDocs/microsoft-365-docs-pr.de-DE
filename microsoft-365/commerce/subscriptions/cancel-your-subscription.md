@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Ihr Microsoft 365 Business-Test- oder kostenpflichtiges Abonnement kündigen.
 ms.date: ''
-ms.openlocfilehash: 4141de3f1a228f465559212098cf46e68f2844f6
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 5d96b541030646668f636ee09cc3ccc4b43ef75a
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114729"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233340"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
@@ -35,14 +35,14 @@ ms.locfileid: "50114729"
 
 ::: moniker-end
 
-*Berechtigung:* Wenn Benutzern weniger als 25 Lizenzen zugewiesen sind, können Sie Ihr Microsoft 365 Business-Test- oder kostenpflichtiges Abonnement jederzeit online im Microsoft 365 Admin Center kündigen. Wenn Sie mehr als 25 Lizenzen für Benutzer zugewiesen haben, [rufen Sie den Support an, um Ihr Abonnement zu kündigen](../../admin/contact-support-for-business-products.md).
+*Berechtigung:* Wenn Benutzern weniger als 25 Lizenzen zugewiesen sind, können Sie Ihr Microsoft 365 Business-Test- oder kostenpflichtiges Abonnement jederzeit online im Microsoft 365 Admin Center kündigen. Wenn Benutzern mehr als 25 Lizenzen zugewiesen sind, reduzieren Sie sie auf weniger als 25, oder rufen Sie den Support an, um [Ihr Abonnement zu kündigen.](../../admin/contact-support-for-business-products.md)
 
 *Rückerstattung:* Eine anteilsmäßige Gutschrift wird Ihnen mit dem nächsten Abrechnungszyklus erstattet.
 
 > [!NOTE]
-> Wenn Sie über mehrere Abonnements für dasselbe Produkt verfügen, z. B. Microsoft 365 Business Premium, wirkt sich das Stornieren eines abonnements nicht auf die erworbenen Lizenzen oder Dienste innerhalb der anderen Abonnements aus.
+> Wenn Sie über mehrere Abonnements für dasselbe Produkt verfügen, z. B. Microsoft 365 Business Premium, wirkt sich die Kündigung eines dieser Abonnements nicht auf die erworbenen Lizenzen oder Dienste innerhalb der anderen Abonnements aus.
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Sie müssen ein globaler Administrator oder Abrechnungsadministrator sein, um die Aufgaben in diesem Artikel ausführen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 

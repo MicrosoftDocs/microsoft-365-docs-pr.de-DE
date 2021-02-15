@@ -1,6 +1,6 @@
 ---
 title: Referenz zu Kommunikationskonformitätsfeatures
-description: Featurereferenz für kommunikationskonformität in Microsoft 365. Erfahren Sie mehr über Details und Spezifikationen für die einzelnen Featurekomponenten.
+description: Featurereferenz für die Kommunikationskonformität in Microsoft 365. Erfahren Sie mehr über Details und Spezifikationen für die einzelnen Featurekomponenten.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: effe4bbcf381a717c03d9e3ace3ff7a7db8bd273
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: 8d004d4c6e6a15994bc2135df09fe04c3807fb25
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50110040"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233797"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zu Kommunikationskonformitätsfeatures
 
@@ -64,10 +64,10 @@ Wählen Sie beim Konfigurieren der Kommunikationskonformität aus den folgenden 
 |**Rollengruppe**|**Rollengruppenberechtigungen**|
 |:-----|:-----|
 | **Kommunikationskonformität** | Verwenden Sie diese Rollengruppe, um die Kommunikationskonformität für Ihre Organisation in einer einzigen Gruppe zu verwalten. Durch Hinzufügen aller Benutzerkonten für designierte Administratoren, Analysten, Ermittler und Betrachter können Sie Berechtigungen zur Kommunikationskonformität in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für die Kommunikationskonformität. Diese Konfiguration ist die einfachste Möglichkeit, schnell mit der Kommunikationskonformität zu beginnen, und ist gut geeignet für Organisationen, die keine separaten Berechtigungen benötigen, die für separate Benutzergruppen definiert sind. |
-| **Kommunikationskonformitätsadministrator** | Verwenden Sie diese Rollengruppe, um zunächst die Kommunikationskonformität zu konfigurieren und später Administratoren für die Kommunikationskonformität in eine definierte Gruppe zu untergtrennen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Richtlinien zur Kommunikationskonformität, globale Einstellungen und Rollengruppenzuweisungen erstellen, lesen, aktualisieren und löschen. Benutzer, die dieser Rollengruppe zugewiesen sind, können keine Benachrichtigungen anzeigen. |
-| **Communication Compliance Analyst** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die als Kommunikations-Compliance-Analysten fungieren. Benutzer, die dieser Rollengruppe zugewiesen sind, können Richtlinien anzeigen, in denen sie als Prüfer zugewiesen sind, Nachrichtenmetadaten (keine Nachrichteninhalte) anzeigen, an zusätzliche Prüfer eskalieren oder Benachrichtigungen an Benutzer senden. Analysten können ausstehende Warnungen nicht beheben. |
-| **Kommunikations-Compliance-Ermittler** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die als Ermittler der Kommunikationskonformität fungieren. Benutzer, die dieser Rollengruppe zugewiesen sind, können Nachrichtenmetadaten und -inhalte anzeigen, an weitere Prüfer eskalieren, zu einem Advanced eDiscovery-Fall eskalieren, Benachrichtigungen an Benutzer senden und die Warnung auflösen. |
-| **Communication Compliance Viewer** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die Kommunikationsberichte verwalten. Benutzer, die dieser Rollengruppe zugewiesen sind, können auf der Startseite für die Kommunikationskonformität auf alle Berichts widgets zugreifen und alle Berichte zur Kommunikationskonformität anzeigen. |
+| **Kommunikationskonformitätsadministrator** | Verwenden Sie diese Rollengruppe, um zunächst die Kommunikationskonformität zu konfigurieren und später Administratoren für die Kommunikationskonformität in eine definierte Gruppe zu untergtrennen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Kommunikationskonformitätsrichtlinien, globale Einstellungen und Rollengruppenzuweisungen erstellen, lesen, aktualisieren und löschen. Benutzer, die dieser Rollengruppe zugewiesen sind, können keine Benachrichtigungen anzeigen. |
+| **Communication Compliance Analyst** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die als Analysten für die Kommunikationskonformität fungieren. Benutzer, die dieser Rollengruppe zugewiesen sind, können Richtlinien anzeigen, in denen sie als Prüfer zugewiesen sind, Nachrichtenmetadaten (keine Nachrichteninhalte) anzeigen, an andere Prüfer eskalieren oder Benachrichtigungen an Benutzer senden. Analysten können ausstehende Warnungen nicht beheben. |
+| **Kommunikations-Compliance-Ermittler** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die als Ermittler der Kommunikationskonformität fungieren. Benutzer, die dieser Rollengruppe zugewiesen sind, können Nachrichtenmetadaten und -inhalte anzeigen, an andere Prüfer eskalieren, zu einem Advanced eDiscovery-Fall eskalieren, Benachrichtigungen an Benutzer senden und die Warnung auflösen. |
+| **Kommunikations-Compliance-Viewer** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die Kommunikationsberichte verwalten. Benutzer, die dieser Rollengruppe zugewiesen sind, können auf der Startseite für die Kommunikationskonformität auf alle Berichts widgets zugreifen und alle Berichte zur Kommunikationskonformität anzeigen. |
 
 ### <a name="for-organizations-using-the-original-permissions-and-role-groups"></a>Für Organisationen, die die ursprünglichen Berechtigungen und Rollengruppen verwenden
 
@@ -82,7 +82,7 @@ Berücksichtigen Sie das folgende Beispiel, um Die Migrationsplanung zu unterst�
 
 Um die Rollen für diese Benutzer für die neue Rollengruppenstruktur zu aktualisieren und die Zugriffs- und Verwaltungsberechtigungen für die Benutzer zu trennen, können Sie drei neue Gruppen und die zugeordneten neuen Rollengruppenzuweisungen in Betracht ziehen:
 
-- **IT-Administratoren:** Der neuen Rollengruppe *"Kommunikations-Compliance-Administrator"* zugewiesen.
+- **IT-Administratoren:** Der neuen Rollengruppe *"Communication Compliance Admin"* zugewiesen.
 - **Triage:** Der Rollengruppe *"Communication Compliance Analyst"* zugewiesen.
 - **Prüfer:** Der neuen Rollengruppe *"Kommunikations-Compliance-Prüfer"* zugewiesen.
 
@@ -101,7 +101,7 @@ Wenn Sie eine Richtlinie zur Kommunikationskonformität erstellen, müssen Sie b
 
 Um die Einrichtung zu vereinfachen, erstellen Sie Gruppen für Personen, die ihre Kommunikation überprüfen müssen, und Gruppen für Personen, die diese Kommunikation überprüfen. Wenn Sie Gruppen verwenden, benötigen Sie möglicherweise mehrere. Zum Beispiel, wenn Sie die Kommunikation zwischen zwei verschiedenen Personengruppen überprüfen möchten oder wenn Sie eine Gruppe angeben möchten, die nicht überwacht wird.
 
-Wenn Sie eine Verteilergruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle E-Mails der einzelnen Benutzer in der Verteilergruppe. Wenn Sie eine Microsoft 365-Gruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle an diese Gruppe gesendeten E-Mails, nicht die einzelnen E-Mails, die von jedem Gruppenmitglied empfangen wurden.
+Wenn Sie eine Verteilergruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle E-Mails aller Benutzer in der Verteilergruppe. Wenn Sie eine Microsoft 365-Gruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle an diese Gruppe gesendeten E-Mails, nicht die einzelnen E-Mails, die von jedem Gruppenmitglied empfangen wurden.
 
 Das Hinzufügen von Gruppen und Verteilerlisten zu Richtlinien zur Kommunikationskonformität ist Teil der allgemeinen Bedingungen und Regeln, sodass die maximale Anzahl von Gruppen und Verteilerlisten, die von einer Richtlinie unterstützt werden, von der Anzahl der Bedingungen abhängig ist, die der Richtlinie ebenfalls hinzugefügt werden. Jede Richtlinie sollte etwa 20 Gruppen oder Verteilerlisten unterstützen, abhängig von der Anzahl der zusätzlichen Bedingungen, die in der Richtlinie vorhanden sind.
 
@@ -128,7 +128,7 @@ Sie müssen eine Anforderung beim Microsoft-Support stellen, damit Ihre Organisa
 
     - **Für Skype for Business Online-Chatkommunikation:** [](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) Weisen Sie einzelne Benutzer zu, oder weisen Sie der Richtlinie zur Kommunikationskonformität eine Verteilergruppe zu. Diese Einstellung gilt für Eins-zu-eins- oder Eins-zu-viele-Benutzer/Chat-Beziehungen.
 
-- **Drittanbieterquellen:** Sie können die Kommunikation auf Daten überprüfen, die in Postfächer in Ihrer Microsoft 365-Organisation aus Drittanbieterquellen wie [Instant Bloomberg,](archive-instant-bloomberg-data.md) [Slack,](archive-slack-data.md) [Zoom,](archive-zoommeetings-data.md)SMS und vielem mehr importiert wurden. Eine vollständige Liste der connectors, die in der Kommunikationskonformität unterstützt werden, finden Sie unter [Archivieren von Drittanbieterdaten.](archiving-third-party-data.md)
+- **Drittanbieterquellen:** Sie können die Kommunikation auf Daten überprüfen, die in Postfächer in Ihrer Microsoft 365-Organisation aus Drittanbieterquellen wie [Instant Bloomberg,](archive-instant-bloomberg-data.md) [Slack,](archive-slack-data.md) [Zoom,](archive-zoommeetings-data.md)SMS und vielem mehr importiert wurden. Eine vollständige Liste der connectors, die in der Kommunikationskonformität unterstützt werden, finden Sie unter Archivieren von [Drittanbieterdaten.](archiving-third-party-data.md)
 
     Sie müssen einen Drittanbieterconnector für Ihre Microsoft 365-Organisation konfigurieren, bevor Sie den Connector einer Richtlinie zur Kommunikationskonformität zuweisen können. Im **Abschnitt "Drittanbieterquellen"** des Assistenten für Kommunikationskonformitätsrichtlinien werden nur derzeit konfigurierte Drittanbieterconnectors angezeigt.
 
@@ -137,7 +137,7 @@ Sie müssen eine Anforderung beim Microsoft-Support stellen, damit Ihre Organisa
 Organisationen, die Aufsichtsrichtlinien in Office 365 verwenden und den Übergang zu Kommunikations-Compliance-Richtlinien in Microsoft 365 planen, müssen diese wichtigen Punkte verstehen:
 
 - Beide Lösungen können in Ihrer Organisation nebeneinander verwendet werden, aber die in jeder Lösung verwendeten Richtlinien müssen eindeutige Richtliniennamen haben. aufweisen. Gruppen und benutzerdefinierte Schlüsselwortwörterbücher können während einer Übergangszeit von Lösungen gemeinsam genutzt werden.
-- Nachrichten, die unter Aufsicht in Office 365-Richtlinienkonformität gespeichert wurden, können in Microsoft 365 nicht verschoben oder in die Kommunikationskonformität freigegeben werden.
+- Nachrichten, die unter Aufsicht in Office 365-Richtlinienkonformität gespeichert wurden, können in Microsoft 365 nicht in die Kommunikationskonformität verschoben oder freigegeben werden.
 - Die Aufsichtslösung in Office 365 wird vollständig durch die Kommunikationskonformitätslösung in Microsoft 365 ersetzt. Es wird empfohlen, neue Richtlinien für die Kommunikationskonformität zu erstellen, die dieselben Einstellungen wie vorhandene Aufsichtsrichtlinien haben, um die neuen Verbesserungen bei Untersuchung und Korrektur zu nutzen. Beim Übergang zur Kommunikationscompliance in Microsoft 365 sollten Sie planen, Berichtsdaten aus der Aufsicht in Office 365 zu exportieren, wenn Sie interne Richtlinien zur Aufbewahrung von Compliance-Anforderungen haben.
 
 Informationen zum Aus der Aufsicht in Office 365 finden Sie in der [Microsoft 365-Roadmap.](https://www.microsoft.com/microsoft-365/roadmap)
@@ -146,7 +146,7 @@ Informationen zum Aus der Aufsicht in Office 365 finden Sie in der [Microsoft 36
 
 ### <a name="users"></a>Benutzer
 
-Sie haben die Möglichkeit, alle **Benutzer** auszuwählen oder bestimmte Benutzer in einer Richtlinie zur Kommunikationskonformität zu definieren. Durch Auswahl von **Alle Benutzer** wird die Richtlinie auf alle Benutzer und alle Gruppen angewendet, in denen ein Benutzer als Mitglied enthalten ist. Das Festlegen bestimmter Benutzer wendet die Richtlinie auf die festgelegten Benutzer und alle Gruppen an, in denen die festgelegten Benutzer als Mitglied enthalten sind.
+Sie haben die Möglichkeit, alle **Benutzer** auszuwählen oder bestimmte Benutzer in einer Kommunikationskonformitätsrichtlinie zu definieren. Durch Auswahl von **Alle Benutzer** wird die Richtlinie auf alle Benutzer und alle Gruppen angewendet, in denen ein Benutzer als Mitglied enthalten ist. Das Festlegen bestimmter Benutzer wendet die Richtlinie auf die festgelegten Benutzer und alle Gruppen an, in denen die festgelegten Benutzer als Mitglied enthalten sind.
 
 ### <a name="direction"></a>Direction
 
@@ -158,14 +158,14 @@ Standardmäßig wird die **Richtungsbedingung** angezeigt und kann nicht entfern
 
 ### <a name="sensitive-information-types"></a>Typen vertraulicher Informationen
 
-Sie haben die Möglichkeit, vertrauliche Informationstypen als Teil Ihrer Kommunikationskonformitätsrichtlinie zu verwenden. Vertrauliche Informationstypen sind entweder vordefinierte oder benutzerdefinierte Datentypen, mit deren Hilfe Kreditkartennummern, Bankkontonummern, Reisepassnummern und vieles mehr identifiziert und geschützt werden können. Als Bestandteil von [Verhinderung von Datenverlust (Data Loss Prevention, DLP)](data-loss-prevention-policies.md), kann die Konfiguration vertraulicher Informationen Muster, Zeichennähe, Vertrauensniveaus und sogar benutzerdefinierte Datentypen verwenden, um möglicherweise vertrauliche Inhalte zu identifizieren und zu kennzeichnen. Die standardmäßigen Typen vertraulicher Informationen sind:
+Sie haben die Möglichkeit, vertrauliche Informationstypen als Teil Ihrer Kommunikationskonformitätsrichtlinie zu verwenden. Typen vertraulicher Informationen sind vordefinierte oder benutzerdefinierte Datentypen, mit deren Hilfe Kreditkartennummern, Bankkontonummern, Reisepassnummern und vieles mehr identifiziert und geschützt werden können. Als Bestandteil von [Verhinderung von Datenverlust (Data Loss Prevention, DLP)](data-loss-prevention-policies.md), kann die Konfiguration vertraulicher Informationen Muster, Zeichennähe, Vertrauensniveaus und sogar benutzerdefinierte Datentypen verwenden, um möglicherweise vertrauliche Inhalte zu identifizieren und zu kennzeichnen. Die standardmäßigen Typen vertraulicher Informationen sind:
 
 - Finanzwesen
 - Gesundheit und Gesundheit
 - Datenschutz
 - Benutzerdefinierter Informationstyp
 
-Weitere Informationen zu details vertraulichen Informationen und zu den Mustern in den Standardtypen finden Sie unter Entitätsdefinitionen für Typen [vertraulicher Informationen.](sensitive-information-type-entity-definitions.md)
+Weitere Informationen zu details vertraulichen Informationen und den Mustern in den Standardtypen finden Sie unter Entitätsdefinitionen für Typen [vertraulicher Informationen.](sensitive-information-type-entity-definitions.md)
 
 ### <a name="custom-keyword-dictionaries"></a>Benutzerdefinierte Schlüsselwörterbücher
 
@@ -177,11 +177,11 @@ Integrierte trainierbare und globale Klassifizierungen überprüfen gesendete od
 
 In die Kommunikationskonformität integrierte trainierbare und globale Klassifikatoren überprüfen die Kommunikation auf Begriffe, Bilder und Stimmungen für die folgenden Arten von Sprache und Inhalt:
 
-- **Bedrohung:** Sucht nach Bedrohungen, um Gewalt oder physischen Schaden an einer Person oder Eigenschaft zu begehen.
+- **Bedrohung:** Sucht nach Bedrohungen, um Gewalt oder physischen Schaden an einer Person oder eigenschaft zu begehen.
 - **Gezielte Belästigung:** Sucht nach anstößigen Verhaltensweisen, die auf Personen in Bezug auf Race, Farbe, Nationale Herkunft ausgerichtet sind.
 - **Ansage:** Sucht nach profanen Ausdrücken, die die meisten Menschen verungl schen.
 - **Bilder für Erwachsene:** Sucht nach Bildern, die sexueller Art sind.
-- **Rassige** Bilder: Sucht nach Bildern, die der Natur nach suggestiv sind, aber weniger explizite Inhalte enthalten als Bilder, die als "Jugendlich" eingestuft werden.
+- **Rassige** Bilder: Sucht nach Bildern, die der Natur nach suggestiv sind, aber weniger expliziten Inhalt enthalten als Bilder, die als "Jugendlich" eingestuft werden.
 - **Gory-Bilder:** Sucht nach Bildern, die Gewalt und Gewalt darstellen.
 
 Die *Bildklassifikatoren "Adult",* *"Racy"* und *"Gory"* überprüfen Dateien in . JPEG, . PNG, . GIF und . BMP-Formate. Die Größe für Bilddateien muss kleiner als 4 MB sein, und die Abmessungen der Bilder müssen größer als 50 x 50 Pixel und größer als 50 KB sein, damit das Bild für die Auswertung in Frage kommen kann. Die Bildidentifikation wird für Exchange Online-E-Mail-Nachrichten und Microsoft Teams-Kanäle und -Chats unterstützt.
@@ -189,7 +189,7 @@ Die *Bildklassifikatoren "Adult",* *"Racy"* und *"Gory"* überprüfen Dateien in
 Die integrierten trainierbaren und globalen Klassifizierungen bieten keine vollständige Liste der Begriffe oder Bilder in diesen Bereichen. Darüber hinaus ändern sich sprach- und kulturhistorische Standards ständig, und angesichts dieser Unterschiede behält sich Microsoft das Recht vor, Klassifikatoren nach eigenem Ermessen zu aktualisieren. Klassifizierer unterstützen Ihre Organisation zwar bei der Überwachung dieser Bereiche, Klassifikatoren sind jedoch nicht dafür vorgesehen, die einzigen Mittel ihrer Organisation zur Überwachung oder Behandlung dieser Sprache oder Bilder zur Verfügung zu stellen. Ihre Organisation, nicht Microsoft, bleibt für alle Entscheidungen im Zusammenhang mit der Überwachung, Überprüfung und Blockierung von Sprache und Bildern in diesen Bereichen verantwortlich, einschließlich der Einhaltung des lokalen Datenschutzes und anderer anwendbarer Gesetze. Microsoft ermuntert, sich vor der Bereitstellung und Verwendung mit Rechtsberatern zu beraten.
 
 >[!NOTE]
->Richtlinien, die Klassifizierungen verwenden, überprüfen und bewerten Nachrichten mit einer Wortanzahl von sechs oder mehr. Nachrichten mit weniger als sechs Wörtern werden in Richtlinien nicht mithilfe von Klassifizierungen ausgewertet. Um kürzere Nachrichten mit unangemessenen Inhalten zu identifizieren und Maßnahmen zu ergreifen, empfehlen wir die Verwendung eines benutzerdefinierten Schlüsselwortwörterbuchs zur Überwachung von Kommunikationskonformitätsrichtlinien für diese Art von Inhalten.
+>Richtlinien, die Klassifizierungen verwenden, überprüfen und bewerten Nachrichten mit einer Wortanzahl von sechs oder mehr. Nachrichten mit weniger als sechs Wörtern werden in Richtlinien nicht mithilfe von Klassifizierungen ausgewertet. Um kürzere Nachrichten mit unangemessenen Inhalten zu identifizieren und Maßnahmen zu ergreifen, empfehlen wir, ein benutzerdefiniertes Schlüsselwortverzeichnis zur Überwachung der Kommunikationskonformitätsrichtlinien für diese Art von Inhalten hinzuzufügen.
 
 Informationen zu trainierbaren Klassifizierungen in Microsoft 365 finden Sie unter ["Erste Schritte mit trainierbaren Klassifizierungen".](classifier-get-started-with.md)
 
@@ -202,8 +202,8 @@ In der folgenden Tabelle werden weitere Informationen zu den einzelnen Bedingung
   
 |**Bedingung**|**Verwendung**|
 |:-----|:-----|
-| **Inhalt entspricht einer dieser Klassifizierungen** | Gelten Sie für die Richtlinie, wenn Klassifikatoren in eine Nachricht eingeschlossen oder ausgeschlossen werden. Einige Klassifizierungen sind in Ihrem Mandanten vordefiniert, und benutzerdefinierte Klassifizierungen müssen separat konfiguriert werden, bevor sie für diese Bedingung verfügbar sind. In einer Richtlinie kann nur ein Klassifikator als Bedingung definiert werden. Weitere Informationen zum Konfigurieren von Klassifizierungen finden Sie unter [Informationen zu trainierbaren Klassifizierungen (Vorschau).](classifier-learn-about.md) |
-| **Inhalt enthält einen dieser vertraulichen Informationstypen** | Gelten Sie für die Richtlinie, wenn vertrauliche Informationstypen in eine Nachricht eingeschlossen oder ausgeschlossen werden. Einige Klassifizierungen sind in Ihrem Mandanten vorab definiert, und benutzerdefinierte Klassifizierungen können separat oder als Teil des Bedingungszuweisungsprozesses konfiguriert werden. Jeder typ vertraulicher Informationen, den Sie auswählen, wird separat angewendet, und nur einer dieser Typen vertraulicher Informationen muss angewendet werden, damit die Richtlinie auf die Nachricht angewendet wird. Weitere Informationen zu benutzerdefinierten Typen vertraulicher Informationen finden Sie [unter Informationen zu Typen vertraulicher Informationen.](sensitive-information-type-learn-about.md) |
+| **Inhalt entspricht einer dieser Klassifizierungen** | Gelten Sie für die Richtlinie, wenn Klassifizierer in eine Nachricht eingeschlossen oder ausgeschlossen werden. Einige Klassifizierungen sind in Ihrem Mandanten vordefiniert, und benutzerdefinierte Klassifizierungen müssen separat konfiguriert werden, bevor sie für diese Bedingung verfügbar sind. In einer Richtlinie kann nur ein Klassifikator als Bedingung definiert werden. Weitere Informationen zum Konfigurieren von Klassifizierungen finden Sie unter [Informationen zu trainierbaren Klassifizierungen (Vorschau).](classifier-learn-about.md) |
+| **Inhalt enthält einen dieser Typen vertraulicher Informationen** | Gelten Sie für die Richtlinie, wenn vertrauliche Informationstypen in eine Nachricht eingeschlossen oder ausgeschlossen werden. Einige Klassifizierungen sind in Ihrem Mandanten vorab definiert, und benutzerdefinierte Klassifizierungen können separat oder als Teil des Bedingungszuweisungsprozesses konfiguriert werden. Jeder typ vertraulicher Informationen, den Sie auswählen, wird separat angewendet, und nur einer dieser Typen vertraulicher Informationen muss angewendet werden, damit die Richtlinie auf die Nachricht angewendet wird. Weitere Informationen zu benutzerdefinierten Typen vertraulicher Informationen finden Sie [unter Informationen zu vertraulichen Informationstypen.](sensitive-information-type-learn-about.md) |
 | **Nachricht wird von einer dieser Domänen empfangen**  <br><br> **Nachricht wird von einer dieser Domänen nicht empfangen** | Wenden Sie die Richtlinie an, um bestimmte Domänen oder E-Mail-Adressen in empfangene Nachrichten ein- oder auszuschließen. Geben Sie jede Domäne oder E-Mail-Adresse ein, und trennen Sie mehrere Domänen oder E-Mail-Adressen durch ein Komma. Jede eingegebene Domäne oder E-Mail-Adresse wird separat angewendet, es muss nur eine Domäne oder E-Mail-Adresse gelten, damit die Richtlinie auf die Nachricht angewendet wird. <br><br> Wenn Sie alle E-Mails aus einer bestimmten Domäne überprüfen, aber Nachrichten ausschließen möchten, die nicht überprüft werden  müssen (Newsletter, Ankündigungen und so weiter), müssen Sie konfigurieren, dass eine Nachricht von einer dieser Domänenbedingung nicht empfangen wird, die die E-Mail-Adresse ausschließt (z. B. "newsletter@contoso.com"). |
 | **Nachricht wird an eine dieser Domänen gesendet**  <br><br> **Nachricht wird nicht an diese Domänen gesendet** | Wenden Sie die Richtlinie an, um bestimmte Domänen oder E-Mail-Adressen in gesendete Nachrichten ein- oder auszuschließen. Geben Sie jede Domäne oder E-Mail-Adresse ein, und trennen Sie mehrere Domänen oder E-Mail-Adressen durch ein Komma. Jede Domäne oder E-Mail-Adresse wird separat angewendet, es muss nur eine Domäne oder E-Mail-Adresse gelten, damit die Richtlinie auf die Nachricht angewendet wird. <br><br> Wenn Sie alle an eine bestimmte Domäne gesendeten E-Mails überprüfen, aber gesendete Nachrichten ausschließen möchten, die nicht überprüft werden müssen, müssen Sie zwei Bedingungen konfigurieren: <br> - Eine **Nachricht wird an eine dieser** Domänenbedingung gesendet, die die Domäne definiert ("contoso.com"), UND <br> - Eine **Nachricht wird nicht an eine** dieser Domänenbedingung gesendet, die die E-Mail-Adresse ausschließt ("subscriptions@contoso.com"). |
 | **Nachricht wird mit einer dieser Bezeichnungen klassifiziert**  <br><br> **Nachricht wird nicht mit einer dieser Bezeichnungen klassifiziert** | So wenden Sie die Richtlinie an, wenn bestimmte Aufbewahrungsbezeichnungen in eine Nachricht eingeschlossen oder ausgeschlossen werden. Aufbewahrungsbezeichnungen müssen separat konfiguriert werden, und konfigurierte Bezeichnungen werden als Teil dieser Bedingung ausgewählt. Jede bezeichnung, die Sie auswählen, wird separat angewendet (nur eine dieser Bezeichnungen muss gelten, damit die Richtlinie auf die Nachricht angewendet wird). Weitere Informationen zu Aufbewahrungsbezeichnungen finden Sie [unter Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen.](retention.md)|
@@ -211,27 +211,27 @@ In der folgenden Tabelle werden weitere Informationen zu den einzelnen Bedingung
 | **Anlage enthält eines dieser Wörter**  <br><br> **Anlage enthält keines dieser Wörter** | Um die Richtlinie anzuwenden, wenn bestimmte Wörter oder Ausdrücke in eine Nachrichtenanlage (z. B. ein Word-Dokument) eingeschlossen oder ausgeschlossen werden, geben Sie jedes Wort durch ein Komma getrennt ein. Verwenden Sie für Ausdrücke mit zwei oder mehr Wörtern Anführungszeichen um den Ausdruck. Jedes wort oder phrase, das Sie eingeben, wird separat angewendet (nur ein Wort muss angewendet werden, damit die Richtlinie auf die Anlage angewendet wird). Weitere Informationen zum Eingeben von Wörtern oder Ausdrücken finden Sie im nächsten Abschnitt [Matching words and phrases to emails or attachments](communication-compliance-feature-reference.md#Matchwords).|
 | **Anlage ist einer dieser Dateitypen**  <br><br> **Anlage ist keiner dieser Dateitypen** | Um Kommunikationen zu überwachen, die bestimmte Anlagentypen enthalten oder ausschließen, geben Sie die Dateierweiterungen ein (z. B. EXE oder PDF). Wenn Sie mehrere Dateierweiterungen ein- oder ausschließen möchten, geben Sie diese in separaten Zeilen ein. Damit die Richtlinie angewendet wird, muss nur eine Anlagenerweiterung übereinstimmen.|
 | **Nachricht ist größer als**  <br><br> **Die Nachrichtengröße ist nicht größer als** | Um Nachrichten basierend auf einer bestimmten Größe zu überprüfen, verwenden Sie diese Bedingungen, um die maximale oder minimale Größe einer Nachricht anzugeben, bevor sie überprüft werden kann. Wenn Sie beispielsweise  eine Nachrichtengröße von mehr als \> **1,0 MB** angeben, werden alle Nachrichten mit einer Größe von 1,01 MB und mehr überprüft. Sie können Byte, Kilobyte, Megabyte oder Gigabyte für diese Bedingung auswählen.|
-| **Anlage ist größer als**  <br><br> **Anlage ist nicht größer als** | Um Nachrichten basierend auf der Größe ihrer Anlagen zu überprüfen, geben Sie die maximale oder minimale Größe einer Anlage an, bevor die Nachricht und ihre Anlagen einer Überprüfung unterliegen. Wenn Sie beispielsweise **"Anlage"** mit einer Größe von mehr als \> **2,0 MB** angeben, werden alle Nachrichten mit Anlagen mit einer Größe von 2,01 MB und mehr einer Überprüfung unterliegen. Sie können Byte, Kilobyte, Megabyte oder Gigabyte für diese Bedingung auswählen.|
+| **Anlage ist größer als**  <br><br> **Anlage ist nicht größer als** | Um Nachrichten basierend auf der Größe ihrer Anlagen zu überprüfen, geben Sie die maximale oder minimale Größe einer Anlage an, bevor die Nachricht und ihre Anlagen einer Überprüfung unterliegen. Wenn Sie beispielsweise **"Anlage"** mit einer Größe von mehr als \> **2,0 MB** angeben, werden alle Nachrichten mit Anlagen von 2,01 MB und mehr überprüft. Sie können Byte, Kilobyte, Megabyte oder Gigabyte für diese Bedingung auswählen.|
    
 #### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Übereinstimmende Wörter und Ausdrücke in E-Mails oder Anlagen
 <a name="Matchwords"> </a>
 
-Jedes Wort, das Sie eingeben und durch ein Komma trennen, wird separat angewendet (nur ein Wort muss gelten, damit die Richtlinienbedingung auf die E-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die **Bedingung"**"Nachricht enthält eines dieser Wörter mit den Schlüsselwörtern "banker", "confidential" und "insider trading" getrennt durch ein Komma (Banker, vertraulich,"Insider-Handel"). Die Richtlinie gilt für alle Nachrichten, die das Wort "banker", "vertraulich" oder den Ausdruck "Insider Trading" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau mit der Eingabe übereinstimmen.
+Jedes Wort, das Sie eingeben und durch ein Komma trennen, wird separat angewendet (nur ein Wort muss gelten, damit die Richtlinienbedingung auf die E-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die **Bedingung"**"Nachricht enthält eines dieser Wörter mit den Schlüsselwörtern "banker", "confidential" und "insider trading" getrennt durch ein Komma (Banker, vertraulich,"Insider-Handel"). Die Richtlinie gilt für alle Nachrichten, die das Wort "banker", "vertraulich" oder den Ausdruck "Insider Trading" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau mit dem übereinstimmen, was Sie eingeben.
 
 >[!IMPORTANT]
->Beim Importieren einer Benutzerwörterbuchdatei muss jedes Wort oder jede Phrase durch einen Wagenrücklauf und in einer separaten Zeile getrennt werden. <br> Zum Beispiel: <br><br>
+>Beim Importieren einer Benutzerwörterbuchdatei muss jedes Wort oder jede Phrase durch einen Wagenrücklauf und in einer separaten Zeile getrennt werden. <br> Beispiel: <br><br>
 >*banker* <br>
 >*vertraulich* <br>
 >*Insiderhandel*
 
-Um sowohl E-Mail-Nachrichten als auch [](create-test-tune-dlp-policy.md) Anlagen auf dieselben [](create-a-keyword-dictionary.md) Schlüsselwörter zu überprüfen, erstellen Sie eine Richtlinie zur Verhinderung von Datenverlust mit einem benutzerdefinierten Schlüsselwortwörterbuch für die Begriffe, die Sie in Nachrichten überprüfen möchten. Diese Richtlinienkonfiguration identifiziert definierte Schlüsselwörter, die entweder in der E-Mail-Nachricht **oder** in der E-Mail-Anlage angezeigt werden. Verwenden der standardmäßigen bedingten Richtlinieneinstellungen *(* Nachricht enthält eines dieser Wörter und *Anlage* enthält eines dieser Wörter) zum Identifizieren von Begriffen in Nachrichten und in Anlagen erfordert, dass die Begriffe **sowohl** in der Nachricht als auch in der Anlage vorhanden sind.
+Um sowohl E-Mail-Nachrichten als auch [](create-test-tune-dlp-policy.md) Anlagen auf dieselben [](create-a-keyword-dictionary.md) Schlüsselwörter zu überprüfen, erstellen Sie eine Richtlinie zur Verhinderung von Datenverlust mit einem benutzerdefinierten Schlüsselwortverzeichnis für die Begriffe, die Sie in Nachrichten überprüfen möchten. Diese Richtlinienkonfiguration identifiziert definierte Schlüsselwörter, die entweder in der E-Mail-Nachricht **oder** in der E-Mail-Anlage angezeigt werden. Mithilfe der standard bedingten Richtlinieneinstellungen *(* Nachricht enthält eines dieser Wörter und *Anlage* enthält eines dieser Wörter ) zum Identifizieren von Begriffen in Nachrichten und in Anlagen erfordert, dass die Begriffe **sowohl** in der Nachricht als auch in der Anlage vorhanden sind.
   
 #### <a name="enter-multiple-conditions"></a>Eingeben mehrerer Bedingungen
 
-Wenn Sie mehrere Bedingungen eingeben, verwendet Microsoft 365 alle Bedingungen zusammen, um zu bestimmen, wann die Kommunikationskonformitätsrichtlinie auf Kommunikationselemente angewendet werden soll. Wenn Sie mehrere Bedingungen einrichten, müssen alle Bedingungen erfüllt sein, damit die Richtlinie angewendet wird, es sei denn, Sie geben eine Ausnahme ein. Sie benötigen beispielsweise eine Richtlinie, die gilt, wenn eine Nachricht das Wort "trade" enthält und größer als 2 MB ist. Wenn die Nachricht jedoch auch die Wörter "Genehmigt von Contoso Financial" enthält, sollte die Richtlinie nicht gelten. In diesem Beispiel würden die drei Bedingungen wie folgt definiert:
+Wenn Sie mehrere Bedingungen eingeben, verwendet Microsoft 365 alle Bedingungen zusammen, um zu bestimmen, wann die Kommunikationskonformitätsrichtlinie auf Kommunikationselemente angewendet werden soll. Wenn Sie mehrere Bedingungen einrichten, müssen alle Bedingungen erfüllt sein, damit die Richtlinie angewendet wird, es sei denn, Sie geben eine Ausnahme ein. Sie benötigen beispielsweise eine Richtlinie, die gilt, wenn eine Nachricht das Wort "trade" enthält und größer als 2 MB ist. Wenn die Nachricht jedoch auch die Wörter "Genehmigt von Contoso Financial" enthält, sollte die Richtlinie nicht gelten. In diesem Beispiel werden die drei Bedingungen wie folgt definiert:
   
-- **Nachricht enthält eines dieser Wörter** mit dem Schlüsselwort "trade"
-- **Nachrichtengröße ist größer als ,** mit dem Wert 2 MB
+- **Nachricht enthält eines dieser Wörter mit** dem Schlüsselwort "trade"
+- **Nachrichtengröße ist größer als**, mit dem Wert 2 MB
 - **Nachricht enthält keines dieser Wörter** mit den Schlüsselwörtern "Genehmigt von Contoso-Finanzteam"
 
 ### <a name="review-percentage"></a>Prozentsatz der Überprüfung
@@ -244,7 +244,7 @@ Der Schutz der Privatsphäre von Benutzern, die richtlinienkonform sind, ist wic
 
 Für Benutzer mit einer Übereinstimmung mit der Kommunikationskonformität können Sie eine der folgenden Einstellungen in den Einstellungen für die **Kommunikationskonformität auswählen:**
 
-- **Anonymisierte Versionen** von Benutzernamen anzeigen: Benutzernamen werden anonymisiert, um zu verhindern, dass Benutzer in der Rollengruppe *"Communication Compliance Analyst"* sehen, wer Richtlinienwarnungen zugeordnet ist. Benutzern in  der Rollengruppe "Kommunikationskonformitätsermittler" werden immer Benutzernamen angezeigt, nicht die anonymisierten Versionen. Beispielsweise würde ein Benutzer "Grace Grace" mit einem zufälligen Pseudonym wie "AnonIS8-988" in allen Bereichen der Kommunikationskonformität angezeigt. Wenn Sie diese Einstellung wählen, werden alle Benutzer mit aktuellen und früheren Richtlinienübereinstimmungen anonymisiert und gelten für alle Richtlinien. Benutzerprofilinformationen in den Benachrichtigungsdetails zur Kommunikationskonformität sind bei Auswahl dieser Option nicht verfügbar. Benutzernamen werden jedoch beim Hinzufügen neuer Benutzer zu vorhandenen Richtlinien oder beim Zuweisen von Benutzern zu neuen Richtlinien angezeigt. Wenn Sie diese Einstellung deaktivieren, werden Benutzernamen für alle Benutzer angezeigt, die über aktuelle oder frühere Richtlinien übereinstimmungen verfügen.
+- **Anonymisierte Versionen** von Benutzernamen anzeigen: Benutzernamen werden anonymisiert, um zu verhindern, dass Benutzer in der Rollengruppe *"Communication Compliance Analyst"* sehen, wer Richtlinienwarnungen zugeordnet ist. Benutzern in  der Rollengruppe "Kommunikationskonformitätsermittler" werden immer Benutzernamen angezeigt, nicht die anonymisierten Versionen. Beispielsweise würde ein Benutzer "Grace Grace" mit einem zufälligen Pseudonym wie "AnonIS8-988" in allen Bereichen der Kommunikationskonformität angezeigt. Wenn Sie diese Einstellung wählen, werden alle Benutzer mit aktuellen und früheren Richtlinienübereinstimmungen anonymisiert und gelten für alle Richtlinien. Benutzerprofilinformationen in den Benachrichtigungsdetails zur Kommunikationskonformität sind bei Auswahl dieser Option nicht verfügbar. Benutzernamen werden jedoch beim Hinzufügen neuer Benutzer zu vorhandenen Richtlinien oder beim Zuweisen von Benutzern zu neuen Richtlinien angezeigt. Wenn Sie diese Einstellung deaktivieren, werden Benutzernamen für alle Benutzer mit aktuellen oder früheren Richtlinien übereinstimmungen angezeigt.
 - **Anonymisierte Versionen von Benutzernamen** nicht anzeigen: Benutzernamen werden für alle aktuellen und früheren Richtlinienkonformitätsbesprechungen für Warnungen zur Kommunikationskonformität angezeigt. Benutzerprofilinformationen (Name, Titel, Alias sowie Organisation oder Abteilung) werden für den Benutzer für alle Warnungen zur Kommunikationskonformität angezeigt.
 
 ## <a name="notice-templates"></a>Benachrichtigungsvorlagen
@@ -255,7 +255,7 @@ Hinweisvorlagen sind benutzerdefinierte E-Mail-Vorlagen, in denen Sie die folgen
 
 |**Field**|**Erforderlich**| **Details** |
 |:-----|:-----|:-----|
-|**Vorlagenname** | Ja | Der Anzeigename für die Benachrichtigungsvorlage, die Sie im Benachrichtigungsworkflow während der Wartung auswählen, unterstützt Textzeichen. |
+|**Vorlagenname** | Ja | Der Anzeigename für die Benachrichtigungsvorlage, die Sie im Benachrichtigungsworkflow während der Korrektur auswählen, unterstützt Textzeichen. |
 | **Absenderadresse** | Ja | Die Adresse eines oder mehrerer Benutzer oder Gruppen, die die Nachricht an den Benutzer mit einer Richtlinienabsingung senden, die aus Active Directory für Ihr Abonnement ausgewählt wurde. |
 | **CC- und BCC-Adressen** | Nein | Optionale Benutzer oder Gruppen, die über die Richtlinienabsing benachrichtigt werden sollen, die in Active Directory für Ihr Abonnement ausgewählt sind. |
 | **Betreff** | Ja | Informationen, die in der Betreffzeile der Nachricht angezeigt werden, unterstützen Textzeichen. |
@@ -287,9 +287,9 @@ Mithilfe von Kommunikationskonformitätsfiltern können Sie Warnmeldungen filter
 
 |**Filter**|**Details**|
 |:-----|:-----|
-| **Date** | Das Datum, an dem die Nachricht von einem Benutzer in Ihrer Organisation gesendet oder empfangen wurde. Um nach einem einzelnen Tag zu filtern, wählen Sie einen Datumsbereich aus, der mit dem Tag beginnt, für den Ergebnisse erzielt werden sollen, und mit dem folgenden Tag endet. Wenn Sie z. B. Ergebnisse für den 20.09.2020 filtern möchten, würden Sie einen Filterdatumsbereich vom 20.09.2020-21.09.2020 auswählen.|
+| **Date** | Das Datum, an dem die Nachricht von einem Benutzer in Ihrer Organisation gesendet oder empfangen wurde. Um nach einem einzelnen Tag zu filtern, wählen Sie einen Datumsbereich aus, der mit dem Tag beginnt, für den Ergebnisse erzielt werden sollen, und mit dem folgenden Tag endet. Wenn Sie beispielsweise Ergebnisse für den 20.09.2020 filtern möchten, wählen Sie einen Filterdatumsbereich vom 20.09.2020-21.09.2020 aus.|
 | **Dateiklasse** | Die Klasse der Nachricht basierend auf dem Nachrichtentyp, entweder *Nachricht* oder *Anlage.* |
-| **Anlage hat** | Das Anlagenan vorhandensein in der Nachricht. |
+| **Hat Anlage** | Das Anlagenan vorhandensein in der Nachricht. |
 | **Elementklasse** | Die Quelle der Nachricht basierend auf dem Nachrichtentyp, der E-Mail, dem Microsoft Team-Chat, Bloomberg usw. Weitere Informationen zu allgemeinen Elementtypen und Nachrichtenklassen finden Sie unter [Elementtypen und Nachrichtenklassen.](/office/vba/outlook/concepts/forms/item-types-and-message-classes) |
 | **Empfängerdomänen** | Die Domäne, an die die Nachricht gesendet wurde. Diese Domäne ist in der Regel standardmäßig Ihre Microsoft 365-Abonnementdomäne. |
 | **Empfänger** | Der Benutzer, an den die Nachricht gesendet wurde. |
@@ -338,7 +338,7 @@ Wenn Sie den schweregrad ändern möchten, der in einer Warnungsrichtlinie für 
 
 ## <a name="power-automate-flows"></a>Power Automate-Flüsse
 
-[Microsoft Power Automate](/power-automate/getting-started) ist ein Workflowdienst, der Aktionen in verschiedenen Anwendungen und Diensten automatisiert. Mithilfe von Vorlagenflüssen oder manuellen Erstellungen können Sie allgemeine Aufgaben im Zusammenhang mit diesen Anwendungen und Diensten automatisieren. Wenn Sie Power Automate-Flüsse für die Kommunikationskonformität aktivieren, können Sie wichtige Aufgaben für Warnungen und Benutzer automatisieren. Sie können Power Automate-Flüsse konfigurieren, um Manager zu benachrichtigen, wenn Benutzer Warnungen zur Kommunikationskonformität und andere Anwendungen haben.
+[Microsoft Power Automate](/power-automate/getting-started) ist ein Workflowdienst, der Aktionen in verschiedenen Anwendungen und Diensten automatisiert. Mithilfe von Vorlagenflüssen oder manuell erstellten Vorgängen können Sie allgemeine Aufgaben im Zusammenhang mit diesen Anwendungen und Diensten automatisieren. Wenn Sie Power Automate-Flüsse für die Kommunikationskonformität aktivieren, können Sie wichtige Aufgaben für Warnungen und Benutzer automatisieren. Sie können Power Automate-Flüsse konfigurieren, um Manager zu benachrichtigen, wenn Benutzer Warnungen zur Kommunikationskonformität und andere Anwendungen haben.
 
 Kunden mit Microsoft 365-Abonnements, die Kommunikationskonformität enthalten, benötigen keine zusätzlichen Power Automate-Lizenzen, um die empfohlene Power Automate-Standardvorlage zur Kommunikationskonformität zu verwenden. Die Standardvorlage kann angepasst werden, um Ihre Organisation zu unterstützen und zentrale Kommunikationskonformitätsszenarien zu abdecken. Wenn Sie premium Power Automate-Features in diesen Vorlagen verwenden, eine benutzerdefinierte Vorlage mit dem Microsoft 365 Compliance Connector erstellen oder Power Automate-Vorlagen für andere Compliancebereiche in Microsoft 365 verwenden, benötigen Sie möglicherweise zusätzliche Power Automate-Lizenzen.
 
@@ -356,7 +356,7 @@ Die folgende Power Automate-Vorlage wird Kunden bereitgestellt, um die Prozessau
 
 ### <a name="create-a-power-automate-flow"></a>Erstellen eines Power Automate-Ablaufs
 
-Um einen Power Automate-Fluss aus einer empfohlenen Standardvorlage zu erstellen, verwenden Sie die Option **"Power Automate-Flüsse** verwalten" aus dem **Automate-Steuerelement,** wenn Sie direkt in einer Warnung arbeiten. Um einen Power Automate-Fluss mit **Manage Power Automate Flows** zu erstellen, müssen Sie Mitglied mindestens einer Rollengruppe für die Kommunikationskonformität sein.
+Um einen Power Automate-Fluss aus einer empfohlenen Standardvorlage zu erstellen, verwenden Sie die Option **"Power Automate-Flüsse** verwalten" aus dem **Automate-Steuerelement,** wenn Sie direkt in einer Warnung arbeiten. Um einen Power Automate-Fluss mit **Power Automate-Flüssen** verwalten zu können, müssen Sie Mitglied mindestens einer Rollengruppe für die Kommunikationskonformität sein.
 
 Führen Sie die folgenden Schritte aus, um einen Power Automate-Fluss aus einer Standardvorlage zu erstellen:
 
@@ -365,7 +365,7 @@ Führen Sie die folgenden Schritte aus, um einen Power Automate-Fluss aus einer 
 3. Wählen **Sie Power Automate** aus dem Warnungsaktionsmenü aus.
 4. Wählen Sie **auf der Power Automate-Seite** eine Standardvorlage aus den Vorlagen für die Kommunikationskonformität aus, die **Ihnen** auf der Seite möglicherweise gefällt.
 5. Der Fluss listet die für den Fluss erforderlichen eingebetteten Verbindungen auf und zeigt an, ob die Verbindungsstatus verfügbar sind. Aktualisieren Sie bei Bedarf alle Verbindungen, die nicht als verfügbar angezeigt werden. Wählen Sie **"Weiter"** aus.
-6. Standardmäßig sind die empfohlenen Flüsse mit den empfohlenen Kommunikationskonformitäts- und Microsoft 365-Dienstdatenfeldern vorkonfiguriert, die zum Abschließen der zugewiesenen Aufgabe für den Fluss erforderlich sind. Passen Sie bei Bedarf die  Flusskomponenten mithilfe des Steuerelements "Erweiterte Optionen anzeigen" an und konfigurieren Sie die verfügbaren Eigenschaften für die Flusskomponente.
+6. Standardmäßig sind die empfohlenen Flüsse mit der empfohlenen Kommunikationskonformität und den Microsoft 365-Dienstdatenfeldern vorkonfiguriert, die zum Abschließen der zugewiesenen Aufgabe für den Fluss erforderlich sind. Passen Sie bei Bedarf die  Flusskomponenten mithilfe des Steuerelements "Erweiterte Optionen anzeigen" an und konfigurieren Sie die verfügbaren Eigenschaften für die Flusskomponente.
 7. Fügen Sie gegebenenfalls zusätzliche Schritte zum Fluss hinzu, indem Sie die Schaltfläche **"Neuer Schritt"** auswählen. In den meisten Fällen sollte diese Änderung für die empfohlenen Standardvorlagen nicht erforderlich sein.
 8. Wählen **Sie "Entwurf speichern"** aus, um den Fluss zu einem späteren Zeitpunkt zur weiteren Konfiguration zu speichern, oder wählen Sie **"Speichern"** aus, um die Konfiguration für den Fluss fertig zu legen.
 9. Wählen **Sie "Schließen"** aus, um zur Power Automate-Flussseite zurückzukehren. Die neue Vorlage wird als Fluss  auf der Registerkarte "Meine Flüsse" aufgeführt und steht automatisch über das Power Automate-Steuerelement für den Benutzer zur Verfügung, der den Fluss beim Arbeiten mit Warnungen zur Kommunikationskonformität erstellt hat.
@@ -374,7 +374,7 @@ Führen Sie die folgenden Schritte aus, um einen Power Automate-Fluss aus einer 
 
 Standardmäßig sind von einem Benutzer erstellte Power Automate-Flüsse nur für diesen Benutzer verfügbar. Damit andere Benutzer der Kommunikationskonformität Zugriff auf einen Fluss haben und diesen verwenden können, muss der Fluss vom Ersteller des Ablaufs freigegeben werden. Wenn Sie einen Fluss freigeben möchten, verwenden Sie das **Power Automate-Steuerelement,** wenn Sie direkt in einer Warnung arbeiten.
 
-Zum Freigeben eines Power Automate-Ablaufs müssen Sie Mitglied mindestens einer Rollengruppe für die Kommunikationskonformität sein.
+Um einen Power Automate -Fluss gemeinsam zu teilen, müssen Sie Mitglied mindestens einer Rollengruppe für die Kommunikationskonformität sein.
 Führen Sie die folgenden Schritte aus, um einen Power Automate-Fluss zu teilen:
 
 1. Wechseln Sie im Microsoft 365 Compliance Center zu "Kommunikationskonformitätsrichtlinien", und wählen Sie die Richtlinie mit der Warnung aus, die  >   Sie überprüfen möchten.
@@ -395,7 +395,7 @@ Führen Sie die folgenden Schritte aus, um einen Power Automate-Fluss zu bearbei
 2. Wählen Sie in der Richtlinie die Registerkarte **"Ausstehend"** aus, und wählen Sie eine ausstehende Warnung aus.
 3. Wählen **Sie Power Automate** aus dem Warnungsaktionsmenü aus.
 4. Wählen Sie auf **der Seite "Power Automate-Flüsse"** den zu bearbeitende Fluss aus. Wählen **Sie im** Menü "Flusssteuerelement" die Option "Bearbeiten" aus.
-5. Wählen Sie **die Auslassungspunkte**  >  **"Einstellungen" aus,** um eine Flusskomponenteneinstellung zu ändern, oder klicken Sie auf   >  **"Löschen",** um eine Flusskomponente zu löschen.
+5. Wählen Sie **die Auslassungspunkte**  >  **"Einstellungen",** um eine Flusskomponenteneinstellung zu ändern, oder   >  **"Löschen"** aus, um eine Flusskomponente zu löschen.
 6. Wählen **Sie "Speichern"** und dann **"Schließen"** aus, um die Bearbeitung des Ablaufs zu abschließen.
 
 ### <a name="delete-a-power-automate-flow"></a>Löschen eines Power Automate-Ablaufs
@@ -407,12 +407,14 @@ Führen Sie die folgenden Schritte aus, um einen Power Automate-Fluss zu lösche
 1. Wechseln Sie im Microsoft 365 Compliance Center zu "Kommunikationskonformitätsrichtlinien", und wählen Sie die Richtlinie mit der Warnung aus, die  >   Sie überprüfen möchten.
 2. Wählen Sie in der Richtlinie die Registerkarte **"Ausstehend"** aus, und wählen Sie eine ausstehende Warnung aus.
 3. Wählen **Sie Power Automate** aus dem Warnungsaktionsmenü aus.
-4. Wählen Sie auf **der Seite "Power Automate-Flüsse"** den zu löschende Fluss aus. Wählen **Sie im** Menü "Flusssteuerelement" die Option "Löschen" aus.
+4. Wählen Sie **auf der Seite "Power Automate-Flüsse"** den zu löschende Fluss aus. Wählen **Sie im** Menü "Flusssteuerelement" die Option "Löschen" aus.
 5. Wählen Sie im Dialogfeld zur Bestätigung des Löschvorgangs **"Löschen"** aus, um den Fluss zu entfernen, oder wählen Sie **"Abbrechen"** aus, um die Löschaktion zu beenden.
 
 ## <a name="reports-preview"></a>Berichte (Vorschau)
 
 Das neue **Dashboard "Berichte"** ist der zentrale Ort zum Anzeigen aller Berichte zur Kommunikationskonformität. Berichts widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities. In den Berichts widgets enthaltene Informationen können nicht exportiert werden. Detaillierte Berichte enthalten ausführliche Informationen zu bestimmten Bereichen der Kommunikationskonformität und bieten die Möglichkeit, Während der Überprüfung Informationen zu filtern, zu gruppieren, zu sortieren und zu exportieren.
+
+![Dashboard für Kommunikationskonformitätsberichte](../media/communication-compliance-reports-dashboard.png)
 
 Das **Dashboard "Berichte"** enthält die folgenden Berichts widgets und detaillierte Berichtslinks:
 
@@ -421,18 +423,55 @@ Das **Dashboard "Berichte"** enthält die folgenden Berichts widgets und detaill
 - **Benutzer mit den meisten Richtlinien-Übereinstimmungs-Widget:** Zeigt die Benutzer (oder anonymisierte Benutzernamen) und die Anzahl der Richtlinien übereinstimmungen für einen bestimmten Zeitraum an.
 - **Richtlinie mit den meisten Übereinstimmungen** Widget: zeigt die Richtlinien und die Anzahl der Übereinstimmungen für einen bestimmten Zeitraum, rangiert am höchsten zum niedrigsten für Übereinstimmungen.
 - **Eskalationen nach Richtlinien-Widget:** Zeigt die Anzahl der Eskalationen pro Richtlinie über einen bestimmten Zeitraum an.
-- **Detaillierter** Bericht zu Richtlinieneinstellungen und -status: bietet einen detaillierten Blick auf die Richtlinienkonfiguration und -einstellungen sowie den allgemeinen Status für jede Richtlinie (Übereinstimmungen und Aktionen) für Nachrichten. Verwenden Sie die *Option "Exportieren",* um eine zu erstellen. CSV-Datei, die die Berichtsdetails enthält.
-- **Detaillierter Bericht zu** Elementen und Aktionen pro Richtlinie: Überprüfen und Exportieren übereinstimmender Elemente und Korrekturaktionen pro Richtlinie. Verwenden Sie die *Option "Exportieren",* um eine zu erstellen. CSV-Datei, die die Berichtsdetails enthält.
-- **Detaillierter Bericht zu** Elementen und Aktionen pro Standort: Überprüfen und Exportieren übereinstimmender Elemente und Korrekturaktionen pro Microsoft 365-Speicherort. Verwenden Sie die *Option "Exportieren",* um eine zu erstellen. CSV-Datei, die die Berichtsdetails enthält.
+- **Detaillierter** Bericht zu Richtlinieneinstellungen und -status: bietet einen detaillierten Blick auf die Richtlinienkonfiguration und -einstellungen sowie den allgemeinen Status für jede Richtlinie (Übereinstimmungen und Aktionen) für Nachrichten. Enthält Richtlinieninformationen und informationen dazu, wie Richtlinien Benutzern und Gruppen, Speicherorten, Prozentdaten, Prüfern, dem Status und dem Ort der letzten Änderung der Richtlinie zugeordnet sind. Verwenden Sie die *Option "Exportieren",* um eine zu erstellen. CSV-Datei, die die Berichtsdetails enthält.
+- **Detaillierter Bericht zu** Elementen und Aktionen pro Richtlinie: Überprüfen und Exportieren übereinstimmender Elemente und Korrekturaktionen pro Richtlinie. Enthält Richtlinieninformationen und die Art und Weise, wie Richtlinien zugeordnet sind:
+
+    - Übereinstimmende Elemente
+    - Eskalierte Elemente
+    - Aufgelöste Elemente
+    - Als kompatibel markiert
+    - Als nicht konform markiert
+    - Als fragwürdig markiert
+    - Elemente, deren Überprüfung aussteht
+    - Benutzer benachrichtigt
+    - Fall erstellt
+    
+    Verwenden Sie die *Option "Exportieren",* um eine CSV-Datei mit den Berichtsdetails zu erstellen.
+- **Detaillierter Bericht zu** Elementen und Aktionen pro Standort: Überprüfen und Exportieren übereinstimmender Elemente und Korrekturaktionen pro Microsoft 365-Speicherort. Enthält Informationen dazu, wie Arbeitsauslastungsplattformen zugeordnet sind:
+
+    - Übereinstimmende Elemente
+    - Eskalierte Elemente
+    - Aufgelöste Elemente
+    - Als kompatibel markiert
+    - Als nicht konform markiert
+    - Als fragwürdig markiert
+    - Elemente, deren Überprüfung aussteht
+    - Benutzer benachrichtigt
+    - Fall erstellt
+
+    Verwenden Sie die *Option "Exportieren",* um eine CSV-Datei mit den Berichtsdetails zu erstellen.
+- **Aktivität nach detailliertem Benutzerbericht:** Überprüfen und exportieren Sie übereinstimmende Elemente und Wartungsaktionen pro Benutzer. Enthält Informationen dazu, wie Benutzer zugeordnet werden:
+
+    - Übereinstimmende Elemente
+    - Eskalierte Elemente
+    - Aufgelöste Elemente
+    - Als kompatibel markiert
+    - Als nicht konform markiert
+    - Als fragwürdig markiert
+    - Elemente, deren Überprüfung aussteht
+    - Benutzer benachrichtigt
+    - Fall erstellt
+
+    Verwenden Sie die *Option "Exportieren",* um eine CSV-Datei mit den Berichtsdetails zu erstellen.
 
 ## <a name="audit"></a>Überwachung
 
-In einigen Fällen müssen Sie Aufsichts- oder Complianceprüfer informieren, um die Aufsicht über Benutzeraktivitäten und -kommunikation nachzuweisen. Diese Informationen können eine Zusammenfassung aller Aktivitäten im Zusammenhang mit einer definierten Organisationsrichtlinie oder zu jeder Zeit sein, zu der sich eine Kommunikationskonformitätsrichtlinie ändert. Richtlinien für die Kommunikationskonformität verfügen über integrierte Überwachungsprotokolle für die vollständige Bereitschaft für interne oder externe Überwachungen. Detaillierte Überwachungsverläufe jeder Erstellungs-, Bearbeitungs- und Löschaktion werden von Ihren Kommunikationsrichtlinien erfasst, um Aufsichtsverfahren zu nachweisen.
+In einigen Fällen müssen Sie Aufsichts- oder Complianceprüfer informieren, um die Aufsicht über Benutzeraktivitäten und -kommunikation nachzuweisen. Diese Informationen können eine Zusammenfassung aller Aktivitäten im Zusammenhang mit einer definierten Organisationsrichtlinie oder zu jeder Zeit sein, zu der sich eine Kommunikationskonformitätsrichtlinie ändert. Richtlinien für die Kommunikationskonformität verfügen über integrierte Überwachungsprotokolle für die vollständige Bereitschaft für interne oder externe Überwachungen. Detaillierte Überwachungsverläufe für jede Erstellungs-, Bearbeitungs- und Löschaktion werden von Ihren Kommunikationsrichtlinien erfasst, um Aufsichtsverfahren zu nachweisen.
 
 >[!Important]
 >Die Überwachung muss für Ihre Organisation aktiviert sein, bevor Kommunikationskonformitätsereignisse aufgezeichnet werden. Informationen zum Aktivieren der Überwachung finden Sie [unter Aktivieren des Überwachungsprotokolls.](communication-compliance-configure.md#step-2-required-enable-the-audit-log)
 
-Wenn Sie Aktualisierungsaktivitäten für  Kommunikationskonformitätsrichtlinien anzeigen möchten, wählen Sie auf der Hauptseite das Steuerelement "Richtlinienupdates exportieren" für alle Richtlinien aus. Ihnen müssen die Rollen *"Globaler Administrator" oder* *"Kommunikations-Compliance-Administrator"* zugewiesen sein, um Updateaktivitäten exportieren zu können. Diese Aktion generiert eine Überwachungsdatei im CSV-Format, die die folgenden Informationen enthält:
+Wenn Sie Aktualisierungsaktivitäten für  Kommunikationskonformitätsrichtlinien anzeigen möchten, wählen Sie auf der Hauptseite das Steuerelement "Richtlinienupdates exportieren" für eine beliebige Richtlinie aus. Ihnen müssen die Rollen *"Globaler Administrator" oder* *"Kommunikations-Compliance-Administrator"* zugewiesen sein, um Updateaktivitäten exportieren zu können. Diese Aktion generiert eine Überwachungsdatei im CSV-Format, die die folgenden Informationen enthält:
 
 |**Field**|**Details**|
 |:-----|:-----|
@@ -441,14 +480,14 @@ Wenn Sie Aktualisierungsaktivitäten für  Kommunikationskonformitätsrichtlinie
 | **Operations** | Die für die Richtlinie ausgeführten Aktualisierungsvorgänge. |
 | **AuditData** | Dieses Feld ist die Hauptdatenquelle für alle Richtlinienaktualisierungsaktivitäten. Alle Aktualisierungsaktivitäten werden aufgezeichnet und durch Kommatrennzeichen getrennt. |
 
-Zum Anzeigen der Aktivitäten zur Überprüfung der Kommunikationskonformität für eine Richtlinie wählen Sie das Steuerelement **"Überprüfungsaktivitäten** exportieren" auf der Seite **"Übersicht"** für eine bestimmte Richtlinie aus. Ihnen müssen die Rollen *"Globaler Administrator" oder* *"Kommunikations-Compliance-Administrator"* zugewiesen sein, um Rezensionsaktivitäten exportieren zu können. Diese Aktion generiert eine Überwachungsdatei im CSV-Format, die die folgenden Informationen enthält:
+Zum Anzeigen der Aktivitäten zur Überprüfung  der Kommunikationskonformität  für eine Richtlinie wählen Sie auf der Seite "Übersicht" das Steuerelement "Überprüfungsaktivitäten exportieren" für eine bestimmte Richtlinie aus. Ihnen müssen die Rollen *"Globaler Administrator"* oder *"Kommunikations-Compliance-Administrator"* zugewiesen sein, um Rezensionsaktivitäten exportieren zu können. Diese Aktion generiert eine Überwachungsdatei im CSV-Format, die die folgenden Informationen enthält:
 
 |**Field**|**Details**|
 |:-----|:-----|
 | **CreationDate** | Das Datum, an dem die Überprüfungsaktivität in einer Richtlinie ausgeführt wurde. |
 | **UserIds** | Der Benutzer, der die Überprüfungsaktivität in einer Richtlinie ausgeführt hat. |
 | **Operations** | Die Überprüfungsvorgänge, die für die Richtlinie ausgeführt wurden. |
-| **AuditData** | Dieses Feld ist die Hauptdatenquelle für alle Richtlinienüberprüfungsaktivitäten. Alle Überprüfungsaktivitäten werden aufgezeichnet und durch Kommatrennzeichen getrennt. |
+| **AuditData** | Dieses Feld ist die Hauptdatenquelle für alle Richtlinienüberprüfungsaktivitäten. Alle Überprüfungsaktivitäten werden aufgezeichnet und durch Kommas getrennt. |
 
 Sie können Überwachungsaktivitäten auch im einheitlichen Überwachungsprotokoll oder mit dem [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) -PowerShell-Cmdlet anzeigen.
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365-Berichte im Admin Center-Microsoft Teams-Benutzeraktivität
+title: Microsoft 365-Berichte im Admin Center – Microsoft Teams-Benutzeraktivität
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,48 +18,50 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Hier erfahren Sie, wie Sie den Microsoft Teams-Benutzer Aktivitätsbericht abrufen und Einblicke in die Teams-Aktivitäten in Ihrer Organisation erhalten.
-ms.openlocfilehash: 7e32ca6b665cab9da93dec9632ef25176db0e839
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+description: Erfahren Sie, wie Sie den Microsoft Teams-Benutzeraktivitätsbericht erhalten und Einblicke in die Microsoft Teams-Aktivitäten in Ihrer Organisation erhalten.
+ms.openlocfilehash: e8e4ab6fd78fb290243d8fdc780b5a7a14ca2ee0
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611400"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233410"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365-Berichte im Admin Center-Microsoft Teams-Benutzeraktivität
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365-Berichte im Admin Center – Microsoft Teams-Benutzeraktivität
 
-Im Microsoft 365 **Reports** -Dashboard wird die Aktivitätsübersicht für die Produkte in Ihrer Organisation angezeigt. Sie können Drilldowns zu Einzelberichten auf Produktebene ausführen und auf diese Weise genauere Einblicke in die Aktivitäten innerhalb der einzelnen Produkte erhalten. Sehen Sie sich die [Übersicht über Berichte](activity-reports.md) an. Der Bericht "Microsoft Teams-Benutzeraktivität" bietet Ihnen Einblicke in die Microsoft Teams-Aktivitäten in Ihrer Organisation.
+Das Microsoft 365-Dashboard "Berichte" zeigt Ihnen die Übersicht über die Aktivitäten in den Produkten In Ihrer Organisation.  Sie können Drilldowns zu Einzelberichten auf Produktebene ausführen und auf diese Weise genauere Einblicke in die Aktivitäten innerhalb der einzelnen Produkte erhalten. Sehen Sie sich die [Übersicht über Berichte](activity-reports.md) an. Der Bericht "Microsoft Teams-Benutzeraktivität" bietet Ihnen Einblicke in die Microsoft Teams-Aktivitäten in Ihrer Organisation.
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator, ein globaler Leser oder ein Leser von Berichten in Microsoft 365 oder einer Exchange-, SharePoint-, Teams-Dienst-, Microsoft Teams-oder Skype for Business-Administrator sein, um Berichte anzuzeigen.  
+> Sie müssen ein globaler Administrator, ein globaler Leser oder ein Leser von Berichten in Microsoft 365 oder ein Exchange-, SharePoint-, Teams-Dienst-, Teams Communications- oder Skype for Business-Administrator sein, um Berichte anzeigen zu können.  
  
 ## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>Abrufen des Berichts "Microsoft Teams-Benutzeraktivität"
 
 1. Wechseln Sie im Admin Center zur Seite **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a>.
-2. Klicken Sie auf der Dashboard-Startseite auf die Schaltfläche **mehr anzeigen** auf der Microsoft Teams-Aktivitäts Karte.
+2. Klicken Sie auf der Startseite des Dashboards auf die **Schaltfläche** "Weitere Anzeigen" auf der Microsoft Teams-Aktivitätskarte.
 
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Interpretieren des Berichts "Microsoft Teams-Benutzeraktivität"
 
-Sie können die Benutzeraktivität im Bericht "Teams" anzeigen, indem Sie die Registerkarte **Benutzeraktivität** auswählen. <br/>![Microsoft 365 Reports-Microsoft Teams-Benutzeraktivität.](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
+Sie können die Benutzeraktivität im Bericht "Teams" anzeigen, indem Sie die Registerkarte **"Benutzeraktivität"** auswählen. <br/>![Microsoft 365-Berichte – Microsoft Teams-Benutzeraktivität.](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
 
-Wählen Sie **Spalten auswählen** aus, um Spalten zum Bericht hinzuzufügen oder daraus zu entfernen.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
+Wählen **Sie Spalten zum** Hinzufügen oder Entfernen von Spalten aus dem Bericht aus.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren, indem Sie den Link **Exportieren** auswählen. Dadurch werden Daten aller Benutzer exportiert, und Sie können einfache Sortier- und Filtervorgänge zur weiteren Analyse ausführen. Bei weniger als 2.000 Benutzern können Sie innerhalb der Tabelle im Bericht selbst sortieren und filtern. Bei mehr als 2.000 Benutzern müssen Sie die Daten zum Filtern und Sortieren exportieren. Das exportierte Format für **Audio-**, **Video**-und **Bildschirmfreigabe Zeit** folgt dem Format der ISO8601-Zeit.
+Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren, indem Sie den Link **Exportieren** auswählen. Dadurch werden Daten aller Benutzer exportiert, und Sie können einfache Sortier- und Filtervorgänge zur weiteren Analyse ausführen. Bei weniger als 2.000 Benutzern können Sie innerhalb der Tabelle im Bericht selbst sortieren und filtern. Bei mehr als 2.000 Benutzern müssen Sie die Daten zum Filtern und Sortieren exportieren. Das exportierte Format für **Audiozeit,**  **Videozeit** und Bildschirmfreigabezeit folgt dem ISO8601-Dauerformat.
 
-Zur Sicherstellung der Datenqualität führen wir tägliche Daten Überprüfungs Prüfungen für die letzten drei Tage durch und füllen alle entdeckten Lücken. Während des Prozesses können Unterschiede in den Verlaufsdaten feststellen.
+Im Bericht **Microsoft Teams-Benutzeraktivität** werden die Trends über die letzten 7 Tage, 30 Tage, 90 Tage oder 180 Tage angezeigt. Wenn Sie im Bericht jedoch einen bestimmten Tag auswählen, werden in der Tabelle (7) Daten für bis zu 28 Tage ab dem aktuellen Datum angezeigt (nicht ab dem Datum, an dem der Bericht generiert wurde).
+
+Um die Datenqualität sicherzustellen, führen wir tägliche Datenüberprüfungen für die letzten drei Tage durch und füllen alle erkannten Lücken. Möglicherweise sind während des Prozesses Unterschiede bei verlaufshistorischen Daten zu erkennen.
 
 |Element|Beschreibung|
 |:-----|:-----|
 |**Metrik**|**Definition**|
 |Benutzername  <br/> |Die E-Mail-Adresse des Benutzers. Sie können die eigentliche E-Mail-Adresse anzeigen oder dieses Feld anonymisieren.   <br/> |
-|Kanal Nachrichten   <br/> |Die Anzahl der eindeutigen Nachrichten, die der Benutzer während des angegebenen Zeitraums in einem Teamchat gepostet hat.  <br/> |
-|Chat Nachrichten   <br/> |Die Anzahl der eindeutigen Nachrichten, die der Benutzer während des angegebenen Zeitraums in einem privaten Chat gepostet hat.  <br/> |
-|Besprechungen insgesamt   <br/> |Die Anzahl der Onlinebesprechungen, an denen der Benutzer während des angegebenen Zeitraums teilgenommen hat.  <br/> |
-|1:1 Anrufe   <br/> | Die Anzahl der 1:1 Anrufe, an denen der Benutzer während des angegebenen Zeitraums teilgenommen hat.  <br/> |
+|Kanalnachrichten   <br/> |Die Anzahl der eindeutigen Nachrichten, die der Benutzer im angegebenen Zeitraum in einem Teamchat gepostet hat.  <br/> |
+|Chatnachrichten   <br/> |Die Anzahl der eindeutigen Nachrichten, die der Benutzer im angegebenen Zeitraum in einem privaten Chat gepostet hat.  <br/> |
+|Besprechungen insgesamt   <br/> |Die Anzahl der Onlinebesprechungen, an der der Benutzer während des angegebenen Zeitraums teilgenommen hat.  <br/> |
+|1:1-Anrufe   <br/> | Die Anzahl der 1:1-Anrufe, an der der Benutzer während des angegebenen Zeitraums teilgenommen hat.  <br/> |
 |Datum der letzten Aktivität (UTC)  <br/> |Das letzte Datum, an dem der Benutzer an einer Microsoft Teams-Aktivität teilgenommen hat.<br/> |
-|Teilnahme an Adhoc-Besprechungen   <br/> | Die Anzahl der Besprechungen, die im Kalender nicht geplant sind, an denen der Benutzer während des angegebenen Zeitraums teilgenommen hat.  <br/> |
-|Organisierte Meetings Adhoc <br/> |Die Anzahl der Besprechungen, die im Kalender nicht geplant sind, die der Benutzer während des angegebenen Zeitraums organisiert hat. <br/>|
-|Geplant organisierte Besprechungen  <br/> |Die Anzahl geplanter Besprechungen, die ein Benutzer während des angegebenen Zeitraums organisiert hat.  <br/> |
-|Lizenziert |Ausgewählt, wenn der Benutzer für die Verwendung von Microsoft Teams lizenziert ist.|
-|Andere Aktivität|Der Benutzer ist aktiv, hat aber andere Aktivitäten ausgeführt als in dem Bericht angebotene freigegebene Aktionstypen (senden oder beantworten von Kanal-und Chatnachrichten, Planung oder Teilnahme an 1:1-anrufen und Besprechungen). Beispiele für Aktionen sind, wenn ein Benutzer den Status der Teams oder die Teamstatus Meldung ändert oder einen Kanal Nachrichtenbeitrag öffnet, aber nicht antwortet. |
+|Besprechungen haben adhoc teilgenommen   <br/> | Die Anzahl der Besprechungen, die nicht im Kalender geplant sind, an dem der Benutzer während des angegebenen Zeitraums teilgenommen hat.  <br/> |
+|Besprechungen, die adhoc organisiert wurden <br/> |Die Anzahl der Besprechungen, die nicht im Kalender geplant sind, die der Benutzer während des angegebenen Zeitraums organisiert hat. <br/>|
+|Geplante Besprechungen  <br/> |Die Anzahl der geplanten Besprechungen, die ein Benutzer während des angegebenen Zeitraums organisiert hat.  <br/> |
+|Ist lizenziert |Ausgewählt, wenn der Benutzer für die Verwendung von Teams lizenziert ist.|
+|Andere Aktivitäten|Der Benutzer ist aktiv, hat jedoch andere Aktivitäten als im Bericht angebotene aktionstypen verfügbar gemacht (Senden oder Beantworten von Kanalnachrichten und Chatnachrichten, Planen oder Teilnehmen an 1:1-Anrufen und Besprechungen). Beispiele für Aktionen sind, wenn ein Benutzer den Status von Teams oder die Statusmeldung von Teams ändert oder einen Kanalnachrichtenbeitrag öffnet, aber nicht antwortet. |
 |||

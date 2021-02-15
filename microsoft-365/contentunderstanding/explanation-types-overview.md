@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Weitere Informationen über Erklärungstypen in Microsoft SharePoint Syntex
-ms.openlocfilehash: 2c2997fd165339cc43f7f007050f343794021a23
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: caba92b635feaf8f87e2c487559f70be3fab6df9
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080588"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242592"
 ---
 # <a name="introduction-to-explanation-types"></a>Einführung in Erklärungstypen
 
@@ -147,43 +147,65 @@ Im Viewer können Sie das Auswahlfeld manuell anpassen, um die Position einzugeb
    ![Benutzerdefinierter Bereich](../media/content-understanding/custom-file.png)</br>
 Im Viewer können Sie das Auswahlfeld manuell anpassen, um die Position einzugeben, an der die Phase erscheint. Für diese Einstellung müssen Sie je eine Position <b>Start</b> und <b>Ende</b> auswählen. Diese Werte stellen die Anzahl der Token ab dem Anfang des Dokuments dar. Sie können diese Werte zwar manuell eingeben, doch ist es einfacher, das Auswahlfeld im Viewer manuell anzupassen.</br> 
    
-
-
 ## <a name="use-explanation-templates"></a>Verwenden von Erklärungsvorlagen
 
-Während Sie manuell verschiedene Musterlistenwerte für Ihre Erklärung hinzufügen können, kann es einfacher sein, die Vorlagen zu verwenden, die Ihnen in der Erklärungsbibliothek zur Verfügung gestellt werden.
+Während Sie manuell verschiedene Begriffslistenwerte für Ihre Erklärung hinzufügen können, kann es einfacher sein, die Vorlagen zu verwenden, die Ihnen in der Erklärungsbibliothek zur Verfügung gestellt werden.
 
-Statt z. B. alle Varianten für *Datum* manuell hinzuzufügen, können Sie die Musterlistenvorlage für *Datum* verwenden, da diese bereits eine Reihe von Musterlistenwerten enthält:</br>
+Statt beispielsweise alle Varianten für *Datum* manuell hinzuzufügen, können Sie die Begriffslistenvorlage für *Datum* verwenden, da diese bereits eine Reihe von Begriffslistenwerten enthält:</br>
 
    ![Erklärungsbibliothek](../media/content-understanding/explanation-template.png)</br>
  
-Die Erklärungsbibliothek enthält häufig verwendeten Musterlistenerklärungen, einschließlich:</br>
+Die Erklärungsbibliothek enthält häufig verwendeten Begriffslistenerklärungen, einschließlich:</br>
 
 - Datum</br>
 - Datum (numerisch)</br>
 - Zeit</br>
 - Zahl</br>
+- Prozentsatz</br>
 - Telefonnummer</br>
 - PLZ</br>
 - Erstes Wort des Satzes</br>
+- Satzende</br>
 - Kreditkarte</br>
 - Sozialversicherungsnummer</br>
+- Kontrollkästchen</br>
+- Währung</br>
+- E-Mail CC</br>
+- E-Mail-Datum</br>
+- E-Mail-Begrüßung</br>
+- E-Mail-Empfänger</br>
+- E-Mail-Absender</br>
+- E-Mail-Betreff</br>
 
-Beachten Sie, dass die Erklärungsbibliothek auch Vorlagen für Begriffslistenerklärungen enthält:
-- Ende des Satzes
-- Währung
+Die Erläuterungsbibliothek beinhaltet auch drei automatische Vorlagentypen, die mit den von Ihnen in Ihren Beispieldateien bezeichneten Daten funktionieren:
 
+- Nach der Bezeichnung: Die Wörter oder Zeichen, die nach den Bezeichnungen in den Beispieldateien aufscheinen.</br>
+- Vor der Bezeichnung: Die Wörter oder Zeichen, die vor den Bezeichnungen in den Beispieldateien aufscheinen.</br>
+- Bezeichnungen: Bis zu den ersten 10 Bezeichnungen der Beispieldateien.</br>
+
+Als Beispiel dafür, wie automatische Vorlagen funktionieren, verwenden wir in der folgenden Beispieldatei die Erläuterungsvorlage „Vor der Bezeichnung“, die dazu beiträgt, dem Modell weitere Informationen zur Verfügung zu stellen, um eine genauere Übereinstimmung zu erzielen.
+
+   ![Beispieldatei](../media/content-understanding/before-label.png)</br>
+
+Wenn Sie die Erläuterungsvorlage „Vor der Bezeichnung“ auswählen, sucht diese zunächst nach der Gruppe an Wörtern, die vor der Bezeichnung in Ihren Beispieldateien aufscheinen. In dem Beispiel lauten die in der ersten Beispieldatei identifizierten Wörter „Ab dem“.
+
+   ![Vorlage für „Vor der Bezeichnung“](../media/content-understanding/before-label-explanation.png)</br>
+
+Sie können <b>Hinzufügen</b> wählen, um aus der Vorlage eine Erläuterung zu erstellen.  Sobald Sie weitere Beispieldateien hinzufügen, werden zusätzliche Wörter identifiziert und zur Begriffsliste hinzugefügt.
+
+   ![Die Bezeichnung hinzufügen](../media/content-understanding/before-label-add.png)</br>
+ 
 #### <a name="to-use-a-template-from-the-explanation-library"></a>Verwenden einer Vorlage aus der Erklärungsbibliothek
 
 1. Wählen Sie im Abschnitt **Erklärungen** auf der Seite **Trainieren** Ihres Modells **Neu** aus und dann **Aus einer Vorlage**.</br>
 
-   ![Aus Vorlage erstellen](../media/content-understanding/from-template.png)</br>
+   ![„Vor der Bezeichnung „hinzufügen](../media/content-understanding/from-template.png)</br>
 
 2.  Wählen Sie auf der Seite **Erklärungsvorlagen** die Erklärung aus, die Sie verwenden möchten, dann wählen Sie **Hinzufügen** aus.</br>
 
        ![Auswählen einer Vorlage](../media/content-understanding/phone-template.png)</br>
 
-3. Die Informationen für die von Ihnen ausgewählte Vorlage sind auf der Seite **Erklärung erstellen** dargestellt. Bearbeiten Sie bei Bedarf den Namen der Erklärung und fügen Sie Elemente zur Musterliste hinzu oder entfernen Sie diese. </br> 
+3. Die Informationen für die von Ihnen ausgewählte Vorlage sind auf der Seite **Erklärung erstellen** dargestellt. Bearbeiten Sie bei Bedarf den Namen der Erläuterung und fügen Sie Elemente zur Begriffsliste hinzu oder entfernen Sie diese. </br> 
 
    ![Vorlage bearbeiten](../media/content-understanding/phone-template-live.png)</br>
 

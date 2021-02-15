@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Administratoren können sich über den Testmodus von Microsoft Defender für Office 365 informieren.
-ms.openlocfilehash: f5ab0b0cd4ef5c2bf1a799043af94a0938a53783
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 6207ae117f06a0e5f10d4a7a47a251137c51df05
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114895"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233579"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Informationen zur Testversion von Microsoft Defender für Office 365
 
@@ -34,14 +34,14 @@ Microsoft Defender für Office 365 schützt Ihre Organisation vor böswilligen B
 - **Bedrohungsuntersuchung- und Antwortfunktionen** Verwenden Sie brandneue Tools, um Bedrohungen zu untersuchen, zu verstehen, zu simulieren und zu verhindern.
 - **Automatisierte Untersuchungs- und Antwortfunktionen** Sparen Sie Zeit und Mühe beim Untersuchen und Beheben von Bedrohungen.
 
-Eine Testversion von Microsoft Defender für Office 365 ist die einfachste Möglichkeit, die Funktionen von Defender für Office 365 auszuprobieren, und die Einrichtung dauert nur ein paar Klicks. Nach Abschluss der Testeinrichtung sind alle Funktionen von Defender für Office 365 Plan 1 und Plan 2 in der Organisation bis zu 90 Tage lang verfügbar.
+Eine Testversion von Microsoft Defender für Office 365 ist die einfachste Möglichkeit, die Funktionen von Defender für Office 365 auszuprobieren, und die Einrichtung dauert nur ein paar Klicks. Nach Abschluss der Testeinrichtung sind alle Funktionen von Defender für Office 365 Plan 1 und Plan 2 bis zu 90 Tage lang in der Organisation verfügbar.
 
 > [!NOTE]
 > Die in diesem Artikel beschriebene automatisierte Konfiguration befindet sich derzeit in der öffentlichen Vorschau und ist möglicherweise nicht an Ihrem Standort verfügbar.
 
 ## <a name="terms-and-conditions"></a>Geschäftsbedingungen
 
-Die Testversion von Defender für Office 365 ist 90 Tage lang verfügbar und kann für alle Benutzer initiiert werden. Weitere Informationen finden Sie in den Nutzungsbedingungen für die Testversion von [Microsoft Defender für Office 365.](terms-of-use-defender-for-office-365-trial.md)
+Die Testversion von Defender für Office 365 ist 90 Tage lang verfügbar und kann für alle Benutzer initiiert werden. Weitere Informationen finden Sie unter [Microsoft Defender for Office 365 Trial Terms & Conditions](defender-for-office-365-trial-terms-and-conditions.md).
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>Einrichten einer Testversion von Defender für Office 365
 
@@ -49,7 +49,7 @@ Mit einer Testversion können Organisationen die Funktionen von Defender für Of
 
 Diese Richtlinien sind standardmäßig auf alle Benutzer in der Organisation begrenzt, Administratoren können die Richtlinien jedoch während oder nach der Einrichtung anpassen, sodass sie nur für bestimmte Benutzer gelten.
 
-Während des Setups wird auch die MDO-Antwortfunktionalität (in MDO P2 oder einer entsprechenden Lösung) für die gesamte Organisation eingerichtet. Es ist keine Richtliniende scoping erforderlich.
+Während des Setups wird die MDO-Antwortfunktionalität (in MDO P2 oder einer entsprechenden Lösung) auch für die gesamte Organisation eingerichtet. Es ist keine Richtliniende scoping erforderlich.
 
 ## <a name="licensing"></a>Lizenzierung
 
@@ -61,7 +61,7 @@ Zum Starten oder Beenden der Testversion müssen Sie Mitglied der Rollen **"Glob
 
 ## <a name="additional-information"></a>Weitere Informationen
 
-Nachdem Sie sich für die Testversion registriert haben, kann es bis zu zwei Stunden dauern, bis die Änderungen und Updates verfügbar sind. Administratoren müssen sich abmelden und sich erneut anmelden, um die Änderungen zu sehen.
+Nachdem Sie sich für die Testversion registriert haben, kann es bis zu zwei Stunden dauern, bis die Änderungen und Updates verfügbar sind. Administratoren müssen sich abmelden und wieder anmelden, um die Änderungen zu sehen.
 
 Administratoren können die Testversion jederzeit deaktivieren, indem sie zur <> gehen.
 
@@ -75,7 +75,7 @@ Defender für Office 365 hilft Organisationen dabei, ihr Unternehmen zu sichern,
 
 Weitere Informationen zu Defender für Office 365 finden Sie in diesem [interaktiven Leitfaden.](https://techcommunity.microsoft.com/t5/video-hub/protect-your-organization-with-microsoft-365-defender/m-p/1671189)
 
-![Konzeptionelles Diagramm zu Microsoft Defender für Office 365](../../media/microsoft-defender-for-office-365.png)
+![Konzeptionelles Diagramm von Microsoft Defender für Office 365](../../media/microsoft-defender-for-office-365.png)
 
 ### <a name="prevention"></a>Prävention
 
@@ -93,7 +93,7 @@ Branchenführende KI erkennt schädliche und verdächtige Inhalte und korreliert
 
 ### <a name="investigation-and-hunting"></a>Untersuchung und Suche
 
-Leistungsstarke Erfahrungen helfen bei der Identifizierung, Priorisierung und Untersuchung von Bedrohungen mit erweiterten Funktionen für die Suche, um Angriffe in Office 365 nachverfolgt zu werden.
+Leistungsstarke Erfahrungen helfen bei der Identifizierung, Priorisierung und Untersuchung von Bedrohungen mit erweiterten Funktionen zum Nachverfolgen von Angriffen in Office 365.
 
 - [Bedrohungs-Explorer und Echtzeiterkennungen](threat-explorer.md)
 - [Echtzeitberichte in Defender für Office 365](view-reports-for-atp.md)

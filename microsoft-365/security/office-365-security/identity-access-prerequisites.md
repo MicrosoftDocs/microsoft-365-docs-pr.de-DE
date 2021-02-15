@@ -6,7 +6,6 @@ author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: m365-security
 ms.topic: article
-ms.date: 09/01/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -19,23 +18,23 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: e411eaa7874dee710cbb21dd02a4edd383003def
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 53d64d869b80c6fe5c6e0954a00af5b6f5359356
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142097"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233086"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Erforderliche Arbeit für die Implementierung von Identitäts- und Gerätezugriffsrichtlinien
-
-In diesem Artikel werden die Voraussetzungen beschrieben, die Administratoren erfüllen müssen, um empfohlene Identitäts- und Gerätezugriffsrichtlinien zu verwenden und bedingten Zugriff zu verwenden. Außerdem werden die empfohlenen Standardwerte für die Konfiguration von Clientplattformen für die beste SSO (Single Sign-On)-Erfahrung erläutert.
-
-## <a name="prerequisites"></a>Voraussetzungen
 
 **Gilt für**
 - [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 - Azure
+
+In diesem Artikel werden die Voraussetzungen beschrieben, die Administratoren erfüllen müssen, um empfohlene Identitäts- und Gerätezugriffsrichtlinien zu verwenden und bedingten Zugriff zu verwenden. Außerdem werden die empfohlenen Standardwerte für die Konfiguration von Clientplattformen für die beste SSO (Single Sign-On)-Erfahrung erläutert.
+
+## <a name="prerequisites"></a>Voraussetzungen
 
 Bevor Sie die empfohlenen Identitäts- und Gerätezugriffsrichtlinien verwenden, muss Ihre Organisation die Voraussetzungen erfüllen. Die Anforderungen für die verschiedenen aufgeführten Identitäts- und Authentifizierungsmodelle unterscheiden sich:
 
@@ -50,7 +49,7 @@ In der folgenden Tabelle sind die erforderlichen Features und deren Konfiguratio
 |---|:---:|
 |[Konfigurieren von PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Dies muss aktiviert sein, um nicht verl ssierte Anmeldeinformationen zu erkennen und für risikobasierten bedingten Zugriff darauf zu handeln. **Hinweis:** Dies ist unabhängig davon erforderlich, ob Ihre Organisation verbundbasierte Authentifizierung verwendet.|Rein cloudbasiert|
 |[Ermöglichen Sie das nahtlose einmalige Anmelden,](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) um Benutzer automatisch zu anmelden, wenn sie sich auf ihren Organisationsgeräten befinden, die mit Ihrem Organisationsnetzwerk verbunden sind.|Nur-Cloud und Verbund|
-|[Konfigurieren sie benannte Netzwerke.](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal) Azure AD Identity Protection sammelt und analysiert alle verfügbaren Sitzungsdaten, um eine Risikobewertung zu generieren. Es wird empfohlen, die öffentlichen IP-Bereiche Ihrer Organisation für Ihr Netzwerk in der Konfiguration mit benannten Azure AD-Netzwerken anzugeben. Datenverkehr, der aus diesen Bereichen kommt, wird mit einer reduzierten Risikobewertung und Datenverkehr von außerhalb der Unternehmensumgebung mit einer höheren Risikobewertung erzielt.||
+|[Konfigurieren sie benannte Speicherorte.](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-configure-named-locations) Azure AD Identity Protection sammelt und analysiert alle verfügbaren Sitzungsdaten, um eine Risikobewertung zu generieren. Es wird empfohlen, die öffentlichen IP-Bereiche Ihrer Organisation für Ihr Netzwerk in der Konfiguration mit benannten Azure AD-Standorten anzugeben. Datenverkehr, der aus diesen Bereichen kommt, wird mit einer reduzierten Risikobewertung und Datenverkehr von außerhalb der Unternehmensumgebung mit einer höheren Risikobewertung erzielt.||
 |[Registrieren Sie alle Benutzer für die Self-Service-Kennwortzurücksetzung (Self-Service Password Reset, SSPR) und die mehrstufige Authentifizierung (MFA).](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged) Es wird empfohlen, Benutzer im Voraus für die mehrstufige Azure AD-Authentifizierung zu registrieren. Azure AD Identity Protection verwendet azure AD Multi-Factor Authentication, um eine zusätzliche Sicherheitsüberprüfung durchzuführen. Darüber hinaus empfehlen wir Benutzern, die Microsoft [Authenticator-App](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) und die Microsoft Company Portal-App auf ihren Geräten zu installieren, um eine optimale Anmeldeerfahrung zu bieten. Diese können aus dem App Store für jede Plattform installiert werden.||
 |[Aktivieren Sie die automatische Geräteregistrierung für in die Domäne beigetretene Windows-Computer.](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup) Der bedingte Zugriff sorgt dafür, dass Geräte, die eine Verbindung mit Apps herstellen, domänenverbindet oder kompatibel sind. Um dies auf Windows-Computern zu unterstützen, muss das Gerät bei Azure AD registriert sein.  In diesem Artikel wird die Konfiguration der automatischen Geräteregistrierung erläutert.|Rein cloudbasiert|
 |**Vorbereiten Ihres Supportteams**: Sie sollten vorausplanen, wie Sie mit Benutzern umgehen, die keine MFA durchführen können. Sie können sie z.B. Dies kann das Hinzufügen zu einer Richtlinienausschlussgruppe oder das Registrieren neuer MFA-Informationen sein. Bevor Sie eine dieser sicherheitssensiblen Änderungen vornehmen, müssen Sie sicherstellen, dass der tatsächliche Benutzer die Anforderung stellt. Es kann hilfreich sein, den Vorgesetzten des Benutzers bei der Genehmigung mit einzubeziehen.||
@@ -123,8 +122,8 @@ Für Editionen von Microsoft 365 oder Office 365, [](https://docs.microsoft.com/
 Hier sind einige zusätzliche Empfehlungen:
 
 - Verwenden [Sie Azure AD Privileged Identity Management,](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) um die Anzahl beständiger Administratorkonten zu reduzieren.
-- [Verwenden Sie Privileged Access Management,](../../compliance/privileged-access-management-overview.md) um Ihre Organisation vor Sicherheitsverletzungen zu schützen, die vorhandene privilegierte Administratorkonten mit ständigem Zugriff auf vertrauliche Daten oder Zugriff auf kritische Konfigurationseinstellungen verwenden.
-- Erstellen und verwenden Sie separate Konten, denen [Microsoft 365-Administratorrollen nur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) für *die Verwaltung zugewiesen sind.* Administratoren sollten über ein eigenes Benutzerkonto für die regelmäßige nicht administrative Verwendung verfügen und nur bei Bedarf ein Administratorkonto verwenden, um eine Aufgabe auszuführen, die mit ihrer Rolle oder Jobfunktion verknüpft ist.
+- [Verwenden Sie privileged Access Management,](../../compliance/privileged-access-management-overview.md) um Ihre Organisation vor Sicherheitsverletzungen zu schützen, die vorhandene privilegierte Administratorkonten mit ständigem Zugriff auf vertrauliche Daten oder Zugriff auf kritische Konfigurationseinstellungen verwenden.
+- Erstellen und verwenden Sie separate Konten, denen [Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) nur für die *Verwaltung zugewiesen sind.* Administratoren sollten über ein eigenes Benutzerkonto für die regelmäßige nicht administrative Verwendung verfügen und nur bei Bedarf ein Administratorkonto verwenden, um eine Aufgabe auszuführen, die mit ihrer Rolle oder Jobfunktion verknüpft ist.
 - Befolgen [Sie bewährte Methoden](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) zum Sichern privilegierter Konten in Azure AD.
 
 ## <a name="next-step"></a>Nächster Schritt

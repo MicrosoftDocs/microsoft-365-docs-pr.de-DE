@@ -121,6 +121,8 @@
               href: get-started/m365-apps.md
             - name: Microsoft Teams
               href: get-started/teams.md
+            - name: "Microsoft\_OneDrive"
+              href: get-started/onedrive.md
     - name: Arbeiten mit Microsoft Managed Desktop
       href: working-with-managed-desktop/index.md
       items:

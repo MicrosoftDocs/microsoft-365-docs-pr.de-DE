@@ -20,12 +20,12 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie mithilfe des Angriffssimulators simulierte Phishing- und Kennwortangriffe in ihren Microsoft 365 E5- oder Microsoft Defender für Office 365 Plan 2-Organisationen ausführen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 824ee04e2fcf0757a7eb32b48246bf1a1c638926
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 9d3d55c17e5d77ee18bd822899fea2f64136e1a3
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175884"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233600"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Angriffssimulator in Microsoft Defender für Office 365
 
@@ -34,6 +34,10 @@ ms.locfileid: "50175884"
 **Gilt für** [Microsoft Defender für Office 365 Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 Wenn Ihre Organisation über Microsoft Defender für Office 365 Plan 2 verfügt, der Funktionen zur Bedrohungsuntersuchung und -reaktion [umfasst,](office-365-ti.md)können Sie den Angriffssimulator im Security & Compliance Center verwenden, um realistische Angriffsszenarien in Ihrer Organisation zu führen. Diese simulierten Angriffe können Ihnen helfen, anfällige Benutzer zu identifizieren und zu finden, bevor sich ein tatsächlicher Angriff auf Ihr Endergebnis ausdingt. Lesen Sie diesen Artikel, um mehr zu erfahren.
+
+> [!NOTE]
+> Die Angriffssimulator v1-Erfahrung wurde in den schreibgeschützten Modus umgestellt und durch das Training des Angriffssimulators ersetzt, das in "Erste Schritte mit attack [simulation training" beschrieben wird.](attack-simulation-training-get-started.md)
+> Die Möglichkeit, neue Simulationen von dieser Website aus zu starten, wurde deaktiviert. Sie können jedoch weiterhin auf Berichte für Simulationen zugreifen, die für einen Zeitraum von 90 Tagen ab dem 24. Januar 2021 ausgeführt werden.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -53,11 +57,11 @@ Wenn Ihre Organisation über Microsoft Defender für Office 365 Plan 2 verfügt,
 
 ## <a name="spear-phishing-campaigns"></a>Phishingkampagnen mit Speerspitze
 
-*Phishing* ist ein allgemeiner Begriff für E-Mail-Angriffe, die versuchen, vertrauliche Informationen in Nachrichten zu stehlen, die von legitimen oder vertrauenswürdigen Absendern zu sein scheinen. *Bei Phishing* handelt es sich um einen gezielten Phishingangriff, bei dem gezielt fokussierte und angepasste Inhalte verwendet werden, die speziell auf die Zielempfänger zugeschnitten sind (in der Regel nach der Aufarbeitung der Empfänger durch den Angreifer).
+*Phishing* ist ein allgemeiner Begriff für E-Mail-Angriffe, die versuchen, vertrauliche Informationen in Nachrichten zu stehlen, die von legitimen oder vertrauenswürdigen Absendern zu sein scheinen. *Bei Phishing* handelt es sich um einen gezielten Phishingangriff, bei dem fokussierte und angepasste Inhalte verwendet werden, die speziell auf die Zielempfänger zugeschnitten sind (in der Regel nach der Aufarbeitung der Empfänger durch den Angreifer).
 
 Im Angriffssimulator sind zwei verschiedene Arten von Phishingkampagnen verfügbar:
 
-- **Phishing mit Phishing (Anmeldeinformationen)**– Der Angriff versucht, die Empfänger zu überzeugen, auf eine URL in der Nachricht zu klicken. Wenn sie auf den Link klicken, werden sie zur Eingabe ihrer Anmeldeinformationen aufgefordert. Wenn sie dies tun, werden sie an einen der folgenden Speicherorte weiterverortet:
+- **Phishing mit Phishing (Anmeldeinformationen)**– Der Angriff versucht, die Empfänger zu überzeugen, auf eine URL in der Nachricht zu klicken. Wenn sie auf den Link klicken, werden sie aufgefordert, ihre Anmeldeinformationen ein eingeben. Wenn sie dies tun, werden sie an einen der folgenden Speicherorte weiterverortet:
 
   - Eine Standardseite, auf der erläutert wird, dass dies nur ein Test war, und enthält Tipps zum Erkennen von Phishingnachrichten.
 
@@ -76,7 +80,7 @@ Ein wichtiger Bestandteil jeder Phishingkampagne ist das Aussehen und Gefühl de
 
 - **Verwenden Sie eine integrierte E-Mail-Vorlage:** Es stehen zwei integrierte Vorlagen zur Verfügung: **"Giveaway"** und **"Payroll Update".** Sie können einige, alle oder keine der E-Mail-Eigenschaften aus der Vorlage weiter anpassen, wenn Sie die Kampagne erstellen und starten.
 
-- **Erstellen Sie eine wiederverwendbare** E-Mail-Vorlage: Nachdem Sie die E-Mail-Vorlage erstellt und gespeichert haben, können Sie sie in zukünftigen Phishingkampagnen erneut verwenden. Sie können einige, alle oder keine der E-Mail-Eigenschaften aus der Vorlage weiter anpassen, wenn Sie die Kampagne erstellen und starten.
+- **Erstellen Sie eine wiederverwendbare** E-Mail-Vorlage: Nachdem Sie die E-Mail-Vorlage erstellt und gespeichert haben, können Sie sie in zukünftigen Phishingkampagnen wieder verwenden. Sie können einige, alle oder keine der E-Mail-Eigenschaften aus der Vorlage weiter anpassen, wenn Sie die Kampagne erstellen und starten.
 
 - **Erstellen Sie die E-Mail-Nachricht im** Assistenten: Sie können die E-Mail-Nachricht direkt im Assistenten erstellen, während Sie die Phishingkampagne für Die Speerspitze erstellen und starten.
 
@@ -121,7 +125,7 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die E-Mail-Nachricht dire
 
    - **URL der benutzerdefinierten** Startseite: Geben Sie eine optionale Zielseite ein, auf der Benutzer weitergeleitet werden, wenn sie auf den Phishinglink klicken und ihre Anmeldeinformationen eingeben. Dieser Link ersetzt die Standardmäßige Zielseite. Wenn Sie beispielsweise eine interne Bewusstseinsschulung haben, können Sie diese URL hier angeben.
 
-   - **Kategorie**: Derzeit wird diese Einstellung nicht verwendet (alles, was Sie eingeben, wird ignoriert).
+   - **Kategorie:** Derzeit wird diese Einstellung nicht verwendet (alles, was Sie eingeben, wird ignoriert).
 
    - **Betreff:** Das **Feld "Betreff"** der E-Mail-Nachricht.
 
@@ -129,7 +133,7 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die E-Mail-Nachricht dire
 
 6. Erstellen Sie **im Schritt zum** Verfassen einer E-Mail den Nachrichtentext der E-Mail-Nachricht. Sie können die Registerkarte **"E-Mail"** (ein Rich-HTML-Editor) oder die Registerkarte **"Quelle"** (unformatiertes HTML-Code) verwenden.
 
-   Die HTML-Formatierung kann so einfach oder komplex sein, wie Sie sie benötigen. Sie können Bilder und Text einfügen, um die Freundlichkeit der Nachricht im E-Mail-Client des Empfängers zu verbessern.
+   Die HTML-Formatierung kann so einfach oder komplex sein, wie Sie es benötigen. Sie können Bilder und Text einfügen, um die Gfähigkeit der Nachricht im E-Mail-Client des Empfängers zu verbessern.
 
    - `${username}` fügt den Namen des Empfängers ein.
 
@@ -199,7 +203,7 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die E-Mail-Nachricht dire
      >
      > - Sie müssen eine URL auswählen. Bei **Einer Phishingkampagne (Anlage)** können Sie den Link im nächsten Schritt aus dem Nachrichtentext entfernen  (andernfalls enthält die Nachricht sowohl einen Link als auch eine Anlage).
 
-   - **Anlagentyp:** Diese Einstellung ist nur in **Phishingkampagnen (Anlagen)** verfügbar. Klicken Sie auf die Dropdownliste, und wählen Sie . **DOCX oder** **. PDF** aus der Liste.
+   - **Anlagentyp:** Diese Einstellung ist nur in **Phishingkampagnen (Anlagen)** verfügbar. Klicken Sie auf die Dropdownliste, und wählen Sie **. DOCX oder** **. PDF** aus der Liste.
 
    - **Anlagenname:** Diese Einstellung ist nur in **Phishingkampagnen (Anlagen)** verfügbar. Geben Sie einen Dateinamen für die DOCX- oder PDF-Anlage ein.
 
@@ -211,7 +215,7 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die E-Mail-Nachricht dire
 
 6. Erstellen Sie **im Schritt zum** Verfassen einer E-Mail den Nachrichtentext der E-Mail-Nachricht. Wenn Sie im Startschritt eine Vorlage ausgewählt haben, ist der Nachrichtentext bereits konfiguriert, Sie können ihn jedoch anpassen.  Sie können die Registerkarte **"E-Mail"** (ein Rich-HTML-Editor) oder die Registerkarte **"Quelle"** (unformatiertes HTML-Code) verwenden.
 
-   Die HTML-Formatierung kann so einfach oder komplex sein, wie Sie sie benötigen. Sie können Bilder und Text einfügen, um die Freundlichkeit der Nachricht im E-Mail-Client des Empfängers zu verbessern.
+   Die HTML-Formatierung kann so einfach oder komplex sein, wie Sie es benötigen. Sie können Bilder und Text einfügen, um die Gfähigkeit der Nachricht im E-Mail-Client des Empfängers zu verbessern.
 
    - `${username}` fügt den Namen des Empfängers ein.
 
@@ -232,7 +236,7 @@ Ein *Kennwortangriff versucht,* Kennwörter für Benutzerkonten in einer Organis
 
 Im Angriffssimulator stehen Ihnen zwei verschiedene Arten von Kennwortangriffskampagnen zur Verfügung, um die Komplexität der Kennwörter Ihrer Benutzer zu testen:
 
-- **Brute-Force-Kennwort (Wörterbuchangriff):** Ein  *Brute-Force-* oder Wörterbuchangriff verwendet eine große Wörterbuchdatei mit Kennwörtern für ein Benutzerkonto in der Hoffen, dass eines davon funktioniert (viele Kennwörter für ein Konto). Falsche Kennwortsperrungen helfen, Brute-Force-Kennwortangriffe zu verhindern.
+- **Brute-Force-Kennwort (Wörterbuchangriff):** Ein  *Brute-Force-* oder Wörterbuchangriff verwendet eine große Wörterbuchdatei mit Kennwörtern für ein Benutzerkonto mit der Hoffen, dass eines davon funktioniert (viele Kennwörter für ein Konto). Falsche Kennwortsperrungen helfen, Brute-Force-Kennwortangriffe zu verhindern.
 
   Für den Wörterbuchangriff können Sie ein oder mehrere Kennwörter angeben, die Sie ausprobieren möchten (manuell eingegeben oder in eine hochgeladene Datei), und Sie können einen oder mehrere Benutzer angeben.
 
@@ -271,7 +275,7 @@ Im Angriffssimulator stehen Ihnen zwei verschiedene Arten von Kennwortangriffska
 
      - **Hochladen von Kennwörtern** aus einer Wörterbuchdatei: Klicken Sie auf **"Hochladen",** um eine vorhandene Textdatei zu importieren, die ein Kennwort in jeder Zeile und eine leere letzte Zeile enthält. Die Textdatei muss mindestens 10 MB groß sein und darf nicht mehr als 30.000 Kennwörter enthalten.
 
-   - **Kennwort-Spray-Angriff:** Geben Sie in das **Kennwort(n),** das im Angriffsfeld verwendet werden soll, ein Kennwort ein.
+   - **Kennwort-Spray-Angriff:** Geben Sie in den **Kennwörtern,** die im Angriffsfeld verwendet werden, ein Kennwort ein.
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
@@ -287,7 +291,7 @@ Wenn die Kampagne abgeschlossen ist, ändert sich der Status in **Angriff abgesc
 
 - Klicken Sie auf der Hauptseite **"Angriffe** **simulieren"** unter dem Namen der Kampagne auf "Bericht anzeigen".
 
-- Klicken Sie auf der **Hauptseite** **"Angriffe** simulieren" im Abschnitt für den Angriffstyp auf "Angriffsdetails". Wählen Sie **auf der Seite "Angriffsdetails",** die geöffnet wird, die Kampagne im Abschnitt **"Angriffsverlauf"** aus.
+- Klicken Sie **auf** der Hauptseite "Simulierte Angriffe" im Abschnitt auf **"Angriffsdetails"** für den Angriffstyp. Wählen Sie **auf der Seite "Angriffsdetails",** die geöffnet wird, die Kampagne im Abschnitt **"Angriffsverlauf"** aus.
 
 Mit einer der vorherigen Aktionen gelangen Sie zu einer Seite mit dem Namen **"Angriffsdetails".** Die Informationen, die auf dieser Seite für jeden Kampagnentyp verfügbar sind, werden in den folgenden Abschnitten beschrieben.
 
@@ -305,7 +309,7 @@ Die folgenden Informationen sind auf der Seite **"Angriffsdetails"** für jede K
 
 - **Schnellster Klick:** Wie lange es ge dauere, bis der erste Benutzer auf den Link geklickt hat, nachdem Sie die Kampagne gestartet haben.
 
-- **Durchschnittlicher Klick**: Die Summe, wie lange es ge dauern hat, bis jeder auf den Link geklickt hat, dividiert durch die Anzahl der Benutzer, die auf den Link geklickt haben.
+- **Durchschnittlicher Klick:** Die Summe, wie lange es ge dauern hat, bis alle Benutzer auf den Link geklickt haben, dividiert durch die Anzahl der Benutzer, die auf den Link geklickt haben.
 
 - **Click Success Rate**: A percentage that's calculated by (number of users who clicked the link) / **Total users targeted**.
 
@@ -317,13 +321,13 @@ Die folgenden Informationen sind auf der Seite **"Angriffsdetails"** für jede K
 
 - Ein Balkendiagramm, das zeigt, auf den **link geklickt** und **Anmeldeinformationen Zahlen** pro Tag angegeben.
 
-- Ein Kreisdiagramm, in dem der Link **geklickt,** die angegebenen Anmeldeinformationen und der Prozentsatz **"Keine"** für die Kampagne angezeigt werden.
+- Ein Kreisdiagramm, das zeigt, auf den **Link geklickt** **wurde,** die angegebenen Anmeldeinformationen und die Prozentsätze **"Keine"** für die Kampagne.
 
 - Im **Abschnitt "Gefährdete Benutzer"** werden die Details der Benutzer aufgeführt, die auf den Link geklickt haben:
 
   - Die E-Mail-Adresse des Benutzers
 
-  - Das Datum/die Uhrzeit, an dem/der auf den Link geklickt wurde.
+  - Datum/Uhrzeit, an dem/der auf den Link geklickt wurde.
 
   - Die Client-IP-Adresse.
 
@@ -343,7 +347,7 @@ Die folgenden Informationen sind auf der Seite **"Angriffsdetails"** für jede K
 
 - **Gesamterfolgsrate:** Ein Prozentsatz, der von erfolgreichen Versuchen berechnet  /  **wird. Zielbenutzer insgesamt.**
 
-- **Schnellste Anlageneröffnungszeit:** Wie lange es ge dauere, bis der erste Benutzer die Anlage geöffnet hat, nachdem Sie die Kampagne gestartet haben.
+- **Schnellste Anlagenöffnzeit:** Wie lange das Öffnen der Anlage durch den ersten Benutzer nach dem Starten der Kampagne gezeit hat.
 
 - **Durchschnittliche Anlageneröffnungszeit:** Die Summe der Zeit, in der alle Benutzer die Anlage geöffnet haben, dividiert durch die Anzahl der Benutzer, die die Anlage geöffnet haben.
 
@@ -371,6 +375,6 @@ Die folgenden Informationen sind auf der Seite **"Angriffsdetails"** für jede K
 
 - **Gesamtzahl der benutzerorientierten Benutzer**
 
-- **Erfolgreiche Versuche:** Die Anzahl der Benutzer, bei denen festgestellt wurde, dass sie das angegebene Kennwort verwenden.
+- **Erfolgreiche Versuche:** Die Anzahl der Benutzer, die gefunden wurden, dass sie das angegebene Kennwort verwenden.
 
 - **Gesamterfolgsrate:** Ein Prozentsatz, der von erfolgreichen Versuchen berechnet  /  **wird. Zielbenutzer insgesamt.**

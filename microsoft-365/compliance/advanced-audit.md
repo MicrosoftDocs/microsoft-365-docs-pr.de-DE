@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Die erweiterte Überwachung in Microsoft 365 bietet neue Überwachungsfunktionen, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen.
-ms.openlocfilehash: f265a30a3d43b592a7d297e2137fd6b9ff4acfb4
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: 0ae67497829e69da92e9735cb68a84e75c517814
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097151"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242457"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Erweiterte Überwachung in Microsoft 365
 
@@ -107,7 +107,19 @@ Sie können auch die Befehle [Search-UnifiedAuditLog -Operations Send](https://d
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
-Das SearchQueryInitiatedExchange-Ereignis wird ausgelöst, wenn jemand die Suchleiste in Outlook im Web (OWA) verwendet, um in einem Postfach nach Elementen zu suchen. Die mit der Untersuchung beauftragten Personen können das SearchQueryInitiatedExchange-Ereignis verwenden, um festzustellen, ob ein Angreifer, der möglicherweise ein Konto manipuliert hat, nach vertraulichen Informationen im Postfach gesucht oder versucht hat, darauf zuzugreifen. Die Überwachungsaufzeichnung für ein SearchQueryInitiatedExchange-Ereignis enthält Informationen wie z. B. den tatsächlichen Suchabfragetext und ob die Suche im Outlook-Desktop-Client oder in Outlook im Web durchgeführt wurde. Durch die Überprüfung der Suchabfragen, die ein Angreifer durchgeführt hat, kann die ermittelnde Person besser verstehen, warum nach den E-Mail-Daten gesucht wurde.
+Das SearchQueryInitiatedExchange-Ereignis wird ausgelöst, wenn jemand Outlook verwendet, um in einem Postfach nach Elementen zu suchen. Ereignisse werden ausgelöst, wenn Suchvorgänge in den Outlook-Umgebungen durchgeführt werden:
+
+- Outlook (Desktopclient)
+
+- Outlook im Web (OWA)
+
+- Outlook für iOS
+
+- Outlook für Android
+
+- Mail-App für Windows 10
+
+Die mit der Untersuchung beauftragten Personen können das SearchQueryInitiatedExchange-Ereignis verwenden, um festzustellen, ob ein Angreifer, der möglicherweise ein Konto manipuliert hat, nach vertraulichen Informationen im Postfach gesucht oder versucht hat, darauf zuzugreifen. Die Überwachungsaufzeichnung für ein SearchQueryInitiatedExchange-Ereignis enthält Informationen wie z. B. den tatsächlichen Suchabfragetext und ob die Suche im Outlook-Desktop-Client oder in Outlook im Web durchgeführt wurde. Der Überwachungsdatensatz gibt auch die Outlook-Umgebung an, in der die Suche ausgeführt wurde. Durch die Überprüfung der Suchabfragen, die ein Angreifer durchgeführt hat, kann die ermittelnde Person besser verstehen, warum nach den E-Mail-Daten gesucht wurde.
 
 Um nach SearchQueryInitiatedExchange-Überwachungsaufzeichnungen zu suchen, können Sie im Compliance Center im [Überwachungsprotokoll-Suchtool](search-the-audit-log-in-security-and-compliance.md) in der Dropdownliste der **Suchaktivitäten** nach der Aktivität **E-Mail-Suche durchgeführt** suchen.
 
@@ -122,7 +134,17 @@ Wenn der Befehl „`Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}`“ zu
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
-Ähnlich wie bei der Suche nach Postfachelementen wird das SearchQueryInitiatedSharePoint-Ereignis ausgelöst, wenn jemand nach Elementen auf der SharePoint-Homepage für Ihre Organisation sucht. Die ermittelnden Personen können das SearchQueryInitiatedSharePoint-Ereignis verwenden, um festzustellen, ob ein Angreifer versucht hat, vertrauliche Informationen in SharePoint zu finden (und möglicherweise darauf zugegriffen). Die Überwachungsaufzeichnung für ein SearchQueryInitiatedSharePoint-Ereignis enthält außerdem den eigentlichen Text der Suchabfrage. Durch die Überprüfung der Suchabfragen, die ein Angreifer durchgeführt hat, kann die ermittelnde Person besser den Zweck und den Umfang der Dateidaten nachvollziehen, nach denen gesucht wurde.
+Ähnlich wie bei der Suche nach Postfachelementen wird das SearchQueryInitiatedSharePoint-Ereignis ausgelöst, wenn jemand nach Elementen in SharePoint sucht. Ereignisse werden ausgelöst, wenn Suchvorgänge in den folgenden Typen von SharePoint-Websites durchgeführt werden:
+
+- Startsites
+
+- Kommunikationswebsites
+
+- Hubwebsites
+
+- Mit Microsoft Teams verknüpfte Websites
+
+Die ermittelnden Personen können das SearchQueryInitiatedSharePoint-Ereignis verwenden, um festzustellen, ob ein Angreifer versucht hat, vertrauliche Informationen in SharePoint zu finden (und möglicherweise darauf zugegriffen). Die Überwachungsaufzeichnung für ein SearchQueryInitiatedSharePoint-Ereignis enthält außerdem den eigentlichen Text der Suchabfrage. Der Überwachungsdatensatz gibt auch den Typ der SharePoint-Website an, die durchsucht wurde. Durch die Überprüfung der Suchabfragen, die ein Angreifer durchgeführt hat, kann die ermittelnde Person besser den Zweck und den Umfang der Dateidaten nachvollziehen, nach denen gesucht wurde.
 
 Um nach SearchQueryInitiatedSharePoint-Überwachungsaufzeichnungen zu suchen, können Sie im Compliance Center im [Überwachungsprotokoll-Suchtool](search-the-audit-log-in-security-and-compliance.md) in der Dropdownliste der **Suchaktivitäten** nach der Aktivität **SharePoint-Suche durchgeführt** suchen.
 

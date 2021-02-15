@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Hier erhalten Sie einen Überblick über das Dokumentverständnis-Feature in Microsoft SharePoint Syntex.
-ms.openlocfilehash: c0396c8e702d3e32db93d26dba23ab038546bea0
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: d2bf581468eeee008d09a242876bed5ad07ae01f
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976519"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242410"
 ---
 # <a name="document-understanding-overview"></a>Übersicht über das Dokumentenverständnis
 
@@ -46,10 +46,45 @@ Sie können Ihren Dokumentverständnismodellen *Klassifizierungen* und *Extrakto
 
 Sie können Beispieldateien verwenden, um Ihre Klassifizierungen und Extraktoren im Modell zu trainieren und zu testen. Beispieldateien liefern Ihrem Modell Beispiele für das, wonach gesucht werden soll, wenn nach zu extrahierenden Daten in Dateien gesucht wird. So würden Sie beispielsweise Ihre Klassifizierungen und Extraktoren für Vertragsverlängerungen mit Beispielen für Vertragsverlängerungsdokumente trainieren, die in Ihrem Unternehmen verwendet werden. Sie können Beispieldateien auch dazu verwenden, die Effektivität Ihres Modells zu testen.
 
-> [!NOTE]
-> Wenn Sie OCR-Technologie (Optical Character Recognition) zum Scannen von Dokumenten verwenden, ist Syntex für das Modelltraining auf ein Limit von 15 Seiten beschränkt.
-
 Nach dessen Veröffentlichung können Sie das Modell über das Inhaltscenter auf eine beliebige SharePoint-Dokumentbibliothek anwenden, auf die Sie Zugriff haben.  
+
+### <a name="file-limitations"></a>Dateieinschränkungen
+
+Dokumentverständnismodelle nutzen die Technik der optischen Zeichenerkennung (OCR), um PDF-, Bild- und TIFF-Dateien zu scannen, und zwar sowohl beim Trainieren eines Modells mit Beispieldateien als auch beim Ausführen des Modells mit Dateien einer Dokumentbibliothek.
+
+Beachten Sie bitte die folgenden Unterschiede zwischen textbasierten Microsoft Office-Dateien und mit OCR gescannten Dateien (PDF, Bild oder TIFF):
+
+- Office-Dateien: Bei einer Länge von 64K Zeichen werden diese abgeschnitten (beim Training und beim Ausführen mit Dateien einer Dokumentbibliothek)
+- Mit OCR gescannte Dateien: Es besteht Limit von 20 Seiten.  
+
+#### <a name="supported-file-types"></a>Unterstützte Dateitypen
+
+Dokumentverständnismodelle unterstützen die folgenden Dateitypen:
+
+- DOC
+- DOCX
+- EML
+- HEIC
+- HEIF
+- HTM
+- HTML
+- JPEG
+- JPG
+- MARKDOWN
+- MD
+- MSG
+- PDF
+- PNG
+- PPT
+- PPTX
+- RTF
+- TIF
+- TIFF
+- TXT
+- XLS
+- XLSX
+
+
 
 ## <a name="see-also"></a>Siehe auch
 [Erstellen einer Klassifizierung](create-a-classifier.md)
@@ -65,3 +100,5 @@ Nach dessen Veröffentlichung können Sie das Modell über das Inhaltscenter auf
 [Unterschied zwischen Dokumentverständnis- und Formularverarbeitungsmodellen](difference-between-document-understanding-and-form-processing-model.md)
   
 [Übersicht über die Formularverarbeitung](form-processing-overview.md)
+
+[Barrierefreiheitsmodus für SharePoint Syntex](accessibility-mode.md)

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie einen benutzerdefinierten Typ für vertrauliche Informationen für Richtlinien im Compliance Center erstellen und importieren können.
-ms.openlocfilehash: ab96a3928105f612ab97bc8ca3a0acc3613082c3
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 63ff32bda31446c25a523ff2064f7b750d102961
+ms.sourcegitcommit: 3e29926f51530afb0d75d8518a92b9ec7dc5e5bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080680"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50173122"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Erstellen eines benutzerdefinierten vertraulichen Informationstyps mit PowerShell
 
@@ -377,7 +377,7 @@ Gehen Sie zum Hochladen des Regelpakets wie folgt vor:
    Ausführliche Informationen zur Syntax und zu den Parametern finden Sie unter [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage).
 
    > [!NOTE]
-   > Die Grenze für benutzerdefinierte Sammlungen sensibler Informationstypen liegt bei 10.
+   > Maximal werden 10 Regelpakete unterstützt, aber jedes Paket kann die Definition mehrerer Typen vertraulicher Informationen enthalten.
 
 4. Um sicherzustellen, dass Sie einen neuen Typ für vertrauliche Informationen erstellt haben, führen Sie einen der folgenden Schritte aus:
 

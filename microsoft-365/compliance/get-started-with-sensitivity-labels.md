@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sind Sie bereit für die Implementierung von Vertraulichkeitsbezeichnungen, um die Daten Ihrer Organisation zu schützen, aber nicht sicher, wo Sie beginnen sollten? Hier finden Sie einige praktische Anleitungen, die Ihnen auf dem Weg zu Bezeichnungen helfen.
-ms.openlocfilehash: 04ac373250f13ece1a4e976891044a6584989f6d
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 03408a2f9e57421ea613bdb38e253401526f8f71
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142038"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242365"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Erste Schritte mit Vertraulichkeitsbezeichnungen
 
@@ -81,7 +81,7 @@ In allen Szenarien müssen Sie [Vertraulichkeitsbezeichnungen und deren Richtlin
 
 |Ich möchte...|Dokumentation|
 |----------------|---------------|
-|Verwalten von Vertraulichkeitsbezeichnungen für Office-Apps, sodass der Inhalt bei seiner Erstellung mit Bezeichnungen versehen wird – enthält Unterstützung für manuelle Bezeichnung auf allen Plattformen |[Verwenden von Vertraulichkeitsbezeichnungen in Office-Apps](sensitivity-labels-office-apps.md)|
+|Verwalten von Vertraulichkeitsbezeichnungen für Office-Apps, sodass der Inhalt bei seiner Erstellung mit Bezeichnungen versehen wird – enthält Unterstützung für manuelle Bezeichnung auf allen Plattformen |[Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps](sensitivity-labels-office-apps.md)|
 |Erlauben Sie Benutzern, Dateien von Windows-Computern mithilfe von Office-Apps, Datei-Explorer und PowerShell zu bezeichnen und zu schützen.|[Azure Information Protection-Clients mit einheitlichen Bezeichnungen für Windows](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |Verschlüsseln von Dokumenten und E-Mails mit Vertraulichkeitsbezeichnungen sowie Einschränken, wer darauf zugreifen kann und wie diese Inhalte verwendet werden können |[Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung](encryption-sensitivity-labels.md)|
 |Aktivieren Sie Vertraulichkeitsbezeichnungen für Office im Web mit Unterstützung für die gemeinsame Dokumenterstellung, eDiscovery, Verhinderung von Datenverlust und Suche – sogar für verschlüsselte Dokumente. | [Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)

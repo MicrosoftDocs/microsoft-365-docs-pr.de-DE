@@ -1,5 +1,5 @@
 ---
-title: Upgrade Ihrer Office 2010 auf Microsoft 365-Microsoft 365 Administrator
+title: Upgrade Von Office 2010 auf Microsoft 365 – Microsoft 365-Administrator
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,50 +22,50 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
-description: Hier erfahren Sie, wie Sie Microsoft Office auf den neuesten Office-Client für Benutzer in Ihrer Organisation aktualisieren.
-ms.openlocfilehash: 596dfc8f4a005d01c0bf330243bf1fb3c639f97e
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+description: Erfahren Sie, wie Sie Microsoft Office auf den neuesten Office-Client für Benutzer in Ihrer Organisation aktualisieren.
+ms.openlocfilehash: 3f8ea0d16e1c27414b5f3e11e842e336fadb3e75
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906441"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233318"
 ---
-# <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Aktualisieren Sie Ihre Microsoft 365 for Business-Benutzer auf den neuesten Office-Client
+# <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Aktualisieren Ihrer Microsoft 365 Business-Benutzer auf den neuesten Office-Client
 
-## <a name="office-2010-reaches-end-of-support"></a>Office 2010 erreicht End-of-Support
+## <a name="office-2010-reaches-end-of-support"></a>Office 2010 erreicht Das Ende des Support
 
-Office 2010 hat am 13. Oktober 2020 das Ende der Unterstützung erreicht. Microsoft stellt nicht mehr Folgendes bereit:
+Office 2010 hat sein Ende des Support am 13. Oktober 2020 erreicht. Microsoft stellt nicht mehr Folgendes zur Verfügung:
 
 - Technischer Support für Probleme
 
-- Fehlerbehebungen für entdeckte Probleme
+- Fehlerbehebungen für gefundene Probleme
 
-- Sicherheitsfixes für entdeckte Sicherheitslücken
+- Sicherheitsfixes für ermittelte Sicherheitsrisiken
 
-Weitere Informationen finden Sie unter [Office 2010 Ende der Support-Roadmap](https://docs.microsoft.com/deployoffice/endofsupport/office-2010-end-support-roadmap) .
+Weitere Informationen finden Sie [in der Office 2010-Roadmap](https://docs.microsoft.com/deployoffice/endofsupport/office-2010-end-support-roadmap) zum Ende des Support.
 
  **Ist dies das richtige Thema für Sie?**
   
- Wenn Sie der Administrator sind, der für das Microsoft 365 for Business-Abonnement in Ihrer Organisation zuständig ist, sind Sie an der richtigen Stelle. Administratoren sind normalerweise für Aufgaben wie das Verwalten von Benutzern, das Zurücksetzen von Kennwörtern, die Verwaltung von Office-Installationen und das Hinzufügen oder Entfernen von Lizenzen verantwortlich.
+ Wenn Sie der Administrator sind, der für das Microsoft 365 Business-Abonnement in Ihrer Organisation verantwortlich ist, sind Sie am richtigen Ort. Administratoren sind in der Regel für Aufgaben wie die Verwaltung von Benutzern, das Zurücksetzen von Kennwörtern, das Verwalten von Office-Installationen und das Hinzufügen oder Entfernen von Lizenzen verantwortlich.
 
- Wenn Sie kein Administrator sind und ein Produkt der [Microsoft 365](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) -Produktfamilie haben, finden Sie weitere Informationen zum Upgrade Ihrer älteren Heim Nutzungs Version von Office unter [How do I Upgrade Office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) .
+ Wenn Sie kein Administrator sind und über ein Produkt der [Microsoft 365-Familie](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) verfügen, finden Sie unter "Wie kann ich [Office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) aktualisieren" Weitere Informationen zum Upgrade Ihrer älteren, heimfreundlichen Version von Office.
 
-## <a name="get-ready-to-upgrade-to-microsoft-365"></a>Vorbereiten des Upgrades auf Microsoft 365
+## <a name="get-ready-to-upgrade-to-microsoft-365"></a>Bereiten Sie sich auf das Upgrade auf Microsoft 365 vor
 
-Als Administrator können Sie steuern, welche Version von Office-Mitarbeitern in Ihrer Organisation installiert werden kann. Es wird dringend empfohlen, dass Sie Benutzern in Ihrer Organisation beim Ausführen älterer Versionen von Office wie Office 2010, Office 2013 oder Office 2016 ein Upgrade auf die neueste Version zur Verfügung stehen, um die Sicherheits-und Produktivitätsverbesserungen zu nutzen.
+Als Administrator steuern Sie, welche Version von Office von Personen in Ihrer Organisation installiert werden kann. Es wird dringend empfohlen, Dass Sie Benutzern in Ihrer Organisation, die ältere Versionen von Office ausführen, wie z. B. Office 2010, Office 2013 oder Office 2016, beim Upgrade auf die neueste Version helfen, um von den Sicherheits- und Produktivitätsverbesserungen zu profitieren.
 
-## <a name="upgrade-steps"></a>Upgrade-Schritte
+## <a name="upgrade-steps"></a>Upgradeschritte
 
 Im Folgenden werden Sie schrittweise durch den Prozess der Aktualisierung Ihrer Benutzer auf den neuesten Office-Desktopclient geführt. Es wird empfohlen, diese Schritte vor dem Beginn des Upgradeprozesses durchzulesen.
   
 ## <a name="step-1---check-system-requirements"></a>Schritt 1 - Prüfen der Systemanforderungen
 
-[Überprüfen Sie die Systemanforderungen](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) für Office, um sicherzustellen, dass Ihre Geräte mit der neuesten Version von Office kompatibel sind. Beispielsweise können neuere Versionen von Office nicht auf Computern mit Windows XP oder Windows Vista installiert werden.
+[Überprüfen Sie die Systemanforderungen](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) für Office, um sicherzustellen, dass Ihre Geräte mit der neuesten Version von Office kompatibel sind. Neuere Versionen von Office können beispielsweise nicht auf Computern unter Windows XP oder Windows Vista installiert werden.
   
 > [!TIP]
-> Wenn Sie in Ihrer Organisation über Benutzer verfügen, die ältere Versionen von Windows auf ihren PCs oder Laptops ausführen, empfehlen wir ein Upgrade auf Windows 10. Windows 7 hat das Ende der Unterstützung erreicht. Weitere Informationen finden Sie [unter Support für Windows 7 endet im Januar 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1) .
+> Wenn Benutzer in Ihrer Organisation ältere Versionen von Windows auf ihren PCs oder Laptops ausführen, empfehlen wir ein Upgrade auf Windows 10. Windows 7 hat das Ende der Unterstützung erreicht. Weitere Informationen finden Sie unter "Support für [Windows 7" bis Januar 2020.](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1)
 
-Schauen Sie sich die [Systemanforderungen für Windows 10](https://www.microsoft.com/windows/windows-10-specifications) an, um zu sehen, ob Sie Ihr Betriebssystem aktualisieren können.
+Sehen Sie sich die [Windows 10-Systemanforderungen](https://www.microsoft.com/windows/windows-10-specifications) an, um zu sehen, ob Sie ihre Betriebssysteme aktualisieren können.
 
 ### <a name="check-application-compatibility"></a>Prüfen der Anwendungskompatibilität
 
@@ -75,9 +75,9 @@ Wenn Sie beispielsweise mit der aktuellen Office-Installation Add-Ins von Dritta
   
 ## <a name="step-2---check-your-existing-subscription-plan"></a>Schritt 2 - Überprüfen des vorhandenen Abonnementplans
 
-Einige Microsoft 365-Pläne enthalten nicht die vollständigen Desktop Versionen von Office, und die Schritte zum Upgrade unterscheiden sich, wenn Ihr Plan kein Office enthält.
+Einige Microsoft 365-Pläne enthalten nicht die vollständigen Desktopversionen von Office, und die Schritte zum Upgrade unterscheiden sich, wenn Ihr Plan Office nicht enthält.
   
-Sind Sie unsicher, welchen Abonnementplan Sie verwenden? Finden Sie Informationen [zum Microsoft 365 for Business-Abonnement?](../admin-overview/what-subscription-do-i-have.md)
+Sind Sie unsicher, welchen Abonnementplan Sie verwenden? Welche [Microsoft 365 Business-Abonnements habe ich?](../admin-overview/what-subscription-do-i-have.md)
   
 Wenn Ihr vorhandener Plan Office enthält, fahren Sie mit [Schritt 3 - Deinstallieren von Office](#step-3---uninstall-office) fort.
   
@@ -87,21 +87,24 @@ Wenn Ihr vorhandener Plan Office nicht enthält, wählen Sie eine der folgenden 
 
  **Option 1: Wechseln von Office-Abonnements**
 
-Wechseln Sie zu einem Abonnement, das Office enthält. Weitere Informationen finden Sie unter [Wechseln zu einem anderen Microsoft 365 for Business-Plan](../../commerce/subscriptions/switch-to-a-different-plan.md).
+Wechseln Sie zu einem Abonnement, das Office enthält. Weitere [Informationen finden Sie unter Wechseln zu einem anderen Microsoft 365 Business-Plan.](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
-**Option 2: erwerben einzelner, einmaliger Käufe von Office oder erwerben von Office über eine Volumenlizenz**
+**Option 2: Kaufen einzelner, einmal gekaufter Office-Käufe oder Erwerben von Office über eine Volumenlizenz**
 
- - Kaufen Sie einen individuellen, einmaligen Kauf von Office. Siehe [Office Home &amp; Business](https://products.office.com/home-and-business) oder [Office Professional](https://products.office.com/professional)
+ - Kaufen Sie einen einzelnen, einmal gekauften Office-Kauf. Siehe [Office Home &amp; Business](https://products.office.com/home-and-business) oder [Office Professional](https://products.office.com/professional)
 
      ODER
 
- - Kaufen Sie mehrere Kopien von Office über eine Volumenlizenz. Lesen Sie [Vergleich der Suites, die über die Volumenlizenzierung zur Verfügung stehen](https://products.office.com/business/microsoft-office-volume-licensing-suites-comparison).
+ - Erwerben Sie mehrere Kopien von Office über eine Volumenlizenz. Lesen Sie [Vergleich der Suites, die über die Volumenlizenzierung zur Verfügung stehen](https://products.office.com/business/microsoft-office-volume-licensing-suites-comparison).
 
 ## <a name="step-3---uninstall-office"></a>Schritt 3 - Deinstallieren von Office
 
-Vor der Installation der neuesten Version von Office wird empfohlen, alle älteren Versionen von Office zu deinstallieren. Wenn Sie sich jedoch für das Upgrade von Office entscheiden, beachten Sie die folgenden Fälle, in denen Sie Office nach der Deinstallation nicht erneut installieren können.
+Vor der Installation der neuesten Version von Office wird empfohlen, alle älteren Versionen von Office zu deinstallieren. Wenn Sie jedoch Ihre Meinung zum Upgrade von Office ändern, beachten Sie die folgenden Fälle, in denen Sie Office nach der Deinstallation nicht erneut installieren können.
   
-Wenn Sie Add-Ins von Drittanbietern verwenden, sollten Sie sich an den Hersteller wenden, um zu sehen, ob ein Update mit der neuesten Version von Office funktioniert.
+Wenn Sie über Drittanbieter-Add-Ins verfügen, wenden Sie sich an den Hersteller, um zu erfahren, ob es ein Update gibt, das mit der neuesten Version von Office funktioniert.
+
+> [!TIP]
+> Wenn beim Deinstallieren von Office Probleme auftreten, können Sie den Microsoft Support- und Wiederherstellungs-Assistenten verwenden, um Office zu entfernen: Herunterladen und Ausführen des [Microsoft Support-](https://go.microsoft.com/fwlink/?LinkID=2155008)und Wiederherstellungs-Assistenten.
 
 ### <a name="select-the-version-of-office-you-want-to-uninstall"></a>Wählen Sie die Office-Version aus, die Sie deinstallieren möchten:
 
@@ -111,21 +114,21 @@ Wenn Sie Add-Ins von Drittanbietern verwenden, sollten Sie sich an den Herstelle
   
 ### <a name="known-issues-trying-to-reinstall-older-versions-of-office-after-an-uninstall"></a>Bekannte Probleme bei dem Versuch, ältere Office-Versionen nach einer Deinstallation erneut zu installieren
 
- **Office über eine Volumenlizenz** Wenn Sie keinen Zugriff mehr auf die Quelldateien dieser Volumenlizenzversionen von Office haben, können Sie Sie nicht erneut installieren.
+ **Office über eine Volumenlizenz** Wenn Sie keinen Zugriff mehr auf die Quelldateien dieser Volumenlizenzversionen von Office haben, können Sie sie nicht erneut installieren.
 
- **Auf dem Computer vorinstallierte Office-Installation** Wenn Sie keinen Datenträger oder Product Key mehr haben (wenn Office mit einem geliefert wurde), können Sie ihn nicht erneut installieren.
+ **Auf Ihrem Computer vorinstalliertes Office** Wenn Sie nicht mehr über eine CD oder einen Product Key verfügen (sofern Office dazu gehört hat), können Sie sie nicht erneut installieren.
 
- **Nicht unterstützte Abonnements** Wenn Ihre Office-Kopie über nicht fort gegebene Abonnements wie Office 365 Small Business Premium oder Office 365 mittelständischen Unternehmen erworben wurde, können Sie keine ältere Version von Office installieren, es sei denn, Sie verfügen über den Product Key, der mit Ihrem Abonnement geliefert wurde.
+ **Nicht unterstützte Abonnements** Wenn Ihre Kopie von Office über nicht mehr gekündigte Abonnements wie Office 365 Small Business Premium oder Office 365 Mid-Size Business erworben wurde, können Sie erst eine ältere Version von Office installieren, wenn Sie über den Product Key verfügen, der im Abonnement enthalten war.
 
 Wenn Sie die neueste Version von Office neben der älteren Version installieren möchten, können Sie unter [Installieren und Verwenden verschiedener Office-Versionen auf demselben PC](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf) eine Liste der Versionen abrufen, bei denen dies unterstützt wird. Eine Installation, bei der zwei Versionen nebeneinander installiert sind, ist möglicherweise die richtige Wahl, wenn Sie z. B. Add-Ins von Drittanbietern installiert haben, die Sie mit der älteren Office-Version verwenden, und Sie nicht sicher sind, ob sie mit der neuesten Version kompatibel sind.
 
 ## <a name="step-4---assign-office-licenses-to-users"></a>Schritt 4 - Zuweisen von Office-Lizenzen zu Benutzern
 
-Wenn Sie dies noch nicht getan haben, weisen Sie allen Benutzern in Ihrer Organisation, die Office installieren müssen, Lizenzen zu, siehe [Zuweisen von Lizenzen zu Benutzern in Microsoft 365 for Business](../manage/assign-licenses-to-users.md).
+Wenn Sie dies noch nicht getan haben, weisen Sie Allen Benutzern in Ihrer Organisation, die Office installieren müssen, Lizenzen zu. Weitere Informationen finden Sie unter "Zuweisen von Lizenzen zu Benutzern [in Microsoft 365 Business".](../manage/assign-licenses-to-users.md)
   
 ## <a name="step-5---install-office"></a>Schritt 5 - Installieren von Office
 
-Nachdem Sie überprüft haben, dass die Benutzer, für die Sie ein Upgrade durchführen möchten, über Lizenzen verfügen, müssen Sie Office im letzten Schritt installieren, siehe [herunterladen und installieren oder erneutes Installieren von Office auf Ihrem PC oder Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
+Nachdem Sie überprüft haben, ob die Benutzer, die Sie aktualisieren möchten, Über Lizenzen verfügen, besteht der letzte Schritt in der Installation von Office. Weitere Informationen finden Sie unter Herunterladen und Installieren oder erneutes Installieren von Office auf Ihrem PC oder [Mac.](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
   
 > [!TIP]
-> Wenn Sie nicht möchten, dass Ihre Benutzer Office selbst installieren, finden Sie weitere Informationen unter [Verwalten von Software Downloadeinstellungen in Office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365). Sie können das [Office-Bereitstellungs Tool](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool) verwenden, um die Office-Software in Ihr lokales Netzwerk herunterzuladen und dann Office mit der Software Bereitstellungsmethode bereitzustellen, die Sie normalerweise verwenden.
+> Wenn Sie nicht möchten, dass Ihre Benutzer Office selbst installieren, lesen Sie die Informationen unter Verwalten von [Softwaredownloadeinstellungen in Office 365.](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365) Sie können das [Office-Bereitstellungstool](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool) verwenden, um die Office-Software in Ihr lokales Netzwerk herunterzuladen und Office dann mithilfe der Softwarebereitstellungsmethode, die Sie normalerweise verwenden, bereitstellen.
