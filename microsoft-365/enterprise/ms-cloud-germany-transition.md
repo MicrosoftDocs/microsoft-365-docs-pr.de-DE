@@ -21,7 +21,7 @@ ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verstehen.'
 ms.openlocfilehash: d807637e9d5469131d3124d1ef8b6b1f874e81a1
 ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/08/2021
 ms.locfileid: "50145415"
@@ -57,7 +57,7 @@ Die folgenden Dienste werden im Rahmen der Migration durch Microsoft migriert:
 
 \*\*Während der Migration von Microsoft Cloud Deutschland in die deutschen Rechenzentrumsregionen werden bestehende Skype for Business Online-Kunden auf Microsoft Teams umgestellt. Weitere Informationen finden Sie unter [Erste Schritte mit dem Microsoft Teams-Upgrade](https://aka.ms/SkypeToTeams-Home).
 
-\*\*\*Die Voraussetzungen und Auswirkungen der Migration für diese Dienste sind im Artikel [Dynamics 365 Customer Engagement](https://aka.ms/d365ceoptin) beschrieben.
+\*\*\*Die Voraussetzungen und Auswirkungen der Migration für diese Dienste sind im Artikel [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) beschrieben.
 
 Office 365 Video wird am 1. März 2021 eingestellt. Wenn Sie Ihren Office 365-Mandanten in die Regionen der neuen deutschen Rechenzentren migrieren, wird Office 365 Video nach Abschluss der SharePoint Online-Migration nicht unterstützt. Weitere Informationen finden Sie unter [Microsoft Cloud Deutschland-Zeitachse](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline).
 
@@ -205,7 +205,7 @@ Wenn Sie Azure mit Office 365, Dynamics 365 oder Power BI verwenden, müssen Sie
 
 **Dynamics 365 und Power BI**
 
-Melden Sie sich noch heute für die von Microsoft gesteuerte Migration für [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) und [Power BI](https://aka.ms/PBIOptIn) an. Sobald wir bereit sind, Ihre Migration zu starten, werden wir Sie darüber über das Nachrichtencenter im Microsoft 365 Admin Center informieren.
+Melden Sie sich noch heute für die von Microsoft gesteuerte Migration für [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) und [Power BI](https://aka.ms/pbioptin) an. Sobald wir bereit sind, Ihre Migration zu starten, werden wir Sie darüber über das Nachrichtencenter im Microsoft 365 Admin Center informieren.
 
 ### <a name="will-the-price-change-for-the-office-365-services-that-i-use"></a>Werden sich die Preise für die von mir verwendeten Office 365-Dienste ändern?
 
@@ -283,50 +283,50 @@ Wenden Sie sich bei Fragen an uns oder an Ihren Partner:
 - Fragen zu Office 365 können Sie über den Link &quot;Benötigen Sie Hilfe?&quot; im [Microsoft 365 Admin Center](https://portal.office.de/) übermitteln.
 - Dynamics 365 Customer Engagement- und Power BI-Kunden, die auch über Office 365 verfügen, können Fragen über den Link &quot;Benötigen Sie Hilfe?&quot; im [Microsoft 365 Admin Center](https://portal.office.de/) übermitteln. Die Dynamics 365 Customer Engagement-Supportoptionen befinden sich [hier](https://docs.microsoft.com/dynamics365/get-started/support/). Die Power BI-Supportoptionen befinden sich [hier](https://powerbi.microsoft.com/support/).
 
-### <a name="my-customer-already-has-a-m365-tenant-in-the-global-microsoft-cloud-in-addition-to-a-microsoft-cloud-deutschland-tenant-can-these-two-tenants-be-merged-into-one-as-part-of-the-migration"></a>Mein Kunde hat bereits einen M365-Mandanten in der globalen Microsoft Cloud sowie einen Microsoft Cloud Deutschland-Mandanten. Können diese beiden Mandanten im Rahmen der Migration in einem zusammengeführt werden?
+### <a name="my-customer-already-has-a-m365-tenant-in-the-global-microsoft-cloud-in-addition-to-a-microsoft-cloud-deutschland-tenant-can-these-two-tenants-be-merged-into-one-as-part-of-the-migration"></a>Mein Kunde verfügt bereits über einen M365-Mandanten in der globalen Microsoft-Cloud sowie einen Mandanten von Microsoft Cloud Deutschland. Können diese beiden Mandanten als Teil der Migration zu einem Mandanten zusammengeführt werden?
 
-Nein, es gibt keine Funktion für die Mandantenzusammenführung. Mandanten bleiben getrennt und eindeutig, da jeder Mandant über einen eigenen Namespace und eine eindeutige ID verfügt. Microsoft migriert bei Bedarf einen Microsoft Cloud Deutschland-Mandanten in die globale Cloud, oder der Kunde kann ihn abbrechen und aufkündigen.
+Nein, es gibt keine Funktion zur Mandantenzusammenführung. Mandanten bleiben getrennt und eindeutig, da jeder Mandant über einen eigenen Namespace und eine eindeutige ID verfügt. Microsoft migriert bei Wunsch einen Microsoft Cloud Deutschland-Mandanten in die globale Cloud, oder der Künde kann ihn kündigen und aufgeben.
 
 
 ### <a name="what-actions-are-required-to-be-done-by-most-end-users-as-part-of-the-migration"></a>Welche Aktionen müssen von den meisten Endbenutzern im Rahmen der Migration durchgeführt werden?
-Die Migration hat minimale Auswirkungen auf Endbenutzer/Kunden.
-- Stellen Sie sicher, dass auf den Office-Anwendungen die neuesten verfügbaren Versionen ausgeführt werden. 
-- Kunden, die Skype for Business verwenden, werden im Rahmen der Migration zu Teams umstiegen und müssen [möglicherweise Teams](https://docs.microsoft.com/deployoffice/teams-install) herunterladen und auf Geräten installieren.
-- Endbenutzer müssen sich möglicherweise bei den Office-Anwendungen abmelden und sich nach Abschluss der Migration erneut anmelden. 
-- Kunden, die den #A0 ausführen, müssen sich von ihrer Arbeitsstation abmelden und sich erneut anmelden, damit sich der #A1 beim globalen Azure Active #A2 anmelden kann.
-- Beachten Sie neue globale URLs, sobald die Migration abgeschlossen ist, insbesondere Outlook Web Access (Beispiel: Verwenden outlook.office365.com). SharePoint Online clients will continue to successfully connect to the MCD namespace using the existing URL (example: contoso.sharepoint.de).
+Die Migration wirkt sich minimal auf Endbenutzer/Kunden aus.
+- Stellen Sie sicher, dass für Office-Anwendungen die neuesten verfügbaren Versionen ausgeführt werden. 
+- Kunden, die Skype for Business verwenden, werden im Rahmen der Migration zu Teams übergehen und müssen auf Geräten möglicherweise [Teams herunterladen und installieren](https://docs.microsoft.com/deployoffice/teams-install).
+- Endbenutzer müssen sich möglicherweise bei den Office-Anwendungen abmelden und sich wieder anmelden, sobald die Migration abgeschlossen ist. 
+- Kunden, die den OneDrive-Synchronisierungsclient ausführen, müssen sich von ihrer Arbeitsstation abmelden und sich erneut anmelden, damit sich der OneDrive-Synchronisierungsclient beim globalen Azure Active Directory-Dienst anmelden kann.
+- Beachten Sie neue globale URLs nach Abschluss der Migration, insbesondere Outlook Web Access (Beispiel: Verwenden Sie outlook.office365.com). SharePoint Online-Clients können weiterhin erfolgreich eine Verbindung mit dem MCD-Namespace über die vorhandene URL herstellen (Beispiel: contoso.sharepoint.de).
 
 
 ### <a name="which-customers-are-affected-by-the-azure-active-directory-migration"></a>Welche Kunden sind von der Azure Active Directory-Migration betroffen? 
 
-Alle Kunden von Office 365 sind von Azure Active Directory abhängig, um wichtige Dienstkomponenten zu authentifizieren und zu speichern, die für den Betrieb von von Microsoft gehosteten Diensten benötigt werden. 
+Alle Kunden von Office 365 sind auf Azure Active Directory angewiesen, um sich zu authentifizieren und wichtige Dienstkomponenten zu speichern, die für den Betrieb von von Microsoft gehosteten Diensten erforderlich sind. 
 
 
 ### <a name="what-are-the-impacts-of-the-azure-active-directory-migration"></a>Welche Auswirkungen hat die Azure Active Directory-Migration?
 
-Die anfängliche Migration von Azure Active Directory in der frühen Phase hat keine Auswirkungen auf die Kundenerfahrung. Nach der letzten Migrationsphase sind alle Dienste für den Kunden mandanten vollständig im globalen Dienst. Nach dieser letzten Phase akzeptiert der Azure Active Directory-Dienst in Microsoft Cloud Deutschland möglicherweise keine Autorisierungsanforderungen mehr oder stellt Zugriffstoken für die Office-Dienste bereit.
+Die erste Migration von Azure Active Directory in der frühen Phase hat keine Auswirkungen auf die Benutzererfahrung. Nach der letzten Migrationsphase sind alle Dienste für den Kunden-Mandanten vollständig im globalen Dienst. Nach dieser letzten Phase kann der Azure Active Directory-Dienst in Microsoft Cloud Deutschland keine Autorisierungsanforderungen mehr annehmen oder Zugriffstoken für Office-Dienste bereitstellen.
 
 
-### <a name="what-does-it-mean-to-ensure-network-connectivity-to-office-365-services-urls-and-ip-addresses"></a>Was bedeutet es, die Netzwerkkonnektivität mit URLs und IP-Adressen von [Office 365-Diensten sicherzustellen?](https://aka.ms/o365urls)
+### <a name="what-does-it-mean-to-ensure-network-connectivity-to-office-365-services-urls-and-ip-addresses"></a>Was bedeutet es, die Netzwerkkonnektivität mit [Office 365-Dienst-URLs und -IP-Adressen](https://aka.ms/o365urls) sicherzustellen?.
 
-In diesem Artikel werden die erforderlichen URLs und IP-Adressen beschrieben, die für die ordnungsgemäße Funktion des globalen Diensts erforderlich sind, um eine gute Benutzererfahrung zu gewährleisten. In relativ seltenen Fällen versuchen einige Kunden, die Netzwerkperimetersicherheit so zu konfigurieren, dass datenverkehrsflüsse minimiert werden und der Zugriff auf Dienste auf diese nur im Rahmen der Microsoft Cloud Deutschland-Dienst-IP-Bereiche eingeschränkt ist.
+In diesem Artikel werden die erforderlichen URLs und IP-Adressen beschrieben, die für die ordnungsgemäße Funktion des globalen Diensts erforderlich sind, um eine gute Benutzererfahrung sicherzustellen. In relativ seltenen Fällen versuchen einige Kunden, die Umkreissicherheit des Netzwerks so zu konfigurieren, dass die Datenverkehrsströme minimiert werden, und sie haben den Zugriff auf Dienste eingeschränkt, die nur als Teil der IP-Bereiche des Microsoft Cloud Deutschland-Diensts bereitgestellt werden.
 
 
-### <a name="how-do-i-manage-the-dns-changes-for-exchange-online-so-mail-will-continue-to-flow"></a>Wie verwalte ich die DNS-Änderungen für Exchange Online, damit E-Mails weiterhin fließen?
+### <a name="how-do-i-manage-the-dns-changes-for-exchange-online-so-mail-will-continue-to-flow"></a>Wie verwalte ich die DNS-Änderungen für Exchange Online, damit E-Mails weiterhin gesendet werden?
 
-Von Microsoft verwaltete IP-Bereiche und -DNS-Zonen werden während und als Teil der Migration zum globalen Dienst umgewechselt. 
+Von Microsoft verwaltete IP-Bereiche und DNS-Zonen werden während und als Teil der Migration zum globalen Dienst umgestellt. 
 
-Vom Kunden verwaltete DNS-Zonen wie benutzerdefinierte Domänen-MX-Einträge sind jedoch aufgabe des Kunden, um diese Migration zu vereinfachen, verweist der vom Kunden verwaltete MX-Eintrag auf einen Office 365-Dienstendpunkt in der office.de-Zone, und Microsoft verwaltet die Migration dieses Dienstendpunkts automatisch.
+Vom Kunden verwaltete DNS-Zonen wie MX-Einträge für benutzerdefinierte Domänen liegen in der Verantwortung des Kunden. Um diese Migration jedoch zu vereinfachen, verweist der vom Kunden verwaltete MX-Eintrag auf einen Office 365-Dienstendpunkt in der office.de-Zone, und die Migration dieses Dienstendpunkts wird von Microsoft automatisch verwaltet.
 
 
 ### <a name="how-do-i-manage-the-dns-changes-for-skype-for-business"></a>Wie verwalte ich die DNS-Änderungen für Skype for Business? 
  
-Alle Skype for Business-Kunden in werden auf Microsoft Teams umgeschaltet. Der Übergang von Skype-DNS-Zonen von Kunden ist bei der Migration zu Teams nicht erforderlich. Kunden können sich nach der Migration sofort mit allen Funktionen bei Teams anmelden.
+Alle Skype für Business-Kunden werden auf Microsoft Teams umgestellt. Der Übergang von Skype-DNS-Zonen für Kunden ist bei der Migration zu Teams nicht erforderlich. Kunden können sich nach der Migration sofort mit allen Funktionen bei Teams anmelden.
  
 
 ### <a name="will-outlook-for-ios-and-android-work-after-the-migration"></a>Funktioniert Outlook für iOS und Android nach der Migration? 
 
-Ja. Die Empfehlung von Microsoft ist, dass alle Kunden die neuesten verfügbaren Versionen von Office-Clients, einschließlich Outlook für iOS- und Android-Clients, ausführen. Nach Abschluss der Migration zum globalen Office 365-Dienst müssen sich alle Office-Clients abmelden und erneut anmelden, um ein neues Azure Active Directory-Zugriffstoken vom globalen Dienst abzurufen. 
+Ja. Microsoft empfiehlt allen Kunden, dass sie die neuesten verfügbaren Versionen von Office-Clients ausführen, einschließlich Outlook für iOS- und Android-Clients. Nach Abschluss der Migration zum globalen Office 365-Dienst müssen sich alle Office-Clients abmelden und wieder anmelden, um ein neues Azure Active Directory-Zugriffstoken vom globalen Dienst abzurufen. 
 
 
 
@@ -350,6 +350,6 @@ Der Weg durch die Umstellung:
 
 Cloud-Apps:
 
-- [Informationen zum Dynamics 365-Migrationsprogramm](https://aka.ms/d365ceoptin)
+- [Informationen zum Dynamics 365-Migrationsprogramm](https://aka.ms/D365ceOptIn)
 - [Informationen zum Power BI-Migrationsprogramm](https://aka.ms/pbioptin)
 - [Erste Schritte mit dem Upgrade von Microsoft Teams](https://aka.ms/SkypeToTeams-Home)

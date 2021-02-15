@@ -104,7 +104,7 @@ Stellen Sie zunächst eine Verbindung mit Exchange Management PowerShell mit den
 
     **Genehmigungsgruppe:** Genehmiger für privilegierten Zugriff
 
-6. Wählen **Sie "Erstellen"** und dann **"Schließen" aus.** Es kann einige Minuten dauern, bis die Richtlinie vollständig konfiguriert und aktiviert ist. Lassen Sie unbedingt zeit, bis die Richtlinie vollständig aktiviert ist, bevor Sie die Genehmigungsanforderung im nächsten Schritt testen.
+6. Wählen Sie **Erstellen** und dann **Schließen**. Es kann einige Minuten dauern, bis die Richtlinie vollständig konfiguriert und aktiviert ist. Lassen Sie unbedingt zeit, bis die Richtlinie vollständig aktiviert ist, bevor Sie die Genehmigungsanforderung im nächsten Schritt testen.
 
 ### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>Testgenehmigungsanforderung für die New-JournalRule, die in einer Richtlinie für privilegierten Zugriff definiert ist
 
