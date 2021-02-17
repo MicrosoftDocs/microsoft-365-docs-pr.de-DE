@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mithilfe einer Aufbewahrungsrichtlinie können Sie die Inhalte, die Benutzer mit E-Mails, Dokumenten und Unterhaltungen generieren, sehr effizient verwalten. Bewahren Sie auf, was Sie wollen, und werden Sie los, was Sie nicht mehr wollen.
-ms.openlocfilehash: d79a505731eea8b48e19507ff6ae9558cb9a78b2
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 1806000b47a19c07da11a6a732eeacf5d60a7da0
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840868"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261324"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
@@ -257,20 +257,7 @@ Wenn eine Richtlinie beispielsweise alle Exchange-E-Mails und alle SharePoint-We
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Richtlinien, die bestimmte Elemente einschließen oder ausschließen
 
-Nur wenn Sie die optionale Konfiguration verwenden, um Ihre Aufbewahrungseinstellungen auf bestimmte Benutzer, bestimmte Microsoft 365-Gruppen oder bestimmte Websites auszudehnen, gibt es einige Einschränkungen pro Richtlinie, die zu beachten sind: 
-
-- Maximale Anzahl für eine Aufbewahrungsrichtlinie:
-  - 1.000 Postfächer (Benutzerpostfächer oder Gruppenpostfächer)
-  - 1.000 Microsoft 365-Gruppen
-  - 1.000 Benutzer für private Teams-Chats
-  - 100 Websites (OneDrive oder SharePoint)
-
-Diese Grenzwerte gelten pro Richtlinie. Wenn Sie also spezifische Ein- oder Ausschlüsse verwenden müssen, die dazu führen, dass diese Werte überschritten werden, können Sie zusätzliche Aufbewahrungsrichtlinien mit denselben Einstellungen erstellen. [Beispielszenarios und Lösungen](#examples-of-using-inclusions-and-exclusions), die aus diesem Grund mehrere Aufbewahrungsrichtlinien verwenden, finden Sie im nächsten Abschnitt. Mehrere Aufbewahrungsrichtlinien führen zu erhöhtem Verwaltungsaufwand. Prüfen Sie also immer sehr genau, ob Sie Ein- und Ausschlüsse benötigen. Denken Sie daran, dass die Standardkonfiguration, die für den gesamten Standort gilt, nicht diesen Einschränkungen unterliegt. Und diese Konfigurationswahl könnte eine bessere Lösung sein, als mehrere Richtlinien zu erstellen und zu verwalten.
-
-> [!TIP]
-> Wenn Sie mehrere Aufbewahrungsrichtlinien für dieses Szenario erstellen und verwalten müssen, erwägen Sie die Verwendung der [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) für eine effizientere Konfiguration.
-
-Die maximal unterstützte Anzahl von Richtlinien für einen Mandanten ist auf 10.000 begrenzt. Für Exchange Online beträgt die maximale Anzahl jedoch 1.800. Die maximale Anzahl umfasst Aufbewahrungsrichtlinien, Richtlinien für Aufbewahrungsbezeichnungen und automatisch anzuwendende Aufbewahrungsrichtlinien.
+Beachten Sie Folgendes: Wenn Sie die optionale Konfiguration verwenden, um Ihre Aufbewahrungseinstellungen auf bestimmte Benutzer, bestimmte Microsoft 365-Gruppen oder bestimmte Websites auszudehnen, gibt es einige Einschränkungen pro Richtlinie, die zu beachten sind. Weitere Informationen finden Sie unter [Einschränkungen für Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien](retention-limits.md). 
 
 Wenn Sie die optionale Konfiguration für den Bereich der Aufbewahrungseinstellungen verwenden möchten, stellen Sie sicher, dass der **Status** dieses Speicherorts **Ein** ist, und verwenden Sie dann die Links, um bestimmte Benutzer, Microsoft 365-Gruppen oder-Websites ein- oder auszuschließen.
 
@@ -280,28 +267,6 @@ Wenn Sie die optionale Konfiguration für den Bereich der Aufbewahrungseinstellu
 > Wenn Sie beispielsweise eine einzelne SharePoint-Website für den Einschluss in Ihre Aufbewahrungsrichtlinie angeben, die für das Löschen von Daten konfiguriert ist, und dann die einzelne Website entfernen, unterliegen standardmäßig alle SharePoint-Websites der Aufbewahrungsrichtlinie, die Daten endgültig löscht. Gleiches gilt für Einschlüsse für Exchange-Empfänger, OneDrive-Konten, Teams Chat-Benutzer usw.
 >
 > In diesem Szenario können Sie den Speicherort deaktivieren, wenn Sie nicht möchten, dass die Einstellung **Alle** für den Speicherort der Aufbewahrungsrichtlinie unterliegt. Alternativ können Sie Ausschlüsse angeben, die von der Richtlinie ausgenommen werden sollen.
-
-#### <a name="examples-of-using-inclusions-and-exclusions"></a>Beispiele für die Verwendung von Ein- und Ausschlüssen
-
-Die folgenden Beispiele bieten ein paar Entwurfslösungen für Fälle, in denen Sie nicht einfach den Ort für eine Aufbewahrungsrichtlinie angeben können, sondern die im vorherigen Abschnitt dokumentierten Einschränkungen berücksichtigen müssen.
-
-Exchange-Beispiel:
-
-- **Voraussetzung**: In einer Organisation, die mehr als 40.000 Benutzerpostfächer hat, müssen die E-Mails der meisten Benutzer für 7 Jahre aufbewahrt werden, aber für eine Untermenge identifizierter Benutzer (425) müssen die E-Mails nur 5 Jahre aufbewahrt werden.
-
-- **Lösung**: Erstellen Sie eine Aufbewahrungsrichtlinie für Exchange-E-Mail mit einem Aufbewahrungszeitraum von 7 Jahren, und schließen Sie die Untermenge der Benutzer aus. Erstellen Sie dann eine zweite Aufbewahrungsrichtlinie für Exchange-E-Mail mit einem Aufbewahrungszeitraum von 5 Jahren, und schließen Sie die Untermenge der Benutzer ein. 
-    
-    In beiden Fällen liegt die Anzahl der ein- und ausgeschlossenen Benutzer unter der maximalen Anzahl angegebener Postfächer für eine einzelne Richtlinie, und die Untermenge der Benutzer muss explizit aus der ersten Richtlinie ausgeschlossen werden, weil sie einen längeren [Aufbewahrungszeitraum](retention.md#the-principles-of-retention-or-what-takes-precedence) als die zweite Richtlinie hat. Wäre für die Untermenge von Benutzern eine Aufbewahrungsrichtlinie mit längerem Aufbewahrungszeitraum erforderlich, müssten Sie sie nicht aus der ersten Richtlinie ausschließen.
-     
-    Bei dieser Lösung wird, wenn ein neuer Benutzer der Organisation beitritt, dessen Postfach automatisch in die erste Richtlinie für 7 Jahre aufgenommen, was keine Auswirkungen auf die maximale Anzahl unterstützter Benutzer hat. Neue Benutzer, für die ein Aufbewahrungszeitraum von 5 Jahren erforderlich ist, erhöhen jedoch die Ein- und Ausschlussanzahl, deren Grenzwert bei 1.000 erreicht würde.
-
-SharePoint-Beispiel:
-
-- **Voraussetzung**: Eine Organisation hat mehrere Tausend SharePoint-Sites, aber nur 2.000 Sites erfordern einen Aufbewahrungszeitraum von 10 Jahren, und 8.000 Sites erfordern einen Aufbewahrungszeitraum von 4 Jahren.
-
-- **Lösung**: Erstellen Sie 20 Aufbewahrungsrichtlinien für SharePoint mit einem Aufbewahrungszeitraum von 10 Jahren, die 100 spezifische Sites enthalten, und erstellen Sie 80 Aufbewahrungsrichtlinien für SharePoint mit einem Aufbewahrungszeitraum von 4 Jahren, die 100 spezifische Sites enthalten.
-    
-    Da Sie nicht alle SharePoint-Sites aufbewahren müssen, müssen Sie Aufbewahrungsrichtlinien erstellen, die die spezifischen Sites angeben. Da eine Aufbewahrungsrichtlinie nicht mehr als 100 angegebene Sites unterstützt, müssen Sie mehrere Richtlinien für die zwei Aufbewahrungszeiträume erstellen. Diese Aufbewahrungszeiträume belegen die maximale Anzahl eingeschlossener Sites, weshalb die nächste neue Site, die aufbewahrt werden muss, eine neue Aufbewahrungsrichtlinie erfordern würde, unabhängig vom Aufbewahrungszeitraum.
 
 ## <a name="updating-retention-policies"></a>Aktualisieren von Aufbewahrungsrichtlinien
 

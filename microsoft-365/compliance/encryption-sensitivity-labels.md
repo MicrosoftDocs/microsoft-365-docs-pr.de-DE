@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Konfigurieren Sie Vertraulichkeitsbezeichnungen für die Verschlüsselung, die Ihre Daten durch Einschränken von Zugriff und Nutzung schützt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83ed515d5ac6ea853c3e6a822fae0a03f73fc37c
-ms.sourcegitcommit: 9e4b3df05eff94fe1be4ef8618a7ce6f2fca3658
+ms.openlocfilehash: 602b4b3abd2b07386ad130e4b2cd21bb593eee7e
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49904030"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261572"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung
 
@@ -379,6 +379,8 @@ Durch die Verschlüsselung Ihrer sensibelsten Dokumente und E-Mails können Sie 
   - funktionieren DLP-Richtlinien für die Metadaten dieser verschlüsselten Dateien (einschließlich Aufbewahrungsbezeichnungen), aber nicht für die Inhalte dieser Dateien (z. B. Kreditkartennummern innerhalb von Dateien).
   - können Benutzer verschlüsselte Dateien mit Office im Web nicht öffnen. Wenn Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive aktiviert sind, können Benutzer Office im Web verwenden, um verschlüsselte Dateien zu öffnen, mit einigen [Einschränkungen](sensitivity-labels-sharepoint-onedrive-files.md#limitations), darunter die Verschlüsselung, die mit einem firmeneigenen Schlüssel (bekannt als „Hold your own key“ oder HYOK) angewendet wurde, [Verschlüsselung mit Doppelschlüssel](#double-key-encryption) und die Verschlüsselung, die unabhängig von einer Vertraulichkeitsbezeichnung angewendet wurde.
 
+- Wenn Sie verschlüsselte Dokumente für Personen außerhalb Ihrer Organisation freigeben, müssen Sie möglicherweise Gastkonten erstellen und Richtlinien für den bedingten Zugriff ändern. Weitere Informationen finden Sie unter [Freigabe verschlüsselter Dokumente für externe Benutzer](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content).
+
 - Damit mehrere Benutzer gleichzeitig eine verschlüsselte Datei bearbeiten können, müssen alle Office für Web verwenden. Wenn dies nicht der Fall ist und die Datei bereits geöffnet ist:
 
   - In Office-Apps (Windows, Mac, Android und IOS) wird Benutzern eine **„Datei wird verwendet“**-Nachricht mit dem Namen der Person angezeigt, die die Datei ausgecheckt hat. Sie können dann eine schreibgeschützte Kopie anzeigen oder eine Kopie der Datei speichern und bearbeiten sowie benachrichtigt werden, wenn die Datei verfügbar ist.
@@ -396,6 +398,7 @@ Durch die Verschlüsselung Ihrer sensibelsten Dokumente und E-Mails können Sie 
   - Ändern des Namens oder des Speicherorts der Dateien. Alternativ können Benutzer in SharePoint [eine Datei, einen Ordner oder einen Link in einer Dokumentbibliothek umbenennen](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185).
 
 Für eine optimale Zusammenarbeit bei Dateien, die mit einer Vertraulichkeitsbezeichnung verschlüsselt sind, empfehlen wir die Verwendung von [Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) sowie Office im Web.
+
 
 ## <a name="important-prerequisites"></a>Wichtige Voraussetzungen
 

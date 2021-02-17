@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: 2541519ad9082383c5381452722d023f23760798
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: b3b0451f2f1b0950f2b2ee723025a796f1814038
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242711"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261502"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informationen zur Aufbewahrung für Microsoft Teams
 
@@ -55,7 +55,6 @@ Diese Postfächer sind nach ihrem Attribut "RecipientTypeDetails" aufgelistet:
 
 - **UserMailbox**: In diesen Postfächern werden Nachrichten für Teams-Benutzer gespeichert, die über ein Exchange Online-Postfach verfügen.
 - **MailUser**: In diesen Postfächern werden Nachrichten für Teams-Benutzer gespeichert, die über ein Postfach für einen lokalen Exchange-Server und nicht über Exchange Online verfügen.
-- **User**: In diesen Postfächern werden Nachrichten für Teams-Benutzer gespeichert, die nicht über ein Postfach für Exchange Online oder einen lokalen Exchange-Server verfügen.
 - **GroupMailbox**: In diesen Postfächern werden Nachrichten für Teams-Kanäle gespeichert.
 
 Andere Postfachtypen, z. B. RoomMailbox, die für Teams-Konferenzräume verwendet werden, werden für Teams-Aufbewahrungsrichtlinien nicht unterstützt.
