@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in SharePoint- und Microsoft Teams-Websites sowie in Microsoft 365-Gruppen.
-ms.openlocfilehash: 9276288bc05abebe864a4465f69284372fa0baab
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: 7eea07b91647af2b0b7121f9d9c1f018bc9fc630
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868023"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261458"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden
 
@@ -271,6 +271,7 @@ Die folgenden Apps und Dienste unterstützen Vertraulichkeitsbezeichnungen, die 
 
   - SharePoint Admin Center
   - Azure Active Directory-Portal
+  - Microsoft 365 Admin Center
   - Microsoft 365 Compliance Center, Microsoft 365 Security Center, Security & Compliance Center
 
 - Benutzer-Apps und -Dienste:
@@ -280,13 +281,12 @@ Die folgenden Apps und Dienste unterstützen Vertraulichkeitsbezeichnungen, die 
   - Outlook im Web und für Windows, macOS, iOS und Android
   - Formulare
   - Stream
-  - Microsoft Planner (Einführungsphase) 
+  - Planner 
 
 Die folgenden Apps und Dienste unterstützen derzeit keine Vertraulichkeitsbezeichnungen, die für Websites und Gruppeneinstellungen konfiguriert sind:
 
 - Admin Center:
 
-  - Microsoft 365 Admin Center
   - Teams Admin Center
   - Exchange Admin-Center
 
