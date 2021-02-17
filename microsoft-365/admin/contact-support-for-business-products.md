@@ -22,19 +22,19 @@ search.appverid:
 description: Technischen und Abrechnungssupport erhalten Sie über die für Ihr Land oder Ihre Region aufgeführten Telefonnummern oder indem Sie online eine Serviceanfrage übermitteln.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 06f78d50901f279bf27f55f1b8f7ad867682d784
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 7679539e64588827b6dcc20f6f98bc67e613aae6
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925578"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261335"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Möglichkeiten, Kontakt mit dem Support für Geschäftsprodukte aufzunehmen – Administratorhilfe
 
 ::: moniker range="o365-worldwide"
 
 > [!IMPORTANT]
-> Sie müssen ein Administrator für ein Geschäftsabonnement sein, um diese Supportmethoden nutzen zu können. Wenn Sie kein Administrator für ein Geschäftskonto sind, benutzen Sie bitte diese [Support-Seite](https://support.microsoft.com/help/contactus).
+> Sie müssen ein Administrator für ein Geschäftsabonnement sein, um diese Supportmethoden nutzen zu können. Wenn Sie kein Administrator für ein Geschäftskonto sind, benutzen Sie bitte diese [Support-Seite](https://support.microsoft.com/contactus).
 
 Beginnen Sie mit [Überprüfen Sie den aktuellen Status der Dienste](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health). Detaillierte Informationen zu aktuellen und vergangenen Themen können Sie auf dem <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Dashbord "Dienststatus"</a> einsehen. Wenn Sie ein Problem haben, das nicht aufgelistet ist, können Sie auf eine der folgenden Weisen Support erhalten:
 

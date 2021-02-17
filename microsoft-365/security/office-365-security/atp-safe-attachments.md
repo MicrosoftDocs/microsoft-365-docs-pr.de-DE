@@ -20,12 +20,12 @@ ms.collection:
 description: Administratoren können sich über das Feature "Sichere Anlagen" in Microsoft Defender für Office 365 informieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5e85695a6d0fba221f3c614ec33b3552d37153e2
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 5d2d348856dbd51cabe2b320d315406076921fee
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175847"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261537"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Sichere Anlagen in Microsoft Defender für Office 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "50175847"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Sichere Anlagen in [Microsoft Defender für Office 365](office-365-atp.md) bieten eine zusätzliche Schutzebene für E-Mail-Anlagen, die bereits vom Schutz vor Schadsoftware [in Exchange Online Protection (EOP)](anti-malware-protection.md)überprüft wurden. Insbesondere verwenden sichere Anlagen eine virtuelle Umgebung, um Anlagen in E-Mail-Nachrichten zu überprüfen, bevor sie an Empfänger übermittelt werden (ein Prozess, der als _Detonation bekannt ist)._
+Sichere Anlagen in [Microsoft Defender für Office 365](office-365-atp.md) bieten eine zusätzliche Schutzebene für E-Mail-Anlagen, die bereits vom Schutz vor Schadsoftware [in Exchange Online Protection (EOP)](anti-malware-protection.md)überprüft wurden. Insbesondere verwenden sichere Anlagen eine virtuelle Umgebung, um Anlagen in E-Mail-Nachrichten zu überprüfen, bevor sie an Empfänger zugestellt werden (ein Prozess, der als _Detonation bekannt ist)._
 
 Der Schutz sicherer Anlagen für E-Mail-Nachrichten wird durch Richtlinien für sichere Anlagen gesteuert. Es gibt keine Standardrichtlinie für sichere Anlagen. Um den Schutz sicherer Anlagen zu erhalten, müssen Sie eine oder mehrere Richtlinien für sichere **Anlagen erstellen.** Anweisungen finden Sie unter ["Einrichten von Richtlinien für sichere Anlagen in Defender für Office 365".](set-up-atp-safe-attachments-policies.md)
 
@@ -47,14 +47,14 @@ In der folgenden Tabelle werden Szenarien für sichere Anlagen in Microsoft 365-
 |---|---|
 |Pats Microsoft 365 E5-Organisation hat keine Richtlinien für sichere Anlagen konfiguriert.|Pat ist nicht durch sichere Anlagen geschützt. <p> Ein Administrator muss mindestens eine Richtlinie für sichere Anlagen erstellen, damit der Schutz sicherer Anlagen aktiv ist. Darüber hinaus müssen die Bedingungen der Richtlinie Pat enthalten, wenn Pat durch sichere Anlagen geschützt werden soll.|
 |Lees Organisation verfügt über eine Richtlinie für sichere Anlagen, die nur für Finanzmitarbeiter gilt. Lee ist Mitglied der Vertriebsabteilung.|Lee ist nicht durch sichere Anlagen geschützt. <p> Finanzmitarbeiter sind durch sichere Anlagen geschützt, Vertriebsmitarbeiter (und andere Mitarbeiter) dagegen nicht.|
-|Ein Administrator in seiner Organisation hat gestrigen eine Richtlinie für sichere Anlagen erstellt, die für alle Mitarbeiter gilt. Heute hat er eine E-Mail-Nachricht empfangen, die eine Anlage enthält.|Dieser wird durch sichere Anlagen geschützt. <p> In der Regel dauert es ungefähr 30 Minuten, bis eine neue Richtlinie wirksam wird.|
-|Chris' Organisation verfügt über lange Zeit richtlinien für sichere Anlagen für alle In der Organisation. Chris empfängt eine E-Mail mit einer Anlage und gibt die Nachricht dann an externe Empfänger weiter.|Chis sind durch sichere Anlagen geschützt. <p> Wenn die externen Empfänger auch über Richtlinien für sichere Anlagen in ihrer Organisation verfügen, unterliegen die weitergeleiteten Nachrichten diesen Richtlinien.|
+|Gestrige Zeit hat ein Administrator in der Organisation von Dropbox eine Richtlinie für sichere Anlagen erstellt, die für alle Mitarbeiter gilt. Heute hat er eine E-Mail-Nachricht empfangen, die eine Anlage enthält.|Dieser wird durch sichere Anlagen geschützt. <p> In der Regel dauert es ungefähr 30 Minuten, bis eine neue Richtlinie wirksam wird.|
+|Chris' Organisation verfügt über langfristige Richtlinien für sichere Anlagen für alle In der Organisation. Chris empfängt eine E-Mail mit einer Anlage und gibt die Nachricht dann an externe Empfänger weiter.|Chis sind durch sichere Anlagen geschützt. <p> Wenn die externen Empfänger auch über Richtlinien für sichere Anlagen in ihrer Organisation verfügen, unterliegen die weitergeleiteten Nachrichten diesen Richtlinien.|
 |
 
 Die Überprüfung auf sichere Anlagen findet in derselben Region statt, in der sich Ihre Microsoft 365-Daten befinden. Weitere Informationen zur Geografie des Rechenzentrums finden Sie unter ["Wo befinden sich Ihre Daten?](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
-> Die folgenden Features befinden sich in den globalen Einstellungen der Richtlinien für sichere Anlagen im Security & Compliance Center, aber diese Einstellungen sind global aktiviert oder deaktiviert und erfordern keine Richtlinien für sichere Anlagen:
+> Die folgenden Features befinden sich in den globalen Einstellungen der Richtlinien für sichere Anlagen im Security & Compliance Center. Diese Einstellungen sind jedoch global aktiviert oder deaktiviert und erfordern keine Richtlinien für sichere Anlagen:
 >
 > - [Sichere Anlagen für SharePoint, OneDrive und Microsoft Teams.](atp-for-spo-odb-and-teams.md)
 >
@@ -100,9 +100,9 @@ In diesem Abschnitt werden die Einstellungen in den Richtlinien für sichere Anl
 > [!NOTE]
 > Die dynamische Zustellung funktioniert nur für Exchange Online-Postfächer.
 
-Die Dynamische Zustellungsaktion in Richtlinien für sichere Anlagen versucht, Verzögerungen bei der E-Mail-Zustellung zu beseitigen, die möglicherweise durch die Überprüfung sicherer Anlagen verursacht werden. Der Text der E-Mail-Nachricht wird mit einem Platzhalter für jede Anlage an den Empfänger zugestellt. Der Platzhalter bleibt erhalten, bis die Anlage als sicher eingestuft wird und die Anlage dann zum Öffnen oder Herunterladen verfügbar wird.
+Die Dynamische Zustellungsaktion in Richtlinien für sichere Anlagen versucht, Verzögerungen bei der E-Mail-Zustellung zu beseitigen, die durch die Überprüfung sicherer Anlagen verursacht werden können. Der Text der E-Mail-Nachricht wird mit einem Platzhalter für jede Anlage an den Empfänger zugestellt. Der Platzhalter bleibt erhalten, bis die Anlage als sicher eingestuft wird und die Anlage dann zum Öffnen oder Herunterladen verfügbar wird.
 
-Wenn festgestellt wird, dass eine Anlage schädlich ist, wird die Nachricht unter Quarantäne gestellt. Nur Administratoren (nicht Endbenutzer) können Nachrichten, die bei der Überprüfung sicherer Anlagen unter Quarantäne gestellt wurden, überprüfen, veröffentlichen oder löschen. Weitere Informationen finden Sie unter [Verwalten von isolierten Nachrichten und Dateien als Administrator.](manage-quarantined-messages-and-files.md)
+Wenn festgestellt wird, dass eine Anlage schädlich ist, wird die Nachricht unter Quarantäne gestellt. Nur Administratoren (keine Endbenutzer) können Nachrichten überprüfen, frei geben oder löschen, die von der Überprüfung sicherer Anlagen unter Quarantäne gestellt wurden. Weitere Informationen finden Sie unter [Verwalten von isolierten Nachrichten und Dateien als Administrator.](manage-quarantined-messages-and-files.md)
 
 Die meisten PDFs und Office-Dokumente können im abgesicherten Modus in der Vorschau angezeigt werden, während die Überprüfung auf sichere Anlagen ausgeführt wird. Wenn eine Anlage nicht mit der Vorschau für die dynamische Zustellung kompatibel ist, wird den Empfängern ein Platzhalter für die Anlage angezeigt, bis die Überprüfung auf sichere Anlagen abgeschlossen ist.
 

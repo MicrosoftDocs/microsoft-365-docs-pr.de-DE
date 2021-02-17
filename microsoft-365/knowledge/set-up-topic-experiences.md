@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Hier erfahren Sie, wie Sie Microsoft -Themen einrichten
-ms.openlocfilehash: 6bd0d3eca653ae44e46b410ef3ac55fe11629a6b
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: a90e75330527992f8519d625f94fe0d5ecb3de6b
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150500"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261469"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Einrichten von Microsoft -Themen
 
@@ -23,7 +23,9 @@ Sie können das Microsoft 365 Admin Center zum Einrichten und Konfigurieren von 
 
 Es ist wichtig, die beste Methode zum Einrichten und Konfigurieren von Themen in Ihrer Umgebung zu planen. Lesen Sie unbedingt ["Planen von Microsoft -Themen",](plan-topic-experiences.md) bevor Sie mit den Verfahren in diesem Artikel beginnen.
 
-You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
+Sie müssen [Themen abonniert](https://www.microsoft.com/microsoft-viva/topics) haben und ein globaler Administrator oder ein SharePoint-Administrator sein, um auf das Microsoft 365 Admin Center zugreifen und Themen einrichten zu können.
+
+Wenn Sie SharePoint so konfiguriert haben, dass [verwaltete](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)Geräte erforderlich sind, müssen Sie Die Themen von einem verwalteten Gerät einrichten.
 
 ## <a name="video-demonstration"></a>Videodemonstration
 
@@ -39,7 +41,7 @@ In diesem Video wird der Prozess zum Einrichten von Themen in Microsoft 365 geze
 
 So richten Sie Themen ein
 
-1. Wählen Sie [im Microsoft 365 Admin Center](https://admin.microsoft.com) **"Setup"** aus, und zeigen Sie dann den Abschnitt **"Dateien und Inhalt"** an.
+1. Wählen Sie [im Microsoft 365 Admin Center](https://admin.microsoft.com) **"Setup"** aus, und zeigen Sie dann den Abschnitt **"Dateien und Inhalte"** an.
 2. Klicken Sie **im Abschnitt "Dateien und Inhalte"** **auf "Personen mit Wissen verbinden".**
 
     ![Verbinden von Personen mit Wissen](../media/admin-org-knowledge-options.png) 
@@ -72,7 +74,7 @@ So richten Sie Themen ein
 
     Geben Sie in der Csv-Vorlage die folgenden Informationen zu den Themen ein, die Sie ausschließen möchten:
 
-    - **Name:** Geben Sie den Namen des Themas ein, das Sie ausschließen möchten. Sie können auf zwei Arten vorgehen:
+    - **Name**: Geben Sie den Namen des Themas ein, das Sie ausschließen möchten. Sie können auf zwei Arten vorgehen:
         - Genaue Übereinstimmung: Sie können den genauen Namen oder das Akronym (z. B. *Contoso* oder *ATL) verwenden.*
         - Teilweise Übereinstimmung: Sie können alle Themen ausschließen, in denen ein bestimmtes Wort enthalten ist.  Der Bogen *schließt* z. B. alle Themen aus, *in* denen der Wortbogen enthalten ist, z. B. Bogenkreis,  *Arkusbogen* oder *Schulungsbogen.* Beachten Sie, dass Themen, in denen der Text als Teil eines Worts enthalten ist, wie z. B. Architektur, nicht *ausgeschlossen werden.*
     - **Steht für (optional):** Wenn Sie ein Akronym ausschließen möchten, geben Sie die Wörter ein, für die das Akronym steht.
@@ -82,7 +84,7 @@ So richten Sie Themen ein
     
     Wählen Sie **Weiter** aus.
 
-6. Auf der **Seite "Wer kann Themen anzeigen** und wo kann er sie sehen" konfigurieren Sie die Sichtbarkeit des Themas. In der **Einstellung "Wer** kann Themen anzeigen" wählen Sie aus, wer Zugriff auf Themendetails hat, z. B. hervorgehobene Themen, Themenkarten, Themenantworten in der Suche und Themenseiten. Sie können dies auswählen:
+6. Auf der **Seite "Wer kann Themen anzeigen und** wo kann er sie sehen" konfigurieren Sie die Sichtbarkeit des Themas. In der **Einstellung "Wer** kann Themen anzeigen" wählen Sie aus, wer Zugriff auf Themendetails hat, z. B. hervorgehobene Themen, Themenkarten, Themenantworten in der Suche und Themenseiten. Sie können dies auswählen:
     - **Jeder in meiner Organisation**
     - **Nur ausgewählte Personen oder Sicherheitsgruppen**
     - **Niemand**
@@ -111,7 +113,7 @@ So richten Sie Themen ein
 
    Wählen Sie **Weiter** aus.
 
-   ![Erstellen des Knowledge Centers](../media/ksetup4.png)  
+   ![Erstellen eines Knowledge Centers](../media/ksetup4.png)  
 
 10. Auf der Seite **Überprüfen und beenden** können Sie sich die ausgewählte Einstellung ansehen und Änderungen vornehmen. Wenn Sie mit Ihrer Auswahl zufrieden sind, wählen Sie **Aktivieren** aus.
 
@@ -123,7 +125,7 @@ So richten Sie Themen ein
 
 ## <a name="assign-licenses"></a>Zuweisen von Lizenzen
 
-Nachdem Sie die Themenerfahrungen konfiguriert haben, müssen Sie lizenzen für die Benutzer zuweisen, die Themen verwenden werden. Nur Benutzer mit einer Lizenz können Informationen zu Themen wie Highlights, Themenkarten, Themenseiten und das Themencenter anzeigen. 
+Nachdem Sie die Themenerfahrung konfiguriert haben, müssen Sie den Benutzern, die Themen verwenden werden, Lizenzen zuweisen. Nur Benutzer mit einer Lizenz können Informationen zu Themen wie Highlights, Themenkarten, Themenseiten und das Themencenter anzeigen. 
 
 So weisen Sie Lizenzen zu
 
@@ -137,13 +139,13 @@ So weisen Sie Lizenzen zu
 
 ## <a name="manage-topic-experiences"></a>Verwalten von Themenerfahrungen
 
-Nachdem Sie Themen eingerichtet haben, können Sie die Einstellungen ändern, die Sie während des Setups im [Microsoft 365 Admin Center ausgewählt haben.](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) Weitere Informationen finden Sie in den folgenden Referenzen:
+Nachdem Sie Themen eingerichtet haben, können Sie die Einstellungen ändern, die Sie während des Setups im [Microsoft 365 Admin Center ausgewählt haben.](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) Sehen Sie sich die folgenden Verweise an:
 
 - [Verwalten der Themenermittlung in Microsoft -Themen](topic-experiences-discovery.md)
 - [Verwalten der Sichtbarkeit von Themen in Microsoft -Themen](topic-experiences-knowledge-rules.md)
 - [Verwalten von Themenberechtigungen in Microsoft -Themen](topic-experiences-user-permissions.md)
 - [Ändern des Namens des Themencenters in Microsoft Topics](topic-experiences-administration.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Übersicht über die Themenerfahrungen](topic-experiences-overview.md)

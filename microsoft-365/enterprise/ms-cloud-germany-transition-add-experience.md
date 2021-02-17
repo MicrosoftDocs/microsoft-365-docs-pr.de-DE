@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: Zusätzliche Kundeninformationen zur Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
 ms.openlocfilehash: 717978d69c9f87855967c474f29216f6db8d3ce9
 ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/14/2021
 ms.locfileid: "50242854"

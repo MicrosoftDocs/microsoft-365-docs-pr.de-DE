@@ -19,19 +19,19 @@ ms.custom:
 description: In diesem Artikel werden die Änderungen erläutert, die an den Schutzfunktionen in Azure Information Protection vorgenommen werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2cb78f9e13d8ae429f5f46f2b1051d07ee541a10
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 0769306c3aa2d1a357e1d5999d1a1406c02aa5f3
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165979"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261561"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Bereitstellen von Schutzfeatures in Azure Information Protection für vorhandene Mandanten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Microsoft Defender für Office 365 Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender für Office 365 – Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Ab Juli 2018 sind für alle berechtigten Azure Information Protection-Mandanten die Schutzfunktionen in Azure Information Protection standardmäßig aktiviert. Die Schutzfunktionen in Azure Information Protection wurden in Office 365 früher als Rechteverwaltung oder Azure RMS bezeichnet. Wenn Ihre Organisation über einen Office E3-Serviceplan oder einen höheren Serviceplan verfügt, erhalten Sie jetzt einen Voranfang zum Schutz von Informationen über Azure Information Protection, wenn wir diese Features bereitstellen.
@@ -54,17 +54,18 @@ Mandantenadministratoren können den Schutzstatus im Office 365-Administratorpor
 
 ## <a name="why-are-we-making-this-change"></a>Warum wird diese Änderung geändert?
 
-Die Office 365-Nachrichtenverschlüsselung nutzt die Schutzfunktionen in Azure Information Protection. Im Mittelpunkt der neuesten Verbesserungen an der Office 365-Nachrichtenverschlüsselung und unserer umfassenderen Investitionen in den Informationsschutz in Microsoft 365 erleichtern wir Organisationen das Aktivieren und Verwenden unserer Schutzfunktionen, da verschlüsselungstechnologien in der Vergangenheit schwierig eingerichtet werden mussten. Wenn Sie die Schutzfunktionen in Azure Information Protection standardmäßig aktivieren, können Sie schnell mit dem Schutz Ihrer vertraulichen Daten beginnen.
+Die Office 365-Nachrichtenverschlüsselung nutzt die Schutzfunktionen in Azure Information Protection. Im Mittelpunkt der neuesten Verbesserungen an der Office 365-Nachrichtenverschlüsselung und unserer umfassenderen Investitionen in den Informationsschutz in Microsoft 365 machen wir es Organisationen einfacher, unsere Schutzfunktionen zu aktivieren und zu nutzen, da es in der Vergangenheit schwierig war, Verschlüsselungstechnologien zu einrichten. Durch das standardmäßige Aktivieren der Schutzfunktionen in Azure Information Protection können Sie schnell mit dem Schutz Ihrer vertraulichen Daten beginnen.
 
 ## <a name="does-this-impact-me"></a>Wirkt sich dies auf mich aus?
 
 Wenn Ihre Organisation eine berechtigte Office 365-Lizenz erworben hat, wird Ihr Mandant von dieser Änderung betroffen sein.
 
- **WICHTIG!** Wenn Sie Active Directory-Rechteverwaltungsdienste (AD RMS) in Ihrer lokalen Umgebung verwenden, müssen Sie diese Änderung sofort abmelden oder zu Azure Information Protection migrieren, bevor wir diese Änderung innerhalb der nächsten 30 Tage bereitstellen. Informationen zum Abmelden finden Sie unter "Ich verwende AD RMS, wie kann ich mich abmelden?" weiter später in diesem Artikel. Informationen zum Migrieren finden Sie unter ["Migrieren von AD RMS zu Azure Information Protection".](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+> [!IMPORTANT]
+> Wenn Sie Active Directory-Rechteverwaltungsdienste (AD RMS) in Ihrer lokalen Umgebung verwenden, müssen Sie diese Änderung sofort abmelden oder zu Azure Information Protection migrieren, bevor wir diese Änderung innerhalb der nächsten 30 Tage bereitstellen. Informationen zum Abmelden finden Sie unter "Ich verwende AD RMS, wie kann ich mich abmelden?" weiter später in diesem Artikel. Informationen zum Migrieren finden Sie unter [Migrieren von AD RMS zu Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>Kann ich Azure Information Protection mit Active Directory-Rechteverwaltungsdienste (AD RMS) verwenden?
 
-Nein. Dies ist kein unterstütztes Bereitstellungsszenario. Ohne die zusätzlichen Abmeldeschritte ausführen zu müssen, können einige Computer automatisch mit der Verwendung des Azure Rights Management Service beginnen und auch eine Verbindung mit Ihrem AD -RMS-Cluster herstellen. Dieses Szenario wird nicht unterstützt und hat unzuverlässige Ergebnisse. Daher ist es wichtig, dass Sie diese Änderung innerhalb der nächsten 30 Tage abmelden, bevor wir diese neuen Features rollouten. Informationen zum Abmelden finden Sie unter "Ich verwende AD RMS, wie kann ich mich abmelden?" weiter später in diesem Artikel. Informationen zum Migrieren finden Sie unter ["Migrieren von AD RMS zu Azure Information Protection".](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+Nein. Dies ist kein unterstütztes Bereitstellungsszenario. Ohne die zusätzlichen Abmeldeschritte ausführen zu müssen, können einige Computer automatisch mit der Verwendung des Azure Rights Management Service beginnen und auch eine Verbindung mit Ihrem AD -RMS-Cluster herstellen. Dieses Szenario wird nicht unterstützt und hat unzuverlässige Ergebnisse. Daher ist es wichtig, dass Sie diese Änderung innerhalb der nächsten 30 Tage abmelden, bevor wir diese neuen Features rollouten. Informationen zum Abmelden finden Sie unter "Ich verwende AD RMS, wie kann ich mich abmelden?" weiter später in diesem Artikel. Informationen zum Migrieren finden Sie unter [Migrieren von AD RMS zu Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="how-do-i-know-if-im-using-ad-rms"></a>Wo finde ich informationen, ob ich AD RMS verwendet?
 
@@ -72,9 +73,9 @@ Verwenden Sie die folgenden Anweisungen aus dem Vorbereiten der Umgebung für Az
 
 1. Obwohl optional, veröffentlichen die meisten AD -RMS-Bereitstellungen den Dienstverbindungspunkt (Service Connection Point, SCP) in Active Directory, sodass Domänencomputer den AD -RMS-Cluster ermitteln können.
 
-Verwenden Sie ADSI Edit, um festzustellen, ob ein SCP in Active Directory veröffentlicht wurde: CN=Configuration [Servername], CN=Services, CN=RightsManagementServices, CN=SCP
+   Verwenden Sie ADSI Edit, um festzustellen, ob ein SCP in Active Directory veröffentlicht wurde: CN=Configuration [Servername], CN=Services, CN=RightsManagementServices, CN=SCP
 
-2. Wenn Sie kein SCP verwenden, müssen Windows-Computer, die eine Verbindung mit einem AD -RMS-Cluster herstellen, mithilfe der Windows-Registrierung für die clientseitige Dienstermittlung oder Lizenzierungsumleitung konfiguriert werden: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation oder HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation
+2. Wenn Sie keinen SCP verwenden, müssen Windows-Computer, die eine Verbindung mit einem AD -RMS-Cluster herstellen, mithilfe der Windows-Registrierung für die clientseitige Dienstermittlung oder Lizenzierungsumleitung konfiguriert `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation` werden:
 
 Weitere Informationen zu diesen Registrierungskonfigurationen finden Sie unter Enabling [client-side service discovery by using the Windows registry](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) and [Redirecting licensing server traffic](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic).
 
@@ -82,7 +83,7 @@ Weitere Informationen zu diesen Registrierungskonfigurationen finden Sie unter E
 
 Führen Sie die folgenden Schritte aus, um die anstehende Änderung abmelden zu können:
 
-1. Starten Sie mithilfe eines Arbeits- oder Schulkontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, Windows PowerShell sitzung und stellen Sie eine Verbindung mit Exchange Online herzustellen. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. Starten Sie unter Verwendung eines Arbeits- oder Schulkontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, Windows PowerShell und stellen Sie eine Verbindung mit Exchange Online herzustellen. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Führen Sie Set-IRMConfiguration cmdlet mit der folgenden Syntax aus:
 
