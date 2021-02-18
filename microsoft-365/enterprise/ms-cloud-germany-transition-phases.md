@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
 ms.openlocfilehash: 9dc2f4c0923f52bfc83a9177b595a6955a3afa8f
 ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/14/2021
 ms.locfileid: "50242734"
@@ -97,7 +97,7 @@ Die Backend-Funktionen von Exchange Online Protection (EOP) werden in die neue R
 |||||
 
 
-## <a name="office-apps-phase-8-of-9"></a>Office Apps (Phase 8 von 9)
+## <a name="office-apps-phase-8-of-9"></a>Office-Apps (Phase 8 von 9)
 
 | Schritt(e) | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
