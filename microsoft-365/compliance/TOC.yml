@@ -307,7 +307,7 @@
               href: retention-policies-yammer.md
             - name: Aufbewahrung für Exchange
               href: retention-policies-exchange.md
-            - name: Limiten für Aufbewahrung
+            - name: Grenzwerte für Aufbewahrung
               href: retention-limits.md
         - name: Erste Schritte mit der Aufbewahrung
           href: get-started-with-retention.md
