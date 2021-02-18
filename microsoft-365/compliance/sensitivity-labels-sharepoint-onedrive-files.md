@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Administratoren können die Unterstützung von Vertraulichkeitsbezeichnungen für Word-, Excel- und #A0 in SharePoint und OneDrive aktivieren.'
-ms.openlocfilehash: b4981e8f2fda88f9ba078b29e70d572b7bcc7ce2
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: f84407046d2b1d91d834d090f49fc385df36ec51
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150489"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279353"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive
 
@@ -47,7 +47,7 @@ Nachdem Sie Vertraulichkeitsbezeichnungen für #A0 in SharePoint und OneDrive ak
 - Office 365 eDiscovery unterstützt die Volltextsuche für diese Dateien, und Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) unterstützen Inhalte in diesen Dateien.
 
 > [!NOTE]
-> Wenn die Verschlüsselung mit einem lokalen Schlüssel angewendet wurde (eine Schlüsselverwaltungstopologie, die häufig als "Eigenen Schlüssel speichern" oder HYOK bezeichnet wird) oder mithilfe der Doppelten [Schlüsselverschlüsselung,](double-key-encryption.md)ändert sich das Dienstverhalten für die Verarbeitung des Dateiinhalts nicht. Bei diesen Dateien funktioniert die gemeinsame Dokumentierung, eDiscovery, Verhinderung von Datenverlust, Suche und andere Features für die Zusammenarbeit also nicht.
+> Wenn die Verschlüsselung mit einem lokalen Schlüssel (einer Schlüsselverwaltungstopologie, die häufig als "Eigenen Schlüssel speichern" oder HYOK bezeichnet wird) oder mithilfe der Verschlüsselung mit Doppelschlüssel angewendet [wurde,](double-key-encryption.md)ändert sich das Dienstverhalten für die Verarbeitung des Dateiinhalts nicht. Bei diesen Dateien funktioniert die gemeinsame Dokumentierung, eDiscovery, Verhinderung von Datenverlust, Suche und andere Features für die Zusammenarbeit also nicht.
 >
 > Das SharePoint- und #A0 ändert sich auch nicht für vorhandene Dateien an diesen Speicherorten, die mithilfe eines einzelnen Azure-basierten Schlüssels mit Verschlüsselung gekennzeichnet sind. Damit diese Dateien von den neuen Funktionen profitieren, nachdem Sie Vertraulichkeitsbezeichnungen für #A0 in SharePoint und OneDrive aktiviert haben, müssen die Dateien entweder heruntergeladen und erneut hochgeladen oder bearbeitet werden.
 
@@ -60,7 +60,7 @@ Sehen Sie sich das folgende Video (kein Audio) an, um die neuen Funktionen in Ak
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
-Sie haben immer die Möglichkeit, Vertraulichkeitsbezeichnungen für #A0 in SharePoint und OneDrive[(Abmelden)](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out)jederzeit zu deaktivieren.
+Sie haben immer die Möglichkeit, Vertraulichkeitsbezeichnungen für #A0 in SharePoint und OneDrive[(abmelden)](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out)jederzeit zu deaktivieren.
 
 Wenn Sie Dokumente in SharePoint derzeit mithilfe der Verwaltung von Informationsrechten (IrM) von SharePoint schützen, überprüfen Sie den Abschnitt zur Verwaltung von Informationsrechten [(Information Rights Management, IRM)](#sharepoint-information-rights-management-irm-and-sensitivity-labels) und zu Vertraulichkeitsbezeichnungen in SharePoint auf dieser Seite. 
 
@@ -85,17 +85,19 @@ Verwenden Sie die OneDrive-Synchronisierungs-App, Version 19.002.0121.0008 oder 
     
     Bei Bezeichnungen mit einer dieser Verschlüsselungskonfigurationen werden die Bezeichnungen Benutzern in Office im Web nicht angezeigt. Darüber hinaus können die neuen Funktionen nicht mit mit Bezeichnungen versehenen Dokumenten verwendet werden, die bereits über diese Verschlüsselungseinstellungen verfügen. Beispielsweise werden diese Dokumente nicht in den Suchergebnissen zurückgegeben, auch wenn sie aktualisiert werden.
 
+- Bei verschlüsselten Dokumenten wird das Drucken nicht unterstützt.
+
 - Bei einem verschlüsselten Dokument, das einem Benutzer Bearbeitungsberechtigungen erteilt, kann das Kopieren in den Webversionen der Office-Apps nicht blockiert werden.
 
 - Die Azure Information Protection-Dokumentverfolgungswebsite wird nicht unterstützt.
 
 - Office-Desktop-Apps und mobile Apps unterstützen keine gemeinsamen Dokumentautorisierungen für Dateien, die mit Verschlüsselung gekennzeichnet sind. Diese Apps öffnen weiterhin mit Bezeichnungen versehene und verschlüsselte Dateien im exklusiven Bearbeitungsmodus.
 
-- Wenn ein Administrator Einstellungen für eine veröffentlichte Bezeichnung ändert, die bereits auf Dateien angewendet wurde, die auf den Synchronisierungsclient des Benutzers heruntergeladen wurden, können Benutzer änderungen, die sie an der Datei vornehmen, möglicherweise nicht in ihrem #A0 speichern. Dieses Szenario gilt für Dateien, die mit Verschlüsselung gekennzeichnet sind, und auch, wenn die Bezeichnung von einer Bezeichnung geändert wird, die keine Verschlüsselung auf eine Bezeichnung angewendet hat, die Verschlüsselung angewendet hat. Benutzern wird ein roter Kreis mit einem weißen [Kreuzsymbol](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)angezeigt, und sie werden aufgefordert, neue Änderungen als separate Kopie zu speichern. Stattdessen können sie die Datei schließen und erneut öffnen oder Office im Web verwenden.
+- Wenn ein Administrator Einstellungen für eine veröffentlichte Bezeichnung ändert, die bereits auf Dateien angewendet wurde, die auf den Synchronisierungsclient des Benutzers heruntergeladen wurden, können Benutzer änderungen, die sie an der Datei vornehmen, möglicherweise nicht in ihrem #A0 speichern. Dieses Szenario gilt für Dateien, die mit Verschlüsselung gekennzeichnet sind, und auch, wenn sich die Bezeichnung von einer Bezeichnung ändert, die keine Verschlüsselung auf eine Bezeichnung angewendet hat, die Verschlüsselung angewendet hat. Benutzern wird ein roter Kreis mit einem Weißen [Kreuzsymbol](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)angezeigt, und sie werden aufgefordert, neue Änderungen als separate Kopie zu speichern. Stattdessen können sie die Datei schließen und erneut öffnen oder Office im Web verwenden.
 
 - Wenn ein mit Bezeichnungen versehenes Dokument in SharePoint oder OneDrive hochgeladen wird und die Bezeichnung Verschlüsselung mithilfe eines Kontos aus einem Dienstprinzipalnamen angewendet hat, kann das Dokument nicht in Office im Web geöffnet werden. Zu den Beispielszenarien gehören Microsoft Cloud App Security und eine Per E-Mail an Teams gesendete Datei.
 
-- Benutzer können Probleme beim Speichern nach dem Offlinebetrieb oder in einen Ruhezustand haben, wenn sie anstelle von Office für das Web die Desktop- und mobilen Apps für Word, Excel oder PowerPoint verwenden. Wenn diese Benutzer ihre Office-App-Sitzung fortsetzen und versuchen, Änderungen zu speichern, wird eine Uploadfehlermeldung mit einer Option zum Speichern einer Kopie angezeigt, anstatt die Originaldatei zu speichern. 
+- Benutzer können Speicherprobleme nach dem Offlinebetrieb oder in einen Ruhezustand haben, wenn sie anstelle von Office für das Web die Desktop- und mobilen Apps für Word, Excel oder PowerPoint verwenden. Wenn diese Benutzer ihre Office-App-Sitzung fortsetzen und versuchen, Änderungen zu speichern, wird eine Uploadfehlermeldung mit der Option angezeigt, eine Kopie zu speichern, anstatt die Originaldatei zu speichern. 
 
 - Dokumente, die auf folgende Weise verschlüsselt wurden, können in Office im Web nicht geöffnet werden:
     - Verschlüsselung, die einen lokalen Schlüssel verwendet ("eigenen Schlüssel halten" oder HYOK)
@@ -120,24 +122,24 @@ Diese Option ist die einfachste Möglichkeit, Vertraulichkeitsbezeichnungen für
     
     Wenn diese Option nicht sofort angezeigt wird, wählen Sie zunächst **Alle anzeigen** aus. 
 
-2. Wenn eine Meldung zum Aktivieren der Möglichkeit zum Verarbeiten von Inhalten in Office -Onlinedateien angezeigt wird, wählen Sie jetzt **"Jetzt aktivieren" aus:**
+2. Wenn eine Meldung zum Aktivieren der Möglichkeit zum Verarbeiten von Inhalten in Office-Onlinedateien angezeigt wird, wählen Sie jetzt **"Jetzt aktivieren" aus:**
     
     ![Schaltfläche "Jetzt aktivieren" zum Aktivieren von Vertraulichkeitsbezeichnungen für Office Online](../media/sensitivity-labels-turn-on-banner.png)
     
     Der Befehl wird sofort ausgeführt, und wenn die Seite das nächste Mal aktualisiert wird, wird die Meldung oder Schaltfläche nicht mehr angezeigt.
 
 > [!NOTE]
-> Wenn Sie über Microsoft 365 Multi-Geo verfügen, müssen Sie PowerShell verwenden, um diese Funktionen für alle geografischen Standorte zu aktivieren. Ausführliche Informationen finden Sie im nächsten Abschnitt.
+> Wenn Sie über Microsoft 365 Multi-Geo verfügen, müssen Sie PowerShell verwenden, um diese Funktionen für alle Geografischen Standorte zu aktivieren. Ausführliche Informationen finden Sie im nächsten Abschnitt.
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>Verwenden von PowerShell zum Aktivieren der Unterstützung von Vertraulichkeitsbezeichnungen
 
 Als Alternative zur Verwendung des Compliance Centers können Sie die Unterstützung von Vertraulichkeitsbezeichnungen mithilfe des [Cmdlets "Set-SPOTenant"](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) aus SharePoint Online PowerShell aktivieren. 
 
-Wenn Sie über Microsoft 365 Multi-Geo verfügen, müssen Sie PowerShell verwenden, um diese Unterstützung für alle geografischen Standorte zu aktivieren.
+Wenn Sie über Microsoft 365 Multi-Geo verfügen, müssen Sie PowerShell verwenden, um diese Unterstützung für alle Geografischen Standorte zu aktivieren.
 
 #### <a name="prepare-the-sharepoint-online-management-shell"></a>Vorbereiten der SharePoint Online-Verwaltungsshell
 
-Bevor Sie den #A0 zum Aktivieren von Vertraulichkeitsbezeichnungen für #A1 in SharePoint und OneDrive ausführen, stellen Sie sicher, dass Sie SharePoint #A2 Version 16.0.19418.12000 oder höher ausführen. Wenn Sie bereits über die neueste Version verfügen, können Sie mit dem nächsten Verfahren zum [Ausführen](#run-the-powershell-command-to-enable-support-for-sensitivity-labels) des PowerShell-Befehls springen.
+Bevor Sie den #A0 zum Aktivieren von Vertraulichkeitsbezeichnungen für #A1 in SharePoint und OneDrive ausführen, stellen Sie sicher, dass Sie SharePoint #A2 Version 16.0.19418.12000 oder höher ausführen. Wenn Sie bereits über die neueste Version verfügen, können Sie mit dem nächsten Verfahren zum [Ausführen](#run-the-powershell-command-to-enable-support-for-sensitivity-labels) des Befehls PowerShell springen.
 
 1. Wenn Sie eine frühere Version der SharePoint-Online-Verwaltungsshell aus dem PowerShell-Katalog installiert haben, können Sie das Modul aktualisieren, indem Sie das folgende Cmdlet ausführen.
 
@@ -151,11 +153,11 @@ Bevor Sie den #A0 zum Aktivieren von Vertraulichkeitsbezeichnungen für #A1 in S
 
 4. Wählen Sie die gewünschte Sprache aus, und klicken Sie auf **Download**.
 
-5. Wählen Sie zwischen der x64- und der x86-Version der MSI-Datei aus. Laden Sie die x64-Datei herunter, wenn Sie die 64-Bit-Version von Windows oder die x86-Datei ausführen, wenn Sie die 32-Bit-Version ausführen. Wenn Sie nicht wissen, welche Version des Windows-Betriebssystems [ich auslaufe?](https://support.microsoft.com/help/13443/windows-which-operating-system)
+5. Wählen Sie zwischen der x64- und der x86-Version der MSI-Datei aus. Laden Sie die x64-Datei herunter, wenn Sie die 64-Bit-Version von Windows oder die x86-Datei ausführen, wenn Sie die 32-Bit-Version ausführen. Wenn Sie nicht wissen, welche Version des Windows-Betriebssystems [ich ausführen soll?](https://support.microsoft.com/help/13443/windows-which-operating-system)
 
 6. Nachdem Sie die Datei heruntergeladen haben, führen Sie die Datei aus, und führen Sie die Schritte im Setup-Assistenten aus.
 
-#### <a name="run-the-powershell-command-to-enable-support-for-sensitivity-labels"></a>Führen Sie den Befehl "PowerShell" aus, um die Unterstützung für Vertraulichkeitsbezeichnungen zu aktivieren.
+#### <a name="run-the-powershell-command-to-enable-support-for-sensitivity-labels"></a>Ausführen des PowerShell-Befehls, um die Unterstützung für Vertraulichkeitsbezeichnungen zu aktivieren
 
 Verwenden Sie zum Aktivieren der neuen Funktionen das [Cmdlet "Set-SPOTenant"](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) mit dem Parameter *"EnableAIPIntegration":*
 
@@ -163,7 +165,7 @@ Verwenden Sie zum Aktivieren der neuen Funktionen das [Cmdlet "Set-SPOTenant"](h
     
     Hinweis: Wenn Sie über Microsoft 365 Multi-Geo verfügen, verwenden Sie den Parameter "-Url" mit ["Connect-SPOService",](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice)und geben Sie die URL der SharePoint Online-Verwaltungscenter-Website für einen Ihrer geografischen Standorte an.
 
-2. Führen Sie den folgenden Befehl aus, und drücken **Sie zur Bestätigung Y:**
+2. Führen Sie den folgenden Befehl aus, und drücken **Sie Y,** um dies zu bestätigen:
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true
@@ -178,9 +180,9 @@ Beispiel: Sie erstellen und veröffentlichen eine neue Vertraulichkeitsbezeichnu
 
 Die folgenden Änderungen werden innerhalb einer Stunde repliziert: Neue und gelöschte Vertraulichkeitsbezeichnungen und Richtlinieneinstellungen für Vertraulichkeitsbezeichnungen, die enthalten, welche Bezeichnungen in der Richtlinie enthalten sind.
 
-Die folgenden Änderungen werden innerhalb von 24 Stunden repliziert: Änderungen an Den Einstellungen für Vertraulichkeitsbezeichnungen für vorhandene Bezeichnungen.
+Die folgenden Änderungen werden innerhalb von 24 Stunden repliziert: Änderungen an den Einstellungen für Vertraulichkeitsbezeichnungen für vorhandene Bezeichnungen.
 
-Da die Replikationsverzögerung bei neuen Vertraulichkeitsbezeichnungen nur eine Stunde beträgt, ist es unwahrscheinlich, dass das Szenario im Beispiel ausgeführt wird. Als Schutz wird jedoch empfohlen, neue Bezeichnungen zuerst nur für wenige Testbenutzer zu veröffentlichen, eine Stunde zu warten und dann das Bezeichnungsverhalten in SharePoint und OneDrive zu überprüfen. Als letzten Schritt können Sie die Bezeichnung für mehr Benutzer verfügbar machen, indem Sie der vorhandenen Bezeichnungsrichtlinie entweder weitere Benutzer hinzufügen oder die Bezeichnung einer vorhandenen Bezeichnungsrichtlinie für Ihre Standardbenutzer hinzufügen. Wenn Ihre Standardbenutzer die Bezeichnung sehen, wurde sie bereits mit SharePoint und OneDrive synchronisiert.
+Da die Replikationsverzögerung für neue Vertraulichkeitsbezeichnungen nur eine Stunde beträgt, ist es unwahrscheinlich, dass das Szenario im Beispiel ausgeführt wird. Als Schutz wird jedoch empfohlen, neue Bezeichnungen zuerst nur für wenige Testbenutzer zu veröffentlichen, eine Stunde zu warten und dann das Bezeichnungsverhalten in SharePoint und OneDrive zu überprüfen. Als letzten Schritt können Sie die Bezeichnung für mehr Benutzer verfügbar machen, indem Sie der vorhandenen Bezeichnungsrichtlinie entweder weitere Benutzer hinzufügen oder die Bezeichnung einer vorhandenen Bezeichnungsrichtlinie für Ihre Standardbenutzer hinzufügen. Wenn Ihre Standardbenutzer die Bezeichnung sehen, wurde sie bereits mit SharePoint und OneDrive synchronisiert.
 
 ## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>Verwaltung von Informationsrechten in SharePoint (IRM) und Vertraulichkeitsbezeichnungen
 
@@ -203,7 +205,7 @@ Sie können jedoch beide Schutzlösungen zusammen verwenden, und das Verhalten l
 Mit diesem Verhalten können Sie sicher sein, dass alle Office- und PDF-Dateien vor unbefugtem Zugriff geschützt sind, wenn sie heruntergeladen werden, auch wenn sie nicht mit Bezeichnungen versehen sind. Hochgeladene Dateien mit Bezeichnungen profitieren jedoch nicht von den neuen Funktionen.
 
 
-## <a name="search-for-documents-by-sensitivity-label"></a>Suchen nach Dokumenten nach Vertraulichkeitsbezeichnung    
+## <a name="search-for-documents-by-sensitivity-label"></a>Suchen nach Dokumenten nach Vertraulichkeitsbezeichnung
 
 Verwenden Sie die verwaltete Eigenschaft **"InformationProtectionLabelId",** um alle Dokumente in SharePoint oder OneDrive zu suchen, die eine bestimmte Vertraulichkeitsbezeichnung haben. Verwenden Sie die folgende Syntax: `InformationProtectionLabelId:<GUID>`
 

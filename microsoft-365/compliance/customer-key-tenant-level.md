@@ -3,7 +3,7 @@ title: Kundenschlüssel für Microsoft 365 auf der Mandantenebene (öffentliche 
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/17/2020
+ms.date: 2/17/2021
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Erfahren Sie, wie Sie Customer Key für alle Daten in Ihrem Microsoft 365-Mandanten einrichten.
-ms.openlocfilehash: 682eed7eb2e80535af1acf68808c708e1a25d80f
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 60704f77e17222de790cb397653a2275144d770e
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242375"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288146"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Übersicht über den Kundenschlüssel für Microsoft 365 auf Mandantenebene (öffentliche Vorschau)
 
@@ -65,7 +65,7 @@ Bevor Sie beginnen, sollten Sie Folgendes sicherstellen:
 
 Für Customer Key sind zwei Schlüssel für jede Daten- Verschlüsselungsrichtlinie (DEP) erforderlich. Um dies zu erreichen, müssen Sie zwei Azure-Abonnements erstellen. Als bewährte Methode empfiehlt Microsoft, dass separate Mitglieder Ihrer Organisation jeweils einen Schlüssel für jedes Abonnement konfigurieren. Verwenden Sie diese Azure-Abonnements nur zum Verwalten von Verschlüsselungsschlüsseln für Microsoft 365. Auf diese Weise ist Ihre Organisation geschützt, falls einer ihrer Betreiber versehentlich, absichtlich oder in böswilliger Absicht die Schlüssel, für die Sie verantwortlich sind, löscht oder auf andere Weise unsachgemäß handhabt.
 
-Es gibt praktisch keine Beschränkung hinsichtlich der Anzahl von Azure-Abonnements, die Sie für Ihre Organisation erstellen können. Die Verwendung dieser bewährten Methode trägt dazu bei, die Auswirkungen von menschlichen Fehlern zu minimieren und gleichzeitig die von Customer Key verwendeten Ressourcen zu verwalten.
+Es gibt praktisch keine Beschränkung hinsichtlich der Anzahl von Azure-Abonnements, die Sie für Ihre Organisation erstellen können. Die Verwendung dieser bewährten Methode trägt dazu bei, die Auswirkungen von menschlichen Fehlern zu minimieren und gleichzeitig die vom Kundenschlüssel verwendeten Ressourcen zu verwalten.
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>Azure- Abonnements registrieren, um einen obligatorischen Aufbewahrungszeitraum zu nutzen.
 
@@ -194,7 +194,7 @@ Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Sof
 
 Dabei gilt Folgendes:
 
-- *Der Vaultname* ist der Name des Schlüsseltresor, in dem Sie den Schlüssel erstellen möchten.
+- *Der Name des* Tresors ist der Name des Schlüsseltresor, in dem Sie den Schlüssel erstellen möchten.
 
 - *Schlüsselname* ist der Name, den Sie dem neuen Schlüssel geben möchten.
 
@@ -219,7 +219,7 @@ Führen Sie zum Überprüfen der Wiederherstellungsstufe eines Schlüssels in Az
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-Wenn  die Eigenschaft "Wiederherstellungsebene" etwas anderes als den Wert **"Recoverable+ProtectedSubscription"** zurückgibt, müssen Sie diesen Artikel lesen und sicherstellen, dass Sie alle Schritte zum Hinzufügen des Abonnements in die Liste "Nicht abbrechen" befolgt haben und dass Sie für jeden Schlüsseltresor "Soft Delete" aktiviert haben. Senden Sie als Nächstes einen Screenshot der Ausgabe in einer `(Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes` E-Mail an m365ck@microsoft.com.
+Wenn  die Eigenschaft "Wiederherstellungsebene" etwas anderes als den Wert **"Recoverable+ProtectedSubscription"** zurückgibt, müssen Sie diesen Artikel lesen und sicherstellen, dass Sie alle Schritte zum Hinzufügen des Abonnements in die Liste "Nicht abbrechen" befolgt haben und dass Sie "Soft Delete" in jedem Ihrer Schlüsseltresor aktiviert haben. Senden Sie als Nächstes einen Screenshot der Ausgabe in einer `(Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes` E-Mail an m365ck@microsoft.com.
 
 ### <a name="back-up-azure-key-vault"></a>Sichern von Azure Key Vault
 
@@ -274,7 +274,7 @@ Führen Sie das Cmdlet ["Get-AzKeyVaultKey"](https://docs.microsoft.com/powershe
 Get-AzKeyVaultKey -VaultName <vault name>
 ```
 
-Ein abgelaufener Schlüssel kann nicht vom Kundenschlüssel verwendet werden, und Vorgänge, die mit einem abgelaufenen Schlüssel versucht werden, führen möglicherweise zu einem Dienstausfall. Es wird dringend empfohlen, dass mit Customer Key verwendete Schlüssel kein Ablaufdatum aufweisen. Ein einmal festgelegtes Ablaufdatum kann nicht gelöscht werden, es kann jedoch eine Datumänderung vorgenommen werden. Wenn ein Schlüssel verwendet werden muss, für den ein Ablaufdatum festgelegt ist, ändern Sie bitte das Ablaufdatum auf 31.12.9999. Schlüssel mit einem Ablaufdatum, das auf ein anderes Datum als den 31.12.9999 festgelegt ist, bestehen die Microsoft 365-Überprüfung nicht.
+Ein abgelaufener Schlüssel kann nicht vom Kundenschlüssel verwendet werden, und Vorgänge, die mit einem abgelaufenen Schlüssel versucht werden, führen möglicherweise zu einem Dienstausfall. Es wird dringend empfohlen, dass mit Customer Key verwendete Schlüssel kein Ablaufdatum aufweisen. Ein einmal festgelegtes Ablaufdatum kann nicht gelöscht werden, es kann jedoch eine Datumänderung vorgenommen werden. Wenn ein Schlüssel verwendet werden muss, für den ein Ablaufdatum festgelegt ist, ändern Sie bitte das Ablaufdatum auf 31.12.9999. Schlüssel, deren Ablaufdatum auf ein anderes Datum als den 31.12.9999 festgelegt ist, bestehen die Microsoft 365-Überprüfung nicht.
   
 Führen Sie zum Ändern eines Ablaufdatums, das auf einen anderen Wert als den 31.12.9999 festgelegt wurde, das [Cmdlet "Update-AzKeyVaultKey"](https://docs.microsoft.com/powershell/module/az.keyvault/update-azkeyvaultkey) wie folgt aus:
   
@@ -284,7 +284,7 @@ Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date
 
 ### <a name="obtain-the-uri-for-each-azure-key-vault-key"></a>Abrufen eines URI für jeden Azure Key Vault-Schlüssel
 
-Nachdem Sie alle Schritte in Azure abgeschlossen haben, um Ihre Key Vaults einrichten und Ihre Schlüssel hinzugefügt haben, führen Sie den folgenden Befehl aus, um den URI für den Schlüssel in jedem Schlüsseltresor zu erhalten. Sie müssen diese URI verwenden, wenn Sie in weiterer Folge die einzelnen Datenverschlüsselungsrichtlinien (DEP) erstellen und zuweisen, also speichern Sie diese Informationen an einem sicheren Ort. Denken Sie daran, diesen Befehl jeweils für jeden Schlüsseltresor einmal auszuführen.
+Nachdem Sie alle Schritte in Azure abgeschlossen haben, um Ihre Schlüsseltresor einrichten und Ihre Schlüssel hinzugefügt haben, führen Sie den folgenden Befehl aus, um den URI für den Schlüssel in jedem Schlüsseltresor zu erhalten. Sie müssen diese URI verwenden, wenn Sie in weiterer Folge die einzelnen Datenverschlüsselungsrichtlinien (DEP) erstellen und zuweisen, also speichern Sie diese Informationen an einem sicheren Ort. Denken Sie daran, diesen Befehl jeweils für jeden Schlüsseltresor einmal auszuführen.
   
 In Azure PowerShell:
   
@@ -302,7 +302,7 @@ Bevor Sie diese Cmdlets ausführen können, müssen Ihnen die entsprechenden Ber
    New-M365DataAtRestEncryptionPolicy [-Name] <String> -AzureKeyIDs <MultiValuedProperty> [-Description <String>] [-Enabled <Boolean>]
 ```
 
-Beschreibung: Aktivieren Sie den Complianceadministrator, um eine neue Datenverschlüsselungsrichtlinie (Data Encryption Policy, DEP) mithilfe von zwei AKV-Stammschlüsseln zu erstellen. Nach dem Erstellen kann eine Richtlinie mithilfe des cmdlets Set-M365DataAtRestEncryptionPolicy zugewiesen werden. Bei der ersten Zuweisung von Schlüsseln oder nach dem Drehen von Tasten kann es bis zu 24 Stunden dauern, bis die neuen Tasten wirksam werden. Wenn die neue DEP mehr als 24 Stunden in Kraft tritt, wenden Sie sich an Microsoft.
+Beschreibung: Aktivieren Sie den Complianceadministrator, um eine neue Datenverschlüsselungsrichtlinie (Data Encryption Policy, DEP) mithilfe von zwei AKV-Stammschlüsseln zu erstellen. Nach dem Erstellen kann eine Richtlinie mithilfe des cmdlets Set-M365DataAtRestEncryptionPolicy zugewiesen werden. Bei der ersten Zuweisung von Schlüsseln oder nach dem Drehen von Schlüsseln kann es bis zu 24 Stunden dauern, bis die neuen Tasten wirksam werden. Wenn die neue DEP mehr als 24 Stunden in Kraft tritt, wenden Sie sich an Microsoft.
 
 Beispiel:
 
@@ -313,7 +313,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 Parameter:
 
 | Name | Beschreibung | Optional (Y/N) |
-|--|--|--|
+|----------|----------|---------|
 |Name|Anzeigename der Datenverschlüsselungsrichtlinie|N|
 |AzureKeyIDs|Gibt zwei durch Kommas getrennte URI-Werte der Azure Key Vault-Schlüssel an, die der Datenverschlüsselungsrichtlinie zugeordnet werden.|N|
 |Beschreibung|Beschreibung der Datenverschlüsselungsrichtlinie|N|
@@ -334,7 +334,7 @@ Set-M365DataAtRestEncryptionPolicyAssignment -Policy “Tenant default policy”
 
 Parameter:
 | Name | Beschreibung | Optional (Y/N) |
-|--|--|--|
+|----------|----------|---------|
 -Policy|Gibt die Datenverschlüsselungsrichtlinie an, die zugewiesen werden muss. Geben Sie entweder den Richtliniennamen oder die Richtlinien-ID an.|N|
 
 ### <a name="modify-or-refresh-policy"></a>Ändern oder Aktualisieren der Richtlinie
@@ -361,7 +361,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
 
 Parameter:
 | Name | Beschreibung | Optional (Y/N) |
-|--|--|--|
+|----------|----------|---------|
 |-Identity|Gibt die Datenverschlüsselungsrichtlinie an, die Sie ändern möchten.|N|
 |-Refresh|Verwenden Sie die Option "Refresh", um die Datenverschlüsselungsrichtlinie zu aktualisieren, nachdem Sie einen der zugeordneten Schlüssel im Azure Key Vault gedreht haben. Sie müssen keinen Wert für diese Option angeben.|v|
 |-Enabled|Der Parameter "Enabled" aktiviert oder deaktiviert die Datenverschlüsselungsrichtlinie. Bevor Sie eine Richtlinie deaktivieren, müssen Sie die Zuzuweisen von Ihrem Mandanten entfernen. Gültige Werte sind:</br > $true: Die Richtlinie ist aktiviert</br > $true: Die Richtlinie ist aktiviert. Dies ist der Standardwert.
@@ -394,7 +394,7 @@ Get-M365DataAtRestEncryptionPolicy -Identity "NAM Policy"
 Parameter:
 
 | Name | Beschreibung | Optional (Y/N) |
-|--|--|--|
+|----------|----------|---------|
 |-Identity|Gibt die Datenverschlüsselungsrichtlinie an, für die Sie die Details auflisten möchten.|v|
 
 ### <a name="get-policy-assignment-info"></a>Informationen zur Richtlinienzuweisung erhalten
@@ -412,7 +412,7 @@ Wenn Sie zu von Microsoft verwalteten Schlüsseln zurückkehren müssen, können
 Wenn Sie sich entschlossen haben, Ihren Mandanten vom Kundenschlüssel auf Mandantenebene aus zu entfernen, senden Sie eine E-Mail-Anforderung an Microsoft, um den Dienst für den Mandanten unter m365ck@microsoft.com [.](mailto:m365ck@microsoft.com)
 
 > [!IMPORTANT]
-> Offboarding ist nicht mit dem Löschen von Daten identisch. Eine Datenbereinigung löscht die Daten Ihrer Organisation dauerhaft aus Microsoft 365, offboarding nicht. Sie können keine Datenbereinigung für eine Richtlinie auf Mandantenebene ausführen. Weitere Informationen zum Pfad zum Löschen von Daten finden Sie unter "Widerrufen Ihrer Schlüssel" und starten Sie den Prozess des [Datenbereinigungspfads.](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)
+> Offboarding ist nicht mit dem Löschen von Daten identisch. Eine Datenbereinigung löscht die Daten Ihrer Organisation dauerhaft aus Microsoft 365, offboarding nicht. Sie können keine Datenbereinigung für eine Richtlinie auf Mandantenebene ausführen. Informationen zum Datenbereinigungspfad finden Sie unter ["Widerrufen Ihrer Schlüssel" und Starten des](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)Prozesses zum Löschen von Daten.
 
 ## <a name="about-the-availability-key"></a>Informationen zum Verfügbarkeitsschlüssel
 
@@ -420,7 +420,7 @@ Informationen zum Verfügbarkeitsschlüssel finden Sie unter [Informationen zum 
 
 ## <a name="key-rotation"></a>Tastendrehung
 
-Informationen zum Drehen oder Rollen von Schlüsseln, die mit Customer Key verwendet werden, finden Sie unter "Rollen oder Drehen eines [Kundenschlüssels oder eines Verfügbarkeitsschlüssels".](customer-key-availability-key-roll.md) Wenn Sie die DEP so aktualisieren, dass die neue Version der Schlüssel verwendet wird, führen Sie das cmdlet Set-M365DataAtRestEncryptionPolicy aus, wie weiter oben in diesem Artikel beschrieben.
+Informationen zum Drehen oder Rollen von Schlüsseln, die mit Customer Key verwendet werden, finden Sie unter "Rollen oder Drehen eines [Kundenschlüssels oder eines Verfügbarkeitsschlüssels".](customer-key-availability-key-roll.md) Wenn Sie die DEP so aktualisieren, dass die neue Version der Schlüssel verwendet wird, führen Sie das cmdlet Set-M365DataAtRestEncryptionPolicy weiter oben in diesem Artikel beschrieben aus.
 
 ## <a name="related-articles"></a>Verwandte Artikel:
 

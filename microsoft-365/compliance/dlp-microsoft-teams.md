@@ -1,5 +1,5 @@
 ---
-title: Verhinderung von Datenverlust und Microsoft Teams
+title: Verhinderung von Datenverlust und Microsoft Teams.
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,14 +15,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Sie können jetzt die DLP-Richtlinien auf Microsoft Teams-Chats und -Kanäle anwenden. In diesem Artikel erfahren Sie mehr über die Funktionsweise.
-ms.openlocfilehash: a34a094a3c0440933a3d44e0125939a02b4ae202
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 13d5d73423cc6ad7db76076f6a53dde668b8fa5c
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840582"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279363"
 ---
-# <a name="data-loss-prevention-and-microsoft-teams"></a>Verhinderung von Datenverlust und Microsoft Teams
+# <a name="data-loss-prevention-and-microsoft-teams"></a>Verhinderung von Datenverlust und Microsoft Teams.
 
 > [!NOTE]
 > Funktionen zur Verhinderung von Datenverlust wurden kürzlich zu Microsoft Teams Chat- und Kanalnachrichten für Benutzer hinzugefügt, die für Office 365 E5/A5, Microsoft 365 E5/A5, Microsoft 365 Information Protection and Governance oder Office 365 Advanced Compliance lizenziert sind. Office 365 und Microsoft 365 E3 umfassen #A0 für SharePoint Online, OneDrive und Exchange Online. Dies umfasst auch Dateien, die über Teams freigegeben werden, da Teams SharePoint Online und OneDrive zum Freigeben von Dateien verwendet.
@@ -34,12 +34,11 @@ Weitere Informationen zu den Lizenzierungsanforderungen finden Sie unter [Micros
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Übersicht über DLP für Microsoft Teams
 
-In letzter Zeit wurden die Funktionen zur Verhinderung von Datenverlust (Data [Loss Prevention,](data-loss-prevention-policies.md) DLP) um Chat- und Kanalnachrichten von Microsoft Teams erweitert, einschließlich Nachrichten **privater Kanäle.**
-
+In letzter Zeit wurden die Funktionen zur Verhinderung von Datenverlust (Data [Loss Prevention,](data-loss-prevention-policies.md) DLP) um Chat- und Kanalnachrichten von Microsoft Teams erweitert, einschließlich Nachrichten **im privaten Kanal.**
 
 Wenn Ihre Organisation über DLP verfügt, können Sie jetzt Richtlinien definieren, die verhindern, dass Personen vertrauliche Informationen in einem Microsoft Teams-Kanal oder einer Chatsitzung freigeben. Hier sind einige Beispiele für die Funktionsweise dieses Schutzes:
 
-- **Beispiel 1: Schützen vertraulicher Informationen in Nachrichten**. Angenommen, jemand versucht, vertrauliche Informationen in einem Teams-Chat oder -Kanal für Gäste (externe Benutzer) zu teilen. Wenn Sie eine DLP-Richtlinie definiert haben, um dies zu verhindern, werden Nachrichten mit vertraulichen Informationen gelöscht, die an externe Benutzer gesendet werden. Dies geschieht automatisch und innerhalb von Sekunden, je nach Konfiguration Ihrer DLP-Richtlinie.
+- **Beispiel 1: Schützen vertraulicher Informationen in Nachrichten**. Angenommen, jemand versucht, vertrauliche Informationen in einem Chat oder Kanal von Teams für Gäste (externe Benutzer) zu teilen. Wenn Sie eine DLP-Richtlinie definiert haben, um dies zu verhindern, werden Nachrichten mit vertraulichen Informationen gelöscht, die an externe Benutzer gesendet werden. Dies geschieht automatisch und innerhalb von Sekunden, je nach Konfiguration Ihrer DLP-Richtlinie.
 
     > [!NOTE]
     > DLP für Microsoft Teams blockiert vertrauliche Inhalte, wenn sie für Microsoft Teams-Benutzer freigegeben werden, die über:<br/>- [Gastzugriff](https://docs.microsoft.com/MicrosoftTeams/guest-access) in Teams und Kanälen; oder<br/>- [Externer Zugriff](https://docs.microsoft.com/MicrosoftTeams/manage-external-access) in Besprechungen und Chatsitzungen. <p>DLP für externe Chatsitzungen funktioniert nur, wenn sich der Absender und der Empfänger im Modus "Nur Teams" befinden und den nativen [Microsoft Teams-Verbund verwenden.](https://docs.microsoft.com/microsoftteams/manage-external-access) DLP für Teams blockiert keine Nachrichten in [Interop](https://docs.microsoft.com/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) mit Skype for Business oder nicht systemeigenen Verbundchatsitzungen.
@@ -58,7 +57,7 @@ In diesem Fall hat der Absender versucht, eine Sozialversicherungsnummer in eine
 
 In Ihrer Organisation können Sie festlegen, dass Benutzer eine DLP-Richtlinie außer Kraft setzen können. Und wenn Sie Ihre DLP-Richtlinien konfigurieren, können Sie die Standardrichtlinientipps verwenden oder Richtlinientipps für [Ihre](#to-customize-policy-tips) Organisation anpassen.
 
-Kehren wir zu unserem Beispiel zurück, in dem ein Absender eine Sozialversicherungsnummer in einem Kanal von Teams freigegeben hat, was der Empfänger gesehen hat:
+Kehren wir zu unserem Beispiel zurück, in dem ein Absender eine Sozialversicherungsnummer in einem Kanal von Teams freigegeben hat, und das hat der Empfänger gesehen:
 
 ![Nachricht blockiert](../media/dlp-teams-blockedmessage-notification-to-user.png)
 
@@ -78,9 +77,9 @@ Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle mit Berechtigungen
 
 5. Wählen Sie **auf der Registerkarte "Benutzerbenachrichtigungen"** die Option "E-Mail-Text **anpassen"** und/oder "Richtlinientipptextoptionen **anpassen"** aus.<br/>![Anpassen von Benutzerbenachrichtigungen und Richtlinientipps](../media/dlp-teams-editrule-usernotifications.png)<br/>  
 
-6. Geben Sie den Text an, den Sie für E-Mail-Benachrichtigungen und/oder Richtlinientipps verwenden möchten, und wählen Sie dann Speichern **aus.**
+6. Geben Sie den Text an, den Sie für E-Mail-Benachrichtigungen und/oder Richtlinientipps verwenden möchten, und wählen Sie dann **"Speichern" aus.**
 
-7. Wählen Sie **auf der Registerkarte "Richtlinieneinstellungen"** **"Speichern" aus.**
+7. Wählen Sie **auf der Registerkarte** "Richtlinieneinstellungen" **"Speichern" aus.**
 
 Lassen Sie ungefähr eine Stunde zeit, bis Ihre Änderungen ihren Weg durch Ihr Rechenzentrum finden und mit Benutzerkonten synchronisiert werden.
  <!-- why are these syncing to user accounts? -->
@@ -97,7 +96,14 @@ Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle mit Berechtigungen
 
 4. Aktivieren Sie **in der** Spalte "Status" die Richtlinie für **Chat- und Kanalnachrichten in Teams.**<br/>![DLP für Chats und Kanäle in Teams](../media/dlp-teams-addteamschatschannels.png)<br/>
 
-5. Behalten Sie **auf** der Registerkarte "Speicherorte auswählen"  die Standardeinstellung aller Konten bei, oder wählen Sie "Bestimmte Speicherorte auswählen" aus, und geben Sie an, welche Konten ein- oder ausgeschlossen werden. Wählen Sie dann **Weiter** aus.
+5. Behalten Sie **auf der** Registerkarte "Speicherorte auswählen" die Standardeinstellung aller Konten bei, oder wählen Sie "Bestimmte **Speicherorte auswählen" aus.** Sie können Folgendes angeben:
+    1. Bis zu 1.000 einzelne Konten zum Ein- oder Ausschließen
+    1. Verteilerlisten und Sicherheitsgruppen, die ein- oder ausgeschlossen werden. **Dies ist eine öffentliche Vorschaufunktion.**
+    <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**--> 
+    
+6. Wählen Sie dann **Weiter** aus.
+
+
 
 6. Klicken Sie auf **Speichern**.
 
@@ -112,11 +118,14 @@ Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle mit Berechtigungen
 
 2. Wählen **Sie "Richtlinie zur Verhinderung von**  >    >  **Datenverlust" + "Richtlinie erstellen" aus.**
 
-3. Wählen Sie [eine Vorlage](data-loss-prevention-policies.md#dlp-policy-templates)aus, und wählen Sie dann **"Weiter" aus.**<br/>In unserem Beispiel haben wir die Vorlage für personenbezogene Daten in den USA ausgewählt.<br/>![Datenschutzvorlage für die DLP-Richtlinie](../media/dlp-teams-createnewpolicy-template.png)<br/>
+3. Wählen Sie [eine Vorlage](data-loss-prevention-policies.md#dlp-policy-templates)aus, und wählen Sie dann **"Weiter" aus.**<br/>In unserem Beispiel haben wir die Us-amerikanische Vorlage für personenbezogene Daten ausgewählt.<br/>![Datenschutzvorlage für die DLP-Richtlinie](../media/dlp-teams-createnewpolicy-template.png)<br/>
 
 4. Geben Sie **auf der Registerkarte "Ihre Richtlinie** benennen" einen Namen und eine Beschreibung für die Richtlinie an, und wählen Sie dann **"Weiter" aus.**
 
-5. Behalten Sie **auf** der Registerkarte "Speicherorte auswählen"  die Standardeinstellung aller Konten bei, oder wählen Sie "Bestimmte Speicherorte auswählen" aus, und geben Sie an, welche Konten ein- oder ausgeschlossen werden. Wählen Sie dann **Weiter** aus.
+5. Behalten Sie **auf der** Registerkarte "Speicherorte auswählen" die Standardeinstellung aller Konten bei, oder wählen Sie "Bestimmte **Speicherorte auswählen" aus.** Sie können Folgendes angeben:
+    1. Bis zu 1.000 einzelne Konten zum Ein- oder Ausschließen
+    1. Verteilerlisten und Sicherheitsgruppen, die ein- oder ausgeschlossen werden. **Dies ist eine öffentliche Vorschaufunktion.**
+    <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**-->  
 
 ![Speicherorte von DLP-Richtlinien](../media/dlp-teams-selectlocationsnewpolicy.png)
 
@@ -132,7 +141,7 @@ Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle mit Berechtigungen
 
 9. Überprüfen Sie **auf der Registerkarte "Einstellungen überprüfen"** die Einstellungen für die neue Richtlinie. Wählen Sie **"Bearbeiten"** aus, um Änderungen vorzunehmen. Wenn Sie fertig sind, wählen Sie **"Erstellen" aus.**
 
-Lassen Sie ungefähr eine Stunde zeit, bis ihre neue Richtlinie ihren Weg durch Ihr Rechenzentrum durcharbeiten und mit Benutzerkonten synchronisiert wird.
+Es dauert ungefähr eine Stunde, bis die neue Richtlinie ihren Weg durch Ihr Rechenzentrum durcharbeiten und mit Benutzerkonten synchronisiert wird.
 
 ## <a name="prevent-external-access-to-sensitive-documents"></a>Verhindern des externen Zugriffs auf vertrauliche Dokumente
 
@@ -141,7 +150,7 @@ Um sicherzustellen, dass externe Gäste standardmäßig nicht von SharePoint ode
 - Sie können sicherstellen, dass Dokumente geschützt sind, bis DLP sie überprüft und als sicher für die Freigabe markiert, indem Sie neue Dateien standardmäßig als [vertraulich kennzeichnen.](https://docs.microsoft.com/sharepoint/sensitive-by-default)
 - Empfohlene Struktur der DLP-Richtlinie
     - **Bedingungen:**
-        - Der Inhalt enthält einen der folgenden Typen vertraulicher Informationen: [Alles auswählen, was zutrifft]
+        - Inhalt enthält einen der folgenden Typen vertraulicher Informationen: [Alle angewendeten Auswählen]
         - Inhalte werden von Microsoft 365 für Personen außerhalb meiner Organisation freigegeben.
         <br/>![DLP-Bedingungen zum Erkennen der externen Freigabe vertraulicher Inhalte](../media/dlp-teams-external-sharing/external-condition.png)<br/>
 
@@ -149,8 +158,8 @@ Um sicherzustellen, dass externe Gäste standardmäßig nicht von SharePoint ode
     - **Aktionen**
         - Einschränken des Zugriffs auf inhalte für externe Benutzer
         - Benachrichtigen von Benutzern mit E-Mail- und Richtlinientipps
-        - Vorfallberichte an den Administrator senden    
-        <br/>![DLP-Aktion zum Blockieren der externen Freigabe von vertraulichen Inhalten](../media/dlp-teams-external-sharing/external-action.png)<br/>
+        - Senden von Vorfallberichten an den Administrator    
+        <br/>![DLP-Aktion zum Blockieren der externen Freigabe vertraulicher Inhalte](../media/dlp-teams-external-sharing/external-action.png)<br/>
 
 DLP-Richtlinie in Aktion beim Versuch, ein Dokument in SharePoint zu teilen, das vertrauliche Informationen für einen externen Gast enthält:
 <br/>![Externe Freigabe blockiert](../media/dlp-teams-external-sharing/external-sharing-blocked.png)<br/>
