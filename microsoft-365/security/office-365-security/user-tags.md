@@ -16,12 +16,12 @@ ms.collection:
 description: Administratoren können erfahren, wie Sie bestimmte Benutzergruppen mit Benutzertags in Microsoft Defender für Office 365 Plan 2 identifizieren. Die Tagfilterung ist in Warnungen, Berichten und Untersuchungen in Microsoft Defender für Office 365 verfügbar, um die markierten Benutzer schnell zu identifizieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ed91492e652773b3a48373df49b20d97887df6ee
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 62d858fe5962b94f536d4ccbd712e21bdd5caa57
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931434"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290129"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Benutzertags in Microsoft Defender für Office 365
 
@@ -30,10 +30,10 @@ ms.locfileid: "49931434"
 
 Benutzertags sind Bezeichner für bestimmte Benutzergruppen in [Microsoft Defender für Office 365.](office-365-atp.md) Es gibt zwei Arten von Benutzertags:
 
-- **Systemtags:** Derzeit sind [Prioritätskonten](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) der einzige Systemtagtyp.
+- **Systemtags:** Derzeit sind [Prioritätskonten](../../admin/setup/priority-accounts.md) der einzige Systemtagtyp.
 - **Benutzerdefinierte Tags:** Sie erstellen diese Benutzertags selbst.
 
-Wenn In Ihrer Organisation Defender für Office 365 Plan 2 (in Ihrem Abonnement oder als Add-On enthalten) vorhanden ist, können Sie zusätzlich zur Verwendung des Prioritätskontotags benutzerdefinierte Benutzertags erstellen.
+Wenn Ihre Organisation über Defender für Office 365 Plan 2 verfügt (in Ihrem Abonnement oder als Add-On enthalten), können Sie benutzerdefinierte Benutzertags zusätzlich zur Verwendung des Prioritätskontotags erstellen.
 
 Nachdem Sie Systemtags oder benutzerdefinierte Tags auf Benutzer angewendet haben, können Sie diese Tags als Filter in Warnungen, Berichten und Untersuchungen verwenden:
 
@@ -52,16 +52,16 @@ In diesem Artikel wird erläutert, wie Sie Benutzertags im Security & Compliance
 - Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen im Security & Compliance Center Berechtigungen zugewiesen werden.
   - Zum Erstellen, Ändern und Löschen von Benutzertags müssen Sie Mitglied der Rollengruppe **"Organisationsverwaltung"** oder **"Sicherheitsadministrator"** sein.
   - Zum Hinzufügen und Entfernen von Mitgliedern aus vorhandenen Benutzertags müssen Sie Mitglied der Rollengruppen **"Organisationsverwaltung",** **"Sicherheitsadministrator"** oder "Sicherheitsoperator" sein. 
-  - Für den schreibgeschützten Zugriff auf Benutzertags müssen  Sie Mitglied der Rollengruppe "Globaler Leser" oder **"Sicherheitsleseprogramm"** sein.
+  - Für den schreibgeschützten Zugriff auf Benutzertags müssen  Sie Mitglied der Rollengruppe "Globaler Leser" oder **"Sicherheitsleser"** sein.
 
   Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
   **Hinweise**:
 
-  - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   - Die Verwaltung von Benutzertags wird durch die **Rollen "Tag Reader",** **"Tag Contributor"** und **"Tag Manager"** gesteuert.
 
-- Sie können auch Prioritätskonten im Microsoft 365 Admin Center verwalten und überwachen. Anweisungen finden Sie unter [Verwalten und Überwachen von Prioritätskonten.](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)
+- Sie können auch Prioritätskonten im Microsoft 365 Admin Center verwalten und überwachen. Anweisungen finden Sie unter [Verwalten und Überwachen von Prioritätskonten.](../../admin/setup/priority-accounts.md)
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>Verwenden des Sicherheitscenters zum Erstellen von Benutzertags
 
@@ -84,13 +84,13 @@ In diesem Artikel wird erläutert, wie Sie Benutzertags im Security & Compliance
      - Um einzelne Einträge aus dem  Feld zu entfernen, klicken Sie auf das Symbol "Entfernen" für den Benutzer oder die ![ Gruppe im ](../../media/scc-remove-icon.png) Feld.
      - Um vorhandene Einträge aus der Liste  unterhalb des Felds zu entfernen, klicken Sie auf ![ "Entfernen", um den ](../../media/scc-remove-icon.png) Eintrag zu entfernen.
 
-     Klicken Sie nach Abschluss des Abschlusses auf **"Hinzufügen".**
+     Klicken Sie nach Abschluss des Vorgangs auf **Hinzufügen**.
 
    - Klicken **Sie auf "Importieren",** um eine Textdatei auszuwählen, die die E-Mail-Adressen der Benutzer oder Gruppen enthält. Stellen Sie sicher, dass die Textdatei einen Eintrag pro Zeile enthält.
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
-5. Überprüfen Sie **auf der Seite "Überprüfungstag"** Ihre Einstellungen. Sie können im jeweiligen **Abschnitt auf** "Bearbeiten" klicken, um Änderungen vorzunehmen.
+5. Überprüfen Sie **auf der Seite "Überprüfungstag"** Ihre Einstellungen. Sie können im jeweiligen Abschnitt **auf** "Bearbeiten" klicken, um Änderungen vorzunehmen.
 
    Klicken Sie nach Abschluss des Abschlusses auf **"Absenden".**
 
@@ -104,7 +104,7 @@ In diesem Artikel wird erläutert, wie Sie Benutzertags im Security & Compliance
 
    Klicken Sie nach Abschluss des Vorgangs auf **Schließen**.
 
-## <a name="use-the-security-center-to-modify-user-tags"></a>Ändern von Benutzertags mithilfe des Sicherheitscenters
+## <a name="use-the-security-center-to-modify-user-tags"></a>Verwenden des Sicherheitscenters zum Ändern von Benutzertags
 
 1. Wechseln Sie im Security Center zu Benutzertags für **die** \> **Bedrohungsverwaltung.**
 

@@ -14,19 +14,19 @@ description: Erfahren Sie, wie Sie E-Mail-Benutzer in Exchange Online Protection
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 34edafea7567da04094ea386d469d3d27937eee5
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 6a0dc1c0c343be77c6d6f713ee6b68a08a4fe5be
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166393"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289913"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Verwalten von E-Mail-Benutzern in EOP als eigenständige Lösung
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
--  [Exchange Online Protection als eigenständige Lösung](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection als eigenständige Lösung](exchange-online-protection-overview.md)
 
 In eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer sind E-Mail-Benutzer der grundlegende Benutzerkontotyp. Ein E-Mail-Benutzer verfügt über Kontoanmeldeinformationen in Ihrer eigenständigen EOP-Organisation und kann auf Ressourcen zugreifen (berechtigungen zugewiesen haben). Die E-Mail-Adresse eines E-Mail-Benutzers ist extern (z. B. in Ihrer lokalen E-Mail-Umgebung).
 
@@ -45,12 +45,12 @@ Für eigenständige EOP-Organisationen mit einer kleinen Anzahl von Benutzern k�
 
 - Wenn Sie E-Mail-Benutzer in EOP PowerShell erstellen, können Drosselungen auftreten. Außerdem verwenden die EOP -PowerShell-Cmdlets eine Batchverarbeitungsmethode, die zu einer Verteilungsverzögerung von ein paar Minuten führt, bevor die Ergebnisse der Befehle angezeigt werden.
 
-- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in Exchange Online Protection die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rollen "Erstellung von E-Mail-Empfängern" **(Erstellen)** und "E-Mail-Empfänger" (Ändern), die standardmäßig den Rollengruppen  "Organisationsverwaltung" (globale Administratoren) und "Empfängerverwaltung" zugewiesen sind.   Weitere Informationen finden Sie unter "Berechtigungen [in EOP als eigenständige](feature-permissions-in-eop.md) Lösung", und ändern Sie mithilfe der EAC die Liste der Mitglieder in [Rollengruppen.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in Exchange Online Protection die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rollen "Erstellung von E-Mail-Empfängern" **(Erstellen)** und "E-Mail-Empfänger" **(Ändern),** die standardmäßig den Rollengruppen "Organisationsverwaltung" (globale Administratoren) und "Empfängerverwaltung" zugewiesen sind.   Weitere Informationen finden Sie unter "Berechtigungen [in EOP als eigenständige](feature-permissions-in-eop.md) Lösung", und ändern Sie mithilfe der EAC die Liste der Mitglieder in [Rollengruppen.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
 - Informationen zu Tastenkombinationen, die für die Verfahren in diesem Artikel gelten können, finden Sie unter Tastenkombinationen für das [Exchange Admin Center in Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
-> Liegt ein Problem vor? Bitten Sie in den Exchange-Foren um Hilfe. Besuchen Sie das [Exchange Online Protection-Forum.](https://go.microsoft.com/fwlink/p/?linkId=285351)
+> Liegt ein Problem vor? Bitten Sie in den Exchange-Foren um Hilfe. Besuchen Sie das [Exchange Online Protection-Forum.](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE)
 
 ## <a name="use-the-exchange-admin-center-to-manage-mail-users"></a>Verwalten von E-Mail-Benutzern mithilfe des Exchange Admin Centers
 
@@ -74,7 +74,7 @@ Für eigenständige EOP-Organisationen mit einer kleinen Anzahl von Benutzern k�
 
    - <sup>\*</sup>**Benutzer-ID:** Geben Sie das Konto ein, mit dem sich die Person beim Dienst anmeldet. Die Benutzer-ID besteht aus einem Benutzernamen auf der linken Seite des @-Symbols (@) und einer Domäne auf der rechten Seite.
 
-   - <sup>\*</sup>**Neues Kennwort** und Kennwort bestätigen: Geben Sie das Kontokennwort ein, und geben Sie <sup>\*</sup> es erneut ein. Stellen Sie sicher, dass das Kennwort den Anforderungen ihrer Organisation an Länge, Komplexität und Verlauf entspricht.
+   - <sup>\*</sup>**Neues Kennwort** und <sup>\*</sup> **Kennwort bestätigen:** Geben Sie das Kontokennwort ein, und geben Sie es erneut ein. Stellen Sie sicher, dass das Kennwort den Kennwortlängen-, Komplexitäts- und Verlaufsanforderungen Ihrer Organisation entspricht.
 
 3. Wenn Sie fertig sind, klicken Sie auf **Speichern**, um den E-Mail-Benutzer zu erstellen.
 
@@ -104,7 +104,7 @@ Verwenden Sie **die Registerkarte "Allgemein",** um grundlegende Informationen z
 
 #### <a name="contact-information"></a>Kontaktinformationen
 
-Verwenden Sie die Registerkarte "Kontaktinformationen", um die Kontaktinformationen des Benutzers ein- oder zu ändern.  Die Informationen auf dieser Seite werden im Adressbuch angezeigt.
+Auf der **Registerkarte "Kontaktinformationen"** können Sie die Kontaktinformationen des Benutzers anzeigen oder ändern. Die Informationen auf dieser Seite werden im Adressbuch angezeigt.
 
 - **Street**
 - **City**
@@ -253,7 +253,7 @@ Verwenden Sie eines der folgenden Verfahren, um sicherzustellen, dass Sie E-Mail
 
 ## <a name="use-directory-synchronization-to-manage-mail-users"></a>Verwalten von E-Mail-Benutzern durch Verzeichnissynchronisierung
 
-In EOP als eigenständige Lösung ist die Verzeichnissynchronisierung für Kunden mit lokalem Active Directory verfügbar. Sie können diese Konten mit Azure Active Directory (Azure AD) synchronisieren, wo Kopien der Konten in der Cloud gespeichert werden. Wenn Sie Ihre vorhandenen Benutzerkonten mit Azure Active Directory  synchronisieren, können Sie diese Benutzer im Empfängerbereich des Exchange Admin Center (EAC) oder in der eigenständigen EOP PowerShell anzeigen.
+In EOP als eigenständige Lösung ist die Verzeichnissynchronisierung für Kunden mit lokalem Active Directory verfügbar. Sie können diese Konten mit Azure Active Directory (Azure AD) synchronisieren, wo Kopien der Konten in der Cloud gespeichert werden. Wenn Sie Ihre vorhandenen Benutzerkonten mit Azure Active Directory  synchronisieren, können Sie diese Benutzer im Empfängerbereich des Exchange Admin Centers (EAC) oder in der eigenständigen EOP PowerShell anzeigen.
 
 **Hinweise**:
 
@@ -265,7 +265,7 @@ In EOP als eigenständige Lösung ist die Verzeichnissynchronisierung für Kunde
 
   - **Verzeichnisbasierte Edgeblockierung (Directory Based Edge Blocking, DBEB):** Weitere Informationen zu DBEB finden Sie unter Verwenden der verzeichnisbasierten Edgeblockierung zum Ablehnen von Nachrichten, die an [ungültige Empfänger gesendet werden.](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)
 
-  - **Endbenutzerzugriff auf Quarantäne:** Für den Zugriff auf ihre isolierten Nachrichten müssen Empfänger über eine gültige Benutzer-ID und ein Kennwort im Dienst verfügen. Weitere Informationen zum Isolieren finden Sie unter "Suchen und [Veröffentlichen von Isolierten Nachrichten als Benutzer".](find-and-release-quarantined-messages-as-a-user.md)
+  - **Endbenutzerzugriff auf Quarantäne:** Für den Zugriff auf ihre isolierten Nachrichten müssen Empfänger über eine gültige Benutzer-ID und ein Kennwort im Dienst verfügen. Weitere Informationen zum Isolieren finden Sie unter "Suchen und Veröffentlichen von [Isolierten Nachrichten als Benutzer".](find-and-release-quarantined-messages-as-a-user.md)
 
   - **Nachrichtenflussregeln (auch** als Transportregeln bezeichnet): Wenn Sie die Verzeichnissynchronisierung verwenden, werden Ihre vorhandenen Active Directory-Benutzer und -Gruppen automatisch in die Cloud hochgeladen, und Sie können dann Nachrichtenflussregeln erstellen, die für bestimmte Benutzer und/oder Gruppen gelten, ohne sie manuell in den Dienst hinzufügen zu müssen. Bitte beachten Sie, dass [dynamische Verteilungsgruppen](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) nicht über die Verzeichnissynchronisierung synchronisiert werden können.
 

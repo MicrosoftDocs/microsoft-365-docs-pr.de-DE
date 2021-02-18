@@ -15,21 +15,21 @@ ms.collection:
 description: Administratoren erfahren, wie Sie Standard- und Strikte Richtlinieneinstellungen für die Schutzfunktionen von Exchange Online Protection (EOP) und Microsoft Defender für Office 365 anwenden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f57b388716eca02741ba48b3e6b47b7cf9f28884
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: e8f254f2a1ea2dcf1a4b51594a5c340e91cb3f15
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150081"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290775"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Voreingestellte Sicherheitsrichtlinien in EOP und Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Voreingestellte Sicherheitsrichtlinien bieten einen zentralen Ort zum gleichzeitigen Anwenden aller empfohlenen Spam-, Schadsoftware- und Phishingrichtlinien auf Benutzer. Die Richtlinieneinstellungen können nicht konfiguriert werden. Stattdessen werden sie von uns festgelegt und basieren auf unseren Beobachtungen und Erfahrungen in den Rechenzentren für ein Gleichgewicht zwischen dem Weghalten schädlicher Inhalte von Benutzern, ohne ihre Arbeit zu unterbrechen.
 
@@ -64,7 +64,7 @@ Die verfügbaren Bedingungen und Ausnahmen sind:
 
 ### <a name="policies-in-preset-security-policies"></a>Richtlinien in vordefinierten Sicherheitsrichtlinien
 
-Voreingestellte Sicherheitsrichtlinien verwenden die entsprechenden Richtlinien aus den verschiedenen Schutzfunktionen in EOP und Microsoft Defender für Office 365. Diese Richtlinien werden _erstellt, nachdem_  Sie den Benutzern die vordefinierten Sicherheitsrichtlinien **"Standardschutz"** oder "Strenger Schutz" zugewiesen haben. Sie können diese Richtlinien nicht ändern.
+Voreingestellte Sicherheitsrichtlinien verwenden die entsprechenden Richtlinien aus den verschiedenen Schutzfunktionen in EOP und Microsoft Defender für Office 365. Diese Richtlinien werden _erstellt, nachdem_  Sie den Benutzern die voreingestellten **Sicherheitsrichtlinien "Standardschutz"** oder "Strenger Schutz" zugewiesen haben. Sie können diese Richtlinien nicht ändern.
 
 - **Exchange Online Protection (EOP)-Richtlinien:** Dazu gehören Microsoft 365-Organisationen mit Exchange Online-Postfächern und eigenständige EOP-Organisationen ohne Exchange Online-Postfächer:
 
@@ -74,9 +74,9 @@ Voreingestellte Sicherheitsrichtlinien verwenden die entsprechenden Richtlinien 
 
 - **Microsoft Defender für Office 365-Richtlinien:** Dazu gehören Organisationen mit Microsoft 365 E5- oder Defender für Office 365-Add-On-Abonnements:
 
-  - Antiphishingrichtlinien in Microsoft Defender für Office 365 mit dem Namen **"Standard Preset Security Policy"** und **"Strict Preset Security Policy",** die Folgendes umfassen:
+  - Antiphishingrichtlinien in Microsoft Defender für Office 365 mit den Namen **"Standard Preset Security Policy"** und **"Strict Preset Security Policy",** die Folgendes umfassen:
 
-    - Dieselben [Spoofeinstellungen,](set-up-anti-phishing-policies.md#spoof-settings) die in den EOP-Antiphishingrichtlinien verfügbar sind.
+    - Die gleichen [Spoofeinstellungen,](set-up-anti-phishing-policies.md#spoof-settings) die in den EOP-Anti-Phishing-Richtlinien verfügbar sind.
     - [Identitätswechseleinstellungen](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Erweiterte Phishingschwellenwerte](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
@@ -115,11 +115,11 @@ Anders ausgedrückt: Die Einstellungen  der Richtlinie "Strenger  Schutz" setzen
 
   Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-  **Hinweis:** Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance _Center_ sowie Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  **Hinweis:** Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance _Center_ sowie Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Verwenden des Security & Compliance Center zum Zuweisen vordefinierter Sicherheitsrichtlinien zu Benutzern
 
-1. Wechseln Sie im Security & Compliance  Center zu "Richtlinienvoreingestellte Sicherheitsrichtlinien für die \>  \> **Bedrohungsverwaltung".**
+1. Wechseln Sie im Security & Compliance Center **zu** "Richtlinienvoreingestellte Sicherheitsrichtlinien für die Bedrohungsverwaltung". \>  \> 
 
 2. Klicken **Sie unter "Standardschutz"** **oder "Strenger Schutz"** auf **"Bearbeiten".**
 
@@ -143,7 +143,7 @@ Anders ausgedrückt: Die Einstellungen  der Richtlinie "Strenger  Schutz" setzen
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
-4. Wenn Ihre Organisation über Microsoft Defender für Office 365 verfügt, wenden Sie sich an die ATP-Schutzbestimmungen, um die internen Empfänger zu identifizieren, für die der [Microsoft Defender für Office 365-Schutz](#policies-in-preset-security-policies) gilt. 
+4. Wenn Ihre Organisation über Microsoft Defender für Office 365 verfügt, werden Sie zu den atp-Schutzbestimmungen, die angewendet werden, um die internen Empfänger zu identifizieren, für die der [Microsoft Defender für Office 365-Schutz](#policies-in-preset-security-policies) gilt. 
 
    Die Einstellungen und das Verhalten sind genau wie die **EOP-Schutzeinstellungen, die für Denkschritte gelten.**
 
@@ -159,8 +159,8 @@ Um die **Standardschutz-** oder **Strikte** Schutzsicherheitsrichtlinien zu deak
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Wie können Sie feststellen, dass diese Verfahren erfolgreich waren?
 
-Verwenden Sie eine Schutzeinstellung,  bei der  sich der Standardwert von der Standardschutzeinstellung abh?nst, die sich von  der Einstellung "Strenger Schutz" abh?nst, um zu überprüfen, ob Sie einem Benutzer den Standardschutz oder die Sicherheitsrichtlinie "Strenger Schutz" erfolgreich zugewiesen haben. 
+Verwenden Sie eine Schutzeinstellung, bei der  sich der Standardwert von der Standardschutzeinstellung abhing,  die sich von der Einstellung  "Strenger Schutz" abhing, um zu überprüfen, ob Sie einem Benutzer den Standardschutz oder die Sicherheitsrichtlinie "Strenger Schutz" erfolgreich zugewiesen haben. 
 
-Überprüfen Sie beispielsweise bei E-Mails, die als Spam erkannt wurden (keine Spam mit  hoher Confidence), dass die Nachricht an den Junk-E-Mail-Ordner für Standardschutzbenutzer zugestellt und für Benutzer des strengen Schutzes unter Quarantäne gestellt **wird.**
+Überprüfen Sie beispielsweise bei E-Mails, die als Spam erkannt werden (keine Spam mit  hoher Confidence), dass die Nachricht an den Junk-E-Mail-Ordner für Standardschutzbenutzer zugestellt und für Benutzer des strengen Schutzes unter Quarantäne gestellt **wird.**
 
 Oder stellen Sie bei Massen-E-Mails [sicher,](bulk-complaint-level-values.md)dass der BCL-Wert 6 oder höher die Nachricht an den Junk-E-Mail-Ordner für **Standardschutzbenutzer** übermittelt, und der BCL-Wert 4 oder höher isoliert die Nachricht für Strict-Schutz-Benutzer. 

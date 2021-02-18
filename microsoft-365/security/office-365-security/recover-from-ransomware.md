@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.article: how-to
+ms.topic: article
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,21 +15,21 @@ ms.collection:
 description: Microsoft 365-Administratoren können erfahren, wie sie sich nach einem Ransomware-Angriff wiederherstellen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b834adb3d9ba5f85984e09b4bb1e4b48673c32f2
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 120dd9ae71f04d6921fae95965f56f0a08f1280c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166903"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289305"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Wiederherstellen nach einem Ransomware-Angriff in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Auch wenn Sie alle Vorsichtsmaßnahmen ergreifen, um Ihre Organisation zu schützen, können Sie dennoch einem [Ransomwareangriff zum Opfer fallen.](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) Ransomware ist groß im Geschäft, und die Angriffe sind sehr ausgefeilt.
 
@@ -41,7 +41,7 @@ Die Schritte in diesem Artikel bieten Ihnen die beste Möglichkeit, Daten wieder
 
   Es wird außerdem empfohlen, den Ransomware-Angriff wie weiter unten in diesem Artikel beschrieben an Strafverfolgungsbehörden, Websites für Betrugsberichte und Microsoft zu melden.
 
-- Es ist wichtig, dass Sie schnell auf den Angriff und dessen Folgen reagieren. Je länger Sie warten, desto weniger wahrscheinlich ist es, dass Sie die betroffenen Daten wiederherstellen können.
+- Es ist wichtig, dass Sie schnell auf den Angriff und dessen Folgen reagieren. Je länger Sie warten, desto geringer ist die Wahrscheinlichkeit, dass Sie die betroffenen Daten wiederherstellen können.
 
 ## <a name="step-1-verify-your-backups"></a>Schritt 1: Überprüfen der Sicherungen
 
@@ -55,9 +55,9 @@ Der wichtigste Punkt dabei ist, die Verbreitung der Datenverschlüsselung durch 
 
 Wenn Sie E-Mails als Ziel der Ransomware-Verschlüsselung vermuten, deaktivieren Sie vorübergehend den Benutzerzugriff auf Postfächer. Exchange ActiveSync synchronisiert Daten zwischen Geräten und Exchange Online-Postfächern.
 
-Informationen zum Exchange ActiveSync für ein Postfach finden Sie unter Deaktivieren von Exchange ActiveSync für Benutzer [in Exchange Online.](https://support.microsoft.com/help/2795303)
+Informationen zum deaktivieren Exchange ActiveSync für ein Postfach finden Sie unter Deaktivieren Exchange ActiveSync für Benutzer [in Exchange Online](https://support.microsoft.com/help/2795303).
 
-Informationen zum Deaktivieren anderer Arten von Zugriff auf ein Postfach finden Sie unter:
+Informationen zum Deaktivieren anderer Zugriffstypen auf ein Postfach finden Sie unter:
 
 - [Aktivieren oder Deaktivieren von MAPI für ein Postfach.](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi)
 
@@ -75,7 +75,7 @@ Sie können [Windows Defender](https://www.microsoft.com/windows/comprehensive-s
 
 Eine Alternative, die Ihnen auch beim Entfernen von Ransomware oder Schadsoftware hilft, ist das Tool zum [Entfernen bösartiger Software (Malicious Software Removal Tool, MSRT).](https://www.microsoft.com/download/details.aspx?id=9905)
 
-Wenn diese Optionen nicht funktionieren, können Sie Windows Defender [Offline](https://support.microsoft.com/help/17466) versuchen oder Probleme beim Erkennen und Entfernen von [Schadsoftware beheben.](https://support.microsoft.com/help/4466982)
+Wenn diese Optionen nicht funktionieren, können Sie Windows Defender [Offline versuchen](https://support.microsoft.com/help/17466) oder Probleme beim Erkennen und Entfernen von [Schadsoftware beheben.](https://support.microsoft.com/help/4466982)
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>Schritt 4: Wiederherstellen von Dateien auf einem bereinigten Computer oder Gerät
 
@@ -127,9 +127,9 @@ Websites für betrugsberichterstattung bieten Informationen dazu, wie Sie Betrug
 
 - Irland: [AnÌ Síochána](http://www.garda.ie/)
 
-- Neuseeland: [Betrügerischer Verbraucherschutz](http://www.consumeraffairs.govt.nz/scams)
+- Neuseeland: [Betrugsversuche für Verbraucher](http://www.consumeraffairs.govt.nz/scams)
 
-- Vereinigtes Königreich: [Betrugsaktion](http://www.actionfraud.police.uk/)
+- Vereinigtes Königreich: [Betrugsvorfälle](http://www.actionfraud.police.uk/)
 
 - Vereinigte Staaten: [On Guard Online](http://www.onguardonline.gov/)
 
@@ -139,7 +139,7 @@ If your country isn't listed, ask your local or federal law enforcement agencies
 
 Sie können Phishingnachrichten, die Ransomware enthalten, mithilfe einer von mehreren Methoden melden. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Siehe auch
 
 - [Ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 

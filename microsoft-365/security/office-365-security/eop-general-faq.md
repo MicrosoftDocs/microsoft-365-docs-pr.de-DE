@@ -15,21 +15,21 @@ ms.custom:
 description: Erhalten Sie Antworten auf die häufigsten allgemeinen Fragen zum in der Cloud gehosteten Exchange Online Protection (EOP)-E-Mail-Filterdienst.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0a5712d2bfb110c3292dee06b456161599d40b1
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1a1ce845ef50d7485113c211b0a8d7770ea57815
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165487"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290021"
 ---
 # <a name="eop-general-faq"></a>EOP – Allgemeine häufig gestellte Fragen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
--  [Exchange Online Protection als eigenständige Lösung](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection als eigenständige Lösung](exchange-online-protection-overview.md)
 
-Hier werden die häufigsten allgemeinen Fragen zum cloudgehostten E-Mail-Filterdienst Exchange Online Protection (EOP) beantwortet. Themen mit weiteren häufig gestellten Fragen (FAQs) finden Sie unter den folgenden Links:
+Hier werden die häufigsten allgemeinen Fragen zum cloudgehostenen E-Mail-Filterdienst Exchange Online Protection (EOP) beantwortet. Themen mit weiteren häufig gestellten Fragen (FAQs) finden Sie unter den folgenden Links:
 
 - [Häufig gestellte Fragen zu durch EOP in Warteschlangen eingereihten, verzögerten oder nicht zugestellten Nachrichten](eop-queued-deferred-and-bounced-messages-faq.md)
 
@@ -71,7 +71,7 @@ Microsoft 365 ist der Name einer Sammlung von Produkten und Diensten, auf die ü
 
 Das Microsoft 365 Admin Center enthält einige dieser Informationen. Wenn Sie von einem Servicelevelereignis betroffen sind, sollte eine Kommunikationswarnung (in der Regel begleitet von einem Glockensymbol) angezeigt werden, nachdem Sie sich beim Microsoft 365 Admin Center anmelden. Es wird empfohlen, dass Sie sämtliche zugehörigen Hinweise lesen und entsprechend vorgehen.
 
-Im Hinblick auf neue EOP-Features ist [die Microsoft 365 Business](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) Roadmap eine gute Ressource, um Informationen zu bevorstehenden neuen Features zu erhalten. Außerdem veröffentlichen wir Blogartikel zu neuen Features auf der [Microsoft 365-Blogs-Website.](https://www.microsoft.com/microsoft-365/blog/)
+Im Hinblick auf neue EOP-Features ist [die Microsoft 365 For](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) Business Roadmap eine gute Ressource, um Informationen zu bevorstehenden neuen Features zu erhalten. Außerdem veröffentlichen wir Blogartikel zu neuen Features auf der [Microsoft 365-Blogs-Website.](https://www.microsoft.com/microsoft-365/blog/)
 
 ## <a name="does-the-service-work-with-legacy-exchange-versions-such-as-exchange-server-2010-and-non-exchange-environments"></a>Funktioniert der Dienst mit älteren Exchange-Versionen (z. B. Exchange Server 2010) und in Umgebungen, die nicht auf Exchange basieren?
 

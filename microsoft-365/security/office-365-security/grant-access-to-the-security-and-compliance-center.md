@@ -20,21 +20,21 @@ description: Benutzern müssen berechtigungen im Microsoft 365 Security & Compli
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e19825ce0f8224b2aee8e1419ef5d1ad425aadb
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e1a619b184c575e3750b2499adc661627b4d27d6
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165415"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289877"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Freigeben des Benutzerzugriffs auf das Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Benutzern müssen berechtigungen im Security & Compliance Center zugewiesen werden, bevor sie ihre Sicherheits- oder Compliancefeatures verwalten können. Als globaler Administrator oder Mitglied der Rollengruppe "OrganizationManagement" im Security & Compliance Center können Sie benutzern diese Berechtigungen erteilen. Benutzer können nur die Sicherheits- oder Compliancefeatures verwalten, auf die Sie ihnen Zugriff geben.
 
@@ -50,7 +50,7 @@ Weitere Informationen zu den verschiedenen Berechtigungen, die Sie Benutzern im 
 
 - Partner mit delegierter Zugriffsberechtigung (Delegated Access Permission, DAP), die über „Administer On Behalf OF“(AOBO)-Berechtigungen verfügen, können nicht auf das Security & Compliance Center zugreifen.
 
-## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>Verwenden des Security & Compliance Center, um einem anderen Benutzer Zugriff auf das Security & Compliance Center zu geben
+## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>Verwenden des Security & Compliance Centers, um einem anderen Benutzer Zugriff auf das Security & Compliance Center zu geben
 
 1. Öffnen Sie das Security & Compliance Center, und wechseln Sie <https://protection.office.com> dann zu **"Berechtigungen".** Um direkt zur Registerkarte **"Berechtigungen" zu** wechseln, öffnen Sie <https://protection.office.com/permissions> .
 

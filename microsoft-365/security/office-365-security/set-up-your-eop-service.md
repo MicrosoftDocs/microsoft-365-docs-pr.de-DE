@@ -15,19 +15,19 @@ ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Administratoren können erfahren, wie Sie eigenständige Exchange Online Protection (EOP) einrichten, um lokale E-Mail-Umgebungen zu schützen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 42952259da4086c4e147fb1a69fc081659dcc7e2
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: de3c40a15a69eb2430c9c9b0473a983ef7c5354f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166207"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290465"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Einrichten des eigenständigen EOP-Diensts
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
--  [Exchange Online Protection als eigenständige Lösung](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection als eigenständige Lösung](exchange-online-protection-overview.md)
 
 In diesem Thema wird erläutert, wie Sie eine eigenständige Exchange Online Protection (EOP)-Lösung einrichten. Wenn Sie vom Office 365-Assistenten für Domänen hierher geführt wurden, wechseln Sie zurück zum Office 365-Assistenten für Domänen, wenn Sie Exchange Online Protection nicht verwenden möchten. Wenn Sie weitere Informationen zum Konfigurieren von Connectors suchen, finden Sie diese unter [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
@@ -47,16 +47,16 @@ In diesem Thema wird erläutert, wie Sie eine eigenständige Exchange Online Pro
 - Informationen zu Tastenkombinationen, die für die Verfahren in diesem Artikel gelten können, finden Sie unter Tastenkombinationen für das [Exchange Admin Center in Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
-> Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)-Forum um Hilfe.
+> Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE)-Forum um Hilfe.
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Schritt 1: Verwenden des Microsoft 365 Admin Centers zum Hinzufügen und Überprüfen Ihrer Domäne
 
-1. Wechseln Sie [im Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center)zu **Setup,** um Ihre Domäne zum Dienst hinzuzufügen.
+1. Wechseln Sie [im Microsoft 365 Admin Center](../../admin/admin-overview/about-the-admin-center.md)zu **Setup,** um Ihre Domäne zum Dienst hinzuzufügen.
 
 2. Befolgen Sie die Schritte, um Ihrem DNS-Hostinganbieter die entsprechenden DNS-Datensätze hinzuzufügen, um die Domäneneigentümerschaft zu überprüfen.
 
 > [!TIP]
-> Hinzufügen einer Domäne zu [Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) und Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für [Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) sind hilfreiche Ressourcen, auf die Sie beim Hinzufügen Ihrer Domäne zum Dienst und beim Konfigurieren von DNS verweisen sollten.
+> Hinzufügen einer Domäne zu [Office 365](../../admin/setup/add-domain.md) und Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für [Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) sind hilfreiche Ressourcen, auf die Sie beim Hinzufügen Ihrer Domäne zum Dienst und beim Konfigurieren von DNS verweisen können.
 
 ## <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>Schritt 2: Hinzufügen von Empfängern und optionales Aktivieren der verzeichnisbasierten Edge-Blockierung (DBEB)
 
@@ -72,10 +72,10 @@ Erstellen Sie in der Exchange-Verwaltungskonsole (EAC) Connectors, die den Nachr
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Schritt 4: Zulassen eingehender SMTP-Verbindungen an Port 25
 
-Nachdem Sie Connectors konfiguriert haben, warten Sie 72 Stunden, um die Weitergabe Ihrer Aktualisierungen ihres DNS-Eintrags zu ermöglichen. Schränken Sie anschließend in Ihrer Firewall oder auf Ihren E-Mail-Servern den eingehenden SMTP-Datenverkehr für Port 25 so ein, dass nur E-Mails von EOP-Rechenzentren, genauer gesagt von den unter [Exchange Online Protection-IP-Adressen](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges) aufgeführten IP-Adressen, zugelassen werden. So schützen Sie Ihre lokale Umgebung, indem Sie den Bereich eingehender Nachrichten einschränken, die Sie empfangen können. Wenn Ihr E-Mail-Server Einstellungen aufweist, welche die IP-Adressen steuern, die für E-Mail-Relay eine Verbindung herstellen dürfen, sollten Sie zusätzlich diese Einstellungen aktualisieren.
+Nachdem Sie Connectors konfiguriert haben, warten Sie 72 Stunden, um die Weitergabe Ihrer Aktualisierungen ihres DNS-Eintrags zu ermöglichen. Schränken Sie anschließend in Ihrer Firewall oder auf Ihren E-Mail-Servern den eingehenden SMTP-Datenverkehr für Port 25 so ein, dass nur E-Mails von EOP-Rechenzentren, genauer gesagt von den unter [Exchange Online Protection-IP-Adressen](../../enterprise/urls-and-ip-address-ranges.md) aufgeführten IP-Adressen, zugelassen werden. So schützen Sie Ihre lokale Umgebung, indem Sie den Bereich eingehender Nachrichten einschränken, die Sie empfangen können. Wenn Ihr E-Mail-Server Einstellungen aufweist, welche die IP-Adressen steuern, die für E-Mail-Relay eine Verbindung herstellen dürfen, sollten Sie zusätzlich diese Einstellungen aktualisieren.
 
 > [!TIP]
-> Konfigurieren Sie Einstellungen auf dem SMTP-Server mit einem Verbindungstimeout von 60 Sekunden. Diese Einstellung ist in den meisten Situationen akzeptabel, sodass beispielsweise bei einer Nachricht, die mit einer großen Anlage gesendet wird, eine gewisse Verzögerung möglich ist.
+> Konfigurieren Sie Einstellungen auf dem SMTP-Server mit einem Verbindungstimeout von 60 Sekunden. Diese Einstellung ist in den meisten Situationen akzeptabel und ermöglicht z. B. bei einer Nachricht, die mit einer großen Anlage gesendet wird, eine gewisse Verzögerung.
 
 ## <a name="step-5-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Schritt 5: Sicherstellen, dass Spam an den Junk-E-Mail-Ordner jedes Benutzers geroutet wird
 
@@ -85,7 +85,7 @@ Wenn Sie Nachrichten nicht in den Junk-E-Mail-Ordner jedes Benutzers verschieben
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Schritt 6: Verwenden des Microsoft 365 Admin Centers, um Ihren MX-Eintrag auf EOP zu verweisen
 
-Führen Sie die Schritte zur Domänenkonfiguration aus, um Ihren MX-Eintrag für Ihre Domäne zu aktualisieren, damit eingehende E-Mails über EOP fließen. Stellen Sie sicher, dass Ihr MX-Eintrag direkt auf EOP verweist, damit kein Filterungsdienstrelais eines Drittanbieters eine E-Mail an EOP schreibt. Weitere Informationen finden Sie auch hierzu unter [Erstellen von DNS-Einträgen für Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Führen Sie die Schritte zur Domänenkonfiguration aus, um Ihren MX-Eintrag für Ihre Domäne zu aktualisieren, damit eingehende E-Mails über EOP fließen. Stellen Sie sicher, dass Ihr MX-Eintrag direkt auf EOP verweist, damit kein Filterungsdienstrelais eines Drittanbieters eine E-Mail an EOP schreibt. Weitere Informationen finden Sie auch hierzu unter [Erstellen von DNS-Einträgen für Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 > [!NOTE]
 > Wenn Sie Ihren MX-Eintrag auf einen anderen Server oder Dienst verweisen müssen, der sich vor EOP befindet, finden Sie weitere Informationen unter "Erweiterte Filterung für [Connectors in Exchange Online".](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)

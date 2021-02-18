@@ -18,20 +18,24 @@ description: Administratoren und Endbenutzer können erfahren, wie Sie Nachricht
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d5d3b7a51c39b85af8a6fae84f525da6d806789c
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 98964d17c41222fa708bdf0059c0e67151582ef1
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029584"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290369"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Manuelles Übermitteln von Nachrichten zur Analyse an Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
-> Wenn Sie ein Administrator in einer Organisation mit Exchange Online-Postfächern sind, empfehlen wir die Verwendung des Übermittlungsportals im Security & Compliance Center. Weitere Informationen finden Sie unter ["Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft ".](admin-submission.md)
+> Wenn Sie ein Administrator in einer Organisation mit Exchange Online-Postfächern sind, empfehlen wir die Verwendung des Übermittlungsportals im Security & Compliance Center. Weitere Informationen finden Sie unter "Use Admin Submission", um verdächtige [Spam-, Phishing-, URLs-](admin-submission.md)und Dateien an Microsoft zu übermitteln.
 
 It can be frustrating when users in your organization receive junk messages (spam) or phishing messages in their Inbox, or if they don't receive a legitimate email message because it's marked as junk. Wir optimieren unsere Spamfilter ständig, um präziser zu sein.
 
@@ -43,9 +47,9 @@ Sie und Ihre Benutzer können diesen Prozess unterstützen, indem Sie falsch pos
 ## <a name="submit-false-negatives-to-microsoft"></a>Übermitteln falsch negativer Meldungen an Microsoft
 
 > [!TIP]
-> Anstatt die folgenden Verfahren zum Melden falsch negativer Negative zu verwenden, können Benutzer in Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) das Report Message-Add-In oder das Phishing-Add-In "Melden" verwenden. Informationen zum Installieren und Verwenden dieser Tools finden Sie unter "Aktivieren des [Nachrichten-Add-Ins](enable-the-report-message-add-in.md) "Melden" und "Aktivieren des [Phishing-Add-Ins "Melden"](enable-the-report-phish-add-in.md).
+> Anstatt die folgenden Verfahren zum Melden falsch negativer Negative zu verwenden, können Benutzer in Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) das Report Message-Add-In oder das Phishing-Add-In "Melden" verwenden. Informationen zum Installieren und Verwenden dieser Tools finden Sie unter "Aktivieren des [Add-Ins](enable-the-report-message-add-in.md) "Nachricht melden" und "Aktivieren des [Phishing-Add-Ins "Melden"](enable-the-report-phish-add-in.md).
 
-Wenn Sie eine Nachricht erhalten, die die Spamfilterung passiert hat, die als Spam oder Phishing identifiziert worden sein sollte, können Sie die Nachricht gegebenenfalls an die Microsoft-Teams für die Spamanalyse und die Microsoft-Phishinganalyse übermitteln. Die Analysten überprüfen die Nachricht und fügen sie den dienstweiten Filtern hinzu, wenn sie die Klassifizierungskriterien erfüllt.
+Wenn Sie eine Nachricht erhalten, die die Spamfilterung passiert hat, die als Spam oder Phishing identifiziert worden sein sollte, können Sie die Nachricht an die Microsoft Spam Analysis- und Microsoft Phishing Analysis Teams übermitteln. Die Analysten überprüfen die Nachricht und fügen sie den dienstweiten Filtern hinzu, wenn sie die Klassifizierungskriterien erfüllt.
 
 1. Erstellen Sie eine neue leere E-Mail-Nachricht mit einem der folgenden Empfänger:
 
@@ -53,7 +57,7 @@ Wenn Sie eine Nachricht erhalten, die die Spamfilterung passiert hat, die als Sp
 
    - **Phishing:**`phish@office365.microsoft.com`
 
-2. Ziehen Sie die Junk- oder Phishingnachricht per Drag and Drop in die neue Nachricht. Dadurch wird die Junk- oder Phishingnachricht als Anlage in der neuen Nachricht gespeichert. Kopieren Sie den Inhalt der Nachricht nicht, und fügen Sie ihn nicht ein, und geben Sie die Nachricht nicht weiter (wir benötigen die ursprüngliche Nachricht, damit wir die Nachrichtenkopfzeilen überprüfen können).
+2. Ziehen Sie die Junk- oder Phishingnachricht per Drag and Drop in die neue Nachricht. Dadurch wird die Junk- oder Phishingnachricht als Anlage in der neuen Nachricht gespeichert. Kopieren Und fügen Sie den Inhalt der Nachricht nicht ein, und geben Sie sie nicht weiter (wir benötigen die ursprüngliche Nachricht, damit wir die Nachrichtenkopfzeilen überprüfen können).
 
    > [!NOTE]
    >
@@ -66,7 +70,7 @@ Wenn Sie eine Nachricht erhalten, die die Spamfilterung passiert hat, die als Sp
 3. Klicken Sie nach Abschluss des Abschlusses auf **"Senden".**
 
 > [!TIP]
-> Administratoren haben mehrere Möglichkeiten, bestimmte Nachrichten zu blockieren, die falsch als Spam erkannt werden. Weitere Informationen finden Sie unter [Erstellen von Listen blockierter Absender in EOP](create-block-sender-lists-in-office-365.md).
+> Administratoren haben mehrere Möglichkeiten, bestimmte Nachrichten zu blockieren, die falsch als Spam identifiziert werden. Weitere Informationen finden Sie unter [Erstellen von Listen blockierter Absender in EOP](create-block-sender-lists-in-office-365.md).
 
 ## <a name="submit-false-positives-to-microsoft"></a>Übermitteln falsch positiver Ergebnisse an Microsoft
 
@@ -78,7 +82,7 @@ Wenn eine Nachricht fälschlicherweise als Spam identifiziert wurde, können Sie
 
 1. Erstellen Sie eine neue leere E-Mail-Nachricht mit `not_junk@office365.microsoft.com` dem Empfänger:
 
-2. Ziehen Sie die falsch identifizierte Nachricht per Drag and Drop in die neue Nachricht. Dadurch wird die falsch identifizierte Nachricht als Anlage in der neuen Nachricht gespeichert. Kopieren Sie den Inhalt der Nachricht nicht, und fügen Sie ihn nicht ein, und geben Sie die Nachricht nicht weiter (wir benötigen die ursprüngliche Nachricht, damit wir die Nachrichtenkopfzeilen überprüfen können).
+2. Ziehen Sie die falsch identifizierte Nachricht per Drag and Drop in die neue Nachricht. Dadurch wird die falsch identifizierte Nachricht als Anlage in der neuen Nachricht gespeichert. Kopieren Und fügen Sie den Inhalt der Nachricht nicht ein, und geben Sie sie nicht weiter (wir benötigen die ursprüngliche Nachricht, damit wir die Nachrichtenkopfzeilen überprüfen können).
 
    > [!NOTE]
    >

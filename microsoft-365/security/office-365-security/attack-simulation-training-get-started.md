@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,13 +17,15 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können erfahren, wie Sie mithilfe von Angriffssimulationsschulungen simulierte Phishing- und Kennwortangriffe in ihren Microsoft 365 E5- oder Microsoft Defender für Office 365 Plan 2-Organisationen ausführen.
-ms.openlocfilehash: 2c00fb27748887c6b8e2fa1458b10f0c3405eef7
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+description: Administratoren können erfahren, wie Sie mithilfe des Angriffssimulationstrainings simulierte Phishing- und Kennwortangriffe in ihren Microsoft 365 E5- oder Microsoft Defender für Office 365 Plan 2-Organisationen ausführen.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1ec5b8175db6eb03e59a31a4dc21d9649c5e7616
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877164"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289894"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Erste Schritte mit dem Angriffssimulationstraining
 
@@ -37,7 +38,7 @@ Wenn Ihre Organisation über Microsoft 365 E5 oder Microsoft Defender für Offic
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Um das Microsoft Security Center zu öffnen, wechseln Sie zu <https://security.microsoft.com/> . Das Training zur Angriffssimulation ist im **E-Mail- und Zusammenarbeitstraining** \> **zur Angriffssimulation verfügbar.** Öffnen Sie das , um direkt zum Angriffssimulationstraining zu <https://security.microsoft.com/attacksimulator> wechseln.
+- Um das Microsoft Security Center zu öffnen, wechseln Sie zu <https://security.microsoft.com/> . Das Training zur Angriffssimulation ist im **E-Mail- und Zusammenarbeitstraining** \> **zur Angriffssimulation verfügbar.** Öffnen Sie das , um direkt zum Training zur Angriffssimulation zu <https://security.microsoft.com/attacksimulator> wechseln.
 
 - Weitere Informationen zur Verfügbarkeit von Attack Simulation Training in verschiedenen Microsoft 365-Abonnements finden Sie in [der Microsoft Defender für Office 365-Dienstbeschreibung.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
@@ -45,11 +46,11 @@ Wenn Ihre Organisation über Microsoft 365 E5 oder Microsoft Defender für Offic
   - **Administratoren des Angriffssimulators:** Erstellen und Verwalten aller Aspekte von Angriffssimulationskampagnen.
   - **Autoren der Angriffssimulatornutzlast:** Erstellen Sie Angriffsnutzlasten, die ein Administrator später initiieren kann.
 
-  Weitere Informationen finden Sie unter ["Berechtigungen" im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) oder unter ["Informationen zu Administratorrollen".](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
+  Weitere Informationen finden Sie unter ["Berechtigungen" im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) oder zu [Administratorrollen.](../../admin/add-users/about-admin-roles.md)
 
-- Es gibt keine entsprechenden PowerShell-Cmdlets für attack simulation training.
+- Es gibt keine entsprechenden PowerShell-Cmdlets für das Training zur Angriffssimulation.
 
-- Angriffssimulations- und Schulungsdaten werden mit anderen Kundendaten für Microsoft 365-Dienste gespeichert. Weitere Informationen finden Sie unter [Microsoft 365-Datenspeicherorte.](/microsoft-365/enterprise/o365-data-locations) Die Angriffssimulation ist derzeit nicht in den folgenden Regionen verfügbar: SGP, NOR, UAE, ZAF, GER, BRA und CHE.
+- Daten zu Angriffssimulation und Schulung werden mit anderen Kundendaten für Microsoft 365-Dienste gespeichert. Weitere Informationen finden Sie unter [Microsoft 365-Datenspeicherorte.](/microsoft-365/enterprise/o365-data-locations) Die Angriffssimulation ist derzeit nicht in den folgenden Regionen verfügbar: SGP, NOR, UAE, ZAF, GER, BRA und CHE.
 
 ## <a name="simulations"></a>Simulationen
 
@@ -57,9 +58,9 @@ Wenn Ihre Organisation über Microsoft 365 E5 oder Microsoft Defender für Offic
 
 Im Training zur Angriffssimulation sind mehrere Arten von Social -Engineering-Techniken verfügbar:
 
-- **Datenergreifung** mit Anmeldeinformationen: Ein Angreifer sendet dem Empfänger eine Nachricht, die eine URL enthält. Wenn der Empfänger auf die URL klickt, wird er zu einer Website weitergeleitet, in der in der Regel ein Dialogfeld angezeigt wird, in dem der Benutzer nach benutzername und Kennwort gefragt wird. In der Regel ist die Zielseite so umdeutend, dass sie eine bekannte Website repräsentiert, um eine Vertrauensstellung für den Benutzer zu schaffen.
+- **Datenergreifung** mit Anmeldeinformationen: Ein Angreifer sendet dem Empfänger eine Nachricht, die eine URL enthält. Wenn der Empfänger auf die URL klickt, wird er zu einer Website weitergeleitet, in der normalerweise ein Dialogfeld angezeigt wird, in dem der Benutzer nach benutzername und Kennwort gefragt wird. In der Regel ist die Zielseite so umdeutend, dass sie eine bekannte Website repräsentiert, um eine Vertrauensstellung für den Benutzer zu schaffen.
 
-- **Schadsoftwareanlage:** Ein Angreifer sendet dem Empfänger eine Nachricht, die eine Anlage enthält. Wenn der Empfänger die Anlage öffnet, wird beliebiger Code (z. B. ein Makro) auf dem Gerät des Benutzers ausgeführt, um dem Angreifer zu helfen, zusätzlichen Code zu installieren oder sich weiter zu verangreifen.
+- **Schadsoftwareanlage:** Ein Angreifer sendet dem Empfänger eine Nachricht, die eine Anlage enthält. Wenn der Empfänger die Anlage öffnet, wird beliebiger Code (z. B. ein Makro) auf dem Gerät des Benutzers ausgeführt, um dem Angreifer zu helfen, zusätzlichen Code zu installieren oder sich weiter zu verfestigen.
 
 - **Link in Anlage:** Dies ist eine Hybridbereitstellung einer Anmeldeinformationsernte. Ein Angreifer sendet dem Empfänger eine Nachricht, die eine URL innerhalb einer Anlage enthält. Wenn der Empfänger die Anlage öffnet und auf die URL klickt, wird er zu einer Website weitergeleitet, in der normalerweise ein Dialogfeld angezeigt wird, in dem der Benutzer nach benutzername und Kennwort gefragt wird. In der Regel ist die Zielseite so umdeutend, dass sie eine bekannte Website repräsentiert, um eine Vertrauensstellung für den Benutzer zu schaffen.
 
@@ -68,7 +69,7 @@ Im Training zur Angriffssimulation sind mehrere Arten von Social -Engineering-Te
 - **Laufwerk-nach-URL:** Ein Angreifer sendet dem Empfänger eine Nachricht, die eine URL enthält. Wenn der Empfänger auf die URL klickt, wird er zu einer Website weitergeleitet, die versucht, Hintergrundcode ausführen. Dieser Hintergrundcode versucht, Informationen über den Empfänger zu sammeln oder beliebigen Code auf dem Gerät zu bereitstellen. In der Regel ist die Zielwebsite eine bekannte Website, die gefährdet wurde, oder ein Klon einer bekannten Website. Die Vertrautheit mit der Website trägt dazu bei, den Benutzer davon zu überzeugen, dass der Link sicher angeklickt werden kann. Diese Technik wird auch als _Grubenangriff bezeichnet._
 
 > [!NOTE]
-> Überprüfen Sie die Verfügbarkeit der simulierten Phishing-URL in Ihren unterstützten Webbrowsern, bevor Sie die URL in einer Phishingkampagne verwenden. Wir arbeiten zwar mit vielen Anbietern von URL-Reputation zusammen, um diese Simulations-URLs immer zu erlauben, aber wir verfügen nicht immer über vollständige Abdeckung (z. B. Google Safe Browsing). Die meisten Anbieter bieten Anleitungen, mit denen Sie immer bestimmte URLs zulassen können (z. B. <https://support.google.com/chrome/a/answer/7532419> ).
+> Überprüfen Sie die Verfügbarkeit der simulierten Phishing-URL in Ihren unterstützten Webbrowsern, bevor Sie die URL in einer Phishingkampagne verwenden. Während wir mit vielen Anbietern von URL-Reputation zusammenarbeiten, um diese Simulations-URLs immer zu erlauben, verfügen wir nicht immer über vollständige Abdeckung (z. B. Google Safe Browsing). Die meisten Anbieter bieten Anleitungen, mit denen Sie immer bestimmte URLs zulassen können (z. B. <https://support.google.com/chrome/a/answer/7532419> ).
 
 Die URLs, die von der Attack Simulation Training verwendet werden, werden in der folgenden Liste beschrieben:
 

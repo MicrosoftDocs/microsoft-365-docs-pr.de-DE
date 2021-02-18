@@ -7,7 +7,7 @@ author: msfttracyp
 manager: dansimp
 ms.date: 01/21/2021
 audience: ITPro
-ms.topic: How-to
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: ''
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender für Office 365 E5- und ATP P1- und ATP -P2-Kunden können jetzt eine 360-Grad-Ansicht jeder E-Mail mit E-Mail-Entitätsseite erhalten.
-ms.openlocfilehash: 3b9198c9d91969d3b57f379d17de33a1c00d37f6
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 0a866b4d635e5c9e26b6fc065503b44ee2063e9f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50143139"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289485"
 ---
 # <a name="the-email-entity-page"></a>Die Seite "E-Mail-Entität"
 
@@ -30,7 +30,7 @@ ms.locfileid: "50143139"
 - [Verwenden von Registerkarten der E-Mail-Entitätsseite](#use-email-entity-page-tabs)
 - [Neu auf der E-Mail-Entitätsseite](#new-to-the-email-entity-page)
 
-Administratoren von Microsoft Defender für Office 365 (oder MDO) E5 sowie MDO P1 und P2 verfügen über eine 360-Grad-Ansicht von E-Mails auf der Seite "E-Mail-Entität". Diese Go-to-E-Mail-Seite wurde erstellt, um Informationen zu verbessern, die über das [Flyout "E-Mail-Details" des Bedrohungs-Explorers übermittelt wurden.](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer-views)
+Administratoren von Microsoft Defender für Office 365 (oder MDO) E5 sowie MDO P1 und P2 verfügen über eine 360-Grad-Ansicht von E-Mails auf der Seite "E-Mail-Entität". Diese Go-to-E-Mail-Seite wurde erstellt, um Informationen zu verbessern, die über das [Flyout "E-Mail-Details" des Bedrohungs-Explorers übermittelt wurden.](threat-explorer-views.md)
 
 ## <a name="reach-the-email-entity-page"></a>Erreichen der E-Mail-Entitätsseite
 
@@ -48,7 +48,7 @@ Wählen Sie im Bedrohungs-Explorer den Betreff einer E-Mail aus, die Sie untersu
 :::image type="content" source="../../media/email-entities-2-eep.png" alt-text="Diese Grafik der E-Mail-Entitätsseite konzentriert sich auf Überschriften, die Angezeigt werden. Beachten Sie, dass hier der E-Mail-Header angezeigt wird.":::
 
 > [!NOTE]
-> Die zum Anzeigen und Verwenden dieser Seite erforderlichen Berechtigungen sind mit dem Anzeigen des Bedrohungs-Explorers identisch. Der Administrator muss Mitglied des globalen Admins oder globalen Lesers oder Sicherheitsadministrators oder Sicherheitsleseers sein.
+> Die zum Anzeigen und Verwenden dieser Seite erforderlichen Berechtigungen sind dieselben wie zum Anzeigen des Bedrohungs-Explorers. Der Administrator muss Mitglied des globalen Admins oder globalen Lesers oder Sicherheitsadministrators oder Sicherheitsleseers sein.
 
 ## <a name="read-the-email-entity-page"></a>Lesen der E-Mail-Entitätsseite
 
@@ -58,22 +58,22 @@ Die Struktur ist so konzipiert, dass sie auf einen Blick leicht zu lesen und zu 
 
     :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="Grafik der E-Mail-Entitätsseite mit hervorgehobener linker Seite. Der Titel und die Fakten zur E-Mail-Zustellung sind hier zu Ende.":::
 
-2. In der oberen rechten Ecke befinden sich die Aktionen, die für eine E-Mail-Nachricht ergriffen werden können. Alle Aktionen, die über Explorer möglich sind, stehen auch über die E-Mail-Entitätsseite zur Verfügung.
+2. In der oberen rechten Ecke befinden sich die Aktionen, die für eine E-Mail-Nachricht ergriffen werden können. Alle Aktionen, die über Explorer ergriffen werden können, sind auch über die E-Mail-Entitätsseite verfügbar.
 
-    :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="Grafik der E-Mail-Entitätsseite mit hervorgehobener *right*-Seite, dieses Mal. Aktionen wie &quot;E-Mail-Vorschau&quot; und &quot;In Quarantäne wechseln&quot; sind hier.":::
+    :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="Grafik der E-Mail-Entitätsseite mit hervorgehobener *right*-Seite. Aktionen wie &quot;E-Mail-Vorschau&quot; und &quot;In Quarantäne wechseln&quot; sind hier zu finden.":::
 
-3. Eine tiefer gehende Analyse kann durch Sortieren der restlichen Seite durchgeführt werden. Überprüfen Sie die E-Mail-Erkennungsdetails, den E-Mail-Authentifizierungsstatus und den Header. Dieser Bereich sollte von Fall zu Fall betrachtet werden, aber die Informationen auf diesen Registerkarten sind für jede E-Mail verfügbar.
+3. Eine tiefer gehende Analyse kann durch Sortieren der restlichen Seite durchgeführt werden. Überprüfen Sie die E-Mail-Erkennungsdetails, den E-Mail-Authentifizierungsstatus und die Kopfzeile. Dieser Bereich sollte von Fall zu Fall betrachtet werden, aber die Informationen auf diesen Registerkarten sind für jede E-Mail verfügbar.
 
     :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="Der Hauptbereich dieser Seite enthält den E-Mail-Header und den Authentifizierungsstatus.":::
 
 ### <a name="use-email-entity-page-tabs"></a>Verwenden von Registerkarten der E-Mail-Entitätsseite
 
-Mit den Registerkarten am oberen Rand der Entitätsseite können Sie E-Mails effizient untersuchen.
+Mit den Registerkarten oben auf der Entitätsseite können Sie E-Mails effizient untersuchen.
 
 1. **Zeitachse:** In der Zeitachsenansicht für eine E-Mail (auf der Zeitachse des Bedrohungs-Explorers) wird die ursprüngliche Zustellung an Post-Delivery-Ereignisse angezeigt, die in einer E-Mail auftreten. Bei E-Mails ohne Aktionen nach der Zustellung wird in der Ansicht die ursprüngliche Zustellungszeile in der Zeitachsenansicht angezeigt. Ereignisse wie: Automatische Bereinigung zur Nullstunde (ZAP), Behebung, URL-Klicks, usw. aus Quellen wie: System, Administrator und Benutzer, werden hier in der Reihenfolge angezeigt, in der sie aufgetreten sind.
 2. **Analyse:** Analyse zeigt Felder, die Administratoren dabei helfen, eine E-Mail im Detail zu analysieren. In Fällen, in denen Administratoren mehr über Erkennungs-, Absender-/Empfänger- und E-Mail-Authentifizierungsdetails wissen müssen, sollten sie die Registerkarte "Analyse" verwenden. Links für Anlagen und URLs finden Sie auch auf dieser Seite unter "Verwandte Entitäten". Sowohl Anlagen als auch identifizierte Bedrohungen sind hier nummeriert, und wenn Sie darauf klicken, werden Sie direkt zu den Seiten "Anlagen" und "URL" geklickt. Diese Registerkarte verfügt auch über eine Ansichtskopfoption zum *Anzeigen des E-Mail-Headers.* Administratoren können aus Gründen der Übersichtlichkeit alle Details aus E-Mail-Kopfzeilen nebeneinander mit Informationen im Hauptbereich vergleichen.
-3. **Anlagen:** Dadurch werden Anlagen untersucht, die in der E-Mail mit anderen Details zu Anlagen gefunden wurden. Die Anzahl der angezeigten Anlagen ist derzeit auf 10 beschränkt. Beachten Sie, dass hier auch Details zur Detonation von Anlagen angezeigt werden, die als bösartig gefunden wurden.
-4. **URLs:** Auf dieser Registerkarte werden URLs in der E-Mail mit weiteren Details zu den URLs aufgeführt. Die Anzahl der URLs ist derzeit auf 10 beschränkt, aber diese 10 sind priorisiert, um zuerst schädliche *URLs zu zeigen.* Priorisierung spart Ihnen Zeit und Erratenarbeit. Die URLs, die als bösartig und detoniert gefunden wurden, werden ebenfalls hier angezeigt.
+3. **Anlagen:** Dadurch werden Anlagen untersucht, die in der E-Mail mit anderen Details zu Anlagen gefunden wurden. Die Anzahl der angezeigten Anlagen ist derzeit auf 10 beschränkt. Beachten Sie, dass hier auch Details zur Detonation von Anlagen angezeigt werden, die als bösartig festgestellt wurden.
+4. **URLs:** Auf dieser Registerkarte werden URLs in der E-Mail mit weiteren Details zu den URLs aufgeführt. Die Anzahl der URLs ist derzeit auf 10 beschränkt, aber diese 10 sind priorisiert, um zuerst schädliche *URLs zu zeigen.* Priorisierung spart Ihnen Zeit und Erratenarbeit. Die URLs, die als bösartig und detoniert gefunden wurden, werden hier ebenfalls angezeigt.
 5. **Ähnliche** E-Mails: Auf dieser Registerkarte werden alle E-Mails aufgeführt, die der Für diese E-Mail spezifischen Kombination aus Netzwerknachrichten-ID und Empfängern ähneln.  Ähnlichkeit basiert nur auf dem *Textkörper der* Nachricht. Die E-Mail-Entscheidung, sie als "ähnlich" zu kategorisieren, umfasst keine Überlegungen zu *Anlagen.*
 
 ## <a name="new-to-the-email-entity-page"></a>Neu auf der E-Mail-Entitätsseite
@@ -81,7 +81,7 @@ Mit den Registerkarten am oberen Rand der Entitätsseite können Sie E-Mails eff
 Diese E-Mail-Entitätsseite enthält neue Funktionen. Hier ist die Liste.
 
 ### <a name="email-preview-for-cloud-mailboxes"></a>E-Mail-Vorschau für Cloudpostfächer
-Administratoren können eine Vorschau von E-Mails in Cloudpostfächern ***anzeigen,*** wenn die E-Mails noch in der Cloud vorhanden sind. Bei einem soft delete (durch einen Administrator oder Benutzer) oder ZAP (in Quarantäne) sind E-Mails nicht mehr am Cloudspeicherort vorhanden. In diesem Fall können Administratoren keine Vorschau dieser bestimmten E-Mails anzeigen. E-Mails, die gelöscht wurden oder bei denen die Zustellung fehlgeschlagen ist, wurden nie tatsächlich in das Postfach verschoben. Aus diesem Grund können Administratoren auch keine Vorschau dieser E-Mails anzeigen.
+Administratoren können eine Vorschau von E-Mails in Cloudpostfächern ***anzeigen,*** wenn die E-Mails noch in der Cloud vorhanden sind. Bei einem soft delete (durch einen Administrator oder Benutzer) oder ZAP (in Quarantäne) sind E-Mails am Cloudspeicherort nicht mehr vorhanden. In diesem Fall können Administratoren diese bestimmten E-Mails nicht in der Vorschau anzeigen. E-Mails, die gelöscht wurden oder bei denen die Zustellung fehlgeschlagen ist, haben es nie tatsächlich in das Postfach verschoben. Aus diesem Grund können Administratoren auch keine Vorschau dieser E-Mails anzeigen.
 
 > [!WARNING]
 >Für die Vorschau von E-Mails muss administratoren eine spezielle Rolle namens ***Preview** _ zugewiesen werden. Sie können diese Rolle hinzufügen, indem Sie zu _ *Permissions & roles** > Email & collaboration **roles** in *security.microsoft.com* oder **Permissions** in *protection.office.com .* Fügen Sie ***die Vorschaurolle*** zu einer der Rollengruppen oder eine Kopie einer Rollengruppe hinzu, mit der Administratoren in Ihrer Organisation im Bedrohungs-Explorer arbeiten können.
@@ -90,7 +90,7 @@ Administratoren können eine Vorschau von E-Mails in Cloudpostfächern ***anzeig
 
 Diese Details sind spezifisch für E-Mail-Anlagen und URLs.
 
-Benutzern werden anreicherte Detonationsdetails für bekannte schädliche Anlagen oder Hyperlinks in ihren Postfächern angezeigt, einschließlich detonation chain, Detonation summary, Screenshot, and Observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
+Benutzern werden detailreichere Detonationsdetails für bekannte schädliche Anlagen oder Hyperlinks in ihren Postfächern angezeigt, einschließlich Detonation Chain, Detonation Summary, Screenshot, and Observed Behavior Details, um Kunden zu verstehen, warum die Anlage oder URL als bösartig und abgesenkt eingestuft wurde.
  
 - *Detonationskette:* Eine einzelne Datei- oder URL-Detonation kann mehrere Detonationen auslösen. Die Detonation Chain verfolgt den Pfad der Detonationen, einschließlich der ursprünglichen schädlichen Datei oder URL, die die Wertung verursacht hat, und alle anderen Dateien oder URLs, die durch die Detonation verursacht wurden. Diese URLs oder angefügten Dateien sind möglicherweise nicht direkt in der E-Mail vorhanden, aber die Analyse ist wichtig, um zu ermitteln, warum die Datei oder URL als bösartig ermittelt wurde.
 - *Zusammenfassung der Detonation:* Hier finden Sie Informationen zu:
@@ -106,21 +106,21 @@ Benutzern werden anreicherte Detonationsdetails für bekannte schädliche Anlage
 
 *Tags:* Dies sind Tags, die auf Benutzer angewendet werden. Wenn der Benutzer ein Empfänger ist, wird Administratoren ein *Empfängertag* angezeigt. Ebenso, wenn der Benutzer ein Absender ist, ein *Absendertag.* Diese wird auf der linken Seite der Seite mit den E-Mail-Entitäten angezeigt (in dem Teil, der als *"sticky"* beschrieben wird und somit mit der Seite verankert ist).
 
-*Aktueller Zustellungsspeicherort:* Der aktuelle Zustellungsspeicherort ist der Ort, an dem eine E-Mail nach Systemaktionen wie ZAP oder Administratoraktionen wie "Zu gelöschten Elementen verschieben" gelandet ist. Der aktuelle Zustellungsspeicherort dient nicht dazu, Administratoren über den aktuellen Speicherort der *Nachricht zu* informieren. Wenn ein Benutzer beispielsweise eine Nachricht löscht oder in ein Archiv verschiebt, wird der Zustellungsspeicherort nicht aktualisiert. Wenn jedoch eine Systemaktion stattgefunden hat und der Speicherort aktualisiert wurde (z. B. ein ZAP, das zu einer E-Mail führt, die in Quarantäne verschoben wird), würde dies den neuesten Zustellungsspeicherort in "Quarantäne" aktualisieren.
+*Aktueller* Zustellungsspeicherort: Der aktuelle Zustellungsspeicherort ist der Ort, an dem eine E-Mail nach Systemaktionen wie ZAP oder Administratoraktionen wie "Nach gelöschten Elementen verschieben" gelandet ist. Der aktuelle Zustellungsspeicherort dient nicht dazu, Administratoren über den aktuellen Speicherort der *Nachricht zu* informieren. Wenn ein Benutzer beispielsweise eine Nachricht löscht oder in ein Archiv verschiebt, wird der Zustellungsspeicherort nicht aktualisiert. Wenn jedoch eine Systemaktion stattgefunden hat und der Speicherort aktualisiert wurde (z. B. ein ZAP, das zu einer E-Mail führt, die in Quarantäne verschoben wird), würde dies den neuesten Zustellungsspeicherort in "Quarantäne" aktualisieren.
 
 *E-Mail-Details:* Details, die für ein tieferes Verständnis der E-Mails erforderlich sind, die auf der Registerkarte *"Analyse" verfügbar* sind.
 
-- *Exchange-Transportregeln (ETRs oder E-Mail-Regeln):* Diese Regeln werden auf eine Nachricht auf der Transportebene angewendet und haben Vorrang vor Phishing- und Spamverkündungen. Diese können nur im Exchange Admin Center erstellt und geändert werden. Wenn jedoch etR für eine Nachricht gilt, werden hier der ETR-Name und die GUID angezeigt. Wertvolle Informationen für nachverfolgungszwecke.
+- *Exchange-Transportregeln (ETRs oder E-Mail-Regeln):* Diese Regeln werden auf eine Nachricht auf der Transportebene angewendet und haben Vorrang vor Phishing- und Spamverkündungen. Diese können nur im Exchange Admin Center erstellt und geändert werden. Wenn jedoch etR für eine Nachricht gilt, werden hier der ETR-Name und die GUID angezeigt. Wertvolle Informationen für Nachverfolgungszwecke.
     
-- *Systemüberschreibungen: Dies* ist eine Möglichkeit, Ausnahmen vom Zustellungsspeicherort für eine Nachricht zu machen, indem der vom System angegebene Übermittlungsort außer Kraft gesetzt wird (je nach Bedrohungs- und Erkennungstechnologie).
+- *Systemüberschreibungen: Dies* ist eine Möglichkeit, Ausnahmen vom Für eine Nachricht vorgesehenen Zustellungsspeicherort zu machen, indem der vom System angegebene Übermittlungsort außer Kraft gesetzt wird (je nach Bedrohungs- und Erkennungstechnologie).
     
-- *Junk-Postfachregel:*"Junk" ist die Posteingangsregel ausgeblendet, die standardmäßig in jedem Postfach aktiviert ist.
-    - Wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist, kann Exchange Online Protection (EOP) Nachrichten gemäß bestimmten Kriterien in Junk verschieben. Die Verschieben kann auf der Spamfilterungsaktion "Nachricht in Junk-E-Mail-Ordner verschieben" oder auf der Liste blockierter Absender für das Postfach basieren.  Durch Deaktivieren der Junk-E-Mail-Regel wird die Zustellung von Nachrichten an den Junk-E-Mail-Ordner basierend auf der Liste sicherer *Absender* im Postfach verhindert.
+- *Junk-Postfachregel:*"Junk" ist ausgeblendete Posteingangsregel, die standardmäßig in jedem Postfach aktiviert ist.
+    - Wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist, kann Exchange Online Protection (EOP) Nachrichten gemäß einigen Kriterien in Junk verschieben. Die Verschieben kann auf der Spamfilterungsaktion "Nachricht in Junk-E-Mail-Ordner verschieben" oder auf der Liste blockierter Absender für das Postfach basieren.  Durch Deaktivieren der Junk-E-Mail-Regel wird die Zustellung von Nachrichten an den Junk-E-Mail-Ordner basierend auf der Liste sicherer *Absender* im Postfach verhindert.
     - Wenn die Junk-E-Mail-Regel für das Postfach deaktiviert ist, kann EOP Nachrichten nicht basierend auf der Spamfilterungsaktion "Nachricht in Junk-E-Mail-Ordner verschieben" oder der Sammlung sicherer Listen im Postfach in den Junk-E-Mail-Ordner verschieben. 
     
-- *Bulk Compliant Level (BCL):* Der BCL (Bulk Complaint Level) der Nachricht. Ein höherer BCL zeigt an, dass eine Massen-E-Mail-Nachricht mit höherer Wahrscheinlichkeit Beschwerden generiert (das natürliche Ergebnis, wenn es sich bei der E-Mail wahrscheinlich um Spam handelt).
+- *BCL (Bulk Compliant Level):* Der BCL (Bulk Complaint Level) der Nachricht. Ein höherer BCL zeigt an, dass eine Massen-E-Mail-Nachricht mit höherer Wahrscheinlichkeit Beschwerden generiert (das natürliche Ergebnis, wenn es sich bei der E-Mail wahrscheinlich um Spam handelt).
     
-- *SCL (Spam Confidence Level):* Der SCL (Spam Confidence Level) der Nachricht. Ein höherer Wert gibt an, dass die Nachricht mit größerer Wahrscheinlichkeit Spam ist.
+- *SCL (Spam Confidence Level):* Die SCL (Spam Confidence Level) der Nachricht. Ein höherer Wert gibt an, dass die Nachricht mit größerer Wahrscheinlichkeit Spam ist.
 
 - *Domänenname:* Ist der Domänenname des Absenders.
     

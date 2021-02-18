@@ -13,21 +13,21 @@ ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Sie können Nachrichtenflussregeln (Transportregeln) verwenden, um Nachrichten zu identifizieren und Aktionen für Nachrichten zu ergreifen, die durch Ihre Organisation fließen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3f873d4e46c9e3b7f085e03a9fbb19e5914317fa
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d189a9f4b21828fa4e23f7d5a325b4e9c56259bc
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167035"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289937"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Regeln für den Nachrichtenfluss (Transportregeln) in EOP als eigenständige Lösung
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 In eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer können Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet) verwenden, um Nachrichten zu identifizieren und Maßnahmen zu ergreifen, die durch Ihre Organisation fließen.
 
@@ -51,7 +51,7 @@ Informationen zur Implementierung bestimmter Nachrichtenrichtlinien mithilfe von
 
 - [Reduzieren von Schadsoftwarebedrohungen durch das Blockieren von Dateianlagen in Exchange Online Protection](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
-- [Definieren von Regeln zum Verschlüsseln oder Entschlüsseln von E-Mail-Nachrichten in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
+- [Definieren von Regeln zum Verschlüsseln oder Entschlüsseln von E-Mail-Nachrichten in Office 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md)
 
 Im folgenden Video wird das Einrichten von Nachrichtenflussregeln in EOP als eigenständige Lösung demonstriert.
 
@@ -122,9 +122,9 @@ Es gibt verschiedene Nachrichtentypen, die eine Organisation durchlaufen. Die fo
 |Es gibt verschiedene Nachrichtentypen, die eine Organisation durchlaufen. Die folgende Tabelle zeigt, welche Nachrichtentypen von Transportregeln verarbeitet werden können.|Nachrichtentyp|
 |---|---|
 |**Reguläre Nachrichten:** Nachrichten, die ein einzelnes Rich-Text-Format (RTF), HTML oder Nur-Text-Nachrichtentext oder einen mehrteiligen oder alternativen Satz von Nachrichtentexten enthalten.|Ja|
-|**Office 365-Nachrichtenverschlüsselung:** Von der Office 365-Nachrichtenverschlüsselung in Office 365 verschlüsselte Nachrichten. Weitere Informationen finden Sie unter [Verschlüsselung in Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Regeln können immer auf Umschlagkopfzeilen zugreifen und Nachrichten auf Grundlage von Bedingungen verarbeiten, mit denen diese Kopfzeilen untersucht werden. <p> Damit eine Regel den Inhalt einer verschlüsselten Nachricht überprüft oder ändert, müssen Sie überprüfen, ob die Transportentschlüsselung aktiviert ist („Obligatorisch" oder „Optional"; der Standardwert ist „Optional"). Weitere Informationen finden Sie unter Definieren von Regeln zum Verschlüsseln oder Entschlüsseln von [E-Mail-Nachrichten in Office 365.](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)|
+|**Office 365-Nachrichtenverschlüsselung:** Von der Office 365-Nachrichtenverschlüsselung in Office 365 verschlüsselte Nachrichten. Weitere Informationen finden Sie unter [Verschlüsselung in Office 365](../../compliance/encryption.md).|Regeln können immer auf Umschlagkopfzeilen zugreifen und Nachrichten auf Grundlage von Bedingungen verarbeiten, mit denen diese Kopfzeilen untersucht werden. <p> Damit eine Regel den Inhalt einer verschlüsselten Nachricht überprüft oder ändert, müssen Sie überprüfen, ob die Transportentschlüsselung aktiviert ist („Obligatorisch" oder „Optional"; der Standardwert ist „Optional"). Weitere Informationen finden Sie unter Definieren von Regeln zum Verschlüsseln oder Entschlüsseln von [E-Mail-Nachrichten in Office 365.](../../compliance/define-mail-flow-rules-to-encrypt-email.md)|
 |**S/MIME-Verschlüsselte Nachrichten**|Regeln können nur auf Umschlagkopfzeilen zugreifen und Nachrichten auf Grundlage von Bedingungen verarbeiten, mit denen diese Kopfzeilen untersucht werden. <p> Regeln mit Bedingungen, die eine Untersuchung des Nachrichteninhalts erfordern, oder Aktionen, die den Inhalt der Nachricht ändern, können nicht verarbeitet werden.|
-|**RMS-geschützte Nachrichten:** Nachrichten, auf die eine Active Directory-Rechteverwaltungsdienste (AD RMS) oder eine Azure Rights Management (RMS)-Richtlinie angewendet wurde.|Regeln können immer auf Umschlagkopfzeilen zugreifen und Nachrichten auf Grundlage von Bedingungen verarbeiten, mit denen diese Kopfzeilen untersucht werden. <p> Damit eine Regel den Inhalt einer RMS-geschützten Nachricht überprüft oder ändert, müssen Sie überprüfen, ob die Transportentschlüsselung aktiviert ist („Obligatorisch" oder „Optional"; der Standardwert ist „Optional").|
+|**RMS-geschützte** Nachrichten: Nachrichten, auf die eine Active Directory-Rechteverwaltungsdienste (AD RMS) oder eine Azure Rights Management (RMS)-Richtlinie angewendet wurde.|Regeln können immer auf Umschlagkopfzeilen zugreifen und Nachrichten auf Grundlage von Bedingungen verarbeiten, mit denen diese Kopfzeilen untersucht werden. <p> Damit eine Regel den Inhalt einer RMS-geschützten Nachricht überprüft oder ändert, müssen Sie überprüfen, ob die Transportentschlüsselung aktiviert ist („Obligatorisch" oder „Optional"; der Standardwert ist „Optional").|
 |**Klar signierte Nachrichten:** Nachrichten, die signiert, aber nicht verschlüsselt wurden.|Ja|
 |**UM-Nachrichten:** Nachrichten, die vom Unified Messaging-Dienst erstellt oder verarbeitet werden, z. B. Voicemail, Fax, Benachrichtigungen über verpasste Anrufe und Nachrichten, die mithilfe von Microsoft Outlook Voice Access.|Ja|
 |**Anonyme Nachrichten:** Nachrichten, die von anonymen Absendern gesendet werden.|Ja|
@@ -133,7 +133,7 @@ Es gibt verschiedene Nachrichtentypen, die eine Organisation durchlaufen. Die fo
 
 ## <a name="what-else-should-i-know"></a>Was muss ich sonst noch wissen?
 
-- Der **Wert** der Version- oder **RuleVersion-Eigenschaft** für eine Regel ist in Exchange Online Protection nicht wichtig.
+- Der Wert der Eigenschaft **"Version"** oder **"RuleVersion"** für eine Regel ist in Exchange Online Protection nicht wichtig.
 
 - Nach dem Erstellen oder Ändern einer E-Mail-Flussregel kann es bis zu 30 Minuten dauern, bis die neue oder aktualisierte Regel auf Nachrichten angewendet wird.
 

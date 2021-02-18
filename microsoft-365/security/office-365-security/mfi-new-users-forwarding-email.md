@@ -12,23 +12,23 @@ ms.assetid: ''
 description: Administratoren können erfahren, wie Sie mithilfe des Einblicks "Neue Benutzer, die E-Mails weiterleiten" im Security & Compliance Center untersuchen können, wenn Benutzer in ihrer Organisation Nachrichten an neue Domänen weiterleiten.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b86d726979991a55e7d4e43bf3581a4a664ee4f
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 9706951df480d07f4a6311e99cab5c9f404e999e
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150255"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290821"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Neue Benutzer, die E-Mail-Einblicke im Security & Compliance Center weiterleiten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Es ist verdächtig, wenn neue Benutzerkonten in Ihrer Organisation plötzlich mit der Weiterleitung von E-Mail-Nachrichten an externe Domänen beginnen.
+Es ist verdächtig, wenn neue Benutzerkonten in Ihrer Organisation plötzlich beginnen, E-Mail-Nachrichten an externe Domänen weiter zu senden.
 
 Die **neuen Domänen, die** E-Mail-Einblicke im Security & Compliance [Center](https://protection.office.com) erhalten, benachrichtigen Sie, wenn neu erstellte Benutzer in Ihrer Organisation Nachrichten an externe Domänen weiterleiten. Diese Bedingung könnte darauf hinweisen, dass zum Erstellen der neuen Benutzer gefährdete Administratorkonten verwendet wurden. Wenn Sie vermuten, dass die Konten gefährdet wurden, lesen Sie ["Reagieren auf ein gefährdetes E-Mail-Konto".](responding-to-a-compromised-email-account.md)
 
@@ -38,7 +38,7 @@ Dieser Einblick wird nur angezeigt, wenn das Problem erkannt wird, und er wird a
 
 Wenn Sie auf das Widget klicken, wird ein Flyout angezeigt, in dem Sie weitere Details zu den weitergeleiteten Nachrichten finden, einschließlich eines Links zum Bericht über [Weiterleitungsänderungen,](#forwarding-modifications-report) wie weiter unten in diesem Artikel beschrieben.
 
-![Details-Flyout, das angezeigt wird, nachdem sie auf den Einblick für die Weiterleitung von E-Mails durch neue Benutzer geklickt haben](../../media/mfi-new-users-forwarding-email-details.png)
+![Details-Flyout, das angezeigt wird, nachdem sie auf den Einblick in die E-Mail-Weiterleitung durch neue Benutzer geklickt haben](../../media/mfi-new-users-forwarding-email-details.png)
 
 Sie können auch zu dieser Detailseite gelangen,  wenn Sie die Einblicke auswählen, nachdem Sie im Bereich "Top insights" **&** **(** Berichtsdashboard oder ) auf "Alle anzeigen" geklickt \>  haben. <https://protection.office.com/insightdashboard>
 
@@ -55,7 +55,7 @@ Diese Arten von weitergeleiteten Nachrichten können ein Sicherheits- oder Compl
 
 Der Bericht enthält Daten für bis zu 90 Tage. Standardmäßig werden im Bericht Daten für die letzten 7 Tage angezeigt.
 
-Dieser Bericht ist nicht direkt [](mail-flow-insights-v2.md) im Nachrichtenflussdashboard oder im [Berichtsdashboard verfügbar.](view-mail-flow-reports.md) Zusätzlich zum Klicken  auf den Link "Bericht  mit Einblicken sehen" im E-Mail-Einblick "Neue Benutzer" erhalten Sie folgenden Zugriff auf den Bericht:
+Dieser Bericht ist nicht direkt [](mail-flow-insights-v2.md) im Nachrichtenflussdashboard oder im [Berichtsdashboard verfügbar.](view-mail-flow-reports.md) Zusätzlich zum Klicken  auf den Link "Bericht  mit Einblick sehen" im E-Mail-Einblick "Neue Benutzer" erhalten Sie folgenden Zugriff auf den Bericht:
 
 - Klicken Auf den **Link "Weiterleitungsbenachrichtigungen melden"** in den Details der neuen Domänen, die weitergeleitet werden, E-Mail-Einblick. [](mfi-new-domains-being-forwarded-email.md)
 - Öffnen <https://protection.office.com/reportv2?id=MailFlowNewForwarding> .
@@ -96,11 +96,11 @@ Wenn Sie auf **"Details anzeigen" klicken,** hängen die angezeigten Information
   - **Count**
   - **Erstes Weiterleitungsdatum**
 
-Wenn Sie in einer **Detailtabelle auf Filter** klicken, können Sie einen Datumsbereich mit **Startdatum** und **Enddatum angeben.**
+Wenn Sie in einer **Detailtabelle auf** Filter klicken, können Sie einen Datumsbereich mit **Startdatum** und **Enddatum angeben.**
 
 Wenn Sie eine Zeile aus der Tabelle auswählen, wird ein **Flyout "Details"** mit den folgenden Informationen angezeigt:
 
-- **Name:** Dies ist entweder die E-Mail-Adresse des Absenders (aus Ansicht "Daten anzeigen **für:** Neue Weiterleitungsbenutzer") oder die E-Mail-Domäne des Absenders (aus Ansicht "Daten anzeigen für: Neue **Weiterleitungsdomänen").**
+- **Name:** Dies ist entweder die E-Mail-Adresse des Absenders (aus Ansicht "Daten anzeigen **für:** Ansicht "Neue Weiterleitungsbenutzer") oder die E-Mail-Domäne des Absenders (aus Ansicht "Daten anzeigen für: Neue **Weiterleitungsdomänen").**
 - **Weiterleitungstyp**
 - **Empfänger**
 - **Details**

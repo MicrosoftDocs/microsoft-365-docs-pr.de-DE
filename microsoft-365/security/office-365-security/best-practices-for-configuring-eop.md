@@ -12,19 +12,19 @@ ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Befolgen Sie diese bewährten Empfehlungen für eigenständigen Exchange Online Protection (EOP), um sich für den Erfolg zu konfigurieren und häufige Konfigurationsfehler zu vermeiden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a38454ceaba7f95dff172335dc374530efca20a
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: c64a9592d93ef046ad1c023a49bf378ccf6cf503
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165931"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290833"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Bewährte Methoden für die Konfiguration von EOP als eigenständige Lösung
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
--  [Exchange Online Protection als eigenständige Lösung](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection als eigenständige Lösung](exchange-online-protection-overview.md)
 
 Befolgen Sie diese bewährten Empfehlungen für eigenständigen Exchange Online Protection (EOP), um sich für den Erfolg zu konfigurieren und häufige Konfigurationsfehler zu vermeiden. In diesem Thema wird vorausgesetzt, dass Sie den Setup-Prozess bereits abgeschlossen haben. Wenn Sie das EOP-Setup nicht abgeschlossen haben, finden Sie weitere Informationen unter [Einrichten Ihres EOP-Diensts](set-up-your-eop-service.md).
 
@@ -62,7 +62,7 @@ Diese Einstellungen umfassen eine Reihe von Features, die sich außerhalb von Si
 |[PowerShell-Konnektivität](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|Deaktiviert|Deaktiviert|Verfügbar für Postfachbenutzer oder E-Mail-Benutzer (vom [Cmdlet "Get-User" zurückgegebene](https://docs.microsoft.com/powershell/module/exchange/get-user) Benutzerobjekte).|
 |Verwenden [von Spoofintelligenz](learn-about-spoof-intelligence.md) zum Hinzufügen von Absendern zu Ihrer Liste zulässiger Absender|Ja|Ja||
 |[Verzeichnisbasierte Edgeblockierung (Directory-Based Edge Blocking, DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Aktiviert|Aktiviert|Domänentyp = Autoritativ|
-|[Einrichten der mehrstufigen Authentifizierung für alle Administratorkonten](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|Aktiviert|Aktiviert||
+|[Einrichten der mehrstufigen Authentifizierung für alle Administratorkonten](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)|Aktiviert|Aktiviert||
 |
 
 ## <a name="troubleshooting"></a>Problembehandlung

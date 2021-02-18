@@ -13,21 +13,21 @@ description: Administratoren können sich über die Einblicke und Berichte infor
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b65e235e3446fa62bca1c9f8aef73f2387b1140b
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 7432eca577fb264126b9fc8f10bdd83de32711cf
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167095"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289675"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Nachrichtenfluss-Einblicke im Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Administratoren können das Nachrichtenflussdashboard im Security & Compliance Center verwenden, um Trends, Einblicke zu erkennen und Maßnahmen zur Behebung von Problemen im Zusammenhang mit dem Nachrichtenfluss in ihrer Organisation zu ergreifen.
 
@@ -43,7 +43,7 @@ Die verfügbaren Einblicke sind:
 
 - [Zuordnung der Nachrichtenübermittlung](mfi-mail-flow-map-report.md)
 
-- [Neue Domänen, die per E-Mail weitergeleitet werden Einblick](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
+- [Neue Domänen, die E-Mail-Einblicke](mfi-new-domains-being-forwarded-email.md)<sup>2 weitergeleitet werden</sup>
 
 - [Neue Benutzer, die E-Mail-Einblicke](mfi-new-users-forwarding-email.md)<sup>2 weiterleiten</sup>
 
@@ -59,9 +59,9 @@ Die verfügbaren Einblicke sind:
 
 - [Übersicht über den Top-Domain-e-Mail-Datenstrom](mfi-domain-mail-flow-status-insight.md)
 
-<sup>1</sup> Dieser Einblick wird im Bereich "Empfohlen für **Sie"** des Dashboards für den Nachrichtenfluss erst angezeigt, nachdem das Problem erkannt wurde. Andernfalls wird sie nicht mehr zu sehen sein.
+<sup>1</sup> Dieser Einblick wird im Bereich **"Empfohlen** für Sie" des Dashboards für den Nachrichtenfluss erst angezeigt, nachdem das Problem erkannt wurde. Andernfalls wird sie nicht mehr zu sehen sein.
 
-<sup>2</sup> Dieser Einblick wird nicht im Nachrichtenflussdashboard [](view-mail-flow-reports.md#forwarding-report) angezeigt, sondern auf der Seite "Weiterleitungsbericht", nachdem das Problem erkannt wurde. Andernfalls wird sie nicht mehr zu sehen sein.
+<sup>2</sup> Dieser Einblick wird nicht im Nachrichtenflussdashboard angezeigt, sondern auf der Seite ["Weiterleitungsbericht",](view-mail-flow-reports.md#forwarding-report) nachdem das Problem erkannt wurde. Andernfalls wird sie nicht mehr zu sehen sein.
 
 ## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>Erforderliche Berechtigungen zum Anzeigen des Nachrichtenflussdashboards
 
@@ -71,7 +71,7 @@ Das Nachrichtenflussdashboard ist für Mitglieder der folgenden Rollengruppen ve
 
 - **[Exchange-Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure Active Directory.
 
-- **MailFlow Administrator** im Security & Compliance Center. Wenn das Konto nicht auch Mitglied der Rollengruppe "Organisationsverwaltung" oder "Exchange-Administrator" ist, sollten Sie die folgenden Probleme berücksichtigen:
+- **MailFlow-Administrator** im Security & Compliance Center. Wenn das Konto nicht auch Mitglied der Rollengruppe "Organisationsverwaltung" oder "Exchange-Administrator" ist, sollten Sie die folgenden Probleme berücksichtigen:
   - Der Benutzer muss sich direkt beim Security & Compliance Center <https://protection.office.com> anmelden.
   - Der Benutzer verfügt nur über schreibgeschützte Berechtigungen für das Nachrichtenflussdashboard.
   - Der Benutzer hat keinen Zugriff auf das Microsoft 365 Admin Center.

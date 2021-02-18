@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Administratoren können sich über den Testmodus von Microsoft Defender für Office 365 informieren.
-ms.openlocfilehash: 6207ae117f06a0e5f10d4a7a47a251137c51df05
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 0f45379bec52b54059c743823e2c8eb366f9bd59
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233579"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289389"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Informationen zur Testversion von Microsoft Defender für Office 365
 
@@ -45,11 +45,11 @@ Die Testversion von Defender für Office 365 ist 90 Tage lang verfügbar und kan
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>Einrichten einer Testversion von Defender für Office 365
 
-Mit einer Testversion können Organisationen die Funktionen von Defender für Office 365 problemlos einrichten und konfigurieren. Während des Setups werden Richtlinien, die ausschließlich für Defender für [](atp-safe-links.md)Office 365 gelten (insbesondere sichere [Anlagen,](atp-safe-attachments.md)sichere Links und Identitätswechselschutz [in Antispamrichtlinien),](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)mithilfe der Standardvorlage für voreingestellte Sicherheitsrichtlinien [angewendet.](preset-security-policies.md)
+Mit einer Testversion können Organisationen die Funktionen von Defender für Office 365 problemlos einrichten und konfigurieren. Während des Setups werden Richtlinien, die ausschließlich für Defender für [](atp-safe-links.md)Office 365 gelten (insbesondere sichere [Anlagen,](atp-safe-attachments.md)sichere Links und Identitätswechselschutz [in Antispamrichtlinien)](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)mithilfe der Standardvorlage für voreingestellte Sicherheitsrichtlinien [angewendet.](preset-security-policies.md)
 
-Diese Richtlinien sind standardmäßig auf alle Benutzer in der Organisation begrenzt, Administratoren können die Richtlinien jedoch während oder nach der Einrichtung anpassen, sodass sie nur für bestimmte Benutzer gelten.
+Standardmäßig sind diese Richtlinien auf alle Benutzer in der Organisation begrenzt, Administratoren können die Richtlinien jedoch während oder nach dem Setup anpassen, sodass sie nur für bestimmte Benutzer gelten.
 
-Während des Setups wird die MDO-Antwortfunktionalität (in MDO P2 oder einer entsprechenden Lösung) auch für die gesamte Organisation eingerichtet. Es ist keine Richtliniende scoping erforderlich.
+Während des Setups wird die Reaktionsfunktionalität von MDO (in MDO P2 oder äquivalent) auch für die gesamte Organisation eingerichtet. Es ist keine Richtliniende scoping erforderlich.
 
 ## <a name="licensing"></a>Lizenzierung
 
@@ -57,11 +57,11 @@ Im Rahmen der Testeinrichtung werden die Defender für Office 365-Lizenzen autom
 
 ## <a name="permissions"></a>Berechtigungen
 
-Zum Starten oder Beenden der Testversion müssen Sie Mitglied der Rollen **"Globaler Administrator"** oder **"Sicherheitsadministrator"** in Azure Active Directory sein. Weitere Informationen finden Sie unter ["Informationen zu Administratorrollen".](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
+Zum Starten oder Beenden der Testversion müssen Sie Mitglied der Rollen **"Globaler Administrator"** oder **"Sicherheitsadministrator"** in Azure Active Directory sein. Weitere Informationen finden Sie unter ["Informationen zu Administratorrollen".](../../admin/add-users/about-admin-roles.md)
 
 ## <a name="additional-information"></a>Weitere Informationen
 
-Nachdem Sie sich für die Testversion registriert haben, kann es bis zu zwei Stunden dauern, bis die Änderungen und Updates verfügbar sind. Administratoren müssen sich abmelden und wieder anmelden, um die Änderungen zu sehen.
+Nachdem Sie sich für die Testversion registriert haben, kann es bis zu zwei Stunden dauern, bis die Änderungen und Updates verfügbar sind. Administratoren müssen sich abmelden und sich erneut anmelden, um die Änderungen zu sehen.
 
 Administratoren können die Testversion jederzeit deaktivieren, indem sie zur <> gehen.
 
@@ -71,7 +71,7 @@ Die Testversion von Defender für Office 365 wird schrittweise für bestehende K
 
 ## <a name="learn-more-about-defender-for-office-365"></a>Weitere Informationen zu Defender für Office 365
 
-Defender für Office 365 hilft Organisationen dabei, ihr Unternehmen zu sichern, indem sie eine umfassende Liste von Funktionen bieten.
+Defender für Office 365 hilft Organisationen bei der Sicherung ihres Unternehmens, indem sie einen umfassenden Überblick über die Funktionen bieten.
 
 Weitere Informationen zu Defender für Office 365 finden Sie in diesem [interaktiven Leitfaden.](https://techcommunity.microsoft.com/t5/video-hub/protect-your-organization-with-microsoft-365-defender/m-p/1671189)
 
@@ -98,7 +98,7 @@ Leistungsstarke Erfahrungen helfen bei der Identifizierung, Priorisierung und Un
 - [Bedrohungs-Explorer und Echtzeiterkennungen](threat-explorer.md)
 - [Echtzeitberichte in Defender für Office 365](view-reports-for-atp.md)
 - [Aufzeichnungen von Bedrohungen – neu und wichtig](threat-trackers.md)
-- Integration in [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+- Integration in [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 ### <a name="response-and-remediation"></a>Antwort und Problembehebung
 

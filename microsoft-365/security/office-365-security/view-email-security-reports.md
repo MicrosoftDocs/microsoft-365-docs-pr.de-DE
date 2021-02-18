@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,23 +17,29 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie E-Mail-Sicherheitsberichte für Ihre Organisation finden und verwenden. E-Mail-Sicherheitsberichte sind im Security & Compliance Center verfügbar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 568144c449d2f1a70082130cc847d48c3486d9da
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f6d9f149c9e1c71532018e6b43a6e9e31eb04607
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865104"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290799"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Im Security & Compliance [Center](https://protection.office.com) stehen verschiedene Berichte zur Verfügung, mit deren Hilfe Sie sehen können, wie E-Mail-Sicherheitsfeatures wie Antispam-, Ansoftware- und Verschlüsselungsfeatures in Microsoft 365 Ihre Organisation schützen. Wenn Sie über die erforderlichen [Berechtigungen verfügen,](#what-permissions-are-needed-to-view-these-reports)können Sie diese Berichte im Security & Compliance Center anzeigen, indem Sie zum Dashboard **"Berichte"** \> **gehen.** Um direkt zum Dashboard "Berichte" zu wechseln, öffnen Sie <https://protection.office.com/insightdashboard> .
 
 ![Dashboard "Berichte" im Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="compromised-users-report"></a>Bericht zu gefährdeten Benutzern
+## <a name="compromised-users-report"></a>Bericht "Gefährdete Benutzer"
 
 > [!NOTE]
 > Dieser Bericht ist in Microsoft 365-Organisationen mit Exchange Online-Postfächern verfügbar. Es ist in eigenständigen Exchange Online Protection (EOP)-Organisationen nicht verfügbar.
@@ -67,7 +72,7 @@ Klicken Sie auf "Bericht anzeigen", um zur **Berichtsansicht zurück zu wechseln
 
 ## <a name="encryption-report"></a>Verschlüsselungsbericht
 
-Der **Verschlüsselungsbericht ist** in EOP verfügbar (Abonnements mit Postfächern in Exchange Online oder eigenständiges EOP ohne Exchange Online-Postfächer). Das Sicherheitsteam Ihrer Organisation kann die Informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien proaktiv für vertrauliche E-Mail-Nachrichten anzuwenden oder anzupassen. Beispiel:
+Der **Verschlüsselungsbericht ist** in EOP verfügbar (Abonnements mit Postfächern in Exchange Online oder eigenständiges EOP ohne Exchange Online-Postfächer). Das Sicherheitsteam Ihrer Organisation kann die Informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien für vertrauliche E-Mail-Nachrichten proaktiv anzuwenden oder anzupassen. Zum Beispiel:
 
 - Wenn eine hohe Anzahl von von Benutzern verschlüsselten E-Mail-Nachrichten angezeigt wird, sollten Sie eine Verschlüsselungsrichtlinie hinzufügen, um die Verschlüsselung für bestimmte Verwendungsfälle zu automatisieren. Weitere Informationen finden Sie unter [Definieren von Nachrichtenflussregeln zum Verschlüsseln von E-Mail-Nachrichten in Microsoft 365.](../../compliance/define-mail-flow-rules-to-encrypt-email.md)
 
@@ -75,7 +80,7 @@ Der **Verschlüsselungsbericht ist** in EOP verfügbar (Abonnements mit Postfäc
 
 Die Aggregatansicht ermöglicht das Filtern für die letzten 90 Tage, während die Detailansicht das Filtern für 10 Tage zulässt.
 
-Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie zum **Berichtsdashboard,** und wählen Sie \>  **"Verschlüsselungsbericht" aus.** Um direkt zum Bericht zu wechseln, öffnen Sie <https://protection.office.com/reportv2?id=EncryptionReport> .
+Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie zum **Berichtsdashboard,** und wählen Sie \>  den **Verschlüsselungsbericht aus.** Um direkt zum Bericht zu wechseln, öffnen Sie <https://protection.office.com/reportv2?id=EncryptionReport> .
 
 Weitere Informationen zur Verschlüsselung finden Sie unter ["E-Mail-Verschlüsselung in Microsoft 365".](../../compliance/email-encryption.md)
 
@@ -94,7 +99,7 @@ Sie können die folgenden Filter für das Diagramm verwenden:
   - Verschlüsselungsmethode.
   - Verschlüsselungsvorlage.
 
-- **Daten nach: Nachrichtenverschlüsselungsbericht anzeigen** und **aufschlüsseln nach:** Verschlüsselungsvorlage: Die folgenden Verschlüsselungsmethoden sind verfügbar:
+- **Daten nach: Nachrichtenverschlüsselungsbericht anzeigen und** **aufschlüsseln nach:** Verschlüsselungsvorlage: Die folgenden Verschlüsselungsmethoden sind verfügbar:
 
   - **Nicht weiterleiten**
   - **Nur verschlüsseln**
@@ -115,7 +120,7 @@ Sie können die folgenden Filter für das Diagramm verwenden:
 
 Wenn Sie auf **"Details anzeigen" klicken,** hängen die angezeigten Informationen vom Diagramm ab, das Sie betrachtet haben:
 
-- **Aufschlüsseln nach: Verschlüsselungsmethode** oder **Aufschlüsseln nach:** Verschlüsselungsvorlage: Die folgenden Informationen werden angezeigt:
+- **Aufschlüsseln nach: Verschlüsselungsmethode** oder **Aufschlüsselung nach:** Verschlüsselungsvorlage: Die folgenden Informationen werden angezeigt:
 
   - **Date**
   - **Absenderadresse**
@@ -130,7 +135,7 @@ Wenn Sie auf **"Details anzeigen" klicken,** hängen die angezeigten Information
   - **Empfängerdomäne**
   - **Anzahl der Nachrichten**
 
-Wenn Sie in einer **Detailtabelle auf** "Filter" klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
+Wenn Sie in einer **Detailtabelle** auf "Filter" klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
 
 - **Startdatum** und **Enddatum**
 - Verschlüsselungsmethode
@@ -140,7 +145,7 @@ Klicken Sie auf "Bericht anzeigen", um zur **Berichtsansicht zurück zu wechseln
 
 ## <a name="mailflow-status-report"></a>Statusbericht über den Nachrichtenfluss
 
-Der **Statusbericht "E-Mail-Nachrichtenfluss"** enthält Informationen zu Schadsoftware, Spam, Phishing und blockierten Edgenachrichten. Weitere Informationen finden Sie im [Statusbericht über den Nachrichtenfluss.](view-mail-flow-reports.md#mailflow-status-report)
+Der **Statusbericht "E-Mail-Nachrichtenfluss"** enthält Informationen zu Schadsoftware, Spam, Phishing und blockierten Edge-Nachrichten. Weitere Informationen finden Sie im [Statusbericht über den Nachrichtenfluss.](view-mail-flow-reports.md#mailflow-status-report)
 
 ## <a name="malware-detections-in-email-report"></a>Schadsoftwareerkennungen im E-Mail-Bericht
 
@@ -186,7 +191,7 @@ Der **Bericht über Spamerkennungen** enthält Spam-E-Mail-Nachrichten, die von 
 
 Die Aggregatansicht ermöglicht das Filtern von 90 Tagen, während die Detailtabelle eine Filterung von 10 Tagen zulässt.
 
-Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie zum Berichtsdashboard, und wählen Sie  \>  **Spamerkennungen aus.** Um direkt zum Bericht zu wechseln, öffnen Sie <https://protection.office.com/reportv2?id=SpamDetections> .
+Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie **zum** Berichtsdashboard, und wählen Sie \>  **Spamerkennungen aus.** Um direkt zum Bericht zu wechseln, öffnen Sie <https://protection.office.com/reportv2?id=SpamDetections> .
 
 ![Widget "Spamerkennung" im Dashboard "Berichte"](../../media/spam-detections-report-widget.png)
 
@@ -201,7 +206,7 @@ Die folgenden Diagramme sind in der Berichtsansicht verfügbar:
   - **Gefilterter Spaminhalt**
   - **Spam-IP-Block**
   - **Spam-Umschlag-Block**
-  - **Spam-DBEB-Filter:** Verzeichnisbasierte Edge-Blockierung (DBEB)
+  - **Spam-DBEB-Filter:** Verzeichnisbasierte Edgeblockierung (DBEB)
 
   Wenn Sie mit der Maus auf einen Tag (Datenpunkt) im Diagramm zeigen, können Sie sehen, wie viele Elemente an diesem Tag blockiert wurden und wie diese Elemente kategorisiert werden.
 
@@ -274,7 +279,7 @@ Klicken Sie auf "Bericht anzeigen", um zur **Berichtsansicht zurück zu wechseln
 
 ## <a name="threat-protection-status-report"></a>Threat Protection-Statusbericht
 
-Der **Statusbericht zum Bedrohungsschutz** ist sowohl in EOP als auch in Microsoft Defender für Office 365 verfügbar. Die Berichte enthalten jedoch unterschiedliche Daten. Beispielsweise können #A0 Informationen zu Schadsoftware anzeigen, die in E-Mails erkannt wurde, jedoch keine Informationen zu schädlichen Dateien, die von ATP für [SharePoint, OneDrive](atp-for-spo-odb-and-teams.md)oder Microsoft Teams erkannt wurden.
+Der **Statusbericht zum Bedrohungsschutz** ist sowohl in EOP als auch in Microsoft Defender für Office 365 verfügbar. Die Berichte enthalten jedoch unterschiedliche Daten. Beispielsweise können #A0 Informationen zu Schadsoftware anzeigen, die in E-Mails erkannt wurde, jedoch keine Informationen zu schädlichen Dateien, die von sicheren Anlagen für [SharePoint, OneDrive](atp-for-spo-odb-and-teams.md)und Microsoft Teams erkannt wurden.
 
 Der Bericht enthält die Anzahl von E-Mail-Nachrichten mit schädlichem Inhalt, z. B. Dateien oder Websiteadressen (URLs), die vom Ansoftwaremodul, zap [](atp-safe-attachments.md) [(Zero-Hour Auto Purge)](zero-hour-auto-purge.md)und Defender für Office 365-Features wie sichere [Links,](atp-safe-links.md)sichere Anlagen und [Antiphishing](set-up-anti-phishing-policies.md)blockiert wurden. Sie können diese Informationen verwenden, um Trends zu identifizieren oder festzustellen, ob die Organisationsrichtlinien anpassungen erforderlich sind.
 
@@ -304,7 +309,7 @@ Die folgenden Ansichten sind verfügbar:
 - **Anzeigen von Daten nach: Inhalt \> Schadsoftware**<sup>1:</sup>Die folgenden Informationen werden für Microsoft Defender für Office 365-Organisationen angezeigt:
 
   - **An malware engine:** Malicious files detected in Sharepoint, OneDrive, and Microsoft Teams by the [built-in virus detection in Microsoft 365](virus-detection-in-spo.md).
-  - **Dateidetonation:** Bösartige Dateien, die von ATP für [Sharepoint, OneDrive und Microsoft Teams erkannt wurden.](atp-for-spo-odb-and-teams.md)
+  - **Dateidetonation:** Bösartige Dateien, die von sicheren Anlagen für [SharePoint, OneDrive und Microsoft Teams erkannt wurden.](atp-for-spo-odb-and-teams.md)
 
   ![Ansicht "Schadsoftware" im Statusbericht zum Bedrohungsschutz](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -334,9 +339,9 @@ Die folgenden Ansichten sind verfügbar:
   - **EOP-URL-Reputation:** Schädliche URL-Reputation.
   - **Allgemeiner Phishingfilter:** Phishingsignale, die auf Analystenregeln basieren.
   - **Sonstige**
-  - **Phishing ZAP**<sup>2:</sup>Automatisches Löschen von Phishingnachrichten zur Nullstunde.
+  - **Phish ZAP**<sup>2:</sup>Automatisches Löschen von Phishingnachrichten zur Nullstunde.
   - **URL-Detonation**<sup>1</sup>
-  - **Benutzerwechsel**<sup>1:</sup>Identitätswechsel von Benutzern, die vom Administrator definiert oder über Postfachintelligenz gelernt wurden.
+  - **Benutzerwechsel**<sup>1:</sup>Identitätswechsel von Benutzern, die vom Administrator definiert oder über Die Postfachintelligenz gelernt wurden.
 
   ![Ansicht "Erkennungstechnologie" für Phishing-E-Mails im Statusbericht zum Bedrohungsschutz](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
@@ -361,7 +366,7 @@ Die folgenden Ansichten sind verfügbar:
   - **Nachrichtenflussregel** (auch als Transportregel bekannt)
   - **Sonstige**
 
-  ![Richtlinientypansicht für Phishing-E-Mails im Statusbericht zum Bedrohungsschutz](../../media/threat-protection-status-report-phishing-policy-type-view.png)
+  ![Richtlinientypansicht für Phishing-E-Mails im Statusbericht zu Bedrohungsschutz](../../media/threat-protection-status-report-phishing-policy-type-view.png)
 
 - **Aufbrechen nach: Zustellungsstatus** und Anzeigen von Daten **nach: E-Mail-Phishing \>** oder Anzeigen von Daten nach: E-Mail-Schadsoftware: Die folgenden Informationen werden angezeigt: **\>**
 
@@ -409,7 +414,7 @@ Wenn Sie auf **"Details anzeigen" klicken,** hängen die angezeigten Information
 - **Anzeigen von Daten nach: Inhalt \> Schadsoftware:**
 
   - **Date**
-  - **Ort**
+  - **Standort**
   - **Geleitet von**
   - **Name der Schadsoftware**
 
@@ -460,7 +465,7 @@ Der **Bericht über die am** meisten schadsoftware enthaltene Schadsoftware zeig
 
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie zum **Berichtsdashboard,** und wählen Sie "Am besten \>  **schadsoftware" aus.** Um direkt zum Bericht zu wechseln, öffnen Sie <https://protection.office.com/reportv2?id=TopMalware> .
 
-![Am besten verwendetes Widget für Schadsoftware im Dashboard "Berichte"](../../media/top-malware-report-widget.png)
+![Das Widget "Am besten schadsoftware" im Dashboard "Berichte"](../../media/top-malware-report-widget.png)
 
 Wenn Sie mit der Maus auf einen Kreis im Kreisdiagramm zeigen, sehen Sie den Namen einer Art von Schadsoftware und die Anzahl der Nachrichten, die als schadsoftwarebefreit erkannt wurden.
 
@@ -494,7 +499,7 @@ Gehen Sie zum Anzeigen dieses Berichts im [Security & Compliance Center](https:/
 ![Wählen Sie im Security & Compliance Center "Bedrohungsverwaltung Überprüfen von \> \> vom Benutzer gemeldeten Nachrichten" aus.](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
 > [!IMPORTANT]
-> Damit der Bericht über vom Benutzer gemeldete Nachrichten ordnungsgemäß **funktioniert,** muss die Überwachungsprotokollierung für Ihre Office 365-Umgebung aktiviert sein. Dies wird in der Regel von einer Person durchgeführt, der die Rolle "Überwachungsprotokolle" in Exchange Online zugewiesen ist. Weitere Informationen finden Sie unter Aktivieren oder Deaktivieren der [Microsoft 365-Überwachungsprotokollsuche.](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
+> Damit der Bericht über vom Benutzer gemeldete Nachrichten ordnungsgemäß **funktioniert,** muss die Überwachungsprotokollierung für Ihre Office 365-Umgebung aktiviert sein. Dies wird in der Regel von einer Person durchgeführt, der die Rolle "Überwachungsprotokolle" in Exchange Online zugewiesen ist. Weitere Informationen finden Sie unter Aktivieren oder Deaktivieren der [Microsoft 365-Überwachungsprotokollsuche.](../../compliance/turn-audit-log-search-on-or-off.md)
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Welche Berechtigungen sind erforderlich, um diese Berichte anzeigen zu können?
 
@@ -507,7 +512,7 @@ Um die in diesem Artikel beschriebenen Berichte anzeigen und verwenden zu könne
 
 Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-**Hinweis:** Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance _Center_ sowie Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+**Hinweis:** Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance _Center_ sowie Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Was passiert, wenn in den Berichten keine Daten angezeigt werden?
 

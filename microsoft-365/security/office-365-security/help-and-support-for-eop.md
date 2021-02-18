@@ -13,31 +13,31 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft bietet Hilfe für EOP an einer Vielzahl von Orten und Methoden, einschließlich Selbsthilfe und unterstützter Support.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a2b8228d33648f7bd20bde9d9e7b852276231aa6
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 945f3c4e32a6c41193e3df4813cc4ed4fe9f7b1f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167107"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289793"
 ---
 # <a name="help-and-support-for-eop"></a>Hilfe und Support für EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer helfen ihnen die in diesem Artikel aufgeführten Ressourcen des technischen Support, Antworten zu finden, wenn Sie Probleme mit EOP haben. Microsoft bietet Hilfe für EOP an einer Vielzahl von Orten und Methoden, einschließlich Selbsthilfe und unterstützter Support.
 
 ## <a name="self-support-options"></a>Optionen zur Selbsthilfe
 
-Nach der Anmeldung stellt das Microsoft 365 Admin Center Informationen zum Status der Dienste Ihrer Organisation zur Verfügung. Darüber hinaus enthält der Abschnitt "Dienststatus" den aktuellen Status Ihrer Dienste, Details zu Unterbrechungen und Ausfällen sowie eine Liste der geplanten Wartungszeiten. Das Microsoft 365 Admin Center bietet auch Informationen zu bekannten Problemen und erwarteten Lösungen. Wenn Sie von einem dienstweiten Ereignis betroffen sind, sollte eine Kommunikationsmeldung angezeigt werden (in der Regel mit einem Glockensymbol). Es wird empfohlen, dass Sie sämtliche zugehörigen Hinweise lesen und entsprechend vorgehen. Weitere Informationen zum Dienstinte health area finden Sie unter [Dienstinte](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)health and continuity . Mithilfe der hier aufgelisteten Tools, Foren und Communitywebsites können Sie möglicherweise selbst weitere Hilfe finden.
+Nach der Anmeldung stellt das Microsoft 365 Admin Center Informationen zum Status der Dienste Ihrer Organisation zur Verfügung. Darüber hinaus enthält der Abschnitt "Dienststatus" den aktuellen Status Ihrer Dienste, Details zu Unterbrechungen und Ausfällen sowie eine Liste der geplanten Wartungszeiten. Das Microsoft 365 Admin Center bietet auch Informationen zu bekannten Problemen und erwarteten Lösungen. Wenn Sie von einem dienstweiten Ereignis betroffen sind, sollte eine Kommunikationsmeldung angezeigt werden (in der Regel mit einem Glockensymbol). Es wird empfohlen, dass Sie sämtliche zugehörigen Hinweise lesen und entsprechend vorgehen. Weitere Informationen zum Dienstinte health area finden Sie unter [Dienstinte](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)health and continuity . Mithilfe der hier aufgeführten Tools, Foren und Communitywebsites können Sie möglicherweise selbst weitere Hilfe finden.
 
 [Produktübersicht Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Kontakt mit dem Support für Geschäftsprodukte aufnehmen – Administratorhilfe](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)
+[Kontakt mit dem Support für Geschäftsprodukte aufnehmen – Administratorhilfe](../../admin/contact-support-for-business-products.md)
 
 [Microsoft 365-Community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 

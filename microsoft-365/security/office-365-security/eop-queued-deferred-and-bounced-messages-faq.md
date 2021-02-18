@@ -15,21 +15,21 @@ ms.custom:
 description: Hier finden Sie Antworten auf die häufigsten Fragen zu Nachrichten, die während des Exchange Online Protection (EOP)-Filterungsprozesses in die Warteschlange eingereiht, zurückgestellt oder nicht gesendet wurden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 854e954e3ebb995ba23db2afc6f2ca9ab19de508
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e54a260a70a9c68a94412243308bffe60d989e99
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165427"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289699"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>Häufig gestellte Fragen zu durch EOP in Warteschlangen eingereihten, verzögerten oder nicht zugestellten Nachrichten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Dieses Thema enthält Antworten auf häufig gestellte Fragen zu Nachrichten, die während des Exchange Online Protection (EOP)-Filterungsprozesses in die Warteschlange eingereiht, zurückgestellt oder nicht gesendet wurden.
 
@@ -43,7 +43,7 @@ Nachrichten werden gespeichert, wenn keine Verbindung mit dem Empfängerserver h
 
 ## <a name="how-long-does-a-message-remain-in-deferral-and-what-is-the-retry-interval"></a>Wie lange werden Nachrichten zurückgestellt, und in welchem Intervall wird der Übertragungsversuch wiederholt?
 
-In die Warteschlange gestellte Nachrichten verbleiben 1 Tag in der Warteschlange. Wiederholungsversuche hängen davon ab, welcher Fehler vom E-Mail-System des Empfängers zurückgegeben wird. Die ersten Wiederholungen liegen bei maximal 15 Minuten, bei nachfolgenden Wiederholungen (über das nächste halbe Dutzend) wird das Intervall über mehrere Wiederholungen auf maximal 60 Minuten erhöht. Die Intervalldauererweiterung ist dynamisch und berücksichtigt mehrere Variablen wie Warteschlangengrößen und interne Nachrichtenpriorität. Im Wesentlichen dauert der Start 15 Minuten (oder weniger), dann wird er in den nächsten Stunden auf maximal 60 Minuten erweitert.
+In die Warteschlange gestellte Nachrichten verbleiben 1 Tag in der Warteschlange. Wiederholungsversuche hängen davon ab, welcher Fehler vom E-Mail-System des Empfängers zurückgegeben wird. Die ersten zurück 15 Minuten oder weniger, mit nachfolgenden Wiederholungen (über das nächste halbe Dutzend oder so) erhöhen das Intervall über mehrere Wiederholungen auf maximal 60 Minuten. Die Intervalldauererweiterung ist dynamisch und berücksichtigt mehrere Variablen wie Warteschlangengrößen und interne Nachrichtenpriorität. Im Wesentlichen dauert es 15 Minuten (oder weniger), um zu starten und dann von dort in den nächsten Stunden auf maximal 60 Minuten zu erweitern.
 
 ## <a name="after-your-email-server-is-restored-how-are-queued-messages-distributed"></a>Wie werden Nachrichten aus einer Warteschlange verteilt, nachdem mein E-Mail-Server wiederhergestellt ist?
 

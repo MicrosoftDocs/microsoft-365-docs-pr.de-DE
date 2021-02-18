@@ -18,20 +18,20 @@ description: Erfahren Sie, wie Sie Richtlinien für sichere Anlagen definieren, 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 314f7fd882986c22adddd0c4570b4aa9f49a40f3
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 012c591d620fdf5abe5aad697404bea8cea95d1a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166333"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290549"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Einrichten von Richtlinien für sichere Anlagen in Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
 > Dieser Artikel richtet sich an Geschäftskunden, die über [Microsoft Defender für Office 365](office-365-atp.md) verfügen. Informationen zur Anlagenprüfung in Outlook finden Sie unter Advanced [Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -68,11 +68,11 @@ In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten 
   - Zum Erstellen, Ändern und Löschen von Richtlinien für sichere  Anlagen müssen Sie Mitglied der Rollengruppe "Organisationsverwaltung" oder  "Sicherheitsadministrator" im Security & Compliance **Center** und Mitglied der Rollengruppe "Organisationsverwaltung" in Exchange Online sein. 
   - Für den schreibgeschützten Zugriff auf Richtlinien für sichere  Anlagen müssen  Sie Mitglied der Rollengruppe "Globaler Leser" oder "Sicherheitsleser" im Security & Compliance Center sein.
 
-  Weitere Informationen finden Sie unter ["Berechtigungen" im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) und berechtigungen in Exchange [Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
+  Weitere Informationen finden Sie unter ["Berechtigungen" im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) und in Exchange [Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
   **Hinweise**:
 
-  - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
 - Die empfohlenen Einstellungen für Richtlinien für sichere Anlagen finden Sie unter ["Einstellungen für sichere Anlagen".](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)
@@ -83,7 +83,7 @@ In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten 
 
 Beim Erstellen einer benutzerdefinierten Richtlinie für sichere Anlagen im Security & Compliance Center werden die Regel für sichere Anlagen und die zugeordnete Richtlinie für sichere Anlagen gleichzeitig mit demselben Namen für beide erstellt.
 
-1. Wechseln Sie im Security & Compliance  Center zu \>  \> **"AtP-sichere** Anlagen" zur Richtlinie zur Bedrohungsverwaltung.
+1. Wechseln Sie im Security & Compliance  Center zu "AtP-sichere Anlagen" zur Richtlinie zur \>  \> **Bedrohungsverwaltung.**
 
 2. Klicken Sie **auf der Seite "Sichere Anlagen"** auf **"Erstellen".**
 
@@ -115,7 +115,7 @@ Beim Erstellen einer benutzerdefinierten Richtlinie für sichere Anlagen im Secu
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
-5. Identifizieren Sie **auf der angezeigten** Seite "Angewendet auf" die internen Empfänger, auf die die Richtlinie angewendet wird.
+5. Identifizieren Sie auf der angezeigten Seite "Angewendet **auf"** die internen Empfänger, auf die die Richtlinie angewendet wird.
 
    Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Bei mehreren Werten derselben Bedingung oder Ausnahme wird ODER-Logik verwendet (z. B. _\<recipient1\>_ oder _\<recipient2\>_). Bei unterschiedlichen Bedingungen oder Ausnahmen wird UND-Logik verwendet (z. B. _\<recipient1\>_ und _\<member of group 1\>_).
 
@@ -145,17 +145,17 @@ Beim Erstellen einer benutzerdefinierten Richtlinie für sichere Anlagen im Secu
 
 ## <a name="use-the-security--compliance-center-to-view-safe-attachments-policies"></a>Verwenden des Security & Compliance Centers zum Anzeigen von Richtlinien für sichere Anlagen
 
-1. Wechseln Sie im Security & Compliance  Center zu \>  \> **"AtP-sichere** Anlagen" zur Richtlinie zur Bedrohungsverwaltung.
+1. Wechseln Sie im Security & Compliance  Center zu "AtP-sichere Anlagen" zur Richtlinie zur \>  \> **Bedrohungsverwaltung.**
 
-2. Wählen Sie auf der Seite **"Sichere** Anlagen" eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
+2. Wählen Sie **auf der** Seite "Sichere Anlagen" eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
 
    Die Richtliniendetails werden in einem Flyout angezeigt.
 
 ## <a name="use-the-security--compliance-center-to-modify-safe-attachments-policies"></a>Verwenden des Security & Compliance Center zum Ändern von Richtlinien für sichere Anlagen
 
-1. Wechseln Sie im Security & Compliance  Center zu \>  \> **"AtP-sichere** Anlagen" zur Richtlinie zur Bedrohungsverwaltung.
+1. Wechseln Sie im Security & Compliance  Center zu "AtP-sichere Anlagen" zur Richtlinie zur \>  \> **Bedrohungsverwaltung.**
 
-2. Wählen Sie auf der Seite **"Sichere** Anlagen" eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
+2. Wählen Sie **auf der** Seite "Sichere Anlagen" eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
 
 3. Klicken Sie in den angezeigten Richtliniendetails auf **"Richtlinie bearbeiten".**
 
@@ -165,7 +165,7 @@ Informationen zum Aktivieren oder Deaktivieren einer Richtlinie oder zum Festleg
 
 ### <a name="enable-or-disable-safe-attachments-policies"></a>Aktivieren oder Deaktivieren von Richtlinien für sichere Anlagen
 
-1. Wechseln Sie im Security & Compliance  Center zu \>  \> **"AtP-sichere** Anlagen" zur Richtlinie zur Bedrohungsverwaltung.
+1. Wechseln Sie im Security & Compliance  Center zu "AtP-sichere Anlagen" zur Richtlinie zur \>  \> **Bedrohungsverwaltung.**
 
 2. Beachten Sie den  Wert in der Statusspalte:
 
@@ -185,9 +185,9 @@ Richtlinien für sichere Anlagen werden in der Reihenfolge angezeigt, in der sie
 
 Zum Ändern der Priorität einer Richtlinie verschieben Sie die Richtlinie in der Liste nach oben oder unten (Sie können den **Priorität**-Wert im Security & Compliance Center nicht direkt ändern).
 
-1. Wechseln Sie im Security & Compliance  Center zu \>  \> **"AtP-sichere** Anlagen" zur Richtlinie zur Bedrohungsverwaltung.
+1. Wechseln Sie im Security & Compliance  Center zu "AtP-sichere Anlagen" zur Richtlinie zur \>  \> **Bedrohungsverwaltung.**
 
-2. Wählen Sie auf der Seite **"Sichere** Anlagen" eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
+2. Wählen Sie **auf der** Seite "Sichere Anlagen" eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
 
 3. Klicken Sie in den angezeigten Richtliniendetails auf die Verfügbare Prioritätsschaltfläche.
 
@@ -195,17 +195,17 @@ Zum Ändern der Priorität einer Richtlinie verschieben Sie die Richtlinie in de
 
    - Für die Richtlinie für sichere Anlagen mit dem **niedrigsten** Prioritätswert (z. B. **3)** ist nur die Schaltfläche "Priorität **erhöhen"** verfügbar.
 
-   - Wenn Sie über drei oder mehr Richtlinien für sichere Anlagen verfügen, sind für Richtlinien zwischen den Werten mit der höchsten und der niedrigsten Priorität sowohl die Schaltflächen "Priorität erhöhen" als auch **"Priorität** **verringern"** verfügbar.
+   - Wenn Sie über drei oder mehr Richtlinien für sichere Anlagen verfügen, stehen richtlinien zwischen dem höchsten und dem niedrigsten Prioritätswert sowohl die Schaltflächen "Priorität erhöhen" als auch **"Priorität verringern"** zur Verfügung. 
 
-4. Klicken **Sie auf "Priorität erhöhen"** oder **"Priorität verringern",** um den **Prioritätswert zu** ändern.
+4. Klicken **Sie auf "Priorität erhöhen"** **oder "Priorität verringern",** um den **Prioritätswert zu** ändern.
 
 5. Klicken Sie nach Abschluss des Vorgangs auf **Schließen**.
 
 ## <a name="use-the-security--compliance-center-to-remove-safe-attachments-policies"></a>Verwenden des Security & Compliance Center zum Entfernen von Richtlinien für sichere Anlagen
 
-1. Wechseln Sie im Security & Compliance  Center zu \>  \> **"AtP-sichere** Anlagen" zur Richtlinie zur Bedrohungsverwaltung.
+1. Wechseln Sie im Security & Compliance  Center zu "AtP-sichere Anlagen" zur Richtlinie zur \>  \> **Bedrohungsverwaltung.**
 
-2. Wählen Sie auf der Seite **"Sichere** Anlagen" eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
+2. Wählen Sie **auf der** Seite "Sichere Anlagen" eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
 
 3. Klicken Sie in den angezeigten Richtliniendetails auf "Richtlinie löschen", und klicken Sie dann **im** angezeigten Warndialogfeld auf "Ja".
 
@@ -213,7 +213,7 @@ Zum Ändern der Priorität einer Richtlinie verschieben Sie die Richtlinie in de
 
 Wie zuvor beschrieben, besteht eine Richtlinie für sichere Anlagen aus einer Richtlinie für sichere Anlagen und einer Regel für sichere Anlagen.
 
-In PowerShell ist der Unterschied zwischen sicheren Anlagenrichtlinien und Regeln für sichere Anlagen offensichtlich. Sie verwalten sichere Anlagenrichtlinien mithilfe der **\* Cmdlets "-SafeAttachmentPolicy",** und Sie verwalten sichere Anlagenregeln mithilfe der **\* Cmdlets "-SafeAttachmentRule".**
+In PowerShell ist der Unterschied zwischen sicheren Anlagenrichtlinien und Regeln für sichere Anlagen offensichtlich. Sie verwalten sichere Anlagenrichtlinien mithilfe der **\* Cmdlets "-SafeAttachmentPolicy",** und Sie verwalten regeln sichere Anlagen mithilfe der **\* Cmdlets "-SafeAttachmentRule".**
 
 - In PowerShell erstellen Sie zuerst die Richtlinie für sichere Anlagen und dann die Regel für sichere Anlagen, die die Richtlinie identifiziert, auf die die Regel angewendet wird.
 - In PowerShell ändern Sie die Einstellungen in der Richtlinie für sichere Anlagen und die Regel für sichere Anlagen separat.
@@ -231,10 +231,10 @@ Das Erstellen einer Richtlinie für sichere Anlagen in PowerShell besteht aus zw
 - Sie können eine neue Regel für sichere Anlagen erstellen und ihr eine vorhandene, nicht zugeordnete Richtlinie für sichere Anlagen zuweisen. Eine Regel für sichere Anlagen kann nicht mehr als einer richtlinie für sichere Anlagen zugeordnet werden.
 
 - Sie können die folgenden Einstellungen für neue Richtlinien für sichere Anlagen in PowerShell konfigurieren, die erst nach dem Erstellen der Richtlinie im Security & Compliance Center verfügbar sind:
-  - Erstellen Sie die neue Richtlinie als deaktiviert (_Aktiviert_ `$false` im Cmdlet **"New-SafeAttachmentRule").**
-  - Legen Sie die Priorität der Richtlinie während der Erstellung (_Priorität_ ) für das _\<Number\>_ **Cmdlet "New-SafeAttachmentRule"** festgelegt.
+  - Erstellen Sie die neue Richtlinie als deaktiviert _(aktiviert_ `$false` im **Cmdlet "New-SafeAttachmentRule").**
+  - Legen Sie die Priorität der Richtlinie während der Erstellung (_Priorität_ ) im _\<Number\>_ **Cmdlet "New-SafeAttachmentRule"** festgelegt.
 
-- Eine neue richtlinie für sichere Anlagen, die Sie in PowerShell erstellen, wird erst im Security & Compliance Center angezeigt, wenn Sie die Richtlinie einer Regel für sichere Anlagen zuweisen.
+- Eine neue Richtlinie für sichere Anlagen, die Sie in PowerShell erstellen, wird erst im Security & Compliance Center angezeigt, wenn Sie die Richtlinie einer Regel für sichere Anlagen zuweisen.
 
 #### <a name="step-1-use-powershell-to-create-a-safe-attachment-policy"></a>Schritt 1: Erstellen einer sicheren Anlagenrichtlinie mithilfe von PowerShell
 
@@ -248,7 +248,7 @@ In diesem Beispiel wird eine Richtlinie für sichere Anlagen namens "Contoso All
 
 - Blockieren sie Nachrichten, die Schadsoftware enthalten, indem Sie die Überprüfung auf sichere Dokumente (der Parameter _"Action"_ wird nicht verwendet, und der Standardwert ist ) `Block` blockieren.
 - Die Umleitung ist aktiviert, und Nachrichten, die Schadsoftware enthalten, werden sec-ops@contoso.com Analyse- und Untersuchungsnachrichten gesendet.
-- Wenn die Überprüfung auf sichere Anlagen nicht verfügbar ist oder Fehler auftreten, senden Sie die Nachricht nicht zu (wir verwenden den Parameter _"ActionOnError"_ nicht, und der Standardwert ist `$true` ).
+- Wenn die Überprüfung auf sichere Anlagen nicht verfügbar ist oder Fehler auftreten, senden Sie die Nachricht nicht zu (wir verwenden den _Parameter "ActionOnError"_ nicht, und der Standardwert ist `$true` ).
 
 ```PowerShell
 New-SafeAttachmentPolicy -Name "Contoso All" -Redirect $true -RedirectAddress sec-ops@contoso.com
@@ -258,7 +258,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-SafeA
 
 #### <a name="step-2-use-powershell-to-create-a-safe-attachment-rule"></a>Schritt 2: Verwenden von PowerShell zum Erstellen einer sicheren Anlagenregel
 
-Verwenden Sie folgende Syntax, um eine sichere Anlagenregel zu erstellen:
+Verwenden Sie die folgende Syntax, um eine sichere Anlagenregel zu erstellen:
 
 ```PowerShell
 New-SafeAttachmentRule -Name "<RuleName>" -SafeAttachmentPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"] [-Enabled <$true | $false>]
@@ -405,7 +405,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-SafeA
 
 ### <a name="use-powershell-to-remove-safe-attachment-policies"></a>Verwenden von PowerShell zum Entfernen sicherer Anlagenrichtlinien
 
-Wenn Sie PowerShell verwenden, um eine richtlinie für sichere Anlagen zu entfernen, wird die entsprechende Regel für sichere Anlagen nicht entfernt.
+Wenn Sie PowerShell verwenden, um eine Richtlinie für sichere Anlagen zu entfernen, wird die entsprechende Regel für sichere Anlagen nicht entfernt.
 
 Verwenden Sie folgende Syntax, um eine Richtlinie für sichere Anlagen in PowerShell zu entfernen:
 
@@ -443,7 +443,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Sa
 
 Gehen Sie wie folgt vor, um sicherzustellen, dass Richtlinien für sichere Anlagen erfolgreich erstellt, geändert oder entfernt wurden:
 
-- Wechseln Sie im Security & Compliance  Center zu \>  \> **"AtP-sichere** Anlagen" zur Richtlinie zur Bedrohungsverwaltung. Überprüfen Sie die Liste der Richtlinien, deren **Statuswerte** und ihre **Prioritätswerte.** Um weitere Details anzuzeigen, wählen Sie die Richtlinie aus der Liste aus, und zeigen Sie die Details im Flyout an.
+- Wechseln Sie im Security & Compliance  Center zu "AtP-sichere Anlagen" zur Richtlinie zur \>  \> **Bedrohungsverwaltung.** Überprüfen Sie die Liste der Richtlinien, **deren Statuswerte** und ihre **Prioritätswerte.** Um weitere Details anzuzeigen, wählen Sie die Richtlinie aus der Liste aus, und zeigen Sie die Details im Flyout an.
 
 - Ersetzen Sie in Exchange Online PowerShell oder Exchange Online Protection PowerShell durch den Namen der Richtlinie oder Regel, führen Sie den folgenden Befehl aus, und überprüfen Sie \<Name\> die Einstellungen:
 

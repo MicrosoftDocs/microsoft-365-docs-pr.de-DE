@@ -10,22 +10,22 @@ audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
-description: Administratoren können erfahren, wie Sie Berechtigungen im Exchange Admin Center (EAC) in Exchange Online Protection zuweisen oder entfernen.
+description: Administratoren erfahren, wie Sie Berechtigungen im Exchange Admin Center (EAC) in Exchange Online Protection zuweisen oder entfernen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b53023521f477b5e864424ec648ccf7e5b749d0c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ce272985f195f44c57848e6861cefb64431698b9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166987"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289925"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Verwalten von Rollengruppen in EOP als eigenständige Lösung
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
--  [Exchange Online Protection als eigenständige Lösung](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection als eigenständige Lösung](exchange-online-protection-overview.md)
 
 In eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer können Sie das Exchange Admin Center (EAC) verwenden, um Benutzer zu Rollengruppen hinzuzufügen. Durch das Hinzufügen eines Benutzers zu einer Rollengruppe erhält der Benutzer Berechtigungen zum Ausführen bestimmter Administratoraufgaben. Sie können auch Benutzer aus Rollengruppen entfernen.
 
@@ -37,12 +37,12 @@ Weitere Informationen zu Rollen und Rollengruppen finden Sie unter ["Berechtigun
 
 - Informationen zum Öffnen der eigenständigen EOP PowerShell finden Sie unter [Herstellen einer Verbindung mit Exchange Online Protection PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)
 
-- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in Exchange Online Protection die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rolle **"Rollenverwaltung",** die standardmäßig der **Rollengruppe** "Organisationsverwaltung" zugewiesen ist. Weitere Informationen finden Sie unter "Berechtigungen [in EOP als eigenständige](feature-permissions-in-eop.md) Lösung", und ändern Sie mithilfe der EAC die Liste der Mitglieder in [Rollengruppen.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in Exchange Online Protection die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rolle **"Rollenverwaltung",** die standardmäßig der Rollengruppe **"Organisationsverwaltung"** zugewiesen ist. Weitere Informationen finden Sie unter "Berechtigungen [in EOP als eigenständige](feature-permissions-in-eop.md) Lösung", und ändern Sie mithilfe der EAC die Liste der Mitglieder in [Rollengruppen.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
 - Informationen zu Tastenkombinationen, die für die Verfahren in diesem Artikel gelten können, finden Sie unter Tastenkombinationen für das [Exchange Admin Center in Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
-> Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)-Forum um Hilfe.
+> Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE)-Forum um Hilfe.
 
 ## <a name="use-the-eac-to-manage-role-groups"></a>Verwalten von Rollengruppen mithilfe der EAC
 
@@ -66,9 +66,9 @@ Wenn Sie eine neue Rollengruppe erstellen, können Sie alle Einstellungen selbst
 
     - **Name**: Geben Sie einen eindeutigen Namen für die Rollengruppe ein.
 
-    - **Beschreibung:** Geben Sie eine optionale Beschreibung für die Rollengruppe ein.
+    - **Beschreibung**: Geben Sie eine optionale Beschreibung für die Rollengruppe ein.
 
-    - **Rollen:** **Klicken** Sie auf das Symbol "Hinzufügen" oder "Entfernen", um die Rollen auszuwählen oder zu ändern, die ![ ](../../media/ITPro-EAC-AddIcon.png) der  ![ ](../../media/ITPro-EAC-RemoveIcon.gif) Rollengruppe zugewiesen sind.
+    - **Rollen:** **Klicken** Sie auf das ![ Symbol "Hinzufügen" oder "Entfernen", um die Rollen auszuwählen oder zu ändern, die ](../../media/ITPro-EAC-AddIcon.png) der  ![ ](../../media/ITPro-EAC-RemoveIcon.gif) Rollengruppe zugewiesen sind.
 
     - **Mitglieder**: Klicken Sie auf das **Symbol** ![ "Hinzufügen" ](../../media/ITPro-EAC-AddIcon.png) oder  ![ "Entfernen", ](../../media/ITPro-EAC-RemoveIcon.gif) um die Rollengruppenmitgliedschaft zu ändern.
 
@@ -94,7 +94,7 @@ Beim Ändern von Rollengruppen stehen dieselben Optionen zur Verfügung wie beim
 
 2. Gehen Sie auf der Seite mit  den Rollengruppeneigenschaften, die geöffnet wird, im Abschnitt "Mitglieder" einen der folgenden Schritte aus:
 
-   - Klicken Sie **auf "Hinzufügen"** ![ (Symbol) ](../../media/ITPro-EAC-AddIcon.png) Suchen Sie auf der angezeigten Seite den Benutzer, den Sie hinzufügen möchten, und klicken Sie dann auf **"Add->".** Wählen Sie Benutzer aus, und klicken Sie **bei >** auf "Add->". Klicken Sie nach Abschluss des Vorgangs auf **OK**.
+   - Klicken Sie **auf "Hinzufügen"** ![ ](../../media/ITPro-EAC-AddIcon.png) (Symbol). Suchen Sie auf der angezeigten Seite den Benutzer, den Sie hinzufügen möchten, und klicken Sie dann auf **"Add->".** Wählen Sie Benutzer aus, und klicken Sie **bei >** auf "Add->". Klicken Sie nach Abschluss des Vorgangs auf **OK**.
 
    - Wählen Sie die Benutzer aus, die  Sie entfernen möchten, und klicken Sie dann auf ![ "Entfernen". ](../../media/ITPro-EAC-RemoveIcon.gif)
 
@@ -115,7 +115,7 @@ Sie können keine integrierten Rollengruppen entfernen, aber sie können benutze
 
 ## <a name="use-powershell-to-manage-role-groups"></a>Verwenden von PowerShell zum Verwalten von Rollengruppen
 
-### <a name="use-standalone-eop-powershell-to-view-role-groups"></a>Verwenden der eigenständigen EOP PowerShell zum Anzeigen von Rollengruppen
+### <a name="use-standalone-eop-powershell-to-view-role-groups"></a>Verwenden von eigenständiger EOP PowerShell zum Anzeigen von Rollengruppen
 
 Verwenden Sie die folgende Syntax, um eine Rollengruppe anzuzeigen:
 
@@ -143,7 +143,7 @@ Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Micro
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup).
 
-### <a name="use-standalone-eop-powershell-to-create-role-groups"></a>Verwenden der eigenständigen EOP PowerShell zum Erstellen von Rollengruppen
+### <a name="use-standalone-eop-powershell-to-create-role-groups"></a>Verwenden von eigenständiger EOP PowerShell zum Erstellen von Rollengruppen
 
 Wenn Sie eine neue Rollengruppe erstellen, können Sie alle Einstellungen manuell konfigurieren (während der Erstellung der Gruppe oder danach). Sie können auch eine vorhandene Rollengruppe kopieren und ändern.
 
@@ -183,7 +183,7 @@ Wenn Sie eine neue Rollengruppe erstellen, können Sie alle Einstellungen manuel
 
      Der _Parameter "Members"_ gibt die Mitglieder der Rollengruppe mithilfe der folgenden Syntax `"Member1","Member2",..."MemberN"` an: Sie können Benutzer, Mail-aktivierte universelle Sicherheitsgruppen (USGs) oder andere Rollengruppen (Sicherheitsprinzipale) angeben.
 
-     In diesem Beispiel wird die Rollengruppe "Organization Management" in die neue Rollengruppe "Limited Organization Management" kopiert. Die Rollengruppenmitglieder sind Isabelle, Carter undAbel.
+     In diesem Beispiel wird die Rollengruppe "Organization Management" in die neue Rollengruppe "Limited Organization Management" kopiert. Die Rollengruppenmitglieder sind Isabelle, Carter undAbella.
 
      ```PowerShell
      $RoleGroup = Get-RoleGroup "Organization Management"
@@ -244,7 +244,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Ro
 
 Gehen Sie wie folgt vor, um sicherzustellen, dass Sie eine Rollengruppe erfolgreich kopiert haben:
 
-- Wechseln Sie in der EAC zu **Administratorrollen** "Berechtigungen", und stellen Sie sicher, dass die Rollengruppe aufgeführt \> (oder nicht aufgeführt) ist. Wählen Sie die Rollengruppe aus, und überprüfen  Sie die Einstellungen im Detailbereich, oder klicken Sie auf das ![ Bearbeitungssymbol, ](../../media/ITPro-EAC-EditIcon.png) um die Einstellungen zu überprüfen.
+- Wechseln Sie in der EAC zu **Administratorrollen** für Berechtigungen, und stellen Sie sicher, dass die \> Rollengruppe aufgeführt (oder nicht aufgeführt) ist. Wählen Sie die Rollengruppe aus, und überprüfen  Sie die Einstellungen im Detailbereich, oder klicken Sie auf das Bearbeitungssymbol, ![ um die Einstellungen zu ](../../media/ITPro-EAC-EditIcon.png) überprüfen.
 
 - Ersetzen Sie in Exchange Online PowerShell den Namen der Rollengruppe, und führen Sie den folgenden Befehl aus, um zu überprüfen, ob die Rollengruppe vorhanden (oder nicht vorhanden) ist, und überprüfen Sie die \<Role Group Name\> Einstellungen:
 

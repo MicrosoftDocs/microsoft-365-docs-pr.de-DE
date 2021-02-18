@@ -17,23 +17,23 @@ ms.collection:
 description: Erfahren Sie, wie die Zustellungspools zum Schutz der Reputation von E-Mail-Servern in den Microsoft 365-Rechenzentren verwendet werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5480916f55fc180a6f08d3c420cb92c730e4065b
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 89aac1478d3e5840df4379b9f49832b79d0e133a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167539"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289805"
 ---
 # <a name="outbound-delivery-pools"></a>Pools für die Zustellung ausgehender Nachrichten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-E-Mail-Server in den Microsoft 365-Rechenzentren können vorübergehend keine Spamnachrichten senden. Beispiel: Schadsoftware oder böswilliger Spamangriff in einer lokalen E-Mail-Organisation, die ausgehende E-Mails über Microsoft 365 sendet, oder gefährdete Microsoft 365-Konten. Angreifer versuchen auch, die Erkennung zu vermeiden, indem sie Nachrichten über die Microsoft 365-Weiterleitung weiterleiten.
+E-Mail-Server in den Microsoft 365-Rechenzentren können vorübergehend keine Spamnachrichten senden. Beispiel: Schadsoftware oder böswilliger Spamangriff in einer lokalen E-Mail-Organisation, die ausgehende E-Mails über Microsoft 365 sendet oder Microsoft 365-Konten gefährdet. Angreifer versuchen auch, die Erkennung zu vermeiden, indem sie Nachrichten über die Microsoft 365-Weiterleitung weiterleiten.
 
 Diese Szenarien können dazu führen, dass die IP-Adresse der betroffenen Microsoft 365-Rechenzentrumsserver in Sperrlisten von Drittanbietern angezeigt wird. Ziel-E-Mail-Organisationen, die diese Sperrlisten verwenden, lehnen E-Mails von diesen Nachrichtenquellen ab.
 
@@ -64,6 +64,6 @@ All diese Probleme können dazu führen, dass die Anzahl der unbndrs, die vom Di
 
 ## <a name="relay-pool"></a>Relaypool
 
-Nachrichten, die von Microsoft 365 weitergeleitet oder weitergeleitet werden, werden über einen speziellen Relaypool gesendet, da das endgültige Ziel Microsoft 365 nicht als tatsächlichen Absender betrachten sollte. Es ist uns auch wichtig, diesen Datenverkehr zu isolieren, da es legitime und ungültige Szenarien für das automatischeForwarding oder die Weiterleitung von E-Mails aus Microsoft 365 gibt. Ähnlich wie beim Pool für besonders riskante Zustellung wird ein separater IP-Adresspool für relayierte E-Mails verwendet. Dieser Adresspool wird nicht veröffentlicht, da er sich häufig ändern kann.
+Nachrichten, die von Microsoft 365 weitergeleitet oder weitergeleitet werden, werden über einen speziellen Relaypool gesendet, da das endgültige Ziel Microsoft 365 nicht als tatsächlichen Absender betrachten sollte. Es ist auch wichtig für uns, diesen Datenverkehr zu isolieren, da es legitime und ungültige Szenarien für das automatischeForwarding oder die Weiterleitung von E-Mails aus Microsoft 365 gibt. Ähnlich wie beim Pool für besonders riskante Zustellung wird ein separater IP-Adresspool für relayierte E-Mails verwendet. Dieser Adresspool wird nicht veröffentlicht, da er sich häufig ändern kann.
 
-Microsoft 365 muss überprüfen, ob der ursprüngliche Absender legitim ist, damit wir die weitergeleitete Nachricht sicher zu senden können. Dazu muss die E-Mail-Authentifizierung (SPF, DKIM und DMARC) übergeben werden, wenn die Nachricht an uns gesendet wird. In Fällen, in denen wir den Absender authentifizieren können, verwenden wir Sender Rewriting, um dem Empfänger zu helfen, zu wissen, dass die weitergeleitete Nachricht von einer vertrauenswürdigen Quelle stammt. Weitere Informationen dazu, wie dies funktioniert und was Sie tun können, um sicherzustellen, dass die sendende Domäne die Authentifizierung im [Sender Rewriting Scheme (SRS)](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme)besteht, finden Sie hier.
+Microsoft 365 muss überprüfen, ob der ursprüngliche Absender legitim ist, damit wir die weitergeleitete Nachricht sicher zu senden können. Dazu muss die E-Mail-Authentifizierung (SPF, DKIM und DMARC) übergeben werden, wenn die Nachricht an uns gesendet wird. In Fällen, in denen wir den Absender authentifizieren können, verwenden wir sender rewriting, um dem Empfänger zu helfen, zu wissen, dass die weitergeleitete Nachricht von einer vertrauenswürdigen Quelle stammt. Weitere Informationen dazu, wie dies funktioniert und was Sie tun können, um sicherzustellen, dass die sendende Domäne die Authentifizierung im [Sender Rewriting Scheme (SRS)](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme)besteht, finden Sie hier.

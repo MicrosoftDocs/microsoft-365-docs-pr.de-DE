@@ -17,23 +17,23 @@ ms.custom:
 description: Administratoren können sich über die verfügbaren und bevorzugten Optionen zum Zulassen eingehender Nachrichten in Exchange Online Protection (EOP) informieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 92229f0324eb9c05b233e5c4b0bc9f1bd7ab2e39
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ddcd6240cfc80350920999f9fc1e8ea188834553
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165559"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289711"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Erstellen von Listen sicherer Absender in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder ein eigenständiger Exchange Online Protection (EOP)-Kunde ohne Exchange Online-Postfächer sind, bietet EOP mehrere Möglichkeiten, um sicherzustellen, dass Benutzer E-Mails von vertrauenswürdigen Absendern erhalten. Diese Optionen umfassen Exchange-Nachrichtenflussregeln (auch als Transportregeln bezeichnet), Outlook-sichere Absender, die Liste zugelassener IP-Adressen (Verbindungsfilterung) und Listen zulässiger Absender oder zugelassener Domänen in Antispamrichtlinien. Sie können sich diese Optionen gemeinsam als Listen sicherer _Absender ausdingen._
+Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder ein eigenständiger Exchange Online Protection (EOP)-Kunde ohne Exchange Online-Postfächer sind, bietet EOP mehrere Möglichkeiten, um sicherzustellen, dass Benutzer E-Mails von vertrauenswürdigen Absendern erhalten. Zu diesen Optionen gehören Exchange-Nachrichtenflussregeln (auch als Transportregeln bezeichnet), outlook-sichere Absender, die Liste zugelassener IP-Adressen (Verbindungsfilterung) und Listen zulässiger Absender oder zulässiger Domänen in Antispamrichtlinien. Zusammen können Sie sich diese Optionen als Listen sicherer _Absender ausdingen._
 
 Die verfügbaren Listen sicherer Absender werden in der folgenden Liste in der Reihenfolge beschrieben, in der sie am wenigsten empfohlen werden:
 
@@ -48,13 +48,13 @@ Nachrichtenflussregeln ermöglichen die größte Flexibilität, um sicherzustell
 >
 > - Achten Sie darauf, alle *Ausnahmen,* die Sie bei der Spamfilterung mit Listen sicherer Absender machen, genau zu überwachen.
 >
-> - Obwohl Sie Listen sicherer Absender verwenden können, um falsch positive Ergebnisse zu vermeiden (gute E-Mails sind als schlecht gekennzeichnet), sollten Sie die Verwendung von Listen sicherer Absender als temporäre Lösung in Betracht ziehen, die nach Möglichkeit vermieden werden sollte. Es wird nicht empfohlen, falsch positive Ergebnisse mithilfe von Listen sicherer Absender zu verwalten, da Ausnahmen von der Spamfilterung Ihre Organisation für Spoofing und andere Angriffe öffnen können. Wenn Sie weiterhin Listen sicherer Absender verwenden, um falsch positive Ergebnisse zu verwalten, müssen Sie vorsichtig sein und das Thema "Nachrichten und Dateien an [Microsoft](report-junk-email-messages-to-microsoft.md) melden" bereithalten.
+> - Obwohl Sie Listen sicherer Absender verwenden können, um falsch positive Ergebnisse zu vermeiden (gute E-Mails sind als schlecht gekennzeichnet), sollten Sie die Verwendung von Listen sicherer Absender als temporäre Lösung in Betracht ziehen, die nach Möglichkeit vermieden werden sollte. Es wird nicht empfohlen, falsch positive Ergebnisse mithilfe von Listen sicherer Absender zu verwalten, da Ausnahmen von der Spamfilterung Ihre Organisation für Spoofing und andere Angriffe öffnen können. Wenn Sie weiterhin Listen sicherer Absender verwenden möchten, um falsch positive Ergebnisse zu verwalten, müssen Sie vorsichtig sein und das Thema "Nachrichten und Dateien an [Microsoft](report-junk-email-messages-to-microsoft.md) melden" bereithalten.
 >
-> - Damit eine Domäne nicht authentifizierte E-Mails senden kann (Antispoofingschutz umgehen), aber keine Antispam- und Antischsoftwareprüfungen umgehen kann, können Sie sie der Liste der sicheren Absender ["AllowedToSpoof"](walkthrough-spoof-intelligence-insight.md) hinzufügen.
+> - Damit eine Domäne nicht authentifizierte E-Mails senden kann (Antispoofingschutz umgehen), antispam- und antisch malware-Überprüfungen jedoch nicht umgehen, können Sie sie der Liste der sicheren Absender ["AllowedToSpoof"](walkthrough-spoof-intelligence-insight.md) hinzufügen.
 >
 > - EOP und Outlook überprüfen verschiedene Nachrichteneigenschaften, um den Absender der Nachricht zu ermitteln. Weitere Informationen finden Sie im Abschnitt ["Überlegungen für Massen-E-Mail"](#considerations-for-bulk-email) weiter unten in diesem Artikel.
 
-Im Gegensatz dazu haben Sie auch mehrere Optionen, um E-Mails aus bestimmten Quellen mithilfe von Listen _blockierter Absender zu blockieren._ Weitere Informationen finden Sie unter [Erstellen von Listen blockierter Absender in EOP](create-block-sender-lists-in-office-365.md).
+Im Gegensatz dazu stehen Ihnen auch mehrere Optionen zum Blockieren von E-Mails aus bestimmten Quellen mithilfe von Listen _blockierter Absender zur Verfügung._ Weitere Informationen finden Sie unter [Erstellen von Listen blockierter Absender in EOP](create-block-sender-lists-in-office-365.md).
 
 ## <a name="recommended-use-mail-flow-rules"></a>(Empfohlen) Verwenden von Nachrichtenflussregeln
 
@@ -80,11 +80,11 @@ Im folgenden Beispiel wird davon ausgegangen, dass Sie E-Mails von contoso.com, 
    >
    > - Verwenden Sie keine Domänen, die Sie besitzen (auch als akzeptierte Domänen bezeichnet) oder beliebte Domänen (z. B. microsoft.com) als Bedingungen in Nachrichtenflussregeln. Dies gilt als hohes Risiko, da es Angreifern Möglichkeiten bietet, E-Mails zu senden, die andernfalls gefiltert würden.
    >
-   > - Wenn Sie eine IP-Adresse zulassen, die sich hinter einem Netzwerkadressenübersetzungsgateway (Network Address Translation, NAT) befindet, müssen Sie die Server kennen, die am Netzwerkadressenpool beteiligt sind, um den Bereich Ihrer Liste zulässiger IP-Adressen zu kennen. Ip-Adressen und NAT-Teilnehmer können geändert werden. Sie müssen ihre Einträge in der Liste der zulässigen IP-Adressen regelmäßig im Rahmen der standardmäßigen Wartungsverfahren überprüfen.
+   > - Wenn Sie eine IP-Adresse zulassen, die sich hinter einem Netzwerkadressenübersetzungsgateway (Network Address Translation, NAT) befindet, müssen Sie die Server kennen, die am Netzwerkadressenpool beteiligt sind, um den Bereich Ihrer Liste zulässiger IP-Adressen zu kennen. IP-Adressen und NAT-Teilnehmer können geändert werden. Sie müssen ihre Einträge in der Liste der zulässigen IP-Adressen regelmäßig im Rahmen der standardmäßigen Wartungsverfahren überprüfen.
 
 3. **Optionale Bedingungen:**
 
-   - **Der Absender** \> **intern/extern** \> **Außerhalb der Organisation:** Diese Bedingung ist implizit, aber es ist in Ordnung, damit lokale E-Mail-Server berücksichtigt werden, die möglicherweise nicht ordnungsgemäß konfiguriert sind.
+   - **Der Absender** \> **ist intern/extern** \> **Außerhalb der Organisation:** Diese Bedingung ist implizit, aber es ist in Ordnung, damit lokale E-Mail-Server berücksichtigt werden, die möglicherweise nicht ordnungsgemäß konfiguriert sind.
 
    - **Betreff oder Textkörper** \> **Betreff oder Textkörper enthält eines dieser Wörter** \> : Wenn Sie die Nachrichten durch Schlüsselwörter oder Ausdrücke in der Betreffzeile oder im Nachrichtentext weiter einschränken können, können Sie diese Wörter \<keywords\> als Bedingung verwenden.
 
@@ -103,7 +103,7 @@ Im folgenden Beispiel wird davon ausgegangen, dass Sie E-Mails von contoso.com, 
 ## <a name="use-outlook-safe-senders"></a>Verwenden von sicheren Absendern in Outlook
 
 > [!CAUTION]
-> Diese Methode stellt ein hohes Risiko dar, dass Angreifer erfolgreich E-Mails an den Posteingang senden, die andernfalls gefiltert würden. Die Listen sicherer Absender oder sicherer Domänen des Benutzers verhindern jedoch nicht, dass Schadsoftware oder Besonders vertrauenswürdige Phishingnachrichten gefiltert werden.
+> Diese Methode stellt ein hohes Risiko dar, dass Angreifer erfolgreich E-Mails an den Posteingang senden, die andernfalls gefiltert würden. Die Listen sicherer Absender oder sicherer Domänen des Benutzers verhindern jedoch nicht, dass Schadsoftware oder Phishingnachrichten mit hoher Vertrauenswürdigung gefiltert werden.
 
 Anstelle einer Organisationseinstellung können Benutzer oder Administratoren die Absender-E-Mail-Adressen der Liste sicherer Absender im Postfach hinzufügen. Anweisungen finden Sie unter ["Konfigurieren von Junk-E-Mail-Einstellungen für Exchange Online-Postfächer in Office 365".](configure-junk-email-settings-on-exo-mailboxes.md) Dies ist in den meisten Situationen nicht wünschenswert, da Absender Teile des Filterstapels umgehen. Obwohl Sie dem Absender vertrauen, kann der Absender weiterhin gefährdet sein und schädliche Inhalte senden. Am besten lassen Sie unsere Filter die erforderlichen Maßnahmen zum Überprüfen jeder Nachricht zu und melden dann das falsch [positive/negative](report-junk-email-messages-to-microsoft.md) Ergebnis an Microsoft, wenn unsere Filter falsch sind. Das Umgehen des Filterstapels wirkt sich auch auf [ZAP aus.](zero-hour-auto-purge.md)
 
@@ -122,7 +122,7 @@ Wenn Sie Nachrichtenflussregeln nicht wie zuvor beschrieben verwenden können, b
 - Überprüfen Sie regelmäßig die Einträge in der LISTE der zulässigen IP-Adressen, und entfernen Sie die Einträge, die Sie nicht mehr benötigen.
 
 > [!CAUTION]
-> Ohne zusätzliche Überprüfung wie Nachrichtenflussregeln überspringt die E-Mail-Nachricht von Quellen in der Liste der zulässigen IP-Adressen Spamfilterung und Absenderauthentifizierung (SPF, DKIM, DMARC). Dies führt zu einem hohen Risiko, dass Angreifer erfolgreich E-Mails an den Posteingang senden, die andernfalls gefiltert würden. Die Liste der zulässigen IP-Adressen verhindert jedoch nicht, dass Schadsoftware oder Phishingnachrichten mit hoher Confidence gefiltert werden.
+> Ohne zusätzliche Überprüfung wie Nachrichtenflussregeln überspringt die E-Mail-Nachricht von Quellen in der Liste der zulässigen IP-Adressen Spamfilterung und Absenderauthentifizierung (SPF, DKIM, DMARC). Dies führt zu einem hohen Risiko, dass Angreifer erfolgreich E-Mails an den Posteingang senden, die andernfalls gefiltert würden. Die Liste der zulässigen IP-Adressen verhindert jedoch nicht, dass Schadsoftware oder Phishingnachrichten mit hoher Sicherheit gefiltert werden.
 
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Verwenden von Listen zulässiger Absender oder zulässiger Domänen
 
@@ -140,13 +140,13 @@ Die maximale Grenze für diese Listen beträgt ca. 1.000 Einträge. Sie können 
 
 Eine standardmäßige SMTP-E-Mail besteht aus einem *Nachrichten-Envelope* und dem Nachrichteninhalt. Der Nachrichtenumschlag enthält Informationen, die für die Übermittlung und Übermittlung der Nachricht zwischen den SMTP-Servern erforderlich sind. Der Nachrichteninhalt enthält Nachrichtenkopffelder (zusammenfassend als *Nachrichtenkopf* bezeichnet) sowie den Nachrichtentext. Der Nachrichtenumschlag wird in RFC 5321 beschrieben, und der Nachrichtenkopf wird in RFC 5322 beschrieben. Empfänger sehen den tatsächlichen Nachrichtenumschlag nie, da er vom Nachrichtenübermittlungsprozess generiert wird und nicht tatsächlich Teil der Nachricht ist.
 
-- Die Adresse (auch als `5321.MailFrom` MAIL **FROM-Adresse,** Absender von E-Mails oder Umschlagsender bezeichnet) ist die E-Mail-Adresse, die bei der SMTP-Übermittlung der Nachricht verwendet wird. Diese **E-Mail-Adresse** wird in der Regel im Kopfzeilenfeld "Return-Path" im Nachrichtenkopf aufgezeichnet (obwohl der Absender eine andere **Absender-E-Mail-Adresse** festlegen kann). Wenn die Nachricht nicht zugestellt werden kann, ist dies der Empfänger für den Unzustellbarkeitsbericht (auch als NDR oder Unzustellbarkeitsnachricht bekannt).
+- Die Adresse (auch als `5321.MailFrom` MAIL **FROM-Adresse,** Absender von E-Mails oder Umschlagsender bezeichnet) ist die E-Mail-Adresse, die bei der SMTP-Übermittlung der Nachricht verwendet wird. Diese E-Mail-Adresse wird in der Regel im Kopfzeilenfeld **"Return-Path"** im Nachrichtenkopf aufgezeichnet (obwohl der Absender eine andere **Absender-E-Mail-Adresse** festlegen kann). Wenn die Nachricht nicht zugestellt werden kann, ist dies der Empfänger für den Unzustellbarkeitsbericht (auch als NDR oder Unzustellbarkeitsnachricht bekannt).
 
 - The `5322.From` (also known as the **From** address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients.
 
 Häufig sind die `5321.MailFrom` Und-Adressen identisch (Kommunikation von Person `5322.From` zu Person). Wenn E-Mails jedoch im Auftrag einer anderen Person gesendet werden, können die Adressen unterschiedlich sein. Dies geschieht am häufigsten bei Massen-E-Mail-Nachrichten.
 
-Angenommen, Blue Yonder Airlines hat Margie's Travel eingestellt, um E-Mail-Werbung zu senden. Die Nachricht, die Sie in Ihrem Posteingang erhalten, hat die folgenden Eigenschaften:
+Angenommen, Blue Yonder Airlines hat Margie's Travel eingestellt, um seine E-Mail-Werbung zu senden. Die Nachricht, die Sie in Ihrem Posteingang erhalten, hat die folgenden Eigenschaften:
 
 - Die `5321.MailFrom` Adresse ist blueyonder.airlines@margiestravel.com.
 

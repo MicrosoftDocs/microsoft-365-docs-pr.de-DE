@@ -14,21 +14,21 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie die Nachrichtenflusszuordnung im Nachrichtenflussdashboard im Security & Compliance Center verwenden, um zu visualisieren und nachzuverfolgen, wie E-Mails über Connectors und ohne Connectors zu und von ihrer Organisation fließen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 87a5780bd2485ba6ad3b295c09a30a4d7fc34277
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 2f507f7f01999492d17e168a2a56da906bfcb52d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150560"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290585"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Nachrichtenflusszuordnung im Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Die **Nachrichtenflusszuordnung** im Nachrichtenflussdashboard im [Security & Compliance Center](https://protection.office.com) bietet Einblicke in den E-Mail-Fluss in Ihrer Organisation. [](mail-flow-insights-v2.md) Sie können diese Informationen verwenden, um Muster zu erlernen, Anomalien zu identifizieren und Probleme zu beheben, während sie auftreten.
 
@@ -38,11 +38,11 @@ Standardmäßig zeigt das Widget das Nachrichtenflussmuster vom vorigen Tag in e
 
 ## <a name="report-view-for-the-mail-flow-map"></a>Berichtsansicht für die Nachrichtenflusszuordnung
 
-Wenn Sie auf das **Widget für die Nachrichtenflusszuordnung** klicken, werden Sie zum Bericht **"Nachrichtenflusszuordnung" geklickt.**
+Wenn Sie auf das **Widget für die Nachrichtenflusszuordnung** klicken, werden Sie zum **Bericht "Nachrichtenflusszuordnung" geklickt.**
 
 Die folgenden Diagramme sind in der Berichtsansicht verfügbar:
 
-- **Anzeigen von Daten für: Übersicht:** Dies ist im Wesentlichen eine größere Ansicht des Widgets. Wenn Sie mit der Maus auf eine bestimmte Farbe zeigen, wird die Anzahl der Nachrichten für diesen Connectortyp angezeigt.
+- **Anzeigen von Daten für: Übersicht:** Dies ist im Wesentlichen eine größere Ansicht des Widgets. Wenn Sie mit der Maus auf eine bestimmte Farbe zeigen, wird die Anzahl der Meldungen für diesen Connectortyp angezeigt.
 
   ![Übersichtsansicht im Bericht "Nachrichtenflusszuordnung"](../../media/mfi-mail-flow-map-report-overview.png)
 
@@ -64,7 +64,7 @@ Wenn Sie in einer **Berichtsansicht auf "Details anzeigen"** klicken, werden die
 - **Kategorie**
 - **Connector/Drittanbieter**
 - **Absender-/Empfängerdomäne**
-- **Nachrichtenanzahl**
+- **Anzahl der Nachrichten**
 
 Wenn Sie in einer **Detailtabelle auf Filter** klicken, können Sie einen Datumsbereich mit **Startdatum** und **Enddatum angeben.**
 
