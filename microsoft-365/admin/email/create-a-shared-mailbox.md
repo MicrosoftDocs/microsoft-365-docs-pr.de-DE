@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Erstellen Sie ein freigegebenes Postfach, damit mehrere Benutzer in Ihrem Unternehmen die Verantwortung für das Lesen und Beantworten von E-Mails teilen, die an eine Adresse gesendet wurden.
-ms.openlocfilehash: d0bd5770f347766638af0f0e66b9f961b3721697
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d71e33aa0a04bd52f707038ac31e98bef68f27b0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926594"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287233"
 ---
 # <a name="create-a-shared-mailbox"></a>Erstellen eines freigegebenen Postfachs 
 
@@ -81,6 +81,30 @@ Lesen Sie vor dem Erstellen eines freigegebenen Postfachs unbedingt [Information
 7. Wählen Sie **Schließen** aus.
 
 Sie haben ein freigegebenes Postfach, das einen freigegebenen Kalender enthält. Fahren Sie jetzt mit dem nächsten Schritt fort: Blockieren der Anmeldung für das freigegebene Postfachkonto.
+
+## <a name="which-permissions-should-you-use"></a>Welche Berechtigungen sollten Sie verwenden?
+
+Sie können die folgenden Berechtigungen mit einem freigegebenen Postfach verwenden:
+
+- **Vollzugriff**: Die Berechtigung „Vollzugriff“ ermöglicht es einem Benutzer, das freigegebene Postfach zu öffnen und als Besitzer dieses Postfachs zu agieren. Nach dem Zugriff auf das freigegebene Postfach kann ein Benutzer Kalenderelemente erstellen, E-Mails lesen, anzeigen, löschen und ändern sowie Tasks und Kalenderkontakte erstellen. Ein Benutzer mit der Berechtigung "Vollzugriff" kann jedoch keine E-Mails über das freigegebene Postfach senden, außer er hat auch die Berechtigung "Senden als" oder "Senden im Auftrag von".
+
+- **Senden als**: Die Berechtigung „Senden als“ ermöglicht es einem Benutzer, die Identität des freigegebenen Postfachs beim Senden einer E-Mail zu wechseln. Wenn Katerina sich beispielsweise beim freigegebenen Postfach „Marketingabteilung“ anmeldet und eine E-Mail sendet, sieht es so aus, als wäre die Nachricht von der Marketingabteilung gesendet worden.
+
+- **Senden im Auftrag von**: Die Berechtigung „Senden im Auftrag von“ ermöglicht es einem Benutzer, E-Mails im Namen des freigegebenen Postfachs zu senden. Beispiel: John meldet sich beim freigegebenen Postfach des Empfangs in Gebäude 32 an und sendet eine E-Mail. Dem Empfänger wird angezeigt, dass John sie im Auftrag des Empfangs in Gebäude 32 gesendet hat. Sie können „Senden im Auftrag von“-Berechtigungen nicht über das EAC erteilen, sondern müssen das Cmdlet **Set-Mailbox** mit dem Parameter _GrantSendonBehalf_ verwenden.
+
+### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>Verwenden des EAC zum Bearbeiten der Stellvertretung für das freigegebene Postfach
+
+1. Navigieren Sie in der EAC zu **Empfänger** \> **Freigegeben**. Wählen Sie das gewünschte freigegebene Postfach und dann **Bearbeiten** ![Bearbeiten-Symbol](../../media/ITPro-EAC-EditIcon.png) aus.
+
+2. Wählen Sie **Postfachstellvertretung**.
+
+3. Wählen Sie zum Erteilen oder Entziehen von Vollzugriff oder „Senden als“-Berechtigungen die Option **Hinzufügen**![Hinzufügen-Symbol](../../media/ITPro-EAC-AddIcon.png) oder **Entfernen**![Entfernen-Symbol](../../media/ITPro-EAC-RemoveIcon.gif) und dann die Benutzer aus, für die Sie die Berechtigungen erteilen bzw. entziehen möchten.
+
+   > [!NOTE]
+   > Die Vollzugriff-Berechtigung ermöglicht es einem Benutzer, das Postfach zu öffnen und Elemente darin zu erstellen oder zu ändern. Die "Senden als"-Berechtigung ermöglicht es Benutzern, bei denen es sich nicht um den Postfachbesitzer handelt, E-Mails von dem freigegebenen Postfach zu senden. Beide Berechtigungen sind für erfolgreiche freigegebene Postfächer erforderlich.
+
+4. Wählen Sie **Speichern** aus, um Ihre Änderungen zu speichern.
+
 
 ## <a name="block-sign-in-for-the-shared-mailbox-account"></a>Blockieren der Anmeldung für das freigegebene Postfachkonto
 
@@ -185,8 +209,5 @@ Beim Erstellen des freigegebenen Postfachs haben Sie automatisch einen freigegeb
 [Entfernen einer Lizenz aus einem freigegebenen Postfach](remove-license-from-shared-mailbox.md)
 
 [Beheben von Problemen mit freigegebenen Postfächern](resolve-issues-with-shared-mailboxes.md)
-
-
-
 
 
