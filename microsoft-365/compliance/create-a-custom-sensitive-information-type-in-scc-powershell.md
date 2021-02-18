@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie einen benutzerdefinierten Typ für vertrauliche Informationen für Richtlinien im Compliance Center erstellen und importieren können.
-ms.openlocfilehash: 63ff32bda31446c25a523ff2064f7b750d102961
-ms.sourcegitcommit: 3e29926f51530afb0d75d8518a92b9ec7dc5e5bd
+ms.openlocfilehash: e3735458f3259478a7df36bb3c6ddbc4a5fed719
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50173122"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288502"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Erstellen eines benutzerdefinierten vertraulichen Informationstyps mit PowerShell
 
@@ -433,9 +433,13 @@ Wenn Sie die XML-Datei des Regelpakets hochladen, überprüft das System den XML
 
 - Jeder benutzerdefinierte Typ vertraulicher Informationen kann maximal 2048 Schlüsselwörter enthalten.
 
-- Bei Verwendung des PowerShell-Cmdlets gibt es eine maximale Rückgabegröße der deserialisierten Daten von ca. 1 Megabyte.   Dies wirkt sich auf die Größe der XML-Datei aus. Beschränken Sie die hochgeladene Datei auf eine maximale Größe von 512 MB als vorgeschlagenen Grenzwert, um konsistente Ergebnisse ohne Fehler bei der Verarbeitung zu erhalten.
+- Die maximale Größe von Schlüsselwörterbüchern in einem einzelnen Mandanten beträgt 100 Kilobyte komprimiert. Verweisen Sie beim Erstellen benutzerdefinierter vertraulicher Informationstypen so oft wie nötig auf dasselbe Wörterbuch. Beginnen Sie mit dem Erstellen benutzerdefinierter Schlüsselwortlisten im vertraulichen Informationstyp und verwenden Sie Schlüsselwörterbücher, wenn Sie mehr als 2048 Schlüsselworte in einer Schlüsselwortliste haben oder ein Schlüsselwort länger als 50 Zeichen ist.
 
-- Die XML-Struktur erfordert keine Formatierungszeichen wie Leerzeichen, Tabstopps oder Wagenrücklauf-/Zeilenvorschubeinträge.  Beachten Sie dies beim Optimieren des Speicherplatzes bei Uploads.
+- Stellen Sie sicher, dass jedes Element der Entität ein Attribut recommendedConfidence enthält.
+
+- Bei Verwendung des PowerShell-Cmdlets gibt es eine maximale Rückgabegröße der deserialisierten Daten von ca. 1 Megabyte.   Dies wirkt sich auf die Größe der Regelpaket-XML-Datei aus. Beschränken Sie die hochgeladene Datei auf eine maximale Größe von 770 Kilobyte als ein vorgeschlagener Grenzwert, um konsistente Ergebnisse ohne Fehler bei der Verarbeitung zu erhalten.
+
+- Die XML-Struktur erfordert keine Formatierungszeichen wie Leerzeichen, Tabstopps oder Wagenrücklauf-/Zeilenvorschubeinträge.  Beachten Sie dies beim Optimieren des Speicherplatzes bei Uploads. Tools wie Microsoft Visual Code bieten Verknüpfungslinie-Features zum Komprimieren der XML-Datei.
     
 Wenn ein benutzerdefinierter Typ für vertrauliche Informationen ein Problem enthält, das die Leistung beeinträchtigen könnte, wird er nicht hochgeladen, und es wird möglicherweise eine der folgenden Fehlermeldungen angezeigt:
   

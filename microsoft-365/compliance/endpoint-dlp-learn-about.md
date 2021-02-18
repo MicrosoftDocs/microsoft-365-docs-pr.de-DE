@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 Endpunkt-DLP erweitert die Überwachung von Dateiaktivitäten sowie schützende Maßnahmen für diese Dateien auf Endpunkte. Die Dateien werden in den Microsoft 365 Compliance-Lösungen angezeigt. '
-ms.openlocfilehash: 1dac32505144c3966ad2219cc69a33ba29f194dc
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: d5394499b5514e6e0a49f958a62e70cde61ebf44
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682626"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279309"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informationen zu Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust)
 
@@ -34,8 +34,7 @@ Sie können Microsoft 365-DLP (Data Loss Prevention, Verhinderung von Datenverlu
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Endpunktaktivitäten, die Sie überwachen und für die Sie Maßnahmen festlegen können
 
-Mit Microsoft Endpunkt-DLP können Sie die folgenden Aktivitätstypen überwachen und verwalten, die von Benutzern mit und an vertraulichen Elementen auf Windows 10-Geräten ausgeführt werden.
-
+Mit Microsoft Endpunkt-DLP können Sie die folgenden Aktivitätstypen überwachen und verwalten, die von Benutzern mit und an vertraulichen Elementen auf Windows 10-Geräten ausgeführt werden. 
 
 |Aktivität |Beschreibung  | überwachbar/einschränkbar|
 |---------|---------|---------|
@@ -47,6 +46,28 @@ Mit Microsoft Endpunkt-DLP können Sie die folgenden Aktivitätstypen überwache
 |Element erstellen|Erkennt, wenn ein Benutzer ein Element erstellt.| überwachbar|
 |Element umbenennen|Erkennt, wenn ein Benutzer ein Element umbenennt.| überwachbar|
 
+ ## <a name="monitored-files"></a>Überwachte Dateien
+
+Endpunkt-DLP unterstützt die Überwachung dieser Dateitypen:
+
+- Word-Dateien
+- PowerPoint-Dateien
+- Excel-Dateien
+- PDF-Dateien
+- CSV-Dateien
+- TSV-Dateien
+- TXT-Dateien
+- RTF-Dateien
+- C-Dateien
+- CLASS-Dateien
+- CPP-Dateien
+- CS-Dateien
+- H-Dateien
+- JAVA-Dateien
+ 
+Standardmäßig überwacht Endpunkt-DLP die Aktivitäten für diese Dateitypen, auch wenn keine Richtlinienübereinstimmung vorliegt. Wenn Sie nur Daten aus Richtlinienübereinstimmungen überwachen möchten, können Sie **Dateiaktivität für Geräte immer überwachen** in den globalen Endpunkt-DLP-Einstellungen deaktivieren. Unabhängig davon werden Aktivitäten für sämtliche Word-, PowerPoint-, Excel-, PDF- und CSV-Dateien immer überwacht.
+
+Verhinderung von Datenverlust am Endpunkt (Endpunkt-DLP) überwacht Aktivitäten basierend auf dem MIME-Typ, sodass sie auch dann erfasst werden, wenn die Dateierweiterung geändert wurde. 
 
 ## <a name="whats-different-in-endpoint-dlp"></a>Was ist bei Endpunkt-DLP anders?
 
@@ -79,25 +100,7 @@ Wenn das Onboarding eines Geräts über [Microsoft Defender für Endpunkt](https
 
 ### <a name="viewing-endpoint-dlp-data"></a>Anzeigen von Endpunkt-DLP-Daten
 
- Verhinderung von Datenverlust am Endpunkt (Endpunkt-DLP) überwacht Aktivitäten basierend auf dem MIME-Typ, sodass sie auch dann erfasst werden, wenn die Dateierweiterung geändert wurde. Derzeit werden die folgenden Dateitypen unterstützt:
 
-- Word-Dateien
-- PowerPoint-Dateien
-- Excel-Dateien
-- PDF-Dateien
-- CSV-Dateien
-- TSV-Dateien
-- TXT-Dateien
-- RTF-Dateien
-- C-Dateien
-- CLASS-Dateien
-- CPP-Dateien
-- CS-Dateien
-- H-Dateien
-- JAVA-Dateien
-
-> [!NOTE]
-> Endpunkt-DLP bewertet Dateien aller oben genannten Typen anhand der DLP-Richtlinie und wendet Schutzmaßnahmen entsprechend an. Alle Dateien, die einer DLP-Richtlinie entsprechen, werden für alle unterstützten Aktionen geprüft, auch wenn Sie nicht blockiert sind. Darüber hinaus werden Dateiaktivitäten, die mit beliebigen Word-, PowerPoint-, Excel-, PDF- und CSV-Dateien durchgeführt werden, standardmäßig geprüft, unabhängig davon, ob eine DLP-Richtlinie vorhanden ist oder mit diesen Dateien übereinstimmt.
 
 Sie können Benachrichtigungen anzeigen, die mit auf Endpunktgeräten durchgesetzten DLP-Richtlinien verbunden sind, indem Sie zum [Verwaltungsdasboard „DLP-Benachrichtigungen“](dlp-configure-view-alerts-policies.md) wechseln.
 
