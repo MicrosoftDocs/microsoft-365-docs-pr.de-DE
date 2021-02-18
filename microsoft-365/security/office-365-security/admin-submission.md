@@ -19,20 +19,20 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie das Übermittlungsportal im Security & Compliance Center verwenden, um verdächtige E-Mails, verdächtige Phishing-E-Mails, Spam und andere potenziell schädliche Nachrichten, URLs und Dateien zur Überprüfung an Microsoft zu übermitteln.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7a822909c318cb336c179b299aa64cd71dcca4d8
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 7b4e6dfcb5900ed41ad3ab0b44fada93599f0b4b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175871"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288789"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Verwenden von Administrator-Übermittlung, um verdächtige Spam- oder Phishing-Nachrichten, URLs und Dateien an Microsoft zu übermitteln
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
 
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online können Administratoren das Übermittlungsportal im Security & Compliance Center verwenden, um E-Mail-Nachrichten, URLs und Anlagen zur Überprüfung an Microsoft zu übermitteln.
@@ -45,7 +45,7 @@ Wenn Sie eine E-Mail-Nachricht übermitteln, erhalten Sie:
 4. **Analyse der** Benotung: Überprüfen Sie, ob Nachrichten bösartig sind oder nicht.
 
 > [!IMPORTANT]
-> Die Nutzlast-Reputations-/Detonation- und Bewertungsanalyse wird nicht in allen Mandanten durchgeführt. Informationen werden am Verlassen der Organisation blockiert, wenn Daten aus Compliancegründen nicht die Mandantengrenze verlassen sollen.
+> Die Nutzlast-Reputations-/Detonation- und Bewertungsanalyse wird nicht in allen Mandanten durchgeführt. Es wird verhindert, dass Informationen außerhalb der Organisation liegen, wenn Daten aus Compliancegründen nicht die Mandantengrenze verlassen sollen.
 
 Weitere Möglichkeiten zum Senden von E-Mail-Nachrichten, URLs und Anlagen an Microsoft finden Sie unter "Nachrichten und Dateien an [Microsoft melden".](report-junk-email-messages-to-microsoft.md)
 
@@ -63,7 +63,7 @@ Weitere Möglichkeiten zum Senden von E-Mail-Nachrichten, URLs und Anlagen an Mi
 
 - Weitere Informationen dazu, wie Benutzer Nachrichten und Dateien an Microsoft übermitteln können, finden Sie unter "Nachrichten und Dateien an [Microsoft melden".](report-junk-email-messages-to-microsoft.md)
 
-## <a name="report-suspicious-content-to-microsoft"></a>Melden verdächtiger Inhalte an Microsoft
+## <a name="report-suspicious-content-to-microsoft"></a>Verdächtige Inhalte an Microsoft melden
 
 1. Wechseln Sie im Security & Compliance  Center zu "Übermittlungen zur \> **Bedrohungsverwaltung",** vergewissern Sie sich, dass Sie auf der Registerkarte **"Administratorübermittlungen"** sind, und klicken Sie dann auf **"Neue Übermittlung".**
 
@@ -94,7 +94,7 @@ Weitere Möglichkeiten zum Senden von E-Mail-Nachrichten, URLs und Anlagen an Mi
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Senden einer verdächtigen URL an Microsoft
 
-1. Wählen Sie **im Abschnitt "Objekttyp"** die **URL aus.** Geben Sie in das angezeigte Feld die vollständige URL ein (z. B. `https://www.fabrikam.com/marketing.html` ).
+1. Wählen Sie **im Abschnitt "Objekttyp"** **die URL aus.** Geben Sie in das angezeigte Feld die vollständige URL ein (z. B. `https://www.fabrikam.com/marketing.html` ).
 
 2. Wählen Sie **im Abschnitt "Gründe für die** Übermittlung" eine der folgenden Optionen aus:
 
@@ -203,7 +203,7 @@ Sie können auf die Schaltfläche **"Spaltenoptionen"** am unteren Rand der Seit
 
 ## <a name="view-user-submissions-to-microsoft"></a>Anzeigen von Benutzerübermittlungen an Microsoft
 
-Wenn Sie das Add-in "Nachricht melden", das [Phishing-Add-In](enable-the-report-phish-add-in.md)"Melden" oder Personen, die die integrierte Berichterstellung  [in Outlook im Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)verwenden, bereitgestellt haben, können Sie auf der Registerkarte "Benutzerübermittlungen" anzeigen, welche Benutzer berichte. [](enable-the-report-message-add-in.md)
+Wenn Sie das Report [Message-Add-In,](enable-the-report-message-add-in.md)das [Phishing-Add-In](enable-the-report-phish-add-in.md)"Melden" oder Personen, die die integrierte Berichterstellung in  [Outlook im Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)verwenden, bereitgestellt haben, können Sie auf der Registerkarte "Benutzerübermittlungen" anzeigen, welche Benutzer berichte.
 
 1. Wechseln Sie im Security & Compliance Center zu **"Übermittlungen zur** \> **Bedrohungsverwaltung".**
 
@@ -222,7 +222,7 @@ Sie können auf die Schaltfläche **"Spaltenoptionen"** am unteren Rand der Seit
 
 Im oberen Seitenanfang können Sie ein Startdatum, ein Enddatum und (standardmäßig) einen Filter nach **Absender** eingeben, indem Sie einen Wert in das Feld eingeben und auf die Schaltfläche Aktualisieren ![ ](../../media/scc-quarantine-refresh.png) klicken. Update
 
-Klicken Sie zum Ändern der Filterkriterien auf die Schaltfläche **"Absender",** und wählen Sie einen der folgenden Werte aus:
+Um die Filterkriterien zu ändern, klicken Sie auf die Schaltfläche **"Absender",** und wählen Sie einen der folgenden Werte aus:
 
 - **Absenderdomäne**
 - **Betreff**

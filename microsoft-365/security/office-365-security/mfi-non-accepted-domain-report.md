@@ -14,21 +14,21 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie den Bericht über nicht akzeptierte Domänen im Nachrichtenflussdashboard im Security & Compliance Center verwenden, um Nachrichten aus Ihrer lokalen Organisation zu überwachen, in denen die Domäne des Absenders nicht in Microsoft 365 konfiguriert ist.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 573fb0ba2bf7981b6eb7df4eec7c8c4e5d596cac
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 6d7355af49c5810a593c5776b70cf7497b43af6b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150820"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287865"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Nicht akzeptierter Domänenbericht im Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Der Bericht "Nicht akzeptierte Domäne" im Nachrichtenflussdashboard im [Security & Compliance Center](https://protection.office.com) zeigt Informationen zu Nachrichten von Ihrer lokalen E-Mail-Organisation an, in denen die Domäne des Absenders nicht als akzeptierte Domäne in Ihrer Microsoft 365-Organisation konfiguriert ist.  [](mail-flow-insights-v2.md)
 
@@ -38,22 +38,22 @@ Microsoft 365 drosselt diese Nachrichten möglicherweise, wenn wir Daten haben, 
 
 ## <a name="report-view-for-the-non-accepted-domain-report"></a>Berichtsansicht für den Bericht über nicht akzeptierte Domänen
 
-Wenn Sie im Widget "Nicht **akzeptierte** Domäne" auf das Diagramm klicken, werden Sie zum Bericht **"Nicht akzeptierte Domäne" geklickt.**
+Wenn Sie auf das Diagramm im **Widget "Nicht akzeptierte** Domänen" klicken, werden Sie zum Bericht **"Nicht akzeptierte Domäne" geklickt.**
 
 Standardmäßig wird die Aktivität für alle betroffenen Connectors angezeigt. Wenn Sie auf **"Daten anzeigen" klicken,** können Sie in der Dropdownliste einen bestimmten Connector auswählen.
 
 Wenn Sie mit der Maus auf einen Datenpunkt (Tag) im Diagramm zeigen, wird die Gesamtanzahl der Nachrichten für den Connector angezeigt.
 
-![Berichtsansicht im Bericht "Nicht akzeptierte Domäne"](../../media/mfi-non-accepted-domain-report-overview-view.png)
+![Berichtsansicht im Bericht über nicht akzeptierte Domänen](../../media/mfi-non-accepted-domain-report-overview-view.png)
 
-## <a name="details-table-view-for-the-non-accepted-domain-report"></a>Detailtabelle für den Bericht "Nicht akzeptierte Domäne"
+## <a name="details-table-view-for-the-non-accepted-domain-report"></a>Detailtabelle für den Bericht über nicht akzeptierte Domänen
 
 Wenn Sie in einer **Berichtsansicht auf "Details anzeigen"** klicken, werden die folgenden Informationen angezeigt:
 
 - **Date**
 - **Name des eingehenden Connectors**
 - **Absenderdomäne**
-- **Nachrichtenanzahl**
+- **Anzahl der Nachrichten**
 - **Beispielmeldungen:** Die Nachrichten-IDs eines Beispiels betroffener Nachrichten.
 
 Wenn Sie in einer **Detailtabelle auf Filter** klicken, können Sie einen Datumsbereich mit **Startdatum** und **Enddatum angeben.**
@@ -65,7 +65,7 @@ Wenn Sie eine Zeile in der Tabelle auswählen, wird ein Flyout mit den folgenden
 - **Date**
 - **Name des eingehenden Connectors**
 - **Absenderdomäne**
-- **Nachrichtenanzahl**
+- **Anzahl der Nachrichten**
 - **Beispielmeldungen:** Sie können auf "Beispielmeldungen **anzeigen"** klicken, um die Ergebnisse der Nachrichtenverfolgung für ein Beispiel der betroffenen Nachrichten zu sehen. [](message-trace-scc.md)
 
 ![Details flyout after selecting a row in Details table view in the Non-accepted domain report](../../media/mfi-non-accepted-domain-report-details-flyout.png)

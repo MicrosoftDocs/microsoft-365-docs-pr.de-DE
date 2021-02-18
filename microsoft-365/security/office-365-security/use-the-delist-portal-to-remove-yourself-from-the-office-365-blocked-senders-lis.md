@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 04/18/2016
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -19,17 +18,23 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie, wie Sie sich mithilfe des Listenentfernungsportals selbst aus der Microsoft 365-Liste der blockierten Absender entfernen können.
-ms.openlocfilehash: 0c87d467db004a50502402b05eb0fa3283aa46c5
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: c11fced30ef52315ecb44dda51e6825d36b57c7e
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614762"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287521"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Verwenden des Listenentfernungsportals, um sich selbst aus der Liste der blockierten Absender zu entfernen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Erhalten Sie eine Fehlermeldung, wenn Sie versuchen, eine E-Mail an einen Empfänger zu senden, dessen E-Mail-Adresse sich in Microsoft 365 befindet? Wenn Sie glauben, dass Sie die Fehlermeldung nicht erhalten sollten, können Sie das Listenentfernungsportal verwenden, um sich selbst aus der Liste der blockierten Absender zu entfernen.
 
@@ -64,4 +69,4 @@ wobei _IP address_ die IP-Adresse des Computers ist, auf dem der E-Mail-Server a
     > [!NOTE]
     > Es kann bis zu 24 Stunden dauern oder die Ergebnisse können sehr unterschiedlich ausfallen, bevor die Beschränkungen aufgehoben werden.
 
-Weitere Informationen finden Sie unter [Create Safe Sender Lists in EoP](create-safe-sender-lists-in-office-365.md) und [Outbound Spam Protection in EoP](outbound-spam-controls.md) , um zu verhindern, dass IP blockiert wird.
+Informationen dazu, wie Sie verhindern können, dass eine IP blockiert wird, finden Sie unter "Erstellen von Listen sicherer Absender [in EOP](create-safe-sender-lists-in-office-365.md) und dem Schutz ausgehender Spamnachrichten [in EOP".](outbound-spam-controls.md)

@@ -17,12 +17,12 @@ ms.collection:
 description: Weitere Informationen zur Standardmäßigen Einstellung "Sicherheit" in Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 51b33afa6b07c040e6aa18abe996c78b770f0773
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 4a507abce8c18657794b56570241570e5048b89d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166579"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288513"
 ---
 # <a name="secure-by-default-in-office-365"></a>Standardmäßig sicher in Office 365
 
@@ -30,9 +30,9 @@ ms.locfileid: "50166579"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 "Standardmäßig sicher" ist ein Begriff, der verwendet wird, um die Standardeinstellungen zu definieren, die möglichst sicher sind.
 
@@ -44,12 +44,12 @@ Sicherheit muss jedoch mit Produktivität abgewogen werden. Dies kann einen Ausg
 
 Microsoft 365-Organisationen mit Postfächern in Exchange Online sind durch Exchange Online Protection (EOP) geschützt. Dieser Schutz umfasst:
 
-- E-Mails mit mutmaßlicher Schadsoftware werden automatisch in Quarantäne gestellt, und Empfänger werden benachrichtigt. Weitere [Informationen finden Sie unter "Konfigurieren von An malware-Richtlinien in EOP".](configure-anti-malware-policies.md)
+- E-Mails mit mutmaßlicher Schadsoftware werden automatisch unter Quarantäne gestellt, und Empfänger werden benachrichtigt. Weitere [Informationen finden Sie unter "Konfigurieren von An malware-Richtlinien in EOP".](configure-anti-malware-policies.md)
 - E-Mails, die als Phishing mit hoher Confidence identifiziert werden, werden gemäß der Antispamrichtlinienaktion behandelt. Weitere [Informationen finden Sie unter Konfigurieren von Antispamrichtlinien in EOP.](configure-your-spam-filter-policies.md)
 
 Weitere Informationen zu EOP finden Sie in [der Exchange Online Protection-Übersicht.](exchange-online-protection-overview.md)
 
-Da Microsoft unsere Kunden standardmäßig schützen möchte, werden einige Mandantenüberschreibungen nicht auf Schadsoftware oder Phishing mit hoher Sicherheit angewendet. Zu diesen Außerkraftsetzungen gehören:
+Da Microsoft unsere Kunden standardmäßig schützen möchte, werden einige Mandanten nicht auf Schadsoftware oder Phishing mit hoher Sicherheit angewendet. Zu diesen Außerkraftsetzungen gehören:
 
 - Listen zulässiger Absender oder zulässiger Domänen (Antispamrichtlinien)
 - Sichere Absender in Outlook
@@ -58,13 +58,13 @@ Da Microsoft unsere Kunden standardmäßig schützen möchte, werden einige Mand
 Weitere Informationen zu diesen Außerkraftsetzungen finden Sie unter "Listen [sicherer Absender erstellen".](create-safe-sender-lists-in-office-365.md)
 
 > [!NOTE]
-> We're in the process of deprecating the **Move message to Junk Email folder action** for a High confidence phishing **email** verdict in EOP anti-spam policies. Antispamrichtlinien, die diese Aktion für Phishingnachrichten mit hoher Confidence verwenden, werden in **Quarantänenachrichten konvertiert.** Die **Aktion "Nachricht an E-Mail-Adresse** umleiten" für Phishingnachrichten mit hoher Confidence ist davon nicht betroffen.
+> We're in the process of deprecating the **Move message to Junk Email folder action** for a High confidence phishing **email** verdict in EOP anti-spam policies. Antispamrichtlinien, die diese Aktion für Phishingnachrichten mit hoher Sicherheit verwenden, werden in **Quarantänenachrichten konvertiert.** Die **Aktion "Nachricht an E-Mail-Adresse** umleiten" für Phishingnachrichten mit hoher Confidence ist davon nicht betroffen.
 
-"Sicherheit" ist standardmäßig keine Einstellung, die aktiviert oder deaktiviert werden kann, aber unsere Filterung funktioniert so, dass potenziell gefährliche oder unerwünschte Nachrichten aus Ihren Postfächern herausgefiltert werden. Schadsoftware und Phishingnachrichten mit hoher Confidence sollten unter Quarantäne gestellt werden. Nur Administratoren können Nachrichten verwalten, die als Schadsoftware oder Phishing mit hoher Sicherheit isoliert sind, und sie können von dort auch falsch positive Ergebnisse an Microsoft melden. Weitere Informationen finden Sie unter ["Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP"](manage-quarantined-messages-and-files.md)
+"Sicherheit" ist standardmäßig keine Einstellung, die aktiviert oder deaktiviert werden kann, aber unsere Filterung funktioniert so, dass potenziell gefährliche oder unerwünschte Nachrichten aus Ihren Postfächern herausgefiltert werden. Schadsoftware und Phishingnachrichten mit hoher Sicherheit sollten unter Quarantäne gestellt werden. Nur Administratoren können Nachrichten verwalten, die als Schadsoftware oder Phishing mit hoher Sicherheit isoliert sind, und sie können von dort auch falsch positive Ergebnisse an Microsoft melden. Weitere Informationen finden Sie unter ["Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP"](manage-quarantined-messages-and-files.md)
 
 ## <a name="more-on-why-were-doing-this"></a>Weitere Informationen dazu, warum wir dies tun
 
-Der Standardwert für Sicherheit ist: Wir ergreifen dieselbe Aktion für die Nachricht, die Sie ergreifen würden, wenn Sie die Nachricht als bösartig einwünssten, selbst wenn eine konfigurierte Ausnahme andernfalls die Zugestellt werden würde. Dies ist der gleiche Ansatz, den wir immer für Schadsoftware verwendet haben, und jetzt erweitern wir dieses Verhalten auf Phishingnachrichten mit hoher Sicherheit.
+Der Standardwert für Sicherheit ist: Wir ergreifen dieselbe Aktion für die Nachricht, die Sie ergreifen würden, wenn Sie die Nachricht als bösartig einwünssten, auch wenn eine konfigurierte Ausnahme andernfalls die Zugestellt werden würde. Dies ist der gleiche Ansatz, den wir immer für Schadsoftware verwendet haben, und jetzt erweitern wir dieses Verhalten auf Phishingnachrichten mit hoher Sicherheit.
 
 Unsere Daten deuten darauf hin, dass ein Benutzer 30 Mal häufiger auf einen schädlichen Link in Nachrichten im Junk-E-Mail-Ordner im Vergleich zur Quarantäne klickt. Unsere Daten weisen auch darauf hin, dass die Rate falsch positiver Ergebnisse (gute Nachrichten, die als schlecht gekennzeichnet sind) für Phishingnachrichten mit hoher Confidence sehr niedrig ist, und Administratoren alle falsch positiven Ergebnisse mit Administratorübermittlungen beheben können.
 

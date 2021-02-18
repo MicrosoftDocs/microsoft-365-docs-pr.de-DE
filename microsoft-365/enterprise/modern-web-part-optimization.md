@@ -20,13 +20,13 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: In diesem Artikel erfahren Sie, wie Sie mithilfe der Seiten Diagnose die Leistung von Webparts in SharePoint Online modernen Website Seiten optimieren.
-ms.openlocfilehash: f7b72aa8ed212147c06660585c4e58e548762c35
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+description: Erfahren Sie, wie Sie die Seitendiagnose verwenden, um die Leistung von Webparts auf modernen SharePoint Online-Websiteseiten zu optimieren.
+ms.openlocfilehash: ca1b9328ad71fdd4a3f3c6c6be47eaa3993d4fc7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519751"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287149"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimieren der Leistung von Webparts in modernen SharePoint Online-Websites
 
@@ -56,13 +56,16 @@ Wenn das Ergebnis **Webparts, die sich auf die Seitenladezeit auswirken** entwed
 
 Die verfügbaren Informationen in den Ergebnissen umfassen:
 
-- **Erstellt von** zeigt an, ob es sich bei dem Webpart um ein benutzerdefiniertes oder ein Microsoft-OOTB-Webpart handelt.
-- **Name und ID** zeigt identifizierende Informationen an, die Ihnen beim Auffinden des Webparts auf der Seite helfen können.
-- **Gesamt** zeigt die Gesamtzeit für das Laden des Webparts an.
-- **Modul laden** zeigt die Zeit an, die zum Abrufen und Laden der Webpartkomponenten benötigt wird.
-- **Lazy Load** zeigt die Zeit für das verzögerte Laden von Webparts an, die im Hauptabschnitt der Seite nicht angezeigt werden.
-- **Initialisieren** zeigt die Zeit an, die für das Initialisieren eines Webparts benötigt wird.
-- **Rendern** zeigt die Zeit an, die das Webpart zum Abrufen und Rendern von Ergebnissen benötigt.
+- **Made by** zeigt an, ob das Web part benutzerdefiniert oder Microsoft OOTB ist.
+- **Name und ID zeigen** identifizierende Informationen an, die Ihnen bei der Suche nach dem Web part auf der Seite helfen können.
+- **Total** shows the total time for the web part to load, initialize and render. Dies ist die gesamt relative Zeit, die das Web part zum Rendern auf der Seite vom Anfang bis zum Ende auf sich genommen hat.
+- **Module Load** zeigt die Zeit an, die zum Herunterladen, Auswerten und Laden der Erweiterungen JavaScript- und CSS-Dateien. Anschließend wird der Vorgang "Init" gestartet.
+- **"Verzögertes Laden"** zeigt die Zeit für das verzögerte Laden von Webparts an, die im Hauptabschnitt der Seite nicht angezeigt werden. Es gibt bestimmte Bedingungen, in denen zu viele Webparts gerendert werden können, und sie werden in die Warteschlange eingereiht, um die Ladezeit der Seite zu minimieren.
+- **"Initialisieren"** zeigt die Zeit an, die das Web part zum Initialisieren der Daten auf sich genommen hat.
+    Es handelt sich um einen asynchronen Aufruf, und die Initzeit ist die Berechnung der Zeit für die onInit-Funktion, wenn die zurückgegebene Zusage aufgelöst wird.
+- **Rendern** zeigt die Zeit an, die zum Rendern der Benutzeroberfläche (Benutzeroberfläche) nach Abschluss des Ladens des Moduls und der Init verwendet wird.
+    Es ist die JavaScript-Ausführungszeit, um das DOM im Dokument (Seite) zu mounten.
+    Das Rendern von asynchronen Ressourcen, z. B. Bilder, kann zusätzliche Zeit in Die Gesamte dauern.
 
 Diese Informationen dienen Designern und Entwicklern zum Beheben von Problemen. Diese Informationen sollten Ihrem Entwurfs- und Entwicklungsteam bereitgestellt werden.
 
@@ -80,7 +83,7 @@ Es gibt drei Kategorien möglicher Ursachen für eine schlechte Webpartleistung.
   - Verwenden Sie Frameworks wie _React_ und _Fabric-Importe_, die Bestandteil des SharePoint-Frameworks (SPFx) sind. Weitere Informationen finden Sie unter [Übersicht über das SharePoint-Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Stellen Sie sicher, dass Sie die neueste Version des SharePoint-Frameworks verwenden, und führen Sie stets Aktualisierungen auf neue Versionen durch, sobald diese verfügbar sind.
 - Datenabruf/-zwischenspeicherung
-  - Wenn das Webpart zusätzliche Serveraufrufe zum Abrufen von Daten für die Anzeige benötigt, stellen Sie sicher, dass diese Server-APIs schnell sind und/oder clientseitige Zwischenspeicherung implementieren (beispielsweise _localStorage_ oder _IndexedDB_ für größere Sätze).
+  - Wenn das Web part zusätzliche Serveraufrufe zum Abrufen von Daten für die Anzeige verwendet, stellen Sie sicher, dass diese Server-APIs schnell sind und/oder clientseitiges Zwischenspeichern implementieren (z. B. verwenden _sie "localStorage"_ oder _"IndexedDB"_ für größere Gruppen).
   - Wenn zum Rendern wichtiger Daten mehrere Aufrufe erforderlich sind, sollten Sie die Batchverarbeitung auf dem Server oder andere Methoden zum Konsolidieren von Anforderungen in einen einzigen Anruf erwägen.
   - Wenn bestimmte Datenelemente eine langsamere API benötigen, für das anfängliche Rendern aber nicht kritisch sind, entkoppeln Sie diese mit einem separaten Aufruf, der nach dem Rendern kritischer Daten ausgeführt wird.
   - Wenn mehrere Webparts dieselben Daten nutzen, verwenden Sie eine gemeinsame Datenschicht, um doppelte Aufrufe zu vermeiden.

@@ -22,20 +22,20 @@ ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: 'Zusammenfassung: Planungs- und Implementierungsleitfaden für sich schnell wandelnde Organisationen mit einem erhöhten Bedrohungsprofil.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7d16f63b808edc008022b17d20461df6cd30e75
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: f8ed01d2c41529782c5c714bfe66096b97300712
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150772"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287401"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
 
  **Zusammenfassung:** Planungs- und Implementierungsleitfaden für sich schnell wandelnde Organisationen mit einem erhöhten Bedrohungsprofil.
 
@@ -69,6 +69,6 @@ Weitere Sicherheitsfunktionen für die Vorführung oder Machbarkeitsstudie finde
 
 ## <a name="see-also"></a>Siehe auch
 
-[Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[Ressourcen zur Cloud-IT-Architektur von Microsoft](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)
+[Ressourcen zur Cloud-IT-Architektur von Microsoft](../../solutions/cloud-architecture-models.md)

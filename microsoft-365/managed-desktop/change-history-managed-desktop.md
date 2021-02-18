@@ -13,16 +13,28 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 8f6826865f38dad6040f65ac083be76450127299
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: d2ce8ecc12c73969a6ad9b939dc02c6b9cb360f4
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877200"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288407"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Änderungsverlauf für Microsoft Managed Desktop-Dokumentation
 
-Dieser Artikel enthält neue und aktualisierte Artikel in der [Microsoft Managed Desktop-Dokumentation.](index.yml) Bei "Aktualisierten" Artikeln wurden wesentliche Ergänzungen oder Korrekturen vorgenommen. Kleinere Korrekturen wie die Korrektur von Tippfehlern, Format- oder Formatierungsproblemen werden nicht aufgeführt. Sie können immer den Verlauf bestimmter Commits (einschließlich Details zu änderungen) anzeigen, indem Sie das [Repository auf GitHub besuchen.](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)
+Dieser Artikel enthält neue und aktualisierte Artikel in der [Microsoft Managed Desktop-Dokumentation.](index.yml) Bei "Aktualisierten" Artikeln wurden wesentliche Ergänzungen oder Korrekturen vorgenommen. Kleinere Korrekturen wie die Korrektur von Tippfehlern, Format- oder Formatierungsproblemen werden nicht aufgeführt. Sie können den Verlauf bestimmter Commits (einschließlich Details zu Änderungen) immer anzeigen, indem Sie das [Repository auf GitHub besuchen.](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)
+
+## <a name="january-2021"></a>Januar 2021
+Neuer oder geänderter Artikel | Beschreibung
+--- | ---
+[Lösen von Problemen, die durch das Tool zur Bereitschaftsbewertung gefunden wurden](get-ready/readiness-assessment-fix.md) | Aktualisierter Artikel
+[Anpassen der Einstellungen nach der Registrierung](get-started/conditional-access.md) | Aktualisierter Artikel
+[Mit Berichten arbeiten](working-with-managed-desktop/reports.md) | Aktualisierter Artikel
+[Installieren des Intune-Unternehmensportals auf Geräten](get-started/company-portal.md) | Aktualisierter Artikel
+[Geräteanforderungen](service-description/device-requirements.md) | Neuer Artikel
+[Compliance](intro/compliance.md) | Aktualisierter Artikel
+[So werden Updates in Microsoft Managed Desktop behandelt](service-description/updates.md) | Aktualisierter Artikel
+[Zugreifen auf das Verwaltungsportal](get-started/access-admin-portal.md) | Aktualisierter Artikel
 
 
 ## <a name="december-2020"></a>Dezember 2020

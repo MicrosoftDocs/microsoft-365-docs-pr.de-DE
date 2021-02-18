@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: 459b0fd246455f46a1c1ff497379487de9fdb61d
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 9b558ad20a84bc902dd9a4a78ebafdbcecd8a9bb
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142265"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288263"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows and Office deployment lab kit
 
@@ -32,7 +32,7 @@ Dieses Kit wird dringend für Organisationen empfohlen, die sich auf Windows 8.1
 
 ## <a name="a-complete-lab-environment"></a>Vollständige Übungsumgebung
 
-Das Kit bietet Ihnen eine automatisch bereitgestellte virtuelle Laborumgebung, einschließlich in die Domäne hinzugefügter Desktopclients, eines Domänencontrollers, eines Internetgateways und einer vollständig konfigurierten Configuration Manager-Instanz. Das Kit enthält die neuesten Evaluierungsversionen der folgenden Produkte:
+Das Kit bietet Ihnen eine automatisch bereitgestellte virtuelle Lab-Umgebung, einschließlich der in die Domäne integrierten Desktopclients, eines Domänencontrollers, eines Internetgateways und einer vollständig konfigurierten Configuration Manager-Instanz. Das Kit enthält die neuesten Evaluierungsversionen der folgenden Produkte:
 
   - NEU! Windows 10 Enterprise, Version 20H2
   - Windows 7 Enterprise
@@ -46,7 +46,7 @@ Das Kit bietet Ihnen eine automatisch bereitgestellte virtuelle Laborumgebung, e
 
 Das resultierende Labor ist so konzipiert, dass es mit Testversionen für: 
 
-  - Microsoft 365 E5
+  - Microsoft 365 E5
   - Office 365 E5 mit Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>Schritt-für-Schritt-Übungen
@@ -72,7 +72,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 ### <a name="prepare-applications"></a>Vorbereiten von Anwendungen    
 
 - Readiness Toolkit für Office  
-- MSIX Packen und Konvertieren von Win32-Anwendungen   
+- MSIX Packaging and Conversion of Win32 applications   
 
 ### <a name="deploy-windows-10"></a>Bereitstellen von Windows 10   
 
@@ -85,7 +85,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
 - In der Cloud verwaltete Bereitstellung  
 - Lokal verwaltete Bereitstellung    
-- Microsoft 365 Apps for enterprise Deployment on Non-AD Joined Devices 
+- Bereitstellung von Microsoft 365 Apps for Enterprise auf Nicht-AD-geräten 
 - Vom Unternehmen verwaltete Bereitstellung mit Configuration Manager
 - Vom Unternehmen verwaltete Bereitstellung mit Microsoft Intune  
 - Branchenbereitstellung und -verwaltung mit Microsoft Intune
@@ -99,7 +99,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
 [Herunterladen des Deployment Lab Kit für Windows und Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* Die installierte Basisplanversion 2002 kann mithilfe und in der Konsole auf Version 2010 aktualisiert werden. Verwenden Sie eine Internetverbindung mit breiter Bandbreite, um diese Inhalte herunterzuladen, und warten Sie 30 bis 45 Minuten für die automatische Bereitstellung. Die Laborumgebung erfordert mindestens 16 GB verfügbaren Arbeitsspeicher und 150 GB freien Speicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Arbeitsspeicher und 300 GB freier Speicherplatz empfohlen. Das Kit läuft am 11. Februar 2021 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.
+* Die installierte Basisplanversion 2002 kann mithilfe und in der Konsole auf Version 2010 aktualisiert werden. Verwenden Sie eine Internetverbindung mit breiter Bandbreite, um diese Inhalte herunterzuladen, und warten Sie 30 bis 45 Minuten für die automatische Bereitstellung. Die Laborumgebung erfordert mindestens 16 GB verfügbaren Arbeitsspeicher und 150 GB freien Speicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Arbeitsspeicher und 300 GB freier Speicherplatz empfohlen. Das Kit läuft am 2. Mai 2021 ab. Eine neue Version wird vor dem Ablauf veröffentlicht.
 
 ## <a name="additional-guidance"></a>Zusätzliche Anleitung
 

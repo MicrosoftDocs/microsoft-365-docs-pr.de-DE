@@ -15,19 +15,19 @@ ms.custom:
 description: Administratoren in eigenständigen Exchange Online Protection (EOP)-Organisationen können erfahren, wie Sie Verteilergruppen und E-Mail-aktivierte Sicherheitsgruppen im Exchange Admin Center (EAC) und in der eigenständigen Exchange Online Protection (EOP) PowerShell erstellen, ändern und entfernen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01fe5c6ab1555749d38f9c092b05aca9befb67fe
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d03b8a5129eb3b070f30de46b9b9c7bcc8e9898d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166963"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286801"
 ---
 # <a name="manage-groups-in-eop"></a>Verwalten von Gruppen in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
--  [Exchange Online Protection als eigenständige Lösung](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection als eigenständige Lösung](exchange-online-protection-overview.md)
 
 In eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer können Sie die folgenden Gruppentypen erstellen, ändern und entfernen:
 
@@ -51,12 +51,12 @@ Sie können Gruppen im Exchange Admin Center (EAC) und in der eigenständigen EO
 
 - Wenn Sie Gruppen in der eigenständigen EOP PowerShell verwalten, können Drosselungen auftreten. Die PowerShell-Verfahren in diesem Artikel verwenden eine Batchverarbeitungsmethode, die zu einer Verteilungsverzögerung von ein paar Minuten führt, bevor die Ergebnisse der Befehle angezeigt werden.
 
-- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in Exchange Online Protection die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rolle **"Verteilergruppen",** die standardmäßig den Rollengruppen **"Organisationsverwaltung"** und **"Empfängerverwaltung"** zugewiesen ist. Weitere Informationen finden Sie unter "Berechtigungen [in EOP als eigenständige](feature-permissions-in-eop.md) Lösung", und ändern Sie mithilfe der EAC die Liste der Mitglieder in [Rollengruppen.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in Exchange Online Protection die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rolle **"Verteilergruppen",** die standardmäßig den Rollengruppen **"Organisationsverwaltung"** und "Empfängerverwaltung" zugewiesen ist.  Weitere Informationen finden Sie unter ["Berechtigungen" in eigenständigem EOP](feature-permissions-in-eop.md) und Ändern der Mitgliederliste in Rollengruppen mithilfe der [EAC.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
 - Informationen zu Tastenkombinationen, die für die Verfahren in diesem Artikel gelten können, finden Sie unter Tastenkombinationen für das [Exchange Admin Center in Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
-> Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)-Forum um Hilfe.
+> Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE)-Forum um Hilfe.
 
 ## <a name="use-the-exchange-admin-center-to-manage-distribution-groups"></a>Verwalten von Verteilergruppen mithilfe des Exchange Admin Centers
 
@@ -74,7 +74,7 @@ Sie können Gruppen im Exchange Admin Center (EAC) und in der eigenständigen EO
 
    - <sup>\*</sup>**Anzeigename:** Dieser Name wird im Adressbuch Ihrer Organisation, in der Zeile "An:"  angezeigt, wenn E-Mails an diese Gruppe gesendet werden, und in der Gruppenliste in der EAC. Der Anzeigename ist erforderlich, muss eindeutig sein und benutzerfreundlich sein, damit die Benutzer erkennen, was er ist.
 
-   - <sup>\*</sup>**Alias:** Geben Sie in diesem Feld den Namen des Alias für die Gruppe ein. Der Alias darf 64 Zeichen nicht überschreiten und muss eindeutig sein. Wenn ein Benutzer den Alias in die Zeile "An" einer E-Mail ein eingeben, wird er in den Anzeigenamen der Gruppe aufgelöst.
+   - <sup>\*</sup>**Alias:** Geben Sie in diesem Feld den Namen des Alias für die Gruppe ein. Der Alias darf maximal 64 Zeichen lang sein und muss eindeutig sein. Wenn ein Benutzer den Alias in die Zeile "An" einer E-Mail ein eingeben, wird er in den Anzeigenamen der Gruppe aufgelöst.
 
    - <sup>\*</sup>**E-Mail-Adresse:** Die E-Mail-Adresse besteht aus dem Alias auf der linken Seite des @-Symbols und einer Domäne auf der rechten Seite. Standardmäßig wird der Wert von Alias für den **Aliaswert** verwendet, Sie können ihn jedoch ändern. Klicken Sie für den Domänenwert auf die Dropdownliste, und wählen Sie die akzeptierte Domäne in Ihrer Organisation aus.
 
@@ -84,7 +84,7 @@ Sie können Gruppen im Exchange Admin Center (EAC) und in der eigenständigen EO
 
      Klicken Sie zum Hinzufügen von Besitzern auf **das Symbol** ![ "Hinzufügen". ](../../media/ITPro-EAC-AddIcon.png) Suchen Und wählen Sie im angezeigten Dialogfeld einen Empfänger oder eine Gruppe aus, und klicken Sie dann auf **"Add ->".** Wiederholen Sie diesen Schritt so oft wie nötig. Klicken Sie nach Abschluss des Vorgangs auf **OK**.
 
-     Um einen Besitzer zu entfernen, wählen  Sie den Besitzer aus, und klicken Sie dann auf ![ "Entfernen". ](../../media/ITPro-EAC-RemoveIcon.gif)
+     Um einen Besitzer zu entfernen, wählen Sie den Besitzer aus, und klicken Sie dann auf **"Entfernen"** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) (Symbol).
 
    - **Mitglieder:** Gruppenmitglieder hinzufügen und entfernen.
 
@@ -108,7 +108,7 @@ Sie können Gruppen im Exchange Admin Center (EAC) und in der eigenständigen EO
 
 Verwenden Sie diese Registerkarte, um grundlegende Informationen zur Gruppe anzuzeigen oder zu ändern.
 
-- **Anzeigename:** Dieser Name wird im Adressbuch, in der Zeile "An" beim Senden von E-Mails an diese Gruppe und in der **Gruppenliste angezeigt.** Der Anzeigename ist erforderlich und sollte benutzerfreundlich sein, damit Benutzer erkennen, was er ist. Sie muss auch in Ihrer Domäne eindeutig sein.
+- **Anzeigename:** Dieser Name wird im Adressbuch, in der Zeile "An", wenn E-Mails an diese Gruppe gesendet werden, und in der **Gruppenliste angezeigt.** Der Anzeigename ist erforderlich und sollte benutzerfreundlich sein, damit Benutzer erkennen, was er ist. Sie muss auch in Ihrer Domäne eindeutig sein.
 
   Wenn Sie eine Gruppenbenennungsrichtlinie implementiert haben, muss der Anzeigename dem von der Richtlinie definierten Namensformat entsprechen.
 
@@ -124,7 +124,7 @@ Verwenden Sie diese Registerkarte, um Gruppenbesitzer zuzuordnen. Ein Gruppenbes
 
 Klicken Sie zum Hinzufügen von Besitzern auf **das Symbol** ![ "Hinzufügen". ](../../media/ITPro-EAC-AddIcon.png) Suchen Und wählen Sie im angezeigten Dialogfeld einen Empfänger aus, und klicken Sie dann auf **"Add ->".** Wiederholen Sie diesen Schritt so oft wie nötig. Klicken Sie nach Abschluss des Vorgangs auf **OK**.
 
-Um einen Besitzer zu entfernen, wählen  Sie den Besitzer aus, und klicken Sie dann auf ![ "Entfernen". ](../../media/ITPro-EAC-RemoveIcon.gif)
+Um einen Besitzer zu entfernen, wählen Sie den Besitzer aus, und klicken Sie dann auf **"Entfernen"** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) (Symbol).
 
 #### <a name="membership"></a>Mitgliedschaft
 
@@ -232,7 +232,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-EO
 
 Gehen Sie wie folgt vor, um sicherzustellen, dass Sie eine Verteilergruppe oder E-Mail-aktivierte Sicherheitsgruppe erfolgreich erstellt, geändert oder entfernt haben:
 
-- Navigieren Sie in der EAC zu **Empfänger** \> **Gruppen**. Überprüfen Sie, ob die Gruppe aufgeführt ist (oder nicht), und überprüfen Sie den **Gruppentypwert.** Wählen Sie die Gruppe aus, und zeigen Sie die Informationen im Detailbereich an, oder klicken Sie auf **das** ![ Bearbeitungssymbol, ](../../media/ITPro-EAC-AddIcon.png) um die Einstellungen anzuzeigen.
+- Navigieren Sie in der EAC zu **Empfänger** \> **Gruppen**. Überprüfen Sie, ob die Gruppe aufgeführt ist (oder nicht), und überprüfen Sie den **Gruppentypwert.** Wählen Sie die Gruppe aus, und zeigen Sie die Informationen im Detailbereich an, oder klicken Sie auf **das** Bearbeitungssymbol, ![ um die Einstellungen ](../../media/ITPro-EAC-AddIcon.png) anzuzeigen.
 
 - Führen Sie in der eigenständigen EOP PowerShell den folgenden Befehl aus, um zu überprüfen, ob die Gruppe aufgeführt ist (oder nicht aufgeführt ist):
 

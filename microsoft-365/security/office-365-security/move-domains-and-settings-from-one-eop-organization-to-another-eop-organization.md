@@ -15,19 +15,19 @@ ms.custom:
 description: In diesem Artikel erfahren Sie, wie Sie Domänen und Einstellungen von einer Microsoft Exchange Online Protection (EOP)-Organisation (Mandant) in eine andere verschieben.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4cfb5c31728174f7f7307e9492abc03a62f8bf9a
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 42a212c1826f63f9e7ed8395fe1d6b6564625b7b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150760"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287773"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Verschieben von Domänen und Einstellungen zwischen EOP-Organisationen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
--  [Exchange Online Protection als eigenständige Lösung](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection als eigenständige Lösung](exchange-online-protection-overview.md)
 
 Änderungen in den Geschäftsanforderungen können manchmal erfordern, dass eine Microsoft Exchange Online Protection (EOP)-Organisation (ein Mandant) in zwei separate Organisationen unterteilt wird, zwei Organisationen in einer zusammengefasst oder Ihre Domänen und EOP-Einstellungen von einer Organisation zu einer anderen verschoben werden. Das Verschieben einer EOP-Organisaton zu einer zweiten EOP-Organisation kann ein Problem darstellen, doch mit ein paar einfachen Remote Windows PowerShell-Skripts und etwas Vorbereitung kann dies in einem relativ kleinen Wartungszeitfenster erreicht werden.
 
@@ -193,7 +193,7 @@ Jetzt können Sie die Informationen aus dem Microsoft 365 Admin Center Ihrer Zie
 
 5. Protokollieren Sie den MX- oder TXT-Eintrag, den Sie für die Überprüfung Ihrer Domäne benötigen, und beenden Sie den Setup-Assistenten.
 
-6. Fügen Sie die TXT-Überprüfungseinträge zu Ihren DNS-Einträgen hinzu. Dadurch können Sie die Domänen in der Quellorganisation schneller überprüfen, nachdem sie aus der Zielorganisation entfernt wurden. Weitere Informationen zum Konfigurieren von DNS finden Sie unter [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
+6. Fügen Sie die TXT-Überprüfungseinträge zu Ihren DNS-Einträgen hinzu. Dadurch können Sie die Domänen in der Quellorganisation schneller überprüfen, nachdem sie aus der Zielorganisation entfernt wurden. Weitere Informationen zum Konfigurieren von DNS finden Sie unter [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Microsoft 365.](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>Schritt 3: Erzwingen, dass Absender-E-Mails in die Warteschlange kommen
 
@@ -203,7 +203,7 @@ Eine Möglichkeit, wie Sie die Einreihung von Absender-E-Mails in die Warteschla
 
 Eine andere Möglichkeit ist das Setzen eines ungültigen MX-Eintrags in den einzelnen Domänen, in denen sich die DNS-Einträge für Ihre Domäne befinden (auch als DNS-Hostingdienst bezeichnet). Dadurch werden die Absender-E-Mails in die Warteschlange eingereiht, und das Senden wird erneut versucht (in der Regel erfolgen Wiederholungsversuche 48 Stunden lang, das kann aber je nach Anbieter variieren). Sie können invalid.outlook.com als ein ungültiges MX-Ziel verwenden. Wenn Sie den TTL-Wert (Time to Live) für den MX-Eintrag auf fünf Minuten heruntersetzen, wird die Verteilung der Änderung an die DNS-Anbieter beschleunigt.
 
-Weitere Informationen zum Konfigurieren von DNS finden Sie unter [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
+Weitere Informationen zum Konfigurieren von DNS finden Sie unter [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Microsoft 365.](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
 
 > [!IMPORTANT]
 > Andere Anbieter reihen E-Mails unterschiedlich lang in die Warteschlange ein. Sie müssen Ihren neuen Mandanten schnell einrichten und Ihre DNS-Einstellungen wiederherstellen, um zu verhindern, dass Unzustellbarkeitsberichte an den Absender gesendet werden, wenn die Warteschlangenzeit ausläuft.
@@ -933,4 +933,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Schritt 8: Wiederherstellen Ihrer DNS-Einstellungen zum Beenden der E-Mail-Warteschlange
 
-Wenn Sie ihre MX-Einträge auf eine ungültige Adresse festgelegt haben, damit die Absender während des Übergangs E-Mails in die Warteschlange stellen, müssen Sie sie auf den korrekten Wert festlegen, wie im [Admin Center](https://admin.microsoft.com)angegeben. Weitere Informationen zum Konfigurieren von DNS finden Sie unter [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
+Wenn Sie ihre MX-Einträge auf eine ungültige Adresse festlegen möchten, damit absender während des Übergangs E-Mails in die Warteschlange stellen, müssen Sie sie auf den korrekten Wert festlegen, wie im [Admin Center](https://admin.microsoft.com)angegeben. Weitere Informationen zum Konfigurieren von DNS finden Sie unter [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Microsoft 365.](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)

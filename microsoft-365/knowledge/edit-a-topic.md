@@ -4,6 +4,7 @@ description: Bearbeiten eines vorhandenen Themas in Microsoft Topics.
 author: efrene
 ms.author: efrene
 manager: pamgreen
+audience: admin
 ms.reviewer: cjtan
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,12 +14,12 @@ ms.collection:
 - m365initiative-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 4194328804285f93f023092f1c7ac31d31a581da
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 9dfad7e179699c599d9320390aaefd2dac176fbb
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107460"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279410"
 ---
 # <a name="edit-an-existing-topic"></a>Bearbeiten eines vorhandenen Themas 
 
@@ -28,10 +29,10 @@ ms.locfileid: "50107460"
 
 </br>
 
-In "Themen zu Thema" können Sie ein vorhandenes Thema bearbeiten. Möglicherweise müssen Sie dies tun, wenn Sie eine vorhandene Themenseite korrigieren oder zusätzliche Informationen hinzufügen möchten. 
+In "Themen von Topics" können Sie ein vorhandenes Thema bearbeiten. Möglicherweise müssen Sie dies tun, wenn Sie eine vorhandene Themenseite korrigieren oder zusätzliche Informationen hinzufügen möchten. 
 
 > [!Note] 
-> Während die Informationen in einem Thema, das von AI gesammelt wird, aus Sicherheitsgründen gekürzt [werden,](topic-experiences-security-trimming.md)beachten Sie, dass Informationen, die Sie beim Bearbeiten eines vorhandenen Themas manuell hinzufügen, für alle Benutzer sichtbar sind, die über Berechtigungen zum Anzeigen von Themen verfügen. 
+> Während die Informationen in einem Thema, das von AI gesammelt wird, aus Sicherheitsgründen gekürzt [werden,](topic-experiences-security-trimming.md)beachten Sie, dass die Themenbeschreibung und Personeninformationen, die Sie beim Bearbeiten eines vorhandenen Themas manuell hinzufügen, für alle Benutzer sichtbar sind, die über die Berechtigung zum Anzeigen von Themen verfügen. 
 
 ## <a name="requirements"></a>Anforderungen
 
@@ -44,7 +45,7 @@ Um ein vorhandenes Thema zu bearbeiten, müssen Sie:
 
 ## <a name="how-to-edit-a-topic-page"></a>Bearbeiten einer Themenseite
 
-Benutzer mit  der Berechtigung "Wer kann Themen erstellen oder bearbeiten" können ein Thema bearbeiten, <b></b> indem sie die Themenseite in einer Themenauswahl öffnen und dann oben rechts auf der Themenseite die Schaltfläche "Bearbeiten" auswählen. Die Themenseite kann auch über die Startseite des Themencenters geöffnet werden, auf der Sie alle Themen finden können, zu denen Sie eine Verbindung haben.
+Benutzer mit  der Berechtigung "Wer kann Themen erstellen oder bearbeiten" können ein Thema bearbeiten, <b></b> indem sie die Themenseite über eine Themenauswahl öffnen und dann oben rechts auf der Themenseite die Schaltfläche "Bearbeiten" auswählen. Die Themenseite kann auch über die Startseite des Themencenters geöffnet werden, auf der Sie alle Themen finden können, zu denen Sie eine Verbindung haben.
 
    ![Schaltfläche "Bearbeiten"](../media/knowledge-management/edit-button.png) </br> 
 
@@ -82,17 +83,20 @@ Wissensmanager können Themen auch direkt auf der Seite "Themen verwalten" bearb
 
     Sie können auch die Linkoption <b>"Von"</b> verwenden, um eine Datei oder Seite hinzuzufügen, indem Sie die URL angeben. 
 
+   > [!Note] 
+   > Dateien und Seiten, die Sie hinzufügen, müssen sich im selben Microsoft 365-Mandanten befinden. Wenn Sie einen Link zu einer externen Ressource im Thema hinzufügen möchten, können Sie ihn über das Zeichenbereichssymbol in Schritt 9 hinzufügen.
+
 6. Im <b>Abschnitt "Vorgeschlagene Dateien und Seiten"</b> werden Dateien und Seiten angezeigt, die ai vorschlägt, dem Thema zugeordnet zu werden.
 
    ![Abschnitt "Vorgeschlagene Dateien und Seiten"](../media/knowledge-management/suggested-files-and-pages.png)</br>
 
-    Sie können eine vorgeschlagene Datei oder Seite an eine angeheftet Datei oder Seite erstellen, indem Sie das angeheftet Symbol auswählen.
+    Sie können eine vorgeschlagene Datei oder Seite in eine angeheftet Datei oder Seite ändern, indem Sie das angeheftet Symbol auswählen.
 
-7.  Im <b>Abschnitt "Verwandte Websites"</b> werden Websites mit Informationen zum Thema angezeigt. 
+7.  Im <b>Abschnitt "Verwandte Websites"</b> werden Websites mit Informationen zu diesem Thema angezeigt. 
 
     ![Abschnitt "Verwandte Websites"](../media/knowledge-management/related-sites.png)</br>
 
-    Sie können eine verwandte <b></b> Website hinzufügen, indem Sie "Hinzufügen" auswählen und dann entweder nach der Website suchen oder sie in der Liste der häufig verwendeten oder zuletzt verwendeten Websites auswählen.</br>
+    Sie können eine verwandte <b></b> Website hinzufügen, indem Sie "Hinzufügen" auswählen und dann entweder nach der Website suchen oder sie aus der Liste der häufig verwendeten oder zuletzt verwendeten Websites auswählen.</br>
     
     ![Auswählen einer Website](../media/knowledge-management/sites.png)</br>
 
@@ -107,6 +111,14 @@ Wissensmanager können Themen auch direkt auf der Seite "Themen verwalten" bearb
    Das verwandte Thema, das Sie hinzugefügt haben, wird als verbundenes Thema angezeigt.
 
    ![Verbundene verwandte Themen](../media/knowledge-management/related-topics-final.png)</br> 
+
+   Um ein verwandtes Thema zu entfernen, wählen Sie das zu entfernende Thema aus, und wählen Sie dann das Symbol "Thema <b>entfernen"</b> aus.</br>
+ 
+   ![Entfernen eines verwandten Themas](../media/knowledge-management/remove-related.png)</br>  
+
+   Wählen Sie dann <b>"Entfernen" aus.</b></br>
+
+   ![Entfernen bestätigen](../media/knowledge-management/remove-related-confirm.png)</br> 
 
 
 9. Sie können der Seite auch statische Elemente hinzufügen, z. B. Text, Bilder oder Links, indem Sie das Zeichenbereichssymbol auswählen, das Sie unterhalb der Kurzbeschreibung finden. Wenn Sie es auswählen, wird die SharePoint-Toolbox geöffnet, aus der Sie das Element auswählen können, das Sie der Seite hinzufügen möchten.

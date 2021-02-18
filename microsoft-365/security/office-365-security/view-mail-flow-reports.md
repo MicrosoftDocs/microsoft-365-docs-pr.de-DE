@@ -19,17 +19,21 @@ description: Administratoren können sich über die Nachrichtenflussberichte inf
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e69085d1fad845ab519f2590b0527316463373a7
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: dbbec056203ad816d37f5451115d2c7d172eee92
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029798"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286717"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Anzeigen von Nachrichtenflussberichten im Dashboard "Berichte" im Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Zusätzlich zu den Nachrichtenflussberichten, [](mail-flow-insights-v2.md) die im E-Mail-Flussdashboard im Security & Compliance Center verfügbar sind, stehen im Dashboard "Berichte" verschiedene zusätzliche Nachrichtenflussberichte zur Verfügung, die Ihnen bei der Überwachung Ihrer Microsoft 365-Organisation helfen.
 
@@ -69,7 +73,7 @@ Die folgenden Diagramme sind in der Berichtsansicht verfügbar:
   - **Ins Internet ohne Connector**
   - Ein bestimmter Connector, den Sie konfiguriert haben.
 
-  ![Anzeigen von Daten nach TLS-Verwendung im Connectorbericht](../../media/connector-report-view-data-by-tls-usage.png)
+  ![Anzeigen von Daten nach der Verwendung von TLS im Connectorbericht](../../media/connector-report-view-data-by-tls-usage.png)
 
 Wenn Sie **in** einer Berichtsansicht auf "Filter" klicken, können Sie einen Datumsbereich mit **Startdatum** und **Enddatum angeben.**
 
@@ -105,12 +109,12 @@ Die folgenden Diagramme sind in der Berichtsansicht verfügbar:
 
 - **Anzeigen von Daten nach: Exchange-Transportregeln** \> **Nach Folgendem: Richtung:** Dieses Diagramm  zeigt  die Anzahl eingehender und ausgehender Nachrichten, die von Transportregeln betroffen waren.
 
-- **Anzeigen von Daten nach: Exchange-Transportregeln** \> **Nach Schweregrad aufbrechen:** Dieses Diagramm  zeigt die Anzahl der Nachrichten mit hohem schweregrad und mittlerem Schweregrad und niedrigem **Schweregrad.** Sie legen den Schweregrad als Aktion in der Regel **(Diese** Regel mit Schweregrad oder _SetAuditSeverity überwachen) festgelegt._ Weitere Informationen finden Sie unter Aktionen für [Nachrichtenflussregel in Exchange Online.](https://docs.microsoft.com//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+- **Anzeigen von Daten nach: Exchange-Transportregeln** \> **Nach Schweregrad aufbrechen:** Dieses Diagramm  zeigt die Anzahl der Nachrichten mit hohem schweregrad und mittlerem Schweregrad und niedrigem **Schweregrad.** Sie legen den Schweregrad als Aktion in der Regel **(Diese** Regel mit Schweregrad oder _SetAuditSeverity überwachen) festgelegt._ Weitere Informationen finden Sie unter [Nachrichtenflussregelaktionen in Exchange Online](https://docs.microsoft.com//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
 - **Anzeigen von Daten nach: DLP -Exchange-Transportregeln** \> **Nach Folgendem:** Richtung: Dieses Diagramm  zeigt  die Anzahl eingehender und ausgehender Nachrichten, die von Transportregeln zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) betroffen waren. Sie können das Diagramm weiter verfeinern, indem Sie eine der folgenden Optionen auswählen:
 
   - **Anzeigen von Daten für: Alle DLP-Transportregeln**
-  - **Anzeigen von Daten für: gefährdete Benutzer**
+  - **Anzeigen von Daten für: Gefährdete Benutzer**
   - **Show data for: Low volume of content detected U.S. Patriot Act**
 
 - **Anzeigen von Daten nach: DLP -Exchange-Transportregeln** \> **Aufbrechen nach: Richtung:** Diese Ansicht zeigt die Anzahl der  Nachrichten mit hohem schweregrad und mittlerem Schweregrad sowie Nachrichten mit niedrigem Schweregrad, die von den DLP-Transportregeln betroffen waren.  Sie können das Diagramm weiter verfeinern, indem Sie eine der folgenden Optionen auswählen:
@@ -162,9 +166,9 @@ Klicken Sie auf "Bericht anzeigen", um zur **Berichtsansicht zurück zu wechseln
 
 ## <a name="forwarding-report"></a>Weiterleitungsbericht
 
-Der **Weiterleitungsbericht zeigt** die automatisch weitergeleiteten Nachrichten Ihrer Organisation an externe Domänen aus Exchange Online-Postfächern. Weitergeleitete Nachrichten können ein Sicherheits- oder Compliancerisiko darstellen und auf ein gefährdetes Konto hinweisen.
+Der **Weiterleitungsbericht zeigt** die automatisch von Exchange Online-Postfächern an externe Domänen weitergeleiteten Nachrichten Ihrer Organisation an. Weitergeleitete Nachrichten können ein Sicherheits- oder Compliancerisiko darstellen und auf ein gefährdetes Konto hinweisen.
 
-Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie zum Berichtsdashboard, und wählen Sie  \>  **"Weiterleitungsbericht" aus.** Um direkt zum Bericht zu wechseln, öffnen Sie <https://protection.office.com/reportv2?id=MailFlowForwarding> .
+Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie zum **Berichtsdashboard,** und wählen Sie \>  **"Weiterleitungsbericht" aus.** Um direkt zum Bericht zu wechseln, öffnen Sie <https://protection.office.com/reportv2?id=MailFlowForwarding> .
 
 ![Widget für Weiterleitungsbericht im Dashboard "Berichte"](../../media/forwarding-report-widget.png)
 
@@ -190,7 +194,7 @@ Die folgenden Diagramme sind in der Berichtsansicht verfügbar:
 
   ![Weiterleitungsansicht im Weiterleitungsbericht](../../media/forwarding-report-forwarders.png)
 
-Wenn Sie **in** einer Berichtsansicht auf Filter klicken, können Sie einen Datumsbereich mit **Startdatum** und **Enddatum angeben.**
+Wenn Sie **in** einer Berichtsansicht auf "Filter" klicken, können Sie einen Datumsbereich mit **Startdatum** und **Enddatum angeben.**
 
 ### <a name="details-table-view-for-the-forwarding-report"></a>Detailtabelle für den Weiterleitungsbericht
 
@@ -204,13 +208,13 @@ Wenn Sie in einer **Berichtsansicht auf "Details anzeigen"** klicken, werden die
 - **Count**
 - **Erstes Weiterleitungsdatum**
 
-Wenn Sie in einer **Detailtabelle auf Filter** klicken, können Sie einen Datumsbereich mit **Startdatum** und **Enddatum angeben.**
+Wenn Sie in einer **Detailtabelle auf** Filter klicken, können Sie einen Datumsbereich mit **Startdatum** und **Enddatum angeben.**
 
 Klicken Sie auf "Bericht anzeigen", um zur **Berichtsansicht zurück zu wechseln.**
 
 ## <a name="mailflow-status-report"></a>Statusbericht über den Nachrichtenfluss
 
-Der **Statusbericht "E-Mail-Nachrichtenfluss"** ähnelt dem Bericht "Gesendete und empfangene E-Mail", [](#sent-and-received-email-report)mit zusätzlichen Informationen zu E-Mails, die auf dem Edge zulässig oder blockiert sind. Dies ist der einzige Bericht, der Informationen zum Edgeschutz enthält und zeigt, wie viele E-Mails blockiert werden, bevor sie zur Evaluierung durch Exchange Online Protection (EOP) in den Dienst zugelassen werden. Es ist wichtig zu wissen, dass eine Nachricht, wenn sie an fünf Empfänger gesendet wird, als fünf verschiedene Nachrichten und nicht als eine Nachricht gezählt wird.
+Der **Statusbericht "E-Mail-Nachrichtenfluss"** ähnelt dem Bericht "Gesendete und empfangene E-Mail", [](#sent-and-received-email-report)mit zusätzlichen Informationen zu E-Mails, die auf dem Edge zulässig oder blockiert sind. Dies ist der einzige Bericht, der Informationen zum Edgeschutz enthält und zeigt, wie viele E-Mails blockiert werden, bevor sie zur Auswertung durch Exchange Online Protection (EOP) in den Dienst zugelassen werden. Es ist wichtig zu wissen, dass eine Nachricht, wenn sie an fünf Empfänger gesendet wird, als fünf verschiedene Nachrichten und nicht als eine Nachricht gezählt wird.
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie zum Berichtsdashboard, und wählen Sie den Statusbericht für den  \>  **Nachrichtenfluss aus.** Um direkt zum Statusbericht für den **Nachrichtenfluss zu wechseln,** öffnen Sie <https://protection.office.com/mailflowStatusReport> .
 
 ![Bericht "E-Mail-Statusbericht" im Dashboard "Berichte"](../../media/mail-flow-status-report-widget.png)
@@ -242,19 +246,19 @@ Sie können diese Filter ändern, indem Sie auf **"Filter"** oder auf einen Wert
 Die Datentabelle enthält die folgenden Informationen:
 
 - **Richtung**
-- **Typ**
+- **Type**
 - **24 Stunden**
 - **3 Tage**
 - **7 Tage**
 - **15 Tage**
 - **30 Tage**
 
-Wenn Sie **auf "Kategorie auswählen" klicken,** können Sie aus den folgenden Werten auswählen:
+Wenn Sie **auf "Kategorie auswählen" klicken,** um weitere Informationen zu erhalten, können Sie aus den folgenden Werten auswählen:
 
 - **Phishing-E-Mail:** Diese Auswahl führt Sie zum Statusbericht zum [Bedrohungsschutz.](view-email-security-reports.md#threat-protection-status-report)
 - **Schadsoftware in** E-Mail: Diese Auswahl führt Sie zum Statusbericht zum [Bedrohungsschutz.](view-email-security-reports.md#threat-protection-status-report)
 - **Spamerkennungen:** Diese Auswahl führt Sie zum [Bericht "Spamerkennungen".](view-email-security-reports.md#spam-detections-report)
-- **Blockierte Spam-Edge-Nachricht:** Diese Auswahl führt Sie zum Bericht ["Spamerkennungen".](view-email-security-reports.md#spam-detections-report)
+- **Edge blockierter Spam:** Diese Auswahl führt Sie zum Bericht ["Spamerkennungen".](view-email-security-reports.md#spam-detections-report)
 
 **Exportieren:**
 
@@ -306,7 +310,7 @@ Dieses Diagramm zeigt die Anzahl der E-Mails, organisiert nach:
 
 - **Gesamt-E-Mail**
 - **E-Mail nach Edgeschutz**
-- **E-Mail nach Ansoftware, Datei-Reputation, Dateitypblockierung**
+- **E-Mail nach Ansoftware, Datei-Reputation, Dateitypblock**
 - **E-Mail nach Anti phish, URL-Reputation, Markenwechsel, Antis spoofing**
 - **E-Mail nach Antispam, Massen-E-Mail-Filterung**
 - **E-Mail nach Benutzer- und Domänenwechsel**<sup>1</sup>
@@ -339,9 +343,9 @@ Die Datentabelle enthält die folgenden Informationen in absteigender Datumsreih
   - **URL-Detonation:** Nachricht, gefiltert durch eine Richtlinie für sichere Links.
 - **Post delivery protection and ZAP (ATP) or ZAP (EOP)**: ZAP indicates zero hour auto-purge.
 
-Wenn Sie eine Zeile in der Datentabelle auswählen, wird im Flyout eine weitere Aufschlüsselung der E-Mail-Anzahl angezeigt.
+Wenn Sie eine Zeile in der Datentabelle auswählen, wird eine weitere Aufschlüsselung der E-Mail-Zähler im Flyout angezeigt.
 
-**Export:**
+**Exportieren:**
 
 Nachdem Sie unter **"Optionen"** **auf**"Exportieren" geklickt haben, können Sie einen der folgenden Werte auswählen:
 
@@ -356,7 +360,7 @@ Jede exportierte .csv-Datei ist auf 150.000 Zeilen beschränkt. Wenn die Daten m
 
 ### <a name="tech-view-for-the-mailflow-status-report"></a>Tech view for the Mailflow status report
 
-Die **technische Ansicht** ähnelt der **Trichteransicht** und bietet detailliertere Details für die konfigurierten Features für den Bedrohungsschutz. Anhand des Diagramms können Sie sehen, wie Nachrichten in den verschiedenen Phasen des Bedrohungsschutzes kategorisiert werden.
+Die **tech-Ansicht** ähnelt der **Trichteransicht** und bietet genauere Details für die konfigurierten Funktionen zum Schutz vor Bedrohungen. Anhand des Diagramms können Sie sehen, wie Nachrichten in den verschiedenen Phasen des Bedrohungsschutzes kategorisiert werden.
 
 Wenn Sie auf die Registerkarte **"Tech-Ansicht"** klicken, enthält diese Ansicht standardmäßig ein Diagramm und eine Datentabelle, die mit den folgenden Filtern konfiguriert ist:
 
@@ -380,7 +384,7 @@ Dieses Diagramm zeigt Nachrichten, die in die folgenden Kategorien unterteilt si
 - **Kein Phishing,** **DMARC-Fehler,** **Identitätswechselerkennung,** **Spooferkennung** und **Phishingerkennung**
 - **Keine Erkennung mit URL-Detonation** und **ERKENNUNG der URL-Detonation**<sup>\*</sup>
 - **Keine Spam-** und  **Spamnachrichten**
-- **Nicht schädliche E-Mails,** **Erkennung sicherer** <sup>\*</sup> Links und **ZAP**
+- **Nicht schädliche E-Mails,** **Erkennung sicherer Links** und <sup>\*</sup> **ZAP**
 
 <sup>\*</sup> Defender für Office 365
 
@@ -400,9 +404,9 @@ Die Datentabelle enthält die folgenden Informationen in absteigender Datumsreih
 - **ZAP entfernt**
 - **Erkennung durch sichere Links**
 
-Wenn Sie eine Zeile in der Datentabelle auswählen, wird im Flyout eine weitere Aufschlüsselung der E-Mail-Anzahl angezeigt.
+Wenn Sie eine Zeile in der Datentabelle auswählen, wird eine weitere Aufschlüsselung der E-Mail-Zähler im Flyout angezeigt.
 
-**Export:**
+**Exportieren:**
 
 Wenn Sie auf **"Exportieren"** **klicken,** können Sie unter "Optionen" einen der folgenden Werte auswählen:
 
@@ -417,7 +421,7 @@ Jede exportierte .csv-Datei ist auf 150.000 Zeilen beschränkt. Wenn die Daten m
 
 ## <a name="sent-and-received-email-report"></a>Gesendeter und empfangener E-Mail-Bericht
 
-Der **Bericht "Gesendete** und empfangene E-Mail" ist ein intelligenter Bericht mit Informationen zu eingehenden und ausgehenden E-Mails, einschließlich Spamerkennungen, Schadsoftware und als "gut" gekennzeichneter E-Mails. Der Unterschied zwischen diesem [](#mailflow-status-report) Bericht und dem Statusbericht zum E-Mail-Nachrichtenfluss ist: Dieser Bericht enthält keine Daten zu Nachrichten, die durch den Edgeschutz blockiert wurden. Es ist wichtig zu wissen, dass eine Nachricht, wenn sie an fünf Empfänger gesendet wird, als eine Nachricht gezählt wird.
+Der **Bericht "Gesendete** und empfangene E-Mail" ist ein intelligenter Bericht mit Informationen zu eingehenden und ausgehenden E-Mails, einschließlich Spamerkennungen, Schadsoftware und als "gut" gekennzeichneter E-Mails. Der Unterschied zwischen diesem Bericht und [dem](#mailflow-status-report) Statusbericht für den Nachrichtenfluss besteht in folgendem: Dieser Bericht enthält keine Daten zu Nachrichten, die durch den Edgeschutz blockiert wurden. Es ist wichtig zu wissen, dass eine Nachricht, wenn sie an fünf Empfänger gesendet wird, als eine Nachricht gezählt wird.
 
 Die Aggregatansicht und die Detailansicht des Berichts lassen eine Filterung von 90 Tagen zu.
 
@@ -425,7 +429,7 @@ Die Aggregatansicht und die Detailansicht des Berichts lassen eine Filterung von
 
 ![Gesendetes und empfangenes E-Mail-Widget im Dashboard "Berichte"](../../media/sent-and-received-email-report-widget.png)
 
-### <a name="report-view-for-the-sent-and-received-email-report"></a>Berichtsansicht für den Bericht "Gesendete und empfangene E-Mail"
+### <a name="report-view-for-the-sent-and-received-email-report"></a>Berichtsansicht für den Bericht über gesendete und empfangene E-Mails
 
 Die folgenden Diagramme sind in der Berichtsansicht verfügbar:
 
@@ -442,7 +446,7 @@ Die folgenden Diagramme sind in der Berichtsansicht verfügbar:
 
   ![Typansicht im Bericht "Gesendete und empfangene E-Mail"](../../media/sent-and-received-email-report-type-view.png)
 
-- **Aufbrechen nach: Richtung:** Das Diagramm zeigt **Daten gesamt,** **ein-** und **ausgehend.** Wenn Sie mit der Maus auf einen Tag (Datenpunkt) im Diagramm zeigen, werden Details zu diesem Tag angezeigt.
+- **Aufbrechen nach: Richtung:** Das Diagramm zeigt **Die Gesamt-,** **Eingehenden** und **ausgehenden** Daten. Wenn Sie mit der Maus auf einen Tag (Datenpunkt) im Diagramm zeigen, werden Details zu diesem Tag angezeigt.
 
   ![Richtungsansicht im Bericht "Gesendete und empfangene E-Mail"](../../media/sent-and-received-email-report-direction-view.png)
 
@@ -463,11 +467,11 @@ Klicken Sie auf "Bericht anzeigen", um zur **Berichtsansicht zurück zu wechseln
 Wenn Sie in der **Tabelle "Details anzeigen"** in der Tabelle "Nach: Richtung oder Nach unten  **nach:** Richtungsansicht" klicken, werden die folgenden Informationen angezeigt:
 
 - **Datum (UTC)**
-- **Typ**
+- **Type**
 - **Richtung**
-- **Nachrichtenanzahl**
+- **Anzahl der Nachrichten**
 
-Wenn Sie in einer **Detailtabelle** auf "Filter" klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
+Wenn Sie in einer **Detailtabelle auf** "Filter" klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
 
 - **Startdatum** und **Enddatum**
 - Richtungswerte
@@ -491,17 +495,17 @@ Die folgenden Diagramme sind in der Berichtsansicht verfügbar:
 - **Anzeigen von Daten für \> die obersten E-Mail-Empfänger**
 - **Anzeigen von Daten für \> die obersten Spamempfänger**
 - **Anzeigen von Daten für \> EOP (Top Malware Recipients)**
-- **Anzeigen von Daten für \> die am besten verwendeten Schadsoftwareempfänger (Defender für Office 365)**
+- **Anzeigen von Daten für \> die am besten geschützten Empfänger von Schadsoftware (Defender für Office 365)**
 
 Die Zusammensetzung des Kreisdiagramms ändert sich basierend auf diesen Auswahlen.
 
 Wenn Sie im Kreisdiagramm auf einen Spalt zeigen, wird die Anzahl der gesendeten oder empfangenen Nachrichten angezeigt.
 
-Wenn Sie **in** einer Berichtsansicht auf Filter klicken, können Sie einen Datumsbereich mit **Startdatum** und **Enddatum angeben.**
+Wenn Sie **in** einer Berichtsansicht auf "Filter" klicken, können Sie einen Datumsbereich mit **Startdatum** und **Enddatum angeben.**
 
-![Kreisdiagramm in der Berichtsansicht im Bericht über die obersten Absender und Empfänger](../../media/top-senders-and-recipients-report-view.png)
+![Kreisdiagramm in der Berichtsansicht im Bericht "Die obersten Absender und Empfänger"](../../media/top-senders-and-recipients-report-view.png)
 
-### <a name="details-table-view-for-the-top-senders-and-recipient-report"></a>Detailtabelle für den Bericht zu den obersten Absendern und Empfängern
+### <a name="details-table-view-for-the-top-senders-and-recipient-report"></a>Detailtabelle für den Bericht der obersten Absender und Empfänger
 
 Wenn Sie auf **"Details anzeigen" klicken,** hängen die angezeigten Informationen vom Diagramm ab, das Sie betrachtet haben:
 
@@ -525,12 +529,12 @@ Wenn Sie auf **"Details anzeigen" klicken,** hängen die angezeigten Information
   - **Am besten für Schadsoftwareempfänger**
   - **Count**
 
-- **Anzeigen von Daten für \> die am besten verwendeten Schadsoftwareempfänger (Defender für Office 365)**
+- **Anzeigen von Daten für \> die am besten geschützten Empfänger von Schadsoftware (Defender für Office 365)**
 
   - **Am besten für Schadsoftwareempfänger (Defender für Office 365)**
   - **Count**
 
-Wenn Sie in einer **Detailtabelle auf Filter** klicken, können Sie einen Datumsbereich mit **Startdatum** und **Enddatum angeben.**
+Wenn Sie in einer **Detailtabelle auf** Filter klicken, können Sie einen Datumsbereich mit **Startdatum** und **Enddatum angeben.**
 
 Klicken Sie auf "Bericht anzeigen", um zur **Berichtsansicht zurück zu wechseln.**
 
@@ -546,7 +550,7 @@ Um die in diesem Artikel beschriebenen Berichte anzeigen und verwenden zu könne
 Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 > [!NOTE]
-> Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+> Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="related-topics"></a>Verwandte Themen
 

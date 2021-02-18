@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f2fae1e41562d1ae743ecd964b42082b3d6486e8
-ms.sourcegitcommit: 05657b39eaafc0503b01c6adcc5d8a5e615dc02c
+ms.openlocfilehash: 423a65e60ccd11ab7e9fd78ef3b7983ba0c609c2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50031351"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288717"
 ---
 # <a name="compliance"></a>Compliance
 
@@ -27,16 +27,17 @@ Microsoft Managed Desktop hat die folgenden Zertifizierungen erhalten:
 - [ISO 27001 Information Security Management Standards (ISMS)](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27001)
 - [ISO 27701 Privacy Information Management System (PIMS)](https://docs.microsoft.com/compliance/regulatory/offering-iso-27701)
 - [ISO 27017 Code of Practice for Information Security Controls](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27017)
-- [ISO 27018 Verhaltenskodex zum Schutz personenbezogener Daten in der Cloud](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27018)
+- [ISO 27018- Verhaltenskodex zum Schutz personenbezogener Daten in der Cloud](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27018)
 - [ISO 9001 Quality Management Systems Standards](https://docs.microsoft.com/compliance/regulatory/offering-ISO-9001)
 - [ISO 20000-1 Information Technology Service Management](https://docs.microsoft.com/compliance/regulatory/offering-ISO-20000-1-2011)
 - [ISO 22301 Business Continuity Management Standard](https://docs.microsoft.com/compliance/regulatory/offering-ISO-22301)
 - [Cloud Security Alliance (CSA) STAR-Nachweis](https://docs.microsoft.com/compliance/regulatory/offering-CSA-STAR-Attestation)
 - [Cloud Security Alliance (CSA) STAR-Zertifizierung](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
 - [Dienstorganisationssteuerelemente (SOC) 1, 2, 3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
+- [Information Security Registered Assessor Program (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
 - [Payment Card Industry (PCI) Data Security Standard (DSS)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
 - [Health Insurance Portability and Accountability Act (HIPAA)](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
-- [Information Security Registered Assessor Program (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
+- [Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)](https://docs.microsoft.com/compliance/regulatory/offering-hitrust)
 
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>Auditorberichte und Compliancezertifikate

@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen von Schutzfeatures in Azure Information Protection für vorhandene Mandanten
+title: Bereitstellen von Schutzfunktionen in Azure Information Protection für vorhandene Mandanten
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -19,20 +19,20 @@ ms.custom:
 description: In diesem Artikel werden die Änderungen erläutert, die an den Schutzfunktionen in Azure Information Protection vorgenommen werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0769306c3aa2d1a357e1d5999d1a1406c02aa5f3
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: fe85a46e3f20cda62cd8a52bd5df92257f8fee57
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261561"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286669"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Bereitstellen von Schutzfeatures in Azure Information Protection für vorhandene Mandanten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Microsoft Defender für Office 365 – Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender für Office 365 – Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Ab Juli 2018 sind für alle berechtigten Azure Information Protection-Mandanten die Schutzfunktionen in Azure Information Protection standardmäßig aktiviert. Die Schutzfunktionen in Azure Information Protection wurden in Office 365 früher als Rechteverwaltung oder Azure RMS bezeichnet. Wenn Ihre Organisation über einen Office E3-Serviceplan oder einen höheren Serviceplan verfügt, erhalten Sie jetzt einen Voranfang zum Schutz von Informationen über Azure Information Protection, wenn wir diese Features bereitstellen.
 
@@ -54,7 +54,7 @@ Mandantenadministratoren können den Schutzstatus im Office 365-Administratorpor
 
 ## <a name="why-are-we-making-this-change"></a>Warum wird diese Änderung geändert?
 
-Die Office 365-Nachrichtenverschlüsselung nutzt die Schutzfunktionen in Azure Information Protection. Im Mittelpunkt der neuesten Verbesserungen an der Office 365-Nachrichtenverschlüsselung und unserer umfassenderen Investitionen in den Informationsschutz in Microsoft 365 machen wir es Organisationen einfacher, unsere Schutzfunktionen zu aktivieren und zu nutzen, da es in der Vergangenheit schwierig war, Verschlüsselungstechnologien zu einrichten. Durch das standardmäßige Aktivieren der Schutzfunktionen in Azure Information Protection können Sie schnell mit dem Schutz Ihrer vertraulichen Daten beginnen.
+Die Office 365-Nachrichtenverschlüsselung nutzt die Schutzfunktionen in Azure Information Protection. Im Mittelpunkt der neuesten Verbesserungen an der Office 365-Nachrichtenverschlüsselung und unserer umfassenderen Investitionen in den Informationsschutz in Microsoft 365 erleichtern wir Organisationen das Aktivieren und Verwenden unserer Schutzfunktionen, da verschlüsselungstechnologien in der Vergangenheit schwierig eingerichtet werden mussten. Durch das standardmäßige Aktivieren der Schutzfunktionen in Azure Information Protection können Sie schnell mit dem Schutz Ihrer vertraulichen Daten beginnen.
 
 ## <a name="does-this-impact-me"></a>Wirkt sich dies auf mich aus?
 
@@ -75,9 +75,9 @@ Verwenden Sie die folgenden Anweisungen aus dem Vorbereiten der Umgebung für Az
 
    Verwenden Sie ADSI Edit, um festzustellen, ob ein SCP in Active Directory veröffentlicht wurde: CN=Configuration [Servername], CN=Services, CN=RightsManagementServices, CN=SCP
 
-2. Wenn Sie keinen SCP verwenden, müssen Windows-Computer, die eine Verbindung mit einem AD -RMS-Cluster herstellen, mithilfe der Windows-Registrierung für die clientseitige Dienstermittlung oder Lizenzierungsumleitung konfiguriert `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation` werden:
+2. Wenn Sie kein SCP verwenden, müssen Windows-Computer, die eine Verbindung mit einem AD -RMS-Cluster herstellen, mithilfe der Windows-Registrierung für die clientseitige Dienstermittlung oder Lizenzierungsumleitung konfiguriert `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation` werden:
 
-Weitere Informationen zu diesen Registrierungskonfigurationen finden Sie unter Enabling [client-side service discovery by using the Windows registry](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) and [Redirecting licensing server traffic](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic).
+Weitere Informationen zu diesen Registrierungskonfigurationen finden Sie unter [Enabling client-side service discovery by using the Windows registry](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) and [Redirecting licensing server traffic](https://docs.microsoft.com/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic).
 
 ## <a name="i-use-ad-rms-how-do-i-opt-out"></a>Ich verwende AD RMS, wie kann ich mich abmelden?
 

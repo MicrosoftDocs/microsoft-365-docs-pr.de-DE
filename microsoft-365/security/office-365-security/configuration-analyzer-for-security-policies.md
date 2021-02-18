@@ -18,23 +18,23 @@ ms.collection:
 description: Administratoren können erfahren, wie Sie mithilfe der Konfigurationsanalyse Sicherheitsrichtlinien finden und beheben, die unterhalb der voreingestellten Sicherheitsrichtlinien "Standardschutz" und "Strenger Schutz" liegen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a78452cb3a7e4cb65c72d98b9322f217309a6d6f
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 6daa3ef2c3cd758022fc9dad325df4c5e4f38647
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165907"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288921"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Konfigurationsanalyse für Schutzrichtlinien in EOP und Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Die Konfigurationsanalyse im Security & Compliance Center bietet einen zentralen Ort zum Suchen und Beheben von Sicherheitsrichtlinien, in denen sich die Einstellungen unter den Standardschutz- und Strengschutzprofileinstellungen in vordefinierten Sicherheitsrichtlinien [befinden.](preset-security-policies.md)
+Die Konfigurationsanalyse im Security & Compliance Center bietet einen zentralen Ort zum Suchen und Beheben von Sicherheitsrichtlinien, in denen sich die Einstellungen unter den Profileinstellungen "Standardschutz" und "Strenger Schutz" in voreingestellten Sicherheitsrichtlinien [befinden.](preset-security-policies.md)
 
 Die folgenden Richtlinientypen werden von der Konfigurationsanalyse analysiert:
 
@@ -66,14 +66,14 @@ Die **Standard-** und Strict-Richtlinieneinstellungswerte, die als Basiswerte ve
 
 - Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen im Security & Compliance Center Berechtigungen zugewiesen werden.
   - Um die Konfigurationsanalyse **zu** verwenden und Sicherheitsrichtlinien zu aktualisieren, müssen Sie Mitglied der Rollengruppe **"Organisationsverwaltung"** oder **"Sicherheitsadministrator"** sein.
-  - Für den schreibgeschützten Zugriff auf die Konfigurationsanalyse müssen  Sie Mitglied der Rollengruppe "Globaler Leser" oder **"Sicherheitsleser"** sein.
+  - Für den schreibgeschützten Zugriff auf die Konfigurationsanalyse müssen  Sie Mitglied der Rollengruppe "Globaler Leser" oder **"Sicherheitsleseprogramm"** sein.
 
   Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
   > [!NOTE]
   >  
-  > - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  > 
+  > - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+  >
   > - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
 ## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>Verwenden der Konfigurationsanalyse im Security & Compliance Center
@@ -88,9 +88,9 @@ Die Konfigurationsanalyse verfügt über zwei Hauptregisterkarten:
 
 - **Konfigurations-Drift-Analyse und -Verlauf:** In dieser Ansicht können Sie Richtlinienänderungen im Laufe der Zeit nachverfolgen.
 
-### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Registerkarte "Einstellungen und Empfehlungen" in der Konfigurationsanalyse
+### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Registerkarte "Einstellung und Empfehlungen" in der Konfigurationsanalyse
 
-Standardmäßig wird die Registerkarte im Vergleich zum Standardschutzprofil geöffnet. Sie können zum Vergleich des Strengschutzprofils wechseln, indem Sie auf **"Strenge Empfehlungen anzeigen" klicken.** Um zurück zu wechseln, wählen **Sie "Standardempfehlungen anzeigen" aus.**
+Standardmäßig wird die Registerkarte im Vergleich zum Standardschutzprofil geöffnet. Sie können zum Vergleich des Strict -Schutzprofils wechseln, indem Sie auf **"Strenge Empfehlungen anzeigen" klicken.** Um zurück zu wechseln, wählen **Sie "Standardempfehlungen anzeigen" aus.**
 
 ![Ansicht "Einstellungen und Empfehlungen" in der Konfigurationsanalyse](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
@@ -124,7 +124,7 @@ Wenn der Vergleich keine Verbesserungsempfehlungen enthält (grün), wird durch 
 
 - **Letzte Änderung:** Das Datum, an dem die Richtlinie zuletzt geändert wurde.
 
-- **Empfehlungen:** Der Wert der Einstellung im Standard- oder Strict-Schutzprofil. Klicken Sie auf "Übernehmen", um den Wert der Einstellung in Ihrer Richtlinie an den empfohlenen Wert im Schutzprofil **zu ändern.** Wenn die Änderung erfolgreich ist, wird die Meldung angezeigt: **Empfehlungen wurden erfolgreich angenommen.** Klicken **Sie auf** "Aktualisieren", um die reduzierte Anzahl von Empfehlungen und das Entfernen der spezifischen Einstellung/Richtlinienzeile aus den Ergebnissen zu sehen.
+- **Empfehlungen:** Der Wert der Einstellung im Standard- oder Strict-Schutzprofil. Klicken Sie auf "Übernehmen", um den Wert der Einstellung in Ihrer Richtlinie an den empfohlenen Wert im Schutzprofil **zu ändern.** Wenn die Änderung erfolgreich ist, wird die Meldung angezeigt: **Empfehlungen wurden erfolgreich angenommen.** Klicken **Sie auf** "Aktualisieren", um die reduzierte Anzahl von Empfehlungen und das Entfernen der bestimmten Einstellung/Richtlinienzeile aus den Ergebnissen zu sehen.
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Registerkarte "Konfigurations-Driftanalyse und Verlauf" in der Konfigurationsanalyse
 

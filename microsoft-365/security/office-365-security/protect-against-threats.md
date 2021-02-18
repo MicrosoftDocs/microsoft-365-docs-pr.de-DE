@@ -20,26 +20,26 @@ description: Administratoren können mehr über den Bedrohungsschutz in Microsof
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb2866fd3e60c021ae89ffabe7149f4b415d63bc
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: c9ca420609628476faba6262fe7ed412b8fa5746
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150712"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288801"
 ---
 # <a name="protect-against-threats"></a>Schutz vor Bedrohungen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Hier ist eine Schnellstartanleitung, die die Konfiguration von Defender für Office 365 in Blöcke unterbricht. Wenn Sie mit den Bedrohungsschutzfeatures in Office 365 noch nicht ganz genau wissen, wo Sie beginnen sollten, oder wenn Sie dies am besten *erlernen,* verwenden Sie diesen Leitfaden als Prüfliste und Ausgangspunkt.
+Hier ist eine Schnellstartanleitung, die die Konfiguration von Defender für Office 365 in Blöcke unterbricht. Wenn Sie noch nicht mit den Bedrohungsschutzfeatures in Office 365, nicht sicher sind, wo Sie beginnen sollten, oder wenn Sie dies am besten *erlernen,* verwenden Sie diese Anleitung als Prüfliste und Ausgangspunkt.
 
 > [!IMPORTANT]
-> **Die anfänglichen empfohlenen** Einstellungen sind für jede Art von Richtlinie enthalten. Es stehen jedoch zahlreiche Optionen zur Verfügung, und Sie können Ihre Einstellungen an die Anforderungen Ihrer organisation anpassen. Es dauert ungefähr 30 Minuten, bis Ihre Richtlinien oder Änderungen ihren Weg durch Ihr Rechenzentrum finden.
+> **Die anfänglichen empfohlenen** Einstellungen sind für jede Art von Richtlinie enthalten. Es stehen jedoch zahlreiche Optionen zur Verfügung, und Sie können Ihre Einstellungen an die Anforderungen Ihrer Organisation anpassen. Es dauert ungefähr 30 Minuten, bis Ihre Richtlinien oder Änderungen ihren Weg durch Ihr Rechenzentrum finden.
 
 ## <a name="requirements"></a>Anforderungen
 
@@ -61,7 +61,7 @@ Bedrohungsschutzfunktionen sind in *allen Microsoft-* oder Office 365-Abonnement
 |Automatische Bereinigung zur Nullstunde (für E-Mail)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Schutz vor schädlichen URLs und Dateien in E-Mails und Office-Dokumenten (sichere Links und sichere Anlagen)|[Microsoft Defender für Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |Aktivieren von sicheren Anlagen für SharePoint-, OneDrive- und Microsoft #A0|[Defender für Office 365 ](atp-for-spo-odb-and-teams.md)|
-|Erweiterter Antiphishingschutz|[Defender für Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Erweiterter Antiphishingschutz|[Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Rollen und Berechtigungen
 
@@ -71,7 +71,7 @@ Zum Konfigurieren von Defender für Office 365-Richtlinien muss Ihnen im [Securi
 
 |Rolle oder Rollengruppe|Weitere Informationen|
 |---|---|
-|Globaler Administrator|[Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|Globaler Administrator|[Informationen zu Microsoft 365-Administratorrollen](../../admin/add-users/about-admin-roles.md)|
 |Sicherheitsadministrator|[Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Exchange Online-Organisationsverwaltung|[Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> und <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
@@ -86,7 +86,7 @@ Starten Sie die Überwachungsprotokollierung frühzeitig. Für bestimmte der fol
 
 [Der Schutz vor Schadsoftware](anti-malware-protection.md) ist in Abonnements verfügbar, die [EOP enthalten.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
 
-1. Wählen Sie [im Security & Compliance Center](https://protection.office.com)die Option "Richtlinie für die **Bedrohungsverwaltung** \> **–** \> **Schadsoftware" aus.**
+1. Wählen Sie [im Security & Compliance Center](https://protection.office.com)die Option "Richtlinie für die **Bedrohungsverwaltung** \>  \> **– Schadsoftware" aus.**
 
 2. Doppelklicken Sie auf die **Standardrichtlinie,** und wählen Sie dann Einstellungen **aus.**
 
@@ -112,7 +112,7 @@ Im folgenden Verfahren wird beschrieben, wie Sie eine Antiphishingrichtlinie in 
 
 3. Klicken Sie **im Abschnitt "Identitätswechsel"** auf **"Bearbeiten",** und geben Sie dann die folgenden Einstellungen an:
 
-   - Aktivieren Sie **auf der Registerkarte "Benutzer zum Schützen** hinzufügen" *den* Schutz. Fügen Sie dann Benutzer hinzu, z. B. die Boardmitglieder Ihrer Organisation, Ihren CEO, den CFO und andere führungskräfte. (Sie können eine einzelne E-Mail-Adresse eingeben oder auf eine Liste klicken.)
+   - Aktivieren Sie **auf der Registerkarte "Benutzer zum Schützen** hinzufügen" *den* Schutz. Fügen Sie dann Benutzer hinzu, z. B. die Boardmitglieder Ihrer Organisation, Ihren CEO, CFO und andere führungskräfte. (Sie können eine einzelne E-Mail-Adresse eingeben oder auf eine Liste klicken.)
 
    - Aktivieren Sie **auf der Registerkarte "Domänen zum Schützen** hinzufügen" die Domänen, die ich **habe, automatisch mit ein.** Wenn Sie über benutzerdefinierte Domänen verfügen, fügen Sie sie jetzt hinzu.
 
@@ -122,7 +122,7 @@ Im folgenden Verfahren wird beschrieben, wie Sie eine Antiphishingrichtlinie in 
 
    - Geben Sie **auf der Registerkarte Vertrauenswürdige Absender** und Domänen hinzufügen alle vertrauenswürdigen Absender oder Domänen an, die Sie hinzufügen möchten.
 
-   - **Speichern** Sie die Registerkarte **"Einstellungen überprüfen",** nachdem Sie Ihre Einstellungen überprüft haben.
+   - **Speichern** Sie auf der **Registerkarte "Einstellungen überprüfen",** nachdem Sie Ihre Einstellungen überprüft haben.
 
 4. Klicken Sie **im Abschnitt "Spoofing"** auf **"Bearbeiten",** und geben Sie dann die folgenden Einstellungen an:
 
@@ -130,7 +130,7 @@ Im folgenden Verfahren wird beschrieben, wie Sie eine Antiphishingrichtlinie in 
 
    - Wählen Sie **auf der** Registerkarte "Aktionen" die Option **"Nachricht isolieren" aus.**
 
-   - **Speichern** Sie die Registerkarte **"Einstellungen überprüfen",** nachdem Sie Ihre Änderungen überprüft haben. (Wenn Sie keine Änderungen vorgenommen haben, brechen **Sie ab.)**
+   - **Speichern** Sie auf der Registerkarte **"Einstellungen überprüfen",** nachdem Sie Ihre Änderungen überprüft haben. (Wenn Sie keine Änderungen vorgenommen haben, brechen **Sie ab.)**
 
 5. Schließen Sie die Seite mit den Standardrichtlinieneinstellungen.
 
@@ -214,14 +214,14 @@ Weitere Informationen hierzu finden Sie unter [Einrichten einer Richtlinie für 
 
 ## <a name="part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Teil 5 : Überprüfen, ob sichere Anlagen für SharePoint, OneDrive und Microsoft Teams aktiviert sind
 
-Workloads wie SharePoint, OneDrive und Teams sind für die Zusammenarbeit erstellt. Die Verwendung von Defender für Office 365 hilft beim Blockieren und Erkennen von Dateien, die in Teamwebsites und Dokumentbibliotheken als bösartig identifiziert werden. Weitere Informationen zur Funktionsweise finden Sie [hier.](atp-for-spo-odb-and-teams.md)
+Workloads wie SharePoint, OneDrive und Teams sind für die Zusammenarbeit erstellt. Die Verwendung von Defender für Office 365 hilft beim Blockieren und Erkennen von Dateien, die in Teamwebsites und Dokumentbibliotheken als bösartig identifiziert werden. Weitere Informationen dazu finden Sie [hier.](atp-for-spo-odb-and-teams.md)
 
 > [!IMPORTANT]
-> Bevor Sie mit diesem Verfahren beginnen, stellen Sie sicher, dass die Überwachungsprotokollierung **für Ihre Microsoft 365-Umgebung bereits aktiviert ist.** Dies wird in der Regel von einer Person durchgeführt, der die Rolle "Überwachungsprotokolle" in Exchange Online zugewiesen ist. Weitere Informationen finden Sie unter Aktivieren oder Deaktivieren [der Überwachungsprotokollsuche!](../../compliance/turn-audit-log-search-on-or-off.md)
+> Bevor Sie mit diesem Verfahren beginnen, stellen Sie sicher, dass die **Überwachungsprotokollierung für Ihre Microsoft 365-Umgebung bereits aktiviert ist.** Dies wird in der Regel von einer Person durchgeführt, der die Rolle "Überwachungsprotokolle" in Exchange Online zugewiesen ist. Weitere Informationen finden Sie unter Aktivieren oder Deaktivieren [der Überwachungsprotokollsuche!](../../compliance/turn-audit-log-search-on-or-off.md)
 
-1. Wählen Sie [im Security & Compliance Center](https://protection.office.com)die Bedrohungsverwaltungsrichtlinie  \>  \> **"ATP Sichere** Anlagen" aus, und klicken Sie dann auf **"Globale Einstellungen".**
+1. Wählen Sie [im Security & Compliance Center](https://protection.office.com)die  \>  \> Bedrohungsverwaltungsrichtlinie **"ATP Sichere** Anlagen" aus, und klicken Sie dann auf **"Globale Einstellungen".**
 
-2. Stellen Sie sicher, dass der Umschalter **"Turn on Defender for Office 365 for SharePoint", "OneDrive" und "Microsoft Teams"** auf der rechten Seite ist: Umschalten sie ein, und klicken Sie dann auf ![ ](../../media/scc-toggle-on.png) **"Speichern".**
+2. Stellen Sie sicher, dass der Umschalter **"Turn on Defender for Office 365 for SharePoint", "OneDrive" und "Microsoft Teams"** auf der rechten Seite ist: Umschalten auf , und klicken Sie dann auf ![ ](../../media/scc-toggle-on.png) **"Speichern".**
 
 3. Überprüfen (und bearbeiten Sie gegebenenfalls) die Richtlinien für sichere Anlagen und [sichere](set-up-atp-safe-attachments-policies.md) Links in [Ihrer Organisation.](set-up-atp-safe-links-policies.md)
 
@@ -231,7 +231,7 @@ Workloads wie SharePoint, OneDrive und Teams sind für die Zusammenarbeit erstel
    - `$false` blockiert alle Aktionen mit Ausnahme von "Löschen" und "Herunterladen". Benutzer können das Risiko akzeptieren und eine erkannte Datei herunterladen.
 
    > [!TIP]
-   > Weitere Informationen zur Verwendung von PowerShell mit Microsoft 365 finden Sie unter Verwalten von [Microsoft 365 mit PowerShell.](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)
+   > Weitere Informationen zur Verwendung von PowerShell mit Microsoft 365 finden Sie unter Verwalten von [Microsoft 365 mit PowerShell.](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)
 
 5. Es kann bis zu 30 Minuten dauern, bis Ihre Änderungen auf alle Microsoft 365-Rechenzentren verteilt sind.
 
@@ -263,7 +263,7 @@ Weitere Informationen zu Warnungen finden Sie unter ["Erstellen von Aktivitätsw
 > Wenn Sie die Konfiguration abgeschlossen haben, verwenden Sie die folgenden Links, um Arbeitsauslastungsuntersuchungen zu starten:
 >
 >- [Threat Protection-Statusbericht](view-email-security-reports.md#threat-protection-status-report)
->- [Verwenden des Security & Compliance Center zum Verwalten von Dateien in Quarantäne](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files)
+>- [Verwenden des Security & Compliance Center zum Verwalten von Isolierten Dateien](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files)
 >- [Was zu tun ist, wenn eine schädliche Datei in SharePoint Online, OneDrive oder Microsoft Teams gefunden wird](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 >- [Verwalten von Isolierten Nachrichten und Dateien als Administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
 
@@ -271,7 +271,7 @@ Weitere Informationen zu Warnungen finden Sie unter ["Erstellen von Aktivitätsw
 
 Neben der Konfiguration des Schutzes vor Schadsoftware, schädlichen URLs und Dateien, Phishing und Spam wird empfohlen, die automatische Bereinigung zur Nullstunde zu konfigurieren.
 
-### <a name="zero-hour-auto-purge-for-email-in-eop"></a>Automatische Bereinigung zur Nullstunde für E-Mails in EOP
+### <a name="zero-hour-auto-purge-for-email-in-eop"></a>Automatisches Löschen zur Nullstunde für E-Mails in EOP
 
 [Zap (Zero-Hour Auto Purge)](zero-hour-auto-purge.md) ist in Abonnements verfügbar, die [EOP enthalten.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) Dieser Schutz ist standardmäßig aktiviert. Die folgenden Bedingungen müssen jedoch erfüllt sein, damit der Schutz wirksam wird:
 
@@ -291,5 +291,5 @@ Nachdem Sie die Bedrohungsschutzfeatures konfiguriert haben, müssen Sie die Fun
 |---|---|
 |Sehen Sie sich die Funktionsweise von Bedrohungsschutzfeatures für Ihre Organisation an, indem Sie Berichte anzeigen.|[Sicherheitsdashboard](security-dashboard.md) <p> [E-Mail-Sicherheitsberichte](view-email-security-reports.md) <p> [Berichte für Microsoft Defender für Office 365](view-reports-for-atp.md) <p> [Sicherheitsrisiken-Explorer](threat-explorer.md)|
 |Überprüfen und überarbeiten Sie Ihre Richtlinien zum Schutz vor Bedrohungen regelmäßig nach Bedarf.|[Sicherheitsbewertung](../mtp/microsoft-secure-score.md) <p> [Intelligente Berichte und Einblicke](reports-and-insights-in-security-and-compliance.md) <p> [Microsoft 365 Threat Investigation and Response Features](keep-users-safe-with-office-365-ti.md)|
-|Auf neue Features und Dienstupdates achten|[Standard- und Zielversionsoptionen](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365) <p> [Nachrichtencenter](https://docs.microsoft.com/microsoft-365/admin/manage/message-center) <p> [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Dienstbeschreibungen](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
+|Auf neue Features und Dienstupdates achten|[Standard- und Zielversionsoptionen](../../admin/manage/release-options-in-office-365.md) <p> [Nachrichtencenter](../../admin/manage/message-center.md) <p> [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Dienstbeschreibungen](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
 |Erfahren Sie mehr über die empfohlenen Standard- und Strict-Sicherheitskonfigurationen für EOP und Defender für Office 365.|[Empfohlene Einstellungen für EOP und Microsoft Defender für Office 365-Sicherheit](recommended-settings-for-eop-and-office365-atp.md)|

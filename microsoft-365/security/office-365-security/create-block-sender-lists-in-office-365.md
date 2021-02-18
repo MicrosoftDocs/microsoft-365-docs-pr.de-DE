@@ -14,33 +14,33 @@ search.appverid:
 description: Administratoren können sich über die verfügbaren und bevorzugten Optionen zum Blockieren eingehender Nachrichten in Exchange Online Protection (EOP) informieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d77457567d4c3f9f4a8620021a7fb41615f0594d
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 5c95b49db811807a0cb46dce5363b8ae2dbe5602
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165655"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287281"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Erstellen von Listen blockierter Absender in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer bietet EOP mehrere Möglichkeiten zum Blockieren von E-Mails von unerwünschten Absendern. Diese Optionen umfassen blockierte Absender in Outlook, Listen blockierter Absender oder blockierte Domänen in Antispamrichtlinien, Exchange-Nachrichtenflussregeln (auch als Transportregeln bekannt) und die IP-Sperrliste (Verbindungsfilterung). Zusammen können Sie sich diese Optionen als Listen _blockierter Absender ausdingen._
 
-Die beste Methode zum Blockieren von Absendern hängt vom Wirkungsbereich ab. Für einen einzelnen Benutzer können blockierte Absender in Outlook die richtige Lösung sein. Für viele Benutzer wäre eine der anderen Optionen besser geeignet. Die folgenden Optionen werden nach Wirkungsbereich und Umfang bewertet. Die Liste reicht von schmal bis breit, aber lesen *Sie die Spezifischen* für vollständige Empfehlungen.
+Die beste Methode zum Blockieren von Absendern hängt vom Wirkungsbereich ab. Für einen einzelnen Benutzer können blockierte Absender in Outlook die richtige Lösung sein. Für viele Benutzer wäre eine der anderen Optionen besser geeignet. Die folgenden Optionen werden nach Wirkungsbereich und Umfang bewertet. Die Liste reicht von schmal bis breit, aber lesen *Sie die Spezifischen,* um vollständige Empfehlungen zu erhalten.
 
-1. Blockierte Absender in Outlook (liste blockierter Absender, die in jedem Postfach gespeichert ist)
+1. Blockierte Absender in Outlook (die Liste blockierter Absender, die in jedem Postfach gespeichert ist)
 
 2. Listen blockierter Absender oder blockierter Domänen (Antispamrichtlinien)
 
 3. Nachrichtenflussregeln
 
-4. Die IP-Sperrliste (Verbindungsfilterung)
+4. Die Liste blockierter IP-Adressen (Verbindungsfilterung)
 
 > [!NOTE]
 > Sie können zwar organisationsweite Blockierungseinstellungen verwenden, um falsch negative Ergebnisse (verpasste Spamnachrichten) zu adressieren, sie sollten diese Nachrichten jedoch auch zur Analyse an Microsoft übermitteln. Die Verwaltung falsch negativer Meldungen mithilfe von Sperrlisten erhöht den Verwaltungsaufwand erheblich. Wenn Sie Sperrlisten verwenden, um verpasste Spamnachrichten zu entschärfen, müssen Sie das Thema "Nachrichten und Dateien an [Microsoft](report-junk-email-messages-to-microsoft.md) melden" bereithalten.
@@ -49,15 +49,15 @@ Im Gegensatz dazu haben Sie auch mehrere Optionen, um E-Mails aus bestimmten Que
 
 ## <a name="email-message-basics"></a>Grundlagen von E-Mail-Nachrichten
 
-Eine standardmäßige SMTP-E-Mail besteht aus einem *Nachrichten-Envelope* und dem Nachrichteninhalt. Der Nachrichtenumschlag enthält Informationen, die für die Übermittlung und Übermittlung der Nachricht zwischen den SMTP-Servern erforderlich sind. Der Nachrichteninhalt enthält Nachrichtenkopffelder (zusammenfassend als *Nachrichtenkopf* bezeichnet) sowie den Nachrichtentext. Der Nachrichtenumschlag wird in RFC 5321 beschrieben, und der Nachrichtenkopf wird in RFC 5322 beschrieben. Empfänger sehen den tatsächlichen Nachrichtenumschlag nie, da er vom Nachrichtenübermittlungsprozess generiert wird und nicht tatsächlich Teil der Nachricht ist.
+Eine standardmäßige SMTP-E-Mail besteht aus einem *Nachrichten-Envelope* und dem Nachrichteninhalt. Der Nachrichtenumschlag enthält Informationen, die für die Übermittlung und Übermittlung der Nachricht zwischen den SMTP-Servern erforderlich sind. Der Nachrichteninhalt enthält Nachrichtenkopffelder (zusammenfassend als *Nachrichtenkopf* bezeichnet) sowie den Nachrichtentext. Der Nachrichtenumschlag wird in RFC 5321 beschrieben, und der Nachrichtenkopf wird in RFC 5322 beschrieben. Empfänger sehen nie den tatsächlichen Nachrichtenumschlag, da er vom Nachrichtenübermittlungsprozess generiert wird und nicht tatsächlich Teil der Nachricht ist.
 
-- Die Adresse (auch als `5321.MailFrom` MAIL **FROM-Adresse,** Absender von E-Mails oder Umschlagsender bezeichnet) ist die E-Mail-Adresse, die bei der SMTP-Übermittlung der Nachricht verwendet wird. Diese **E-Mail-Adresse** wird in der Regel im Kopfzeilenfeld "Return-Path" im Nachrichtenkopf aufgezeichnet (obwohl der Absender eine andere **Absender-E-Mail-Adresse** festlegen kann). Wenn die Nachricht nicht zugestellt werden kann, ist dies der Empfänger für den Unzustellbarkeitsbericht (auch als NDR oder Unzustellbarkeitsnachricht bekannt).
+- Die Adresse (auch als `5321.MailFrom` MAIL **FROM-Adresse,** Absender von E-Mails oder Umschlagsender bezeichnet) ist die E-Mail-Adresse, die bei der SMTP-Übermittlung der Nachricht verwendet wird. Diese E-Mail-Adresse wird in der Regel im Kopfzeilenfeld **"Return-Path"** im Nachrichtenkopf aufgezeichnet (obwohl der Absender eine andere **Absender-E-Mail-Adresse** festlegen kann). Wenn die Nachricht nicht zugestellt werden kann, ist dies der Empfänger für den Unzustellbarkeitsbericht (auch als NDR oder Unzustellbarkeitsnachricht bekannt).
 
 - The `5322.From` (also known as the **From** address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients.
 
-Häufig sind die `5321.MailFrom` Und-Adressen identisch (Kommunikation von Person `5322.From` zu Person). Wenn E-Mails jedoch im Auftrag einer anderen Person gesendet werden, können die Adressen unterschiedlich sein.
+Häufig sind die `5321.MailFrom` `5322.From` Und-Adressen identisch (Kommunikation zwischen Personen). Wenn E-Mails jedoch im Auftrag einer anderen Person gesendet werden, können die Adressen unterschiedlich sein.
 
-Listen blockierter Absender und blockierte Domänen in Antispamrichtlinien in EOP überprüfen sowohl die `5321.MailFrom` Adressliste als auch `5322.From` die Adressen. Blockierte Absender in Outlook verwenden nur die `5322.From` Adresse.
+Listen blockierter Absender und blockierter Domänen in Antispamrichtlinien in EOP überprüfen sowohl die `5321.MailFrom` Adressliste als auch `5322.From` die Adressen. Blockierte Absender von Outlook verwenden nur die `5322.From` Adresse.
 
 ## <a name="use-outlook-blocked-senders"></a>Verwenden von blockierten Absendern in Outlook
 

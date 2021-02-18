@@ -19,21 +19,21 @@ ms.custom:
 description: Administratoren können häufig gestellte Fragen und Antworten zum Antispamschutz in Exchange Online Protection (EOP) anzeigen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8620ad3f99c45dae3442ec89d879124053c1a005
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 8abccdac73877c3f24114afaa78c13143e156868
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175979"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288969"
 ---
 # <a name="anti-spam-protection-faq"></a>Häufig gestellte Fragen zum Antispamschutz
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Dieses Thema enthält häufig gestellte Fragen und Antworten zum Schutz vor Schadsoftware für Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständige Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer.
 
@@ -60,7 +60,7 @@ Eine Zero-Day-Spamvariante ist eine bisher unbekannte Spamvariante der ersten Ge
 
 ## <a name="do-i-need-to-configure-the-service-to-provide-anti-spam-protection"></a>Muss ich den Dienst für Antispamschutz konfigurieren?
 
-Nachdem Sie sich für den Dienst registrieren und Ihre Domäne hinzugefügt haben, wird die Spamfilterung automatisch aktiviert. Standardmäßig ist die Spamfilterung so optimiert, dass Sie geschützt werden, ohne dass eine zusätzliche Konfiguration erforderlich ist (abgesehen von der zuvor erwähnten Ausnahme für eigenständige Kunden von EOP in Hybridumgebungen). Als Administrator können Sie die Standardeinstellungen für die Spamfilterung bearbeiten, um die Anforderungen Ihrer Organisation optimal zu erfüllen. Für eine höhere Granularität können Sie auch Antispamrichtlinien und ausgehende Antispamrichtlinien erstellen, die auf bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation angewendet werden. Benutzerdefinierte Richtlinien haben immer Vorrang vor der Standardrichtlinie, die Priorität (das heißt, die Reihenfolge der Ausführung) Ihrer benutzerdefinierten Richtlinien können Sie jedoch ändern.
+Nachdem Sie sich für den Dienst registrieren und Ihre Domäne hinzugefügt haben, wird die Spamfilterung automatisch aktiviert. Standardmäßig ist die Spamfilterung so optimiert, dass Sie ohne zusätzliche Konfiguration geschützt werden (abgesehen von der zuvor erwähnten Ausnahme für eigenständige Kunden von EOP in Hybridumgebungen). Als Administrator können Sie die Standardeinstellungen für die Spamfilterung bearbeiten, um die Anforderungen Ihrer Organisation optimal zu erfüllen. Für eine höhere Granularität können Sie auch Antispamrichtlinien und Ausgehende Antispamrichtlinien erstellen, die auf bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation angewendet werden. Benutzerdefinierte Richtlinien haben immer Vorrang vor der Standardrichtlinie, die Priorität (das heißt, die Reihenfolge der Ausführung) Ihrer benutzerdefinierten Richtlinien können Sie jedoch ändern.
 
 Weitere Informationen hierzu finden Sie in den folgenden Themen:
 
@@ -78,7 +78,7 @@ Es kann bis zu einer Stunde dauern, bis die Änderungen übernommen werden.
 
 ## <a name="is-bulk-email-filtering-automatically-enabled"></a>Ist die Filterung von Massen-E-Mails automatisch aktiviert?
 
-Ja. Weitere Informationen zu Massen-E-Mails finden Sie unter [Was ist der Unterschied zwischen Junk-E-Mail und Massen-E-Mail?](what-s-the-difference-between-junk-email-and-bulk-email.md)
+Ja Weitere Informationen zu Massen-E-Mails finden Sie unter [Was ist der Unterschied zwischen Junk-E-Mail und Massen-E-Mail?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
 ## <a name="does-the-service-provide-url-filtering"></a>Bietet der Dienst die URL-Filterung?
 
@@ -108,7 +108,7 @@ Sie können eine Benachrichtigung an eine angegebene E-Mail-Adresse senden, wenn
 
 ## <a name="can-i-use-a-third-party-anti-spam-and-anti-malware-provider-in-conjunction-with-exchange-online"></a>Kann ich eine Drittanbieterlösung zum Schutz vor Antispam- und Antischadsoftware zusammen mit Exchange Online einsetzen?
 
-Ja. Es wird zwar empfohlen, Ihren MX-Eintrag auf Microsoft zu verweisen, es gibt jedoch berechtigte geschäftliche Gründe, Ihre E-Mails zuerst an einen anderen Ort als Microsoft weiter zu routen.
+Ja Es wird zwar empfohlen, Ihren MX-Eintrag auf Microsoft zu verweisen, es gibt jedoch berechtigte geschäftliche Gründe, Ihre E-Mails zuerst an einen anderen Ort als Microsoft weiter zu routen.
 
 - **Eingehende Nachrichten:** Ändern Sie Ihre MX-Einträge so, dass sie auf den Drittanbieter verweisen, und leiten Sie die Nachrichten dann zur weiteren Verarbeitung an EOP um. Weitere Informationen finden Sie unter ["Erweiterte Filterung für Connectors in Exchange Online".](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 
@@ -116,11 +116,11 @@ Ja. Es wird zwar empfohlen, Ihren MX-Eintrag auf Microsoft zu verweisen, es gibt
 
 ## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>Bietet Microsoft Informationen, wie ich mich gegen betrügerische Phishing-Versuche schützen kann?
 
-Ja. Weitere Informationen finden Sie unter ["Schützen Ihrer Privatsphäre im Internet".](https://support.microsoft.com/help/4091455)
+Ja Weitere Informationen finden Sie unter ["Schützen Ihrer Privatsphäre im Internet".](https://support.microsoft.com/help/4091455)
 
 ## <a name="are-spam-and-malware-messages-being-investigated-as-to-who-sent-them-or-being-transferred-to-law-enforcement-entities"></a>Werden Spam- und Malwarenachrichten darauf untersucht, wer sie gesendet hat, oder werden sie an Strafverfolgungsbehörden weitergeleitet?
 
-Der Dienst konzentriert sich auf die Erkennung und Entfernung von Spam und Schadsoftware, wobei wir gelegentlich besonders gefährliche oder schädliche Spam- oder Angriffskampagnen untersuchen und die Angriffe verfolgen. Dies kann die Zusammenarbeit mit unseren Rechts- und Digitaleinheiten umfassen, um ein Spammer-Botnet zu verwenden, den Spammer daran zu beteiligen, den Dienst zu verwenden (wenn er ihn zum Senden ausgehender E-Mails verwendet) und die Informationen an die Strafverfolgungsbehörden zu übergeben, um die Strafverfolgung zu strafvollziehen.
+Der Dienst konzentriert sich auf die Erkennung und Entfernung von Spam und Schadsoftware, wobei wir gelegentlich besonders gefährliche oder schädliche Spam- oder Angriffskampagnen untersuchen und die Angriffe verfolgen. Dies kann die Zusammenarbeit mit unseren Rechts- und Digitaleinheiten umfassen, um ein Spammer-Botnet zu verwenden, den Spammer an der Verwendung des Diensts zu blockieren (wenn er ihn zum Senden ausgehender E-Mails verwendet) und die Informationen an die Strafverfolgungsbehörden für strafrechtliche Ermittlungen weiter zu übergeben.
 
 ## <a name="what-are-a-set-of-best-outbound-mailing-practices-that-will-ensure-that-my-mail-is-delivered"></a>Mit welchen bewährten Methoden für das Senden ausgehender E-Mails kann ich sicherstellen, dass meine E-Mails zugestellt werden?
 
@@ -130,7 +130,7 @@ Die unten aufgeführten Richtlinien beschreiben bewährte Methoden für das Send
 
   Wenn der Absender beispielsweise user@fabrikam wird, wird die Domäne "fabrikam" in die IP-Adresse 192.0.43.10 aufgelöst.
 
-  Wenn eine sendende Domäne nicht über einen A-Eintrag und nicht über einen MX-Eintrag in DNS verfügt, leitet der Dienst die Nachricht stets durch den Pool für besonders riskante Zustellungen, unabhängig davon, ob es sich bei ihrem Inhalt um Spam handelt. Weitere Informationen zum Pool für besonders riskante Zustellinformationen finden Sie im Pool für besonders [riskante Zustellinformationen für ausgehende Nachrichten.](high-risk-delivery-pool-for-outbound-messages.md)
+  Wenn eine sendende Domäne nicht über einen A-Eintrag und nicht über einen MX-Eintrag in DNS verfügt, leitet der Dienst die Nachricht stets durch den Pool für besonders riskante Zustellungen, unabhängig davon, ob es sich bei ihrem Inhalt um Spam handelt. Weitere Informationen zum Pool für besonders riskante Zustellinformationen finden Sie im Pool für besonders riskante Zustellinformationen [für ausgehende Nachrichten.](high-risk-delivery-pool-for-outbound-messages.md)
 
 - **Der E-Mail-Server für ausgehende E-Mails sollte über einen Reverse-DNS-Eintrag (PTR) verfügen.**
 
@@ -146,7 +146,7 @@ Die unten aufgeführten Richtlinien beschreiben bewährte Methoden für das Send
 
   [Einrichten von SPF zum Verhindern von Spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  [Häufig gestellte Fragen zu Domänen](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+  [Häufig gestellte Fragen zu Domänen](../../admin/setup/domains-faq.yml#how-can-i-validate-spf-records-for-my-domain)
 
 - **Wenn Sie E-Mails mit DKIM signieren, melden Sie sich mit eingeschränkter Kanonisierung an.**
 

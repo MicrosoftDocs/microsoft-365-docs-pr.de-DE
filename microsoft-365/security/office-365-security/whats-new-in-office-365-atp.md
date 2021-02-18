@@ -21,30 +21,30 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3544f1ccb760c461b7ab72c6dc037fd653136db9
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 5934abb3afec3253da78c680735730b63ddb5701
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988160"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287353"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Neues in Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-**Gilt für:**
-
-- [Microsoft Defender für Office 365](office-365-atp.md)
+**Gilt für**
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 In diesem Artikel werden neue Features in der neuesten Version von Microsoft Defender für Office 365 aufgeführt. Features, die sich derzeit in der Vorschau befinden, sind mit **(Vorschau) bezeichnet.**
 
 > [!TIP]
-> Sie verfügen noch nicht über Microsoft Defender für Office 365? [Wenden Sie sich an den Vertrieb, um eine Testversion zu starten.](https://go.microsoft.com/fwlink/p/?LinkId=518644)
+> Sie verfügen noch nicht über Microsoft Defender für Office 365? [Wenden Sie sich an den Vertrieb, um eine Testversion zu starten.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
-## <a name="december-2020"></a>Dezember 2020
+## <a name="december-2020"></a>Dezember 2020
 
 - [Standardmäßige Sicherheit in Office 365](secure-by-default.md)
+- Verbesserungen bei automatisierten Untersuchungen: allgemeine Warnungen für manuell ausgelöste E-Mail-Untersuchungen, Behandeln von Postfachänderungen als separate Entitätskategorie, Entfernen redundanter Blockaktionen für URLs und Erstellen ausgehender E-Mail-Cluster für von Benutzern gefährdete Untersuchungen.
 
 ## <a name="november-2020"></a>November 2020
 
@@ -87,7 +87,7 @@ In diesem Artikel werden neue Features in der neuesten Version von Microsoft Def
 
 ## <a name="november-2019"></a>November 2019
 
-- [Sehen Sie sich neue gefährdete Funktionen](address-compromised-users-quickly.md) zur Erkennung und Reaktion von Benutzern an **(Vorschau)**(Microsoft Defender für Office 365 Plan 2)
+- [Sehen Sie sich neue gefährdete Funktionen](address-compromised-users-quickly.md) zur Erkennung und Reaktion von Benutzern an (**Vorschau**) (Microsoft Defender für Office 365 Plan 2)
 
 ## <a name="september-2019"></a>September 2019
 
@@ -113,7 +113,7 @@ In diesem Artikel werden neue Features in der neuesten Version von Microsoft Def
 
 Haben Sie gewusst, dass Microsoft Defender für Office 365 in zwei Plänen verfügbar ist? [Erfahren Sie mehr darüber, was die einzelnen Pläne enthalten.](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap)
 

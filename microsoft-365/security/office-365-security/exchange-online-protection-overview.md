@@ -15,21 +15,21 @@ ms.custom:
 description: Erfahren Sie, wie Exchange Online Protection (EOP) Ihre lokale E-Mail-Organisation in eigenständigen und Hybridumgebungen schützen kann.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b84ac26333163caec6117cf042044b9bbfad0a4f
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e8e3d44cb39e3569179d4155e32a8c11e0a5be56
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165463"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286885"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection im Überblick
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
--    [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
--    [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Exchange Online Protection (EOP) ist der cloudbasierte Filterdienst, der Ihre Organisation vor Spam und Schadsoftware schützt. EOP ist in allen Microsoft 365-Organisationen mit Exchange Online-Postfächern enthalten. EOP ist jedoch auch in den folgenden lokalen Szenarien verfügbar:
 
@@ -47,7 +47,7 @@ Die Funktionsweise von EOP lässt sich am besten an der Verarbeitung eingehender
 
 :::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Grafik von E-Mails aus dem Internet oder Kundenfeedback, die an EOP und über die Verbindung, Ansoftware, E-Mail-Schrägstrich-Richtlinienfilterung und Inhaltsfilterung übergeben werden, vor der Bewertung von Junk-E-Mails oder Quarantäne oder der Zustellung von Endbenutzer-E-Mails.":::
 
-- Wenn eine eingehende Nachricht EOP eingibt, durchläuft sie zunächst die Verbindungsfilterung, die die Reputation des Absenders überprüft. Der Großteil der Spamnachrichten wird zu diesem Zeitpunkt beendet und von EOP abgelehnt. Weitere Informationen finden Sie unter [Konfigurieren der Richtlinie für Verbindungsfilter](configure-the-connection-filter-policy.md).
+- Wenn eine eingehende Nachricht EOP eingibt, wird zunächst die Verbindungsfilterung durchläuft, wodurch die Reputation des Absenders überprüft wird. Der Großteil der Spamnachrichten wird zu diesem Zeitpunkt beendet und von EOP abgelehnt. Weitere Informationen finden Sie unter [Konfigurieren der Richtlinie für Verbindungsfilter](configure-the-connection-filter-policy.md).
 
 - Anschließend wird die Nachricht auf Anzeichen von Schadsoftware überprüft. Wenn in der Nachricht oder den Anlagen Schadsoftware gefunden wird, wird die Nachricht an einen Nur-Administrator-Quarantänespeicher geroutet. Weitere Informationen zum Konfigurieren von An malware finden Sie [hier.](configure-anti-malware-policies.md)
 
@@ -65,9 +65,9 @@ Die verfügbaren EOP-Abonnementpläne sind:
 
 - **EOP als eigenständige** Lösung: Sie registrieren sich bei EOP, um Ihre lokale E-Mail-Organisation zu schützen.
 
-- **EOP-Features in Exchange Online:** Jedes Abonnement, das Exchange Online (eigenständig oder als Teil von Microsoft 365) umfasst, verwendet EOP zum Schutz Ihrer Exchange Online-Postfächer.
+- **EOP-Features in Exchange Online:** Alle Abonnements, die Exchange Online (eigenständig oder als Teil von Microsoft 365) enthalten, verwenden EOP zum Schutz Ihrer Exchange Online-Postfächer.
 
-- **Exchange Enterprise CAL mit Diensten:** Wenn Sie über eine lokale Exchange-Organisation verfügen, in der Sie zusätzliche Lizenzen für Exchange Enterprise CAL mit Diensten erworben haben, ist EOP Teil der enthaltenen Dienste.
+- **Exchange Enterprise CAL mit Diensten:** Wenn Sie über eine lokale Exchange-Organisation verfügen, in der Sie zusätzliche Exchange Enterprise CAL mit Dienstlizenzen erworben haben, ist EOP Teil der enthaltenen Dienste.
 
 Informationen zu Anforderungen, wichtigen Grenzwerten und der Verfügbarkeit von Features in allen EOP-Abonnementplänen finden Sie in der [Exchange Online Protection-Dienstbeschreibung.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
 
@@ -93,7 +93,7 @@ EOP führt einen Lastenausgleich zwischen Rechenzentren aus, jedoch nur innerhal
 
   - Kanada: Exchange Online-Postfächer befinden sich in Rechenzentren in Kanada. Alle Nachrichten werden zur EOP-Filterung über lokale Rechenzentren geroutet. Isolierte Nachrichten werden in dem Datencenter gespeichert, in dem sich der Mandant befindet.
 
-  - USA: Exchange Online-Postfächer befinden sich in US-Rechenzentren. Alle Nachrichten werden zur EOP-Filterung über lokale Rechenzentren geroutet. Isolierte Nachrichten werden in dem Datencenter gespeichert, in dem sich der Mandant befindet.
+  - Usa: Exchange Online-Postfächer befinden sich in US-Rechenzentren. Alle Nachrichten werden zur EOP-Filterung über lokale Rechenzentren geroutet. Isolierte Nachrichten werden in dem Datencenter gespeichert, in dem sich der Mandant befindet.
 
 - Alle Exchange Online-Postfächer für die Government Community Cloud (GCC) befinden sich in US-Rechenzentren, und alle Nachrichten werden zur EOP-Filterung über US-Rechenzentren geleitet.
 
@@ -115,9 +115,9 @@ Der Hilfeinhalt für EOP-Administratoren umfasst die folgenden übergeordneten K
 
 - [Bewährte Methoden zum Konfigurieren von EOP:](best-practices-for-configuring-eop.md)Beschreibt empfohlene Konfigurationseinstellungen und Überlegungen nach dem Einrichten und Bereitstellen des Diensts.
 
-- [Überwachungsberichte in EOP als eigenständige](auditing-reports-in-eop.md)Lösung: Beschreibt, wie Überwachungsberichte zum Nachverfolgen von Konfigurationsänderungen am Dienst verwendet werden.
+- [Überwachungsberichte in eigenständigem EOP:](auditing-reports-in-eop.md)Beschreibt, wie Überwachungsberichte zum Nachverfolgen von Konfigurationsänderungen am Dienst verwendet werden.
 
-- [Antispam-](anti-spam-and-anti-malware-protection.md)und Ansoftwareschutz in EOP: Beschreibt die Spamfilterung und die Schadsoftwarefilterung und zeigt, wie sie an die Anforderungen Ihrer Organisation angepasst werden. Beschreibt außerdem Aufgaben, die Administratoren und Endbenutzer für isolierte Nachrichten ausführen können.
+- [Antispam- und](anti-spam-and-anti-malware-protection.md)Ansoftwareschutz in EOP: Beschreibt die Spam- und Schadsoftwarefilterung und zeigt, wie sie an die Anforderungen Ihrer Organisation angepasst werden. Beschreibt auch Aufgaben, die Administratoren und Endbenutzer für isolierte Nachrichten ausführen können.
 
 - [Berichterstellung und Nachrichtenverfolgung in Exchange Online Protection:](reporting-and-message-trace-in-exchange-online-protection.md)Beschreibt die verfügbaren Berichte und Problembehandlungstools.
 

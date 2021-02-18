@@ -18,19 +18,19 @@ description: Administratoren können erfahren, wie Sie Spam an Junk-E-Mail-Ordne
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 926ac6dec33bf00fc8f0dcd292229e20ccc2b93f
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: b8fbc1b065e348f759806d80fd85421eb9d66098
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167119"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288873"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Konfigurieren von EOP für die Bereitstellung von Spam an den Junk-E-Mail-Ordner in Hybridumgebungen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
--  [Exchange Online Protection als eigenständige Lösung](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection als eigenständige Lösung](exchange-online-protection-overview.md)
 
 > [!IMPORTANT]
 > Dieses Thema ist nur für Kunden mit eigenständigem EOP in Hybridumgebungen geeignet. Dieses Thema gilt nicht für Microsoft 365-Kunden mit Exchange Online-Postfächern.
@@ -41,9 +41,9 @@ Insbesondere müssen Sie Nachrichtenflussregeln (auch als Transportregeln bekann
 
 - `X-Forefront-Antispam-Report: SFV:SPM` (Nachricht, die von der Spamfilterung als Spam gekennzeichnet wurde)
 
-- `X-Forefront-Antispam-Report: SFV:SKS` (Nachricht, die von Nachrichtenflussregeln in EOP vor der Spamfilterung als Spam gekennzeichnet wurde)
+- `X-Forefront-Antispam-Report: SFV:SKS` (nachricht marked as spam by mail flow rules in EOP before spam filtering)
 
-- `X-Forefront-Antispam-Report: SFV:SKB` (Nachricht, die von der Spamfilterung als Spam gekennzeichnet wurde, weil die E-Mail-Adresse oder E-Mail-Domäne des Absenders in der Liste der blockierten Absender oder der Liste blockierter Domänen in EOP enthalten ist)
+- `X-Forefront-Antispam-Report: SFV:SKB` (Nachricht, die von der Spamfilterung als Spam gekennzeichnet wurde, weil die E-Mail-Adresse oder E-Mail-Domäne des Absenders in der Liste blockierter Absender oder der Liste blockierter Domänen in EOP enthalten ist)
 
 Weitere Informationen zu diesen Kopfzeilenwerten finden Sie unter ["Antispam-Nachrichtenkopfzeilen".](anti-spam-message-headers.md)
 
@@ -72,7 +72,7 @@ In diesem Thema wird beschrieben, wie Sie diese Nachrichtenflussregeln im Exchan
 
   - [Nachrichtenflussregeln in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rules)
 
-  - [Nachrichtenflussregelbedingungen und Ausnahmen (Prädikate) in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/conditions-and-exceptions)
+  - [Nachrichtenflussregelbedingungen und -ausnahmen (Prädikate) in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
   - [Nachrichtenflussregelaktionen in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/actions)
 
@@ -96,13 +96,13 @@ In diesem Thema wird beschrieben, wie Sie diese Nachrichtenflussregeln im Exchan
 
    - **Wenden Sie diese Regel an, wenn**: Select **A message header** includes any of these \> **words**.
 
-     Gehen Sie **in der Kopfzeile "Text eingeben"** mit dem angezeigten Satz "Wörter eingeben" wie folgt vor:
+     In the **Enter text header includes Enter words** sentence that appears, do the following steps:
 
      - Klicken Sie **auf "Text eingeben".** Geben Sie **im angezeigten** Dialogfeld "Kopfzeilennamen angeben" **X-Forefront-Antispam-Report** ein, und klicken Sie dann auf **OK.**
 
      - Klicken **Sie auf "Wörter eingeben".** Geben  Sie im angezeigten Dialogfeld "Wörter oder Ausdrücke angeben" einen der EOP-Spamheaderwerte (**SFV:SPM**, **SFV:SKS** oder **SFV:SKB)** ein, klicken Sie auf "Hinzufügen" (Symbol) und dann auf  ![ ](../../media/ITPro-EAC-AddIcon.png) **"OK".**
 
-   - **Gehen Sie wie folgt vor:** Wählen **Sie "Nachrichteneigenschaften** \> **ändern" aus, um die SCL (Spam Confidence Level) zu setzen.**
+   - **Gehen Sie wie folgt vor:** Wählen **Sie "Nachrichteneigenschaften** \> **ändern" aus, um die SCL (Spam Confidence Level) zu festlegen.**
 
      Wählen Sie **im angezeigten Dialogfeld "SCL** angeben" **die Option 6** aus (der Standardwert ist **5**).
 

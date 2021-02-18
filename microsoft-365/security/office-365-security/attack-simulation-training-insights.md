@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Administratoren können erfahren, wie sich die Schulung zur Angriffssimulation im Microsoft 365 Security Center auf Die Mitarbeiter auswirkt und einblicke aus Simulations- und Schulungsergebnissen gewinnen kann.
 ms.technology: mdo
-ms.openlocfilehash: b7fd414cc355e768077198eb5215720c4d4a9444
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 43319089f604d32bf295392dd223cf65af8bd4be
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49933066"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288657"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Gewinnen Sie Erkenntnisse durch Angriffssimulationsschulungen
 
@@ -32,7 +32,7 @@ Auf der **Registerkarte "Übersicht"** des Angriffssimulationstrainings finden S
 Im Diagramm sehen Sie:
 
 - **Vorhergesagte Kompromissrate,** die die durchschnittliche Kompromissrate für Simulationen mit der gleichen Nutzlast für andere Microsoft 365-Mandanten widerspiegelt, die Attack Simulation Training verwenden.
-- **Die tatsächliche Compromise Rate** gibt den Prozentsatz der Mitarbeiter an, die für die Simulation stürzten.
+- **Die tatsächliche Compromise Rate** gibt den Prozentsatz der Mitarbeiter an, die für die Simulation anfingen.
 
 Darüber hinaus wird der Unterschied zwischen der tatsächlichen Anzahl der durch den Angriff gefährdeten Mitarbeiter und der `<number> less susceptible to phishing` vorhergesagten Kompromissrate widersprobiert. Diese Anzahl von Mitarbeitern ist in Zukunft weniger wahrscheinlich durch ähnliche Angriffe gefährdet, während sie im Gegensatz zur vorhergesagten Kompromissrate angibt, wie die Mitarbeiter insgesamt `<percent%> better than predicted rate` waren.
 
@@ -45,7 +45,7 @@ Klicken Sie zum Anzeigen eines detaillierten Berichts auf **"Simulationen anzeig
 
 Auf der [ **Registerkarte "Simulationen"**](https://security.microsoft.com/attacksimulator?viewid=simulations)werden Sie durch Auswählen einer Simulation zu den Simulationsdetails, wo Sie den Abschnitt "Empfohlene **Aktionen"** finden.
 
-Im Abschnitt "Empfohlene Aktionen" finden Sie Details zu den Empfehlungen, die in [der Microsoft Secure Score verfügbar sind.](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) Diese Empfehlungen basieren auf der Nutzlast, die in der Simulation verwendet wird, und helfen Ihnen, Ihre Mitarbeiter und Ihre Umgebung zu schützen. Wenn Sie auf die einzelnen Verbesserungsmaßnahmen klicken, werden Sie zu den Details der jeweiligen Verbesserungsaktion kommen.
+Im Abschnitt "Empfohlene Aktionen" finden Sie Details zu den Empfehlungen, die in [der Microsoft Secure Score verfügbar sind.](../mtp/microsoft-secure-score.md) Diese Empfehlungen basieren auf der Nutzlast, die in der Simulation verwendet wird, und helfen Ihnen, Ihre Mitarbeiter und Ihre Umgebung zu schützen. Wenn Sie auf die einzelnen Verbesserungsmaßnahmen klicken, werden Sie zu den Details der jeweiligen Verbesserungsaktion auf dem Konto f?2013 f?nen.
 
 > [!div class="mx-imgBorder"]
 > ![Abschnitt "Empfehlungsaktionen" zum Training zur Angriffssimulation](../../media/attack-sim-preview-recommended-actions.png)

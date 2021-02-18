@@ -15,19 +15,19 @@ ms.custom:
 description: In diesem Artikel erfahren Sie, wie Sie PowerShell verwenden, um Konfigurationseinstellungen auf Ihre Mandanten in Microsoft Exchange Online Protection (EOP) anzuwenden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b7d856a7cec3bddc32455ba3afadf0323ddce935
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 4823ed09cd8a9d72aef21df3d51213cb4512b4f9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166591"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288537"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Beispielskript für das Anwenden von EOP-Einstellungen für mehrere Mandanten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
--  [Exchange Online Protection als eigenständige Lösung](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection als eigenständige Lösung](exchange-online-protection-overview.md)
 
 Mit dem folgenden Beispielskript können Microsoft Exchange Online Protection (EOP)-Administratoren, die mehrere Mandanten (Unternehmen) verwalten, Exchange Online PowerShell zum Anzeigen und/oder Anwenden von Konfigurationseinstellungen auf ihre Mandanten verwenden.
 
@@ -48,7 +48,7 @@ Mit dem folgenden Beispielskript können Microsoft Exchange Online Protection (E
    admin@fabrikam.onmicrosoft.com,Get-AcceptedDomain | FT Name
    ```
 
-3. Speichern Sie die .csv-Datei an einem leicht zu findenen Speicherort (z. B. c:\scripts\inputfile.csv).
+3. Speichern Sie die CSV-Datei an einem leicht zu findenen Speicherort (z. B. c:\scripts\inputfile.csv).
 
 4. Kopieren Sie [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) Skript in Editor, und speichern Sie die Datei an einem leicht zu findenen Speicherort (z. B. c:\scripts).
 
@@ -64,7 +64,7 @@ Mit dem folgenden Beispielskript können Microsoft Exchange Online Protection (E
    & "c:\scripts\RunCmdletOnMultipleTenants.ps1" "c:\scripts\inputfile.csv"
    ```
 
-6. Jeder Mandant wird angemeldet, und das Skript wird ausgeführt.
+6. Jeder Mandant ist angemeldet, und das Skript wird ausgeführt.
 
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 

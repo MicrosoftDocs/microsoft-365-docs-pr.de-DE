@@ -19,27 +19,27 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie isolierte Nachrichten für alle Benutzer in Exchange Online Protection (EOP) anzeigen und verwalten. Administratoren in Organisationen mit Microsoft Defender für Office 365 können auch isolierte Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams verwalten.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a91f53f8efe4fa6944f0debff472da87b7f17e0c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 22bcf0cefb746e92ccadf8254f4076b47ee475c4
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167491"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287785"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder in eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer, enthält die Quarantäne potenziell gefährliche oder unerwünschte Nachrichten. Weitere Informationen finden Sie unter ["Isolierte E-Mail-Nachrichten" in EOP.](quarantine-email-messages.md)
 
 Administratoren können alle Arten von isolierten Nachrichten für alle Benutzer anzeigen, los lassen und löschen. Nur Administratoren können Nachrichten verwalten, die als Schadsoftware, Phishing mit hoher Sicherheit oder als Folge von Nachrichtenflussregeln (auch als Transportregeln bekannt) isoliert wurden. Administratoren können auch falsch positive Ergebnisse an Microsoft melden.
 
-Administratoren in Organisationen mit Microsoft Defender für Office 365 können unter Quarantäne gestellte Dateien auch in SharePoint Online, OneDrive for Business und Microsoft Teams anzeigen, herunterladen und löschen.
+Administratoren in Organisationen mit Microsoft Defender für Office 365 können auch isolierte Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams anzeigen, herunterladen und löschen.
 
 Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerShell anzeigen und verwalten (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online-Postfächer).
 
@@ -57,7 +57,7 @@ Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerS
 
   **Hinweise**:
 
-  - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
   - <sup>\*</sup> Mitglieder der Rollengruppe **"Quarantäneadministrator"** müssen auch Mitglieder der Rollengruppe **"Verwaltung** von Nachrichtenschutz" in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) sein, um Quarantäneverfahren in Exchange Online PowerShell ausführen zu können.
 
@@ -168,11 +168,11 @@ Wenn Sie eine E-Mail-Nachricht in der Liste auswählen, werden die folgenden Nac
 
 ### <a name="take-action-on-quarantined-email"></a>Maßnahmen für isolierte E-Mails ergreifen
 
-Nachdem Sie eine Nachricht ausgewählt haben, haben Sie im Flyoutbereich **"Details"** mehrere Möglichkeiten, wie sie mit den Nachrichten verwendet werden sollen:
+Nachdem Sie eine Nachricht ausgewählt haben, haben Sie im Flyoutbereich **"Details"** mehrere Möglichkeiten, wie sie mit den Nachrichten um gehen sollen:
 
 - **Veröffentlichungsnachricht:** Wählen Sie im angezeigten Flyoutbereich die folgenden Optionen aus:
 
-  - **Nachrichten zur Analyse** an Microsoft melden: Diese Option ist standardmäßig ausgewählt und meldet die fälschlicherweise isolierte Nachricht an Microsoft als falsch positives Ergebnis. Wenn die Nachricht als Spam, Massen-E-Mail, Phishing oder mit Schadsoftware isoliert wurde, wird die Nachricht auch dem Microsoft Spam Analysis Team gemeldet. Je nach Analyse werden möglicherweise die dienstweiten Spamfilterregeln angepasst, um die Nachricht zu ermöglichen.
+  - **Nachrichten zur Analyse** an Microsoft melden: Diese Option ist standardmäßig ausgewählt und meldet die fälschlicherweise isolierte Nachricht an Microsoft als falsch positives Ergebnis. Wenn die Nachricht als Spam, Massen-, Phishing- oder Schadsoftware isoliert wurde, wird die Nachricht auch dem Microsoft Spam Analysis Team gemeldet. Je nach Analyse werden die dienstweiten Spamfilterregeln möglicherweise angepasst, um die Nachricht zu durchf?sten.
 
   - Wählen Sie eine der folgenden Optionen aus:
     - **Nachrichten für alle Empfänger frei geben**
@@ -218,7 +218,7 @@ Wenn Sie mehrere isolierte Nachrichten in der Liste auswählen (bis zu 100), ers
 - **Nachrichten freigeben**: Die Optionen sind die gleichen wie bei der Freigabe einer einzelnen Nachricht, außer dass Sie nicht **Nachrichten an bestimmte Empfänger freigeben** auswählen können; Sie können nur **Nachricht an alle Empfänger freigeben** oder **Nachrichten an andere Personen freigeben** auswählen.
 
   > [!NOTE]
-  > Betrachten Sie das folgende Szenario: john@gmail.com sendet eine Nachricht an faith@contoso.com und john@subsidiary.contoso.com. Gmail verengt diese Nachricht in zwei Kopien, die beide als Phishing in Microsoft in Quarantäne verschoben werden. Ein Administrator gibt beide dieser Nachrichten für die admin@contoso.com. Die erste veröffentlichte Nachricht, die das Administratorpostfach erreicht, wird zugestellt. Die zweite freigegebene Nachricht wird als doppelte Zustellung identifiziert und übersprungen. Die Nachricht wird als Duplikate identifiziert, wenn sie dieselbe Nachrichten-ID und die gleiche Empfangenszeit haben.
+  > Betrachten Sie das folgende Szenario: john@gmail.com sendet eine Nachricht an faith@contoso.com und john@subsidiary.contoso.com. Gmail verengt diese Nachricht in zwei Kopien, die beide als Phishing in Microsoft in Quarantäne verschoben werden. Ein Administrator gibt beide dieser Nachrichten für die admin@contoso.com. Die erste freigegebene Nachricht, die das Administratorpostfach erreicht, wird zugestellt. Die zweite freigegebene Nachricht wird als doppelte Zustellung identifiziert und übersprungen. Die Nachricht wird als Duplikate identifiziert, wenn sie dieselbe Nachrichten-ID und die gleiche Empfangenszeit haben.
 
 - **Nachrichten löschen:** Nachdem Sie **in** der angezeigten Warnung auf "Ja" geklickt haben, werden die Nachrichten sofort gelöscht, ohne an die ursprünglichen Empfänger gesendet zu werden.
 
@@ -227,11 +227,11 @@ Klicken Sie nach Abschluss des Vorgangs auf **Schließen**.
 ## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>Nur Microsoft Defender für Office 365: Verwenden des Security & Compliance Center zum Verwalten von Isolierten Dateien
 
 > [!NOTE]
-> Die Verfahren für isolierte Dateien in diesem Abschnitt sind nur für Abonnenten von Microsoft Defender für Office 365 Plan 1 und Plan 2 verfügbar.
+> Die Verfahren für isolierte Dateien in diesem Abschnitt sind nur für Microsoft Defender für Office 365 Plan 1- und Plan 2-Abonnenten verfügbar.
 
 In Organisationen mit Defender für Office 365 können Administratoren Dateien in Quarantäne in SharePoint Online, OneDrive for Business und Microsoft Teams verwalten. Informationen zum Aktivieren des Schutzes für diese Dateien finden Sie unter ["Aktivieren sicherer Anlagen für SharePoint, OneDrive und Microsoft Teams".](turn-on-atp-for-spo-odb-and-teams.md)
 
-### <a name="view-quarantined-files"></a>Anzeigen von isolierten Dateien
+### <a name="view-quarantined-files"></a>Anzeigen von Isolierten Dateien
 
 1. Wechseln Sie im Security and Compliance Center zu **Bedrohungsmanagement** \> **Überprüfung** \> **Quarantäne**.
 
@@ -260,7 +260,7 @@ In Organisationen mit Defender für Office 365 können Administratoren Dateien i
    - **Quarantänegrund:** Der einzige verfügbare Wert ist **Schadsoftware.**
    - **Richtlinientyp**
 
-Nachdem Sie eine bestimmte isolierte Datei finden, wählen Sie die Datei aus, um Details dazu anzuzeigen und Maßnahmen dafür zu ergreifen (z. B. Anzeigen, Veröffentlichen, Herunterladen oder Löschen der Nachricht).
+Nachdem Sie eine bestimmte isolierte Datei finden, wählen Sie die Datei aus, um Details zu dieser Datei anzuzeigen und Maßnahmen dafür zu ergreifen (z. B. Anzeigen, Veröffentlichen, Herunterladen oder Löschen der Nachricht).
 
 #### <a name="view-quarantined-file-details"></a>Anzeigen von Details zu isolierten Dateien
 
@@ -268,7 +268,7 @@ Wenn Sie eine Datei in der Liste auswählen, werden die folgenden Dateidetails i
 
 - **Dateiname**
 - **Datei-URL:** URL, die den Speicherort der Datei definiert (z. B. in SharePoint Online).
-- **Schadsoftware, auf deren** Datum/Uhrzeit der Quarantäne der Datei.
+- **Schadsoftware, die auf** Datum/Uhrzeit der Quarantäne der Datei.
 - **Läuft ab:** Das Datum, an dem die Datei aus der Quarantäne gelöscht wird.
 - **Erkannt von:** Defender für Office 365 oder das Ansoftwaremodul von Microsoft.
 - **Veröffentlicht?**
@@ -288,7 +288,7 @@ Wenn Sie eine Datei in der Liste auswählen, können Sie im Flyoutbereich **"Det
 - **Datei herunterladen**
 - **Entfernen einer Datei aus der Quarantäne**
 
-Wenn Sie die Dateien nicht freigegeben oder entfernen, werden sie nach Ablauf des standardmäßigen Quarantäneaufbewahrungszeitraums gelöscht.
+Wenn Sie die Dateien nicht los lassen oder entfernen, werden sie nach Ablauf des standardmäßigen Quarantäneaufbewahrungszeitraums gelöscht.
 
 #### <a name="actions-on-multiple-quarantined-files"></a>Aktionen für mehrere isolierte Dateien
 

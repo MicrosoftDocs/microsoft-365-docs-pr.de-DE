@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines neuen Themas in Microsoft -Themen
+title: Erstellen eines neuen Themas in Microsoft Topics
 description: Erstellen eines neuen Themas in Microsoft Topics.
 author: efrene
 ms.author: efrene
@@ -14,19 +14,19 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 2b543dbc8132f261814aec45e713874971b9b5d1
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: fbdd0e9b75e92d8080d9aaf43a2d1eaa8baacbc3
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242882"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279388"
 ---
 # <a name="create-a-new-topic"></a>Ein neues Thema erstellen 
 
-In Den Themen von "Topics" können Sie ein neues Thema erstellen, wenn eines nicht durch Indizierung ermittelt wird oder wenn die KI-Technologie nicht genügend Nachweise gefunden hat, um es als Thema zu finden.
+Sie können in "Themen von Unterthemen" ein neues Thema erstellen, wenn eines nicht durch Indizierung ermittelt wird oder wenn die AI-Technologie nicht genügend Nachweise gefunden hat, um es als Thema zu erstellen.
 
 > [!Note] 
-> Während die Informationen in einem Thema, das von AI gesammelt wird, aus Sicherheitsgründen gekürzt [werden,](topic-experiences-security-trimming.md)beachten Sie, dass Informationen in einem manuell erstellten Thema für alle Benutzer sichtbar sind, die zum Anzeigen des Themas berechtigt sind. 
+> Während die Informationen in einem Thema, das von AI gesammelt wird, aus Sicherheitsgründen gekürzt [werden,](topic-experiences-security-trimming.md)beachten Sie, dass die Themenbeschreibung und Personeninformationen in einem manuell erstellten Thema für alle Benutzer sichtbar sind, die zum Anzeigen des Themas berechtigt sind. 
 
 
 ## <a name="requirements"></a>Anforderungen
@@ -46,7 +46,7 @@ Sie können ein neues Thema an zwei Stellen erstellen:
 
     ![Neues Thema aus dem Themencenter](../media/knowledge-management/new-topic.png) </br> 
 
-- Seite "Themen verwalten":  Jeder lizenzierte Benutzer mit der Berechtigung "Wer kann Themen verwalten" (Wissensverwalter) kann ein neues Thema auf der Seite "Themen verwalten" im Themencenter erstellen, indem er die Seite "Neues <b>Thema" aus wählt.</b></br> 
+- Seite "Themen verwalten":  Jeder lizenzierte Benutzer mit der Berechtigung "Wer kann Themen verwalten" (Knowledge Manager) kann ein neues Thema auf der Seite "Themen verwalten" im Themencenter erstellen, indem er die Seite "Neues <b>Thema" aus wählt.</b></br> 
 
     ![Neues Thema aus "Verwalten von Themen"](../media/knowledge-management/new-topic-topic-center.png) </br> 
 
@@ -77,12 +77,15 @@ Sie können ein neues Thema an zwei Stellen erstellen:
 
     Sie können auch die Linkoption <b>"Von"</b> verwenden, um eine Datei oder Seite hinzuzufügen, indem Sie die URL angeben. 
 
+    > [!Note] 
+    > Dateien und Seiten, die Sie hinzufügen, müssen sich im selben Microsoft 365-Mandanten befinden. Wenn Sie einen Link zu einer externen Ressource im Thema hinzufügen möchten, können Sie ihn über das Zeichenbereichssymbol in Schritt 8 hinzufügen.
 
-6.  Im <b>Abschnitt "Verwandte Websites"</b> werden Websites mit Informationen zu diesem Thema angezeigt. 
+
+6.  Im <b>Abschnitt "Verwandte Websites"</b> werden Websites mit Informationen zum Thema angezeigt. 
 
     ![Abschnitt "Verwandte Websites"](../media/knowledge-management/related-sites.png)</br>
 
-    Sie können eine verwandte <b></b> Website hinzufügen, indem Sie "Hinzufügen" auswählen und dann entweder nach der Website suchen oder sie aus der Liste der häufig verwendeten oder zuletzt verwendeten Websites auswählen.</br>
+    Sie können eine verwandte <b></b> Website hinzufügen, indem Sie "Hinzufügen" auswählen und dann entweder nach der Website suchen oder sie in der Liste der häufig verwendeten oder zuletzt verwendeten Websites auswählen.</br>
     
     ![Website auswählen](../media/knowledge-management/sites.png)</br>
 
@@ -98,8 +101,18 @@ Sie können ein neues Thema an zwei Stellen erstellen:
 
    ![Verbundene verwandte Themen](../media/knowledge-management/related-topics-final.png)</br> 
 
+   Um ein verwandtes Thema zu entfernen, wählen Sie das zu entfernende Thema aus, und wählen Sie dann das Symbol "Thema <b>entfernen"</b> aus.</br>
+ 
+   ![Entfernen eines verwandten Themas](../media/knowledge-management/remove-related.png)</br>  
 
-8. Sie können der Seite auch statische Elemente hinzufügen (z. B. Text, Bilder oder Links), indem Sie das Zeichenbereichssymbol auswählen, das Sie unterhalb der Kurzbeschreibung finden. Wenn Sie es auswählen, wird die SharePoint-Toolbox geöffnet, aus der Sie das Element auswählen können, das Sie der Seite hinzufügen möchten.
+   Wählen Sie dann <b>"Entfernen" aus.</b></br>
+
+   ![Entfernen bestätigen](../media/knowledge-management/remove-related-confirm.png)</br> 
+     
+ 
+
+
+8. Sie können der Seite auch statische Elemente hinzufügen (z. B. Text, Bilder oder Links), indem Sie das Zeichenbereichssymbol auswählen, das Sie unterhalb der kurzen Beschreibung finden. Wenn Sie es auswählen, wird die SharePoint-Toolbox geöffnet, aus der Sie das Element auswählen können, das Sie der Seite hinzufügen möchten.
 
    ![Zeichenbereichssymbol](../media/knowledge-management/webpart-library.png)</br> 
 

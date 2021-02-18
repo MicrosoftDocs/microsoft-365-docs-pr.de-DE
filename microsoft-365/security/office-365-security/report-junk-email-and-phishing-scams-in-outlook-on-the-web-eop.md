@@ -17,23 +17,23 @@ ms.collection:
 description: Administratoren können sich über die integrierten Junk-E-Mail-, nicht Junk- und Phishing-E-Mail-Berichtsoptionen in Outlook im Web (Outlook Web App) in Exchange Online informieren und erfahren, wie Sie diese Berichtsoptionen für Benutzer deaktivieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd22e7f08ae420adf2923d4da731494a0f6af3e3
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 0bd2da9b774b3557ebb820102ba86c17ebe44c69
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166735"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289221"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Melden von Junk- und Phishing-E-Mails in Outlook im Web in Exchange Online
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online können Sie die integrierten Berichtsoptionen in Outlook im Web (früher als Outlook Web App bezeichnet) verwenden, um falsch positive Ergebnisse (als Spam markierte E-Mails), falsch negative Ergebnisse (ungültige E-Mails sind zulässig) und Phishingnachrichten an Exchange Online Protection (EOP) zu übermitteln.
+In Microsoft 365-Organisationen mit Postfächern in Exchange Online können Sie die integrierten Berichtsoptionen in Outlook im Web (früher als Outlook Web App bezeichnet) verwenden, um falsch positive Ergebnisse (gute E-Mails als Spam gekennzeichnet), falsch negative Ergebnisse (ungültige E-Mails sind zulässig) und Phishingnachrichten an Exchange Online Protection (EOP) zu übermitteln.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -53,9 +53,9 @@ In Microsoft 365-Organisationen mit Postfächern in Exchange Online können Sie 
 
      ![Melden von Junk- oder Phishing-E-Mails über das Menüband](../../media/owa-report-junk.png)
 
-   - Wählen Sie eine oder mehrere Nachrichten aus, klicken Sie mit der rechten Maustaste, und wählen **Sie dann "Als Junk markieren" aus.**
+   - Wählen Sie eine oder mehrere Nachrichten aus, klicken Sie mit der rechten Maustaste, und wählen Sie **dann "Als Junk markieren" aus.**
 
-2. Klicken Sie im angezeigten Dialogfeld auf **"Bericht".** Wenn Sie Ihre Meinung ändern, klicken Sie auf **"Nicht melden"**.
+2. Klicken Sie im angezeigten Dialogfeld auf **Bericht**. Wenn Sie Ihre Meinung ändern, klicken Sie auf **"Nicht melden".**
 
    |Junk-E-Mail|Phishing-E-Mail|
    |:---:|:---:|
@@ -67,7 +67,7 @@ In Microsoft 365-Organisationen mit Postfächern in Exchange Online können Sie 
 
 1. Verwenden Sie im Junk-E-Mail-Ordner eine der folgenden Methoden, um falsch positive Spam- oder Phishingnachrichten zu melden:
 
-   - Wählen Sie die Nachricht aus, klicken Sie auf der Symbolleiste auf "Nicht **Junk",** und wählen Sie dann **"Nicht Junk"** oder **"Phishing" aus.**
+   - Wählen Sie die Nachricht aus, klicken Sie auf der Symbolleiste auf "Kein **Junk",** und wählen Sie dann **"Kein Junk"** oder **"Phishing" aus.**
 
      ![Melden sie keine Junk-E-Mails oder keine Phishing-E-Mails aus dem Menüband.](../../media/owa-report-not-junk.png)
 
@@ -83,17 +83,17 @@ In Microsoft 365-Organisationen mit Postfächern in Exchange Online können Sie 
 
 ## <a name="disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>Deaktivieren oder Aktivieren der Junk-E-Mail-Berichterstellung in Outlook im Web
 
-Standardmäßig können Benutzer Falsch positive Spamnachrichten, falsch negative Ergebnisse und Phishingnachrichten zur Analyse in Outlook im Web an Microsoft melden. Administratoren können Outlook im Web-Postfachrichtlinien in Exchange Online PowerShell konfigurieren, um zu verhindern, dass Benutzer falsch positive Spam- und Spam-Negative an Microsoft melden. Sie können die Möglichkeit für Benutzer, Phishingnachrichten an Microsoft zu melden, nicht deaktivieren.
+Standardmäßig können Benutzer Falsch positive Spamnachrichten, falsch negative Ergebnisse und Phishingnachrichten zur Analyse in Outlook im Web an Microsoft melden. Administratoren können Outlook im Web-Postfachrichtlinien in Exchange Online PowerShell konfigurieren, um zu verhindern, dass Benutzer falsch positive Spam- und Spam-E-Mails an Microsoft melden. Sie können die Möglichkeit für Benutzer, Phishingnachrichten an Microsoft zu melden, nicht deaktivieren.
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in Exchange Online die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rollen **"Empfängerrichtlinien"** oder "E-Mail-Empfänger", die standardmäßig den Rollengruppen "Organisationsverwaltung" und  "Empfängerverwaltung" zugewiesen sind.   Weitere Informationen zu Rollengruppen in Exchange Online finden Sie unter Berechtigungen [in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) und Ändern von [Rollengruppen in Exchange Online.](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)
+- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in Exchange Online die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rollen **"Empfängerrichtlinien"** oder **"E-Mail-Empfänger",** die standardmäßig den Rollengruppen "Organisationsverwaltung" und "Empfängerverwaltung" zugewiesen sind.   Weitere Informationen zu Rollengruppen in Exchange Online finden Sie unter Berechtigungen [in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) und Ändern von [Rollengruppen in Exchange Online.](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)
 
 - Jede Organisation verfügt über eine Standardrichtlinie mit dem Namen "OwaMailboxPolicy-Default", aber Sie können benutzerdefinierte Richtlinien erstellen. Benutzerdefinierte Richtlinien werden vor der Standardrichtlinie auf benutzerbereichsspezifische Benutzer angewendet. Weitere Informationen zu Outlook im Web-Postfachrichtlinien finden Sie unter [Outlook im Web-Postfachrichtlinien in Exchange Online.](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies)
 
-- Durch das Deaktivieren der Junk-E-Mail-Berichterstellung wird die Möglichkeit, eine Nachricht in Outlook im Web als Junk oder nicht als Junk zu kennzeichnen, nicht entfernt. Wenn Sie eine Nachricht im Junk-E-Mail-Ordner auswählen und auf "Nicht  \> **Junk-E-Mail"** klicken, wird die Nachricht wieder in den Posteingang verschoben. Wenn Sie eine Nachricht in einem anderen E-Mail-Ordner auswählen und auf **"Junk-Junk"** klicken, wird die Nachricht weiterhin \>  in den Junk-E-Mail-Ordner verschoben. Nicht mehr verfügbar ist die Option, die Nachricht an Microsoft zu melden.
+- Durch das Deaktivieren der Junk-E-Mail-Berichterstellung wird die Möglichkeit, eine Nachricht in Outlook im Web als Junk oder nicht als Junk zu kennzeichnen, nicht entfernt. Wenn Sie eine Nachricht im Junk-E-Mail-Ordner auswählen und auf "Nicht  \> **Junk-E-Mail"** klicken, wird die Nachricht wieder in den Posteingang verschoben. Wenn Sie eine Nachricht in einem  anderen E-Mail-Ordner auswählen und auf Junk-Junk-E-Mail klicken, wird die Nachricht weiterhin \>  in den Junk-E-Mail-Ordner verschoben. Nicht mehr verfügbar ist die Option, die Nachricht an Microsoft zu melden.
 
 ### <a name="use-exchange-online-powershell-to-disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>Verwenden von Exchange Online PowerShell zum Deaktivieren oder Aktivieren der Junk-E-Mail-Berichterstellung in Outlook im Web
 

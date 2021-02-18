@@ -19,21 +19,21 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8dd7a90255fdd3e083a5d7306cac2e9ca6411024
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: d37fb232b717485c40218fd8a3c3117ba9b8322b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150183"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287641"
 ---
 # <a name="security-incident-response"></a>Reaktion auf Sicherheitsvorfälle
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
  **Zusammenfassung:** Diese Lösung teilt Ihnen mit, welche Indikatoren für die häufigsten Cybersicherheitsangriffe in Office 365 stehen, wie Sie jeden Angriff bestätigen und wie Sie darauf reagieren.
 

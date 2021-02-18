@@ -19,12 +19,12 @@ description: Erfahren Sie mehr über Abhilfemaßnahmen bei automatisierten Unter
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: 3fb77fa41ff3e9af995cf80b9f4024aa92a51212
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: a11e9ee6a4c2426951fe2b4aa4f2dd08d1931f1c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176015"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287113"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Überprüfen und Verwalten von Wartungsaktionen in Office 365
 
@@ -37,8 +37,8 @@ Da automatisierte Untersuchungen von E-mail-& zusammenarbeitsinhalten  zu Bekün
 Diese Abhilfemaßnahmen werden erst dann ergriffen, wenn sie vom Sicherheitsteam genehmigt werden. Es wird empfohlen, alle ausstehenden Aktionen so bald wie möglich zu überprüfen und zu genehmigen, damit Ihre automatisierten Untersuchungen zeitnah abgeschlossen werden. In einigen Fällen können Sie eine Korrekturaktion rückgängig machen.
 
 **Gilt für**
-- [Microsoft Defender für Office 365 Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender für Office 365 – Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 ## <a name="approve-or-reject-pending-actions"></a>Genehmigen (oder Ablehnen) ausstehender Aktionen
 
@@ -74,6 +74,6 @@ Diese Abhilfemaßnahmen werden erst dann ergriffen, wenn sie vom Sicherheitsteam
 - [Verwenden des Bedrohungs-Explorers](threat-explorer.md)
 - [So melden Sie falsch positive/negative Ergebnisse in automatisierten Untersuchungs- und Reaktionsfunktionen](air-report-false-positives-negatives.md)
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Siehe auch
 
 - [Anzeigen von Details und Ergebnissen einer automatisierten Untersuchung in Office 365](air-view-investigation-results.md)

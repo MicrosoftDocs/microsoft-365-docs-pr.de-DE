@@ -17,27 +17,29 @@ ms.collection:
 description: Administratoren können sich über die integrierten Junk-E-Mail-, nicht Junk- und Phishing-E-Mail-Berichtsoptionen in Outlook für iOS und Android informieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 58027f7589280b1266cddc8cfbf44db9e4f0ece4
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e3e3a2d77c978649e7496d09f78301add397fb9d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166819"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289173"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Melden von Junk- und Phishing-E-Mails in Outlook für iOS und Android in Exchange Online
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange [](https://docs.microsoft.com/microsoft-365/enterprise/hybrid-modern-auth-overview)Online oder lokalen Postfächern mit moderner Hybridauthentifizierung können Sie die integrierten Berichtsoptionen in Outlook für iOS und Android verwenden, um falsch positive Ergebnisse (als Spam markierte E-Mails), falsch negative Ergebnisse (ungültige E-Mails sind zulässig) und Phishingnachrichten an Exchange Online Protection (EOP) zu übermitteln.
+In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder lokalen Postfächern, die moderne Hybridauthentifizierung [verwenden,](../../enterprise/hybrid-modern-auth-overview.md)können Sie die integrierten Berichtsoptionen in Outlook für iOS und Android verwenden, um falsch positive Ergebnisse (gute E-Mails, die als Spam gekennzeichnet sind), falsch negative Ergebnisse (ungültige E-Mails sind zulässig) und Phishingnachrichten an Exchange Online Protection (EOP) zu übermitteln.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was müssen Sie wissen, bevor Sie beginnen
 
-- Wenn Sie ein Administrator in einer Organisation mit Exchange Online-Postfächern sind, empfehlen wir die Verwendung des Übermittlungsportals im Security & Compliance Center. Weitere Informationen finden Sie unter "Use Admin Submission", um verdächtige [Spam-, Phishing-, URLs-](admin-submission.md)und Dateien an Microsoft zu übermitteln.
+- Für eine optimale Benutzerübermittlung empfehlen wir die Verwendung der Add-Ins "Nachricht melden" und "Phishing melden". Weitere Informationen finden Sie unter "Aktivieren [des Berichtsnachrichten-Add-Ins"](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in) und ["Aktivieren des Phishing-Add-Ins".](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-phish-add-in)
+
+- Wenn Sie ein Administrator in einer Organisation mit Exchange Online-Postfächern sind, empfehlen wir die Verwendung des Übermittlungsportals im Security & Compliance Center. Weitere Informationen finden Sie unter ["Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft ".](admin-submission.md)
 
 - Sie können gemeldete Nachrichten so konfigurieren, dass sie kopiert oder an ein von Ihnen festgelegtes Postfach umgeleitet werden. Weitere Informationen finden Sie unter [Benutzerübermittlungsrichtlinien.](user-submission.md)
 
@@ -45,35 +47,3 @@ In Microsoft 365-Organisationen mit Postfächern in Exchange [](https://docs.mic
 
   > [!NOTE]
   > Wenn die Junk-E-Mail-Berichterstellung für Outlook in der Benutzerübermittlungsrichtlinie deaktiviert ist, werden Junk- oder Phishingnachrichten in den Junk-E-Mail-Ordner verschoben und nicht an Ihren Administrator oder Microsoft gemeldet.
-
-## <a name="report-spam-and-phishing-messages-in-outlook-for-ios-and-android"></a>Melden von Spam- und Phishingnachrichten in Outlook für iOS und Android
-
-Verwenden Sie für Nachrichten im Posteingang oder einem anderen E-Mail-Ordner mit Ausnahme von Junk-E-Mail die folgenden Schritte, um Spam- und Phishingnachrichten für iOS und Android zu melden:
-
-1. Wählen Sie eine oder mehrere Nachrichten aus.
-2. Tippen Sie in der oberen rechten Ecke auf die drei vertikalen Punkte. Das Aktionsmenü wird geöffnet.
-
-   ![Melden von Junk- oder Phishing-E-Mails aus dem Aktionsmenü](../../media/Android-report-as-junk-dialog.png)
-
-3. Tippen **Sie auf Junk-E-Mails** melden, und wählen Sie dann **Junk oder** **Phishing aus.**
-
-   ![Melden von Junk- oder Phishing-E-Mails](../../media/Android-report-junk-or-phishing.png)
-
-4. Im angezeigten Dialogfeld können  Sie "Bericht" oder **"Nein Dank" auswählen.** Wenn Sie **"Nein Danke"** auswählen, wird die Nachricht beim Tippen auf **"Junk"** in den Junk-E-Mail-Ordner verschoben, wenn Sie auf **Phishing** tippen, wird die Nachricht in den Ordner "Gelöschte Elemente" verschoben. Wählen **Sie "Bericht"** aus, um auch eine Kopie der Nachricht an Microsoft zu senden.
-
-   ![Melden von Junk- oder Phishing-E-Mail-Berichtsoptionen](../../media/Android-junk-email-reporting-options.png)
-
-Wenn Sie Ihre Meinung ändern, wählen Sie **"Rückgängig"** in der angezeigten Popupbenachrichtigung aus. Die Nachricht verbleibt im Ordner "Posteingang".
-
-## <a name="report-non-spam-messages-from-the-junk-folder-in-outlook-for-ios-and-android"></a>Melden von Nichtspamnachrichten aus dem Junk-E-Mail-Ordner in Outlook für iOS und Android
-
-Verwenden Sie im Junk-E-Mail-Ordner die folgenden Schritte, um falsch positive Spamnachrichten zu melden:
-
-1. Wählen Sie eine oder mehrere Nachrichten aus.
-2. Tippen Sie in der oberen rechten Ecke auf die drei vertikalen Punkte. Das Aktionsmenü wird geöffnet.
-
-   ![Melden von Junk-E-Mails aus dem Aktionsmenü](../../media/Android-not-junk-email.png)
-
-3. Tippen Sie **auf "Kein Junk".**
-
-Es wird eine Popupbenachrichtigung angezeigt, dass die E-Mail in Ihren Posteingang verschoben wurde. Wenn Sie Ihre Meinung ändern, wählen Sie **"Rückgängig"** in der Popupbenachrichtigung aus. Die E-Mail verbleibt im Junk-Ordner.

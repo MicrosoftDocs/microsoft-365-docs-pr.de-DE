@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Stellen Sie eine Verbindung mit Ihrem Microsoft 365-Mandanten mithilfe von PowerShell für Microsoft 365 her, um Admin Center-Aufgaben über die Befehlszeile auszuführen.
-ms.openlocfilehash: 33f9af45418ae8a1f126d2b321e7246201bd1f6e
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 0691304a2d40f7ae4262e6761902f16b4f6d5ee2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002405"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288113"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Verbinden mit Microsoft 365 über PowerShell
 
@@ -117,7 +117,7 @@ Das Microsoft Azure Active Directory-Modul für Windows PowerShell-Modul und Cmd
 
 Diese Schritte sind nur einmal auf Ihrem Computer erforderlich. Sie müssen die Software aber wahrscheinlich regelmäßig aktualisieren.
   
-1.  Wenn Sie nicht Windows 10 ausführen, installieren Sie die 64-Bit-Version des Microsoft Online Services-Anmeldeassistenten: [Microsoft Online Services-Anmeldeassistent für IT-Experten RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152).
+1.  Wenn Sie nicht Windows 10 ausführen, installieren Sie die 64-Bit-Version des Microsoft Online Services-Anmeldeassistenten: [Microsoft Online Services-Anmeldeassistent für IT-Experten RTW](https://www.microsoft.com/Download/details.aspx?id=28177).
     
 2. Installieren Sie das Microsoft Azure Active Directory-Modul für Windows PowerShell mit den folgenden Schritten:
     

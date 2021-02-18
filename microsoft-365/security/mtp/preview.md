@@ -20,45 +20,52 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9156025990e8da61006ac1d3b81a71be5580e00c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1636b1deb5f35d8286b33238a8f4bbfff0b33521
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167383"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288125"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender –Vorschaufeatures
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->[!IMPORTANT]
->Die Vorschauversionen werden ohne Vereinbarung zum Servicelevel bereitgestellt und werden für Produktionsarbeitslasten nicht empfohlen. Bestimmte Features werden möglicherweise nicht unterstützt oder verfügen über eingeschränkte Funktionen.
+> [!IMPORTANT]
+> Die Vorschauversionen werden ohne Vereinbarung zum Servicelevel bereitgestellt und werden für Produktionsarbeitslasten nicht empfohlen. Bestimmte Features werden möglicherweise nicht unterstützt oder verfügen über eingeschränkte Funktionen.
 
 **Gilt für:**
 - Microsoft 365 Defender
 
-Der Microsoft 365 Defender-Dienst wird ständig aktualisiert, um neue Featureerweiterungen und -funktionen zu bieten.
+Der Microsoft 365 Defender-Dienst wird ständig aktualisiert, um neue Featureverbesserungen und -funktionen zu bieten.
 
 Erfahren Sie mehr über die neuen Features in der Microsoft 365 Defender Preview-Version, und gehören Sie zu den ersten, die bevorstehende Features testen, indem Sie die Vorschau aktivieren.
 
 Weitere Informationen zu neuen Funktionen, die allgemein verfügbar sind, finden Sie [unter What's new in Microsoft 365 Defender](whats-new.md).
 
+## <a name="required-permissions"></a>Erforderliche Berechtigungen
+
+Konten, denen die folgenden Azure Active Directory (Azure AD)-Rollen zugewiesen sind, können Microsoft 365 Defender Preview-Features aktivieren:
+
+- Globaler Administrator
+- Sicherheitsadministrator
+- Sicherheitsoperator
+
 ## <a name="turn-on-preview-features"></a>Vorschaufeatures aktivieren
+
 Sie haben Zugriff auf anstehende Features, zu der Sie Feedback geben können, um die Gesamterfahrung zu verbessern, bevor Features allgemein verfügbar sind.
 
 Aktivieren Sie die Einstellung für die Vorschauerfahrung, um zu den ersten zu gehören, die kommende Features ausprobieren.
 
 1. Wählen Sie im Navigationsbereich **Einstellungen** aus.
-
 2. Wählen **Sie Microsoft 365 Defender aus.**
-
 3. Wählen Sie **Vorschaufeatures** > **Aktivieren Sie Vorschaufeatures**. 
-
 4. Klicken Sie auf **Speichern**.
 
 Sie wissen, dass Sie Vorschaufeatures aktiviert haben, wenn Sie sehen, dass das Kontrollkästchen **Vorschaufeatures aktivieren** aktiviert ist. 
 
 ## <a name="preview-features"></a>Vorschaufeatures
+
 Die folgenden Features und Verbesserungen sind derzeit in der Vorschau verfügbar:
 
 ### <a name="improved-microsoft-365-security-center"></a>Verbessertes Microsoft 365 Security Center

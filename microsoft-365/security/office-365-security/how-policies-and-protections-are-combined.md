@@ -14,24 +14,24 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können mehr über die Anwendungsreihenfolge von Schutzmaßnahmen in Exchange Online Protection (EOP) erfahren und erfahren, wie der Prioritätswert in Schutzrichtlinien bestimmt, welche Richtlinie angewendet wird.
+description: Administratoren können sich über die Anwendungsreihenfolge des Schutzes in Exchange Online Protection (EOP) und darüber informieren, wie der Prioritätswert in Schutzrichtlinien bestimmt, welche Richtlinie angewendet wird.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7f3d4a607f702349d3a8e43c1eceba5ecbb697d7
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ec21be03280a8b7da122569d51186efc1f756a69
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167479"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286837"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Reihenfolge und Rangfolge des E-Mail-Schutzes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer können eingehende E-Mails durch mehrere Schutzformen gekennzeichnet werden. Beispielsweise die integrierten Antiphishingrichtlinien in EOP, die für alle Microsoft 365-Kunden verfügbar sind, und die robusteren Antiphishingrichtlinien, die Microsoft Defender für Office 365-Kunden zur Verfügung stehen. Nachrichten bestehen auch mehrere Erkennungsscans für Schadsoftware, Spam, Phishing usw. durch. Bei all dieser Aktivität kann es verwirrung darüber sein, welche Richtlinie angewendet wird.
 
@@ -48,7 +48,7 @@ Es gibt zwei wichtige Faktoren, die bestimmen, welche Richtlinie auf eine Nachri
   |1 |Schadsoftware|CAT:MALW|[Konfigurieren von Ansoftwarerichtlinien in EOP](configure-anti-malware-policies.md)|
   |2 |Phishing|CAT:PHSH|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |3 |Spam mit hoher Vertrauenswürdigkeit|CAT:HSPM|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
-  |4 |Spoofing|CAT:SPOOF|[Konfigurieren der Spoofintelligenz in EOP](learn-about-spoof-intelligence.md)|
+  |4 |Spoofing|CAT:SPOOF|[Konfigurieren von Spoofintelligenz in EOP](learn-about-spoof-intelligence.md)|
   |5<sup>\*</sup>|Benutzerwechsel (geschützte Benutzer)|UIMP|[Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md)|
   |6<sup>\*</sup>|Domänenwechsel (geschützte Domänen)|DIMP|[Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md)|
   |7 |Spam|CAT:SPM|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
@@ -57,7 +57,7 @@ Es gibt zwei wichtige Faktoren, die bestimmen, welche Richtlinie auf eine Nachri
 
   <sup>\*</sup> Diese Features sind nur in Antiphishingrichtlinien in Microsoft Defender für Office 365 verfügbar.
 
-- **Die** Priorität der Richtlinie: Für jeden Schutztyp (Antispam, Ansoftware, Antiphishing usw.) gibt es eine Standardrichtlinie, die für alle gilt, Sie können jedoch benutzerdefinierte Richtlinien erstellen, die für bestimmte Benutzer gelten. Jede benutzerdefinierte Richtlinie verfügt über einen Prioritätswert, der die Reihenfolge bestimmt, in der die Richtlinien angewendet werden. Die Standardrichtlinie wird immer zuletzt angewendet.
+- **Die** Priorität der Richtlinie: Für jeden Schutztyp (Antispam, Ansoftware, Antiphishing usw.) gibt es eine Standardrichtlinie, die für alle Gilt, Aber Sie können benutzerdefinierte Richtlinien erstellen, die für bestimmte Benutzer gelten. Jede benutzerdefinierte Richtlinie verfügt über einen Prioritätswert, der die Reihenfolge bestimmt, in der die Richtlinien angewendet werden. Die Standardrichtlinie wird immer zuletzt angewendet.
 
   Wenn ein Benutzer in mehreren Richtlinien desselben Typs definiert ist, wird nur die Richtlinie mit der höchsten Priorität auf sie angewendet. Alle verbleibenden Richtlinien dieses Typs werden nicht für den Benutzer ausgewertet (einschließlich der Standardrichtlinie).
 

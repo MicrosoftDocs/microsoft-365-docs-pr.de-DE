@@ -19,19 +19,19 @@ description: 'Zusammenfassung: Informationen zum Erstellen von Office 365- und E
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d23539951e4d51fcd29417ab71ce599853d7537
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e600b3baf012d416a7b5de974b94111bb6cf90a2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165703"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287449"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Konfigurieren von Gruppen und Benutzern für eine politische Kampagne in einer Entwicklungs-/Testumgebung
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Microsoft Defender für Office 365 – Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender für Office 365 – Plan 2](office-365-atp.md)
 
  **Zusammenfassung:** Informationen zum Erstellen von Office 365- und Enterprise Mobility + Security-Testabonnements (EMS) mit Benutzern und Gruppen für eine Entwicklungs-/Testumgebung für eine politische Kampagne.
 
@@ -41,7 +41,7 @@ Folgen Sie den Anweisungen in diesem Artikel beim Erstellen einer Entwicklungs-/
 
 In dieser Phase erhalten Sie Testabonnements für Office 365 E5 und Enterprise Mobility + Security (EMS) E5 für eine fiktive Organisation, die eine politische Kampagne darstellt.
 
-Befolgen Sie zunächst die Anweisungen unter **Phase 2** von [Einfache Basiskonfiguration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
+Befolgen Sie zunächst die Anweisungen unter **Phase 2** von [Einfache Basiskonfiguration](../../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md).
 
 Als Nächstes registrieren Sie sich für das EMS E5-Testabonnement und fügen es derselben Organisation wie Ihr Testabonnement hinzu.
 
@@ -139,7 +139,7 @@ Konfigurieren Sie als Nächstes die Gruppen so, dass Mitgliedern automatisch Off
 
 In dieser Phase werden beispielhafte Benutzerkonten für Ihre politische Kampagne hinzugefügt.
 
-Zunächst müssen Sie [eine Verbindung mit dem Azure Active Directory PowerShell für Graph-Modul herstellen](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell).
+Zunächst müssen Sie [eine Verbindung mit dem Azure Active Directory PowerShell für Graph-Modul herstellen](../../enterprise/connect-to-microsoft-365-powershell.md).
 
 Geben Sie anschließend den Namen Ihrer Organisation, Ihren Standort und ein gemeinsames Kennwort ein, und führen Sie dann die folgenden Befehle an der PowerShell-Eingabeaufforderung oder in der ISE-Umgebung ein (Integrated Script Environment) aus:
 
@@ -212,6 +212,6 @@ Erstellen Sie die vier verschiedenen Arten von SharePoint Online-Teamwebsites in
 
 [Erstellen von Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
-[Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
 [Cloudakzeptanz und Hybridlösungen](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

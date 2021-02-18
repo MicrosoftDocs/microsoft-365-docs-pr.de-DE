@@ -16,23 +16,23 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
-description: Entwerfen Sie isolierte SharePoint Online-Teamwebsites, einschließlich der Bestimmung von Berechtigungsstufen, zuweisen von Berechtigungen zu Benutzern mit Zugriffsgruppen und geschachtelten Azure AD-Gruppen.
+description: Entwerfen Sie isolierte SharePoint Online-Teamwebsites, einschließlich der Festlegung von Berechtigungsstufen, dem Zuweisen von Berechtigungen zu Benutzern mit Zugriffsgruppen und geschachtelten Azure AD-Gruppen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0f92a925948dbf6c8c5c1beb6b9c709f508c4b3
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 0d53f3b45e3f406dfb0b38bcc910bd34876acb08
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165511"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288335"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Entwerfen einer isolierten SharePoint Online-Teamwebsite
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 
  **Zusammenfassung:** Lernen Sie die Schritte zum Entwerfen von isolierten SharePoint Online-Teamwebsites kennen.
@@ -43,7 +43,7 @@ In diesem Artikel werden die wichtigsten Entwurfsentscheidungen erläutert, die 
 
 Jede SharePoint Online-Teamwebsite wird standardmäßig mit den folgenden SharePoint-Gruppen erstellt:
 
-- \<site name> Member
+- \<site name> Mitglieder
 
 - \<site name> Besucher
 
@@ -57,7 +57,7 @@ Der Satz von spezifischen Berechtigungen, der bestimmt, welche Aktionen ein Mitg
 
 |SharePoint-Gruppe|Berechtigungsstufe|
 |---|---|
-|\<site name> Member|Bearbeiten|
+|\<site name> Mitglieder|Bearbeiten|
 |\<site name> Besucher|Lesen|
 |\<site name> Besitzer|Vollzugriff|
 |
@@ -70,7 +70,7 @@ Hier sind die standardmäßigen SharePoint-Gruppen und -Berechtigungsstufen.
 
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>Phase 2: Zuweisen von Berechtigungen zu Benutzern mit Zugriffsgruppen
 
-Sie können Benutzern Berechtigungen zuweisen, indem Sie ihr Benutzerkonto oder eine Microsoft 365- oder Azure AD-Gruppe, in der das Benutzerkonto Mitglied ist, den SharePoint-Gruppen hinzufügen. Nach dem Hinzufügen werden den Benutzerkonten, entweder direkt oder indirekt über die Mitgliedschaft in einer Microsoft 365- oder Azure AD-Gruppe, die der SharePoint-Gruppe zugeordnete Berechtigungsstufe zugewiesen.
+Sie können Benutzern Berechtigungen zuweisen, indem Sie ihr Benutzerkonto oder eine Microsoft 365- oder Azure AD-Gruppe, in der das Benutzerkonto Mitglied ist, den SharePoint-Gruppen hinzufügen. Nach dem Hinzufügen werden den Benutzerkonten, entweder direkt oder indirekt über die Mitgliedschaft in einer Microsoft 365- oder Azure AD-Gruppe, die berechtigungsstufe zugewiesen, die der SharePoint-Gruppe zugeordnet ist.
 
 Am Beispiel der SharePoint-Standardgruppen bedeutet dies:
 
@@ -100,7 +100,7 @@ Für isolierte SharePoint Online-Teamwebsites sieht die empfohlene Gruppenstrukt
 
 |SharePoint-Gruppe|Azure AD-basierte Zugriffsgruppe|Berechtigungsstufe|
 |---|---|---|
-|\<site name> Member|\<site name> Member|Bearbeiten|
+|\<site name> Mitglieder|\<site name> Mitglieder|Bearbeiten|
 |\<site name> Besucher|\<site name> Viewer|Lesen|
 |\<site name> Besitzer|\<site name> Administratoren|Vollzugriff|
 |
@@ -115,7 +115,7 @@ Beachten Sie beim Entwerfen der drei Zugriffsgruppen die folgenden Punkte:
 
 - In der Zugriffsgruppe "Administratoren" sollten nur wenige Mitglieder vorhanden sein, die einer kleinen Anzahl von SharePoint Online-Administratoren, die die Teamwebsite verwalten, entspricht. **\<site name>**
 
-- Die meisten Ihrer Websitemitglieder befinden sich in den **\<site name> Zugriffsgruppen "Mitglieder"** oder **\<site name> "Viewer".** Da Websitemitglieder in **\<site name> der** Zugriffsgruppe "Mitglieder" die Möglichkeit haben, Ressourcen auf der Website zu löschen oder zu ändern, sollten Sie deren Mitgliedschaft sorgfältig abschätzen. Fügen Sie im Zweifelsfall das Websitemitglied der Zugriffsgruppe **\<site name> "Viewer"** hinzu.
+- Die meisten Ihrer Websitemitglieder befinden sich in den **\<site name> Zugriffsgruppen "Mitglieder"** **\<site name> oder "Viewer".** Da Websitemitglieder in **\<site name> der** Zugriffsgruppe "Mitglieder" die Möglichkeit haben, Ressourcen auf der Website zu löschen oder zu ändern, sollten Sie deren Mitgliedschaft sorgfältig abschätzen. Fügen Sie im Zweifelsfall das Websitemitglied der Zugriffsgruppe **\<site name> "Viewer"** hinzu.
 
 Hier ist ein Beispiel für die SharePoint-Gruppen und Zugriffsgruppen für eine isolierte Website mit dem Namen ProjectX.
 

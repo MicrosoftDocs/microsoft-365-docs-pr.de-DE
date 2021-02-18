@@ -19,19 +19,19 @@ ms.collection:
 description: Erfahren Sie mehr über Kampagnenansichten in Microsoft Defender für Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e3b9c1a9a19e38ea83b13d9028af1a6ba042b900
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e7742b26eb901bc9dfe79d01a9f3414adf524dd9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165919"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286897"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Kampagnenansichten in Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Microsoft Defender für Office 365 Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender für Office 365 – Plan 2](office-365-atp.md)
 
 Kampagnenansichten sind ein Feature in Microsoft Defender für Office 365 Plan 2 (z. B. Microsoft 365 E5 oder Organisationen mit einem Defender für Office 365 Plan 2-Add-On). Kampagnenansichten im Security & Compliance Center identifizieren und kategorisieren Phishingangriffe im Dienst. Kampagnenansichten können Ihnen bei Folgendem helfen:
 
@@ -45,7 +45,7 @@ Mit Kampagnenansichten können Sie das Gesamtbild eines Angriffs schneller und v
 
 Eine Kampagne ist ein koordinierter E-Mail-Angriff gegen eine oder mehrere Organisationen. E-Mail-Angriffe, die Anmeldeinformationen und Unternehmensdaten stehlen, sind eine große und lu lugige Branche. Wenn Technologien zunehmen, um Angriffe zu stoppen, ändern Angreifer ihre Methoden, um einen weiterhin erfolgreichen Erfolg zu gewährleisten.
 
-Microsoft nutzt die großen Mengen an Antiphishing-, Antispam- und An malware-Daten über den gesamten Dienst, um Kampagnen zu identifizieren. Wir analysieren und klassifizieren die Angriffsinformationen nach verschiedenen Faktoren. Zum Beispiel:
+Microsoft nutzt die großen Mengen an Antiphishing-, Antispam- und An malware-Daten über den gesamten Dienst, um Kampagnen zu identifizieren. Wir analysieren und klassifizieren die Angriffsinformationen anhand mehrerer Faktoren. Zum Beispiel:
 
 - **Angriffsquelle:** Die Quell-IP-Adressen und E-Mail-Domänen des Absenders.
 - **Nachrichteneigenschaften:** Inhalt, Formatvorlage und Tonfall der Nachrichten.
@@ -60,7 +60,7 @@ Kampagnenansichten sind im [Security & Compliance Center](https://protection.off
 
 ![Kampagnenübersicht im Security & Compliance Center](../../media/campaigns-overview.png)
 
-Sie können auch kampagnenansichten von:
+Sie können auch zu Kampagnenansichten über:
 
 - **Bedrohungsverwaltung** \> **Explorer** \> **Ansicht** \> **Kampagnen**
 - **Bedrohungsverwaltung** \> **Explorer** \> **Ansicht** \> **Alle E-Mails** \> **Registerkarte "Kampagne"**
@@ -144,7 +144,7 @@ Die filterbaren Kampagneneigenschaften, die  auf der Schaltfläche "Kampagnentyp
   - **Internetnachrichten-ID:** Im **Nachrichten-ID-Kopfzeilenfeld** im Nachrichtenkopf verfügbar. Ein Beispielwert ist `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (beachten Sie die spitzen Klammern).
   - **Netzwerknachrichten-ID:** Ein GUID-Wert, der im Kopfzeilenfeld **"X-MS-Exchange-Organization-Network-Message-Id"** im Nachrichtenkopf verfügbar ist.
   - **Sender-IP**
-  - **Anlage SHA256**: Um den #A0 einer Datei in Windows zu finden, führen Sie den folgenden Befehl an einer Eingabeaufforderung aus: `certutil.exe -hashfile "<Path>\<Filename>" SHA256` .
+  - **Anlage SHA256**: Führen Sie den folgenden Befehl an einer Eingabeaufforderung aus, um den #A0 einer Datei in Windows zu `certutil.exe -hashfile "<Path>\<Filename>" SHA256` finden:
   - **Cluster-ID**
   - **Warnungsrichtlinien-ID**
   - **ZAP-URL-Signal**
@@ -156,7 +156,7 @@ Die filterbaren Kampagneneigenschaften, die  auf der Schaltfläche "Kampagnentyp
   - **Pfad der URL**
   - **Click verdict**
 
-Für eine erweiterte Filterung, einschließlich der Filterung nach mehreren Eigenschaften, können Sie auf die Schaltfläche **"Erweiterter Filter"** klicken, um eine Abfrage zu erstellen. Es sind dieselben Kampagneneigenschaften verfügbar, jedoch mit den folgenden Verbesserungen:
+Für eine erweiterte Filterung, einschließlich der Filterung nach mehreren Eigenschaften, können Sie auf die Schaltfläche **"Erweiterter Filter"** klicken, um eine Abfrage zu erstellen. Es stehen dieselben Kampagneneigenschaften zur Verfügung, jedoch mit den folgenden Verbesserungen:
 
 - Sie können auf "Bedingung **hinzufügen" klicken,** um mehrere Bedingungen auszuwählen.
 - Sie können den **Operator "And"** oder **"Or"** zwischen Bedingungen auswählen.
@@ -166,7 +166,7 @@ Wenn Sie fertig sind, klicken Sie auf die Schaltfläche **"Abfrage".**
 
 Nachdem Sie einen einfachen oder erweiterten Filter erstellt haben, können Sie ihn mithilfe der Abfrage **"Speichern"** oder **"Speichern unter" speichern.** Wenn Sie später zu Kampagnenansichten zurückkehren, können Sie einen gespeicherten Filter laden, indem Sie auf **"Gespeicherte Abfrageeinstellungen" klicken.**
 
-Klicken Sie auf "Diagrammdaten exportieren"  oder "Kampagnenliste exportieren", und wählen Sie **"Diagrammdaten** exportieren" oder **"Kampagnenliste exportieren"** aus, um das Diagramm oder die Liste der Kampagnen zu exportieren.
+Um das Diagramm oder die Liste der Kampagnen  zu exportieren, klicken Sie auf **"Diagrammdaten** exportieren" oder **"Kampagnenliste exportieren", und wählen Sie "Diagrammdaten exportieren" aus.**
 
 Wenn Sie über ein Microsoft Defender for Endpoint-Abonnement verfügen, können Sie auf **"MDE-Einstellungen"** klicken, um die Kampagneninformationen mit Microsoft Defender for Endpoint zu verbinden oder zu trennen. Weitere Informationen finden Sie unter [Integrieren von Microsoft Defender für Office 365 in Microsoft Defender for Endpoint](integrate-office-365-ti-with-wdatp.md).
 
@@ -190,7 +190,7 @@ Oben in der Ansicht "Kampagnendetails" sind die folgenden Kampagneninformationen
 
 - **Gezielt:** Der Prozentsatz, wie er berechnet wird durch: (die Anzahl der Kampagnenempfänger in Ihrer Organisation) / (die Gesamtzahl der Empfänger in der Kampagne in allen Organisationen im Dienst). Beachten Sie, dass dieser Wert über die gesamte Lebensdauer der Kampagne berechnet wird und sich nicht basierend auf Datumsfiltern ändert.
 
-- Eine interaktive Zeitachse der Kampagnenaktivität: Auf der Zeitachse werden Aktivitäten über die gesamte Lebensdauer der Kampagne angezeigt. Standardmäßig enthält der schattierte Bereich den Datumsbereichsfilter, den Sie in der Übersicht ausgewählt haben. Sie können klicken und ziehen, um einen bestimmten Start- und Endpunkt auszuwählen, wodurch die im Auswirkungsbereich angezeigten Daten und auf der restlichen Seite wie <u>in  </u>den nächsten Abschnitten beschrieben geändert werden.
+- Eine interaktive Zeitachse der Kampagnenaktivität: Auf der Zeitachse werden Aktivitäten über die gesamte Lebensdauer der Kampagne angezeigt. Standardmäßig enthält der schattierte Bereich den Datumsbereichsfilter, den Sie in der Übersicht ausgewählt haben. Sie können klicken und ziehen, um einen bestimmten Start- und Endpunkt auszuwählen, wodurch sich die daten ändern, die im Auswirkungsbereich und auf der restlichen Seite angezeigt <u>werden,  </u>wie in den nächsten Abschnitten beschrieben.
 
 In der Titelleiste können  Sie auf das Aufschreiben der Schaltfläche "Kampagne herunterladen" klicken, um die Kampagnendetails in ein Dokument in Word herunterzuladen (standardmäßig mit dem Namen ![ ](../../media/download-campaign-write-up-button.png) CampaignReport.docx). Beachten Sie, dass der Download Details über die gesamte Lebensdauer der Kampagne enthält (nicht nur die ausgewählten Filterdaten).
 
@@ -211,13 +211,13 @@ Das Diagramm enthält die folgenden Informationen:
 
 - **Sender-IPs**
 - **Absenderdomänen**
-- **Filterverkündungen:** Die Werte der Bewertung stehen im Zusammenhang mit den verfügbaren Phishing- und Spamfilterungsverkündungen, wie in den Kopfzeilen von [Antispamnachrichten beschrieben.](anti-spam-message-headers.md) Die verfügbaren Werte werden in der folgenden Tabelle beschrieben:
+- **Filterverkündungen:** Die Werte der Bewertung stehen im Zusammenhang mit den verfügbaren Phishing- und Spamfilterungen, wie in den Kopfzeilen von [Antispamnachrichten beschrieben.](anti-spam-message-headers.md) Die verfügbaren Werte werden in der folgenden Tabelle beschrieben:
 
   ****
 
   |Wert|Spamfilter-|Beschreibung|
   |---|---|---|
-  |**Zulässig**|`SFV:SKN` <p> `SFV:SKI`|Die Nachricht wurde als keine Spam- und/oder übersprungene Filterung markiert, bevor sie von der Spamfilterung ausgewertet wurde. Beispielsweise wurde die Nachricht von einer Nachrichtenflussregel (auch als Transportregel bezeichnet) als kein Spam gekennzeichnet. <p> Die Nachricht hat die Spamfilterung aus anderen Gründen übersprungen. Beispielsweise werden Absender und Empfänger in derselben Organisation angezeigt.|
+  |**Zulässig**|`SFV:SKN` <p> `SFV:SKI`|Die Nachricht wurde als keine Spam- und/oder übersprungene Filterung gekennzeichnet, bevor sie von der Spamfilterung ausgewertet wurde. Beispielsweise wurde die Nachricht von einer Nachrichtenflussregel (auch als Transportregel bezeichnet) als kein Spam gekennzeichnet. <p> Die Nachricht hat die Spamfilterung aus anderen Gründen übersprungen. Beispielsweise werden Absender und Empfänger in derselben Organisation angezeigt.|
   |**Gesperrt**|`SFV:SKS`|Die Nachricht wurde als Spam markiert, bevor sie von der Spamfilterung ausgewertet wurde. Beispielsweise durch eine Nachrichtenflussregel.|
   |**Erkannt**|`SFV:SPM`|Die Nachricht wurde vom Spamfilter als Spam markiert.|
   |**Nicht erkannt**|`SFV:NSPM`|Die Nachricht wurde von der Spamfilterung als kein Spam gekennzeichnet.|
@@ -253,7 +253,7 @@ Das Diagramm enthält die folgenden Informationen:
 
 Wenn eine Phishingnachricht an den Posteingang oder junk-E-Mail-Ordner eines Empfängers zugestellt wird, besteht immer die Möglichkeit, dass der Benutzer auf die Nutzlast-URL klickt. Das Nichtklicken auf die URL ist ein kleiner Erfolg, aber Sie müssen ermitteln, warum die Phishingnachricht überhaupt an das Postfach zugestellt wurde.
 
-Wenn ein Benutzer in der Phishingnachricht auf die Nutzlast-URL geklickt hat, werden die Aktionen im **Bereich "URL klickt"** des Diagramms in der Ansicht "Kampagnendetails" angezeigt.
+Wenn ein Benutzer in der Phishingnachricht auf die Nutzlast-URL geklickt hat, werden die Aktionen im Bereich **"URL klickt"** des Diagramms in der Ansicht "Kampagnendetails" angezeigt.
 
 - **Zulässig**
 - **BlockPage:** Der Empfänger hat auf die Nutzlast-URL geklickt, [](atp-safe-links.md) aber der Zugriff auf die schädliche Website wurde durch eine Richtlinie für sichere Links in Ihrer Organisation blockiert.
@@ -279,14 +279,14 @@ Mit den Registerkarten in der Ansicht "Kampagnendetails" können Sie die Kampagn
   - **Gesamtanzahl**
   - **Posteingang**
   - **Nicht im Posteingang**
-  - **SPF übergeben:** Der Absender wurde vom [Sender Policy Framework (SPF) authentifiziert.](how-office-365-uses-spf-to-prevent-spoofing.md) Ein Absender, der die SPF-Überprüfung nicht besteht, weist auf einen nicht authentifizierten Absender hin, oder die Nachricht fälscht einen legitimen Absender.
+  - **SPF übergeben:** Der Absender wurde vom [Sender Policy Framework (SPF) authentifiziert.](how-office-365-uses-spf-to-prevent-spoofing.md) Ein Absender, der die SPF-Überprüfung nicht besteht, weist auf einen nicht authentifizierten Absender hin, oder die Nachricht fälscht einen legitimen Absender an.
 
 - **Absender**
   - **Absender:** Dies ist die tatsächliche Absenderadresse im SMTP MAIL FROM-Befehl, bei der es sich nicht unbedingt um die Absender-E-Mail-Adresse handelt, die Benutzern in ihren E-Mail-Clients angezeigt wird.
   - **Gesamtanzahl**
   - **Posteingang**
   - **Nicht im Posteingang**
-  - **DKIM übergeben:** Der Absender wurde von [DkIM (Domain Keys Identified Mail) authentifiziert.](support-for-validation-of-dkim-signed-messages.md) Ein Absender, der die ÜBERPRÜFUNG von DKIM nicht besteht, weist auf einen nicht authentifizierten Absender hin, oder die Nachricht fälscht einen legitimen Absender.
+  - **DKIM übergeben:** Der Absender wurde von [DkIM (Domain Keys Identified Mail) authentifiziert.](support-for-validation-of-dkim-signed-messages.md) Ein Absender, der die ÜBERPRÜFUNG von DKIM nicht besteht, weist auf einen nicht authentifizierten Absender hin, oder die Nachricht fälscht einen legitimen Absender an.
   - **DMARC übergeben:** Der Absender wurde von domänenbasierter Nachrichtenauthentifizierung, Berichterstellung und Konformität [(DMARC) authentifiziert.](use-dmarc-to-validate-email.md) Ein Absender, der die DMARC-Überprüfung nicht besteht, weist auf einen nicht authentifizierten Absender hin, oder die Nachricht fälscht einen legitimen Absender an.
 
 - **Anlagen**

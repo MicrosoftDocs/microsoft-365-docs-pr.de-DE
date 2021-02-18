@@ -19,21 +19,21 @@ description: Erfahren Sie mehr über die intelligenten Berichte und Einblicke, d
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0d1c44bf212ecedadf0af47637920805c0c9f241
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: f78e6c5684685b4c3596523dde10f260d1eda47f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166699"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288043"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Intelligente Berichte und Einblicke im Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Wenn Sie Teil des Sicherheitsteams von Microsoft for 365 Business Ihrer Organisation sind und über die erforderlichen Berechtigungen im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)verfügen, können Sie auf eine Vielzahl von Berichten zugreifen, einschließlich intelligenter Berichte und Einblicke. Lesen Sie diesen Artikel, um sich einen Überblick über diese Berichte und Einblicke zu verschaffen und weitere Informationen zu bestimmten Berichten zu erhalten.
 
@@ -60,9 +60,9 @@ Im Security & Compliance Center stehen zahlreiche Berichte zur Verfügung. (Zu *
 |**Bedrohungs-Explorer** (auch als Explorer bezeichnet) oder **Echtzeiterkennungen** <p> In E-Mails und Dateien in Microsoft 365 erkannte verdächtige Schadsoftware|Wechseln Sie im Security & Compliance Center zum **Explorer** für die Bedrohungsverwaltung oder zu \>  **Echtzeiterkennungen.**<br> |[Sicherheitsrisiken-Explorer (oder Echtzeit-Erkennung)](threat-explorer.md)|
 |**Defender für Office 365 und E-Mail-Sicherheitsberichte** <p> E-Mail-Sicherheits- und Bedrohungsschutzberichte (einschließlich Schadsoftware-, Spam-, Phishing- und Spoofingberichten)|Wechseln Sie im Security & Compliance  Center zum Dashboard \> **"Berichte".**|[Anzeigen von Berichten für Defender für Office 365](view-reports-for-atp.md) <p> [Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center](view-email-security-reports.md)|
 |**Nachrichtenfluss** <p> Informationen zu gesendeten und empfangenen E-Mail-Nachrichten, neuesten Warnungen, häufigsten Absendern und Empfängern, E-Mail-Weiterleitungsberichten und vieles mehr.|Wechseln Sie im Security & Compliance Center zum Dashboard für den **Nachrichtenfluss** \> **und** **zum Dashboard "Berichte".** \> |[Nachrichtenübermittlung und Einblicke im Security & Compliance Center](mail-flow-insights-v2.md) <p> [Anzeigen von Nachrichtenflussberichten im Security & Compliance Center](view-mail-flow-reports.md)|
-|**Einhaltung der DSGVO** <p> Informationen zur Einhaltung der DSGVO, einschließlich Links zu betroffenen Personen, Bezeichnungstrends und & abgeschlossenen Fällen|Wechseln Sie im Security & Compliance Center zum **DSGVO-Dashboard** zum \> **Datenschutz**|[Schutz von Informationen in Office 365 für die DSGVO](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)|
+|**Einhaltung der DSGVO** <p> Informationen zur Einhaltung der DSGVO, einschließlich Links zu betroffenen Personen, Bezeichnungstrends und & abgeschlossenen Fällen|Wechseln Sie im Security & Compliance Center zum **DSGVO-Dashboard** zum \> **Datenschutz**|[Zusammenfassung Datenschutz-Grundverordnung](https://docs.microsoft.com/compliance/regulatory/gdpr)|
 |**Überwachungsprotokoll** <p> Informationen über Microsoft 365-Aktivitäten, Benutzer, Dateien oder Ordner und mehr|Wechseln Sie im Security & Compliance Center zur Suche **&** \> **Überwachungsprotokollsuche**|[Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
-|**Kompatibilitätsberichte** <p> FedRAMP-Berichte, Governance, Risiko- und Complianceberichte, Berichte über die ISO-Informationssicherheitsverwaltung und SOC-Überwachungs- und Beurteilungsberichte (Service Organization Controls)|Wechseln Sie im Security & Compliance Center zu **Service Assurance** \> **Compliance-Berichten.**|[Planen der & A0 in Office 365](../../compliance/plan-for-security-and-compliance.md)|
+|**Kompatibilitätsberichte** <p> FedRAMP-Berichte, Governance, Risiko- und Complianceberichte, Berichte über die ISO-Informationssicherheitsverwaltung und SOC-Überwachungs- und Beurteilungsberichte (Service Organization Controls)|Wechseln Sie im Security & Compliance Center zu **"Service Assurance** \> **Compliance Reports".**|[Planen der & A0 in Office 365](../../compliance/plan-for-security-and-compliance.md)|
 |
 
 ## <a name="related-topics"></a>Verwandte Themen

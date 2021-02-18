@@ -18,21 +18,21 @@ description: Administratoren können mehr über die Nachrichtenkopfzeilen erfahr
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f0befa764982ae30e0c7c5c1a9f109067f3ee02
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: e78d7d6eb2b38ab93dc09e0098641f97f845015c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175650"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289005"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Antispam-Nachrichtenkopfzeilen in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 In allen Microsoft 365-Organisationen überprüft Exchange Online Protection (EOP) alle eingehenden Nachrichten auf Spam, Malware und andere Bedrohungen. Die Ergebnisse dieser Scans werden den folgenden Kopfzeilenfeldern in Nachrichten hinzugefügt:
 

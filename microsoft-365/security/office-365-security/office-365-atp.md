@@ -21,20 +21,20 @@ ms.custom:
 description: Microsoft Defender für Office 365 umfasst sichere Anlagen, sichere Links, erweiterte Antiphishing-Tools, Berichterstellungstools und Threat Intelligence-Funktionen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7624b9a62530e54a161bbc4aacc8bee56ed959b2
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 741b00a55ee73d16c82abd4806d06660d49be65b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150724"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287665"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
 > Dieser Artikel richtet sich an Geschäftskunden, die über [Microsoft Defender für Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) verfügen. Wenn Sie Outlook.com, Microsoft 365 Family oder Microsoft 365 Single verwenden und Informationen zu sicheren Links oder sicheren Anlagen in Outlook benötigen, lesen Sie [Erweiterte Outlook.com-Sicherheit für Microsoft 365-Abonnenten](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -92,7 +92,7 @@ In der folgenden Tabelle sind die Inhalte der einzelnen Pläne zusammengefasst.
 
 - Das Feature [Sichere Dokumente](safe-docs.md) ist nur für Benutzer mit den Lizenzen für Microsoft 365 E5 oder Microsoft 365 E5 Security verfügbar (nicht in Microsoft Defender für Office 365-Plänen enthalten).
 
-- Wenn Ihr aktuelles Abonnement Microsoft Defender für Office 365 nicht enthält, [wenden Sie sich an den Vertrieb, um eine Testversion zu starten](https://go.microsoft.com/fwlink/p/?LinkId=518644) und zu testen, wie Defender für Office 365 für Ihre Organisation eingesetzt werden kann.
+- Wenn Ihr aktuelles Abonnement Microsoft Defender für Office 365 nicht enthält, [wenden Sie sich an den Vertrieb, um eine Testversion zu starten](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html) und zu testen, wie Defender für Office 365 für Ihre Organisation eingesetzt werden kann.
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Konfigurieren von Microsoft Defender für Office 365-Richtlinien
 
@@ -149,7 +149,7 @@ Für den Zugriff auf Microsoft Defender für Office 365-Features im Security & C
 
 |Rolle oder Rollengruppe|Ressourcen mit mehr Informationen|
 |---|---|
-|Globaler Administrator (kann in Azure Active Directory oder im Security & Compliance Center zugewiesen werden.)|[Informationen zu Microsoft 365-Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|Globaler Administrator (kann in Azure Active Directory oder im Security & Compliance Center zugewiesen werden.)|[Informationen zu Microsoft 365-Administratorrollen](../../admin/add-users/about-admin-roles.md)|
 |Sicherheitsadministrator (kann in Azure Active Directory oder im Security & Compliance Center zugewiesen werden.)|[Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)|
 |Exchange Online-Organisationsverwaltung (wird in Exchange Online zugewiesen)|[Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |Suchen und Löschen (wird nur im Security & Compliance Center zugewiesen)|[Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)|

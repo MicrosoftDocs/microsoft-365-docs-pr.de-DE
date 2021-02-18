@@ -20,21 +20,21 @@ search.appverid:
 description: Erfahren Sie, wie Sie ein angegriffenes E-Mail-Konto mit den in Microsoft 365 verfügbaren Tools erkennen und darauf reagieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a34780b260a6e4bbc2d8b3f53af6b67de04fbdcd
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1bbd607386b49b45ebd7444c4a91d05e4cee475b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166663"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288609"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Auf ein kompromittiertes E-Mail-Konto reagieren
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 **Zusammenfassung** Erfahren Sie, wie Sie ein angegriffenes E-Mail-Konto in Microsoft 365 erkennen und darauf reagieren.
 
@@ -90,7 +90,7 @@ Sie müssen so schnell wie möglich alle folgenden Schritte ausführen, um wiede
 
 ### <a name="step-1-reset-the-users-password"></a>Schritt 1: Setzen Sie das Benutzerkennwort zurück.
 
-Folgen Sie den Verfahren unter [Zurücksetzen eines Geschäftskennworts für eine andere Person](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password).
+Folgen Sie den Verfahren unter [Zurücksetzen eines Geschäftskennworts für eine andere Person](../../admin/add-users/reset-passwords.md#reset-my-admin-password).
 
 > [!IMPORTANT]
 >
@@ -104,7 +104,7 @@ Folgen Sie den Verfahren unter [Zurücksetzen eines Geschäftskennworts für ein
 >
 > - Sorgen Sie dafür, dass App-Kennwörter aktualisiert werden. App-Kennwörter werden nicht automatisch widerrufen, wenn ein Benutzerkontokennwort zurückgesetzt wird. Der Benutzer sollte vorhandene App-Kennwörter löschen und neue erstellen. Anweisungen hierzu finden Sie unter [Erstellen und Löschen von App-Kennwörtern über die Seite "Zusätzliche Sicherheitsüberprüfung"](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
 >
-> - Es wird dringend empfohlen, dass Sie die mehrstufige Authentifizierung (MFA) aktivieren, um Angriffe zu verhindern, insbesondere für Konten mit Administratorrechten. Weitere Informationen zu MFA finden Sie unter [Einrichten der mehrstufigen Authentifizierung](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> - Es wird dringend empfohlen, dass Sie die mehrstufige Authentifizierung (MFA) aktivieren, um Angriffe zu verhindern, insbesondere für Konten mit Administratorrechten. Weitere Informationen zu MFA finden Sie unter [Einrichten der mehrstufigen Authentifizierung](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Schritt 2: Entfernen Sie verdächtige E-Mail-Weiterleitungsadressen.
 

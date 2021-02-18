@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Erfahren Sie mehr über Abrechnungskonten und deren Verwaltung.
-ms.openlocfilehash: 2382396c348fab0b24a269e9678193041ac2c19e
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: 6c90bdd9087a67cc3639cfb06644a5587273dc35
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032633"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279298"
 ---
 # <a name="manage-billing-accounts"></a>Abrechnungskonten verwalten
 
@@ -47,15 +47,15 @@ In der folgenden Tabelle sind die wichtigen Begriffe aufgeführt, die auf der De
 | Kontostatus | Ein schreibgeschütztes Feld, das den Status Ihres kommerziellen Kontos bei Microsoft angibt. |
 | Steuer-ID | Wenn Sie sich außerhalb der VEREINIGTEn Staaten befinden, müssen Sie eine Mehrwertsteuer oder eine lokale Entsprechung bereitstellen. Weitere Informationen finden Sie unter [Steuerinformationen](billing-and-payments/tax-information.md). |
 | Vereinbarung | Wenn ein Abrechnungskonto entweder durch einen direkten Kauf oder eine Volumenlizenzvereinbarung erstellt wird, akzeptiert oder signiert ein Signament für die Organisation einen Vertrag, der die Bedingungen des Kontos & beschreibt. Falls zutreffend, wird in dieser Ansicht ein Vertragsverlauf aufgeführt. Wenn Sie aktualisierte Bedingungen akzeptieren müssen, wird ein Link für die **Genehmigungsvereinbarung** angezeigt. |
-| Abrechnungsprofile | Ein Abrechnungsprofil definiert die Eigenschaften Ihrer Rechnung, z. B. wer die Rechnung erhält, wie die Rechnung zugestellt wird, Zahlungsbedingungen und eine Bestellungsnummer. Um die Abrechnung in Ihrer Organisation zu verteilen, können Sie mehrere Abrechnungsprofile erstellen und das entsprechende Abrechnungsprofil zum Zeitpunkt des Kaufs identifizieren. Weitere Informationen zu Abrechnungsprofilen und wie Sie diese verwenden können, um flexiblere Abrechnungsoptionen für Ihre Organisation zu erstellen, finden Sie unter Verwalten [von Abrechnungsprofilen.](billing-and-payments/manage-billing-profiles.md) |
+| Abrechnungsprofile | Ein Abrechnungsprofil definiert die Eigenschaften Ihrer Rechnung, z. B. wer die Rechnung erhält, wie die Rechnung zugestellt wird, Zahlungsbedingungen und eine Bestellungsnummer. Um die Abrechnung in Ihrer Organisation zu verteilen, können Sie mehrere Abrechnungsprofile erstellen und das entsprechende Abrechnungsprofil zum Zeitpunkt des Kaufs identifizieren. Weitere Informationen zu Abrechnungsprofilen und wie Sie diese verwenden können, um flexiblere Abrechnungsoptionen für Ihre Organisation zu erstellen, finden Sie unter ["Abrechnungsprofile verstehen".](billing-and-payments/manage-billing-profiles.md) |
 
 > [!NOTE]
-> Wenn Sie den Namen oder die Adresse des Verkauften  ändern möchten, [](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) aber keinen Link zum Bearbeiten sehen, müssen Sie sich an den Support wenden, um ihn zu ändern.  Anforderungen für eine Änderung des Namens **"Verkauft** an" erfordern eine Bonitätsprüfung. Wenn Sie sich an den Support wenden, können Sie eines der folgenden Dokumente für Microsoft freigeben: 
+> Wenn Sie den Namen oder die Adresse des Verkauften  ändern müssen, [](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) aber keinen Link zum Bearbeiten sehen, müssen Sie sich an den Support wenden, um ihn zu ändern.  Anforderungen für eine Änderung des Namens **"Verkauft an"** erfordern eine Bonitätsprüfung. Füllen [Sie dieses Formular](https://www.microsoft.com/download/details.aspx?id=102732)aus, und können Sie eines der folgenden Dokumente für Microsoft freigeben, wenn Sie den Support kontaktieren:
 >
 > - Vom Behörden ausgestelltes Dokument oder Registrierungsschreiben
 > - Drucken aus der Registrierung des lokalen Unternehmens
 >
-> Der Support kann bei Namens- und Adressänderungen hilfreich sein, wenn sich nur der Kundenname ändert, die Entität jedoch unverändert bleibt. Die bereitgestellte Dokumentation sollte deutlich zeigen, dass nur der Name der Entität geändert wurde. Wenn die Änderung das Ergebnis einer Transaktion ist, einschließlich des Verkaufs von Geschäftsgeschäften, einer Änderung der Kontrollen oder einer Abspaltung oder "Ausgliederung" eines Kundenpartners, wenden Sie sich bitte an Ihren Microsoft-Verkäufer.
+> Der Support kann bei Namens- und Adressänderungen hilfreich sein, wenn sich nur der Name des Kunden ändert, die Entität jedoch unverändert bleibt. Die bereitgestellte Dokumentation sollte deutlich zeigen, dass nur der Name der Entität geändert wurde. Wenn die Änderung das Ergebnis einer Transaktion ist, einschließlich des Verkaufs des Unternehmens, einer Änderung der Steuerelemente oder einer Abspaltung oder eines "Ausgliederungswechsels" eines Kundenpartners, wenden Sie sich bitte an Ihren Microsoft-Verkäufer.
 
 ## <a name="shipping-addresses"></a>Versandadressen
 
@@ -72,8 +72,7 @@ Sie können anderen Personen über Rollen und Berechtigungen Zugriff auf das Abr
 > [!Note]
 > Abrechnungskontorollen gelten nur für Abrechnungskonten und nicht für andere Microsoft 365 Admin Center-Szenarien.
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Steuerinformationen](billing-and-payments/tax-information.md)
-
-[Verwalten von Abrechnungsprofilen](billing-and-payments/manage-billing-profiles.md)
+[Steuerinformationen](billing-and-payments/tax-information.md) (Artikel) \
+[Informationen zu Abrechnungsprofilen](billing-and-payments/manage-billing-profiles.md) (Artikel)

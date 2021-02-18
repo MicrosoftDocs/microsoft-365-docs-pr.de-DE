@@ -16,20 +16,20 @@ ms.collection:
 description: Erfahren Sie mehr über sichere Dokumente in Microsoft 365 E5 oder Microsoft 365 E5 Security.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47bb6c66d51575c91b829e9688a074aaf9a18ab5
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: a3f4ed3535c7e53774b9b567b50f7c06e99cef9d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166651"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288585"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Sichere Dokumente in Microsoft 365 E5
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Microsoft Defender für Office 365 Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender für Office 365 – Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 "Sichere Dokumente" ist ein Feature in Microsoft 365 E5 oder Microsoft 365 E5 Security, das [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) zum Überprüfen von Dokumenten und Dateien verwendet, die in der geschützten Ansicht geöffnet [werden.](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)
 
@@ -50,8 +50,8 @@ ms.locfileid: "50166651"
   Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
   > [!NOTE]
-  > 
-  > - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  >
+  > - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   >
   > - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
@@ -96,7 +96,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-AtpPo
 
 ### <a name="how-do-i-know-this-worked"></a>Woher weiß ich, dass der Vorgang erfolgreich war?
 
-Um zu überprüfen, ob Sie "Sichere Dokumente" aktiviert und konfiguriert haben, gehen Sie wie folgt vor:
+Gehen Sie wie folgt vor, um zu überprüfen, ob Sie "Sichere Dokumente" aktiviert und konfiguriert haben:
 
 - Wechseln Sie im Security & Compliance  Center zu "Bedrohungsverwaltungsrichtlinie \>  \> **ATP**    Sichere Anlagen", klicken Sie auf "Globale Einstellungen", und überprüfen Sie die Schaltfläche "Sichere Dokumente für Office-Clients aktivieren", und lassen Sie zu, dass Benutzer durch die geschützte Ansicht klicken, auch wenn "Sichere Dokumente" die Datei als schädliche Einstellungen identifiziert.
 

@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Leistung benutzerdefinierter Erweiterungen in modernen SharePoint Online-Webseiten optimieren können.
-ms.openlocfilehash: 3f9474bcfa3266742d2e01af2f1df6eb5c0d017c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 92d328c64c89a1a01bbcd50fb7ad04affdf69af8
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690678"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287197"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimieren der Leistung benutzerdefinierter Erweiterungen in modernen SharePoint Online-Webseiten
 
@@ -45,16 +45,17 @@ Mögliche Ergebnisse sind:
 - **Verbesserungsmöglichkeiten** (gelb) Werden **fünf** oder mehr Erweiterungen verwendet, werden sie in diesem Abschnitt als Warnung hervorgehoben. Sobald sieben oder mehr verwendet werden, werden diese dann unter "Aktion erforderlich" hervorgehoben.
 - **Keine Aktion erforderlich** (grün): Keine Erweiterung benötigt länger als eine Sekunde zum Laden.
 
-Wirkt sich eine Erweiterung auf die Ladezeit von Seiten aus oder liegen zu viele Erweiterungen auf der Seite vor, wird das Ergebnis im Abschnitt **Aktion erforderlich** der Ergebnisse angezeigt. Klicken Sie auf das Ergebnis, um Einzelheiten anzuzeigen, wenn Erweiterungen langsam geladen oder zu viele Erweiterungen hervorgehoben werden. Zukünftige Updates des Tools "Seitendiagnose für SharePoint" können Aktualisierungen der Analyseregeln enthalten. Stellen Sie daher sicher, dass Sie immer über die neueste Version des Tools verfügen.
+Wenn sich eine Erweiterung auf die Seitenladezeit auswirken oder die Seite  zu viele Erweiterungen enthält, wird das Ergebnis im Abschnitt "Achtung" der Ergebnisse angezeigt. Klicken Sie auf das Ergebnis, um Einzelheiten anzuzeigen, wenn Erweiterungen langsam geladen oder zu viele Erweiterungen hervorgehoben werden. Zukünftige Updates des Tools "Seitendiagnose für SharePoint" können Aktualisierungen der Analyseregeln enthalten. Stellen Sie daher sicher, dass Sie immer über die neueste Version des Tools verfügen.
 
 ![Ergebnisse der Seitenladezeiten](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
 Die verfügbaren Informationen in den Ergebnissen umfassen:
 
 - **Name und ID** zeigt identifizierende Informationen an, die Ihnen beim Auffinden der Erweiterung auf der Seite helfen können.
-- **Gesamt** zeigt die Gesamtzeit an, in der die Erweiterung initialisiert und geladen wird.
-- **Modul laden** zeigt die Zeit an, die zum Abrufen und Laden der Erweiterung benötigt wird.
-- **Initialisieren** zeigt die Zeit an, die für das Initialisieren einer Erweiterung benötigt wird.
+- **Total** shows the total time for the extension to module load and initialize. Dies ist die gesamt relative Zeit, die die Erweiterung für die Ausführung auf der Seite vom Anfang bis zum Ende auf sich genommen hat.
+- **Module Load** zeigt die Zeit an, die zum Herunterladen, Auswerten und Laden der Erweiterungen JavaScript- und CSS-Dateien. Anschließend wird der Vorgang "Init" gestartet.
+- **"Initialisieren"** zeigt die Zeit an, die die Erweiterung zum Initialisieren der Daten auf sich genommen hat.
+    Es handelt sich um einen asynchronen Aufruf, und die Initzeit ist die Berechnung der Zeit für die onInit-Funktion, wenn die zurückgegebene Zusage aufgelöst wird.
 
 Diese Informationen dienen Designern und Entwicklern zum Beheben von Problemen. Diese Informationen sollten Ihrem Entwurfs- und Entwicklungsteam bereitgestellt werden.
 

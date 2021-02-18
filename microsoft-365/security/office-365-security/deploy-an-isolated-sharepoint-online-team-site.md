@@ -17,20 +17,20 @@ ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: Verwenden Sie dieses schrittweise Bereitstellungshandbuch zum Erstellen und Konfigurieren einer isolierten SharePoint Online-Teamwebsite in Microsoft Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b1f0342afc92b4540330417ad0fc9cabe1dc8a8
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d226a545c3f8dc274f02e5d54d39739fe5d981ea
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165499"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288347"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Bereitstellen einer isolierten SharePoint Online-Teamwebsite
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
  **Zusammenfassung:** Mithilfe dieser schrittweisen Anleitung können Sie eine neue isolierte SharePoint Online-Teamwebsite bereitstellen.
 
@@ -47,7 +47,7 @@ In dieser Phase erstellen Sie die drei Azure AD-basierten Zugriffsgruppen für d
 
 Bestimmen Sie den Satz von Benutzerkonten, die den SharePoint Online-Administratoren für die isolierte Teamwebsite entsprechen.
 
-Wenn Sie Benutzerkonten und Gruppen über Microsoft 365 verwalten und Windows PowerShell verwenden möchten, erstellen Sie eine Liste ihrer Benutzerprinzipalnamen (UPNs) (Beispiel UPN: belindan@contoso.com).
+Wenn Sie Benutzerkonten und Gruppen über Microsoft 365 verwalten und Windows PowerShell verwenden möchten, erstellen Sie eine Liste ihrer Benutzerprinzipalnamen (UPNs) (Beispiel-UPN: belindan@contoso.com).
 
 ### <a name="step-2-list-the-members-for-the-site"></a>Schritt 2: Auflisten der Mitglieder für die Website
 
@@ -112,7 +112,7 @@ Wenn Sie Benutzerkonten und Gruppen über Office 365 verwalten, können Sie das 
 
 Melden Sie sich im Microsoft 365 Admin Center mit einem Benutzerkonto an, dem die Rolle "Benutzerkontoadministrator" oder "Unternehmensadministrator" zugewiesen wurde, und verwenden Sie Gruppen, um die entsprechenden Benutzerkonten und Gruppen den entsprechenden Zugriffsgruppen hinzuzufügen.
 
-Stellen Sie für PowerShell zunächst eine Verbindung mit dem [Azure Active Directory PowerShell für Graph-Modul bereit.](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Stellen Sie für PowerShell zunächst eine Verbindung mit dem [Azure Active Directory PowerShell für Graph-Modul.](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 Verwenden Sie dann den folgenden Befehlsblock, um ein einzelnes Benutzerkonto zu einer Zugriffsgruppe hinzuzufügen:
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 039ec1c3f9b0ba233f950d11b9d58be341b28121
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 520a5627d2cd280f28c4e2c3db0e565640a1eace
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930594"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289161"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Neues in der Microsoft Secure Score
 
@@ -35,12 +35,18 @@ ms.locfileid: "49930594"
 Damit die Microsoft-Sicherheitsbewertung zu einem besseren Ansprechpartner für Ihren Sicherheitsstatus wird, haben wir einige Änderungen vorgenommen. Wenn Sie mehr über geplante Änderungen wissen möchten, lesen Sie [Bald in der Microsoft-Sicherheitsbewertung verfügbar](microsoft-secure-score-whats-coming.md)
 
 Die Microsoft Secure Score finden Sie https://security.microsoft.com/securescore im [Microsoft 365 Security Center.](overview-security-center.md)
+    
+## <a name="february-2021"></a>Februar 2021
+
+### <a name="compatibility-with-graph-api"></a>Kompatibilität mit der Graph-API
+
+Die über die Graph-API bereitgestellten Empfehlungen für die Microsoft Secure Score sehen genauso aus und werden gewichtet wie die Empfehlungen, die derzeit im Microsoft 365 Security Center angezeigt werden.
 
 ## <a name="january-2021"></a>Januar 2021
 
 ### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>Unsere erste Sicherheitsempfehlung für Microsoft Teams wurde hinzugefügt.
 
-Microsoft Teams-Kunden sehen "Einschränken der Teilnahme anonymer Benutzer an Besprechungen" als neue Verbesserungsaktion in der Sicherheitsergebnis-Bewertung.
+Microsoft Teams-Kunden sehen "Einschränken der Teilnahme anonymer Benutzer an Besprechungen" als neue Verbesserungsaktion in der Sicherheitswertung.
 
 ## <a name="december-2020"></a>Dezember 2020
 
@@ -62,7 +68,7 @@ Die Möglichkeit zum Erstellen von "ServiceNow"-Tickets über die Sicherheitspun
 ### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Drei dienstbezogene Verbesserungsmaßnahmen für Microsoft Defender for Endpoint (zuvor Microsoft Defender ATP) hinzugefügt:
 
 - Beheben des Nicht-Anführungszeichen-Dienstpfads für Windows-Dienste
-- Ändern des Pfads der ausführbaren Dienstdatei zu einem gemeinsamen geschützten Speicherort
+- Ändern des Pfads der ausführbaren Datei zu einem gemeinsamen geschützten Speicherort
 - Ändern des Dienstkontos, um zwischengespeichertes Kennwort in der Registrierung von Windows zu vermeiden
 
 ## <a name="october-2020"></a>Oktober 2020
@@ -77,11 +83,11 @@ Die Möglichkeit zum Erstellen von "ServiceNow"-Tickets über die Sicherheitspun
 
 - Richtlinie zum Blockieren veralteter Authentifizierung aktivieren
 
-## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Inkompatibilität mit der Identitätssicherheitsbewertung und der Graph-API
+## <a name="incompatibility-with-identity-secure-score"></a>Inkompatibilität mit identitätssicherer Bewertung
 
-In der letzten Version von Microsoft-Sicherheitsbewertung wurde ein verbessertes Bewertungsmodell veröffentlicht. Diese Änderungen ermöglichen eine flexiblere und präzisere Ansicht Ihres Sicherheitsstatus. Diese Updates haben jedoch zu einer vorübergehenden Inkompatibilität der Microsoft-Sicherheitsbewertung mit der Identitätssicherheitsbewertung und der Graph-API geführt.
+In der letzten Version von Microsoft-Sicherheitsbewertung wurde ein verbessertes Bewertungsmodell veröffentlicht. Diese Änderungen ermöglichen eine flexiblere und präzisere Ansicht Ihres Sicherheitsstatus. Diese Updates haben jedoch die Microsoft Secure Score vorübergehend inkompatibel mit der Identitätssteignung gemacht.
 
-Im Laufe der Zeit werden die Identitätssicherheitsbewertung und die Graph-API das neue Bewertungsmodell übernehmen. Bis dahin werden Kunden Unterschiede bei den von der Microsoft-Sicherheitsbewertung, der Identitätssicherheitsbewertung und der Graph-API gemeldeten Bewertungen feststellen. Wir entschuldigen uns für alle Unannehmlichkeiten, die hierdurch verursacht werden, und arbeiten an der Sicherstellung, dass diese Erfahrungen zukünftig kompatibler sein werden.
+Mit der Zeit wird die Identitätss secure Score das neue Bewertungsmodell übernehmen. Bis dahin werden Kunden Unterschiede in den Bewertungen sehen, die von der Microsoft Secure Score und der Identitätsscore gemeldet werden. Wir entschuldigen uns für alle Unannehmlichkeiten, die hierdurch verursacht werden, und arbeiten an der Sicherstellung, dass diese Erfahrungen zukünftig kompatibler sein werden.
 
 ## <a name="updated-improvement-actions"></a>Aktualisierte Verbesserungsmaßnahmen
 

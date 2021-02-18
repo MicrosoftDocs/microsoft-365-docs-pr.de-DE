@@ -19,24 +19,24 @@ ms.custom:
 description: Administratoren können sich über die Einstellungen für den erweiterten Spamfilter (Advanced Spam Filter, ASF) informieren, die in den Antispamrichtlinien in Exchange Online Protection (EOP) verfügbar sind.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec316c98befada7a793f525be909ba0b8fa5e3ae
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 0b6db02815f5b50d199e10685e2895a174997fd2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176051"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288681"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Erweiterte Spamfiltereinstellungen (Advanced Spam Filter, ASF) in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
-> AsF-Einstellungen, die derzeit in Antispamrichtlinien verfügbar sind, sind veraltet. Es wird empfohlen, diese Einstellungen nicht in Antispamrichtlinien zu verwenden. Die Funktionalität dieser ASF-Einstellungen wird in andere Teile des Filterstapels integriert. Weitere Informationen finden Sie unter [EOP Antispamrichtlinieneinstellungen.](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
+> AsF-Einstellungen, die derzeit in Antispamrichtlinien verfügbar sind, sind derzeit veraltet. Es wird empfohlen, diese Einstellungen nicht in Antispamrichtlinien zu verwenden. Die Funktionalität dieser ASF-Einstellungen wird in andere Teile des Filterstapels integriert. Weitere Informationen finden Sie unter [EOP Antispamrichtlinieneinstellungen.](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
 
 In allen Microsoft 365-Organisationen können Administratoren mit den Einstellungen für den erweiterten Spamfilter (Advanced Spam Filter, ASF) in Antispamrichtlinien in EOP Nachrichten basierend auf bestimmten Nachrichteneigenschaften als Spam markieren. ASF zielt speziell auf diese Eigenschaften ab, da sie häufig in Spam gefunden werden. Je nach Eigenschaft markieren die ASF-Erkennungen die Nachricht entweder als **Spam** oder als Spam **mit hoher Confidence.**
 
@@ -55,7 +55,7 @@ In den folgenden Abschnitten werden die ASF-Einstellungen und -Optionen beschrie
 
 Für jede ASF-Einstellung sind die folgenden Optionen in Antispamrichtlinien verfügbar:
 
-- **On:** ASF fügt der Nachricht das entsprechende X-Kopfzeilenfeld hinzu und markiert die Nachricht entweder als **Spam** (SCL 5 oder 6 für Die Spampunktzahl [erhöhen)](#increase-spam-score-settings)oder Als Spam mit hoher Treffsicherheit **(SCL** 9 für [Spameinstellungen](#mark-as-spam-settings)markieren).
+- **On:** ASF fügt der Nachricht das entsprechende X-Kopfzeilenfeld hinzu und markiert die Nachricht entweder als **Spam** (SCL 5 oder 6 für erhöhen der Spamwerteinstellungen) [](#increase-spam-score-settings)oder als Spam mit hoher Treffsicherheit **(SCL** 9 für [Spameinstellungen).](#mark-as-spam-settings)
 
 - **Aus:** Die Einstellung "ASF" ist deaktiviert. Dies ist der Standardwert, und es wird empfohlen, ihn nicht zu ändern.
 
@@ -75,7 +75,7 @@ Für jede ASF-Einstellung sind die folgenden Optionen in Antispamrichtlinien ver
     - **NDR-Rückscatter**(*MarkAsSpamNdrBackscatter*)
     - **SPF-Eintrag: Hard fail** (*MarkAsSpamSpfRecordHardFail*)
 
-  - Die gleiche Testmodusaktion wird auf *alle* ASF-Einstellungen angewendet, die auf **"Test" festgelegt sind.** Sie können keine verschiedenen Testmodusaktionen für verschiedene ASF-Einstellungen konfigurieren.
+  - Die gleiche Testmodusaktion wird auf *alle* ASF-Einstellungen angewendet, die auf **"Test" festgelegt sind.** Sie können keine verschiedenen Testmodusaktionen für unterschiedliche ASF-Einstellungen konfigurieren.
 
 ## <a name="increase-spam-score-settings"></a>Erhöhen der Einstellungen für die Spampunktzahl
 
@@ -109,5 +109,5 @@ Mit den folgenden Einstellungen für den Spamfilter wird der SCL der erkannten N
 |**Liste mit sensiblen Begriffen anwenden** <p> *MarkAsSpamSensitiveWordList*|Microsoft verwaltet eine dynamische, aber nicht bearbeitbare Liste von Wörtern, die potenziell anstößigen Nachrichten zugeordnet sind. <p> Nachrichten, die Wörter aus der Liste vertraulicher Wörter im Betreff oder Nachrichtentext enthalten, werden als Spam mit hoher Confidence gekennzeichnet.|`X-CustomSpam: Sensitive word in subject/body`|
 |**SPF-Eintrag: Schwerer Fehler** <p> *MarkAsSpamSpfRecordHardFail*|Nachrichten, die von einer IP-Adresse gesendet werden, die nicht im SPF Sender Policy Framework (SPF)-Eintrag im DNS für die Quell-E-Mail-Domäne angegeben ist, werden als Spam mit hoher Confidence gekennzeichnet. <p> Der Testmodus ist für diese Einstellung nicht verfügbar.|`X-CustomSpam: SPF Record Fail`|
 |**Bedingte Absender-ID-Filterung: Schwerer Fehler** <p> *MarkAsSpamFromAddressAuthFail*|Nachrichten, bei der eine bedingte Absender-ID-Überprüfung nicht möglich ist, werden als Spam gekennzeichnet. <p> Diese Einstellung kombiniert eine SPF-Überprüfung mit einer Sender ID-Überprüfung, um den Schutz vor Nachrichtenkopfzeilen zu unterstützen, die gefälschte Absender enthalten. <p> Der Testmodus ist für diese Einstellung nicht verfügbar.|`X-CustomSpam: SPF From Record Fail`|
-|**NDR-Rückläufer** <p> *MarkAsSpamNdrBackscatter*|*Rückläufer sind* nutzlose Unzustellbarkeitsberichte (auch NDRs oder Unzustellbarkeitsnachrichten bezeichnet), die von gefälschten Absendern in E-Mail-Nachrichten verursacht werden. Weitere Informationen finden Sie unter [Rückscatternachrichten und EOP](backscatter-messages-and-eop.md). <p> Sie müssen diese Einstellung nicht in den folgenden Umgebungen konfigurieren, da legitime NDRs übermittelt werden und der Rückläufer als Spam gekennzeichnet ist: <ul><li>Microsoft 365-Organisationen mit Exchange Online-Postfächern.</li><li>Lokale E-Mail-Organisationen, in denen Sie *ausgehende* E-Mails über EOP routen.</li></ul> <p> In eigenständigen EOP-Umgebungen, die eingehende E-Mails an lokale Postfächer schützen, hat das Aktivieren oder Deaktivieren dieser Einstellung folgendes Ergebnis: <ul><li> **On:** Legitime NDRs werden zugestellt, und der Rückläufer wird als Spam gekennzeichnet.</li><li>**Aus:** Legitime NDRs und Rückläufer durchgehen die normale Spamfilterung. Die meisten legitimen NDRs werden an den ursprünglichen Absender der Nachricht zugestellt. Einige, aber nicht alle Rückscatter werden als Spam mit hoher Confidence gekennzeichnet. Per Definition kann der Rückscatter nur an den gefälschten Absender und nicht an den ursprünglichen Absender zugestellt werden.</li></ul> <p> Der Testmodus ist für diese Einstellung nicht verfügbar.|`X-CustomSpam: Backscatter NDR`|
+|**NDR-Rückläufer** <p> *MarkAsSpamNdrBackscatter*|*Rückläufer sind* nutzlose Unzustellbarkeitsberichte (auch NDRs oder Unzustellbarkeitsnachrichten bezeichnet), die von gefälschten Absendern in E-Mail-Nachrichten verursacht werden. Weitere Informationen finden Sie unter [Rückscatternachrichten und EOP](backscatter-messages-and-eop.md). <p> Sie müssen diese Einstellung nicht in den folgenden Umgebungen konfigurieren, da legitime NDRs zugestellt werden und der Rückläufer als Spam gekennzeichnet ist: <ul><li>Microsoft 365-Organisationen mit Exchange Online-Postfächern.</li><li>Lokale E-Mail-Organisationen, in denen Sie *ausgehende* E-Mails über EOP routen.</li></ul> <p> In eigenständigen EOP-Umgebungen, die eingehende E-Mails an lokale Postfächer schützen, hat das Aktivieren oder Deaktivieren dieser Einstellung folgendes Ergebnis: <ul><li> **On:** Legitime NDRs werden zugestellt, und der Rückläufer wird als Spam gekennzeichnet.</li><li>**Aus:** Legitime NDRs und Rückläufer durchgehen die normale Spamfilterung. Die meisten legitimen NDRs werden an den ursprünglichen Absender der Nachricht zugestellt. Einige, aber nicht alle Rückscatter werden als Spam mit hoher Confidence gekennzeichnet. Per Definition kann der Rückscatter nur an den gefälschten Absender und nicht an den ursprünglichen Absender zugestellt werden.</li></ul> <p> Der Testmodus ist für diese Einstellung nicht verfügbar.|`X-CustomSpam: Backscatter NDR`|
 |

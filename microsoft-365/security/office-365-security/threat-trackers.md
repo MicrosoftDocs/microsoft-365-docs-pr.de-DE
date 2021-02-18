@@ -7,7 +7,6 @@ author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,93 +15,98 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Erfahren Sie mehr über Threat Tracker, einschließlich neuer bemerkenswerter Tracker, damit Ihre Organisation weiterhin auf Sicherheitsbedenken eingeht.
-ms.openlocfilehash: 551f5704337ef8989fd1568854822bc1d9d4c14b
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: Erfahren Sie mehr über Bedrohungsverfolgungen, einschließlich neuer beachtenswerter Tracker, damit Ihre Organisation immer auf dem Neusten der Sicherheitsbedenken bleibt.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a734085e9bc341424ee40757a21b855442605bcd
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615456"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287389"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Aufzeichnungen von Bedrohungen – neu und wichtig
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Microsoft Defender für Office 365 – Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-[Office 365 Bedrohungs Ermittlungs-und-Antwort](office-365-ti.md) Funktionen ermöglichen es dem Sicherheitsteam Ihrer Organisation, Cyber-Bedrohungen zu ermitteln und Maßnahmen zu ergreifen. Zu den Funktionen für die Untersuchung und die Reaktionsfähigkeit von Office 365 Threat Tracker gehören auch bemerkenswerte Tracker. Lesen Sie diesen Artikel, um einen Überblick über diese neuen Features und die nächsten Schritte zu erhalten.
+[Office 365 Threat Investigation and Response](office-365-ti.md) capabilities enable your organization's security team to discover and take action against cybersecurity threats. Office 365 Threat Investigation and Response capabilities include Threat Tracker features, including Note note trackers. Lesen Sie diesen Artikel, um sich einen Überblick über diese neuen Features und die nächsten Schritte zu verschaffen.
 
 > [!IMPORTANT]
-> Office 365 Threat Intelligence ist jetzt Microsoft Defender für Office 365 Plan 2, zusammen mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [Microsoft Defender für Office 365 Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und [Microsoft Defender für Office 365-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence ist jetzt Microsoft Defender für Office 365 Plan 2 und bietet zusätzliche Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [Microsoft Defender für Office 365-Pläne](https://products.office.com/exchange/advance-threat-protection) und -Preise sowie in der Microsoft Defender für Office [365-Dienstbeschreibung.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-## <a name="what-are-threat-trackers"></a>Was sind Threat Tracker?
+## <a name="what-are-threat-trackers"></a>Was sind Bedrohungsverfolgungen?
 
-Threat Tracker sind informative Widgets und Ansichten, die Ihnen Informationen zu verschiedenen Cyber-Problemen bereitstellen, die sich auf Ihr Unternehmen auswirken könnten. Beispielsweise können Sie Informationen zu Trending-Schadsoftware-Kampagnen mithilfe von Threat Tracker anzeigen.
+Bedrohungsverfolgungen sind informative Widgets und Ansichten, die Ihnen Informationen zu verschiedenen Cybersicherheitsproblemen bieten, die sich auf Ihr Unternehmen auswirken können. Sie können z. B. Informationen zu im Trend trendenden Schadsoftwarekampagnen mithilfe von Bedrohungsverfolgungen anzeigen.
 
-![Beispiel für Threat Tracker mit Malware Kampagnen](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
+![Beispiel für die Bedrohungsverfolgung mit Schadsoftwarekampagnen](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
 
-Die meisten Tracker-Seiten umfassen Trend Nummern, die regelmäßig aktualisiert werden, Widgets, die Ihnen helfen zu verstehen, welche Probleme am größten sind oder am stärksten gewachsen sind, sowie einen Quick Link in der Spalte **Aktionen** , die Sie zum Explorer führt, in dem Sie ausführlichere Informationen anzeigen können.
+Die meisten Nachverfolgungsseiten enthalten Trendzahlen, die regelmäßig aktualisiert werden, Widgets, die Ihnen helfen zu  verstehen, welche Probleme am größten sind oder am meisten an geworden sind, und einen Schnelllink in der Spalte "Aktionen", der Sie zum Explorer führt, wo Sie ausführlichere Informationen anzeigen können.
 
 ![Beispiel für Kampagneninformationen im Explorer](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
 
-Tracker sind nur einige der vielen großartigen Features, die Sie mit [Microsoft Defender für Office 365 Plan 2](office-365-ti.md)erhalten. Zu den Gefahren Verfolgungen gehören [Noteworth-Tracker](#noteworthy-trackers), [Trend Tracker](#trending-trackers), nach [verfolgte Abfragen](#tracked-queries)und [gespeicherte Abfragen](#saved-queries).
+Tracker sind nur einige der vielen großartigen Features, die Sie mit [Microsoft Defender für Office 365 Plan 2 erhalten.](office-365-ti.md) Bedrohungsverfolgungen umfassen [Note trackers](#noteworthy-trackers), [Trending Trackers](#trending-trackers), Nachverfolgte [Abfragen](#tracked-queries)und [gespeicherte Abfragen](#saved-queries).
 
-Um Ihre Threat Tracker für Ihre Organisation anzuzeigen und zu verwenden, wechseln Sie zum Security & Compliance Center ( <https://protection.office.com> ) und wählen Sie Threat **Management** \> **Threat Tracker** aus.
+To view and use your Threat Trackers for your organization, go to the Security & Compliance Center ( <https://protection.office.com> ) and choose Threat **management** \> **Threat tracker**.
 
 > [!NOTE]
-> Um Threat Tracker verwenden zu können, müssen Sie ein globaler Administrator, Sicherheitsadministrator oder Sicherheits Leser sein. Weitere Informationen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> Um Bedrohungsverfolgungen verwenden zu können, müssen Sie globaler Administrator, Sicherheitsadministrator oder Sicherheitsleser sein. Siehe ["Berechtigungen" im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-### <a name="noteworthy-trackers"></a>Bemerkenswerte Tracker
+### <a name="noteworthy-trackers"></a>Beachtenswerte Tracker
 
-Bemerkenswerte Tracker sind, wo Sie große und kleinere Bedrohungen und Risiken finden, von denen wir denken, dass Sie darüber Bescheid wissen sollten. Wichtige Tracker helfen Ihnen zu ermitteln, ob diese Probleme in Ihrer Microsoft 365-Umgebung vorhanden sind, sowie Links zu Artikeln (wie diese), die Ihnen ausführlichere Informationen dazu geben, was geschieht und wie Sie die Verwendung von Office 365 in Ihrer Organisation beeinflussen. Unabhängig davon, ob es sich um eine große neue Bedrohung (beispielsweise Wannacry, Petja) oder um eine vorhandene Bedrohung handelt, die einige neue Herausforderungen verursachen könnte (wie unsere anderen Antritts beachtenswerten Item-Nemucod), hier finden Sie wichtige neue Elemente, die Sie und Ihr Sicherheitsteam regelmäßig überprüfen und prüfen sollten.
+Beachten Sie, dass Sie auf beachtenswerten Trackern große und kleinere Bedrohungen und Risiken finden, die Sie kennen sollten. Beachten Sie, dass Sie mithilfe von Trackern feststellen können, ob diese Probleme in Ihrer Microsoft 365-Umgebung vorliegen, sowie link zu Artikeln (wie diesem), die Ihnen weitere Details zu den Vorgängen und deren Auswirkungen auf die Nutzung von Office 365 in Ihrer Organisation bieten. Ganz gleich, ob es sich um eine große neue Bedrohung (z. B. Wannacry, Petya) oder eine vorhandene Bedrohung handelt, die einige neue Herausforderungen (wie unser anderes erwähnenswertes Element – Nemucod) darstellt– hier finden Sie wichtige neue Elemente, die Sie und Ihr Sicherheitsteam regelmäßig überprüfen und untersuchen sollten.
 
-In der Regel werden bemerkenswerte Tracker nur für ein paar Wochen veröffentlicht, wenn wir neue Bedrohungen erkennen und denken, dass Sie möglicherweise die zusätzliche Sichtbarkeit benötigen, die dieses Feature bietet. Nachdem das größte Risiko für eine Bedrohung bestanden ist, werden wir dieses bemerkenswerte Element entfernen. Auf diese Weise können wir die Liste mit anderen relevanten neuen Elementen aktualisieren und auf dem neuesten Stand halten.
+In der Regel werden beachtenswerte Tracker nur ein paar Wochen lang veröffentlicht, wenn wir neue Bedrohungen erkennen und denken, dass Sie möglicherweise die zusätzliche Sichtbarkeit benötigen, die dieses Feature bietet. Sobald das größte Risiko für eine Bedrohung besteht, entfernen wir dieses beachtenswerte Element. Auf diese Weise können wir die Liste mit anderen relevanten neuen Elementen auf dem neuesten Stand halten.
 
-### <a name="trending-trackers"></a>Trend-Tracker
+### <a name="trending-trackers"></a>Trendverfolgungen
 
-Trending Tracker (früher als Kampagnen bezeichnet) zeigen neue Bedrohungen an, die in der letzten Woche in der e-Mail-Adresse Ihrer Organisation eingegangen sind.
+Trendverfolgungen (früher Kampagnen genannt) heben neue Bedrohungen auf, die in den E-Mails Ihrer Organisation in der letzten Woche eingegangen sind.
 
-![Beispiel für Trending Malware Campaigns widget](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
+![Beispiel für das Widget für trendende Schadsoftwarekampagnen](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
 
-Trend Tracker geben Ihnen eine Vorstellung von neuen Bedrohungen, die Sie überprüfen sollten, um sicherzustellen, dass Ihre breitere Unternehmensumgebung gegen Angriffe vorbereitet ist.
+Trendverfolgungen geben Ihnen eine Vorstellung von neuen Bedrohungen, die Sie überprüfen sollten, um sicherzustellen, dass Ihre umfassendere Unternehmensumgebung vor Angriffen vorbereitet ist.
 
 ### <a name="tracked-queries"></a>Nachverfolgte Abfragen
 
-Nachverfolgte Abfragen nutzen Ihre gespeicherten Abfragen, um die Aktivitäten von Microsoft 365 in Ihrer Organisation regelmäßig zu bewerten. Dies gibt Ihnen Ereignis Trends, mit mehr in den kommenden Monaten kommen. Nachverfolgte Abfragen werden automatisch ausgeführt, sodass Sie aktuelle Informationen erhalten, ohne sich daran erinnern müssen, Ihre Abfragen erneut auszuführen.
+Nachverfolgte Abfragen nutzen Ihre gespeicherten Abfragen, um die Microsoft 365-Aktivitäten in Ihrer Organisation regelmäßig zu bewerten. Dies gibt Ihnen einen Ereignistrend, und in den kommenden Monaten werden noch mehr folgen. Nachverfolgte Abfragen werden automatisch ausgeführt, um Ihnen aktuelle Informationen zu geben, ohne daran denken zu müssen, Ihre Abfragen erneut ausführen zu müssen.
 
-![Beispiel für nachverfolgte Abfragen mit einem ausgewählten](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
+![Beispiel für nachverfolgte Abfragen mit einer ausgewählten](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
 
 ### <a name="saved-queries"></a>Gespeicherte Abfragen
 
-Gespeicherte Abfragen finden Sie auch im Abschnitt Trackers. Sie können gespeicherte Abfragen verwenden, um die allgemeinen Explorer-Suchvorgänge zu speichern, die Sie schneller und wiederholter wiederherstellen möchten, ohne die Suche jedes Mal neu erstellen zu müssen.
+Gespeicherte Abfragen finden Sie auch im Abschnitt "Tracker". Sie können gespeicherte Abfragen verwenden, um die allgemeinen Explorer-Suchen zu speichern, zu der Sie schneller und wiederholt zurückkommen möchten, ohne die Suche jedes Mal neu erstellen zu müssen.
 
-![Beispiel für gespeicherte Abfragen mit einem ausgewählten](../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
+![Beispiel für gespeicherte Abfragen mit einer ausgewählten Abfrage](../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
 
-Sie können eine bemerkenswerte Tracker-Abfrage oder eine ihrer eigenen Explorer-Abfragen jederzeit über die Schaltfläche **Abfrage speichern** oben auf der Explorer-Seite speichern. Alles, was dort gespeichert ist, wird in der Liste **gespeicherte Abfragen** auf der Seite Tracker angezeigt.
+Sie können immer eine beachtenswerte Trackerabfrage oder eine ihrer  eigenen Explorer-Abfragen mithilfe der Schaltfläche "Abfrage speichern" oben auf der Explorer-Seite speichern. Dort gespeicherte Daten werden in der Liste gespeicherter **Abfragen** auf der Seite "Tracker" angezeigt.
 
 ## <a name="trackers-and-explorer"></a>Tracker und Explorer
 
-Unabhängig davon, ob Sie e-Mails, Inhalte oder Office-Aktivitäten (in Kürze) überprüfen, können Explorer und Tracker zusammenarbeiten, um Sicherheitsrisiken und-Bedrohungen zu untersuchen und nachzuverfolgen. Alle zusammen bieten Ihnen Tracker Informationen zum Schutz Ihrer Benutzer, indem Sie neue, bemerkenswerte und häufig gesuchte Probleme hervorheben, um sicherzustellen, dass Ihr Unternehmen besser geschützt ist, wenn es in die Cloud wechselt.
+Unabhängig davon, ob Sie E-Mails, Inhalte oder Office-Aktivitäten (in Kürze verfügbar) überprüfen, arbeiten Explorer und Tracker zusammen, um Sicherheitsrisiken und Bedrohungen zu untersuchen und nachverfolgt zu werden. Insgesamt bieten Tracker Ihnen Informationen zum Schutz Ihrer Benutzer, indem sie neue, wichtige und häufig durchsuchte Probleme hervorheben und so sicherstellen, dass Ihr Unternehmen besser geschützt ist, wenn es in die Cloud wechselt.
 
-Beachten Sie, dass Sie uns jederzeit Feedback zu diesen oder anderen Sicherheitsfeatures von Microsoft 365 geben können, indem Sie auf die Schaltfläche **Feedback** in der unteren rechten Ecke der [Übersicht über das Security & Compliance Center](https://support.microsoft.com/office/a5f2fd18-b029-4257-b5a8-ae83e7768c85)klicken.
+Denken Sie daran, dass Sie uns jederzeit Feedback zu diesen oder anderen Microsoft 365-Sicherheitsfeatures geben können, indem Sie auf die Schaltfläche **"Feedback"** in der unteren rechten Ecke des [Security & Compliance Center](https://support.microsoft.com/office/a5f2fd18-b029-4257-b5a8-ae83e7768c85)klicken.
 
 ![Security & Compliance Center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
 
 ## <a name="trackers-and-microsoft-defender-for-office-365"></a>Tracker und Microsoft Defender für Office 365
 
-Mit unserer ersten bemerkenswerten Bedrohung heben wir fortgeschrittene Malware-Bedrohungen hervor, die durch [sichere Anlagen](atp-safe-attachments.md)erkannt werden. Wenn Sie ein Office 365 Enterprise E5-Kunde sind und [Microsoft Defender nicht für Office 365](office-365-atp.md)verwenden, sollten Sie in Ihrem Abonnement enthalten sein. Defender für Office 365 bietet auch dann einen Mehrwert, wenn andere Sicherheitstools e-Mail-Fluss mit Ihren Office 365 Diensten filtern. Allerdings funktionieren Antispam-und [sichere Links](atp-safe-links.md) -Funktionen am besten, wenn Ihre Haupt-e-Mail-Sicherheitslösung über Office 365.
+Mit unserer ersten erwähnenswerten Bedrohung heben wir erweiterte Schadsoftwarebedrohungen heraus, die von sicheren [Anlagen erkannt werden.](atp-safe-attachments.md) Wenn Sie ein Office 365 Enterprise E5-Kunde sind und [Microsoft Defender für Office 365](office-365-atp.md)nicht verwenden, sollten Sie es sein – es ist in Ihrem Abonnement enthalten. Defender für Office 365 bietet auch dann einen Mehrwert, wenn Sie über andere Sicherheitstools verfügen, die den E-Mail-Fluss mit Ihren Office 365-Diensten filtern. Antispam- und [Safe Links-Features](atp-safe-links.md) funktionieren jedoch am besten, wenn Ihre wichtigste E-Mail-Sicherheitslösung office 365 umfasst.
 
 ![Microsoft Defender für Office 365 im Security & Compliance Center](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
 
-In der heutigen mit Bedrohungen gespickten Welt bedeutet das Durchführen von nur herkömmlichen Antimalware-Scans, dass Sie nicht gut genug vor Angriffen geschützt sind. Modernere Angreifer verwenden häufig verfügbare Tools zum Erstellen von neuen, verschleierten oder verzögerten Angriffen, die von herkömmlichen Signaturen-basierten Antischadsoftware-Modulen nicht erkannt werden. Das Feature für sichere Anlagen verwendet e-Mail-Anlagen und zündet Sie in einer virtuellen Umgebung an, um festzustellen, ob diese sicher oder böswillig sind. Dieser detonations Prozess öffnet jede Datei in einer virtuellen Computerumgebung und überwacht dann, was nach dem Öffnen der Datei geschieht. Unabhängig davon, ob es sich um eine PDF-Datei, eine komprimierte Datei oder ein Office-Dokument handelt, der böswillige Code kann in einer Datei ausgeblendet werden und nur aktiviert werden, wenn das Opfer Sie auf seinem Computer öffnet. Durch das detonieren und Analysieren der Datei im e-Mail-Fluss findet Defender for Office 365-Funktionen diese Bedrohungen basierend auf dem Verhalten, der dateireputation und einer Reihe von heuristischen Regeln.
+In der heutigen Bedrohungswelt bedeutet die ausschließliche Ausführung herkömmlicher Ansoftwarescans, dass Sie nicht ausreichend vor Angriffen geschützt sind. Heutzutage verwenden komplexere Angreifer häufig verfügbare Tools, um neue, verschleierte oder verzögerte Angriffe zu erstellen, die von herkömmlichen signaturbasierten An malware-Modulen nicht erkannt werden. Das Feature "Sichere Anlagen" verwendet E-Mail-Anlagen und detoniert sie in einer virtuellen Umgebung, um festzustellen, ob sie sicher oder bösartig sind. Dieser Detonationsprozess öffnet jede Datei in einer virtuellen Computerumgebung und beobachtet dann, was nach dem Öffnen der Datei geschieht. Ob es sich um eine PDF- und eine komprimierte Datei oder ein Office-Dokument, bösartiger Code kann in einer Datei ausgeblendet werden und nur aktiviert werden, wenn das Opfer sie auf ihrem Computer öffnet. Durch die Detonierung und Analyse der Datei im E-Mail-Fluss findet Defender für Office 365-Funktionen diese Bedrohungen basierend auf Verhaltensweisen, der Datei-Reputation und einer Reihe heuristischer Regeln.
 
-Mit dem neuen bemerkenswerten Bedrohungs Filter werden Elemente hervorgehoben, die vor kurzem über sichere Anlagen erkannt wurden. Diese Erkennungen stellen Elemente dar, bei denen es sich um neue schädliche Dateien handelt, die zuvor von Microsoft 365 weder in Ihrem e-Mail-Fluss noch in der e-Mail anderer Kunden gefunden wurden. Achten Sie auf die Elemente im bemerkenswerten Threat Tracker, sehen Sie, wer von Ihnen anvisiert wurde, und überprüfen Sie die detonations Details auf der Registerkarte Erweiterte Analyse (gefunden durch Klicken auf den Betreff der e-Mail im Explorer). Hinweis Sie finden diese Registerkarte nur in e-Mails, die von der Funktion "sichere Anlagen" erkannt werden – dieser bemerkenswerte Tracker enthält diesen Filter, aber Sie können diesen Filter auch für andere Suchvorgänge im Explorer verwenden.
+Der neue Erwähnenswerte Bedrohungsfilter hebt Elemente hervor, die kürzlich über sichere Anlagen erkannt wurden. Diese Erkennungen stellen Elemente dar, bei der es sich um neue schädliche Dateien handelt, die von Microsoft 365 weder in Ihrem E-Mail-Fluss noch in den E-Mails anderer Kunden gefunden wurden. Achten Sie auf die Elemente im Noteworthy Threat Tracker, sehen Sie, wer von ihnen ausgerichtet wurde, und überprüfen Sie die auf der Registerkarte "Erweiterte Analyse" angezeigten Detonationsdetails (gefunden durch Klicken auf den Betreff der E-Mail im Explorer). Beachten Sie, dass Sie diese Registerkarte nur in E-Mails finden, die von der Funktion "Sichere Anlagen" erkannt wurden. Dieser beachtenswerte Tracker enthält diesen Filter, Sie können diesen Filter jedoch auch für andere Suchen im Explorer verwenden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Wenn Ihre Organisation noch nicht über diese Office 365-und-Antwortfunktionen verfügt, finden Sie weitere Informationen unter [wie werden Office 365 Bedrohungs Ermittlung und-Antwortfunktionen abgerufen?](office-365-ti.md).
+- Wenn Ihre Organisation noch nicht über diese Office 365 Threat Investigation and Response-Funktionen verfügt, sehen Sie sich an, wie wir die [Office 365](office-365-ti.md)Threat Investigation and Response-Funktionen nutzen können.
 
-- Stellen Sie sicher, dass Ihrem Sicherheitsteam die richtigen Rollen und Berechtigungen zugewiesen sind. Sie müssen ein globaler Administrator sein, oder der Sicherheitsadministrator oder die Such-und Lösch Rolle im Security & Compliance Center zugewiesen sein. Weitere Informationen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Stellen Sie sicher, dass Ihrem Sicherheitsteam die richtigen Rollen und Berechtigungen zugewiesen sind. Sie müssen ein globaler Administrator sein oder die Rolle "Sicherheitsadministrator" oder "Suchen und Löschen" im Security & Compliance Center zugewiesen haben. Siehe ["Berechtigungen" im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- Achten Sie darauf, dass die neuen Tracker in Ihrer Microsoft 365-Umgebung angezeigt werden. Wenn verfügbar, finden Sie [hier](https://protection.office.com/)ihre Tracker. Wechseln Sie zu Threat **Management** \> **Threat Tracker**.
+- Sehen Sie sich an, ob die neuen Tracker in Ihrer Microsoft 365-Umgebung verfügbar sind. Wenn verfügbar, finden Sie ihre Tracker [hier.](https://protection.office.com/) Wechseln Sie zu **Threat Management** \> **Threat Trackers**.
 
-- Wenn Sie dies noch nicht getan haben, erfahren Sie mehr über und konfigurieren Sie [Microsoft Defender für Office 365](office-365-atp.md) für Ihre Organisation, einschließlich [sicherer Links](atp-safe-links.md) und [sicherer Anlagen](atp-safe-attachments.md).
+- Wenn Sie dies noch nicht getan haben, erfahren Sie mehr über Und konfigurieren [](atp-safe-links.md) [Sie Microsoft Defender für Office 365](office-365-atp.md) für Ihre Organisation, einschließlich sicherer Links und sicherer [Anlagen.](atp-safe-attachments.md)

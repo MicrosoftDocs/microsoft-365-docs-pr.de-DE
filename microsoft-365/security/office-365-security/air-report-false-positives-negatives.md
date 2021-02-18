@@ -22,22 +22,22 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 451a6b19139502a3765795694860e884a7a469bf
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 48d7e1a7497f9bc2a07a84b36fb07939d25609bf
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175751"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289149"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>So melden Sie falsch positive/negative Ergebnisse in automatisierten Untersuchungs- und Reaktionsfunktionen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Microsoft Defender für Office 365 Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender für Office 365 – Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Wenn funktionen für die automatische Untersuchung und Reaktion [(AIR) in Office 365](automated-investigation-response-office.md) etwas übersehen oder falsch erkannt haben, gibt es Schritte, die Ihr Sicherheitsteam unternehmen kann, um dies zu beheben. Zu diesen Aktionen gehören:
+Wenn automatisierte Untersuchungs- und Reaktionsfunktionen [(AIR) in Office 365](automated-investigation-response-office.md) etwas verpasst oder falsch erkannt haben, gibt es Schritte, die Ihr Sicherheitsteam unternehmen kann, um dies zu beheben. Zu diesen Aktionen gehören:
 
 - [Melden eines falsch positiven/negativen Ergebnisses an Microsoft;](#report-a-false-positivenegative-to-microsoft-for-analysis)
 - [Anpassen von Warnungen](#adjust-an-alert-to-prevent-false-positives-from-recurring) (falls erforderlich); und
@@ -80,11 +80,11 @@ Im Action Center können Sie Korrekturaktionen sehen, die ergriffen wurden, und 
 
 1. Wechseln Sie zum Microsoft 365 Security Center ( [https://security.microsoft.com](https://security.microsoft.com) ).
 2. Wählen Sie im Navigationsbereich **"Aktionscenter" aus.** 
-3. Wählen Sie die **Registerkarte "Verlauf"** aus, um die Liste der abgeschlossenen Aktionen anzeigen.
+3. Wählen Sie die **Registerkarte "Verlauf"** aus, um die Liste der abgeschlossenen Aktionen anzeigen zu können.
 4. Wählen Sie ein Element aus. Der Flyoutbereich wird geöffnet. 
 5. Wählen Sie im Flyoutbereich **"Rückgängig" aus.** (Nur Aktionen, die rückgängig gemacht werden können, verfügen über eine **Schaltfläche "Rückgängig".)**
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Siehe auch
 
 - [Microsoft Defender für Office 365](office-365-atp.md)
 - [Automatisierte Untersuchungen in Microsoft Defender für Office 365](office-365-air.md)

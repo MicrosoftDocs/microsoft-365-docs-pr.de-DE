@@ -21,20 +21,20 @@ description: Erfahren Sie, wie Sie die Benachrichtigungsfeatures im Office 365 S
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f4af23ac1fd3c7272fc60b2228bf808351cb4d2b
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: d4c92a0bccded461d272d84e0f5b4d06a3b44713
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176027"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287089"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>Warnungen im Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
 
 Verwenden Sie die Benachrichtigungsfeatures im Security & Compliance Center, um Warnungen für Ihre Organisation anzuzeigen und zu verwalten, einschließlich der Verwaltung erweiterter Warnungen im Rahmen der Übersicht über [Microsoft Cloud App Security.](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 
@@ -69,5 +69,5 @@ In der folgenden Tabelle werden  die Tools beschrieben, die unter "Warnungen" im
 |Tool|Beschreibung|
 |---|---|
 |[Verwalten von Warnungen](../../compliance/create-activity-alerts.md)|Verwenden Sie Aktivitätswarnungen, um E-Mail-Benachrichtigungen an sich selbst oder andere Administratoren zu senden, wenn Benutzer bestimmte Aktivitäten in Microsoft 365 ausführen. Aktivitätswarnungen ähneln dem Durchsuchen des Überwachungsprotokolls nach Ereignissen, mit der Ausnahme, dass Eine E-Mail gesendet wird, wenn ein Ereignis auftritt, für das Sie eine Warnung erstellt haben.|
-|[Verwalten erweiterter Warnungen](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Verwenden Sie **das Feature** "Erweiterte Warnungen verwalten" von Microsoft 365 Cloud App Security, um Richtlinien zu erstellen, die Sie auf verdächtige und anomale Aktivitäten in Microsoft 365 aufmerksam machen können. Nachdem Sie darauf aufmerksam wurden, können Sie Situationen untersuchen, die potenziell problematisch sind, und bei Bedarf Maßnahmen ergreifen, um Sicherheitsprobleme zu beheben.|
+|[Verwalten erweiterter Warnungen](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Verwenden Sie **das Feature** "Erweiterte Warnungen verwalten" von Microsoft 365 Cloud App Security, um Richtlinien zu erstellen, die Sie vor verdächtigen und anomalen Aktivitäten in Microsoft 365 warnen können. Nachdem Sie darauf aufmerksam wurden, können Sie Situationen untersuchen, die potenziell problematisch sind, und bei Bedarf Maßnahmen ergreifen, um Sicherheitsprobleme zu beheben.|
 |

@@ -15,21 +15,21 @@ ms.custom:
 description: .
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e578cadf6687e02c900299a75bdd00a9d6e5b2ee
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 77f666e5eeceee3f5b324e5b9b6fac721c10e410
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166147"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286866"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Steuern der automatischen externen E-Mail-Weiterleitung in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Als Administrator haben Sie möglicherweise Unternehmensanforderungen, um automatisch weitergeleitete Nachrichten an externe Empfänger (Empfänger außerhalb Ihrer Organisation) einzuschränken oder zu steuern. Die E-Mail-Weiterleitung kann hilfreich sein, aber auch ein Sicherheitsrisiko aufgrund der potenziellen Offenlegung von Informationen darstellen. Angreifer verwenden diese Informationen möglicherweise, um Ihre Organisation oder Ihre Partner angreift.
 
@@ -72,8 +72,8 @@ Remotedomäneneinstellungen und Nachrichtenflussregeln sind unabhängig von den 
 
 Mit dieser Featureunabhängigkeit können Sie (z. B.) die automatische Weiterleitung in Filterrichtlinien für ausgehende Spamnachrichten zulassen, aber Remotedomänen verwenden, um die externen Domänen zu steuern, an die Benutzer Nachrichten weiterleiten können.
 
-## <a name="the-blocked-email-forwarding-message"></a>Die blockierte E-Mail-Weiterleitungsnachricht
+## <a name="blocked-email-forwarding-messages"></a>Blockierte E-Mail-Weiterleitungsnachrichten
 
-Wenn eine Nachricht als automatisch weitergeleitet erkannt  wird und die Organisationsrichtlinie diese Aktivität blockiert, wird die Nachricht an den Absender in einem NDR mit den folgenden Informationen zurückgegeben:
+Wenn eine Nachricht als automatisch weitergeleitet [](configure-the-outbound-spam-policy.md) erkannt wird  und die Filterrichtlinie für ausgehende Spamnachrichten diese Aktivität blockiert, wird die Nachricht an den Absender in einem NDR mit den folgenden Informationen zurückgegeben:
 
 `5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)`

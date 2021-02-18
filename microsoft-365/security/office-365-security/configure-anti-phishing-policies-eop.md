@@ -15,19 +15,19 @@ ms.collection:
 description: Administratoren können erfahren, wie Sie die Antiphishingrichtlinien erstellen, ändern und löschen, die in Exchange Online Protection (EOP)-Organisationen mit oder ohne Exchange Online-Postfächer verfügbar sind.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 052e19d811f56fe633ff0fbde79f51860a04a669
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 5bab5e791cb58c4e681a802179583471bb6ab165
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165847"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287913"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Konfigurieren von Anti-Phishing-Richtlinien in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer gibt es eine standardmäßige Antiphishingrichtlinie, die eine begrenzte Anzahl von Standardmäßig aktivierten Antis spoofing-Funktionen enthält. Weitere Informationen finden Sie unter ["Spoofing"-Einstellungen in Antiphishingrichtlinien.](set-up-anti-phishing-policies.md#spoof-settings)
 
@@ -64,7 +64,7 @@ Um die Effektivität des Antiphishingschutzes zu erhöhen, können Sie benutzerd
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-  Antiphishingrichtlinien können in der eigenständigen EOP PowerShell nicht verwaltet werden.
+  Sie können keine Antiphishingrichtlinien in der eigenständigen EOP PowerShell verwalten.
 
 - Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen im Security & Compliance Center Berechtigungen zugewiesen werden.
   - Zum Hinzufügen, Ändern und Löschen von Antiphishingrichtlinien müssen Sie Mitglied der Rollengruppe **"Organisationsverwaltung"** oder **"Sicherheitsadministrator"** sein.
@@ -74,13 +74,13 @@ Um die Effektivität des Antiphishingschutzes zu erhöhen, können Sie benutzerd
 
   **Hinweise**:
 
-  - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   - Die **Rollengruppe "Organisationsverwaltung nur** anzeigen" in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) bietet auch schreibgeschützten Zugriff auf das <sup>\*</sup> Feature.
   - <sup>\*</sup> Im Security & Compliance Center können Benutzer mit schreibgeschützten Zugriff die Einstellungen benutzerdefinierter Antiphishingrichtlinien anzeigen. Schreibgeschützte Benutzer können die Einstellungen in der standardmäßigen Antiphishingrichtlinie nicht sehen.
 
 - Um Antiphishingrichtlinien in EOP als eigenständige Lösung zu erstellen und zu ändern, müssen Sie etwas tun, das eine _Hydratation_ für Ihren Mandanten erfordert. In der Exchange Admin Center (EAC) können  Sie beispielsweise zur Registerkarte "Berechtigungen" wechseln, eine vorhandene Rollengruppe auswählen, auf das Symbol "Bearbeiten" klicken und eine Rolle entfernen (die Sie letztendlich wieder  ![ ](../../media/ITPro-EAC-EditIcon.png) hinzufügen). Wenn Ihr Mandant noch nie aktivieren wurde, erhalten Sie ein Dialogfeld namens "Organisationseinstellungen aktualisieren" mit einer Statusleiste, die erfolgreich abgeschlossen werden sollte.  Weitere Informationen zur Hydratation finden Sie im [Cmdlet "Enable-OrganizationCustomization"](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization) (das in der eigenständigen EOP PowerShell oder im Security & Compliance Center nicht verfügbar ist).
 
-- Die empfohlenen Einstellungen für Antiphishingrichtlinien finden Sie unter [EOP-Standardeinstellungen für Antiphishingrichtlinien.](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)
+- Die empfohlenen Einstellungen für Antiphishingrichtlinien finden Sie unter [EOP Default Anti-Phishing Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 
 - Es kann bis zu 30 Minuten dauern, bis die aktualisierte Richtlinie angewendet wird.
 
@@ -116,13 +116,13 @@ Wenn Sie eine Antiphishingrichtlinie erstellen, können Sie nur den Richtlinienn
 
    Nachdem Sie die Bedingung ausgewählt haben, wird eine entsprechende Dropdownliste mit einem **Beliebigen dieser Kontrollkästchen** angezeigt.
 
-   - Klicken Sie in das Feld, und führen Sie einen Bildlauf durch die Liste der auszuwählende Werte durch.
+   - Klicken Sie in das Feld, und führen Sie einen Bildlauf durch die Liste der werte aus.
    - Klicken Sie in das Feld, und beginnen Sie mit der Eingabe, um die Liste zu filtern und einen Wert auszuwählen.
    - Wenn Sie weitere Werte hinzufügen möchten, klicken Sie in einen leeren Bereich des Felds.
    - Klicken Sie zum Entfernen einzelner Einträge **auf** das Symbol ![ ](../../media/scc-remove-icon.png) "Entfernen" für den Wert.
    - Um die gesamte Bedingung zu entfernen, **klicken** Sie in der Bedingung ![ auf ](../../media/scc-remove-icon.png) "Entfernen".
 
-   Klicken Sie zum Hinzufügen einer zusätzlichen Bedingung auf "Bedingung **hinzufügen",** und wählen Sie unter "Angewendet" einen verbleibenden Wert **aus, wenn**.
+   Klicken Sie zum Hinzufügen einer zusätzlichen Bedingung auf "Bedingung **hinzufügen",** und wählen Sie unter **"Angewendet"** einen verbleibenden Wert aus, wenn .
 
    Klicken Sie zum Hinzufügen von Ausnahmen auf **"Bedingung hinzufügen",** und wählen Sie unter "Außer wenn" **eine Ausnahme aus.** Die Einstellungen und das Verhalten entsprechen genau den Bedingungen.
 
@@ -140,11 +140,11 @@ Nachdem Sie die Antiphishingrichtlinie mit diesen allgemeinen Richtlinieneinstel
 
 Verwenden Sie die folgenden Verfahren, um Antiphishingrichtlinien zu ändern: eine neue Richtlinie, die Sie erstellt haben, oder vorhandene Richtlinien, die Sie bereits angepasst haben.
 
-1. Wenn Sie noch nicht vorhanden sind, öffnen Sie das Security & Compliance Center, und wechseln Sie zu Threat **Management** \> **Policy** \> **Anti-Phishing**.
+1. If you're not already there, open the Security & Compliance Center, and go to **Threat management** \> **Policy** \> **Anti-phishing**.
 
 2. Wählen Sie die benutzerdefinierte Antiphishingrichtlinie aus, die Sie ändern möchten. Wenn sie bereits ausgewählt ist, deaktivieren Sie sie, und wählen Sie sie erneut aus.
 
-3. Das **Flyout \<name\> "Richtlinie bearbeiten"** wird angezeigt. Wenn **Sie** in einem beliebigen Abschnitt auf "Bearbeiten" klicken, können Sie auf die Einstellungen in diesem Abschnitt zugreifen.
+3. Das **Flyout \<name\> "Richtlinie bearbeiten"** wird angezeigt. Wenn Sie in **einem** beliebigen Abschnitt auf "Bearbeiten" klicken, können Sie auf die Einstellungen in diesem Abschnitt zugreifen.
 
    - Die folgenden Schritte werden in der Reihenfolge dargestellt, in der die Abschnitte angezeigt werden, sie sind jedoch nicht sequenziell (Sie können die Abschnitte in beliebiger Reihenfolge auswählen und ändern).
 
@@ -159,7 +159,7 @@ Verwenden Sie die folgenden Verfahren, um Antiphishingrichtlinien zu ändern: ei
 
    Wenn Sie fertig sind, klicken Sie auf einer **beliebigen** Seite auf "Speichern".
 
-5. **Spoofing:** Klicken Sie auf "Bearbeiten", um die Spoofintelligenz zu aktivieren oder zu deaktivieren, die Identifizierung nicht authentifizierter Absender in Outlook ein- oder auszuschalten und die Aktion so zu konfigurieren, dass sie auf Nachrichten von blockierten gefälschten Absendern angewendet wird.  Weitere Informationen finden Sie unter ["Spoofing"-Einstellungen in Antiphishingrichtlinien.](set-up-anti-phishing-policies.md#spoof-settings)
+5. **Spoofing**  : Klicken Sie auf "Bearbeiten", um die Spoofintelligenz zu aktivieren oder zu deaktivieren, die Identifizierung nicht authentifizierter Absender in Outlook ein- oder auszuschalten und die Aktion so zu konfigurieren, dass sie auf Nachrichten von blockierten gefälschten Absendern angewendet wird. Weitere Informationen finden Sie unter ["Spoofing"-Einstellungen in Antiphishingrichtlinien.](set-up-anti-phishing-policies.md#spoof-settings)
 
    Beachten Sie, dass dieselben Einstellungen auch in Antiphishingrichtlinien in Defender für Office 365 verfügbar sind.
 
@@ -180,14 +180,14 @@ Verwenden Sie die folgenden Verfahren, um Antiphishingrichtlinien zu ändern: ei
    - **Überprüfen Sie Ihre Einstellungen:** Anstatt auf jeden einzelnen Schritt zu klicken, werden die Einstellungen in einer Zusammenfassung angezeigt.
 
      - Sie können in jedem Abschnitt **auf** "Bearbeiten" klicken, um zur entsprechenden Seite zurück zu wechseln.
-     - Sie können die folgenden  Einstellungen  direkt auf dieser Seite ein- oder ausschalten:
+     - Sie können die folgenden Einstellungen  **direkt** auf dieser Seite ein- oder ausschalten:
 
        - **Aktivieren des Antispoofingschutzes**
        - **Feature "Nicht authentifizierter Absender aktivieren"**
 
    Wenn Sie fertig sind, klicken Sie auf einer **beliebigen** Seite auf "Speichern".
 
-6. Überprüfen Sie auf der Seite "Richtlinie **bearbeiten" \<Name\>** Ihre Einstellungen, und klicken Sie dann auf **"Schließen".**
+6. Überprüfen Sie auf **der Seite "Richtlinie bearbeiten" \<Name\>** Ihre Einstellungen, und klicken Sie dann auf **"Schließen".**
 
 ### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy"></a>Ändern der standardmäßigen Antiphishingrichtlinie mithilfe des Security & Compliance Center
 
@@ -205,7 +205,7 @@ Die standardmäßige Antiphishingrichtlinie heißt Office365 AntiPhish Default u
 
    Die folgenden Einstellungen sind nicht verfügbar, wenn Sie die Standardrichtlinie ändern:
 
-   - Sie können  den Abschnitt und die Werte der  Richtlinieneinstellung anzeigen, es gibt jedoch keinen Link "Bearbeiten", sodass Sie die Einstellungen (Richtlinienname, Beschreibung und für wen die Richtlinie gilt (gilt für alle Empfänger) nicht ändern können.
+   - Sie können  den Abschnitt und die Werte der  Richtlinieneinstellung anzeigen, aber es gibt keinen Link "Bearbeiten", sodass Sie die Einstellungen (Richtlinienname, Beschreibung und Für wen die Richtlinie gilt (gilt für alle Empfänger) nicht ändern können.
    - Die Standardrichtlinie kann nicht gelöscht werden.
    - Sie können die Priorität der Standardrichtlinie nicht ändern (sie wird immer zuletzt angewendet).
 
@@ -217,7 +217,7 @@ Die standardmäßige Antiphishingrichtlinie heißt Office365 AntiPhish Default u
 
 2. Beachten Sie den  Wert in der Statusspalte:
 
-   - Ziehen Sie den Umschalter auf **"Aus",** um die Richtlinie zu deaktivieren.
+   - Ziehen Sie den Umschalter **auf "Aus",** um die Richtlinie zu deaktivieren.
 
    - Ziehen Sie den Umschalter auf **"Ein",** um die Richtlinie zu aktivieren.
 
@@ -277,9 +277,9 @@ Die Standardrichtlinie kann nicht entfernt werden.
 
 Wie zuvor beschrieben, besteht eine Antiphishingrichtlinie aus einer Antiphishingrichtlinie und einer Antiphishingregel.
 
-In Exchange Online PowerShell ist der Unterschied zwischen Anti-Phish-Richtlinien und Anti-Phishing-Regeln offensichtlich. Sie verwalten Antiphiishrichtlinien mithilfe der **\* -AntiPhishPolicy-Cmdlets,** und Sie verwalten Antiphiishregeln mithilfe der **\* -AntiPhishRule-Cmdlets.**
+In Exchange Online PowerShell ist der Unterschied zwischen Anti-Phish-Richtlinien und Anti-Phishing-Regeln offensichtlich. Sie verwalten Antiphiishrichtlinien mithilfe der **\* Cmdlets "-AntiPhishPolicy",** und Sie verwalten Antiphiishregeln mithilfe der **\* -AntiPhishRule-Cmdlets.**
 
-- In PowerShell erstellen Sie zuerst die Anti-Phishing-Richtlinie, dann erstellen Sie die Anti-Phish-Regel, die die Richtlinie identifiziert, auf die die Regel angewendet wird.
+- In PowerShell erstellen Sie zuerst die Anti phish-Richtlinie, dann erstellen Sie die Anti-Phish-Regel, die die Richtlinie identifiziert, auf die die Regel angewendet wird.
 - In PowerShell ändern Sie die Einstellungen in der Anti-Phish-Richtlinie und der Anti-Phish-Regel separat.
 - Wenn Sie eine Anti-Phish-Richtlinie aus PowerShell entfernen, wird die entsprechende Antiphishregel nicht automatisch entfernt und umgekehrt.
 
@@ -295,24 +295,24 @@ Das Erstellen einer Antiphishingrichtlinie in PowerShell besteht aus zwei Schrit
 
  **Hinweise**:
 
-- Sie können eine neue Anti-Phish-Regel erstellen und ihr eine vorhandene, nicht zugeordnete Anti phish-Richtlinie zuweisen. Eine Anti-Phish-Regel kann nicht mehreren Anti-Phishing-Richtlinien zugeordnet werden.
+- Sie können eine neue Anti phish-Regel erstellen und ihr eine vorhandene, nicht zugeordnete Anti phish-Richtlinie zuweisen. Eine Anti-Phish-Regel kann nicht mehreren Anti-Phishing-Richtlinien zugeordnet werden.
 
-- Sie können die folgenden Einstellungen für neue Anti-Phish-Richtlinien in PowerShell konfigurieren, die im Security & Compliance Center erst nach dem Erstellen der Richtlinie verfügbar sind:
+- Sie können die folgenden Einstellungen für neue Anti-Phishing-Richtlinien in PowerShell konfigurieren, die im Security & Compliance Center erst nach dem Erstellen der Richtlinie verfügbar sind:
 
   - Erstellen Sie die neue Richtlinie als deaktiviert _(aktiviert_ `$false` im **Cmdlet "New-AntiPhishRule").**
-  - Legen Sie die Priorität der Richtlinie während der Erstellung (_Priorität_ ) für das _\<Number\>_ **Cmdlet New-AntiPhishRule)** festgelegt.
+  - Legen Sie die Priorität der Richtlinie während der Erstellung (_Priorität_ ) für das _\<Number\>_ **Cmdlet New-AntiPhishRule).**
 
 - Eine neue Anti-Phishing-Richtlinie, die Sie in PowerShell erstellen, wird erst im Security & Compliance Center angezeigt, wenn Sie die Richtlinie einer Anti-Phishing-Regel zuweisen.
 
-#### <a name="step-1-use-powershell-to-create-an-anti-phish-policy"></a>Schritt 1: Verwenden von PowerShell zum Erstellen einer Anti-Phishing-Richtlinie
+#### <a name="step-1-use-powershell-to-create-an-anti-phish-policy"></a>Schritt 1: Erstellen einer Anti-Phish-Richtlinie mithilfe von PowerShell
 
-Verwenden Sie folgende Syntax, um eine Anti-Phish-Richtlinie zu erstellen:
+Verwenden Sie die folgende Syntax, um eine #A0 zu erstellen:
 
 ```PowerShell
 New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
 ```
 
-In diesem Beispiel wird eine Anti-Phish-Richtlinie mit dem Namen "Research Quarantine" mit den folgenden Einstellungen erstellt:
+In diesem Beispiel wird eine Anti-Phishing-Richtlinie mit dem Namen "Research Quarantine" mit den folgenden Einstellungen erstellt:
 
 - Die Beschreibung ist: Richtlinie der Forschungsabteilung.
 - Ändert die Standardaktion für Spoofing in "Quarantäne".
@@ -365,7 +365,7 @@ Get-AntiPhishPolicy -Identity "Executives"
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Get-AntiPhishPolicy).
 
-### <a name="use-powershell-to-view-anti-phish-rules"></a>Verwenden von PowerShell zum Anzeigen von Anti-Phishing-Regeln
+### <a name="use-powershell-to-view-anti-phish-rules"></a>Verwenden von PowerShell zum Anzeigen von Anti-Phish-Regeln
 
 Verwenden Sie die folgende Syntax, um vorhandene Antiphishregeln anzeigen zu können:
 
@@ -401,7 +401,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-AntiP
 
 Neben den folgenden Elementen stehen dieselben Einstellungen zur Verfügung, wenn Sie eine Anti-Phish-Richtlinie in PowerShell ändern, wie beim Erstellen einer Richtlinie, wie in Schritt 1 beschrieben: Verwenden von PowerShell zum Erstellen einer [Anti-Phishing-Richtlinie](#step-1-use-powershell-to-create-an-anti-phish-policy) weiter oben in diesem Artikel.
 
-- Die _Option MakeDefault,_ die die angegebene Richtlinie in die  Standardrichtlinie umschaltt (gilt für alle Benutzer, hat immer die niedrigste Priorität, und Sie können sie nicht löschen) ist nur verfügbar, wenn Sie eine Anti-Phishing-Richtlinie in PowerShell ändern.
+- Die _Option MakeDefault,_ die die angegebene Richtlinie in die  Standardrichtlinie umstellt (auf alle Benutzer angewendet, immer niedrigste Priorität, und Sie können sie nicht löschen), ist nur verfügbar, wenn Sie eine Antiphishrichtlinie in PowerShell ändern.
 
 - Sie können eine Antiphiishrichtlinie nicht umbenennen (das **Cmdlet "Set-AntiPhishPolicy"** hat keinen _Parameter "Name")._ Wenn Sie eine Antiphishingrichtlinie im Security & Compliance Center umbenennen, benennen Sie nur die Antiphishingregel _um._
 
@@ -417,9 +417,9 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-AntiP
 
 Die einzige Einstellung, die nicht verfügbar ist, wenn Sie eine Anti-Phish-Regel in PowerShell ändern, ist der Parameter _"Enabled",_ mit dem Sie eine deaktivierte Regel erstellen können. Informationen zum Aktivieren oder Deaktivieren vorhandener Antiphishregeln finden Sie im nächsten Abschnitt.
 
-Andernfalls sind dieselben Einstellungen verfügbar, wenn Sie eine Regel erstellen, wie in Schritt [2 beschrieben:](#step-2-use-powershell-to-create-an-anti-phish-rule) Verwenden von PowerShell zum Erstellen eines Abschnitts zur Antiphishregel weiter oben in diesem Artikel.
+Andernfalls stehen dieselben Einstellungen zur Verfügung, wenn Sie eine Regel erstellen, wie in Schritt 2 beschrieben: Verwenden von PowerShell zum Erstellen eines Abschnitts mit [Antiphishregel](#step-2-use-powershell-to-create-an-anti-phish-rule) weiter oben in diesem Artikel.
 
-Verwenden Sie die folgende Syntax, um eine Anti phish-Regel zu ändern:
+Verwenden Sie die folgende Syntax, um eine Anti-Phish-Regel zu ändern:
 
 ```PowerShell
 Set-AntiPhishRule -Identity "<RuleName>" <Settings>
@@ -469,7 +469,7 @@ Set-AntiPhishRule -Identity "Marketing Department" -Priority 2
 
 **Hinweise**:
 
-- Verwenden Sie zum Festlegen der Priorität einer neuen Regel beim Erstellen stattdessen den Parameter _"Priority"_ im Cmdlet **"New-AntiPhishRule".**
+- Verwenden Sie zum Festlegen der Priorität einer neuen Regel beim Erstellen stattdessen den Parameter _"Priority"_ im **Cmdlet "New-AntiPhishRule".**
 
 - Die Standardmäßige Anti phish-Richtlinie verfügt nicht über eine entsprechende Anti-Phishing-Regel, und sie hat immer den nicht veränderbaren Prioritätswert **Niedrigste**.
 
@@ -513,7 +513,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-An
 
 Gehen Sie wie folgt vor, um die erfolgreiche Konfiguration von Antiphishingrichtlinien in Microsoft Defender für Office 365 zu überprüfen:
 
-- Wechseln Sie im Security & Compliance Center zu **"Bedrohungsverwaltungsrichtlinie** \>  \> **Antiphishing".** Überprüfen Sie die Liste der Richtlinien, deren **Statuswerte** und ihre **Prioritätswerte.** Gehen Sie wie folgt vor, um weitere Details anzuzeigen:
+- Wechseln Sie im Security & Compliance Center zu **"Bedrohungsverwaltungsrichtlinie** \>  \> **Antiphishing".** Überprüfen Sie die Liste der Richtlinien, **deren Statuswerte** und ihre **Prioritätswerte.** Gehen Sie wie folgt vor, um weitere Details anzuzeigen:
 
   - Wählen Sie die Richtlinie aus der Liste aus, und zeigen Sie die Details im Flyout an.
   - Klicken Sie **auf "Standardrichtlinie",** und zeigen Sie die Details im Flyout an.

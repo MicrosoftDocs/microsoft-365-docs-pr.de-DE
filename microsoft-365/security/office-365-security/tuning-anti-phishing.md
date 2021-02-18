@@ -7,25 +7,30 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 - MET150
-description: Administratoren können lernen, die Gründe zu identifizieren, warum und wie eine Phishingnachricht in Microsoft 365 durchfing, und was sie tun müssen, um in Zukunft weitere Phishingnachrichten zu verhindern.
-ms.openlocfilehash: 758945c64966763991bfdfba0d70a60ca1c2ddca
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+description: Administratoren können lernen, die Gründe zu identifizieren, warum und wie eine Phishingnachricht in Microsoft 365 durch kam, und was sie tun müssen, um in Zukunft weitere Phishingnachrichten zu verhindern.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: d3abbafce36c589f60eb164fb29c714c980f8b98
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865044"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286489"
 ---
 # <a name="tune-anti-phishing-protection"></a>Optimieren des Schutzes gegen Phishing
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Gilt für**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Obwohl Microsoft 365 eine Vielzahl von Standardmäßig aktivierten Antiphishingfeatures bietet, ist es möglich, dass einige Phishingnachrichten weiterhin in Ihre Postfächer übergestellt werden. In diesem Thema wird beschrieben, was Sie tun können, um zu ermitteln, warum eine Phishingnachricht passiert ist, und was Sie tun können, um die Antiphishingeinstellungen in Ihrer Microsoft 365-Organisation anzupassen, ohne dies versehentlich zu verschlimmern.
 
@@ -39,7 +44,7 @@ Wenn Ihr Abonnement Microsoft Defender für Office 365 umfasst, können Sie [Off
 
 - [Sichere Anlagen in Microsoft Defender für Office 365](set-up-atp-safe-attachments-policies.md)
 
-- [Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md). Beachten Sie, dass Sie die Schwellenwerte für erweiterte **Phishingversuche** in der Richtlinie vorübergehend von **Standard** auf **Aggressive**, **Aggressiver** oder **Aggressiver erhöhen können.**
+- [Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md). Beachten Sie, dass Sie  die Erweiterten Phishingschwellenwerte in der Richtlinie vorübergehend von **Standard** auf **Aggressive**, **Aggressiver** oder **Aggressivste erhöhen können.**
 
 Überprüfen Sie, ob diese Defender für Office 365-Features aktiviert sind.
 
@@ -51,7 +56,7 @@ Das Melden von Phishingnachrichten ist hilfreich bei der Optimierung der Filter,
 
 Sie können die Kopfzeilen der Phishingnachricht überprüfen, um zu sehen, ob Sie alles selbst tun können, um zu verhindern, dass weitere Phishingnachrichten durch kommen. Mit anderen Worten, wenn Sie die Nachrichtenkopfzeilen untersuchen, können Sie alle Einstellungen in Ihrer Organisation identifizieren, die für das Zulassen der Phishingnachrichten verantwortlich waren.
 
-Insbesondere sollten Sie das Kopfzeilenfeld **X-Forefront-Antispam-Report** in den Nachrichtenkopfzeilen auf Anzeichen für eine übersprungene Filterung für Spam oder Phishing im Wert "Spam Filtering Verdict" (SFV) überprüfen. Nachrichten, die die Filterung überspringen, haben einen Eintrag von , was bedeutet, dass eine Ihrer Einstellungen diese Nachricht durch Außerkraftsetzen der Spam- oder Phishing-Verdingungen, die vom Dienst `SCL:-1` bestimmt wurden, zugelassen hat. Weitere Informationen zum Erhalten von Nachrichtenkopfzeilen und die vollständige Liste aller verfügbaren Antispam- und Antiphishingnachrichtenkopfzeilen finden Sie [unter "Antispam-Nachrichtenkopfzeilen" in Microsoft 365.](anti-spam-message-headers.md)
+Insbesondere sollten Sie das Kopfzeilenfeld **"X-Forefront-Antispam-Report"** in den Nachrichtenkopfzeilen auf Anzeichen für eine übersprungene Filterung für Spam oder Phishing im SfV (Spam Filtering Verdict)-Wert überprüfen. Nachrichten, die die Filterung überspringen, haben einen Eintrag von , was bedeutet, dass eine Ihrer Einstellungen diese Nachricht durch Außerkraftsetzen der Spam- oder Phishing-Verdingungen, die vom Dienst `SCL:-1` bestimmt wurden, zugelassen hat. Weitere Informationen zum Erhalten von Nachrichtenkopfzeilen und die vollständige Liste aller verfügbaren Antispam- und Antiphishingnachrichtenkopfzeilen finden Sie [unter "Antispam-Nachrichtenkopfzeilen" in Microsoft 365.](anti-spam-message-headers.md)
 
 ## <a name="best-practices-to-stay-protected"></a>Bewährte Methoden zum Schutz
 
@@ -83,7 +88,7 @@ Insbesondere sollten Sie das Kopfzeilenfeld **X-Forefront-Antispam-Report** in d
 
 - Wenn möglich, wird empfohlen, E-Mails für Ihre Domäne direkt an Microsoft 365 zu senden. Mit anderen Worten: Verweisen Sie den Microsoft 365-Domänen-MX-Eintrag auf Microsoft 365. Exchange Online Protection (EOP) ist in der Lage, ihren Cloudbenutzern den besten Schutz zu bieten, wenn ihre E-Mails direkt an Microsoft 365 zugestellt werden. Wenn Sie ein E-Mail-Hygienesystem eines Drittanbieters vor EOP verwenden müssen, verwenden Sie die erweiterte Filterung für Connectors. Anweisungen finden Sie unter ["Erweiterte Filterung für Connectors in Exchange Online".](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 
-- Benutzer sollten das [Add-In "Nachricht melden"](enable-the-report-message-add-in.md) oder das ["Phishing melden"-Add-In](enable-the-report-phish-add-in.md) verwenden, um Nachrichten an Microsoft zu melden, das unser System schulen kann. Administratoren sollten auch die [Administratorübermittlungsfunktionen](admin-submission.md) nutzen.
+- Benutzer sollten das [Add-In "Nachricht melden"](enable-the-report-message-add-in.md) oder das ["Phishing melden"-Add-In](enable-the-report-phish-add-in.md) verwenden, um Nachrichten an Microsoft zu melden, das unser System schulen kann. Administratoren sollten auch die [](admin-submission.md) Administrator-Übermittlungsfunktionen nutzen.
 
 - Die mehrstufige Authentifizierung (Multi Factor Authentication, MFA) ist eine gute Möglichkeit, um gefährdete Konten zu verhindern. Sie sollten dringend erwägen, MFA für alle Benutzer zu aktivieren. Für einen phasenweise Ansatz aktivieren Sie zunächst MFA für Ihre sensibelsten Benutzer (Administratoren, Führungskräfte usw.), bevor Sie MFA für alle Aktivieren. Anweisungen finden Sie unter [Einrichten der mehrstufigen Authentifizierung.](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)
 

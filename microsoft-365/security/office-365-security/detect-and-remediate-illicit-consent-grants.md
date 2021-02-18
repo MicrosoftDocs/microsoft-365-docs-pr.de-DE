@@ -18,37 +18,37 @@ description: Erfahren Sie, wie Sie den angriffswilligen Zustimmungsermungsangrif
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1c724bb3b201e0ddf1edea4794606c7083605e8
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2a50ce58d91d2ff7b2e31e57830289c870364d9b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165439"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288287"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Erkennen und Behebung von unerlaubten Zustimmungsermings
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-**Zusammenfassung**  Erfahren Sie, wie Sie den angriffswilligen Zustimmungsermungsangriff in Office 365 erkennen und besennen.
+**Zusammenfassung**  Erfahren Sie, wie Sie den Angriff in Office 365 erkennen und die unrechtmäßige Zustimmungsermungsermung erkennen und besennen.
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Was ist der Angriff auf die erteilungswillige Zustimmung in Office 365?
 
-Bei einem Angriff auf eine unrechtmäßige Genehmigung erstellt der Angreifer eine in Azure registrierte Anwendung, die Zugriff auf Daten wie Kontaktinformationen, E-Mails oder Dokumente anfordert. Der Angreifer trickst dann einen Endbenutzer dazu, dieser Anwendung die Zustimmung zu erteilen, entweder über einen Phishingangriff auf ihre Daten zugreift, oder indem er unzulässigen Code in eine vertrauenswürdige Website einfing. Nachdem der unrechtmäßigen Anwendung die Zustimmung erteilt wurde, hat sie Zugriff auf Daten auf Kontoebene, ohne dass ein Organisationskonto benötigt wird. Normale Korrekturschritte, z. B. das Zurücksetzen von Kennwörtern für gesperrte Konten oder das Erfordern der mehrstufigen Authentifizierung (Multi-Factor Authentication, MFA) für Konten, sind bei dieser Art von Angriffen nicht effektiv, da es sich um Anwendungen von Drittanbietern handelt und sich außerhalb der Organisation befinden.
+Bei einem Angriff auf eine unrechtmäßige Genehmigung erstellt der Angreifer eine in Azure registrierte Anwendung, die Zugriff auf Daten wie Kontaktinformationen, E-Mails oder Dokumente anfordert. Der Angreifer trickst dann einen Endbenutzer dazu, dieser Anwendung die Zustimmung zu erteilen, entweder über einen Phishingangriff auf ihre Daten zugreift, oder indem er unzulässigen Code in eine vertrauenswürdige Website einfing. Nachdem der unrechtmäßigen Anwendung die Zustimmung erteilt wurde, hat sie Zugriff auf Daten auf Kontoebene, ohne dass ein Organisationskonto benötigt wird. Normale Korrekturschritte, z. B. das Zurücksetzen von Kennwörtern für gesperrte Konten oder das Erfordern der mehrstufigen Authentifizierung (Multi-Factor Authentication, MFA) für Konten, sind bei dieser Art von Angriffen nicht effektiv, da es sich um Anwendungen von Drittanbietern handelt und außerhalb der Organisation liegen.
 
 Diese Angriffe nutzen ein Interaktionsmodell, bei dem davon ausgegangen wird, dass es sich bei der Entität, die die Informationen aufruft, um Automatisierung und nicht um einen Menschen handelt.
 
 > [!IMPORTANT]
-> Verdächtigen Sie, dass Sie derzeit Probleme mit unerlaubten Zustimmungsermächtigungen von einer App haben? Microsoft Cloud App Security (MCAS) verfügt über Tools zum Erkennen, Untersuchen und Beheern Ihrer OAuth-Apps. Dieser MCAS-Artikel enthält ein Lernprogramm, in dem die Untersuchung [riskanter OAuth-Apps erläutert wird.](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth) Sie können auch [OAuth-App-Richtlinien](https://docs.microsoft.com/cloud-app-security/app-permission-policy) festlegen, um von der App angeforderte Berechtigungen zu untersuchen, welche Benutzer diese Apps autorisieren, und diese Berechtigungsanforderungen allgemein genehmigen oder verbieten.
+> Verdächtigen Sie, dass Sie derzeit Probleme mit unrechtmäßigen Zustimmungsermächtigungsermächtigen von einer App haben? Microsoft Cloud App Security (MCAS) verfügt über Tools zum Erkennen, Untersuchen und Beheern Ihrer OAuth-Apps. Dieser MCAS-Artikel enthält ein Lernprogramm, in dem die Untersuchung [riskanter OAuth-Apps erläutert wird.](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth) Sie können auch [OAuth-App-Richtlinien](https://docs.microsoft.com/cloud-app-security/app-permission-policy) festlegen, um von der App angeforderte Berechtigungen zu untersuchen, welche Benutzer diese Apps autorisieren, und diese Berechtigungsanforderungen allgemein genehmigen oder verbieten.
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Wie sieht ein angriffswilliger Zustimmungserteilungsangriff in Office 365 aus?
 
 Sie müssen das **Überwachungsprotokoll** durchsuchen, um Nachzeichen zu finden, die auch als Indicators of Compromise (IOC) für diesen Angriff bezeichnet werden. Für Organisationen mit vielen in Azure registrierten Anwendungen und einer großen Benutzerbasis besteht die bewährte Methode in der wöchentlichen Überprüfung der Zustimmungsermung Ihrer Organisation.
 
-### <a name="steps-for-finding-signs-of-this-attack"></a>Schritte zum Auffinden von Anzeichen für diesen Angriff
+### <a name="steps-for-finding-signs-of-this-attack"></a>Schritte zum Suchen nach Anzeichen für diesen Angriff
 
 1. Öffnen Sie **das Security & Compliance Center unter** <https://protection.office.com> .
 
@@ -80,7 +80,7 @@ Wenn Sie eine oder mehrere Instanzen der oben aufgeführten IOCs haben, müssen 
 
 ## <a name="inventory-apps-with-access-in-your-organization"></a>Inventarisierung von Apps mit Zugriff in Ihrer Organisation
 
-Sie können dies für Ihre Benutzer entweder über das Azure Active Directory-Portal oder PowerShell tun oder ihre Benutzer einzeln ihren Anwendungszugriff aufzählen lassen.
+Sie können dies für Ihre Benutzer entweder über das Azure Active Directory-Portal oder PowerShell oder ihre Benutzer einzeln aufzählen lassen.
 
 ### <a name="steps-for-using-the-azure-active-directory-portal"></a>Schritte für die Verwendung des Azure Active Directory-Portals
 
@@ -108,18 +108,18 @@ Die einfachste Möglichkeit zum Überprüfen des Angriffs auf die gewährungswil
 
 #### <a name="pre-requisites"></a>Voraussetzungen
 
-- Die Installierte Azure AD PowerShell-Bibliothek.
+- Die installierte Azure AD PowerShell-Bibliothek.
 
 - Globale Administratorrechte für den Mandanten, für den das Skript ausgeführt wird.
 
 - Lokaler Administrator auf dem Computer, auf dem die Skripts ausgeführt werden.
 
 > [!IMPORTANT]
-> Es ***wird dringend empfohlen,*** dass Sie eine mehrstufige Authentifizierung für Ihr Administratorkonto benötigen. Dieses Skript unterstützt die MFA-Authentifizierung.
+> Es ***wird dringend empfohlen,*** dass Sie die mehrstufige Authentifizierung für Ihr Administratorkonto benötigen. Dieses Skript unterstützt die MFA-Authentifizierung.
 
-1. Melden Sie sich bei dem Computer an, auf dem Sie das Skript mit lokalen Administratorrechten ausführen.
+1. Melden Sie sich bei dem Computer an, auf dem Sie das Skript ausführen, mit lokalen Administratorrechten.
 
-2. Laden Sie das Skript [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) von GitHub in einen Ordner herunter, aus dem Sie das Skript ausführen. Dies ist derselbe Ordner, in den die Ausgabedatei "permissions.csv" geschrieben wird.
+2. Laden Sie das Skript [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) GitHub herunter, oder kopieren Sie es in einen Ordner, aus dem Sie das Skript ausführen. Dies ist derselbe Ordner, in den die Ausgabedatei "permissions.csv" geschrieben wird.
 
 3. Öffnen Sie eine PowerShell-Instanz als Administrator, und öffnen Sie den Ordner, in dem Sie das Skript gespeichert haben.
 
@@ -139,14 +139,14 @@ Das Skript erzeugt eine Datei namens Permissions.csv. Führen Sie die folgenden 
 
 3. Überprüfen Sie die spezifischen Benutzer, deren Zustimmung erteilt wurde. Wenn Benutzern mit hoher Profil- oder hoher Auswirkung unangemessene Zustimmungen erteilt wurden, sollten Sie dies weiter untersuchen.
 
-4. Suchen Sie in der Spalte "ClientDisplayName" (Spalte C) nach Apps, die verdächtig erscheinen. Apps mit falsch geschriebenen Namen, Super-Bland-Namen oder Hackernamen sollten sorgfältig überprüft werden.
+4. Suchen Sie in der Spalte "ClientDisplayName" (Spalte C) nach Apps, die verdächtig erscheinen. Apps mit falsch geschriebenen Namen, Super-BLAND-Namen oder Hackernamen sollten sorgfältig überprüft werden.
 
 ## <a name="determine-the-scope-of-the-attack"></a>Bestimmen des Umfangs des Angriffs
 
-Nachdem Sie die Bestandsaufnahme des Anwendungszugriffs abgeschlossen haben, überprüfen Sie das **Überwachungsprotokoll,** um den vollständigen Umfang der Verletzung zu ermitteln. Suchen Sie nach den betroffenen Benutzern, den Zeitrahmen, auf die die verbotene Anwendung Zugriff auf Ihre Organisation hatte, und den Berechtigungen, die die App hatte. Sie können das **Überwachungsprotokoll im** [Microsoft 365 Security and Compliance Center durchsuchen.](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+Nachdem Sie die Bestandsaufnahme des Anwendungszugriffs abgeschlossen haben, überprüfen Sie das **Überwachungsprotokoll,** um den vollständigen Umfang der Verletzung zu ermitteln. Suchen Sie nach den betroffenen Benutzern, den Zeitrahmen, auf die die verbotene Anwendung Zugriff auf Ihre Organisation hatte, und den Berechtigungen, die die App hatte. Sie können das **Überwachungsprotokoll im** [Microsoft 365 Security and Compliance Center durchsuchen.](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 > [!IMPORTANT]
-> [Postfachüberwachung](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) und [Aktivitätsüberwachung für](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) Administratoren und Benutzer müssen vor dem Angriff aktiviert worden sein, damit Sie diese Informationen erhalten können.
+> [Postfachüberwachung](../../compliance/enable-mailbox-auditing.md) und [Aktivitätsüberwachung für](../../compliance/turn-audit-log-search-on-or-off.md) Administratoren und Benutzer müssen vor dem Angriff aktiviert worden sein, damit Sie diese Informationen erhalten können.
 
 ## <a name="how-to-stop-and-remediate-an-illicit-consent-grant-attack"></a>Beenden und Behebung eines Angriffs auf eine unrechtmäßige Zustimmungserteilung
 
@@ -168,7 +168,7 @@ Nachdem Sie eine Anwendung mit unzulässigen Berechtigungen identifiziert haben,
 
 - Sie können die Anmeldung für das betroffene Konto auch vollständig deaktivieren, wodurch wiederum der Zugriff der App auf Daten in diesem Konto deaktiviert wird. Dies ist natürlich nicht ideal für die Produktivität des Endbenutzers, aber wenn Sie daran arbeiten, die Auswirkungen schnell zu begrenzen, kann dies eine kurzfristige Korrektur sein.
 
-- Sie können integrierte Anwendungen für Ihren Mandanz deaktivieren. Dies ist ein drastischer Schritt, der die Möglichkeit für Endbenutzer deaktiviert, die Zustimmung auf mandantenweitem Basis zu erteilen. Dadurch wird verhindert, dass Ihre Benutzer versehentlich Zugriff auf eine schädliche Anwendung gewähren. Dies wird nicht dringend empfohlen, da die Fähigkeit ihrer Benutzer, mit Anwendungen von Drittanbietern produktiv zu sein, stark beeinträchtigt wird. Dazu können Sie die Schritte unter "Aktivieren oder Deaktivieren von integrierten [Apps" ausführen.](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps)
+- Sie können integrierte Anwendungen für Ihren Mandanz deaktivieren. Dies ist ein weiterer Schritt, der die Möglichkeit für Endbenutzer deaktiviert, die Zustimmung auf mandantenweitem Basis zu erteilen. Dadurch wird verhindert, dass Ihre Benutzer versehentlich Zugriff auf eine schädliche Anwendung gewähren. Dies wird nicht dringend empfohlen, da die Fähigkeit ihrer Benutzer, mit Anwendungen von Drittanbietern produktiv zu sein, stark beeinträchtigt wird. Dazu können Sie die Schritte unter "Aktivieren oder Deaktivieren von [integrierten Apps" ausführen.](../../admin/misc/user-consent.md)
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sichern von Microsoft 365 wie ein Profi für Internetsicherheit
 

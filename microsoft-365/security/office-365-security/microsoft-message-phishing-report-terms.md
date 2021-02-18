@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
-ms.openlocfilehash: a6c28bad5b79bc7459a1a00fabb6713b1759201d
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: 2b2b8a6215a653cee7ea67bafaadddc096abb911
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032696"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288157"
 ---
 # <a name="microsoft-report-message-and-report-phishing-add-in-license-terms"></a>Microsoft Report Message and Report Phishing Add-In license terms
 
@@ -42,11 +42,11 @@ Wenn Sie diese Lizenzbedingungen einhalten, haben Sie die unten stehenden Rechte
 
     1. **General.** You may install and use any number of copies of the software.
     1. **Third Party Software.** Die Software kann Anwendungen von Drittanbietern enthalten, die Microsoft, nicht der Drittanbieter, gemäß diesem Vertrag für Sie lizenziert. Alle enthaltenen Hinweise für Drittanbieteranwendungen sind nur für Ihre Informationen.
-    1. **Microsoft Services Agreement.** Einige Features der Software bieten Zugriff auf Onlinedienste oder sind darauf angewiesen. Die Nutzung dieser Dienste (aber nicht der Software) unterliegt den separaten Bestimmungen und Datenschutzrichtlinien im Microsoft Services Agreement unter [https://go.microsoft.com/fwlink/?linkid=398923](https://go.microsoft.com/fwlink/?linkid=398923) . Bitte lesen Sie sie. Die Dienste sind möglicherweise nicht in allen Regionen verfügbar.
+    1. **Microsoft Services Agreement.** Einige Features der Software bieten Zugriff auf Onlinedienste oder sind darauf angewiesen. Die Nutzung dieser Dienste (jedoch nicht der Software) unterliegt den separaten Bestimmungen und Datenschutzrichtlinien im Microsoft Services Agreement unter <https://www.microsoft.com/servicesagreement/> . Bitte lesen Sie sie. Die Dienste sind möglicherweise nicht in allen Regionen verfügbar.
 
-2. **DATA COLLECTION.** Die Software sammelt möglicherweise Informationen über Sie und Ihre Nutzung der Software und sendet sie an Microsoft. Microsoft kann diese Informationen verwenden, um Dienste zur Verfügung zu stellen und die Produkte und Dienste von Microsoft zu verbessern. Ihre Opt-out-Rechte, falls dies der Fall ist, werden in der Produktdokumentation beschrieben. Einige Features in der Software ermöglichen möglicherweise das Sammeln von Daten von Benutzern Ihrer Anwendungen, die auf die Software zugreifen oder diese verwenden. 
+2. **DATA COLLECTION.** Die Software sammelt möglicherweise Informationen über Sie und Ihre Nutzung der Software und sendet sie an Microsoft. Microsoft kann diese Informationen verwenden, um Dienste zur Verfügung zu stellen und die Produkte und Dienste von Microsoft zu verbessern. Ihre Opt-out-Rechte, falls dies der Fall ist, werden in der Produktdokumentation beschrieben. Einige Features in der Software ermöglichen möglicherweise das Sammeln von Daten von Benutzern Ihrer Anwendungen, die auf die Software zugreifen oder diese verwenden.
 
-    Wenn Sie diese Features verwenden, um die Datensammlung in Ihren Anwendungen zu ermöglichen, müssen Sie geltendes Recht einhalten, einschließlich der Einholen der erforderlichen Zustimmung durch den Benutzer, und eine wichtige Datenschutzrichtlinie verwalten, die Die Benutzer genau darüber informiert, wie Sie ihre Daten verwenden, sammeln und freigeben. Weitere Informationen zur Datensammlung und -verwendung von Microsoft finden Sie in der Produktdokumentation und den Datenschutzbestimmungen von Microsoft unter [https://go.microsoft.com/fwlink/?LinkId=512132](https://go.microsoft.com/fwlink/?LinkId=512132) . Sie stimmen der Einhaltung aller geltenden Bestimmungen der Datenschutzbestimmungen von Microsoft zu.
+    Wenn Sie diese Features verwenden, um die Datensammlung in Ihren Anwendungen zu ermöglichen, müssen Sie geltendes Recht einhalten, einschließlich der Einholen der erforderlichen Zustimmung durch den Benutzer, und eine wichtige Datenschutzrichtlinie verwalten, die Die Benutzer genau darüber informiert, wie Sie ihre Daten verwenden, sammeln und freigeben. Weitere Informationen zur Datensammlung und -verwendung von Microsoft finden Sie in der Produktdokumentation und den Datenschutzbestimmungen von Microsoft unter <https://privacy.microsoft.com/privacystatement> . Sie stimmen der Einhaltung aller geltenden Bestimmungen der Datenschutzbestimmungen von Microsoft zu.
 
 3. **SCOPE OF LICENSE.** The software is licensed, not sold. Microsoft reserves all other rights. Unless applicable law gives you more rights despite this limitation, you will not (and have no right to):
     1. work around any technical limitations in the software that only allow you to use it in certain ways;
@@ -82,7 +82,7 @@ Wenn Sie diese Lizenzbedingungen einhalten, haben Sie die unten stehenden Rechte
 
             Subject to the foregoing clause ii., Microsoft will only be liable for slight negligence if Microsoft is in breach of such material contractual obligations, the fulfillment of which facilitate the due performance of this agreement, the breach of which would endanger the purpose of this agreement and the compliance with which a party may constantly trust in (so-called "cardinal obligations"). In other cases of slight negligence, Microsoft will not be liable for slight negligence.
 
-11. *In Englisch:* **HAFTUNGSAUSSCHLUSS DER GARANTIE.** Die Software wird "wie bess" lizenziert. Das Risiko der Produktnutzung liegt allein beim Nutzer. Microsoft übergibt keine ausdrücklichen Garantien, Garantien oder Bedingungen. Soweit dies gemäß den geltenden Gesetzen zulässig ist, schließt Microsoft alle impliziten Garantien aus, einschließlich Derbigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung von Verstößen.
+11. *In Englisch:* **HAFTUNGSAUSSCHLUSS DER GARANTIE.** Die Software wird "wie besiert" lizenziert. Das Risiko der Produktnutzung liegt allein beim Nutzer. Microsoft übergibt keine ausdrücklichen Garantien, Garantien oder Bedingungen. Soweit dies gemäß den geltenden Gesetzen zulässig ist, schließt Microsoft alle impliziten Garantien aus, einschließlich Derbigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung von Verstößen.
 
     *EnAisçais*: **EXONÉRATION DE GARANTIE.** Le logiciel visé par une licence est offert « tel quel ». Toute utilisation de ce logiciel est à votre seule risque et péril. Microsoft n’accorde aucune autre garantie expresse. Vous pouvez bénéficier de droits additionnels en vertu du droit local sur la protection des consommateurs, que ce contrat ne peut modifier. La ou elles sont permises par le droit locale, les garanties implicites de qualité marchande, d’adéquation à un usage particulier et d’absence de contrefaçon sont exclues.
 

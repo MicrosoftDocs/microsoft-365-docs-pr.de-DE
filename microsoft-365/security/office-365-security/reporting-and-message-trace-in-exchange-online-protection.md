@@ -15,21 +15,21 @@ ms.custom:
 description: In diesem Artikel erfahren Sie mehr über Berichte und Problembehandlungstools, die Microsoft Exchange Online (EOP)-Administratoren zur Verfügung stehen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86c9eb0ee050c4c1a40ef7f29ea3d01dc202be9a
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 783c7ea0aca47c805daf66592b401a98f739d071
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166675"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288079"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Berichterstellung und Nachrichtenverfolgung in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer bietet EOP viele verschiedene Berichte, mit denen Sie den Allgemeinen Status und die Integrität Ihrer Organisation ermitteln können. Außerdem gibt es Tools, mit denen Sie die Problembehebung für bestimmte Ereignisse (wenn beispielsweise eine Nachricht nicht beim gewünschten Empfänger ankommt) durchführen können, sowie Überwachungsberichte zur Einhaltung von Vorschriften.
 
@@ -45,13 +45,13 @@ In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenst
 
 Weitere Informationen finden Sie in den folgenden Ressourcen:
 
-- [Microsoft 365-Berichte im Admin Center – Microsoft 365-Gruppen](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
+- [Microsoft 365-Berichte im Admin Center – Microsoft 365-Gruppen](../../admin/activity-reports/office-365-groups.md)
 
-- [Microsoft 365-Berichte im Admin Center – E-Mail-Aktivität](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
+- [Microsoft 365-Berichte im Admin Center – E-Mail-Aktivität](../../admin/activity-reports/email-activity.md)
 
-- [Microsoft 365-Berichte im Admin Center – Nutzung von E-Mail-Apps](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
+- [Microsoft 365-Berichte im Admin Center – Nutzung von E-Mail-Apps](../../admin/activity-reports/email-apps-usage.md)
 
-- [Microsoft 365-Berichte im Admin Center – Postfachnutzung](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
+- [Microsoft 365-Berichte im Admin Center – Postfachnutzung](../../admin/activity-reports/mailbox-usage.md)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Sicherheitsberichte & Complianceberichte im Microsoft 365 Admin Center
 
@@ -77,7 +77,7 @@ Siehe [Nachrichtenverfolgung im Security & Compliance Center](message-trace-scc.
 
 ## <a name="audit-logging"></a>Überwachungsprotokollierung
 
-Verfolgt bestimmte Änderungen durch Administratoren Ihrer Organisation. Diese Berichte können Sie zum Behandeln von Konfigurationsproblemen sowie zum Ermitteln der Ursache von Sicherheits- oder Kompatibilitätsproblemen heranziehen. Siehe ["Überwachungsberichte" in EOP](auditing-reports-in-eop.md).
+Verfolgt bestimmte Änderungen durch Administratoren Ihrer Organisation. Diese Berichte können Sie zum Behandeln von Konfigurationsproblemen sowie zum Ermitteln der Ursache von Sicherheits- oder Kompatibilitätsproblemen heranziehen. Siehe [Überwachungsberichte in EOP](auditing-reports-in-eop.md).
 
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>Meldung und Verfügbarkeit und Latenz Nachrichtenverfolgungsdaten
 

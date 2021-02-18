@@ -23,20 +23,20 @@ ms.custom:
 description: Erfahren Sie mehr über Microsoft Defender für Office 365 für Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 640867cb38dab650bca990fe36c0b7cea7f6a0d8
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: ce73e1fd5c8ecb63bee1db2e9e64aade305b37e9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175727"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287053"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Sichere Anlagen für SharePoint, OneDrive und Microsoft Teams
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
-- [Microsoft Defender für Office 365 Plan 1 und Plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Sichere Anlagen für SharePoint, OneDrive und Microsoft Teams in [Microsoft Defender für Office 365](office-365-atp.md) bietet eine zusätzliche Schutzebene für Dateien, die bereits beim Hochladen vom allgemeinen Virenerkennungsmodul in Microsoft [365](virus-detection-in-spo.md)überprüft wurden. Sichere Anlagen für SharePoint, OneDrive und Microsoft Teams helfen beim Erkennen und Blockieren vorhandener Dateien, die in Teamwebsites und Dokumentbibliotheken als bösartig identifiziert werden.
 
@@ -64,14 +64,14 @@ Weitere Informationen zur Benutzeroberfläche, wenn eine Datei als schädlich er
 
 ## <a name="view-information-about-malicious-files-detected-by-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Anzeigen von Informationen zu schädlichen Dateien, die von sicheren Anlagen für SharePoint, OneDrive und Microsoft Teams erkannt wurden
 
-Dateien, die von Microsoft Defender für Office 365 als bösartig identifiziert werden, werden in Berichten für [Microsoft Defender für Office 365](view-reports-for-atp.md) und in Explorer (und Echtzeiterkennungen) [angezeigt.](threat-explorer.md)
+Dateien, die von Microsoft Defender für Office 365 als bösartig identifiziert werden, werden in Berichten für [Microsoft Defender für Office 365](view-reports-for-atp.md) und im Explorer (und in Echtzeiterkennungen) [angezeigt.](threat-explorer.md)
 
-Ab Mai 2018, wenn eine Datei von Microsoft Defender für Office 365 als bösartig identifiziert wird, ist die Datei auch in Quarantäne verfügbar. Weitere Informationen finden Sie im Security & Compliance Center zum Verwalten [von Isolierten Dateien.](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files)
+Ab Mai 2018 steht die Datei auch in Quarantäne, wenn eine Datei von Microsoft Defender für Office 365 als bösartig identifiziert wird. Weitere Informationen finden Sie im Security & Compliance Center zum Verwalten [von Isolierten Dateien.](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files)
 
 ## <a name="keep-these-points-in-mind"></a>Beachten Sie diese Punkte
 
 - Defender für Office 365 scannt nicht jede einzelne Datei in SharePoint Online, OneDrive for Business oder Microsoft Teams. Es handelt sich hierbei um ein beabsichtigtes Verhalten. Dateien werden asynchron überprüft. Der Prozess verwendet Freigabe- und Gastaktivitätsereignisse zusammen mit intelligenten Heuristiken und Bedrohungssignalen, um schädliche Dateien zu identifizieren.
 
-- Stellen Sie sicher, dass Ihre SharePoint-Websites für die Verwendung der modernen [Be benutzererfahrung konfiguriert sind.](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience) Defender für Office 365-Schutz gilt unabhängig davon, ob die moderne Ansicht oder die klassische Ansicht verwendet wird. Visuelle Indikatoren, die eine Datei blockieren, sind jedoch nur in der modernen Be benutzererfahrung verfügbar.
+- Stellen Sie sicher, dass Ihre SharePoint-Websites für die Verwendung der modernen [Be benutzererfahrung konfiguriert sind.](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience) Defender für Office 365-Schutz gilt unabhängig davon, ob die moderne Oder die klassische Ansicht verwendet wird. Visuelle Indikatoren, die eine Datei blockieren, sind jedoch nur in der modernen Be benutzererfahrung verfügbar.
 
 - Sichere Anlagen für SharePoint, OneDrive und Microsoft Teams sind Teil der gesamten Bedrohungsschutzstrategie Ihrer Organisation, die Antispam- und Ansoftwareschutz in Exchange Online Protection (EOP) sowie sichere Links und sichere Anlagen in Microsoft Defender für Office 365 umfasst. Weitere Informationen finden Sie unter ["Schutz vor Bedrohungen in Office 365".](protect-against-threats.md)
