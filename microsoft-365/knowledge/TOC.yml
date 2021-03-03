@@ -1,12 +1,12 @@
-- name: Erste Schritte mit Microsoft Viva
+- name: Microsoft Viva Topics
+  href: index.md
+- name: Erste Schritte mit Microsoft Viva Topics
   items:
-    - name: Einführung in Microsoft Viva
-      href: index.md
-    - name: Microsoft Viva – Übersicht
+    - name: Microsoft Viva Topics – Übersicht
       href: topic-experiences-overview.md
-    - name: Microsoft Viva – Entdecken und organisatorische Aufgaben
+    - name: Microsoft Viva Topics – Entdecken und organisatorische Aufgaben
       href: topic-experiences-discovery-curation.md
-    - name: Microsoft Viva – Rollen
+    - name: Themen zu Microsoft Viva – Rollen
       href: topic-experiences-roles.md
     - name: Bereiten Sie Ihre Umgebung vor
       href: topic-experiences-get-ready.md
@@ -28,6 +28,8 @@
       href: topic-experiences-administration.md
 - name: Mit Topics arbeiten
   items:
+    - name: Erste Schritte mit Microsoft Topics
+      href: get-started-with-viva-topics.md
     - name: Topic Center Übersicht
       href: topic-center-overview.md
     - name: Themen im Topic Center verwalten
