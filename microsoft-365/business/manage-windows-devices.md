@@ -1,5 +1,5 @@
 ---
-title: Aktivieren von Domänenbeitritt von Windows 10-Geräten, die von Microsoft 365 for Business verwaltet werden
+title: Aktivieren der Domänenverfingung von Windows 10-Geräten, die von Microsoft 365 Business verwaltet werden
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -23,96 +23,96 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: In diesem Artikel erfahren Sie, wie Sie Microsoft 365 in wenigen Schritten zum Schutz von lokalen Active Directory-verbundenen Windows 10-Geräten aktivieren.
-ms.openlocfilehash: 6275c6c4be9cd9631ab095f8b0e1b39683022bb2
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+description: Erfahren Sie, wie Sie Microsoft 365 aktivieren, um lokale Active-Directory-beigetretene Windows 10-Geräte in nur wenigen Schritten zu schützen.
+ms.openlocfilehash: 0b597110447272be128bfe1866234ac25a8e67e6
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560841"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407076"
 ---
-# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Aktivieren von Domänenbeitritt von Windows 10-Geräten, die von Microsoft 365 Business Premium verwaltet werden
+# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Aktivieren der In der Domäne beigetretenen Windows 10-Geräte, die von Microsoft 365 Business Premium verwaltet werden können
 
-Wenn Ihre Organisation Windows Server Active Directory lokal verwendet, können Sie Microsoft 365 Business Premium zum Schutz Ihrer Windows 10-Geräte einrichten und gleichzeitig den Zugriff auf lokale Ressourcen aufrecht erhalten, die lokale Authentifizierung erfordern.
-Um diesen Schutz einzurichten, können Sie **hybride Azure AD verbundene Geräte**implementieren. Diese Geräte sind sowohl mit Ihrem lokalen Active Directory als auch mit Ihrem Azure-Active Directory verbunden.
+Wenn Ihre Organisation Windows Server Active Directory lokal verwendet, können Sie Microsoft 365 Business Premium zum Schutz Ihrer Windows 10-Geräte einrichten und gleichzeitig den Zugriff auf lokale Ressourcen beibehalten, die eine lokale Authentifizierung erfordern.
+Zum Einrichten dieses Schutzes können Sie Azure **AD-Hybridgeräte implementieren.** Diese Geräte sind sowohl mit Ihrem lokalen Active Directory als auch mit Ihrem Azure Active Directory verbunden.
 
-In diesem Video werden die Schritte beschrieben, wie Sie dies für das am häufigsten verwendete Szenario einrichten, das auch in den folgenden Schritten detailliert erläutert wird.
+In diesem Video werden die Schritte zum Einrichten dieses Szenarios für das gängigste Szenario beschrieben, das auch in den folgenden Schritten beschrieben wird.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
 
 ## <a name="before-you-get-started-make-sure-you-complete-these-steps"></a>Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Schritte ausführen:
-- Synchronisieren von Benutzern mit dem Azure AD mit Azure AD Connect.
-- Schließen Sie die Synchronisierung Azure AD Connect Organizational Unit (OU) ab.
-- Stellen Sie sicher, dass alle von Ihnen synchronisierten Domänenbenutzer Lizenzen für Microsoft 365 Business Premium haben.
+- Synchronisieren von Benutzern mit Azure AD mit Azure AD Connect.
+- Schließen Sie die Azure AD Connect Organizational Unit (OU)-Synchronisierung ab.
+- Stellen Sie sicher, dass alle Domänenbenutzer, die Sie synchronisieren, über Lizenzen mit Microsoft 365 Business Premium verfügen.
 
-Die Schritte finden Sie unter [Synchronisieren von Domänenbenutzern mit Microsoft](manage-domain-users.md) .
+Die [Schritte finden Sie unter Synchronisieren von Domänenbenutzern](manage-domain-users.md) mit Microsoft.
 
-## <a name="1-verify-mdm-authority-in-intune"></a>1. Überprüfen der MDM-Autorität in InTune
+## <a name="1-verify-mdm-authority-in-intune"></a>1. Überprüfen der MDM-Autorität in Intune
 
-Wechseln Sie zu [Endpunkt-Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview) , und wählen Sie auf der Seite Microsoft InTune die Option **Geräteregistrierung**aus, und stellen Sie dann auf der Seite **Übersicht** sicher, dass die **MDM-Autorität** **InTune**ist.
+Wechseln Sie zu [Endpoint Manager,](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview) und wählen Sie auf  der Seite Microsoft Intune die Option Geräteregistrierung **aus,** und stellen Sie dann auf der Seite Übersicht sicher, dass **die MDM-Autorität** **Intune ist.**
 
-- Wenn **MDM Authority** **keine**ist, klicken Sie auf die **MDM-Autorität** , um Sie auf **InTune**festzulegen.
-- Wenn **MDM Authority** **Microsoft Office 365**ist, wechseln Sie zu **Geräte**  >  **Registrieren von Geräten** , und verwenden Sie das Dialogfeld MDM- **Autorität hinzufügen** auf der rechten Seite zum Hinzufügen von **InTune-MDM** -Autorität (das Dialogfeld MDM- **Autorität hinzufügen** ist nur verfügbar, wenn die MDM- **Autorität** auf Microsoft Office 365 festgelegt ist).
+- Wenn **die MDM-Autorität** **Keine ist,** klicken Sie auf die **MDM-Autorität,** um sie auf **Intune zu setzen.**
+- Wenn **die MDM-Autorität** Microsoft Office **365** ist, wechseln Sie zu Geräte registrieren Geräte registrieren, und verwenden Sie das Dialogfeld MdM-Autorität hinzufügen auf der rechten Seite, um intune MDM-Autorität hinzuzufügen (das Dialogfeld MDM-Autorität hinzufügen ist nur verfügbar, wenn die MDM-Autorität auf Microsoft Office  >   365 festgelegt ist).    
 
-## <a name="2-verify-azure-ad-is-enabled-for-joining-computers"></a>2. überprüfen, ob Azure AD für das Hinzufügen von Computern aktiviert ist
+## <a name="2-verify-azure-ad-is-enabled-for-joining-computers"></a>2. Überprüfen, ob Azure AD für den Beitritt zu Computern aktiviert ist
 
-- Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> , und wählen Sie **Azure Active Directory** (Wählen Sie alle anzeigen, wenn Azure Active Directory nicht sichtbar ist) in der Liste **Admin** Center aus. 
-- Wechseln Sie im **Azure Active Directory Admin Center**zu **Azure Active Directory** , wählen Sie **Geräte** und dann **Geräteeinstellungen**aus.
-- Sicherstellen **, dass Benutzer Geräte an Azure AD** aktiviert werden können 
-    1. Um alle Benutzer zu aktivieren, legen Sie **alle**fest.
-    2. Um bestimmte Benutzer zu aktivieren, legen Sie auf **ausgewählt** fest, um eine bestimmte Gruppe von Benutzern zu aktivieren.
-        - Fügen Sie die gewünschten Domänenbenutzer, die in Azure AD synchronisiert wurden, zu einer [Sicherheitsgruppe](../admin/create-groups/create-groups.md)hinzu.
+- Wechseln Sie zum Admin Center unter, und wählen Sie Azure Active Directory (wählen Sie Alle anzeigen aus, wenn Azure Active Directory nicht sichtbar ist) in der Liste <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> **Admin Center** aus.  
+- Wechseln Sie **im Azure Active Directory Admin Center** zu Azure Active **Directory,** wählen Sie **Geräte** und dann **Geräteeinstellungen aus.**
+- Überprüfen,**ob Benutzer Geräte zu Azure AD beitreten können aktiviert** ist 
+    1. Um alle Benutzer zu aktivieren, legen Sie auf **Alle .**
+    2. Um bestimmte Benutzer zu aktivieren, legen Sie auf **Ausgewählt festgelegt,** um eine bestimmte Gruppe von Benutzern zu aktivieren.
+        - Fügen Sie die gewünschten Domänenbenutzer, die in Azure AD synchronisiert wurden, einer [Sicherheitsgruppe hinzu.](../admin/create-groups/create-groups.md)
         - Wählen **Sie Gruppen auswählen** aus, um den MDM-Benutzerbereich für diese Sicherheitsgruppe zu aktivieren.
 
-## <a name="3-verify-azure-ad-is-enabled-for-mdm"></a>3. überprüfen Azure AD für MDM aktiviert ist
+## <a name="3-verify-azure-ad-is-enabled-for-mdm"></a>3. Überprüfen, ob Azure AD für MDM aktiviert ist
 
-- Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> , und wählen Sie " **Endpunkt Verwaltung**auswählen" aus (Wählen Sie **Alle anzeigen** aus, wenn **Endpunkt-Manager** nicht sichtbar ist)
-- Wechseln Sie im **Microsoft Endpoint Manager Admin Center**zu **Geräte**  >  **Windows**  >  **Windows-Registrierung**für die  >  **automatische Registrierung**.
-- Überprüfen Sie, dass der MDM-Benutzerbereich aktiviert ist.
+- Wechseln Sie zum Admin Center unter, und wählen Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> **Endpoint Managemen** t aus (wählen Sie **Alle** anzeigen aus, wenn **Endpoint Manager** nicht sichtbar ist)
+- Wechseln Sie **im Microsoft Endpoint Manager Admin Center** zu **Geräte**  >  **Windows Windows**  >  **Registrierung**  >  **automatische Registrierung**.
+- Überprüfen Sie, ob der MDM-Benutzerbereich aktiviert ist.
 
-    1. Wenn Sie alle Computer registrieren möchten, **legen Sie alle** fest, damit alle Benutzer Computer, die zu Azure AD und zu neuen Computern gehören, automatisch registriert werden, wenn die Benutzer ein Arbeitskonto zu Windows hinzufügen.
-    2. Auf **einige** festlegen, um die Computer einer bestimmten Gruppe von Benutzern zu registrieren.
-        -  Fügen Sie die gewünschten Domänenbenutzer, die in Azure AD synchronisiert wurden, zu einer [Sicherheitsgruppe](../admin/create-groups/create-groups.md)hinzu.
+    1. Wenn Sie alle Computer  registrieren möchten, legen Sie all fest, um alle Benutzercomputer, die Azure AD beigetreten sind, und neue Computer automatisch zu registrieren, wenn die Benutzer Windows ein Arbeitskonto hinzufügen.
+    2. Wird auf **Einige festgelegt,** um die Computer einer bestimmten Gruppe von Benutzern zu registrieren.
+        -  Fügen Sie die gewünschten Domänenbenutzer, die in Azure AD synchronisiert wurden, einer [Sicherheitsgruppe hinzu.](../admin/create-groups/create-groups.md)
         -  Wählen **Sie Gruppen auswählen** aus, um den MDM-Benutzerbereich für diese Sicherheitsgruppe zu aktivieren.
 
 ## <a name="4-create-the-required-resources"></a>4. Erstellen der erforderlichen Ressourcen 
 
-Das Ausführen der erforderlichen Aufgaben zum [Konfigurieren von Hybrid Azure AD Verknüpfung](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) wurde durch die Verwendung des Cmdlets [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) im PowerShell-Modul [SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) vereinfacht. Wenn Sie dieses Cmdlet aufrufen, wird der erforderliche Dienst Verbindungspfad und die Gruppenrichtlinie erstellt und konfiguriert.
+Die Ausführung der [](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) erforderlichen Aufgaben zum Konfigurieren der Azure AD-Hybrid-Verknüpfung wurde durch die Verwendung des [Cmdlets Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) im [SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell-Modul vereinfacht. Wenn Sie dieses Cmdlet aufrufen, wird der erforderliche Dienstverbindungspunkt und die Gruppenrichtlinie erstellt und konfiguriert.
 
-Sie können dieses Modul installieren, indem Sie aus einer Instanz von PowerShell Folgendes aufrufen:
+Sie können dieses Modul installieren, indem Sie folgendes aus einer Instanz von PowerShell aufrufen:
 
 ```powershell
 Install-Module SecMgmt
 ```
 
 > [!IMPORTANT]
-> Es wird empfohlen, dieses Modul auf dem Windows-Server mit Azure AD Connect zu installieren.
+> Es wird empfohlen, dieses Modul auf dem Windows Server mit Azure AD Connect zu installieren.
 
-Zum Erstellen des erforderlichen Dienst Verbindungs Pfads und der Gruppenrichtlinie rufen Sie das Cmdlet [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) auf. Sie benötigen Ihre globalen Administratoranmeldeinformationen für Microsoft 365 Business Premium, wenn Sie diese Aufgabe ausführen. Wenn Sie bereit sind, die Ressourcen zu erstellen, rufen Sie Folgendes auf:
+Zum Erstellen der erforderlichen Dienstverbindungspunkt- und Gruppenrichtlinie rufen Sie das  [Cmdlet Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) auf. Sie benötigen ihre globalen Microsoft 365 Business Premium-Administratoranmeldeinformationen, wenn Sie diese Aufgabe ausführen. Wenn Sie bereit sind, die Ressourcen zu erstellen, rufen Sie Folgendes auf:
 
 ```powershell
 PS C:\> Connect-SecMgmtAccount
 PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device Management'
 ```
 
-Mit dem ersten Befehl wird eine Verbindung mit der Microsoft-Cloud hergestellt, und wenn Sie dazu aufgefordert werden, geben Sie Ihre globalen Administratoranmeldeinformationen für Microsoft 365 Business Premium an.
+Mit dem ersten Befehl wird eine Verbindung mit der Microsoft Cloud erstellt, und wenn Sie dazu aufgefordert werden, geben Sie Ihre globalen Microsoft 365 Business Premium-Administratoranmeldeinformationen an.
 
 ## <a name="5-link-the-group-policy"></a>5. Verknüpfen der Gruppenrichtlinie
 
-1. Klicken Sie in der Gruppenrichtlinien-Verwaltungskonsole (Group Policy Management Console, GPMC) mit der rechten Maustaste auf den Speicherort, an dem Sie die Richtlinie verknüpfen möchten, und wählen Sie im Kontextmenü die Option *vorhandenes GPO verknüpfen* aus.
+1. Klicken Sie in der Gruppenrichtlinienverwaltungskonsole (GPMC) mit der rechten Maustaste auf den Speicherort, an dem Sie die Richtlinie verknüpfen möchten, und wählen Sie im Kontextmenü *Link ein* vorhandenes Gruppenrichtlinienobjekt... aus.
 2. Wählen Sie die im obigen Schritt erstellte Richtlinie aus, und klicken Sie dann auf **OK**.
 
-## <a name="get-the-latest-administrative-templates"></a>Abrufen der neuesten administrativen Vorlagen
+## <a name="get-the-latest-administrative-templates"></a>Die neuesten administrativen Vorlagen erhalten
 
-Wenn die Richtlinie **Automatische MDM-Registrierung mithilfe der Standard Azure AD Anmeldeinformationen nicht aktiviert**wird, kann dies daran liegen, dass Sie den ADMX nicht für Windows 10, Version 1803, Version 1809 oder Version 1903 installiert haben. Führen Sie die folgenden Schritte aus, um das Problem zu beheben (Hinweis: die neueste Version von MDM. ADMX ist abwärtskompatibel):
+Wenn die Richtlinie Automatische **MDM-Registrierung** mit standardmäßigen Azure AD-Anmeldeinformationen aktivieren nicht angezeigt wird, liegt dies möglicherweise daran, dass ADMX nicht für Windows 10, Version 1803 oder höher, installiert ist. Führen Sie die folgenden Schritte aus, um das Problem zu beheben (Hinweis: Die neueste MDM.admx ist abwärtskompatibel):
 
-1.  Download: [Administrative Vorlagen (ADMX) für Windows 10 May 2019 Update (1903)](https://www.microsoft.com/download/details.aspx?id=58495&WT.mc_id=rss_alldownloads_all).
-2.  Installieren Sie das Paket auf dem primären Domänen Controller (PDC).
-3.  Navigieren Sie je nach Version zum Ordner: **C:\Program Files (x86) \Microsoft Group Policy\Windows 10 May 2019 Update (1903) v3**.
-4.  Benennen Sie den Ordner **Richtlinien Definitionen** im obigen Pfad in **PolicyDefinitions**um.
-5.  Kopieren Sie **PolicyDefinitions** -Ordner in **C:\Windows\SYSVOL\domain\Policies**. 
-    -   Wenn Sie einen zentralen Richtlinienspeicher für Ihre gesamte Domäne verwenden möchten, fügen Sie den Inhalt von PolicyDefinitions dort hinzu.
-6.  Starten Sie den primären Domänen Controller neu, damit die Richtlinie zur Verfügung steht. Dieses Verfahren kann auch für zukünftige Versionen verwendet werden.
+1.  Download: [Administrative Vorlagen (ADMX) für Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/102157).
+2.  Installieren Sie das Paket auf einem Domänencontroller.
+3.  Navigieren Sie in Abhängigkeit von der Version administrative Vorlagen zum Ordner: **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**.
+4.  Benennen Sie **den Ordner Richtliniendefinitionen** im obigen Pfad in **PolicyDefinitions um.**
+5.  Kopieren Sie **den Ordner PolicyDefinitions** in Ihre SYSVOL-Freigabe, die sich standardmäßig unter **C:\Windows\SYSVOL\domain\Policies befindet.** 
+    -   Wenn Sie planen, einen zentralen Richtlinienspeicher für Ihre gesamte Domäne zu verwenden, fügen Sie dort den Inhalt von PolicyDefinitions hinzu.
+6.  Für den Fall, dass Mehrere Domänencontroller vorhanden sind, warten Sie, bis SYSVOL repliziert wird, bis die Richtlinien verfügbar sind. Dieses Verfahren funktioniert auch für jede zukünftige Version der administrativen Vorlagen.
 
-An dieser Position sollten Sie die **Automatische MDM-Registrierung mithilfe der standardmäßigen Azure AD** verfügbaren Anmeldeinformationen anzeigen können.
+An diesem Punkt sollte die Richtlinie Automatische MDM-Registrierung aktivieren mit standardmäßig verfügbaren **Azure AD-Anmeldeinformationen angezeigt** werden.

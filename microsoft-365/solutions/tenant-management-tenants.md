@@ -1,5 +1,5 @@
 ---
-title: Schritt 1. Ihre Microsoft 365 Enterprise-Mandanten
+title: Schritt 1. Ihre Microsoft 365 for Enterprise-Mandanten
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,26 +11,28 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
-description: Bereitstellen und Verwalten einzelner oder mehrerer Microsoft 365-Mandanten mit Optionen für Multi-Geo- und Verschieben von Standorten.
-ms.openlocfilehash: 567a2cb46e715ec560bf973a33ab83cfa63d403b
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+description: Bereitstellen und Verwalten einzelner oder mehrerer Microsoft 365-Mandanten mit Optionen für Multi-Geo- und verschiebende Standorte.
+ms.openlocfilehash: 4d9bd685fce6fb2f11b8e17bebae6460e0c10bd2
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908591"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406384"
 ---
-# <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>Schritt 1. Ihre Microsoft 365 Enterprise-Mandanten
+# <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>Schritt 1. Ihre Microsoft 365 for Enterprise-Mandanten
 
-Eine Ihrer ersten Mandantenentscheidungen ist, wie viele sie haben müssen. Jeder Microsoft 365-Mandant ist unterschiedlich, eindeutig und von allen anderen Microsoft 365-Mandanten getrennt. Der entsprechende Azure AD-Mandant ist auch anders, eindeutig und von allen anderen Microsoft 365-Mandanten getrennt.
+Eine Ihrer ersten Mandantenentscheidungen ist, wie viele sie haben müssen. Jeder Microsoft 365-Mandant ist unterschiedlich, eindeutig und von allen anderen Microsoft 365-Mandanten getrennt. Der entsprechende Azure AD-Mandant ist auch unterschiedlich, eindeutig und von allen anderen Microsoft 365-Mandanten getrennt.
 
 ## <a name="single-tenant"></a>Einzelner Mandant
-Die Verwendung eines einzelnen Mandanten vereinfacht viele Aspekte der Nutzung von Microsoft 365 in Ihrer Organisation. Ein einzelner Mandant bedeutet einen einzelnen Azure AD-Mandanten mit einem einzigen Satz von Konten, Gruppen und Richtlinien. Berechtigungen und die Freigabe von Ressourcen in Ihrer Organisation können über diesen zentralen Identitätsanbieter durchgeführt werden.
+Die Verwendung eines einzelnen Mandanten vereinfacht viele Aspekte der Verwendung von Microsoft 365 in Ihrer Organisation. Ein einzelner Mandant bedeutet einen einzelnen Azure AD-Mandanten mit einem einzigen Satz von Konten, Gruppen und Richtlinien. Berechtigungen und die Freigabe von Ressourcen in Ihrer Organisation können über diesen zentralen Identitätsanbieter durchgeführt werden.
 
-Ein einzelner Mandant bietet ihren Benutzern die funktionsreichste und vereinfachte Zusammenarbeit und Produktivität.
+Ein einzelner Mandant bietet den Benutzern die funktionsreichste und vereinfachte Zusammenarbeit und Produktivität.
 
-Hier ist ein Beispiel für den Standardspeicherort und den Azure AD-Mandanten eines Microsoft 365-Mandanten.
+Im Folgenden finden Sie ein Beispiel, das den Standardspeicherort und den Azure AD-Mandanten eines Microsoft 365-Mandanten zeigt.
 
 ![Ein einzelner Microsoft 365-Mandant mit seinem Azure AD-Mandanten](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
@@ -41,78 +43,78 @@ Es gibt viele Gründe, warum Ihre Organisation mehrere Mandanten haben könnte:
 - Administrative Isolation
 - Dezentralisierte IT
 - Historische Entscheidungen
-- Fusionen, Übernahmen oder Übernahmen
-- Klare Trennung des Brandings für Mischkonzernorganisationen
-- Präproduktions-, Test- oder Sandkasten-Mandanten
+- Fusionen, Übernahmen oder Abkäufe
+- Klare Trennung des Brandings für Mischkonzerne
+- Vorproduktions-, Test- oder Sandkasten-Mandanten
 
-Hier ist ein Beispiel für eine Organisation mit zwei Mandanten (Mandant A und Mandant B) in derselben Standard-Rechenzentrums-Geo. Jeder Mandant als separater Azure AD-Mandant.
+Hier ist ein Beispiel für eine Organisation mit zwei Mandanten (Mandant A und Mandant B) im gleichen Standarddatencenter-Geo. Jeder Mandant als separater Azure AD-Mandant.
 
-![Mehrere Microsoft 365-Mandanten mit ihren eigenen Azure AD-Mandanten](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
+![Mehrere Microsoft 365-Mandanten mit eigenen Azure AD-Mandanten](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
 
-Wenn Sie über mehrere Mandanten verfügen, gibt es Einschränkungen und zusätzliche Überlegungen bei der Verwaltung und Bereitstellung von Diensten für Ihre Benutzer.
+Wenn Sie über mehrere Mandanten verfügen, gibt es Einschränkungen und zusätzliche Überlegungen beim Verwalten und Bereitstellen von Diensten für Ihre Benutzer.
 
 ### <a name="inter-tenant-collaboration"></a>Zusammenarbeit zwischen Mandanten
 
-Wenn Sie möchten, dass Ihre Benutzer in verschiedenen Microsoft 365-Mandanten auf sichere Weise effektiver zusammenarbeiten, umfassen die Optionen für die mandantenübergreifende Zusammenarbeit die Verwendung eines zentralen Speicherorts für Dateien und Unterhaltungen, das Freigeben von Kalendern, die Verwendung von Chats, Audio-/Videoanrufe für die Kommunikation und das Sichern des Zugriffs auf Ressourcen und Anwendungen.
+Wenn Sie möchten, dass Ihre Benutzer auf sichere Weise in verschiedenen Microsoft 365-Mandanten effektiver zusammenarbeiten, umfassen optionen für die mandantenübergreifende Zusammenarbeit die Verwendung eines zentralen Speicherorts für Dateien und Unterhaltungen, das Freigeben von Kalendern, die Verwendung von Chats, Audio-/Videoanrufe für die Kommunikation und das Sichern des Zugriffs auf Ressourcen und Anwendungen.
 
-Weitere Informationen finden Sie unter Zusammenarbeit zwischen Mandanten in [Microsoft 365.](../enterprise/microsoft-365-inter-tenant-collaboration.md)
+Weitere Informationen finden Sie unter Zusammenarbeit zwischen Mandanten in [Microsoft 365](../enterprise/microsoft-365-inter-tenant-collaboration.md).
 
 ### <a name="cross-tenant-mailbox-migration-preview"></a>Mandantenübergreifende Postfachmigration (Vorschau)
 
-Vor der mandantenübergreifenden Postfachmigration (in der Vorschau) müssen Sie beim Verschieben von Exchange Online-Postfächern zwischen Mandanten ein Benutzerpostfach vollständig von ihrem aktuellen Mandanten (dem Quell-Mandanten) in einen lokalen Mandanten auswechseln und dann in einen neuen Mandanten (den Ziel-Mandanten) integrieren. Mit dem neuen feature für die mandantenübergreifende Postfachmigration können Mandantenadministratoren sowohl in Quell- als auch in Ziel-Mandanten Postfächer zwischen den Mandanten mit minimalen Infrastrukturabhängigkeiten in ihren lokalen Systemen verschieben. Dadurch müssen keine Off-Board- und Onboardingpostfächer mehr verwendet werden.
+Vor der mandantenübergreifenden Postfachmigration (in der Vorschau) müssen Sie beim Verschieben von Exchange Online-Postfächern zwischen Mandanten ein Benutzerpostfach vollständig aus dem aktuellen Mandanten (dem Quell-Mandanten) in den lokalen Mandanten verschieben und dann in einen neuen Mandanten (den Ziel-Mandanten) integrieren. Mit dem neuen mandantenübergreifenden Migrationsfeature können Mandantenadministratoren sowohl in Quell- als auch in Ziel mandanten Postfächer zwischen den Mandanten mit minimalen Infrastrukturabhängigkeiten in ihren lokalen Systemen verschieben. Dadurch wird die Notwendigkeit von Off-Board- und Onboardpostfächern entfernt.
 
 Hier sind zwei Beispiel-Mandanten und ihre Postfächer vor der mandantenübergreifenden Postfachmigration.
 
 ![Mehrere Microsoft 365-Mandanten und ihre Postfächer](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-before.png)
 
-In dieser Abbildung verfügen zwei separate Mandanten über eigene Domänen und einen Satz von Exchange-Postfächern.
+In dieser Abbildung verfügen zwei separate Mandanten über eigene Domänen und eine Reihe von Exchange-Postfächern.
 
-Hier ist der Ziel mandant (Mandant A) nach der mandantenübergreifenden Postfachmigration.
+Hier ist der Ziel-Mandant (Mandant A) nach der mandantenübergreifenden Postfachmigration.
 
-![Der Ziel mandant nach der mandantenübergreifenden Postfachmigration](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-after.png)
+![Der Ziel-Mandant nach der mandantenübergreifenden Postfachmigration](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-after.png)
 
 In dieser Abbildung verfügt ein einzelner Mandant sowohl über Domänen als auch über beide Gruppen von Exchange-Postfächern.
 
-Weitere Informationen finden Sie unter ["Mandantenübergreifende Postfachmigration".](../enterprise/cross-tenant-mailbox-migration.md)
+Weitere Informationen finden Sie unter [Mandantenübergreifende Postfachmigration](../enterprise/cross-tenant-mailbox-migration.md).
 
 ### <a name="tenant-to-tenant-migrations"></a>Migrationen zwischen Mandanten
 
-Es gibt mehrere Architekturansätze für Fusionen, Übernahmen, Abgänge und andere Szenarien, die sie dazu führen können, einen vorhandenen Microsoft 365-Mandanten zu einem neuen Mandanten zu migrieren. 
+Es gibt verschiedene Architekturansätze für Fusionen, Übernahmen, Abgänge und andere Szenarien, die Sie dazu führen können, einen vorhandenen Microsoft 365-Mandanten zu einem neuen Mandanten zu migrieren. 
 
-Ausführliche Anleitungen finden Sie unter [Microsoft 365-Migrationen](../enterprise/microsoft-365-tenant-to-tenant-migrations.md)zwischen Mandanten.
+Ausführliche Anleitungen finden Sie unter Migrationen von Mandanten zu Mandanten in [Microsoft 365.](../enterprise/microsoft-365-tenant-to-tenant-migrations.md)
 
 ## <a name="multi-geo-for-a-tenant"></a>Multi-Geo für einen Mandanten
 
-Mit Microsoft 365 Multi-Geo können Sie Ruhedaten an den anderen geografischen Standorten des Rechenzentrums bereitstellen und speichern, die Sie ausgewählt haben, um die Anforderungen an die Datenspeicherung zu erfüllen, und gleichzeitig Ihre globale Einführung moderner Produktivitätserfahrungen für Ihre Mitarbeiter freischalten.
+Mit Microsoft 365 Multi-Geo können Sie Ruhedaten an den anderen geografischen Standorten des Rechenzentrums bereitstellen und speichern, die Sie ausgewählt haben, um die Anforderungen an die Datenresidenz zu erfüllen, und gleichzeitig Ihr globales Rollout moderner Produktivitätserfahrungen für Ihre Mitarbeiter entsperren.
 
-In einer Multi-Geo-Umgebung besteht Ihr Microsoft 365-Mandant aus einem Standard- oder zentralen Standort, an dem Ihr Microsoft 365-Abonnement ursprünglich erstellt wurde, und einem oder mehreren Satellitenstandorten. In einem Multi-Geo-Mandanten werden die Informationen zu geografischen Standorten, Gruppen und Benutzerinformationen in einem globalen Azure AD-Mandanten gemastert. Da Ihre Mandanteninformationen zentral gemastert und an jedem geografischen Standort synchronisiert werden, werden Die Zusammenarbeitserfahrungen, an denen alle Personen aus Ihrem Unternehmen beteiligt sind, über die Standorte hinweg freigegeben.
+In einer Multi-Geo-Umgebung besteht Ihr Microsoft 365-Mandant aus einem Standard- oder zentralen Standort, an dem Ihr Microsoft 365-Abonnement ursprünglich erstellt wurde, und einem oder mehreren Satellitenstandorten. In einem Multi-Geo-Mandanten werden die Informationen zu geografischen Standorten, Gruppen und Benutzerinformationen in einem globalen Azure AD-Mandanten gemastert. Da Ihre Mandanteninformationen zentral gemastert und mit jedem geografischen Standort synchronisiert werden, werden Die Zusammenarbeitserfahrungen, an denen alle Personen aus Ihrem Unternehmen beteiligt sind, über die Standorte hinweg gemeinsam genutzt.
 
-Hier ist ein Beispiel für eine Organisation mit ihrem Standardstandort in Europa und einem Satellitenstandort in Nordamerika. Beide Standorte verwenden denselben globalen Azure AD-Mandanten für den einzelnen Microsoft 365-Mandanten.
+Im Folgenden finden Sie ein Beispiel für eine Organisation mit ihrem Standardstandort in Europa und einem Satellitenstandort in Nordamerika. Beide Standorte teilen sich denselben globalen Azure AD-Mandanten für den einzelnen Microsoft 365-Mandanten.
 
 ![Beispiel für einen Multi-Geo-Microsoft 365-Mandanten](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
 
 Mehr dazu unter [Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md).
 
-## <a name="moving-core-data-to-a-new-datacenter-geo"></a>Verschieben von Kerndaten in eine neue Rechenzentrums-Geo
+## <a name="moving-core-data-to-a-new-datacenter-geo"></a>Verschieben von Kerndaten in einen neuen Geografischen Datencenter
 
-Microsoft öffnet weiterhin neue Rechenzentrums-Geos für Microsoft 365-Dienste. Diese neuen Rechenzentrumsregionen erweitern Kapazitäten und Rechenleistung zur Unterstützung unserer laufenden Kundennachfrage und des Nutzungswachstums. Darüber hinaus bieten die neuen Rechenzentrumsregionen die Aufbewahrung von Kundenkerndaten innerhalb der Geografie.
+Microsoft öffnet weiterhin neue Datencenter-Geos für Microsoft 365-Dienste. Diese neuen Rechenzentrumsregionen erweitern Kapazitäten und Rechenleistung zur Unterstützung unserer laufenden Kundennachfrage und des Nutzungswachstums. Darüber hinaus bieten die neuen Rechenzentrumsregionen die Aufbewahrung von Kundenkerndaten innerhalb der Geografie.
 
-Obwohl das Öffnen einer neuen Rechenzentrums-Geo keine Auswirkungen auf Sie und Ihre Kerndaten hat, die in einer bereits vorhandenen Rechenzentrums-Geo gespeichert sind, können Sie mit Microsoft eine frühzeitige Migration der ruhenden Kundenkerndaten Ihrer Organisation zu einer neuen Rechenzentrums-Geo anfordern.
+Auch wenn das Öffnen eines neuen Geocenters keine Auswirkungen auf Sie und Ihre Kerndaten hat, die in einem bereits vorhandenen Rechenzentrums-Geo gespeichert sind, können Sie mit Microsoft eine frühzeitige Migration der ruhenden Kernkundendaten Ihrer Organisation zu einem neuen Geografischen Datencenter anfordern.
 
-Hier ist ein Beispiel, bei dem ein Microsoft 365-Mandant aus dem Geografischen des Rechenzentrums der Europäischen Union (EU) in das Rechenzentrum im Vereinigten Königreich verschoben wurde.
+Im Folgenden finden Sie ein Beispiel, in dem ein Microsoft 365-Mandant vom Geografischen Rechenzentrum der Europäischen Union (EU) in das Rechenzentrum im Vereinigten Königreich (Großbritannien) verschoben wurde.
 
-![Beispiel für das Verschieben eines Microsoft 365-Mandanten zwischen den geografischen Datencentern](../media/tenant-management-overview/tenant-management-example-tenant-move.png)
+![Beispiel für das Verschieben eines Microsoft 365-Mandanten zwischen Geografischen Datencentern](../media/tenant-management-overview/tenant-management-example-tenant-move.png)
 
-Weitere Informationen finden Sie unter [Verschieben von Kerndaten in neue Geografische Datencenter von Microsoft 365.](../enterprise/moving-data-to-new-datacenter-geos.md)
+Weitere Informationen finden Sie unter [Moving core data to new Microsoft 365 datacenter geos](../enterprise/moving-data-to-new-datacenter-geos.md).
 
 ## <a name="products-and-licenses-for-a-tenant"></a>Produkte und Lizenzen für einen Mandanten
 
-Ihr Microsoft 365-Mandant wird erstellt, wenn Sie Ihr erstes Produkt erwerben, z. B. Microsoft 365 E3. Zusammen mit dem Produkt gibt es Lizenzen, denen eine monatliche oder jährliche Gebühr in Rechnung gestellt wird. Ein Administrator weist dann einem Benutzerkonto eine verfügbare Lizenz aus einem Ihrer Produkte zu, entweder direkt oder über die Gruppenmitgliedschaft. Je nach den Geschäftsanforderungen Ihrer Organisation verfügen Sie möglicherweise über eine Reihe von Produkten, die jeweils über einen eigenen Pool von Lizenzen verfügen. 
+Ihr Microsoft 365-Mandant wird erstellt, wenn Sie Ihr erstes Produkt erwerben, z. B. Microsoft 365 E3. Zusammen mit dem Produkt sind Lizenzen, die eine monatliche oder jährliche Gebühr in Rechnung gestellt werden. Ein Administrator weist dann eine verfügbare Lizenz aus einem Ihrer Produkte einem Benutzerkonto zu, entweder direkt oder über die Gruppenmitgliedschaft. Je nach den Geschäftlichen Anforderungen Ihrer Organisation verfügen Sie möglicherweise über eine Reihe von Produkten, die jeweils über einen eigenen Pool von Lizenzen verfügen. 
 
-Das Bestimmen der Produkt- und Anzahl der Lizenzen für die einzelnen Produkte erfordert eine gewisse Planung:
+Für die Bestimmung des Satz von Produkten und der Anzahl der Lizenzen für die einzelnen Produkte ist eine gewisse Planung erforderlich:
 
 - Stellen Sie sicher, dass Sie über genügend Lizenzen für die Benutzerkonten verfügen, die erweiterte Features benötigen.
-- Verhindern Sie, dass Lizenzen auslaufen oder sie zu viele nicht zugewiesene Lizenzen haben, basierend auf Änderungen bei der Personalbepersonalung in Ihrer Organisation.
+- Verhindern Sie, dass Ihnen lizenzen oder zu viele nicht zugewiesene Lizenzen aufgrund von Personaländerungen in Ihrer Organisation nicht zugewiesen werden.
 
 
 ## <a name="results-of-step-1"></a>Ergebnisse von Schritt 1
@@ -121,37 +123,37 @@ Für Ihre Microsoft 365 Enterprise-Mandanten haben Sie ermittelt:
 
 - Wie viele Mandanten Sie haben oder benötigen.
 - Für jeden Mandanten, welche Produkte und Lizenzen erworben werden müssen.
-- Gibt an, ob ein Mandant Multi-Geo sein muss, um die Anforderungen an den Datenspeicher zu erfüllen.
-- Gibt an, ob Sie die mandantenübergreifende Zusammenarbeit einrichten müssen.
+- Gibt an, ob ein Mandant Multi-Geo sein muss, um die Anforderungen an die Datenresidenz zu erfüllen.
+- Gibt an, ob Sie eine mandantenübergreifende Zusammenarbeit einrichten müssen.
 - Gibt an, ob Sie einen Mandanten zu einem anderen migrieren müssen.
-- Gibt an, ob Sie Kerndaten von einer Rechenzentrums-Geo in eine neue verschieben müssen.
+- Gibt an, ob Sie Kerndaten aus einem Geografischen Datencenter in ein neues verschieben müssen.
 
 Hier ist ein Beispiel für einen neuen Mandanten.
 
 ![Beispiel für einen neuen Mandanten](../media/tenant-management-overview/tenant-management-tenant-build-step1.png)
 
-In dieser Abbildung hat der Mandant:
+In dieser Abbildung verfügt der Mandant über:
 
-- Ein Standardspeicherort, der einem geografischen Standort des Microsoft 365-Rechenzentrums entspricht.
+- Ein Standardspeicherort, der einem Geografischen Microsoft 365-Rechenzentrum entspricht.
 - Eine Reihe von Produkten und Lizenzen.
-- Der Satz von Cloud-Produktivitäts-Apps, von denen einige für Produkte spezifisch sind.
+- Der Satz von Cloudproduktivitäts-Apps, von denen einige spezifisch für Produkte sind.
 - Ein Azure AD-Mandant, der globale Administratorkonten und einen anfänglichen DNS-Domänennamen enthält.
 
-Während wir die zusätzlichen Schritte dieser Lösung durchziehen, erstellen wir diese Abbildung.
+Wenn wir die zusätzlichen Schritte dieser Lösung durchziehen, werden wir diese Abbildung erstellen.
 
 ## <a name="ongoing-maintenance-for-tenants"></a>Laufende Wartung für Mandanten
 
-Es kann sein, dass Sie regelmäßig:
+Auf fortlaufender Basis müssen Sie möglicherweise:
 
 - Fügen Sie einen neuen Mandanten hinzu.
-- Hinzufügen neuer Produkte zu einem Mandanten mit einer anfänglichen Anzahl von Lizenzen.
-- Ändern Sie den Satz von Lizenzen für ein Produkt in einem Mandanten, um sich an sich ändernde Mitarbeiteranforderungen anzupassen.
+- Fügen Sie einem Mandanten mit einer anfänglichen Anzahl von Lizenzen neue Produkte hinzu.
+- Ändern Sie den Satz von Lizenzen für ein Produkt in einem Mandanten, um die sich ändernden Personalanforderungen anzupassen.
 - Verschieben Sie Ihre Kerndaten von einem Mandanten an einen neuen geografischen Standort des Rechenzentrums.
-- Hinzufügen von Multi-Geo für Daten-Residency-Anforderungen.
+- Add Multi-Geo for data residency requirements.
 - Einrichten der mandantenübergreifenden Zusammenarbeit.
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[![Schritt 2. Optimieren Ihres Mandanten für das Netzwerk für den Zugriff](../media/tenant-management-overview/tenant-management-step-grid-networking.png)](tenant-management-networking.md)
+[![Schritt 2. Optimieren des Mandanten für den Zugriff auf das Netzwerk](../media/tenant-management-overview/tenant-management-step-grid-networking.png)](tenant-management-networking.md)
 
-Fahren Sie mit [dem Netzwerk](tenant-management-networking.md) fort, um optimale Netzwerke von Ihren Mitarbeitern zu Microsoft 365-Clouddiensten zu ermöglichen.
+Fahren Sie mit [dem Netzwerk](tenant-management-networking.md) fort, um optimale Netzwerke von Ihren Mitarbeitern zu Microsoft 365-Clouddiensten zu bieten.

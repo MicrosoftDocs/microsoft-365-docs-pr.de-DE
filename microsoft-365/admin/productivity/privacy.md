@@ -18,29 +18,29 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-description: Wie Datenschutz mit dem Produktivitäts Ergebnis geschützt wird.
-ms.openlocfilehash: ceb19fcb7bbf2f6a58e38684604ed3b0dac2a5d4
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+description: Schutz des Datenschutzes mit dem Produktivitätsergebnis.
+ms.openlocfilehash: b522c40cba746f3a4ede2404cf671607d62a3282
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604326"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406560"
 ---
-# <a name="privacy-controls-for-productivity-score"></a>Datenschutz-Steuerelemente für Produktivitäts Bewertung
+# <a name="privacy-controls-for-productivity-score"></a>Datenschutzsteuerelemente für Produktivitätsergebnis
 
-Die Produktivitäts Bewertung bietet Einblicke in die digitale Transformationsreise Ihrer Organisation durch die Verwendung von Microsoft 365 und die damit unterstützten Technologie-Erlebnisse.  Die Bewertung Ihrer Organisation reflektiert Personen-und Technologie Erfahrungs Messungen und kann mit Benchmarks von Organisationen vergleichbar mit Ihnen verglichen werden. Weitere Informationen finden Sie in der [Übersicht über die Produktivitäts Bewertung](productivity-score.md).
+Die Produktivitätswertung bietet Einblicke in die digitale Transformation Ihrer Organisation durch die Verwendung von Microsoft 365 und die Technologieerfahrungen, die sie unterstützen.  Die Bewertung Ihrer Organisation spiegelt Messungen der Benutzer- und Technologieerfahrung wider und kann mit Benchmarks von Organisationen vergleichbar mit Ihrer verglichen werden. Weitere Informationen finden Sie in der [Übersicht über die Produktivitätswertung.](productivity-score.md)
 
-Ihr Datenschutz ist für Microsoft wichtig. Informationen zum Schutz Ihrer Privatsphäre finden Sie in [der Datenschutzerklärung von Microsoft](https://privacy.microsoft.com/privacystatement). Das Produktivitäts Ergebnis ermöglicht Ihnen als IT-Administrator Ihrer Organisation den Zugriff auf Datenschutzeinstellungen, um sicherzustellen, dass alle von Ihnen eingegebenen Produktivitäts Bewertungsinformationen für Aktionen aktiviert werden, ohne dass die Vertrauensstellung Ihrer Organisation in Microsoft beeinträchtigt wird.
+Ihr Datenschutz ist für Microsoft wichtig. Informationen zum Schutz Ihrer Privatsphäre finden Sie in [der Microsoft-Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement). Produktivitätsergebnis bietet Ihnen als IT-Administrator Ihrer Organisation Zugriff auf Datenschutzeinstellungen, um sicherzustellen, dass alle angezeigten Produktivitätsergebnisinformationen aktionensfähig sind, ohne das Vertrauen Ihrer Organisation in Microsoft zu beeinträchtigen.
 
-Im Bereich "People Experiences" sind Metriken nur auf Organisationsebene verfügbar. In diesem Bereich wird die Verwendung von Microsoft 365 untersucht, indem die Kategorien der Inhalts Zusammenarbeit, Mobilität, Besprechungen, Teamarbeit und Kommunikation betrachtet werden. Wir ermöglichen Ihnen verschiedene Ebenen von Steuerelementen, die Sie bei der Erfüllung ihrer internen Anforderungen an die Datenschutzrichtlinie unterstützen.
-Die Steuerelemente geben Ihnen Folgendes:
+Im Bereich "Personenerfahrungen" sind Metriken nur auf Organisatorischer Ebene verfügbar. In diesem Bereich wird die Verwendung von Microsoft 365 durch Personen in den Kategorien Zusammenarbeit, Mobilität, Besprechungen, Teamarbeit und Kommunikation betrachtet. Wir ermöglichen Ihnen mehrere Ebenen von Steuerelementen, um Ihnen bei der Erfüllung Ihrer internen Datenschutzrichtlinienanforderungen zu helfen.
+Die Steuerelemente bieten Ihnen:
 
-- Flexible Administratorrollen, um zu steuern, wer die Informationen in der Produktivitäts Bewertung sehen kann.
-- Die Möglichkeit, den Bereich "Personen Erlebnisse" zu deaktivieren.
+- Flexible Administratorrollen, um zu steuern, wer die Informationen in Produktivitätsergebnis sehen kann.
+- Die Möglichkeit, den Bereich "Personenerfahrungen" abmelden.
 
-## <a name="flexible-admin-roles-to-control-who-can-see-the-information-in-productivity-score"></a>Flexible Administratorrollen, um zu steuern, wer die Informationen im Produktivitäts Ergebnis sehen kann
+## <a name="flexible-admin-roles-to-control-who-can-see-the-information-in-productivity-score"></a>Flexible Administratorrollen zum Steuern, wer die Informationen im Produktivitätsergebnis sehen kann
 
-Um das gesamte Produktivitäts Ergebnis anzuzeigen, müssen Sie eine der folgenden Administratorrollen sein:
+Zum Anzeigen des gesamten Produktivitätsergebniss benötigen Sie eine der folgenden Administratorrollen:
 
 - Globaler Administrator
 - Exchange-Administrator
@@ -49,13 +49,13 @@ Um das gesamte Produktivitäts Ergebnis anzuzeigen, müssen Sie eine der folgend
 - Microsoft Teams-Administrator
 - Globaler Leser
 - Berichteleser
-- Verwendungs Zusammenfassungsberichte-Leser
+- Leseberechtigter für Verwendungszusammenfassungsberichte
 
-Zuweisen der Leserrolle "Berichte" oder "Verwendungs Zusammenfassungsberichte" für alle Benutzer, die für Änderungsverwaltung und-Annahme zuständig sind, jedoch nicht unbedingt als IT-Administrator. Durch diese Rolle erhalten Sie Zugriff auf die vollständige Produktivitäts BEWERTUNGSUMGEBUNG im Microsoft 365 Admin Center.
+Weisen Sie den Leser für Berichte oder die Rolle Leser für Verwendungszusammenfassungen jedem zu, der für die Änderungsverwaltung und -einführung zuständig ist, aber nicht unbedingt einen IT-Administrator. Diese Rolle ermöglicht ihnen den Zugriff auf die vollständige Produktivitätsergebniserfahrung im Microsoft 365 Admin Center.
 
-Die Leserrolle Verwendungs Zusammenfassungsberichte muss über PowerShell-Cmdlets zugewiesen werden, bis Sie später in 2020 vom Microsoft 365 Admin Center zugeordnet wird.
+Die Leserrolle Verwendungszusammenfassungsberichte muss über PowerShell-Cmdlets zugewiesen werden, bis sie später im Microsoft 365 Admin Center zugewiesen werden kann.
 
-So weisen Sie die Leserrolle "Verwendungs Zusammenfassungsberichte" mit PowerShell zu:
+So weisen Sie die Rolle "Leser für Verwendungszusammenfassungsberichte" mit PowerShell zu:
 
 - Führen Sie die folgende PowerShell aus:
 
@@ -71,14 +71,14 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 </br>
 
 
-## <a name="capability-to-opt-out-of-people-experiences"></a>Möglichkeit zum Deaktivieren von Personen Erfahrungen
+## <a name="capability-to-opt-out-of-people-experiences"></a>Möglichkeit zum Abmelden von Personenerfahrungen
 
-Sie können auch den Bereich mit den Personen Erlebnissen der Produktivitäts Bewertung deaktivieren. Wenn Sie sich entschließen, kann niemand aus Ihrer Organisation diese Metriken anzeigen, und Ihre Organisation wird aus allen Berechnungen entfernt, die Kommunikation, Besprechungen, Zusammenarbeit, Inhalts Zusammenarbeit und Mobilität beinhalten. Sie müssen ein globaler Administrator sein, um Ihre Organisation aus den Berichten über Personen Erfahrung zu entscheiden.
+Sie können auch den Bereich "Personenerfahrungen" der Produktivitätswertung abmelden. Wenn Sie sich abmelden, kann niemand aus Ihrer Organisation diese Metriken anzeigen, und Ihre Organisation wird aus allen Berechnungen entfernt, die Kommunikation, Besprechungen, Teamarbeit, Inhaltszusammenarbeit und Mobilität umfassen. Sie müssen ein globaler Administrator sein, um Ihre Organisation von den Berichten über Die Erfahrungen von Personen abmelden zu können.
 
-So wählen Sie Put:
+So melden Sie sich ab:
 
-1. Wechseln Sie im Admin Center zu den **Einstellungen** der   >   **org**-Einstellungen, und wählen Sie unter **Dienste** die Option **Berichte** aus.
-2. Deaktivieren Sie das Kontrollkästchen zulassen, dass  **Microsoft 365-Nutzungsdaten für personenbezogene Einblicke verwendet werden**. Wenn Sie wissen möchten, wie Sie die Einstellungen für die Datenfreigabe für die Endpunktanalyse im InTune-Konfigurations-Manager ändern, wählen Sie **Weitere Informationen** aus.
-3. Wählen Sie  **Speichern** aus.
+1. Wechseln Sie im Admin Center zu **Einstellungen**   >   **Organisationseinstellungen**  >  **Produktivitätsergebnis**.
+2. Aktivieren Sie das Kontrollkästchen Zulassen, dass  **Microsoft 365-Nutzungsdaten** für Einblicke in Benutzererfahrungen verwendet werden sollen. Um zu verstehen, wie Sie Einstellungen für die Datenfreigabe für Endpoint Analytics im Intune-Konfigurations-Manager ändern, wählen Sie **Weitere Informationen aus.**
+3. Wählen Sie **Speichern aus.**
 
-:::image type="content" source="../../media/orgsettingspageoptout.png" alt-text="Seite &quot;org-Einstellungen&quot;, auf der Sie sich von Personen Erfahrungen abmelden können.":::
+:::image type="content" source="../../media/orgsettingspageoptout.png" alt-text="Seite &quot;Organisationseinstellungen&quot;, auf der Sie Benutzererfahrungen abmelden können.":::

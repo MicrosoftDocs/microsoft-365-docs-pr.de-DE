@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Verwalten von Assessments im Microsoft Compliance-Manager
+title: Erstellen und Verwalten von Bewertungen im Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,298 +13,300 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Erstellen Sie Assessments in Microsoft Compliance Manager, um die Anforderungen von Vorschriften und Zertifizierungen zu erfüllen, die für Ihre Organisation wichtig sind.
-ms.openlocfilehash: d09103f58be3a5fa39b57ca35da411e8046aace5
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+description: Erstellen Sie Bewertungen im Microsoft Compliance Manager, um Ihnen zu helfen, die Anforderungen von Vorschriften und Zertifizierungen zu erfüllen, die für Ihre Organisation wichtig sind.
+ms.openlocfilehash: 06b644293c014dafbe46c115b498c2ad2390e99d
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262290"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406757"
 ---
-# <a name="build-and-manage-assessments-in-compliance-manager"></a>Erstellen und Verwalten von Bewertungen im Compliance-Manager
+# <a name="build-and-manage-assessments-in-compliance-manager"></a>Erstellen und Verwalten von Bewertungen im Compliance Manager
 
-**In diesem Artikel:** In diesem Artikel erfahren Sie, wie Sie den Compliance-Manager für Ihre Organisation anpassen können, indem Sie **Bewertungen**erstellen und verwalten. In diesem Artikel erfahren Sie, wie Sie Assessments erstellen, wie Sie diese in **Gruppen**organisieren, mit **Steuerelementen**arbeiten, **Updates**akzeptieren und Bewertungs **Berichte**exportieren.
+**In diesem Artikel:** Erfahren Sie, wie Sie Compliance Manager für Ihre Organisation anpassen, indem Sie Bewertungen erstellen und **verwalten.** In diesem Artikel erfahren Sie, wie Sie Bewertungen erstellen, sie  **in** Gruppen organisieren, mit Steuerelementen **arbeiten,** Updates akzeptieren und Bewertungsberichte **exportieren.**
 
 > [!IMPORTANT]
-> Die für Ihre Organisation verfügbaren Bewertungen hängen von Ihrem Lizenzvertrag ab. Über [prüfen Sie die Details](https://go.microsoft.com/fwlink/?linkid=2132371).
+> Die für Ihre Organisation verfügbaren Bewertungen hängen von Ihrem Lizenzvertrag ab. [Überprüfen Sie die Details](https://go.microsoft.com/fwlink/?linkid=2132371).
 
-## <a name="introduction-to-assessments"></a>Einführung in Assessments
+## <a name="introduction-to-assessments"></a>Einführung in Bewertungen
 
-Compliance-Manager unterstützt Sie bei der Verwaltung der Compliance mit Assessments für die Vorschriften und Zertifizierungen, die für Ihre Organisation gelten. Bei den Bewertungen handelt es sich um Gruppierungen von Steuerelementen aus einer bestimmten Verordnung, Norm oder Richtlinie. Compliance-Manager erleichtert das Nachverfolgen Ihrer Compliance, indem vordefinierte Bewertungen bereitgestellt werden, die eine Vielzahl von Branchen-und regionalen Vorschriften und Zertifizierungen abdecken.
+Der Compliance-Manager hilft Ihnen, die Einhaltung von Bewertungen für die für Ihre Organisation geltenden Vorschriften und Zertifizierungen zu verwalten. Bewertungen sind Gruppierungen von Steuerelementen aus einer bestimmten Verordnung, einem Standard oder einer Bestimmten Richtlinie. Der Compliance-Manager erleichtert die Nachverfolgung Ihrer Compliance, indem er vordefinierte Bewertungen für eine Vielzahl von branchen- und regionalen Vorschriften und Zertifizierungen bietet.
 
-Jede Bewertung wird anhand einer [Bewertungs Vorlage](compliance-manager-templates.md)erstellt. Vorlagen dienen als Framework, in dem die erforderlichen Steuerelemente, Verbesserungs Aktionen und Microsoft-Aktionen für die Abschlussprüfung enthalten sind. Das Einrichten der relevantesten Bewertungen für Ihre Organisation kann Ihnen bei der Implementierung von Richtlinien und Betriebsverfahren helfen, um das Compliance-Risiko einzuschränken.
+Jede Bewertung wird aus einer [Bewertungsvorlage erstellt.](compliance-manager-templates.md) Vorlagen dienen als Framework, das die erforderlichen Steuerelemente, Verbesserungsmaßnahmen und Microsoft-Aktionen zum Abschließen der Bewertung enthält. Das Einrichten der relevantesten Bewertungen für Ihre Organisation hilft Ihnen bei der Implementierung von Richtlinien und operativen Verfahren, um Ihr Compliancerisiko zu begrenzen.
 
-Alle Ihre Bewertungen werden auf der Seite "Bewertungen" aufgeführt. Erfahren Sie mehr darüber [, wie Sie Ihre Ansicht Ihrer Bewertungen Filtern und Statuszustände interpretieren](compliance-manager-setup.md#assessments-page).
+Alle Bewertungen sind auf der Bewertungsseite aufgeführt. Erfahren Sie mehr darüber, wie Sie Ihre Ansicht Ihrer Bewertungen filtern und [Statuszustände interpretieren.](compliance-manager-setup.md#assessments-page)
 
-## <a name="data-protection-baseline-default-assessment"></a>Standardbewertung der Datenschutz Basis
+## <a name="data-protection-baseline-default-assessment"></a>Standardbewertung des Datenschutzgrundwerts
 
-Um Ihnen den Einstieg zu erleichtern, bietet Microsoft eine **Standard** Bewertung im Compliance-Manager für die **Microsoft 365-Datenschutz Basis**. Diese grundlegende Bewertung umfasst eine Reihe von Steuerelementen für wichtige Regeln und Standards für den Datenschutz und die allgemeine Datensteuerung. Dieser Basisplan zeichnet Elemente in erster Linie vom NIST-GFK (National Institute of Standards and Technology Cyber Framework) und ISO (International Organization for Standardisierungs) sowie von FedRAMP (Bundes Risiko-und Autorisierungs Management Programm) und dsgvo (allgemeine Datenschutzverordnung der Europäischen Union).
+Als Einstieg bietet Microsoft  eine Standardbewertung im Compliance Manager für die **Microsoft 365 Data Protection Baseline an.** Diese Basisbewertung enthält eine Reihe von Kontrollen für wichtige Vorschriften und Standards für den Datenschutz und die allgemeine Datenkontrolle. Diese Basislinie bezieht elemente hauptsächlich aus NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) und ISO (International Organization for Standardization), sowie aus FedRAMP (Federal Risk and Authorization Management Program) und DSGVO (General Data Protection Regulation of the European Union).
 
-Diese Bewertung wird verwendet, um das anfängliche Kompatibilitäts Ergebnis zu berechnen, wenn Sie den Compliance-Manager zum ersten Mal besuchen, bevor Sie andere Bewertungen konfigurieren. Compliance-Manager sammelt erste Signale von Ihren Microsoft 365-Lösungen. Sie sehen auf einen Blick, wie Ihre Organisation im Verhältnis zu wichtigen Datenschutzstandards und-Vorschriften arbeitet, und wie Sie die vorgeschlagenen Verbesserungsmaßnahmen durchführen.
+Diese Bewertung wird verwendet, um Ihre anfängliche Compliancebewertung zu berechnen, wenn Sie das erste Mal im Compliance Manager sind, bevor Sie andere Bewertungen konfigurieren. Compliance Manager sammelt erste Signale von Ihren Microsoft 365-Lösungen. Sie sehen auf einen Blick, wie Ihre Organisation im Vergleich zu wichtigen Datenschutzstandards und -vorschriften funktioniert, und sehen sich verbesserungswürdige Maßnahmen an.
 
-Compliance-Manager wird bei der Erstellung und Verwaltung eigener Bewertungen zur Erfüllung der besonderen Anforderungen Ihrer Organisation immer hilfreicher.
+Compliance Manager wird hilfreicher, wenn Sie Ihre eigenen Bewertungen erstellen und verwalten, um die speziellen Anforderungen Ihrer Organisation zu erfüllen.
 
-## <a name="assessment-creation-overview"></a>Übersicht über die Beurteilungs Erstellung
+## <a name="assessment-creation-overview"></a>Übersicht über die Bewertungserstellung
 
 Es gibt drei Möglichkeiten zum Einrichten von Bewertungen:
 
 1. [Verwenden Sie eine vordefinierte Bewertung](#use-a-pre-built-assessment).
-2. [Erweitern Sie eine vordefinierte Bewertung entsprechend ihren eigenen Anforderungen](#extend-a-pre-built-assessment).
+2. [Erweitern Sie eine vordefinierte Bewertung entsprechend Ihren eigenen Anforderungen.](#extend-a-pre-built-assessment)
 3. [Erstellen Sie Ihre eigene benutzerdefinierte Bewertung](#create-your-own-custom-assessment).
 
 > [!NOTE]
-> Nur Benutzer, die eine globale Administrator-oder Compliance-Manager-Verwaltungsrolle innehaben, können Bewertungen erstellen und ändern. Erfahren Sie mehr über [Rollen und Berechtigungen](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
+> Nur Benutzer, die eine Rolle als globaler Administrator oder Compliance-Manager haben, können Bewertungen erstellen und ändern. Erfahren Sie mehr über [Rollen und Berechtigungen](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
 **Verwenden einer vordefinierten Bewertung**
 
-Kicken Sie Ihre Compliance-Reise, indem Sie eine Bewertung auswählen, die bereits vom Compliance-Manager eingerichtet wurde. Wir bieten eine große Auswahl an [Vorlagen](compliance-manager-templates.md) für Vorschriften und Zertifizierungen, die sich an Branchen, Regionen und gemeinsame Datenschutzstandards wie dsgvo und ISO 27001 ausrichten. Vorlagen enthalten die Steuerelemente und Verbesserungs Aktionen für die Unterstützung bei der Erfüllung der Anforderungen einer bestimmten Zertifizierung. Sie werden aufgefordert, eine Vorlage auszuwählen, wenn Sie mit [dem Erstellen einer Bewertung](#use-a-pre-built-assessment)beginnen.
+Starten Sie Ihren Compliance-Weg, indem Sie eine bewertung auswählen, die bereits vom Compliance Manager eingerichtet wurde. Wir bieten eine [](compliance-manager-templates.md) breite Auswahl an Vorlagen für Vorschriften und Zertifizierungen, die an Branchen, Regionen und gemeinsamen Datenschutzstandards wie DSGVO und ISO 27001 ausgerichtet sind. Vorlagen enthalten die Steuerelemente und Verbesserungsmaßnahmen, mit deren Hilfe Sie die Anforderungen einer bestimmten Zertifizierung erfüllen können. Sie werden aufgefordert, eine Vorlage zu wählen, wenn Sie mit dem [Erstellen einer Bewertung beginnen.](#use-a-pre-built-assessment)
 
-**Erweitern einer vordefinierten Bewertung entsprechend Ihren Anforderungen**
+**Erweitern einer vordefinierten Bewertung für Ihre Anforderungen**
 
-Sie können eine Konformitäts-Manager-Bewertung – einen Prozess, den wir als "erweitern" bezeichnen – ändern, indem Sie eigene Steuerelemente und Aktionen hinzufügen, um den Anforderungen Ihrer Organisation besser gerecht zu werden. Wenn Sie beispielsweise im allgemeinen HIPAA einhalten müssen, jedoch zusätzliche Datenschutz-oder Sicherheitskontrollen benötigen, können Sie die HIPAA-Vorlage erweitern, indem Sie Ihr eigene Steuerelemente hinzufügen. Weitere Informationen finden Sie in den Anweisungen zum [Erweitern einer vordefinierten Bewertung](#extend-a-pre-built-assessment).
+Sie können eine Compliance-Manager-Bewertung – einen Prozess, den wir als "erweitern" bezeichnen – ändern, indem Sie Eigene Steuerelemente und Aktionen hinzufügen, um die Anforderungen Ihrer Organisation besser zu erfüllen. Wenn Sie z. B. HIPAA im Allgemeinen einhalten müssen, aber zusätzliche Datenschutz- oder Sicherheitskontrollen benötigen, können Sie unsere HIPAA-Vorlage erweitern, indem Sie ihr eigene Steuerelemente hinzufügen. Weitere Informationen finden Sie in [den Anweisungen zum Erweitern einer vordefinierten Bewertung.](#extend-a-pre-built-assessment)
 
-**Erstellen einer eigenen benutzerdefinierten Bewertung**
+**Erstellen Einer eigenen benutzerdefinierten Bewertung**
 
-Sie können eine eigene Bewertung ganz von Grund auf erstellen, um genau nachzuverfolgen, was Ihre Organisation benötigt. Zum Erstellen einer eigenen Bewertung müssen Sie zunächst eine eigene Vorlage für die Bewertung im Compliance-Manager erstellen. Lesen Sie die Anweisungen zum [Erstellen einer eigenen benutzerdefinierten Bewertung](#create-your-own-custom-assessment).
+Sie können Ihre eigene Bewertung vollständig neu erstellen, um genau zu verfolgen, was Ihre Organisation benötigt. Wenn Sie Eine eigene Bewertung erstellen, müssen Sie zunächst eine eigene Vorlage für die Bewertung im Compliance-Manager erstellen. Weitere Informationen finden Sie in [den Anweisungen zum Erstellen Ihrer eigenen benutzerdefinierten Bewertung.](#create-your-own-custom-assessment)
 
-## <a name="understand-groups-before-creating-assessments"></a>Grundlegendes zu Gruppen vor dem Erstellen von Bewertungen
+## <a name="understand-groups-before-creating-assessments"></a>Verstehen von Gruppen vor dem Erstellen von Bewertungen
 
-Bevor Sie Assessments erstellen oder ändern, ist es wichtig zu verstehen, wie Gruppen funktionieren. Wenn Sie eine Bewertung erstellen, müssen Sie Sie während des Prozesses einer Gruppe zuweisen. Aus diesem Grund wird empfohlen, vor dem Erstellen von Assessments eine Gruppierungs Strategie für Ihre Bewertungen zu planen.
+Bevor Sie Bewertungen erstellen oder ändern, müssen Sie wissen, wie Gruppen funktionieren. Wenn Sie eine Bewertung erstellen, müssen Sie sie während des Prozesses einer Gruppe zuweisen. Aus diesem Grund wird empfohlen, eine Gruppierungsstrategie für Ihre Bewertungen zu planen, bevor Sie Bewertungen erstellen.
 
-### <a name="what-are-groups"></a>Was sind Gruppen
+### <a name="what-are-groups"></a>Was sind Gruppen?
 
-Gruppen sind Container, mit denen Sie Bewertungen organisieren können. Sie können Bewertungen auf eine Weise gruppieren, die für Sie logisch ist, beispielsweise nach Jahr oder Regulierung oder basierend auf den Abteilungen oder Geographien Ihrer Organisation. Im folgenden finden Sie Beispiele aus zwei Gruppen und deren zugrunde liegenden Bewertungen:
+Gruppen sind Container, mit denen Sie Bewertungen organisieren können. Sie können Bewertungen auf eine Für Sie logische Weise gruppieren, z. B. nach Jahr oder Verordnung oder basierend auf den Abteilungen oder Regionen Ihrer Organisation. Nachfolgend finden Sie Beispiele für zwei Gruppen und deren zugrunde liegende Bewertungen:
 
-- **FFIEC ist Assessment 2020**
-  - FFIEC ist
-- **Sicherheits-und Datenschutz Bewertungen**
+- **FFIEC IS Assessment 2020**
+  - FFIEC IS
+- **Datensicherheits- und Datenschutzbewertungen**
   - ISO 27001:2013
   - ISO 27018:2014
 
-Wenn zwei unterschiedliche Bewertungen in der gleichen Gruppe Verbesserungen durchführen, die von Ihnen verwaltet werden, werden alle Aktualisierungen, die Sie an den Implementierungsdetails oder Status einer Aktion vornehmen, automatisch mit derselben Aktion in einer anderen Bewertung in der Gruppe synchronisiert. Mit dieser Synchronisierung können Sie eine Verbesserungs Aktion implementieren und mehrere Anforderungen in mehreren Bestimmungen erfüllen.
+Wenn zwei unterschiedliche Bewertungen in derselben Gruppe Von Ihnen verwaltete Verbesserungsmaßnahmen freigeben, werden alle Aktualisierungen, die Sie an den Implementierungsdetails oder dem Status einer Aktion vornehmen, automatisch mit derselben Aktion in jeder anderen Bewertung in der Gruppe synchronisiert. Mit dieser Synchronisierung können Sie eine Verbesserungsaktion implementieren und mehrere Anforderungen in mehreren Vorschriften erfüllen.
 
-### <a name="how-to-create-a-group"></a>Vorgehensweise Erstellen einer Gruppe
+### <a name="how-to-create-a-group"></a>Erstellen einer Gruppe
 
-Sie erstellen eine Gruppe während des Prozesses zum [Erstellen einer neuen Bewertung](#to-create-an-assessment).
+Sie erstellen während des Erstellens einer neuen Bewertung [eine Gruppe.](#to-create-an-assessment)
 
-Gruppen können nicht als eigenständige Entitäten erstellt werden. Eine Gruppe muss mindestens eine Bewertung enthalten. Um eine Gruppe zu erstellen, müssen Sie zuerst eine Bewertung erstellen, um Sie in die Gruppe einzufügen.
+Gruppen können nicht als eigenständige Entitäten erstellt werden. Eine Gruppe muss mindestens eine Bewertung enthalten. Zum Erstellen einer Gruppe müssen Sie zunächst eine Bewertung erstellen, die in der Gruppe erstellt werden soll.
 
-### <a name="what-to-know-when-working-with-groups"></a>Was Sie beim Arbeiten mit Gruppen wissen sollten
+### <a name="what-to-know-when-working-with-groups"></a>Wissen bei der Arbeit mit Gruppen
 
 - Gruppennamen müssen innerhalb Ihrer Organisation eindeutig sein.
-- Gruppen verfügen nicht über Sicherheitseigenschaften. Alle Berechtigungen sind Assessments zugeordnet.
-- Nachdem Sie eine Bewertung zu einer Gruppe hinzugefügt haben, kann die Gruppierung nicht mehr geändert werden.
-- Zugehörige bewertungssteuerelemente in unterschiedlichen Bewertungen innerhalb derselben Gruppe werden automatisch aktualisiert, wenn Sie abgeschlossen werden.
+- Gruppen verfügen nicht über Sicherheitseigenschaften. Alle Berechtigungen sind Bewertungen zugeordnet.
+- Nachdem Sie einer Gruppe eine Bewertung hinzugefügt haben, kann die Gruppierung nicht mehr geändert werden.
+- Verwandte Bewertungssteuerelemente in unterschiedlichen Bewertungen innerhalb derselben Gruppe werden nach Abschluss automatisch aktualisiert.
 - Wenn Sie einer vorhandenen Gruppe eine neue Bewertung hinzufügen, werden allgemeine Informationen aus Bewertungen in dieser Gruppe in die neue Bewertung kopiert.
-- Gruppen können Bewertungen für dieselbe Zertifizierung oder Regel enthalten, aber jede Gruppe kann nur eine Bewertung für ein bestimmtes Produkt-Zertifizierungs Paar enthalten. Beispielsweise kann eine Gruppe keine zwei Bewertungen für Office 365 und das NIST-GfK enthalten. Eine Gruppe kann mehrere Bewertungen für dasselbe Produkt nur dann enthalten, wenn die entsprechende Zertifizierung oder Regulierung für jede andere unterschiedlich ist.
-- Durch das Löschen eines Assessments wird die Beziehung zwischen dieser Bewertung und der Gruppe unterbrochen.
+- Gruppen können Bewertungen für dieselbe Zertifizierung oder Verordnung enthalten, aber jede Gruppe kann nur eine Bewertung für ein bestimmtes Produktzertifizierungspaar enthalten. Beispielsweise kann eine Gruppe keine zwei Bewertungen für Office 365 und NIST CSF enthalten. Eine Gruppe kann mehrere Bewertungen für dasselbe Produkt nur enthalten, wenn die entsprechende Zertifizierung oder Vorschrift für jedes Produkt unterschiedlich ist.
+- Das Löschen einer Bewertung bricht die Beziehung zwischen dieser Bewertung und der Gruppe.
 - Gruppen können nicht gelöscht werden.
-- Wenn eine Änderung an einer Verbesserung vorgenommen wird, die in mehreren Gruppen angezeigt wird, wird diese Änderung in allen Instanzen dieser Verbesserungs Aktion widergespiegelt.
+- Wenn eine Änderung an einer Verbesserung vorgenommen wird, die in mehreren Gruppen angezeigt wird, wird diese Änderung in allen Instanzen dieser Verbesserungsaktion widerspiegelt.
 
 ## <a name="use-a-pre-built-assessment"></a>Verwenden einer vordefinierten Bewertung
 
 Es gibt zwei Ausgangspunkte für das Erstellen einer Bewertung aus einer Compliance-Manager-Vorlage.
 
-Sie können den Vorgang auf der Seite "Bewertungen" beginnen, indem Sie die Schaltfläche " **Bewertung hinzufügen** " auswählen und dann den Assistenten zum Erstellen von Tests verwenden. Die Schritte für diesen Prozess finden Sie weiter unten.
+Sie können den Prozess von Ihrer Bewertungsseite aus beginnen, indem Sie die Schaltfläche Bewertung hinzufügen **auswählen** und dann den Assistenten zum Erstellen von Bewertungen durchgehen. Die Schritte für diesen Prozess sind unten aufgeführt.
 
-Sie können auch auf der Seite mit den Bewertungs Vorlagen beginnen, indem Sie die gewünschte Vorlage suchen und Sie in der Liste auswählen, um auf der Detailseite anzukommen. Wählen Sie auf der Seite Vorlagen Details die Option **Bewertung erstellen**aus. Anschließend geben Sie den Assistenten ein, damit Ihre Vorlage bereits ausgewählt ist.
+Sie können auch von ihrer Bewertungsvorlagenseite aus beginnen, indem Sie die vorlage suchen, die Sie möchten, und sie aus der Liste auswählen, um zur Detailseite zu gelangen. Wählen Sie auf der Seite Vorlagendetails die Option **Bewertung erstellen aus.** Anschließend geben Sie den Assistenten mit der bereits ausgewählten Vorlage ein.
 
 ### <a name="to-create-an-assessment"></a>So erstellen Sie eine Bewertung
 
-1. Kennen Sie die Gruppe, der Sie Ihre Bewertung zuweisen möchten, oder bereiten Sie sich darauf vor, für diese Bewertung einen neuen zu erstellen. [Erfahren Sie mehr über Gruppen](#understand-groups-before-creating-assessments).  
+1. Wissen Sie, welcher Gruppe Sie Ihre Bewertung zuweisen, oder bereit sein, eine neue Gruppe für diese Bewertung zu erstellen. [Erfahren Sie mehr über Gruppen](#understand-groups-before-creating-assessments).  
 
-2. Wechseln Sie zur Seite **Assessments** im Compliance-Manager, und wählen Sie **Bewertung hinzufügen**aus. Ein Bewertungs-Assistent wird in einem großen Flyout-Bereich angezeigt.
+2. Wechseln Sie zu Ihrer **Bewertungsseite** im Compliance-Manager, und wählen **Sie Bewertung hinzufügen aus.** Ein Bewertungs-Assistent wird in einem großen Flyoutbereich angezeigt.
 
-3. **Wählen Sie eine Vorlage**aus: Wählen Sie eine Vorlage aus, die als Grundlage für Ihre Bewertung dient. Wählen Sie das Optionsfeld neben der ausgewählten Vorlage aus, und wählen Sie dann **weiter**aus.
+3. **Vorlage auswählen:** Wählen Sie eine Vorlage aus, die als Grundlage für Ihre Bewertung dienen soll. Sie sehen die Liste der Vorlagen, die in enthaltene und Premium-Kategorien unterteilt sind (weitere Informationen finden Sie unter [Vorlagentypen).](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) Wählen Sie das Optionsfeld neben der ausgewählten Vorlage aus, und wählen Sie dann **Weiter aus.**
 
-4. **Name und Gruppe:** Geben Sie einen Namen für Ihre Bewertung in das Feld " **Bewertungs Name** " ein. Die Bewertungs Namen müssen innerhalb von Gruppen eindeutig sein. Wenn der Name der Bewertung mit dem Namen einer anderen Bewertung in einer bestimmten Gruppe übereinstimmt, wird eine Fehlermeldung angezeigt, in der Sie aufgefordert werden, einen anderen Namen zu erstellen.
+4. **Name und Gruppe:** Geben Sie im Feld Bewertungsname einen Namen **für Ihre Bewertung** ein. Bewertungsnamen müssen innerhalb von Gruppen eindeutig sein. Wenn der Name Ihrer Bewertung dem Namen einer anderen Bewertung in einer bestimmten Gruppe entspricht, wird eine Fehlermeldung angezeigt, in der Sie aufgefordert werden, einen anderen Namen zu erstellen.
 
 5. Weisen Sie Ihre Bewertung einer Gruppe zu. Sie können eine der folgenden Aktionen ausführen:
-    - Wählen Sie **vorhandene Gruppe verwenden** aus, um Sie einer bereits erstellten Gruppe zuzuweisen. oder
-    - Wählen Sie **neue Gruppe erstellen** aus, um eine neue Gruppe zu erstellen und dieser Bewertung zuzuweisen:
-        - Bestimmen Sie einen Namen für Ihre Gruppe, und geben Sie ihn in das Feld unterhalb des Optionsfelds ein.
-        - Sie können **Daten aus einer vorhandenen Gruppe**wie Implementierungs-und Testdetails und Dokumente kopieren, indem Sie die entsprechenden Felder auswählen.
+    - Wählen **Sie Vorhandene Gruppe verwenden aus,** um sie einer bereits erstellten Gruppe zuzuordnen. oder
+    - Wählen **Sie Neue Gruppe erstellen aus,** um eine neue Gruppe zu erstellen, und weisen Sie ihr diese Bewertung zu:
+        - Bestimmen Sie einen Namen für Ihre Gruppe, und geben Sie ihn in das Feld unter dem Optionsfeld ein.
+        - Sie können **Daten aus einer vorhandenen** Gruppe kopieren, z. B. Implementierungs- und Testdetails und Dokumente, indem Sie die entsprechenden Felder auswählen.
 
-    Wenn Sie fertig sind, wählen Sie **weiter**aus.
+    Wenn Sie fertig sind, wählen Sie **Weiter** aus.
 
-6. **Überprüfen und fertig stellen:** Auf dem letzten Bildschirm des Assistenten werden die Vorlage, der Name und die Gruppe angezeigt, die für die Bewertung ausgewählt wurden. Sie können diese Einstellungen über die Links auf dem Bildschirm bearbeiten, die Sie zurück zu den entsprechenden Schritten im Assistenten führen. Wenn Sie fertig sind, wählen Sie **Bewertung erstellen**aus.
+6. **Überprüfen und Fertig stellen:** Der letzte Bildschirm des Assistenten zeigt die Vorlage, den Namen und die Gruppe an, die für die Bewertung ausgewählt wurden. Sie können alle diese Einstellungen über die Links auf dem Bildschirm bearbeiten, die Sie zu den relevanten Schritten im Assistenten zurückverdienen. Wenn Sie bereit sind, wählen Sie Bewertung **erstellen aus.**
 
-7. Auf dem nächsten Bildschirm wird bestätigt, dass Sie Ihren neuen Test erfolgreich erstellt haben. Klicken Sie auf **Fertig** , um den Assistenten zu schließen, und die Seite Details der neuen Bewertung wird auf dem Bildschirm angezeigt.
+7. Der nächste Bildschirm bestätigt, dass Sie Ihre neue Bewertung erfolgreich erstellt haben. Wählen **Sie Fertig** aus, um den Assistenten zu schließen, und die Detailseite Ihrer neuen Bewertung wird auf dem Bildschirm angezeigt.
 
-Wenn auf dem Bildschirm **Bewertung fehlgeschlagen** angezeigt wird, nachdem Sie **Assessment erstellen**ausgewählt haben, wählen Sie **erneut versuchen** aus, um die Bewertung erneut zu erstellen.
+Wenn nach auswahl der **Option Bewertung erstellen** ein Bildschirm mit einem Fehler bei der Bewertung angezeigt wird, wählen Sie **Erneut** versuchen aus, um Ihre Bewertung neu zu erstellen. 
 
-Sie können den Namen der Bewertung nach dem Erstellen ändern, indem Sie in der rechten oberen Ecke der [Detailseite des Assessments](#monitor-assessment-progress-and-controls)auf die Schaltfläche **Namen bearbeiten** klicken.
+Sie können den Namen Ihrer Bewertung ändern,  nachdem Sie sie erstellt haben, indem Sie die Schaltfläche Name bearbeiten in der oberen rechten Ecke der Detailseite der [Bewertung auswählen.](#monitor-assessment-progress-and-controls)
 
 ## <a name="extend-a-pre-built-assessment"></a>Erweitern einer vordefinierten Bewertung
 
-Sie können eine vordefinierte Bewertung ändern, indem Sie Ihre eigenen Steuerelemente und Verbesserungs Aktionen zur Vorlage der Bewertung hinzufügen. Dieser Vorgang wird als "Erweitern einer Microsoft-Vorlage" im Compliance-Manager bezeichnet. Wenn Sie die Vorlage einer Bewertung erweitern, erhält Sie alle von Microsoft veröffentlichten Updates, was passieren kann, wenn Änderungen an der entsprechenden Verordnung oder dem betreffenden Produkt vorgenommen werden (siehe [akzeptieren von Updates für Bewertungen](#accepting-updates-to-assessments)).
+Sie können eine vordefinierte Bewertung ändern, indem Sie der Vorlage der Bewertung eigene Steuerelemente und Verbesserungsmaßnahmen hinzufügen. Dieser Vorgang wird im Compliance Manager als "Erweitern einer Microsoft-Vorlage" bezeichnet. Wenn Sie die Vorlage einer Bewertung erweitern, erhält sie alle von Microsoft veröffentlichten Updates, die auftreten können, wenn Änderungen an der zugehörigen Verordnung oder dem zugehörigen Produkt vorgenommen werden (siehe Akzeptieren von Updates für [Bewertungen](#accepting-updates-to-assessments)).
 
-Sie führen diesen Vorgang aus, indem Sie auf der Seite mit den **Bewertungs Vorlagen** statt auf der Seite mit den **Bewertungen** beginnen.
+Führen Sie diesen Prozess aus, indem Sie auf der Seite mit **Bewertungsvorlagen** und nicht auf der **Bewertungsseite** beginnen.
 
 **Bevor Sie beginnen:**
 
-Um diesen Prozess vorzubereiten, müssen Sie zunächst eine speziell formatierte Excel-Arbeitsmappe zusammenstellen, um die erforderlichen Vorlagendaten zu importieren. Es gibt spezielle Anforderungen für die [formatierten Excel-Dateien](compliance-manager-templates.md#formatting-your-template-data-with-excel) , die im Erweiterungsprozess verwendet werden. Lesen Sie diese zusätzlichen Punkte, um Fehler im Importprozess zu verhindern:
+Zur Vorbereitung auf diesen Prozess müssen Sie zunächst eine speziell formatierte Excel-Kalkulationstabelle zusammenstellen, um die erforderlichen Vorlagendaten zu importieren. Es gibt spezielle Anforderungen für die [formatierten Excel-Dateien, die](compliance-manager-templates.md#formatting-your-template-data-with-excel) im Erweiterungsprozess verwendet werden. Sehen Sie sich die folgenden zusätzlichen Punkte an, um Fehler im Importvorgang zu verhindern:
 
-- Ihre Tabelle sollte nur die Aktionen und Steuerelemente enthalten, die Sie der Bewertung hinzufügen möchten. 
-- Das Arbeitsblatt kann keine der Steuerelemente oder Aktionen enthalten, die bereits in der Bewertung vorhanden sind, die Sie ändern möchten.
-- Betrachten Sie auch "Erweiterung" in den Titel Ihrer Vorlage, beispielsweise "dsgvo – [Name Ihres Unternehmens]". Dies erleichtert die Identifizierung in der Liste auf der Seite " **Bewertungs Vorlagen** " im Gegensatz zur von Microsoft bereitgestellten Standardvorlage oder einer benutzerdefinierten Vorlage mit einem ähnlichen Namen.
+- Ihre Kalkulationstabelle sollte nur die Aktionen und Steuerelemente enthalten, die Sie der Bewertung hinzufügen möchten. 
+- Die Kalkulationstabelle kann keine Steuerelemente oder Aktionen enthalten, die bereits in der Bewertung vorhanden sind, die Sie ändern möchten.
+- Erwägen Sie, "Erweiterung" in den Titel Ihrer Vorlage zu nehmen, z. B. "DSGVO – [Ihr Firmenname]-Erweiterung". Dies erleichtert die Identifizierung in  der Liste auf ihrer Bewertungsvorlagenseite im Unterschied zur von Microsoft bereitgestellten Standardvorlage oder einer benutzerdefinierten Vorlage mit einem ähnlichen Namen.
 
-Führen Sie nach dem Formatieren des Arbeitsblatts die folgenden Schritte aus.
+Führen Sie nach dem Formatieren der Kalkulationstabelle die folgenden Schritte aus.
 
-**Schritte zum Erweitern einer Compliance-Manager-Vorlage**
+**Schritte zum Erweitern einer Compliance -Manager-Vorlage**
 
-1. Wechseln Sie zur Seite **Bewertungs Vorlagen** , und wählen Sie **neue Vorlage erstellen**aus. Ein Vorlagen Erstellungs-Assistent wird geöffnet.
+1. Wechseln Sie zur **Seite Bewertungsvorlagen,** und wählen **Sie Neue Vorlage erstellen aus.** Ein Vorlagenerstellungs-Assistent wird geöffnet.
 
-2. Wählen Sie den Typ der Vorlage aus, die Sie erstellen möchten. Wählen Sie in diesem Fall **Microsoft-Vorlage erweitern**aus, und **Wählen Sie dann aus**.
+2. Wählen Sie den Typ der Vorlage aus, die Sie erstellen möchten. Wählen Sie in diesem Fall **Erweitern einer Microsoft-Vorlage aus,** und wählen **Sie dann Microsoft-Vorlage auswählen aus.**
 
-3. Auf der rechten Seite des Bildschirms wird ein Flyout-Fensterausschnitt Vorlagenauswahl angezeigt. Verwenden der **Suche** zum Anwenden von Filtern zum Auffinden der gewünschten Vorlage
+3. Auf der rechten Seite des Bildschirms wird ein Flyoutbereich für die Vorlagenauswahl angezeigt, in dem eine Liste aller Vorlagen und deren Status als aktiv oder inaktiv angezeigt werden. Der **Indikator für aktivierte** Vorlagen zeigt an, wie viele Vorlagen derzeit von der Gesamtzahl der verfügbaren Vorlagen verwendet werden. Wenn Sie ihren Grenzwert überschreiten, wird eine Meldungsleiste angezeigt. Weitere [Informationen finden Sie unter Vorlagentypen.](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive)
 
-4. Nachdem Sie Ihre Vorlage gefunden haben, wählen Sie das Optionsfeld links neben dem Namen aus, und wählen Sie dann **Speichern**aus.
+4. Auf der rechten Seite des Bildschirms wird ein Flyoutbereich für die Vorlagenauswahl angezeigt. Verwenden **der Suche** zum Anwenden von Filtern zum Suchen der vorlage, die Sie möchten
 
-5. Auf dem nächsten Bildschirm wird die ausgewählte Vorlage angezeigt. Wenn zutreffend, wählen Sie **weiter**aus. (Falls falsch, wählen Sie **eine andere Vorlage auswählen** aus, um Sie erneut auszuwählen.)
+5. Nachdem Sie die Vorlage gefunden haben, wählen Sie das Optionsfeld links vom Namen aus, und wählen Sie **dann Speichern aus.**
 
-6. Wählen Sie auf dem Bildschirm **Datei hochladen** die Option **Durchsuchen** aus, um die formatierte Excel-Datei zu suchen und hochzuladen, die alle erforderlichen Vorlagendaten enthält.
+6. Auf dem nächsten Bildschirm wird die ausgewählte Vorlage angezeigt. Wenn dies richtig ist, wählen Sie **Weiter aus.** (Wenn falsch, wählen **Sie Wählen Sie eine andere Vorlage aus,** um erneut auszuwählen.)
 
-7. Wenn keine Probleme mit Ihrer Datei auftreten, zeigt der nächste Bildschirm den Namen der hochgeladenen Datei an. Wählen Sie **weiter** aus, um den Vorgang fortzusetzen (wenn Sie die Datei ändern müssen, wählen Sie **Hochladen einer anderen Datei**aus).
+7. Wählen Sie **auf dem Bildschirm** Datei hochladen die Option **Durchsuchen** aus, um die formatierte Excel-Datei mit allen erforderlichen Vorlagendaten zu suchen und hochzuladen.
 
-    - Wenn ein Problem mit Ihrer Datei vorliegt, wird in einer Fehlermeldung am oberen Rand erläutert, was falsch ist. Sie müssen die Datei korrigieren und erneut hochladen. Wenn Ihr Arbeitsblatt nicht ordnungsgemäß formatiert ist oder wenn ungültige Informationen in bestimmten Feldern vorhanden sind, treten Fehler auf.
+8. Wenn keine Probleme mit ihrer Datei auftreten, wird auf dem nächsten Bildschirm der Name der hochgeladenen Datei angezeigt. Wählen **Sie Weiter** aus, um fortzufahren (wenn Sie die Datei ändern müssen, wählen Sie Hochladen einer anderen Datei **aus).**
+
+    - Wenn ein Problem mit Ihrer Datei vor liegt, wird in einer Fehlermeldung oben erklärt, was falsch ist. Sie müssen Ihre Datei korrigieren und erneut hochladen. Fehler resultieren, wenn Ihre Kalkulationstabelle nicht ordnungsgemäß formatiert ist oder wenn in bestimmten Feldern ungültige Informationen enthalten sind.
  
-8. Auf dem Bildschirm **überprüfen und beenden** werden die Anzahl der Verbesserungs Aktionen und-Steuerelemente sowie die maximale Punktzahl für die Vorlage angezeigt. Wenn Sie zur Genehmigung berechtigt sind, wählen Sie **weiter**aus. (Wenn Sie Änderungen vornehmen müssen, wählen Sie **Hochladen einer anderen Datei**aus.)
+9. Der **Bildschirm Überprüfen und Fertig** stellen zeigt die Anzahl der Verbesserungsaktionen und -steuerelemente sowie die maximale Bewertung für die Vorlage an. Wenn Sie zur Genehmigung bereit sind, wählen Sie **Weiter aus.** (Wenn Sie Änderungen vornehmen müssen, wählen Sie **Hochladen einer anderen Datei aus.)**
 
-9. Auf dem letzten Bildschirm wird bestätigt, dass eine neue Vorlage erstellt wurde. Wählen Sie **Fertig** aus, um den Assistenten zu beenden.
+10. Der letzte Bildschirm bestätigt, dass eine neue Vorlage erstellt wurde. Wählen **Sie Fertig** aus, um den Assistenten zu beenden.
 
-10. Sie gelangen auf die Detailseite ihrer neuen Vorlage. Von hier aus können Sie Ihre Bewertung erstellen, indem Sie **Bewertung erstellen**auswählen. Um Anleitungen zu erhalten, beginnen Sie mit Schritt #4 in den [oben beschriebenen Anweisungen zur Erstellung der Bewertung](#to-create-an-assessment).
+11. Sie gelangen zur Detailseite Ihrer neuen Vorlage. Hier können Sie Ihre Bewertung erstellen, indem Sie **Bewertung erstellen auswählen.** Anleitungen finden Sie unter Schritt #4 in den [oben aufgeführten Anweisungen zur Bewertungserstellung.](#to-create-an-assessment)
 
-## <a name="create-your-own-custom-assessment"></a>Erstellen einer eigenen benutzerdefinierten Bewertung
+## <a name="create-your-own-custom-assessment"></a>Erstellen Einer eigenen benutzerdefinierten Bewertung
 
-Zum Erstellen einer benutzerdefinierten Bewertung im Compliance-Manager müssen Sie eine eigene Vorlage erstellen. Um eine eigene Vorlage zu erstellen, müssen Sie zuerst eine formatierte Excel-Arbeitsmappe zusammenstellen, um die erforderlichen Vorlagendaten zu importieren. Es hilft auch, im Voraus zu entscheiden, welcher Gruppe Sie Ihre Bewertung zuweisen, wenn Sie Sie erstellen (Weitere Informationen zu [Gruppen](#what-are-groups)).
+Für das Erstellen einer benutzerdefinierten Bewertung im Compliance-Manager müssen Sie eine eigene Vorlage erstellen. Um Eine eigene Vorlage zu erstellen, stellen Sie zunächst eine formatierte Excel-Kalkulationstabelle zusammen, um die erforderlichen Vorlagendaten zu importieren. Außerdem hilft es, im Voraus zu entscheiden, welcher Gruppe Sie Ihre Bewertung beim Erstellen zuweisen (weitere Informationen zu [Gruppen).](#what-are-groups)
 
-**Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Bewertung zu erstellen:**
+**Führen Sie die folgenden Schritte aus, um Ihre benutzerdefinierte Bewertung zu erstellen:**
 
-1. **Formatieren Sie die Excel-Datei.** Beginnen Sie mit der Formatierung Ihrer Vorlagendaten in einer Excel-Tabelle mithilfe [dieser Anweisungen](compliance-manager-templates.md#formatting-your-template-data-with-excel).
+1. **Formatieren Sie Ihre Excel-Datei.** Formatieren Sie zunächst Ihre Vorlagendaten mithilfe dieser Anweisungen in [einer Excel-Kalkulationstabelle.](compliance-manager-templates.md#formatting-your-template-data-with-excel)
 
-2. **Erstellen Sie Ihre Vorlage** , indem Sie [diese Anweisungen](compliance-manager-templates.md#create-a-new-template)befolgen.
+2. **Erstellen Sie Ihre Vorlage,** indem Sie [die folgenden Anweisungen befolgen.](compliance-manager-templates.md#create-a-new-template)
 
-3. **Erstellen Sie Ihre Bewertung** anhand der Vorlage. Sie können zunächst die Detailseite der Vorlage öffnen und " **Bewertung erstellen**" auswählen, oder zur Seite " **Bewertungen** " wechseln und " **Bewertung erstellen**" auswählen.
+3. **Erstellen Sie Ihre Bewertung** aus der Vorlage. Sie können zunächst die Detailseite der Vorlage öffnen und **Bewertung** erstellen auswählen oder zu Ihrer **Bewertungsseite** wechseln und **Bewertung erstellen auswählen.**
 
-4. Ein Assistent zum Erstellen von Tests wird in einem großen Flyout-Bereich angezeigt. Von hier aus können Sie den Anweisungen unter Verwendung der neuen benutzerdefinierten Vorlage für die Bewertung folgen, die mit Schritt #3 der [Anweisungen zur Erstellung der Bewertung](#to-create-an-assessment)beginnen.
+4. Ein Bewertungserstellungs-Assistent wird in einem großen Flyoutbereich angezeigt. Von hier aus können Sie die Anleitungen befolgen, die unter Schritt #3 der Anweisungen zum Erstellen der Bewertung [beginnen,](#to-create-an-assessment)indem Sie Ihre neue benutzerdefinierte Vorlage für Ihre Bewertung verwenden.
 
 ## <a name="delete-an-assessment"></a>Löschen einer Bewertung
 
-Wenn Sie einen Test löschen, wird dieser aus der Liste auf der Seite "Bewertungen" entfernt. Beachten Sie die folgenden wichtigen Punkte zum Löschen von Bewertungen:
+Wenn Sie eine Bewertung löschen, wird sie aus der Liste auf der Bewertungsseite entfernt. Beachten Sie die folgenden wichtigen Punkte zum Löschen von Bewertungen:
 
-- **Das Löschen einer Bewertung ist dauerhaft; Sie können Sie nicht zurück erhalten.** Wenn Sie die gleiche Bewertung erneut verwenden möchten, müssen Sie Sie neu erstellen.
-- Wenn die Verbesserungs Aktionen in der Bewertung nicht in einer anderen Bewertung angezeigt werden, werden Sie gelöscht, wenn die Bewertung gelöscht wird.
-- Es wird empfohlen, [einen Bericht](#export-an-assessment-report) über die Bewertung zu exportieren, bevor Sie ihn endgültig löschen.
+- **Das Löschen einer Bewertung ist dauerhaft. Sie können es nicht zurück.** Wenn Sie dieselbe Bewertung erneut verwenden möchten, müssen Sie sie neu erstellen.
+- Wenn die Verbesserungsmaßnahmen in der Bewertung nicht in einer anderen Bewertung angezeigt werden, werden sie gelöscht, wenn die Bewertung gelöscht wird.
+- Es wird [empfohlen, einen Bericht der](#export-an-assessment-report) Bewertung zu exportieren, bevor Sie ihn endgültig löschen.
 
 Führen Sie die folgenden Schritte aus, um eine Bewertung zu löschen:
 
-1. Wählen Sie auf der Seite " **Bewertungen** " die Bewertung aus, die Sie löschen möchten, um die Detailseite dieser Bewertung zu öffnen.
+1. Wählen Sie **auf der Bewertungsseite** die Bewertung aus, die Sie löschen möchten, um die Detailseite dieser Bewertung zu öffnen.
 
-2. Wählen Sie in der oberen rechten Ecke des Bildschirms die Option **Bewertung löschen** aus.
+2. Wählen **Sie Bewertung löschen** in der oberen rechten Ecke des Bildschirms aus.
 
-3. Ein Fenster wird angezeigt, in dem Sie aufgefordert werden, zu bestätigen, dass der Test endgültig gelöscht werden soll. Wählen Sie **Bewertung löschen** aus, um das Fenster zu schließen. Sie erhalten ein Bestätigungsfenster, dass Ihre Bewertung aus dem Compliance-Manager gelöscht wurde.
+3. Es wird ein Fenster angezeigt, in dem Sie aufgefordert werden, zu bestätigen, dass Sie die Bewertung dauerhaft löschen möchten. Wählen **Sie Bewertung löschen aus,** um das Fenster zu schließen. Sie erhalten ein Bestätigungsfenster, dass Ihre Bewertung aus dem Compliance-Manager gelöscht wurde.
 
 Wenn Sie die einzige Bewertung in einer Gruppe löschen, wird diese Gruppe auch aus dem Compliance-Manager gelöscht.
 
 > [!NOTE]
-> Alle Ihre Bewertungen können nicht gelöscht werden. Organisationen benötigen mindestens eine Bewertung, damit Compliance-Manager ordnungsgemäß funktioniert. Wenn die Bewertung, die Sie löschen möchten, die einzige ist, fügen Sie eine weitere Bewertung hinzu, bevor Sie die andere Bewertung löschen.
+> Sie können nicht alle Bewertungen löschen. Organisationen benötigen mindestens eine Bewertung, damit Compliance Manager ordnungsgemäß funktioniert. Wenn die Bewertung, die Sie löschen möchten, die einzige ist, fügen Sie eine weitere Bewertung hinzu, bevor Sie die andere Bewertung löschen.
 
-## <a name="monitor-assessment-progress-and-controls"></a>Überwachen des Status der Bewertung und der Steuerelemente
+## <a name="monitor-assessment-progress-and-controls"></a>Überwachen des Bewertungsfortschritts und der Steuerelemente
 
-Jede Bewertung verfügt über eine Detailseite, die eine Übersicht über den Fortschritt beim Abschluss der Bewertung bietet. Die Seite zeigt den Fortschritt beim Abschließen von Steuerelementen und den Teststatus von wichtigen Verbesserungs Aktionen innerhalb dieser Steuerelemente.
+Jede Bewertung verfügt über eine Detailseite, die auf einen Blick einen Überblick über Ihre Fortschritte beim Abschließen der Bewertung bietet. Die Seite zeigt Den Fortschritt beim Abschließen von Steuerelementen und den Teststatus wichtiger Verbesserungsmaßnahmen innerhalb dieser Steuerelemente.
 
 ### <a name="overview-tab"></a>Registerkarte "Übersicht"
 
-Die Registerkarte Übersicht enthält ein Diagramm, in dem Ihr Prozentsatz zum Abschluss der Bewertung angezeigt wird. Dieses Diagramm enthält eine Aufschlüsselung der Punkte aus den Aktionen, die Sie besitzen, und verweist auf Aktionen, die Microsoft gehören, sodass Sie sehen können, wie viele Punkte Sie zum Abschließen der Bewertung benötigen.
+Die Registerkarte Übersicht enthält ein Diagramm, das Ihren Prozentsatz zum Abschluss der Bewertung zeigt. Dieses Diagramm enthält eine Aufschlüsselung der Punkte aus Aktionen, die Sie besitzen, sowie Punkte von Aktionen im Besitz von Microsoft, damit Sie sehen können, wie viele weitere Punkte Sie zum Abschließen der Bewertung benötigen.
 
-Die wichtigsten Verbesserungs Aktionen für Steuerelemente in der Bewertung werden in der Reihenfolge der größten potenziellen Auswirkungen aufgelistet, um Punkte zu sammeln. Das zugeordnete Diagramm enthält Informationen zum aggregierten Teststatus ihrer Verbesserungs Aktionen, sodass Sie schnell abwägen können, was getestet wurde und was noch erledigt werden muss.
+Die wichtigsten Verbesserungsmaßnahmen für Steuerelemente in der Bewertung werden in der Reihenfolge der größten potenziellen Auswirkungen aufgelistet, um Punkte zu sammeln. Im zugeordneten Diagramm wird der aggregierte Teststatus Ihrer Verbesserungsmaßnahmen dargestellt, damit Sie schnell abschätzen können, was getestet wurde und was noch zu tun ist.
 
-Um auf einzelne Verbesserungs Aktionen zuzugreifen, besuchen Sie die Registerkarte **Steuerelemente** oder die Registerkarte **Ihre Verbesserungs Aktionen** .
+Um auf einzelne Verbesserungsaktionen zu zugreifen, besuchen Sie die Registerkarte **Steuerelemente** oder die Registerkarte **Ihre Verbesserungsaktionen.**
 
 ### <a name="controls-tab"></a>Registerkarte "Steuerelemente"
 
-Auf der Registerkarte Steuerelemente werden detaillierte Informationen zu den einzelnen Steuerelementen angezeigt, die der Bewertung zugeordnet sind. Ein **Steuerelementstatus-Aufgliederungs** Diagramm zeigt den Status von Steuerelementen nach Familie an, sodass Sie auf einen Blick sehen können, welche Gruppierungen von Steuerelementen Aufmerksamkeit benötigen.
+Auf der Registerkarte Steuerelemente werden detaillierte Informationen für jedes Steuerelement angezeigt, das der Bewertung zugeordnet ist. Ein **Diagramm zum Aufschlüsseln** des Steuerelementstatus zeigt den Status von Steuerelementen nach Familie, sodass Sie auf einen Blick sehen können, welche Gruppierungen von Steuerelementen Aufmerksamkeit benötigen.
 
-Unter dem Diagramm werden in einer Tabelle detaillierte Informationen zu den einzelnen Steuerelementen in der Bewertung aufgelistet. Steuerelemente werden nach Steuerelement Familie gruppiert. Erweitern Sie jeden Familiennamen, um die einzelnen Steuerelemente anzuzeigen, die darin enthalten sind. Die für die einzelnen Steuerelemente aufgelisteten Informationen umfassen Folgendes:
+Unterhalb des Diagramms enthält eine Tabelle detaillierte Informationen zu den einzelnen Steuerelementen in der Bewertung. Steuerelemente werden nach Steuerelementfamilien gruppieren. Erweitern Sie die einzelnen Familiennamen, um die einzelnen Steuerelemente, die sie enthalten, offen zu zeigen. Die für jedes Steuerelement aufgeführten Informationen umfassen:
 
-- **Steuerelement Titel**
-- **Status**: gibt den Teststatus der Verbesserungs Aktionen innerhalb des Steuerelements wieder. 
-    - **Übergebene** -alle Verbesserungs Aktionen haben den Teststatus "bestanden" oder mindestens eine wird übergeben, und der Rest ist "außerhalb des Bereichs"
-    -  **Fehler** – mindestens eine Verbesserungs Aktion hat den Teststatus "Fehler".
-    - **None** : alle Verbesserungs Aktionen wurden nicht getestet
-    - **Außerhalb des Bereichs** – alle Verbesserungs Aktionen liegen außerhalb des Bereichs für diese Bewertung
-    - **In Progress** -Verbesserungs Aktionen haben einen anderen Status als die oben aufgeführten, was "in Progress", "teilweiser Kredit" oder "unentdeckt" umfassen könnte.
-- **Steuerelement-ID**: die Identifikationsnummer des Steuerelements, die durch die entsprechende Regulierung, Standard oder Richtlinie zugewiesen ist
-- **Erreichte Punkte**: die Anzahl der Punkte, die durch das Abschließen von Aktionen erzielt wurden, aus der Gesamtzahl der erreichbaren Punkte 
-- **Ihre Aktionen**: die Anzahl der ausgeführten Aktionen aus der Gesamtzahl der Aktionen, die ausgeführt werden müssen.
-- **Microsoft-Aktionen**: die Anzahl der von Microsoft abgeschlossenen Aktionen 
+- **Steuerelementtitel**
+- **Status**: gibt den Teststatus der Verbesserungsmaßnahmen innerhalb des Steuerelements an. 
+    - **Übergeben** – Alle Verbesserungsmaßnahmen haben den Teststatus "bestanden", oder mindestens eine wurde bestanden, und die restlichen Aktionen sind "nicht im Bereich"
+    -  **Fehlgeschlagen** – mindestens eine Verbesserungsaktion hat den Teststatus "fehlgeschlagen".
+    - **Keine** – alle Verbesserungsmaßnahmen wurden nicht getestet
+    - **Out of scope** – alle Verbesserungsmaßnahmen sind für diese Bewertung nicht in den Bereich
+    - **In Bearbeitung** – Verbesserungsmaßnahmen haben einen anderen Status als die oben aufgeführten, die "in Bearbeitung", "Teilgutschrift" oder "unentdeckt" enthalten können.
+- **Steuerelement-ID:** die Identifikationsnummer des Steuerelements, zugewiesen durch die entsprechende Verordnung, den Standard oder die Richtlinie
+- **Punkte erreicht:** Die Anzahl der Punkte, die durch Das Abschließen von Aktionen erzielt wurden, von der Gesamtzahl der erreichbaren Punkte. 
+- **Ihre Aktionen**: Die Anzahl der abgeschlossenen Aktionen aus der Gesamtzahl der zu erledigende Aktionen
+- **Microsoft-Aktionen**: Die Anzahl der von Microsoft abgeschlossenen Aktionen 
 
-Wenn Sie die Details eines Steuerelements anzeigen möchten, wählen Sie es aus der Zeile in der Tabelle aus. Die Seite Steuerelement Details zeigt einen Graphen an, der den Teststatus der Aktionen in diesem Steuerelement angibt. Eine Tabelle unterhalb des Diagramms zeigt wichtige Verbesserungs Aktionen für dieses Steuerelement.
+Um die Details eines Steuerelements anzuzeigen, wählen Sie es aus der Zeile in der Tabelle aus. Die Seite "Steuerelementdetails" zeigt ein Diagramm, das den Teststatus der Aktionen innerhalb dieses Steuerelements angibt. Eine Tabelle unterhalb des Diagramms zeigt die wichtigsten Verbesserungsmaßnahmen für dieses Steuerelement.
 
-Wählen Sie in der Liste eine Verbesserungs Aktion aus, um auf die Detailseite der Verbesserungs Aktion zu bohren. Die Detailseiten zeigen Teststatus, Implementierungshinweise und starten in der empfohlenen Lösung.
+Wählen Sie eine Verbesserungsaktion aus der Liste aus, um einen Drilldown auf der Detailseite der Verbesserungsaktion zu erstellen. Die Detailseiten zeigen den Teststatus, Implementierungshinweise und starten in der empfohlenen Lösung.
 
-### <a name="your-improvement-actions-tab"></a>Registerkarte "Verbesserungs Aktionen"
+### <a name="your-improvement-actions-tab"></a>Registerkarte Verbesserungsmaßnahmen
 
-Die Registerkarte für Ihre Verbesserungs Aktionen listet alle Steuerelemente in der Bewertung auf, die von Ihrer Organisation verwaltet werden. In der Statusleiste wird der aggregierte Teststatus ihrer Verbesserungs Aktionen in der Bewertung näher erläutert, sodass Sie schnell abwägen können, was getestet wurde und was noch erledigt werden muss. Unter der Leiste finden Sie eine vollständige Liste der Verbesserungs Aktionen und der wichtigsten Details, einschließlich: Teststatus, die Anzahl der potenziellen und gesammelten Punkte, die zugehörigen Verordnungen und Standards, die jeweilige Lösung, den Aktionstyp und die Kontroll Familie. Erfahren Sie mehr darüber [, wie Aktionen zur Konformitätsbewertung beitragen](compliance-score-calculation.md#action-types-and-points).
+Auf der Registerkarte für Ihre Verbesserungsmaßnahmen sind alle Steuerelemente in der Bewertung aufgeführt, die von Ihrer Organisation verwaltet werden. In der Statusleiste wird der aggregierte Teststatus Ihrer Verbesserungsmaßnahmen in der Bewertung angezeigt, damit Sie schnell abschätzen können, was getestet wurde und was noch zu tun ist. Unterhalb der Leiste befindet sich die vollständige Liste der Verbesserungsmaßnahmen und wichtigsten Details, einschließlich: Teststatus, Anzahl potenzieller und verdienter Punkte, zugehörige Vorschriften und Standards, anwendbare Lösung, Aktionstyp und Steuerungsfamilie. Erfahren Sie mehr [darüber, wie Aktionen zu Ihrer Compliance-Bewertung beitragen.](compliance-score-calculation.md#action-types-and-points)
 
-Wählen Sie eine Verbesserungs Aktion aus, um die zugehörige Detailseite anzuzeigen, und wählen Sie den Link **jetzt starten** aus, um die Lösung zu öffnen, um Maßnahmen zu ergreifen.
+Wählen Sie eine Verbesserungsaktion aus, um die Detailseite anzuzeigen, und wählen Sie **den** Link Jetzt starten aus, um die Lösung zu öffnen, um Maßnahmen zu ergreifen.
 
 ### <a name="microsoft-actions-tab"></a>Registerkarte "Microsoft-Aktionen"
 
-Auf der Registerkarte Microsoft-Aktionen werden alle Aktionen in der Bewertung aufgeführt, die von Microsoft verwaltet werden. Die Liste enthält wichtige Aktionsdetails, einschließlich: Teststatus, Punkte, die zu Ihrem allgemeinen Konformitäts Bewertungsergebnis, zu den zugehörigen Vorschriften und Standards, zur jeweiligen Lösung, zum Aktionstyp und zur Steuerelement Familie beitragen. Wählen Sie eine Verbesserungs Aktion aus, um die zugehörige Detailseite anzuzeigen.
+Auf der Registerkarte Microsoft-Aktionen werden alle Aktionen in der Bewertung aufgeführt, die von Microsoft verwaltet werden. Die Liste enthält wichtige Aktionsdetails, einschließlich: Teststatus, Punkte, die zu Ihrer allgemeinen Compliance-Bewertung beitragen, zugehörige Vorschriften und Standards, anwendbare Lösung, Aktionstyp und Steuerungsfamilie. Wählen Sie eine Verbesserungsaktion aus, um die Detailseite anzuzeigen.
 
-Erfahren Sie mehr darüber [, wie Steuerelemente und Verbesserungs Aktionen nachverfolgt und bewertet werden.](compliance-score-calculation.md)
+Erfahren Sie mehr über die Nachverfolgung und Bewertung [von Steuerelementen und Verbesserungsaktionen.](compliance-score-calculation.md)
 
 ## <a name="accepting-updates-to-assessments"></a>Akzeptieren von Updates für Bewertungen
 
-Wenn ein Update für eine Bewertung zur Verfügung steht, wird eine Benachrichtigung angezeigt, und Sie haben die Möglichkeit, das Update zu akzeptieren oder zu einem späteren Zeitpunkt zu verschieben.
+Wenn ein Update für eine Bewertung verfügbar ist, wird eine Benachrichtigung angezeigt, und Sie haben die Möglichkeit, das Update zu akzeptieren oder es für einen späteren Zeitpunkt zurück zu stellen.
 
-### <a name="what-causes-an-update"></a>Was bewirkt, dass ein Update
+### <a name="what-causes-an-update"></a>Ursachen eines Updates
 
-Eine Bewertungs Aktualisierung tritt auf, wenn zugrunde liegende Vorlagenänderungen auftreten, die sich auf die Bewertung auswirken. Änderungen umfassen möglicherweise die Anpassung der Steuerungs Zuordnung oder andere Anleitungen basierend auf regulatorischen Änderungen oder Produktänderungen. Bewertungs Aktualisierungen können aus Ihrer Organisation stammen (beispielsweise, wenn eine [benutzerdefinierte Vorlage geändert wird](compliance-manager-templates.md#modify-a-template)) sowie von Microsoft.
+Eine Bewertungsaktualisierung tritt auf, wenn zugrunde liegende Vorlagenänderungen auftreten, die sich auf die Bewertung auswirken. Änderungen können eine Anpassung der Steuerelementzuordnung oder andere Anleitungen basierend auf behördlichen Änderungen oder Produktänderungen umfassen. Bewertungsupdates können von Ihrer Organisation (z. B. wenn eine benutzerdefinierte Vorlage [geändert](compliance-manager-templates.md#modify-a-template)wird) sowie von Microsoft stammen.
 
-Wenn Microsoft eine von Ihnen erweiterte Compliance-Manager-Vorlage aktualisiert, erbt ihr Assessment diese Updates, sobald Sie Sie akzeptieren. Bei der Bewertung werden die zusätzlichen Attribute beibehalten, die Sie beim Erweitern auf die Bewertung angewendet haben.
+Wenn Microsoft eine von Ihnen erweiterte Compliance -Manager-Vorlage aktualisiert, erbt Ihre Bewertung diese Updates, sobald Sie sie akzeptieren. Ihre Bewertung behält die zusätzlichen Attribute bei, die Sie bei der Erweiterung auf die Bewertung angewendet haben.
 
-Für benutzerdefinierte Bewertungen, die Sie erstellen, werden keine Vorlagen Updates von Microsoft empfangen. Benutzerdefinierte Bewertungen können Aktualisierungen für Verbesserungs Aktionen erhalten, aber alle Microsoft-Updates zur Steuerung der Zuordnung zwischen Beurteilungen und Verbesserungs Aktionen gelten nicht für benutzerdefinierte Vorlagen.
+Benutzerdefinierte Bewertungen, die Sie erstellen, erhalten keine Vorlagenupdates von Microsoft. Benutzerdefinierte Bewertungen können Aktualisierungen von Verbesserungsaktionen erhalten, aber alle Microsoft-Updates zur Steuerung der Zuordnung zwischen Bewertungen und Verbesserungsmaßnahmen gelten nicht für benutzerdefinierte Vorlagen.
 
 > [!NOTE]
-> Updates für Bewertungen gelten nur auf Gruppenebene. Wenn Sie zwei Bewertungen aus derselben Vorlage erstellt haben, die in zwei verschiedenen Gruppen vorhanden sind, wird für jede Bewertung eine Update Benachrichtigung ausstehen, und Sie müssen die Aktualisierung für jede Bewertung in der jeweiligen Gruppe einzeln akzeptieren.
+> Aktualisierungen von Bewertungen gelten nur auf Gruppenebene. Wenn Sie zwei Bewertungen aus derselben Vorlage erstellen, die in zwei verschiedenen Gruppen vorhanden sind, enthält jede Bewertung eine Benachrichtigung über ausstehende Updates, und Sie müssen das Update für jede Bewertung in der jeweiligen Gruppe einzeln akzeptieren.
 
-#### <a name="where-youll-see-assessment-update-notifications"></a>Wo Sie Benachrichtigungen über Bewertungs Updates sehen
+#### <a name="where-youll-see-assessment-update-notifications"></a>Dort werden Benachrichtigungen zu Bewertungsupdates angezeigt
 
-Auf der Seite mit den Bewertungsdetails wird auch eine **ausstehende Update** Bezeichnung neben der Bewertung mit einem Update angezeigt. Wählen Sie diese Bewertung aus, um zur Detailseite zu gelangen.
+Auf der Seite mit den Bewertungsdetails wird auch eine **Bezeichnung für ausstehende** Updates neben der Bewertung mit einem Update angezeigt. Wählen Sie diese Bewertung aus, um zur Detailseite zu gelangen.
 
-Eine Nachricht im oberen Bereich der Seite mit den Bewertungsdetails zeigt, dass für diese Bewertung ein Update verfügbar ist. Wählen Sie die Schaltfläche **Update überprüfen** im Banner aus, um die spezifischen Änderungen zu überprüfen und das Update zu akzeptieren oder zu verschieben.
+Eine Meldung am oberen Rand der Seite mit den Bewertungsdetails zeigt, dass für diese Bewertung ein Update verfügbar ist. Wählen Sie **die Schaltfläche Update** überprüfen im Banner aus, um die spezifischen Änderungen zu überprüfen und das Update zu akzeptieren oder zurück zu legen.
 
-Auf der Seite mit den Bewertungsdetails werden möglicherweise auch Verbesserungs Aktionen aufgelistet, bei denen eine **Update Bezeichnung aussteht** . Diese Updates gelten für spezifische Änderungen an den Verbesserungs Aktionen selbst und müssen separat akzeptiert werden. Weitere Informationen finden Sie unter [akzeptieren von Updates für Verbesserungs Aktionen](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions) .
+Auf der Seite bewertungsdetails können auch Verbesserungsmaßnahmen aufgeführt werden, die eine **Ausstehende** Aktualisierungsbezeichnung daneben enthalten. Diese Updates sind für bestimmte Änderungen an den Verbesserungsmaßnahmen selbst und müssen separat akzeptiert werden. Weitere Informationen finden Sie [unter Akzeptieren von Updates zu Verbesserungsmaßnahmen.](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions)
 
-#### <a name="review-update-to-accept-or-defer"></a>Überprüfen der Aktualisierung zur Annahme oder Verschiebung
+#### <a name="review-update-to-accept-or-defer"></a>Überprüfen des Updates auf Annahme oder Verschiebung
 
-Nachdem Sie auf der Seite mit den Bewertungsdetails die Option **Update überprüfen** ausgewählt haben, wird auf der rechten Seite des Bildschirms ein Flyout-Bereich angezeigt. Der Flyout-Bereich enthält die wichtigsten Details zu der ausstehenden Aktualisierung:
+Nachdem Sie **auf der** Seite Bewertungsdetails die Option Update überprüfen ausgewählt haben, wird auf der rechten Seite des Bildschirms ein Flyoutbereich angezeigt. Der Flyoutbereich enthält die wichtigsten Details zum ausstehenden Update:
 
 - Der Vorlagentitel
 - Quelle des Updates (Microsoft, Ihre Organisation oder ein bestimmter Benutzer)
-- Das Datum, an dem die Aktualisierung erstellt wurde
+- Das Datum, an dem das Update erstellt wurde
 - Eine Übersicht über das Update
-- Spezifische Details zu den Änderungen, einschließlich der Auswirkungen auf die Konformitätsbewertung, die Höhe des Fortschritts bis zum Abschluss der Bewertung und die spezifische Anzahl von Änderungen an Verbesserungs Aktionen und-Steuerelementen.
+- Spezifische Details zu den Änderungen, einschließlich der Auswirkungen auf Ihre Compliancebewertung, des Fortschritts bis zum Abschluss der Bewertung und der spezifischen Anzahl von Änderungen an Verbesserungsmaßnahmen und Steuerelementen.
 
-Durch Auswahl des **aktualisierten Vorlagen** Links wird eine Excel-Datei heruntergeladen, die Steuerelementdaten für die Version der Vorlage mit den ausstehenden Updates enthält. Durch Auswahl des **aktuellen Vorlagen** Links wird eine Datei der vorhandenen Vorlage ohne die Änderungen heruntergeladen.
+Wenn Sie **den Link Aktualisierte Vorlage** auswählen, wird eine Excel-Datei mit Steuerelementdaten für die Version der Vorlage mit den ausstehenden Updates heruntergeladen. Wenn Sie den **Link Aktuelle Vorlage** auswählen, wird eine Datei der vorhandenen Vorlage ohne die Änderungen heruntergeladen.
 
-Um das Update anzunehmen und die Änderungen an ihrer Bewertung vorzunehmen, wählen Sie **Update akzeptieren**aus. Akzeptierte Änderungen sind dauerhaft.
+Wählen Sie Update akzeptieren aus, um das Update zu akzeptieren und die Änderungen an Ihrer **Bewertung vorzunehmen.** Akzeptierte Änderungen sind dauerhaft.
 
-Wenn Sie **Abbrechen**auswählen, wird das Update nicht auf die Bewertung angewendet. Die Benachrichtigung über **ausstehende Updates** wird jedoch weiterhin angezeigt, bis Sie das Update akzeptieren.
+Wenn Sie **Abbrechen** auswählen, wird das Update nicht auf die Bewertung angewendet. Es wird jedoch weiterhin die **Benachrichtigung** über ausstehende Updates angezeigt, bis Sie das Update akzeptieren.
 
-**Warum wird empfohlen, Updates zu akzeptieren?**
+**Warum wir empfehlen, Updates zu akzeptieren**
 
-Durch das akzeptieren von Updates können Sie sicherstellen, dass Sie über die neuesten Anleitungen zur Verwendung von Lösungen und geeignete Verbesserungsmaßnahmen verfügen, die Ihnen helfen, die Anforderungen der Zertifizierung zur Hand zu erfüllen.
+Das Akzeptieren von Updates trägt dazu bei, dass Sie über die neuesten Anleitungen zur Verwendung von Lösungen verfügen und geeignete Verbesserungsmaßnahmen ergreifen, um die Anforderungen der Zertifizierung zu erfüllen.
 
-**Warum Sie ein Update möglicherweise verschieben möchten**
+**Gründe für die Verschiebung eines Updates**
 
-Wenn Sie mitten in einer Bewertung sind, sollten Sie sicherstellen, dass Sie die Arbeit daran abgeschlossen haben, bevor Sie eine Aktualisierung der Bewertung akzeptieren, die die Steuerung der Zuordnung stören könnte. Sie können das Update zu einem späteren Zeitpunkt verschieben, indem Sie im Flyout-Bereich Update aktualisieren die Option **Abbrechen** auswählen.
+Wenn Sie gerade dabei sind, eine Bewertung zu erstellen, sollten Sie sicherstellen, dass Sie die Arbeit daran abgeschlossen haben, bevor Sie ein Update der Bewertung akzeptieren, das die Steuerungszuordnung unterbrechen könnte. Sie können das Update für einen späteren Zeitpunkt zurückdingen, indem Sie im Flyoutbereich für das Überprüfungsupdate die Option **Abbrechen** auswählen.
 
 ## <a name="export-an-assessment-report"></a>Exportieren eines Bewertungsberichts
 
-Sie können eine Bewertung in eine Excel-Datei für Compliance-Beteiligte in Ihrer Organisation oder für externe Prüfer und Regulierer exportieren. Wählen Sie auf der Seite mit den Bewertungsdetails die Schaltfläche **Bericht generieren** oben auf der Seite aus, um eine Excel-Datei zu erstellen, die Sie speichern und freigeben können.
+Sie können eine Bewertung in eine Excel-Datei für Compliance-Interessengruppen in Ihrer Organisation oder für externe Auditoren und Aufsichtsbehörden exportieren. Wählen Sie auf der  Seite Bewertungsdetails die Schaltfläche Bericht generieren am oberen Rand der Seite aus, wodurch eine Excel-Datei erstellt wird, die Sie speichern und freigeben können.
 
-Der Bericht ist eine Momentaufnahme der Bewertung zum Datum und zur Uhrzeit des Exports. Sie enthält die Details für Steuerelemente, die sowohl von Ihnen als auch von Microsoft verwaltet werden, einschließlich Implementierungsstatus, Test Datum und Testergebnisse.
+Der Bericht ist eine Momentaufnahme der Bewertung zum Datum und zur Uhrzeit des Exports. Sie enthält die Details für Steuerelemente, die sowohl von Ihnen als auch von Microsoft verwaltet werden, einschließlich Implementierungsstatus, Testdatum und Testergebnissen.

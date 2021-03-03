@@ -16,22 +16,22 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 91366e8f255d277d4d40de4c4cd3330283da718c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e125a6dfb35b7018b5f85100184c842da9231327
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166450"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407325"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Weitere Informationen zu Typen vertraulicher Informationen
 
-Das Identifizieren und Klassifizieren vertraulicher Elemente, die von Ihren Organisationen kontrolliert werden, ist der erste Schritt in der Information [Protection-Teilung.](protect-information.md)  Microsoft 365 bietet drei Möglichkeiten zum Identifizieren von Elementen, sodass sie klassifiziert werden können:
+Das Identifizieren und Klassifizieren vertraulicher Elemente, die sich unter der Kontrolle Ihrer Organisation befinden, ist der erste Schritt in der [Information Protection-Disziplin.](protect-information.md)  Microsoft 365 bietet drei Möglichkeiten zum Identifizieren von Elementen, sodass sie klassifiziert werden können:
 
 - manuell von Benutzern
-- Automatisierte Mustererkennung, wie vertrauliche Informationstypen
-- [Machine Learning](classifier-learn-about.md)
+- Automatische Mustererkennung, wie vertrauliche Informationstypen
+- [maschinelles Lernen](classifier-learn-about.md)
 
-Vertrauliche Informationstypen sind musterbasierte Klassifizierungen. Sie erkennen vertrauliche Informationen wie Sozialversicherungs-, Kreditkarten- oder Bankkontonummern, um vertrauliche Elemente zu identifizieren. Weitere Informationen finden Sie unter Entitätsdefinitionen für Typen [vertraulicher Informationen.](sensitive-information-type-entity-definitions.md)
+Typen vertraulicher Informationen sind musterbasierte Klassifizierungen. Sie erkennen vertrauliche Informationen wie soziale Sicherheit, Kreditkarten- oder Bankkontonummern, um vertrauliche Elemente zu identifizieren. Weitere Informationen finden Sie unter [Entitätsdefinitionen](sensitive-information-type-entity-definitions.md) für Typen vertraulicher Informationen.
 
 ## <a name="sensitive-information-types-are-used-in"></a>Typen vertraulicher Informationen werden in
 
@@ -43,14 +43,14 @@ Vertrauliche Informationstypen sind musterbasierte Klassifizierungen. Sie erkenn
 
 ## <a name="fundamental-parts-of-a-sensitive-information-type"></a>Grundlegende Teile eines vertraulichen Informationstyps
 
-Jede Entität für vertrauliche Informationstypen wird durch die folgenden Felder definiert:
+Jede Entität vom Typ vertraulicher Informationen wird durch die folgenden Felder definiert:
 
-- name: how the sensitive information type isreferred to
-- description: beschreibt, wo nach dem Typ vertraulicher Informationen gesucht wird
-- muster: Ein Muster definiert, was ein vertraulicher Informationstyp erkennt. Sie besteht aus den folgenden Komponenten:
-    - Primäres Element – das Hauptelement, nach dem der Typ vertraulicher Informationen sucht. Es kann sich um einen regulären **Ausdruck** mit oder ohne Prüfsummenüberprüfung, eine **Schlüsselwortliste,** ein **Schlüsselwortwörterbuch** oder eine Funktion **sein.**
-    - Unterstützendes Element – Elemente, die als unterstützende Nachweise fungieren, die dazu beitragen, die Konfidenz der Übereinstimmung zu erhöhen. Beispiel: Schlüsselwort "SSN" in der Nähe einer SSN-Nummer. Dabei kann es sich um einen regulären Ausdruck mit oder ohne Prüfsummenüberprüfung, Stichwortliste und Schlüsselwortverzeichnis sein.
-    - Konfidenzniveau – Die Konfidenzniveaus (hoch, mittel, niedrig) spiegeln wider, wie viele unterstützende Nachweise zusammen mit dem primären Element erkannt wurden. Je mehr unterstützende Nachweise ein Element enthält, desto höher ist die Konfidenz, dass ein übereinstimmende Element die vertraulichen Informationen enthält, die Sie suchen.
+- Name: So wird auf den Typ vertraulicher Informationen verwiesen
+- description: beschreibt, wofür der Typ vertraulicher Informationen gesucht wird
+- pattern: Ein Muster definiert, was ein vertraulicher Informationstyp erkennt. Es besteht aus den folgenden Komponenten
+    - Primäres Element – das Hauptelement, nach dem der Typ vertraulicher Informationen sucht. Es kann sich um einen **regulären Ausdruck** mit oder ohne Prüfsummenüberprüfung, eine Schlüsselwortliste, ein  **Schlüsselwortwörterbuch** oder eine Funktion **sein.**
+    - Unterstützendes Element – Elemente, die als unterstützende Nachweise fungieren, die dazu beitragen, das Vertrauen der Übereinstimmung zu erhöhen. Beispiel: Schlüsselwort "SSN" in der Nähe einer SSN-Nummer. Es kann ein regulärer Ausdruck mit oder ohne Prüfsummenüberprüfung, Stichwortliste, Schlüsselwortwörterbuch sein.
+    - Konfidenzstufe – Konfidenzstufen (hoch, mittel, niedrig) spiegeln wider, wie viele unterstützende Nachweise zusammen mit dem primären Element erkannt wurden. Je mehr unterstützende Nachweise ein Element enthält, desto höher ist die Sicherheit, dass ein übereinstimmendes Element die von Ihnen gesuchten vertraulichen Informationen enthält.
     - Näherung – Anzahl der Zeichen zwischen primärem und unterstützendem Element
 
 ![Diagramm von bestätigenden Nachweisen und Näherungsfenster](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
@@ -60,10 +60,10 @@ Weitere Informationen zu Vertrauensebenen finden Sie in diesem Video.
 
  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]  
 
-### <a name="example-sensitive-information-type"></a>Beispiel für vertraulichen Informationstyp
+### <a name="example-sensitive-information-type"></a>Beispieltyp für vertrauliche Informationen
 
 
-## <a name="argentina-national-identity-dni-number"></a>Argentinien – Nationale Identitätsnummer (DNI)
+## <a name="argentina-national-identity-dni-number"></a>Nationale Identität (DNI) (Argentina National Identity)
 
 ### <a name="format"></a>Format
 
@@ -84,7 +84,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_argentina_national_id findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_argentina_national_id gefunden.
 
@@ -103,26 +103,26 @@ Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen In
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina National Identity number 
-- Identität 
-- Identification National Identity Card 
+- Identity 
+- Identifikation der nationalen Identitätskarte 
 - DNI 
-- Nationales NIC-Registrierungsregister von Personen 
+- Nationales NIC-Personenregister 
 - Documento Nacional de Identidad 
 - Registro Nacional de las Personas 
 - Identidad 
 - Identificación 
 
-### <a name="more-on-confidence-levels"></a>Weitere Informationen zu Vertrauensebenen
+### <a name="more-on-confidence-levels"></a>Weitere Informationen zu Konfidenzstufen
 
-In einer Entitätsdefinition für vertrauliche Informationstypen spiegelt die Konfidenzstufe **wider,** wie viele unterstützende Nachweise zusätzlich zum primären Element erkannt werden. Je mehr unterstützende Nachweise ein Element enthält, desto höher ist die Konfidenz, dass ein übereinstimmende Element die vertraulichen Informationen enthält, die Sie suchen. Übereinstimmungen mit einem hohen Konfidenzniveau enthalten beispielsweise mehr unterstützende Nachweise in der Nähe des primären Elements, während Übereinstimmungen mit einem niedrigen Konfidenzniveau nur wenig bis keine unterstützenden Nachweise in unmittelbarer Nähe enthalten würden. 
+In einer Entitätsdefinition für vertrauliche **Informationstypen** gibt die Konfidenzstufe an, wie viele unterstützende Nachweise zusätzlich zum primären Element erkannt werden. Je mehr unterstützende Nachweise ein Element enthält, desto höher ist die Sicherheit, dass ein übereinstimmendes Element die von Ihnen gesuchten vertraulichen Informationen enthält. Beispielsweise enthalten Übereinstimmungen mit einem hohen Konfidenzniveau mehr nachweisende Nachweise in unmittelbarer Nähe des primären Elements, während Übereinstimmungen mit einem niedrigen Konfidenzniveau nur wenig bis keine Nachweise in unmittelbarer Nähe enthalten würden. 
 
-Ein hoher Konfidenzniveau gibt die wenigsten falsch positiven Ergebnisse zurück, kann jedoch zu mehr falsch negativen Ergebnisse führen. Niedrige oder mittlere Konfidenzstufen geben mehr falsch positive Ergebnisse zurück, aber nur wenige bis null falsch negative Ergebnisse.
+Ein hohes Konfidenzniveau gibt die wenigsten falsch positiven Ergebnisse zurück, kann jedoch zu weiteren falsch negativen Folgen führen. Niedrige oder mittlere Konfidenzstufen geben mehr falsch positive Werte zurück, aber nur wenige bis null falsch negative Werte.
 
-- **niedrige Konfidenz:** Wert 65, übereinstimmende Elemente enthalten die wenigsten falsch negativen Ergebnisse, aber die meisten falsch positiven Ergebnisse.  
-- **mittlere Konfidenz:** Wert 75, übereinstimmende Elemente enthalten eine durchschnittliche Menge falsch positiver und falsch negativer Ergebnisse.  
-- **hohe Konfidenz:** Wert 85, übereinstimmende Elemente enthalten die wenigsten falsch positiven Ergebnisse, aber die meisten falsch negativen Ergebnisse.  
+- **niedrige Konfidenz**: Der Wert von 65, übereinstimmende Elemente enthalten die wenigsten falsch negativen, aber die meisten falsch positiven Ergebnisse. Niedrige Konfidenz gibt alle Übereinstimmungen mit niedriger, mittlerer und hoher Konfidenz zurück.
+- **mittlere Konfidenz**: Der Wert von 75, übereinstimmende Elemente enthalten eine durchschnittliche Menge falsch positiver und falsch negativer Werte. Mittlere Konfidenz gibt alle übereinstimmungen mit mittlerer und hoher Vertrauenssicherheit zurück.  
+- **hohe Konfidenz**: Der Wert von 85, übereinstimmende Elemente enthalten die wenigsten falsch positiven, aber die meisten falsch negativen. Hohe Vertrauenssicherheit gibt nur Übereinstimmungen mit hoher Vertrauenssicherheit zurück.  
 
-Sie sollten Muster mit hoher Vertrauensebene mit geringer Anzahl verwenden, z. B. 5 bis 10, und Muster mit niedriger Konfidenz mit höherer Anzahl, z. B. 20 oder mehr.
+Sie sollten Muster mit hoher Konfidenzstufe mit niedrigen Zählungen(z. B. fünf bis zehn) und niedrigen Konfidenzmustern mit höheren Zählungen (z. B. 20 oder mehr) verwenden.
 
 ## <a name="creating-custom-sensitive-information-types"></a>Benutzerdefinierte Typen vertraulicher Informationen erstellen
 
@@ -137,7 +137,7 @@ Zum Erstellen von benutzerdefinierten Typen für vertrauliche Informationen im S
 
 
 > [!NOTE]
-> Verbesserte Vertrauensebenen sind für die sofortige Verwendung in der Verhinderung von Datenverlust für Microsoft 365-Dienste, Microsoft Information Protection für Microsoft 365-Dienste, Kommunikationskonformität, Informationssteuerung und Datensatzverwaltung verfügbar.
+> Verbesserte Vertrauensebenen stehen für die sofortige Verwendung in der Verhinderung von Datenverlust für Microsoft 365-Dienste, Microsoft Information Protection für Microsoft 365-Dienste, Kommunikationskonformität, Informations-Governance und Datensatzverwaltung zur Verfügung.
 
 > Microsoft 365 Information Protection unterstützt jetzt in der Vorschau Doppelbyte-Zeichensatz-Sprachen für:
 > - Chinesisch (vereinfacht)

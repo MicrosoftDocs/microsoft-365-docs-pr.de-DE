@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) so konfigurieren können, dass Microsoft 365-EPDLP-Speicherorte (Endpoint Data Loss Prevention) verwendet werden.
-ms.openlocfilehash: 15a540c323c8f49cfa6c15358cfec89034667378
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 6723f3f0903ba6a0e1833bfae1f3dea2362e2c30
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094796"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406209"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Nutzen der Verhinderung von Datenverlust am Endpunkt
 
@@ -115,7 +115,7 @@ Diese Konfiguration trägt dazu bei, sicherzustellen, dass Ihre Daten geschützt
 
 ## <a name="endpoint-dlp-policy-scenarios"></a>Szenarien für Endpunkt-DLP-Richtlinien
 
-Damit Sie sich mit Endpunkt-DLP-Features und deren Wirkungsweise in DLP-Richtlinien vertraut machen können, haben wir einige Szenarien für Sie zur Übung zusammengestellt. Sämtliche Endpunkt-DLP-Inhalte werden in den Haupt-DLP-Inhalt einbezogen, sobald Endpunkt-DLP allgemein verfügbar sein wird.
+Damit Sie sich mit Endpunkt-DLP-Features und deren Wirkungsweise in DLP-Richtlinien vertraut machen können, haben wir einige Szenarien für Sie zur Übung zusammengestellt.
 
 > [!IMPORTANT]
 > Diese Endpunkt-DLP-Szenarien stellen nicht die offiziellen Verfahren zum Erstellen und Optimieren von DLP-Richtlinien dar. In den folgenden Beiträgen finden Sie Informationen zum Arbeiten mit DLP-Richtlinien in Situationen allgemeiner Art:

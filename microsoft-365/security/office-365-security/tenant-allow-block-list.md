@@ -1,5 +1,5 @@
 ---
-title: Verwalten Der zulässigen und blockierten Mandanten in der Liste der zulässigen/blockierten Mandanten
+title: Verwalten Ihrer Zulässigen und Blöcke in der Liste "Mandanten zulassen/blockieren"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,15 +13,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Administratoren können erfahren, wie Sie Dies in der Liste der zulässigen/blockierten Mandanten im Sicherheitsportal konfigurieren.
+description: Administratoren können erfahren, wie Sie im Sicherheitsportal in der Liste "Mandanten zulassen/blockieren" Zulassen und Blockieren von Zulassen und Blockieren konfigurieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 250b6223ffe663e0cd950069a3c3c7827b4aa57b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 960fbf26b610485fb46c935b04aedcc593b85752
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290165"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407250"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Verwalten der Zulassungs-/Sperrliste des Mandanten
 
@@ -34,86 +34,64 @@ ms.locfileid: "50290165"
 
 > [!NOTE]
 >
-> Die in diesem Artikel beschriebenen Features befinden sich in der Vorschau, können geändert werden und sind nicht in allen Organisationen verfügbar.
+> Die in diesem Artikel beschriebenen Features befinden sich in Vorschau, können geändert werden und sind nicht in allen Organisationen verfügbar.
 >
-> Sie können zu **diesem** Zeitpunkt keine zulässigen Elemente in der Liste zugelassener/blockierter Mandanten konfigurieren.
+> Sie können zu **diesem Zeitpunkt** keine zulässigen Elemente in der Mandanten zulassen/blockieren-Liste konfigurieren.
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer sind Sie möglicherweise mit der EOP-Filterungs-Ansicht nicht einverstanden. Beispielsweise kann eine gute Nachricht als "schlecht" (ein falsch positives Ergebnis) oder eine ungültige Nachricht als "schlecht" (falsch negativ) markiert werden.
+In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer können Sie mit dem EOP-Filterungs-Urteil nicht einverstanden sein. Beispielsweise kann eine gute Nachricht als ungültig (falsch positiv) gekennzeichnet werden, oder eine schlechte Nachricht kann als ungültig (falsch negativ) zugelassen werden.
 
-Die Liste der zulässigen/blockierten Mandanten im Security & Compliance Center bietet Ihnen die Möglichkeit, die Microsoft 365-Filterungsverdingungen manuell außer Kraft zu setzen. Die Liste der zulässigen/blockierten Mandanten wird während des Nachrichtenflusses und zum Zeitpunkt der Klicks des Benutzers verwendet. Sie können URLs oder Dateien angeben, die immer blockiert werden.
+Mit der Liste Mandanten zulassen/blockieren im Security & Compliance Center können Sie die Microsoft 365-Filterungs-Urteile manuell außer Kraft setzen. Die Mandanten zulassen/blockieren Liste wird während des Nachrichtenflusses und zum Zeitpunkt der Benutzerklicks verwendet. Sie können URLs oder Dateien angeben, die immer blockiert werden.
 
-In diesem Artikel wird beschrieben, wie Sie Einträge in der Liste zulässiger/blockierter Mandanten im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange & ) konfigurieren.
+In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten zulassen/blockieren-Liste im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange &) konfigurieren.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Verwenden Sie dies, um direkt zur Seite **"Mandanten-Allow/Block List"** zu <https://protection.office.com/tenantAllowBlockList> wechseln.
+- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **Mandanten zulassen/blockieren zu** wechseln, verwenden Sie <https://protection.office.com/tenantAllowBlockList> .
 
-- Sie geben Dateien mithilfe des #A0 der Datei an. Führen Sie den folgenden Befehl an einer Eingabeaufforderung aus, um den #A0 einer Datei in Windows zu finden:
+- Sie geben Dateien mithilfe des SHA256-Hashwerts der Datei an. Führen Sie den folgenden Befehl in einer Eingabeaufforderung aus, um den SHA256-Hashwert einer Datei in Windows zu finden:
 
   ```dos
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
   ```
 
-  Ein Beispielwert ist `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a` . Perceptual Hash (pHash)-Werte werden nicht unterstützt.
+  Ein Beispielwert ist `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a` . #A0 (Perceptual Hash) werden nicht unterstützt.
 
-- Die verfügbaren #A0 werden weiter unten in diesem Artikel in der #A1 für den Abschnitt "Mandanten [zulassen/blockieren"](#url-syntax-for-the-tenant-allowblock-list) beschrieben.
+- Die verfügbaren #A0 werden weiter unten in diesem Artikel in der #A1 für den Abschnitt [Mandanten zulassen/blockieren](#url-syntax-for-the-tenant-allowblock-list) beschrieben.
 
-- Die Liste der zulässigen/blockierten Mandanten lässt maximal 500 Einträge für URLs und 500 Einträge für Dateihashes zu.
+- Die Mandantenzu-/-sperrliste ermöglicht maximal 500 Einträge für URLs und 500 Einträge für Dateihashes.
 
 - Ein Eintrag sollte innerhalb von 15 Minuten aktiv sein.
 
-- Standardmäßig laufen Einträge in der Liste der zulässigen/blockierten Mandanten nach 30 Tagen ab. Sie können ein Datum angeben oder festlegen, dass es nie abläuft.
+- Standardmäßig laufen Einträge in der Mandanten-Zulassen-/Sperrliste nach 30 Tagen ab. Sie können ein Datum angeben oder festlegen, dass es nie abläuft.
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen im Security & Compliance Center Berechtigungen zugewiesen werden.
-  - Zum Hinzufügen und Entfernen von Werten aus der Liste zulässiger/blockierter Mandanten müssen Sie Mitglied der Rollengruppe "Organisationsverwaltung" oder **"Sicherheitsadministrator"** sein. 
-  - Für den schreibgeschützten Zugriff auf die Liste der zulässigen/blockierten Mandanten müssen Sie Mitglied der Rollengruppe "Globaler Leser" oder **"Sicherheitsleseprogramm"** sein. 
+- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in **Exchange Online** die entsprechenden Berechtigungen zugewiesen werden:
+  - Zum Hinzufügen und Entfernen von Werten aus der Mandantenberechtigungs-/Sperrliste müssen Sie Mitglied der Rollengruppen Organisationsverwaltung oder **Sicherheitsadministrator** sein. 
+  - Für den schreibgeschützten Zugriff auf die Mandantenzugriffs-/Sperrliste müssen Sie Mitglied der Rollengruppen **"Globaler Leser"** oder **"Sicherheitsleser"** sein.
 
-  Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  Weitere Informationen finden Sie unter [Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
   **Hinweise**:
 
-  - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+  - Durch hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft  365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen und Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
-## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Erstellen von URL-Einträgen in der Liste der zulässigen/blockierten Mandanten
+## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Erstellen von URL-Einträgen in der Mandantenzu-/-sperrliste
 
-Weitere Informationen zur Syntax für #A0 finden Sie in der #A1 für den Abschnitt ["Mandanten-Zulassen/Blockieren-Liste"](#url-syntax-for-the-tenant-allowblock-list) weiter unten in diesem Artikel.
+Weitere Informationen zur Syntax für #A0 finden Sie in der URL-Syntax für den Abschnitt [Mandantenzu-/Sperrliste](#url-syntax-for-the-tenant-allowblock-list) weiter unten in diesem Artikel.
 
-1. Wechseln Sie im Security & Compliance  Center zu "Richtlinienrichtlinien-Mandanten-Allow/Block \>  \> **Lists".**
+1. Wechseln Sie im Security & Compliance Center zu Richtlinien für die **Bedrohungsverwaltung** \>  \> **Mandanten zulassen/blockieren Listen**.
 
-2. Überprüfen Sie auf der Seite "Mandanten-Allow/Block **List",** ob die Registerkarte **"URLs"** ausgewählt ist, und klicken Sie dann auf **"Blockieren".**
+2. Überprüfen Sie auf der Seite Mandanten **zulassen/blockieren,** ob die Registerkarte **URLs** ausgewählt ist, und klicken Sie dann auf **Blockieren.**
 
-3. Konfigurieren Sie im angezeigten Flyout **"URLs** blockieren" die folgenden Einstellungen:
+3. Konfigurieren Sie **im angezeigten** Flyout UrLs blockieren die folgenden Einstellungen:
 
    - **Zu blockierende URLs hinzufügen:** Geben Sie eine URL pro Zeile ein, bis zu maximal 20.
 
-   - **Läuft nie** ab: Gehen Sie wie folgt vor:
+   - **Nie ablaufen:** Gehen Sie wie folgt vor:
 
-     - Stellen Sie sicher, dass die Einstellung deaktiviert ist (Umschalten aus), und verwenden Sie das Feld "Abläuft bei", um das Ablaufdatum ![ ](../../media/scc-toggle-off.png) für die Einträge anzugeben. 
-
-     oder
-
-     - Verschieben Sie den Umschalter nach rechts, um die Einträge so zu konfigurieren, dass sie nie ablaufen: ![Umschaltfläche ein](../../media/scc-toggle-on.png).
-
-   - **Optionaler Hinweis:** Geben Sie beschreibenden Text für die Einträge ein.
-
-4. Klicken Sie nach Abschluss des Vorgangs auf **Hinzufügen**.
-
-## <a name="use-the-security--compliance-center-to-create-file-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Erstellen von Dateieinträgen in der Liste der zulässigen/blockierten Mandanten
-
-1. Wechseln Sie im Security & Compliance  Center zu "Richtlinienrichtlinien-Mandanten-Allow/Block \>  \> **Lists".**
-
-2. Wählen Sie **auf der Seite "Mandanten zulassen/blockieren"** die Registerkarte **"Dateien"** aus, und klicken Sie dann auf **"Blockieren".**
-
-3. Konfigurieren Sie **in den angezeigten Dateien zum Blockieren** des angezeigten Flyouts die folgenden Einstellungen:
-
-   - **Hinzufügen von Dateihashes:** Geben Sie einen #A0 pro Zeile ein, bis zu maximal 20.
-
-   - **Läuft nie** ab: Gehen Sie wie folgt vor:
-
-     - Stellen Sie sicher, dass die Einstellung deaktiviert ist (Umschalten aus), und verwenden Sie das Feld "Abläuft bei", um das Ablaufdatum ![ ](../../media/scc-toggle-off.png) für die Einträge anzugeben. 
+     - Überprüfen Sie, ob die Einstellung deaktiviert ist ( Umschalten ) und verwenden Sie das Feld Läuft auf, um das ![ ](../../media/scc-toggle-off.png) Ablaufdatum für die Einträge anzugeben. 
 
      oder
 
@@ -123,84 +101,106 @@ Weitere Informationen zur Syntax für #A0 finden Sie in der #A1 für den Abschni
 
 4. Klicken Sie nach Abschluss des Vorgangs auf **Hinzufügen**.
 
-## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Anzeigen von Einträgen in der Liste der zulässigen/blockierten Mandanten
+## <a name="use-the-security--compliance-center-to-create-file-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Erstellen von Dateieinträgen in der Mandantenzu-/-sperrliste
 
-1. Wechseln Sie im Security & Compliance  Center zu "Richtlinienrichtlinien-Mandanten-Allow/Block \>  \> **Lists".**
+1. Wechseln Sie im Security & Compliance Center zu Richtlinien für die **Bedrohungsverwaltung** \>  \> **Mandanten zulassen/blockieren Listen**.
 
-2. Wählen Sie die **Registerkarte "URLs"** oder **"Dateien"** aus.
+2. Wählen Sie auf der Seite Mandanten **zulassen/blockieren** die Registerkarte **Dateien** aus, und klicken Sie dann auf **Blockieren**.
 
-Klicken Sie auf die folgenden Spaltenüberschriften, um in aufsteigender oder absteigender Reihenfolge zu sortieren:
+3. Konfigurieren Sie **im angezeigten Flyout** Dateien zum Blockieren von Dateien hinzufügen die folgenden Einstellungen:
 
-- **Wert:** Die URL oder der Dateihash.
+   - **Hinzufügen von Dateihashes:** Geben Sie einen SHA256-Hashwert pro Zeile ein, bis zu maximal 20.
+
+   - **Nie ablaufen:** Gehen Sie wie folgt vor:
+
+     - Überprüfen Sie, ob die Einstellung deaktiviert ist ( Umschalten ) und verwenden Sie das Feld Läuft auf, um das ![ ](../../media/scc-toggle-off.png) Ablaufdatum für die Einträge anzugeben. 
+
+     oder
+
+     - Verschieben Sie den Umschalter nach rechts, um die Einträge so zu konfigurieren, dass sie nie ablaufen: ![Umschaltfläche ein](../../media/scc-toggle-on.png).
+
+   - **Optionaler Hinweis:** Geben Sie beschreibenden Text für die Einträge ein.
+
+4. Klicken Sie nach Abschluss des Vorgangs auf **Hinzufügen**.
+
+## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Anzeigen von Einträgen in der Mandantenzu-/-sperrliste
+
+1. Wechseln Sie im Security & Compliance Center zu Richtlinien für die **Bedrohungsverwaltung** \>  \> **Mandanten zulassen/blockieren Listen**.
+
+2. Wählen Sie **die Registerkarte URLs** oder die **Registerkarte Dateien** aus.
+
+Klicken Sie auf die folgenden Spaltenüberschriften, um sie in aufsteigender oder absteigender Reihenfolge zu sortieren:
+
+- **Wert**: Die URL oder der Dateihash.
 - **Datum der letzten Aktualisierung**
 - **Ablaufdatum**
 - **Hinweis**
 
-Klicken **Sie auf "Suchen",** geben Sie einen Wert ganz oder teilweise ein, und drücken Sie dann die EINGABETASTE, um einen bestimmten Wert zu finden. Klicken Sie nach Abschluss des Abschlusses auf "Suche **löschen",** ![ um das Suchsymbol zu ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) löschen.
+Klicken **Sie auf Suchen,** geben Sie einen Wert ganz oder teilweise ein, und drücken Sie die EINGABETASTE, um einen bestimmten Wert zu finden. Wenn Sie fertig sind, klicken Sie auf **Suche löschen Suchsymbol** ![ löschen ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) .
 
-Klicken Sie **auf Filter**. Konfigurieren Sie **im angezeigten** Filterf flyout eine der folgenden Einstellungen:
+Klicken Sie **auf Filter**. Konfigurieren Sie **im angezeigten** Flyout Filter eine der folgenden Einstellungen:
 
-- **Nie ablaufen:** Auswählen aus: ![ Umschalten ](../../media/scc-toggle-off.png) aus oder ein: ![ Umschalten ein ](../../media/scc-toggle-on.png) .
+- **Nie ablaufen:** Wählen Sie aus: ![ Umschalten ](../../media/scc-toggle-off.png) oder Aktivieren: ![ Umschalten auf ](../../media/scc-toggle-on.png) .
 
 - **Last updated**: Select a start date (**From**), an end date (**To**) or both.
 
-- **Ablaufdatum:** Wählen Sie ein Startdatum (**Von**), ein Enddatum (**Bis**) oder beides aus.
+- **Ablaufdatum**: Wählen Sie ein Startdatum (**Von**), ein Enddatum (**An**) oder beides aus.
 
-Klicken Sie nach Abschluss des Abschlusses auf **"Übernehmen".**
+Klicken Sie nach Abschluss des Abschlusses auf **Übernehmen**.
 
-Klicken Sie auf **"Filter",** und klicken Sie im angezeigten **Flyout "Filter"** auf "Filter löschen", um vorhandene **Filter zu löschen.**
+Klicken Sie zum Löschen vorhandener Filter auf **Filter,** und klicken Sie im angezeigten **Flyout** Filter **auf Filter löschen.**
 
-## <a name="use-the-security--compliance-center-to-modify-block-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Ändern von Sperreinträgen in der Liste der zulässigen/blockierten Mandanten
+## <a name="use-the-security--compliance-center-to-modify-block-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Ändern von Blockeinträgen in der Mandantenzu-/-sperrliste
 
 Sie können die vorhandenen blockierten URL- oder Dateiwerte in einem Eintrag nicht ändern. Um diese Werte zu ändern, müssen Sie den Eintrag löschen und neu erstellen.
 
-1. Wechseln Sie im Security & Compliance  Center zu "Richtlinienrichtlinien-Mandanten-Allow/Block \>  \> **Lists".**
+1. Wechseln Sie im Security & Compliance Center zu Richtlinien für die **Bedrohungsverwaltung** \>  \> **Mandanten zulassen/blockieren Listen**.
 
-2. Wählen Sie die **Registerkarte "URLs"** oder **"Dateien"** aus.
+2. Wählen Sie **die Registerkarte URLs** oder die **Registerkarte Dateien** aus.
 
-3. Wählen Sie den Blockeintrag aus, den Sie ändern möchten, und klicken Sie dann auf **das** ![ Bearbeitungssymbol ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) .
+3. Wählen Sie den Blockeintrag aus, den Sie ändern möchten, und klicken Sie dann auf **Bearbeiten** ![ (Symbol). ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png)
 
 4. Konfigurieren Sie im angezeigten Flyout die folgenden Einstellungen:
 
-   - **Läuft nie** ab: Gehen Sie wie folgt vor:
+   - **Nie ablaufen:** Gehen Sie wie folgt vor:
 
-     - Stellen Sie sicher, dass die Einstellung deaktiviert ist (Umschalten aus), und verwenden Sie das Feld "Abläuft bei", um das ![ ](../../media/scc-toggle-off.png) Ablaufdatum für den Eintrag anzugeben. 
+     - Überprüfen Sie, ob die Einstellung deaktiviert ist ( Umschalten ) und verwenden Sie das Feld Läuft auf, um das Ablaufdatum für ![ ](../../media/scc-toggle-off.png) den Eintrag anzugeben. 
 
      oder
 
      - Verschieben Sie den Umschalter nach rechts, um den Eintrag so zu konfigurieren, dass er nie abläuft: ![Umschaltfläche ein](../../media/scc-toggle-on.png).
 
-   - **Optionaler Hinweis:** Geben Sie einen beschreibenden Text für den Eintrag ein.
+   - **Optionaler Hinweis:** Geben Sie beschreibenden Text für den Eintrag ein.
 
 5. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
-## <a name="use-the-security--compliance-center-to-remove-block-entries-from-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Entfernen von Blockeinträgen aus der Liste der zulässigen/blockierten Mandanten
+## <a name="use-the-security--compliance-center-to-remove-block-entries-from-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Entfernen von Sperreinträgen aus der Mandantenzu-/-sperrliste
 
-1. Wechseln Sie im Security & Compliance  Center zu "Richtlinienrichtlinien-Mandanten-Allow/Block \>  \> **Lists".**
+1. Wechseln Sie im Security & Compliance Center zu Richtlinien für die **Bedrohungsverwaltung** \>  \> **Mandanten zulassen/blockieren Listen**.
 
-2. Wählen Sie die **Registerkarte "URLs"** oder **"Dateien"** aus.
+2. Wählen Sie **die Registerkarte URLs** oder die **Registerkarte Dateien** aus.
 
-3. Wählen Sie den Blockeintrag aus, den Sie entfernen möchten, und klicken Sie dann auf **das** Symbol ![ "Löschen". ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png)
+3. Wählen Sie den Blockeintrag aus, den Sie entfernen möchten, und klicken Sie dann auf **Löschen** ![ Löschen ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) (Symbol).
 
-4. Klicken Sie im angezeigten Warnungsdialogfeld auf **"Löschen".**
+4. Klicken Sie im angezeigten Warnungsdialogfeld auf **Löschen**.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>Verwenden von Exchange Online PowerShell oder der eigenständigen EOP PowerShell zum Konfigurieren der Liste zulässiger/blockierter Mandanten
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>Verwenden von Exchange Online PowerShell oder eigenständiger EOP PowerShell zum Konfigurieren der Mandanten zulassen/Blockieren-Liste
 
-### <a name="use-powershell-to-add-block-entries-to-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Hinzufügen von Blockeinträgen zur Liste der zulässigen/blockierten Mandanten
+### <a name="use-powershell-to-add-block-entries-to-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Hinzufügen von Blockeinträgen zur Mandantenzu-/Sperrliste
 
-Verwenden Sie die folgende Syntax, um blockeinträge in der Liste der zulässigen/blockierten Mandanten hinzuzufügen:
+Verwenden Sie die folgende Syntax, um Blockeinträge in der Mandantenzu-/Sperrliste hinzuzufügen:
 
 ```powershell
 New-TenantAllowBlockListItems -ListType <Url | FileHash> -Block -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
-In diesem Beispiel wird ein Block-URL-Eintrag für contoso.com und alle Unterdomänen hinzugefügt (z. B. contoso.com, www.contoso.com und xyz.abc.contoso.com). Da wir die Parameter "ExpirationDate" oder "NoExpiration" nicht verwendet haben, läuft der Eintrag nach 30 Tagen ab.
+In diesem Beispiel wird ein Block-URL-Eintrag für contoso.com und alle Unterdomänen hinzugefügt (z. B. contoso.com, www.contoso.com und xyz.abc.contoso.com). Da wir die Parameter ExpirationDate oder NoExpiration nicht verwendet haben, läuft der Eintrag nach 30 Tagen ab.
 
 ```powershell
 New-TenantAllowBlockListItem -ListType Url -Block -Entries ~contoso.com
 ```
 
-In diesem Beispiel wird für die angegebenen Dateien, die nie ablaufen, ein Blockdateieintrag hinzufügt.
+In diesem Beispiel wird ein Blockdateieintrag für die angegebenen Dateien, die nie abläuft, hinzufügt.
 
 ```powershell
 New-TenantAllowBlockListItem -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
@@ -208,9 +208,9 @@ New-TenantAllowBlockListItem -ListType FileHash -Block -Entries "768a813668695ef
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-view-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Anzeigen von Einträgen in der Liste der zulässigen/blockierten Mandanten
+### <a name="use-powershell-to-view-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Anzeigen von Einträgen in der Mandanten-Zulassen-/Sperrliste
 
-Verwenden Sie die folgende Syntax, um Einträge in der Liste der zulässigen/blockierten Mandanten anzeigen zu können:
+Verwenden Sie die folgende Syntax, um Einträge in der Mandantenzu-/Sperrliste anzeigen zu können:
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType <Url | FileHash> [-Entry <URLValue | FileHashValue>] [-Block] [-ExpirationDate <DateTime>] [-NoExpiration]
@@ -230,11 +230,11 @@ Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-modify-block-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Ändern von Blockeinträgen in der Liste der zulässigen/blockierten Mandanten
+### <a name="use-powershell-to-modify-block-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Ändern von Blockeinträgen in der Mandantenzu-/-sperrliste
 
 Sie können die vorhandenen URL- oder Dateiwerte in einem Blockeintrag nicht ändern. Um diese Werte zu ändern, müssen Sie den Eintrag löschen und neu erstellen.
 
-Verwenden Sie die folgende Syntax, um Blockeinträge in der Liste der zulässigen/blockierten Mandanten zu ändern:
+Verwenden Sie die folgende Syntax, um Blockeinträge in der Mandanten zulassen/blockieren-Liste zu ändern:
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN"> [-Block] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
@@ -248,15 +248,15 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-remove-block-entries-from-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Entfernen von Blockeinträgen aus der Liste der zulässigen/blockierten Mandanten
+### <a name="use-powershell-to-remove-block-entries-from-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Entfernen von Sperreinträgen aus der Mandanten-Zulassen-/Sperrliste
 
-Verwenden Sie die folgende Syntax, um Blockeinträge aus der Liste der zulässigen/blockierten Mandanten zu entfernen:
+Verwenden Sie die folgende Syntax, um Blockeinträge aus der Mandanten zulassen/blockieren-Liste zu entfernen:
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN">
 ```
 
-In diesem Beispiel wird der angegebene Block-URL-Eintrag aus der Liste der zulässigen/blockierten Mandanten entfernt.
+In diesem Beispiel wird der angegebene Block-URL-Eintrag aus der Mandanten-Allow/Block List entfernt.
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
@@ -264,7 +264,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/remove-tenantallowblocklistitems).
 
-## <a name="url-syntax-for-the-tenant-allowblock-list"></a>#A0 für die Liste der zulässigen/blockierten Mandanten
+## <a name="url-syntax-for-the-tenant-allowblock-list"></a>#A0 für die Mandanten-Allow/Block List
 
 - IP4v- und IPv6-Adressen sind zulässig, TCP/UDP-Ports jedoch nicht.
 
@@ -272,12 +272,12 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Te
 
 - Unicode wird nicht unterstützt, Punycode jedoch.
 
-- Hostnamen sind zulässig, wenn alle folgenden Anweisungen wahr sind:
+- Hostnamen sind zulässig, wenn alle folgenden Anweisungen zutreffen:
   - Der Hostname enthält einen Zeitraum.
-  - Links vom Zeitraum befindet sich mindestens ein Zeichen.
+  - Es gibt mindestens ein Zeichen links vom Zeitraum.
   - Rechts neben dem Zeitraum befinden sich mindestens zwei Zeichen.
 
-  Beispielsweise ist `t.co` dies zulässig oder `.com` nicht `contoso.` zulässig.
+  Beispielsweise ist `t.co` zulässig oder nicht `.com` `contoso.` zulässig.
 
 - Unterpfade werden nicht impliziert.
 
@@ -287,17 +287,17 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Te
 
   - Auf einen linken Platzhalter muss ein Zeitraum folgen, um eine Unterdomäne anzugeben.
 
-    Ist z. `*.contoso.com` B. zulässig; `*contoso.com` ist nicht zulässig.
+    Ist beispielsweise `*.contoso.com` zulässig; `*contoso.com` ist nicht zulässig.
 
   - Ein rechter Platzhalter muss einem Schrägstrich (/) folgen, um einen Pfad anzugeben.
 
-    Beispielsweise ist `contoso.com/*` dies zulässig oder `contoso.com*` nicht `contoso.com/ab*` zulässig.
+    Beispielsweise ist `contoso.com/*` zulässig oder nicht `contoso.com*` `contoso.com/ab*` zulässig.
 
   - Alle Unterpfade werden nicht durch einen rechten Platzhalter impliziert.
 
-    Enthält `contoso.com/*` z. B. nicht `contoso.com/a` .
+    Enthält z. `contoso.com/*` B. nicht `contoso.com/a` .
 
-  - `*.com*` ungültig ist (keine auflösbare Domäne, und der rechte Platzhalter folgt keinem Schrägstrich).
+  - `*.com*` ist ungültig (keine auflösbare Domäne, und der rechte Platzhalter folgt keinem Schrägstrich).
 
   - Platzhalter sind in IP-Adressen nicht zulässig.
 
@@ -305,9 +305,9 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Te
 
   - Eine linke Tilde impliziert eine Domäne und alle Unterdomänen.
 
-    Beispielsweise enthält `~contoso.com` `contoso.com` und `*.contoso.com` .
+    Enthält `~contoso.com` z. `contoso.com` B. und `*.contoso.com` .
 
-- BEI URL-Einträgen, die Protokolle (z. B. , oder ) enthalten, kann ein Fehler angezeigt werden, da die Urleinträge `http://` `https://` für alle Protokolle `ftp://` gelten.
+- URL-Einträge, die Protokolle (z. B. , oder ) enthalten, werden fehlschlagen, da `http://` URL-Einträge für alle Protokolle `https://` `ftp://` gelten.
 
 - Ein Benutzername oder Kennwort wird nicht unterstützt oder ist nicht erforderlich.
 
@@ -315,15 +315,15 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Te
 
 - Eine URL sollte nach Möglichkeit alle Umleitungen enthalten.
 
-### <a name="url-entry-scenarios"></a>Szenarien für die EINGABE VON URLs
+### <a name="url-entry-scenarios"></a>Szenarien für den URL-Eintrag
 
 Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten beschrieben.
 
 #### <a name="scenario-no-wildcards"></a>Szenario: Keine Platzhalter
 
-**Eintrag:**`contoso.com`
+**Eintrag**: `contoso.com`
 
-- **Übereinstimmung zulassen:** contoso.com
+- **Übereinstimmung zulassen**: contoso.com
 
 - **Nicht übereinstimmend zulassen:**
 
@@ -335,7 +335,7 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
   - www.contoso.com
   - www.contoso.com/q=a@contoso.com
 
-- **Übereinstimmung blockieren:**
+- **Übereinstimmung blockieren**:
 
   - contoso.com
   - contoso.com/a
@@ -345,35 +345,35 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
   - www.contoso.com
   - www.contoso.com/q=a@contoso.com
 
-- **Block nicht übereinstimmend:** abc-contoso.com
+- **Block nicht übereinstimmend**: abc-contoso.com
 
 #### <a name="scenario-left-wildcard-subdomain"></a>Szenario: Linker Platzhalter (Unterdomäne)
 
-**Eintrag:**`*.contoso.com`
+**Eintrag**: `*.contoso.com`
 
-- **Übereinstimmung zulassen** und **Übereinstimmung blockieren:**
+- **Übereinstimmung zulassen** und **Übereinstimmung blockieren**:
 
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Nicht übereinstimmend zulassen und** **Block nicht übereinstimmen:**
+- **Allow not matched** and **Block not matched**:
 
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
   - www.contoso.com/abc
 
-#### <a name="scenario-right-wildcard-at-top-of-path"></a>Szenario: Rechter Platzhalter oben im Pfad
+#### <a name="scenario-right-wildcard-at-top-of-path"></a>Szenario: Rechter Platzhalter am oberen Rand des Pfads
 
-**Eintrag:**`contoso.com/a/*`
+**Eintrag**: `contoso.com/a/*`
 
-- **Übereinstimmung zulassen** und **Übereinstimmung blockieren:**
+- **Übereinstimmung zulassen** und **Übereinstimmung blockieren**:
 
   - contoso.com/a/b
   - contoso.com/a/b/c
   - contoso.com/a/?q=joe@t.com
 
-- **Nicht übereinstimmend zulassen und** **Block nicht übereinstimmen:**
+- **Allow not matched** and **Block not matched**:
 
   - contoso.com
   - contoso.com/a
@@ -382,15 +382,15 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
 
 #### <a name="scenario-left-tilde"></a>Szenario: Left tilde
 
-**Eintrag:**`~contoso.com`
+**Eintrag**: `~contoso.com`
 
-- **Übereinstimmung zulassen** und **Übereinstimmung blockieren:**
+- **Übereinstimmung zulassen** und **Übereinstimmung blockieren**:
 
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Nicht übereinstimmend zulassen und** **Block nicht übereinstimmen:**
+- **Allow not matched** and **Block not matched**:
 
   - 123contoso.com
   - contoso.com/abc
@@ -398,9 +398,9 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
 
 #### <a name="scenario-right-wildcard-suffix"></a>Szenario: Rechtes Platzhaltersuffix
 
-**Eintrag:**`contoso.com/*`
+**Eintrag**: `contoso.com/*`
 
-- **Übereinstimmung zulassen** und **Übereinstimmung blockieren:**
+- **Übereinstimmung zulassen** und **Übereinstimmung blockieren**:
 
   - contoso.com/?q=whatever@fabrikam.com
   - contoso.com/a
@@ -410,13 +410,13 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
   - contoso.com/b/a/c
   - contoso.com/ba
 
-- **Nicht übereinstimmend zulassen und** **Block nicht übereinstimmen:** contoso.com
+- **Nicht übereinstimmend zulassen und** **Block nicht** übereinstimmen: contoso.com
 
 #### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>Szenario: Linke Platzhalterunterdomäne und rechtes Platzhaltersuffix
 
-**Eintrag:**`*.contoso.com/*`
+**Eintrag**: `*.contoso.com/*`
 
-- **Übereinstimmung zulassen** und **Übereinstimmung blockieren:**
+- **Übereinstimmung zulassen** und **Übereinstimmung blockieren**:
 
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
@@ -424,13 +424,13 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **Nicht übereinstimmend zulassen und** **Block nicht übereinstimmen:** contoso.com/b
+- **Nicht übereinstimmend zulassen und** **Block nicht** übereinstimmen : contoso.com/b
 
-#### <a name="scenario-left-and-right-tilde"></a>Szenario: Linke und rechte Tilde
+#### <a name="scenario-left-and-right-tilde"></a>Szenario: Linker und rechter Tilde
 
-**Eintrag:**`~contoso.com~`
+**Eintrag**: `~contoso.com~`
 
-- **Übereinstimmung zulassen** und **Übereinstimmung blockieren:**
+- **Übereinstimmung zulassen** und **Übereinstimmung blockieren**:
 
   - contoso.com
   - contoso.com/a
@@ -438,27 +438,27 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
   - www.contoso.com/b
   - xyz.abc.contoso.com
 
-- **Nicht übereinstimmend zulassen und** **Block nicht übereinstimmen:**
+- **Allow not matched** and **Block not matched**:
 
   - 123contoso.com
   - contoso.org
 
 #### <a name="scenario-ip-address"></a>Szenario: IP-Adresse
 
-**Eintrag:**`1.2.3.4`
+**Eintrag**: `1.2.3.4`
 
-- **Übereinstimmung zulassen** und **Blockierung:** 1.2.3.4
+- **Übereinstimmung zulassen** und **Übereinstimmung blockieren**: 1.2.3.4
 
-- **Nicht übereinstimmend zulassen und** **Block nicht übereinstimmen:**
+- **Allow not matched** and **Block not matched**:
 
   - 1.2.3.4/a
   - 11.2.3.4/a
 
 #### <a name="ip-address-with-right-wildcard"></a>IP-Adresse mit rechtem Platzhalter
 
-**Eintrag:**`1.2.3.4/*`
+**Eintrag**: `1.2.3.4/*`
 
-- **Übereinstimmung zulassen** und **Übereinstimmung blockieren:**
+- **Übereinstimmung zulassen** und **Übereinstimmung blockieren**:
 
   - 1.2.3.4/b
   - 1.2.3.4/baaaa
@@ -467,14 +467,14 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
 
 Die folgenden Einträge sind ungültig:
 
-- **Fehlende oder ungültige Domänenwerte:**
+- **Fehlende oder ungültige Domänenwerte**:
 
   - contoso
   - \*.contoso.\*
   - \*.com
   - \*.pdf
 
-- **Platzhalter für Text oder ohne Leerzeichen:**
+- **Platzhalter für Text oder ohne Abstandszeichen**:
 
   - \*contoso.com
   - contoso.com\*
@@ -483,17 +483,17 @@ Die folgenden Einträge sind ungültig:
   - contoso.com/a\*
   - contoso.com/ab\*
 
-- **IP-Adressen mit Ports:**
+- **IP-Adressen mit Ports**:
 
   - contoso.com:443
   - abc.contoso.com:25
 
-- **Nicht beschreibende Platzhalter:**
+- **Nicht beschreibende Platzhalter**:
 
   - \*
   - \*.\*
 
-- **Mittlere Platzhalter:**
+- **Mittlere Platzhalter**:
 
   - conto \* so.com
   - conto~so.com

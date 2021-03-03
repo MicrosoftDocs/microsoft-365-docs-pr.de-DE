@@ -11,34 +11,37 @@ ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Erfahren Sie, wo die Zahlung für Ihr Abonnement gesendet werden soll.
+description: Erfahren Sie, wo Sie die Zahlung für Ihr Abonnement senden können.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a4a60c841ebb31163281cd8de3c27460e10b0811
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2eccedc234ee6bf9a3049671b4fa4142ba85bd69
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637511"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406992"
 ---
 # <a name="payment-information-for-canada"></a>Zahlungsinformationen für Kanada
 
 [Suchen Sie ein anderes Land oder eine andere Region](../billing-and-payments/pay-for-your-subscription.md).
 
-Bezahlen Sie bitte nur in CAD und verweisen Sie auf Ihre Rechnungsnummer (n) auf Ihrer Zahlungsüberweisung.
-
-## <a name="check"></a>Prüfen
-
-**Empfänger:** Microsoft
-
-**Postanschrift:**  
-Bank of America, Lockbox 910430, PO Box 4090, STN A, Toronto auf M5W 0E9, Kanada
-
 ## <a name="electronic-funds-transfer"></a>Elektronischer Zahlungsverkehr
 
-**Bank:** Bank of America, Toronto  
-**SWIFT-Code:** BOFACATT  
-**Kontonummer:** 45571239  
-**Konto Name:** Microsoft  
-**Bank-ID:** 241  
-**Branch:** 56792  
-**Routing/Transit #:** 024156792  
+**Bitte zahlen Sie in CAD, und verweisen Sie auf Ihre Rechnungsnummer(n) für Ihre Zahlungsüberweisung.**
+
+Wenn Sie eine Rechnung von Der Microsoft Corporation in Rechnung gestellt **haben,** verwenden Sie diese Bankinformationen:
+
+Bank: Bank of America, Toronto\
+SWIFT-Code: BOFACATT\
+Kontonummer: 45571239\
+Kontoname: MICROSOFT\
+Bank-ID: 241\
+Zweigstelle: 56792\
+Kontoname: MICROSOFT
+
+Wenn Sie ab dem 1. März 2021 eine Rechnung von **Microsoft Canada Inc.** für Bestellungen und Verbrauch in Rechnung gestellt haben, verwenden Sie diese Bankinformationen:
+
+Bank: Citibank N.A., Canadian Branch\
+Routingnummer: 032820012\
+BIC/SWIFT-Code: CITICATTBCH\
+Kontonummer: 3003600001\
+Kontoname: MICROSOFT

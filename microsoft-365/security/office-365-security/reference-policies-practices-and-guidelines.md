@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
-description: Microsoft hat verschiedene Richtlinien, Verfahren entwickelt und mehrere bewährte Methoden aus der Branche übernommen, um unsere Benutzer vor beleidigenden, unerwünschten oder schädlichen E-Mails zu schützen.
+description: Microsoft hat verschiedene Richtlinien, Verfahren und verschiedene bewährte Methoden für die Branche entwickelt, um unsere Benutzer vor beleidigenden, unerwünschten oder schädlichen E-Mails zu schützen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1065fdef5f804214ca48f7ca54170e6e417490d7
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: f53b1c36417b15e366b527dd1c12e4f23c06f632
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289199"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406596"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referenz: Richtlinien, Methoden und Anleitungen
 
@@ -33,21 +33,21 @@ ms.locfileid: "50289199"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Microsoft ist bestrebt, die vertrauenswürdigste Benutzerfreundlichkeit im Internet bereitzustellen. Daher hat Microsoft verschiedenen Richtlinien, Verfahren entwickelt und mehrere bewährte Branchenmethoden übernommen, um unsere Benutzer vor beleidigenden, unerwünschten oder schädlichen E-Mails zu schützen. Absender, die versuchen, E-Mails an Benutzer zu senden, sollten sicherstellen, dass sie die Anweisungen in diesem Artikel vollständig verstehen und folgen, um dabei zu helfen und potenzielle Zustellungsprobleme zu vermeiden.
+Microsoft ist bestrebt, die vertrauenswürdigste Benutzerfreundlichkeit im Internet bereitzustellen. Daher hat Microsoft verschiedenen Richtlinien, Verfahren entwickelt und mehrere bewährte Branchenmethoden übernommen, um unsere Benutzer vor beleidigenden, unerwünschten oder schädlichen E-Mails zu schützen. Absender, die versuchen, E-Mails an Benutzer zu senden, sollten sicherstellen, dass sie die Anweisungen in diesem Artikel vollständig verstehen und folgen, um bei dieser Arbeit zu helfen und potenzielle Übermittlungsprobleme zu vermeiden.
 
-Wenn Sie nicht nach diesen Richtlinien und Anleitungen handeln, ist es möglich, dass unser Supportteam Sie nicht unterstützen kann. Wenn Sie die Richtlinien, Methoden und Anleitungen, die in diesem Artikel vorgestellt werden, beachten, und trotzdem Probleme bei der Übermittlung basierend auf der IP-Adresse des Absenders haben, führen Sie bitte die Schritte aus, um eine Delisting-Anforderung zu übermitteln. Anweisungen finden Sie unter [Verwenden des Listendelist-Portals, um sich selbst aus der Liste blockierter Absender zu entfernen.](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
+Wenn Sie nicht nach diesen Richtlinien und Anleitungen handeln, ist es möglich, dass unser Supportteam Sie nicht unterstützen kann. Wenn Sie die Richtlinien, Methoden und Anleitungen, die in diesem Artikel vorgestellt werden, beachten, und trotzdem Probleme bei der Übermittlung basierend auf der IP-Adresse des Absenders haben, führen Sie bitte die Schritte aus, um eine Delisting-Anforderung zu übermitteln. Anweisungen finden Sie unter [Verwenden des Listendelist-Portals,](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)um sich selbst aus der Liste blockierter Absender zu entfernen.
 
 ## <a name="general-microsoft-policies"></a>Allgemeine Microsoft-Richtlinien
 
-An Microsoft 365-Benutzer gesendete E-Mails müssen allen Microsoft-Richtlinien entsprechen, die die Übertragung und Verwendung von Microsoft 365 regeln.
+An Microsoft 365-Benutzer gesendete E-Mails müssen alle Microsoft-Richtlinien für die E-Mail-Übertragung und -Verwendung von Microsoft 365 einhalten.
 
-- Nutzungsbedingungen für Microsoft 365; insbesondere das Werben gegen die Verwendung des Diensts für Spam oder die Verteilung von Schadsoftware.
+- Für Microsoft 365 geltende Nutzungsbedingungen; insbesondere das Verbot, den Dienst zum Spamen oder Verteilen von Schadsoftware zu verwenden.
 
 - [Microsoft-Servicevertrag](https://www.microsoft.com/servicesagreement/)
 
 ## <a name="governmental-regulations"></a>Einhaltung von gesetzlichen Vorschriften
 
-E-Mails, die an Microsoft 365-Benutzer gesendet werden, müssen alle geltenden Gesetze und Bestimmungen für die E-Mail-Kommunikation in der anwendbaren Gerichtsbarkeit einhalten.
+An Microsoft 365-Benutzer gesendete E-Mails müssen alle geltenden Gesetze und Vorschriften für die E-Mail-Kommunikation in der jeweiligen Gerichtsbarkeit einhalten.
 
 - [CAN-SPAM Act: Compliance-Leitfaden für Unternehmen](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -55,7 +55,7 @@ E-Mails, die an Microsoft 365-Benutzer gesendet werden, müssen alle geltenden G
 
 ## <a name="technical-guidelines"></a>Technische Richtlinien
 
-An Microsoft 365 gesendete E-Mails sollten den geltenden Empfehlungen entsprechen, die in den folgenden Dokumenten aufgeführt sind (einige Links sind nur in Englisch verfügbar).
+An Microsoft 365 gesendete E-Mails sollten den anwendbaren Empfehlungen entsprechen, die in den folgenden Dokumenten aufgeführt sind (einige Links sind nur in Englisch verfügbar).
 
 - [RFC 2505: Anti-Spam Recommendations for SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
@@ -83,7 +83,7 @@ Absender, ISPs und andere Dienstanbietern sollten die Zuverlässigkeit Ihrer aus
 
 ## <a name="microsoft-365-limits"></a>Microsoft 365-Grenzwerte
 
-Absender müssen die microsoft 365-Grenzwerte einhalten, die in [den Exchange Online Protection-Beschränkungen aufgeführt sind.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
+Absender müssen die in Exchange Online Protection Limits aufgeführten Microsoft 365-Grenzwerte [einhalten.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
 
 ## <a name="email-delivery-resources-and-organizations"></a>E-Mail-Übermittlungsressourcen und -Organisationen
 
@@ -91,13 +91,13 @@ Microsoft arbeitet aktiv mit Branchenvertretern und Dienstanbietern zusammen, um
 
 - [Messaging Malware Mobile Anti-Abuse Working Group](https://www.m3aawg.org/)
 
-- [Online Trust Alliance](https://www.otalliance.org/resources)
+- [Online Trust Alliance](https://www.internetsociety.org/ota/)
 
-- [Email Sender & Provider Union](https://www.espcoalition.org/)
+- [Email Sender & Provider Coalition](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>Missbrauchs- und Spamberichte
 
-Informationen zum Melden unrechtmäßiger, beleidigender, unerwünschter oder schädlicher E-Mails finden Sie unter "Nachrichten und Dateien an [Microsoft melden".](report-junk-email-messages-to-microsoft.md) Das Senden dieser Kommunikationsarten stellt einen Verstoß gegen die Microsoft-Richtlinie dar, und es werden geeignete Maßnahmen für bestätigte Berichte ergriffen.
+Informationen zu unrechtmäßigen, beleidigenden, unerwünschten oder schädlichen E-Mails finden Sie unter Melden von Nachrichten [und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md). Das Senden dieser Kommunikationstypen stellt einen Verstoß gegen die Microsoft-Richtlinie dar, und es werden geeignete Maßnahmen für bestätigte Berichte ergriffen.
 
 ## <a name="law-enforcement"></a>Strafverfolgung
 

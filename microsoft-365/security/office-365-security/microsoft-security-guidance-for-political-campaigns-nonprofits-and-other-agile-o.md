@@ -22,12 +22,12 @@ ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: 'Zusammenfassung: Planungs- und Implementierungsleitfaden für sich schnell wandelnde Organisationen mit einem erhöhten Bedrohungsprofil.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f8ed01d2c41529782c5c714bfe66096b97300712
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 76680ef5b21ae80525a7158ca0473cf82bd154d7
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287401"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406328"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen
 
@@ -65,10 +65,8 @@ Um eine Entwicklungs-/Testumgebung für diese Lösung zu erstellen, verwenden Si
 
   Erstellen Sie vier SharePoint Online-Teamwebsites mit den Sicherheitsebenen „Intern“, „Privat“, „Sensibel“ und „Streng vertraulich“.
 
-Weitere Sicherheitsfunktionen für die Vorführung oder Machbarkeitsstudie finden Sie unter [Office 365-Testumgebungsanleitungen](https://aka.ms/o365tlgs).
+Weitere Sicherheitsfunktionen für die Vorführung oder Machbarkeitsstudie finden Sie unter [Office 365-Testumgebungsanleitungen](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md).
 
 ## <a name="see-also"></a>Siehe auch
-
-[Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](../../solutions/cloud-architecture-models.md)
