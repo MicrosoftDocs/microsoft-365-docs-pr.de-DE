@@ -237,6 +237,8 @@
               href: data-loss-prevention-policies.md
             - name: Informationen zur Verhinderung von Datenverlust am Endpunkt
               href: endpoint-dlp-learn-about.md
+            - name: 'Informationen zum lokalen Microsoft 365-DLP-Scanner (Data Loss Prevention, Verhinderung von Datenverlust) (Vorschau)'
+              href: dlp-on-premises-scanner-learn.md
         - name: Erste Schritte mit DLP
           items:
             - name: Erste Schritte mit der DLP-Standardrichtlinie
@@ -245,6 +247,8 @@
               href: create-a-dlp-policy-from-a-template.md
             - name: 'Erstellen, Testen und Optimieren einer DLP-Richtlinie'
               href: create-test-tune-dlp-policy.md
+            - name: 'Erste Schritte mit dem lokalen Microsoft 365-DLP-Scanner (Data Loss Prevention, Verhinderung von Datenverlust) (Vorschau)'
+              href: dlp-on-premises-scanner-get-started.md
             - name: "Verhinderung von Datenverlust am Endpunkt\_– Erste Schritte"
               href: endpoint-dlp-getting-started.md
             - name: Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen für die Verhinderung von Datenverlust am Endpunkt
@@ -269,6 +273,8 @@
               href: dlp-microsoft-teams.md
             - name: Nutzen der Verhinderung von Datenverlust am Endpunkt
               href: endpoint-dlp-using.md
+            - name: 'Verwenden des lokalen Microsoft 365-DLP-Scanners (Data Loss Prevention, Verhinderung von Datenverlust) (Vorschau)'
+              href: dlp-on-premises-scanner-use.md
             - name: Verwenden von Benachrichtigungen und Richtlinientipps in DLP-Richtlinien
               href: use-notifications-and-policy-tips.md
             - name: Inhalt der DLP-Richtlinienvorlagen
