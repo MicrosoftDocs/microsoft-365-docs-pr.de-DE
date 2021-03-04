@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen für IT-Administratoren zum Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobile und das Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1834e1071c56e03ef20ae0e87b63fc4c03a6921b
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: b7d3c436030c0db3faa7834ed0153396048c0ec6
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407305"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423686"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -64,8 +64,8 @@ Bei den aufgeführten Nummern handelt es sich um die mindestens erforderliche Of
 |[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | Zu überprüfen |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – Opt-In](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | Zu überprüfen   | Zu überprüfen         | Zu überprüfen                                                        |
-|[Erste Schritte mit der Datenklassifizierung](data-classification-overview.md) und dem Senden von Daten für Administratoren                      | 2011+ | 16.43+ | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider) | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider) | Ja <sup>\*</sup>                                                        |
-|[Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider)             | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider)         | Zu überprüfen   | Roll out: 16.0.13628+ | Zu überprüfen                                            
+|[Erste Schritte mit der Datenklassifizierung](data-classification-overview.md) und dem Senden von Daten für Administratoren                      | 2011+ | 16.43+ | Roll out: 2.46+ | Roll out: 16.0.13628+ | Ja <sup>\*</sup>                                                        |
+|[Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | Roll out: 2101+             | Roll out: 16.45+         | Roll out in preview: [Beta Channel](https://office.com/insider) | Roll out: 16.0.13628+ | Zu überprüfen                                            
 |[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Roll out: 16.44+ | Zu überprüfen | Zu überprüfen | [Ja – Opt-In](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Unterstützung der gemeinsamen Dokumenterstellung und automatischen Dokumenterstellung](sensitivity-labels-coauthoring.md) für gekennzeichnete und verschlüsselte Dokumente | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider) | Vorschau: [Betakanal](https://office.com/insider) | Zu überprüfen | Zu überprüfen | [Ja – Opt-In](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
@@ -88,7 +88,7 @@ Bei den aufgeführten Nummern handelt es sich um die mindestens erforderliche Of
 |[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables)                                              | Zu überprüfen                     | Zu überprüfen                 | Zu überprüfen         | Zu überprüfen           | Zu überprüfen               |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
-|[Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider))                        | 16.43+ <sup>\*</sup>                    | Zu überprüfen            | Zu überprüfen                | Ja                |
+|[Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | Roll out: 2101+                        | 16.43+ <sup>\*</sup>                    | Zu überprüfen            | Zu überprüfen                | Ja                |
 |[Erste Schritte mit der Datenklassifizierung](data-classification-overview.md) und dem Senden von Daten für Administratoren                      | 2011+ | Zu überprüfen | Zu überprüfen           | Zu überprüfen               | Zu überprüfen |
 |[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | Zu überprüfen           | Zu überprüfen               | Ja |
 |

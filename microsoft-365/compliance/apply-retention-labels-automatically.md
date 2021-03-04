@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie Aufbewahrungsbezeichnungen und Richtlinien für das automatische Anwenden von Bezeichnungen, damit Sie Bezeichnungen automatisch auf Inhalte anwenden können, die Sie beibehalten möchten, und nicht benötigte Inhalte löschen können.
-ms.openlocfilehash: 69bada084aa3817b49b75d970a1a8d304f6853e6
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 34b6fb53095a2c3f52598b84e82cae3083b98f21
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261346"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423304"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aufbewahrungsbezeichnungen automatisch anwenden, um Inhalte beizubehalten oder zu löschen
 
@@ -282,6 +282,14 @@ Wenn Sie eine Aufbewahrungsbezeichnung oder eine Richtlinie für die automatisch
 Einige Einstellungen können nicht geändert werden, nachdem die Bezeichnung oder Richtlinie erstellt und gespeichert wurde. Dazu gehören:
 - Die Aufbewahrungsbezeichnung und der Name der Richtlinie sowie die Aufbewahrungseinstellungen mit Ausnahme des Aufbewahrungszeitraums. Der Aufbewahrungszeitraum kann jedoch nicht geändert werden, wenn er auf dem Zeitpunkt basiert, zu dem die Bezeichnungen auf die Elemente angewendet wurden.
 - Die Option zum Markieren von Elementen als Datensatz.
+
+### <a name="deleting-retention-labels"></a>Löschen von Aufbewahrungsbezeichnungen.
+
+Sie können Aufbewahrungsbezeichnungen löschen, die derzeit in keiner Richtlinie für Aufbewahrungsbezeichnungen enthalten sind, die nicht für die ereignisbasierte Aufbewahrung konfiguriert sind oder Elemente als regulatorische Datensätze kennzeichnen. Die Möglichkeit, Aufbewahrungsbezeichnungen zu löschen, die Elemente als Datensätze kennzeichnen, wird derzeit als Rollout in der Vorschau eingeführt.
+
+Das Löschen von löschbaren Aufbewahrungsbezeichnungen schlägt fehl, wenn diese auf Elemente angewendet wurden. Es wird ein Link zum Inhaltsexplorer angezeigt, um die mit Bezeichnungen versehenen Elemente zu identifizieren.
+
+Es kann jedoch bis zu zwei Tage dauern, bis der Inhaltsexplorer die mit Bezeichnungen versehenen Elemente anzeigt. In diesem Szenario wird die Aufbewahrungsbezeichnung möglicherweise gelöscht, ohne dass die Verknüpfung zum Inhaltsexplorer angezeigt wird.
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>Sperren der Richtlinie, um Änderungen vorzubeugen
 

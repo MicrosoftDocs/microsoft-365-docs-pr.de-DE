@@ -158,6 +158,8 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
           href: sensitivity-labels-office-apps.md
+        - name: Aktivieren der gemeinsamen Dokumenterstellung für mit Vertraulichkeitsbezeichnungen verschlüsselte Dokumente (Vorschau)
+          href: sensitivity-labels-coauthoring.md
     - name: Verschlüsselung
       items:
         - name: Grundlagen zur Verschlüsselung

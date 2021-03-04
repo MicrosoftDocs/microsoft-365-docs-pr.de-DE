@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Verwenden Sie im Security & Compliance Center die Funktion zum Suchen und Löschen, um eine E-Mail-Nachricht in allen Postfächern in Ihrer Organisation zu suchen und daraus zu löschen.
-ms.openlocfilehash: f4bcd012708c0b7e9fa37b06288cda18ad4766cf
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 52871fc85a4d5aec1754c1957f2087552b442daf
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546533"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423696"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Suchen nach und Löschen von E-Mail-Nachrichten
 
@@ -47,7 +47,7 @@ Mit der Inhaltssuche können Sie alle Postfächer Ihrer Organisation nach E-Mail
 
 - Aus jedem Postfach können maximal 10 Elemente gleichzeitig entfernt werden. Da die Funktion zum Suchen und Entfernen von Nachrichten ein Tool zur Reaktion auf Vorfälle sein soll, stellt dieser Höchstwert sicher, dass Nachrichten schnell aus Postfächern entfernt werden können. Das Feature ist nicht zum Bereinigen von Benutzerpostfächern vorgesehen.
 
-- Die maximale Anzahl von Postfächern in einer Inhaltssuche, aus denen Sie Elemente löschen können, indem Sie eine "Suchen und löschen"-Aktion ausführen, beträgt 50.000. Wenn die Inhaltssuche (die Sie in [Schritt 1](#step-1-create-a-content-search-to-find-the-message-to-delete)erstellen) mehr als 50.000 Quellpostfächer umfasst, schlägt die Löschaktion (die Sie in Schritt 3 erstellen) fehl. Im Abschnitt [Weitere Informationen](#more-information) finden Sie einen Tipp zur Durchführung eines Such- und Löschvorgangs über mehr als 50.000 Postfächer.
+- Die maximale Anzahl von Postfächern in einer Inhaltssuche, die Sie verwenden können, um Elemente zu löschen, indem Sie eine „Suchen und löschen“-Aktion ausführen, beträgt 50.000. Wenn die Suche (die Sie in [Schritt 1](#step-1-create-a-content-search-to-find-the-message-to-delete) erstellen) mehr als 50.000 Postfächer umfasst, schlägt die Löschaktion (die Sie in Schritt 3 erstellen) fehl. Zum Durchsuchen von mehr als 50.000 Postfächern in einer einzigen Suche kann es typischerweise kommen, wenn Sie die Suche so konfigurieren, dass alle Postfächer in Ihrer Organisation durchsucht werden. Diese Einschränkung gilt auch dann, wenn weniger als 50.000 Postfächer Elemente enthalten, die der Suchabfrage entsprechen. Im Abschnitt [Weitere Informationen](#more-information) finden Sie eine Anleitung zur Verwendung von Filtern für Suchberechtigungen zum Suchen und Bereinigen von Elementen in mehr als 50.000 Postfächern.
 
 - Das in diesem Artikel beschriebene Verfahren kann nur zum Löschen von Elementen aus Exchange Online-Postfächern und öffentlichen Ordnern verwendet werden. Sie können es nicht verwenden, um Inhalte von SharePoint- oder OneDrive for Business-Websites zu löschen.
 
@@ -143,7 +143,7 @@ Weitere Informationen finden Sie unter [New-ComplianceSearchAction](https://docs
 
 - **Was ist zu tun, wenn Sie eine Nachricht aus mehr als 50.000 Postfächern löschen müssen?**
 
-  Wie bereits erwähnt, können Sie einen Such- und Löschvorgang über höchstens 50.000 Postfächer ausführen. Wenn Sie einen Such-und Löschvorgang für mehr als 50.000 Postfächer durchführen müssen, erwägen Sie, temporäre Suchberechtigungsfilter zu erstellen, die die Anzahl der zu durchsuchenden Postfächer auf unter 50.000 verringern. Wenn Ihre Organisation z. B. über Postfächer in verschiedenen Gebieten, Staaten oder Ländern verfügt, können Sie einen Suchberechtigungsfilter für Postfächer auf Grundlage einer dieser Postfacheigenschaften erstellen, um eine Teilmenge der Postfächer in Ihrer Organisation zu durchsuchen. Nachdem Sie den Filter für Suchberechtigungen eingerichet haben, erstellen Sie die Suche (in Schritt 1 beschrieben), und anschließend löschen Sie die Nachricht (in Schritt 3 beschrieben). Dann können Sie den Filter bearbeiten, um Nachrichten in einer anderen Gruppe von Postfächern zu suchen und zu löschen. Weitere Informationen zur Erstellung von Suchberechtigungsfiltern finden Sie unter [Konfigurieren von Berechtigungsfiltern für die Inhaltssuche](permissions-filtering-for-content-search.md).
+  Wie bereits erwähnt, können Sie einen Such- und Löschvorgang über höchstens 50.000 Postfächer ausführen (selbst wenn weniger als 50.000 Postfächer Elemente enthalten, die der Suchabfrage entsprechen). Wenn Sie einen Such- und Löschvorgang für mehr als 50.000 Postfächer durchführen müssen, erwägen Sie, temporäre Suchberechtigungsfilter zu erstellen, die die Anzahl der zu durchsuchenden Postfächer auf unter 50.000 verringern. Wenn Ihre Organisation z. B. über Postfächer in verschiedenen Gebieten, Staaten oder Ländern verfügt, können Sie einen Suchberechtigungsfilter für Postfächer auf Grundlage einer dieser Postfacheigenschaften erstellen, um eine Teilmenge der Postfächer in Ihrer Organisation zu durchsuchen. Nachdem Sie den Filter für Suchberechtigungen eingerichet haben, erstellen Sie die Suche (in Schritt 1 beschrieben), und anschließend löschen Sie die Nachricht (in Schritt 3 beschrieben). Dann können Sie den Filter bearbeiten, um Nachrichten in einer anderen Gruppe von Postfächern zu suchen und zu löschen. Weitere Informationen zur Erstellung von Suchberechtigungsfiltern finden Sie unter [Konfigurieren von Berechtigungsfiltern für die Inhaltssuche](permissions-filtering-for-content-search.md).
 
 - **Werden in den Suchergebnissen enthaltene, nicht indizierte Elemente gelöscht?**
 

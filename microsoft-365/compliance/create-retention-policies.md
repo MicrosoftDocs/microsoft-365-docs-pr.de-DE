@@ -16,31 +16,34 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Mithilfe einer Aufbewahrungsrichtlinie können Sie die Inhalte, die Benutzer mit E-Mails, Dokumenten und Unterhaltungen generieren, sehr effizient verwalten. Bewahren Sie auf, was Sie wollen, und werden Sie los, was Sie nicht mehr wollen.
-ms.openlocfilehash: 1806000b47a19c07da11a6a732eeacf5d60a7da0
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+description: Mithilfe einer Aufbewahrungsrichtlinie können Sie die Inhalte, die Benutzer mit E-Mails, Dokumenten und Unterhaltungen generieren, effizient verwalten. Bewahren Sie auf, was Sie wollen, und werden Sie los, was Sie nicht mehr wollen.
+ms.openlocfilehash: 02d3fd17e4aac34546e545ec10621bc99b945b31
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261324"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405713"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-Mithilfe einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen.
+Verwenden Sie eine Aufbewahrungsrichtlinie zum Verwalten der Daten für Ihre Organisation, indem Sie proaktiv entscheiden, ob Inhalte beibehalten, gelöscht oder aber beibehalten und dann gelöscht werden sollen.
 
-Mit einer Aufbewahrungsrichtlinie können Sie dies sehr effizient erledigen, indem Sie identische Aufbewahrungseinstellungen für Inhalte nach Speicherort, auf Website- oder Postfachebene zuweisen. Wenn Sie nicht sicher sind, ob Sie eine Aufbewahrungsrichtlinie oder eine Aufbewahrungsbezeichnung verwenden, lesen Sie [Aufbewahrungsrichtlinien und Aufbewahrungsbeschriftungen](retention.md#retention-policies-and-retention-labels).
+Mithilfe einer Aufbewahrungsrichtlinie können Sie dies sehr effizient erledigen, indem Sie auf Containerebene dieselben Aufbewahrungseinstellungen zuweisen, die vom Inhalt in diesem Container automatisch geerbt werden sollen. Dies sind beispielsweise alle Elemente auf SharePoint-Websites, alle E-Mail-Nachrichten in den Exchange-Postfächern von Benutzern und alle Kanalnachrichten für Teams, die bei Microsoft Teams verwendet werden. Wenn Sie nicht sicher sind, ob Sie eine Aufbewahrungsrichtlinie auf Containerebene oder eine Aufbewahrungsbezeichnung auf Elementebene verwenden sollten, lesen Sie [Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md#retention-policies-and-retention-labels).
 
-Näheres über Aufbewahrungsrichtlinien und wie sie funktionieren erfahren Sie unter [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md).
+Weitere Informationen zu Aufbewahrungsrichtlinien und zur Funktionsweise der Aufbewahrung in Microsoft 365 finden Sie unter [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+> [!NOTE]
+> Die Informationen auf dieser Seite richten sich an Complianceadministratoren. Wenn Sie kein Administrator sind und verstehen möchten, wie Aufbewahrungsrichtlinien für die von Ihnen verwendeten Apps konfiguriert wurden, wenden Sie sich an Ihren Helpdesk, Ihre IT-Abteilung oder Ihren Administrator. Wenn in Teams-Chats und Kanalnachrichten Meldungen zu Aufbewahrungsrichtlinien angezeigt werden, ist es für Sie möglicherweise hilfreich, [Teams-Nachrichten zu Aufbewahrungsrichtlinien](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b) zu lesen.
+
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Der globale Administrator Ihrer Organisation verfügt über umfassende Berechtigungen zum Erstellen und Bearbeiten von Aufbewahrungsrichtlinien. Wenn Sie sich nicht als globaler Administrator anmelden, lesen Sie [Notwendige Berechtigungen zum Erstellen und Verwalten von Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
 
 ## <a name="create-and-configure-a-retention-policy"></a>Erstellen und Konfigurieren einer Aufbewahrungsrichtlinie
 
-Obwohl eine Aufbewahrungsrichtlinie mehrere Speicherorte unterstützt, können Sie keine einzelne Aufbewahrungsrichtlinie erstellen, die alle unterstützten Speicherorte umfasst:
+Obwohl eine Aufbewahrungsrichtlinie mehrere Dienste unterstützen kann, die darin als „Speicherorte“ identifiziert werden, können Sie nicht eine einzelne Aufbewahrungsrichtlinie erstellen, die alle unterstützten Speicherorte enthält:
 
 - Exchange-E-Mail
 - SharePoint-Website
@@ -53,7 +56,7 @@ Obwohl eine Aufbewahrungsrichtlinie mehrere Speicherorte unterstützt, können S
 - Nachrichten in der Yammer-Community
 - Private Nachrichten in Yammer
 
-Wenn Sie beim Erstellen einer Aufbewahrungsrichtlinie die Teams- oder Yammer-Speicherorte auswählen, werden die anderen Speicherorte automatisch ausgeschlossen. Daher sind die zu befolgenden Anweisungen davon abhängig, ob Sie die Teams- oder die Yammer-Speicherorte einschließen müssen:
+Wenn Sie beim Erstellen einer Aufbewahrungsrichtlinie die Teams- oder Yammer-Speicherorte auswählen, werden die anderen Speicherorte automatisch ausgeschlossen. Dies bedeutet: Die zu befolgenden Anweisungen sind davon abhängig, ob Sie die Teams- oder die Yammer-Speicherorte einbeziehen müssen:
 
 - [Anweisungen für eine Aufbewahrungsrichtlinie für Teams-Speicherorte](#retention-policy-for-teams-locations)
 - [Anweisungen für eine Aufbewahrungsrichtlinie für Yammer-Speicherorte](#retention-policy-for-yammer-locations)

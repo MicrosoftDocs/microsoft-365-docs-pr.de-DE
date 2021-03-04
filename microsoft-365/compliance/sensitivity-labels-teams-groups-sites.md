@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in SharePoint- und Microsoft Teams-Websites sowie in Microsoft 365-Gruppen.
-ms.openlocfilehash: 7eea07b91647af2b0b7121f9d9c1f018bc9fc630
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 3565b47e21d81b4b3d560d72a29f2deae9587709
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261458"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407315"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden
 
@@ -32,7 +32,7 @@ Zusätzlich zur Verwendung von [Vertraulichkeitsbezeichnungen](sensitivity-label
 
 - Datenschutz (öffentlich oder privat) für Teamwebsites und Microsoft 365-Gruppen
 - Zugriff externer Benutzer
-- Externe Freigabe von SharePoint-Websites (in der Vorschau)
+- Externe Freigabe von SharePoint-Websites
 - Zugriff von nicht verwalteten Geräten aus
 
 > [!IMPORTANT]
@@ -100,7 +100,7 @@ Die Aktivierung von Vertraulichkeitsbezeichnungen für Container bedeutet, dass 
 
 4. Wenn Sie **Einstellungen für den Gerätezugriff und die externe Freigabe** ausgewählt haben, konfigurieren Sie nun die folgende Einstellungen:
     
-    - **Externe Freigabe von bezeichneten SharePoint-Websites steuern**: Wählen Sie in der Vorschau diese Option, um dann entweder die externe Freigabe für jede beliebige Person, neue und bestehende Gäste, bestehende Gäste oder nur Personen in Ihrer Organisation auszuwählen. Weitere Informationen zu diesen Konfigurationen und Einstellungen finden Sie in der SharePoint-Dokumentation [Externe Freigabe für eine Website aktivieren oder deaktivieren](https://docs.microsoft.com/sharepoint/change-external-sharing-site).
+    - **Externe Freigabe von bezeichneten SharePoint-Websites steuern**: Wählen Sie diese Option, um dann entweder die externe Freigabe für jede beliebige Person, neue und bestehende Gäste, bestehende Gäste oder nur Personen in Ihrer Organisation auszuwählen. Weitere Informationen zu diesen Konfigurationen und Einstellungen finden Sie in der SharePoint-Dokumentation [Externe Freigabe für eine Website aktivieren oder deaktivieren](https://docs.microsoft.com/sharepoint/change-external-sharing-site).
     
     - **Zugriff von nicht verwalteten Geräten aus**: Diese Option verwendet das SharePoint-Feature, bei dem der bedingte Zugriff in Azure AD verwendet wird, um den Zugriff auf SharePoint- und OneDrive-Inhalte von nicht verwalteten Geräten aus zu sperren oder einzuschränken. Weitere Informationen finden Sie unter [Steuern des Zugriffs von nicht verwalteten Geräten aus](/sharepoint/control-access-from-unmanaged-devices) in der SharePoint-Dokumentation. Die Option, die Sie für diese Bezeichnungseinstellung festlegen, entspricht der Ausführung eines PowerShell-Befehls für eine Website, wie in den Schritten 3-5 im Abschnitt [Blockieren oder Einschränken des Zugriffs auf eine bestimmte SharePoint-Website oder OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) in der SharePoint-Anleitung beschrieben.
         
