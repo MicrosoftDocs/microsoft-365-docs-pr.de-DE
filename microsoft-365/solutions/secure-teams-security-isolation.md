@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie ein Team mit einer eindeutigen Vertraulichkeitsbezeichnung für Sicherheit erstellen.
-ms.openlocfilehash: 439dee40d1501801fc09d570614a591259c6f09c
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: 5ddd42f9e2f2779ca6bf864554140a3f18d2cdea
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881705"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405702"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurieren eines Teams mit Sicherheitsisolierung
 
@@ -44,6 +44,7 @@ Die Elemente der Konfiguration für ein Team mit Sicherheitsisolierung sind:
 
 Schauen Sie sich dieses Video an, um einen Überblick über den Bereitstellungsprozess zu erhalten.
 <br>
+<br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
 <a name="poster"></a> Eine einseitige Zusammenfassung dieses Szenarios zeigt das [Poster „Microsoft Teams mit Sicherheitsisolierung“](../downloads/team-security-isolation-poster.pdf).
@@ -51,6 +52,10 @@ Schauen Sie sich dieses Video an, um einen Überblick über den Bereitstellungsp
 [![Poster „Microsoft Teams mit Sicherheitsisolierung“](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
 Sie können dieses Poster auch im [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)- oder [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx)-Format herunterladen und in den Formaten "Brief", "Legal" oder "Tabloid" (27,94 x 43,18 cm) ausdrucken.
+
+Probieren Sie diese Konfiguration in Ihrer eigenen Testlaborumgebung mit [diesen Anweisungen](team-security-isolation-dev-test.md) aus.
+
+Sehen Sie in [dieser Fallstudie](contoso-team-for-top-secret-project.md), wie die Contoso Corporation ein isoliertes Team für ein streng geheimes Projekt verwendet hat.
 
 ## <a name="initial-protections"></a>Erste Schutzmaßnahmen
 

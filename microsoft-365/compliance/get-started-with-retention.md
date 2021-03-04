@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie sind bereit, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen zum Schutz der Daten Ihrer Organisation zu implementieren, sind sich aber nicht sicher, wie Sie dies bewerkstelligen sollten? Hier finden Sie einige praktische Anweisungen für die ersten Schritte.
-ms.openlocfilehash: 26568d2a603e447156aead751178555fa400db5e
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: bb73f0871bfc2ad707d31ef6d4d57e18218842a5
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682530"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406515"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Erste Schritte zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -82,9 +82,11 @@ Anhand der folgenden Tabelle können Sie Ihre geschäftlichen Anforderungen ents
 
 Wenn Sie Aufbewahrungsbezeichnungen für die Datensatzverwaltung verwenden, gibt es zusätzliche Szenarios, die einzigartig für Aufbewahrungsbezeichnungen sind, die Inhalte als Datensatz kennzeichnen. Siehe [Häufige Szenarien für die Datensatzverwaltung](get-started-with-records-management.md#common-scenarios-for-records-management).
 
-## <a name="end-user-documentation-for-retention-labels"></a>Dokumentation zu Aufbewahrungsbezeichnungen für Endbenutzer
+## <a name="end-user-documentation-for-retention"></a>Dokumentation zu Aufbewahrungsbezeichnungen für Endbenutzer
 
-Aufbewahrungsbezeichnungen erscheinen im Gegensatz zu Aufbewahrungsrichtlinien in der Benutzeroberfläche von Microsoft 365-Apps. Vergewissern Sie sich, Ihren Endbenutzern und Ihrem Helpdesk Anleitungen bereitstellen, bevor Sie Ihrem Produktionsnetzwerk Aufbewahrungsbezeichnungen bereitstellen.
+Die meisten Aufbewahrungsrichtlinien arbeiten unauffällig im Hintergrund ohne Benutzerinteraktion und benötigen daher nur wenig Dokumentation für Benutzer. Aufbewahrungsrichtlinien für Teams informieren Benutzer, wenn ihre Nachrichten gelöscht wurden, mit einem Link zu [Teams-Nachrichten über Aufbewahrungsrichtlinien](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+
+Da Aufbewahrungsbezeichnungen in Microsoft 365-Apps über eine Benutzeroberfläche verfügen, sollten Sie den Endbenutzern und Ihrem Helpdesk eine Anleitung geben, bevor Sie diese Bezeichnungen in Ihrem Produktionsnetzwerk bereitstellen.
 
 Die effektivste Art der Dokumentation für Endbenutzer umfasst maßgeschneiderte Anleitungen und Anweisungen zu den von Ihnen gewählten Namen und Konfigurationen von Aufbewahrungsbezeichnungen. Lesen Sie den folgenden Blogbeitrag für ein Downloadpaket, mit dem sie Benutzer trainieren und Einführungen nutzen können: [Endbenutzertraining in Aufbewahrungsbezeichnungen in M365 – Wie Sie Ihre Einführung beschleunigen können](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
 
