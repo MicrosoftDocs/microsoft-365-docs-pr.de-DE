@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Microsoft 365 Business Voice.
-ms.openlocfilehash: 270ca1f59b866274eb9d51c12c9934c59d8c1836
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 7a6cb0071dfd9bb7f1184420235540ebb5433d80
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927514"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423047"
 ---
 # <a name="overview-of-business-voice"></a>Übersicht über Business Voice
 
@@ -37,29 +35,29 @@ Microsoft 365 Business Voice bietet ein cloudbasiertes End-to-End-Telefonsystem 
 
 ## <a name="what-is-business-voice"></a>Was ist Business Voice?
 
-:::image type="content" source="../media/rework_m365-businessvoice-overview.png" alt-text="Übersichts abbildung für Microsoft 365 Business Voice.":::
+:::image type="content" source="../media/rework_m365-businessvoice-overview.png" alt-text="Übersichtsansicht für Microsoft 365 Business Voice.":::
 
-Microsoft 365 Business Voice macht es kleinen und mittleren Organisationen einfach, Microsoft Teams in ein leistungsfähiges und flexibles Telefonsystem zu verwandeln. Es ist ein Ersatz für herkömmliche Telefonieanbieter und in-House-Telefonsysteme, die schwierig und kostspielig zu verwalten sein können. Sie können sowohl gebührenpflichtige als auch gebührenfreie Telefonnummern, Anrufmenüs einrichten, um Anrufern zu helfen, zur richtigen Abteilung zu kommen, Audiokonferenzen, damit Sie Besprechungen mit jedem hosten können, und vieles mehr. Sie können personen sogar ihre eigenen Telefonnummern geben, damit sie Anrufe direkt erhalten können.
+Mit Microsoft 365 Business Voice können kleine und mittlere Organisationen Microsoft Teams in ein leistungsfähiges und flexibles Telefonsystem verwandeln. Es ist ein Ersatz für herkömmliche Telefonieanbieter und in-house-Telefonsysteme, die schwer und kostspielig zu verwalten sein können. Sie können sowohl gebührenpflichtige als auch gebührenfreie Nummern, Anrufmenüs einrichten, um Anrufern zu helfen, zur richtigen Abteilung zu kommen, Audiokonferenzen, damit Sie Besprechungen mit jedem hosten können, und vieles mehr. Sie können den Personen sogar ihre eigenen Telefonnummern geben, damit sie Anrufe direkt erhalten können.
 
-Business Voice führt all dies aus, indem Microsoft 365-Telefonsystemfunktionen in ein einfach zu verwaltendes Bundle gewickelt werden. Sie müssen sich keine Gedanken über die Auswahl des richtigen Plans oder Features machen. Sie sind alle dort und richten sie für Sie ein. Da das Telefonsystem Bestandteil von Teams ist, können Sie jeden PC, Mac oder mobilgeräte in ein Telefon verwandeln, das Ihre Business -Voice-Telefonnummer verwenden kann.
+Business Voice führt all dies aus, indem Microsoft 365 Phone System-Features in ein einfach zu verwaltendes Bundle gewickelt werden. Sie müssen sich keine Gedanken darüber machen, den richtigen Plan oder das richtige Feature zu wählen. Sie sind alle da und richten sie für Sie ein. Da das Telefonsystem Teil von Teams ist, können Sie jeden PC, Mac oder jedes mobile Gerät in ein Telefon verwandeln, das Ihre Business Voice-Telefonnummer verwenden kann.
 
-Business Voice ist überall verfügbar, da es Teil von Microsoft Teams ist. Wenn Sie also die Teams-App auf Ihrem Smartphone, Tablet oder Computer haben, können Sie mit diesem Gerät Anrufe so machen und empfangen, als wäre es ein physisches Telefon im Büro.
+Business Voice geht überall hin, da es Teil von Microsoft Teams ist. Wenn Sie also die Teams-App auf Ihrem Smartphone, Tablet oder Computer haben, können Sie anrufe mit diesem Gerät so machen und empfangen, als wäre es ein physisches Telefon im Büro.
 
 ## <a name="how-to-set-up"></a>Einrichten
 
 :::image type="content" source="../media/rework_M365_BusinessVoice_Setup1.png" alt-text="Übersicht über die Einrichtung von Business Voice.":::
 
-1. Kaufen Sie das Microsoft 365 Business Voice-Add-On in einem vorhandenen Microsoft 365-Abonnement.
-1. Stellen Sie sicher, dass Sie eine Lizenz für jeden Mitarbeiter erhalten, der eine geschäftliche Telefonnummer benötigt, um Anrufe mit Personen außerhalb Ihres Unternehmens zu machen und zu empfangen.
-1. Wenn Sie Business Voice einrichten, erhalten Sie neue Telefonnummern für Ihr Unternehmen und Ihre Mitarbeiter. Dies ist auch dann nötig, wenn Sie ihre vorhandenen Geschäftsnummern später importieren möchten.
-1. Wenn Sie gebührenfreie Telefonnummern oder die Möglichkeit haben möchten, eine beliebige Nummer international an anrufen zu können, erwerben Sie Kommunikationsguthaben für Ihr Unternehmen, das Anrufminuten über das hinaus bietet, was in Business Voice enthalten ist.
-1. Erstellen Sie eine Begrüßung für Ihre Kunden, indem Sie eine Aufzeichnung hochladen oder eine Nachricht eingeben, und wir konvertieren den Text für Sie in Sprache.
-1. Erstellen Sie dann ein Anrufroutingmenü von Ihrer Hauptgeschäftsnummer, das Kunden per Sprachbefehl oder über die Tasten auf dem Telefon an die richtige Person oder Abteilung weiterleitiert. Sie können eine andere Begrüßung und ein anderes Menü für Feiertage oder zeiten später planen.
-1. Übertragen Sie schließlich Ihre vorhandenen Telefonnummern zu Microsoft Teams.
-1. Wenn die Nummern in Teams verfügbar werden, weisen Sie sie Ihren Mitarbeitern und Ihrer Hauptgeschäftsnummer zu. Jetzt können Sie Ihr neues Geschäftstelefon mit der Teams-App auf computern, Telefonen oder Tablets verwenden.
+1. Erwerben Sie das Microsoft 365 Business Voice-Add-On für ein vorhandenes Microsoft 365-Abonnement.
+1. Stellen Sie sicher, dass Sie eine Lizenz für jeden Mitarbeiter erhalten, der eine Geschäftliche Telefonnummer benötigt, um Anrufe mit Personen außerhalb Ihres Unternehmens zu machen und zu empfangen.
+1. Wenn Sie Business Voice einrichten, erhalten Sie neue Telefonnummern für Ihr Unternehmen und Ihre Mitarbeiter. Sie müssen dies auch tun, wenn Sie ihre vorhandenen Geschäftsnummern später importieren möchten.
+1. Wenn Sie gebührenfreie Nummern oder die Möglichkeit haben möchten, eine beliebige Nummer international an anrufen zu können, erwerben Sie Kommunikationsguthaben für Ihr Unternehmen, das Anrufminuten über das hinaus bietet, was in Business Voice enthalten ist.
+1. Erstellen Sie eine Begrüßung für Ihre Kunden, indem Sie eine Aufzeichnung hochladen oder eine Nachricht eingeben, und wir konvertieren den Text in Sprache für Sie.
+1. Erstellen Sie dann ein Anrufroutingmenü von Ihrer Hauptgeschäftsnummer, das Kunden per Sprach- oder Telefonschlüssel zur richtigen Person oder Abteilung leitet. Sie können eine andere Begrüßung und ein anderes Menü für Feiertage oder nach Stunden planen.
+1. Übertragen Sie schließlich Ihre vorhandenen Telefonnummern an Microsoft Teams.
+1. Wenn die Nummern in Teams verfügbar werden, weisen Sie sie Ihren Mitarbeitern und Ihrer Hauptgeschäftsnummer zu. Jetzt können Sie Ihr neues Geschäftstelefon mit der Teams-App auf jedem Computer, Smartphone oder Tablet verwenden.
 
 ## <a name="how-to-use"></a>Verwendung
 
-Um einen Telefonanruf zu machen, öffnen Sie die Teams-App auf Ihrem Computer, Tablet oder Smartphone, und wählen Sie "Anrufe" aus. Sie sehen Ihre zugewiesene Telefonnummer und die Wähltastaufwahl, die Sie zum Anrufen einer beliebigen Nummer verwenden können. Oder wählen Sie einen Ihrer Kontakte aus Outlook oder Ihrem Telefon aus, und rufen Sie sie direkt an.
+Öffnen Sie zum Telefonieren die Teams-App auf Ihrem Computer, Tablet oder Smartphone, und wählen Sie Anrufe aus. Sie sehen Ihre zugewiesene Telefonnummer und das Wählpad, mit dem Sie eine beliebige Nummer anrufen können. Oder wählen Sie einen Ihrer Kontakte aus Outlook oder Ihrem Telefon aus, und rufen Sie sie direkt an.
 
-Sie werden aufgefordert, den Anruf zu akzeptieren oder zu ignorieren, ähnlich wie auf einem normalen Telefon. Wenn erforderlich, können Sie Anrufe weiterleiten oder mehrere Geräte anrufen, um sicherzustellen, dass Sie keine wichtigen Anrufe von Ihren Kunden verpassen.
+Sie werden aufgefordert, den Anruf zu akzeptieren oder zu ignorieren, ähnlich wie auf einem normalen Telefon. Geben Sie bei Bedarf Anrufe weiter oder rufen Sie mehrere Geräte an, um sicherzustellen, dass Sie keine wichtigen Anrufe ihrer Kunden verpassen.

@@ -9,47 +9,45 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Microsoft Bookings.
-ms.openlocfilehash: 67ed948793b4d43f92b376d7e299564f5d734550
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 681667d8f399c0bf5ba1b84ee67352a30d10d78d
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928126"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422339"
 ---
 # <a name="overview-of-microsoft-bookings"></a>Übersicht über Microsoft Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q?autoplay=false]
 
-Microsoft Bookings ist eine Online-App und mobile App für kleine Unternehmen, die Dienste für Kunden auf Terminbasis leisten. Beispiele für Unternehmen sind Frisöre, Filialen, Spas, Anwaltskanzleien, Finanzdienstleister, Berater und Autoshops.
+Microsoft Bookings ist eine Online-App und mobile App für kleine Unternehmen, die Dienste für Kunden auf Terminbasis leisten. Beispiele für Unternehmen sind Haarstudios, Zahn zahnärztliche Büros, Spas, Anwaltskanzleien, Finanzdienstleister, Berater und Autogeschäfte.
 
 ## <a name="get-started-with-bookings"></a>Erste Schritte mit Bookings
 
-1. Um zu beginnen, melden Sie sich bei Microsoft 365 an, und wählen **Sie bookings** aus dem App-Startfeld aus.
-1. Wählen **Sie "Jetzt herunterladen"** auf der **Seite "Bookings"** aus.
-1. Fügen Sie Ihre Unternehmensinformationen hinzu, und Sie können mit der Verwendung von Bookings beginnen.
+1. Um mit den ersten Schritte zu beginnen, melden Sie sich bei Microsoft 365 an, und wählen **Sie im App-Startfeld Buchungen** aus.
+1. Wählen **Sie jetzt auf der** Seite Bookings **die** Option Jetzt herunterladen aus.
+1. Fügen Sie Ihre Geschäftsinformationen hinzu, und Sie können mit bookings beginnen.
 
     Um Ihre Buchungen auf Ihrem mobilen Gerät zu verwalten, laden Sie Bookings aus Ihrem App Store herunter.
 
 ## <a name="use-bookings"></a>Verwenden von Bookings
 
 - Überprüfen Sie **im Bookings-Dashboard** Ihre Geschäftsadresse, Stunden und andere Geschäftsinformationen, und aktualisieren Sie sie bei Bedarf.
-- Auf der **Kalenderseite** können Sie und Ihre Mitarbeiter Kundentermine hinzufügen oder aktualisieren. Sie können Ihren Kalender nach Tag, Woche oder Monat anzeigen.
-- Auf der **Seite "Kunden"** können neue Kunden aus anderen Konten wie Gmail oder einem Gerät hinzugefügt oder importiert werden.
-- Auf **der** Seite "Mitarbeiter" können Sie Ihre Mitarbeiter hinzufügen und verwalten. Es ist wichtig, ihre E-Mail-Adressen hinzuzufügen, damit sie sofortige Benachrichtigungen über neue Termine erhalten können.
-- Auf **der** Seite "Dienste" können Sie die Dienste hinzufügen oder verwalten, die Kunden beim Buchen eines Termins auswählen.
-- Schließlich finden Sie auf der Seite **Bookings** viele Einstellungen wie Ihre Terminplanungsrichtlinie, E-Mail-Benachrichtigungen, Zeitzoneneinstellungen und vieles mehr.
+- Auf der **Seite Kalender** können Sie und Ihre Mitarbeiter Kundentermine hinzufügen oder aktualisieren. Sie können Ihren Kalender nach Tag, Woche oder Monat anzeigen.
+- Auf der **Seite Kunden** können neue Kunden hinzugefügt oder aus anderen Konten wie Gmail oder einem Gerät importiert werden.
+- Auf **der Seite** Mitarbeiter können Sie Ihre Mitarbeiter hinzufügen und verwalten. Es ist wichtig, ihre E-Mail-Adressen hinzuzufügen, damit sie sofortige Benachrichtigungen über neue Termine erhalten können.
+- Auf **der** Seite Dienste können Sie die Dienste hinzufügen oder verwalten, die Kunden bei der Buchung eines Termins auswählen.
+- Schließlich finden Sie auf der **Seite Bookings** viele Einstellungen wie Ihre Terminplanungsrichtlinie, E-Mail-Benachrichtigungen, Zeitzoneneinstellungen und vieles mehr.
 
-Nachdem Sie Ihren Kalender für Bookings gespeichert und veröffentlicht haben, kann er auf der Website Ihres Unternehmens oder auf der Facebook-Seite eingebettet werden.
+Nachdem Sie Ihren Bookings-Kalender gespeichert und veröffentlicht haben, kann er auf der Website Ihres Unternehmens oder auf der Facebook-Seite ihres Unternehmens eingebettet werden.

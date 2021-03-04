@@ -1,7 +1,7 @@
 ---
-title: FileProfile()-Funktion bei der erweiterten Suche nach Microsoft 365 Defender
-description: Erfahren Sie, wie Sie FileProfile() verwenden, um Informationen zu Dateien in den Abfrageergebnissen für die erweiterte Suche zu erweitern.
-keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, FileProfile, Dateiprofil, Funktion, Anreicherung
+title: FileProfile()-Funktion bei der erweiterten Suche für Microsoft 365 Defender
+description: Erfahren Sie, wie Sie FileProfile() zum Anreichern von Informationen zu Dateien in Ihren erweiterten Suchergebnissen verwenden.
+keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungensuche, Microsoft Threat Protection, microsoft 365, mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, FileProfile, Dateiprofil, Funktion, Bereicherung
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 68196f126ac470088d7ba5e2923accc492d8764c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f2e92967b8951cd0f5a3c394a537404db1d53819
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929550"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50424023"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -35,24 +35,24 @@ ms.locfileid: "49929550"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Die `FileProfile()` Funktion ist eine Anreicherungsfunktion bei der erweiterten [Suche,](advanced-hunting-overview.md) die den von der Abfrage gefundenen Dateien die folgenden Daten hinzufügt.
+Die `FileProfile()` Funktion ist eine Anreicherungsfunktion bei der erweiterten [Suche,](advanced-hunting-overview.md) die dateien, die von der Abfrage gefunden werden, die folgenden Daten hinzufügt.
 
 | Spalte | Datentyp | Beschreibung |
 |------------|-------------|-------------|
 | SHA1 | string | SHA-1 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | SHA256 | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
-| MD5 | string | #A0 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
-| FileSize | int | Größe der Datei in Byte |
+| MD5 | string | MD5-Hash der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
+| FileSize | int | Größe der Datei in Bytes |
 | GlobalPrevalence | int | Anzahl der Instanzen der Entität, die von Microsoft global beobachtet werden |
-| GlobalFirstSeen | Datum/Uhrzeit | Datum und Uhrzeit der ersten globalen Beobachtung der Entität durch Microsoft |
-| GlobalLastSeen | Datum/Uhrzeit | Datum und Uhrzeit der letzten globalen Beobachtung der Entität durch Microsoft |
+| GlobalFirstSeen | Datum/Uhrzeit | Datum und Uhrzeit, zu dem die Entität erstmals von Microsoft global beobachtet wurde |
+| GlobalLastSeen | Datum/Uhrzeit | Datum und Uhrzeit, zu dem die Entität zuletzt von Microsoft global beobachtet wurde |
 | Signer | string | Informationen zum Signier der Datei |
 | Aussteller | string | Informationen zur ausstellenden Zertifizierungsstelle |
 | SignerHash | string | Eindeutiger Hashwert, der den Signier identifiziert |
-| IsCertificateValid | Boolescher Wert | Gibt an, ob das zum Signieren der Datei verwendete Zertifikat gültig ist. |
-| IsRootSignerMicrosoft | Boolescher Wert | Gibt an, ob der Signier des Stammzertifikats Microsoft ist. |
-| IsExecutable | Boolescher Wert | Gibt an, ob es sich bei der Datei um eine portable ausführbare Datei (Portable Executable, PE) handelt. |
-| ThreatName | string | Erkennungsname für schadsoftware- oder andere gefundene Bedrohungen |
+| IsCertificateValid | boolean | Gibt an, ob das zum Signieren der Datei verwendete Zertifikat gültig ist |
+| IsRootSignerMicrosoft | boolean | Gibt an, ob der Signier des Stammzertifikats Microsoft ist |
+| IsExecutable | boolean | Gibt an, ob es sich bei der Datei um eine portable ausführbare Datei (Portable Executable, PE) handelt |
+| ThreatName | string | Erkennungsname für gefundene Schadsoftware oder andere Bedrohungen |
 | Publisher | string | Name der Organisation, die die Datei veröffentlicht hat |
 | SoftwareName | string | Name des Softwareprodukts |
 
@@ -64,12 +64,16 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>Argumente
 
-- **x**– zu verwendende Datei-ID-Spalte: , , oder ; Wird bei nicht `SHA1` `SHA256` `InitiatingProcessSHA1` `InitiatingProcessSHA256` `SHA1` angegebener Funktion verwendet
-- **y**– Grenzwert für die Anzahl der datensätze, die anreichert werden soll, 1-1000; funktion verwendet 100, wenn nicht angegeben
+- **x**–Datei-ID-Spalte, die verwendet werden soll: , , , oder ; -Funktion wird `SHA1` `SHA256` `InitiatingProcessSHA1` `InitiatingProcessSHA256` `SHA1` verwendet, wenn nicht angegeben
+- **y**– Grenzwert für die Anzahl der datensätze, die bereichert werden müssen, 1-1000; -Funktion verwendet 100, wenn nicht angegeben
+
+
+>[!TIP]
+> Anreicherungsfunktionen zeigen ergänzende Informationen nur an, wenn sie verfügbar sind. Die Verfügbarkeit von Informationen ist unterschiedlich und hängt von vielen Faktoren ab. Achten Sie darauf, dies bei der Verwendung von FileProfile() in Ihren Abfragen oder beim Erstellen benutzerdefinierter Erkennungen zu berücksichtigen. Für optimale Ergebnisse empfehlen wir die Verwendung der FileProfile()-Funktion mit SHA1.
 
 ## <a name="examples"></a>Beispiele
 
-### <a name="project-only-the-sha1-column-and-enrich-it"></a>Nur die Spalte "SHA1" projekten und erweitern
+### <a name="project-only-the-sha1-column-and-enrich-it"></a>Nur die SPALTE "SHA1" projekt- und bereichern
 
 ```kusto
 DeviceFileEvents
@@ -79,7 +83,7 @@ DeviceFileEvents
 | invoke FileProfile()
 ```
 
-### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Anreichern der ersten 500 Datensätze und Listendateien mit niedriger Verbreitung
+### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>Anreichern der ersten 500 Datensätze und Auflisten von Dateien mit niedriger Verbreitung
 
 ```kusto
 DeviceFileEvents

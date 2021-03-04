@@ -9,28 +9,26 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie die automatische Weiterleitung von E-Mails beenden.
-ms.openlocfilehash: ebbe37ab5c4a60c6ac4b6ebf8877247199460fa1
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ca4383a3f9d64a123955ebe005d0fad5819d3a5d
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925886"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421799"
 ---
-# <a name="stop-email-auto-forward"></a>Beenden der automatischen E-Mail-Weiterleitung
+# <a name="stop-email-auto-forward"></a>Automatische Weiterleitung von E-Mails beenden
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2W6kS?autoplay=false]
 
@@ -38,14 +36,14 @@ Wenn ein Hacker Zugriff auf das Postfach eines Benutzers erhält, kann er die E-
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Wählen Sie im Microsoft 365 Admin Center **Exchange,** Nachrichtenfluss **und** auf der Registerkarte "Regeln" das Pluszeichen aus, und wählen Sie eine **neue Regel aus.** 
-1. Wählen Sie **weitere Optionen aus.** Benennen Sie die neue Regel.
-1. Öffnen Sie dann die Dropdownliste, um **diese Regel anzuwenden, wenn**, wählen Sie **den** Absender aus, und ist dann **extern intern**.
-1. Wählen **Sie innerhalb der Organisation** und dann **OK** aus.
-1. Choose **add condition**, open the drop-down, select The message **properties**, then include the **message type**.
-1. Öffnen Sie **die Dropdownliste "Nachrichtentyp** auswählen", wählen **Sie "Automatische Weiterleitung"** und dann **"OK" aus.**
-1. Öffnen Sie **die Dropdownliste** "Do the following", wählen **Sie "Nachricht** blockieren" aus, weisen Sie dann die Nachricht **zurück, und fügen Sie eine Erklärung ein.**
-1. Geben Sie den Meldungstext für Ihre Erklärung ein, und wählen Sie dann **OK aus.**
-1. Scrollen Sie nach unten, und wählen Sie **"Speichern" aus.**
+1. Wählen Sie im Microsoft 365 Admin Center Die  Option **Exchange,** Nachrichtenfluss und auf der Registerkarte Regeln das Pluszeichen aus, und wählen Sie **neue Regel erstellen aus.**
+1. Wählen **Sie Weitere Optionen aus.** Nennen Sie Ihre neue Regel.
+1. Öffnen Sie dann die Dropdownliste, um **diese Regel anzuwenden, wenn**, wählen Sie den **Absender** aus, und ist dann **extern intern**.
+1. Wählen **Sie Innerhalb der Organisation** aus, und klicken Sie dann auf **OK**.
+1. Wählen **Sie Bedingung hinzufügen** aus, öffnen Sie die Dropdownliste, wählen Sie **Nachrichteneigenschaften** aus, und schließen Sie **dann den Nachrichtentyp ein.**
+1. Öffnen Sie **die Dropdownliste Nachrichtentyp** auswählen, wählen **Sie Automatisch weiterleiten** und dann OK **aus.**
+1. Öffnen Sie **die Dropdownliste** Do the following, select **Block the message,** then **reject the message and include an explanation**.
+1. Geben Sie den Nachrichtentext für Ihre Erläuterung ein, und wählen Sie dann **OK aus.**
+1. Scrollen Sie nach unten, und wählen Sie **Speichern aus.**
 
     Ihre Regel wurde erstellt, und Hacker können Nachrichten nicht mehr automatisch weiterleiten.

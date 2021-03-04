@@ -1,7 +1,7 @@
 ---
-title: Insider Risikomanagement in Microsoft 365
-description: Informationen zum Konfigurieren des Insider Risikomanagements in Microsoft 365.
-keywords: Microsoft 365, Insider Risiko, Compliance
+title: Insider-Risikomanagement in Microsoft 365
+description: Erfahren Sie, wie Sie das Insider-Risikomanagement in Microsoft 365 konfigurieren.
+keywords: Microsoft 365, Insiderrisiko, Compliance
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -15,33 +15,34 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 3919523c703cb64ac443b3f0f73484efe9cea670
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+- m365solution-scenario
+ms.openlocfilehash: 644fe1894cddcfea5bd45fcbd68e168ea8a1dca8
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613926"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423576"
 ---
-# <a name="insider-risk-management-in-microsoft-365"></a>Insider Risikomanagement in Microsoft 365
+# <a name="insider-risk-management-in-microsoft-365"></a>Insider-Risikomanagement in Microsoft 365
 
-In zunehmendem Maße haben Mitarbeiter mehr Zugriff auf das Erstellen, verwalten und Freigeben von Daten für ein breites Spektrum an Plattformen und Diensten. In den meisten Fällen verfügen Organisationen über beschränkte Ressourcen und Tools, um organisationsweite Risiken zu identifizieren und zu verringern und gleichzeitig Compliance-Anforderungen und Datenschutzstandards für Mitarbeiter zu erfüllen. Zu diesen Risiken können Datendiebstahl durch das Ablegen von Mitarbeitern und Datenverluste von Informationen außerhalb Ihrer Organisation durch versehentliche über-oder böswillige Übernutzung oder böswillige Absicht gehören.
+Mitarbeiter haben zunehmend mehr Zugriff auf das Erstellen, Verwalten und Freigeben von Daten über ein breites Spektrum von Plattformen und Diensten hinweg. In den meisten Fällen verfügen Organisationen über begrenzte Ressourcen und Tools, um organisationsweite Risiken zu identifizieren und zu mindern und gleichzeitig Complianceanforderungen und Datenschutzstandards für Mitarbeiter zu erfüllen. Diese Risiken können Datendiebstahl durch ausscheidende Mitarbeiter und Datenlecks von Informationen außerhalb Ihrer Organisation durch versehentliche Überschatten oder böswillige Absichten umfassen.
 
-Das Insider Risk Management in Microsoft 365 verwendet die gesamte Bandbreite an Dienst-und Drittanbieter Indikatoren, damit Sie riskante Benutzeraktivitäten schnell erkennen, selektieren und handeln können. Mithilfe von Protokollen aus Microsoft 365 und Microsoft Graph können Sie mit dem Insider Risikomanagement bestimmte Richtlinien definieren, um Risikoindikatoren zu identifizieren und Maßnahmen zur Minderung dieser Risiken zu ergreifen.
+Das Insider-Risikomanagement in Microsoft 365 verwendet die gesamte Bandbreite des Diensts und Drittanbieterindikatoren, um riskante Benutzeraktivitäten schnell zu identifizieren, zu verdingen und zu reagieren. Mithilfe von Protokollen aus Microsoft 365 und Microsoft Graph können Sie mithilfe des Insiderrisikomanagements bestimmte Richtlinien definieren, um Risikoindikatoren zu identifizieren und Maßnahmen zur Minderung dieser Risiken zu ergreifen.
 
-## <a name="configure-insider-risk-management-for-microsoft-365"></a>Konfigurieren des Insider Risikomanagements für Microsoft 365
+## <a name="configure-insider-risk-management-for-microsoft-365"></a>Konfigurieren des Insiderrisikomanagements für Microsoft 365
 
-Führen Sie die folgenden Schritte aus, um das Insider Risikomanagement für Ihre Organisation zu konfigurieren:
+Verwenden Sie die folgenden Schritte, um das Insider-Risikomanagement für Ihre Organisation zu konfigurieren:
 
-![Insider Risk Solution-Insider Risikomanagement-Schritte](../media/ir-solution-ir-steps.png)
+![Insider Risk Solution Insider Risk Management Steps](../media/ir-solution-ir-steps.png)
 
-1. Informationen zum [Insider Risikomanagement](insider-risk-management.md) in Microsoft 365
-2. Planen des [Insider Risikomanagements und Überprüfen der Lizenzierung](insider-risk-management-plan.md)
-3. Konfigurieren von Einstellungen für das [Insider Risikomanagement](insider-risk-management-settings.md)
-4. Konfigurieren von [Berechtigungen](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) und [Richtlinien Voraussetzungen &-Konnektoren](insider-risk-management-configure.md#step-3-configure-prerequisites-for-templates)
-5. Erstellen und Konfigurieren von [Richtlinien für Insider-Risikomanagement](insider-risk-management-configure.md#step-5-create-an-insider-risk-management-policy)
+1. Erfahren Sie mehr [über insider risk management](insider-risk-management.md) in Microsoft 365
+2. Planen des [Insiderrisikomanagements und Überprüfen der Lizenzierung](insider-risk-management-plan.md)
+3. Konfigurieren [von Insider-Risikomanagementeinstellungen](insider-risk-management-settings.md)
+4. Konfigurieren [von Berechtigungen](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) und [Richtlinienvoraussetzungen & Connectors](insider-risk-management-configure.md#step-3-configure-prerequisites-for-templates)
+5. Erstellen und Konfigurieren [von Richtlinien für das Insiderrisikomanagement](insider-risk-management-configure.md#step-5-create-an-insider-risk-management-policy)
 
-## <a name="more-information-about-insider-risk-management"></a>Weitere Informationen zum Insider Risk Management
+## <a name="more-information-about-insider-risk-management"></a>Weitere Informationen zum Insider-Risikomanagement
 
-- [Verwalten von Richtlinien für Insider Risiken](insider-risk-management-policies.md)
+- [Verwalten von Insiderrisikorichtlinien](insider-risk-management-policies.md)
 - [Untersuchen von Insider-Risikowarnungen](insider-risk-management-alerts.md)
-- [Handeln bei Insider Risikofällen](insider-risk-management-cases.md)
+- [Handeln bei Insiderrisikofällen](insider-risk-management-cases.md)
