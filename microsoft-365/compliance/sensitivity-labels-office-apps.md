@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen für IT-Administratoren zum Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobile und das Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7d3c436030c0db3faa7834ed0153396048c0ec6
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 2e0fc96c1bb7b077df50f4f1c3c52ffa0dd49bef
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423686"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461860"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -64,7 +64,7 @@ Bei den aufgeführten Nummern handelt es sich um die mindestens erforderliche Of
 |[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | Zu überprüfen |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – Opt-In](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | Zu überprüfen   | Zu überprüfen         | Zu überprüfen                                                        |
-|[Erste Schritte mit der Datenklassifizierung](data-classification-overview.md) und dem Senden von Daten für Administratoren                      | 2011+ | 16.43+ | Roll out: 2.46+ | Roll out: 16.0.13628+ | Ja <sup>\*</sup>                                                        |
+|[Überwachen von Benutzeraktivitäten im Zusammenhang mit Bezeichnungen](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | Roll out: 2.46+ | Roll out: 16.0.13628+ | Ja <sup>\*</sup>                                                        |
 |[Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | Roll out: 2101+             | Roll out: 16.45+         | Roll out in preview: [Beta Channel](https://office.com/insider) | Roll out: 16.0.13628+ | Zu überprüfen                                            
 |[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Roll out: 16.44+ | Zu überprüfen | Zu überprüfen | [Ja – Opt-In](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Unterstützung der gemeinsamen Dokumenterstellung und automatischen Dokumenterstellung](sensitivity-labels-coauthoring.md) für gekennzeichnete und verschlüsselte Dokumente | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider) | Vorschau: [Betakanal](https://office.com/insider) | Zu überprüfen | Zu überprüfen | [Ja – Opt-In](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -89,7 +89,7 @@ Bei den aufgeführten Nummern handelt es sich um die mindestens erforderliche Of
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | Roll out: 2101+                        | 16.43+ <sup>\*</sup>                    | Zu überprüfen            | Zu überprüfen                | Ja                |
-|[Erste Schritte mit der Datenklassifizierung](data-classification-overview.md) und dem Senden von Daten für Administratoren                      | 2011+ | Zu überprüfen | Zu überprüfen           | Zu überprüfen               | Zu überprüfen |
+|[Überwachen von Benutzeraktivitäten im Zusammenhang mit Bezeichnungen](data-classification-activity-explorer.md) | 2011+ | Zu überprüfen | Zu überprüfen           | Zu überprüfen               | Zu überprüfen |
 |[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | Zu überprüfen           | Zu überprüfen               | Ja |
 |
 
@@ -237,7 +237,7 @@ Das automatische Gastkonto wird in diesem Szenario aufgrund der Replikationslate
 
 ### <a name="conditional-access-policies"></a>Richtlinien für bedingten Zugriff
 
-Wenn Ihre Organisation [Azure Active Directory-Richtlinien](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)für bedingten Zugriff implementiert hat, überprüfen Sie die Konfiguration dieser Richtlinien. Wenn die Richtlinien Azure Information Protection enthalten und die Richtlinie auf externe Benutzer erweitert wird, müssen diese externen Benutzer über ein Gastkonto in Ihrem Mandanten verfügen, auch wenn sie über ein Azure AD-Konto in ihrem eigenen Mandanten verfügen.
+Wenn Ihre Organisation [Azure Active Directory-Richtlinien](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)für bedingten Zugriff implementiert hat, überprüfen Sie die Konfiguration dieser Richtlinien. Wenn die Richtlinien **Microsoft Azure Information Protection** enthalten und die Richtlinie auf externe Benutzer erweitert wird, müssen diese externen Benutzer über ein Gastkonto in Ihrem Mandanten verfügen, auch wenn sie über ein Azure AD-Konto in ihrem eigenen Mandanten verfügen.
 
 Ohne dieses Gastkonto können sie das verschlüsselte Dokument nicht öffnen und eine Fehlermeldung anzeigen. Der Nachrichtentext informiert sie möglicherweise darüber, dass ihr Konto als externer Benutzer im Mandanten hinzugefügt werden muss, mit der falschen Anweisung für dieses Szenario, sich abmelden und sich erneut mit einem anderen **Azure Active Directory-Benutzerkonto** anmelden.
 

@@ -17,93 +17,96 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
-description: In diesem Artikel erfahren Sie, wie Sie Microsoft 365-Überwachungsprotokolleinträge exportieren, konfigurieren und anzeigen können.
-ms.openlocfilehash: 688ba06fc9c5c2b26eef93fb1a68d311db9da5d8
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+description: In diesem Artikel erfahren Sie, wie Sie Microsoft 365-Überwachungsprotokolleinträge exportieren, konfigurieren und anzeigen.
+ms.openlocfilehash: a7f731bb30ffdddfe7898ee4051060b8e22c093e
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358493"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454666"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen
 
-Nachdem Sie das Überwachungsprotokoll durchsucht und die Suchergebnisse in eine CSV-Datei heruntergeladen haben, enthält die Datei eine Spalte mit dem Namen **Auditdata**, die zusätzliche Informationen zu den einzelnen Ereignissen enthält. Die Daten in dieser Spalte werden als JSON-Objekt formatiert, das mehrere Eigenschaften enthält, die als *Eigenschaft: Wert-* Paare durch Kommas getrennt konfiguriert sind. Sie können das JSON-Transformations Feature im Power Query-Editor in Excel verwenden, um jede Eigenschaft im JSON-Objekt in der **Auditdata** -Spalte in mehrere Spalten aufzuteilen, sodass jede Eigenschaft eine eigene Spalte aufweist. Auf diese Weise können Sie eine oder mehrere dieser Eigenschaften sortieren und Filtern, die Ihnen helfen, die gewünschten Überwachungsdaten schnell zu finden.
+Nachdem Sie das Überwachungsprotokoll durchsucht und die Suchergebnisse in eine CSV-Datei heruntergeladen haben, enthält die Datei eine Spalte namens **AuditData**, die zusätzliche Informationen zu jedem Ereignis enthält. Die Daten in dieser Spalte sind als JSON-Objekt formatiert, das mehrere Eigenschaften enthält, die als *Property:Value-Paare* durch Kommas getrennt konfiguriert sind. Sie können das JSON-Transformationsfeature im Power Query Editor in Excel verwenden, um jede Eigenschaft im JSON-Objekt in der **Spalte AuditData** in mehrere Spalten zu teilen, sodass jede Eigenschaft eine eigene Spalte hat. Auf diese Weise können Sie eine oder mehrere dieser Eigenschaften sortieren und filtern, wodurch Sie die gesuchten Überwachungsdaten schnell finden können.
 
-## <a name="step-1-export-audit-log-search-results"></a>Schritt 1: Exportieren von Überwachungsprotokoll-Suchergebnissen
+## <a name="step-1-export-audit-log-search-results"></a>Schritt 1: Exportieren von Überwachungsprotokollsuchergebnissen
 
-Der erste Schritt besteht darin, das Überwachungsprotokoll zu durchsuchen und die Ergebnisse dann in einer CSV-Datei (Comma-Separated Value) auf Ihren lokalen Computer zu exportieren.
+Der erste Schritt ist das Durchsuchen des Überwachungsprotokolls und anschließendes Exportieren der Ergebnisse in einer CSV-Datei (Comma-Separated Value) auf den lokalen Computer.
   
-1. Führen Sie eine [Überwachungsprotokoll Suche](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log) aus, und überprüfen Sie bei Bedarf die Suchkriterien, bis Sie die gewünschten Ergebnisse haben.
+1. Führen Sie [eine Überwachungsprotokollsuche aus,](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log) und überarbeiten Sie die Suchkriterien bei Bedarf, bis Sie die gewünschten Ergebnisse haben.
 
-2. Klicken Sie auf **Ergebnisse exportieren** , und wählen Sie **alle Ergebnisse herunterladen**aus. 
+2. Klicken **Sie auf Ergebnisse exportieren,** und wählen Sie Alle Ergebnisse herunterladen **aus.** 
 
-   ![Klicken Sie auf alle Ergebnisse herunterladen.](../media/ExportAuditSearchResults.png)
+   ![Klicken Sie auf Alle Ergebnisse herunterladen](../media/ExportAuditSearchResults.png)
 
-   Diese Option zum Exportieren aller Überwachungsdatensätze aus der Überwachungsprotokoll Suche, die Sie in Schritt 1 ausgeführt haben, und zum Herunterladen der Rohdaten aus dem Überwachungsprotokoll in eine CSV-Datei. 
+   Mit dieser Option können Sie alle Überwachungsdatensätze aus der Überwachungsprotokollsuche exportieren, die Sie in Schritt 1 erstellt haben, und die Rohdaten aus dem Überwachungsprotokoll in eine CSV-Datei herunterladen. 
 
-   Unten im Fenster wird eine Meldung angezeigt, in der Sie aufgefordert werden, die CSV-Datei zu öffnen oder zu speichern. 
+   Am unteren Rand des Fensters wird eine Meldung angezeigt, in der Sie aufgefordert werden, die CSV-Datei zu öffnen oder zu speichern. 
 
-3. Klicken Sie auf **speichern >** speichern unter, und speichern Sie die CSV-Datei auf Ihrem lokalen Computer. Es dauert eine Weile, bis viele Suchergebnisse heruntergeladen wurden. Dies ist normalerweise der Fall, wenn Sie nach allen Aktivitäten oder einem breiten Datumsbereich suchen. Eine Meldung unten im Fenster wird angezeigt, wenn die CSV-Datei heruntergeladen wird.
+3. Klicken **Sie > Speichern unter,** und speichern Sie die CSV-Datei auf Ihrem lokalen Computer. Es dauert eine Weile, bis viele Suchergebnisse heruntergeladen werden. Dies ist in der Regel bei der Suche nach allen Aktivitäten oder einem breiten Datumsbereich der Fall. Eine Meldung am unteren Rand des Fensters wird angezeigt, wenn die CSV-Datei heruntergeladen wurde.
 
-   ![Meldung, die angezeigt wird, wenn die CSV-Datei heruntergeladen wird](../media/ExportAuditSearchResultsFinish.png)
+   ![Meldung, die angezeigt wird, wenn der Download der CSV-Datei abgeschlossen ist](../media/ExportAuditSearchResultsFinish.png)
 
 > [!NOTE]
-  > Aus seiner einzigen Suche in einer Protokolldatei können Sie maximal 50.000 Einträge in eine CSV-Datei herunterladen. Wenn 50.000 Einträge in die CSV-Datei heruntergeladen werden, können Sie wahrscheinlich davon ausgehen, dass mehr als 50.000 Ereignisse die Suchkriterien erfüllen. Um mehr als diesen Grenzwert zu exportieren, verwenden Sie einen Datumsbereich, um die Anzahl der Überwachungsprotokolleinträge zu verringern. Möglicherweise müssen Sie mehrere Suchläufe mit kleineren Datumsbereichen durchführen, um mehr als 50.000 Einträge zu exportieren.
+  > Aus seiner einzigen Suche in einer Protokolldatei können Sie maximal 50.000 Einträge in eine CSV-Datei herunterladen. Wenn 50.000 Einträge in die CSV-Datei heruntergeladen werden, können Sie wahrscheinlich davon ausgehen, dass mehr als 50.000 Ereignisse die Suchkriterien erfüllen. Um mehr als diesen Grenzwert zu exportieren, versuchen Sie, einen Datumsbereich zu verwenden, um die Anzahl der Überwachungsprotokolldatensätze zu reduzieren. Möglicherweise müssen Sie mehrere Suchläufe mit kleineren Datumsbereichen durchführen, um mehr als 50.000 Einträge zu exportieren.
 
-## <a name="step-2-format-the-exported-audit-log-using-the-power-query-editor"></a>Schritt 2: Formatieren des exportierten Überwachungsprotokolls mit dem Power Query-Editor
+## <a name="step-2-format-the-exported-audit-log-using-the-power-query-editor"></a>Schritt 2: Formatieren des exportierten Überwachungsprotokolls mit dem Power Query Editor
 
-Im nächsten Schritt wird das JSON-Transformations Feature im Power Query-Editor in Excel verwendet, um die einzelnen Eigenschaften im JSON-Objekt in der **Auditdata** -Spalte in eine eigene Spalte aufzuteilen. Anschließend Filtern Sie Spalten, um Datensätze basierend auf den Werten bestimmter Eigenschaften anzuzeigen. Auf diese Weise können Sie schnell die spezifischen Überwachungsdaten Auffinden, nach denen Sie suchen.
+Im nächsten Schritt wird das JSON-Transformationsfeature im Power Query Editor in Excel verwendet, um jede Eigenschaft im JSON-Objekt in der **Spalte AuditData** in eine eigene Spalte zu teilen. Anschließend filtern Sie Spalten, um Datensätze basierend auf den Werten bestimmter Eigenschaften anzuzeigen. Dies kann Ihnen dabei helfen, die bestimmten Überwachungsdaten, die Sie suchen, schnell zu finden.
 
 1. Öffnen Sie eine leere Arbeitsmappe in Excel für Office 365, Excel 2019 oder Excel 2016.
 
-2. Klicken Sie auf der Registerkarte **Daten** in der Gruppe **& Transformationsdaten abrufen** auf **von Text/CSV**.
+2. Klicken Sie **auf** der Registerkarte Daten in der **Gruppe & Daten transformieren** auf Von **Text/CSV**.
 
-    ![Klicken Sie auf der Registerkarte Daten auf aus Text/CSV.](../media/JSONTransformOpenCSVFile.png)
+    ![Klicken Sie auf der Registerkarte Daten auf Von Text/CSV](../media/JSONTransformOpenCSVFile.png)
 
 3. Öffnen Sie die CSV-Datei, die Sie in Schritt 1 heruntergeladen haben.
 
-4. Klicken Sie im angezeigten Fenster auf **Daten transformieren**.
+4. Klicken Sie im angezeigten Fenster auf **Daten transformieren.**
 
    ![Klicken Sie auf Daten transformieren](../media/JSONOpenPowerQuery.png)
 
-   Die CSV-Datei wird im **Abfrage-Editor**geöffnet. Es gibt vier Spalten: **CreationDate**, **userids**, **Operations**und **Auditdata**. Die **Auditdata** -Spalte ist ein JSON-Objekt, das mehrere Eigenschaften enthält. Im nächsten Schritt erstellen Sie eine Spalte für jede Eigenschaft im JSON-Objekt.
+   Die CSV-Datei wird im **Abfrage-Editor geöffnet.** Es gibt vier Spalten: **CreationDate**, **UserIds**, **Operations** und **AuditData**. Die **Spalte AuditData** ist ein JSON-Objekt, das mehrere Eigenschaften enthält. Im nächsten Schritt erstellen Sie eine Spalte für jede Eigenschaft im JSON-Objekt.
 
-5. Klicken Sie mit der rechten Maustaste auf den Titel in der Spalte **Auditdata** , klicken Sie auf **transformieren**, und klicken Sie dann auf **JSON**. 
+5. Klicken Sie in der Spalte **AuditData** mit der rechten Maustaste auf den Titel, klicken Sie auf **Transformieren,** und klicken Sie dann **auf JSON**. 
 
-   ![Klicken Sie mit der rechten Maustaste auf die Spalte Auditdata, klicken Sie auf Transformation, und wählen Sie dann JSON aus.](../media/JSONTransform.png)
+   ![Klicken Sie mit der rechten Maustaste auf die Spalte AuditData, klicken Sie auf Transformieren, und wählen Sie dann JSON aus.](../media/JSONTransform.png)
 
-6. Klicken Sie in der oberen rechten Ecke der Spalte **Auditdata** auf das Symbol erweitern.
+6. Klicken Sie in der oberen rechten Ecke der **Spalte AuditData** auf das Erweiterungssymbol.
 
-   ![Klicken Sie in der Spalte Auditdata auf das Erweiterungssymbol](../media/JSONTransformExpandIcon.png)
+   ![Klicken Sie in der Spalte AuditData auf das Erweiterungssymbol.](../media/JSONTransformExpandIcon.png)
 
-   Eine unvollständige Liste der Eigenschaften in den JSON-Objekten in der **Auditdata** -Spalte wird angezeigt.
+   Eine Teilliste der Eigenschaften in den JSON-Objekten in der **Spalte AuditData** wird angezeigt.
 
-7. Klicken Sie auf **mehr laden** , um alle Eigenschaften in den JSON-Objekten in der **Auditdata** -Spalte anzuzeigen.
+7. Klicken **Sie auf Weitere Laden,** um alle Eigenschaften in den JSON-Objekten in der Spalte **AuditData** anzeigen.
 
-   ![Klicken Sie auf mehr laden, um alle Eigenschaften im JSON-Objekt anzuzeigen.](../media/JSONTransformLoadJSONProperties.png)
+   ![Klicken Sie auf Weitere Objekte laden, um alle Eigenschaften im JSON-Objekt anzeigen zu können.](../media/JSONTransformLoadJSONProperties.png)
 
-   Sie können das Kontrollkästchen neben einer Eigenschaft, die Sie nicht einschließen möchten, aufheben. Das Ausschließen von Spalten, die für Ihre Untersuchung nicht hilfreich sind, ist eine gute Möglichkeit, die im Überwachungsprotokoll angezeigte Datenmenge zu reduzieren. 
+   Sie können das Kontrollkästchen neben einer beliebigen Eigenschaft deaktivieren, die Sie nicht enthalten möchten. Das Entfernen von Spalten, die für Ihre Untersuchung nicht hilfreich sind, ist eine gute Möglichkeit, die Im Überwachungsprotokoll angezeigte Datenmenge zu reduzieren. 
 
    > [!NOTE]
-   > Die im vorherigen Screenshot angezeigten JSON-Eigenschaften (nachdem Sie auf **mehr laden**klicken) basieren auf den Eigenschaften, die in der **Auditdata** -Spalte aus den ersten 1.000-Zeilen in der CSV-Datei gefunden wurden. Wenn in Datensätzen nach den ersten 1.000-Zeilen unterschiedliche JSON-Eigenschaften vorhanden sind, werden diese Eigenschaften (und eine entsprechende Spalte) nicht berücksichtigt, wenn die **Auditdata** -Spalte in mehrere Spalten aufgeteilt wird. Um dies zu verhindern, sollten Sie die Überwachungsprotokoll Suche erneut durchführen und die Suchkriterien eingrenzen, sodass weniger Datensätze zurückgegeben werden. Eine weitere Problemumgehung besteht darin, Elemente in der Spalte **Vorgänge** zu filtern, um die Anzahl der Zeilen (vor dem Ausführen von Schritt 5 oben) zu reduzieren, bevor das JSON-Objekt in der **Auditdata** -Spalte transformiert wird.
+   > Die im vorherigen Screenshot angezeigten JSON-Eigenschaften (nachdem Sie auf Weitere Laden **geklickt** haben) basieren auf den Eigenschaften in der Spalte **AuditData** aus den ersten 1.000 Zeilen in der CSV-Datei. Wenn nach den ersten 1.000 Zeilen unterschiedliche JSON-Eigenschaften in Datensätzen vorhanden sind, werden diese Eigenschaften (und eine entsprechende Spalte) nicht einbezogen, wenn die **Spalte AuditData** in mehrere Spalten aufgeteilt wird. Um dies zu verhindern, sollten Sie die Überwachungsprotokollsuche erneut ausführen und die Suchkriterien einengen, sodass weniger Datensätze zurückgegeben werden. Eine weitere Problemumgehung  besteht im Filtern von Elementen in der Spalte Vorgänge, um die Anzahl der Zeilen zu reduzieren (bevor Sie Schritt 5 oben ausführen), bevor Sie das JSON-Objekt in der **Spalte AuditData** transformieren.
 
-8. Führen Sie eine der folgenden Aktionen aus, um den Titel der Spalten zu formatieren, die für jede ausgewählte JSON-Eigenschaft hinzugefügt werden.
+   > [!TIP]
+   > Klicken Sie zum Anzeigen eines Attributs in einer Liste  wie AuditData.AffectedItems in der oberen rechten Ecke der Spalte, aus der Sie ein Attribut ziehen möchten, auf das Symbol Erweitern, und wählen Sie Dann Erweitern zu **Neue Zeile aus.**  Von dort wird es ein Datensatz  sein, und Sie können in der oberen rechten Ecke der Spalte auf das Symbol Erweitern klicken, die Attribute anzeigen und das Symbol auswählen, das Sie anzeigen oder extrahieren möchten.
 
-    - Deaktivieren Sie das Kontrollkästchen **ursprünglichen Spaltennamen als Präfix verwenden** , um den Namen der JSON-Eigenschaft als Spaltennamen zu verwenden. beispielsweise **RecordType** oder **sourceFileName**.
+8. Gehen Sie wie folgt vor, um den Titel der Spalten zu formatieren, die für jede ausgewählte JSON-Eigenschaft hinzugefügt werden.
 
-    - Lassen Sie das Kontrollkästchen **ursprünglichen Spaltennamen als Präfix verwenden** aktiviert, um dem Spaltennamen das Auditdata-Präfix hinzuzufügen. Beispiel: **Auditdata. RecordType** oder **Auditdata. sourceFileName**.
+    - Deaktivieren Sie das **Kontrollkästchen Ursprünglicher Spaltenname als Präfix** verwenden, um den Namen der JSON-Eigenschaft als Spaltennamen zu verwenden. beispiel: **RecordType** oder **SourceFileName**.
+
+    - Lassen Sie **das Kontrollkästchen Ursprünglicher Spaltenname als Präfix** verwenden aktiviert, um den Spaltennamen das Präfix AuditData hinzuzufügen. Beispiel: **AuditData.RecordType** oder **AuditData.SourceFileName**.
 
 9. Klicken Sie auf **OK**.
 
-    Die **Auditdata** -Spalte wird in mehrere Spalten aufgeteilt. Jede neue Spalte entspricht einer Eigenschaft im JSON-Objekt Auditdata. Jede Zeile in der Spalte enthält den Wert für die Eigenschaft. Wenn die Eigenschaft keinen Wert enthält, wird der *null* -Wert angezeigt. In Excel sind Zellen mit NULL-Werten leer.
+    Die **Spalte AuditData** ist in mehrere Spalten aufgeteilt. Jede neue Spalte entspricht einer Eigenschaft im AuditData-JSON-Objekt. Jede Zeile in der Spalte enthält den Wert für die Eigenschaft. Wenn die Eigenschaft keinen Wert enthält, wird der *Nullwert* angezeigt. In Excel sind Zellen mit Nullwerten leer.
   
-10. Klicken Sie auf der Registerkarte **Start** auf **& Laden schließen** , um den Power Query-Editor zu schließen und die transformierte CSV-Datei in einer Excel-Arbeitsmappe zu öffnen.
+10. Klicken Sie **auf der Registerkarte** Start auf Schließen & **Laden,** um den Power Query Editor zu schließen und die transformierte CSV-Datei in einer Excel-Arbeitsmappe zu öffnen.
 
-## <a name="use-powershell-to-search-and-export-audit-log-records"></a>Verwenden von PowerShell zum Durchsuchen und Exportieren von Überwachungsprotokolldaten Sätzen
+## <a name="use-powershell-to-search-and-export-audit-log-records"></a>Verwenden von PowerShell zum Durchsuchen und Exportieren von Überwachungsprotokolleinträgen
 
-Anstatt das Überwachungsprotokoll-Such Tool im Security & Compliance Center zu verwenden, können Sie das Cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell verwenden, um die Ergebnisse einer Überwachungsprotokoll Suche in eine CSV-Datei zu exportieren. Anschließend können Sie das gleiche Verfahren wie in Schritt 2 beschrieben ausführen, um das Überwachungsprotokoll mit dem Power Query-Editor zu formatieren. Ein Vorteil der Verwendung des PowerShell-Cmdlets besteht darin, dass Sie mithilfe des *RecordType* -Parameters nach Ereignissen eines bestimmten Diensts suchen können. Im folgenden finden Sie einige Beispiele für die Verwendung von PowerShell zum Exportieren von Überwachungsdatensätzen in eine CSV-Datei, damit Sie den Power Query-Editor verwenden können, um das JSON-Objekt in der **Auditdata** -Spalte wie in Schritt 2 beschrieben zu transformieren.
+Anstatt das Überwachungsprotokollsuchtool im Security & Compliance Center zu verwenden, können Sie das [Cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell verwenden, um die Ergebnisse einer Überwachungsprotokollsuche in eine CSV-Datei zu exportieren. Anschließend können Sie das in Schritt 2 beschriebene Verfahren ausführen, um das Überwachungsprotokoll mithilfe des Power Query-Editors zu formatieren. Ein Vorteil der Verwendung des PowerShell-Cmdlets besteht in der Suche nach Ereignissen eines bestimmten Diensts mithilfe des *RecordType-Parameters.* Nachfolgend finden Sie einige Beispiele für die Verwendung von PowerShell zum Exportieren von Überwachungsdatensätzen in eine CSV-Datei, damit Sie das JSON-Objekt mithilfe des Power Query-Editors in der **Spalte AuditData** transformieren können, wie in Schritt 2 beschrieben.
 
-Führen Sie in diesem Beispiel die folgenden Befehle aus, um alle Datensätze im Zusammenhang mit SharePoint-Freigabe Vorgängen zurückzugeben.
+Führen Sie in diesem Beispiel die folgenden Befehle aus, um alle Datensätze im Zusammenhang mit SharePoint-Freigabevorgängen zurückzukehren.
 
 ```powershell
 $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointSharingOperation
@@ -113,11 +116,11 @@ $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -Re
 $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
 ```
 
-Die Suchergebnisse werden in eine CSV-Datei mit dem Namen *PowerShellAuditlog* exportiert, die vier Spalten enthält: CreationDate, userids, RecordType, Auditdata).
+Die Suchergebnisse werden in eine CSV-Datei mit dem Namen *PowerShellAuditlog* exportiert, die vier Spalten enthält: CreationDate, UserIds, RecordType, AuditData).
 
-Sie können auch den Namen oder den enum-Wert für den Record-Typ als Wert für den *RecordType* -Parameter verwenden. Eine Liste der Namen von Datensatztypen und der zugehörigen Enumerationswerte finden Sie in der *AuditLogRecordType* -Tabelle in [Office 365 API-Schema der Verwaltungsaktivität](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32).
+Sie können auch den Namen oder Enumerationswert für den Datensatztyp als Wert für den *RecordType-Parameter* verwenden. Eine Liste der Datensatztypnamen und der zugehörigen Enumerationswerte finden Sie in der *Tabelle AuditLogRecordType* im [Office 365 Management Activity API-Schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32).
 
-Sie können nur einen einzelnen Wert für den *RecordType* -Parameter einschließen. Um nach Überwachungsdatensätzen für andere Datensatztypen zu suchen, müssen Sie die beiden vorherigen Befehle erneut ausführen, um einen anderen Datensatztyp anzugeben und diese Ergebnisse an die ursprüngliche CSV-Datei anzufügen. Sie führen beispielsweise die folgenden beiden Befehle aus, um SharePoint-Dateiaktivitäten aus dem gleichen Datumsbereich zur PowerShellAuditlog.csv Datei hinzuzufügen.
+Sie können nur einen einzelnen Wert für den *RecordType-Parameter* angeben. Zum Suchen nach Überwachungsdatensätzen für andere Datensatztypen müssen Sie die beiden vorherigen Befehle erneut ausführen, um einen anderen Datensatztyp anzugeben und diese Ergebnisse an die ursprüngliche CSV-Datei anfügen. Führen Sie beispielsweise die folgenden beiden Befehle aus, um der Datei "PowerShellAuditlog.csv" SharePoint-Dateiaktivitäten aus demselben Datumsbereich hinzuzufügen.
 
 ```powershell
 $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
@@ -129,8 +132,8 @@ $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | 
 
 ## <a name="tips-for-exporting-and-viewing-the-audit-log"></a>Tipps zum Exportieren und Anzeigen des Überwachungsprotokolls
 
-Im folgenden finden Sie einige Tipps und Beispiele für das Exportieren und Anzeigen des Überwachungsprotokolls vor und nach dem Verwenden des JSON-Transformations Features zum Aufteilen der **Auditdata** -Spalte in mehrere Spalten.
+Hier sind einige Tipps und Beispiele für das Exportieren und Anzeigen des Überwachungsprotokolls vor und nach der Verwendung des JSON-Transformationsfeatures zum Aufteilen der **Spalte AuditData** in mehrere Spalten.
 
-- Filtern Sie die **RecordType** -Spalte, um nur die Datensätze eines bestimmten Diensts oder Funktionsbereichs anzuzeigen. Um beispielsweise Ereignisse im Zusammenhang mit SharePoint-Freigabe anzuzeigen, wählen Sie **14** (enum-Wert für Datensätze, die von SharePoint-freigabeaktivitäten ausgelöst werden) aus. Eine Liste der Dienste, die den Enumerationswerten entsprechen, die in der Spalte **RecordType** angezeigt werden, finden Sie unter [detaillierte Eigenschaften im Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md).
+- Filtern Sie **die Spalte RecordType** so, dass nur die Datensätze aus einem bestimmten Dienst- oder Funktionsbereich angezeigt werden. Wenn Sie beispielsweise Ereignisse im Zusammenhang mit der SharePoint-Freigabe anzeigen möchten, wählen Sie **14** aus (der Enumerationswert für Datensätze, die durch SharePoint-Freigabeaktivitäten ausgelöst werden). Eine Liste der Dienste, die den in der Spalte **RecordType** angezeigten Enumerationswerten entsprechen, finden Sie unter [Detaillierte Eigenschaften im Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md).
 
-- Filtern Sie die Spalte **Vorgänge** , um die Datensätze für bestimmte Aktivitäten anzuzeigen. Eine Liste der meisten Vorgänge, die einer durchsuchbaren Aktivität im Überwachungsprotokoll-Such Tool im Security & Compliance Center entsprechen, finden Sie im Abschnitt "überwachte Aktivitäten" unter [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#audited-activities).
+- Filtern Sie die **Spalte Vorgänge,** um die Datensätze für bestimmte Aktivitäten anzeigen zu können. Eine Liste der meisten Vorgänge, die einer durchsuchbaren Aktivität im Überwachungsprotokollsuchtool im Security & Compliance Center entsprechen, finden Sie im Abschnitt "Überwachte Aktivitäten" unter Durchsuchen des Überwachungsprotokolls im [Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#audited-activities).

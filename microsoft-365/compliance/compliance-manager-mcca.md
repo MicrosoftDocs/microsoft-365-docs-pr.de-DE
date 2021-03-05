@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie Microsoft Compliance Configuration Analyzer verwenden, um mit Microsoft Compliance Manager schnell in Betrieb zu gehen.
-ms.openlocfilehash: 41315dd072e089bd61767181b17dffd5fba88281
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 272477251efed7ebf13bd2e644869eaf2aad1bc2
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423426"
+ms.locfileid: "50454686"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Microsoft Compliance Configuration Analyzer for Compliance Manager (Vorschau)
 
@@ -64,6 +64,7 @@ Nach der Installation von MCCA können Sie MCCA ausführen und einen Bericht gen
     ```powershell
     Get-MCCAReport
     ```
+
    Wenn Sie ein GCC High-Kunde sind, müssen Sie einen zusätzlichen Eingabeparameter angeben, um den Bericht ausführen zu können:
 
     ```powershell

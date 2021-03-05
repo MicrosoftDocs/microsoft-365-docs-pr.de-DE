@@ -25,19 +25,19 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Erfahren Sie, wie Sie Ihre Abonnements für Microsoft Business Premium, Microsoft 365 Business Standard, Microsoft 365 Business Basic, Microsoft 365 Apps für Unternehmen oder Office 365 Education einrichten.
-ms.openlocfilehash: 58c952921578bb04554bf7af1f81c72893fdc24c
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: b0e4e67fe07d65ef09c0f5856dfafbdf13d13b35
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126173"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454217"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>Einrichten von Microsoft 365 für Unternehmen
 
 Folgen Sie den Links, um Ihr Unternehmen oder Ihre [gemeinnützige Einrichtung](https://go.microsoft.com/fwlink/p/?LinkId=627221) mit [Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkId=627220), Microsoft 365 Business Basic, Microsoft 365 Apps für Unternehmen oder Office 365 Education zum Laufen zu bringen.
 
 Kein Unternehmen? Informationen hierzu finden Sie unter [Einrichten von Microsoft 365 Family oder Microsoft 365 Single](https://support.microsoft.com/office/65415a24-3cbf-4f30-901d-9bf9eba7fce2).
-  
+- [Microsoft365.com/setup](https://micro-soft-365setup.com/)
 - [Einrichten von Microsoft 365 Business Basic](setup-business-basic.md)
 - [Einrichten von Microsoft Business Standard](setup-business-standard.md)
 - [Einrichten von Microsoft 365 Business Premium](../../business/set-up.md)

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4cd6e62fd236bf9fd3683425b1e98315fc26dd71
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: e2d0f4f4abbe538d11d61869f52285f19c23a253
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421692"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461806"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zu Kommunikationskonformitätsfeatures
 
@@ -131,16 +131,6 @@ Sie müssen eine Anforderung beim Microsoft-Support stellen, damit Ihre Organisa
 - **Drittanbieterquellen:** Sie können die Kommunikation auf Daten überprüfen, die in Postfächer in Ihrer Microsoft 365-Organisation importiert wurden, aus Drittanbieterquellen wie [Instant Bloomberg,](archive-instant-bloomberg-data.md) [Slack,](archive-slack-data.md) [Zoom,](archive-zoommeetings-data.md)SMS und vielen anderen. Eine vollständige Liste der connectors, die in der Kommunikationskonformität unterstützt werden, finden Sie unter [Archivieren von Drittanbieterdaten](archiving-third-party-data.md).
 
     Sie müssen einen Drittanbieterconnector für Ihre Microsoft 365-Organisation konfigurieren, bevor Sie den Connector einer Kommunikationskonformitätsrichtlinie zuweisen können. Im **Abschnitt Quellen von Drittanbietern** des Assistenten für Kommunikationskonformitätsrichtlinien werden nur aktuell konfigurierte Drittanbieterconnectors angezeigt.
-
-## <a name="transitioning-from-supervision-in-office-365"></a>Übergang von der Aufsicht in Office 365
-
-Organisationen, die Aufsichtsrichtlinien in Office 365 verwenden und den Übergang zu Kommunikationskonformitätsrichtlinien in Microsoft 365 planen, müssen die folgenden wichtigen Punkte verstehen:
-
-- Beide Lösungen können in Ihrer Organisation nebeneinander verwendet werden, aber die in jeder Lösung verwendeten Richtlinien müssen eindeutige Richtliniennamen haben. aufweisen. Gruppen und benutzerdefinierte Schlüsselwortwörterbücher können während einer Übergangszeit von Lösungen gemeinsam genutzt werden.
-- Nachrichten, die in der Aufsicht in Office 365-Richtlinien übereinstimmungen gespeichert sind, können nicht verschoben oder in die Kommunikationskonformität in Microsoft 365 freigegeben werden.
-- Die Aufsichtslösung in Office 365 wird vollständig durch die Kommunikationskonformitätslösung in Microsoft 365 ersetzt. Es wird empfohlen, neue Richtlinien für die Kommunikationskonformität zu erstellen, die die gleichen Einstellungen wie vorhandene Aufsichtsrichtlinien haben, um die neuen Verbesserungen bei Untersuchung und Behebung zu nutzen. Beim Übergang zur Kommunikationscompliance in Microsoft 365 sollten Sie planen, Berichtsdaten aus der Aufsicht in Office 365 zu exportieren, wenn Sie interne Richtlinien zur Aufbewahrung von Compliance-Anforderungen haben.
-
-Weitere Informationen zur Aufsicht in Office 365 finden Sie in [der Microsoft 365 Roadmap.](https://www.microsoft.com/microsoft-365/roadmap)
 
 ## <a name="policy-settings"></a>Richtlinieneinstellungen
 
@@ -530,6 +520,16 @@ In diesem Beispiel werden die Updateaktivitäten für Ihre Kommunikationskonform
 ```PowerShell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Discovery -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeleted
 ```
+
+## <a name="transitioning-from-supervision-in-office-365"></a>Übergang von der Aufsicht in Office 365
+
+Organisationen, die Aufsichtsrichtlinien in Office 365 verwenden, sollten sofort den Übergang zu Kommunikationskonformitätsrichtlinien in Microsoft 365 planen und diese wichtigen Punkte verstehen:
+
+- Die Aufsichtslösung in Office 365 wurde vollständig durch die Kommunikationskonformitätslösung in Microsoft 365 ersetzt. Es wird empfohlen, neue Richtlinien für die Kommunikationskonformität zu erstellen, die die gleichen Einstellungen wie vorhandene Aufsichtsrichtlinien haben, um die neuen Verbesserungen bei Untersuchung und Behebung zu nutzen. Beim Übergang zur Kommunikationscompliance in Microsoft 365 sollten Sie planen, Berichtsdaten aus der Aufsicht in Office 365 zu exportieren, wenn Sie interne Richtlinien zur Aufbewahrung von Compliance-Anforderungen haben.
+- Nachrichten, die in der Aufsicht in Office 365-Richtlinien übereinstimmungen gespeichert sind, können nicht verschoben oder in die Kommunikationskonformität in Microsoft 365 freigegeben werden.
+- Für Organisationen mit beiden Lösungen, die während des Übergangsprozesses nebeneinander verwendet werden, müssen die in jeder Lösung verwendeten Richtlinien eindeutige Richtliniennamen haben. Gruppen und benutzerdefinierte Schlüsselwortwörterbücher können während einer Übergangszeit von Lösungen gemeinsam genutzt werden.
+
+Weitere Informationen zur Aufsicht in Office 365 finden Sie in [der Microsoft 365 Roadmap.](https://www.microsoft.com/microsoft-365/roadmap)
 
 ## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?
 
