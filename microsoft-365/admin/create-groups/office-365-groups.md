@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Microsoft 365-Gruppen.
-ms.openlocfilehash: 5d5c15c13d46738ac9de701b5a39f47274b9f1e5
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 75bc743ed8f1965d0ed8a1967e6eac1bd6e0178b
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094733"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453681"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Übersicht über Microsoft 365-Gruppen für Administratoren
 
@@ -40,11 +40,12 @@ Microsoft 365-Gruppen ist der Basismitgliedschaftsdienst, der die gesamte Teamar
 - Power BI
 - Yammer (wenn die Gruppe in Yammer erstellt wurde)
 - Ein Team (wenn die Gruppe in Teams erstellt wurde)
-- Roadmap (wenn Sie über Project für das Web verfügen)
+- Roadmap (wenn Sie Project für das Web haben)
+- Stream
 
 Bei einer Microsoft 365-Gruppe müssen Sie diesen Ressourcen nicht manuell Berechtigungen zuweisen. Durch das Hinzufügen von Personen zur Gruppe erhalten sie automatisch die erforderlichen Berechtigungen.
 
-Jeder Benutzer kann eine Gruppe erstellen, es sei denn, Sie beschränken die Gruppenerstellung auf eine [bestimmte Gruppe von Personen.](manage-creation-of-groups.md) Wenn Sie die Gruppenerstellung einschränken, können Benutzer, die keine Gruppen erstellen können, keine SharePoint-Websites, -Planer oder -Teams erstellen. Für diese Dienste müssen die Personen, die sie erstellen, in der Lage sein, eine Gruppe zu erstellen. Benutzer können weiterhin an Gruppenaktivitäten teilnehmen, z. B. an der Erstellung von Aufgaben in Planner oder an der Verwendung von Teams-Chats, sofern sie Mitglied der Gruppe sind.
+Jeder Benutzer kann eine Gruppe erstellen, es sei denn, Sie beschränken die Gruppenerstellung auf eine [bestimmte Gruppe von Personen.](manage-creation-of-groups.md) Wenn Sie die Gruppenerstellung einschränken, können Benutzer, die keine Gruppen erstellen können, keine SharePoint-Websites, Planer oder Teams erstellen. Diese Dienste erfordern, dass die Personen, die sie erstellen, eine Gruppe erstellen können. Benutzer können weiterhin an Gruppenaktivitäten teilnehmen, z. B. an der Erstellung von Aufgaben in Planner oder an der Verwendung von Teams-Chats, sofern sie Mitglied der Gruppe sind.
 
 Gruppen weisen die folgenden Rollen auf:
 
@@ -62,11 +63,11 @@ Als Administrator haben Sie die folgenden Möglichkeiten:
 - [Verwalten des Gastzugriffs auf Gruppen](manage-guest-access-in-groups.md)
 - [Wiederherstellen einer gelöschten Gruppe](restore-deleted-group.md) (innerhalb von 30 Tagen nach dem Löschvorgang)
 
-Wenn Sie eine automatisiertere Möglichkeit zum Verwalten des Lebenszyklus Ihrer Microsoft 365-Gruppen bevorzugen, können Sie Ablaufrichtlinien verwenden, um Gruppen in einem bestimmten Zeitintervall zu ablaufen. Die Besitzer der Gruppe erhalten 30, 15 und 1 Tag vor Ablauf der Gruppe eine E-Mail, mit der sie die Gruppe verlängern können, wenn sie noch benötigt wird. Siehe: [Ablaufrichtlinie für Microsoft 365-Gruppen.](office-365-groups-expiration-policy.md)
+Wenn Sie eine automatisiertere Methode zum Verwalten des Lebenszyklus Ihrer Microsoft 365-Gruppen bevorzugen, können Sie Ablaufrichtlinien verwenden, um Gruppen in einem bestimmten Zeitintervall zu ablaufen. Die Besitzer der Gruppe erhalten eine E-Mail 30, 15 und 1 Tag vor Ablauf der Gruppe, mit der sie die Gruppe verlängern können, wenn sie noch benötigt wird. Weitere Informationen finden Sie unter: [Microsoft 365 Group Expiration Policy](office-365-groups-expiration-policy.md).
 
 Sie können Gruppen entweder über das Microsoft 365 Admin Center oder [mithilfe von PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell) durchführen.
 
-Wenn Sie viele Benutzer haben, z. B. in einem großen Unternehmen oder Unternehmen, haben Sie möglicherweise viele Benutzer, die Gruppen für verschiedene Zwecke erstellen. Es wird dringend empfohlen, dass Sie den [Plan für governance in Microsoft 365-Gruppen](plan-for-groups-governance.md) überprüfen, um bewährte Methoden zu erhalten.
+Wenn Sie über viele Benutzer verfügen, z. B. in einem großen Unternehmen oder Unternehmen, haben Sie möglicherweise viele Benutzer, die Gruppen für verschiedene Zwecke erstellen. Es wird dringend empfohlen, dass Sie [plan for governance in Microsoft 365-Gruppen](plan-for-groups-governance.md) auf bewährte Methoden überprüfen.
 
 ## <a name="group-limits"></a>Grenzwerte für Gruppen
 
@@ -76,44 +77,44 @@ Die folgenden Grenzwerte gelten für Microsoft 365-Gruppen:
 |:---------|:----|
 |Besitzer pro Gruppe|100|
 |Gruppen, die ein Benutzer erstellen kann|250|
-|Gruppen, die ein Administrator erstellen kann|Bis zum standardmäßigen Mandantenlimit von 500 K|
+|Gruppen, die ein Administrator erstellen kann|Bis zu einem Standardmäßigen Mandantengrenzwert von 500 K|
 |Anzahl Mitglieder |Mehr als 1 000, obwohl nur 1 000 gleichzeitig auf die Gruppen-Chats zugreifen können. <br>Benutzer bemerken möglicherweise Verzögerungen beim Zugriff auf den Kalender und Unterhaltungen in großen Gruppen in Outlook.|
 |Anzahl von Gruppen, in denen ein Benutzer Mitglied sein kann|7,000|
-|Dateispeicher|1 Terabyte + 10 GB pro abonniertem Benutzer + jeder andere gekaufte Speicher. Sie können eine unbegrenzte Menge an zusätzlichem Speicher erwerben.|
+|Dateispeicher|1 Terabyte + 10 GB pro abonniertem Benutzer + jeder andere erworbene Speicher. Sie können eine unbegrenzte Menge zusätzlichen Speichers erwerben.|
 |Größe des Gruppenpostfachs|50 GB|
 
-Die standardmäßige maximale Anzahl von Microsoft 365-Gruppen, die eine Organisation haben kann, beträgt 500.000. Um den Standardgrenzwert zu überschreiten, müssen Sie sich an den Microsoft-Support wenden. Weitere Informationen zu Microsoft 365-Gruppenbeschränkungen finden Sie in der Hilfe zu [Microsoft 365-Gruppen – Administrator.](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+Die standardmäßige maximale Anzahl von Microsoft 365-Gruppen, über die eine Organisation verfügen kann, ist 500.000. Um den Standardgrenzwert zu überschreiten, müssen Sie sich an den Microsoft-Support wenden. Weitere Informationen zu Microsoft 365-Gruppenbeschränkungen finden Sie unter [Microsoft 365 Groups - Admin help](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
-Die Verwaltung Ihrer Microsoft 365-Gruppen ist effektiver, wenn Sie über Informationen mit Aktionen zur Gruppennutzung verfügen. Das Microsoft 365 Admin Center verfügt über ein Berichterstellungstool, mit dem Sie sehen können, wie viele aktive Gruppen Sie verwenden und wie Benutzer die Gruppen verwenden. Weitere Informationen [finden Sie unter: Microsoft 365-Berichte](../activity-reports/office-365-groups.md) im Admin Center.
+Die Verwaltung Ihrer Microsoft 365-Gruppen ist effektiver, wenn Sie über aktionenfähige Informationen zur Gruppennutzung verfügen. Das Microsoft 365 Admin Center verfügt über ein Berichterstellungstool, mit dem Sie sehen können, wie viele aktive Gruppen Sie haben und wie Benutzer die Gruppen verwenden. Weitere Informationen finden [Sie unter: Microsoft 365-Berichte](../activity-reports/office-365-groups.md) im Admin Center.
 
 ## <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
 
-Sie können Vertraulichkeitsbezeichnungen erstellen, die die Benutzer in Ihrer Organisation festlegen können, wenn sie eine Microsoft 365-Gruppe erstellen. Mit Vertraulichkeitsbezeichnungen können Sie: 
+Sie können Vertraulichkeitsbezeichnungen erstellen, die benutzer in Ihrer Organisation beim Erstellen einer Microsoft 365-Gruppe festlegen können. Mit Vertraulichkeitsbezeichnungen können Sie konfigurieren: 
 
 - Datenschutz (öffentlich oder privat)
 - Zugriff externer Benutzer
 - Nicht verwalteter Gerätezugriff
 
-Sie können beispielsweise eine Bezeichnung mit dem Namen "Streng *vertraulich"* erstellen und angeben, dass alle mit dieser Bezeichnung erstellten Gruppen privat sind und keine externen Benutzer zulassen. Wenn Benutzer in Ihrer Organisation diese Bezeichnung während der Gruppenerstellung auswählen, wird die Gruppe auf "Privat" festgelegt, und Gruppenmitglieder können der Gruppe keine externen Benutzer hinzufügen.
+Sie können beispielsweise eine Bezeichnung mit dem Namen *"Streng vertraulich"* erstellen und angeben, dass alle mit dieser Bezeichnung erstellten Gruppen privat sind und keine externen Benutzer zulassen. Wenn Benutzer in Ihrer Organisation diese Bezeichnung während der Gruppenerstellung auswählen, wird die Gruppe auf privat festgelegt, und Gruppenmitglieder dürfen der Gruppe keine externen Benutzer hinzufügen.
 
 > [!IMPORTANT]
-> Wenn Sie derzeit Klassifizierungsbezeichnungen verwenden, stehen sie Benutzern, die Gruppen erstellen, nach der Aktivierung von Vertraulichkeitsbezeichnungen nicht mehr zur Verfügung. 
+> Wenn Sie derzeit Klassifizierungsbezeichnungen verwenden, stehen sie Benutzern, die Gruppen erstellen, nach aktivierung von Vertraulichkeitsbezeichnungen nicht mehr zur Verfügung. 
 
-Informationen zum Erstellen, Verwalten und Verwenden von Vertraulichkeitsbezeichnungen finden Sie unter Verwenden von Vertraulichkeitsbezeichnungen zum Schutz von [Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites.](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
+Informationen zum Erstellen, Verwalten und Verwenden von Vertraulichkeitsbezeichnungen finden Sie unter Verwenden von Vertraulichkeitsbezeichnungen zum Schutz von [Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
 ## <a name="which-microsoft-365-plans-include-groups"></a>Welche Microsoft 365-Pläne enthalten Gruppen?
 
 Alle Microsoft 365-Abonnements mit Exchange Online und SharePoint Online unterstützen Gruppen. Dazu gehören die Business Essentials- und Business Premium-Pläne sowie die Enterprise E1-, E3- und E5-Pläne. Die Gruppe übernimmt die Lizenzierung der Person, die die Gruppe erstellt (auch als "Organisator" der Gruppe bezeichnet). Solange der Organisator über die richtige Lizenz für alle Features verfügt, die die Gruppe haben soll, wird diese Lizenz an die Gruppe übermittelt.
 
 > [!NOTE]
-> Weitere Informationen zu Microsoft 365-Dienstfamilien und -Plänen finden Sie unter [Microsoft 365-Planoptionen.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+> Weitere Informationen zu Microsoft 365-Dienstfamilien und -plänen finden Sie unter [Microsoft 365-Planoptionen](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
 
-Wenn Sie über einen Nur-Exchange-Plan verfügen, können Sie weiterhin die Features für freigegebenen Posteingang und freigegebenen Kalender von Gruppen in Outlook erhalten, aber Sie erhalten nicht die Dokumentbibliothek, Planner oder eine der anderen Funktionen.
+Wenn Sie über einen Nur-Exchange-Plan verfügen, können Sie weiterhin die freigegebenen Posteingangs- und freigegebenen Kalenderfeatures von Gruppen in Outlook erhalten, aber Sie erhalten keine Dokumentbibliothek, Planner oder andere Funktionen.
 
-Microsoft 365-Gruppen können mit Azure Active Directory verwendet werden. Welche Gruppenfeatures Sie erhalten, hängt davon ab, über welches Azure Active Directory-Abonnement Sie verfügen und welche Lizenzen dem Organisator der Gruppe zugewiesen sind.
+Microsoft 365-Gruppen funktionieren mit Azure Active Directory. Welche Gruppenfeatures Sie erhalten, hängt davon ab, über welches Azure Active Directory-Abonnement Sie verfügen und welche Lizenzen dem Organisator der Gruppe zugewiesen sind.
 
 > [!IMPORTANT]
-> Wenn Sie über ein Azure AD -Premium-Abonnement verfügen, können Benutzer für alle Gruppenfeatures der Gruppe beitreten, unabhängig davon, ob ihnen eine AAD -P1-Lizenz zugewiesen ist. Die Lizenzierung wird nicht erzwungen.
+> Bei allen Gruppenfeatures können Benutzer, wenn Sie über ein Azure AD Premium-Abonnement verfügen, der Gruppe beitreten, unabhängig davon, ob ihnen eine AAD P1-Lizenz zugewiesen ist. Die Lizenzierung wird nicht erzwungen.
 > In regelmäßigen Abständen werden Verwendungsberichte generiert, die Ihnen mitteilen, welchen Benutzer eine Lizenz fehlt oder eine zugewiesene Lizenz benötigen, damit sie die Lizenzierungsanforderungen erfüllen. Nehmen wir beispielsweise an, dass ein Benutzer nicht über eine Lizenz verfügt und er einer Gruppe hinzugefügt wird, in der die Benennungsrichtlinie erzwungen wird. In dem Bericht wird für Sie gekennzeichnet, dass der Benutzer eine Lizenz benötigt.
 
 ## <a name="related-articles"></a>Verwandte Artikel
@@ -125,3 +126,5 @@ Microsoft 365-Gruppen können mit Azure Active Directory verwendet werden. Welch
 [Verwalten von Microsoft 365-Gruppen mit PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
 
 [SharePoint Online-Beschränkungen](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+
+[Organisieren von Gruppen und Kanälen in Microsoft Stream](https://docs.microsoft.com/stream/groups-channels-organization)

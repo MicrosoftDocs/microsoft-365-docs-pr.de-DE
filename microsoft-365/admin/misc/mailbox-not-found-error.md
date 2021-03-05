@@ -1,5 +1,5 @@
 ---
-title: Fehler beim Aufrufen eines Postfachs nicht gefunden in Outlook im Internet
+title: Abrufen eines Postfachfehlers in Outlook im Web
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -11,22 +11,21 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: Hier erfahren Sie, wie Sie nicht lizenzierten Benutzern eine Lizenz hinzufügen, um den Fehler "Postfach nicht gefunden" zu beheben.
-ms.openlocfilehash: bf8ff57704b97c8ef278938675113f5de11849de
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+description: Erfahren Sie, wie Sie nicht lizenzierten Benutzern eine Lizenz hinzufügen, um den Fehler "Postfach nicht gefunden" zu beheben.
+ms.openlocfilehash: e5cdb7b48f3634d51dfe1862d07d58a23e125135
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804872"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454325"
 ---
-# <a name="getting-a-mailbox-not-found-error-in-outlook-on-the-web"></a>Fehler beim Aufrufen eines Postfachs nicht gefunden in Outlook im Internet?
+# <a name="getting-a-mailbox-not-found-error-in-outlook-on-the-web"></a>Abrufen eines Postfachs nicht gefunden Fehler in Outlook im Web?
 
-Wenn Sie Outlook im Internet verwenden und ein Postfach wegen eines Fehlers  **nicht gefunden werden konnte**  , hat das Konto, das Sie zum Herstellen einer Verbindung mit Outlook im Internet verwendet haben, keine Exchange Online Lizenz und daher ist dem Konto kein Postfach zugeordnet. Ihr Administrator kann Ihrem Konto eine Lizenz zuweisen, indem Sie die folgenden Schritte ausführen:
+Wenn Sie Outlook im Web verwenden und ein  **Postfach**  nicht gefunden werden konnte, ist das Konto, das Sie zum Herstellen einer Verbindung mit Outlook im Web verwendet haben, nicht über eine Exchange Online-Lizenz, und daher ist dem Konto kein Postfach zugeordnet. Ihr Administrator kann Ihrem Konto eine Lizenz zuweisen, indem sie die folgenden Schritte ausführen:
 
-1. Öffnen Sie das  [Microsoft 365 Admin Center](https://portal.office.com/adminportal/home#/homepage)  , und wechseln Sie zu  **aktive Benutzer**  im Abschnitt  **Benutzer**  , und wählen Sie den Benutzer aus, der den Fehler sieht.
-2. Wechseln Sie auf der Seite Benutzer, die geöffnet wird, zum Abschnitt  **Lizenzen und apps**  , wählen Sie den entsprechenden  **Standort**  Wert aus, und weisen Sie eine Lizenz zu, die Exchange Online enthält (erweitern Sie die Lizenz, um die Details anzuzeigen). Wenn Sie fertig sind, klicken Sie auf  **Änderungen speichern** .
+1. Öffnen Sie [das Microsoft 365 Admin Center,](https://portal.office.com/adminportal/home#/homepage) und wechseln Sie im Abschnitt Benutzer zu Aktive Benutzer, und wählen Sie den Benutzer aus, dem der Fehler angezeigt wird.  
+2. Wechseln Sie auf der geöffneten Benutzerseite zum Abschnitt Lizenzen und  **Apps,**  wählen Sie den entsprechenden  **Standortwert**  aus, und weisen Sie eine Lizenz zu, die Exchange Online enthält (erweitern Sie die Lizenz, um ihre Details anzuzeigen). Klicken Sie nach Abschluss des Abschlusses auf **Änderungen speichern.**

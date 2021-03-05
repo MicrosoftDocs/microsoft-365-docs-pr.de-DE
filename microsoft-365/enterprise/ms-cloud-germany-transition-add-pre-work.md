@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
-ms.openlocfilehash: 8160756bdbf973741f5e75f45dc2a2044f63e39b
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
-ms.translationtype: HT
+ms.openlocfilehash: 085630c498cebfea26fb3de975740af17cb73921
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242842"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454419"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Vorbereitung für die Migration von Microsoft Cloud Deutschland
 
@@ -59,7 +59,7 @@ ms.locfileid: "50242842"
 
 ## <a name="exchange-online"></a>Exchange Online
 
-| Schritt(e) | Beschreibung | Betrifft | Auswirkung |
+| Schritte: | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
 | Benachrichtigen Sie externe Partner über den bevorstehenden Umstieg zu Office 365-Diensten. | Verfügbare Adressraumkonfigurationen ermöglichen die Freigabe von Frei-/Gebucht-Informationen mit Office 365. | Exchange Online-Kunden, die die Freigabe von Kalendern und verfügbarem Adressraum aktiviert haben. | Erforderliche Aktion.  Wenn diese Aktion nicht ausgeführt wird, kann dies in einer späteren Phase der Kundenmigration zu einem Dienst- oder Clientausfall führen. |
 |||||
@@ -90,7 +90,7 @@ Reworked as text:
 
 | Schritt(e) | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
-| Deinstallieren Sie frühere Versionen des Assistenten für die Hybridkonfiguration (HCW), und installieren und führen Sie dann die neueste Version 17.0.5378.0 von [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) aus. | Die neueste Version des HCW enthält die erforderlichen Updates zur Unterstützung von Kunden, die von Microsoft Cloud Deutschland zu Office 365-Diensten wechseln. <br><br> Updates umfassen Änderungen an den lokalen Zertifikateinstellungen für den Sendeconnector und den Empfangsconnector. | Exchange Online-Kunden, die die Hybridbereitstellung ausführen | Erforderliche Aktion. Wenn dies nicht vor der Phase 5 von 9 (Exchange) durchgeführt wird, kann dies zu einem Ausfall des Dienstes oder des Clients führen. |
+| Aktualisieren Sie vor der Migration auf die neueste Version des Assistenten für die Hybridkonfiguration (Hybrid Configuration Wizard, HCW). <br><br> Microsoft Cloud Deutschland Hybrid Exchange Online-Kunden müssen frühere Versionen von HCW deinstallieren und dann die neueste Version (17.0.5378.0 oder höher) von installieren und [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) ausführen. | Die neueste Version des HCW enthält die erforderlichen Updates zur Unterstützung von Kunden, die von Microsoft Cloud Deutschland zu Office 365-Diensten wechseln. <br><br> Updates umfassen Änderungen an lokalen Zertifikateinstellungen für den Sendeconnector und den Empfangsconnector. <br><br> Kunden müssen die Installation mithilfe der Office 365 Deutschland-Einstellungen neu installieren, bevor Phase 5 von 9 (Exchange-Migration) beginnt. <br><br> HINWEIS: Nach Abschluss der Migration zu Office 365-Diensten entfernen und installieren Sie den HCW erneut, dieses Mal mithilfe von Office 365 Worldwide-Einstellungen, um Ihr Hybrid-Setup mit dem globalen Dienst abzuschließen. | Exchange Online-Kunden, die die Hybridbereitstellung ausführen | Erforderliche Aktion. Wenn sie vor Phase 5 von 9 (Exchange-Migration) nicht ausgeführt werden, kann dies zu Dienst- oder Clientfehlern führen. |
 |||||
 
 <!--
@@ -169,7 +169,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 
 ## <a name="power-bi"></a>Power BI
 
-| Schritt(e) | Beschreibung | Betrifft | Auswirkung |
+| Schritte: | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
 | Entfernen von Objekten aus Power BI-Abonnements, die nicht von Power BI Microsoft Cloud Deutsch nach Office 365-Diensten migriert werden. | Für die Migration von Power BI-Diensten sind Kundenaktionen erforderlich, um bestimmte Artefakte wie Datasets und Dashboards zu löschen. | Power BI-Kunden | Administratoren müssen möglicherweise die folgenden Elemente aus Ihrem Abonnement entfernen: <br> - Echtzeit-Datasets (beispielsweise Streaming- oder Push-Datasets). <br> - Lokale Power BI-Konfiguration des Datengateways und die Datenquelle. |
 |||||

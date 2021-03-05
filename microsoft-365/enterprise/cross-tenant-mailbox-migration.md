@@ -14,46 +14,46 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 237d47502d28ec43978cef2c16e049ac9e90d7b1
-ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
+ms.openlocfilehash: d81e272cfe50aa8379135406cbe538fbc8a18cb5
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50040556"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454229"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Mandantenübergreifende Postfachmigration (Vorschau)
 
-Wenn ein Exchange -Online-Mandant Postfächer in einen anderen Mandanten im gleichen Exchange Online-Dienst verschieben musste, musste er sie vollständig auf die lokale Version aus offboarden und dann in einen neuen Mandanten integrieren. Mit dem neuen feature für die mandantenübergreifende Postfachmigration können Mandantenadministratoren sowohl in Quell- als auch in Ziel-Mandanten Postfächer zwischen den Mandanten mit minimalen Infrastrukturabhängigkeiten in ihren lokalen Systemen verschieben. Dadurch müssen keine Off-Board- und Onboardingpostfächer mehr verwendet werden.
+Wenn ein Exchange Online-Mandant Postfächer in einen anderen Mandanten im gleichen Exchange Online-Dienst verschieben musste, müssten sie diese vollständig in den lokalen Dienst verschieben und dann in einen neuen Mandanten integrieren. Mit dem neuen mandantenübergreifenden Migrationsfeature können Mandantenadministratoren sowohl in Quell- als auch in Ziel mandanten Postfächer zwischen den Mandanten mit minimalen Infrastrukturabhängigkeiten in ihren lokalen Systemen verschieben. Dadurch wird die Notwendigkeit von Off-Board- und Onboardpostfächern entfernt.
 
-In der Regel benötigen Sie bei Fusionen oder Abgängen die Möglichkeit, Benutzer und Inhalte in einen neuen Mandanten zu verschieben. Wenn der Zieladministrator die Migration ausgeführt, wird dies als "Pull-Move" bezeichnet, ähnlich wie bei lokalen Migrationen mit Cloud-Onboarding-Migrationen.
+In der Regel benötigen Sie bei Fusionen oder Übernahmen die Möglichkeit, Benutzer und Inhalte in einen neuen Mandanten zu verschieben. Wenn der Ziel-Mandant-Administrator die Migration ausgeführt hat, wird dies als Pull-Move bezeichnet, ähnlich wie bei lokalen Migrationen mit Cloud-Onboarding.
 
-Mandantenübergreifende Verschieben von Exchange-Postfächern werden von Mandantenadministratoren vollständig selbstverwendet und verwenden bekannte Schnittstellen, die in die größeren Workflows geskriptet werden können, die für den Übergang von Benutzern zu ihrer neuen Organisation erforderlich sind. Administratoren können das Über die Verwaltungsrolle "Postfächer verschieben" verfügbare `New-MigrationBatch` Cmdlet verwenden, um mandantenübergreifende Verschieben auszuführen. Der Verschiebevorgang umfasst Mandantenautorisierungsprüfungen während der Postfachsynchronisierung und -finalisierung. 
+Mandantenübergreifende Exchange-Postfachbewegungen werden von Mandantenadministratoren vollständig self-serviced ausgeführt. Dabei werden bekannte Schnittstellen verwendet, die in die größeren Workflows geschrieben werden können, die zum Übergang von Benutzern in ihre neue Organisation erforderlich sind. Administratoren können das Über die Verwaltungsrolle Postfächer verschieben verfügbare `New-MigrationBatch` Cmdlet verwenden, um mandantenübergreifende Verschieben auszuführen. Der Verschiebenprozess umfasst Mandantenautorisierungsüberprüfungen während der Postfachsynchronisierung und -finalisierung. 
  
-Benutzer, die migrieren, müssen im Exchange Online-Ziel-Mandantensystem als MailUsers vorhanden sein, die mit bestimmten Attributen gekennzeichnet sind, um die mandantenübergreifenden Migrationen zu ermöglichen. Für Benutzer, die im Ziel mandanten nicht ordnungsgemäß eingerichtet sind, kann das System nicht ausgeführt werden.  
+Die Migration von Benutzern muss im Exchange Online-Ziel-Mandantensystem als MailUsers vorhanden sein, die mit bestimmten Attributen gekennzeichnet sind, um mandantenübergreifende Bewegungen zu ermöglichen. Für Benutzer, die im Ziel-Mandanten nicht ordnungsgemäß eingerichtet sind, wird beim System ein Fehler ausgeführt.  
 
-Nach Abschluss der Verschiebe wird das Quellsystempostfach in "MailUser" konvertiert, und die Zieladresse (in Exchange als "ExternalEmailAddress" angezeigt) wird mit der Routingadresse an den Ziel mandanten gestempelt. Bei diesem Prozess bleibt mailUser der Vorgängerzeit im Quell mandanten erhalten und ermöglicht eine Bestimmte Zeit der Koexistenz und des E-Mail-Routings. Wenn Geschäftsprozesse dies zulassen, kann der Quell mandant die Quelle "MailUser" entfernen oder in einen E-Mail-Kontakt konvertieren. 
+Wenn die Verschieben abgeschlossen sind, wird das Quellsystempostfach in MailUser konvertiert, und die targetAddress (in Exchange als ExternalEmailAddress angezeigt) wird mit der Routingadresse an den Ziel-Mandanten gestempelt. Bei diesem Prozess bleibt das legacy MailUser im Quell-Mandant und ermöglicht eine Zeit der Koexistenz und des E-Mail-Routings. Wenn Geschäftsprozesse dies zulassen, kann der Quell-Mandant die Quelle MailUser entfernen oder in einen E-Mail-Kontakt konvertieren. 
 
-Mandantenübergreifende Migrationen von Exchange-Postfächern werden nur für Mandanten in Hybrid- oder Cloudbereitstellungen oder in einer beliebigen Kombination der beiden Postfächer unterstützt.
+Mandantenübergreifende Exchange-Postfachmigrationen werden nur für Mandanten in Hybrid- oder Cloud- oder einer beliebigen Kombination der beiden Unterstützt.
 
-Dieser Artikel beschreibt den Prozess für mandantenübergreifende Postfachver verschiebt und enthält Anleitungen zum Vorbereiten von Quell- und Ziel-Mandanten für die Inhaltsver verschieben.  
+In diesem Artikel wird der Prozess für mandantenübergreifende Postfachbewegungen beschrieben und Anleitungen zum Vorbereiten von Quell- und Ziel mandanten für die Inhaltsver verschieben.  
 
-## <a name="preparing-source-and-target-tenants"></a>Vorbereiten von Quell- und Ziel mandanten
+## <a name="preparing-source-and-target-tenants"></a>Vorbereiten von Quell- und Ziel-Mandanten
 
-Das Feature für die mandantenübergreifende Migration von Exchange-Postfächern erfordert die Autorisierung und Dierung für mandantenübergreifende Migrationen. Mithilfe der Azure Enterprise-Anwendungs- und Key Vault-Speicherlösungen können Mandantenadministratoren jetzt sowohl die Autorisierung als auch die Scoping von Exchange Online-Postfachmigrationen von einem Mandanten zu einem anderen verwalten. Mandantenübergreifende Postfachbewegungen unterstützen ein Einladungs- und Zustimmungsmodell zum Einrichten einer Azure Active Directory (Azure AD)-Anwendung, die für die Authentifizierung zwischen einem Mandantenpaar verwendet wird. Zusätzliche Komponenten wie eine Organisationsbeziehung und ein Migrationsendpunkt sind ebenfalls erforderlich.
+Das Mandantenübergreifende Exchange-Postfachmigrationsfeature erfordert autorisierungs- und scoping für mandantenübergreifende Migrationen. Mithilfe der Azure Enterprise-Anwendung und der Key Vault-Speicherlösungen können Mandantenadministratoren jetzt sowohl die Autorisierung als auch das Scoping von Exchange Online-Postfachmigrationen von einem Mandanten zum anderen verwalten. Mandantenübergreifende Postfachbewegungen unterstützen ein Einladungs- und Zustimmungsmodell zum Einrichten einer Azure Active Directory (Azure AD)-Anwendung, die für die Authentifizierung zwischen einem Mandantenpaar verwendet wird. Zusätzliche Komponenten wie eine Organisationsbeziehung und ein Migrationsendpunkt sind ebenfalls erforderlich.
 
-Dieser Abschnitt enthält weder die spezifischen Schritte, die zum Vorbereiten der MailUser-Benutzerobjekte im Zielverzeichnis erforderlich sind, noch den Beispielbefehl zum Übermitteln eines Migrationsbatches. Informationen hierzu finden Sie unter "Vorbereiten [von Zielbenutzerobjekten für](#prepare-target-user-objects-for-migration) die Migration".
+Dieser Abschnitt enthält weder die spezifischen Schritte, die zum Vorbereiten der MailUser-Benutzerobjekte im Zielverzeichnis erforderlich sind, noch den Beispielbefehl zum Übermitteln eines Migrationsbatches. Weitere Informationen [finden Sie unter Prepare target user objects for migration.](#prepare-target-user-objects-for-migration)
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Das feature für die mandantenübergreifende Postfachver verschieben erfordert [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts) eine mandantenpaarspezifische Azure-Anwendung, um das Zertifikat/den geheimen Schlüssel sicher zu speichern und darauf zu zugreifen, das verwendet wird, um die Postfachmigration von einem Mandanten zum anderen zu authentifizieren und zu autorisieren, und alle Anforderungen für die Freigabe von Zertifikaten/Geheimnissen zwischen Mandanten zu entfernen. 
+Das mandantenübergreifende Postfach verschieben-Feature [erfordert,](https://docs.microsoft.com/azure/key-vault/basic-concepts) dass Azure Key Vault eine mandantenpaarspezifische Azure-Anwendung zum sicheren Speichern und Zugreifen auf das Zertifikat/den geheimen Schlüssel einrichten kann, das zum Authentifizieren und Autorisieren der Postfachmigration von einem Mandanten zum anderen verwendet wird. Dabei werden alle Anforderungen zum Freigeben von Zertifikaten/Geheimschlüsseln zwischen Mandanten entfernt. 
 
-Bevor Sie beginnen, stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen zum Ausführen der Bereitstellungsskripts verfügen, um Azure Key Vault, die Move Mailbox-Anwendung, den EXO-Migrationsendpunkt und die EXO-Organisationsbeziehung zu konfigurieren. In der Regel verfügt der globale Administrator über die Berechtigung, alle Konfigurationsschritte durchzuführen.
+Stellen Sie vor dem Start sicher, dass Sie über die erforderlichen Berechtigungen zum Ausführen der Bereitstellungsskripts verfügen, um Azure Key Vault, Die Postfachanwendung verschieben, den EXO-Migrationsendpunkt und die EXO-Organisationsbeziehung zu konfigurieren. In der Regel verfügt der globale Administrator über die Berechtigung zum Ausführen aller Konfigurationsschritte.
 
-Darüber hinaus sind E-Mail-aktivierte Sicherheitsgruppen im Quell mandanten erforderlich, bevor Setup ausgeführt wird. Diese Gruppen werden verwendet, um die Liste der Postfächer zu bereichern, die vom Quell-Mandanten (oder manchmal auch als Ressourcen-Mandant bezeichnet) zum Ziel mandanten verschoben werden können. Dadurch kann der Quell-Mandanten-Administrator die bestimmte Gruppe von Postfächern einschränken oder einschränken, die verschoben werden müssen, um zu verhindern, dass unbeabsichtigte Benutzer migriert werden. Geschachtelte Gruppen werden nicht unterstützt.
+Darüber hinaus sind E-Mail-aktivierte Sicherheitsgruppen im Quell-Mandant vor dem Ausführen des Setups erforderlich. Diese Gruppen werden verwendet, um die Liste der Postfächer, die vom Quell-Mandanten (oder manchmal auch als Ressourcen-Mandant bezeichnet) zum Ziel-Mandanten verschoben werden können, zu bereichern. Auf diese Weise kann der Quell-Mandant-Administrator die bestimmte Gruppe von Postfächern einschränken oder beschränken, die verschoben werden müssen, um zu verhindern, dass unbeabsichtigte Benutzer migriert werden. Geschachtelte Gruppen werden nicht unterstützt.
 
-Sie müssen auch mit Ihrem vertrauenswürdigen Partnerunternehmen kommunizieren (mit dem Sie Postfächer verschieben), um die Microsoft 365-Mandanten-ID zu erhalten. Diese Mandanten-ID wird im Feld "Organisationsbeziehung" `DomainName` verwendet.
+Sie müssen auch mit Ihrem vertrauenswürdigen Partnerunternehmen kommunizieren (mit dem Sie Postfächer verschieben), um ihre Microsoft 365-Mandanten-ID zu erhalten. Diese Mandanten-ID wird im Feld Organisationsbeziehung `DomainName` verwendet.
 
-Um die Mandanten-ID eines Abonnements zu erhalten, melden Sie sich beim Microsoft 365 Admin Center an, und wechseln Sie zu [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) . Klicken Sie auf das Kopiersymbol für die Mandanten-ID-Eigenschaft, um sie in die Zwischenablage zu kopieren.
+Um die Mandanten-ID eines Abonnements zu erhalten, melden Sie sich beim Microsoft 365 Admin Center an, und wechseln Sie zu [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) . Klicken Sie auf das Kopiersymbol für die Tenant ID-Eigenschaft, um sie in die Zwischenablage zu kopieren.
 
 Hier sehen Sie, wie der Prozess funktioniert.
 
@@ -67,58 +67,58 @@ Hier sehen Sie, wie der Prozess funktioniert.
 
 ### <a name="prepare-tenants"></a>Vorbereiten von Mandanten
 
-Auf hoher Ebene werden die folgenden Konfigurationsaktionen beim Ausführen der Setupskripts ausgeführt.
+Auf einer hohen Ebene werden die folgenden Konfigurationsaktionen beim Ausführen der Setupskripts ausgeführt.
 
 Bereiten Sie den Ziel mandanten vor:
 
 1. Wenn keine vorhandene Azure-Ressourcengruppe bereitgestellt wird, wird ein neues (SCRIPT) erstellt.
-2. Wenn kein vorhandener Key Vault bereitgestellt wird, wird ein neues (SCRIPT) erstellt.
-3. Für die Office 365 Exchange Online-Postfachmigrationsanwendung (SCRIPT) wird eine neue Zugriffsrichtlinie erstellt.
-4. Es wird ein neues Zertifikat erstellt (oder ein vorhandenes, falls angegeben), das den geheimen Schlüssel für die Migrationsanwendung (SCRIPT) enthält.
+2. Wenn kein vorhandener Schlüsseltresor bereitgestellt wird, wird ein neues (SCRIPT) erstellt.
+3. Für die Office 365 Exchange Online Mailbox Migration Application (SCRIPT) wird eine neue Zugriffsrichtlinie erstellt.
+4. Ein neues Zertifikat wird erstellt (oder vorhanden, falls angegeben), um das Geheimnis der Migrationsanwendung (SCRIPT) zu halten.
 5. Eine neue Azure AD-Anwendung wird erstellt (SCRIPT).
 6. Das Zertifikat/der geheime Schlüssel wird in die Migrationsanwendung (SCRIPT) hochgeladen.
 7. Berechtigungen für die Postfachmigration werden der Anwendung (SCRIPT) zugewiesen.
-8. Das Bereitstellungsskript wird angehalten, bis der Zieladministrator der eigenen Anwendung (SCRIPT) zuwilligt.
-9. Der Zieladministrator des Mandanten ist mit den berechtigungen einverstanden, die der Anwendung erteilt werden (MANUAL).
-10. Es wird eine Organisationsbeziehung mit dem Ziel mandanten (SCRIPT) erstellt.
+8. Das Bereitstellungsskript hält an, bis der Zieladministrator der eigenen Anwendung (SCRIPT) zuwilligt.
+9. Der Ziel-Mandant-Administrator ist mit den Berechtigungen einverstanden, die der Anwendung erteilt werden (MANUAL).
+10. Eine Organisationsbeziehung wird zum Ziel-Mandant (SCRIPT) erstellt.
 11. Ein Migrationsendpunkt wird erstellt, um Postfächer an den Ziel mandanten (SCRIPT) zu ziehen.
 
-Bereiten Sie den Quell mandanten vor:
+Bereiten Sie den Quell-Mandanten vor:
 
-1. Der Quell-Mandanten-Administrator akzeptiert die Zustimmung zur Einladung der Postfachmigrationsanwendung vom Ziel-Mandanten (MANUAL).
+1. Der Quell-Mandant-Administrator akzeptiert die Zustimmung zur Einladung der Postfachmigrationsanwendung vom Ziel-Mandanten (MANUAL).
 2. Der Quell-Mandantenadministrator erstellt eine E-Mail-aktivierte Sicherheitsgruppe in ihrem Mandanten, die die Liste der Postfächer enthält, die von der Migrationsanwendung verschoben werden dürfen (MANUAL).
-3. Es wird eine Organisationsbeziehung mit dem Ziel mandanten erstellt, in der angegeben wird, dass die Postfachmigrationsanwendung für die OAuth-Überprüfung verwendet werden soll, um die Verschiebenanforderung (SCRIPT) zu akzeptieren.
+3. Es wird eine Organisationsbeziehung mit dem Ziel-Mandanten erstellt, der an die Postfachmigrationsanwendung annimmt, die für die OAuth-Überprüfung verwendet werden soll, um die Verschiebenanforderung (SCRIPT) zu akzeptieren.
 
-#### <a name="step-by-step-instructions-for-the-target-tenant-admin"></a>Schritt-für-Schritt-Anleitungen für den Zieladministrator des Mandanten
+#### <a name="step-by-step-instructions-for-the-target-tenant-admin"></a>Schritt-für-Schritt-Anweisungen für den Ziel-Mandantenadministrator
 
-1. Laden Sie das SetupCrossTenantRelationshipForTargetTenant.ps1 für das Setup des Ziel mandanten aus dem [GitHub-Repository herunter.](https://github.com/microsoft/cross-tenant/releases/tag/Preview) 
-2. Speichern Sie das Skript (SetupCrossTenantRelationshipForTargetTenant.ps1) auf dem Computer, von dem aus Sie das Skript ausführen.
-3. Erstellen Sie eine Remote-PowerShell-Verbindung mit dem Exchange Online-Ziel-Mandanten. Stellen Sie erneut sicher, dass Sie über die erforderlichen Berechtigungen zum Ausführen der Bereitstellungsskripts verfügen, um den Azure Key Vault-Speicher und das Zertifikat, die Postfachanwendung verschieben, den EXO-Migrationsendpunkt und die EXO-Organisationsbeziehung zu konfigurieren.
-4. Ändern Sie das Dateiordnerverzeichnis in den Skriptspeicherort, oder stellen Sie sicher, dass das Skript derzeit an dem Speicherort gespeichert ist, der sich derzeit in Ihrer Remote-PowerShell-Sitzung befindet.
+1. Laden Sie SetupCrossTenantRelationshipForTargetTenant.ps1 Skript für das Ziel-Mandanten-Setup aus dem [GitHub-Repository herunter.](https://github.com/microsoft/cross-tenant/releases/tag/Preview) 
+2. Speichern Sie das Skript (SetupCrossTenantRelationshipForTargetTenant.ps1) auf dem Computer, von dem Sie das Skript ausführen.
+3. Erstellen Sie eine Remote-PowerShell-Verbindung mit dem Exchange Online-Ziel-Mandanten. Stellen Sie erneut sicher, dass Sie über die erforderlichen Berechtigungen zum Ausführen der Bereitstellungsskripts verfügen, um den Azure Key Vault-Speicher und -Zertifikat, die Postfachanwendung verschieben, den EXO-Migrationsendpunkt und die EXO-Organisationsbeziehung zu konfigurieren.
+4. Ändern Sie das Verzeichnis des Dateiordners in den Skriptspeicherort, oder überprüfen Sie, ob das Skript derzeit an dem Speicherort gespeichert ist, der sich derzeit in Der Remote-PowerShell-Sitzung befindet.
 5. Führen Sie das Skript mit den folgenden Parametern und Werten aus.
 
-    | Parameter | Wert | Erforderlich oder optional
+    | Parameter | Wert | Erforderlich oder Optional
     |---------------------------------------------|-----------------|--------------|
-    | -TargetTenantDomain                         | Ziel-Mandantendomäne, z. B. \. contoso-onmicrosoft.com. | Erforderlich |
-    | -ResourceTenantDomain                       | Quell-Mandantendomäne, z. B. fabrikam \. onmicrosoft.com. | Erforderlich |
-    | -ResourceTenantAdminEmail                   | Die E-Mail-Adresse des Quell-Mandantenadministrators. Dies ist der Quell-Mandantenadministrator, der der Verwendung der vom Zieladministrator gesendeten Postfachmigrationsanwendung zuwilligt. Dies ist der Administrator, der die E-Mail-Einladung für die Anwendung erhält. | Erforderlich |
-    | -ResourceTenantId                           | Quell-Mandantenorganisations-ID (GUID). | Erforderlich |
-    | -SubscriptionId                             | Das Azure-Abonnement, das zum Erstellen von Ressourcen verwendet werden soll. | Erforderlich |
-    | -ResourceGroup                              | Azure-Ressourcengruppenname, der den Key Vault enthält oder enthalten wird. | Erforderlich |
-    | -KeyVaultName                               | Azure Key Vault-Instanz, in der das Zertifikat/der geheime Schlüssel der Postfachmigrationsanwendung gespeichert wird. | Erforderlich |
+    | -TargetTenantDomain                         | Ziel-Mandantendomäne, z. B. fabrikam \. onmicrosoft.com. | Erforderlich |
+    | -ResourceTenantDomain                       | Quell-Mandantendomäne, z. B. contoso \. onmicrosoft.com. | Erforderlich |
+    | -ResourceTenantAdminEmail                   | E-Mail-Adresse des Quell-Mandantenadministrators. Dies ist der Quell-Mandantenadministrator, der der Verwendung der Vom Zieladministrator gesendeten Postfachmigrationsanwendung zuwilligt. Dies ist der Administrator, der die E-Mail-Einladung für die Anwendung erhält. | Erforderlich |
+    | -ResourceTenantId                           | GuiD (Source Tenant Organization ID). | Erforderlich |
+    | -SubscriptionId                             | Das Zum Erstellen von Ressourcen zu verwendende Azure-Abonnement. | Erforderlich |
+    | -ResourceGroup                              | Azure-Ressourcengruppenname, der den Schlüsseltresor enthält oder enthält. | Erforderlich |
+    | -KeyVaultName                               | Azure Key Vault-Instanz, in der Ihr Zertifikat/geheimer Postfachmigrationsanwendung gespeichert wird. | Erforderlich |
     | -CertificateName                            | Zertifikatname beim Generieren oder Suchen nach Zertifikaten im Schlüsseltresor. | Erforderlich |
-    | -CertificateSubject                         | Azure Key Vault-Zertifikat-Subject-Name, z. B. CN=contoso_fabrikam. | Erforderlich |
-    | -ExistingApplicationId                      | E-Mail-Migrationsanwendung, die verwendet werden soll, wenn bereits eine erstellt wurde. | Optional |
-    | -AzureAppPermissions                        | Die Berechtigungen, die für die Postfachmigrationsanwendung erforderlich sind, z. B. Exchange oder MSGraph (Exchange zum Verschieben von Postfächern, MSGraph für die Verwendung dieser Anwendung zum Senden einer Einladung zum Zustimmungslink an den Ressourcen-Mandanten). | Erforderlich |
-    | -UseAppAndCertGeneratedForSendingInvitation | Parameter für die Verwendung der Anwendung, die für die Migration zum Senden einer Einladung zum Zustimmungslink an den Quell-Mandantenadministrator erstellt wurde. Wenn nicht angegeben, werden die Anmeldeinformationen des Zieladministrators aufgefordert, eine Verbindung mit dem Azure-Einladungs-Manager herzustellen und die Einladung als Zieladministrator zu senden. | Optional |
+    | -CertificateSubject                         | Name des Azure Key Vault-Zertifikatsubjekts, z. B. CN=contoso_fabrikam. | Erforderlich |
+    | -ExistingApplicationId                      | E-Mail-Migrationsanwendung, die verwendet werden soll, wenn sie bereits erstellt wurde. | Optional |
+    | -AzureAppPermissions                        | Die erforderlichen Berechtigungen für die Postfachmigrationsanwendung, z. B. Exchange oder MSGraph (Exchange zum Verschieben von Postfächern, MSGraph für die Verwendung dieser Anwendung zum Senden einer Einladung zum Zustimmungslink an den Ressourcen-Mandanten). | Erforderlich |
+    | -UseAppAndCertGeneratedForSendingInvitation | Parameter für die Verwendung der Anwendung, die für die Migration zum Senden einer Einladung zum Zustimmungslink an den Quell-Mandantenadministrator erstellt wurde. Wenn dies nicht vorhanden ist, werden die Anmeldeinformationen des Zieladministrators aufgefordert, eine Verbindung mit dem Azure-Einladungs-Manager herzustellen und die Einladung als Zieladministrator zu senden. | Optional |
     | -KeyVaultAuditStorageAccountName            | Das Speicherkonto, in dem die Überwachungsprotokolle von Key Vault gespeichert werden. | Optional |
     | -KeyVaultAuditStorageResourceGroup          | Die Ressourcengruppe, die das Speicherkonto zum Speichern von Key Vault-Überwachungsprotokollen enthält. | Optional |
     ||||
 
     >[!Note]
-    > Stellen Sie sicher, dass Sie das Azure AD -PowerShell-Modul installiert haben, bevor Sie die Skripts ausführen. Installationsschritte ![ finden ](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-5.1.0) Sie hier.
+    > Stellen Sie sicher, dass Sie das Azure AD PowerShell-Modul installiert haben, bevor Sie die Skripts ausführen. Installationsschritte ![ ](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-5.1.0) finden Sie hier.
 
-6. Das Skript hält an und fordert Sie auf, die während dieses Vorgangs erstellte Exchange-Postfachmigrationsanwendung zu akzeptieren oder ihr zuzuwilligen. Hier ein Beispiel.
+6. Das Skript hält an und bittet Sie, die während dieses Vorgangs erstellte Exchange-Postfachmigrationsanwendung zu akzeptieren oder zu akzeptieren. Hier ein Beispiel.
 
     ```powershell
     PS C:\PowerShell\> .\SetupCrossTenantRelationshipForTargetTenant.ps1 -ResourceTenantDomain contoso.onmicrosoft.com -ResourceTenantAdminEmail admin@contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ResourceTenantId ksagjid39-ede2-4d2c-98ae-874709325b00 -SubscriptionId e4ssd05d-a327-49ss-849a-sd0932439023 -ResourceGroup "Cross-TenantMoves" -KeyVaultName "Cross-TenantMovesVault" -CertificateName "Contoso-Fabrikam-cert" -CertificateSubject "CN=Contoso_Fabrikam" -AzureAppPermissions Exchange, MSGraph -UseAppAndCertGeneratedForSendingInvitation -KeyVaultAuditStorageAccountName "t2tstorageaccount" -KeyVaultAuditStorageResourceGroup "Demo"
@@ -142,13 +142,13 @@ Bereiten Sie den Quell mandanten vor:
     Please consent to the application for fabrikam.onmicrosoft.com before sending invitation to admin@contoso.onmicrosoft.com:
     ```  
 
-7. In der Remote-PowerShell-Sitzung wird eine URL angezeigt. Kopieren Sie den Link, der für Ihre Mandantengewilligung bereitgestellt wurde, und fügen Sie ihn in einen Webbrowser ein.
+7. In der Remote-PowerShell-Sitzung wird eine URL angezeigt. Kopieren Sie den Link, der für Ihre Mandanten zustimmung bereitgestellt wurde, und fügen Sie ihn in einen Webbrowser ein.
 
-8. Melden Sie sich mit Ihren globalen Administratoranmeldeinformationen an. Wenn der folgende Bildschirm angezeigt wird, wählen Sie **"Annehmen" aus.**
+8. Melden Sie sich mit Ihren Anmeldeinformationen für den globalen Administrator an. Wenn der folgende Bildschirm angezeigt wird, wählen Sie **Akzeptieren aus.**
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="Dialogfeld &quot;Berechtigungen akzeptieren&quot;":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="Dialogfeld Berechtigungen akzeptieren":::
 
-9. Wechseln Sie zurück zur Remote-PowerShell-Sitzung, und geben Sie die EINGABETASTE ein, um den Vorgang fortzufahren.
+9. Wechseln Sie zurück zur Remote-PowerShell-Sitzung, und fahren Sie mit enter fort.
 
 10. Das Skript konfiguriert die verbleibenden Setupobjekte. Hier ein Beispiel.
 
@@ -159,37 +159,37 @@ Bereiten Sie den Quell mandanten vor:
     Exchange setup complete. Migration endpoint details are available in $MigrationEndpoint variable
     ```
 
-Die Einrichtung des Zieladministrators ist nun abgeschlossen!
+Das Setup des Zieladministrators ist nun abgeschlossen!
 
-#### <a name="step-by-step-instructions-for-the-source-tenant-admin"></a>Schritt-für-Schritt-Anleitungen für den Quell-Mandanten-Administrator
+#### <a name="step-by-step-instructions-for-the-source-tenant-admin"></a>Schritt-für-Schritt-Anweisungen für den Quell-Mandantenadministrator
 
-1.  Melden Sie sich bei Ihrem Postfach als "-ResourceTenantAdminEmail" an, das vom Zieladministrator während des Setups angegeben wurde. Suchen Sie die E-Mail-Einladung vom Ziel-Mandanten, und wählen Sie dann die Schaltfläche **"Erste Schritte"** aus.
+1.  Melden Sie sich bei Ihrem Postfach als -ResourceTenantAdminEmail an, das vom Zieladministrator während des Setups angegeben wurde. Suchen Sie die E-Mail-Einladung vom Ziel-Mandanten, und wählen Sie dann die Schaltfläche **Erste Schritte** aus.
 
     :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="Dialogfeld &quot;Eingeladen&quot;":::
 
-2. Wählen Sie **"Annehmen"** aus, um die Einladung zu akzeptieren.
+2. Wählen **Sie Annehmen** aus, um die Einladung zu akzeptieren.
 
     :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="Dialogfeld zum Akzeptieren von Berechtigungen":::
 
    > [!NOTE]
-   > Wenn Sie diese E-Mail nicht erhalten oder nicht finden können, wurde dem Zielmandantadministrator eine direkte URL bereitgestellt, die Ihnen zum Annehmen der Einladung zur Verfügung gestellt werden kann. Die URL sollte in der Aufzeichnung der Remote-PowerShell-Sitzung des Ziel-Mandantenadministrators enthalten sein.
+   > Wenn Sie diese E-Mail nicht erhalten oder nicht finden können, wurde dem Zielmandantadministrator eine direkte URL bereitgestellt, die Sie erhalten können, um die Einladung zu akzeptieren. Die URL sollte in der Aufzeichnung der Remote-PowerShell-Sitzung des Ziel-Mandantenadministrators enthalten sein.
 
-3. Erstellen Sie im Microsoft 365 Admin Center oder in einer Remote-PowerShell-Sitzung eine oder mehrere E-Mail-aktivierte Sicherheitsgruppen, um die Liste der Postfächer zu steuern, die der Ziel mandant vom Quell mandanten zum Ziel mandanten ziehen (verschieben) darf. Sie müssen diese Gruppe nicht im Voraus auffüllen, aber es muss mindestens eine Gruppe bereitgestellt werden, um die Setupschritte (Skript) auszuführen. Schachtelgruppen werden nicht unterstützt. 
+3. Erstellen Sie im Microsoft 365 Admin Center oder in einer Remote-PowerShell-Sitzung eine oder mehrere E-Mail-aktivierte Sicherheitsgruppen, um die Liste der Postfächer zu steuern, die der Ziel-Mandant vom Quell-Mandant zum Ziel mandanten ziehen (verschieben) darf. Sie müssen diese Gruppe nicht im Voraus auffüllen, aber es muss mindestens eine Gruppe bereitgestellt werden, um die Setupschritte (Skript) ausführen zu können. Schachtelgruppen werden nicht unterstützt. 
 
-4. Laden Sie das SetupCrossTenantRelationshipForResourceTenant.ps1 für das Quell-Mandanten-Setup aus dem GitHub-Repository hier herunter: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) . 
+4. Laden Sie SetupCrossTenantRelationshipForResourceTenant.ps1 Skript für das Setup des Quell-Mandanten aus dem GitHub-Repository herunter: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) . 
 
-5. Erstellen Sie eine Remote-PowerShell-Verbindung mit dem Quell mandanten mit Ihren Exchange-Administratorberechtigungen. Globale Administratorberechtigungen sind aufgrund des Erstellungsprozesses der Azure-Anwendung nicht erforderlich, um den Quell-Mandanten zu konfigurieren, sondern nur den Ziel-Mandanten.
+5. Erstellen Sie eine Remote-PowerShell-Verbindung mit dem Quell-Mandanten mit Ihren Exchange-Administratorberechtigungen. Globale Administratorberechtigungen sind nicht erforderlich, um den Quell-Mandanten zu konfigurieren, sondern nur den Ziel-Mandanten aufgrund des Erstellungsprozesses der Azure-Anwendung.
 
-6. Ändern Sie das Verzeichnis in den Skriptspeicherort, oder stellen Sie sicher, dass das Skript derzeit an dem Speicherort gespeichert ist, der sich derzeit in Ihrer Remote-PowerShell-Sitzung befindet.
+6. Ändern Sie das Verzeichnis in den Skriptspeicherort, oder stellen Sie sicher, dass das Skript derzeit an dem Speicherort gespeichert ist, der sich derzeit in Der Remote-PowerShell-Sitzung befindet.
 
 7. Führen Sie das Skript mit den folgenden erforderlichen Parametern und Werten aus.
 
     | Parameter | Wert |
     |-----|------|
-    | -SourceMailboxMovePublishedScopes | E-Mail-aktivierte Sicherheitsgruppe, die vom Quell mandanten für die Identitäten/Postfächer erstellt wurde, die sich im Bereich der Migration befinden. |
-    | -ResourceTenantDomain | Quelldomänenname des Mandanten, z. B. fabrikam \. onmicrosoft.com. |
-    | -ApplicationId | Azure-Anwendungs-ID (GUID) der Anwendung, die für die Migration verwendet wird. Die Anwendungs-ID ist über Ihr Azure-Portal verfügbar (Azure AD, Enterprise-Anwendungen, App-Name, Anwendungs-ID) oder in Ihrer Einladungs-E-Mail enthalten.  |
-    | -TargetTenantDomain | Zieldomänenname des Mandanten, z. B. Contoso \. onmicrosoft.com. |
+    | -SourceMailboxMovePublishedScopes | E-Mail-aktivierte Sicherheitsgruppe, die vom Quell-Mandant für die Identitäten/Postfächer erstellt wurde, die sich im Bereich der Migration befinden. |
+    | -ResourceTenantDomain | Quell-Mandantendomänenname, z. B. contoso \. onmicrosoft.com. |
+    | -ApplicationId | Azure-Anwendungs-ID (GUID) der Anwendung, die für die Migration verwendet wird. Anwendungs-ID, die über Ihr Azure-Portal (Azure AD, Unternehmensanwendungen, App-Name, Anwendungs-ID) oder in Ihrer Einladungs-E-Mail enthalten ist.  |
+    | -TargetTenantDomain | Ziel-Mandantendomänenname, z. B. fabrikam \. onmicrosoft.com. |
     | -TargetTenantId | Mandanten-ID des Ziel-Mandanten. Beispielsweise ist die Azure AD-Mandanten-ID von contoso \. onmicrosoft.com Mandanten. |
     |||
 
@@ -206,7 +206,7 @@ Das Setup des Quelladministrators ist nun abgeschlossen!
 
 Stellen Sie sicher, dass die Organisationsbeziehungen in Quell- und Ziel mandanten und Migrationsendpunkt im Ziel erfolgreich erstellt wurden.
 
-#### <a name="target-tenant"></a>Ziel mandant
+#### <a name="target-tenant"></a>Ziel-Mandant
 
 **Organisationsbeziehung**
 
@@ -248,7 +248,7 @@ AppSecretKeyVaultUrl : https://cross-tenantmyvaultformoves.vault.azure.net:443/c
 
 ```
 
-#### <a name="source-tenant"></a>Quell mandant
+#### <a name="source-tenant"></a>Quell-Mandant
 
 **Organisationsbeziehung**
 
@@ -273,15 +273,15 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
 
 #### <a name="verify-setup-script"></a>Überprüfen des Setupskripts
 
-Wenn während der Konfiguration der Quell- oder Ziel-Mandanten Fehler angezeigt werden, können Sie das Skript VerifySetup.ps1 [GitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview) ausführen und die Ausgabe überprüfen.
+Wenn Bei der Konfiguration der Quell- oder Ziel-Mandanten Fehler auftreten, können Sie das Skript VerifySetup.ps1 [GitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview) ausführen und die Ausgabe überprüfen.
 
-Hier ist ein Beispiel für die Ausführung VerifySetup.ps1 für den Ziel-Mandanten:
+Im Folgenden finden Sie ein Beispiel für die Ausführung VerifySetup.ps1 für den Ziel-Mandanten:
 
 ```powershell
 VerifySetup.ps1 -PartnerTenantId <SourceTenantId> -ApplicationId <AADApplicationId> -ApplicationKeyVaultUrl <appKeyVaultUrl> -PartnerTenantDomain <PartnerTenantDomain> -Verbose
 ```
 
-Hier ist ein Beispiel für VerifySetup.ps1 für den Quell-Mandanten:
+Im Folgenden finden Sie ein Beispiel für VerifySetup.ps1 für den Quell-Mandanten:
 
 ```powershell
 VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplicationId>
@@ -289,26 +289,26 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
 ### <a name="move-mailboxes-back-to-the-original-source"></a>Verschieben von Postfächern zurück zur ursprünglichen Quelle
 
-Wenn ein Postfach zurück zum ursprünglichen Quell mandanten verschoben werden muss, müssen die gleichen Schritte und Skripts sowohl in neuen Quell- als auch in neuen Ziel-Mandanten ausgeführt werden. Das vorhandene Organisationsbeziehungsobjekt wird aktualisiert oder angefügt, nicht neu erstellt.
+Wenn ein Postfach zurück zum ursprünglichen Quell-Mandant verschoben werden muss, müssen die gleichen Schritte und Skripts sowohl in neuen Quell- als auch in neuen Ziel-Mandanten ausgeführt werden. Das vorhandene Organisationsbeziehungsobjekt wird aktualisiert oder angefügt, nicht neu erstellt.
 
 ## <a name="prepare-target-user-objects-for-migration"></a>Vorbereiten von Zielbenutzerobjekten für die Migration
 
-Benutzer, die migrieren, müssen im Ziel mandanten- und Exchange Online-System (als MailUsers) vorhanden sein, die mit bestimmten Attributen gekennzeichnet sind, um die mandantenübergreifenden Migrationen zu ermöglichen. Bei Benutzern, die im Ziel mandanten nicht ordnungsgemäß eingerichtet sind, kann das System nicht ausgeführt werden. Im folgenden Abschnitt werden die Anforderungen des MailUser-Objekts für den Ziel mandanten beschrieben.
+Die Migration von Benutzern muss im Ziel mandanten- und Exchange Online-System (als MailUsers) vorhanden sein, die mit bestimmten Attributen gekennzeichnet sind, um mandantenübergreifende Bewegungen zu ermöglichen. Für Benutzer, die im Ziel-Mandanten nicht ordnungsgemäß eingerichtet sind, wird beim System ein Fehler ausgeführt. Im folgenden Abschnitt werden die MailUser-Objektanforderungen für den Ziel mandanten beschrieben.
 
 ### <a name="prerequisites"></a>Voraussetzungen
   
 Sie müssen sicherstellen, dass die folgenden Objekte und Attribute in der Zielorganisation festgelegt sind.  
 
-1. Für alle Postfächer, die aus einer Quellorganisation verschoben werden, müssen Sie ein MailUser -Objekt in der Zielorganisation bereitstellen: 
+1. Für alle Postfächer, die aus einer Quellorganisation verschoben werden, müssen Sie ein MailUser-Objekt in der Zielorganisation bereitstellen: 
 
-   - Das Ziel-MailUser-Objekt muss über die folgenden Attribute aus dem Quellpostfach verfügen oder dem neuen Benutzerobjekt zugewiesen sein:
+   - Ziel-MailUser muss über die folgenden Attribute aus dem Quellpostfach verfügen oder dem neuen User-Objekt zugewiesen sein:
       - ExchangeGUID (direkter Fluss von Quelle zu Ziel) – Die Postfach-GUID muss übereinstimmen. Der Verschiebevorgang wird nicht fortgesetzt, wenn dies für das Zielobjekt nicht vorhanden ist. 
-      - ArchiveGUID (direkter Fluss von Quelle zu Ziel) – Die Archiv-GUID muss übereinstimmen. Der Verschiebevorgang wird nicht fortgesetzt, wenn dies im Zielobjekt nicht vorhanden ist. (Dies ist nur erforderlich, wenn das Quellpostfach "Archiv" aktiviert ist. 
-      - LegacyExchangeDN (flow as proxyAddress, "x500: <LegacyExchangeDN> ") – Der LegacyExchangeDN muss im Ziel-MailUser als x500 vorhanden sein: proxyAddress. Die Verschiebeprozesse werden nicht fortgesetzt, wenn dies im Zielobjekt nicht vorhanden ist. 
-      - UserPrincipalName – UPN richtet sich nach der neuen Identität oder dem Zielunternehmen des Benutzers (z. B. user@northwindtraders.onmicrosoft.com). 
-      - Primäre SMTPAddress – Primäre SMTP-Adresse wird an der neuen Firma des Benutzers ausgerichtet (z. B. user@northwind.com). 
-      - TargetAddress/ExternalEmailAddress – MailUser referenziert das aktuelle Postfach des Benutzers, das im Quell mandanten gehostet wird (z. B. user@contoso.onmicrosoft.com). Stellen Sie beim Zuweisen dieses Werts sicher, dass Sie auch "PrimarySMTPAddress" zugewiesen haben/sind, oder legen Sie mit diesem Wert "PrimarySMTPAddress" fest, was zu Verschiebenfehlern führen kann. 
-      - Sie können keine legacy-SMTP-Proxyadressen aus dem Quellpostfach zu Ziel-MailUser hinzufügen. Sie können z. B. keine contoso.com für die E-Fabrikam.onmicrosoft.com Mandantenobjekte verwalten). Domänen sind nur einem Azure AD- oder Exchange Online-Mandanten zugeordnet.
+      - ArchiveGUID (direkter Fluss von Quelle zu Ziel) – Die Guid des Archivs muss übereinstimmen. Der Verschiebevorgang wird nicht fortgesetzt, wenn dies für das Zielobjekt nicht vorhanden ist. (Dies ist nur erforderlich, wenn das Quellpostfach Archive aktiviert ist). 
+      - LegacyExchangeDN (flow as proxyAddress, "x500: ") – Der <LegacyExchangeDN> LegacyExchangeDN muss auf ziel-MailUser als x500: proxyAddress vorhanden sein. Die Verschiebeprozesse werden nicht fortgesetzt, wenn dies im Zielobjekt nicht vorhanden ist. 
+      - UserPrincipalName – UPN richtet sich an der NEUEN Identität oder dem Zielunternehmen des Benutzers aus (z. B. user@northwindtraders.onmicrosoft.com). 
+      - Primäre SMTPAddress– Primäre SMTP-Adresse richtet sich nach dem NEUEN Unternehmen des Benutzers aus (z. B. user@northwind.com). 
+      - TargetAddress/ExternalEmailAddress – MailUser referenziert das aktuelle Postfach des Benutzers, das im Quell-Mandant gehostet wird (z. B. user@contoso.onmicrosoft.com). Stellen Sie beim Zuweisen dieses Werts sicher, dass Sie auch PrimarySMTPAddress zugewiesen haben bzw. zuweisen, oder dieser Wert gibt den PrimarySMTPAddress-Wert an, der zu Verschiebefehlern führen wird. 
+      - Sie können keine älteren SMTP-Proxyadressen aus dem Quellpostfach zu Ziel-MailUser hinzufügen. Sie können z. B. keine contoso.com für die MEU in fabrikam.onmicrosoft.com Mandantenobjekten verwalten). Domänen sind nur einem Azure AD- oder Exchange Online-Mandanten zugeordnet.
  
      Beispiel **für ein** MailUser-Zielobjekt:
  
@@ -329,7 +329,7 @@ Sie müssen sicherstellen, dass die folgenden Objekte und Attribute in der Zielo
      |                       | SMTP:Lara.Newton@northwind.com                                                                                           |
      |||
 
-     Beispiel für ein Quellpostfachobjekt: 
+     Beispiel **für das** Quellpostfachobjekt:
 
      | Attribut             | Wert                                                                    |
      |-----------------------|--------------------------------------------------------------------------|
@@ -345,34 +345,34 @@ Sie müssen sicherstellen, dass die folgenden Objekte und Attribute in der Zielo
      |                       | SMTP:Lara.Newton@contoso.com          |
      |||
 
-   - Zusätzliche Attribute sind möglicherweise bereits in der Exchange-Hybrid-Rückschreiben enthalten. Wenn nicht, sollten sie eingeschlossen werden. 
+   - Zusätzliche Attribute sind möglicherweise bereits in der Exchange-Hybrid-Rückschreiben enthalten. Andern falls nicht, sollten sie eingeschlossen werden. 
    - msExchBlockedSendersHash – Schreibt sichere und blockierte Absenderdaten von Clients in das lokale Active Directory zurück.
    - msExchSafeRecipientsHash – Schreibt sichere und blockierte Absenderdaten von Clients in das lokale Active Directory zurück.
    - msExchSafeSendersHash – Schreibt sichere und blockierte Absenderdaten von Clients in das lokale Active Directory zurück.
 
-2. Wenn sich das Quellpostfach auf LitigationHold befindet und die Größe des Quellpostfachs "Wiederherstellbare Elemente" größer als der Standardwert für die Datenbank (30 GB) ist, wird das Verschieben nicht fortgesetzt, da das Zielkontingent kleiner als die Größe des Quellpostfachs ist. Sie können das Ziel-MailUser-Objekt so aktualisieren, dass die ElC-Postfachflags von der Quellumgebung auf das Ziel umgestellt werden, wodurch das Zielsystem das Kontingent von MailUser auf 100 GB erweitert und die Umstellung auf das Ziel ermöglicht. Diese Anweisungen funktionieren nur für hybride Identitäten mit Azure AD Connect, da die Befehle zum Stempeln der ELC-Flags für Mandantenadministratoren nicht verfügbar gemacht werden.
+2. Wenn sich das Quellpostfach auf LitigationHold befindet und die Größe des Quellpostfachs "Wiederherstellbare Elemente" größer als die Standardgröße der Datenbank (30 GB) ist, wird das Verschieben nicht fortgesetzt, da das Zielkontingent kleiner als die Größe des Quellpostfachs ist. Sie können das MailUser-Zielobjekt so aktualisieren, dass die ELC-Postfachflags von der Quellumgebung zum Ziel verschoben werden. Dadurch wird das Zielsystem ausgelöst, um das Kontingent von MailUser auf 100 GB zu erweitern, sodass der Wechsel zum Ziel ermöglicht wird. Diese Anweisungen funktionieren nur für Hybrididentität mit Azure AD Connect, da die Befehle zum Stempeln der ELC-Flags nicht für Mandantenadministratoren verfügbar gemacht werden.
 
     >[!Note]
-    > BEISPIEL – WIE BESS, KEINE GARANTIE<br/>Dieses Skript setzt eine Verbindung mit dem Quellpostfach (zum Erhalten von Quellwerten) und dem lokalen Active Directory des Ziels (zum Stempeln des ADUser-Objekts) voraus. Wenn für die Quelle ein Rechtsstreit oder die Wiederherstellung einzelner Elemente aktiviert ist, legen Sie dies für das Zielkonto ein.  Dadurch wird die Dumpstergröße des Zielkontos auf 100 GB erhöht.
+    > BEISPIEL – AS IS, NO WARRANTY<br/>Dieses Skript setzt eine Verbindung mit dem Quellpostfach (um Quellwerte zu erhalten) und dem lokalen Active Directory-Ziel (zum Stempeln des ADUser-Objekts) voraus. Wenn für die Quelle ein Rechtsstreit oder die Wiederherstellung einzelner Elemente aktiviert ist, legen Sie dies für das Zielkonto ein.  Dadurch wird die Dumpstergröße des Zielkontos auf 100 GB erhöht.
 
     ```powershell
     $ELCValue = 0 
     if ($source.LitigationHoldEnabled) {$ELCValue = $ELCValue + 8} if ($source.SingleItemRecoveryEnabled) {$ELCValue = $ELCValue + 16} if ($ELCValue -gt 0) {Set-ADUser -Server $domainController -Identity $destination.SamAccountName -Replace @{msExchELCMailboxFlags=$ELCValue}} 
     ```
 
-3. Nicht-hybride Ziel-Mandanten können das Kontingent für den Ordner "Wiederherstellbare Elemente" für die MailUsers vor der Migration ändern, indem Sie den folgenden Befehl ausführen, um das Rechtsstreitigkeiten für das MailUser -Objekt zu aktivieren und das Kontingent auf 100 GB zu `Set-MailUser -EnableLitigationHoldForMigration $TRUE` erhöhen: Beachten Sie, dass dies bei Mandanten in hybriden Hybridbereitstellungen nicht funktioniert.
+3. Nicht hybride Ziel-Mandanten können das Kontingent für den Ordner "Wiederherstellbare Elemente" für die MailUsers vor der Migration ändern, indem Sie den folgenden Befehl ausführen, um das Litigation Hold für das MailUser-Objekt zu aktivieren und das Kontingent auf 100 GB zu erhöhen: `Set-MailUser -EnableLitigationHoldForMigration $TRUE` . Beachten Sie, dass dies für Mandanten in Hybrid nicht funktioniert.
 
-4. Benutzer in der Zielorganisation müssen mit entsprechenden Exchange Online-Abonnements lizenziert werden, die für die Organisation gelten. Sie können eine Lizenz vor dem Verschieben eines Postfachs anwenden, aber nur, wenn das Ziel-MailUser-Postfach ordnungsgemäß mit ExchangeGUID und Proxyadressen eingerichtet ist. Das Anwenden einer Lizenz vor dem Anwenden der ExchangeGUID führt zu einem neuen Postfach, das in der Zielorganisation bereitgestellt wird. 
+4. Benutzer in der Zielorganisation müssen mit entsprechenden Exchange Online-Abonnements lizenziert werden, die für die Organisation gelten. Sie können eine Lizenz vor dem Verschieben eines Postfachs anwenden, aber nur, wenn das Ziel-MailUser ordnungsgemäß mit ExchangeGUID und Proxyadressen eingerichtet ist. Das Anwenden einer Lizenz vor dem Anwenden der ExchangeGUID führt zu einem neuen Postfach, das in der Zielorganisation bereitgestellt wird. 
 
     > [!Note]
-    > Wenn Sie eine Lizenz auf ein Postfach- oder ein MailUser -Objekt anwenden, werden alle PROXYAddresses des Typs SMTP entfernt, um sicherzustellen, dass nur überprüfte Domänen im Exchange EmailAddresses-Array enthalten sind. 
+    > Wenn Sie eine Lizenz auf ein Mailbox- oder MailUser-Objekt anwenden, werden alle SMTP-Typproxyaddresses bereinigunget, um sicherzustellen, dass nur überprüfte Domänen im Exchange EmailAddresses-Array enthalten sind. 
 
-5. Sie müssen sicherstellen, dass das Ziel-MailUser-Konto keine vorherige ExchangeGuid hat, die nicht mit der ExchangeGuid-Quelle übereinstimmen. Dies kann vorkommen, wenn der Ziel-E-Mail-Benutzer zuvor für Exchange Online lizenziert und ein Postfach bereitgestellt hat. Wenn das Ziel-MailUser zuvor für eine ExchangeGuid lizenziert wurde oder über eine ExchangeGuid verfügte, die nicht der ExchangeGuid-Quelle entsprechen, müssen Sie eine Bereinigung der Cloud-MEU durchführen. Für diese Cloud-MEUs können Sie `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` ausführen.  
+5. Sie müssen sicherstellen, dass das Ziel-MailUser-Ziel keine vorherige ExchangeGuid-Version hat, die nicht mit der ExchangeGuid-Quelle übereinstimmen kann. Dies kann auftreten, wenn die Ziel-MEU zuvor für Exchange Online lizenziert und ein Postfach bereitgestellt wurde. Wenn das Ziel-MailUser zuvor für exchangeGuid lizenziert wurde oder über eine ExchangeGuid verfügte, die nicht mit der ExchangeGuid-Quelle übereinstimmen, müssen Sie eine Bereinigung der Cloud-MEU durchführen. Für diese Cloud-MEUs können Sie `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` ausführen.  
 
     > [!Caution]
-    > Dieser Vorgang ist unwiderruflich. Wenn das Objekt über ein "softDeleted"-Postfach verfügt, kann es nach diesem Zeitpunkt nicht wiederhergestellt werden. Nach dem Löschen können Sie jedoch die richtige ExchangeGuid mit dem Zielobjekt synchronisieren, und der Postfachpostfachserver verbindet das Quellpostfach mit dem neu erstellten Zielpostfach. (Referenzieren Sie den EHLO-Blog zum neuen Parameter.)  
+    > Dieser Vorgang ist unwiderruflich. Wenn das Objekt über ein softDeleted-Postfach verfügt, kann es nach diesem Zeitpunkt nicht wiederhergestellt werden. Nach dem Löschen können Sie jedoch das richtige ExchangeGuid-Objekt mit dem Zielobjekt synchronisieren, und MRS verbindet das Quellpostfach mit dem neu erstellten Zielpostfach. (Referenz-EHLO-Blog zum neuen Parameter.)  
 
-    Suchen Sie objekte, die zuvor Postfächer waren, indem Sie diesen Befehl verwenden.
+    Suchen Sie Objekte, die zuvor Postfächer waren, mithilfe dieses Befehls.
 
     ```powershell
     Get-User <identity> | select Name, *recipient* | ft -AutoSize
@@ -406,11 +406,11 @@ Sie müssen sicherstellen, dass die folgenden Objekte und Attribute in der Zielo
 
 ## <a name="perform-mailbox-migrations"></a>Durchführen von Postfachmigrationen
 
-Mandantenübergreifende Migrationen von Exchange-Postfächern werden als Migrationsbatches übermittelt, die vom Ziel mandanten initiiert werden. Dies ähnelt der Art und Weise, in der Migrationsbatches beim Migrieren von lokalen Exchange zu Microsoft 365 funktionieren. 
+Mandantenübergreifende Exchange-Postfachmigrationen werden als Migrationsbatches übermittelt, die vom Ziel mandanten initiiert wurden. Dies ähnelt der Art und Weise, wie Migrationsbatches beim Einsteigen bei der Migration von lokalen Exchange zu Microsoft 365 funktionieren. 
 
 ### <a name="create-migration-batches"></a>Erstellen von Migrationsbatches
 
-Hier ist ein Beispiel für ein Migrationsbatch-Cmdlet zum Starten von Verschiebebewegungen.
+Im Folgenden finden Sie ein Beispiel für ein Migrationsbatch-Cmdlet zum Starten von Bewegungen.
 
 ```powershell
 New-MigrationBatch -Name T2Tbatch-testforignitedemo -SourceEndpoint target_source_7977 -CSVData ([System.IO.File]::ReadAllBytes('users.csv')) -Autostart -TargetDeliveryDomain targetformoves.onmicrosoft.com -AutoComplete
@@ -422,25 +422,25 @@ T2Tbatch-testforignitedemo Syncing ExchangeRemoteMove 1
 ```
 
 > [!Note]
-> Die E-Mail-Adresse in der CSV-Datei muss die im Ziel-Mandanten angegebene Adresse sein, nicht der Quell-Mandant.
+> Die E-Mail-Adresse in der CSV-Datei muss die im Ziel-Mandant angegebene Adresse sein, nicht der Quell-Mandant.
 
-Die Migrationsbatchübermittlung wird auch vom neuen Exchange Admin Center unterstützt, wenn Sie die option für mandantenübergreifende Migration auswählen.
+Die Migrationsbatchübermittlung wird auch vom neuen Exchange Admin Center unterstützt, wenn die mandantenübergreifende Option ausgewählt wird.
 
 #### <a name="update-on-premises-mailusers"></a>Aktualisieren von lokalen MailUsers
 
-Sobald das Postfach von der Quelle zum Ziel verschoben wird, sollten Sie sicherstellen, dass die lokalen E-Mail-Benutzer( Quelle und Ziel) mit der neuen targetAddress aktualisiert werden. In den Beispielen ist die targetDeliveryDomain, die beim Verschieben verwendet wird, **contoso.onmicrosoft.com.** Aktualisieren Sie die E-Mail-Benutzer mit dieser targetAddress.
+Sobald das Postfach von Quelle zu Ziel verschoben wird, sollten Sie sicherstellen, dass die lokalen E-Mail-Benutzer, sowohl Source als auch Target, mit dem neuen targetAddress aktualisiert werden. In den Beispielen ist die targetDeliveryDomain, die in der Bewegung verwendet wird, **contoso.onmicrosoft.com**. Aktualisieren Sie die E-Mail-Benutzer mit dieser targetAddress.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-**Müssen wir RemoteMailboxes nach dem Verschieben lokal in der Quelle aktualisieren?**
+**Müssen wir RemoteMailboxen nach dem Verschieben lokal in der Quelle aktualisieren?**
 
-Ja, Sie sollten die targetAddress (RemoteRoutingAddress/ExternalEmailAddress) der lokalen Quellbenutzer aktualisieren, wenn das Quellpostfach des Mandanten zum Ziel mandanten verschoben wird.  Während das E-Mail-Routing den Empfehlungen für mehrere E-Mail-Benutzer mit unterschiedlichen TargetAddresses folgen kann, MÜSSEN Frei/Gebucht-Suchen für E-Mail-Benutzer auf den Standort des Postfachbenutzers zielen. Frei/Gebucht-Lookups verfolgen nicht mehrere Umleitungen. 
+Ja, Sie sollten die targetAddress (RemoteRoutingAddress/ExternalEmailAddress) der lokalen Quellbenutzer aktualisieren, wenn das Quell-Mandantenpostfach in den Ziel mandanten verschoben wird.  Während das E-Mail-Routing den Empfehlungen für mehrere E-Mail-Benutzer mit unterschiedlichen targetAddresses folgen kann, müssen Frei/Gebucht-Suchen für E-Mail-Benutzer auf den Speicherort des Postfachbenutzers zielen. Frei/Gebucht-Suchen verfolgen nicht mehrere Umleitungen. 
 
-**Werden die Inhalte des Teams-Chatordners mandantenübergreifende migriert?**  
+**Migriert der Inhalt des Teams-Chatordners mandantenübergreifende Inhalte?**  
 
 Nein, der Inhalt des Teams-Chatordners wird nicht mandantenübergreifende migriert.  
 
-**Wie kann ich nur Bewegungen sehen, bei der es sich um mandantenübergreifende Bewegungen handelt, nicht um meine Onboarding- und Offboard-Moves?**
+**Wie kann ich nur mandantenübergreifende Und nicht meine Onboarding- und Off-Boarding-Bewegungen sehen?**
 
 Verwenden Sie den `-flags` Parameter. Hier ein Beispiel.
 
@@ -448,10 +448,10 @@ Verwenden Sie den `-flags` Parameter. Hier ein Beispiel.
 Get-MoveRequest -Flags "CrossTenant"  
 ```
 
-**Können Sie Beispielskripts zum Kopieren von Attributen bereitstellen, die beim Testen verwendet werden?**
+**Können Sie Beispielskripts zum Kopieren von Attributen bereitstellen, die in Tests verwendet werden?**
 
 > [!Note]
-> BEISPIEL – WIE BESS, KEINE GARANTIE<br/>Dieses Skript geht von einer Verbindung mit dem Quellpostfach (zum Erhalten von Quellwerten) und den lokalen Active Directory-Zieldomänendiensten (zum Stempeln des ADUser-Objekts) aus. Wenn für die Quelle ein Rechtsstreit oder die Wiederherstellung einzelner Elemente aktiviert ist, legen Sie dies für das Zielkonto ein.  Dadurch wird die Dumpstergröße des Zielkontos auf 100 GB erhöht.
+> BEISPIEL – AS IS, NO WARRANTY<br/>Dieses Skript setzt eine Verbindung mit dem Quellpostfach (zum Abspeichern von Quellwerten) und den lokalen Active Directory-Domänendiensten (zum Stempeln des ADUser-Objekts) voraus. Wenn für die Quelle ein Rechtsstreit oder die Wiederherstellung einzelner Elemente aktiviert ist, legen Sie dies für das Zielkonto ein.  Dadurch wird die Dumpstergröße des Zielkontos auf 100 GB erhöht.
 
 ```powershell
 #Dumps out the test mailboxes from SourceTenant 
@@ -502,34 +502,34 @@ Start-ADSyncSyncCycle
 ```
 **Wie greifen wir auf Outlook an Tag 1 zu, nachdem das Verwendungspostfach verschoben wurde?**
 
-Da nur ein Mandant eine Domäne besitzen kann, wird die frühere primäre #A0 nach Abschluss der Postfach verschieben nicht dem Benutzer im Ziel mandanten zugeordnet. nur die Domänen, die dem neuen Mandanten zugeordnet sind. Outlook verwendet den neuen UPN der Benutzer für die Authentifizierung beim Dienst, und das Outlook-Profil erwartet, dass die primäre SMTPAddress der Vor-Version so zu finden ist, dass sie dem Postfach im Zielsystem zu entsprechen. Da sich die Legacyadresse nicht im Zielsystem befindet, wird vom Outlookprofil keine Verbindung hergestellt, um das neu verschobene Postfach zu finden. 
+Da nur ein Mandant eine Domäne besitzen kann, wird die frühere primäre SMTPAddress dem Benutzer im Ziel-Mandant nicht zugeordnet, wenn die Postfach verschieben abgeschlossen ist. nur die Domänen, die dem neuen Mandanten zugeordnet sind. Outlook verwendet den neuen BENUTZER-UPN, um sich beim Dienst zu authentifizieren, und das Outlook-Profil erwartet, dass das primäre SMTPAddress-Legacy für das Postfach im Zielsystem zu finden ist. Da sich die Legacyadresse nicht im Zielsystem befindet, wird im Outlook-Profil keine Verbindung hergestellt, um das neu verschobene Postfach zu finden. 
 
-Bei dieser anfänglichen Bereitstellung müssen Benutzer ihr Profil mit ihrem neuen UPN, der primären SMTP-Adresse, neu erstellen und die Ost-Inhalte erneut synchronisieren. 
+Für diese anfängliche Bereitstellung müssen Benutzer ihr Profil mit dem neuen UPN, der primären SMTP-Adresse und dem erneuten Synchronisieren von OST-Inhalten neu erstellen. 
 
 > [!Note]
-> Planen Sie entsprechend, während Sie die Benutzer für den Abschluss in einem Batch stapeln. Sie müssen die Netzwerkauslastung und Kapazität berücksichtigen, wenn Outlook-Clientprofile erstellt und nachfolgende OST- und OAB-Dateien auf Clients heruntergeladen werden. 
+> Planen Sie entsprechend, während Sie Ihre Benutzer für den Abschluss batchen. Sie müssen die Netzwerkauslastung und -kapazität berücksichtigen, wenn Outlook-Clientprofile erstellt und nachfolgende OST- und OAB-Dateien auf Clients heruntergeladen werden. 
  
-**Bei welchen Rollen für die rollenübergreifende Exchange-ROLLEN-Übergreifende Aktivierung muss ich Mitglied sein, um eine mandantenübergreifende Bewegung einrichten oder abschließen zu können?**
+**In welchen Exchange-Rollen muss ich Mitglied sein, um eine mandantenübergreifende Bewegung einrichten oder abschließen zu können?**
  
-Es gibt eine Matrix von Rollen, die auf der Annahme delegierter Aufgaben beim Ausführen einer Postfach verschieben basiert. Derzeit sind zwei Rollen erforderlich:  
+Es gibt eine Matrix von Rollen, die auf der Annahme delegierter Aufgaben beim Ausführen einer Postfach verschieben basieren. Derzeit sind zwei Rollen erforderlich:  
 
-- Die erste Rolle ist eine einmal durchgeführte Einrichtungsaufgabe, die die Autorisierung für das Verschieben von Inhalten in Oder von Ihrer Mandanten-/Organisationsgrenze ein- oder ausdingt. Da das Verschieben von Daten aus der Kontrolle Ihrer Organisation für alle Unternehmen ein entscheidendes Problem ist, haben wir uns für die höchste zugewiesene Rolle des Organisationsadministrators (OrgAdmin) entschieden. Diese Rolle muss eine neue OrganizationRelationship ändern oder einrichten, die "-MailboxMoveCapability" mit der Remoteorganisation definiert. Nur das OrgAdmin kann die Einstellung "MailboxMoveCapability" ändern, während andere Attribute für "OrganizationRelationhip" vom Verbundfreigabeadministrator verwaltet werden können. 
+- Die erste Rolle ist eine einmal durchgeführte Einrichtungsaufgabe, die die Autorisierung des Verschiebens von Inhalten in Oder aus Ihrer Mandanten-/Organisationsgrenze etabliert. Da das Verschieben von Daten aus Ihrem Organisationssteuerelement für alle Unternehmen ein entscheidendes Problem ist, haben wir uns mit der höchsten zugewiesenen Rolle des Organisationsadministrators (OrgAdmin) entschieden. Diese Rolle muss eine neue OrganizationRelationship ändern oder einrichten, die die -MailboxMoveCapability mit der Remoteorganisation definiert. Nur orgAdmin kann die Einstellung MailboxMoveCapability ändern, während andere Attribute des OrganizationRelationhip vom Verbundfreigabeadministrator verwaltet werden können. 
  
-- Die Rolle der Ausführung der tatsächlichen Verschiebebefehle kann an eine Funktion auf niedrigerer Ebene delegiert werden. Der Rolle des Verschiebens von Postfächern wird die Funktion zum Verschieben von Postfächern in oder aus der Organisation mithilfe des Parameters `-RemoteTenant` zugewiesen.  
+- Die Rolle der Ausführung der tatsächlichen Verschiebebefehle kann an eine Funktion auf niedrigerer Ebene delegiert werden. Der Rolle des Verschiebens von Postfächern wird die Möglichkeit zugewiesen, Postfächer mithilfe des Parameters in oder aus der Organisation zu `-RemoteTenant` verschieben.  
 
-**Wie wird die für targetAddress (TargetDeliveryDomain) ausgewählte SMTP-Adresse für das konvertierte Postfach (in die MailUser-Konvertierung) ausgewählt?**
+**Wie wird gezielt die SMTP-Adresse für targetAddress (TargetDeliveryDomain) für das konvertierte Postfach (in Die MailUser-Konvertierung) ausgewählt?**
  
-Exchange-Postfach-Verschieben mithilfe von MRS erstellen die targetAddress für das ursprüngliche Quellpostfach, wenn sie in ein MailUser konvertiert werden, indem eine E-Mail-Adresse (proxyAddress) für das Zielobjekt gefunden wird. Der Prozess verwendet den an den Verschiebebefehl übergebenen Wert "-TargetDeliveryDomain" und sucht dann auf der Zielseite nach einem übereinstimmenden Proxy für diese Domäne. Wenn wir eine Übereinstimmung finden, wird die übereinstimmende proxyAddress verwendet, um die ExternalEmailAddress (targetAddress) für das konvertierte Postfachobjekt (jetzt MailUser) festgelegt.
+Exchange-Postfach verschiebt mithilfe von MRS die targetAddress für das ursprüngliche Quellpostfach beim Konvertieren in ein MailUser-Objekt durch Abgleichen einer E-Mail-Adresse (proxyAddress) für das Zielobjekt. Der Prozess übernimmt den -TargetDeliveryDomain-Wert, der an den Befehl move übergeben wurde, und sucht dann auf der Zielseite nach einem übereinstimmenden Proxy für diese Domäne. Wenn eine Übereinstimmung gefunden wird, wird die übereinstimmende proxyAddress verwendet, um das ExternalEmailAddress (targetAddress) für das konvertierte Postfachobjekt (jetzt MailUser) zu setzen.
  
 **Wie werden Postfachberechtigungen übergangen?**
 
-Zu den Postfachberechtigungen gehören "Senden im Auftrag von" und "Postfachzugriff": 
+Postfachberechtigungen umfassen Senden im Auftrag von und Postfachzugriff: 
 
-- "Senden im Auftrag von" (AD:publicDelegates) speichert den DN von Empfängern mit Zugriff auf das Postfach eines Benutzers als Stellvertretung. Dieser Wert wird in Active Directory gespeichert und wird derzeit nicht als Teil des Postfachübergangs verschoben. Wenn für das Quellpostfach "publicDelegates" festgelegt ist, müssen Sie die publicDelegates für das Zielpostfach neu ausgestalten, sobald die Konvertierung von E-Mail in Postfach in der Zielumgebung abgeschlossen ist, indem Sie die Ausführung `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` ausführen. 
+- Send On Behalf Of (AD:publicDelegates) speichert den DN von Empfängern mit Zugriff auf das Postfach eines Benutzers als Stellvertretung. Dieser Wert wird in Active Directory gespeichert und wird derzeit nicht als Teil des Postfachübergangs verschoben. Wenn für das Quellpostfach publicDelegates festgelegt ist, müssen Sie die öffentlichenDelegates für das Zielpostfach erneut aufrüsten, sobald die Konvertierung "MEU in Mailbox" in der Zielumgebung abgeschlossen ist, indem Sie `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` ausführen. 
  
-- Postfachberechtigungen, die im Postfach gespeichert sind, werden mit dem Postfach verschoben, wenn sowohl der Prinzipal als auch die Stellvertretung in das Zielsystem verschoben werden. Beispielsweise erhält der Benutzer TestUser_7 Zugriff auf das Postfach, TestUser_8 in der Mandantendatenbank SourceCompany.onmicrosoft.com. Nachdem die Postfachspeicherung abgeschlossen TargetCompany.onmicrosoft.com, werden die gleichen Berechtigungen im Zielverzeichnis eingerichtet. Beispiele für *die Verwendung von Get-MailboxPermission* TestUser_7 sowohl in Quell- als auch in Ziel-Mandanten sind unten aufgeführt. Exchange-Cmdlets wird entsprechend das Präfix "Quelle" und "Ziel" vorangestellt. 
+- Postfachberechtigungen, die im Postfach gespeichert sind, werden mit dem Postfach verschoben, wenn sowohl der Prinzipal als auch der Stellvertreter in das Zielsystem verschoben werden. Beispielsweise wird dem Benutzer TestUser_7 vollzugriff auf die Postfachdatenbank TestUser_8 Mandanten SourceCompany.onmicrosoft.com. Nachdem die Postfach verschieben abgeschlossen TargetCompany.onmicrosoft.com, werden die gleichen Berechtigungen im Zielverzeichnis eingerichtet. Beispiele, *die Get-MailboxPermission* für TestUser_7 quell- und ziel mandanten verwenden, sind unten dargestellt. Exchange-Cmdlets wird quell- und zielpräfixiert. 
  
-Hier ist ein Beispiel für die Ausgabe der Postfachberechtigung vor einer Bewegung. 
+Hier sehen Sie ein Beispiel für die Ausgabe der Postfachberechtigung vor einer Bewegung. 
 
 ```powershell
 PS C:\PowerShell\> Get-SourceMailboxPermission testuser_7 |ft -AutoSize User, AccessRights, IsInherited, Deny
@@ -538,7 +538,7 @@ User                                             AccessRights                   
 NT AUTHORITY\SELF                                {FullAccess, ReadPermission}                                            False       False
 TestUser_8@SourceCompany.onmicrosoft.com         {FullAccess}                                                            False       False....
 ```
-Hier ist ein Beispiel für die Ausgabe der Postfachberechtigung nach dem Verschieben. 
+Hier sehen Sie ein Beispiel für die Ausgabe der Postfachberechtigung nach dem Verschieben. 
 
 ```powershell
 PS C:\PowerShell\> Get-TargetMailboxPermission testuser_7 | ft -AutoSize User, AccessRights, IsInherited, Deny
@@ -548,11 +548,11 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
 ```
  
 > [!Note]
-> Mandantenübergreifende Postfach- und Kalenderberechtigungen werden NICHT unterstützt. Sie müssen Prinzipale und Stellvertretung in konsolidierten Verschiebebatches organisieren, damit diese verbundenen Postfächer gleichzeitig vom Quell mandanten übertragen werden. 
+> Mandantenübergreifende Postfach- und Kalenderberechtigungen werden NICHT unterstützt. Sie müssen Prinzipale und Stellvertretung in konsolidierten Verschiebebatches organisieren, damit diese verbundenen Postfächer gleichzeitig vom Quell-Mandanten umgewechselt werden. 
 
-**Welcher X500-Proxy sollte den MailUser-Zielproxyadressen hinzugefügt werden, um die Migration zu ermöglichen?**  
+**Welcher X500-Proxy sollte den Ziel-MailUser-Proxyadressen hinzugefügt werden, um die Migration zu ermöglichen?**  
 
-Für die mandantenübergreifende Postfachmigration muss der LegacyExchangeDN-Wert des Quellpostfachobjekts als x500-E-Mail-Adresse im Ziel-MailUser-Objekt gestempelt werden.  
+Für die mandantenübergreifende Postfachmigration muss der LegacyExchangeDN-Wert des Quellpostfachobjekts als x500-E-Mail-Adresse für das MailUser-Zielobjekt gestempelt werden.  
 
 Beispiel:  
 ```powershell
@@ -566,59 +566,59 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 > [!Note]  
 > Zusätzlich zu diesem X500-Proxy müssen Sie alle X500-Proxys aus dem Postfach in der Quelle in das Postfach im Ziel kopieren.  
 
-**Wo beginne ich mit der Problembehandlung, wenn Dies nicht funktioniert?**  
+**Wo beginne ich mit der Problembehandlung, wenn Bewegungen nicht funktionieren?**  
 
-Beginnen Sie, indem Sie VerifySetup.ps1 Skript auf [GitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview) ausführen und die Ausgabe überprüfen.
+Starten Sie, indem Sie VerifySetup.ps1 Skript auf [GitHub ausführen](https://github.com/microsoft/cross-tenant/releases/tag/Preview) und die Ausgabe überprüfen.
 
-Hier ist ein Beispiel für die Ausführung VerifySetup.ps1 für den Ziel-Mandanten:
+Im Folgenden finden Sie ein Beispiel für die Ausführung VerifySetup.ps1 für den Ziel-Mandanten:
 
 ```powershell
 VerifySetup.ps1 -PartnerTenantId <SourceTenantId> -ApplicationId <AADApplicationId> -ApplicationKeyVaultUrl <appKeyVaultUrl> -PartnerTenantDomain <PartnerTenantDomain> -Verbose
 ```
 
-Hier sehen Sie eine eExample zum Ausführen VerifySetup.ps1 für den Quell-Mandanten:
+Hier ist ein eExample zum Ausführen von VerifySetup.ps1 für den Quell-Mandanten:
 
 ```powershell
 VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplicationId>
 ```
 
-**Kann der Quell- und Ziel mandant denselben Domänennamen verwenden?**  
+**Kann der Quell- und Ziel-Mandant denselben Domänennamen verwenden?**  
 
-Nein. Die Quell- und Zieldomänendomänennamen des Mandanten müssen eindeutig sein. Beispielsweise eine Quelldomäne von contoso.com und die Zieldomäne des fourthcoffee.com.
+Nein. Die Quell- und Ziel-Mandantendomänennamen müssen eindeutig sein. Beispielsweise eine Quelldomäne von contoso.com und die Zieldomäne von fourthcoffee.com.
 
-**Werden freigegebene Postfächer verschoben und funktionieren sie weiterhin?**
+**Werden freigegebene Postfächer verschoben und funktionieren weiterhin?**
 
-Ja, wir behalten jedoch nur die Speicherberechtigungen, wie in den folgenden Artikeln beschrieben:
+Ja, wir behalten jedoch nur die Speicherberechtigungen wie in den folgenden Artikeln beschrieben bei:
 
 - [Microsoft Docs | Verwalten von Berechtigungen für Empfänger in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
 
-- [Microsoft Support | So erteilen Sie Exchange- und Outlook-Postfachberechtigungen in Office 365 de dedicated](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
+- [Microsoft Support | Erteilen von Exchange- und Outlook-Postfachberechtigungen in Office 365](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
 **Ist Azure Key Vault erforderlich und wann werden Transaktionen ausgeführt?**  
 
-Ja, ein Azure-Abonnement ist erforderlich, um Key Vault zum Speichern des Zertifikats zum Autorisieren der Migration zu verwenden. Im Gegensatz zu Onboardingmigrationen, bei denen der Benutzername & Kennwort für die Authentifizierung bei der Quelle verwendet wird, verwenden mandantenübergreifende Postfachmigrationen OAuth und dieses Zertifikat als schlüssel-/anmeldeinformationen. Der Zugriff auf den Key Vault muss während aller Postfachmigrationen beibehalten werden, da zu Beginn und nach dem Ende der Migration einmal darauf zugegriffen wird, sowie einmal alle 24 Stunden während inkrementeller Synchronisierungszeiten. Details zu den Kosten für AKV finden Sie [hier.]( https://azure.microsoft.com/en-us/pricing/details/key-vault/)  
+Ja, ein Azure-Abonnement ist erforderlich, um Key Vault zum Speichern des Zertifikats zum Autorisieren der Migration zu verwenden. Im Gegensatz zu Onboardingmigrationen, die den Benutzernamen & kennwort für die Authentifizierung bei der Quelle verwenden, verwenden mandantenübergreifende Postfachmigrationen OAuth und dieses Zertifikat als Geheim-/Anmeldeinformationen. Der Zugriff auf den Schlüsseltresor muss während aller Postfachmigrationen beibehalten werden, da am Anfang und am Ende der Migration einmal darauf zugegriffen wird, sowie einmal alle 24 Stunden während inkrementeller Synchronisierungszeiten. Details zur AKV-Kostenkalkulation finden Sie [hier]( https://azure.microsoft.com/en-us/pricing/details/key-vault/).  
 
 **Gibt es Empfehlungen für Batches?**  
 
-Überschreiten Sie nicht mehr als 2.000 Postfächer pro Batch. Es wird dringend empfohlen, Batches zwei Wochen vor dem Synchronisierungsdatum zu übermitteln, da es während der Synchronisierung keine Auswirkungen auf die Endbenutzer gibt. Wenn Sie Anleitungen für Postfachmengen über 50.000 benötigen, können Sie sich an die Engineering Feedback Distribution List unter crosstenantmigrationpreview@service.microsoft.com.
+Nicht mehr als 2.000 Postfächer pro Batch. Es wird dringend empfohlen, Batches zwei Wochen vor dem Fälligkeitsdatum zu übermitteln, da während der Synchronisierung keine Auswirkungen auf die Endbenutzer zu sehen sind. Wenn Sie Anleitungen für Postfächer über 50.000 benötigen, können Sie sich an die Engineering Feedback Distribution List unter crosstenantmigrationpreview@service.microsoft.com.
 
-**Was passiert, wenn ich die Dienstverschlüsselung mit Customer Key verwende?**
+**Was passiert, wenn ich die Dienstverschlüsselung mit dem Kundenschlüssel verwende?**
 
-Das Postfach wird vor dem Verschieben entschlüsselt. Stellen Sie sicher, dass der Kundenschlüssel im Ziel mandanten konfiguriert ist, wenn er weiterhin erforderlich ist. Weitere [Informationen finden](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview) Sie hier.  
+Das Postfach wird vor dem Verschieben entschlüsselt. Stellen Sie sicher, dass der Kundenschlüssel im Ziel-Mandant konfiguriert ist, wenn er weiterhin erforderlich ist. Weitere [Informationen](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview) finden Sie hier.  
 
-**Wie sieht die geschätzte Migrationszeit aus?**
+**Wie ist die geschätzte Migrationszeit?**
 
-Zur Unterstützung der Planung der [](https://docs.microsoft.com/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) Migration enthält die hier aufgeführte Tabelle die Richtlinien, wann Massenmigrationen von Postfächern oder einzelne Migrationen durchgeführt werden sollten. Diese Schätzungen basieren auf einer Datenanalyse vorheriger Kundenmigrationen. Da jede Umgebung einzigartig ist, kann die genaue Migrationsgeschwindigkeit variieren.  
+Um Die Migration zu planen, [](https://docs.microsoft.com/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) enthält die hier gezeigte Tabelle die Richtlinien, wann Massenpostfachmigrationen oder einzelne Migrationen abgeschlossen werden sollen. Diese Schätzungen basieren auf einer Datenanalyse früherer Kundenmigrationen. Da jede Umgebung eindeutig ist, kann die genaue Migrationsgeschwindigkeit variieren.  
 
-Denken Sie daran, dass sich dieses Feature derzeit in der Vorschau befindet und die SLA und alle anwendbaren Servicelevels während des Vorschaustatus dieses Features nicht auf Leistungs- oder Verfügbarkeitsprobleme angewendet werden.
+Denken Sie daran, dass sich dieses Feature derzeit in der Vorschau befindet und die SLA und alle anwendbaren ServiceLevels während des Vorschaustatus dieses Features nicht auf Leistungs- oder Verfügbarkeitsprobleme angewendet werden.
 
 ## <a name="known-issues"></a>Bekannte Probleme  
 
--  **Problem: Automatisch erweiterte Archive können nicht migriert werden.** Die mandantenübergreifende Migrationsfunktion unterstützt Migrationen des primären Postfachs und Archivpostfachs für einen bestimmten Benutzer. Wenn der Benutzer in der Quelle jedoch über ein automatisch erweitertes Archiv verfügt , d. h. mehrere Archivpostfächer, kann das Feature die zusätzlichen Archive nicht migrieren und sollte fehlschlagen.
+-  **Problem: Automatisch erweiterte Archive können nicht migriert werden.** Das mandantenübergreifende Migrationsfeature unterstützt Migrationen des primären Und Archivpostfachs für einen bestimmten Benutzer. Wenn der Benutzer in der Quelle jedoch über ein automatisch erweitertes Archiv verfügt , d. h. mehr als ein Archivpostfach, kann das Feature die zusätzlichen Archive nicht migrieren und sollte fehlschlagen.
 
-- **Problem: Cloud MailUsers mit nicht im Besitz von "smtp proxyAddress"-Block-MRS verschiebt den Hintergrund.** Beim Erstellen von Ziel-Mandanten-MailUser-Objekten müssen Sie sicherstellen, dass alle SMTP-Proxyadressen zur Ziel mandantenorganisation gehören. Wenn für den Ziel-E-Mail-Benutzer, der nicht zum lokalen Mandanten gehört, eine SMTP-Proxyadresse vorhanden ist, wird die Konvertierung von MailUser in Mailbox verhindert. Dies liegt an unserer Zusicherung, dass Postfachobjekte nur E-Mails von Domänen senden können, für die der Mandant autorisierend ist (vom Mandanten beanspruchte Domänen): 
+- **Problem: Cloud MailUsers mit nicht im Besitz des SmtpproxysAddress Block MRS verschiebt hintergrund.** Beim Erstellen von MailUser-Ziel-Mandantenobjekten müssen Sie sicherstellen, dass alle SMTP-Proxyadressen zur Ziel mandantenorganisation gehören. Wenn ein SMTP-proxyAddress für den Ziel-E-Mail-Benutzer vorhanden ist, der nicht zum lokalen Mandanten gehört, wird die Konvertierung von MailUser in Mailbox verhindert. Dies liegt an der Zusicherung, dass Postfachobjekte nur E-Mails von Domänen senden können, für die der Mandant autorisierend ist (vom Mandanten beanspruchte Domänen): 
 
-   - Wenn Sie Benutzer lokal mithilfe von Azure AD Connect synchronisieren, stellen Sie lokale "MailUser"-Objekte mit "ExternalEmailAddress" bereit, die auf den Quell-Mandanten zeigen, in dem das Postfach vorhanden ist (laran@contoso.onmicrosoft.com), und stempeln "PrimarySMTPAddress" als Domäne, die sich im Ziel mandanten (Lara.Newton@northwind.com) befindet. Diese Werte werden mit dem Mandanten synchronisiert, und ein entsprechender E-Mail-Benutzer ist bereitgestellt und für die Migration bereit. Hier wird ein Beispielobjekt gezeigt.
+   - Wenn Sie Benutzer lokal mit Azure AD Connect synchronisieren, stellen Sie lokale MailUser-Objekte mit ExternalEmailAddress bereit, die auf den Quell mandanten verweisen, in dem das Postfach vorhanden ist (laran@contoso.onmicrosoft.com), und Sie stempeln die PrimarySMTPAddress als Domäne, die sich im Ziel mandanten befindet (Lara.Newton@northwind.com). Diese Werte werden mit dem Mandanten synchronisiert, und ein entsprechender E-Mail-Benutzer ist bereitgestellt und für die Migration bereit. Hier wird ein Beispielobjekt gezeigt.
      ```powershell
      target/AADSynced user] PS C> Get-MailUser laran | select ExternalEmailAddress, EmailAddresses   
      ExternalEmailAddress               EmailAddresses 
@@ -627,13 +627,13 @@ Denken Sie daran, dass sich dieses Feature derzeit in der Vorschau befindet und 
      ```
 
    > [!Note]
-   > Die *contoso.onmicrosoft.com* Adresse *ist im* Array "EmailAddresses/proxyAddresses" nicht vorhanden.
+   > Die *contoso.onmicrosoft.com* adresse *ist nicht* im EmailAddresses /proxyAddresses-Array vorhanden.
 
 - **Problem: MailUser-Objekte mit "externen" primären SMTP-Adressen werden geändert/auf "interne" vom Unternehmen beanspruchte Domänen zurückgesetzt**
 
-   MailUser -Objekte sind Zeiger auf nicht lokale Postfächer. Bei mandantenübergreifenden Postfachmigrationen verwenden wir MailUser-Objekte, um entweder das Quellpostfach (aus der Perspektive der Zielorganisation) oder das Zielpostfach (aus der Perspektive der Quellorganisation) zu repräsentieren. Die MailUsers verfügen über eine ExternalEmailAddress (targetAddress), die auf die smtp-Adresse des tatsächlichen Postfachs (ProxyTest@fabrikam.onmicrosoft.com) und die primäreSMTP-Adresse verweist, die die angezeigte SMTP-Adresse des Postfachbenutzers im Verzeichnis darstellt. Einige Organisationen entscheiden sich dafür, die primäre SMTP-Adresse als externe SMTP-Adresse und nicht als Adresse im Besitz des lokalen Mandanten (z. B. fabrikam.com anstelle von contoso.com) angezeigt zu contoso.com.  Nachdem jedoch ein Objekt des Exchange-Dienstplans über Lizenzierungsvorgänge auf MailUser angewendet wurde, wird die primäre SMTP-Adresse geändert, um sie als von der lokalen Organisation überprüfte Domäne (contoso.com). Es gibt zwei mögliche Gründe:
+   MailUser-Objekte sind Zeiger auf nicht lokale Postfächer. Bei mandantenübergreifenden Postfachmigrationen verwenden wir MailUser-Objekte, um entweder das Quellpostfach (aus Sicht der Zielorganisation) oder das Zielpostfach (aus der Perspektive der Quellorganisation) zu repräsentieren. Die MailUsers verfügen über eine ExternalEmailAddress (targetAddress), die auf die SMTP-Adresse des tatsächlichen Postfachs (ProxyTest@fabrikam.onmicrosoft.com) und der primärenSMTP-Adresse verweist, die die angezeigte SMTP-Adresse des Postfachbenutzers im Verzeichnis darstellt. Einige Organisationen entscheiden sich dafür, die primäre SMTP-Adresse als externe SMTP-Adresse und nicht als Adresse im Besitz des lokalen Mandanten (z. B. fabrikam.com anstatt als contoso.com).  Nachdem jedoch ein Exchange-Dienstplanobjekt über Lizenzierungsvorgänge auf das MailUser-Objekt angewendet wurde, wird die primäre SMTP-Adresse so geändert, dass sie von der lokalen Organisation (contoso.com) überprüft wird. Es gibt zwei mögliche Gründe:
    
-   - Wenn ein beliebiger Exchange-Dienstplan auf ein MailUser angewendet wird, beginnt der Azure AD-Prozess, proxy scrubbing zu erzwingen, um sicherzustellen, dass die lokale Organisation keine E-Mails, Spoofing oder E-Mails von einem anderen Mandanten senden kann. Alle SMTP-Adressen für ein Empfängerobjekt mit diesen Dienstplänen werden entfernt, wenn die Adresse nicht von der lokalen Organisation überprüft wird. Wie im Beispiel wird die Fabikam.com Domäne nicht vom contoso.onmicrosoft.com-Mandanten überprüft, sodass das Scrubbing diese fabrikam.com entfernt. Wenn Sie diese externe Domäne in MailUser beibehalten möchten, entweder vor der Migration oder nach der Migration, müssen Sie Ihre Migrationsprozesse so ändern, dass Lizenzen nach Abschluss der Migration oder vor dem Verschieben entfernen werden, um sicherzustellen, dass die Benutzer das erwartete externe Branding angewendet haben. Sie müssen sicherstellen, dass das Postfachobjekt ordnungsgemäß lizenziert ist, um keinen Einfluss auf den E-Mail-Dienst zu haben.<br/><br/>Hier wird ein Beispielskript zum Entfernen der Dienstpläne für einen MailUser im Contoso.onmicrosoft.com A0 gezeigt.
+   - Wenn ein Exchange-Dienstplan auf einen MailUser angewendet wird, beginnt der Azure AD-Prozess, die Proxybereinigung zu erzwingen, um sicherzustellen, dass die lokale Organisation keine E-Mails, Spoof- oder E-Mails von einem anderen Mandanten senden kann. Jede SMTP-Adresse für ein Empfängerobjekt mit diesen Dienstplänen wird entfernt, wenn die Adresse nicht von der lokalen Organisation überprüft wird. Wie im Beispiel wird die Fabikam.com-Domäne nicht vom contoso.onmicrosoft.com-Mandanten überprüft, sodass die Fabrikam.com entfernt wird. Wenn Sie diese externe Domäne auf MailUser beibehalten möchten, entweder vor der Migration oder nach der Migration, müssen Sie Ihre Migrationsprozesse so ändern, dass Lizenzen nach Abschluss des Verschiebens oder vor dem Verschieben gestreift werden, um sicherzustellen, dass die Benutzer das erwartete externe Branding angewendet haben. Sie müssen sicherstellen, dass das Postfachobjekt ordnungsgemäß lizenziert ist, um keinen Einfluss auf den E-Mail-Dienst zu haben.<br/><br/>Hier wird ein Beispielskript zum Entfernen der Dienstpläne für einen MailUser im Contoso.onmicrosoft.com mandanten angezeigt.
 
     ```powershell
     $LO = New-MsolLicenseOptions -AccountSkuId "contoso:ENTERPRISEPREMIUM" DisabledPlans 
@@ -688,7 +688,7 @@ Denken Sie daran, dass sich dieses Feature derzeit in der Vorschau befindet und 
 
     ```
  
-       Die PrimarySMTPAddress des Benutzers wird nicht mehr bereinigungsbereinigung. Die fabrikam.com befindet sich nicht im Besitz des contoso.onmicrosoft.com Mandanten und wird als primäre SMTP-Adresse beibehalten, die im Verzeichnis angezeigt wird.
+       PrimarySMTPAddress des Benutzers wird nicht mehr gestrubbt. Die fabrikam.com befindet sich nicht im Besitz des contoso.onmicrosoft.com Mandanten und bleibt als primäre SMTP-Adresse im Verzeichnis erhalten.
 
        Hier ein Beispiel.
 
@@ -699,7 +699,7 @@ Denken Sie daran, dass sich dieses Feature derzeit in der Vorschau befindet und 
     proxytest@fabrikam.com    e2513482-1d5b-4066-936a-cbc7f8f6f817    SMTP:proxytest@fabrikam.com 
     ```
 
-   - Wenn "msExchRemoteRecipientType" auf "8" (DeprovisionMailbox) festgelegt ist, entfernt die Proxybereinigungslogik in Azure für lokale MailUser, die zum Zielmandanten migriert werden, nicht gehostete Domänen und setzt den primarySMTP auf eine Domäne im Besitz zurück. Durch Löschen von "msExchRemoteRecipientType" im lokalen MailUser gilt die Proxybereinigungslogik nicht mehr. <br/><br>Im Folgenden finden Sie den vollständigen Satz möglicher Servicepläne, die Exchange Online enthalten.
+   - Wenn msExchRemoteRecipientType auf 8 (DeprovisionMailbox) festgelegt ist, werden für lokale MailUser, die zum Zielmandanten migriert werden, von der Proxybereinigungslogik in Azure nicht besitzereigene Domänen entfernt und der primäreSMTP auf eine eigene Domäne zurückgesetzt. Durch Löschen von msExchRemoteRecipientType im lokalen MailUser wird die Proxybereinigungslogik nicht mehr angewendet. <br/><br>Nachfolgend finden Sie den vollständigen Satz möglicher Dienstpläne, die Exchange Online enthalten.
 
    | Name                                              |
    |---------------------------------------------------|
@@ -714,7 +714,7 @@ Denken Sie daran, dass sich dieses Feature derzeit in der Vorschau befindet und 
    | Exchange Online (Plan 2)                          |
    | Exchange Online-Archivierung für Exchange Online     |
    | Exchange Online-Archivierung für Exchange Server     |
-   | Exchange Online Inactive User Add-on              |
+   | Exchange Online Inaktives Benutzer-Add-On              |
    | Exchange Online-Kiosk                             |
    | Exchange Online Multi-Geo                         |
    | Exchange Online Plan 1                            |
@@ -724,7 +724,7 @@ Denken Sie daran, dass sich dieses Feature derzeit in der Vorschau befindet und 
    | Information Protection für Office 365 – Premium   |
    | Information Protection für Office 365 – Standard  |
    | Einblicke von MyAnalytics                           |
-   | Microsoft 365 Advanced Auditing                   |
+   | Erweiterte Microsoft 365-Überwachung                   |
    | Microsoft Bookings                                |
    | Microsoft Business Center                         |
    | Microsoft MyAnalytics (Vollversion)                      |
@@ -732,5 +732,5 @@ Denken Sie daran, dass sich dieses Feature derzeit in der Vorschau befindet und 
    | Microsoft Defender für Office 365 (Plan 1)    |
    | Microsoft Defender für Office 365 (Plan 2)    |
    | Office 365 Privileged Access Management           |
-   | Premiumverschlüsselung in Office 365                  |
+   | Premium-Verschlüsselung in Office 365                  |
     

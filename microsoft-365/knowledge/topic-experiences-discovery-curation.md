@@ -1,6 +1,6 @@
 ---
-title: 'Microsoft Topics – Themensuche und -curation  '
-description: Übersicht über die Art und Weise, wie Themen ermittelt werden.
+title: 'Microsoft Viva Topics– Themenermittlung und -curation  '
+description: Übersicht darüber, wie Themen ermittelt werden.
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -11,63 +11,63 @@ ms.service: ''
 ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 435544de1016552c6ce3d39c73f7127223f36331
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 036dbc4029cc7e8308ad295ccd8b45dc3879a6f8
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107708"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453957"
 ---
-# <a name="microsoft-viva-topics-discovery-and-curation"></a>Microsoft -Themenermittlung und -curation 
+# <a name="microsoft-viva-topics-discovery-and-curation"></a>Microsoft Viva Topics – Entdecken und organisatorische Aufgaben 
 
-Unter "Themen" werden Informationen zu Wissen in Ihrer Microsoft 365-Umgebung organisiert. Wir haben alle erfahren durch Dokumente und Websiteseiten gelesen, auf denen Begriffe auftreten, mit denen wir nicht vertraut sind. Wir beenden oft, was wir tun, um viel Zeit mit der Suche nach weiteren Informationen zu verbringen.
+Viva Topics organisiert Informationen zu Wissen in Ihrer Microsoft 365-Umgebung. Wir haben alle Erfahrung beim Lesen von Dokumenten und Websiteseiten, auf denen uns Begriffe begegnen, mit denen wir nicht vertraut sind. Oft beenden wir, was wir tun, um wertvolle Zeit auf die Suche nach weiteren Informationen zu verbringen.
 
-Unter "Themen" werden Microsoft Graph und KI verwendet, um **Themen** in Ihrer Organisation zu identifizieren.  Ein Thema ist ein Ausdruck oder Ausdruck, der eine bestimmte Bedeutung für die Organisation hat und ressourcenbezogene Ressourcen enthält, mit deren Hilfe Benutzer den Begriff verstehen und weitere Informationen zu diesem Thema finden können. Es gibt viele verschiedene Thementypen, die für Ihre Organisation wichtig sind. Zunächst können die folgenden Thementypen identifiziert werden:
+Viva Topics verwendet Microsoft Graph und AI, um **Themen** in Ihrer Organisation zu identifizieren.  Ein Thema ist ein Ausdruck oder Ausdruck, der eine bestimmte Bedeutung für die Organisation hat und ressourcenbezogene Ressourcen enthält, mit deren Hilfe Personen verstehen können, was es ist, und weitere Informationen dazu finden. Es gibt viele verschiedene Arten von Themen, die für Ihre Organisation wichtig sind. Zunächst können die folgenden Thementypen identifiziert werden:
 - Project
 - Ereignis
 - Organisation
-- Ort
+- Standort
 - Produkt
-- Kreatives Arbeiten
+- Kreative Arbeit
 - Studienbereich
 
-Ki identifiziert Personen und Inhalte, die mit dem Thema verbunden sind, und wenn genügend gefunden wird, wird sie zu einem vorgeschlagenen Thema. Die folgenden Eigenschaften werden identifiziert und auf einer **Themenseite angezeigt:**
+AI identifiziert Personen und Inhalte, die mit dem Thema verbunden sind, und wenn genügend gefunden wird, wird sie zu einem vorgeschlagenen Thema. Die folgenden Eigenschaften werden identifiziert und auf einer Themenseite **angezeigt:**
 - Alternative Namen und/oder Akronyme.
 - Eine kurze Beschreibung des Themas.
-- Personen, die möglicherweise mit dem Thema bekannt sind.
-- Dateien, Seiten und Websites im Zusammenhang mit dem Thema.
+- Personen, die mit dem Thema möglicherweise bekannt sind.
+- Dateien, Seiten und Websites, die mit dem Thema in Zusammenhang stehen.
 
-Die Eigenschaften werden anhand der Dateien und Seiten identifiziert, die Teil des Nachweises für die Identifizierung des Themas sind. Alternative Namen und Akronyme werden aus diesen Dateien und Seiten stammen. Die kurze Beschreibung stammt aus diesen Dateien und Seiten oder aus dem Internet über Wikipedia. Auf die Quelldatei, die Seite oder den Wikipedia-Artikel wird zusammen mit den vorgeschlagenen Eigenschaften verwiesen. Personen werden basierend auf ihren aktiven Beiträgen (z. B. Bearbeitungen) an den Dateien und Seiten vorgeschlagen. Ein Verweis auf die Höhe der Beiträge einer bestimmten Person gibt einen Hinweis darauf, warum die Person identifiziert wurde. Dateien, Seiten und Websites werden basierend darauf bewertet, ob sie im Mittelpunkt des Themas stehen, ob sie einen Überblick oder eine Einführung in das Thema bieten können. 
+Die Eigenschaften werden anhand der Dateien und Seiten identifiziert, die Teil der Nachweise für die Identifizierung des Themas sind. Alternative Namen und Akronyme werden aus diesen Dateien und Seiten stammen. Die kurze Beschreibung stammt aus diesen Dateien und Seiten oder aus dem Internet über Wikipedia. Auf die Quelldatei, die Seite oder den Wikipedia-Artikel wird neben den vorgeschlagenen Eigenschaften verwiesen. Personen werden basierend auf ihren aktiven Beiträgen (z. B. Bearbeitungen) für die Dateien und Seiten vorgeschlagen. Ein Verweis auf die Höhe der Beiträge einer bestimmten Person gibt einen Hinweis darauf, warum die Person identifiziert wurde. Dateien, Seiten und Websites werden basierend darauf bewertet, ob sie für das Thema zentral sind, ob sie einen Überblick oder eine Einführung in das Thema geben können. 
 
-Nicht jedes identifizierte Thema ist für Ihre Organisation nützlich. Möglicherweise wurden keine der richtigen alternativen Namen, Beschreibungen, die entsprechenden Personen oder Inhalte identifiziert. Daher ist die Möglichkeit, Themen hinzuzufügen, die nicht identifiziert werden, vorgeschlagene Themen zu halten und Themen zu krümmen, von entscheidender Bedeutung, um die Qualität der Themen zu verbessern, die in Ihrer Organisation erkennbar sind.
+Nicht jedes identifizierte Thema ist für Ihre Organisation hilfreich. Möglicherweise wurden keine der richtigen alternativen Namen, Beschreibungen, entsprechenden Personen oder Inhalte identifiziert. Daher ist die Möglichkeit, Themen hinzuzufügen, die nicht identifiziert werden, vorgeschlagene Themen zu behalten und Themen zu kuratieren, entscheidend für die Verbesserung der Qualität der Themen, die in Ihrer Organisation gefunden werden können.
 
-Wenn der Kontext angemessen ist, werden diese Themen dann auf allen modernen SharePoint-Websiteseiten in Ihrem Mandanten hervorgehoben. Auf das Thema kann auch direkt von einem Seitenautor auf der Seite der modernen SharePoint-Website verwiesen werden. Wenn ein Benutzer mehr über ein Thema erfahren möchte, kann er  das hervorgehobene Thema auswählen, um eine Zusammenfassungskarte für Themen mit einer kurzen Beschreibung zu erhalten. Und wenn sie mehr erfahren möchten, können sie einen **Link** "Themendetails" in der Zusammenfassung auswählen, um die detaillierte Themenseite zu öffnen.
+Wenn der Kontext geeignet ist, schlagen Sie dann themenbezogene Themen vor, die auf allen modernen SharePoint-Websiteseiten in Ihrem Mandanten hervorgehoben werden sollen. Auf das Thema kann auch direkt auf der modernen SharePoint-Websiteseite durch einen Seitenautor verwiesen werden. Wenn ein Benutzer neugierig ist, mehr über ein Thema zu erfahren, kann er das hervorgehobene Thema auswählen, um eine Zusammenfassungskarte des Themas mit einer kurzen Beschreibung zu sehen.  Und wenn sie mehr erfahren möchten, können sie in der Zusammenfassung einen **Link** zu Themendetails auswählen, um die ausführliche Themenseite zu öffnen.
 
 ![Themenhighlights](../media/knowledge-management/saturn.png) </br>
 
 Darüber hinaus können Benutzer auch Themen über Microsoft Search finden.
 
-## <a name="topic-curation-and-feedback"></a>Themenkrümmung und Feedback
+## <a name="topic-curation-and-feedback"></a>Themenkurierung und Feedback
 
-"Themen" begrüsst den menschlichen Beitrag zur Verbesserung der Qualität Ihrer Themen. Während AI zunächst Themen identifiziert und vorschlägt, sind manuelle Änderungen an Inhalten von Mitwirkenden, manuell hinzugefügte Themen, die Bestätigung von Benutzern für von AI ermittelte Eigenschaften und Inhalte sowie Feedback zur Nützlichkeit von Themen unerlässlich.
+Viva Topics begrüßt den menschlichen Beitrag zur Verbesserung der Qualität Ihrer Themen. Während AI zunächst Themen identifiziert und vorschlägt, sind manuelle Änderungen an Inhalten von Mitwirkenden, manuell hinzugefügte Themen, Bestätigung von Benutzern für von AI ermittelte Eigenschaften und Inhalte sowie Feedback zur Nützlichkeit von Themen unerlässlich.
 
-- Themen können von **Wissensmanagern** in Ihrer Organisation überprüft werden. Der Knowledge Manager kann Themen überprüfen, für die er über Berechtigungen verfügt. Auf der Seite "Themen verwalten" im Themencenter können sie auswählen, dass von AI generierte Themen ("vorgeschlagene Themen") gültig sind, Themen ablehnen, um zu verhindern, dass der Inhalt als Thema angezeigt wird, Themen erstellen, die nicht von AI entdeckt wurden, oder Themen identifizieren, die von einigen Bearbeitungen von Experten profitieren könnten, um hilfreicher oder präziser zu sein. Weitere Informationen finden Sie unter ["Verwalten von Themen" im Themencenter.](manage-topics.md)
+- Themen können von **Wissensmanagern** in Ihrer Organisation überprüft werden. Der Knowledge Manager kann Themen überprüfen, zu denen er über Berechtigungen verfügt. Auf der Seite Themen verwalten im Themencenter können sie auswählen, dass von AI generierte Themen ("vorgeschlagene Themen") als gültig bestätigt werden, Themen abgelehnt werden, um zu verhindern, dass der Inhalt als Thema angezeigt wird, Themen erstellen, die nicht von AI entdeckt wurden, oder Themen identifizieren, die von einigen Bearbeitungen von Experten für Themen profitieren könnten, um hilfreicher oder genauer zu sein. Weitere Informationen finden Sie unter [Manage topics in the Topic Center](manage-topics.md).
 
-- Sie können allen *lizenzierten* Benutzern Berechtigungen zum Erstellen und Bearbeiten von Themen zuweisen, damit diese Änderungen an vorhandenen Themen vornehmen oder neue Themen erstellen können. Auf diese Weise können Benutzer, die über das Thema informiert sind, die Themenseite direkt aktualisieren, um Korrekturen vornehmen oder zusätzliche Informationen hinzufügen. Sie können auch neue Themen hinzufügen, die ai nicht identifizieren konnte. Wenn genügend Informationen zu diesen manuell hinzugefügten Themen zur Verfügung stehen und AI diese Art von Thema identifizieren kann, können zusätzliche Vorschläge von AI diese manuell hinzugefügten Themen verbessern. Gemeinsam können Menschen und KI wissen im Laufe der Zeit präzise halten und diese Ruhe nicht auf einer einzelnen Person ruhen lassen. Weitere Informationen finden Sie unter ["Erstellen eines neuen Themas"](https://docs.microsoft.com/microsoft-365/knowledge/create-a-topic) und ["Bearbeiten eines Themas".](https://docs.microsoft.com/microsoft-365/knowledge/edit-a-topic)
+- Sie können *jedem* ihrer lizenzierten Benutzer Berechtigungen zum Erstellen und Bearbeiten von Themen zuweisen, damit diese Änderungen an vorhandenen Themen vornehmen oder neue Themen erstellen können. Auf diese Weise können Benutzer, die über das Thema informiert sind, die Themenseite direkt aktualisieren, um Korrekturen vornehmen oder zusätzliche Informationen hinzufügen. Sie können auch neue Themen hinzufügen, die AI nicht identifizieren konnte. Wenn genügend Informationen zu diesen manuell hinzugefügten Themen zur Verfügung stehen und AI diese Art von Thema identifizieren kann, können zusätzliche Vorschläge von AI diese manuell hinzugefügten Themen verbessern. Gemeinsam können Menschen und KI wissen im Laufe der Zeit präzise halten und diese Ruhe nicht auf einer einzelnen Person ruhen lassen. Weitere Informationen finden Sie unter [Erstellen eines neuen Themas und](https://docs.microsoft.com/microsoft-365/knowledge/create-a-topic) Bearbeiten eines [Themas](https://docs.microsoft.com/microsoft-365/knowledge/edit-a-topic).
 
-- Selbst Benutzer, die nur Lesezugriff auf das Thema haben (Themenanzeiger), werden aufgefordert, die Nützlichkeit bestimmter Themen zu überprüfen. Feedbackfragen werden auf der Zusammenfassungskarte **"Thema"** gestellt, um den Wert des Themas und seine Informationen zu verbessern. Fragen zur Qualität und nützlichkeit der Ki-Vorschläge werden den Benutzern nach und nach präsentiert. Zu den Fragen gehören:</br>
+- Auch Benutzer, die nur Lesezugriff auf das Thema haben (Themenbetrachter), werden aufgefordert, die Nützlichkeit bestimmter Themen zu überprüfen. Feedbackfragen werden auf der **Zusammenfassungskarte** Thema gestellt, um den Wert des Themas und seine Informationen zu verbessern. Fragen zur Qualität und Nützlichkeit der KI-Vorschläge werden benutzern nach und nach präsentiert. Zu den Fragen gehören:</br>
 
-    1. Ob das Identifizieren des Themas auf der SharePoint-Seite hilfreich war. Es gibt die Möglichkeit, die Hervorhebung zu entfernen, wenn sie nicht korrekt oder hilfreich ist. Wenn genügend Personen angeben, dass ein Thema auf einer bestimmten Seite nicht richtig identifiziert wurde, wird dieses Highlight schließlich für alle Benutzer entfernt. 
+    1. Ob die Identifizierung des Themas auf der SharePoint-Seite hilfreich war. Es gibt die Möglichkeit, die Hervorhebung zu entfernen, wenn sie nicht genau oder hilfreich ist. Wenn genügend Personen angeben, dass ein Thema auf einer bestimmten Seite nicht richtig identifiziert ist, wird dieses Highlight schließlich für alle Benutzer entfernt. 
 
-    2. Gibt an, ob das vorgeschlagene Thema für die Organisation von Wert ist. Wenn genügend Personen angeben, dass das vorgeschlagene Thema hilfreich ist, wird das Thema automatisch bestätigt. Alternativ wird das Thema automatisch abgelehnt, wenn das vorgeschlagene Thema nicht hilfreich ist. Der Knowledge Manager kann diese Aktivität in der Ansicht "Themen verwalten" beobachten.
+    2. Gibt an, ob das vorgeschlagene Thema für die Organisation wertvoll ist. Wenn genügend Personen angeben, dass das vorgeschlagene Thema wertvoll ist, wird das Thema automatisch bestätigt. Alternativ wird das Thema automatisch abgelehnt, wenn das vorgeschlagene Thema nicht hilfreich ist. Der Knowledge Manager kann diese Aktivität in der Ansicht Themen verwalten beobachten.
 
     3. Gibt an, ob die Personen- und Ressourcenvorschläge hilfreich sind.
 
-    4. Auf der Startseite des Themencenters werden die Themen in Ihrer Organisation angezeigt, mit denen Sie eine Verbindung herstellen. Sie können wählen, ob Sie im Thema aufgeführt bleiben oder sich selbst entfernen möchten. Dieses Feedback wird allen Personen widersspiegelt, die dieses Thema entdecken. Weitere [Informationen zur Startseite des](https://docs.microsoft.com/microsoft-365/knowledge/topic-center-overview) Themencenters finden Sie in der Übersicht über das Thema Center.
+    4. Auf der Startseite des Themencenters sehen Sie die Themen in Ihrer Organisation, mit denen Sie eine Verbindung haben. Sie können wählen, ob Sie im Thema aufgeführt bleiben oder sich selbst entfernen möchten. Dieses Feedback wird für alle Personen, die dieses Thema entdecken, widerspiegelt. Weitere [Informationen zur](https://docs.microsoft.com/microsoft-365/knowledge/topic-center-overview) Startseite des Themencenters finden Sie unter Topic Center overview.
 
-Auch bei menschlichen Bearbeitungen sucht KI ständig nach weiteren Informationen zu Themen und sucht nach einer menschlichen Überprüfung. Wenn AI z. B. der Meinung ist, dass Sie eine Person sind, die als Experte für ein Thema aufgeführt werden sollte, werden Sie zur Bestätigung ders bitten. 
+Auch bei menschlichen Bearbeitungen sucht AI kontinuierlich nach weiteren Informationen zu Themen und sucht nach menschlicher Überprüfung. Wenn AI beispielsweise der Meinung ist, dass Sie eine Person sind, die als Experte für ein Thema aufgeführt werden sollte, wird sie Sie bitten, dies zu bestätigen. 
 
 
 ## <a name="see-also"></a>Weitere Informationen:

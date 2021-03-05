@@ -1,5 +1,5 @@
 ---
-title: Übersicht über Microsoft -Themen
+title: Microsoft Viva Topics – Übersicht
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -11,19 +11,19 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
-description: Übersicht über Themen zu Unterthemen.
-ms.openlocfilehash: f45e0f7c6090d4584526aa9c2abb5ec98213d635
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+description: Übersicht über Themen von "Viva".
+ms.openlocfilehash: 91442ba12b3d5df1d9934022751f4bc381cd40e8
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107639"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453969"
 ---
-# <a name="microsoft-viva-topics-overview"></a>Übersicht über Microsoft -Themen 
+# <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics – Übersicht 
 
-In Themen werden Microsoft AI-Technologie, Microsoft 365, Microsoft Graph, Suche und andere Komponenten und Dienste verwendet, um Ihren Benutzern Wissen in Microsoft 365-Apps zu vermitteln, die sie täglich verwenden, beginnend mit modernen SharePoint-Seiten und Microsoft Search.
+Viva Topics verwendet Microsoft AI-Technologie, Microsoft 365, Microsoft Graph, Suche und andere Komponenten und Dienste, um Ihren Benutzern Wissen in Microsoft 365-Apps zu vermitteln, die sie täglich verwenden, beginnend mit modernen SharePoint-Seiten und Microsoft Search.
 
 </br>
 
@@ -31,96 +31,96 @@ In Themen werden Microsoft AI-Technologie, Microsoft 365, Microsoft Graph, Suche
 
 </br>
 
-Mit Themen können Sie ein zentrales Geschäftsproblem in vielen Unternehmen lösen– die Bereitstellung der Informationen für Benutzer, wenn sie sie benötigen. Neue Mitarbeiter müssen beispielsweise schnell viele neue Informationen erlernen und Begriffe finden, über die sie beim Lesen von Unternehmensinformationen nichts wissen. Um mehr zu erfahren, muss der Benutzer möglicherweise von seiner Arbeit weg gehen und wertvolle Zeit mit der Suche nach Details verbringen, z. B. Informationen zu dem Begriff, wer in der Organisation ein Experten ist und vielleicht Websites und Dokumente, die sich auf den Begriff bezogen haben.
+Mit "Viva Topics" können Sie ein zentrales Geschäftsproblem in vielen Unternehmen lösen– die Bereitstellung der Informationen für Benutzer, wenn sie sie benötigen. Neue Mitarbeiter müssen beispielsweise schnell viele neue Informationen lernen und Begriffe finden, über die sie beim Lesen von Unternehmensinformationen nichts wissen. Um mehr zu erfahren, muss der Benutzer möglicherweise von seiner Arbeit ab und wertvolle Zeit auf die Suche nach Details verwenden, z. B. Informationen dazu, was der Begriff ist, wer in der Organisation ein Fachexperte ist, und möglicherweise Websites und Dokumente, die mit dem Begriff in Zusammenhang stehen.
 
-Unter "Themen" wird KI verwendet, um automatisch nach Themen **in** Ihrer Organisation zu suchen und diese zu identifizieren. Es kompiliert Informationen zu diesen, z. B. eine kurze Beschreibung, Personen, die an dem Thema arbeiten, sowie Websites, Dateien und Seiten, die damit in Zusammenhang stehen. Ein Wissensmanager oder Mitwirkender kann die Themeninformationen nach Bedarf aktualisieren. Die Themen sind für Ihre Benutzer verfügbar, was bedeutet, dass für jede Instanz des Themas, das auf einer modernen SharePoint-Website in Nachrichten und Seiten angezeigt wird, der Text hervorgehoben wird. Benutzer können das Thema auswählen, um weitere Informationen über die Themendetails zu erhalten. Themen finden Sie auch in der SharePoint-Suche.
+Viva Topics verwendet KI, um automatisch nach Themen **in** Ihrer Organisation zu suchen und diese zu identifizieren. Es kompiliert Informationen zu ihnen, z. B. eine kurze Beschreibung, Personen, die an dem Thema arbeiten, und Websites, Dateien und Seiten, die damit in Zusammenhang stehen. Ein Wissensmanager oder Mitwirkender kann die Themeninformationen bei Bedarf aktualisieren. Die Themen stehen Ihren Benutzern zur Verfügung, was bedeutet, dass für jede Instanz des Themas, die auf einer modernen SharePoint-Website in Nachrichten und Seiten angezeigt wird, der Text hervorgehoben wird. Benutzer können das Thema auswählen, um mehr über die Themendetails zu erfahren. Themen finden Sie auch in der SharePoint-Suche.
 
 
 ## <a name="how-topics-are-displayed-to-users"></a>Anzeigen von Themen für Benutzer
 
-Wenn ein Thema in Inhalten auf Nachrichten und Seiten von SharePoint erwähnt wird, wird es hervorgehoben. Sie können die Themenzusammenfassung über die Hervorhebung öffnen. Öffnen Sie die Themendetails im Titel der Zusammenfassung. Das erwähnte Thema kann automatisch identifiziert oder der Seite durch einen direkten Verweis auf das Thema durch den Seitenautor hinzugefügt worden sein. 
+Wenn ein Thema in Inhalten auf SharePoint-Nachrichten und -Seiten erwähnt wird, wird es hervorgehoben. Sie können die Themenzusammenfassung über die Hervorhebung öffnen. Öffnen Sie die Themendetails im Titel der Zusammenfassung. Das genannte Thema konnte automatisch identifiziert oder der Seite mit einem direkten Verweis auf das Thema durch den Seitenautor hinzugefügt werden. 
 
    ![Themenhighlights](../media/knowledge-management/saturn.png) </br> 
 
 
 ## <a name="knowledge-indexing"></a>Wissensindizierung
 
-Unter "Themen" wird die Microsoft -AI-Technologie **verwendet, um Themen** in Ihrer Microsoft 365-Umgebung zu identifizieren.
+Viva Topics verwendet die Microsoft AI-Technologie, **um Themen** in Ihrer Microsoft 365-Umgebung zu identifizieren.
 
-Ein Thema ist ein Ausdruck oder Ausdruck, der organisatorische Bedeutung oder Bedeutung hat. Sie hat eine spezielle Bedeutung für die Organisation und verfügt über ressourcenbezogene Ressourcen, mit deren Hilfe Benutzer ihre Bedeutung verstehen und weitere Informationen dazu finden können. Es gibt viele verschiedene Thementypen, die für Ihre Organisation wichtig sind. Anfänglich konzentriert sich die Microsoft -KI-Technologie auf die folgenden Typen:
+Ein Thema ist ein Ausdruck oder Ausdruck, der organisatorisch wichtig oder wichtig ist. Es hat eine spezifische Bedeutung für die Organisation und verfügt über ressourcenbezogene Ressourcen, die den Menschen helfen können, zu verstehen, was sie ist, und weitere Informationen dazu zu finden. Es gibt viele verschiedene Arten von Themen, die für Ihre Organisation wichtig sind. Anfänglich konzentriert sich die Microsoft AI-Technologie auf die folgenden Typen:
 - Project
 - Ereignis
 - Organisation
-- Ort
+- Standort
 - Produkt
-- Kreatives Arbeiten
+- Kreative Arbeit
 - Studienbereich
 
 
-Wenn ein Thema identifiziert wird und AI feststellt, dass es über  genügend Informationen für ein vorgeschlagenes Thema verfügt, werden auf einer Themenseite die Informationen angezeigt, die bei der Themenindizierung gesammelt wurden, z. B.:
+Wenn ein Thema identifiziert wird und AI feststellt, dass es über  genügend Informationen für ein vorgeschlagenes Thema verfügt, werden auf einer Themenseite die Informationen angezeigt, die über die Themenindizierung gesammelt wurden, z. B.:
 
 - Alternative Namen und Akronyme.
 - Eine kurze Beschreibung des Themas.
-- Personen, die möglicherweise mit dem Thema bekannt sind.
-- Dateien, Seiten und Websites im Zusammenhang mit dem Thema.
+- Personen, die mit dem Thema möglicherweise bekannt sind.
+- Dateien, Seiten und Websites, die mit dem Thema in Zusammenhang stehen.
 
-Ihre Wissensadministratoren können auswählen, ob sie alle SharePoint-Websites in Ihrem Mandanten nach Themen durchforsten oder nur bestimmte auswählen möchten.
+Ihre Wissensadministratoren können alle SharePoint-Websites in Ihrem Mandanten nach Themen durchforsten oder nur bestimmte auswählen.
 
-Siehe ["Themensuche und -curation"](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+Weitere [Informationen finden Sie unter Topic discovery and curation](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
 
 ## <a name="roles"></a>Rollen
 
-Wenn Sie in Ihrer Microsoft 365-Umgebung Themen zu Themen verwenden, haben Ihre Benutzer die folgenden Rollen:
+Wenn Sie in Ihrer Microsoft 365-Umgebung "Viva Topics" verwenden, haben Ihre Benutzer die folgenden Rollen:
 
-- Themenanzeigen: Benutzer, die Themenherde auf modernen SharePoint-Websites, auf die sie mindestens Lesezugriff haben, und in Microsoft Search sehen können.  Sie können Themenhighlights auswählen, um Themendetails auf Themenseiten anzuzeigen. Themenanzeigen können Feedback dazu geben, wie nützlich ein Thema für sie ist.
+- Themenanzeiger: Benutzer, die Themenhighlights auf modernen SharePoint-Websites sehen können, auf die sie mindestens Lesezugriff haben, und in Microsoft Search.  Sie können Themenhighlights auswählen, um Themendetails auf Themenseiten anzuzeigen. Die Themenbetrachter können Feedback dazu geben, wie nützlich ein Thema für sie ist.
 
-- Mitwirkende: Benutzer, die über die Rechte zum Bearbeiten vorhandener Themen oder zum Erstellen neuer Themen verfügen. Wissensadministratoren weisen Benutzern über die Einstellungen für Themen im Microsoft 365 Admin Center Mitwirkendeberechtigungen zu. Beachten Sie, dass Sie auch allen Themenbetrachtern die Berechtigung zum Bearbeiten und Erstellen von Themen erteilen können, damit jeder an den angezeigten Themen mit beitragen kann.
+- Mitwirkende: Benutzer, die über die Rechte zum Bearbeiten vorhandener Themen oder zum Erstellen neuer Themen verfügen. Wissensadministratoren weisen Benutzern mitwirkende Berechtigungen über die Einstellungen von "Viva Topics" im Microsoft 365 Admin Center zu. Beachten Sie, dass Sie auch allen Themenbetrachtern die Berechtigung zum Bearbeiten und Erstellen von Themen erteilen können, damit jeder an den angezeigten Themen mit beitragen kann.
 
-- Knowledge Manager: Benutzer, die Themen durch den Themenlebenszyklus leiten. Wissensmanager verwenden  die Seite "Themen verwalten" im Themencenter, um themenrelevante Themen zu bestätigen, nicht mehr relevante Themen zu entfernen, vorhandene Themen zu bearbeiten oder neue zu erstellen, und sind die einzigen Benutzer, die Darauf zugreifen können. Knowledge Admins weisen Benutzern Über die Administratoreinstellungen für Themen im Microsoft 365 Admin Center Knowledge -Managerberechtigungen zu. 
+- Wissensmanager: Benutzer, die Themen durch den Themenlebenszyklus leiten. Wissensmanager verwenden  die Seite Themen verwalten im Themencenter, um ki-vorgeschlagene Themen zu bestätigen, Themen zu entfernen, die nicht mehr relevant sind, sowie vorhandene Themen zu bearbeiten oder neue zu erstellen, und sind die einzigen Benutzer, die Darauf zugreifen können. Wissensadministratoren weisen Benutzern über die Einstellungen des Viva Topics-Admins im Microsoft 365 Admin Center Knowledge -Manager-Berechtigungen zu. 
 
-- Wissensadministratoren: Wissensadministratoren richten Themen zu Themen ein und verwalten sie über die Administratorsteuerelemente im Microsoft 365 Admin Center. Derzeit kann ein globaler Microsoft 365- oder Ein-SharePoint-Administrator als Wissensadministrator dienen.
+- Wissensadministratoren: Wissensadministratoren richten Themen von "Viva" ein und verwalten sie über die Administratorsteuerelemente im Microsoft 365 Admin Center. Derzeit kann ein globaler Microsoft 365- oder SharePoint-Administrator als Wissensadministrator dienen.
 
-Weitere [Informationen finden Sie unter "Themenrollen".](topic-experiences-roles.md)
+Weitere [Informationen finden Sie unter Rollen von "Viva Topics".](topic-experiences-roles.md)
 
 ## <a name="topic-management"></a>Themenverwaltung
 
-Die Themenverwaltung erfolgt auf der Seite **"Themen** verwalten" im Themencenter Ihrer **Organisation.** Das Themencenter wird während der Einrichtung erstellt und dient als Wissenscenter für Ihre Organisation. 
+Die Themenverwaltung erfolgt auf der Seite **Themen** verwalten im Topic Center Ihrer **Organisation.** Das Themencenter wird während der Einrichtung erstellt und dient als Wissenscenter für Ihre Organisation. 
 
-Während alle lizenzierten Benutzer themen, mit denen sie verbunden  sind, im Themencenter sehen können, können nur Benutzer mit berechtigungen zum Verwalten von Themen (Knowledge Manager) die Seite "Themen verwalten" anzeigen und verwenden.
+Während alle lizenzierten Benutzer Themen sehen können, mit denen  sie im Themencenter verbunden sind, können nur Benutzer mit Berechtigungen zum Verwalten von Themen (Wissensmanager) die Seite Themen verwalten anzeigen und verwenden.
 
 Wissensmanager können:
 
 - Bestätigen oder entfernen Sie Themen, die in Ihrem Mandanten gefunden wurden.
-- Erstellen Sie neue Themen bei Bedarf manuell (z. B. wenn nicht genügend Informationen bereitgestellt wurden, um sie über AI zu finden).
+- Erstellen Sie neue Themen manuell nach Bedarf (z. B. wenn nicht genügend Informationen bereitgestellt wurden, um sie über AI zu finden).
 - Bearbeiten vorhandener Themenseiten.</br>
 
-Weitere [Informationen finden Sie unter "Verwalten von Themen"](manage-topics.md) im Themencenter.  
+Weitere [Informationen finden Sie unter](manage-topics.md) Verwalten von Themen im Themencenter.  
 
 
 ## <a name="admin-controls"></a>Administratorsteuerelemente
 
 Mit Administratorsteuerelementen im Microsoft 365 Admin Center können Sie Ihr Wissensnetzwerk verwalten. Sie ermöglichen einem globalen Microsoft 365- oder SharePoint-Administrator:
 
-- Steuern, welche Benutzer in Ihrer Organisation Themen auf modernen Seiten von SharePoint oder in Den Suchergebnissen von SharePoint anzeigen dürfen.
-- Steuern, welche SharePoint-Websites gecrawlt werden, um Themen zu identifizieren.
-- Schließen Sie bestimmte Themen aus, die nicht gefunden werden können.
+- Steuern, welche Benutzer in Ihrer Organisation Themen auf modernen SharePoint-Seiten oder in SharePoint-Suchergebnissen anzeigen dürfen.
+- Steuern, welche SharePoint-Websites durchforstet werden, um Themen zu identifizieren.
+- Ausschließen, dass bestimmte Themen gefunden werden.
 - Steuern, welche Benutzer Themen im Themencenter verwalten können.
 - Steuern, welche Benutzer Themen erstellen und bearbeiten können.
 - Steuern, welcher Benutzer Themen anzeigen kann.
 
-Weitere [Informationen zu Administratorsteuerelementen finden](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions)Sie unter Zuweisen von Benutzerberechtigungen, [](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules)Verwalten der Sichtbarkeit von Themen und Verwalten der Themenermittlung. [](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery)
+Weitere [Informationen zu Administratorsteuerelementen](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions) [](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery) finden Sie unter Zuweisen von Benutzerberechtigungen, Verwalten der [Themensichtbarkeit](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules)und Verwalten der Themenerkennung.
 
-## <a name="topic-curation--feedback"></a>Feedback zur Themen & Thema
+## <a name="topic-curation--feedback"></a>Thema curation & Feedback
 
-Ki wird kontinuierlich daran arbeiten, Ihnen Vorschläge zur Verbesserung Ihrer Themen zu liefern, wenn Änderungen in Ihrer Umgebung auftreten. 
+Ai arbeitet kontinuierlich daran, Ihnen Vorschläge zur Verbesserung Ihrer Themen zu geben, wenn Änderungen in Ihrer Umgebung auftreten. 
 
-Benutzer mit Berechtigungen zum Bearbeiten oder Erstellen von Themen können Direkt Aktualisierungen an Themenseiten vornehmen, wenn sie Korrekturen vornehmen oder zusätzliche Informationen hinzufügen möchten. Sie können auch neue Themen hinzufügen, die ai nicht identifizieren konnte. Wenn genügend Informationen zu diesen manuell hinzugefügten Themen zur Verfügung stehen und AI diese Art von Thema identifizieren kann, können zusätzliche Vorschläge von AI diese manuell hinzugefügten Themen verbessern. 
+Benutzer mit Berechtigungen zum Bearbeiten oder Erstellen von Themen können Direktaktualisierungen an Themenseiten vornehmen, wenn sie Korrekturen vornehmen oder zusätzliche Informationen hinzufügen möchten. Sie können auch neue Themen hinzufügen, die AI nicht identifizieren konnte. Wenn genügend Informationen zu diesen manuell hinzugefügten Themen zur Verfügung stehen und AI in der Lage ist, diese Art von Thema zu identifizieren, können zusätzliche Vorschläge von AI diese manuell hinzugefügten Themen verbessern. 
 
-Benutzer, denen Sie zugriffen, um Themen in ihrer täglichen Arbeit zu sehen, werden möglicherweise gefragt, ob das Thema für sie nützlich war. Das System betrachtet diese Antworten und verwendet sie, um die Hervorhebung des Themas zu verbessern und zu bestimmen, was in Themenzusammenfassungen und in Themendetails angezeigt wird.
+Benutzer, denen Sie Zugriff auf themen in ihrer täglichen Arbeit ermöglichen, werden möglicherweise gefragt, ob das Thema für sie nützlich ist. Das System betrachtet diese Antworten und verwendet sie, um die Hervorhebung des Themas zu verbessern und zu bestimmen, was in Themenzusammenfassungen und in Themendetails angezeigt wird.
 
-Darüber hinaus können Benutzer mit den entsprechenden Berechtigungen Elemente wie Yammer unterhaltung markieren, die für ein Thema relevant sind, und sie einem bestimmten Thema hinzufügen. 
+Darüber hinaus können Benutzer mit den entsprechenden Berechtigungen Elemente wie Yammer, die für ein Thema relevant sind, markieren und zu einem bestimmten Thema hinzufügen. 
 
-Siehe ["Themensuche und -curation"](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+Weitere [Informationen finden Sie unter Topic discovery and curation](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
 
 
 ## <a name="see-also"></a>Weitere Informationen:

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
-ms.openlocfilehash: 9dc2f4c0923f52bfc83a9177b595a6955a3afa8f
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
-ms.translationtype: HT
+ms.openlocfilehash: 1da3ff6b3347d0e996b017aa1f6243fd724ffccd
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242734"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454407"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Aktionen und Auswirkungen der Migrationsphasen für die Migration von Microsoft Cloud Deutschland (generell)
 
@@ -59,7 +59,8 @@ Zusätzliche Überlegungen:
 
 | Schritt(e) | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
-| Die neue Region Deutschland wird einem vorhandenen Organisationssetup hinzugefügt, und Postfächer werden zu Office 365-Diensten verschoben. | Die Exchange Online-Konfiguration fügt die neue lokale deutsche Region zur Übergangsorganisation hinzu. Diese Office 365-Dienste-Region ist standardmäßig festgelegt, sodass der interne Lastenausgleichsdienst die Postfächer an die entsprechende Standardregion in den Office 365-Diensten weiterverteilen kann. Bei diesem Übergang befinden sich die Benutzer beider Seiten (Deutschland oder Office 365-Dienste) in der gleichen Organisation und können einen der beiden URL-Endpunkte verwenden. | Exchange Online | – Übergang der Benutzer und Dienste von Deutschland-URLs nach Office 365-Dienste-URLs (`https://outlook.office365.com`) <br><br> – Benutzer werden während der Migration weiterhin über die alten Deutschland-URLs auf den Dienst zugreifen. Es sind keine unmittelbaren Aktionen notwendig. <br><br> – Benutzer sollten beginnen, das Portal „office.com“ für Office Online-Funktionen zu verwenden (Kalender, E-Mail, Personen) Die Nagivation zu Diensten, die noch nicht zu Office 365-Diensten migriert sind, wird bis nach der Migration nicht funktionieren. <br><br> – Die Outlook Web App wird die Erfahrung „öffentlicher Ordner“ während der Migration nicht zur Verfügung stellen. |
+| Die neue Region Deutschland wird der vorhandenen Organisationseinrichtung hinzugefügt, und Postfächer werden zu Office 365-Diensten verschoben. | Die Exchange Online-Konfiguration fügt die neue lokale deutsche Region zur Übergangsorganisation hinzu. Diese Office 365-Dienste-Region ist standardmäßig festgelegt, sodass der interne Lastenausgleichsdienst die Postfächer an die entsprechende Standardregion in den Office 365-Diensten weiterverteilen kann. Bei diesem Übergang befinden sich die Benutzer beider Seiten (Deutschland oder Office 365-Dienste) in der gleichen Organisation und können einen der beiden URL-Endpunkte verwenden. | Exchange Online | - Übergang von Benutzern und Diensten von Ihren älteren URLs (outlook.office.de) zu neuen URLs für Office 365-Dienste ( `https://outlook.office365.com` ). <br><br> – Benutzer können während der Migration weiterhin über ältere URLs in Deutschland auf den Dienst zugreifen, müssen jedoch nach Abschluss der Migration die Verwendung der älteren URLs beenden. <br><br> - Benutzer sollten auf das weltweite Office-Portal für Office Online-Features (Kalender, E-Mail, Personen) umgestellt werden. Die Navigation zu Diensten, die noch nicht zu Office 365-Diensten migriert wurden, funktioniert erst, wenn sie migriert wurden. <br><br> – Die Outlook Web App bietet während der Migration keine Öffentliche Ordner-Erfahrung. |
+| Aktualisieren von benutzerdefinierten DNS-Einstellungen für die AutoErmittlung| Vom Kunden verwaltete DNS-Einstellungen für die AutoErmittlung, die derzeit auf Microsoft Cloud Deutschland verweisen, müssen aktualisiert werden, um nach Abschluss der Exchange Online-Phase (Phase 5) auf Office 365 zu verweisen. <br> Vorhandene #A0 mit CNAME, die auf autodiscover-outlook.office.de müssen aktualisiert werden, um auf autodiscover.outlook.com. | Exchange Online | Verfügbarkeitsanforderungen und Dienstermittlungsaufrufe über AutoErmittlungspunkt direkt an die Office 365-Dienste. Kunden, die diese DNS-Updates nicht ausführen, treten beim Abschluss der Migration möglicherweise Probleme mit dem AutoErmittlungsdienst auf. |
 |||||
 
 Zusätzliche Überlegungen:
@@ -74,7 +75,7 @@ Zusätzliche Überlegungen:
 
 - Wenn Sie Exchange Online Hybrid verwenden:
 
-    - Sie müssen den Hybrid-Konfigurationsassistenten (Hybrid Configuration Wizard, HCW) erneut ausführen, um vor dem Übergang die lokale Konfiguration gegen Microsoft Cloud Deutschland zu aktualisieren und den HCW nach der Bereinigung gegen den Office 365-Dienst erneut ausführen. Wenn Sie benutzerdefinierte Domänen verwenden, werden möglicherweise weitere DNS-Updates erforderlich sein.
+    - Exchange Online Hybrid-Kunden müssen den Assistenten für die Hybridkonfiguration (Hybrid Configuration Wizard, HCW) im Rahmen dieses Übergangs mehrmals ausführen. Bevor der Migrationsschritt **5 beginnt,** muss jeder Exchange Online-Hybridkunde die neueste Version des HCW im Office 365 Deutschland-Modus ausführen, um die lokale Konfiguration für die Migration zu Office 365 global vorzubereiten. Nach Abschluss der Migrationsphase **5** (wenn der Message Center-Hinweis veröffentlicht wird) müssen Sie den HCW für die Verwendung von Office 365 Worldwide-Einstellungen ausführen, um Ihre lokalen Systeme auf den globalen Dienst zu verweisen. Wenn Sie benutzerdefinierte Domänen verwenden, werden möglicherweise weitere DNS-Updates erforderlich sein.
 
 Um mehr über die Unterschiede zwischen Organisationen bei der Migration und nach der Migration von Exchange Online-Ressourcen zu erfahren, lesen Sie die Informationen in [Kundenerfahrung während der Migration zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition-experience.md).
 

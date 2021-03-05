@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Zusätzliche Kundeninformationen zur Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
-ms.openlocfilehash: 717978d69c9f87855967c474f29216f6db8d3ce9
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
-ms.translationtype: HT
+ms.openlocfilehash: 26db69583bac68723d5d57b07abb856c8190d9b1
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242854"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454467"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>Migrationsphasenaktionen und Auswirkungen für die Migration von Microsoft Cloud Deutschland (erweitert) 
 
@@ -34,6 +34,8 @@ Mandanten-Migrationen von Microsoft Cloud Deutschland in die Region Deutschland 
 Die folgenden Abschnitte enthalten weitere Informationen zu den Erfahrungen der Kunden beim Wechsel von Microsoft Cloud Deutschland zu Office 365-Dienste in der neuen deutschen Rechenzentrumsregion.
 
 ## <a name="services"></a>Dienste
+
+Zwischen Phase 2 von 9 und Phase 3 von 9 ist möglicherweise kein Zugriff auf das Partnerportal möglich. Während dieser Zeit kann der Partner möglicherweise nicht auf die Mandanteninformationen im Partnerportal zugreifen. Da jede Migration unterschiedlich ist, kann die Dauer der Barrierefreiheit in Stunden sein. 
 
 ### <a name="azure-ad-phase-2-of-9"></a>Azure AD (Phase 2 von 9)
 

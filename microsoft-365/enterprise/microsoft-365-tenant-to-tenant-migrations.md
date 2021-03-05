@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Mandanten-zu-Mandanten-Migrationen
+title: Migrationen von Mandanten zu Mandanten in Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,30 +19,30 @@ f1.keywords:
 - NOCSH
 description: Erfahren Sie, wie Sie Microsoft 365-Mandanten migrieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 17aabbd945c6dec699384eb9f203029255ae62f6
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 09b2bc77333afaf1991064369846241328db85ff
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447146"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461643"
 ---
-# <a name="microsoft-365-tenant-to-tenant-migrations"></a>Microsoft 365 Mandanten-zu-Mandanten-Migrationen
+# <a name="microsoft-365-tenant-to-tenant-migrations"></a>Migrationen von Mandanten zu Mandanten in Microsoft 365
 
-Es gibt verschiedene Architekturansätze für Fusionen, Übernahmen, Veräusserungen und andere Szenarien, die Sie dazu führen könnten, einen vorhandenen Microsoft 365-Mandanten zu einem neuen Mandanten zu migrieren. Die meisten Kunden arbeiten mit Microsoft Consulting Services oder einem Microsoft-Partner zusammen, um Mandanten zu migrieren, einschließlich der Verwendung von Drittanbietertools zum Migrieren von Inhalten. 
+Es gibt verschiedene Architekturansätze für Fusionen, Übernahmen, Abgänge und andere Szenarien, die Sie dazu führen können, einen vorhandenen Microsoft 365-Mandanten zu einem neuen Mandanten zu migrieren. Die meisten Kunden arbeiten mit Microsoft Consulting Services oder einem Microsoft-Partner zusammen, um Mandanten zu migrieren, einschließlich der Verwendung von Drittanbietertools zum Migrieren von Inhalten. 
 
-Verwenden Sie das [Architekturmodell für die Migration von Mandanten zu Mandanten](../downloads/Microsoft-365-tenant-to-tenant-migration.pdf) , um zu verstehen, wie Sie Microsoft 365 Mandanten-zu-Mandanten-Migrationen und die Schritte einer Migration planen.
+Verwenden Sie das Architekturmodell für die [Mandanten-zu-Mandant-Migration,](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) um zu verstehen, wie Sie Migrationen zwischen Mandanten und Mandanten von Microsoft 365 und die Schritte einer Migration planen.
 
-[![Mandanten-zu-Mandanten-migrationsmodell](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](../downloads/Microsoft-365-tenant-to-tenant-migration.pdf) 
+[![Mandanten-zu-Mandant-Migrationsmodell](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 
 
-Sie können dieses Modell auch in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) -oder [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) -Formaten herunterladen und auf Briefpapier (11 x 17 Zoll) drucken.
+Sie laden dieses Modell im [PDF-Format](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) herunter und drucken es auf Brief-, Rechts- oder Tabloidpapier (11 x 17).
 
-Dieses Modell enthält Anleitungen und einen Ausgangspunkt für die Planung von Abschnitten unter:
+Dieses Modell bietet Anleitungen und einen Ausgangspunkt für die Planung mit Abschnitten zu folgenden Bereichen:
 
-- Zuordnen von Geschäftsszenarien zu Architektur Ansätzen
+- Zuordnung von Geschäftsszenarien zu Architekturansätzen
 - Überlegungen zum Entwurf
 
-Dieses Modell enthält auch detaillierte Beispiele für:
+Dieses Modell enthält außerdem detaillierte Beispiele für:
 
-- Ein einzelner Ereignis Migrationsfluss
-- Ein Phasen Migrationsfluss
-- Ein Mandanten-oder Teilungs Fluss
+- Ein einzelner Ereignismigrationsfluss
+- Ein phasenweiser Migrationsfluss
+- Eine Mandanten verschieben oder geteilten Fluss

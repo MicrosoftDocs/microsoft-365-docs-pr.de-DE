@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2fd999c27598db6f17073cfe82e4c4f91ffb1667
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 7b6175f507f54adf357e40ea44c39f5e495a1b14
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407204"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454489"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Neues in Microsoft Defender für Office 365
 
@@ -46,6 +46,7 @@ In diesem Artikel werden neue Features in der neuesten Version von Microsoft Def
 - Warnungs-ID-Integration (Suche mithilfe von Warnungs-ID und Alert-Explorer Navigation) in [Sucherfahrungen](threat-explorer.md)
 - Erhöhen der Grenzwerte für den Export von Datensätzen von 9990 auf 200.000 bei der [Suche](threat-explorer.md)
 - Erweitern der Datenaufbewahrungs- und Suchgrenze für Test-Mandanten von 7 (vorheriger Grenzwert) auf 30 Tage in [Sucherfahrungen](threat-explorer.md)
+- Neue Suchpivoten mit dem Namen **Impersonated Domain** und **Impersonated User** innerhalb des Explorers (und Echtzeiterkennungen), um nach Identitätswechselangriffen gegen geschützte Benutzer oder Domänen zu suchen. Weitere Informationen finden Sie unter [Details](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains). (Microsoft Defender für Office 365 Plan 1 oder Plan 2)
 
 ## <a name="december-2020"></a>Dezember 2020
 

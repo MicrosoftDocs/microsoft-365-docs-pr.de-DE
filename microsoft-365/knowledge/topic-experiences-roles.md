@@ -1,5 +1,5 @@
 ---
-title: Microsoft -Themenrollen
+title: Themen zu Microsoft Viva – Rollen
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -11,77 +11,77 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
-description: Erfahren Sie mehr über Benutzerrollen in themen.
-ms.openlocfilehash: e2975201124045574c516aad49bc5059db969b76
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+description: Erfahren Sie mehr über Benutzerrollen in Themen von "Viva".
+ms.openlocfilehash: d5b57e768a1de8bc0447492067371630b2d045f6
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107434"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453941"
 ---
-# <a name="microsoft-viva-topics-roles"></a>Microsoft -Themenrollen 
+# <a name="microsoft-viva-topics-roles"></a>Themen zu Microsoft Viva – Rollen 
 
-Wenn Sie in Ihrer Microsoft 365-Umgebung Themen zu Themen verwenden, können Ihre Benutzer die folgenden Rollen haben:
--   Themenanzeige
+Wenn Sie "Viva Topics" in Ihrer Microsoft 365-Umgebung verwenden, können Ihre Benutzer die folgenden Rollen haben:
+-   Topic Viewer
 -   Mitwirkender des Themas
 -   Knowledge Manager
 -   Wissensadministrator
 
-## <a name="topic-viewer"></a>Themenanzeige
+## <a name="topic-viewer"></a>Topic Viewer
 
-Themenanzeigen sind Benutzer in Ihrer Organisation, die Themen anzeigen können, die in ihrer modernen SharePoint-Website, Microsoft Search über SharePoint und Office.com und im Themencenter hervorgehoben sind. Sie können weitere Details zu einem Thema auf der Themenseite anzeigen. 
+Themenbetrachter sind Benutzer in Ihrer Organisation, die Themen anzeigen können, die auf ihrer modernen SharePoint-Website, Microsoft Search über SharePoint und Office.com und dem Themencenter hervorgehoben sind. Sie können weitere Details zu einem Thema auf der Themenseite anzeigen. 
 
-Damit Themenher highlights und ihre Themenseiten für einen Themenanzeiger sichtbar sind, muss der Benutzer:
--   [Ihm wird von ihrem](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) Microsoft 365-Administrator eine Lizenz für Themen zugewiesen.
--   Sie können Themen einsichten. Diese Aufgabe wird vom Wissensadministrator auf der Seite "Themeneinstellungen" im Microsoft 365 Admin Center ausgeführt.
+Damit Themenhighlights und ihre Themenseiten für einen Themenbetrachter sichtbar sind, muss der Benutzer:
+-   [Erhalten Sie von ihrem Microsoft](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) 365-Administrator eine Lizenz für "Viva Topics".
+-   Sie dürfen für Themen sichtbar sein. Diese Aufgabe wird vom Wissensadministrator auf der Seite "Einstellungen für Themen" im Microsoft 365 Admin Center ausgeführt.
 
 
-## <a name="topic-contributors"></a>Mitwirkende an Themen
+## <a name="topic-contributors"></a>Mitwirkende des Themas
 
-Mitwirkende an Themen sind Benutzer in Ihrer Organisation, die nicht nur über Berechtigungen für die Themenanzeige verfügen, sondern auch ein vorhandenes Thema bearbeiten oder ein neues Thema erstellen können. Sie spielen eine wichtige Rolle beim manuellen "Aus curating" der Informationen auf einer Themenseite (sowohl ai als auch manuell bereitgestellt), um die Qualität sicherzustellen.
+Mitwirkende von Themen sind Benutzer in Ihrer Organisation, die nicht nur über Berechtigungen für die Themenanzeige verfügen, sondern auch ein vorhandenes Thema bearbeiten oder ein neues Thema erstellen können. Sie spielen eine wichtige Rolle beim manuellen "Curating" der Informationen auf einer Themenseite (sowohl AI als auch manuell bereitgestellt), um deren Qualität sicherzustellen.
 
-Benutzern mit Berechtigungen für mitwirkende Themen wird eine Schaltfläche "Bearbeiten" auf Themenseiten angezeigt, mit der sie ein Thema aktualisieren und veröffentlichen können. 
+Benutzern, die über Berechtigungen  zum Mitwirken von Themen verfügen, wird eine Schaltfläche Bearbeiten auf Themenseiten angezeigt, mit der sie Aktualisierungen für ein Thema und die Veröffentlichung eines Themas erstellen können.
 
 Ein Mitwirkender eines Themas kann auch ein neues Thema über sein Themencenter erstellen und veröffentlichen.
 
-Um ein Thema zu erstellen und zu bearbeiten, muss der Benutzer:
+Zum Erstellen und Bearbeiten eines Themas muss der Benutzer:
 
--   [Ihm wird von ihrem](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) Microsoft 365-Administrator eine Lizenz für Themen zugewiesen.
--   [Ihnen werden Berechtigungen zum Erstellen und Bearbeiten von Themen zugewiesen.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center) Diese Aufgabe wird vom Wissensadministrator auf der Seite "Themeneinstellungen" im Microsoft 365 Admin Center ausgeführt.
+-   [Erhalten Sie von ihrem Microsoft](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) 365-Administrator eine Lizenz für "Viva Topics".
+-   [Ihnen werden Berechtigungen zum Erstellen und Bearbeiten von Themen zugewiesen.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center) Diese Aufgabe wird vom Wissensadministrator auf der Seite "Einstellungen für Themen" im Microsoft 365 Admin Center ausgeführt.
 
 ## <a name="knowledge-managers"></a>Wissensmanager
 
-Wissensmanager sind Benutzer, die Themen in Ihrer Organisation verwalten.  Die Themenverwaltung erfolgt über die Seite "Themen verwalten" im Themencenter und ist nur für Wissensmanager sichtbar.
+Wissensmanager sind Benutzer, die Themen in Ihrer Organisation verwalten.  Die Themenverwaltung erfolgt über die Seite Themen verwalten im Themencenter und ist nur für Wissensmanager sichtbar.
 
-Auf der Seite "Themen verwalten" können Wissensmanager die folgenden Aufgaben ausführen:
--   Anzeigen von themen vorgeschlagenen AI-Themen.
+Auf der Seite Themen verwalten können Wissensmanager die folgenden Aufgaben ausführen:
+-   Anzeigen von AI-vorgeschlagenen Themen.
 -   Überprüfen Sie die Themen, um zu bestätigen, dass sie gültig sind.
--   Entfernen Sie Themen, die für Ihre Benutzer nicht sichtbar sein sollten.
+-   Entfernen Sie Themen, die für Ihre Benutzer nicht sichtbar sein möchten.
 
-Darüber hinaus kann ein Knowledge Manager vorhandene Themen bearbeiten oder neue erstellen.
+Darüber hinaus kann ein Wissensmanager vorhandene Themen bearbeiten oder neue erstellen.
 
-Um Themen zu verwalten, muss der Benutzer:
--   [Ihm wird von ihrem](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) Microsoft 365-Administrator eine Lizenz für Themen zugewiesen.
--   [Ihnen werden Berechtigungen zum Verwalten von Themen zugewiesen).](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center) Diese Aufgabe wird vom Wissensadministrator auf der Seite "Themeneinstellungen" im Microsoft 365 Admin Center ausgeführt.
+Zum Verwalten von Themen muss der Benutzer folgende Themen verwalten:
+-   [Erhalten Sie von ihrem Microsoft](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) 365-Administrator eine Lizenz für "Viva Topics".
+-   [Ihnen werden Berechtigungen zum Verwalten von Themen zugewiesen).](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center) Diese Aufgabe wird vom Wissensadministrator auf der Seite "Einstellungen für Themen" im Microsoft 365 Admin Center ausgeführt.
 
-Benutzer mit einem guten Gesamtwissen über Ihr Unternehmen können gute Kandidaten für die Rolle des Knowledge Managers sein. Diese Personen verfügen möglicherweise nicht nur über das Wissen, ob Themen gültig sind oder nicht, sondern auch Personen innerhalb des Unternehmens, die mit diesen Themen in Verbindung stehen.
+Benutzer, die über ein gutes Allgemeines Wissen über Ihr Unternehmen verfügen, können gute Kandidaten für die Rolle des Knowledge Managers sein. Diese Personen können nicht nur wissen, ob Themen gültig sind oder nicht, sondern auch Personen innerhalb des Unternehmens kennen, die mit diesen Themen in Verbindung stehen.
 
 
 ## <a name="knowledge-admins"></a>Wissensadministratoren
 
-Wissensadministratoren sind Administratoren, die Themen in Ihrer Microsoft 365-Umgebung einrichten und konfigurieren. Sie verwalten auch die Einstellungen für "Themen" nach Abschluss der Einrichtung. Die Rolle des Wissensadministrators erfordert, dass Sie ein globaler Microsoft 365- oder -SharePoint-Administrator sind, da Setup und Verwaltung im Microsoft 365 Admin Center durchgeführt werden.
-Während des Setups können Wissensadministratoren Themen für folgende Themen konfigurieren:
+Wissensadministratoren sind Administratoren, die "Viva Topics" in Ihrer Microsoft 365-Umgebung einrichten und konfigurieren. Sie verwalten auch die Einstellungen für "Viva Topics", nachdem die Einrichtung abgeschlossen wurde. Für die Rolle des Wissensadministrators müssen Sie ein globaler Microsoft 365- oder SharePoint-Administrator sein, da Setup und Verwaltung im Microsoft 365 Admin Center durchgeführt werden.
+Während des Setups können Wissensadministratoren "Viva Topics" für folgende Themen konfigurieren:
 
--   Wählen Sie aus, welche SharePoint-Websites für Themen gecrawlt werden sollen.
--   Wählen Sie aus, welche lizenzierten Benutzer Themen (Themenanzeiger) anzeigen können.
+-   Wählen Sie aus, welche SharePoint-Websites für Themen durchforstet werden sollen.
+-   Wählen Sie aus, welche lizenzierten Benutzer Themen anzeigen können (Themenanzeigen).
 -   Wählen Sie aus, welche Themen nicht identifiziert werden sollen.
--   Wählen Sie aus, welche lizenzierten Benutzer Themen erstellen und bearbeiten können (Mitwirkende an Themen).
--   Wählen Sie aus, welche lizenzierten Benutzer Themen (Wissensmanager) verwalten können.
--   Benennen Sie das Themencenter.
+-   Wählen Sie aus, welche lizenzierten Benutzer Themen erstellen und bearbeiten können (Mitwirkende im Thema).
+-   Wählen Sie aus, welche lizenzierten Benutzer Themen verwalten können (Wissensmanager).
+-   Nennen Sie das Themencenter.
 
-Wissensmanager müssen sich mit allen Projektbeteiligten in ihrer Organisation abstimmen können, um zu wissen, wie sie konfiguriert werden können. Wenn ein neues Projekt beispielsweise vertrauliche Informationen enthält, muss der Knowledge Manager informiert werden, damit er sicherstellen kann, dass die SharePoint-Website nicht nach Themen gecrawlt wird, oder bestimmte Themennamen müssen ausgeschlossen werden.
+Wissensmanager müssen in der Lage sein, sich mit allen Beteiligten von "Viva Topics" in ihrer Organisation zu koordinieren, um zu wissen, wie sie konfiguriert werden. Wenn ein neues Projekt beispielsweise vertrauliche Informationen enthält, muss der Wissensmanager informiert werden, damit er sicherstellen kann, dass die SharePoint-Website nicht nach Themen durchforstet wird, oder bestimmte Themennamen müssen ausgeschlossen werden.
 
 
 ## <a name="see-also"></a>Weitere Informationen:
