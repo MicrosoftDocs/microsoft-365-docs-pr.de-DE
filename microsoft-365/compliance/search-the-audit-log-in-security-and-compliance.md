@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Verwenden Sie das Office 365 Security & Compliance Center oder das Microsoft 365 Compliance Center, um das vereinheitlichte Überwachungsprotokoll zu durchsuchen und die Benutzer- und Administratoraktivitäten in Ihrem Unternehmen anzuzeigen.
+description: Verwenden Sie das Microsoft 365 Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten aus Ihrer Organisation anzuzeigen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e95c2f3627a6bb0c28b736437012a92107b3533
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: a751ffea9fa184faf90bfe7c43b44c5d4e53bfbf
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976246"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461816"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Compliance-Center
 
@@ -61,6 +61,8 @@ Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder 
 - Aktivitäten von Benutzern und Administratoren in Microsoft Forms
 
 - Benutzer- und Administratoraktivität für Vertraulichkeitsbezeichnungen für Websites, die SharePoint Online oder Microsoft Teams verwenden
+
+- Administratoraktivität in Briefing-E-Mail und MyAnalytics
 
 ## <a name="requirements-to-search-the-audit-log"></a>Voraussetzungen für die Durchsuchung des Überwachungsprotokolls
 
@@ -178,7 +180,7 @@ Nachfolgend ist der Prozess zum Durchsuchen des Überwachungsprotokolls in Offic
 
       Es werden mehr als 100 Benutzer- und Administratoraktivitäten im Überwachungsprotokoll erfasst. Klicken Sie beim Thema dieses Artikels auf die Registerkarte **Überwachte Aktivitäten**, um die Beschreibungen der einzelnen Aktivitäten in den verschiedenen Diensten anzuzeigen.
 
-   1. **Startdatum** und **Enddatum**: Standardmäßig sind die letzten sieben Tage ausgewählt. Wählen Sie einen Datums- und Uhrzeitbereich aus, um die Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten sind. Das Datum und die Uhrzeit werden im UTC-Format (Coordinated Universal Time) angezeigt. Der maximale Datumsbereich, den Sie angeben können, umfasst 90 Tage. Es wird ein Fehler angezeigt, wenn der ausgewählte Datumsbereich mehr als 90 Tage umfasst.
+   1. **Startdatum** und **Enddatum**: Standardmäßig sind die letzten sieben Tage ausgewählt. Wählen Sie einen Datums- und Uhrzeitbereich aus, um die Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten sind. Das Datum und die Uhrzeit werden in Ortszeit angezeigt. Der maximale Datumsbereich, den Sie angeben können, umfasst 90 Tage. Es wird ein Fehler angezeigt, wenn der ausgewählte Datumsbereich mehr als 90 Tage umfasst.
 
       > [!TIP]
       > Wenn Sie den maximalen Datumsbereich von 90 Tagen verwenden, wählen Sie den aktuellen Zeitpunkt für das **Startdatum** aus. Andernfalls wird eine Fehlermeldung angezeigt, in der mitgeteilt wird, dass das Startdatum vor dem Enddatum liegt. Wenn Sie die Überwachung innerhalb der letzten 90 Tage aktiviert haben, kann der maximale Datumsbereich nicht vor dem Datum beginnen, an dem die Überwachung aktiviert wurde.
@@ -221,7 +223,7 @@ Die Ergebnisse einer Überwachungsprotokollsuche werden unter **Ergebnisse** auf
 
 Die Ergebnisse enthalten die folgenden Informationen zu den einzelnen Ereignissen, die bei der Suche zurückgegeben werden:
 
-- **Datum**: Das Datum und die Uhrzeit (im UTC-Format), zu der das Ereignis auftrat.
+- **Datum**: Das Datum und die Uhrzeit (in Ortszeit), zu der das Ereignis auftrat.
 
 - **IP-Adresse**: Die IP-Adresse des Geräts, das verwendet wurde, als die Aktivität protokolliert wurde. Die IP-Adresse wird im Adressformat IPv4 oder IPv6 angezeigt.
 
@@ -368,7 +370,7 @@ Klicken Sie auf einen der folgenden Links, um zu einer bestimmten Tabelle zu gel
         [Power BI-Aktivitäten](#power-bi-activities)
     :::column-end:::
     :::column:::
-        [Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)
+        [Microsoft Workplace Analytics](#workplace-analytics-activities)
     :::column-end:::
     :::column:::
         [Microsoft Teams-Aktivitäten](#microsoft-teams-activities)
@@ -417,6 +419,18 @@ Klicken Sie auf einen der folgenden Links, um zu einer bestimmten Tabelle zu gel
     :::column-end:::
     :::column:::
         [Aufbewahrungsrichtlinie und Aufbewahrungsbezeichnungsaktivitäten](#retention-policy-and-retention-label-activities)
+    :::column-end:::
+    :::column:::
+        [Briefing-E-Mail-Aktivitäten](#briefing-email-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [MyAnalytics-Aktivitäten](#myanalytics-activities)
+    :::column-end:::
+    :::column:::
+        [Informationsbarrierenaktivitäten](#information-barriers-activities)
     :::column-end:::
     :::column:::
         [Exchange-Administratoraktivitäten](#exchange-admin-audit-log)
@@ -790,7 +804,7 @@ Sie können das Überwachungsprotokoll nach Aktivitäten in Power BI durchsuchen
 
 Die Überwachungsprotokollierung für Power BI ist standardmäßig nicht aktiviert. Wenn Sie im Überwachungsprotokoll nach Power BI-Aktivitäten suchen möchten, müssen Sie die Überwachung für das Power BI-Verwaltungsportal aktivieren. Anweisungen hierzu finden Sie im Abschnitt "Überwachungsprotokolle" im [Power BI-Verwaltungsportal](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
 
-### <a name="microsoft-workplace-analytics-activities"></a>Microsoft Workplace Analytics-Aktivitäten
+### <a name="workplace-analytics-activities"></a>Workplace Analytics-Aktivitäten
 
 Workplace Analytics bietet einen Einblick in die Zusammenarbeit von Gruppen innerhalb Ihrer Organisation. In der folgenden Tabelle sind die Aktivitäten aufgeführt, die von Benutzern ausgeführt wurden, denen die Administrator- oder Analystenrolle in Workplace Analytics zugeordnet ist. Benutzern, denen die Rolle des Analysten zugewiesen ist, haben Vollzugriff auf alle Dienstfunktionen und können das Produkt für Analysen verwenden. Benutzer, denen die Administratorrolle zugewiesen wurde, können Datenschutzeinstellungen und Systemstandardwerte konfigurieren sowie Organisationsdaten in Workplace Analytics vorbereiten, hochladen und überprüfen. Weitere Informationen finden Sie unter [Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
 
@@ -969,6 +983,42 @@ In der folgenden Tabelle sind Ereignisse aufgelistet, die sich aus Bezeichnungsa
 | Einstellungen für eine Aufbewahrungsrichtlinie aktualisiert | SetRetentionComplianceRule | Der Administrator hat die Aufbewahrungseinstellungen für eine vorhandene Aufbewahrungsrichtlinie geändert. Die Aufbewahrungseinstellungen umfassen, wie lange Elemente aufbewahrt werden und was mit Elementen geschieht, wenn die Aufbewahrungsfrist abläuft (z. B. Elemente löschen, Elemente aufbewahren oder Elemente aufbewahren und anschließend löschen). Diese Aktivität entspricht auch dem Ausführen des Cmdlets [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule). |
 | Aufbewahrungsbezeichnung aktualisiert |SetComplianceTag  | Der Administrator hat eine vorhandene Aufbewahrungsbezeichnung aktualisiert.|
 | Aufbewahrungsrichtlinie aktualisiert |SetRetentionCompliancePolicy |Der Administrator hat eine vorhandene Aufbewahrungsrichtlinie aktualisiert. Updates, die dieses Ereignis auslösen, sind beispielsweise das Hinzufügen oder Ausschließen von Inhaltsspeicherorten, auf die die Aufbewahrungsrichtlinie angewendet ist.|
+||||
+
+### <a name="briefing-email-activities"></a>Briefing-E-Mail-Aktivitäten
+
+Die folgende Tabelle enthält die Aktivitäten in Briefing-E-Mail, die im Office 365-Überwachungsprotokoll protokolliert werden. Weitere Informationen zu Briefing-E-Mail finden Sie unter:
+
+- [Übersicht über Briefing-E-Mail](https://docs.microsoft.com/Briefing/be-overview)
+
+- [Konfigurieren von Briefing-E-Mail](https://docs.microsoft.com/Briefing/be-admin)
+
+|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|:-----|:-----|:-----|
+|Aktualisierte Datenschutzeinstellungen der Organisation |UpdatedOrganizationBriefingSettings|Administrator aktualisiert die Datenschutzeinstellungen der Organisation für Briefing-E-Mail. |
+|Aktualisierte Datenschutzeinstellungen der Benutzer|UpdatedUserBriefingSettings|Administrator aktualisiert die Datenschutzeinstellungen der Benutzer für Briefing-E-Mail.
+||||
+
+### <a name="myanalytics-activities"></a>MyAnalytics-Aktivitäten
+
+Die folgende Tabelle enthält die Aktivitäten in MyAnalytics, die im Office 365-Überwachungsprotokoll protokolliert werden. Weitere Informationen zu MyAnalytics finden Sie unter [MyAnalytics für Administratoren](https://docs.microsoft.com/workplace-analytics/myanalytics/overview/mya-for-admins).
+
+|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|:-----|:-----|:-----|
+|Aktualisierte MyAnalytics-Einstellungen für die Organisation|UpdatedOrganizationMyAnalyticsSettings|Administrator aktualisiert Einstellungen für MyAnalytics auf Organisationsebene. |
+|Aktualisierte MyAnalytics-Einstellungen für Benutzer|UpdatedUserMyAnalyticsSettings|Administrator aktualisiert die Benutzereinstellungen für MyAnalytics.|
+||||
+
+### <a name="information-barriers-activities"></a>Informationsbarrierenaktivitäten
+
+Die folgende Tabelle enthält die Aktivitäten in Informationsbarrieren, die im Office 365-Überwachungsprotokoll protokolliert werden. Weitere Informationen zu Informationsbarrieren finden Sie unter [Weitere Informationen zu Informationsbarrieren in Microsoft 365](information-barriers.md).
+
+|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|:----------------|:------------|:--------------|
+| Segmente zu einer Website hinzugefügt | SegmentsAdded | Ein SharePoint-Administrator, ein globaler Administrator oder ein Websitebesitzer hat einer Website ein oder mehrere Informationsbarrierensegmente hinzugefügt. |
+| Segmente einer Website geändert | SegmentsChanged | Ein SharePoint-Administrator oder ein globaler Administrator hat ein oder mehrere Informationsbarrierensegmente für eine Website geändert. |
+| Segmente aus einer Website gelöscht | SegmentsRemoved | Ein SharePoint-Administrator oder ein globaler Administrator hat ein oder mehrere Informationsbarrierensegmente aus einer Website gelöscht. |
+||||
 
 ### <a name="exchange-admin-audit-log"></a>Exchange-Administratorüberwachungsprotokoll
 

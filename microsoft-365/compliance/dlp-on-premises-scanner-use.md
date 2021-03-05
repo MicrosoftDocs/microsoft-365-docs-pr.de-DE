@@ -55,11 +55,11 @@ Erkennungsdaten sind in einem lokalen Bericht im CSV-Format verfügbar, der gesp
 
 **%localappdata%\Microsoft\MSIP\Scanner\Reports\DetailedReport_%timestamp%.csv report**.
 
- Suchen Sie nach den folgenden Problemen:
-- DLP Modus
-- DLP Status
-- DLP Kommentar
-- DLP Regelname DLP Aktionen
+ Suchen Sie nach den folgenden Spalten:
+- DLP-Modus
+- DLP-Status
+- DLP-Kommentar
+- DLP-Regelname DLP-Aktionen
 - Besitzer
 - Aktuelle NTFS-Berechtigungen (SDDL)
 - Angewandte NTFS-Berechtigungen (SDDL)

@@ -82,7 +82,7 @@ Anhand der folgenden Tabelle können Sie Ihre geschäftlichen Anforderungen ents
 
 Wenn Sie Aufbewahrungsbezeichnungen für die Datensatzverwaltung verwenden, gibt es zusätzliche Szenarios, die einzigartig für Aufbewahrungsbezeichnungen sind, die Inhalte als Datensatz kennzeichnen. Siehe [Häufige Szenarien für die Datensatzverwaltung](get-started-with-records-management.md#common-scenarios-for-records-management).
 
-## <a name="end-user-documentation-for-retention"></a>Dokumentation zu Aufbewahrungsbezeichnungen für Endbenutzer
+## <a name="end-user-documentation-for-retention"></a>Dokumentation zur Aufbewahrung für Endbenutzer
 
 Die meisten Aufbewahrungsrichtlinien arbeiten unauffällig im Hintergrund ohne Benutzerinteraktion und benötigen daher nur wenig Dokumentation für Benutzer. Aufbewahrungsrichtlinien für Teams informieren Benutzer, wenn ihre Nachrichten gelöscht wurden, mit einem Link zu [Teams-Nachrichten über Aufbewahrungsrichtlinien](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
 
