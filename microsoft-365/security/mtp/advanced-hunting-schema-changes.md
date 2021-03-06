@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cd06286083297d0930270868b99a14f8ddb2f4b2
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 31a2f647351c05842f36198ad05b149086b53b1f
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461667"
+ms.locfileid: "50509302"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schema der erweiterten Suche – Benennungsänderungen
 
@@ -76,7 +76,7 @@ Namensänderungen werden automatisch auf Abfragen angewendet, die im Security Ce
 
 ## <a name="february-2021"></a>Februar 2021
 
-1. In den [Tabellen EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) und [EmailEvents](advanced-hunting-emailevents-table.md) haben wir die Spalten und veraltet und durch `MalwareFilterVerdict` die Spalte `PhishFilterVerdict` `ThreatTypes` ersetzt. Außerdem haben wir die Spalten und veraltet und `MalwareDetectionMethod` `PhishDetectionMethod` durch die Spalte `DetectionMethods` ersetzt. Diese Optimierung ermöglicht es uns, weitere Informationen unter den neuen Spalten zur Verfügung zu stellen. Die Zuordnung wird unten bereitgestellt.
+1. In den [Tabellen EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) und [EmailEvents](advanced-hunting-emailevents-table.md) wurden die `MalwareFilterVerdict` Spalten und durch die Spalte `PhishFilterVerdict` `ThreatTypes` ersetzt. Die `MalwareDetectionMethod` Spalten und wurden auch durch die Spalte `PhishDetectionMethod` `DetectionMethods` ersetzt. Diese Optimierung ermöglicht es uns, weitere Informationen unter den neuen Spalten zur Verfügung zu stellen. Die Zuordnung wird unten bereitgestellt.
 
 | Tabellenname | Ursprünglicher Spaltenname | Neuer Spaltenname | Änderungsgrund
 |--|--|--|--|
@@ -86,11 +86,11 @@ Namensänderungen werden automatisch auf Abfragen angewendet, die im Security Ce
 | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Weitere Bedrohungstypen enthalten |
 
 
-2. In den `EmailAttachmentInfo` Tabellen und haben wir die Spalte hinzugefügt, um weitere Informationen zur E-Mail-Bedrohung `EmailEvents` zu `ThreatNames` erhalten. Diese Spalte enthält Werte wie Spam oder Phish.
+2. In den Tabellen und wurde die Spalte hinzugefügt, um weitere Informationen zur E-Mail-Bedrohung `EmailAttachmentInfo` `EmailEvents` zu `ThreatNames` erhalten. Diese Spalte enthält Werte wie Spam oder Phish.
 
-3. In der [DeviceInfo-Tabelle](advanced-hunting-deviceinfo-table.md) haben wir die Spalte durch basierend auf `DeviceObjectId` `AadDeviceId` Kundenfeedback ersetzt.
+3. In der [DeviceInfo-Tabelle](advanced-hunting-deviceinfo-table.md) wurde die Spalte basierend auf Kundenfeedback durch `DeviceObjectId` die Spalte `AadDeviceId` ersetzt.
 
-4. In der [DeviceEvents-Tabelle](advanced-hunting-deviceevents-table.md) haben wir mehrere ActionType-Namen aktualisiert, um die Beschreibung der Aktion besser widerspiegeln zu können. Details finden Sie unten.
+4. In der [DeviceEvents-Tabelle](advanced-hunting-deviceevents-table.md) wurden mehrere ActionType-Namen geändert, um die Beschreibung der Aktion besser widerspiegeln zu können. Details zu den Änderungen finden Sie unten.
 
 | Tabellenname | Ursprünglicher ActionType-Name | Neuer ActionType-Name | Änderungsgrund
 |--|--|--|--|

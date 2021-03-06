@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Zusammenfassung: Herstellen einer Verbindung mit allen Microsoft 365-Diensten in einem einzigen PowerShell-Fenster.'
-ms.openlocfilehash: 390e2446737b4b85dfaba64974666fab4938a5dd
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: cd030018dabff628af18d173cf542a3d375b27d0
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084601"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515112"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Herstellen einer Verbindung mit allen Microsoft 365-Diensten in einem einzigen PowerShell-Fenster
 
@@ -115,8 +115,9 @@ Folgen Sie den nachstehend beschriebenen Schritten zum Herstellen einer Verbindu
    > Der Skype for Business Online-Connector ist derzeit Bestandteil des aktuellen PowerShell-Moduls von Teams. Wenn Sie die neueste Version von Teams PowerShell verwenden, müssen Sie den Skype for Business Online-Connector nicht installieren.
    
    ```powershell
-   $sfboSession = New-CsOnlineSession -Credential $credential
-   Import-PSSession $sfboSession
+   Import-Module MicrosoftTeams
+   $credential = Get-Credential
+   Connect-MicrosoftTeams -Credential $credential
    ```
 
 6. Führen Sie diese Befehle zum Herstellen einer Verbindung mit Exchange Online aus.
@@ -143,11 +144,14 @@ Folgen Sie den nachstehend beschriebenen Schritten zum Herstellen einer Verbindu
     
    ```powershell
    Import-Module MicrosoftTeams
-   Connect-MicrosoftTeams
+   $credential = Get-Credential
+   Connect-MicrosoftTeams -Credential $credential
    ```
   
    > [!Note]
    > Informationen zur Verbindung mit anderen Microsoft Teams-Clouds als der *Worldwide*-Cloud finden Sie unter [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).
+  
+
 
 
 ### <a name="azure-active-directory-powershell-for-graph-module"></a>Azure Active Directory PowerShell für Graph-Modul
@@ -164,8 +168,8 @@ Connect-AzureAD -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
 #Skype for Business Online
-$sfboSession = New-CsOnlineSession -Credential $credential
-Import-PSSession $sfboSession
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams -Credential $credential
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -ShowProgress $true
@@ -173,7 +177,7 @@ Connect-ExchangeOnline -ShowProgress $true
 Connect-IPPSSession -UserPrincipalName $acctName
 #Teams
 Import-Module MicrosoftTeams
-Connect-MicrosoftTeams
+Connect-MicrosoftTeams -Credential $credential
 ```
 
 ### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a>Microsoft Azure Active Directory-Modul für Windows PowerShell-Modul
@@ -190,8 +194,8 @@ Connect-MsolService -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
 #Skype for Business Online
-$sfboSession = New-CsOnlineSession -Credential $credential
-Import-PSSession $sfboSession
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams -Credential $credential
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -ShowProgress $true
@@ -199,7 +203,7 @@ Connect-ExchangeOnline -ShowProgress $true
 Connect-IPPSSession -UserPrincipalName $acctName
 #Teams
 Import-Module MicrosoftTeams
-Connect-MicrosoftTeams
+Connect-MicrosoftTeams -Credential $credential
 ```
 
 ## <a name="connection-steps-when-using-multi-factor-authentication"></a>Schritte zum Herstellen einer Verbindung bei Verwendung der mehrstufigen Authentifizierung
@@ -216,8 +220,8 @@ Connect-AzureAD
 #SharePoint Online
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
-$sfboSession = New-CsOnlineSession
-Import-PSSession $sfboSession
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
@@ -239,8 +243,8 @@ Connect-MsolService
 #SharePoint Online
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
-$sfboSession = New-CsOnlineSession
-Import-PSSession $sfboSession
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams
 #Exchange Online
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true

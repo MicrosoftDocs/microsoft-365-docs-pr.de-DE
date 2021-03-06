@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Zusätzliche Kundeninformationen zur Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
-ms.openlocfilehash: 26db69583bac68723d5d57b07abb856c8190d9b1
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 152e9e8d8f4550b9095a7b22e1bcd4cf30fa620f
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454467"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515196"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>Migrationsphasenaktionen und Auswirkungen für die Migration von Microsoft Cloud Deutschland (erweitert) 
 
@@ -62,27 +62,6 @@ Wenn Sie eine lokale Hybridbereitstellung verwenden:
 |Stoppen oder löschen Sie alle Onboarding- oder Offboarding-Verschiebungen von Postfächern.  | Dadurch wird sichergestellt, dass die Verschiebeanforderungen nicht fehlschlagen. | Exchange Online-Kunden mit (lokalen) Hybridbereitstellungen | Erforderliche Aktion. Wird diese Aktion nicht ausgeführt, kann dies zu einem Ausfall des Diensts oder der Software-Clients führen. |
 |||||
 
-### <a name="dynamics-phase-8-of-9"></a>Dynamics (Phase 8 von 9)
-
-| Schritt(e) | Beschreibung | Betrifft | Auswirkung |
-|:-------|:-----|:-------|:-------|
-| Microsoft Dynamics-Ressourcen | Kunden, die mit Microsoft Dynamics arbeiten, werden vom Engineering oder FastTrack beauftragt, Dynamics zur die Office 365-Dienstinstanz zu verlagern.* | Microsoft Dynamics 365-Kunden | – Der Administrator überprüft die Organisation nach der Migration. <br><br> – Der Administrator ändert bei Bedarf die Workflows. <br><br> – Der Administrator deaktiviert ggf. den AdminOnly-Modus. <br><br> – Der Administrator ändert ggf. die Art der Organisation von _Sandbox_. <br><br> – Benachrichtigen Sie die Endbenutzer über die neue URL für den Zugriff auf die Instanz (Organisation). <br><br> – Aktualisieren Sie alle eingehenden Verbindungen auf die neue Endpunkt-URL. <br><br> – Der Dynamics-Dienst steht Benutzern während des Übergangs nicht zur Verfügung. <br><br> – Benutzer sind verpflichtet, die Integrität und Funktionen der Organisation nach der Migration jeder einzelnen Organisation zu überprüfen.  |
-|||||
-
-\* (i) Kunden mit Microsoft Dynamics 365 müssen in diesem Migrationsszenario Maßnahmen ergreifen, die durch den bereitgestellten Migrationsprozess definiert sind. (ii) Wenn der Kunde keine Maßnahmen ergreift, bedeutet dies, dass Microsoft die Migration nicht abschließen kann. (iii) Wenn Microsoft die Migration aufgrund der Inaktivität des Kunden nicht abschließen kann, läuft das Abonnement des Kunden am 29. Oktober 2021 ab. 
-
-
-### <a name="power-bi-phase-8-of-9"></a>Power BI (Phase 8 von 9)
-
-| Schritt(e) | Beschreibung | Betrifft | Auswirkung |
-|:-------|:-----|:-------|:-------|
-| Migration von Power BI-Ressourcen | Kunden mit Microsoft Power BI werden von Engineering oder FastTrack beauftragt, nachdem ein vorhandenes PBI-Migrationstool manuell ausgelöst wurde, Power BI auf die Office 365-Dienstinstanz umzustellen.\*\* | Microsoft Power BI-Kunden | – Die folgenden Power BI-Elemente werden _nicht_ verschoben, und müssen neu erstellt werden: <br><br> – Echtzeit-Datasets (beispielsweise Streaming- oder Push-Datasets). <br> – Lokale Power BI-Konfiguration des Datengateways und die Datenquelle. <br> – Berichte, die auf den Echtzeit-Datasets basieren, sind nach der Migration nicht verfügbar und müssen neu erstellt werden. <br><br> – Power BI-Dienste stehen Benutzern während des Übergangs nicht zur Verfügung. Der Dienst sollte höchstens 24 Stunden lang nicht verfügbar sein. <br><br> – Benutzer müssen nach der Migration Datenquellen und ihre lokalen Datengateways mit dem Power BI-Dienst neu konfigurieren.  Solange dies nicht der Fall ist, können Benutzer diese Datenquellen nicht verwenden, um planmäßige Aktualisierungen und/oder direkte Abfragen für diese Datenquellen auszuführen. <br><br> – Kapazitäten und Premium-Arbeitsbereiche können nicht migriert werden. Kunden müssen alle Kapazitäten vor der Migration löschen und nach der Migration neu erstellen. Verschieben Sie Arbeitsbereiche ggf. zurück zu Kapazitäten.  |
-|||||
-
-\*\* (i) Kunden mit Microsoft Power BI müssen in diesem Migrationsszenario Maßnahmen ergreifen, die durch den bereitgestellten Migrationsprozess definiert sind. (ii) Wenn der Kunde keine Maßnahmen ergreift, bedeutet dies, dass Microsoft die Migration nicht abschließen kann. (iii) Wenn Microsoft die Migration aufgrund der Inaktivität des Kunden nicht abschließen kann, läuft das Abonnement des Kunden am 29. Oktober 2021 ab. 
-
-
-
 ## <a name="during-migration"></a>Während der Migration
 
 ### <a name="sharepoint-online-phase-4-of-9"></a>SharePoint Online (Phase 4 von 9)
@@ -115,16 +94,16 @@ Für eDiscovery:
 
 ### <a name="azure-ad-phase-9-of-9"></a>Azure AD (Phase 9 von 9)
 
-Für Hybrid:
+Für Hybrid-Azure-Kunden:
 
-| Schritt(e) | Beschreibung | Betrifft | Auswirkung |
+| Schritte: | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
 | Aktualisieren Sie Azure AD Connect. | Nach Abschluss der Übernahmemigration zu Azure AD verwendet die gesamte Organisation Office 365-Dienste und ist nicht mehr mit Microsoft Cloud Deutschland verbunden. An diesem Punkt muss der Kunde sicherstellen, dass der Delta-Synchronisierungsprozess abgeschlossen ist. Ändern Sie danach den Zeichenfolgenwert von `AzureInstance` aus 3 (Microsoft Cloud Deutschland) im Registrierungspfad `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` in 0. | Über Azure AD Hybrid verbundene Organisationen | Ändern Sie den Wert `AzureInstance` des Registrierungsschlüssels. Andernfalls werden Objekte nicht synchronisiert, wenn die Microsoft Cloud Deutschland-Endpunkte nicht mehr verfügbar sind. |
 |||||
 
-Für Verbundauthentifizierung:
+Für Kunden, die die Verbundauthentifizierung verwenden:
 
-| Schritt(e) | Beschreibung | Betrifft | Auswirkung |
+| Schritte: | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
 | Entfernen Sie Vertrauensstellungen der vertrauenden Gruppen aus Microsoft Cloud Deutschland AD FS. | Nach Abschluss der Übernahmemigration zu Azure AD verwendet die gesamte Organisation Office 365-Dienste und ist nicht mehr mit Microsoft Cloud Deutschland verbunden. An diesem Punkt muss der Kunde die Vertrauensstellung der vertrauenden Gruppe zu den Microsoft Cloud Deutschland-Endpunkten entfernen. Dies kann nur geschehen, wenn keine Anwendungen des Kunden auf Microsoft Cloud Deutschland-Endpunkte verweisen, wenn Azure AD als Identitätsanbieter (Identity Provider, IdP) verwendet wird. | Organisationen mit Verbundauthentifizierung | Keine |
 |||||
@@ -136,9 +115,9 @@ Für Azure AD:
 | Anforderungen für den Beitritt einer Azure AD-Gruppe in den letzten 30 Tagen vor der Migration müssen erneut durchgeführt werden, wenn die ursprüngliche Anforderung nicht genehmigt wurde. | Kunden von Endbenutzern müssen den Zugriffsbereich verwenden, um erneut Anforderungen zum Beitritt zu einer Azure AD-Gruppe zu senden, wenn diese Anforderungen in den letzten 30 Tagen vor der Migration nicht genehmigt wurden. | Endbenutzer, deren Azure AD-Gruppengenehmigungsanforderungen nicht in den letzten 30 Tagen vor der Migration genehmigt wurden |  Als Endbenutzer: <ol><li>Navigieren Sie zum [Zugriffsbereich](https://account.activedirectory.windowsazure.com/r#/joinGroups).</li><li>Suchen Sie eine Azure AD-Gruppe, für die innerhalb von 30 Tagen vor der Migration eine Mitgliedschaftsgenehmigung ausstehend war.</li><li>Fordern Sie den Beitritt zur Azure AD-Gruppe erneut an.</li></ol> Anforderungen zum Betritt zu einer Gruppe, die weniger als 30 Tage vor der Migration aktiv sind, können nicht genehmigt werden, es sei denn, sie werden nach der Migration wiederholt. |
 |||||
 
-Für DNS:
+Für vom Kunden verwaltete DNS-Zonen:
 
-| Schritt(e) | Beschreibung | Betrifft | Auswirkung |
+| Schritte: | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
 | Aktualisieren Sie lokale DNS-Dienste für Office 365-Dienstendpunkte. | Vom Kunden verwaltete DNS-Einträge, die auf Office 365 Deutschland verweisen, müssen aktualisiert werden, damit sie auf die Office 365-Dienstendpunkte verweisen. | Alle Office-Kunden | Erforderliche Aktion. Wird diese Aktion nicht ausgeführt, kann dies zu einem Ausfall des Diensts oder der Software-Clients führen. |
 |||||

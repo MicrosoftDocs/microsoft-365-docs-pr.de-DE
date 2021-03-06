@@ -1,5 +1,5 @@
 ---
-title: Zuweisen von Benutzer Skype for Business Online Richtlinien mit PowerShell für Microsoft 365
+title: Zuweisen von Skype for Business Online-Richtlinien pro Benutzer mit PowerShell für Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,36 +13,37 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 'Zusammenfassung: Verwenden Sie PowerShell für Microsoft 365, um benutzerspezifische Kommunikationseinstellungen mit Skype for Business Online Richtlinien zuzuweisen.'
-ms.openlocfilehash: 6ff9fce3e0287313f6725b370b6ba89cb939eb3a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 'Zusammenfassung: Verwenden Sie PowerShell für Microsoft 365, um Benutzerkommunikationseinstellungen mit Skype for Business Online-Richtlinien zuzuordnen.'
+ms.openlocfilehash: 6ee237e5d2ee0c9f472f372a6aa66c9612336265
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690529"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50514980"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Zuweisen von Benutzer Skype for Business Online Richtlinien mit PowerShell für Microsoft 365
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Zuweisen von Skype for Business Online-Richtlinien pro Benutzer mit PowerShell für Microsoft 365
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Die Verwendung von PowerShell für Microsoft 365 ist eine effiziente Methode, um benutzerspezifische Kommunikationseinstellungen mit Skype for Business Online Richtlinien zuzuweisen.
+Die Verwendung von PowerShell für Microsoft 365 ist eine effiziente Möglichkeit zum Zuweisen von Benutzerkommunikationseinstellungen mit Skype for Business Online-Richtlinien.
   
 ## <a name="prepare-to-run-the-powershell-commands"></a>Vorbereiten der Ausführung der PowerShell-Befehle
 
 Bereiten Sie sich mithilfe dieser Anweisungen auf die Ausführung der Befehle vor (überspringen Sie die Schritte, die Sie bereits ausgeführt haben):
   
-1. Laden Sie das [Connector-Modul für Skype for Business Online](https://www.microsoft.com/download/details.aspx?id=39366) herunter, und installieren Sie es.
+  > [!Note]
+   > Der Skype for Business Online-Connector ist derzeit Bestandteil des aktuellen PowerShell-Moduls von Teams. Wenn Sie die neueste Version von Teams PowerShell verwenden, müssen Sie den Skype for Business Online-Connector nicht installieren.
+
+1. Installieren Sie [das Teams PowerShell-Modul](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
     
 2. Öffnen Sie eine Windows PowerShell-Eingabeaufforderung, und führen Sie die folgenden Befehle aus: 
     
-```powershell
-Import-Module LyncOnlineConnector
-$userCredential = Get-Credential
-$sfbSession = New-CsOnlineSession -Credential $userCredential
-Import-PSSession $sfbSession
-```
+   ```powershell
+   Import-Module MicrosoftTeams
+   Connect-MicrosoftTeams
+   ```
 
-Wenn Sie dazu aufgefordert werden, geben Sie den Namen und das Kennwort Ihres Skype for Business Online-Administratorkontos ein.
+   Wenn Sie dazu aufgefordert werden, geben Sie den Namen und das Kennwort Ihres Skype for Business Online-Administratorkontos ein.
     
 ## <a name="updating-external-communication-settings-for-a-user-account"></a>Aktualisieren externer Kommunikationseinstellungen für ein Benutzerkonto
 
@@ -52,13 +53,13 @@ Angenommen, Sie möchten Einstellungen für die externe Kommunikation für ein B
     
 2. Weisen Sie Alex diese externe Zugriffsrichtlinie ist.
     
-Wie bestimmen Sie, welche Richtlinie für den externen Zugriff Alex zuweist? Der folgende Befehl gibt alle externen Zugriffsrichtlinien zurück, in denen EnableFederationAccess auf „True“ und EnablePublicCloudAccess auf „False“ festgelegt ist:
+Wie bestimmen Sie, welche Richtlinie für den externen Zugriff Alex zugewiesen werden soll? Der folgende Befehl gibt alle externen Zugriffsrichtlinien zurück, in denen EnableFederationAccess auf „True“ und EnablePublicCloudAccess auf „False“ festgelegt ist:
   
 ```powershell
 Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-Sofern Sie keine benutzerdefinierten Instanzen von externalaccesspolicy "erstellt haben, gibt dieser Befehl eine Richtlinie zurück, die unsere Kriterien erfüllt (FederationOnly). Hier ein Beispiel:
+Wenn Sie keine benutzerdefinierten Instanzen von ExternalAccessPolicy erstellt haben, gibt dieser Befehl eine Richtlinie zurück, die unsere Kriterien erfüllt (FederationOnly). Hier ein Beispiel:
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -94,7 +95,7 @@ Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
 
 Dieser Befehl verwendet „Get-CsOnlineUser“, um eine Sammlung aller Benutzer zurückzugeben, die für Lync aktiviert wurden. Anschließend werden alle diese Informationen an „Grant-CsExternalAccessPolicy“ gesendet, das die Richtlinie „FederationAndPICDefault“ jedem Benutzer in der Sammlung zuweist.
   
-Ein weiteres Beispiel: Angenommen, Sie haben Alex zuvor die Richtlinie „FederationAndPICDefault" zugewiesen, haben aber nun Ihre Meinung geändert und möchten, dass er von der globalen externen Zugriffsrichtlinie verwaltet wird. Sie können die globale Richtlinie niemandem explizit zuweisen. Stattdessen wird die globale Richtlinie für einen bestimmten Benutzer verwendet, wenn diesem Benutzer keine benutzerspezifische Richtlinie zugewiesen ist. Wenn Sie also möchten, dass Alex von der globalen Richtlinie verwaltet wird, müssen Sie die Zuweisung aller zuvor zugewiesenen benutzerspezifischen Richtlinien wieder  *aufheben*  . Hier ein Beispielbefehl:
+Ein weiteres Beispiel: Angenommen, Sie haben Alex zuvor die Richtlinie „FederationAndPICDefault" zugewiesen, haben aber nun Ihre Meinung geändert und möchten, dass er von der globalen externen Zugriffsrichtlinie verwaltet wird. Sie können die globale Richtlinie niemandem explizit zuweisen. Stattdessen wird die globale Richtlinie für einen bestimmten Benutzer verwendet, wenn diesem Benutzer keine Benutzerrichtlinie zugewiesen ist. Wenn Sie also möchten, dass Alex von der globalen Richtlinie verwaltet wird, müssen Sie die Zuweisung aller zuvor zugewiesenen benutzerspezifischen Richtlinien wieder  *aufheben*  . Hier ein Beispielbefehl:
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
@@ -105,11 +106,9 @@ Dieser Befehl legt den Namen der Alex zugewiesenen externen Zugriffsrichtlinie a
 
 ## <a name="managing-large-numbers-of-users"></a>Verwalten einer großen Anzahl von Benutzern
 
-Zum Verwalten einer großen Anzahl von Benutzern (1000 oder mehr) müssen Sie die Befehle mithilfe des Cmdlets [Invoke-Command](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) über einen Skriptblock stapeln.  In den vorherigen Beispielen muss jedes Mal, wenn ein Cmdlet ausgeführt wird, der Aufruf eingerichtet und dann auf das Ergebnis gewartet werden, bevor es zurückgesendet wird.  Wenn Sie einen Skriptblock verwenden, können die Cmdlets Remote ausgeführt werden und nach Abschluss der Daten zurückgesendet werden. 
+Zum Verwalten einer großen Anzahl von Benutzern (1000 oder mehr) müssen Sie die Befehle über einen Skriptblock mit dem [Cmdlet Invoke-Command](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) batchen.  In den vorherigen Beispielen muss jedes Mal, wenn ein Cmdlet ausgeführt wird, der Aufruf eingerichtet und dann auf das Ergebnis gewartet werden, bevor es zurücksennen.  Bei Verwendung eines Skriptblocks können die Cmdlets remote ausgeführt und nach Abschluss der Ausführung die Daten zurück gesendet werden. 
 
 ```powershell
-Import-Module LyncOnlineConnector
-$sfbSession = New-CsOnlineSession
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
 
 $batch = 50
@@ -134,7 +133,7 @@ $count = 0
 }
 ```
 
-Dadurch werden 500 Benutzer gleichzeitig gefunden, die nicht über eine Clientrichtlinie verfügen. Sie erteilt Ihnen die Clientrichtlinie "ClientPolicyNoIMURL" und die Richtlinie für den externen Zugriff "FederationAndPicDefault". Die Ergebnisse werden in Gruppen von 50 Batched und jeder Batch von 50 wird dann an den Remotecomputer gesendet.
+Dies werden 500 Benutzer gleichzeitig finden, die nicht über eine Clientrichtlinie verfügen. Es gewährt ihnen die Clientrichtlinie "ClientPolicyNoIMURL" und die Richtlinie für den externen Zugriff "FederationAndPicDefault". Die Ergebnisse werden in Gruppen von 50 Batches unterteilt, und jeder Batch mit 50 wird dann an den Remotecomputer gesendet.
   
 ## <a name="see-also"></a>Siehe auch
 
