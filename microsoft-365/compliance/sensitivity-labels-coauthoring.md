@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Aktivieren Sie eine Einstellung, die gemeinsame Erstellung und AutoSave in Desktop-Apps für beschriftete und verschlüsselte Dokumente in SharePoint und OneDrive aktiviert.
-ms.openlocfilehash: 3946fa5a08011cc98e8dfad921a08ca0fa77af7a
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: d26696530ed86e6608b6473fead0775fb07a060b
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423862"
+ms.locfileid: "50454636"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Aktivieren Sie die gemeinsame Erstellung für Dateien, die mit Vertraulichkeitsbezeichnungen verschlüsselt sind
 
@@ -37,12 +37,14 @@ Ohne diese Einstellung für Ihren Mandanten müssen Benutzer ein verschlüsselte
 
 Darüber hinaus führt die Aktivierung dieser Funktionalität dazu, dass [AutoSave](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) für diese bezeichneten und verschlüsselten Dateien unterstützt wird.
 
+Um die Releaseankündigung zu lesen, wechseln Sie zum Blogbeitrag [Ankündigung der gemeinsamen Dokumenterstellung auf Microsoft Information Protection-verschlüsselten Dokumenten und Bezeichnungsupdates](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162).
+
 ## <a name="metadata-changes-for-sensitivity-labels"></a>Metadatenänderungen für Vertraulichkeitsbezeichnungen
 
 > [!IMPORTANT]
 > Nachdem Sie die Einstellung für die gemeinsame Erstellung aktiviert haben, werden Bezeichnungsinformationen für unverschlüsselte Dateien nicht mehr unter benutzerdefinierten Eigenschaften gespeichert.
 > 
-> Aktivieren Sie diese Einstellung nicht, wenn Sie in Ihrer Organisation Apps, Dienste, Skripts oder Tools haben, die Bezeichnungsmetadaten lesen oder in den alten Speicherort schreiben.
+> Aktivieren Sie diese Einstellung nicht, wenn Sie Apps, Dienste, Skripts oder Tools verwenden, die Bezeichnungsmetadaten lesen oder in den alten Speicherort schreiben.
 
 Bevor Sie die Einstellung aktivieren, um die gemeinsame Erstellung für Office-Desktop-Apps zu unterstützen, müssen Sie wissen, dass diese Aktion Änderungen an den Bezeichnungsmetadaten vornimmt, die in Office-Dateien gespeichert und aus diesen gelesen werden.
 
@@ -80,16 +82,16 @@ Stellen Sie sicher, dass Sie die folgenden Voraussetzungen verstanden haben, bev
 
 - Vertraulichkeitsbezeichnungen müssen für [ Office-Dateien in SharePoint und OneDrive aktiviert](sensitivity-labels-sharepoint-onedrive-files.md) sein für den Mandanten. Wenn dieses Feature noch nicht aktiviert ist, wird es automatisch aktiviert, wenn Sie die Einstellung auswählen, mit der die gemeinsame Erstellung für Dateien mit Vertraulichkeitsbezeichnungen aktiviert werden soll.
 
-- Alle Apps, Dienste und Betriebstools in Ihrem Mandanten müssen die neuen [Bezeichnungsmetadaten](#metadata-changes-for-sensitivity-labels) unterstützen:
+- Microsoft 365 Apps for Enterprise:
+    - **Windows**: [Aktueller Kanal (Vorschau)](https://office.com/insider) mit minimalem Build 16.0.13801.20182 oder [Betakanal](https://office.com/insider) mit minimalem Build 16.0.13819.20006
+    - **macOS**: [Betakanal](https://office.com/insider) mit minimalem Build 16.47.218.0
+    - **iOS**: Wird noch nicht unterstützt
+    - **Android**: Wird noch nicht unterstützt
+
+- Alle Apps, Dienste und Betriebstools in Ihrem Mandanten müssen die neuen [Bezeichnungsmetadaten](#metadata-changes-for-sensitivity-labels) unterstützen. Wenn Sie eine der folgenden benutzen, überprüfen Sie die benötigten Mindestversionen:
     
-    - **Microsoft 365 Apps for Enterprise:**
-        - Windows: [Aktueller Kanal (Vorschau)](https://office.com/insider) mit minimalem Build 16.0.13801.20182 oder [Betakanal](https://office.com/insider) mit minimalem Build 16.0.13819.20006
-        - macOS: [Betakanal](https://office.com/insider) mit minimalem Build 16.47.218.0
-        - iOS: Wird noch nicht unterstützt
-        - Android: Wird noch nicht unterstützt
-    
-    - **Vereinheitlichter Bezeichnungs-Client und -Scanner für Azure Information Protection:** 
-        - Eine öffentliche Vorschau-Version (Installationsname: AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe), die Sie über das [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018) und eine der im vorherigen Element aufgeführten Versionen von Microsoft 365 Apps for Enterprise für Windows installieren können.
+    - **Vereinheitlichter Bezeichnungs-Client und -Scanner für Azure Information Protection:**
+        - Eine öffentliche Vorschau-Version (Installationsname: AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe), die Sie über das [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018) installieren können
     
     - **OneDrive-Synchronisation-App für Windows oder MacOS:**
         - Mindestversion von 19.002.0121.0008
@@ -144,9 +146,9 @@ Während der Vorschau müssen Sie eine bestimmte URL verwenden, um auf diese Ein
 
 1. Melden Sie sich über den folgenden Link beim Microsoft 365 Compliance Center als globaler Administrator für Ihren Testmandanten an:
     
-    ````
+    ```http
     https://compliance.microsoft.com/co-authoring_for_files_with_sensitivity_labels
-    ````
+    ```
     Über diesen Link gelangen Sie direkt zur Mandanteneinstellung, **Gemeinsame Erstellung für Dateien mit Vertraulichkeitsbezeichnungen**.
 
     > [!IMPORTANT]
