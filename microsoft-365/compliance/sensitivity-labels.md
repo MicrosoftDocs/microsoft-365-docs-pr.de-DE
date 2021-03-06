@@ -22,16 +22,21 @@ description: Verwenden Sie Vertraulichkeitsbezeichnungen aus dem Microsoft Infor
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2121c58b0105519d5dacda0c0bb39a102cf8d299
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 9232ccd9fd64676cea0826b05ccd7e68fcf054b9
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407261"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454604"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informationen zu Vertraulichkeitsbezeichnungen
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit & Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+
+> [!NOTE]
+> Wenn Sie nach Informationen zu Vertraulichkeitsbezeichnungen suchen, die in Ihren Office-Anwendungen angezeigt werden, lesen Sie den Abschnitt [Vertraulichkeitsbezeichnungen auf Dateien und E-Mails in Office anwenden](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
+>
+> Die Informationen auf dieser Seite richten sich an IT-Administratoren, die diese Bezeichnungen erstellen und konfigurieren können.
 
 Im Rahmen ihrer Arbeit müssen Personen in Ihrer Organisation mit anderen Personen innerhalb und außerhalb der Organisation zusammenarbeiten. Dies bedeutet, dass Inhalte nicht mehr durch eine Firewall geschützt sind – sie können zwischen verschiedenen Geräten, Apps und Diensten hin- und herbewegt werden. Dies soll auf sichere und geschützte Weise geschehen, die den geschäftlichen Anforderungen und Compliancerichtlinien Ihrer Organisation entspricht.
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch Dateien und E-Mails zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 4bbea7810c20d72ef75bbb5602b1daddfce45576
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: 4eeedca64d1b2244355bb3e0e233969bdd02810c
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084676"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461890"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -60,7 +60,7 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
     
     Speziell für die automatische Bezeichnung von Microsoft Office SharePoint Online und OneDrive gilt:
     - Office-Dateien für Word, PowerPoint und Excel werden unterstützt. Das Open XML-Format wird unterstützt (z. B. DOCX und XLSX), aber nicht das Microsoft Office 97–2003-Format (z. B. DOC und XLS).
-        - Diese Dateien können automatisch mit Bezeichnungen versehen werden, wenn sie nicht Teil einer offenen Sitzung sind und zwar unabhängig davon, ob sie nach dem Erstellen der Richtlinien für das automatische Anwenden von Bezeichnungen erstellt, hochgeladen oder geändert wurden, oder ob es sich um vorhandene Dateien handelt, die seit der Erstellung Ihrer Richtlinien für das automatische Anwenden von Bezeichnungen nicht geändert wurden.
+        - Diese Dateien können automatisch im Ruhezustand mit einer Bezeichnung versehen werden, bevor oder nachdem die Richtlinien für automatische Bezeichnungen erstellt wurden. Beachten Sie, dass Dateien nicht automatisch mit einer Bezeichnung versehen werden können, wenn sie Teil einer offenen Sitzung sind (d. h., wenn die Datei geöffnet ist).
     - Maximal 25.000 automatisch bezeichnete Dateien in Ihrem Mandanten pro Tag.
     - Maximal 10 Richtlinien zum automatischen Bezeichnen pro Mandant, die für jeweils bis zu 10 Websites (SharePoint oder OneDrive) vorgesehen sind.
     - Bestehende Werte für "Geändert", "Geändert von" und das Datum werden nicht aufgrund von automatischen Bezeichnungsrichtlinien geändert – sowohl für den Simulationsmodus als auch für den Zeitpunkt, zu dem Beschriftungen angewendet werden.

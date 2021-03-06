@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Mit der Datensatzverwaltung in Microsoft 365 können Sie Ihre Aufbewahrungszeitpläne auf einen Dateiplan anwenden, der die Aufbewahrung, die Datensatzdeklaration und die Löschung verwaltet.
-ms.openlocfilehash: 1f6ab392abbf55851e1f084507d3f1658c3cf264
-ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
+ms.openlocfilehash: 857f8118bb2cc0f94065a8b8696c92bd3ae05cc4
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905234"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461850"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Weitere Informationen zur Datensatzverwaltung in Microsoft 365
 
@@ -80,11 +80,11 @@ Eine Standard-Aufbewahrungsbezeichnung verfügt über Aufbewahrungseinstellungen
 
 |Aktion| Aufbewahrungsbezeichnung |Datensatz – gesperrt| Datensatz – entsperrt| Regulatorischer Datensatz |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|Inhalt bearbeiten|Zulässig | **Gesperrt** | Allowed | **Gesperrt**|
+|Inhalt bearbeiten|Zulässig | **Gesperrt** | Zulässig | **Gesperrt**|
 |Bearbeiten Sie Eigenschaften, einschließlich Umbenennen|Allowed |Zulässig | Zulässig| **Gesperrt**|
 |Löschen|Zulässig <sup>1</sup> |**Gesperrt** |**Gesperrt**| **Gesperrt**|
-|Kopie|Zulässig |Allowed | Zulässig| Zulässig|
-|Innerhalb eines Containers bewegen<sup>2</sup>|Zulässig |Zulässig | Allowed| Zulässig|
+|Kopie|Zulässig |Zulässig | Zulässig| Zulässig|
+|Innerhalb eines Containers bewegen<sup>2</sup>|Zulässig |Zulässig | Zulässig| Zulässig|
 |Über Container hinweg bewegen <sup>2</sup>|Zulässig |Zulässig, wenn nie entsperrt | **Gesperrt** | **Gesperrt**|
 |Öffnen/Lesen|Zulässig |Zulässig | Zulässig| Allowed|
 |Ändern der Bezeichnung|Zulässig |Zulässig – nur Container-Administrator | Zulässig – nur Container-Administrator| **Gesperrt**
@@ -98,7 +98,7 @@ Nachricht, die ein Benutzer sieht, wenn er versucht, ein beschriftetes Dokument 
 
 ![Nachricht, dass das Element nicht aus SharePoint gelöscht wurde](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-<sup>2</sup> Zu den Containern gehören SharePoint-Dokumentbibliotheken und Exchange-Postfächer.
+<sup>2</sup> Zu den Containern gehören SharePoint-Dokumentbibliotheken, OneDrive-Konten und Exchange-Postfächer.
 
 >[!IMPORTANT] 
 > Der wichtigste Unterschied für einen regulatorischen Datensatz besteht darin, dass nach der Anwendung auf den Inhalt niemand, nicht einmal ein globaler Administrator, die Bezeichnung entfernen kann. 

@@ -19,16 +19,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 3d317a0a26d69eb46b8bb84253571b7d14f9836b
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: a716e3dd8138d5f7f9b5f8d8abbdb401211db9ae
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242489"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461870"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+
+> [!NOTE]
+> Wenn Nachrichten über Aufbewahrungsrichtlinien in Ihren Apps angezeigt werden, wenden Sie sich an Ihre IT-Abteilung, um zu erfahren, wie diese für Sie konfiguriert wurden. Wenn es sich bei diesen Nachrichten um Teams-Chat- oder Kanalnachrichten handelt, ziehen Sie [Teams-Nachrichten über Aufbewahrungsrichtlinien](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b) zurate.
+>
+> Die Informationen auf dieser Seite richten sich an IT-Administratoren, die aus Compliancegründen Aufbewahrungsrichtlinien und -bezeichnungen erstellen können.
 
 In den meisten Organisationen nimmt die Menge und Komplexität der Daten täglich zu – E-Mails, Dokumente, Chatnachrichten usw. Eine effektive Verwaltung bzw. Governance dieser Informationen ist wichtig, da Sie:
   

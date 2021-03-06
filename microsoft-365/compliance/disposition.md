@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Entsorgung von Inhalten, unabhängig davon, ob Sie die Löschungsprüfung verwenden oder Inhalte automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht werden.
-ms.openlocfilehash: 9c2e9055d0468270df4e46fe39115708762052f3
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 092067e676c1cbae3fae6e9d6a5ff77099ce4631
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682668"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461880"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -52,15 +52,13 @@ Vergewissern Sie sich, dass die Überwachung mindestens einen Tag vor der ersten
 
 ## <a name="disposition-reviews"></a>Löschungsprüfungen
 
-Wenn Inhalte das Ende des Aufbewahrungszeitraums erreichen, kann es verschiedene Gründe geben, die Inhalte zu überprüfen, um zu entscheiden, ob sie unbedenklich gelöscht ("verworfen") werden können. Beispielsweise können folgende Aktivitäten erforderlich werden:
+Wenn Inhalte das Ende des Aufbewahrungszeitraums erreichen, kann es verschiedene Gründe geben, die Inhalte zu überprüfen und sicherzustellen, dass sie endgültig gelöscht („verworfen“) werden können. Anstatt den Inhalt zu löschen, ist es möglicherweise erforderlich, folgende Schritte auszuführen:
   
 - Aussetzten der Löschung relevanter Inhalte im Falle eines Rechtsstreits oder einer Prüfung.
-    
-- Entfernen von Inhalten aus der Dispositionsliste, um sie in einem Archiv zu speichern, wenn die Inhalte historischen Wert haben oder für Forschungszwecke von Interesse sind.
-    
-- Das Zuweisen eines anderen Aufbewahrungszeitraums für die Inhalte, vielleicht, weil die ursprünglichen Aufbewahrungseinstellungen eine vorübergehende oder vorläufige Lösung waren.
-    
-- Rückgabe der Inhalte an Kunden oder Übertragung an eine andere Organisation.
+
+- Zuweisen eines anderen Aufbewahrungszeitraums für die Inhalte, vielleicht, weil die ursprünglichen Aufbewahrungseinstellungen eine vorübergehende oder vorläufige Lösung waren.
+
+- Verschieben des Inhalts von seinem bisherigen Speicherort an einen Archivspeicherort, z. B. wenn dieser Inhalt von wissenschaftlichem oder historischem Wert ist.
 
 Wenn am Ende des Aufbewahrungszeitraums eine Löschungsprüfung ausgelöst wird:
   

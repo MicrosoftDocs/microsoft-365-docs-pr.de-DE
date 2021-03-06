@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: 5c992a988dbffc12824b2b64c1ea9a8fb6d22d67
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 137fcdad514e8272b99ab735a0cf1ed6f6e3e00e
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406525"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461796"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informationen zur Aufbewahrung für Microsoft Teams
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
 > [!NOTE]
-> Wenn Sie ein Benutzer sind, der in Teams eine Nachricht sieht, dass Ihre Chats und Nachrichten durch eine Aufbewahrungsrichtlinie gelöscht wurden, lesen Sie [Teamnachrichten zu Aufbewahrungsrichtlinien](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+> Wenn Sie in Teams eine Nachricht angezeigt wird, die besagt, dass Ihre Chats oder Nachrichten durch eine Aufbewahrungsrichtlinie gelöscht wurden, lesen Sie [Teamnachrichten zu Aufbewahrungsrichtlinien](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
 > 
 > Die Informationen auf dieser Seite richten sich an IT-Administratoren, die diese Aufbewahrungsrichtlinien verwalten.
 
