@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Aktivieren Sie eine Einstellung, die gemeinsame Erstellung und AutoSave in Desktop-Apps für beschriftete und verschlüsselte Dokumente in SharePoint und OneDrive aktiviert.
-ms.openlocfilehash: a5c3e84e4ca8874f99a07294dccfd2e4ad7ed81f
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 3946fa5a08011cc98e8dfad921a08ca0fa77af7a
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417379"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423862"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Aktivieren Sie die gemeinsame Erstellung für Dateien, die mit Vertraulichkeitsbezeichnungen verschlüsselt sind
 
@@ -88,8 +88,8 @@ Stellen Sie sicher, dass Sie die folgenden Voraussetzungen verstanden haben, bev
         - iOS: Wird noch nicht unterstützt
         - Android: Wird noch nicht unterstützt
     
-    - **Unified Labeling-Client und -Scanner für Azure Information Protection:** 
-        - Eine öffentliche Vorschau-Version (Mindestversion von 2.10.45.0), die Sie über das [Microsoft Download Center](https://aka.ms/aip-coauth-pp) und eine der im vorherigen Element aufgeführten Versionen von Microsoft 365 Apps for Enterprise für Windows installieren können.
+    - **Vereinheitlichter Bezeichnungs-Client und -Scanner für Azure Information Protection:** 
+        - Eine öffentliche Vorschau-Version (Installationsname: AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe), die Sie über das [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018) und eine der im vorherigen Element aufgeführten Versionen von Microsoft 365 Apps for Enterprise für Windows installieren können.
     
     - **OneDrive-Synchronisation-App für Windows oder MacOS:**
         - Mindestversion von 19.002.0121.0008
@@ -122,6 +122,8 @@ Stellen Sie sicher, dass Sie die folgenden Einschränkungen dieses Features vers
     - **Verschlüsselung mit Doppelschlüssel** ist ausgewählt.
     
     Bei Bezeichnungen mit einer dieser Verschlüsselungskonfigurationen werden die Bezeichnungen in Office-Apps angezeigt. Wenn Benutzer jedoch diese Bezeichnungen auswählen und niemand anderes das Dokument bearbeitet, werden sie gewarnt, dass das gemeinsame Erstellung und AutoSave nicht verfügbar sind. Wenn jemand anderes das Dokument bearbeitet, wird Benutzern eine Meldung angezeigt, dass die Bezeichnungen nicht angewendet werden können.
+
+- Wenn Sie den vereinheitlichten Bezeichnungs-Client von Azure Information Protection verwenden: Überprüfen Sie die Dokumentation für diesen Bezeichnungs-Client hinsichtlich [weiteren Voraussetzungen oder Einschränkungen](https://docs.microsoft.com/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview).
 
 ## <a name="known-issues-for-this-preview"></a>Bekannte Probleme für diese Vorschau
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sind Sie bereit für die Implementierung von Vertraulichkeitsbezeichnungen, um die Daten Ihrer Organisation zu schützen, aber nicht sicher, wo Sie beginnen sollten? Hier finden Sie einige praktische Anleitungen, die Ihnen auf dem Weg zu Bezeichnungen helfen.
-ms.openlocfilehash: 31c0ae4cdbeabb10fd44aaffaa24a8597e644941
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 47bbc722ad87d5bde4b1e0dfb732e08dad3938f2
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407159"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423636"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Erste Schritte mit Vertraulichkeitsbezeichnungen
 
@@ -85,7 +85,7 @@ In allen Szenarien müssen Sie [Vertraulichkeitsbezeichnungen und deren Richtlin
 |Erlauben Sie Benutzern, Dateien von Windows-Computern mithilfe von Office-Apps, Datei-Explorer und PowerShell zu bezeichnen und zu schützen.|[Azure Information Protection-Clients mit einheitlichen Bezeichnungen für Windows](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |Verschlüsseln von Dokumenten und E-Mails mit Vertraulichkeitsbezeichnungen sowie Einschränken, wer darauf zugreifen kann und wie diese Inhalte verwendet werden können |[Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung](encryption-sensitivity-labels.md)|
 |Aktivieren Sie Vertraulichkeitsbezeichnungen für Office im Web mit Unterstützung für die gemeinsame Dokumenterstellung, eDiscovery, Verhinderung von Datenverlust und Suche – sogar für verschlüsselte Dokumente. | [Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
-|Verwenden von gemeinsamer Dokumenterstellung und Auto-Save in Office-Desktop-Apps, wenn Dokumente verschlüsselt werden | [Aktivieren der gemeinsamen Erstellung für Dateien, die mit Vertraulichkeitsbezeichnungen verschlüsselt sind](sensitivity-labels-coauthoring.md)
+|Verwenden von gemeinsamer Dokumenterstellung und AutoSpeichern in Office-Desktop-Apps, wenn Dokumente verschlüsselt werden | [Aktivieren der gemeinsamen Erstellung für Dateien, die mit Vertraulichkeitsbezeichnungen verschlüsselt sind](sensitivity-labels-coauthoring.md)
 |Automatisches Anwenden von Vertraulichkeitsbezeichnungen auf Dokumente und E-Mails | [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)|
 |Vertraulichkeitsbezeichnungen zum Schützen von Inhalten in Teams und SharePoint verwenden |[Verwendung von Vertraulichkeitsbezeichnungen bei Microsoft Teams, Microsoft 365-Gruppen und Microsoft Office SharePoint Online-Websites](sensitivity-labels-teams-groups-sites.md) |
 |Verhindern oder Warnen von Benutzern vor dem Freigeben von Dateien oder E-Mails mit einer bestimmten Vertraulichkeitsbezeichnung |[Verwenden von Vertraulichkeitsbezeichnungen als Bedingungen in DLP-Richtlinien (Vorschau)](dlp-sensitivity-label-as-condition.md) |
