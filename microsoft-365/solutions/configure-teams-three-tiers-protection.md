@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Erfahren Sie, wie Sie Teams für eine bessere Sicherheit bei der gemeinsamen Nutzung von Dateien konfigurieren können, indem Sie drei Schutzebenen verwenden, die ein Gleichgewicht zwischen Sicherheit und einfacher Zusammenarbeit herstellen.
-ms.openlocfilehash: cb49c35cc1c485d45656b1716d385cf626322ce8
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: d41effb6db9f8995c3c878523babf200ab9af762
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602007"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509242"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Konfigurieren von Teams mit drei Schutzebenen
 
@@ -114,6 +114,8 @@ Lesen Sie die folgenden Verweise, um eine sichere und produktive Gastumgebung f�
 ## <a name="access-from-unmanaged-devices"></a>Zugriff von nicht verwalteten Geräten aus
 
 Bei den Ebenen „Vertraulich“ und „Streng vertraulich“ wird der Zugriff auf SharePoint-Inhalte mit Vertraulichkeitsbezeichnungen eingeschränkt. Der bedingte Zugriff über Azure AD bietet zahlreiche Optionen, um zu bestimmen, wie Personen auf Microsoft 365 zugreifen, einschließlich Einschränkungen basierend auf Standort, Risiko, Gerätekonformität und anderen Faktoren. Wir empfehlen Ihnen, den Artikel [Was ist bedingter Zugriff?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) zu lesen, und sich zu überlegen, welche zusätzlichen Richtlinien für Ihre Organisation geeignet sein könnten.
+
+Beachten Sie, dass Gäste oft keine Geräte haben, die von Ihrer Organisation verwaltet werden. Wenn Sie Gäste in eine der Ebenen erlauben, überlegen Sie, welche Arten von Geräten diese für den Zugriff auf Teams und Websites verwenden, und legen Sie Ihre Richtlinien für nicht verwaltete Geräte entsprechend fest.
 
 ## <a name="next-step"></a>Nächster Schritt
 

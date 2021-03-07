@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie Teams bereitstellen, in denen hochgradig vertrauliche Daten geschützt sind.
-ms.openlocfilehash: 2679a8a0bd8cf5cc3d35d517e8a44921fc4fdbc1
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 7e746ebc81d1ccd9aea2953fd42004715f8d7819
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921134"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509266"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Teams für den Schutz hochgradig vertraulicher Daten konfigurieren
 
@@ -79,7 +79,7 @@ Erstellen einer Vertraulichkeitsbezeichnung
 17. Klicken Sie auf **Weiter**.
 18. Wählen Sie auf der Seite **Definieren der Einstellungen für externe Freigabe und Gerätezugriff** die Option **Steuerung der externen Freigabe aus bezeichneten SharePoint-Websites**.
 19. Wählen Sie unter **Inhalt kann geteilt werden mit** die Option **Neue und bestehende Gäste** aus, wenn Sie den Gastzugriff erlauben wollen, oder anderenfalls **Nur Personen in Ihrer Organisation**.
-20. Wählen Sie unter **Zugriff von nicht verwalteten Geräten** die Option **Zugriff blockieren**.
+20. Wählen Sie unter **Zugriff von nicht verwalteten Geräten** die Option **Zugriff blockieren**. (Wenn Sie Gäste zulassen und diese keine verwalteten Geräte haben, können Sie die Option **Eingeschränkten Nur-Web-Zugriff zulassen** auswählen.)
 21. Klicken Sie auf **Weiter**.
 22. Klicken Sie auf der Seite **Automatisches Bezeichnen von Datenbank-Spalten** auf **Weiter**.
 23. Klicken Sie auf **Bezeichnung erstellen** und anschließend auf **Fertig**.

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informationen zur Formularverarbeitung in Microsoft SharePoint Syntex
-ms.openlocfilehash: 4a6ecc9e6eaca6f0b61f8c04b67eabb29674f6bd
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 1dba8828a158a5163017ee5f37735f44e974274c
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242446"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515160"
 ---
 # <a name="form-processing-overview"></a>Übersicht über die Formularverarbeitung
 
@@ -45,6 +45,13 @@ Damit Benutzer ein [Formularverarbeitungsmodell erstellen](create-a-form-process
 ### <a name="file-limitations"></a>Dateieinschränkungen
 
 Wenn Sie das Formular zur Verarbeitung von Modellen verwenden, stellen Sie sicher, dass die [Anforderungen und die Einschränkungen der Dateinutzung](https://docs.microsoft.com/ai-builder/form-processing-model-requirements) eingetragen sind.
+
+### <a name="multi-geo-environments"></a>Multi-Geo-Umgebungen
+
+Wenn sie SharePoint Syntex in einer [Microsoft 365 Multi-Geo-Umgebung](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo) aufsetzen, dann können Sie es nur für die Verwendung der Formularverarbeitung am zentralen Speicherort konfigurieren. Wenn Sie die Formularverarbeitung in einem Satellitenstandort verwenden wollen, kontaktieren Sie den Microsoft-Support.
+
+
+
 
 
 

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 02f12174ef3b8a55f9642bba41c845952b1c1c48
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 141eb16ae77c44c51358c07a74f5050eb07dc26f
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950544"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509278"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Erste Schritte mit Microsoft Managed Desktop
 
@@ -21,7 +21,7 @@ Nachdem Sie sich jetzt für den Dienst angemeldet haben, führen Sie die folgend
 > Es wird empfohlen, dieser Reihenfolge zu folgen, aber Sie haben ein gewisses Maß an Flexibilität in der Abfolge.
 
 1. [Hinzufügen und Überprüfen von Administrator-Kontakten im-Administratorportal](add-admin-contacts.md)
-2. [Bedingten Zugriff anpassen](conditional-access.md)
+2. [Anpassen der Einstellungen nach der Registrierung](conditional-access.md)
 3. [Zuweisen von Lizenzen](assign-licenses.md)
 4. [Intune-Unternehmensportal bereitstellen](company-portal.md)
 5. [Aktivieren von Enterprise State Roaming](enterprise-state-roaming.md)

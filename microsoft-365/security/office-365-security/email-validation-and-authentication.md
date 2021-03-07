@@ -19,12 +19,12 @@ localization_priority: Priority
 description: Administratoren erfahren hier, wie EOP E-Mail-Authentifizierung (SPF, DKIM und DMARC) verwendet, um Spoofing, Phishing und Spam zu verhindern.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d1e0fbe8a00b17e871adf65f86a337a0a94493ed
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 87677608431446a4bdfe6e16ae1204163a4f582a
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286513"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509194"
 ---
 # <a name="email-authentication-in-eop"></a>E-Mail-Authentifizierung in EOP
 
@@ -60,7 +60,7 @@ Im März 2018 verfügten nur 9 % der Domänen der Fortune 500-Unternehmen über
 
 Der Anteil von kleinen und mittelständischen Unternehmen, die sichere E-Mail-Authentifizierungsrichtlinien verfügen, ist kleiner. Und die Zahl der E-Mail-Domänen außerhalb von Nordamerika und Westeuropa ist sogar noch geringer.
 
-Das Fehlen sicherer E-Mail-Authentifizierungsrichtlinien stellt ein großes Problem dar. Während Organisationen möglicherweise nicht verstehen, wie E-Mail-Authentifizierung funktioniert, sind sich Angreifer darüber sehr wohl im Klaren – und nutzen das zu ihrem Vorteil. Wegen der Sorge vor Phishing und der unzureichenden Einführung sicherer E-Mail-Authentifizierungsrichtlinien, verwendet Microsoft *implizite E-Mail-Authentifizierung*, um eingehende E-Mails zu überprüfen.
+Das Fehlen sicherer E-Mail-Authentifizierungsrichtlinien stellt ein großes Problem dar. Während Organisationen möglicherweise nicht verstehen, wie die E-Mail-Authentifizierung funktioniert, sind sich Angreifer darüber sehr wohl im Klaren und nutzen dies zu ihrem Vorteil aus. Wegen der Sorge vor Phishing und der unzureichenden Einführung sicherer E-Mail-Authentifizierungsrichtlinien, verwendet Microsoft *implizite E-Mail-Authentifizierung*, um eingehende E-Mails zu überprüfen.
 
 Die implizite E-Mail-Authentifizierung ist eine Erweiterung der regulären E-Mail-Authentifizierungsrichtlinien. Zu diesen Erweiterungen gehören: Absenderzuverlässigkeit, Absenderhistorie, Empfängerhistorie, Verhaltensanalysen und weitere fortgeschrittene Techniken. Beim Fehlen weiterer Signale dieser Erweiterungen werden Nachrichten, die von Domänen gesendet ohne E-Mail-Authentifizierungsrichtlinien gesendet werden, als Spoof gekennzeichnet.
 

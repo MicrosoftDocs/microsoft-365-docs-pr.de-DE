@@ -87,6 +87,8 @@
       items:
         - name: Übersicht über Bookings
           href: overview-bookings.md
+        - name: Geschäftsinformationen mit Microsoft-Listen nachverfolgen
+          href: track-info-lists.md
         - name: Planen eines Ereignisses
           href: plan-event.md
     - name: Verwalten von Diensten

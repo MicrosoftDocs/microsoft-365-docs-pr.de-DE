@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Hier erfahren Sie, wie Sie die Multi-Faktor-Authentifizierung für Ihre Organisation einrichten.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 5ea367e64108e80ee7429ec700cf2ac0551aeab2
-ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
+ms.openlocfilehash: d08ef54c545809bbb2277f8d0a8471245400a3ac
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50105151"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50514968"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
 
@@ -81,10 +81,11 @@ Weitere Informationen zu Azure AD P1 und P2 finden Sie unter [Azure Active Direc
 
 ### <a name="turn-on-modern-authentication-for-your-organization"></a>Aktivieren von moderner Authentifizierung für Ihre Organisation
 
-Bei den meisten Abonnements ist die moderne Authentifizierung automatisch aktiviert, aber wenn Sie Ihr Abonnement vor langer Zeit erworben haben, ist dies möglicherweise nicht der Fall. Die moderne Authentifizierung muss aktiviert werden, bevor MFA mit Office-Apps angemessen funktioniert.
+Bei den meisten Abonnements wird die moderne Authentifizierung automatisch aktiviert. Wenn Sie Ihr Abonnement jedoch vor August 2017 gekauft haben, müssen Sie wahrscheinlich die moderne Authentifizierung aktivieren, damit Funktionen wie die mehrstufige Authentifizierung in Windows-Clients wie Outlook funktionieren.
+
 
 1. Wählen Sie im Microsoft 365 Admin Center im linken Navigationsbereich **Einstellungen** \> **Organisationseinstellungen** aus.
-1. Wählen Sie auf der Registerkarte **Dienste** die **moderne Authentifizierung** aus, und vergewissern Sie sich, dass im Bereich **Moderne Authentifizierung** die Option **Moderne Authentifizierung aktivieren** aktiviert ist. Wählen Sie **Änderungen speichern** aus.
+2. Wählen Sie unter der Registerkarte **Dienste** die **moderne Authentifizierung** aus, und vergewissern Sie sich, dass im Bereich **Moderne Authentifizierung** die Option **Moderne Authentifizierung aktivieren** ausgewählt ist. Wählen Sie **Änderungen speichern** aus.
 
 ### <a name="turn-off-legacy-per-user-mfa"></a>Deaktivieren der Legacy-MFA auf Benutzerbasis
 

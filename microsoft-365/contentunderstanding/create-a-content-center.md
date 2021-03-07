@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Erhalten Sie Informationen zum Erstellen eines Inhaltscenters.
-ms.openlocfilehash: 4377cbfbda8572fe9e08a079a05146961105298b
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 3544bbef7cf2f898733c7aaad620487098a2dd24
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976531"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515136"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Erstellen eines inhaltscenters in Microsoft SharePoint Syntex
 
@@ -35,18 +35,27 @@ Zum Erstellen und Verwalten von Dokumentverständnismodellen benötigen Sie zuer
 Sie erstellen ein Standardinhaltscenter während des [Setups](set-up-content-understanding.md). Ein SharePoint-Administrator kann aber bei Bedarf auch zusätzliche Center erstellen. Während ein einzelnes Inhaltscenter für Umgebungen, für die Sie eine Rollup aller Modellaktivitäten durchführen möchten, möglicherweise in Ordnung ist, möchten Sie möglicherweise zusätzliche Zentren für mehrere Abteilungen in Ihrer Organisation einrichten, die möglicherweise unterschiedliche Bedürfnisse und Berechtigungsanforderungen an Ihre Modelle haben.
 
 > [!NOTE]
-> Ein SharePoint-Administrator kann eine Inhaltscenter-Website erstellen, wie er auch eine beliebige andere [SharePoint-Website](https://docs.microsoft.com/sharepoint/create-site-collection) über den Bereitstellungsbereich der Admin Center-Website erstellen würde.
+> Wenn Sie in einer [Microsoft 365 Multi-Geo-Umgebung](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo) ein einzelnes Standardinhaltscenter an Ihrem zentralen Speicherort haben, können Sie nur ein Rollup der Modellaktivität von diesem Speicherort aus bereitstellen. In einer Multi-Geo-Umgebung können Sie derzeit kein Rollup der Modellaktivität über Farmgrenzen hinweg erhalten. 
+
+
+## <a name="create-a-content-center"></a>Erstellen eines Inhaltscenters
+
+Ein SharePoint-Administrator kann eine Inhaltscenter-Website erstellen, wie er auch eine beliebige andere [SharePoint-Website](https://docs.microsoft.com/sharepoint/create-site-collection) über den Bereitstellungsbereich der Admin Center-Website erstellen würde.
 
 So erstellen Sie ein neues Inhaltscenter:
 
 1. Wechseln Sie im Microsoft 365 Admin Center zum SharePoint Admin Center.
+
 2. Wählen Sie im SharePoint Admin Center unter **Websites** die Option **Aktive Websites** aus.
+
 3. Klicken Sie auf der Seite **Aktive Websites** auf **Erstellen**, und wählen Sie dann **Sonstige Optionen** aus.
+
 4. Wählen Sie im Menü **Vorlage auswählen** die Option **Inhaltscenter** aus.
+
 5. Stellen Sie für die neue Website Angaben für **Websitename**, **Primärer Administrator** und **Sprache** bereit.</br>
 
-> [!NOTE] 
-> Sie können eine inhaltscenter-Website für die Darstellung in einer der verfügbaren Sprachen auswählen. Beachten Sie jedoch, dass zurzeit nur für englische Dateien Modelle erstellt werden können. Beachten Sie auch, dass die Standardsprache der Website nach der Erstellung (wie bei anderen Websitevorlagen) nicht mehr bearbeitet werden kann.</br>
+   > [!NOTE] 
+   > Sie können eine inhaltscenter-Website für die Darstellung in einer der verfügbaren Sprachen auswählen. Beachten Sie jedoch, dass zurzeit nur für englische Dateien Modelle erstellt werden können. Beachten Sie auch, dass die Standardsprache der Website nach der Erstellung (wie bei anderen Websitevorlagen) nicht mehr bearbeitet werden kann.</br>
 
 6. Wählen Sie **Fertigstellen** aus.
  

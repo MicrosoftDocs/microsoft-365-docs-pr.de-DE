@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
 ms.openlocfilehash: 085630c498cebfea26fb3de975740af17cb73921
 ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/04/2021
 ms.locfileid: "50454419"
@@ -90,7 +90,7 @@ Reworked as text:
 
 | Schritt(e) | Beschreibung | Betrifft | Auswirkung |
 |:-------|:-----|:-------|:-------|
-| Aktualisieren Sie vor der Migration auf die neueste Version des Assistenten für die Hybridkonfiguration (Hybrid Configuration Wizard, HCW). <br><br> Microsoft Cloud Deutschland Hybrid Exchange Online-Kunden müssen frühere Versionen von HCW deinstallieren und dann die neueste Version (17.0.5378.0 oder höher) von installieren und [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) ausführen. | Die neueste Version des HCW enthält die erforderlichen Updates zur Unterstützung von Kunden, die von Microsoft Cloud Deutschland zu Office 365-Diensten wechseln. <br><br> Updates umfassen Änderungen an lokalen Zertifikateinstellungen für den Sendeconnector und den Empfangsconnector. <br><br> Kunden müssen die Installation mithilfe der Office 365 Deutschland-Einstellungen neu installieren, bevor Phase 5 von 9 (Exchange-Migration) beginnt. <br><br> HINWEIS: Nach Abschluss der Migration zu Office 365-Diensten entfernen und installieren Sie den HCW erneut, dieses Mal mithilfe von Office 365 Worldwide-Einstellungen, um Ihr Hybrid-Setup mit dem globalen Dienst abzuschließen. | Exchange Online-Kunden, die die Hybridbereitstellung ausführen | Erforderliche Aktion. Wenn sie vor Phase 5 von 9 (Exchange-Migration) nicht ausgeführt werden, kann dies zu Dienst- oder Clientfehlern führen. |
+| Aktualisieren Sie vor der Migration auf die aktuellste Version des hybriden Konfigurations-Assistenten (Hybrid Configuration Wizard, HCW). <br><br> Ein hybrider Exchange Online-Kunde von Microsoft Cloud Deutschland muss frühere Versionen von HCW deinstallieren, und dann die aktuellste Version (17.0.5378.0 oder höher) von [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) installieren und ausführen. | Die neueste Version des HCW enthält die erforderlichen Updates zur Unterstützung von Kunden, die von Microsoft Cloud Deutschland zu Office 365-Diensten wechseln. <br><br> Updates umfassen Änderungen an den lokalen Zertifikateinstellungen für den Senden-Connector und den Empfangen-Connector. <br><br> Kunden müssen die Neuinstallation mit Office 365 Deutschland-Einstellungen durchführen, bevor die Phase 5 von 9 (Exchange-Migration) beginnt. <br><br> HINWEIS: Nach Abschluss der Migration zu Office 365-Diensten entfernen und installieren Sie die HCW erneut. Diesmal verwenden Sie die Einstellungen von Office 365 Worldwide, um Ihr Hybrid-Setup mit dem globalen Dienst abzuschließen. | Exchange Online-Kunden, die die Hybridbereitstellung ausführen | Erforderliche Aktion. Wenn dies nicht vor der Phase 5 von 9 (Exchange-Migration) durchgeführt wird, kann dies zu einem Ausfall des Dienstes oder des Clients führen. |
 |||||
 
 <!--
