@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Erfahren Sie, wo die Zahlung für Ihr Abonnement gesendet werden soll.
+description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6320b31929fb0d02abe0c3929cc2adc49c0e8d15
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: c18dd07c883d91e37fc253d0614f36146316d3bd
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647219"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550888"
 ---
 # <a name="payment-information-for-hungary"></a>Zahlungsinformationen für Ungarn
 
-[Suchen Sie ein anderes Land oder eine andere Region](../billing-and-payments/pay-for-your-subscription.md).
+[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).
 
-Bezahlen Sie bitte nur in EUR und verweisen Sie auf Ihre Rechnungsnummer (n) auf Ihrer Zahlungsüberweisung.
+Bitte zahlen Sie nur in EUR, und verweisen Sie auf Ihre Rechnungsnummer(n) für Ihre Zahlungsüberweisung.
 
 ## <a name="electronic-funds-transfer"></a>Elektronischer Zahlungsverkehr
 
 **Bank:** Citibank, London  
-**SWIFT-Code/BIC:** CITIGB2L  
+**SWIFT Code/BIC:** CITIGB2L  
 **IBAN:** GB31CITI18500812207591  
-**Sortier Code:** 185008  
+**SORT-Code:** 185008  
 **Kontonummer:** 12207591    
-**Konto Name:** Microsoft
+**Kontoname:** MICROSOFT

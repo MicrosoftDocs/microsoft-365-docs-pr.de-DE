@@ -1,5 +1,5 @@
 ---
-title: Zahlungsinformationen für Côte d ' Ivoire
+title: Zahlungsinformationen für Côte d'Ivoire
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -10,21 +10,20 @@ ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
-description: Erfahren Sie, wo die Zahlung für Ihr Abonnement gesendet werden soll.
+description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1989a05a5c5f9f7f2fad8c35c4410d75b76d36dc
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 5662ca08da77e58c331a0dfc2aa301aad4bd4fd6
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637415"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551596"
 ---
-# <a name="payment-information-for-cte-divoire"></a>Zahlungsinformationen für Côte d ' Ivoire
+# <a name="payment-information-for-cte-divoire"></a>Zahlungsinformationen für Côte d'Ivoire
 
-[Suchen Sie ein anderes Land oder eine andere Region](../billing-and-payments/pay-for-your-subscription.md).
+[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).
 
-Bezahlen Sie bitte nur in USD und verweisen Sie auf Ihre Rechnungsnummer (n) auf Ihrer Zahlungsüberweisung.
+Bitte zahlen Sie nur in USD, und verweisen Sie auf Ihre Rechnungsnummer(n) für Ihre Zahlungsüberweisung.
 
 ## <a name="electronic-funds-transfer"></a>Elektronischer Zahlungsverkehr
 
@@ -32,4 +31,4 @@ Bezahlen Sie bitte nur in USD und verweisen Sie auf Ihre Rechnungsnummer (n) auf
 **SWIFT-Code:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
 **Kontonummer:** 12510049  
-**Konto Name:** Microsoft  
+**Kontoname:** MICROSOFT  

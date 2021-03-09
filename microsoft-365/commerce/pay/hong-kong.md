@@ -1,5 +1,5 @@
 ---
-title: Zahlungsinformationen für Hong Kong
+title: Zahlungsinformationen für Hongkong
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Erfahren Sie, wo die Zahlung für Ihr Abonnement gesendet werden soll.
+description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9d0b6cb118005ae7e3ae8e110a436faa9829e4b5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dcab44878f1627f17a20859f92eec2964ee0b4a8
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647255"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550960"
 ---
-# <a name="payment-information-for-hong-kong"></a>Zahlungsinformationen für Hong Kong
+# <a name="payment-information-for-hong-kong"></a>Zahlungsinformationen für Hongkong
 
-[Suchen Sie ein anderes Land oder eine andere Region](../billing-and-payments/pay-for-your-subscription.md).
+[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).
 
-Folgen Sie den Zahlungsanweisungen auf Ihrer Rechnung und der Referenz Rechnungsnummer (n) auf Ihrer Zahlungsüberweisung.
+Folgen Sie bitte den Zahlungsanweisungen auf Ihrer Rechnung und referenzierten Rechnungsnummer(n) für Ihre Zahlungsüberweisung.
 
 ## <a name="electronic-funds-transfer"></a>Elektronischer Zahlungsverkehr
 
-**Bank:** HSBC, Hong Kong  
-**BLZ:** 004  
-**Branchen Code:** 848  
+**Bank:** HSBC, Hongkong  
+**Bankleitzahl:** 004  
+**Zweigstellencode:** 848  
 **SWIFT-Code:** HSBCHKHH  
 **Kontonummer:** 848342259001    
-**Konto Name:** Microsoft Payments Pte Ltd-Payco Rechnung
+**Kontoname:** Microsoft Payments Pte Ltd-Payco Invoice

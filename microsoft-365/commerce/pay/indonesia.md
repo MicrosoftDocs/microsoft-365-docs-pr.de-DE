@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Erfahren Sie, wo die Zahlung für Ihr Abonnement gesendet werden soll.
+description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a17accaebc4dd64ad6baf0542382d70f67ff5ab2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2e62646e72394d37914ceacf95cc868111a6c85e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647207"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550840"
 ---
 # <a name="payment-information-for-indonesia"></a>Zahlungsinformationen für Indonesien
 
-[Suchen Sie ein anderes Land oder eine andere Region](../billing-and-payments/pay-for-your-subscription.md). 
+[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md). 
 
-Zahlen Sie bitte nur in IDR und verweisen Sie auf Rechnungsnummer (n) auf Ihrer Zahlungsüberweisung.
+Bitte zahlen Sie nur in IDR und verweisen Sie auf Rechnungsnummer(n) für Ihre Zahlungsüberweisung.
 
 ## <a name="electronic-funds-transfer"></a>Elektronischer Zahlungsverkehr
 
 **Bank:** Citibank, Indonesien  
-**Verzweigung:** Jakarta  
+**Branch:** Jakarta  
 **SWIFT-Code:** CITIIDJX  
 **Kontonummer:** 104468055  
-**Konto Name:** PT Microsoft Indonesien  
+**Kontoname:** PT Microsoft Indonesien  
