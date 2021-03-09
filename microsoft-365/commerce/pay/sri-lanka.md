@@ -9,26 +9,25 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Erfahren Sie, wo die Zahlung für Ihr Abonnement gesendet werden soll.
+description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 426973165a4884c5304d4e8b5ac734366277614e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 545b977d8942706073c10b0365f66d9ec0b110a6
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648515"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542596"
 ---
-# <a name="payment-information-for-sri-lanka"></a><span data-ttu-id="f5c75-103">Zahlungsinformationen für Sri Lanka</span><span class="sxs-lookup"><span data-stu-id="f5c75-103">Payment information for Sri Lanka</span></span>
+# <a name="payment-information-for-sri-lanka"></a><span data-ttu-id="f01a3-103">Zahlungsinformationen für Sri Lanka</span><span class="sxs-lookup"><span data-stu-id="f01a3-103">Payment information for Sri Lanka</span></span>
 
-<span data-ttu-id="f5c75-104">[Suchen Sie ein anderes Land oder eine andere Region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="f5c75-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="f01a3-104">[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="f01a3-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="f5c75-105">Zahlen Sie bitte nur in USD und verweisen Sie auf Ihre Rechnungsnummer (n) auf Ihrer Rechnungs Überweisung.</span><span class="sxs-lookup"><span data-stu-id="f5c75-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
+<span data-ttu-id="f01a3-105">Bitte zahlen Sie nur in USD, und verweisen Sie auf Ihre Rechnungsnummer für Ihre Rechnungsüberweisung.</span><span class="sxs-lookup"><span data-stu-id="f01a3-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="f5c75-106">Elektronischer Zahlungsverkehr</span><span class="sxs-lookup"><span data-stu-id="f5c75-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="f01a3-106">Elektronischer Zahlungsverkehr</span><span class="sxs-lookup"><span data-stu-id="f01a3-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="f5c75-107">**Bank:** Citibank, Singapur</span><span class="sxs-lookup"><span data-stu-id="f5c75-107">**Bank:** Citibank, Singapore</span></span>  
-<span data-ttu-id="f5c75-108">**SWIFT-Code:** CITISGSG</span><span class="sxs-lookup"><span data-stu-id="f5c75-108">**SWIFT Code:** CITISGSG</span></span>  
-<span data-ttu-id="f5c75-109">**Kontonummer:** 0-817543-138</span><span class="sxs-lookup"><span data-stu-id="f5c75-109">**Account Number:** 0-817543-138</span></span>  
-<span data-ttu-id="f5c75-110">**Konto Name:** Microsoft Regional Sales Corp</span><span class="sxs-lookup"><span data-stu-id="f5c75-110">**Account Name:** MICROSOFT REGIONAL SALES CORP</span></span>  
+<span data-ttu-id="f01a3-107">**Bank:** Citibank, Singapur</span><span class="sxs-lookup"><span data-stu-id="f01a3-107">**Bank:** Citibank, Singapore</span></span>  
+<span data-ttu-id="f01a3-108">**SWIFT-Code:** CITISGSG</span><span class="sxs-lookup"><span data-stu-id="f01a3-108">**SWIFT Code:** CITISGSG</span></span>  
+<span data-ttu-id="f01a3-109">**Kontonummer:** 0-817543-138</span><span class="sxs-lookup"><span data-stu-id="f01a3-109">**Account Number:** 0-817543-138</span></span>  
+<span data-ttu-id="f01a3-110">**Kontoname:** MICROSOFT REGIONAL SALES CORP</span><span class="sxs-lookup"><span data-stu-id="f01a3-110">**Account Name:** MICROSOFT REGIONAL SALES CORP</span></span>  
