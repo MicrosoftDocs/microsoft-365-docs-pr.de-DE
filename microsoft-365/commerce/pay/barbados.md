@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Erfahren Sie, wo die Zahlung für Ihr Abonnement gesendet werden soll.
+description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d6d0c9dcd1e5dcafecce95b1ab30ef54301b45f2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: af2c24b878c07a118b3cec96dccd42d93192d50e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637895"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549520"
 ---
 # <a name="payment-information-for-barbados"></a>Zahlungsinformationen für Barbados
 
-[Suchen Sie ein anderes Land oder eine andere Region](../billing-and-payments/pay-for-your-subscription.md).
+[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).
 
-Zahlen Sie bitte nur in USD und verweisen Sie auf Ihre Rechnungsnummer (n) auf Ihrer Rechnungs Überweisung.
+Bitte zahlen Sie nur in USD, und verweisen Sie auf Ihre Rechnungsnummer für Ihre Rechnungsüberweisung.
 
 ## <a name="electronic-funds-transfer"></a>Elektronischer Zahlungsverkehr
 
 **Bank:** Bank of America  
-**Verzweigung:** Dallas  
+**Branch:** Dallas  
 **SWIFT-Code:** BOFAUS3N  
 **Kontonummer:** 4426587954  
-**Konto Name:** Microsoft  
+**Kontoname:** Microsoft  
