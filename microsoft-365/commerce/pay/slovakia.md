@@ -1,5 +1,5 @@
 ---
-title: Zahlungsinformationen für Slowakei
+title: Zahlungsinformationen für die Slowakei
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Erfahren Sie, wo die Zahlung für Ihr Abonnement gesendet werden soll.
+description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6f020052fe450920ddb9a3b790bdda25fdb18f45
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e3a0a946ad587c4b0a6bf65981a1f4cf571a279c
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648575"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542608"
 ---
-# <a name="payment-information-for-slovakia"></a>Zahlungsinformationen für Slowakei
+# <a name="payment-information-for-slovakia"></a>Zahlungsinformationen für die Slowakei
 
-[Suchen Sie ein anderes Land oder eine andere Region](../billing-and-payments/pay-for-your-subscription.md).
+[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).
 
-Bezahlen Sie bitte nur EUR und Referenz Rechnungsnummer (n) auf Ihrer Zahlungsüberweisung.
+Bitte zahlen Sie nur in EUR und verweisen Sie auf Rechnungsnummer(n) für Ihre Zahlungsüberweisung.
 
 ## <a name="electronic-funds-transfer"></a>Elektronischer Zahlungsverkehr
 
 **Bank:** Citibank, London  
-**SWIFT-Code/BIC:** CITIGB2L  
+**SWIFT Code/BIC:** CITIGB2L  
 **IBAN:** GB31CITI18500812207591  
-**Sortier Code:** 185008  
+**SORT-Code:** 185008  
 **Kontonummer:** 12207591  
-**Konto Name:** Microsoft
+**Kontoname:** MICROSOFT

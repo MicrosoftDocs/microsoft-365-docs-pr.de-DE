@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Suriname
+title: Supportinformationen für Suriname
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,33 +9,32 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 215d40590092c39ebc01b528841b2607b4b1e28b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9d8b650e9e1d0579907b4bd32b87ce0a1e98ff23
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639431"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544096"
 ---
-# <a name="contact-support-for-suriname"></a>Kontakt Support für Suriname
+# <a name="contact-support-for-suriname"></a>Kontaktieren des Support für Suriname
 
 [Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
-+ 1 312 843 5146
++1 312 843 5146
 
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
 
-Niederländisch: Mon-Fri 5 – 13 Uhr
+Niederländisch: Mon-Fri 05:00-13:00 Uhr
 
-Deutsch: Mon-Fri 5 – 13 Uhr
+Englisch: Mon-Fri 05:00-13:00 Uhr
 
 ### <a name="technical-support"></a>Technischer Support:
 
 Englisch: rund um die Uhr
 
-Gebühren für internationale Anrufe
+Internationale Anrufgebühren

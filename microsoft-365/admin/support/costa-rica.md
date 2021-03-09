@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Costa Rica
+title: Supportinformationen für Costa Rica
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4c64625fbe84210bb8f5aecdff92dfa0ebb9d3d0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bece1749f0ce3bd8b0debd5a391cbce8895644e7
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643175"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547852"
 ---
-# <a name="contact-support-for-costa-rica"></a>Kontakt Support für Costa Rica
+# <a name="contact-support-for-costa-rica"></a>Kontaktieren des Support für Costa Rica
 
 [Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
 
@@ -30,7 +29,7 @@ ms.locfileid: "48643175"
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
 
-Spanisch: Mon-Fri 9.00-17.00 Uhr
+Spanisch: Mon-Fri 9:00-17:00 Uhr
 
 ### <a name="technical-support"></a>Technischer Support:
 
