@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Aland Islands
+title: Supportinformationen für Alandinseln
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,31 +9,30 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9d3bc7e9cef92c2f657c77e77d24b4bb22890167
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dc43559640aeeb6beb089a4212a202ba4b41ff06
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644411"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549136"
 ---
-# <a name="contact-support-for-aland-islands"></a><span data-ttu-id="0da0c-103">Kontakt Support für Aland Islands</span><span class="sxs-lookup"><span data-stu-id="0da0c-103">Contact support for Aland Islands</span></span>
+# <a name="contact-support-for-aland-islands"></a><span data-ttu-id="51d69-103">Wenden Sie sich an den Support für Alandinseln</span><span class="sxs-lookup"><span data-stu-id="51d69-103">Contact support for Aland Islands</span></span>
 
-<span data-ttu-id="0da0c-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="0da0c-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="51d69-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="51d69-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="0da0c-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="0da0c-105">Phone number</span></span>
-<span data-ttu-id="0da0c-106">08009 8462</span><span class="sxs-lookup"><span data-stu-id="0da0c-106">08009 8462</span></span>
+## <a name="phone-number"></a><span data-ttu-id="51d69-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="51d69-105">Phone number</span></span>
+<span data-ttu-id="51d69-106">08009 8462</span><span class="sxs-lookup"><span data-stu-id="51d69-106">08009 8462</span></span>
 
-## <a name="hours"></a><span data-ttu-id="0da0c-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="0da0c-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="0da0c-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="0da0c-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="51d69-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="51d69-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="51d69-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="51d69-108">Billing Support:</span></span>
 
-<span data-ttu-id="0da0c-109">Englisch: Mon-Fri 10 – 18 Uhr</span><span class="sxs-lookup"><span data-stu-id="0da0c-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="51d69-109">Englisch: Mon-Fri 10:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="51d69-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="0da0c-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="0da0c-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="51d69-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="51d69-110">Technical Support:</span></span>
 
-<span data-ttu-id="0da0c-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="0da0c-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="51d69-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="51d69-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="0da0c-112">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="0da0c-112">Local call charges apply</span></span>
+<span data-ttu-id="51d69-112">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="51d69-112">Local call charges apply</span></span>
