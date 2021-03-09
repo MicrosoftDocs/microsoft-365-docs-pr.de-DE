@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Christmas Island
+title: Supportinformationen für Weihnachtsinsel
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,23 +9,22 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b24d7e7682c71d24d326282e16e987dda0dac128
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: eda1fad6f618bd3fb1acaa9159c4be1f63dcfc18
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643371"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548104"
 ---
-# <a name="contact-support-for-christmas-island"></a>Kontakt Support für Christmas Island
+# <a name="contact-support-for-christmas-island"></a>Kontaktieren des Support für Weihnachtsinsel
 
 [Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
-+ 1 312 843 5148
++1 312 843 5148
 
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
@@ -36,4 +35,4 @@ Englisch: Mo-Fr 9:00 bis 17:00 Uhr
 
 Englisch: rund um die Uhr
 
-Gebühren für internationale Anrufe
+Internationale Anrufgebühren

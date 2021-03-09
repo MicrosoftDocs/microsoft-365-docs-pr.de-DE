@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Virgin Islands, US
+title: Supportinformationen für Jungferninseln, USA
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7e5d039ca73d5319a41aca85ed7e11e0d620a113
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 19de8ae65b891671fabe507d6c8c2ea639947802
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638687"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549304"
 ---
-# <a name="contact-support-for-virgin-islands-us"></a>Kontaktieren des Supports für Virgin Islands, USA
+# <a name="contact-support-for-virgin-islands-us"></a>Kontaktieren des Support für Jungferninseln, USA
 
 [Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Fidschi
+title: Supportinformationen für Fidschi
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,25 +9,24 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 55d212b498e97916b01f355613861bb0779ffc0e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 140475aa4946c11dbfeca714f9897e9e0ac00f30
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642683"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547432"
 ---
-# <a name="contact-support-for-fiji"></a>Kontaktieren des Supports für Fidschi
+# <a name="contact-support-for-fiji"></a>Kontaktieren des Support für Fidschi
 
 [Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 004 890 1001
 
-Geben Sie nach dem Wählen
+Geben Sie nach dem Wählen ein
 
 877 860 4596
 

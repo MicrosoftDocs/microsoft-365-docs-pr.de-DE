@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Dänemark
+title: Supportinformationen für Dänemark
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: dce30e545cd487cc39a55f55fab21cc6899492db
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 65d9e2d99a7533c78135f6b8f5be4ff918510de6
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642983"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547776"
 ---
-# <a name="contact-support-for-denmark"></a>Wenden Sie sich an den Support für Dänemark
+# <a name="contact-support-for-denmark"></a>Kontaktieren des Support für Dänemark
 
 [Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Ungarn
+title: Supportinformationen für Ungarn
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,23 +9,22 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 809cd8c5087dfabc6825bcc8cf53f3c02213b7d2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9475a197b189c98cd920a5eb6b52be82c0e7144d
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642155"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546868"
 ---
-# <a name="contact-support-for-hungary"></a>Kontakt Support für Ungarn
+# <a name="contact-support-for-hungary"></a>Wenden Sie sich an den Support für Ungarn
 
 [Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
-+ 36 80 983 899
++36 80 983 899
 
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
@@ -34,10 +33,10 @@ Englisch: Mo-Fr 9:00 bis 17:00 Uhr
 
 ### <a name="technical-support"></a>Technischer Support:
 
-Ungarisch: Mon-Fri 8.00-18.00 Uhr
+Ungarisch: Mon-Fri 8:00-18:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefonnummer: + 36 1 778 9292
+Alternative Telefonnummer: +36 1 778 9292
 
 Es gelten die Ortstarife.
