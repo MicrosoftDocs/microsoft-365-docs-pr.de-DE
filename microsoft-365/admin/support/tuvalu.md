@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Tuvalu
+title: Supportinformationen für Tuvalu
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,23 +9,22 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 524aa6ac840e181a7a74ca8878c7d023a427b6af
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 93ca46cfd87f3fe8d0b3ba7fdc376583635ae1d6
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638963"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543736"
 ---
-# <a name="contact-support-for-tuvalu"></a>Kontakt Support für Tuvalu
+# <a name="contact-support-for-tuvalu"></a>Kontaktieren des Support für Tuvalu
 
 [Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
-+ 1 312 843 5148
++1 312 843 5148
 
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
@@ -36,4 +35,4 @@ Englisch: Mo-Fr 9:00 bis 17:00 Uhr
 
 Englisch: rund um die Uhr
 
-Gebühren für internationale Anrufe
+Internationale Anrufgebühren

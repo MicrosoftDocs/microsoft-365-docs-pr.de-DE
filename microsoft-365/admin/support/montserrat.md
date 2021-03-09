@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Montserrat
+title: Supportinformationen für Montserrat
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,23 +9,22 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9fc1c09bc658bc0553537fc486233bba13400709
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 44547a5799396880b304a47452dce935f25c2f0c
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640907"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545692"
 ---
-# <a name="contact-support-for-montserrat"></a>Kontaktieren des Supports für Montserrat
+# <a name="contact-support-for-montserrat"></a>Kontaktieren des Support für Montserrat
 
 [Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
-+ 1 312 843 5145
++1 312 843 5145
 
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
@@ -36,4 +35,4 @@ Englisch: Mo-Fr 9:00 bis 17:00 Uhr
 
 Englisch: rund um die Uhr
 
-Gebühren für internationale Anrufe
+Internationale Anrufgebühren

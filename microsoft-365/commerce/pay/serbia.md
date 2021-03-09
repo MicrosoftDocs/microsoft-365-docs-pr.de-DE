@@ -9,22 +9,21 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Erfahren Sie, wo die Zahlung für Ihr Abonnement gesendet werden soll.
+description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5415b528c7bf8a755b31cdf0d598de12d8fd379b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b79f343b2f35ad8e111df641a1cf77f1f809ecff
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648647"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542620"
 ---
 # <a name="payment-information-for-serbia"></a>Zahlungsinformationen für Serbien
 
-[Suchen Sie ein anderes Land oder eine andere Region](../billing-and-payments/pay-for-your-subscription.md).
+[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).
 
-Bezahlen Sie bitte nur US-Dollar und Referenz Rechnungsnummer (n) auf Ihrer Zahlungsüberweisung.
+Bitte zahlen Sie nur in USD und verweisen Sie auf Rechnungsnummer(n) für Ihre Zahlungsüberweisung.
 
 ## <a name="electronic-funds-transfer"></a>Elektronischer Zahlungsverkehr
 
@@ -32,4 +31,4 @@ Bezahlen Sie bitte nur US-Dollar und Referenz Rechnungsnummer (n) auf Ihrer Zahl
 **SWIFT-Code:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
 **Kontonummer:** 12510049  
-**Konto Name:** Microsoft  
+**Kontoname:** MICROSOFT  

@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Namibia
+title: Supportinformationen für Namibia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d87f85e8ccc826f7e87352fcb236a1d82ad6be09
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cfcc66e15a21971a8baa3546fb45fd013da94ce4
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640823"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545524"
 ---
-# <a name="contact-support-for-namibia"></a>Kontakt mit dem Support für Namibia
+# <a name="contact-support-for-namibia"></a>Kontaktieren des Support für Namibia
 
 [Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
 
@@ -29,7 +28,7 @@ ms.locfileid: "48640823"
 
 Option 9 auswählen
 
-Geben Sie Code 7705
+Eingabecode 7705
 
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:

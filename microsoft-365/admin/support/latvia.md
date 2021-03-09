@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Lettland
+title: Supportinformationen für Lettland
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c7393492c99e37cf305bc5e942d9b6ceb9b4a800
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4d06a8beca5670fec4c03bdad7ae52f3f2130ac8
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641651"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546295"
 ---
 # <a name="contact-support-for-latvia"></a>Wenden Sie sich an den Support für Lettland
 

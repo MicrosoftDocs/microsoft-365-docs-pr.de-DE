@@ -9,22 +9,21 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Erfahren Sie, wo die Zahlung f체r Ihr Abonnement gesendet werden soll.
+description: Erfahren Sie, wie die Zahlung f체r Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f286e19870a265a0036523c020e4d1891da1d9a2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f4f9e5844264c6c002c07fa9cb3902b9a46f0d02
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649415"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543352"
 ---
 # <a name="payment-information-for-liechtenstein"></a>Zahlungsinformationen f체r Liechtenstein
 
-[Suchen Sie ein anderes Land oder eine andere Region](../billing-and-payments/pay-for-your-subscription.md).
+[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).
 
-Zahlen Sie bitte nur in CHF und Referenz Rechnungsnummer (n) auf Ihrer Zahlungs체berweisung.
+Bitte zahlen Sie nur in CHF und verweisen Sie auf Rechnungsnummer(n) f체r Ihre Zahlungs체berweisung.
 
 ## <a name="electronic-funds-transfer"></a>Elektronischer Zahlungsverkehr
 
@@ -32,4 +31,4 @@ Zahlen Sie bitte nur in CHF und Referenz Rechnungsnummer (n) auf Ihrer Zahlungs�
 **SWIFT-Code:** CITIGB2L  
 **IBAN:** GB44CITI18500812207648  
 **Kontonummer:** 12207648  
-**Konto Name:** Microsoft  
+**Kontoname:** MICROSOFT  

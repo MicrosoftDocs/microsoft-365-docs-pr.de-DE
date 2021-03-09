@@ -9,30 +9,29 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Erfahren Sie, wo die Zahlung für Ihr Abonnement gesendet werden soll.
+description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e7619287e6bd98236f5b513ccbdb6e6b30777af6
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 840cb16360a793f351507122566931e648e04866
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646883"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542776"
 ---
 # <a name="payment-information-for-russia"></a>Zahlungsinformationen für Russland
 
-[Suchen Sie ein anderes Land oder eine andere Region](../billing-and-payments/pay-for-your-subscription.md).
+[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).
 
-Bezahlen Sie bitte nur RUB und Referenz Rechnungsnummer (n) auf Ihrer Zahlungsüberweisung.
+Bitte zahlen Sie nur in RUB und verweisen Sie auf Rechnungsnummer(n) für Ihre Zahlungsüberweisung.
 
 ## <a name="electronic-funds-transfer"></a>Elektronischer Zahlungsverkehr
 
 **Bank:** ZAO KB Citibank in Moskau  
 **SWIFT-Code:** CITIRUMX  
-**Bik:** 044525202  
-**Gasthaus:** 7731420476  
+**BIK:** 044525202  
+**INN:** 7731420476  
 **KPP:** 773101001  
 **Kontonummer:** 40702810000702700004  
-**Entsprechendes Konto:** 30101810300000000202 in OPERU Moskovsky GTU Bank of Russia  
-**Konto Name:** Microsoft Payments Russia LLC
+**Entsprechendes Konto:** 3010181030000000202 in OPERU Moskovsky GTU Bank of Russia  
+**Kontoname:** Microsoft Payments Russia LLC
