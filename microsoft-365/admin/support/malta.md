@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Malta
+title: Supportinformationen für Malta
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1846eaac0284d3a5c22d1cd4883ad2dd1720c111
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4bc0e7998a37bdf35085819749498edbd0ffebae
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641267"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545936"
 ---
 # <a name="contact-support-for-malta"></a>Wenden Sie sich an den Support für Malta
 

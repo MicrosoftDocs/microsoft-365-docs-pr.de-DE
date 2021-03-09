@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ea02f5ff95baea42bf57c01c939afe4d3e4c13a2
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 4f0be1b416bb80bc5cd2b43f5e4c95f0dbc24142
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423476"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542323"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Untersuchen und Beheben von Warnungen zur Kommunikationscompliance
 
@@ -102,7 +102,7 @@ Unabhängig davon, wo Sie mit der Überprüfung von Warnungen oder der von Ihnen
 Nach der Überprüfung der Grundlagen der Nachricht ist es an der Zeit, eine Nachricht zu öffnen, um die Details zu untersuchen und weitere Korrekturaktionen zu ermitteln. Wählen Sie eine Nachricht aus, um den gesamten Nachrichtenkopf und die Textkörperinformationen anzuzeigen. Es stehen mehrere Ansichten zur Verfügung, die Ihnen bei der Entscheidung zur richtigen Vorgehensweise helfen:
 
 - **Quellansicht**: Diese Ansicht ist die standardmäßige Nachrichtenansicht, die häufig in den meisten webbasierten Messaging-Plattformen zu sehen ist. Die Kopfzeileninformationen sind in der normalen Formatvorlage formatiert, und der Nachrichtentext unterstützt imbedded Grafikdateien und textgepackten Text. Wenn [die optische Zeichenerkennung (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) für die Richtlinie aktiviert ist, werden Bilder mit gedrucktem oder handschriftlichem Text, der richtlinienbedingten Übereinstimmungen entspricht, als untergeordnetes Element für die zugeordnete Nachricht in dieser Ansicht angezeigt.
-- **Textansicht:** In der Textansicht wird eine nur zeilennummerierte Textansicht der Nachricht angezeigt, und die Schlüsselwort hervorhebung in Nachrichten und Anlagen für Begriffe, die in der zugeordneten Kommunikationskonformitätsrichtlinie übereinstimmen. Das Hervorheben von Schlüsselwörtern kann Ihnen dabei helfen, lange Nachrichten und Anlagen schnell auf den Interessenbereich zu überprüfen. In einigen Fällen kann hervorgehobener Text nur in Anlagen für Nachrichten enthalten sein, die Richtlinienbedingungen erfüllen. Eingebettete Dateien werden nicht angezeigt, und die Zeilennummerierung dieser Ansicht ist hilfreich, um auf relevante Details zwischen mehreren Prüfern zu verweisen.
+- **Textansicht:** In der Textansicht wird eine nur zeilennummerierte Textansicht der Nachricht angezeigt, und sie enthält Die Hervorhebung von Schlüsselwörtern in Nachrichten und Anlagen für Begriffe oder Schlüsselwörter vom Typ vertraulicher Informationen, die in der zugeordneten Kommunikationskonformitätsrichtlinie übereinstimmen. Das Hervorheben von Schlüsselwörtern kann Ihnen dabei helfen, lange Nachrichten und Anlagen schnell auf den Interessenbereich zu überprüfen. In einigen Fällen kann hervorgehobener Text nur in Anlagen für Nachrichten enthalten sein, die Richtlinienbedingungen erfüllen. Die Hervorhebung von Schlüsselwörtern wird für Begriffe, die von integrierten Klassifizierungen identifiziert werden, die einer Richtlinie zugewiesen sind, nicht unterstützt. Eingebettete Dateien werden nicht angezeigt, und die Zeilennummerierung dieser Ansicht ist hilfreich, um auf relevante Details zwischen mehreren Prüfern zu verweisen.
 - **Anmerkungenansicht**: In dieser Ansicht können Prüfer Anmerkungen direkt zu der Nachricht hinzufügen, die in der Nachrichtenansicht gespeichert werden. Wenn [OCR](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) für die Richtlinie aktiviert ist, werden Bilder, die gedruckten oder handschriftlichen Text enthalten, der richtlinienbedingten Übereinstimmungen entspricht, als untergeordnetes Element für die zugeordnete Nachricht in dieser Ansicht angezeigt und können mit Anmerkungen versehen werden.
 - **Benutzerhistorie**: Die Ansicht "Benutzerhistorie" zeigt alle anderen Warnungen an, die durch eine Richtlinie zur Kommunikationscompliance für den Benutzer, der die Nachricht sendet, generiert wurden.
 - **Nachrichtendetailansicht:** Erweiterte Ansicht von Nachrichtenmetadaten und Konfigurationsinformationen.

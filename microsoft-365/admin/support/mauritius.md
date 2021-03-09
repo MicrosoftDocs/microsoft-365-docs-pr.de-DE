@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Mauritius
+title: Supportinformationen für Mauritius
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8dd058697f7a7c696a4020fb25e74ef51fb94415
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8f8ff0536e991c7481ba19b62235e0f400734284
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641087"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545884"
 ---
-# <a name="contact-support-for-mauritius"></a>Kontaktieren des Supports für Mauritius
+# <a name="contact-support-for-mauritius"></a>Kontaktieren des Support für Mauritius
 
 [Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
 
@@ -30,12 +29,12 @@ ms.locfileid: "48641087"
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
 
-Französisch: Mon-Fri 11 – 19 Uhr
+Französisch: Mon-Fri 11:00-19:00 Uhr
 
-Englisch: Mon-Fri 11 – 19 Uhr
+Englisch: Mon-Fri 11:00-19:00 Uhr
 
 ### <a name="technical-support"></a>Technischer Support:
 
-Französisch: Mon-Fri 11 Uhr – Mitternacht
+Französisch: Mon-Fri 11:00 Uhr bis Mitternacht
 
 Englisch: rund um die Uhr

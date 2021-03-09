@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Kroatien
+title: Supportinformationen für Kroatien
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b08b918cae33e2bf66c2a479fc0c0adc7c5927d6
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4c4f2befd7fb9a8ccca0c1562aaed8b0ccdff92c
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643132"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547864"
 ---
-# <a name="contact-support-for-croatia"></a>Kontakt Support für Kroatien
+# <a name="contact-support-for-croatia"></a>Kontaktieren des Support für Kroatien
 
 [Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
 

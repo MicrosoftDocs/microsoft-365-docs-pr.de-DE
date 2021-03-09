@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Bouvetinsel Island
+title: Supportinformationen für Bouvet Island
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,23 +9,22 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3444791ad1786fcf19c2b52a5b097f8b63f5859d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 5cadd89a0dd86e0a7346fbe8df1a88cf3265d4a3
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643691"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548464"
 ---
-# <a name="contact-support-for-bouvet-island"></a>Kontaktieren des Supports für Bouvetinsel Island
+# <a name="contact-support-for-bouvet-island"></a>Kontaktieren des Support für Bouvet Island
 
 [Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
-+ 1 312 843 5149
++1 312 843 5149
 
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
@@ -36,4 +35,4 @@ Englisch: Mo-Fr 9:00 bis 17:00 Uhr
 
 Englisch: rund um die Uhr
 
-Gebühren für internationale Anrufe
+Internationale Anrufgebühren

@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Sri Lanka
+title: Supportinformationen für Sri Lanka
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 775afd861cfbd985e8a95cea3cc4c6f5e87fa396
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e48a9eb8c2b64ac8779d953a6267a4b4ce3e412c
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639419"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544240"
 ---
-# <a name="contact-support-for-sri-lanka"></a>Kontakt mit dem Support für Sri Lanka
+# <a name="contact-support-for-sri-lanka"></a>Kontaktieren des Support für Sri Lanka
 
 [Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
 
@@ -30,7 +29,7 @@ ms.locfileid: "48639419"
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
 
-Englisch: Mon-Fri 9.00-18.00 Uhr
+Englisch: Mon-Fri 9:00-18:00 Uhr
 
 ### <a name="technical-support"></a>Technischer Support:
 

@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Bolivien
+title: Supportinformationen für Bolivien
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 75b84a4246a3be3f7a23e61d7e1b664c071636a2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7dbeefb53e484a2b4f61d56c970a86239d6336ed
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643859"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548584"
 ---
-# <a name="contact-support-for-bolivia"></a>Kontaktieren des Supports für Bolivien
+# <a name="contact-support-for-bolivia"></a>Kontaktieren des Support für Bolivien
 
 [Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
 
@@ -30,7 +29,7 @@ ms.locfileid: "48643859"
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
 
-Spanisch: Mon-Fri 9.00-17.00 Uhr
+Spanisch: Mon-Fri 9:00-17:00 Uhr
 
 ### <a name="technical-support"></a>Technischer Support:
 

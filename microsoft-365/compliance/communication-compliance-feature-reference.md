@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e2d0f4f4abbe538d11d61869f52285f19c23a253
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 82dfab193277744c9a7888e7f9ac1d7b7293d843
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461806"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542537"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zu Kommunikationskonformitätsfeatures
 
@@ -78,7 +78,7 @@ Berücksichtigen Sie das folgende Beispiel, um Ihre Migrationsplanung zu unterst
 - Aufsichtsüberprüfungsadministrator
 - Fallverwaltung
 - Complianceadministrator
-- Überprüfung
+- Review
 
 Zum Aktualisieren der Rollen für diese Benutzer für die neue Rollengruppenstruktur und zum Trennen der Zugriffs- und Verwaltungsberechtigungen für die Benutzer können Sie drei neue Gruppen und die zugeordneten neuen Rollengruppenzuweisungen in Betracht ziehen:
 
@@ -237,7 +237,7 @@ In der folgenden Tabelle werden weitere Informationen zu den einzelnen Bedingung
 Jedes Wort, das Sie eingeben und mit einem Komma trennen, wird separat angewendet (nur ein Wort muss gelten, damit die Richtlinienbedingung auf die E-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die Bedingung **Message** enthält eines dieser Wörter mit den Schlüsselwörtern "Banker", "vertraulich" und "Insiderhandel" getrennt durch ein Komma (Banker, vertraulich, Insiderhandel). Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker", "vertraulich" oder den Ausdruck "Insiderhandel" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau mit dem übereinstimmen, was Sie eingeben.
 
 >[!IMPORTANT]
->Beim Importieren einer benutzerdefinierten Wörterbuchdatei muss jedes Wort oder jeder Ausdruck durch eine Wagenrücklauf- und eine separate Zeile getrennt werden. <br> Beispiel: <br><br>
+>Beim Importieren einer benutzerdefinierten Wörterbuchdatei muss jedes Wort oder jeder Ausdruck durch eine Wagenrücklauf- und eine separate Zeile getrennt werden. <br> Zum Beispiel: <br><br>
 >*Banker* <br>
 >*vertraulich* <br>
 >*Insiderhandel*
@@ -525,7 +525,7 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Disco
 
 Organisationen, die Aufsichtsrichtlinien in Office 365 verwenden, sollten sofort den Übergang zu Kommunikationskonformitätsrichtlinien in Microsoft 365 planen und diese wichtigen Punkte verstehen:
 
-- Die Aufsichtslösung in Office 365 wurde vollständig durch die Kommunikationskonformitätslösung in Microsoft 365 ersetzt. Es wird empfohlen, neue Richtlinien für die Kommunikationskonformität zu erstellen, die die gleichen Einstellungen wie vorhandene Aufsichtsrichtlinien haben, um die neuen Verbesserungen bei Untersuchung und Behebung zu nutzen. Beim Übergang zur Kommunikationscompliance in Microsoft 365 sollten Sie planen, Berichtsdaten aus der Aufsicht in Office 365 zu exportieren, wenn Sie interne Richtlinien zur Aufbewahrung von Compliance-Anforderungen haben.
+- Die Aufsichtslösung in Office 365 wurde vollständig durch die Kommunikationskonformitätslösung in Microsoft 365 ersetzt. Es wird empfohlen, neue Richtlinien für die Kommunikationskonformität zu erstellen, die die gleichen Einstellungen wie vorhandene Aufsichtsrichtlinien haben, um die neuen Verbesserungen bei Untersuchung und Behebung zu nutzen.
 - Nachrichten, die in der Aufsicht in Office 365-Richtlinien übereinstimmungen gespeichert sind, können nicht verschoben oder in die Kommunikationskonformität in Microsoft 365 freigegeben werden.
 - Für Organisationen mit beiden Lösungen, die während des Übergangsprozesses nebeneinander verwendet werden, müssen die in jeder Lösung verwendeten Richtlinien eindeutige Richtliniennamen haben. Gruppen und benutzerdefinierte Schlüsselwortwörterbücher können während einer Übergangszeit von Lösungen gemeinsam genutzt werden.
 

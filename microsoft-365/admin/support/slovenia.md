@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Slowenien
+title: Supportinformationen für Slowenien
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2ca5475895391e8229a86a9c681f4911dd97a542
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0768cfacc2ba339fcc8168b5e37da5a9e023e510
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639623"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544336"
 ---
-# <a name="contact-support-for-slovenia"></a>Kontakt Support für Slowenien
+# <a name="contact-support-for-slovenia"></a>Wenden Sie sich an den Support für Slowenien
 
 [Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
 

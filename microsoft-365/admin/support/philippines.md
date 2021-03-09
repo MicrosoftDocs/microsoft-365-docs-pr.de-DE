@@ -1,5 +1,5 @@
 ---
-title: Support Informationen für Philippinen
+title: Supportinformationen für Philippinen
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,25 +9,24 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 74d06767d2afa759b4db5719895bed7f108215a3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a02e85f0430754200811f34b8ffe82984af7caf4
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640331"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545032"
 ---
-# <a name="contact-support-for-philippines"></a>Kontakt Support für Philippinen
+# <a name="contact-support-for-philippines"></a>Kontaktieren des Support für Die Philippinen
 
 [Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 1800 1441 0625 (PLDT)
 
-1800 8908 6422 (Globus)
+1800 8908 6422 (Globe)
 
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:
