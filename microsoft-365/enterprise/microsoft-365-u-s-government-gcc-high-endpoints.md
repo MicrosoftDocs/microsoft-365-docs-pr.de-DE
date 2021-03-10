@@ -1,9 +1,9 @@
 ---
-title: Office 365 U.S. Government GCC High-Endpunkte
+title: Office 365 U.S. Government GCC High endpoints
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 01/15/2021
+ms.date: 01/28/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,14 +20,14 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: In diesem Artikel finden Sie Endpunkte, die für Kunden erreichbar sind, die Office 365 U.S. Government GCC High-Pläne verwenden.
 hideEdit: true
-ms.openlocfilehash: cf483f06d3802bc617855cafc6f3410af9372e41
-ms.sourcegitcommit: a92b150da1e11d4a204c556ab98a4776727dbc22
+ms.openlocfilehash: 4f7e1f8e6a0cc631e5df8302694ed96663a20c53
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883351"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50596932"
 ---
-# <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 U.S. Government GCC High-Endpunkte
+# <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 U.S. Government GCC High endpoints
 
  *Gültig für Office 365 Admin*
 
@@ -37,9 +37,9 @@ Office 365 setzt eine Internetverbindung voraus. Die unten aufgeführten Endpunk
   
 |||
 |:-----|:-----|
-|**Last updated:** 15.01.2021 - ![ ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [RSS-Änderungsprotokollabonnement](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** Die vollständige Liste im [JSON-Format](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Last updated:** 28.01.2021 - ![ ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [RSS-Änderungsprotokollabonnement](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** die vollständige Liste im [JSON-Format](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
 
- Beginnen Sie mit [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md), um unsere Empfehlungen zum Verwalten der Netzwerkverbindungen anhand dieser Daten zu verstehen. Endpunktdaten werden zu Beginn jedes Monats 30 Tage vor ihrer Aktivierung mit neuen IP-Adressen und URLs aktualisiert und veröffentlicht. Auf diese Weise können Kunden, die noch nicht über automatisierte Updates verfügen, Ihre Prozesse abschließen, bevor eine neue Verbindung erforderlich ist. Endpunktdaten werden unter Umständen auch bei Bedarf aktualisiert, um Support-Probleme, Sicherheitsvorfälle oder andere sofortige betriebliche Erfordernisse zu adressieren. Die auf dieser Seite unten angezeigten Daten werden alle aus den REST-basierten Webdiensten generiert. Wenn Sie für den Zugriff auf diese Daten ein Skript oder ein Netzwerkgerät verwenden, sollten Sie direkt zum [Webdienst](microsoft-365-ip-web-service.md) wechseln.
+ Beginnen Sie mit [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md), um unsere Empfehlungen zum Verwalten der Netzwerkverbindungen anhand dieser Daten zu verstehen. Endpunktdaten werden bei Bedarf zu Beginn jedes Monats mit neuen IP-Adressen und URLs aktualisiert, die 30 Tage vor dem Aktiven veröffentlicht werden. Auf diese Weise können Kunden, die noch nicht über automatisierte Updates verfügen, Ihre Prozesse abschließen, bevor eine neue Verbindung erforderlich ist. Endpunktdaten werden unter Umständen auch bei Bedarf aktualisiert, um Support-Probleme, Sicherheitsvorfälle oder andere sofortige betriebliche Erfordernisse zu adressieren. Die auf dieser Seite unten angezeigten Daten werden alle aus den REST-basierten Webdiensten generiert. Wenn Sie für den Zugriff auf diese Daten ein Skript oder ein Netzwerkgerät verwenden, sollten Sie direkt zum [Webdienst](microsoft-365-ip-web-service.md) wechseln.
 
 In den Endpunktdaten unten sind Anforderungen für Netzwerkkonnektivität zwischen dem Computer eines Benutzers und Office 365 aufgelistet. Sie umfassen keine Netzwerkverbindungen von Microsoft mit einem Kundennetzwerk, manchmal auch als hybride oder eingehende Netzwerkverbindungen bezeichnet.
 
@@ -51,7 +51,7 @@ Dies sind die dargestellten Datenspalten:
 
 - **Kategorie**: Zeigt, ob der Endpunktsatz als "Optimize" (Optimieren), "Allow" (Zulassen) oder "Default" (Standard) kategorisiert ist. Informationen zu diesen Kategorien und eine Anleitung zu ihrer Verwaltung finden Sie unter [https://aka.ms/pnc](https://aka.ms/pnc). In dieser Spalte sind außerdem die Endpunktsätze aufgelistet, die für Netzwerkkonnektivität erforderlich sind. Für Endpunktsätze, für die keine Netzwerkkonnektivität erforderlich ist, geben wir in diesem Feld Anmerkungen, aus denen hervorgeht, welche Funktionalität durch ein Blockieren des Endpunktsatzes entfallen würde. Wenn Sie einen gesamten Dienstbereich ausschließen, ist für dessen als erforderlich aufgeführte Endpunktsätze keine Konnektivität erforderlich.
 
-- **ER:** Dies ist **Ja,** wenn der Endpunktsatz über Azure ExpressRoute mit Office 365-Routenpräfixen unterstützt wird. Die BGP-Community, die die angezeigten Routenpräfixe enthält, richtet sich nach dem aufgeführten Dienstbereich. Wenn ER **"No"** ist, bedeutet dies, dass ExpressRoute für diesen Endpunktsatz nicht unterstützt wird. Es sollte jedoch nicht davon ausgegangen werden, dass keine Routen für einen Endpunktsatz angekündigt sind, bei dem ER **"Nein" ist.** Wenn Sie Azure AD Connect verwenden möchten, lesen Sie den Abschnitt [mit](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) besonderen Überlegungen, um sicherzustellen, dass Sie über die entsprechende Azure AD Connect-Konfiguration verfügen.
+- **ER**: Dies ist **Ja,** wenn der Endpunktsatz über Azure ExpressRoute mit Office 365-Routenpräfixen unterstützt wird. Die BGP-Community, die die angezeigten Routenpräfixe enthält, entspricht dem aufgelisteten Dienstbereich. Wenn ER **nein ist,** bedeutet dies, dass ExpressRoute für diesen Endpunktsatz nicht unterstützt wird. Es sollte jedoch nicht davon ausgegangen werden, dass keine Routen für einen Endpunktsatz angekündigt werden, bei dem ER Nein **ist.** Wenn Sie Azure AD Connect verwenden [](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) möchten, lesen Sie den Abschnitt spezielle Überlegungen, um sicherzustellen, dass Sie über die entsprechende Azure AD Connect-Konfiguration verfügen.
 
 - **Adressen**: Listet die FQDNs oder Platzhalter-Domänennamen und IP-Adressbereiche für den Endpunktsatz auf. Beachten Sie, dass IP-Adressbereiche im CIDR-Format angegeben sind und viele Einzel-IP-Adressen im angegebenen Netzwerk einschließen können.
  
@@ -61,7 +61,7 @@ Dies sind die dargestellten Datenspalten:
 
 Hinweise zu dieser Tabelle:
 
-- Das Security and Compliance Center (SCC) bietet Unterstützung für Azure ExpressRoute für Office 365. Das Gleiche gilt für viele Features, die über das SCC verfügbar gemacht werden, z. B. Reporting, Auditing, Advanced eDiscovery, Unified DLP und Data Governance. Zwei spezifische Features, PST-Import und eDiscovery-Export, unterstützen derzeit Azure ExpressRoute aufgrund ihrer Abhängigkeit von Azure Blob Storage nicht nur mit Office 365-Routenfiltern. Um diese Features nutzen zu können, benötigen Sie separate Verbindungen mit Azure Blob Storage unter Verwendung beliebiger unterstützter Azure-Konnektivitätsoptionen, z. B. Internetkonnektivität oder Azure ExpressRoute mit öffentlichen Azure-Routenfiltern. Sie müssen die Einrichtung einer solchen Verbindung für beide Features auswerten. Das Office 365 Information Protection-Team ist sich dieser Einschränkung bewusst und arbeitet aktiv daran, Unterstützung für Azure ExpressRoute für Office 365 als auf Office 365-Routenfilter beschränkt für beide Features zu bieten.
+- Das Security and Compliance Center (SCC) bietet Unterstützung für Azure ExpressRoute für Office 365. Dasselbe gilt für viele Features, die über den SCC verfügbar gemacht werden, z. B. Reporting, Auditing, Advanced eDiscovery, Unified DLP und Data Governance. Zwei spezifische Features, PST-Import und eDiscovery-Export, unterstützen derzeit Azure ExpressRoute aufgrund ihrer Abhängigkeit von Azure Blob Storage nicht mit nur Office 365-Routenfiltern. Um diese Features nutzen zu können, benötigen Sie eine separate Konnektivität mit Azure Blob Storage mit allen unterstützten Azure-Konnektivitätsoptionen, z. B. Internetkonnektivität oder Azure ExpressRoute mit Azure Public-Routenfiltern. Sie müssen das Einrichten einer solchen Verbindung für beide Features auswerten. Das Office 365 Information Protection-Team ist sich dieser Einschränkung bewusst und arbeitet aktiv daran, Unterstützung für Azure ExpressRoute für Office 365 als beschränkt auf Office 365-Routenfilter für beide Features zu bieten.
 
-- Es gibt zusätzliche optionale Endpunkte für Microsoft 365 Apps for Enterprise, die nicht aufgeführt sind und nicht erforderlich sind, damit Benutzer Microsoft 365 Apps for Enterprise-Anwendungen starten und Dokumente bearbeiten können. Optionale Endpunkte werden in Microsoft-Rechenzentren gehostet und verarbeiten, übertragen oder speichern keine Kundendaten. Es wird empfohlen, dass Benutzerverbindungen zu diesen Endpunkten an den standardmäßigen Internet-Ausgangsperimeter geleitet werden.
+- Es gibt zusätzliche optionale Endpunkte für Microsoft 365 Apps for Enterprise, die nicht aufgeführt sind und nicht erforderlich sind, damit Benutzer Microsoft 365 Apps für Unternehmensanwendungen starten und Dokumente bearbeiten können. Optionale Endpunkte werden in Microsoft-Rechenzentren gehostet und verarbeiten, übertragen oder speichern keine Kundendaten. Es wird empfohlen, dass Benutzerverbindungen zu diesen Endpunkten an den standardmäßigen Internet-Ausgangsperimeter geleitet werden.
 

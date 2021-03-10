@@ -11,12 +11,12 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 28dc86bbc2d844110610cd8a884af5313b7d8cfa
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: e8d7ca4786893fb5eb39090d9a271ace1c62d321
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453981"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50596968"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>Erste Schritte bei der Einführung von Microsoft Viva Topics
 
@@ -47,7 +47,7 @@ Um die Vorbereitung zu unterstützen, sollten Sie sich die folgenden Fragen übe
 
 Überprüfen Sie diese Liste der Voraussetzungen, um das Beste aus Den Themen von "Viva" zu machen:
 
-|Produkt oder Feature |Beschreibung |
+|Produkt oder Feature |Description |
 |:-------|:--------|
 |SharePoint Online mit modernen SharePoint-Seiten |Das Thema Mining umfasst nur Inhalte auf SharePoint-Websites, und Themenkarten können nur auf modernen Seiten angezeigt werden.|
 |Microsoft Graph |Sie können mit den Microsoft Graph-Einstellungen steuern, ob Themen von der Suche oder von Delve eingeschlossen oder ausgeschlossen werden. |
@@ -73,17 +73,21 @@ Um die Einführung von "Viva Topics" zu planen, müssen Sie:
     - In Kürze erhalten Sie Schulungsvideos und Hilfe für Endbenutzer.
 
 4. [Erstellen eines Championnetzwerks:](#build-a-champion-network)
-    - Möglicherweise gibt es bereits Communitys von Praxis- oder Championnetzwerken. Dies sind großartige Möglichkeiten, um Peers bei der Gegenseitigen Hilfe zu unterstützen und zu evangelisieren. Und sie können Erfolgsgeschichten teilen, die wirklich wertvoll sein können. Sie können Rat und Begeisterung bieten.
+    - Möglicherweise gibt es bereits Communitys von Praxis- oder Championnetzwerken. Dies sind großartige Möglichkeiten, um Peers bei der Gegenseitigen Hilfe zu unterstützen und zu evangelisieren. Und sie können Erfolgsgeschichten teilen, die wertvoll sein können. Sie können Rat und Begeisterung bieten.
 
 ### <a name="target-scenarios"></a>Zielszenarien
 
-Sie müssen bestimmen, wie Sie Die Themen von "Viva" in Ihrer Organisation verwenden möchten, bevor Sie mit Themen erfolgreich sein können. Im Folgenden finden Sie einige Szenarien, in denen Wissensverwaltung und Themen Ihrer Organisation helfen können:
+Bestimmen Sie, wie Sie "Viva Topics" in Ihrer Organisation verwenden möchten, damit Sie sie erfolgreich verwenden können. Im Folgenden finden Sie einige Szenarien, in denen Wissensverwaltung und Themen Ihrer Organisation helfen können:
 
 - Rollen onboarding &: Grundlegendes zur Terminologie, den wichtigsten Projekten und der Kultur einer neuen Organisation sind wichtige Schritte beim Onboarding. Die einfache Suche nach Themen kann neuen Mitarbeitern dabei helfen, neue Aufgaben, Rollen oder Projekte schnell zu übernehmen.
 - Suche nach Fachwissen und Informationsfreigabe: Wenn Themen verwaltet und freigegeben werden, können Personen in Ihren Organisationen leichter Informationen und Experten finden, die ihnen bei der täglichen Arbeit helfen.
 - Erweiterte Entscheidungsfindung und verbesserte Markteinführungszeit: Wenn Informationen und Experten leicht zu erreichen sind, können Sie Entscheidungen einfacher treffen und Zeit von Projekten abrasieren.
 
-Hier ist beispielsweise ein Szenario für das Rollen-Onboarding:
+#### <a name="example-scenario-for-role-onboarding"></a>Beispielszenario für rollen onboarding
+
+Ein Personalmanager muss neuen Mitarbeitern Informationen bereitstellen, die ihnen dabei helfen, sich schnell in das Unternehmen und seine Teams zu integrieren. Sie möchten sie auf die richtigen Ressourcen, Dokumente und Teammitglieder verweisen, die sie schnell und effizient integrieren müssen. Sie suchen nach einer Lösung, mit der der neue Mitarbeiter schnell die benötigten Informationen finden kann, ohne in mehreren Repositorys suchen zu müssen oder die anwendungen, die er bereits verwendet hat, verlassen zu müssen.
+
+Beispiel:
 
 - Ein Mitarbeiter (Jordanien) übernimmt eine neue Rolle oder wurde neu eingestellt und beginnt gerade mit einer Rolle. Jordanien möchte sich so schnell wie möglich engagieren und produktiv arbeiten. Jordanien benötigt aber auch Hilfe bei der Suche nach einem Startplatz.
 - Ein Kollege (Kim), der vor Jordanien in der Rolle war, hat Themenseiten erstellt, die neuen Mitarbeitern und anderen Personen helfen können, die nach diesen Informationen suchen.
@@ -91,13 +95,35 @@ Hier ist beispielsweise ein Szenario für das Rollen-Onboarding:
 - Während Jordan einen neuen Beitrag auf SharePoint durch liest, wird ein Thema hervorgehoben und der Mauszeiger darüber bewegt, um schnell eine Definition des Begriffs zu erhalten und mit wem sie mit weiteren Fragen kontaktiert werden können. Zuvor musste Jordanien möglicherweise nach diesen Informationen fahnden und Kollegen kontaktieren, um zu sehen, wer nach etwas fragen soll.
 - Die Enignung dieser Informationen über Themen kann sehr leistungsfähig sein, da diese Informationen zwar zuvor verfügbar waren, sie aber möglicherweise isoliert und schwer zu finden waren. Die Einbindung in die Von Jordan verwendeten Anwendungen und die Unterstützung bei der Suche nach diesen Experten können auch ein Gefühl von Engagement und Community fördern. Es kann ihnen auch helfen, sich im Umgang mit der neuen Rolle stärker zu fühlen.
 
+Wenn Sie dieses Szenario automatisieren, können Sie sicherstellen, dass:
+
+- Neue Mitarbeiter können sich schnell mit den richtigen Personen in den richtigen Projekten verbinden.
+- Neue Mitarbeiter haben unmittelbaren Zugriff auf die neuesten Projektinformationen innerhalb des Arbeitsflusses.
+- Die Suchzeiten werden erheblich reduziert.
+- Die Onboardingzeiten sind erheblich reduziert.
+
+#### <a name="example-scenario-for-customer-call-center"></a>Beispielszenario für Kundenanrufcenter
+
+Sie können es dem Kundendienst ermöglichen, schnell Dateien und Experten zu finden, um bei ungewöhnlichen Steuerfragen zu helfen und die Antwort für andere schnell zu dokumentieren, um mit "Viva Topics" auf einfache Weise zugreifen zu können.
+
+Beispielsweise muss ein Supportmitarbeiter schnell Knowledge Base-Artikel, Dokumente und Richtlinien finden, damit er Kunden unterstützen kann. Sie möchten die richtigen Informationen zum richtigen Zeitpunkt finden, ohne mehrere Datenbanken, Repositorys oder Anwendungen manuell durchsaugen oder einen Anruf versenden zu müssen. Und sie suchen nach einer Lösung, die es ihnen ermöglicht, innerhalb ihrer Hauptanrufanruf- und Zugriffsrichtlinien, -vorschriften und -richtlinien im Fluss ihrer Unterhaltungen zu bleiben, damit sie schnell auf Fragen antworten und den Fall aktualisieren können.
+
+Wenn Sie dieses Szenario mit "Viva Topics" automatisieren, können Sie sicherstellen, dass:
+
+- Supportanrufzeiten werden reduziert.
+- Eskalationen auf die Unterstützung der 2. und 3. Ebene werden reduziert.
+- Die Anzahl der Rückrufe für einen bestimmten Fall wird reduziert.
+- Die Kundenzufriedenheit wird erhöht.
+
+#### <a name="prioritize-your-scenarios"></a>Priorisieren Ihrer Szenarien
+
 Nachdem Sie Ihre Szenarien identifiziert haben, können Sie die Folgenden priorisieren:
 
 Eine Möglichkeit, sie zu priorisieren, besteht in der Darstellung Ihrer Szenarien in einem Raster, das Auswirkungen im Vergleich zur einfacheren Implementierung zeigt. Suchen Sie nach Szenarien, die sowohl hohe Auswirkungen haben als auch einfach zu implementieren sind und diese zu Ihrer obersten Priorität machen. Niedrige Auswirkungen und schwer zu implementierende Szenarien haben die niedrigste Priorität. Wenn Sie einen schnellen Gewinn mit einem szenario mit hoher Auswirkung und einfach zu implementieren haben, hilft es den Menschen, sich zu begeistern und die Möglichkeiten der Verwendung von Themen zu sehen.
 
 ![Hohe Auswirkungen, einfach zu implementierende Szenarien haben hohe Priorität](../media/knowledge-management/topics-prioritize-scenarios.png)
 
-Wählen Sie einige wichtige Szenarien aus, auf die Sie sich zunächst konzentrieren können, arbeiten Sie mit Ihren early Adopters zusammen, um Feedback zu erhalten, und nehmen Sie dann phasenweise den Rollout vor. Auf diese Weise können Sie iterieren, Verbesserungen erzielen und Feedback erhalten, damit Sie die Akzeptanz im Laufe der Zeit verbessern können. 
+Wählen Sie einige wichtige Szenarien aus, auf die Sie sich zunächst konzentrieren können, arbeiten Sie mit Ihren early Adopters zusammen, um Feedback zu erhalten, und nehmen Sie dann phasenweise den Rollout vor. Auf diese Weise können Sie iterieren, Verbesserungen erzielen und Feedback erhalten, damit Sie die Akzeptanz im Laufe der Zeit verbessern können.
 
 ### <a name="identify-stakeholders"></a>Bestimmen der Beteiligten
 

@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c5c94ce3994424a6d4b6f4a4ac587f5cc5e33ca
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 0c52b80ffe30da259672e5862d0fa73a8445aa59
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454697"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50604042"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Behebung bösartiger E-Mails, die in Office 365 zugestellt wurden
 
@@ -136,5 +136,7 @@ Das Aktionscenter zeigt alle Korrekturaktionen für die letzten 30 Tage an. Akti
   Wählen Sie ein beliebiges Element im Aktionsprotokoll aus, um Korrekturdetails anzuzeigen. Wenn die Details "erfolgreich" oder "im Postfach nicht gefunden" sagen, wurde dieses Element bereits aus dem Postfach entfernt. Manchmal tritt bei der Behebung ein systemischer Fehler auf. In diesen Fällen ist es eine gute Idee, die Korrektur zu wiederholen.
 
   Bei der Behebung großer Batches können Sie auch die zur Korrektur gesendeten Nachrichten über die E-Mail-Übermittlung und Nachrichten exportieren, die über Aktionsprotokolle behoben wurden. Der Exportgrenzwert wird auf 100.000 Datensätze erhöht.
+
+Das Sicherheitsteam kann bis zu 50 manuelle Korrekturen gleichzeitig ausführen. Es ist jedoch kein Grenzwert für automatisierte Untersuchungs- und Reaktionsaktionen festgelegt.
 
   Die Korrektur ist ein leistungsfähiges Tool, um Bedrohungen zu mindern und verdächtige E-Mails zu adressieren. Es trägt dazu bei, eine Organisation zu schützen.

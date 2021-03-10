@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen für IT-Administratoren zum Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobile und das Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e0fc96c1bb7b077df50f4f1c3c52ffa0dd49bef
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 1aa710939a805453a73db38eb93e4ceb90bc25d7
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461860"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597165"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -126,7 +126,7 @@ Alternativ können Sie das Office-Add-In Azure Information Protection deaktivier
 
 Wenn Sie dieses Office-Add-In deaktivieren oder entfernen, bleibt der Azure Information Protection-Client installiert, damit Sie Weiterhin Dateien außerhalb Ihrer Office-Apps beschriften können. Beispielsweise mithilfe des Datei-Explorers oder von PowerShell.
 
-Informationen dazu, welche Features von den Azure Information Protection-Clients und dem integrierten Office-Bezeichnungsclient unterstützt werden, finden Sie in der Azure Information Protection-Dokumentation unter Auswählen des für [Windows-Computer](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) zu verwendenden Bezeichnungsclients.
+Informationen dazu, welche Features von den Azure Information Protection-Clients und dem integrierten Office-Bezeichnungsclient unterstützt werden, finden Sie unter [Choose your Windows labeling solution](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) aus der Azure Information Protection-Dokumentation.
 
 ## <a name="office-file-types-supported"></a>Unterstützte Office-Dateitypen
 

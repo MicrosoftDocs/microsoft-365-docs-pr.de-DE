@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über E-Mail- und Dateieigenschaften, die Sie mithilfe der Such- und eDiscovery-Tools in Microsoft 365 durchsuchen können.
-ms.openlocfilehash: 9ad280678cac2d266b6e4c68ac66fb2e5afe0bf1
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: d5b558df15cde6be6f87663dcb999efc6ec66f7e
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423918"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50604031"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>Schlüsselwortabfragen und Suchbedingungen für inhaltssuche und eDiscovery
 
@@ -109,7 +109,7 @@ Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden kö
 |SharedWithUsersOWSUser|Dokumente, die für den angegebenen Benutzer  freigegeben und auf der Seite Für mich freigegeben auf der OneDrive for #A0 des Benutzers angezeigt wurden. Dies sind Dokumente, die von anderen Personen in Ihrer Organisation explizit für den angegebenen Benutzer freigegeben wurden. Wenn Sie Dokumente exportieren, die einer Suchabfrage entsprechen, die die SharedWithUsersOWSUser-Eigenschaft verwendet, werden die Dokumente aus dem ursprünglichen Inhaltsspeicherort der Person exportiert, die das Dokument für den angegebenen Benutzer freigegeben hat. Weitere Informationen finden Sie unter [Searching for site content shared within your organization](#searching-for-site-content-shared-within-your-organization).|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|Beide Beispiele geben alle internen Dokumente zurück, die explizit für  Garth Fort freigegeben wurden und auf der Seite Für mich freigegeben im OneDrive for #A0 von Garth Fort angezeigt werden.|
 |Website|Die URL einer Website oder Gruppe von Websites in Ihrer Organisation.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|Im ersten Beispiel werden Elemente von den OneDrive for #A0 für alle Benutzer in der Organisation zurückgegeben. Im zweiten Beispiel werden Elemente von allen Teamwebsites zurückgegeben.|
 |Größe|Die Größe eines Elements in Byte.|`size>=1`  <br/> `size:1..10000`|Im ersten Beispiel werden Elemente zurückgegeben, die größer als 1 Byte sind. Im zweiten Beispiel werden Elemente zwischen 1 und 10.000 Byte zurückgegeben.|
-|Titel|Der Titel des Dokuments. Bei der Title-Eigenschaft handelt es sich um Metadaten, die in Microsoft Office angegeben werden. Sie unterscheiden sich vom Dateinamen des Dokuments.|`title:"communication plan"`|Jedes Dokument, das den Ausdruck "Kommunikationsplan" in der Title-Metadateneigenschaft eines Office-Dokuments enthält.|
+|Title|Der Titel des Dokuments. Bei der Title-Eigenschaft handelt es sich um Metadaten, die in Microsoft Office angegeben werden. Sie unterscheiden sich vom Dateinamen des Dokuments.|`title:"communication plan"`|Jedes Dokument, das den Ausdruck "Kommunikationsplan" in der Title-Metadateneigenschaft eines Office-Dokuments enthält.|
 |||||
 
 ## <a name="searchable-contact-properties"></a>Durchsuchbare Kontakteigenschaften
@@ -138,7 +138,7 @@ In der folgenden Tabelle sind die Kontakteigenschaften aufgeführt, die indizier
 |OfficeLocation|Der Wert in **der Office-** oder **Office-Location-Eigenschaft.**|
 |OtherAddress|Der Wert für die **Other** address-Eigenschaft.|
 |Nachname|Der Name in der **Nachnamen-Eigenschaft.**|
-|Titel|Der Titel in der **Job title-Eigenschaft.**|
+|Title|Der Titel in der **Job title-Eigenschaft.**|
 |||||
 
 ## <a name="searchable-sensitive-data-types"></a>Durchsuchbare vertrauliche Datentypen
@@ -161,13 +161,13 @@ Weitere Informationen zum Erstellen von Abfragen mithilfe der Eigenschaft finden
 
   Anschließend können Sie die ID in der Sucheigenschaft verwenden, um Dokumente zurück zu geben, die den benutzerdefinierten `SensitiveType` vertraulichen Datentyp enthalten. Beispiel: `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
   
-- Sie können vertrauliche Informationstypen und die Sucheigenschaft nicht verwenden, um in Exchange Online-Postfächern nach vertraulichen Daten in Ruhe `SensitiveType` zu suchen. Sie können jedoch DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) verwenden, um vertrauliche E-Mail-Daten bei der Übertragung zu schützen. Weitere Informationen finden Sie unter [Overview of data loss prevention policies](data-loss-prevention-policies.md) and Search for and find personal [data](search-for-and-find-personal-data.md).
+- Sie können vertrauliche Informationstypen und die Sucheigenschaft nicht verwenden, um in Exchange Online-Postfächern nach vertraulichen Daten in Ruhe `SensitiveType` zu suchen. Dies umfasst 1:1-Chatnachrichten, 1:N-Gruppenchatnachrichten und Teamkanalunterhaltungen in Microsoft Teams, da all diese Inhalte in Postfächern gespeichert werden. Sie können jedoch DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) verwenden, um vertrauliche E-Mail-Daten bei der Übertragung zu schützen. Weitere Informationen finden Sie unter [Overview of data loss prevention policies](data-loss-prevention-policies.md) and Search for and find personal [data](search-for-and-find-personal-data.md).
   
 ## <a name="search-operators"></a>Suchoperatoren
 
 Boolesche Suchoperatoren wie **AND**, **OR** und **NOT** helfen Ihnen, präzisere Suchbegriffe zu definieren, indem Sie bestimmte Wörter in die Suchabfrage ein- oder ausschließen. Andere Techniken, z. B. die Verwendung von Eigenschaftsoperatoren (z. B. oder ), Anführungszeichen, Klammern und Platzhalter helfen Ihnen, eine `>=` `..` Suchabfrage zu verfeinern. In der folgenden Tabelle sind die Operatoren aufgeführt, die Sie zum Ein- oder Erweitern von Suchergebnissen verwenden können. 
   
-| Operator | Nutzung | Beschreibung |
+| Operator | Verwendung | Beschreibung |
 |:-----|:-----|:-----|
 |AND|Wort1 AND Wort2|Gibt Elemente zurück, die alle angegebenen Schlüsselwörter oder Ausdrücke  `property:value` enthalten. Würde beispielsweise alle Nachrichten zurückgeben, die von Ann Beebe gesendet wurden, die das Wort  `from:"Ann Beebe" AND subject:northwind` "Northwind" in der Betreffzeile enthielten. <sup>2</sup>|
 |+|keyword1 + keyword2 + keyword3|Gibt die Elemente zurück, die  *entweder*  `keyword2` oder  `keyword3` *enthalten und*  , die ebenfalls  `keyword1` enthalten. Damit entspricht dieses Beispiel der Abfrage  `(keyword2 OR keyword3) AND keyword1`.  <br/> Die Abfrage (mit einem Leerzeichen hinter dem Symbol) ist nicht identisch mit der Verwendung des `keyword1 + keyword2` **+** **AND-Operators.** Diese Abfrage wäre gleichbedeutend mit  `"keyword1 + keyword2"` und gibt Elemente mit dem exakten Ausdruck  `"keyword1 + keyword2"` zurück.|
@@ -243,7 +243,7 @@ Erstellen Sie eine Bedingung mithilfe von Dokumenteigenschaften, wenn Sie auf Sh
 | Bedingung | Beschreibung |
 |:-----|:-----|
 |Ursprung|Das Autorenfeld aus Office-Dokumenten, das beibehalten wird, wenn ein Dokument kopiert wird. Wenn beispielsweise ein Benutzer ein Dokument erstellt und die E-Mails an eine andere Person senden, die es dann in SharePoint hochlädt, behält das Dokument weiterhin den ursprünglichen Autor bei.|
-|Titel|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er ist anders als der Dateiname des Dokuments.|
+|Title|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er ist anders als der Dateiname des Dokuments.|
 |Erstellt|Das Datum, an dem ein Dokument erstellt wird.|
 |Zuletzt geändert|Das Datum, an dem ein Dokument zuletzt geändert wurde.|
 |Dateityp|Die Erweiterung einer Datei; Beispiel: docx, one, pptx oder xlsx. Dies ist dieselbe Eigenschaft wie die FileExtension-Websiteeigenschaft.|

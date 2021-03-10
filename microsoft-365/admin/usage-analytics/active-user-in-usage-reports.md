@@ -1,5 +1,5 @@
 ---
-title: Aktiver Benutzer in Microsoft 365-Nutzungsberichten
+title: Aktiver Benutzer in Microsoft 365-Verwendungsberichten
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -17,44 +17,44 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
-description: Erfahren Sie mehr über einen aktiven Benutzer von Microsoft 365-Nutzungsanalysen, Aktivitätsberichten und Akzeptanz Metriken.
-ms.openlocfilehash: b4834d96b2f762d77f0d27309cf8c71a782b0dcd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Erfahren Sie mehr über einen aktiven Benutzer von Microsoft 365-Nutzungsanalysen, Aktivitätsberichten und Einführungsmetriken.
+ms.openlocfilehash: 7b8d15a88568c9af8b11a157dad2ec5f76ace6d3
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402882"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50603972"
 ---
-# <a name="active-user-in-microsoft-365-usage-reports"></a>Aktiver Benutzer in Microsoft 365-Nutzungsberichten
+# <a name="active-user-in-microsoft-365-usage-reports"></a>Aktiver Benutzer in Microsoft 365-Verwendungsberichten
 
 ## <a name="active-user-in-usage-reports"></a>Aktive Benutzer in Verwendungsberichten
 
-Ein aktiver Benutzer von Microsoft 365-Produkten für [Microsoft 365-Verwendungsanalyse](usage-analytics.md) und die [Aktivitätsberichte im Admin Center](../activity-reports/activity-reports.md) ist wie folgt definiert. 
+Ein aktiver Benutzer von Microsoft 365-Produkten für [Microsoft 365-Nutzungsanalysen](usage-analytics.md) und die Aktivitätsberichte im [Admin Center](../activity-reports/activity-reports.md) sind wie folgt definiert. 
   
 |**Produkt**|**Definition eines aktiven Benutzers**|**Anmerkungen**|
 |:-----|:-----|:-----|
-|Exchange Online  <br/> |Jeder Benutzer, der eine E-Mail gelesen oder gesendet hat.  <br/> |Es werden keine Kalenderinformationen dargestellt. Dies wird in einem bevorstehenden Update enthalten sein.  <br/> |
-|SharePoint Online  <br/> |Jeder Benutzer, der mit einer Datei interagiert hat, entweder durch Erstellen, Ändern, Anzeigen, Löschen, internes oder externes Freigeben oder Synchronisieren mit Clients auf einer beliebigen Website oder Anzeigen einer Seite auf einer beliebigen Website.  <br/> |Die aktive Benutzer Metrik für SharePoint Online in der Vorlagen-App für Microsoft 365 Usage Analytics spiegelt nur Benutzer wider, die eine Dateiaktivität für eine SharePoint-Team Website oder eine Gruppen Website durchführte. Die Vorlagen-APP wird aktualisiert, um die Definition auf dieselbe Weise wie die in den Nutzungsberichten im Admin Center zu synchronisieren.  <br/> |
+|Exchange Online  <br/> |Jeder Benutzer, der eine der folgenden Aktionen ausgeführt hat: Markieren Sie Besprechungsanfragen als gelesen, senden Sie Nachrichten, erstellen Sie Termine, senden Sie Besprechungsanfragen, akzeptieren (als zaglos) oder ablehnen Sie Besprechungsanfragen, brechen Sie Besprechungen ab.  <br/> |Es werden keine Kalenderinformationen dargestellt. Dies wird in einem bevorstehenden Update enthalten sein.  <br/> |
+|SharePoint Online  <br/> |Jeder Benutzer, der mit einer Datei interagiert hat, entweder durch Erstellen, Ändern, Anzeigen, Löschen, internes oder externes Freigeben oder Synchronisieren mit Clients auf einer beliebigen Website oder Anzeigen einer Seite auf einer beliebigen Website.  <br/> |Die aktive Benutzermetrik für SharePoint Online in der Microsoft 365 Usage Analytics-Vorlagen-App spiegelt nur Benutzer wider, die Dateiaktivitäten für eine SharePoint-Teamwebsite oder eine Gruppenwebsite erstellt haben. Die Vorlagen-App wird aktualisiert, um die Definition mit der definition in den Verwendungsberichten im Admin Center zu synchronisieren.  <br/> |
 |OneDrive for Business  <br/> |Jeder Benutzer, der mit einer Datei interagiert hat, entweder durch Erstellen, Ändern, Anzeigen, Löschen, internes oder externes Freigeben oder Synchronisieren mit Clients.  <br/> ||
 |Yammer  <br/> |Jeder Benutzer, der eine Nachricht auf Yammer gelesen, gepostet oder mit "Gefällt mir" gekennzeichnet hat.  <br/> ||
 |Skype for Business  <br/> |Jeder Benutzer, der an einer Peer-zu-Peer-Sitzung teilgenommen hat (einschließlich Chatnachrichten, Audio- und Videoanrufen, Anwendungsfreigaben und Dateiübertragungen) oder eine Konferenz organisiert bzw. daran teilgenommen hat.  <br/> ||
-|Office  <br/> |Jeder Benutzer, der sein Microsoft 365 pro Plus-, Visio pro-oder Project pro-Abonnement auf mindestens einem Gerät aktiviert hat.  <br/> ||
-|Microsoft 365-Gruppen  <br/> |Jedes Gruppenmitglied mit Postfachaktivität (wenn eine Nachricht an die Gruppe gesendet wurde).  <br/> |Diese Definition wird mit der Aktivität "Gruppen Websitedatei Aktivität" und "jammern der Gruppe" (Dateiaktivität auf der Gruppen Website und Nachricht, die der Gruppe zugeordnet ist, in die Gruppe "jammern" gesendet) erweitert. Diese Daten sind derzeit in der Microsoft 365-Verwendungsanalyse-Vorlagen-APP nicht verfügbar.  <br/> |
-|Microsoft Teams  <br/> |Jeder Benutzer, der an Chatnachrichten, privaten Chatnachrichten, anrufen, Besprechungen oder anderen Aktivitäten teilgenommen hat. Andere Aktivität ist definiert als die Anzahl von anderen Teamaktivitäten des Benutzers, von denen einige, und nicht ausschließlich: Nachrichten, apps, arbeiten an Dateien, suchen, Folgen von Teams und Kanal und Bevorzugung für Sie sind.  <br/> ||
+|Office  <br/> |Jeder Benutzer, der sein Microsoft 365 Pro Plus-, Visio Pro- oder Project Pro-Abonnement auf mindestens einem Gerät aktiviert hat.  <br/> ||
+|Microsoft 365-Gruppen  <br/> |Jedes Gruppenmitglied mit Postfachaktivität (wenn eine Nachricht an die Gruppe gesendet wurde).  <br/> |Diese Definition wird um gruppenwebsitedateiaktivität und Yammer Gruppenaktivität erweitert (Dateiaktivität auf der Gruppenwebsite und Nachricht, die Yammer gruppe zugeordnet ist.) Diese Daten sind derzeit nicht in der Microsoft 365 Usage Analytics-Vorlagen-App verfügbar.  <br/> |
+|Microsoft Teams  <br/> |Jeder Benutzer, der an Chatnachrichten, privaten Chatnachrichten, Anrufen, Besprechungen oder anderen Aktivitäten teilgenommen hat. Andere Aktivitäten sind definiert als die Anzahl anderer Teamaktivitäten durch den Benutzer, von denen einige umfassen und nicht beschränkt auf: Liking-Nachrichten, Apps, Arbeiten an Dateien, Suchen, Folgen von Teams und Kanal und Favorisieren.  <br/> ||
    
-## <a name="adoption-metrics"></a>Akzeptanz Metriken
+## <a name="adoption-metrics"></a>Einführungsmetriken
 
-[Microsoft 365 Usage Analytics](usage-analytics.md) enthält zusätzliche Akzeptanz Metriken im Zusammenhang mit aktiven Benutzern, um die Einführung der Produkte im Laufe der Zeit zu zeigen. Diese Metriken sind für den ausgewählten Monat, das Jahr und das Produkt gültig und werden wie folgt definiert. 
+[Die Microsoft 365-Verwendungsanalyse](usage-analytics.md) enthält zusätzliche Einführungsmetriken im Zusammenhang mit aktiven Benutzern, um die Einführung der Produkte im Laufe der Zeit anzuzeigen. Diese Metriken gelten für den ausgewählten Monat, das Jahr und das ausgewählte Produkt und werden wie folgt definiert. 
   
 |**Metrik**|**Beschreibung**|
 |:-----|:-----|
-|EnabledUsers  <br/> |Die Anzahl der Benutzer, die für die Verwendung des Produkts im Monat aktiviert sind.  <br/> |
-|ActiveUsers  <br/> |Die Anzahl der Benutzer, die im Monat aktiv sind.  <br/> |
-|MoMReturningUsers  <br/> |Die Anzahl der Benutzer, die in dem Monat aktiv sind, die auch im vorherigen Monat aktiv waren.  <br/> |
-|FirstTimeUsers  <br/> |Die Anzahl der Benutzer, die in dem Monat aktiv sind, der den Dienst zuvor noch nie verwendet hatte.  <br/> |
-|CumulativeActiveUsers  <br/> |Die Anzahl der Benutzer, die im Monat aktiv sind, sowie alle vorherigen Monate.  <br/> |
-|ActiveUsers (%)  <br/> |Prozentsatz der Benutzer, gerundet auf das nächste Zehntel, aktiv im Monat im Vergleich zur Anzahl der in diesem Monat aktivierten Benutzer.  <br/> |
-|MoMReturningUsers (%)  <br/> |Prozentsatz der Benutzer, gerundet auf das nächste Zehntel, aktiv in dem Monat, der im vorherigen Monat ebenfalls aktiv war, im Vergleich zur Anzahl der aktiven Benutzer.  <br/> |
+|EnabledUsers  <br/> |Anzahl der Benutzer, die für die Verwendung des Produkts im Monat aktiviert sind.  <br/> |
+|ActiveUsers  <br/> |Anzahl der im Monat aktiven Benutzer.  <br/> |
+|MoMReturningUsers  <br/> |Anzahl der im Monat aktiven Benutzer, die auch im vorigen Monat aktiv waren.  <br/> |
+|FirstTimeUsers  <br/> |Anzahl der im Monat aktiven Benutzer, die den Dienst noch nie verwendet haben.  <br/> |
+|CumulativeActiveUsers  <br/> |Anzahl der im Monat aktiven Benutzer plus eines beliebigen vorherigen Monats.  <br/> |
+|ActiveUsers(%)  <br/> |Prozent der Benutzer, gerundet auf den nächsten Zehnten, aktiv im Monat im Vergleich zur Anzahl der in diesem Monat aktivierten Benutzer.  <br/> |
+|MoMReturningUsers(%)  <br/> |Prozent der Benutzer, gerundet auf den nächsten Zehnten, aktiv im Monat, die auch im vorigen Monat aktiv waren, im Vergleich zur Anzahl der aktiven Benutzer.  <br/> |
    
-MoMReturningUsers, FirstTimeUsers, &amp; CumulativeActiveUsers wurden ab dem 1. Januar 2018 mit der Aufnahme von Microsoft Teams zurückgesetzt.
+MoMReturningUsers, FirstTimeUsers, CumulativeActiveUsers wurden ab dem 1. Januar 2018 unter Einbeziehung von &amp; Microsoft Teams zurückgesetzt.
   
