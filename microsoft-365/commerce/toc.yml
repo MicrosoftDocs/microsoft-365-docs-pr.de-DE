@@ -48,12 +48,14 @@
       href: billing-and-payments/view-your-bill-or-invoice.md
     - name: Ihre Rechnung verstehen
       href: billing-and-payments/understand-your-invoice.md
+    - name: Bezahlen Sie für Ihr Abonnement
+      href: billing-and-payments/pay-for-your-subscription.md
     - name: Verwalten von Zahlungsmethoden
       href: billing-and-payments/manage-payment-methods.md
-    - name: Bezahlen für Ihr Abonnement
-      href: billing-and-payments/pay-for-your-subscription.md
     - name: Ändern der Abrechnungshäufigkeit
       href: billing-and-payments/change-payment-frequency.md
+    - name: Verwalten von Benachrichtigungen zur Abrechnung und Rechnungsanlagen
+      href: billing-and-payments/manage-billing-notifications.md
     - name: Informationen zu Abrechnungsprofilen
       href: billing-and-payments/manage-billing-profiles.md
     - name: Ändern der Rechnungsadressen
