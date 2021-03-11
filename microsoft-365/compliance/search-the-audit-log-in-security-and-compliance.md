@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Microsoft 365 Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten aus Ihrer Organisation anzuzeigen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a751ffea9fa184faf90bfe7c43b44c5d4e53bfbf
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 6f158461bfecf0ab26f440203d079da0c7c0d238
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461816"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572639"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Compliance-Center
 
@@ -143,9 +143,6 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
 
 ## <a name="search-the-audit-log"></a>Durchsuchen des Überwachungsprotokolls
 
-> [!NOTE]
-> Ein Problem mit Azure AD-Aktivitäten ist aufgetreten, bei dem es im Überwachungsprotokoll-Suchtool vom 22. Oktober 2020 zum 6. November 2020 nicht zur Verfügung stand. Diese Aktivitäten umfassen Azure AD-Benutzerverwaltungs-, Gruppenverwaltungs-, Anwendungsverwaltungs-, Rollenverwaltungs- und Verzeichnisverwaltungsaktivitäten. Die fehlenden Ereignisse für den Wirkungszeitraum werden während der nächsten Tage zur Verfügung stehen und es wird erwartet, dass es beim 20. November 2020 abgeschlossen sein wird. In einigen Fällen können Kunden doppelte Ereignisdaten für Ereignisse bemerken, die zwischen dem 26. Oktober 2020 und dem 5. November 2020 generiert wurden.
-    
 Nachfolgend ist der Prozess zum Durchsuchen des Überwachungsprotokolls in Office 365 dargestellt. 
 
 [Schritt 1: Durchführen einer Überwachungsprotokollsuche](#step-1-run-an-audit-log-search)
@@ -704,75 +701,90 @@ In der folgenden Tabelle sind die Aktivitäten aufgelistet, die von der Postfach
 
 In der folgenden Tabelle sind Benutzerverwaltungsaktivitäten aufgelistet, die protokolliert werden, wenn ein Administrator ein Benutzerkonto über das Microsoft 365 Admin Center oder das Azure-Verwaltungsportal hinzufügt oder ändert.
 
+> [!NOTE]
+> Die Vorgangsnamen, die in der Spalte **Vorgang** in der folgenden Tabelle aufgeführt sind, enthalten einen Punkt ( `.` ). Sie müssen den Punkt in den Vorgangsnamen einbinden, wenn Sie den Vorgang in einem PowerShell-Befehl angeben wenn Sie das Überwachungsprotokoll durchsuchen, Aufbewahrungsrichtlinien für die Überwachung, Warnungsrichtlinien oder Aktivitätswarnungen erstellen. Achten Sie auch darauf, den Vorgangsnamen in doppelte Anführungszeichen (`" "`) zu setzen.
+
 |Aktivität|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
-|Benutzer hinzugefügt|Benutzer hinzufügen|Ein Benutzerkonto wurde erstellt.|
-|Benutzerlizenz geändert|Benutzerlizenz ändern|Die einem Benutzer zugewiesene Lizenz wurde geändert. Wenn Sie feststellen möchten, welche Lizenzen geändert wurden, sehen Sie sich die entsprechende Aktivität **Benutzer aktualisiert** an.|
-|Benutzerkennwort geändert|Benutzerkennwort ändern|Ein Benutzer ändert sein Kennwort. Das Zurücksetzen von Kennwörtern durch den Benutzer muss (für alle oder ausgewählte Benutzer) in Ihrer Organisation aktiviert sein, damit Benutzer ihr Kennwort zurücksetzen können. Sie können die Aktivitäten im Zusammenhang mit dem Zurücksetzen von Kennwörtern durch den Benutzer auch in Azure Active Directory überwachen. Weitere Informationen finden Sie unter [Berichtsoptionen für die Azure AD-Kennwortverwaltung](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
-|Benutzer gelöscht|Benutzer löschen|Ein Benutzerkonto wurde gelöscht.|
-|Benutzerkennwort zurücksetzen|Benutzerkennwort zurücksetzen|Der Administrator setzt das Kennwort für einen Benutzer zurück.|
-|Eigenschaft festgelegt, die einen Benutzer zur Kennwortänderung zwingt|Erzwungene Änderung des Benutzerkennworts festgelegt|Der Administrator hat die Eigenschaft festgelegt, die einen Benutzer dazu zwingt, sein Kennwort bei der nächsten Anmeldung bei Office 365 zu ändern.|
-|Lizenzeigenschaften festgelegt|Lizenzeigenschaften festgelegt|Der Administrator ändert die Eigenschaften einer Lizenz, die einem Benutzer zugewiesen ist.|
-|Benutzer aktualisiert|Benutzer aktualisieren|Ein Administrator ändert eine oder mehrere Eigenschaften eines Benutzerkontos. Eine Liste der Benutzereigenschaften, die aktualisiert werden können, finden Sie im Abschnitt "Aktualisieren von Benutzerattributen" unter [Azure Active Directory-Überwachungsberichtsereignisse](https://go.microsoft.com/fwlink/p/?LinkID=616549).|
+|Benutzer hinzugefügt|Benutzer hinzufügen.|Ein Benutzerkonto wurde erstellt.|
+|Benutzerlizenz geändert|Benutzerlizenz ändern.|Die einem Benutzer zugewiesene Lizenz wurde geändert. Wenn Sie feststellen möchten, welche Lizenzen geändert wurden, sehen Sie sich die entsprechende Aktivität **Benutzer aktualisiert** an.|
+|Benutzerkennwort geändert|Benutzerkennwort ändern.|Ein Benutzer ändert sein Kennwort. Das Zurücksetzen von Kennwörtern durch den Benutzer muss (für alle oder ausgewählte Benutzer) in Ihrer Organisation aktiviert sein, damit Benutzer ihr Kennwort zurücksetzen können. Sie können die Aktivitäten im Zusammenhang mit dem Zurücksetzen von Kennwörtern durch den Benutzer auch in Azure Active Directory überwachen. Weitere Informationen finden Sie unter [Berichtsoptionen für die Azure AD-Kennwortverwaltung](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
+|Benutzer gelöscht|Benutzer löschen.|Ein Benutzerkonto wurde gelöscht.|
+|Benutzerkennwort zurücksetzen|Benutzerkennwort zurücksetzen.|Der Administrator setzt das Kennwort für einen Benutzer zurück.|
+|Eigenschaft festgelegt, die einen Benutzer zur Kennwortänderung zwingt|Erzwungene Änderung des Benutzerkennworts festlegen.|Der Administrator hat die Eigenschaft festgelegt, die einen Benutzer dazu zwingt, sein Kennwort bei der nächsten Anmeldung bei Office 365 zu ändern.|
+|Lizenzeigenschaften festgelegt|Lizenzeigenschaften festlegen.|Der Administrator ändert die Eigenschaften einer Lizenz, die einem Benutzer zugewiesen ist.|
+|Benutzer aktualisiert|Benutzer aktualisieren.|Ein Administrator ändert eine oder mehrere Eigenschaften eines Benutzerkontos. Eine Liste der Benutzereigenschaften, die aktualisiert werden können, finden Sie im Abschnitt "Aktualisieren von Benutzerattributen" unter [Azure Active Directory-Überwachungsberichtsereignisse](https://go.microsoft.com/fwlink/p/?LinkID=616549).|
 ||||
 
 ### <a name="azure-ad-group-administration-activities"></a>Azure Active Directory-Gruppenverwaltungsaktivitäten
 
 In der nachstehenden Tabelle werden die Gruppenverwaltungsaktivitäten aufgeführt, die protokolliert werden, wenn ein Administrator oder ein Benutzer eine Microsoft 365-Gruppe erstellt oder ändert, oder aber wenn ein Administrator eine Sicherheitsgruppe über das Microsoft 365 Admin Center oder das Azure-Verwaltungsportal erstellt. Weitere Informationen zu Gruppen in Office 365 finden Sie unter [Anzeigen, Erstellen und Löschen von Gruppen im Office 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups).
 
+> [!NOTE]
+> Die Vorgangsnamen, die in der Spalte **Vorgang** in der folgenden Tabelle aufgeführt sind, enthalten einen Punkt ( `.` ). Sie müssen den Punkt in den Vorgangsnamen einbinden, wenn Sie den Vorgang in einem PowerShell-Befehl angeben wenn Sie das Überwachungsprotokoll durchsuchen, Aufbewahrungsrichtlinien für die Überwachung, Warnungsrichtlinien oder Aktivitätswarnungen erstellen. Achten Sie auch darauf, den Vorgangsnamen in doppelte Anführungszeichen (`" "`) zu setzen.
+
 |Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
-|Gruppe hinzugefügt|Gruppe hinzufügen|Eine Gruppe wurde erstellt.|
-|Mitglied zur Gruppe hinzugefügt|Mitglied zu Gruppe hinzufügen|Ein Mitglied wurde zu einer Gruppe hinzugefügt.|
-|Gruppe gelöscht|Gruppe löschen|Eine Gruppe wurde gelöscht.|
-|Mitglied aus Gruppe entfernt|Mitglied aus Gruppe entfernen|Ein Mitglied wurde aus einer Gruppe entfernt.|
-|Gruppe aktualisiert|Gruppe aktualisieren|Eine Eigenschaft einer Gruppe wurde geändert.|
+|Gruppe hinzugefügt|Gruppe hinzufügen.|Eine Gruppe wurde erstellt.|
+|Mitglied zur Gruppe hinzugefügt|Mitglied zu Gruppe hinzufügen.|Ein Mitglied wurde zu einer Gruppe hinzugefügt.|
+|Gruppe gelöscht|Gruppe löschen.|Eine Gruppe wurde gelöscht.|
+|Mitglied aus Gruppe entfernt|Mitglied aus Gruppe entfernen.|Ein Mitglied wurde aus einer Gruppe entfernt.|
+|Gruppe aktualisiert|Gruppe aktualisieren.|Eine Eigenschaft einer Gruppe wurde geändert.|
 ||||
 
 ### <a name="application-administration-activities"></a>Anwendungsverwaltungsaktivitäten
 
 In der folgenden Tabelle sind Anwendungsverwaltungsaktivitäten aufgelistet, die protokolliert werden, wenn ein Administrator eine in Azure AD registrierte Anwendung hinzufügt oder ändert. Jede Anwendung, die Azure AD zur Authentifizierung verwendet, muss im Verzeichnis registriert sein.
 
+> [!NOTE]
+> Die Vorgangsnamen, die in der Spalte **Vorgang** in der folgenden Tabelle aufgeführt sind, enthalten einen Punkt ( `.` ). Sie müssen den Punkt in den Vorgangsnamen einbinden, wenn Sie den Vorgang in einem PowerShell-Befehl angeben wenn Sie das Überwachungsprotokoll durchsuchen, Aufbewahrungsrichtlinien für die Überwachung, Warnungsrichtlinien oder Aktivitätswarnungen erstellen. Achten Sie auch darauf, den Vorgangsnamen in doppelte Anführungszeichen (`" "`) zu setzen.
+
 |Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
-|Delegierungseintrag hinzugefügt|Delegierungseintrag hinzufügen|Eine Authentifizierungsberechtigung für eine Anwendung in Azure AD wurde erstellt/gewährt.|
-|Dienstprinzipal hinzugefügt|Dienstprinzipal hinzufügen|Eine Anwendung wurde in Azure AD registriert. Eine Anwendung wird durch einen Dienstprinzipal im Verzeichnis dargestellt.|
-|Anmeldeinformationen für einen Dienstprinzipal hinzugefügt |Dienstprinzipal-Anmeldeinformationen hinzufügen|Anmeldeinformationen für einen Dienstprinzipal in Azure AD wurden hinzugefügt. Ein Dienstprinzipal stellt eine Anwendung im Verzeichnis dar.|
-|Delegierungseintrag entfernt|Delegierungseintrag entfernen|Eine Authentifizierungsberechtigung für eine Anwendung in Azure AD wurde entfernt.|
-|Dienstprinzipal aus dem Verzeichnis entfernt|Dienstprinzipal entfernen|Eine Anwendung wurde aus Azure AD gelöscht oder ihre Registrierung aufgehoben. Eine Anwendung wird durch einen Dienstprinzipal im Verzeichnis dargestellt.|
-|Anmeldeinformationen aus einem Dienstprinzipal entfernt |Dienstprinzipal-Anmeldeinformationen entfernen|Anmeldeinformationen für einen Dienstprinzipal in Azure AD wurden entfernt. Ein Dienstprinzipal stellt eine Anwendung im Verzeichnis dar.|
-|Delegierungseintrag festgelegt|Delegierungseintrag festgelegt|Eine Authentifizierungsberechtigung für eine Anwendung in Azure AD wurde aktualisiert.|
+|Delegierungseintrag hinzugefügt|Delegierungseintrag hinzufügen.|Eine Authentifizierungsberechtigung für eine Anwendung in Azure AD wurde erstellt/gewährt.|
+|Dienstprinzipal hinzugefügt|Dienstprinzipal hinzufügen.|Eine Anwendung wurde in Azure AD registriert. Eine Anwendung wird durch einen Dienstprinzipal im Verzeichnis dargestellt.|
+|Anmeldeinformationen für einen Dienstprinzipal hinzugefügt |Dienstprinzipal-Anmeldeinformationen hinzufügen.|Anmeldeinformationen für einen Dienstprinzipal in Azure AD wurden hinzugefügt. Ein Dienstprinzipal stellt eine Anwendung im Verzeichnis dar.|
+|Delegierungseintrag entfernt|Delegierungseintrag entfernen.|Eine Authentifizierungsberechtigung für eine Anwendung in Azure AD wurde entfernt.|
+|Dienstprinzipal aus dem Verzeichnis entfernt|Dienstprinzipal entfernen.|Eine Anwendung wurde aus Azure AD gelöscht oder ihre Registrierung aufgehoben. Eine Anwendung wird durch einen Dienstprinzipal im Verzeichnis dargestellt.|
+|Anmeldeinformationen aus einem Dienstprinzipal entfernt |Dienstprinzipal-Anmeldeinformationen entfernen.|Anmeldeinformationen für einen Dienstprinzipal in Azure AD wurden entfernt. Ein Dienstprinzipal stellt eine Anwendung im Verzeichnis dar.|
+|Delegierungseintrag festgelegt|Delegierungseintrag festlegen.|Eine Authentifizierungsberechtigung für eine Anwendung in Azure AD wurde aktualisiert.|
 ||||
 
 ### <a name="role-administration-activities"></a>Rollenverwaltungsaktivitäten
 
 In der folgenden Tabelle sind Azure AD-Rollenverwaltungsaktivitäten aufgelistet, die protokolliert werden, wenn ein Administrator Administratorrollen im Microsoft 365 Admin Center oder im Azure-Verwaltungsportal verwaltet.
 
+> [!NOTE]
+> Die Vorgangsnamen, die in der Spalte **Vorgang** in der folgenden Tabelle aufgeführt sind, enthalten einen Punkt ( `.` ). Sie müssen den Punkt in den Vorgangsnamen einbinden, wenn Sie den Vorgang in einem PowerShell-Befehl angeben wenn Sie das Überwachungsprotokoll durchsuchen, Aufbewahrungsrichtlinien für die Überwachung, Warnungsrichtlinien oder Aktivitätswarnungen erstellen. Achten Sie auch darauf, den Vorgangsnamen in doppelte Anführungszeichen (`" "`) zu setzen.
+
 |Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
-|Mitglied zu Rolle hinzugefügt|Rollenmitglied zu Rolle hinzufügen|Ein Benutzer wurde einer Administratorrolle in Microsoft 365 hinzugefügt.|
-|Benutzer aus einer Directory-Rolle entfernt|Rollenmitglied aus Rolle entfernen|Ein Benutzer wurde aus einer Administratorrolle in Microsoft 365 entfernt.|
-|Kontaktinformationen für Unternehmen festgelegt|Kontaktinformationen für Unternehmen festgelegt|Die Kontakteinstellungen auf Unternehmensebene für Ihre Organisation wurden aktualisiert. Dies umfasst E-Mail-Adressen für Nachrichten in Bezug auf Abonnements, die von Microsoft 365 gesendet werden, sowie technische Benachrichtigungen zu Diensten.|
+|Mitglied zu Rolle hinzugefügt|Mitglied zu Rolle hinzufügen.|Ein Benutzer wurde einer Administratorrolle in Microsoft 365 hinzugefügt.|
+|Benutzer aus einer Directory-Rolle entfernt|Mitglied aus Rolle entfernen.|Ein Benutzer wurde aus einer Administratorrolle in Microsoft 365 entfernt.|
+|Kontaktinformationen für Unternehmen festgelegt|Kontaktinformationen für Unternehmen festlegen.|Die Kontakteinstellungen auf Unternehmensebene für Ihre Organisation wurden aktualisiert. Dies umfasst E-Mail-Adressen für Nachrichten in Bezug auf Abonnements, die von Microsoft 365 gesendet werden, sowie technische Benachrichtigungen zu Diensten.|
 ||||
 
 ### <a name="directory-administration-activities"></a>Verzeichnisverwaltungsaktivitäten
 
 In der folgenden Tabelle sind Aktivitäten in Bezug auf Verzeichnisse und Domänen in Azure AD aufgelistet, die protokolliert werden, wenn ein Administrator seine Organisation im Microsoft 365 Admin Center oder im Azure-Verwaltungsportal verwaltet.
 
+> [!NOTE]
+> Die Vorgangsnamen, die in der Spalte **Vorgang** in der folgenden Tabelle aufgeführt sind, enthalten einen Punkt ( `.` ). Sie müssen den Punkt in den Vorgangsnamen einbinden, wenn Sie den Vorgang in einem PowerShell-Befehl angeben wenn Sie das Überwachungsprotokoll durchsuchen, Aufbewahrungsrichtlinien für die Überwachung, Warnungsrichtlinien oder Aktivitätswarnungen erstellen. Achten Sie auch darauf, den Vorgangsnamen in doppelte Anführungszeichen (`" "`) zu setzen.
+
 |Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
-|Domäne zu Unternehmen hinzugefügt|Domäne zu Unternehmen hinzufügen|Es wurde eine Domäne zu Ihrer Organisation hinzugefügt.|
-|Partner zum Verzeichnis hinzugefügt|Partner zu Unternehmen hinzufügen|Es wurde ein Partner (delegierter Administrator) zu Ihrer Organisation hinzugefügt.|
-|Domäne aus Unternehmen entfernt|Domäne aus Unternehmen entfernen|Es wurde eine Domäne aus Ihrer Organisation entfernt.|
-|Partner aus dem Verzeichnis entfernt|Partner aus Unternehmen entfernen|Es wurde ein Partner (delegierter Administrator) aus Ihrer Organisation entfernt.|
-|Unternehmensinformationen festgelegen|Unternehmensinformationen festgelegen|Die Unternehmensinformationen für Ihre Organisation wurden aktualisiert. Dies umfasst E-Mail-Adressen für Nachrichten in Bezug auf Abonnements, die von Microsoft 365 gesendet werden, sowie technische Benachrichtigungen zu Microsoft 365-Diensten.|
-|Domänenauthentifizierung festgelegt|Domänenauthentifizierung festgelegt|Die Einstellung der Domänenauthentifizierung für Ihre Organisation wurde geändert.|
-|Verbundeinstellungen für eine Domäne aktualisiert|Verbundeinstellungen für Domäne festlegen|Die Verbundeinstellungen (externe Freigabe) für Ihre Organisation wurden geändert.|
-|Kennwortrichtlinie festlegen|Kennwortrichtlinie festlegen|Die Längen- und Zeicheneinschränkungen für Benutzerkennwörter in Ihrer Organisation wurden geändert.|
-|Azure AD-Synchronisierung aktiviert|DirSyncEnabled-Flag für Unternehmen festlegen|Die Eigenschaft, die ein Verzeichnis für die Azure AD-Synchronisierungsdienste aktiviert, wurde festgelegt.|
-|Domäne aktualisiert|Domäne aktualisieren|Die Einstellungen einer Domäne in Ihrer Organisation wurden aktualisiert.|
-|Domäne überprüft|Domäne überprüfen|Es wurde überprüft, ob Ihre Organisation der Besitzer der Domäne ist.|
-|Domäne mit E-Mail-Prüfung überprüft|Domäne mit E-Mail-Prüfung überprüfen|Es wurde eine E-Mail-Prüfung verwendet, um zu überprüfen, ob Ihre Organisation der Besitzer der Domäne ist.|
+|Domäne zu Unternehmen hinzugefügt|Domäne zu Unternehmen hinzufügen.|Es wurde eine Domäne zu Ihrer Organisation hinzugefügt.|
+|Partner zum Verzeichnis hinzugefügt|Partner zu Unternehmen hinzufügen.|Es wurde ein Partner (delegierter Administrator) zu Ihrer Organisation hinzugefügt.|
+|Domäne aus Unternehmen entfernt|Domäne aus Unternehmen entfernen.|Es wurde eine Domäne aus Ihrer Organisation entfernt.|
+|Partner aus dem Verzeichnis entfernt|Partner aus Unternehmen entfernen.|Es wurde ein Partner (delegierter Administrator) aus Ihrer Organisation entfernt.|
+|Unternehmensinformationen festgelegen|Unternehmensinformationen festgelegen.|Die Unternehmensinformationen für Ihre Organisation wurden aktualisiert. Dies umfasst E-Mail-Adressen für Nachrichten in Bezug auf Abonnements, die von Microsoft 365 gesendet werden, sowie technische Benachrichtigungen zu Microsoft 365-Diensten.|
+|Domänenauthentifizierung festgelegt|Domänenauthentifizierung festlegen.|Die Einstellung der Domänenauthentifizierung für Ihre Organisation wurde geändert.|
+|Verbundeinstellungen für eine Domäne aktualisiert|Verbundeinstellungen für Domäne festlegen.|Die Verbundeinstellungen (externe Freigabe) für Ihre Organisation wurden geändert.|
+|Kennwortrichtlinie festlegen|Kennwortrichtlinie festlegen.|Die Längen- und Zeicheneinschränkungen für Benutzerkennwörter in Ihrer Organisation wurden geändert.|
+|Azure AD-Synchronisierung aktiviert|DirSyncEnabled-Flag festlegen.|Die Eigenschaft, die ein Verzeichnis für die Azure AD-Synchronisierungsdienste aktiviert, wurde festgelegt.|
+|Domäne aktualisiert|Domäne aktualisieren.|Die Einstellungen einer Domäne in Ihrer Organisation wurden aktualisiert.|
+|Domäne überprüft|Domäne überprüfen.|Es wurde überprüft, ob Ihre Organisation der Besitzer der Domäne ist.|
+|Domäne mit E-Mail-Prüfung überprüft|Domäne mit E-Mail-Prüfung überprüfen.|Es wurde eine E-Mail-Prüfung verwendet, um zu überprüfen, ob Ihre Organisation der Besitzer der Domäne ist.|
 ||||
 
 ### <a name="ediscovery-activities"></a>eDiscovery-Aktivitäten
@@ -951,7 +963,7 @@ In der folgenden Tabelle sind die Überwachungsaktivitäten und die Informatione
 |Gemeinsame Dokumenterstellung|Intern|UPN|Organisation des Formularbesitzers|Koautor|
 |Gemeinsame Dokumenterstellung|Extern|UPN<br>|Organisation des Koautors<br>|Koautor|
 |Gemeinsame Dokumenterstellung|Extern|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers<br>|Koautor|
-|Antwortaktivitäten|Extern|UPN<br>|Organisation des Antwortenden<br>|Responder|
+|Antwortaktivitäten|Extern|UPN<br>|Organisation des Antwortenden<br>|Antwortender|
 |Antwortaktivitäten|Extern|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der Benutzer-ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers|Antwortender|
 |Antwortaktivitäten|Anonym|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der Benutzer-ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers|Antwortender|
 ||||
