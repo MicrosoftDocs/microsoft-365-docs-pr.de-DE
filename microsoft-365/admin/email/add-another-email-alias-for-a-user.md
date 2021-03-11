@@ -21,10 +21,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
-description: 'Erfahren Sie, wie Sie ihrem Microsoft 365 Business-Konto mehr als eine E-Mail-Adresse, den so genannten E-Mail-Alias, zugeordnet haben können. '
+description: 'Erfahren Sie, wie Sie mehr als eine E-Mail-Adresse, genannt E-Mail-Alias, mit Ihrem Microsoft 365 Business-Konto verknüpfen können. '
 ms.openlocfilehash: 3c97640f4bb16876ec028a1af2b361a21a0decab
 ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/06/2021
 ms.locfileid: "50126405"
@@ -38,51 +38,51 @@ ms.locfileid: "50126405"
 
 ::: moniker-end
   
-Dieser Artikel ist für Microsoft 365-Administratoren vorgesehen, die über Geschäftsabonnements verfügen. Er gilt nicht für private Benutzer.
+Dieser Artikel ist Microsoft 365-Administratoren bestimmt, die über Business-Abonnements verfügen. Er gilt nicht für private Benutzer.
   
-Eine primäre E-Mail-Adresse in Microsoft 365 ist in der Regel die E-Mail-Adresse, die einem Benutzer zugewiesen wurde, als sein Konto erstellt wurde. Wenn der Benutzer eine E-Mail an eine andere Person sendet, wird seine primäre E-Mail-Adresse in E-Mail-Apps in der Regel im Feld  *Von*  angezeigt. Sie können ihrem Microsoft 365 Business-Konto auch mehrere E-Mail-Adressen zugeordnet haben. Diese zusätzlichen Adressen werden als "Aliase" bezeichnet. 
+Eine primäre E-Mail-Adresse in Microsoft 365 ist normalerweise die E-Mail-Adresse, die einem Benutzer bei der Erstellung seines Kontos zugewiesen wurde. Wenn der Benutzer eine E-Mail an eine andere Person senden, wird in E-Mail-Apps in der Regel seine primäre E-Mail-Adresse im Feld *Von* angezeigt. Sie können auch mehrere E-Mail-Adressen haben, die ihrem Microsoft 365 Business-Konto zugeordnet sind. Diese zusätzlichen Adressen werden als „Aliase“ bezeichnet. 
   
-Nehmen wir beispielsweise an, dass Jenna die E-Mail-Adresse jenna@contosoco.com hat, aber sie möchte auch E-Mails bei jen@contosoco.com empfangen, da einige Personen mit diesem Namen auf sie verweisen. Sie können Aliase für sie erstellen, damit beide E-Mail-Adressen in Jennas Posteingang gehen.
+Angenommen, Jenna hat die E-Mail-Adresse „jenna@contosoco.com“, möchte aber auch E-Mails unter „jen@contosoco.com“ empfangen, weil einige Leute sie mit diesem Namen ansprechen. Sie können Aliase für sie erstellen, sodass beide E-Mail-Adressen an Jennas Posteingang gehen.
 <br><br>  
   
 Sie können bis zu 400 Aliase für einen Benutzer erstellen. Es fallen keine zusätzlichen Gebühren oder Lizenzen an.
   
 > [!Tip]
-> Wenn Sie möchten, dass mehrere Personen E-Mails verwalten, die an eine einzelne E-Mail-Adresse wie info@NodPublishers.com oder sales@NodPublishers.com gesendet werden, erstellen Sie ein freigegebenes Postfach. Weitere Informationen finden Sie unter [Erstellen eines freigegebenen Postfachs.](create-a-shared-mailbox.md)
+> Wenn Sie möchten, dass mehrere Personen E-Mails verwalten können, die an eine einzelne E-Mail-Adresse wie „info@NodPublishers.com“ oder „vertrieb@NodPublishers.com“ gesendet wurden, erstellen Sie ein freigegebenes Postfach. Weitere Informationen finden Sie unter [Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md).
   
 ## <a name="add-email-aliases-to-a-user"></a>Hinzufügen von E-Mail-Aliasen zu einem Benutzer
 <a name="AddEmailPreview"> </a>
 
-Dazu müssen Sie [über Administratorberechtigungen](../add-users/about-admin-roles.md) verfügen. 
+Sie benötigen [Administrator-Berechtigungen](../add-users/about-admin-roles.md) zum Ausführen der folgenden Schritte. 
 
   
 ::: moniker range="o365-worldwide"
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 
-2. Wählen Sie **auf der Seite "Aktive** Benutzer" den Benutzer aus, > **E-Mail-Aliase verwalten.** Diese Option wird nicht angezeigt, wenn der Person keine Lizenz zugewiesen ist. 
+2. Wählen Sie auf der Seite **Aktive Benutzer** den Benutzer und dann **E-Mail-Aliase bearbeiten** aus. Diese Option wird nicht angezeigt, wenn der Person keine Lizenz zugewiesen wurde. 
     
-3. Wählen **Sie +Hinzufügen eines Alias** aus, und geben Sie einen neuen Alias für den Benutzer ein.   
+3. Wählen Sie **+ Alias hinzufügen** aus, und geben Sie einen neuen Alias für den Benutzer ein.   
     
     > [!Important] 
-    > Wenn die Fehlermeldung "Ein Parameter wurde nicht gefunden, der dem Parameternamen **'EmailAddresses'** entspricht" angezeigt wird, bedeutet dies, dass es etwas länger dauert, die Einrichtung Ihres Mandanten oder Ihre benutzerdefinierte Domäne fertig zu stellen, wenn Sie kürzlich einen hinzugefügt haben. Der Einrichtungsvorgang kann bis zu 4 Stunden dauern. Warten Sie eine Weile, bis der Einrichtungsprozess abgeschlossen ist, und versuchen Sie es dann erneut. Wenn das Problem weiterhin besteht, rufen Sie den Support an, und er wird eine vollständige Synchronisierung für Sie tun.
+    > Wenn die Fehlermeldung „**Es wurde kein Parameter gefunden, der dem Parametername 'EmailAddresses' entspricht**“ angezeigt wird, bedeutet dies, dass es etwas länger dauert, bis das Einrichten Ihres Mandanten oder Ihrer benutzerdefinierten Domäne (falls Sie kürzlich eine hinzugefügt haben) abgeschlossen ist. Der Setupvorgang kann bis zu 4 Stunden dauern. Warten Sie eine Zeitlang, damit dieser Vorgang abgeschlossen werden kann. Versuchen Sie es dann erneut. Wenn das Problem weiterhin besteht, rufen Sie den Support an, der eine vollständige Synchronisierung für Sie durchführt.
     
   
     > [!IMPORTANT]
     > Wenn Sie Ihr Abonnement bei GoDaddy oder einem anderen Partner gekauft haben und den neuen Alias als primäre E-Mail-Adresse festlegen möchten, müssen Sie zur Verwaltungskonsole "GoDaddy/partner" wechseln. 
   
     > [!TIP]
-    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen zum Hinzufügen eines weiteren Domänennamens zur Liste finden Sie unter ["Hinzufügen einer Domäne zu Microsoft 365".](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) 
+    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen dazu, wie Sie der Liste einen weiteren Domänenname hinzufügen, finden Sie unter [Hinzufügen einer Domäne zu Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
   
      
-5. Wenn Sie fertig sind, wählen Sie **"Änderungen speichern" aus.**
+5. Wenn Sie fertig sind, wählen Sie **Änderungen speichern** aus.
     
-6. Warten Sie 24 Stunden, bis die neuen Aliase in Microsoft 365 auffüllen.
+6. Warten Sie 24 Stunden, bis sich die neuen Aliase durch Microsoft 365 verbreitet haben.
     
-    Der Benutzer hat jetzt eine primäre Adresse und einen Alias. Beispielsweise gehen alle E-Mails, die an die primäre Adresse von Eliza Isaman, Eliza@NodPublishers.com, und ihr Alias Sales@NodPublishers.com an Elizas Posteingang gesendet werden.
+    Der Benutzer hat nun eine primäre Adresse und einen Alias. Alle E-Mails, die an Jana Hoffmanns primäre E-Mail-Adresse („Jana@NodPublishers.com“) und ihren Alias („Vertrieb@NodPublishers.com“) gesendet wurden, werden jetzt in Janas Posteingang zugestellt.
     
   
-7. **Wenn der Benutzer antwortet, ist die *"Von"-Adresse*  ihr primärer E-Mail-Alias.** Nehmen wir beispielsweise an, dass eine Nachricht an Sales@NodPublishers.com gesendet wird und im Posteingang von Eliza eintrifft. Wenn Eliza auf die Nachricht antwortet, wird ihre primäre E-Mail-Adresse als Absender und nicht als Sales@NodPublishers.com. 
+7. **Wenn der Benutzer antwortet, ist die *Von*-Adresse der primäre E-Mail-Alias.** Angenommen, eine Nachricht wurde an „Vertrieb@NodPublishers.com“ gesendet und ist dann in Janas Posteingang angekommen. Wenn Jana auf die Nachricht antwortet, wird ihre primäre E-Mail-Adresse als Absender angezeigt und nicht „Vertrieb@NodPublishers.com“. 
     
 ::: moniker-end
 
@@ -93,27 +93,27 @@ Dazu müssen Sie [über Administratorberechtigungen](../add-users/about-admin-ro
     
 2. Wählen Sie auf der Seite **Aktive Benutzer** den Namen der Person aus, die Sie bearbeiten möchten.
 
-3. Wählen Sie neben **"Benutzername/E-Mail-Aliase"** die Option **"Bearbeiten" aus.**
+3. Wählen Sie neben **Benutzername / E-Mail-Aliase** die Option **Bearbeiten** aus.
 
     > [!Important] 
-    > Wenn die Fehlermeldung "Ein Parameter wurde nicht gefunden, der dem Parameternamen **'EmailAddresses'** entspricht" angezeigt wird, bedeutet dies, dass es etwas länger dauert, die Einrichtung Ihres Mandanten oder Ihre benutzerdefinierte Domäne fertig zu stellen, wenn Sie kürzlich einen hinzugefügt haben. Der Einrichtungsvorgang kann bis zu 4 Stunden dauern. Warten Sie eine Weile, bis der Einrichtungsprozess abgeschlossen ist, und versuchen Sie es dann erneut. Wenn das Problem weiterhin besteht, rufen Sie den Support an, und er wird eine vollständige Synchronisierung für Sie tun.
+    > Wenn die Fehlermeldung „**Es wurde kein Parameter gefunden, der dem Parametername 'EmailAddresses' entspricht**“ angezeigt wird, bedeutet dies, dass es etwas länger dauert, bis das Einrichten Ihres Mandanten oder Ihrer benutzerdefinierten Domäne (falls Sie kürzlich eine hinzugefügt haben) abgeschlossen ist. Der Setupvorgang kann bis zu 4 Stunden dauern. Warten Sie eine Zeitlang, damit dieser Vorgang abgeschlossen werden kann. Versuchen Sie es dann erneut. Wenn das Problem weiterhin besteht, rufen Sie den Support an, der eine vollständige Synchronisierung für Sie durchführt.
 
-4. Geben Sie im Textfeld unter **Alias** den ersten Teil des neuen E-Mail-Alias ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen. Wählen Sie dann **Hinzufügen** aus.
+4. Geben Sie im Textfeld unter **Alias** den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen. Wählen Sie dann **Hinzufügen** aus.
 
     > [!IMPORTANT]
     > Wenn Sie Ihr Abonnement bei GoDaddy oder einem anderen Partner gekauft haben und den neuen Alias als primäre E-Mail-Adresse festlegen möchten, müssen Sie zur Verwaltungskonsole "GoDaddy/partner" wechseln. 
   
     > [!TIP]
-    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen zum Hinzufügen eines weiteren Domänennamens zur Liste finden Sie unter ["Hinzufügen einer Domäne zu Microsoft 365".](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) 
+    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen dazu, wie Sie der Liste einen weiteren Domänenname hinzufügen, finden Sie unter [Hinzufügen einer Domäne zu Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
 
-5. Wenn Sie fertig sind, wählen Sie **Speichern**“ aus.
+5. Wenn Sie fertig sind, wählen Sie **Speichern** aus.
 
-6. Warten Sie 24 Stunden, bis die neuen Aliase in Microsoft 365 auffüllen. 
+6. Warten Sie 24 Stunden, bis sich die neuen Aliase durch Microsoft 365 verbreitet haben. 
     
-    Der Benutzer hat jetzt eine primäre Adresse und einen Alias. Beispielsweise gehen alle E-Mails, die an die primäre Adresse von Eliza Isaman, Eliza@NodPublishers.com, und ihr Alias Sales@NodPublishers.com an Elizas Posteingang gesendet werden.
+    Der Benutzer hat nun eine primäre Adresse und einen Alias. Alle E-Mails, die an Jana Hoffmanns primäre E-Mail-Adresse („Jana@NodPublishers.com“) und ihren Alias („Vertrieb@NodPublishers.com“) gesendet wurden, werden jetzt in Janas Posteingang zugestellt.
     
   
-7. **Wenn der Benutzer antwortet, ist die *"Von"-Adresse*  ihr primärer E-Mail-Alias.** Nehmen wir beispielsweise an, dass eine Nachricht an Sales@NodPublishers.com gesendet wird und im Posteingang von Eliza eintrifft. Wenn Eliza auf die Nachricht antwortet, wird ihre primäre E-Mail-Adresse als Absender und nicht als Sales@NodPublishers.com. 
+7. **Wenn der Benutzer antwortet, ist die *Von*-Adresse der primäre E-Mail-Alias.** Angenommen, eine Nachricht wurde an „Vertrieb@NodPublishers.com“ gesendet und ist dann in Janas Posteingang angekommen. Wenn Jana auf die Nachricht antwortet, wird ihre primäre E-Mail-Adresse als Absender angezeigt und nicht „Vertrieb@NodPublishers.com“. 
 
 ::: moniker-end
 
@@ -124,35 +124,35 @@ Dazu müssen Sie [über Administratorberechtigungen](../add-users/about-admin-ro
     
 2. Wählen Sie auf der Seite **Aktive Benutzer** den Namen der Person aus, die Sie bearbeiten möchten.
 
-3. Wählen Sie neben **"Benutzername/E-Mail-Aliase"** die Option **"Bearbeiten" aus.**
+3. Wählen Sie neben **Benutzername / E-Mail-Aliase** die Option **Bearbeiten** aus.
 
     > [!Important] 
-    > Wenn die Fehlermeldung "Ein Parameter wurde nicht gefunden, der dem Parameternamen **'EmailAddresses'** entspricht" angezeigt wird, bedeutet dies, dass es etwas länger dauert, die Einrichtung Ihres Mandanten oder Ihre benutzerdefinierte Domäne fertig zu stellen, wenn Sie kürzlich einen hinzugefügt haben. Der Einrichtungsvorgang kann bis zu 4 Stunden dauern. Warten Sie eine Weile, bis der Einrichtungsprozess abgeschlossen ist, und versuchen Sie es dann erneut. Wenn das Problem weiterhin besteht, rufen Sie den Support an, und er wird eine vollständige Synchronisierung für Sie tun.
+    > Wenn die Fehlermeldung „**Es wurde kein Parameter gefunden, der dem Parametername 'EmailAddresses' entspricht**“ angezeigt wird, bedeutet dies, dass es etwas länger dauert, bis das Einrichten Ihres Mandanten oder Ihrer benutzerdefinierten Domäne (falls Sie kürzlich eine hinzugefügt haben) abgeschlossen ist. Der Setupvorgang kann bis zu 4 Stunden dauern. Warten Sie eine Zeitlang, damit dieser Vorgang abgeschlossen werden kann. Versuchen Sie es dann erneut. Wenn das Problem weiterhin besteht, rufen Sie den Support an, der eine vollständige Synchronisierung für Sie durchführt.
 
-4. Geben Sie im Textfeld unter **Alias** den ersten Teil des neuen E-Mail-Alias ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen. Wählen Sie dann **Hinzufügen** aus.
+4. Geben Sie im Textfeld unter **Alias** den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen. Wählen Sie dann **Hinzufügen** aus.
 
     > [!IMPORTANT]
     > Wenn Sie Ihr Abonnement bei GoDaddy oder einem anderen Partner gekauft haben und den neuen Alias als primäre E-Mail-Adresse festlegen möchten, müssen Sie zur Verwaltungskonsole "GoDaddy/partner" wechseln. 
   
     > [!TIP]
-    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen zum Hinzufügen eines weiteren Domänennamens zur Liste finden Sie unter ["Hinzufügen einer Domäne zu Microsoft 365".](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) 
+    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen dazu, wie Sie der Liste einen weiteren Domänenname hinzufügen, finden Sie unter [Hinzufügen einer Domäne zu Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
 
-5. Wenn Sie fertig sind, wählen Sie **Speichern**“ aus.
+5. Wenn Sie fertig sind, wählen Sie **Speichern** aus.
 
-6. Warten Sie 24 Stunden, bis die neuen Aliase in Microsoft 365 auffüllen. 
+6. Warten Sie 24 Stunden, bis sich die neuen Aliase durch Microsoft 365 verbreitet haben. 
     
-    Der Benutzer hat jetzt eine primäre Adresse und einen Alias. Beispielsweise gehen alle E-Mails, die an die primäre Adresse von Eliza Isaman, Eliza@NodPublishers.com, und ihr Alias Sales@NodPublishers.com an Elizas Posteingang gesendet werden.
+    Der Benutzer hat nun eine primäre Adresse und einen Alias. Alle E-Mails, die an Jana Hoffmanns primäre E-Mail-Adresse („Jana@NodPublishers.com“) und ihren Alias („Vertrieb@NodPublishers.com“) gesendet wurden, werden jetzt in Janas Posteingang zugestellt.
     
   
-7. **Wenn der Benutzer antwortet, ist die *"Von"-Adresse*  ihr primärer E-Mail-Alias.** Nehmen wir beispielsweise an, dass eine Nachricht an Sales@NodPublishers.com gesendet wird und im Posteingang von Eliza eintrifft. Wenn Eliza auf die Nachricht antwortet, wird ihre primäre E-Mail-Adresse als Absender und nicht als Sales@NodPublishers.com. 
+7. **Wenn der Benutzer antwortet, ist die *Von*-Adresse der primäre E-Mail-Alias.** Angenommen, eine Nachricht wurde an „Vertrieb@NodPublishers.com“ gesendet und ist dann in Janas Posteingang angekommen. Wenn Jana auf die Nachricht antwortet, wird ihre primäre E-Mail-Adresse als Absender angezeigt und nicht „Vertrieb@NodPublishers.com“. 
 
 ::: moniker-end
 
 
-## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>Haben Sie "Ein Parameter, der dem Parameternamen "EmailAddresses" entspricht, nicht gefunden?
+## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>Wurde die Fehlermeldung „Es wurde kein Parameter gefunden, der dem Parameternamen 'EmailAddresses' entspricht“ angezeigt?
 
 
-Wenn die Fehlermeldung "Ein Parameter, der dem Parameternamen **"EmailAddresses"** entspricht, nicht gefunden wird, bedeutet dies, dass es etwas länger dauert, die Einrichtung Ihres Mandanten oder Ihre benutzerdefinierte Domäne fertig zu stellen, wenn Sie kürzlich einen hinzugefügt haben. Der Einrichtungsvorgang kann bis zu 4 Stunden dauern. Warten Sie eine Weile, bis der Einrichtungsprozess abgeschlossen ist, und versuchen Sie es dann erneut. Wenn das Problem weiterhin besteht, rufen Sie den Support an, und er wird eine vollständige Synchronisierung für Sie tun.
+Wenn die Fehlermeldung "**Es wurde kein Parameter gefunden, der dem Parametername 'EmailAddresses' entspricht**" angezeigt wird, bedeutet dies, dass es etwas länger dauert, bis das Einrichten Ihres Mandanten oder Ihrer benutzerdefinierten Domäne (falls Sie kürzlich eine hinzugefügt haben) abgeschlossen ist. Der Setupvorgang kann bis zu 4 Stunden dauern. Warten Sie eine Zeitlang, damit dieser Vorgang abgeschlossen werden kann. Versuchen Sie es dann erneut. Wenn das Problem weiterhin besteht, rufen Sie den Support an, der eine vollständige Synchronisierung für Sie durchführt.
   
 ## <a name="did-you-purchase-your-subscription-from-godaddy-or-another-partner"></a>Haben Sie Ihr Abonnement bei GoDaddy oder einem anderen Partner gekauft?
 

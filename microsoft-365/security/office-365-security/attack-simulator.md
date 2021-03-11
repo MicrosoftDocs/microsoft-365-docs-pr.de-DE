@@ -20,12 +20,12 @@ ms.custom:
 description: Administratoren erfahren, wie Sie den Angriffssimulator zum Ausführen simulierter Phishing- und Kennwortangriffe in ihren Microsoft 365 E5- oder Microsoft Defender for Office 365 Plan 2-Organisationen verwenden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 85b376701ffa0c567fd66aa629371e9f69b354e9
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 7c88a5df6fae61e1ffe70214ad4a73deef4b380e
+ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407472"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50717609"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Angriffssimulator in Microsoft Defender für Office 365
 
@@ -36,8 +36,10 @@ ms.locfileid: "50407472"
 Wenn Ihre Organisation über Microsoft Defender für Office 365 Plan 2 verfügt, der Funktionen zur Untersuchung und Reaktion auf Bedrohungen [umfasst,](office-365-ti.md)können Sie den Angriffssimulator im Security & Compliance Center verwenden, um realistische Angriffsszenarien in Ihrer Organisation ausführen zu können. Diese simulierten Angriffe können Ihnen helfen, anfällige Benutzer zu identifizieren und zu finden, bevor sich ein tatsächlicher Angriff auf Ihr Endergebnis aus wirkt. Weitere Informationen finden Sie in diesem Artikel.
 
 > [!NOTE]
-> Die Angriffssimulator v1-Erfahrung wurde in den schreibgeschützten Modus umgestellt und durch Das Training des Angriffssimulators ersetzt, das unter Erste Schritte mit Attack [Simulation Training beschrieben wird.](attack-simulation-training-get-started.md)
-> Die Möglichkeit, neue Simulationen von dieser Website aus zu starten, wurde deaktiviert. Sie können jedoch weiterhin auf Berichte für Simulationen zugreifen, die ab dem 24. Januar 2021 für einen Zeitraum von 90 Tagen ausgeführt werden.
+>
+> Der Angriffssimulator wie in diesem Artikel beschrieben  ist jetzt schreibgeschützt und wurde durch Angriffssimulationsschulungen im Knoten **E-Mail & Zusammenarbeit** im [Microsoft 365 Security Center ersetzt.](https://security.microsoft.com) Weitere Informationen finden Sie unter [Erste Schritte mit attack simulation training](attack-simulation-training-get-started.md).
+>
+> Die Möglichkeit, neue Simulationen aus dieser Version des Angriffssimulators zu starten, wurde deaktiviert. Sie können jedoch ab dem 24. Januar 2021 bis zu 90 Tage lang auf Berichte zugreifen.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 

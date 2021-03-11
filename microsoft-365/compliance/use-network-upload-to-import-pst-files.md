@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Für Administratoren: Sie erfahren, wie Sie über den Netzwerkupload einen Massenimport mehrerer PST-Dateien in Benutzerpostfächer in Microsoft 365 ausführen.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c126a8e00ae5182d42122fb98f95ffd585360412
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 6248fcb96468ecfbb2b5454e40badc6293770003
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662289"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597082"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Verwenden Sie Netzwerkuploads zum Importieren von PST-Dateien Ihrer Organisation in Microsoft 365
 
@@ -182,23 +182,19 @@ So installieren Sie den Azure Storage-Explorer und Verbinden diesen mit Ihrem -S
   
 1. Laden Sie das Tool [Microsoft Azure Storage-Explorer](https://go.microsoft.com/fwlink/p/?LinkId=544842) herunter, und installieren Sie es.
     
-2. Starten Sie den Microsoft Azure Storage-Explorer, klicken Sie im linken Bereich mit der rechten Maustaste auf **Speicherkonten**, und klicken Sie dann auf **Mit Azure Storage verbinden**.
-    
-    ![Klicken Sie mit der rechten Maustaste auf "Speicherkonten", und klicken Sie dann auf "Mit Azure Storage verbinden".](../media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
+2. Starten Sie den Microsoft Azure Storage-Explorer.
+
+3. Klicken Sie auf der Seite **Ressource auswählen** im Dialogfeld **Mit Microsoft Azure Storage verbinden** auf **Blobcontainer**.
   
-3. Klicken Sie auf **SAS-URI (Shared Access Signature) oder -Verbindungszeichenfolge verwenden**, und klicken Sie dann auf **Weiter**.
+4. Wählen Sie auf der Seite **Authentifizierungsmethode auswählen** die Option **Shared Access Signature (SAS)**, und klicken Sie dann auf **Weiter**.
     
-4. Klicken Sie auf **SAS-URI verwenden**, fügen Sie die SAS-URL, die Sie in Schritt 1 abgerufen haben, in das Feld unter **URI** ein, und klicken Sie dann auf **Weiter**. 
+5. Fügen Sie auf der Seite **Verbindungsinformationen eingeben** die SAS-URL, die Sie in Schritt 1 erhalten haben, in das Feld unter **SAS URL des Blobcontainers** ein, und klicken Sie auf **Weiter**. Nachdem Sie die SAS-URL eingefügt haben, wird das Feld unter **Anzeigename** automatisch mit **ingestiondata** ausgefüllt.
     
-5. Auf der Seite **Verbindungszusammenfassung** können Sie die Verbindungsinformationen überprüfen und dann auf **Verbinden** klicken.
+6. Auf der Seite **Zusammenfassung** können Sie die Verbindungsinformationen überprüfen und dann auf **Verbinden** klicken.
     
-    Der **Container** ingestiondata wird geöffnet. Er enthält die PST-Dateien, die Sie in Schritt 2 hochgeladen haben. Der Container **ingestiondata** befindet sich unter **Speicherkonten** \> **(SAS-Attached Services)** \> **BLOB-Container**. 
-    
-    ![Im Azure Storage-Explorer wird eine Liste der PST-Dateien angezeigt, die Sie hochgeladen haben.](../media/12376fed-13a5-4a09-8fe6-e819e011b334.png)
+    Der **Container** ingestiondata wird geöffnet. Er enthält die PST-Dateien, die Sie in Schritt 2 hochgeladen haben. Der Container **ingestiondata** befindet sich unter **Speicherkonten** \> **(Angefügte Container)** \> **Blobcontainer**. 
   
-6. Wenn Sie mit der Verwendung des Microsoft Azure Storage-Explorers fertig sind, klicken Sie mit der rechten Maustaste auf **ingestiondata**, und klicken Sie dann auf **Trennen**, um die Verbindung mit dem Azure-Speicherbereich zu trennen. Andernfalls wird beim nächsten Anfügen eine Fehlermeldung angezeigt. 
-    
-    ![Klicken Sie mit der rechten Maustaste auf "ingestion", und klicken Sie dann auf "Trennen", um die Verbindung von Ihrem Azure-Speicherbereich zu trennen.](../media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
+7. Wenn Sie mit der Verwendung des Microsoft Azure Storage-Explorers fertig sind, klicken Sie mit der rechten Maustaste auf **ingestiondata**, und klicken Sie dann auf **Trennen**, um die Verbindung mit dem Azure-Speicherbereich zu trennen. Andernfalls wird beim nächsten Anfügen eine Fehlermeldung angezeigt.
   
 ## <a name="step-4-create-the-pst-import-mapping-file"></a>Schritt 4: Erstellen der PST-Importzuordnungsdatei
 
@@ -282,7 +278,7 @@ Der nächste Schritt besteht darin, den PST-Importauftrag im Importdienst in Mic
 
 10. Klicken Sie auf **Speichern**, um den Auftrag zu übermitteln, und klicken Sie dann auf **Schließen**, nachdem der Auftrag erfolgreich erstellt wurde. 
 
-    Es wird eine Status-Flyout-Seite mit dem Status **Analyse in Bearbeitung ** angezeigt, und der neue Importauftrag wird in der Liste auf der Seite **PST-Dateien importieren** angezeigt. 
+    Es wird eine Status-Flyout-Seite mit dem Status **Analyse in Bearbeitung** angezeigt, und der neue Importauftrag wird in der Liste auf der Seite **PST-Dateien importieren** angezeigt. 
 
 11. Klicken Sie auf **Aktualisieren** ![Aktualisieren-Symbol](../media/O365-MDM-Policy-RefreshIcon.gif), um die Statusinformationen zu aktualisieren, die in der Spalte **Status** angezeigt werden. Wenn die Analyse abgeschlossen ist und die Daten importiert werden können, wird der Status in **Analyse abgeschlossen** geändert.
 

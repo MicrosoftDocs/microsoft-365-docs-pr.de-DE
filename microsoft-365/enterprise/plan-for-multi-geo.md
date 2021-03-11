@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Informationen zu Microsoft 365 Multi-Geo, zur Funktionsweise von Multi-Geo und zu für Datenspeicher verfügbaren geografischen Standorten.
-ms.openlocfilehash: a8eba731fac16e56ef66ac0a905de521dfa7a6c8
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: ce8b752cc6a335249f9d8e03289fd16b04756ce9
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877231"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712342"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Plan für Microsoft 365 Multi-Geo
 
@@ -73,10 +73,14 @@ Wenn Ihre Benutzer aus einem lokalen Active Directory-System mit Azure Active Di
 
 Die Verwaltung eines Multi-Geo-Mandanten kann von der eines Nicht-Multi-Geo-Mandanten abweichen, da viele SharePoint- und OneDrive-Einstellungen und -Dienste über Multi-Geo-Funktionen verfügen. Es wird empfohlen, den Artikel [Verwalten einer Multi-Geo-Umgebung](administering-a-multi-geo-environment.md) zu lesen, bevor Sie mit der Konfiguration fortfahren.
 
-Lesen Sie die [Benutzererfahrung in einer Multi-Geo-Umgebung](multi-geo-user-experience.md) , um Details über die Benutzererfahrung in einer Multi-Geo-Umgebung zu erfahren.
+Weitere Informationen zur Benutzererfahrung in einer [Multi-Geo-Umgebung](multi-geo-user-experience.md) finden Sie unter Benutzererfahrung in einer Multi-Geo-Umgebung.
 
 Ausführliche Informationen zur Teams-Erfahrung in einer Multi-Geo-fähigen Microsoft 365-Mandanteneinheit finden Sie unter [Teams-Umgebung in einer Microsoft 365 OneDrive und SharePoint Online Multi-Geo-fähigen Mandanteneinheit](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo).
 
 Um mit der Konfigurierung von Microsoft 365 Multi-Geo zu beginnen, lesen Sie bitte [Konfigurieren von Microsoft 365-Multi-Geo](multi-geo-tenant-configuration.md).
 
 Denken Sie nach Abschluss der Konfiguration daran, [die OneDrive-Bibliotheken Ihrer Benutzer](move-onedrive-between-geo-locations.md) bei Bedarf zu migrieren, damit Benutzer an ihren bevorzugten Datenspeicherorten arbeiten können.
+
+## <a name="related-topics"></a>Verwandte Themen
+
+[Konfiguration von Microsoft 365 Multi-Geo eDiscovery](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-ediscovery-configuration)

@@ -1,7 +1,7 @@
 ---
-title: Tabelle "DeviceFileEvents" im Schema "Erweiterte Suche"
-description: Informationen zu dateibezogenen Ereignissen in der Tabelle "DeviceFileEvents" des Schemas für die erweiterte Suche
-keywords: Erweiterte Suche, Bedrohungssuche, Suche nach Cyberbedrohungen, Microsoft Threat Protection, Microsoft 365, Mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, Dateierstellenevents, DeviceFileEvents, Dateien, Pfad, Hash, sha1, sha256, md5
+title: DeviceFileEvents-Tabelle im schema der erweiterten Suche
+description: Informationen zu dateibezogenen Ereignissen in der DeviceFileEvents-Tabelle des schemas für erweiterte Suche
+keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft Threat Protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, filecreationevents, DeviceFileEvents, files, path, hash, sha1, sha256, md5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cccbd268c8f69d6623df1ef4c8208d20ead2e9f5
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: e54a6dce9765a8b87fcf2f63bbd1342beabdcf39
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145295"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712462"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -35,10 +35,10 @@ ms.locfileid: "50145295"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Die Tabelle im Schema für die erweiterte Suche enthält Informationen zum Erstellen, Ändern und `DeviceFileEvents` anderen Dateisystemereignissen. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
+Die `DeviceFileEvents` Tabelle im Schema der erweiterten [Suche](advanced-hunting-overview.md) enthält Informationen zur Dateierstellung, -änderung und anderen Dateisystemereignissen. Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
 >[!TIP]
-> Ausführliche Informationen zu den Ereignistypen (Werten), die von einer Tabelle unterstützt werden, finden Sie in der integrierten Schemareferenz, die im `ActionType` Security Center verfügbar ist. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+> Ausführliche Informationen zu den von einer Tabelle unterstützten Ereignistypen ( Werte) finden Sie unter Verwendung der integrierten Schemareferenz, die `ActionType` im Security Center verfügbar ist.
 
 Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter [Referenz zur erweiterten Suche](advanced-hunting-schema-tables.md).
 
@@ -47,52 +47,52 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
 | `DeviceId` | string | Eindeutiger Bezeichner für den Computer im Dienst |
 | `DeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Computers |
-| `ActionType` | string | Typ der Aktivität, die das Ereignis ausgelöst hat. Details finden Sie in der [In-Portal-Schemareferenz.](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
+| `ActionType` | string | Typ der Aktivität, die das Ereignis ausgelöst hat. Weitere Informationen [finden Sie in der In-Portal-Schemareferenz](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
 | `FileName` | string | Name der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
-| `FolderPath` | string | Ordner mit der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
+| `FolderPath` | string | Ordner, der die Datei enthält, auf die die aufgezeichnete Aktion angewendet wurde |
 | `SHA1` | string | SHA-1 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `SHA256` | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
-| `MD5` | string | #A0 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
+| `MD5` | string | MD5-Hash der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `FileOriginUrl` | string | URL, von der die Datei heruntergeladen wurde |
 | `FileOriginReferrerUrl` | string | URL der Webseite, die mit der heruntergeladenen Datei verknüpft ist |
 | `FileOriginIP` | string | IP-Adresse, von der die Datei heruntergeladen wurde |
 | `PreviousFolderPath` | string | Ursprünglicher Ordner, der die Datei enthält, bevor die aufgezeichnete Aktion angewendet wurde |
-| `PreviousFileName` | string | Der ursprüngliche Name der Datei, die als Ergebnis der Aktion umbenannt wurde |
-| `FileSize` | long | Größe der Datei in Byte |
-| `InitiatingProcessAccountDomain` | string | Domäne des Kontos, das den für das Ereignis verantwortlichen Prozess verwendet hat |
-| `InitiatingProcessAccountName` | string | Benutzername des Kontos, das den für das Ereignis verantwortlichen Prozess verwendet hat |
-| `InitiatingProcessAccountSid` | string | Sicherheits-ID (SID) des Kontos, das den für das Ereignis verantwortlichen Prozess verwendet hat |
-| `InitiatingProcessAccountUpn` | string | Benutzerprinzipalname (UPN) des Kontos, das den für das Ereignis verantwortlichen Prozess verwendet hat |
-| `InitiatingProcessMD5` | string | #A0 des Prozesses (Bilddatei), der das Ereignis initiiert hat |
+| `PreviousFileName` | string | Ursprünglicher Name der Datei, die als Ergebnis der Aktion umbenannt wurde |
+| `FileSize` | long | Größe der Datei in Bytes |
+| `InitiatingProcessAccountDomain` | string | Domäne des Kontos, mit dem der Prozess für das Ereignis verantwortlich war |
+| `InitiatingProcessAccountName` | string | Benutzername des Kontos, das den prozess für das Ereignis verantwortlich führte |
+| `InitiatingProcessAccountSid` | string | Security Identifier (SID) des Kontos, das den für das Ereignis verantwortlichen Prozess führte |
+| `InitiatingProcessAccountUpn` | string | Benutzerprinzipalname (UPN) des Kontos, das den für das Ereignis verantwortlichen Prozess führte |
+| `InitiatingProcessMD5` | string | MD5-Hash des Prozesses (Bilddatei), der das Ereignis initiiert hat |
 | `InitiatingProcessSHA1` | string | SHA-1 des Prozesses (Bilddatei), der das Ereignis initiiert hat |
 | `InitiatingProcessSHA256` | string | SHA-256 des Prozesses (Bilddatei), der das Ereignis initiiert hat. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
-| `InitiatingProcessFolderPath` | string | Ordner, der den Prozess (Bilddatei) enthält, der das Ereignis initiiert hat |
+| `InitiatingProcessFolderPath` | string | Ordner mit dem Prozess (Bilddatei), der das Ereignis initiiert hat |
 | `InitiatingProcessFileName` | string | Name des Prozesses, der das Ereignis initiiert hat |
 | `InitiatingProcessId` | int | Prozess-ID (PID) des Prozesses, der das Ereignis initiiert hat |
 | `InitiatingProcessCommandLine` | string | Befehlszeile zum Ausführen des Prozesses, der das Ereignis initiiert hat |
-| `InitiatingProcessCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu dem der Prozess, der das Ereignis initiiert hat, gestartet wurde |
-| `InitiatingProcessIntegrityLevel` | string | Integritätsstufe des Prozesses, der das Ereignis initiiert hat. Windows weist Prozesse Integritätsstufen basierend auf bestimmten Merkmalen zu, z. B. wenn sie über einen Internetdownload gestartet wurden. Diese Integritätsstufen beeinflussen Berechtigungen für Ressourcen |
-| `InitiatingProcessTokenElevation` | string | Tokentyp, der angibt, ob die Rechteerweiterung der Benutzerzugriffssteuerung (User Access Control, UAC) auf den Prozess angewendet wurde, der das Ereignis initiiert hat. |
-| `InitiatingProcessParentId` | int | Prozess-ID (PID) des übergeordneten Prozesses, der den für das Ereignis verantwortlichen Prozess aussing |
-| `InitiatingProcessParentFileName` | string | Name des übergeordneten Prozesses, der den für das Ereignis verantwortlichen Prozess aussing |
-| `InitiatingProcessParentCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, an dem das übergeordnete Element des für das Ereignis verantwortlichen Prozesses gestartet wurde |
-| `RequestProtocol` | string | Netzwerkprotokoll, falls zutreffend, zum Initiieren der Aktivität: Unknown, Local, SMB oder NFS |
+| `InitiatingProcessCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu dem der Prozess gestartet wurde, der das Ereignis initiiert hat |
+| `InitiatingProcessIntegrityLevel` | string | Integritätsebene des Prozesses, der das Ereignis initiiert hat. Windows weist Prozesse Integritätsstufen basierend auf bestimmten Merkmalen zu, z. B. wenn sie über einen Internetdownload gestartet wurden. Diese Integritätsstufen beeinflussen Berechtigungen für Ressourcen |
+| `InitiatingProcessTokenElevation` | string | Tokentyp, der angibt, ob die Berechtigungserweiterung für die Benutzerzugriffssteuerung (User Access Control, UAC) auf den Prozess angewendet wurde, der das Ereignis initiiert hat |
+| `InitiatingProcessParentId` | int | Prozess-ID (PID) des übergeordneten Prozesses, der den prozess, der für das Ereignis verantwortlich war, |
+| `InitiatingProcessParentFileName` | string | Name des übergeordneten Prozesses, der den prozessverantwortlichen Prozess für das Ereignis gezeitet hat |
+| `InitiatingProcessParentCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu der das übergeordnete Element des für das Ereignis verantwortlichen Prozesses gestartet wurde |
+| `RequestProtocol` | string | Netzwerkprotokoll, das ggf. zum Initiieren der Aktivität verwendet wird: Unbekannt, Lokal, SMB oder NFS |
 | `ShareName` | string | Name des freigegebenen Ordners, der die Datei enthält |
 | `RequestSourceIP` | string | IPv4- oder IPv6-Adresse des Remotegeräts, das die Aktivität initiiert hat |
 | `RequestSourcePort` | string | Quellport auf dem Remotegerät, das die Aktivität initiiert hat |
 | `RequestAccountName` | string | Benutzername des Kontos, das zum Remoteinitiieren der Aktivität verwendet wird |
 | `RequestAccountDomain` | string | Domäne des Kontos, das zum Remoteinitiieren der Aktivität verwendet wird |
-| `RequestAccountSid` | string | Sicherheits-ID (SID) des Kontos, das zum Remoteinitiieren der Aktivität verwendet wird |
-| `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte in Verbindung mit den Spalten "DeviceName" und "Timestamp" verwendet werden. |
-| `AppGuardContainerId` | string | Bezeichner für den virtualisierten Container, der von Application Guard zum Isolieren der Browseraktivität verwendet wird |
-| `AdditionalFields` | string | Zusätzliche Informationen über die Entität oder das Ereignis |
-| `InitiatingProcessFileSize` | long | Größe der Datei, die den für das Ereignis verantwortlichen Prozess verwendet hat |
+| `RequestAccountSid` | string | Security Identifier (SID) des Kontos, das zum Remoteinitiieren der Aktivität verwendet wird |
+| `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte in Verbindung mit den Spalten DeviceName und Timestamp verwendet werden. |
+| `AppGuardContainerId` | string | Id für den virtualisierten Container, der von Application Guard zum Isolieren von Browseraktivitäten verwendet wird |
+| `AdditionalFields` | string | Zusätzliche Informationen zur Entität oder zum Ereignis |
+| `InitiatingProcessFileSize` | long | Größe der Datei, die den prozessverantwortlichen Vorgang für das Ereignis führte |
 | `SensitivityLabel` | string | Bezeichnung, die auf E-Mails, Dateien oder andere Inhalte angewendet wird, um sie zum Schutz von Informationen zu klassifizieren |
-| `SensitivitySubLabel` | string | Unterkennzeichen, die auf E-Mails, Dateien oder andere Inhalte angewendet werden, um sie zum Schutz von Informationen zu klassifizieren; Vertraulichkeitsunterbezeichnungen sind unter Vertraulichkeitsbezeichnungen gruppieren, werden jedoch unabhängig behandelt. |
-| `IsAzureInfoProtectionApplied` | boolean | Gibt an, ob die Datei von Azure Information Protection verschlüsselt wird. |
+| `SensitivitySubLabel` | string | Sublabel, das auf eine E-Mail, Datei oder andere Inhalte angewendet wird, um sie zum Schutz von Informationen zu klassifizieren; Vertraulichkeitsunterbezeichnungen werden unter Vertraulichkeitsbezeichnungen gruppieren, aber unabhängig behandelt |
+| `IsAzureInfoProtectionApplied` | Boolescher Wert | Gibt an, ob die Datei von Azure Information Protection verschlüsselt wird |
 
 >[!NOTE]
-> Dateihashinformationen werden immer angezeigt, wenn sie verfügbar sind. Es gibt jedoch mehrere mögliche Gründe, warum SHA1, SHA256 oder MD5 nicht berechnet werden kann. Die Datei kann sich beispielsweise im Remotespeicher befinden, durch einen anderen Prozess gesperrt, komprimiert oder als virtuell markiert sein. In diesen Szenarien werden die Dateihashinformationen leer angezeigt.
+> Dateihashinformationen werden immer angezeigt, wenn sie verfügbar sind. Es gibt jedoch mehrere mögliche Gründe, warum ein SHA1, SHA256 oder MD5 nicht berechnet werden kann. Die Datei kann sich beispielsweise im Remotespeicher befinden, durch einen anderen Prozess gesperrt, komprimiert oder als virtuell markiert sein. In diesen Szenarien werden die Dateihashinformationen leer angezeigt.
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

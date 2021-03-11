@@ -1,5 +1,5 @@
 ---
-title: Verwalten, wer Microsoft 365-Gruppen erstellen kann
+title: Verwalten von Personen, die Microsoft 365-Gruppen erstellen können
 f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
-description: Erfahren Sie, wie Sie steuern, welche Benutzer Microsoft 365-Gruppen erstellen können.
+description: Erfahren Sie, wie Sie steuern können, welche Benutzer Microsoft 365-Gruppen erstellen können.
 ms.openlocfilehash: 3fa430e44c272e5ababbfb0e4befba707c72c1ba
 ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/05/2021
 ms.locfileid: "50122384"
 ---
-# <a name="manage-who-can-create-microsoft-365-groups"></a>Verwalten, wer Microsoft 365-Gruppen erstellen kann
+# <a name="manage-who-can-create-microsoft-365-groups"></a>Verwalten von Personen, die Microsoft 365-Gruppen erstellen können
 
-Standardmäßig können alle Benutzer Microsoft 365-Gruppen erstellen. Dies ist der empfohlene Ansatz, da benutzer mit der Zusammenarbeit beginnen können, ohne unterstützung von der IT zu benötigen.
+Standardmäßig können alle Benutzer Microsoft 365-Gruppen erstellen. Dies ist der empfohlene Ansatz, weil er es den Benutzern ermöglicht, ohne Unterstützung durch die IT mit der Zusammenarbeit zu beginnen.
 
-Wenn Für Ihr Unternehmen die Einschränkung erforderlich ist, wer Gruppen erstellen kann, können Sie dazu die Verfahren in diesem Artikel verwenden. Wenn Sie einschränken, wer eine Gruppe erstellen kann, wirkt sich dies auf alle Dienste aus, die für den Zugriff auf Gruppen angewiesen sind, einschließlich:
+Wenn Sie in Ihrem Unternehmen einschränken müssen, wer Gruppen erstellen kann, verwenden Sie dazu die Verfahren in diesem Artikel. Wenn Sie einschränken, wer eine Gruppe erstellen kann, wirkt sich dies auf alle Dienste aus, die für den Zugriff auf Gruppen angewiesen sind, einschließlich:
 
 - Outlook
 - SharePoint
@@ -37,7 +37,7 @@ Wenn Für Ihr Unternehmen die Einschränkung erforderlich ist, wer Gruppen erste
 - Microsoft Stream
 - Planner
 - Power BI (klassisch)
-- Projekt für das Web/Roadmap
+- Project für das Web / Roadmap
 
 Sie können die Erstellung von Microsoft 365-Gruppen auf die Mitglieder einer bestimmten Microsoft 365-Gruppe oder Sicherheitsgruppe beschränken. Um dies zu konfigurieren, verwenden Sie Windows PowerShell. Dieser Artikel führt Sie durch die erforderlichen Schritte.
 
@@ -51,35 +51,35 @@ Durch die in diesem Artikel beschriebenen Schritte wird nicht verhindert, dass M
 - Microsoft Teams-Dienstadministrator: Microsoft Teams Admin Center, Azure AD
 - Benutzerverwaltungsadministrator: Microsoft 365 Admin Center, Yammer, Azure AD
 
-Wenn Sie Mitglied einer dieser Rollen sind, können Sie Microsoft 365-Gruppen für eingeschränkte Benutzer erstellen und den Benutzer dann als Besitzer der Gruppe zuweisen.
+Wenn Sie Mitglied einer dieser Rollen sind, können Sie Microsoft 365-Gruppen für Benutzer mit eingeschränktem Zugriff erstellen und anschließend den Benutzer als Besitzer der Gruppe zuweisen.
 
 ## <a name="licensing-requirements"></a>Lizenzierungsanforderungen
 
-Um zu verwalten, wer Gruppen erstellt, benötigen die folgenden Personen Azure AD Premium- oder Azure AD Basic EDU-Lizenzen, die ihnen zugewiesen sind:
+Um verwalten zu können, wer Gruppen erstellt, benötigen die folgenden Personen ihnen zugewiesene Azure AD Premium-Lizenzen oder Azure AD Basic EDU-Lizenzen:
 
 - Der Administrator, der die Einstellungen für die Gruppenerstellung konfiguriert
 - Die Mitglieder der Gruppe, die Gruppen erstellen dürfen
 
 > [!NOTE]
-> Weitere [Informationen zum Zuweisen von Azure-Lizenzen](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups) finden Sie unter "Zuweisen oder Entfernen von Lizenzen im Azure Active Directory-Portal".
+> Weitere Details zum Zuweisen von Azure-Lizenzen finden Sie unter [Zuweisen oder Entfernen von Lizenzen im Azure Active Directory-Portal](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups).
 
 Die folgenden Personen benötigen keine ihnen zugewiesene Azure AD Premium-Lizenzen oder Azure AD Basic EDU-Lizenzen:
 
-- Personen, die Mitglieder von Microsoft 365-Gruppen sind und nicht in der Lage sind, andere Gruppen zu erstellen.
+- Personen, die Mitglieder von Microsoft 365-Gruppen sind und keine Möglichkeit haben, andere Gruppen zu erstellen.
 
 ## <a name="step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups"></a>Schritt 1: Erstellen einer Gruppe für Benutzer, die Microsoft 365-Gruppen erstellen müssen
 
-Es kann nur eine Gruppe in Ihrer Organisation verwendet werden, um zu steuern, wer Gruppen erstellen kann. Sie können jedoch andere Gruppen als Mitglieder dieser Gruppe schachteln.
+Zum Steuern des Personenkreises, der Gruppen erstellen kann, kann in Ihrer Organisation nur eine Gruppe verwendet werden. Sie können jedoch andere Gruppen als Mitglieder dieser Gruppe schachteln.
 
 Administratoren mit den oben aufgeführten Rollen müssen nicht Mitglieder dieser Gruppe sein: Sie behalten ihre Fähigkeit, Gruppen zu erstellen.
 
-1. Wechseln Sie im Admin Center zur Seite ["Gruppen".](https://admin.microsoft.com/adminportal/home#/groups)
+1. Wechseln Sie im Admin Center zur Seite [Gruppen](https://admin.microsoft.com/adminportal/home#/groups).
 
 2. Klicken Sie auf **Gruppe hinzufügen**.
 
-3. Wählen Sie den Gruppentyp aus, den Sie verwenden möchten. Vergessen Sie nicht den Namen der Gruppe! Sie benötigen ihn später noch.
+3. Wählen Sie den gewünschten Gruppentyp aus. Vergessen Sie nicht den Namen der Gruppe! Sie benötigen ihn später noch.
 
-4. Schließen Sie die Einrichtung der Gruppe ab, und fügen Sie Personen oder andere Gruppen hinzu, die In der Lage sein sollen, Gruppen in Ihrer Organisation zu erstellen.
+4. Schließen Sie die Einrichtung der Gruppe ab, indem Sie Personen oder andere Gruppen hinzufügen, denen Sie in Ihrer Organisation das Erstellen von Gruppen erlauben möchten.
 
 Ausführliche Anleitungen finden Sie unter [Erstellen, Bearbeiten oder Löschen einer Sicherheitsgruppe im Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/email/create-edit-or-delete-a-security-group).
 
@@ -95,7 +95,7 @@ Sie müssen die Vorschau-Version von [Azure Active Directory PowerShell für Gra
 
 Kopieren Sie das folgende Skript in einen Text-Editor wie Editor oder [Windows PowerShell ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
-Ersetzen *\<GroupName\>* Sie dies durch den Namen der Gruppe, die Sie erstellt haben. Zum Beispiel:
+Ersetzen Sie *\<GroupName\>* durch den Namen der Gruppe, die Sie erstellt haben. Zum Beispiel:
 
 `$GroupName = "Group Creators"`
 
@@ -143,15 +143,15 @@ Die letzte Zeile des Skripts enthält die aktualisierten Einstellungen:
 
 ![So sehen Ihre Einstellungen aus, wenn Sie fertig sind.](../media/952cd982-5139-4080-9add-24bafca0830c.png)
 
-Wenn Sie zukünftig ändern möchten, welche Gruppe verwendet wird, können Sie das Skript mit dem Namen der neuen Gruppe erneut ausführen.
+Wenn Sie später die verwendete Gruppe ändern möchten, können Sie das Skript mit dem Namen der neuen Gruppe erneut ausführen.
 
 Wenn Sie die Einschränkung für die Gruppenerstellung deaktivieren und wieder allen Benutzern das Erstellen von Gruppen gestatten möchten, legen Sie $GroupName auf "" und $AllowGroupCreation auf "True" fest, und führen Sie das Skript erneut aus.
 
 ## <a name="step-3-verify-that-it-works"></a>Schritt 3: Überprüfen der ordnungsgemäßen Funktion
 
-Es kann 30 Minuten oder mehr dauern, bis Änderungen wirksam werden. Sie können die neuen Einstellungen wie folgt überprüfen:
+Es kann dreißig Minuten oder länger dauern, bis Änderungen wirksam werden. Sie können die neuen Einstellungen auf folgende Weise prüfen:
 
-1. Melden Sie sich bei Microsoft 365 mit einem Benutzerkonto einer Person an, die nicht in der Lage sein sollte, Gruppen zu erstellen. Das heißt, sie sind kein Mitglied der gruppe, die Sie erstellt haben, oder ein Administrator.
+1. Melden Sie sich bei Microsoft 365 mit dem Benutzerkonto einer Person an, der es NICHT möglich sein sollte, Gruppen zu erstellen. Also einer Person, die nicht Mitglied der von Ihnen erstellten Gruppe oder ein Administrator ist.
 
 2. Wählen Sie die Kachel **Planner** aus.
 
@@ -159,16 +159,16 @@ Es kann 30 Minuten oder mehr dauern, bis Änderungen wirksam werden. Sie können
 
 4. Jetzt sollte eine Nachricht angezeigt werden, die besagt, dass die Erstellung von Plänen und Gruppen deaktiviert ist.
 
-Versuchen Sie es erneut mit einem Mitglied der Gruppe.
+Wiederholen Sie den Vorgang mit einem Mitglied der Gruppe.
 
 > [!NOTE]
-> Wenn Mitglieder der Gruppe keine Gruppen erstellen können, überprüfen Sie, ob sie nicht über ihre [OWA-Postfachrichtlinie blockiert werden.](https://go.microsoft.com/fwlink/?linkid=852135)
+> Sollte es Mitgliedern der Gruppe nicht möglich sein, Gruppen zu erstellen, überprüfen Sie, ob Sie nicht durch ihre [OWA-Postfachrichtlinie](https://go.microsoft.com/fwlink/?linkid=852135) daran gehindert werden.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Steuerungsplanung für die Zusammenarbeit – Schritt für Schritt](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Schritt-für-Schritt-Planung für die Zusammenarbeitsgovernance](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Erstellen eines Steuerungsplans für die Zusammenarbeit](collaboration-governance-first.md)
+[Erstellen eines Plans für die Zusammenarbeitsgovernance](collaboration-governance-first.md)
 
 [Erste Schritte mit Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=808033)
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Beschreibung des Unterschieds zwischen Dokumentverständnis- und Formularverarbeitungsmodellen
-ms.openlocfilehash: f57d220eb77a783de5ac352f3cf684364252a163
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 555dfa7d76335a3b943e860e5f41ed64c9d3e874
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975877"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50596980"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Unterschied zwischen Dokumentverständnis- und Formularverarbeitungsmodellen 
 
@@ -66,7 +66,25 @@ Sie können Dokumentverständnismodelle auf SharePoint-Dokumentbibliotheken anwe
 
 Formularverarbeitungsmodelle können derzeit nur auf die SharePoint-Dokumentbibliothek angewendet werden, über die sie erstellt wurden. Auf diese Weise können lizenzierte Benutzer, die auf die Site zugreifen können, ein Formularverarbeitungsmodell erstellen. Beachten Sie, dass ein Administrator die Formularverarbeitung für eine SharePoint-Dokumentbibliothek aktivieren muss, damit sie für lizenzierte Benutzer zur Verfügung steht.
 
- ## <a name="see-also"></a>Siehe auch
+## <a name="comparison-of-forms-processing-and-document-understanding"></a>Vergleich von Formularverarbeitung und Dokumentenverständnis
+
+Verwenden Sie die folgende Tabelle, um zu verstehen, wann Sie die Formularverarbeitung und wann Sie das Dokumentenverständnis verwenden sollten:
+
+| Feature | Formularverarbeitung | Dokumentverständnis |
+| ------- | ------- | ------- |
+| Modelltyp – wann ist welcher zu verwenden | Wird für halbstrukturierte Dateiformate verwendet, beispielsweise für Office-Dokumente, bei denen es Unterschiede im Layout gibt, aber dennoch ähnliche Informationen extrahiert werden sollen. | Wird für unstrukturierte Dateiformate verwendet, beispielsweise PDFs für Formularinhalte wie Rechnungen oder Bestellungen, bei denen das Layout und die Formatierung ähnlich sind. |
+| Modellbildung | Im AI Builder erstelltes Modell mit nahtlosem Zugriff aus der SharePoint-Dokumentenbibliothek.| Modell erstellt in nativer Schnittstelle, die in SharePoint Content Center eingebaut ist.|
+| Klassifizierungstyp| Einstellbarer Klassifizierer, bei dem maschinelles Lernen verwendet wird, um dem System Hinweise zu geben, welche Daten zu extrahieren sind.| Trainierbarer Klassifizierer mit optionalen Extraktoren, der mit Hilfe von maschinellem Lernen festlegt, an welcher Stelle des Dokuments welche Daten zu extrahieren sind.|
+| Speicherorte | Beschränkt auf eine einzige Dokumentenbibliothek, es sei denn, Sie verwenden Power-Platform zum Abrufen aus CDS.| Kann auf mehrere Bibliotheken angewendet werden.|
+| Unterstützte Dateitypen| Training im Format PDF, JPG, PNG, insgesamt 50 MB und 500 Seiten.| Training auf 5–10 PDF-, Office- oder E-Mail-Dateien, einschließlich negativer Beispiele.<br>Office-Dateien werden bei 64k Zeichen abgeschnitten. OCR-gescannte Dateien sind auf 20 Seiten begrenzt.|
+| Integrieren mit verwalteten Metadaten | Nein | Ja, durch Einstellung auf den Spalten der Dokumentenbibliothek vor dem Training des Modells.|
+| Integration von Compliance-Features, wenn Microsoft Information Protection aktiviert ist | Aufbewahrungsbezeichnungen einstellen.<br>Vertraulichkeitsbezeichnungen können bald eingestellt werden. | Aufbewahrungsbezeichnungen einstellen.<br>Vertraulichkeitsbezeichnungen können bald eingestellt werden. |
+| Unterstützte Regionen| Die Formularverarbeitung basiert auf der Power-Platform. Informationen zur globalen Verfügbarkeit von Power-Platform und AI Builder finden Sie unter [Verfügbarkeit von Power-Platform](https://dynamics.microsoft.com/geographic-availability/). | In allen Regionen verfügbar.|
+| Transaktionskosten | Verwendet AI Builder-Kreditpunkte.<br>Kreditpunkte können in Stapeln von 1 Mio. gekauft werden.<br>Beim Kauf von 300+ SharePoint Syntex Lizenzen sind 1 Mio. Kreditpunkte enthalten.<br>1 Mio. Kreditpunkte ermöglichen die Verarbeitung von 2000 Dateiseiten.| Nicht zutreffend |
+| Kapazität | Bereitstellung gegen die standardmäßige allgemeine Datendienstumgebung.| Keine Kapazitätsbeschränkungen.|
+| Unterstützte Sprachen| Englisch <br>Erscheint später im Jahr 2021: Spanisch, Deutsch, Französisch, Italienisch| Die Modelle arbeiten mit allen Sprachen des lateinischen Alphabets. Zusätzlich zu Englisch: Deutsch, Schwedisch, Französisch, Spanisch, Italienisch und Portugiesisch.|
+
+## <a name="see-also"></a>Siehe auch
 [Schulungen: Verbessern der Geschäftsergebnisse mit AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
 

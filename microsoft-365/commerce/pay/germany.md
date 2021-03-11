@@ -14,7 +14,7 @@ description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: c051eabf1f66f83bcacc83f34f0116a6427f4747
 ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/08/2021
 ms.locfileid: "50551224"

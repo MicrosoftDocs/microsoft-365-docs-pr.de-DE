@@ -21,12 +21,12 @@ description: Das Microsoft 365 Admin Center – Erfahren Sie mehr über die Feat
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: e8e743c0f3de0d7ac2eb8ebb9995596783d2d31a
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 2ecf9ddbd1257e7273da36371abb9f9e38df3f4a
+ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461832"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50717641"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neues im Microsoft 365 Admin Center
 
@@ -62,6 +62,12 @@ Wir haben das Nachrichtencenter überarbeitet, um Ihnen bei der Entdeckung relev
 :::image type="content" source="../media/message-center.png" alt-text="Screenshot: Startseite des Nachrichtencenters mit Posteingang und Nachrichten":::
 
 Weitere Informationen zu den neuen Features finden Sie unter [Verwalten von Nachrichten im Nachrichtencenter](manage/manage-messages.md).
+
+### <a name="whats-new-features"></a>Neue Features
+
+Wir haben Verbesserungen bei der Anzeige der Features "Was ist neu" für Benutzer in den Office-Apps vorgenommen. Sie können nun den reichhaltigen Inhalt im neuen Bereich von Whats sehen, den Ihre Benutzer sehen können. Sie können auch mehr über das Feature erfahren, bevor Sie ihre Benutzer über das Feature informieren möchten. For more info, check out [Manage which Office‎ features appear in What's New](manage/show-hide-new-features.md).
+
+:::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot: Neue Seite für Office-Apps mit Verbesserungen an Power BI":::
 
 ## <a name="ignite-2020-august--september"></a>Ignite 2020 (August & September)
 
@@ -246,11 +252,11 @@ Erst in diesem Monat haben wir eine neue Website mit dem Namen [https://docs.mic
 - Neues in **der Microsoft 365-Videoreihe:** In diesem Monat werden die neue Supporterfahrung in den Teams Admin and Security and Compliance Center, die Planner-Integration in das Message Center und das neue 3x3-Videolayout in Microsoft Teams themat. 
 - Die [Hilfehubseite des Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/) wurde aktualisiert, um Schneller zu finden, was Sie benötigen. Und wenn Sie diese Seite jetzt betrachten, haben wir eine Karte hinzugefügt, um Sie über wichtige Updates und Änderungen zu informieren.
 
-## <a name="april-2020"></a>April 2020
+## <a name="april-2020"></a>April 2020
 
 ### <a name="intune-roles-management"></a>Verwaltung von Intune-Rollen
 
-[April 2020](#april-2020)
+[April 2020](#april-2020)
 
 Nun, wir haben es getan! Wir haben den zweiten Schritt zu einer einheitlichen Rollenerfahrung gemacht, und Sie können jetzt Intune-Rollen im Microsoft 365 Admin Center verwalten. Sie können auch Features nutzen, z. B. die Möglichkeit, nach Rollen zu suchen und Rollenberechtigungen anzeigen. Dies bedeutet, dass Sie keine zwei separaten Tools zum Verwalten von Rollen für Microsoft 365 und Intune benötigen. Wenn Sie sich beim Microsoft 365 Admin Center anmelden, werden Sie sehen, dass es zwei Pivots auf der Seite Rollen gibt, eines für Azure AD und eines für Intune.
 
