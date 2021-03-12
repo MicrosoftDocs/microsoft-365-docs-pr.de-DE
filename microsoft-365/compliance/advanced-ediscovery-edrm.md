@@ -11,24 +11,22 @@ ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
-- M365-security-compliance
-- m365solution-aed
-- m365initiative-compliance
+- m365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Der integrierte Workflow von Advanced eDiscovery in Microsoft 365 richtet sich nach dem eDiscovery-Prozess, der durch das Electronic Discovery Reference Model (EDRM) beschrieben wird.
+description: Der integrierte Workflow von Advanced eDiscovery in Microsoft 365 entspricht dem eDiscovery-Prozess, der durch das Elektronische Ermittlungsreferenzmodell (Electronic Discovery Reference Model, EDRM) beschrieben wird.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4ca94baf1fc57ac014a32a80ddc5705feeb2c842
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: f2e7886eb67a58b43e9fb638fafb358fd9ee832c
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841633"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727488"
 ---
-# <a name="advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model"></a>Advanced eDiscovery-Ausrichtung mit dem Referenzmodell für elektronische Ermittlungen
+# <a name="advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model"></a>Erweiterte eDiscovery-Ausrichtung mit dem elektronischen Ermittlungsreferenzmodell
 
-Der integrierte Workflow von Advanced eDiscovery in Microsoft 365 richtet sich nach dem eDiscovery-Prozess, der durch das Electronic Discovery Reference Model (EDRM) beschrieben wird.
+Der integrierte Workflow von Advanced eDiscovery in Microsoft 365 entspricht dem eDiscovery-Prozess, der durch das Elektronische Ermittlungsreferenzmodell (Electronic Discovery Reference Model, EDRM) beschrieben wird.
 
 ![Das EDRM (Electronic Discovery Reference Model)](../media/EDRMv1.png)
 
@@ -44,7 +42,7 @@ So unterstützt Advanced eDiscovery den EDRM-Workflow auf hohem Niveau:
 
 - **Verarbeitung.** Nachdem Sie alle für den Fall relevanten Daten gesammelt haben, werden diese im nächsten Schritt zur weiteren Prüfung und Analyse aufbereitet. Bei Advanced eDiscovery werden die von Ihnen in der Sammelphase identifizierten lokalen Daten an einen Azure-Speicherort (als *Prüfdateisatz* bezeichnet) kopiert, der Ihnen eine statische Ansicht der Falldaten bietet. 
 
-- **Prüfung.** Nachdem Einem Überprüfungssatz Daten hinzugefügt wurden, können Sie bestimmte Dokumente anzeigen und zusätzliche Abfragen ausführen, um die Daten auf das zu reduzieren, was für den Fall am relevantesten ist. Außerdem können bestimmte Dokumente mit Anmerkungen und Tags versehen werden.
+- **Prüfung.** Nachdem Daten zu einem Überprüfungssatz hinzugefügt wurden, können Sie bestimmte Dokumente anzeigen und zusätzliche Abfragen ausführen, um die Daten auf das zu reduzieren, was für den Fall am relevantesten ist. Außerdem können bestimmte Dokumente mit Anmerkungen und Tags versehen werden.
 
 - **Analyse.** Advanced eDiscovery bietet ein integriertes Analyse-Tool, das Sie bei der weiteren Aussortierung von Daten aus dem Prüfdateisatz unterstützt, die Ihrer Meinung nach für die Ermittlung nicht relevant sind. Advance eDiscovery reduziert nicht nur das Volumen relevanter Daten, sondern hilft Ihnen auch, Kosten für rechtliche Prüfungen einzusparen, da Sie Inhalte so organisieren können, dass der Prüfungsprozess einfacher und effizienter wird.
 

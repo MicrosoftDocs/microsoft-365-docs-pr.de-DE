@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Administratoren können lernen, Nachrichtenflussregeln (Transportregeln) zum Verschlüsseln und Entschlüsseln von Nachrichten mithilfe der Office 365-Nachrichtenverschlüsselung zu erstellen.
-ms.openlocfilehash: 8060309f350b50c2aadc9a703e7a57a4caf8808c
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 58b5e592ee8da92a2dbfd10f533aad3240b7a484
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597227"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741554"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Definieren von Nachrichtenflussregeln zum Verschlüsseln von E-Mail-Nachrichten
 
@@ -86,7 +86,7 @@ Sie können Nachrichtenflussregeln für das Auslösen der Nachrichtenverschlüss
 
 6. Um die Verschlüsselung mithilfe der neuen OME-Funktionen zu aktivieren, wählen Sie unter Gehen Sie **wie** folgt aus **Ändern** der Nachrichtensicherheit aus, und wählen Sie dann **Office 365-Nachrichtenverschlüsselung und Rechteschutz anwenden aus.** Wählen Sie in der Liste eine RMS-Vorlage aus, wählen Sie **Speichern** und dann **OK aus.**
 
-   Die Liste der Vorlagen enthält alle Standardvorlagen und -optionen sowie alle benutzerdefinierten Vorlagen, die Sie für die Verwendung durch Office 365 erstellt haben. Wenn die Liste leer ist, stellen Sie sicher, dass Sie die Office 365-Nachrichtenverschlüsselung mit den neuen Funktionen eingerichtet haben, wie unter Einrichten neuer [Office 365-Nachrichtenverschlüsselungsfunktionen](set-up-new-message-encryption-capabilities.md)beschrieben, die auf Azure Information Protection aufgebaut sind. Informationen zu den Standardvorlagen finden Sie unter [Configuring and managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Weitere Informationen zur Option **Nicht** weiterleiten finden Sie unter [Do Not Forward option for emails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Informationen zur Option **nur** verschlüsseln finden Sie unter Encrypt Only option for [emails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+   Die Liste der Vorlagen enthält alle Standardvorlagen und -optionen sowie alle benutzerdefinierten Vorlagen, die Sie für die Verwendung durch Office 365 erstellt haben. Wenn die Liste leer ist, stellen Sie sicher, dass Sie die Office 365-Nachrichtenverschlüsselung mit den neuen Funktionen eingerichtet haben, wie unter Einrichten neuer [Office 365-Nachrichtenverschlüsselungsfunktionen](set-up-new-message-encryption-capabilities.md)beschrieben, die auf Azure Information Protection aufgebaut sind. Informationen zu den Standardvorlagen finden Sie unter [Configuring and managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Weitere Informationen zur Option Nicht weiterleiten finden Sie unter [Do Not Forward option for emails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Informationen zur Option nur verschlüsseln finden Sie unter [Encrypt Only option for emails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
    Sie können Die **Aktion hinzufügen auswählen,** wenn Sie eine andere Aktion angeben möchten.
 

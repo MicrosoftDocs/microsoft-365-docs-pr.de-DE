@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Erfahren Sie, wie Sie den Kundenschlüssel für alle Daten in Ihrem Microsoft 365-Mandanten einrichten.
-ms.openlocfilehash: 7bc5403f73e2d61f47e92ab5c94509f3fe9f3e33
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 7ffa9a8148a8ae699711b62da48cd2c856d48cac
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454646"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727478"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Übersicht über den Kundenschlüssel für Microsoft 365 auf Mandantenebene (öffentliche Vorschau)
 
@@ -33,6 +33,7 @@ Mithilfe von schlüsseln, die Sie bereitstellen, können Sie eine Datenverschlü
 - Vorschläge für Teams-Chats von Cortana
 - Teams-Statusmeldungen
 - Benutzer- und Signalinformationen für Exchange Online
+- Exchange Online-Postfächer, die nicht bereits verschlüsselte Kundenschlüsseldeps auf Anwendungsebene sind
 
 Für Microsoft Teams verschlüsselt der Kundenschlüssel auf Mandantenebene neue Daten ab dem Zeitpunkt, zu dem die DEP dem Mandanten zugewiesen wurde. Die öffentliche Vorschau unterstützt das Verschlüsseln vergangener Daten nicht. Für Exchange Online verschlüsselt der Customer Key alle vorhandenen und neuen Daten.
 
@@ -42,13 +43,9 @@ Sie können mehrere DEPs pro Mandant erstellen, aber nur eine DEP zu einem belie
 
 Wenn Sie bereits den Kundenschlüssel für Exchange Online und Sharepoint Online eingerichtet haben, passt die neue öffentliche Vorschau auf Mandantenebene dazu.
 
-Die von Ihnen erstellten Verschlüsselungsrichtlinien auf Mandantenebene verschlüsselt alle Daten für die Microsoft Teams- und Exchange Online-Workloads in Microsoft 365. Diese Richtlinie stört nicht die fein abgestimmten DEPs, die Sie bereits im Kundenschlüssel erstellt haben.
+Die von Ihnen erstellten Verschlüsselungsrichtlinien auf Mandantenebene verschlüsselt alle Daten für die Microsoft Teams- und Exchange Online-Workloads in Microsoft 365. Wenn Sie für Exchange Online jedoch bereits Kundenschlüssel-DEPs einzelnen Postfächern zugewiesen haben, setzt die Richtlinie auf Mandantenebene diese DEPs nicht außer Kraft. Die Richtlinie auf Mandantenebene verschlüsselt nur Postfächer, denen noch keine Kundenschlüssel-DEP auf Postfachebene zugewiesen ist.
 
-Beispiele:
-
-Microsoft #A0 und einige #A1 und Besprechungsaufzeichnungen, die in OneDrive for Business und SharePoint gespeichert werden, werden durch eine SharePoint Online-DEP verschlüsselt. Eine einzelne SharePoint Online-DEP verschlüsselt Inhalte innerhalb eines einzelnen Geografischen.
-
-Für Exchange Online können Sie eine DEP erstellen, die ein oder mehrere Benutzerpostfächer mit dem Kundenschlüssel verschlüsselt. Wenn Sie eine Richtlinie auf Mandantenebene erstellen, verschlüsselt diese Richtlinie die verschlüsselten Postfächer nicht. Der Schlüssel auf Mandantenebene verschlüsselt jedoch die Postfächer, die nicht bereits von einer DEP betroffen sind.
+Beispielsweise werden Microsoft #A0 und einige #A1 und Besprechungsaufzeichnungen, die in OneDrive for Business und SharePoint gespeichert werden, durch eine SharePoint Online-DEP verschlüsselt. Eine einzelne SharePoint Online-DEP verschlüsselt Inhalte innerhalb eines einzelnen Geografischen.
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>Einrichten des Kundenschlüssels auf Mandantenebene (öffentliche Vorschau)
 
@@ -299,10 +296,10 @@ Bevor Sie diese Cmdlets ausführen können, müssen Ihnen die entsprechenden Ber
 ### <a name="create-policy"></a>Richtlinie erstellen
 
 ```powershell
-   New-M365DataAtRestEncryptionPolicy [-Name] <String> -AzureKeyIDs <MultiValuedProperty> [-Description <String>] [-Enabled <Boolean>]
+   New-M365DataAtRestEncryptionPolicy [-Name] <String> -AzureKeyIDs <MultiValuedProperty> [-Description <String>]
 ```
 
-Beschreibung: Aktivieren Sie den Complianceadministrator, um eine neue Datenverschlüsselungsrichtlinie (Data Encryption Policy, DEP) mit zwei AKV-Stammschlüsseln zu erstellen. Nach dem Erstellen kann eine Richtlinie mithilfe eines cmdlets Set-M365DataAtRestEncryptionPolicy zugewiesen werden. Bei der ersten Zuweisung von Schlüsseln oder nach dem Drehen von Schlüsseln kann es bis zu 24 Stunden dauern, bis die neuen Schlüssel wirksam werden. Wenn die neue DEP mehr als 24 Stunden in Kraft tritt, wenden Sie sich an Microsoft.
+Beschreibung: Aktivieren Sie den Complianceadministrator, um eine neue Datenverschlüsselungsrichtlinie (Data Encryption Policy, DEP) mit zwei AKV-Stammschlüsseln zu erstellen. Nach dem Erstellen kann eine Richtlinie mithilfe eines cmdlets Set-M365DataAtRestEncryptionPolicyAssignment zugewiesen werden. Bei der ersten Zuweisung von Schlüsseln oder nach dem Drehen von Schlüsseln kann es bis zu 24 Stunden dauern, bis die neuen Schlüssel wirksam werden. Wenn die neue DEP mehr als 24 Stunden in Kraft tritt, wenden Sie sich an Microsoft.
 
 Beispiel:
 
@@ -321,7 +318,7 @@ Parameter:
 ### <a name="assign-policy"></a>Richtlinie zuweisen
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -Policy “<Default_PolicyName or Default_PolicyID>”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “<Default_PolicyName or Default_PolicyID>”
 ```
 
 Beschreibung: Dieses Cmdlet wird zum Konfigurieren der Standardmäßigen Datenverschlüsselungsrichtlinie verwendet. Diese Richtlinie wird dann verwendet, um Daten über alle Supportarbeitslasten hinweg zu verschlüsseln. 
@@ -329,18 +326,19 @@ Beschreibung: Dieses Cmdlet wird zum Konfigurieren der Standardmäßigen Datenve
 Beispiel:
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -Policy “Tenant default policy”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “Default_PolicyName”
 ```
 
 Parameter:
+
 | Name | Beschreibung | Optional (Y/N) |
 |----------|----------|---------|
--Policy|Gibt die Datenverschlüsselungsrichtlinie an, die zugewiesen werden muss. geben Sie entweder den Richtliniennamen oder die Richtlinien-ID an.|N|
+-DataEncryptionPolicy|Gibt die Datenverschlüsselungsrichtlinie an, die zugewiesen werden muss. geben Sie entweder den Richtliniennamen oder die Richtlinien-ID an.|N|
 
 ### <a name="modify-or-refresh-policy"></a>Ändern oder Aktualisieren der Richtlinie
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicy [-Identity] < M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter> -Refresh [-Enabled <Boolean>] [-Name <String>] [-Description <String>]
+Set-M365DataAtRestEncryptionPolicy [-Identity] <M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter> -Refresh [-Enabled <Boolean>] [-Name <String>] [-Description <String>]
 ```
 
 Beschreibung: Das Cmdlet kann zum Ändern oder Aktualisieren einer vorhandenen Richtlinie verwendet werden. Es kann auch verwendet werden, um eine Richtlinie zu aktivieren oder zu deaktivieren. Bei der ersten Zuweisung von Schlüsseln oder nach dem Drehen von Schlüsseln kann es bis zu 24 Stunden dauern, bis die neuen Schlüssel wirksam werden. Wenn die neue DEP mehr als 24 Stunden in Kraft tritt, wenden Sie sich an Microsoft.
@@ -360,19 +358,20 @@ Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
 ```
 
 Parameter:
+
 | Name | Beschreibung | Optional (Y/N) |
 |----------|----------|---------|
 |-Identity|Gibt die Datenverschlüsselungsrichtlinie an, die Sie ändern möchten.|N|
 |-Refresh|Verwenden Sie die Option Aktualisieren, um die Datenverschlüsselungsrichtlinie zu aktualisieren, nachdem Sie einen der zugeordneten Schlüssel im Azure Key Vault gedreht haben. Sie müssen keinen Wert für diese Option angeben.|v|
 |-Enabled|Der Parameter Enabled aktiviert oder deaktiviert die Datenverschlüsselungsrichtlinie. Bevor Sie eine Richtlinie deaktivieren, müssen Sie sie ihrem Mandanten zuweisen. Gültige Werte sind:</br > $true: Die Richtlinie ist aktiviert</br > $true: Die Richtlinie ist aktiviert. Dies ist der Standardwert.
 |v|
-|-Name|Der Parameter Name gibt den eindeutigen Namen der Datenverschlüsselungsrichtlinie an.|v
+|-Name|Der Parameter Name gibt den eindeutigen Namen der Datenverschlüsselungsrichtlinie an.|v|
 |-Description|Der Parameter Description gibt eine optionale Beschreibung für die Datenverschlüsselungsrichtlinie an.|v|
 
 ### <a name="get-policy-details"></a>Erhalten von Richtliniendetails
 
 ```powershell
-Get-M365DataAtRestEncryptionPolicy [-Identity] < M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter>
+Get-M365DataAtRestEncryptionPolicy [-Identity] <M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter>
 ```
 
 Beschreibung: Dieses Cmdlet listet alle M365DataAtRest-Verschlüsselungsrichtlinien auf, die für den Mandanten erstellt werden, oder Details zu einer bestimmten Richtlinie.
