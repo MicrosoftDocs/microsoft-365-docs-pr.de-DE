@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Aufbewahrungsrichtlinien für Überwachungsprotokolle sind Bestandteil der neuen erweiterten Überwachungsfunktionen in Microsoft 365. Mit einer Aufbewahrungsrichtlinie für Überwachungsprotokolle können Sie festlegen, wie lange Überwachungsprotokolle in Ihrer Organisation aufbewahrt werden sollen.
-ms.openlocfilehash: eeddf4c963284acaa908e07ddfdae77ec0bb080c
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: fd7e5dc37daad220257b4203679c6bb765140385
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114934"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712045"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle
 
@@ -47,7 +47,7 @@ Die erweiterte Überwachung in Microsoft 365 stellt eine Standardaufbewahrungsri
 
 - In Ihrer Organisation kann es maximal 50 Aufbewahrungsrichtlinien für Überwachungsprotokolle geben.
 
-- Wenn Sie ein Überwachungsprotokoll länger als 90 Tage aufbewahren möchten, muss der Benutzer, der das Überwachungsprotokoll generiert hat, über eine Lizenz für Office 365 E5 oder für Microsoft 365 E5 oder aber über eine Lizenz für Microsoft 365 E5 Compliance oder E5 eDiscovery und Audit-Add-on verfügen.
+- Um ein Überwachungsprotokoll länger als 90 Tage (und bis zu 1 Jahr) aufzubewahren, muss dem Benutzer, der das Überwachungsprotokoll erstellt (durch Ausführen einer geprüften Aktivität), eine Office 365 E5- oder Microsoft 365 E5-Lizenz zugewiesen werden oder er muss über eine Microsoft 365 E5 Compliance- oder E5 eDiscovery und Audit-Add-On-Lizenz verfügen. Um Überwachungsprotokolle 10 Jahre lang aufzubewahren, muss dem Benutzer, der das Überwachungsprotokoll erstellt, zusätzlich zu einer E5-Lizenz eine 10-Jahres-Zusatzlizenz zur Aufbewahrung von Überwachungsprotokollen zugewiesen werden.
 
 - Alle benutzerdefinierten (von Ihrer Organisation erstellten) Aufbewahrungsrichtlinien für Überwachungsprotokolle haben Vorrang vor der Standardaufbewahrungsrichtlinie. Wenn Sie beispielsweise eine Aufbewahrungsrichtlinie für Überwachungsprotokolle für Exchange-Postfachaktivitäten erstellen, die einen Aufbewahrungszeitraum von weniger als einem Jahr vorsieht, werden die Überwachungsdatensätze für Exchange-Postfachaktivitäten für die in der benutzerdefinierten Richtlinie festgelegte kürzere Dauer aufbewahrt.
 

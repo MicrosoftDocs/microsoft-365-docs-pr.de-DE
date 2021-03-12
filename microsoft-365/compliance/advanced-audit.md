@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Die erweiterte Überwachung in Microsoft 365 bietet neue Überwachungsfunktionen, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen.
-ms.openlocfilehash: 0ae67497829e69da92e9735cb68a84e75c517814
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 012361e8ebbf1961d5ca21cef97357d5150523d5
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242457"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712055"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Erweiterte Überwachung in Microsoft 365
 
@@ -199,11 +199,11 @@ Für berechtigte Kunden und Benutzer, denen eine entsprechende Lizenz zugewiesen
 
 **Wann wird die neue Add-On-Lizenz für die zehnjährige Aufbewahrung von Überwachungsprotokollen verfügbar sein?**
 
-Das neue Add-On für die zehnjährige Aufbewahrung von Überwachungsprotokollen wird für Kunden mit E5-Abonnements Anfang 2021 zum Kauf verfügbar sein.
+Das neue 10-Jahres-Add-On zur Aufbewahrung von Überwachungsprotokollen kann jetzt von Kunden mit E5-Abonnements erworben werden.
 
-**Was geschieht mit den Überwachungsprotokolldaten meiner Organisation, wenn ich eine 10-Jahres-Aufbewahrungsrichtlinie für Überwachungsprotokolle erstelle, nachdem das Feature als allgemein verfügbar freigegeben wurde, aber bevor die erforderliche Add-On-Lizenz Anfang 2021 verfügbar ist?**
+**Was passiert mit den Überwachungsprotokolldaten meiner Organisation, wenn ich eine 10-Jahres-Richtlinie zur Aufbewahrung von Überwachungsprotokollen erstellt habe, als die Funktion für die allgemeine Verfügbarkeit freigegeben wurde, bevor die erforderliche Zusatzlizenz im Februar 2021 verfügbar gemacht wurde?**
 
-Überwachungsprotokolldaten, die von einer 10-Jahres-Aufbewahrungsrichtlinie für Überwachungsprotokolle abgedeckt werden, die Sie nach der allgemeinen Verfügbarkeit erstellen, werden 10 Jahre lang aufbewahrt. Wenn die Add-On-Lizenz für die zehnjährige Aufbewahrung von Überwachungsprotokollen Anfang 2021 verfügbar ist, müssen Sie Add-On-Lizenzen für Benutzer erwerben, deren Überwachungsdaten durch eine bestehende 10-Jahres- Aufbewahrungsrichtlinie für Überwachungsprotokolle aufbewahrt werden. Nach der Verfügbarkeit der Add-On-Lizenz Anfang 2021 wird darüber hinaus die entsprechende Lizenzierung erzwungen, wenn Sie neue 10-Jahres-Aufbewahrungsrichtlinien für Überwachungsprotokolle erstellen.
+Alle Überwachungsprotokolldaten, die durch eine 10-Jahres-Richtlinie zur Aufbewahrung von Überwachungsprotokollen abgedeckt sind, die Sie nach der allgemeinen Verfügbarkeit erstellt haben, werden 10 Jahre lang aufbewahrt. Wenn die Add-On-Lizenz für die zehnjährige Aufbewahrung von Überwachungsprotokollen Anfang 2021 verfügbar ist, müssen Sie Add-On-Lizenzen für Benutzer erwerben, deren Überwachungsdaten durch eine bestehende 10-Jahres- Aufbewahrungsrichtlinie für Überwachungsprotokolle aufbewahrt werden.
 
 **Sind die neuen Ereignisse in der erweiterten Überwachung in der Office 365-Verwaltungsaktivitäts-API verfügbar?**
 

@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Erfahren Sie mehr über das Steuern verwandter Features in Microsoft 365-Gruppen, Teams, SharePoint und Yammer.
-ms.openlocfilehash: 8f1341b3b3bab1e9ae7219f01124983aefb022b1
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a9b4767c450ffc775fb84711e48b9f6c775419e5
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50424050"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741597"
 ---
 # <a name="what-is-collaboration-governance"></a>Was ist Zusammenarbeitsgovernance?
 
@@ -41,7 +41,7 @@ Diese Artikelreihe hilft Ihnen zu verstehen, wie Gruppen, Teams und SharePoint-E
 
 Es gibt viele Optionen für die Bereitstellung von Microsoft 365-Gruppen und Teams für eine sichere Zusammenarbeit in Ihrer Organisation. Es wird empfohlen, diese Steuerungsinhalte zusammen mit Einrichten einer sicheren Zusammenarbeit mit [Microsoft 365](setup-secure-collaboration-with-teams.md) und den zugehörigen Artikeln zu verwenden, um die beste Lösung für die Zusammenarbeit für Ihre Organisation zu erstellen.
 
-## <a name="what-are-microsoft-365-groups"></a>Was sind Microsoft 365-Gruppen?
+## <a name="why-microsoft-365-groups-are-important"></a>Warum Microsoft 365-Gruppen wichtig sind
 
 Mit Microsoft 365-Gruppen können Sie eine Gruppe von Personen auswählen, mit denen Sie zusammenarbeiten möchten, und auf einfache Weise eine Sammlung von Ressourcen einrichten, die diese Personen freigeben können. Das Hinzufügen von Mitgliedern zur Gruppe gewährt automatisch die erforderlichen Berechtigungen für alle von der Gruppe bereitgestellten Ressourcen. Sowohl Teams als auch Yammer verwenden Microsoft 365-Gruppen, um ihre Mitgliedschaft zu verwalten.
 
@@ -145,7 +145,7 @@ Zu den Steuerungsfunktionen für die Zusammenarbeit in Microsoft 365 gehören Fe
 |Gruppenablaufrichtlinie|Legen Sie inaktive Gruppen und Teams so fest, dass sie ablaufen und nach einem bestimmten Zeitraum gelöscht werden.|Microsoft 365 E5 oder E3 mit Azure AD Premium-Lizenzen|
 |Gastzugriff pro Gruppe|Zulassen oder Verhindern der Team- und Gruppenfreigabe für Personen außerhalb Ihrer Organisation pro Gruppe.|Microsoft 365 E5 oder E3|
 
-## <a name="collaboration-governance-planning-step-by-step"></a>Planung der Governance für die Zusammenarbeit schritt-für-Schritt
+## <a name="collaboration-governance-planning-step-by-step"></a>Schritt-für-Schritt-Planung für die Zusammenarbeitsgovernance
 
 Führen Sie die folgenden grundlegenden Schritte aus, um Ihren Steuerungsplan zu erstellen:
 

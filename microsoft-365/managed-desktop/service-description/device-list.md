@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4a71727a21151f1c1aec23a859a91fb616ad71c5
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 729e9dc9ab512a7e93bc291a9a52222c15a42b79
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453693"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727421"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop-Geräte 
 
@@ -37,7 +37,7 @@ Die Links zu Geräten hier sind nur für Ihre Referenz. Wenn Sie Geräte bestell
 
 | Modell    | Mindestspezifikationen  | Zusätzliche Anforderungen    | Archivdatum   | Fälligkeitsdatum   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Dell Precision 5310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR-Kamera erforderlich | 28. April 2022  | 28. April 2025 |
+| [Dell Latitude 5310 / 5310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR-Kamera erforderlich | 28. April 2022  | 28. April 2025 |
 | [Dell Latitude 3510](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-3510-business-laptop/spd/latitude-15-3510-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR-Kamera erforderlich | 28. April 2022 | 28. April 2025  |
 | [Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR-Kamera erforderlich | 28. April 2022 | 28. April 2025  |
 | [Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR-Kamera erforderlich | 28. April 2022 | 28. April 2025 |

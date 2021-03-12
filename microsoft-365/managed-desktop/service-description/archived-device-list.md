@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e392d071b77226a23001d8628c3b9c711b06e228
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: bbb3814a973bec53a877bc70d0299ce7b2eb87b5
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454583"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727553"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Archivierte Microsoft Managed Desktop-Geräte
 
@@ -48,16 +48,22 @@ Um in Microsoft Managed Desktop registriert zu werden, muss ein Gerät eines der
 |Dell Optiplex 3070 | 128 GB / Intel i3 / 8 GB RAM | Keine | **1. Mai 2025**  |
 |HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | SKU mit 5VS01AV, IR-Kamera oder Fingerabdrucksensor erforderlich  | **15. Februar 2023** |
 |HP EliteBook 830 / 840 / 850 G6| 128 GB / Intel i5 / 8 GB RAM | SKU mit 5VS01AV, IR-Kamera oder Fingerabdrucksensor erforderlich  | **30.11.2023** |
+|HP EliteBook 830 / 840 / 850 G7| 128 GB / Intel i5 / 8 GB RAM | SKU mit 9MZ21AV, IR-Kamera oder Fingerabdrucksensor erforderlich  | **30.11.2024** |
 |HP Elite x2 1013 G3| 256 GB / Intel i5 / 8 GB RAM | SKU mit 5VS03AV, IR-Kamera erforderlich |**14. Mai 2023** |
+|HP Elite x2 G4| 256 GB / Intel i5 / 8 GB RAM | SKU mit 5VS03AV, IR-Kamera erforderlich |**31. Mai 2024** |
+|HP EliteBook x360 830 G7| 256 GB / Intel i5 / 8 GB RAM | SKU mit 9MZ21AV, IR-Kamera erforderlich |**30.11.2024** |
 |HP EliteBook x360 1030 G5| 256 GB / Intel i5 / 8 GB RAM | SKU mit 5VS01AV, IR-Kamera erforderlich |**14. Mai 2023** |
 |HP EliteBook x360 1030 G6| 256 GB / Intel i5 / 8 GB RAM | SKU mit 5VS01AV, IR-Kamera erforderlich |**30.11.2023** |
 |HP EliteBook x360 1040 G5| 256 GB / Intel i5 / 8 GB RAM | SKU mit 5VS01AV, IR-Kamera erforderlich | **23. Okt 2023** |
 |HP EliteBook x360 1040 G6| 256 GB / Intel i5 / 8 GB RAM | SKU mit 5VS01AV, IR-Kamera erforderlich | **30.11.2023** |
+|HP EliteBook x360 1030 / 1040 G7| 256 GB / Intel i5 / 8 GB RAM | SKU mit 8XW08AV, IR-Kamera erforderlich | **31. August 2024** |
 |HP ProBook x360 440 G1| 128 GB / Intel i3 / 8 GB RAM | SKU mit 5VS04AV, IR-Kamera oder Fingerabdruckleser erforderlich | **06.06.2023** |
 |HP EliteDesk 800 G4 DM | 128 GB / Intel i3 / 8 GB RAM | SKU mit 5VS04AV | **18. Juli 2023** |
 |HP EliteDesk 800 G4 SFF | 128 GB / Intel i3 / 8 GB RAM | SKU mit 5VS04AV | **18. Juli 2023** |
 |HP EliteOne 800 G4 23,8 In AIO |128 GB / Intel i3 / 8 GB RAM |SKU mit 5VS04AV| **18. Juli 2023** |
+|HP EliteOne 800 G6 24/27 AIO |256 GB / Intel i5 / 8 GB RAM |SKU mit 9XM14AV| **30. Juni 2025** |
 |HP ZBook 14u/15u G6 Mobile Workstation |256 GB / Intel i5 / 8 GB RAM |SKU mit 5VS04AV, IR-Kamera erforderlich| **30.11.2023** |
+|HP ZBook Firefly 14/15 G7 Mobile Workstation |256 GB / Intel i5 / 8 GB RAM |SKU mit 9MZ22AV, IR-Kamera erforderlich| **30.11.2024** |
 |Surface Book 2| 256 GB / Intel i5 / 8 GB RAM | Keine | **16.11.2022** |
 |Surface Go| 128 GB / Intel 4415Y / 8 GB RAM | Keine | **2. August 2023** |
 |Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | Keine | **20. Mai 2022** |

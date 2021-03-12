@@ -1,5 +1,5 @@
 ---
-title: Mitgliedern das Senden als oder senden im Auftrag einer Gruppe gestatten
+title: Zulassen, dass Mitglieder im Namen einer Gruppe senden oder senden
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -16,69 +16,71 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: Hier erfahren Sie, wie Sie Mitgliedern erlauben, e-Mails als Microsoft 365-Gruppe zu senden oder e-Mails im Namen einer Microsoft 365-Gruppe zu senden.
-ms.openlocfilehash: 6dff559eceec1b719f31d577d7fff8f604636a47
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+description: Erfahren Sie, wie Sie Gruppenmitgliedern das Senden von E-Mails als Microsoft 365-Gruppe oder das Senden von E-Mails im Namen einer Microsoft 365-Gruppe erlauben.
+ms.openlocfilehash: 44a0a7a690c8faa9fe00732e8154f36aa5a6fe6f
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663583"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727079"
 ---
-# <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Mitgliedern das Senden als oder senden im Auftrag einer Gruppe gestatten
+# <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Zulassen, dass Mitglieder im Namen einer Gruppe senden oder senden
 
-Ein Mitglied einer Microsoft 365-Gruppe, denen die Berechtigung " **Senden als** " oder " **Senden im Auftrag** von" erteilt wurde, kann e-Mails als Gruppe oder im Namen der Gruppe senden. In diesem Artikel wird erläutert, wie ein globaler oder Exchange-Administrator diese Berechtigungen festlegen kann.
+Ein Mitglied einer Microsoft 365-Gruppe, dem  die Berechtigungen **Senden** als oder Senden im Auftrag erteilt wurden, kann E-Mails als Gruppe oder im Namen der Gruppe senden. (Gästen in der Gruppe können diese Berechtigungen nicht erteilt werden.)
+
+In diesem Artikel wird erläutert, wie ein globaler Oder Exchange-Administrator diese Berechtigungen festlegen kann.
   
-Wenn Megan Bowen beispielsweise Teil der Microsoft 365- **Schulungs** Gruppe ist und über die Berechtigung " **Senden als** " für die Gruppe verfügt, wenn Sie eine e-Mail-Nachricht als Gruppe sendet, sieht Sie aus wie die Gruppe " **Training** ", die die e-Mail gesendet hat. 
+Wenn Megan Bowen z. B. Teil der Microsoft 365-Schulungsgruppe ist und über Berechtigungen für die Gruppe "Senden als" verfügt, sieht es so aus, als ob die Schulungsgruppe die E-Mail gesendet hat, wenn sie eine E-Mail als Gruppe sendet.    
   
-Mit der Berechtigung " **Senden im Auftrag** von" kann ein Benutzer e-Mails im Auftrag einer Microsoft 365-Gruppe senden. Wenn beispielsweise Alex Wilber ein Teil der Microsoft 365- **Marketing** Gruppe ist und über die Berechtigung " **Senden im Auftrag** von" verfügt und eine e-Mail als Gruppe sendet, sieht die e-Mail so aus, als ob Sie von **Alex Wilber im Auftrag von Marketing** gesendet wurde.
+Mit der Berechtigung Senden **im Auftrag** kann ein Benutzer E-Mails im Auftrag einer Microsoft 365-Gruppe senden. Wenn Alex Wilber z. B. Teil der Microsoft 365-Marketinggruppe ist und über Berechtigungen zum Senden im Auftrag von Microsoft 365 verfügt und eine E-Mail als Gruppe sendet, sieht die E-Mail so aus, als ob sie von **Alex Wilber** im Auftrag von Marketing gesendet wurde.  
 
 > [!IMPORTANT]
-> Sie können " **Senden als** " oder " **Senden im Auftrag** von" für einen bestimmten Benutzer konfigurieren, jedoch nicht für beide. Wenn Sie beides konfigurieren, ist es standardmäßig **Senden als**.
+> Sie können **Senden als** oder Senden im Auftrag **eines** bestimmten Benutzers konfigurieren, aber nicht beides. Wenn Sie beides konfigurieren, wird standardmäßig **Senden als verwendet.**
 
 > [!TIP]
-> Informationen zum Verwenden von Outlook und Outlook im Internet zum Senden von e-Mails aus einer Gruppe finden Sie unter [Senden von e-Mails aus oder im Namen einer Microsoft 365-Gruppe](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) .
+> Informationen zur Verwendung von Outlook und Outlook im Web zum Senden von E-Mails von einer Gruppe finden Sie unter Senden von E-Mails von oder im Auftrag einer [Microsoft 365-Gruppe.](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)
     
-## <a name="allow-members-to-send-email-as-a-group"></a>Zulassen, dass Mitglieder e-Mails als Gruppe senden
+## <a name="allow-members-to-send-email-as-a-group"></a>Zulassen, dass Mitglieder E-Mails als Gruppe senden
 
-In diesem Abschnitt wird erläutert, wie Sie Benutzern das Senden von e-Mails als Gruppe im [Exchange Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2059104) (EAC) in Exchange Online ermöglichen.
+In diesem Abschnitt wird erläutert, wie Benutzern das Senden von E-Mails als Gruppe im [Exchange Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2059104) (EAC) in Exchange Online ermöglicht wird.
   
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>zu **Empfänger** \> **Gruppen**.
+1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">im Exchange Admin Center</a>zu  \> **Empfängergruppen**.
     
-2. Wählen Sie Edit ![ Group Icon bearbeiten ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) in der Gruppe aus, der Sie Benutzern das Senden als erlauben möchten.   
+2. Wählen **Sie Gruppensymbol** bearbeiten in der Gruppe aus, die Benutzer ![ senden können ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) möchten.   
     
 3. Wählen Sie **Gruppendelegierung** aus.
     
-4. Wählen Sie im Abschnitt **Senden als** das Zeichen aus, **+** um die Benutzer hinzuzufügen, die Sie als Gruppe senden möchten. 
+4. Wählen Sie **im Abschnitt** Senden als das Zeichen aus, um die Benutzer hinzuzufügen, die Sie als Gruppe **+** senden möchten. 
     
     ![Screenshot des Dialogfelds "Senden als"](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
-5. Geben Sie einen Namen ein, um einen Benutzer zu suchen, oder wählen Sie ihn aus der Liste aus. Wählen Sie **OK** und **Speichern** aus.
+5. Geben Sie einen Namen ein, um einen Benutzer zu suchen, oder wählen Sie ihn aus der Liste aus. Wählen Sie **OK** und **Speichern aus.**
     
-    ![Typ zum Suchen oder Auswählen eines Benutzers aus der Liste](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![Geben Sie ein, um einen Benutzer in der Liste zu suchen oder zu wählen.](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
   
-## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>Zulassen, dass Mitglieder e-Mail-Nachrichten im Auftrag einer Gruppe senden
+## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>Zulassen, dass Mitglieder E-Mails im Namen einer Gruppe senden
 
-In diesem Abschnitt wird erläutert, wie Sie Benutzern das Senden von e-Mails im Namen einer Gruppe im Exchange Admin Center (EAC) in Exchange Online ermöglichen.
+In diesem Abschnitt wird erläutert, wie Benutzern das Senden von E-Mails im Namen einer Gruppe im Exchange Admin Center (EAC) in Exchange Online ermöglicht wird.
   
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>zu **Empfänger** \> **Gruppen**.
+1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">im Exchange Admin Center</a>zu  \> **Empfängergruppen**.
     
-2. Wählen  Sie Edit ![ Group Icon bearbeiten ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) in der Gruppe aus, der Sie Benutzern das Senden als erlauben möchten. 
+2. Wählen **Sie Gruppensymbol** bearbeiten in der Gruppe aus, die Benutzer ![ senden können ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) möchten. 
     
 3. Wählen Sie **Gruppendelegierung** aus.
     
-4. Wählen Sie im Abschnitt Senden im Auftrag das **+** Vorzeichen aus, um die Benutzer hinzuzufügen, die Sie als Gruppe senden möchten. 
+4. Wählen Sie im Abschnitt Senden im Auftrag das Zeichen aus, um die Benutzer hinzuzufügen, die Sie **+** als Gruppe senden möchten. 
     
-    ![Screenshot des Dialogfelds "Senden im Auftrag von"](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![Screenshot des Sendens im Auftrag des Dialogfelds](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
-5. Geben Sie einen Namen ein, um einen Benutzer zu suchen, oder wählen Sie ihn aus der Liste aus. Wählen Sie **OK** und **Speichern** aus.
+5. Geben Sie einen Namen ein, um einen Benutzer zu suchen, oder wählen Sie ihn aus der Liste aus. Wählen Sie **OK** und **Speichern aus.**
     
-    ![Typ zum Suchen oder Auswählen eines Benutzers aus der Liste](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![Geben Sie ein, um einen Benutzer in der Liste zu suchen oder zu wählen.](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Planung der Collaboration-Steuerung Schritt für Schritt](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Schritt-für-Schritt-Planung für die Zusammenarbeitsgovernance](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Erstellen eines Steuerungsplans für die Zusammenarbeit](collaboration-governance-first.md)
+[Erstellen eines Plans für die Zusammenarbeitsgovernance](collaboration-governance-first.md)
 
 [Weitere Informationen zu Microsoft 365-Gruppen](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 

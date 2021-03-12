@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Verschaffen Sie sich einen Überblick über das Microsoft 365 Message Center und seine Rolle bei der Änderungsverwaltung.
-ms.openlocfilehash: 6a7c547a0423a7e2bda2d3ced45d285ee55075ca
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 905aa411e931f802735c913922a6431e7466cdb5
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405912"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727223"
 ---
 # <a name="message-center"></a>Nachrichtencenter
 
@@ -72,7 +72,7 @@ Sie können auch die [Microsoft 365 Admin-App](https://go.microsoft.com/fwlink/p
 
 ### <a name="messages"></a>Nachrichten
 
-Das Nachrichtencenter zeigt eine Ansicht aller aktiven Nachrichten in einem Tabellenformat an. Standardmäßig wird die neueste Nachricht am Anfang der Liste angezeigt. Sie können Dienst **auswählen,** um Nachrichten für verschiedene Dienste wie Microsoft 365 Apps, SharePoint Online usw. zu sehen.   Unter **Tag** können Sie **Administrator-Auswirkung,** **Datenschutz,** **Featureupdate,** **Hauptupdate,** **Neues Feature** oder Nachrichten für **Benutzerfolgen** auswählen. Unter **Nachrichtenstatus** können Sie **Favoriten,** **Ungelesene** oder **Aktualisierte Nachrichten** auswählen.
+Das Nachrichtencenter zeigt eine Ansicht aller aktiven Nachrichten in einem Tabellenformat an. Standardmäßig wird die neueste Nachricht am Anfang der Liste angezeigt. Sie können Dienst **auswählen,** um Nachrichten für verschiedene Dienste wie Microsoft 365 Apps, SharePoint Online usw. zu sehen.   Unter **Tag** können Sie **Administrator-Auswirkung,** **Datenschutz,** **Featureupdate,** **Hauptupdate,** **Neues Feature,** **Rente** oder **Benutzer-Auswirkungsmeldungen** auswählen. Unter **Nachrichtenstatus** können Sie **Favoriten,** **Ungelesene** oder **Aktualisierte Nachrichten** auswählen.
 
 Auf der Registerkarte Archiv werden die archivierten Nachrichten angezeigt. Wählen Sie zum Archivieren einer Nachricht im Nachrichtenbereich Archiv **aus.**
 
@@ -90,7 +90,7 @@ Hier finden Sie eine kurze Übersicht über die Informationen, die in den einzel
 |Nachrichtentitel  <br/> |Nachrichtentitel sind kurze Beschreibungen bevorstehender Änderungen. Wenn der vollständige Titel nicht angezeigt wird, zeigen Sie mit dem Cursor auf ihn, und der gesamte Titel wird in einem Popupfeld angezeigt.  <br/> |
 |Dienst <br/> |Symbole geben die Anwendung an, auf die die Nachricht angewendet wird.<br/> |
 |Weitere Optionen <br/> |Mit weiteren Optionen können Sie eine Nachricht schließen, als gelesen oder ungelesen markieren oder sie für einen anderen Administrator freigeben. Wählen Sie zum Wiederherstellen einer archivierten Nachricht die Registerkarte **Archiv** aus, aktivieren Sie das Kontrollkästchen neben der Nachricht, und wählen Sie **Wiederherstellen aus.** <br/> |
-|Tags <br/> |Sie können Tags aus der **Dropdownliste Tag** auswählen, um Nachrichten zu filtern. Die verfügbaren Tags sind: **Auswirkungen auf den Administrator**, **Hauptupdate**, **Datenschutz**, **Featureupdate**, **Neues Feature** und Auswirkungen auf **den Benutzer**. <br/> |
+|Tags <br/> |Sie können Tags aus der **Dropdownliste Tag** auswählen, um Nachrichten zu filtern. Die verfügbaren Tags sind: Auswirkungen auf **Den** Administrator , **Hauptupdate** **,** Datenschutz , **Featureupdate**, **Neues Feature**, **Rente** und Auswirkungen auf den **Benutzer**. <br/> |
 |Kategorie  <br/> | Dies wird standardmäßig nicht angezeigt, kann aber im Bereich Spalten **auswählen angegeben** werden. Nachrichten werden durch eine der folgenden drei Kategorien identifiziert: <br/><br/> **Verhindern oder Beheben von Problemen**: Informiert Sie über bekannte Probleme, die Ihre Organisation betreffen, und erfordert möglicherweise, dass Sie Maßnahmen ergreifen, um Betriebsunterbrechungen zu vermeiden. Probleme zu verhindern oder zu beheben unterscheiden sich von Dienstintehbezustandsmeldungen, da sie Sie dazu anfingen, proaktiv zu sein, um Probleme zu vermeiden. <br/> <br/> **Plan for change**: Informiert Sie über Änderungen an Microsoft 365, für die Sie möglicherweise handeln müssen, um Betriebsunterbrechungen zu vermeiden. Wir teilen Ihnen beispielsweise Änderungen an Systemanforderungen oder features mit, die entfernt werden. Wir versuchen, mindestens 30 Tage Benachrichtigung über änderungen zu geben, die einen Administrator zum Ausführen des Diensts erforderlich machen. <br/> <br/> **Bleiben Sie auf** dem Laufenden: Informiert Sie über neue oder aktualisierte Features, die wir in Ihrer Organisation aktivieren. Die Features werden in der Regel zuerst in [der Microsoft 365 Roadmap angekündigt.](https://go.microsoft.com/fwlink/?linkid=2070821) <br/><br/>Kann Sie auch über die geplante Wartung in Übereinstimmung mit unserem Servicelevelvertrag wissen. Geplante Wartung kann zu Betriebszeit führen, wenn Sie oder Ihre Benutzer nicht auf Microsoft 365, ein bestimmtes Feature oder einen Dienst wie E-Mail oder OneDrive for Business zugreifen können.  <br/> |
 |Akt. nach  <br/> |Wir haben hier nur Datumsangaben, wenn wir eine Änderung vor nehmen, die erfordert, dass Sie eine Aktion bis zu einem bestimmten Stichtag ergreifen. Da wir die Spalte **Act by** nur selten verwenden, sollten Sie, wenn Hier etwas angezeigt wird, besonders darauf achten.  <br/> |
 |Zuletzt aktualisiert  <br/> |Datum, an dem die Nachricht veröffentlicht oder zuletzt aktualisiert wurde.  <br/> |

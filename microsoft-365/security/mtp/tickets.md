@@ -1,7 +1,7 @@
 ---
 title: Integrieren von ServiceNow-Tickets in das Microsoft 365 Security Center und Compliance Center
-description: Erfahren Sie, wie Sie Im Microsoft 365 Security Center und Compliance Center Tickets in ServiceNow erstellen und nachverfolgen.
-keywords: Security, Microsoft 365, M365, Compliance, Compliance Center, Security Center, ServiceNow, Tickets, Aufgaben, SNOW, Verbindung
+description: Erfahren Sie, wie Sie Tickets im Microsoft 365 Security Center und Compliance Center in ServiceNow erstellen und nachverfolgen.
+keywords: security, Microsoft 365, M365, compliance, compliance center, security center, ServiceNow, tickets, tasks, SNOW, connection
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,21 +20,19 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 4e647c2e526bb5cf99b1f40c07fc542315ebcd01
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 74d406e46e223a065e0931c081cf1a039fc2a8b9
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925482"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741543"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrieren von ServiceNow-Tickets in das Microsoft 365 Security Center und Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 >[!CAUTION]
->**Der Vorschauzeitraum für den ServiceNow Connector ist beendet.**<br>
+>**Der Vorschauzeitraum für den ServiceNow-Connector ist beendet.**<br>
 >Diese Funktion ist nicht mehr verfügbar. Vielen Dank für Ihr Feedback und ihren weiteren Support, während wir die nächsten Schritte festlegen.
 
-ServiceNow ist eine beliebte Cloud Computing-Plattform, die Unternehmen bei der Verwaltung digitaler Workflows für Unternehmensvorgänge unterstützt. Die Plattform "Jetzt" verfügt über IT-Workflows, Mitarbeiterworkflows und Kundenworkflows. [Weitere Informationen zu ServiceNow](https://www.servicenow.com/)
-
-Microsoft hat sich mit ServiceNow zusammen gefunden, um it-Administratoren das Verwalten ihrer Tickets und Aufgaben auf beiden Plattformen zu erleichtern. [Das Microsoft 365 Security Center](overview-security-center.md) und das [Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) wurden um die Möglichkeit erweitert, Tickets in ServiceNow systemeigene zu erstellen und nachverfolgt zu werden.
+ServiceNow ist eine beliebte Cloud Computing-Plattform, die Unternehmen dabei hilft, digitale Workflows für den Unternehmensbetrieb zu verwalten. Ihre Now-Plattform verfügt über IT-Workflows, Mitarbeiterworkflows und Kundenworkflows.
