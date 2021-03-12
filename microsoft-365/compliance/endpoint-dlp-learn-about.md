@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 Endpunkt-DLP erweitert die Überwachung von Dateiaktivitäten sowie schützende Maßnahmen für diese Dateien auf Endpunkte. Die Dateien werden in den Microsoft 365 Compliance-Lösungen angezeigt. '
-ms.openlocfilehash: d5394499b5514e6e0a49f958a62e70cde61ebf44
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: c4f0d10808d564fc0ee19510c25d33caba0471ff
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279309"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741586"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informationen zu Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust)
 
@@ -43,6 +43,8 @@ Mit Microsoft Endpunkt-DLP können Sie die folgenden Aktivitätstypen überwache
 |Auf USB-Wechseldatenträger kopieren |Erkennt, wenn ein Benutzer versucht, ein Element oder Informationen auf einen Wechseldatenträger oder ein USB-Gerät zu kopieren.         | überwachbar und einschränkbar|
 |Auf eine Netzwerkfreigabe kopieren    |Erkennt, wenn ein Benutzer versucht, ein Element auf eine Netzwerkfreigabe oder ein zugeordnetes Netzlaufwerk zu kopieren.         |überwachbar und einschränkbar|
 |Dokument drucken    |Erkennt, wenn ein Benutzer versucht, ein geschütztes Element auf einem lokalen oder Netzwerkdrucker zu drucken.| überwachbar und einschränkbar         |
+|In eine Remotesitzung kopieren|Erkennt, wenn ein Benutzer versucht, ein Element in eine Remote-Desktop-Sitzung zu kopieren |  überwachbar und einschränkbar|
+|Auf ein Bluetooth-Gerät kopieren|Erkennt, wenn ein Benutzer versucht, ein Element in eine nicht zugelassene Bluetooth-App zu kopieren (wie in der Liste der nicht zugelassenen Bluetooth-Apps in den Endpunkt DLP-Einstellungen definiert).| überwachbar und einschränkbar|
 |Element erstellen|Erkennt, wenn ein Benutzer ein Element erstellt.| überwachbar|
 |Element umbenennen|Erkennt, wenn ein Benutzer ein Element umbenennt.| überwachbar|
 
