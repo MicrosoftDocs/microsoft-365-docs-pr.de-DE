@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen, wie die Aufbewahrung für SharePoint und OneDrive funktioniert.
-ms.openlocfilehash: ff4b4f517daccbce908411f3b5a62c0a1f11ba57
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: dd1260df23579ad2e6605805bafe9e36d2274a8e
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597175"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727400"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informationen zur Aufbewahrung für SharePoint und OneDrive
 
@@ -67,8 +67,10 @@ Elemente in SharePoint, die eine Standard-Aufbewahrungsbezeichnung haben (die da
 Um diesen Inhalt zu bewahren, wenn ein Benutzer versucht, ihn zu ändern oder zu löschen, wird überprüft, ob der Inhalt geändert wurde, seit die Aufbewahrungseinstellungen angewendet wurden. Wenn dies die erste Änderung seit Anwendung der Aufbewahrungseinstellungen ist, wird der Inhalt in das permanente Dokumentarchiv kopiert. Dies ermöglicht dem Benutzer das Ändern oder Löschen des ursprünglichen Inhalts. Jeder Inhalt in einer Websitesammlung kann unabhängig von den Aufbewahrungseinstellungen in das permanente Dokumentenarchiv kopiert werden.
   
 Ein Zeitgeberauftrag bereinigt in regelmäßigen Abständen das permanente Dokumentarchiv. Inhalte, die sich seit mehr als 30 Tagen im permanenten Dokumentarchiv befinden, werden mit allen von den Aufbewahrungseinstellungen für diese Inhalte verwendeten Abfragen verglichen. Inhalte, die älter als die darin konfigurierte Aufbewahrungszeit sind, werden dann aus dem permanenten Dokumentarchiv sowie vom ursprünglichen Speicherort gelöscht, sofern sie dort noch vorhanden sind. Dieser Zeitgeberauftrag wird alle sieben Tage ausgeführt, was bedeutet, dass es zusammen mit den mindestens 30 Tagen bis zu 37 Tage dauern kann, bis Inhalte aus dem permanenten Dokumentarchiv gelöscht werden.
-  
-Dieses Verhalten gilt für Inhalte, die bei Anwendung der Aufbewahrungseinstellungen vorhanden sind. Außerdem werden für Aufbewahrungsrichtlinien alle neuen Inhalte, die erstellt oder der Websitesammlung hinzugefügt werden, nachdem sie in die Richtlinie eingeschlossen wurden, auch nach dem Löschen aufbewahrt. Neue Inhalte werden jedoch nicht bei der ersten Bearbeitung in das permanente Dokumentarchiv kopiert, sondern nur, wenn sie gelöscht werden. Wenn Sie alle Versionen einer Datei aufbewahren möchten, müssen Sie die [Versionsverwaltung](#how-retention-works-with-document-versions) aktivieren.
+
+Während Dateien im permanenten Dokumentarchiv gespeichert werden, können Administratoren die SharePoint-Site oder das OneDrive-Konto des Inhalts nicht löschen.
+
+Dieses Verhalten beim Kopieren von Dateien in das permanente Dokumentenarchiv gilt für Inhalte, die zum Zeitpunkt der Anwendung der Aufbewahrungseinstellungen vorhanden waren. Darüber hinaus werden für Aufbewahrungsrichtlinien alle neuen Inhalte, die nach dem Einfügen in die Richtlinie erstellt oder zur Site hinzugefügt wurden, in dem permanenten Dokumentenarchiv beibehalten. Neue Inhalte werden jedoch nicht bei der ersten Bearbeitung in das permanente Dokumentarchiv kopiert, sondern nur, wenn sie gelöscht werden. Wenn Sie alle Versionen einer Datei aufbewahren möchten, müssen Sie die [Versionsverwaltung](#how-retention-works-with-document-versions) aktivieren.
   
 Benutzer sehen eine Fehlermeldung, wenn sie versuchen, eine Bibliothek, eine Liste, einen Ordner oder eine Website zu löschen, die der Aufbewahrungspflicht unterliegen. Sie können einen Ordner löschen, wenn sie zuerst alle aufbewahrungspflichtigen Dateien im Ordner verschieben oder löschen.
 
