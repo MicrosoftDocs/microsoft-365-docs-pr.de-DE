@@ -16,12 +16,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie bestimmte Benutzergruppen mit Benutzertags in Microsoft Defender für Office 365 Plan 2 identifizieren. Die Tagfilterung ist in Warnungen, Berichten und Untersuchungen in Microsoft Defender für Office 365 verfügbar, um die markierten Benutzer schnell zu identifizieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e5ddffad6405f48a9af55b5123729eb256064a7
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 80bd360888be3aeea42da6f9b58a119a9752d382
+ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453645"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50758892"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Benutzertags in Microsoft Defender für Office 365
 
@@ -45,6 +45,8 @@ Nachdem Sie Systemtags oder benutzerdefinierte Tags auf Benutzer angewendet habe
 
 In diesem Artikel wird erläutert, wie Sie Benutzertags im Security & Compliance Center konfigurieren. Es gibt keine Cmdlets im Security & Compliance Center zum Verwalten von Benutzertags.
 
+Informationen dazu, wie Benutzertags Teil der Strategie zum Schutz von Benutzerkonten mit hoher Auswirkung sind, finden Sie unter Sicherheitsempfehlungen für Prioritätskonten [in Microsoft 365](security-recommendations-for-priority-accounts.md).
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
 - Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Öffnen Sie , um direkt zur **Seite Benutzertags zu** <https://protection.office.com/userTags> wechseln.
@@ -63,9 +65,9 @@ In diesem Artikel wird erläutert, wie Sie Benutzertags im Security & Compliance
 
 - Sie können auch Prioritätskonten im Microsoft 365 Admin Center verwalten und überwachen. Anweisungen finden Sie unter [Verwalten und Überwachen von Prioritätskonten](../../admin/setup/priority-accounts.md).
 
-## <a name="use-the-security-center-to-create-user-tags"></a>Erstellen von Benutzertags mithilfe des Sicherheitscenters
+## <a name="use-the-security--compliance-center-to-create-user-tags"></a>Erstellen von Benutzertags mithilfe & Security & Compliance Center
 
-1. Wechseln Sie im Security Center zu **Benutzertags für die Bedrohungsverwaltung.** \> 
+1. Wechseln Sie im Security & Compliance Center zu **Benutzertags für die Bedrohungsverwaltung.** \> 
 
 2. Klicken Sie **auf der** geöffneten Seite Benutzertags auf **Tag erstellen.**
 
@@ -94,9 +96,9 @@ In diesem Artikel wird erläutert, wie Sie Benutzertags im Security & Compliance
 
    Klicken Sie nach Abschluss des Abschlusses auf **Absenden**.
 
-## <a name="use-the-security-center-to-view-user-tags"></a>Anzeigen von Benutzertags mithilfe des Sicherheitscenters
+## <a name="use-the-security--compliance-center-to-view-user-tags"></a>Verwenden des Security & Compliance Center zum Anzeigen von Benutzertags
 
-1. Wechseln Sie im Security Center zu **Benutzertags für die Bedrohungsverwaltung.** \> 
+1. Wechseln Sie im Security & Compliance Center zu **Benutzertags für die Bedrohungsverwaltung.** \> 
 
 2. Wählen Sie **auf** der geöffneten Seite Benutzertags das Benutzertag aus, das Sie anzeigen möchten (klicken Sie nicht auf das Kontrollkästchen).
 
@@ -104,9 +106,9 @@ In diesem Artikel wird erläutert, wie Sie Benutzertags im Security & Compliance
 
    Klicken Sie nach Abschluss des Vorgangs auf **Schließen**.
 
-## <a name="use-the-security-center-to-modify-user-tags"></a>Verwenden des Sicherheitscenters zum Ändern von Benutzertags
+## <a name="use-the-security--compliance-center-to-modify-user-tags"></a>Verwenden des Security & Compliance Center zum Ändern von Benutzertags
 
-1. Wechseln Sie im Security Center zu **Benutzertags für die Bedrohungsverwaltung.** \> 
+1. Wechseln Sie im Security & Compliance Center zu **Benutzertags für die Bedrohungsverwaltung.** \> 
 
 2. Wählen Sie **auf der** geöffneten Seite Benutzertags das Benutzertag aus, das Sie anzeigen möchten, und klicken Sie dann auf **Tag bearbeiten**.
 
@@ -114,10 +116,10 @@ In diesem Artikel wird erläutert, wie Sie Benutzertags im Security & Compliance
 
    Klicken Sie nach Abschluss des Abschlusses auf **Absenden**.
 
-## <a name="use-the-security-center-to-remove-user-tags"></a>Entfernen von Benutzertags mithilfe des Sicherheitscenters
+## <a name="use-the-security--compliance-center-to-remove-user-tags"></a>Verwenden des Security & Compliance Center zum Entfernen von Benutzertags
 
 **Hinweis:** Sie können das integrierte Prioritätskontotag **nicht** entfernen.
 
-1. Wechseln Sie im Security Center zu **Benutzertags für die Bedrohungsverwaltung.** \> 
+1. Wechseln Sie im Security & Compliance Center zu **Benutzertags für die Bedrohungsverwaltung.** \> 
 
 2. Wählen Sie **auf** der geöffneten Seite Benutzertags das Benutzertag aus, das Sie entfernen möchten, klicken Sie auf Tag **löschen,** und wählen Sie dann **Ja,** entfernen in der angezeigten Warnung aus.
