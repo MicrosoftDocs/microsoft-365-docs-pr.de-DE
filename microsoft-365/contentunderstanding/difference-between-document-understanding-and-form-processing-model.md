@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Beschreibung des Unterschieds zwischen Dokumentverständnis- und Formularverarbeitungsmodellen
-ms.openlocfilehash: 555dfa7d76335a3b943e860e5f41ed64c9d3e874
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: a50941ec117480be586ba828e7b49c4a88a310ab
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50596980"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712294"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Unterschied zwischen Dokumentverständnis- und Formularverarbeitungsmodellen 
 
@@ -72,17 +72,17 @@ Verwenden Sie die folgende Tabelle, um zu verstehen, wann Sie die Formularverarb
 
 | Feature | Formularverarbeitung | Dokumentverständnis |
 | ------- | ------- | ------- |
-| Modelltyp – wann ist welcher zu verwenden | Wird für halbstrukturierte Dateiformate verwendet, beispielsweise für Office-Dokumente, bei denen es Unterschiede im Layout gibt, aber dennoch ähnliche Informationen extrahiert werden sollen. | Wird für unstrukturierte Dateiformate verwendet, beispielsweise PDFs für Formularinhalte wie Rechnungen oder Bestellungen, bei denen das Layout und die Formatierung ähnlich sind. |
-| Modellbildung | Im AI Builder erstelltes Modell mit nahtlosem Zugriff aus der SharePoint-Dokumentenbibliothek.| Modell erstellt in nativer Schnittstelle, die in SharePoint Content Center eingebaut ist.|
-| Klassifizierungstyp| Einstellbarer Klassifizierer, bei dem maschinelles Lernen verwendet wird, um dem System Hinweise zu geben, welche Daten zu extrahieren sind.| Trainierbarer Klassifizierer mit optionalen Extraktoren, der mit Hilfe von maschinellem Lernen festlegt, an welcher Stelle des Dokuments welche Daten zu extrahieren sind.|
-| Speicherorte | Beschränkt auf eine einzige Dokumentenbibliothek, es sei denn, Sie verwenden Power-Platform zum Abrufen aus CDS.| Kann auf mehrere Bibliotheken angewendet werden.|
+| Modelltyp – wann ist welcher zu verwenden | Wird für semistrukturierte Dateiformate verwendet, beispielsweise PDFs für Formularinhalte wie Rechnungen oder Bestellungen, bei denen das Layout und die Formatierung ähnlich sind.  | Wird für halbstrukturierte Dateiformate verwendet, beispielsweise für Office-Dokumente, bei denen es Unterschiede im Layout gibt, aber dennoch ähnliche Informationen extrahiert werden sollen. |
+| Modellbildung | Im KI-Generator erstelltes Modell mit nahtlosem Zugriff aus der SharePoint-Dokumentenbibliothek.| In SharePoint erstelltes Modell auf einer neuen Website – dem Inhaltscenter. |
+| Klassifizierungstyp| Einstellbarer Klassifizierer, der verwendet wird, um dem System Hinweise zu geben, welche Daten zu extrahieren sind.| Trainierbarer Klassifizierer mit optionalen Extraktoren, der mit Hilfe von maschinellem Lernen festlegt, an welcher Stelle des Dokuments welche Daten zu extrahieren sind.|
+| Speicherorte | Für eine einzige Dokumentbibliothek trainiert.| Kann auf mehrere Bibliotheken angewendet werden.|
 | Unterstützte Dateitypen| Training im Format PDF, JPG, PNG, insgesamt 50 MB und 500 Seiten.| Training auf 5–10 PDF-, Office- oder E-Mail-Dateien, einschließlich negativer Beispiele.<br>Office-Dateien werden bei 64k Zeichen abgeschnitten. OCR-gescannte Dateien sind auf 20 Seiten begrenzt.|
-| Integrieren mit verwalteten Metadaten | Nein | Ja, durch Einstellung auf den Spalten der Dokumentenbibliothek vor dem Training des Modells.|
-| Integration von Compliance-Features, wenn Microsoft Information Protection aktiviert ist | Aufbewahrungsbezeichnungen einstellen.<br>Vertraulichkeitsbezeichnungen können bald eingestellt werden. | Aufbewahrungsbezeichnungen einstellen.<br>Vertraulichkeitsbezeichnungen können bald eingestellt werden. |
+| Integrieren mit verwalteten Metadaten | Nein | Ja, durch das Training der Entitätsextraktionsfunktion, die sich auf ein konfiguriertes verwaltetes Metadatenfeld bezieht.|
+| Integration von Compliance-Features, wenn Microsoft Information Protection aktiviert ist | Veröffentlichte Aufbewahrungsbezeichnungen festlegen.<br>Vertraulichkeitsbezeichnungen können bald eingestellt werden. | Veröffentlichte Aufbewahrungsbezeichnungen festlegen.<br>Vertraulichkeitsbezeichnungen können bald eingestellt werden. |
 | Unterstützte Regionen| Die Formularverarbeitung basiert auf der Power-Platform. Informationen zur globalen Verfügbarkeit von Power-Platform und AI Builder finden Sie unter [Verfügbarkeit von Power-Platform](https://dynamics.microsoft.com/geographic-availability/). | In allen Regionen verfügbar.|
-| Transaktionskosten | Verwendet AI Builder-Kreditpunkte.<br>Kreditpunkte können in Stapeln von 1 Mio. gekauft werden.<br>Beim Kauf von 300+ SharePoint Syntex Lizenzen sind 1 Mio. Kreditpunkte enthalten.<br>1 Mio. Kreditpunkte ermöglichen die Verarbeitung von 2000 Dateiseiten.| Nicht zutreffend |
-| Kapazität | Bereitstellung gegen die standardmäßige allgemeine Datendienstumgebung.| Keine Kapazitätsbeschränkungen.|
-| Unterstützte Sprachen| Englisch <br>Erscheint später im Jahr 2021: Spanisch, Deutsch, Französisch, Italienisch| Die Modelle arbeiten mit allen Sprachen des lateinischen Alphabets. Zusätzlich zu Englisch: Deutsch, Schwedisch, Französisch, Spanisch, Italienisch und Portugiesisch.|
+| Transaktionskosten | Verwendet AI Builder-Kreditpunkte.<br>Kreditpunkte können in Stapeln von 1 Mio. gekauft werden.<br>Beim Kauf von 300+ SharePoint Syntex Lizenzen sind 1 Mio. Kreditpunkte enthalten.<br>1 Mio. Kreditpunkte ermöglichen die Verarbeitung von 2000 Dateiseiten.<br>| Nicht zutreffend |
+| Kapazität | Verwendet die Standard-Power Platform-Umgebung (benutzerdefinierte Umgebungen mit unterstützter Datenverse-Datenbank). | Hat keine Kapazitätsbeschränkungen.|
+| Unterstützte Sprachen| Englisch <br>Später in 2021: Sprachen des lateinischen Alphabets | Die Modelle arbeiten mit allen Sprachen des lateinischen Alphabets. Zusätzlich zu Englisch: Deutsch, Schwedisch, Französisch, Spanisch, Italienisch und Portugiesisch.|
 
 ## <a name="see-also"></a>Siehe auch
 [Schulungen: Verbessern der Geschäftsergebnisse mit AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)

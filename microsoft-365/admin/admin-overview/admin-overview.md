@@ -19,10 +19,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
-description: 'Erfahren Sie mehr über das Microsoft 365 Admin Center: Wie funktioniert die Anmeldung?, Wer ist Ihr Administrator?, und sehen Sie sich eine Videoeinführung dazu an.'
+description: 'Erfahren Sie mehr über das Microsoft 365 Admin Center: Wie Sie sich anmelden, wer Ihr Administrator ist, und sehen Sie sich dazu eine Videoeinführung an.'
 ms.openlocfilehash: 6db1ea88d9a9aeb003f16c746a8fe0a5b4d87a42
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48646595"
@@ -30,7 +30,7 @@ ms.locfileid: "48646595"
 # <a name="admin-center-overview"></a>Übersicht über das Admin Center 
 
   
-Wenn Sie einen [Microsoft 365 apps for Business-Plan](https://go.microsoft.com/fwlink/?linkid=856886) oder einen [Microsoft 365 for Business](https://www.microsoft.com/microsoft-365/business)-Plan kaufen, erhalten Sie ein spezielles Konto mit Administratorberechtigungen. Dieses Konto wird als Administratorkonto bezeichnet.
+Wenn Sie einen [Microsoft 365 Apps for Business-Plan](https://go.microsoft.com/fwlink/?linkid=856886) oder einen [Microsoft 365 für Unternehmen-Plan](https://www.microsoft.com/microsoft-365/business) erwerben, stellen wir Ihnen ein spezielles Konto mit Administratorberechtigungen zur Verfügung. Dieses Konto wird als Administratorkonto bezeichnet.
   
 Über dieses Konto können Sie auf das Microsoft 365 Admin Center zugreifen, um Ihr Unternehmen zu verwalten: Benutzer hinzufügen, Ihr Abonnement verwalten, Kennwörter zurücksetzen und mehr. Probieren Sie es aus!
   
@@ -67,6 +67,6 @@ Sie suchen Ihren Administrator, damit dieser Ihr Kennwort zurücksetzt, ein Kont
     
 - **Kleine Unternehmen**: Wenden Sie sich an den Geschäftsinhaber/-mitbesitzer. Häufig vergeben diese Personen die Administratorberechtigungen an den IT-Berater, der sämtliche Computerwartungsaufgaben für das Unternehmen erledigt. 
     
-Standardmäßig erhält die Person, die sich für ein Microsoft 365 for Business-Abonnement registriert und kauft, Administratorberechtigungen. Diese Person kann anderen Personen Administratorberechtigungen zuweisen, um Sie bei der Verwaltung von Microsoft 365 für Ihre Organisation zu unterstützen.
+Standardmäßig erhält die Person, die sich registriert und ein Microsoft 365 für Unternehmen-Abonnement erwirbt, die Administratorberechtigungen. Diese Person kann anderen Personen Administratorberechtigungen zuweisen, damit diese Microsoft 365 für ihre Organisation verwalten können.
   
 Wenn Sie keine Ahnung haben, wen Sie an Ihrem Arbeitsplatz bzw. in Ihrer Schule oder Universität um Hilfe bitten sollen, wenden Sie sich an die Person, von der Sie Ihr Benutzerkonto und Ihr Kennwort erhalten haben.
