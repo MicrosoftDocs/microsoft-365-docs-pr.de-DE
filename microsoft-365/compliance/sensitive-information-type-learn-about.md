@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 90b545f60c68ac6b76509e14daf1258df66e1c63
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 13dee9d5744639149960a16adcf36b7ebe5718f7
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741532"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766400"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Weitere Informationen zu Typen vertraulicher Informationen
 
@@ -129,6 +129,7 @@ Sie sollten Muster mit hoher Konfidenzstufe mit niedrigen Zählungen(z. B. fünf
 > - Alle Richtlinien mit minimaler Genauigkeit oder benutzerdefinierten SIT-Mustern mit Konfidenzstufen zwischen 76 und 100 werden einer hohen Zuverlässigkeit zugeordnet. 
 > - Alle Richtlinien mit minimaler Genauigkeit oder benutzerdefinierten SIT-Mustern mit Konfidenzstufen zwischen 66 und 75 werden mittlerer Zuverlässigkeit zugeordnet.
 > - Alle Richtlinien mit minimaler Genauigkeit oder benutzerdefinierten SIT-Mustern mit Konfidenzstufen kleiner oder gleich 65 werden einer niedrigen Zuverlässigkeit zugeordnet. 
+
 ## <a name="creating-custom-sensitive-information-types"></a>Benutzerdefinierte Typen vertraulicher Informationen erstellen
 
 Zum Erstellen von benutzerdefinierten Typen für vertrauliche Informationen im Security & Compliance Center stehen Ihnen mehrere Optionen zur Verfügung:
