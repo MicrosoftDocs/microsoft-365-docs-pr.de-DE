@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date: 04/17/2019
+ms.date: ''
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie benutzerdefinierten Typen für vertrauliche Informationen für DLP in der grafischen Benutzeroberfläche im Security & Compliance Center erstellen, ändern, entfernen und testen können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 94f0f6b68e9f952e0d52ce7cb71ccf03913584f4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 049c3c123053b4bd833ea95a2413b81366586870
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929351"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766366"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Erste Schritte mit benutzerdefinierten Typen vertraulicher Informationen
 
@@ -64,7 +64,7 @@ Verwenden Sie dieses Verfahren, um einen neuen Typ vertraulicher Informationen z
 5. Wählen Sie und definieren Sie das **Primäre Element**. Das primäre Element kann ein **Regulärer Ausdruck** mit einem optionalen Validator, eine **Schlüsselwortliste**, ein **Schlüsselwörterbuch**, oder eine der vorkonfigurierten **Funktionen** sein. Weitere Informationen zu DLP-Funktionen finden Sie unter [Wonach die DLP-Funktionen suchen](what-the-dlp-functions-look-for.md).
 6. Füllen Sie einen Wert für den **Zeichenabstand** aus.
 7. (Optional) Wenn Sie welche haben, fügen Sie unterstützende Elemente hinzu. Unterstützende Elemente können ein regulärer Ausdruck mit einem optionalen Validator, eine Schlüsselwortliste, ein Schlüsselwörterbuch, oder eine der vordefinierten Funktionen sein. 
-8.  (Optional) Fügen Sie zusätzliche Prüfungen aus der Liste der verfügbaren Prüfungen hinzu.
+8.  (Optional) Fügen Sie [**zusätzliche Prüfungen**](#more-information-on-additional-checks) aus der Liste der verfügbaren Prüfungen hinzu.
 9. Wählen Sie **Erstellen**.
 10. Wählen Sie **Weiter** aus.
 11. Wählen Sie das **empfohlene Konfidenzniveau** für diesen Typ vertraulicher Informationen aus.
@@ -73,7 +73,7 @@ Verwenden Sie dieses Verfahren, um einen neuen Typ vertraulicher Informationen z
 > [!IMPORTANT]
 > Microsoft 365 verwendet den Suchcrawler zum Erkennen und Klassifizieren vertraulicher Informationen in SharePoint Online- und OneDrive for Business-Websites. Um den neuen benutzerdefinierten vertraulichen Informationstyp in vorhandenen Inhalten zu identifizieren, müssen die Inhalte erneut durchforstet werden. Inhalte werden basierend auf einem Zeitplan durchforstet, aber Sie können Inhalte für eine Websitesammlung, Liste oder Bibliothek manuell erneut durchforsten. Weitere Informationen finden Sie unter [Manuelles Anfordern des Durchforstens und des erneuten Indizierens einer Website, Bibliothek oder Liste](https://docs.microsoft.com/sharepoint/crawl-site-content).
 
-13. Auf der Seite **Datenklassifizierung** werden Ihnen alle Typen vertraulicher Informationen aufgelistet angezeigt. Wählen Sie **Aktualisieren** und suchen Sie dann nach dem Typ vertraulicher Informationen, den Sie gerade erstellt haben.
+13. Auf der Seite **Datenklassifizierung** werden Ihnen alle Typen vertraulicher Informationen aufgelistet angezeigt. Wählen Sie **Aktualisieren** und suchen Sie dann nach dem Typ vertraulicher Informationen, den Sie erstellt haben.
 
 ## <a name="test-a-sensitive-information-type"></a>Einen vertraulichen Informationstyp testen
 
@@ -87,7 +87,7 @@ Sie können jeden Typ vertraulicher Informationen in der Liste testen. Wir empfe
 ## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>Ändern von benutzerdefinierten Typen vertraulicher Informationen im Compliance Center
 
 1. Wechseln Sie im Compliance Center zu **Datenklassifizierung** \> **Typen vertraulicher Informationen** und wählen Sie den Typ vertraulicher Informationen aus der Liste aus, die Sie ändern möchten, wählen Sie **Bearbeiten**.
-2. Sie können andere Muster mit einzigartigen primären und unterstützenden Elementen, Konfidenzniveaus, Zeichenabstand und zusätzlichen Prüfungen hinzufügen, oder die bereits vorhandenen bearbeiten/entfernen. Weitere Informationen finden Sie unter [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](#create-a-custom-sensitive-information-type).
+2. Sie können andere Muster mit einzigartigen primären und unterstützenden Elementen, Konfidenzniveaus, Zeichenabstand und [**zusätzlichen Prüfungen**](#more-information-on-additional-checks) hinzufügen, oder die bereits vorhandenen bearbeiten/entfernen.
 
 ## <a name="remove-custom-sensitive-information-types-in-the-compliance-center"></a>Entfernen von benutzerdefinierten Typen für vertrauliche Informationen im Compliance Center 
 
@@ -113,7 +113,7 @@ Verwendung Sie dieses Verfahren, um einen neuen Typ vertraulicher Informationen 
 7. Sie können die vorhandenen Muster bearbeiten und entfernen und neue hinzufügen. Wählen Sie ein Standard-Konfidenzniveau für das neue Muster aus. Die Werte sind **Niedrige Konfidenz**, **Mittlere Konfidenz** und **Hohe Konfidenz**.
 8. Wählen Sie und definieren Sie das **Primäre Element**. Das primäre Element kann ein **Regulärer Ausdruck**, eine **Schlüsselwortliste**, ein **Schlüsselwörterbuch**, oder eine der vorkonfigurierten **Funktionen** sein. Lesen Sie [Wonach die DLP-Funktionen suchen](what-the-dlp-functions-look-for.md).
 9. Füllen Sie einen Wert für den **Zeichenabstand** aus.
-10. (Optional) Wenn Sie **Unterstützende Elemente** oder jede beliebige **Zusätzliche Prüfungen** haben, fügen Sie diese hinzu. Bei Bedarf können Sie Ihre **Unterstützenden Elemente** gruppieren.
+10. (Optional) Wenn Sie **Unterstützende Elemente** oder jede beliebige [**Zusätzliche Prüfungen**](#more-information-on-additional-checks) haben, fügen Sie diese hinzu. Bei Bedarf können Sie Ihre **Unterstützenden Elemente** gruppieren.
 11. Wählen Sie **Erstellen**.
 12. Wählen Sie **Weiter** aus.
 13. Wählen Sie das **empfohlene Konfidenzniveau** für diesen Typ vertraulicher Informationen aus.
@@ -122,7 +122,24 @@ Verwendung Sie dieses Verfahren, um einen neuen Typ vertraulicher Informationen 
 Sie können auch benutzerdefinierte vertrauliche Informationstypen mithilfe von PowerShell und genauer Datenübereinstimmung erstellen. Weitere Informationen zu diesen Methoden finden Sie unter:
 - [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Erstellen eines benutzerdefinierten vertraulichen Informationstyps für DLP mit genauer Datenübereinstimmung (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
- 
+
+## <a name="more-information-on-additional-checks"></a>Weitere Informationen zu zusätzlichen Prüfungen
+
+Hier sind die Definitionen und einige Beispiele für die verfügbaren zusätzlichen Prüfungen.
+
+**Bestimmte Übereinstimmungen ausschließen**: Mit dieser Prüfung können Sie Schlüsselwörter definieren, die beim Erkennen von Übereinstimmungen für das zu bearbeitende Muster ausgeschlossen werden sollen. Beispielsweise können Sie Testkreditkartennummern wie '4111111111111111' ausschließen, damit sie nicht als gültige Nummer übereinstimmen.
+
+**Beginnt oder beginnt nicht mit Zeichen**: Mit dieser Prüfung können Sie die Zeichen definieren, mit denen die übereinstimmenden Elemente beginnen müssen oder nicht. Wenn Sie beispielsweise möchten, dass das Muster nur Kreditkartennummern erkennt, die mit 41, 42 oder 43 beginnen, wählen Sie **Beginnt mit** und fügen Sie der Liste 41, 42 und 43 hinzu, getrennt durch Kommas. 
+
+**Endet oder endet nicht mit Zeichen**: Mit dieser Prüfung können Sie die Zeichen definieren, mit denen die übereinstimmenden Elemente enden müssen oder nicht. Wenn Ihre Mitarbeiter-ID beispielsweise nicht mit 0 oder 1 enden kann, wählen Sie **Endet nicht mit** und fügen Sie der Liste 0 und 1 hinzu, getrennt durch Kommas.
+
+**Doppelte Zeichen ausschließen**: Mit dieser Prüfung können Sie Übereinstimmungen ignorieren, bei denen alle Ziffern gleich sind. Wenn beispielsweise bei der sechsstelligen Mitarbeiter-ID nicht alle Ziffern identisch sein können, können Sie **Doppelte Zeichen ausschließen** auswählen, um 111111, 222222, 333333, 444444, 555555, 666666, 777777, 888888, 999999 und 000000 aus der Liste der gültigen Übereinstimmungen für die Mitarbeiter-ID auszuschließen.
+
+**Präfixe einschließen oder ausschließen**: Mit dieser Prüfung können Sie die Schlüsselwörter definieren, die unmittelbar vor der übereinstimmenden Entität gefunden werden müssen oder nicht. Abhängig von Ihrer Auswahl werden Entitäten abgeglichen oder nicht abgeglichen, wenn ihnen die hier angegebenen Präfixe vorangestellt sind. Wenn Sie beispielsweise das Präfix **GUID:** **ausschließen**, wird jede Entität, der **GUID:** vorangestellt ist, nicht als Übereinstimmung betrachtet.
+
+**Suffixe einschließen oder ausschließen** Mit dieser Prüfung können Sie die Schlüsselwörter definieren, die unmittelbar nach der übereinstimmenden Entität gefunden werden müssen oder nicht. Abhängig von Ihrer Auswahl werden Entitäten abgeglichen oder nicht abgeglichen, wenn auf sie die Suffixe folgen, die Sie hier einfügen. Wenn Sie beispielsweise das Suffix **:GUID** **ausschließen**, wird der Text, auf den **:GUID** folgt, nicht abgeglichen.
+
+
 > [!NOTE]
 > Microsoft 365 Information Protection unterstützt in der Vorschau Sprachen mit Doppelbyte-Zeichensätzen für:
 > - Chinesisch (vereinfacht)
