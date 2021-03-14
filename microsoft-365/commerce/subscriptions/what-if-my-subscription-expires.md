@@ -1,5 +1,5 @@
 ---
-title: Was geschieht beim Ablauf meines Abonnements mit meinen Daten? Kann ich darauf noch zugreifen?
+title: Was geschieht beim Ablauf meines Abonnements mit meinen Daten? Kann darauf noch zugegriffen werden?
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -8,96 +8,93 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom:
+- AdminSurgePortfolio
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
-description: Erfahren Sie, was mit Ihren Daten geschieht, wenn Ihr Microsoft 365 for Business-Abonnement abläuft, deaktiviert ist oder wenn Sie kündigen.
-ms.openlocfilehash: c191b2fa795614a272b28cedae8d23693933dc95
-ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
-ms.translationtype: MT
+description: Hier erfahren Sie, was mit Ihren Daten geschieht, wenn Ihr Microsoft 365-Abonnement abläuft, deaktiviert wird oder Sie es kündigen.
+ms.openlocfilehash: a9e2e68c0eee119126af93552a50f1859f708c1f
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49135979"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741357"
 ---
-# <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Was geschieht mit meinen Daten und dem Zugriff, wenn mein Microsoft 365 for Business-Abonnement endet?
+# <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Microsoft 365 Business-Abonnement endet?
 
-Wenn Ihr Abonnement endet – entweder weil es abläuft oder weil Sie sich entscheiden, den Vorgang abzubrechen – wird der Zugriff auf Microsoft 365-Dienste,-Anwendungen und-Kundendaten in mehreren Status durchlaufen, bevor das Abonnement vollständig deaktiviert oder *gelöscht* wird. Wenn Sie sich dieser Progression bewusst sind, können Sie Ihr Abonnement besser in einen aktiven Zustand zurückversetzen, bevor es zu spät ist, oder-wenn Sie Microsoft 365 verlassen-Ihre Daten sichern, bevor Sie endgültig gelöscht werden.
+Wenn Ihr Abonnement endet – weil es entweder abläuft oder Sie es zu kündigen beschließen – durchläuft Ihr Zugriff auf Microsoft 365-Dienste, -Anwendungen und -Kundendaten mehrere Stadien, bevor das Abonnement vollständig deaktiviert oder *gelöscht* wird. Wenn Ihnen dieser Ablauf bewusst ist, sind Sie besser gerüstet, um das Abonnement auf einen aktiven Status zurückzusetzen, bevor es zu spät ist. Andererseits wissen Sie, dass Sie Ihre Daten vor dem Verlassen von Microsoft 365 unbedingt sichern sollten, bevor sie endgültig gelöscht werden.
 
-Lesen Sie diese wichtigen Informationen, bevor Sie sich an den [Microsoft 365-Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)wenden.
+Lesen Sie diese wichtigen Informationen, bevor Sie sich mit dem [Microsoft 365-Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) in Verbindung setzen.
   
-## <a name="what-happens-to-data-when-a-subscription-expires"></a>Was geschieht mit Daten, wenn ein Abonnement abläuft?
+## <a name="what-happens-to-data-when-a-subscription-expires"></a>Was geschieht beim Ablauf eines Abonnements mit den Daten?
 
-- Wenn Ihr Abonnement abläuft, durchläuft es die folgenden Phasen: abgelaufen/deaktiviert/gelöscht. Die abgelaufene Phase beginnt unmittelbar nach Erreichen des Enddatums des Abonnements.
-- Wenn Sie die wiederkehrende Abrechnung für Ihr Jahresabonnement deaktivieren, wird die gleiche Phase wie ein abgelaufenes Abonnement durchlaufen. Die erste Phase beginnt mit dem Jahrestag des jährlichen Abonnements, nicht ab dem Datum, an dem Sie die Einstellung für die wiederkehrende Abrechnung des Abonnements deaktiviert haben.
-- Wenn Sie Ihr monatliches Abonnement kündigen, ist es sofort (zum Zeitpunkt der Stornierung) deaktiviert. Dies bedeutet, dass Ihre Benutzer sofort den Zugriff auf die Microsoft 365-Objekte verlieren und nur Administratoren Zugriff auf die Daten für die nächsten 90 Tage haben.
+- Wenn Ihr Abonnement abläuft, durchläuft es die folgenden Stadien: Abgelaufen / Deaktiviert / Gelöscht. Das Stadium "Abgelaufen" beginnt sofort, nachdem das Abonnement sein Enddatum erreicht hat.
+- Wenn Sie die wiederkehrende Abrechnung für Ihr Jahresabonnement deaktivieren, durchläuft dieses die gleichen Stadien wie ein abgelaufenes Abonnement. Das erste Stadium beginnt am Erneuerungsdatum des Jahresabonnements und nicht ab dem Datum, an dem Sie die wiederkehrende Abrechnung für das Abonnement deaktiviert haben.
+- Wenn Sie Ihr Monatsabonnement kündigen, wird es sofort (zum Zeitpunkt der Kündigung) deaktiviert. Dies bedeutet, dass Ihre Benutzer sofort den Zugriff auf die Microsoft 365-Ressourcen verlieren und für die nächsten 90 Tage nur Administratoren auf die Daten zugreifen können.
 
-In der folgenden Tabelle wird erklärt, was Sie erwarten können, wenn ein bezahltes Microsoft 365 for Business-Abonnement abläuft.
+Die nachstehende Abbildung veranschaulicht, womit zu rechnen ist, wenn ein bezahltes Microsoft 365 Business-Abonnement abläuft.
 
-| Aktiv | Abgelaufen <br/>(30 Tage \* ) | Deaktiviert <br/>(90 Tage \* ) | Gelöscht |
+| Aktiv | Abgelaufen <br/>(30 Tage lang\*) | Deaktiviert <br/>(90 Tage lang\*) | Gelöscht |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| *Für alle zugängliche Daten*                                               | *Für alle zugängliche Daten*                                                     | *Nur für Administratoren zugängliche Daten*                                             | **Gelöschte Daten <br/> Azure Active Directory wird entfernt, wenn Sie nicht von anderen Diensten verwendet werden** |
-| Benutzer haben normalen Zugriff auf Microsoft 365, Dateien und Anwendungen   | Benutzer haben normalen Zugriff auf Microsoft 365, Dateien und Anwendungen              | Benutzer können nicht auf Microsoft 365, Dateien oder Anwendungen zugreifen                        | Benutzer können nicht auf Microsoft 365, Dateien oder Anwendungen zugreifen                                     |
-| Administratoren haben normalen Zugriff auf Microsoft 365-, Daten-und Office-Anwendungen | Administratoren können auf das Admin Center zugreifen                                           | Administratoren können auf das Admin Center zugreifen, aber Benutzern keine Lizenzen zuweisen       | Administratoren können auf das Admin Center zugreifen, um andere Abonnements zu erwerben und zu verwalten.             |
-|                                                                        | Globale oder Abrechnungs Administratoren können das Abonnement im Admin Center reaktivieren. | Globale oder Abrechnungs Administratoren können das Abonnement im Admin Center reaktivieren. |                                                                                           |
+| *Daten für alle zugänglich*                                               | *Daten für alle zugänglich*                                                     | *Daten nur für Administratoren zugänglich*                                             | **Daten werden gelöscht<br/>Azure Active Directory wird entfernt, wenn nicht von anderen Diensten verwendet.** |
+| Die Benutzer haben normalen Zugriff auf Microsoft 365, Dateien und Anwendungen.   | Die Benutzer haben normalen Zugriff auf Microsoft 365, Dateien und Anwendungen.              | Die Benutzer können nicht auf Microsoft 365, Dateien oder Anwendungen zugreifen.                        | Die Benutzer können nicht auf Microsoft 365, Dateien oder Anwendungen zugreifen.                                     |
+| Administratoren haben normalen Zugriff auf Microsoft 365, Daten und Office-Anwendungen. | Administratoren können auf das Admin Center zugreifen.                                           | Administratoren können auf das Admin Center zugreifen, aber Benutzern keine Lizenzen zuweisen.       | Administratoren können auf das Admin Center zugreifen, um andere Abonnements zu kaufen und zu verwalten.             |
+|                                                                        | Globale oder Abrechnungsadministratoren können das Abonnement im Admin Center reaktivieren. | Globale oder Abrechnungsadministratoren können das Abonnement im Admin Center reaktivieren. |                                                                                           |
 
-* Für die meisten Angebote in den meisten Ländern und Regionen.
+*Gilt für die meisten Angebote, in den meisten Ländern und Regionen.
   
 > [!NOTE]
-> **Was sind "Kundendaten"?** Kundendaten, wie in den [Microsoft Online Service Terms](https://go.microsoft.com/fwlink/p/?LinkId=613649)definiert, bezieht sich auf alle Daten, einschließlich aller Text-, Sound-oder Bilddateien, die Microsoft von oder im Namen des Kunden über die Verwendung von Microsoft 365-Diensten durch den Kunden bereitgestellt werden. Weitere Informationen zum Schutz von Kundendaten finden Sie unter [Erste Schritte mit dem Microsoft-Dienst Vertrauensstellungs Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal).
+> **Was sind "Kundendaten"?** Der Begriff "Kundendaten" bezieht sich gemäß Definition in den [Microsoft Online Service-Lizenzbedingungen](https://go.microsoft.com/fwlink/p/?LinkId=613649) auf alle Daten, einschließlich aller Text-, Audio- und Bilddateien, die Microsoft vom Kunden oder in dessen Auftrag durch seine Nutzung der Microsoft 365-Dienste bereitgestellt werden. Weitere Informationen zum Schutz von Kundendaten finden Sie unter [Erste Schritte mit dem Microsoft Service Trust-Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal).
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>Was geschieht, wenn ich ein Abonnement kündige?
 
-Wenn Sie Ihr Abonnement vor dem Ende des Termins kündigen, überspringt das Abonnement den Status "abgelaufen" und wechselt direkt in den Status "deaktiviert" (90 Tage für die meisten Abonnements) in den meisten Ländern und Regionen. Es wird empfohlen, dass Sie [Ihre Daten](back-up-data-before-switching-plans.md) vor dem Abbruch sichern, aber als Administrator können Sie weiterhin auf Daten für Ihre Organisation zugreifen und diese sichern, solange Sie sich im Status "deaktiviert" befinden. Alle Kundendaten, die Sie zurücklassen, werden möglicherweise nach 90 Tagen, spätestens aber 180 Tage nach der Kündigung gelöscht.
+Wenn Sie Ihr Abonnement vor dem Laufzeit-Enddatum kündigen, wird das "Abgelaufen"-Stadium übersprungen, und es beginnt sofort das Stadium "Deaktiviert", das bei den meisten Abonnements, in den meisten Ländern und Regionen, 90 Tage dauert. Es empfiehlt sich, [Ihre Daten vor der Kündigung zu sichern](back-up-data-before-switching-plans.md). Allerdings können Sie als Administrator während des Stadiums "Deaktiviert" weiterhin auf die Daten Ihrer Organisation zugreifen und sie sichern. Alle Kundendaten, die Sie zurücklassen, werden möglicherweise nach 90 Tagen, spätestens aber 180 Tage nach der Kündigung gelöscht.
   
 Dies können Sie für sich und Ihre Benutzer erwarten, wenn Sie ein Abonnement kündigen:
   
 - **Administratorzugriff**: Administratoren können sich weiterhin anmelden, auf das Admin Center zugreifen und andere Abonnements nach Bedarf kaufen. Als globaler Administrator oder Rechnungsadministrator haben Sie 90 Tage Zeit, um [das Abonnement zu reaktivieren](reactivate-your-subscription.md), wobei alle Daten erhalten bleiben.
 
-- **Benutzer Zugriff** Ihre Benutzer können keine Dienste wie OneDrive für Unternehmen verwenden oder auf Kundendaten zugreifen – beispielsweise e-Mails oder Dokumente auf Teamwebsites. Office-Anwendungen wie Word und Excel wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt.
+- **Benutzerzugriff:** Ihre Benutzer können keine Dienste wie OneDrive for Business nutzen oder auf Kundendaten zugreifen – beispielsweise E-Mails oder Dokumente auf Teamwebsites. Office-Anwendungen wie Word und Excel wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt.
 
-Informationen zum Abbrechen finden Sie unter [kündigen Ihres Abonnements](cancel-your-subscription.md).
+Wenn Sie sich über das Kündigen informieren möchten, lesen Sie [Kündigen Ihres Abonnements](cancel-your-subscription.md).
   
 > [!IMPORTANT]
-> Wenn Sie möchten, dass Ihre Abonnementdaten gelöscht werden, bevor der typische deaktivierte Zeitraum abgelaufen ist, können Sie [Ihr Konto schließen](../close-your-account.md).
+> Wenn Sie möchten, dass Ihre Abonnementdaten vor Ablauf des typischen "Deaktiviert"-Zeitraums gelöscht werden, können Sie [Ihr Konto schließen](../close-your-account.md).
   
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>Welche Möglichkeiten habe ich, wenn mein Abonnement bald abläuft?
 
-Während ein Abonnement aktiv ist, haben Sie und Ihre Endbenutzer normalen Zugriff auf Ihre Daten, Dienste wie e-Mail und OneDrive für Unternehmen und Office-Anwendungen. Als Administrator erhalten Sie eine Reihe von Benachrichtigungen per e-Mail und im Admin Center, wenn Ihr Abonnement seinem Ablaufdatum nahe kommt.
+Während Ihr Abonnement aktiv ist, verfügen Sie und ihre Endbenutzer über normalen Zugriff auf Ihre Daten, Dienste wie E-Mail und OneDrive for Business sowie Office-Anwendungen. Wenn sich Ihr Abonnement dem Ablaufdatum nähert, erhalten Sie als Administrator per E-Mail und im Admin Center eine Reihe entsprechender Benachrichtigungen.
   
-Bevor das Abonnement tatsächlich sein Ablaufdatum erreicht, haben Sie ein paar Möglichkeiten:
+Bevor das Abonnement tatsächlich sein Laufzeit-Enddatum erreicht, haben Sie ein paar Möglichkeiten:
 
 ::: moniker range="o365-worldwide"
   
-- **Aktivieren Sie wiederkehrende Abrechnung für das Abonnement.**
+- **Aktivieren der wiederkehrenden Abrechnung für das Abonnement**
 
-  - Wenn die **wiederkehrende Abrechnung** bereits aktiviert ist, müssen Sie keine Aktion durchführen. Ihr Abonnement wird automatisch in Rechnung gestellt, und je nach ihrer aktuellen Zahlungshäufigkeit werden Sie für ein weiteres Jahr oder einen weiteren Monat belastet. Wenn Sie aus irgendeinem Grund **wiederkehrende Abrechnung** deaktiviert haben, können Sie immer [wiederkehrende Abrechnung wieder aktivieren](renew-your-subscription.md).
+  - Wenn die **wiederkehrende Abrechnung** bereits aktiviert ist, müssen Sie nichts tun. Ihr Abonnement wird automatisch abgerechnet, und Ihnen wird – je nach Ihrer aktuellen Zahlungshäufigkeit – ein weiteres Jahr oder ein weiterer Monat in Rechnung gestellt. Wenn Sie die **wiederkehrende Abrechnung** aus irgendeinem Grund deaktiviert haben, [können Sie sie jederzeit wieder aktivieren](renew-your-subscription.md).
 
-  - Wenn Sie Microsoft 365 apps for Business mit einer Prepaid-Karte erworben haben, können Sie die [wiederkehrende Abrechnung](renew-your-subscription.md) für Ihr Abonnement aktivieren.
+  - Wenn Sie Microsoft 365 Apps for Business mit einer Prepaidkarte erworben haben, können Sie die [wiederkehrende Abrechnung für Ihr Abonnement aktivieren](renew-your-subscription.md).
 
-  - Wenn Sie ein offener Volumenlizenzkunde mit einem Prepaid-Abonnement mit einem Jahr sind, wenden Sie sich an Ihren Partner, um einen neuen Product Key zu erwerben. Sie erhalten per E-Mail Anweisungen zum Aktivieren Ihres Product Keys im [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). Informationen zum Auffinden eines neuen Partners oder des Partners, mit dem Sie in der Vergangenheit zusammengearbeitet haben, finden Sie unter [Suchen Ihres Partners oder Händlers](../../admin/manage/find-your-partner-or-reseller.md).
+  - Wenn Sie ein Open-Volumenlizenzkunde mit einem im Voraus bezahlten Jahresabonnement sind, wenden Sie sich an Ihren Partner, um einen neuen Product Key zu erwerben. Sie erhalten dann per E-Mail Anweisungen zum Aktivieren Ihres Product Keys im [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). Informationen zum Suchen nach einem neuen Partner oder dem Partner, mit dem Sie in der Vergangenheit zusammengearbeitet haben, finden Sie unter [Suchen nach Ihrem Partner oder Händler](../../admin/manage/find-your-partner-or-reseller.md).
 
-  - Wenn Sie Microsoft 365 Apps für Unternehmen haben, finden Sie weitere Informationen unter [Manage wiederkehrende Abrechnung für Ihr Abonnement](renew-your-subscription.md).
+  - Wenn Sie Microsoft 365 Apps for Business verwenden, lesen Sie [Verwalten der wiederkehrenden Abrechnung für Ihr Abonnement](renew-your-subscription.md).
 
-- **Lassen Sie das Abonnement ablaufen.**
+- **Das Abonnement ablaufen lassen**
 
-  - Wenn Sie mit Kreditkarte oder Rechnung bezahlen und Ihr Abonnement nicht fortsetzen möchten, schalten Sie [wiederkehrende Abrechnung aus](renew-your-subscription.md). Ihr Abonnement endet mit dem Ablaufdatum, und Sie können alle zugehörigen e-Mail-Benachrichtigungen ignorieren.
+  - Wenn Sie per Kreditkarte oder Rechnung bezahlen und Ihr Abonnement nicht verlängern möchten, [deaktivieren Sie die wiederkehrende Abrechnung](renew-your-subscription.md). Ihr Abonnement läuft am Ablaufdatum ab, und Sie können alle in diesem Zusammenhang empfangenen E-Mail-Benachrichtigungen ignorieren.
 
-  - Wenn Sie ein offener Volumenlizenzkunde sind, der mit einem Partner zusammenarbeitet, können Sie Ihr Abonnement ablaufen lassen, indem Sie keine Aktion durch nehmen.
+  - Wenn Sie ein Open-Volumenlizenzkunde sind, der mit einem Partner zusammenarbeitet, können Sie Ihr Abonnement ablaufen lassen, indem Sie keine Maßnahme ergreifen.
 
-  - Wenn Sie ein Office 365 Small Business Premiumer Kunde sind und Office 365 voraus bezahlt haben und ihn mit einem Product Key aktiviert haben, können Sie Ihr Abonnement ablaufen lassen, indem Sie keine Aktion durch nehmen.
+  - Wenn Sie ein Office 365 Small Business Premium-Kunde sind und Office 365 im Voraus bezahlt und mit einem Product Key aktiviert haben, können Sie Ihr Abonnement ablaufen lassen, ohne eine Maßnahme zu ergreifen.
 
-- **Kündigen Sie vor Ablauf des Abonnements.** Ausführliche Informationen finden Sie unter [kündigen Ihres Abonnements](cancel-your-subscription.md).
+- **Kündigen vor Ablauf des Abonnements** Weitere Informationen hierzu finden Sie unter [Kündigen Ihres Abonnements](cancel-your-subscription.md).
   
 ::: moniker-end
 
@@ -105,42 +102,42 @@ Bevor das Abonnement tatsächlich sein Ablaufdatum erreicht, haben Sie ein paar 
   
 - **Verwalten der wiederkehrenden Abrechnung für das Abonnement.**
 
-  - Wenn die **wiederkehrende Abrechnung** bereits aktiviert ist, müssen Sie keine Aktion durchführen. Ihr Abonnement wird automatisch abgerechnet, und Ihnen wird – je nach Ihrer aktuellen Zahlungshäufigkeit – ein weiteres Jahr oder ein weiterer Monat in Rechnung gestellt. Wenn Sie aus irgendeinem Grund **wiederkehrende Abrechnung** deaktiviert haben, können Sie immer [wiederkehrende Abrechnung wieder aktivieren](renew-your-subscription.md).
+  - Wenn die **wiederkehrende Abrechnung** bereits aktiviert ist, müssen Sie nichts tun. Ihr Abonnement wird automatisch abgerechnet, und Ihnen wird – je nach Ihrer aktuellen Zahlungshäufigkeit – ein weiteres Jahr oder ein weiterer Monat in Rechnung gestellt. Wenn Sie die **wiederkehrende Abrechnung** aus irgendeinem Grund deaktiviert haben, [können Sie sie jederzeit wieder aktivieren](renew-your-subscription.md).
 
-  - Wenn Sie Microsoft 365 apps for Business mit einer Prepaid-Karte erworben haben, können Sie die [wiederkehrende Abrechnung](renew-your-subscription.md) für Ihr Abonnement aktivieren.
+  - Wenn Sie Microsoft 365 Apps for Business mit einer Prepaidkarte erworben haben, können Sie die [wiederkehrende Abrechnung für Ihr Abonnement aktivieren](renew-your-subscription.md).
 
-  - Wenn Sie ein offener Volumenlizenzkunde mit einem Prepaid-Abonnement mit einem Jahr sind, wenden Sie sich an Ihren Partner, um einen neuen Product Key zu erwerben. Sie erhalten per E-Mail Anweisungen zum Aktivieren Ihres Product Keys im [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). Informationen zum Auffinden eines neuen Partners oder des Partners, mit dem Sie in der Vergangenheit zusammengearbeitet haben, finden Sie unter [Suchen Ihres Partners oder Händlers](../../admin/manage/find-your-partner-or-reseller.md).
+  - Wenn Sie ein Open-Volumenlizenzkunde mit einem im Voraus bezahlten Jahresabonnement sind, wenden Sie sich an Ihren Partner, um einen neuen Product Key zu erwerben. Sie erhalten dann per E-Mail Anweisungen zum Aktivieren Ihres Product Keys im [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). Informationen zum Suchen nach einem neuen Partner oder dem Partner, mit dem Sie in der Vergangenheit zusammengearbeitet haben, finden Sie unter [Suchen nach Ihrem Partner oder Händler](../../admin/manage/find-your-partner-or-reseller.md).
 
-  - Wenn Sie Microsoft 365 Apps für Unternehmen haben, lesen Sie [Erneuern Ihres Abonnements](renew-your-subscription.md).
+  - Wenn Sie Microsoft 365 Apps for Business verwenden, lesen Sie [Erneuern Ihres Abonnement](renew-your-subscription.md).
 
-- **Lassen Sie das Abonnement ablaufen.**
+- **Das Abonnement ablaufen lassen**
 
-  - Wenn Sie mit Kreditkarte oder Rechnung bezahlen und Ihr Abonnement nicht fortsetzen möchten, schalten Sie [wiederkehrende Abrechnung aus](renew-your-subscription.md). Ihr Abonnement läuft am Ablaufdatum ab, und Sie können alle in diesem Zusammenhang empfangenen E-Mail-Benachrichtigungen ignorieren.
+  - Wenn Sie per Kreditkarte oder Rechnung bezahlen und Ihr Abonnement nicht verlängern möchten, [deaktivieren Sie die wiederkehrende Abrechnung](renew-your-subscription.md). Ihr Abonnement läuft am Ablaufdatum ab, und Sie können alle in diesem Zusammenhang empfangenen E-Mail-Benachrichtigungen ignorieren.
 
-  - Wenn Sie ein offener Volumenlizenzkunde sind, der mit einem Partner zusammenarbeitet, können Sie Ihr Abonnement ablaufen lassen, indem Sie keine Aktion durch nehmen.
+  - Wenn Sie ein Open-Volumenlizenzkunde sind, der mit einem Partner zusammenarbeitet, können Sie Ihr Abonnement ablaufen lassen, indem Sie keine Maßnahme ergreifen.
 
-  - Wenn Sie ein Office 365 Small Business Premiumer Kunde sind und Office 365 voraus bezahlt haben und ihn mit einem Product Key aktiviert haben, können Sie Ihr Abonnement ablaufen lassen, indem Sie keine Aktion durch nehmen.
+  - Wenn Sie ein Office 365 Small Business Premium-Kunde sind und Office 365 im Voraus bezahlt und mit einem Product Key aktiviert haben, können Sie Ihr Abonnement ablaufen lassen, ohne eine Maßnahme zu ergreifen.
 
-- **Kündigen Sie vor Ablauf des Abonnements.** Ausführliche Informationen finden Sie unter [kündigen Ihres Abonnements](cancel-your-subscription.md).
+- **Kündigen vor Ablauf des Abonnements** Weitere Informationen hierzu finden Sie unter [Kündigen Ihres Abonnements](cancel-your-subscription.md).
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
   
-- **Verlängern Sie das Abonnement.** Wenn die **wiederkehrende Abrechnung** bereits aktiviert ist, müssen Sie keine Aktion durchführen. Ihr Abonnement wird automatisch abgerechnet, und Ihnen wird – je nach Ihrer aktuellen Zahlungshäufigkeit – ein weiteres Jahr oder ein weiterer Monat in Rechnung gestellt. Wenn Sie aus irgendeinem Grund **wiederkehrende Abrechnung** deaktiviert haben, können Sie immer [wiederkehrende Abrechnung wieder aktivieren](renew-your-subscription.md).
+- **Verlängern des Abonnements.** Wenn die **wiederkehrende Abrechnung** bereits aktiviert ist, müssen Sie nichts tun. Ihr Abonnement wird automatisch abgerechnet, und Ihnen wird – je nach Ihrer aktuellen Zahlungshäufigkeit – ein weiteres Jahr oder ein weiterer Monat in Rechnung gestellt. Wenn Sie die **wiederkehrende Abrechnung** aus irgendeinem Grund deaktiviert haben, [können Sie sie jederzeit wieder aktivieren](renew-your-subscription.md).
 
-- **Lassen Sie das Abonnement ablaufen.** Wenn Sie mit Kreditkarte oder Rechnung bezahlen und Ihr Abonnement nicht fortsetzen möchten, schalten Sie [wiederkehrende Abrechnung aus](renew-your-subscription.md). Ihr Abonnement läuft am Ablaufdatum ab, und Sie können alle in diesem Zusammenhang empfangenen E-Mail-Benachrichtigungen ignorieren.
+- **Das Abonnement ablaufen lassen** Wenn Sie per Kreditkarte oder Rechnung bezahlen und Ihr Abonnement nicht verlängern möchten, [deaktivieren Sie die wiederkehrende Abrechnung](renew-your-subscription.md). Ihr Abonnement läuft am Ablaufdatum ab, und Sie können alle in diesem Zusammenhang empfangenen E-Mail-Benachrichtigungen ignorieren.
 
-- **Kündigen Sie vor Ablauf des Abonnements.** Ausführliche Informationen finden Sie unter [kündigen Ihres Abonnements](cancel-your-subscription.md).
+- **Kündigen Sie vor Ablauf des Abonnements.** Weitere Informationen hierzu finden Sie unter [Kündigen Ihres Abonnements](cancel-your-subscription.md).
 
 ::: moniker-end
 
 ## <a name="what-happens-after-my-subscription-expires"></a>Was geschieht nach Ablauf meines Abonnements?
-Wenn Sie Ihr Abonnement ablaufen lassen, durchläuft es mehrere Status, bevor es endgültig gelöscht wird. Auf diese Weise können Sie als Administrator Zeit zum erneuten Aktivieren, wenn Sie den Dienst fortsetzen möchten, oder um Ihre Daten zu sichern, wenn Sie entscheiden, dass das Abonnement nicht mehr gewünscht wird.
+Wenn Sie Ihr Abonnement ablaufen lassen, durchläuft es mehrere Stadien, bevor es endgültig gelöscht wird. Damit erhalten Sie als Administrator Zeit zum Reaktivieren, wenn Sie den Dienst doch fortsetzen möchten, oder Zeit zum Sichern Ihrer Daten, falls Sie entscheiden, dass Sie das Abonnement nicht mehr nutzen möchten.
   
-Nachstehend wird aufgeführt, was Sie im jeweiligen Status Ihres Abonnements erwarten können.
+Nachstehend wird aufgeführt, womit im jeweiligen Stadium Ihres Abonnements zu rechnen ist.
   
-### <a name="state-expired"></a>Status: abgelaufen
+### <a name="state-expired"></a>Status: Abgelaufen
   
 ::: moniker range="o365-worldwide"
 
@@ -160,11 +157,11 @@ Nachstehend wird aufgeführt, was Sie im jeweiligen Status Ihres Abonnements erw
 
 ::: moniker-end
 
-In diesem Zustand haben Benutzer normalen Zugriff auf das Microsoft 365-Portal, Office-Anwendungen und Dienste wie e-Mail und SharePoint Online.
+Bei diesem Status können die Benutzer ganz normal auf das Microsoft 365-Portal, Office-Anwendungen und Dienste wie E-Mail und SharePoint Online zugreifen.
   
-Als Administrator haben Sie weiterhin Zugriff auf das Admin Center. Keine Sorge – globale oder Abrechnungs Administratoren können [das Abonnement reaktivieren](reactivate-your-subscription.md) und Microsoft 365 weiterhin verwenden. Wenn Sie nicht reaktivieren, [Sichern Sie die Daten](back-up-data-before-switching-plans.md).
+Sie selbst als Administrator können weiterhin auf das Admin Center zugreifen. Keine Sorge – globale oder Abrechnungsadministratoren können [das Abonnement reaktivieren](reactivate-your-subscription.md) und Microsoft 365 weiterhin verwenden. Wenn Sie das Abonnement nicht reaktivieren, denken Sie daran, [Ihre Daten zu sichern](back-up-data-before-switching-plans.md).
   
-### <a name="state-disabled"></a>Status: deaktiviert
+### <a name="state-disabled"></a>Status: Deaktiviert
   
 ::: moniker range="o365-worldwide"
 
@@ -186,59 +183,59 @@ Als Administrator haben Sie weiterhin Zugriff auf das Admin Center. Keine Sorge 
 
 ::: moniker range="o365-worldwide"
 
-In diesem Status wird Ihr Zugriff erheblich verringert. Ihre Benutzer können sich nicht anmelden oder auf Dienste wie e-Mail oder SharePoint Online zugreifen. Office-Anwendungen wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt. Sie können sich weiterhin anmelden und zum Admin Center gelangen, Benutzern jedoch keine Lizenzen zuweisen. Ihre Kundendaten, einschließlich aller Benutzerdaten, E-Mails und Dateien auf Teamwebsites, stehen nur Ihnen und anderen Administratoren zur Verfügung.
+In diesem Status wird Ihr Zugriff erheblich verringert. Ihre Benutzer können sich nicht anmelden oder auf Dienste wie E-Mail oder SharePoint Online zugreifen. Office-Anwendungen wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt. Sie selbst können sich weiterhin anmelden und auf das Admin Center zugreifen, aber Benutzern keine Lizenzen hinzufügen. Ihre Kundendaten, einschließlich aller Benutzerdaten, E-Mails und Dateien auf Teamwebsites, stehen nur Ihnen und anderen Administratoren zur Verfügung.
 
 ::: moniker-end
 
-Als globaler oder abrechnungsadministrator können Sie [das Abonnement reaktivieren](reactivate-your-subscription.md) und Microsoft 365 weiterhin verwenden, wobei alle Ihre Kundendaten intakt sind. Wenn Sie sich für eine erneute Aktivierung entscheiden, [Sichern Sie die Daten](back-up-data-before-switching-plans.md).
+Als globaler Administrator oder Abechnungsadministrator können Sie [das Abonnement reaktivieren](reactivate-your-subscription.md) und Microsoft 365 weiterhin verwenden, wobei alle Ihre Kundendaten erhalten geblieben sind. Wenn Sie beschließen, das Abonnement nicht zu reaktivieren, denken Sie daran, [Ihre Daten zu sichern](back-up-data-before-switching-plans.md).
 
-### <a name="state-deleted"></a>Status: gelöscht
+### <a name="state-deleted"></a>Status: Gelöscht
   
- **Was Sie erwarten sollten:** Wenn Sie Ihr Abonnement nicht erneut aktivieren, solange es in der Kulanzzeit ist oder deaktiviert ist, wird das Abonnement gelöscht.
+ **Was Sie erwarten können:** Wenn Sie Ihr Abonnement nicht reaktivieren, während die Nachfrist läuft oder es deaktiviert ist, wird es gelöscht.
   
-Administratoren und Benutzer können nicht mehr auf die im Abonnement enthaltenen Dienste oder Office-Anwendungen zugreifen. Alle Kundendaten – von Benutzerdaten zu Dokumenten und e-Mails – werden endgültig gelöscht und können nicht wiederhergestellt werden.
+Administratoren und Benutzer können nicht mehr auf die im Abonnement enthaltenen Dienste oder Office-Anwendungen zugreifen. Alle Kundendaten – von Benutzerdaten bis zu Dokumenten und E-Mails – werden endgültig gelöscht und können nicht wiederhergestellt werden.
   
-Zu diesem Zeitpunkt können Sie das Abonnement nicht mehr reaktivieren. Allerdings können Sie als globaler oder abrechnungsadministrator weiterhin auf das Admin Center zugreifen, um andere Abonnements zu verwalten, oder um neue Abonnements zu erwerben, um Ihre geschäftlichen Anforderungen zu erfüllen.
+Zu diesem Zeitpunkt können Sie das Abonnement nicht mehr reaktivieren. Als globaler Administrator oder Abrechnungsadministrator können Sie jedoch weiterhin auf das Admin Center zugreifen, um andere Abonnements zu verwalten oder um neue Abonnements zur Erfüllung Ihrer Geschäftsanforderungen zu kaufen.
   
 > [!NOTE]
-> Durch das Hinzufügen eines neuen Abonnements desselben Typs, das gelöscht wurde, werden die dem gelöschten Abonnement zugeordneten Daten nicht wiederhergestellt.
+> Durch Hinzufügen eines neuen Abonnements desselben Typs wie das Abonnement, das gelöscht wurde, werden die diesem Abonnement zuvor zugeordneten Daten nicht wiederhergestellt.
 
 
 > [!NOTE]
-> Wenn eine CSP-Lizenz angehalten wird, gibt es keinen 30-tägigen Kulanzzeitraum, und Dienste werden sofort deaktiviert. Daten werden nach 90 Tagen gelöscht, wenn der Mandant nicht durch Hinzufügen einer neuen Lizenz reaktiviert wird.
+> Wenn eine CSP-Lizenz ausgesetzt wird, besteht keine Nachfrist von 30 Tagen, und Dienste werden sofort deaktiviert. Daten werden nach 90 Tagen gelöscht, wenn der Mandant durch Hinzufügen einer neuen Lizenz nicht reaktiviert wird.
 
 ### <a name="what-happens-when-my-trial-ends"></a>Was geschieht, wenn meine Testversion endet?
 
-Wenn Ihre Testversion beendet ist, können Sie Microsoft 365 nicht kostenlos weiter verwenden. Es gibt ein paar Möglichkeiten:
+Wenn Ihre Testversion endet, können Sie Microsoft 365 nicht weiterhin kostenlos nutzen. Es gibt ein paar Optionen:
 
 ::: moniker range="o365-worldwide"
 
-- **Kaufen Sie Microsoft 365.** Wenn Ihre Testversion abläuft, wird Sie in eine Kulanz Phase verschoben, sodass Sie weitere 30 Tage (für die meisten Länder und Regionen) Microsoft 365 erwerben können. Informationen zum Konvertieren Ihrer Testversion in ein kostenpflichtiges Abonnement finden Sie unter [kaufen Ihrer Testversion von Microsoft 365 for Business](../buy-a-subscription-from-your-free-trial.md).
+- **Microsoft 365 kaufen.** Wenn Ihre Testversion abläuft, beginnt eine Nachfrist. So erhalten Sie (bei den meisten Testversionen, in den meisten Ländern und Regionen) weitere 30 Tage zum Kauf von Microsoft 365. Wenn Sie Ihre Testversion in ein kostenpflichtiges Abonnement umwandeln möchten, lesen Sie [Kaufen Ihrer Testversion von Microsoft 365 Business](../buy-a-subscription-from-your-free-trial.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-- **Kaufen Sie Microsoft 365.** Wenn Ihre Testversion abläuft, wird Sie in eine Kulanz Phase verschoben, sodass Sie weitere 30 Tage (für die meisten Länder und Regionen) Microsoft 365 erwerben können. Informationen zum Konvertieren Ihrer Testversion in ein kostenpflichtiges Abonnement finden Sie unter [kaufen Ihrer Testversion von Microsoft 365 for Business](../buy-a-subscription-from-your-free-trial.md).
+- **Microsoft 365 kaufen.** Wenn Ihre Testversion abläuft, beginnt eine Nachfrist. So erhalten Sie (bei den meisten Testversionen, in den meisten Ländern und Regionen) weitere 30 Tage zum Kauf von Microsoft 365. Wenn Sie Ihre Testversion in ein kostenpflichtiges Abonnement umwandeln möchten, lesen Sie [Kaufen Ihrer Testversion von Microsoft 365 Business](../buy-a-subscription-from-your-free-trial.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-- **Office 365 kaufen.** Wenn Ihre Testversion abläuft, wird Sie in eine Kulanz Phase verschoben, sodass Sie weitere 30 Tage (für die meisten Länder und Regionen) Office 365 erwerben können. Wenn Sie Ihre Testversion in ein kostenpflichtiges Abonnement umwandeln möchten, lesen Sie [Buy or try subscriptions for Office 365 operated by 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md).
+- **Office 365 kaufen.** Wenn Ihre Testversion abläuft, beginnt eine Nachfrist. So erhalten Sie (bei den meisten Testversionen, in den meisten Ländern und Regionen) weitere 30 Tage zum Kauf von Office 365. Wenn Sie Ihre Testversion in ein kostenpflichtiges Abonnement umwandeln möchten, lesen Sie [Buy or try subscriptions for Office 365 operated by 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md).
 
 ::: moniker-end
 
-- **Verlängern Sie Ihre Testversion.** Benötigen Sie mehr Zeit zum Auswerten von Microsoft 365? In bestimmten Fällen können Sie [Ihre Testversion verlängern](../extend-your-trial.md).
+- **Verlängern Sie Ihre Testversion.** Benötigen Sie mehr Zeit zum Beurteilen von Microsoft 365? In bestimmten Fällen können Sie [Ihre Testversion verlängern](../extend-your-trial.md).
 
-- **Kündigen Sie die Testversion, oder lassen Sie sie ablaufen.** Wenn Sie sich entschließen, Microsoft 365 zu kaufen, können Sie Ihre Testversion ablaufen lassen oder [stornieren](cancel-your-subscription.md). Sichern Sie alle Daten, die Sie behalten möchten. Kurz nach Ablauf der 30-Tage-Nachfrist werden die Informationen Ihres Testkontos und alle Daten endgültig gelöscht.
+- **Die Testversion kündigen oder ablaufen lassen.** Wenn Sie sich beschließen, Microsoft 365 nicht zu kaufen, können Sie Ihre Testversion ablaufen lassen oder [kündigen](cancel-your-subscription.md). Sichern Sie alle Daten, die Sie behalten möchten. Kurz nach Ablauf der 30-Tage-Nachfrist werden die Informationen Ihres Testkontos und alle Daten endgültig gelöscht.
 
 > [!NOTE]
-> Die Informationen auf dieser Seite unterliegen der [Microsoft Policy Disclaimer and Change Notice](https://go.microsoft.com/fwlink/p/?LinkId=613651) (Microsoft-Richtlinie für Haftungsausschluss und Änderungsmitteilung). Kehren Sie regelmäßig zu dieser Website zurück, um Änderungen zu überprüfen.
+> Die Informationen auf dieser Seite unterliegen der [Microsoft Policy Disclaimer and Change Notice](https://go.microsoft.com/fwlink/p/?LinkId=613651) (Microsoft-Richtlinie für Haftungsausschluss und Änderungsmitteilung). Kehren Sie regelmäßig zu dieser Website zurück, um über Änderungen auf dem Laufenden zu bleiben.
 
 ## <a name="related-content"></a>Verwandte Inhalte 
 
-[Kündigen Ihres Abonnements](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (Artikel) \
-[Microsoft 365 for Business erneuern](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (Artikel) \
+[Kündigen Ihres Abonnements](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (Artikel)\
+[Verlängern von Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (Artikel)\
 [Reaktivieren Ihres Abonnements](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (Artikel)
 
