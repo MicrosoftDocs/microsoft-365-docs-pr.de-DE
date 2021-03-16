@@ -17,77 +17,77 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Verwenden Sie die integrierte Basismobilität und -sicherheit, um Informationen von registrierten Geräten zu entfernen.
-ms.openlocfilehash: 3bb9bfe55653b021ce5a86dd5d3dbc3de45ed19a
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+description: Verwenden Sie integrierte Grundlegende Mobilität und Sicherheit, um Informationen von registrierten Geräten zu entfernen.
+ms.openlocfilehash: ddf13ef6627d70128064e2d8bd185203244b12e4
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876828"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50819808"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Wischen eines mobilen Geräts in Basic Mobility and Security
 
-Sie können die integrierte Basismobilität und -sicherheit für Microsoft 365 verwenden, um nur Organisationsinformationen zu entfernen oder eine Zurücksetzung auf die Werkseinstellungen durchzuführen, um alle Informationen von einem mobilen Gerät zu löschen und in den Werkseinstellungen wiederherzustellen.
+Sie können die integrierte Grundlegende Mobilität und Sicherheit für Microsoft 365 verwenden, um nur Organisationsinformationen zu entfernen oder eine Werkszurücksetzung durchzuführen, um alle Informationen von einem mobilen Gerät zu löschen und in den Werkseinstellungen wiederherzustellen.
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie loslegen
 
-Mobile Geräte können vertrauliche Unternehmensinformationen speichern und Zugriff auf die Microsoft 365-Ressourcen Ihrer Organisation bereitstellen. Um die Informationen Ihrer Organisation zu schützen, können Sie die Werkseinstellungen zurücksetzen oder Unternehmensdaten entfernen:
+Mobile Geräte können vertrauliche Organisationsinformationen speichern und Zugriff auf die Microsoft 365-Ressourcen Ihrer Organisation bieten. Um die Informationen Ihrer Organisation zu schützen, können Sie die Werkseinstellungen zurücksetzen oder Unternehmensdaten entfernen:
 
-- **Zurücksetzen auf** die Werkseinstellungen: Löscht alle Daten auf dem mobilen Gerät eines Benutzers, einschließlich installierter Anwendungen, Fotos und persönlicher Informationen. Nach Abschluss des Zurücksetzens wird das Gerät in den Werkseinstellungen wiederhergestellt.
+- **Werkseinstellung:** Löscht alle Daten auf dem mobilen Gerät eines Benutzers, einschließlich installierter Anwendungen, Fotos und personenbezogener Informationen. Nach Abschluss des Zurücksetzens wird das Gerät in den Werkseinstellungen wiederhergestellt.
 
-- **Entfernen von Unternehmensdaten:** Entfernt nur Organisationsdaten und hinterlässt installierte Anwendungen, Fotos und persönliche Informationen auf dem mobilen Gerät eines Benutzers.
+- **Entfernen von Unternehmensdaten**: Entfernt nur Organisationsdaten und hinterlässt installierte Anwendungen, Fotos und persönliche Informationen auf dem mobilen Gerät eines Benutzers.
 
-- **Wenn ein Gerät zurückgesetzt wird (Werkseinstellungen** zurücksetzen oder Unternehmensdaten entfernen), wird das Gerät aus der Liste der verwalteten Geräte entfernt.
+- **Wenn ein Gerät zurückgesetzt wird (Werkseinstellungen zurücksetzen oder Unternehmensdaten entfernen)** wird das Gerät aus der Liste der verwalteten Geräte entfernt.
     
-- **Automatisches** Zurücksetzen eines Geräts: Sie können eine Standardrichtlinie für Mobilität und Sicherheit einrichten, die ein Gerät automatisch zurückzusetzen versucht, nachdem der Benutzer mehrmals erfolglos versucht hat, das Gerätekennwort einzugeben. Führen Sie dazu die Schritte in "Erstellen von Gerätesicherheitsrichtlinien [für grundlegende Mobilität und Sicherheit" aus.](create-device-security-policies.md)
+- **Automatisches** Zurücksetzen eines Geräts: Sie können eine Grundlegende Mobilitäts- und Sicherheitsrichtlinie einrichten, die ein Gerät automatisch in der Fabrik zurück setzt, nachdem der Benutzer erfolglos versucht hat, das Gerätekennwort mehrmals einzugeben. Führen Sie dazu die Schritte unter Erstellen von [Gerätesicherheitsrichtlinien in grundlegenden Mobilitäts- und Sicherheitsrichtlinien aus.](create-device-security-policies.md)
     
-- **Wenn Sie die Benutzeroberfläche** kennen möchten, wenn Sie ihr Gerät löschen, lesen Sie, was die Auswirkungen auf Benutzer   [und Geräte sind.](#whats-the-user-and-device-impact)
+- **Wenn Sie die Benutzeroberfläche beim** Wischen des Geräts kennen möchten, lesen Sie Was sind die Auswirkungen auf Benutzer   [und Geräte?](#whats-the-user-and-device-impact).
 
 ## <a name="wipe-a-mobile-device"></a>Wischen eines mobilen Geräts
 
-1. Wechseln Sie zum [Microsoft 365 Admin Center.](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23)
+1. Wechseln Sie zum [Microsoft 365 Admin Center](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23).
 
-2. Geben Sie die Verwaltung mobiler Geräte in das Suchfeld ein, und wählen Sie in der Ergebnisliste die Option **"Mobile** Geräteverwaltung" aus.
+2. Geben Sie mobile Geräteverwaltung in das Suchfeld ein, und wählen Sie **mobile Geräteverwaltung** in der Liste der Ergebnisse aus.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Option für die verwaltung mobiler Geräte für Mobilität und Secruity":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Grundlegende Option zur Verwaltung mobiler Geräte für Mobilität und Secruity":::
 
 3. Wählen **Sie Geräte verwalten aus.**
 
 4. Wählen Sie das Gerät aus, das Sie zurücksetzen möchten.
 
-5. Wählen Sie **"Verwalten"** aus.
+5. Wählen Sie **Verwalten aus.**
 
 6. Wählen Sie die Art der Remotezurücksetzung aus, die Sie durchführen möchten.
 
-    - Wenn Sie eine vollständige Zurücksetzung vornehmen und das Gerät auf die Werkseinstellungen zurücksetzen möchten, wählen Sie **"Zurücksetzen auf Werkseinstellungen" aus.**
-    - Wählen Sie "Unternehmensdaten entfernen" aus, um eine selektive Zurücklöschung zu tun und nur Microsoft 365-Organisationsinformationen **zu löschen.**
-    - Wählen Sie "Gerät entfernen" aus, um das Gerät **aus Ihrer Organisation zu entfernen.**
+    - Wählen Sie Factory reset aus, um ein vollständiges Zurücksetzen zu durchführen und das Gerät in den Werkseinstellungen **wiederherzustellen.**
+    - Wenn Sie eine selektive Löschung und nur Microsoft 365-Organisationsinformationen löschen möchten, wählen Sie **Unternehmensdaten entfernen aus.**
+    - Um das Gerät aus Ihrer Organisation zu entfernen, wählen Sie **Gerät entfernen aus.**
 
 7. Wählen Sie zum Bestätigen **Ja** aus.
 
-## <a name="how-do-i-know-it-worked"></a>Wo finde ich, dass es funktioniert hat?
+## <a name="how-do-i-know-it-worked"></a>Wo kann ich wissen, dass es funktioniert hat?
 
 Das mobile Gerät wird nicht mehr in der Liste der verwalteten Geräte angezeigt.
 
-## <a name="why-would-you-want-to-wipe-a-device"></a>Warum sollten Sie ein Gerät wischen?
+## <a name="why-would-you-want-to-wipe-a-device"></a>Warum möchten Sie ein Gerät wischen?
 
-Löschen Sie ein Gerät aus folgenden Gründen:
+Wischen Sie ein Gerät aus folgenden Gründen:
 
-- Mobile Geräte wie Smartphones und Tablets werden immer häufiger mit vollem Funktionspensing ausgestattet. Dies bedeutet, dass es für Ihre Benutzer einfacher ist, vertrauliche Unternehmensinformationen wie persönliche Identifikation oder vertrauliche Kommunikation zu speichern und unterwegs darauf zu zugreifen. Wenn eines dieser mobilen Geräte verloren geht oder gestohlen wird, kann das Löschen des Geräts verhindern, dass die Informationen Ihrer Organisation in die falschen Hände geraten.
-- Wenn ein Benutzer die Organisation mit einem persönlichen Gerät verlässt, das für Basic Mobility and Security registriert ist, können Sie verhindern, dass Organisationsinformationen mit diesem Benutzer verwendet werden, indem Sie eine Zurücksetzung auf die Werkseinstellungen durchführen.
-- Wenn Ihre Organisation Benutzern mobile Geräte zur Verfügung stellt, müssen Sie geräte möglicherweise von Zeit zu Zeit neu zuweisen. Durch das Zurücksetzen auf die Werkseinstellungen auf einem Gerät vor dem Zuweisen zu einem neuen Benutzer wird sichergestellt, dass alle vertraulichen Informationen des vorherigen Besitzers gelöscht werden.
+- Mobile Geräte wie Smartphones und Tablets werden immer mehr voll funktionsfähig. Dies bedeutet, dass Ihre Benutzer vertrauliche Unternehmensinformationen wie persönliche Identifikation oder vertrauliche Kommunikation leichter speichern und unterwegs darauf zugreifen können. Wenn eines dieser mobilen Geräte verloren geht oder gestohlen wird, kann das Wischen des Geräts dazu beitragen, zu verhindern, dass die Informationen Ihrer Organisation in die falschen Hände geraten.
+- Wenn ein Benutzer die Organisation mit einem persönlichen Gerät verlässt, das in Basic Mobility and Security registriert ist, können Sie verhindern, dass Organisationsinformationen mit diesem Benutzer verwendet werden, indem Sie eine Werkszurücksetzung durchführen.
+- Wenn Ihre Organisation benutzern mobile Geräte zur Verfügung stellt, müssen Sie Geräte möglicherweise von Zeit zu Zeit neu zuweisen. Wenn Sie ein Factory Reset auf einem Gerät durchführen, bevor sie einem neuen Benutzer zugewiesen werden, wird sichergestellt, dass alle vertraulichen Informationen des vorherigen Besitzers gelöscht werden.
 
 ## <a name="whats-the-user-and-device-impact"></a>Welche Auswirkungen haben Benutzer und Geräte?
 
-Die Zurücklöschung wird sofort an das mobile Gerät gesendet, und das Gerät wird in Azure Active Directory als nicht kompatibel gekennzeichnet. Während alle Daten entfernt werden, wenn ein Gerät auf die Werkseinstellungen zurückgesetzt wird, wird in der folgenden Tabelle beschrieben, welche Inhalte für jeden Gerätetyp entfernt werden, wenn Sie Unternehmensdaten entfernen.
+Die Löschung wird sofort an das mobile Gerät gesendet, und das Gerät ist in Azure Active Directory als nicht kompatibel gekennzeichnet. Während alle Daten entfernt werden, wenn ein Gerät auf die Werkseinstellungen zurückgesetzt wird, wird in der folgenden Tabelle beschrieben, welche Inhalte für jeden Gerätetyp entfernt werden, wenn ein Gerät beim Entfernen von Unternehmensdaten entfernt wird.
 
-|**Inhaltsfeind**|**iOS 10 und höher**|**Android 5 und höher**|
+|**Auswirkungen auf Inhalte**|**iOS 10 und höher**|**Android 5 und höher**|
 |:-----|:-----|:-----|
-|Microsoft 365-App-Daten werden gelöscht, wenn das Gerät durch Intune App Protection-Richtlinien geschützt ist. Die Apps werden nicht entfernt. Bei Geräten, die nicht durch #A0 (Mobile Application Management) geschützt sind, werden zwischengespeicherte Daten von Outlook und OneDrive nicht entfernt.<br/>**Hinweis** Zum Anwenden von Intune-App-Schutzrichtlinien benötigen Sie eine Intune-Lizenz.|Ja|Ja|
+|Microsoft 365-App-Daten werden gelöscht, wenn das Gerät durch Intune App Protection-Richtlinien geschützt ist. Die Apps werden nicht entfernt. Für Geräte, die nicht durch #A0 (Mobile Application Management) geschützt sind, entfernen Outlook und OneDrive keine zwischengespeicherten Daten.<br/>**Hinweis** Zum Anwenden von Intune-App-Schutzrichtlinien benötigen Sie eine Intune-Lizenz.|Ja|Ja|
 |Richtlinieneinstellungen, die von Basic Mobility and Security auf Geräte angewendet werden, werden nicht mehr erzwungen. Benutzer können die Einstellungen ändern.|Ja|Ja|
 |Von Basic Mobility and Security erstellte E-Mail-Profile werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|Ja|Nicht zutreffend|
 >[!NOTE]
->Die Unternehmensportal-App ist im App Store für iOS und im Play Store für Android verfügbar.
+>Die Unternehmensportal-App ist im App Store für iOS und im Play Store für Android-Geräte verfügbar.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

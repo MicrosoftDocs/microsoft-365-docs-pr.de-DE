@@ -20,12 +20,12 @@ ms.custom:
 description: Administratoren erfahren, wie Sie mithilfe von Attack Simulationsschulungen simulierte Phishing- und Kennwortangriffe in ihren Microsoft 365 E5- oder Microsoft Defender for Office 365 Plan 2-Organisationen ausführen können.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a33c212f7d0fd6b0617a8059b03ac90de03fba16
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 38e16ecd8185b9e8542f58613790585b5aab73ee
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407475"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50820234"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Erste Schritte mit dem Angriffssimulationstraining
 
@@ -109,3 +109,6 @@ Schrittweise Anweisungen zum Erstellen einer Nutzlast für die Verwendung in ein
 ### <a name="gaining-insights"></a>Gewinnen von Einblicken
 
 Schrittweise Anweisungen zum Gewinnen von Einblicken in die Berichterstellung finden Sie unter [Gain insights through Attack simulation training](attack-simulation-training-insights.md).
+
+> [!NOTE]
+> Der **Angriffssimulator** verwendet sichere Links in Defender for Office 365, um Klickdaten für die URL in der Nutzlastnachricht, die an zielorientierte Empfänger einer Phishingkampagne gesendet wird, sicher nachverfolgt zu werden, auch wenn die Einstellung Benutzerklicks nicht nachverfolgen unter Richtlinien für sichere Links aktiviert ist.

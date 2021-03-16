@@ -106,6 +106,8 @@
           href: sit-edm-wizard.md
         - name: 'Ändern Sie das Schema für die genaue Datenübereinstimmung, um eine konfigurierbare Übereinstimmung zu verwenden'
           href: sit-modify-edm-schema-configurable-match.md
+        - name: Erstellen von Benachrichtigungen für exakte Datenübereinstimmungsaktivitäten (Vorschau)
+          href: sit-edm-notifications-activities.md
         - name: Erstellen eines benutzerdefinierten Typs vertraulicher Informationen – Security & Compliance Center
           href: create-a-custom-sensitive-information-type.md
         - name: Erstellen eines benutzerdefinierten Typs vertraulicher Informationen – PowerShell

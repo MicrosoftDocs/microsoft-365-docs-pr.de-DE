@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Erfahren Sie, wie Sie steuern können, welche Benutzer Microsoft 365-Gruppen erstellen können.
-ms.openlocfilehash: 3fa430e44c272e5ababbfb0e4befba707c72c1ba
-ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
-ms.translationtype: HT
+ms.openlocfilehash: f2d1a2062d43af750a84984aab66329ed6a4db22
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50122384"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50819702"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Verwalten von Personen, die Microsoft 365-Gruppen erstellen können
 
@@ -49,7 +49,7 @@ Durch die in diesem Artikel beschriebenen Schritte wird nicht verhindert, dass M
 - Verzeichnisautoren: Azure AD
 - SharePoint-Administrator: SharePoint Admin Center, Azure AD
 - Microsoft Teams-Dienstadministrator: Microsoft Teams Admin Center, Azure AD
-- Benutzerverwaltungsadministrator: Microsoft 365 Admin Center, Yammer, Azure AD
+- Benutzeradministrator: Microsoft 365 Admin Center, Azure AD
 
 Wenn Sie Mitglied einer dieser Rollen sind, können Sie Microsoft 365-Gruppen für Benutzer mit eingeschränktem Zugriff erstellen und anschließend den Benutzer als Besitzer der Gruppe zuweisen.
 

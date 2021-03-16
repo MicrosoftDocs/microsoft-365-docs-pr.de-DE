@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: Erfahren Sie, wie Sie Microsoft 365-Mandanten migrieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09b2bc77333afaf1991064369846241328db85ff
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: f6e8277a7ca768db3a4a4acd2488859b7764a40c
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461643"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50819714"
 ---
 # <a name="microsoft-365-tenant-to-tenant-migrations"></a>Migrationen von Mandanten zu Mandanten in Microsoft 365
 
@@ -34,7 +34,7 @@ Verwenden Sie das Architekturmodell für die [Mandanten-zu-Mandant-Migration,](h
 
 [![Mandanten-zu-Mandant-Migrationsmodell](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 
 
-Sie laden dieses Modell im [PDF-Format](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) herunter und drucken es auf Brief-, Rechts- oder Tabloidpapier (11 x 17).
+Sie laden dieses Modell im [PDF-Format](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) herunter und drucken es auf Brief-, Rechts- oder Tabloidpapier (11 x 17).
 
 Dieses Modell bietet Anleitungen und einen Ausgangspunkt für die Planung mit Abschnitten zu folgenden Bereichen:
 

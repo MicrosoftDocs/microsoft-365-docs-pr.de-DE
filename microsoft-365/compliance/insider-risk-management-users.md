@@ -1,6 +1,6 @@
 ---
-title: Benutzerdashboard für das Insider Risikomanagement
-description: Informationen zum benutzerdashboard für das Insider Risikomanagement in Microsoft 365
+title: Insider-Risikomanagement-Benutzerdashboard
+description: Erfahren Sie mehr über das Insider-Risikomanagement-Benutzerdashboard in Microsoft 365
 keywords: Microsoft 365, Insider-Risikomanagement, Risikomanagement, Compliance
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -12,109 +12,106 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 224221950104b5dee6a6e8f179db34ee6fad014e
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: e59fb8a32275a2ef7c4865e93400b97ad5560df5
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208771"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50819999"
 ---
-# <a name="insider-risk-management-users-dashboard"></a>Benutzerdashboard für das Insider Risikomanagement
+# <a name="insider-risk-management-users-dashboard"></a>Insider-Risikomanagement-Benutzerdashboard
 
-Das **benutzerdashboard** ist ein wichtiges Tool im Insider Risk Management-Workflow und hilft Ermittlern und Analysten, ein vollständigeres Verständnis der Risiko Aktivitäten zu haben. Dieses Dashboard bietet Ansichten und Verwaltungsfunktionen zur Erfüllung der administrativen Anforderungen zwischen dem Erstellen von Richtlinien für Insider Risiken und der Verwaltung von Insider Risiko-Management-Fällen.
+Das **Benutzerdashboard** ist ein wichtiges Tool im Insider-Risikomanagement-Workflow und hilft Ermittlern und Analysten, ein vollständigeres Verständnis der Risikoaktivitäten zu haben. Dieses Dashboard bietet Ansichten und Verwaltungsfeatures, um administrative Anforderungen zwischen der Erstellung von Insider-Risikomanagementrichtlinien und der Verwaltung von Insider-Risikomanagementfällen zu erfüllen.
 
-Nachdem Benutzer den Richtlinien für das Insider Risikomanagement hinzugefügt wurden, evaluieren Hintergrundprozesse automatisch Benutzeraktivitäten für [auslösende Indikatoren](insider-risk-management-settings.md#indicators). Nachdem Auslöse Indikatoren vorhanden sind, werden Benutzeraktivitäten Risikobewertungen zugeordnet. Einige dieser Aktivitäten führen möglicherweise zu einer Warnung bei Insider Risiken, aber einige Aktivitäten entsprechen möglicherweise nicht einer minimalen Risiko Bewertungsstufe, und es wird keine Insider Risiko Warnung erstellt. Das **benutzerdashboard** ermöglicht es Ihnen, Benutzer mit diesen Indikatoren und Risikobewertungen sowie Benutzern mit aktiven Insider Risikowarnungen anzuzeigen.
+Nachdem Benutzer zu Insider-Risikomanagementrichtlinien hinzugefügt wurden, werden in Hintergrundprozessen automatisch Benutzeraktivitäten für das Auslösen [von Indikatoren ausgewertet.](insider-risk-management-settings.md#indicators) Nachdem Auslösende Indikatoren vorhanden sind, werden Benutzeraktivitäten Risikoergebnisse zugewiesen. Einige dieser Aktivitäten können zu einer Warnung vor Insiderrisiken führen, aber einige Aktivitäten erfüllen möglicherweise nicht die Mindestrisikopunktzahl, und es wird keine Warnung für Insiderrisiken erstellt. Mit **dem Benutzerdashboard** können Sie Benutzer mit diesen Arten von Indikatoren und Risikoergebnissen sowie Benutzer mit aktiven Insiderrisikowarnungen anzeigen.
 
-Darüber hinaus gibt es möglicherweise Szenarien, in denen Sie den Insider Risikorichtlinien vorübergehend Benutzer hinzufügen müssen, nachdem außerhalb des Insider Risikomanagement-Workflows ein ungewöhnliches Ereignis gemeldet wurde. Das **benutzerdashboard** ermöglicht Ihnen das manuelle Hinzufügen eines Benutzers zu einer Insider Risiko Richtlinie für einen bestimmten Zeitraum und die Umgehung der Anforderung, dass ein Benutzer über ein auslösendes Symbol verfügt. Diese Benutzer werden immer im Dashboard Benutzer angezeigt, wenn Sie einer Richtlinie aktiv zugewiesen sind.
+Erfahren Sie mehr darüber, wie das Benutzerdashboard Benutzer in den folgenden Szenarien anzeigt:
 
-Erfahren Sie mehr darüber, wie das benutzerdashboard Benutzer in den folgenden Szenarien anzeigt:
+- Benutzer mit aktiven Insiderrisikorichtlinienwarnungen
+- Benutzer mit auslösenden Ereignissen
+- Vorübergehend zu Richtlinien hinzugefügte Benutzer
 
-- Dashboard-Benutzer mit aktiven Insider-Risikorichtlinien Warnungen
-- Dashboard-Benutzer mit auslösenden Indikatoren
-- Dashboard-Benutzer wurden vorübergehend zu Richtlinien hinzugefügt
+## <a name="users-with-active-insider-risk-policy-alerts"></a>Benutzer mit aktiven Insiderrisikorichtlinienwarnungen
 
-## <a name="dashboard-users-with-active-insider-risk-policy-alerts"></a>Dashboard-Benutzer mit aktiven Insider-Risikorichtlinien Warnungen
+Das **Benutzerdashboard** zeigt automatisch alle Benutzer mit aktiven Insiderrisikorichtlinienwarnungen an. Diese Benutzer mit Warnungen verfügen sowohl über einen auslösenden Indikator als auch über ein Aktivitätsrisiko, das die Anforderungen für die Erstellung einer Insiderrisikowarnung erfüllt. Aktivitäten für diese Benutzer werden angezeigt,  indem der Benutzer im Benutzerdashboard ausgewählt wird und zur Registerkarte **Benutzeraktivität navigiert** wird.
 
-Das **benutzerdashboard** zeigt automatisch alle Benutzer mit aktiven Insider Risikorichtlinien Warnungen an. Diese Benutzer mit Warnungen haben sowohl einen Auslöse Indikator als auch eine Aktivitäts Risikobewertung, die die Anforderungen für die Erstellung einer Insider Risiko Warnung erfüllt. Aktivitäten für diese Benutzer werden angezeigt, indem der Benutzer im **Dashboard Benutzer** ausgewählt und zur Registerkarte **Benutzeraktivität** navigiert wird.
+## <a name="users-with-triggering-events"></a>Benutzer mit auslösenden Ereignissen
 
-## <a name="dashboard-users-with-triggering-indicators"></a>Dashboard-Benutzer mit auslösenden Indikatoren
+Das **Benutzerdashboard** zeigt automatisch alle Benutzer mit auslösenden Ereignissen an, die jedoch keine Aktivitätsrisikosentwertung haben, die eine Insiderrisikowarnung erstellen würde. Beispielsweise wird ein Benutzer mit einem gemeldeten Kündigungsdatum angezeigt, da diese Aktivität ein auslösendes Ereignis ist, aber keine Aktivität mit einem Risikoergebnis ist. Aktivitäten für diese Benutzer werden angezeigt,  indem der Benutzer im Benutzerdashboard ausgewählt wird und zur Registerkarte **Benutzeraktivität navigiert** wird.
 
-Das **benutzerdashboard** zeigt automatisch alle Benutzer mit auslösenden Indikatoren an, die jedoch keine Aktivitäts Risikobewertung aufweisen, die eine Insider Risiko Warnung verursachen würde. Beispielsweise wird ein Benutzer mit einem gemeldeten Rücktrittsdatum angezeigt, da dieses Ereignis ein Auslöse Indikator ist, aber keine Aktivität mit einem Risikofaktor ist. Aktivitäten für diese Benutzer werden angezeigt, indem der Benutzer im **Dashboard Benutzer** ausgewählt und zur Registerkarte **Benutzeraktivität** navigiert wird.
+## <a name="users-added-temporarily-to-policies"></a>Vorübergehend zu Richtlinien hinzugefügte Benutzer
 
-## <a name="dashboard-users-added-temporarily-to-policies"></a>Dashboard-Benutzer wurden vorübergehend zu Richtlinien hinzugefügt
+Das **Benutzerdashboard** enthält Benutzer, die insidern Risikomanagementrichtlinien nach einem ungewöhnlichen Ereignis außerhalb des Insider-Risikomanagementworkflows hinzugefügt wurden. Das vorübergehende Hinzufügen von Benutzern (aus dem Richtliniendashboard) ist auch eine Möglichkeit, mit der Bewertung von Benutzeraktivitäten für eine Insider-Risikomanagementrichtlinie zum Testen der Richtlinie zu beginnen, auch wenn kein erforderlicher Connector konfiguriert ist.
 
-Das **benutzerdashboard** ermöglicht das vorübergehende Hinzufügen von Benutzern zu einer vorhandenen Insider Risiko-Verwaltungsrichtlinie nach einem ungewöhnlichen Ereignis außerhalb des Insider Risikomanagement-Workflows. Das vorübergehende Hinzufügen von Benutzern ist auch eine Möglichkeit zum Hinzufügen von Benutzern zu einer Richtlinie für das Insider Risikomanagement zum Testen der Richtlinie, selbst wenn kein erforderlicher Connector konfiguriert ist.
-
-Wenn ein Benutzer einer Richtlinie manuell hinzugefügt wird, werden die Benutzeraktivitäten für die vorhergehenden 90 Tage ausgewertet und zur Zeitachse der **Benutzeraktivität** hinzugefügt. Beispielsweise haben Sie einen Benutzer, der sich derzeit nicht in einer Insider Risiko Richtlinie befindet, und der Benutzer hat Datenverlust Aktivitäten an die Rechtsabteilung in Ihrer Organisation gemeldet. Die Rechtsabteilung empfiehlt, dass Sie neue kurzfristige Überwachungsanforderungen für den Benutzer konfigurieren. Sie können den Benutzer vorübergehend Ihrer *Datenverlust* Richtlinie für einen bestimmten Zeitraum (Aktivierungsfenster) zuweisen. Alle Benutzer, die vorübergehend hinzugefügt werden, werden im **benutzerdashboard** angezeigt, da für die Auslöse Indikator Anforderungen verzichtet wird.
+Wenn ein Benutzer manuell zu einer Richtlinie hinzugefügt wird, werden die Benutzeraktivitäten für die vorherigen 90 Tage als Bewertung und zur Zeitachse der **Benutzeraktivität** hinzugefügt. Beispielsweise wird einem Benutzer derzeit keine Risikopunkte für eine Insiderrisikorichtlinie zugewiesen, und dem Benutzer werden Datenleckaktivitäten an die Rechtsabteilung in Ihrer Organisation gemeldet. Die Rechtsabteilung empfiehlt, neue kurzfristige Überwachungsanforderungen für den Benutzer zu konfigurieren. Sie können den Benutzer für einen bestimmten Zeitraum (Aktivierungsfenster) vorübergehend Ihrer *Datenlecksrichtlinie* zuweisen. Alle vorübergehend hinzugefügten Benutzer werden  im Benutzerdashboard angezeigt, da auf auslösende Ereignisanforderungen verzichtet wird.
 
 >[!NOTE]
->Es kann mehrere Stunden dauern, bis neue manuell hinzugefügte Benutzer im **Dashboard Benutzer**angezeigt werden. Aktivitäten für die letzten 90 Tage für diese Benutzer können bis zu 24 Stunden dauern, bis Sie angezeigt werden. Um Aktivitäten für manuell hinzugefügte Benutzer anzuzeigen, wählen Sie den Benutzer im **Dashboard Benutzer** aus, und öffnen Sie die Registerkarte **Benutzeraktivität** im Detailbereich.
+>Es kann mehrere Stunden dauern, bis neue manuell hinzugefügte Benutzer im Benutzerdashboard **angezeigt werden.** Die Anzeige von Aktivitäten für die vorherigen 90 Tage für diese Benutzer kann bis zu 24 Stunden dauern. Um Aktivitäten für manuell hinzugefügte Benutzer anzuzeigen, wählen  Sie den Benutzer im Dashboard Benutzer **aus,** und öffnen Sie die Registerkarte Benutzeraktivität im Detailbereich.
 
-Der Benutzer wird automatisch aus der Richtlinie "Insider" und dem **benutzerdashboard** entfernt, wenn die im **Aktivierungsfenster** definierte Zeit abläuft, wenn:
+Der Benutzer wird automatisch  aus dem Benutzerdashboard entfernt und die Bewertung wird beendet, wenn die im Aktivierungsfenster definierte Zeit **abläuft,** wenn:
 
-- der Benutzer hat keine auslösenden Indikatoren oder Warnungen bei Insider Risikorichtlinien und
-- Wenn die Dauer des manuell definierten **Aktivierungsfensters** länger ist als die Dauer des globalen Richtlinien **Aktivierungsfensters** . 
+- Der Benutzer hat keine zusätzlichen auslösenden Ereignisse oder Richtlinienwarnungen für Insiderrisiken und
+- wenn die manuell definierte Dauer **des Aktivierungsfensters** länger als die Dauer des globalen Richtlinienfensters ist. 
 
-Die Einstellung für das **Aktivierungsfenster** mit der längsten Dauer überschreibt immer die Einstellung für das **Aktivierungsfenster** mit kürzerer Dauer. Sie haben beispielsweise das **Fenster Aktivierung** auf der Registerkarte globale **Richtlinie Zeitrahmen** in den globalen Einstellungen für das Insider Risikomanagement für 15 Tage konfiguriert, das automatisch auf alle ihre Insider Risikorichtlinien angewendet wird. 
+Die **Einstellung des** Aktivierungsfensters mit  der längsten Dauer überschreibt immer die Einstellung des Aktivierungsfensters mit einer kürzeren Dauer. Sie haben z. B.  das **Aktivierungsfenster** auf der Registerkarte globale Zeitrahmen für Richtlinien in den globalen Einstellungen für insider risk management für 15 Tage konfiguriert, das automatisch auf alle Ihre Insiderrisikorichtlinien angewendet wird. 
 
-Sie fügen vorübergehend einen Benutzer zu Ihren *Datenlecks* Insider Risiko Richtlinie hinzu und definieren 30 Tage als **Aktivierungsfenster** für diesen Benutzer. Die Einstellung des globalen **Aktivierungsfensters** von 15 Tagen wird durch Definieren der Einstellung für das **Aktivierungsfenster** von 30 Tagen für den vorübergehend hinzugefügten Benutzer außer Kraft gesetzt. Der vorübergehend hinzugefügte Benutzer verbleiben im **Dashboard Benutzer** und sind für die Richtlinie 30 Tage im Bereich.
+Sie fügen ihrer Richtlinie für Insiderrisiken für *Datenlecks* vorübergehend einen Benutzer hinzu und definieren 30 Tage als Aktivierungsfenster **für** diesen Benutzer. Die Einstellung **des globalen** Aktivierungsfensters von 15 Tagen wird überschrieben, indem die Einstellung des Aktivierungsfensters von 30 Tagen für den vorübergehend hinzugefügten Benutzer definiert wird.  Der vorübergehend hinzugefügte Benutzer  bleibt im Benutzerdashboard und ist für die Richtlinie 30 Tage lang im Bereich.
 
-Im umgekehrten Szenario, in dem die Einstellung für das globale **Aktivierungs** Fenster länger ist als die Einstellung für das **Aktivierungsfenster** , die für einen temporär hinzugefügten Benutzerdefiniert wurde, würde die Einstellung des globalen **Aktivierungs** Fensters die Einstellung des **Aktivierungsfensters** für den vorübergehend hinzugefügten Benutzer außer Kraft setzen Der vorübergehend hinzugefügte Benutzer verbleiben im **Dashboard Benutzer** und werden im Bereich für die Richtlinie für die Anzahl der Tage, die in den Einstellungen für das globale **Aktivierungsfenster** definiert sind.
+Im gegenteiligen Szenario,  in dem die Einstellung des globalen Aktivierungsfensters länger  ist als die  Einstellung für das Aktivierungsfenster, die für einen vorübergehend hinzugefügten Benutzer definiert ist, würde die Einstellung des globalen Aktivierungsfensters die Einstellung Aktivierungsfenster für den vorübergehend hinzugefügten Benutzer außer Kraft setzen.  Der vorübergehend hinzugefügte Benutzer  bleibt im Benutzerdashboard und ist für die Richtlinie für die Anzahl der Tage, die in den einstellungen des globalen Aktivierungsfensters definiert sind, im **Bereich.**
 
-## <a name="view-user-information-on-the-users-dashboard"></a>Anzeigen von Benutzerinformationen im Dashboard "Benutzer"
+## <a name="view-user-information-on-the-users-dashboard"></a>Anzeigen von Benutzerinformationen im Benutzerdashboard
 
-Jeder Benutzer, der im **Dashboard Benutzer** angezeigt wird, verfügt über die folgenden Informationen:
+Jeder Benutzer, der im **Benutzerdashboard angezeigt wird,** verfügt über die folgenden Informationen:
 
-- **Users**: der Benutzername für einen Benutzer. Dieses Feld wird anonymisiert, wenn die globale Anonymisierungs Einstellung für das Insider Risikomanagement aktiviert ist.
-- **Risikostufe**: das aktuelle berechnete Risikoniveau des Benutzers. Dieser Wert wird alle 24 Stunden berechnet, und bezieht die Risikobewertungen aller aktiver Warnungen für den betreffenden Benutzer in die Berechnung mit ein. Für Benutzer mit nur auslösenden Indikatoren ist die Risikostufe gleich NULL.
-- **Aktive Warnungen**: die Anzahl der aktiven Warnungen für alle Richtlinien.
-- **Bestätigte Verstöße**: die Anzahl der Fälle, die als *bestätigte Richtlinienverletzung* für den Benutzer aufgelöst wurden.
-- **Case**: der aktuell aktive Fall für den Benutzer.
+- **Benutzer**: Der Benutzername für einen Benutzer. Dieses Feld wird anonymisiert, wenn die globale Anonymisierungseinstellung für insider risk management aktiviert ist.
+- **Risikostufe:** Die aktuelle berechnete Risikostufe des Benutzers. Dieser Wert wird alle 24 Stunden berechnet, und bezieht die Risikobewertungen aller aktiver Warnungen für den betreffenden Benutzer in die Berechnung mit ein. Für Benutzer mit nur auslösenden Indikatoren ist die Risikostufe null.
+- **Aktive Warnungen:** Die Anzahl der aktiven Warnungen für alle Richtlinien.
+- **Bestätigte Verstöße:** Die Anzahl der Fälle, die als *bestätigter Richtlinienverstoß* für den Benutzer aufgelöst wurden.
+- **Case**: Der aktuelle aktive Fall für den Benutzer.
 
-![Benutzerdashboard für das Insider Risikomanagement](../media/insider-risk-users-dashboard.png)
-
->[!NOTE]
->Die Anzahl der Benutzer, die im **Dashboard Benutzer** angezeigt werden, ist möglicherweise in einigen Fällen, abhängig vom Umfang aktiver Warnungen und übereinstimmender Richtlinien, limitiert. Benutzer mit aktiven Warnungen werden im **Dashboard Benutzer** angezeigt, wenn die Warnungen generiert werden, und es kann in seltenen Fällen vorkommen, dass die maximale Anzahl angezeigter Benutzer erreicht wird. In diesem Fall werden Benutzer mit aktiven Warnungen, die nicht angezeigt werden, dem **Dashboard "Benutzer** " hinzugefügt, da vorhandene Benachrichtigungen für Benutzer noch älter sind.
-
-## <a name="view-user-details"></a>Anzeigen von Benutzer Details
-
-Wenn Sie weitere Details zur Risiko Aktivität für einen Benutzer anzeigen möchten, öffnen Sie den Bereich Benutzer Details, indem Sie auf einen Benutzer im **Dashboard Benutzer**doppelklicken. Im Detailbereich können Sie die folgenden Informationen anzeigen:
-
-- Registerkarte ' **Benutzerprofil** '
-    - **Name und Title**: der Name und der Position-Titel für den Benutzer aus Azure Active Directory. Diese Benutzerfelder werden anonymisiert oder leer, wenn die globale Anonymisierungs Einstellung für das Insider Risikomanagement aktiviert ist.
-    - **Benutzer-e-Mail**: die e-Mail-Adresse für den Benutzer.
-    - **Alias**: der Netzwerk Alias für den Benutzer.
-    - **Organisation oder Abteilung**: die Organisation oder Abteilung für den Benutzer.
-
-- Registerkarte " **Benutzeraktivität** "
-    - **Verlauf der letzten Benutzeraktivität**: listet sowohl auslösende Indikatoren als auch Insider Risikoindikatoren für Benutzeraktivitäten bis zu den letzten 180 Tagen auf. Alle Aktivitäten, die für Insider Risikoindikatoren relevant sind, werden ebenfalls bewertet, obwohl die Aktivitäten möglicherweise eine Insider Risiko Warnung ausgelöst haben. Beispiele für auslösende Indikatoren sind möglicherweise ein Rücktrittsdatum oder das letzte geplante Arbeitsdatum für den Benutzer. Bei Insider Risikoindikatoren handelt es sich um Aktivitäten, die für ein Element des Risikos bestimmt sind und in Richtlinien definiert sind, in denen der Benutzer enthalten ist. Ereignis-und Risiko Aktivitäten werden mit dem letzten Element aufgeführt, das zuerst aufgeführt wird.
-
-## <a name="temporarily-add-a-user-to-a-policy"></a>Vorübergehendes Hinzufügen eines Benutzers zu einer Richtlinie
-
-Wenn Sie einen Benutzer vorübergehend zu einer Richtlinie für Insider Risiken hinzufügen möchten, verwenden Sie die Registerkarte **Benutzer** in der Lösung für das **Insider Risikomanagement** im Microsoft 365 Compliance Center. Benutzer haben die Anforderungen für die Richtlinie, der Sie hinzugefügt wurden, manuell für die Umgehung von Auslösern hinzugefügt und werden im **Dashboard Benutzer**angezeigt. Wenn Sie einen Benutzer dauerhaft zu einer Richtlinie für Insider Risiken hinzufügen möchten, verwenden Sie den Richtlinien-Assistenten.
-
-Führen Sie die folgenden Schritte aus, um einen Benutzer zu einer vorhandenen Insider Risiko Richtlinie hinzuzufügen:
-
-1. Wechseln Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu **Insider Risk Management** , und wählen Sie die Registerkarte **Benutzer** aus.
-2. Wählen Sie auf der Symbolleiste **einen Benutzer zu einer Richtlinie hinzufügen** aus.
-3. Beginnen Sie im Dialogfeld **neuen Benutzer hinzufügen** mit der Eingabe eines Benutzernamens in das Feld **Benutzer** . Wählen Sie den Benutzer aus, den Sie einer Richtlinie hinzufügen möchten.
-4. Wählen Sie den Dropdownpfeil für das Feld **Richtlinie** aus, um konfigurierte Richtlinien für die Verwaltung von Insider Risiken anzuzeigen. Wählen Sie die Richtlinie aus, der der Benutzer hinzugefügt werden soll.
-5. Verwenden Sie das Slider-Steuerelement des **Aktivierungsfensters** , um zu definieren, wie lange der Benutzer in eine Richtlinie aufgenommen und im benutzerdashboard angezeigt wird. Die von Ihnen angegebene Zeit legt fest, wie lange die Richtlinie für diesen Benutzer aktiv ist und beginnt, wenn die erste Warnung generiert wird oder wenn ein auslösender Indikator (wie eine DLP-Richtlinienübereinstimmung) erkannt wird. Der Bereich für das **Aktivierungsfenster** beträgt 5 bis 30 Tage.
-6. Wählen Sie **Hinzufügen** und **bestätigen** Sie dann, um den Benutzer zur Richtlinie hinzuzufügen.
+![Dashboard für Insider-Risikomanagement-Benutzer](../media/insider-risk-users-dashboard.png)
 
 >[!NOTE]
->Es kann mehrere Stunden dauern, bis neue manuell hinzugefügte Benutzer im **Dashboard Benutzer**angezeigt werden. Aktivitäten für die letzten 90 Tage für diese Benutzer können bis zu 24 Stunden dauern, bis Sie angezeigt werden. Um Aktivitäten für manuell hinzugefügte Benutzer anzuzeigen, wählen Sie den Benutzer im **Dashboard Benutzer** aus, und öffnen Sie die Registerkarte **Benutzeraktivität** im Detailbereich.
+>Die Anzahl der Benutzer,  die im Benutzerdashboard angezeigt werden, kann je nach Umfang der aktiven Warnungen und übereinstimmenden Richtlinien in einigen Fällen begrenzt sein. Benutzer mit aktiven Warnungen  werden im Benutzerdashboard angezeigt, wenn die Warnungen generiert werden, und es kann selten fälle sein, in denen die maximale Anzahl angezeigter Benutzer erreicht wird. Wenn dieser Grenzwert eintritt, werden Benutzer mit aktiven Warnungen,  die nicht angezeigt werden, dem Benutzerdashboard hinzugefügt, wenn vorhandene Benutzerwarnungen triaged werden.
 
-## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>Ausführen von automatisierten Aufgaben mit Power Automation Flows für einen Benutzer
+## <a name="view-user-details"></a>Anzeigen von Benutzerdetails
 
-Mit den empfohlenen Power-Automatisierungs Flüssen können Risiko Ermittler und Analysten schnell Aktionen durchführen:
+Um weitere Details zu den Risikoaktivitäten für einen Benutzer anzuzeigen, öffnen Sie den Benutzerdetailsebereich, indem Sie im Benutzerdashboard auf einen **Benutzer doppelklicken.** Im Detailbereich können Sie die folgenden Informationen anzeigen:
 
-- Benachrichtigen der Benutzer, wenn Sie einer Insider Risiko Richtlinie hinzugefügt werden
+- **Registerkarte "Benutzerprofil"**
+    - **Name und Titel:** Der Name und der Positionstitel für den Benutzer aus Azure Active Directory. Diese Benutzerfelder werden anonymisiert oder leer, wenn die globale Anonymisierungseinstellung für das Insiderrisikomanagement aktiviert ist.
+    - **Benutzer-E-Mail:** Die E-Mail-Adresse des Benutzers.
+    - **Alias**: Der Netzwerkalias für den Benutzer.
+    - **Organisation oder Abteilung:** Die Organisation oder Abteilung für den Benutzer.
 
-So können Sie Power Automation Flows für einen Insider Risk Management-Benutzer ausführen, verwalten oder erstellen:
+- **Registerkarte "Benutzeraktivität"**
+    - **Verlauf der letzten Benutzeraktivität:** Listet sowohl auslösende Indikatoren als auch Insiderrisikoindikatoren für Benutzeraktivitäten bis zu den letzten 180 Tagen auf. Alle Aktivitäten, die für Insiderrisikoindikatoren relevant sind, werden ebenfalls als Bewertungsergebnis verwendet, obwohl die Aktivitäten möglicherweise eine Warnung vor Insiderrisiken ausgelöst haben. Triggering indicator examples may be a resignation date or the last scheduled date of work for the user. Insider-Risikoindikatoren sind Aktivitäten, die bestimmt sind, dass sie ein Risikoelement haben und in Richtlinien definiert sind, in die der Benutzer einbezogen wird. Ereignis- und Risikoaktivitäten werden mit dem neuesten zuerst aufgeführten Element aufgelistet.
 
-1. Wählen Sie auf der Symbolleiste für Benutzeraktionen **automatisieren** aus.
-2. Wählen Sie den auszuführenden Power-Automatisierungs Fluss aus, und wählen Sie **Ablaufsteuerung**aus.
-3. Klicken Sie nach Abschluss des Ablaufs auf **Fertig**.
+## <a name="remove-users-from-in-scope-assignment-to-policies"></a>Entfernen von Benutzern aus der Bereichszuweisung zu Richtlinien
 
-Weitere Informationen zu Power Automation Flows für Insider Risk Management finden Sie unter [Erste Schritte mit Einstellungen für das Insider Risikomanagement](insider-risk-management-settings.md#power-automate-flows-preview).
+Es kann Szenarien gibt, in denen Sie die Zuweisung von Risikoergebnissen zu den Aktivitäten eines Benutzers in Insider-Risikomanagementrichtlinien beenden müssen. Verwenden Sie Benutzer  **auf** der Seite Benutzerdashboard entfernen, um die Zuweisung von Risikoergebnissen für einen oder mehrere Benutzer aus allen Insider-Risikomanagementrichtlinien zu beenden, für die sie sich derzeit befinden. Diese Aktion entfernt Benutzer nicht aus der allgemeinen Richtlinienzuweisung (wenn Sie Benutzer oder Gruppen zu einer Richtlinienkonfiguration hinzufügen), sondern entfernt die Benutzer einfach aus der aktiven Verarbeitung durch Richtlinien nach aktuellen auslösenden Ereignissen. Wenn die Benutzer in Zukunft über ein weiteres auslösendes Ereignis verfügen, werden die Risikoergebnisse aus Richtlinien automatisch wieder den Benutzern zugewiesen. Vorhandene Warnungen oder Fälle für diesen Benutzer werden nicht entfernt.
+
+>[!NOTE]
+>Das Entfernen eines Benutzers aus einer Richtlinie kann einige Minuten dauern. Sobald der Vorgang abgeschlossen ist, wird der Benutzer nicht mehr auf der Seite Benutzer aufgeführt. Wenn der entfernte Benutzer über aktive Warnungen oder Fälle verfügt, bleibt der Benutzer auf der Seite Benutzer, und die Details für den Benutzer zeigen, dass er für eine Richtlinie nicht mehr im Bereich ist.
+
+Führen Sie die folgenden Schritte aus, um Benutzer manuell aus dem Bereichsstatus in allen Insider-Risikomanagementrichtlinien zu entfernen:
+
+1. Wechseln Sie [im Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Benutzer** aus.
+2. Wählen Sie **im Benutzerdashboard** den Benutzer oder die Benutzer aus, die In-Scope in Insider-Risikomanagementrichtlinien entfernt werden möchten.
+3. Wählen **Sie Benutzer entfernen aus.**
+4. Wählen Sie **im Bereich** Benutzer entfernen die Option **Entfernen** oder **Abbrechen** aus, um die Änderungen zu verwerfen und das Dialogfeld zu schließen.
+5. Wählen **Sie im** Bestätigungsbereich Entfernen aus, um den Benutzer zu entfernen.
+
+## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>Ausführen automatisierter Aufgaben mit Power Automate-Flüssen für einen Benutzer
+
+Mithilfe empfohlener Power Automate-Flüsse können Risikoermittler und Analysten schnell Maßnahmen ergreifen, um:
+
+- Benachrichtigen von Benutzern, wenn sie einer Insiderrisikorichtlinie hinzugefügt werden
+
+So führen, verwalten oder erstellen Sie Power Automate-Flüsse für einen Insider-Risikomanagement-Benutzer:
+
+1. Wählen **Sie automatisieren** auf der Symbolleiste für Benutzeraktion aus.
+2. Wählen Sie den zu ausführende Power Automate-Fluss aus, und wählen Sie **dann Flow ausführen aus.**
+3. Nachdem der Fluss abgeschlossen ist, wählen Sie **Fertig aus.**
+
+Weitere Informationen zu Power Automate-Flüssen für insider risk management finden Sie unter [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows-preview).

@@ -22,12 +22,12 @@ ms.custom:
 description: Administratoren können erfahren, wie das automatische Löschen (Zero-Hour Auto Purge, ZAP) zugestellte Nachrichten in einem Exchange Online-Postfach rückwirkend in den Junk-E-Mail-Ordner oder in die Quarantäne verschieben kann, bei der es sich rückwirkend um Spam oder Phishing handelt.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0f6cd7522581db1fbc594e9350c8712359498e3b
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: be47d8dfda68bfb6819b6423542970c7768c6ffb
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509290"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50820258"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Automatisches Löschen (Zero-Hour Auto Purge, ZAP) in Exchange Online
 
@@ -63,11 +63,11 @@ Schadsoftware-ZAP ist standardmäßig in Anti-Malware-Richtlinien aktiviert. Wei
 
 Für lese- oder **ungelesene** Nachrichten, die nach der Zustellung als Phishing identifiziert  werden, hängt das ERGEBNIS von der Aktion ab, die für ein Phishing-E-Mail-Filterergebnis in der entsprechenden Antispamrichtlinie konfiguriert ist. Die verfügbaren Filterungsaktionen für Phishing und deren mögliche ZAP-Ergebnisse werden in der folgenden Liste beschrieben:
 
-- **Hinzufügen von X-Header**, **vorkondierten Betreffzeile mit Text**: ZAP ergreift keine Aktion für die Nachricht.
+- X-Header hinzufügen, **Betreffzeile** vorab mit Text, **Nachricht** an **E-Mail-Adresse** umleiten, Nachricht löschen : ZAP ergreift keine Aktion für die Nachricht.
 
 - **Nachricht in Junk-E-Mail** verschieben: ZAP verschiebt die Nachricht in den Junk-E-Mail-Ordner, solange die Junk-E-Mail-Regel für das Postfach aktiviert ist (sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-E-Mail-Einstellungen für Exchange Online-Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Nachricht an E-Mail-Adresse** umleiten, **Nachricht löschen,** **Quarantänenachricht**: ZAP isoliert die Nachricht.
+- **Quarantänenachricht:** ZAP isoliert die Nachricht.
 
 Standardmäßig ist phish ZAP in Antispamrichtlinien aktiviert, und  die Standardaktion für das Phishing-E-Mail-Filter-Urteil ist **Quarantänenachricht,** was bedeutet, dass die Nachricht standardmäßig von phish ZAP isoliert wird.
 
@@ -77,11 +77,11 @@ Weitere Informationen zum Konfigurieren von Spamfilterungsverkündungen finden S
 
 Bei **ungelesenen** Nachrichten, die nach der Zustellung als Spam identifiziert werden,  hängt das Ergebnis des Zap von der Aktion ab, die für das Spamfilter-Urteil in der entsprechenden Antispamrichtlinie konfiguriert ist. Die verfügbaren Filterungsaktionen für Spam und deren mögliche ZAP-Ergebnisse werden in der folgenden Liste beschrieben:
 
-- **Hinzufügen von X-Header**, **vorkondierten Betreffzeile mit Text**: ZAP ergreift keine Aktion für die Nachricht.
+- X-Header hinzufügen, **Betreffzeile** vorab mit Text, **Nachricht** an **E-Mail-Adresse** umleiten, Nachricht löschen : ZAP ergreift keine Aktion für die Nachricht.
 
 - **Nachricht in Junk-E-Mail** verschieben: ZAP verschiebt die Nachricht in den Junk-E-Mail-Ordner, solange die Junk-E-Mail-Regel für das Postfach aktiviert ist (sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-E-Mail-Einstellungen für Exchange Online-Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Nachricht an E-Mail-Adresse** umleiten, **Nachricht löschen,** **Quarantänenachricht**: ZAP isoliert die Nachricht. Endbenutzer können ihre eigenen Nachrichten mit Spamquarantäne anzeigen und verwalten.
+- **Quarantänenachricht:** ZAP isoliert die Nachricht. Endbenutzer können ihre eigenen Nachrichten mit Spamquarantäne anzeigen und verwalten.
 
 Standardmäßig ist die Spam-ZAP in Antispamrichtlinien aktiviert,  und die Standardaktion für das Spamfilter-Urteil  ist **Verschieben** von Nachrichten in den Junk-E-Mail-Ordner, was bedeutet, dass die Spam-ZAP ungelesene Nachrichten standardmäßig in den Junk-E-Mail-Ordner verschiebt.
 

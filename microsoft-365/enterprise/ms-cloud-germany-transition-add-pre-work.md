@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
-ms.openlocfilehash: e922cf3b5599e81905499db60000c5b5f34b69ad
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 5110c6bd86d5df35a7ceccb4abfedf059cb826d0
+ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712270"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "50826176"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Vorbereitung für die Migration von Microsoft Cloud Deutschland
 
@@ -49,6 +49,7 @@ ms.locfileid: "50712270"
 | Kündigen aller Testabonnements. | Testabonnements werden nicht migriert und blockieren die Migration aller kostenpflichtigen Abonnements. | Die Testdienste sind abgelaufen und funktionieren nicht, wenn sie nach dem Abbruch von Benutzern aufgerufen werden. |
 | Analysieren Sie die Unterschiede bei den Lizenzfeatures zwischen Microsoft Cloud Deutschland und Office 365-Diensten. | Office 365-Dienste umfassen zusätzliche Features und Dienste, die in der aktuellen Microsoft Cloud Deutschland nicht verfügbar sind. Während der Abonnementübertragung stehen Benutzern neue Features zur Verfügung. | <ul><li> Analysieren Sie die verschiedenen Features, die von den Lizenzen für Microsoft Cloud Deutschland und Office 365 Services bereitgestellt werden. Beginnen Sie mit der [Beschreibung des Office 365-Plattformdiensts](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description). </li><li> Ermitteln Sie, ob neue Features von Office 365-Diensten zunächst deaktiviert werden sollten, um Die Auswirkungen auf Benutzer oder die Verwaltung von Benutzeränderung zu begrenzen und die Zuweisungen von Benutzerlizenzen bei Bedarf zu ändern. </li><li>Bereiten Sie Benutzer und Helpdeskmitarbeiter auf neue Dienste und Features vor, die von Office 365-Diensten bereitgestellt werden. |
 | Erstellen Sie organisationsweite [Aufbewahrungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/retention) zum Schutz vor dem versehentlichen Löschen von Inhalten während der Migration.  |<ul><li>Um sicherzustellen, dass Inhalte während der Migration nicht versehentlich von Endbenutzern gelöscht werden, können Kunden eine organisationsweite Aufbewahrungsrichtlinie aktivieren. </li><li>Auch wenn die Aufbewahrung nicht erforderlich ist, da Aufbewahrungsspeicher während der Migration jederzeit wie erwartet funktionieren sollten, ist das Einrichten einer Aufbewahrungsrichtlinie ein Sicherungssicherheitsmechanismus. Gleichermaßen wird eine Aufbewahrungsrichtlinie vielleicht nicht von allen Kunden verwendet, insbesondere von denjenigen, die sich Sorgen um die übermäßige Aufbewahrung machen.</li></ul>| Wenden Sie Aufbewahrungsrichtlinie so an, wie in [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) beschrieben. Es kann zu Ausfällen des Dienstes oder der Client-Software kommen, wenn dies nicht vor Phase 4 von 9 erfolgt. </li></ul>|
+| Korrigieren von Lizenzüberagen | Unter bestimmten Umständen können Kunden möglicherweise mehr Dienste nutzen als erworben werden. Diese Bedingung wird als Lizenzüberage bezeichnet. Microsoft kann Kunden in einer Lizenzüberagebedingung nicht von Microsoft Cloud Deutschland in die deutschen Rechenzentrumsregionen migrieren. Um den kontinuierlichen Zugriff auf den Dienst und die Daten sicherzustellen, benötigt jeder zugewiesene Benutzer eine Lizenz. | Alle Kunden | Kunden müssen die Lizenzüberagebedingung bewerten und beheben, indem sie zusätzliche Lizenzen erwerben oder Lizenzen von Benutzern nicht zuweisen. |
 |||||
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory-Verbunddienste (AD FS)
