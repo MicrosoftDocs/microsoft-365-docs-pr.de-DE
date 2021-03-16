@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) so konfigurieren können, dass Microsoft 365-EPDLP-Speicherorte (Endpoint Data Loss Prevention) verwendet werden.
-ms.openlocfilehash: 6723f3f0903ba6a0e1833bfae1f3dea2362e2c30
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 1bb4013069b8f4890ba420f13a0203eb63973121
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406209"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50820187"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Nutzen der Verhinderung von Datenverlust am Endpunkt
 
@@ -81,6 +81,9 @@ Sie können steuern, ob sensible Dateien, die durch Ihre Richtlinien geschützt 
 Wenn der Listenmodus auf **Blockieren** festgelegt ist, können Benutzer keine vertraulichen Elemente in diese Domänen hochladen. Wenn eine Upload-Aktion blockiert wird, weil ein Element von einer DLP-Richtlinie betroffen ist, generiert DLP entweder eine Warnung oder sperrt den Upload des vertraulichen Elements.
 
 Wenn der Listenmodus auf **Zulassen** festgelegt ist, können Benutzer vertrauliche Elemente **_nur_** in diese Domänen hochladen, während der Uploadzugriff auf alle anderen Domänen nicht zulässig ist.
+
+> [!IMPORTANT]
+> Wenn der Diensteinschränkungsmodus auf „Zulassen“ festgelegt ist, müssen Sie über mindestens eine Dienstdomäne verfügen, die konfiguriert wurde, bevor die Einschränkungen erzwungen werden.
 
 #### <a name="unallowed-browsers"></a>Nicht zulässige Browser
 
