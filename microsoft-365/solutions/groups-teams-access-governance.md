@@ -1,5 +1,5 @@
 ---
-title: Steuern des Zugriffs in Microsoft 365-Gruppen,-Teams und-SharePoint
+title: Regeln des Zugriffs in Microsoft 365-Gruppen, Teams und SharePoint
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,72 +14,72 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Informationen zum Steuern des Zugriffs in Microsoft 365-Gruppen, Teams und SharePoint.
-ms.openlocfilehash: fb1bec219ef0d27c2a908f5f385185a1a70e01e1
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: Erfahren Sie mehr über die Verwaltung des Zugriffs in Microsoft 365-Gruppen, Teams und SharePoint.
+ms.openlocfilehash: 24a8a43f05206c9f1c0cd07aef480b330d968935
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613466"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838709"
 ---
-# <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Steuern des Zugriffs in Microsoft 365-Gruppen,-Teams und-SharePoint
+# <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Regeln des Zugriffs in Microsoft 365-Gruppen, Teams und SharePoint
 
-Es gibt zahlreiche Steuerelemente, mit denen Sie steuern können, wie Personen auf Ressourcen in Gruppen, Teams und SharePoint zugreifen. Überprüfen Sie diese Optionen, und überprüfen Sie, wie Sie Ihre geschäftlichen Anforderungen, die Vertraulichkeit Ihrer Daten und den Umfang der Personen abbilden, mit denen Ihre Benutzer zusammenarbeiten müssen.
+Es gibt viele Steuerelemente, mit denen Sie steuern können, wie Personen auf Ressourcen in Gruppen, Teams und SharePoint zugreifen. Überprüfen Sie diese Optionen, und überlegen Sie, wie sie Ihren Geschäftlichen Anforderungen, der Vertraulichkeit Ihrer Daten und dem Umfang der Personen entsprechen, mit der Ihre Benutzer zusammenarbeiten müssen.
 
-Die folgende Tabelle enthält eine Kurzübersicht über die in Microsoft 365 verfügbaren Zugriffssteuerelemente. Weitere Informationen finden Sie in den folgenden Abschnitten.
+Die folgende Tabelle enthält eine Kurzübersicht zu den in Microsoft 365 verfügbaren Zugriffssteuerelementen. Weitere Informationen finden Sie in den folgenden Abschnitten.
 
 |Kategorie|Beschreibung|Referenz|
 |:-------|:----------|:--------|
 |Mitgliedschaft|||
-||Ermittlung privater Teams|[Verwalten der Ermittlung von privaten Teams in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-discovery-of-private-teams)|
+||Ermittlung privater Teams|[Verwalten der Ermittlung privater Teams in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-discovery-of-private-teams)|
 ||Dynamische Gruppenmitgliedschaft basierend auf Regeln|[Erstellen oder Aktualisieren einer dynamischen Gruppe in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)|
 ||Steuern, wer Dateien, Ordner und Websites freigeben kann.|[Einrichten und Verwalten der Funktion „Zugriffsanforderungen“](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |Bedingter Zugriff|||
 ||Mehrstufige Authentifizierung|[Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
-||Steuern des Gerätezugriffs basierend auf Gruppen-, Team-oder Standort Sensitivität.|[Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
+||Steuern des Gerätezugriffs basierend auf der Vertraulichkeit von Gruppen, Teams oder Website|[Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
 ||Einschränken des Websitezugriffs für nicht verwaltete Geräte.|[Steuern des SharePoint-Zugriffs von nicht verwalteten Geräten](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)|
 ||Steuern des Websitezugriffs basierend auf dem Standort|[Steuern des Zugriffs auf SharePoint- und OneDrive-Daten anhand der Netzwerkadresse](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)|
 |Gastzugriff|||
-||Zulassen oder Blockieren der SharePoint-Freigabe aus bestimmten Domänen.|[Einschränken der Freigabe von SharePoint- und OneDrive-Inhalten nach Domäne](https://docs.microsoft.com/sharepoint/restricted-domains-sharing)|
-||Zulassen oder Blockieren von Team-oder Gruppenmitgliedschaften in bestimmten Domänen|[Zulassen oder Blockieren von Einladungen an B2B-Benutzer aus bestimmten Organisationen](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)|
-||Anonyme Freigabe verhindern.|[Deaktivieren von "Jeder"-Links](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#turn-off-anyone-links)|
-||Steuern der Berechtigungen für anonyme Zugriffs Links.|[Festlegen von Link Berechtigungen für alle Links](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing#set-link-permissions)|
+||Zulassen oder Blockieren der SharePoint-Freigabe von angegebenen Domänen.|[Einschränken der Freigabe von SharePoint- und OneDrive-Inhalten nach Domäne](https://docs.microsoft.com/sharepoint/restricted-domains-sharing)|
+||Zulassen oder Blockieren der Team- oder Gruppenmitgliedschaft von angegebenen Domänen.|[Zulassen oder Blockieren von Einladungen an B2B-Benutzer aus bestimmten Organisationen](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)|
+||Verhindern der anonymen Freigabe.|[Deaktivieren von "Jeder"-Links](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#turn-off-anyone-links)|
+||Steuern der Berechtigungen für anonyme Zugriffslinks.|[Festlegen von Linkberechtigungen für Jeder-Links](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing#set-link-permissions)|
 ||Steuern des Ablaufs anonymer Freigabelinks.|[Festlegen eines Ablaufdatums für Jeder-Links](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing#set-an-expiration-date-for-anyone-links)|
-||Steuern Sie den Typ des Freigabelinks, der standardmäßig Benutzern angezeigt wird.|[Ändern des Standardlinktyps für eine Site](https://docs.microsoft.com/sharepoint/change-default-sharing-link)|
-||Beschränken Sie die externe Freigabe auf bestimmte Personen.|[Einschränken der externen Freigabe auf angegebene Sicherheitsgruppen](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)|
-||Steuern des Gastzugriffs auf eine Gruppe, ein Team oder eine Website basierend auf der Informations Empfindlichkeit.|[Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
-||Deaktivieren Sie die Freigabeoptionen.|[Einschränken der Freigabe in Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/microsoft-365-limit-sharing)|
+||Steuern Sie den Typ des Freigabelinks, der Benutzern standardmäßig angezeigt wird.|[Ändern des Standardlinktyps für eine Site](https://docs.microsoft.com/sharepoint/change-default-sharing-link)|
+||Beschränken Sie die externe Freigabe auf bestimmte Personen.|[Beschränken der externen Freigabe auf angegebene Sicherheitsgruppen](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)|
+||Steuern des Gastzugriffs auf eine Gruppe, ein Team oder eine Website basierend auf der Informationssensitivität.|[Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
+||Deaktivieren Sie Freigabeoptionen.|[Einschränken der Freigabe in Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/microsoft-365-limit-sharing)|
 |Benutzerverwaltung|||
-||Überprüfen Sie die Team-und Gruppenmitgliedschaft regelmäßig.|[Was sind Azure AD Zugriffsüberprüfungen?](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)|
-||Automatisieren Sie die Zugriffsverwaltung für Gruppen und Teams.|[Was ist Azure AD Berechtigungsverwaltung?](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)|
-||Zulassen oder blockieren, dass Personen private Kanäle in Microsoft Teams erstellen.|[Verwalten des Lebenszyklus privater Kanäle in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/private-channels-life-cycle-management)|
+||Überprüfen Sie die Team- und Gruppenmitgliedschaft regelmäßig.|[Was sind Azure AD-Zugriffsüberprüfungen?](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)|
+||Automatisieren sie die Zugriffsverwaltung für Gruppen und Teams.|[Was ist Azure AD-Berechtigungsverwaltung?](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)|
+||Zulassen oder Blockieren von Personen, private Kanäle in Teams zu erstellen.|[Verwalten des Lebenszyklus privater Kanäle in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/private-channels-life-cycle-management)|
 
 ## <a name="membership"></a>Mitgliedschaft
 
-Die Mitgliedschaft von Teams und Gruppen wird von den Besitzern gesteuert. Mitglieder können andere Personen einladen, die Einladungen werden jedoch zur Genehmigung an die Besitzer gesendet. Während öffentliche Teams und Gruppen von beliebigen Personen in der Organisation erkannt werden, können Sie steuern, ob private Teams und Gruppen auffindbar sind:
+Die Mitgliedschaft in Teams und Gruppen wird von Besitzern gesteuert. Mitglieder können andere Einladen, aber die Einladungen werden zur Genehmigung an besitzer gesendet. Während öffentliche Teams und Gruppen von allen Personen in der Organisation ermittelt werden können, können Sie steuern, ob private Teams und Gruppen ermittelt werden können:
 
-- [Verwalten der Ermittlung von privaten Teams in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-discovery-of-private-teams)
+- [Verwalten der Ermittlung privater Teams in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-discovery-of-private-teams)
 
-Sie können die Mitgliedschaft einer Gruppe oder eines Teams dynamisch basierend auf einigen Kriterien wie Abteilung verwalten. In diesem Fall können Mitglieder und Besitzer keine Personen zum Team einladen.
+Sie können die Mitgliedschaft in einer Gruppe oder einem Team dynamisch basierend auf einigen Kriterien verwalten, z. B. Abteilung. In diesem Fall können Mitglieder und Besitzer keine Personen zum Team einladen. Dynamische Gruppen verwenden Metadaten, die Sie in Azure Active Directory definieren, um zu steuern, wer Mitglied der Gruppe ist. Stellen Sie sicher, dass die von Ihnen verwendeten Metadaten vollständig und aktuell sind, da falsche Metadaten dazu führen können, dass Benutzer nicht in Gruppen oder falschen Benutzern hinzugefügt werden.
 
 - [Erstellen oder Aktualisieren einer dynamischen Gruppe in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)
 
-SharePoint-Websites bieten die Möglichkeit, Besitzer, Mitglieder und Besucher außer der Gruppen-oder Teammitgliedschaft hinzuzufügen. Je nach Ihren Anforderungen können Sie einschränken, wer Personen zur Website einladen kann. In Abhängigkeit von der Vertraulichkeit der Informationen in einer bestimmten Website können Sie auch einschränken, wer Dateien und Ordner freigeben kann. Diese Einschränkungen werden vom Team, der Gruppe oder dem Websitebesitzer konfiguriert:
+SharePoint-Websites bieten die Möglichkeit, Besitzer, Mitglieder und Besucher zusätzlich zur Gruppen- oder Teammitgliedschaft hinzuzufügen. Je nach Ihren Anforderungen möchten Sie möglicherweise einschränken, wer Personen zur Website einladen kann. Je nach Vertraulichkeit der Informationen auf einer bestimmten Website können Sie auch einschränken, wer Dateien und Ordner freigeben kann. Diese Einschränkungen werden vom Team, der Gruppe oder dem Websitebesitzer konfiguriert:
 
 - [Einrichten und Verwalten der Funktion „Zugriffsanforderungen“](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)
 
 
 ## <a name="conditional-access"></a>Bedingter Zugriff
 
-Mit Microsoft 365 können Sie die mehrstufige Authentifizierung für Personen innerhalb und außerhalb Ihrer Organisation benötigen. Es gibt viele Optionen für die Umstände, wenn Personen zur Eingabe eines zweiten Authentifizierungsfaktors aufgefordert werden. Es wird dringend empfohlen, die mehrstufige Authentifizierung für Ihre Organisation bereitzustellen:
+Mit Microsoft 365 können Sie eine mehrstufige Authentifizierung für Personen innerhalb und außerhalb Ihrer Organisation benötigen. Es gibt viele Optionen für die Umstände, in denen Personen zur Eingabe eines zweiten Authentifizierungsfaktors aufgefordert werden. Es wird dringend empfohlen, dass Sie die mehrstufige Authentifizierung für Ihre Organisation bereitstellen:
 
 - [Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
-Wenn Sie in einigen ihrer Gruppen und Teams vertrauliche Informationen haben, können Sie Richtlinien für die Geräteverwaltung basierend auf der Vertraulichkeits Bezeichnung einer Gruppe oder eines Teams erzwingen. Sie können den Zugriff vollständig von nicht verwalteten Geräten blockieren oder nur eingeschränkten Zugriff auf die Webanwendung gewähren:
+Wenn Sie über vertrauliche Informationen in einigen Ihrer Gruppen und Teams verfügen, können Sie Geräteverwaltungsrichtlinien basierend auf der Vertraulichkeitsbezeichnung einer Gruppe oder eines Teams erzwingen. Sie können den Zugriff vollständig von nicht verwalteten Geräten blockieren oder nur eingeschränkten Zugriff auf das Web zulassen:
 
 - [Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
 
-In SharePoint können Sie den Zugriff auf Websites von bestimmten Netzwerkstandorten einschränken.
+In SharePoint können Sie den Zugriff auf Websites von angegebenen Netzwerkstandorten einschränken.
 
 - [Steuern des Zugriffs auf SharePoint- und OneDrive-Daten anhand der Netzwerkadresse](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)
 
@@ -88,40 +88,44 @@ Zusätzliche Ressourcen:
 
 - [Planen einer Bereitstellung für bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access)
 
-- [Übersicht über Microsoft InTune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)
+- [Übersicht über Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)
 
 - [Steuern des SharePoint-Zugriffs von nicht verwalteten Geräten](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
 
 
 ## <a name="guest-access"></a>Gastzugriff
 
-Sie können Gäste basierend auf der Domäne Ihrer e-Mail-Adresse einschränken. SharePoint bietet organisationsweite und standortspezifische Domänen Einschränkungseinstellungen. Gruppen und Teams verwenden die Listen der zugelassenen und verweigerten Domäne in Azure AD. Achten Sie darauf, beide Einstellungen zu konfigurieren, um unerwünschte Freigaben zu vermeiden und eine konsistente Benutzeroberfläche sicherzustellen:
+Sie können Gäste basierend auf der Domäne ihrer E-Mail-Adresse einschränken. SharePoint bietet organisationsweite und websitespezifische Domäneneinschränkungseinstellungen. Gruppen und Teams verwenden die Listen "Domänen zulassen" und "Verweigern" in Azure AD. Konfigurieren Sie unbedingt beide Einstellungen, um unerwünschte Freigaben zu vermeiden und eine konsistente Benutzeroberfläche sicherzustellen:
 
 - [Einschränken der Freigabe von SharePoint- und OneDrive-Inhalten nach Domäne](https://docs.microsoft.com/sharepoint/restricted-domains-sharing)
 
 - [Zulassen oder Blockieren von Einladungen an B2B-Benutzer aus bestimmten Organisationen](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)
 
-Microsoft 365 ermöglicht die anonyme Freigabe von Dateien und Ordnern mithilfe von *beliebigen* Freigabelinks. *Alle* Links können weitergeleitet werden, und jeder, der über den Link verfügt, kann auf das freigegebene Element zugreifen. In Abhängigkeit von der Vertraulichkeit Ihrer Daten sollten Sie sich für die Verwendung von Links entscheiden, einschließlich der vollständigen Deaktivierung, der Beschränkung der Verknüpfungsberechtigungen auf schreibgeschützt oder der Festlegung eines Ablauf Zeitaufwands für diese *Personen* :
+Microsoft 365 ermöglicht die anonyme Freigabe von Dateien und Ordnern mithilfe von *Jeder-Freigabelinks.* *Jeder* Link kann weitergeleitet werden, und jeder, der den Link verwendet, kann auf das freigegebene Element zugreifen. In Abhängigkeit von der Vertraulichkeit Ihrer Daten sollten Sie festlegen, wie *Jeder-Links* verwendet werden – einschließlich des vollständigen Deaktivierens, Einschränken von Linkberechtigungen auf schreibgeschützt oder Festlegen einer Ablaufzeit für sie:
 
 - [Deaktivieren von "Jeder"-Links](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#turn-off-anyone-links)
 
-- [Festlegen von Link Berechtigungen für alle Links](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing#set-link-permissions)
+- [Festlegen von Linkberechtigungen für Jeder-Links](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing#set-link-permissions)
 
 - [Festlegen eines Ablaufdatums für Jeder-Links](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing#set-an-expiration-date-for-anyone-links)
 
-Bei der Freigabe von Dateien oder Ordnern stehen Benutzern mehrere Linktypen zur Auswahl. Um das Risiko einer versehentlichen unbeabsichtigten Freigabe zu verringern, können Sie den Standardverknüpfungstyp, der Benutzern bei der Freigabe angezeigt wird, ändern. Wenn Sie beispielsweise die Standardeinstellung für *alle* Links ändern, die den anonymen Zugriff für *Personen in Ihrer Organisation* ermöglichen, können Sie das Risiko einer unerwünschten externen Freigabe vertraulicher Informationen reduzieren:
+Bei der Freigabe von Dateien oder Ordnern stehen Benutzern mehrere Linktypen zur Auswahl. Um das Risiko einer versehentlichen unangemessenen Freigabe zu verringern, können Sie den Standardlinktyp ändern, der Benutzern bei der Freigabe angezeigt wird. Wenn Sie beispielsweise die Standardeinstellung von *Jeder-Links* - die anonymen Zugriff zulassen - auf Personen *in* Ihren Organisationslinks ändern, kann das Risiko einer unerwünschten externen Freigabe vertraulicher Informationen reduziert werden:
 
 - [Ändern des Standardlinktyps für eine Site](https://docs.microsoft.com/sharepoint/change-default-sharing-link)
 
-Wenn Ihre Organisation über vertrauliche Daten verfügt, die Sie für die Gäste freigeben müssen, Sie jedoch über eine ungeeignete Freigabe besorgt sind, können Sie die externe Freigabe von Dateien und Ordnern auf die Mitglieder der angegebenen Sicherheitsgruppen beschränken. Auf diese Weise können Sie die Freigabe extern für eine bestimmte Gruppe von Personen einschränken oder festlegen, dass Ihre Benutzerschulungen für die entsprechende externe Freigabe durchführen müssen, bevor Sie Sie der Sicherheitsgruppe hinzufügen:
+Wenn Ihre Organisation über vertrauliche Daten verfügt, die Sie für Gäste freigeben müssen, Sie jedoch bedenken, dass die Freigabe unangemessen ist, können Sie die externe Freigabe von Dateien und Ordnern auf die Mitglieder der angegebenen Sicherheitsgruppen beschränken. Auf diese Weise können Sie die externe Freigabe auf eine bestimmte Gruppe von Personen beschränken oder ihre Benutzer zur Schulung der entsprechenden externen Freigaben vor dem Hinzufügen zur Sicherheitsgruppe benötigen:
 
-- [Einschränken der externen Freigabe auf angegebene Sicherheitsgruppen](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)
+- [Beschränken der externen Freigabe auf angegebene Sicherheitsgruppen](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)
 
-Gruppen und Teams verfügen über eine Einstellung auf Organisationsebene, die den Gastzugriff zulässt oder ablehnt. Sie können zwar den [Gastzugriff auf bestimmte Teams oder Gruppen mithilfe von Microsoft PowerShell einschränken](per-group-guest-access.md), dies wird jedoch mithilfe einer Vertraulichkeits Bezeichnung empfohlen. Mit Sensitivitäts Bezeichnungen können Sie den Gastzugriff basierend auf der angewendeten Bezeichnung automatisch zulassen oder verweigern:
+Gruppen und Teams verfügen über Einstellungen auf Organisationsebene, die den Gastzugriff zulassen oder verweigern. Während Sie den Gastzugriff auf bestimmte Teams oder Gruppen mithilfe von [Microsoft PowerShell](per-group-guest-access.md)einschränken können, wird empfohlen, dies mithilfe einer Vertraulichkeitsbezeichnung zu tun. Mit Vertraulichkeitsbezeichnungen können Sie den Gastzugriff basierend auf der angewendeten Bezeichnung automatisch zulassen oder verweigern:
 
 - [Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
 
-Microsoft 365 bietet viele verschiedene Methoden zum Freigeben von Informationen. Wenn Sie über vertrauliche Informationen verfügen und deren Freigabe einschränken möchten, überprüfen Sie die Optionen zum Einschränken der Freigabe:
+In einer Umgebung, in der Sie häufig Gäste zu Gruppen und Teams einladen, sollten Sie regelmäßig geplante Gastzugriffsüberprüfungen einrichten. Besitzer können aufgefordert werden, Gäste in ihren Gruppen und Teams zu überprüfen und den Zugriff zu genehmigen oder zu verweigern.
+
+- [Einrichten von Gastzugriff-Überprüfungen](/microsoft-365/solutions/create-secure-guest-sharing-environment#set-up-guest-access-reviews)
+
+Microsoft 365 bietet viele verschiedene Methoden zum Teilen von Informationen. Wenn Sie über vertrauliche Informationen verfügen und die Freigabe einschränken möchten, überprüfen Sie die Optionen zum Einschränken der Freigabe:
 
 - [Einschränken der Freigabe in Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/microsoft-365-limit-sharing)
 
@@ -135,19 +139,19 @@ Zusätzliche Ressourcen:
 
 - [Erstellen einer sicheren Gastfreigabeumgebung](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
 
-- [Aktivieren der externen B2B-Zusammenarbeit und Verwalten von Personen, die Gäste einladen können](https://docs.microsoft.com/azure/active-directory/b2b/delegate-invitations)
+- [Aktivieren der externen B2B-Zusammenarbeit und Verwalten, wer Gäste einladen kann](https://docs.microsoft.com/azure/active-directory/b2b/delegate-invitations)
 
 ## <a name="user-management"></a>Benutzerverwaltung
 
-Wenn sich Gruppen und Teams in Ihrer Organisation entwickeln, empfiehlt es sich, die Team-und Gruppenmitgliedschaft regelmäßig zu überprüfen. Dies kann besonders nützlich sein, wenn Teams und Gruppen mit einer geänderten Mitgliedschaft, mit vertraulichen Informationen oder mit Gästen ausgestattet sind. Sie sollten Zugriffsüberprüfungen für diese Teams und Gruppen einrichten:
+Wenn sich Gruppen und Teams in Ihrer Organisation weiterentwickeln, ist es eine bewährte Methode, die Team- und Gruppenmitgliedschaft regelmäßig zu überprüfen. Dies kann besonders für Teams und Gruppen mit wechselnder Mitgliedschaft, für Solche mit vertraulichen Informationen oder für Gäste nützlich sein. Erwägen Sie das Einrichten von Zugriffsüberprüfungen für diese Teams und Gruppen:
 
-- [Was sind Azure AD Zugriffsüberprüfungen?](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)
+- [Was sind Azure AD-Zugriffsüberprüfungen?](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)
 
-Viele Organisationen verfügen über Geschäftspartnerschaften mit anderen Organisationen oder wichtigen Anbietern, mit denen Sie eingehend zusammenarbeiten. Die Benutzerverwaltung und der Zugriff auf Ressourcen können in diesen Szenarien eine Herausforderung für die Verwaltung darstellen. Sie sollten einige Benutzerverwaltungsaufgaben automatisieren und sogar einige dieser Aufgaben in Ihre Partnerorganisation umleiten:
+Viele Organisationen verfügen über Geschäftspartnerschaften mit anderen Organisationen oder wichtigen Anbietern, mit denen sie eng zusammenarbeiten. Die Benutzerverwaltung und der Zugriff auf Ressourcen können in diesen Szenarien schwierig sein. Erwägen Sie, einige der Benutzerverwaltungsaufgaben zu automatisieren und sogar einige von ihnen in Ihre Partnerorganisation zu überwechseln:
 
-- [Was ist Azure AD Berechtigungsverwaltung?](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
+- [Was ist Azure AD-Berechtigungsverwaltung?](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
 
-Private Kanäle in Microsoft Teams ermöglichen das bereichsbezogene Unterhaltungen und die Dateifreigabe zwischen einer Teilmenge der Teammitglieder. Je nach Ihren spezifischen geschäftlichen Anforderungen können Sie diese Funktion zulassen oder blockieren.
+Private Kanäle in Teams ermöglichen Bereichsunterhaltungen und Dateifreigabe zwischen einer Teilmenge von Teammitgliedern. Je nach Ihren spezifischen Geschäftsanforderungen können Sie diese Funktion zulassen oder blockieren.
 
 - [Private Kanäle in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/private-channels)
 
@@ -159,9 +163,9 @@ Zusätzliche Ressourcen:
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Planung der Collaboration-Steuerung Schritt für Schritt](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Schritt-für-Schritt-Planung für die Zusammenarbeitsgovernance](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Erstellen eines Steuerungsplans für die Zusammenarbeit](collaboration-governance-first.md)
+[Erstellen eines Plans für die Zusammenarbeitsgovernance](collaboration-governance-first.md)
 
 [Sicherheit und Compliance in Microsoft Teams](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
 

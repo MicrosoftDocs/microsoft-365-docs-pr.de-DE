@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel wird beschrieben, wie Advanced eDiscovery-Fälle erstellt und verwaltet werden. Der erste Schritt besteht in der Erstellung eines Falls und der Verwendung von Advanced eDiscovery-Features und -Funktionen.
-ms.openlocfilehash: 80cfe31a86060cb3603a101b314273cc67750bd8
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 0301213cf6d7e3c30b98ad5125468c6c75ed95b1
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727542"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838258"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>Erstellen und Verwalten eines Advanced eDiscovery-Falls
 
@@ -82,15 +82,15 @@ Damit Sie mit Advanced eDiscovery beginnen können, finden Sie hier einen grundl
 
    - Sie können den [Kommunikationsworkflow](managing-custodian-communications.md) in Advanced eDiscovery verwenden, um eine Benachrichtigung über das gesetzliche Halterecht an Custodians zu senden.
 
-2. **[Durchsuchen sie Datenquellen nach daten, die für den Fall relevant sind.](collecting-data-for-ediscovery.md)** Nachdem Sie einem Fall Custodians und nicht verwahrte Datenquellen hinzugefügt haben, verwenden Sie das integrierte Suchtool, um diese Datenquellen nach Daten zu durchsuchen, die für den Fall relevant sein können. Sie verwenden Schlüsselwörter, Eigenschaften [](building-search-queries.md) und Bedingungen, um Suchabfragen zu erstellen, die Suchergebnisse mit den Daten zurückgeben, die für den Fall am ehesten relevant sind. Sie können auch Folgendes tun:
+2. **[Sammeln relevanter Daten aus Datenquellen](create-draft-collection.md)**. Nachdem Sie einem Fall Custodians und nicht verwahrte Datenquellen hinzugefügt haben, verwenden Sie das integrierte Sammlungstool, um diese Datenquellen nach Inhalten zu durchsuchen, die für den Fall relevant sein können. Sie verwenden Schlüsselwörter, Eigenschaften [](building-search-queries.md) und Bedingungen, um Suchabfragen zu erstellen, die Suchergebnisse mit den Daten zurückgeben, die für den Fall am ehesten relevant sind. Sie können auch Folgendes tun:
 
-   - Anzeigen [von Suchstatistiken,](search-statistics-in-advanced-ediscovery.md) mit deren Hilfe Sie eine Suchabfrage zum Einen der Ergebnisse einfeinern können.
+   - Zeigen [Sie Sammlungsstatistiken](collection-statistics-reports.md) an, mit deren Hilfe Sie eine Auflistung verfeinern können, um die Ergebnisse zu verfeinern.
 
-   - Zeigen Sie eine Vorschau der Suchergebnisse an, um schnell zu überprüfen, ob die relevanten Daten gefunden werden.
+   - Vorschau eines Beispiels der Auflistung, um schnell zu überprüfen, ob die relevanten Daten gefunden werden.
 
-   - Überarbeiten Sie eine Abfrage, und führen Sie die Suche erneut aus.
+   - Überarbeiten Sie eine Abfrage, und führen Sie die Auflistung erneut aus.
 
-3. **[Hinzufügen von Daten zu einem Überprüfungssatz](add-data-to-review-set.md)**. Nachdem Sie konfiguriert und überprüft haben, ob eine Suche die gewünschten Daten zurückgibt, fügen Sie im nächsten Schritt die Suchergebnisse zu einem Überprüfungssatz hinzu. Wenn Sie einem Überprüfungssatz Daten hinzufügen, werden Elemente vom ursprünglichen Speicherort an einen sicheren Azure Storage-Speicherort kopiert. Die Daten werden erneut indiziert, um sie für eine sorgfältige und schnelle Suche beim Überprüfen und Analysieren von Elementen im Überprüfungssatz zu optimieren. Darüber hinaus können Sie einem Überprüfungssatz auch [Nicht-Office 365-Daten hinzufügen.](load-non-office-365-data-into-a-review-set.md)
+3. **[Commit-Auflistung an einen Überprüfungssatz](commit-draft-collection.md)**. Nachdem Sie konfiguriert und überprüft haben, ob eine Suche die gewünschten Daten zurückgibt, fügen Sie im nächsten Schritt die Suchergebnisse zu einem Überprüfungssatz hinzu. Wenn Sie einem Überprüfungssatz Daten hinzufügen, werden Elemente vom ursprünglichen Speicherort an einen sicheren Azure Storage-Speicherort kopiert. Die Daten werden erneut indiziert, um sie für eine sorgfältige und schnelle Suche beim Überprüfen und Analysieren von Elementen im Überprüfungssatz zu optimieren. Darüber hinaus können Sie einem Überprüfungssatz auch [Nicht-Office 365-Daten hinzufügen.](load-non-office-365-data-into-a-review-set.md)
 
    Es gibt auch eine spezielle Art von Überprüfungssatz, dem Sie Daten hinzufügen können, die als *Unterhaltungsüberprüfungssatz bezeichnet werden.* Diese Arten von Rezensionssätzen bieten Unterhaltungsrekonstruktionsfunktionen zum Rekonstruieren, Überprüfen und Exportieren von Threadunterhaltungen wie in Microsoft Teams. Weitere Informationen finden Sie [unter Überprüfen von Unterhaltungen in Advanced eDiscovery](conversation-review-sets.md).
 

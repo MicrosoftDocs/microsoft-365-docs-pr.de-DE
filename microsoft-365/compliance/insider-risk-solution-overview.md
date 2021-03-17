@@ -1,5 +1,5 @@
 ---
-title: Lösung für Insiderrisiken
+title: Insider-Risikolösungen
 description: Erfahren Sie, wie Sie das Risiko in Ihrer Organisation mit Insider risk solutions in Microsoft 365 minimieren können.
 keywords: Microsoft 365, Insiderrisiko, Compliance
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: 858b4a05dd65b0a32d672882e6ec18188c0cce81
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: c40c30c44e5b8010112adc11d7faee49563761bf
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423940"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838270"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Insider Risk-Lösungen in Microsoft 365
 
@@ -134,7 +134,7 @@ Um Eine integrierte Strategie für die Implementierung von Microsoft 365-Insider
 |:-----|:------------|
 |[![Modellposter: Funktionen von Microsoft 365 Informationsschutz und Compliance](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Als PDF herunterladen](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \| [Als Visio herunterladen](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Aktualisiert oktober 2020|Enthält: <ul><li>  Microsoft Information Protection und Verhinderung von Datenverlust</li><li>Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen </li><li>Informationsbarrieren</li><li>Kommunikationscompliance</li><li>Insider-Risikomanagement</li><li>Datenerfassung durch Drittanbieter</li>|
 
-## <a name="training"></a>Schulung
+## <a name="training"></a>Schulungen
 
 Wenn Sie Ihre Administratoren und Daseinsverwaltungsteam in den Grundlagen für jede Insiderrisikolösung trainieren, können Sie Ihre Organisation schneller mit Ihren Bereitstellungs- und Implementierungsbemühungen beginnen. 
 

@@ -1,5 +1,5 @@
 ---
-title: In Exchange Online Postfächern gespeicherte Inhalte
+title: In Exchange Online-Postfächern gespeicherte Inhalte
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,35 +15,34 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ''
-ROBOTS: NOINDEX, NOFOLLOW
-description: Daten, die von cloudbasierten apps in Microsoft 365 erstellt wurden, werden mit dem Exchange Online Postfach eines Benutzers gespeichert oder diesem zugeordnet.
-ms.openlocfilehash: f7bd5b00e8219f382078eb2d4f8aa25bd4c54d69
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+description: Von cloudbasierten Apps in Microsoft 365 erzeugte Inhalte werden gespeichert oder dem Exchange Online-Postfach eines Benutzers zugeordnet. Dieser Inhalt kann mithilfe von Microsoft eDiscovery-Tools durchsucht werden.
+ms.openlocfilehash: 872e618486c273e07e8dcf98d61bbbb7d8f95051
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750746"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838612"
 ---
-# <a name="content-stored-in-exchange-online-mailboxes"></a>In Exchange Online Postfächern gespeicherte Inhalte
+# <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>In Exchange Online-Postfächern für eDiscovery gespeicherte Inhalte
 
-Ein Postfach in Exchange Online dient hauptsächlich zum Speichern von e-Mail-bezogenen Elementen wie Nachrichten, Kalenderelementen, Aufgaben und Notizen. Dies ändert sich jedoch, da weitere Cloud-basierte apps Ihre Daten auch im Postfach eines Benutzers speichern. Ein Vorteil beim Speichern von Daten in einem Postfach besteht darin, dass Sie die Such Tools in der Inhaltssuche, in der zentralen eDiscovery, in der erweiterten eDiscovery zum Suchen, anzeigen und Exportieren der Daten aus diesen cloudbasierten Apps verwenden können. Die Daten aus einigen dieser apps werden in ausgeblendeten Ordnern gespeichert, die sich in einer nicht-zwischenmenschlichen Nachricht (nicht-IPM) im Postfach befinden. Daten aus anderen cloudbasierten apps werden möglicherweise nicht _im_ Postfach gespeichert, aber mit dem Postfach _verknüpft_ und in Suchvorgängen zurückgegeben (wenn diese Daten mit der Suchabfrage übereinstimmen). Unabhängig davon, ob Cloud-basierte Daten in einem Benutzerpostfach gespeichert oder diesem zugeordnet sind, werden die Daten in der Regel nicht in einem e-Mail-Client angezeigt, wenn ein Benutzer sein Postfach öffnet.
+Ein Postfach in Exchange Online wird hauptsächlich zum Speichern E-Mail-bezogener Elemente wie Nachrichten, Kalenderelemente, Aufgaben und Notizen verwendet. Dies ändert sich jedoch, da mehr cloudbasierte Apps ihre Daten auch im Postfach eines Benutzers speichern. Ein Vorteil des Speicherns von Daten in einem Postfach besteht in der Verwendung der Suchtools in der Inhaltssuche, core eDiscovery und Advanced eDiscovery zum Suchen, Anzeigen und Exportieren der Daten aus diesen cloudbasierten Apps. Die Daten aus einigen dieser Apps werden in ausgeblendeten Ordnern in einer nicht interpersonalen Nachrichtenunterstruktur (non-IPM) im Postfach gespeichert. Daten aus anderen cloudbasierten Apps werden möglicherweise nicht _im_  Postfach gespeichert, aber dem Postfach zugeordnet und in Suchabfragen zurückgegeben (wenn diese Daten mit der Suchabfrage übereinstimmen). Unabhängig davon, ob cloudbasierte Daten in einem Benutzerpostfach gespeichert oder diesem zugeordnet sind, werden die Daten in der Regel nicht in einem E-Mail-Client angezeigt, wenn ein Benutzer sein Postfach öffnet.
 
-In der folgenden Tabelle sind die apps aufgeführt, mit denen Daten einem cloudbasierten Postfach gespeichert oder zugeordnet werden. In der Tabelle wird auch der Inhaltstyp beschrieben, den jede APP erzeugt.
+In der folgenden Tabelle sind die Apps aufgeführt, die Daten entweder einem cloudbasierten Postfach speichern oder nen. In der Tabelle wird auch der Inhaltstyp beschrieben, den jede App erzeugt.
 
 |Microsoft 365-App|Beschreibung|
 |:---------|:---------|
-|Formulare|Formulare und Antworten auf ein Formular werden in Dateien gespeichert, die an e-Mail-Nachrichten angefügt und in einem verborgenen Ordner im Postfach des Benutzers gespeichert sind, der das Formular erstellt hat. Formulare, die vor dem 2020 April erstellt wurden, werden als PDF-Datei gespeichert. Formulare, die nach 2020 erstellt wurden, werden als JSON-Datei gespeichert.  Antworten auf ein Formular werden in einer CSV-Datei gespeichert. Wenn Sie Inhalte aus Formularen in einer PST-Datei exportieren, befinden sich diese Daten im Ordner **ApplicationDataRoot** in einem Unterordner namens mit der folgenden global eindeutigen Identifizierung (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
-|Microsoft 365-Gruppen|E-Mail-Nachrichten, Kalenderelemente, Kontakte (Personen), Notizen und Aufgaben werden in dem Postfach gespeichert, das einer Microsoft 365-Gruppe zugeordnet ist.|
+|Formulare|Formulare und Antworten auf ein Formular werden in Dateien gespeichert, die an E-Mail-Nachrichten angefügt sind, und in einem ausgeblendeten Ordner im Postfach des Benutzers gespeichert, der das Formular erstellt hat. Formulare, die vor April 2020 erstellt wurden, werden als PDF-Datei gespeichert. Formulare, die nach 2020 erstellt wurden, werden als JSON-Datei gespeichert.  Antworten auf ein Formular werden in einer CSV-Datei gespeichert. Wenn Sie Inhalte aus Formularen in einer #A0 exportieren, befinden sich diese Daten im Ordner **ApplicationDataRoot** in einem Unterordner namens mit der folgenden GUID (Globally Unique Identified): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**. |
+|Microsoft 365-Gruppen|E-Mail-Nachrichten, Kalenderelemente, Kontakte (Personen), Notizen und Aufgaben werden im Postfach gespeichert, das einer Microsoft 365-Gruppe zugeordnet ist.|
 |Outlook/Exchange Online|E-Mail-Nachrichten, Kalenderelemente, Kontakte (Personen), Notizen und Aufgaben werden im Postfach eines Benutzers gespeichert.|
-|Personen|Kontakte in der Personen-App (die dieselben Kontakte wie die in Outlook zugänglichen sind) werden im Postfach eines Benutzers gespeichert.|
-|Klassen Zeitplan|Pläne, die im Klassen Zeitplan erstellt wurden, werden im Postfach der entsprechenden Microsoft 365-Gruppe gespeichert, die beim Erstellen eines neuen Plans bereitgestellt wird. Der Alias für das Gruppenpostfach ist der Name des Plans.|
-|Skype for Business|Unterhaltungen in Skype for Business werden im Ordner "Unterhaltungsverlauf" im Postfach eines Benutzers gespeichert. Wenn das Postfach eines Teilnehmers einer Skype-Besprechung in das Beweissicherungsverfahren aufgenommen oder einer Aufbewahrungsrichtlinie zugewiesen wurde, werden Dateien, die einer Besprechung zugeordnet sind, im Postfach der Teilnehmer aufbewahrt.|
-|Sway|Sways werden als HTML-Datei gespeichert, die an eine e-Mail-Nachricht angefügt und in einem verborgenen Ordner im Postfach des Benutzers gespeichert ist, der die Sway erstellt hat. Wenn Sie Inhalte aus Sway in einer PST-Datei exportieren, befinden sich diese Daten im **ApplicationDataRoot** -Ordner in einem Unterordner mit der folgenden GUID) **905fcf26-4eb7-48A0-9ff0-8dcc7194b5ba**.|
-|Aufgaben|Aufgaben in der Aufgaben-app (bei denen es sich um dieselben Aufgaben handelt, die in Outlook verfügbar sind) werden im Postfach eines Benutzers gespeichert.|
-|Teams|Unterhaltungen, die Teil eines Teams-Kanals sind, sind dem Postfach "Teams" zugeordnet. Unterhaltungen, die Teil der Chat Liste in Microsoft Teams (auch *1 x N-Chats* genannt) sind, sind dem Postfach der Benutzer zugeordnet, die am Chat teilnehmen. Außerdem werden zusammenfassende Informationen für Besprechungen und Anrufe in einem Teams-Kanal Postfächern von Benutzern zugeordnet, die sich in die Besprechung oder den Anruf eingewählt haben. Wenn Sie also nach Microsoft Teams-Inhalten suchen, suchen Sie im Teams-Postfach nach Inhalten in Kanal Unterhaltungen und Durchsuchen von Benutzerpostfächern nach Inhalten in 1 x N-Chats.| 
-|To-Do|In der To-Do-App gespeicherte Aufgaben werden in einem Benutzerpostfach gespeichert (" *to-DOS*", die in "to-do"-Listen gespeichert sind).|
-|Yammer|Unterhaltungen und Kommentare innerhalb einer Jammer Gemeinschaft sind dem Microsoft 365-Gruppenpostfach sowie dem Benutzerpostfach des Autors und allen benannten Empfängern (@mentioned-oder cc'ed-Benutzer) zugeordnet. Private Nachrichten, die außerhalb einer Jammer Gemeinschaft gesendet werden, werden im Postfach der Benutzer gespeichert, die an der privaten Nachricht teilnehmen.|  
+|Personen|Kontakte in der People-App (bei denen es sich um dieselben Kontakte handelt, auf die in Outlook zugegriffen werden kann) werden im Postfach eines Benutzers gespeichert.|
+|Klassenzeitplan|Im Klassenzeitplan erstellte Pläne werden im Postfach der entsprechenden Microsoft 365-Gruppe gespeichert, das beim Erstellen eines neuen Plans bereitgestellt wird. Der Alias für das Gruppenpostfach ist der Name des Plans.|
+|Skype for Business|Unterhaltungen in Skype for Business werden im Ordner Unterhaltungsverlauf im Postfach eines Benutzers gespeichert. Wenn das Postfach eines Teilnehmers einer Skype-Besprechung in das Aufbewahrungsverfahren einbehalten oder einer Aufbewahrungsrichtlinie zugewiesen ist, werden dateien, die einer Besprechung zugeordnet sind, im Teilnehmerpostfach aufbewahrt.|
+|Sway|Sways werden als HTML-Datei gespeichert, die an eine E-Mail-Nachricht angefügt ist, und in einem ausgeblendeten Ordner im Postfach des Benutzers gespeichert, der den Sway erstellt hat. Wenn Sie Inhalte aus Sway in einer PST-Datei exportieren, befinden sich diese Daten im Ordner **ApplicationDataRoot** in einem Unterordner namens mit der folgenden GUID:  **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba**.|
+|Aufgaben|Aufgaben in der Tasks-App (bei denen es sich um dieselben Aufgaben handelt, auf die in Outlook zugegriffen werden kann) werden im Postfach eines Benutzers gespeichert.|
+|Teams|Unterhaltungen, die Teil eines Teams-Kanals sind, sind dem Teams-Postfach zugeordnet. Unterhaltungen, die Teil der Chatliste in Teams (auch *1 x N-Chats* genannt) sind dem Postfach der Benutzer zugeordnet, die am Chat teilnehmen. Außerdem sind Zusammenfassungsinformationen für Besprechungen und Anrufe in einem Teams-Kanal Postfächern von Benutzern zugeordnet, die sich an der Besprechung oder an einem Anruf einwählten. Wenn Sie also nach Teams-Inhalten suchen, würden Sie das Teams-Postfach nach Inhalten in Kanalunterhaltungen durchsuchen und Benutzerpostfächer nach Inhalten in 1 x N-Chats durchsuchen.|
+|To-Do|Aufgaben (Aufgaben, *die* in Aufgabenlisten gespeichert werden) in der To-Do-App werden im Postfach eines Benutzers gespeichert.|
+|Yammer|Unterhaltungen und Kommentare innerhalb einer Yammer-Community sind dem Microsoft 365-Gruppenpostfach sowie dem Benutzerpostfach des Autors und benannten Empfängern (@ erwähnten oder Cc'ed-Benutzern) zugeordnet. Private Nachrichten, die außerhalb einer Yammer gesendet werden, werden im Postfach der Benutzer gespeichert, die an der privaten Nachricht teilnehmen.|  
 ||||
 
 > [!NOTE]
-> Wenn ein Speicherplatz in einem Postfach (mithilfe von Haltebereichen in eDiscovery-und erweiterte eDiscovery-Fälle) abgelegt wird, werden Inhalte aus Formularen und Sway nicht durch den Haltestatus beibehalten. 
+> Wenn zu diesem Zeitpunkt ein Haltebereich für ein Postfach (mithilfe von Archiven in Core eDiscovery- und Advanced eDiscovery-Fällen) platziert wird, werden Inhalte aus Forms und Sway nicht vom Haltebereich beibehalten.

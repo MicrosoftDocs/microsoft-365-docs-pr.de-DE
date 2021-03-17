@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie mehr über die Advanced eDiscovery-Lösung in Microsoft 365. Dieser Artikel bietet eine Übersicht über Advanced eDiscovery in Microsoft 365, ein Tool, mit dem Sie interne und externe Untersuchungen verwalten können. Außerdem werden die geschäftlichen Gründe für die Verwendung von Advanced eDiscovery zum Verwalten Ihrer juristischen Untersuchungen gerahmt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6623682dedd0342f1e88478127d23bbbd4ab9dbb
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 80a1505bf19beb954c0746efb7fb29f99d6a916b
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727586"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838223"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Übersicht über Microsoft 365 Advanced eDiscovery
 
@@ -103,7 +103,7 @@ Wenn Sie einem Fall einen Verwahrer und die entsprechenden Verwahrerdatenquellen
 
 ### <a name="collecting-case-data"></a>Erfassen von Falldaten
 
-Verwenden Sie die Registerkarte **Suchvorgänge**, um Suchvorgänge zu erstellen, mit denen die lokalen und nicht-verwahrten Datenquellen nach für den Fall relevanten Inhalten durchsucht werden können. Sie können abfragebasierte Suchvorgänge (unter Verwendung von Stichwörtern und Bedingungen) erstellen und ausführen, um eine Reihe von E-Mail-Nachrichten und Dokumenten zu identifizieren, die für den Fall relevant sind und die Sie in den nachfolgenden Schritten des eDiscovery-Workflows weiter prüfen und analysieren möchten. Sie können eine oder mehrere Suchvorgänge im Zusammenhang mit dem Fall erstellen. Sie können das Suchtool auch zur Vorschau von Beispieldokumenten und zur Anzeige von Suchstatistiken verwenden, um die Suchergebnisse zu verfeinern und zu verbessern. Nachdem Sie sich davon überzeugt haben, dass die Suchergebnisse alle für den Fall relevanten Daten enthalten, fügen Sie die Suchergebnisse einem Prüfdateisatz zur weiteren Prüfung, Analyse und Aussonderung hinzu. Weitere Informationen finden Sie unter [Sammeln von Daten für einen Fall](collecting-data-for-ediscovery.md).
+Verwenden Sie **die Registerkarte** Sammlungen, um eDiscovery-Suchen zu erstellen, um die in-place custodial and non-custodial data sources nach inhalten zu durchsuchen, die für den Fall relevant sind. Sie können abfragebasierte Sammlungen (mithilfe von Schlüsselwörtern und Bedingungen) erstellen und ausführen, um eine Reihe von E-Mail-Nachrichten und Dokumenten zu identifizieren, die für den Fall relevant sind und die Sie in nachfolgenden Schritten im eDiscovery-Workflow weiter überprüfen und analysieren möchten. Sie können eine oder mehrere Sammlungen erstellen, die dem Fall zugeordnet sind. Sie können das Sammlungstool auch verwenden, um eine Vorschau von Beispieldokumenten anzuzeigen und Suchstatistiken anzuzeigen, um die Suchergebnisse zu verfeinern und zu verbessern. Nachdem Sie überzeugt sind, dass die Sammlungsergebnisse die für den Fall relevanten Daten enthalten, können Sie die Sammlung zu einem Überprüfungssatz für weitere Überprüfung, Analyse und Culling verpflichten. Weitere Informationen finden Sie unter [Sammeln von Daten für einen Fall](collecting-data-for-ediscovery.md).
 
 ### <a name="reviewing-and-analyzing-case-data"></a>Prüfen und Analysieren von Falldaten
 

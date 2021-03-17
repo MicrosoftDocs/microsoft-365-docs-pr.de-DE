@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a9bf9461e8cf6d62e4283c9112b801371242f2e
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: ce17f413b23ef9ef6abf79a2710a5cec9b05206c
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453705"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838531"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Bewerten von Microsoft Defender für Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "50453705"
 
 Durch die Durchführung einer umfassenden Sicherheitsproduktbewertung können Sie fundierte Entscheidungen zu Upgrades und Käufen treffen. Es hilft, die Funktionen des Sicherheitsprodukts auszuprobieren, um zu bewerten, wie es Ihrem Sicherheitsbetriebsteam bei seinen täglichen Aufgaben helfen kann.
 
-Die Evaluierungsumgebung von [Microsoft Defender für Office 365](office-365-atp.md) soll die Komplexität der Geräte- und Umgebungskonfiguration beseitigen, sodass Sie sich auf die Bewertung der Funktionen der Sicherheitslösung konzentrieren können. Es gilt nur für den E-Mail-Schutz und nicht für SharePoint, Office-Clients wie Word oder Teams.
+Die Evaluierungsumgebung von [Microsoft Defender für Office 365](office-365-atp.md) soll die Komplexität der Geräte- und Umgebungskonfiguration beseitigen, sodass Sie sich auf die Auswertung der Funktionen von Microsoft Defender für Office 365 konzentrieren können. Im Auswertungsmodus können alle Nachrichten, die an Exchange Online-Postfächer gesendet werden, ausgewertet werden, ohne auf Microsoft zu verweisen. Das Feature gilt nur für den E-Mail-Schutz und nicht für Office-Clients wie Word, SharePoint oder Teams.
 
 Wenn Sie noch nicht über eine Lizenz verfügen, die Microsoft Defender für Office 365 unterstützt, können Sie eine kostenlose [30-tägige](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) Evaluierung starten und die Funktionen im Office 365 Security & Compliance Center ( https://protection.office.com/homepage) testen. Sie genießen die schnelle Einrichtung und können sie bei Bedarf ganz einfach deaktivieren.
 
@@ -57,7 +57,7 @@ Mit der vereinfachten Einrichtungserfahrung können Sie sich auf:
 - Analysieren des Berichts für Aktionen
 - Präsentieren des Bewertungsergebniss
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 ### <a name="licensing"></a>Lizenzierung
 

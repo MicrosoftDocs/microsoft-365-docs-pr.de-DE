@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Erfahren Sie mehr über das Steuern verwandter Features in Microsoft 365-Gruppen, Teams, SharePoint und Yammer.
-ms.openlocfilehash: a9b4767c450ffc775fb84711e48b9f6c775419e5
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 01dea57504bf5d68c0bb13376379379f29044191
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741597"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838467"
 ---
 # <a name="what-is-collaboration-governance"></a>Was ist Zusammenarbeitsgovernance?
 
@@ -40,6 +40,10 @@ Diese Artikelreihe hilft Ihnen zu verstehen, wie Gruppen, Teams und SharePoint-E
 ### <a name="setting-up-secure-collaboration-with-microsoft-365"></a>Einrichten einer sicheren Zusammenarbeit mit Microsoft 365
 
 Es gibt viele Optionen für die Bereitstellung von Microsoft 365-Gruppen und Teams für eine sichere Zusammenarbeit in Ihrer Organisation. Es wird empfohlen, diese Steuerungsinhalte zusammen mit Einrichten einer sicheren Zusammenarbeit mit [Microsoft 365](setup-secure-collaboration-with-teams.md) und den zugehörigen Artikeln zu verwenden, um die beste Lösung für die Zusammenarbeit für Ihre Organisation zu erstellen.
+
+### <a name="data-residency"></a>Datenaufbewahrung
+
+Wenn Ihre Organisation multinational ist und Sie Anforderungen an die Datenresidenz für verschiedene Regionen haben, schließen Sie [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) als Teil Ihres Governanceplans für die Zusammenarbeit ein.
 
 ## <a name="why-microsoft-365-groups-are-important"></a>Warum Microsoft 365-Gruppen wichtig sind
 
@@ -109,6 +113,8 @@ Beachten Sie beim Starten ihres Steuerungsplanungsprozesses die folgenden bewäh
 - **Ausrichtung auf Geschäftsprioritäten** – Geschäftsziele helfen Ihnen zu definieren, wie viel Zeit und Energie Sie in Governance investieren müssen.
 
 - **Einbetten von Steuerungsentscheidungen** direkt in die von Ihnen erstellten Lösungen – viele Steuerungsentscheidungen können durch Aktivieren oder Deaktivieren von Features in Microsoft 365 implementiert werden.
+
+- **Verwenden Sie einen schrittweisen Ansatz:** Rollen Sie die Features für die Zusammenarbeit zuerst für eine kleine Gruppe von Benutzern aus. Erhalten Sie Feedback von ihnen, schauen Sie nach Helpdesktickets, und aktualisieren Sie alle erforderlichen Einstellungen oder Prozesse, bevor Sie zu einer größeren Gruppe fortfahren.
 
 - **Verstärkung durch Schulungen** – Passen Sie Lösungen wie [Microsoft 365-Lernpfade](https://docs.microsoft.com/office365/customlearning) an, um sicherzustellen, dass Ihre organisationsspezifischen Erwartungen durch von Microsoft bereitgestellte Schulungen verstärkt werden.
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Erfahren Sie, wie Sie den Kundenschlüssel für alle Daten in Ihrem Microsoft 365-Mandanten einrichten.
-ms.openlocfilehash: 7ffa9a8148a8ae699711b62da48cd2c856d48cac
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 2fed4730e79f6e2ace827eab338bf9da8fe55260
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727478"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838240"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Übersicht über den Kundenschlüssel für Microsoft 365 auf Mandantenebene (öffentliche Vorschau)
 
@@ -49,7 +49,7 @@ Beispielsweise werden Microsoft #A0 und einige #A1 und Besprechungsaufzeichnunge
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>Einrichten des Kundenschlüssels auf Mandantenebene (öffentliche Vorschau)
 
-Diese Schritte sind ähnlich, aber nicht identisch mit den Schritten zum Einrichten des Kundenschlüssels auf Anwendungsebene. Sie sollten diese öffentliche Vorschau nur mit Testdaten in Test mandanten verwenden. Verwenden Sie diese Version nicht mit Produktionsdaten oder in Ihrer Produktionsumgebung. Wenn Sie bereits über eine Produktionsbereitstellung des Kundenschlüssels verfügen, verwenden Sie diese Schritte, um den Kundenschlüssel auf Mandantenebene in einer Testumgebung zu einrichten.
+Diese Schritte sind ähnlich, aber nicht identisch mit den Schritten zum Einrichten des Kundenschlüssels auf Anwendungsebene. Sie sollten diese öffentliche Vorschau nur mit Testdaten in Test mandanten verwenden. Verwenden Sie diese Version nicht mit Produktionsdaten oder in Ihrer Produktionsumgebung. Wenn Sie bereits über eine Produktionsbereitstellung des Kundenschlüssels verfügen, verwenden Sie diese Schritte, um den Kundenschlüssel auf Mandantenebene in einer Testumgebung zu einrichten. Nachdem Sie Ihrem Mandanten eine Mandantenebenen-DEP zugewiesen haben, können Sie den Überprüfungsprozess starten und sich bei fragen m365ck@microsoft.com Fragen oder Bedenken wenden. Dokumentierte Überprüfungsschritte finden Sie auch in der öffentlichen Vorschau der Validierungsanweisungen für [die Daten-at-Rest-Verschlüsselung für Microsoft 365](https://aka.ms/CustomerKey/PublicPreviewValidation).
 
 Sie führen die meisten dieser Aufgaben durch eine Remoteverbindung mit Azure PowerShell aus. Um optimale Ergebnisse zu erzielen, sollten Sie Version 4.4.0 oder höher von Azure PowerShell verwenden.
 
@@ -318,7 +318,7 @@ Parameter:
 ### <a name="assign-policy"></a>Richtlinie zuweisen
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “<Default_PolicyName or Default_PolicyID>”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "<Default_PolicyName or Default_PolicyID>"
 ```
 
 Beschreibung: Dieses Cmdlet wird zum Konfigurieren der Standardmäßigen Datenverschlüsselungsrichtlinie verwendet. Diese Richtlinie wird dann verwendet, um Daten über alle Supportarbeitslasten hinweg zu verschlüsseln. 
@@ -326,7 +326,7 @@ Beschreibung: Dieses Cmdlet wird zum Konfigurieren der Standardmäßigen Datenve
 Beispiel:
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “Default_PolicyName”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Default_PolicyName"
 ```
 
 Parameter:
@@ -354,14 +354,14 @@ Set-M365DataAtRestEncryptionPolicy -Identity "NAM Policy" -Enabled $false
 Aktualisieren einer Datenverschlüsselungsrichtlinie.
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
+Set-M365DataAtRestEncryptionPolicy -Identity "EUR Policy" -Refresh
 ```
 
 Parameter:
 
 | Name | Beschreibung | Optional (Y/N) |
 |----------|----------|---------|
-|-Identity|Gibt die Datenverschlüsselungsrichtlinie an, die Sie ändern möchten.|N|
+|-Identity (Identität)|Gibt die Datenverschlüsselungsrichtlinie an, die Sie ändern möchten.|N|
 |-Refresh|Verwenden Sie die Option Aktualisieren, um die Datenverschlüsselungsrichtlinie zu aktualisieren, nachdem Sie einen der zugeordneten Schlüssel im Azure Key Vault gedreht haben. Sie müssen keinen Wert für diese Option angeben.|v|
 |-Enabled|Der Parameter Enabled aktiviert oder deaktiviert die Datenverschlüsselungsrichtlinie. Bevor Sie eine Richtlinie deaktivieren, müssen Sie sie ihrem Mandanten zuweisen. Gültige Werte sind:</br > $true: Die Richtlinie ist aktiviert</br > $true: Die Richtlinie ist aktiviert. Dies ist der Standardwert.
 |v|
@@ -394,7 +394,7 @@ Parameter:
 
 | Name | Beschreibung | Optional (Y/N) |
 |----------|----------|---------|
-|-Identity|Gibt die Datenverschlüsselungsrichtlinie an, für die Sie die Details auflisten möchten.|v|
+|-Identity (Identität)|Gibt die Datenverschlüsselungsrichtlinie an, für die Sie die Details auflisten möchten.|v|
 
 ### <a name="get-policy-assignment-info"></a>Informationen zur Richtlinienzuweisung erhalten
 
