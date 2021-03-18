@@ -2,8 +2,8 @@
 title: Microsoft-Produktivitätsbewertung
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über die Microsoft-Produktivitätsbewertung.
-ms.openlocfilehash: 0ce25175b3307e986c079c1614e38e8d87828e04
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 72f9bcfb273912629744ec25ad9c0be720e76081
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509086"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838425"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft-Produktivitätsbewertung 
 
@@ -72,7 +72,7 @@ Die Produktivitätsbewertung enthält Daten zu Exchange, SharePoint, OneDrive, M
 Das Bewertungsergebnis Ihrer Organisation wird täglich aktualisiert und spiegelt Benutzeraktionen wider, die in den letzten 28 Tagen (einschließlich des aktuellen Tags) durchgeführt wurden.
 
 
-## <a name="pre-requisites"></a>Voraussetzungen 
+## <a name="prerequisites"></a>Voraussetzungen 
 
 Für Mitarbeitererfahrungsdaten benötigen Sie ein Abonnement für Microsoft 365 für Business oder Office 365 für Unternehmen. Für Endpunktanalysedaten Ihres Mandanten müssen Sie Microsoft Intune zu Ihrem Abonnement hinzufügen. Intune hilft Ihnen beim Schutz Ihrer Unternehmensdaten durch die Verwaltung von Geräten und Apps. Sobald Sie Intune hinzugefügt haben, können Sie die Endpunktanalyse innerhalb der Intune-Umgebung aktivieren. Weitere Informationen zu [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
 > [!NOTE]
@@ -92,7 +92,7 @@ Die Produktivitätsbewertung steht nur im Microsoft 365 Admin Center zur Verfüg
 > [!NOTE]
 > Nur ein IT-Experte mit der Rolle „Globaler Administrator“ kann einen Mandanten für die Produktivitätsbewertung registrieren oder auswählen.
 
-Bitte beachten Sie, dass die Informationen nur zur Weiterentwicklung der digitalen Transformationen mit Microsoft 365 vorgesehen sind und daher mit Umsicht weitergegeben werden sollten. 
+Das Modell der Rollenbasierten Zugriffssteuerung für die Produktivitätsbewertung hilf Organisationen dabei, digitale Transformationen mit Microsoft 365 zu fördern, indem es Flexibilität beim Zuweisen von Rollen an IT-Experten innerhalb einer Organisation bietet.
 
 Microsoft hat sich zum Schutz persönlicher Daten verpflichtet. In diesem [Datenschutzdokument](privacy.md) werden die von uns bereitgestellten Steuerelemente erläutert, mit denen Sie als IT-Administrator Ihrer Organisation sicherstellen können, dass die Informationen nutzbar sind und zugleich das Vertrauen, das Sie in Microsoft setzen, nicht beeinträchtigt wird.
 

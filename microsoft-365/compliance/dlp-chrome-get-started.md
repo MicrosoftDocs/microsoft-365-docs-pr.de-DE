@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Vorbereitung und Bereitstellung der Microsoft Compliance Erweiterung.
-ms.openlocfilehash: d71c04433ec369856a510e9fb6382709ecb092f9
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: c6f56c65de6428374d912545db38337d34720c94
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826263"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838348"
 ---
 # <a name="get-started-with-microsoft-compliance-extension-preview"></a>Erste Schritte mit Microsoft Compliance Erweiterung (Vorschau)
 
@@ -74,10 +74,6 @@ Endpunkt-DLP-Daten können im [Aktivitäten-Explorer](data-classification-activi
 - Benutzer mit Leseberechtigung für Sicherheitsfunktionen
 - Berichtleseberechtigter
 
-### <a name="chrome-dependency"></a>Chrome-Abhängigkeit
-
-Die Microsoft Compliance Erweiterung wird für die aktuelle Version von Chrome und die vergangenen drei Versionen unterstützt.
-
 ### <a name="overall-installation-workflow"></a>Gesamter Installationsablauf
 
 Die Bereitstellung von Microsoft Compliance Erweiterung ist ein mehrstufiger Prozess. Sie können wählen, ob Sie die Installation auf einem einzelnen Computer durchführen möchten, oder ob Sie den Microsoft Endpoint Manager oder die Gruppenrichtlinie für eine unternehmensweite Bereitstellung verwenden möchten.
@@ -92,7 +88,7 @@ Die Bereitstellung von Microsoft Compliance Erweiterung ist ein mehrstufiger Pro
 
 ### <a name="prepare-infrastructure"></a>Infrastruktur vorbereiten
 
-Wenn Sie die Microsoft Compliance Erweiterung auf alle Ihre überwachten Windows 10-Geräte ausrollen, sollten Sie Google Chrome aus der Liste der nicht zugelassenen Apps entfernen. Weitere Informationen finden Sie unter [Unerlaubte Browser](endpoint-dlp-using.md#unallowed-browsers). Wenn Sie es nur auf einige wenige Geräte ausrollen, können Sie Chrome auf der Liste der nicht zugelassenen Browser belassen. Die Microsoft Compliance Erweiterung umgeht die Beschränkungen der Liste der nicht zugelassenen Apps für die Computer, auf denen sie installiert ist.  
+Wenn Sie die Microsoft Compliance Erweiterung auf alle Ihre überwachten Windows 10-Geräte ausrollen, sollten Sie Google Chrome aus der Liste der nicht zugelassenen Apps und unerlaubten Browser entfernen. Weitere Informationen finden Sie unter [Unerlaubte Browser](endpoint-dlp-using.md#unallowed-browsers). Wenn Sie es nur auf einige wenige Geräte ausrollen, können Sie Chrome auf der Liste der unerlaubten Browser oder nicht zugelassenen App belassen. Die Microsoft Compliance Erweiterung umgeht die Beschränkungen beider Listen für die Computer, auf denen sie installiert ist.  
 
 ### <a name="prepare-your-devices"></a>Bereiten Sie Ihre Geräte vor
 
@@ -107,30 +103,38 @@ Diese Methode wird empfohlen.
 
 1. Melden Sie sich an dem Windows 10-Computer an, auf dem Sie die Microsoft Compliance Erweiterung installieren möchten, und führen Sie das PowerShell-Skript als Administrator aus. 
 
-```powershell
-Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-``` 
+   ```powershell
+   Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+   ``` 
 
 2.  [Navigieren Sie zu Microsoft Compliance Erweiterung- Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
+
 3.  Installieren Sie die Erweiterung anhand der Anweisungen auf der Seite des Chrome Web Store.
 
 ### <a name="deploy-using-microsoft-endpoint-manager"></a>Bereitstellen mit Microsoft Endpoint Manager
 
-Verwenden Sie diese Einrichtungsmethode für organisationsweite Bereitstellungen 
+Verwenden Sie diese Einrichtungsmethode für organisationsweite Bereitstellungen.
+
 
 ##### <a name="enabling-required-registry-key-via-microsoft-endpoint-manager"></a>Erforderlichen Registrierungsschlüssel über Microsoft Endpoint Manager aktivieren
 
 1.  Erstellen Sie ein PowerShell-Skript mit dem folgenden Inhalt:
-```powershell
-Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-```
+
+    ```powershell
+    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+    ```
+
 2.  Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com) an.
+
 3.  Navigieren Sie zu **Geräte** > **-Skripte** und wählen Sie **Hinzufügen**.
+
 4.  Navigieren Sie zu dem Speicherort des erstellten Skripts, wenn Sie dazu aufgefordert werden.
+
 5.  Wählen Sie die folgenden Einstellungen aus:
     1. Führen Sie dieses Skript mit den angemeldeten Anmeldedaten aus: JA
     1. Skript-Signaturprüfung erzwingen: NEIN
     1. Skript in 64-Bit-PowerShell-Host ausführen: JA
+
 6.  Wählen Sie die richtigen Gerätegruppen aus und wenden Sie die Richtlinie an.
 
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>Microsoft Endpoint Manager Schritte zur erzwungenen Installation
@@ -139,15 +143,25 @@ Bevor Sie die Microsoft Compliance Erweiterung in die Liste der zwangsinstallier
 
  Nach dem Einlesen des ADMX können die folgenden Schritte ausgeführt werden, um ein Konfigurationsprofil für diese Erweiterung zu erstellen.
 
-1.  Melden Sie sich beim Microsoft Endpoint Manager Admin Center an (https://endpoint.microsoft.com)
+1.  Melden Sie sich beim Microsoft Endpoint Manager Admin Center an (https://endpoint.microsoft.com).
+
 2.  Navigieren Sie zu den Konfigurationsprofilen.
+
 3.  Wählen Sie **Profil erstellen**.
+
 4.  Wählen Sie **Windows 10** als Plattform aus.
+
 5.  Wählen Sie **Benutzerdefiniert** als Profiltyp.
+
 6.  Wählen Sie die Registerkarte **Einstellungen**.
+
 7.  Klicken Sie auf **Hinzufügen**.
+
 8.  Geben Sie die folgenden Richtlinieninformationen ein.
-OMA-URI: ./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist Datentyp: String Wert: <enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx″/>
+    
+    OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
+    Datentyp: `String`<br/>
+    Wert: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
 
 9.  Klicken Sie auf Erstellen.
 
@@ -156,34 +170,53 @@ OMA-URI: ./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extension
 Wenn Sie Microsoft Endpoint Manager nicht verwenden möchten, können Sie Gruppenrichtlinien verwenden, um die Microsoft Compliance Erweiterung in Ihrem Unternehmen bereitzustellen
 
 1. Ihre Geräte müssen über Gruppenrichtlinien verwaltbar sein, und Sie müssen alle Chrome-ADMXs in den zentralen Gruppenrichtlinienspeicher importieren. Weitere Informationen finden Sie unter [Erstellen und Verwalten des zentralen Speichers für administrative Gruppenrichtlinienvorlagen in Windows](https://docs.microsoft.com/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
-2.  Erstellen Sie damit ein PowerShell-Skript:
 
-```powershell
-et-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-```
+2.  Erstellen Sie ein PowerShell-Skript mit diesem PowerShell -Befehl:
+
+    ```powershell
+    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+    ```
 
 3.  Öffnen Sie die **Gruppenrichtlinien-Verwaltungskonsole** und navigieren Sie zu Ihrer Organisationseinheit (OU).
+
 4.  Klicken Sie mit der rechten Maustaste und wählen Sie **GPO in dieser Domäne erstellen und hier verlinken**. Wenn Sie dazu aufgefordert werden, geben Sie diesem Gruppenrichtlinienobjekt (GPO) einen beschreibenden Namen und schließen Sie die Erstellung ab.
+
 5.  Klicken Sie mit der rechten Maustaste auf das GPO und wählen Sie **Bearbeiten**.
+
 6.  Gehen Sie zu **Computerkonfiguration** > **Einstellungen** > **Systemsteuerung Einstellungen** > **Geplante Tasks**.
+
 7.  Erstellen Sie eine neue Sofortaufgabe, indem Sie mit der rechten Maustaste klicken und **Neue** > **Sofortaufgabe wählen (mindestens Windows 7)**.
+
 8.  Geben Sie der Aufgabe einen Namen und eine Beschreibung.
+
 9.  Wählen Sie das entsprechende Konto, um die Sofortaufgabe auszuführen, z. B. NT Authority
+
 10. Wählen Sie **Ausführen mit höchsten Rechten**.
+
 11. Konfigurieren Sie die Richtlinie für Windows 10.
+
 12. Wählen Sie auf der Registerkarte **Aktionen** die Aktion **Programm starten**.
+
 13. Geben Sie den Pfad zu dem in Schritt 1 erstellten Programm/Skript ein.
+
 14. Wählen Sie **Anwenden** aus.
 
 #### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>Hinzufügen der Chrome-Erweiterung zur ForceInstall-Liste
 
 1.  Navigieren Sie im Gruppenrichtlinien-Verwaltungseditor zu Ihrer OU.
+
 2.  Erweitern Sie den folgenden Pfad **Computer-/Benutzerkonfiguration** > **Richtlinien** > **Administrative Vorlagen** > **Klassische administrative Vorlagen** > **Google** > **Google Chrome** > **Erweiterungen**. Dieser Pfad kann je nach Ihrer Konfiguration variieren.
+
 3.  Wählen Sie **Liste der zwangsinstallierten Erweiterungen konfigurieren**.
+
 4.  Klicken Sie mit der rechten Maustaste und wählen Sie **Bearbeiten**.
+
 5.  Wählen Sie **Aktiviert** aus.
+
 6.  Wählen Sie **Anzeigen** aus.
+
 7.  Fügen Sie unter **Wert** den folgenden Eintrag hinzu: `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
+
 8.  Wählen Sie **OK** und dann **Anwenden**.
 
 ### <a name="test-the-extension"></a>Testen der Erweiterung
@@ -225,6 +258,12 @@ Nachdem Sie nun Chrome aus der Liste der nicht zugelassenen Browser/Apps entfern
 
    > [!div class="mx-imgBorder"]
    > ![Aktivitäten-Explorer-Filter für Endpunktgeräte](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+
+### <a name="known-issues-and-limitations"></a>Bekannte Probleme und Einschränkungen
+
+1. Die Drag & Drop-Erzwingung für das Hochladen von Ordnern wird nicht unterstützt.
+2. Die Erzwingung der Außerkraftsetzung von Sperren für den Cloudausgang wird nicht unterstützt.
+3. Der Inkognito-Modus wird nicht unterstützt und muss deaktiviert werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 Jetzt, da Geräte eingebunden sind und entsprechende Aktivitätsdaten im Aktivitäten-Explorer angezeigt werden, können Sie mit dem nächsten Schritt fortfahren, bei dem Sie DLP-Richtlinien zum Schutz Ihrer vertraulichen Elemente erstellen werden.

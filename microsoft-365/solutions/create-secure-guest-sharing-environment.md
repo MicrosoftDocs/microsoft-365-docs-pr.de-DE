@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Erfahren Sie mehr über die verfügbaren Optionen zum Erstellen einer sicheren Gastfreigabeumgebung in Microsoft 365, die Gastzugriff für eine bessere Zusammenarbeit bietet.
-ms.openlocfilehash: c52feeb8e5c85d38dfa1623ecdd7c2ee2a381fbd
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 28b2efba9f0c4ba17811a9871b05ab9f5a7a4839
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667705"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838682"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Erstellen einer sicheren Gastfreigabeumgebung
 
@@ -45,7 +45,7 @@ Bitte beachten Sie, dass in diesem Artikel die Aktivierung von Gastfreigabeeinst
 
 ## <a name="set-up-multi-factor-authentication-for-guests"></a>Einrichten der mehrstufigen Authentifizierung für Gäste
 
-Die mehrstufige Authentifizierung verringert die Wahrscheinlichkeit, dass ein Konto kompromittiert wird, erheblich. Da Gastbenutzer möglicherweise private E-Mail-Konten verwenden, die keiner Governance-Richtlinie oder bewährten Methoden entsprechen, ist es besonders wichtig, dass für Gäste die mehrstufige Authentifizierung vorgesehen ist. Sollten der Benutzername und das Kennwort eines Gastbenutzers gestohlen werden, verringert ein zweiter Authentifizierungsschritt die Wahrscheinlichkeit, dass unbekannte Parteien Zugriff auf Ihre Websites und Dateien erhalten, erheblich.
+Die mehrstufige Authentifizierung verringert die Wahrscheinlichkeit, dass ein Konto kompromittiert wird, erheblich. Da Gäste möglicherweise private E-Mail-Konten verwenden, die keiner Governancerichtlinie oder bewährten Methoden entsprechen, ist es besonders wichtig, dass für Gäste die mehrstufige Authentifizierung vorgesehen ist. Sollten der Benutzername und das Kennwort eines Gastes gestohlen werden, verringert ein zweiter Authentifizierungsschritt die Wahrscheinlichkeit, dass unbekannte Parteien Zugriff auf Ihre Websites und Dateien erhalten, erheblich.
 
 In diesem Beispiel wird die mehrstufige Authentifizierung für Gäste mithilfe einer Richtlinie für bedingten Zugriff in Azure Active Directory eingerichtet.
 
@@ -70,7 +70,7 @@ Nun müssen sich Gäste über die mehrstufige Authentifizierung anmelden, bevor 
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>Erstellen von Nutzungsbedingungen für Gäste
 
-In einigen Situationen könnten Gastbenutzer keine Geheimhaltungsvereinbarung oder andere rechtliche Vereinbarungen mit Ihrer Organisation unterzeichnet haben. Sie können festlegen, dass Gäste Ihren Nutzungsbedingungen zustimmen müssen, bevor sie auf für sie freigegebene Dateien zugreifen können. Diese Nutzungsbedingungen können angezeigt werden, wenn ein Gast zum ersten Mal versucht, auf eine freigegebene Datei oder Website zuzugreifen.
+In einigen Situationen könnten Gäste keine Geheimhaltungsvereinbarung oder andere rechtliche Vereinbarungen mit Ihrer Organisation unterzeichnet haben. Sie können festlegen, dass Gäste Ihren Nutzungsbedingungen zustimmen müssen, bevor sie auf für sie freigegebene Dateien zugreifen können. Diese Nutzungsbedingungen können angezeigt werden, wenn ein Gast zum ersten Mal versucht, auf eine freigegebene Datei oder Website zuzugreifen.
 
 Wenn Sie Nutzungsbedingungen erstellen möchten, müssen Sie das entsprechende Dokument zuerst in Word oder einem anderen Dokumenterstellungsprogramm erstellen, und es dann als PDF-Datei speichern. Diese Datei kann dann in Azure AD hochgeladen werden.
 
@@ -89,7 +89,7 @@ So richten Sie Azure AD-Nutzungsbedingungen ein
 9. Wählen Sie unter **Bedingter Zugriff** in der Liste **Mit Richtlinienvorlage für bedingten Zugriff erzwingen** die Option **Richtlinie für bedingten Zugriff später erstellen** aus.
 10. Klicken Sie auf **Erstellen**.
 
-Nachdem Sie die Nutzungsbedingungen erstellt haben, besteht der nächste Schritt darin, eine Richtlinie für den bedingten Zugriff zu erstellen, welche Gastbenutzern diese Nutzungsbedingungen anzeigt.
+Nachdem Sie die Nutzungsbedingungen erstellt haben, besteht der nächste Schritt darin, eine Richtlinie für den bedingten Zugriff zu erstellen, welche Gäste diese Nutzungsbedingungen anzeigt.
 
 So erstellen Sie eine Richtlinie für bedingten Zugriff
 
@@ -105,7 +105,7 @@ So erstellen Sie eine Richtlinie für bedingten Zugriff
 10. Wählen Sie auf dem Blatt **Gewähren** die Option **Gast-Nutzungsbedingungen** aus, und klicken Sie dann auf **Auswählen**.
 11. Klicken Sie auf dem Blatt **Neu** unter **Richtlinie aktivieren** auf **Ein**, und klicken Sie dann auf **Erstellen**.
 
-Wenn Gastbenutzer nun das erste Mal versuchen, auf Inhalte, ein Team oder eine Website in Ihrer Organisation zuzugreifen, müssen sie zunächst den Nutzungsbedingungen zustimmen.
+Wenn Gäste nun das erste Mal versuchen, auf Inhalte, ein Team oder eine Website in Ihrer Organisation zuzugreifen, müssen sie zunächst den Nutzungsbedingungen zustimmen.
 
 > [!NOTE]
 > Die Verwendung des bedingten Zugriffs erfordert eine Azure AD Premium P1-Lizenz. Weitere Informationen finden Sie unter [Was bedeutet bedingter Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
@@ -116,39 +116,32 @@ Wenn Gastbenutzer nun das erste Mal versuchen, auf Inhalte, ein Team oder eine W
 
 ## <a name="set-up-guest-access-reviews"></a>Einrichten von Gastzugriff-Überprüfungen
 
-Mithilfe der Zugriffsüberprüfung in Azure AD können Sie eine regelmäßige Überprüfung des Benutzerzugriffs auf verschiedene Teams und Gruppen automatisieren. Durch das Festlegen einer Zugriffsüberprüfung speziell für Gäste können Sie sicherstellen, dass Gastbenutzer nicht länger als erforderlich auf vertrauliche Informationen Ihrer Organisation zugreifen können.
+Mithilfe der Zugriffsüberprüfung in Azure AD können Sie eine regelmäßige Überprüfung des Benutzerzugriffs auf verschiedene Teams und Gruppen automatisieren. Durch das Festlegen einer Zugriffsüberprüfung speziell für Gäste können Sie sicherstellen, dass Gäste nicht länger als erforderlich auf vertrauliche Informationen Ihrer Organisation zugreifen können.
 
-Zugriffsüberprüfungen lassen sich in Programmen organisieren. Ein Programm besteht aus einer Gruppe ähnlicher Zugriffsüberprüfungen und kann verwendet werden, um Zugriffsüberprüfungen für Berichts- und Überwachungszwecke zu organisieren.
-
-So erstellen Sie ein Programm
-
-1. Melden Sie sich beim Azure-Portal an, und öffnen Sie die Seite [Identity Governance](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade).
-2. Klicken Sie im linken Menü auf **Programme**.
-3. Klicken Sie auf **Neues Programm**.
-4. Geben Sie einen **Namen**  und eine **Beschreibung** ein.
-5. Klicken Sie auf **Erstellen**.
-
-Nach der Erstellung des Programms können wir eine Gastzugriff-Überprüfung erstellen und diese dem Programm zuordnen.
-
-So richten Sie eine Gastzugriff-Überprüfung ein
+So richten Sie eine Gastzugriffüberprüfung ein
 
 1. Klicken Sie auf der Seite [Identity Governance](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade) im linken Menü auf **Zugriffsüberprüfungen**.
 2. Klicken Sie auf **Neue Zugriffsüberprüfung**.
+3. Wählen Sie die Option **Teams + Gruppen** aus.
+4. Wählen Sie die Option **Alle Microsoft 365-Gruppen mit Gastbenutzern** aus. Klicken Sie auf **Auszuschließende Gruppe(n) auswählen**, wenn Sie bestimmte Gruppen ausschließen möchten.
+5. Wählen Sie die Option **Nur Gastbenutzer** aus, und klicken Sie dann auf **Weiter: Überprüfungen**.
+6. Wählen Sie unter **Prüfer auswählen** die Option **Gruppenbesitzer** aus.
+7. Klicken Sie auf **Fallbackprüfer auswählen**, wählen Sie die Fallbackprüfer aus, und klicken Sie dann auf **Auswählen**.
+8. Wählen Sie unter **Wiederholung der Überprüfung festlegen** die Option **Vierteljährlich** aus.
+9. Wählen Sie ein Startdatum und die Dauer aus.
+10. Wählen Sie für **Ende** die Option **Nie** aus, und klicken Sie dann auf **Weiter: Einstellungen**.
 
-   ![Screenshot der Azure AD-Einstellungen für Zugriffsüberprüfungen](../media/azure-ad-create-access-review.png)
+    ![Screenshot der Registerkarte für die Azure AD-Zugriffsüberprüfungen](../media/azure-ad-create-access-review.png)
 
-3. Geben Sie im Feld **Name** einen Namen ein.
-4. Wählen Sie bei **Häufigkeit** die Option **Vierteljährlich** aus.
-5. Wählen Sie bei **Ende** die Option **Nie** aus.
-6. Wählen Sie bei **Umfang** die Option **Nur Gastbenutzer**.
-7. Klicken Sie auf **Gruppe**, wählen Sie die Gruppen aus, die Sie in die Zugriffsüberprüfung einbeziehen möchten, und klicken Sie dann auf **Auswählen**.
-8. Klicken Sie unter **Programme** auf **Mit Programm verknüpfen**.
-9. Wählen Sie auf dem Blatt **Programm auswählen** die Option **Gastzugriff-Überprüfungsprogramm aus**.
-10. Klicken Sie auf **Start**.
+11. Überprüfen Sie auf der Registerkarte **Einstellungen** die Einstellungen auf Übereinstimmung mit Ihren Geschäftsregeln.
 
-Für jede von Ihnen festgelegte Gruppe wird eine separate Zugriffsüberprüfung erstellt. Die Gruppenbesitzer der einzelnen Gruppen erhalten vierteljährlich eine E-Mail, um den Gastzugriff auf Ihre Gruppe zu genehmigen oder zu verweigern.
+    ![Screenshot der Registerkarte mit den Einstellungen für die Azure AD-Zugriffsüberprüfung](../media/azure-ad-create-access-review-settings.png)
 
-Es ist wichtig zu beachten, dass Gäste Zugang zu Teams, Gruppen oder einzelnen Dateien und Ordnern gewährt werden kann. Wenn sie Zugriff auf Dateien und Ordner erhalten, müssen Gäste keiner bestimmten Gruppe hinzugefügt werden. Wenn Sie Zugriffsüberprüfungen für Gastbenutzer durchführen möchten, die weder einem Team noch einer Gruppe angehören, können Sie in Azure AD eine dynamische Gruppe erstellen, die alle Gäste umfasst, und anschließend eine Zugriffsüberprüfung für diese Gruppe erstellen. Websitebesitzer können auch den [Gastablauf für die Website verwalten](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea).
+12. Klicken Sie auf **Weiter: Überprüfen + erstellen**.
+13. Geben Sie einen **Überprüfungsnamen** ein, und überprüfen Sie die Einstellungen.
+14. Klicken Sie auf **Erstellen**.
+
+Es ist wichtig zu beachten, dass Gäste Zugang zu Teams, Gruppen oder einzelnen Dateien und Ordnern gewährt werden kann. Wenn sie Zugriff auf Dateien und Ordner erhalten, müssen Gäste keiner bestimmten Gruppe hinzugefügt werden. Wenn Sie Zugriffsüberprüfungen für Gäste durchführen möchten, die weder einem Team noch einer Gruppe angehören, können Sie in Azure AD eine dynamische Gruppe erstellen, die alle Gäste umfasst, und anschließend eine Zugriffsüberprüfung für diese Gruppe erstellen. Websitebesitzer können auch den [Gastablauf für die Website verwalten](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea).
 
 ### <a name="more-information"></a>Weitere Informationen
 
@@ -156,9 +149,9 @@ Es ist wichtig zu beachten, dass Gäste Zugang zu Teams, Gruppen oder einzelnen 
 
 [Erstellen einer Zugriffsüberprüfung von Gruppen oder Anwendungen in Azure AD-Zugriffsüberprüfungen](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
 
-## <a name="set-up-web-only-access-for-guest-users"></a>Einrichten des rein webbasierten Zugriffs für Gastbenutzer
+## <a name="set-up-web-only-access-for-guests"></a>Einrichten des rein webbasierten Zugriffs für Gäste
 
-Sie können potenzielle Angriffsflächen verringern und die Verwaltung vereinfachen, indem Sie festlegen, dass Gastbenutzer nur über einen Webbrowser auf Ihre Teams, Websites und Dateien zugreifen können.
+Sie können potenzielle Angriffsflächen verringern und die Verwaltung vereinfachen, indem Sie festlegen, dass Gäste nur über einen Webbrowser auf Ihre Teams, Websites und Dateien zugreifen können.
 
 Für Microsoft 365-Gruppen und Microsoft Teams erfolgt dies über eine Azure AD-Richtlinie für bedingten Zugriff. Für SharePoint wird dies im SharePoint Admin Center konfiguriert. (Sie können auch [Vertraulichkeitsbezeichnungen verwenden, um den Gastzugriff auf reinen Webzugriff zu beschränken](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).)
 
@@ -192,9 +185,9 @@ So beschränken Sie den Gastzugriff auf reinen Webzugriff für SharePoint
 
 Beachten Sie, dass durch diese Einstellung im SharePoint Admin Center eine unterstützende Richtlinie für bedingten Zugriff in Azure AD erstellt wird.
 
-## <a name="configure-a-session-timeout-for-guest-users"></a>Konfigurieren eines Sitzungstimeouts für Gastbenutzer
+## <a name="configure-a-session-timeout-for-guests"></a>Konfigurieren Sie eine Richtlinie für Sitzungstimeout für Gäste.
 
-Die Bedingung der regelmäßigen Authentifizierung von Gästen kann die Wahrscheinlichkeit verringern, dass unbekannte Benutzer auf die Inhalte Ihrer Organisation zugreifen können, wenn das Gerät eines Gastbenutzers nicht sicher verwahrt wird oder geschützt ist. Sie können eine Richtlinie für bedingten Zugriff und Sitzungstimeouts für Gastbenutzer in Azure AD konfigurieren.
+Die Bedingung der regelmäßigen Authentifizierung von Gästen kann die Wahrscheinlichkeit verringern, dass unbekannte Benutzer auf die Inhalte Ihrer Organisation zugreifen können, wenn das Gerät eines Gasts nicht sicher verwahrt wird oder geschützt ist. Sie können eine Richtlinie für bedingten Zugriff und Sitzungstimeouts für Gäste in Azure AD konfigurieren.
 
 So konfigurieren Sie eine Sitzungstimeout-Richtlinie für Gäste
 
