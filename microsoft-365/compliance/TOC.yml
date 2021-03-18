@@ -44,16 +44,18 @@
           href: insider-risk-management.md
         - name: Planen des Insider-Risikomanagements
           href: insider-risk-management-plan.md
-        - name: Erste Schritte mit Insider-Risikoeinstellungen
-          href: insider-risk-management-settings.md
         - name: Erste Schritte mit dem Insider-Risikomanagement
           href: insider-risk-management-configure.md
+        - name: Erste Schritte mit Insider-Risikoeinstellungen
+          href: insider-risk-management-settings.md
         - name: Erstellen und Verwalten von Insider-Risikorichtlinien
           href: insider-risk-management-policies.md
         - name: Untersuchen von Insider-Risikowarnungen
           href: insider-risk-management-alerts.md
         - name: Maßnahmen bei Insider-Risikofällen ergreifen
           href: insider-risk-management-cases.md
+        - name: Überprüfen von Aktivitäten mit dem Insider-Risiko-Überwachungsprotokoll
+          href: insider-risk-management-audit-log.md
         - name: Überprüfen von Daten mit dem Inhalts-Explorer für Insider-Risiken
           href: insider-risk-management-content-explorer.md
         - name: Verwalten des Workflows mithilfe des Benutzerdashboards
@@ -237,8 +239,12 @@
               href: data-loss-prevention-policies.md
             - name: Informationen zur Verhinderung von Datenverlust am Endpunkt
               href: endpoint-dlp-learn-about.md
+            - name: Weitere Informationen zur Standardrichtlinie zur Verhinderung von Datenverlust in Microsoft Teams (Vorschau)
+              href: dlp-teams-default-policy.md
             - name: 'Informationen zum lokalen Microsoft 365-DLP-Scanner (Data Loss Prevention, Verhinderung von Datenverlust) (Vorschau)'
               href: dlp-on-premises-scanner-learn.md
+            - name: Erfahren Sie mehr über das Microsoft Compliance-Erweiterung (Vorschau)
+              href: dlp-chrome-learn-about.md
         - name: Erste Schritte mit DLP
           items:
             - name: Erste Schritte mit der DLP-Standardrichtlinie
@@ -253,6 +259,8 @@
               href: endpoint-dlp-getting-started.md
             - name: Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen für die Verhinderung von Datenverlust am Endpunkt
               href: endpoint-dlp-configure-proxy.md
+            - name: Erste Schritte mit der Microsoft Compliance Erweiterung (Vorschau)
+              href: dlp-chrome-get-started.md
             - name: "Verhinderung von Datenverlust am Endpunkt\_– Onboarding-Tools und -Methoden für Windows\_10-Geräte"
               items:
                 - name: "Onboarding-Tools und -Methoden für Windows\_10-Computer"
