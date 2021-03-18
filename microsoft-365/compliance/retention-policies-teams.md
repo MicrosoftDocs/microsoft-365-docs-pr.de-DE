@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: 4296924684e13e163f28e0f952b2cd380cdcc047
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: ec4ca9a79ee3b5674e1837d14cea4ee504cb57d5
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712011"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838210"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informationen zur Aufbewahrung für Microsoft Teams
 
@@ -46,7 +46,7 @@ Informationen zu anderen Arbeitsbereichen finden Sie unter:
 Die folgenden Teams-Elemente können unter Verwendung von Aufbewahrungsrichtlinien für Teams aufbewahrt und gelöscht werden: Chatnachrichten und Kanalnachrichten, einschließlich eingebetteter Bilder, Tabellen, Hypertextlinks und Links zu anderen Teams-Nachrichten und Dateien sowie [Karteninhalte](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chatnachrichten umfassen alle Namen der Personen im Chat, und Kanalmeldungen umfassen den Teamnamen und den Nachrichtentitel (sofern vorhanden). 
 
 > [!NOTE]
-> Die Einbindung von Karteninhalten ist eine neue Funktion, die Mandanten gegenwärtig zur Verfügung gestellt wird. Weitere Informationen finden Sie unter [Microsoft 365 Compliance-Funktionen für adaptive Karteninhalte über Apps in Teams jetzt verfügbar](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
+> Die Einbindung von Karteninhalten ist eine neue Funktion, die Mandanten nun vollständig zur Verfügung gestellt ist. Weitere Informationen finden Sie unter [Microsoft 365 Compliance-Funktionen für adaptive Karteninhalte über Apps in Teams jetzt verfügbar](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
 Teams-Nachrichten in privaten Kanälen werden für Aufbewahrungsrichtlinien derzeit nicht unterstützt. Codeausschnitte, aufgezeichnete Sprachnotizen vom Mobile Microsoft Teams-Clients, Miniaturansichten, Ankündigungsbilder und Reaktionen anderer in Form von Emoticons sind nicht enthalten, wenn Sie Aufbewahrungsrichtlinien für Teams verwenden.
 
