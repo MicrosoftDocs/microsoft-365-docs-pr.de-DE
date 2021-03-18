@@ -540,6 +540,8 @@
               href: de-duplication-in-ediscovery-search-results.md
             - name: Unterschiede zwischen geschätzten und tatsächlichen Suchergebnissen
               href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            - name: Für eDiscovery in Postfächern gespeicherte Inhalte
+              href: what-is-stored-in-exo-mailbox.md
             - name: Entschlüsselung in eDiscovery-Tools
               href: ediscovery-decryption.md
         - name: PowerShell-Skripts für die Inhaltssuche
@@ -570,6 +572,8 @@
               href: assign-ediscovery-permissions.md
             - name: Stichwortabfragen und Suchbedingungen
               href: keyword-queries-and-search-conditions.md
+            - name: Für eDiscovery in Postfächern gespeicherte Inhalte
+              href: what-is-stored-in-exo-mailbox.md
             - name: Konfigurieren von Berechtigungsfiltern für die Suche
               href: permissions-filtering-for-content-search.md
             - name: Einrichten von Compliance-Begrenzungen
@@ -635,14 +639,27 @@
         - name: Verwalten von Verarbeitungsfehlern
           href: processing-data-for-case.md
           items:
-            - name: Erweiterte Indizierung der Daten von Verwaltungsberechtigten
+            - name: Erweitertes Indizieren der Inhalte von Verwaltungsberechtigten
               href: indexing-custodian-data.md
-            - name: Beheben von Fehlern beim Verarbeiten von Daten
+            - name: Beheben von Fehlern bei der Datenverarbeitung
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: Korrektur von Fehlern einzelner Elemente
               href: single-item-error-remediation.md
+        - name: Sammeln von Inhalten für einen Fall (Vorschau)
+          items:
+            - name: Informationen zu Sammlungen (Vorschau)
+              href: collections-overview.md
+            - name: Erstellen einer Entwurfssammlung (Vorschau)
+              href: create-draft-collection.md
+            - name: Festlegen einer Entwurfssammlung auf einen Überprüfungssatz (Vorschau)
+              href: commit-draft-collection.md
+            - name: Sammlungsstatistiken und -berichte (Vorschau)
+              href: collection-statistics-reports.md
+            - name: Erstellen von Suchabfragen für Sammlungen
+              href: building-search-queries.md
+            - name: Stichwortabfragen und Suchbedingungen
+              href: keyword-queries-and-search-conditions.md
         - name: Sammeln von Daten für einen Fall
-          href: collecting-data-for-ediscovery.md
           items:
             - name: Erstellen einer Suche
               href: create-search-to-collect-data.md
@@ -661,7 +678,7 @@
               href: load-non-Office-365-data-into-a-review-set.md
             - name: 'Hinzufügen von Daten zu einem anderen Prüfdateisatz '
               href: add-data-to-review-set-from-another-review-set.md
-        - name: Überprüfen von Falldaten
+        - name: Überprüfen von Fallinhalten
           items:
             - name: Verwenden des Prüfdateisatz-Dashboards
               href: advanced-ediscovery-dashboard.md
@@ -671,7 +688,7 @@
               href: review-set-search.md
             - name: Markieren von Dokumenten in einem Prüfdateisatz
               href: tagging-documents.md
-        - name: Analysieren von Falldaten
+        - name: Analysieren von Fallinhalten
           href: analyzing-data-in-review-set.md
           items:
             - name: Erkennen von Quasiduplikaten
@@ -680,11 +697,11 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: Designs
               href: themes-in-advanced-ediscovery.md
-            - name: Verwenden des Relevanzmoduls für Datenanalyse
+            - name: Verwenden des Relevanzmoduls zur Inhaltsanalyse
               href: using-relevance.md
             - name: Ausmusterung des Relevanzmoduls
               href: relevance-module-retirement.md
-        - name: Exportieren von Falldaten
+        - name: Exportieren des Fallinhalts
           href: exporting-data-ediscover20.md
           items:
             - name: Herunterladen von Dokumenten aus einem Prüfdateisatz
@@ -725,6 +742,8 @@
               href: permissions-filtering-for-content-search.md
             - name: Einrichten von Compliance-Begrenzungen
               href: set-up-compliance-boundaries.md
+            - name: Für eDiscovery in Postfächern gespeicherte Inhalte
+              href: what-is-stored-in-exo-mailbox.md
             - name: Entschlüsselung in eDiscovery-Tools
               href: ediscovery-decryption.md
             - name: Sammeln von eDiscovery-Diagnoseinformationen
