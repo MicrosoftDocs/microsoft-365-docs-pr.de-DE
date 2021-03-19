@@ -17,51 +17,51 @@ ms.custom:
 - seo-marvel-jun2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Erfahren Sie, wie Sie Microsoft 365-Apps wie Teams, OneDrive und SharePoint für die Zusammenarbeit mit Personen außerhalb Ihrer Organisation konfigurieren.
+description: Erfahren Sie, wie Sie Microsoft 365-Apps wie Teams, OneDrive und SharePoint für die Zusammenarbeit mit Personen außerhalb Ihres Unternehmens konfigurieren.
 ms.openlocfilehash: 7b8e5e30d8222d055fc5f64472c4083db614d4bd
 ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/16/2021
 ms.locfileid: "50261513"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Zusammenarbeit mit Personen außerhalb Ihrer Organisation
 
-Die Funktionen für die externe Freigabe in Microsoft 365 bieten Personen in Ihrer Organisation die Möglichkeit, mit Partnern, Lieferanten, Kunden und anderen Personen zusammenzuarbeiten, die kein Konto in Ihrem Verzeichnis haben. Sie können ganze Teams oder Websites für Personen außerhalb Ihrer Organisation oder nur einzelne Dateien freigeben.
+Die externen Freigabefunktionen in Microsoft 365 bieten den Mitarbeitern in Ihrem Unternehmen die Möglichkeit, mit Partnern, Anbietern, Kunden und anderen Personen zusammenzuarbeiten, die kein Konto in Ihrem Verzeichnis haben. Sie können ganze Teams oder Sites für Personen außerhalb Ihrer Organisation freigeben, oder auch nur einzelne Dateien.
 
-Die Zusammenarbeit mit Personen außerhalb Ihrer Organisation besteht aus zwei Hauptkomponenten:
+Die Zusammenarbeit mit Personen außerhalb Ihres Unternehmens besteht aus zwei Hauptkomponenten:
 
-- **Freigabe aktivieren** – Konfigurieren Sie die Freigabesteuerelemente in Azure Active Directory, Teams, Microsoft 365-Gruppen und SharePoint, um die Freigabeebene zu ermöglichen, die Sie für Ihre Organisation wünschen.
-- **Aktivieren** sie zusätzliche Sicherheit: Während die grundlegenden Freigabefeatures so konfiguriert werden können, dass Personen außerhalb Ihrer Organisation sich authentifizieren müssen, bietet Microsoft 365 viele zusätzliche Sicherheits- und Compliancefeatures, die Ihnen helfen, Ihre Daten zu schützen und Ihre Steuerungsrichtlinien bei der externen Freigabe zu verwalten.
+- **Freigabe aktivieren** - Konfigurieren Sie die Freigabesteuerungen in Azure Active Directory, Teams, Microsoft 365 Groups und SharePoint, um den Grad der Freigabe zu ermöglichen, den Sie für Ihre Organisation wünschen.
+- **Aktivieren zusätzlicher Sicherheitsfeatures** - Während die grundlegenden Freigabefunktionen so konfiguriert werden können, dass sich Personen außerhalb Ihres Unternehmens authentifizieren müssen, bietet Microsoft 365 viele zusätzliche Sicherheits- und Compliance-Funktionen, die Ihnen dabei helfen, Ihre Daten zu schützen und Ihre Governance-Richtlinien bei der externen Freigabe einzuhalten.
 
 ## <a name="enable-sharing"></a>Freigabe aktivieren
 
-In Microsoft 365 ist die Freigabe für Personen außerhalb Ihrer Organisation standardmäßig aktiviert. Viele Szenarien für die externe Freigabe funktionieren ohne weitere Konfiguration. Wählen Sie eine der folgenden Optionen aus, um die Einstellungen für ein Szenario zu bestätigen, das Sie verwenden, oder um ein neues Szenario zu aktivieren:
+In Microsoft 365 ist die Freigabe für Personen außerhalb Ihrer Organisation standardmäßig aktiviert. Viele externe Freigabeszenarien funktionieren ohne weitere Konfiguration. Um die Einstellungen für ein bereits verwendetes Szenario zu bestätigen oder ein neues Szenario zu aktivieren, wählen Sie eine der folgenden Optionen:
 
-- [Zusammenarbeit an](collaborate-on-documents.md) Dokumenten – Erfahren Sie, wie Sie Microsoft 365 konfigurieren, um die Freigabe und Zusammenarbeit mit Personen außerhalb Ihrer Organisation (sowohl Gäste als auch nicht authentifizierte Benutzer) für Dateien und Ordner zu ermöglichen.
-- [Zusammenarbeit an einer Website](collaborate-in-site.md) – Erfahren Sie, wie Sie Microsoft 365 konfigurieren, um die Freigabe von SharePoint-Websites für Gäste zu ermöglichen.
-- [Zusammenarbeit als Team –](collaborate-as-team.md) Erfahren Sie, wie Sie Microsoft 365 konfigurieren, um die Gastzusammenarbeit in Teams zu ermöglichen.
+- [Zusammenarbeit an Dokumenten](collaborate-on-documents.md) - Erfahren Sie, wie Sie Microsoft 365 konfigurieren, um die Freigabe und Zusammenarbeit mit Personen außerhalb Ihrer Organisation (sowohl Gäste als auch nicht authentifizierte Benutzer) an Dateien und Ordnern zu ermöglichen.
+- [Zusammenarbeit in einer Site](collaborate-in-site.md) - Erfahren Sie, wie Sie Microsoft 365 so konfigurieren, dass SharePoint-Sites mit Gästen geteilt werden können.
+- [Als Team zusammenarbeiten](collaborate-as-team.md) - Erfahren Sie, wie Sie Microsoft 365 konfigurieren, um die Zusammenarbeit von Gästen in Teams zu ermöglichen.
 
-Einen umfassenden Überblick über die in Microsoft 365 verfügbaren Einstellungen für die Gastfreigabe finden Sie in der Referenz zu [Den Microsoft 365-Gastfreigabeeinstellungen.](microsoft-365-guest-settings.md)
+Einen umfassenden Überblick über die in Microsoft 365 verfügbaren Einstellungen für die Gastfreigabe finden Sie in der [Referenz zu den Einstellungen für die Gastfreigabe in Microsoft 365](microsoft-365-guest-settings.md).
 
-## <a name="enable-additional-security"></a>Aktivieren zusätzlicher Sicherheit
+## <a name="enable-additional-security"></a>Aktivieren Sie zusätzliche Sicherheit
 
-Nachdem Sie das Szenario aktiviert haben, das Sie für die Freigabe für Personen außerhalb Ihrer Organisation verwenden möchten, sollten Sie zusätzliche Sicherheitsvorkehrungen in Betracht ziehen, um Ihre Inhalte vor versehentlicher oder absichtlich unangemessener Freigabe zu schützen.
+Sobald Sie das Szenario aktiviert haben, das Sie für die Freigabe an Personen außerhalb Ihres Unternehmens verwenden möchten, sollten Sie zusätzliche Schutzmaßnahmen in Betracht ziehen, um Ihre Inhalte vor versehentlicher oder absichtlicher unangemessener Freigabe zu schützen.
 
-- [Bewährte Methoden für die Freigabe](best-practices-anonymous-sharing.md) von Dateien und Ordnern für nicht authentifizierte Benutzer – Erfahren Sie mehr über bewährte Methoden für die Freigabe für nicht authentifizierte Benutzer.
-- [Begrenzen der versehentlichen](share-limit-accidental-exposure.md) Gefährdung – Erfahren Sie, wie Sie die Wahrscheinlichkeit verringern, dass vertrauliche Inhalte versehentlich mit Personen außerhalb Ihrer Organisation geteilt werden.
-- [Erstellen einer](create-secure-guest-sharing-environment.md) sicheren Gastfreigabeumgebung – Erfahren Sie mehr über die in Microsoft 365 bereitgestellten Tools, um sicherzustellen, dass die Freigabe mit Personen außerhalb Ihrer Organisation auf sichere Weise erfolgt und Ihre Governanceanforderungen erfüllt.
+- [Bewährte Methoden für die Freigabe von Dateien und Ordnern mit nicht authentifizierten Benutzern](best-practices-anonymous-sharing.md) - Erfahren Sie mehr über Best Practices für die Freigabe mit nicht authentifizierten Benutzern.
+- [Begrenzen Sie die versehentliche Offenlegung](share-limit-accidental-exposure.md) - Erfahren Sie, wie Sie die Wahrscheinlichkeit verringern, dass vertrauliche Inhalte versehentlich mit Personen außerhalb Ihres Unternehmens geteilt werden.
+- [Erstellen einer sicheren Gastfreigabeumgebung](create-secure-guest-sharing-environment.md) - Erfahren Sie mehr über die in Microsoft 365 bereitgestellten Tools, mit denen Sie sicherstellen können, dass die Freigabe für Personen außerhalb Ihres Unternehmens auf sichere Weise erfolgt und Ihren Governance-Anforderungen entspricht.
 
-## <a name="collaborate-with-partner-companies"></a>Zusammenarbeit mit Partnerunternehmen
+## <a name="collaborate-with-partner-companies"></a>Zusammenarbeit mit Partnerfirmen
 
-Wenn Sie an einem großen Projekt arbeiten, an dem viele Gäste aus einer anderen Organisation beteiligt sind, oder wenn Sie eine fortlaufende Anbieterbeziehung haben, in der sich Gäste häufig ändern, können Sie die Berechtigungsverwaltung in Azure Active Directory verwenden, um die Gastverwaltung zu vereinfachen und dem Partnerunternehmen die Freigabe in dieser Verantwortung zu ermöglichen. Weitere Informationen finden Sie unter "Erstellen [eines B2B-Extranets](b2b-extranet.md) mit verwalteten Gästen".
+Wenn Sie an einem großen Projekt arbeiten, an dem viele Gäste aus einer anderen Organisation beteiligt sind, oder wenn Sie eine laufende Lieferantenbeziehung haben, in der die Gäste häufig wechseln, können Sie die Berechtigungsverwaltung in Azure Active Directory verwenden, um die Gastverwaltung zu vereinfachen und das Partnerunternehmen an dieser Verantwortung teilhaben zu lassen. Siehe [Erstellen eines B2B-Extranets mit verwalteten Gästen](b2b-extranet.md) für weitere Details.
 
 ## <a name="limit-sharing"></a>Freigabe einschränken
 
-Wenn einige der Freigabefeatures in Microsoft 365 mit Ihren Steuerungsrichtlinien in Konflikt stehen, finden Sie unter "Freigabebegrenzung" [in Microsoft 365](microsoft-365-limit-sharing.md) Weitere Informationen zu Optionen zum Einschränken der Freigabe.
+Wenn einige der Freigabefunktionen in Microsoft 365 mit Ihren Governance-Richtlinien in Konflikt stehen, lesen Sie den Abschnitt [Freigabe in Microsoft 365 einschränken](microsoft-365-limit-sharing.md), um mehr über die Optionen zur Einschränkung der Freigabe zu erfahren.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Einführung in die Dateizusammenarbeit in Microsoft 365](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
 
-[Planen der Dateizusammenarbeit in SharePoint mit Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)
+[Dateizusammenarbeit in SharePoint mit Microsoft 365 planen](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)
