@@ -1,5 +1,5 @@
 ---
-title: Erstellen von DNS-Einträgen bei GoDaddy für Microsoft
+title: Erstellen von DNS-Einträgen für Microsoft bei GoDaddy
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
-description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und dns-Einträge für E-Mail, Skype for Business Online und andere Dienste bei GoDaddy für Microsoft einrichten.
+description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste bei GoDaddy für Microsoft einrichten.
 ms.openlocfilehash: 2b53985dc17f3d124ec2b37dbf0047bce229385c
 ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
@@ -29,7 +29,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 02/06/2021
 ms.locfileid: "50126449"
 ---
-# <a name="create-dns-records-at-godaddy-for-microsoft"></a>Erstellen von DNS-Einträgen bei GoDaddy für Microsoft
+# <a name="create-dns-records-at-godaddy-for-microsoft"></a>Erstellen von DNS-Einträgen für Microsoft bei GoDaddy
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen.
 
@@ -54,7 +54,7 @@ Führen Sie die folgenden Schritte aus.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. Wählen **Sie unter "Domänen"** unter der Domäne, die Sie bearbeiten möchten, DNS aus.
+2. Wählen Sie unter **Domänen** unter der Domäne DNS aus, die Sie bearbeiten möchten.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -66,7 +66,7 @@ Führen Sie die folgenden Schritte aus.
 
     |**Record type** |**Host**|**TXT VALUE**|**TTL** |
     |:-----|:-----|:-----|:-----|
-    |TXT (Text)|@|MS=ms *XXXXXXXX*<br>**Hinweis:** Dies ist ein nur Beispiel. Verwenden Sie hier Ihren spezifischen Ziel- oder **Verweist-auf-Adresse-Wert** aus der Tabelle. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)|1 hour  <br>(Wählen Sie einen Wert aus der Dropdownliste aus.)|
+    |TXT (Text)|@|MS=ms *XXXXXXXX*<br>**Hinweis**: Dies ist ein nur Beispiel. Verwenden Sie hier Ihren spezifischen **Ziel- oder Verweist auf die Adresse**-Wert aus der Tabelle. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)|1 hour  <br>(Wählen Sie einen Wert aus der Dropdownliste aus.)|
 
       ![GoDaddy-BP-Verify-1-0](../../media/dns/56526870-d6465780-651a-11e9-9cf0-d6fff71e2f62.png)
 
@@ -105,7 +105,7 @@ Führen Sie die folgenden Schritte aus.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. Wählen **Sie unter "Domänen"** unter der Domäne, die Sie bearbeiten möchten, DNS aus.
+2. Wählen Sie unter **Domänen** unter der Domäne DNS aus, die Sie bearbeiten möchten.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -119,11 +119,11 @@ Führen Sie die folgenden Schritte aus.
 
 5. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
 
-    (Wählen Sie den **TTL-Wert** aus der Dropdownliste aus.)
+    (Wählen Sie in der Dropdownliste den Wert für **TTL** aus.)
 
     |**Record type**|**Host**|**Points to**|**Priorität**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Holen Sie  *\<domain-key\>*  sich Ihr Konto von Ihrem Microsoft-Konto.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 Stunde  <br/> |
+    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Erhalten Sie Ihren *\<domain-key\>* über Ihr Microsoft-Konto.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 Stunde  <br/> |
 
 6. Wählen Sie **Speichern** aus.
 
@@ -136,7 +136,7 @@ Führen Sie die folgenden Schritte aus.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. Wählen **Sie unter "Domänen"** dns unter der Domäne aus, die Sie bearbeiten möchten.
+2. Wählen Sie unter **Domänen** unter der Domäne DNS aus, die Sie bearbeiten möchten.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -153,7 +153,7 @@ Führen Sie die folgenden Schritte aus.
 
     Geben Sie in den Feldern für den neuen Eintrag die Werte aus der ersten Zeile der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
 
-    (Wählen Sie den **TTL-Wert** aus der Dropdownliste aus.)
+    (Wählen Sie in der Dropdownliste den Wert für **TTL** aus.)
 
     |**Record type**|**Host**|**Points to**|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -165,13 +165,13 @@ Führen Sie die folgenden Schritte aus.
 
 
 
-6. Wiederholen Sie diese Schritte, um den nächsten #A0 hinzuzufügen, bis Sie alle sechs #A1 erstellt haben.
+6. Wiederholen Sie diese Schritte zum Hinzufügen des nächsten CNAME-Eintrags, bis Sie alle sechs CNAME-Einträge erstellt haben.
 
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Hinzufügen eines TXT-Eintrags für SPF, um E-Mail-Spam zu verhindern
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, Fügen Sie stattdessen dem aktuellen Datensatz die erforderlichen  Werte von Microsoft hinzu, sodass Sie über einen einzelnen SPF-Eintrag verfügen, der beide Wertesätze enthält.
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, sondern fügen Sie die erforderlichen Microsoft-Werte dem aktuellen Eintrag hinzu. Damit verfügen Sie über einen *einzigen* SPF-Eintrag, in dem beide Wertemengen enthalten sind.
 
 Führen Sie die folgenden Schritte aus.
 
@@ -179,7 +179,7 @@ Führen Sie die folgenden Schritte aus.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. Wählen **Sie unter "Domänen"** unter der Domäne, die Sie bearbeiten möchten, DNS aus.
+2. Wählen Sie unter **Domänen** unter der Domäne DNS aus, die Sie bearbeiten möchten.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -193,7 +193,7 @@ Führen Sie die folgenden Schritte aus.
 
 5. Geben Sie in den Feldern für den neuen Eintrag die folgenden Werte ein. Sie können die Werte auch kopieren und einfügen.
 
-    (Wählen Sie den **TTL-Wert** aus den Dropdownlisten aus.)
+    (Wählen Sie in den Dropdownlisten den Wert für **TTL** aus.)
 
     |**Record type**|**Host**|**TXT VALUE**|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -213,7 +213,7 @@ Führen Sie die folgenden Schritte aus.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. Wählen **Sie unter "Domänen"** dns unter der Domäne aus, die Sie bearbeiten möchten.
+2. Wählen Sie unter **Domänen** unter der Domäne DNS aus, die Sie bearbeiten möchten.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -229,17 +229,17 @@ Führen Sie die folgenden Schritte aus.
 
     Geben Sie in den Feldern für den neuen Eintrag die Werte aus der ersten Zeile der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
 
-    (Wählen Sie in **den Dropdownlisten** den Datensatztyp und die **TTL-Werte** aus.)
+    (Wählen Sie in den Dropdownlisten die Werte für **Record type** und **TTL** aus.)
 
-    |**Eintragstyp**|**Name**|**Target**|**Protocol**|**Service**|**Priority**|**Weight**|**Port**|**TTL**|
+    |**Record type**|**Name**|**Target**|**Protocol**|**Service**|**Priority**|**Weight**|**Port**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Dienst)  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1   <br/> |443  <br/> |1 hour  <br/> |
-    |SRV (Dienst)  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1   <br/> |5061  <br/> |1 Stunde  <br/> |
+    |SRV (Dienst)  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hour  <br/> |
+    |SRV (Dienst)  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 Stunde  <br/> |
 
     ![GoDaddy-BP-Configure-5-1](../../media/a1b15ab1-eb6a-4672-90d1-7ac3e0beb223.png)
 
 
-6. Wiederholen **Sie Schritt 5,** um den anderen SRV-Eintrag zu erstellen.
+6. Wiederholen Sie **Schritt 5**, um den anderen SRV-Eintrag zu erstellen.
 
 7. Wählen Sie **Speichern** aus.
 
