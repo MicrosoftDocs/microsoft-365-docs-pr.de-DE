@@ -21,7 +21,7 @@ description: Erfahren Sie, wie Sie Ihre Rechnung für Microsoft Business-Produkt
 keywords: Abrechnungskonten, Unternehmensinformationen, Rechnungen
 ms.openlocfilehash: 521ef49e7f2292f8ea09210fb0edcce0d56e1b76
 ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/06/2021
 ms.locfileid: "50126573"
