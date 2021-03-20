@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
-description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Hostgator für Microsoft einrichten.
-ms.openlocfilehash: 3fe13df9b7e41d88c9bf06149eb894a028c4e350
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für E-Mails, Skype for Business Online und andere Dienste bei Hostgator für Microsoft einrichten.
+ms.openlocfilehash: 790a7d77c9dbab37b87f8e7533515e75d2018e92
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658087"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910198"
 ---
 # <a name="create-dns-records-at-hostgator-for-microsoft"></a>Erstellen von DNS-Einträgen bei Hostgator für Microsoft
 
@@ -35,9 +35,9 @@ ms.locfileid: "49658087"
 Wenn Hostgator Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufgeführten Schritte aus, um Ihre Domäne zu überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten.
   
 > [!IMPORTANT]
-> Sie müssen die erste procedurebelow ausführen, [Ihre Domäne auf Ihr Hostingkonto hinweisen](#point-your-domain-to-your-hosting-account), bevor Sie DNS-Einträge mithilfe eines der anderen Verfahren in diesem Artikel hinzufügen. 
+> Sie müssen das erste Verfahren [ausführen:](#point-your-domain-to-your-hosting-account)Verweisen Sie Ihre Domäne auf Ihr Hostingkonto, bevor Sie MITHILFE eines der anderen Verfahren in diesem Artikel DNS-Einträge hinzufügen. 
 
-Nachdem Sie alle diese Änderungen bei Hostgator vorgenommen haben, ist Ihre Domäne für die Verwendung mit Microsoft-Diensten eingerichtet.
+Nachdem Sie alle diese Änderungen bei Hostgator vorgenommen haben, wird Ihre Domäne für die Arbeit mit Microsoft-Diensten eingerichtet.
   
 
   
@@ -54,15 +54,15 @@ Führen Sie die folgenden Schritte aus, um Ihre Domäne und Hostingkonten zu ver
   
 1. Im ersten Schritt navigieren Sie über [diesen Link](https://portal.hostgator.com/) zu Ihrer Domänenverwaltungsseite bei Hostgator. Sie werden aufgefordert, sich anzumelden.
     
-2. Wählen Sie Links die Option **Domains** aus.
+2. Wählen **Sie auf** der linken Seite Domänen aus.
   
-3. Wählen Sie auf der Seite **Domänen verwalten** die Domäne aus, die Sie aktualisieren möchten. 
+3. Wählen Sie **auf der** Seite Domänen verwalten die Domäne aus, die Sie aktualisieren möchten. 
   
-4. Wählen Sie im Popup Menü auf der linken Seite die Option **Name Servers** aus.
+4. Wählen Sie im Popupmenü auf der linken Seite **Name Servers aus.**
   
-5. Wählen Sie auf der Seite **Namensserver** für Ihre Domäne in der Dropdownliste **diese Domäne automatisch auf mein Hostingkonto aufheben** das Hostingkonto aus, das Ihrer Domäne zugeordnet ist. 
+5. Wählen Sie auf der Seite Name  **Servers** für Ihre Domäne in der Dropdownliste Automatisch auf mein Hostingkonto verweisen das Hostingkonto aus, das Ihrer Domäne zugeordnet ist. 
   
-6. Wählen Sie **Namenserver speichern** aus.
+6. Wählen **Sie Namenserver speichern aus.**
     
   
 ## <a name="add-a-txt-record-for-verification"></a>Hinzufügen eines TXT-Eintrags zur Überprüfung
@@ -78,21 +78,21 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
   
 1. Um zu beginnen, wechseln Sie zu Ihrer cPanel-Seite bei Hostgator. Sie werden aufgefordert, sich zuerst anzumelden.
     
-    (Jedem gehosteten Konto bei Hostgator ist eine eindeutige cPanel-Adresse zugewiesen. Ihre cPanel-Adresse sollte wie folgt aussehen: https://YourSiteAddress:secure-port-number. Die Anmelde-e-Mail, die Sie von Hostgator erhalten haben, gibt diese Adresse an, und ein cPanel-Link ist auch auf der **Hostingseite** verfügbar.)
+    (Jedem gehosteten Konto bei Hostgator ist eine eindeutige cPanel-Adresse zugewiesen. Ihre cPanel-Adresse sollte wie folgt aussehen: https://YourSiteAddress:secure-port-number. Die von Hostgator empfangene Anmelde-E-Mail gibt diese Adresse an, und ein cPanel-Link ist auch auf der **Seite Hosting** verfügbar.)
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator kaufen oder [Ihre Namenserver so delegieren](change-nameservers-at-hostgator.md), dass Sie auf Microsoft zurückweisen. 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator erwerben oder Ihre Namenserver erneut an [Microsoft verweisen.](change-nameservers-at-hostgator.md) 
   
-2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor** aus.
+2. Wählen Sie **auf der Seite Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor aus.**
     
-3. Geben Sie auf der Seite **Erweiterter Zonen-Editor** im Bereich **Hinzufügen eines Datensatzes** in den Feldern für den neuen Datensatz die Werte aus der folgenden Tabelle ein, oder kopieren und fügen Sie Sie ein. 
+3. Geben Sie auf der Seite  Erweiterter **Zonen-Editor** im Bereich Datensatz hinzufügen in den Feldern für den neuen Datensatz die Werte aus der folgenden Tabelle ein, oder kopieren Sie sie, und fügen Sie sie ein. 
     
     (Wählen Sie in der Dropdownliste den Wert für **Type** aus.) 
     
     |||||
     |:-----|:-----|:-----|:-----|
     |**Name** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
-    |Verwenden Sie Ihre  *domain_name*. (for example, fourthcoffee.com.)  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel- oder Verweisadresse** aus der Tabelle in [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md).          |
+    |Verwenden Sie  *domain_name*. (for example, fourthcoffee.com.)  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel- oder Verweisadresse** aus der Tabelle in [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md).          |
    
 4. Wählen Sie **Add Record** (Eintrag hinzufügen) aus.
     
@@ -121,31 +121,31 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 1. Um zu beginnen, wechseln Sie zu Ihrer cPanel-Seite bei Hostgator. Sie werden aufgefordert, sich zuerst anzumelden.
     
-    (Jedem gehosteten Konto bei Hostgator ist eine eindeutige cPanel-Adresse zugewiesen. Ihre cPanel-Adresse sollte wie folgt aussehen: https://YourSiteAddress:secure-port-number. Die Anmelde-e-Mail, die Sie von Hostgator erhalten haben, gibt diese Adresse an, und ein cPanel-Link ist auch auf der **Hostingseite** verfügbar.)
+    (Jedem gehosteten Konto bei Hostgator ist eine eindeutige cPanel-Adresse zugewiesen. Ihre cPanel-Adresse sollte wie folgt aussehen: https://YourSiteAddress:secure-port-number. Die von Hostgator empfangene Anmelde-E-Mail gibt diese Adresse an, und ein cPanel-Link ist auch auf der **Seite Hosting** verfügbar.)
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator kaufen oder [Ihre Namenserver so delegieren](change-nameservers-at-hostgator.md), dass Sie auf Microsoft zurückweisen. 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator erwerben oder Ihre Namenserver erneut an [Microsoft verweisen.](change-nameservers-at-hostgator.md) 
   
-2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **e-Mail** die Option **MX-Eintrag** aus.
+2. Wählen Sie **auf der Seite Systemsteuerung** im Bereich **E-Mail** die Option **MX-Eintrag aus.**
     
  
 3. Wählen Sie im Bereich **Email Routing** die Option **Remote Mail Exchanger** aus.
 
 4. Wählen Sie **Ändern** aus.
   
-5. Geben Sie im Bereich **neuen Daten Satz hinzufügen** in den Feldern für den neuen Datensatz die Werte aus der folgenden Tabelle ein, oder kopieren Sie Sie, und fügen Sie Sie ein. 
+5. Geben Sie **im Bereich Neuen Datensatz** hinzufügen in den Feldern für den neuen Datensatz die Werte aus der folgenden Tabelle ein, oder kopieren Sie sie, und fügen Sie sie ein. 
     
     |**Priority**|**Destination**|
     |:-----|:-----|
-    |0  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Erhalten Sie Ihren \< *domain-key*  \> über Ihr Microsoft-Konto.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](../setup/domains-faq.yml) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Erhalten Sie Ihren \< *domain-key*  \> über Ihr Microsoft-Konto.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
   
-6. Wählen Sie **neuen Datensatz hinzufügen** aus.
+6. Wählen **Sie Neuen Datensatz hinzufügen aus.**
    
  
 7. Wenn im Abschnitt **MX Records** weitere MX-Einträge vorhanden sind, entfernen Sie die einzelnen Einträge. 
 
     
-## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Hinzufügen der sechs CNAME-Einträge, die für Microsoft erforderlich sind
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Hinzufügen der für Microsoft erforderlichen sechs CNAME-Einträge
 <a name="BKMK_add_CNAME"> </a>
 
 > [!IMPORTANT]
@@ -153,16 +153,16 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 1. Um zu beginnen, wechseln Sie zu Ihrer cPanel-Seite bei Hostgator. Sie werden aufgefordert, sich zuerst anzumelden.
     
-    (Jedem gehosteten Konto bei Hostgator ist eine eindeutige cPanel-Adresse zugewiesen. Ihre cPanel-Adresse sollte wie folgt aussehen: https://YourSiteAddress:secure-port-number. Die Anmelde-e-Mail, die Sie von Hostgator erhalten haben, gibt diese Adresse an, und ein cPanel-Link ist auch auf der **Hostingseite** verfügbar.)
+    (Jedem gehosteten Konto bei Hostgator ist eine eindeutige cPanel-Adresse zugewiesen. Ihre cPanel-Adresse sollte wie folgt aussehen: https://YourSiteAddress:secure-port-number. Die von Hostgator empfangene Anmelde-E-Mail gibt diese Adresse an, und ein cPanel-Link ist auch auf der **Seite Hosting** verfügbar.)
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator kaufen oder [Ihre Namenserver so delegieren](change-nameservers-at-hostgator.md), dass Sie auf Microsoft zurückweisen. 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator erwerben oder Ihre Namenserver erneut an [Microsoft verweisen.](change-nameservers-at-hostgator.md) 
   
-2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor** aus.
+2. Wählen Sie **auf der Seite Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor aus.**
     
 3. Fügen Sie den ersten der sechs CNAME-Einträge hinzu.
     
-    Geben Sie auf der Seite **Erweiterter Zonen-Editor** im Bereich **Hinzufügen eines Datensatzes** in den Feldern für den neuen Datensatz die Werte aus der ersten Zeile in der folgenden Tabelle ein, oder kopieren und fügen Sie Sie ein. 
+    Geben Sie auf der Seite  Erweiterter **Zonen-Editor** im Bereich Datensatz hinzufügen in den Feldern für den neuen Datensatz die Werte aus der ersten Zeile in der folgenden Tabelle ein, oder kopieren Sie sie, und fügen Sie sie ein. 
     
     (Wählen Sie in der Dropdownliste den Wert für **Type** aus.) 
     
@@ -179,7 +179,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 
 5. Fügen Sie die fünf anderen CNAME-Einträge hinzu.
     
-    Erstellen Sie im Abschnitt **Hinzufügen eines Daten** Satzes einen Datensatz mithilfe der Werte aus der nächsten Zeile in der Tabelle, und wählen Sie dann erneut **Datensatz hinzufügen** aus, um den Datensatz abzuschließen. 
+    Erstellen Sie **im Abschnitt** Datensatz hinzufügen einen Datensatz, indem Sie die Werte aus der nächsten Zeile in der Tabelle verwenden, und wählen Sie dann erneut **Datensatz** hinzufügen aus, um diesen Datensatz zu vervollständigen. 
     
     Wiederholen Sie diesen Vorgang, bis Sie alle sechs CNAME-Einträge erstellt haben.
     
@@ -187,19 +187,19 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, sondern fügen Sie die erforderlichen Microsoft-Werte dem aktuellen Eintrag hinzu. Damit verfügen Sie über einen einzigen SPF-Eintrag, in dem beide Wertemengen enthalten sind. Benötigen Sie Beispiele? Lesen Sie die Informationen unter [Externe DNS-Einträge für Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#bkmk_spfrecords). Zum Überprüfen Ihres SPF-Eintrags können Sie eines dieser [SPF-Überprüfungstools](../setup/domains-faq.yml) verwenden. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, sondern fügen Sie die erforderlichen Microsoft-Werte dem aktuellen Eintrag hinzu. Damit verfügen Sie über einen einzigen SPF-Eintrag, in dem beide Wertemengen enthalten sind. Benötigen Sie Beispiele? Lesen Sie die Informationen unter [Externe DNS-Einträge für Microsoft](../../enterprise/external-domain-name-system-records.md#bkmk_spfrecords). Zum Überprüfen Ihres SPF-Eintrags können Sie eines dieser [SPF-Überprüfungstools](../setup/domains-faq.yml) verwenden. 
   
 > [!IMPORTANT]
 > Bevor Sie diesen Vorgang ausführen, müssen Sie zuerst die Schritte im ersten Abschnitt dieses Artikels ([Verweisen Ihrer Domäne auf Ihr Hostingkonto](#point-your-domain-to-your-hosting-account)) ausführen. 
   
 1. Um zu beginnen, wechseln Sie zu Ihrer cPanel-Seite bei Hostgator. Sie werden aufgefordert, sich zuerst anzumelden.
     
-    (Jedem gehosteten Konto bei Hostgator ist eine eindeutige cPanel-Adresse zugewiesen. Ihre cPanel-Adresse sollte wie folgt aussehen: https://YourSiteAddress:secure-port-number. Die Anmelde-e-Mail, die Sie von Hostgator erhalten haben, gibt diese Adresse an, und ein cPanel-Link ist auch auf der **Hostingseite** verfügbar.)
+    (Jedem gehosteten Konto bei Hostgator ist eine eindeutige cPanel-Adresse zugewiesen. Ihre cPanel-Adresse sollte wie folgt aussehen: https://YourSiteAddress:secure-port-number. Die von Hostgator empfangene Anmelde-E-Mail gibt diese Adresse an, und ein cPanel-Link ist auch auf der **Seite Hosting** verfügbar.)
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator kaufen oder [Ihre Namenserver so delegieren](change-nameservers-at-hostgator.md), dass Sie auf Microsoft zurückweisen. 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator erwerben oder Ihre Namenserver erneut an [Microsoft verweisen.](change-nameservers-at-hostgator.md) 
   
-2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor** aus.
+2. Wählen Sie **auf der Seite Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor aus.**
     
 3. On the **Advanced DNS Zone Editor** page, in the **Add a Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -207,7 +207,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Name**|**TTL**|**Type**|**TXT Data**|
     |:-----|:-----|:-----|:-----|
-    |Verwenden Sie Ihre  *domain_name*. (for example, fourthcoffee.com.)  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |3600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |
+    |Verwenden Sie  *domain_name*. (for example, fourthcoffee.com.)  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |3600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |
   
 4. Wählen Sie **Add Record** (Eintrag hinzufügen) aus.
     
@@ -219,12 +219,12 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 1. Um zu beginnen, wechseln Sie zu Ihrer cPanel-Seite bei Hostgator. Sie werden aufgefordert, sich zuerst anzumelden.
     
-    (Jedem gehosteten Konto bei Hostgator ist eine eindeutige cPanel-Adresse zugewiesen. Ihre cPanel-Adresse sollte wie folgt aussehen: https://YourSiteAddress:secure-port-number. Die Anmelde-e-Mail, die Sie von Hostgator erhalten haben, gibt diese Adresse an, und ein cPanel-Link ist auch auf der **Hostingseite** verfügbar.)
+    (Jedem gehosteten Konto bei Hostgator ist eine eindeutige cPanel-Adresse zugewiesen. Ihre cPanel-Adresse sollte wie folgt aussehen: https://YourSiteAddress:secure-port-number. Die von Hostgator empfangene Anmelde-E-Mail gibt diese Adresse an, und ein cPanel-Link ist auch auf der **Seite Hosting** verfügbar.)
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator kaufen oder [Ihre Namenserver so delegieren](change-nameservers-at-hostgator.md), dass Sie auf Microsoft zurückweisen. 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Um mit Microsoft zu beginnen, können Sie entweder ein Hostingkonto von Hostgator erwerben oder Ihre Namenserver erneut an [Microsoft verweisen.](change-nameservers-at-hostgator.md) 
   
-2. Wählen Sie auf der Seite **Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor** aus.
+2. Wählen Sie **auf der Seite Systemsteuerung** im Bereich **Domänen** die Option **Erweiterter Zonen-Editor aus.**
 
     
 3. Fügen Sie den ersten der zwei SRV-Einträge hinzu.
@@ -235,8 +235,8 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Name**|**TTL**|**Type**|**Priority**|**Weight**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _sip._tls. *domain_name*. (Beispiel: "_sip._tls.fourthcoffee.com.")  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _sipfederationtls._tcp. *domain_name*. (Beispiel: "_sipfederationtls._tcp.fourthcoffee.com.")  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls. *domain_name*. (Beispiel: "_sip._tls.fourthcoffee.com.")  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp. *domain_name*. (Beispiel: "_sipfederationtls._tcp.fourthcoffee.com.")  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
 
 4. Wählen Sie **Add Record** (Eintrag hinzufügen) aus.
@@ -244,7 +244,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 5. Fügen Sie den anderen SRV-Eintrag hinzu.
     
-    Erstellen Sie im Abschnitt **Hinzufügen eines Daten** Satzes einen Datensatz mithilfe der Werte aus der nächsten Zeile in der Tabelle, und wählen Sie dann erneut **Datensatz hinzufügen** aus, um den Datensatz abzuschließen. 
+    Erstellen Sie **im Abschnitt** Datensatz hinzufügen einen Datensatz, indem Sie die Werte aus der nächsten Zeile in der Tabelle verwenden, und wählen Sie dann erneut **Datensatz** hinzufügen aus, um diesen Datensatz zu vervollständigen. 
     
 > [!NOTE]
-> Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Suchen und Beheben von Problemen, nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden](../get-help-with-domains/find-and-fix-issues.md). 
+> Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Suchen und Beheben von Problemen, nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden](../get-help-with-domains/find-and-fix-issues.md).

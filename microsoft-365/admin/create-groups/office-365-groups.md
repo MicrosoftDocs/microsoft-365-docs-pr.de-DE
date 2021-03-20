@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Microsoft 365-Gruppen.
-ms.openlocfilehash: 75bc743ed8f1965d0ed8a1967e6eac1bd6e0178b
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 18cb37a4aae7a163d2e198194251abc727b48848
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453681"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910606"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Übersicht über Microsoft 365-Gruppen für Administratoren
 
@@ -45,7 +45,7 @@ Microsoft 365-Gruppen ist der Basismitgliedschaftsdienst, der die gesamte Teamar
 
 Bei einer Microsoft 365-Gruppe müssen Sie diesen Ressourcen nicht manuell Berechtigungen zuweisen. Durch das Hinzufügen von Personen zur Gruppe erhalten sie automatisch die erforderlichen Berechtigungen.
 
-Jeder Benutzer kann eine Gruppe erstellen, es sei denn, Sie beschränken die Gruppenerstellung auf eine [bestimmte Gruppe von Personen.](manage-creation-of-groups.md) Wenn Sie die Gruppenerstellung einschränken, können Benutzer, die keine Gruppen erstellen können, keine SharePoint-Websites, Planer oder Teams erstellen. Diese Dienste erfordern, dass die Personen, die sie erstellen, eine Gruppe erstellen können. Benutzer können weiterhin an Gruppenaktivitäten teilnehmen, z. B. an der Erstellung von Aufgaben in Planner oder an der Verwendung von Teams-Chats, sofern sie Mitglied der Gruppe sind.
+Jeder Benutzer kann eine Gruppe erstellen, es sei denn, Sie beschränken die Gruppenerstellung auf eine [bestimmte Gruppe von Personen.](../../solutions/manage-creation-of-groups.md) Wenn Sie die Gruppenerstellung einschränken, können Benutzer, die keine Gruppen erstellen können, keine SharePoint-Websites, Planer oder Teams erstellen. Diese Dienste erfordern, dass die Personen, die sie erstellen, eine Gruppe erstellen können. Benutzer können weiterhin an Gruppenaktivitäten teilnehmen, z. B. an der Erstellung von Aufgaben in Planner oder an der Verwendung von Teams-Chats, sofern sie Mitglied der Gruppe sind.
 
 Gruppen weisen die folgenden Rollen auf:
 
@@ -57,17 +57,17 @@ Nur globale Administratoren, Benutzeradministratoren und Gruppenadministratoren 
 
 Als Administrator haben Sie die folgenden Möglichkeiten:
 
-- [Festlegen, wer Gruppen erstellen kann](manage-creation-of-groups.md)
-- [Erstellen einer Benennungsrichtlinie für Gruppen in Ihrer Organisation](groups-naming-policy.md)
-- [Auswählen, welche Domäne beim Erstellen einer Gruppe verwendet werden soll](choose-domain-to-create-groups.md)
+- [Festlegen, wer Gruppen erstellen kann](../../solutions/manage-creation-of-groups.md)
+- [Erstellen einer Benennungsrichtlinie für Gruppen in Ihrer Organisation](../../solutions/groups-naming-policy.md)
+- [Auswählen, welche Domäne beim Erstellen einer Gruppe verwendet werden soll](../../solutions/choose-domain-to-create-groups.md)
 - [Verwalten des Gastzugriffs auf Gruppen](manage-guest-access-in-groups.md)
 - [Wiederherstellen einer gelöschten Gruppe](restore-deleted-group.md) (innerhalb von 30 Tagen nach dem Löschvorgang)
 
-Wenn Sie eine automatisiertere Methode zum Verwalten des Lebenszyklus Ihrer Microsoft 365-Gruppen bevorzugen, können Sie Ablaufrichtlinien verwenden, um Gruppen in einem bestimmten Zeitintervall zu ablaufen. Die Besitzer der Gruppe erhalten eine E-Mail 30, 15 und 1 Tag vor Ablauf der Gruppe, mit der sie die Gruppe verlängern können, wenn sie noch benötigt wird. Weitere Informationen finden Sie unter: [Microsoft 365 Group Expiration Policy](office-365-groups-expiration-policy.md).
+Wenn Sie eine automatisiertere Methode zum Verwalten des Lebenszyklus Ihrer Microsoft 365-Gruppen bevorzugen, können Sie Ablaufrichtlinien verwenden, um Gruppen in einem bestimmten Zeitintervall zu ablaufen. Die Besitzer der Gruppe erhalten eine E-Mail 30, 15 und 1 Tag vor Ablauf der Gruppe, mit der sie die Gruppe verlängern können, wenn sie noch benötigt wird. Weitere Informationen finden Sie unter: [Microsoft 365 Group Expiration Policy](../../solutions/microsoft-365-groups-expiration-policy.md).
 
-Sie können Gruppen entweder über das Microsoft 365 Admin Center oder [mithilfe von PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell) durchführen.
+Sie können Gruppen entweder über das Microsoft 365 Admin Center oder [mithilfe von PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) durchführen.
 
-Wenn Sie über viele Benutzer verfügen, z. B. in einem großen Unternehmen oder Unternehmen, haben Sie möglicherweise viele Benutzer, die Gruppen für verschiedene Zwecke erstellen. Es wird dringend empfohlen, dass Sie [plan for governance in Microsoft 365-Gruppen](plan-for-groups-governance.md) auf bewährte Methoden überprüfen.
+Wenn Sie über viele Benutzer verfügen, z. B. in einem großen Unternehmen oder Unternehmen, haben Sie möglicherweise viele Benutzer, die Gruppen für verschiedene Zwecke erstellen. Es wird dringend empfohlen, dass Sie [plan for governance in Microsoft 365-Gruppen](../../solutions/collaboration-governance-overview.md) auf bewährte Methoden überprüfen.
 
 ## <a name="group-limits"></a>Grenzwerte für Gruppen
 
@@ -100,14 +100,14 @@ Sie können beispielsweise eine Bezeichnung mit dem Namen *"Streng vertraulich"*
 > [!IMPORTANT]
 > Wenn Sie derzeit Klassifizierungsbezeichnungen verwenden, stehen sie Benutzern, die Gruppen erstellen, nach aktivierung von Vertraulichkeitsbezeichnungen nicht mehr zur Verfügung. 
 
-Informationen zum Erstellen, Verwalten und Verwenden von Vertraulichkeitsbezeichnungen finden Sie unter Verwenden von Vertraulichkeitsbezeichnungen zum Schutz von [Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Informationen zum Erstellen, Verwalten und Verwenden von Vertraulichkeitsbezeichnungen finden Sie unter Verwenden von Vertraulichkeitsbezeichnungen zum Schutz von [Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites](../../compliance/sensitivity-labels-teams-groups-sites.md).
 
 ## <a name="which-microsoft-365-plans-include-groups"></a>Welche Microsoft 365-Pläne enthalten Gruppen?
 
 Alle Microsoft 365-Abonnements mit Exchange Online und SharePoint Online unterstützen Gruppen. Dazu gehören die Business Essentials- und Business Premium-Pläne sowie die Enterprise E1-, E3- und E5-Pläne. Die Gruppe übernimmt die Lizenzierung der Person, die die Gruppe erstellt (auch als "Organisator" der Gruppe bezeichnet). Solange der Organisator über die richtige Lizenz für alle Features verfügt, die die Gruppe haben soll, wird diese Lizenz an die Gruppe übermittelt.
 
 > [!NOTE]
-> Weitere Informationen zu Microsoft 365-Dienstfamilien und -plänen finden Sie unter [Microsoft 365-Planoptionen](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
+> Weitere Informationen zu Microsoft 365-Dienstfamilien und -plänen finden Sie unter [Microsoft 365-Planoptionen](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
 
 Wenn Sie über einen Nur-Exchange-Plan verfügen, können Sie weiterhin die freigegebenen Posteingangs- und freigegebenen Kalenderfeatures von Gruppen in Outlook erhalten, aber Sie erhalten keine Dokumentbibliothek, Planner oder andere Funktionen.
 
@@ -123,8 +123,8 @@ Microsoft 365-Gruppen funktionieren mit Azure Active Directory. Welche Gruppenfe
 
 [Aktualisieren von Verteilerlisten auf Microsoft 365-Gruppen](../manage/upgrade-distribution-lists.md)
 
-[Verwalten von Microsoft 365-Gruppen mit PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
+[Verwalten von Microsoft 365-Gruppen mit PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
 
-[SharePoint Online-Beschränkungen](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+[SharePoint Online-Beschränkungen](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 
-[Organisieren von Gruppen und Kanälen in Microsoft Stream](https://docs.microsoft.com/stream/groups-channels-organization)
+[Organisieren von Gruppen und Kanälen in Microsoft Stream](/stream/groups-channels-organization)

@@ -17,30 +17,30 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: Erfahren Sie, wie Sie mithilfe von PowerShell die Mitgliedschaft in Microsoft 365-Gruppen beibehalten.
-ms.openlocfilehash: b47f501c9726e1d4dcb2e9d61108224db0408b8e
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+description: Erfahren Sie, wie Sie PowerShell verwenden, um die Mitgliedschaft in Microsoft 365-Gruppen zu verwalten.
+ms.openlocfilehash: 9696c9093ae6f24a2edaf544e80794bde45d18d1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073061"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909574"
 ---
 # <a name="maintain-security-group-membership-with-powershell"></a>Verwalten der Mitgliedschaft in Sicherheitsgruppen mit PowerShell
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Sie können PowerShell für Microsoft 365 als Alternative zum Microsoft 365 Admin Center verwenden, um die Mitgliedschaft in Sicherheitsgruppen in Microsoft 365 beizubehalten. 
+Sie können PowerShell für Microsoft 365 als Alternative zum Microsoft 365 Admin Center verwenden, um die Mitgliedschaft in Sicherheitsgruppen in Microsoft 365 aufrecht zu erhalten. 
 
 >[!Note]
->[Erfahren Sie, wie Sie die Microsoft 365-Gruppenmitgliedschaft](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups) mit dem Microsoft 365 Admin Center verwalten. Eine Liste mit weiteren Ressourcen finden Sie unter [Verwalten von Benutzern und Gruppen](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>[Erfahren Sie, wie Sie die Microsoft 365-Gruppenmitgliedschaft](../admin/create-groups/add-or-remove-members-from-groups.md) im Microsoft 365 Admin Center verwalten. Eine Liste der zusätzlichen Ressourcen finden Sie unter [Verwalten von Benutzern und Gruppen](../admin/add-users/index.yml).
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Verwenden der Azure Active Directory PowerShell für Graph-Module
-Stellen Sie zunächst [eine Verbindung mit Ihrem Microsoft 365-Mandanten her](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Stellen Sie [zunächst eine Verbindung mit Ihrem Microsoft 365-Mandanten herzustellen.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 ### <a name="add-or-remove-user-accounts-as-members-of-a-group"></a>Hinzufügen oder Entfernen von Benutzerkonten als Mitglieder einer Gruppe
 
-**Wenn Sie ein Benutzerkonto nach seinem UPN hinzufügen möchten** , geben Sie den Benutzerprinzipalnamen (User Principal Name, UPN) des Benutzerkontos ein (Beispiel: belindan@contoso.com) und den Anzeigenamen der Sicherheitsgruppe, entfernen Sie die Zeichen "<" und ">", und führen Sie diese Befehle im PowerShell-Fenster oder in der integrierten PowerShell-Skriptumgebung (ISE) aus.
+Geben Sie zum Hinzufügen eines Benutzerkontos über den **UPN** den Benutzerprinzipalnamen (UPN) (Beispiel: belindan@contoso.com) und den Anzeigenamen der Sicherheitsgruppe ein, entfernen Sie die Zeichen "<" und ">", und führen Sie diese Befehle im PowerShell-Fenster oder in der integrierten PowerShell-Skriptumgebung (ISE) aus.
 
 ```powershell
 $userUPN="<UPN of the user account to add>"
@@ -48,7 +48,7 @@ $groupName="<display name of the group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-**Wenn Sie ein Benutzerkonto anhand des Anzeigenamens hinzufügen möchten** , geben Sie den Anzeigenamen des Benutzerkontos ein (Beispiel: Belinda Newman) und den Gruppenanzeige Namen, und führen Sie diese Befehle im PowerShell-Fenster oder in der PowerShell ISE aus.
+Um ein Benutzerkonto über seinen Anzeigenamen **hinzuzufügen,** geben Sie den Anzeigenamen des Benutzerkontos (Beispiel: Belinda Newman) und den Gruppenanzeigenamen ein, und führen Sie diese Befehle im PowerShell-Fenster oder im PowerShell-ISE aus.
 
 ```powershell
 $userName="<display name of the user account to add>"
@@ -56,7 +56,7 @@ $groupName="<display name of the group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $userName }).ObjectID -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-**Wenn Sie ein Benutzerkonto nach seinem UPN entfernen möchten** , füllen Sie das Benutzerkonto UPN (Beispiel: belindan@contoso.com) und den Gruppenanzeige Namen aus, und führen Sie diese Befehle im PowerShell-Fenster oder in der PowerShell ISE aus.
+Geben Sie zum Entfernen eines Benutzerkontos durch den **UPN** den Benutzerkonto-UPN (Beispiel: belindan@contoso.com) und den Gruppenanzeigenamen ein, und führen Sie diese Befehle im PowerShell-Fenster oder im PowerShell-ISE aus.
 
 ```powershell
 $userUPN="<UPN of the user account to remove>"
@@ -64,7 +64,7 @@ $groupName="<display name of the group>"
 Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-**Wenn Sie ein Benutzerkonto anhand des Anzeigenamens entfernen möchten** , geben Sie den Anzeigenamen des Benutzerkontos ein (Beispiel: Belinda Newman) und den Gruppenanzeige Namen, und führen Sie diese Befehle im PowerShell-Fenster oder in der PowerShell ISE aus.
+Geben Sie zum Entfernen eines Benutzerkontos durch den Anzeigenamen den Anzeigenamen des Benutzerkontos (Beispiel: Belinda Newman) und den Gruppenanzeigenamen ein, und führen Sie diese Befehle im PowerShell-Fenster oder im PowerShell-ISE aus.
 
 ```powershell
 $userName="<display name of the user account to remove>"
@@ -74,9 +74,9 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.DisplayName -e
 
 ### <a name="add-or-remove-groups-as-members-of-a-group"></a>Hinzufügen oder Entfernen von Gruppen als Mitglieder einer Gruppe
 
-Sicherheitsgruppen können andere Gruppen als Mitglieder enthalten. Microsoft 365-Gruppen können jedoch nicht. Dieser Abschnitt enthält PowerShell-Befehle zum Hinzufügen oder Entfernen von Gruppen nur für eine Sicherheitsgruppe.
+Sicherheitsgruppen können andere Gruppen als Mitglieder enthalten. Microsoft 365-Gruppen können jedoch nicht verwendet werden. Dieser Abschnitt enthält PowerShell-Befehle zum Hinzufügen oder Entfernen von Gruppen nur für eine Sicherheitsgruppe.
 
-**Um eine Gruppe nach dem Anzeigenamen hinzuzufügen** , geben Sie den Anzeigenamen der hinzuzufügenden Gruppe und den Anzeigenamen der Gruppe ein, die die Mitgliedergruppe enthalten soll, und führen Sie diese Befehle im PowerShell-Fenster oder in PowerShell ISE aus.
+Geben Sie zum Hinzufügen einer Gruppe nach dem Anzeigenamen den Anzeigenamen der Gruppe **ein,** die Sie hinzufügen möchten, und den Anzeigenamen der Gruppe, die die Mitgliedergruppe enthält, und führen Sie diese Befehle im PowerShell-Fenster oder im PowerShell-ISE aus.
 
 ```powershell
 $groupMemberName="<display name of the group to add>"
@@ -84,7 +84,7 @@ $groupName="<display name of the group that will contain the member group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupMemberName }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-**Wenn Sie eine Gruppe nach Ihrem Anzeigenamen entfernen möchten** , geben Sie den Anzeigenamen der zu entfernenden Gruppe und den Anzeigenamen der Gruppe ein, die die Mitgliedergruppe enthalten soll, und führen Sie diese Befehle im PowerShell-Fenster oder in PowerShell ISE aus.
+Um eine Gruppe nach ihrem Anzeigenamen zu **entfernen,** geben Sie den Anzeigenamen der Zu entfernenden Gruppe und den Anzeigenamen der Gruppe ein, die die Mitgliedergruppe enthält, und führen Sie diese Befehle im PowerShell-Fenster oder im PowerShell-ISE aus.
 
 ```powershell
 $groupMemberName="<display name of the group to add>"
@@ -94,12 +94,12 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Verwenden des Microsoft Azure Active Directory-Moduls für Windows PowerShell
 
-Stellen Sie zunächst [eine Verbindung mit Ihrem Microsoft 365-Mandanten her](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Stellen Sie [zunächst eine Verbindung mit Ihrem Microsoft 365-Mandanten herzustellen.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 
 ### <a name="add-or-remove-user-accounts-as-members-of-a-group"></a>Hinzufügen oder Entfernen von Benutzerkonten als Mitglieder einer Gruppe
 
-**Um ein Benutzerkonto nach seinem UPN hinzuzufügen** , geben Sie den Benutzerprinzipalnamen (User Principal Name, UPN) des Benutzerkontos ein (Beispiel: belindan@contoso.com) und den Gruppen Anzeigenamen, indem Sie die Zeichen "<" und ">" entfernen und diese Befehle im PowerShell-Fenster oder in der PowerShell ISE ausführen.
+Um ein Benutzerkonto über den **UPN** hinzuzufügen, geben Sie den Benutzerprinzipalnamen (UPN) des Benutzerkontos (Beispiel: belindan@contoso.com) und den Gruppenanzeigenamen ein, entfernen die Zeichen "<" und ">", und führen Sie diese Befehle im PowerShell-Fenster oder im PowerShell-ISE aus.
 
 ```powershell
 $userUPN="<UPN of the user account to add>"
@@ -107,7 +107,7 @@ $groupName="<display name of the group>"
 Add-MsolGroupMember -GroupMemberObjectId (Get-MsolUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-**Wenn Sie ein Benutzerkonto anhand des Anzeigenamens hinzufügen möchten** , geben Sie den Anzeigenamen des Benutzerkontos ein (Beispiel: Belinda Newman) und den Gruppenanzeige Namen, und führen Sie diese Befehle im PowerShell-Fenster oder in der PowerShell ISE aus.
+Um ein Benutzerkonto über seinen Anzeigenamen **hinzuzufügen,** geben Sie den Anzeigenamen des Benutzerkontos (Beispiel: Belinda Newman) und den Gruppenanzeigenamen ein, und führen Sie diese Befehle im PowerShell-Fenster oder im PowerShell-ISE aus.
 
 ```powershell
 $userName="<display name of the user account to add>"
@@ -115,7 +115,7 @@ $groupName="<display name of the group>"
 Add-MsolGroupMember -GroupMemberObjectId (Get-MsolUser | Where { $_.DisplayName -eq $userName }).ObjectID -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-**Wenn Sie ein Benutzerkonto nach seinem UPN entfernen möchten** , füllen Sie das Benutzerkonto UPN (Beispiel: belindan@contoso.com) und den Gruppenanzeige Namen aus, und führen Sie diese Befehle im PowerShell-Fenster oder in der PowerShell ISE aus.
+Geben Sie zum Entfernen eines Benutzerkontos durch den **UPN** den Benutzerkonto-UPN (Beispiel: belindan@contoso.com) und den Gruppenanzeigenamen ein, und führen Sie diese Befehle im PowerShell-Fenster oder im PowerShell-ISE aus.
 
 ```powershell
 $userUPN="<UPN of the user account to remove>"
@@ -123,7 +123,7 @@ $groupName="<display name of the group>"
 Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-**Wenn Sie ein Benutzerkonto anhand des Anzeigenamens entfernen möchten** , geben Sie den Anzeigenamen des Benutzerkontos ein (Beispiel: Belinda Newman) und den Gruppenanzeige Namen, und führen Sie diese Befehle im PowerShell-Fenster oder in der PowerShell ISE aus.
+Geben Sie zum Entfernen eines Benutzerkontos durch den Anzeigenamen den Anzeigenamen des Benutzerkontos (Beispiel: Belinda Newman) und den Gruppenanzeigenamen ein, und führen Sie diese Befehle im PowerShell-Fenster oder im PowerShell-ISE aus.
 
 ```powershell
 $userName="<display name of the user account to remove>"
@@ -133,9 +133,9 @@ Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolUser | Where { $_.DisplayNa
 
 ### <a name="add-or-remove-groups-as-members-of-a-group"></a>Hinzufügen oder Entfernen von Gruppen als Mitglieder einer Gruppe
 
-Sicherheitsgruppen können andere Gruppen als Mitglieder enthalten. Microsoft 365-Gruppen können jedoch nicht. Dieser Abschnitt enthält PowerShell-Befehle zum Hinzufügen oder Entfernen von Gruppen nur für eine Sicherheitsgruppe.
+Sicherheitsgruppen können andere Gruppen als Mitglieder enthalten. Microsoft 365-Gruppen können jedoch nicht verwendet werden. Dieser Abschnitt enthält PowerShell-Befehle zum Hinzufügen oder Entfernen von Gruppen nur für eine Sicherheitsgruppe.
 
-**Um eine Gruppe nach dem Anzeigenamen hinzuzufügen** , geben Sie den Anzeigenamen der hinzuzufügenden Gruppe und den Anzeigenamen der Gruppe ein, die die Mitgliedergruppe enthalten soll, und führen Sie diese Befehle im PowerShell-Fenster oder in PowerShell ISE aus.
+Geben Sie zum Hinzufügen einer Gruppe nach dem Anzeigenamen den Anzeigenamen der Gruppe **ein,** die Sie hinzufügen möchten, und den Anzeigenamen der Gruppe, die die Mitgliedergruppe enthält, und führen Sie diese Befehle im PowerShell-Fenster oder im PowerShell-ISE aus.
 
 ```powershell
 $groupMemberName="<display name of the group to add>"
@@ -143,7 +143,7 @@ $groupName="<display name of the group that will contain the member group>"
 Add-MsolGroupMember -GroupMemberObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupMemberName }).ObjectID -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupName }).ObjectID -GroupMemberType Group
 ```
 
-**Wenn Sie eine Gruppe nach Ihrem Anzeigenamen entfernen möchten** , geben Sie den Anzeigenamen der zu entfernenden Gruppe und den Anzeigenamen der Gruppe ein, die die Mitgliedergruppe enthalten soll, und führen Sie diese Befehle im PowerShell-Fenster oder in PowerShell ISE aus.
+Um eine Gruppe nach ihrem Anzeigenamen zu **entfernen,** geben Sie den Anzeigenamen der Zu entfernenden Gruppe und den Anzeigenamen der Gruppe ein, die die Mitgliedergruppe enthält, und führen Sie diese Befehle im PowerShell-Fenster oder im PowerShell-ISE aus.
 
 ```powershell
 $groupMemberName="<display name of the group to add>"
@@ -158,4 +158,3 @@ Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolGroup | Where { $_.DisplayN
 [Verwalten von Microsoft 365 mit PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

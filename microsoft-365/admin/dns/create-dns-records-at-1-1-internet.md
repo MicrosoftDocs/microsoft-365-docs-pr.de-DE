@@ -21,19 +21,19 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste bei 1&1 IONOS für Microsoft einrichten.
-ms.openlocfilehash: 8e2deab05b5ef8d8f22993d2bfdd032999ed9c39
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 123abd6d1d93f80eb73f187b7ff75ccd90d02980
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657996"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910558"
 ---
 # <a name="create-dns-records-at-11-ionos-for-microsoft"></a>Erstellen von DNS-Einträgen für Microsoft bei 1&1 IONOS
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
 > [!CAUTION]
-> Beachten Sie, dass 1 & 1 IONOS keine Domänen zulässt, die sowohl einen MX-Eintrag als auch einen Autoermittlungs-CNAME-Eintrag der oberen Ebene aufweisen. Damit werden die Möglichkeiten eingeschränkt, Exchange Online für Microsoft zu konfigurieren. Es gibt eine Problemumgehung, die Sie jedoch **nur** anwenden sollten, wenn Sie bereits Erfahrung mit der Erstellung von Unterdomänen bei 1 & 1 IONOS haben. > Wenn Sie sich trotz der [Diensteinschränkungen](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) dafür entscheiden, Ihre eigenen Microsoft-DNS-Einträge bei 1&1 IONOS zu verwalten, führen Sie die Schritte in diesem Artikel aus, um die DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten. 
+> Beachten Sie, dass 1 & 1 IONOS keine Domänen zulässt, die sowohl einen MX-Eintrag als auch einen Autoermittlungs-CNAME-Eintrag der oberen Ebene aufweisen. Damit werden die Möglichkeiten eingeschränkt, Exchange Online für Microsoft zu konfigurieren. Es gibt eine Problemumgehung, die Sie jedoch **nur** anwenden sollten, wenn Sie bereits Erfahrung mit der Erstellung von Unterdomänen bei 1 & 1 IONOS haben. > Wenn Sie sich trotz der [Diensteinschränkungen](../setup/domains-faq.yml) dafür entscheiden, Ihre eigenen Microsoft-DNS-Einträge bei 1&1 IONOS zu verwalten, führen Sie die Schritte in diesem Artikel aus, um die DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten. 
   
 Nachdem Sie diese Einträge bei 1&1 IONOS hinzugefügt haben, ist Ihre Domäne für die Verwendung von Microsoft-Diensten eingerichtet.
   
@@ -48,7 +48,7 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
 > [!NOTE]
 > Dieser Eintrag wird nur verwendet, um zu überprüfen, ob Sie der Besitzer Ihrer Domäne sind. Er hat keine weiteren Auswirkungen. Sie können ihn später ggf. löschen. 
   
-Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beginnen Sie bei 0:42)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
+Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beginnen Sie bei 0:42)]().
   
 1. Im ersten Schritt navigieren Sie über [diesen Link](https://my.1and1.com/) zu Ihrer Domänenseite bei 1&1 IONOS. Sie werden aufgefordert, sich anzumelden.
     
@@ -96,7 +96,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Fügen Sie einen MX-Eintrag hinzu, damit E-Mails für Ihre Domäne an Microsoft geleitet werden.
 <a name="BKMK_add_MX"> </a>
 
-Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beginnen Sie bei 3:22)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
+Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beginnen Sie bei 3:22)]().
   
 > [!NOTE]
 > Hinweis: Wenn Sie sich bei 1und1.de registriert haben, [melden Sie sich hier an](https://go.microsoft.com/fwlink/?linkid=859152). 
@@ -117,7 +117,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     |**MX 1**|**Priorität**|
     |:-----|:-----|
-    | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  HINWEIS: Erhalten Sie Ihren \<domain-key\> über Ihr Microsoft-Konto. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | 
+    | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  HINWEIS: Erhalten Sie Ihren \<domain-key\> über Ihr Microsoft-Konto. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](../setup/domains-faq.yml) <br/> | 
     
     ![1 und 1 – konfigurieren Sie 2 und 3.](../../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
   
@@ -135,7 +135,7 @@ Für 1&1 IONOS ist eine Problemumgehung erforderlich, damit Sie einen MX-Eintrag
   
 ### <a name="basic-cname-records"></a>Einfache CNAME-Einträge
 
-Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beginnen Sie bei 3:57)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
+Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beginnen Sie bei 3:57)]().
   
 > [!NOTE]
 > Hinweis: Wenn Sie sich bei 1und1.de registriert haben, [melden Sie sich hier an](https://go.microsoft.com/fwlink/?linkid=859152). 
@@ -248,9 +248,9 @@ Die zusätzlichen CNAME-Einträge, die mit den folgenden Schritten erstellt werd
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Hinzufügen eines TXT-Eintrags für SPF, um E-Mail-Spam zu verhindern
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, sondern fügen Sie die erforderlichen Microsoft-Werte dem aktuellen Eintrag hinzu. Damit verfügen Sie über einen *einzigen* SPF-Eintrag, in dem beide Wertemengen enthalten sind. Benötigen Sie Beispiele? Lesen Sie die Informationen unter [Externe DNS-Einträge für Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Zum Überprüfen Ihres SPF-Eintrags können Sie eines dieser [SPF-Überprüfungstools](../setup/domains-faq.yml) verwenden. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, sondern fügen Sie die erforderlichen Microsoft-Werte dem aktuellen Eintrag hinzu. Damit verfügen Sie über einen *einzigen* SPF-Eintrag, in dem beide Wertemengen enthalten sind. Benötigen Sie Beispiele? Lesen Sie die Informationen unter [Externe DNS-Einträge für Microsoft](../../enterprise/external-domain-name-system-records.md). Zum Überprüfen Ihres SPF-Eintrags können Sie eines dieser [SPF-Überprüfungstools](../setup/domains-faq.yml) verwenden. 
   
-Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beginnen Sie bei 5:09)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
+Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beginnen Sie bei 5:09)]().
   
 > [!NOTE]
 > Hinweis: Wenn Sie sich bei 1und1.de registriert haben, [melden Sie sich hier an](https://go.microsoft.com/fwlink/?linkid=859152). 
@@ -281,7 +281,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Hinzufügen der für Microsoft erforderlichen zwei SRV-Einträge
 
-Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beginnen Sie bei 5:51)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
+Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beginnen Sie bei 5:51)]().
   
 > [!NOTE]
 > Hinweis: Wenn Sie sich bei 1und1.de registriert haben, [melden Sie sich hier an](https://go.microsoft.com/fwlink/?linkid=859152). 
@@ -315,4 +315,3 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
 > [!NOTE]
 > Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Suchen und Beheben von Problemen, nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden](../get-help-with-domains/find-and-fix-issues.md). 
-  

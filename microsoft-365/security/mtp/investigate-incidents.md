@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6a3bd6be81b4ea4ef11a366267d7a36d45e622b9
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 901f46f27c6c0e7b894288c015c74c7d3097ef23
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926894"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50927252"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Untersuchen von Vorfällen in Microsoft 365 Defender
 
@@ -38,13 +38,13 @@ ms.locfileid: "49926894"
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender aggregiert alle zugehörigen Warnungen, Objekte, Untersuchungen und Nachweise aus Ihren Geräten, Benutzern und Postfächern, um Ihnen einen umfassenden Einblick in die gesamte Bandbreite eines Angriffs zu bieten.
+Microsoft 365 Defender aggregiert alle zugehörigen Warnungen, Ressourcen, Untersuchungen und Nachweise auf Allen Geräten, Benutzern und Postfächern, um Ihnen einen umfassenden Einblick in die gesamte Bandbreite eines Angriffs zu bieten.
 
 Untersuchen Sie die Warnmeldungen, die Ihr Netzwerk betreffen, verstehen Sie, was sie bedeuten, und stellen Sie die mit den Vorfällen verbundenen Beweise zusammen, damit Sie einen wirksamen Plan zur Behebung erstellen können.
 
 ## <a name="investigate-an-incident"></a>Untersuchung eines Vorfalls
 
-1. Wählen Sie einen Vorfall aus der Vorfallwarteschlange aus. <BR> Ein Seitenbereich wird geöffnet und bietet eine Vorschau wichtiger Informationen wie Status, Schweregrad, Kategorien und die betroffenen Entitäten.
+1. Wählen Sie einen Vorfall aus der Vorfallwarteschlange aus. <BR> Ein Seitenbereich wird geöffnet und bietet eine Vorschau wichtiger Informationen wie Status, Schweregrad, Kategorien und die betroffen Entitäten.
 
     ![Bild eines Seitenbereichs](../../media/incident-side-panel.png)
 
@@ -58,7 +58,7 @@ Auf der Übersichtsseite erhalten Sie einen Überblick über die wichtigsten Inf
 
 ![Abbildung der Vorfallübersichtsseite](../../media/incidents-overview.png)
 
-Die Angriffskategorien geben Ihnen eine visuelle und numerische Ansicht, wie weit der Angriff gegen die Kill Chain fortgeschritten ist. Wie bei anderen Sicherheitsprodukten von Microsoft ist Microsoft 365 Defender am [MITRE ATT-&CK-Framework &trade; ](https://attack.mitre.org/) ausgerichtet.
+Die Angriffskategorien bieten Ihnen eine visuelle und numerische Ansicht, wie weit der Angriff gegenüber der Kill Chain fortgeschritten ist. Wie bei anderen Microsoft-Sicherheitsprodukten ist Microsoft 365 Defender am [MITRE &trade; ATT-&CK-Framework](https://attack.mitre.org/) ausgerichtet.
 
 Der Bereich enthält eine Liste der am häufigsten betroffenen Assets, die Teil dieses Vorfalls sind. Wenn es spezifische Informationen zu diesem Asset gibt, wie z. B. Risikograd, Untersuchungspriorität sowie eine Kennzeichnung des Assets, wird dies ebenfalls in diesem Abschnitt angezeigt.
 
@@ -70,11 +70,11 @@ Diese Übersicht kann bei der ersten Analyse des Vorfalls hilfreich sein, indem 
 
 ## <a name="alerts"></a>Warnungen
 
-Sie können alle Warnungen im Zusammenhang mit dem Vorfall und andere Informationen dazu anzeigen, z. B. Schweregrad, Entitäten, die an der Warnung beteiligt waren, die Quelle der Warnungen (Microsoft Defender for Identity, Microsoft Defender für Endpoint, Microsoft Defender für Office 365) und den Grund, warum sie verknüpft wurden.
+Sie können alle Warnungen im Zusammenhang mit dem Vorfall und andere Informationen dazu anzeigen, z. B. schweregrad, Entitäten, die an der Warnung beteiligt waren, die Quelle der Warnungen (Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender für Office 365) und den Grund, warum sie miteinander verknüpft wurden.
 
 ![Abbildung der Seite mit Vorfallbenachrichtigungen](../../media/incident-alerts.png)
 
-Standardmäßig sind die Warnungen chronologisch geordnet, damit Sie zunächst sehen können, wie sich der Angriff im Laufe der Zeit abgespielt hat. Wenn Sie auf jede Warnung klicken, gelangen Sie zur entsprechenden Warnungsseite, auf der Sie eine eingehende Untersuchung dieser Warnung durchführen können.
+Standardmäßig sind die Warnungen chronologisch geordnet, damit Sie zunächst sehen können, wie sich der Angriff im Laufe der Zeit abgespielt hat. Wenn Sie auf jede Warnung klicken, gelangen Sie zur entsprechenden Warnungsseite, auf der Sie eine eingehende Untersuchung dieser Warnung durchführen können. Informationen zur Verwendung von Warnungsseiten und der einheitlichen Warnungswarteschlange unter [Warnungen untersuchen](investigate-alerts.md)
 
 ## <a name="devices"></a>Geräte
 
@@ -96,21 +96,21 @@ Durch Klicken auf den Nutzernamen gelangen Sie zur Cloud App Security-Seite des 
 
 ## <a name="mailboxes"></a>Postfächer
 
-Untersuchen Sie Postfächer, bei denen festgestellt wurde, dass sie Teil eines Vorfalls sind oder sich auf einen Vorfall beziehen. Um weitere Untersuchungen durchführen zu können, wird durch Auswählen der E-Mail-bezogenen Warnung Microsoft Defender für Office 365 geöffnet, wo Sie Korrekturmaßnahmen ergreifen können.
+Untersuchen Sie Postfächer, bei denen festgestellt wurde, dass sie Teil eines Vorfalls sind oder sich auf einen Vorfall beziehen. Um weitere Ermittlungen zu ergreifen, wird microsoft Defender for Office 365 geöffnet, indem Sie die E-Mail-bezogene Warnung auswählen, wo Sie Abhilfemaßnahmen ausführen können.
 
 ![Abbildung des Postfachregisters eines Vorfalls](../../media/incident-mailboxes.png)
 
 ## <a name="investigations"></a>Untersuchungen
 
-Wählen **Sie "Untersuchungen"** aus, um alle automatisierten Untersuchungen anzuzeigen, die durch Warnungen in diesem Vorfall ausgelöst wurden. Die Untersuchungen führen Korrekturmaßnahmen aus oder warten auf die Genehmigung von Maßnahmen durch den Analysten, je nachdem, wie Sie Ihre automatisierten Untersuchungen für die Ausführung in Microsoft Defender for Endpoint und Defender für Office 365 konfiguriert haben.
+Wählen **Sie Untersuchungen** aus, um alle automatisierten Untersuchungen anzuzeigen, die durch Warnungen in diesem Vorfall ausgelöst wurden. Die Untersuchungen führen Korrekturmaßnahmen durch oder warten auf die Genehmigung von Aktionen durch Analysten, je nachdem, wie Sie Ihre automatisierten Untersuchungen für die Ausführung in Microsoft Defender for Endpoint und Defender für Office 365 konfiguriert haben.
 
 ![Abbildung der Registerkarte "Untersuchungen“ eines Vorfalls](../../media/incident-investigations.png)
 
-Wählen Sie eine Untersuchung aus, um zur Seite mit den Untersuchungsdetails zu navigieren und vollständige Informationen zum Untersuchungs- und Behebungsstatus zu erhalten. Wenn im Rahmen der Untersuchung Aktionen zur Genehmigung ausstehen, werden sie auf der Registerkarte "Ausstehende Aktionen" angezeigt. Ergreifen Sie Maßnahmen im Rahmen der Vorfallbehebung.
+Wählen Sie eine Untersuchung aus, um zur Seite mit den Untersuchungsdetails zu navigieren und vollständige Informationen zum Untersuchungs- und Behebungsstatus zu erhalten. Wenn im Rahmen der Untersuchung Aktionen zur Genehmigung ausstehen, werden sie auf der Registerkarte Ausstehende Aktionen angezeigt. Ergreifen Sie Maßnahmen im Rahmen der Vorfallbehebung.
 
 ## <a name="evidence"></a>Beweis
 
-Microsoft 365 Defender untersucht automatisch alle von Vorfällen unterstützten Ereignisse und verdächtigen Entitäten in den Warnungen und liefert Ihnen Autoresponse und Informationen zu den wichtigen Dateien, Prozessen, Diensten, E-Mails und mehr. Dies hilft, potenzielle Bedrohungen im Vorfall schnell zu erkennen und zu blockieren.
+Microsoft 365 Defender untersucht automatisch alle von Vorfällen unterstützten Ereignisse und verdächtigen Entitäten in den Warnungen und stellt Ihnen Autoresponse und Informationen zu wichtigen Dateien, Prozessen, Diensten, E-Mails und mehr zur Verfügung. Dies hilft, potenzielle Bedrohungen im Vorfall schnell zu erkennen und zu blockieren.
 
 ![Abbildung der Registerkarte "Beweise" eines Vorfalls](../../media/incident-evidence.png)
 

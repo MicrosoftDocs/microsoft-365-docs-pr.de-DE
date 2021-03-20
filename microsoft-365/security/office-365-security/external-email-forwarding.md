@@ -15,12 +15,12 @@ ms.custom:
 description: .
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77f666e5eeceee3f5b324e5b9b6fac721c10e410
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
-ms.translationtype: HT
+ms.openlocfilehash: 4614fc9661c892457800b70e2f04f577b418b417
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286866"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910774"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Automatische externe E-Mail-Weiterleitung in Microsoft 365 steuern
 
@@ -38,7 +38,7 @@ Die folgenden Arten der automatischen Weiterleitung sind in Microsoft 365 verfü
 
 - Benutzer können [Posteingangsregeln](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) konfigurieren, um Nachrichten automatisch an externe Absender weiterzuleiten (absichtlich oder als Folge eines kompromittierten Kontos).
 
-- Administratoren können eine [Postfach-Weiterleitung](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (auch _SMTP-Weiterleitung_ genannt) konfigurieren, um Nachrichten automatisch an externe Empfänger weiterzuleiten. Der Administrator kann wählen, ob er Nachrichten einfach weiterleiten oder Kopien der weitergeleiteten Nachrichten in dem Postfach behalten möchte.
+- Administratoren können eine [Postfach-Weiterleitung](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (auch _SMTP-Weiterleitung_ genannt) konfigurieren, um Nachrichten automatisch an externe Empfänger weiterzuleiten. Der Administrator kann wählen, ob er Nachrichten einfach weiterleiten oder Kopien der weitergeleiteten Nachrichten in dem Postfach behalten möchte.
 
 Sie können ausgehende Spamfilterrichtlinien verwenden, um die automatische Weiterleitung an externe Empfänger zu steuern. Es stehen drei Einstellungen zur Verfügung:
 
@@ -60,9 +60,9 @@ Eine Anleitung zur Konfiguration dieser Einstellungen finden Sie unter [Konfigur
 
 Als Administrator haben Sie möglicherweise bereits andere Steuerelemente konfiguriert, um die automatische E-Mail-Weiterleitung zuzulassen oder zu blockieren. Zum Beispiel:
 
-- [Remotedomänen](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains), um die automatische E-Mail-Weiterleitung an einige oder alle externen Domänen zuzulassen oder zu blockieren.
+- [Remotedomänen](/exchange/mail-flow-best-practices/remote-domains/remote-domains), um die automatische E-Mail-Weiterleitung an einige oder alle externen Domänen zuzulassen oder zu blockieren.
 
-- Bedingungen und Aktionen in Exchange [E-Mailflussregeln](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (auch Transportregeln genannt), um automatisch weitergeleitete Nachrichten an externe Empfänger zu erkennen und zu blockieren.
+- Bedingungen und Aktionen in Exchange [E-Mailflussregeln](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (auch Transportregeln genannt), um automatisch weitergeleitete Nachrichten an externe Empfänger zu erkennen und zu blockieren.
 
 Die Einstellungen für die Remotedomäne und die E-Mailflussregeln sind unabhängig von den Einstellungen für ausgehende Spamfilterrichtlinien. Zum Beispiel:
 

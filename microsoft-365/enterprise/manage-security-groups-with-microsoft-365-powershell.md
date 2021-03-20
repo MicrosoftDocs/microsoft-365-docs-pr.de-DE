@@ -16,13 +16,13 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - O365ITProTrain
-description: Erfahren Sie, wie Sie mithilfe von PowerShell Sicherheitsgruppen verwalten.
-ms.openlocfilehash: a52fcf6a20598e92f9d5ac8d673a4b1c026030f8
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+description: Erfahren Sie, wie Sie PowerShell zum Verwalten von Sicherheitsgruppen verwenden.
+ms.openlocfilehash: 64a02a1472fdeb0d61cfb4f380cbe61dd7b557b6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073233"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909502"
 ---
 # <a name="manage-security-groups-with-powershell"></a>Verwalten von Sicherheitsgruppen mit PowerShell
 
@@ -30,28 +30,28 @@ ms.locfileid: "49073233"
 
 Sie können PowerShell für Microsoft 365 als Alternative zum Microsoft 365 Admin Center verwenden, um Sicherheitsgruppen zu verwalten. 
 
-In diesem Artikel wird das auflisten, erstellen, Ändern von Einstellungen und Entfernen von Sicherheitsgruppen beschrieben. 
+In diesem Artikel wird das Auflisten, Erstellen, Ändern von Einstellungen und Entfernen von Sicherheitsgruppen beschrieben. 
 
-Wenn für einen Befehlsblock in diesem Artikel Variablenwerte angegeben werden müssen, führen Sie die folgenden Schritte aus.
+Wenn für einen Befehlsblock in diesem Artikel variablen Werte angegeben werden müssen, verwenden Sie die folgenden Schritte.
 
-1. Kopieren Sie den Befehlsblock in die Zwischenablage, und fügen Sie ihn in Editor oder in die PowerShell Integrated Script Environment (ISE) ein.
-2. Geben Sie die Variablenwerte ein, und entfernen Sie die Zeichen "<" und ">".
-3. Führen Sie die Befehle im PowerShell-Fenster oder in der PowerShell ISE aus.
+1. Kopieren Sie den Befehlsblock in die Zwischenablage, und fügen Sie ihn in Notepad oder in die integrierte PowerShell-Skriptumgebung (ISE) ein.
+2. Füllen Sie die Variablenwerte aus, und entfernen Sie die Zeichen "<" und ">".
+3. Führen Sie die Befehle im PowerShell-Fenster oder im PowerShell-ISE aus.
 
-Informationen zum Verwalten der Gruppenmitgliedschaft mit PowerShell finden Sie unter [MAINTAIN Security Group Membership](maintain-group-membership-with-microsoft-365-powershell.md) .
+Weitere [Informationen finden Sie unter Maintain security group membership](maintain-group-membership-with-microsoft-365-powershell.md) to manage group membership with PowerShell.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Verwenden der Azure Active Directory PowerShell für Graph-Module
 
-Stellen Sie zunächst [eine Verbindung mit Ihrem Microsoft 365-Mandanten her](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Stellen Sie [zunächst eine Verbindung mit Ihrem Microsoft 365-Mandanten herzustellen.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
-### <a name="list-your-groups"></a>Gruppen auflisten
+### <a name="list-your-groups"></a>Auflisten Ihrer Gruppen
 
-Verwenden Sie diesen Befehl, um alle Ihre Gruppen aufzulisten.
+Verwenden Sie diesen Befehl, um alle Ihre Gruppen auflisten.
 
 ```powershell
 Get-AzureADGroup
 ```
-Verwenden Sie diese Befehle, um die Einstellungen einer bestimmten Gruppe anhand des Anzeigenamens anzuzeigen.
+Verwenden Sie diese Befehle, um die Einstellungen einer bestimmten Gruppe nach dem Anzeigenamen anzuzeigen.
 
 ```powershell
 $groupName="<display name of the group>"
@@ -68,14 +68,14 @@ New-AzureADGroup -Description "<group purpose>" -DisplayName "<name>" -MailEnabl
 
 ### <a name="change-the-settings-on-a-group"></a>Ändern der Einstellungen für eine Gruppe
 
-Zeigt die Einstellungen der Gruppe mit den folgenden Befehlen an.
+Zeigen Sie die Einstellungen der Gruppe mit diesen Befehlen an.
 
 ```powershell
 $groupName="<display name of the group>"
 Get-AzureADGroup | Where { $_.DisplayName -eq $groupName } | Select *
 ```
 
-Verwenden Sie dann den Artikel " [AzureADGroup](https://docs.microsoft.com/powershell/module/azuread/set-azureadgroup) ", um zu bestimmen, wie eine Einstellung geändert werden soll.
+Verwenden Sie dann den [Artikel Set-AzureADGroup,](/powershell/module/azuread/set-azureadgroup) um zu bestimmen, wie eine Einstellung geändert wird.
 
 ### <a name="remove-a-security-group"></a>Entfernen einer Sicherheitsgruppe
 
@@ -94,21 +94,21 @@ Verwenden Sie diese Befehle, um die aktuellen Besitzer einer Sicherheitsgruppe a
 $groupName="<display name of the group>"
 Get-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId
 ```
-Verwenden Sie diese Befehle, um dem aktuellen Besitzer einer Sicherheitsgruppe ein Benutzerkonto durch den **Benutzerprinzipalnamen (User Principal Name, UPN)** hinzuzufügen.
+Verwenden Sie diese Befehle, um den aktuellen Besitzern einer Sicherheitsgruppe ein Benutzerkonto mithilfe des Benutzerprinzipalnamens **(User Principal Name, UPN)** hinzuzufügen.
 
 ```powershell
 $userUPN="<UPN of the user account to add>"
 $groupName="<display name of the group>"
 Add-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectId
 ```
-Verwenden Sie diese Befehle, um dem aktuellen Besitzer einer Sicherheitsgruppe ein Benutzerkonto anhand seines **Anzeigenamens** hinzuzufügen.
+Verwenden Sie diese Befehle, um  den aktuellen Besitzern einer Sicherheitsgruppe ein Benutzerkonto mithilfe des Anzeigenamens hinzuzufügen.
 
 ```powershell
 $userName="<Display name of the user account to add>"
 $groupName="<display name of the group>"
 Add-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $userName }).ObjectId
 ```
-Verwenden Sie diese Befehle, um ein Benutzerkonto durch seinen **UPN** an die aktuellen Besitzer einer Sicherheitsgruppe zu entfernen.
+Verwenden Sie diese Befehle, um ein Benutzerkonto von seinem **UPN** an die aktuellen Besitzer einer Sicherheitsgruppe zu entfernen.
 
 ```powershell
 $userUPN="<UPN of the user account to remove>"
@@ -116,7 +116,7 @@ $groupName="<display name of the group>"
 Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -OwnerId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectId
 ```
 
-Verwenden Sie diese Befehle, um ein Benutzerkonto anhand seines **Anzeigenamens** an die aktuellen Besitzer einer Sicherheitsgruppe zu entfernen.
+Verwenden Sie diese Befehle, um ein Benutzerkonto mithilfe seines **Anzeigenamens** für die aktuellen Besitzer einer Sicherheitsgruppe zu entfernen.
 
 ```powershell
 $userName="<Display name of the user account to remove>"
@@ -126,16 +126,16 @@ Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -e
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Verwenden des Microsoft Azure Active Directory-Moduls für Windows PowerShell
 
-Stellen Sie zunächst [eine Verbindung mit Ihrem Microsoft 365-Mandanten her](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Stellen Sie [zunächst eine Verbindung mit Ihrem Microsoft 365-Mandanten herzustellen.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-### <a name="list-your-groups"></a>Gruppen auflisten
+### <a name="list-your-groups"></a>Auflisten Ihrer Gruppen
 
-Verwenden Sie diesen Befehl, um alle Ihre Gruppen aufzulisten.
+Verwenden Sie diesen Befehl, um alle Ihre Gruppen auflisten.
 
 ```powershell
 Get-MsolGroup
 ```
-Verwenden Sie diese Befehle, um die Einstellungen einer bestimmten Gruppe anhand des Anzeigenamens anzuzeigen.
+Verwenden Sie diese Befehle, um die Einstellungen einer bestimmten Gruppe nach dem Anzeigenamen anzuzeigen.
 
 ```powershell
 $groupName="<display name of the group>"
@@ -152,14 +152,14 @@ New-MsolGroup -Description "<group purpose>" -DisplayName "<name>"
 
 ### <a name="change-the-settings-on-a-group"></a>Ändern der Einstellungen für eine Gruppe
 
-Zeigt die Einstellungen der Gruppe mit den folgenden Befehlen an.
+Zeigen Sie die Einstellungen der Gruppe mit diesen Befehlen an.
 
 ```powershell
 $groupName="<display name of the group>"
 Get-MsolGroup | Where { $_.DisplayName -eq $groupName } | Select *
 ```
 
-Verwenden Sie dann den Artikel " [MsolGroup](https://docs.microsoft.com/powershell/module/msonline/set-msolgroup) ", um zu bestimmen, wie eine Einstellung geändert werden soll.
+Verwenden Sie dann den [Artikel Set-MsolGroup,](/powershell/module/msonline/set-msolgroup) um zu bestimmen, wie eine Einstellung geändert wird.
 
 ### <a name="remove-a-security-group"></a>Entfernen einer Sicherheitsgruppe
 
@@ -177,4 +177,3 @@ Remove-MsolGroup -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $group
 [Verwalten von Microsoft 365 mit PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

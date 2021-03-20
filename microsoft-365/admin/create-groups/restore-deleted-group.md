@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Erfahren Sie, wie Sie eine gelöschte Microsoft 365-Gruppe wiederherstellen können.
-ms.openlocfilehash: 091697be54b1127a5cb336179733d51519947e14
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
-ms.translationtype: HT
+ms.openlocfilehash: f3b6435d82d5beddf44f5920011b076b39c7dcd5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753243"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910546"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>Wiederherstellen einer gelöschten Microsoft 365-Gruppe
 
@@ -83,9 +83,9 @@ Besuchen Sie die [Microsoft Tech Community](https://techcommunity.microsoft.com/
   
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Verwalten von Microsoft 365-Gruppen mit PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
+[Verwalten von Microsoft 365-Gruppen mit PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
   
-[Löschen von Gruppen mit dem Cmdlet "Remove-UnifiedGroup"](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
+[Löschen von Gruppen mit dem Cmdlet "Remove-UnifiedGroup"](/powershell/module/exchange/remove-unifiedgroup)
   
 [Verwalten Ihrer gruppenabhängigen Teamwebsiteeinstellungen](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42)
   

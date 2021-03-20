@@ -20,22 +20,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
-description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Freenom für Microsoft einrichten.
-ms.openlocfilehash: b958a69d1dad9a0b56cf954d12cd42e40d6d4fea
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für E-Mails, Skype for Business Online und andere Dienste bei Freenom for Microsoft einrichten.
+ms.openlocfilehash: 8332d63acf34a7f999b549467494b7819cebf092
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657875"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910354"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>Erstellen von DNS-Einträgen bei Freenom für Microsoft
 
 [] [Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml) , wenn Sie nicht finden, wonach Sie suchen. 
   
 > [!CAUTION]
-> Die Freenom-Website unterstützt keine SRV-Einträge, was bedeutet, dass mehrere Skype for Business Online und Outlook Web App Funktionen nicht funktionieren. Unabhängig davon, welchen Microsoft-Plan Sie verwenden, gibt es erhebliche Diensteinschränkungen, und Sie möchten möglicherweise zu einem anderen DNS-Hostanbieter wechseln. 
+> Die Freenom-Website unterstützt keine SRV-Einträge, was bedeutet, dass mehrere Skype for Business Online- und Outlook Web App-Features nicht funktionieren. Unabhängig davon, welchen Microsoft-Plan Sie verwenden, gibt es erhebliche Diensteinschränkungen, und Sie können zu einem anderen DNS-Hostinganbieter wechseln. 
   
-Wenn Sie trotz der Diensteinschränkungen ihre eigenen Microsoft-DNS-Einträge bei Freenom verwalten möchten, befolgen Sie die Schritte in diesem Artikel, um Ihre Domäne zu überprüfen und DNS-Einträge für e-Mail und andere Dienste einzurichten.
+Wenn Sie trotz der Diensteinschränkungen ihre eigenen Microsoft -DNS-Einträge bei Freenom verwalten möchten, führen Sie die Schritte in diesem Artikel aus, um Ihre Domäne zu überprüfen und DNS-Einträge für E-Mails und andere Dienste einrichten.
   
   
 > [!NOTE]
@@ -49,19 +49,19 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
 > [!NOTE]
 > Dieser Eintrag wird nur verwendet, um zu überprüfen, ob Sie der Besitzer Ihrer Domäne sind. Er hat keine weiteren Auswirkungen. Sie können ihn später ggf. löschen. 
   
-1. Um zu beginnen, navigieren Sie über [diesen Link](https://my.freenom.com/)zu ihrer Domänen Seite in Freenom. Sie werden aufgefordert, sich anzumelden.
+1. Um zu beginnen, wechseln Sie über diesen [](https://my.freenom.com/)Link zu Ihrer Domänenseite in Freenom. Sie werden aufgefordert, sich anzumelden.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Wählen Sie **Dienste** aus, und wählen Sie dann **Meine Domänen** aus.
+2. Wählen **Sie Dienste** aus, und wählen Sie dann Meine Domänen **aus.**
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. Wählen Sie für die Domäne, die Sie bearbeiten möchten, die Option **Domäne verwalten** aus.
+3. Wählen Sie für die Domäne, die Sie bearbeiten möchten, **Die Option Domäne verwalten aus.**
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Wählen Sie **Freenom DNS verwalten** aus.
+4. Wählen **Sie Freenom DNS verwalten aus.**
     
     ![Freenom Manage Freenom DNS](../../media/9854a511-27e3-4658-8903-34b3d425096d.png)
   
@@ -73,11 +73,11 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     
     |**Name**|**Type**|**TTL**|**Target**|
     |:-----|:-----|:-----|:-----|
-    |(leer lassen)  <br/> |TXT  <br/> |3600 (Sekunden)  <br/> |MS = msXXXXXXXX  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihre spezifischen **Ziel-oder Punkt-zu-Adresse** -Werte aus der Tabelle.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
+    |(leer lassen)  <br/> |TXT  <br/> |3600 (Sekunden)  <br/> |MS=msXXXXXXXX  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen „Ziel“- oder **Verweist auf die Adresse**-Wert aus der Tabelle.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Freenom TXT values for verification](../../media/650098df-b3aa-47e5-9763-7fde24e34c3f.png)
   
-7. Wählen Sie **Save Changes** aus.
+7. Wählen **Sie Änderungen speichern aus.**
     
     ![Freenom TXT record Save Changes](../../media/b1a63f9a-4578-491a-9554-c40f73b37e09.png)
   
@@ -108,29 +108,29 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Fügen Sie einen MX-Eintrag hinzu, damit E-Mails für Ihre Domäne an Microsoft geleitet werden.
 <a name="bkmk_mx"> </a>
 
-1. Um zu beginnen, navigieren Sie über [diesen Link](https://my.freenom.com/)zu ihrer Domänen Seite in Freenom. Sie werden aufgefordert, sich anzumelden.
+1. Um zu beginnen, wechseln Sie über diesen [](https://my.freenom.com/)Link zu Ihrer Domänenseite in Freenom. Sie werden aufgefordert, sich anzumelden.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Wählen Sie **Dienste** aus, und wählen Sie dann **Meine Domänen** aus.
+2. Wählen **Sie Dienste** aus, und wählen Sie dann Meine Domänen **aus.**
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. Wählen Sie für die Domäne, die Sie bearbeiten möchten, die Option **Domäne verwalten** aus.
+3. Wählen Sie für die Domäne, die Sie bearbeiten möchten, **Die Option Domäne verwalten aus.**
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Legen Sie den Namen dient für Ihre Domäne auf die standardmäßigen Freenom Namenserver. Wählen Sie **Verwaltungs Tools** aus, und wählen Sie dann Namen **Server** aus.
+4. Legen Sie den für Ihre Domäne verwendeten Namen auf die standardmäßigen Freenom-Namenserver ein. Wählen **Sie Verwaltungstools** aus, und wählen Sie **dann Nameserver aus.**
     
     ![Freenom Nameservers setting](../../media/a6ae877a-c248-42b9-bae9-210a80cd01e7.png)
   
-5. Stellen Sie sicher, dass **Standardnamen Server verwenden** ausgewählt ist, und wählen Sie dann Namen von Namen **Servern ändern** aus.
+5. Stellen Sie **sicher, dass Standardnameserver** verwenden ausgewählt ist, und wählen Sie **dann Nameserver ändern aus.**
     
     ![Freenom Change Nameservers](../../media/0ef90d84-c0a0-4ef9-9e4c-43ef0aac3a2e.png)
   
-6. Wählen Sie **Freenom DNS verwalten** aus.
+6. Wählen **Sie Freenom DNS verwalten aus.**
     
-    ![Freenom wählen Sie Manage Freenom DNS aus.](../../media/f55a8053-2411-45da-a357-776c6699f721.png)
+    ![Freenom auswählen Freenom-DNS verwalten](../../media/f55a8053-2411-45da-a357-776c6699f721.png)
   
 7. Wählen Sie unter **Add Record** (Eintrag hinzufügen) in der Spalte **Type** (Typ) im Menü **MX** aus. 
     
@@ -140,34 +140,34 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     |**Name**|**Type**|**TTL**|**Target**|**Priorität**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(leer lassen)  <br/> |MX (Mail Exchanger)  <br/> |3600 (Sekunden)  <br/> |\<domain-key\>. Mail.Protection.Outlook.com  <br/> **Hinweis:** Holen Sie sich Ihr  *\<domain-key\>*  Microsoft-Konto.   [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |(leer lassen)  <br/> |MX (Mail Exchanger)  <br/> |3600 (Sekunden)  <br/> |\<domain-key\>.mail.protection.outlook.com  <br/> **Hinweis:** Erhalten Sie Ihren *\<domain-key\>* über Ihr Microsoft-Konto.   [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](../setup/domains-faq.yml) <br/> |
    
    ![Freenom MX record](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
-9. Wählen Sie **Save Changes** aus.
+9. Wählen **Sie Änderungen speichern aus.**
     
     ![Freenom MX record Save Changes](../../media/7aa0a464-d136-417f-be40-48d3f728eeb7.png)
   
-10. Wenn es weitere MX-Einträge gibt, löschen Sie sie alle: Wählen Sie für jeden Eintrag Delete (Löschen) aus. Wählen Sie für jeden Datensatz **Löschen** aus. Wenn die Nachricht möchten **Sie diesen Eintrag wirklich entfernen?** angezeigt wird, klicken Sie auf **OK**.
+10. Wenn es weitere MX-Einträge gibt, löschen Sie sie alle: Wählen Sie für jeden Eintrag Delete (Löschen) aus. Wählen Sie für jeden Datensatz **Löschen aus.** Wenn die Meldung Möchten Sie diesen Eintrag wirklich **entfernen?** angezeigt wird, wählen Sie **OK aus.**
     
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Hinzufügen der für Microsoft erforderlichen CNAME-Einträge
 <a name="bkmk_cname"> </a>
 
-1. Um zu beginnen, navigieren Sie über [diesen Link](https://my.freenom.com/)zu ihrer Domänen Seite in Freenom. Sie werden aufgefordert, sich anzumelden.
+1. Um zu beginnen, wechseln Sie über diesen [](https://my.freenom.com/)Link zu Ihrer Domänenseite in Freenom. Sie werden aufgefordert, sich anzumelden.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Wählen Sie **Dienste** aus, und wählen Sie dann **Meine Domänen** aus.
+2. Wählen **Sie Dienste** aus, und wählen Sie dann Meine Domänen **aus.**
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. Wählen Sie für die Domäne, die Sie bearbeiten möchten, die Option **Domäne verwalten** aus.
+3. Wählen Sie für die Domäne, die Sie bearbeiten möchten, **Die Option Domäne verwalten aus.**
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Wählen Sie **Freenom DNS verwalten** aus.
+4. Wählen **Sie Freenom DNS verwalten aus.**
     
-    ![Freenom wählen Sie Manage Freenom DNS aus.](../../media/5e7bc3a7-0d5e-431b-bb27-da3b0f316d01.png)
+    ![Freenom auswählen Freenom-DNS verwalten](../../media/5e7bc3a7-0d5e-431b-bb27-da3b0f316d01.png)
   
 5. Wählen Sie unter **Add Record** (Eintrag hinzufügen) in der Spalte **Type** (Typ) im Menü **SNAME** aus. 
     
@@ -185,7 +185,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
    
     ![Freenom CNAME values](../../media/752fc682-e3f2-4b9c-9253-bf1ba2d414e9.png)
   
-7. Wählen Sie **Save Changes** aus.
+7. Wählen **Sie Änderungen speichern aus.**
     
     ![Freenom CNAME Save Changes](../../media/68103fd2-0f5f-4aac-a875-25157c6bbdd2.png)
   
@@ -197,23 +197,23 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, Fügen Sie stattdessen die erforderlichen Microsoft-Werte zum aktuellen Datensatz hinzu, sodass Sie einen  *einzelnen*  SPF-Eintrag haben, der beide Wertegruppen enthält. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, sondern fügen Sie die erforderlichen Microsoft-Werte dem aktuellen Eintrag hinzu. Damit verfügen Sie über einen *einzigen* SPF-Eintrag, in dem beide Wertemengen enthalten sind. 
 
-1. Um zu beginnen, navigieren Sie über [diesen Link](https://my.freenom.com/)zu ihrer Domänen Seite in Freenom. Sie werden aufgefordert, sich anzumelden.
+1. Um zu beginnen, wechseln Sie über diesen [](https://my.freenom.com/)Link zu Ihrer Domänenseite in Freenom. Sie werden aufgefordert, sich anzumelden.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Wählen Sie **Dienste** aus, und wählen Sie dann **Meine Domänen** aus.
+2. Wählen **Sie Dienste** aus, und wählen Sie dann Meine Domänen **aus.**
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. Wählen Sie für die Domäne, die Sie bearbeiten möchten, die Option **Domäne verwalten** aus.
+3. Wählen Sie für die Domäne, die Sie bearbeiten möchten, **Die Option Domäne verwalten aus.**
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Wählen Sie **Freenom DNS verwalten** aus.
+4. Wählen **Sie Freenom DNS verwalten aus.**
     
-    ![Freenom wählen Sie Manage Freenom DNS aus.](../../media/94809955-0315-409c-a15d-703a2fe4c4ed.png)
+    ![Freenom auswählen Freenom-DNS verwalten](../../media/94809955-0315-409c-a15d-703a2fe4c4ed.png)
   
 5. Wählen Sie unter **Add Record** (Eintrag hinzufügen) in der Spalte **Type** (Typ) im Menü **TXT** aus. 
     
@@ -227,8 +227,6 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
    
     ![Freenom TXT values for SPF](../../media/1b3b1199-9104-4ca1-acdb-786d139c21ac.png)
   
-7. Wählen Sie **Save Changes** aus.
+7. Wählen **Sie Änderungen speichern aus.**
     
     ![Freenom TXT record for SPF Save Changes](../../media/e2fc52b1-0dcb-4595-9a4c-fca5e2ef9f97.png)
-  
-

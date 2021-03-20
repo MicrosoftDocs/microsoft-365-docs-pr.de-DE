@@ -14,63 +14,63 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: Die Roadmap zum Einrichten Ihrer Mandanten für Microsoft 365.
-ms.openlocfilehash: d2640a036eedda0b0962a15a03dcf0211ea0209b
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: fb3b6eecd893a5ab9b71bfa7bdfaea53af43470d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948397"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909454"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Mandanten-Roadmap für Microsoft 365
 
-Ihr Microsoft 365-Mandant ist die Gruppe von Diensten, die Ihrer Organisation zugewiesen sind. Normalerweise ist dieser Mandant einem oder mehreren ihrer öffentlichen DNS-Domänennamen zugeordnet und fungiert als zentraler und isolierter Container für unterschiedliche Abonnements und die Lizenzen, die Sie Benutzerkonten zuweisen. Weitere Informationen finden Sie unter [Abonnements, Lizenzen, Konten und Mandanten für die Cloud-Angebote von Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
+Ihr Microsoft 365-Mandant ist der Satz von Diensten, die Ihrer Organisation zugewiesen sind. In der Regel ist dieser Mandant einem oder mehreren öffentlichen DNS-Domänennamen zugeordnet und fungiert als zentraler und isolierter Container für verschiedene Abonnements und die zugehörigen Lizenzen, die Sie Benutzerkonten zuweisen. Weitere Informationen finden Sie unter [Abonnements, Lizenzen, Konten und](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)Mandanten für die Cloudangebote von Microsoft .
 
-Wenn Sie einen Microsoft 365-Mandanten erstellen, weisen Sie ihn einem bestimmten geografischen Standort zu. Sie können auch einen Mandanten mit mehreren geografischen Standorten haben und den Mandanten von einem Standort an einen anderen Speicherort verlagern.
+Wenn Sie einen Microsoft 365-Mandanten erstellen, weisen Sie ihn einem bestimmten geografischen Standort zu. Sie können auch einen Mandanten mit mehreren geografischen Standorten haben und Ihren Mandanten von einem Standort an einen anderen verschieben.
 
-Um ihren Mandanten für Benutzer, Gruppen, Lizenzen und Cloud-apps vorzubereiten, ist es wichtig, die Mandanten Konfiguration sorgfältig zu planen und auszuführen.
+Um Ihren Mandanten für Benutzer, Gruppen, Lizenzen und Cloud-Apps bereit zu machen, ist es wichtig, ihre Mandantenkonfiguration sorgfältig zu planen und auszuführen.
 
-## <a name="set-up-your-microsoft-365-tenant"></a>Einrichten Ihres Microsoft 365-Mandanten
+## <a name="set-up-your-microsoft-365-tenant"></a>Richten Sie Ihren Microsoft 365-Mandanten ein.
 
-Nachdem Sie sichergestellt haben, dass Ihr Netzwerk für den Zugriff auf Microsoft 365 sowohl für lokale als auch für Remotemitarbeiter optimiert ist, planen und konfigurieren Sie Ihren Microsoft 365-Mandanten für DNS-Domänennamen, gemeinsame Dienste und für diese Identitätsinfrastruktur, die die sichere Benutzeranmeldung unterstützt.
+Nachdem Sie sichergestellt haben, dass Ihr Netzwerk für den Zugriff auf Microsoft 365 für lokale und Remotemitarbeiter optimiert ist, planen und konfigurieren Sie ihren Microsoft 365-Mandanten für DNS-Domänennamen, gemeinsame Dienste und für diese Identitätsinfrastruktur, die die sichere Benutzeranmeldeung unterstützt.
 
 ### <a name="plan"></a>Plan
 
-So planen Sie die Implementierung Ihres Mandanten:
+So planen Sie die Mandantenimplementierung:
 
-- [Grundlegendes zu Abonnements, Lizenzen und Azure Active Directory (Azure AD)-Mandanten](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
-- [Grundlegendes zur Verwendung von Drittanbieter-SSL-Zertifikaten](plan-for-third-party-ssl-certificates.md)
-- [Grundlegendes zu den Möglichkeiten, mit denen ein Microsoft 365-Mandant in Azure AD Dienste integriert ist](integrated-apps-and-azure-ads.md)
+- [Verstehen von Abonnements, Lizenzen und Azure Active Directory (Azure AD)-Mandanten](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
+- [Informationen zur Verwendung von DRITTANBIETER-SSL-Zertifikaten](plan-for-third-party-ssl-certificates.md)
+- [Verstehen der Integration eines Microsoft 365-Mandanten in Azure AD-Dienste](integrated-apps-and-azure-ads.md)
 - [Planen der Client-App-Unterstützung](microsoft-365-client-support-certificate-based-authentication.md)
-- [Bestimmen der Verwendung der modernen Hybrid Authentifizierung](hybrid-modern-auth-overview.md)
-- [Planen von Office 2007-und Office 2010 Upgrades](plan-upgrade-previous-versions-office.md)
-- [Grundlegendes zur Mandanten Isolierung](microsoft-365-tenant-isolation-overview.md)
+- [Bestimmen der Verwendung der modernen Hybridauthentifizierung](hybrid-modern-auth-overview.md)
+- [Planen von Office 2007- und Office 2010-Upgrades](plan-upgrade-previous-versions-office.md)
+- [Verstehen der Mandantenisolation](microsoft-365-tenant-isolation-overview.md)
 
 ### <a name="deploy"></a>Bereitstellen
 
-So stellen Sie den Mandanten bereit: 
+So stellen Sie Ihren Mandanten zur Bereitstellung ein: 
 
-- Fügen Sie die [DNS-Domänen](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) für Ihre Organisation hinzu.
-- Verwenden Sie die [Installationshandbücher im Microsoft 365 Admin Center](setup-guides-for-microsoft-365.md).
-- Erstellen Sie Ihre [Identitätsinfrastruktur](identity-roadmap-microsoft-365.md) , und [Sichern Sie Ihre Benutzeranmeldungen](microsoft-365-secure-sign-in.md).
+- Fügen Sie die [DNS-Domänen](../admin/setup/add-domain.md) für Ihre Organisation hinzu.
+- Verwenden Sie [die Setupanleitungen im Microsoft 365 Admin Center](setup-guides-for-microsoft-365.md).
+- Erstellen Sie Ihre [Identitätsinfrastruktur,](identity-roadmap-microsoft-365.md) und [sichern Sie Ihre Benutzer-Anmeldungen.](microsoft-365-secure-sign-in.md)
 
-### <a name="move-a-tenants-geographic-locations"></a>Migrieren der geografischen Standorte eines Mandanten
+### <a name="move-a-tenants-geographic-locations"></a>Verschieben der geografischen Standorte eines Mandanten
 
-Microsoft öffnet weiterhin die neuen geografischen Standorte für das Rechenzentrum (GEOS) für Microsoft 365-Dienste. In diesem neuen Datencenter-GEOS wird Kapazität hinzugefügt und Ressourcen zur Unterstützung von Kundenanforderungen und Nutzungs Wachstum berechnet. Darüber hinaus bieten die neuen Rechenzentrumsregionen die Aufbewahrung von Kundenkerndaten innerhalb der Geografie.
+Microsoft öffnet weiterhin neue geografische Standorte (Geos) für Microsoft 365-Dienste. Diese neuen Rechenzentrums-Geos fügen Kapazitäts- und Rechenressourcen hinzu, um die Kundenanforderungen und das Nutzungswachstum zu unterstützen. Darüber hinaus bieten die neuen Rechenzentrumsregionen die Aufbewahrung von Kundenkerndaten innerhalb der Geografie.
 
-Weitere Informationen finden Sie unter [Moving Core Data to New Microsoft 365 Datacenter GEOS](moving-data-to-new-datacenter-geos.md).
+Weitere Informationen finden Sie unter [Moving core data to new Microsoft 365 datacenter geos](moving-data-to-new-datacenter-geos.md).
 
 
 ## <a name="deploy-microsoft-365-multi-geo"></a>Bereitstellen von Microsoft 365 Multi-Geo
 
 Mit Microsoft 365 Multi-Geo kann Ihr Unternehmen seine Microsoft 365-Präsenz auf mehrere geografische Regionen und/oder Länder innerhalb des vorhandenen Mandanten erweitern.
 
-Weitere Informationen finden Sie unter [Microsoft 365 Multi-Geo](microsoft-365-multi-geo.md).
+Mehr dazu unter [Microsoft 365 Multi-Geo](microsoft-365-multi-geo.md).
 
 ## <a name="manage-multiple-microsoft-365-tenants"></a>Verwalten mehrerer Microsoft 365-Mandanten 
 
-Obwohl ein einzelner Mandant für Ihre einer Organisation ideal ist, sind Sie möglicherweise eine von vielen Organisationen mit mehreren Mandanten. Gründe hierfür können Fusionen und Übernahmen sein, Sie möchten eine administrative Isolierung oder eine dezentrale IT-Verwaltung.
+Obwohl ein einzelner Mandant für Ihre Organisation ideal ist, sind Sie möglicherweise eine von vielen Organisationen mit mehreren Mandanten. Gründe können Fusionen und Übernahmen, eine administrative Isolation oder eine dezentralisierte IT sein.
 
-Wenn Sie mehrere Microsoft 365-Mandanten haben, lesen Sie diese Artikel, um weitere Informationen zu erhalten:
+Wenn Sie mehrere Microsoft 365-Mandanten haben, finden Sie in diesen Artikeln weitere Informationen zu:
 
 - [Zusammenarbeit zwischen Mandanten](microsoft-365-inter-tenant-collaboration.md)
 - [Mandantenübergreifende Postfachmigration](cross-tenant-mailbox-migration.md)
@@ -78,4 +78,4 @@ Wenn Sie mehrere Microsoft 365-Mandanten haben, lesen Sie diese Artikel, um weit
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Starten Sie Ihre Mandanten Planung mit [Abonnements, Lizenzen, Konten und Mandanten](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
+Starten Sie Ihre Mandantenplanung mit [Abonnements, Lizenzen, Konten und Mandanten.](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)

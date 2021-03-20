@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie Bewertungen im Microsoft Compliance Manager, um Ihnen zu helfen, die Anforderungen von Vorschriften und Zertifizierungen zu erfüllen, die für Ihre Organisation wichtig sind.
-ms.openlocfilehash: 06b644293c014dafbe46c115b498c2ad2390e99d
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: ff2aa41b91f3cb019dbed542c422d61c79c4ecb5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406757"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908595"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Erstellen und Verwalten von Bewertungen im Compliance Manager
 
 **In diesem Artikel:** Erfahren Sie, wie Sie Compliance Manager für Ihre Organisation anpassen, indem Sie Bewertungen erstellen und **verwalten.** In diesem Artikel erfahren Sie, wie Sie Bewertungen erstellen, sie  **in** Gruppen organisieren, mit Steuerelementen **arbeiten,** Updates akzeptieren und Bewertungsberichte **exportieren.**
 
 > [!IMPORTANT]
-> Die für Ihre Organisation verfügbaren Bewertungen hängen von Ihrem Lizenzvertrag ab. [Überprüfen Sie die Details](https://go.microsoft.com/fwlink/?linkid=2132371).
+> Die für Ihre Organisation verfügbaren Bewertungen hängen von Ihrem Lizenzvertrag ab. [Überprüfen Sie die Details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="introduction-to-assessments"></a>Einführung in Bewertungen
 

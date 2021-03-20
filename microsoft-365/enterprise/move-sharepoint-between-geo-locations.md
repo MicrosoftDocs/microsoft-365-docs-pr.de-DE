@@ -13,14 +13,14 @@ ms.collection:
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: In diesem Artikel erfahren Sie, wie Sie eine SharePoint-Website an einen anderen geografischen Standort in ihrer Multi-Geo-Umgebung umstellen und die Erwartungen an die Änderungen an Ihre Benutzer weitergeben.
+description: Erfahren Sie, wie Sie eine SharePoint-Website an einen anderen geografischen Standort in Ihrer Multi-Geo-Umgebung verschieben und ihren Benutzern Erwartungen an die Änderungen vermitteln.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 819496b9f7612afa1db902e6fc5a0844e99d7a8e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: eed323b2e2b8f68a4a603052657e17495bb17690
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545636"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910930"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Verschieben einer SharePoint-Website an einen anderen geografischen Standort
 
@@ -74,13 +74,13 @@ Die Uhrzeit muss für beide Parameter in koordinierter Weltzeit (UTC) angegeben 
 
 Die geografische Verschiebung von SharePoint-Websites setzt voraus, dass Sie eine Verbindung mit der SharePoint-Admin-URL an dem Standort herstellen, an dem sich die Website befindet, und die Verschiebung von hier aus durchführen.
 
-Wenn beispielsweise die Website-URL lautet <https://contosohealthcare.sharepoint.com/sites/Turbines> , stellen Sie eine Verbindung mit der SharePoint-Administrator-URL her unter <https://contosohealthcare-admin.sharepoint.com> :
+Wenn die Website-URL beispielsweise ist, stellen Sie eine Verbindung <https://contosohealthcare.sharepoint.com/sites/Turbines> zur SharePoint Admin-URL unter <https://contosohealthcare-admin.sharepoint.com> :
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![SharePoint Online-Verwaltungsshell-Fenster mit dem Befehl "Connect-SPOService"](../media/move-onedrive-between-geo-locations-image1.png)
+![SharePoint Online-Verwaltungsshellfenster mit dem befehl Connect-SPOService](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### <a name="validating-the-environment"></a>Überprüfen der Umgebung
 
@@ -145,8 +145,8 @@ Sie können die Verschiebung des geografischen Standorts einer SharePoint-Websit
 
 Sie können den Status einer Websiteverschiebung an den geografischen Standort oder von dem geografischen Standort, mit dem Sie verbunden sind, mit den folgenden Cmdlets ermitteln:
 
-- [Get-SPOSiteContentMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate) (Websites, die nicht mit Gruppen verbunden sind)
-- [Get-SPOUnifiedGroupMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (Gruppen verbundene Websites)
+- [Get-SPOSiteContentMoveState](/powershell/module/sharepoint-online/get-spositecontentmovestate) (Websites, die nicht mit Gruppen verbunden sind)
+- [Get-SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (mit Gruppen verbundene Websites)
 
 Verwenden Sie den `-SourceSiteUrl`-Parameter, um die Website anzugeben, für die Sie den Verschiebungsstatus anzeigen möchten.
 

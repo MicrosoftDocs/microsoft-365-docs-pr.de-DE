@@ -3,7 +3,6 @@ title: Abonnements, Lizenzen, Konten und Mandanten für Microsoft-Cloud-Angebote
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/25/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -21,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: Lernen Sie die Beziehungen von Organisationen, Abonnements, Lizenzen, Benutzerkonten und Mandanten über die Microsoft-Cloudangebote hinweg kennen.
-ms.openlocfilehash: c48e2ecc321f4b6e06ced13f029e344faf12650b
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: eaf1c2399b5d44ea8d6000042b3258d0e8b5a7de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446031"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909514"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, Lizenzen, Konten und Mandanten für Microsoft-Cloud-Angebote
 
@@ -66,7 +65,11 @@ Bei den SaaS-Cloudangeboten von Microsoft ermöglicht eine Lizenz einem bestimmt
 **Abbildung 2: Lizenzen innerhalb der SaaS-basierten Abonnements für eine Organisation**
 
 ![Ein Beispiel für mehrere Lizenzen innerhalb von Abonnements für auf SaaS-basierende Microsoft-Cloudangebote.](../media/Subscriptions/Subscriptions-Fig2.png)
-  
+
+>[!Note]
+>Eine bewährte Methode für mehr Sicherheit ist die Verwendung von separaten Benutzerkonten, denen bestimmte Rollen für Verwaltungsfunktionen zugewiesen sind. Diesen dedizierten Administratorkonten muss keine Lizenz für die von ihnen verwalteten Clouddienste zugewiesen werden. Beispielsweise muss einem SharePoint-Dienstadministratorkonto keine Microsoft 365-Lizenz zugewiesen werden.
+>
+
 Bei PaaS-basierten Azure-Clouddiensten sind Softwarelizenzen in den Dienstpreis integriert.
   
 Bei IaaS-basierten virtuellen Azure-Computern sind möglicherweise zusätzliche Lizenzen zur Nutzung der Software oder der Anwendung erforderlich, die auf einem virtuellen Computerabbild installiert ist. Einige virtuelle Computerabbilder weisen lizenzierte Versionen der installierten Software auf, und die Kosten sind in dem Minutenpreis für den Server enthalten. Beispiele hierfür sind die virtuellen Computerabbilder für SQL Server 2014 und SQL Server 2016. 
@@ -153,7 +156,7 @@ So fügen Sie ein Azure-Abonnement mit derselben Organisation und demselben Azur
     
 3. Wählen Sie auf der Seite **Abonnement hinzufügen** ein Angebot aus, und schließen Sie die Bezahlung und die Vereinbarung ab.
     
-Wenn Sie die Abonnements für Azure und Microsoft 365 einzeln erworben haben und den Microsoft 365 Azure AD-Mandanten von Ihrem Azure-Abonnement aus aufrufen möchten, finden Sie entsprechende Anweisungen unter [Hinzufügen eines vorhandenen Azure-Abonnements zu Ihrem Azure Active Directory-Mandanten](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+Wenn Sie die Abonnements für Azure und Microsoft 365 einzeln erworben haben und den Microsoft 365 Azure AD-Mandanten von Ihrem Azure-Abonnement aus aufrufen möchten, finden Sie entsprechende Anweisungen unter [Hinzufügen eines vorhandenen Azure-Abonnements zu Ihrem Azure Active Directory-Mandanten](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
  
 ## <a name="see-also"></a>Siehe auch
 
@@ -166,4 +169,3 @@ Wenn Sie die Abonnements für Azure und Microsoft 365 einzeln erworben haben un
 ## <a name="next-step"></a>Nächster Schritt
 
 [Bewerten der Microsoft 365-Netzwerkkonnektivität](assessing-network-connectivity.md)
-  

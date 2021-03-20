@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 250fba7bdf89425bce601112c7863eb9d1c952be
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 3ba9dd3dac97456479b2191ee7f0eb7d97f79fed
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407444"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909046"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatisierte Untersuchung und Reaktion (AIR) in Microsoft Defender für Office 365
 
@@ -110,8 +110,8 @@ Berechtigungen werden über bestimmte Rollen erteilt, z. B. über die in der fol
 
 |Aufgabe|Erforderliche Rollen|
 |---|---|
-|Einrichten von AIR-Features|Eine der folgenden Rollen: <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li></ul> <p> Diese Rollen können in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im Security & Compliance Center zugewiesen [werden.](permissions-in-the-security-and-compliance-center.md)|
-|Starten einer automatisierten Untersuchung <p> --- oder --- <p> Genehmigen oder Ablehnen empfohlener Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im Security & Compliance Center zugewiesen [sind:](permissions-in-the-security-and-compliance-center.md) <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li><li>Sicherheitsoperator</li><li>Sicherheitsleseberechtigter <br> --- und --- </li><li>Suchen und Löschen (diese Rolle wird nur im [Security & Compliance Center zugewiesen.](permissions-in-the-security-and-compliance-center.md) Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und der neuen Rollengruppe die Rolle Suchen und Löschen hinzufügen.</li></ul>|
+|Einrichten von AIR-Features|Eine der folgenden Rollen: <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li></ul> <p> Diese Rollen können in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im Security & Compliance Center zugewiesen [werden.](permissions-in-the-security-and-compliance-center.md)|
+|Starten einer automatisierten Untersuchung <p> --- oder --- <p> Genehmigen oder Ablehnen empfohlener Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im Security & Compliance Center zugewiesen [sind:](permissions-in-the-security-and-compliance-center.md) <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li><li>Sicherheitsoperator</li><li>Sicherheitsleseberechtigter <br> --- und --- </li><li>Suchen und Löschen (diese Rolle wird nur im [Security & Compliance Center zugewiesen.](permissions-in-the-security-and-compliance-center.md) Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und der neuen Rollengruppe die Rolle Suchen und Löschen hinzufügen.</li></ul>|
 
 ## <a name="required-licenses"></a>Erforderliche Lizenzen
 
@@ -128,7 +128,7 @@ Wenn Sie bereits die AIR-Funktionen in Microsoft Defender für Office 365 verwen
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Einheitliches Aktionscenter":::
 
-Das neue und verbesserte Sicherheitscenter vereint die AIR-Funktionen in [Microsoft Defender für Office 365](office-365-atp.md) und in Microsoft Defender for [Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). Mit diesen Updates und Verbesserungen kann Ihr Sicherheitsbetriebsteam Details zu automatisierten Untersuchungen und Korrekturaktionen über Ihre E-Mails, Inhalte für die Zusammenarbeit, Benutzerkonten und Geräte hinweg an einem Ort anzeigen.
+Das neue und verbesserte Sicherheitscenter vereint die AIR-Funktionen in [Microsoft Defender für Office 365](office-365-atp.md) und in Microsoft Defender for [Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). Mit diesen Updates und Verbesserungen kann Ihr Sicherheitsbetriebsteam Details zu automatisierten Untersuchungen und Korrekturaktionen über Ihre E-Mails, Inhalte für die Zusammenarbeit, Benutzerkonten und Geräte hinweg an einem Ort anzeigen.
 
 > [!TIP]
 > Das neue Microsoft 365 Security Center ( <https://security.microsoft.com> ) ersetzt die folgenden Center:
@@ -138,16 +138,16 @@ Das neue und verbesserte Sicherheitscenter vereint die AIR-Funktionen in [Micros
 >
 > Zusätzlich zum Ändern der URL gibt es ein neues Aussehen und Gefühl, das Ihrem Sicherheitsteam eine optimierte Benutzererfahrung bietet, mit Sichtbarkeit für mehr Bedrohungserkennungen an einem Ort.
 
-### <a name="what-to-expect"></a>Was zu erwarten ist
+### <a name="what-to-expect"></a>Das erwartet Sie
 
 In der folgenden Tabelle sind Änderungen und Verbesserungen aufgeführt, die air in Microsoft Defender für Office 365 bietet.
 
 |Element|Was ändert sich?|
 |---|---|
-|**Seite "Untersuchungen"**|Die Seite **"Aktualisierte Untersuchungen"** ist konsistenter mit dem, was Sie in [Microsoft Defender for Endpoint sehen.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) Es werden einige allgemeine Format- und Formatänderungen angezeigt, die an der neuen, einheitlichen Untersuchungsansicht **ausgerichtet** sind. Das Untersuchungsdiagramm hat beispielsweise ein einheitliches Format.|
+|**Seite "Untersuchungen"**|Die Seite **"Aktualisierte Untersuchungen"** ist konsistenter mit dem, was Sie in [Microsoft Defender for Endpoint sehen.](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) Es werden einige allgemeine Format- und Formatänderungen angezeigt, die an der neuen, einheitlichen Untersuchungsansicht **ausgerichtet** sind. Das Untersuchungsdiagramm hat beispielsweise ein einheitliches Format.|
 |**Registerkarte "Benutzer"**|Die **Registerkarte Benutzer** ist jetzt die Registerkarte **Postfächer.** Details zu Benutzern finden Sie auf der Registerkarte **Postfach.**|
 |**Registerkarte "E-Mail"**|Die **Registerkarte E-Mail** wurde entfernt. Besuchen Sie die **Registerkarte Entitäten,** um eine Liste der E-Mail- und E-Mail-Clusterelemente zu sehen.|
-|**Registerkarte Entitäten**|Die **Registerkarte Entitäten** verfügt über eine Tab-in-Tab-Formatvorlage, die eine Gesamtzusammenfassungsansicht und die Möglichkeit zum Filtern nach Entitätstyp enthält. Die **Registerkarte Entitäten** enthält nun **zusätzlich** zur Option Öffnen im Explorer eine Option Zum **Aufsuchen** gehen. Sie können jetzt entweder den [Bedrohungs-Explorer](threat-explorer.md) oder die [erweiterte Suche](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) verwenden, um Entitäten und Bedrohungen zu finden und nach Ergebnissen zu filtern.|
+|**Registerkarte Entitäten**|Die **Registerkarte Entitäten** verfügt über eine Tab-in-Tab-Formatvorlage, die eine Gesamtzusammenfassungsansicht und die Möglichkeit zum Filtern nach Entitätstyp enthält. Die **Registerkarte Entitäten** enthält nun **zusätzlich** zur Option Öffnen im Explorer eine Option Zum **Aufsuchen** gehen. Sie können jetzt entweder den [Bedrohungs-Explorer](threat-explorer.md) oder die [erweiterte Suche](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) verwenden, um Entitäten und Bedrohungen zu finden und nach Ergebnissen zu filtern.|
 |**Registerkarte "Aktionen"**|Die Registerkarte **Aktionen aktualisiert** enthält jetzt eine **Registerkarte Ausstehende Aktionen** und eine Registerkarte **Aktionen-Verlauf.** Aktionen können in einem Seitenbereich genehmigt (oder abgelehnt) werden, der geöffnet wird, wenn Sie eine ausstehende Aktion auswählen.|
 |**Registerkarte "Nachweis"**|Eine neue **Registerkarte Nachweis** zeigt die wichtigsten Entitätsbefunde im Zusammenhang mit Aktionen. Aktionen im Zusammenhang mit den einzelnen Nachweisen können in einem Seitenbereich genehmigt (oder abgelehnt) werden, der geöffnet wird, wenn Sie eine ausstehende Aktion auswählen.|
 |**Aktionscenter**|Das aktualisierte **Aktionscenter** ( ) führt ausstehende und abgeschlossene Aktionen über E-Mails, <https://security.microsoft.com/action-center> Geräte und Identitäten hinweg zusammen. Weitere Informationen finden Sie unter Action Center. (Weitere Informationen finden Sie unter [The Action Center](../mtp/mtp-action-center.md).)|

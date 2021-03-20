@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
-description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Namecheap für Microsoft einrichten.
-ms.openlocfilehash: 1e0fa8839e4ceae5074059d6ae05e3c7456611c2
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für E-Mails, Skype for Business Online und andere Dienste unter Namecheap für Microsoft einrichten.
+ms.openlocfilehash: 3de8c4fb7809423848564590193e00537362c034
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657839"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910150"
 ---
 # <a name="create-dns-records-at-namecheap-for-microsoft"></a>Erstellen von DNS-Einträgen bei Namecheap für Microsoft
 
@@ -34,7 +34,7 @@ ms.locfileid: "49657839"
   
 [] Wenn Namecheap Ihr DNS-Hostinganbieter ist, führen Sie die in diesem Artikel aufgeführten Schritte aus, um Ihre Domäne zu überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten.
   
-Nachdem Sie diese Einträge bei Namecheap hinzugefügt haben, ist Ihre Domäne für die Verwendung mit Microsoft-Diensten eingerichtet.
+Nachdem Sie diese Datensätze bei Namecheap hinzugefügt haben, wird Ihre Domäne für die Arbeit mit Microsoft-Diensten eingerichtet.
   
 > [!NOTE]
 > Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
@@ -53,40 +53,40 @@ Führen Sie die folgenden Schritte aus.
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. Klicken Sie auf der **Start** Seite unter **Konto** auf **Domänenliste** in der Dropdownliste. 
+2. Wählen Sie **auf** der Seite Ziel unter **Konto** die Option **Domänenliste** in der Dropdownliste aus. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. Suchen Sie auf der Seite **Domänenliste** den Namen der Domäne, die Sie bearbeiten möchten, und wählen Sie dann **Verwalten** aus.
+3. Suchen Sie **auf der** Seite Domänenliste nach dem Namen der Domäne, die Sie bearbeiten möchten, und wählen Sie dann **Verwalten aus.**
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. Wählen Sie **Advanced DNS** aus.
+4. Wählen **Sie Erweitertes DNS aus.**
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. Wählen Sie im Abschnitt **Host Einträge** die Option **neuen Datensatz hinzufügen** aus.
+5. Wählen Sie **im Abschnitt HOST RECORDS** die Option NEUEN EINTRAG HINZUFÜGEN **aus.**
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
 6. Wählen Sie in der Dropdownliste **Type** den Eintrag **TXT Record** aus.
     
     > [!NOTE]
-    > Die Dropdownliste **Typ** wird automatisch angezeigt, wenn Sie **neuen Datensatz hinzufügen** auswählen. 
+    > Die **Dropdownliste** Typ wird automatisch angezeigt, wenn Sie **NEUEN EINTRAG HINZUFÜGEN auswählen.** 
   
     ![Namecheap-BP-Verify-1-1](../../media/a5b40973-19b5-4c32-8e1b-1521aa971836.png)
   
 7. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
-    (Wählen Sie in der Dropdownliste den Wert **TTL** aus.) 
+    (Wählen Sie in der Dropdownliste den Wert für **TTL** aus.) 
     
     |**Type**|**Host**|**Wert**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/>**Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihre spezifischen **Ziel-oder Punkt-zu-Adresse** -Werte aus der Tabelle.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
+    |TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/>**Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen „Ziel“- oder **Verweist auf die Adresse**-Wert aus der Tabelle.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
        
-    ![NameCheap-BP-Verify-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
+    ![Namecheap-BP-Verify-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
-8. Wählen Sie das Kontrollkästchen **Änderungen speichern** (Häkchen) aus. 
+8. Wählen Sie **das Steuerelement Änderungen speichern** (Kontrollkästchen) aus. 
     
     ![Namecheap-BP-Verify-1-3](../../media/b48d2c67-66b5-4aa4-8e59-0c764f236fac.png)
   
@@ -123,15 +123,15 @@ Führen Sie die folgenden Schritte aus.
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. Klicken Sie auf der **Start** Seite unter **Konto** auf **Domänenliste** in der Dropdownliste. 
+2. Wählen Sie **auf** der Seite Ziel unter **Konto** die Option **Domänenliste** in der Dropdownliste aus. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. Suchen Sie auf der Seite **Domänenliste** den Namen der Domäne, die Sie bearbeiten möchten, und wählen Sie dann **Verwalten** aus.
+3. Suchen Sie **auf der** Seite Domänenliste nach dem Namen der Domäne, die Sie bearbeiten möchten, und wählen Sie dann **Verwalten aus.**
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. Wählen Sie **Advanced DNS** aus.
+4. Wählen **Sie Erweitertes DNS aus.**
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
@@ -141,38 +141,38 @@ Führen Sie die folgenden Schritte aus.
     
     ![Namecheap-BP-Configure-2-1](../../media/40199e2c-42cf-4c3f-9936-3cbe5d4e81a4.png)
   
-6. Wählen Sie **neuen Datensatz hinzufügen** aus.
+6. Wählen **Sie Neuen Datensatz hinzufügen aus.**
     
-    ![NameCheap-BP-configure-2-2-1](../../media/8d169b81-ba48-4d51-84ea-a08fa1616457.png)
+    ![Namecheap-BP-Configure-2-2-1](../../media/8d169b81-ba48-4d51-84ea-a08fa1616457.png)
   
 7. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
-    (Das Feld **Priority** ist das unbenannte Feld rechts neben dem Feld **Value**. Wählen Sie in der Dropdownliste den Wert **TTL** aus.) 
+    (Das Feld **Priority** ist das unbenannte Feld rechts neben dem Feld **Value**. Wählen Sie **den TTL-Wert** aus der Dropdownliste aus.) 
     
     |**Type**|**Host**|**Value**|**Priorität**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX-Eintrag  <br/> |@  <br/> |\<*domain-key*\>. Mail.Protection.Outlook.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> **Hinweis:** Holen Sie sich Ihr  *\<domain-key\>*  Microsoft-Konto.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |30 min  <br/> |
+    |MX-Eintrag  <br/> |@  <br/> |\<*domain-key*\>.mail.protection.outlook.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> **Hinweis:** Erhalten Sie Ihren *\<domain-key\>* über Ihr Microsoft-Konto.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](../setup/domains-faq.yml) <br/> |30 min  <br/> |
        
-    ![NameCheap-BP-configure-2-2-2](../../media/f3b76d62-5022-48c1-901b-8615a8571309.png)
+    ![Namecheap-BP-Configure-2-2-2](../../media/f3b76d62-5022-48c1-901b-8615a8571309.png)
   
-8. Wählen Sie das Kontrollkästchen **Änderungen speichern** (Häkchen) aus. 
+8. Wählen Sie **das Steuerelement Änderungen speichern** (Kontrollkästchen) aus. 
     
     ![Namecheap-BP-Configure-2-3](../../media/ef4e3112-36d2-47c8-a478-136a565dd71d.png)
   
 9. Wenn andere MX-Einträge vorhanden sind, führen Sie die beiden folgenden Schritte aus, um diese zu entfernen:
     
-    Wählen Sie zuerst das **Löschsymbol** (Papierkorb) für den Datensatz aus, den Sie entfernen möchten. 
+    Wählen Sie zunächst das **Symbol Löschen** (Papierkorb) für den Datensatz aus, den Sie entfernen möchten. 
     
     ![Namecheap-BP-Configure-2-4](../../media/7a7a751f-29c2-495f-8f55-98ca37ce555a.png)
   
-    Klicken Sie zweitens auf **Ja** , um den Löschvorgang zu bestätigen. 
+    Wählen Sie dann **Ja aus,** um den Löschvorgang zu bestätigen. 
     
     ![Namecheap-BP-Configure-2-5](../../media/85ebc0c7-8787-43ee-9e7b-647375b3345c.png)
   
     Entfernen Sie alle MX-Einträge mit Ausnahme des Eintrags, den Sie zuvor in diesem Verfahren hinzugefügt haben.
 
   
-## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Hinzufügen der sechs CNAME-Einträge, die für Microsoft erforderlich sind
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Hinzufügen der für Microsoft erforderlichen sechs CNAME-Einträge
 <a name="BKMK_add_CNAME"> </a>
 
 Führen Sie die folgenden Schritte aus.
@@ -181,26 +181,26 @@ Führen Sie die folgenden Schritte aus.
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. Klicken Sie auf der **Start** Seite unter **Konto** auf **Domänenliste** in der Dropdownliste. 
+2. Wählen Sie **auf** der Seite Ziel unter **Konto** die Option **Domänenliste** in der Dropdownliste aus. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. Suchen Sie auf der Seite **Domänenliste** den Namen der Domäne, die Sie bearbeiten möchten, und wählen Sie dann **Verwalten** aus.
+3. Suchen Sie **auf der** Seite Domänenliste nach dem Namen der Domäne, die Sie bearbeiten möchten, und wählen Sie dann **Verwalten aus.**
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. Wählen Sie **Advanced DNS** aus.
+4. Wählen **Sie Erweitertes DNS aus.**
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. Wählen Sie im Abschnitt **Host Einträge** die Option **neuen Datensatz hinzufügen** aus.
+5. Wählen Sie **im Abschnitt HOST RECORDS** die Option NEUEN EINTRAG HINZUFÜGEN **aus.**
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
 6. Wählen Sie in der Dropdownliste **Type** den Eintrag **CNAME Record** aus.
     
     > [!NOTE]
-    > Die Dropdownliste **Typ** wird automatisch angezeigt, wenn Sie **neuen Datensatz hinzufügen** auswählen. 
+    > Die **Dropdownliste** Typ wird automatisch angezeigt, wenn Sie **NEUEN EINTRAG HINZUFÜGEN auswählen.** 
   
     ![Namecheap-BP-Configure-3-1](../../media/0898f3b2-06ab-4364-a86a-a603a25b39f4.png)
   
@@ -214,59 +214,59 @@ Führen Sie die folgenden Schritte aus.
     |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |3600  <br/> |
     |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |3600  <br/> |
        
-    ![NameCheap-BP-configure-3-2](../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png)
+    ![Namecheap-BP-Configure-3-2](../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png)
   
-8. Wählen Sie das Kontrollkästchen **Änderungen speichern** (Häkchen) aus. 
+8. Wählen Sie **das Steuerelement Änderungen speichern** (Kontrollkästchen) aus. 
     
     ![Namecheap-BP-Configure-3-3](../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png)
   
-9. Verwenden Sie die vorherigen vier Schritte und die Werte aus den anderen fünf Zeilen in der Tabelle, und fügen Sie jeden der anderen fünf CNAME-Einträge hinzu.
+9. Fügen Sie mithilfe der vorherigen vier Schritte und den Werten aus den anderen fünf Zeilen in der Tabelle jeweils einen der anderen fünf #A0 hinzu.
 
   
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Hinzufügen eines TXT-Eintrags für SPF, um E-Mail-Spam zu verhindern
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, Fügen Sie stattdessen die erforderlichen Microsoft-Werte zum aktuellen Datensatz hinzu, sodass Sie einen  *einzelnen*  SPF-Eintrag haben, der beide Wertegruppen enthält. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, sondern fügen Sie die erforderlichen Microsoft-Werte dem aktuellen Eintrag hinzu. Damit verfügen Sie über einen *einzigen* SPF-Eintrag, in dem beide Wertemengen enthalten sind. 
 
 Führen Sie die folgenden Schritte aus.
   
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f) zu Ihrer Domänenseite bei Namecheap. Sie werden aufgefordert, sich zuerst anzumelden ("Sign in") und dann den Vorgang fortzusetzen ("Continue").
     
-2. Klicken Sie auf der **Start** Seite unter **Konto** auf **Domänenliste** in der Dropdownliste. 
+2. Wählen Sie **auf** der Seite Ziel unter **Konto** die Option **Domänenliste** in der Dropdownliste aus. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. Suchen Sie auf der Seite **Domänenliste** den Namen der Domäne, die Sie bearbeiten möchten, und wählen Sie dann **Verwalten** aus.
+3. Suchen Sie **auf der** Seite Domänenliste nach dem Namen der Domäne, die Sie bearbeiten möchten, und wählen Sie dann **Verwalten aus.**
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. Wählen Sie **Advanced DNS** aus.
+4. Wählen **Sie Erweitertes DNS aus.**
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. Wählen Sie im Abschnitt **Host Einträge** die Option **neuen Datensatz hinzufügen** aus.
+5. Wählen Sie **im Abschnitt HOST RECORDS** die Option NEUEN EINTRAG HINZUFÜGEN **aus.**
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
 6. Wählen Sie in der Dropdownliste **Type** den Eintrag **TXT Record** aus.
     
     > [!NOTE]
-    > Die Dropdownliste **Typ** wird automatisch angezeigt, wenn Sie **neuen Datensatz hinzufügen** auswählen. 
+    > Die **Dropdownliste** Typ wird automatisch angezeigt, wenn Sie **NEUEN EINTRAG HINZUFÜGEN auswählen.** 
   
     ![Namecheap-BP-Configure-4-1](../../media/c5d1fddb-28b5-48ec-91c9-3e5d3955ac80.png)
   
 7. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
-    (Wählen Sie in der Dropdownliste den Wert **TTL** aus.) 
+    (Wählen Sie in der Dropdownliste den Wert für **TTL** aus.) 
     
     |**Type**|**Host**|**Wert**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |30 min  <br/> |
        
-    ![NameCheap-BP-configure-4-2](../../media/ea0829f1-990b-424b-b26e-9859468318dd.png)
+    ![Namecheap-BP-Configure-4-2](../../media/ea0829f1-990b-424b-b26e-9859468318dd.png)
   
-8. Wählen Sie das Kontrollkästchen **Änderungen speichern** (Häkchen) aus. 
+8. Wählen Sie **das Steuerelement Änderungen speichern** (Kontrollkästchen) aus. 
     
     ![Namecheap-BP-Configure-4-3](../../media/f2846c36-ace3-43d8-be5d-a65e2c267619.png)
   
@@ -277,26 +277,26 @@ Führen Sie die folgenden Schritte aus.
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. Klicken Sie auf der **Start** Seite unter **Konto** auf **Domänenliste** in der Dropdownliste. 
+2. Wählen Sie **auf** der Seite Ziel unter **Konto** die Option **Domänenliste** in der Dropdownliste aus. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. Suchen Sie auf der Seite **Domänenliste** den Namen der Domäne, die Sie bearbeiten möchten, und wählen Sie dann **Verwalten** aus.
+3. Suchen Sie **auf der** Seite Domänenliste nach dem Namen der Domäne, die Sie bearbeiten möchten, und wählen Sie dann **Verwalten aus.**
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. Wählen Sie **Advanced DNS** aus.
+4. Wählen **Sie Erweitertes DNS aus.**
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. Wählen Sie im Abschnitt **Host Einträge** die Option **neuen Datensatz hinzufügen** aus.
+5. Wählen Sie **im Abschnitt HOST RECORDS** die Option NEUEN EINTRAG HINZUFÜGEN **aus.**
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
 6. Wählen Sie in der Dropdownliste **Type** den Eintrag **SRV Record** aus.
     
     > [!NOTE]
-    > Die Dropdownliste **Typ** wird automatisch angezeigt, wenn Sie **neuen Datensatz hinzufügen** auswählen. 
+    > Die **Dropdownliste** Typ wird automatisch angezeigt, wenn Sie **NEUEN EINTRAG HINZUFÜGEN auswählen.** 
   
     ![Namecheap-BP-Configure-5-1](../../media/fd55cd7c-2243-4de1-8d39-2c3f7ea3ae51.png)
   
@@ -304,12 +304,12 @@ Führen Sie die folgenden Schritte aus.
     
     |**Service**|**Protocol**|**Priority**|**Weight**|**Port**|**Target**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |30 min  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |30 min  <br/> |
+    |_sip  <br/> |_tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |30 min  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |30 min  <br/> |
        
-    ![NameCheap-BP-configure-5-2](../../media/ff9566ea-0096-4b7f-873c-027080a23b56.png)
+    ![Namecheap-BP-Configure-5-2](../../media/ff9566ea-0096-4b7f-873c-027080a23b56.png)
   
-8. Wählen Sie das Kontrollkästchen **Änderungen speichern** (Häkchen) aus. 
+8. Wählen Sie **das Steuerelement Änderungen speichern** (Kontrollkästchen) aus. 
     
     ![Namecheap-BP-Configure-5-3](../../media/48a8dee4-c66d-449d-8759-9e9784c82b13.png)
   
@@ -319,4 +319,3 @@ Führen Sie die folgenden Schritte aus.
 > Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
   
 
-  

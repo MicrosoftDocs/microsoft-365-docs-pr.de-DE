@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie, wie die Zustellungspools zum Schutz der Reputation von E-Mail-Servern in den Microsoft 365-Rechenzentren verwendet werden.
+description: Erfahren Sie, wie die Übermittlungspools zum Schutz der Reputation von E-Mail-Servern in den Microsoft 365-Rechenzentren verwendet werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 89aac1478d3e5840df4379b9f49832b79d0e133a
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 5b35474c4d2b00c70e02f6f0127c3191a1e459bc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289805"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910726"
 ---
 # <a name="outbound-delivery-pools"></a>Pools für die Zustellung ausgehender Nachrichten
 
@@ -33,37 +33,37 @@ ms.locfileid: "50289805"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-E-Mail-Server in den Microsoft 365-Rechenzentren können vorübergehend keine Spamnachrichten senden. Beispiel: Schadsoftware oder böswilliger Spamangriff in einer lokalen E-Mail-Organisation, die ausgehende E-Mails über Microsoft 365 sendet oder Microsoft 365-Konten gefährdet. Angreifer versuchen auch, die Erkennung zu vermeiden, indem sie Nachrichten über die Microsoft 365-Weiterleitung weiterleiten.
+E-Mail-Server in den Microsoft 365-Rechenzentren können sich vorübergehend für das Senden von Spam entschuldigen. Beispielsweise ein Schadsoftware- oder bösartiger Spamangriff in einer lokalen E-Mail-Organisation, die ausgehende E-Mails über Microsoft 365 sendet, oder gefährdete Microsoft 365-Konten. Angreifer versuchen außerdem, die Erkennung zu vermeiden, indem Sie Nachrichten über die Microsoft 365-Weiterleitung weiterleiten.
 
-Diese Szenarien können dazu führen, dass die IP-Adresse der betroffenen Microsoft 365-Rechenzentrumsserver in Sperrlisten von Drittanbietern angezeigt wird. Ziel-E-Mail-Organisationen, die diese Sperrlisten verwenden, lehnen E-Mails von diesen Nachrichtenquellen ab.
+Diese Szenarien können dazu führen, dass die IP-Adresse der betroffenen Microsoft 365-Rechenzentrumsserver in Blocklisten von Drittanbietern angezeigt wird. Ziel-E-Mail-Organisationen, die diese Sperrlisten verwenden, lehnen E-Mails aus diesen Nachrichtenquellen ab.
 
-## <a name="high-risk-delivery-pool"></a>Pool für besonders riskante Zustellung
-Um dies zu verhindern, werden alle ausgehenden Nachrichten von Microsoft 365-Rechenzentrumsservern, [](configure-the-outbound-spam-policy.md) die als Spam ermittelt wurden oder die Sendegrenzwerte des Diensts oder der Richtlinien für ausgehende Spam überschreiten, über den Pool für besonders riskante Zustelldienste gesendet. [](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)
+## <a name="high-risk-delivery-pool"></a>Pool mit hohem Risiko
+Um dies zu verhindern, werden alle ausgehenden Nachrichten von Microsoft 365-Rechenzentrumsservern, [](configure-the-outbound-spam-policy.md) die als Spam festgelegt sind oder die Sendegrenzwerte des Diensts oder ausgehender Spamrichtlinien überschreiten, über den Pool mit hohem Risiko gesendet. [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)
 
-Der Pool für besonders riskante Zustellungen ist ein separater IP-Adresspool für ausgehende E-Mails, der nur zum Senden von Nachrichten niedriger Qualität (z. B. Spam und [Rückscatter) verwendet wird.](backscatter-messages-and-eop.md) Die Verwendung des Pools für besonders riskante Zustellung verhindert, dass der normale IP-Adresspool für ausgehende E-Mails Spam sendet. Der normale IP-Adresspool für ausgehende E-Mails behält die "hohe Qualität"-Nachricht-Reputation bei, wodurch die Wahrscheinlichkeit reduziert wird, dass diese IP-Adresse in den Listen blockierter IP-Adressen angezeigt wird.
+Der Pool mit hohem Risiko ist ein separater IP-Adresspool für ausgehende E-Mails, der nur zum Senden von Nachrichten niedriger Qualität (z. B. Spam und [Backscatter) verwendet wird.](backscatter-messages-and-eop.md) Die Verwendung des Pools für die Zustellung mit hohem Risiko verhindert, dass der normale IP-Adresspool für ausgehende E-Mails Spam sendet. Der normale IP-Adresspool für ausgehende E-Mails behält die Reputation bei, die Nachrichten mit hoher Qualität sendet, wodurch die Wahrscheinlichkeit reduziert wird, dass diese IP-Adresse in IP-Sperrlisten angezeigt wird.
 
-Die sehr reale Möglichkeit, dass die IP-Adressen im Pool für besonders riskante Zustellungen in Listen blockierter IP-Adressen platziert werden, ist jedoch entwurfsweise. Die Zustellung an die vorgesehenen Empfänger ist nicht garantiert, da viele E-Mail-Organisationen keine Nachrichten aus dem Pool für besonders riskante Zustellnachrichten akzeptieren.
+Die sehr reale Möglichkeit, dass IP-Adressen im Pool mit hohem Risiko in IP-Sperrlisten platziert werden, bleibt, aber dies ist entwurfsweise. Die Zustellung an die vorgesehenen Empfänger ist nicht garantiert, da viele E-Mail-Organisationen keine Nachrichten aus dem Pool mit hohem Risiko annehmen.
 
-Weitere Informationen finden Sie unter [Steuern ausgehender Spamnachrichten.](outbound-spam-controls.md)
+Weitere Informationen finden Sie unter [Steuern von ausgehenden Spamnachrichten.](outbound-spam-controls.md)
 
 > [!NOTE]
-> Nachrichten, bei denen die Quell-E-Mail-Domäne keinen A-Eintrag und keinen im öffentlichen DNS definierten MX-Eintrag hat, werden immer über den Pool für besonders riskante Übermittlungen geroutet, unabhängig von ihrer Spam- oder Sendegrenzwert-Disposition.
+> Nachrichten, bei denen die Quell-E-Mail-Domäne keinen A-Eintrag und keinen im öffentlichen DNS definierten MX-Eintrag hat, werden immer über den Pool mit hohem Risiko geroutet, unabhängig von ihrer Spam- oder Sendelimitdisposition.
 
 ### <a name="bounce-messages"></a>Unzustellbarkeitsnachrichten
 
-Der Pool für ausgehende Besonders riskante Zustellung verwaltet die Zustellung für alle Unzustellbarkeitsberichte (auch bekannt als Unzustellbarkeitsberichte, Unzustellbarkeitsnachrichten, Benachrichtigungen über den Zustellungsstatus oder DSNs).
+Der Pool für ausgehende Zustellung mit hohem Risiko verwaltet die Zustellung für alle Unzustellbarkeitsberichte (auch als Unzustellbarkeitsberichte, Unzustellbarkeitsnachrichten, Zustellungsstatusbenachrichtigungen oder DSNs bekannt).
 
-Mögliche Ursachen für einen Anstieg der Unbndrs sind:
+Mögliche Ursachen für einen Anstieg von Unerschbungs- und
 
 - Eine Spoofingkampagne, die sich auf einen der Kunden auswirkt, die den Dienst verwenden.
-- Ein Verzeichnis-Harvest-Angriff.
+- Ein Verzeichnisleseangriff.
 - Ein Spamangriff.
 - Ein nicht autorisierter E-Mail-Server.
 
-All diese Probleme können dazu führen, dass die Anzahl der unbndrs, die vom Dienst verarbeitet werden, plötzlich erhöht wird. Viele Male scheinen diese NDRs anderen E-Mail-Servern und -Diensten (auch als Rückläufer bekannt) Spam zu _[sein.](backscatter-messages-and-eop.md)_
+All diese Probleme können zu einer plötzlichen Zunahme der Anzahl von Unntkräften führen, die vom Dienst verarbeitet werden. Viele Male scheinen diese Unntsprechenden Spam für andere E-Mail-Server und -Dienste (auch als _[Backscatter bekannt) zu sein.](backscatter-messages-and-eop.md)_
 
 ## <a name="relay-pool"></a>Relaypool
 
-Nachrichten, die von Microsoft 365 weitergeleitet oder weitergeleitet werden, werden über einen speziellen Relaypool gesendet, da das endgültige Ziel Microsoft 365 nicht als tatsächlichen Absender betrachten sollte. Es ist auch wichtig für uns, diesen Datenverkehr zu isolieren, da es legitime und ungültige Szenarien für das automatischeForwarding oder die Weiterleitung von E-Mails aus Microsoft 365 gibt. Ähnlich wie beim Pool für besonders riskante Zustellung wird ein separater IP-Adresspool für relayierte E-Mails verwendet. Dieser Adresspool wird nicht veröffentlicht, da er sich häufig ändern kann.
+Nachrichten, die von Microsoft 365 weitergeleitet oder weitergeleitet werden, werden über einen speziellen Relaypool gesendet, da das endgültige Ziel Microsoft 365 nicht als tatsächlichen Absender betrachten sollte. Es ist auch wichtig, dass wir diesen Datenverkehr isolieren, da es legitime und ungültige Szenarien für die automatische Weiterleitung oder das Relay von E-Mails aus Microsoft 365 gibt. Ähnlich wie beim Pool mit hohem Risiko wird ein separater IP-Adresspool für relayierte E-Mails verwendet. Dieser Adresspool wird nicht veröffentlicht, da er sich häufig ändern kann.
 
-Microsoft 365 muss überprüfen, ob der ursprüngliche Absender legitim ist, damit wir die weitergeleitete Nachricht sicher zu senden können. Dazu muss die E-Mail-Authentifizierung (SPF, DKIM und DMARC) übergeben werden, wenn die Nachricht an uns gesendet wird. In Fällen, in denen wir den Absender authentifizieren können, verwenden wir sender rewriting, um dem Empfänger zu helfen, zu wissen, dass die weitergeleitete Nachricht von einer vertrauenswürdigen Quelle stammt. Weitere Informationen dazu, wie dies funktioniert und was Sie tun können, um sicherzustellen, dass die sendende Domäne die Authentifizierung im [Sender Rewriting Scheme (SRS)](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme)besteht, finden Sie hier.
+Microsoft 365 muss überprüfen, ob der ursprüngliche Absender legitim ist, damit wir die weitergeleitete Nachricht sicher senden können. Dazu muss die E-Mail-Authentifizierung (SPF, DKIM und DMARC) übergeben werden, wenn die Nachricht an uns kommt. In Fällen, in denen wir den Absender authentifizieren können, verwenden wir Sender Rewriting, um dem Empfänger zu helfen, zu wissen, dass die weitergeleitete Nachricht von einer vertrauenswürdigen Quelle stammt. Weitere Informationen dazu, wie dies funktioniert und was Sie tun können, um sicherzustellen, dass die sendende Domäne die Authentifizierung übergibt, finden Sie unter [Sender Rewriting Scheme (SRS).](/office365/troubleshoot/antispam/sender-rewriting-scheme)

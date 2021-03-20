@@ -14,69 +14,69 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Wie Contoso IDaaS (Identity as a Service) nutzt und eine cloudbasierte Authentifizierung für seine Mitarbeiter und eine Verbundauthentifizierung für Partner und Kunden bereitstellt.
-ms.openlocfilehash: dea0f53ef1c3fdc2ea32256303c6120c614c904d
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: accd60f6699e7ebf04963213128d1ca1ffc8f7fe
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754641"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911072"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identität für die Contoso Corporation
 
-Microsoft stellt Identity as a Service (IDaaS) in seinen Cloud-angeboten über Azure Active Directory (Azure AD) bereit. Um Microsoft 365 für Unternehmen zu verabschieden, musste die Contoso-IDaaS-Lösung Ihren lokalen Identitätsanbieter verwenden und die Verbundauthentifizierung mit Ihren vorhandenen vertrauenswürdigen Drittanbieter-Identitätsanbietern einschließen.
+Microsoft stellt Identity as a Service (IDaaS) über seine Cloudangebote über Azure Active Directory (Azure AD) bereit. Um Microsoft 365 enterprise zu übernehmen, musste die Contoso IDaaS-Lösung ihren lokalen Identitätsanbieter verwenden und die Verbundauthentifizierung mit ihren vorhandenen vertrauenswürdigen Identitätsanbietern von Drittanbietern umfassen.
 
-## <a name="the-contoso-active-directory-domain-services-forest"></a>Die Contoso Active Directory-Domänendienste Gesamtstruktur
+## <a name="the-contoso-active-directory-domain-services-forest"></a>Die Gesamtstruktur "Contoso Active Directory Domain Services"
 
-Contoso verwendet eine einzelne Active Directory-Domänendienste (AD DS) Gesamtstruktur für Contoso \. com mit sieben Unterdomänen, eine für jede Region der Welt. Die Zentrale, die Regionalstellen und die Zweigstellen enthalten Domänencontroller für die lokale Authentifizierung und Autorisierung.
+Contoso verwendet eine einzelne Active Directory Domain Services (AD DS)-Gesamtstruktur für contoso com mit sieben Unterdomänen, eine für jede Region \. der Welt. Die Zentrale, die Regionalstellen und die Zweigstellen enthalten Domänencontroller für die lokale Authentifizierung und Autorisierung.
 
-Hier ist die Contoso-Gesamtstruktur mit regionalen Domänen für die verschiedenen Teile der Welt, die regionale Hubs enthalten.
+Hier sehen Sie die Contoso-Gesamtstruktur mit regionalen Domänen für die verschiedenen Teile der Welt, die regionale Hubs enthalten.
 
 ![Gesamtstruktur und Domänen von Contoso weltweit](../media/contoso-identity/contoso-identity-fig1.png)
  
-Contoso hat beschlossen, die Konten und Gruppen in der Contoso \. -com-Gesamtstruktur zur Authentifizierung und Autorisierung für seine Microsoft 365-Arbeitslasten und-Dienste zu verwenden.
+Contoso hat beschlossen, die Konten und Gruppen in der contoso com-Gesamtstruktur für die Authentifizierung und Autorisierung für seine \. Microsoft 365-Workloads und -Dienste zu verwenden.
 
-## <a name="the-contoso-federated-authentication-infrastructure"></a>Die Contoso-Verbund Authentifizierungsinfrastruktur
+## <a name="the-contoso-federated-authentication-infrastructure"></a>Die Contoso-Verbundauthentifizierungsinfrastruktur
 
 Contoso lässt Folgendes zu:
 
-- Kunden, Ihre Microsoft-, Facebook-oder Google Mail-Konten zu verwenden, um sich bei der öffentlichen Website des Unternehmens anzumelden.
-- Kreditoren und Partner, die ihre LinkedIn-, Salesforce-oder Google Mail-Konten verwenden, um sich beim Partner-Extranet des Unternehmens anzumelden.
+- Kunden können ihre Microsoft-, Facebook- oder Google Mail-Konten verwenden, um sich bei der öffentlichen Website des Unternehmens zu anmelden.
+- Anbieter und Partner können ihre LinkedIn-, Salesforce- oder Google Mail-Konten verwenden, um sich beim Partner-Extranet des Unternehmens zu anmelden.
 
-Hier ist die Contoso-DMZ mit einer öffentlichen Website, einem Partner-Extranet und einer Reihe von Active Directory-Verbunddienste-Servern (AD FS). Die DMZ ist mit dem Internet verbunden, das Kunden, Partner und Internetdienste enthält.
+Hier sehen Sie die Contoso-DMZ mit einer öffentlichen Website, einem Partner-Extranet und einer Reihe von Active Directory Federation Services (AD FS)-Servern. Die DMZ ist mit dem Internet verbunden, das Kunden, Partner und Internetdienste enthält.
 
 ![Contoso-Unterstützung für die Verbundauthentifizierung für Kunden und Partner](../media/contoso-identity/contoso-identity-fig2.png)
  
-AD FS-Server in der DMZ erleichtern die Authentifizierung von Kunden Anmeldeinformationen durch ihre Identitätsanbieter für den Zugriff auf die öffentliche Website und Partner Anmeldeinformationen für den Zugriff auf das Partner-Extranet.
+AD FS-Server in der DMZ erleichtern die Authentifizierung von Kundenanmeldeinformationen durch ihre Identitätsanbieter für den Zugriff auf die öffentliche Website und Partneranmeldeinformationen für den Zugriff auf das Partner-Extranet.
 
-Contoso hat beschlossen, diese Infrastruktur beizubehalten und für die Authentifizierung von Kunden und Partnern zu reservieren. Die Identitätsarchitekten bei Contoso befassen sich mit der Konvertierung dieser Infrastruktur in die Azure AD-Lösungen [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) und [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles).
+Contoso hat beschlossen, diese Infrastruktur zu behalten und sie der Kunden- und Partnerauthentifizierung zu widmen. Die Identitätsarchitekten bei Contoso befassen sich mit der Konvertierung dieser Infrastruktur in die Azure AD-Lösungen [B2B](/azure/active-directory/b2b/hybrid-organizations) und [B2C](/azure/active-directory-b2c/solution-articles).
 
 ## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>Hybrididentität mit Kennwort-Hash-Synchronisierung für cloudbasierte Authentifizierung
 
-Contoso wollte seine lokale AD DS Gesamtstruktur für die Authentifizierung von Microsoft 365 Cloud-Ressourcen verwenden. Sie hat sich für die Verwendung der Kennworthash Synchronisierung (PHS) entschieden.
+Contoso wollte seine lokale AD DS-Gesamtstruktur für die Authentifizierung bei Microsoft 365-Cloudressourcen verwenden. Sie hat sich für die Verwendung der Kennworthashsynchronisierung (Password Hash Synchronization, PHS) entschieden.
 
-PHS synchronisiert die lokale AD DS Gesamtstruktur mit dem Azure AD Mandanten Ihres Microsoft 365 for Enterprise-Abonnements und kopiert Benutzer-und Gruppenkonten sowie eine gehashte Version der Kennwörter für Benutzerkonten.
+PHS synchronisiert die lokale AD #A0 mit dem Azure #A1 ihres Microsoft 365 #A1 und kopiert Benutzer- und Gruppenkonten sowie eine Hashversion von Benutzerkontenkennwörtern.
 
-Um die Verzeichnissynchronisierung durchführen zu können, hat Contoso das Azure AD Connect-Tool auf einem Server in seinem Pariser Datencenter bereitgestellt.
+Für die Verzeichnissynchronisierung hat Contoso das Azure AD Connect-Tool auf einem Server im Pariser Rechenzentrum bereitgestellt.
 
-Hier ist der Server, auf dem Azure AD Connect die Contoso AD DS-Gesamtstruktur für Änderungen abruft und diese Änderungen dann mit dem Azure AD Mandanten synchronisiert.
+Hier ist der Server, auf dem Azure AD Connect ausgeführt wird, der die Contoso AD DS-Gesamtstruktur auf Änderungen abruft und diese Änderungen dann mit dem Azure AD-Mandanten synchronisiert.
 
-![Die Contoso-Verzeichnis Synchronisierungs Infrastruktur für PHS](../media/contoso-identity/contoso-identity-fig4.png)
+![Die Contoso PHS-Verzeichnissynchronisierungsinfrastruktur](../media/contoso-identity/contoso-identity-fig4.png)
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>Richtlinien für bedingten Zugriff für Identitäts- und Gerätezugriff
 
-Contoso hat eine Gruppe von Azure AD- und Intune-[Richtlinien für bedingten Zugriff](identity-access-policies.md) für drei Schutzebenen erstellt:
+Contoso hat eine Gruppe von Azure AD- und Intune-[Richtlinien für bedingten Zugriff](../security/office-365-security/identity-access-policies.md) für drei Schutzebenen erstellt:
 
-- *Basis* Schutz gilt für alle Benutzerkonten.
-- *Vertrauliche* Schutzmaßnahmen gelten für Führungskräfte und Führungskräfte.
-- *Streng geregelte* Schutzmaßnahmen gelten für bestimmte Benutzer in den Abteilungen Finanzen, Recht und Forschung, die Zugriff auf streng geregelte Daten haben.
+- *Grundlegende* Schutzbestimmungen gelten für alle Benutzerkonten.
+- *Vertrauliche* Schutzmaßnahmen gelten für leitende Führungskräfte und Führungskräfte.
+- *Streng regulierte* Schutzbestimmungen gelten für bestimmte Benutzer in den Finanz-, Rechts- und Forschungsabteilungen, die Zugriff auf streng regulierte Daten haben.
 
-Im folgenden finden Sie eine Reihe von Contoso-Identitäts-und Geräte bedingten Zugriffsrichtlinien.
+Hier sehen Sie den resultierenden Satz von Richtlinien für den bedingten Zugriff für Contoso-Identität und Geräte.
 
 ![Identitäts- und gerätebasierte Richtlinien für bedingten Zugriff](../media/contoso-identity/contoso-identity-fig5.png)
  
 ## <a name="next-step"></a>Nächster Schritt
 
-Erfahren Sie, wie Contoso seine Microsoft Endpoint Configuration Manager-Infrastruktur für die [Bereitstellung und Verwaltung von Windows 10 Enterprise](contoso-win10.md) in seiner Organisation verwendet.
+Erfahren Sie, wie Contoso seine Microsoft Endpoint Configuration Manager-Infrastruktur verwendet, um [Windows 10 Enterprise](contoso-win10.md) in der gesamten Organisation zu bereitstellen und auf dem aktuellen Stand zu halten.
 
 ## <a name="see-also"></a>Siehe auch
 

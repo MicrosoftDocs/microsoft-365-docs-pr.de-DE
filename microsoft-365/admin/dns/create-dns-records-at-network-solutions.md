@@ -1,5 +1,5 @@
 ---
-title: Erstellen von DNS-Einträgen bei Netzwerklösungen für Microsoft
+title: Erstellen von DNS-Einträgen bei Network Solutions for Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,15 +20,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
-description: Hier erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter Netzwerklösungen für Microsoft einrichten.
-ms.openlocfilehash: 9cb403bb8b469f2d7f4e6138ba5833120ea53585
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für E-Mails, Skype for Business Online und andere Dienste unter Network Solutions for Microsoft einrichten.
+ms.openlocfilehash: f25e21037695c99489adc9038bf70629a103ec7a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657791"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910138"
 ---
-# <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Erstellen von DNS-Einträgen bei Netzwerklösungen für Microsoft
+# <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Erstellen von DNS-Einträgen bei Network Solutions for Microsoft
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
@@ -38,7 +38,7 @@ Das sind die wichtigsten hinzuzufügenden Einträge. Führen Sie die folgenden S
   
 - [Hinzufügen eines TXT-Eintrags zur Überprüfung](#add-a-txt-record-for-verification)
     
-- [Fügen Sie einen MX-Eintrag hinzu, damit E-Mails für Ihre Domäne an Microsoft geleitet werden.](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
+- [Hinzufügen eines MX-Eintrags, damit E-Mails für Ihre Domäne an Microsoft geleitet werden](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
 - [Hinzufügen der für Microsoft erforderlichen CNAME-Einträge](#add-the-cname-records-that-are-required-for-microsoft)
     
@@ -46,7 +46,7 @@ Das sind die wichtigsten hinzuzufügenden Einträge. Führen Sie die folgenden S
     
 - [Hinzufügen der für Microsoft erforderlichen zwei SRV-Einträge](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-Nachdem Sie diese Einträge bei Netzwerklösungen hinzugefügt haben, ist Ihre Domäne für die Verwendung mit Microsoft-Diensten eingerichtet.
+Nachdem Sie diese Datensätze bei Network Solutions hinzugefügt haben, wird Ihre Domäne für die Arbeit mit Microsoft-Diensten eingerichtet.
   
 
   
@@ -66,7 +66,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 1. Im ersten Schritt navigieren Sie über [diesen Link](https://www.networksolutions.com/manage-it) zu Ihrer Domänenseite bei Network Solutions. Sie werden aufgefordert, sich anzumelden.
     
     > [!IMPORTANT]
-    > Bevor Sie die Schaltfläche **Anmeldung** auswählen, wählen Sie zuerst **Verwalten von Domänennamen** in der Dropdownliste **Anmelden in:** aus. 
+    > Bevor Sie die Schaltfläche **Anmeldung** auswählen, wählen Sie zunächst **in** der Dropdownliste **Anmelden in:** meine Domänennamen verwalten aus. 
   
     ![Wählen Sie "Manage My Domain Names" aus, und melden Sie sich bei "Network Solutions" an.](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -74,35 +74,35 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     ![Aktivieren Sie das Kontrollkästchen für Ihre Domäne.](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Wählen Sie **DNS bearbeiten** aus.
+3. Wählen **Sie DNS bearbeiten aus.**
     
-    ![Wählen Sie Edit DNS aus.](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Wählen Sie DNS bearbeiten aus](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Wählen Sie **Erweiterte DNS-Einträge verwalten** aus.
+4. Wählen **Sie Erweiterte DNS-Einträge verwalten aus.**
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
     ![Wählen Sie Erweiterte DNS-Einträge verwalten aus.](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Scrollen Sie nach unten zum Abschnitt **Text (TXT Records)** , und wählen Sie dann **TXT-Einträge bearbeiten** aus.
+5. Scrollen Sie nach unten **zum Abschnitt Text (TXT Records),** und wählen Sie **dann Edit TXT Records aus.**
     
-    ![Bearbeiten von TXT-Einträgen auswählen](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
+    ![Auswählen von Bearbeiten von TXT-Einträgen](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
 6. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
     |**Host**|**TTL**|**Text**|
     |:-----|:-----|:-----|
-    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihre spezifischen **Ziel-oder Punkt-zu-Adresse** -Werte aus der Tabelle.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)   |
+    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen „Ziel“- oder **Verweist auf die Adresse**-Wert aus der Tabelle.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)   |
        
     ![Eingeben oder Einfügen von Werten in die Felder für den neuen Datensatz](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
-7. Wählen Sie **weiter** aus.
+7. Wählen Sie **Weiter** aus.
     
-    ![Wählen Sie weiter aus.](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
+    ![Wählen Sie Weiter aus.](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
-8. Wählen Sie **Save Changes** aus.
+8. Wählen **Sie Änderungen speichern aus.**
     
-    ![Wählen Sie Save Changes aus.](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
+    ![Auswählen von Änderungen speichern](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
   
 9. Warten Sie einige Minuten, bevor Sie fortfahren, damit der soeben erstellte Eintrag im Internet aktualisiert werden kann.
     
@@ -135,7 +135,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 1. Im ersten Schritt navigieren Sie über [diesen Link](https://www.networksolutions.com/manage-it) zu Ihrer Domänenseite bei Network Solutions. Sie werden aufgefordert, sich anzumelden.
     
     > [!IMPORTANT]
-    > Bevor Sie die Schaltfläche **Anmeldung** auswählen, wählen Sie zuerst **Verwalten von Domänennamen** in der Dropdownliste **Anmelden in:** aus. 
+    > Bevor Sie die Schaltfläche **Anmeldung** auswählen, wählen Sie zunächst **in** der Dropdownliste **Anmelden in:** meine Domänennamen verwalten aus. 
   
     ![Wählen Sie "Manage My Domain Names" aus, und melden Sie sich bei "Network Solutions" an.](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -143,47 +143,47 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     ![Aktivieren Sie das Kontrollkästchen für Ihre Domäne.](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Wählen Sie **DNS bearbeiten** aus.
+3. Wählen **Sie DNS bearbeiten aus.**
     
-    ![Wählen Sie Edit DNS aus.](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Wählen Sie DNS bearbeiten aus](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Wählen Sie **Erweiterte DNS-Einträge verwalten** aus.
+4. Wählen **Sie Erweiterte DNS-Einträge verwalten aus.**
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
     ![Wählen Sie Erweiterte DNS-Einträge verwalten aus.](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Führen Sie einen Bildlauf nach unten zum Abschnitt **Mail Server (MX Records)** durch, und wählen Sie dann **MX-Einträge bearbeiten** aus.
+5. Scrollen Sie nach unten zum Abschnitt **Mail Servers (MX Records),** und wählen Sie **dann MX-Einträge bearbeiten aus.**
     
-    ![Auswählen von "MX-Einträge bearbeiten"](../../media/74b4e412-9073-4d2d-8710-fe340b223798.png)
+    ![Wählen Sie MX-Einträge bearbeiten aus](../../media/74b4e412-9073-4d2d-8710-fe340b223798.png)
   
 6. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
     |**Priority**|**TTL**|**Mail Server**|
     |:-----|:-----|:-----|
-    |10   <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |3600  <br/> | *\<domain-key\>*  . Mail.Protection.Outlook.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> **Hinweis:** Holen Sie sich Ihr  *\<domain-key\>*  Microsoft-Konto. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
+    |10    <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](../setup/domains-faq.yml) <br/> |3600  <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> **Hinweis:** Erhalten Sie Ihren *\<domain-key\>* über Ihr Microsoft-Konto. [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![Eingeben oder Einfügen von Werten in die Felder für den neuen Datensatz](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
-7. Wählen Sie **weiter** aus.
+7. Wählen Sie **Weiter** aus.
     
-    ![Wählen Sie weiter aus.](../../media/963f758b-e79d-4452-8340-7eba8a3972c9.png)
+    ![Wählen Sie Weiter aus.](../../media/963f758b-e79d-4452-8340-7eba8a3972c9.png)
   
-8. Wählen Sie **Save Changes** aus.
+8. Wählen **Sie Änderungen speichern aus.**
     
-    ![Wählen Sie Save Changes aus.](../../media/7c2f784a-6dee-4364-866c-ad7202ef1fc2.png)
+    ![Auswählen von Änderungen speichern](../../media/7c2f784a-6dee-4364-866c-ad7202ef1fc2.png)
   
 9. Wenn weitere MX-Einträge vorhanden sind, löschen Sie diese, indem Sie **Delete** für jeden Eintrag auswählen. 
     
     ![Select the Delete check box for other MX records](../../media/709d6133-9f5d-490a-a91e-95e21ca94695.png)
   
-10. Wenn alle ausgewählt sind, wählen Sie **weiter** aus.
+10. Wenn sie alle ausgewählt sind, wählen Sie **Weiter aus.**
     
-    ![Wählen Sie weiter aus.](../../media/4710f988-0bbc-4ba7-bf31-ca2392b2900e.png)
+    ![Wählen Sie Weiter aus.](../../media/4710f988-0bbc-4ba7-bf31-ca2392b2900e.png)
   
-11. Wählen Sie **Save Changes** aus.
+11. Wählen **Sie Änderungen speichern aus.**
     
-    ![Wählen Sie Save Changes aus.](../../media/24432ec6-666b-4612-9488-37c06437959b.png)
+    ![Auswählen von Änderungen speichern](../../media/24432ec6-666b-4612-9488-37c06437959b.png)
   
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Hinzufügen der für Microsoft erforderlichen CNAME-Einträge
 <a name="BKMK_add_CNAME"> </a>
@@ -193,7 +193,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 1. Im ersten Schritt navigieren Sie über [diesen Link](https://www.networksolutions.com/manage-it) zu Ihrer Domänenseite bei Network Solutions. Sie werden aufgefordert, sich anzumelden.
     
     > [!IMPORTANT]
-    > Bevor Sie die Schaltfläche **Anmeldung** auswählen, wählen Sie zuerst **Verwalten von Domänennamen** in der Dropdownliste **Anmelden in:** aus. 
+    > Bevor Sie die Schaltfläche **Anmeldung** auswählen, wählen Sie zunächst **in** der Dropdownliste **Anmelden in:** meine Domänennamen verwalten aus. 
   
     ![Wählen Sie "Manage My Domain Names" aus, und melden Sie sich bei "Network Solutions" an.](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -201,19 +201,19 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     ![Aktivieren Sie das Kontrollkästchen für Ihre Domäne.](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Wählen Sie **DNS bearbeiten** aus.
+3. Wählen **Sie DNS bearbeiten aus.**
     
-    ![Wählen Sie Edit DNS aus.](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Wählen Sie DNS bearbeiten aus](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Wählen Sie **Erweiterte DNS-Einträge verwalten** aus.
+4. Wählen **Sie Erweiterte DNS-Einträge verwalten aus.**
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
     ![Wählen Sie Erweiterte DNS-Einträge verwalten aus.](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Führen Sie einen Bildlauf nach unten zum Abschnitt **Host Aliase (CNAME Records)** durch, und wählen Sie dann **CNAME-Einträge bearbeiten** aus.
+5. Scrollen Sie nach unten zum **Abschnitt Hostaliases (CNAME Records),** und wählen Sie **dann Bearbeiten von CNAME-Datensätzen aus.**
     
-    ![Wählen Sie unter Host Aliase die Option CNAME-Einträge bearbeiten aus.](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
+    ![Wählen Sie Bearbeiten von #A0 unter Hostaliasen aus.](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
   
 6. Geben Sie in die Felder für die vier neuen Einträge die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
@@ -227,26 +227,26 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     ![Eingeben oder Einfügen von Werten für die neuen Datensätze](../../media/5ce0b30c-b46c-4778-aa5a-fb5e2f0961c1.png)
   
-7. Wenn Sie alle benötigten CNAME-Einträge hinzugefügt haben, wählen Sie **weiter** aus.
+7. Wenn Sie alle benötigten #A0 hinzugefügt haben, wählen Sie **Weiter aus.**
     
-    ![Wählen Sie weiter aus.](../../media/4978bd8b-f6a6-458d-9522-ad612b301c4a.png)
+    ![Wählen Sie Weiter aus.](../../media/4978bd8b-f6a6-458d-9522-ad612b301c4a.png)
   
-8. Wählen Sie **Save Changes** aus.
+8. Wählen **Sie Änderungen speichern aus.**
     
-    ![Wählen Sie Save Changes aus.](../../media/f005c38a-0d8d-4c61-bec6-15e60c89aa5a.png)
+    ![Auswählen von Änderungen speichern](../../media/f005c38a-0d8d-4c61-bec6-15e60c89aa5a.png)
   
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Hinzufügen eines TXT-Eintrags für SPF, um E-Mail-Spam zu verhindern
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, Fügen Sie stattdessen die erforderlichen Microsoft-Werte zum aktuellen Datensatz hinzu, sodass Sie einen  *einzelnen*  SPF-Eintrag haben, der beide Wertegruppen enthält. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, sondern fügen Sie die erforderlichen Microsoft-Werte dem aktuellen Eintrag hinzu. Damit verfügen Sie über einen *einzigen* SPF-Eintrag, in dem beide Wertemengen enthalten sind. 
   
 Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beginnen Sie bei 5:35)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099).
   
 1. Im ersten Schritt navigieren Sie über [diesen Link](https://www.networksolutions.com/manage-it) zu Ihrer Domänenseite bei Network Solutions. Sie werden aufgefordert, sich anzumelden.
     
     > [!IMPORTANT]
-    > Bevor Sie die Schaltfläche **Anmeldung** auswählen, wählen Sie zuerst **Verwalten von Domänennamen** in der Dropdownliste **Anmelden in:** aus. 
+    > Bevor Sie die Schaltfläche **Anmeldung** auswählen, wählen Sie zunächst **in** der Dropdownliste **Anmelden in:** meine Domänennamen verwalten aus. 
   
     ![Wählen Sie "Manage My Domain Names" aus, und melden Sie sich bei "Network Solutions" an.](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -254,19 +254,19 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     ![Aktivieren Sie das Kontrollkästchen für Ihre Domäne.](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Wählen Sie **DNS bearbeiten** aus.
+3. Wählen **Sie DNS bearbeiten aus.**
     
-    ![Wählen Sie Edit DNS aus.](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Wählen Sie DNS bearbeiten aus](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Wählen Sie **Erweiterte DNS-Einträge verwalten** aus.
+4. Wählen **Sie Erweiterte DNS-Einträge verwalten aus.**
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
     ![Wählen Sie Erweiterte DNS-Einträge verwalten aus.](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Scrollen Sie nach unten zum Abschnitt **Text (TXT Records)** , und wählen Sie dann **TXT-Einträge bearbeiten** aus.
+5. Scrollen Sie nach unten **zum Abschnitt Text (TXT Records),** und wählen Sie **dann Edit TXT Records aus.**
     
-    ![Auswählen von TXT-Einträgen unter Text bearbeiten](../../media/a69a2631-6da2-4e81-99ab-9a9ab9b30b07.png)
+    ![Wählen Sie Bearbeiten von TXT-Einträgen unter Text aus.](../../media/a69a2631-6da2-4e81-99ab-9a9ab9b30b07.png)
   
 6. Geben Sie in den Feldern für den neuen Eintrag die folgenden Werte ein. Sie können die Werte auch kopieren und einfügen.
     
@@ -276,13 +276,13 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
        
     ![Eingeben oder Einfügen von Werten für den neuen Datensatz](../../media/11564eca-e2ee-4f17-af2b-a00eb7c157db.png)
   
-7. Wählen Sie **weiter** aus.
+7. Wählen Sie **Weiter** aus.
     
-    ![Wählen Sie weiter aus.](../../media/482a8dae-0c79-47c4-8bd8-87965683de24.png)
+    ![Wählen Sie Weiter aus.](../../media/482a8dae-0c79-47c4-8bd8-87965683de24.png)
   
-8. Wählen Sie **Save Changes** aus.
+8. Wählen **Sie Änderungen speichern aus.**
     
-    ![Wählen Sie Save Changes aus.](../../media/600b8c6d-184f-4213-a50e-8f119ebf3ff0.png)
+    ![Auswählen von Änderungen speichern](../../media/600b8c6d-184f-4213-a50e-8f119ebf3ff0.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Hinzufügen der für Microsoft erforderlichen zwei SRV-Einträge
 <a name="BKMK_add_SRV"> </a>
@@ -292,7 +292,7 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
 1. Im ersten Schritt navigieren Sie über [diesen Link](https://www.networksolutions.com/manage-it) zu Ihrer Domänenseite bei Network Solutions. Sie werden aufgefordert, sich anzumelden.
     
     > [!IMPORTANT]
-    > Bevor Sie die Schaltfläche **Anmeldung** auswählen, wählen Sie zuerst **Verwalten von Domänennamen** in der Dropdownliste **Anmelden in:** aus. 
+    > Bevor Sie die Schaltfläche **Anmeldung** auswählen, wählen Sie zunächst **in** der Dropdownliste **Anmelden in:** meine Domänennamen verwalten aus. 
   
     ![Wählen Sie "Manage My Domain Names" aus, und melden Sie sich bei "Network Solutions" an.](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -300,19 +300,19 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     ![Aktivieren Sie das Kontrollkästchen für Ihre Domäne.](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Wählen Sie **DNS bearbeiten** aus.
+3. Wählen **Sie DNS bearbeiten aus.**
     
-    ![Wählen Sie Edit DNS aus.](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Wählen Sie DNS bearbeiten aus](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Wählen Sie **Erweiterte DNS-Einträge verwalten** aus.
+4. Wählen **Sie Erweiterte DNS-Einträge verwalten aus.**
     
     (Möglicherweise müssen Sie nach unten scrollen.)
     
     ![Wählen Sie Erweiterte DNS-Einträge verwalten aus.](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Scrollen Sie zum Abschnitt **Service (SRV Records)** , und wählen Sie dann **SRV-Einträge bearbeiten** aus.
+5. Scrollen Sie nach unten **zum Abschnitt Dienst (SRV-Einträge),** und wählen Sie **dann SRV-Einträge bearbeiten aus.**
     
-    ![Wählen Sie "SRV-Einträge unter Dienst bearbeiten" aus.](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
+    ![Wählen Sie Bearbeiten von SRV-Datensätzen unter Dienst aus.](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
   
 6. Geben Sie in die Felder für die zwei neuen Einträge die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen.
     
@@ -320,19 +320,18 @@ Führen Sie die folgenden Schritte aus, oder [schauen Sie sich das Video an (beg
     
     |**Service**|**Protocol**|**TTL**|**Priority**|**Weight**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |
+    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Dieser Wert MUSS mit einem Punkt (.) enden.** <br/> |
        
     ![Eingeben oder Einfügen von Werten für die neuen Datensätze](../../media/86968d1c-8e43-4e61-aeaa-37fc7d7ef7a7.png)
   
-7. Wählen Sie **weiter** aus.
+7. Wählen Sie **Weiter** aus.
     
-    ![Wählen Sie weiter aus.](../../media/bfe2c778-5d2b-4bb6-a79d-c3ff9caf9e1e.png)
+    ![Wählen Sie Weiter aus.](../../media/bfe2c778-5d2b-4bb6-a79d-c3ff9caf9e1e.png)
   
-8. Wählen Sie **Save Changes** aus.
+8. Wählen **Sie Änderungen speichern aus.**
     
-    ![Wählen Sie Save Changes aus.](../../media/6d323126-0ebe-45ab-8567-c234711d84c7.png)
+    ![Auswählen von Änderungen speichern](../../media/6d323126-0ebe-45ab-8567-c234711d84c7.png)
   
 > [!NOTE]
 >  Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
-  

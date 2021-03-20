@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
-description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste unter OVH für Microsoft einrichten.
-ms.openlocfilehash: 14c3796ff6686ae0d98ec32ec6ddf6afc004a3c3
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für E-Mails, Skype for Business Online und andere Dienste bei OVH für Microsoft einrichten.
+ms.openlocfilehash: a43593af80d2f651e4407de64ed9aab51f1c1ecb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657779"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910066"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>Erstellen von DNS-Einträgen bei OVH für Microsoft
 
@@ -38,7 +38,7 @@ Das sind die wichtigsten hinzuzufügenden Einträge.
   
 - [Erstellen von DNS-Einträgen bei OVH für Microsoft](#create-dns-records-at-ovh-for-microsoft)
     
-- [Fügen Sie einen MX-Eintrag hinzu, damit E-Mails für Ihre Domäne an Microsoft geleitet werden.](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
+- [Hinzufügen eines MX-Eintrags, damit E-Mails für Ihre Domäne an Microsoft geleitet werden](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
 - [Hinzufügen der für Microsoft erforderlichen CNAME-Einträge](#add-the-cname-records-that-are-required-for-microsoft)
     
@@ -46,7 +46,7 @@ Das sind die wichtigsten hinzuzufügenden Einträge.
     
 - [Hinzufügen der für Microsoft erforderlichen zwei SRV-Einträge](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-Nachdem Sie diese Einträge bei OVH hinzugefügt haben, ist Ihre Domäne für die Verwendung mit Microsoft-Diensten eingerichtet.
+Nachdem Sie diese Datensätze bei OVH hinzugefügt haben, wird Ihre Domäne für die Arbeit mit Microsoft-Diensten eingerichtet.
 
   
 > [!NOTE]
@@ -64,27 +64,27 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. Wählen Sie unter **Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
+2. Wählen **Sie unter Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Wählen Sie **DNS-Zone** aus.
+3. Wählen Sie **DNS-Zone aus.**
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. Wählen Sie **Eintrag hinzufügen** aus.
+4. Wählen **Sie Eintrag hinzufügen aus.**
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. **Txt** auswählen
+5. Auswählen **von TXT**
     
-    ![OVH Select TXT-Eintrag](../../media/3aaa9dae-0b1d-436b-a980-b67a970f31a9.png)
+    ![OVH select TXT entry](../../media/3aaa9dae-0b1d-436b-a980-b67a970f31a9.png)
   
-6. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen. Um einen TTL-Wert zuzuweisen, wählen Sie in der Dropdownliste **personalisiert** aus, und geben Sie den Wert in das Textfeld ein. 
+6. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen. Wenn Sie einen TTL-Wert zuweisen möchten, wählen Sie **in** der Dropdownliste Personalisiert aus, und geben Sie dann den Wert in das Textfeld ein. 
     
     |**Eintragstyp**|**Unterdomäne**|**TTL**|**Wert**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |(leer lassen)  <br/> |3600 (Sekunden)  <br/> |MS=msxxxxxxxx  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihre spezifischen **Ziel-oder Punkt-zu-Adresse** -Werte aus der Tabelle.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
+    |TXT  <br/> |(leer lassen)  <br/> |3600 (Sekunden)  <br/> |MS=msxxxxxxxx  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen „Ziel“- oder **Verweist auf die Adresse**-Wert aus der Tabelle.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. Wählen Sie **Bestätigen** aus. 
     
@@ -120,15 +120,15 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. Wählen Sie unter **Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
+2. Wählen **Sie unter Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Wählen Sie **DNS-Zone** aus.
+3. Wählen Sie **DNS-Zone aus.**
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. Wählen Sie **Eintrag hinzufügen** aus.
+4. Wählen **Sie Eintrag hinzufügen aus.**
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
@@ -136,16 +136,16 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![OVH MX record type](../../media/29b5e54e-440a-41f2-9eb9-3de573922ddf.png)
   
-6. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen. Um einen TTL-Wert zuzuweisen, wählen Sie in der Dropdownliste **personalisiert** aus, und geben Sie den Wert in das Textfeld ein. 
+6. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen. Wenn Sie einen TTL-Wert zuweisen möchten, wählen Sie **in** der Dropdownliste Personalisiert aus, und geben Sie dann den Wert in das Textfeld ein. 
     
     > [!NOTE]
-    > Standardmäßig verwendet OVH relative Notation für das Ziel, wodurch der Domänenname am Ende des Ziel Datensatzes hinzugefügt wird. Um stattdessen absolute Notation zu verwenden, fügen Sie dem Zieldatensatz einen Punkt hinzu, wie in der folgenden Tabelle dargestellt. 
+    > Standardmäßig verwendet OVH relative Notation für das Ziel, wodurch der Domänenname am Ende des Zieldatensatzs hinzufügt wird. Um stattdessen absolute Notation zu verwenden, fügen Sie dem Zieldatensatz einen Punkt hinzu, wie in der folgenden Tabelle dargestellt. 
   
     |**Eintragstyp**|**Unterdomäne**|**TTL**|**Priorität**|**Ziel**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(leer lassen)  <br/> |3600 (Sekunden)  <br/> |10   <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |\<domain-key\>. Mail.Protection.Outlook.com.  <br/> **Hinweis:** Holen Sie sich Ihr  *\<domain-key\>*  Microsoft-Konto.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(leer lassen)  <br/> |3600 (Sekunden)  <br/> |10    <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](../setup/domains-faq.yml) <br/> |\<domain-key\>.mail.protection.outlook.com.  <br/> **Hinweis:** Erhalten Sie Ihren *\<domain-key\>* über Ihr Microsoft-Konto.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)  |
    
-    ![OVH MX-Eintrag für e-Mail](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
+    ![OVH-MX-Eintrag für E-Mails](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
 7. Wählen Sie **Weiter** aus.
     
@@ -155,7 +155,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![OVH MX record select Confirm](../../media/090bfb11-a753-4af0-8982-582a4069a169.png)
   
-9. Wenn weitere MX-Einträge vorhanden sind, löschen Sie diese in der Liste auf der Seite **DNS zone**. Wählen Sie jeden Datensatz aus, und wählen Sie dann in der Spalte **Aktionen** das Symbol Papierkorb-kann **gelöscht** aus. 
+9. Wenn weitere MX-Einträge vorhanden sind, löschen Sie diese in der Liste auf der Seite **DNS zone**. Wählen Sie jeden Datensatz aus, und wählen Sie dann in der Spalte **Aktionen** das Symbol Papierkorb **löschen** aus. 
     
     ![OVH delete MX record](../../media/892b328b-7057-4828-b8c5-fe26284dc8c2.png)
   
@@ -168,15 +168,15 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. Wählen Sie unter **Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
+2. Wählen **Sie unter Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Wählen Sie **DNS-Zone** aus.
+3. Wählen Sie **DNS-Zone aus.**
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. Wählen Sie **Eintrag hinzufügen** aus.
+4. Wählen **Sie Eintrag hinzufügen aus.**
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
@@ -186,7 +186,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
   
 6. Erstellen Sie den ersten CNAME-Eintrag.
     
-    Geben Sie in den Feldern für den neuen Eintrag die Werte aus der ersten Zeile der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen. Um einen TTL-Wert zuzuweisen, wählen Sie in der Dropdownliste **personalisiert** aus, und geben Sie den Wert in das Textfeld ein. 
+    Geben Sie in den Feldern für den neuen Eintrag die Werte aus der ersten Zeile der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen. Wenn Sie einen TTL-Wert zuweisen möchten, wählen Sie **in** der Dropdownliste Personalisiert aus, und geben Sie dann den Wert in das Textfeld ein. 
     
     |**Eintragstyp**|**Unterdomäne**|**Ziel**|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -212,25 +212,25 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, Fügen Sie stattdessen die erforderlichen Microsoft-Werte zum aktuellen Datensatz hinzu, sodass Sie einen  *einzelnen*  SPF-Eintrag haben, der beide Wertegruppen enthält. 
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, sondern fügen Sie die erforderlichen Microsoft-Werte dem aktuellen Eintrag hinzu. Damit verfügen Sie über einen *einzigen* SPF-Eintrag, in dem beide Wertemengen enthalten sind. 
   
 1. Um zu beginnen, navigieren Sie über [diesen Link](https://www.ovh.com/manager/) zu Ihrer Domänenseite bei OVH. Sie werden aufgefordert, sich anzumelden.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. Wählen Sie unter **Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
+2. Wählen **Sie unter Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Wählen Sie **DNS-Zone** aus.
+3. Wählen Sie **DNS-Zone aus.**
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. Wählen Sie **Eintrag hinzufügen** aus.
+4. Wählen **Sie Eintrag hinzufügen aus.**
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Wählen Sie **txt** aus.
+5. Wählen **Sie TXT** aus.
     
 6. Geben Sie in den Feldern für den neuen Eintrag die folgenden Werte ein. Sie können die Werte auch kopieren und einfügen.
     
@@ -238,11 +238,11 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |(leer lassen)  <br/> |3600 (Sekunden)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.           |
    
-    ![OVH-Add TXT-Eintrag für SPF](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
+    ![OVH Add TXT record for SPF](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
   
 7. Wählen Sie **Weiter** aus.
     
-    ![OVH Hinzufügen des txt-Eintrags für SPF und Auswählen von Next](../../media/7937eb7c-114f-479f-a916-bcbe476d6108.png)
+    ![OVH Add TXT record for SPF and select Next](../../media/7937eb7c-114f-479f-a916-bcbe476d6108.png)
   
 8. Wählen Sie **Bestätigen** aus.
     
@@ -255,32 +255,32 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. Wählen Sie unter **Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
+2. Wählen **Sie unter Domänen** den Namen der Domäne aus, die Sie bearbeiten möchten.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Wählen Sie **DNS-Zone** aus.
+3. Wählen Sie **DNS-Zone aus.**
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. Wählen Sie **Eintrag hinzufügen** aus.
+4. Wählen **Sie Eintrag hinzufügen aus.**
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Wählen Sie **SRV** aus.
+5. Wählen **Sie SRV** aus.
     
     ![OVH select SRV record type](../../media/66bad536-a531-4a4e-b08d-c0d99f6ea1b2.png)
   
 6. Erstellen Sie den ersten SRV-Eintrag.
     
-    Geben Sie in den Feldern für den neuen Eintrag die Werte aus der ersten Zeile der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen. Um einen TTL-Wert zuzuweisen, wählen Sie in der Dropdownliste **personalisiert** aus, und geben Sie den Wert in das Textfeld ein. 
+    Geben Sie in den Feldern für den neuen Eintrag die Werte aus der ersten Zeile der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen. Wenn Sie einen TTL-Wert zuweisen möchten, wählen Sie **in** der Dropdownliste Personalisiert aus, und geben Sie dann den Wert in das Textfeld ein. 
     
     |**Eintragstyp**|**Unterdomäne**|**Priority**|**Weight**|**Port**|**TTL**|**Ziel**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Dienst)  <br/> |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (Sekunden)  <br/> |sipdir.online.lync.com.  <br/> |
-    |SRV (Dienst)  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (Sekunden)  <br/> |sipfed.online.lync.com.  <br/> |
+    |SRV (Dienst)  <br/> |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (Sekunden)  <br/> |sipdir.online.lync.com.  <br/> |
+    |SRV (Dienst)  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (Sekunden)  <br/> |sipfed.online.lync.com.  <br/> |
        
-    ![OVH-SRV-Eintrag](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
+    ![OVH SRV-Eintrag](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   
 7. Wählen Sie **Weiter** aus.
     
@@ -292,4 +292,3 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
     
 > [!NOTE]
 >  Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
-  

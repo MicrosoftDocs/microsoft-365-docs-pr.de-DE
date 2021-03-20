@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce17f413b23ef9ef6abf79a2710a5cec9b05206c
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 1151cddbad2f5b8633b0e0f19a24c470f85d7614
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838531"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908986"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Bewerten von Microsoft Defender für Office 365
 
@@ -44,7 +44,7 @@ Defender für Office 365 erstellt im Evaluierungsmodus Defender für Office 365-
 
 Im Auswertungsmodus werden richtlinien für sichere [Anlagen,](atp-safe-attachments.md)sichere [Links](atp-safe-links.md)und Postfachintelligenz in Ihrem Namen eingerichtet. [](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Alle Defender for Office 365-Richtlinien werden im Nichtersetzungsmodus im Hintergrund erstellt und sind für Sie nicht sichtbar.
 
-Im Rahmen des Setups wird im Evaluierungsmodus auch die erweiterte [Filterung für Connectors konfiguriert.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Es verbessert die Filtergenauigkeit, indem IP-Adresse und Absenderinformationen beibehalten werden, die andernfalls verloren gehen, wenn E-Mails über ein E-Mail-Sicherheitsgateway (E-Mail Security Gateway, ESG) vor Defender for Office 365 gehen. Die erweiterte Filterung für Connectors verbessert außerdem die Filtergenauigkeit für Ihre vorhandenen Exchange Online Protection (EOP)-Antispam- und Antiphishingrichtlinien.
+Im Rahmen des Setups wird im Evaluierungsmodus auch die erweiterte [Filterung für Connectors konfiguriert.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Es verbessert die Filtergenauigkeit, indem IP-Adresse und Absenderinformationen beibehalten werden, die andernfalls verloren gehen, wenn E-Mails über ein E-Mail-Sicherheitsgateway (E-Mail Security Gateway, ESG) vor Defender for Office 365 gehen. Die erweiterte Filterung für Connectors verbessert außerdem die Filtergenauigkeit für Ihre vorhandenen Exchange Online Protection (EOP)-Antispam- und Antiphishingrichtlinien.
 
 Aktivierte erweiterte Filterung für Connectors verbessert die Filtergenauigkeit, kann jedoch die Zuleitung für bestimmte Nachrichten ändern, wenn Sie über eine ESG vor Defender for Office 365 verfügen und die EOP-Filterung derzeit nicht umgehen. Die Auswirkungen sind auf #A0 beschränkt. Die im Rahmen der Evaluierung eingerichteten MDO-Richtlinien werden im Nichtdurchsetzungsmodus erstellt. Um potenzielle Produktionsauswirkungen zu minimieren, können Sie die EOP-Filterung umgehen, indem Sie eine Transportregel erstellen, um die Spamsicherheitsstufe (Spam Confidence Level, SCL) auf -1 zu setzen. Weitere Informationen finden Sie unter Use [the EAC to create a mail flow rule that sets the SCL of a](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)   message.
 
@@ -72,7 +72,7 @@ Wenn Sie nicht über eine dieser Lizenzen verfügen, müssen Sie eine Testlizenz
 
 #### <a name="trial"></a>Testversion
 
-Um eine Testlizenz für Microsoft Defender für Office 365 zu erhalten, benötigen Sie die Administratorrolle **"Abrechnung"** oder **"Globaler Administrator".** Fordern Sie die Berechtigung von einer Person an, die über die Rolle "Globaler Administrator" verfügt. [Informationen zu Abonnements und Lizenzen](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
+Um eine Testlizenz für Microsoft Defender für Office 365 zu erhalten, benötigen Sie die Administratorrolle **"Abrechnung"** oder **"Globaler Administrator".** Fordern Sie die Berechtigung von einer Person an, die über die Rolle "Globaler Administrator" verfügt. [Informationen zu Abonnements und Lizenzen](../../commerce/licenses/subscriptions-and-licenses.md)
 
 Sobald Sie über die richtige Rolle verfügen, wird empfohlen, eine Testlizenz für Microsoft Defender für Office 365 (Plan 2) im Microsoft 365 Admin Center zu erhalten, indem Sie zu Abrechnung > Dienste erwerben. Die Testversion umfasst eine 30-tägige kostenlose Testversion für 25 Lizenzen. [Hier erhalten Sie eine Testversion für Microsoft Defender für Office 365 (Plan 2).](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)
 
@@ -80,14 +80,14 @@ Sie verfügen über ein 30-Tage-Fenster mit der Auswertung, um erweiterte Bedroh
 
 ### <a name="roles"></a>Rollen
 
-Exchange Online-Rollen sind erforderlich, um Defender for Office 365 im Evaluierungsmodus einrichten zu können.
+**Exchange Online-Rollen sind erforderlich,** um Defender for Office 365 im Evaluierungsmodus einrichten zu können. Das Zuweisen einer Microsoft 365-Compliance- oder Sicherheitsadministratorrolle funktioniert nicht.
 
-- [Informationen zu Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+- [Informationen zu Berechtigungen in Exchange Online](/exchange/permissions-exo/permissions-exo)
 - [Informationen zum Zuweisen von Administratorrollen](../../admin/add-users/assign-admin-roles.md)
 
 Die folgenden Rollen sind erforderlich:
 
-|Aufgabe|Rolle|
+|Aufgabe|Rolle (in Exchange Online)|
 |---|---|
 |Kostenlose Testversion erhalten oder Microsoft Defender für Office 365 kaufen (Plan 2)|Abrechnungsadministratorrolle ODER globale Administratorrolle|
 |Erstellen einer Evaluierungsrichtlinie|Rolle "Remotedomänen" und "Akzeptierte Domänen"; Rolle des Sicherheitsadministrators|
@@ -95,7 +95,6 @@ Die folgenden Rollen sind erforderlich:
 |Evaluierungsrichtlinie löschen|Rolle "Remotedomänen" und "Akzeptierte Domänen"; Rolle des Sicherheitsadministrators |
 |Auswertungsbericht anzeigen|Rolle "Sicherheitsadministrator" ODER "Sicherheitsleserolle"|
 |
-
 
 ### <a name="enhanced-filtering"></a>Erweiterte Filterung
 
@@ -111,7 +110,7 @@ URL-Links in den E-Mail-Nachrichtentexten werden nicht umschließen, um die Kund
 
 ### <a name="email-routing"></a>E-Mail-Routing
 
-Bereiten Sie die entsprechenden Details vor, die Sie zum Einrichten der Derzeitroute Ihrer E-Mails benötigen, einschließlich des Namens des eingehenden Connectors, der Ihre E-Mails weiter leitet. Wenn Sie nur Exchange Online Protection verwenden, haben Sie keinen Connector.  [Informationen zum Nachrichtenfluss und zum E-Mail-Routing](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+Bereiten Sie die entsprechenden Details vor, die Sie zum Einrichten der Derzeitroute Ihrer E-Mails benötigen, einschließlich des Namens des eingehenden Connectors, der Ihre E-Mails weiter leitet. Wenn Sie nur Exchange Online Protection verwenden, haben Sie keinen Connector.  [Informationen zum Nachrichtenfluss und zum E-Mail-Routing](/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 Zu den unterstützten E-Mail-Routingszenarien gehören:
 
