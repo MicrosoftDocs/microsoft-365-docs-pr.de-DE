@@ -22,137 +22,136 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: Erfahren Sie, wie Sie gelöschte Benutzerkonten und alle zugehörigen Daten wiederherstellen.
-ms.openlocfilehash: d14995c8ee2d62c1d722ef0bcc7577745a747082
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: Erfahren Sie, wie Sie gelöschte Benutzerkonten und alle zugeordneten Daten wiederherstellen.
+ms.openlocfilehash: f3986ed1ba007dcac87bdfb9322ba5c5bf081b35
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50113997"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903712"
 ---
-# <a name="restore-a-user"></a><span data-ttu-id="56d9e-103">Wiederherstellen eines Benutzers</span><span class="sxs-lookup"><span data-stu-id="56d9e-103">Restore a user</span></span>
+# <a name="restore-a-user"></a><span data-ttu-id="c9d4f-103">Wiederherstellen eines Benutzers</span><span class="sxs-lookup"><span data-stu-id="c9d4f-103">Restore a user</span></span>
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> <span data-ttu-id="56d9e-104">Das Admin Center wird geändert.</span><span class="sxs-lookup"><span data-stu-id="56d9e-104">The admin center is changing.</span></span> <span data-ttu-id="56d9e-105">Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="56d9e-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).</span></span>
+> <span data-ttu-id="c9d4f-104">Das Admin Center wird geändert.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-104">The admin center is changing.</span></span> <span data-ttu-id="c9d4f-105">Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).</span><span class="sxs-lookup"><span data-stu-id="c9d4f-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).</span></span>
 
 ::: moniker-end
    
-<span data-ttu-id="56d9e-p102">Wenn Sie ein Benutzerkonto innerhalb von 30 Tagen nach dem Löschen wiederherstellen, werden das Benutzerkonto und alle zugehörigen Daten wiederhergestellt. Der Benutzer kann sich mit demselben Firmen- oder Schulkonto anmelden. Das Postfach wird vollständig wiederhergestellt. Wenn Sie herausfinden müssen, wie viel Zeit noch bleibt, um ein bestimmtes Benutzerkonto wiederherzustellen, [wenden Sie sich an uns](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="56d9e-p102">When you restore a user account within 30 days after deleting it, the account and all associated data are restored. The user can sign in with the same work or school account. Their mailbox will be fully restored. To find out how much time remains before a specific user account can no longer be restored, [contact us](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="c9d4f-p102">Wenn Sie ein Benutzerkonto innerhalb von 30 Tagen nach dem Löschen wiederherstellen, werden das Benutzerkonto und alle zugehörigen Daten wiederhergestellt. Der Benutzer kann sich mit demselben Firmen- oder Schulkonto anmelden. Das Postfach wird vollständig wiederhergestellt. Wenn Sie herausfinden müssen, wie viel Zeit noch bleibt, um ein bestimmtes Benutzerkonto wiederherzustellen, [wenden Sie sich an uns](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="c9d4f-p102">When you restore a user account within 30 days after deleting it, the account and all associated data are restored. The user can sign in with the same work or school account. Their mailbox will be fully restored. To find out how much time remains before a specific user account can no longer be restored, [contact us](../contact-support-for-business-products.md).</span></span>
   
-<span data-ttu-id="56d9e-110">Nachfolgend ein paar Tipps:</span><span class="sxs-lookup"><span data-stu-id="56d9e-110">Here are a couple of tips:</span></span>
+<span data-ttu-id="c9d4f-110">Nachfolgend ein paar Tipps:</span><span class="sxs-lookup"><span data-stu-id="c9d4f-110">Here are a couple of tips:</span></span>
   
-- <span data-ttu-id="56d9e-111">Stellen Sie sicher, dass Dem Konto Lizenzen zugewiesen werden können.</span><span class="sxs-lookup"><span data-stu-id="56d9e-111">Make sure licenses are available to assign to the account.</span></span>
+- <span data-ttu-id="c9d4f-111">Stellen Sie sicher, dass Lizenzen verfügbar sind, die dem Konto zugewiesen werden können.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-111">Make sure licenses are available to assign to the account.</span></span>
     
-- <span data-ttu-id="56d9e-112">Wenn Ihr Unternehmen Active Directory verwendet, lesen Sie die unter [Behandeln von Problemen mit gelöschten Benutzerkonten in Office 365](https://support.microsoft.com/kb/2619308) aufgeführten Anweisungen zum Wiederherstellen eines Benutzerkontos.</span><span class="sxs-lookup"><span data-stu-id="56d9e-112">If your business uses Active Directory, see [How to troubleshoot deleted user accounts in Office 365](https://support.microsoft.com/kb/2619308) for instructions on restoring a user account.</span></span> 
+- <span data-ttu-id="c9d4f-112">Wenn Ihr Unternehmen Active Directory verwendet, lesen Sie die unter [Behandeln von Problemen mit gelöschten Benutzerkonten in Office 365](https://support.microsoft.com/kb/2619308) aufgeführten Anweisungen zum Wiederherstellen eines Benutzerkontos.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-112">If your business uses Active Directory, see [How to troubleshoot deleted user accounts in Office 365](https://support.microsoft.com/kb/2619308) for instructions on restoring a user account.</span></span> 
     
-## <a name="restore-one-or-more-user-accounts"></a><span data-ttu-id="56d9e-113">Wiederherstellen eines oder mehrerer Benutzerkonten</span><span class="sxs-lookup"><span data-stu-id="56d9e-113">Restore one or more user accounts</span></span>
+## <a name="restore-one-or-more-user-accounts"></a><span data-ttu-id="c9d4f-113">Wiederherstellen eines oder mehrerer Benutzerkonten</span><span class="sxs-lookup"><span data-stu-id="c9d4f-113">Restore one or more user accounts</span></span>
 
-<span data-ttu-id="56d9e-114">Sie müssen ein globaler Microsoft 365-Administrator oder ein Benutzerverwaltungsadministrator sein, um diese Schritte ausführen zu können.</span><span class="sxs-lookup"><span data-stu-id="56d9e-114">You must be a Microsoft 365 global admin or user management admin to do these steps.</span></span> 
+<span data-ttu-id="c9d4f-114">Sie müssen ein globaler Microsoft 365-Administrator oder Benutzerverwaltungsadministrator sein, um diese Schritte ausführen zu können.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-114">You must be a Microsoft 365 global admin or user management admin to do these steps.</span></span> 
   
  
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="56d9e-115">Wechseln Sie im Admin Center zur **Seite** "Benutzer \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">gelöschte</a> Benutzer".</span><span class="sxs-lookup"><span data-stu-id="56d9e-115">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
+1. <span data-ttu-id="c9d4f-115">Wechseln Sie im Admin Center zur **Seite** Benutzer \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">gelöschte</a> Benutzer.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-115">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="56d9e-116">Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=848041)und wählen Sie dann **"Benutzer** \> **gelöschte Benutzer" aus.**</span><span class="sxs-lookup"><span data-stu-id="56d9e-116">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
+1. <span data-ttu-id="c9d4f-116">Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=848041)und wählen Sie **dann Benutzer** \> **Gelöschte Benutzer aus.**</span><span class="sxs-lookup"><span data-stu-id="c9d4f-116">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="56d9e-117">Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=850627)und wählen Sie dann **"Benutzer** \> **gelöschte Benutzer" aus.**</span><span class="sxs-lookup"><span data-stu-id="56d9e-117">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
+1. <span data-ttu-id="c9d4f-117">Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=850627)und wählen Sie **dann Benutzer** \> **Gelöschte Benutzer aus.**</span><span class="sxs-lookup"><span data-stu-id="c9d4f-117">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="56d9e-118">Wählen Sie **auf der Seite** "Gelöschte Benutzer" die Namen der Benutzer aus, die Sie wiederherstellen möchten, und wählen Sie dann "Wiederherstellen" **aus.**</span><span class="sxs-lookup"><span data-stu-id="56d9e-118">On the **Deleted users** page, select the names of the users who you want to restore, and then select **Restore**.</span></span>
+2. <span data-ttu-id="c9d4f-118">Wählen Sie **auf der** Seite Gelöschte Benutzer die Namen der Benutzer aus, die Sie wiederherstellen möchten, und wählen Sie dann **Wiederherstellen aus.**</span><span class="sxs-lookup"><span data-stu-id="c9d4f-118">On the **Deleted users** page, select the names of the users who you want to restore, and then select **Restore**.</span></span>
     
  
-3. <span data-ttu-id="56d9e-119">Folgen Sie den Eingabeaufforderungen, um ihr Kennwort zu setzen, und wählen Sie dann **"Wiederherstellen" aus.**</span><span class="sxs-lookup"><span data-stu-id="56d9e-119">Follow the prompts to set their password, and then select **Restore**.</span></span>
+3. <span data-ttu-id="c9d4f-119">Folgen Sie den Aufforderungen zum Festlegen ihres Kennworts, und wählen Sie dann **Wiederherstellen aus.**</span><span class="sxs-lookup"><span data-stu-id="c9d4f-119">Follow the prompts to set their password, and then select **Restore**.</span></span>
     
-4. <span data-ttu-id="56d9e-120">Wenn der Benutzer erfolgreich wiederhergestellt wurde, wählen Sie **"E-Mail senden" aus, und schließen Sie.**</span><span class="sxs-lookup"><span data-stu-id="56d9e-120">If the user is successfully restored, select **Send email and close**.</span></span> <span data-ttu-id="56d9e-121">Wenn ein Namens- oder Proxyadressenkonflikt vorliegt, lesen Sie die nachstehenden Anweisungen, um zu erfahren, wie Sie diese Konten wiederherstellen können.</span><span class="sxs-lookup"><span data-stu-id="56d9e-121">If you encounter a name conflict or proxy address conflict, see the instructions below for how to restore those accounts.</span></span>
+4. <span data-ttu-id="c9d4f-120">Wenn der Benutzer erfolgreich wiederhergestellt wurde, wählen Sie **E-Mail senden und schließen aus.**</span><span class="sxs-lookup"><span data-stu-id="c9d4f-120">If the user is successfully restored, select **Send email and close**.</span></span> <span data-ttu-id="c9d4f-121">Wenn ein Namens- oder Proxyadressenkonflikt vorliegt, lesen Sie die nachstehenden Anweisungen, um zu erfahren, wie Sie diese Konten wiederherstellen können.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-121">If you encounter a name conflict or proxy address conflict, see the instructions below for how to restore those accounts.</span></span>
     
-<span data-ttu-id="56d9e-122">Nachdem Sie einen Benutzer wiederhergestellt haben, stellen Sie sicher, dass Sie ihn darüber informieren, dass sich sein Kennwort geändert hat, und folgen Sie ihm nach.</span><span class="sxs-lookup"><span data-stu-id="56d9e-122">After you've restored a user, make sure you notify them that their password changed and you follow up with them.</span></span>
+<span data-ttu-id="c9d4f-122">Nachdem Sie einen Benutzer wiederhergestellt haben, müssen Sie ihn darüber informieren, dass sich sein Kennwort geändert hat, und folgen Sie ihm.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-122">After you've restored a user, make sure you notify them that their password changed and you follow up with them.</span></span>
   
-## <a name="restore-a-user-that-has-a-user-name-conflict"></a><span data-ttu-id="56d9e-123">Wiederherstellen eines Benutzers mit einem Benutzernamenskonflikt</span><span class="sxs-lookup"><span data-stu-id="56d9e-123">Restore a user that has a user name conflict</span></span>
-<span data-ttu-id="56d9e-124"><a name="RestoreUserNameConflict"> </a></span><span class="sxs-lookup"><span data-stu-id="56d9e-124"><a name="RestoreUserNameConflict"> </a></span></span>
+## <a name="restore-a-user-that-has-a-user-name-conflict"></a><span data-ttu-id="c9d4f-123">Wiederherstellen eines Benutzers mit einem Benutzernamenskonflikt</span><span class="sxs-lookup"><span data-stu-id="c9d4f-123">Restore a user that has a user name conflict</span></span>
+<span data-ttu-id="c9d4f-124"><a name="RestoreUserNameConflict"> </a></span><span class="sxs-lookup"><span data-stu-id="c9d4f-124"><a name="RestoreUserNameConflict"> </a></span></span>
 
-<span data-ttu-id="56d9e-125">Ein Benutzernamenskonflikt tritt auf, wenn Sie ein Benutzerkonto löschen, ein neues Benutzerkonto mit demselben Benutzernamen (für denselben Benutzer oder für einen anderen Benutzer mit einem ähnlichen Namen) erstellen und dann später versuchen, das gelöschte Konto wiederherzustellen.</span><span class="sxs-lookup"><span data-stu-id="56d9e-125">A user name conflict occurs when you delete a user account, create a new user account with the same user name (either for the same user or another user with a similar name), and later try to restore the deleted account.</span></span>
+<span data-ttu-id="c9d4f-125">Ein Benutzernamenskonflikt tritt auf, wenn Sie ein Benutzerkonto löschen, ein neues Benutzerkonto mit demselben Benutzernamen (für denselben Benutzer oder für einen anderen Benutzer mit einem ähnlichen Namen) erstellen und dann später versuchen, das gelöschte Konto wiederherzustellen.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-125">A user name conflict occurs when you delete a user account, create a new user account with the same user name (either for the same user or another user with a similar name), and later try to restore the deleted account.</span></span>
   
-<span data-ttu-id="56d9e-p104">Um diesen Konflikt zu lösen, können Sie entweder das aktive Benutzerkonto durch das wiederherzustellende Konto ersetzen oder dem Konto, das Sie wiederherstellen, einen anderen Benutzernamen zuweisen, damit nicht zwei Konten mit demselben Benutzernamen vorhanden sind. Gehen Sie dazu wie folgt vor:</span><span class="sxs-lookup"><span data-stu-id="56d9e-p104">To fix this, replace the active user account with the one that you are restoring. Or, assign a different user name to the account that you are restoring so that there aren't two accounts with the same user name. Here are the steps.</span></span>
+<span data-ttu-id="c9d4f-p104">Um diesen Konflikt zu lösen, können Sie entweder das aktive Benutzerkonto durch das wiederherzustellende Konto ersetzen oder dem Konto, das Sie wiederherstellen, einen anderen Benutzernamen zuweisen, damit nicht zwei Konten mit demselben Benutzernamen vorhanden sind. Gehen Sie dazu wie folgt vor:</span><span class="sxs-lookup"><span data-stu-id="c9d4f-p104">To fix this, replace the active user account with the one that you are restoring. Or, assign a different user name to the account that you are restoring so that there aren't two accounts with the same user name. Here are the steps.</span></span>
   
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="56d9e-129">Wechseln Sie im Admin Center zur **Seite** "Benutzer \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">gelöschte</a> Benutzer".</span><span class="sxs-lookup"><span data-stu-id="56d9e-129">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
+1. <span data-ttu-id="c9d4f-129">Wechseln Sie im Admin Center zur **Seite** Benutzer \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">gelöschte</a> Benutzer.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-129">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="56d9e-130">Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=848041)und wählen Sie dann **"Benutzer** \> **gelöschte Benutzer" aus.**</span><span class="sxs-lookup"><span data-stu-id="56d9e-130">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
+1. <span data-ttu-id="c9d4f-130">Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=848041)und wählen Sie **dann Benutzer** \> **Gelöschte Benutzer aus.**</span><span class="sxs-lookup"><span data-stu-id="c9d4f-130">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="56d9e-131">Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=850627)und wählen Sie dann **"Benutzer** \> **gelöschte Benutzer" aus.**</span><span class="sxs-lookup"><span data-stu-id="56d9e-131">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
+1. <span data-ttu-id="c9d4f-131">Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=850627)und wählen Sie **dann Benutzer** \> **Gelöschte Benutzer aus.**</span><span class="sxs-lookup"><span data-stu-id="c9d4f-131">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
   
-2. <span data-ttu-id="56d9e-132">Wählen Sie **auf der** Seite "Gelöschte Benutzer" die Namen der Benutzer aus, die Sie wiederherstellen möchten, und wählen Sie dann **"Wiederherstellen" aus.**</span><span class="sxs-lookup"><span data-stu-id="56d9e-132">On the **Deleted users** page, select the names of the users that you want to restore, and then select **Restore**.</span></span>
+2. <span data-ttu-id="c9d4f-132">Wählen Sie **auf der Seite** Gelöschte Benutzer die Namen der Benutzer aus, die Sie wiederherstellen möchten, und wählen Sie dann **Wiederherstellen aus.**</span><span class="sxs-lookup"><span data-stu-id="c9d4f-132">On the **Deleted users** page, select the names of the users that you want to restore, and then select **Restore**.</span></span>
     
     > [!NOTE]
-    > <span data-ttu-id="56d9e-p105">Wenn mindestens zwei Benutzer nicht wiederhergestellt werden können, wird in einer Fehlermeldung angezeigt, dass der Wiederherstellungsvorgang für einige Benutzer nicht erfolgreich ausgeführt wurde. Öffnen Sie das Protokoll, um anzuzeigen, welche Benutzer nicht wiederhergestellt wurden, und stellen Sie dann die entsprechenden Konten jeweils einzeln wieder her.</span><span class="sxs-lookup"><span data-stu-id="56d9e-p105">If two or more users fail to be restored, an error message advises you that the restore operation failed for some users. View the log to see which users were not restored, and then restore the failed accounts one at a time.</span></span> 
+    > <span data-ttu-id="c9d4f-p105">Wenn mindestens zwei Benutzer nicht wiederhergestellt werden können, wird in einer Fehlermeldung angezeigt, dass der Wiederherstellungsvorgang für einige Benutzer nicht erfolgreich ausgeführt wurde. Öffnen Sie das Protokoll, um anzuzeigen, welche Benutzer nicht wiederhergestellt wurden, und stellen Sie dann die entsprechenden Konten jeweils einzeln wieder her.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-p105">If two or more users fail to be restored, an error message advises you that the restore operation failed for some users. View the log to see which users were not restored, and then restore the failed accounts one at a time.</span></span> 
   
-3. <span data-ttu-id="56d9e-135">Folgen Sie den Eingabeaufforderungen zum Festlegen des Kennworts, und wählen Sie **"Wiederherstellen" aus.**</span><span class="sxs-lookup"><span data-stu-id="56d9e-135">Follow the prompts to set the password and select **Restore**.</span></span>
+3. <span data-ttu-id="c9d4f-135">Folgen Sie den Aufforderungen zum Festlegen des Kennworts, und wählen Sie **Wiederherstellen aus.**</span><span class="sxs-lookup"><span data-stu-id="c9d4f-135">Follow the prompts to set the password and select **Restore**.</span></span>
     
-4. <span data-ttu-id="56d9e-p106">Sie werden in einer Meldung darüber informiert, dass beim Wiederherstellen des Kontos ein Problem aufgetreten ist. Führen Sie eine der folgenden Aktionen aus:</span><span class="sxs-lookup"><span data-stu-id="56d9e-p106">A message pops up that says there was a problem restoring the account. Do one of the following:</span></span>
+4. <span data-ttu-id="c9d4f-p106">Sie werden in einer Meldung darüber informiert, dass beim Wiederherstellen des Kontos ein Problem aufgetreten ist. Führen Sie eine der folgenden Aktionen aus:</span><span class="sxs-lookup"><span data-stu-id="c9d4f-p106">A message pops up that says there was a problem restoring the account. Do one of the following:</span></span>
     
-  - <span data-ttu-id="56d9e-p107">Brechen Sie den Wiederherstellungsvorgang ab, und benennen Sie den aktuellen aktiven Benutzer um. Versuchen Sie dann, den Wiederherstellungsvorgang erneut auszuführen.</span><span class="sxs-lookup"><span data-stu-id="56d9e-p107">Cancel the restore and rename the current active user. Then attempt the restore again.</span></span>
+  - <span data-ttu-id="c9d4f-p107">Brechen Sie den Wiederherstellungsvorgang ab, und benennen Sie den aktuellen aktiven Benutzer um. Versuchen Sie dann, den Wiederherstellungsvorgang erneut auszuführen.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-p107">Cancel the restore and rename the current active user. Then attempt the restore again.</span></span>
     
-  - <span data-ttu-id="56d9e-140">ODER geben Sie eine neue primäre E-Mail-Adresse für den Benutzer ein, und wählen Sie **"Wiederherstellen" aus.**</span><span class="sxs-lookup"><span data-stu-id="56d9e-140">OR, type a new primary email address for the user and select **Restore**.</span></span>
+  - <span data-ttu-id="c9d4f-140">OR, geben Sie eine neue primäre E-Mail-Adresse für den Benutzer ein, und wählen Sie **Wiederherstellen aus.**</span><span class="sxs-lookup"><span data-stu-id="c9d4f-140">OR, type a new primary email address for the user and select **Restore**.</span></span>
     
-5. <span data-ttu-id="56d9e-141">Überprüfen Sie die Ergebnisse, und wählen Sie dann **Schließen** aus.</span><span class="sxs-lookup"><span data-stu-id="56d9e-141">Review the results, and then select **Close**.</span></span>
+5. <span data-ttu-id="c9d4f-141">Überprüfen Sie die Ergebnisse, und wählen Sie dann **Schließen** aus.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-141">Review the results, and then select **Close**.</span></span>
     
-## <a name="restore-a-user-that-has-a-proxy-address-conflict"></a><span data-ttu-id="56d9e-142">Wiederherstellen eines Benutzers, der einen Proxyadressenkonflikt hat</span><span class="sxs-lookup"><span data-stu-id="56d9e-142">Restore a user that has a proxy address conflict</span></span>
+## <a name="restore-a-user-that-has-a-proxy-address-conflict"></a><span data-ttu-id="c9d4f-142">Wiederherstellen eines Benutzers, der einen Proxyadressenkonflikt hat</span><span class="sxs-lookup"><span data-stu-id="c9d4f-142">Restore a user that has a proxy address conflict</span></span>
 
-<span data-ttu-id="56d9e-p108">Ein Proxyadressenkonflikt tritt auf, wenn Sie ein Benutzerkonto löschen, das eine Proxyadresse enthält, dieselbe Proxyadresse einem anderen Konto zuweisen und dann versuchen, das gelöschte Konto wiederherzustellen. Führen Sie die nachstehenden Schritte aus, um das Problem zu beheben.</span><span class="sxs-lookup"><span data-stu-id="56d9e-p108">A proxy address conflict occurs when you delete a user account that contains a proxy address, assign the same proxy address to another account, and then try to restore the deleted account. Follow the steps below to fix this issue.</span></span>
+<span data-ttu-id="c9d4f-p108">Ein Proxyadressenkonflikt tritt auf, wenn Sie ein Benutzerkonto löschen, das eine Proxyadresse enthält, dieselbe Proxyadresse einem anderen Konto zuweisen und dann versuchen, das gelöschte Konto wiederherzustellen. Führen Sie die nachstehenden Schritte aus, um das Problem zu beheben.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-p108">A proxy address conflict occurs when you delete a user account that contains a proxy address, assign the same proxy address to another account, and then try to restore the deleted account. Follow the steps below to fix this issue.</span></span>
   
-<span data-ttu-id="56d9e-145">Dazu müssen Sie [über Administratorberechtigungen](about-admin-roles.md) in Microsoft 365 verfügen.</span><span class="sxs-lookup"><span data-stu-id="56d9e-145">You must have [admin permissions](about-admin-roles.md) in Microsoft 365 to do this.</span></span> 
+<span data-ttu-id="c9d4f-145">Dazu müssen Sie [über Administratorberechtigungen](about-admin-roles.md) in Microsoft 365 verfügen.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-145">You must have [admin permissions](about-admin-roles.md) in Microsoft 365 to do this.</span></span> 
   
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="56d9e-146">Wechseln Sie im Admin Center zur **Seite** "Benutzer \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">gelöschte</a> Benutzer".</span><span class="sxs-lookup"><span data-stu-id="56d9e-146">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
+1. <span data-ttu-id="c9d4f-146">Wechseln Sie im Admin Center zur **Seite** Benutzer \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">gelöschte</a> Benutzer.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-146">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-<span data-ttu-id="56d9e-147">Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=848041)und wählen Sie dann **"Benutzer** \> **gelöschte Benutzer" aus.**</span><span class="sxs-lookup"><span data-stu-id="56d9e-147">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
+<span data-ttu-id="c9d4f-147">Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=848041)und wählen Sie **dann Benutzer** \> **Gelöschte Benutzer aus.**</span><span class="sxs-lookup"><span data-stu-id="c9d4f-147">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="56d9e-148">Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=850627)und wählen Sie dann **"Benutzer** \> **gelöschte Benutzer" aus.**</span><span class="sxs-lookup"><span data-stu-id="56d9e-148">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
+1. <span data-ttu-id="c9d4f-148">Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=850627)und wählen Sie **dann Benutzer** \> **Gelöschte Benutzer aus.**</span><span class="sxs-lookup"><span data-stu-id="c9d4f-148">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="56d9e-149">Wählen Sie auf der Seite **Gelöschte Benutzer** den Benutzer aus, den Sie wiederherstellen möchten, und wählen Sie dann **Wiederherstellen** aus.</span><span class="sxs-lookup"><span data-stu-id="56d9e-149">On the **Deleted users** page, select the user that you want to restore, and then select **Restore**.</span></span> 
+2. <span data-ttu-id="c9d4f-149">Wählen Sie auf der Seite **Gelöschte Benutzer** den Benutzer aus, den Sie wiederherstellen möchten, und wählen Sie dann **Wiederherstellen** aus.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-149">On the **Deleted users** page, select the user that you want to restore, and then select **Restore**.</span></span> 
     
-3. <span data-ttu-id="56d9e-150">Folgen Sie **auf der** Seite "Wiederherstellen" den Anweisungen zum Festlegen des Kennworts, und wählen Sie **"Wiederherstellen" aus.**</span><span class="sxs-lookup"><span data-stu-id="56d9e-150">On the **Restore** page, follow the instructions to set the password and select **Restore**.</span></span> <span data-ttu-id="56d9e-151">Für den Benutzer, den Sie wiederherstellen, werden alle Konflikt verursachenden Proxyadressen automatisch entfernt.</span><span class="sxs-lookup"><span data-stu-id="56d9e-151">Any conflicting proxy addresses are automatically removed from the user you are restoring.</span></span>
+3. <span data-ttu-id="c9d4f-150">Folgen Sie **auf** der Seite Wiederherstellen den Anweisungen zum Festlegen des Kennworts, und wählen Sie **Wiederherstellen aus.**</span><span class="sxs-lookup"><span data-stu-id="c9d4f-150">On the **Restore** page, follow the instructions to set the password and select **Restore**.</span></span> <span data-ttu-id="c9d4f-151">Für den Benutzer, den Sie wiederherstellen, werden alle Konflikt verursachenden Proxyadressen automatisch entfernt.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-151">Any conflicting proxy addresses are automatically removed from the user you are restoring.</span></span>
     
-4. <span data-ttu-id="56d9e-152">Überprüfen Sie die Ergebnisse, und wählen Sie dann **Schließen** aus.</span><span class="sxs-lookup"><span data-stu-id="56d9e-152">Review the results, and then select **Close**.</span></span>
+4. <span data-ttu-id="c9d4f-152">Überprüfen Sie die Ergebnisse, und wählen Sie dann **Schließen** aus.</span><span class="sxs-lookup"><span data-stu-id="c9d4f-152">Review the results, and then select **Close**.</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="56d9e-153">Verwandte Artikel</span><span class="sxs-lookup"><span data-stu-id="56d9e-153">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="c9d4f-153">Verwandte Artikel</span><span class="sxs-lookup"><span data-stu-id="c9d4f-153">Related articles</span></span>
 
-[<span data-ttu-id="56d9e-154">Löschen eines Benutzers</span><span class="sxs-lookup"><span data-stu-id="56d9e-154">Delete a user</span></span>](delete-a-user.md)
-  
+[<span data-ttu-id="c9d4f-154">Löschen eines Benutzers</span><span class="sxs-lookup"><span data-stu-id="c9d4f-154">Delete a user</span></span>](delete-a-user.md)
