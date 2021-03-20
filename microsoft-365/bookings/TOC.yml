@@ -34,7 +34,7 @@
     - name: Holen Sie sich die Microsoft Bookings-App
       href: get-bookings-app.md
     - name: Bookings-App und virtuelle Besuche in Microsoft Teams
-      href: 'https://docs.microsoft.com/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
+      href: /microsoftteams/bookings-app-admin?bc=%2fmicrosoft-365%2fbookings%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fbookings%2ftoc.json
     - name: Vergleichsdiagramm – Web-App im Vergleich zu Teams-App
       href: comparison-chart.md
     - name: Löschen eines Buchungskalenders
