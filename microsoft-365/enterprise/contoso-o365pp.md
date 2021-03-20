@@ -14,46 +14,46 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verstehen, wie Contoso Microsoft Endpoint Configuration Manager zum Bereitstellen von Microsoft 365 Apps for Enterprise verwendet.
-ms.openlocfilehash: 2c02c28ddba7c24592ce09d87bf6f5c9df700a2a
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 71958b2e87882e478a852db1f906f61207837854
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754346"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907674"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Microsoft 365 Apps for Enterprise-Bereitstellung für Contoso
 
-Contoso hat seine PCs auf Windows 10 Enterprise-und Microsoft 365-Apps für Unternehmen aktualisiert, um eine effizientere Zusammenarbeit, eine bessere Sicherheit und eine modernere Desktopumgebung zu ermöglichen. Nachdem die Infrastruktur und die geschäftlichen Anforderungen von Contoso bewertet wurden, wurden diese wichtigen Anforderungen für die Bereitstellung ermittelt:
+Contoso hat seine PCs auf Windows 10 Enterprise und Microsoft 365 Apps for Enterprise aktualisiert, um eine effektivere Zusammenarbeit, eine bessere Sicherheit und eine modernere Desktopumgebung zu ermöglichen. Nachdem sie ihre Infrastruktur- und Geschäftsanforderungen bewertet haben, hat Contoso die folgenden zentralen Anforderungen für die Bereitstellung identifiziert:
 
-- Auf allen PCs sollten Microsoft 365-Apps für Enterprise ausgeführt werden.
-- Die Bereitstellung sollte, wenn möglich, vorhandene Verwaltungstools und Infrastruktur verwenden.
+- Auf allen PCs sollten Microsoft 365 Apps for Enterprise ausgeführt werden.
+- Die Bereitstellung sollte nach Möglichkeit vorhandene Verwaltungstools und Infrastruktur verwenden.
 - Die Bereitstellung muss mehrere Sprachen und vorhandene Architekturen auf den Geräten der Benutzer unterstützen.
-- PCs sollten stets auf dem neuesten Stand sein und mit minimalen IT-Verwaltungskosten und minimalen Auswirkungen auf die Benutzer sicherstellen.
+- PCs sollten mit minimalen IT-Verwaltungskosten und minimalen Auswirkungen für Benutzer auf dem neuesten Stand bleiben und sicher bleiben.
 
 ## <a name="deployment-tools"></a>Bereitstellungstools
 
-Basierend auf Ihren Anforderungen hat Contoso die Bereitstellung von Windows 10 Enterprise und Microsoft 365 apps for Enterprise über Configuration Manager (Current Branch) entschieden. Configuration Manager skaliert für große Umgebungen und bietet umfangreiche Steuerungsmöglichkeiten für Installation, Updates und Einstellungen. Außerdem verfügt es über integrierte Features, um die Bereitstellung und Verwaltung von Office einfacher und effizienter zu gestalten, einschließlich:
+Basierend auf ihren Anforderungen entschied sich Contoso für die Bereitstellung von Windows 10 Enterprise und Microsoft 365 Apps for Enterprise über Configuration Manager (Current Branch). Configuration Manager skaliert für große Umgebungen und bietet umfassende Kontrolle über Installation, Updates und Einstellungen. Es verfügt auch über integrierte Features, um die Bereitstellung und Verwaltung von Office zu vereinfachen und effizienter zu gestalten, einschließlich:
 
-- Peer Cache, der bei der Bereitstellung auf Geräten an Remotestandorten bei der begrenzten Netzwerkkapazität helfen kann.
-- Das Office-Client Verwaltungs Dashboard, das die Bereitstellung von Office und das Überwachen von Updates vereinfacht und Administratoren den Zugriff auf die neuesten Bereitstellungs-und Verwaltungsfunktionen ermöglicht.
-- Intelligent Language Pack-Bereitstellung, einschließlich der automatischen Bereitstellung der gleichen Sprache wie das Betriebssystem.
+- Peercache, der bei der Bereitstellung auf Geräten an Remotestandorten mit eingeschränkter Netzwerkkapazität helfen kann.
+- Das Office-Clientverwaltungsdashboard, das die Bereitstellung von Office und die Überwachung von Updates erleichtert und Administratoren Zugriff auf die neuesten Bereitstellungs- und Verwaltungsfeatures bietet.
+- Intelligente Language Pack-Bereitstellung, einschließlich der automatischen Bereitstellung derselben Sprache wie das Betriebssystem.
 - Eine vollständig unterstützte und einfach zu verwendende Methode zum Entfernen vorhandener Versionen von Office von einem Client während der Bereitstellung.
 
-Zusätzlich zu Configuration Manager hat Contoso das [Readiness Toolkit für Office-Add-Ins und VBA](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), ein kostenloses Tool von Microsoft, verwendet, um Kompatibilitätsprobleme mit Ihren Office-Makros und-Add-Ins zu bewerten.
+Zusätzlich zu Configuration Manager verwendete Contoso das [Readiness Toolkit für Office-Add-Ins und VBA,](/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)ein kostenloses Tool von Microsoft, um Kompatibilitätsprobleme mit ihren Office-Makros und -Add-Ins zu bewerten.
 
-## <a name="managing-deployment-and-updates"></a>Verwalten der Bereitstellung und Updates
+## <a name="managing-deployment-and-updates"></a>Verwalten von Bereitstellung und Updates
 
-Microsoft 365 apps for Enterprise verfügt über ein neues Veröffentlichungsmodell: Office as a Service. Mit dem Dienstmodell können Sie auf einfache Weise über neue Features auf dem Laufenden bleiben. Es ist jedoch häufig erforderlich, dass IT-Abteilungen die Art und Weise ändern, wie Sie neue Versionen bereitstellen und testen. Um Kompatibilitätsprobleme zu minimieren und um sicherzustellen, dass Ihre Computer auf dem neuesten Stand bleiben, hat Contoso Windows und Office in zwei Schritten bereitgestellt:
+Microsoft 365 Apps for Enterprise verfügt über ein neues Veröffentlichungsmodell: Office as a service. Das Dienstmodell macht es einfach, mit neuen Features auf dem neuesten Stand zu bleiben. It often requires IT departments to change how they deploy and test new releases. Um Kompatibilitätsprobleme zu minimieren und sicherzustellen, dass ihre Computer auf dem neuesten Stand sind, hat Contoso Windows und Office in zwei Phasen bereitgestellt:
 
-- Zunächst stellten Sie Microsoft 365-Apps für Unternehmen für eine kleine Gruppe von repräsentativen Geräten in der gesamten Organisation bereit. Diese Pilotgruppe wurde verwendet, um apps, Add-Ins und Hardware mit Microsoft 365 apps for Enterprise zu testen.
+- Zunächst haben sie Microsoft 365 Apps for Enterprise auf einer kleinen Gruppe repräsentativer Geräte in der gesamten Organisation bereitgestellt. Diese Pilotgruppe wurde zum Testen von Apps, Add-Ins und Hardware mit Microsoft 365 Apps for Enterprise verwendet.
 - Vier Monate später, nachdem alle kritischen Probleme mit Anwendungen, Add-Ins und Hardware in der Pilotgruppe gelöst waren, stellte Contoso Microsoft 365 Apps for Enterprise für die restlichen Geräte in der Organisation (die breite Gruppe) bereit.
 
-Anstatt Office-Updates mithilfe von Configuration Manager zu verwalten, aktivierte Contoso automatische Updates aus der Cloud. Durch Cloud-basierte Updates wird der Verwaltungsaufwand reduziert und gleichzeitig sichergestellt, dass Geräte auf dem neuesten Stand bleiben.
+Anstatt Updates für Office mithilfe von Configuration Manager zu verwalten, aktivierte Contoso automatische Updates aus der Cloud. Cloudbasierte Updates reduzieren den Verwaltungsaufwand und stellen sicher, dass Geräte auf dem neuesten Stand bleiben.
 
-Contoso hat den gleichen zweistufigen Ansatz für Feature-Updates wie für die Bereitstellung von Office befolgt: Geräte in der Pilotgruppe empfangen Feature-Updates vier Monate früher als Geräte in der restlichen Organisation (die breite Gruppe). Um dies für Office zu aktivieren, hat Contoso zwei empfohlene [Update Kanäle](https://docs.microsoft.com/DeployOffice/overview-update-channels)verwendet:
+Contoso verfolgte den gleichen zweistufigen Ansatz für Featureupdates wie für die Bereitstellung von Office: Geräte in der Pilotgruppe erhielten Featureupdates vier Monate früher als Geräte in der restlichen Organisation (die breite Gruppe). Um dies für Office zu aktivieren, verwendete Contoso zwei empfohlene [Updatekanäle:](/DeployOffice/overview-update-channels)
 
 - Halbjährlicher Enterprise-Kanal (Vorschau) für Updates für die Pilotgruppe
-- Semi-Annual Enterprise-Kanal für Updates für die breite Gruppe
+- Semi-Annual Enterprise Channel für Updates für die breite Gruppe
 
 Da der halbjährliche Enterprise-Kanal (Vorschau) vier Monate früher als der halbjährliche Enterprise-Kanal eine Version von Microsoft 365 Apps for Enterprise veröffentlicht, hat Contoso Zeit, die Updates zu validieren, ohne sie verwalten zu müssen.
 
@@ -61,28 +61,28 @@ Da der halbjährliche Enterprise-Kanal (Vorschau) vier Monate früher als der ha
 
 Um die Bereitstellung von Office abzuschließen, hat Contoso den folgenden Prozess implementiert, der Empfehlungen zu bewährten Vorgehensweisen von Microsoft umfasst:
 
-1. Vor der Bereitstellung hat Contoso das Readiness Toolkit für Office-Add-in und VBA verwendet, um Ihre apps und Office-Add-Ins zu testen, um deren Kompatibilität mit Microsoft 365 apps for Enterprise zu bewerten.
-1. In Configuration Manager haben Sie den Peer Cache auf Ihren Clientgeräten aktiviert, was bei der Bereitstellung auf Clientgeräten an Remotestandorten bei einer begrenzten Netzwerkkapazität hilft. 
-1. Contoso hat in Configuration Manager zwei Bereitstellungsgruppen als Geräte Auflistungen definiert: eine Pilotgruppe und eine umfassende Gruppe. Die Pilotgruppe, die eine kleine Gruppe von repräsentativen Geräten in der gesamten Organisation umfasste, wurde für weitere Tests von apps, Add-Ins und Hardware mit Windows 10 Enterprise und Microsoft 365 apps for Enterprise verwendet.
-1. Sie haben Bereitstellungspakete für Office mithilfe des Office-Client Verwaltungs Dashboards und des Assistenten für die Office 365 Installation erstellt, die beide Teil der Configuration Manager-Konsole sind. Sie haben zwei Microsoft 365-Apps für Enterprise-Pakete erstellt, eine für die Pilotgruppe im Semi-Annual Enterprise-Kanal (Preview) und eine für die breite Gruppe im Semi-Annual Enterprise-Kanal.
-2. Jedes Office-Paket umfasste Sprachpakete für Englisch, Französisch und Deutsch. Wenn ein Gerät eine Sprache benötigt, die nicht im Office-Paket enthalten war, wurde das Sprachpaket automatisch aus dem Office-Inhalts Zustellungs Netzwerk (CDN) heruntergeladen.
+1. Vor der Bereitstellung verwendete Contoso das Readiness Toolkit für Office-Add-In und VBA, um seine Apps und Office-Add-Ins zu testen, um die Kompatibilität mit Microsoft 365 Apps for Enterprise zu bewerten.
+1. In Configuration Manager haben sie den Peercache auf ihren Clientgeräten aktiviert, was bei der Bereitstellung auf Clientgeräten an Remotestandorten mit eingeschränkter Netzwerkkapazität hilft. 
+1. Contoso definierte zwei Bereitstellungsgruppen als Gerätesammlungen im Configuration Manager: eine Pilotgruppe und eine breite Gruppe. Die Pilotgruppe, die eine kleine Gruppe repräsentativer Geräte in der gesamten Organisation umfasste, wurde für zusätzliche Tests von Apps, Add-Ins und Hardware mit Windows 10 Enterprise und Microsoft 365 Apps for Enterprise verwendet.
+1. Sie haben Bereitstellungspakete für Office mithilfe des Office Client Management Dashboards und des Office 365 Installer-Assistenten erstellt, die beide Teil der Configuration Manager-Konsole sind. Sie haben zwei Microsoft 365 Apps for Enterprise-Pakete erstellt, eine für die Pilotgruppe im Semi-Annual Enterprise Channel (Preview) und eine für die breite Gruppe im Semi-Annual Enterprise Channel.
+2. Jedes Office-Paket enthielt englische, französische und deutsche Sprachpakete. Wenn für ein Gerät eine Sprache erforderlich war, die nicht im Office-Paket enthalten war, wurde dieses Sprachpaket automatisch aus dem Office Content Delivery Network (CDN) heruntergeladen.
 3. Das Unternehmen nutzte die integrierte Funktion im Office-Paket, um automatisch alle vorhandenen MSI-Versionen von Office zu entfernen, bevor Microsoft 365 Apps for Enterprise installiert wurde.
-4. In Configuration Manager wurden die Windows-und Office-Pakete für Verteilungspunkte in Ihrem Netzwerk bereitgestellt. Anschließend wurden die Tasksequenzen des Configuration Manager-Bereitstellungstasks ausgeführt, um das Pilotprogramm Microsoft 365 apps for Enterprise für die Pilotgruppe bereitzustellen.
-5. Nachdem die Kompatibilitätsprobleme mit der Pilotgruppe behoben wurden, hat Contoso die Tasksequenzen ausgeführt, um das Microsoft 365-Apps für Enterprise-Paket für die breite Gruppe bereitzustellen.
+4. In Configuration Manager stellten sie die Windows- und Office-Pakete an Verteilungspunkten im netzwerk bereitgestellt. Anschließend haben sie die Configuration Manager-Bereitstellungs-Tasksequenzen ausgeführt, um das Microsoft 365 Apps for Enterprise-Pilotpaket für die Pilotgruppe zu bereitstellen.
+5. Nachdem sie Kompatibilitätsprobleme mit der Pilotgruppe behoben haben, führte Contoso die Tasksequenzen aus, um das Microsoft 365 Apps for Enterprise-Paket für die breite Gruppe zu bereitstellen.
 
-Da sich Contoso entschlossen hat, Geräte automatisch aus der Cloud zu aktualisieren, war es nicht erforderlich, den Prozess im Configuration Manager zu verwalten. Ihre Geräte werden automatisch direkt aus der Cloud basierend auf dem Update Kanal aktualisiert, der in der anfänglichen Bereitstellung definiert wurde.
+Da sich Contoso entschlossen hat, Geräte automatisch aus der Cloud zu aktualisieren, war es nicht erforderlich, den Prozess im Configuration Manager zu verwalten. Ihre Geräte werden automatisch direkt aus der Cloud basierend auf dem Updatekanal aktualisiert, der in der anfänglichen Bereitstellung definiert wurde.
 
-Hier finden Sie die Bereitstellungsarchitektur von Contoso Microsoft 365 apps for Enterprise und laufende Updates.
+Hier finden Sie die Bereitstellungsarchitektur von Contoso Microsoft 365 Apps for Enterprise und fortlaufende Updates.
 
-![Die Contoso-Bereitstellungsinfrastruktur für Microsoft 365-Apps für Unternehmen](../media/contoso-o365pp/contoso-o365pp-fig1.png)
+![Die Contoso-Bereitstellungsinfrastruktur für Microsoft 365 Apps for Enterprise](../media/contoso-o365pp/contoso-o365pp-fig1.png)
  
 ## <a name="next-step"></a>Nächster Schritt
 
-Erfahren Sie, wie Contoso [Microsoft InTune](contoso-mdm.md) in Microsoft 365 für Unternehmen verwendet, um die Geräte und die apps zu verwalten, die Sie in der Organisation ausführen.
+Erfahren Sie, wie Contoso [Microsoft Intune](contoso-mdm.md) in Microsoft 365 Enterprise verwendet, um seine Geräte und die Apps zu verwalten, die in der gesamten Organisation ausgeführt werden.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 Apps for Enterprise](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
+[Microsoft 365 Apps for Enterprise](/deployoffice/deployment-guide-microsoft-365-apps)
 
 [Übersicht über Microsoft 365 Enterprise](microsoft-365-overview.md)
 

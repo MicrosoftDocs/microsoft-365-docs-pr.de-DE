@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Zusammenfassung: Informationen zum Konfigurieren eines standortübergreifenden virtuellen Azure-Netzwerks für Office-Serverarbeitslasten mit einer Standort-zu-Standort-VPN-Verbindung.'
-ms.openlocfilehash: cddb9cfcff02f91ef76f989b87e9dda049cc1b08
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 00fd1c2246e9e9ac3eb55ca5ece9d84ecf49a1d3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695942"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907708"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk
 
 Ein standortübergreifendes virtuelles Azure-Netzwerk ist mit Ihrem lokalen Netzwerk verbunden, sodass Ihr Netzwerk durch Subnetze und virtuelle Computer, die in Azure-Infrastrukturdiensten gehostet werden, erweitert wird. Mit dieser Verbindung können Computer in Ihrem lokalen Netzwerk direkt auf virtuelle Computer zugreifen, und umgekehrt. 
 
-Beispielsweise muss ein Verzeichnissynchronisierungsserver, der auf einem virtuellen Azure-Computer läuft, ihre lokalen Domänencontroller für Änderungen an Konten Abfragen und diese Änderungen mit Ihrem Microsoft 365-Abonnement synchronisieren. In diesem Artikel erfahren Sie, wie Sie ein standortübergreifendes virtuelles Azure-Netzwerk mithilfe einer VPN-Verbindung (Site-to-Site Virtual Private Network) einrichten, die zum Hosten von virtuellen Azure-Computern bereit ist.
+Beispielsweise muss ein Verzeichnissynchronisierungsserver, der auf einem virtuellen Azure-Computer ausgeführt wird, Ihre lokalen Domänencontroller auf Änderungen an Konten abfragen und diese Änderungen mit Ihrem Microsoft 365-Abonnement synchronisieren. In diesem Artikel erfahren Sie, wie Sie ein standortübergreifendes virtuelles Azure-Netzwerk mithilfe einer Standort-zu-Standort-VPN-Verbindung einrichten, die zum Hosten virtueller Azure-Computer bereit ist.
 
 ## <a name="configure-a-cross-premises-azure-virtual-network"></a>Konfigurieren eines standortübergreifenden virtuellen Azure-Netzwerks
 
@@ -70,7 +70,7 @@ Nachdem Sie die Standort-zu-Standort VPN-Verbindung hergestellt haben, fügen Si
     
 - Ein verfügbarer privater IPv4-Adressraum, der dem virtuellen Netzwerk und den Subnetzen zugewiesen wird, der über ausreichende Wachstumskapazität zur Unterstützung der jetzt und künftig benötigten virtuellen Computer verfügt.
     
-- Ein verfügbares VPN-Gerät in Ihrem lokalen Netzwerk zum Beenden der Standort-zu-Standort-VPN-Verbindung, das die Anforderungen von IPsec erfüllt. Weitere Informationen finden Sie unter [Informationen zu VPN-Geräten für VPN-Gatewayverbindungen zwischen Standorten](https://go.microsoft.com/fwlink/p/?LinkId=393093).
+- Ein verfügbares VPN-Gerät in Ihrem lokalen Netzwerk zum Beenden der Standort-zu-Standort-VPN-Verbindung, das die Anforderungen von IPsec erfüllt. Weitere Informationen finden Sie unter [Informationen zu VPN-Geräten für VPN-Gatewayverbindungen zwischen Standorten](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
     
 - Änderungen an Ihrer Routinginfrastruktur, damit der an den Adressraum des virtuellen Azure-Netzwerks geleitete Datenverkehr an das VPN-Gerät weitergeleitet wird, das die Standort-zu-Standort-VPN-Verbindung hostet.
     
@@ -129,10 +129,10 @@ Um die Anzahl der Adressen zu bestimmen, die für das Subnetz erforderlich sind,
 |**Anzahl der benötigten virtuellen Computer**|**Anzahl der erforderlichen Hostbits**|**Größe des Subnetzes**|
 |:-----|:-----|:-----|
 |1-3  <br/> |3  <br/> |/29  <br/> |
-|4-11  <br/> |4  <br/> |/28  <br/> |
-|12-27  <br/> |5  <br/> |/27  <br/> |
-|28-59  <br/> |6  <br/> |/26  <br/> |
-|60-123  <br/> |7  <br/> |/25  <br/> |
+|4-11  <br/> |4   <br/> |/28  <br/> |
+|12-27  <br/> |5   <br/> |/27  <br/> |
+|28-59  <br/> |6   <br/> |/26  <br/> |
+|60-123  <br/> |7   <br/> |/25  <br/> |
    
 ### <a name="planning-worksheet-for-configuring-your-azure-virtual-network"></a>Arbeitsblatt für die Planung der Konfiguration des virtuellen Azure-Netzwerks
 <a name="worksheet"> </a>
@@ -153,7 +153,7 @@ Füllen Sie für die Einstellungen des virtuellen Netzwerks Tabelle V aus.
    
 Füllen Sie für die Subnetze dieser Lösung Tabelle S aus.
   
-- Legen Sie für das erste Subnetz einen 28-Bit-Adressraum (mit einer /28-Präfixlänge) für das Azure-Gatewaysubnetz fest. Informationen zum Bestimmen dieses Adressraums finden Sie unter [Calculating the gateway subnet address space for Azure virtual networks](https://blogs.technet.microsoft.com/solutions_advisory_board/2016/12/01/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks/).
+- Legen Sie für das erste Subnetz einen 28-Bit-Adressraum (mit einer /28-Präfixlänge) für das Azure-Gatewaysubnetz fest. Informationen zum Bestimmen dieses Adressraums finden Sie unter [Calculating the gateway subnet address space for Azure virtual networks](/archive/blogs/solutions_advisory_board/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks).
     
 - Geben Sie für das zweite Subnetz einen Anzeigenamen, einen auf dem Adressraum des virtuellen Netzwerks basierenden einzelnen IP-Adressraum und einen beschreibenden Zweck an.
     
@@ -210,7 +210,7 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration.
 ### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>Phase 2: Erstellen des standortübergreifenden virtuellen Netzwerks in Azure
 <a name="Phase2"></a>
 
-Öffnen Sie zunächst eine Azure PowerShell-Eingabeaufforderung. Informationen zum Vorgehen, wenn Sie Azure PowerShell nicht installiert haben, finden Sie unter [Erste Schritte mit Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps).
+Öffnen Sie zunächst eine Azure PowerShell-Eingabeaufforderung. Informationen zum Vorgehen, wenn Sie Azure PowerShell nicht installiert haben, finden Sie unter [Erste Schritte mit Azure PowerShell](/powershell/azure/get-started-azureps).
 
  
 Melden Sie sich dann bei Ihrem Azure-Konto mit diesem Befehl an.
@@ -306,7 +306,7 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
 ![Das virtuelle Netzwerk verfügt jetzt über ein Gateway.](../media/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
   
-Konfigurieren Sie im nächsten Schritt das lokale VPN-Gerät zum Herstellen einer Verbindung mit dem Azure-VPN-Gateway. Weitere Informationen finden Sie unter [Informationen zu VPN-Geräten für Standort-zu-Standort-Verbindungen im virtuellen Azure-Netzwerk](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+Konfigurieren Sie im nächsten Schritt das lokale VPN-Gerät zum Herstellen einer Verbindung mit dem Azure-VPN-Gateway. Weitere Informationen finden Sie unter [Informationen zu VPN-Geräten für Standort-zu-Standort-Verbindungen im virtuellen Azure-Netzwerk](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
 Zum Konfigurieren Ihres VPN-Geräts benötigen Sie Folgendes:
   

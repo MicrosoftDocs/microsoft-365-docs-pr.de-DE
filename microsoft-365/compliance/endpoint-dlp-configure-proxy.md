@@ -19,19 +19,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: Erfahren Sie Näheres über das Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen für die Verhinderung von Datenverlust am Endpunkt (Data Loss Prevention, DLP).
-ms.openlocfilehash: 1e723adfbf16ba1180558e34b0fe4867e6337c57
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 3b8ebdbb08a6a866cc84df2031e77378925eaa0e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841625"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907005"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen für die Verhinderung von Datenverlust am Endpunkt
 
 Microsoft Endpunkt-DLP stützt sich auf Microsoft Windows-HTTP (WinHTTP) für die Datenmeldung und um mit dem Microsoft Endpunkt-Clouddienst zu kommunizieren. Das eingebettete Endpunkt-DLP-Feature wird im Systemkontext unter Verwendung des LocalSystem-Kontos ausgeführt.
 
 > [!TIP]
-> Organisationen, die Weiterleitungsproxys als Gateway zum Internet verwenden, können mithilfe des Netzwerkschutzes Untersuchungen hinter einem Proxy durchführen. Weitere Informationen finden Sie unter [Untersuchen von Verbindungsereignissen hinter Weiterleitungsproxys](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy).
+> Organisationen, die Weiterleitungsproxys als Gateway zum Internet verwenden, können mithilfe des Netzwerkschutzes Untersuchungen hinter einem Proxy durchführen. Weitere Informationen finden Sie unter [Untersuchen von Verbindungsereignissen hinter Weiterleitungsproxys](/windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy).
 
 Die WinHTTP-Konfigurationseinstellung ist unabhängig von den Proxyeinstellungen von Windows Internet (WinINet) für das Browsen im Internet und kann einen Proxyserver nur mithilfe der folgenden Methoden der automatischen Ermittlung erkennen:
 
@@ -89,7 +89,7 @@ Verwenden Sie den netsh-Befehl, um einen systemweiten statischen Proxy zu konfig
 
      `netsh winhttp reset proxy`
 
-Weitere Informationen hierzu finden Sie unter [netsh-Befehl: Syntax, Kontexte und Formatierung](https://docs.microsoft.com/windows-server/networking/technologies/netsh/netsh-contexts).
+Weitere Informationen hierzu finden Sie unter [netsh-Befehl: Syntax, Kontexte und Formatierung](/windows-server/networking/technologies/netsh/netsh-contexts).
 
 
 ## <a name="enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server"></a>Aktivieren des Zugriffs auf Endpunkt-DLP-Clouddienst-URLs im Proxy Server
@@ -129,7 +129,7 @@ Ersetzen Sie *HardDrivePath* durch den Pfad, in den das MDATPClientAnalyzer-Tool
 Wenn mindestens eine der Verbindungsoptionen einen (200)-Status zurückgibt, kann der Defender für Endpunkt-Client über diese Verbindungsmethode ordnungsgemäß mit der getesteten URL kommunizieren. 
 
 Wenn die Ergebnisse der Verbindungsüberprüfung hingegen auf einen Fehler hindeuten, wird ein HTTP-Fehler angezeigt (siehe HTTP-Status-Codes). Sie können dann die URLs in der Tabelle unter [Aktivieren des Zugriffs auf Endpunkt-DLP-Clouddienst-URLs im Proxy Server](#enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server) verwenden. Welche URLs Sie verwenden werden, ist von der Region abhängig, die während des Onboarding-Vorgangs ausgewählt wurde.
-[!NOTE] Das Tool für die Verbindungsanalyse ist nicht kompatibel mit der ASR-Regel [Erstellung von Prozessen durch PSExec- und WMI-Befehle blockieren](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). Sie müssen diese Regel vorübergehend deaktivieren, um das Verbindungstool auszuführen.
+[!NOTE] Das Tool für die Verbindungsanalyse ist nicht kompatibel mit der ASR-Regel [Erstellung von Prozessen durch PSExec- und WMI-Befehle blockieren](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). Sie müssen diese Regel vorübergehend deaktivieren, um das Verbindungstool auszuführen.
 
 [!NOTE] Wenn der TelemetryProxyServer in der Registrierung oder über eine Gruppenrichtlinie festgelegt ist, wird Defender für Endpunkt auf "Direct" zurückgreifen, wenn der Zugriff auf den definierten Proxy nicht möglich ist.
 Verwandte Themen • Onboarding von Windows 10-Geräten • Microsoft Endpunkt-DLP: Onboarding-Probleme behandeln
@@ -145,8 +145,8 @@ Verwandte Themen • Onboarding von Windows 10-Geräten • Microsoft Endpunkt-D
 - [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)
 - [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
 - [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md)
-- [Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+- [Microsoft Defender für Endpunkt](/windows/security/threat-protection/)
+- [Onboarding-Tools und -Methoden für Windows 10-Computer](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Azure AD-verbundene Geräte](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [Azure AD-verbundene Geräte](/azure/active-directory/devices/concept-azure-ad-join)
 - [Herunterladen des auf Chromium basierenden neuen Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

@@ -22,25 +22,25 @@ search.appverid:
 - MET150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Erfahren Sie, wie Sie Ihr Abonnement reaktivieren, wenn es abläuft, deaktiviert oder gekündigt wird.
-ms.openlocfilehash: 3e360e37a108c290e13ca3c1a147f8eb099648e6
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: d33b40d0cfb35f19d8894204173212d37dc40666
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766389"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907846"
 ---
 # <a name="reactivate-your-subscription"></a>Reaktivieren Ihres Abonnements
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
 Sie können Ihr Abonnement im Admin Center reaktivieren, wenn: das Abonnement abgelaufen ist, von Microsoft deaktiviert wurde oder wenn Sie es in der Mitte einer Abonnementlaufzeit gekündigt haben.
   
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Sie müssen ein globaler Administrator oder Abrechnungsadministrator sein, um ein Abonnement erneut zu aktivieren. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
@@ -73,7 +73,7 @@ Sie müssen ein globaler Administrator oder Abrechnungsadministrator sein, um ei
    Wenn Ihr Abonnement abgelaufen ist, kehrt Ihr Abonnement nach dem Übermitteln Ihrer Zahlungsdetails in einen aktiven Status zurück, und das Nächste Abrechnungsdatum wird je nach Ihrer aktuellen Abonnementverpflichtung um einen Monat oder ein Jahr verlängert.  Wenn Sie mit Kreditkarte oder per Bankeinzug bezahlen, wird Ihre Karte/Ihr Konto für die Verlängerung belastet. Wenn Sie per Rechnung bezahlen, wird die Verlängerung in Ihrer nächsten Rechnung angezeigt. Um sicherzustellen, dass Ihr Abonnement nicht erneut abläuft, aktivieren [Sie wiederkehrende Abrechnung](renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
    > [!NOTE]
-   > Die Möglichkeit, per Bankkonto zu bezahlen, ist in einigen Ländern oder Regionen nicht verfügbar.
+   > Die Option zum Bezahlen über ein Bankkonto ist in einigen Ländern oder Regionen nicht verfügbar.
   
    Wenn Ihr Abonnement gekündigt wurde oder deaktiviert wurde, weil eine Zahlung nicht empfangen  wurde, wird es in einen aktiven Status zurückgegeben, und Das Nächste Abrechnungsdatum bleibt gleich.
 
@@ -94,7 +94,7 @@ Sie müssen ein globaler Administrator oder Abrechnungsadministrator sein, um ei
    Wenn Ihr Abonnement abgelaufen ist, kehrt Ihr Abonnement nach dem Übermitteln Ihrer Zahlungsdetails in einen aktiven Status zurück, und das Nächste Abrechnungsdatum wird je nach Ihrer aktuellen Abonnementverpflichtung um einen Monat oder ein Jahr verlängert.  Wenn Sie mit Kreditkarte oder per Bankeinzug bezahlen, wird Ihre Karte/Ihr Konto für die Verlängerung belastet. Wenn Sie per Rechnung bezahlen, wird die Verlängerung in Ihrer nächsten Rechnung angezeigt. Um sicherzustellen, dass Ihr Abonnement nicht erneut abläuft, aktivieren [Sie wiederkehrende Abrechnung](renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
    > [!NOTE]
-   > Die Möglichkeit, per Bankkonto zu bezahlen, ist in einigen Ländern oder Regionen nicht verfügbar.
+   > Die Option zum Bezahlen über ein Bankkonto ist in einigen Ländern oder Regionen nicht verfügbar.
   
    Wenn Ihr Abonnement gekündigt wurde oder deaktiviert wurde, weil eine Zahlung nicht empfangen  wurde, wird es in einen aktiven Status zurückgegeben, und Das Nächste Abrechnungsdatum bleibt gleich.
 

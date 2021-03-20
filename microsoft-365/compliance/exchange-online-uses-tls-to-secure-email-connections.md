@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Erfahren Sie, wie Exchange Online und Microsoft 365 Transport Layer Security (TLS) und Forward Secrecy (FS) zum Sichern der E-Mail-Kommunikation verwenden. Außerdem erhalten Sie Informationen zum von Microsoft für Exchange Online ausgestellten Zertifikat.
-ms.openlocfilehash: 6e23ebc6451b9d139f1b18838007411028a059f3
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: cc7ca631f9322fdc8a85cfaba197e63d06d08aee
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727456"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906951"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Wie Exchange Online mithilfe von TLS E-Mail-Verbindungen schützt
 
@@ -45,17 +45,17 @@ Exchange Online-Server verschlüsseln Verbindungen mit anderen Exchange Online-S
   
 ## <a name="how-microsoft-365-uses-tls-between-microsoft-365-and-external-trusted-partners"></a>Verwenden von TLS zwischen Microsoft 365 und externen, vertrauenswürdigen Partnern in Microsoft 365
 
-Standardmäßig verwendet Exchange Online immer opportunistisches TLS. Dies bedeutet, dass Exchange Online immer versucht, Verbindungen mit der sichersten Version von TLS zuerst zu verschlüsseln, und arbeitet dann in der Liste der TLS-Chiffren nach unten, bis eine gefunden wird, auf die sich beide Parteien einigen können. Wenn Sie Exchange Online nicht so konfiguriert haben, dass Nachrichten an diesen Empfänger nur über sichere Verbindungen gesendet werden, wird die Nachricht standardmäßig unverschlüsselt gesendet, wenn die Empfängerorganisation die TLS-Verschlüsselung nicht unterstützt. Opportunistisches TLS ist für die meisten Unternehmen ausreichend. Für Unternehmen mit Complianceanforderungen wie z. B. medizinischen, Bank- oder Behördenorganisationen können Sie Exchange Online jedoch so konfigurieren, dass TLS erforderlich oder erzwingen wird. Anweisungen finden Sie unter [Configure mail flow using connectors in Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx).
+Standardmäßig verwendet Exchange Online immer opportunistisches TLS. Dies bedeutet, dass Exchange Online immer versucht, Verbindungen mit der sichersten Version von TLS zuerst zu verschlüsseln, und arbeitet dann in der Liste der TLS-Chiffren nach unten, bis eine gefunden wird, auf die sich beide Parteien einigen können. Wenn Sie Exchange Online nicht so konfiguriert haben, dass Nachrichten an diesen Empfänger nur über sichere Verbindungen gesendet werden, wird die Nachricht standardmäßig unverschlüsselt gesendet, wenn die Empfängerorganisation die TLS-Verschlüsselung nicht unterstützt. Opportunistisches TLS ist für die meisten Unternehmen ausreichend. Für Unternehmen mit Complianceanforderungen wie z. B. medizinischen, Bank- oder Behördenorganisationen können Sie Exchange Online jedoch so konfigurieren, dass TLS erforderlich oder erzwingen wird. Anweisungen finden Sie unter [Configure mail flow using connectors in Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
   
-Wenn Sie TLS zwischen Ihrer Organisation und einer vertrauenswürdigen Partnerorganisation konfigurieren möchten, kann Exchange Online die erzwungene TLS verwenden, um vertrauenswürdige Kommunikationskanäle zu erstellen. Bei der erzwungenen TLS ist es erforderlich, dass sich die Partnerorganisation bei Exchange Online mit einem Sicherheitszertifikat authentifiziert, sodass E-Mail-Nachrichten an Sie gesendet werden können. Ihr Partner muss seine eigenen Zertifikate verwalten, um dies zu tun. In Exchange Online verwenden wir Connectors, um Nachrichten zu schützen, die Sie vor unbefugtem Zugriff senden, bevor sie beim E-Mail-Anbieter des Empfängers eintreffen. Informationen zur Verwendung von Connectors zum Konfigurieren des Nachrichtenflusses finden Sie unter [Configure mail flow using connectors in Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx).
+Wenn Sie TLS zwischen Ihrer Organisation und einer vertrauenswürdigen Partnerorganisation konfigurieren möchten, kann Exchange Online die erzwungene TLS verwenden, um vertrauenswürdige Kommunikationskanäle zu erstellen. Bei der erzwungenen TLS ist es erforderlich, dass sich die Partnerorganisation bei Exchange Online mit einem Sicherheitszertifikat authentifiziert, sodass E-Mail-Nachrichten an Sie gesendet werden können. Ihr Partner muss seine eigenen Zertifikate verwalten, um dies zu tun. In Exchange Online verwenden wir Connectors, um Nachrichten zu schützen, die Sie vor unbefugtem Zugriff senden, bevor sie beim E-Mail-Anbieter des Empfängers eintreffen. Informationen zur Verwendung von Connectors zum Konfigurieren des Nachrichtenflusses finden Sie unter [Configure mail flow using connectors in Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
   
 ## <a name="tls-and-hybrid-exchange-server-deployments"></a>TLS und Exchange Server-Hybridbereitstellungen
 
-Wenn Sie eine hybride Exchange-Bereitstellung verwalten, muss sich Der lokale Exchange-Server mit einem Sicherheitszertifikat bei Microsoft 365 authentifizieren, um E-Mails an Empfänger zu senden, deren Postfächer sich nur in Office 365 befinden. Deshalb müssen Sie ihre eigenen Sicherheitszertifikate für Ihre lokalen Exchange-Server verwalten. Sie müssen diese Serverzertifikate auch sicher speichern und verwalten. Weitere Informationen zum Verwalten von Zertifikaten in Hybridbereitstellungen finden Sie unter [Zertifikatanforderungen für Hybridbereitstellungen](https://technet.microsoft.com/library/hh563848%28v=exchg.150%29.aspx).
+Wenn Sie eine hybride Exchange-Bereitstellung verwalten, muss sich Der lokale Exchange-Server mit einem Sicherheitszertifikat bei Microsoft 365 authentifizieren, um E-Mails an Empfänger zu senden, deren Postfächer sich nur in Office 365 befinden. Deshalb müssen Sie ihre eigenen Sicherheitszertifikate für Ihre lokalen Exchange-Server verwalten. Sie müssen diese Serverzertifikate auch sicher speichern und verwalten. Weitere Informationen zum Verwalten von Zertifikaten in Hybridbereitstellungen finden Sie unter [Zertifikatanforderungen für Hybridbereitstellungen](/exchange/certificate-requirements).
   
 ## <a name="how-to-set-up-forced-tls-for-exchange-online-in-office-365"></a>Einrichten von erzwungener TLS für Exchange Online in Office 365
 
-Damit bei Exchange Online-Kunden die erzwungene TLS so funktioniert, dass alle Ihre gesendeten und empfangenen E-Mails gesichert werden, müssen Sie mehrere Connectors einrichten, für die TLS erforderlich ist. Sie benötigen einen Connector für E-Mails, die an Ihre Benutzerpostfächer gesendet werden, und ein weiterer Connector ist für E-Mails erforderlich, die von Ihren Benutzerpostfächern gesendet werden. Erstellen Sie diese Connectors in der Exchange-Verwaltungskonsole in Office 365. Anweisungen finden Sie unter [Configure mail flow using connectors in Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx).
+Damit bei Exchange Online-Kunden die erzwungene TLS so funktioniert, dass alle Ihre gesendeten und empfangenen E-Mails gesichert werden, müssen Sie mehrere Connectors einrichten, für die TLS erforderlich ist. Sie benötigen einen Connector für E-Mails, die an Ihre Benutzerpostfächer gesendet werden, und ein weiterer Connector ist für E-Mails erforderlich, die von Ihren Benutzerpostfächern gesendet werden. Erstellen Sie diese Connectors in der Exchange-Verwaltungskonsole in Office 365. Anweisungen finden Sie unter [Configure mail flow using connectors in Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
   
 ## <a name="tls-certificate-information-for-exchange-online"></a>TLS-Zertifikatinformationen für Exchange Online
 
@@ -111,10 +111,8 @@ In der Regel erhalten Sie Updates für Ihre Stammzertifikate automatisch über W
 
 Eine Liste der unterstützten Verschlüsselungssuiten finden Sie unter [Technische Referenzdetails zur Verschlüsselung](technical-reference-details-about-encryption.md).
   
-[Einrichten von Connectors für den sicheren Nachrichtenfluss mit einer Partnerorganisation](https://technet.microsoft.com/library/dn751021%28v=exchg.150%29.aspx)
+[Einrichten von Connectors für den sicheren Nachrichtenfluss mit einer Partnerorganisation](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)
   
-[Connectors mit erweiterter E-Mail-Sicherheit](https://technet.microsoft.com/library/261d92e4-7371-4555-b781-2062b5bb5278.aspx)
+[Connectors mit erweiterter E-Mail-Sicherheit](/previous-versions/exchange-server/exchange-150/dn942516(v=exchg.150))
   
 [Verschlüsselung in Microsoft 365](encryption.md)
-  
-

@@ -14,16 +14,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informationen dazu, wie Contoso Microsoft Endpoint Configuration Manager zur Bereitstellung von direkten Upgrades für Windows 10 Enterprise verwendete.
-ms.openlocfilehash: 0543f24665048d0679bc1b099fdd0a2d431c1e54
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 7907bf64acce3af8b21459202cb6f5cbc1e9f990
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754247"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907686"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Bereitstellung von Windows 10 Enterprise für Contoso
 
-Vor dem breiten Rollout von Microsoft 365 for Enterprise hatte Contoso Windows-kompatible PCs und Geräte mit einer Kombination aus Windows 7 (10%), Windows 8.1 (65%) und Windows 10 (25%). Contoso wollte ein Upgrade seiner PCs für Windows 10 Enterprise nutzen Sie die erweiterte Sicherheit und senken Sie den IT-Overhead von automatisierten Bereitstellungen von Updates. 
+Vor dem breiten Rollout von Microsoft 365 Enterprise hatte Contoso Windows-kompatible PCs und Geräte mit einer Mischung aus Windows 7 (10%), Windows 8.1 (65%) und Windows 10 (25%). Contoso wollte seine PCs für Windows 10 Enterprise aktualisieren, um die erweiterte Sicherheit zu nutzen und den IT-Aufwand durch automatisierte Bereitstellungen von Updates zu verringern. 
 
 Nach der Bewertung der Infrastruktur und der Geschäftsanforderungen identifizierte Contoso die folgenden Hauptanforderungen für die Bereitstellung:
 
@@ -54,7 +54,7 @@ Contoso verfügt über eine vorhandene Infrastruktur von Configuration Manager (
 
 ## <a name="planning-process"></a>Planungsprozess
 
-Contoso hat die Upgrade-Bereitschaft in Windows Analytics verwendet, um die Gruppe der installierten apps und deren Kompatibilität mit Windows 10 Enterprise zu ermitteln.
+Contoso hat die Upgradebereitschaft in Windows Analytics verwendet, um den Satz installierter Apps und deren Kompatibilität mit Windows 10 Enterprise zu ermitteln.
 
 ## <a name="deployment-process"></a>Bereitstellungsprozess
 
@@ -62,11 +62,11 @@ Um die Bereitstellung des direkten Upgrades von Windows 10 Enterprise abzuschlie
 
 1. Der Peercache für Configuration Manager wurde aktiviert.
 2. Es wurden angepasste Windows-Pakete basierend auf Images aus dem Volume Licensing Service Center erstellt.
-3. Verwenden Sie den Konfigurations-Manager, um die Windows-Pakete für Verteilungspunkte in Ihrem Netzwerk bereitzustellen und Builds für die drei Bereitstellungsgruppen für Validierung und Bereitstellung bereitzustellen.
+3. Verwendeter Configuration Manager zum Bereitstellen der Windows-Pakete an Verteilungspunkten in ihrem Netzwerk und Bereitstellen von Builds für die drei Validierungs- und Bereitstellungssinggruppen.
 4. Mithilfe der Lösungen für Geräteintegrität und Updatebereitschaft von Windows Analytics wurden der Erfolg von Computern und Geräten in den drei Ringen für Überprüfung und Staging der Bereitstellung bewertet.
-5. Basierend auf den Windows Analytics-Informationen hat Contoso die Version von Windows 10 Enterprise festgelegt, die in der breiten Bereitstellungsgruppe bereitgestellt werden soll.
-6. Die Configuration Manager-Bereitstellungstasksequenzen wurden ausgeführt, um das ausgewählte Windows-Paket für die Breite Bereitstellungsgruppe bereitzustellen.
-7. Überwachte PCs und Geräte in der breiten Bereitstellungsgruppe mithilfe der Geräte Integrität und Update Compliance-Lösungen, um Probleme zu beheben.
+5. Basierend auf den Windows Analytics-Informationen hat Contoso die Version von Windows 10 Enterprise bestimmt, die für die breite Bereitstellungsgruppe bereitgestellt werden soll.
+6. Führte die Configuration Manager-Bereitstellungs-Tasksequenzen aus, um das ausgewählte Windows-Paket für die breite Bereitstellungsgruppe zu bereitstellen.
+7. Überwachte PCs und Geräte in der breiten Bereitstellungsgruppe mit den Lösungen Device Health und Update Compliance, um Probleme zu beheben.
 
 Hier ist Contosos Bereitstellungsarchitektur für das direkte Upgrade und fortlaufende Updates.
 
@@ -78,15 +78,15 @@ Diese Infrastruktur besteht aus:
   - Images für Windows 10 Enterprise-Pakete aus dem Microsoft Volume Licensing Center im Microsoft Network abruft.
   - Als zentraler Verwaltungspunkt für Bereitstellungspakete fungiert.
 - Regionale Verteilungspunkte befinden sich in der Regel in den regionalen Hub-Büros von Contoso.
-- Windows-PCs und-Geräte an verschiedenen Standorten, die die Bereitstellungspakete für das in-Place-Upgrade oder laufende Updates basierend auf der Gruppenmitgliedschaft empfangen und installieren.
+- Windows-PCs und -Geräte an verschiedenen Standorten, die die Bereitstellungspakete für das laufende Upgrade oder laufende Updates basierend auf der Gruppenmitgliedschaft empfangen und installieren.
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Erfahren Sie, wie Contoso seine Configuration Manager-Infrastruktur nutzt, um [aktuelle Microsoft 365-Apps für Unternehmen in Ihrer Organisation bereitzustellen und zu halten](contoso-o365pp.md) . 
+Erfahren Sie, wie Contoso seine Configuration Manager-Infrastruktur nutzt, um aktuelle [Microsoft 365 Apps for Enterprise](contoso-o365pp.md) in der gesamten Organisation zu bereitstellen und auf dem laufenden zu halten. 
 
 ## <a name="see-also"></a>Siehe auch
 
-[Windows 10 Enterprise](https://docs.microsoft.com/windows/deployment/)
+[Windows 10 Enterprise](/windows/deployment/)
 
 [Übersicht über Microsoft 365 Enterprise](microsoft-365-overview.md)
 

@@ -19,12 +19,12 @@ ms.custom:
 description: Dieser Artikel enthält Informationen zur Problembehandlung bei Problemen beim Senden von E-Mails an Posteingange in Microsoft 365 & bewährte Methoden für Massensendungen an Microsoft 365-Kunden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1e4a91f70b59debc770a5811638bd64a1eef36dd
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 5cebb5ab3f5f4adf321e9c7992fcc5efe40ac2a2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286381"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908150"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>An Microsoft 365 gesendete E-Mail zur Problembehandlung
 
@@ -34,11 +34,11 @@ ms.locfileid: "50286381"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](office-365-atp.md)
 
-Dieser Artikel enthält Informationen zur Problembehandlung für Absender, die Probleme haben, wenn sie versuchen, E-Mails an Posteingange in Microsoft 365 zu senden, und bewährte Methoden für Massen-E-Mails an Kunden.
+Dieser Artikel enthält Informationen zur Problembehandlung für Absender, die Probleme beim Versuch haben, E-Mails an Posteingange in Microsoft 365 zu senden, und bewährte Methoden für Massensendungen an Kunden.
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>Verwalten Sie die Sendezuverlässigkeit Ihrer IP-Adresse und Ihrer Domäne?
 
-Die EOP-Filtertechnologien sind darauf ausgelegt, Antispamschutz für Microsoft 365 sowie andere Produkte von Microsoft wie Exchange Server. Wir nutzen auch SPF, DKIM und DMARC; E-Mail-Authentifizierungstechnologien, mit denen das Problem des Spoofings und Phishings durch Überprüfen, ob die Domäne, die die E-Mail sendet, dazu berechtigt ist, gelöst werden kann. EOP-Filter werden von einer Reihe von Faktoren der sendenden IP-Adresse, Domäne, Authentifizierung, Listengenauigkeit, Beschwerdehäufigkeit, Inhalte und mehr beeinflusst. Einer der wichtigsten Faktoren ist das Reduzieren der Absenderzuverlässigkeit und der Möglichkeit der E-Mail-Zustellung durch die Junk-E-Mail-Beschwerdehäufigkeit.
+EOP-Filtertechnologien bieten Antispamschutz für Microsoft 365 sowie andere Microsoft-Produkte wie Exchange Server. Wir nutzen auch SPF, DKIM und DMARC; E-Mail-Authentifizierungstechnologien, mit denen das Problem des Spoofings und Phishings durch Überprüfen, ob die Domäne, die die E-Mail sendet, dazu berechtigt ist, gelöst werden kann. EOP-Filter werden von einer Reihe von Faktoren der sendenden IP-Adresse, Domäne, Authentifizierung, Listengenauigkeit, Beschwerdehäufigkeit, Inhalte und mehr beeinflusst. Einer der wichtigsten Faktoren ist das Reduzieren der Absenderzuverlässigkeit und der Möglichkeit der E-Mail-Zustellung durch die Junk-E-Mail-Beschwerdehäufigkeit.
 
 ## <a name="are-you-sending-email-from-new-ip-addresses"></a>Senden Sie E-Mails von neuen IP-Adressen?
 
@@ -58,19 +58,19 @@ Wir akzeptieren möglicherweise keine E-Mail-Nachrichten von Absendern, für die
 - 10.0.0.0/8 (oder 10.0.0.0 - 10.255.255.255)
 - 172.16.0.0/11 (oder 172.16.0.0 - 172.31.255.255)
 
-## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Sie haben einen Unzustellbarkeitsbericht (Non-Delivery Report, NDR) beim Senden von E-Mails an einen Benutzer in Office 365 erhalten.
+## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Sie haben beim Senden von E-Mails an einen Benutzer in Office 365 einen Unzustellbarkeitsbericht (Unzustellbarkeitsbericht) erhalten.
 
 Einige Probleme bei der Übermittlung sind das Ergebnis der IP-Adresse des Absenders, die von Microsoft blockiert wird, oder weil das Benutzerkonto als gesperrter Absender aufgrund von vorherigen Spam-Aktivitäten identifiziert wird. Wenn Sie glauben, dass Sie den NDR irrtümlich erhalten haben, führen Sie zunächst alle Anweisungen in der NDR-Nachricht aus, um das Problem zu beheben.
 
-Weitere Informationen zu dem Fehler, den Sie erhalten haben, finden Sie in der Liste der Fehlercodes in [E-Mail-Unzustellungsberichten in Exchange Online.](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
+Weitere Informationen zu dem fehler, den Sie erhalten haben, finden Sie in der Liste der Fehlercodes unter [E-Mail-Unzustellungsberichte in Exchange Online](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
- Wenn Sie z. B. den folgenden NDR erhalten, gibt dies an, dass die sendende IP-Adresse von Microsoft blockiert wurde:
+ Wenn Sie z. B. den folgenden Unndr erhalten, gibt er an, dass die sendende IP-Adresse von Microsoft blockiert wurde:
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
-Zum Anfordern der Entfernung aus dieser Liste können Sie das Listenentfernungsportal verwenden, um sich selbst aus der Liste [blockierter Absender zu entfernen.](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
+Zum Anfordern des Entfernens aus dieser Liste können Sie das Listendelist-Portal verwenden, um sich selbst aus der Liste [blockierter Absender zu entfernen.](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
 
-## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>Meine E-Mail ist im Junk-E-Mail-Ordner des Empfängers gelandet.
+## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>Meine E-Mails sind im Junk-E-Mail-Ordner des Empfängers gelandet.
 
 Falls eine Nachricht fälschlicherweise von EOP als Spam identifiziert wurde, können Sie diese falsch positive Nachricht zusammen mit dem Empfänger an das Microsoft-Spamanalyseteam weiterleiten, das die Nachricht bewertet und untersucht. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -84,19 +84,19 @@ Sie haben einen NDR erhalten, da an der betreffenden IP-Adresse eine verdächtig
 
 ## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Ich kann keine E-Mails von Absendern in Microsoft 365 empfangen
 
- Damit Sie Nachrichten von unseren Benutzern empfangen können, muss Ihr Netzwerk Verbindungen von den IP-Adressen zulassen, die EOP in unseren Rechenzentren verwendet. Weitere Informationen finden Sie unter [Exchange Online Protection IP-Adressen.](../../enterprise/urls-and-ip-address-ranges.md)
+ Damit Sie Nachrichten von unseren Benutzern empfangen können, muss Ihr Netzwerk Verbindungen von den IP-Adressen zulassen, die EOP in unseren Rechenzentren verwendet. Weitere Informationen finden Sie unter [Exchange Online Protection IP-Adressen](../../enterprise/urls-and-ip-address-ranges.md).
 
 ## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Bewährte Methoden für Massen-E-Mails an Microsoft 365-Benutzer
 
-Wenn Sie häufig Massen-E-Mail-Kampagnen an Microsoft 365-Benutzer durchführen und sicherstellen möchten, dass Ihre E-Mails sicher und zeitnah eintreffen, folgen Sie den Tipps in diesem Abschnitt.
+Wenn Sie häufig Massen-E-Mail-Kampagnen an Microsoft 365-Benutzer durchführen und sicherstellen möchten, dass Ihre E-Mails sicher und zeitnah ankommen, folgen Sie den Tipps in diesem Abschnitt.
 
-### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Stellen Sie sicher, dass der "Von"-Name an den Sendenden der Nachricht ankn?nnen soll.
+### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Stellen Sie sicher, dass der Von-Name die Nachricht sendet.
 
 Der Betreff sollte eine kurze Zusammenfassung der Nachricht darstellen, und der Nachrichtentext sollte klar und eindeutig angeben, um was es beim Angebot, Dienst oder Produkt geht. Beispiel:
 
 Richtig:
 
-> Von: marketing@shoppershandbag.com <br> Betreff: Katalog für die Weihnachtszeit aktualisiert!
+> Von: marketing@shoppershandbag.com <br> Betreff: Aktualisierter Katalog für die Weihnachtszeit!
 
 Falsch:
 

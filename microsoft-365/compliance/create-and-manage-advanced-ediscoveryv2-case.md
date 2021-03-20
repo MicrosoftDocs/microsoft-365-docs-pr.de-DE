@@ -12,31 +12,31 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365solution-ediscovery
+- m365solution-aed
 - m365initiative-compliance
-- m365initiative-scenario
+- m365solution-scenario
 search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel wird beschrieben, wie Advanced eDiscovery-Fälle erstellt und verwaltet werden. Der erste Schritt besteht in der Erstellung eines Falls und der Verwendung von Advanced eDiscovery-Features und -Funktionen.
-ms.openlocfilehash: 0301213cf6d7e3c30b98ad5125468c6c75ed95b1
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: d0f63bca90945c3dfe13b08fa0f1d139da8a9189
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838258"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908361"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>Erstellen und Verwalten eines Advanced eDiscovery-Falls
 
 Nach dem Einrichten von Advanced eDiscovery und dem Zuweisen von Berechtigungen zu [eDiscovery-Managern](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) in Ihrer Organisation, die Fälle verwalten, besteht der nächste Schritt im Erstellen und Verwalten eines Falls.
 
-Dieser Artikel bietet außerdem einen umfassenden Überblick über die Verwendung von Fällen zum Verwalten des Advanced eDiscovery-Workflows für eine rechtliche Untersuchung.
+Dieser Artikel bietet außerdem einen umfassenden Überblick über die Verwendung von Fällen zum Verwalten des Advanced eDiscovery-Workflows für einen Rechtsstreit oder andere Arten von Untersuchungen.
 
 ## <a name="create-a-case"></a>Erstellen eines Falls
 
-Führen Sie die folgenden Schritte aus, um einen Fall zu erstellen und Mitglieder hinzuzufügen. Der Benutzer, der den Fall erstellt, wird automatisch als Mitglied hinzugefügt.
+Führen Sie die folgenden Schritte aus, um einen Fall zu erstellen und Mitglieder hinzuzufügen. Der Benutzer, der den Fall erstellt, wird automatisch als Mitglied hinzugefügt. Mitglieder des Falls können auf den Fall im Microsoft 365 Compliance Center zugreifen und Erweiterte eDiscovery-Aufgaben ausführen.
 
-1. Wechseln Sie zu, und melden Sie sich mit den Anmeldeinformationen für ein Benutzerkonto [https://compliance.microsoft.com](https://compliance.microsoft.com) an, dem eDiscovery-Berechtigungen zugewiesen wurden. Mitglieder der Rollengruppe Organisationsverwaltung können auch Erweiterte eDiscovery-Fälle erstellen.
+1. Wechseln Sie zu, und melden Sie sich mit den Anmeldeinformationen für ein Benutzerkonto <https://compliance.microsoft.com> an, dem eDiscovery-Berechtigungen zugewiesen wurden. Mitglieder der Rollengruppe Organisationsverwaltung können auch Erweiterte eDiscovery-Fälle erstellen.
 
 2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Centers auf **Ale anzeigen**, und klicken Sie dann auf **eDiscovery > Advanced**.
 
@@ -82,7 +82,7 @@ Damit Sie mit Advanced eDiscovery beginnen können, finden Sie hier einen grundl
 
    - Sie können den [Kommunikationsworkflow](managing-custodian-communications.md) in Advanced eDiscovery verwenden, um eine Benachrichtigung über das gesetzliche Halterecht an Custodians zu senden.
 
-2. **[Sammeln relevanter Daten aus Datenquellen](create-draft-collection.md)**. Nachdem Sie einem Fall Custodians und nicht verwahrte Datenquellen hinzugefügt haben, verwenden Sie das integrierte Sammlungstool, um diese Datenquellen nach Inhalten zu durchsuchen, die für den Fall relevant sein können. Sie verwenden Schlüsselwörter, Eigenschaften [](building-search-queries.md) und Bedingungen, um Suchabfragen zu erstellen, die Suchergebnisse mit den Daten zurückgeben, die für den Fall am ehesten relevant sind. Sie können auch Folgendes tun:
+2. **[Sammeln relevanter Inhalte aus Datenquellen](create-draft-collection.md)**. Nachdem Sie einem Fall Custodians und nicht verwahrte Datenquellen hinzugefügt haben, verwenden Sie das integrierte Sammlungstool, um diese Datenquellen nach Inhalten zu durchsuchen, die für den Fall relevant sein können. Sie verwenden Schlüsselwörter, Eigenschaften [](building-search-queries.md) und Bedingungen, um Suchabfragen zu erstellen, die Suchergebnisse mit den Daten zurückgeben, die für den Fall am ehesten relevant sind. Sie können auch Folgendes tun:
 
    - Zeigen [Sie Sammlungsstatistiken](collection-statistics-reports.md) an, mit deren Hilfe Sie eine Auflistung verfeinern können, um die Ergebnisse zu verfeinern.
 
@@ -107,3 +107,15 @@ Damit Sie mit Advanced eDiscovery beginnen können, finden Sie hier einen grundl
    - [Analysieren von Falldaten](analyzing-data-in-review-set.md). Die Analysefunktionalität in Advanced eDiscovery ist leistungsstark. Nachdem Sie Analysen für die Daten im Überprüfungssatz ausgeführt haben, führen wir Analysen durch, z. B. in der Nähe von Duplikaterkennung, E-Mail-Threading und Designs, die dazu beitragen können, die Menge an Dokumenten zu reduzieren, die Sie überprüfen müssen. Außerdem generieren wir einen Analysebericht, der das Ergebnis der ausgeführten Analyse zusammenfasst. Wie bereits erläutert, wird bei der Ausführung der Analyse auch [das Erkennungsmodell der Anwalts-Client-Rechte ausgeführt.](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)
 
 5. **Exportieren und Herunterladen von Falldaten**. Ein letzter Schritt nach dem Sammeln, Überprüfen und Analysieren von Falldaten besteht im Exportieren aus Advanced eDiscovery zur externen Überprüfung oder zur Überprüfung durch Personen außerhalb des Untersuchungsteams. Das Exportieren von Daten ist ein Zwei-Schritt-Prozess. Der erste Schritt [](export-documents-from-review-set.md) besteht im Exportieren von Daten aus dem Überprüfungssatz und kopieren Sie sie an einen anderen Azure Storage-Speicherort (einen von Microsoft oder einen von Ihrer Organisation verwalteten). Anschließend verwenden Sie Azure Storage Explorer, um [die Daten](download-export-jobs.md) auf einen lokalen Computer herunterzuladen. Zusätzlich zu den exportierten Datendateien enthält der Inhalt des Exportpakets auch einen Exportbericht, einen Zusammenfassenden Bericht und einen Fehlerbericht.
+
+## <a name="advanced-ediscovery-architecture"></a>Erweiterte eDiscovery-Architektur
+
+Hier ist ein Architekturdiagramm, das den Advanced eDiscovery-End-to-End-Workflow in einer Einzel-Geo-Umgebung und in einer Multi-Geo-Umgebung sowie den End-to-End-Datenfluss zeigt, der mit dem elektronischen Discoveryreferenzmodell abgestimmt [ist.](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)
+
+[![Modellposter: Advanced eDiscovery Architecture in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[Anzeigen als Bild](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[Herunterladen als PDF-Datei](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
+
+[Herunterladen als Visio-Datei](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)

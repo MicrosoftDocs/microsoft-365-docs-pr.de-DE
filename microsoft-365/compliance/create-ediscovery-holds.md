@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie können einen Haltebereich erstellen, der einem Core eDiscovery-Fall zugeordnet ist, um Inhalte zu erhalten, die für eine Untersuchung relevant sein können.
-ms.openlocfilehash: 377a9e7a31864f177f0ccbdc4cf2789fdc1cf373
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ca87b1b2ad35949de01622771b1ae78c5b3038e9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423466"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908339"
 ---
 # <a name="create-an-ediscovery-hold"></a>Erstellen eines eDiscovery-Speichers
 
@@ -134,11 +134,11 @@ Alternativ werden Unterhaltungen, die Teil der Chatliste in Teams sind *(1:1-Cha
 > [!IMPORTANT]
 > In einer cloudbasierten Organisation müssen Benutzer, die an Unterhaltungen teilnehmen, die Teil der Chatliste in Teams sind, über ein Exchange Online-Postfach verfügen, damit Chatunterhaltungen beibehalten werden können, wenn das Postfach in einem eDiscovery-Archiv platziert wird. Das liegt daran, dass Unterhaltungen, die Teil der Chatliste sind, in den cloudbasierten Postfächern der Chatteilnehmer gespeichert werden. Wenn ein Chatteilnehmer kein Exchange Online-Postfach hat, können Sie diese Chatunterhaltungen nicht beibehalten. In einer Exchange-Hybridbereitstellung können Benutzer mit einem lokalen Postfach beispielsweise an Unterhaltungen teilnehmen, die Teil der Chatliste in Teams sind. In diesem Fall können Inhalte aus diesen Unterhaltungen jedoch nicht beibehalten werden, da diese Benutzer über keine cloudbasierten Postfächer verfügen, die in der Warteschleife platziert werden können.
 
-Weitere Informationen zum Beibehalten von Microsoft Teams-Inhalten finden Sie unter [Place a Microsoft Teams user or team on legal hold](https://docs.microsoft.com/MicrosoftTeams/legal-hold).
+Weitere Informationen zum Beibehalten von Microsoft Teams-Inhalten finden Sie unter [Place a Microsoft Teams user or team on legal hold](/MicrosoftTeams/legal-hold).
 
 ### <a name="preserve-card-content"></a>Beibehalten von Karteninhalten
 
-Ebenso werden von Apps in Teams-Kanälen, 1:1-Chats und 1:N-Gruppenchats generierte Karteninhalte in Postfächern gespeichert und beibehalten, wenn ein Postfach in einem eDiscovery-Archiv platziert wird. Eine *Karte* ist ein UI-Container für kurze Inhaltsteile. Karten können mehrere Eigenschaften und Anlagen aufweisen und Schaltflächen enthalten, die Kartenaktionen auslösen. Weitere Informationen finden Sie unter [Karten](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards). Wie bei anderen Teams-Inhalten hängt der Speicherort der Karteninhalte davon ab, wo die Karte verwendet wurde. Inhalte für Karten, die in einem Teams-Kanal verwendet werden, werden im Postfach der Teams-Gruppe gespeichert. Karteninhalte für 1:1- und 1xN-Chats werden in den Postfächern der Chat-Teilnehmer gespeichert.
+Ebenso werden von Apps in Teams-Kanälen, 1:1-Chats und 1:N-Gruppenchats generierte Karteninhalte in Postfächern gespeichert und beibehalten, wenn ein Postfach in einem eDiscovery-Archiv platziert wird. Eine *Karte* ist ein UI-Container für kurze Inhaltsteile. Karten können mehrere Eigenschaften und Anlagen aufweisen und Schaltflächen enthalten, die Kartenaktionen auslösen. Weitere Informationen finden Sie unter [Karten](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Wie bei anderen Teams-Inhalten hängt der Speicherort der Karteninhalte davon ab, wo die Karte verwendet wurde. Inhalte für Karten, die in einem Teams-Kanal verwendet werden, werden im Postfach der Teams-Gruppe gespeichert. Karteninhalte für 1:1- und 1xN-Chats werden in den Postfächern der Chat-Teilnehmer gespeichert.
 
 ### <a name="preserve-meeting-and-call-information"></a>Beibehalten von Besprechungs- und Anrufinformationen
 
@@ -163,7 +163,7 @@ Beachten Sie folgendes, wenn Sie Teams und Office 365-Gruppen in einem eDiscover
 
 - Wie bereits erläutert, müssen Sie das Postfach und die SharePoint-Website angeben, die einer Gruppe oder einem Team zugeordnet sind, um Inhalte in Teams und Office 365-Gruppen in der Warteschleife zu platzieren.
 
-- Führen Sie **das Cmdlet Get-UnifiedGroup** in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) aus, um Eigenschaften für Teams und Office 365-Gruppen anzeigen zu können. Dies ist eine gute Möglichkeit, um die URL für die Website zu erhalten, die einem Team oder einer Office 365-Gruppe zugeordnet ist. Mit dem folgenden Befehl werden z. B. ausgewählte Eigenschaften für die Office 365-Gruppe „Geschäftsleitung“ angezeigt:
+- Führen Sie **das Cmdlet Get-UnifiedGroup** in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) aus, um Eigenschaften für Teams und Office 365-Gruppen anzeigen zu können. Dies ist eine gute Möglichkeit, um die URL für die Website zu erhalten, die einem Team oder einer Office 365-Gruppe zugeordnet ist. Mit dem folgenden Befehl werden z. B. ausgewählte Eigenschaften für die Office 365-Gruppe „Geschäftsleitung“ angezeigt:
 
     ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -190,10 +190,10 @@ Beachten Sie folgendes, wenn Sie Teams und Office 365-Gruppen in einem eDiscover
 
 ## <a name="preserve-content-in-onedrive-accounts"></a>Beibehalten von Inhalten in #A0
 
-Informationen zum Sammeln einer Liste der URLs für die OneDrive for #A0 in Ihrer Organisation, damit Sie sie einem Halte- oder Suchfall hinzufügen können, der einem eDiscovery-Fall zugeordnet ist, finden Sie unter [Create a list of all OneDrive locations in your organization](https://docs.microsoft.com/onedrive/list-onedrive-urls). Das Skript in diesem Artikel erstellt eine Textdatei, die eine Liste aller #A0 in Ihrer Organisation enthält. Um dieses Skript ausführen zu können, müssen Sie die SharePoint Online-Verwaltungsshell installieren und verwenden. Achten Sie darauf, die URL für die "MeineWebsite"-Domäne Ihrer Organisation an jede OneDrive-Website anzuhängen, die Sie durchsuchen möchten. Dies ist die Domäne, die Ihr gesamtes OneDrive enthält, z. B. `https://contoso-my.sharepoint.com`. Hier ein Beispiel für die URL der OneDrive-Website eines Benutzers: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
+Informationen zum Sammeln einer Liste der URLs für die OneDrive for #A0 in Ihrer Organisation, damit Sie sie einem Halte- oder Suchfall hinzufügen können, der einem eDiscovery-Fall zugeordnet ist, finden Sie unter [Create a list of all OneDrive locations in your organization](/onedrive/list-onedrive-urls). Das Skript in diesem Artikel erstellt eine Textdatei, die eine Liste aller #A0 in Ihrer Organisation enthält. Um dieses Skript ausführen zu können, müssen Sie die SharePoint Online-Verwaltungsshell installieren und verwenden. Achten Sie darauf, die URL für die "MeineWebsite"-Domäne Ihrer Organisation an jede OneDrive-Website anzuhängen, die Sie durchsuchen möchten. Dies ist die Domäne, die Ihr gesamtes OneDrive enthält, z. B. `https://contoso-my.sharepoint.com`. Hier ein Beispiel für die URL der OneDrive-Website eines Benutzers: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
 
 > [!IMPORTANT]
-> Die URL für das #A0 eines Benutzers enthält ihren Benutzerprinzipalnamen (z. B. `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). In dem seltenen Fall, dass der UPN einer Person geändert wird, ändert sich auch die OneDrive-URL, um den neuen UPN zu integrieren. Wenn das #A0 eines Benutzers Teil eines eDiscovery-Speichers ist, alt ist und sein UPN geändert wird, müssen Sie den Halteraum aktualisieren, und Sie müssen den Halteraum aktualisieren und die neue #A1 des Benutzers hinzufügen und die alte entfernen. Weitere Informationen hierzu finden Sie unter [Wie sich UPN-Änderungen auf die OneDrive-URL auswirken](https://docs.microsoft.com/onedrive/upn-changes).
+> Die URL für das #A0 eines Benutzers enthält ihren Benutzerprinzipalnamen (z. B. `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). In dem seltenen Fall, dass der UPN einer Person geändert wird, ändert sich auch die OneDrive-URL, um den neuen UPN zu integrieren. Wenn das #A0 eines Benutzers Teil eines eDiscovery-Speichers ist, alt ist und sein UPN geändert wird, müssen Sie den Halteraum aktualisieren, und Sie müssen den Halteraum aktualisieren und die neue #A1 des Benutzers hinzufügen und die alte entfernen. Weitere Informationen hierzu finden Sie unter [Wie sich UPN-Änderungen auf die OneDrive-URL auswirken](/onedrive/upn-changes).
 
 ## <a name="removing-content-locations-from-an-ediscovery-hold"></a>Entfernen von Inhaltsstandorten aus einem eDiscovery-Halteraum
 
@@ -231,7 +231,7 @@ In der folgenden Tabelle sind die Grenzwerte für eDiscovery-Fälle und Fallaufb
    > [!NOTE]
    > <sup>1</sup> Zum Anzeigen einer Liste mit mehr als 1.000 Fällen, Halte-, Such- oder Exporten können Sie das entsprechende Office 365 Security & Compliance-PowerShell-Cmdlet verwenden:
    >
-   > - [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)
-   > - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
-   > - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)
-   > - [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+   > - [Get-ComplianceCase](/powershell/module/exchange/get-compliancecase)
+   > - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
+   > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
+   > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)

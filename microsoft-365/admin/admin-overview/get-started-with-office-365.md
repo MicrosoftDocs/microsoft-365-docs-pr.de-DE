@@ -23,16 +23,16 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: Erfahren Sie, wie Sie Microsoft 365 auf Ihrem Computer, Smartphone und Tablet einrichten und verwenden.
-ms.openlocfilehash: 437e644190017a0031d7c91d239f5b4f0a8d3773
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 8df5170190a464c71030c938be61df591032c45c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142073"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906288"
 ---
 # <a name="get-started"></a>Erste Schritte
 
-Ihre Organisation hat vor kurzem Microsoft 365 erhalten, und jetzt müssen Sie es verwenden, damit Sie mit dem Lesen von E-Mails, dem Freigeben von Dokumenten und mehr beginnen können. Erfahren Sie, wie Sie Microsoft 365 auf Ihrem Computer, Smartphone und Tablet einrichten und verwenden.
+Ihre Organisation hat kürzlich Microsoft 365 erhalten, und jetzt müssen Sie es verwenden, damit Sie mit dem Lesen von E-Mails, der Freigabe von Dokumenten und mehr beginnen können. Erfahren Sie, wie Sie Microsoft 365 auf Ihrem Computer, Smartphone und Tablet einrichten und verwenden.
   
 ::: moniker range="o365-worldwide"
 
@@ -48,7 +48,7 @@ Ihre Organisation hat vor kurzem Microsoft 365 erhalten, und jetzt müssen Sie e
     
 - [Office-Schulungscenter](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
     
-- [Wo kann ich mich anmelden?](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
+- [Ort der Anmeldung](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
     
 - [Installieren von Office auf Ihrem PC oder Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
     
@@ -56,15 +56,14 @@ Ihre Organisation hat vor kurzem Microsoft 365 erhalten, und jetzt müssen Sie e
     
 ## <a name="training-resources-for-you-the-admin"></a>Schulungsressourcen für Sie, den Administrator
 
-Hier finden Sie einige Ressourcen, die Ihnen bei den ersten Schritte helfen.
+Hier finden Sie einige Ressourcen, die Ihnen beim Einstieg helfen.
   
-- [Schulung für Administratoren:](https://docs.microsoft.com/microsoft-365/admin)Erhalten Sie Links zu kostenlosen Onlineklassen für Administratoren.
+- [Schulung für Administratoren:](../index.yml)Hier erhalten Sie Links zu kostenlosen Onlineklassen für Administratoren.
     
-- [Hilfe für](https://docs.microsoft.com/microsoft-365/admin/admin-home)Administratoren: Hier erhalten Sie Informationen zu den hauptaufgaben, ersten Schritten mit Verwaltungstools und zur Problembehandlung.
+- [Admin-Hilfe:](./admin-overview.md)Hier erhalten Sie Informationen zu den hauptaufgaben, ersten Schritten mit Administratortools und zur Problembehandlung.
     
-- [Wenden Sie sich an den Support - Administratorhilfe:](../contact-support-for-business-products.md) Rufen Sie uns an, öffnen Sie eine Onlineanfrage, oder lassen Sie die Community hilfe. 
+- [Kontakt support - Admin Help](../contact-support-for-business-products.md) : Rufen Sie uns an, öffnen Sie eine Onlineanfrage, oder lassen Sie sich von der Community helfen. 
     
 ## <a name="related-articles"></a>Verwandte Artikel
 
 [Einrichten von Microsoft 365 Business – Administratorhilfe](../setup/setup.md)
-

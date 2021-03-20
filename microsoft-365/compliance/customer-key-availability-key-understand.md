@@ -10,201 +10,201 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Erfahren Sie mehr über den Verfügbarkeits Schlüssel, der zum Wiederherstellen verlorener Kundenschlüssel verwendet wird.
-ms.openlocfilehash: 8e9903294d5fc25e51ef25c0ae6237c943dec6ab
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Erfahren Sie mehr über den Verfügbarkeitsschlüssel, der zum Wiederherstellen verlorener Kundenschlüssel verwendet wird.
+ms.openlocfilehash: bbad6ace0880c142a497bcac3469c579f13c7881
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632024"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907741"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>Erfahren Sie mehr über den Verfügbarkeitsschlüssel für Kundenschlüssel
 
-Der Verfügbarkeits Schlüssel ist ein Stammschlüssel, der automatisch generiert und bereitgestellt wird, wenn Sie eine Daten Verschlüsselungsrichtlinie erstellen. Microsoft 365 speichert und schützt den Verfügbarkeits Schlüssel. Der Verfügbarkeits Schlüssel funktioniert wie die beiden Stammschlüssel, die Sie für die Dienst Verschlüsselung mit dem Kundenschlüssel angeben. Der Verfügbarkeits Schlüssel wickelt die Schlüssel um eine Ebene tiefer in die Schlüsselhierarchie ein. Im Gegensatz zu den Schlüsseln, die Sie in Azure Key Vault bereitstellen und verwalten, können Sie nicht direkt auf den Verfügbarkeits Schlüssel zugreifen. Microsoft 365 automatisierte Dienste verwalten den Verfügbarkeits Schlüssel Programmgesteuertes. Diese Dienste initiieren automatisierte Vorgänge, die niemals direkten Zugriff auf den Verfügbarkeits Schlüsselbein halten.
+Der Verfügbarkeitsschlüssel ist ein Stammschlüssel, der beim Erstellen einer Datenverschlüsselungsrichtlinie automatisch generiert und bereitgestellt wird. Microsoft 365 speichert und schützt den Verfügbarkeitsschlüssel. Der Verfügbarkeitsschlüssel gleicht den beiden Stammschlüsseln, die Sie für die Dienstverschlüsselung mit Dem Kundenschlüssel liefern. Der Verfügbarkeitsschlüssel umschließt die Schlüssel um eine Ebene tiefer in der Schlüsselhierarchie. Im Gegensatz zu den Schlüsseln, die Sie in Azure Key Vault bereitstellen und verwalten, können Sie nicht direkt auf den Verfügbarkeitsschlüssel zugreifen. Automatisierte Microsoft 365-Dienste verwalten den Verfügbarkeitsschlüssel programmgesteuert. Diese Dienste initiieren automatisierte Vorgänge, die niemals direkten Zugriff auf den Verfügbarkeitsschlüssel beinhalten.
 
-Der Hauptzweck des Verfügbarkeits Schlüssels besteht darin, die Wiederherstellungsfunktion aus dem unerwarteten Verlust von Stamm Schlüsseln bereitzustellen, den Sie verwalten. Verlust kann ein Ergebnis von Misswirtschaft oder böswilligen Aktionen sein. Wenn Sie die Kontrolle über die Stammschlüssel verloren haben, wenden Sie sich an den Microsoft-Support, und Microsoft unterstützt Sie beim Wiederherstellungsprozess mithilfe des Verfügbarkeits Schlüssels. Sie verwenden den Verfügbarkeits Schlüssel, um zu einer neuen Daten Verschlüsselungsrichtlinie mit neuen von Ihnen bereitgestellten Stamm Schlüsseln zu migrieren.
+Der Hauptzweck des Verfügbarkeitsschlüssels besteht in der Bereitstellung von Wiederherstellungsfunktionen nach dem unerwarteten Verlust von Stammschlüsseln, die Sie verwalten. Der Verlust kann ein Ergebnis von Missmanagement oder böswilliger Aktion sein. Wenn Sie die Kontrolle über Ihre Stammschlüssel verlieren, wenden Sie sich an den Microsoft-Support, und Microsoft unterstützt Sie bei der Wiederherstellung mithilfe des Verfügbarkeitsschlüssels. Sie verwenden den Verfügbarkeitsschlüssel, um zu einer neuen Datenverschlüsselungsrichtlinie mit neuen Stammschlüsseln zu migrieren, die Sie bereitstellen.
 
-Die Speicherung und Steuerung des Verfügbarkeits Schlüssels unterscheiden sich aus drei Gründen absichtlich von den Schlüsseln zu Azure Key Vault:
+Speicher und Steuerung des Verfügbarkeitsschlüssels unterscheiden sich aus drei Gründen absichtlich von Azure Key Vault-Schlüsseln:
 
-- Der Verfügbarkeits Schlüssel bietet eine Wiederherstellungs-, "Break-Glass"-Funktion, wenn die Steuerung über beide Azure Key Vault-Schlüssel verloren geht.
-- Die Trennung von logischen Steuerelementen und sicheren Speicherorten bietet eine umfassende Verteidigung und schützt vor dem Verlust aller Schlüssel und ihrer Daten vor einem einzelnen Angriff oder Fehlerpunkt.
-- Der Verfügbarkeits Schlüssel bietet eine hohe Verfügbarkeit, wenn Microsoft 365-Dienste aufgrund von vorübergehenden Fehlern keine in Azure Key Vault gehosteten Schlüssel erreichen können. Diese Regel gilt nur für Exchange Online-und Skype for Business Dienst Verschlüsselung. Für SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien wird der Verfügbarkeits Schlüssel nie verwendet, es sei denn, Sie weisen Microsoft ausdrücklich an, den Wiederherstellungsprozess zu initiier
+- Der Verfügbarkeitsschlüssel bietet eine "Break-Glass"-Wiederherstellungsfunktion, wenn die Kontrolle über beide Azure Key Vault-Schlüssel verloren geht.
+- Die Trennung von logischen Steuerelementen und sicheren Speicherorten bietet eine eingehende Verteidigung und schützt vor dem Verlust aller Schlüssel und Ihrer Daten vor einem einzelnen Angriff oder Einem Fehlerpunkt.
+- Der Verfügbarkeitsschlüssel bietet eine Hochverfügbarkeitsfunktion, wenn Microsoft 365-Dienste in Azure Key Vault gehostete Schlüssel aufgrund vorübergehender Fehler nicht erreichen können. Diese Regel gilt nur für die Exchange Online- und Skype for Business-Dienstverschlüsselung. SharePoint Online-, OneDrive for Business- und #A0 verwenden nie den Verfügbarkeitsschlüssel, es sei denn, Sie weisen Microsoft explizit an, den Wiederherstellungsprozess zu initiieren.
 
-Durch die gemeinsame Nutzung der Verantwortung zum Schutz Ihrer Daten mithilfe einer Vielzahl von Schutzmaßnahmen und Prozessen für die Schlüsselverwaltung wird letztendlich das Risiko verringert, dass alle Schlüssel (und damit Ihre Daten) dauerhaft verloren gehen oder zerstört werden. Microsoft stellt Ihnen die alleinige Befugnis über die Deaktivierung oder Vernichtung des Verfügbarkeits Schlüssels zur Verfügung, wenn Sie den Dienst verlassen. Durch das Design hat niemand bei Microsoft Zugriff auf den Verfügbarkeits Schlüssel: er ist nur über Microsoft 365-Dienstcode zugänglich.
+Die Freigabe der Verantwortung für den Schutz Ihrer Daten mithilfe einer Vielzahl von Schutz- und Prozessen für die Schlüsselverwaltung reduziert letztendlich das Risiko, dass alle Schlüssel (und damit Ihre Daten) dauerhaft verloren gehen oder zerstört werden. Microsoft stellt Ihnen die alleinige Autorität für die Deaktivierung oder Vernichtung des Verfügbarkeitsschlüssels zur Verfügung, wenn Sie den Dienst verlassen. Kein Microsoft-Mitarbeiter hat Zugriff auf den Verfügbarkeitsschlüssel: Er kann nur über einen Microsoft 365-Dienstcode aufgerufen werden.
 
-Weitere Informationen zum Sichern von Schlüsseln finden Sie im [Microsoft Trust Center](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data) .
+Weitere Informationen [zum Sichern von Schlüsseln](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data) finden Sie im Microsoft Trust Center.
   
-## <a name="availability-key-uses"></a>Verwendung von Verfügbarkeits Schlüsseln
+## <a name="availability-key-uses"></a>Verwendung des Verfügbarkeitsschlüssels
 
-Der Verfügbarkeits Schlüssel bietet Wiederherstellungsfunktionen für Szenarien, in denen ein externer Übeltäter oder böswilliger Insider die Kontrolle über den schlüsseltresor stiehlt oder wenn versehentliches fehl Management zu einem Verlust von Stamm Schlüsseln führt. Diese Wiederherstellungsfunktion gilt für alle Microsoft 365-Dienste, die mit dem Kundenschlüssel kompatibel sind. Einzelne Dienste verwenden den Verfügbarkeits Schlüssel unterschiedlich. Microsoft 365 verwendet den Verfügbarkeits Schlüssel nur auf die unten beschriebenen Arten.
+Der Verfügbarkeitsschlüssel bietet Wiederherstellungsfunktionen für Szenarien, in denen ein externer Böswilliger oder böswilliger Insider die Kontrolle über Ihren Schlüsseltresor stiehlt oder wenn versehentliche Missmanagement zum Verlust von Stammschlüsseln führt. Diese Wiederherstellungsfunktion gilt für alle Microsoft 365-Dienste, die mit dem Kundenschlüssel kompatibel sind. Einzelne Dienste verwenden den Verfügbarkeitsschlüssel unterschiedlich. Microsoft 365 verwendet den Verfügbarkeitsschlüssel nur auf die unten beschriebene Weise.
 
 ### <a name="exchange-online-and-skype-for-business-uses"></a>Exchange Online und Skype for Business verwendet
 
-Zusätzlich zur Wiederherstellungsfunktion verwenden Exchange Online und Skype for Business den Verfügbarkeits Schlüssel, um die Datenverfügbarkeit während vorübergehender oder zeitweilig auftretender betriebsbedingter Probleme im Zusammenhang mit dem Dienst sicherzustellen, der auf Stammschlüssel zugreift. Wenn der Dienst aufgrund von vorübergehenden Fehlern keinen ihrer Kundenschlüssel in Azure Key Vault erreichen kann, verwendet der Dienst automatisch den Verfügbarkeits Schlüssel. Der Dienst geht nie direkt an den Verfügbarkeits Schlüssel.
+Zusätzlich zur Wiederherstellungsfunktion verwenden Exchange Online und Skype for Business den Verfügbarkeitsschlüssel, um die Datenverfügbarkeit bei vorübergehenden oder zeitweiligen Betriebsproblemen im Zusammenhang mit dem Zugriff auf die Stammschlüssel des Diensts sicherzustellen. Wenn der Dienst einen Ihrer Kundenschlüssel in Azure Key Vault aufgrund vorübergehender Fehler nicht erreichen kann, verwendet der Dienst automatisch den Verfügbarkeitsschlüssel. Der Dienst geht NIE direkt zum Verfügbarkeitsschlüssel.
 
-Automatisierte Systeme in Exchange Online und Skype for Business können den Verfügbarkeits Schlüssel während vorübergehender Fehler verwenden, um automatisierte Back-End-Dienste wie Virenschutz, e-Discovery, Verhinderung von Datenverlust, Postfachverschiebungen und Datenindizierung zu unterstützen.
+Automatisierte Systeme in Exchange Online und Skype for Business können den Verfügbarkeitsschlüssel bei vorübergehenden Fehlern verwenden, um automatisierte Back-End-Dienste wie Virenschutz, E-Discovery, Verhinderung von Datenverlust, Postfachbewegungen und Datenindizierung zu unterstützen.
 
-### <a name="sharepointonlineonedriveforbusinessandteamsfiles-uses"></a>SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien verwendet
+### <a name="sharepoint-online-onedrive-for-business-and-teams-files-uses"></a>SharePoint Online-, OneDrive for Business- und #A0 werden verwendet
 
-Für SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien wird der Verfügbarkeits Schlüssel nie außerhalb der Wiederherstellungsfunktion verwendet, und Kunden müssen Microsoft explizit anweisen, die Verwendung des Verfügbarkeits Schlüssels während eines Wiederherstellungsszenarios zu initiieren. Automatisierte Dienstvorgänge basieren ausschließlich auf Ihren Kunden Schlüsseln in Azure Key Vault. Ausführliche Informationen zur Funktionsweise der Schlüsselhierarchie für diese Dienste finden Sie unter [How SharePoint Online, OneDrive für Unternehmen und Teams-Dateien den Verfügbarkeits Schlüssel verwenden](#how-sharepoint-online-onedrive-for-business-and-teams-files-use-the-availability-key).
+Für SharePoint Online-, OneDrive for Business- und #A0 wird der Verfügbarkeitsschlüssel nie außerhalb der Wiederherstellungsfunktion verwendet, und Kunden müssen Microsoft explizit anweisen, die Verwendung des Verfügbarkeitsschlüssels während eines Wiederherstellungsszenarios zu initiieren. Automatisierte Dienstvorgänge beruhen ausschließlich auf Ihren Kundenschlüsseln in Azure Key Vault. Ausführliche Informationen zur Funktionsweise der Schlüsselhierarchie für diese Dienste finden Sie unter [How SharePoint Online, OneDrive for Business, and Teams files use the availability key](#how-sharepoint-online-onedrive-for-business-and-teams-files-use-the-availability-key).
 
-## <a name="availability-key-security"></a>Sicherheit der verfügbaren Schlüssel
+## <a name="availability-key-security"></a>Sicherheit des Verfügbarkeitsschlüssels
 
-Microsoft teilt die Verantwortung für den Schutz von Daten mit Ihnen, indem Sie den Verfügbarkeits Schlüssel instanziieren und umfangreiche Maßnahmen zum Schutz dieser Lösung ergreifen. Microsoft stellt Kunden keine direkte Steuerung des Verfügbarkeits Schlüssels offen. Sie können beispielsweise nur die Schlüssel, die Sie in Azure Key Vault besitzen, Rollen (Drehen). Weitere Informationen finden Sie unter [Rollen oder Drehen eines Kunden Schlüssels oder eines Verfügbarkeits Schlüssels](customer-key-availability-key-roll.md).
+Microsoft teilt sich die Verantwortung des Datenschutzes mit Ihnen, indem der Verfügbarkeitsschlüssel instanziiert und umfangreiche Maßnahmen zum Schutz ergriffen wird. Microsoft macht keine direkte Kontrolle über den Verfügbarkeitsschlüssel für Kunden verfügbar. Sie können z. B. nur die Schlüssel rollen (drehen), die Sie in Azure Key Vault besitzen. Weitere Informationen finden Sie unter [Roll or rotate a customer key or an availability key](customer-key-availability-key-roll.md).
 
-### <a name="availability-key-secret-stores"></a>Geheime Schlüsselspeicher für Verfügbarkeit
+### <a name="availability-key-secret-stores"></a>Schlüsselspeicher für die Verfügbarkeit
 
-Microsoft schützt die Verfügbarkeits Schlüssel in Zugriffs kontrollierten internen geheimen Speicher wie dem kundenbezogenen Azure-schlüsseltresor. Wir implementieren Zugriffskontrollen, um zu verhindern, dass Microsoft-Administratoren direkt auf die darin enthaltenen Geheimnisse zugreifen. Geheime Speichervorgänge, einschließlich Schlüsselrotation und Löschung, erfolgen über automatisierte Befehle, die niemals direkten Zugriff auf den Verfügbarkeits Schlüsselbein halten. Geheime Speicherverwaltungsvorgänge sind auf bestimmte Ingenieure eingeschränkt und erfordern eine Eskalation der Rechte durch ein internes Tool, Lockbox. Die Berechtigungseskalation erfordert die Genehmigung des Vorgesetzten und die Begründung vor ihrer Erteilung. Lockbox stellt sicher, dass der Zugriff auf Zeit mit automatischer Zugriffssperre bei Zeitablauf oder beim Abmelden von Ingenieuren gebunden ist.
+Microsoft schützt Verfügbarkeitsschlüssel in zugriffsgesteuerten internen geheimen Speichern wie dem kundenorientierten Azure Key Vault. Wir implementieren Zugriffssteuerelemente, um zu verhindern, dass Microsoft-Administratoren direkt auf die darin enthaltenen Geheimgeheimnisse zugreifen. Geheime Speichervorgänge, einschließlich Drehung und Löschung von Schlüsseln, erfolgen über automatisierte Befehle, die niemals direkten Zugriff auf den Verfügbarkeitsschlüssel beinhalten. Geheime Speicherverwaltungsvorgänge sind auf bestimmte Techniker beschränkt und erfordern eine Rechteeskalation über ein internes Tool, Lockbox. Die Berechtigungseskalation erfordert die Genehmigung und Begründung des Managers, bevor sie erteilt wird. Lockbox stellt sicher, dass der Zugriff mit dem automatischen Zugriffssperrstatus nach Ablauf der Zeit oder der Techniker-Abmeldezeit verbunden ist.
 
-**Exchange Online-und Skype for Business-** Verfügbarkeits Schlüssel werden in einem geheimen Exchange Online geheimen Active Directory Speicher gespeichert. Verfügbarkeits Schlüssel werden sicher in mandantenspezifischen Containern innerhalb des Active Directory Domänencontrollers gespeichert. Dieser sichere Speicherort ist separat vom geheimen Speicher für SharePoint Online, OneDrive für Unternehmen und Microsoft Teams-Dateien isoliert.
+**Verfügbarkeitsschlüssel für Exchange Online** und Skype for Business werden in einem geheimen Exchange Online Active Directory-Speicher gespeichert. Verfügbarkeitsschlüssel werden sicher in mandantenspezifischen Containern innerhalb des Active Directory-Domänencontrollers gespeichert. Dieser sichere Speicherort ist getrennt und vom geheimen Speicher für SharePoint Online-, OneDrive for Business- und #A0 isoliert.
 
-Verfüg barkeits Schlüssel für **SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien** werden in einem internen geheimen Speicher gespeichert, der vom Dienst Team verwaltet wird. Dieser gesicherte, geheime Speicherdienst verfügt über Front-End-Server mit Anwendungsendpunkten und einer SQL-Datenbank als Back-End. Verfügbarkeits Schlüssel werden in der SQL-Datenbank gespeichert und von Schlüsselspeicher-Verschlüsselungsschlüsseln umschlossen, die eine Kombination aus AES-256 und HMAC verwenden, um den Verfügbarkeits Schlüssel in Rest zu verschlüsseln. Die Verschlüsselungsschlüssel für geheimen Speicher werden in einer logisch isolierten Komponente derselben SQL-Datenbank gespeichert und weiter mit RSA-2048-Schlüsseln verschlüsselt, die in Zertifikaten enthalten sind, die von der Microsoft-Zertifizierungsstelle verwaltet werden. Diese Zertifikate werden in den geheimen Store-Front-End-Servern gespeichert, die Vorgänge für die Datenbank ausführen.
+**Verfügbarkeitsschlüssel für SharePoint Online-, OneDrive for Business-** und #A0 werden in einem internen geheimen Speicher gespeichert, der vom Dienstteam verwaltet wird. Dieser gesicherte geheime Speicherdienst verfügt über Front-End-Server mit Anwendungsendpunkten und SQL Datenbank als Back-End. Verfügbarkeitsschlüssel werden in der SQL-Datenbank gespeichert und von Geheimspeicherverschlüsselungsschlüsseln umschlossen (verschlüsselt), die eine Kombination aus AES-256 und HMAC zum Verschlüsseln des verfügbarkeitsschlüssels im Ruhespeicher verwenden. Die Verschlüsselungsschlüssel für den geheimen Speicher werden in einer logisch isolierten Komponente derselben SQL-Datenbank gespeichert und mit RSA-2048-Schlüsseln weiter verschlüsselt, die in Von der Zertifizierungsstelle verwalteten Zertifikaten enthalten sind. Diese Zertifikate werden auf den Front-End-Servern des geheimen Speichers gespeichert, die Vorgänge für die Datenbank ausführen.
 
-### <a name="defense-in-depth"></a>Tiefenverteidigung
+### <a name="defense-in-depth"></a>Ausführliche Verteidigung
 
-Microsoft setzt eine umfassende Verteidigungsstrategie ein, um zu verhindern, dass böswillige Akteure die Vertraulichkeit, Integrität oder Verfügbarkeit von in der Microsoft-Cloud gespeicherten Kundendaten beeinträchtigen. Um den geheimen Speicher und den Verfügbarkeits Schlüssel im Rahmen der übergreifenden Sicherheitsstrategie zu schützen, werden bestimmte vorbeugende und Detektive Kontrollen implementiert.
+Microsoft verwendet eine tief gehende Strategie zur Verteidigung, um zu verhindern, dass sich böswillige Akteure auf die Vertraulichkeit, Integrität oder Verfügbarkeit von Kundendaten auswirken, die in der Microsoft Cloud gespeichert sind. Spezifische präventive und detektive Kontrollen werden implementiert, um den geheimen Speicher und den Verfügbarkeitsschlüssel im Rahmen der übergeordneten Sicherheitsstrategie zu schützen.
 
-Microsoft 365 wurde entwickelt, um einen Missbrauch des Verfügbarkeits Schlüssels zu verhindern. Die Anwendungsschicht ist die einzige Methode, über die Schlüssel, einschließlich des Verfügbarkeits Schlüssels, zum Verschlüsseln und Entschlüsseln von Daten verwendet werden können. Nur Microsoft 365-Dienstcode kann die Schlüsselhierarchie für Verschlüsselungs-und Entschlüsselungs Aktivitäten interpretieren und durchlaufen. Die logische Isolierung besteht zwischen den Speicherorten von Kunden Schlüsseln, Verfügbarkeits Schlüsseln, anderen hierarchischen Schlüsseln und Kundendaten. Durch diese Isolierung wird das Risiko von Daten Gefährdungen verringert, wenn ein oder mehrere Standorte gefährdet sind. Jede Ebene in der Hierarchie verfügt über integrierte Überwachungsfunktionen für die 24X7-Intrusionserkennung zum Schutz von gespeicherten Daten und Geheimnissen.
+Microsoft 365 wurde entwickelt, um den Missbrauch des Verfügbarkeitsschlüssels zu verhindern. Die Anwendungsebene ist die einzige Methode, mit der Schlüssel, einschließlich des Verfügbarkeitsschlüssels, zum Verschlüsseln und Entschlüsseln von Daten verwendet werden können. Nur Microsoft 365-Dienstcode kann die Schlüsselhierarchie für Verschlüsselungs- und Entschlüsselungsaktivitäten interpretieren und durchlaufen. Die logische Isolation besteht zwischen den Speicherorten von Kundenschlüsseln, Verfügbarkeitsschlüsseln, anderen hierarchischen Schlüsseln und Kundendaten. Diese Isolation verringert das Risiko der Datenexposition, wenn ein oder mehrere Standorte gefährdet sind. Jede Ebene in der Hierarchie verfügt über integrierte 24 x 7-Angriffserkennungsfunktionen, um gespeicherte Daten und geheime Daten zu schützen.
 
-Zugriffssteuerungen werden implementiert, um nicht autorisierten Zugriff auf interne Systeme zu verhindern, einschließlich geheimer Schlüsselspeicher für Verfügbarkeit. Microsoft-Techniker haben keinen direkten Zugriff auf die geheimen Schlüsselspeicher für Verfügbarkeit. Weitere Details zu Zugriffssteuerungen finden Sie unter [Administrative Access Controls in Microsoft 365](https://docs.microsoft.com/Office365/securitycompliance/office-365-administrative-access-controls-overview).
+Zugriffssteuerelemente werden implementiert, um nicht autorisierten Zugriff auf interne Systeme zu verhindern, einschließlich geheimer Verfügbarkeitsschlüsselspeicher. Microsoft-Techniker haben keinen direkten Zugriff auf die geheimen Verfügbarkeitsschlüsselspeicher. Weitere Informationen zu Zugriffssteuerelementen erhalten Sie unter [Administrative Access Controls in Microsoft 365](/Office365/securitycompliance/office-365-administrative-access-controls-overview).
 
-Technische Steuerelemente verhindern, dass Microsoft-Mitarbeiter sich bei hoch privilegierten Dienstkonten anmelden, die andernfalls von Angreifern verwendet werden können, um die Identität von Microsoft-Diensten zu imitieren. Beispielsweise verhindern diese Steuerelemente die interaktive Anmeldung.
+Technische Kontrollen verhindern, dass sich Microsoft-Mitarbeiter bei Dienstkonten mit hohen Berechtigungen anmelden, die andernfalls von Angreifern zum Identitätswechsel von Microsoft-Diensten verwendet werden. Diese Steuerelemente verhindern beispielsweise die interaktive Anmeldung.
 
-Sicherheitsprotokollierung und Überwachungssteuerelemente sind eine weitere umfassende Schutzmaßnahme, die das Risiko für Microsoft-Dienste und Ihre Daten minimiert. Microsoft-Dienst Teams haben aktive Überwachungslösungen bereitgestellt, mit denen Warnungen und Überwachungsprotokolle generiert werden. Alle Dienst Teams laden ihre Protokolle in ein zentrales Repository hoch, in dem die Protokolle aggregiert und verarbeitet werden. Interne Tools untersuchen automatisch Datensätze, um zu bestätigen, dass die Dienste in einem optimalen, widerstandsfähigen und sicheren Zustand funktionieren. Für eine weitere Überprüfung werden ungewöhnliche Aktivitäten gekennzeichnet.
+Sicherheitsprotokollierungs- und Überwachungssteuerelemente sind ein weiterer, tief gehender Schutz, der implementiert wurde, um das Risiko für Microsoft-Dienste und Ihre Daten zu mindern. Microsoft-Dienstteams haben aktive Überwachungslösungen bereitgestellt, die Warnungen und Überwachungsprotokolle generieren. Alle Dienstteams laden ihre Protokolle in ein zentrales Repository hoch, in dem die Protokolle aggregiert und verarbeitet werden. Interne Tools untersuchen Datensätze automatisch, um zu bestätigen, dass Dienste in einem optimalen, ausfallsicheren und sicheren Zustand funktionieren. Ungewöhnliche Aktivitäten werden zur weiteren Überprüfung gekennzeichnet.
 
-Jedes Protokollereignis, das auf eine mögliche Verletzung der Microsoft-Sicherheitsrichtlinie hinweist, wird den Microsoft-Sicherheitsteams sofort zur Kenntnis gebracht. Die Microsoft 365-Sicherheit hat Warnungen konfiguriert, um den versuchten Zugriff auf Schlüsselspeicher für die Verfügbarkeit zu erkennen. Warnungen werden auch generiert, wenn Microsoft-Mitarbeiter interaktive Anmeldung bei Dienstkonten versuchen, die durch Zugriffskontrollen untersagt und geschützt ist. Die Sicherheit von Microsoft 365 erkennt und warnt außerdem bei Abweichungen des Microsoft 365-Diensts von normalen Basis Vorgängen. Übeltäter Versuch, Microsoft 365-Dienste zu missbrauchen, würde Warnungen auslösen, die zur Vertreibung des Verurteilten aus der Microsoft-Cloud-Umgebung führen.
+Jedes Protokollereignis, das einen potenziellen Verstoß gegen die Microsoft-Sicherheitsrichtlinie angibt, wird den Microsoft-Sicherheitsteams sofort zur Anzeige gebracht. Microsoft 365 Security hat Warnungen konfiguriert, um versuchten Zugriff auf geheime Verfügbarkeitsspeicher zu erkennen. Warnungen werden auch generiert, wenn Microsoft-Mitarbeiter versuchen, sich interaktiv bei Dienstkonten zu anmelden, was durch Zugriffssteuerungen verboten und geschützt ist. Microsoft 365 Security erkennt und warnt auch bei Abweichungen des Microsoft 365-Diensts von normalen Basisbetriebsvorgängen. Wenn Angreifer versuchen, Microsoft 365-Dienste zu missbrauchen, würden Warnungen ausgelöst, die zu einer Räumung des Angreifers aus der Microsoft-Cloudumgebung führt.
 
-## <a name="use-the-availability-key-to-recover-from-key-loss"></a>Verwenden des Verfügbarkeits Schlüssels zum Wiederherstellen nach Schlüssel Verlusten
+## <a name="use-the-availability-key-to-recover-from-key-loss"></a>Verwenden des Verfügbarkeitsschlüssels zum Wiederherstellen von Schlüsselverlusten
 
-Wenn Sie die Kontrolle über Ihre Kundenschlüssel verlieren, bietet Ihnen der Verfügbarkeits Schlüssel die Möglichkeit, Ihre Daten wiederherzustellen und erneut zu verschlüsseln.
+Wenn Sie die Kontrolle über Ihre Kundenschlüssel verlieren, können Sie ihre Daten mit dem Verfügbarkeitsschlüssel wiederherstellen und erneut verschlüsseln.
 
 ### <a name="recovery-procedure-for-exchange-online-and-skype-for-business"></a>Wiederherstellungsverfahren für Exchange Online und Skype for Business
 
-Wenn Sie die Kontrolle über Ihre Kundenschlüssel verlieren, haben Sie mit dem Verfügbarkeits Schlüssel die Möglichkeit, Ihre Daten wiederherzustellen und die betroffenen Microsoft 365-Ressourcen wieder online zu schalten. Der Verfügbarkeits Schlüssel schützt Ihre Daten weiterhin während der Wiederherstellung. Um eine vollständige Wiederherstellung nach Schlüssel Verlusten durchführen zu können, müssen Sie eine neue DEP erstellen und Ressourcen mit Auswirkungen auf die neue Richtlinie migrieren.
+Wenn Sie die Kontrolle über Ihre Kundenschlüssel verlieren, können Sie mit dem Verfügbarkeitsschlüssel Ihre Daten wiederherstellen und Ihre auswirkungen auf Microsoft 365-Ressourcen wieder online stellen. Der Verfügbarkeitsschlüssel schützt Ihre Daten während der Wiederherstellung weiterhin. Auf einer hohen Ebene müssen Sie eine neue DEP erstellen und die ressourcenverhedderten Ressourcen in die neue Richtlinie verschieben, um den Schlüsselverlust vollständig wiederhergestellt zu können.
 
-Wenn Sie Ihre Daten mit neuen Kunden Schlüsseln verschlüsseln möchten, erstellen Sie neue Schlüssel in Azure Key Vault, erstellen Sie eine neue DEP mithilfe der neuen Kundenschlüssel, und weisen Sie die neue DEP dann den Postfächern zu, die derzeit mit der vorherigen DEP verschlüsselt sind, für die die Schlüssel verloren gegangen sind oder kompromittiert wurden.
+Um Ihre Daten mit neuen Kundenschlüsseln zu verschlüsseln, erstellen Sie neue Schlüssel in Azure Key Vault, erstellen Sie eine neue DEP mit den neuen Kundenschlüsseln, und weisen Sie die neue DEP dann den Postfächern zu, die derzeit mit der vorherigen DEP verschlüsselt sind, für die die Schlüssel verloren gegangen oder gefährdet wurden.
 
-Dieser erneute Verschlüsselungsvorgang kann bis zu 72 Stunden dauern. Dies ist die Standarddauer, wenn Sie eine Datenausführungsverhinderung ändern.
+Dieser Erneute Verschlüsselungsprozess kann bis zu 72 Stunden dauern. Dies ist die Standarddauer, wenn Sie eine DEP ändern.
   
-### <a name="recovery-procedure-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>Wiederherstellungsverfahren für SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien
+### <a name="recovery-procedure-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Wiederherstellungsverfahren für SharePoint Online-, OneDrive for Business- und #A0
 
-Für SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien wird der Verfügbarkeits Schlüssel nie außerhalb der Wiederherstellungsfunktion verwendet. Sie müssen Microsoft explizit anweisen, die Verwendung des Verfügbarkeits Schlüssels während eines Wiederherstellungsszenarios zu initiieren. Um den Wiederherstellungsvorgang zu initiieren, wenden Sie sich an Microsoft, um den Verfügbarkeits Schlüssel zu aktivieren. Sobald die Option aktiviert ist, wird der Verfügbarkeits Schlüssel automatisch zum Entschlüsseln Ihrer Daten verwendet, sodass Sie die Daten mit einer neu erstellten DEP verschlüsseln können, die neuen Kunden Schlüsseln zugeordnet ist.  
+Für SharePoint Online-, OneDrive for Business- und #A0 wird der Verfügbarkeitsschlüssel nie außerhalb der Wiederherstellungsfunktion verwendet. Sie müssen Microsoft explizit anweisen, die Verwendung des Verfügbarkeitsschlüssels während eines Wiederherstellungsszenarios zu initiieren. Um den Wiederherstellungsprozess zu initiieren, wenden Sie sich an Microsoft, um den Verfügbarkeitsschlüssel zu aktivieren. Nach der Aktivierung wird der Verfügbarkeitsschlüssel automatisch verwendet, um Ihre Daten zu entschlüsseln, sodass Sie die Daten mit einer neu erstellten DEP verschlüsseln können, die neuen Kundenschlüsseln zugeordnet ist.  
 
-Dieser Vorgang ist proportional zur Anzahl der Websites in Ihrer Organisation. Nachdem Sie Microsoft aufgerufen haben, den Verfügbarkeits Schlüssel zu verwenden, sollten Sie innerhalb von etwa vier Stunden vollständig online sein.
+Dieser Vorgang ist proportional zur Anzahl der Websites in Ihrer Organisation. Sobald Sie Microsoft anrufen, um den Verfügbarkeitsschlüssel zu verwenden, sollten Sie innerhalb von etwa vier Stunden vollständig online sein.
 
-## <a name="how-exchange-online-and-skype-for-business-use-the-availability-key"></a>Verwenden des Verfügbarkeits Schlüssels für Exchange Online und Skype for Business
+## <a name="how-exchange-online-and-skype-for-business-use-the-availability-key"></a>Verwenden des Verfügbarkeitsschlüssels von Exchange Online und Skype for Business
 
-Wenn Sie eine DEP mit dem Kundenschlüssel erstellen, generiert Microsoft 365 einen Daten Verschlüsselungsrichtlinien Schlüssel (DEP-Schlüssel), der dieser DEP zugeordnet ist. Der Dienst verschlüsselt den DEP-Schlüssel dreimal: einmal mit jedem Kundenschlüssel und einmal mit dem Verfügbarkeits Schlüssel. Nur die verschlüsselten Versionen des DEP-Schlüssels werden gespeichert, und ein DEP-Schlüssel kann nur mit den Kunden Schlüsseln oder dem Verfügbarkeits Schlüssel entschlüsselt werden. Der DEP-Schlüssel wird dann zum Verschlüsseln von Post Fach Schlüsseln verwendet, die einzelne Postfächer verschlüsseln.
+Wenn Sie eine DEP mit Dem Kundenschlüssel erstellen, generiert Microsoft 365 einen Datenverschlüsselungsrichtlinienschlüssel (DEP Key), der dieser DEP zugeordnet ist. Der Dienst verschlüsselt den DEP-Schlüssel dreimal: einmal mit jedem Kundenschlüssel und einmal mit dem Verfügbarkeitsschlüssel. Nur die verschlüsselten Versionen des DEP-Schlüssels werden gespeichert, und ein DEP-Schlüssel kann nur mit den Kundenschlüsseln oder dem Verfügbarkeitsschlüssel entschlüsselt werden. Der DEP-Schlüssel wird dann zum Verschlüsseln von Postfachschlüsseln verwendet, die einzelne Postfächer verschlüsseln.
   
 Microsoft 365 folgt diesem Prozess zum Entschlüsseln und Bereitstellen von Daten, wenn Kunden den Dienst verwenden:
   
-1. Entschlüsseln Sie den DEP-Schlüssel mit dem Kundenschlüssel.
+1. Entschlüsseln Sie den DEP-Schlüssel mithilfe des Kundenschlüssels.
 
-2. Verwenden Sie den entschlüsselten DEP-Schlüssel, um einen postfachschlüssel zu entschlüsseln.
+2. Verwenden Sie den entschlüsselten DEP-Schlüssel, um einen Postfachschlüssel zu entschlüsseln.
 
-3. Verwenden Sie den Schlüssel für entschlüsselte Postfächer, um das Postfach selbst zu entschlüsseln, sodass Sie auf die Daten innerhalb des Postfachs zugreifen können.
+3. Verwenden Sie den entschlüsselten Postfachschlüssel, um das Postfach selbst zu entschlüsseln, sodass Sie auf die Daten innerhalb des Postfachs zugreifen können.
 
-## <a name="how-sharepoint-online-onedrive-for-business-and-teams-files-use-the-availability-key"></a>Verwenden der Verfügbarkeits Taste für SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien
+## <a name="how-sharepoint-online-onedrive-for-business-and-teams-files-use-the-availability-key"></a>Verwenden des Verfügbarkeitsschlüssels für SharePoint Online-, OneDrive for Business- und #A0
 
-Die SharePoint Online und OneDrive für Unternehmen Architektur und Implementierung für den Schlüssel und die Verfügbarkeit von Kunden unterscheiden sich von Exchange Online und Skype for Business.
+Die Architektur und Implementierung von SharePoint Online und OneDrive for Business für Kundenschlüssel und Verfügbarkeitsschlüssel unterscheiden sich von Exchange Online und Skype for Business.
   
-Wenn eine Organisation zu von Kunden verwalteten Schlüsseln wechselt, erstellt Microsoft 365 einen organisationsspezifischen zwischen Schlüssel (tik). Microsoft 365 verschlüsselt die tik zweimal, einmal mit jedem Kundenschlüssel, und speichert die beiden verschlüsselten Versionen des tik. Nur die verschlüsselten Versionen der tik werden gespeichert, und ein tik kann nur mit den Kunden Schlüsseln entschlüsselt werden. Das tik wird dann zum Verschlüsseln von Website Schlüsseln verwendet, die dann zum Verschlüsseln von BLOB-Schlüsseln verwendet werden (auch als Dateisegment Schlüssel bezeichnet). Je nach Dateigröße kann der Dienst eine Datei in mehrere Datei Blöcke mit jeweils einem eindeutigen Schlüssel aufteilen. Die BLOBs (Datei Blöcke) selbst werden mit den BLOB-Schlüsseln verschlüsselt und im Microsoft Azure BLOB-Speicherdienst gespeichert.
+Wenn eine Organisation zu vom Kunden verwalteten Schlüsseln wechselt, erstellt Microsoft 365 einen organisationsspezifischen Zwischenschlüssel (TIK). Microsoft 365 verschlüsselt die TIK zweimal, einmal mit jedem Kundenschlüssel, und speichert die beiden verschlüsselten Versionen der TIK. Nur die verschlüsselten Versionen der TIK werden gespeichert, und eine TIK kann nur mit den Kundenschlüsseln entschlüsselt werden. Die TIK wird dann zum Verschlüsseln von Websiteschlüsseln verwendet, die dann zum Verschlüsseln von Blobschlüsseln (auch Als Dateiblöckeschlüssel bezeichnet) verwendet werden. Je nach Dateigröße kann der Dienst eine Datei mit einem eindeutigen Schlüssel in mehrere Dateiblöcke aufteilen. Die Blobs (Dateiblöcke) selbst werden mit den Blobschlüsseln verschlüsselt und im Microsoft Azure Blob Storage Service gespeichert.
   
 Microsoft 365 folgt diesem Prozess zum Entschlüsseln und Bereitstellen von Kundendateien, wenn Kunden den Dienst verwenden:
 
-1. Entschlüsseln Sie die tik mit dem Kundenschlüssel.
+1. Entschlüsseln Sie die TIK mithilfe des Kundenschlüssels.
 
-2. Verwenden Sie den entschlüsselten tik, um einen Standort Schlüssel zu entschlüsseln.
+2. Verwenden Sie die entschlüsselte TIK, um einen Websiteschlüssel zu entschlüsseln.
 
-3. Verwenden Sie den entschlüsselten Standort Schlüssel, um einen BLOB-Schlüssel zu entschlüsseln.
+3. Verwenden Sie den entschlüsselten Websiteschlüssel, um einen Blobschlüssel zu entschlüsseln.
 
-4. Verwenden Sie den entschlüsselten BLOB-Schlüssel, um das BLOB zu entschlüsseln.
+4. Verwenden Sie den entschlüsselten Blobschlüssel, um das Blob zu entschlüsseln.
 
-Microsoft 365 entschlüsselt ein tik, indem zwei Entschlüsselungs Anforderungen an Azure Key Vault mit einem leichten Offset ausgegeben werden. Der erste, der fertig ist, liefert das Ergebnis und bricht die andere Anforderung ab.
+Microsoft 365 entschlüsselt eine TIK, indem zwei Entschlüsselungsanforderungen an Azure Key Vault mit einem geringfügigen Offset gesendet werden. Der erste, der fertig gestellt wird, gibt das Ergebnis an, und die andere Anforderung wird abgebrochen.
   
-Für den Fall, dass Sie den Zugriff auf Ihre Kundenschlüssel verlieren, verschlüsselt Microsoft 365 auch die tik mit einem Verfügbarkeits Schlüssel und speichert diese zusammen mit den TIKs, die mit jedem Kundenschlüssel verschlüsselt sind. Die mit dem Verfügbarkeits Schlüssel verschlüsselte tik wird nur verwendet, wenn der Kunde Microsoft anruft, um den Wiederherstellungspfad einzutragen, wenn er böswillig oder versehentlich den Zugriff auf die Schlüssel verloren hat.
+Falls Sie den Zugriff auf Ihre Kundenschlüssel verlieren, verschlüsselt Microsoft 365 auch die TIK mit einem Verfügbarkeitsschlüssel und speichert diesen zusammen mit den mit jedem Kundenschlüssel verschlüsselten TIKs. Die mit dem Verfügbarkeitsschlüssel verschlüsselte TIK wird nur verwendet, wenn der Kunde Microsoft aufruft, um den Wiederherstellungspfad einlisten zu lassen, wenn er versehentlich oder böswilligen Zugriff auf seine Schlüssel verloren hat.
   
-Aus Gründen der Verfügbarkeit und Skalierung werden entschlüsselte TIKs in einem zeitbegrenzten Arbeitsspeichercache zwischengespeichert. Zwei Stunden, bevor ein tik-Cache auf "expire" festgelegt ist, versucht Microsoft 365, die einzelnen tik zu entschlüsseln. Das Entschlüsseln des TIKs verlängert die Lebensdauer des Caches. Wenn die tik-Entschlüsselung für eine erhebliche Zeitspanne fehlschlägt, generiert Microsoft 365 eine Warnung, die das Engineering vor dem Cache Ablauf benachrichtigt. Nur wenn der Kunde Microsoft 365 anruft, initiieren Sie den Wiederherstellungsvorgang, bei dem die tik mit dem im geheimen Microsoft-Speicher gespeicherten Verfügbarkeits Schlüssel und dem erneuten Onboarding des Mandanten mit dem entschlüsselten tik und einer neuen Gruppe von von Kunden bereitgestellten Azure Key-Tresor Schlüsseln entschlüsselt wird.
+Aus Gründen der Verfügbarkeit und Skalierung werden entschlüsselte TIKs in einem zeitlich begrenzten Arbeitsspeichercache zwischengespeichert. Zwei Stunden, bevor ein TIK-Cache auf Ablauf festgelegt ist, versucht Microsoft 365, jede TIK zu entschlüsseln. Durch die Entschlüsselung der TIKs wird die Lebensdauer des Caches verlängert. Wenn die TIK-Entschlüsselung für einen erheblichen Zeitraum fehlschlägt, generiert Microsoft 365 eine Warnung zur Benachrichtigung des Engineerings vor dem Cacheablauf. Nur wenn der Kunde Microsoft anruft, initiiert Microsoft 365 den Wiederherstellungsvorgang, bei dem die TIK mit dem im geheimen Speicher von Microsoft gespeicherten Verfügbarkeitsschlüssel entschlüsselt und der Mandant erneut mithilfe der entschlüsselten TIK und einer neuen Gruppe von vom Kunden bereitgestellten Azure Key Vault-Schlüsseln onboardiert wird.
   
-Ab heute ist der Kundenschlüssel an der Verschlüsselungs-und Entschlüsselungs Kette von SharePoint Online Dateidaten beteiligt, die im Azure-BLOB-Speicher gespeichert sind, aber nicht SharePoint Online Listenelementen oder Metadaten, die in der SQL-Datenbank gespeichert sind. Microsoft 365 verwendet nicht den verfügbaren Schlüssel für Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive für Unternehmen-und Teams-Dateien außer dem oben beschriebenen Fall, der vom Kunden initiiert wurde. Der menschliche Zugriff auf Kundendaten wird durch die Kunden-Lockbox geschützt.
+Ab heute ist Customer Key an der Verschlüsselungs- und Entschlüsselungskette von SharePoint Online-Dateidaten beteiligt, die im Azure Blob Store gespeichert sind, aber nicht an SharePoint Online-Listenelementen oder Metadaten, die in der SQL gespeichert sind. Microsoft 365 verwendet nicht den Verfügbarkeitsschlüssel für Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive for Business- und #A0 mit dem oben beschriebenen Fall, der vom Kunden initiiert wurde. Der Menschliche Zugriff auf Kundendaten wird durch Customer Lockbox geschützt.
 
-## <a name="availability-key-triggers"></a>Trigger für Verfügbarkeits Schlüssel
+## <a name="availability-key-triggers"></a>Auslöser des Verfügbarkeitsschlüssels
 
-Microsoft 365 löst den Verfügbarkeits Schlüssel nur unter bestimmten Umständen aus. Diese Umstände unterscheiden sich je nach Dienst.
+Microsoft 365 löst den Verfügbarkeitsschlüssel nur unter bestimmten Umständen aus. Diese Umstände unterscheiden sich je nach Dienst.
 
 ### <a name="triggers-for-exchange-online-and-skype-for-business"></a>Trigger für Exchange Online und Skype for Business
   
-1. Microsoft 365 liest die DEP, der das Postfach zugewiesen ist, um den Speicherort der beiden Kundenschlüssel in Azure Key Vault zu ermitteln.
+1. Microsoft 365 liest die DEP, der das Postfach zugewiesen ist, um den Speicherort der beiden Kundenschlüssel in Azure Key Vault zu bestimmen.
 
-2. Microsoft 365 wählt nach dem Zufallsprinzip einen der beiden Kundenschlüssel aus der DEP aus und sendet eine Anforderung an Azure Key Vault, um den DEP-Schlüssel mit dem Kundenschlüssel zu entpacken.
+2. Microsoft 365 wählt zufällig einen der beiden Kundenschlüssel aus der DEP aus und sendet eine Anforderung an Azure Key Vault, den DEP-Schlüssel mithilfe des Kundenschlüssels zu entpacken.
 
-3. Wenn die Anforderung zum Aufräumen des DEP-Schlüssels mit dem Kundenschlüssel fehlschlägt, sendet Microsoft 365 eine zweite Anforderung an Azure Key Vault, wobei Sie dieses Mal angewiesen wird, den alternativen Kundenschlüssel (Second) zu verwenden.
+3. Wenn bei der Anforderung, den DEP-Schlüssel mithilfe des Kundenschlüssels zu entpacken, ein Fehler auftritt, sendet Microsoft 365 eine zweite Anforderung an Azure Key Vault, die ihn anweisen soll, den alternativen (zweiten) Kundenschlüssel zu verwenden.
 
-4. Wenn die zweite Anforderung zum Aufziehen des DEP-Schlüssels mit dem Kundenschlüssel fehlschlägt, untersucht Microsoft 365 die Ergebnisse beider Anforderungen.
+4. Wenn bei der zweiten Anforderung zum Auspacken des DEP-Schlüssels mithilfe des Kundenschlüssels ein Fehler auftritt, untersucht Microsoft 365 die Ergebnisse beider Anforderungen.
 
-    - Wenn die Prüfung festgestellt hat, dass die Anforderungen einen Systemfehler zurückgeben konnten:
+    - Wenn die Prüfung feststellt, dass die Anforderungen einen Systemfehler zurückgegeben haben:
 
-       - Microsoft 365 löst den Verfügbarkeits Schlüssel zum Entschlüsseln des DEP-Schlüssels aus.
+       - Microsoft 365 löst den Verfügbarkeitsschlüssel aus, um den DEP-Schlüssel zu entschlüsseln.
 
-       - Microsoft 365 verwendet dann den DEP-Schlüssel, um den postfachschlüssel zu entschlüsseln und die Benutzeranforderung abzuschließen. 
+       - Microsoft 365 verwendet dann den DEP-Schlüssel, um den Postfachschlüssel zu entschlüsseln und die Benutzeranforderung zu vervollständigen. 
 
-       - In diesem Fall kann Azure Key Vault aufgrund eines vorübergehenden Fehlers entweder nicht reagieren oder nicht erreichbar sein.
+       - In diesem Fall kann Azure Key Vault aufgrund eines vorübergehenden FEHLERs nicht reagieren oder nicht erreichbar sein.
 
-    - Wenn die Prüfung festgestellt hat, dass die Anforderungen die Rückgabe des Zugriffs verweigert haben:
+    - Wenn die Prüfung feststellt, dass die Anforderungen keinen ZUGRIFF VERWEIGERT zurückgeben konnten:
 
-       - Dies bedeutet, dass absichtliche, unbeabsichtigte oder böswillige Aktionen ausgeführt wurden, um die Kundenschlüssel nicht verfügbar zu machen (beispielsweise während des Daten Löschvorgangs im Rahmen des Ausscheidens des Diensts).
+       - Dies bedeutet, dass absichtliche, unbeabsichtigte oder böswillige Maßnahmen ergriffen wurden, um die Kundenschlüssel nicht verfügbar zu machen (z. B. während des Datenbereinigungsprozesses als Teil des Verlassens des Diensts).
 
-       - In diesem Fall wird der Verfügbarkeits Schlüssel nur für Systemaktionen und nicht für Benutzeraktionen verwendet, die Benutzeranforderung schlägt fehl, und der Benutzer erhält eine Fehlermeldung.
+       - In diesem Fall wird der Verfügbarkeitsschlüssel nur für Systemaktionen und nicht für Benutzeraktionen verwendet, die Benutzeranforderung schlägt fehl, und der Benutzer erhält eine Fehlermeldung.
 
 >[!IMPORTANT]
->Der Microsoft 365-Dienstcode hat immer ein gültiges Anmeldetoken für die Argumentation über Kundendaten, um Mehrwertdienste für die Cloud bereitzustellen. Daher kann es, bis der Verfügbarkeits Schlüssel gelöscht wurde, als Fallback für Aktionen verwendet werden, die von oder intern in Exchange Online und Skype for Business wie Such Indexerstellung oder Verschieben von Postfächern initiiert wurden. Dies gilt sowohl für vorübergehende Fehler als auch für Zugriff verweigerte Anforderungen an Azure Key Vault.
+>Microsoft 365-Dienstcode verfügt immer über ein gültiges Anmeldetoken zur Begründung von Kundendaten, um Mehrwert für Clouddienste zu bieten. Daher kann er bis zum Löschen des Verfügbarkeitsschlüssels als Ausweichfunktion für Aktionen verwendet werden, die von Exchange Online und Skype for Business initiiert oder in diese initiiert wurden, z. B. das Erstellen von Suchindex oder das Verschieben von Postfächern. Dies gilt sowohl für vorübergehende FEHLER als auch für ACCESS-DENIED-Anforderungen an Azure Key Vault.
 
-### <a name="triggers-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Trigger für SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien
+### <a name="triggers-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Trigger für SharePoint Online-, OneDrive for Business- und #A0
 
-Für SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien wird der Verfügbarkeits Schlüssel nie außerhalb der Wiederherstellungsfunktion verwendet, und Kunden müssen Microsoft explizit anweisen, die Verwendung des Verfügbarkeits Schlüssels während eines Wiederherstellungsszenarios zu initiieren.
+Für SharePoint Online-, OneDrive for Business- und #A0 wird der Verfügbarkeitsschlüssel nie außerhalb der Wiederherstellungsfunktion verwendet, und Kunden müssen Microsoft explizit anweisen, die Verwendung des Verfügbarkeitsschlüssels während eines Wiederherstellungsszenarios zu initiieren.
 
-## <a name="audit-logs-and-the-availability-key"></a>Überwachungsprotokolle und der Verfügbarkeits Schlüssel
+## <a name="audit-logs-and-the-availability-key"></a>Überwachungsprotokolle und verfügbarkeitsschlüssel
 
-Automatisierte Systeme in Microsoft 365 verarbeiten alle Daten, die durch das System fließen, um Cloud-Dienste bereitzustellen, beispielsweise Virenschutz, e-Discovery, Verhinderung von Datenverlust und Datenindizierung. Microsoft 365 generiert keine Kundensicht baren Protokolle für diese Aktivität. Darüber hinaus greifen Microsoft-Mitarbeiter nicht im Rahmen dieser normalen Systemvorgänge auf Ihre Daten zu.
+Automatisierte Systeme in Microsoft 365 verarbeiten alle Daten, während sie durch das System fließen, um Clouddienste, z. B. Virenschutz, E-Discovery, Verhinderung von Datenverlust und Datenindizierung, zur Verfügung zu stellen. Microsoft 365 generiert keine kunden sichtbaren Protokolle für diese Aktivität. Darüber hinaus greifen Mitarbeiter von Microsoft im Rahmen dieser normalen Systemvorgänge nicht auf Ihre Daten zu.
 
-### <a name="exchange-online-and-skype-for-business-availability-key-logging"></a>Exchange Online-und Skype for Business-verfüg barkeits Schlüsselprotokollierung
+### <a name="exchange-online-and-skype-for-business-availability-key-logging"></a>Exchange Online- und Skype for Business-Verfügbarkeitsschlüsselprotokollierung
 
-Wenn Exchange Online und Skype for Business auf den Verfügbarkeits Schlüssel zugreift, um den Dienst bereitzustellen, veröffentlicht Microsoft 365 Kunden sichtbare Protokolle, auf die über das Security and Compliance Center zugegriffen werden kann. Ein Überwachungsprotokolleintrag für den Vorgang des Verfügbarkeits Schlüssels wird jedes Mal generiert, wenn der Dienst den Verfügbarkeits Schlüssel verwendet. Ein neuer Datensatztyp namens "Customer Key Service Encryption" mit Aktivitätstyp "Fallback auf Verfügbarkeits Taste" ermöglicht Administratoren das Filtern von [Unified Audit Log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) -Suchergebnissen, um die Verfügbarkeits Schlüsseldaten Sätze anzuzeigen.
+Wenn Exchange Online und Skype for Business auf den Verfügbarkeitsschlüssel für die Bereitstellung von Dienst zugreifen, veröffentlicht Microsoft 365 kunden sichtbare Protokolle, auf die über das Security and Compliance Center zugegriffen werden kann. Jedes Mal, wenn der Dienst den Verfügbarkeitsschlüssel verwendet, wird ein Überwachungsprotokolldatensatz für den Verfügbarkeitsschlüsselvorgang generiert. Ein neuer Datensatztyp namens "Customer Key Service Encryption" mit dem Aktivitätstyp "Fallback to Availability Key" ermöglicht Administratoren das Filtern der Suchergebnisse des [einheitlichen Überwachungsprotokolls](./search-the-audit-log-in-security-and-compliance.md) zum Anzeigen von Verfügbarkeitsschlüsseleinträgen.
 
-Protokolldatensätze umfassen Attribute wie Datum, Uhrzeit, Aktivität, Organisations-ID und Daten Verschlüsselungsrichtlinien-ID. Der Datensatz ist im Rahmen von einheitlichen Überwachungsprotokollen verfügbar und kann über die Registerkarte Search Security & Compliance Center-Überwachungsprotokoll abgerufen werden.
+Protokolldatensätze enthalten Attribute wie Datum, Uhrzeit, Aktivität, Organisations-ID und Datenverschlüsselungsrichtlinien-ID. Der Datensatz ist als Teil der einheitlichen Überwachungsprotokolle verfügbar und kann über die Registerkarte Security & Compliance Center Audit Log Search zugegriffen werden.
 
-![Überwachungsprotokoll Suche nach Verfügbarkeits Schlüsselereignissen](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
+![Überwachungsprotokollsuche für Verfügbarkeitsschlüsselereignisse](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
 
-Exchange Online-und Skype for Business-Verfügbarkeits Schlüsseleinträge verwenden das [allgemeine Schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) der Office 365-Verwaltungsaktivität mit hinzugefügten benutzerdefinierten Parametern: Richtlinien-ID, Versions-ID des Bereichs Schlüssels und Anforderungs-ID.
+Exchange Online- und Skype for Business-Verfügbarkeitsschlüsseleinträge verwenden [](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) das allgemeine Schema der Office 365-Verwaltungsaktivität mit hinzugefügten benutzerdefinierten Parametern: Richtlinien-ID, Bereichsschlüsselversions-ID und Anforderungs-ID.
 
-![Benutzerdefinierte Parameter für den Verfügbarkeits Schlüssel](../media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
+![Benutzerdefinierte Parameter für Verfügbarkeitsschlüssel](../media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
 
-### <a name="sharepoint-online-onedrive-for-business-and-teams-files-availability-key-logging"></a>SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Datei Verfügbarkeits Schlüsselprotokollierung
+### <a name="sharepoint-online-onedrive-for-business-and-teams-files-availability-key-logging"></a>SharePoint Online- und OneDrive for Business- und #A0
 
-Die Protokollierung der Verfügbarkeits Schlüssel ist für diese Dienste noch nicht verfügbar. Bei SharePoint Online-, OneDrive für Unternehmen-und Microsoft Teams-Dateien wird der Verfügbarkeits Schlüssel nur von Microsoft, wenn Sie von Ihnen angewiesen werden, zu Wiederherstellungszwecken aktiviert. Daher kennen Sie bereits jedes Ereignis, in dem der Verfügbarkeits Schlüssel für diese Dienste verwendet wird.
+Die Protokollierung von Verfügbarkeitsschlüsseln ist für diese Dienste noch nicht verfügbar. Für SharePoint Online-, OneDrive for Business- und #A0 wird der Verfügbarkeitsschlüssel nur von Microsoft aktiviert, wenn Sie dies angewiesen haben, um wiederherstellungszwecke zu dienen. Als Ergebnis kennen Sie bereits jedes Ereignis, in dem der Verfügbarkeitsschlüssel für diese Dienste verwendet wird.
 
-## <a name="availability-key-in-the-customer-key-hierarchy"></a>Verfügbarkeits Schlüssel in der Kundenschlüssel Hierarchie
+## <a name="availability-key-in-the-customer-key-hierarchy"></a>Verfügbarkeitsschlüssel in der Hierarchie des Kundenschlüssels
   
-Microsoft 365 verwendet den Verfügbarkeits Schlüssel, um die Schlüssel Ebene tiefer in der Hierarchie für die Verschlüsselung von Kundenschlüssel Diensten einzuschließen. Zwischen Diensten gibt es unterschiedliche wichtige Hierarchien. Wichtige Algorithmen unterscheiden sich auch zwischen Verfügbarkeits Schlüsseln und anderen Schlüsseln in der Hierarchie jedes zutreffenden Diensts. Die von den verschiedenen Diensten verwendeten Algorithmen für die Verfügbarkeit Schlüssel sind wie folgt:
+Microsoft 365 verwendet den Verfügbarkeitsschlüssel, um die Schlüsselebene tiefer in der Schlüsselhierarchie zu umschließen, die für die Verschlüsselung des Customer Key Service eingerichtet wurde. Zwischen diensten sind unterschiedliche Schlüsselhierarchien vorhanden. Schlüsselalgorithmen unterscheiden sich auch zwischen Verfügbarkeitsschlüsseln und anderen Schlüsseln in der Hierarchie der einzelnen anwendbaren Dienste. Die von den verschiedenen Diensten verwendeten Verfügbarkeitsschlüsselalgorithmen sind wie folgt:
 
-- Die Exchange Online-und Skype for Business-Verfügbarkeits Schlüssel verwenden AES-256.
+- Die Verfügbarkeitsschlüssel für Exchange Online und Skype for Business verwenden AES-256.
 
-- Die verfüg barkeits Schlüssel für Dateien SharePoint Online, OneDrive für Unternehmen und Microsoft Teams verwenden RSA-2048.
+- Die Verfügbarkeitsschlüssel für SharePoint Online-, OneDrive for Business- und #A0 verwenden RSA-2048.
 
-### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Verschlüsselungs Chiffren, die zum Verschlüsseln von Schlüsseln für Exchange Online und Skype for Business verwendet werden
+### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Verschlüsselungschiffren zum Verschlüsseln von Schlüsseln für Exchange Online und Skype for Business
 
-![Verschlüsselungs Chiffren für Exchange Online Kundenschlüssel](../media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Verschlüsselungschiffren für Exchange Online Customer Key](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
-### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-and-onedrive-for-business"></a>Verschlüsselungs Chiffren, die zum Verschlüsseln von Schlüsseln für SharePoint Online und OneDrive für Unternehmen verwendet werden
+### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-and-onedrive-for-business"></a>Verschlüsselungschiffren zum Verschlüsseln von Schlüsseln für SharePoint Online und OneDrive for Business
 
-![Verschlüsselungs Chiffren für SharePoint Online Kundenschlüssel](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![Verschlüsselungschiffren für SharePoint Online Customer Key](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Dienst Verschlüsselung mit Kundenschlüssel](customer-key-overview.md)
+- [Dienstverschlüsselung mit Kundenschlüssel](customer-key-overview.md)
 
-- [Einrichten des Kunden Schlüssels](customer-key-set-up.md)
+- [Einrichten des Kundenschlüssels](customer-key-set-up.md)
 
-- [Verwalten des Kunden Schlüssels](customer-key-manage.md)
+- [Verwalten des Kundenschlüssels](customer-key-manage.md)
 
 - [Rollen oder Drehen eines Kundenschlüssels oder eines Verfügbarkeitsschlüssels](customer-key-availability-key-roll.md)

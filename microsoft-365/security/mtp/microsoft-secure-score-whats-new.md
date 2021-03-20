@@ -1,7 +1,7 @@
 ---
-title: Neues in der Microsoft Secure Score
-description: Beschreibt, welche neuen Änderungen an der Microsoft Secure Score im Microsoft 365 Security Center vorgenommen wurden.
-keywords: Microsoft-Sicherheitsergebnis, Sicherheitsergebnis, Office 365-Sicherheitsergebnis, Microsoft-Sicherheitsergebnis, Microsoft 365 Security Center
+title: Neues in Microsoft Secure Score
+description: Beschreibt, welche neuen Änderungen an Microsoft Secure Score im Microsoft 365 Security Center vorgenommen wurden.
+keywords: Microsoft Secure Score, Secure Score, Office 365 Secure Score, Microsoft Security Score, microsoft 365 Security Center
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -21,61 +21,61 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 520a5627d2cd280f28c4e2c3db0e565640a1eace
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7d24d010f7c16d6db0fd4f9e4817768529ed29d1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289161"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906746"
 ---
-# <a name="whats-new-in-microsoft-secure-score"></a>Neues in der Microsoft Secure Score
+# <a name="whats-new-in-microsoft-secure-score"></a>Neues in Microsoft Secure Score
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 Damit die Microsoft-Sicherheitsbewertung zu einem besseren Ansprechpartner für Ihren Sicherheitsstatus wird, haben wir einige Änderungen vorgenommen. Wenn Sie mehr über geplante Änderungen wissen möchten, lesen Sie [Bald in der Microsoft-Sicherheitsbewertung verfügbar](microsoft-secure-score-whats-coming.md)
 
-Die Microsoft Secure Score finden Sie https://security.microsoft.com/securescore im [Microsoft 365 Security Center.](overview-security-center.md)
+Microsoft Secure Score finden Sie im https://security.microsoft.com/securescore [Microsoft 365 Security Center](overview-security-center.md).
     
 ## <a name="february-2021"></a>Februar 2021
 
 ### <a name="compatibility-with-graph-api"></a>Kompatibilität mit der Graph-API
 
-Die über die Graph-API bereitgestellten Empfehlungen für die Microsoft Secure Score sehen genauso aus und werden gewichtet wie die Empfehlungen, die derzeit im Microsoft 365 Security Center angezeigt werden.
+Microsoft Secure Score-Empfehlungen, die über die Graph-API bereitgestellt werden, werden genauso aussehen und gewichtet wie die Empfehlungen, die derzeit im Microsoft 365 Security Center angezeigt werden.
 
 ## <a name="january-2021"></a>Januar 2021
 
 ### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>Unsere erste Sicherheitsempfehlung für Microsoft Teams wurde hinzugefügt.
 
-Microsoft Teams-Kunden sehen "Einschränken der Teilnahme anonymer Benutzer an Besprechungen" als neue Verbesserungsaktion in der Sicherheitswertung.
+Microsoft Teams-Kunden sehen "Einschränken der Teilnahme anonymer Benutzer an Besprechungen" als neue Verbesserungsaktion in Secure Score.
 
 ## <a name="december-2020"></a>Dezember 2020
 
-### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Sechs kontenbezogene Verbesserungsmaßnahmen für Microsoft Defender for Endpoint (zuvor Microsoft Defender ATP) hinzugefügt:
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Es wurden sechs kontenbezogene Verbesserungsmaßnahmen für Microsoft Defender for Endpoint (zuvor Microsoft Defender ATP) hinzugefügt:
 
-- "Minimale Kennwortlänge" auf "14 oder mehr Zeichen" festlegen
-- Legen Sie "Kennwortverlauf erzwingen" auf "24 oder mehr Kennwörter"
-- Legen Sie "Maximales Kennwortalter" auf "60 oder weniger Tage, aber nicht auf 0" festgelegt.
+- Festlegen der Mindestkennwortlänge auf "14 oder mehr Zeichen"
+- Festlegen von "Kennwortverlauf erzwingen" auf "24 oder mehr Kennwort(n)"
+- Festlegen des maximalen Kennwortalters auf "60 oder weniger Tage, aber nicht auf 0"
 - Festlegen des Mindestkennwortalters auf "1 oder mehr Tage".
 - Deaktivieren des integrierten Administratorkontos
 - Deaktivieren des integrierten Gastkontos
 
 ## <a name="november-2020"></a>November 2020
 
-### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Die Möglichkeit zum Erstellen von "ServiceNow"-Tickets über secure Score wurde entfernt. 
+### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>Die Möglichkeit zum Erstellen von ServiceNow-Tickets über secure Score wurde entfernt. 
 
-Die Möglichkeit zum Erstellen von "ServiceNow"-Tickets über die Sicherheitspunktzahl über **"Share > ServiceNow"** ist nicht mehr verfügbar. Vielen Dank für Ihr Feedback und ihren weiteren Support, während wir die nächsten Schritte festlegen.
+Die Möglichkeit, ServiceNow-Tickets über Secure Score zu erstellen, indem Sie zu **Share > ServiceNow** gehen, ist nicht mehr verfügbar. Vielen Dank für Ihr Feedback und ihren weiteren Support, während wir die nächsten Schritte festlegen.
 
-### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Drei dienstbezogene Verbesserungsmaßnahmen für Microsoft Defender for Endpoint (zuvor Microsoft Defender ATP) hinzugefügt:
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Es wurden drei dienstbezogene Verbesserungsmaßnahmen für Microsoft Defender for Endpoint (zuvor Microsoft Defender ATP) hinzugefügt:
 
-- Beheben des Nicht-Anführungszeichen-Dienstpfads für Windows-Dienste
-- Ändern des Pfads der ausführbaren Datei zu einem gemeinsamen geschützten Speicherort
-- Ändern des Dienstkontos, um zwischengespeichertes Kennwort in der Registrierung von Windows zu vermeiden
+- Fix unquoted service path for Windows services
+- Ändern des ausführbaren Pfads des Diensts zu einem gemeinsamen geschützten Speicherort
+- Ändern des Dienstkontos, um zwischengespeichertes Kennwort in der Windows-Registrierung zu vermeiden
 
 ## <a name="october-2020"></a>Oktober 2020
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Entfernen von Verbesserungsmaßnahmen im Zusammenhang mit Microsoft Defender for Endpoint
 
-- Festlegen der Microsoft Defender SmartScreen Windows Store-App-Webinhaltsüberprüfung auf "Warnen"
+- Festlegen der Microsoft Defender SmartScreen Windows Store-Webinhaltsprüfung auf Warnmodus
 
 ## <a name="august-2020"></a>August 2020
 
@@ -85,15 +85,15 @@ Die Möglichkeit zum Erstellen von "ServiceNow"-Tickets über die Sicherheitspun
 
 ## <a name="incompatibility-with-identity-secure-score"></a>Inkompatibilität mit identitätssicherer Bewertung
 
-In der letzten Version von Microsoft-Sicherheitsbewertung wurde ein verbessertes Bewertungsmodell veröffentlicht. Diese Änderungen ermöglichen eine flexiblere und präzisere Ansicht Ihres Sicherheitsstatus. Diese Updates haben jedoch die Microsoft Secure Score vorübergehend inkompatibel mit der Identitätssteignung gemacht.
+In der letzten Version von Microsoft-Sicherheitsbewertung wurde ein verbessertes Bewertungsmodell veröffentlicht. Diese Änderungen ermöglichen eine flexiblere und präzisere Ansicht Ihres Sicherheitsstatus. Aufgrund dieser Updates ist Microsoft Secure Score jedoch vorübergehend mit der Identitätssicheren Bewertung nicht kompatibel.
 
-Mit der Zeit wird die Identitätss secure Score das neue Bewertungsmodell übernehmen. Bis dahin werden Kunden Unterschiede in den Bewertungen sehen, die von der Microsoft Secure Score und der Identitätsscore gemeldet werden. Wir entschuldigen uns für alle Unannehmlichkeiten, die hierdurch verursacht werden, und arbeiten an der Sicherstellung, dass diese Erfahrungen zukünftig kompatibler sein werden.
+Mit der Zeit wird identity Secure Score das neue Bewertungsmodell übernehmen. Bis dahin werden Kunden Unterschiede in den von Microsoft Secure Score und der Identitätssicheren Bewertung gemeldeten Noten sehen. Wir entschuldigen uns für alle Unannehmlichkeiten, die hierdurch verursacht werden, und arbeiten an der Sicherstellung, dass diese Erfahrungen zukünftig kompatibler sein werden.
 
 ## <a name="updated-improvement-actions"></a>Aktualisierte Verbesserungsmaßnahmen
 
 - Azure Active Directory-Verbesserungsmaßnahmen hinzugefügt
-- Microsoft Defender for Identity improvement actions hinzugefügt
-- Unterstützung für Sicherheitsempfehlungen für Microsoft Defender für Endpoint [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- Microsoft Defender for Identity-Verbesserungsaktionen hinzugefügt
+- Support für Microsoft Defender for Endpoint [Threat & Security Recommendations](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
     - Alle von TVM bereitgestellten Sicherheitsempfehlungen, die freigegeben wurden, sind nun verfügbar.
 
 ## <a name="updated-interface-and-functionality"></a>Benutzeroberfläche und Funktionalität aktualisiert
@@ -107,10 +107,10 @@ Mit der Zeit wird die Identitätss secure Score das neue Bewertungsmodell übern
 
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback
 
-Wenn Sie Probleme haben, teilen Sie uns dies mit, indem Sie sie in der [Community "Sicherheit& Datenschutzrichtlinien"](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) veröffentlichen. Die Communitybeiträge werden überwacht und wir sind ständig bemüht, Ihnen zu helfen.
+Wenn Sie Probleme haben, teilen Sie uns dies mit, indem Sie in der [Community für Sicherheit, Datenschutz und & veröffentlichen.](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) Die Communitybeiträge werden überwacht und wir sind ständig bemüht, Ihnen zu helfen.
 
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 - [Zugreifen auf Ihren Sicherheitsstatus](microsoft-secure-score-improvement-actions.md)
-- [Verfolgen Des Verlaufs der Microsoft Secure Score und Erreichen der Ziele](microsoft-secure-score-history-metrics-trends.md)
+- [Nachverfolgen Ihres Microsoft Secure Score-Verlaufs und Erreichen von Zielen](microsoft-secure-score-history-metrics-trends.md)
 - [Was in Kürze verfügbar ist](microsoft-secure-score-whats-coming.md)

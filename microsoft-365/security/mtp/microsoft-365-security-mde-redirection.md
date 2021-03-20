@@ -1,5 +1,5 @@
 ---
-title: Umleiten von Konten von Microsoft Defender for Endpoint zum Microsoft 365 Security Center
+title: Umleiten von Konten von Microsoft Defender für Endpunkt zum Microsoft 365 Security Center
 description: So leiten Sie Konten und Sitzungen vom Defender for Endpoint zum Microsoft 365 Security Center um.
 keywords: Microsoft 365 Security Center, Erste Schritte mit dem Microsoft 365 Security Center, Sicherheitscenterumleitung
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 626bc9950512438bfa43e6500adf72940ddcbfec
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: bdad55a98dba868d45ecea383ba379108ee5305a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727565"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906758"
 ---
-# <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-the-microsoft-365-security-center"></a>Umleiten von Konten von Microsoft Defender for Endpoint zum Microsoft 365 Security Center
+# <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-the-microsoft-365-security-center"></a>Umleiten von Konten von Microsoft Defender für Endpunkt zum Microsoft 365 Security Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -42,9 +42,9 @@ In Übereinstimmung mit dem domänenübergreifenden Ansatz von Microsoft für de
 In diesem Handbuch wird erläutert, wie Konten an das Microsoft 365 Security Center geleitet werden, indem die automatische Umleitung vom ehemaligen Microsoft Defender for Endpoint-Portal (securitycenter.windows.com oder securitycenter.microsoft.com) zum Microsoft 365 Security Center-Portal (security.microsoft.com) aktiviert wird.
 
 > [!NOTE]
-> Microsoft Defender for Endpoint im Microsoft 365 Security Center unterstützt die Gewährung des Zugriffs auf anbieter für verwaltete Sicherheitsdienste [(Managed Security Service Provider, MSSPs)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) auf dieselbe Weise, wie der Zugriff im [Microsoft Defender Security Center gewährt wird.](https://docs.microsoft.com/microsoft-365/security/mtp/mssp-access)
+> Microsoft Defender für Endpunkt im Microsoft 365 Security Center unterstützt [das Gewähren von Zugriff auf verwaltete Sicherheitsdienstanbieter (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in der gleichen Weise, wie der Zugriff [im Microsoft Defender Security Center gewährt wird](./mssp-access.md).
 
-## <a name="what-to-expect"></a>Was zu erwarten ist
+## <a name="what-to-expect"></a>Das erwartet Sie
 Sobald die automatische Umleitung aktiviert ist, werden Konten, die auf das frühere Microsoft Defender for Endpoint-Portal unter securitycenter.windows.com oder securitycenter.microsoft.com zugreifen, automatisch an das Microsoft 365 Security Center-Portal unter security.microsoft.com.
  
 Erfahren Sie mehr über die Geänderten: [Microsoft Defender for Endpoint im Microsoft 365 Security Center](microsoft-365-security-center-mde.md).
@@ -112,7 +112,7 @@ Nach dem Deaktivieren werden Konten nicht mehr an security.microsoft.com, und Si
 
 ## <a name="related-information"></a>Verwandte Informationen
 - [Microsoft 365 Security Center – Übersicht](overview-security-center.md)
-- [Microsoft Defender for Endpoint im Microsoft 365 Security Center](microsoft-365-security-center-mde.md)
+- [Microsoft Defender für Endpunkt im Microsoft 365 Security Center](microsoft-365-security-center-mde.md)
 - [Microsoft bietet einheitliches SIEM und XDR zur Modernisierung von Sicherheitsvorgängen](https://www.microsoft.com/security/blog/?p=91813) 
 - [XDR- und SIEM-Infografik](https://afrait.com/blog/xdr-versus-siem/) 
 - [Der neue Defender](https://afrait.com/blog/the-new-defender/) 

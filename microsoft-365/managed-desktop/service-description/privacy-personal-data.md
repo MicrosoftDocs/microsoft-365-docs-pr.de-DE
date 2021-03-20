@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: e98d42e79ac270e6ccce46e88e3b8ff00f8bfc0a
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 3f1a251d98be5b3a9fefa5c1f6d5d5562516d5d5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712306"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908174"
 ---
 # <a name="privacy-and-personal-data"></a>Datenschutz und personenbezogene Daten
 
@@ -32,7 +32,7 @@ Wenn Benutzer Unternehmensgeräte bei Microsoft Managed Desktop registrieren, wi
 Microsoft Managed Desktop sammelt keine Daten allein, um seinen Dienst zur Verfügung zu stellen (mit Ausnahme von Kontaktinformationen für [IT-Administratoren.](#it-admin-contact-information) Stattdessen werden von Microsoft Managed Desktop Daten wiederverwendet, die andere Quellen wie Windows und Microsoft Intune bereits gesammelt haben. Microsoft Managed Desktop verwendet Daten, die diese Dienste von registrierten Geräten sammeln:
 
 - Windows-Diagnosedaten von Geräten, die von Microsoft Managed Desktop verwaltet werden, werden an die Windows-Diagnosedatenspeicher von Microsoft gesendet.
-- Microsoft Managed Desktop verwendet [moderne Verwaltung für](https://docs.microsoft.com/learn/modules/introduction-to-modern-management-in-microsoft-365/) die Verwaltung der registrierten Geräte. Im Rahmen der modernen Verwaltung müssen die Geräte im Azure Active Directory des Mandanten registriert werden.
+- Microsoft Managed Desktop verwendet [moderne Verwaltung für](/learn/modules/introduction-to-modern-management-in-microsoft-365/) die Verwaltung der registrierten Geräte. Im Rahmen der modernen Verwaltung müssen die Geräte im Azure Active Directory des Mandanten registriert werden.
 - Für die Verteilung der hochoptimierten und sicheren Konfiguration auf registrierte Geräte verwendet Microsoft Managed Desktop Microsoft Intune.
 - Microsoft Managed Desktop verwendet Sicherheitsintelligenzdaten aus Microsoft Defender Advanced Thread Protection für kunden, die diesen Dienst verwenden.
 
@@ -92,11 +92,11 @@ Weitere Informationen zu den Regionen, die Azure für die Datenspeicherung verwe
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
-Intune-Daten können in einigen verschiedenen Regionen gespeichert werden, z. B. Europa Nord (Irland) und Europe West (Niederlande). Ihr IT-Administrator erstellt ein Mandantenkonto und wählt das Land aus, in dem Daten gespeichert werden, wenn er sich anfänglich bei Intune-Diensten registriert. Eine Liste der von Intune verwendeten Rechenzentren finden Sie unter [Microsoft Intune– Wo sind meine Kundendaten?](http://intunedatacentermap.azurewebsites.net/). Weitere Informationen zur Datenspeicherung und -verwendung durch Intune finden Sie unter [Datensammlung in Intune](https://docs.microsoft.com/intune/privacy-data-collect).
+Intune-Daten können in einigen verschiedenen Regionen gespeichert werden, z. B. Europa Nord (Irland) und Europe West (Niederlande). Ihr IT-Administrator erstellt ein Mandantenkonto und wählt das Land aus, in dem Daten gespeichert werden, wenn er sich anfänglich bei Intune-Diensten registriert. Eine Liste der von Intune verwendeten Rechenzentren finden Sie unter [Microsoft Intune– Wo sind meine Kundendaten?](http://intunedatacentermap.azurewebsites.net/). Weitere Informationen zur Datenspeicherung und -verwendung durch Intune finden Sie unter [Datensammlung in Intune](/intune/privacy-data-collect).
 
 ### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender für Endpunkt
 
-Microsoft Defender for Endpoint-Daten können in einigen verschiedenen Regionen gespeichert werden. Aus diesem Grund ist Defender for Endpoint in den Microsoft Azure-Rechenzentren in der Europäischen Union, im Vereinigten Königreich und in den Vereinigten Staaten tätig, wie unter [Microsoft Defender for Endpoint – Data storage locations angegeben.](http://intunedatacentermap.azurewebsites.net/) Weitere Informationen zur Datenspeicherung und Verwendung durch Defender for Endpoint finden Sie unter Welche Daten [sammelt Microsoft Defender for Endpoint?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
+Microsoft Defender for Endpoint-Daten können in einigen verschiedenen Regionen gespeichert werden. Aus diesem Grund ist Defender for Endpoint in den Microsoft Azure-Rechenzentren in der Europäischen Union, im Vereinigten Königreich und in den Vereinigten Staaten tätig, wie unter [Microsoft Defender for Endpoint – Data storage locations angegeben.](http://intunedatacentermap.azurewebsites.net/) Weitere Informationen zur Datenspeicherung und Verwendung durch Defender for Endpoint finden Sie unter Welche Daten [sammelt Microsoft Defender for Endpoint?](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
 
 ### <a name="windows-10"></a>Windows 10
 
@@ -126,7 +126,7 @@ Microsoft Managed Desktop verwendet keine personenbezogenen Daten, die im Rahmen
 
 Die Allgemeine Datenschutz-Verordnung [(DSGVO)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) der Europäischen Union gewährt Personen (in der Verordnung als betroffene Personen bekannt) das Recht, die personenbezogenen Daten zu verwalten, die von einem Arbeitgeber oder einer anderen Art von Agentur oder Organisation (als Datenverantwortlicher oder verantwortlicher Verantwortlicher bekannt) erfasst wurden. Personenbezogene Daten sind in der DSGVO ganz allgemein als Daten definiert, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Die DSGVO gewährt betroffenen Personen bestimmte Rechte an ihren personenbezogenen Daten, z. B. das Recht auf Erhalt einer Kopie dieser personenbezogenen Daten, das Recht auf Korrektur der Daten, das Recht auf Einschränkung der Bearbeitung dieser Daten und das Recht auf Empfang dieser Daten in einem elektronischen Format, sodass sie an einen anderen Verantwortlichen übermittelt werden können. Ein von einer betroffenen Person formal gestellter Antrag an den Verantwortlichen, bestimmte Maßnahmen im Zusammenhang mit den personenbezogenen Daten der betroffenen Person zu ergreifen, wird als Antrag einer betroffenen Person bezeichnet.
 
-Auf ähnliche Weise bietet das CCPA Datenschutzrechte und -verpflichtungen für verbraucher in Kalifornien, einschließlich Rechte, die den Datenschutzrechten der DSGVO ähneln, z. B. das Recht auf Löschung, Zugriff und Empfang (Portabilität) ihrer personenbezogenen Informationen. Das CCPA sieht außerdem bestimmte Offenlegungen, Schutz vor Diskriminierung bei der Wahl von Ausübungsrechten und "Opt-out/Opt-In"-Anforderungen für bestimmte Datenübertragungen vor, die als "Verkäufe" klassifiziert sind. Die Definition von "Verkäufe" umfasst die Freigabe von Daten für eine angemessene Gegenleistung. Weitere Informationen zum CCPA finden Sie im ["California Consumer Privacy Act](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa?view=o365-worldwide) und in den [häufig gestellten Fragen zum California Consumer Privacy Act](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?view=o365-worldwide).
+Auf ähnliche Weise bietet das CCPA Datenschutzrechte und -verpflichtungen für verbraucher in Kalifornien, einschließlich Rechte, die den Datenschutzrechten der DSGVO ähneln, z. B. das Recht auf Löschung, Zugriff und Empfang (Portabilität) ihrer personenbezogenen Informationen. Das CCPA sieht außerdem bestimmte Offenlegungen, Schutz vor Diskriminierung bei der Wahl von Ausübungsrechten und "Opt-out/Opt-In"-Anforderungen für bestimmte Datenübertragungen vor, die als "Verkäufe" klassifiziert sind. Die Definition von "Verkäufe" umfasst die Freigabe von Daten für eine angemessene Gegenleistung. Weitere Informationen zum CCPA finden Sie im ["California Consumer Privacy Act](/compliance/regulatory/offering-ccpa?view=o365-worldwide) und in den [häufig gestellten Fragen zum California Consumer Privacy Act](/compliance/regulatory/ccpa-faq?view=o365-worldwide).
 
 Im folgenden Abschnitt wird erläutert, wie Microsoft Managed Desktop den Verantwortlichen dabei hilft, personenbezogene Daten oder von Microsoft Managed Desktop verwendete personenbezogene Daten zu finden, darauf zu zugreifen und diese zu verwenden.
 
@@ -143,11 +143,11 @@ Sicherheitsadministratoren können eine Extraktion oder Löschung personenbezoge
 
 ### <a name="user-related-personal-data"></a>Benutzerbezogene personenbezogene Daten
 
-Abgesehen davon sammelt Microsoft Managed Desktop keine personenbezogenen Daten allein. Stattdessen werden personenbezogene Daten verwendet, die von anderen Microsoft Enterprise Online Services erfasst wurden. IT-Administratoren, die auf ihre Benutzeranforderungen zum Anzeigen, Korrigieren und Löschen ihrer personenbezogenen Daten reagieren möchten, können die entsprechenden Funktionen der zugrunde liegenden Dienste nutzen, von der Microsoft Managed Desktop abhängt. Wenn Sie an der Anzeige oder Löschung von personenbezogenen Daten interessiert sind, die von diesen Diensten verwendet werden, lesen Sie zunächst den Artikel Azure-Anfragen für betroffene Personen für den Artikel [DSGVO.](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure)
+Abgesehen davon sammelt Microsoft Managed Desktop keine personenbezogenen Daten allein. Stattdessen werden personenbezogene Daten verwendet, die von anderen Microsoft Enterprise Online Services erfasst wurden. IT-Administratoren, die auf ihre Benutzeranforderungen zum Anzeigen, Korrigieren und Löschen ihrer personenbezogenen Daten reagieren möchten, können die entsprechenden Funktionen der zugrunde liegenden Dienste nutzen, von der Microsoft Managed Desktop abhängt. Wenn Sie an der Anzeige oder Löschung von personenbezogenen Daten interessiert sind, die von diesen Diensten verwendet werden, lesen Sie zunächst den Artikel Azure-Anfragen für betroffene Personen für den Artikel [DSGVO.](/compliance/regulatory/gdpr-dsr-Azure)
 
 Verwenden Sie außerdem die folgenden Anleitungen, um DSRs für die Dienste zu verwenden, von der Microsoft Managed Desktop für die Sammlung personenbezogener Daten abhängt:
 
-- [Azure Active Directory](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure?view=o365-worldwide)
-- [Microsoft Intune](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-intune?view=o365-worldwide)
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
-- [Windows 10](https://docs.microsoft.com/windows/privacy/windows-10-and-privacy-compliance)
+- [Azure Active Directory](/compliance/regulatory/gdpr-dsr-Azure?view=o365-worldwide)
+- [Microsoft Intune](/compliance/regulatory/gdpr-dsr-Intune?view=o365-worldwide)
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- [Windows 10](/windows/privacy/windows-10-and-privacy-compliance)

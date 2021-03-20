@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 Endpunkt-DLP erweitert die Überwachung von Dateiaktivitäten sowie schützende Maßnahmen für diese Dateien auf Endpunkte. Die Dateien werden in den Microsoft 365 Compliance-Lösungen angezeigt. '
-ms.openlocfilehash: c4f0d10808d564fc0ee19510c25d33caba0471ff
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: d4a3fef03322912bf169cd195984a17d8dfe3b17
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741586"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907049"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informationen zu Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust)
 
@@ -95,7 +95,7 @@ Onboarding und Offboarding werden über Skripts verarbeitet, die Sie über das C
 
  Wenden Sie für das Geräte-Onboarding die unter [Erste Schritte mit Microsoft 365 Endpunkt-DLP-](endpoint-dlp-getting-started.md) beschriebene Vorgehensweise an.
 
-Wenn das Onboarding eines Geräts über [Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/) erfolgt ist, werden diese Geräte automatisch in der Liste der Geräte angezeigt.
+Wenn das Onboarding eines Geräts über [Microsoft Defender für Endpunkt](/windows/security/threat-protection/) erfolgt ist, werden diese Geräte automatisch in der Liste der Geräte angezeigt.
 
 > [!div class="mx-imgBorder"]
 > ![Liste der verwalteten Geräte](../media/endpoint-dlp-learn-about-2-device-list.png)
@@ -163,5 +163,5 @@ Jetzt, da Sie die Basics zu Endpunkt-DLP kennen, sind die nächsten Schritte fol
 - [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)
 - [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
 - [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md)
-- [Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender für Endpunkt](/windows/security/threat-protection/)
 - [Insider-Risikomanagement](insider-risk-management.md)

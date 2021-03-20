@@ -15,20 +15,20 @@ search.appverid:
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
-description: In diesem Artikel erfahren Sie, wie Sie die Verwaltung von Informationsrechten (Information Rights Management, IRM) in Exchange Online für die Verwendung eines Active Directory Rights Management Service (AD RMS)-Servers konfigurieren.
+description: Erfahren Sie, wie Sie die Verwaltung von Informationsrechten (Information Rights Management, IRM) in Exchange Online für die Verwendung eines AD RMS-Servers (Active Directory Rights Management Service) konfigurieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 92bf92427ed9a0ba55a0f059859d59c11023ea33
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a520a3e55ae1137a0a4cc417dc68097d0793d978
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166116"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908565"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Konfigurieren von IRM für die Verwendung eines lokalen AD RMS-Servers
   
-Für die Verwendung mit lokalen Bereitstellungen verwendet die Verwaltung von Informationsrechten (Information Rights Management, IRM) in Exchange Online Active Directory Rights Management Services (AD RMS), eine Informationsschutztechnologie in Windows Server 2008 und höher. IRM-Schutz wird auf E-Mails angewendet, indem eine AD RMS-Berechtigungsrichtlinienvorlage auf eine E-Mail angewendet wird. Rechte werden der Nachricht selbst zugeordnet, sodass der Schutz sowohl online und offline als auch innerhalb und außerhalb der Firewall der Organisation stattfindet.
+Für die Verwendung mit lokalen Bereitstellungen verwendet irM (Information Rights Management) in Exchange Online Active Directory-Rechteverwaltungsdienste (AD RMS), eine Information Protection-Technologie in Windows Server 2008 und höher. IRM-Schutz wird auf E-Mails angewendet, indem eine AD RMS-Berechtigungsrichtlinienvorlage auf eine E-Mail angewendet wird. Rechte werden der Nachricht selbst zugeordnet, sodass der Schutz sowohl online und offline als auch innerhalb und außerhalb der Firewall der Organisation stattfindet.
   
-Mit diesem Thema wird die Konfiguration von IRM für die Verwendung eines AD RMS-Servers erläutert. Informationen zum Verwenden der neuen Funktionen für Office 365 Nachrichtenverschlüsselung mit Azure Active Directory und Azure Rights Management finden Sie in der [Office 365 FAQ zur Nachrichtenverschlüsselung](https://docs.microsoft.com/microsoft-365/compliance/ome-faq).
+Mit diesem Thema wird die Konfiguration von IRM für die Verwendung eines AD RMS-Servers erläutert. Informationen zur Verwendung der neuen Funktionen für die Office 365-Nachrichtenverschlüsselung mit Azure Active Directory und Azure Rights Management finden Sie unter Häufig gestellte Fragen zur [Office 365-Nachrichtenverschlüsselung.](./ome-faq.md)
   
 Weitere Informationen zu IRM in Exchange Online finden Sie unter [Verwaltung von Informationsrechten in Exchange Online](information-rights-management-in-exchange-online.md).
   
@@ -36,13 +36,13 @@ Weitere Informationen zu IRM in Exchange Online finden Sie unter [Verwaltung von
 
 - Geschätzte Zeit bis zum Abschließen dieser Aufgabe: 30 Minuten
 
-- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Information Rights Management" im Thema [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx). 
+- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Information Rights Management" im Thema [Messaging policy and compliance permissions](/Exchange/permissions/feature-permissions/policy-and-compliance-permissions). 
 
-- Ein AD RMS-Server mit Windows Server 2008 oder höher. Informationen zum Bereitstellen von AD RMS finden Sie im Thema zum [Installieren eines AD RMS-Clusters](https://go.microsoft.com/fwlink/?LinkId=210873).
+- Ein AD RMS-Server mit Windows Server 2008 oder höher. Informationen zum Bereitstellen von AD RMS finden Sie im Thema zum [Installieren eines AD RMS-Clusters](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726041(v=ws.11)).
 
-- Informationen zum Installieren und Konfigurieren von Windows PowerShell sowie zum Herstellen einer Verbindung mit dem Dienst finden Sie unter [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](https://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
+- Informationen zum Installieren und Konfigurieren von Windows PowerShell sowie zum Herstellen einer Verbindung mit dem Dienst finden Sie unter [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Thema gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Informationen zu Tastenkombinationen, die für die Verfahren in diesem Thema gelten können, finden Sie unter [Tastenkombinationen für](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)das Exchange Admin Center in Exchange Online .
 
 > [!TIP]
 > Liegt ein Problem vor? Bitten Sie in den Exchange-Foren um Hilfe. Besuchen Sie die Foren unter [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) oder [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
@@ -94,15 +94,15 @@ Beispiel: Durch den folgenden Befehl wird die TPD mit dem Namen "Exported TPD" a
 Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byte -Path C:\Users\Administrator\Desktop\ExportTPD.xml -ReadCount 0)) -Name "Exported TPD" -ExtranetLicensingUrl https://corp.contoso.com/_wmcs/licensing -IntranetLicensingUrl https://rmsserver/_wmcs/licensing
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Import-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/7c5e7a0f-9c9d-4863-bab8-bcc729cc16a6.aspx).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Import-RMSTrustedPublishingDomain](/powershell/module/exchange/import-rmstrustedpublishingdomain).
   
 #### <a name="how-do-you-know-this-step-worked"></a>Woher wissen Sie, dass dieser Schritt erfolgreich war?
 
-Führen Sie zur Überprüfung eines erfolgreichen Imports der TPD das Cmdlet **Get-RMSTrustedPublishingDomain** zum Abruf von TPDs in Ihrer Exchange Online-Organisation auf. Für Einzelheiten finden Sie Beispiele unter [Get-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/69499195-f08f-41bd-b0ed-443688410b12.aspx).
+Führen Sie zur Überprüfung eines erfolgreichen Imports der TPD das Cmdlet **Get-RMSTrustedPublishingDomain** zum Abruf von TPDs in Ihrer Exchange Online-Organisation auf. Für Einzelheiten finden Sie Beispiele unter [Get-RMSTrustedPublishingDomain](/powershell/module/exchange/get-rmstrustedpublishingdomain).
   
 ### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>Schritt 3: Verwenden der Exchange-Verwaltungsshell zur Verteilung einer AD RMS-Rechterichtlinienvorlage
 
-Nach dem Import der TPD müssen Sie sicherstellen, dass eine AD RMS-Rechterichtlinienvorlage verteilt wird. Eine verteilte Vorlage ist für Outlook im Internet (früher als Outlook Web App bezeichnet) Benutzer sichtbar, die dann die Vorlagen auf eine e-Mail-Nachricht anwenden können.
+Nach dem Import der TPD müssen Sie sicherstellen, dass eine AD RMS-Rechterichtlinienvorlage verteilt wird. Eine verteilte Vorlage ist für Outlook im Web (früher als Outlook Web App bezeichnet) sichtbar, die die Vorlagen dann auf eine E-Mail-Nachricht anwenden können.
   
 Führen Sie den folgenden Befehl aus, um eine Liste aller Vorlagen in der Standard-TPD anzuzeigen:
   
@@ -110,7 +110,7 @@ Führen Sie den folgenden Befehl aus, um eine Liste aller Vorlagen in der Standa
 Get-RMSTemplate -Type All | fl
 ```
 
-Wenn der Wert des Parameters  _Type_ `Archived` lautet, ist die Vorlage nicht für Benutzer sichtbar. Nur verteilte Vorlagen in der Standard-TPD sind in Outlook im Internet verfügbar.
+Wenn der Wert des Parameters  _Type_ `Archived` lautet, ist die Vorlage nicht für Benutzer sichtbar. In Outlook im Web sind nur verteilte Vorlagen in der Standard-TPD verfügbar.
   
 Führen Sie zum Verteilen einer Vorlage den folgenden Befehl aus:
   
@@ -124,7 +124,7 @@ Beispiel: Durch den folgenden Befehl wird die Vorlage "Company Confidential" imp
 Set-RMSTemplate -Identity "Company Confidential" -Type Distributed
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-RMSTemplate](https://technet.microsoft.com/library/4a5066e8-b770-4aa2-b464-0d2190914f71.aspx) und [Set-RMSTemplate](https://technet.microsoft.com/library/4637f6b8-751a-4f5e-8869-428250230382.aspx).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-RMSTemplate](/powershell/module/exchange/get-rmstemplate) und [Set-RMSTemplate](/powershell/module/exchange/set-rmstemplate).
   
 **Vorlage "Nicht weiterleiten"**
   
@@ -145,7 +145,7 @@ Sie können zusätzliche AD RMS-Rechterichtlinienvorlagen auf dem AD RMS-Server 
   
 #### <a name="how-do-you-know-this-step-worked"></a>Woher wissen Sie, dass dieser Schritt erfolgreich war?
 
-Führen Sie zur Überprüfung einer erfolgreichen Verteilung einer AD RMS-Rechterichtlinienvorlage das Cmdlet **Get-RMSTemplate** zur Prüfung der Eigenschaften der Vorlage aus. Für Einzelheiten finden Sie Beispiele unter [Get-RMSTemplate](https://technet.microsoft.com/library/4a5066e8-b770-4aa2-b464-0d2190914f71.aspx).
+Führen Sie zur Überprüfung einer erfolgreichen Verteilung einer AD RMS-Rechterichtlinienvorlage das Cmdlet **Get-RMSTemplate** zur Prüfung der Eigenschaften der Vorlage aus. Für Einzelheiten finden Sie Beispiele unter [Get-RMSTemplate](/powershell/module/exchange/get-rmstemplate).
   
 ### <a name="step-4-use-the-exchange-management-shell-to-enable-irm"></a>Schritt 4: Verwenden der Exchange-Verwaltungsshell zur Aktivierung von IRM
 
@@ -155,17 +155,17 @@ Führen Sie nach dem Import der TPD und der Verteilung der AD RMS-Rechterichtlin
 Set-IRMConfiguration -InternalLicensingEnabled $true
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-IRMConfiguration](https://technet.microsoft.com/library/5df0b56a-7bcc-4be2-b4b8-4de16720476c.aspx).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration).
   
 #### <a name="how-do-you-know-this-step-worked"></a>Woher wissen Sie, dass dieser Schritt erfolgreich war?
 
-Zur Überprüfung einer erfolgreichen Aktivierung von IRM führen Sie das Cmdlet [Get-IRMConfiguration](https://technet.microsoft.com/library/e1821219-fe18-4642-a9c2-58eb0aadd61a.aspx) zur Prüfung der IRM-Konfiguration in der Exchange Online-Organisation aus.
+Zur Überprüfung einer erfolgreichen Aktivierung von IRM führen Sie das Cmdlet [Get-IRMConfiguration](/powershell/module/exchange/get-irmconfiguration) zur Prüfung der IRM-Konfiguration in der Exchange Online-Organisation aus.
   
 ## <a name="how-do-you-know-this-task-worked"></a>Woher wissen Sie, dass diese Aufgabe erfolgreich war?
 <a name="sectionSection2"> </a>
 
 Führen Sie zur Überprüfung eines erfolgreichen Imports der TPD und einer erfolgreichen Aktivierung von IRM folgende Schritte aus:
   
-- Verwenden Sie das Cmdlet **Test-IRMConfiguration**, um die Funktionalität von IRM zu überprüfen. Details finden Sie in "Beispiel 1" unter [Test-IRMConfiguration](https://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx).
+- Verwenden Sie das Cmdlet **Test-IRMConfiguration**, um die Funktionalität von IRM zu überprüfen. Details finden Sie in "Beispiel 1" unter [Test-IRMConfiguration](/powershell/module/exchange/test-irmconfiguration).
 
-- Erstellen Sie eine neue Nachricht in Outlook im Internet und IRM-Protect, indem Sie im erweiterten Menü die Option **Berechtigungen festlegen** auswählen ( ![weitere Optionen](../media/ITPro-EAC-MoreOptionsIcon.gif)).
+- Verfassen Einer neuen Nachricht in Outlook im Web und  IRM-protect, indem Sie die Option Berechtigungen festlegen im erweiterten Menü auswählen ( ![ Symbol für weitere Optionen ](../media/ITPro-EAC-MoreOptionsIcon.gif) ).

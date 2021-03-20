@@ -22,12 +22,12 @@ search.appverid:
 description: Technischen und Abrechnungssupport erhalten Sie über die für Ihr Land oder Ihre Region aufgeführten Telefonnummern oder indem Sie online eine Serviceanfrage übermitteln.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 7679539e64588827b6dcc20f6f98bc67e613aae6
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: aa843f0c81f38e53b525b6e56d7f3fa69696de79
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261335"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907038"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Möglichkeiten, Kontakt mit dem Support für Geschäftsprodukte aufzunehmen – Administratorhilfe
 
@@ -36,7 +36,7 @@ ms.locfileid: "50261335"
 > [!IMPORTANT]
 > Sie müssen ein Administrator für ein Geschäftsabonnement sein, um diese Supportmethoden nutzen zu können. Wenn Sie kein Administrator für ein Geschäftskonto sind, benutzen Sie bitte diese [Support-Seite](https://support.microsoft.com/contactus).
 
-Beginnen Sie mit [Überprüfen Sie den aktuellen Status der Dienste](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health). Detaillierte Informationen zu aktuellen und vergangenen Themen können Sie auf dem <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Dashbord "Dienststatus"</a> einsehen. Wenn Sie ein Problem haben, das nicht aufgelistet ist, können Sie auf eine der folgenden Weisen Support erhalten:
+Beginnen Sie mit [Überprüfen Sie den aktuellen Status der Dienste](../enterprise/view-service-health.md). Detaillierte Informationen zu aktuellen und vergangenen Themen können Sie auf dem <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Dashbord "Dienststatus"</a> einsehen. Wenn Sie ein Problem haben, das nicht aufgelistet ist, können Sie auf eine der folgenden Weisen Support erhalten:
 
 ## <a name="online-support"></a>Onlinesupport
 
@@ -214,7 +214,7 @@ Die Rolle des 21vianet-Supports besteht darin:
 
 ## <a name="feature-availability"></a>Verfügbarkeit von Funktionen
 
-Weitere Informationen zur Verfügbarkeit von Funktionen in Office 365-Plänen finden Sie unter [Office 365-Dienstbeschreibung](https://go.microsoft.com/fwlink/p/?linkid=846911).
+Weitere Informationen zur Verfügbarkeit von Funktionen in Office 365-Plänen finden Sie unter [Office 365-Dienstbeschreibung](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
 
 ## <a name="follow-us-on-wechat"></a>Folgen Sie uns auf WeChat
 

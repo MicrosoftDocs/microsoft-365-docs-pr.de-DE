@@ -12,75 +12,75 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-description: Hier erfahren Sie, wie Sie ein Postfach auf das Beweissicherungsverfahren setzen und während einer Untersuchung alle Postfachinhalte beibehalten.
+description: Erfahren Sie, wie Sie ein Postfach in einem Prozesssicherungsverfahren platzieren und während einer Untersuchung alle Postfachinhalte beibehalten.
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 4bcb857095a63c06caa6e9762496ca74afeead04
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 046ee6fdc7c42026b1a69805883175982e3100b7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546987"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908399"
 ---
 # <a name="create-a-litigation-hold"></a>Erstellen einer Aufbewahrung für juristische Zwecke
 
-Sie können ein Postfach auf das Beweissicherungsverfahren setzen, um alle Postfachinhalte einschließlich der gelöschten Elemente und der ursprünglichen Versionen geänderter Elemente beizubehalten. Wenn Sie ein Benutzerpostfach auf das Beweissicherungsverfahren setzen, wird der Inhalt im Archivpostfach des Benutzers (sofern aktiviert) ebenfalls beibehalten. Wenn Sie einen Haltestatus erstellen, können Sie eine Aufbewahrungsdauer angeben (auch als *zeitbasierter Haltestatus*bezeichnet), sodass gelöschte und geänderte Elemente für einen bestimmten Zeitraum aufbewahrt und dann endgültig aus dem Postfach gelöscht werden. Oder Sie können Inhalte auf unbestimmte Zeit beibehalten (als *endlos Sperre*bezeichnet) oder bis das Beweissicherungsverfahren entfernt wird. Wenn Sie einen Zeitraum für die Aufbewahrungsdauer angeben, wird er ab dem Datum berechnet, an dem eine Nachricht empfangen oder ein Postfachelement erstellt wird. 
+Sie können ein Postfach in das Prozesssicherungsverfahren einbehalten, um alle Postfachinhalte, einschließlich gelöschter Elemente und der ursprünglichen Versionen geänderter Elemente, zu behalten. Wenn Sie ein Benutzerpostfach in das Prozesssicherungsverfahren einbehalten, werden auch Inhalte im Archivpostfach des Benutzers aufbewahrt (sofern aktiviert). Wenn Sie einen Haltezustand erstellen, können Sie eine Haltedauer (auch als zeitbasierter Haltezustand *bezeichnet)* angeben, damit gelöschte und geänderte Elemente für einen bestimmten Zeitraum aufbewahrt und dann endgültig aus dem Postfach gelöscht werden. Oder Sie können Inhalte einfach unbegrenzt beibehalten (als *unendlicher* Aufbewahrungsraum bezeichnet) oder bis das Prozesssicherungsverfahren aufgehoben wird. Wenn Sie einen Haltezeitraum angeben, wird er ab dem Datum berechnet, an dem eine Nachricht empfangen oder ein Postfachelement erstellt wird. 
   
-Hier erfahren Sie, was passiert, wenn Sie ein Beweissicherungsverfahren erstellen.
+Hier sehen Sie, was passiert, wenn Sie ein Prozesssicherungsverfahren erstellen.
   
-- Elemente, die vom Benutzer dauerhaft gelöscht werden, werden für die Dauer des Haltestatus im Ordner "refundable Items" im Postfach des Benutzers aufbewahrt.
+- Elemente, die vom Benutzer dauerhaft gelöscht werden, werden für die Dauer des Haltezustands im Ordner "Wiederherstellbare Elemente" im Postfach des Benutzers aufbewahrt.
     
-- Elemente, die vom Benutzer aus dem Ordner "refundable Items" gelöscht werden, werden für die Dauer des Haltestatus aufbewahrt.
+- Elemente, die vom Benutzer aus dem Ordner "Wiederherstellbare Elemente" gelöscht werden, werden für die Dauer der Haltedauer aufbewahrt.
     
-- Das Speicherkontingent für den Ordner "refundable Items" wird von 30 GB auf 110 GB erhöht.
+- Das Speicherkontingent für den Ordner "Wiederherstellbare Elemente" wird von 30 GB auf 110 GB erhöht.
     
-- Elemente in der primären und der Archivpostfächer des Benutzers werden beibehalten.
+- Elemente im primären Postfach des Benutzers und in den Archivpostfächern werden beibehalten.
     
-## <a name="assign-an-exchange-online-plan-2-license"></a>Zuweisen einer Lizenz für Exchange Online Plan 2
+## <a name="assign-an-exchange-online-plan-2-license"></a>Zuweisen einer Exchange Online Plan 2-Lizenz
 
-- Um ein Exchange Online Postfach in das Beweissicherungsverfahren einzufügen, muss ihm eine Exchange Online Plan 2-Lizenz zugewiesen werden. Wenn einem Postfach eine Exchange Online Plan 1-Lizenz zugewiesen ist, müssen Sie ihm eine separate Exchange Online-Archivierungslizenz zuweisen, um ihn in die Warteschleife zu versetzen.
+- Um ein Exchange Online-Postfach in das Prozesssicherungsverfahren zu setzen, muss ihm eine Exchange Online Plan 2-Lizenz zugewiesen werden. Wenn einem Postfach eine Exchange Online Plan 1-Lizenz zugewiesen ist, müssen Sie ihm eine separate Exchange Online-Archivierung zuweisen, um es in den Halteraum zu setzen.
     
 
 ## <a name="place-a-mailbox-on-litigation-hold"></a>Aktivieren des Beweissicherungsverfahrens für ein Postfach
 
-Hier finden Sie die Schritte zum Aufbewahren eines Postfachs für das Beweissicherungsverfahren mithilfe der Exchange-Verwaltungskonsole.
+Im Folgenden finden Sie die Schritte zum Platzieren eines Postfachs im Prozesssicherungsverfahren mithilfe des Exchange Admin Centers.
 
-1. Wechseln Sie zu, [https://outlook.office.com/ecp](https://outlook.office.com/ecp) und melden Sie sich mit ihrem globalen Administratorkonto an.
+1. Wechseln Sie [https://outlook.office.com/ecp](https://outlook.office.com/ecp) zu, und melden Sie sich mit Ihrem globalen Administratorkonto an.
 
-2. Klicken Sie im linken Navigationsbereich auf **Empfänger > Postfächer** .
+2. Klicken **Sie > im linken Navigationsbereich** auf Empfänger und Postfächer.
 
-3. Wählen Sie das Postfach aus, das Sie in das Beweissicherungsverfahren einordnen möchten, und klicken Sie dann auf **Bearbeiten**.
+3. Wählen Sie das Postfach aus, das Sie im Prozesssicherungsverfahren platzieren möchten, und klicken Sie dann auf **Bearbeiten**.
 
 4. Klicken Sie auf der Eigenschaftenseite des Postfachs auf **Postfachfunktionen**.
     
 5. Klicken Sie unter **Beweissicherungsverfahren: Deaktiviert** auf **Aktivieren**, um für das Postfach das Beweissicherungsverfahren zu aktivieren.
     
-6. Geben Sie auf der Seite **Beweissicherungsverfahren** die folgenden optionalen Informationen ein: 
+6. Geben Sie **auf der** Seite Im Prozesssicherungsverfahren die folgenden optionalen Informationen ein: 
     
-    - **Dauer des beweissicherungsverfahrens (Tage)** – verwenden Sie dieses Feld, um einen zeitbasierten Speicher zu erstellen und anzugeben, wie lange Postfachelemente aufbewahrt werden, wenn das Postfach auf das Beweissicherungsverfahren festgelegt wird. Der Zeitraum beginnt mit dem Datum, an dem das Postfachelement empfangen oder erstellt wurde. Wenn die Aufbewahrungsdauer für ein bestimmtes Element abläuft, wird das Element nicht mehr beibehalten. Wenn Sie dieses Feld leer lassen, werden Elemente auf unbestimmte Zeit beibehalten oder bis der Haltebereich entfernt wird. Geben Sie die Dauer in Tagen an.
+    - **Dauer des Rechtsstreitigkeitens (Tage)** – Verwenden Sie dieses Feld, um einen zeitbasierten Haltezeitspeicher zu erstellen und anzugeben, wie lange Postfachelemente gespeichert werden, wenn das Postfach in das Prozesssicherungsverfahren verschoben wird. Der Zeitraum beginnt mit dem Datum, an dem das Postfachelement empfangen oder erstellt wurde. Wenn die Haltedauer für ein bestimmtes Element abläuft, wird dieses Element nicht mehr beibehalten. Wenn Sie dieses Feld leer lassen, werden Elemente auf unbestimmte Zeit oder bis zum Entfernen des Haltefelds aufbewahrt. Geben Sie die Dauer in Tagen an.
     
-    - **Hinweis** : Verwenden Sie dieses Feld, um dem Benutzer mitzuteilen, dass sein Postfach auf das Beweissicherungsverfahren festgehalten wird. Die Notiz wird auf der Seite Kontoinformationen im Postfach des Benutzers angezeigt, wenn Sie Outlook 2010 oder höher verwenden. Um auf diese Seite zuzugreifen, können Benutzer in Outlook auf **Datei** klicken.
+    - **Hinweis** : Verwenden Sie dieses Feld, um den Benutzer darüber zu informieren, dass sich sein Postfach im Prozesssicherungsverfahren befindet. Die Notiz wird auf der Seite Kontoinformationen im Postfach des Benutzers angezeigt, wenn sie Outlook 2010 oder höher verwenden. Um auf diese Seite zu gelangen, können Benutzer in **Outlook auf Datei** klicken.
     
-    - **URL** – verwenden Sie dieses Feld, um den Benutzer zu einer Website zu leiten, um weitere Informationen zur Aufbewahrung von Beweissicherungsverfahren zu erhalten. Diese URL wird auf der Seite Kontoinformationen im Postfach des Benutzers angezeigt, wenn Sie Outlook 2010 oder höher verwenden. Um auf diese Seite zuzugreifen, können Benutzer in Outlook auf **Datei** klicken..
+    - **URL** – Verwenden Sie dieses Feld, um den Benutzer zu einer Website zu führen, um weitere Informationen zum Prozesssicherungsverfahren zu erhalten. Diese URL wird auf der Seite Kontoinformationen im Postfach des Benutzers angezeigt, wenn sie Outlook 2010 oder höher verwenden. Um auf diese Seite zu zugreifen, können Benutzer in Outlook auf **Datei** klicken.
 
-7. Klicken Sie auf der Seite **Beweissicherungsverfahren** auf **Speichern** , und klicken Sie dann auf der Seite Postfacheigenschaften auf **Speichern** .
+7. Klicken **Sie auf** der Seite **Rechtsstreitigkeiten auf** Speichern, und klicken Sie dann auf der Seite Postfacheigenschaften auf Speichern. 
 
-### <a name="create-a-litigation-hold-using-powershell"></a>Erstellen eines beweissicherungsverfahrens mithilfe von PowerShell
+### <a name="create-a-litigation-hold-using-powershell"></a>Erstellen eines Rechtsstreits mit PowerShell
 
-Sie können auch ein Beweissicherungsverfahren erstellen, indem Sie den folgenden Befehl in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)ausführen:
+Sie können auch ein Prozessaufforderungsverfahren erstellen, indem Sie den folgenden Befehl in [Exchange Online PowerShell ausführen:](/powershell/exchange/connect-to-exchange-online-powershell)
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true
 ```
 
-Der vorherige Befehl behält Elemente auf unbestimmte Zeit bei, da die Aufbewahrungsdauer nicht angegeben ist. Zum Erstellen eines zeitbasierten haltebereichs mit dem folgenden Befehl:
+Der vorherige Befehl behält Elemente auf unbestimmte Zeit bei, da die Haltedauer nicht angegeben ist. Verwenden Sie den folgenden Befehl, um einen zeitbasierten Halteraum zu erstellen:
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 ```
 
-Weitere Informationen finden Sie unter [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+Weitere Informationen finden Sie unter [Set-Mailbox](/powershell/module/exchange/set-mailbox).
 
 ## <a name="how-does-litigation-hold-work"></a>Wie funktioniert das Beweissicherungsverfahren?
 
@@ -90,8 +90,7 @@ Ist für das Postfach das Beweissicherungsverfahren aktiviert, werden die Elemen
 
 Die folgende Abbildung zeigt die Unterordner in den Ordnern „Wiederherstellbare Elemente" und den Aufbewahrungsworkflowprozess.
 
-![Lebenszyklus von Beweissicherungsverfahren](../media/LitigationHoldLifeCycle.png)
+![Lebenszyklus des "Litigation Hold"](../media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
-> Wenn ein Haltebereich, der einem eDiscovery-Fall zugeordnet ist, in einem Postfach abgelegt wird, werden gelöschte Elemente aus dem Unterordner "Deletions" in den Unterordner DiscoveryHolds verschoben und bleiben erhalten, bis das Postfach aus der eDiscovery-Aufbewahrungsstelle freigegeben wird.
-  
+> Wenn ein einem eDiscovery-Fall zugeordnetes Archiv für ein Postfach platziert wird, werden gelöschte Elemente aus dem Unterordner Löschungen in den DiscoveryHolds-Unterordner verschoben und beibehalten, bis das Postfach aus dem eDiscovery-Archiv freigegeben wird.

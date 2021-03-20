@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: In diesem Artikel erfahren Sie mehr über die moderne Hybridauthentifizierung und die Voraussetzungen für die Verwendung mit lokalen Skype for Business- und Exchange-Servern.
-ms.openlocfilehash: b9b48f591f74bd508b20a851ec48a0d7132d6a84
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: 33bcf9bde2cda0388160337d3ffe6b81ab94eb12
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097104"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907528"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Moderne Hybridauthentifizierung, Übersicht und Voraussetzungen für die Verwendung mit lokalen Skype for Business- und Exchange-Servern
 
@@ -48,7 +48,7 @@ Die Verwaltung von Benutzeridentitäten mit moderner Authentifizierung gibt Admi
 
 Seien Sie sich bewusst, dass aufgrund der engen Zusammenarbeit von Skype for Business mit Exchange das Anmeldeverhalten, das Benutzer des Skype for Business-Clients sehen werden, durch den Status der modernen Authentifizierung von Exchange beeinflusst wird. Dies gilt auch, wenn Sie über eine hybride Skype for Business-Architektur mit _geteilter Domäne_ verfügen, in der Sie sowohl Skype for Business Online als auch lokal Skype for Business haben, wobei die Benutzer an beiden Standorten verwaltet werden.
 
-Weitere Informationen zur modernen Authentifizierung in Office 365 finden Sie unter [Office 365 Client App Support - Multi-Factor Authentication](microsoft-365-client-support-multi-factor-authentication.md).
+Weitere Informationen zur modernen Authentifizierung in Office 365 finden Sie unter [Office 365 Client App Support - Multi-factor authentication](microsoft-365-client-support-multi-factor-authentication.md).
 
 > [!IMPORTANT]
 > Seit August 2017 ist die moderne Authentifizierung (MA) auf allen neuen Office 365-Mandanten, die Skype for Business Online und Exchange Online umfassen, standardmäßig aktiviert. Bereits vorhandene Mandanten haben keine Änderung in Ihrem Standard-MA-Status, aber alle neuen Mandanten unterstützen automatisch den erweiterten Satz von Identitätsfeatures, die oben aufgelistet sind. Um Ihren MA-Status zu überprüfen, lesen Sie den Abschnitt [Überprüfen Sie den Status der modernen Authentifizierung Ihrer lokalen Umgebung](hybrid-modern-auth-overview.md#BKMK_CheckStatus).
@@ -67,7 +67,7 @@ Dies bedeutet auch, dass, auch wenn Ihr Exchange-Server und Ihre Skype for Busin
 Was ändert sich nicht? Unabhängig davon, ob Sie sich in einer Hybridumgebung mit geteilter Domäne befinden oder Skype for Business und Exchange Server lokal verwenden, müssen alle Benutzer zuerst *lokal* authentifiziert werden. In einer hybriden Implementierung moderner Authentifizierung weisen _Lyncdiscovery_ und _Autodiscovery_ beide auf Ihren lokalen Server hin.
 
 > [!IMPORTANT]
-> Wenn Sie die spezifischen Skype for Business-Topologien wissen möchten, die bei MA unterstützt werden, ist das [hier dokumentiert](https://technet.microsoft.com/library/mt803262.aspx).
+> Wenn Sie die spezifischen Skype for Business-Topologien wissen möchten, die bei MA unterstützt werden, ist das [hier dokumentiert](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported).
 
 ## <a name="check-the-modern-authentication-status-of-your-on-premises-environment"></a>Überprüfen Sie den Status der modernen Authentifizierung Ihrer lokalen Umgebung
 <a name="BKMK_CheckStatus"> </a>
@@ -80,7 +80,7 @@ Get-OrganizationConfig | ft OAuth*
 
 Wenn der Wert der Eigenschaft _OAuth2ClientProfileEnabled_ **falsch** ist, ist die moderne Authentifizierung deaktiviert.
 
-Weitere Informationen zum Cmdlet "Get-OrganizationConfig" finden Sie unter [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/get-organizationconfig).
+Weitere Informationen zum Cmdlet "Get-OrganizationConfig" finden Sie unter [Get-OrganizationConfig](/powershell/module/exchange/get-organizationconfig).
 
 Sie können Ihre Skype for Business-Server überprüfen, indem Sie den folgenden PowerShell-Befehl ausführen:
 
@@ -90,7 +90,7 @@ Get-CSOAuthConfiguration
 
 Wenn der Befehl eine leere _OAuthServers_-Eigenschaft zurückgibt oder wenn der Wert der Eigenschaft _ClientADALAuthOverride_ nicht **zulässig** ist, wird die moderne Authentifizierung deaktiviert.
 
-Weitere Informationen zum Cmdlet "Get-CsOAuthConfiguration" finden Sie unter [Get-CsOAuthConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csoauthconfiguration).
+Weitere Informationen zum Cmdlet "Get-CsOAuthConfiguration" finden Sie unter [Get-CsOAuthConfiguration](/powershell/module/skype/get-csoauthconfiguration).
 
 ## <a name="do-you-meet-modern-authentication-prerequisites"></a>Erfüllen Sie die Voraussetzungen für die moderne Authentifizierung?
 
@@ -108,7 +108,7 @@ Weitere Informationen zum Cmdlet "Get-CsOAuthConfiguration" finden Sie unter [Ge
   - Eine Bereitstellung mit maximal zwei unterschiedlichen Serverversionen, wie unten aufgelistet:
     - Skype for Business Server 2015
     - Skype for Business Server 2019
-  - Alle Skype for Business-Server müssen über die neuesten kumulativen Updates verfügen. Weitere Informationen finden Sie unter [Skype for Business Server-Updates](https://docs.microsoft.com/skypeforbusiness/sfb-server-updates), um alle verfügbaren Updates zu finden und zu verwalten.
+  - Alle Skype for Business-Server müssen über die neuesten kumulativen Updates verfügen. Weitere Informationen finden Sie unter [Skype for Business Server-Updates](/skypeforbusiness/sfb-server-updates), um alle verfügbaren Updates zu finden und zu verwalten.
   - Es gibt kein Lync Server 2010 oder 2013 in der Hybridumgebung.
 
 >[!NOTE]
@@ -136,14 +136,14 @@ Weitere Informationen zum Cmdlet "Get-CsOAuthConfiguration" finden Sie unter [Ge
   - Sie verwenden entweder Exchange Server 2013 CU19 und höher, Exchange Server 2016 CU8 und höher oder Exchange Server 2019 CU1 und höher.
   - Es gibt kein Exchange Server 2010 in der Umgebung.
   - Die SSL-Abladung ist nicht konfiguriert. Die SSL-Beendigung und die erneute Verschlüsselung wird unterstützt.
-  - Für den Fall, dass Ihre Umgebung eine Proxyserver-Infrastruktur einsetzt, damit Server eine Verbindung mit dem Internet herstellen können, stellen Sie sicher, dass alle Exchange-Server über den Proxyserver verfügen, der in der Eigenschaft [InternetWebProxy](https://technet.microsoft.com/library/bb123716%28v=exchg.160%29.aspx) definiert ist.
+  - Für den Fall, dass Ihre Umgebung eine Proxyserver-Infrastruktur einsetzt, damit Server eine Verbindung mit dem Internet herstellen können, stellen Sie sicher, dass alle Exchange-Server über den Proxyserver verfügen, der in der Eigenschaft [InternetWebProxy](/powershell/module/exchange/set-exchangeserver) definiert ist.
 
 - **Lokaler Exchange-Server in einer Office 365-Hybridumgebung**
 
   - Wenn Sie Exchange Server 2013 verwenden, müssen auf mindestens einem Server die Serverrollen „Postfach“ und „Clientzugriff“ installiert sein. Es ist zwar möglich, die Rollen „Postfach“ und „Clientzugriff“ auf separaten Servern zu installieren, es wird jedoch dringend empfohlen, beide Rollen auf demselben Server zu installieren, um zusätzliche Zuverlässigkeit und verbesserte Leistung bereitzustellen.
   - Wenn Sie Exchange Server 2016 oder eine spätere Version verwenden, muss auf mindestens einem Server die Serverrolle „Postfach“ installiert sein.
   - Es gibt kein Exchange Server 2007 oder 2010 in der Hybridumgebung.
-  - Alle Exchange-Server müssen über die neuesten kumulativen Updates verfügen. Weitere Informationen finden Sie unter [Upgrade von Exchange auf die neuesten kumulativen Updates](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates), um alle verfügbaren Updates zu finden und zu verwalten.
+  - Alle Exchange-Server müssen über die neuesten kumulativen Updates verfügen. Weitere Informationen finden Sie unter [Upgrade von Exchange auf die neuesten kumulativen Updates](/exchange/plan-and-deploy/install-cumulative-updates), um alle verfügbaren Updates zu finden und zu verwalten.
 
 - **Exchange-Client- und Protokollanforderungen**
 
@@ -153,21 +153,21 @@ Weitere Informationen zum Cmdlet "Get-CsOAuthConfiguration" finden Sie unter [Ge
 
   |**Clients**|**Primary-Protokoll**|**Notizen**|
   |:-----|:-----|:-----|
-  |Outlook 2013 und höher  <br/> |MAPI über HTTP  <br/> |MAPI über HTTP muss in Exchange aktiviert sein, um die moderne Authentifizierung mit diesen Clients (in der Regel aktiviert oder "wahr" für neue Installationen von Exchange 2013 Service Pack 1 und höher) zu nutzen. Weitere Informationen hierzu finden Sie unter [Funktionsweise der modernen Authentifizierung für Office 2013- und Office 2016-Client-Apps](modern-auth-for-office-2013-and-2016.md).  <br/> Stellen Sie sicher, dass Sie den mindestens erforderlichen Build von Outlook ausführen. Lesen Sie [Neueste Updates für Outlook-Versionen, die Windows Installer (MSI) verwenden](https://docs.microsoft.com/officeupdates/outlook-updates-msi).  <br/> |
+  |Outlook 2013 und höher  <br/> |MAPI über HTTP  <br/> |MAPI über HTTP muss in Exchange aktiviert sein, um die moderne Authentifizierung mit diesen Clients (in der Regel aktiviert oder "wahr" für neue Installationen von Exchange 2013 Service Pack 1 und höher) zu nutzen. Weitere Informationen hierzu finden Sie unter [Funktionsweise der modernen Authentifizierung für Office 2013- und Office 2016-Client-Apps](modern-auth-for-office-2013-and-2016.md).  <br/> Stellen Sie sicher, dass Sie den mindestens erforderlichen Build von Outlook ausführen. Lesen Sie [Neueste Updates für Outlook-Versionen, die Windows Installer (MSI) verwenden](/officeupdates/outlook-updates-msi).  <br/> |
   |Outlook 2016 für Mac und höher  <br/> |Exchange-Webdienste  <br/> |  <br/> |
-  |Outlook für iOS und Android  <br/> | Microsoft-Synchronisierungstechnologie <br/> |Weiter Informationen finden Sie unter [Verwenden der modernen Hybridauthentifizierung mit Outlook für iOS und Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).  <br/> |
+  |Outlook für iOS und Android  <br/> | Microsoft-Synchronisierungstechnologie <br/> |Weiter Informationen finden Sie unter [Verwenden der modernen Hybridauthentifizierung mit Outlook für iOS und Android](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).  <br/> |
   |Exchange ActiveSync-Clients (z. B. iOS11 Mail)  <br/> |Exchange ActiveSync  <br/> |Bei Exchange ActiveSync-Clients, die die moderne Authentifizierung unterstützen, müssen Sie das Profil neu erstellen, um von der Standardauthentifizierung zur modernen Authentifizierung zu wechseln.  <br/> |
 
-    Clients und/oder Protokolle, die nicht aufgeführt sind (z. B. POP3), unterstützen keine moderne Authentifizierung mit lokalem Exchange und nutzen auch nach der Aktivierung der modernen Authentifizierung in der Umgebung weiterhin Legacyauthentifizierungsmechanismen.
+    Clients und/oder Protokolle, die nicht aufgeführt sind (z. B. POP3), unterstützen die moderne Authentifizierung mit lokalem Exchange nicht und nutzen auch nach der Aktivierung der modernen Authentifizierung in der Umgebung weiterhin Legacyauthentifizierungsmechanismen.
 
 - **Allgemeine Voraussetzungen**
-  - Für Szenarien mit ressourcenbasierter Gesamtstruktur ist eine zweistufige Vertrauensstellung mit der Konto gesamtstruktur erforderlich, um sicherzustellen, dass bei Anforderungen der modernen Hybridauthentifizierung ordnungsgemäße SID-Lookups ausgeführt werden. 
+  - Ressourcen gesamtstrukturszenarien erfordern eine zweistufige Vertrauensstellung mit der Konto gesamtstruktur, um sicherzustellen, dass ordnungsgemäße SID-Suchen während moderner Hybridauthentifizierungsanforderungen ausgeführt werden. 
   - Wenn Sie AD FS verwenden, sollten Sie Windows 2012 R2 AD FS 3.0 und höher für Verbund verwenden.
   - Bei den Identitätskonfigurationen handelt es sich um alle Typen, die von Azure AD Connect unterstützt werden, z. B. Kennwort-Hashsynchronisierung, Pass-Through-Authentifizierung und lokale STS, die von Office 365 unterstützt werden.
   - Azure AD Connect ist für die Benutzerreplikation und Synchronisierung konfiguriert und funktionsfähig.
   - Sie haben überprüft, dass "hybrid" mit dem Modus "Klassische Exchange-Hybridtopologie" zwischen der lokalen und der Office 365-Umgebung konfiguriert ist. Offizieller Support-Statement für Exchange Hybrid sagt: Sie müssen entweder den aktuellen CU oder CU-1 haben.
     > [!NOTE]
-    > Die moderne Hybridauthentifizierung wird beim [Hybrid-Agent](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent) nicht unterstützt.
+    > Die moderne Hybridauthentifizierung wird beim [Hybrid-Agent](/exchange/hybrid-deployment/hybrid-agent) nicht unterstützt.
 
   - Stellen Sie sicher, dass sowohl ein lokal verwalteter Testbenutzer als auch ein Hybrid-Testbenutzer, der in Office 365 verwaltet wird, sich beim Skype for Business-Desktop-Client (wenn Sie die moderne Authentifizierung mit Skype verwenden möchten) und Microsoft Outlook (wenn Sie die moderne Authentifizierung mit Exchange verwenden möchten) anmelden können.
 
@@ -181,6 +181,6 @@ Weitere Informationen zum Cmdlet "Get-CsOAuthConfiguration" finden Sie unter [Ge
 <a name="BKMK_URLListforMA"> </a>
 
 - [Lokale Konfiguration von Exchange Server derart, dass die moderne Authentifizierung verwendet wird](configure-exchange-server-for-hybrid-modern-authentication.md)
-- [Unterstützte Skype for Business-Topologien mit moderner Authentifizierung](https://technet.microsoft.com/library/mt803262.aspx)
+- [Unterstützte Skype for Business-Topologien mit moderner Authentifizierung](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)
 - [Lokale Konfiguration von Skype for Business derart, dass die moderne Authentifizierung verwendet wird](configure-skype-for-business-for-hybrid-modern-authentication.md)
 - [Entfernen oder Deaktivieren der modernen Hybridauthentifizierung aus Skype for Business und Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)

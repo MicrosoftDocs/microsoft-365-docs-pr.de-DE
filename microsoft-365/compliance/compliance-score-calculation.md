@@ -1,5 +1,5 @@
 ---
-title: Berechnung der Konformitätsbewertung
+title: Berechnung der Compliance-Bewertung
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,110 +13,110 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Erfahren Sie, wie Microsoft Compliance Manager eine personalisierte Bewertung basierend auf Aktionen berechnet, die zur Behebung von Risiken und zur Verbesserung der Compliance-Haltung ergriffen werden.
+description: Erfahren Sie, wie Microsoft Compliance Manager eine personalisierte Bewertung basierend auf Maßnahmen berechnet, die zur Behandlung von Risiken und zur Verbesserung Ihrer Compliancehaltung ergriffen wurden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f1707e0117d0a61f572716f21d13a02821955401
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: 75d340c31b4f5477df845531bfb933883f331198
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262268"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908575"
 ---
-# <a name="compliance-score-calculation"></a>Berechnung der Konformitätsbewertung
+# <a name="compliance-score-calculation"></a>Berechnung der Compliance-Bewertung
 
-**In diesem Artikel:** Erfahren Sie, wie Compliance-Manager eine Konformitätsbewertung für Ihre Organisation berechnet. In diesem Artikel wird erläutert, wie **Sie Ihre Partitur interpretieren**, was die **grundlegende datenschutzbewertung** umfasst, die **kontinuierliche Überwachung**und **wie verschiedene Arten von Aktionen verwaltet und bewertet werden**.
+**In diesem Artikel:** Erfahren Sie, wie Der Compliance-Manager eine Compliance-Bewertung für Ihre Organisation berechnet. In diesem Artikel wird erläutert, wie Sie Ihre Bewertung **interpretieren,** was die **Datenschutzgrundbewertung** **umfasst,** wie sie kontinuierlich überwacht wird und wie verschiedene Arten von Aktionen verwaltet und mit einer Bewertung **erzielt werden.**
 
 > [!IMPORTANT]
-> Empfehlungen des Compliance-Managers sollten nicht als eine Garantie für Compliance interpretiert werden. Es liegt an Ihnen, die Effektivität von Kunden Kontrollen pro ihrer regulatorischen Umgebung zu bewerten und zu validieren. Diese Dienste unterliegen den allgemeinen Geschäftsbedingungen in den [Online Dienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910). Siehe auch [Microsoft 365 Lizenzierung Leitfaden für Sicherheit und Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> Empfehlungen des Compliance-Managers sollten nicht als eine Garantie für Compliance interpretiert werden. Es liegt an Ihnen, die Effektivität von Kundenkontrollen nach Ihrer gesetzlichen Umgebung zu bewerten und zu überprüfen. Diese Dienste unterliegen den Allgemeinen Geschäftsbedingungen in den [Onlinedienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910). Siehe auch [Microsoft 365 Licensing Guidance for security and compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-## <a name="how-to-read-your-compliance-score"></a>Vorgehensweise zum Lesen der Konformitätsbewertung
+## <a name="how-to-read-your-compliance-score"></a>So lesen Sie Ihre Compliance-Bewertung
 
-Im Compliance-Manager-Dashboard wird Ihr allgemeines Kompatibilitäts Ergebnis angezeigt. Diese Bewertung misst Ihren Fortschritt beim Abschließen empfohlener Verbesserungs Aktionen innerhalb von Steuerelementen. Ihre Punktzahl kann Ihnen helfen, Ihre aktuelle Compliance-Haltung zu verstehen. Es kann auch helfen, Prioritäten für Aktionen basierend auf Ihrem Potenzial zur Verringerung des Risikos zu setzen.
+Das Compliance-Manager-Dashboard zeigt Ihre Gesamt-Compliance-Bewertung an. Diese Bewertung misst Ihren Fortschritt beim Abschließen empfohlener Verbesserungsmaßnahmen in Steuerelementen. Ihre Bewertung kann Ihnen helfen, Ihre aktuelle Compliance-Position zu verstehen. Es kann Ihnen auch helfen, Aktionen basierend auf ihrem Potenzial zur Risiko reduzierung priorisieren.
 
-Ein Bewertungs Wert wird auf drei Ebenen zugewiesen:
+Ein Bewertungswert wird auf drei Ebenen zugewiesen:
 
-1. **Ergebnis der Verbesserungs Aktion**: jede Aktion unterscheidet sich je nach möglicher Gefahr durch eine andere Auswirkung auf Ihre Punktzahl.
+1. **Bewertung der** Verbesserungsaktion: Jede Aktion hat je nach potenziellem Risiko unterschiedliche Auswirkungen auf Ihre Bewertung.
 
-2. **Kontroll**Punkte: diese Bewertung ist die Summe der Punkte, die durch das Abschließen von Verbesserungs Aktionen innerhalb des Steuerelements erzielt wurden. Diese Summe wird in ihrer Gesamtheit auf ihr allgemeines Konformitäts Ergebnis angewendet, wenn das Steuerelement die beiden folgenden Bedingungen erfüllt:
-    - **Implementierungs Status** entspricht **implementiert** oder **alternative Implementierung**und
-    - **Test Ergebnis** gleich **übergeben**.
+2. **Kontrollpunktzahl:** Diese Punktzahl ist die Summe der Punkte, die durch Abschließen von Verbesserungsmaßnahmen innerhalb des Steuerelements erzielt werden. Diese Summe wird vollständig auf Die Gesamtkonformitätsnote angewendet, wenn das Steuerelement beide der folgenden Bedingungen erfüllt:
+    - **Implementierungsstatus** gleich **Implementierte** oder **Alternative Implementierung** und
+    - **Testergebnis** gleich **Passed**.
 
-3. **Bewertungsergebnis**: diese Bewertung ist die Summe ihrer Kontrollpunkte. Sie wird mithilfe von Aktionspunkten berechnet. Jede Microsoft-Aktion und jede Verbesserungs Aktion, die von Ihrer Organisation verwaltet wird, werden einmal gezählt, unabhängig davon, wie oft in einem Steuerelement auf Sie verwiesen wird.
+3. **Bewertungsbewertung:** Diese Bewertung ist die Summe Ihrer Kontrollergebnisse. Sie wird mithilfe von Aktionsergebnissen berechnet. Jede Microsoft-Aktion und jede von Ihrer Organisation verwaltete Verbesserungsaktion wird einmal gezählt, unabhängig davon, wie oft in einem Steuerelement darauf verwiesen wird.
 
-Das Gesamtergebnis der Konformität wird mithilfe von Aktionspunkten berechnet, wobei jede Microsoft-Aktion einmal gezählt wird, jede technische Aktion, die Sie verwalten, einmal gezählt wird und jede nicht technische Aktion, die Sie verwalten, einmal pro Gruppe gezählt wird. Diese Logik wurde entwickelt, um die genaue Bilanzierung der Implementierung und Erprobung von Aktionen in Ihrer Organisation zu ermöglichen. Dies kann dazu führen, dass sich das Gesamtergebnis der Konformität vom Durchschnitt der Bewertungsergebnisse unterscheidet. Lesen Sie weiter unten, [wie Aktionen bewertet werden](#action-types-and-points).
+Die Gesamtkonformitätsnote wird mithilfe von Aktionsergebnissen berechnet, wobei jede Microsoft-Aktion einmal gezählt wird, jede von Ihnen verwaltete technische Aktion einmal gezählt wird und jede nicht technische Aktion, die Sie verwalten, einmal pro Gruppe gezählt wird. Diese Logik ist so konzipiert, dass sie die genaueste Buchhaltung darüber bietet, wie Aktionen in Ihrer Organisation implementiert und getestet werden. Möglicherweise können Sie feststellen, dass dies dazu führen kann, dass sich Die Gesamtbewertung der Compliance vom Durchschnitt Ihrer Bewertungsbewertung unterscheidet. Weitere Informationen zur [Bewertung von Aktionen finden Sie weiter unten.](#action-types-and-points)
 
-## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Ursprüngliche Bewertung basierend auf der Microsoft 365-Datenschutz Basis
+## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Anfängliche Bewertung basierend auf der Microsoft 365-Datenschutzgrundlinie
   
-Compliance-Manager gibt Ihnen eine erste Bewertung basierend auf der Microsoft 365-Datenschutz Basis. Dieser Basisplan umfasst eine Reihe von Steuerelementen, die wichtige Regeln und Standards für den Datenschutz und die allgemeine Datensteuerung beinhalten. Dieser Basisplan zeichnet Elemente in erster Linie vom NIST-GFK (National Institute of Standards and Technology Cyber Framework) und ISO (International Organization for Standardisierungs) sowie von FedRAMP (Bundes Risiko-und Autorisierungs Management Programm) und dsgvo (allgemeine Datenschutzverordnung der Europäischen Union).
+Der Compliance-Manager gibt Ihnen eine erste Bewertung basierend auf der Microsoft 365-Datenschutzgrundlinie. Diese Basislinie umfasst eine Reihe von Kontrollen, die wichtige Vorschriften und Standards für den Datenschutz und die allgemeine Datenkontrolle umfassen. Diese Basislinie bezieht elemente hauptsächlich aus NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) und ISO (International Organization for Standardization), sowie aus FedRAMP (Federal Risk and Authorization Management Program) und DSGVO (General Data Protection Regulation of the European Union).
 
-Ihr anfängliches Ergebnis wird gemäß der standardmäßigen Datenschutz-Basisbewertung für alle Organisationen berechnet. Bei Ihrem ersten Besuch sammelt Compliance-Manager bereits Signale von Ihren Microsoft 365-Lösungen. Sie sehen auf einen Blick, wie Ihre Organisation im Verhältnis zu wichtigen Datenschutzstandards und-Vorschriften arbeitet, und wie Sie die vorgeschlagenen Verbesserungsmaßnahmen durchführen.
+Ihre anfängliche Bewertung wird gemäß der standardmäßigen Data Protection Baseline-Bewertung berechnet, die für alle Organisationen bereitgestellt wird. Bei Ihrem ersten Besuch sammelt Compliance Manager bereits Signale von Ihren Microsoft 365-Lösungen. Sie sehen auf einen Blick, wie Ihre Organisation im Vergleich zu wichtigen Datenschutzstandards und -vorschriften funktioniert, und sehen sich verbesserungswürdige Maßnahmen an.
 
-Da jede Organisation spezifische Anforderungen hat, setzt Compliance-Manager darauf, dass Sie Assessments einrichten und verwalten, um das Risiko möglichst umfassend zu minimieren und zu mindern.
+Da jede Organisation bestimmte Anforderungen hat, ist compliance Manager darauf angewiesen, dass Sie Bewertungen einrichten und verwalten, um Risiken so umfassend wie möglich zu minimieren und zu mindern.
 
-## <a name="how-compliance-manager-continuously-assesses-controls"></a>So beurteilt Compliance-Manager Steuerelemente kontinuierlich
+## <a name="how-compliance-manager-continuously-assesses-controls"></a>So bewertet Der Compliance-Manager die Steuerelemente kontinuierlich
 
-Compliance-Manager scannt automatisch Ihre Microsoft 365-Umgebung und erkennt Ihre Systemeinstellungen, und aktualisiert Ihren technischen Aktionsstatus kontinuierlich und automatisch. Microsoft Secure Score ist das zugrunde liegende Modul, das die Überwachung ausführt.
+Der Compliance-Manager durchsucht ihre Microsoft 365-Umgebung automatisch und erkennt Ihre Systemeinstellungen und aktualisiert ihren status für technische Aktionen kontinuierlich und automatisch. Microsoft Secure Score ist das zugrunde liegende Modul, das die Überwachung durchführt.
 
-Ihr Aktionsstatus wird alle 24 Stunden auf dem Dashboard aktualisiert. Nachdem Sie eine Empfehlung zur Implementierung eines Steuerelements befolgt haben, wird der Status des Steuerelements in der Regel am nächsten Tag aktualisiert angezeigt.
+Der Aktionsstatus wird alle 24 Stunden auf Ihrem Dashboard aktualisiert. Sobald Sie einer Empfehlung zum Implementieren eines Steuerelements folgen, wird der Steuerelementstatus in der Regel am nächsten Tag aktualisiert.
 
-Wenn Sie beispielsweise die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) im Azure AD-Portal aktivieren, erkennt Compliance-Manager die Einstellung und gibt Sie in den Details zur Steuerung der Zugriffslösung wieder. Wenn Sie sich umgekehrt nicht für MFA aktiviert haben, kennzeichnet Compliance-Manager dies als empfohlene Aktion, die Sie ergreifen sollten.
+Wenn Sie beispielsweise die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) im Azure AD-Portal aktivieren, erkennt der Compliance-Manager die Einstellung und spiegelt sie in den Details der Steuerelementzugriffslösung wider. Wenn Sie MFA nicht aktivieren, gibt der Compliance-Manager dies als empfohlene Aktion an.
 
-Erfahren Sie mehr über [Secure Score und wie es funktioniert](../security/mtp/microsoft-secure-score-new.md).
+Erfahren Sie mehr [über Secure Score und deren Funktionsweise.](../security/mtp/microsoft-secure-score.md)
   
-## <a name="action-types-and-points"></a>Aktionstypen und-Punkte
+## <a name="action-types-and-points"></a>Aktionstypen und -punkte
 
-Compliance-Manager verfolgt zwei Arten von Aktionen:
+Der Compliance-Manager verfolgt zwei Arten von Aktionen:
 
-1. **Ihre Verbesserungs Aktionen**: Aktionen, die von Ihrer Organisation verwaltet werden.
-2. **Microsoft-Aktionen**: von Microsoft verwaltete Aktionen.
+1. **Ihre Verbesserungsmaßnahmen:** Aktionen, die Von Ihrer Organisation verwaltet werden.
+2. **Microsoft-Aktionen:** Von Microsoft verwaltete Aktionen.
 
-Beide Arten von Aktionen weisen nach Abschluss Punkte auf, die für die Gesamtpunktzahl gelten.
+Beide Arten von Aktionen haben Punkte, die auf Ihre Gesamtpunktzahl zählen, wenn sie abgeschlossen sind.
 
 ### <a name="technical-and-non-technical-actions"></a>Technische und nicht technische Aktionen
 
-Die Aktionen werden nach dem technischen oder nicht technischen Charakter gruppiert. Der Bewertungs Effekt jeder Aktion unterscheidet sich je nach Typ.
+Aktionen werden nach technischer oder nicht technischer Natur gruppieren. Die Bewertungswirkung der einzelnen Aktionen unterscheidet sich je nach Typ.
 
-- **Technische Aktionen** werden durch Interaktion mit der Technologie einer Lösung implementiert (beispielsweisedurch Ändern einer Konfiguration). Die Punkte für Technische Aktionen werden einmal pro Aktion erteilt, unabhängig davon, zu wie viele Gruppen Sie gehört.
+- **Technische Aktionen** werden durch Interaktion mit der Technologie einer Lösung (z. B. Ändern einer Konfiguration) implementiert. Die Punkte für technische Aktionen werden einmal pro Aktion gewährt, unabhängig davon, zu wie vielen Gruppen sie gehört.
 
-- **Nicht technische Aktionen** werden von Ihrer Organisation verwaltet und auf andere Weise als das Arbeiten mit der Technologie einer Lösung implementiert. Es gibt zwei Arten von nicht technischen Aktionen: **Dokumentation** und **Betrieb**. Die Punkte für diese Aktionen werden auf Ihrer Konformitätsbewertung auf Gruppenebene angewendet. Dies bedeutet, dass Sie bei einer Aktion, die in mehreren Gruppen vorhanden ist, bei jeder Implementierung innerhalb einer Gruppe den Punkte Wert der Aktion erhalten.
+- **Nicht technische Aktionen** werden von Ihrer Organisation verwaltet und auf andere Weise implementiert, als mit der Technologie einer Lösung zu arbeiten. Es gibt zwei Arten von nicht technischen Aktionen: **Dokumentation und** **Betrieb**. Die Punkte für diese Aktionen werden auf Ihre Compliance-Bewertung auf Gruppenebene angewendet. Das bedeutet, wenn eine Aktion in mehreren Gruppen vorhanden ist, erhalten Sie den Punktwert der Aktion jedes Mal, wenn Sie sie in einer Gruppe implementieren.
 
 **Beispiel für die Bewertung technischer und nicht technischer Aktionen:**
 
 Angenommen, Sie haben eine technische Aktion im Wert von 3 Punkten, die in 5 Gruppen vorhanden ist, und Sie haben eine nicht technische Aktion im Wert von 3 Punkten, die in den gleichen 5 Gruppen vorhanden ist.
 
-Wenn Sie die technische Aktion erfolgreich implementiert haben, beträgt die Gesamtzahl der Punkte, die Sie erhalten, 3. Dies liegt daran, dass Sie die Aktion nur einmal für Ihren Mandanten implementieren müssen. Die Implementierung und der Teststatus für die technische Aktion werden in allen Instanzen dieser Aktion in jeder Gruppe angezeigt, der Sie angehört.
+Wenn Sie die technische Aktion erfolgreich implementieren, erhalten Sie insgesamt 3 Punkte. Dies liegt daran, dass Sie die Aktion nur einmal für Ihren Mandanten implementieren müssen. Der Implementierungs- und Teststatus der technischen Aktion wird in allen Instanzen dieser Aktion, in jeder Gruppe, zu der sie gehört, identisch angezeigt.
 
-Wenn Sie die nicht technische Aktion in jeder der 5 Gruppen erfolgreich implementieren, beträgt die Gesamtzahl der Punkte, die Sie erhalten, 15. Dies liegt daran, dass Sie die Aktion in jeder Gruppe implementieren müssen. Der Implementierungs-und Teststatus für die nicht-technische Aktion unterscheidet sich in Gruppen, da die Aktion in jeder ihrer Gruppen separat implementiert wird.
+Wenn Sie die nicht technische Aktion erfolgreich in jeder der 5 Gruppen implementieren, erhalten Sie insgesamt 15 Punkte. Dies liegt daran, dass Sie die Aktion in jeder Gruppe implementieren müssen. Die Implementierung und der Teststatus der nicht technischen Aktion unterscheiden sich gruppenübergreifend, da die Aktion in den einzelnen Gruppen separat implementiert wird.
 
-Diese Bewertungslogik wurde entwickelt, um die genaue Bilanzierung der Implementierung und Erprobung von Aktionen in Ihrer Organisation zu ermöglichen.
+Diese Bewertungslogik ist so konzipiert, dass sie die genaueste Buchhaltung darüber bietet, wie Aktionen in Ihrer Organisation implementiert und getestet werden.
 
-### <a name="how-score-values-are-determined"></a>Bestimmen der Bewertungswerte
+### <a name="how-score-values-are-determined"></a>Bestimmen von Bewertungswerten
  
-Aktionen werden basierend darauf, ob Sie obligatorisch oder diskretionäre sind, einen Bewertungs Wert zugewiesen und ob Sie vorbeugend, detektivisch oder Korrektiv sind.
+Aktionen wird ein Bewertungswert zugewiesen, der darauf basiert, ob sie obligatorisch oder diskretionär sind und ob sie präventiv, detektivisch oder korrektiv sind.
 
 ### <a name="mandatory-and-discretionary-actions"></a>Obligatorische und diskretionäre Aktionen
 
- - **Obligatorische Aktionen** können weder absichtlich noch versehentlich umgangen werden. Ein Beispiel für eine obligatorische Aktion ist eine zentral verwaltete Kennwortrichtlinie, die Anforderungen für die Länge, Komplexität und den Ablauf von Kennwörtern festlegt. Benutzer müssen diese Anforderungen für den Zugriff auf das System befolgen.
+ - **Obligatorische Aktionen** können weder absichtlich noch versehentlich umgangen werden. Ein Beispiel für eine obligatorische Aktion ist eine zentral verwaltete Kennwortrichtlinie, die Anforderungen für Kennwortlänge, Komplexität und Ablauf festlegen. Die Benutzer müssen diese Anforderungen erfüllen, um auf das System zugreifen zu können.
   
- - **Diskretionäre Aktionen** basieren darauf, dass Benutzer eine Richtlinie verstehen und einhalten. Beispielsweise ist eine Richtlinie, bei der Benutzer Ihren Computer beim Verlassen des Computers Sperren müssen, eine Ermessens Maßnahme, da Sie vom Benutzer abhängig ist.
+ - **Diskretionäre Aktionen** verlassen sich darauf, dass Benutzer eine Richtlinie verstehen und einhalten. Eine Richtlinie, nach der Benutzer ihren Computer sperren müssen, wenn sie ihn verlassen, ist beispielsweise eine diskretionäre Aktion, da sie auf dem Benutzer basiert.
   
-### <a name="preventative-detective-and-corrective-actions"></a>Vorbeugende, detektivische und korrigierende Aktionen
+### <a name="preventative-detective-and-corrective-actions"></a>Vorbeugende, detektive und Korrekturmaßnahmen
   
- - **Vorbeugende Aktionen** adressieren bestimmte Risiken. Beispielsweise ist das Schützen von Informationen im Ruhezustand mithilfe der Verschlüsselung vorbeugende Maßnahmen gegen Angriffe und Verstöße. Die Trennung von Zöllen ist eine vorbeugende Maßnahme zur Verwaltung von Interessenkonflikten und zum Schutz vor Betrug.
+ - **Vorbeugende Aktionen adressieren** bestimmte Risiken. Beispielsweise ist der Schutz von ruhenden Informationen mithilfe der Verschlüsselung eine vorbeugende Maßnahme gegen Angriffe und Verstöße. Die Aufgabentrennung ist eine vorbeugende Maßnahme zur Verwaltung von Interessenkonflikten und zum Schutz vor Betrug.
   
- - **Detektiv Aktionen** überwachen Systeme aktiv, um unregelmäßige Bedingungen oder Verhaltensweisen zu identifizieren, die ein Risiko darstellen oder die zum Erkennen von Eindringlingen oder Verstößen verwendet werden können. Beispiele hierfür sind die Systemzugriffs Überwachung und privilegierte Verwaltungsaktionen. Compliance-Überwachungen sind eine Art Detektiv Aktion, die verwendet wird, um Prozessprobleme zu finden.
+ - **Detektivaktionen** überwachen Systeme aktiv, um unregelmäßige Bedingungen oder Verhaltensweisen zu identifizieren, die Risiken darstellen oder zur Erkennung von Einbrüchen oder Verstößen verwendet werden können. Beispiele hierfür sind die Systemzugriffsüberwachung und privilegierte Administrative Aktionen. Überwachungen der Einhaltung gesetzlicher Vorschriften sind eine Art Von-Detektiv-Aktion, die zum Aufspüren von Prozessproblemen verwendet wird.
   
-- **Korrekturmaßnahmen** versuchen Sie, die negativen Auswirkungen eines Sicherheitsvorfalls auf ein Minimum zu beschränken, Korrekturmaßnahmen zu ergreifen, um den unmittelbaren Effekt zu reduzieren, und den Schaden nach Möglichkeit umzukehren. Die Antwort auf Datenschutz Vorfälle ist eine Korrekturmaßnahme zum Begrenzen von Beschädigungen und zur Wiederherstellung von Systemen in einem Betriebszustand nach einer Verletzung.
+- **Korrekturmaßnahmen** versuchen, die negativen Auswirkungen eines Sicherheitsvorfalls auf ein Minimum zu beschränken, Korrekturmaßnahmen zur Reduzierung der unmittelbaren Auswirkung zu ergreifen und den Schaden nach Möglichkeit rückgängig zu machen. Die Reaktion auf Datenschutzvorfälle ist eine Korrekturmaßnahme, um Schäden zu begrenzen und Systeme nach einer Verletzung betriebsbereit zu machen.
   
-Jede Aktion hat einen zugewiesenen Wert im Compliance-Manager basierend auf dem Risiko, das Sie darstellt:
+Jede Aktion hat einen zugewiesenen Wert im Compliance-Manager basierend auf dem Risiko, das sie darstellt:
 
-|**Typ**|**Zugewiesene Punktzahl**|
+|**Typ**|**Zugewiesene Bewertung**|
 |:-----|:-----|
-| Vorbeugende Pflicht | 27 |
-| Vorbeugender Ermessensspielraum | 9  |
-| Detektiv erforderlich | 3 |
-| Detektiv-diskretionäres | 1 |
-| Korrektur Pflicht | 3 |
-| Korrigierendes diskretionäre | 1 |
+| Vorbeugendes Obligatorisches | 27 |
+| Vorbeugende Diskretion | 9  |
+| Detektiv verpflichtend | 3 |
+| Detektiv-Diskretion | 1 |
+| Korrekturen verpflichtend | 3 |
+| Berichtigungsspielräume | 1 |
   
-![Action Points-Werte für Compliance-Manager](../media/compliance-score-action-scoring.png "Action Points-Werte für Compliance-Manager")
+![Compliance-Manager-Aktionspunktwerte](../media/compliance-score-action-scoring.png "Compliance-Manager-Aktionspunktwerte")

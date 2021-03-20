@@ -16,12 +16,12 @@ ms.collection:
 description: Sicherheit in Office 365, von EOP bis Defender für Office 365 Pläne 1 und 2, Standard vs. Strenge Sicherheitskonfigurationen und mehr. Verstehen Sie, was Sie haben und wie Sie Ihr Eigentum sichern können.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e1c6e768098cd59892c2572fb52497c873aef1a3
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
-ms.translationtype: HT
+ms.openlocfilehash: f8e929fde2908ba0d436c71c2caeb1be94b1338f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50711940"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907180"
 ---
 # <a name="office-365-security-overview"></a>Überblick über Office 365 Security
 
@@ -137,7 +137,7 @@ Diese Kurzreferenz soll Ihnen helfen zu verstehen, welche Funktionen in den einz
 
 - Microsoft Defender für Office 365 Plan 1 ist in Microsoft 365 Business Premium enthalten.
 
-- Microsoft Defender für Office 365 Plan 1 und Microsoft Defender für Office 365 Plan 2 sind jeweils als Add-On für bestimmte Abonnements verfügbar. Weitere Informationen finden Sie auch unter folgendem Link: [Verfügbarkeit von Features in Microsoft Defender für Office 365-Plänen](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- Microsoft Defender für Office 365 Plan 1 und Microsoft Defender für Office 365 Plan 2 sind jeweils als Add-On für bestimmte Abonnements verfügbar. Weitere Informationen finden Sie auch unter folgendem Link: [Verfügbarkeit von Features in Microsoft Defender für Office 365-Plänen](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
 - Das Feature [Sichere Dokumente](safe-docs.md) ist nur für Benutzer mit den Lizenzen für Microsoft 365 E5 oder Microsoft 365 E5 Security verfügbar (nicht in Microsoft Defender für Office 365-Plänen enthalten).
 

@@ -1,5 +1,5 @@
 ---
-title: Bildoptimierung für SharePoint Online klassischen Veröffentlichungswebsites
+title: Bildoptimierung für klassische SharePoint Online-Veröffentlichungswebsites
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -18,72 +18,70 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
-description: In diesem Artikel erfahren Sie, wie Sie mithilfe von Formatvarianten und Sprites die Bildleistung auf Ihren SharePoint Online klassischen Veröffentlichungswebsites verbessern.
-ms.openlocfilehash: 47d0f085c13c192417842fcef88c695fe875124c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Erfahren Sie, wie Sie Wiedergabeversionen und Sprites verwenden, um die Bildleistung auf Ihren klassischen SharePoint Online-Veröffentlichungswebsites zu verbessern.
+ms.openlocfilehash: 0f0dd078ce28b86fc998b2f83ac19d04b1a3ab02
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690525"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907480"
 ---
-# <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>Bildoptimierung für SharePoint Online klassischen Veröffentlichungswebsites
+# <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>Bildoptimierung für klassische SharePoint Online-Veröffentlichungswebsites
 
-Die Ladegeschwindigkeit einer Webseite hängt von der kombinierten Größe aller Komponenten ab, die zum Rendern der Seite erforderlich sind, einschließlich Bildern, HTML, JavaScript und CSS. Bilder sind eine großartige Möglichkeit, um Ihre Website attraktiver zu machen, aber ihre Größe kann die Leistung beeinträchtigen. Durch Optimieren der Bilder mit Komprimierung und Größenanpassung und Verwenden von Sprites können Sie die Effekte sehr großer Bilder kompensieren. Mithilfe von SharePoint-Bildwiedergaben können Sie ein einzelnes großes Bild hochladen und Abschnitte des Bilds anzeigen, die das wieder verwenden und nicht das erneute Laden ermöglichen.
+Die Ladegeschwindigkeit einer Webseite hängt von der kombinierten Größe aller Komponenten ab, die zum Rendern der Seite erforderlich sind, einschließlich Bildern, HTML, JavaScript und CSS. Bilder sind eine hervorragende Möglichkeit, um Ihre Website ansprechender zu gestalten, ihre Größe kann sich jedoch auf die Leistung auswirken. Durch die Optimierung Ihrer Bilder mit Komprimierung und Größenänderung und mit Sprites können Sie die Auswirkungen sehr großer Bilder ausgleichen. Mithilfe von SharePoint-Bilddarstellungen können Sie ein einzelnes großes Bild hochladen und Abschnitte des Bilds anzeigen, sodass es wiederverwendet und nicht neu geladen werden kann.
 
 >[!NOTE]
->Dieses Thema bezieht sich auf SharePoint Online klassischen Veröffentlichungswebsites und nicht auf moderne Portalwebsites. Informationen zur Bildoptimierung in SharePoint Online modernen Portalwebsites finden Sie unter [Optimieren von Bildern auf SharePoint Online modernen Portalseiten](modern-image-optimization.md).
+>Dieses Thema gilt für klassische SharePoint Online-Veröffentlichungswebsites, nicht für moderne Portalwebsites. Informationen zur Bildoptimierung in modernen SharePoint Online-Portalwebsites finden Sie unter Optimieren von Bildern [in modernen SharePoint Online-Portalseiten.](modern-image-optimization.md)
   
 ## <a name="using-sprites-to-speed-up-image-loading"></a>Verwenden von Sprites zum Beschleunigen des Ladens von Bildern
 
 |||
 |:-----|:-----|
-| Ein Bild-Sprite enthält viele kleinere Bilder. Mit CSS wählen Sie einen Teil des zusammengesetzten Bilds aus, der auf einem bestimmten Teil der Seite mit absoluter Positionierung angezeigt werden soll. Im Grunde bewegen Sie ein einzelnes Bild um die Seite, anstatt mehrere Bilder zu laden, und machen einen kleinen Teil dieses Bilds durch ein kleines Fenster sichtbar, in dem der erforderliche Teil des Sprite-Bilds dem Endbenutzer angezeigt wird. SharePoint Online verwendet Sprites, um die verschiedenen Symbole im Sprite-spcommon.png anzuzeigen.  <br/>  Was ist hier behandelt:  <br/>  Bildkomprimierung  <br/>  Bildoptimierung  <br/>  SharePoint-Bildwiedergaben  <br/> |![Screenshot von "Common"](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)|
+| Ein Bild-Sprite enthält viele kleinere Bilder. Mit CSS wählen Sie einen Teil des zusammengesetzten Bilds aus, der auf einem bestimmten Teil der Seite mit absoluter Positionierung angezeigt werden soll. Im Grunde verschieben Sie ein einzelnes Bild um die Seite, anstatt mehrere Bilder zu laden, und machen einen kleinen Teil dieses Bilds durch ein kleines Fenster sichtbar, in dem dem Endbenutzer der erforderliche Teil des sprite-Bilds angezeigt wird. SharePoint Online verwendet Sprites, um die verschiedenen Symbole in der sprite-spcommon.png.  <br/>  Was hier behandelt wird:  <br/>  Bildkomprimierung  <br/>  Bildoptimierung  <br/>  SharePoint-Bildversionen  <br/> |![Screenshot von spcommon](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)|
    
-Dies kann die Leistung verbessern, da Sie nur ein Bild anstelle von mehreren herunterladen und dieses Bild dann Zwischenspeichern und wieder verwenden. Selbst wenn das Bild nicht zwischengespeichert bleibt, indem es ein einzelnes Bild anstelle von mehreren Bildern aufweist, reduziert diese Methode die Gesamtzahl der HTTP-Anforderungen an den Server, wodurch die Seitenladezeiten reduziert werden. Dies ist wirklich eine Form der Bild Bündelung. Dies ist eine sehr nützliche Technik, wenn sich die Bilder nicht sehr häufig ändern, beispielsweise Symbole, wie im obigen SharePoint-Beispiel dargestellt. Sie können die Verwendung von [WebEssentials](https://vswebessentials.com/), ein Community-basiertes Open-Source-Projekt eines Drittanbieters, verwenden, um dies problemlos in Microsoft Visual Studio zu erreichen. Weitere Informationen finden Sie unter [Minimierungs und Bündelung in SharePoint Online](https://go.microsoft.com/fwlink/?LinkId=708698).
+Dies kann die Leistung erhöhen, da Sie nur ein Bild anstelle mehrerer herunterladen und dann zwischenspeichern und wiederverwenden. Auch wenn das Bild nicht zwischengespeichert bleibt, reduziert diese Methode die Gesamtzahl der HTTP-Anforderungen an den Server, indem ein einzelnes Bild anstelle mehrerer Bilder vorhanden ist, wodurch die Seitenladezeiten reduziert werden. Dies ist wirklich eine Form der Bildbündelung. Dies ist eine sehr nützliche Technik, wenn die Bilder nicht sehr häufig geändert werden, z. B. Symbole, wie im oben angegebenen SharePoint-Beispiel gezeigt. Sie können Web Essentials , ein Open-Source-Projekt eines [Drittanbieters,](https://vswebessentials.com/)auf Communitybasis verwenden, um dies in Microsoft Visual Studio. Weitere Informationen finden Sie unter [Minification and bundling in SharePoint Online](./minification-and-bundling-in-sharepoint-online.md).
   
-## <a name="using-image-compression-and-optimization-to-speed-up-page-loading"></a>Verwenden von Bildkomprimierung und Optimierung zum Beschleunigen des Seitenladevorgangs
+## <a name="using-image-compression-and-optimization-to-speed-up-page-loading"></a>Verwenden von Bildkomprimierung und -optimierung zum Beschleunigen des Seitenladevorganges
 
-Bei der Bildkomprimierung und-Optimierung geht es um die Verringerung der Dateigröße der Bilder, die Sie auf Ihrer Website verwenden. Die beste Methode zum Verringern der Größe eines Bilds ist häufig die Größe des Bilds auf die maximalen Abmessungen, die auf der Website angezeigt werden. Es hat keinen Sinn, ein Bild zu haben, das größer ist, als es jemals angezeigt wird. Wenn Sie sicherstellen möchten, dass die Bilder mit einem Bild-Editor korrekt dimensioniert sind, können Sie die Größe Ihrer Seite schnell und einfach reduzieren.
+Bei der Bildkomprimierung und -optimierung geht es darum, die Dateigröße der Bilder zu reduzieren, die Sie auf Ihrer Website verwenden. Häufig ist die beste Methode, um die Größe eines Bilds zu reduzieren, die Größe des Bilds auf die maximalen Dimensionen zu ändern, die auf der Website angezeigt werden. Es ist nicht sinnvoll, ein Bild größer zu machen, als es jemals angezeigt wird. Das Sicherstellen, dass Bilder mit einem Bildeditor die richtigen Dimensionen aufweisen, ist eine schnelle und einfache Möglichkeit, die Größe Ihrer Seite zu reduzieren.
   
-Sobald Bilder die richtige Größe haben, besteht der nächste Schritt darin, die Komprimierung dieser Bilder zu optimieren. Für die Komprimierung und Optimierung stehen verschiedene Tools zur Verfügung, einschließlich Fotogalerie und Tools von Drittanbietern. Der Schlüssel zur Komprimierung besteht darin, die Dateigröße so weit wie möglich zu reduzieren, ohne dass die Qualität der Endbenutzer erkennbar ist. Stellen Sie sicher, dass Sie Ihre komprimierten Dateien in einer hochauflösenden Anzeige testen, um sicherzustellen, dass Sie weiterhin gut aussehen.
+Sobald Bilder die richtige Größe haben, besteht der nächste Schritt in der Optimierung der Komprimierung dieser Bilder. Es stehen verschiedene Tools für die Komprimierung und Optimierung zur Verfügung, einschließlich Fotogalerie und Tools von Drittanbietern. Der Schlüssel zur Komprimierung ist, die Dateigröße so weit wie möglich zu reduzieren, ohne erkennbare Qualität für Endbenutzer zu verlieren. Stellen Sie sicher, dass Sie ihre komprimierten Dateien auf einer High-Definition-Anzeige testen, um sicherzustellen, dass sie weiterhin gut aussehen.
   
-## <a name="speed-up-page-downloads-by-using-sharepoint-image-renditions"></a>Beschleunigen der Seitendownloads mithilfe von SharePoint-Bildwiedergaben
+## <a name="speed-up-page-downloads-by-using-sharepoint-image-renditions"></a>Beschleunigen von Seitendownloads mithilfe von SharePoint-Bildversionen
 
-Bildwiedergaben sind ein Feature in SharePoint Online, mit dem Sie verschiedene Versionen von Bildern basierend auf vordefinierten Bildabmessungen servieren können. Dies ist besonders wichtig, wenn es Benutzer generierte Bildinhalte gibt oder die Bildabmessungen wie Breite und Höhe durch das CSS auf der Website festgelegt werden. Selbst wenn ein Bild durch CSS fixiert ist, wird das Bild in voller Auflösung immer noch geladen. In diesem Fall kann die Dateigröße mithilfe von Bildwiedergaben reduziert werden.
+Bildversionen sind ein Feature in SharePoint Online, mit dem Sie verschiedene Versionen von Bildern basierend auf vordefinierten Bilddimensionen bedienen können. Dies ist besonders wichtig, wenn vom Benutzer generierte Bildinhalte vorhanden sind oder die Bilddimensionen wie Breite und Höhe von der CSS auf der Website festgelegt werden. Auch wenn ein Bild durch CSS behoben wird, wird das Bild in voller Auflösung weiterhin geladen. In diesem Fall kann die Dateigröße mithilfe von Bildformatierungen reduziert werden.
   
 > [!NOTE]
-> Formatvarianten sind nur für SharePoint verfügbar, wenn die Veröffentlichung aktiviert ist. Sie können die Veröffentlichung unter Einstellungen \> Websiteeinstellungen \> Verwalten von Websitefeatures \> SharePoint Server veröffentlichen aktivieren. Die Option wird andernfalls nicht angezeigt.
+> Wiedergaben sind nur für SharePoint verfügbar, wenn die Veröffentlichung aktiviert ist. Sie können die Veröffentlichung unter Einstellungen \> Websiteeinstellungen \> Verwalten von Websitefeatures \> SharePoint Server Publishing aktivieren. Die Option wird nicht anders angezeigt.
   
-Die Größenänderung der Bildwiedergabe funktioniert, indem Sie die kleinste von Ihnen definierte Dimension, entweder Breite oder Höhe, und dann die Größe des Bilds so ändern, dass die andere Bemaßung automatisch basierend auf dem gesperrten Seitenverhältnis geändert wird. Standardmäßig wird das Bild von der Mitte durch die restlichen Dimensionen zuschneiden. Wenn Sie beispielsweise eine Formatvariante von 100px Wide und 50px High definieren und Ihr Originalbild 1000px breit und 800px hoch ist, wird die Größe so geändert, dass die 800px-Dimension jetzt 50px und die 1000px-Dimension (jetzt 62,5 px) von der Mitte des Bilds abgeschnitten wird.
+Die Größe der Bildwiedergabe kann so geändert werden, dass die kleinste dimension, die Sie definieren, entweder Breite oder Höhe, und dann die Größe des Bilds so geändert wird, dass die größe der anderen Dimension basierend auf dem gesperrten Seitenverhältnis automatisch angepasst wird. Standardmäßig wird das Bild von der Mitte um die verbleibenden Dimensionen zugeschnitten. Wenn Sie z. B. eine Wiedergabe von 100 px breit und 50 px hoch definieren und ihr Ursprüngliches Bild 1000 pixel breit und 800 px hoch ist, wird die Größe so angepasst, dass die 800px-Dimension jetzt 50px und die 1000px-Dimension (jetzt 62,5 px) aus der Mitte des Bilds zugeschnitten wird.
   
-Die Schritte sind relativ einfach, aber für Bilder, um die Darstellungen zu verwenden, müssen sich die Wiedergaben auf der SharePoint-Website befinden, bevor Sie die Bilder hinzufügen. Darüber hinaus müssen Sie auch die SharePoint Server Veröffentlichungs Infrastruktur (Websitesammlungsebene) und die Features für die SharePoint Server Veröffentlichung (Websiteebene) aktiviert haben.
+Die Schritte sind relativ einfach, aber damit Bilder die Wiedergaben verwenden können, müssen sich die Wiedergaben auf der SharePoint-Website befinden, bevor Sie die Bilder hinzufügen. Darüber hinaus müssen sie auch die Features SharePoint Server Publishing Infrastructure (Websitesammlungsebene) und SharePoint Server Publishing (Websiteebene) aktiviert haben.
   
-### <a name="add-an-image-rendition-to-speed-up-page-loading"></a>Hinzufügen einer Bildwiedergabe zur Beschleunigung des Seitenladevorgangs
+### <a name="add-an-image-rendition-to-speed-up-page-loading"></a>Hinzufügen einer Bildwiedergabe zum Beschleunigen des Seitenladevorganges
   
-1. Stellen Sie sicher, dass das Benutzerkonto, unter dem dieses Verfahren ausgeführt wird, mindestens über Entwurfsberechtigungen für die Website auf oberster Ebene der Websitesammlung verfügt und dass die Website auf einer Webseite veröffentlicht wird.
+1. Stellen Sie sicher, dass das Benutzerkonto, das dieses Verfahren ausführen soll, mindestens über Entwurfsberechtigungen für die Website auf oberster Ebene der Websitesammlung verfügt und dass die Website auf einer Webseite veröffentlicht wird.
 
-2. Wechseln Sie in einem Webbrowser zur Website auf oberster Ebene der Veröffentlichungswebsite Sammlung.
+2. Wechseln Sie in einem Webbrowser zur Website auf oberster Ebene der Veröffentlichungswebsitesammlung.
 
 3. Klicken Sie auf das Symbol **Einstellungen**.
 
-4. Auf der Seite **Websiteeinstellungen** im Abschnitt **Aussehen und Verhalten** werden die integrierten Bildwiedergaben angezeigt.
+4. Auf der **Seite Websiteeinstellungen** im Abschnitt **Look and Feel** werden die integrierten Bildversionen angezeigt.
 
-    Sie können die Out-of-the-Box-Wiedergabe verwenden oder **Bildwiedergaben** auswählen, um eine neue zu erstellen.
+    Sie können die out-of-the-Box-Wiedergaben verwenden oder **Bildversionen** auswählen, um eine neue zu erstellen.
 
     ![Screenshot der Bildwiedergabe](../media/eaae0d53-657d-47ef-b687-65c5167eae4d.PNG)
   
 5. Wählen Sie auf der Seite **Bildwiedergaben** die Option **Neues Element hinzufügen**.
 
-    ![Screenshot des neuen Elements hinzufügen](../media/8cede22e-52bf-4d9d-99cb-162f2f6ce92b.PNG)
+    ![Screenshot des Neuen Elements hinzufügen](../media/8cede22e-52bf-4d9d-99cb-162f2f6ce92b.PNG)
   
 6. Geben Sie auf der Seite **Neue Bildwiedergabe** in das Feld **Name** einen Namen für die Darstellung ein, z.
 
 7. Geben Sie in die Textfelder **Breite** und **Höhe** die Breite und Höhe der Darstellung in Pixel ein, und klicken Sie dann auf **Speichern**.
 
-    ![Screenshot des Bildwiedergabe namens](../media/5a6119ed-c163-40df-a4db-ec629d15607d.PNG)
+    ![Screenshot des Bildwiedergabenamens](../media/5a6119ed-c163-40df-a4db-ec629d15607d.PNG)
   
-## <a name="custom-cropping-with-image-renditions"></a>Benutzerdefiniertes Zuschneiden mit Bildwiedergaben
+## <a name="custom-cropping-with-image-renditions"></a>Benutzerdefiniertes Zuschneiden mit Bildvarianten
 
-Standardmäßig wird eine Bilddarstellung aus der Mitte des Bilds generiert. Sie können die Bilddarstellung für einzelne Bilder anpassen, indem Sie den Teil des Bilds zuschneiden, den Sie verwenden möchten. Sie können die Bilder pro Wiedergabe auf individueller Basis zuschneiden. Durch das Zuschneiden der Bilder wird das Laden von Seiten beschleunigt, indem der BLOB-Cache von SharePoint verwendet wird, um eine Version des Bilds für jede Formatvariante zu erstellen. Auf diese Weise wird die Serverlast reduziert, da das Bild nur einmal geändert wird und dann für Endbenutzer mehrmals bereitgestellt werden kann. Weitere Informationen zum Zuschneiden einer Bilddarstellung finden Sie unter [Zuschneiden einer Bildwiedergabe](https://go.microsoft.com/fwlink/p/?LinkId=525626).
-  
-
+Standardmäßig wird eine Bilddarstellung aus der Mitte des Bilds generiert. Sie können die Bilddarstellung für einzelne Bilder anpassen, indem Sie den Teil des Bilds zuschneiden, den Sie verwenden möchten. Sie können die Bilder einzeln und pro Wiedergabe zuschneiden. Das Zuschneiden der Bilder beschleunigt das Laden von Seiten mithilfe des SharePoint-Blobcaches, um eine Version des Bilds für jede Wiedergabe zu erstellen. Auf diese Weise wird die Serverlast reduziert, da die Größe des Bilds nur einmal geändert wird und dann für Endbenutzer mehrmals verwendet werden kann. Weitere Informationen zum Zuschneiden einer Bildwiedergabe finden Sie unter [Crop an image rendition](/sharepoint/dev/general-development/sharepoint-design-manager-device-channels).

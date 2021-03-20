@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie einen benutzerdefinierten Typ für vertrauliche Informationen für Richtlinien im Compliance Center erstellen und importieren können.
-ms.openlocfilehash: e3735458f3259478a7df36bb3c6ddbc4a5fed719
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7ba807dce8b1d67280aeab929901327b7bfe03ef
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288502"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908533"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Erstellen eines benutzerdefinierten vertraulichen Informationstyps mit PowerShell
 
@@ -350,7 +350,7 @@ Wenn es fertig ist, sollte das RulePack-Element wie folgt aussehen.
 
 Sie haben bisher möglicherweise Exchange Online PowerShell verwendet, um Ihre benutzerdefinierten Typen für vertrauliche Informationen für DLP zu importieren. Nun können Ihre benutzerdefinierten vertraulichen Informationstypen sowohl im Exchange Admin Center als auch im Compliance Center verwendet werden. Im Rahmen dieser Verbesserung sollten Sie Compliance Center-PowerShell verwenden, um Ihre benutzerdefinierten vertraulichen Informationstypen zu importieren. Sie können sie nicht mehr aus Exchange PowerShell importieren. Ihre benutzerdefinierten vertraulichen Informationstypen funktionieren weiterhin wie zuvor, es kann jedoch bis zu einer Stunde dauern, bis Änderungen, die Sie im Compliance Center an benutzerdefinierten vertraulichen Informationstypen vorgenommen haben, im Exchange Admin Center angezeigt werden.
   
-Beachten Sie, dass Sie im Compliance Center das Cmdlet **[New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** verwenden, um ein Regelpaket hochzuladen. (Im Exchange Admin Center wurde früher das Cmdlet **ClassificationRuleCollection** verwendet.) 
+Beachten Sie, dass Sie im Compliance Center das Cmdlet **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** verwenden, um ein Regelpaket hochzuladen. (Im Exchange Admin Center wurde früher das Cmdlet **ClassificationRuleCollection** verwendet.) 
   
 ## <a name="upload-your-rule-package"></a>Hochladen des Regelpakets
 
@@ -360,7 +360,7 @@ Gehen Sie zum Hochladen des Regelpakets wie folgt vor:
   
 1. Speichern Sie es als XML-Datei mit Unicode-Codierung.
     
-2. [Verbindung mit Compliance Center-PowerShell herstellen](https://go.microsoft.com/fwlink/p/?LinkID=799771)
+2. [Verbindung mit Compliance Center-PowerShell herstellen](/powershell/exchange/exchange-online-powershell)
     
 3. Verwenden Sie die folgende Syntax:
 
@@ -374,20 +374,20 @@ Gehen Sie zum Hochladen des Regelpakets wie folgt vor:
    New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My Documents\MyNewRulePack.xml" -Encoding Byte -ReadCount 0)
    ```
 
-   Ausführliche Informationen zur Syntax und zu den Parametern finden Sie unter [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage).
+   Ausführliche Informationen zur Syntax und zu den Parametern finden Sie unter [New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage).
 
    > [!NOTE]
    > Maximal werden 10 Regelpakete unterstützt, aber jedes Paket kann die Definition mehrerer Typen vertraulicher Informationen enthalten.
 
 4. Um sicherzustellen, dass Sie einen neuen Typ für vertrauliche Informationen erstellt haben, führen Sie einen der folgenden Schritte aus:
 
-   - Führen Sie das Cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) aus, um zu überprüfen, ob das neue Regelpaket aufgeführt wird:
+   - Führen Sie das Cmdlet [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) aus, um zu überprüfen, ob das neue Regelpaket aufgeführt wird:
 
      ```powershell
      Get-DlpSensitiveInformationTypeRulePackage
      ``` 
 
-   - Führen Sie das Cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype) aus, um zu überprüfen, ob der Typ für vertrauliche Informationen aufgeführt wird:
+   - Führen Sie das Cmdlet [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) aus, um zu überprüfen, ob der Typ für vertrauliche Informationen aufgeführt wird:
 
      ```powershell
      Get-DlpSensitiveInformationType
@@ -395,7 +395,7 @@ Gehen Sie zum Hochladen des Regelpakets wie folgt vor:
 
      Bei benutzerdefinierten Typen für vertrauliche Informationen ist der Publisher-Eigenschaftswert ein anderer als „Microsoft Corporation“.
 
-   - Ersetzen Sie \<Name\> durch den Namenswert des Typs für vertrauliche Informationen (z. B. die Mitarbeiter-ID), und führen Sie das Cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype) aus:
+   - Ersetzen Sie \<Name\> durch den Namenswert des Typs für vertrauliche Informationen (z. B. die Mitarbeiter-ID), und führen Sie das Cmdlet [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) aus:
 
      ```powershell
      Get-DlpSensitiveInformationType -Identity "<Name>"
@@ -429,11 +429,13 @@ Wenn Sie die XML-Datei des Regelpakets hochladen, überprüft das System den XML
     
   Beispiel: „(xx)\*“ und „(xx)+“ bestehen die Überprüfung nicht.
   
-- Schlüsselwörter dürfen aus maximal 50 Zeichen bestehen.  Wenn eine Gruppe ein Schlüsselwort enthält, das diesen Wert überschreitet, besteht eine vorgeschlagene Lösung darin, die Gruppe von Begriffen als [Schlüsselwörterbuch](https://docs.microsoft.com/microsoft-365/compliance/create-a-keyword-dictionary) zu erstellen und auf die GUID des Schlüsselwörterbuchs innerhalb der XML-Struktur als Teil der Entität für die Übereinstimmung oder idMatch in der Datei zu verweisen.
+- Schlüsselwörter dürfen aus maximal 50 Zeichen bestehen.  Wenn eine Gruppe ein Schlüsselwort enthält, das diesen Wert überschreitet, besteht eine vorgeschlagene Lösung darin, die Gruppe von Begriffen als [Schlüsselwörterbuch](./create-a-keyword-dictionary.md) zu erstellen und auf die GUID des Schlüsselwörterbuchs innerhalb der XML-Struktur als Teil der Entität für die Übereinstimmung oder idMatch in der Datei zu verweisen.
 
 - Jeder benutzerdefinierte Typ vertraulicher Informationen kann maximal 2048 Schlüsselwörter enthalten.
 
-- Die maximale Größe von Schlüsselwörterbüchern in einem einzelnen Mandanten beträgt 100 Kilobyte komprimiert. Verweisen Sie beim Erstellen benutzerdefinierter vertraulicher Informationstypen so oft wie nötig auf dasselbe Wörterbuch. Beginnen Sie mit dem Erstellen benutzerdefinierter Schlüsselwortlisten im vertraulichen Informationstyp und verwenden Sie Schlüsselwörterbücher, wenn Sie mehr als 2048 Schlüsselworte in einer Schlüsselwortliste haben oder ein Schlüsselwort länger als 50 Zeichen ist.
+- Die maximale Größe von Schlüsselwörterbüchern in einem einzelnen Mandanten beträgt 1 MB komprimiert. Verweisen Sie beim Erstellen benutzerdefinierter vertraulicher Informationstypen so oft wie nötig auf dasselbe Wörterbuch. Beginnen Sie mit dem Erstellen benutzerdefinierter Schlüsselwortlisten im vertraulichen Informationstyp und verwenden Sie Schlüsselwörterbücher, wenn Sie mehr als 2048 Schlüsselworte in einer Schlüsselwortliste haben oder ein Schlüsselwort länger als 50 Zeichen ist.
+
+- In einem Mandanten sind maximal 50 auf Schlüsselwörterwörterbüchern basierende Typen vertraulicher Informationen zulässig.
 
 - Stellen Sie sicher, dass jedes Element der Entität ein Attribut recommendedConfidence enthält.
 
@@ -453,7 +455,7 @@ Wenn ein benutzerdefinierter Typ für vertrauliche Informationen ein Problem ent
 
 Microsoft 365 verwendet den Suchcrawler zum Erkennen und Klassifizieren vertraulicher Informationen in Websiteinhalten. Inhalte von SharePoint Online- und OneDrive for Business-Websites werden automatisch erneut durchforstet, sobald sie aktualisiert wurden. Um aber den neuen benutzerdefinierten vertraulichen Informationstyp in allen vorhandenen Inhalten zu identifizieren, müssen diese Inhalte erneut durchforstet werden.
   
-In Microsoft 365 können Sie das erneute Durchforsten des gesamten Mandanten nicht manuell anfordern, für eine Websitesammlung, Liste oder Bibliothek ist dies jedoch möglich. Weitere Informationen finden Sie unter [Manuelles Durchforsten und erneutes Indizieren einer Website, einer Bibliothek oder Liste](https://docs.microsoft.com/sharepoint/crawl-site-content).
+In Microsoft 365 können Sie das erneute Durchforsten des gesamten Mandanten nicht manuell anfordern, für eine Websitesammlung, Liste oder Bibliothek ist dies jedoch möglich. Weitere Informationen finden Sie unter [Manuelles Durchforsten und erneutes Indizieren einer Website, einer Bibliothek oder Liste](/sharepoint/crawl-site-content).
   
 ## <a name="remove-a-custom-sensitive-information-type"></a>Entfernen eines benutzerdefinierten Typs für vertrauliche Informationen
 
@@ -466,9 +468,9 @@ Im Compliance Center PowerShell gibt es zwei Methoden zum Entfernen eines benutz
 
 - **Entfernen eines benutzerdefinierten Regelpakets und aller benutzerdefinierten Typen für vertrauliche Informationen, die darin enthalten sind**: Diese Methode ist in diesem Abschnitt aufgeführt.
 
-1. [Verbindung mit Compliance Center-PowerShell herstellen](https://go.microsoft.com/fwlink/p/?LinkID=799771)
+1. [Verbindung mit Compliance Center-PowerShell herstellen](/powershell/exchange/exchange-online-powershell)
 
-2. Wenn Sie ein benutzerdefiniertes Regelpaket entfernen möchten, verwenden Sie das Cmdlet [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage):
+2. Wenn Sie ein benutzerdefiniertes Regelpaket entfernen möchten, verwenden Sie das Cmdlet [Remove-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage):
 
    ```powershell
    Remove-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity"
@@ -482,17 +484,17 @@ Im Compliance Center PowerShell gibt es zwei Methoden zum Entfernen eines benutz
    Remove-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
    ```
 
-   Ausführliche Informationen zur Syntax und den Parametern finden Sie unter [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage).
+   Ausführliche Informationen zur Syntax und den Parametern finden Sie unter [Remove-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage).
 
 3. Um sicherzustellen, dass Sie einen benutzerdefinierten Typen für vertrauliche Informationen erfolgreich entfernt haben, führen Sie einen der folgenden Schritte aus:
 
-   - Führen Sie das Cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) aus und vergewissern Sie sich, dass das Regelpaket nicht mehr aufgeführt wird:
+   - Führen Sie das Cmdlet [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) aus und vergewissern Sie sich, dass das Regelpaket nicht mehr aufgeführt wird:
 
      ```powershell
      Get-DlpSensitiveInformationTypeRulePackage
      ```
 
-   - Führen Sie das Cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype) aus und stellen Sie sicher, dass die Typen für vertrauliche Informationen im entfernten Regelpaket nicht mehr aufgeführt werden:
+   - Führen Sie das Cmdlet [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) aus und stellen Sie sicher, dass die Typen für vertrauliche Informationen im entfernten Regelpaket nicht mehr aufgeführt werden:
 
      ```powershell
      Get-DlpSensitiveInformationType
@@ -500,7 +502,7 @@ Im Compliance Center PowerShell gibt es zwei Methoden zum Entfernen eines benutz
 
      Bei benutzerdefinierten Typen für vertrauliche Informationen ist der Publisher-Eigenschaftswert ein anderer als „Microsoft Corporation“.
 
-   - Ersetzen Sie \<Name\> durch den Namenswert des Typs für vertrauliche Informationen (z. B. die Mitarbeiter-ID), und führen Sie das Cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype) aus, um sicherzustellen, dass der Typ für vertrauliche Informationen nicht mehr aufgeführt wird:
+   - Ersetzen Sie \<Name\> durch den Namenswert des Typs für vertrauliche Informationen (z. B. die Mitarbeiter-ID), und führen Sie das Cmdlet [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) aus, um sicherzustellen, dass der Typ für vertrauliche Informationen nicht mehr aufgeführt wird:
 
      ```powershell
      Get-DlpSensitiveInformationType -Identity "<Name>"
@@ -516,14 +518,14 @@ Im Compliance Center PowerShell müssen Sie zum Ändern eines Typs für vertraul
 
 3. Importieren Sie die aktualisierte XML-Datei wieder in das vorhandene Regelpaket.
 
-Informationen zum Herstellen der Verbindung zu Compliance Center PowerShell finden Sie unter [Verbinden mit Compliance Center PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=799771).
+Informationen zum Herstellen der Verbindung zu Compliance Center PowerShell finden Sie unter [Verbinden mit Compliance Center PowerShell](/powershell/exchange/exchange-online-powershell).
 
 ### <a name="step-1-export-the-existing-rule-package-to-an-xml-file"></a>Schritt 1: Exportieren des vorhandenen Regelpakets in eine XML-Datei
 
 > [!NOTE]
 > Wenn Sie eine Kopie der XML-Datei haben (z. B. eine soeben erstellte und importierte Datei), können Sie mit dem nächsten Schritt fortfahren, in dem Sie die XML-Datei ändern.
 
-1. Sollten Sie ihn noch nicht kennen, führen Sie das Cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype) aus, um den Namen des benutzerdefinierten Regelpakets zu ermitteln:
+1. Sollten Sie ihn noch nicht kennen, führen Sie das Cmdlet [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtype) aus, um den Namen des benutzerdefinierten Regelpakets zu ermitteln:
 
    ```powershell
    Get-DlpSensitiveInformationTypeRulePackage
@@ -532,7 +534,7 @@ Informationen zum Herstellen der Verbindung zu Compliance Center PowerShell find
    > [!NOTE]
    > Das integrierte Regelpaket mit den integrierten vertraulichen Informationstypen trägt den Namen Microsoft-Regelpaket. Das Regelpaket, das die benutzerdefinierten vertraulichen Informationstypen enthält, die Sie in der Benutzeroberfläche des Compliance Centers erstellt haben, trägt den Namen "Microsoft. SCCManaged.CustomRulePack".
 
-2. Verwenden Sie das Cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage), um das benutzerdefinierte Regelpaket in einer Variablen zu speichern:
+2. Verwenden Sie das Cmdlet [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage), um das benutzerdefinierte Regelpaket in einer Variablen zu speichern:
 
    ```powershell
    $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageName"
@@ -544,7 +546,7 @@ Informationen zum Herstellen der Verbindung zu Compliance Center PowerShell find
    $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
    ```
 
-3. Verwenden Sie das Cmdlet [Set-Content](https://docs.microsoft.com/powershell/module/microsoft.powershell.management/set-content?view=powershell-6) zum Exportieren des benutzerdefinierten Regelpakets in eine XML-Datei:
+3. Verwenden Sie das Cmdlet [Set-Content](/powershell/module/microsoft.powershell.management/set-content?view=powershell-6) zum Exportieren des benutzerdefinierten Regelpakets in eine XML-Datei:
 
    ```powershell
    Set-Content -Path "XMLFileAndPath" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
@@ -562,13 +564,13 @@ Typen für vertrauliche Informationen in der XML-Datei und andere Elemente in de
 
 #### <a name="step-3-import-the-updated-xml-file-back-into-the-existing-rule-package"></a>Schritt 3: Importieren Sie die aktualisierte XML-Datei wieder in das vorhandene Regelpaket.
 
-Verwenden Sie das Cmdlet [Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage), um die aktualisierte XML-Datei wieder in das vorhandene Regelpaket zu importieren:
+Verwenden Sie das Cmdlet [Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage), um die aktualisierte XML-Datei wieder in das vorhandene Regelpaket zu importieren:
 
 ```powershell
 Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Path "C:\My Documents\External Sensitive Info Type Rule Collection.xml" -Encoding Byte -ReadCount 0))
 ```
 
-Ausführliche Informationen zur Syntax und zu den Parametern finden Sie unter [Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage).
+Ausführliche Informationen zur Syntax und zu den Parametern finden Sie unter [Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage).
 
 ## <a name="reference-rule-package-xml-schema-definition"></a>Referenz: XML-Schemadefinition für Regelpaket
 

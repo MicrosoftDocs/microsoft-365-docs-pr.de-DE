@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratorrollen sind Geschäftsfunktionen zugeordnet. Über sie werden Berechtigungen für bestimmte Aufgaben im Admin Center erteilt. So kann beispielsweise der Dienstadministrator Supporttickets über das Admin Center öffnen.
-ms.openlocfilehash: ddea8a06af2b529a369ea045913b639b84c6f9d4
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: cf628ffd05cb7f5d94c932d48bd4e8ae35a47db9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867982"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906372"
 ---
 # <a name="about-admin-roles"></a>Info zu Administratorrollen
 
@@ -37,9 +37,9 @@ Im Microsoft 365 Admin Center können Sie Azure AD-Rollen und Microsoft Intune-R
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Suchen Sie nach der vollständigen Liste der detaillierten Azure AD-Rollenbeschreibungen, die Sie im Microsoft 365 Admin Center verwalten können? Diese finden Sie unter "Administratorrollenberechtigungen in Azure Active Directory". [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Suchen Sie nach der vollständigen Liste der detaillierten Azure AD-Rollenbeschreibungen, die Sie im Microsoft 365 Admin Center verwalten können? Diese finden Sie unter "Administratorrollenberechtigungen in Azure Active Directory". [Administratorrollenberechtigungen in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
-Suchen Sie nach der vollständigen Liste der detaillierten Intune-Rollenbeschreibungen, die Sie im Microsoft 365 Admin Center verwalten können?  Siehe [Rollenbasierte Zugriffssteuerung (RBAC) mit Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+Suchen Sie nach der vollständigen Liste der detaillierten Intune-Rollenbeschreibungen, die Sie im Microsoft 365 Admin Center verwalten können?  Siehe [Rollenbasierte Zugriffssteuerung (RBAC) mit Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
 Weitere Informationen zum Zuweisen von Rollen im Microsoft 365 Admin Center finden Sie unter [Zuweisen von Administratorrollen](assign-admin-roles.md).
 
@@ -67,7 +67,7 @@ Im Microsoft 365 Admin Center können Sie zu **Rollen** wechseln und dann eine b
 
 ::: moniker-end
 
-Es genügt wahrscheinlich, wenn Sie in Ihrer Organisation nur die nachstehend aufgeführten Rollen zuweisen. Standardmäßig werden zuerst die Rollen angezeigt, die von den meisten Organisationen verwendet werden. Wenn Sie eine Rolle nicht finden können, gehen Sie zum Ende der Liste, und wählen Sie **Alle nach Kategorie anzeigen** aus. (Ausführliche Informationen, einschließlich der mit einer Rolle verknüpften Cmdlets, finden Sie unter [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).)
+Es genügt wahrscheinlich, wenn Sie in Ihrer Organisation nur die nachstehend aufgeführten Rollen zuweisen. Standardmäßig werden zuerst die Rollen angezeigt, die von den meisten Organisationen verwendet werden. Wenn Sie eine Rolle nicht finden können, gehen Sie zum Ende der Liste, und wählen Sie **Alle nach Kategorie anzeigen** aus. (Ausführliche Informationen, einschließlich der mit einer Rolle verknüpften Cmdlets, finden Sie unter [Administratorrollenberechtigungen in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).)
 
 |Administratorrolle     |Wem sollte diese Rolle zugewiesen werden?  |
 |---------|---------|
@@ -92,7 +92,7 @@ Ein Partner kann die folgenden Rollen zuweisen:
 
 - **Helpdesk-Agent**: Berechtigungen, die jenen eines Helpdesk-Administrators entsprechen.
 
-Bevor der Partner diese Rollen Benutzern zuweisen kann, müssen Sie ihn als delegierten Administrator zu Ihrem Konto hinzufügen. Dieser Vorgang wird von einem autorisierten Partner initiiert. Der Partner fragt Sie in einer E-Mail-Nachricht, ob Sie ihm die Berechtigung erteilen möchten, als delegierter Administrator zu fungieren. Weitere Informationen hierzu finden Sie unter [Autorisieren oder Entfernen von Partnerbeziehungen](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
+Bevor der Partner diese Rollen Benutzern zuweisen kann, müssen Sie ihn als delegierten Administrator zu Ihrem Konto hinzufügen. Dieser Vorgang wird von einem autorisierten Partner initiiert. Der Partner fragt Sie in einer E-Mail-Nachricht, ob Sie ihm die Berechtigung erteilen möchten, als delegierter Administrator zu fungieren. Weitere Informationen hierzu finden Sie unter [Autorisieren oder Entfernen von Partnerbeziehungen](../misc/add-partner.md).
   
 ## <a name="related-articles"></a>Verwandte Artikel
 

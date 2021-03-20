@@ -19,12 +19,12 @@ description: Administratoren können erfahren, wie der Einblick in die Spoof-Int
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8ca40e2cde08e5ea213d4c19366f038f1da19fa7
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: cc53d49401afe3a0d7871bf5f294126315aacfec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407216"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908094"
 ---
 # <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>Exemplarische Vorgehensweise – Einblick in Spoof Intelligence in Microsoft Defender for Office 365
 
@@ -43,7 +43,7 @@ Weitere Informationen zu Berichten und Erkenntnissen finden Sie unter Berichte u
 Diese exemplarische Vorgehensweise ist eine von mehreren für das Security & Compliance Center. Informationen zum Navigieren in Berichten und Einblicken finden Sie in den exemplarischen Vorgehensweisen im Abschnitt [Verwandte](#related-topics) Themen.
 
 > [!NOTE]
-> Der Einblick in spoof intelligence zeigt Daten aus den letzten 7 Tagen. Die [Spoof Intelligence-Richtlinie](learn-about-spoof-intelligence.md) und das entsprechende [Get-PhishFilterPolicy-Cmdlet](https://docs.microsoft.com/powershell/module/exchange/get-phishfilterpolicy) in Exchange Online PowerShell zeigen Daten aus den letzten 30 Tagen an. Der [Get-SpoofMailReport](https://docs.microsoft.com/powershell/module/exchange/get-spoofmailreport) zeigt Daten für bis zu 90 Tage an.
+> Der Einblick in spoof intelligence zeigt Daten aus den letzten 7 Tagen. Die [Spoof Intelligence-Richtlinie](learn-about-spoof-intelligence.md) und das entsprechende [Get-PhishFilterPolicy-Cmdlet](/powershell/module/exchange/get-phishfilterpolicy) in Exchange Online PowerShell zeigen Daten aus den letzten 30 Tagen an. Der [Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport) zeigt Daten für bis zu 90 Tage an.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -54,7 +54,7 @@ Diese exemplarische Vorgehensweise ist eine von mehreren für das Security & Com
 - Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen im Security & Compliance Center Berechtigungen zugewiesen werden.
   - **Organisationsverwaltung**
   - **Sicherheitsadministrator**
-  - **Sicherheitsleseberechtigter**
+  - **Security Reader**
   - **Globaler Leser**
 
   Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).

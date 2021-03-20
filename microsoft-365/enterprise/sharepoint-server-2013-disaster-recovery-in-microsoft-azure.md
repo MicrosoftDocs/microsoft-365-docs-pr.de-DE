@@ -17,15 +17,15 @@ ms.custom:
 - Ent_Deployment
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: In diesem Artikel wird beschrieben, wie Sie mithilfe von Azure eine Notfallwiederherstellungsumgebung für Ihre lokale SharePoint-Farm erstellen.
-ms.openlocfilehash: d1643f3fa0275ef9fbb01372869ca551b9fed495
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: In diesem Artikel wird beschrieben, wie Sie Azure zum Erstellen einer Notfallwiederherstellungsumgebung für Ihre lokale SharePoint-Farm verwenden.
+ms.openlocfilehash: 01a49cfa19711caa36190a795792635431dd7d04
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690411"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907432"
 ---
-# <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>SharePoint Server 2013 – Notfallwiederherstellung in Microsoft Azure
+# <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>SharePoint Server 2013 – otfallwiederherstellung in Microsoft Azure
 
  Mithilfe von Azure können Sie eine Umgebung für die Notfallwiederherstellung für Ihre lokale SharePoint-Farm erstellen. Dieser Artikel beschreibt das Entwerfen und Implementieren dieser Lösung.
 
@@ -66,7 +66,7 @@ Es ist wichtig, die Recovery Time Objectives (RTO) und Recovery Point Objectives
   
 In den Anleitungen in diesem Artikel wird beschrieben, wie eine betriebsbereite Standby-Umgebung implementiert wird. Sie können sie auch an eine verzögert betriebsbereite Standby-Umgebung anpassen, obwohl Sie zusätzliche Verfahren zur Unterstützung dieser Art von Umgebung befolgen müssen. In diesem Artikel wird nicht die Implementierung einer unmittelbar betriebsbereiten Standby-Umgebung beschrieben.
   
-Weitere Informationen zur Notfallwiederherstellung finden Sie unter [High availability and disaster recovery concepts in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114) und [Choose a disaster recovery strategy for SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228).
+Weitere Informationen zur Notfallwiederherstellung finden Sie unter [High availability and disaster recovery concepts in SharePoint 2013](/SharePoint/administration/high-availability-and-disaster-recovery-concepts) und [Choose a disaster recovery strategy for SharePoint 2013](/SharePoint/administration/plan-for-disaster-recovery).
   
 ## <a name="solution-description"></a>Beschreibung der Lösung
 
@@ -196,17 +196,17 @@ Wenn mehrere Speichergruppen implementiert sind (Datenbanken sind auf mehrere SQ
 
 Mehrere Technologien werden bei dieser Notfallwiederherstellungslösung verwendet. Um sicherzustellen, dass diese Technologien wie erwartet interagieren, muss jede Komponente in der lokalen und Azure-Umgebung installiert und ordnungsgemäß konfiguriert werden. Wir empfehlen, dass Personen oder Teams, die diese Lösung einrichten, über fundierte Kenntnisse und praktische Fertigkeiten mit Technologien verfügen, die in den folgenden Artikeln beschrieben werden:
   
-- [Übersicht über DFS-Namespaces und DFS-Replikation](https://go.microsoft.com/fwlink/p/?LinkId=392698)
+- [Übersicht über DFS-Namespaces und DFS-Replikation](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj127250(v=ws.11))
     
-- [Windows Server-Failoverclustering (WSFC) mit SQL Server](https://go.microsoft.com/fwlink/p/?LinkId=392701)
+- [Windows Server-Failoverclustering (WSFC) mit SQL Server](/sql/sql-server/failover-clusters/windows/windows-server-failover-clustering-wsfc-with-sql-server)
     
-- [AlwaysOn-Verfügbarkeitsgruppen (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392725)
+- [AlwaysOn-Verfügbarkeitsgruppen (SQL Server)](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server)
     
-- [Sichern und Wiederherstellen von SQL Server-Datenbanken](https://go.microsoft.com/fwlink/p/?LinkId=392728)
+- [Sichern und Wiederherstellen von SQL Server-Datenbanken](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases)
     
-- [Übersicht über die SharePoint 2013-Installation und -Konfiguration](https://go.microsoft.com/fwlink/p/?LinkId=393119)
+- [Übersicht über die SharePoint 2013-Installation und -Konfiguration](/SharePoint/install/installation-and-configuration-overview)
     
-- [Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=392729)
+- [Microsoft Azure](/azure/)
     
 Schließlich werden Skripterstellungsfähigkeiten zum Automatisieren von Aufgaben im Zusammenhang mit diesen Technologien empfohlen. Es ist möglich, die verfügbaren Benutzeroberflächen zum Ausführen aller Aufgaben zu verwenden, die in dieser Lösung beschrieben werden. Allerdings kann ein manuelles Verfahren zeitaufwändig und fehleranfällig sein und inkonsistente Ergebnisse liefern.
   
@@ -232,14 +232,14 @@ Dieser Fahrplan setzt vorausgesetzt, dass Sie bereits eine SharePoint Server 201
    
 ## <a name="phase-1-design-the-disaster-recovery-environment"></a>Phase 1: Entwerfen der Umgebung für die Notfallwiederherstellung
 
-Befolgen Sie die Anleitungen unter [Microsoft Azure-Architekturen für SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) für den Entwurf der Umgebung für die Notfallwiederherstellung, einschließlich der SharePoint-Wiederherstellungsfarm. Sie können die Grafiken in der [SharePoint-Notfallwiederherstellungslösung in Azure](https://go.microsoft.com/fwlink/p/?LinkId=392554) Visio-Datei verwenden, um den Entwurfsprozess zu starten. Es wird empfohlen, dass Sie die gesamte Umgebung vor Beginn der Arbeit in der Azure-Umgebung entwerfen.
+Befolgen Sie die Anleitungen unter [Microsoft Azure-Architekturen für SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) für den Entwurf der Umgebung für die Notfallwiederherstellung, einschließlich der SharePoint-Wiederherstellungsfarm. Sie können die Grafiken in der [Datei SharePoint Disaster Recovery Solution in Azure](https://go.microsoft.com/fwlink/p/?LinkId=392554) Visio verwenden, um den Entwurfsprozess zu starten. Es wird empfohlen, dass Sie die gesamte Umgebung vor Beginn der Arbeit in der Azure-Umgebung entwerfen.
   
 Zusätzlich zur Anleitung unter [Microsoft Azure-Architekturen für SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) für das Entwerfen des virtuellen Netzwerks, der VPN-Verbindung, von Active Directory und der SharePoint-Farm müssen Sie der Azure-Umgebung eine Dateifreigaberolle hinzufügen.
   
 Zur Unterstützung des Protokollversands in eine Lösung für die Notfallwiederherstellung wird ein virtueller Computer mit einer Dateifreigabe dem Subnetz hinzugefügt, in dem sich die Datenbankrollen befinden. Die Dateifreigabe dient auch als dritter Knoten einer Knotenmehrheit für die SQL Server AlwaysOn-Verfügbarkeitsgruppe. Dies ist die empfohlene Konfiguration für eine SharePoint-Standardfarm, die SQL Server AlwaysOn-Verfügbarkeitsgruppen verwendet. 
   
 > [!NOTE]
-> Es ist wichtig, die Voraussetzungen für eine Datenbank zur Teilnahme an einer SQL Server AlwaysOn-Verfügbarkeitsgruppe zu überprüfen. Weitere Informationen finden Sie unter [Voraussetzungen, Einschränkungen und Empfehlungen für AlwaysOn-Verfügbarkeitsgruppen](https://go.microsoft.com/fwlink/p/?LinkId=510870). 
+> Es ist wichtig, die Voraussetzungen für eine Datenbank zur Teilnahme an einer SQL Server AlwaysOn-Verfügbarkeitsgruppe zu überprüfen. Weitere Informationen finden Sie unter [Voraussetzungen, Einschränkungen und Empfehlungen für AlwaysOn-Verfügbarkeitsgruppen](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability). 
   
 **Abbildung: Platzierung eines Dateiservers, der für eine Notfallwiederherstellungslösung verwendet wird**
 
@@ -247,7 +247,7 @@ Zur Unterstützung des Protokollversands in eine Lösung für die Notfallwiederh
   
 In diesem Diagramm wird ein virtueller Computer mit einer Dateifreigabe demselben Subnetz in Azure hinzugefügt, das die Datenbankserverrollen enthält. Fügen Sie den virtuellen Computer mit der Dateifreigabe keinem Verfügbarkeitssatz mit anderen Serverrollen hinzu, z. B. den SQL Server-Rollen.
   
-Wenn Sie um die Hochverfügbarkeit der Protokolle besorgt sind, erwägen Sie eine andere Herangehensweise mit [SQL Server-Sicherung und -Wiederherstellung mit dem Azure-BLOB-Speicherdienst](https://go.microsoft.com/fwlink/p/?LinkId=393113). Dies ist ein neues Feature in Azure, das Protokolle direkt in der BLOB-Speicher-URL speichert. Diese Lösung bietet keine Anleitungen zur Verwendung dieses Features.
+Wenn Sie um die Hochverfügbarkeit der Protokolle besorgt sind, erwägen Sie eine andere Herangehensweise mit [SQL Server-Sicherung und -Wiederherstellung mit dem Azure-BLOB-Speicherdienst](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service). Dies ist ein neues Feature in Azure, das Protokolle direkt in der BLOB-Speicher-URL speichert. Diese Lösung bietet keine Anleitungen zur Verwendung dieses Features.
   
 Wenn Sie die Wiederherstellungsfarm entwerfen, bedenken Sie, dass eine erfolgreiche Notfallwiederherstellungsumgebung präzise die Produktionsfarm wiedergibt, die Sie wiederherstellen möchten. Die Größe der Wiederherstellungsfarm ist der wichtigste Aspekt bei Entwurf, Bereitstellung und Tests der Wiederherstellungsfarm. Die Skalierung der Farm ist von Organisation zu Organisation je nach Geschäftsanforderungen unterschiedlich. Möglicherweise kann eine abgespeckte Farm bei einem kurzen Ausfall zum Einsatz kommen, die Sie erst dann hochskalieren, wenn es Leistungs- und Kapazitätsanforderungen erforderlich machen.
   
@@ -273,19 +273,19 @@ Diese Phase umfasst die Bereitstellung von Windows Server Active Directory und D
   
 **Abbildung 4: Hybride Active Directory-Domänenkonfiguration**
 
-![Zwei virtuelle Computer, die im virtuellen Azure-Netzwerk und im SharePoint-Farm Subnetz bereitgestellt werden, sind Replikatdomänencontroller und DNS-Server](../media/AZarch-HyADdomainConfig.png)
+![Zwei virtuelle Computer, die im virtuellen Azure-Netzwerk und im Subnetz der SharePoint-Farm bereitgestellt werden, sind Replikatdomänencontroller und DNS-Server.](../media/AZarch-HyADdomainConfig.png)
   
 In der Abbildung werden zwei virtuelle Computer im selben Subnetz bereitgestellt. Diese virtuellen Computer hosten je zwei Rollen: Active Directory und DNS.
   
-Lesen Sie vor der Bereitstellung von Active Directory in Azure die [Richtlinien für die Bereitstellung von Windows Server Active Directory auf virtuellen Computern in Azure](https://go.microsoft.com/fwlink/p/?linkid=392681). Diese Anleitungen helfen Ihnen zu bestimmen, ob eine andere Architektur oder andere Konfigurationseinstellungen für Ihre Lösung erforderlich sind.
+Lesen Sie vor der Bereitstellung von Active Directory in Azure die [Richtlinien für die Bereitstellung von Windows Server Active Directory auf virtuellen Computern in Azure](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100). Diese Anleitungen helfen Ihnen zu bestimmen, ob eine andere Architektur oder andere Konfigurationseinstellungen für Ihre Lösung erforderlich sind.
   
-Ausführliche Anleitungen zum Einrichten eines Domänencontrollers in Azure finden Sie unter [Installieren eines Active Directory-Replikatdomänencontrollers in Azure Virtual Networks](https://go.microsoft.com/fwlink/p/?LinkId=392687).
+Ausführliche Anleitungen zum Einrichten eines Domänencontrollers in Azure finden Sie unter [Installieren eines Active Directory-Replikatdomänencontrollers in Azure Virtual Networks](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100).
   
 Vor dieser Phase haben Sie keine virtuellen Computer im Virtual Network bereitgestellt. Die virtuellen Computer zum Hosten von Active Directory und DNS sind wahrscheinlich nicht die größten virtuellen Computer, die Sie für die Lösung brauchen. Bevor Sie diese virtuellen Computer bereitstellen, erstellen Sie zuerst den größten virtuellen Computer, die Sie in Ihrem Virtual Network verwenden möchten. Dadurch wird sichergestellt, dass Ihre Lösung auf eine Kategorie in Azure festgelegt wird, die die höchste Größe zulässt, die Sie benötigen. Sie müssen diesen virtuellen Computer jetzt nicht konfigurieren. Erstellen Sie ihn einfach, und halten Sie ihn bei Bedarf bereit. Wenn Sie dies nicht tun, können Sie auf eine Einschränkung stoßen, wenn Sie später versuchen, größere virtuelle Computer zu erstellen, was ein bekanntes Problem war, als dieser Artikel verfasst wurde. 
   
 ## <a name="phase-4-deploy-the-sharepoint-recovery-farm-in-azure"></a>Phase 4: Bereitstellen der SharePoint-Wiederherstellungsfarm in Azure
 
-Stellen Sie die SharePoint-Farm in Virtual Network gemäß Ihren Entwurfsplänen bereit. Es kann nützlich sein, den Artikel [Planen von SharePoint 2013 für Azure-Infrastrukturdienste](https://go.microsoft.com/fwlink/p/?LinkId=400984) vor der Bereitstellung von SharePoint-Rollen in Windows Azure zu lesen.
+Stellen Sie die SharePoint-Farm in Virtual Network gemäß Ihren Entwurfsplänen bereit. Es kann nützlich sein, den Artikel [Planen von SharePoint 2013 für Azure-Infrastrukturdienste](/previous-versions/azure/dn275958(v=azure.100)) vor der Bereitstellung von SharePoint-Rollen in Windows Azure zu lesen.
   
 Befolgen Sie die folgenden Methoden, die wir beim Erstellen unserer Umgebung für eine Machbarkeitsstudie entwickelt haben:
   
@@ -327,18 +327,18 @@ Die folgende Tabelle enthält Links zu DFSR-Referenzartikeln und -Blogbeiträgen
 
 |**Titel**|**Beschreibung**|
 |:-----|:-----|
-|[Replikation](https://go.microsoft.com/fwlink/p/?LinkId=392732) <br/> |TechNet-Thema zur DFS-Verwaltung mit Links für die Replikation  <br/> |
+|[Replikation](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770278(v=ws.11)) <br/> |TechNet-Thema zur DFS-Verwaltung mit Links für die Replikation  <br/> |
 |[DFS-Replikation: Überlebensleitfaden](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |Wiki mit Links zu DFS-Informationen  <br/> |
-|[DFS-Replikation: Häufig gestellte Fragen](https://go.microsoft.com/fwlink/p/?LinkId=392738) <br/> |TechNet-Thema zur DFS-Replikation  <br/> |
-|[Jose Barretos Blog](https://go.microsoft.com/fwlink/p/?LinkId=392739) <br/> |Blog eines leitenden Programmmanagers aus dem File Server-Team von Microsoft  <br/> |
+|[DFS-Replikation: Häufig gestellte Fragen](/previous-versions/windows/it-pro/windows-server-2003/cc773238(v=ws.10)) <br/> |TechNet-Thema zur DFS-Replikation  <br/> |
+|[Jose Barretos Blog](/archive/blogs/josebda/) <br/> |Blog eines leitenden Programmmanagers aus dem File Server-Team von Microsoft  <br/> |
 |[Das Storage-Team bei Microsoft - File Cabinet Blog](https://go.microsoft.com/fwlink/p/?LinkId=392740) <br/> |Blog zu Dateidiensten und Speicherfeatures in Windows Server  <br/> |
    
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>Phase 6: Einrichten des Protokollversands zur Wiederherstellungsfarm
 
-Der Protokollversand ist eine wichtige Komponente für die Einrichtung der Notfallwiederherstellung in dieser Umgebung. Sie können mithilfe des Protokollversands Transaktionsprotokolldateien für Datenbanken aus einer primären Datenbankserverinstanz automatisch an eine sekundäre Datenbankserverinstanz senden. Informationen zum Einrichten des Protokollversands finden Sie unter [Configure log shipping in SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-log-shipping). 
+Der Protokollversand ist eine wichtige Komponente für die Einrichtung der Notfallwiederherstellung in dieser Umgebung. Sie können mithilfe des Protokollversands Transaktionsprotokolldateien für Datenbanken aus einer primären Datenbankserverinstanz automatisch an eine sekundäre Datenbankserverinstanz senden. Informationen zum Einrichten des Protokollversands finden Sie unter [Configure log shipping in SharePoint 2013](/sharepoint/administration/configure-log-shipping). 
   
 > [!IMPORTANT]
-> Die Unterstützung des Protokollversands in SharePoint Server ist auf bestimmte Datenbanken beschränkt. Weitere Informationen finden Sie unter [Unterstützte Hochverfügbarkeits- und Notfallwiederherstellungsoptionen für SharePoint-Datenbanken (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121). 
+> Die Unterstützung des Protokollversands in SharePoint Server ist auf bestimmte Datenbanken beschränkt. Weitere Informationen finden Sie unter [Unterstützte Hochverfügbarkeits- und Notfallwiederherstellungsoptionen für SharePoint-Datenbanken (SharePoint 2013)](/SharePoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas). 
   
 ## <a name="phase-7-validate-failover-and-recovery"></a>Phase 7: Überprüfen von Failover und Wiederherstellung
 
@@ -403,7 +403,7 @@ restore database WSS_Content with recovery
 > [!IMPORTANT]
 > Wenn Sie explizit T-SQL verwenden, geben Sie entweder **WITH NORECOVERY** oder **WITH RECOVERY** in jede RESTORE-Anweisung ein, um Mehrdeutigkeit zu vermeiden. Dies ist besonders wichtig, wenn Sie Skripts schreiben. Nachdem die vollständigen und differenziellen Sicherungen wiederhergestellt wurden, können die Transaktionsprotokolle in SQL Server Management Studio wiederhergestellt werden. Da zudem der Protokollversand bereits angehalten wurde, ist die Inhaltsdatenbank im Standby-Status, sodass Sie den Status in Vollzugriff ändern müssen.
   
-Klicken Sie in SQL Server Management Studio mit der rechten Maustaste auf die Datenbank **WSS_Content**, zeigen Sie auf **Aufgaben** > **Wiederherstellen**, und klicken Sie dann auf **Transaktionsprotokoll** (wenn Sie nicht die vollständige Sicherung wiederhergestellt haben, ist diese Option nicht verfügbar). Weitere Informationen finden Sie unter[Wiederherstellen einer Transaktionsprotokollsicherung (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392778).
+Klicken Sie in SQL Server Management Studio mit der rechten Maustaste auf die Datenbank **WSS_Content**, zeigen Sie auf **Aufgaben** > **Wiederherstellen**, und klicken Sie dann auf **Transaktionsprotokoll** (wenn Sie nicht die vollständige Sicherung wiederhergestellt haben, ist diese Option nicht verfügbar). Weitere Informationen finden Sie unter [Wiederherstellen einer Transaktionsprotokollsicherung (SQL Server)](/sql/relational-databases/backup-restore/restore-a-transaction-log-backup-sql-server).
   
 ### <a name="crawl-the-content-source"></a>Durchforsten der Inhaltsquelle
 
@@ -452,7 +452,7 @@ In den meisten Fällen, wenn Sie über mehrere Front-End-Webserver verfügen, is
   
 Beim Einrichten von Netzwerklastenausgleich wird dem Cluster in der Regel eine einzelne IP-Adresse zugewiesen. Anschließend erstellen Sie einen DNS-Hosteintrag im DNS-Anbieter für Ihr Netzwerk, der auf den Cluster zeigt. (Für dieses Projekt implementieren wir einen DNS-Server in Azure zum Zweck der Ausfallsicherheit für den Fall eines Ausfalls des lokalen Rechenzentrums.) Sie können z. B. einen DNS-Eintrag im DNS-Manager in Active Directory mit dem Namen  `https://sharepoint.contoso.com` erstellen, der auf die IP-Adresse Ihres Clusters mit Lastenausgleich zeigt.
   
-Für den externen Zugriff auf Ihre SharePoint-Farm können Sie einen Hosteintrag auf einem externen DNS-Server mit der gleichen URL erstellen, die Clients in Ihrem Intranet verwenden (beispielsweise `https://sharepoint.contoso.com` ), die auf eine externe IP-Adresse in Ihrer Firewall verweist. (Eine bewährte Methode in diesem Beispiel ist das Einrichten von Split-DNS, sodass der interne DNS-Server für autorisierend ist `contoso.com` und Anforderungen direkt an den SharePoint-Farm Cluster weiterleitet, anstatt DNS-Anforderungen an Ihren externen DNS-Server weiterzuleiten.) Anschließend können Sie die externe IP-Adresse der internen IP-Adresse des lokalen Clusters zuordnen, damit die Clients die gesuchten Ressourcen finden.
+Für den externen Zugriff auf Ihre SharePoint-Farm können Sie einen Hostdatensatz auf einem externen DNS-Server mit derselben URL erstellen, die Clients in Ihrem Intranet verwenden (z. B. ), die auf eine externe IP-Adresse in Ihrer Firewall `https://sharepoint.contoso.com` verweist. (Eine bewährte Methode in diesem Beispiel ist das Einrichten von geteilten DNS, sodass der interne DNS-Server autorisierend für Anforderungen ist und Anforderungen direkt an den SharePoint-Farmcluster weiterleite, anstatt DNS-Anforderungen an ihren externen `contoso.com` DNS-Server weiter zu weiterleiten.) Anschließend können Sie die externe IP-Adresse der internen IP-Adresse Ihres lokalen Clusters zuordnungen, sodass Clients die gesuchten Ressourcen finden.
   
 Von hier aus können Sie auf verschiedene Szenarien für die Notfallwiederherstellung stoßen:
   
@@ -460,7 +460,7 @@ Von hier aus können Sie auf verschiedene Szenarien für die Notfallwiederherste
   
  **Beispielszenario: Das lokale Rechenzentrum ist vollständig unbrauchbar.** Diesem Szenario kann aufgrund einer Naturkatastrophe wie Brand oder Überschwemmung auftreten. Für diesen Fall verfügt Ihr Unternehmen wahrscheinlich über ein sekundäres Rechenzentrum, das in einer anderen Region gehostet wird, und auch über ein Azure-Subnetz mit eigenen Verzeichnisdiensten und DNS. Wie im vorherigen Szenario der Notfallwiederherstellung können Ihre internen und externen DNS-Einträge so umgeleitet werden, dass sie auf die SharePoint-Farm in Azure zeigen. Beachten Sie auch hier, dass die Weitergabe von DNS-Einträgen einige Zeit dauern kann.
   
-Wenn Sie Websitesammlungen mit Hostnamen verwenden, wie in der [Website Sammlungs Architektur mit Hostnamen und der Bereitstellung (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment)empfohlen, können mehrere Websitesammlungen von derselben Webanwendung in Ihrer SharePoint-Farm mit eindeutigen DNS-Namen (beispielsweise `https://sales.contoso.com` und `https://marketing.contoso.com` ) gehostet werden. In diesem Fall können Sie DNS-Einträge für jede Websitesammlung erstellen, die auf die IP-Adresse Ihres Clusters zeigen. Sobald eine Anforderung Ihre SharePoint-Web-Front-End-Server erreicht, übernehmen sie das Weiterleiten jeder Anforderung zur gewünschten Websitesammlung.
+Wenn Sie Websitesammlungen mit Hostnamen verwenden, wie unter Architektur und Bereitstellung von Websitesammlungen mit Hostnamen [(SharePoint 2013)](/SharePoint/administration/host-named-site-collection-architecture-and-deployment)empfohlen, verfügen Sie möglicherweise über mehrere Websitesammlungen, die von derselben Webanwendung in Ihrer SharePoint-Farm gehostet werden, mit eindeutigen DNS-Namen (z. B. `https://sales.contoso.com` und `https://marketing.contoso.com` ). In diesem Fall können Sie DNS-Einträge für jede Websitesammlung erstellen, die auf die IP-Adresse Ihres Clusters zeigen. Sobald eine Anforderung Ihre SharePoint-Web-Front-End-Server erreicht, übernehmen sie das Weiterleiten jeder Anforderung zur gewünschten Websitesammlung.
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Microsoft-Umgebung für Machbarkeitsstudie
 
@@ -528,7 +528,7 @@ Die SharePoint-Farmen wurden in zwei Phasen bereitgestellt, um bei Bedarf die St
 Die Datenbankserver mit SQL Server wurden installiert, bevor die Server mit SharePoint 2013 erstellt wurden. Da es sich um eine neue Bereitstellung handelt, haben wir die Verfügbarkeitsgruppen vor der Bereitstellung von SharePoint erstellt. Wir haben basierend auf bewährten MCS-Methoden drei Gruppen erstellt. 
   
 > [!NOTE]
-> Erstellen Sie Platzhalterdatenbanken, damit Sie Verfügbarkeitsgruppen vor der Installation von SharePoint erstellen können. Weitere Informationen finden Sie unter [Konfigurieren von SQL Server 2012 AlwaysOn-Verfügbarkeitsgruppen für SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=517626)
+> Erstellen Sie Platzhalterdatenbanken, damit Sie Verfügbarkeitsgruppen vor der Installation von SharePoint erstellen können. Weitere Informationen finden Sie unter [Konfigurieren von SQL Server 2012 AlwaysOn-Verfügbarkeitsgruppen für SharePoint 2013](/SharePoint/administration/configure-an-alwayson-availability-group)
   
 Wir haben die Farm erstellt und weitere Server in der folgenden Reihenfolge hinzugefügt:
   
@@ -540,7 +540,7 @@ Wir haben die Farm erstellt und weitere Server in der folgenden Reihenfolge hinz
     
 - SP-WFE1 und SP-WFE2 zum Hosten des verteilten Caches bereitgestellt. 
     
-Wir haben den Parameter  _skipRegisterAsDistributedCachehost_ bei der Ausführung von **psconfig.exe** an der Befehlszeile angegeben. Weitere Informationen finden Sie unter [Planen von Feeds und des Diensts für den verteilten Cache in SharePoint Server 2013](https://docs.microsoft.com/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service). 
+Wir haben den Parameter  _skipRegisterAsDistributedCachehost_ bei der Ausführung von **psconfig.exe** an der Befehlszeile angegeben. Weitere Informationen finden Sie unter [Planen von Feeds und des Diensts für den verteilten Cache in SharePoint Server 2013](/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service). 
   
 Wir haben die folgenden Schritte in der Wiederherstellungsumgebung wiederholt:
   
@@ -630,7 +630,7 @@ Dies geschieht, weil die Standardsicherungseinstellung für eine Verfügbarkeits
   
 ### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>Verwalteter Metadatendienst (oder anderer SharePoint-Dienst) wird nach der Installation nicht automatisch gestartet
 
-Je nach Leistung und aktueller Last Ihrer SharePoint-Server kann das Starten von Diensten mehrere Minuten dauern. Klicken Sie für den Dienst manuell auf **Starten**, und räumen Sie genügend Zeit für den Start ein, während Sie gelegentlich den Bildschirm Dienste auf dem Server aktualisieren, um den Status zu überwachen. Für den Fall, dass der Dienst beendet bleibt, aktivieren Sie die SharePoint-Diagnoseprotokollierung, versuchen, den Dienst neu zu starten, und überprüfen dann das Protokoll auf Fehler. Weitere Informationen finden Sie unter [Konfigurieren der Diagnoseprotokollierung in SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-diagnostic-logging)
+Je nach Leistung und aktueller Last Ihrer SharePoint-Server kann das Starten von Diensten mehrere Minuten dauern. Klicken Sie für den Dienst manuell auf **Starten**, und räumen Sie genügend Zeit für den Start ein, während Sie gelegentlich den Bildschirm Dienste auf dem Server aktualisieren, um den Status zu überwachen. Für den Fall, dass der Dienst beendet bleibt, aktivieren Sie die SharePoint-Diagnoseprotokollierung, versuchen, den Dienst neu zu starten, und überprüfen dann das Protokoll auf Fehler. Weitere Informationen finden Sie unter [Konfigurieren der Diagnoseprotokollierung in SharePoint 2013](/sharepoint/administration/configure-diagnostic-logging)
   
 ### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>Nach dem Ändern von DNS auf die Azure-Failoverumgebung verwenden Clientbrowser weiterhin die alte IP-Adresse für die SharePoint-Website.
 
@@ -642,13 +642,10 @@ Ipconfig /flushdns
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Unterstützte Hochverfügbarkeits- und Notfallwiederherstellungsoptionen für SharePoint-Datenbanken](https://docs.microsoft.com/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
+[Unterstützte Hochverfügbarkeits- und Notfallwiederherstellungsoptionen für SharePoint-Datenbanken](/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
   
-[Konfigurieren von SQL Server 2012 AlwaysOn-Verfügbarkeitsgruppen für SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=393122)
+[Konfigurieren von SQL Server 2012 AlwaysOn-Verfügbarkeitsgruppen für SharePoint 2013](/SharePoint/administration/configure-an-alwayson-availability-group)
   
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 Lösungs- und Architektur-Center](../solutions/solution-architecture-center.md)
-
-
-
+[Microsoft 365-Lösungs- und Architekturcenter](../solutions/index.yml)

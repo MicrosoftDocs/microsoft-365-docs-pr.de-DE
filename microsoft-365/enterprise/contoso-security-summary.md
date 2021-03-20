@@ -1,5 +1,5 @@
 ---
-title: Zusammenfassung von Microsoft 365 für Enterprise-Sicherheit für die Contoso Corporation
+title: Zusammenfassung von Microsoft 365 for Enterprise Security für die Contoso Corporation
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -14,61 +14,61 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Wie Contoso die Sicherheitsfunktionen von Microsoft 365 für Unternehmen verwendet.
-ms.openlocfilehash: 5c951a973fbebeff92040f9411ad2c81788f920a
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+description: Wie Contoso die Sicherheitsfeatures von Microsoft 365 Enterprise verwendet.
+ms.openlocfilehash: 31baf61011fb67fbe11394718086d73afa2bc680
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558394"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907662"
 ---
-# <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Zusammenfassung von Microsoft 365 für Enterprise-Sicherheit für die Contoso Corporation
+# <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Zusammenfassung von Microsoft 365 for Enterprise Security für die Contoso Corporation
 
-Um die Genehmigung zur Bereitstellung von Microsoft 365 für Unternehmen zu erhalten, hat die IT-Sicherheitsabteilung von Contoso eine umfassende Sicherheitsüberprüfung durchgeführt. Sie haben die folgenden Sicherheitsanforderungen für die Cloud ermittelt:
+Um die Genehmigung für die Bereitstellung von Microsoft 365 Enterprise zu erhalten, hat die Contoso-IT-Sicherheitsabteilung eine sorgfältige Sicherheitsüberprüfung durchgeführt. Sie haben die folgenden Sicherheitsanforderungen für die Cloud identifiziert:
 
-- Verwenden Sie die stärksten Authentifizierungsmethoden für den Zugriff von Mitarbeitern auf Cloud-Ressourcen.
-- Stellen Sie sicher, dass PCs und mobile Geräte auf sichere Weise eine Verbindung herstellen und auf Anwendungen zugreifen.
-- Schützen Sie PCs und e-Mails vor Schadsoftware.
-- Berechtigungen für Cloud-basierte digitale Objekte definieren, wer auf welche Aufgaben zugreifen kann und wie er für den Zugriff auf die geringsten Rechte ausgelegt ist.
-- Vertrauliche und stark regulierte digitale Objekte werden in sicheren Speicherorten gekennzeichnet, verschlüsselt und gespeichert.
-- Hochregulierte digitale Objekte werden mit zusätzlicher Verschlüsselung und Berechtigungen geschützt.
-- IT-Sicherheitsmitarbeiter können die aktuelle Sicherheitslage über zentrale Dashboards überwachen und über Sicherheitsereignisse auf schnelle Reaktion und Minderung informieren.
+- Verwenden Sie die stärksten Authentifizierungsmethoden für den Mitarbeiterzugriff auf Cloudressourcen.
+- Stellen Sie sicher, dass PCs und mobile Geräte anwendungen auf sichere Weise verbinden und darauf zugreifen.
+- Schützen Sie PCs und E-Mails vor Schadsoftware.
+- Berechtigungen für cloudbasierte digitale Objekte definieren, wer auf was und was sie tun können, und sind für den Zugriff mit den geringsten Rechten konzipiert.
+- Vertrauliche und streng regulierte digitale Objekte werden gekennzeichnet, verschlüsselt und an sicheren Orten gespeichert.
+- Streng regulierte digitale Objekte sind durch zusätzliche Verschlüsselung und Berechtigungen geschützt.
+- IT-Sicherheitsmitarbeiter können die aktuelle Sicherheitslage über zentrale Dashboards überwachen und sich über Sicherheitsereignisse für schnelle Reaktionen und Gegenmaßnahmen informiert machen.
 
-## <a name="the-contoso-path-to-microsoft-365-security-readiness"></a>Der Contoso-Pfad zur Sicherheitsbereitschaft von Microsoft 365
+## <a name="the-contoso-path-to-microsoft-365-security-readiness"></a>Der Contoso-Pfad zur Microsoft 365-Sicherheitsbereitschaft
 
-Contoso hat die folgenden Schritte ausgeführt, um die Sicherheit für die Bereitstellung von Microsoft 365 für Unternehmen vorzubereiten:
+Contoso hat die folgenden Schritte befolgt, um die Sicherheit für die Bereitstellung von Microsoft 365 Enterprise vorzubereiten:
 
 1. Einschränken von Administratorkonten für die Cloud
 
-   Contoso hat eine umfassende Überprüfung der vorhandenen Active Directory-Domänendienste (AD DS) Administratorkonten vorgenommen und eine Reihe dedizierter Cloud-Administratorkonten und-Gruppen eingerichtet.
+   Contoso hat eine umfassende Überprüfung der vorhandenen Active Directory Domain Services (AD DS)-Administratorkonten erstellt und eine Reihe dedizierter Cloudadministratorkonten und -gruppen eingerichtet.
 
 2. Klassifizieren von Daten in drei Sicherheitsstufen
 
-   Contoso hat eine sorgfältige Überprüfung vorgenommen und die drei Ebenen ermittelt, die verwendet wurden, um die Microsoft 365 für Enterprise-Features zum Schutz der wertvollsten Daten zu identifizieren.
+   Contoso hat die drei Ebenen sorgfältig überprüft und ermittelt, mit denen die Microsoft 365 for Enterprise-Features identifiziert wurden, um die wertvollsten Daten zu schützen.
 
 3. Bestimmen von Zugriffs-, Aufbewahrungs- und Datensicherungsrichtlinien für Datenstufen
 
-   Basierend auf den Datenebenen haben Contoso detaillierte Anforderungen zum qualifizieren zukünftiger IT-Arbeitslasten ermittelt, die in die Cloud verschoben werden.
+   Basierend auf den Datenebenen hat Contoso detaillierte Anforderungen zur Qualifizierung zukünftiger IT-Workloads ermittelt, die in die Cloud verschoben werden.
 
-Um Sicherheits bewährte Methoden und Microsoft 365 für Enterprise-Bereitstellungsanforderungen zu befolgen, haben Contoso-Sicherheitsadministratoren und die IT-Abteilung viele Sicherheitsfeatures und-Funktionen bereitgestellt, wie in den folgenden Abschnitten beschrieben.
+Um bewährte Sicherheitsmethoden und Microsoft 365 for Enterprise-Bereitstellungsanforderungen zu erfüllen, haben Contoso-Sicherheitsadministratoren und ihre IT-Abteilung viele Sicherheitsfeatures und -funktionen bereitgestellt, wie in den folgenden Abschnitten beschrieben.
 
 ## <a name="identity-and-access-management"></a>Identitäts- und Zugriffsverwaltung 
 
 - Dedizierte globale Administratorkonten mit MFA und PIM
 
-  Anstatt die globale Administratorrolle alltäglichen Benutzerkonten zuzuweisen, hat Contoso drei dedizierte globale Administratorkonten mit sicheren Kennwörtern erstellt. Die Konten werden durch Azure AD Multi-Factor Authentication (MFA) und Azure Active Directory (Azure AD) Privileged Identity Management (PIM) geschützt. *PIM ist nur mit Microsoft 365 E5 verfügbar.*
+  Anstatt die globale Administratorrolle alltäglichen Benutzerkonten zuzuordnen, hat Contoso drei dedizierte globale Administratorkonten mit starken Kennwörtern erstellt. Die Konten sind durch azure AD Multi-Factor Authentication (MFA) und Azure Active Directory (Azure AD) Privileged Identity Management (PIM) geschützt. *PIM ist nur mit Microsoft 365 E5 verfügbar.*
 
-  Die Anmeldung mit einem globalen Administratorkonto erfolgt nur für bestimmte administrative Aufgaben. Die Kennwörter sind nur für designierte Mitarbeiter bekannt und können nur innerhalb eines Zeitraums verwendet werden, der in Azure AD PIM konfiguriert ist.
+  Die Anmeldung mit einem globalen Administratorkonto erfolgt nur für bestimmte Administrative Aufgaben. Die Kennwörter sind nur bestimmten Mitarbeitern bekannt und können nur innerhalb eines Zeitraums verwendet werden, der in Azure AD PIM konfiguriert ist.
 
-  Contoso-Sicherheitsadministratoren haben Konten, die für die Funktion des IT-Mitarbeiters geeignet sind, kleinere Administratorrollen zugewiesen.
+  Contoso-Sicherheitsadministratoren haben Konten, die für die Auftragsfunktion dieses IT-Mitarbeiters geeignet sind, kleinere Administratorrollen zugewiesen.
 
-  Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+  Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Microsoft 365](/office365/admin/add-users/about-admin-roles).
 
 - Mehrstufige Authentifizierung (MFA) für alle Benutzerkonten
 
-  MFA fügt dem Anmeldevorgang eine zusätzliche Schutzschicht hinzu. Es erfordert, dass Benutzer nach der korrekten Eingabe Ihres Kennworts einen Telefonanruf, eine Textnachricht oder eine APP-Benachrichtigung auf dem Smartphone bestätigen. Bei MFA sind Azure AD Benutzerkonten gegen unberechtigte Anmeldung geschützt, auch wenn ein Kontokennwort kompromittiert wurde.
+  MFA fügt dem Anmeldevorgang eine zusätzliche Schutzebene hinzu. Es erfordert, dass Benutzer einen Anruf, eine SMS oder eine App-Benachrichtigung auf ihrem Smartphone bestätigen, nachdem sie ihr Kennwort richtig eingegeben haben. Mit MFA sind Azure AD-Benutzerkonten vor nicht autorisierter Anmeldung geschützt, auch wenn ein Kontokennwort gefährdet ist.
 
-   - Um eine Gefährdung des Microsoft 365-Abonnements zu verhindern, benötigt Contoso für alle globalen Administratorkonten MFA.
+   - Zum Schutz vor einer Kompromissbereitschaft des Microsoft 365-Abonnements benötigt Contoso MFA für alle globalen Administratorkonten.
    - Zum Schutz vor Phishingangriffen, bei denen die Anmeldeinformationen einer vertrauenswürdigen Person in der Organisation kompromittiert und böswillige E-Mails gesendet werden, wurde bei Contoso die mehrstufige Authentifizierung für alle Benutzerkonten aktiviert, einschließlich Manager und Führungskräfte.
 
 - Sicherer Zugriff auf Geräte und Anwendungen durch bedingte Zugriffsrichtlinien
@@ -77,60 +77,60 @@ Um Sicherheits bewährte Methoden und Microsoft 365 für Enterprise-Bereitstellu
 
 - Windows Hello for Business
 
-  Contoso hat [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) bereitgestellt, um die Notwendigkeit von Kennwörtern durch starke zweistufige Authentifizierung auf PCs und mobilen Geräten mit Windows 10 Enterprise zu eliminieren.
+  Contoso hat [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification) bereitgestellt, um die Notwendigkeit von Kennwörtern durch eine starke zweistufige Authentifizierung auf PCs und mobilen Geräten unter Windows 10 Enterprise zu beseitigen.
 
 - Windows Defender Credential Guard
 
-  Um gezielte Angriffe und Schadsoftware, die im Betriebssystem ausgeführt wird, mit Administratorrechten zu blockieren, aktivierte Contoso die [Windows Defender-Anmeldeinformationen-Schutz](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) über AD DS Gruppenrichtlinie.
+  Um gezielte Angriffe und Schadsoftware zu blockieren, die im Betriebssystem mit Administratorrechten ausgeführt werden, aktivierte Contoso Windows Defender [Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) über die AD DS-Gruppenrichtlinie.
 
 ## <a name="threat-protection"></a>Bedrohungsschutz
 
 - Schutz vor Schadsoftware mit Windows Defender Antivirus
 
-  Contoso verwendet [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) zum Schutz vor Schadsoftware und für die Verwaltung von Antischadsoftware für PCs und Geräte mit Windows 10 Enterprise.
+  Contoso verwendet [Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) zum Schutz vor Schadsoftware und für die Verwaltung von Antischadsoftware für PCs und Geräte mit Windows 10 Enterprise.
 
-- Sicherer e-Mail-Fluss und postfachüberwachungsprotokollierung mit Microsoft Defender für Office 365 
+- Sichere E-Mail-Fluss- und Postfach-Überwachungsprotokollierung mit Microsoft Defender für Office 365 
 
-  Contoso verwendet Exchange Online Schutz und [Defender für Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) zum Schutz vor unbekannten Schadsoftware, Viren und bösartigen URLs, die über e-Mails übertragen werden.
+  Contoso verwendet Exchange Online Protection und [Defender für Office 365,](/office365/securitycompliance/office-365-atp) um sich vor unbekannter Schadsoftware, Viren und schädlichen URLs zu schützen, die über E-Mails übertragen werden.
 
-  Contoso hat auch die postfachüberwachungsprotokollierung aktiviert, um zu identifizieren, wer sich bei Benutzerpostfächern anmeldet, Nachrichten sendet und andere Aktivitäten ausführt, die vom Postfachbesitzer, einem Delegierten Benutzer oder einem Administrator ausgeführt werden.
+  Contoso aktivierte außerdem die Postfach-Überwachungsprotokollierung, um zu ermitteln, wer sich bei Benutzerpostfächern anmeldet, Nachrichten sendet und andere Aktivitäten des Postfachbesitzers, eines delegierten Benutzers oder eines Administrators ausgeführt.
 
 - Angriffsüberwachung und -vermeidung mit der Bedrohungssuche und -reaktion von Office 365 
 
-  Contoso verwendet [Office 365 Bedrohungs Ermittlung und-Antwort](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) , um Benutzer zu schützen, indem Sie Angriffe leicht erkennen und adressieren und zukünftige Angriffe verhindern.
+  Contoso verwendet [die Office 365-Bedrohungsuntersuchung](/office365/securitycompliance/office-365-ti) und -reaktion, um Benutzer zu schützen, indem es einfacher wird, Angriffe zu identifizieren und zu adressiert und zukünftige Angriffe zu verhindern.
 
 - Schutz vor raffinierten Angriffen mit Advanced Threat Analytics
 
-  Contoso verwendet [Advanced Threat Analytics (ATA](https://docs.microsoft.com/advanced-threat-analytics/what-is-ata), um sich vor fortschrittlichen gezielten Angriffen zu schützen. ATA analysiert normales und ungewöhnliches Verhalten von Entitäten (Benutzer, Geräte und Ressourcen), lernt daraus und kann es identifizieren.
+  Contoso verwendet [Advanced Threat Analytics (ATA](/advanced-threat-analytics/what-is-ata), um sich vor fortschrittlichen gezielten Angriffen zu schützen. ATA analysiert normales und ungewöhnliches Verhalten von Entitäten (Benutzer, Geräte und Ressourcen), lernt daraus und kann es identifizieren.
 
 ## <a name="information-protection"></a>Schutz von Daten
 
 - Schützen von vertraulichen und hochgradig regulierten digitalen Objekten mit Azure Information Protection-Bezeichnungen
 
-  Contoso hat drei Datenschutzstufen festgelegt und [Microsoft 365-Vertraulichkeits Bezeichnungen](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) bereitgestellt, die Benutzer auf digitale Objekte anwenden. Für Geschäftsgeheimnisse und andere geistiges Eigentum verwendet Contoso Sensitivitäts-Sublabels für hochregulierte Daten. Durch diesen Vorgang werden Inhalte verschlüsselt und der Zugriff auf bestimmte Benutzerkonten und Gruppen eingeschränkt.
+  Contoso hat drei Ebenen des Datenschutzes festgelegt und [Microsoft 365-Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels.md) bereitgestellt, die Benutzer auf digitale Objekte anwenden. Für seine Geschäftsgeheimnisse und andere geistiges Eigentum verwendet Contoso Vertraulichkeitsunterlabels für streng regulierte Daten. Dieser Prozess verschlüsselt Inhalte und schränkt den Zugriff auf bestimmte Benutzerkonten und Gruppen ein.
 
 - Verhindern von Datenlecks mit Data Loss Prevention (DLP)
 
-  Contoso hat Richtlinien zur [Verhinderung von Datenverlust](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) für Exchange Online, SharePoint und OneDrive für Unternehmen konfiguriert, um zu verhindern, dass Benutzer vertrauliche Daten versehentlich oder absichtlich freigeben.
+  Contoso hat [Richtlinien](../compliance/data-loss-prevention-policies.md) zur Verhinderung von Datenverlust für Exchange Online, SharePoint und OneDrive for Business konfiguriert, um zu verhindern, dass Benutzer versehentlich oder absichtlich vertrauliche Daten freigeben.
 
 - Verhindern von Geräte-Datenlecks mit Windows Information Protection
 
-  Contoso verwendet [Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) zum Schutz vor Datenverlusten über internetbasierte apps und Dienste sowie Enterprise-apps und-Daten auf unternehmenseigenen Geräten und persönlichen Geräten, die Mitarbeiter zur Arbeit bringen.
+  Contoso verwendet [Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) zum Schutz vor Datenlecks durch internetbasierte Apps und Dienste sowie Unternehmens-Apps und -Daten auf Unternehmensgeräten und persönlichen Geräten, die Mitarbeiter zur Arbeit bringen.
 
 - Cloudüberwachung mit Microsoft Cloud App Security
 
-  Contoso verwendet [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security), um seine Cloudumgebung zu strukturieren, die Nutzung zu überwachen und Sicherheitsereignisse und -vorfälle zu erkennen. *Microsoft Cloud App Security ist nur mit Microsoft 365 E5 verfügbar.*
+  Contoso verwendet [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security), um seine Cloudumgebung zu strukturieren, die Nutzung zu überwachen und Sicherheitsereignisse und -vorfälle zu erkennen. *Microsoft Cloud App Security ist nur mit Microsoft 365 E5 verfügbar.*
 
 - Geräteverwaltung mit Microsoft Intune
 
-  Contoso verwendet [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) zum Registrieren und Verwalten von mobilen Geräten und zum Konfigurieren des Zugriffs darauf, ebenso wie zum Konfigurieren der Apps, die auf den Geräten ausgeführt werden können. Gerätebasierte bedingte Zugriffsrichtlinien erfordern ebenfalls genehmigte Apps und kompatible PCs bzw. mobile Geräte.
+  Contoso verwendet [Microsoft Intune](/intune/introduction-intune) zum Registrieren und Verwalten von mobilen Geräten und zum Konfigurieren des Zugriffs darauf, ebenso wie zum Konfigurieren der Apps, die auf den Geräten ausgeführt werden können. Gerätebasierte bedingte Zugriffsrichtlinien erfordern ebenfalls genehmigte Apps und kompatible PCs bzw. mobile Geräte.
 
 ## <a name="security-management"></a>Sicherheitsverwaltung
 
-- Zentrales Sicherheits Dashboard für IT mit Azure Defender
+- Zentrales Sicherheitsdashboard für DIE IT mit Azure Defender
 
-  Contoso verwendet den [Azure Defender](https://azure.microsoft.com/services/security-center/) , um eine einheitliche Ansicht der Sicherheit und des Bedrohungsschutzes darzustellen, um Sicherheitsrichtlinien für die Arbeitslasten zu verwalten und auf Cyberangriffe zu reagieren.
+  Contoso verwendet [Azure Defender,](https://azure.microsoft.com/services/security-center/) um eine einheitliche Ansicht des Sicherheits- und Bedrohungsschutzes zu präsentieren, Sicherheitsrichtlinien über alle Arbeitsauslastungen hinweg zu verwalten und auf Cyberangriffe zu reagieren.
 
 - Zentrales Sicherheits-Dashboard für Benutzer mit Windows Defender Security Center
 
-  Contoso hat die [Windows-Sicherheits-App](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) auf ihren PCs und Geräten mit Windows 10 Enterprise bereitgestellt, damit Benutzer ihre Sicherheitslage auf einen Blick sehen und Maßnahmen ergreifen können.
+  Contoso hat die [Windows Security-App](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) auf seinen PCs und Geräten unter Windows 10 Enterprise bereitgestellt, damit Benutzer ihre Sicherheitslage auf einen Blick sehen und Maßnahmen ergreifen können.

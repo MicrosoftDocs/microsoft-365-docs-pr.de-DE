@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie benutzerdefinierten Typen für vertrauliche Informationen für DLP in der grafischen Benutzeroberfläche im Security & Compliance Center erstellen, ändern, entfernen und testen können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 049c3c123053b4bd833ea95a2413b81366586870
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 36238d14d3d6a1f84b0fdcae62635922f62b58d3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766366"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908489"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Erste Schritte mit benutzerdefinierten Typen vertraulicher Informationen
 
@@ -45,9 +45,9 @@ Es gibt zwei Möglichkeiten, wie ein neuer vertraulicher Informationstyp erstell
     - [Funktionen](what-the-dlp-functions-look-for.md)
     - [Konfidenzniveaus](sensitive-information-type-learn-about.md#more-on-confidence-levels)
  
-- Sie müssen über globale Administrator-oder Compliance-Administratorberechtigungen verfügen, um über die Benutzeroberfläche einen benutzerdefinierten vertraulichen Informationstyp erstellen, testen und bereitstellen zu können. Informationen hierzu finden Sie unter[Zu Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) in Office 365.
+- Sie müssen über globale Administrator-oder Compliance-Administratorberechtigungen verfügen, um über die Benutzeroberfläche einen benutzerdefinierten vertraulichen Informationstyp erstellen, testen und bereitstellen zu können. Informationen hierzu finden Sie unter[Zu Administratorrollen](/office365/admin/add-users/about-admin-roles?view=o365-worldwide) in Office 365.
 
-- Ihre Organisation muss über ein Abonnement verfügen, z. B. Office 365 Enterprise, das Verhinderung von Datenverlust (DLP) beinhaltet. Siehe [Nachrichtenrichtlinie und Compliance ServiceDescription](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
+- Ihre Organisation muss über ein Abonnement verfügen, z. B. Office 365 Enterprise, das Verhinderung von Datenverlust (DLP) beinhaltet. Siehe [Nachrichtenrichtlinie und Compliance ServiceDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
 
 
 > [!IMPORTANT]
@@ -71,7 +71,7 @@ Verwenden Sie dieses Verfahren, um einen neuen Typ vertraulicher Informationen z
 12. Überprüfen Sie Ihre Einstellungen, und wählen Sie dann **Absenden** aus.
 
 > [!IMPORTANT]
-> Microsoft 365 verwendet den Suchcrawler zum Erkennen und Klassifizieren vertraulicher Informationen in SharePoint Online- und OneDrive for Business-Websites. Um den neuen benutzerdefinierten vertraulichen Informationstyp in vorhandenen Inhalten zu identifizieren, müssen die Inhalte erneut durchforstet werden. Inhalte werden basierend auf einem Zeitplan durchforstet, aber Sie können Inhalte für eine Websitesammlung, Liste oder Bibliothek manuell erneut durchforsten. Weitere Informationen finden Sie unter [Manuelles Anfordern des Durchforstens und des erneuten Indizierens einer Website, Bibliothek oder Liste](https://docs.microsoft.com/sharepoint/crawl-site-content).
+> Microsoft 365 verwendet den Suchcrawler zum Erkennen und Klassifizieren vertraulicher Informationen in SharePoint Online- und OneDrive for Business-Websites. Um den neuen benutzerdefinierten vertraulichen Informationstyp in vorhandenen Inhalten zu identifizieren, müssen die Inhalte erneut durchforstet werden. Inhalte werden basierend auf einem Zeitplan durchforstet, aber Sie können Inhalte für eine Websitesammlung, Liste oder Bibliothek manuell erneut durchforsten. Weitere Informationen finden Sie unter [Manuelles Anfordern des Durchforstens und des erneuten Indizierens einer Website, Bibliothek oder Liste](/sharepoint/crawl-site-content).
 
 13. Auf der Seite **Datenklassifizierung** werden Ihnen alle Typen vertraulicher Informationen aufgelistet angezeigt. Wählen Sie **Aktualisieren** und suchen Sie dann nach dem Typ vertraulicher Informationen, den Sie erstellt haben.
 

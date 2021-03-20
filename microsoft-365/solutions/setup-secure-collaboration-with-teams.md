@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Erfahren Sie, wie Sie eine sichere Inhaltszusammenarbeit in Teams einrichten, um Ihre Daten basierend auf ihrer Vertraulichkeit zu schützen.
-ms.openlocfilehash: c7881328da2ef78d043b12db29f50b961d79b2cb
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 88cb3557f1c150a9c9fd68ba362fcc9c424aa73a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423993"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906468"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Sichere Zusammenarbeit mit Microsoft 365 einrichten
 
@@ -67,8 +67,8 @@ Zum Konfigurieren der sicheren Zusammenarbeit verwenden Sie diese Microsoft 365-
 | Produkt oder Komponente | Funktion oder Feature | Lizenzierung |
 |:-------|:-----|:-------|
 | Microsoft Defender für Office 365 | Sichere Anlagen für SPO, OneDrive und Teams; Sichere Dokumente; Sichere Links für Teams    | Microsoft 365 E1, E3 und E5 |
-| Microsoft Office SharePoint Online    | Website- und Dateifreigaberichtlinien, Websitefreigabeberechtigungen, Freigabelinks, Zugriffsanforderungen, Einstellungen für die Websitegastfreigabe | Microsoft 365 E1, E3 und E5 |
-| Microsoft Teams   | Gastzugriff, private Teams, private Kanäle | Microsoft 365 E1, E3 und E5 |
+| SharePoint    | Website- und Dateifreigaberichtlinien, Websitefreigabeberechtigungen, Freigabelinks, Zugriffsanforderungen, Einstellungen für die Websitegastfreigabe | Microsoft 365 E1, E3 und E5 |
+| Microsoft Teams   | Gastzugriff, private Teams, private Kanäle | Microsoft 365 E1, E3 und E5 |
 | Microsoft 365 Compliance  | Vertraulichkeitsbezeichnungen    | Microsoft 365 E3 und E5 |
 
 ### <a name="collaboration-governance"></a>Zusammenarbeitsgovernance
@@ -125,7 +125,7 @@ Je nach Vertraulichkeit der freigegebenen Informationen können Sie Sicherheitsv
 - [Begrenzen der versehentlichen Gefährdung von Dateien bei der Freigabe für Personen außerhalb Ihrer Organisation](share-limit-accidental-exposure.md)
 - [Erstellen einer sicheren Gastfreigabeumgebung](create-secure-guest-sharing-environment.md)
 
-Wenn Sie über ein Hauptprojekt mit einer Partnerorganisation verfügen, können Sie Azure Entitlement Management verwenden, um die Gäste aus dieser Organisation in einem Team zu verwalten, das Sie für das Projekt eingerichtet haben. Weitere Informationen finden Sie unter [Erstellen eines B2B-Extranets](b2b-extranet.md) mit verwalteten Gästen.
+Wenn Sie über ein Hauptprojekt mit einer Partnerorganisation verfügen, können Sie Azure Entitlement Management verwenden, um die Gäste aus dieser Organisation in einem Team zu verwalten, das Sie für das Projekt eingerichtet haben. Siehe [Erstellen eines B2B-Extranets mit verwalteten Gästen](b2b-extranet.md) für weitere Details.
 
 
 
@@ -140,16 +140,16 @@ Diese Schulungsmodule von Microsoft Learn helfen Ihnen, die Features für Zusamm
 |![Schulungssymbol für die Zusammenarbeit in Teams](../media/manage-team-collaboration-with-microsoft-teams.svg)|Verwalten der Zusammenarbeit im Team mit Microsoft Teams bietet eine Einführung in die Features und Funktionen von Microsoft Teams, dem zentralen Hub für die Zusammenarbeit im Team in Microsoft 365. Hier erfahren Sie, wie Sie mithilfe von Teams Teamarbeit und Kommunikation innerhalb Ihrer Organisation – sowohl lokal als auch mobil – auf einer breiten Palette von Geräten – von Desktops bis Tablets und Smartphones – vereinfachen und gleichzeitig die vielfältigen Funktionen von Office 365-Anwendungen nutzen können. Sie lernen, wie Teams eine umfassende und flexible Umgebung für die Zusammenarbeit über Anwendungen und Geräte hinweg bereitstellt. Dieser Lernpfad kann Ihnen bei der Vorbereitung für die Microsoft 365-Zertifizierung: Teams Administrator Associate helfen.<br><br>2 Std. 17 Min. - Lernpfad - 5 Module|
 
 > [!div class="nextstepaction"]
-> [Starten >](https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
+> [Starten >](/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
 
-#### <a name="sharepoint"></a>Microsoft Office SharePoint Online
+#### <a name="sharepoint"></a>SharePoint
 
 |Schulung:|Zusammenarbeit mithilfe von SharePoint in Microsoft 365|
 |:---|:---|
 |![SharePoint-Schulungssymbol](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Verwalten freigegebener Inhalte mit Microsoft SharePoint bietet eine Einführung in die Features und Funktionen von SharePoint und dessen Funktionsweise mit Microsoft 365. Hier erfahren Sie mehr über die verschiedenen Typen von SharePoint-Websites, einschließlich Hubwebsites, sowie über den Schutz von Informationen, die Berichterstellung und die Überwachung. Sie erfahren außerdem, wie Sie die SharePoint-Datei- und Ordnerfreigabe verwenden, um die Zusammenarbeit zu optimieren, wie Sie Dateien extern freigeben und wie Sie SharePoint-Websites im SharePoint Admin-Center verwalten. Dieser Lernpfad kann Ihnen bei der Vorbereitung für die Microsoft 365 Certified: Teamwork Administrator Associate-Zertifizierung helfen.<br><br>1 Std. 14 Min. - Lernpfad - 4 Module|
 
 > [!div class="nextstepaction"]
-> [Starten >](https://docs.microsoft.com/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
+> [Starten >](/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
 
 #### <a name="information-protection"></a>Schutz von Daten
 
@@ -158,7 +158,7 @@ Diese Schulungsmodule von Microsoft Learn helfen Ihnen, die Features für Zusamm
 |![Schulungssymbol für Den Schutz von Teams-Informationen](../media/protect-enterprise-information-microsoft-365.svg)|Es ist schwieriger als je zuvor, die Informationen Ihrer Organisation zu schützen und zu sichern. Im Lernpfad Schützen von Unternehmensinformationen mit Microsoft 365 wird erläutert, wie Sie Ihre vertraulichen Informationen vor versehentlichem Teilen oder Missbrauch schützen, wie Sie Daten erkennen und klassifizieren, wie Sie sie mit Vertraulichkeitsbezeichnungen schützen können und wie Sie vertrauliche Informationen überwachen und analysieren können, um sich gegen den Verlust dieser Daten zu schützen. Dieser Lernpfad kann Ihnen bei der Vorbereitung auf die Microsoft 365 Certified: Security Administrator Associate und Microsoft 365 Certified: Enterprise Administration Expert-Zertifizierungen helfen.<br><br>1 Std. – Lernpfad – 5 Module|
 
 > [!div class="nextstepaction"]
-> [Starten >](https://docs.microsoft.com/learn/modules/m365-security-info-overview/introduction/)
+> [Starten >](/learn/modules/m365-security-info-overview/introduction/)
 
 #### <a name="identity-and-access"></a>Identität und Zugriff
 
@@ -167,13 +167,13 @@ Diese Schulungsmodule von Microsoft Learn helfen Ihnen, die Features für Zusamm
 |![Identitäts- und Zugriffsschulungssymbol](../media/protect-identity-and-access-with-microsoft-365.svg)|Der Lernpfad Identität und Zugriff umfasst die neuesten Identitäts- und Zugriffstechnologien, Tools zur Stärkung der Authentifizierung und Anleitungen zum Identitätsschutz in Ihrer Organisation. Die Zugriffs- und Identitätstechnologien von Microsoft ermöglichen es Ihnen, die Identität Ihrer Organisation zu schützen, ob vor Ort oder in der Cloud, und ermöglichen es Ihren Benutzern, von jedem Standort aus sicher zu arbeiten. Dieser Lernpfad kann Ihnen bei der Vorbereitung für die Microsoft 365-Zertifizierung: Security Administrator Associate und Microsoft 365 Zertifizierung: Enterprise Administration Expert helfen.<br><br>2 Std. 52 Min. - Lernpfad - 6 Module|
 
 > [!div class="nextstepaction"]
-> [Starten >](https://docs.microsoft.com/learn/modules/m365-identity-overview/introduction/)
+> [Starten >](/learn/modules/m365-identity-overview/introduction/)
 
 ## <a name="training-for-end-users"></a>Schulungen für Endbenutzer
 
 Diese Schulungsmodule können Ihren Benutzern helfen, Teams, Gruppen und SharePoint für die Zusammenarbeit in Microsoft 365 zu verwenden.
 
-|Teams|Microsoft Office SharePoint Online|
+|Teams|SharePoint|
 |:---|:---|
 |![Einrichten und Anpassen des Teamschulungssymbols](../media/set-up-customize-team-training.png)<br>**[Einrichten und Anpassen Ihres Teams](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![Symbol für SharePoint-Freigabe- und Synchronisierungsschulungen](../media/sharepoint-share-sync-training.png)<br>**[Freigeben und Synchronisieren](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
 |![Schulungssymbol für Teams zum Hochladen und Suchen von Dateien](../media/smc-teams-upload-find-files-training.png)<br>**[Hochladen und Suchen von Dateien](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
@@ -205,8 +205,8 @@ Wenn Sie zur Bereitstellung dieser Lösung bereit sind, fahren Sie mit den folge
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 Sicherheitsdokumentation](https://docs.microsoft.com/microsoft-365/security)
+[Microsoft 365 Sicherheitsdokumentation](../security/index.yml)
 
-[Microsoft 365-Compliance-Dokumentation](https://docs.microsoft.com/microsoft-365/compliance)
+[Microsoft 365-Compliance-Dokumentation](../compliance/index.yml)
 
-[Willkommen bei Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
+[Willkommen bei Microsoft Teams](/MicrosoftTeams/Teams-overview)

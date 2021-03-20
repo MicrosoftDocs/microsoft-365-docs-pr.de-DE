@@ -22,12 +22,12 @@ ms.custom:
 description: Administratoren können erfahren, wie das automatische Löschen (Zero-Hour Auto Purge, ZAP) zugestellte Nachrichten in einem Exchange Online-Postfach rückwirkend in den Junk-E-Mail-Ordner oder in die Quarantäne verschieben kann, bei der es sich rückwirkend um Spam oder Phishing handelt.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: be47d8dfda68bfb6819b6423542970c7768c6ffb
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b5744fdd4ce371f62fcb4b07a4cbcd003405c3db
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820258"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907976"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Automatisches Löschen (Zero-Hour Auto Purge, ZAP) in Exchange Online
 
@@ -121,4 +121,4 @@ ZAP funktioniert weiterhin, solange die Nachricht nicht gelöscht wurde oder sol
 
 Zap isoliert Nachrichten nicht aus Postfächern, die sich im Haltebereich halten. ZAP kann Nachrichten basierend auf der Aktion, die für ein Spam- oder Phishing-Urteil in Antispamrichtlinien konfiguriert ist, in den Junk-E-Mail-Ordner verschieben.
 
-Weitere Informationen zu Halterechten in Exchange Online finden Sie unter [In-Place Hold and Litigation Hold in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds).
+Weitere Informationen zu Halterechten in Exchange Online finden Sie unter [In-Place Hold and Litigation Hold in Exchange Online](/Exchange/security-and-compliance/in-place-and-litigation-holds).

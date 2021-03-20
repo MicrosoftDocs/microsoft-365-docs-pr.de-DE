@@ -1,5 +1,5 @@
 ---
-title: Planen der Organisations-und Lebenszyklus-Steuerung für Microsoft 365-Gruppen und Microsoft Teams
+title: Planen der Organisations- und Lebenszyklussteuerung für Microsoft 365-Gruppen und Microsoft Teams
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,69 +14,69 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Lean about Lifecycle Governance-Optionen für Tools für die Zusammenarbeit in Microsoft 365
-ms.openlocfilehash: 4d779701d241fc7178ab759063be1b8cdf2e960c
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: Lean about lifecycle governance options for collaboration tools in Microsoft 365
+ms.openlocfilehash: ff3a3a60ce49c423410b51dc6fee2137ebf8952a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613020"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907928"
 ---
-# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planen der Organisations-und Lebenszyklus-Steuerung für Microsoft 365-Gruppen und Microsoft Teams
+# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planen der Organisations- und Lebenszyklussteuerung für Microsoft 365-Gruppen und Microsoft Teams
 
-Microsoft 365 Groups verfügt über eine umfangreiche Reihe von Tools zum Implementieren der Steuerungsfunktionen, die Ihre Organisation benötigt. 
+Microsoft 365-Gruppen verfügen über eine reihe von Tools, um die von Ihrer Organisation benötigten Steuerungsfunktionen zu implementieren. 
 
 Der folgende Abschnitt beschreibt die Möglichkeiten, empfiehlt bewährte Methoden und gibt Hinweise, wie die richtigen Fragen gestellt werden können, um die Anforderungen an die Governance zu bestimmen und wie diese erfüllt werden können.
 
-## <a name="control-who-can-create-microsoft-365-groups"></a>Steuern der Benutzer, die Microsoft 365-Gruppen erstellen können
+## <a name="control-who-can-create-microsoft-365-groups"></a>Steuern, wer Microsoft 365-Gruppen erstellen kann
 
-Gruppen können von Endbenutzern aus mehreren Endpunkten einschließlich Outlook, SharePoint, Teams und anderen Umgebungen erstellt werden.
+Gruppen können von Endbenutzern aus mehreren Endpunkten erstellt werden, einschließlich Outlook, SharePoint, Teams und anderen Umgebungen.
 
 ![Bildbeschreibung](../media/04.png)
 
-Self-Service wird dringend empfohlen, um Gruppenbesitzer zu bevollmächtigen und Benutzern zu helfen, ihre Arbeit leichter erledigen zu lassen. Das Einschränken der Gruppen-und TEAMERSTELLUNG kann die Produktivität der Benutzer verlangsamen, da viele Microsoft 365-Dienste die Erstellung von Gruppen für den Dienst erfordern.
+Wir empfehlen dringend Self-Service, um Gruppenbesitzer zu unterstützen und Benutzern zu helfen, ihre Arbeit einfacher zu erledigen. Das Einschränken der Gruppen- und Teamerstellung kann die Produktivität der Benutzer beeinträchtigen, da für viele Microsoft 365-Dienste Gruppen erstellt werden müssen, damit der Dienst funktioniert.
 
-Die folgenden Steuerungsoptionen für die Gruppenerstellung sollten beachtet werden:
+Berücksichtigen Sie die folgenden Steuerungsoptionen für die Gruppenerstellung:
 
-- Verwenden Sie zum Begrenzen der Gruppen Zersiedelung Gruppen [Ablaufrichtlinien](microsoft-365-groups-expiration-policy.md) , um Gruppen automatisch zu löschen, die nicht verwendet werden.
-- Beschränken Sie die Gruppenerstellung auf Mitglieder einer [Sicherheitsgruppe mit einer dynamischen Mitgliedschaft](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) , die beispielsweise alle Vollzeitmitarbeiter enthält.
-- Beschränken Sie die Gruppenerstellung auf eine Sicherheitsgruppe, und fordern Sie die Benutzer auf, Schulungen in den Gruppen Nutzungsrichtlinien Ihrer Organisation durchzuführen, um Mitglieder der Sicherheitsgruppe zu werden.
+- Verwenden Sie zum Einschränken der Gruppensprawlung [Ablaufrichtlinien](microsoft-365-groups-expiration-policy.md) für Gruppen, um nicht verwendete Gruppen automatisch zu löschen.
+- Beschränken Sie die Gruppenerstellung auf Mitglieder einer [Sicherheitsgruppe](/azure/active-directory/users-groups-roles/groups-create-rule) mit dynamischer Mitgliedschaft, die z. B. alle Vollzeitmitarbeiter enthält.
+- Beschränken Sie die Gruppenerstellung auf eine Sicherheitsgruppe, und fordern Sie, dass Benutzer Schulungen in den Gruppenverwendungsrichtlinien Ihrer Organisation abschließen müssen, um Mitglied der Sicherheitsgruppe zu werden.
 
-Wenn Sie einschränken möchten, wer Gruppen erstellen kann, finden Sie weitere Informationen zum Konfigurieren dieses Themas unter [Manage who can create Microsoft 365 Groups](manage-creation-of-groups.md) .
+Wenn Sie einschränken möchten, wer Gruppen erstellen kann, finden Sie unter Verwalten, wer [Microsoft 365-Gruppen](manage-creation-of-groups.md) erstellen kann Informationen zur Konfiguration dieses Themas.
 
-## <a name="group-delete-restore-and-archiving"></a>Löschen, wiederherstellen und Archivieren von Gruppen
+## <a name="group-delete-restore-and-archiving"></a>Gruppenlöschen, Wiederherstellen und Archivierung
 
-Wenn eine Microsoft 365-Gruppe gelöscht wird, wird Sie standardmäßig 30 Tage lang aufbewahrt. Dieser 30-Tage-Zeitraum wird als "vorläufiges Löschen" bezeichnet, weil Sie die Gruppe immer noch wiederherstellen können. Nach 30 Tagen werden die Gruppe und die zugehörigen Inhalte endgültig gelöscht und können nicht wiederhergestellt werden.
+Wenn eine Microsoft 365-Gruppe gelöscht wird, wird sie standardmäßig 30 Tage lang aufbewahrt. Dieser 30-Tage-Zeitraum wird als "vorläufiges Löschen" bezeichnet, weil Sie die Gruppe immer noch wiederherstellen können. Nach 30 Tagen werden die Gruppe und die zugehörigen Inhalte endgültig gelöscht und können nicht wiederhergestellt werden.
 
-Wenn Aufbewahrungsrichtlinien vorhanden sind, um Chat, Dateien oder e-Mail beizubehalten, werden diese Elemente nach dem Löschen der Gruppe beibehalten. Weitere Informationen finden Sie unter [erfahren Sie mehr über Aufbewahrungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) .
+Wenn Aufbewahrungsrichtlinien zum Beibehalten von Chats, Dateien oder E-Mails erstellt wurden, werden diese Elemente beibehalten, nachdem die Gruppe gelöscht wurde. Weitere [Informationen finden Sie unter Informationen](../compliance/retention.md) zu Aufbewahrungsrichtlinien.
 
-Wenn Sie eine Gruppe löschen, aber den Inhalt von einem oder mehreren der Gruppen verbundenen Dienste beibehalten möchten, finden Sie weitere Informationen unter [Archivieren von Gruppen, Teams und jammern](end-life-cycle-groups-teams-sites-yammer.md) .
+Wenn Sie eine Gruppe löschen möchten, aber den Inhalt aus einem oder mehreren der mit einer Gruppe verbundenen Dienste beibehalten möchten, finden Sie weitere Informationen unter Archivieren von [Gruppen,](end-life-cycle-groups-teams-sites-yammer.md) Teams und Yammer Informationen.
 
 ## <a name="group-naming-policy"></a>Gruppenbenennungsrichtlinie
 
-Mithilfe einer Benennungsrichtlinie für Gruppen können Sie Gruppen auf zwei Arten steuern:
+Eine Gruppenbenennungsrichtlinie kann Ihnen dabei helfen, Gruppen auf zwei Arten zu steuern:
 
-- Eine Namensrichtlinie für Präfix/Suffix kann verwendet werden, um feste Zeichenfolgen oder Azure AD Attribute am Anfang oder Ende eines Gruppennamens und der zugehörigen e-Mail-Adresse zu erzwingen. Auf diese Weise können Sie sicherstellen, dass z. b. Abteilungsnamen oder Regionen in Gruppennamen eingeschlossen werden.
-- Eine Richtlinie für blockierte Wörter kann sicherstellen, dass bestimmte Wörter wie die Namen von Führungskräften nicht in Gruppennamen verwendet werden.
+- Eine Präfix-/Suffixbenennungsrichtlinie kann verwendet werden, um feste Zeichenfolgen oder Azure AD-Attribute am Anfang oder Ende eines Gruppennamens und der zugehörigen E-Mail-Adresse zu erzwingen. Auf diese Art können Sie sicherstellen, dass beispielsweise Abteilungsnamen oder Regionen in Gruppennamen enthalten sind.
+- Eine Richtlinie für blockierte Wörter kann sicherstellen, dass bestimmte Wörter, z. B. die Namen von Führungskräften, nicht in Gruppennamen verwendet werden.
 
-Benennungsrichtlinien werden angewendet, wenn Gruppen von einem der Gruppen verbundenen Dienste erstellt werden.
+Benennungsrichtlinien werden angewendet, wenn Gruppen aus einem der mit einer Gruppe verbundenen Dienste erstellt werden.
 
-Wenn Sie sich für die Verwendung von Benennungsrichtlinien für Gruppen entscheiden, lesen Sie die [Benennungsrichtlinie für Microsoft 365-Gruppen](groups-naming-policy.md).
+Wenn Sie sich für die Verwendung von Benennungsrichtlinien für Gruppen entscheiden, lesen [Sie Die Benennungsrichtlinie für Microsoft 365-Gruppen](groups-naming-policy.md).
 
 ## <a name="group-expiration-policy"></a>Gruppenablaufrichtlinie
 
-Sie können einen Ablaufzeitraum angeben, und jede Gruppe, die das Ende dieses Zeitraums erreicht und nicht erneuert wird, wird gelöscht. Der Ablaufzeitraum beginnt beim Erstellen der Gruppe oder am Datum der letzten Verlängerung.
+Sie können einen Ablaufzeitraum angeben, und alle Gruppen, die das Ende dieses Zeitraums erreichen und nicht verlängert werden, werden gelöscht. Der Ablaufzeitraum beginnt beim Erstellen der Gruppe oder am Datum der letzten Verlängerung.
 
-Nachdem Sie Gruppen so festgelegt haben, dass Sie ablaufen:
-- Besitzer der Gruppe werden benachrichtigt, um die Gruppe zu erneuern, wenn sich der Ablauf nähert.
+Sobald Sie festgelegt haben, dass Gruppen ablaufen:
+- Besitzer der Gruppe werden benachrichtigt, die Gruppe zu verlängern, sobald sich der Ablauf nähert.
 - Aktive Gruppen werden automatisch erneuert.
-- Eine Gruppe, die nicht erneuert wird, wird gelöscht.
-- Jede gelöschte Gruppe kann innerhalb von 30 Tagen von den Gruppenbesitzern oder dem Administrator wiederhergestellt werden.
+- Alle nicht verlängerten Gruppen werden gelöscht.
+- Alle gelöschten Gruppen können von den Gruppenbesitzern oder dem Administrator innerhalb von 30 Tagen wiederhergestellt werden.
 
-Ablaufrichtlinien sind eine gute Möglichkeit zum Begrenzen der Gruppen Zersplitterung, indem sichergestellt wird, dass nicht mehr verwendete Gruppen gelöscht werden. Wenn Sie eine Gruppen Ablaufrichtlinie erstellen möchten, finden Sie weitere Informationen unter [Microsoft 365 Group-Ablaufrichtlinie](microsoft-365-groups-expiration-policy.md).
+Ablaufrichtlinien sind eine gute Möglichkeit, die Zersiedelung von Gruppen zu begrenzen, indem sichergestellt wird, dass nicht mehr verwendete Gruppen gelöscht werden. Informationen zum Erstellen einer Gruppenablaufrichtlinie finden Sie unter [Microsoft 365 Group Expiration Policy](microsoft-365-groups-expiration-policy.md).
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Planung der Collaboration-Steuerung Schritt für Schritt](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Schritt-für-Schritt-Planung für die Zusammenarbeitsgovernance](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Erstellen eines Steuerungsplans für die Zusammenarbeit](collaboration-governance-first.md)
+[Erstellen eines Plans für die Zusammenarbeitsgovernance](collaboration-governance-first.md)

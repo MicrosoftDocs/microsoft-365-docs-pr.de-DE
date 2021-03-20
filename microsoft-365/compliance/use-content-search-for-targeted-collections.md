@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Verwenden Sie die Inhaltssuche im Microsoft 365 Compliance Center, um gezielte Sammlungen durchzuführen, die sicherstellen, dass sich Elemente in einem bestimmten Postfach oder Websiteordner befinden.
-ms.openlocfilehash: 9c549b3ae418d13b6e1aafbf0cc171c52f89e621
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 376adfd1bec20d3b1ec11dac5e775eb386ea6317
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423456"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907697"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Verwenden der Inhaltssuche für gezielte Sammlungen
 
@@ -37,9 +37,9 @@ Das Inhaltssuchfeature im Microsoft 365 Compliance Center bietet keine direkte M
 
 - Sie müssen Mitglied der Rollengruppe eDiscovery Manager im Security & Compliance Center sein, um das Skript in Schritt 1 auszuführen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
 
-    Darüber hinaus muss Ihnen die Rolle "E-Mail-Empfänger" in Ihrer Exchange Online-Organisation zugewiesen werden. Dies ist erforderlich, um das **Cmdlet Get-MailboxFolderStatistics** auszuführen, das im Skript enthalten ist. Standardmäßig wird die Rolle E-Mail-Empfänger den Rollengruppen Organisationsverwaltung und Empfängerverwaltung in Exchange Online zugewiesen. Weitere Informationen zum Zuweisen von Berechtigungen in Exchange Online finden Sie unter [Verwalten von Rollengruppenmitgliedern](https://go.microsoft.com/fwlink/p/?linkid=692102). Sie können auch eine benutzerdefinierte Rollengruppe erstellen, ihr die Rolle E-Mail-Empfänger zuweisen und dann die Mitglieder hinzufügen, die das Skript in Schritt 1 ausführen müssen. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen](https://go.microsoft.com/fwlink/p/?linkid=730688).
+    Darüber hinaus muss Ihnen die Rolle "E-Mail-Empfänger" in Ihrer Exchange Online-Organisation zugewiesen werden. Dies ist erforderlich, um das **Cmdlet Get-MailboxFolderStatistics** auszuführen, das im Skript enthalten ist. Standardmäßig wird die Rolle E-Mail-Empfänger den Rollengruppen Organisationsverwaltung und Empfängerverwaltung in Exchange Online zugewiesen. Weitere Informationen zum Zuweisen von Berechtigungen in Exchange Online finden Sie unter [Verwalten von Rollengruppenmitgliedern](/exchange/manage-role-group-members-exchange-2013-help). Sie können auch eine benutzerdefinierte Rollengruppe erstellen, ihr die Rolle E-Mail-Empfänger zuweisen und dann die Mitglieder hinzufügen, die das Skript in Schritt 1 ausführen müssen. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen](/Exchange/permissions-exo/role-groups).
 
-- Das Skript in diesem Artikel unterstützt die moderne Authentifizierung. Sie können das Skript wie folgt verwenden, wenn Sie eine Microsoft 365- oder Microsoft 365-GCC-Organisation sind. Wenn Sie eine Office 365 Deutschland-Organisation, eine Microsoft 365 GCC High-Organisation oder eine Microsoft 365 DoD-Organisation sind, müssen Sie das Skript bearbeiten, um es erfolgreich auszuführen. Insbesondere müssen Sie die Zeile bearbeiten und den `Connect-ExchangeOnline` *ExchangeEnvironmentName-Parameter* (und den entsprechenden Wert für Ihren Organisationstyp) verwenden, um eine Verbindung mit Exchange Online PowerShell herzustellen.  Außerdem müssen Sie die Zeile bearbeiten und die `Connect-IPPSSession` *Parameter ConnectionUri* und *AzureADAuthorizationEndpointUri* (und die entsprechenden Werte für Ihren Organisationstyp) verwenden, um eine Verbindung mit Security & Compliance Center PowerShell herzustellen. Weitere Informationen finden Sie in den Beispielen [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?#connect-to-exchange-online-powershell-without-using-mfa) und Connect to Security & Compliance Center [PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+- Das Skript in diesem Artikel unterstützt die moderne Authentifizierung. Sie können das Skript wie folgt verwenden, wenn Sie eine Microsoft 365- oder Microsoft 365-GCC-Organisation sind. Wenn Sie eine Office 365 Deutschland-Organisation, eine Microsoft 365 GCC High-Organisation oder eine Microsoft 365 DoD-Organisation sind, müssen Sie das Skript bearbeiten, um es erfolgreich auszuführen. Insbesondere müssen Sie die Zeile bearbeiten und den `Connect-ExchangeOnline` *ExchangeEnvironmentName-Parameter* (und den entsprechenden Wert für Ihren Organisationstyp) verwenden, um eine Verbindung mit Exchange Online PowerShell herzustellen.  Außerdem müssen Sie die Zeile bearbeiten und die `Connect-IPPSSession` *Parameter ConnectionUri* und *AzureADAuthorizationEndpointUri* (und die entsprechenden Werte für Ihren Organisationstyp) verwenden, um eine Verbindung mit Security & Compliance Center PowerShell herzustellen. Weitere Informationen finden Sie in den Beispielen [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) und Connect to Security & Compliance Center [PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
 
 - Jedes Mal, wenn Sie das Skript ausführen, wird eine neue Remote-PowerShell-Sitzung erstellt. Das bedeutet, dass Sie alle verfügbaren Remote-PowerShell-Sitzungen nutzen können. Um dies zu verhindern, führen Sie den folgenden Befehl aus, um die aktiven Remote-PowerShell-Sitzungen zu trennen.
 
@@ -47,7 +47,7 @@ Das Inhaltssuchfeature im Microsoft 365 Compliance Center bietet keine direkte M
   Get-PSSession | Remove-PSSession
   ```
 
-    Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+    Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Das Skript enthält eine minimale Fehlerbehandlung. Der Hauptzweck des Skripts besteht in der schnellen Anzeige einer Liste von Postfachordner-IDs oder Websitepfaden, die in der Suchabfragesyntax einer Inhaltssuche zum Ausführen einer gezielten Auflistung verwendet werden können.
 
