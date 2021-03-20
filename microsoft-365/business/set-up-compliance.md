@@ -1,5 +1,5 @@
 ---
-title: Erhöhter Bedrohungsschutz für Microsoft 365 Business Premium
+title: Erhöhen des Bedrohungsschutzes für Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,47 +21,47 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Richten Sie Compliance-Features ein, um Datenverlust zu verhindern und um sicherzustellen, dass die vertraulichen Informationen Ihrer Kunden geschützt sind.
-ms.openlocfilehash: 2c95ad3f36df28af2c68cd11192bcfe92dfe29e3
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+description: Richten Sie Compliancefeatures ein, um Datenverluste zu verhindern und die vertraulichen Informationen Ihrer und Ihrer Kunden zu schützen.
+ms.openlocfilehash: e210787718025c5df29af8d4a2283291dcecc2a8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841171"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912528"
 ---
 # <a name="set-up-compliance-features"></a>Einrichten von Compliancefeatures
 
-Ihr Microsoft 365 Business Premium verfügt über Features zum Schutz Ihrer Daten und Geräte und hilft Ihnen dabei, die vertraulichen Informationen Ihrer Kunden sicher zu halten.
+Ihr Microsoft 365 Business Premium verfügt über Features zum Schutz Ihrer Daten und Geräte und hilft Ihnen, die vertraulichen Informationen Ihrer Kunden und Ihrer Kunden zu schützen.
 
 ## <a name="set-up-dlp-features"></a>Einrichten von DLP-Features
 
-Ein Beispiel zum Einrichten einer Richtlinie zum Schutz vor dem Schutz vor Verlust personenbezogener Daten finden Sie unter [Erstellen einer DLP-Richtlinie aus einer Vorlage](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template) . 
+Ein Beispiel zum Einrichten einer Richtlinie zum Schutz vor Verlust personenbezogener Daten finden Sie unter Erstellen einer [DLP-Richtlinie](../compliance/create-a-dlp-policy-from-a-template.md) aus einer Vorlage. 
   
-DLP verfügt über viele vorgefertigte Richtlinienvorlagen für viele unterschiedliche Gebietsschemas. Beispiel: Australien Financial Data, Canada Personal Information Act, US Financial Data, etc. Eine vollständige Liste finden Sie unter [was die DLP-Richtlinienvorlagen enthalten](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include) . Alle diese Vorlagen können ähnlich wie beim PII-Vorlagenbeispiel aktiviert werden. 
+DLP enthält viele einsatzbereite Richtlinienvorlagen für viele verschiedene Locales. Beispiel: Australische Finanzdaten, Canada Personal Information Act, U.S. Financial Data und so weiter. Eine vollständige Liste finden Sie unter Was [die DLP-Richtlinienvorlagen](../compliance/what-the-dlp-policy-templates-include.md) enthalten. Alle diese Vorlagen können ähnlich wie im Beispiel für piI-Vorlagen aktiviert werden. 
   
-## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Einrichten der e-Mail-Aufbewahrung mit Exchange Online Archivierung
+## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Einrichten der E-Mail-Aufbewahrung mit Exchange Online-Archivierung
 
- **Exchange Online Archivierungs** Lizenz Funktionen unterstützen die Einhaltung von Vorschriften und behördlichen Vorgaben durch die Beibehaltung von e-Mail-Inhalten für eDiscovery. Es hilft auch, das Risiko zu verringern, wenn es einen Prozess gibt, und bietet eine Möglichkeit zum Wiederherstellen von Daten nach einer Sicherheitsverletzung oder wenn Sie gelöschte Elemente wiederherstellen müssen. Sie können das Beweissicherungsverfahren verwenden, um alle Inhalte eines Benutzers beizubehalten, oder Sie verwenden Aufbewahrungsrichtlinien, um die beizubehaltenden Elemente anzupassen.
+ **Exchange Online-Archivierung** Lizenzfeatures helfen bei der Aufrechterhaltung von Compliance- und behördlichen Standards, indem E-Mail-Inhalte für eDiscovery beibehalten werden. Es hilft auch, Ihr Risiko zu reduzieren, wenn eine Klage vorlag, und bietet eine Möglichkeit, Daten nach einer Sicherheitsverletzung oder wenn Sie gelöschte Elemente wiederherstellen müssen. Sie können das Verfahrensverfahren verwenden, um alle Inhalte eines Benutzers zu erhalten, oder Aufbewahrungsrichtlinien verwenden, um die Aufbewahrungsrichtlinien anzupassen.
   
-**Beweissicherungsverfahren:** Sie können alle Postfachinhalte einschließlich gelöschter Elemente beibehalten, indem Sie das gesamte Postfach eines Benutzers in das Beweissicherungsverfahren versetzen. 
+**Halterecht für Rechtsstreitigkeiten:** Sie können alle Postfachinhalte, einschließlich gelöschter Elemente, beibehalten, indem Sie das gesamte Postfach eines Benutzers in einem Rechtsstreit zurückhalten. 
     
-So legen Sie ein Postfach für das Beweissicherungsverfahren im Admin Center ab:
+So platzieren Sie ein Postfach in einem Rechtsstreit im Admin Center:
     
-1. Navigieren Sie im linken Navigationsbereich zu **Benutzer** \> **aktive Benutzer** .
+1. Wechseln Sie im linken Navigations navi zu **Benutzer** \> **Aktive Benutzer**.
     
-2. Wählen Sie einen Benutzer aus, dessen Postfach Sie in das Beweissicherungsverfahren einordnen möchten. Erweitern Sie im Bereich Benutzer den Eintrag **e-Mail-Einstellungen** , und klicken Sie neben **Weitere Einstellungen** auf **Exchange-Eigenschaften bearbeiten** .
+2. Wählen Sie einen Benutzer aus, dessen Postfach Sie in einem Prozesssicherungsverfahren platzieren möchten. Erweitern Sie im Benutzerbereich **E-Mail-Einstellungen,** und wählen Sie neben **Weitere Einstellungen** die Option **Exchange-Eigenschaften bearbeiten aus.**
     
-3. Wählen Sie auf der Seite Postfachbenutzer im linken Navigationsbereich die Option * * Postfachfeatures * * aus, und wählen Sie dann den Link **aktivieren** unter **Beweissicherungsverfahren** aus.
+3. Wählen Sie auf der Postfachseite für den Benutzer ** Postfachfunktionen ** im linken Navigationsgerät aus, und wählen Sie dann den Link Aktivieren **unter** **Rechtsstreitigkeiten aus.**
     
-4. Im Dialogfeld **Beweissicherungsverfahren** können Sie die Dauer des beweissicherungsverfahrens im Feld **Dauer** des beweissicherungsverfahrens angeben. Lassen Sie das Feld leer, wenn Sie einen unbegrenzten Haltebereich platzieren möchten. Sie können auch Notizen hinzufügen und den Postfachbesitzer zu einer Website weiterleiten, auf der Sie möglicherweise mehr über das Beweissicherungsverfahren erklären müssen. \>**Save** .
+4. Im Dialogfeld **Prozesssicherungsverfahren** können Sie die Dauer des Prozesssicherungsverfahren im Feld Dauer des **Rechtsstreitigkeiten-Haltebereichs** angeben. Lassen Sie das Feld leer, wenn Sie einen unendlichen Haltebereich platzieren möchten. Sie können auch Notizen hinzufügen und den Postfachbesitzer zu einer Website führen, auf der Sie möglicherweise weitere Informationen zum Prozesssicherungsverfahren erläutern müssen. \>**Speichern** Sie .
     
-**Aufbewahrung:** Sie können benutzerdefinierte Aufbewahrungsrichtlinien aktivieren, beispielsweise um eine bestimmte Zeitspanne beizubehalten oder Inhalte dauerhaft am Ende des Aufbewahrungszeitraums zu löschen. Weitere Informationen finden Sie unter [Übersicht über Aufbewahrungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/retention-policies).
+**Aufbewahrung:** Sie können beispielsweise angepasste Aufbewahrungsrichtlinien aktivieren, um inhalte für einen bestimmten Zeitraum zu erhalten oder Inhalte am Ende des Aufbewahrungszeitraums dauerhaft zu löschen. Weitere Informationen finden Sie unter [Übersicht über Aufbewahrungsrichtlinien](../compliance/retention.md).
 
-## <a name="set-up-sensitivity-labels"></a>Einrichten von Sensitivitäts Bezeichnungen
+## <a name="set-up-sensitivity-labels"></a>Einrichten von Vertraulichkeitsbezeichnungen
 
-Die Sensitivitäts Bezeichnungen werden mit dem Azure Information Protection (AIP)-Plan 1 geliefert und helfen Ihnen, Ihre Dokumente und e-Mails zu klassifizieren und optional zu schützen, indem Sie Bezeichnungen anwenden. Bezeichnungen können automatisch von Administratoren angewendet werden, die Regeln und Bedingungen manuell von Benutzern definieren, oder indem Sie eine Kombination verwenden, in der Benutzern Empfehlungen gegeben werden.
+Vertraulichkeitsbezeichnungen sind in Azure Information Protection (AIP) Plan 1 enthalten und helfen Ihnen, Ihre Dokumente und E-Mails durch Anwenden von Bezeichnungen zu klassifizieren und optional zu schützen. Bezeichnungen können automatisch von Administratoren angewendet werden, die Regeln und Bedingungen definieren, manuell von Benutzern oder mithilfe einer Kombination, in der Benutzern Empfehlungen gegeben werden.
 
-Um Sensitivitäts Bezeichnungen einzurichten, zeigen Sie Video zu [Erstellen und Verwalten von Sensitivitäts Bezeichnungen](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) an.
+Zum Einrichten von Vertraulichkeitsbezeichnungen zeigen Sie video [zum Erstellen und Verwalten von Vertraulichkeitsbezeichnungen](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) an.
 
 
 
@@ -69,9 +69,9 @@ Um Sensitivitäts Bezeichnungen einzurichten, zeigen Sie Video zu [Erstellen und
 
 So installieren Sie den AIP-Client manuell:
 
-1. Laden Sie **AzinfoProtection_UL.exe** aus dem [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018)herunter.
+1. Laden **AzinfoProtection_UL.exe** von [Microsoft Download Center herunter.](https://www.microsoft.com/download/details.aspx?id=53018)
  
-2. Sie können überprüfen, ob die Installation erfolgreich war, indem Sie ein Word-Dokument anzeigen und sicherstellen, dass die Option **Vertraulichkeit** auf der Registerkarte **Start** verfügbar ist.
-<br/>![Dropdown-Registerkarte Schutz in einem Word-Dokument.](../media/word-sensitivity.png)
+2. Sie können überprüfen, ob die Installation funktioniert hat,  indem Sie ein Word-Dokument anzeigen und sicherstellen, dass die Option Vertraulichkeit auf der Registerkarte **Start verfügbar** ist.
+<br/>![Dropdownliste "Registerkarte Schutz" in einem Word-Dokument.](../media/word-sensitivity.png)
 
-Weitere Informationen finden Sie unter [Installieren des Clients](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3).
+Weitere Informationen finden Sie unter [Install the client](/azure/information-protection/infoprotect-tutorial-step3).

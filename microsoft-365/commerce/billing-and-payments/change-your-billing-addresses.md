@@ -25,19 +25,19 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Erfahren Sie, wie Sie Ihre Rechnungsadressen für Microsoft 365 for Business aktualisieren. Sie können auch die E-Mail-Adresse aktualisieren, an die Rechnungsbenachrichtigungen gesendet werden.
-ms.openlocfilehash: a6019a72bff1e5f4a3d0e6fdc6bb8cf7b8344d26
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 816198f8ff79c7136add6ec33c84a7812daf2daa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114871"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911902"
 ---
 # <a name="change-your-billing-addresses"></a>Ändern der Rechnungsadressen
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 

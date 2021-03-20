@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie Postfachinhalte für ehemalige Mitarbeiter beibehalten, indem Sie das Postfach in ein inaktives Postfach umdrehen.
-ms.openlocfilehash: 7a10b3327dda148c3328f53826a81464b86a7a0a
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 6aeb10f1557a991523b60b8e8e85a99fc61f4b87
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423616"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911251"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>Übersicht über inaktive Postfächer
 
@@ -71,7 +71,7 @@ Sie können eine Microsoft 365-Aufbewahrungsrichtlinie speziell für inaktive Po
 
 Wenn ein Archiv, das einem eDiscovery-Fall im Security & Compliance Center zugeordnet ist, für ein Postfach platziert wird und dann das Postfach oder das Konto des Benutzers gelöscht wird, wird das Postfach zu einem inaktiven Postfach. Die Verwendung von eDiscovery-Fallspeichern zum Festlegen eines Postfachs als inaktiv wird jedoch nicht empfohlen. Grund hierfür ist, dass eDiscovery-Fälle für bestimmte zeitgebundene Fälle im Zusammenhang mit einem rechtlichen Problem vorgesehen sind. An einem bestimmten Punkt wird ein Rechtsfall wahrscheinlich enden, die dem Fall zugeordneten Speicherverfahren werden entfernt, und der eDiscovery-Fall wird geschlossen. Wenn ein für ein inaktives Postfach festgelegtes Speicherverfahren einem eDiscovery-Fall zugeordnet ist und das Speicherverfahren anschließend aufgehoben oder der eDiscovery-Fall geschlossen (oder gelöscht) wird, wird das inaktive Postfach endgültig gelöscht. Außerdem können Sie keinen zeitbasierten eDiscovery-Halteschutz erstellen. Das bedeutet, dass Inhalte in einem inaktiven Postfach für immer aufbewahrt werden oder bis der Halteraum entfernt und das inaktive Postfach gelöscht wird. Aus diesem Grund wird die Verwendung eines Aufbewahrungszeitraums oder einer Aufbewahrungsrichtlinie für inaktive Postfächer empfohlen.
 
-Weitere Informationen zu eDiscovery-Fällen und -Haltefällen finden Sie unter [eDiscovery-Fälle](ediscovery-cases.md).
+Weitere Informationen zu eDiscovery-Fällen und -Haltefällen finden Sie unter [eDiscovery-Fälle](./get-started-core-ediscovery.md).
 
 ## <a name="inactive-mailboxes-and-labels"></a>Inaktive Postfächer und Bezeichnungen
 

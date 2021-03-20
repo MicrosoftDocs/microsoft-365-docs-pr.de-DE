@@ -18,13 +18,13 @@ description: Erfahren Sie mehr über Registrierungsnummern und Benachrichtigunge
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- Commerce
-ms.openlocfilehash: 342813fa103cb260c036de5dd2cdfd13bea12d33
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+- commerce
+ms.openlocfilehash: a9625b391260d27610bb304b0ae3788b541b7709
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717718"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911995"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>Informationen zu Registrierungsnummern und Benachrichtigungen zur Überprüfung
 
@@ -36,13 +36,15 @@ Wir verwenden die Registrierungsnummer, um die Details Ihres Kontos zu überprü
 
 Für Länder, in denen die Registrierungsnummer erforderlich ist, gibt die Bezeichnung über dem Textfeld an, welcher Nummerntyp erforderlich ist.
 
-<!-- For example, in the following screenshot, the label indicates that a CNPJ registration number is needed.
- add screenshot-->
+Im folgenden Screenshot gibt die Bezeichnung beispielsweise an, dass eine #A0 erforderlich ist.
+
+:::image type="content" source="../media/macregnum-cnpj-screenshot-400.png" alt-text="Screenshot des Registrierungsnummerfelds für C N P J-Nummer.":::
 
 Für Länder, in denen die Registrierungsnummer optional ist, können Sie eine gesetzliche Registrierungsnummer des Unternehmens bereitstellen. Geben Sie in diesem Feld keine persönliche ID ein.
 
-<!-- The following screenshot shows an example of when the registration number is optional.
-add screenshot -->
+Der folgende Screenshot zeigt ein Beispiel dafür, wann die Registrierungsnummer optional ist.
+
+:::image type="content" source="../media/macregnum-reg-screenshot_400.png" alt-text="Screenshot des optionalen Registrierungsnummerfelds.":::
 
 Wenn Sie über keine gültige Registrierungsnummer verfügen, finden Sie weitere Informationen unter [Registrierungsnummern](#registration-numbers-by-country) nach Land.
 
@@ -52,13 +54,15 @@ Wenn Sie einen Kauf abschließen, erhalten Sie möglicherweise eine Benachrichti
 
 Der Überprüfungsprozess dauert normalerweise etwa einen Tag, kann jedoch länger dauern.
 
-<!-- The following screenshot shows the review notification displayed during checkout.
-add screenshot -->
+Der folgende Screenshot zeigt die Überprüfungsbenachrichtigung, die beim Auschecken angezeigt wird.
+
+:::image type="content" source="../media/macregnum_statuscheckout_screenshot_400.png" alt-text="Screenshot des Kontoüberprüfungshinweises auf der Auscheckseite.":::
 
 Außerdem wird eine E-Mail-Benachrichtigung an alle globalen Und Abrechnungsadministratoren in Ihrem Konto gesendet. In einigen Fällen wird die Benachrichtigung an Benutzer gesendet, die über die Rolle Abrechnungskontobesitzer oder Abrechnungskonto-Mitwirkende für das Konto verfügen. In der Benachrichtigung heißt es, dass derzeit eine Überprüfung läuft. Nach Abschluss des Überprüfungsprozesses wird eine Bestätigungs-E-Mail-Benachrichtigung gesendet.
 
-<!-- The following screenshot shows the notification displayed on the billing account details page.
-add screenshot -->
+Der folgende Screenshot zeigt die Benachrichtigung, die auf der Seite abrechnungskontodetails angezeigt wird.
+
+:::image type="content" source="../media/macregnum-statusbillacct-screenshot_700.png" alt-text="Screenshot der Benachrichtigung zur Überprüfung auf der Seite Abrechnungskonten.":::
 
 ## <a name="registration-numbers-by-country"></a>Registrierungsnummern nach Land
 

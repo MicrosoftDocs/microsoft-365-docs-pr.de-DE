@@ -10,18 +10,18 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: SKOS-Formatreferenz für SharePoint-Taxonomie
-ms.openlocfilehash: 90c20ddb440e216941a5ea06f1aa815cb80102a9
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 6a565de9598706e998206304093ed86a1a55704d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087279"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911174"
 ---
 # <a name="skos-format-reference-for-sharepoint-taxonomy"></a>SKOS-Formatreferenz für SharePoint-Taxonomie
 
-Dieser Artikel enthält RDF-Vokabular, das zur Darstellung der [SharePoint-Taxonomie](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy) verwendet wird, und basiert auf [SKOS](https://www.w3.org/TR/skos-primer/). Zur Serialisierung dieser RDF-Syntax verwenden Sie RDF [TURTLE](https://www.w3.org/TR/turtle/).
+Dieser Artikel enthält RDF-Vokabular, das zur Darstellung der [SharePoint-Taxonomie](/dotnet/api/microsoft.sharepoint.taxonomy) verwendet wird, und basiert auf [SKOS](https://www.w3.org/TR/skos-primer/). Zur Serialisierung dieser RDF-Syntax verwenden Sie RDF [TURTLE](https://www.w3.org/TR/turtle/).
 
-Die folgende Tabelle zeigt die [SKOS](https://www.w3.org/TR/skos-primer/)-Entsprechungen für das Vokabular der [SharePoint-Taxonomie](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy). SharePoint unterstützt keine [SKOS](https://www.w3.org/TR/skos-primer/)-Werte, die keine SharePoint-Entsprechung zur Taxonomie aufweisen.
+Die folgende Tabelle zeigt die [SKOS](https://www.w3.org/TR/skos-primer/)-Entsprechungen für das Vokabular der [SharePoint-Taxonomie](/dotnet/api/microsoft.sharepoint.taxonomy). SharePoint unterstützt keine [SKOS](https://www.w3.org/TR/skos-primer/)-Werte, die keine SharePoint-Entsprechung zur Taxonomie aufweisen.
 
 |SharePoint-Taxonomie|SKOS-Entsprechung|
 |:-----------------|:--------------|
@@ -55,9 +55,9 @@ Bei einer Taxonomie handelt es sich um ein formales Klassifizierungssystem. Eine
 
 Stellt einen Ausdruck oder ein Schlüsselwort in einer verwalteten Metadatenhierarchie dar.
 
-Ein [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) ist die atomare Einheit eines SharePoint [TermStore](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termstore). Jeder [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) gehört zu einem [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) der zu einer [TermGroup](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.group) gehört. 
+Ein [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) ist die atomare Einheit eines SharePoint [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore). Jeder [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) gehört zu einem [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) der zu einer [TermGroup](/dotnet/api/microsoft.sharepoint.taxonomy.group) gehört. 
 
-Die Syntax zum Definieren eines [Ausdrucks](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) lautet wie folgt:
+Die Syntax zum Definieren eines [Ausdrucks](/dotnet/api/microsoft.sharepoint.taxonomy.term) lautet wie folgt:
 
 ```SKOS
 ex:TermA    a    sharepoint-taxonomy:Term;
@@ -68,27 +68,27 @@ ex:TermA    a    sharepoint-taxonomy:Term;
     sharePoint-taxonomy:defaultLabel    “Term A”@en-us.
 ```
 
-Ein [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) existiert obligatorisch innerhalb eines [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset). DefaultLabel ist der Name des [Ausdrucks](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) wie er in der visuellen Darstellung dargestellt wird. Die erforderlichen Felder zum Definieren eines [Ausdrucks](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) enthalten:
+Ein [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) existiert obligatorisch innerhalb eines [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset). DefaultLabel ist der Name des [Ausdrucks](/dotnet/api/microsoft.sharepoint.taxonomy.term) wie er in der visuellen Darstellung dargestellt wird. Die erforderlichen Felder zum Definieren eines [Ausdrucks](/dotnet/api/microsoft.sharepoint.taxonomy.term) enthalten:
 
 - sharepoint-taxonomy:defaultLabel
 - sharepoint-taxonomy:inTermSet
 
-Ein [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) kann:
+Ein [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) kann:
 
-- Hierarchisch mit einem anderen [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) in Beziehung gesetzt werden, vorausgesetzt, beide [Ausdrücke](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) gehören zum selben [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset).
-- Mehrere untergeordnete [Ausdrücke](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) haben, aber nur einen einzigen übergeordneten [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term).
-- Keinen übergeordneten [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) definiert haben, wenn es sich um einen topLevelTermOf a [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) handelt.
-- Ein defaultLabel pro [TermStore](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termstore)-Arbeitssprache haben. 
-- Nicht existieren, wenn es weder einen übergeordneten [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) enthält, noch der TopLevelTermOf a [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) ist. 
+- Hierarchisch mit einem anderen [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) in Beziehung gesetzt werden, vorausgesetzt, beide [Ausdrücke](/dotnet/api/microsoft.sharepoint.taxonomy.term) gehören zum selben [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset).
+- Mehrere untergeordnete [Ausdrücke](/dotnet/api/microsoft.sharepoint.taxonomy.term) haben, aber nur einen einzigen übergeordneten [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term).
+- Keinen übergeordneten [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) definiert haben, wenn es sich um einen topLevelTermOf a [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) handelt.
+- Ein defaultLabel pro [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore)-Arbeitssprache haben. 
+- Nicht existieren, wenn es weder einen übergeordneten [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) enthält, noch der TopLevelTermOf a [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) ist. 
 - Nur ein eindeutiges defaultLabel in der gleichen hierarchischen Ebene haben.
 
 **sharepoint-taxonomy:TermSet**
 
 Stellt einen hierarchischen oder unstrukturierten Satz von Term-Objekten dar, die als "Ausdruckssatz" bezeichnet werden.
 
-Wie der Name sagt, ist TermSet ein Satz von [Ausdrücken](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term). Ein [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) in einem [TermStore](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termstore) muss in einem [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) gehören. Kein [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) kann unabhängig voneinander vorhanden sein. 
+Wie der Name sagt, ist TermSet ein Satz von [Ausdrücken](/dotnet/api/microsoft.sharepoint.taxonomy.term). Ein [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) in einem [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) muss in einem [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) gehören. Kein [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) kann unabhängig voneinander vorhanden sein. 
 
-Die Syntax zum Definieren eines [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) lautet:
+Die Syntax zum Definieren eines [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) lautet:
 
 ```SKOS
 ex:TermSetA    a    sharepoint-taxonomy:TermSet;
@@ -97,15 +97,15 @@ ex:TermSetA    a    sharepoint-taxonomy:TermSet;
     sharepoint-taxonomy:hasTopLevelTerm    Ex:Term A.
 ```
 
-[TermSets](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) werden logisch in [TermGroups](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.group)gruppiert. Das erforderliche Feld zum Definieren eines [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) lautet:
+[TermSets](/dotnet/api/microsoft.sharepoint.taxonomy.termset) werden logisch in [TermGroups](/dotnet/api/microsoft.sharepoint.taxonomy.group)gruppiert. Das erforderliche Feld zum Definieren eines [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) lautet:
 
 - sharepoint-taxonomy:termSetName
 
-Wenn der angegebene termSetName innerhalb der [TermGroup](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.group) nicht eindeutig ist, hängt SharePoint eine Nummer an das Ende des Namens an, um die Eindeutigkeit von termSetName(s) beizubehalten.
+Wenn der angegebene termSetName innerhalb der [TermGroup](/dotnet/api/microsoft.sharepoint.taxonomy.group) nicht eindeutig ist, hängt SharePoint eine Nummer an das Ende des Namens an, um die Eindeutigkeit von termSetName(s) beizubehalten.
 
 **sharepoint-taxonomy:hasTopLevelTerm**
 
-SharePoint verwendet diese Eigenschaft zum Zuordnen des obersten [Ausdrucks](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) im [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset), der den Einstiegspunkt zur Hierarchie der[Ausdrücke](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) in einem [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) darstellt. Hierbei handelt es sich um einen umgekehrten Bezug zu sharepoint-taxonomy:topLevelTermOf. 
+SharePoint verwendet diese Eigenschaft zum Zuordnen des obersten [Ausdrucks](/dotnet/api/microsoft.sharepoint.taxonomy.term) im [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset), der den Einstiegspunkt zur Hierarchie der[Ausdrücke](/dotnet/api/microsoft.sharepoint.taxonomy.term) in einem [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) darstellt. Hierbei handelt es sich um einen umgekehrten Bezug zu sharepoint-taxonomy:topLevelTermOf. 
 
 Die Syntax, um dies zu definieren, lautet:
 
@@ -114,7 +114,7 @@ ex:TermSetA    sharepoint-taxonomy:hasTopLevelTerm    ex:TermA.
 ```
 
 >[!NOTE]
-> Sie können den [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) der obersten Ebene eines übergeordneten [Ausdrucks](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) nicht definieren.
+> Sie können den [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) der obersten Ebene eines übergeordneten [Ausdrucks](/dotnet/api/microsoft.sharepoint.taxonomy.term) nicht definieren.
 
 **sharepoint-taxonomy:topLevelTermOf**
 
@@ -128,7 +128,7 @@ ex:TermA    sharepoint-taxonomy:topLevelTermOf    ex:TermSetA.
 
 **sharepoint-taxonomy:inTermSet**
 
-Hiermit ordnen Sie einen [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) einem [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) zu. Ein [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) kann nur in einem einzigen [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) vorhanden sein. SharePoint erfordert diese Eigenschaft beim [Definieren eines Ausdrucks](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/blob/3a3cd54dd076b18bdff1d43b3e342897f8704c23/microsoft-365/contentunderstanding/skos-format-reference.md#term).
+Hiermit ordnen Sie einen [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) einem [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) zu. Ein [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) kann nur in einem einzigen [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) vorhanden sein. SharePoint erfordert diese Eigenschaft beim [Definieren eines Ausdrucks](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/blob/3a3cd54dd076b18bdff1d43b3e342897f8704c23/microsoft-365/contentunderstanding/skos-format-reference.md#term).
 
 ## <a name="required-labels"></a>Erforderliche Bezeichnungen
 
@@ -138,7 +138,7 @@ Ein Ausdruck kann eine oder mehrere Bezeichnungen in der Standardsprache haben, 
 
 **sharepoint-taxonomy:defaultLabel**
 
-Verwenden Sie diese standardmäßige lexikalische Bezeichnung für einen [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term), der ein erforderlicher Parameter für einen [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) ist. Wird verwendet, um den [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) darzustellen.
+Verwenden Sie diese standardmäßige lexikalische Bezeichnung für einen [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term), der ein erforderlicher Parameter für einen [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) ist. Wird verwendet, um den [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) darzustellen.
 
 Die Syntax zum Definieren eines defaultLabel lautet:
 
@@ -146,13 +146,13 @@ Die Syntax zum Definieren eines defaultLabel lautet:
 ex:TermA    sharepoint-taxonomy:defaultLabel    “Term A”@en-us.
 ```
 
-Der defaultLabel enthält zwei Teile: die Zeichenfolge und das Sprachentag. Die Sprache muss eine der [TermStore](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termstore)-Arbeitssprachen sein. Der defaultLabel muss für alle [Ausdrücke](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) desselben [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) auf derselben hierarchischen Ebene eindeutig sein.
+Der defaultLabel enthält zwei Teile: die Zeichenfolge und das Sprachentag. Die Sprache muss eine der [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore)-Arbeitssprachen sein. Der defaultLabel muss für alle [Ausdrücke](/dotnet/api/microsoft.sharepoint.taxonomy.term) desselben [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) auf derselben hierarchischen Ebene eindeutig sein.
 
 **sharepoint-taxonomy:termSetName**
 
 Ruft den Namen für das aktuelle TermSet-Objekt ab und legt ihn fest.
 
-Hierbei handelt es sich um die lexikalische Bezeichnung für einen [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) in einer [TermStore](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termstore)-Arbeitssprache. Dieser Parameter ist für einen [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) erforderlich.. Wird verwendet, um einen [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) darzustellen.
+Hierbei handelt es sich um die lexikalische Bezeichnung für einen [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) in einer [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore)-Arbeitssprache. Dieser Parameter ist für einen [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) erforderlich.. Wird verwendet, um einen [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) darzustellen.
 
 Die Syntax zum Definieren eines termSetName lautet:
 
@@ -164,7 +164,7 @@ ex:TermA    sharepoint-taxonomy:TermSetName    “Term Set A”@en-us.
 
 Ruft den Eigenschaftennamen für das aktuelle TermSet-Objekt ab und legt ihn fest.
 
-Dies ist die lexikalische Bezeichnung für eine sharepoint-taxonomy:SharedCustomPropertyForTerm, sharepoint-taxonomy:LocalCustomPropertyForTerm und sharepoint-taxonomy:CustomPropertyForTermSet in einer [TermStore](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termstore)-Arbeitssprache.
+Dies ist die lexikalische Bezeichnung für eine sharepoint-taxonomy:SharedCustomPropertyForTerm, sharepoint-taxonomy:LocalCustomPropertyForTerm und sharepoint-taxonomy:CustomPropertyForTermSet in einer [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore)-Arbeitssprache.
 
 Der sharepoint-taxonomy:propertyName wird als Schlüssel der CustomProperty behandelt.
 
@@ -180,7 +180,7 @@ Sie können Ihrer Taxonomie auch optionale Bezeichnungen hinzufügen.
 
 **sharepoint-taxonomy:otherLabel**
 
-Dies ist die Alternative lexikalische Bezeichnung für einen [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term). 
+Dies ist die Alternative lexikalische Bezeichnung für einen [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term). 
 
 Die Syntax zum Definieren eines otherLabel lautet:
 
@@ -194,7 +194,7 @@ Taxonomien haben hierarchische und manchmal eine einfache assoziative Beziehung 
 
 **sharepoint-taxonomy:parent**
 
-Damit wird ein [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) hierarchisch zu einem anderen [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) in Beziehung gesetzt. Ein [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) könnte ein [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) der obersten Ebene eines [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) sein, aber falls dies nicht der Fall ist, muss es einen übergeordneten [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) aufweisen. 
+Damit wird ein [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) hierarchisch zu einem anderen [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) in Beziehung gesetzt. Ein [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) könnte ein [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) der obersten Ebene eines [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) sein, aber falls dies nicht der Fall ist, muss es einen übergeordneten [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) aufweisen. 
 
 Die Syntax zum Definieren eines übergeordneten Elements lautet:
 
@@ -208,7 +208,7 @@ Dies bedeutet, dass TermA das übergeordnete Element und TermA das untergeordnet
 
 Das Objekt enthält eine oder mehrere untergeordnete TermSet-Instanzen, auf die über die TermSets-Eigenschaft zugegriffen werden kann. Diese Klasse bietet auch Methoden zum Erstellen neuer untergeordneter TermSet-Objekte. Die Berechtigungen zum Bearbeiten untergeordneter Ausdruck- und TermSet-Instanzen werden in der Gruppe angegeben. 
 
-Damit wird ein [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) hierarchisch zu einem anderen [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) in Beziehung gesetzt.
+Damit wird ein [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) hierarchisch zu einem anderen [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) in Beziehung gesetzt.
 
 Die Syntax zum Definieren eines untergeordneten Elements lautet:
 
@@ -224,7 +224,7 @@ Dieser Abschnitt behandelt die Taxonomie, die im Microsoft.SharePoint.Taxonomie 
 
 **sharepoint-taxonomy:description**
 
-Dies ist eine detaillierte Erklärung jeder Entität des Vokabulars der [SharePoint-Taxonomie](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy). 
+Dies ist eine detaillierte Erklärung jeder Entität des Vokabulars der [SharePoint-Taxonomie](/dotnet/api/microsoft.sharepoint.taxonomy). 
 
 Die Syntax für das Hinzufügen einer Beschreibung lautet:
 
@@ -236,7 +236,7 @@ ex:TermA    sharepoint-taxonomy:description    “Term A is the top level term o
 
 Ruft die Sammlung der benutzerdefinierten Eigenschaftsobjekte für das aktuelle Term-Objekt aus dem schreibgeschützten Schlüsselverzeichnis ab.
 
-Benutzerdefinierte Eigenschaften sind Schlüssel-Werte-Paare, die für einen [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) oder ein [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) definiert werden können, um die Beschreibung des [Ausdrucks](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) oder eines [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) zu erweitern. SharePoint gibt den Schlüssel der benutzerdefinierten Eigenschaft mit Hilfe von propertyName an.
+Benutzerdefinierte Eigenschaften sind Schlüssel-Werte-Paare, die für einen [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) oder ein [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) definiert werden können, um die Beschreibung des [Ausdrucks](/dotnet/api/microsoft.sharepoint.taxonomy.term) oder eines [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) zu erweitern. SharePoint gibt den Schlüssel der benutzerdefinierten Eigenschaft mit Hilfe von propertyName an.
 
 **sharepoint-taxonomy:CustomPropertyForTermSet**
 
@@ -251,7 +251,7 @@ ex:TermSetA    ex:CustomProp1    “Red”@en-us.
 
 **sharepoint-taxonomy:SharedCustomPropertyForTerm**
 
-Wenn die benutzerdefinierte Eigenschaft für einen [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) mit dem [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) mitgeführt werden muss, wenn Sie den [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) woanders wiederverwenden, müssen Sie ihn unter SharedCustomPropertyForTerm definieren.
+Wenn die benutzerdefinierte Eigenschaft für einen [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) mit dem [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) mitgeführt werden muss, wenn Sie den [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) woanders wiederverwenden, müssen Sie ihn unter SharedCustomPropertyForTerm definieren.
 
 Die Syntax, um dies zu definieren, lautet:
 
@@ -263,7 +263,7 @@ ex:TermA    ex:CustomProp2    “5 cm”@en-us.
 ```
 **sharepoint-taxonomy:LocalCustomPropertyForTerm**
 
-Wenn die benutzerdefinierte Eigenschaft für einen [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) nicht mit dem [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) mitgeführt werden muss, wenn Sie den [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) woanders wiederverwenden, dann müssen Sie ihn unter LocalCustomPropertyForTerm definieren.
+Wenn die benutzerdefinierte Eigenschaft für einen [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) nicht mit dem [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) mitgeführt werden muss, wenn Sie den [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) woanders wiederverwenden, dann müssen Sie ihn unter LocalCustomPropertyForTerm definieren.
 
 Die Syntax, um dies zu definieren, lautet:
 
@@ -280,7 +280,7 @@ Auf jeder Ebene der Hierarchie können Sie bestimmte Dateneigenschaften für ein
 
 **sharepoint-taxonomy:isAvailableForTagging**
 
-Verwenden Sie dies, um anzugeben, ob ein [Ausdruck](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.term) oder ein [TermSet](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy.termset) in SharePoint-Listen und -Bibliotheken verfügbar ist.  
+Verwenden Sie dies, um anzugeben, ob ein [Ausdruck](/dotnet/api/microsoft.sharepoint.taxonomy.term) oder ein [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) in SharePoint-Listen und -Bibliotheken verfügbar ist.  
 
 Die Syntax dafür lautet:
 
@@ -310,7 +310,7 @@ propertyName|Hat Eigenschaftenbezeichnung|SharedCustomPropertyForTerm, LocalCust
 |LocalCustomPropertyForTerm|Hat lokale benutzerdefinierte Eigenschaft|Ausdruck|Boolesch, Zeichenfolge, Ganze Zahl, Dezimal, Duplikat|
 |CustomPropertyForTermSet|Hat benutzerdefinierte Eigenschaft|TermSet|Boolesch, Zeichenfolge, Ganze Zahl, Dezimal, Duplikat|
 
-[SKOS](https://www.w3.org/TR/skos-primer/) gültige Szenarien, die [SharePoint-Taxonomie](https://docs.microsoft.com/dotnet/api/microsoft.sharepoint.taxonomy) nicht zulassen:
+[SKOS](https://www.w3.org/TR/skos-primer/) gültige Szenarien, die [SharePoint-Taxonomie](/dotnet/api/microsoft.sharepoint.taxonomy) nicht zulassen:
 
 - Hierarchische Redundanz – Ein [SKOS](https://www.w3.org/TR/skos-primer/)-Konzept kann gleichzeitig an mehrere breitere Konzepte angehängt werden, aber ein sharepoint-taxonomy:Term kann nur ein sharepoint-taxonomy:parent aufweisen, daher ist auch eine zyklische Abhängigkeit von Ausdrücken nicht zulässig.
 - Verwaiste Ausdrücke sind in der SharePoint-Taxonomie nicht zulässig. Jeder sharepoint-taxonomy:Term sollte entweder einen sharepoint-taxonomy:parent haben oder es sollte der sharepoint-taxonomy:topLevelTermOf eines TermSets sein.
@@ -321,4 +321,3 @@ propertyName|Hat Eigenschaftenbezeichnung|SharedCustomPropertyForTerm, LocalCust
 ## <a name="see-also"></a>Weitere Informationen:
 
 [Importieren eines Ausdruckssatzes mithilfe eines SKOS-basierten Formats](import-term-set-skos.md)
-

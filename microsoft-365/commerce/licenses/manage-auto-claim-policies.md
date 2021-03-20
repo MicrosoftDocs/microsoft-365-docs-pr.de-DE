@@ -18,12 +18,12 @@ ms.custom:
 - commerce
 search.appverid:
 - MET150
-ms.openlocfilehash: c1715d2420315c6e645303c959512a45d47fddfe
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: bf3f79e425b3f7cd86f1a5ab95a337ef5127e345
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759206"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911471"
 ---
 # <a name="manage-auto-claim-policies"></a>Verwalten von Richtlinien für automatische Ansprüche
 
@@ -41,9 +41,9 @@ Nachdem Sie eine Richtlinie für automatische Ansprüche erstellt haben, können
 > [!IMPORTANT]
 > Richtlinien für automatische Ansprüche sind derzeit nur für Microsoft Teams verfügbar. In Zukunft stehen weitere Produkte zur Verfügung.
 
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Sie müssen ein globaler, Abrechnungs- oder Benutzeradministrator sein, um Richtlinien für automatische Ansprüche zu erstellen und zu verwalten. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Microsoft 365](../../admin/add-users/about-admin-roles.md).
+Sie müssen ein globaler Administrator sein, um Richtlinien für automatische Ansprüche zu erstellen und zu verwalten. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Microsoft 365](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>Aktivieren oder Deaktivieren des Richtlinienfeatures für automatische Ansprüche
 

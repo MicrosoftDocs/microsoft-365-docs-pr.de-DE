@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie MFA benötigen und Richtlinien für bedingten Zugriff für Microsoft 365 Business einrichten.
-ms.openlocfilehash: e16b7f4ff7d215ee749435806be214a807cc60a4
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: dcb79ed060dd15fd288cdcfb9e3739a788f5fbc2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453669"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912186"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Mehrstufige Authentifizierung erforderlich und Einrichten von Richtlinien für bedingten Zugriff
 
@@ -48,7 +48,7 @@ Derzeit umfassen die Basisrichtlinien die folgenden Richtlinien:
 
 Es wird empfohlen, alle diese Basisrichtlinien zu aktivieren. Nachdem diese Richtlinien aktiviert wurden, werden Administratoren und Benutzer aufgefordert, sich für die mehrstufige Azure AD-Authentifizierung zu registrieren.
 
-Weitere Informationen zu diesen Richtlinien finden Sie unter [Was sind Basisrichtlinien?](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)
+Weitere Informationen zu diesen Richtlinien finden Sie unter [Was sind Basisrichtlinien?](/azure/active-directory/conditional-access/concept-baseline-protection)
 
 ## <a name="require-mfa"></a>MFA erforderlich
 
@@ -73,12 +73,12 @@ So fordern Sie, dass sich alle Benutzer mit einer zweiten Form von ID anmelden:
 1. Wechseln Sie zum [Azure-Portal,](https://portal.azure.com)und navigieren Sie dann zu **Bedingter Azure Active** \> **Directory-Sicherheitszugriff,** \>  um eine neue Richtlinie **zu erstellen.**
 
 Sehen Sie sich die folgenden spezifischen Anweisungen für jede Richtlinie an: <br>
-    - [MFA für Administratoren erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
-    - [MFA für Benutzer erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
-    - [Blockieren der Legacyauthentifizierung](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
-    - [MFA für die Dienstverwaltung erforderlich](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+    - [MFA für Administratoren erforderlich](/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
+    - [MFA für Benutzer erforderlich](/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
+    - [Blockieren der Legacyauthentifizierung](/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
+    - [MFA für die Dienstverwaltung erforderlich](/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 > [!NOTE]
 > Vorschaurichtlinien sind nicht mehr vorhanden, und Benutzer müssen eigene Richtlinien erstellen.
 
-Sie können zusätzliche Richtlinien einrichten, z. B. die Anforderung genehmigter Client-Apps. Weitere Informationen finden Sie in der [Dokumentation zum bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/).
+Sie können zusätzliche Richtlinien einrichten, z. B. die Anforderung genehmigter Client-Apps. Weitere Informationen finden Sie in der [Dokumentation zum bedingten Zugriff](/azure/active-directory/conditional-access/).

@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Abrechnungsbenachrichtigungen und Rechnungsanlagen
+title: Verwalten von Benachrichtigungen zur Abrechnung und Rechnungsanlagen
 f1.keywords:
 - CSH
 ms.author: cmcatee
@@ -19,14 +19,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie verwalten, wer Rechnungsbenachrichtigungs-E-Mails und Rechnungsanlagen empfängt.
-ms.openlocfilehash: f0811c5d027d042b5114c9e05c698dab1e08763b
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 8997a4d3ca575c60214adbedccc018e6768850cd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515223"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911854"
 ---
-# <a name="manage-billing-notifications-and-invoice-attachments"></a>Verwalten von Abrechnungsbenachrichtigungen und Rechnungsanlagen
+# <a name="manage-billing-notifications-and-invoice-attachments"></a>Verwalten von Benachrichtigungen zur Abrechnung und Rechnungsanlagen
 
 Auf **der Seite Abrechnungsbenachrichtigungen** können Sie verwalten, wer Rechnungsbenachrichtigungs-E-Mails für Ihre Organisation empfängt. Die Seite bietet auch die Möglichkeit, die Rechnungen Ihrer Organisation [als E-Mail-Anlagen zu empfangen.](#receive-your-organizations-invoices-as-email-attachments)
 
@@ -56,7 +56,7 @@ Die Abrechnungsbenachrichtigungen Ihrer Organisation werden an die primäre und 
 3. Wählen Sie im rechten Bereich auf der Registerkarte **Zugewiesene Administratoren** die Option **Hinzufügen aus.**
 4. Geben Sie im Bereich Administrator **hinzufügen** den Anzeigenamen oder Benutzernamen des Benutzers ein, und wählen Sie dann den Benutzer aus der Liste der Vorschläge aus.
 5. Fügen Sie mehrere Benutzer hinzu, bis Sie fertig sind.
-6. Klicken Sie auf **Speichern**. Der Benutzer wird der Liste der zugewiesenen Administratoren hinzugefügt.
+6. Wählen Sie **Speichern** aus. Der Benutzer wird der Liste der zugewiesenen Administratoren hinzugefügt.
 
 ### <a name="remove-admin-roles-by-using-the-billing-notifications-page"></a>Entfernen von Administratorrollen mithilfe der Seite Abrechnungsbenachrichtigungen
 
@@ -109,7 +109,7 @@ Abrechnungsbenachrichtigungs-E-Mails werden an die primären und alternativen E-
 - Mitwirkender des Abrechnungsprofils
 - Rechnungs-Manager
 
-Weitere Informationen zu Abrechnungsprofilrollen und deren Verwaltung finden Sie unter [Understand Microsoft Customer Agreement administrative roles in Azure](https://docs.microsoft.com/azure/cost-management-billing/manage/understand-mca-roles).
+Weitere Informationen zu Abrechnungsprofilrollen und deren Verwaltung finden Sie unter [Understand Microsoft Customer Agreement administrative roles in Azure](/azure/cost-management-billing/manage/understand-mca-roles).
 
 Um zu ändern, wer die Abrechnungsbenachrichtigungen Ihrer Organisation empfängt, verwenden Sie die folgenden Schritte, um die Den Benutzern zugewiesenen Rollen zu ändern.
 
@@ -127,6 +127,6 @@ Um Ihre Rechnungen als Anlagen zu Ihren Rechnungsbenachrichtigungen zu erhalten,
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md) oder Rechnung (Artikel)\
+[Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md) (Artikel)\
 [Verstehen Ihrer Rechnung oder Rechnung für Microsoft 365 Business](understand-your-invoice2.md) (Artikel)\
 [Hinzufügen von Benutzern und gleichzeitiges Zuweisen von Lizenzen](../../admin/add-users/add-users.md) (Artikel)

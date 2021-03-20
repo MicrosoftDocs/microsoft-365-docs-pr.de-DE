@@ -12,13 +12,13 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Hier erfahren Sie, wie Sie die Suche in einer Multi-Geo-Umgebung konfigurieren. Nur einige Clients, beispielsweise OneDrive für Unternehmen, können Ergebnisse in einer Multi-Geo-Umgebung zurückgeben.
-ms.openlocfilehash: e213e93cfbc967a723b4d27f4b36a83fe6687da9
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+description: Erfahren Sie, wie Sie die Suche in einer Multi-Geo-Umgebung konfigurieren. Nur einige Clients, z. B. OneDrive for Business, können Ergebnisse in einer Multi-Geo-Umgebung zurückgeben.
+ms.openlocfilehash: b3a96b1d0652cb954c58ae410583befa078460d9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547152"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911162"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Konfigurieren der Suche für Microsoft 365 Multi-Geo
 
@@ -84,12 +84,12 @@ Einige Suchfunktionen, die Sie möglicherweise bereits kennen, funktionieren in 
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Das dynamische Zuordnen von Buckets für numerische Einschränkungen wird von der Multi-Geo-Suche nicht unterstützt.</td>
-<td align="left">Verwenden Sie den <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">Parameter "Diskretisierung"</a> für numerische Einschränkungen.</td>
+<td align="left">Verwenden Sie <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">den Parameter "Discretize" für</a> numerische Einschränkungen.</td>
 </tr>
 <tr class="even">
 <td align="left">Dokument-IDs</td>
 <td align="left">Wenn Sie eine suchgesteuerte Anwendung entwickeln, die von Dokument-IDs abhängig ist, müssen Sie beachten, dass die Dokument-IDs in einer Multi-Geo-Umgebung nicht standortübergreifend eindeutig sind, sie sind jeweils pro Standort eindeutig.</td>
-<td align="left">Es wurde eine Spalte hinzugefügt, die den geografischen Standort identifiziert. Verwenden Sie diese Spalte, um Eindeutigkeit zu erreichen. Diese Spalte hat den Namen "GeoLocationSource".</td>
+<td align="left">Es wurde eine Spalte hinzugefügt, die den geografischen Standort identifiziert. Verwenden Sie diese Spalte, um Eindeutigkeit zu erreichen. Diese Spalte heißt "GeoLocationSource".</td>
 </tr>
 <tr class="odd">
 <td align="left">Anzahl der Ergebnisse</td>
@@ -98,7 +98,7 @@ Einige Suchfunktionen, die Sie möglicherweise bereits kennen, funktionieren in 
 </tr>
 <tr class="even">
 <td align="left">Hybridsuche</td>
-<td align="left">In einer SharePoint-Hybridumgebung mit <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">Cloudhybridsuche</a> werden lokale Inhalte dem Microsoft 365-Index des zentralen Standorts hinzugefügt.</td>
+<td align="left">In einer SharePoint-Hybridumgebung mit <a href="/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">Cloudhybridsuche</a> werden lokale Inhalte dem Microsoft 365-Index des zentralen Standorts hinzugefügt.</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -131,7 +131,7 @@ Einige Suchfunktionen, die Sie möglicherweise bereits kennen, werden in einer M
 
 Alle Suchclients verwenden die vorhandenen SharePoint-Suche-REST-APIs für die Interaktion mit den Suchindizes.
 
-![Diagramm, in dem gezeigt wird, wie SharePoint-Such Rest-APIs mit den Suchindizes interagieren](../media/configure-search-for-multi-geo-image1-1.png)
+![Diagramm, das zeigt, wie SharePoint-Such-REST-APIs mit den Suchindizes interagieren](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. Ein Suchclient ruft den REST-Endpunkt für die Suche mit der Abfrageeigenschaft „EnableMultiGeoSearch= true“ auf.
 2. Die Abfrage wird an alle geografischen Standorte im Mandanten gesendet.
@@ -151,11 +151,11 @@ Jedes Suchcenter verfügt über mehrere Suchsparten, und Sie müssen jede Sparte
 
 3. Wählen Sie die Sparte, die Sie einrichten möchten, klicken Sie in der oberen rechten Ecke auf das Zahnradsymbol für **Einstellungen**, und klicken Sie auf **Seite bearbeiten**. Die Seite mit den Suchergebnissen wird im Bearbeitungsmodus geöffnet.
 
-   ![Bearbeiten der Seitenauswahl in Einstellungen](../media/configure-search-for-multi-geo-image2.png)
+   ![Bearbeiten der Seitenauswahl in Den Einstellungen](../media/configure-search-for-multi-geo-image2.png)
 
 4. Bewegen Sie im Suchergebnisse-Webpart den Mauszeiger in die obere rechte Ecke des Webparts, klicken Sie auf den Pfeil, und klicken Sie dann im Menü auf **Webpart bearbeiten**. Der Toolbereich für das Suchergebnisse-Webpart wird unter dem Menüband oben rechts auf der Seite geöffnet.
 
-   ![Bearbeiten der Webparts-Auswahl](../media/configure-search-for-multi-geo-image3.png)
+   ![Bearbeiten der Web part-Auswahl](../media/configure-search-for-multi-geo-image3.png)
 
 5. Wählen Sie im Webpart-Toolbereich im Abschnitt **Einstellungen** unter **Einstellungen für das Ergebnissteuerelement** die Option **Multi-Geo-Ergebnisse anzeigen**, damit das Suchergebnisse-Webpart Ergebnisse von allen geografischen Standorten anzeigt.
 
@@ -168,11 +168,11 @@ Jedes Suchcenter verfügt über mehrere Suchsparten, und Sie müssen jede Sparte
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Anzeigen von Ergebnissen von allen oder einigen geografischen Standorten in benutzerdefinierten Suchanwendungen
 
-Benutzerdefinierte Anwendungen rufen Ergebnisse von allen oder einigen geografischen Standorten ab, indem Sie Abfrageparameter mit der Anforderung an die SharePoint-Suche-REST-API angeben. Je nach Abfrageparameter wird die Abfrage in alle geografischen Standorte oder in einige geografischen Standorte aufgefächert. Wenn nur einige geografischen Standorte abgefragt werden sollen, können Sie die Auffächerung nur für diese einschränken. Wenn die Anforderung erfolgreich ist, gibt die SharePoint-Suche-REST-API die Antwortdaten zurück.
+Benutzerdefinierte Suchanwendungen erhalten Ergebnisse aus allen oder einigen geografischen Speicherorten, indem Abfrageparameter mit der Anforderung an die Rest-API für die SharePoint-Suche angegeben werden. Abhängig von den Abfrageparametern wird die Abfrage an alle geografischen Speicherorte oder an einige geografische Standorte gefächert. Wenn Sie z. B. nur eine Teilmenge von geografischen Standorten abfragen müssen, um relevante Informationen zu finden, können Sie den Lüfter nur auf diese beschränken. Wenn die Anforderung erfolgreich ist, gibt die REST-API für die SharePoint-Suche Antwortdaten zurück.
 
 ### <a name="requirement"></a>Anforderung
 
-Sie müssen für jeden geografischen Standort sicherstellen, dass allen Benutzer in der Organisation die Berechtigungsstufe **Lesen** für die Stammwebsite erteilt wurde (z. B. contoso**APAC**.sharepoint.com/ und contoso**EU**.sharepoint.com/). [Weitere Informationen zu Berechtigungen](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
+Sie müssen für jeden geografischen Standort sicherstellen, dass allen Benutzer in der Organisation die Berechtigungsstufe **Lesen** für die Stammwebsite erteilt wurde (z. B. contoso **APAC**.sharepoint.com/ und contoso **EU**.sharepoint.com/). [Weitere Informationen zu Berechtigungen](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Abfrageparameter
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration – Dies ist eine optionale Liste mit geografischen 
 </tbody>
 </table>
 
-Wenn Sie DataLocation oder Endpunkt weglassen, oder wenn DataLocation doppelt vorhanden ist, tritt bei der Anforderung ein Fehler auf. [Informationen zu dem Endpunkt von geografischen Standorten eines Mandanten können Sie mithilfe von Microsoft Graph](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-discovery) abrufen.
+Wenn Sie DataLocation oder Endpunkt weglassen, oder wenn DataLocation doppelt vorhanden ist, tritt bei der Anforderung ein Fehler auf. [Informationen zu dem Endpunkt von geografischen Standorten eines Mandanten können Sie mithilfe von Microsoft Graph](/sharepoint/dev/solution-guidance/multigeo-discovery) abrufen.
 
 ### <a name="response-data"></a>Antwortdaten
 
@@ -253,11 +253,11 @@ Mit einer GET-Anforderung geben Sie die Abfrageparameter in der URL an. Mit eine
 
 #### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>Beispiel für eine GET-Anforderung, die für **alle** geografischen Standorte aufgefächert wird
 
-https:// \<tenant\> / \_ -API/Search/Query? querytext = ' SharePoint ' &Properties = ' EnableMultiGeoSearch: true ' &Clienttype = ' My \_ Client \_ ID '
+https:// \<tenant\> / \_ api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my \_ client \_ id'
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Beispiel für eine GET-Anforderung, die für **einige** geografischen Standorte aufgefächert wird
 
-https:// \<tenant\> / \_ -API/Search/Query? querytext = ' Website ' &Clienttype = ' my_client_id ' &Properties = ' EnableMultiGeoSearch: true, MultiGeoSearchConfiguration: [{DataLocation \\ : "Nam" \\ , EndPoint \\ : "HTTPS \\ ://contosoNAM.SharePoint.com", Source-Eigenschaft \\ \\ : "B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ , {DataLocation \\ : "Can" \\ , EndPoint \\ : "HTTPS \\ ://contosoCAN.SharePoint-DF.com"}] "
+https:// \<tenant\> / \_ api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation \\ :"NAM" \\ ,Endpoint \\ :"https \\ ://contosoNAM.sharepoint.com" \\ ,SourceId \\ :"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ ,{DataLocation \\ :"CAN" \\ ,Endpoint \\ :"https \\ ://contosoCAN.sharepoint-df.com"}]'
 
 > [!NOTE]
 > Kommas und Doppelpunkten in der Liste der geografischen Standorte für die Eigenschaft MultiGeoSearchConfiguration wird ein **umgekehrtes Schrägstrichzeichen** vorangestellt. Dies hat den Grund, dass in GET-Anforderungen Doppelpunkte zum Trennen von Eigenschaften und Kommas zum Trennen von Argumenten von Eigenschaften verwendet werden. Ohne den umgekehrten Schrägstrich als Escapezeichen würde die MultiGeoSearchConfiguration-Eigenschaft falsch interpretiert.

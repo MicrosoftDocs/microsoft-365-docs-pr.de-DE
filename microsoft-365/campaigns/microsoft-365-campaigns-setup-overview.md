@@ -25,32 +25,32 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Setupübersicht für Microsoft 365 Business Premium für Kampagnen oder andere Unternehmen
-ms.openlocfilehash: c3d5687453aeaa2d9ace66491e3a900113a69ed1
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: fee9391d7a6375f14f0e38f8c6a349fe4ec11619
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044252"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912106"
 ---
 # <a name="set-up-microsoft-365"></a>Einrichten von Microsoft 365
 
-In diesem Artikel wird das Einrichten von Microsoft 365 beschrieben. Jeder Benutzer mit Microsoft 365 Business Premium kann diesen Leitfaden verwenden, um die Sicherheit zu erhöhen.
+In diesem Artikel wird das Einrichten von Microsoft 365 beschrieben. Jeder Benutzer mit Microsoft 365 Business Premium kann diese Anleitung verwenden, um die Sicherheit zu erhöhen.
 
 ## <a name="admins-set-up-microsoft-365"></a>Administratoren: Einrichten von Microsoft 365
 
-Das folgende Diagramm beschreibt, wie Administratoren Microsoft 365 einrichten.
+Im folgenden Diagramm wird beschrieben, wie Administratoren Microsoft 365 einrichten.
 
 ![Schritte zum Einrichten von Microsoft 365](../media/M365-democracy-SetUpProcess.png)
 
-Für Kampagnen, die für Sonderpreise in Frage kommen, beginnen Sie, indem Sie eine Einladung von [Microsoft](https://m365forcampaigns.microsoft.com/)anfordern und sich dann für [Microsoft 365 für Kampagnen anmelden.](m365-campaigns-sign-up.md) Führen Sie zum Abschließen des [Setups den Setup-Assistenten aus,](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) um die Haupteinstellungen zu konfigurieren.
+Beginnen Sie bei Kampagnen, die für Sonderpreise gelten, indem Sie eine Einladung von [Microsoft](https://m365forcampaigns.microsoft.com/)anfordern und sich dann für [Microsoft 365 für Kampagnen anmelden.](m365-campaigns-sign-up.md) Führen Sie zum Abschließen des [Setups den Setup-Assistenten aus,](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) um die Haupteinstellungen zu konfigurieren.
 
-Nachdem Sie sich für [Microsoft 365 Business Premium](../business/sign-up.md)angemeldet haben, [](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) führen Sie die Einrichtung für alle anderen Organisationen aus, indem Sie den Setup-Assistenten ausführen, um die Haupteinstellungen zu konfigurieren.
+Für alle anderen Organisationen, nachdem Sie sich für [Microsoft 365 Business Premium](../business/sign-up.md)angemeldet haben, führen Sie das Setup durch Ausführen des Setup-Assistenten aus, um die Kerneinstellungen zu konfigurieren. [](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)
 
-Erhöhen Sie den Sicherheitsschutz für alle Organisationen, indem [Sie](m365-campaigns-protect-admin-accounts.md)Administratorkonten schützen, den Zugriff auf [E-Mails](m365-campaigns-conditional-access.md)und Daten schützen und den [Bedrohungsschutz erhöhen.](m365-campaigns-increase-protection.md)
+For all organizations, bump up security protection by: [protecting admin accounts,](m365-campaigns-protect-admin-accounts.md) [protecting access to mail and data,](m365-campaigns-conditional-access.md)and [increasing threat protection](m365-campaigns-increase-protection.md).
 
 ## <a name="everyone-set-up-your-devices"></a>Jeder: Einrichten Ihrer Geräte
 
-Die Einrichtung von Geräten für diese Umgebung dauert ein paar Minuten. Für Ihre wichtigsten Benutzer (die die wichtigsten Ziele für Hacker sind) können Sie neue Geräte einrichten und vorab konfigurieren. Dies hilft ihnen beim Einstieg, wenn sie sich mit ihren Microsoft 365-Anmeldeinformationen anmelden.
+Benutzer benötigen einige Minuten, um Geräte für die Arbeit mit dieser Umgebung einrichten zu können. Für Ihre wichtigsten Benutzer (die die höchsten Wertziele für Hacker sind) können Sie neue Geräte einrichten und vorkonfiguriert haben. Dies hilft ihnen, bei der Anmeldung mit ihren Microsoft 365-Anmeldeinformationen zu beginnen.
 
 ![Einrichtungsprozess für Benutzergeräte](../media/m365-democracy-user-device-setup.png)
   
@@ -58,11 +58,11 @@ So richten Sie Benutzergeräte ein:
 
 1. Jeder Benutzer [richtet seine mobilen Geräte ein.](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)
 2. Für nicht verwaltete Geräte richten Benutzer ihre [PCs und Macs ein.](m365-campaigns-protect-pcs-macs.md)
-Für wichtige Mitarbeiter wird empfohlen, [verwaltete](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) Geräte für noch besseren Schutz zu verwenden. Für alle Geräte sollten Sie die mehrstufige Authentifizierung [einrichten.](m365-campaigns-multifactor-authenication.md)
-3. Alle Benutzer sollten lernen, wie sie sich und Ihre Kampagne schützen können, indem sie mehr über [Phishing und andere Angriffe erfahren.](m365-campaigns-phishing-and-attacks.md) Diese [Infografik kann](m365-campaigns-protect-campaign-infographic.md) Ihren Benutzern auch helfen, zu verstehen, wie Sie Ihre Kampagne vor Onlinebedrohungen schützen können.
+Für wichtige Mitarbeiter wird empfohlen, [verwaltete](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) Geräte für einen noch besseren Schutz zu verwenden. Für alle Geräte möchten Sie die mehrstufige Authentifizierung [einrichten.](m365-campaigns-multifactor-authenication.md)
+3. Alle Benutzer sollten lernen, wie sie sich selbst und Ihre Kampagne schützen, indem sie mehr über [Phishing und andere Angriffe erfahren.](m365-campaigns-phishing-and-attacks.md) Diese [Infografik](m365-campaigns-protect-campaign-infographic.md) hilft Ihren Benutzern auch zu verstehen, wie Sie Ihre Kampagne vor Onlinebedrohungen schützen können.
 
-## <a name="contact-support"></a>wenden Sie sich an den Support,
+## <a name="contact-support"></a>Support kontaktieren
 
  **Wenn Sie den Support kontaktieren müssen:**
   
-Als Microsoft 365-Administrator haben Sie Zugriff auf unser Kundensupportteam, wenden Sie sich an den Support für **[Geschäftsprodukte - Administratorhilfe](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
+Als Microsoft 365-Administrator haben Sie Zugriff auf unser Kundensupportteam, **[Kontakt support for business products - Admin Help](../admin/contact-support-for-business-products.md)**

@@ -15,31 +15,31 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Wenn eine Depotbank einem erweiterten eDiscovery-Fall hinzugefügt wird, werden alle Inhalte, die als teilweise indiziert betrachtet wurden, erneut verarbeitet, damit Sie vollständig durchsuchbar sind.
-ms.openlocfilehash: 908d01cacc103639e1f9efe965240c33a5296ba9
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+description: Wenn einem Advanced eDiscovery-Fall ein Verwahrer hinzugefügt wird, werden alle Inhalte, die als teilweise indiziert betrachtet wurden, erneut verarbeitet, um sie vollständig durchsuchbar zu machen.
+ms.openlocfilehash: 904c8fe626ce8ece8f4b48bd5504e4011e9f4fb2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750756"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911209"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Erweiterte Indizierung der Daten von Verwaltungsberechtigten
 
-Wenn eine Depotbank einem erweiterten eDiscovery-Fall hinzugefügt wird, werden alle Inhalte, die als teilweise indiziert betrachtet wurden, erneut verarbeitet, damit Sie vollständig durchsuchbar sind.  Dieser Vorgang wird als *Erweiterte Indizierung* bezeichnet. Inhalt kann teilweise aus einer Reihe von Gründen indiziert werden, einschließlich des Vorhandenseins von Bildern, nicht unterstützten Dateitypen oder beim Indizieren von Dateigrößenbeschränkungen.
+Wenn einem Advanced eDiscovery-Fall ein Verwahrer hinzugefügt wird, werden alle Inhalte, die als teilweise indiziert betrachtet wurden, erneut verarbeitet, um sie vollständig durchsuchbar zu machen.  Dieser Prozess wird als *Erweiterte Indizierung bezeichnet.* Inhalte können aus einer Reihe von Gründen teilweise indiziert werden, z. B. aus dem Vorhandensein von Bildern, nicht unterstützten Dateitypen oder beim Indizierung von Dateigrößenbeschränkungen.
 
-Weitere Informationen zur Verarbeitung von Unterstützung und teilweise indizierten Elementen finden Sie unter:
+Weitere Informationen zur Verarbeitung von Support und teilweise indizierten Elementen finden Sie unter:
 
 - [Unterstützte Dateitypen in Advanced eDiscovery](supported-filetypes-ediscovery20.md)
 
 - [Teilweise indizierte Elemente in der Inhaltssuche in Office 365](partially-indexed-items-in-content-search.md)
 
-- [Von der Exchange-Suche indizierte Dateiformate](https://docs.microsoft.com/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+- [Von der Exchange-Suche indizierte Dateiformate](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
-- [Standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- [Standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
-## <a name="viewing-advanced-indexing-results"></a>Anzeigen erweiterter Indizierungs Ergebnisse
+## <a name="viewing-advanced-indexing-results"></a>Anzeigen erweiterter Indizierungsergebnisse
 
-Nachdem der erweiterte Indizierungsprozess abgeschlossen ist, können Sie ein Verständnis der Effektivität der erneuten Verarbeitung erhalten.  In der Ansicht Erweiterte Indizierungs Ergebnisse auf der Registerkarte **Verarbeitung** für einen Fall wird im Diagramm die Anzahl der Elemente aufgeführt, die dem *Hybrid Index* hinzugefügt werden.  Der Hybrid Index ist der Ort, an dem Advanced eDiscovery die wiederaufgearbeiteten Inhalte speichert.
+Nachdem der Erweiterte Indizierungsprozess abgeschlossen ist, können Sie sich ein Verständnis der Effektivität der Neuverarbeitung machen.  In der Ansicht Erweiterte Indizierungsergebnisse auf der Registerkarte **Verarbeitung** für einen Fall listet das Diagramm die Anzahl der Elemente auf, die dem *Hybridindex hinzugefügt wurden.*  Im Hybridindex speichert Advanced eDiscovery den erneut verarbeiteten Inhalt.
 
 Diese Ansicht enthält auch die Anzahl der Elemente, die eine Korrektur erfordern, und ein weiteres Diagramm mit Fehlern nach Dateityp. Weitere Informationen finden Sie unter:
 
@@ -47,9 +47,9 @@ Diese Ansicht enthält auch die Anzahl der Elemente, die eine Korrektur erforder
 
 - [Korrektur von Fehlern einzelner Elemente](single-item-error-remediation.md)
 
-## <a name="updating-the-advanced-index-for-custodians"></a>Aktualisieren des erweiterten Index für depotverwalter
+## <a name="updating-the-advanced-index-for-custodians"></a>Aktualisieren des erweiterten Indexes für Verwahrer
 
-Wenn eine Depotstelle einem erweiterten eDiscovery-Fall hinzugefügt wird, werden alle teilweise indizierten Elemente neu verarbeitet. Im Laufe der Zeit werden dem Postfach eines Benutzers oder dem OneDrive-Konto jedoch möglicherweise mehr teilweise indizierte Elemente hinzugefügt.  Bei Bedarf können Sie den Index für eine bestimmte Depotbank aktualisieren. Weitere Informationen finden Sie unter [Manage depotbanks in a Advanced eDiscovery Case](manage-new-custodians.md#re-index-custodian-data). Sie können den Index für alle Verwalter in einem Fall auch aktualisieren, indem Sie auf der Registerkarte **Verarbeitung** auf den **Index aktualisieren** klicken.
+Wenn einem Advanced eDiscovery-Fall ein Verwahrer hinzugefügt wird, werden alle teilweise indizierten Elemente erneut verarbeitet. Im Weiteren können jedoch dem Postfach oder #A0 eines Benutzers teilweise indizierte Elemente hinzugefügt werden.  Bei Bedarf können Sie den Index für bestimmte Verwahrer aktualisieren. Weitere Informationen finden Sie [unter Manage custodians in an Advanced eDiscovery case](manage-new-custodians.md#re-index-custodian-data). Sie können den Index auch für alle Custodians in einem Fall aktualisieren, indem Sie auf der Registerkarte Verarbeitung auf den **Index** Aktualisieren **klicken.**
 
 > [!NOTE]
-> Das Aktualisieren von Depot Indizes ist ein langwieriger Prozess. Es wird empfohlen, dass Sie Indizes nicht mehr als einmal pro Tag in einem Fall aktualisieren.
+> Das Aktualisieren von Indizes für Custodian ist ein langer Prozess. Es wird empfohlen, Indizes in einem Fall nicht mehr als einmal täglich zu aktualisieren.

@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Ihre Rechnung für Microsoft Business-Produkte lesen und verstehen können.
 keywords: Abrechnungskonten, Unternehmensinformationen, Rechnungen
-ms.openlocfilehash: 521ef49e7f2292f8ea09210fb0edcce0d56e1b76
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
-ms.translationtype: HT
+ms.openlocfilehash: 2b11cca810b17ae2dacc3ddab723725608ffceb5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126573"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911698"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Erläuterungen zu Ihrer Rechnung
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -60,13 +60,13 @@ Die **Abrechnungszusammenfassung** zeigt die Zusammenfassung der Belastungen sei
 | --- | --- |
 | Belastungen|Gesamtzahl der in dieser Abrechnungsperiode gekauften Produkte und deren zugehörige Belastungen und Steuern. Einkäufe sind zusammengefasst, um eine übersichtliche Ansicht Ihrer Abrechnung zu ermöglichen. |
 | Gutschriften |Gutschriften, die Sie aus Rücksendungen erhalten haben |
-| Angewendete Azure-Gutschriften |Ihre Azure-Gutschriften, die in jeder Abrechnungsperiode automatisch gegen Azure-Belastungen angewendet werden. Wenn Sie keine Azure-Gutschriften haben, dann ist dieses Feld ausgeblendet. Weiter Informationen über Azure-Gutschriften finden Sie unter [Verfolgen des Azure-Guthabens der Microsoft-Kundenvereinbarung](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance). |
+| Angewendete Azure-Gutschriften |Ihre Azure-Gutschriften, die in jeder Abrechnungsperiode automatisch gegen Azure-Belastungen angewendet werden. Wenn Sie keine Azure-Gutschriften haben, dann ist dieses Feld ausgeblendet. Weiter Informationen über Azure-Gutschriften finden Sie unter [Verfolgen des Azure-Guthabens der Microsoft-Kundenvereinbarung](/azure/billing/billing-mca-check-azure-credits-balance). |
 | Zwischensumme |Der fällige Betrag vor Steuern |
 | Steuern |Die Art und der Betrag der Steuern, die Sie bezahlen müssen, abhängig vom Land in Ihrem Abrechnungsprofil. Wenn Sie keine Steuern bezahlen müssen, dann wird die Steuer auf Ihrer Rechnung nicht angezeigt. |
 
 ### <a name="understand-your-charges"></a>Erläuterung zu Ihren Belastungen
 
-Die Seite mit den Belastungen zeigt die Kosten, aufgeschlüsselt nach Produkt. Für Azure-Kunden können die Belastungen nach Rechnungsabschnitt gegliedert sein. Weiter Informationen darüber, wie Rechnungsabschnitte mit Azure-Produkten verwendet werden, finden Sie unter [Rechnungsabschnitte](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections) im Bereich [Erste Schritte mit Ihrem Abrechnungskonto der Microsoft-Kundenvereinbarung](https://docs.microsoft.com/azure/billing/billing-mca-overview). Innerhalb jeder Produktbestellung sind die Kosten nach Dienstfamilie aufgeschlüsselt.
+Die Seite mit den Belastungen zeigt die Kosten, aufgeschlüsselt nach Produkt. Für Azure-Kunden können die Belastungen nach Rechnungsabschnitt gegliedert sein. Weiter Informationen darüber, wie Rechnungsabschnitte mit Azure-Produkten verwendet werden, finden Sie unter [Rechnungsabschnitte](/azure/billing/billing-mca-overview#invoice-sections) im Bereich [Erste Schritte mit Ihrem Abrechnungskonto der Microsoft-Kundenvereinbarung](/azure/billing/billing-mca-overview). Innerhalb jeder Produktbestellung sind die Kosten nach Dienstfamilie aufgeschlüsselt.
 
 | Ausdruck |Beschreibung |
 | --- | --- |
@@ -86,7 +86,7 @@ Der fällige Gesamtbetrag für jede Dienstfamilie wird berechnet, indem die Azur
 
 > Gesamt = Belastungen/Gutschriften – Azure-Gutschrift + Steuern
 
-Wenn Sie Azure-Belastungen auf Ihrer Rechnung finden, zu denen Sie mehr Details erfahren möchten, dann lesen Sie [Die Rechnung Ihrer Microsoft-Kundenvereinbarung überprüfen](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
+Wenn Sie Azure-Belastungen auf Ihrer Rechnung finden, zu denen Sie mehr Details erfahren möchten, dann lesen Sie [Die Rechnung Ihrer Microsoft-Kundenvereinbarung überprüfen](/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
 ## <a name="understand-the-last-invoice-page"></a>Erläuterungen zur letzten Seite der Rechnung
 

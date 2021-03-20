@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Onlinebesprechungen für Ihr Unternehmen hosten.
-ms.openlocfilehash: 18a142700e8b83545219ddabf17be7d562037140
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 85163990d65126cc3d9d6c11627e63aa975b2924
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422315"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913610"
 ---
 # <a name="host-online-meetings-for-your-business"></a>Hosten von Onlinebesprechungen für Ihr Unternehmen
 
@@ -75,7 +75,7 @@ Benötigen Sie ein wenig Hilfe? Weitere [Informationen finden Sie unter Starten 
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Besprechungen in Microsoft Teams](https://docs.microsoft.com/microsoftteams/tutorial-meetings-in-teams)
+[Besprechungen in Microsoft Teams](/microsoftteams/tutorial-meetings-in-teams)
 
 [6 Möglichkeiten, virtuelle Besprechungen effizienter zu gestalten](https://products.office.com/en-us/business/articles/6-ways-to-make-virtual-meetings-more-efficient)
 

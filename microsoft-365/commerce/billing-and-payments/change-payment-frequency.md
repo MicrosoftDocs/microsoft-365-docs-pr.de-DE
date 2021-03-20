@@ -20,26 +20,26 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Erfahren Sie, wie Sie ändern können, wie häufig Für Ihr Geschäftsabonnement eine Rechnung gestellt wird.
-ms.openlocfilehash: 77d2e72b7b315f223cc6ab7faf3e53f8354218ae
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: Erfahren Sie, wie Sie ändern können, wie oft Sie für Ihr Geschäftsabonnement in Rechnung gestellt werden.
+ms.openlocfilehash: ae3e3b4d0231fc5992215d243e141fb643d13626
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114883"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911890"
 ---
 # <a name="change-your-billing-frequency"></a>Ändern der Abrechnungshäufigkeit
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
-Wenn Sie ein Abonnement kaufen, wählen Sie die monatliche oder jährliche Abrechnung aus. Um zu ändern, wie oft Ihnen ein Abonnement abgerechnet wird, verwenden Sie die folgenden Schritte.
+Wenn Sie ein Abonnement kaufen, wählen Sie monatliche oder jährliche Abrechnung aus. Verwenden Sie die folgenden Schritte, um zu ändern, wie oft Ihnen ein Abonnement in Rechnung zu stehen kommt.
 
-1. Wechseln Sie im Admin Center zur **Seite** "Abrechnung \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihrer Produkte".</a>
+1. Wechseln Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte.</a>
 2. Wählen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie ändern möchten.
-3. Wählen Sie auf der Seite mit den Abonnementdetails im Abschnitt **"Abonnement-** und Zahlungseinstellungen" die Option **"Abrechnungshäufigkeit bearbeiten" aus.**
-4. Wählen Sie **im Bereich "Abrechnungshäufigkeit** bearbeiten" die Option aus, wie oft Eine Rechnung abgerechnet werden soll, und wählen Sie dann **"Ändern" aus.**
+3. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Abonnement- und** Zahlungseinstellungen die Option **Abrechnungshäufigkeit bearbeiten aus.**
+4. Wählen Sie **im Bereich Abrechnungshäufigkeit** bearbeiten die Option für die Häufigkeit der Abrechnung aus, und wählen Sie dann **Ändern aus.**

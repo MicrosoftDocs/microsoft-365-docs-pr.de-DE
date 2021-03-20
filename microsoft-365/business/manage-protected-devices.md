@@ -27,17 +27,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
-description: Hier erfahren Sie, wie Sie Unternehmensdaten von Geräten entfernen, die über Schutzrichtlinien verwaltet werden, sowie Windows 10-Geräte auf die Werkseinstellungen zurücksetzen.
-ms.openlocfilehash: 88311a2cf08ee0b1ceb4ef3eb599efe5ebccdb05
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+description: Erfahren Sie, wie Sie Unternehmensdaten von Geräten entfernen, die über Schutzrichtlinien verwaltet werden, und windows 10-Geräte auf ihre Werkseinstellungen zurücksetzen.
+ms.openlocfilehash: 8c5472eada4cded3a6869c031ab902928876095f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101619"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913212"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Verwalten geschützter Geräte mit Microsoft 365 Business Premium
 
-Wenn ein Benutzer sein Gerät mit Ihrer Organisation verbindet, indem er sich mit seinem Geschäftskonto auf dem Gerät oder für Office-Apps auf dem Gerät angemeldet hat, können Sie das Gerät mit den Richtlinien schützen, die Sie eingerichtet haben. Verbundene Geräte werden auf der Seite **Geräte** aufgeführt. Wenn ein Gerät nun verloren geht oder gestohlen wird, können Sie es über diese Seite verwalten, um alle Unternehmensdaten zu entfernen. Sie können Windows 10-Geräte auch auf die Werkseinstellungen zurücksetzen, um alle benutzerdefinierten Einstellungen zu löschen. 
+Nachdem ein Benutzer sein Gerät mit Ihrer Organisation verbindet, indem er sich mit seinem Geschäftskonto beim Gerät oder bei Office-Apps auf dem Gerät einschreibt, können Sie das Gerät mit den von Ihnen eingerichteten Richtlinien schützen. Verbundene Geräte werden auf der Seite **Geräte** aufgeführt. Wenn ein Gerät nun verloren geht oder gestohlen wird, können Sie es über diese Seite verwalten, um alle Unternehmensdaten zu entfernen. Sie können Windows 10-Geräte auch auf die Werkseinstellungen zurücksetzen, um alle benutzerdefinierten Einstellungen zu löschen. 
 
 Weitere Informationen zu den Aufgaben, die Sie zum Verwalten von Geräten verwenden können, finden Sie in den folgenden Artikeln: 
   
@@ -45,6 +45,4 @@ Weitere Informationen zu den Aufgaben, die Sie zum Verwalten von Geräten verwen
   
 [Zurücksetzen von Windows 10-Geräten auf die Werkseinstellungen](reset-devices-to-factory-settings.md)
 
-[Hinzufügen eines verwalteten Geräts](https://docs.microsoft.com/microsoft-365/business/app-protection-settings-for-android-and-ios)
-  
-
+[Hinzufügen eines verwalteten Geräts](./app-protection-settings-for-android-and-ios.md)

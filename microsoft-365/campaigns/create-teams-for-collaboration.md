@@ -22,17 +22,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erstellen Sie mit Microsoft Teams einen Bereich für die Zusammenarbeit für Ihr Team.
-ms.openlocfilehash: b30bf495dfbf6d510eab9a7d783d343d6b9476a6
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+description: Erstellen Sie einen Raum für die Zusammenarbeit für Ihr Team mit Microsoft Teams.
+ms.openlocfilehash: ddce111b758fcbd4840ca3493601779690684eeb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044683"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912222"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Erstellen von Teams für die Zusammenarbeit in Microsoft Teams
 
-Microsoft Teams ist eine App für die Zusammenarbeit, mit der Ihre Mitarbeiter auf jedem Gerät organisiert bleiben und Unterhaltungen führen können. Sie können Microsoft Teams verwenden, um Sofortunterhaltungen mit Mitarbeitern oder Gästen außerhalb Ihrer Organisation zu führen. Sie können auch Telefonanrufe machen, Besprechungen hosten und Dateien freigeben.
+Microsoft Teams ist eine App für die Zusammenarbeit, mit der Ihre Mitarbeiter auf jedem Gerät organisiert bleiben und Unterhaltungen führen können. Sie können Microsoft Teams verwenden, um Sofortunterhaltungen mit Mitarbeitern oder Gästen außerhalb Ihrer Organisation zu führen. Sie können auch telefonieren, Besprechungen hosten und Dateien freigeben.
 
 ## <a name="best-practices"></a>Bewährte Methoden
 
@@ -41,36 +41,36 @@ Microsoft Teams ist eine App für die Zusammenarbeit, mit der Ihre Mitarbeiter a
 1. Erstellen Sie Teams für bestimmte Projekte, und wenden Sie den richtigen Schutz basierend darauf an, wer einbezogen werden soll.
 1. Erstellen Sie bestimmte Teams für die Kommunikation mit externen Partnern, um sie von allen vertraulichen Informationen für Ihr Unternehmen zu trennen.
 
-Beispielsweise könnten in einer Geschäfts-, Rechts- oder Gesundheitspraxis die folgenden Teams erstellt werden:
+Beispielsweise könnten eine Geschäfts-, Rechts- oder Gesundheitspraxis die folgenden Teams erstellen:
 
-1. **Ein unternehmens-, firmen- oder praxisweites Team:** Dies ist für alle für die täglichen Kommunikationen und die Arbeit in Ihrem Unternehmen geeignet. Sie können dieses Team verwenden, um Ankündigungen zu veröffentlichen oder Informationen zu teilen, die für Ihre gesamte Firma oder Praxis von Interesse sind.
+1. **Ein unternehmens-, firmen- oder praxisweites Team:** Dies ist für alle für die täglichen Kommunikationen und die Arbeit in Ihrem Unternehmen zu verwenden. Sie können dieses Team verwenden, um Ankündigungen zu veröffentlichen oder Informationen zu teilen, die für Ihre gesamte Firma oder Praxis von Interesse sind.
 1. **Einzelne Teams:** Richten Sie Teams für kleinere Gruppen ein, um über ihre täglichen Arbeit zusammenzuarbeiten.
-1. **Ein externes Kommunikationsteam oder Teams:** Stimmen Sie sich mit Ihren Lieferanten, Partnern oder Kunden ab, ohne dass sie vertraulich sind. Richten Sie unterschiedliche Kanäle für bestimmte Gruppen ein.
+1. **Ein externes Kommunikationsteam oder -teams:** Koordinieren Sie sich mit Ihren Lieferanten, Partnern oder Clients, ohne dass diese vertraulich sind. Richten Sie unterschiedliche Kanäle für bestimmte Gruppen ein.
 
 ![Diagramm eines Microsoft Teams-Fensters mit drei separaten Teams, um eine sichere Kommunikation und Zusammenarbeit innerhalb eines Unternehmens zu ermöglichen](../media/m365-democracy-teams-business-collab.png)
 
 Und Kampagnen könnten die folgenden Teams erstellen, um sicher zu kommunizieren und zusammenzuarbeiten:
 
 1. **Ein Kampagnen-Leads-Team:** Richten Sie dies als privates Team ein, damit nur Ihre wichtigsten Kampagnenmitglieder darauf zugreifen und potenziell vertrauliche Bedenken besprechen können.
-2. **Ein allgemeines Kampagnenteam:** Dies ist für alle für die täglichen Kommunikation und Arbeit zu verwenden. Einzelpersonen, Gruppen oder Verbände können Kanäle in diesem Team einrichten, um ihre Arbeit zu tun. Beispielsweise kann die Ereignisplanung einen Kanal einrichten, um zu chatten und die Transportsicherheit für Kampagnenereignisse zu koordinieren.
-3. **Ein Partnerteam:** Stimmen Sie sich mit Ihren Lieferanten, Partnern oder Freiwilligen ab, ohne ihnen etwas Sensibles zu erlauben.
+2. **Ein allgemeines Kampagnenteam:** Dies ist für alle für die täglichen Kommunikation und Arbeit zu verwenden. Einzelpersonen, Gruppen oder Komitees können Kanäle in diesem Team einrichten, um ihre Arbeit zu tun. Die Ereignisplanungs-Personen können beispielsweise einen Kanal zum Chat einrichten und die Logistik für Kampagnenereignisse koordinieren.
+3. **Ein Partnerteam:** Koordinieren Sie sich mit Ihren Lieferanten, Partnern oder Freiwilligen, ohne dass sie in etwas Vertrauliches eingewilligt werden.
 
 ![Diagramm eines Microsoft Teams-Fensters mit drei separaten Teams, um eine sichere Kommunikation und Zusammenarbeit innerhalb einer Kampagne zu ermöglichen](../media/m365-democracy-teams-collab.png)
 
-Wenn Sie ein Team erstellen, wird hier noch etwas anderes erstellt:
+Wenn Sie ein Team erstellen, wird hier das, was sonst erstellt wird:
 
-- Eine neue [Microsoft 365-Gruppe](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
-- Eine [SharePoint Online-Website](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact) und -Dokumentbibliothek zum Speichern von Teamdateien
-- Ein [freigegebenes Exchange Online-Postfach](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact) und -Kalender
+- Eine neue [Microsoft 365-Gruppe](/MicrosoftTeams/office-365-groups)
+- Eine [SharePoint Online-Website](/MicrosoftTeams/sharepoint-onedrive-interact) und Dokumentbibliothek zum Speichern von Teamdateien
+- Ein [freigegebenes Exchange Online-Postfach](/MicrosoftTeams/exchange-teams-interact) und -Kalender
 - Ein OneNote-Notizbuch
 - Verbindungen zu anderen Office 365-Apps wie Planner und Power BI
 
 In Microsoft Teams finden Sie:
 
-1. **Teams:** Suchen Sie Kanäle, zu denen Sie gehören möchten, oder erstellen Sie eigene Kanäle. Innerhalb von Kanälen können Sie Vor-Ort-Besprechungen halten, Unterhaltungen führen und Dateien freigeben.
+1. **Teams:** Suchen Sie Nach Kanälen, zu denen Sie gehören möchten, oder erstellen Sie eigene Kanäle. Innerhalb von Kanälen können Sie Besprechungen vor Ort halten, Unterhaltungen führen und Dateien freigeben.
 2. **Besprechungen:** Sehen Sie sich alles an, was Sie für den Tag oder die Woche eingerichtet haben. Oder planen Sie eine Besprechung. Dieser Kalender wird mit Ihrem Outlook-Kalender synchronisiert.
-3. **Anrufe:** In einigen Fällen können Sie, wenn Ihre Organisation sie eingerichtet hat, alle Benutzer aus Microsoft Teams anrufen, auch wenn sie Microsoft Teams nicht verwenden.
-4. **Aktivität:** Holen Sie alle Ungelesenen Nachrichten, @mentions, Antworten und vieles mehr nach.
+3. **Anrufe:** Wenn Ihre Organisation eingerichtet ist, können Sie in einigen Fällen jeden von Microsoft Teams anrufen, auch wenn microsoft Teams nicht verwendet wird.
+4. **Aktivität:** Holen Sie all Ihre ungelesenen Nachrichten, @mentions, Antworten und vieles mehr nach.
 
 Verwenden Sie das Befehlsfeld oben, um nach bestimmten Elementen oder Personen zu suchen, schnelle Aktionen zu ergreifen und Apps zu starten.
 
@@ -80,7 +80,7 @@ Erstellen Sie ein privates Team nur für den Geschäftsbesitzer und manager oder
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeqWA]
 
-Erstellen Sie ein organisationsweites Team, das jeder im Unternehmen oder in der Kampagne zum Kommunizieren und Freigeben von Dateien verwenden kann.
+Erstellen Sie ein organisationsweites Team, mit dem alle Mitarbeiter des Unternehmens oder der Kampagne kommunizieren und Dateien freigeben können.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9]
 
@@ -88,8 +88,8 @@ Erstellen Sie ein Team, das Sie mit Gästen außerhalb Ihrer Organisation teilen
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-Weitere Informationen zu Microsoft Teams finden Sie in [der technischen Dokumentation zu Microsoft Teams.](https://docs.microsoft.com/microsoftteams/microsoft-teams)
+Weitere Informationen zu Microsoft Teams finden Sie in [der technischen Dokumentation zu Microsoft Teams](/microsoftteams/microsoft-teams)
 
 ## <a name="admin-settings"></a>Administratoreinstellungen
 
-Sie müssen Administrator sein, um ein organisationsweites Team zu erstellen. Weitere Informationen finden Sie unter [Was ist ein Administrator in Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)
+Sie müssen ein Administrator sein, um ein organisationsweites Team zu erstellen. Weitere Informationen finden Sie unter [Was ist ein Administrator in Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).

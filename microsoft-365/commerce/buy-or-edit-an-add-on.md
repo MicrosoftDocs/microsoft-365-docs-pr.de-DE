@@ -19,19 +19,19 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - Commerce
-ms.openlocfilehash: 22868021fec978f8f55c47adca82438f1ae51029
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: ea9cdb6edf3aaac1575b1d2b14790bd28876ee26
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405864"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911643"
 ---
 # <a name="buy-or-manage-add-ons"></a>Kaufen oder Verwalten von Add-Ons 
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -50,7 +50,7 @@ Sie müssen ein Global- oder Billing-Administrator sein, um die in diesem Artike
 
 Verwenden Sie die folgenden Schritte, um Add-Ons zu finden und zu kaufen. Die Liste enthält nur Add-Ons, die Ihnen zur Verfügung stehen. Diese Liste basiert auf Ihren derzeit aktiven Abonnements und allen anderen vorhandenen Add-Ons, die Sie bereits haben. Wenn ein Add-On nicht in der Liste enthalten ist, steht es nicht zum Kauf zur Verfügung.
 
-Informationen zu Skype for Business-Add-Ons finden Sie unter [Skype for Business- und Microsoft Teams-Add-On-Lizenzierung](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
+Informationen zu Skype for Business-Add-Ons finden Sie unter [Skype for Business- und Microsoft Teams-Add-On-Lizenzierung](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
 
 1. Wechseln Sie im Admin  Center zur Seite \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Abrechnungskaufdienste.</a>
 2. Suchen Sie unten auf **der** Seite Dienste kaufen im Abschnitt **Add-Ons** nach dem Add-On, das Sie kaufen möchten, und wählen Sie **Details aus.**

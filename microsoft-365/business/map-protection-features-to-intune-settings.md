@@ -1,5 +1,5 @@
 ---
-title: Vorgehensweise Zuordnen von Schutzfunktionen in Microsoft 365 Business Premium zu InTune-Einstellungen
+title: Wie werden Schutzfunktionen in Microsoft 365 Business Premium den Intune-Einstellungen zugewiesen?
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -25,27 +25,27 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
-description: In diesem Artikel erfahren Sie, wie die Schutzfunktionen in Microsoft 365 Business Premium InTune-Einstellungen zugeordnet werden. Das Abonnement bietet Ihnen eine Lizenz zum Ändern von InTune-Einstellungen.
-ms.openlocfilehash: ce75073f748f6005a843e31f7c38d06b38a3c706
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Erfahren Sie, wie Schutzfunktionen in Microsoft 365 Business Premium intune-Einstellungen zuordnungen. Mit dem Abonnement erhalten Sie eine Lizenz zum Ändern von Intune-Einstellungen.
+ms.openlocfilehash: 5e8a7aa570b0f56324a483fb2cdb77c19f3b2379
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401576"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913020"
 ---
-# <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Vorgehensweise Zuordnen von Schutzfunktionen in Microsoft 365 Business Premium zu InTune-Einstellungen
+# <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Wie werden Schutzfunktionen in Microsoft 365 Business Premium den Intune-Einstellungen zugewiesen?
 
 ## <a name="android-and-ios-application-protection-settings"></a>Schutzeinstellungen für Android- und iOS-Anwendungen
 
 In der folgenden Tabelle ist die Zuordnung von Android- und iOS-Einstellungen der Anwendungsschutzrichtlinie zu Intune-Einstellungen detailliert ausgeführt.
   
-Um die Intune-Einstellung zu finden, melden Sie sich mit Ihren Microsoft 365 Business Premium-Administratoranmeldeinformationen an, und wechseln Sie zu **Admin Center**und dann zu **InTune**.
+Um die Intune-Einstellung zu finden, melden Sie sich mit Ihren Microsoft 365 Business Premium-Administratoranmeldeinformationen an, und wechseln Sie zu **Admin Center** und dann **zu Intune**.
   
  > [!IMPORTANT]
  > 
- > Ein Microsoft 365 Business Premium-Abonnement bietet Ihnen eine Lizenz zum Ändern aller InTune-Einstellungen. [Die ersten Schritte finden Sie unter Einführung in InTune.](https://docs.microsoft.com/intune/introduction-intune)
+ > Mit einem Microsoft 365 Business Premium-Abonnement erhalten Sie eine Lizenz zum Ändern aller Intune-Einstellungen. Erste [Schritte finden Sie unter Einführung in Intune.](/intune/introduction-intune)
   
-Wählen Sie den gewünschten Richtliniennamen &mdash; aus, beispielsweise Anwendungsrichtlinie für Android, &mdash; und wählen Sie dann **Richtlinieneinstellungen**aus.
+Wählen Sie den richtliniennamen, den Sie z. B. Anwendungsrichtlinie für Android verwenden &mdash; &mdash; möchten, und wählen Sie dann **Richtlinieneinstellungen aus.**
   
 Unter **Arbeitsdateien schützen, wenn Geräte verloren gehen oder gestohlen werden**
   
@@ -64,29 +64,29 @@ Unter **Benutzerzugriff auf Office-Dateien auf mobilen Geräten verwalten**
 |Arbeitsdateien verschlüsseln  <br/> |App-Daten verschlüsseln  <br/> |
 |Unter **Benutzerzugriff auf Office-Dateien auf mobilen Geräten verwalten** <br/> ||
 |Für den Zugriff auf Office-Apps PIN bzw. digitalen Fingerabdruck anfordern  <br/> | PIN für Zugriff anfordern  <br/>  Dadurch werden zugleich diese Einstellungen festgelegt:  <br/> **Einfache PIN zulassen** auf **Ja** <br/> **PIN-Länge** auf 4  <br/> **Fingerabdruck anstelle von PIN zulassen** auf **Ja** <br/> **App PIN deaktivieren, wenn Geräte-PIN verwaltet wird** auf **Nein** <br/> |
-|PIN zurücksetzen, wenn die Anmeldung mehrmals fehlschlägt (Dies ist deaktiviert, wenn keine PIN erforderlich ist)  <br/> |Anzahl der Versuche vor dem Zurücksetzen der PIN  <br/> |
-|Benutzer müssen sich erneut anmelden, nachdem Office-Apps im Leerlauf waren (Dies ist deaktiviert, wenn keine PIN erforderlich ist)  <br/> | Zugriffsanforderungen nach (Minuten) erneut überprüfen  <br/>  Dadurch werden zugleich diese Einstellungen festgelegt:  <br/> **Timeout** wird auf Minuten festgelegt  <br/>  Die Anzahl Minuten entspricht der Einstellung in Microsoft 365 Business.  <br/> **Offline-Toleranzperiode** ist standardmäßig auf 720 Minuten festgelegt  <br/> |
+|Pin zurücksetzen, wenn die Anmeldung so oft fehlschlägt (dies ist deaktiviert, wenn keine PIN erforderlich ist)  <br/> |Anzahl der Versuche vor dem Zurücksetzen der PIN  <br/> |
+|Benutzer müssen sich erneut anmelden, nachdem sich Office-Apps im Leerlauf befinden (dies ist deaktiviert, wenn keine PIN erforderlich ist)  <br/> | Zugriffsanforderungen nach (Minuten) erneut überprüfen  <br/>  Dadurch werden zugleich diese Einstellungen festgelegt:  <br/> **Timeout** wird auf Minuten festgelegt  <br/>  Die Anzahl Minuten entspricht der Einstellung in Microsoft 365 Business.  <br/> **Offline-Toleranzperiode** ist standardmäßig auf 720 Minuten festgelegt  <br/> |
 |Zugriff auf Arbeitsdateien auf Geräten mit entfernten Nutzungsbeschränkungen verweigern  <br/> |Ausführen verwalteter Apps auf Geräten mit Jailbreak oder Rootzugriff blockieren  <br/> |
-|Benutzern das Kopieren von Inhalten aus Office-Apps in persönliche Apps erlauben  <br/> | Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken  <br/>  Wenn die Microsoft 365 Business Premium-Option auf " **ein**" festgelegt ist, werden diese drei Optionen auch auf **alle apps** in InTune festgelegt:  <br/> **Zulassen, dass die App Daten an andere Apps überträgt** <br/> **Zulassen, dass die App Daten von anderen Apps empfängt** <br/> **Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken** <br/>  Wenn die Option Microsoft 365 Business auf **Ein** festgelegt ist, werden alle Intune-Optionen wie folgt festgelegt:  <br/> **Zulassen, dass die App Daten an andere Apps überträgt** wird auf **Richtlinienverwaltete Apps** festgelegt <br/> **Zulassen, dass die App Daten von anderen Apps empfängt** wird auf **Alle Apps** festgelegt <br/> **Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken** wird auf **Richtlinienverwaltete Apps mit Einfügen** festgelegt <br/> |
+|Benutzern das Kopieren von Inhalten aus Office-Apps in persönliche Apps erlauben  <br/> | Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken  <br/>  Wenn die Microsoft 365 Business Premium-Option auf **Ein** festgelegt ist, werden diese drei Optionen auch auf **Alle Apps** in Intune festgelegt:  <br/> **Zulassen, dass die App Daten an andere Apps überträgt** <br/> **Zulassen, dass die App Daten von anderen Apps empfängt** <br/> **Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken** <br/>  Wenn die Option Microsoft 365 Business auf **Ein** festgelegt ist, werden alle Intune-Optionen wie folgt festgelegt:  <br/> **Zulassen, dass die App Daten an andere Apps überträgt** wird auf **Richtlinienverwaltete Apps** festgelegt <br/> **Zulassen, dass die App Daten von anderen Apps empfängt** wird auf **Alle Apps** festgelegt <br/> **Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken** wird auf **Richtlinienverwaltete Apps mit Einfügen** festgelegt <br/> |
 |||
    
 ## <a name="windows-10-app-protection-settings"></a>Einstellungen zum Anwendungsschutz in Windows 10
 
 In der folgenden Tabelle ist die Zuordnung von Windows 10-Einstellungen der Anwendungsschutzrichtlinie zu Intune-Einstellungen detailliert ausgeführt.
   
-Um die Intune-Einstellung zu finden, melden Sie sich mit Ihren Microsoft 365 Business Premium-Administratoranmeldeinformationen an, und wechseln Sie zum [Azure-Portal](https://portal.azure.com). Wählen Sie **Weitere Dienste**aus, und geben Sie InTune in den **Filter**ein. Wählen Sie **InTune App Protection** \> - **App-Richtlinie**aus.
+Um die Intune-Einstellung zu finden, melden Sie sich mit Ihren Microsoft 365 Business Premium-Administratoranmeldeinformationen an, und wechseln Sie zum [Azure-Portal](https://portal.azure.com). Wählen **Sie Weitere Dienste** aus, und geben Sie Intune in den Filter **ein.** Wählen **Sie Intune App Protection** App Policy \> **aus.**
   
  > [!IMPORTANT]
  >
- >Ein Microsoft 365 Business Premium-Abonnement bietet Ihnen eine Lizenz, nur die Intune-Einstellungen zu ändern, die den in Microsoft 365 Business Premium verfügbaren Einstellungen zugeordnet sind. 
+ >Mit einem Microsoft 365 Business Premium-Abonnement können Sie nur die Intune-Einstellungen ändern, die den in Microsoft 365 Business Premium verfügbaren Einstellungen zugewiesen sind. 
   
-Um die verfügbaren Einstellungen zu untersuchen, wählen Sie den gewünschten Richtliniennamen aus, und klicken Sie dann im linken Navigationsbereich auf **Allgemein, Zuordnungen**, **zugelassene apps**, **Ausgeschlossene Apps**, **erforderliche Einstellungen**oder **Erweiterte Einstellungen** . 
+Um die verfügbaren Einstellungen zu erkunden, wählen Sie den gewünschten Richtliniennamen aus, und wählen Sie dann im linken Navigationsbereich **allgemeine, Zuweisungen,** zugelassene **Apps,** Apps ausschalten, Erforderliche Einstellungen oder **Erweiterte** Einstellungen aus. 
   
 |**Anwendungsrichtlinieneinstellung in Windows 10**|**Intune-Einstellung(en)**|
 |:-----|:-----|
 |Arbeitsdateien verschlüsseln  <br/> |**Erweiterte Einstellungen** \> **Datenschutz**: **Beim Aufheben der Registrierung Verschlüsselungsschlüssel widerrufen** und **Zugriff auf geschützte Daten widerrufen, wenn das Gerät bei MDM registriert wird** sind beide auf **Ein** festgelegt.  <br/> |
-|Verhindern, dass Benutzer Unternehmensdaten in persönliche Dateien kopieren.  <br/> |**Erforderliche Einstellungen** \> **Windows Information Protection-Modus**. **Unter in Microsoft** 365 Business Premium wird Folgendes zugeordnet **: Hide Overrides**, **Off** in Microsoft 365 Business Premium maps to: **Off**.  <br/> |
-|Zugriffssteuerung auf Office-Dokumente  <br/> | Wenn diese Einstellung in Microsoft 365 Business Premium auf **ein** festgelegt ist, dann  <br/> **Erweiterte Einstellungen** \> **Zugriff**, **Verwenden Sie Windows Hello for Business als Methode zum Anmelden bei Windows** auf **Ein** festgelegt, wobei die folgenden zusätzlichen Einstellungen gelten:  <br/> **Legen Sie die für die PIN erforderliche Mindestanzahl an Zeichen fest** ist auf **4** festgelegt.  <br/> **Konfigurieren Sie die Verwendung von Großbuchstaben in der Windows Hello for Business-PIN** ist auf **Verwendung von Großbuchstaben für die PIN nicht zulassen** festgelegt.  <br/> **Konfigurieren Sie die Verwendung von Kleinbuchstaben in der Windows Hello for Business-PIN** ist auf **Verwendung von Kleinbuchstaben für die PIN nicht zulassen** festgelegt.  <br/> **Konfigurieren Sie die Verwendung von Sonderzeichen in der Windows Hello for Business-PIN** ist auf **Verwendung von Sonderzeichen für die PIN nicht zulassen** festgelegt.  <br/> **Geben Sie den Zeitraum (in Tagen) an, in dem eine PIN verwendet werden kann, bevor das System den Benutzer zur Änderung benötigt** , auf **0**festgelegt ist.  <br/> **Geben Sie die Anzahl der letzten PINs an, die einem Benutzerkonto zugeordnet und nicht wiederverwendet werden können** ist auf **0** festgelegt.  <br/> **Zulässige Anzahl von Authentifizierungsfehlern, bevor das Gerät zurückgesetzt wird** ist auf den gleichen Wert wie in Microsoft 365 Business festgelegt (standardmäßig 5).  <br/> **Die maximal zulässige Zeit (in Minuten) nach dem Wechsel des Gerät in den Leerlauf, bis das Gerät durch die PIN oder ein Kennwort gesperrt wird** ist auf den gleichen Wert wie in Microsoft 365 Business festgelegt.  <br/> |
+|Verhindern, dass Benutzer Unternehmensdaten in persönliche Dateien kopieren.  <br/> |**Erforderliche Einstellungen** \> **Windows Information Protection-Modus**. **On** in Microsoft 365 Business Premium ordnet zu: **Außerkraftsetzungen** ausblenden , **Aus** in Microsoft 365 Business Premium ordnet zu: **Aus**.  <br/> |
+|Zugriffssteuerung auf Office-Dokumente  <br/> | Wenn dies in Microsoft 365 Business Premium auf **Ein** festgelegt ist,  <br/> **Erweiterte Einstellungen** \> **Zugriff**, **Verwenden Sie Windows Hello for Business als Methode zum Anmelden bei Windows** auf **Ein** festgelegt, wobei die folgenden zusätzlichen Einstellungen gelten:  <br/> **Legen Sie die für die PIN erforderliche Mindestanzahl an Zeichen fest** ist auf **4** festgelegt.  <br/> **Konfigurieren Sie die Verwendung von Großbuchstaben in der Windows Hello for Business-PIN** ist auf **Verwendung von Großbuchstaben für die PIN nicht zulassen** festgelegt.  <br/> **Konfigurieren Sie die Verwendung von Kleinbuchstaben in der Windows Hello for Business-PIN** ist auf **Verwendung von Kleinbuchstaben für die PIN nicht zulassen** festgelegt.  <br/> **Konfigurieren Sie die Verwendung von Sonderzeichen in der Windows Hello for Business-PIN** ist auf **Verwendung von Sonderzeichen für die PIN nicht zulassen** festgelegt.  <br/> **Geben Sie den Zeitraum (in Tagen)** an, für den eine PIN verwendet werden kann, bevor das System erfordert, dass der Benutzer die Änderung auf **0 festgelegt hat.**  <br/> **Geben Sie die Anzahl der letzten PINs an, die einem Benutzerkonto zugeordnet und nicht wiederverwendet werden können** ist auf **0** festgelegt.  <br/> **Zulässige Anzahl von Authentifizierungsfehlern, bevor das Gerät zurückgesetzt wird** ist auf den gleichen Wert wie in Microsoft 365 Business festgelegt (standardmäßig 5).  <br/> **Die maximal zulässige Zeit (in Minuten) nach dem Wechsel des Gerät in den Leerlauf, bis das Gerät durch die PIN oder ein Kennwort gesperrt wird** ist auf den gleichen Wert wie in Microsoft 365 Business festgelegt.  <br/> |
 |Wiederherstellung geschützter Daten aktivieren  <br/> |**Erweiterte Einstellungen** \> **Datenschutz**: **Zeigen Sie das Datenschutzsymbol des Unternehmens an** und **Verwenden Sie Azure RMS für WIP** sind auf **Ein** festgelegt.  <br/> |
 |Weitere Cloudspeicherorte des Unternehmens schützen  <br/> |**Erweiterte Einstellungen** \> **Geschützte Domänen** und **Cloudressourcen** zeigen Domänen und SharePoint-Websites an.  <br/> |
 |Von diesen Apps verwendete Dateien werden geschützt  <br/> |Die Liste der geschützten Apps ist in **Zugelassene Apps** aufgeführt.  <br/> |
@@ -96,7 +96,7 @@ Um die verfügbaren Einstellungen zu untersuchen, wählen Sie den gewünschten R
 
 In der folgenden Tabelle ist die Zuordnung von Windows 10-Einstellungen der Gerätekonfiguration zu Intune-Einstellungen detailliert ausgeführt.
   
-Um die Intune-Einstellung zu finden, melden Sie sich mit Ihren Microsoft 365 Business Premium-Administratoranmeldeinformationen an, und wechseln Sie zu [Azure-Portal](https://portal.azure.com), wählen Sie dann **Weitere Dienste**aus, und geben Sie InTune in den **Filter**ein, und wählen Sie **InTune** - \> **Geräte Konfigurations** \> **profile**aus. Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
+Um die Intune-Einstellung zu finden, melden Sie sich mit Ihren Microsoft 365 Business Premium-Administratoranmeldeinformationen an, und wechseln Sie zum [Azure-Portal,](https://portal.azure.com)wählen Sie dann **Weitere** Dienste aus, und geben Sie Intune in den **Filter** ein, wählen Sie  \> **Intune-Gerätekonfigurationsprofile** \> aus. Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
   
 |**Einstellung der Windows 10-Geräterichtlinie**|**Intune-Einstellung(en)**|
 |:-----|:-----|
@@ -104,9 +104,7 @@ Um die Intune-Einstellung zu finden, melden Sie sich mit Ihren Microsoft 365 Bus
 |PCs vor webbasierten Bedrohungen in Microsoft Edge schützen  <br/> |**SmartScreen** in den **Edge Browser-Einstellungen** ist auf **Erforderlich** festgelegt.  <br/> |
 |Bildschirm deaktivieren, wenn ein Gerät im Leerlauf ist für (Minuten)  <br/> |Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung  <br/> |
 |Benutzern den Download von Apps aus dem Microsoft Store erlauben  <br/> |Benutzerdefinierte URI-Richtlinie  <br/> |
-|Benutzern den Zugriff auf Cortana erlauben  <br/> |**Allgemein** \> **Cortana** wird in InTune **blockiert** , wenn in Microsoft 365 Business Premium auf **Off** festgelegt.  <br/> |
-|Benutzern erlauben, Windows-Tipps und Werbung von Microsoft zu empfangen  <br/> |**Windows-Spotlight**, alle blockiert, wenn diese Einstellung in Microsoft 365 Business Premium auf **Off** festgelegt ist.  <br/> |
-|Windows 10-Geräte automatisch auf dem neuesten Stand halten  <br/> | Diese Einstellung befindet sich in **Microsoft InTune** \> **-dienstupdates – Windows 10-Update klingelt**, wählen Sie **Updaterichtlinie für Windows 10-Geräte**und dann **Eigenschaften** \> **Einstellungen**aus.  <br/>  Wenn die Einstellung Microsoft 365 Business Premium auf **ein**festgelegt ist, werden alle folgenden Einstellungen festgelegt:  <br/> **Dienstzweig** ist auf **CB** (CBB, wenn dieser in Microsoft 365 Business Premium deaktiviert ist) festgelegt.  <br/> **Microsoft-Produktupdates** ist auf **Zulassen** festgelegt.  <br/> **Windows-Treiber** ist auf **Zulassen** festgelegt.  <br/> **Automatisches Updateverhalten** ist auf **Zur Wartungszeit automatisch installieren** mit diesen Werten festgelegt:  <br/> **Beginn der Nutzungszeit** ist auf **6 Uhr** festgelegt.  <br/> **Ende der Nutzungszeit** ist auf **22 Uhr** festgelegt.  <br/> **Rückstellungszeitraum für Qualitätsupdates (Tage)** ist auf **0** festgelegt.  <br/> **Rückstellungszeitraum für Funktionsupdates (Tage)** ist auf **0** festgelegt.  <br/> **Downloadmodus für Bereitstellungsoptimierung** ist auf **HTTP kombiniert mit Peering hinter derselben NAT** festgelegt.  <br/> |
+|Benutzern den Zugriff auf Cortana erlauben  <br/> |**Allgemein** \> **Cortana** wird in Intune **blockiert,** wenn es **in** Microsoft 365 Business Premium deaktiviert ist.  <br/> |
+|Benutzern erlauben, Windows-Tipps und Werbung von Microsoft zu empfangen  <br/> |**Windows-Spotlight**, alle blockiert, wenn dies **in** Microsoft 365 Business Premium deaktiviert ist.  <br/> |
+|Windows 10-Geräte automatisch auf dem neuesten Stand halten  <br/> | Diese Einstellung ist in **Microsoft Intune** Service updates - \> **Windows 10 Update Rings** enthalten, wählen Sie **Updaterichtlinie für Windows 10-Geräte** und dann  \> **Eigenschafteneinstellungen aus.**  <br/>  Wenn die Microsoft 365 Business Premium-Einstellung auf **Ein** festgelegt ist, werden alle folgenden Einstellungen festgelegt:  <br/> **Der Dienstzweig** ist auf **CB** (CBB) festgelegt, wenn dies in Microsoft 365 Business Premium deaktiviert ist.  <br/> **Microsoft-Produktupdates** ist auf **Zulassen** festgelegt.  <br/> **Windows-Treiber** ist auf **Zulassen** festgelegt.  <br/> **Automatisches Updateverhalten** ist auf **Zur Wartungszeit automatisch installieren** mit diesen Werten festgelegt:  <br/> **Beginn der Nutzungszeit** ist auf **6 Uhr** festgelegt.  <br/> **Ende der Nutzungszeit** ist auf **22 Uhr** festgelegt.  <br/> **Rückstellungszeitraum für Qualitätsupdates (Tage)** ist auf **0** festgelegt.  <br/> **Rückstellungszeitraum für Funktionsupdates (Tage)** ist auf **0** festgelegt.  <br/> **Downloadmodus für Bereitstellungsoptimierung** ist auf **HTTP kombiniert mit Peering hinter derselben NAT** festgelegt.  <br/> |
 |||
-   
-

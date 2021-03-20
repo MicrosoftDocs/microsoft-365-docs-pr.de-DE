@@ -22,18 +22,18 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie Ihre Zahlungsmethoden im Microsoft 365 Admin Center verwalten können.
 ms.date: ''
-ms.openlocfilehash: a6866a9691e42928a5712c3069704f11fac0546f
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 2a53ae0bfb4806a85e03f293f58e1b575e8bcf90
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741389"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911842"
 ---
 # <a name="manage-payment-methods"></a>Verwalten von Zahlungsmethoden
 
 ::: moniker range="o365-21vianet"
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 ::: moniker-end
 
 Wenn Sie Business-Produkte oder -Dienste von Microsoft kaufen, können Sie eine vorhandene Zahlungsmethode verwenden oder eine neue hinzufügen. Die Bezahlung von gekauften Produkten kann über eine Kreditkarte, eine Debitkarte oder ein Bankkonto erfolgen.

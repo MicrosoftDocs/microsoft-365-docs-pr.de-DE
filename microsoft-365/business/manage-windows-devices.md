@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Erfahren Sie, wie Sie Microsoft 365 aktivieren, um lokale Active-Directory-beigetretene Windows 10-Geräte in nur wenigen Schritten zu schützen.
-ms.openlocfilehash: 0b597110447272be128bfe1866234ac25a8e67e6
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 82d4ac3f1d6aba9489f9ea153de3a3d2083b47ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407076"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913192"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Aktivieren der In der Domäne beigetretenen Windows 10-Geräte, die von Microsoft 365 Business Premium verwaltet werden können
 
@@ -78,7 +78,7 @@ Wechseln Sie zu [Endpoint Manager,](https://endpoint.microsoft.com/#blade/Micros
 
 ## <a name="4-create-the-required-resources"></a>4. Erstellen der erforderlichen Ressourcen 
 
-Die Ausführung der [](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) erforderlichen Aufgaben zum Konfigurieren der Azure AD-Hybrid-Verknüpfung wurde durch die Verwendung des [Cmdlets Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) im [SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell-Modul vereinfacht. Wenn Sie dieses Cmdlet aufrufen, wird der erforderliche Dienstverbindungspunkt und die Gruppenrichtlinie erstellt und konfiguriert.
+Die Ausführung der [](/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) erforderlichen Aufgaben zum Konfigurieren der Azure AD-Hybrid-Verknüpfung wurde durch die Verwendung des [Cmdlets Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) im [SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell-Modul vereinfacht. Wenn Sie dieses Cmdlet aufrufen, wird der erforderliche Dienstverbindungspunkt und die Gruppenrichtlinie erstellt und konfiguriert.
 
 Sie können dieses Modul installieren, indem Sie folgendes aus einer Instanz von PowerShell aufrufen:
 

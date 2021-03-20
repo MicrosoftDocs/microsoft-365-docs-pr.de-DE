@@ -19,52 +19,52 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 15feb1b806b46d147d427256ce2416ea75b48bbe
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 750420b6fac8fff16130710ef96a9ceb6345a87a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50143126"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911830"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>So bezahlen Sie Ihr Abonnement mit einem Abrechnungsprofil
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
 Wenn Sie ein Abonnement kaufen, bezahlen Sie es mit einem Abrechnungsprofil. Das Abrechnungsprofil ist mit einer bestimmten Zahlungsmethode verknüpft und kann eine Kredit- oder Debitkarte oder eine Rechnung, aber kein Bankkonto sein.
 
-Wenn Sie nicht sicher sind, ob Ihr Konto über ein Abrechnungsprofil verfügt, lesen Sie ["Informationen zu Abrechnungsprofilen".](manage-billing-profiles.md) Wenn Sie nicht über ein Abrechnungsprofil verfügen, lesen Sie die Informationen zum [Bezahlen Ihres Abonnements.](pay-for-your-subscription.md)
+Wenn Sie nicht genau wissen, ob Ihr Konto über ein Abrechnungsprofil verfügt, lesen Sie [Informationen zu Abrechnungsprofilen](manage-billing-profiles.md). Wenn Sie kein Abrechnungsprofil haben, finden Sie weitere Informationen unter [How to pay for your subscription](pay-for-your-subscription.md).
 
 ## <a name="paying-with-recurring-billing-turned-on-or-off"></a>Bezahlen mit aktivierter oder deaktivierter wiederkehrender Abrechnung
 
-Standardmäßig ist die wiederkehrende Abrechnung für alle kostenpflichtigen Abonnements, die wiederkehrende Abrechnung verwenden, automatisch aktiviert. Für jeden Abrechnungszeitraum berechnen wir automatisch die zahlungsmethode, die dem Abrechnungsprofil zugeordnet ist, um Abonnements zu bezahlen, die dieses Abrechnungsprofil verwenden. Wenn Ihre Zahlungsmethode abgelehnt wird,  können Sie die Schaltfläche "Jetzt bezahlen" auf Ihrer Rechnung verwenden, um eine einmalzahlung für Ihr Abonnement zu machen.
+Standardmäßig wird die wiederkehrende Abrechnung automatisch für alle kostenpflichtigen Abonnements aktiviert, die wiederkehrende Abrechnungen verwenden. Für jeden Abrechnungszeitraum berechnen wir automatisch die zahlungsmethode, die dem Abrechnungsprofil zugeordnet ist, um abonnements zu bezahlen, die dieses Abrechnungsprofil verwenden. Wenn Ihre Zahlungsmethode abgelehnt wird,  können Sie die Schaltfläche Jetzt bezahlen auf Ihrer Rechnung verwenden, um eine einmale Zahlung für Ihr Abonnement zu bezahlen.
 
-Wenn die wiederkehrende Abrechnung für ein Abrechnungsprofil  deaktiviert ist, können Sie die Schaltfläche "Jetzt bezahlen" auf Ihrer Rechnung verwenden, um jeden Abrechnungszeitraum zu bezahlen, unabhängig davon, welche Zahlungsmethode mit dem Abrechnungsprofil verknüpft ist. Sie können auch per Scheck oder elektronischer Überweisung bezahlen. Anweisungen dazu sind in der PDF-Kopie Ihrer Rechnung enthalten.
+Wenn die wiederkehrende Abrechnung für ein Abrechnungsprofil  deaktiviert ist, können Sie die Schaltfläche Jetzt bezahlen auf Ihrer Rechnung verwenden, um jeden Abrechnungszeitraum zu bezahlen, unabhängig davon, welche Zahlungsmethode mit dem Abrechnungsprofil verknüpft ist. Sie können auch per Scheck oder EFT (Electronic Funds Transfer) bezahlen. Anweisungen dazu sind in der PDF-Kopie Ihrer Rechnung enthalten.
 
 ## <a name="paying-by-invoice"></a>Zahlung per Rechnung
 
-Wenn Sie über ein Abrechnungsprofil verfügen, das für die Zahlung per Rechnung eingerichtet ist, können Sie Ihr Abonnement mit einem Scheck oder EFT bezahlen. Sie können auch eine Kreditkarte verwenden, um eine Onlinezahlung über die Schaltfläche **"Jetzt** bezahlen" auf Ihrer Rechnung zu machen.
+Wenn Sie über ein Abrechnungsprofil verfügen, das für die Zahlung per Rechnung eingerichtet ist, können Sie Ihr Abonnement mit einem Scheck oder EFT bezahlen. Sie können auch eine Kreditkarte verwenden, um eine Onlinezahlung über die Schaltfläche **Jetzt** bezahlen auf Ihrer Rechnung zu machen.
 
 Um zur Zahlung per Rechnung berechtigt zu sein, müssen Sie:
 
-- Etablierter Kunde sein
-- Abonnementkosten, die einen bestimmten Betrag übersteigen (dieser Betrag variiert je nach Dienststandort)
-- Bestehen einer Bonitätsprüfung
+- Stammkunde sein
+- Abonnementkosten aufweisen, die einen bestimmten Betrag überschreiten (dieser Betrag variiert je nach Standort des Diensts)
+- Eine Bonitätsprüfung bestehen
 
-Wenn eine Bonitätsprüfung erforderlich ist, werden Sie benachrichtigt, wenn Sie Ihr Abonnement kaufen. Wenn Sie der Kontaktaufnahme zustimmen, erhalten Sie eine E-Mail mit weiteren Informationen zum Beantragen einer Kreditgenehmigung. Bonitätsprüfungen dauern in der Regel nicht länger als zwei Werktage.
+Wenn eine Bonitätsprüfung erforderlich ist, werden Sie darüber informiert, wenn Sie Ihr Abonnement kaufen. Wenn Sie einer Kontaktaufnahme zugestimmt haben, erhalten Sie eine E-Mail, die weitere Informationen zur Beantragung einer Kreditgenehmigung enthält. Bonitätsprüfungen erfolgen in der Regel innerhalb von zwei Werktagen.
 
-Wenn Ihr Abrechnungsprofil durch eine Rechnung gesichert ist, erhalten Sie eine E-Mail, sobald Ihre Rechnung angezeigt werden kann. Diese E-Mail enthält keine Kopie Ihrer Rechnung. Sie können jedoch eine Kopie Ihrer Rechnung per [E-Mail erhalten.](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email) Ihre Rechnung enthält Details zu Ihren Zahlungsoptionen und dem Ort, an den sie gesendet werden kann. Wenn Sie eine Bestellnummer in Ihrem Abrechnungsprofil eingeben, wird die Nummer in Ihrer Rechnung angezeigt. Informationen zum Zugriff auf Rechnungen finden Sie unter [Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md).
+Wenn Ihr Abrechnungsprofil durch eine Rechnung gesichert ist, erhalten Sie eine E-Mail, wenn Ihre Abrechnungsabrechnung angezeigt werden kann. Diese E-Mail enthält keine Kopie Ihrer Rechnung. Allerdings können Sie auf Wunsch [eine Kopie Ihrer Rechnung per E-Mail erhalten](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). Ihre Rechnung enthält Details zu Ihren Zahlungsoptionen und zum Senden von Zahlungen. Wenn Sie eine Bestellnummer (PO) in Ihr Abrechnungsprofil eingeben, wird die Nummer in Ihrer Abrechnung angezeigt. Informationen zum Zugriff auf Rechnungen finden Sie unter [Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md).
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>Wohin sende ich meinen Scheck oder die Zahlung per elektronischem Zahlungsverkehr?
 
-[Überprüfen Sie Ihre Rechnung](view-your-bill-or-invoice.md) auf Zahlungsanweisungen. Sie können auch die nachstehende Dropdownliste verwenden, um Zahlungsanweisungen für Ihr Land zu finden. Wenn Sie nicht sicher sind, wie viel Sie fällig sind, können Sie Ihre Rechnung und den **Abrechnungsverlauf** online auf der Registerkarte "Rechnungen" auf der Seite & <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Rechnungen</a> überprüfen.
+[Überprüfen Sie Ihre Rechnung](view-your-bill-or-invoice.md) auf Zahlungsanweisungen. Sie können auch die unten aufgeführte Dropdownliste verwenden, um Zahlungsanweisungen für Ihr Land zu finden. Wenn Sie nicht genau wissen, wie hoch die offenen Forderungen sind, können Sie Ihre Rechnung und den Abrechnungsverlauf online auf der Registerkarte **Rechnungen** auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Rechnungen und Zahlungen</a> überprüfen.
 
 > [!NOTE]
-> Die Zahlung per Scheck ist nur in einigen Ländern verfügbar.
+> Die Zahlung per Scheck ist nur in einigen Ländern möglich.
 
  **Wählen Sie im nachstehend gezeigten Dropdownmenü das Land oder die Region für den "Rechnungsempfänger" aus.**
 
@@ -222,20 +222,20 @@ Wenn Ihr Abrechnungsprofil durch eine Rechnung gesichert ist, erhalten Sie eine 
 > - [Sambia](../pay/zambia.md)
 > - [Simbabwe](../pay/zimbabwe.md)
 
-## <a name="can-i-pay-my-invoice-online"></a>Kann ich meine Rechnung online bezahlen?
+## <a name="can-i-pay-my-invoice-online"></a>Kann ich meine Rechnung online begleichen?
 
-Wenn die wiederkehrende Abrechnung für Ihr Abrechnungsprofil deaktiviert ist, können Sie eine Kreditkarte verwenden, um Ihre Rechnung online zu bezahlen. Um eine Zahlung zu machen, verwenden Sie **die** Schaltfläche "Jetzt bezahlen" auf Ihrer Rechnung im Microsoft 365 Admin Center. Informationen zur Suche nach Ihrer Rechnung finden Sie [unter Anzeigen Ihrer Rechnung.](view-your-bill-or-invoice.md)
+Wenn die wiederkehrende Abrechnung für Ihr Abrechnungsprofil deaktiviert ist, können Sie Ihre Rechnung mit einer Kreditkarte online bezahlen. Um eine Zahlung zu machen, verwenden Sie **die** Schaltfläche Jetzt bezahlen auf Ihrer Rechnung im Microsoft 365 Admin Center. Informationen zur Rechnung finden Sie unter [Anzeigen Ihrer Rechnung oder Rechnung.](view-your-bill-or-invoice.md)
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Kann ich von meiner aktuellen Zahlungsmethode zur Zahlung per Rechnung wechseln?
 
-Wenn Ihr Abrechnungsprofil durch eine Kredit- oder Debitkarte gesichert ist, können Sie die Zahlungsmethode nur in eine andere Kredit- oder Debitkarte ändern. Sie können nicht zur Zahlung per Rechnung wechseln.
+Wenn Ihr Abrechnungsprofil durch eine Kredit- oder Debitkarte gesichert ist, können Sie die Zahlungsmethode nur in eine andere Kredit- oder Debitkarte ändern. Sie können nicht auf Zahlung per Rechnung umstellen.
 
-## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>Kann ich von Zahlung per Rechnung zu einer anderen Zahlungsmethode wechseln?
+## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>Kann ich von der Zahlung per Rechnung zu einer anderen Zahlungsmethode wechseln?
 
-Wenn Ihr Abrechnungsprofil durch Rechnungszahlungen gesichert ist, können Sie die Zahlungsmethode nicht ändern. Sie können die **Schaltfläche** "Jetzt bezahlen" auf Ihrer Rechnung verwenden, um mit einer Kredit- oder Debitkarte oder per Scheck oder EFT zu bezahlen.
+Wenn Ihr Abrechnungsprofil durch Rechnungszahlungen gesichert ist, können Sie die Zahlungsmethode nicht ändern. Sie können die Schaltfläche **Jetzt** bezahlen auf Ihrer Rechnung verwenden, um mit einer Kredit- oder Debitkarte oder per Scheck oder EFT zu bezahlen.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Zahlungsmethoden verwalten](manage-payment-methods.md) (Artikel)\
 [Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md) (Artikel)\
-[Verstehen Ihrer Rechnung](understand-your-invoice.md) (Artikel)
+[Ihre Rechnung verstehen](understand-your-invoice.md) (Artikel)

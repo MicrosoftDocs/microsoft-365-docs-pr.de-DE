@@ -14,46 +14,46 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
-description: Hier erfahren Sie, wie Sie Gruppen für die Verwendung mit Geräten Lizenzen zuweisen.
+description: Erfahren Sie, wie Sie Gruppen Lizenzen für die Verwendung mit Geräten zuweisen.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-ms.openlocfilehash: 29bd56ccff01d8c21cc67d1188fa21e338fb4b7e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a316810e3e6ddb1373697dc56b2fccb5a32cf0b1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638183"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911482"
 ---
 # <a name="manage-licenses-for-devices"></a>Verwalten von Lizenzen für Geräte
 
-Wenn Sie Microsoft 365 Apps für Unternehmen (Gerät) oder Microsoft 365 Apps für Bildungseinrichtungen (Gerät) haben, können Sie Geräte mithilfe Azure AD Gruppenlizenzen zuweisen. Wenn ein Gerät über eine Lizenz verfügt, kann jeder, der dieses Gerät verwendet, Microsoft 365-Apps für Enterprise (zuvor mit dem Namen Office 365 ProPlus) verwenden. Angenommen, Sie verfügen über 20 Laptops und Tablets, die von Personen in Ihrer Organisation verwendet werden. Wenn Sie jedem Gerät eine Lizenz zuweisen, verwendet jede Person, die sich bei einem der Geräte anmeldet, Microsoft 365-Apps für Enterprise, ohne dass eine eigene Lizenz erforderlich ist.
+Wenn Sie über Microsoft 365 Apps for Enterprise (Gerät) oder Microsoft 365 Apps for Education (Gerät) verfügen, können Sie Mithilfe von Azure AD-Gruppen Lizenzen zu Geräten zuweisen. Wenn ein Gerät über eine Lizenz verfügt, kann jeder, der dieses Gerät verwendet, Microsoft 365 Apps for Enterprise (zuvor Office 365 ProPlus genannt) verwenden. Angenommen, Sie verfügen über 20 Laptops und Tablets, die von Personen in Ihrer Organisation verwendet werden. Wenn Sie jedem Gerät eine Lizenz zuweisen, verwendet jede Person, die sich bei einem der Geräte anmeldet, Microsoft 365 Apps for Enterprise, ohne dass eine eigene Lizenz erforderlich ist.
 
 > [!IMPORTANT]
-> Die gerätebasierte Lizenzierung für Microsoft 365-Apps für Unternehmen ist nur als Add-on-Lizenz für einige kommerzielle Kunden und einige Schulungs Kunden verfügbar. Für kommerzielle Kunden ist die Lizenz *Microsoft 365 apps for Enterprise (Gerät)* und steht nur über Enterprise Agreement/Enterprise Agreement Subscription zur Verfügung. Für Education-Kunden ist die Lizenz *Microsoft 365 apps for Education (Gerät)* und ist nur über die Registrierung für Bildungslösungen (EBS) verfügbar. Weitere Informationen finden Sie im Blogbeitrag zur [Verfügbarkeit von Bildungseinrichtungen](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-device-based-subscription-for-education/). Wenden Sie sich für kommerzielle Verfügbarkeit an Ihren Microsoft-Konto Vertreter.
+> Die gerätebasierte Lizenzierung für Microsoft 365 Apps for Enterprise ist nur als Add-On-Lizenz für einige kommerzielle Kunden und einige Bildungskunden verfügbar. Für kommerzielle Kunden ist die Lizenz *Microsoft 365 Apps for Enterprise (Gerät)* und nur über Konzernvertrag/Konzernvertrag verfügbar. Für Bildungskunden ist die Lizenz *Microsoft 365 Apps for Education (Gerät)* und nur über Enrollment for Education Solutions (EES) verfügbar. Weitere Informationen finden Sie im Blogbeitrag zur Verfügbarkeit [von Bildungseinrichtungen](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-device-based-subscription-for-education/). Wenden Sie sich zur kommerziellen Verfügbarkeit an Ihren Microsoft-Kontomitarbeiter.
 
-Zunächst erstellen Sie eine Gruppe im Azure Active Directory Admin Center und weisen dann der Gruppe Geräte zu. Weitere Informationen zur Geräte Lizenzierung, einschließlich Geräteanforderungen, zu den Arten von Gruppen, die Sie verwenden können, und zum Konfigurieren von Microsoft 365-Apps für Enterprise zur Verwendung der Geräte Lizenzierung finden Sie unter [Device-based licensing for Microsoft 365 apps for Enterprise](https://go.microsoft.com/fwlink/p/?linkid=2094216).
+Zunächst erstellen Sie eine Gruppe im Azure Active Directory Admin Center und weisen der Gruppe dann Geräte zu. Weitere Informationen zur Gerätelizenzierung, einschließlich gerätebasierter Anforderungen, der arten von Gruppen, die Sie verwenden können, und zum Konfigurieren von Microsoft 365 Apps for Enterprise für die Verwendung der Gerätelizenzierung finden Sie unter Gerätebasierte Lizenzierung für [Microsoft 365 Apps for Enterprise](/deployoffice/device-based-licensing).
 
 > [!IMPORTANT]
-> Sie müssen ein globaler Administrator sein, um die Aufgaben in diesem Artikel durchführen zu können.
+> Sie müssen ein globaler Administrator sein, um die Aufgaben in diesem Artikel ausführen zu können.
 
 ## <a name="assign-licenses-to-devices"></a>Zuweisen von Lizenzen zu Geräten
 
 Wenn Sie einer Gruppe Lizenzen zuweisen, weisen Sie allen Geräten innerhalb der Gruppe Lizenzen zu. Sie können einer einzelnen Gruppe nur ein Abonnement zuweisen.
 
-1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Abrechnungs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> .
-2. Wählen Sie auf der Seite **Lizenzen** die Option **Microsoft 365 apps for Education (Gerät)** oder **Microsoft 365 apps for Enterprise (Gerät)** aus.
-3. Wählen Sie auf der nächsten Seite ein Abonnement aus, und wählen Sie dann **Lizenzen zuweisen**aus.
-4. Geben Sie im Bereich **Lizenzen einer Gruppe zuweisen** die Eingabe eines Gruppennamens ein, und wählen Sie ihn aus den Ergebnissen aus, um ihn der Liste hinzuzufügen.
-5. Wählen Sie **assign**und dann **Close**aus.
+1. Wechseln Sie im Microsoft 365 Admin Center zur Seite  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Abrechnungslizenzen.</a>
+2. Wählen Sie **auf** der Seite Lizenzen **die Option Microsoft 365 Apps for Education (Gerät)** oder **Microsoft 365 Apps for Enterprise (Gerät) aus.**
+3. Wählen Sie auf der nächsten Seite ein Abonnement aus, und wählen Sie dann **Lizenzen zuweisen aus.**
+4. Beginnen Sie **im** Bereich Zuweisen von Lizenzen zu einem Gruppenbereich mit der Eingabe eines Gruppennamens, und wählen Sie ihn dann aus den Ergebnissen aus, um ihn der Liste hinzuzufügen.
+5. Wählen **Sie Zuweisen** aus, und wählen Sie dann Schließen **aus.**
 
-## <a name="unassign-licenses-from-devices"></a>Aufheben der Zuweisung von Lizenzen von Geräten
+## <a name="unassign-licenses-from-devices"></a>Zuweisen von Lizenzen von Geräten
 
-Wenn Sie die Zuweisung von Lizenzen von einer Gruppe aufheben, entfernen Sie die Lizenzen von allen Geräten innerhalb der Gruppe. Alle apps und die zugehörigen Daten sind dann schreibgeschützt.
+Wenn Sie lizenzen aus einer Gruppe entfernen, entfernen Sie die Lizenzen von allen Geräten innerhalb der Gruppe. Alle Apps und ihre zugehörigen Daten sind dann schreibgeschützt.
 
-1. Wechseln Sie im Admin Center zur Seite **Abrechnungs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> .
-2. Wählen Sie auf der Seite **Lizenzen** die Option **Microsoft 365 apps for Education (Gerät)** oder **Microsoft 365 apps for Enterprise (Gerät)** aus.
-3. Wählen Sie auf der nächsten Seite ein Abonnement aus, wählen Sie **Weitere Aktionen**aus, und wählen Sie dann Lizenzen für die **Zuweisung**aufheben aus.
-4. Wählen Sie im Dialogfeld **Lizenzen** aufheben die Option **Zuweisung**aufheben aus.
+1. Wechseln Sie im Admin Center zur Seite  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Abrechnungslizenzen.</a>
+2. Wählen Sie **auf** der Seite Lizenzen **die Option Microsoft 365 Apps for Education (Gerät)** oder **Microsoft 365 Apps for Enterprise (Gerät) aus.**
+3. Wählen Sie auf der nächsten Seite ein Abonnement aus, wählen Sie **Weitere Aktionen** aus, und wählen Sie dann Lizenzen zuweisen **aus.**
+4. Wählen Sie **im Dialogfeld Lizenzen** nicht zuweisen die Option **Unassign aus.**

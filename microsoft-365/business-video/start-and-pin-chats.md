@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Chats in Microsoft Teams starten und anheften.
-ms.openlocfilehash: 02e7336a5de51526e7c1535eb62724823753d8a0
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 8026c71ebda6c6d65c953fa4983180d80a5df536
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421883"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913602"
 ---
 # <a name="chat-with-employees-and-customers"></a>Chatten Sie mit Mitarbeitern und Kunden
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWedV6?autoplay=false]
 
-Sie können intern mit Ihren Kollegen chatten oder mit einem Gastbenutzer, z. B. einem Kunden oder einem Partner, chatten. Wenn [der Gastzugriff für Ihr](https://docs.microsoft.com/microsoftteams/set-up-guests) Unternehmen aktiviert ist, können Sie einfach eine E-Mail-Adresse eingeben, um einen Gast zu einem Chat hinzuzufügen.
+Sie können intern mit Ihren Kollegen chatten oder mit einem Gastbenutzer, z. B. einem Kunden oder einem Partner, chatten. Wenn [der Gastzugriff für Ihr](/microsoftteams/set-up-guests) Unternehmen aktiviert ist, können Sie einfach eine E-Mail-Adresse eingeben, um einen Gast zu einem Chat hinzuzufügen.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
