@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie die verschiedenen Haltearten identifizieren, die in einem Exchange Online-Postfach in Microsoft 365 platziert werden können.
-ms.openlocfilehash: a5bea8cd279bb980ba2f8a57950c8a66857ba502
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0fdfbd4503a4ddffd2ce2dd97c6af42684aea293
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423626"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917535"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Identifizieren des Haltebereichs für ein Exchange Online-Postfach
 
@@ -34,7 +34,7 @@ Microsoft 365 bietet verschiedene Möglichkeiten, wie Ihre Organisation verhinde
 
 - **[eDiscovery hold](create-ediscovery-holds.md):** Haltewerte, die einem Core eDiscovery-Fall im Security and Compliance Center zugeordnet sind. eDiscovery-Haltefächer können auf Benutzerpostfächer und das entsprechende Postfach für Microsoft 365-Gruppen und Microsoft Teams angewendet werden.
 
-- **[In-Place Hold](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Haltefächer, die mithilfe des tools In-Place eDiscovery & im Exchange Admin Center in Exchange Online auf Benutzerpostfächer angewendet werden. 
+- **[In-Place Hold](/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Haltefächer, die mithilfe des tools In-Place eDiscovery & im Exchange Admin Center in Exchange Online auf Benutzerpostfächer angewendet werden. 
 
    > [!NOTE]
    > In-Place Die Haltefächer wurden eingestellt, und Sie können keine In-Place archivieren oder auf Postfächer anwenden. Die In-Place können jedoch weiterhin auf Postfächer in Ihrer Organisation angewendet werden, weshalb sie in diesem Artikel enthalten sind. Weitere Informationen finden Sie unter [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md#in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center).
@@ -59,7 +59,7 @@ Sie können die folgenden beiden Cmdlets in Exchange Online PowerShell ausführe
 
 - **Get-OrganizationConfig:** Verwenden Sie dieses Cmdlet, um die GUIDs für organisationsweite Aufbewahrungsrichtlinien zu erhalten.
 
-Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+Wie Sie eine Verbindung mit Exchange Online-PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online-PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ### <a name="get-mailbox"></a>Get-Mailbox
 
@@ -129,7 +129,7 @@ Nachdem Sie die GUID für einen Halteraum erhalten haben, der auf ein Postfach a
 
 Führen Sie die folgenden Befehle in Security & Compliance Center PowerShell aus, um ein eDiscovery-Archiv zu identifizieren, das auf das Postfach angewendet wird. Verwenden Sie die GUID (ohne das UniH-Präfix) für den eDiscovery-Halteraum, den Sie in Schritt 1 identifiziert haben. 
 
-Eine Verbindung mit Security & Compliance Center PowerShell finden Sie unter  [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+Eine Verbindung mit Security & Compliance Center PowerShell finden Sie unter  [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 Mit dem ersten Befehl wird eine Variable erstellt, die Informationen zum Halteraum enthält. Diese Variable wird in den anderen Befehlen verwendet. Der zweite Befehl zeigt den Namen des eDiscovery-Falls an, dem der Halteschutz zugeordnet ist. Der dritte Befehl zeigt den Namen des Halteraums und eine Liste der Postfächer an, für die das Archiv gilt.
 
@@ -227,7 +227,7 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplie
 > [!TIP]
 > Die beste Möglichkeit zum Angeben eines inaktiven Postfachs im vorherigen Befehl ist die Verwendung des Distinguished Name- oder Exchange-GUID-Werts. Durch Verwenden eines dieser Werte können Sie verhindern, versehentlich das falsche Postfach anzugeben. 
 
-Weitere Informationen zur Verwendung dieser Parameter zum Verwalten von Verzögerungsspeichern finden Sie unter [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+Weitere Informationen zur Verwendung dieser Parameter zum Verwalten von Verzögerungsspeichern finden Sie unter [Set-Mailbox](/powershell/module/exchange/set-mailbox).
 
 Beachten Sie beim Verwalten eines Postfachs im Verzögerungsspeicher folgendes:
 
@@ -239,7 +239,7 @@ Beachten Sie beim Verwalten eines Postfachs im Verzögerungsspeicher folgendes:
 
 Nachdem Sie die Aufbewahrungsspeicher identifiziert haben, die auf ein Postfach angewendet werden, können Sie Aufgaben wie das Ändern der Aufbewahrungsdauer, das vorübergehende oder dauerhafte Entfernen des Halteraums oder das Ausschließen eines inaktiven Postfachs aus einer Microsoft 365-Aufbewahrungsrichtlinie ausführen. Weitere Informationen zum Ausführen von Aufgaben im Zusammenhang mit Haltebereichen finden Sie in einem der folgenden Themen:
 
-- Führen Sie den Befehl [Set-RetentionCompliancePolicy \<Policy Name> -Identity \<user mailbox> -AddExchangeLocationException](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) in Security & Compliance Center PowerShell aus, um ein Postfach aus einer organisationsweiten Microsoft 365-Aufbewahrungsrichtlinie auszuschließen. Dieser Befehl kann nur für Aufbewahrungsrichtlinien verwendet werden, bei denen der Wert für die *ExchangeLocation-Eigenschaft* gleich `All` ist.
+- Führen Sie den Befehl [Set-RetentionCompliancePolicy \<Policy Name> -Identity \<user mailbox> -AddExchangeLocationException](/powershell/module/exchange/set-retentioncompliancepolicy) in Security & Compliance Center PowerShell aus, um ein Postfach aus einer organisationsweiten Microsoft 365-Aufbewahrungsrichtlinie auszuschließen. Dieser Befehl kann nur für Aufbewahrungsrichtlinien verwendet werden, bei denen der Wert für die *ExchangeLocation-Eigenschaft* gleich `All` ist.
 
 - [Ändern der Aufbewahrungsdauer für ein inaktives Postfach](change-the-hold-duration-for-an-inactive-mailbox.md)
 

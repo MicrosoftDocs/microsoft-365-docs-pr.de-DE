@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 67697124df7908dca2ace74dc5de921d18d817c6
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 0eaf89b3f49d8b69cb7b36e4e25df90946c19e32
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727324"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917207"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Wenn Nachrichten über Aufbewahrungsrichtlinien in Ihren Apps angezeigt werden, wenden Sie sich an Ihre IT-Abteilung, um zu erfahren, wie diese für Sie konfiguriert wurden. Wenn es sich bei diesen Nachrichten um Teams-Chat- oder Kanalnachrichten handelt, ziehen Sie [Teams-Nachrichten über Aufbewahrungsrichtlinien](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b) zurate.
@@ -96,7 +96,7 @@ Im Gegensatz zu Aufbewahrungsrichtlinien bleiben die Aufbewahrungseinstellungen 
 
 - Wenden Sie eine Standardbezeichnung für SharePoint-Dokumente an.
 
-- Unterstützen Sie die [Überprüfung der Disposition](disposition-reviews.md) , um den Inhalt zu überprüfen, bevor er endgültig gelöscht wird.
+- Unterstützen Sie die [Überprüfung der Disposition](./disposition.md) , um den Inhalt zu überprüfen, bevor er endgültig gelöscht wird.
 
 - Kennzeichnen Sie den Inhalt als [Datensatz](records-management.md#records) als Teil der Bezeichnungseinstellungen und haben Sie immer einen  [Nachweis über die Disposition](disposition.md#disposition-of-records) , wenn der Inhalt am Ende seines Aufbewahrungszeitraums gelöscht wird.
 
@@ -200,7 +200,7 @@ In Exchange werden Bezeichnungen, die automatisch angewendet werden können, nur
 Auf eine E-Mail-Nachricht oder ein Dokument kann jeweils nur eine einzige Aufbewahrungsbezeichnung angewendet werden. Eine Aufbewahrungsbezeichnung kann von einem Endbenutzer oder Administrator [manuell](create-apply-retention-labels.md#manually-apply-retention-labels) angewendet werden, oder Sie verwenden eine der folgenden Methoden:
 
 - [Automatisch angewendete Bezeichnungsrichtlinie](apply-retention-labels-automatically.md)
-- [Dokumentverständnismodells für SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)
+- [Dokumentverständnismodells für SharePoint Syntex](../contentunderstanding/apply-a-retention-label-to-a-model.md)
 - [Standardbezeichnung für SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) oder [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 - [Outlook-Regeln](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
 
@@ -376,35 +376,35 @@ Administratoraktionen für Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnung
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>PowerShell-Cmdlets für Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
-Um die Cmdlets für die Aufbewahrun zu verwenden, müssen Sie zunächst [eine Verbindung zu Office 365 Security & Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell). Verwenden Sie dann eines der folgenden Cmdlets:
+Um die Cmdlets für die Aufbewahrun zu verwenden, müssen Sie zunächst [eine Verbindung zu Office 365 Security & Compliance Center PowerShell herstellen](/powershell/exchange/connect-to-scc-powershell). Verwenden Sie dann eines der folgenden Cmdlets:
 
-- [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/get-compliancetag)
+- [Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)
 
-- [New-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/new-compliancetag)
+- [New-ComplianceTag](/powershell/module/exchange/new-compliancetag)
 
-- [Remove-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/remove-compliancetag)
+- [Remove-ComplianceTag](/powershell/module/exchange/remove-compliancetag)
 
-- [Set-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/set-compliancetag)
+- [Set-ComplianceTag](/powershell/module/exchange/set-compliancetag)
 
-- [Enable-ComplianceTagStorage](https://docs.microsoft.com/powershell/module/exchange/enable-compliancetagstorage)
+- [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage)
 
-- [Get-ComplianceTagStorage](https://docs.microsoft.com/powershell/module/exchange/get-compliancetagstorage)
+- [Get-ComplianceTagStorage](/powershell/module/exchange/get-compliancetagstorage)
 
-- [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancepolicy)
+- [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy)
 
-- [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy)
+- [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)
 
-- [Remove-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/remove-retentioncompliancepolicy)
+- [Remove-RetentionCompliancePolicy](/powershell/module/exchange/remove-retentioncompliancepolicy)
 
-- [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy)
+- [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy)
 
-- [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule)
+- [Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancerule)
 
-- [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule)
+- [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule)
 
-- [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/remove-retentioncompliancerule)
+- [Remove-RetentionComplianceRule](/powershell/module/exchange/remove-retentioncompliancerule)
 
-- [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)
+- [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule)
 
 ## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>Verwenden von Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen oder eDiscovery-Aufbewahrung
 
@@ -430,11 +430,11 @@ Wenn Inhalte sowohl Aufbewahrungseinstellungen als auch einem eDiscovery-Haltebe
 Wenn Sie ältere eDiscovery-Tools für die Aufbewahrung Ihrer Daten verwenden, sollten Sie sich die folgenden Ressourcen anschauen:
 
 - Exchange: 
-    - [In-Situ-Speicher und Beweissicherungsverfahren](https://go.microsoft.com/fwlink/?linkid=846124)
-    - [Identifizieren des Haltebereichs für ein Exchange Online-Postfach](https://docs.microsoft.com/microsoft-365/compliance/identify-a-hold-on-an-exchange-online-mailbox)
+    - [In-Situ-Speicher und Beweissicherungsverfahren](/exchange/security-and-compliance/in-place-and-litigation-holds)
+    - [Identifizieren des Haltebereichs für ein Exchange Online-Postfach](./identify-a-hold-on-an-exchange-online-mailbox.md)
 
 - SharePoint und OneDrive: 
-    - [Hinzufügen von Inhalten zu einem Fall und temporäres Sperren von Quellen im eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
+    - [Hinzufügen von Inhalten zu einem Fall und temporäres Sperren von Quellen im eDiscovery Center](/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
 
 - [Einstellung älterer eDiscovery-Tools](legacy-ediscovery-retirement.md)
 
@@ -446,7 +446,7 @@ Wenn Sie derzeit diese älteren Features verwenden, werden sie weiterhin Seite a
 
 **Ältere Features von Exchange Online:**
 
-- [Aufbewahrungstags und Aufbewahrungsrichtlinien](https://go.microsoft.com/fwlink/?linkid=846125), auch bekannt als [Messaging-Datensatzverwaltung](https://go.microsoft.com/fwlink/?linkid=846126) (Nur Löschen)
+- [Aufbewahrungstags und Aufbewahrungsrichtlinien](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies), auch bekannt als [Messaging-Datensatzverwaltung](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) (Nur Löschen)
 
 **Ältere Features von SharePoint und OneDrive:**
 
@@ -462,8 +462,8 @@ Wenn Sie SharePoint-Websites für Inhaltstyprichtlinien oder Informationsverwalt
 
 ## <a name="related-information"></a>Verwandte Informationen
 
-- [SharePoint Online-Beschränkungen](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
-- [Limits und Spezifikationen für Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
+- [SharePoint Online-Beschränkungen](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+- [Limits und Spezifikationen für Microsoft Teams](/microsoftteams/limits-specifications-teams) 
 - [Ressourcen, die Sie bei der Einhaltung behördlicher Vorschriften für Informationsgovernance und Datensatzverwaltung unterstützen](retention-regulatory-requirements.md)
 
 ## <a name="configuration-guidance"></a>Konfigurationsleitfaden
@@ -473,4 +473,3 @@ Wenn Sie bereit sind, Aufbewahrungsrichtlinien zu erstellen, lesen Sie [Erstelle
 Erstellen und Anwenden von Aufbewahrungsbezeichnungen:
 - [Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)
 - [Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte](apply-retention-labels-automatically.md)
-

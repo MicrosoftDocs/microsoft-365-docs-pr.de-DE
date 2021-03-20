@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Erfahren Sie mehr über Benutzerrollen in Themen von "Viva".
-ms.openlocfilehash: d5b57e768a1de8bc0447492067371630b2d045f6
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 6d93046a96b60779c3cd3bd6c6aa600cb443118f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453941"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917356"
 ---
 # <a name="microsoft-viva-topics-roles"></a>Themen zu Microsoft Viva – Rollen 
 
@@ -34,7 +34,7 @@ Wenn Sie "Viva Topics" in Ihrer Microsoft 365-Umgebung verwenden, können Ihre B
 Themenbetrachter sind Benutzer in Ihrer Organisation, die Themen anzeigen können, die auf ihrer modernen SharePoint-Website, Microsoft Search über SharePoint und Office.com und dem Themencenter hervorgehoben sind. Sie können weitere Details zu einem Thema auf der Themenseite anzeigen. 
 
 Damit Themenhighlights und ihre Themenseiten für einen Themenbetrachter sichtbar sind, muss der Benutzer:
--   [Erhalten Sie von ihrem Microsoft](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) 365-Administrator eine Lizenz für "Viva Topics".
+-   [Erhalten Sie von ihrem Microsoft](./set-up-topic-experiences.md#assign-licenses) 365-Administrator eine Lizenz für "Viva Topics".
 -   Sie dürfen für Themen sichtbar sein. Diese Aufgabe wird vom Wissensadministrator auf der Seite "Einstellungen für Themen" im Microsoft 365 Admin Center ausgeführt.
 
 
@@ -48,8 +48,8 @@ Ein Mitwirkender eines Themas kann auch ein neues Thema über sein Themencenter 
 
 Zum Erstellen und Bearbeiten eines Themas muss der Benutzer:
 
--   [Erhalten Sie von ihrem Microsoft](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) 365-Administrator eine Lizenz für "Viva Topics".
--   [Ihnen werden Berechtigungen zum Erstellen und Bearbeiten von Themen zugewiesen.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center) Diese Aufgabe wird vom Wissensadministrator auf der Seite "Einstellungen für Themen" im Microsoft 365 Admin Center ausgeführt.
+-   [Erhalten Sie von ihrem Microsoft](./set-up-topic-experiences.md#assign-licenses) 365-Administrator eine Lizenz für "Viva Topics".
+-   [Ihnen werden Berechtigungen zum Erstellen und Bearbeiten von Themen zugewiesen.](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center) Diese Aufgabe wird vom Wissensadministrator auf der Seite "Einstellungen für Themen" im Microsoft 365 Admin Center ausgeführt.
 
 ## <a name="knowledge-managers"></a>Wissensmanager
 
@@ -63,8 +63,8 @@ Auf der Seite Themen verwalten können Wissensmanager die folgenden Aufgaben aus
 Darüber hinaus kann ein Wissensmanager vorhandene Themen bearbeiten oder neue erstellen.
 
 Zum Verwalten von Themen muss der Benutzer folgende Themen verwalten:
--   [Erhalten Sie von ihrem Microsoft](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) 365-Administrator eine Lizenz für "Viva Topics".
--   [Ihnen werden Berechtigungen zum Verwalten von Themen zugewiesen).](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center) Diese Aufgabe wird vom Wissensadministrator auf der Seite "Einstellungen für Themen" im Microsoft 365 Admin Center ausgeführt.
+-   [Erhalten Sie von ihrem Microsoft](./set-up-topic-experiences.md#assign-licenses) 365-Administrator eine Lizenz für "Viva Topics".
+-   [Ihnen werden Berechtigungen zum Verwalten von Themen zugewiesen).](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center) Diese Aufgabe wird vom Wissensadministrator auf der Seite "Einstellungen für Themen" im Microsoft 365 Admin Center ausgeführt.
 
 Benutzer, die über ein gutes Allgemeines Wissen über Ihr Unternehmen verfügen, können gute Kandidaten für die Rolle des Knowledge Managers sein. Diese Personen können nicht nur wissen, ob Themen gültig sind oder nicht, sondern auch Personen innerhalb des Unternehmens kennen, die mit diesen Themen in Verbindung stehen.
 
@@ -85,4 +85,3 @@ Wissensmanager müssen in der Lage sein, sich mit allen Beteiligten von "Viva To
 
 
 ## <a name="see-also"></a>Weitere Informationen:
-

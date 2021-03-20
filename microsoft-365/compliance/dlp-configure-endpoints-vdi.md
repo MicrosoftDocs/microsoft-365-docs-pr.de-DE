@@ -1,5 +1,5 @@
 ---
-title: Onboard-VDI-Geräte (Non-persistent Virtual Desktop Infrastructure)
+title: Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,99 +13,99 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Stellen Sie das Konfigurationspaket auf dem VDI-Gerät (Virtual Desktop Infrastructure) so bereit, dass es auf dem Microsoft 365 Endpoint Data Loss Prevention-Dienst implementiert ist.
-ms.openlocfilehash: ce5ad0ba6af3e18a6f6c53e1860fc47a77c38770
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+description: Stellen Sie das Konfigurationspaket auf einem Virtuellen Desktopinfrastrukturgerät (Virtual Desktop Infrastructure, VDI) so sicher, dass es in den Microsoft 365 Endpoint Data Loss Prevention Service (Verhinderung von Datenverlust) onboardiert wird.
+ms.openlocfilehash: 2a62de6c238c1f681bde8a9bf25ecd596a10d390
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769416"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917951"
 ---
-# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Onboard-VDI-Geräte (Non-persistent Virtual Desktop Infrastructure)
+# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)
 
 **Gilt für:**
-- [Microsoft 365 Endpunkt-Datenverlust Verhinderung (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Microsoft 365 Endpoint Data Loss Prevention (DLP)](./endpoint-dlp-learn-about.md)
 
-- VDI-Geräte (Virtual Desktop Infrastructure)
+- Virtual Desktop Infrastructure (VDI)-Geräte
 
 >[!WARNING]
-> Microsoft 365 Endpoint Data Loss Prevention-Unterstützung für Windows Virtual Desktop unterstützt Szenarien für einzelne Sitzungen. Szenarien mit mehreren Sitzungen auf dem virtuellen Windows-Desktop werden derzeit nicht unterstützt.
+> Microsoft 365 Endpoint-Unterstützung zur Verhinderung von Datenverlust für Windows Virtual Desktop unterstützt Einzelne Sitzungsszenarien. Szenarien mit mehreren Sitzungen auf Windows Virtual Desktop werden derzeit nicht unterstützt.
 
-## <a name="onboard-vdi-devices"></a>Onboard-VDI-Geräte
+## <a name="onboard-vdi-devices"></a>Onboarding von VDI-Geräten
 
-Microsoft 365 Endpoint Data Loss Prevention unterstützt das Onboarding von nicht persistenten VDI-Sitzungen. 
+Microsoft 365 Endpoint Data Loss Prevention unterstützt nicht persistentes VDI-Sitzungs-Onboarding. 
 
 >[!Note]
->Um nicht persistente VDI-Sitzungen an Bord zu können, müssen sich VDI-Geräte auf Windows 10 1809 oder höher befinden.
+>Um nicht persistente VDI-Sitzungen zu integrieren, müssen sich VDI-Geräte unter Windows 10 1809 oder höher benennen.
 
-Beim Onboarding von VDIs kann es zu Problemen kommen. Im folgenden werden typische Herausforderungen für dieses Szenario dargestellt:
+Beim Onboarding von VDIs kann es zu herausforderungen kommen. Es folgen typische Herausforderungen für dieses Szenario:
 
-- Sofortiges frühes Onboarding einer kurzlebigen Sitzung, die vor der eigentlichen Einrichtung auf Microsoft 365-Endpunkt Verhinderung von Datenverlust onboarded sein muss.
-- Der Gerätename wird normalerweise für neue Sitzungen wieder verwendet.
+- Sofortiges frühzeitiges Onboarding einer kurzlebigen Sitzung, die vor der tatsächlichen Bereitstellung in Microsoft 365 Endpoint Data Loss Prevention (Verhinderung von Datenverlust) onboardiert werden muss.
+- Der Gerätename wird in der Regel für neue Sitzungen wiederverwendet.
 
-VDI-Geräte können im Microsoft 365 Compliance Center als Folgendes angezeigt werden:
+VDI-Geräte können im Microsoft 365 Compliance Center wie folgt angezeigt werden:
 
 - Einzelner Eintrag für jedes Gerät.  
-Beachten Sie, dass in diesem Fall *derselbe* Gerätename beim Erstellen der Sitzung konfiguriert werden muss, beispielsweise mithilfe einer unbeaufsichtigten Antwortdatei.
-- Mehrere Einträge für jedes Gerät – eins für jede Sitzung.
+Beachten Sie, dass  in diesem Fall derselbe Gerätename beim Erstellen der Sitzung konfiguriert werden muss, z. B. mithilfe einer unbeaufsichtigten Antwortdatei.
+- Mehrere Einträge für jedes Gerät – einer für jede Sitzung.
 
-Die folgenden Schritte werden Sie durch das Onboarding von VDI-Geräten führen und die Schritte für einzelne und mehrere Einträge hervorheben.
+Die folgenden Schritte führen Sie durch das Onboarding von VDI-Geräten und zeigen Schritte für einzelne und mehrere Einträge an.
 
 >[!WARNING]
-> Bei Umgebungen mit niedrigen Ressourcen Konfigurationen kann das VDI-Startverfahren das Onboarding von Microsoft 365-Endpunkt Datenverlust verlangsamen. 
+> In Umgebungen mit geringen Ressourcenkonfigurationen kann das Onboarding der Verhinderung von Datenverlust in Microsoft 365 Endpoint durch die VDI-Startprozedur verlangsamt werden. 
 
-1.  Öffnen Sie die ZIP-Datei des VDI-Konfigurationspakets ( *DeviceCompliancePackage.zip* ), die Sie aus dem Dienst-Onboarding-Assistenten heruntergeladen haben.
+1.  Öffnen Sie die ZIP-Datei des VDI-Konfigurationspakets (*DeviceCompliancePackage.zip*), die Sie aus dem Assistenten zum Onboarding des Diensts heruntergeladen haben.
 
-2.  Wählen Sie im Navigationsbereich die Option **Einstellungen** für das  >  **Onboarding von Geräten** aus  >  **Onboarding** .
+2.  Wählen Sie im Navigationsbereich **Einstellungen**  >  **Geräte onboarding**  >  **Onboarding aus.**
 
-3. Wählen Sie im Feld **Bereitstellungsmethode** die Option **VDI-Onboarding-Skripts für nicht persistente Endpunkte** aus.
+3. Wählen Sie **im Feld Bereitstellungsmethode** die Option **VDI-Onboardingskripts für nicht persistente Endpunkte aus.**
 
-5. Klicken Sie auf **Paket herunterladen** , und speichern Sie die ZIP-Datei.
+5. Klicken **Sie auf Paket herunterladen,** und speichern Sie die ZIP-Datei.
 
-6. Kopieren Sie die Dateien aus dem DeviceCompliancePackage-Ordner, der aus der ZIP-Datei extrahiert wurde, in das `golden/master` Bild unter dem Pfad `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` . 
+6. Kopieren Sie die Dateien aus dem Ordner DeviceCompliancePackage aus der ZIP-Datei in das Bild `golden/master` unter dem Pfad `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` . 
 
-7. Wenn Sie keinen einzelnen Eintrag für jedes Gerät implementieren, kopieren Sie DeviceComplianceOnboardingScript. cmd.
+7. Wenn Sie keinen einzigen Eintrag für jedes Gerät implementieren, kopieren Sie DeviceComplianceOnboardingScript.cmd.
 
-8. Wenn Sie einen einzelnen Eintrag für jedes Gerät implementieren, kopieren Sie sowohl Onboard-NonPersistentMachine.ps1 als auch DeviceComplianceOnboardingScript. cmd.
+8. Wenn Sie einen einzelnen Eintrag für jedes Gerät implementieren, kopieren Sie Onboard-NonPersistentMachine.ps1 deviceComplianceOnboardingScript.cmd.
     
     > [!NOTE]
-    > Wenn der Ordner nicht angezeigt wird `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` , ist er möglicherweise ausgeblendet. Sie müssen im Datei-Explorer die Option **Ausgeblendete Dateien und Ordner anzeigen** auswählen.
+    > Wenn der Ordner nicht angezeigt `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` wird, wird er möglicherweise ausgeblendet. Sie müssen die Option  Ausgeblendete Dateien und Ordner anzeigen im Datei-Explorer auswählen.
 
-9. Öffnen Sie ein lokales Gruppenrichtlinien-Editor Fenster, und navigieren Sie zu **Computer Konfiguration**  >  **Windows-Einstellungs**  >  **Skripts**  >  **Startup** .
+9. Öffnen Sie ein Fenster des Editors für lokale Gruppenrichtlinien, und navigieren Sie zu **Computerkonfiguration**  >  **Windows-Einstellungen**  >  **Skripts**  >  **starten**.
 
    > [!NOTE]
-   > Domänengruppenrichtlinien können auch für das Onboarding nicht persistenter VDI-Geräte verwendet werden.
+   > Domänengruppenrichtlinien können auch zum Onboarding nicht persistenter VDI-Geräte verwendet werden.
 
-4. Je nach der Methode, die Sie implementieren möchten, führen Sie die entsprechenden Schritte aus:
+4. Führen Sie in Abhängigkeit von der Methode, die Sie implementieren möchten, die entsprechenden Schritte aus:
 
-   **Für einzelne Einträge für jedes Gerät**
+   **Für einzelnen Eintrag für jedes Gerät**
    
-   Wählen Sie die Registerkarte **PowerShell-Skripts** aus, und klicken Sie dann auf **Hinzufügen** (Windows Explorer wird direkt in dem Pfad geöffnet, in dem Sie das Onboarding-Skript zuvor kopiert haben). Navigieren Sie zum Onboarding PowerShell `Onboard-NonPersistentMachine.ps1` -Skript.
+   Wählen Sie **die Registerkarte PowerShell-Skripts** aus, und klicken Sie dann auf Hinzufügen **(Windows** Explorer wird direkt im Pfad geöffnet, in den Sie das Onboardingskript zuvor kopiert haben). Navigieren Sie zum Onboarding des PowerShell-Skripts `Onboard-NonPersistentMachine.ps1` .
    
-   **Für mehrere Einträge für jedes Gerät** :
+   **Für mehrere Einträge für jedes Gerät:**
    
-   Wählen Sie die Registerkarte **Skripts** aus, und klicken Sie dann auf **Hinzufügen** (Windows Explorer wird direkt im Pfad geöffnet, in dem Sie das Onboarding-Skript zuvor kopiert haben). Navigieren Sie zum Onboarding bash `DeviceComplianceOnboardingScript.cmd` -Skript.
+   Wählen Sie **die Registerkarte Skripts** aus, und klicken Sie dann auf **Hinzufügen** (Windows Explorer wird direkt im Pfad geöffnet, in den Sie das Onboardingskript zuvor kopiert haben). Navigieren Sie zum Onboarding-Bash-Skript `DeviceComplianceOnboardingScript.cmd` .
 
 5. Testen Sie Ihre Lösung:
 
    1. Erstellen Sie einen Pool mit einem Gerät.
       
-   1. Bei Gerät anmelden.
+   1. Bei Gerät anmeldet.
       
    1. Abmelden vom Gerät.
 
-   1. Melden Sie sich mit einem anderen Benutzer an einem Gerät an.
+   1. Bei einem anderen Benutzer am Gerät anmeldet.
       
-   1. **Für einzelne Einträge für jedes Gerät** : Überprüfen Sie nur einen Eintrag im Microsoft Defender Security Center.<br>
-      **Für mehrere Einträge für jedes Gerät** : Überprüfen Sie mehrere Einträge im Sicherheits Center von Microsoft Defender.
+   1. **Für einen einzelnen Eintrag für jedes Gerät:** Überprüfen Sie nur einen Eintrag im Microsoft Defender Security Center.<br>
+      **Für mehrere Einträge für jedes Gerät:** Überprüfen Sie mehrere Einträge im Microsoft Defender Security Center.
 
-6. Klicken Sie im Navigationsbereich auf **Geräteliste** .
+6. Klicken **Sie im** Navigationsbereich auf Geräteliste.
 
-7. Verwenden Sie die Suchfunktion, indem Sie den Gerätenamen eingeben und als Suchtyp **Gerät** auswählen.
+7. Verwenden Sie die Suchfunktion, indem Sie den Gerätenamen eingeben und **Gerät als** Suchtyp auswählen.
 
-## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Aktualisieren von VDI-Images (Non-persistent Virtual Desktop Infrastructure)
-Als bewährte Methode wird empfohlen, Offline-Wartungstools zu verwenden, um Golden/Master-Images zu patchen.<br>
-Beispielsweise können Sie die folgenden Befehle verwenden, um ein Update zu installieren, während das Bild offline bleibt:
+## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Aktualisieren von nicht persistenten VDI-Images (Virtual Desktop Infrastructure)
+Als bewährte Methode wird die Verwendung von Offlinewartungstools zum Patchen von Golden/Master-Images empfohlen.<br>
+Sie können z. B. die folgenden Befehle verwenden, um ein Update zu installieren, während das Image offline bleibt:
 
 ```console
 DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing" 
@@ -114,23 +114,23 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
 Weitere Informationen zu DISM-Befehlen und zur Offlinewartung finden Sie in den folgenden Artikeln:
-- [Ändern eines Windows-Abbilds mithilfe von DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
-- [Command-Line Optionen für DISM-Bildverwaltung](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [Verringern der Größe des Komponenten Speichers in einem Windows-Offline Abbild](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [Ändern eines Windows-Images mithilfe von DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [DISM Image Management Command-Line Optionen](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
+- [Verringern der Größe des Komponentenspeichers in einem Offline-Windows-Image](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
-Wenn die Offlinewartung keine geeignete Option für Ihre nicht persistente VDI-Umgebung ist, müssen die folgenden Schritte ausgeführt werden, um die Konsistenz und die Integrität des Sensors sicherzustellen:
+Wenn die Offlinewartung keine praktikable Option für Ihre nicht persistente VDI-Umgebung ist, sollten die folgenden Schritte ausgeführt werden, um Konsistenz und Sensorintehigkeit sicherzustellen:
 
-1. Nachdem Sie das Masterabbild für Onlinewartung oder Patching gestartet haben, führen Sie ein offboarding-Skript aus, um den Microsoft 365-Endpunkt für die Datenverlust-Verhinderung zu deaktivieren. Weitere Informationen finden Sie unter [extern-Geräte mithilfe eines lokalen Skripts](dlp-configure-endpoints-script.md#offboard-devices-using-a-local-script).
+1. Führen Sie nach dem Start des Masterimages für die Onlinewartung oder das Patchen ein offboarding-Skript aus, um den Microsoft 365 Endpoint-Sensor zur Verhinderung von Datenverlust zu deaktivieren. Weitere Informationen finden Sie unter [Offboardgeräte mit einem lokalen Skript](dlp-configure-endpoints-script.md#offboard-devices-using-a-local-script).
 
-2. Stellen Sie sicher, dass der Sensor angehalten wird, indem Sie den folgenden Befehl in einem cmd-Fenster ausführen:
+2. Stellen Sie sicher, dass der Sensor angehalten wird, indem Sie den folgenden Befehl in einem CMD-Fenster ausführen:
 
    ```console
    sc query sense
    ```
 
-3. Dienst das Bild nach Bedarf.
+3. Service des Images nach Bedarf.
 
-4. Führen Sie die folgenden Befehle mit PsExec.exe aus https://download.sysinternals.com/files/PSTools.zip) , um die Inhalte des Cyber-Ordners, die der Sensor seit dem Start möglicherweise angesammelt hat, zu bereinigen:
+4. Führen Sie die folgenden Befehle mit PsExec.exe (die heruntergeladen werden können, um die Inhalte des Cyberordners zu bereinigen, die der Sensor seit dem Start möglicherweise angesammelt https://download.sysinternals.com/files/PSTools.zip) hat:
 
     ```console
     PsExec.exe -s cmd.exe
@@ -140,11 +140,11 @@ Wenn die Offlinewartung keine geeignete Option für Ihre nicht persistente VDI-U
     exit
     ```
 
-5. Schließen Sie das Goldene/Master-Bild wie gewohnt erneut an.
+5. Versiegeln Sie das Golden/Master-Bild wie gewohnt erneut.
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Integrierte Windows 10-Geräte mithilfe von Gruppenrichtlinien](dlp-configure-endpoints-gp.md)
-- [Onboard-Windows 10-Geräte mit Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
-- [Integrierte Windows 10-Geräte mit Tools zur Verwaltung mobiler Geräte](dlp-configure-endpoints-mdm.md)
-- [Onboard-Windows 10-Geräte mithilfe eines lokalen Skripts](dlp-configure-endpoints-script.md)
-- [Problembehandlung bei Onboarding-Problemen bei Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Onboarding von Windows 10-Geräten mithilfe von Gruppenrichtlinien](dlp-configure-endpoints-gp.md)
+- [Onboarding von Windows 10-Geräten mithilfe von Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
+- [Onboarding von Windows 10-Geräten mithilfe von Tools für die Verwaltung von Mobilgeräten](dlp-configure-endpoints-mdm.md)
+- [Onboarding von Windows 10-Geräten mithilfe eines lokalen Skripts](dlp-configure-endpoints-script.md)
+- [Behandeln von Problemen mit dem Microsoft Defender Advanced Threat Protection-Onboarding](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

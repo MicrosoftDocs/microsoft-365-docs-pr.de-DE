@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 54e513fc12a42d2779ee5f35628781676adc0f48
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 558d0fc9279c4b0d9e8c287fe4d99f5ac5884606
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453993"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917488"
 ---
 # <a name="topic-center-overview"></a>Topic Center Übersicht
 
@@ -32,7 +32,7 @@ Während alle lizenzierten Benutzer, die Themen anzeigen können, Zugriff auf da
 
 ## <a name="where-is-my-topic-center"></a>Wo befindet sich mein Themencenter?
 
-Das Themencenter wird während des Setups von "Viva Topics" erstellt. Nach Abschluss des Setups kann ein Administrator die URL auf der [Seite "Topic Center Management" finden.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings)
+Das Themencenter wird während des Setups von "Viva Topics" erstellt. Nach Abschluss des Setups kann ein Administrator die URL auf der [Seite "Topic Center Management" finden.](./topic-experiences-administration.md#to-access-topics-management-settings)
 
 
 1. Klicken Sie im Microsoft 365 Admin Center auf **Einstellungen** und dann **auf Organisationseinstellungen.**
@@ -46,7 +46,7 @@ Das Themencenter wird während des Setups von "Viva Topics" erstellt. Nach Absch
 
 
 
-## <a name="home-page"></a>Homepage
+## <a name="home-page"></a>Startseite
 
 </br>
 
@@ -94,13 +94,6 @@ Wenn Sie über Berechtigungen **zum Erstellen und Bearbeiten von Themen** verfü
 
 
 ## <a name="see-also"></a>Weitere Informationen:
-
-
-
-  
-
-
-
 
 
 

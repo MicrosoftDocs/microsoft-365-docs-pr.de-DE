@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie mehr über die maximale Anzahl von Richtlinien und Elementen pro Richtlinie für Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien.
-ms.openlocfilehash: 547c6396fa9bfcba6dbd271f09a7ea59f9acf170
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 53539df4d36fab02171e1ac06ba944ed3bea34e8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261586"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917241"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Einschränkungen für Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Wenn Sie [Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien](retention.md#retention-policies-and-retention-labels) verwenden, um Daten für Ihre Organisation automatisch zu speichern oder zu löschen, müssen Sie einige maximale Werte beachten.
 
@@ -79,4 +79,3 @@ SharePoint-Beispiel:
 - **Lösung**: Erstellen Sie 20 Aufbewahrungsrichtlinien für SharePoint mit einem Aufbewahrungszeitraum von 10 Jahren, die 100 spezifische Sites enthalten, und erstellen Sie 80 Aufbewahrungsrichtlinien für SharePoint mit einem Aufbewahrungszeitraum von 4 Jahren, die 100 spezifische Sites enthalten.
     
     Da Sie nicht alle SharePoint-Sites aufbewahren müssen, müssen Sie Aufbewahrungsrichtlinien erstellen, die die spezifischen Sites angeben. Da eine Aufbewahrungsrichtlinie nicht mehr als 100 angegebene Sites unterstützt, müssen Sie mehrere Richtlinien für die zwei Aufbewahrungszeiträume erstellen. Diese Aufbewahrungszeiträume belegen die maximale Anzahl eingeschlossener Sites, weshalb die nächste neue Site, die aufbewahrt werden muss, eine neue Aufbewahrungsrichtlinie erfordern würde, unabhängig vom Aufbewahrungszeitraum.
-

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ein Microsoft 365-Klassifikator ist ein Tool, das Sie schulen können, um verschiedene Arten von Inhalten zu erkennen, indem Sie ihm Beispiele zum Betrachten geben. In diesem Artikel erfahren Sie, wie Sie einen benutzerdefinierten Klassifikator erstellen und schulen und umtrainieren, um die Genauigkeit zu erhöhen.
-ms.openlocfilehash: a73acd7665cd23f13329bb5db4e890b0f3b0d861
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 90e47ec94528bbadeb98dc9eb590929e25ae6ff1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423294"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918179"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Erste Schritte mit trainierbaren Klassifizierern
 
@@ -95,7 +95,7 @@ Nachdem der trainierbare Klassifikator genügend positive Beispiele zum Erstelle
 
 ## <a name="how-to-create-a-trainable-classifier"></a>Erstellen eines trainierbaren Klassifizierers
 
-1. Sammeln sie zwischen 50 und 500 Seedinhaltselemente. Dabei darf es sich nur um Beispiele handelt, die den Inhaltstyp stark darstellen, den der trainierbare Klassifikator positiv als In der Klassifizierungskategorie identifizieren soll. Unter [Standarddurchforstung von Dateinamenerweiterungen und analysierten Dateitypen in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) finden Sie informationen zu den unterstützten Dateitypen.
+1. Sammeln sie zwischen 50 und 500 Seedinhaltselemente. Dabei darf es sich nur um Beispiele handelt, die den Inhaltstyp stark darstellen, den der trainierbare Klassifikator positiv als In der Klassifizierungskategorie identifizieren soll. Unter [Standarddurchforstung von Dateinamenerweiterungen und analysierten Dateitypen in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) finden Sie informationen zu den unterstützten Dateitypen.
 
    > [!IMPORTANT]
    > Die Seed- und Testbeispielelemente dürfen nicht verschlüsselt sein und müssen in Englisch sein.
@@ -127,7 +127,7 @@ Nachdem der trainierbare Klassifikator genügend positive Beispiele zum Erstelle
     > [!div class="mx-imgBorder"]
     > ![Trainierbare Klassifikatoren, die für Tests bereit sind](../media/classifier-trainable-ready-to-test-detail.png)
 
-11. Sammeln Sie mindestens 200 Testinhaltselemente (max. 10.000) für optimale Ergebnisse. Dies sollte eine Mischung aus Elementen sein, die starke Positive, starke Negative und einige sind, die in ihrer Natur etwas weniger offensichtlich sind. Unter [Standarddurchforstung von Dateinamenerweiterungen und analysierten Dateitypen in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) finden Sie informationen zu den unterstützten Dateitypen.
+11. Sammeln Sie mindestens 200 Testinhaltselemente (max. 10.000) für optimale Ergebnisse. Dies sollte eine Mischung aus Elementen sein, die starke Positive, starke Negative und einige sind, die in ihrer Natur etwas weniger offensichtlich sind. Unter [Standarddurchforstung von Dateinamenerweiterungen und analysierten Dateitypen in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) finden Sie informationen zu den unterstützten Dateitypen.
 
     > [!IMPORTANT]
     > Die Beispielelemente dürfen nicht verschlüsselt sein und müssen in Englisch sein.

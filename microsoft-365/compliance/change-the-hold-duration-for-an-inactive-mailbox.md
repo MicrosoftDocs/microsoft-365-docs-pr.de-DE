@@ -20,12 +20,12 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: Nachdem ein Office 365-Postfach inaktiv gemacht wurde, ändern Sie die Aufbewahrungsdauer oder die Office 365-Aufbewahrungsrichtlinie, die dem inaktiven Postfach zugewiesen ist.
-ms.openlocfilehash: ec8a4cac7d2ee8e40bd791bd531556d1151c1ad1
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 49d133c64763cee12cb26e27d372a16ba4ad7e94
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421634"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918201"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Ändern der Aufbewahrungsdauer für ein inaktives Postfach
 
@@ -40,9 +40,9 @@ Ein inaktives Postfach wird verwendet, um die E-Mails eines ehemaligen Mitarbeit
     
 - Informationen zum Herstellen einer Verbindung mit Exchange Online PowerShell oder Security & Compliance Center PowerShell finden Sie in einem der folgenden Themen:
     
-  - [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+  - [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
     
-  - [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+  - [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
     
 - Für eDiscovery-Fälle zugeordnete Haltedauern sind unendliche Halte, d. h. es gibt keine Haltedauer, die geändert werden kann. Elemente werden dauerhaft aufbewahrt oder bis der Haltebereich entfernt wird und das inaktive Postfach gelöscht wird.
     

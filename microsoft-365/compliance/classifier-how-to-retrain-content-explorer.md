@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie einem trainierbaren Klassifikator im Inhalts-Explorer Feedback geben.
-ms.openlocfilehash: fabfe8e4df377c25012b358960d7f7ff7ff994bc
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: d61437634dcad7f01a6737947b0f32f42de2818e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423262"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918101"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Neutrainieren eines Klassifizierers im Inhalts-Explorer
 
@@ -109,7 +109,7 @@ Nach einer Umschulung bewerten wir die Leistung des Klassifikierers sowohl für 
 
 Wir vergleichen die Leistungszahlen für beide Gruppen von Elementen für den umtrainierten und veröffentlichten Klassifikator, um eine Empfehlung zur Verbesserung der Veröffentlichung zu geben. 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Weitere Informationen zu trainierbaren Klassifizierern](classifier-learn-about.md)
-- [Standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- [Standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

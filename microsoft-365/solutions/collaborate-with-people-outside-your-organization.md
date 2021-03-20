@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Erfahren Sie, wie Sie Microsoft 365-Apps wie Teams, OneDrive und SharePoint für die Zusammenarbeit mit Personen außerhalb Ihres Unternehmens konfigurieren.
-ms.openlocfilehash: 7b8e5e30d8222d055fc5f64472c4083db614d4bd
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
-ms.translationtype: HT
+ms.openlocfilehash: 359e72c12c43ca1ea984f93d87ab4868e6d1eb66
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261513"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916394"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Zusammenarbeit mit Personen außerhalb Ihrer Organisation
 
@@ -62,6 +62,6 @@ Wenn einige der Freigabefunktionen in Microsoft 365 mit Ihren Governance-Richtli
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Einführung in die Dateizusammenarbeit in Microsoft 365](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
+[Einführung in die Dateizusammenarbeit in Microsoft 365](/sharepoint/intro-to-file-collaboration)
 
-[Dateizusammenarbeit in SharePoint mit Microsoft 365 planen](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)
+[Dateizusammenarbeit in SharePoint mit Microsoft 365 planen](/sharepoint/deploy-file-collaboration)

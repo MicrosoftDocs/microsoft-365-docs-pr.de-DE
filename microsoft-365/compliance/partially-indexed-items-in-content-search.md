@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Erfahren Sie mehr über nicht indizierte Elemente in Exchange und SharePoint, die Sie in eine eDiscovery-Suche, die Sie im Microsoft 365 Compliance Center ausführen, verwenden können.
-ms.openlocfilehash: 308e0755f1966b8e4559cf6f08b3133a00ea1b5a
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 39f78c9a6e937fc7152b86a67e56cc95c132ad6a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50711905"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916807"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Teilweise indizierte Elemente in eDiscovery
 
@@ -57,11 +57,11 @@ Bestimmte Dateitypen wie Bitmap- oder MP3-Dateien enthalten keinen zu indizieren
   
 Eine Liste von unterstützten und deaktivierten Dateiformaten finden Sie in den folgenden Themen:
   
-- **Exchange**  -  [Von der Exchange-Suche indizierte Dateiformate](https://go.microsoft.com/fwlink/p/?LinkID=386618)
+- **Exchange**  -  [Von der Exchange-Suche indizierte Dateiformate](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
-- **Exchange**  -  [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
+- **Exchange**  -  [Get-SearchDocumentFormat](/powershell/module/exchange/get-searchdocumentformat)
 
-- **SharePoint**  -  [Standarddurchforstung von Dateinamenerweiterungen und analysierten Dateitypen in SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)
+- **SharePoint**  -  [Standarddurchforstung von Dateinamenerweiterungen und analysierten Dateitypen in SharePoint](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
   
 ## <a name="messages-and-documents-with-partially-indexed-file-types-can-be-returned-in-search-results"></a>Nachrichten und Dokumente mit teilweise indizierten Dateitypen können in Suchergebnissen zurückgegeben werden
 
@@ -110,7 +110,7 @@ Eine Ausnahme von dieser Regel ist, wenn Sie einen abfragebasierten Halteraum er
 
 In der folgenden Tabelle werden die Indizierungsgrenzwerte beschrieben, die dazu führen können, dass eine E-Mail-Nachricht als teilweise indiziertes Element in einer eDiscovery-Suche in Microsoft 365 zurückgegeben wird.
   
-Eine Liste der Indizierungsgrenzwerte für SharePoint-Dokumente finden Sie unter [Search limits for SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits).
+Eine Liste der Indizierungsgrenzwerte für SharePoint-Dokumente finden Sie unter [Search limits for SharePoint Online](/sharepoint/search-limits).
   
 |**Indizierungsgrenzwert**|**Maximalwert**|**Beschreibung**|
 |:-----|:-----|:-----|

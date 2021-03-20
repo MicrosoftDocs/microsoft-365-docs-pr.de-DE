@@ -1,5 +1,5 @@
 ---
-title: Onboarding-Tools und-Methoden für Windows 10-Geräte (Vorschau)
+title: Onboarding-Tools und -Methoden für Windows 10-Computer
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,33 +13,33 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Onboard-Windows 10-Geräte, sodass Sie Sensordaten an die Microsoft 365-Kompatibilitätslösungen senden können
-ms.openlocfilehash: 5f5a777d11dda900116b6095166ffffed6efa31b
-ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
+description: Onboarding von Windows 10-Geräten, damit sie Sensordaten an die Microsoft 365 Compliance-Lösungen senden können
+ms.openlocfilehash: 7cbadc343c5cee1aa7704bcb9da8be2a152726ab
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769642"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917851"
 ---
-# <a name="onboarding-tools-and-methods-for-windows-10-devices-preview"></a>Onboarding-Tools und-Methoden für Windows 10-Geräte (Vorschau)
+# <a name="onboarding-tools-and-methods-for-windows-10-devices"></a>Onboarding-Tools und -Methoden für Windows 10-Computer
 
 **Gilt für:**
-- [Microsoft 365 Endpunkt-Datenverlust Verhinderung (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Microsoft 365 Endpoint Data Loss Prevention (DLP)](./endpoint-dlp-learn-about.md)
 
-Geräte in Ihrer Organisation müssen so konfiguriert werden, dass der Microsoft 365-Endpunkt für die Datenverlust-Verhinderung Sensordaten von diesen abrufen kann. Es gibt verschiedene Methoden und Bereitstellungstools, mit denen Sie die Geräte in Ihrer Organisation konfigurieren können.
+Geräte in Ihrer Organisation müssen so konfiguriert sein, dass der Microsoft 365 Endpoint Data Loss Prevention Service Sensordaten von ihnen erhalten kann. Es gibt verschiedene Methoden und Bereitstellungstools, die Sie zum Konfigurieren der Geräte in Ihrer Organisation verwenden können.
 
-Die folgenden Bereitstellungstools und-Methoden werden unterstützt:
+Die folgenden Bereitstellungstools und -methoden werden unterstützt:
 
 - Gruppenrichtlinie
 - Microsoft Endpoint Configuration Manager
-- Verwaltung mobiler Geräte (einschließlich Microsoft InTune)
+- Verwaltung mobiler Geräte (einschließlich Microsoft Intune)
 - lokales Skript
 
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 Thema | Beschreibung
 :---|:---
-[Integrierte Windows 10-Geräte mithilfe von Gruppenrichtlinien](dlp-configure-endpoints-gp.md) | Verwenden Sie Gruppenrichtlinien, um das Konfigurationspaket auf Geräten bereitzustellen.
-[Onboard-Windows-Geräte mit Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md) | Sie können entweder Microsoft Endpoint Configuration Manager (aktuelle Verzweigung) Version 1606 oder Microsoft Endpoint Configuration Manager (aktuelle Verzweigung) Version 1602 oder früher verwenden, um das Konfigurationspaket auf Geräten bereitzustellen.
-[Integrierte Windows 10-Geräte mit Tools zur Verwaltung mobiler Geräte](dlp-configure-endpoints-mdm.md) | Verwenden Sie die Tools zur Verwaltung mobiler Geräte oder Microsoft InTune, um das Konfigurationspaket auf dem Gerät bereitzustellen.
-[Onboard-Windows 10-Geräte mithilfe eines lokalen Skripts](dlp-configure-endpoints-script.md) | Erfahren Sie, wie Sie mit dem lokalen Skript das Konfigurationspaket auf Endpunkten bereitstellen.
-[Onboard-VDI-Geräte (Non-persistent Virtual Desktop Infrastructure)](dlp-configure-endpoints-vdi.md) | Erfahren Sie, wie Sie das Konfigurationspaket zum Konfigurieren von VDI-Geräten verwenden.
+[Onboarding von Windows 10-Geräten mithilfe von Gruppenrichtlinien](dlp-configure-endpoints-gp.md) | Verwenden Sie Gruppenrichtlinien zum Bereitstellen des Konfigurationspakets auf Geräten.
+[Onboarding von Windows-Geräten mit Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md) | Sie können entweder Microsoft Endpoint Configuration Manager (current branch) Version 1606 oder Microsoft Endpoint Configuration Manager (current branch) Version 1602 oder früher verwenden, um das Konfigurationspaket auf Geräten zu bereitstellen.
+[Onboarding von Windows 10-Geräten mithilfe von Tools für die Verwaltung von Mobilgeräten](dlp-configure-endpoints-mdm.md) | Verwenden Sie Tools für die mobile Geräteverwaltung oder Microsoft Intune, um das Konfigurationspaket auf dem Gerät bereitzustellen.
+[Onboarding von Windows 10-Geräten mithilfe eines lokalen Skripts](dlp-configure-endpoints-script.md) | Erfahren Sie, wie Sie das lokale Skript zum Bereitstellen des Konfigurationspakets auf Endpunkten verwenden.
+[Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)](dlp-configure-endpoints-vdi.md) | Erfahren Sie, wie Sie das Konfigurationspaket zum Konfigurieren von VDI-Geräten verwenden.

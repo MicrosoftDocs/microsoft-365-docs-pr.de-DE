@@ -18,16 +18,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Weitere Informationen zum Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen mithilfe von PowerShell über die Befehlszeile, unabhängig vom Microsoft 365 Compliance Center.
-ms.openlocfilehash: 5b8bb7a08c9794139e840d59f9238d858e15dd4e
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: 1c3a1e1b9e363659b276d2f11a929308f43737b3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47426982"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918221"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen mithilfe von PowerShell
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Nachdem Sie sich entschieden haben, [Aufbewahrungsbezeichnungen](retention.md) zu verwenden, um Dokumente und E-Mails in Microsoft 365 aufzubewahren oder zu löschen, ist Ihnen vielleicht klar geworden, dass Sie viele und möglicherweise Hunderte von Aufbewahrungsbezeichnungen erstellen und veröffentlichen müssen. Die empfohlene Methode zur Erstellung von skalierbaren Aufbewahrungsbezeichnungen ist die Verwendung eines [Dateiplans](file-plan-manager.md) vom Microsoft 365 Compliance Center. Alternativ können Sie hierzu auch [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) verwenden.
   
@@ -51,7 +51,7 @@ Die in diesem Artikel bereitgestellten Beispielskripts werden von keinem standar
 
 2. Konvertieren Text in Spalten: Registerkarte **Daten** \> **Text in Spalten** \> **Mit Trennzeichen** \> **Komma** \> **Allgemein**
 
-2. Ersetzen Sie die Beispiele durch Einträge für Ihre eigenen Aufbewahrungsbezeichnungen und Einstellungen. Weitere Informationen zu den Parameterwerten finden Sie unter [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).
+2. Ersetzen Sie die Beispiele durch Einträge für Ihre eigenen Aufbewahrungsbezeichnungen und Einstellungen. Weitere Informationen zu den Parameterwerten finden Sie unter [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).
 
 3. Speichern Sie das Arbeitsblatt als CSV-Datei an einem Ort, der für einen späteren Schritt leicht zu finden ist. Beispiel: C:\>Scripts\Labels.csv
 
@@ -78,7 +78,7 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 
 2. Konvertieren Text in Spalten: Registerkarte **Daten** \> **Text in Spalten** \> **Mit Trennzeichen** \> **Komma** \> **Allgemein**
 
-2. Ersetzen Sie die Beispiele durch Einträge für Ihre eigenen Aufbewahrungsbezeichnungsrichtlinien und deren Einstellungen. Weitere Informationen zu den Parameterwerten für dieses Cmdlet finden Sie unter [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy).
+2. Ersetzen Sie die Beispiele durch Einträge für Ihre eigenen Aufbewahrungsbezeichnungsrichtlinien und deren Einstellungen. Weitere Informationen zu den Parameterwerten für dieses Cmdlet finden Sie unter [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy).
 
 3. Speichern Sie das Arbeitsblatt als CSV-Datei an einem Ort, der für einen späteren Schritt leicht zu finden ist. Beispiel: `<path>Policies.csv`
 
@@ -736,7 +736,7 @@ if ($ResultCSV)
 
 ## <a name="step-4-run-the-powershell-script"></a>Schritt 4: Ausführen des PowerShell-Skripts
 
-Zuerst, [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+Zuerst, [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 Führen Sie dann das Skript aus, durch das die Aufbewahrungsbezeichnungen erstellt und veröffentlicht werden:
   
@@ -761,5 +761,3 @@ Sie finden die Protokolldatei an folgenden Speicherort, wobei die Ziffern im Bei
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
 ```
-
-

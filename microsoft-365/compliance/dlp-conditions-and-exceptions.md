@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu dlp-Richtlinienbedingungen und -Ausnahmen
-ms.openlocfilehash: 93311ec369f8dd240b1e76c9e29ef8cc0a144cc2
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 02880a89bf580d94bad4a5dbdce5027b0a194487
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741368"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918011"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions-preview"></a>DLP-Richtlinienbedingungen, Ausnahmen und Aktionen (Vorschau)
 
@@ -105,7 +105,7 @@ In den Tabellen in den folgenden Abschnitten werden die Bedingungen und Ausnahme
 |Nachrichtengröße über|Bedingung: *MessageSizeOver* <br/> Ausnahme: *ExceptIfMessageSizeOver*| Size    |Nachrichten, deren Gesamtgröße (Nachricht sowie Anlagen) größer oder gleich dem angegebenen Wert ist. <br/>**Hinweis**: Grenzwerte für die Nachrichtengröße für Postfächer werden vor E-Mail-Flussregeln ausgewertet. Eine Nachricht, die für ein Postfach zu groß ist, wird zurückgewiesen, bevor eine Regel mit dieser Bedingung auf diese Nachricht angewendet wird.  |
 | Mit Wichtigkeit    | bedingung: *WithImportance* <br/> Ausnahme: *ExceptIfWithImportance*    | Importance    | Nachrichten, die mit der angegebenen Wichtigkeitsstufe markiert sind.    |
 | Inhaltszeichensatz enthält Wörter    | Bedingung: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*    | CharacterSets    | Nachrichten, die beliebige der angegebenen Zeichensatznamen enthalten.    |
-| Absenderüberschreibung    | Bedingung: *HasSenderOverride* <br/> Ausnahme: *ExceptIfHasSenderOverride*    | N/V    | Nachrichten, bei denen der Absender ausgewählt hat, eine Data Loss Prevention (DLP)-Richtlinie außer Kraft zu setzen. Weitere Informationen zu DLP-Richtlinien finden Sie unter [Verhinderung von Datenverlust.](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)   |
+| Absenderüberschreibung    | Bedingung: *HasSenderOverride* <br/> Ausnahme: *ExceptIfHasSenderOverride*    | N/V    | Nachrichten, bei denen der Absender ausgewählt hat, eine Data Loss Prevention (DLP)-Richtlinie außer Kraft zu setzen. Weitere Informationen zu DLP-Richtlinien finden Sie unter [Verhinderung von Datenverlust.](./data-loss-prevention-policies.md)   |
 | Übereinstimmungen mit dem Nachrichtentyp    | bedingung: *MessageTypeMatches* <br/> Ausnahme: *ExceptIfMessageTypeMatches*    | MessageType    | Nachrichten vom angegebenen Typ.    |
 
 ## <a name="actions-for-dlp-policies"></a>Aktionen für DLP-Richtlinien
@@ -122,9 +122,5 @@ In dieser Tabelle werden die Aktionen beschrieben, die in DLP verfügbar sind.
 |Weiterleiten der Nachricht zur Genehmigung an bestimmte genehmigende Benutzer| Mittel|First-Eigenschaft: *ModerateMessageByUser*</br>Zweite Eigenschaft: *Addresses*|Der Parameter Moderate gibt eine Aktion für die DLP-Regel an, die die E-Mail-Nachricht an einen Moderator sendet. Dieser Parameter verwendet die Syntax: @{ ModerateMessageByUser = @("emailaddress1","emailaddress2",..."emailaddressN")}|
 |Empfänger hinzufügen|AddRecipients|First-Eigenschaft: *Field*</br>Zweite Eigenschaft: *Addresses*| Fügt dem Feld An/Cc/Bcc der Nachricht einen oder mehrere Empfänger hinzu. Dieser Parameter verwendet die Syntax: @{<AddToRecipients \| CopyTo \| BlindCopyTo> = "emailaddress"}|
 |Hinzufügen des Vorgesetzten des Absenders als Empfänger|AddRecipients | First-Eigenschaft: *AddedManagerAction*</br>Zweite Eigenschaft: *Field* | Fügt den Vorgesetzten des Absenders als angegebenen Empfängertyp der Nachricht hinzu ( To, Cc, Bcc ) oder leitet die Nachricht an den Vorgesetzten des Absenders ohne Benachrichtigung des Absenders oder des Empfängers um. Diese Aktion funktioniert nur, wenn das Manager -Attribut des Absenders in Active Directory definiert ist. Dieser Parameter verwendet die Syntax: @{AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}|    
-Vordefinierter Betreff    |PrependSubject    |Zeichenfolge    |Fügt den angegebenen Text am Anfang des Felds Subject der Nachricht ein. Verwenden Sie ein Leerzeichen oder einen Doppelpunkt (:) als letztes Zeichen des angegebenen Texts, um ihn vom ursprünglichen Betrefftext zu unterscheiden.</br>Um zu verhindern, dass nachrichten, die bereits den Text im Betreff enthalten (z. B. Antworten), dieselbe Zeichenfolge hinzugefügt werden, fügen Sie der Regel die Ausnahme "Der Betreff enthält Wörter" (ExceptIfSubjectContainsWords) hinzu.    |
+Vordefinierter Betreff    |PrependSubject    |String    |Fügt den angegebenen Text am Anfang des Felds Subject der Nachricht ein. Verwenden Sie ein Leerzeichen oder einen Doppelpunkt (:) als letztes Zeichen des angegebenen Texts, um ihn vom ursprünglichen Betrefftext zu unterscheiden.</br>Um zu verhindern, dass nachrichten, die bereits den Text im Betreff enthalten (z. B. Antworten), dieselbe Zeichenfolge hinzugefügt werden, fügen Sie der Regel die Ausnahme "Der Betreff enthält Wörter" (ExceptIfSubjectContainsWords) hinzu.    |
 Anwenden eines HTML-Haftungsausschlusses    |ApplyHtmlDisclaimer    |First-Eigenschaft: *Text*</br>Zweite Eigenschaft: *Location*</br>Dritte Eigenschaft: *Fallbackaktion*    |Wendet den angegebenen HTML-Haftungsausschluss auf den erforderlichen Speicherort der Nachricht an.</br>Dieser Parameter verwendet die Syntax: @{ Text = " " ; Location = <Append \| Prepend>; FallbackAction = <\| Wrap Ignore \| Reject> }
-
-
-
-

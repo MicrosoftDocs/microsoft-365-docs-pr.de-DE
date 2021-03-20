@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: a474347a193c7ba630fd9696a478e50f73af14f1
-  ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+  ms.openlocfilehash: 79c9bf21fe480faffac90b6b5f5f134e72eff119
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 01/05/2021
-  ms.locfileid: "49751081"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50916840"
 landingContent:
 - title: Informationsschutz und Datenverwaltung
   linkLists:
@@ -55,7 +55,7 @@ landingContent:
     - text: Advanced eDiscovery
       url: overview-ediscovery-20.md
     - text: Core eDiscovery
-      url: ediscovery-cases.md
+      url: ./get-started-core-ediscovery.md
     - text: Inhaltssuche
       url: search-for-content.md
     - text: Überwachung
@@ -67,11 +67,11 @@ landingContent:
     - text: Compliance-Manager
       url: compliance-manager.md
     - text: Aktionsplan zur Einhaltung der DSGVO
-      url: https://docs.microsoft.com/compliance/regulatory/gdpr-action-plan
+      url: /compliance/regulatory/gdpr-action-plan
     - text: Aktionsplan zur ISO-Compliance
-      url: https://docs.microsoft.com/compliance/regulatory/iso-action-plan
+      url: /compliance/regulatory/iso-action-plan
     - text: Aktionsplan zur NIST-Compliance
-      url: https://docs.microsoft.com/compliance/regulatory/nist-action-plan
+      url: /compliance/regulatory/nist-action-plan
 - title: Bereitstellen von Compliancelösungen
   linkLists:
   - linkListType: how-to-guide

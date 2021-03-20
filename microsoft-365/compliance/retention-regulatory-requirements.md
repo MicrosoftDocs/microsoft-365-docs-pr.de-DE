@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Ressourcen, die Sie bei der Einhaltung behördlicher Vorschriften für Informationsgovernance und Datensatzverwaltung unterstützen
-ms.openlocfilehash: e46abc4efec356cfd058414063d3e76ffe8ff224
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: a2629dbd9df4b582b2aeb7726de87d81eb726a76
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50109934"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917781"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Behördliche Vorschriften für Informationsgovernance und Datensatzverwaltung
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Die auf dieser Seite vorgestellten Ressourcen unterstützen Sie dabei, spezifische behördliche Vorschriften für Informationsgovernance und Datensatzverwaltung in Microsoft 365 einzuhalten. In jedem Abschnitt dieses Dokuments werden eine oder mehrere verwandte Bestimmungen behandelt und alle verfügbaren Anleitungen oder Analysen Dritter dazu aufgeführt, wie Microsoft 365 konfiguriert werden kann, um die beschriebenen Anforderungen zu erfüllen.
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie Teams mit grundlegendem Schutz bereitstellen.
-ms.openlocfilehash: 11554dbd7e33a77c9f6397ae9c5e91669f537081
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 4f38bf286b8ebd3edf6f7705299008566d2b7c8f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921870"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916334"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Konfigurieren von Teams mit grundlegendem Schutz
 
@@ -37,9 +37,9 @@ Außerdem empfehlen wir, die grundlegenden Defender für Office 365-Features zum
 
 |Option|Informationen|
 |:------|:-----------|
-|Sichere Anlagen für SPO, OneDrive und Microsoft Teams|[Sichere Anlagen](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Defender für Office 365 – SharePoint, OneDrive und Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
-|Sichere Dokumente|[Sichere Dokumente in Microsoft Defender für Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-|Sichere Links für Microsoft Teams|[Office 365 Sichere Links in Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Sichere Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
+|Sichere Anlagen für SPO, OneDrive und Microsoft Teams|[Sichere Anlagen](../security/office-365-security/atp-safe-attachments.md)<br>[Defender für Office 365 – SharePoint, OneDrive und Microsoft Teams](../security/office-365-security/atp-for-spo-odb-and-teams.md)|
+|Sichere Dokumente|[Sichere Dokumente in Microsoft Defender für Office 365](../security/office-365-security/safe-docs.md)|
+|Sichere Links für Microsoft Teams|[Office 365 Sichere Links in Teams](../security/office-365-security/atp-safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[Sichere Links](../security/office-365-security/atp-safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>Teams-Gastfreigabe
 
@@ -59,7 +59,7 @@ So legen Sie die Gastzugriffseinstellungen für Teams fest
 > [!NOTE]
 > Es könnte bis zu vierundzwanzig Stunden dauern, bis die Gasteinstellung für Teams aktiv wird, nachdem sie eingeschaltet wurde.
 
-Die Gastfreigabe ist für Office 365-Gruppen und Microsoft Office SharePoint Online standardmäßig aktiviert. Wenn Sie jedoch zuvor eine der Einstellungen für die Gastfreigabe für Ihre Organisation geändert haben, empfiehlt es sich, [Zusammenarbeit mit Gästen in einem Team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team) zu prüfen, um sicherzustellen, dass die Gastfreigabe in Teams zur Verfügung steht.
+Die Gastfreigabe ist für Office 365-Gruppen und Microsoft Office SharePoint Online standardmäßig aktiviert. Wenn Sie jedoch zuvor eine der Einstellungen für die Gastfreigabe für Ihre Organisation geändert haben, empfiehlt es sich, [Zusammenarbeit mit Gästen in einem Team](./collaborate-as-team.md) zu prüfen, um sicherzustellen, dass die Gastfreigabe in Teams zur Verfügung steht.
 
 ## <a name="site-and-file-sharing"></a>Website- und Dateifreigabe
 
@@ -71,7 +71,7 @@ So ändern Sie den standardmäßigen Freigabelink
 3. Wählen Sie unter **Datei- und Ordnerlinks** die Option **Nur Personen in Ihrer Organisation** aus.
 4. Klicken Sie auf **Speichern**.
 
-Für eine optimale Benutzererfahrung empfiehlt es sich außerdem, [SharePoint- und OneDrive-Integration in Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) zu aktivieren.
+Für eine optimale Benutzererfahrung empfiehlt es sich außerdem, [SharePoint- und OneDrive-Integration in Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) zu aktivieren.
 
 ## <a name="create-a-team"></a>Ein Team erstellen
 
@@ -94,12 +94,12 @@ So aktualisieren Sie die Freigabeeinstellungen der Website
 
 Microsoft 365 bietet zusätzliche Methoden zum Schützen Ihrer Inhalte. Prüfen Sie, ob die folgenden Optionen zur Verbesserung der Sicherheit in Ihrer Organisation beitragen würden.
 
-- Lassen Sie Gäste den [Nutzungsbedingungen](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use) zustimmen.
-- Konfigurieren Sie eine [Richtlinie für Sitzungstimeout](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) für Gastbenutzer.
-- Erstellen Sie [Typen vertraulicher Informationen](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) und verwenden Sie [Schutz vor Datenverlust](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) zum Festlegen von Richtlinien für den Zugriff auf vertrauliche Informationen.
+- Lassen Sie Gäste den [Nutzungsbedingungen](/azure/active-directory/conditional-access/terms-of-use) zustimmen.
+- Konfigurieren Sie eine [Richtlinie für Sitzungstimeout](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) für Gastbenutzer.
+- Erstellen Sie [Typen vertraulicher Informationen](../compliance/sensitive-information-type-learn-about.md) und verwenden Sie [Schutz vor Datenverlust](../compliance/data-loss-prevention-policies.md) zum Festlegen von Richtlinien für den Zugriff auf vertrauliche Informationen.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Verwalten von Besprechungsrichtlinien in Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams)
+[Verwalten von Besprechungsrichtlinien in Teams](/microsoftteams/meeting-policies-in-teams)
 
-[Erste Schritte mit dem Insider-Risikomanagement](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-configure)
+[Erste Schritte mit dem Insider-Risikomanagement](../compliance/insider-risk-management-configure.md)

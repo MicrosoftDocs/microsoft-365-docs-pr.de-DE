@@ -18,12 +18,12 @@ description: Erfahren Sie, wie Sie die Outlook-Regeln und benutzerdefinierten Fo
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 30ddd5f57dee2156504211e76304d346a63e192d
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 0846051b65b34ec26358f87bb4ca49302573e6e7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406700"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917046"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Erkennen und Behebung von Outlook-Regeln und Benutzerdefinierten Formularinjektionsangriffen
 
@@ -110,7 +110,7 @@ Sie können eine der folgenden Methoden verwenden, um den Angriff zu bestätigen
 
 4. Suchen Sie in der Regelbeschreibung nach Regelaktionen, die beginnen und anwendung oder auf eine verweisen. EXE, . ODER um eine URL zu starten.
 
-5. Suchen Sie nach neuen Prozessen, die mit der Outlook-Prozess-ID beginnen. Weitere Informationen [finden Sie unter Suchen der Prozess-ID](https://docs.microsoft.com/windows-hardware/drivers/debugger/finding-the-process-id).
+5. Suchen Sie nach neuen Prozessen, die mit der Outlook-Prozess-ID beginnen. Weitere Informationen [finden Sie unter Suchen der Prozess-ID](/windows-hardware/drivers/debugger/finding-the-process-id).
 
 ### <a name="steps-to-confirm-the-forms-attack-using-the-outlook-client"></a>Schritte zum Bestätigen des Forms-Angriffs mithilfe des Outlook-Clients
 
@@ -176,19 +176,19 @@ Es gibt zwei Remote-PowerShell-Cmdlets, die Sie verwenden können, um gefährlic
 
 #### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Schritte für Postfächer auf einem Exchange-Server
 
-1. Stellen Sie mithilfe von PowerShell eine Verbindung mit dem Exchange-Server herzustellen. Führen Sie die Schritte unter [Connect to Exchange servers using remote PowerShell aus.](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-servers-using-remote-powershell)
+1. Stellen Sie mithilfe von PowerShell eine Verbindung mit dem Exchange-Server herzustellen. Führen Sie die Schritte unter [Connect to Exchange servers using remote PowerShell aus.](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell)
 
-2. Wenn Sie eine einzelne Regel, mehrere Regeln oder alle Regeln vollständig aus einem Postfach entfernen möchten, verwenden Sie das [Cmdlet Remove-InboxRule.](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)
+2. Wenn Sie eine einzelne Regel, mehrere Regeln oder alle Regeln vollständig aus einem Postfach entfernen möchten, verwenden Sie das [Cmdlet Remove-InboxRule.](/powershell/module/exchange/Remove-InboxRule)
 
-3. Wenn Sie die Regel und deren Inhalt für weitere Untersuchungen beibehalten möchten, verwenden Sie das [Cmdlet Disable-InboxRule.](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule)
+3. Wenn Sie die Regel und deren Inhalt für weitere Untersuchungen beibehalten möchten, verwenden Sie das [Cmdlet Disable-InboxRule.](/powershell/module/exchange/disable-inboxrule)
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Schritte für Postfächer in Exchange Online
 
-1. Führen Sie die Schritte unter [Connect to Exchange Online using PowerShell aus.](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+1. Führen Sie die Schritte unter [Connect to Exchange Online using PowerShell aus.](/powershell/exchange/connect-to-exchange-online-powershell)
 
-2. Wenn Sie eine einzelne Regel, mehrere Regeln oder alle Regeln vollständig aus einem Postfach entfernen möchten, verwenden Sie das [Cmdlet Remove-Inbox Rule.](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)
+2. Wenn Sie eine einzelne Regel, mehrere Regeln oder alle Regeln vollständig aus einem Postfach entfernen möchten, verwenden Sie das [Cmdlet Remove-Inbox Rule.](/powershell/module/exchange/Remove-InboxRule)
 
-3. Wenn Sie die Regel und deren Inhalt für weitere Untersuchungen beibehalten möchten, verwenden Sie das [Cmdlet Disable-InboxRule.](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule)
+3. Wenn Sie die Regel und deren Inhalt für weitere Untersuchungen beibehalten möchten, verwenden Sie das [Cmdlet Disable-InboxRule.](/powershell/module/exchange/disable-inboxrule)
 
 ## <a name="how-to-minimize-future-attacks"></a>Minimieren zukünftiger Angriffe
 
@@ -198,7 +198,7 @@ Die Exploits für Regeln und Formulare werden nur von einem Angreifer verwendet,
 
 Die beste Möglichkeit zum Schutz Ihrer Benutzerkonten und insbesondere Ihrer Administratorkonten besteht in der Einrichtung der [mehrstufigen Authentifizierung für Benutzer.](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) Sie sollten außerdem:
 
-- Überwachen Sie, wie auf Ihre [Benutzerkonten zugegriffen und verwendet wird.](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports) Sie können die anfängliche Verletzung möglicherweise nicht verhindern, aber Sie kürzen die Dauer und die Auswirkungen der Verletzung, indem Sie sie früher erkennen. Sie können diese [Office 365 Cloud App Security-Richtlinien](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) verwenden, um Ihre Konten zu überwachen und ungewöhnliche Aktivitäten zu überwachen:
+- Überwachen Sie, wie auf Ihre [Benutzerkonten zugegriffen und verwendet wird.](/azure/active-directory/active-directory-view-access-usage-reports) Sie können die anfängliche Verletzung möglicherweise nicht verhindern, aber Sie kürzen die Dauer und die Auswirkungen der Verletzung, indem Sie sie früher erkennen. Sie können diese [Office 365 Cloud App Security-Richtlinien](/cloud-app-security/what-is-cloud-app-security) verwenden, um Ihre Konten zu überwachen und ungewöhnliche Aktivitäten zu überwachen:
 
   - **Mehrere** fehlgeschlagene Anmeldeversuche: Diese Richtlinie profiliert Ihre Umgebung und löst Warnungen aus, wenn Benutzer mehrere fehlgeschlagene Anmeldeaktivitäten in einer einzigen Sitzung im Hinblick auf die gelernte Basislinie ausführen, was auf eine versuchte Verletzung hinweisen kann.
 
@@ -226,7 +226,7 @@ Weitere Informationen zu den einzelnen Sicherheitspatches finden Sie unter:
 
 ### <a name="third-monitor-your-outlook-clients"></a>Drittens: Überwachen Ihrer Outlook-Clients
 
-Beachten Sie, dass ein Angreifer auch bei installierten Patches und Updates die Konfiguration des lokalen Computers ändern kann, um das Verhalten "Anwendung starten" erneut zu aktivieren. Sie können die [erweiterte Gruppenrichtlinienverwaltung verwenden,](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) um lokale Computerrichtlinien auf Ihren Clients zu überwachen und zu erzwingen.
+Beachten Sie, dass ein Angreifer auch bei installierten Patches und Updates die Konfiguration des lokalen Computers ändern kann, um das Verhalten "Anwendung starten" erneut zu aktivieren. Sie können die [erweiterte Gruppenrichtlinienverwaltung verwenden,](/microsoft-desktop-optimization-pack/agpm/) um lokale Computerrichtlinien auf Ihren Clients zu überwachen und zu erzwingen.
 
 Anhand der Informationen unter Anzeigen der Systemregistrierung mithilfe von [64-Bit-Versionen](https://support.microsoft.com/help/305097)von Windows können Sie sehen, ob "Anwendung starten" über eine Außerkraftsetzung in der Registrierung erneut aktiviert wurde. Überprüfen Sie die folgenden Unterschlüssel:
 
@@ -236,7 +236,7 @@ Anhand der Informationen unter Anzeigen der Systemregistrierung mithilfe von [64
 
 Suchen Sie nach dem Schlüssel EnableUnsafeClientMailRules. Wenn er dort ist und auf 1 festgelegt ist, wurde der Outlook-Sicherheitspatch überschrieben, und der Computer ist anfällig für den Formular-/Regelangriff. Wenn der Wert 0 ist, ist die Aktion "Anwendung starten" deaktiviert. Wenn die aktualisierte und gepatchte Version von Outlook installiert ist und dieser Registrierungsschlüssel nicht vorhanden ist, ist ein System nicht anfällig für diese Angriffe.
 
-Kunden mit lokalen Exchange-Installationen sollten erwägen, ältere Versionen von Outlook zu blockieren, für die keine Patches verfügbar sind. Details zu diesem Prozess finden Sie im Artikel [Configure Outlook client blocking](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help).
+Kunden mit lokalen Exchange-Installationen sollten erwägen, ältere Versionen von Outlook zu blockieren, für die keine Patches verfügbar sind. Details zu diesem Prozess finden Sie im Artikel [Configure Outlook client blocking](/exchange/configure-outlook-client-blocking-exchange-2013-help).
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sichern von Microsoft 365 wie ein Profi für Internetsicherheit
 

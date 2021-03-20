@@ -17,17 +17,16 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 12/09/2020
-ms.technology: m365d
-ms.openlocfilehash: 45e02e4ce7d5d813cc8215a1f27ed9c415707cb1
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.date: 02/01/2021
+ms.openlocfilehash: c1eba9d78d45068788789825c3513a0fa70255b9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930426"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917134"
 ---
 # <a name="the-action-center"></a>Das Info-Center
 
@@ -37,10 +36,6 @@ ms.locfileid: "49930426"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Verwenden Sie das Action Center ( ), um die Ergebnisse aktueller und früherer Untersuchungen auf den Geräten und Postfächern Ihrer [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) Organisation zu sehen. Je nach Art der Bedrohung und [](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) der resultierenden Wertung können Korrekturaktionen automatisch oder nach Genehmigung durch das Sicherheitsteam Ihrer Organisation ausgeführt werden. Alle Wartungsaktionen – unabhängig davon, ob eine Genehmigung aussteht oder diese bereits genehmigt wurden – werden im Info-Center zusammengefasst. 
-
-![Info-Center](../../media/air-actioncenter.png)
-
 ## <a name="a-single-pane-of-glass-experience"></a>Eine einzige Oberfläche
 
 Das Info-Center bietet eine einzige Oberfläche für folgende Aufgaben:
@@ -48,79 +43,96 @@ Das Info-Center bietet eine einzige Oberfläche für folgende Aufgaben:
 - Anzeigen eines Überwachungsprotokolls von bereits genehmigten Wartungsaktionen und
 - Überprüfen abgeschlossener Wartungsaktionen
 
-Ihr Sicherheitsteam kann effektiver und effizienter arbeiten, da das Action Center einen umfassenden Überblick über Microsoft 365 Defender bei der Arbeit bietet.
+Ihr Sicherheitsteam kann effektiver und effizienter arbeiten, da das Action Center eine umfassende Ansicht von Microsoft 365 Defender bei der Arbeit bietet.
 
-## <a name="go-to-the-action-center"></a>Aufrufen des Info-Centers
+## <a name="a-new-unified-action-center"></a>Ein neues, einheitliches Aktionscenter
 
-1. Gehen Sie zu [https://security.microsoft.com](https://security.microsoft.com), und melden Sie sich an. 
+Wir freuen uns, ein neues, einheitliches Aktionscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) )! 
 
-2. Wählen Sie im Navigationsbereich **Info-Center** aus. 
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center in Microsoft 365 Defender":::
 
-3. Im Aktionscenter werden zwei Registerkarten angezeigt: **"Ausstehend"** und **"Verlauf".**
+Das verbesserte Aktionscenter listet ausstehende und abgeschlossene Korrekturaktionen für Ihre Geräte, E-Mail-& Inhalte der Zusammenarbeit und Identitäten an einem Ort auf.
+- Wenn Sie zuvor das Office 365 Security & Compliance Center ( ) verwendet haben, testen Sie das neue, einheitliche [https://protection.office.com](https://protection.office.com) Action Center im Microsoft 365 Security Center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Wenn Sie das Action Center im Microsoft Defender Security Center ( ) verwendet haben, versuchen Sie es mit dem neuen, einheitlichen [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) Action Center im Microsoft 365 Security Center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Wenn Sie bereits das Microsoft 365 Security Center ( verwendet haben), werden im Action Center ( ) mehrere [https://security.microsoft.com](https://security.microsoft.com) Verbesserungen [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) angezeigt.
 
-    - Auf der Registerkarte **Ausstehend** werden Untersuchungen aufgeführt, die von einer Person in Ihrem Sicherheitsteam überprüft und genehmigt werden müssen. Überprüfen Sie alle ausstehenden Elemente, die hier angezeigt werden, und ergreifen Sie entsprechende Maßnahmen.
+Das einheitliche Action Center vereint Korrekturaktionen in Defender for Endpoint und Defender für Office 365. Es definiert eine gemeinsame Sprache für alle Korrekturaktionen und bietet eine einheitliche Untersuchungserfahrung. Das Aktionscenter bietet Ihrem Sicherheitsbetriebsteam eine "einzelne Glasfenster"-Erfahrung zum Anzeigen und Verwalten von Korrekturaktionen.  
 
-    - Auf der Registerkarte **Verlauf** werden frühere Untersuchungen und Wartungsaktionen aufgeführt, die automatisch ausgeführt wurden. Sie können Daten für den vergangenen Tag, die letzte Woche, den letzten Monat oder die letzten sechs Monate anzeigen.
+Sie können das einheitliche Aktionscenter verwenden, wenn Sie über entsprechende Berechtigungen und mindestens eines der folgenden Abonnements verfügen:
 
-4. Wenn nur bestimmte Spalten angezeigt werden sollen, wählen Sie **Spalten anpassen** aus.<br/>![Action Center in Microsoft 365 Defender](../../media/mtp-action-center.png)
-
-5. Wählen Sie ein Element in der Liste aus, um weitere Details zu einer Untersuchung anzuzeigen. Die Untersuchungsdetailansicht wird geöffnet.<br/>![Untersuchungsdetails](../../media/mtp-air-investdetails.png)
-
-    - Wenn sich die Untersuchung auf E-Mail-Inhalte bezieht (z. B. die Entität ist ein Postfach), werden die Untersuchungsdetails im Security & Compliance Center ( [https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation) ) geöffnet. 
-
-    - Wenn es bei der Untersuchung um ein Gerät geht, werden die Untersuchungsdetails im Security Center ([https://security.microsoft.com](https://security.microsoft.com)) geöffnet. 
+- [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Defender for Office 365](../office-365-security/office-365-atp.md)
+- [Microsoft 365 Defender](./microsoft-threat-protection.md)
 
 > [!TIP]
-> Wenn Sie der Meinung sind, dass etwas von automatisierten Untersuchungs- und Antwortfeatures in Microsoft 365 Defender übersehen oder falsch erkannt wurde, teilen Sie uns dies mit! Erfahren [Sie, wie Sie falsch positive/negative Ergebnisse in automatisierten Untersuchungs- und Reaktionsfunktionen (AIR) in Microsoft 365 Defender melden.](mtp-autoir-report-false-positives-negatives.md)
+> Weitere Informationen finden Sie unter [Requirements](./prerequisites.md).
 
-## <a name="available-actions"></a>Verfügbare Aktionen
+## <a name="using-the-action-center"></a>Verwenden des Aktionscenters
 
-Wenn Korrekturmaßnahmen ergriffen werden, werden sie auf der Registerkarte **"Verlauf"** im Aktionscenter aufgeführt. Dazu gehören folgende Aktionen:
+1. Gehen Sie zu [https://security.microsoft.com](https://security.microsoft.com), und melden Sie sich an. 
+2. Wählen Sie im Navigationsbereich **Info-Center** aus. 
 
-- Erfassen des Untersuchungspakets 
+Wenn Sie das Aktionscenter besuchen, werden zwei Registerkarten angezeigt: Ausstehende Aktionen und Verlauf. In der folgenden Tabelle wird zusammengefasst, was auf den einzelnen Registerkarten angezeigt wird:
+
+|Registerkarte  |Beschreibung  |
+|---------|---------|
+|**Ausstehend**     | Zeigt eine Liste der Aktionen an, die Aufmerksamkeit erfordern. Sie können Aktionen gleichzeitig genehmigen oder ablehnen oder mehrere Aktionen auswählen, wenn sie denselben Aktionstyp haben (z. B. Quarantänedatei). <p>**TIPP:** Achten Sie darauf, ausstehende Aktionen so schnell wie möglich zu überprüfen und zu genehmigen (oder abzulehnen), damit Ihre automatisierten Untersuchungen zeitnah abgeschlossen werden können.       |
+|**Verlauf**     | Dient als Überwachungsprotokoll für Aktionen, die ergriffen wurden, z. B.: <br/>– Abhilfemaßnahmen, die als Ergebnis automatisierter Untersuchungen ergriffen wurden <br/>– Korrekturaktionen, die für verdächtige oder schädliche E-Mail-Nachrichten, Dateien oder URLs ergriffen wurden<br/>– Korrekturaktionen, die vom Sicherheitsbetriebsteam genehmigt wurden <br/>– Befehle, die ausgeführt wurden, und Behebungsaktionen, die während Liveantwortsitzungen angewendet wurden<br/>– Abhilfemaßnahmen, die von Ihrem Antivirenschutz ausgeführt wurden <p>Bietet eine Möglichkeit, bestimmte Aktionen rückgängig zu machen (siehe [Rückgängig gemachte Aktionen](mtp-autoir-actions.md#undo-completed-actions)).        |
+
+Sie können Daten im Aktionscenter anpassen, sortieren, filtern und exportieren.
+
+:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="Mit dem Aktionscenter können Sie Ihre Aktionsliste sortieren, filtern und anpassen.":::
+
+- Wählen Sie eine Spaltenüberschrift aus, um Elemente in aufsteigender oder absteigender Reihenfolge zu sortieren.
+- Verwenden Sie den Zeitraumfilter, um Daten für den letzten Tag, die letzte Woche, 30 Tage oder 6 Monate anzeigen zu können.
+- Wählen Sie die Spalten aus, die Sie anzeigen möchten.
+- Geben Sie an, wie viele Elemente auf jeder Datenseite enthalten sein müssen.
+- Verwenden Sie Filter, um nur die Elemente zu sehen, die Sie anzeigen möchten.
+- Wählen **Sie Exportieren** aus, um Ergebnisse in eine CSV-Datei zu exportieren.
+
+## <a name="actions-tracked-in-the-action-center"></a>Im Aktionscenter nachverfolgte Aktionen
+
+Alle Aktionen, unabhängig davon, ob sie noch ausstehen oder bereits ergriffen wurden, werden im Aktionscenter nachverfolgt. Folgende Aktionen sind verfügbar:
+
+- Untersuchungspaket sammeln 
 - Gerät isolieren (diese Aktion kann rückgängig gemacht werden) 
 - Offboardcomputer 
-- Codeausführung veröffentlichen 
-- Isolieren 
+- Ausführung von Releasecode 
+- Veröffentlichung aus der Quarantäne 
 - Anforderungsbeispiel 
 - Einschränken der Codeausführung (diese Aktion kann rückgängig gemacht werden) 
-- Ausführen eines Antivirenscans 
+- Ausführen der Antivirenscans 
 - Beenden und Isolieren 
 
-> [!NOTE]
-> Zusätzlich zu Denkmaßnahmen, die automatisch ausgeführt werden, kann Ihr Sicherheitsteam manuelle Maßnahmen ergreifen, um erkannte Bedrohungen zu adressieren. Weitere Informationen zu automatischen und manuellen Wartungsaktionen finden Sie unter ["Problembehebungsaktionen".](mtp-remediation-actions.md)
+Neben Denkmaßnahmen, die automatisch als Ergebnis automatisierter Untersuchungen ausgeführt [werden,](mtp-autoir.md)verfolgt das Action Center auch Aktionen, die Ihr Sicherheitsteam zur Behebung erkannter Bedrohungen ergriffen hat, sowie Aktionen, die als Ergebnis von Bedrohungsschutzfeatures in Microsoft 365 Defender ausgeführt wurden. Weitere Informationen zu automatischen und manuellen Korrekturaktionen finden Sie unter [Remediation actions](mtp-remediation-actions.md).
 
-## <a name="action-source"></a>Aktionsquelle
+## <a name="viewing-action-source-details"></a>Anzeigen von Details zur Aktionsquelle
 
-(**NEU!**) Wie Sie wissen, vereint Microsoft 365 Defender automatisierte Untersuchungs- und Reaktionsfunktionen in mehreren Diensten, z. B. [Microsoft Defender für Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) und Microsoft Defender für Office [365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) Das neue und verbesserte Aktionscenter enthält jetzt eine Quellspalte "Aktion", die Ihnen mitteilt, woher die einzelnen Korrekturmaßnahmen stammen.  
-
-In der folgenden Tabelle werden mögliche **Aktionsquellenwerte** beschrieben:
+(**NEU!**) Das verbesserte Aktionscenter enthält jetzt eine **Aktionsquellenspalte,** in der Sie erfahren, woher die einzelnen Aktionen stammen. In der folgenden Tabelle werden mögliche **Aktionsquellenwerte** beschrieben:
 
 | Aktionsquellenwert | Beschreibung |
 |:-----|:---|
-| **Manuelle Geräteaktion** | Eine manuelle Aktion auf einem Gerät. Beispiele hierfür [sind Geräteisolation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network) oder [Dateiquarantäne.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts#stop-and-quarantine-files) |
-| **Manuelle E-Mail-Aktion** | Eine manuelle Aktion für E-Mails. Ein Beispiel enthält das soft-deleting von E-Mail-Nachrichten oder [die Behebung einer E-Mail-Nachricht.](https://docs.microsoft.com/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365) |
-| **Automatisierte Geräteaktion** | Eine automatisierte Aktion für eine Entität, z. B. eine Datei oder einen Prozess. Beispiele für automatisierte Aktionen sind das Senden einer Datei in Quarantäne, das Beenden eines Prozesses und das Entfernen eines Registrierungsschlüssels. (Siehe [Korrekturaktionen in Microsoft Defender for Endpoint.)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#remediation-actions) |
-| **Automatisierte E-Mail-Aktion** | Eine automatisierte Aktion für E-Mail-Inhalte, z. B. eine E-Mail-Nachricht, anlage oder URL. Beispiele für automatisierte Aktionen sind das soft-deleting von E-Mail-Nachrichten, das Blockieren von URLs und das Deaktivieren der externen E-Mail-Weiterleitung. (Siehe [Korrekturaktionen in Microsoft Defender für Office 365.)](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-remediation-actions) |
-| **Erweiterte Suche** | Aktionen auf Geräten oder E-Mails mit [erweiterter Suche.](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-overview) |
-| **Explorer-Aktion** | Aktionen für E-Mail-Inhalte mit [Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
-| **Manuelle Liveantwortaktion** | Aktionen, die auf einem Gerät mit [Liveantwort ergriffen werden.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) Beispiele hierfür sind das Löschen einer Datei, das Beenden eines Prozesses und das Entfernen einer geplanten Aufgabe. |
-| **Liveantwortaktion** | Aktionen, die auf einem Gerät mit [Microsoft Defender für Endpunkt-APIs .](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis#microsoft-defender-for-endpoint-apis) Beispiele für Aktionen sind das Isolieren eines Geräts, das Ausführen eines Antivirenscans und das Abrufen von Informationen zu einer Datei. |
+| **Manuelle Geräteaktion** | Eine manuelle Aktion auf einem Gerät. Beispiele hierfür [sind Geräteisolation](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network) oder [Dateiquarantäne.](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts#stop-and-quarantine-files) |
+| **Manuelle E-Mail-Aktion** | Eine manuelle Aktion für E-Mails. Ein Beispiel umfasst das Soft-Deleting von E-Mail-Nachrichten oder [das Löschen einer E-Mail-Nachricht.](../office-365-security/remediate-malicious-email-delivered-office-365.md) |
+| **Automatische Geräteaktion** | Eine automatisierte Aktion für eine Entität, z. B. eine Datei oder einen Prozess. Beispiele für automatisierte Aktionen sind das Senden einer Datei in quarantäne, das Beenden eines Prozesses und das Entfernen eines Registrierungsschlüssels. (Siehe [Korrekturaktionen in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#remediation-actions).) |
+| **Automatisierte E-Mail-Aktion** | Eine automatisierte Aktion für E-Mail-Inhalte, z. B. eine E-Mail-Nachricht, anlage oder URL. Beispiele für automatisierte Aktionen sind das soft-deleting von E-Mail-Nachrichten, das Blockieren von URLs und das Deaktivieren der externen E-Mail-Weiterleitung. (Siehe [Korrekturaktionen in Microsoft Defender für Office 365](../office-365-security/air-remediation-actions.md).) |
+| **Erweiterte Suche** | Aktionen auf Geräten oder E-Mails mit [erweiterter Suche](./advanced-hunting-overview.md). |
+| **Explorer-Aktion** | Aktionen für E-Mail-Inhalte mit [Explorer](../office-365-security/threat-explorer.md). |
+| **Manuelle Liveantwortaktion** | Aktionen, die auf einem Gerät mit [Liveantwort ergriffen werden.](/windows/security/threat-protection/microsoft-defender-atp/live-response) Beispiele hierfür sind das Löschen einer Datei, das Beenden eines Prozesses und das Entfernen einer geplanten Aufgabe. |
+| **Liveantwortaktion** | Aktionen auf einem Gerät mit [Microsoft Defender für Endpunkt-APIs](/windows/security/threat-protection/microsoft-defender-atp/management-apis#microsoft-defender-for-endpoint-apis). Beispiele für Aktionen sind das Isolieren eines Geräts, das Ausführen eines Antivirenscans und das Abrufen von Informationen zu einer Datei. |
 
 ## <a name="required-permissions-for-action-center-tasks"></a>Erforderliche Berechtigungen für Info-Center-Aufgaben
 
-Um ausstehende Aktionen im Info-Center zu genehmigen oder abzulehnen, müssen Sie über die Berechtigungen verfügen, die in der folgenden Tabelle aufgeführt sind:
+Zum Ausführen von Aufgaben, z. B. genehmigen oder ablehnen ausstehende Aktionen im Aktionscenter, müssen Ihnen berechtigungen zugewiesen werden, wie in der folgenden Tabelle aufgeführt:
 
 |Wartungsaktion |Erforderliche Rollen und Berechtigungen |
 |--|----|
-|Problembehebung für Microsoft Defender für Endpunkte (Geräte) |Sicherheitsadministratorrolle in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) oder im Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- oder ---<br/>Rolle "Aktive Wartungsaktionen", die in Microsoft Defender for Endpoint zugewiesen ist <br/> <br/> Weitere Informationen hierzu finden Sie in den folgenden Ressourcen: <br/>- [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Erstellen und Verwalten von Rollen für die rollenbasierte Zugriffssteuerung (Microsoft Defender for Endpoint)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
-|Wartung von Microsoft Defender für Office 365 (Office-Inhalte und E-Mail)  |Sicherheitsadministratorrolle in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) oder im Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- und --- <br/>Search and Purge role assigned the Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**WICHTIG:** Wenn Ihnen die Rolle "Sicherheitsadministrator" nur im Security & Compliance Center zugewiesen ist, können Sie nicht auf das Action Center oder die Microsoft 365 Defender-Funktionen zugreifen. Ihnen muss die Sicherheitsadministratorrolle in Azure Active Directory oder im Microsoft 365 Admin Center zugewiesen sein. <br/><br/>Weitere Informationen hierzu finden Sie in den folgenden Ressourcen: <br/>- [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Berechtigungen im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender for Endpoint Remediation (Devices) |**Sicherheitsadministratorrolle** in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) oder im Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- oder ---<br/>In Microsoft Defender for Endpoint **zugewiesene** Rolle für aktive Korrekturaktionen <br/> <br/> Weitere Informationen hierzu finden Sie in den folgenden Ressourcen: <br/>- [Administratorrollenberechtigungen in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Erstellen und Verwalten von Rollen für die rollenbasierte Zugriffssteuerung (Microsoft Defender for Endpoint)](/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
+|Microsoft Defender for Office 365-Korrektur (Office-Inhalt und E-Mail)  |**Sicherheitsadministratorrolle** in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) oder im Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- und --- <br/>**Search and Purge** role assigned the Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**WICHTIG:** Wenn Die  Rolle "Sicherheitsadministrator" nur im Office 365 Security & Compliance Center ( ) zugewiesen ist, können Sie nicht auf die [https://protection.office.com](https://protection.office.com) Funktionen "Action Center" oder "Microsoft 365 Defender" zugreifen. Die Rolle **"Sicherheitsadministrator"** muss in Azure Active Directory oder im Microsoft 365 Admin Center zugewiesen sein. <br/><br/>Weitere Informationen hierzu finden Sie in den folgenden Ressourcen: <br/>- [Administratorrollenberechtigungen in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Berechtigungen im Security & Compliance Center](../office-365-security/permissions-in-the-security-and-compliance-center.md) |
 
-> [!NOTE]
-> Benutzer, denen in Azure Active Directory die Rolle Globaler Administrator zugewiesen ist, können alle ausstehenden Aktionen im Info-Center genehmigen oder ablehnen. Als bewährte Methode sollte Ihre Organisation jedoch die Anzahl der Personen einschränken, denen die Rolle des globalen Administrators zugewiesen ist. Es wird empfohlen, die oben aufgeführten Rollen Sicherheitsadministrator, Aktive Wartungsaktionen und Suchen und Löschen für Info-Center-Berechtigungen zu verwenden.
+> [!TIP]
+> Benutzer, denen in Azure Active Directory die Rolle **Globaler Administrator** zugewiesen ist, können alle ausstehenden Aktionen im Info-Center genehmigen oder ablehnen. Als bewährte Methode sollte Ihre Organisation jedoch die Anzahl der Personen begrenzen, denen die Rolle **"Globaler Administrator"** zugewiesen ist. Es wird empfohlen, die in der vorherigen Tabelle aufgeführten Rollen **"Sicherheitsadministrator",**"Aktive Korrekturmaßnahmen" und "Suchen und Löschen" für Berechtigungen im Aktionscenter zu verwenden.  
 
-## <a name="next-steps"></a>Nächste Schritte 
+## <a name="next-step"></a>Nächster Schritt 
 
-- [Genehmigen oder Ablehnen ausstehender Aktionen nach einer automatischen Untersuchung](mtp-autoir-actions.md)
-- [Anzeigen der Ergebnisse einer automatischen Untersuchung](mtp-autoir-results.md)
-
+- [Überprüfen und Verwalten von Korrekturaktionen](mtp-autoir-actions.md)

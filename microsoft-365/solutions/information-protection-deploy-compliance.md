@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Compliance-Managers zum Verwalten von Verbesserungs Aktionen
+title: Verwalten von Verbesserungsmaßnahmen mithilfe des Compliance-Managers
 ms.author: chvukosw
 author: chvukosw
 f1.keywords:
@@ -16,88 +16,88 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: In diesem Artikel erfahren Sie, wie Sie mit der Kompatibilitätsbewertung und dem Compliance-Manager ihr Schutzniveau für personenbezogene Daten verbessern.
-ms.openlocfilehash: f90826795197b392f629eb8eec71b7f27081b697
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+description: Erfahren Sie, wie Sie Compliance Score und Compliance Manager verwenden, um Ihr Schutzniveau für personenbezogene Daten zu verbessern.
+ms.openlocfilehash: 87131ea65661e8285fd7c3b36a87c79b618348d7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791882"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918570"
 ---
-# <a name="use-compliance-manager-to-manage-improvement-actions"></a>Verwenden des Compliance-Managers zum Verwalten von Verbesserungs Aktionen
+# <a name="use-compliance-manager-to-manage-improvement-actions"></a>Verwalten von Verbesserungsmaßnahmen mithilfe des Compliance-Managers
 
-Microsoft Compliance Manager unterstützt Sie bei der Verwaltung von Verbesserungen im Zusammenhang mit Datenschutzbestimmungen wie der [allgemeinen Datenschutzverordnung (dsgvo)](../compliance/gdpr.md), dem [California Consumer Protection Act CCPA)](../compliance/ccpa-faq.md), dem HIPAA-HITECH (US Health Care Privacy Act) und dem Brazil Data Protection Act (LGPD).
+Microsoft Compliance Manager kann Ihnen dabei helfen, Verbesserungen im Zusammenhang mit Datenschutzbestimmungen wie der Allgemeinen Datenschutzverordnung [(DSGVO)](/compliance/regulatory/gdpr)der Europäischen Union, dem California [Consumer Protection Act CCPA)](/compliance/regulatory/ccpa-faq), HIPAA-HITECH (US Health Care Privacy Act) und dem Brazil Data Protection Act (LGPD) zu verwalten.
 
-In diesem Artikel werden Anleitungen zur Verwendung dieses Tools für Datenschutzzwecke erläutert.
+Dieser Artikel enthält Anleitungen zur Verwendung dieses Tools für Datenschutzzwecke.
 
 >[!Note]
->Empfehlungen des Compliance-Managers sollten nicht als eine Garantie für Compliance interpretiert werden. Es liegt an Ihnen, die Effektivität von Kunden Kontrollen pro ihrer regulatorischen Umgebung zu bewerten und zu validieren. Diese Dienste unterliegen den allgemeinen Geschäftsbedingungen in den [Online Dienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910). Siehe auch [Leitfaden zur Lizenzierung von Microsoft 365 für Sicherheit und Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+>Empfehlungen des Compliance-Managers sollten nicht als eine Garantie für Compliance interpretiert werden. Es liegt an Ihnen, die Effektivität von Kundenkontrollen nach Ihrer gesetzlichen Umgebung zu bewerten und zu überprüfen. Diese Dienste unterliegen den Allgemeinen Geschäftsbedingungen in den [Onlinedienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910). Siehe auch [Microsoft 365-Lizenzierungsanleitungen für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 >
 
-## <a name="getting-started-with-compliance-manager"></a>Erste Schritte mit Compliance-Manager
+## <a name="getting-started-with-compliance-manager"></a>Erste Schritte mit Compliance Manager
 
-#### <a name="what-is-compliance-manager"></a>Was ist Compliance-Manager?
+#### <a name="what-is-compliance-manager"></a>Was ist Compliance Manager
 
-[Compliance-Manager](../compliance/compliance-manager.md) ist ein Workflow basiertes Risiko Bewertungstool im Microsoft 365 Compliance Center zum Verwalten von behördlichen Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services. Im Rahmen Ihres Microsoft 365-oder Azure Active Directory (Azure AD)-Abonnements unterstützt Sie Compliance-Manager beim Verwalten der behördlichen Compliance im Rahmen des Modells für die gemeinsame Verantwortung für Microsoft Cloud Services.
+[Compliance Manager](../compliance/compliance-manager.md) ist ein workflowbasiertes Risikobewertungstool im Microsoft 365 Compliance Center für die Verwaltung behördlicher Complianceaktivitäten im Zusammenhang mit Microsoft Cloud Services. Im Rahmen Ihres Microsoft 365- oder Azure Active Directory (Azure AD)-Abonnements hilft Ihnen der Compliance-Manager, die Einhaltung gesetzlicher Bestimmungen innerhalb des Modells für gemeinsame Verantwortung für Microsoft Cloud Services zu verwalten.
 
-**Gebrauchsfertige Bewertungen**
+**Bereit zur Verwendung von Bewertungen**
 
-Compliance-Manager stellt vorgefertigte Vorlagen zum [Erstellen von Assessments](../compliance/compliance-manager-assessments.md) bereit, die an datenschutzbezogenen Vorschriften wie dsgvo und HIPAA/HITECH ausgerichtet sind. Die Vorlagen verfügen über integrierte Steuerungs Zuordnungen, die Sie bei der Durchführung von Verbesserungs Aktionen zur Erfüllung der Anforderungen der Verordnung unterstützen. Jede Bewertung enthält Informationen zu den Steuerelementen, die jede Verordnung spezifisch für den Zieldienst aufruft, aufgeschlüsselt nach Steuerelementen, die Sie verwalten, und steuert, welche Microsoft verwaltet. 
+Compliance Manager bietet vordefinierte [](../compliance/compliance-manager-assessments.md) Vorlagen für das Erstellen von Bewertungen, die an datenschutzbezogenen Bestimmungen wie DSGVO und HIPAA/HITECH ausgerichtet sind. Die Vorlagen verfügen über integrierte Steuerelementzuordnungen, mit deren Hilfe Sie Verbesserungsmaßnahmen ergreifen können, um die Anforderungen der Verordnung zu erfüllen. Jede Bewertung enthält Informationen zu den Steuerelementen, die von jeder Verordnung für den Zieldienst verlangt werden, aufgeschlüsselt nach Steuerelementen, die Sie verwalten und von Microsoft verwaltet werden. 
 
-Mithilfe einer vordefinierten Vorlage können Sie schnell mit Risikobewertungen beginnen. Wenn Sie mit dem Compliance-Manager besser vertraut sind, können Sie eine vorgefertigte Vorlage anpassen, indem Sie eigene Steuerelemente und Verbesserungs Aktionen hinzufügen, oder Sie können eigene benutzerdefinierte Bewertungen erstellen, die den Anforderungen Ihrer Organisation entsprechen.
+Die Verwendung einer vordefinierten Vorlage hilft Ihnen, schnell mit Risikobewertungen zu beginnen. Wenn Sie den Compliance Manager besser nutzen, können Sie eine vordefinierte Vorlage anpassen, indem Sie eigene Steuerelemente und Verbesserungsmaßnahmen hinzufügen oder eigene benutzerdefinierte Bewertungen erstellen, die den Anforderungen Ihrer Organisation entsprechen.
 
-Zeigen Sie die [vollständige Liste der](../compliance/compliance-manager-templates-list.md) vom Compliance-Manager bereitgestellten Bewertungs Vorlagen an.
+Zeigen Sie [die vollständige Liste der vom](../compliance/compliance-manager-templates-list.md) Compliance Manager bereitgestellten Bewertungsvorlagen an.
 
-**Echt Zeit Kompatibilitätsbewertung**
+**Compliance-Bewertung in Echtzeit**
 
-Compliance-Manager bietet Ihnen außerdem eine Konformitätsbewertung, die Ihren Fortschritt beim Abschließen empfohlener Verbesserungs Aktionen innerhalb von Steuerelementen misst. Sie können diese Bewertung zum Überwachen des Fortschritts und zum Priorisieren von Aktionen basierend auf Ihrem Potenzial zur Verringerung des Risikos verwenden.
+Der Compliance-Manager bietet Ihnen außerdem eine Compliance-Bewertung, die Ihren Fortschritt beim Abschließen empfohlener Verbesserungsmaßnahmen in Steuerelementen misst. Sie können diese Bewertung verwenden, um Ihren Fortschritt zu überwachen und Aktionen basierend auf ihrem Potenzial zur Risiko reduzieren zu priorisieren.
 
-#### <a name="use-the-compliance-manager-quickstart-guide"></a>Verwenden des Compliance-Manager-schnellstarthandbuchs
+#### <a name="use-the-compliance-manager-quickstart-guide"></a>Verwenden des Schnellstarthandbuchs für Compliance-Manager
 
-Das [Compliance-Manager-Schnellstart](../compliance/compliance-manager-quickstart.md) Handbuch enthält graduierte Schritte und Links zu wichtigen Ressourcen, die Sie bei der Arbeit mit Compliance-Manager unterstützen:
+Das [Schnellstarthandbuch für Compliance-Manager](../compliance/compliance-manager-quickstart.md) enthält abgestufte Schritte und Links zu wichtigen Ressourcen, die Ihnen bei der Arbeit mit dem Compliance-Manager helfen:
 
-- [Erster Besuch: sich mit Compliance-Manager vertraut machen](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
-    - Arbeiten mit Ihrem Compliance-Manager-Dashboard
-    - Grundlegendes zur Konformitätsbewertung
-    - Kennenlernen von Verbesserungs Aktionen
+- [Erster Besuch: Machen Sie sich mit Compliance Manager vertraut](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
+    - Arbeiten mit Ihrem Compliance -Manager-Dashboard
+    - Grundlegendes zu Ihrer Compliance-Bewertung
+    - Informationen zu Verbesserungsmaßnahmen
     - Grundlegendes zu Bewertungen und Vorlagen
-- [Hochfahren: Configure Compliance Manager to manage your Compliance Activities](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
+- [Hochfahren: Konfigurieren von Compliance Manager zum Verwalten Ihrer Complianceaktivitäten](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
     - Erstellen und Verwalten Ihrer ersten Bewertung
-    - Durchführen von Implementierungs-und Test arbeiten an Verbesserungs Aktionen zum Abschließen von Steuerelementen in ihren Bewertungen
-    - Grundlegendes zur Auswirkung unterschiedlicher Aktionen auf das Konformitäts Ergebnis
-- [Aufwärtsskalierung: Verwenden Sie erweiterte Funktionen, um Ihre benutzerdefinierten Anforderungen zu erfüllen.](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
-    - Erstellen Ihrer benutzerdefinierten Bewertungen zum Nachverfolgen von nicht von Microsoft 365 Produkten
+    - Durchführen von Implementierungs- und Testarbeiten an Verbesserungsmaßnahmen zum Abschließen von Steuerelementen in Ihren Bewertungen
+    - Verstehen, wie sich unterschiedliche Aktionen auf Ihre Compliance-Bewertung auswirken
+- [Hochskalieren: Verwenden sie erweiterte Funktionen, um Ihre benutzerdefinierten Anforderungen zu erfüllen](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
+    - Erstellen benutzerdefinierter Bewertungen zum Nachverfolgen von Nicht-Microsoft 365-Produkten
     - Ändern vorhandener Vorlagen zum Hinzufügen oder Entfernen von Steuerelementen
-    - Einrichten automatischer Tests von Verbesserungs Aktionen
+    - Einrichten automatisierter Tests von Verbesserungsmaßnahmen
 
 ## <a name="how-your-compliance-score-is-calculated"></a>Berechnung des Konformitätswerts
 
-Das Kompatibilitäts Ergebnis wird basierend auf einer Kombination aus Microsoft-und Kunden verwalteten Steuerelement Implementierungen berechnet. Eine detaillierte Erläuterung finden Sie unter [Compliance Score calculation](../compliance/compliance-score-calculation.md) .
+Ihre Compliance-Bewertung wird basierend auf einer Kombination aus Implementierungen von Microsoft und vom Kunden verwalteten Steuerelementen berechnet. Eine [ausführliche Erläuterung finden Sie unter Berechnung der Compliance-Bewertung.](../compliance/compliance-score-calculation.md)
 
-Steuerelementen wird ein Bewertungs Wert zugewiesen, je nachdem, ob Sie obligatorisch oder diskretionäre sind und ob Sie vorbeugend, detektivisch oder Korrektiv sind. Diese stellen gemeinsam das Risiko dar, es nicht im Verhältnis zu anderen Steuerelementen zu implementieren.
+Steuerelementen wird ein Bewertungswert zugewiesen, der darauf basiert, ob sie obligatorisch oder diskretionär sind und ob sie präventiv, detektivisch oder korrektiv sind. Diese stellen insgesamt das Risiko dar, dass sie im Vergleich zu anderen Steuerelementen nicht implementieren.
 
-Wie im Artikel "Compliance Score Calculation" dargestellt, erhalten vorbeugende Steuerelemente eine höhere Punktzahl als Detektive und korrigierende, und obligatorische Steuerelemente erhalten eine höhere Punktzahl als Ermessens Werte.
+Wie im Artikel zur Berechnung der Compliance-Bewertung dargestellt, erhalten vorbeugende Steuerelemente eine höhere Bewertung als Detektiv- und Korrekturmaßnahmen, und obligatorische Steuerelemente erhalten eine höhere Bewertung als diskretionäre Steuerelemente.
 
-Die Administrator-Benutzeroberfläche der Kompatibilitätsbewertung listet diese Parameter weder auf noch bietet Sie die Möglichkeit, nach diesen Parametern zu filtern. Wenn Sie jedoch die zugeordnete Vorlage aus dem Compliance-Manager herunterladen, werden diese Parameter in dem resultierenden Dataset für die meisten Verordnungen aufgelistet.
+Die Benutzeroberfläche des Compliance-Score-Admins listet diese Parameter nicht auf und bietet auch nicht die Möglichkeit, nach diesen zu filtern. Wenn Sie die zugeordnete Vorlage jedoch aus dem Compliance-Manager herunterladen, werden diese Parameter für die meisten Bestimmungen im resultierenden Datensatz aufgeführt.
 
-Für technische Steuerelemente aktualisiert Compliance Manager automatisch das Ergebnis der Verbesserungs Aktion, nachdem die Aktion erfolgreich implementiert und getestet wurde. Andere, nicht technische Kontrollaktionen wie &mdash; die, die betriebsbereit sind oder mit der Dokumentation in Zusammenhangstehen, &mdash; müssen manuell aufgezeichnet werden, bevor die Punkte auf Ihre Punktzahl angerechnet werden.
+Bei technischen Steuerelementen aktualisiert der Compliance-Manager automatisch die Bewertung der Verbesserungsaktion, sobald die Aktion erfolgreich implementiert und getestet wurde. Andere, nicht technische Kontrollaktionen, z. B. betriebsbereite oder dokumentationsbezogene Aktionen, müssen manuell als implementiert aufgezeichnet werden, bevor Punkte auf Ihre &mdash; &mdash; Punktzahl angezählt werden.
 
-Sie implementieren auch viele Verbesserungs Aktionen für andere Zwecke &mdash; , beispielsweise die Verwendung von Aufbewahrungs Bezeichnungen aus anderen Gründen als die Einhaltung von Datenschutzbestimmungen &mdash; , sodass Sie eine Gutschrift für die Verwendung einer solchen Funktion erhalten, auch wenn Sie für andere Zwecke verwendet wird und nicht Teil einer vorsätzlichen Compliance-Aktion ist.
+Sie viele implementieren auch bestimmte Verbesserungsmaßnahmen für andere Zwecke, z. B. die Verwendung von Aufbewahrungsbezeichnungen aus anderen Gründen als der Einhaltung der Datenschutzbestimmungen, damit Sie eine Anerkennung für die Verwendung eines solchen Features erhalten, auch wenn es für andere Zwecke verwendet wird, und nicht Teil einer absichtlichen &mdash; &mdash; Complianceaktion.
 
-Ihre Konformitätsbewertung sollte als relative Maßnahme betrachtet werden, um die Verbesserung im großen Maßstab zu verfolgen. Sie sollten keine perfekte Punktzahl verfolgen.
+Ihre Compliance-Bewertung sollte als relative Maßnahme betrachtet werden, um verbesserungen auf einem breiten Maßstab nachverfolgt zu werden. Sie sollten keine perfekte Bewertung verfolgen.
 
 ## <a name="additional-guidance"></a>Zusätzliche Anleitung
 
-Im folgenden finden Sie einige wichtige Tipps für die Verwendung des Compliance-Managers, um die Einhaltung der Datenschutzbestimmungen zu gewährleisten:
+Im Folgenden finden Sie einige wichtige Tipps für die Verwendung des Compliance-Managers, um Die Einhaltung der Datenschutzbestimmungen zu erreichen:
 
-- Jede Datenschutzverordnung verfügt über eine Kombination aus technischen Kontrollen, Dokumentations Spezifikationen sowie Betriebs-, Prozess-und Berichtsanforderungen. Alle diese werden in den Verbesserungs Aktionen angezeigt.
+- Jede Datenschutzverordnung verfügt über eine Kombination aus technischen Kontrollen, Dokumentationsspezifikationen sowie Betriebs-, Prozess- und Berichtspflichten. All diese werden in den Verbesserungsmaßnahmen gezeigt.
 
-- Wenn Sie die Ansicht von Verbesserungs Aktionen auf Ihren Interessenbereich konzentrieren möchten, können Sie auf der Registerkarte **Lösungen** im Compliance-Manager-Administrator nach Aktionstyp filtern. Erfahren Sie mehr über [das Filtern der Compliance-Manager-Dashboardansicht](../compliance/compliance-manager-setup.md#filtering-your-dashboard-view).
+- Um die Ansicht von Verbesserungsmaßnahmen auf Ihren Interessensbereich zu konzentrieren, können Sie auf der Registerkarte Lösungen im Compliance-Manager-Administrator nach Aktionstyp filtern.  Erfahren Sie mehr über [das Filtern Ihrer Compliance -Manager-Dashboardansicht](../compliance/compliance-manager-setup.md#filtering-your-dashboard-view).
 
-- Die relative Wichtigkeit und Priorität der im Compliance-Manager identifizierten Verbesserungs Aktionen sollten als Teil einer umfassenderen Risikoüberprüfung zusammen mit dem Datenschutzrisiko betrachtet werden, das Sie in Ihrer Organisation für die Verwaltung bestimmt haben.
+- Die relative Wichtigkeit und Priorität von Verbesserungsmaßnahmen, die im Compliance Manager identifiziert werden, sollten als Teil einer umfassenderen Risikoüberprüfung zusammen mit dem Datenschutzrisiko betrachtet werden, das Sie für Ihre Organisation verwalten müssen.
 
-- Selbst bei der Aggregation von Verbesserungs Aktionen über mehrere regulatorische Anforderungen hinweg werden, wenn die Regel Bewertungs Vorlagen für dsgvo, LGPD, CCPA und HIPAA-HITECH ausgewählt werden, beispielsweise fast 400 Verbesserungs Aktionen im Compliance-Manager aufgeführt. Um diese lange Liste besser in Angriff zu nehmen, verwenden Sie den Filter zur Verbesserung der Aktion, um die Ergebnismenge auf eine besser verwaltbare Liste zu reduzieren.
+- Selbst bei der Aggregation von Verbesserungsmaßnahmen über mehrere behördliche Anforderungen hinweg werden beispielsweise fast 400 Verbesserungsmaßnahmen im Compliance Manager aufgelistet, wenn die Vorlagen für die Regulierungsbewertung für DSGVO, LGPD, CCPA und HIPAA-HITECH ausgewählt sind. Um diese lange Liste besser zu bewältigen, verwenden Sie den Filter zur Verbesserungsaktion, um das Ergebnis auf eine verwaltbarere Liste zu reduzieren.
 
-- Der categories-Filter bietet eine Möglichkeit zum Filtern von Verbesserungs Aktionen durch logische Gruppierung, die die nachverfolgen, verhindern, schützen, beibehalten und untersuchen von Artikeln in dieser Gesamtlösung an ausrichten.
+- Der Filter Categories bietet eine Möglichkeit zum Filtern von Verbesserungsmaßnahmen durch logische Gruppierung, an der sich die Artikel "Track", "Prevent", "Protect", "Retain" und "Investigate" in dieser Gesamtlösung ausrichten.
 
-- Einige der Steuerelemente, die in den Verbesserungs Aktionen aufgeführt sind, sind möglicherweise direkter an einen bestimmten Regelungs Artikel gebunden, während andere Steuerelemente indirekt mit dem Geist einer Verordnung in Verbindung gebracht werden können, und viele Male handelt es sich um einfach Empfohlene Aktivitäten oder bewährte Methoden.
+- Einige der in den Verbesserungsmaßnahmen aufgeführten Steuerelemente können als direkter an einen bestimmten Regulatorischen Artikel gebunden betrachtet werden, während andere Steuerelemente indirekter mit dem Geist einer Verordnung verknüpft sind und oft nur empfohlene Aktivitäten oder bewährte Methoden sind.

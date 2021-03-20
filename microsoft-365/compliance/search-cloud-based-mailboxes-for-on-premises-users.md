@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Verwenden Sie das Tool für die Inhaltssuche im Security & Compliance Center, um Chatdaten von Teams für lokale Benutzer in einer Exchange-Hybridbereitstellung zu suchen und zu exportieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7bdcba3a14b2ee6d14210d3525e20ec507166a5d
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 39951ce125f86748beab12cf1998075e26ad734b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029715"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917187"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Suche nach Teams-Chatdaten für lokale Benutzer
 
@@ -97,7 +97,7 @@ Nachdem das Feature aktiviert wurde, können Sie die Inhaltssuche im Security & 
 
 Sie können die Cmdlets **New-ComplianceSearch** und **Set-ComplianceSearch** in der Security and Compliance Center PowerShell verwenden, um nach Teams-Chatdaten für lokale Benutzer zu suchen. Wie zuvor erläutert müssen Sie keine Supportanforderung für die Verwendung von PowerShell zum Suchen nach Teams-Chatdaten für lokale Benutzer einreichen.
   
-1. [Stellen Sie eine Verbindung mit der Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. [Stellen Sie eine Verbindung mit der Security & Compliance Center PowerShell her](/powershell/exchange/connect-to-scc-powershell).
 
 2. Führen Sie den folgenden PowerShell-Befehl aus, um eine Inhaltssuche zu erstellen, die nach Teams-Chatdaten für lokale Benutzer sucht.
 
@@ -117,11 +117,11 @@ Sie können die Cmdlets **New-ComplianceSearch** und **Set-ComplianceSearch** in
   
 Weitere Informationen über diese Cmdlets finden Sie unter:
   
-- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch)
+- [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch)
 
-- [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/set-compliancesearch)
+- [Set-ComplianceSearch](/powershell/module/exchange/set-compliancesearch)
 
-- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/start-compliancesearch)
+- [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
@@ -131,7 +131,7 @@ Weitere Informationen über diese Cmdlets finden Sie unter:
 
 **Wo befindet sich der cloudbasierte Speicher für lokale Benutzer?**
   
-Die Chat-Daten von Teams werden im bevorzugten Datenspeicher (PDL) für einen lokalen Benutzer gespeichert. Der PDL wird sowohl in Single-Geo- als auch in Multi-Geo-Umgebungen beachtet. Mehr dazu unter [Microsoft 365 Multi-Geo](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo).
+Die Chat-Daten von Teams werden im bevorzugten Datenspeicher (PDL) für einen lokalen Benutzer gespeichert. Der PDL wird sowohl in Single-Geo- als auch in Multi-Geo-Umgebungen beachtet. Mehr dazu unter [Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md).
   
  **Gibt es andere Voraussetzungen als die Einreichung einer Supportanfrage?**
   

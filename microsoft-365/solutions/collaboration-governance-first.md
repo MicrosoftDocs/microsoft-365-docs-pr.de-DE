@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Steuerungsplans für die Zusammenarbeit
+title: Erstellen eines Plans für die Zusammenarbeitsgovernance
 ms.reviewer: mmclean
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,132 +14,132 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Informationen zum Erstellen Ihres Plans für die Zusammenarbeit-Steuerung
-ms.openlocfilehash: c27ac401d06808d1a4337e9ec7ec0700bfba19ea
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: Erfahren Sie, wie Sie Ihren Governanceplan für die Zusammenarbeit erstellen
+ms.openlocfilehash: 89b8ffc1359d79661e2b7cc30f195ea792e7a161
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613296"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916370"
 ---
-# <a name="create-your-collaboration-governance-plan"></a>Erstellen eines Steuerungsplans für die Zusammenarbeit
+# <a name="create-your-collaboration-governance-plan"></a>Erstellen eines Plans für die Zusammenarbeitsgovernance
 
-Es ist immer am besten, ihren Wechsel zu Microsoft 365 mit einer klaren Sicht zu beginnen:
+Es ist immer am besten, ihren Wechsel zu Microsoft 365 mit einer klaren Vision zu starten:
 
-- Was sind Ihre wichtigsten Unternehmensziele?
+- Was sind Ihre wichtigsten Geschäftsziele?
 
-- Wie werden die Tools und Funktionen für die gesamte Organisation und für einzelne Mitarbeiter einen Mehrwert bieten?
+- Wie werden die Tools und Funktionen für die gesamte Organisation und für einzelne Mitarbeiter von Nutzen sein?
 
-- Wie werden Sie den Erfolg messen?
+- Wie messen Sie den Erfolg?
 
-Eine klare Zielsetzung bietet einen wichtigen Leitfaden für die unvermeidlichen Entscheidungs Kompromisse, die Sie beim Denken an Ihren Steuerungsplan treffen müssen. Der Grad an Formalität und die Tiefe, für die Sie den Steuerungsplan dokumentieren müssen, sollten mit den Ergebnissen übereinstimmen, die Sie erreichen möchten. Das Konzept bietet somit einen Rahmen für den Kontext und die Investitionen in die Steuerung.
+Eine klare Visionsaussage bietet wichtige Hinweise für die unausweichlichen Entscheidungen, die Sie beim Denken über Ihren Steuerungsplan treffen müssen. Der Formalitätsgrad und die Tiefe, bis zu der Sie den Steuerungsplan dokumentieren müssen, sollten sich an den Ergebnissen ausrichten, die Sie erreichen möchten. Die Vision bietet daher einen Rahmen für den Kontext und die Investitionen in die Steuerung.
 
-Microsoft 365 erstellt neue Paradigmen für Technologien zur Unterstützung des Unternehmens. Diese neuen Paradigmen ändern die Art und Weise, wie diese Technologien angenommen, verwaltet und gesteuert werden. 
+Microsoft 365 erstellt neue Paradigmen für Technologien zur Unterstützung des Unternehmens. Diese neuen Paradigmen ändern die Art und Weise, wie diese Technologien angenommen, verwaltet und verwaltet werden. 
 
-Microsoft 365 Governance sollte vorhandene Richtlinien ergänzen, die lokale Umgebungen steuern. Da die Cloud jedoch neue Möglichkeiten zur Unterstützung des Unternehmens bietet, ist es wichtig, diese Möglichkeiten zu verstehen und über einen Steuerungsansatz nachzudenken, der ein angemessenes Gleichgewichtzwischen den Benutzer Zielen, dem geschäftlichen Risiko sowie der Industrie und den behördlichen Anforderungen schafft.
+Die Microsoft 365-Governance sollte vorhandene Richtlinien für lokale Umgebungen ergänzen. Da die Cloud jedoch neue Möglichkeiten zur Unterstützung des Unternehmens bietet, ist es wichtig, diese Möglichkeiten zu verstehen und einen Steuerungsansatz zu überlegen, der ein angemessenes Gleichgewicht zwischen Benutzerzielen, Geschäftsrisiken und branchen- und behördlichen Anforderungen schafft.
 
-Das Denken an die Steuerung bedeutet zunächst, Ihre Reise in die Cloud mit einigen wichtigen Entscheidungen für eine optimale Position für den Gesamterfolg zu beginnen. Einige dieser Entscheidungen umfassen Folgendes:
+Wenn Sie zuerst über Governance nachdenken, beginnen Sie Ihre Reise in die Cloud mit einigen wichtigen Entscheidungen, um die beste Position für den Gesamterfolg zu finden. Zu diesen Entscheidungen gehören:
 
-- Wird die externe Freigabe unterstützt und in welchen Szenarien? [Erfahren Sie mehr über die Freigabe für externe Benutzer](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization).
+- Wird die externe Freigabe unterstützt und in welchen Szenarien? [Erfahren Sie mehr über die Freigabe für externe Benutzer](./collaborate-with-people-outside-your-organization.md).
 
-- Wer kann und wie werden Gruppen, Websites und Teams eingerichtet? [Hier erfahren Sie, wie Sie steuern können, wer Gruppen erstellen](https://docs.microsoft.com/microsoft-365/admin/create-groups/manage-creation-of-groups)kann.
+- Wer kann und wie werden Gruppen, Websites und Teams bereitgestellt? [Erfahren Sie, wie Sie steuern können, wer Gruppen erstellen kann.](./manage-creation-of-groups.md)
 
-- Welche Art von Inhalt kann in den verschiedenen Umgebungstypen veröffentlicht werden – und welche Features müssen aktiviert sein, damit Benutzer nicht versehentlich Informationen an ungeeigneten Orten veröffentlichen können? [Erfahren Sie mehr über den Informationsschutz in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/protect-information).
+- Welche Art von Inhalt kann in den einzelnen Umgebungstypen veröffentlicht werden – und welche Features müssen aktiviert werden, um zu verhindern, dass Benutzer Informationen versehentlich an unangemessenen Speicherorten veröffentlichen? [Erfahren Sie mehr über den Informationsschutz in Microsoft 365](../compliance/information-protection.md).
 
-Es gibt keine perfekte Antwort auf diese Fragen – die richtigen Antworten sind diejenigen, die Risiken und Vorteile für Ihre Organisation abgleichen.
+Es gibt keine perfekte Antwort auf diese Fragen – die richtigen Antworten sind diejenigen, die Risiken und Vorteile für Ihre Organisation ausgleichen.
 
 ## <a name="what-does-governance-mean-for-microsoft-365"></a>Was bedeutet Governance für Microsoft 365?
 
-Bei der Steuerungs Planung für Microsoft 365 wird sichergestellt, dass Sie Ihre wichtigen Informationsressourcen schützen und gleichzeitig das Risiko minimiert. Governance umfasst mehrere wichtige Bereiche, die jeweils geplant, koordiniert und angepasst werden müssen, um sich an die sich ändernden organisatorischen Anforderungen und die Entwicklung der Technologie anzupassen. 
+Bei der Steuerungsplanung für Microsoft 365 geht es darum, sicherzustellen, dass Sie Ihre ressourcenkritischen Informationen schützen und gleichzeitig das Risiko minimieren. Die Steuerung umfasst mehrere Schlüsselbereiche, die jeweils geplant, koordiniert und angepasst werden müssen, um sich an die sich ändernden organisatorischen Anforderungen und die Weiterentwicklung der Technologie anzupassen. 
 
-- **Betriebssicherheit** – halten der Plattform betriebsbereit, wodurch die Leistung sichergestellt wird Dies ist weitgehend eine IT-Aufgabe mit einem Großteil der von Microsoft bereitgestellten Arbeit.
+- **Betriebssicherheit** – die Plattform betriebsbereit halten und die Leistung sicherstellen. Dies ist weitgehend eine IT-Aufgabe, bei der die meisten von Microsoft bereitgestellten Aufgaben ausgeführt werden.
 
-- **Information Assurance** – Verwalten von Inhalten während des gesamten Lebenszyklus und behandeln von Informationen als Ressource einschließlich Datensatzverwaltung, Compliance und Sicherheit. Die Informationssicherheit erfordert ein Verständnis der geschäftlichen Ziele und der regulatorischen Anforderungen. Idealerweise möchten Sie automatisierte Richtlinien verwenden, die Benutzer daran hindern, Fehler zu machen, oder Sie in Szenarien warnen, in denen Sie eine fundierte Entscheidung treffen müssen. Wenn es nicht möglich ist, durch Richtlinien erzwungen zu werden, müssen Sie die allgemeine und berufliche Bildung planen.
+- **Information Assurance** – Verwalten von Inhalten während des gesamten Lebenszyklus, Behandeln von Informationen als Ressource, einschließlich Datensatzverwaltung, Compliance und Sicherheit. Die Informationssicherung erfordert ein Verständnis sowohl der Geschäftsziele als auch der gesetzlichen Anforderungen. Idealerweise möchten Sie automatisierte Richtlinien verwenden, die Verhindern, dass Benutzer Fehler machen, oder sie in Szenarien warnen, in denen sie eine fundierte Entscheidung treffen müssen. Wo es nicht möglich ist, eine Richtlinie durchzusetzen, müssen Sie die allgemeine und berufliche Bildung planen.
 
-- **Outcomes Assurance** – Lenkung der befugten Website-oder Teambesitzer in die richtige Richtung, um geschäftliche Ergebnisse zu erzielen. Bei der Ergebnissicherung geht es weitgehend um die Bereitstellung von Anleitungen für Inhaltsautoren und Website-, Gruppen-und Teambesitzer – sicherstellen, dass die entsprechende Schulung verfügbar ist, um sicherzustellen, dass Sie wissen, wie Sie gute Entscheidungen treffen können, um die gewünschten Ergebnisse in den allgemeinen Organisationsstandards und-Methoden zu
+- **Ergebnissicherung** – Steuern von befähigen Website- oder Teambesitzern in die richtige Richtung, um Geschäftsergebnisse zu erzielen. Bei der Ergebnissicherung geht es hauptsächlich darum, Inhaltsautoren und Website-, Gruppen- und Teambesitzern Anleitungen zu geben und sicherzustellen, dass die entsprechenden Schulungen verfügbar sind, um sicherzustellen, dass sie wissen, wie sie gute Entscheidungen treffen können, um die gewünschten Ergebnisse innerhalb der allgemeinen Organisatorischen Standards und Methoden zu erzielen.
 
-Die Planung der Steuerung sollte zuerst erfolgen, aber die Steuerung muss etwas sein, das Sie in einem iterativen Prozess kontinuierlich überdenken. Wenn sich Ihre Daten Estate im Laufe der Zeit ändern, sollten Sie Ihre Entscheidungs Findungs Entscheidungen erneut überprüfen, um sich an geänderte Geschäftsanforderungen und Verfügbarkeit von Funktionen anzupassen. Möglicherweise müssen Sie mehr Aufsicht benötigen, um die Konformität sicherzustellen. Sie werden feststellen, dass Sie weniger Aufsicht benötigen, um eine kreativere Anwendung der Kernfunktionen zu fördern. Möglicherweise müssen Rollen und Verantwortlichkeiten aktualisiert werden, um Änderungen an der Lösung oder Änderungen in der Verwendung unterschiedlicher Anwendungen durch Benutzer widerzuspiegeln.
+Die Steuerungsplanung sollte zuerst kommen, aber die Steuerung muss etwas sein, das Sie in einem iterativen Prozess ständig erneut durcharbeiten. Wenn sich Ihre Datenstruktur im Laufe der Zeit ändert, sollten Sie Ihre Steuerungsentscheidungen erneut überprüfen, um sich an die sich ändernden Geschäftlichen Anforderungen und die Verfügbarkeit von Features anzupassen. Möglicherweise benötigen Sie eine größere Aufsicht, um die Konformität sicherzustellen. Möglicherweise benötigen Sie weniger Aufsicht, um eine kreativere Anwendung von Kernfeatures zu fördern. Möglicherweise müssen Rollen und Verantwortlichkeiten aktualisiert werden, um Änderungen in der Lösung oder Änderungen bei der Verwendung unterschiedlicher Anwendungen durch Benutzer widerspiegeln zu können.
 
-Beispielsweise ist eine der wichtigsten leistungsfähigen Funktionen von Microsoft 365 die Möglichkeit, problemlos mit Personen außerhalb Ihrer Organisation gemeinsam zu arbeiten. Einige Organisationen in einigen Branchen entscheiden sich dafür, die gesamte externe Freigabe zu blockieren. Andere ermöglichen die externe Freigabe in bestimmten Szenarien oder mit bestimmten Organisationen. Es gibt keine richtige oder falsche Entscheidungsfindung im Hinblick auf die externe Freigabe – und es gibt viele verschiedene Szenarien, in denen Sie unterschiedliche Einstellungen in Microsoft 365 aktivieren können, um die Freigabe in einigen Fällen zu ermöglichen und in anderen zu blockieren. Wenn Sie jedoch gerade erst mit der Reise von einer lokalen Umgebung zur Cloud beginnen, sollten Sie sich Gedanken über externe freigabeentscheidungen machen und die Vorteile und Risiken kennen, die mit den verschiedenen verfügbaren Optionen verbunden sind.
+Eine der wichtigsten Funktionen von Microsoft 365 ist beispielsweise die Möglichkeit, problemlos mit Personen außerhalb Ihrer Organisation zusammen zu arbeiten. Einige Organisationen in einigen Branchen entscheiden sich dafür, die externe Freigabe zu blockieren. Andere ermöglichen die externe Freigabe in bestimmten Szenarien oder mit bestimmten Organisationen. Es gibt keine richtige oder falsche Steuerungsentscheidung, wenn es um die externe Freigabe geht – und es gibt viele verschiedene Szenarien, in denen Sie unterschiedliche Einstellungen in Microsoft 365 aktivieren können, um die Freigabe in einigen Fällen zu ermöglichen und sie in anderen zu blockieren. Wenn Sie jedoch gerade ihren Weg von einer lokalen Umgebung in die Cloud beginnen, ist es wichtig, über Entscheidungen zur externen Freigabe nach gedanken zu gehen und die Vorteile und Risiken zu verstehen, die mit den verschiedenen verfügbaren Optionen verbunden sind.
 
-## <a name="think-about-governance-first"></a>Denken Sie an die Steuerung zuerst
+## <a name="think-about-governance-first"></a>Überlegen Sie sich zuerst governance
 
-Ihre Investition in Microsoft 365 ist nur so gut wie der Wert der Inhalte und Erfahrungen, die Sie aktivieren – so denkt man an die Steuerung zu Beginn ihrer Reise, dass Sie nicht zu viel sperren oder aktivieren, bevor Sie die Auswirkungen jeder Entscheidung verstehen und bewerten können. Es gibt mehrere "Drehknöpfe und Wähleinstellungen", die Sie im Microsoft 365 Admin Center und für einzelne Websites und Teams aktivieren können. Ein effektiver Steuerungsplan ist wichtig, um geschäftliche Ziele zu erreichen – aber bei der Steuerung geht es um das Abwägen von Risiken mit Vorteilen. Wenn wir alles nach unten sperren, werden die Benutzer einen Weg finden, um die Regeln zu umgehen, wenn Sie dies tun müssen, um die Arbeit zu erledigen.
+Ihre Investition in Microsoft 365 ist nur so gut wie der Wert der von Ihnen aktivierten Inhalte und Erfahrungen . Wenn Sie also zu Beginn Ihrer Reise über Governance nachdenken, wird sichergestellt, dass Sie nicht zu viel sperren oder aktivieren, bevor Sie die Auswirkungen jeder Entscheidung verstehen und bewerten können. Es gibt mehrere "Drehregler und Wählwähler", die Sie im Microsoft 365 Admin Center sowie für einzelne Websites und Teams aktivieren können. Ein effektiver Steuerungsplan ist wichtig, um Geschäftsziele zu erreichen – bei der Steuerung geht es jedoch um den Ausgleich von Risiken und Vorteilen. Wenn wir alles sperren, finden die Mitarbeiter eine Möglichkeit, die Regeln zu umarbeiten, wenn sie dies tun müssen, um die Arbeit erledigen zu können.
 
-Das Denken an die Steuerung ermöglicht Ihnen zunächst Folgendes:
+Wenn Sie zuerst an die Steuerung denken, können Sie:
 
-- **Gleicht Risiken und Vorteile** aus. Durch eine sorgfältige Überprüfung von Steuerungs Entscheidungen frühzeitig in der Bereitstellung können Organisationen die gesamte Umgebung – Business, Regulatory, Legal, Compliance – verstehen und eine Lösung planen, die für alle Ergebnisse optimiert – Risiken mit Vorteilen abwägen, manchmal das Risiko akzeptieren und das Risiko nicht akzeptieren. Wenn Sie fundierte Entscheidungen im Vordergrund treffen, erhalten Sie bessere Ergebnisse ohne Ausbreitung und nicht verwalteten Inhalt.
+- **Ausgleichen von Risiken und Vorteilen**. Eine sorgfältige Überprüfung von Steuerungsentscheidungen frühzeitig in der Bereitstellung ermöglicht Es Organisationen, die gesamte Umgebung – Geschäftlich, gesetzlich, legal, Compliance – zu verstehen und eine Lösung zu planen, die für alle Ergebnisse optimiert wird – risiken mit Vorteilen abwägen – manchmal das Risiko akzeptieren und sich dafür entscheiden, das Risiko nicht zu akzeptieren. Wenn Sie fundierte Entscheidungen im Ersten treffen, erhalten Sie bessere Ergebnisse ohne Zersiedelung und nicht verwaltete Inhalte.
 
-- **Anpassung an unterschiedliche Organisationen und unterschiedliche Arten von Inhalten und Szenarien** Governance-Entscheidungen sind eindeutige Entscheidungen für jede Organisation – eine Größe passt nicht allen. Jede Organisation verfügt nicht nur über unterschiedliche Steuerungsanforderungen, sondern auch für die einzelnen Inhaltstypen in Microsoft 365 sind Steuerungs Entscheidungen häufig nicht identisch. Beispielsweise kann die Steuerung für Team Inhalte von der Steuerung für Intranet-Inhalte und von einzelnen Inhalten in OneDrive abweichen.
+- **Passen Sie sich an verschiedene Organisationen und verschiedene Arten von Inhalten und Szenarien an.** Steuerungsentscheidungen sind eindeutige Entscheidungen für jede Organisation – eine Größe passt nicht zu allen. Jede Organisation hat nicht nur unterschiedliche Steuerungsanforderungen, aber Steuerungsentscheidungen sind häufig nicht für jeden Inhaltstyp in Microsoft 365 identisch. Beispielsweise kann sich die Steuerung für Teaminhalte von der Steuerung für Intranetinhalte und von einzelnen Inhalten in OneDrive unterscheiden.
 
-- **An geschäftliche Prioritäten ausrichten**. Es ist an der Zeit, sich Gedanken über die Steuerung zu machen, wenn Sie die wichtigsten Geschäftsprioritäten für die Lösungen identifizieren, die Sie in Microsoft 365 erstellen. Diese wichtigen Geschäftsergebnisse definieren den Kontext für die Steuerungs Planung. Dies ist wichtig, da Ihre geschäftlichen Ziele Ihnen helfen, zu bestimmen, wie viel Zeit und Energie Sie für Investitionen in die Steuerung benötigen. Wenn beispielsweise die Verbesserung der Auffindbarkeit von Inhalten in der Organisation nicht sehr wichtig ist, müssen Sie wahrscheinlich nicht zu viel Zeit mit dem erzwingen oder Planen von Datei Benennungskonventionen verbringen. Wenn Sie andererseits dazu beitragen möchten, Instanzen mehrerer Versionen desselben Dokuments in verschiedenen Repositories innerhalb des Unternehmens zu reduzieren, benötigen Ihre Governance-Entscheidungen Prozesse und Richtlinien und Schulungen, um sicherzustellen, dass Inhaltsautoren verstehen, wie Sie Dateien benennen und "eine Kopie eines Dokuments" ausführen, um sicherzustellen, dass Inhalte nur an einem Ort veröffentlicht werden. Es bedeutet auch, dass Sie einen Prozess benötigen, um sicherzustellen, dass Sie nicht unnötig mehr als eine Website oder ein Team für denselben Zweck erstellen.
+- **Richten Sie sich an den Geschäftsprioritäten aus.** Wenn Sie die wichtigsten Geschäftsprioritäten für die in Microsoft 365 erstellten Lösungen ermitteln, sollten Sie mit der Steuerung beginnen. Diese wichtigen Geschäftsergebnisse definieren den Kontext für die Steuerungsplanung. Dies ist wichtig, da Ihre Geschäftsziele Ihnen dabei helfen, zu definieren, wie viel Zeit und Energie Sie in Governance investieren müssen. Wenn beispielsweise die Verbesserung der Inhaltsentfbarkeit in der gesamten Organisation nicht sehr wichtig ist, müssen Sie wahrscheinlich nicht zu viel Zeit mit der Durchsetzung oder Planung von Benennungskonventionen für Dateien verbringen. Wenn Sie andererseits dazu beitragen möchten, Instanzen mehrerer Versionen desselben Dokuments in verschiedenen Repositorys im gesamten Unternehmen zu reduzieren, benötigen Ihre Steuerungsentscheidungen Prozesse und Richtlinien und Schulungen, um sicherzustellen, dass Inhaltsautoren wissen, wie Sie Dateien benennen und "eine Kopie eines Dokuments" befolgen, um sicherzustellen, dass Inhalte nur an einem Speicherort bereitgestellt werden. Das bedeutet auch, dass Sie einen Prozess benötigen, um sicherzustellen, dass Sie nicht unnötig mehrere Website oder Teams für denselben Zweck erstellen.
 
-## <a name="how-should-we-be-communicating-about-governance"></a>Wie sollten wir über die Steuerung kommunizieren?
+## <a name="how-should-we-be-communicating-about-governance"></a>Wie sollten wir über Governance kommunizieren?
 
-Viele Steuerungs Entscheidungen können durch Aktivieren oder Deaktivieren von Features in Microsoft 365 implementiert werden. Das kann zur Durchsetzung ihrer Steuerungsstandards beitragen, aber möglicherweise hilft es den Personen in Ihrer Organisation nicht, zu verstehen, was Ihnen zur Verfügung steht und warum (oder warum nicht). 
+Viele Steuerungsentscheidungen können durch Aktivieren oder Deaktivieren von Features in Microsoft 365 implementiert werden. Dies kann dazu beitragen, Ihre Steuerungsstandards durchzusetzen, aber es hilft den Personen in Ihrer Organisation möglicherweise nicht zu verstehen, was ihnen zur Verfügung steht und warum (oder warum nicht). 
 
-Traditionell haben steuerungsteams lange Dokumente erstellt, in denen jeder Entscheidungsprozess für die Steuerung skizziert wird. Leider wurden diese langen Dokumente selten gelesen – was bedeutete, dass Governance-Anforderungen, die auf die Erzwingung von Personen angewiesen sind, selten funktioniert haben. Vermeiden Sie es, lange Dokumente zu erstellen, die auf mehrere Zielgruppen ausgerichtet sind, wenn Sie darüber nachdenken, wie Sie Ihre wichtigsten Steuerungs Entscheidungen kommunizieren. Denken Sie stattdessen an diese Alternativen:
+Traditionell haben Steuerungsteams lange Dokumente erstellt, die jede Steuerungsentscheidung enthalten. Leider wurden diese langen Dokumente nur selten gelesen – was bedeutete, dass Steuerungsanforderungen, die auf Personen angewiesen sind, um die Durchsetzung zu erzwingen, selten funktionierten. Versuchen Sie zu vermeiden, lange Dokumente für mehrere Zielgruppen zu erstellen, wenn Sie überlegen, wie Sie Ihre wichtigen Steuerungsentscheidungen kommunizieren. Überlegen Sie sich stattdessen die folgenden Alternativen:
 
-- **Integrieren Sie Steuerungs Entscheidungen direkt in die von Ihnen erstellten Lösungen**. Wenn Sie sicherstellen möchten, dass vertrauliche Informationen in Microsoft 365 geschützt sind, implementieren Sie Sensitivitäts Bezeichnungen, um sicherzustellen, dass Ihre Benutzer nicht versehentlich Informationen verfügbar machen, die Sie nicht benötigen. Blockieren Sie die Anwendungen, bei denen Sie den entsprechenden Schutz nicht bereitstellen können. [Erfahren Sie mehr über Sensitivitäts Bezeichnungen](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels).
+- **Betten Sie Steuerungsentscheidungen direkt in die von Ihnen erstellten Lösungen ein.** Wenn Sie sicherstellen möchten, dass vertrauliche Informationen in Microsoft 365 geschützt sind, implementieren Sie Vertraulichkeitsbezeichnungen, um sicherzustellen, dass Ihre Benutzer nicht versehentlich Informationen verfügbar machen, die sie nicht verwenden sollten. Blockieren Sie die Anwendungen, bei denen Sie nicht den entsprechenden Schutz bereitstellen können. [Erfahren Sie mehr über Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels.md).
 
-- **Verstärken Sie mit der Schulung**. Passen Sie Lösungen wie [Microsoft 365-Lern Pfade](https://docs.microsoft.com/office365/customlearning) an, um sicherzustellen, dass ihre unternehmensspezifischen Erwartungen durch von Microsoft bereitgestellte Schulungen verstärkt werden.
+- **Verstärken Sie mit Schulungen**. Passen Sie Lösungen wie [Microsoft 365-Lernpfade](/office365/customlearning) an, um sicherzustellen, dass Ihre organisationsspezifischen Erwartungen durch von Microsoft bereitgestellte Schulungen verstärkt werden.
 
-- **Als Website und nicht als Dokument liefern**. Erstellen Sie Ihr eigenes Microsoft 365-Adoptions Center in einer SharePoint-Kommunikationswebsite, um sicherzustellen, dass Ihre Inhaltsautoren und Website-und Teambesitzer nicht nur "How to", sondern auch "How should" verstehen. Erstellen Sie themenspezifische Seiten, die verschiedene Geschäftsszenarien behandeln, um sowohl Anleitungen als auch bewährte Methoden zur Nutzung oder Aktivierung unterschiedlicher Funktionen in SharePoint und Microsoft Teams und anderen Anwendungen zur Erzielung geschäftlicher Ergebnisse bereitzustellen.
+- **Bereitstellen als Website, kein Dokument**. Erstellen Sie Ihr eigenes Microsoft 365 Adoption Center auf einer SharePoint-Kommunikationswebsite, um sicherzustellen, dass Ihre Inhaltsautoren und Website- und Teambesitzer nicht nur "how to" verstehen, sondern auch "wie sollte". Erstellen Sie themenspezifische Seiten, die verschiedene Geschäftsszenarien ansprechen, um sowohl Anleitungen als auch bewährte Verfahren zur Nutzung oder Aktivierung verschiedener Funktionen in SharePoint und Teams und anderen Anwendungen zu bieten, um Geschäftsergebnisse zu erzielen.
 
 ## <a name="what-are-the-key-success-factors"></a>Was sind die wichtigsten Erfolgsfaktoren?
 
-Integrieren Sie diese wichtigen Erfolgsfaktoren, um eine erfolgreiche Governance-Planung für Microsoft 365 sicherzustellen.
+Integrieren Sie diese wichtigen Erfolgsfaktoren, um eine erfolgreiche Steuerungsplanung für Microsoft 365 sicherzustellen.
 
-### <a name="identify-your-governance-core-team"></a>Identifizieren Ihres Führungsteam-Kern Teams
+### <a name="identify-your-governance-core-team"></a>Identifizieren Ihres Governance-Kernteams
 
-Governance ist eine Team-Sportart. Stellen Sie sicher, dass Ihr zentrales Steuerungs Planungsteam Vertreter aus Business und IT umfasst. Ihr Team muss sich wahrscheinlich am Anfang Ihres Rollouts häufiger treffen und dann regelmäßig neue Funktionen und neue Geschäftserwartungen überprüfen.
+Governance ist ein Teamsport. Stellen Sie sicher, dass Ihr Zentrales Governance-Planungsteam Vertreter aus Unternehmen und IT umfasst. Ihr Team muss sich wahrscheinlich am Anfang Ihres Rollouts häufiger treffen und dann regelmäßig neue Funktionen und neue Geschäftserwartungen überprüfen.
 
-Arbeiten Sie mit den wichtigen Entscheidungen für die Entscheidungsfindung – versuchen Sie jedoch nicht, alle Entscheidungen gleichzeitig zu treffen. Entscheiden Sie sich für die Bereitstellung und Benennung und den externen Zugriff, und arbeiten Sie dann mit den restlichen Entscheidungen.
+Arbeiten Sie die wichtigsten Steuerungsentscheidungen durch – versuchen Sie jedoch nicht, jede Entscheidung auf einmal zu treffen. Treffen Sie wichtige Entscheidungen zur Bereitstellung und Benennung sowie zum externen Zugriff, und durcharbeiten Sie dann die verbleibenden Entscheidungen.
 
-Zusätzlich zur weiter oben besprochenen externen Freigabe ist eine weitere wichtige Entscheidung für jede Organisation die Bereitstellung von Websites und Gruppen. Sehen Sie sich die folgenden Beispiele an:
+Neben der zuvor erläuterten externen Freigabe ist eine weitere wichtige Entscheidung für jede Organisation die Bereitstellung von Websites und Gruppen. Sehen Sie sich die folgenden Beispiele an:
 
-- Da es für Benutzer so einfach ist, Microsoft 365-Gruppen zu erstellen, möchten Sie möglicherweise die Gruppenerstellung öffnen, damit Sie nicht mit Anforderungen überschwemmt wird, die Sie im Namen anderer Personen erstellen. Um "Gruppen Zersiedelung" zu vermeiden, können Sie einen benutzerdefinierten Workflow erstellen, der eine e-Mail mit Steuerungs-, Schulungs-und anderen Informationen an Gruppen Ersteller sendet, sobald die Gruppe erstellt wurde. (Beispiel: "Sie haben soeben eine Website/ein Team, eine Community usw. erstellt – hier sind ihre Zuständigkeiten und Links zu Schulungen...") Auf der anderen Seite möchten Sie möglicherweise in Abhängigkeit von Ihrem Unternehmen steuern, wer die Möglichkeit zum Erstellen von Gruppen besitzt.
+- Da es für Benutzer so einfach ist, Microsoft 365-Gruppen zu erstellen, sollten Sie die Gruppenerstellung öffnen, damit die IT nicht mit Anforderungen überflutet wird, um sie im Namen anderer Personen zu erstellen. Um eine "Gruppenstruktur" zu vermeiden, könnten Sie einen benutzerdefinierten Workflow erstellen, der eine E-Mail mit Steuerung, Schulungen und anderen Informationen an Gruppenersteller sendet, kurz nachdem die Gruppe erstellt wurde. (Beispiel: "Sie haben gerade eine Website/ein Team, eine Community usw. erstellt – hier sind Ihre Verantwortlichkeiten und Links zu Schulungen...") Auf der anderen Seite können Sie abhängig von Ihrem Unternehmen steuern, wer Gruppen erstellen kann.
 
-- Wenn Sie steuern möchten, wie SharePoint-Websites erstellt werden, können Sie den Link **Create Site** auf der SharePoint-Startseite ausblenden. Erstellen Sie ein benutzerdefiniertes Formular, oder erstellen Sie ein benutzerdefiniertes Website Design und Website Skript, um die Bereitstellungneuer moderner SharePoint-Websites mithilfe einer vordefinierten Websitestruktur zu automatisieren, die Links zu ihrer Steuerungs-und Schulungs bewährten Vorgehensweise enthalten kann.
+- Wenn Sie steuern möchten, wie SharePoint-Websites erstellt werden, können Sie den **Link** Website erstellen auf der SharePoint-Startseite ausblenden. Erstellen Sie ein benutzerdefiniertes Formular, oder erstellen Sie ein benutzerdefiniertes Websitedesign und ein Websiteskript, um die Bereitstellung neuer moderner SharePoint-Websites mithilfe einer vordefinierten Websitestruktur zu automatisieren, die Links zu Ihrer Governance und bewährten Methoden für Schulungen enthalten kann.
 
 ### <a name="align-decisions-to-business-goals"></a>Ausrichten von Entscheidungen an Geschäftszielen
 
-Geschäftsergebnis Ziele sollten der primäre Treiber für ihre Entscheidungsfindung sein:
+Geschäftsergebnisziele sollten der wichtigste Treiber für Ihre Steuerungsentscheidungen sein:
 
-- Grundlegendes zu den regulatorischen Anforderungen, die Ihre Organisation betreffen. Einige ihrer wichtigsten Entscheidungen und Implementierungsanforderungen müssen möglicherweise an die Umgebung angepasst werden, in der Sie arbeiten.
+- Verstehen sie die gesetzlichen Anforderungen, die sich auf Ihre Organisation auswirken. Einige ihrer wichtigsten Entscheidungen und Implementierungsanforderungen müssen möglicherweise an die Umgebung angepasst werden, in der Sie arbeiten.
 
-- Versuchen Sie nicht, in "Es ist das, was wir immer getan haben" eingeschlossen zu sein. Durch die Cloud und die zunehmende Globalisierung vieler Organisationen werden neue Möglichkeiten eingeführt. Annahmen herausfordern, wenn Sie nicht mit Geschäftszielen übereinstimmen. Können Sie die Regeln für einige Szenarien oder für einige Personen lockern? Können Sie mit den Features von Microsoft 365 dasselbe Geschäftsergebnis erzielen, anstatt eine Aktivität vollständig zu blockieren?
+- Versuchen Sie, nicht in "Es ist das, was wir immer getan haben" eingeschlossen zu werden. Die Cloud und die zunehmende Globalisierung vieler Organisationen bieten neue Möglichkeiten. Stellen Sie Annahmen in Frage, wenn sie nicht mit den Geschäftszielen in Einklang stehen. Können Sie die Regeln für einige Szenarien oder für einige Personen lockern? Können Sie dasselbe Geschäftsergebnis mit den Features von Microsoft 365 erzielen, anstatt eine Aktivität vollständig zu blockieren?
 
-- Wenn Sie alles nach unten sperren, finden die Benutzer eine Problemumgehung. Versuchen Sie, die wichtigsten Geschäftsszenarien zu verstehen, die Ihre Benutzer aktivieren möchten, und geben Sie Richtlinien und Schulungen entsprechend an. 
+- Wenn Sie alles sperren, finden die Personen ein Arbeitsumgeher. Versuchen Sie, die wichtigsten Geschäftsszenarien zu verstehen, die Ihre Benutzer aktivieren möchten, und stellen Sie gegebenenfalls Richtlinien und Schulungen zur Verfügung. 
 
-- Erwägen Sie die Einbindung von Aktivitäten, um wichtige Websites und Aktivitäten zu überprüfen, um sicherzustellen, dass die Website-und Teambesitzer ihren Steuerungsrichtlinien folgen.
+- Erwägen Sie die Einbindung von Aktivitäten, um wichtige Websites und Aktivitäten zu überprüfen, um sicherzustellen, dass Website- und Teambesitzer Ihren Richtlinien zur Steuerung folgen.
 
 ### <a name="define-roles-and-responsibilities"></a>Definieren von Rollen und Zuständigkeiten
 
-Zusätzlich zu Ihrem Steuerungsteam gibt es mehrere andere wichtige Rollen oder Teams, über die Sie nachdenken sollten, um mit Microsoft 365 erfolgreich zu sein. Einige Rollen können von derselben Person kombiniert oder ausgefüllt werden, andere sind möglicherweise nicht für alle Organisationen geeignet. Die meisten Organisationen haben einen Executive Sponsor für Microsoft 365 als Ganzes und einige haben auch einen Lenkungsausschuss oder ein Team entweder für Microsoft 365 als Ganzes oder nur für das Intranet. [Erfahren Sie mehr über die umfassenden Administratorrollen und Berechtigungen, die in Microsoft 365 zur Verfügung stehen](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+Zusätzlich zu Ihrem Steuerungsteam gibt es mehrere andere Schlüsselrollen oder Teams, die Sie sich für eine erfolgreiche Position mit Microsoft 365 überlegen möchten. Einige Rollen können von derselben Person kombiniert oder ausgefüllt werden, andere sind möglicherweise nicht für alle Organisationen geeignet. Die meisten Organisationen verfügen über einen Executive Sponsor für Microsoft 365 als Ganzes, und einige haben auch ein Lenkungskomitee oder ein Team, entweder für Microsoft 365 als Ganzes oder nur für das Intranet. [Erfahren Sie mehr über die umfassenden Administratorrollen und -berechtigungen, die in Microsoft 365 verfügbar sind.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
-### <a name="revisit-as-business-and-technology-changes"></a>Erneutes Aufrufen von Geschäfts-und Technologieänderungen
+### <a name="revisit-as-business-and-technology-changes"></a>ErneutesVisit bei Änderungen an Unternehmen und Technologien
 
-Die Steuerung für Microsoft 365 ist nicht "einmal und fertig". Haben Sie einen Plan, auf dem zu bleiben, was sich in Microsoft 365 ändert, und passen Sie Ihre Governance-Richtlinien bei Bedarf an. (Dies ist ein wichtiger Grund, warum das Erstellen eines Dokuments mit langer Steuerung keine gute Idee ist. Unternehmen und Technologien ändern sich. Das Aktualisieren einer Webseite ist einfach. Das Aktualisieren und erneute Verteilen eines Dokuments ist wesentlich schwieriger.)
+Die Steuerung für Microsoft 365 ist nicht "einmal erledigt". Planen Sie, die Änderungen in Microsoft 365 zu überplanen und bei Bedarf Ihre Richtlinien für die Steuerung anzupassen. (Dies ist ein wichtiger Grund, warum das Erstellen eines langen Steuerungsdokuments keine gute Idee ist. Unternehmen und Technologien ändern sich. Das Aktualisieren einer Webseite ist einfach. Das Aktualisieren und Erneute Verteilen eines Dokuments ist wesentlich schwieriger.)
 
-### <a name="have-a-strategy-for-communicating-governance-policies-and-guidelines"></a>Strategie für die Kommunikation von Steuerungsrichtlinien und-Richtlinien
+### <a name="have-a-strategy-for-communicating-governance-policies-and-guidelines"></a>Haben Sie eine Strategie für die Kommunikation von Steuerungsrichtlinien und -richtlinien
 
-Letztlich hängt der Erfolg ihrer Steuerungs Planungsbemühungen davon ab, wie gut Sie die Erwartungen an die Mitglieder Ihrer Organisation kommuniziert haben. Zusätzlich zu den zuvor beschriebenen Vorschlägen sollten Sie folgendes befolgen:
+Letztendlich hängt der Erfolg Ihrer Steuerungsplanungsbemühungen davon ab, wie gut Sie die Erwartungen an die Mitglieder Ihrer Organisation kommuniziert haben. Berücksichtigen Sie zusätzlich zu den oben beschriebenen Vorschlägen Folgendes:
 
-- Können Sie "How to" mit Ihrem "How to"-Training integrieren? Mit anderen Worten: können Sie ein "Benutzer Ressourcencenter" für Microsoft 365 erstellen, in dem Sie Ressourcen und Schulungen zur Bereitstellung von Anleitungen und Schulungen bereitstellen können, mit denen die Benutzer Microsoft 365 effektiv einführen können? Der Best Governance-Inhalt bietet Anleitungen, die allen Benutzern dabei helfen, den größten Nutzen aus Microsoft 365 zu nehmen und zu erhalten.
+- Können Sie "Wie sollte" in Ihre "How to"-Schulung integrieren? Mit anderen Worten: Können Sie ein "Benutzerressourcencenter" für Microsoft 365 erstellen, in dem Sie Ressourcen und Schulungen bereitstellen können, um Anleitungen und Schulungen zur Verfügung zu stellen, mit denen Benutzer Microsoft 365 effektiv übernehmen können? Die besten Steuerungsinhalte bieten Anleitungen, mit deren Hilfe alle Benutzer microsoft 365 nutzen können.
 
-- Sollten Sie eine Zertifizierung und eine erneute Zertifizierung für Website-und Teambesitzer erstellen?
+- Sollten Sie eine Zertifizierung und erneute Zertifizierung für Website- und Teambesitzer erstellen?
 
-- Können Sie ein Microsoft 365 Champions-Programm für Ihre Organisation erstellen? Darüber hinaus sollten Sie sich dem weltweiten [Microsoft 365 Champions-Programm](https://aka.ms/O365Champions) anschließen, um Ideen und Ansätze für Ihr eigenes Champions-Programm zu erhalten und sich mit Gleichgesinnten und Führungskräften in und um Microsoft zu verbinden.
+- Können Sie ein Microsoft 365 Champions-Programm für Ihre Organisation erstellen? Erwägen Sie darüber hinaus den Beitritt zum weltweiten [Microsoft 365](https://aka.ms/O365Champions) Champions-Programm, um Ideen und Ansätze für Ihr eigenes Champions-Programm zu erhalten und sich mit gleichgesinnten Personen und Vordenkleitern innerhalb und um Microsoft zu verbinden.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Planung der Collaboration-Steuerung Schritt für Schritt](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Schritt-für-Schritt-Planung für die Zusammenarbeitsgovernance](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Steuerung im Microsoft Cloud Adoption Framework für Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/govern)
+[Governance im Microsoft Cloud Adoption Framework für Azure](/azure/cloud-adoption-framework/govern)
 
-[Übersicht über die SharePoint-Steuerung](https://docs.microsoft.com/sharepoint/governance-overview)
+[Übersicht über die SharePoint-Governance](/sharepoint/governance-overview)
 
-[Planen der Organisations-und Lebenszyklussteuerung für Gruppen Dienste](plan-organization-lifecycle-governance.md)
+[Planen der Organisations- und Lebenszyklussteuerung für Gruppendienste](plan-organization-lifecycle-governance.md)
 
-[Dateizusammenarbeit in SharePoint mit Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)
+[Dateizusammenarbeit in SharePoint mit Microsoft 365](/sharepoint/deploy-file-collaboration)

@@ -16,12 +16,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie bestimmte Benutzergruppen mit Benutzertags in Microsoft Defender für Office 365 Plan 2 identifizieren. Die Tagfilterung ist in Warnungen, Berichten und Untersuchungen in Microsoft Defender für Office 365 verfügbar, um die markierten Benutzer schnell zu identifizieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80bd360888be3aeea42da6f9b58a119a9752d382
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: e9bb6a233f21268df860974549ecffbfd7154045
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50758892"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916406"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Benutzertags in Microsoft Defender für Office 365
 
@@ -41,7 +41,7 @@ Nachdem Sie Systemtags oder benutzerdefinierte Tags auf Benutzer angewendet habe
 - [Bedrohungs-Explorer und Echtzeiterkennungen](threat-explorer.md)
 - [Threat Protection-Statusbericht](view-email-security-reports.md#threat-protection-status-report)
 - [Kampagnenansichten](campaigns.md)
-- Für Prioritätskonten können Sie den Bericht [E-Mail-Probleme für Prioritätskonten](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) im Exchange Admin Center (EAC) verwenden.
+- Für Prioritätskonten können Sie den Bericht [E-Mail-Probleme für Prioritätskonten](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) im Exchange Admin Center (EAC) verwenden.
 
 In diesem Artikel wird erläutert, wie Sie Benutzertags im Security & Compliance Center konfigurieren. Es gibt keine Cmdlets im Security & Compliance Center zum Verwalten von Benutzertags.
 

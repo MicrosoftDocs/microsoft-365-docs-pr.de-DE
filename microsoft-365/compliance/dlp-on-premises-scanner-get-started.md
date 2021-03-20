@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Einrichten des lokalen Microsoft 365-Scanners zur Verhinderung von Datenverlust
-ms.openlocfilehash: e0d7bc9eeae7d701c14aaaeeed7a01cab33829ea
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 7e190a1d6e902af3406f7e8f317efe80e825e7f2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417370"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917831"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>Erste Schritte mit dem lokalen Scanner zur Verhinderung von Datenverlust (Vorschau)
 
@@ -41,7 +41,7 @@ Bevor Sie mit dem lokalen DLP-Scanner beginnen, sollten Sie Ihr [Microsoft 365-A
 - Microsoft 365 E5 Information Protection & Governance 
 
 
-Ausführliche Informationen zur Lizenzierung finden Sie unter: [Microsoft 365-Lizenzierungsrichtlinien für Sicherheit und Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Ausführliche Informationen zur Lizenzierung finden Sie unter: [Microsoft 365-Lizenzierungsrichtlinien für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ### <a name="permissions"></a>Berechtigungen
 
@@ -56,13 +56,13 @@ Daten vom lokalen DLP-Scanner können im [Aktivitäts-Explorer](data-classificat
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>Voraussetzungen für den lokalen DLP-Scanner
 
 - Der Azure Information Protection (AIP) -Scanner implementiert den DLP-Richtlinienabgleich und die Durchsetzung von Richtlinien. Der Scanner wird als Teil des AIP-Clients installiert, sodass Ihre Installation alle Voraussetzungen für AIP, den AIP-Client und den AIP Unified Labeling-Scanner erfüllen muss.
-- Bereitstellen des AIP-Clients und Scanners Weitere Informationen finden Sie unter: [Installieren des einheitlichen AIP-Bezeichnungsclients](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) und [], unter [Konfigurieren und Installieren des Azure Information Protection Unified Labeling-Scanners](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install).
+- Bereitstellen des AIP-Clients und Scanners Weitere Informationen finden Sie unter: [Installieren des einheitlichen AIP-Bezeichnungsclients](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) und [], unter [Konfigurieren und Installieren des Azure Information Protection Unified Labeling-Scanners](/azure/information-protection/deploy-aip-scanner-configure-install).
 - Es muss mindestens ein Etikett und eine Richtlinie im Mandanten veröffentlicht sein, auch wenn alle Ihre Erkennungsregeln nur auf vertraulichen Informationstypen basieren.
 
 ## <a name="deploy-the-dlp-on-premises-scanner"></a>Bereitstellen des lokalen DLP-Scanners
 
-1. Folgen Sie den Anweisungen unter [Installieren des AIP Unified Labeling-Clients](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). 
-2. Folgen Sie den Anweisungen unter [Konfigurieren und Installieren des Azure Unified Labeling-Scanners](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install), um die Scannerinstallation abzuschließen.
+1. Folgen Sie den Anweisungen unter [Installieren des AIP Unified Labeling-Clients](/azure/information-protection/rms-client/install-unifiedlabelingclient-app). 
+2. Folgen Sie den Anweisungen unter [Konfigurieren und Installieren des Azure Unified Labeling-Scanners](/azure/information-protection/deploy-aip-scanner-configure-install), um die Scannerinstallation abzuschließen.
     1. Die Konfiguration von Netzwerkerkennungsaufträgen ist ein optionaler Schritt. Sie können es überspringen und bestimmte Repositorys definieren, die in Ihrem Inhaltsscanauftrag gescannt werden sollen.
     2. Sie müssen einen Inhaltsscanauftrag erstellen und die Repositorys angeben, in denen Dateien gehostet werden, die vom DLP-Modul ausgewertet werden müssen.
     3. Aktivieren Sie DLP-Regeln im erstellten Inhaltsscanauftrag und setzen Sie die Option **Erzwingen** auf **Aus**, es sei denn, Sie möchten direkt mit der DLP-Durchsetzungsphase fortfahren.
@@ -115,7 +115,7 @@ Daten vom lokalen DLP-Scanner können im [Aktivitäts-Explorer](data-classificat
 
 2. Beziehen Sie sich auf die Anweisungen unter [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md), um auf alle Daten für Ihre lokalen Scannerstandorte zuzugreifen und diese zu filtern.
 
-3. Öffnen Sie das [Überwachungsprotokoll im Compliance Center](https://security.microsoft.com/auditlogsearch). Während der öffentlichen Vorschau sind die DLP-Regelübereinstimmungen in der Benutzeroberfläche des Überwachungsprotokolls verfügbar oder können über [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps)PowerShell aufgerufen werden. 
+3. Öffnen Sie das [Überwachungsprotokoll im Compliance Center](https://security.microsoft.com/auditlogsearch). Während der öffentlichen Vorschau sind die DLP-Regelübereinstimmungen in der Benutzeroberfläche des Überwachungsprotokolls verfügbar oder können über [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps)PowerShell aufgerufen werden. 
 
 
 ## <a name="next-steps"></a>Nächste Schritte

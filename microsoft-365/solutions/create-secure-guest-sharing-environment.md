@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Erfahren Sie mehr über die verfügbaren Optionen zum Erstellen einer sicheren Gastfreigabeumgebung in Microsoft 365, die Gastzugriff für eine bessere Zusammenarbeit bietet.
-ms.openlocfilehash: 28b2efba9f0c4ba17811a9871b05ab9f5a7a4839
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 0eb999d48bc0976d7c2bb32ff1bdba8d63409d81
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838682"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918466"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Erstellen einer sicheren Gastfreigabeumgebung
 
@@ -39,7 +39,7 @@ In diesem Artikel finden Sie z. B. Folgendes:
 - Dokumenten eine Vertraulichkeitsbezeichnung zuweisen, die einen vertraulichen Informationstyp enthalten
 - Automatisches Entfernen des Gastzugriffs von Dateien mit einer Vertraulichkeitsbezeichnung
 
-Einige der in diesem Artikel beschriebenen Optionen setzen voraus, dass Gäste über ein Konto in Azure Active Directory verfügen. Verwenden Sie die [SharePoint- und OneDrive-Integration in Azure AD B2B (Vorschau)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview), um sicherzustellen, dass Gäste in das Verzeichnis einbezogen werden, wenn Sie Dateien und Ordner für sie freigeben.
+Einige der in diesem Artikel beschriebenen Optionen setzen voraus, dass Gäste über ein Konto in Azure Active Directory verfügen. Verwenden Sie die [SharePoint- und OneDrive-Integration in Azure AD B2B (Vorschau)](/sharepoint/sharepoint-azureb2b-integration-preview), um sicherzustellen, dass Gäste in das Verzeichnis einbezogen werden, wenn Sie Dateien und Ordner für sie freigeben.
 
 Bitte beachten Sie, dass in diesem Artikel die Aktivierung von Gastfreigabeeinstellungen nicht behandelt wird. Details zum Aktivieren der Gastfreigabe für unterschiedliche Szenarien finden Sie unter [Zusammenarbeit mit Personen außerhalb Ihrer Organisation](collaborate-with-people-outside-your-organization.md).
 
@@ -66,7 +66,7 @@ Nun müssen sich Gäste über die mehrstufige Authentifizierung anmelden, bevor 
 
 ### <a name="more-information"></a>Weitere Informationen
 
-[Planen einer Bereitstellung von Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
+[Planen einer Bereitstellung von Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>Erstellen von Nutzungsbedingungen für Gäste
 
@@ -108,11 +108,11 @@ So erstellen Sie eine Richtlinie für bedingten Zugriff
 Wenn Gäste nun das erste Mal versuchen, auf Inhalte, ein Team oder eine Website in Ihrer Organisation zuzugreifen, müssen sie zunächst den Nutzungsbedingungen zustimmen.
 
 > [!NOTE]
-> Die Verwendung des bedingten Zugriffs erfordert eine Azure AD Premium P1-Lizenz. Weitere Informationen finden Sie unter [Was bedeutet bedingter Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+> Die Verwendung des bedingten Zugriffs erfordert eine Azure AD Premium P1-Lizenz. Weitere Informationen finden Sie unter [Was bedeutet bedingter Zugriff](/azure/active-directory/conditional-access/overview).
 
 ### <a name="more-information"></a>Weitere Informationen
 
-[Azure Active Directory Nutzungsbedingungen](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)
+[Azure Active Directory Nutzungsbedingungen](/azure/active-directory/conditional-access/terms-of-use)
 
 ## <a name="set-up-guest-access-reviews"></a>Einrichten von Gastzugriff-Überprüfungen
 
@@ -145,15 +145,15 @@ Es ist wichtig zu beachten, dass Gäste Zugang zu Teams, Gruppen oder einzelnen 
 
 ### <a name="more-information"></a>Weitere Informationen
 
-[Verwalten des Gastzugriffs mit Azure AD-Zugriffsüberprüfungen](https://docs.microsoft.com/azure/active-directory/governance/manage-guest-access-with-access-reviews)
+[Verwalten des Gastzugriffs mit Azure AD-Zugriffsüberprüfungen](/azure/active-directory/governance/manage-guest-access-with-access-reviews)
 
-[Erstellen einer Zugriffsüberprüfung von Gruppen oder Anwendungen in Azure AD-Zugriffsüberprüfungen](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
+[Erstellen einer Zugriffsüberprüfung von Gruppen oder Anwendungen in Azure AD-Zugriffsüberprüfungen](/azure/active-directory/governance/create-access-review)
 
 ## <a name="set-up-web-only-access-for-guests"></a>Einrichten des rein webbasierten Zugriffs für Gäste
 
 Sie können potenzielle Angriffsflächen verringern und die Verwaltung vereinfachen, indem Sie festlegen, dass Gäste nur über einen Webbrowser auf Ihre Teams, Websites und Dateien zugreifen können.
 
-Für Microsoft 365-Gruppen und Microsoft Teams erfolgt dies über eine Azure AD-Richtlinie für bedingten Zugriff. Für SharePoint wird dies im SharePoint Admin Center konfiguriert. (Sie können auch [Vertraulichkeitsbezeichnungen verwenden, um den Gastzugriff auf reinen Webzugriff zu beschränken](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).)
+Für Microsoft 365-Gruppen und Microsoft Teams erfolgt dies über eine Azure AD-Richtlinie für bedingten Zugriff. Für SharePoint wird dies im SharePoint Admin Center konfiguriert. (Sie können auch [Vertraulichkeitsbezeichnungen verwenden, um den Gastzugriff auf reinen Webzugriff zu beschränken](../compliance/sensitivity-labels-teams-groups-sites.md).)
 
 So beschränken Sie den Gastzugriff auf reinen Webzugriff für Gruppen und Teams:
 
@@ -222,7 +222,7 @@ So erstellen Sie einen vertraulichen Informationstyp
 
 ### <a name="more-information"></a>Weitere Informationen
 
-[Benutzerdefinierte vertrauliche Informationstypen](https://docs.microsoft.com/Office365/SecurityCompliance/custom-sensitive-info-types)
+[Benutzerdefinierte vertrauliche Informationstypen](/Office365/SecurityCompliance/custom-sensitive-info-types)
 
 ## <a name="create-an-auto-labeling-policy-to-assign-a-sensitivity-label-based-on-a-sensitive-information-type"></a>Erstellen einer Richtlinie für die automatische Bezeichnung zum Zuweisen einer Vertraulichkeitsbezeichnung auf der Grundlage eines vertraulichen Informationstyps
 
@@ -252,11 +252,11 @@ Wenn ein Benutzer bei aktivierter Richtlinie "Projekt Saturn" in ein Dokument ei
 
 ### <a name="more-information"></a>Weitere Informationen
 
-[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
+[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](../compliance/apply-sensitivity-label-automatically.md)
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Erstellen einer DLP-Richtlinie zum Entfernen des Gastzugriffs auf streng vertrauliche Dateien
 
-Sie können über die [Verhinderung von Datenverlust (Data Loss Prevention – DLP)](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) die unerwünschte Freigabe von vertraulichen Inhalten für Gäste verhindern. Eine DLP-Richtlinie kann basierend auf der Vertraulichkeitsbezeichnung einer Datei Maßnahmen ergreifen und den Gastzugriff entfernen.
+Sie können über die [Verhinderung von Datenverlust (Data Loss Prevention – DLP)](../compliance/data-loss-prevention-policies.md) die unerwünschte Freigabe von vertraulichen Inhalten für Gäste verhindern. Eine DLP-Richtlinie kann basierend auf der Vertraulichkeitsbezeichnung einer Datei Maßnahmen ergreifen und den Gastzugriff entfernen.
 
 So erstellen Sie eine DLP-Regel
 
@@ -287,9 +287,9 @@ Wichtig: Diese Richtlinie entfernt nicht den Zugriff für Gäste, die Mitglieder
 
 Es gibt einige zusätzliche Optionen in Microsoft 365 und Azure Active Directory, mit denen Sie Ihre Gastfreigabeumgebung sicherer machen können.
 
-- Sie können eine Liste der zulässigen bzw. blockierten Freigabedomänen erstellen, um zu begrenzen, an wen Benutzer Inhalte freigeben können. Weitere Informationen hierzu finden Sie unter [Einschränken der Freigabe von SharePoint- und OneDrive-Inhalten nach Domänen](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) und [Zulassen oder Blockieren von Einladungen an B2B-Benutzer aus bestimmten Organisationen](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
-- Sie können einschränken, mit welchen anderen Azure Active Directory-Mandanten sich Ihre Benutzer verbinden können. Weitere Informationen finden Sie unter [Verwenden von Mandanteneinschränkungen zur Verwaltung des Zugriffs auf SaaS-Anwendungen](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions).
-- Sie können eine verwaltete Umgebung erstellen, in der Partner beim Verwalten von Gastkonten helfen können. Informationen hierzu finden Sie unter [Erstellen eines B2B-Extranets mit verwalteten Gästen](https://docs.microsoft.com/Office365/Enterprise/b2b-extranet).
+- Sie können eine Liste der zulässigen bzw. blockierten Freigabedomänen erstellen, um zu begrenzen, an wen Benutzer Inhalte freigeben können. Weitere Informationen hierzu finden Sie unter [Einschränken der Freigabe von SharePoint- und OneDrive-Inhalten nach Domänen](/sharepoint/restricted-domains-sharing) und [Zulassen oder Blockieren von Einladungen an B2B-Benutzer aus bestimmten Organisationen](/azure/active-directory/b2b/allow-deny-list).
+- Sie können einschränken, mit welchen anderen Azure Active Directory-Mandanten sich Ihre Benutzer verbinden können. Weitere Informationen finden Sie unter [Verwenden von Mandanteneinschränkungen zur Verwaltung des Zugriffs auf SaaS-Anwendungen](/azure/active-directory/manage-apps/tenant-restrictions).
+- Sie können eine verwaltete Umgebung erstellen, in der Partner beim Verwalten von Gastkonten helfen können. Informationen hierzu finden Sie unter [Erstellen eines B2B-Extranets mit verwalteten Gästen](/Office365/Enterprise/b2b-extranet).
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 17ac5506b6445854b1d9fe8ba6b5f5356f6a3827
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 96d265a7b909b439f960c951b10c84f4bc7a63b0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819821"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916829"
 ---
 # <a name="insider-risk-management-policies"></a>Richtlinien für das Risikomanagement von Insidern
 
@@ -278,7 +278,7 @@ Führen Sie die folgenden Schritte aus, um eine neue Richtlinie zu erstellen:
 
 11. Wenn Sie im vorherigen Schritt die Option Ich möchte **SharePoint-Websites,** Vertraulichkeitsbezeichnungen und/oder vertrauliche Informationstypen als Prioritätsinhalte angeben, werden die Detailseiten für *SharePoint-Websites,* Typen vertraulicher Informationen und Vertraulichkeitsbezeichnungen *angezeigt.* Verwenden Sie diese Detailseiten, um die SharePoint-, vertraulichen Informationstypen und Vertraulichkeitsbezeichnungen zu definieren, die in der Richtlinie priorisiert werden.
 
-    - **SharePoint-Websites:** Wählen Sie **SharePoint-Website hinzufügen aus,** und wählen Sie die SharePoint-Organisationen aus, auf die Sie Zugriff haben und priorisieren möchten. Beispiel: *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **SharePoint-Websites:** Wählen Sie **SharePoint-Website hinzufügen aus,** und wählen Sie die SharePoint-Websites aus, auf die Sie Zugriff haben und priorisieren möchten. Beispiel: *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Vertraulicher Infotyp:** Wählen Sie **Vertraulichen Informationstyp hinzufügen aus,** und wählen Sie die Vertraulichkeitstypen aus, die Sie priorisieren möchten. Beispiel: *"US-Bankkontonummer"* und *"Kreditkartennummer"*.
     - **Vertraulichkeitsbezeichnungen:** Wählen Sie **Vertraulichkeitsbezeichnung hinzufügen aus,** und wählen Sie die Bezeichnungen aus, die Sie priorisieren möchten. Beispiel: *"Vertraulich"* und *"Geheim"*.
 
@@ -323,7 +323,7 @@ Führen Sie die folgenden Schritte aus, um eine vorhandene Richtlinie zu verwalt
 
 11. Wenn Sie im vorherigen Schritt die Option Ich möchte **SharePoint-Websites,** Vertraulichkeitsbezeichnungen und/oder vertrauliche Informationstypen als Prioritätsinhalte angeben, werden die Detailseiten für *SharePoint-Websites,* Typen vertraulicher Informationen und Vertraulichkeitsbezeichnungen *angezeigt.* Verwenden Sie diese Detailseiten, um die SharePoint-, vertraulichen Informationstypen und Vertraulichkeitsbezeichnungen zu definieren, die in der Richtlinie priorisiert werden.
 
-    - **SharePoint-Websites:** Wählen Sie **SharePoint-Website hinzufügen aus,** und wählen Sie die SharePoint-Organisationen aus, auf die Sie Zugriff haben und priorisieren möchten. Beispiel: *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **SharePoint-Websites:** Wählen Sie **SharePoint-Website hinzufügen aus,** und wählen Sie die SharePoint-Websites aus, auf die Sie Zugriff haben und priorisieren möchten. Beispiel: *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Vertraulicher Infotyp:** Wählen Sie **Vertraulichen Informationstyp hinzufügen aus,** und wählen Sie die Vertraulichkeitstypen aus, die Sie priorisieren möchten. Beispiel: *"US-Bankkontonummer"* und *"Kreditkartennummer"*.
     - **Vertraulichkeitsbezeichnungen:** Wählen Sie **Vertraulichkeitsbezeichnung hinzufügen aus,** und wählen Sie die Bezeichnungen aus, die Sie priorisieren möchten. Beispiel: *"Vertraulich"* und *"Geheim"*.
 
@@ -354,14 +354,20 @@ Führen Sie die folgenden Schritte aus, um eine vorhandene Richtlinie zu kopiere
 3. Wählen Sie auf der Seite Richtliniendetails die Option Kopieren aus.
 4. Benennen Sie im Richtlinien-Assistenten die neue Richtlinie, und aktualisieren Sie die Richtlinienkonfiguration nach Bedarf.
 
-## <a name="add-users-to-a-policy"></a>Hinzufügen von Benutzern zu einer Richtlinie
+## <a name="immediately-start-scoring-user-activity"></a>Sofort mit der Bewertung der Benutzeraktivität beginnen
 
-Es kann Szenarien geben, in denen Sie Insiderrisikorichtlinien vorübergehend Benutzer hinzufügen müssen, nachdem ein ungewöhnliches Ereignis außerhalb des Insider-Risikomanagementworkflows gemeldet wurde. Verwenden Sie Die Bewertungsaktivität starten für Benutzer auf der Registerkarte Richtlinien, um einen Benutzer (oder Benutzer) manuell für einen bestimmten Zeitraum zu einer oder mehreren Insiderrisikorichtlinien hinzuzufügen, um sofort mit dem Zuweisen von Risikobewertungen zu ihrer Aktivität zu beginnen und die Anforderung zu umgehen, dass ein Benutzer über einen auslösenden Indikator (z. B. eine Übereinstimmung mit einer DLP-Richtlinie) verfügen muss. Sie können auch einen Grund für das Hinzufügen des Benutzers zur Richtlinie hinzufügen. Benutzer, die Richtlinien manuell hinzugefügt werden, werden im Benutzerdashboard angezeigt.
+Es kann Szenarien gibt, in denen Sie sofort damit beginnen müssen, Benutzern mit Insiderrisikorichtlinien außerhalb des Insiderrisikomanagements, der den Ereignisworkflow auslöst, Risikoergebnisse zuzuordnen. Verwenden **Sie Die** Bewertungsaktivität starten für Benutzer auf der Registerkarte Richtlinien, um einen Benutzer (oder Benutzer) manuell für einen bestimmten Zeitraum zu einer oder mehreren Insiderrisikorichtlinien hinzuzufügen, um sofort mit dem Zuweisen von Risikobewertungen zu ihrer Aktivität zu beginnen und die Anforderung zu umgehen, dass ein Benutzer über einen auslösenden Indikator (z. B. eine Übereinstimmung mit einer DLP-Richtlinie) verfügen muss.  Sie können auch einen Grund für das Hinzufügen des Benutzers zur Richtlinie hinzufügen, der auf der Aktivitätszeitachse der Benutzer angezeigt wird. Benutzer, die Richtlinien manuell hinzugefügt  werden, werden im Benutzerdashboard angezeigt, und Warnungen werden erstellt, wenn die Aktivität die Schwellenwerte für Richtlinienwarnungen erfüllt.
+
+Einige Szenarien, in denen Sie möglicherweise sofort mit der Bewertung von Benutzeraktivitäten beginnen möchten:
+
+- Wenn Benutzer mit Risikobedenken identifiziert werden und Sie sofort mit der Zuweisung von Risikoergebnissen zu ihren Aktivitäten für eine oder mehrere Ihrer Richtlinien beginnen möchten
+- Wenn ein Vorfall vorkommt, der möglicherweise erfordert, dass Sie sofort mit der Zuweisung von Risikoergebnissen für die Aktivitäten beteiligter Benutzer für eine oder mehrere Ihrer Richtlinien beginnen
+- Wenn Sie Ihren Personalconnector noch nicht konfiguriert haben, Sie jedoch mit der Zuweisung von Risikoergebnissen zu Benutzeraktivitäten für Hr-Ereignisse beginnen möchten, indem Sie eine CSV-Datei für die Benutzer hochladen
 
 >[!NOTE]
->Es kann mehrere Stunden dauern, bis neue manuell hinzugefügte Benutzer im Benutzerdashboard angezeigt werden. Die Anzeige von Aktivitäten für die vorherigen 90 Tage für diese Benutzer kann bis zu 24 Stunden dauern. Um Aktivitäten für manuell hinzugefügte Benutzer anzuzeigen, navigieren Sie zur Registerkarte Benutzer, wählen Sie den Benutzer im Benutzerdashboard aus, und öffnen Sie die Registerkarte Benutzeraktivität im Detailbereich.
+>Es kann mehrere Stunden dauern, bis neue manuell hinzugefügte Benutzer im Benutzerdashboard **angezeigt** werden. Die Anzeige von Aktivitäten für die vorherigen 90 Tage für diese Benutzer kann bis zu 24 Stunden dauern. Um Aktivitäten für manuell hinzugefügte Benutzer anzuzeigen, navigieren Sie  zur Registerkarte  Benutzer, wählen Sie den Benutzer im Benutzerdashboard aus, und öffnen Sie die Registerkarte Benutzeraktivität im Detailbereich. 
 
-Führen Sie die folgenden Schritte aus, um einen Benutzer manuell zu einer oder mehreren Insider-Risikomanagementrichtlinien hinzuzufügen:
+Führen Sie die folgenden Schritte aus, um die Bewertungsaktivität für Benutzer in einer oder mehreren Insider-Risikomanagementrichtlinien manuell zu starten:
 
 1. Wechseln Sie [im Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Richtlinien** aus.
 2. Wählen Sie im Richtliniendashboard die Richtlinie oder Richtlinien aus, der Sie Benutzer hinzufügen möchten.

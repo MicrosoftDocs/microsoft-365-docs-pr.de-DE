@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Stellen Sie sicher, dass Ihre Remotemitarbeiter auf lokale Ressourcen zugreifen können, während Sie den Zugriff auf die Microsoft 365-Clouddienste optimieren.
-ms.openlocfilehash: 43000ce27fc24dbc6c2db3782b0ed40aa66b7fd2
-ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
+ms.openlocfilehash: ae86013ea1235c6dfd9929fd329cb0b2dba0fb93
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50055531"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918350"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Schritt 2: Bereitstellung des Remotezugriffs auf lokale Apps und Dienste
 
@@ -55,7 +55,7 @@ Der Microsoft 365-Datenverkehr muss eine indirekte Route durch Ihre Organisatio
 
 Mit geteilten Tunneln können Sie Ihren VPN-Client so konfigurieren, dass bestimmte Typen von Datenverkehr von der Übertragung über die VPN-Verbindung zum Unternehmensnetzwerk ausgeschlossen werden.
 
-Um den Zugriff auf Microsoft 365-Cloudressourcen zu optimieren, konfigurieren Sie die VPN-Clients für geteilte Tunneln so, dass der Datenverkehr an die Endpunkte der **Optimieren**-Kategorie von Microsoft 365 über die VPN-Verbindung ausgeschlossen ist. Weitere Informationen finden Sie unter [Office 365 Endpunkt-Kategorien](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories). Sehen Sie sich [diese Liste](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges) der Endpunkte der Kategorie „Optimieren“ an.
+Um den Zugriff auf Microsoft 365-Cloudressourcen zu optimieren, konfigurieren Sie die VPN-Clients für geteilte Tunneln so, dass der Datenverkehr an die Endpunkte der **Optimieren**-Kategorie von Microsoft 365 über die VPN-Verbindung ausgeschlossen ist. Weitere Informationen finden Sie unter [Office 365 Endpunkt-Kategorien](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories). Sehen Sie sich [diese Liste](../enterprise/urls-and-ip-address-ranges.md) der Endpunkte der Kategorie „Optimieren“ an.
 
 Hier sehen Sie den resultierenden Datenverkehrsfluss, bei dem der größte Teil des Datenverkehrs an Microsoft 365-Cloud-Apps die VPN-Verbindung umgehen kann.
 
@@ -63,7 +63,7 @@ Hier sehen Sie den resultierenden Datenverkehrsfluss, bei dem der größte Teil 
 
 Auf diese Weise kann der VPN-Client wichtigen Datenverkehr innerhalb des Microsoft 365-Clouddienstes direkt über das Internet und zum nächstgelegenen Einstiegspunkt ins Microsoft-Netzwerk senden und empfangen.
 
-Weitere Informationen und eine Anleitung finden Sie unter[Optimieren der Office 365-Konnektivität für Remotebenutzer mithilfe von geteilten VPN-Tunneln](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel??).
+Weitere Informationen und eine Anleitung finden Sie unter[Optimieren der Office 365-Konnektivität für Remotebenutzer mithilfe von geteilten VPN-Tunneln](../enterprise/microsoft-365-vpn-split-tunnel.md).
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>Remotezugriff bereitstellen, wenn alle Ihre Apps Web-Apps sind und Sie über eine hybride Identität verfügen
 
@@ -73,7 +73,7 @@ Hier sind die Komponenten des Azure AD-Anwendungsproxys.
 
 ![Komponenten des Azure AD-Anwendungsproxys](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
 
-Weitere Informationen finden Sie in dieser [Übersicht über den Azure AD-Anwendungsproxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+Weitere Informationen finden Sie in dieser [Übersicht über den Azure AD-Anwendungsproxy](/azure/active-directory/manage-apps/application-proxy).
 
 >[!Note]
 >Der Azure AD-Anwendungsproxy ist in einem Microsoft 365-Abonnement nicht enthalten. Sie müssen die Nutzung mit einem separaten Azure-Abonnement bezahlen.
@@ -87,7 +87,7 @@ Eine P2S-VPN-Verbindung erstellt eine sichere Verbindung vom Gerät eines Remote
 
 ![Komponenten von Azure P2S-VPN](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png)
 
-Weitere Informationen finden Sie in dieser [Übersicht über P2S-VPN](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about).
+Weitere Informationen finden Sie in dieser [Übersicht über P2S-VPN](/azure/vpn-gateway/point-to-site-about).
 
 >[!Note]
 >Der Azure P2S VPN ist in einem Microsoft 365-Abonnement nicht enthalten. Sie müssen die Nutzung mit einem separaten Azure-Abonnement bezahlen.
@@ -99,7 +99,7 @@ Nutzen Sie zur Unterstützung von Remotemitarbeitern, die nur Ihre persönlichen
 
 ![Komponenten von Azure Windows Virtual Desktop](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-Weitere Informationen finden Sie in dieser [Übersicht über Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview). 
+Weitere Informationen finden Sie in dieser [Übersicht über Windows Virtual Desktop](/azure/virtual-desktop/overview). 
 
 >[!Note]
 >Windows Virtual Desktop ist in einem Microsoft 365-Abonnement nicht enthalten. Sie müssen die Nutzung mit einem separaten Azure-Abonnement bezahlen.
@@ -116,7 +116,7 @@ Weitere Informationen finden Sie in [diesem](https://www.microsoft.com/security/
 ## <a name="admin-technical-resources-for-remote-access"></a>Verwaltung technischer Ressourcen für den Remotezugriff
 
 - [Den Office 365-Datenverkehr für Remotemitarbeiter schnell optimieren & die Auslastung Ihrer Infrastruktur verringern](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571)
-- [Optimieren der Office 365-Konnektivität für Remotebenutzer mithilfe eines geteilten VPN-Tunnels](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel?)
+- [Optimieren der Office 365-Konnektivität für Remotebenutzer mithilfe eines geteilten VPN-Tunnels](../enterprise/microsoft-365-vpn-split-tunnel.md)
 
 ## <a name="results-of-step-2"></a>Ergebnisse von Schritt 2
 
@@ -136,4 +136,3 @@ Nach der Bereitstellung einer Remotezugriffslösung für Ihre Remotemitarbeiter:
 [![Schritt 3: Bereitstellen von Sicherheits- und Compliancediensten von Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid-3.png)](empower-people-to-work-remotely-security-compliance.md)
 
 Fahren Sie mit [Schritt 3](empower-people-to-work-remotely-security-compliance.md) fort, um die Sicherheits- und Compliance-Dienste von Microsoft 365 zum Schutz Ihrer Apps, Daten und Geräte für Remotemitarbeiter bereitzustellen.
-

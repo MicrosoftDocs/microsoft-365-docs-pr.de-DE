@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 77d9a12f6a3620ecba8142cee331a55dfb671c3c
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 18ab0065a4a6c90f61730a313eb8c54f538fafab
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423242"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918050"
 ---
 # <a name="get-started-with-communication-compliance"></a>Erste Schritte mit der Kommunikationscompliance
 
@@ -68,7 +68,7 @@ Wählen Sie beim Konfigurieren der Kommunikationskonformität aus den folgenden 
 
 | Rolle | Rollenberechtigungen |
 |:-----|:-----|
-| **Kommunikationskonformität** | Verwenden Sie diese Rollengruppe, um die Kommunikationskonformität für Ihre Organisation in einer einzigen Gruppe zu verwalten. Durch Hinzufügen aller Benutzerkonten für designierte Administratoren, Analysten, Ermittler und Viewer können Sie Berechtigungen für die Kommunikationskonformität in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für die Kommunikationskonformität. Diese Konfiguration ist die einfachste Möglichkeit, schnell mit der Kommunikationskonformität zu beginnen und ist für Organisationen geeignet, die keine separaten Berechtigungen benötigen, die für separate Benutzergruppen definiert sind. |
+| **Kommunikationscompliance** | Verwenden Sie diese Rollengruppe, um die Kommunikationskonformität für Ihre Organisation in einer einzigen Gruppe zu verwalten. Durch Hinzufügen aller Benutzerkonten für designierte Administratoren, Analysten, Ermittler und Viewer können Sie Berechtigungen für die Kommunikationskonformität in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für die Kommunikationskonformität. Diese Konfiguration ist die einfachste Möglichkeit, schnell mit der Kommunikationskonformität zu beginnen und ist für Organisationen geeignet, die keine separaten Berechtigungen benötigen, die für separate Benutzergruppen definiert sind. |
 | **Kommunikations-Compliance-Administrator** | Verwenden Sie diese Rollengruppe, um zunächst die Kommunikationskonformität zu konfigurieren und später Administratoren der Kommunikationskonformität in eine definierte Gruppe zu trennen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Kommunikationskonformitätsrichtlinien, globale Einstellungen und Rollengruppenzuweisungen erstellen, lesen, aktualisieren und löschen. Benutzer, die dieser Rollengruppe zugewiesen sind, können keine Benachrichtigungen anzeigen. |
 | **Communication Compliance Analyst** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die als Kommunikations-Compliance-Analysten fungieren. Benutzer, die dieser Rollengruppe zugewiesen sind, können Richtlinien anzeigen, an denen sie als Prüfer zugewiesen sind, Nachrichtenmetadaten (nicht Nachrichteninhalte) anzeigen, an zusätzliche Prüfer eskalieren oder Benachrichtigungen an Benutzer senden. Analysten können ausstehende Warnungen nicht auflösen. |
 | **Kommunikations-Compliance-Prüfer** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die als Ermittler für die Kommunikationskonformität fungieren. Benutzer, die dieser Rollengruppe zugewiesen sind, können Nachrichtenmetadaten und -inhalte anzeigen, an zusätzliche Prüfer eskalieren, zu einem Erweiterten eDiscovery-Fall eskalieren, Benachrichtigungen an Benutzer senden und die Warnung auflösen. |
@@ -128,7 +128,7 @@ Verwenden Sie das folgende Diagramm, um Gruppen in Ihrer Organisation für Kommu
 
 | **Mitglied der Richtlinie** | **Unterstützte Gruppen** | **Nicht unterstützte Gruppen** |
 |:-----|:-----|:-----|
-|Überwachte Benutzer <br> Nicht überwachte Benutzer | Verteilergruppen <br> Microsoft Office 365-Gruppen | Dynamische Verteilergruppen <br> Geschachtelte Verteilergruppen <br> E-Mail-aktivierte Sicherheitsgruppen |
+|Überwachte Benutzer <br> Nicht überwachte Benutzer | Verteilergruppen <br> Microsoft 365-Gruppen | Dynamische Verteilergruppen <br> Geschachtelte Verteilergruppen <br> E-Mail-aktivierte Sicherheitsgruppen <br> Microsoft 365-Gruppen mit dynamischer Mitgliedschaft |
 | Prüfer | Keine | Verteilergruppen <br> Dynamische Verteilergruppen <br> Geschachtelte Verteilergruppen <br> E-Mail-aktivierte Sicherheitsgruppen |
   
 Wenn Sie eine Verteilergruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle E-Mails und Teams-Chats von jedem Benutzer in der Verteilergruppe. Wenn Sie eine Microsoft 365-Gruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle E-Mails und Teams-Chats, die an diese Gruppe gesendet werden, nicht die einzelnen E-Mails und Chats, die von jedem Gruppenmitglied empfangen werden.
@@ -252,7 +252,7 @@ Sie können auch die Anonymisierung für angezeigte Benutzernamen aktivieren, we
 
 4. Wählen Sie anonymisierte Versionen **von Benutzernamen anzeigen aus, um die Anonymisierung zu aktivieren.**
 
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern** aus.
 
 6. Navigieren Sie zur **Registerkarte Benachrichtigungsvorlagen,** und wählen Sie **dann Benachrichtigungsvorlage erstellen aus.**
 

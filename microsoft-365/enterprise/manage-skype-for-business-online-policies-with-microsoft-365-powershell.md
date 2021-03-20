@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Zusammenfassung: Verwenden Sie PowerShell, um Ihre Skype for Business Online-Benutzerkontoeigenschaften mit Richtlinien zu verwalten.'
-ms.openlocfilehash: ca945bc05e76525b4b2df6fb0b982a8468d87810
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: a10929bbdce499ad26f9714127f675beeef58765
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515052"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916702"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>Verwalten von Skype for Business Online-Richtlinien mit PowerShell
 
@@ -34,7 +34,7 @@ Bereiten Sie sich mithilfe dieser Anweisungen auf die Ausführung der Befehle vo
   > [!Note]
   > Der Skype for Business Online-Connector ist derzeit Bestandteil des aktuellen PowerShell-Moduls von Teams. Wenn Sie die neueste Version von Teams PowerShell verwenden, müssen Sie den Skype for Business Online-Connector nicht installieren.
 
-1. Installieren Sie [das Teams PowerShell-Modul](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
+1. Installieren Sie das [PowerShell-Modul von Teams](/microsoftteams/teams-powershell-install).
     
 2. Öffnen Sie eine Windows PowerShell-Eingabeaufforderung, und führen Sie die folgenden Befehle aus: 
 
@@ -90,11 +90,11 @@ Dieser Befehl sucht nach der dem Benutzer zugewiesenen Richtlinie und dann in di
   
 Informationen zum Verwalten von Skype for Business Online-Richtlinien mit PowerShell finden Sie in den Cmdlets für:
 
-- [Clientrichtlinie](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
-- [Konferenzrichtlinie](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
-- [Mobile Richtlinie](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
-- [Online-Voicemailrichtlinie](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
-- [Voiceroutingrichtlinie](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
+- [Clientrichtlinie](/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
+- [Konferenzrichtlinie](/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
+- [Mobile Richtlinie](/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
+- [Online-Voicemailrichtlinie](/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
+- [Voiceroutingrichtlinie](/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
 
 
 > [!NOTE]
@@ -107,7 +107,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> Hiermit wird eine Liste mit den für Sie verfügbaren VoIP-Richtlinien zurückgegeben. Beachten Sie aber, dass nicht alle Richtlinien auch allen Benutzern zugewiesen werden können, da zahlreiche Beschränkungen hinsichtlich Lizenzierung und Region bestehen. (Der so genannte „[Verwendungsstandort](https://msdn.microsoft.com/library/azure/dn194136.aspx)".) Wenn Sie die externen Zugriffsrichtlinien und die Konferenzrichtlinien ermitteln möchten, die einem bestimmten Benutzer zugewiesen werden können, verwenden Sie Befehle ähnlich den folgenden: 
+> Hiermit wird eine Liste mit den für Sie verfügbaren VoIP-Richtlinien zurückgegeben. Beachten Sie aber, dass nicht alle Richtlinien auch allen Benutzern zugewiesen werden können, da zahlreiche Beschränkungen hinsichtlich Lizenzierung und Region bestehen. (Der so genannte „[Verwendungsstandort](/previous-versions/azure/dn194136(v=azure.100))".) Wenn Sie die externen Zugriffsrichtlinien und die Konferenzrichtlinien ermitteln möchten, die einem bestimmten Benutzer zugewiesen werden können, verwenden Sie Befehle ähnlich den folgenden: 
 
 ```powershell
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
@@ -131,4 +131,3 @@ Get-CsClientPolicy -Identity "Global"
 [Verwalten von Microsoft 365 mit PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

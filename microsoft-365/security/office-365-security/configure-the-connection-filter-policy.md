@@ -19,12 +19,12 @@ ms.custom:
 description: Administratoren erfahren, wie Sie die Verbindungsfilterung in Exchange Online Protection (EOP) konfigurieren, um E-Mails von E-Mail-Servern zu erlauben oder zu blockieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bdc8033996c41238bb1defe831eb8e8c7650bb44
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 43f6c1b9f3867670810f2c4e2ada13544d39380f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406090"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917058"
 ---
 # <a name="configure-connection-filtering"></a>Konfigurieren von Verbindungsfiltern
 
@@ -53,18 +53,18 @@ In diesem Thema wird beschrieben, wie Sie die Standardverbindungsfilterrichtlini
 
 - Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **Antispameinstellungen** zu wechseln, verwenden Sie <https://protection.office.com/antispam>.
 
-- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in **Exchange Online** die entsprechenden Berechtigungen zugewiesen werden:
+- Sie müssen in **Exchange Online** Berechtigungen erhalten, bevor Sie die in diesem Artikel beschriebenen Schritte ausführen können:
   - Zum Ändern der Standardverbindungsfilterrichtlinie müssen Sie Mitglied der Rollengruppen Organisationsverwaltung **oder** **Sicherheitsadministrator** sein.
   - Für den schreibgeschützten Zugriff auf die Standardverbindungsfilterrichtlinie müssen Sie Mitglied der Rollengruppen **"Globaler Leser"** oder **"Sicherheitsleser"** sein.
 
-  Weitere Informationen finden Sie unter [Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
+  Weitere Informationen finden Sie unter [Berechtigungen in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   **Hinweise**:
 
-  - Durch hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft  365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen und Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
-  - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
+  - Durch Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+  - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
 - Um die Quell-IP-Adressen der E-Mail-Server (Absender) zu finden, die Sie zulassen oder blockieren möchten, können Sie das Verbindungs-IP - Headerfeld (**CIP**) im Nachrichtenkopf überprüfen. Informationen zum Anzeigen eines Nachrichtenkopfs in verschiedenen E-Mail-Clients finden Sie unter [Anzeigen von Internetnachrichtenkopfzeilen in Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
@@ -110,7 +110,7 @@ In diesem Thema wird beschrieben, wie Sie die Standardverbindungsfilterrichtlini
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-modify-the-default-connection-filter-policy"></a>Verwenden von Exchange Online PowerShell oder eigenständiger EOP PowerShell zum Ändern der Standardverbindungsfilterrichtlinie
 
-Verwenden Sie die folgende Syntax:
+Sowohl exExchangeNoVersion als auch AD FS müssen dasselbe Token für denselben Benutzer anfordern, damit eine ordnungsgemäße Funktionalität für ein standortübergreifendes exExchangeNoVersion-Bereitstellungsszenario gewährleistet ist.
 
 ```powershell
 Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional Comment">] [-EnableSafeList <$true | $false>] [-IPAllowList <IPAddressOrRange1,IPAddressOrRange2...>] [-IPBlockList <IPAddressOrRange1,IPAddressOrRange2...>]
@@ -144,7 +144,7 @@ In diesem Beispiel werden die angegebenen IP-Adressen und Adressbereiche aus der
 Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2.10","192.169.3.0/24","192.168.4.1-192.168.4.5";Remove="192.168.1.10"}
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedconnectionfilterpolicy).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-HostedConnectionFilterPolicy](/powershell/module/exchange/set-hostedconnectionfilterpolicy).
 
 ## <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
@@ -174,7 +174,7 @@ Nachdem Sie sich der potenziellen Probleme bewusst sind, können Sie eine Nachri
 
 - Regelaktion: **Ändern der Nachrichteneigenschaften** \> **Festlegen der Spamsicherheitsstufe (Spam Confidence Level, SCL)** \> **Spamfilter umgehen**.
 
-Sie können die Regel überwachen, die Regel testen, die Regel während eines bestimmten Zeitraums und andere Auswahlen aktivieren. Wir empfehlen, die Regel über eine bestimmte Zeit zu testen, bevor Sie sie erzwingen. Weitere Informationen finden Sie unter [Verwalten von Nachrichtenflussregeln in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
+Sie können die Regel überwachen, die Regel testen, die Regel während eines bestimmten Zeitraums und andere Auswahlen aktivieren. Wir empfehlen, die Regel über eine bestimmte Zeit zu testen, bevor Sie sie erzwingen. Weitere Informationen finden Sie unter [Verwalten von Nachrichtenflussregeln in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
 
 ### <a name="skip-spam-filtering-on-selective-email-domains-from-the-same-source"></a>Überspringen der Spamfilterung für ausgewählte E-Mail-Domänen aus derselben Quelle
 

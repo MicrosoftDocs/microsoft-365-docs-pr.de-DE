@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Übersicht über Viva-Themen.
-ms.openlocfilehash: 91442ba12b3d5df1d9934022751f4bc381cd40e8
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
-ms.translationtype: HT
+ms.openlocfilehash: 68a88e74a674a7bbc290ae0e8f88bfbe0277d910
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453969"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917380"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics – Übersicht 
 
@@ -66,7 +66,7 @@ Wenn ein Thema identifiziert wird und KI feststellt, dass es über genügend Inf
 
 Ihre Wissensmanager können wählen, ob sie alle SharePoint-Sites in Ihrem Mandanten nach Themen durchsuchen oder nur bestimmte auswählen möchten.
 
-Siehe [Themenentdeckung und Kuration](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+Siehe [Themenentdeckung und Kuration](./topic-experiences-discovery-curation.md)
 
 ## <a name="roles"></a>Rollen
 
@@ -108,7 +108,7 @@ Mit den Administratorsteuerelementen im Microsoft 365 Admin Center können Sie I
 - Steuern, welche Benutzer Themen erstellen und bearbeiten können.
 - Steuern, welcher Benutzer Themen anzeigen kann.
 
-Weitere Informationen zu Administratorsteuerelementen finden Sie unter [Zuweisen von Benutzerberechtigungen](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions), [Verwalten der Themensichtbarkeit](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules) und [Verwalten der Themenerkennung](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery).
+Weitere Informationen zu Administratorsteuerelementen finden Sie unter [Zuweisen von Benutzerberechtigungen](./plan-topic-experiences.md#user-permissions), [Verwalten der Themensichtbarkeit](./topic-experiences-knowledge-rules.md) und [Verwalten der Themenerkennung](./topic-experiences-discovery.md).
 
 ## <a name="topic-curation--feedback"></a>Kuration und Feedback zum Thema
 
@@ -120,8 +120,7 @@ Benutzer, denen Sie Zugriff gewähren, um Themen in ihrer täglichen Arbeit anzu
 
 Darüber hinaus können Benutzer mit entsprechenden Berechtigungen Elemente wie die Yammer-Konversation, die für ein Thema relevant sind, mit Tags versehen und einem bestimmten Thema hinzufügen. 
 
-Siehe [Themenentdeckung und Kuration](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+Siehe [Themenentdeckung und Kuration](./topic-experiences-discovery-curation.md)
 
 
 ## <a name="see-also"></a>Weitere Informationen:
-

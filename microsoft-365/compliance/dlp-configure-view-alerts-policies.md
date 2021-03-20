@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie Warnungen für DLP-Richtlinien definieren und verwalten.
-ms.openlocfilehash: 7bc9d9b59c0424792f995be42591548b758c99ec
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 0594cee5208049aef16dee6fa03954faae2a1cdd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766420"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917861"
 ---
 # <a name="configure-and-view-alerts-for-dlp-polices-preview"></a>Konfigurieren und Anzeigen von Warnungen für DLP-Richtlinien (Vorschau)
 
@@ -54,9 +54,9 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie über die erforderlichen Voraus
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>Lizenzierung für das DLP-Warnungsverwaltungsdashboard
 
-Alle berechtigten Mandanten für Office 365 DLP können auf das neue DLP-Warnungsverwaltungsdashboard zugreifen. Für die ersten Schritte sollten Sie für Office 365 DLP für Exchange Online, SharePoint Online und OneDrive for Business berechtigt sein. Weitere Informationen zu den Lizenzierungsanforderungen für Office 365 DLP finden Sie unter Welche Lizenzen bieten die Rechte für einen Benutzer, von dem [Dienst zu profitieren?](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
+Alle berechtigten Mandanten für Office 365 DLP können auf das neue DLP-Warnungsverwaltungsdashboard zugreifen. Für die ersten Schritte sollten Sie für Office 365 DLP für Exchange Online, SharePoint Online und OneDrive for Business berechtigt sein. Weitere Informationen zu den Lizenzierungsanforderungen für Office 365 DLP finden Sie unter Welche Lizenzen bieten die Rechte für einen Benutzer, von dem [Dienst zu profitieren?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
 
-Kunden, die an der öffentlichen [Endpoint DLP-Vorschau](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide) teilnehmen oder für [Teams DLP](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide) berechtigt sind, werden ihre DLP-Richtlinienwarnungen und Teams -DLP-Richtlinienwarnungen im DLP-Warnungsverwaltungsdashboard angezeigt.
+Kunden, die an der öffentlichen [Endpoint DLP-Vorschau](./endpoint-dlp-learn-about.md?view=o365-worldwide) teilnehmen oder für [Teams DLP](./dlp-microsoft-teams.md?view=o365-worldwide) berechtigt sind, werden ihre DLP-Richtlinienwarnungen und Teams -DLP-Richtlinienwarnungen im DLP-Warnungsverwaltungsdashboard angezeigt.
 
 ### <a name="licensing-for-alert-configuration-options"></a>Lizenzierung für Warnungskonfigurationsoptionen
 

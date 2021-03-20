@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Yammer gelten.
-ms.openlocfilehash: ce3e298d5d0a034b30865e9fa1278325ce25c1e6
-ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
+ms.openlocfilehash: 0426fdf04090e535a99f8acd3bf376adfb016796
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2021
-ms.locfileid: "49883704"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917801"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Informationen zur Aufbewahrung für Yammer
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Dieses Feature befindet sich in Vorschau und ist noch nicht für alle Kunden verfügbar.

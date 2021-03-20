@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Erfahren Sie mehr über das Steuern verwandter Features in Microsoft 365-Gruppen, Teams, SharePoint und Yammer.
-ms.openlocfilehash: 01dea57504bf5d68c0bb13376379379f29044191
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: b31e9bf1cd46f94343a489497fb5eb00e138ce60
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838467"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916442"
 ---
 # <a name="what-is-collaboration-governance"></a>Was ist Zusammenarbeitsgovernance?
 
@@ -59,7 +59,7 @@ Microsoft 365-Gruppen enthalten eine Suite verknüpfter Ressourcen, die Benutzer
 |[Posteingang](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|Für E-Mail-Unterhaltungen zwischen Gruppenmitgliedern. Dieser Posteingang hat eine E-Mail-Adresse und kann für das Annehmen von Nachrichten von Personen außerhalb der Gruppe und sogar außerhalb Ihrer Organisation konfiguriert werden, ähnlich wie eine herkömmliche Verteilerliste.|
 |[OneNote-Notizbuch](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|Sammeln von Ideen, Recherchen und Informationen|
 |[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|Zum Zuweisen und Verwalten von Projektaufgaben unter Ihren Gruppenmitgliedern|
-|[Power BI Workspace](https://docs.microsoft.com/power-bi/collaborate-share/service-new-workspaces)|Ein Datenzusammenarbeitsraum mit Dashboards und Berichten|
+|[Power BI Workspace](/power-bi/collaborate-share/service-new-workspaces)|Ein Datenzusammenarbeitsraum mit Dashboards und Berichten|
 |[Projekt und Roadmap](https://support.microsoft.com/project)|Webbasierte Projektverwaltungstools|
 |[SharePoint-Teamwebsite](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|Ein zentrales Repository für Informationen, Links und Inhalte in Bezug auf Ihre Gruppe|
 |[Stream](https://support.microsoft.com/microsoft-stream)|Ein Videostreamingdienst|
@@ -114,9 +114,10 @@ Beachten Sie beim Starten ihres Steuerungsplanungsprozesses die folgenden bewäh
 
 - **Einbetten von Steuerungsentscheidungen** direkt in die von Ihnen erstellten Lösungen – viele Steuerungsentscheidungen können durch Aktivieren oder Deaktivieren von Features in Microsoft 365 implementiert werden.
 
+
 - **Verwenden Sie einen schrittweisen Ansatz:** Rollen Sie die Features für die Zusammenarbeit zuerst für eine kleine Gruppe von Benutzern aus. Erhalten Sie Feedback von ihnen, schauen Sie nach Helpdesktickets, und aktualisieren Sie alle erforderlichen Einstellungen oder Prozesse, bevor Sie zu einer größeren Gruppe fortfahren.
 
-- **Verstärkung durch Schulungen** – Passen Sie Lösungen wie [Microsoft 365-Lernpfade](https://docs.microsoft.com/office365/customlearning) an, um sicherzustellen, dass Ihre organisationsspezifischen Erwartungen durch von Microsoft bereitgestellte Schulungen verstärkt werden.
+- **Verstärkung durch Schulungen** – Passen Sie Lösungen wie [Microsoft 365-Lernpfade](/office365/customlearning) an, um sicherzustellen, dass Ihre organisationsspezifischen Erwartungen durch von Microsoft bereitgestellte Schulungen verstärkt werden.
 
 - **Haben Sie eine Strategie für die** Kommunikation von Steuerungsrichtlinien und Richtlinien in Ihrer Organisation – erstellen Sie ein Microsoft 365 Adoption Center in einer SharePoint-Kommunikationswebsite, um Richtlinien und Verfahren zu kommunizieren.
 
@@ -175,7 +176,7 @@ Diese Schulungsmodule von Microsoft Learn helfen Ihnen, die Steuerungsfeatures i
 |![Informationsschutz-Schulungssymbol](../media/information-protection-governance.svg)|Die Menge an Daten, die heutzutage generiert wird, wächst schneller als je zuvor, MitarbeiterInnen möchten überall Ihre Arbeit erledigen können und die gesetzlichen Vorschriften ändern sich ständig. Die Microsoft-Lösungen für Informationsschutz und -governance unterstützen Organisationen dabei, die richtige Balance zwischen Datenschutz und Mitarbeiterproduktivität zu finden. Dieser Lernpfad kann Ihnen bei der Vorbereitung für die Microsoft 365 Certified: Security Administrator Associate- und Microsoft 365 Certified: Enterprise Administration Expert-Zertifizierungen helfen.<br><br>5 Std. 13 Min. - Lernpfad - 7 Module|
 
 > [!div class="nextstepaction"]
-> [Starten >](https://docs.microsoft.com/learn/modules/m365-compliance-information-governance/introduction/)
+> [Starten >](/learn/modules/m365-compliance-information-governance/introduction/)
 
 <br><br>
 
@@ -184,16 +185,16 @@ Diese Schulungsmodule von Microsoft Learn helfen Ihnen, die Steuerungsfeatures i
 |![Teams-Schulungssymbol](../media/protect-enterprise-information-microsoft-365.svg)|Es ist schwieriger als je zuvor, die Informationen Ihrer Organisation zu schützen und zu sichern. Im Lernpfad Schützen von Unternehmensinformationen mit Microsoft 365 wird erläutert, wie Sie Ihre vertraulichen Informationen vor versehentlichem Teilen oder Missbrauch schützen, wie Sie Daten erkennen und klassifizieren, wie Sie sie mit Vertraulichkeitsbezeichnungen schützen können und wie Sie vertrauliche Informationen überwachen und analysieren können, um sich gegen den Verlust dieser Daten zu schützen. Dieser Lernpfad kann Ihnen bei der Vorbereitung auf die Microsoft 365 Certified: Security Administrator Associate und Microsoft 365 Certified: Enterprise Administration Expert-Zertifizierungen helfen.<br><br>1 Std. – Lernpfad – 5 Module|
 
 > [!div class="nextstepaction"]
-> [Starten >](https://docs.microsoft.com/learn/modules/m365-security-info-overview/introduction/)
+> [Starten >](/learn/modules/m365-security-info-overview/introduction/)
 
 #### <a name="security-and-compliance"></a>Sicherheit und Compliance
 
 |Schulung:|Grundlegende Kenntnisse der Microsoft 365-Funktionen für Unternehmen demonstrieren|
 |:---|:---|
-|![Sicherheits- und Complianceschulungssymbol](../media/microsoft-365-security-and-compliance-capabilities.svg)|Erfahren Sie mehr über die Microsoft 365-Lösungen für Sicherheit und Compliance sowie über die verfügbaren Funktionen, die Unternehmen schützen und bei der Einhaltung behördlicher Vorschriften helfen. Wenn Sie mit grundlegenden Cloud Computing-Konzepten nicht vertraut sind, wird empfohlen, cloud [concepts - Principles of Cloud Computing zu nutzen.](https://docs.microsoft.com/learn/modules/principles-cloud-computing/index)<br><br>3 Std. 11 Min. - Lernpfad - 8 Module|
+|![Sicherheits- und Complianceschulungssymbol](../media/microsoft-365-security-and-compliance-capabilities.svg)|Erfahren Sie mehr über die Microsoft 365-Lösungen für Sicherheit und Compliance sowie über die verfügbaren Funktionen, die Unternehmen schützen und bei der Einhaltung behördlicher Vorschriften helfen. Wenn Sie mit grundlegenden Cloud Computing-Konzepten nicht vertraut sind, wird empfohlen, cloud [concepts - Principles of Cloud Computing zu nutzen.](/learn/modules/principles-cloud-computing/index)<br><br>3 Std. 11 Min. - Lernpfad - 8 Module|
 
 > [!div class="nextstepaction"]
-> [Starten >](https://docs.microsoft.com/learn/modules/what-is-m365/1-introduction/)
+> [Starten >](/learn/modules/what-is-m365/1-introduction/)
 
 ## <a name="illustrations"></a>Illustrationen
 
@@ -248,6 +249,6 @@ Sehen Sie sich ein Beispiel an, wie Microsoft 365-Gruppen, SharePoint, Teams und
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 Sicherheitsdokumentation](https://docs.microsoft.com/microsoft-365/security)
+[Microsoft 365 Sicherheitsdokumentation](../security/index.yml)
 
-[Microsoft 365-Compliance-Dokumentation](https://docs.microsoft.com/microsoft-365/compliance)
+[Microsoft 365-Compliance-Dokumentation](../compliance/index.yml)

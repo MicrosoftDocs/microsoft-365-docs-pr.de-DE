@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen von VoIP in Microsoft 365
+title: Bereitstellen von Voice in Microsoft 365
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -16,45 +16,45 @@ ms.custom:
 - M365solutions
 - seo-marvel-jun2020
 f1.keywords: NOCSH
-description: Erfahren Sie, wie Sie die richtige Microsoft Teams-VoIP-Lösung für Ihre Organisation auswählen und bereitstellen.
-ms.openlocfilehash: b5dda0ed3d9310c3c43052b9bac4996802e0ed2f
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+description: Erfahren Sie, wie Sie die richtige Teams-Sprachlösung für Ihre Organisation auswählen und bereitstellen.
+ms.openlocfilehash: ede8075767e9d0a80123ac742403f8a4d171392e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580899"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918382"
 ---
-# <a name="plan-and-deploy-a-teams-voice-solution"></a>Planen und Bereitstelleneiner VoIP-Lösung für Teams
+# <a name="plan-and-deploy-a-teams-voice-solution"></a>Eine Teams Voice Solution planen und bereitstellen
 
-Mit einer VoIP-Lösung für Teams können Personen in Ihrer Organisation Anrufe innerhalb und außerhalb Ihrer Organisation tätigen. Eine vollständige Sprachlösung besteht aus Teams, Microsoft Phone System und einer Auswahl von Optionen zum Herstellen einer Verbindung mit dem Telefon Festnetz (Public Switched Telephone Network, PSTN).
+Eine Teams-Sprachlösung ermöglicht es Personen in Ihrer Organisation, Anrufe innerhalb und außerhalb Ihrer Organisation zu machen. Eine vollständige Sprachlösung besteht aus Teams, Microsoft Phone System und einer Auswahl von Optionen für die Verbindung mit dem Telefonnetz (Public Switched Telephone Network, PSTN).
 
-![Übersicht über Teams-VoIP-Lösungen](..\media\solutions-architecture-center\voice-concepts.png)
+![Übersicht über Teams-Sprachlösungen](..\media\solutions-architecture-center\voice-concepts.png)
 
-Telefon System bietet vollständige PBX-Funktionen (Private Branch Exchange) für Ihre Organisation. Anrufe zwischen Benutzern in Ihrer Organisation – unabhängig von ihrem geografischen Standort – werden intern innerhalb des Telefonsystems behandelt, wodurch die Kosten für den Fernabsatz für diese internen Anrufe entfernt werden.  
+Das Telefonsystem bietet vollständige Nebenstellenanlagenfunktionen (Private Branch Exchange) für Ihre Organisation. Anrufe zwischen Benutzern in Ihrer Organisation werden – unabhängig von ihrem geografischen Standort – intern innerhalb des Telefonsystems verarbeitet, wodurch Die Fernkosten für diese internen Anrufe entfernt werden.  
 
-Durch das Verbinden von Telefon System mit dem Telefon Festnetz (Public Switched Telephone Network, PSTN) können Ihre Teams-Benutzer auch außerhalb Ihrer Organisation Anrufe tätigen.
+Durch das Verbinden des Telefonsystems mit dem Telefonnetz (Public Switched Telephone Network, PSTN) können Ihre Teams-Benutzer auch Anrufe außerhalb Ihrer Organisation machen.
 
-Dieser Lösungsleitfaden hilft Ihnen:
+Diese Lösungsanleitung hilft Ihnen dabei,
 
-- Auswählen der richtigen VoIP-Lösung für Ihre Organisation
-- Bereitstellen der ausgewählten VoIP-Lösung
+- Wählen Sie die für Ihre Organisation richtige Sprachlösung aus.
+- Bereitstellen der ausgewählten Sprachlösung
 
-Führen Sie die folgenden Schritte aus, um Ihre VoIP-Lösung auszuwählen, zu planen und zu konfigurieren:
+Führen Sie die folgenden Schritte aus, um Ihre Sprachlösung zu wählen, zu planen und zu konfigurieren:
 
-![Auswählen Ihrer VoIP-Lösung](..\media\solutions-architecture-center\voice-solutions-overview-1.png)
+![Lösung für die Spracherkennung auswählen](..\media\solutions-architecture-center\voice-solutions-overview-1.png)
 
-1. [Auswählen Ihrer VoIP-Lösung](https://docs.microsoft.com/MicrosoftTeams/cloud-voice-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+1. [Lösung für die Spracherkennung auswählen](/MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)
 
-2. [Einrichten des Telefonsystems](https://docs.microsoft.com/microsoftteams/setting-up-your-phone-system?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+2. [Einrichten des Telefonsystems](/microsoftteams/setting-up-your-phone-system?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)
 
 3. Richten Sie die PSTN-Konnektivität ein, indem Sie eine oder eine Kombination der folgenden Optionen auswählen:
-   - [Calling Plan](https://docs.microsoft.com/microsoftteams/set-up-calling-plans?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json) – die all-in-the-Cloud-Lösung von Microsoft als PSTN-Carrier
-   - [Direktes Routing](https://docs.microsoft.com/microsoftteams/direct-routing-configure?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json) – verwenden Sie das direkte Routing, um Ihren eigenen PSTN-Carrier mit Microsoft Teams zu verbinden. 
+   - [Anrufplan](/microsoftteams/set-up-calling-plans?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json) – Die All-in-the-Cloud-Lösung von Microsoft mit Microsoft als PstN-Netzbetreiber
+   - [Direktes Routing](/microsoftteams/direct-routing-configure?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json) – Verwenden von Direct Routing zum Verbinden Ihres eigenen PSTN-Netzbetreibers mit Teams 
 
-Darüber hinaus können Sie in der [contoso-Fallstudie](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)erfahren, wie ein großes, multinationales Unternehmen zu einer VoIP-Lösung für Teams migriert wurde.
+Darüber hinaus sollten Sie in der Contoso-Fallstudie lesen, wie ein großes, multinationales Unternehmen zu einer Teams-Sprachlösung [migriert wurde.](/MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)
 
-Informationen zu erforderlichen Lizenzen finden Sie in den folgenden Themen:
+Weitere Informationen zu erforderlichen Lizenzen finden Sie unter den folgenden Informationen:
 
-- [Microsoft Teams-Add-on-Lizenzen](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing?tabs=enterprise#what-voice-features-are-available-with-my-plan/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+- [Teams-Add-On-Lizenzen](/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&tabs=enterprise#what-voice-features-are-available-with-my-plan/toc.json)
 
-- [Lizenzierungsanforderungen für das direkte Routing](https://docs.microsoft.com/microsoftteams/direct-routing-plan#licensing-and-other-requirements/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+- [Lizenzierungsanforderungen für direktes Routing](/microsoftteams/direct-routing-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json#licensing-and-other-requirements/toc.json)

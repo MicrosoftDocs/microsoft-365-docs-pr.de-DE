@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Entsorgung von Inhalten, unabhängig davon, ob Sie die Löschungsprüfung verwenden oder Inhalte automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht werden.
-ms.openlocfilehash: 092067e676c1cbae3fae6e9d6a5ff77099ce4631
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: d2c2e4e469efe16277f34a902f6720dc2b39e908
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461880"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918041"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Verwenden Sie die Registerkarte **Disposition** aus der **Datensatzverwaltung** im Microsoft 365 Compliance Center, um die Löschungsprüfungen zu verwalten und [Datensätze](records-management.md#records) anzuzeigen, die am Ende des Aufbewahrungszeitraums automatisch gelöscht wurden. 
 
@@ -128,7 +128,7 @@ Verwenden Sie die Registerkarte **Disposition** von der Seite **Datensatzverwalt
 
 ![Elemente, die ohne eine Löschungsprüfung verworfen wurden](../media/records-disposed2.png)
 
-Elemente, die in der Registerkarte **Verworfene Elemente** für Datensatzbezeichnungen angezeigt werden, werden bis zu sieben Jahre nach der Verwerfung des Elements gespeichert, und es wird ein Limit von 1 Million Elementen pro Datensatz für diesen Zeitraum angezeigt. Wenn sich die **Anzahl** dem Limit von 1 Million nähert und Sie einen Dispositionsnachweis benötigen, wenden Sie sich an [Microsoft-Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Elemente, die in der Registerkarte **Verworfene Elemente** für Datensatzbezeichnungen angezeigt werden, werden bis zu sieben Jahre nach der Verwerfung des Elements gespeichert, und es wird ein Limit von 1 Million Elementen pro Datensatz für diesen Zeitraum angezeigt. Wenn sich die **Anzahl** dem Limit von 1 Million nähert und Sie einen Dispositionsnachweis benötigen, wenden Sie sich an [Microsoft-Support](/office365/admin/contact-support-for-business-products).
 
 > [!NOTE]
 > Diese Funktionalität basiert auf Informationen aus dem [einheitlichen Überwachungsprotokoll](search-the-audit-log-in-security-and-compliance.md) und erfordert daher, dass die Überwachung [aktiviert und durchsuchbar ist](turn-audit-log-search-on-or-off.md) damit die entsprechenden Ereignisse erfasst werden.
@@ -144,4 +144,3 @@ Bei ausstehenden Löschungen basiert der Zeitraum auf dem Ablaufdatum. Bei verwo
 Sie können Informationen zu den Elementen in einer der beiden Ansichten als CSV-Datei exportieren, die Sie dann mithilfe von Excel sortieren und verwalten können:
 
 ![Exportoption zur Disposition](../media/retention-export-option.png)
-

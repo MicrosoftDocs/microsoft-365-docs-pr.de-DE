@@ -20,12 +20,12 @@ ms.custom:
 description: Erfahren Sie, wie Sie DomainKeys Identified Mail (DKIM) mit Microsoft 365 verwenden können, um sicherzustellen, dass die von Ihrer benutzerdefinierten Domäne gesendeten Nachrichten von den Ziel-E-Mail-Systemen als vertrauenswürdig eingestuft werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55a7bf612d121364ed64c159a450b6cf035d3837
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7894375cf7dd7973a7c3dc0160dbaa084823e9d4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286429"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918642"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne gesendet werden
 
@@ -88,7 +88,7 @@ Das Wesentliche: DKIM verwendet einen privaten Schlüssel, um eine verschlüssel
 ## <a name="manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>Manuelles Upgrade Ihrer 1024-Bit-Schlüssel auf 2048-Bit-DKIM-Verschlüsselungsschlüssel
 <a name="1024to2048DKIM"> </a>
 
-Da sowohl 1024-Bit als auch 2048-Bit für DKIM-Schlüssel unterstützt werden, erfahren Sie in diesen Anweisungen, wie Sie Ihren 1024-Bit-Schlüssel in[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) auf 2048 aktualisieren. Die nachstehenden Schritte werden auf zwei Anwendungsfälle angewandt. Wählen Sie bitte die Variante aus, die Ihren Anforderungen am ehesten entspricht.
+Da sowohl 1024-Bit als auch 2048-Bit für DKIM-Schlüssel unterstützt werden, erfahren Sie in diesen Anweisungen, wie Sie Ihren 1024-Bit-Schlüssel in[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) auf 2048 aktualisieren. Die nachstehenden Schritte werden auf zwei Anwendungsfälle angewandt. Wählen Sie bitte die Variante aus, die Ihren Anforderungen am ehesten entspricht.
 
 - Wenn Sie **DKIM bereits konfiguriert haben**, ändern Sie die Biteinstellung, indem Sie den folgenden Befehl ausführen:
 
@@ -115,7 +115,7 @@ Get-DkimSigningConfig -Identity <Domain for which the configuration was set> | F
 
 Wenn Sie zum zweiten Selektor wechseln möchten, haben Sie folgende Möglichkeiten: a) Sie lassen den Wechseln des Selektors durch den Microsoft 365-Dienst durchführen und aktualisieren auf 2048-Bit innerhalb der nächsten 6 Monate, oder b) nach 4 Tagen, und wechseln den zweiten Selektorschlüssel manuell unter Verwendung des entsprechenden, oben aufgeführten Cmdlets, nachdem Sie zuvor sichergestellt haben, dass 2048-Bit-Schlüssel verwendet werden.
 
-Ausführliche Informationen zur Syntax und zu Parametern finden Sie in den folgenden Artikeln: [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig), [New-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/new-dkimsigningconfig)und [Get-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/get-dkimsigningconfig).
+Ausführliche Informationen zur Syntax und zu Parametern finden Sie in den folgenden Artikeln: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig), [New-DkimSigningConfig](/powershell/module/exchange/new-dkimsigningconfig)und [Get-DkimSigningConfig](/powershell/module/exchange/get-dkimsigningconfig).
 
 ## <a name="steps-you-need-to-do-to-manually-set-up-dkim"></a>Schritte zum manuellen Einrichten von DKIM
 <a name="SetUpDKIMO365"> </a>
@@ -132,7 +132,7 @@ Um DKIM zu konfigurieren, müssen Sie diese Schritte ausführen:
 Für jede Domäne, für die Sie eine DKIM-Signatur in DNS hinzufügen möchten, müssen Sie zwei CNAME-Einträge veröffentlichen.
 
 > [!NOTE]
-> Wenn Sie nicht den gesamten Artikel gelesen haben, haben Sie möglicherweise diese zeitsparenden Informationen zur PowerShell-Verbindung verpasst: [Herstellen einer Verbindung zu Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+> Wenn Sie nicht den gesamten Artikel gelesen haben, haben Sie möglicherweise diese zeitsparenden Informationen zur PowerShell-Verbindung verpasst: [Herstellen einer Verbindung zu Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 Führen Sie in Exchange Online PowerShell die folgenden Befehle aus, um die Selektoreinträge zu erstellen:
 
@@ -215,7 +215,7 @@ Nachdem Sie die CNAME-Einträge im DNS veröffentlicht haben, können Sie die DK
 >:::image type="content" source="../../media/DKIMNoKeysSavedForThisDomain.PNG" alt-text="Der Fehler „Für diese Domäne werden keine DKIM-Schlüssel gespeichert“.":::
 > Wenn Sie DKIM zum ersten Mal konfigurieren und die Fehlermeldung „Für diese Domäne werden keine DKIM-Schlüssel gespeichert“ angezeigt wird, führen Sie den Befehl in Schritt 2 unten aus (z. B. *Set-DkimSigningConfig -Identity contoso.com -Enabled $true*), um den Schlüssel anzuzeigen.
 
-1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Führen Sie den folgenden Befehl aus:
 
@@ -266,7 +266,7 @@ Durch das Deaktivieren der Signierungsrichtlinie wird DKIM nicht vollständig de
 
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>So deaktivieren Sie die DKIM-Signierungsrichtlinie mithilfe von Windows PowerShell
 
-1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Führen Sie einen der folgenden Befehle für jede Domäne aus, für die Sie die DKIM-Signierung deaktivieren möchten.
 
@@ -359,4 +359,4 @@ Obwohl DKIM Spoofing verhindern soll, funktioniert DKIM besser mit SPF und DMARC
 
 ## <a name="more-information"></a>Weitere Informationen
 
-Schlüsselrotation über PowerShell [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig)
+Schlüsselrotation über PowerShell [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)

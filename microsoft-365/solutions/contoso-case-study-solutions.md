@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: So hat ein fiktives, aber repräsentatives globales Unternehmen Microsoft 365-Lösungen bereitgestellt.
-ms.openlocfilehash: 1e06da623a9d580d71823ab030976b213a9e7022
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 0c11b849f75e5707c5f49762c0b279a5dbfb2fd1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620551"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918418"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Microsoft 365-Lösungen für die Contoso Corporation
 
@@ -36,6 +36,6 @@ Sehen Sie als nächstes, wie Contoso Microsoft 365 für diese Lösungen und Szen
 
 - [Ein isoliertes Team für ein streng geheimes Projekt](contoso-team-for-top-secret-project.md)
 
-- [Migration ihrer lokalen Benutzer in Teams für einheitliche Kommunikation, Zusammenarbeit und Sprache](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+- [Migration ihrer lokalen Benutzer in Teams für einheitliche Kommunikation, Zusammenarbeit und Sprache](/MicrosoftTeams/voice-case-study-overview)
 
 - [Konfigurieren Sie eine Richtlinie bezüglich anstößiger Sprache für Microsoft Teams, Exchange und Kommunikation in Yammer](../compliance/communication-compliance-case-study.md)

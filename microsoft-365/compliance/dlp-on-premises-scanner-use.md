@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie den Microsoft 365-Scanner zur Verhinderung von Datenverlust vor Ort verwenden, um ruhende Daten zu scannen und Schutzmaßnahmen für lokale Dateifreigaben sowie lokale SharePoint-Ordner und Dokumentbibliotheken zu implementieren.
-ms.openlocfilehash: 34be93f5c9980a7f8ea8ad31b708af14a8725f73
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: c46b67ca392732616329bad138166c892cd06640
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417364"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917821"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Verwenden Sie den lokalen Microsoft 365-Scanner zur Verhinderung von Datenverlust (Vorschau).
 
@@ -47,7 +47,7 @@ Daten von lokalen DLP-Scanneroberflächen in mehreren Bereichen
  
 #### <a name="microsoft-365-audit-log"></a>Microsoft 365-Überwachungsprotokoll
 
-Während der öffentlichen Vorschau sind die DLP-Regelübereinstimmungen in der Benutzeroberfläche des Überwachungsprotokolls verfügbar. Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Compliance Center](search-the-audit-log-in-security-and-compliance.md) oder bei  [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell.
+Während der öffentlichen Vorschau sind die DLP-Regelübereinstimmungen in der Benutzeroberfläche des Überwachungsprotokolls verfügbar. Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Compliance Center](search-the-audit-log-in-security-and-compliance.md) oder bei  [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell.
 
 #### <a name="aip"></a>AIP
 

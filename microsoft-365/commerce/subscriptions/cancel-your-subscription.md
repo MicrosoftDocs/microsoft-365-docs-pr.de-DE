@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Microsoft 365 für Business-Testversion oder ein kostenpflichtiges Abonnement kündigen können.
 ms.date: ''
-ms.openlocfilehash: 45e953fd415bb2d508554b47fb3226dcae74cb6b
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 7a2de2a261baeb4e64e12742810635f352217933
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741401"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916876"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -45,7 +45,7 @@ ms.locfileid: "50741401"
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Sie müssen ein Global- oder Billing-Administrator sein, um die in diesem Artikel beschriebenen Schritte durchführen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+Sie müssen ein globaler oder ein Rechnungsadministrator sein, um die in diesem Artikel beschriebenen Schritte durchführen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="steps-to-cancel-your-subscription"></a>Schritte zum Kündigen Ihres Abonnements
 

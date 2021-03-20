@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Verwenden Sie Microsoft Endpoint Manager zur Verwaltung Ihrer Geräte, PCs und anderen Endgeräte.
-ms.openlocfilehash: bca3e8e79264a2218dd1036e50be1c9ab29d2b8a
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+ms.openlocfilehash: db06c7d65da1939ffbb04db64ea901e211b074f6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749599"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918338"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Schritt 4. Bereitstellen der Endpunktverwaltung für Ihre Geräte, PCs und andere Endpunkte
 
 Bei Remotemitarbeitern müssen Sie eine wachsende Anzahl von persönlichen Geräten unterstützen. Die Endpunktverwaltung ist ein richtlinienbasierter Sicherheitsansatz, bei dem Geräte bestimmte Kriterien erfüllen müssen, bevor sie Zugriff auf Ressourcen erhalten. Microsoft Endpoint Manager bietet moderne Verwaltungsfunktionen, um Ihre Daten in der Cloud und vor Ort sicher zu halten. 
 
-[Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) bietet Dienste und Tools für die Verwaltung von mobilen Geräten, Desktop-Computern, virtuellen Maschinen, eingebetteten Geräten und Servern durch die Kombination der folgenden Dienste, die Sie möglicherweise bereits kennen und nutzen.
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) bietet Dienste und Tools für die Verwaltung von mobilen Geräten, Desktop-Computern, virtuellen Maschinen, eingebetteten Geräten und Servern durch die Kombination der folgenden Dienste, die Sie möglicherweise bereits kennen und nutzen.
 
 ![Die Komponenten der Endpunktverwaltung für Microsoft 365](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
@@ -40,13 +40,13 @@ Microsoft Intune ist ein Cloud-basierter Dienst, der sich auf die Verwaltung mob
 
 - **MAM:** Remotemitarbeiter möchten möglicherweise nicht, dass Sie die vollständige Kontrolle über ihre persönlichen Geräte haben, auch bekannt als BYOD-Geräte (Bring-your-own Device). Sie können Ihren Remotemitarbeiter Optionen anbieten und Ihre Organisation trotzdem schützen. So können beispielsweise Remotemitarbeiter Ihre Geräte registrieren, wenn Sie Vollzugriff auf die Ressourcen Ihrer Organisation wünschen. Wenn diese Benutzer jedoch nur Zugriff auf E-Mail oder Microsoft Teams haben möchten, verwenden Sie die APP-Schutzrichtlinien, bei denen die mehrstufige Authentifizierung (MFA) erforderlich ist, um diese Apps zu verwenden.
 
-Weitere Informationen finden Sie in dieser [Übersicht über Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune).
+Weitere Informationen finden Sie in dieser [Übersicht über Microsoft Intune](/intune/fundamentals/what-is-intune).
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
 Configuration Manager ist eine lokale Verwaltungslösung zur Verwaltung von Desktops, Servern und Laptops, die sich in Ihrem Netzwerk oder internetbasiert befinden. Verwenden Sie Configuration Manager zur Bereitstellung von Anwendungen, Software-Updates und Betriebssystemen. Sie können auch die Einhaltung von Vorschriften überwachen, Kunden in Echtzeit abfragen und auf sie einwirken und vieles mehr. Sie können es für die Integration mit Intune, Azure AD, Microsoft Defender für Endpunkt und anderen Cloud-Diensten in der Cloud aktivieren. 
 
-Weitere Informationen finden Sie in dieser [Übersicht über Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction).
+Weitere Informationen finden Sie in dieser [Übersicht über Configuration Manager](/mem/configmgr/core/understand/introduction).
 
 ## <a name="co-management"></a>Co-Management
 
@@ -54,7 +54,7 @@ Co-Management kombiniert Ihre vorhandenen Investitionen in Configuration Manager
 
 Das Co-Management verwendet Intune-basierte Cloud-Funktionen, einschließlich bedingtem Zugriff und erzwingen der Gerätekompatibilität. Sie behalten einige Aufgaben lokal, während Sie andere Aufgaben in der Cloud ausführen.
 
-Weitere Informationen finden Sie in dieser [Übersicht über Co-Management](https://docs.microsoft.com/mem/configmgr/comanage/overview).
+Weitere Informationen finden Sie in dieser [Übersicht über Co-Management](/mem/configmgr/comanage/overview).
 
 ## <a name="desktop-analytics"></a>Desktop Analytics
 
@@ -68,7 +68,7 @@ Mithilfe von Desktop Analytics können Sie:
 - Pilotgruppen erstellen, welche die gesamte Anwendungs- und Treiberkombination auf einem minimalen Satz von Geräten repräsentieren.
 - Windows 10 auf pilot- und produktionsverwalteten Geräten bereitstellen.
 
-Weitere Informationen finden Sie in dieser [Übersicht über Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview).
+Weitere Informationen finden Sie in dieser [Übersicht über Desktop Analytics](/mem/configmgr/desktop-analytics/overview).
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 
@@ -79,13 +79,13 @@ Windows Autopilot versetzt eine IT-Abteilung in die Lage, Geräte mithilfe einer
 - Aus der Sicht des Benutzers sind nur ein paar einfache Vorgänge nötig, um sein Gerät einsatzbereit zu machen. 
 - Aus der Sicht der IT-Profis besteht die einzige Interaktion, die vom Endbenutzer verlangt wird, darin, sich mit einem Netzwerk zu verbinden und seine Anmeldeinformationen zu überprüfen.
 
-Weitere Informationen finden Sie in dieser [Übersicht über Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot).
+Weitere Informationen finden Sie in dieser [Übersicht über Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot).
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>Verwaltung technischer Ressourcen für die Endpunktverwaltung
 
 - [Roadmap für die Verwaltung mobiler Geräte für Microsoft 365](../enterprise/device-management-roadmap-microsoft-365.md)
-- [Registrieren verschiedener Gerätetypen für die mobile Geräteverwaltung](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
-- [Informieren Ihrer Endbenutzer über Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
+- [Registrieren verschiedener Gerätetypen für die mobile Geräteverwaltung](/mem/intune/enrollment/device-enrollment)
+- [Informieren Ihrer Endbenutzer über Microsoft Intune](/mem/intune/fundamentals/end-user-educate)
  
 ## <a name="results-of-step-4"></a>Ergebnisse von Schritt 4
 

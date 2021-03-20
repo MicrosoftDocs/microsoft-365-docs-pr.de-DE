@@ -17,39 +17,39 @@ ms.collection:
 description: Erfahren Sie mehr über die Webverwaltungsschnittstelle in eigenständigem Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec9dcbccbee734ea7c475b1ac0a5f9a92a0b401b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: ab834d14673370a39e148aefa568591ff4c50b8f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286957"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916994"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Exchange Admin Center in EOP als eigenständige Lösung
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
--  [Exchange Online Protection als eigenständige Lösung](exchange-online-protection-overview.md)
+-  [Exchange Online Protection eigenständig](exchange-online-protection-overview.md)
 
-Die Exchange Admin Center (EAC) ist eine webbasierte Verwaltungskonsole für eigenständige Exchange Online Protection (EOP).
+Das Exchange Admin Center (EAC) ist eine webbasierte Verwaltungskonsole für eigenständige Exchange Online Protection (EOP).
 
-Suchen Sie die Exchange Online-Version dieses Themas? Weitere Informationen finden Sie unter [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+Suchen Sie die Exchange Online-Version dieses Themas? Weitere Informationen finden Sie unter [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 
 ## <a name="open-the-eac-in-eop"></a>Öffnen der EAC in EOP
 
-Kunden von eigenständigem EOP können mithilfe der folgenden Methoden auf die EAC zugreifen:
+Eigenständige EOP-Kunden können mithilfe der folgenden Methoden auf die EAC zugreifen:
 
-- **Aus dem Microsoft 365 Admin Center:**
+- **Aus dem Microsoft 365 Admin Center**:
 
-  1. Wechseln Sie zu <https://admin.microsoft.com> , und klicken Sie auf **"Alle anzeigen".**
+  1. Wechseln Sie <https://admin.microsoft.com> zu, und klicken **Sie auf Alle anzeigen.**
 
-     ![Klicken Sie im Microsoft 365 Admin Center auf "Alle anzeigen"](../../media/m365-center-show-all.png)
+     ![Klicken Sie im Microsoft 365 Admin Center auf Alle anzeigen](../../media/m365-center-show-all.png)
 
-  2. Klicken Sie im angezeigten Abschnitt **"Admin Center"** auf **"Alle Admin Center".**
+  2. Klicken Sie **im angezeigten** Abschnitt Admin Center auf **Alle Admin Center**.
 
-     ![Klicken Sie im Microsoft 365 Admin Center auf "Alle Admin Center".](../../media/m365-center-select-all-admin-centers.png)
+     ![Klicken Sie im Microsoft 365 Admin Center auf Alle Admin Center](../../media/m365-center-select-all-admin-centers.png)
 
-  3. Klicken Sie **auf der angezeigten** Seite "Alle Admin Center" auf **Exchange Online Protection**.
+  3. Klicken Sie **auf der** angezeigten Seite Alle Admin Center auf Exchange **Online Protection**.
 
 - Wechseln Sie direkt zu `https://admin.protection.outlook.com/ecp/` .
 
@@ -65,18 +65,18 @@ Dies ist die erste Navigationsebene für die meisten Aufgaben, die Sie in der Ex
 
 - **Empfänger:** Hier werden Gruppen und externe Kontakte angezeigt.
 
-- **Berechtigungen:** Hier verwalten Sie Administratorrollen.
+- **Berechtigungen**: Hier verwalten Sie Administratorrollen.
 
-- **Verwaltung der** Richtlinienkonformität: Hier finden Sie den Administrator-Rollengruppenbericht und den Administrator-Überwachungsprotokollbericht.
+- **Complianceverwaltung:** Hier finden Sie den Administratorrollegruppenbericht und den Administrator-Überwachungsprotokollbericht.
 
-- **Schutz:** Hier können Sie An malware-Richtlinien, die Standardrichtlinie für Verbindungsfilter und DKIM verwalten.
+- **Schutz**: Hier können Sie An malware-Richtlinien, die Standardmäßige Verbindungsfilterrichtlinie und DKIM verwalten.
 
   > [!NOTE]
-  > Im Security & Compliance Center sollten Sie Ansoftwarerichtlinien und die Standardrichtlinie für Verbindungsfilter verwalten. Weitere Informationen finden Sie unter [Configure anti-malware policies in EOP](configure-anti-malware-policies.md) and [Configure connection filtering in EOP](configure-the-connection-filter-policy.md).
+  > Sie sollten Anti-Malware-Richtlinien und die Standardmäßige Verbindungsfilterrichtlinie im Security & Compliance Center verwalten. Weitere Informationen finden Sie unter [Configure anti-malware policies in EOP](configure-anti-malware-policies.md) und [Configure connection filtering in EOP](configure-the-connection-filter-policy.md).
 
-- **Nachrichtenfluss:** Hier verwalten Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet), akzeptierte Domänen und Connectors sowie die Nachrichtenablaufverfolgung.
+- **Nachrichtenfluss:** Hier verwalten Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet), akzeptierte Domänen und Connectors sowie nachrichtenablaufverfolgung.
 
-- **Hybrid:** Hier können Sie den Assistenten für [die Hybridkonfiguration](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)ausführen und das [Exchange Online -PowerShell-Modul installieren.](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)
+- **Hybrid:** Hier können Sie den Assistenten für die [Hybridkonfiguration](/Exchange/hybrid-configuration-wizard)ausführen und das [Exchange Online PowerShell-Modul installieren.](/powershell/exchange/mfa-connect-to-exchange-online-powershell)
 
 ### <a name="tabs"></a>Registerkarten
 
@@ -92,7 +92,7 @@ Für die meisten Registerkarten wird eine Symbolleiste angezeigt, nachdem Sie au
 |---|---|---|
 |![Hinzufügen (Symbol)](../../media/ITPro-EAC-AddIcon.gif)|Hinzufügen, Neu|Über dieses Symbol können Sie ein neues Objekt erstellen. Bei einigen dieser Symbole gibt es einen dazugehörigen nach unten zeigenden Pfeil, auf den Sie klicken können, um weitere Objekte anzuzeigen, die Sie erstellen können.|
 |![Bearbeitungssymbol](../../media/ITPro-EAC-EditIcon.gif)|Bearbeiten|Über dieses Symbol können Sie ein Objekt bearbeiten.|
-|![Löschen (Symbol)](../../media/ITPro-EAC-DeleteIcon.gif)|Delete|Über dieses Symbol können Sie ein Objekt löschen. Bei einigen Löschsymbolen gibt es einen nach unten zeigenden Pfeil, auf den Sie zum Einblenden weiterer Optionen klicken können.|
+|![Löschen (Symbol)](../../media/ITPro-EAC-DeleteIcon.gif)|Löschen|Über dieses Symbol können Sie ein Objekt löschen. Bei einigen Löschsymbolen gibt es einen nach unten zeigenden Pfeil, auf den Sie zum Einblenden weiterer Optionen klicken können.|
 |![Suchen (Symbol)](../../media/ITPro-EAC-.gif)|Suche|Über dieses Symbol können Sie ein Suchfeld öffnen, in das Sie den Suchbegriff für ein zu suchendes Objekt eingeben können.|
 |![Aktualisieren (Symbol)](../../media/ITPro-EAC-RefreshIcon.gif)|Aktualisieren|Über dieses Symbol können Sie die Listenansicht aktualisieren.|
 |![Weitere Optionen (Symbol)](../../media/ITPro-EAC-MoreOptionsIcon.gif)|Weitere Optionen|Über dieses Symbol können Sie mehrere Aktionen anzeigen, die Sie auf die Objekte dieser Registerkarte anwenden können. Wenn Sie z. B. unter **Empfänger \> Benutzer** auf dieses Symbol klicken, wird die Option **Erweiterte Suche** angezeigt.  |
@@ -110,17 +110,17 @@ Wenn Sie in der Listenansicht ein Objekt auswählen, werden Informationen zu die
 
 ### <a name="me-tile-and-help"></a>Ich-Kachel und Hilfe
 
-Über die **Ich**-Kachel können Sie sich bei der Exchange-Verwaltungskonsole abmelden und als ein anderer Benutzer anmelden. Im Dropdownmenü ![ "Hilfehilfesymbol" ](../../media/ITPro-EAC-HelpIcon.gif) können Sie die folgenden Aktionen ausführen:
+Über die **Ich**-Kachel können Sie sich bei der Exchange-Verwaltungskonsole abmelden und als ein anderer Benutzer anmelden. Im **Dropdownmenü Hilfesymbol** ![ können Sie die folgenden Aktionen ](../../media/ITPro-EAC-HelpIcon.gif) ausführen:
 
-- **Hilfe**: Klicken Sie ![ auf das ](../../media/ITPro-EAC-HelpIcon.gif) Hilfesymbol, um die Onlinehilfeinhalte anzuzeigen.
-- **Feedback:** Geben Sie Feedback.
-- **Community:** Stellen Sie eine Frage, um Antworten in den Communityforen zu finden.
-- **Hilfeblase deaktivieren:** Die Hilfeblase zeigt kontextbezogene Hilfe für Felder an, wenn Sie ein Objekt erstellen oder bearbeiten. Sie können die Hilfesprechblase deaktivieren oder aktivieren, wenn sie deaktiviert wurde.
-- **Befehlsprotokollierung** anzeigen: Ein neues Fenster wird geöffnet, in dem die entsprechenden PowerShell-Befehle basierend auf den in der EAC konfigurierten Einstellungen angezeigt werden.
+- **Hilfe**: Klicken Sie auf das ![Hilfesymbol](../../media/ITPro-EAC-HelpIcon.gif), damit der Inhalt der Onlinehilfe angezeigt wird.
+- **Feedback:** Feedback hinterlassen.
+- **Community**: Stellen Sie eine Frage, um Antworten in den Communityforen zu finden.
+- **Hilfe-Sprechblase deaktivieren**: In der Hilfe-Sprechblase wird Kontexthilfe für Felder angezeigt, wenn Sie ein Objekt erstellen oder bearbeiten. Sie können die Hilfeblase deaktivieren oder aktivieren, wenn sie deaktiviert wurde.
+- **Befehlsprotokollierung anzeigen:** Es wird ein neues Fenster geöffnet, in dem die entsprechenden PowerShell-Befehle basierend auf den in der EAC konfigurierten Einstellungen angezeigt werden.
 
 ## <a name="supported-browsers"></a>Unterstützte Browser
 
-Für eine optimale Nutzung des EAC sollten Sie immer die neuesten Browser, Office-Clients und Apps verwenden. Zudem wird empfohlen, dass Sie Softwareupdates installieren, sobald sie verfügbar werden. Weitere Informationen zu den unterstützten Browsern und Systemanforderungen für den Dienst finden Sie unter [Systemanforderungen für Office.](https://products.office.com/office-system-requirements)
+Für eine optimale Nutzung des EAC sollten Sie immer die neuesten Browser, Office-Clients und Apps verwenden. Zudem wird empfohlen, dass Sie Softwareupdates installieren, sobald sie verfügbar werden. Weitere Informationen zu den unterstützten Browsern und Systemanforderungen für den Dienst finden Sie unter [System requirements for Office](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-languages"></a>Unterstützte Sprachen
 

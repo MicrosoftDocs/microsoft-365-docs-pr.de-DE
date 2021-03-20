@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Der lokale Scanner zur Verhinderung von Datenverlust in Microsoft 365 erweitert die Überwachung von Dateiaktivitäten und Schutzmaßnahmen für diese Dateien auf lokale Dateifreigaben sowie SharePoint-Ordner und Dokumentbibliotheken. Dateien werden mit dem Azure Information Protection (AIP) -Scanner gescannt und geschützt
-ms.openlocfilehash: 996de5ea640a16ef2a250830d7167aa316b54a21
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: fa1c14520c8ad0afa4856fdd8a1c59a0f71f400d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417359"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917811"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Erfahren Sie mehr über den lokalen Microsoft 365-Scanner zur Verhinderung von Datenverlust (Vorschau)
 
@@ -36,12 +36,12 @@ Der **lokale DLP-Scanner** durchsucht lokale ruhende Daten in Dateifreigaben und
 
 Der lokale DLP-Scanner basiert auf einer vollständigen Implementierung des Azure Information Protection (AIP) -Scanners, um vertrauliche Elemente zu überwachen, zu kennzeichnen und zu schützen. Wenn Sie mit dem AIP-Scanner nicht vertraut sind, empfehlen wir Ihnen dringend, sich mit ihm vertraut zu machen. Weitere Informationen finden Sie in diesen Artikeln:
 
-- [Was ist Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)
-- [Was ist der Azure Information Protection-Scanner für einheitliche Bezeichnungen](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)
-- [Anforderungen für die Installation und Bereitstellung des einheitlichen Azure Information Protection-Scanner für einheitliche Bezeichnungen](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-prereqs)
-- [Lernprogramm: Installieren des Azure Information Protection-Scanner für einheitliche Bezeichnungen (AIP)](https://docs.microsoft.com/azure/information-protection/tutorial-install-scanner)
-- [Konfigurieren und Installieren des Azure Information Protection-Scanners für einheitliche Bezeichnungen](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)
-- [ Azure Information Protection-Client für einheitliche Bezeichnungen – Versionsverlauf und Supportrichtlinie](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
+- [Was ist Azure Information Protection](/azure/information-protection/what-is-information-protection)
+- [Was ist der Azure Information Protection-Scanner für einheitliche Bezeichnungen](/azure/information-protection/deploy-aip-scanner)
+- [Anforderungen für die Installation und Bereitstellung des einheitlichen Azure Information Protection-Scanner für einheitliche Bezeichnungen](/azure/information-protection/deploy-aip-scanner-prereqs)
+- [Lernprogramm: Installieren des Azure Information Protection-Scanner für einheitliche Bezeichnungen (AIP)](/azure/information-protection/tutorial-install-scanner)
+- [Konfigurieren und Installieren des Azure Information Protection-Scanners für einheitliche Bezeichnungen](/azure/information-protection/deploy-aip-scanner-configure-install)
+- [ Azure Information Protection-Client für einheitliche Bezeichnungen – Versionsverlauf und Supportrichtlinie](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
 
 ## <a name="dlp-on-premises-scanner-actions"></a>Lokale DLP-Scanneraktionen
 
@@ -56,7 +56,7 @@ Wenn eine erkannte Datei ein potenzielles Risiko darstellt, wenn sie durchgesick
 
 |Aktion |Beschreibung  |
 |---------|---------|
-|**Verhindern Sie, dass diese Personen auf Dateien zugreifen, die im lokalen Scanner gespeichert sind – Jeder** | Wenn diese Aktion erzwungen wird, blockiert sie den Zugriff auf alle Konten mit Ausnahme des Inhaltseigentümers, des letzten Kontos, das das Element geändert hat, und des Administrators. Dazu werden alle Konten aus den NTFS/SharePoint-Berechtigungen auf Dateiebene entfernt, mit Ausnahme des Dateieigentümers, des Repository-Eigentümers (festgelegt in der Einstellung [Repository-Eigentümer festlegen](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) im Inhaltsscanauftrag), des letzten Modifikators (kann nur in SharePoint identifiziert werden) und des Administrators. Dem Scannerkonto werden auch FC-Rechte für die Datei gewährt.|
+|**Verhindern Sie, dass diese Personen auf Dateien zugreifen, die im lokalen Scanner gespeichert sind – Jeder** | Wenn diese Aktion erzwungen wird, blockiert sie den Zugriff auf alle Konten mit Ausnahme des Inhaltseigentümers, des letzten Kontos, das das Element geändert hat, und des Administrators. Dazu werden alle Konten aus den NTFS/SharePoint-Berechtigungen auf Dateiebene entfernt, mit Ausnahme des Dateieigentümers, des Repository-Eigentümers (festgelegt in der Einstellung [Repository-Eigentümer festlegen](/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) im Inhaltsscanauftrag), des letzten Modifikators (kann nur in SharePoint identifiziert werden) und des Administrators. Dem Scannerkonto werden auch FC-Rechte für die Datei gewährt.|
 |**Blockieren Sie den Zugriff dieser Personen auf Dateien, die im lokalen Scanner gespeichert sind. Blockieren Sie den organisationsweiten (öffentlichen) Zugriff**    |Wenn diese Aktion erzwungen wird, werden die SIDs **_Jeder_*_, _*_NT-AUTORITÄT \ authentifizierte Benutzer_*_, und _*_Domänenbenutzer_** aus der ACL (File Access Control List) entfernt. Nur Benutzer und Gruppen, denen explizit Rechte für die Datei oder den übergeordneten Ordner gewährt wurden, können auf die Datei zugreifen.|
 |**Berechtigungen für die Datei festlegen**|Wenn diese Aktion erzwungen wird, erzwingt sie, dass die Datei die Berechtigungen ihres übergeordneten Ordners erbt. Standardmäßig wird diese Aktion nur erzwungen, wenn die Berechtigungen für den übergeordneten Ordner restriktiver sind als die Berechtigungen, die bereits in der Datei enthalten sind. Wenn beispielsweise die ACL in der Datei so eingestellt ist, dass nur **_bestimmte Benutzer_*_ zugelassen sind und der übergeordnete Ordner so konfiguriert ist, dass die Gruppe*_Domänenbenutzer_*_ zulässig ist, werden die Berechtigungen des übergeordneten Ordners nicht von der Datei geerbt. Sie können dieses Verhalten überschreiben, indem Sie die Option _* Erben, auch wenn übergeordnete Berechtigungen weniger restriktiv sind** auswählen.|
 |**Entfernen der Datei von einem falschen Speicherort**|Wenn diese Aktion erzwungen wird, ersetzt sie die Originaldatei durch eine Stub-Datei mit der Erweiterung .txt und legt eine Kopie der Originaldatei in einem Quarantäneordner ab. 

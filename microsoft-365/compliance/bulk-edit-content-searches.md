@@ -1,5 +1,5 @@
 ---
-title: Massenbearbeitung von Inhalts suchen
+title: Massenbearbeitung von Inhaltssuchen
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,90 +16,88 @@ search.appverid:
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 ms.custom:
 - seo-marvel-apr2020
-description: Verwenden Sie den Massen Such-Editor im Security and Compliance Center, um schnell die Abfrage-und inhaltsspeicherorte für eine oder mehrere Inhalts suchen zu ändern.
-ms.openlocfilehash: 2bbe8248a82356a217557469b6639e28607be13e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Verwenden Sie den Massensuch-Editor im Security and Compliance Center, um die Abfrage- und Inhaltsstandorte für eine oder mehrere Inhaltssuchen schnell zu ändern.
+ms.openlocfilehash: 9f4d84a2f9c99f544bbb402fc24ac2dcbf0864f8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035523"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918231"
 ---
-# <a name="bulk-edit-content-searches"></a>Massenbearbeitung von Inhalts suchen
+# <a name="bulk-edit-content-searches"></a>Massenbearbeitung von Inhaltssuchen
 
-Sie können den Massen Such-Editor im Inhalts Such Tool verwenden, um mehrere Suchvorgänge gleichzeitig zu bearbeiten. Mit diesem Tool können Sie die Abfrage-und inhaltsspeicherorte für eine oder mehrere Suchvorgänge schnell ändern. Anschließend können Sie die Suchvorgänge erneut ausführen und neue geschätzte Suchergebnisse für die geänderten Suchvorgänge abrufen. Mit dem Editor können Sie auch Abfragen und inhaltsspeicherorte aus einer Microsoft Excel Datei oder Textdatei kopieren und einfügen. Dies bedeutet, dass Sie das Suchstatistik Tool verwenden können, um die Statistiken einer oder mehrerer Suchvorgänge anzuzeigen, die Statistiken in eine CSV-Datei zu exportieren, in der Sie die Abfragen und inhaltsspeicherorte in Excel bearbeiten können. Anschließend verwenden Sie den Massen Such-Editor, um die geänderten Abfragen und inhaltsspeicherorte zu den Suchvorgängen hinzuzufügen. Nachdem Sie eine oder mehrere Suchvorgänge überarbeitet haben, können Sie Sie neu starten und neue geschätzte Suchergebnisse abrufen.
+Sie können den Massensuch-Editor im Tool für die Inhaltssuche verwenden, um mehrere Suchen gleichzeitig zu bearbeiten. Mit diesem Tool können Sie die Abfrage- und Inhaltsstandorte für eine oder mehrere Suchabfragen schnell ändern. Anschließend können Sie die Suchläufe erneut ausführen und neue geschätzte Suchergebnisse für die überarbeiteten Suchen erhalten. Mit dem Editor können Sie auch Abfragen und Inhaltsstandorte aus einer Microsoft Excel-Datei oder Textdatei kopieren und einfügen. Dies bedeutet, dass Sie das Suchstatistiktool verwenden können, um die Statistiken einer oder mehrere Suchanfragen anzuzeigen und die Statistiken in eine CSV-Datei zu exportieren, in der Sie die Abfragen und Inhaltspositionen in Excel bearbeiten können. Anschließend verwenden Sie den Massensuch-Editor, um den Suchanfragen die überarbeiteten Abfragen und Inhaltsstandorte hinzuzufügen. Nachdem Sie eine oder mehrere Suchergebnisse überarbeitet haben, können Sie sie neu starten und neue geschätzte Suchergebnisse erhalten.
   
-Weitere Informationen zur Verwendung des Suchstatistik Tools finden Sie unter [Anzeigen von Schlüsselwort Statistiken für Inhalts Suchergebnisse](view-keyword-statistics-for-content-search.md).
+Weitere Informationen zur Verwendung des Suchstatistiktools finden Sie unter [View keyword statistics for Content Search results](view-keyword-statistics-for-content-search.md).
   
-## <a name="use-the-bulk-search-editor-to-change-queries"></a>Verwenden des Massen Such-Editors zum Ändern von Abfragen
+## <a name="use-the-bulk-search-editor-to-change-queries"></a>Ändern von Abfragen mithilfe des Massensuch-Editors
 
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com)zu, und wählen Sie dann **Such** \> **Inhaltssuche**aus.
+1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu , und wählen Sie dann Suche  \> **Inhaltssuche aus.**
     
-2. Wählen Sie in der Liste der Suchvorgänge mindestens eine Suche aus, und wählen Sie dann Massen Such- **Editor** ![-](../media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)Massen Such-Editor-Schaltfläche aus.
+2. Wählen Sie in der Liste der Suchen eine oder  mehrere Suchen aus, und wählen Sie dann die Schaltfläche Massensuch-Editor-Massensuch-Editor ![ ](../media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png) aus.
     
-    ![Wählen Sie eine oder mehrere Suchvorgänge aus, und wählen Sie dann Massen Such-Editor aus.](../media/600c9716-89a2-4451-b111-fa7cfaad2006.png)
+    ![Wählen Sie eine oder mehrere Suchen aus, und wählen Sie dann Massensuch-Editor aus.](../media/600c9716-89a2-4451-b111-fa7cfaad2006.png)
   
-    Die folgenden Informationen werden auf der Seite **Abfragen** des Massen Such-Editors angezeigt. 
+    Die folgenden Informationen werden auf der Seite **Abfragen** des Massensuch-Editors angezeigt. 
     
-    ![Auf der Seite Massensuche-Editor werden die Abfragen für die ausgewählten Suchvorgänge angezeigt.](../media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
+    ![Auf der Seite Massensuch-Editor werden die Abfragen für die ausgewählten Suchanfragen angezeigt.](../media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
   
-    a. In der Spalte **Suchen** wird der Name der Inhaltssuche angezeigt. Wie bereits erwähnt, können Sie die Abfrage für mehrere Suchvorgänge bearbeiten. 
+    a. In **der Spalte Suche** wird der Name der Inhaltssuche angezeigt. Wie bereits erwähnt, können Sie die Abfrage für mehrere Suchabfragen bearbeiten. 
     
-    b. In der **Abfrage** Spalte wird die Abfrage für die Inhaltssuche angezeigt, die in der Spalte **Suchen** aufgeführt ist. Wenn die Abfrage mit dem Keyword-Listenfeature erstellt wurde, werden die Schlüsselwörter durch den Text * `(c:s)`* getrennt **. Dies deutet darauf hin, dass die Schlüsselwörter durch den **or** -Operator verbunden sind. Wenn die Abfragebedingungen enthält, werden die Schlüsselwörter und Bedingungen zusätzlich durch den Text * * `(c:c)`getrennt **. Dies deutet darauf hin, dass die Schlüsselwörter (oder Keyword-Phasen) durch den **and-** Operator mit den Bedingungen verbunden sind. Im vorherigen Screenshot beispielsweise lautet die for Search-ContosoSearch1 die KQL-Abfrage, die dem entspricht `customer (c:s) pricing(c:c)(date=2000-01-01..2016-09-30)` `(customer OR pricing) AND (date=2002-01-01..2016-09-30)`.
+    b. In **der Spalte Abfrage** wird die In der Spalte Suche aufgeführte Abfrage für die **Inhaltssuche** angezeigt. Wenn die Abfrage mithilfe des Schlüsselwortlistenfeatures erstellt wurde, werden die Schlüsselwörter durch den Text ** `(c:s)` **getrennt. Dies gibt an, dass die Schlüsselwörter über den **OR-Operator verbunden** sind. Wenn die Abfrage Bedingungen enthält, `(c:c)`** werden die Schlüsselwörter und Bedingungen durch den Text ** getrennt. Dies gibt an, dass die Schlüsselwörter (oder Stichwortphasen) durch den **AND-Operator** mit den Bedingungen verbunden sind. Beispiel: Im vorherigen Screenshot für die Suche ContosoSearch1 ist die KQL-Abfrage  `customer (c:s) pricing(c:c)(date=2000-01-01..2016-09-30)` gleichbedeutend mit  `(customer OR pricing) AND (date=2002-01-01..2016-09-30)` .
     
-3. Um eine Abfrage zu bearbeiten, wählen Sie in der Zelle der Abfrage aus, die Sie ändern möchten, und führen Sie eine der folgenden Aktionen aus. Die Zelle wird durch ein blaues Feld umrandet, wenn Sie Sie auswählen.
+3. Wählen Sie zum Bearbeiten einer Abfrage in der Zelle der Abfrage aus, die Sie ändern möchten, und tun Sie eines der folgenden Schritte. Die Zelle wird durch ein blaues Feld umrandet, wenn Sie sie auswählen.
     
    - Geben Sie die neue Abfrage in die Zelle ein. Sie können einen Teil der Abfrage nicht bearbeiten. Sie müssen die gesamte Abfrage eingeben.
     
-      Oder:
+      Oder
     
-    - Fügt eine neue Abfrage in die Zelle ein. Dabei wird davon ausgegangen, dass Sie den Abfragetext aus einer Datei wie einer Textdatei oder einer Excel-Datei kopiert haben.
+    - Fügen Sie eine neue Abfrage in die Zelle ein. Dies setzt voraus, dass Sie den Abfragetext aus einer Datei kopiert haben, z. B. aus einer Textdatei oder einer Excel-Datei.
     
-4. Nachdem Sie eine oder mehrere Abfragen auf der Seite **Abfragen** bearbeitet haben, wählen Sie **Speichern**aus.
+4. Nachdem Sie eine oder mehrere Abfragen  auf der Seite Abfragen bearbeitet haben, wählen Sie **Speichern aus.**
     
-    Die geänderte Abfrage wird in der **Abfrage** Spalte für die ausgewählte Suche angezeigt. 
+    Die überarbeitete Abfrage wird in der Spalte **Abfrage für** die ausgewählte Suche angezeigt. 
     
-5. Wählen Sie **Schließen** aus, um den Massen Such-Editor zu schließen. 
+5. Wählen **Sie Schließen** aus, um den Massensuch-Editor zu schließen. 
     
-6. Wählen Sie auf der Seite **Inhaltssuche** die Suche aus, die Sie bearbeitet haben, und wählen Sie **Start** Suche aus, um die Suche mit der geänderten Abfrage neu zu starten. 
+6. Wählen Sie **auf der Seite** Inhaltssuche die  von Ihnen bearbeitete Suche aus, und wählen Sie Suche starten aus, um die Suche mithilfe der überarbeiteten Abfrage neu zu starten. 
     
-Hier finden Sie einige Tipps zum Bearbeiten von Abfragen mit dem Massen Such-Editor:
+Im Folgenden finden Sie einige Tipps zum Bearbeiten von Abfragen mithilfe des Massensuch-Editors:
   
-- Kopieren Sie die vorhandene Abfrage (mithilfe von **STRG C** ) in eine Textdatei. Bearbeiten Sie die Abfrage in der Textdatei, kopieren Sie die geänderte Abfrage, und fügen Sie Sie in der Zelle auf der Seite **Abfragen** mit **STRG V** wieder ein. 
+- Kopieren Sie die vorhandene Abfrage (mithilfe von **STRG C** ) in eine Textdatei. Bearbeiten Sie die Abfrage in der Textdatei, kopieren Sie die überarbeitete Abfrage, und fügen Sie sie (mit **STRG V** ) wieder in die Zelle auf der **Seite Abfragen** ein. 
     
-- Sie können auch Abfragen aus anderen Anwendungen (beispielsweise Microsoft Word oder Microsoft Excel) kopieren. Sie können jedoch versehentlich nicht unterstützte Zeichen zu einer Abfrage hinzufügen, indem Sie den Massen Such-Editor verwenden. Die beste Möglichkeit, nicht unterstützte Zeichen zu verhindern, besteht darin, die Abfrage einfach in eine Zelle auf der Seite **Abfragen** einzugeben. Oder Sie können eine Abfrage aus Word oder Excel kopieren und dann in eine Datei in einem nur-Text-Editor wie Microsoft Notepad einfügen. Speichern Sie dann die Textdatei, und wählen Sie **ANSI** in der Dropdownliste **Codierung** aus. Dadurch werden alle Formatierungen und nicht unterstützten Zeichen entfernt. Anschließend können Sie die Abfrage aus der Textdatei auf der Seite **Abfragen** kopieren und einfügen. 
+- Sie können auch Abfragen aus anderen Anwendungen (z. B. Microsoft Word oder Microsoft Excel) kopieren. Sie können jedoch versehentlich nicht unterstützte Zeichen zu einer Abfrage hinzufügen, indem Sie den Massensuch-Editor verwenden. Die beste Möglichkeit, nicht unterstützte Zeichen zu verhindern, besteht in der Eingabe der Abfrage in einer Zelle auf der **Seite Abfragen.** Sie können auch eine Abfrage aus Word oder Excel kopieren und dann in einen Nur-Text-Editor einfügen, z. B. Microsoft Notepad. Speichern Sie dann die Textdatei, und wählen Sie **ANSI** in der Dropdownliste **Codierung** aus. Dadurch werden alle Formatierungen und nicht unterstützten Zeichen entfernt. Anschließend können Sie die Abfrage aus der Textdatei kopieren und in die **Seite Abfragen** einfügen. 
     
   
-## <a name="use-the-bulk-search-editor-to-change-content-locations"></a>Verwenden des Massen Such-Editors zum Ändern von Inhaltsspeicherorten
+## <a name="use-the-bulk-search-editor-to-change-content-locations"></a>Ändern von Inhaltsstandorten mithilfe des Massensuch-Editors
 
-1. Wählen Sie im Massen Such-Editor für eine oder mehrere ausgewählte Suchvorgänge die Option **Massen Speicherort-Editor aktivieren**aus, und wählen Sie dann den Link **Orte** aus, der auf der Seite angezeigt wird. 
+1. Wählen Sie im Massensuch-Editor für eine oder mehrere ausgewählte Suchen  die Option Massenspeicherort-Editor aktivieren aus, und wählen Sie dann den Link Speicherorte aus, der auf der Seite angezeigt wird.  
     
-    Die folgenden Informationen werden auf der Seite **Speicherorte** des Massen Such-Editors angezeigt. 
+    Die folgenden Informationen werden auf der Seite **Speicherorte** des Massensuch-Editors angezeigt. 
     
-    ![Wählen Sie Massen Speicherort-Editor aktivieren aus, und wählen Sie dann Standorte zum Hinzufügen oder Entfernen von Inhaltsspeicherorten aus.](../media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
+    ![Wählen Sie Massenspeicherort-Editor aktivieren und dann Speicherorte zum Hinzufügen oder Entfernen von Inhaltsspeicherorten aus.](../media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
   
-    a. **Zu durchsuchende Postfächer** In diesem Abschnitt wird eine Spalte für jede ausgewählte Inhaltssuche und eine Zeile für jedes Postfach angezeigt, das in der Suche enthalten ist. Ein Häkchen gibt an, dass das Postfach in die Suche einbezogen wird. Sie können einer Suche Postfächer hinzufügen, indem Sie die e-Mail-Adresse des Postfachs in eine leere Zeile eingeben und dann das Kontrollkästchen für die Inhaltssuche aktivieren, zu der Sie Sie hinzufügen möchten. Sie können ein Postfach auch aus einer Suche entfernen, indem Sie das Kontrollkästchen deaktivieren.
+    a. **Zu durchsuchende Postfächer** In diesem Abschnitt werden eine Spalte für jede ausgewählte Inhaltssuche und eine Zeile für jedes Postfach angezeigt, das in der Suche enthalten ist. Ein Häkchen gibt an, dass das Postfach in der Suche enthalten ist. Sie können einer Suche Postfächer hinzufügen, indem Sie die E-Mail-Adresse des Postfachs in eine leere Zeile eingeben und dann das Kontrollkästchen für die Inhaltssuche aktivieren, der Sie es hinzufügen möchten. Sie können auch ein Postfach aus einer Suche entfernen, indem Sie das Kontrollkästchen aktivieren.
     
-    b. **Zu durchsuchende SharePoint-Websites** In diesem Abschnitt wird eine Zeile für jede SharePoint-und OneDrive-Website angezeigt, die in jeder ausgewählten Inhaltssuche enthalten ist. Ein Häkchen gibt an, dass die Website in die Suche einbezogen wird. Sie können einer Suche Websites hinzufügen, indem Sie die URL der Website in eine leere Zeile eingeben und dann das Kontrollkästchen für die Inhaltssuche aktivieren, zu der Sie Sie hinzufügen möchten. Oder Sie können eine Website aus einer Suche entfernen, indem Sie das Kontrollkästchen deaktivieren.
+    b. **Zu durchsuchende SharePoint-Websites** In diesem Abschnitt wird eine Zeile für jede SharePoint- und #A0 angezeigt, die in jeder ausgewählten Inhaltssuche enthalten ist. Ein Häkchen gibt an, dass die Website in der Suche enthalten ist. Sie können einer Suche Websites hinzufügen, indem Sie die URL für die Website in eine leere Zeile eingeben und dann das Kontrollkästchen für die Inhaltssuche aktivieren, der Sie sie hinzufügen möchten. Sie können eine Website auch aus einer Suche entfernen, indem Sie das Kontrollkästchen aktivieren.
     
-    c. **Andere Suchoptionen** Dieser Abschnitt gibt an, ob nicht indizierte Elemente und öffentliche Ordner in die Suche einbezogen werden. Um diese einzuschließen, stellen Sie sicher, dass das Kontrollkästchen aktiviert ist. Deaktivieren Sie das Kontrollkästchen, um Sie zu entfernen.
+    c. **Andere Suchoptionen** Dieser Abschnitt gibt an, ob nicht indizierte Elemente und öffentliche Ordner in die Suche einbezogen werden. Stellen Sie sicher, dass das Kontrollkästchen aktiviert ist, um sie zu enthalten. Um sie zu entfernen, aktivieren Sie das Kontrollkästchen.
     
-2. Nachdem Sie einen oder mehrere der Abschnitte auf der Seite **Speicherorte** bearbeitet haben, wählen Sie **Speichern**aus.
+2. Nachdem Sie einen oder mehrere Abschnitte auf  der Seite Speicherorte bearbeitet haben, wählen Sie **Speichern aus.**
     
-    Die überarbeiteten inhaltsspeicherorte werden im entsprechenden Abschnitt für die ausgewählten Suchvorgänge angezeigt.
+    Die überarbeiteten Inhaltspositionen werden im entsprechenden Abschnitt für die ausgewählten Suchen angezeigt.
     
-3. Wählen Sie **Schließen** aus, um den Massen Such-Editor zu schließen. 
+3. Wählen **Sie Schließen** aus, um den Massensuch-Editor zu schließen. 
     
-4. Wählen Sie auf der Seite **Inhaltssuche** die von Ihnen bearbeitete Suche aus, und wählen Sie **Start** Suche aus, um die Suche mithilfe der überarbeiteten inhaltsspeicherorte neu zu starten. 
+4. Wählen Sie **auf der Seite** Inhaltssuche die  von Ihnen bearbeitete Suche aus, und wählen Sie Suche starten aus, um die Suche mithilfe der überarbeiteten Inhaltspositionen neu zu starten. 
     
-Hier finden Sie einige Tipps zum Bearbeiten von Inhaltsspeicherorten mit dem Massen Such-Editor:
+Im Folgenden finden Sie einige Tipps zum Bearbeiten von Inhaltsstandorten mithilfe des Massensuch-Editors:
   
-- Sie können Inhalts suchen bearbeiten, um alle Postfächer oder Websites in der Organisation zu durchsuchen, indem Sie **alle** in eine leere Zeile im Abschnitt **Postfächer in Such** -oder **SharePoint-Websites zum Suchen** eingeben und dann das Kontrollkästchen aktivieren. 
+- Sie können Inhaltssuchen bearbeiten, um alle Postfächer oder Websites in der Organisation  zu durchsuchen, indem Sie **Alle** in einer leeren Zeile im Abschnitt Postfächer für die Suche oder zu durchsuchende **SharePoint-Websites** eingeben und dann das Kontrollkästchen aktivieren. 
     
-- Sie können mehrere inhaltsspeicherorte zu einer oder mehreren Suchvorgängen hinzufügen, indem Sie mehrere Zeilen aus einer Textdatei oder einer Excel-Datei kopieren und anschließend in einen Abschnitt auf der Seite **Speicherorte** einfügen. Wenn Sie neue Speicherorte hinzugefügt haben, aktivieren Sie das Kontrollkästchen für jede Suche, der Sie den Speicherort hinzufügen möchten. 
+- Sie können einer oder mehreren Suchen mehrere Inhaltsstandorte hinzufügen, indem Sie mehrere Zeilen aus einer Textdatei oder einer Excel-Datei kopieren und dann in einen Abschnitt auf der Seite Speicherorte **einfügen.** Nachdem Sie neue Speicherorte hinzugefügt haben, aktivieren Sie das Kontrollkästchen für jede Suche, der Sie den Speicherort hinzufügen möchten. 
     
     > [!TIP]
-    > Um eine Liste der e-Mail-Adressen für alle Benutzer in Ihrer Organisation zu erstellen, führen Sie den PowerShell-Befehl in Schritt 2 in [Schritt 2: Generieren einer Liste von Benutzern](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users)aus. Oder führen Sie die Schritte unter [Get a list of all User OneDrive URLs in Ihrer Organisation](https://docs.microsoft.com/onedrive/list-onedrive-urls) aus, um eine Liste aller OneDrive für Unternehmen Websites in Ihrer Organisation zu generieren. Beachten Sie, dass Sie die URL für die mysite-Domäne Ihrer Organisation Anfügen müssen (beispielsweise https://contoso-my.sharepoint.com) an die OneDrive für Unternehmen Websites, die durch das Skript erstellt wurden. Nachdem Sie eine Liste mit e-Mail-Adressen oder OneDrive für Unternehmen Websites erhalten haben, können Sie diese kopieren und auf der Seite **Speicherorte** im Massen Such-Editor einfügen. 
+    > Führen Sie zum Generieren einer Liste von E-Mail-Adressen für alle Benutzer in Ihrer Organisation den Befehl PowerShell in Schritt 2 in [Schritt 2: Generieren](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users)einer Liste von Benutzern aus. Oder führen Sie die Schritte unter Erstellen einer Liste aller [OneDrive-URLs](/onedrive/list-onedrive-urls) aller Benutzer in Ihrer Organisation aus, um eine Liste aller OneDrive for #A0 in Ihrer Organisation zu generieren. Beachten Sie, dass Sie die URL für die MySite-Domäne Ihrer Organisation anfügen müssen (z. B. an die OneDrive for Business-Websites, die vom Skript https://contoso-my.sharepoint.com) erstellt werden. Nachdem Sie über eine Liste von E-Mail-Adressen oder OneDrive  for #A0 verfügen, können Sie sie kopieren und in die Seite Speicherorte im Massensuch-Editor einfügen. 
   
-- Nachdem Sie **Save** zum Speichern der Änderungen im Massen Such-Editor ausgewählt haben, wird die e-Mail-Adresse für Postfächer überprüft, die Sie einer Suche hinzugefügt haben. Wenn die e-Mail-Adresse nicht vorhanden ist, wird eine Fehlermeldung angezeigt, die besagt, dass das Postfach nicht gefunden werden kann. URLs für Websites werden nicht überprüft. 
-  
-
+- Nachdem Sie **Speichern ausgewählt** haben, um Änderungen im Massensuch-Editor zu speichern, wird die E-Mail-Adresse für Postfächer überprüft, die Sie einer Suche hinzugefügt haben. Wenn die E-Mail-Adresse nicht vorhanden ist, wird eine Fehlermeldung angezeigt, dass das Postfach nicht gespeichert werden kann. URLs für Websites werden nicht überprüft. 
