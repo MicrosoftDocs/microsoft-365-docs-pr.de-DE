@@ -24,7 +24,7 @@ ms.custom:
 - AdminSurgePortfolio
 ms.openlocfilehash: 9afc38aeda32870a248212f7b67f2fb4af8fd960
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/11/2020
 ms.locfileid: "49658075"
@@ -35,17 +35,17 @@ ms.locfileid: "49658075"
   
 Eine Domäne ist ein eindeutiger Name, der in E-Mail-Adressen hinter dem **@**-Zeichen und in Internetadressen hinter **www.** angezeigt wird. Er besteht normalerweise aus dem Namen Ihrer Organisation und einem Internet-Standardsuffix, z. B. *ihrunternehmen.<span>com* oder *musikhochschule.<span>edu*. 
   
-Verwenden einer benutzerdefinierten Domäne wie *Rob@contoso. <span> com* mit Microsoft 365 kann dazu beitragen, Glaubwürdigkeit und Anerkennung für Ihre Marke zu schaffen. 
+Durch die Verwendung einer benutzerdefinierten Domäne wie *rob@contoso.<span>com* mit Microsoft 365 können Sie Glaubwürdigkeit und Anerkennung für Ihre Marke schaffen. 
   
 ## <a name="choose-the-experience-thats-best-for-you"></a>Wählen Sie die Option aus, die für Sie am besten geeignet ist:
 
  **Kaufen einer neuen Domäne:**
   
-Verwenden Sie Microsoft 365, um eine neue Domäne zu kaufen – wir richten alles ein. [Weitere Informationen.](buy-a-domain-name.md)
+Verwenden Sie Microsoft 365, um eine neue Domäne zu kaufen – wir richten alles für Sie ein. [Weitere Informationen.](buy-a-domain-name.md)
   
  **Verwenden einer Domäne, die Sie bereits besitzen:**
   
-Wenn Sie bereits eine Domäne wie  *you@yourcompany besitzen. <span> com*  Sie können es hinzufügen und sofort mit der Verwendung von OneDrive und Microsoft apps beginnen. Sie müssen sich ein paar Minuten Zeit nehmen, um E-Mail und Skype for Business einzurichten. 
+Wenn Sie eine Domäne wie *sie@ihrunternehmen.<span>com*  bereits besitzen, können Sie sie hinzufügen und sofort mit der Nutzung von OneDrive und Microsoft-Apps beginnen. Sie müssen sich ein paar Minuten Zeit nehmen, um E-Mail und Skype for Business einzurichten. 
   
 > [!TIP]
 > Sie wissen nicht sicher, wo Ihre Domäne registriert ist? – [Hilfe zum Ermitteln Ihrer Domänenregistrierungsstelle anfordern](find-your-domain-registrar.md)
@@ -56,6 +56,6 @@ Sie können eine Standarddomäne wie *ihrunternehmen.onmicrosoft.<span>com* zun�
   
 ## <a name="feeling-stuck"></a>Sie kommen nicht weiter?
 
-Rufen Sie den Microsoft-Support an – [Hilfe beim Einrichten einer Domäne](../contact-support-for-business-products.md)
+Rufen Sie den Microsoft-Support an – [Hilfe beim Einrichten einer Domäne erhalten](../contact-support-for-business-products.md)
   
 
