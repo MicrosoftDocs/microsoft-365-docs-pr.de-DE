@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: Erfahren Sie, wie Sie Ihr Microsoft 365 verlängern, indem Sie wiederkehrende Abrechnungen aktivieren oder deaktivieren.
-ms.openlocfilehash: 3bde3cc6d62e89e3339c268b9e3f9be5d657c467
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 8b38336ccb7a0a29b5782e55117389f6a19a0d80
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114609"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903524"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Verlängern von Microsoft 365 Business
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -112,4 +112,4 @@ Wenn Sie für Ihr Abonnement mit einem Product Key im Voraus bezahlt haben, läu
 
 [Eingeben des Product Key](../enter-your-product-key.md)
   
-[Kaufen Ihrer Testversion von Microsoft 365 Business](../buy-a-subscription-from-your-free-trial.md)
+[Kaufen Ihrer Testversion von Microsoft 365 Business](../try-or-buy-microsoft-365.md)

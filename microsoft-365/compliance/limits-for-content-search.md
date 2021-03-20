@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Erfahren Sie mehr über die Grenzwerte, die für das Feature für die Inhaltssuche im Microsoft 365 Compliance Center gelten, z. B. die maximale Anzahl gleichzeitiger Suchen. Diese Suchgrenzwerte gelten auch für Suchen, die Core eDiscovery-Fällen zugeordnet sind.
-ms.openlocfilehash: 7212175dece6956ac825cef273b06603230736ee
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+ms.openlocfilehash: fd77b12fe8cfc8a53876a3e95ba8f48434ae77b8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717602"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905877"
 ---
 # <a name="limits-for-content-search"></a>Grenzwerte für die Inhaltssuche 
 Auf das Inhaltssuchtool im Microsoft 365 Compliance Center werden verschiedene Grenzwerte angewendet. Dazu gehören Auf der  Seite Inhaltssuche ausgeführte Suchen und Suchen, die einem eDiscovery-Fall auf der Seite **Core eDiscovery zugeordnet** sind. Diese Beschränkungen helfen, die Integrität und Qualität der für Organisationen bereitgestellten Dienste zu erhalten. Es gibt auch Einschränkungen im Zusammenhang mit der Indizierung von E-Mail-Nachrichten in Exchange Online für die Suche. Sie können die Grenzwerte für die Inhaltssuche oder die E-Mail-Indizierung nicht ändern, sie sollten jedoch beachten, damit Sie diese Einschränkungen bei der Planung, Ausführung und Problembehandlung von Inhaltssuchen berücksichtigen können.
@@ -35,7 +35,7 @@ In der folgenden Tabelle sind die Suchgrenzwerte für die Verwendung des Inhalts
 |:-----|:-----|
 |Die maximale Anzahl von Postfächern oder Websites, die in einer einzigen Suche durchsucht werden können  <br/> |Kein Grenzwert <sup>1</sup> <br/> |
 |Die maximale Anzahl von Suchen, die gleichzeitig in Ihrer Organisation ausgeführt werden können.  <br/> |30  <br/> |
-|Die maximale Anzahl von organisationsweiten Suchen, die gleichzeitig ausgeführt werden können. <br/> |3   <br/> |
+|Die maximale Anzahl von organisationsweiten Suchen, die gleichzeitig ausgeführt werden können. <br/> |3  <br/> |
 |Die maximale Anzahl von Suchen, die ein einzelner Benutzer gleichzeitig starten kann. Dieser Grenzwert wird höchstwahrscheinlich erreicht, wenn der Benutzer versucht, mehrere Suchen mithilfe des **Befehls Get-ComplianceSearch \| Start-ComplianceSearch** in Security & Compliance Center PowerShell zu starten.  <br/> |10    <br/> |
 |Die maximale Anzahl von Elementen pro Benutzerpostfach, die bei der Vorschau der Inhaltssuchergebnisse auf der Vorschauseite angezeigt werden.  <br/> |100  <br/> |
 |Die maximale Anzahl von Elementen in allen Benutzerpostfächern, die bei der Vorschau der Suchergebnisse auf der Vorschauseite angezeigt werden. Die neuesten Elemente werden angezeigt.  <br/> |1.000  <br/> |
@@ -47,7 +47,7 @@ In der folgenden Tabelle sind die Suchgrenzwerte für die Verwendung des Inhalts
 |Die maximale Anzahl von öffentlichen Postfächern, die für Suchergebnisse in der Vorschau angezeigt werden können. Wenn mehr als 500 Postfächer für öffentliche Ordner vorhanden sind, die Inhalte enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die 500 Postfächer für öffentliche Ordner mit den meisten Suchergebnissen für die Vorschau zur Verfügung.  <br/> |500  <br/> |
 |Die maximale Anzahl von Zeichen für die Suchabfrage (einschließlich Operatoren und Bedingungen) für eine Suche.  <br/><br/> **Hinweis:** Dieser Grenzwert wird wirksam, nachdem die Abfrage erweitert wurde, was bedeutet, dass die Abfrage für jedes Schlüsselwort erweitert wird. Wenn eine Suchabfrage beispielsweise 15 Schlüsselwörter und zusätzliche Parameter und Bedingungen enthält, wird die Abfrage 15-mal erweitert, jeweils mit den anderen Parametern und Bedingungen in der Abfrage. Auch wenn die Anzahl der Zeichen in der Suchabfrage unter dem Grenzwert liegt, kann die erweiterte Abfrage dazu beitragen, diesen Grenzwert zu überschreiten.  <br/> |**Postfächer:** 10.000  <br/> **Websites:** 4.000 beim Durchsuchen aller Websites oder 2.000 beim Durchsuchen von bis zu 20 Websites <sup>2</sup> <br/> |
 |Maximale Anzahl von Varianten, die zurückgegeben werden, wenn ein Präfix-Platzhalter zum Suchen nach einem exakten Ausdruck in einer Suchabfrage oder bei Verwendung eines Präfix-Platzhalters und des **NEAR** Boolean-Operators verwendet wird.  <br/> |10.000 <sup>3</sup> <br/> |
-|Die Mindestanzahl von Alphazeichen für Präfix-Platzhalter. z. B.  `time*`  `one*` , oder  `set*` .  <br/> |3   <br/> |
+|Die Mindestanzahl von Alphazeichen für Präfix-Platzhalter. z. B.  `time*`  `one*` , oder  `set*` .  <br/> |3  <br/> |
 |Die maximale Anzahl von Postfächern in einer Suche, in der Sie Elemente löschen können, indem Sie eine Aktion "Suchen und Löschen" ausführen (mithilfe des **Befehls New-ComplianceSearchAction -Purge).** Wenn die Suche, für die Sie eine Reinigungsaktion erstellen, über mehr Quellpostfächer verfügt als dieser Grenzwert, wird bei der Reinigungsaktion ein Fehler angezeigt. Weitere Informationen zum Suchen und Löschen finden Sie unter Suchen und Löschen von E-Mail-Nachrichten [in Ihrer Organisation.](search-for-and-delete-messages-in-your-organization.md)  <br/> |50.000  <br/> |
 |Die maximale Anzahl von Speicherorten in einer Suche, aus der Sie Elemente exportieren können. Wenn die suche, die Sie exportieren, mehr Speicherorte als dieser Grenzwert hat, wird der Export fehlschlagen. Weitere Informationen finden Sie unter [Exportieren von Inhaltssuchergebnissen](export-search-results.md).  <br/> |100.000  <br/> |
 |||
@@ -76,7 +76,7 @@ In der folgenden Tabelle sind die Grenzwerte beim Exportieren der Ergebnisse ein
 |Maximale Menge exportierbarer Daten aus einer einzelnen Suche  <br/><br/> **Hinweis:** Wenn die Suchergebnisse größer als 2 TB sind, sollten Sie Datumsbereiche oder andere Filtertypen verwenden, um die Gesamtgröße der Suchergebnisse zu verringern. <br/>  |2 TB  <br/> | 
 |Maximal kann eine Organisation an einem einzigen Tag exportieren <br/><br/> **Hinweis:** Dieser Grenzwert wird täglich um 12:00 Uhr UTC zurückgesetzt. <br/> |2 TB <br/> |
 |Maximale Anzahl gleichzeitiger Exporte, die gleichzeitig in Ihrer Organisation ausgeführt werden können <br/><br/> **Hinweis:** Beim Ausführen **eines Nur-Berichts-Exports** wird die Gesamtzahl gleichzeitiger Exporte für Ihre Organisation ermittelt. Wenn drei Benutzer jeweils drei Exporte ausführen, kann nur ein weiterer Export ausgeführt werden. Unabhängig davon, ob ein Bericht oder Suchergebnisse exportiert werden, können keine weiteren Exporte ausgeführt werden, bis einer abgeschlossen ist.   <br/> |10   <br/> |
-|Maximale Exporte, die ein einzelner Benutzer jederzeit ausführen kann <br/> |3  <br/> |
+|Maximale Exporte, die ein einzelner Benutzer jederzeit ausführen kann <br/> |3 <br/> |
 |Maximale Anzahl von Postfächern für Suchergebnisse, die mit dem eDiscovery-Exporttool heruntergeladen werden können <br/><br/> **Hinweis:** Zum Herunterladen der Suchergebnisse aus mehr als 100.000 Postfächern müssen Sie Security & Compliance Center PowerShell verwenden. Anweisungen finden Sie [unter Exportieren von Ergebnissen aus mehr als 100.000 Postfächern](export-search-results.md#exporting-results-from-more-than-100000-mailboxes). <br/> | 100.000 <br/>|
 |Maximale Größe der PST-Datei, die exportiert werden kann <br/><br/> **Hinweis:** Wenn die Suchergebnisse aus dem Postfach eines Benutzers größer als 10 GB sind, werden die Suchergebnisse für das Postfach in zwei (oder mehr) separate PST-Dateien exportiert. Wenn Sie alle Suchergebnisse in einer einzelnen PST-Datei exportieren möchten, wird die PST-Datei in zusätzliche PST-Dateien gespäht, wenn die Gesamtgröße der Suchergebnisse größer als 10 GB ist. Wenn Sie diese Standardgröße ändern möchten, können Sie die Windows-Registrierung auf dem Computer bearbeiten, den Sie zum Exportieren der Suchergebnisse verwenden. Weitere [Informationen finden Sie unter Ändern der Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnissen.](change-the-size-of-pst-files-when-exporting-results.md) Die Suchergebnisse eines bestimmten Postfachs werden nur dann auf mehrere PST-Dateien aufgeteilt, wenn der Inhalt eines einzelnen Postfachs mehr als 10 GB beträgt. Wenn Sie die Suchergebnisse in einer PST-Datei exportieren möchten, die alle Nachrichten in einem einzigen Ordner enthält und die Suchergebnisse größer als 10 GB sind, sind die Elemente weiterhin in chronologischer Reihenfolge organisiert, sodass sie basierend auf dem gesendeten Datum in zusätzliche PST-Dateien gespäht werden.<br/> | 10 GB <br/> |
 |Rate, mit der Suchergebnisse aus Postfächern und Websites an einen von Microsoft bereitgestellten Azure Storage-Speicherort hochgeladen werden. |Maximal 2 GB pro Stunde|
@@ -107,7 +107,7 @@ Es gibt zusätzliche Beschränkungen im Zusammenhang mit verschiedenen Aspekten 
 
 - [Untersuchen teilweise indizierter Elemente in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
 
-- [Suchgrenzwerte für SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits)
+- [Suchgrenzwerte für SharePoint Online](/sharepoint/search-limits)
 
 Informationen zu Inhaltssuchen finden Sie unter:
   

@@ -16,16 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Verwalten Sie diese Azure-Administratorrollen im Microsoft 365 Admin Center.
-ms.openlocfilehash: 7a4e28667bc16d6619fe87451cd48ea77d89c81d
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: b07174763384150a7ae8cda6709f5d0ec5cb40ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126105"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904492"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Rollen in Azure Active Directory im Microsoft 365 Admin Center
 
-Im Microsoft 365 Admin Center können Sie mehr als 30 Azure AD-Rollen verwalten. Bei diesen Rollen handelt es sich jedoch um eine Teilmenge der Rollen, die im Azure-Portal verfügbar sind. Wenn es sich bei Ihrer Organisation um ein großes Unternehmen handelt, gibt es im Azure-Portal möglicherweise Rollen, die Ihren organisatorischen Anforderungen entsprechen. Sind Sie an detaillierten Rollenbeschreibungen für AZURE AD interessiert? Diese finden Sie unter [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Im Microsoft 365 Admin Center können Sie mehr als 30 Azure AD-Rollen verwalten. Bei diesen Rollen handelt es sich jedoch um eine Teilmenge der Rollen, die im Azure-Portal verfügbar sind. Wenn es sich bei Ihrer Organisation um ein großes Unternehmen handelt, gibt es im Azure-Portal möglicherweise Rollen, die Ihren organisatorischen Anforderungen entsprechen. Sind Sie an detaillierten Rollenbeschreibungen für AZURE AD interessiert? Diese finden Sie unter [Administratorrollenberechtigungen in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 Ein Benutzer, dem eine Administratorrolle zugewiesen wurde, verfügt über die gleichen Zugriffsrechte für Clouddienste, die Ihre Organisation abonniert hat, unabhängig davon, ob Sie die Rolle im Microsoft 365 Admin Center, im Azure-Portal oder mithilfe des Azure AD-Moduls für Windows PowerShell zuweisen.
 
@@ -37,7 +37,7 @@ Im Microsoft 365 Admin Center können Sie zu **Rollen** wechseln und dann eine b
 
 ## <a name="all-azure-ad-roles"></a>Alle Azure AD-Rollen
 
-Hier ist eine Liste aller im Microsoft 365 Admin Center verfügbaren Administratorrollen. Suchen Sie nach den detaillierten Rollenbeschreibungen der Microsoft 365-Administratorrollen? Siehe [Info zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+Hier ist eine Liste aller im Microsoft 365 Admin Center verfügbaren Administratorrollen. Suchen Sie nach den detaillierten Rollenbeschreibungen der Microsoft 365-Administratorrollen? Siehe [Info zu Administratorrollen](./about-admin-roles.md?view=o365-worldwide).
 
 |Administratorrolle     |Beschreibung  |
 |---------|---------|
@@ -57,7 +57,7 @@ Hier ist eine Liste aller im Microsoft 365 Admin Center verfügbaren Administrat
 |Exchange-Administrator     |  Hat Vollzugriff auf Exchange Online, erstellt und verwaltet Gruppen, verwaltet Serviceanfragen und überwacht den Dienststatus.    |
 |Administrator für externe Identitätsanbieter    |     Konfiguriert Identitätsanbieter für die Verwendung im direkten Verbund.    |
 |Globaler Administrator     |    Hat uneingeschränkten Zugriff auf alle Verwaltungsfunktionen und auf die meisten Daten in allen Admin Centern.     |
-|Globaler Leser     |    Hat Lesezugriff auf alle Verwaltungsfunktionen und auf die meisten Daten in Admin Centern. Eine detaillierte Beschreibung der Zugriffsrechte und Einschränkungen dieser Rolle finden Sie unter [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).    |
+|Globaler Leser     |    Hat Lesezugriff auf alle Verwaltungsfunktionen und auf die meisten Daten in Admin Centern. Eine detaillierte Beschreibung der Zugriffsrechte und Einschränkungen dieser Rolle finden Sie unter [Administratorrollenberechtigungen in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).    |
 |Gruppenadministrator   |Erstellt Gruppen und verwaltet alle Gruppeneinstellungen in allen Admin Centern.|
 |Gasteniladender     |    Verwaltet Azure Active Directory B2B-Gastbenutzereinladungen.     |
 |Helpdesk-Administrator     | Setzt Kennwörter zurück und authentifiziert erneut für Nicht-Administratoren und einige Administratorrollen, verwaltet Serviceanfragen und überwacht den Dienststatus.      |
@@ -99,7 +99,7 @@ Ein Partner kann die folgenden Rollen zuweisen:
 
 - Eingeschränkte Verwaltung mit Berechtigungen, die jenen eines Helpdesk-Administrators entsprechen.
 
-Bevor der Partner diese Rollen Benutzern zuweisen kann, müssen Sie ihn als delegierten Administrator zu Ihrem Konto hinzufügen. Dieser Vorgang wird von einem autorisierten Partner initiiert. Der Partner fragt Sie in einer E-Mail-Nachricht, ob Sie ihm die Berechtigung erteilen möchten, als delegierter Administrator zu fungieren. Weitere Informationen hierzu finden Sie unter [Autorisieren oder Entfernen von Partnerbeziehungen](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
+Bevor der Partner diese Rollen Benutzern zuweisen kann, müssen Sie ihn als delegierten Administrator zu Ihrem Konto hinzufügen. Dieser Vorgang wird von einem autorisierten Partner initiiert. Der Partner fragt Sie in einer E-Mail-Nachricht, ob Sie ihm die Berechtigung erteilen möchten, als delegierter Administrator zu fungieren. Weitere Informationen hierzu finden Sie unter [Autorisieren oder Entfernen von Partnerbeziehungen](../misc/add-partner.md).
   
 ## <a name="related-articles"></a>Verwandte Artikel
 

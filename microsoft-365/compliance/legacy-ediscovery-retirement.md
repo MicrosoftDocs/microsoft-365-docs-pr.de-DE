@@ -12,82 +12,82 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: In-Place eDiscovery und In-Place Hold (und die entsprechenden PowerShell-Cmdlets) in Exchange Online werden in der ersten Hälfte von 2020 zurückgezogen. Das Search-Mailbox-Cmdlet und die erweiterte eDiscovery v 1.0 werden auch innerhalb desselben Zeitraums zurückgezogen.
-ms.openlocfilehash: a40cc67b29e33d61d6750792f6a773622a73f678
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+description: In-Place eDiscovery und In-Place Hold (und die entsprechenden PowerShell-Cmdlets) in Exchange Online werden in der ersten Hälfte des Jahres 2020 eingestellt. Das Search-Mailbox cmdlet und Advanced eDiscovery v1.0 werden ebenfalls innerhalb desselben Zeitraums eingestellt.
+ms.openlocfilehash: 48a20b9e73c5379325afb715a86c4945385fd0b9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750878"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903605"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Einstellung älterer eDiscovery-Tools
 
 > [!IMPORTANT]
-> Microsoft hat die öffentliche Gesundheitssituation bewertet, und wir verstehen, welche Auswirkungen dies auf unsere Kunden hat. Wir möchten starke Partner und verantwortungsvolle globale Bürger sein. Um eine der zahlreichen Belastungen zu erleichtern, werden wir den geplanten Ruhestand für die in diesem Artikel beschriebenen vorversions-eDiscovery-Tools um drei Monate hinauszögern. **Die aktualisierten Pensions Termine werden nachfolgend wiedergegeben.**
+> Microsoft hat die Situation der öffentlichen Gesundheit ausgewertet, und wir wissen, wie sich dies auf unsere Kunden auswirken kann. Wir möchten starke Partner und verantwortliche globale Bürger sein. Um eine der vielen Lasten zu verringern, mit denen Sie konfrontiert sind, verzögern wir die geplante Rente für die älteren eDiscovery-Tools, die in diesem Artikel beschrieben werden, um drei Monate. **Die aktualisierten Ruhezeitdaten werden unten angezeigt.**
 
-Im Laufe der Jahre hat Microsoft eDiscovery-Tools bereitgestellt, mit denen Sie e-Mail-Inhalte aus Exchange Online durchsuchen, in einer Vorschau anzeigen und exportieren können. Diese Tools bieten jedoch keine effektive Möglichkeit zum Suchen nach nicht-Exchange-Inhalten in anderen Microsoft 365-Diensten wie SharePoint Online-und Microsoft 365-Gruppen. Um dies zu beheben, bietet Microsoft weitere eDiscovery-Tools, die Sie bei der Suche nach einer Vielzahl von Microsoft 365-Inhalten unterstützen. Und wir arbeiten hart daran, die aktuellsten und leistungsfähigsten eDiscovery-Funktionen im [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu integrieren. Auf diese Weise können Organisationen auf rechtliche, interne und andere Dokumentanforderungen für Inhalte in vielen Microsoft 365-Diensten, einschließlich Exchange Online, reagieren.
+Im Laufe der Jahre hat Microsoft eDiscovery-Tools bereitgestellt, mit deren Unterstützung Sie E-Mail-Inhalte aus Exchange Online durchsuchen, in der Vorschau anzeigen und exportieren können. Diese Tools bieten jedoch keine effektive Möglichkeit mehr, in anderen Microsoft 365-Diensten wie SharePoint Online und Microsoft 365-Gruppen nach Nicht-Exchange-Inhalten zu suchen. Um dies zu adressieren, bietet Microsoft weitere eDiscovery-Tools, mit deren Hilfe Sie nach einer Vielzahl von Microsoft 365-Inhalten suchen können. Und wir haben hart daran gearbeitet, die aktuelle und leistungsstärkste eDiscovery-Funktionalität im [Microsoft 365 Compliance Center zu integrieren.](https://compliance.microsoft.com) Auf diese Weise können Organisationen auf rechtliche, interne und andere Dokumentanforderungen für Inhalte in vielen Microsoft 365-Diensten, einschließlich Exchange Online, reagieren.
 
-Aufgrund dieser neuen und verbesserten eDiscovery-Funktionalität im Microsoft 365 Compliance Center werden die folgenden eDiscovery-bezogenen Features und Funktionen im Zusammenhang mit der Suche nach e-Mail-Inhalten in Exchange Online und Microsoft 365 in den Ruhestand gehen:
+Als Ergebnis dieser neuen und verbesserten eDiscovery-Funktionalität im Microsoft 365 Compliance Center werden die folgenden eDiscovery-bezogenen Features und Funktionen im Zusammenhang mit der Suche nach E-Mail-Inhalten in Exchange Online und Microsoft 365 zurück gestellt:
 
-- In [-Place-eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) und [in-Place-](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) Speicher in der Exchange-Verwaltungskonsole.
+- [In-Place eDiscovery](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) und [In-Place Holds](/exchange/security-and-compliance/create-or-remove-in-place-holds) im Exchange Admin Center.
 
-- Die Exchange Online PowerShell-Cmdlets, die In-Place eDiscovery-und In-Place-Aufbewahrungen unterstützen (diese Cmdlets werden gemeinsam als **-MailboxSearch-* Cmdlets bezeichnet). Dies umfasst die folgenden Cmdlets:
+- Die Exchange Online PowerShell-Cmdlets, die In-Place eDiscovery und In-Place Holds unterstützen (diese Cmdlets werden gemeinsam als **-MailboxSearch-Cmdlets* identifiziert). Dies umfasst die folgenden Cmdlets:
 
-  - [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxsearch)
+  - [New-MailboxSearch](/powershell/module/exchange/new-mailboxsearch)
 
-  - [Start-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/start-mailboxsearch)
+  - [Start-MailboxSearch](/powershell/module/exchange/start-mailboxsearch)
 
-  - [Stop-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/stop-mailboxsearch)
+  - [Stop-MailboxSearch](/powershell/module/exchange/stop-mailboxsearch)
 
-  - [Gruppe-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/set-mailboxsearch)
+  - [Set-MailboxSearch](/powershell/module/exchange/set-mailboxsearch)
 
    > [!NOTE]
-   > Die Cmdlets [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch) und [Remove-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxsearch) sind verfügbar, nachdem die anderen Cmdlets * * * *-MailboxSearch * * _ zurückgezogen wurden, damit Sie Sie beim Übergang zu anderen eDiscovery-und Hold-Tools unterstützen können. Nach einem bestimmten Datum (zitiert unten) wird der Microsoft-Support diese beiden Cmdlets jedoch nicht mehr unterstützen.
+   > Die [Cmdlets Get-MailboxSearch](/powershell/module/exchange/get-mailboxsearch) und [Remove-MailboxSearch](/powershell/module/exchange/remove-mailboxsearch) sind verfügbar, nachdem die anderen ****-MailboxSearch***-Cmdlets eingestellt wurden, sodass Sie sie verwenden können, um beim Übergang zu anderen eDiscovery- und Haltetools zu helfen. Nach einem bestimmten Datum (siehe unten) unterstützt der Microsoft Support diese beiden Cmdlets jedoch nicht mehr.
 
-- Das Cmdlet [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox) in Exchange Online PowerShell.
+- Das [Cmdlet Search-Mailbox](/powershell/module/exchange/search-mailbox) in Exchange Online PowerShell.
 
-- Die folgenden Vorgänge in der Exchange Webdienste-API:
+- Die folgenden Vorgänge in der Exchange Web Services-API:
 
-   - [GetSearchableMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getsearchablemailboxes-operation)
+   - [GetSearchableMailboxes](/exchange/client-developer/web-service-reference/getsearchablemailboxes-operation)
 
-   - [SearchMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/searchmailboxes-operation)
+   - [SearchMailboxes](/exchange/client-developer/web-service-reference/searchmailboxes-operation)
    
-   - [SetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
+   - [SetHoldOnMailboxes](/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
 
-   - [GetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
+   - [GetHoldOnMailboxes](/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
 
-- [Office 365 Advanced eDiscovery v 1.0](office-365-advanced-ediscovery.md), bei dem es sich um die erste Version von Advanced eDiscovery handelt, auf die über einen zentralen eDiscovery-Fall im Office 365 Security & Compliance Center zugegriffen wird. Der Ruhestand von Advanced eDiscovery v 1.0 wirkt sich nicht auf ihre Fähigkeit zum Erstellen und Verwalten von zentralen eDiscovery-Fällen aus.
+- [Office 365 Advanced eDiscovery v1.0](./overview-ediscovery-20.md), die erste Version von Advanced eDiscovery, auf die über einen Core eDiscovery-Fall im Office 365 Security & Compliance Center zugegriffen wird. Die Rente von Advanced eDiscovery v1.0 wirkt sich nicht auf die Möglichkeit aus, Core eDiscovery-Fälle zu erstellen und zu verwalten.
 
 > [!NOTE]
-> Die zurückgezogene eDiscovery-Funktionalität gilt nur für Cloud-basierte Versionen von Microsoft 365 und Office 365. eDiscovery-Funktionen in lokalen Versionen von Exchange und SharePoint werden bis auf weiteres weiterhin unterstützt.
+> Die eingestellte eDiscovery-Funktionalität gilt nur für cloudbasierte Versionen von Microsoft 365 und Office 365. eDiscovery-Funktionen in lokalen Versionen von Exchange und SharePoint werden bis auf weiteres weiterhin unterstützt.
 
-Die folgenden Abschnitte in diesem Artikel enthalten Anleitungen zu jedem Feature, das in den Ruhestand geht. Diese Informationen umfassen Zeitpläne und Alternative Tools, die Sie anstelle des Tools zum Zurücksetzen verwenden können.
+Die folgenden Abschnitte in diesem Artikel enthalten Anleitungen zu den einzelnen Features, die eingestellt werden. Diese Informationen enthalten Zeitachsen und alternative Tools, die Sie anstelle des eingestellten Tools verwenden können.
 
-## <a name="in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center"></a>In-Place eDiscovery-und In-Place-Aufbewahrung im Exchange Admin Center 
+## <a name="in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center"></a>In-Place eDiscovery und In-Place im Exchange Admin Center 
 
-Gemäß der ursprünglichen Ankündigung am 1. Juli 2017 wird die In-Place eDiscovery & Hold-Funktionalität im Exchange Admin Center (EAC) zurückgezogen. Auf der Seite In-Place-eDiscovery-& in der Exchange-Verwaltungskonsole können Sie Inhalte aus Exchange Online durchsuchen, speichern und exportieren. Mit In-Place eDiscovery können Sie auch Suchergebnisse in ein Discovery-Postfach kopieren, sodass Sie oder andere eDiscovery-Manager Inhalte überprüfen und für rechtliche, regulatorische und öffentliche Anforderungen zur Verfügung stellen können.
+Wie der ursprünglichen Ankündigung vom 1. Juli 2017 entspricht, wird die In-Place eDiscovery & Hold-Funktion im Exchange Admin Center (EAC) eingestellt. Die In-Place eDiscovery & in der EAC ermöglicht es Ihnen, Inhalte aus Exchange Online zu suchen, zu halten und zu exportieren. In-Place eDiscovery können Sie auch Suchergebnisse in ein Discoverypostfach kopieren, damit Sie oder andere eDiscovery-Manager Inhalte überprüfen und für rechtliche, behördliche und öffentliche Anforderungen zur Verfügung stellen können.
 
-Da alle diese Funktionen (mit Ausnahme des Kopierens von Suchergebnissen in ein Discovery-Postfach) jetzt in der Inhaltssuche, eDiscovery und erweiterten eDiscovery-Tools im [Microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) verfügbar sind (mit einer verbesserten Funktionalität, Zuverlässigkeit und Unterstützung für eine breite Palette von Microsoft 365-Diensten), sollten Sie diese Tools so schnell wie möglich verwenden. Um Sie beim Übergang zu diesen anderen eDiscovery-Tools zu unterstützen, werden in der folgenden Tabelle die Tools aufgelistet, die Sie anstelle von In-Place eDiscovery und In-Place Aufbewahrung verwenden können.
+Da alle diese Funktionen (mit Ausnahme des Kopierens von Suchergebnissen in ein Discoverypostfach) jetzt in der Inhaltssuche, eDiscovery- und Advanced eDiscovery-Tools im [Microsoft 365 Compliance Center](./microsoft-365-compliance-center.md) verfügbar sind (mit verbesserter Funktionalität, Zuverlässigkeit und Unterstützung für eine vielzahl von Microsoft 365-Diensten), wird empfohlen, diese Tools so bald wie möglich zu verwenden. Um Ihnen beim Übergang zu diesen anderen eDiscovery-Tools zu helfen, werden in der folgenden Tabelle die Tools aufgeführt, die Sie anstelle von eDiscovery und In-Place verwenden In-Place können.
 
-### <a name="scope-of-affected-organizations"></a>Umfang der betroffenen Organisationen
+### <a name="scope-of-affected-organizations"></a>Umfang betroffener Organisationen
 
-- Office 365-und Microsoft 365-Unternehmensorganisationen
+- Office 365- und Microsoft 365 Enterprise-Organisationen
 
-- Office 365-und Microsoft 365-Bildungseinrichtungen
+- Office 365- und Microsoft 365 Education-Organisationen
 
-- Office 365-und Microsoft 365-Regierungsorganisationen; Dies umfasst gcc, gcc hoch und DoD.
+- Office 365- und Microsoft 365 Government-Organisationen; Dazu gehören GCC, GCC High und DoD
 
 - Office 365 Deutschland
 
-### <a name="timeline-for-retirement"></a>Zeitachse für den Ruhestand
+### <a name="timeline-for-retirement"></a>Zeitachse für die Rente
 
-- 1. Juli 2020: Sie können keine neuen suchen und Aufbewahrungen erstellen, aber Sie können vorhandene Suchvorgänge auf eigenes Risiko ausführen, bearbeiten und löschen. Der Microsoft-Support In-Place nicht mehr eDiscovery-& in der Exchange-Verwaltungskonsole.
+- 1. Juli 2020: Sie können keine neuen Such- und Haltekriterien erstellen, aber Sie können vorhandene Suchen auf eigenes Risiko ausführen, bearbeiten und löschen. Der Microsoft Support In-Place eDiscovery & in der EAC nicht mehr verfügbar.
 
-- 1. Oktober 2020: die In-Place eDiscovery-&, die Funktionen in der Exchange-Verwaltungskonsole enthält, wird in den schreibgeschützten Modus versetzt. Dies bedeutet, dass Sie nur vorhandene suchen und Haltestatus entfernen können.
+- 1. Oktober 2020: Die In-Place eDiscovery & Holds-Funktionalität in der EAC wird in einen schreibgeschützten Modus versetzt. Dies bedeutet, dass Sie nur vorhandene Such- und Haltekriterien entfernen können.
 
 ### <a name="alternative-tools"></a>Alternative Tools
 
-In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen der vorhandenen Funktionen verwenden können, die in den Ruhestand gehen.
+In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen der vorhandenen Funktionalität verwenden können, die eingestellt wird.
 
 <table>
 <thead>
@@ -99,98 +99,98 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 </thead>
 <tbody>
 <tr class="odd">
-<td>Suchen, exportieren und speichern aus rechtlichen Gründen</td>
+<td>Suchen, Exportieren und Halten zu rechtlichen Zwecken</td>
 <td>Zentrale eDiscovery-Fälle im Microsoft 365 Compliance Center </td>
-<td><p>Durch die Verwendung der Funktionen von zentralen eDiscovery-Fällen wird die funktionale Parität für In-Place eDiscovery-und In-Place-Aufbewahrungen bereitgestellt. Dazu gehört Folgendes:</p>
+<td><p>Die Verwendung der Funktionen von eDiscovery-Kernfällen bietet die funktionale Parität für In-Place eDiscovery und In-Place Holds. Dazu gehört Folgendes:</p>
 <ul>
 <li>
-<p>Such Skalen an Millionen von Speicherorten</p>
+<p>Suchskalen auf Millionen von Speicherorten</p>
 </li>
 <li>
-<p>Höhere Zuverlässigkeit beim Suchen, exportieren und Platzieren von Inhalten in der Warteschleife</p>
+<p>Höhere Zuverlässigkeit beim Suchen, Exportieren und Platzieren von Inhalten</p>
 </li>
 <li>
-<p>Suchen nach Inhalten in für Exchange Online, SharePoint Online, OneDrive für Unternehmen, Skype for Business, Microsoft Teams, Jammer Gruppen, Microsoft 365 Gruppen und anderen in Office 365 Anwendungen gespeicherten Inhalten</p></li></ul>
+<p>Suchen nach Inhalten für Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, Microsoft Teams, Yammer-Gruppen, Microsoft 365-Gruppen und andere in Office 365-Anwendungen gespeicherte Inhalte</p></li></ul>
 </td>
 </tr>
 <tr class="even">
 <td>Aufbewahrung für Aufbewahrungszwecke</td>
 <td>Aufbewahrungsrichtlinien im Microsoft 365 Compliance Center</td>
-<td><p>Sie können Aufbewahrungsrichtlinien verwenden, um Inhalte beizubehalten und, falls gewünscht, nach Ablauf des Aufbewahrungszeitraums zu löschen. Zu den weiteren Funktionen gehören:</p>
+<td><p>Mithilfe von Aufbewahrungsrichtlinien können Sie Inhalte beibehalten und nach Ablauf des Aufbewahrungszeitraums bei Bedarf löschen. Weitere Funktionen sind:</p>
 <ul>
 <li>
 <p>Anwenden von Richtlinien auf Ihre gesamte Organisation </p>
 </li><li>
-<p>Anwenden von Richtlinien auf bestimmte inhaltsspeicherorte wie Exchange Online, SharePoint Online, OneDrive für Unternehmen, Skype for Business, Microsoft Teams und Office 365 Gruppen</p></li>
+<p>Anwenden von Richtlinien auf bestimmte Inhaltsstandorte wie Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, Microsoft Teams und Office 365-Gruppen</p></li>
 <li>
 <p>Anwenden von Richtlinien auf bestimmte Benutzer</p></li></ul>
-<p>Weitere Informationen finden Sie unter Informationen <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies"> zu Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen</a>.</td>
+<p>Weitere Informationen finden Sie <a href="/microsoft-365/compliance/retention-policies">unter Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen.</a></td>
 </tr>
 <tr class="odd">
-<td>Kopieren von e-Mail-Suchergebnissen in ein Ermittlungspostfach zur Überarbeitung</td><td>Überprüfungs Sätze in Advanced eDiscovery v 2.0</td>
-<td><p>Die Überprüfung von Inhalten in Microsoft 365 war noch nie so einfach. Überprüfungs Sätze weisen viele große Funktionen auf, um den Zeitaufwand und die erforderlichen Daten für die Überprüfung zu reduzieren, einschließlich:</p>
+<td>Kopieren von E-Mail-Suchergebnissen zur Überprüfung in ein Discoverypostfach</td><td>Überprüfen von Sätzen in Advanced eDiscovery v2.0</td>
+<td><p>Das Überprüfen von Inhalten in Microsoft 365 war noch nie einfacher. Überprüfungssätze verfügen über viele großartige Funktionen, um den Zeit- und Datenaufwand für die Überprüfung zu reduzieren, einschließlich:</p>
 <ul>
-<li><p>Ausführen schneller Suchabfragen und Filtern von Inhalten in einem Überprüfungs Satzes</p></li>
-<li><p>Analysieren des Inhalts eines Überprüfungs Satzes; Dazu gehören e-Mail-Threading, Erkennung in mehrfacher Nähe, Design Analyse und Vorhersage Codierung.</p></li>
+<li><p>Ausführen schneller Suchabfragen und Filtern von Inhalten in einem Überprüfungssatz</p></li>
+<li><p>Analysieren von Inhalten in einem Überprüfungssatz; Dies umfasst E-Mail-Threading, Fast-Dupliziert-Erkennung, Designs-Analyse und Vorhersagecodierung</p></li>
 <li><p>Markieren von Dokumenten in einem Prüfdateisatz</p></li>
-<li><p>Tagging von Vorschlägen zur Identifizierung von Rechtsanwalt-Client-Privileg-Inhalten</p></li></ul>
-<p>Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20">Übersicht über die Advanced eDiscovery-Lösung in Microsoft 365</a>.</p>
+<li><p>Markieren von Vorschlägen zur Identifizierung von Inhalten von Anwalts-Clientrechten</p></li></ul>
+<p>Weitere Informationen finden Sie unter <a href="/microsoft-365/compliance/overview-ediscovery-20">Übersicht über die Advanced eDiscovery-Lösung in Microsoft 365</a>.</p>
 <p>
-<p>Alternativ können Sie die Suchergebnisse in PST-Dateien exportieren und dann den Microsoft 365-Import Dienst verwenden, um das PST in ein Discovery-Postfach zu importieren. Eine Schritt-für-Schritt-Anleitung finden Sie unter <a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">Verwenden des Netzwerk Uploads zum Importieren von PST-Dateien in Office 365</a>.
+<p>Alternativ können Sie Suchergebnisse in PST-Dateien exportieren und dann den Microsoft 365-Importdienst verwenden, um die PSTs in ein Discoverypostfach zu importieren. Eine schrittweise Anleitung finden Sie unter Verwenden des Netzwerkuploads zum <a href="/microsoft-365/compliance/use-network-upload-to-import-pst-files">Importieren von PST-Dateien in Office 365</a>.
 </tr>
 <tr class=even>
-  <td>Kopieren von Nachrichten von einem Postfach in ein anderes Postfach</td>
-  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Zuweisen von Berechtigungen zu einem Postfach</a></td>
-  <td>Wenn Sie einer Person Zugriff auf die e-Mail-Adresse eines anderen Benutzers gewähren möchten (beispielsweise wenn ein Mitarbeiter Ihre Organisation verlässt und einer anderen Person Zugriff auf die e-Mail-Adresse des ehemaligen Mitarbeiters geben muss), wird empfohlen, dass Sie dieser Person Berechtigungen für den Zugriff auf das Postfach des ehemaligen Mitarbeiters zuweisen. Anstatt also Postfachelemente in ein anderes Benutzerpostfach oder ein freigegebenes Postfach zu kopieren, weisen Sie einfach einen Benutzerberechtigungen für den Zugriff auf das Quellpostfach zu.</td>
+  <td>Kopieren von Nachrichten aus einem Postfach in ein anderes Postfach</td>
+  <td><a href="/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Zuweisen von Berechtigungen zu einem Postfach</a></td>
+  <td>Um einer Person Zugriff auf die E-Mails eines anderen Benutzers zu gewähren (z. B. wenn ein Mitarbeiter Ihre Organisation verlässt und Sie einer anderen Person Zugriff auf die E-Mail des ehemaligen Mitarbeiters gewähren müssen), wird empfohlen, dieser Person Berechtigungen für den Zugriff auf das Postfach des ehemaligen Mitarbeiters zu erteilen. Anstatt also Postfachelemente in ein anderes Benutzerpostfach oder ein freigegebenes Postfach zu kopieren, weisen Sie einfach einem Benutzer Berechtigungen für den Zugriff auf das Quellpostfach zu.</td>
   
   </tr>
 <tr class="odd">
 <td>Wiederherstellen von Elementen aus dem Ordner "Wiederherstellbare Elemente"</td>
   <td><a href="https://docs.microsoft.com/powershell/module/exchange/Restore-RecoverableItems">Restore-RecoverableItems</td>
-  <td>Sie können endgültig gelöschte Elemente (auch als <i>vorläufig gelöschte</i> Elemente bezeichnet) in Postfächern wiederherstellen, solange der Aufbewahrungszeitraum für gelöschte Elemente für ein Element nicht abgelaufen ist. Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">Ordner "refundable Items" in Exchange Online</a>.</td>
+  <td>Sie können dauerhaft gelöschte Elemente (auch als <i>"soft-deleted</i> items" bezeichnet) in Postfächern wiederherstellen, solange der Aufbewahrungszeitraum für gelöschte Elemente für ein Element nicht abgelaufen ist. Weitere Informationen finden Sie unter <a href="/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">Ordner "Wiederherstellbare Elemente" in Exchange Online</a>.</td>
 </tr>
 </tbody>
 </table>
 
-### <a name="faqs-about-in-place-ediscovery-and-in-place-holds"></a>FAQs zu In-Place eDiscovery und In-Place hält
+### <a name="faqs-about-in-place-ediscovery-and-in-place-holds"></a>Häufig gestellte Fragen In-Place eDiscovery und In-Place Holds
 
-_ *Ich verwende die Funktion zum Kopieren von Suchergebnissen In-Place eDiscovery &, die in der Exchange-Verwaltungskonsole gespeichert ist, um Suchergebnisse in ein Ermittlungspostfach zur Überprüfung durch Anwälte zu kopieren. Welche Optionen habe ich jetzt?**
+**Ich verwende die Funktion zum Kopieren von Suchergebnissen von In-Place eDiscovery & In der EAC, um Suchergebnisse zur Überprüfung durch Anwälte in ein Discoverypostfach zu kopieren. Welche Optionen habe ich jetzt?**
 
-Es gibt zwei Möglichkeiten, diese Funktionalität heute zu replizieren. Die erste besteht in der Verwendung [von Überprüfungs Sätzen in Advanced eDiscovery v 2.0](https://docs.microsoft.com/microsoft-365/compliance/view-documents-in-review-set). Überprüfungs Sätze weisen viele der gleichen Funktionen auf, die Sie in einem herkömmlichen Überprüfungstool wie fast search of Documents, Tagging, e-Mail-Threading, in der Nähe von doppelten Gruppierungen, Themen Analysen und Vorhersage Codierung sehen. Wenn Sie weiterhin Discovery-Postfächer für die Überprüfung verwenden möchten, besteht die zweite Option darin, Suchergebnisse in PST-Dateien zu exportieren und dann die PST-Dateien mithilfe der [PST-Importfunktion](use-network-upload-to-import-pst-files.md) im Microsoft Compliance Center in ein Discovery-Postfach zu importieren.
+Es gibt zwei Möglichkeiten, diese Funktionalität heute zu replizieren. Der erste ist die Verwendung [von Überprüfungssätzen in Advanced eDiscovery v2.0](./view-documents-in-review-set.md). Überprüfungssätze verfügen über viele der gleichen Funktionen, die Sie in einem herkömmlichen Überprüfungstool sehen, z. B. schnelle Suche nach Dokumenten, Tagging, E-Mail-Threading, beinahe doppelte Gruppierung, Designsanalyse und Vorhersagecodierung. Wenn Sie weiterhin Discoverypostfächer zur Überprüfung verwenden möchten, besteht die zweite Option im Exportieren von Suchergebnissen in [](use-network-upload-to-import-pst-files.md) PST-Dateien und anschließendes Importieren der PST-Dateien in ein Discoverypostfach mithilfe des PST-Importfeatures im Microsoft Compliance Center.
 
-**Wie kann ich Steuern, welche inhaltsspeicherorte (wie Postfächer oder Websites), die ein eDiscovery-Manager verwenden können, mithilfe der neuen Tools suchen können?**
+**Wie kann ich steuern, welche Inhaltsspeicherorte (z. B. Postfächer oder Websites) ein eDiscovery-Manager mit den neuen Tools durchsuchen kann?**
 
-Das Microsoft 365 Compliance Center verwendet auch [Kompatibilitäts Grenzen](set-up-compliance-boundaries.md) , um zu steuern, welche inhaltsspeicherorte ein eDiscovery-Manager durchsuchen kann. Compliance-Grenzen sind in Regierungseinheiten nützlich, die innerhalb von Vermittlungs Grenzen oder multinationalen Unternehmen bleiben müssen, die für die Einhaltung geografischer Internats stellen erforderlich sind.
+Das Microsoft 365 Compliance [](set-up-compliance-boundaries.md) Center verwendet auch Compliancegrenzen, um zu steuern, welche Inhaltsstandorte ein eDiscovery-Manager durchsuchen kann. Compliancegrenzen sind nützlich für Behörden, die innerhalb von Agenturgrenzen bleiben müssen, oder in multinationalen Unternehmen, die zur Einhaltung geografischer Boarder erforderlich sind.
 
-**Wie kann ich meine aktuellen Suchvorgänge und Haltestatus in das Microsoft 365 Compliance Center verlagern?**
+**Wie kann ich meine aktuellen Such- und Halte halte in das Microsoft 365 Compliance Center verschieben?**
 
-Mithilfe von PowerShell können Sie In-Place eDiscovery-suchen und-Aufbewahrungen aus der Exchange-Verwaltungskonsole migrieren. Anweisungen finden Sie unter [Migrat searchs and Holds from the EAC to the Microsoft 365 Compliance Center](https://go.microsoft.com/fwlink/?linkid=2114224).
+Es ist möglich, In-Place eDiscovery-Suche und -Halte von der EAC mithilfe von PowerShell zu migrieren. Anweisungen finden Sie unter [Migrate searches and holds from the EAC to the Microsoft 365 Compliance Center](./migrate-legacy-ediscovery-searches-and-holds.md).
 
 ## <a name="-mailboxsearch-cmdlets"></a>\*-MailboxSearch-Cmdlets
 
-Gemäß dem ursprünglichen Hinweis, der am 1. Juli 2017 in der Exchange-Verwaltungskonsole angekündigt wurde, werden die In-Place eDiscovery & Hold-Funktionen und die entsprechenden **\* MailboxSearch-** Cmdlets zurückgezogen. Mit diesen Cmdlets können Benutzer Postfachinhalte für rechtliche, regulatorische und öffentliche Anforderungen durchsuchen, speichern und exportieren.
+Wie im ursprünglichen Hinweis vom 1. Juli 2017 im Exchange Admin Center angekündigt, werden die In-Place eDiscovery & Hold-Funktion und die entsprechenden **\* -MailboxSearch-Cmdlets** eingestellt. Diese Cmdlets bieten Benutzern die Möglichkeit, Postfachinhalte für rechtliche, behördliche und öffentliche Anforderungen zu durchsuchen, zu archivieren und zu exportieren.
 
-Da diese Funktionen nun im [<span class="underline">Microsoft 365 Compliance Center</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) und Office 365 Security & Compliance Center PowerShell mit verbesserter Leistung und Skalierbarkeit verfügbar sind, sollten Sie diese verbesserten Cmdlets verwenden. Zu diesen Cmdlets gehören [<span class="underline"> \* -ComplianceCase</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase), [<span class="underline"> \* -ComplianceSearch</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch), [<span class="underline"> \* -CaseHoldPolicy</span>](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy), [<span class="underline"> \* -CaseHoldRule</span>](https://docs.microsoft.com/powershell/module/exchange/get-caseholdrule)und [<span class="underline"> \* -ComplianceSearchAction</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction).
+Da diese Funktionen jetzt im [<span class="underline">Microsoft 365 Compliance Center</span>](./microsoft-365-compliance-center.md) und office 365 Security & Compliance Center PowerShell mit verbesserter Leistung und Skalierbarkeit verfügbar sind, sollten Sie diese verbesserten Cmdlets verwenden. Zu diesen Cmdlets gehören [<span class="underline"> \* -ComplianceCase</span>](/powershell/module/exchange/get-compliancecase), [<span class="underline"> \* -ComplianceSearch</span>](/powershell/module/exchange/get-compliancesearch), [<span class="underline"> \* -CaseHoldPolicy</span>](/powershell/module/exchange/get-caseholdpolicy), [<span class="underline"> \* -CaseHoldRule</span>](/powershell/module/exchange/get-caseholdrule)und [<span class="underline"> \* -ComplianceSearchAction</span>](/powershell/module/exchange/get-compliancesearchaction).
 
-### <a name="scope-of-affected-organizations"></a>Umfang der betroffenen Organisationen
+### <a name="scope-of-affected-organizations"></a>Umfang betroffener Organisationen
 
-- Office 365-und Microsoft 365-Unternehmensorganisationen
+- Office 365- und Microsoft 365 Enterprise-Organisationen
 
-- Office 365-und Microsoft 365-Bildungseinrichtungen
+- Office 365- und Microsoft 365 Education-Organisationen
 
-- Office 365-und Microsoft 365-Regierungsorganisationen; Dies umfasst gcc, gcc hoch und DoD.
+- Office 365- und Microsoft 365 Government-Organisationen; Dazu gehören GCC, GCC High und DoD
 
 - Office 365 Deutschland
 
 ### <a name="timeline"></a>Zeitachse
 
-- 1. Juli 2020: Sie können **New-MailboxSearch** nicht verwenden, um neue In-Place eDiscovery-suchen und-In-Place zu erstellen, aber Sie können Cmdlets zum Ausführen, bearbeiten und Löschen vorhandener Suchvorgänge und-Aufbewahrungen auf eigenes Risiko verwenden. Der Microsoft-Support bietet keine Unterstützung mehr für diese Art von Suche und Aufbewahrung.
+- 1. Juli 2020: Sie können **New-MailboxSearch** nicht verwenden, um neue In-Place eDiscovery-Suchen und In-Place-Haltefächer zu erstellen. Sie können jedoch weiterhin Cmdlets verwenden, um vorhandene Suchen und Haltefächer auf eigenes Risiko ausführen, bearbeiten und löschen zu können. Der Microsoft-Support bietet keine Unterstützung mehr für diese Such- und Haltetypen.
 
-- 1. Oktober 2020: wie bereits erwähnt, wird die In-Place eDiscovery-&, in der die Exchange-Verwaltungskonsole enthalten ist, in den schreibgeschützten Modus versetzt. Das bedeutet auch, dass Sie die Cmdlets **New-MailboxSearch**, **Start-MailboxSearch** oder **setMailboxSearch** nicht verwenden können. Sie können nur vorhandene suchen und Aufbewahrungen abrufen und entfernen.
+- 1. Oktober 2020: Wie bereits erwähnt, wird die In-Place eDiscovery & Holds-Funktionalität in der EAC in einen schreibgeschützten Modus versetzt. Das bedeutet auch, dass Sie die **Cmdlets New-MailboxSearch,** **Start-MailboxSearch** oder **Set-MailboxSearch nicht** verwenden können. Sie können nur vorhandene Such- und Haltekriterien erhalten und entfernen.
 
 ### <a name="alternative-tools"></a>Alternative Tools
 
-In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen der vorhandenen Funktionen verwenden können, die in den Ruhestand gehen.
+In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen der vorhandenen Funktionalität verwenden können, die eingestellt wird.
 
 <table>
 <thead>
@@ -202,74 +202,74 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 </thead>
 <tbody>
 <tr class="odd">
-<td>Suchen und exportieren</td>
+<td>Suchen und Exportieren</td>
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>Die ComplianceSearch-und ComplianceSearchAction-Cmdlets arbeiten zusammen, um Sie beim Durchsuchen und Exportieren von Inhalten zu unterstützen. Sie können eine neue Suche erstellen und die geschätzte Suche anzeigen, indem Sie die Cmdlets <strong>New-</strong>, <strong>Get-</strong>und <strong>Start-ComplianceSearch</strong> verwenden. Anschließend können Sie das Cmdlet <strong>New-ComplianceSearchAction</strong> verwenden, um die Suchergebnisse zu exportieren. Sie müssen weiterhin das zentrale eDiscovery-Tool im Microsoft 365 Compliance Center verwenden, um diese Suchergebnisse auf Ihren lokalen Computer herunterzuladen.</p>
+<td><p>Die Cmdlets ComplianceSearch und ComplianceSearchAction arbeiten zusammen, um Ihnen beim Suchen und Exportieren von Inhalten zu helfen. Sie können eine neue Suche erstellen und die Suchschätzung mithilfe der <strong>Cmdlets New-</strong>, <strong>Get-</strong>und <strong>Start-ComplianceSearch</strong> anzeigen. Anschließend können Sie das <strong>Cmdlet New-ComplianceSearchAction</strong> verwenden, um die Suchergebnisse zu exportieren. Sie müssen weiterhin das zentrale eDiscovery-Tool im Microsoft 365 Compliance Center verwenden, um diese Suchergebnisse auf Ihren lokalen Computer herunterzuladen.</p>
 <p>
-<p><strong>Hinweis:</strong> Wenn Sie diese Cmdlets zum Erstellen von Suchvorgängen verwenden, die nicht einem zentralen eDiscovery-Fall zugeordnet sind, befinden sich diese Suchvorgänge auf der Seite " <strong>Inhaltssuche</strong> " im Microsoft 365 Compliance Center.</p></td>
+<p><strong>Hinweis:</strong> Wenn Sie diese Cmdlets zum Erstellen von Suchen verwenden, die keinem zentralen eDiscovery-Fall <strong></strong> zugeordnet sind, befinden sich diese Suchen auf der Seite Inhaltssuche im Microsoft 365 Compliance Center.</p></td>
 </tr>
 <tr class="even">
-<td>Speichern von Inhalten in einem Postfach</td>
+<td>Halten von Inhalten in einem Postfach</td>
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy"><span class="underline">*-CaseHoldPolicy</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/get-caseholdrule"><span class="underline">*-CaseHoldRule</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>Haltestatus im Microsoft 365 Compliance Center müssen einem ComplianceCase zugeordnet sein. Erstellen Sie zuerst den Fall Compliance, und erstellen Sie dann eine CaseHoldPolicy und eine CaseHoldRule.</p>
-<p><strong>Hinweis:</strong> Durch das Erstellen einer CaseHoldPolicy ohne Erstellungs-CaseHoldRule wird der Haltestatus so lange funktionsfähig gerendert, bis das CaseHoldRule erstellt und dem CaseHoldPolicy zugeordnet ist. Weitere Informationen finden Sie in der Cmdlet-Dokumentation.</p></td>
+<td><p>Halte halte im Microsoft 365 Compliance Center müssen einem ComplianceCase zugeordnet sein. Erstellen Sie zuerst den Compliancefall, und erstellen Sie dann caseHoldPolicy und CaseHoldRule.</p>
+<p><strong>Hinweis:</strong> Durch das Erstellen eines CaseHoldPolicy-Falls ohne erstellen von CaseHoldRule ist der Haltegriff nicht mehr funktionsfähig, bis caseHoldRule erstellt und caseHoldPolicy zugeordnet ist. Weitere Informationen finden Sie in der Cmdletdokumentation.</p></td>
 </tr>
 <tr class="odd">
-<td>Kopieren von Suchergebnissen in ein Ermittlungspostfach</td>
+<td>Kopieren von Suchergebnissen in ein Discoverypostfach</td>
 <td>Keine</td>
-<td>Es gibt keinen direkten Ersatz für diese Funktionalität, da er keinen Zugriff auf alle Microsoft 365-Dienste bereitstellt. Unter den folgenden häufig gestellten Fragen finden Sie alternative Lösungen.</td>
+<td>Es gibt keinen direkten Ersatz für diese Funktionalität, da sie nicht zugriff auf alle Microsoft 365-Dienste bietet. Weitere Informationen zu alternativen Lösungen finden Sie in den folgenden häufig gestellten Fragen.</td>
 </tr>
   <tr class=even>
-  <td>Kopieren von Nachrichten von einem Postfach in ein anderes Postfach</td>
-  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Zuweisen von Berechtigungen zu einem Postfach</a></td>
-  <td>Wenn Sie einer Person Zugriff auf die e-Mail-Adresse eines anderen Benutzers gewähren möchten (beispielsweise wenn ein Mitarbeiter Ihre Organisation verlässt und einer anderen Person Zugriff auf die e-Mail-Adresse des ehemaligen Mitarbeiters geben muss), wird empfohlen, dass Sie dieser Person Berechtigungen für den Zugriff auf das Postfach des ehemaligen Mitarbeiters zuweisen. Anstatt also Postfachelemente in ein anderes Benutzerpostfach oder ein freigegebenes Postfach zu kopieren, weisen Sie einfach einen Benutzerberechtigungen für den Zugriff auf das Quellpostfach zu.</td>
+  <td>Kopieren von Nachrichten aus einem Postfach in ein anderes Postfach</td>
+  <td><a href="/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Zuweisen von Berechtigungen zu einem Postfach</a></td>
+  <td>Um einer Person Zugriff auf die E-Mails eines anderen Benutzers zu gewähren (z. B. wenn ein Mitarbeiter Ihre Organisation verlässt und Sie einer anderen Person Zugriff auf die E-Mail des ehemaligen Mitarbeiters gewähren müssen), wird empfohlen, dieser Person Berechtigungen für den Zugriff auf das Postfach des ehemaligen Mitarbeiters zu erteilen. Anstatt also Postfachelemente in ein anderes Benutzerpostfach oder ein freigegebenes Postfach zu kopieren, weisen Sie einfach einem Benutzer Berechtigungen für den Zugriff auf das Quellpostfach zu.</td>
   
   </tr>
 
 </tbody>
 </table>
 
-### <a name="faqs-about--mailboxsearch-cmdlets"></a>FAQs zu ***-MailboxSearch-** Cmdlets
+### <a name="faqs-about--mailboxsearch-cmdlets"></a>FAQs zu ***-MailboxSearch-Cmdlets**
 
-**Wir verwenden die Kopie-Suche zum Exportieren von e-Mail-Nachrichten oder Chatnachrichten für Zwecke anderer eDiscovery und rechtlicher Untersuchungen. Welche weiteren Optionen haben wir, nachdem diese Cmdlets ausgemustert wurden?**
+**Wir verwenden die Kopiersuche, um E-Mail-Nachrichten oder Sofortnachrichten für andere eDiscovery- und rechtliche Untersuchungen zu exportieren. Welche anderen Optionen haben wir, nachdem diese Cmdlets eingestellt wurden?**
 
-Die [<span class="underline">Microsoft Graph-APIs</span>](https://developer.microsoft.com/en-us/graph) bieten eine Reihe von Methoden zum Extrahieren von Daten zur Analyse und anderen Zwecken, die weitaus widerstandsfähiger und skalierbarer als die Verwendung der **\* -MailboxSearch-** Cmdlets sind.
+Die [<span class="underline">Microsoft Graph-APIs</span>](https://developer.microsoft.com/en-us/graph) bieten eine Reihe von Methoden zum Extrahieren von Daten für Analysen und andere Zwecke, die viel stabiler und skalierbarer sind als die Verwendung der **\* -MailboxSearch-Cmdlets.**
 
-**Wie kann ich meine suchen und Haltestatus an das Microsoft 365 Compliance Center migrieren?**
+**Wie kann ich meine Such- und Haltefunktion zum Microsoft 365 Compliance Center migrieren?**
 
-Es ist möglich, In-Place eDiscovery-Suchvorgänge und-Aufbewahrungen mithilfe eines PowerShell-Skripts aus dem Exchange Admin Center zu migrieren. Weitere Informationen finden Sie unter [Migrieren von Vorversionen für eDiscovery-suchen und-Aufbewahrungen zum Microsoft 365 Compliance Center](migrate-legacy-eDiscovery-searches-and-holds.md).
+Mithilfe eines PowerShell-Skripts In-Place eDiscovery-Suche und -Haltebereich aus dem Exchange Admin Center migriert werden. Weitere Informationen finden Sie unter [Migrate legacy eDiscovery searches and holds to the Microsoft 365 Compliance Center](migrate-legacy-eDiscovery-searches-and-holds.md).
 
-**Kann ich nach dem zurückziehen der Cmdlets Suchvorgänge dennoch entfernen oder Abrufen?**
+**Kann ich nach dem Ausmustern der Cmdlets weiterhin Suchen entfernen oder abrufen?**
 
-Ja, obwohl wir die Möglichkeit zum Erstellen und Ändern von Suchvorgängen entfernen, können Sie immer noch **Get-MailboxSearch** und **Remove-MailboxSearch** verwenden, bis es auf weiteres geht. Die Verwendung dieser Cmdlets erfolgt jedoch auf eigenes Risiko, nachdem die Renten Termine und der Microsoft-Support keine Unterstützung mehr leisten können.
+Ja, obwohl wir die Möglichkeit zum Erstellen und Ändern von Suchen entfernen, können Sie **get-MailboxSearch** und **Remove-MailboxSearch** bis auf weiteres verwenden. Die Verwendung dieser Cmdlets wird jedoch nach dem Fälligkeitsdatum auf eigenes Risiko gehen, und der Microsoft Support kann keine Unterstützung mehr leisten.
 
-## <a name="search-mailbox-cmdlet"></a>Search-Mailbox-Cmdlet
+## <a name="search-mailbox-cmdlet"></a>Search-Mailbox Cmdlet
 
-Das Cmdlet **Search-Mailbox** in Exchange Online PowerShell wird wie ursprünglich in einer Warnung in der Cmdlet-Ausgabe beginnend mit 2018 angekündigt zurückgezogen. Das Cmdlet **Search-Mailbox** wurde ursprünglich verwendet, um das Postfach eines Benutzers zu durchsuchen und schädlichen Inhalt zu löschen. Es wird empfohlen, dass Sie zunächst die Cmdlets **New-ComplianceSearch** und **New-ComplianceSearchAction** in Office 365 Security & Compliance Center PowerShell verwenden, um Inhalte zu suchen und zu löschen. Für eine integrierte Sicherheitserfahrung bieten die [<span class="underline">Microsoft 365-Sicherheitsfeatures</span>](https://docs.microsoft.com/microsoft-365/security/) zuverlässigen Schutz vor Bedrohungen für e-Mails und viele andere Microsoft-Dienste.
+Das **Cmdlet Search-Mailbox** in Exchange Online PowerShell wird wie ursprünglich in einer Warnung in der Ausgabe des Cmdlets ab 2018 angekündigt eingestellt. Das **Cmdlet Search-Mailbox** wurde ursprünglich verwendet, um das Postfach eines Benutzers zu durchsuchen und schädliche Inhalte zu löschen. Es wird empfohlen, die **Cmdlets New-ComplianceSearch** und **New-ComplianceSearchAction** in Office 365 Security & Compliance Center PowerShell zum Suchen und Löschen von Inhalten zu verwenden. Für eine integrierte Sicherheitserfahrung bieten die [<span class="underline">Microsoft 365-Sicherheitsfeatures</span>](../security/index.yml) einen robusten Bedrohungsschutz für E-Mails und viele andere Microsoft-Dienste.
 
-### <a name="scope-of-affected-organizations"></a>Umfang der betroffenen Organisationen
+### <a name="scope-of-affected-organizations"></a>Umfang betroffener Organisationen
 
-- Office 365-und Microsoft 365-Unternehmensorganisationen
+- Office 365- und Microsoft 365 Enterprise-Organisationen
 
-- Office 365-und Microsoft 365-Bildungseinrichtungen
+- Office 365- und Microsoft 365 Education-Organisationen
 
-- Office 365-und Microsoft 365-Regierungsorganisationen; Dies umfasst gcc, gcc hoch und DoD.
+- Office 365- und Microsoft 365 Government-Organisationen; Dazu gehören GCC, GCC High und DoD
 
 - Office 365 Deutschland
 
 ### <a name="timeline"></a>Zeitachse
 
--  1. Juli 2020: das Cmdlet **Search-Mailbox** ist nicht mehr verfügbar, und der Microsoft-Support bietet keine Unterstützung mehr.
+-  1. Juli 2020: Das **Cmdlet Search-Mailbox** ist nicht mehr verfügbar, und der Microsoft Support bietet keine Unterstützung mehr.
 
 ### <a name="alternative-tools"></a>Alternative Tools
 
-In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen der vorhandenen Funktionen verwenden können, die in den Ruhestand gehen.
+In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen der vorhandenen Funktionalität verwenden können, die eingestellt wird.
 
 <table>
 <thead>
@@ -285,73 +285,73 @@ In der folgenden Tabelle werden andere Tools beschrieben, die Sie zum Ersetzen d
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></a></p></td>
-<td><p>Die ComplianceSearch-und ComplianceSearchAction-Cmdlets arbeiten zusammen, um Sie beim Durchsuchen und Exportieren von Inhalten zu unterstützen. Sie können eine neue Suche erstellen und die geschätzte Suche anzeigen, indem Sie die Cmdlets <strong>New-</strong>, <strong>Get-</strong>und <strong>Start-ComplianceSearch</strong> verwenden. Anschließend können Sie den Befehl <strong>New-ComplianceSearchAction-Export</strong> verwenden, um die Suchergebnisse zu exportieren. Sie müssen weiterhin das zentrale eDiscovery-Tool im Microsoft 365 Compliance Center verwenden, um diese Suchergebnisse auf Ihren lokalen Computer herunterzuladen.</p></p>
+<td><p>Die Cmdlets ComplianceSearch und ComplianceSearchAction arbeiten zusammen, um Ihnen beim Suchen und Exportieren von Inhalten zu helfen. Sie können eine neue Suche erstellen und die Suchschätzung mithilfe der <strong>Cmdlets New-</strong>, <strong>Get-</strong>und <strong>Start-ComplianceSearch</strong> anzeigen. Anschließend können Sie den <strong>Befehl New-ComplianceSearchAction -Export verwenden,</strong> um die Suchergebnisse zu exportieren. Sie müssen weiterhin das zentrale eDiscovery-Tool im Microsoft 365 Compliance Center verwenden, um diese Suchergebnisse auf Ihren lokalen Computer herunterzuladen.</p></p>
 </td>
 </tr>
 <tr class="even">
-<td>Löschen von Massen-e-Mails aus einem Postfach</td>
+<td>Löschen von Massen-E-Mails aus einem Postfach</td>
 <td><p><a href="https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Einrichten einer Richtlinie zum Archivieren und Löschen für Postfächer</span></a></p>
 <p></p></td>
-<td><p>Administratoren können eine Archivierungs-und Löschrichtlinie erstellen, die Elemente automatisch in das Archivpostfach eines Benutzers verschiebt und Elemente automatisch aus dem Postfach löscht.</p>
+<td><p>Administratoren können eine Archivierungs- und Löschrichtlinie erstellen, die Elemente automatisch in das Archivpostfach eines Benutzers verschiebt und Elemente automatisch aus dem Postfach löscht.</p>
 </td>
 </tr>
 <tr class="even">
-<td>Kopieren von Suchergebnissen in ein Ermittlungspostfach</td>
+<td>Kopieren von Suchergebnissen in ein Discoverypostfach</td>
 <td> </td>
-<td>Es gibt keinen direkten Ersatz für diese Funktionalität, da er keinen Zugriff auf alle Microsoft 365-Dienste bereitstellt. In den FAQs im Abschnitt <strong>*-MailboxSearch-Cmdlets</strong> finden Sie alternative Lösungen. </td>
+<td>Es gibt keinen direkten Ersatz für diese Funktionalität, da sie nicht zugriff auf alle Microsoft 365-Dienste bietet. Alternative Lösungen finden Sie in den FAQs im Abschnitt <strong>*-MailboxSearch-Cmdlets.</strong> </td>
 </tr>
 <tr class=odd>
-  <td>Kopieren von Nachrichten von einem Postfach in ein anderes Postfach</td>
-  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Zuweisen von Berechtigungen zu einem Postfach</a></td>
-  <td>Wenn Sie einer Person Zugriff auf die e-Mail-Adresse eines anderen Benutzers gewähren möchten (beispielsweise wenn ein Mitarbeiter Ihre Organisation verlässt und einer anderen Person Zugriff auf die e-Mail-Adresse des ehemaligen Mitarbeiters geben muss), wird empfohlen, dass Sie dieser Person Berechtigungen für den Zugriff auf das Postfach des ehemaligen Mitarbeiters zuweisen. Anstatt also Postfachelemente in ein anderes Benutzerpostfach oder ein freigegebenes Postfach zu kopieren, weisen Sie einfach einen Benutzerberechtigungen für den Zugriff auf das Quellpostfach zu.</td>
+  <td>Kopieren von Nachrichten aus einem Postfach in ein anderes Postfach</td>
+  <td><a href="/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Zuweisen von Berechtigungen zu einem Postfach</a></td>
+  <td>Um einer Person Zugriff auf die E-Mails eines anderen Benutzers zu gewähren (z. B. wenn ein Mitarbeiter Ihre Organisation verlässt und Sie einer anderen Person Zugriff auf die E-Mail des ehemaligen Mitarbeiters gewähren müssen), wird empfohlen, dieser Person Berechtigungen für den Zugriff auf das Postfach des ehemaligen Mitarbeiters zu erteilen. Anstatt also Postfachelemente in ein anderes Benutzerpostfach oder ein freigegebenes Postfach zu kopieren, weisen Sie einfach einem Benutzer Berechtigungen für den Zugriff auf das Quellpostfach zu.</td>
 </tr>
 <tr class=even>
-  <td>Nachrichten aus einem Postfach löschen</td>
+  <td>Löschen von Nachrichten aus einem Postfach</td>
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></p></td>
-<td><p>Die ComplianceSearch-und ComplianceSearchAction-Cmdlets arbeiten zusammen, um Sie beim Durchsuchen und Löschen von Inhalten zu unterstützen. Sie können eine Suche mit <strong>New-ComplianceSearch</strong> -und <strong>New-ComplianceSearch</strong> -Cmdlets erstellen und ausführen, und dann können Sie den Inhalt mithilfe des Befehls <strong>New-ComplianceSearchAction-Purge-purgetype</strong> löschen. Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">Suchen nach und Löschen von Nachrichten</span></a>.</p>
+<td><p>Die Cmdlets ComplianceSearch und ComplianceSearchAction arbeiten zusammen, um Ihnen beim Suchen und Löschen von Inhalten zu helfen. Sie können eine Suche mit <strong>Cmdlets New-ComplianceSearch</strong> und <strong>New-ComplianceSearch</strong> erstellen und ausführen und dann den Inhalt mithilfe des <strong>Befehls New-ComplianceSearchAction -Purge -PurgeType</strong> löschen. Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">Suchen nach und Löschen von Nachrichten</span></a>.</p>
 </td>
 </tr>
 <tr class="odd"> 
-<td>Nachrichten aus einem Postfach löschen</td>
-<td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Zuweisen von Berechtigungen zu einem Postfach</a></td>
-<td>Wenn Sie Nachrichten aus einem Postfach löschen möchten, weisen Sie Administratorberechtigungen für den Zugriff auf das Postfach des Mitarbeiters zu. Nachrichten können nach Bedarf gelöscht und wieder verwendet werden, wobei die integrierten Such-und Anzeigefunktionen in Outlook genutzt werden.</td>
+<td>Löschen von Nachrichten aus einem Postfach</td>
+<td><a href="/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Zuweisen von Berechtigungen zu einem Postfach</a></td>
+<td>Um Nachrichten aus einem Postfach zu löschen, weisen Sie einem Administrator Berechtigungen für den Zugriff auf das Postfach des Mitarbeiters zu. Nachrichten können bei Bedarf gelöscht und wiederverwendet werden, indem sie die integrierten Such- und Anzeigefunktionen in Outlook nutzen.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="exchange-web-services-api-operations"></a>Exchange Webdienste-API-Vorgänge
+## <a name="exchange-web-services-api-operations"></a>Exchange Web Services-API-Vorgänge
 
-Diese Vorgänge in der Exchange Webdienste-API werden von der In-Place eDiscovery & Holds-Funktion in der Exchange-Verwaltungskonsole und den entsprechenden **\* -MailboxSearch-** Cmdlets in Exchange Online PowerShell verwendet. Sie werden auch im Rahmen des Ausscheidens der anderen vorversions-eDiscovery-Tools in den Ruhestand gehen.
+Diese Vorgänge in der Exchange Web Services-API werden von der In-Place eDiscovery & Holds-Funktion im Exchange Admin Center und den entsprechenden **\* Cmdlets -MailboxSearch** in Exchange Online PowerShell verwendet. Sie werden auch im Rahmen des Zurücktretens der anderen älteren eDiscovery-Tools eingestellt.
 
-### <a name="scope-of-affected-organizations"></a>Umfang der betroffenen Organisationen
+### <a name="scope-of-affected-organizations"></a>Umfang betroffener Organisationen
 
-- Office 365-und Microsoft 365-Unternehmensorganisationen
+- Office 365- und Microsoft 365 Enterprise-Organisationen
 
-- Office 365-und Microsoft 365-Bildungseinrichtungen
+- Office 365- und Microsoft 365 Education-Organisationen
 
-- Office 365-und Microsoft 365-Regierungsorganisationen; Dies umfasst gcc, gcc hoch und DoD.
+- Office 365- und Microsoft 365 Government-Organisationen; Dazu gehören GCC, GCC High und DoD
 
 - Office 365 Deutschland
 
 ### <a name="timeline"></a>Zeitachse
 
-- 1. Juli 2020: die GetSearchableMailboxes-, SearchMailboxes-, SetHoldOnMailboxes-und GetHoldOnMailboxes-Vorgänge sind nicht mehr verfügbar, und der Microsoft-Support bietet keine Unterstützung mehr.
+- 1. Juli 2020: Die Vorgänge GetSearchableMailboxes, SearchMailboxes, SetHoldOnMailboxes und GetHoldOnMailboxes sind nicht mehr verfügbar, und der Microsoft Support bietet keine Unterstützung mehr.
 
-## <a name="advanced-ediscovery-v10"></a>Erweiterte eDiscovery v 1.0
+## <a name="advanced-ediscovery-v10"></a>Advanced eDiscovery v1.0
 
-Advanced eDiscovery v 1.0, bei dem es sich um die Version von Advanced eDiscovery handelt, die in einem zentralen eDiscovery-Fall verfügbar ist, indem **Sie auf zu Advanced eDiscovery wechseln**, wird zurückgezogen. Die Funktionalität wurde durch die neue [Erweiterte eDiscovery-Lösung](https://aka.ms/edisco) im Microsoft 365 Compliance Center ersetzt.
+Advanced eDiscovery v1.0, die Version von Advanced eDiscovery, die in einem zentralen eDiscovery-Fall verfügbar ist, indem Sie auf **Switch to Advanced eDiscovery** klicken, wird eingestellt. Seine Funktionalität wurde durch die neue [Advanced eDiscovery-Lösung](./ediscovery.md) im Microsoft 365 Compliance Center ersetzt.
 
-So ermitteln Sie, ob Ihre Organisation Advanced eDiscovery v 1.0 verwendet:
+So ermitteln Sie, ob Ihre Organisation Advanced eDiscovery v1.0 verwendet:
 
 1. Wechseln Sie zum [Office 365 Security & Compliance Center](https://protection.office.com).
 
-2. Klicken Sie im linken Navigationsbereich des Security & Compliance Centers auf **eDiscovery > eDiscovery**, und öffnen Sie einen zentralen eDiscovery-Fall.
+2. Klicken Sie im linken Navigationsbereich des Security & Compliance Center auf **eDiscovery > eDiscovery,** und öffnen Sie einen Core eDiscovery-Fall.
 
-3. Wenn die Schaltfläche **auf Erweiterte eDiscovery wechseln** angezeigt wird, wird Sie auf die 1,0-Version von Advanced eDiscovery zurückgezogen, die in den Ruhestand geht. Die Möglichkeit zum Erstellen und Verwalten von Fällen in der zentralen eDiscovery ist nicht betroffen. Nur die Möglichkeit zum Hinzufügen und Analysieren von Falldaten in Advanced eDiscovery v 1.0 (durch Klicken **auf Wechseln zu Advanced eDiscovery**) wird zurückgezogen.
+3. Wenn die Schaltfläche **Switch to Advanced eDiscovery** angezeigt wird, wechseln Sie durch Klicken auf die Schaltfläche zur 1.0-Version von Advanced eDiscovery, die eingestellt wird. Die Möglichkeit, Fälle in Core eDiscovery zu erstellen und zu verwalten, wird nicht beeinträchtigt. Es wird nur die Möglichkeit zum Hinzufügen und Analysieren von Falldaten in Advanced eDiscovery v1.0 (durch Klicken auf **Switch to Advanced eDiscovery**) eingestellt.
 
-Die neue erweiterte eDiscovery-Lösung in Microsoft 365 (auch bekannt als *Advanced eDiscovery v 2.0* genannt) bietet alle Funktionen der ursprünglichen Lösung, enthält jetzt jedoch einen Verwalter basierten Ansatz zum Identifizieren von Inhalten in anderen Microsoft 365-Diensten, zum Sammeln dieser Inhalte und zum Hinzufügen eines Überprüfungs Satzes, in dem Bearbeiter schnelle Suchabfragen, Tagging und Analysefunktionen nutzen können, um die relevanten Dokumente zu ermitteln. Advanced eDiscovery enthält jetzt eine verbesserte Verarbeitung und Native Viewer für Microsoft-und nicht-Microsoft-Dateitypen, eine vollständige Liste der Dateitypen ist [hier](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20) und unterstützte Metadatenfelder befinden sich [hier](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). Darüber hinaus bietet die neue erweiterte eDiscovery-Lösung eine leistungsstarke Depot Verwaltungsfunktion, mit der Sie in einem erweiterten eDiscovery-Fall auf Inhalte in verschiedenen Diensten eintragen, Benutzer über die Aufbewahrungspflicht Benachrichtigen und Depotbank-Antworten nachverfolgen können.
+Die neue Advanced eDiscovery-Lösung in Microsoft 365 (auch bekannt als *Advanced eDiscovery v2.0*) bietet alle Funktionen der ursprünglichen Lösung, umfasst nun jedoch einen custodian-basierten Ansatz zum Identifizieren von Inhalten in anderen Microsoft 365-Diensten, zum Sammeln dieser Inhalte und zum Hinzufügen zu einem Überprüfungssatz, in dem Prüfer schnelle Suchabfragen, Markierungen und Analysefeatures nutzen können, um relevante Dokumente zu entfernen. Advanced eDiscovery umfasst nun eine verbesserte Verarbeitung und systemeigene Viewer für Microsoft- und [](./supported-filetypes-ediscovery20.md) Nicht-Microsoft-Dateitypen, eine vollständige Liste der Dateitypen ist hier und unterstützte Metadatenfelder sind [hier .](./document-metadata-fields-in-advanced-ediscovery.md) Darüber hinaus bietet die neue Advanced eDiscovery-Lösung ein leistungsfähiges Verwaltungsfeature für Verwahrer, mit dem Sie Haltefeatures auf Inhalte in verschiedenen Diensten anwenden, Benutzer über die Haltedienste benachrichtigen und Verwahrerantworten nachverfolgen können, und dies alles in einem Advanced eDiscovery-Fall.
 
 So greifen Sie auf Advanced eDiscovery v2.0 zu
 
@@ -359,26 +359,26 @@ So greifen Sie auf Advanced eDiscovery v2.0 zu
 
 2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Centers auf **Ale anzeigen**, und klicken Sie dann auf **eDiscovery > Advanced**.
 
-Zu diesem Zeitpunkt wird empfohlen, dass Sie mit dem Übergang Ihres eDiscovery-Workflows zur neuen erweiterten eDiscovery-Funktionalität beginnen. Falls erforderlich, können Sie Ihre erweiterten eDiscovery 1,0-Fälle archivieren, indem Sie den Inhalt exportieren und ihn offline speichern. Obwohl Sie weiterhin in den vorhandenen Fällen bis zum 31. Dezember 2020 auf Advanced eDiscovery v 1.0 zugreifen können, bietet der Microsoft-Support nach dem 1. Oktober 2020 keine Unterstützung. Weitere Informationen finden Sie in der folgenden Zeitachse.
+Zu diesem Zeitpunkt wird empfohlen, den eDiscovery-Workflow auf die neue Erweiterte eDiscovery-Funktionalität um zu ändern. Bei Bedarf können Sie Ihre Advanced eDiscovery 1.0-Fälle archivieren, indem Sie den Inhalt exportieren und offline speichern. Obwohl Sie in vorhandenen Fällen noch bis zum 31. Dezember 2020 auf Advanced eDiscovery v1.0 zugreifen können, bietet der Microsoft Support nach dem 1. Oktober 2020 keinen Support mehr. Weitere Informationen finden Sie auf der folgenden Zeitachse.
 
-### <a name="scope-of-affected-organizations"></a>Umfang der betroffenen Organisationen
+### <a name="scope-of-affected-organizations"></a>Umfang betroffener Organisationen
 
-- Office 365-und Microsoft 365-Unternehmensorganisationen
+- Office 365- und Microsoft 365 Enterprise-Organisationen
 
-- Office 365-und Microsoft 365-Bildungseinrichtungen
+- Office 365- und Microsoft 365 Education-Organisationen
 
-- Office 365-und Microsoft 365-Regierungsorganisationen; Dies umfasst gcc, gcc hoch und DoD.
+- Office 365- und Microsoft 365 Government-Organisationen; Dazu gehören GCC, GCC High und DoD
 
 - Office 365 Deutschland
 
 ### <a name="timeline"></a>Zeitachse
 
-- 1. Juli 2020: Es ist nicht möglich, neue erweiterte eDiscovery v 1.0-Fälle zu erstellen.
+- 1. Juli 2020: Sie können keine neuen Erweiterten eDiscovery v1.0-Fälle erstellen.
 
-- 1. Oktober 2020: Sie können keine neuen Daten hinzufügen (Suchergebnisse für erweiterte eDiscovery) auf alle Fälle vorbereiten. Sie können die Datenverarbeitung in vorhandenen Fällen auf eigenes Risiko fortsetzen. Der Microsoft-Support kann keine Unterstützung mehr leisten. 
+- 1. Oktober 2020: Sie können in keinem Fall neue Daten hinzufügen (Suchergebnisse für Advanced eDiscovery vorbereiten). Sie können weiterhin auf eigenes Risiko mit Daten in vorhandenen Fällen arbeiten. Der Microsoft Support bietet keine Unterstützung mehr. 
 
-- 31. Dezember 2020: Sie können nicht auf Erweiterte eDiscovery v 1.0-Fälle zugreifen.
+- 31. Dezember 2020: Sie können nicht auf Advanced eDiscovery v1.0-Fälle zugreifen.
 
 ### <a name="alternative-tools"></a>Alternative Tools
 
-Die [Erweiterte eDiscovery-Lösung](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20) im Microsoft 365 Compliance Center.
+Die [Advanced eDiscovery-Lösung](./overview-ediscovery-20.md) im Microsoft 365 Compliance Center.

@@ -18,50 +18,50 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
-description: In diesem Artikel erfahren Sie, wie Sie Microsoft 365-Benutzer,-Lizenzen und 365-apps mit PowerShell verwalten.
-ms.openlocfilehash: b1e8353eac1fb2917330ef5b5c2c7752fe5b1824
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+description: Erfahren Sie, wie Sie Microsoft 365-Benutzer, Lizenzen und 365-Apps mit PowerShell verwalten.
+ms.openlocfilehash: dee8fbce03e38a954ddea5a8ec86248f9209d96c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655851"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905104"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>Verwalten von Microsoft 365 mit PowerShell
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-PowerShell für Microsoft 365 ist ein leistungsfähiges Verwaltungstool, das das Microsoft 365 Admin Center ergänzt. Sie können beispielsweise PowerShell-Automatisierung verwenden, um mehrere Benutzerkonten und Lizenzen einfach zu verwalten und Berichte zu erstellen.
+PowerShell für Microsoft 365 ist ein leistungsfähiges Verwaltungstool, das das Microsoft 365 Admin Center ergänzt. Beispielsweise können Sie die PowerShell-Automatisierung verwenden, um problemlos mehrere Benutzerkonten und Lizenzen zu verwalten und Berichte zu erstellen.
 
-Wählen Sie in den folgenden Themen aus, um zu erfahren, wie Sie mit PowerShell Microsoft 365 verwalten:
+Wählen Sie aus den folgenden Themen aus, um zu erfahren, wie Sie PowerShell zum Verwalten von Microsoft 365 verwenden:
   
 - [**Erste Schritte**](getting-started-with-microsoft-365-powershell.md)
 
-    Beginnen Sie hier, wenn Sie mit PowerShell für Microsoft 365 nicht vertraut sind und Sie die Microsoft 365-Module installieren und eine Verbindung mit Ihrem Abonnement herstellen möchten.
+    Beginnen Sie hier, wenn Sie mit PowerShell für Microsoft 365 nicht vertraut sind und die Microsoft 365-Module installieren und eine Verbindung mit Ihrem Abonnement herstellen möchten.
 
 - [**Benutzerkonten, Lizenzen und Gruppen**](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
 
-    Beginnen Sie hier, wenn Sie mehr über die Verwendung von Automatisierungs Befehlen zum Verwalten von Benutzerkonten, Lizenzen und Gruppen erfahren möchten.
+    Beginnen Sie hier, wenn Sie mehr über die Verwendung von Automatisierungsbefehlen zum Verwalten von Benutzerkonten, Lizenzen und Gruppen erfahren möchten.
 
 - [**SharePoint**](manage-sharepoint-online-with-microsoft-365-powershell.md)
 
-    Beginnen Sie hier, wenn Sie Automatisierungs Befehle zum Verwalten von SharePoint verwenden möchten.
+    Beginnen Sie hier, wenn Sie Automatisierungsbefehle zum Verwalten von SharePoint verwenden möchten.
 
-- [**Exchange Online**](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
+- [**Exchange Online**](/powershell/exchange/exchange-online-powershell)
 
     Beginnen Sie hier, wenn Sie Exchange Online verwalten möchten.
 
 - [**E-Mail-Migration**](use-powershell-for-email-migration-to-microsoft-365.md)
 
-    Beginnen Sie hier, wenn Sie Ihre e-Mails von bereits vorhandenen Systemen migrieren möchten.
+    Beginnen Sie hier, wenn Sie Ihre E-Mails von bereits vorhandenen Systemen migrieren möchten.
 
-- [**Security & Compliance Center**](https://docs.microsoft.com/powershell/exchange/scc-powershell)
+- [**Security & Compliance Center**](/powershell/exchange/scc-powershell)
 
-    Beginnen Sie hier, wenn Sie Sicherheits & Compliance Center-Features verwalten möchten.
+    Beginnen Sie hier, wenn Sie die Security & Compliance Center-Features verwalten möchten.
 
-- [**Partner für Delegierte Zugriffsberechtigungen (DAP)**](manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
+- [**Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permissions, DAP)**](manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
 
-    Beginnen Sie hier, wenn Sie Partner von Syndication und Cloud Solution Provider (CSP) zum Verwalten Ihrer Microsoft 365-Kundenmandanten verwenden möchten.
+    Beginnen Sie hier, wenn Sie Partner von Syndication und Cloud Solution Provider (CSP) verwenden möchten, um Ihre Microsoft 365-Kunden-Mandanten zu verwalten.
 
-- [**Skype for Business Online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
+- [**Skype for Business Online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
 
     Beginnen Sie hier, um Skype for Business Online zu verwalten.

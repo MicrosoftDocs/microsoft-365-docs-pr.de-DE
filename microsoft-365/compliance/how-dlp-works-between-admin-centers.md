@@ -1,5 +1,5 @@
 ---
-title: Funktionsweise von DLP mit Sicherheits & Compliance Center & Exchange Admin Center
+title: Funktionsweise von DLP mit Security & Compliance Center & Exchange Admin Center
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,47 +16,45 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
-description: Erfahren Sie, wie DLP im Security & Compliance Center mit DLP-und Nachrichtenfluss Regeln (Transportregeln) in der Exchange-Verwaltungskonsole arbeitet.
+description: Erfahren Sie, wie DLP im Security & Compliance Center mit DLP und Nachrichtenflussregeln (Transportregeln) im Exchange Admin Center funktioniert.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05e3c6342ab6d57c1f22de96e64a01df5fd15131
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: cd8a3eb0e7bb859ab9e10551fadd22cc7dcb2a39
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036196"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905937"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>Funktionsweise von DLP zwischen dem Security & Compliance Center und Exchange Admin Center
 
-In Office 365 können Sie eine DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) in zwei verschiedenen Verwaltungszentren erstellen:
+In Office 365 können Sie eine Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) in zwei verschiedenen Admin Centern erstellen:
   
-- Im **Security & Compliance Center**können Sie eine einzelne DLP-Richtlinie erstellen, die zum Schutz von Inhalten in SharePoint, OneDrive, Exchange und jetzt Microsoft Teams beiträgt. Wenn möglich, wird empfohlen, hier eine DLP-Richtlinie zu erstellen. Weitere Informationen finden Sie unter [DLP im Security & Compliance Center](data-loss-prevention-policies.md).
+- Im **Security & Compliance Center** können Sie eine einzelne & erstellen, um Inhalte in SharePoint, OneDrive, Exchange und jetzt Microsoft Teams zu schützen. Wenn möglich, wird empfohlen, hier eine DLP-Richtlinie zu erstellen. Weitere Informationen finden Sie unter [DLP im Security & Compliance Center](data-loss-prevention-policies.md).
     
-- Im **Exchange Admin Center**können Sie eine DLP-Richtlinie erstellen, die den Schutz von Inhalten in Exchange unterstützt. Diese Richtlinie kann Exchange-Nachrichtenfluss Regeln verwenden (auch als Transportregeln bezeichnet), sodass mehr Optionen speziell für die e-Mail-Verarbeitung zur Verfügung stehen. Weitere Informationen finden Sie unter [DLP im Exchange Admin Center](https://go.microsoft.com/fwlink/?linkid=852311).
+- Im **Exchange Admin Center** können Sie eine DLP-Richtlinie erstellen, um Inhalte nur in Exchange zu schützen. Diese Richtlinie kann Exchange-Nachrichtenflussregeln (auch als Transportregeln bezeichnet) verwenden, sodass sie mehr Optionen für die Verarbeitung von E-Mails bietet. Weitere Informationen finden Sie unter [DLP im Exchange Admin Center](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention).
     
-In diesen Verwaltungszentren erstellte DLP-Richtlinien arbeiten nebeneinander – in diesem Thema wird erläutert, wie.
+In diesen Admin Centern erstellte DLP-Richtlinien funktionieren nebeneinander – in diesem Thema wird die Funktionsweise erläutert.
   
-![DLP-Seiten im Security and Compliance Center und im Exchange Admin Center](../media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
+![DLP-Seiten im Security and Compliance Center und Exchange Admin Center](../media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
   
-## <a name="how-dlp-in-the-security--compliance-center-works-with-dlp-and-mail-flow-rules-in-the-exchange-admin-center"></a>Funktionsweise von DLP im Security & Compliance Center mit DLP-und Nachrichtenfluss Regeln im Exchange Admin Center
+## <a name="how-dlp-in-the-security--compliance-center-works-with-dlp-and-mail-flow-rules-in-the-exchange-admin-center"></a>Funktionsweise von DLP im Security & Compliance Center mit DLP- und Nachrichtenflussregeln im Exchange Admin Center
 
-Nachdem Sie eine DLP-Richtlinie im Security & Compliance Center erstellt haben, wird die Richtlinie für alle in der Richtlinie enthaltenen Speicherorte bereitgestellt. Wenn die Richtlinie Exchange Online enthält, wird die Richtlinie dort synchronisiert und genauso erzwungen wie eine in der Exchange-Verwaltungskonsole erstellte DLP-Richtlinie. 
+Nachdem Sie eine DLP-Richtlinie im Security & Compliance Center erstellt haben, wird die Richtlinie an allen In der Richtlinie enthaltenen Speicherorten bereitgestellt. Wenn die Richtlinie Exchange Online enthält, wird die Richtlinie dort synchronisiert und auf die gleiche Weise erzwungen wie eine im Exchange Admin Center erstellte DLP-Richtlinie. 
   
-Wenn Sie DLP-Richtlinien im Exchange Admin Center erstellt haben, arbeiten diese Richtlinien weiterhin nebeneinander mit allen Richtlinien für e-Mails, die Sie im Security & Compliance Center erstellt haben. Beachten Sie jedoch, dass Regeln, die im Exchange Admin Center erstellt wurden, Vorrang haben. Alle Exchange-Nachrichtenfluss Regeln werden zuerst verarbeitet, und dann werden die DLP-Regeln aus dem Security & Compliance Center verarbeitet.
+Wenn Sie im Exchange Admin Center DLP-Richtlinien erstellt haben, funktionieren diese Richtlinien weiterhin nebeneinander mit allen Richtlinien für E-Mails, die Sie im Security & Compliance Center erstellen. Beachten Sie jedoch, dass im Exchange Admin Center erstellte Regeln Vorrang haben. Alle Exchange-Nachrichtenflussregeln werden zuerst verarbeitet, und dann werden die DLP-Regeln aus dem Security & Compliance Center verarbeitet.
   
-Dies bedeutet, dass:
+Dies bedeutet:
   
-- Nachrichten, die durch Exchange-Nachrichtenfluss Regeln blockiert werden, werden nicht durch DLP-Regeln überprüft, die im Security & Compliance Center erstellt wurden.
+- Nachrichten, die von Exchange-Nachrichtenflussregeln blockiert werden, werden nicht von im Security & Compliance Center erstellten DLP-Regeln überprüft.
     
-- Wenn eine Nachricht in einer Exchange-Nachrichtenfluss Regel so geändert wird, dass Sie einer DLP-Richtlinie im Security & Compliance Center wie dem Hinzufügen externer Benutzer entspricht, werden die DLP-Regeln dies erkennen und die Richtlinie nach Bedarf erzwingen.
+- Wenn eine Exchange-Nachrichtenflussregel eine Nachricht so ändert, dass sie einer DLP-Richtlinie im Security & Compliance Center - z. B. dem Hinzufügen externer Benutzer - zu entsprechen hat, erkennen die DLP-Regeln dies und erzwingen die Richtlinie bei Bedarf.
     
-Beachten Sie auch, dass Exchange-Nachrichtenfluss Regeln, die die Aktion "Verarbeitung beenden" verwenden, sich nicht auf die Verarbeitung von DLP-Regeln im Security & Compliance Center auswirken – Sie werden weiterhin verarbeitet.
+Beachten Sie außerdem, dass sich Exchange-Nachrichtenflussregeln, die die Aktion "Verarbeitung beenden" verwenden, nicht auf die Verarbeitung von DLP-Regeln im Security & Compliance Center auswirken – sie werden weiterhin verarbeitet.
   
-## <a name="policy-tips-in-the-security--compliance-center-vs-the-exchange-admin-center"></a>Richtlinien Tipps im Security & Compliance Center im Vergleich zum Exchange Admin Center
+## <a name="policy-tips-in-the-security--compliance-center-vs-the-exchange-admin-center"></a>Richtlinientipps im Security & Compliance Center im Vergleich zum Exchange Admin Center
 
-Richtlinien Tipps können entweder mit DLP-Richtlinien und Nachrichtenfluss Regeln funktionieren, die im Exchange Admin Center erstellt wurden, oder mit DLP-Richtlinien, die im Security & Compliance Center erstellt wurden, jedoch nicht in beiden. Dies liegt daran, dass diese Richtlinien an unterschiedlichen Speicherorten gespeichert werden, aber Richtlinien Tipps nur von einem einzelnen Speicherort aus gezeichnet werden können.
+Richtlinientipps können entweder mit im Exchange Admin Center erstellten DLP-Richtlinien und Nachrichtenflussregeln oder mit im Security & Compliance Center erstellten DLP-Richtlinien funktionieren, jedoch nicht mit beiden. Dies liegt daran, dass diese Richtlinien an unterschiedlichen Speicherorten gespeichert werden, Richtlinientipps können jedoch nur von einem einzigen Speicherort aus zeichnen.
   
-Wenn Sie Richtlinien Tipps im Exchange Admin Center konfiguriert haben, werden alle Richtlinien Tipps, die Sie im Security & Compliance Center konfigurieren, nicht für Benutzer in Outlook im Internet und Outlook 2013 und höher angezeigt, bis Sie die Tipps im Exchange Admin Center deaktivieren. Dadurch wird sichergestellt, dass Ihre aktuellen Exchange-Nachrichtenfluss Regeln weiterhin funktionieren, bis Sie das Sicherheits & Compliance Center aktivieren.
+Wenn Sie Richtlinientipps im Exchange Admin Center konfiguriert haben, werden alle Richtlinientipps, die Sie im Security & Compliance Center konfigurieren, benutzern in Outlook im Web und Outlook 2013 und höher erst angezeigt, wenn Sie die Tipps im Exchange Admin Center deaktivieren. Dadurch wird sichergestellt, dass Ihre aktuellen Exchange-Nachrichtenflussregeln weiterhin funktionieren, bis Sie zum Security & Compliance Center wechseln.
   
-Beachten Sie, dass Richtlinien Tipps zwar nur von einem einzigen Speicherort aus gezeichnet werden können, e-Mail-Benachrichtigungen jedoch immer gesendet werden, selbst wenn Sie DLP-Richtlinien sowohl im Security & Compliance Center als auch im Exchange Admin Center verwenden.
-  
-
+Beachten Sie, dass Richtlinientipps zwar nur von einem einzigen Speicherort aus zeichnen können, E-Mail-Benachrichtigungen jedoch immer gesendet werden, auch wenn Sie DLP-Richtlinien sowohl im Security & Compliance Center als auch im Exchange Admin Center verwenden.

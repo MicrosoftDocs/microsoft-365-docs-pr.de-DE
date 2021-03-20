@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: c3ba9ce6675e81a99309243db251b34a21a4b43f
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: d6e953c86939d732632e87573fc2aa5392f09aa2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454159"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904936"
 ---
 # <a name="create-a-new-topic"></a>Ein neues Thema erstellen 
 
@@ -33,7 +33,7 @@ In Themen von "Viva" können Sie ein neues Thema erstellen, wenn ein Thema nicht
 
 Zum Erstellen eines neuen Themas müssen Sie:
 - Verfügen Sie über eine Lizenz für "Viva Topics".
-- Haben Sie Berechtigungen für [**Die Personen, die Themen erstellen oder bearbeiten können.**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
+- Haben Sie Berechtigungen für [**Die Personen, die Themen erstellen oder bearbeiten können.**](./topic-experiences-user-permissions.md) Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
 
 > [!Note] 
 > Benutzer, die über die Berechtigung zum Verwalten von Themen im Themencenter (Wissensmanager) verfügen, verfügen bereits über Berechtigungen zum Erstellen und Bearbeiten von Themen.
@@ -126,13 +126,6 @@ Nachdem Sie die Seite veröffentlicht haben, werden der Themenname, der alternat
 
 
 ## <a name="see-also"></a>Weitere Informationen:
-
-
-
-  
-
-
-
 
 
 

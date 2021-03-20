@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Erhalten Sie Informationen zum Erstellen eines Inhaltscenters.
-ms.openlocfilehash: 3544bbef7cf2f898733c7aaad620487098a2dd24
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 34ba45cd62214743e5a6784893e0f24e9815fdfb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515136"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905824"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Erstellen eines inhaltscenters in Microsoft SharePoint Syntex
 
@@ -35,12 +35,12 @@ Zum Erstellen und Verwalten von Dokumentverständnismodellen benötigen Sie zuer
 Sie erstellen ein Standardinhaltscenter während des [Setups](set-up-content-understanding.md). Ein SharePoint-Administrator kann aber bei Bedarf auch zusätzliche Center erstellen. Während ein einzelnes Inhaltscenter für Umgebungen, für die Sie eine Rollup aller Modellaktivitäten durchführen möchten, möglicherweise in Ordnung ist, möchten Sie möglicherweise zusätzliche Zentren für mehrere Abteilungen in Ihrer Organisation einrichten, die möglicherweise unterschiedliche Bedürfnisse und Berechtigungsanforderungen an Ihre Modelle haben.
 
 > [!NOTE]
-> Wenn Sie in einer [Microsoft 365 Multi-Geo-Umgebung](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo) ein einzelnes Standardinhaltscenter an Ihrem zentralen Speicherort haben, können Sie nur ein Rollup der Modellaktivität von diesem Speicherort aus bereitstellen. In einer Multi-Geo-Umgebung können Sie derzeit kein Rollup der Modellaktivität über Farmgrenzen hinweg erhalten. 
+> Wenn Sie in einer [Microsoft 365 Multi-Geo-Umgebung](../enterprise/microsoft-365-multi-geo.md) ein einzelnes Standardinhaltscenter an Ihrem zentralen Speicherort haben, können Sie nur ein Rollup der Modellaktivität von diesem Speicherort aus bereitstellen. In einer Multi-Geo-Umgebung können Sie derzeit kein Rollup der Modellaktivität über Farmgrenzen hinweg erhalten. 
 
 
 ## <a name="create-a-content-center"></a>Erstellen eines Inhaltscenters
 
-Ein SharePoint-Administrator kann eine Inhaltscenter-Website erstellen, wie er auch eine beliebige andere [SharePoint-Website](https://docs.microsoft.com/sharepoint/create-site-collection) über den Bereitstellungsbereich der Admin Center-Website erstellen würde.
+Ein SharePoint-Administrator kann eine Inhaltscenter-Website erstellen, wie er auch eine beliebige andere [SharePoint-Website](/sharepoint/create-site-collection) über den Bereitstellungsbereich der Admin Center-Website erstellen würde.
 
 So erstellen Sie ein neues Inhaltscenter:
 
@@ -63,7 +63,7 @@ Nachdem Sie eine Inhaltscenter-Website erstellt haben, wird Sie im SharePoint Ad
 
 ### <a name="give-access-to-additional-users"></a>Gewähren des Zugriffs für zusätzliche Benutzer
  
-Nachdem Sie die Website erstellt haben, können Sie zusätzlichen Benutzern den Zugriff auf die Website über das standardmäßige [SharePoint-Websiteberechtigungsmodell](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions) gewähren.
+Nachdem Sie die Website erstellt haben, können Sie zusätzlichen Benutzern den Zugriff auf die Website über das standardmäßige [SharePoint-Websiteberechtigungsmodell](/sharepoint/modern-experience-sharing-permissions) gewähren.
 
 ## <a name="see-also"></a>Siehe auch
 [Erstellen einer Klassifizierung](create-a-classifier.md)
@@ -76,4 +76,4 @@ Nachdem Sie die Website erstellt haben, können Sie zusätzlichen Benutzern den 
 
 [Erstellen eines Formularverarbeitungsmodells](create-a-form-processing-model.md)
 
-[Anwenden eines Modells](apply-a-model.md)    
+[Anwenden eines Modells](apply-a-model.md)

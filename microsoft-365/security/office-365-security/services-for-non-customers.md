@@ -17,19 +17,19 @@ ms.collection:
 description: Damit Benutzer das Vertrauen in der Verwendung von E-Mails nicht verlieren, hat Microsoft verschiedene Richtlinien und Technologien zum Schutz von Benutzern eingeführt.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 879d2c9d3bc2af0f78a25eb1381a74b67171e939
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3213cae1b04b3f1a1b861e8f2cfc698576013546
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "50290763"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903799"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Dienste für Nichtkunden, die E-Mails an Microsoft 365 senden
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-E-Mail-Missbrauch, Junk-E-Mails und betrügerische E-Mails (Phishing) belasten weiterhin das gesamte E-Mail-Ökosystem. Um das Vertrauen der Benutzer in die Verwendung von E-Mails zu erhalten, hat Microsoft verschiedene Richtlinien und Technologien zum Schutz unserer Benutzer entwickelt. Allerdings weiß Microsoft, dass seriösen E-Mails nicht negativ beeinträchtigt werden sollten. Daher haben wir eine Reihe von Diensten eingerichtet, mit deren Hilfe Absender ihre Fähigkeit, E-Mails an Microsoft 365-Benutzer zu senden, verbessern können, indem sie ihre Absenderre reputation proaktiv verwalten.
+E-Mail-Missbrauch, Junk-E-Mails und betrügerische E-Mails (Phishing) belasten weiterhin das gesamte E-Mail-Ökosystem. Um das Vertrauen der Benutzer in die Verwendung von E-Mails zu erhalten, hat Microsoft verschiedene Richtlinien und Technologien zum Schutz unserer Benutzer entwickelt. Allerdings weiß Microsoft, dass seriösen E-Mails nicht negativ beeinträchtigt werden sollten. Aus diesem Grund haben wir eine Reihe von Diensten eingerichtet, mit deren Hilfe Absender ihre Fähigkeit verbessern können, E-Mails an Microsoft 365-Benutzer zu senden, indem sie ihre Sendere reputation proaktiv verwalten.
 
 Diese Übersicht enthält Informationen zu Vorteilen, die wir Ihrer Organisation bieten, auch wenn Sie kein Kunde sind.
 
@@ -39,9 +39,9 @@ Diese Übersicht enthält Informationen zu Vorteilen, die wir Ihrer Organisation
 
 |Dienst|Vorteile|
 |---|---|
-|Onlinehilfeinhalt|Beschreibung: <ul><li>Ein Ausgangspunkt für alle Fragen im Zusammenhang mit der Bereitstellung von Kommunikation für EOP-Benutzer.</li><li>Enthält einen einfachen Onlineleitfaden mit unseren Richtlinien und Anforderungen.</li><li>Eine Übersicht über die Junk-E-Mail-Filter und Authentifizierungstechnologien, die von Microsoft verwendet werden.</li><ul>|
+|Onlinehilfeinhalt|Beschreibung: <ul><li>Ein Ausgangspunkt für alle Fragen im Zusammenhang mit der Bereitstellung von Kommunikationen an EOP-Benutzer.</li><li>Enthält eine einfache Onlineanleitung mit unseren Richtlinien und Anforderungen.</li><li>Eine Übersicht über die Junk-E-Mail-Filter und Authentifizierungstechnologien, die von Microsoft verwendet werden.</li><ul>|
 |[Microsoft-Support](#microsoft-support)|Stellt Selbsthilfe und Weiterleitungssupport für Zustellungsprobleme bereit.|
-|[Antispam-IP-Listendelist-Portal](#anti-spam-ip-delist-portal)|Ein Tool zum Übermitteln von Anforderungen zum Entfernen von IP-Adressen aus einer Liste. Vor dem Absenden dieser Anforderung hat der Absender die Verantwortung, sicherzustellen, dass alle weiteren E-Mails, die von der fraglichen IP-Adresse ausgehen, weder beleidigend noch böswillig sind.|
+|[Antispam-IP-Listenportal](#anti-spam-ip-delist-portal)|Ein Tool zum Übermitteln von Anforderungen zum Entfernen von IP-Adressen aus einer Liste. Vor dem Absenden dieser Anforderung hat der Absender die Verantwortung, sicherzustellen, dass alle weiteren E-Mails, die von der fraglichen IP-Adresse ausgehen, weder beleidigend noch böswillig sind.|
 |[Missbrauchs- und Spammeldung für Junk-E-Mails aus Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Verhindert, dass Spam und andere unerwünschte E-Mails von Exchange Online gesendet werden und das Internet und Ihr E-Mail-System überladen.|
 |
 
@@ -53,18 +53,18 @@ Microsoft bietet mehrere Supportoptionen für Personen, die Probleme beim Senden
 
 - Sehen Sie sich die am häufigsten auftretenden Probleme an, die für Nicht-Kunden in [Problembehandlung für E-Mail-Nachrichten, die an Office 365 gesendet werden](troubleshooting-mail-sent-to-office-365.md) auftreten.
 
-- Verwenden Sie [das Microsoft 365-Listendelist-Portal,](https://sender.office.com) um eine Anforderung zu senden, ihre IP aus der Liste der blockierten Absender zu entfernen.
+- Verwenden Sie [das Microsoft 365-Listendelist-Portal,](https://sender.office.com) um eine Anforderung zu senden, damit Ihre IP aus der Liste blockierter Absender entfernt wird.
 
 - Lesen Sie die [Microsoft-Communityforen](https://community.office365.com/f/).
 
-- Wenden Sie sich an den Kunden, den Sie per E-Mail mit einer anderen Methode kontaktieren möchten, und bitten Sie ihn, sich an den Microsoft Support zu wenden und in Ihrem Auftrag ein Supportticket zu öffnen. In einigen Fällen muss der Microsoft-Support aus rechtlichen Gründen direkt mit dem Absender kommunizieren, dem der gesperrte die IP-Adressraum gehört. Allerdings können Nicht-Kunden in der Regel keine Supporttickets öffnen.
+- Wenden Sie sich an den Kunden, den Sie mit einer anderen Methode per E-Mail kontaktieren möchten, und bitten Sie ihn, sich an den Microsoft-Support zu wenden und in Ihrem Namen ein Supportticket zu öffnen. In einigen Fällen muss der Microsoft-Support aus rechtlichen Gründen direkt mit dem Absender kommunizieren, dem der gesperrte die IP-Adressraum gehört. Allerdings können Nicht-Kunden in der Regel keine Supporttickets öffnen.
 
-  Weitere Informationen zum technischen Microsoft-Support für Office 365 finden Sie unter [Support](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/support).
+  Weitere Informationen zum technischen Microsoft-Support für Office 365 finden Sie unter [Support](/office365/servicedescriptions/office-365-platform-service-description/support).
 
-## <a name="anti-spam-ip-delist-portal"></a>Antispam-IP-Listendelist-Portal
+## <a name="anti-spam-ip-delist-portal"></a>Antispam-IP-Listenportal
 
-Dies ist ein Self-Service-Portal, das Sie verwenden können, um sich selbst aus der Liste der blockierten Absender von Microsoft 365 zu entfernen. Verwenden Sie dieses Portal, wenn Sie eine Fehlermeldung erhalten, wenn Sie versuchen, eine E-Mail an einen Empfänger zu senden, dessen E-Mail-Adresse sich in Microsoft 365 befindet und Sie nicht glauben, dass Sie dies sein sollten. Weitere Informationen finden Sie unter [Verwenden des Listenentfernungsportals, um sich selbst aus der Liste der blockierten Absender zu entfernen](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Dies ist ein Self-Service-Portal, mit dem Sie sich selbst aus der Liste blockierter Absender von Microsoft 365 entfernen können. Verwenden Sie dieses Portal, wenn Sie eine Fehlermeldung erhalten, wenn Sie versuchen, eine E-Mail an einen Empfänger zu senden, dessen E-Mail-Adresse sich in Microsoft 365 befindet und Sie nicht denken, dass Sie dies sein sollten. Weitere Informationen finden Sie unter [Verwenden des Listenentfernungsportals, um sich selbst aus der Liste der blockierten Absender zu entfernen](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Missbrauchs- und Spammeldung für Junk-E-Mails aus Exchange Online
 
-Manchmal wird Microsoft365 von Drittanbietern verwendet, um Junk-E-Mails zu senden, unter Verstoß gegen unsere Nutzungsbedingungen und Richtlinien. Wenn Sie Junk-E-Mails von Office 365 erhalten, können Sie diese Nachrichten an Microsoft melden. Anweisungen finden Sie unter ["Melden von Nachrichten und Dateien an Microsoft".](report-junk-email-messages-to-microsoft.md)
+Manchmal wird Microsoft365 von Drittanbietern verwendet, um Junk-E-Mails zu senden, und dies unter Verstoß gegen unsere Nutzungsbedingungen und Richtlinien. Wenn Sie Junk-E-Mails von Office 365 erhalten, können Sie diese Nachrichten an Microsoft melden. Anweisungen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Hier erfahren Sie, wie Sie Ressourcen für Microsoft SharePoint Syntex finden.
-ms.openlocfilehash: 21dc0e29e9322b4c009b0f1e63b7bfbc4b92da9a
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 4282da5ca1027eaf041241e90011ead8f2942985
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242700"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905728"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Einführung in Microsoft SharePoint Syntex
 
@@ -42,9 +42,9 @@ Die Ressourcen in diesem Abschnitt helfen Ihnen, mehr über die beiden von Share
 
 | Diese Informationen finden Sie unter: | Hilfreiche Ressource: |
 |:-----|:-----|
-|Weitere Informationen zum Thema Dokumentverständnis|[Übersicht über das Dokumentenverständnis](https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview)|
-|Weitere Informationen über die Verarbeitung von Formularen|[Übersicht über die Formularverarbeitung](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)|
-|Grundlegendes zu den Unterschieden zwischen den beiden Methoden|[Unterschied zwischen den Modellen "Dokumentenverständnis" und "Formularverarbeitung"](https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
+|Weitere Informationen zum Thema Dokumentverständnis|[Übersicht über das Dokumentenverständnis](./document-understanding-overview.md)|
+|Weitere Informationen über die Verarbeitung von Formularen|[Übersicht über die Formularverarbeitung](./form-processing-overview.md)|
+|Grundlegendes zu den Unterschieden zwischen den beiden Methoden|[Unterschied zwischen den Modellen "Dokumentenverständnis" und "Formularverarbeitung"](./difference-between-document-understanding-and-form-processing-model.md)|
 |Ressourcen finden Sie im Microsoft Tech Community Resource Center.|[SharePoint Syntex: Inhaltsdienste in Microsoft 365](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
 |FAQ zu SharePoint Syntex finden Sie im Microsoft Tech Community Resource Center. |[SharePoint Syntex – FAQ](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |So erhalten Sie SharePoint Syntex |[SharePoint Syntex-Produktseite](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
@@ -55,7 +55,7 @@ Erfahren Sie mehr darüber, wie Sie SharePoint Syntex in Ihrer Organisation verw
 
 | Diese Informationen finden Sie unter: | Hilfreiche Ressource: |
 |:-----|:-----|
-|Erfahren Sie, wie Sie mit der Planung der Nutzung von SharePoint Syntex beginnen. |[SharePoint Syntex-Einführung: Erste Schritte](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted)<br><br>|  
+|Erfahren Sie, wie Sie mit der Planung der Nutzung von SharePoint Syntex beginnen. |[SharePoint Syntex-Einführung: Erste Schritte](./adoption-getstarted.md)<br><br>|  
 
 ## <a name="set-up-sharepoint-syntex"></a>Einrichten von SharePoint Syntex
 
@@ -63,8 +63,8 @@ Die Ressourcen in diesem Abschnitt helfen dem Administrator in Ihrer Organisatio
 
 | Diese Informationen finden Sie unter: | Hilfreiche Ressource: |
 |:-----|:-----|
-|Einrichten und Konfigurieren von SharePoint Syntex|[Einrichten von Microsoft SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding)|
-|Informationen zum Bild-Tagging und dessen Deaktivierung|[Bild-Tagging in SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/image-tagging)|
+|Einrichten und Konfigurieren von SharePoint Syntex|[Einrichten von Microsoft SharePoint Syntex](./set-up-content-understanding.md)|
+|Informationen zum Bild-Tagging und dessen Deaktivierung|[Bild-Tagging in SharePoint Syntex](./image-tagging.md)|
 
 ## <a name="models"></a>Modelle
 
@@ -72,11 +72,11 @@ Die Ressourcen in diesem Abschnitt helfen Ihren Benutzern zu lernen, wie sie Dok
 
 | Diese Informationen finden Sie unter: | Hilfreiche Ressource: |
 |:-----|:-----|
-|Informationen zum Arbeiten mit Modellen|[Erstellen eines Inhaltscenters](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center)<br><br>[Erstellen einer Klassifizierung](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier)<br><br>[Erstellen eines Extraktors](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor)<br><br>[Erstellen eines Formularverarbeitungsmodells](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)<br><br>[Beschreibungstypen](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview)<br><br>[Anwenden eines Dokumentenverständnismodells](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model)<br><br>[Erfahren Sie mehr über Dokumentenverständnismodelle anhand des Beispielmodells](https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model)<br><br>|
-|Anwenden einer Aufbewahrungsbezeichnung auf das Modell|[Anwenden einer Aufbewahrungsbezeichnung auf ein Dokumentverständnismodell](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)|
-|Verwenden der Terminologiespeichertaxonomie des verwalteten Metadatendiensts beim Erstellen eines Extraktors|[Nutzung der Terminologiespeichertaxonomie beim Erstellen eines Extraktors](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
-|Erfahren Sie, wie Sie Daten zu Ihren Modellen anzeigen können.|[Modellverwendungsanalysen](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|
-|Informationen zum Verwenden des Barrierefreiheitsmodus beim Trainieren eines Modells|[Barrierefreiheitsmodus für SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/accessibility-mode)|
+|Informationen zum Arbeiten mit Modellen|[Erstellen eines Inhaltscenters](./create-a-content-center.md)<br><br>[Erstellen einer Klassifizierung](./create-a-classifier.md)<br><br>[Erstellen eines Extraktors](./create-an-extractor.md)<br><br>[Erstellen eines Formularverarbeitungsmodells](./create-a-form-processing-model.md)<br><br>[Beschreibungstypen](./explanation-types-overview.md)<br><br>[Anwenden eines Dokumentenverständnismodells](./apply-a-model.md)<br><br>[Erfahren Sie mehr über Dokumentenverständnismodelle anhand des Beispielmodells](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
+|Anwenden einer Aufbewahrungsbezeichnung auf das Modell|[Anwenden einer Aufbewahrungsbezeichnung auf ein Dokumentverständnismodell](./apply-a-retention-label-to-a-model.md)|
+|Verwenden der Terminologiespeichertaxonomie des verwalteten Metadatendiensts beim Erstellen eines Extraktors|[Nutzung der Terminologiespeichertaxonomie beim Erstellen eines Extraktors](./leverage-term-store-taxonomy.md)|
+|Erfahren Sie, wie Sie Daten zu Ihren Modellen anzeigen können.|[Modellverwendungsanalysen](./model-usage-analytics.md)|
+|Informationen zum Verwenden des Barrierefreiheitsmodus beim Trainieren eines Modells|[Barrierefreiheitsmodus für SharePoint Syntex](./accessibility-mode.md)|
 
 ## <a name="premium-services"></a>Premium-Dienste
 
@@ -84,8 +84,8 @@ Mit einer SharePoint Syntex-Lizenz erhalten Ihre Benutzer Premium-Inhaltsdienste
 
 | Diese Informationen finden Sie unter: | Hilfreiche Ressource: |
 |:-----|:-----|
-|Erfahren Sie mehr über das Importieren eines Datensatzes mit dem SKOS-basierten Format (Simple Knowledge Organization System)|[Importieren eines Ausdruckssatzes mithilfe eines SKOS-basierten Formats](https://docs.microsoft.com/microsoft-365/contentunderstanding/import-term-set-skos)<br><br>[SKOS-Formatreferenz für SharePoint-Taxonomie](https://docs.microsoft.com/microsoft-365/contentunderstanding/skos-format-reference)<br><br>|
-|Erfahren Sie, wie Sie Inhaltstypen konsistenter für SharePoint-Bibliotheken und -Listen verfügbar machen|[Senden von Inhaltstypen per Push auf einen Hub](https://docs.microsoft.com/microsoft-365/contentunderstanding/push-content-type-to-hub)|
-|Weitere Informationen über die für Sie verfügbaren Terminologiespeicherberichte|[Terminologiespeicherberichte](https://docs.microsoft.com/microsoft-365/contentunderstanding/term-store-analytics)|
+|Erfahren Sie mehr über das Importieren eines Datensatzes mit dem SKOS-basierten Format (Simple Knowledge Organization System)|[Importieren eines Ausdruckssatzes mithilfe eines SKOS-basierten Formats](./import-term-set-skos.md)<br><br>[SKOS-Formatreferenz für SharePoint-Taxonomie](./skos-format-reference.md)<br><br>|
+|Erfahren Sie, wie Sie Inhaltstypen konsistenter für SharePoint-Bibliotheken und -Listen verfügbar machen|[Senden von Inhaltstypen per Push auf einen Hub](./push-content-type-to-hub.md)|
+|Weitere Informationen über die für Sie verfügbaren Terminologiespeicherberichte|[Terminologiespeicherberichte](./term-store-analytics.md)|
 
 ## <a name="see-also"></a>Siehe auch

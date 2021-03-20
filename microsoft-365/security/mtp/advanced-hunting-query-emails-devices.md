@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a12b2dcf2de472f43e782e2064944ec774bdb9e1
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 1149d8fa614854bdbbd2c154f0e92f6a9c28ce00
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727259"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904067"
 ---
-# <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Suche nach Bedrohungen auf allen Geräten, E-Mails, Apps und Identitäten
+# <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Gefahrensuche über Geräte, E-Mails, Apps und Identitäten hinweg
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -50,7 +50,7 @@ Verwenden Sie diese Abfragen, um zu erfahren, wie Sie schnell Informationen zu B
 ### <a name="obtain-user-accounts-from-email-addresses"></a>Abrufen von Benutzerkonten aus E-Mail-Adressen
 Beim Erstellen von Abfragen über [Tabellen, die Geräte und E-Mail-Nachrichten enthalten](advanced-hunting-schema-tables.md), müssen Sie wahrscheinlich Benutzerkontonamen aus E-Mail-Adressen von Absendern oder Empfängern abrufen. Sie können dies im Allgemeinen für empfänger- oder absenderadressen mithilfe des lokalen Hosts über die *E-Mail-Adresse* tun.
 
-Im folgenden Codeausschnitt verwenden wir die [Tostring()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto-Funktion, um den lokalen Host direkt vor den E-Mail-Adressen `@` des Empfängers in der Spalte zu `RecipientEmailAddress` extrahieren.
+Im folgenden Codeausschnitt verwenden wir die [Tostring()](/azure/data-explorer/kusto/query/tostringfunction) Kusto-Funktion, um den lokalen Host direkt vor den E-Mail-Adressen `@` des Empfängers in der Spalte zu `RecipientEmailAddress` extrahieren.
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address
@@ -86,7 +86,7 @@ Department, City, Country
 Das [schema der erweiterten Suche](advanced-hunting-schema-tables.md) enthält umfassende Geräteinformationen in verschiedenen Tabellen. Beispielsweise enthält die [DeviceInfo-Tabelle](advanced-hunting-deviceinfo-table.md) umfassende Geräteinformationen, die auf regelmäßig aggregierten Ereignisdaten basieren. Diese Abfrage verwendet die Tabelle, um zu überprüfen, ob sich ein potenziell gefährdeter Benutzer ( ) bei allen Geräten angemeldet hat, und listet dann die Warnungen auf, die auf diesen Geräten `DeviceInfo` `<account-name>` ausgelöst wurden.
 
 >[!Tip]
-> Diese Abfrage `kind=inner` verwendet, um eine [innere Verknüpfung anzugeben,](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)die eine Deduplizierung linker Werte für `DeviceId` verhindert.
+> Diese Abfrage `kind=inner` verwendet, um eine [innere Verknüpfung anzugeben,](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)die eine Deduplizierung linker Werte für `DeviceId` verhindert.
 
 ```kusto
 DeviceInfo

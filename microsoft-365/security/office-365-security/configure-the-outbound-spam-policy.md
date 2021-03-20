@@ -19,12 +19,12 @@ ms.custom:
 description: Administratoren erfahren, wie Sie ausgehende Spamrichtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 748b274903590c5e28f34ce2fb4e65292d382cd2
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+ms.openlocfilehash: aec3149a4a91e011c6d6d206d9fc10f36a3d6588
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717626"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903904"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurieren der Filterung ausgehender Spamnachrichten in EOP
 
@@ -70,18 +70,18 @@ Um die Effektivität der Filterung ausgehender Spamnachrichten zu erhöhen, kön
 
 - Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **Antispameinstellungen** zu wechseln, verwenden Sie <https://protection.office.com/antispam>.
 
-- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Sie müssen in **Exchange Online** Berechtigungen erhalten, bevor Sie die in diesem Artikel beschriebenen Schritte ausführen können:
   - Zum Hinzufügen, Ändern und Löschen ausgehender Spamrichtlinien müssen Sie Mitglied der Rollengruppen **Organisationsverwaltung** oder **Sicherheitsadministrator** sein.
   - Für den schreibgeschützten Zugriff auf ausgehende Spamrichtlinien müssen Sie Mitglied der Rollengruppen **"Globaler Leser"** oder **"Sicherheitsleser"** sein.
 
-  Weitere Informationen finden Sie unter [Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
+  Weitere Informationen finden Sie unter [Berechtigungen in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   **Hinweise**:
 
   - Durch Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
-  - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
+  - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
 - Die empfohlenen Einstellungen für ausgehende Spamrichtlinien finden Sie unter [EOP-Richtlinieneinstellungen für ausgehende Spamfilter](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings).
 
@@ -141,7 +141,7 @@ Beim Erstellen einer benutzerdefinierten ausgehenden Spamrichtlinie im Security 
 
    - **Maximale Anzahl von Empfängern pro Benutzer**
 
-     Ein gültiger Wert ist 0 bis 10000. Der Standardwert ist 0, d. h. die Diensteinstellungen werden verwendet. Weitere Informationen finden Sie unter [Senden von Grenzwerten](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
+     Ein gültiger Wert ist 0 bis 10000. Der Standardwert ist 0, d. h. die Diensteinstellungen werden verwendet. Weitere Informationen finden Sie unter [Senden von Grenzwerten](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
 
      - **Externe Stündlichgrenze:** Die maximale Anzahl externer Empfänger pro Stunde.
 
@@ -163,7 +163,7 @@ Beim Erstellen einer benutzerdefinierten ausgehenden Spamrichtlinie im Security 
 
      - **Keine Aktion, nur Warnung:** E-Mail-Benachrichtigungen werden gesendet.
 
-6. (Optional) Erweitern Sie den Abschnitt Automatische **Weiterleitung,** um die automatische E-Mail-Weiterleitung durch Benutzer an externe Absender zu steuern. Weitere Informationen finden Sie unter [Steuern der automatischen externen E-Mail-Weiterleitung in Microsoft 365](external-email-forwarding.md).
+6. (Optional) Erweitern Sie den Abschnitt Automatische **Weiterleitung,** um die automatische E-Mail-Weiterleitung durch Benutzer an externe Absender zu steuern. Weitere Informationen finden Sie unter [Steuerung der automatischen externen E-Mail-Weiterleitung in Microsoft 365](external-email-forwarding.md).
 
    > [!NOTE]
    >
@@ -171,7 +171,7 @@ Beim Erstellen einer benutzerdefinierten ausgehenden Spamrichtlinie im Security 
    >
    > - Diese Einstellungen gelten nur für cloudbasierte Postfächer.
    >
-   > - Wenn die automatische Weiterleitung deaktiviert ist, erhält der Empfänger einen Unzustellbarkeitsbericht (auch NDR oder Unzustellbarkeitsnachricht bezeichnet), wenn externe Absender E-Mails an ein Postfach senden, für das die Weiterleitung aktiviert ist. Wenn die Nachricht von einem  internen Absender gesendet wird und die Weiterleitungsmethode die Postfach-Weiterleitung [(auch](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) _als SMTP-Weiterleitung_ bezeichnet) ist, wird der interne Absender den NDR erhalten. Der interne Absender bekommt keinen Unndr, wenn die Weiterleitung aufgrund einer Posteingangsregel erfolgt ist.
+   > - Wenn die automatische Weiterleitung deaktiviert ist, erhält der Empfänger einen Unzustellbarkeitsbericht (auch NDR oder Unzustellbarkeitsnachricht bezeichnet), wenn externe Absender E-Mails an ein Postfach senden, für das die Weiterleitung aktiviert ist. Wenn die Nachricht von einem  internen Absender gesendet wird und die Weiterleitungsmethode die Postfach-Weiterleitung [(auch](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) _als SMTP-Weiterleitung_ bezeichnet) ist, wird der interne Absender den NDR erhalten. Der interne Absender bekommt keinen Unndr, wenn die Weiterleitung aufgrund einer Posteingangsregel erfolgt ist.
 
    Die verfügbaren Werte sind:
 
@@ -309,7 +309,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 
 In diesem Beispiel wird eine neue ausgehende Spamfilterrichtlinie namens Contoso Executives mit den folgenden Einstellungen erstellt:
 
-- Die Empfängerrategrenzwerte sind auf kleinere Werte beschränkt, die standardmäßig festgelegt sind. Weitere Informationen finden Sie unter [Senden von Grenzwerten für Microsoft 365-Optionen](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
+- Die Empfängerrategrenzwerte sind auf kleinere Werte beschränkt, die standardmäßig festgelegt sind. Weitere Informationen finden Sie unter [Senden von Grenzwerten für Microsoft 365-Optionen](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
 
 - Nachdem eine der Grenzwerte erreicht wurde, wird der Benutzer am Senden von Nachrichten gehindert.
 
@@ -317,7 +317,7 @@ In diesem Beispiel wird eine neue ausgehende Spamfilterrichtlinie namens Contoso
 New-HostedOutboundSpamFilterPolicy -Name "Contoso Executives" -RecipientLimitExternalPerHour 400 -RecipientLimitInternalPerHour 800 -RecipientLimitPerDay 800 -ActionWhenThresholdReached BlockUser
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedoutboundspamfilterpolicy).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-HostedOutboundSpamFilterPolicy](/powershell/module/exchange/new-hostedoutboundspamfilterpolicy).
 
 #### <a name="step-2-use-powershell-to-create-an-outbound-spam-filter-rule"></a>Schritt 2: Verwenden von PowerShell zum Erstellen einer Filterregel für ausgehende Spamnachrichten
 
@@ -336,7 +336,7 @@ In diesem Beispiel wird eine neue ausgehende Spamfilterregel namens Contoso Exec
 New-HostedOutboundSpamFilterRule -Name "Contoso Executives" -HostedOutboundSpamFilterPolicy "Contoso Executives" -FromMemberOf "Contoso Executives Group"
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/new-hostedoutboundspamfilterrule).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-HostedOutboundSpamFilterRule](/powershell/module/exchange/new-hostedoutboundspamfilterrule).
 
 ### <a name="use-powershell-to-view-outbound-spam-filter-policies"></a>Anzeigen ausgehender Spamfilterrichtlinien mithilfe von PowerShell
 
@@ -358,7 +358,7 @@ In diesem Beispiel werden alle Eigenschaftswerte für die ausgehende Spamfilterr
 Get-HostedOutboundSpamFilterPolicy -Identity "Executives" | Format-List
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-hostedoutboundspamfilterpolicy).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-HostedOutboundSpamFilterPolicy](/powershell/module/exchange/get-hostedoutboundspamfilterpolicy).
 
 ### <a name="use-powershell-to-view-outbound-spam-filter-rules"></a>Anzeigen ausgehender Spamfilterregeln mithilfe von PowerShell
 
@@ -396,7 +396,7 @@ In diesem Beispiel werden alle Eigenschaftswerte für die ausgehende Spamfilterr
 Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/get-hostedoutboundspamfilterrule).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-HostedOutboundSpamFilterRule](/powershell/module/exchange/get-hostedoutboundspamfilterrule).
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-policies"></a>Verwenden von PowerShell zum Ändern ausgehender Spamfilterrichtlinien
 
@@ -411,7 +411,7 @@ Verwenden Sie die folgende Syntax, um eine Richtlinie für ausgehende Spamfilter
 Set-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedoutboundspamfilterpolicy).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-HostedOutboundSpamFilterPolicy](/powershell/module/exchange/set-hostedoutboundspamfilterpolicy).
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-rules"></a>Verwenden von PowerShell zum Ändern ausgehender Spamfilterregeln
 
@@ -425,7 +425,7 @@ Verwenden Sie die folgende Syntax, um eine filterregel für ausgehende Spamnachr
 Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" <Settings>
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/set-hostedoutboundspamfilterrule).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-HostedOutboundSpamFilterRule](/powershell/module/exchange/set-hostedoutboundspamfilterrule).
 
 ### <a name="use-powershell-to-enable-or-disable-outbound-spam-filter-rules"></a>Aktivieren oder Deaktivieren ausgehender Spamfilterregeln mithilfe von PowerShell
 
@@ -449,7 +449,7 @@ In diesem Beispiel wird dieselbe Regel aktiviert.
 Enable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Enable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/enable-hostedoutboundspamfilterrule) und [Disable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/disable-hostedoutboundspamfilterrule).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Enable-HostedOutboundSpamFilterRule](/powershell/module/exchange/enable-hostedoutboundspamfilterrule) und [Disable-HostedOutboundSpamFilterRule](/powershell/module/exchange/disable-hostedoutboundspamfilterrule).
 
 ### <a name="use-powershell-to-set-the-priority-of-outbound-spam-filter-rules"></a>Festlegen der Priorität ausgehender Spamfilterregeln mithilfe von PowerShell
 
@@ -489,7 +489,7 @@ In diesem Beispiel wird die Richtlinie für ausgehende Spamfilter mit dem Namen 
 Remove-HostedOutboundSpamFilterPolicy -Identity "Marketing Department"
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-hostedoutboundspamfilterpolicy).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-HostedOutboundSpamFilterPolicy](/powershell/module/exchange/remove-hostedoutboundspamfilterpolicy).
 
 ### <a name="use-powershell-to-remove-outbound-spam-filter-rules"></a>Verwenden von PowerShell zum Entfernen ausgehender Spamfilterregeln
 
@@ -507,7 +507,7 @@ In diesem Beispiel wird die filterregel für ausgehende Spamnachrichten mit dem 
 Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/remove-hostedoutboundspamfilterrule).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-HostedOutboundSpamFilterRule](/powershell/module/exchange/remove-hostedoutboundspamfilterrule).
 
 ## <a name="for-more-information"></a>Weitere Informationen
 

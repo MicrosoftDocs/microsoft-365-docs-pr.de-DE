@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Kennwörtern für Microsoft 365-Benutzerkonten
+title: Verwalten von Microsoft 365-Benutzerkontenkennwörtern
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,36 +21,36 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: In diesem Artikel erfahren Sie, wie Sie Kennwörter für Microsoft 365-Benutzerkonten verwalten.
-ms.openlocfilehash: af64002ad54b517a6e8f0b687a00d6bed9ab0214
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+description: Erfahren Sie mehr über die Verwaltung von Microsoft 365-Benutzerkontenkennwörtern.
+ms.openlocfilehash: 2062da49310121ec18f7ce21f523531f10d6df9b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328509"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905092"
 ---
-# <a name="manage-microsoft-365-user-account-passwords"></a>Verwalten von Kennwörtern für Microsoft 365-Benutzerkonten
+# <a name="manage-microsoft-365-user-account-passwords"></a>Verwalten von Microsoft 365-Benutzerkontenkennwörtern
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Sie können die Kennwörter von Microsoft 365-Benutzerkonten in Abhängigkeit von Ihrer Identitäts Konfiguration auf verschiedene Arten verwalten. Sie können Benutzerkonten im [Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/add-users/), in Active Directory-Domänendienste (AD DS) oder im Azure Active Directory (Azure AD) Admin Center verwalten.
+Sie können Kennwörter für Microsoft 365-Benutzerkonten abhängig von Ihrer Identitätskonfiguration auf verschiedene Weise verwalten. Sie können Benutzerkonten im [Microsoft 365 Admin Center,](../admin/add-users/index.yml)in Active Directory Domain Services (AD DS) oder im Azure Active Directory (Azure AD) Admin Center verwalten.
 
-## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Planen, wo und wie Sie die Kennwörter für Benutzerkonten verwalten können
+## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Planen, wo und wie Sie Ihre Benutzerkontenkennwörter verwalten
 
-Wo und wie Sie Ihre Benutzerkonten verwalten können, hängt vom Identitätsmodell ab, das Sie für Ihre Microsoft 365 verwenden möchten. Die beiden Modelle sind nur in der Cloud und Hybrid.
+Wo und wie Sie Ihre Benutzerkonten verwalten können, hängt vom Identitätsmodell ab, das Sie für Microsoft 365 verwenden möchten. Die beiden Modelle sind nur cloud- und hybrid.
   
 ### <a name="cloud-only"></a>Rein cloudbasiert
 
-Sie verwalten Kennwörter für Benutzerkonten in:
+Sie verwalten Benutzerkontenkennwörter in:
 
-- [Das Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/add-users/)
-- Das Azure AD Admin Center
+- [Das Microsoft 365 Admin Center](../admin/add-users/index.yml)
+- Azure AD Admin Center
     
 ### <a name="hybrid"></a>Hybrid
 
-Bei der Hybrid Identität werden Kennwörter in AD DS gespeichert, sodass Sie lokale AD DS-Tools zum Verwalten von Kennwörtern für Benutzerkonten verwenden müssen. Selbst bei Verwendung der Kenn Wort Hash Synchronisierung (Password Hash Synchronization, PHS), in der Azure AD eine gehashte Version der bereits gehashten Version in AD DS speichert, müssen Sie und die Benutzer ihre Kennwörter in AD DS verwalten.
+Bei hybrider Identität werden Kennwörter in AD DS gespeichert, sodass Sie lokale AD DS-Tools zum Verwalten von Benutzerkontenkennwörtern verwenden müssen. Selbst bei Verwendung der Kennworthashsynchronisierung (Password Hash Synchronization, PHS), in der Azure AD eine Hashversion der bereits in AD DS hashierten Version speichert, müssen Sie und Benutzer ihre Kennwörter in AD DS verwalten.
 
-Mit dem [Kenn Wort](#pw_writeback)Rückschreiben können Ihre Benutzer Ihre AD DS Kennwörter über Azure AD ändern.
+Mit [dem Kennwortrückschreiben](#pw_writeback)können Ihre Benutzer ihre AD DS-Kennwörter über Azure AD ändern.
 
 ## <a name="prevent-bad-passwords"></a>Verhindern unsicherer Kennwörter
 
@@ -64,30 +64,29 @@ Verwenden Sie den Azure AD-Kennwortschutz, der sowohl eine Liste global gesperrt
 - Unternehmensspezifische interne Begriffe
 - Abkürzungen, die eine bestimmte Bedeutung im Unternehmen haben
 
-Sie können ungültige Kennwörter [in der Cloud](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) und für Ihre [lokale AD DS](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises)verbieten.
+Sie können ungültige Kennwörter [in der Cloud und](/azure/active-directory/authentication/concept-password-ban-bad) für Ihren lokalen AD [DS verbieten.](/azure/active-directory/authentication/concept-password-ban-bad-on-premises)
 
 ## <a name="simplify-user-sign-in"></a>Vereinfachen der Benutzeranmeldung
 
-Azure AD nahtloses einmaliges Anmelden (Azure AD nahtloses SSO) funktioniert mit der PHS-und der Pass-Through-Authentifizierung (PTA), damit sich Ihre Benutzer bei Diensten anmelden können, die Azure AD Benutzerkonten verwenden, ohne Ihre Kennwörter und in vielen Fällen Ihre Benutzernamen eingeben zu müssen. Damit können Benutzer einfacher auf cloudbasierte Anwendungen wie Office 365 zugreifen, ohne dass zusätzliche lokale Komponenten wie Identitätsverbundserver notwendig sind.
+Azure AD Seamless Single Sign-On (Azure AD Seamless SSO) funktioniert mit PHS und Pass-Through Authentication (PTA), um Ihren Benutzern die Anmeldung bei Diensten zu ermöglichen, die Azure AD-Benutzerkonten verwenden, ohne ihre Kennwörter und in vielen Fällen ihre Benutzernamen eingeben zu müssen. Damit können Benutzer einfacher auf cloudbasierte Anwendungen wie Office 365 zugreifen, ohne dass zusätzliche lokale Komponenten wie Identitätsverbundserver notwendig sind.
 
-Sie konfigurieren Azure AD Seamless SSO mit Azure AD Connect. Lesen Sie die [Anweisungen zum Konfigurieren von Azure AD Seamless SSO](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start).
+Sie konfigurieren Azure AD Seamless SSO mit Azure AD Connect. Lesen Sie die [Anweisungen zum Konfigurieren von Azure AD Seamless SSO](/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start).
 
 <a name="pw_writeback"></a>
-## <a name="simplify-password-updates-to-ad-ds"></a>Vereinfachen der Kennwortaktualisierung auf AD DS
+## <a name="simplify-password-updates-to-ad-ds"></a>Vereinfachen von Kennwortupdates für AD DS
 
-Mit dem Kenn Wort Rückschreiben können Sie Benutzern das Zurücksetzen Ihrer Kennwörter über Azure AD gestatten, das dann in AD DS repliziert wird. Benutzer müssen nicht auf Ihre lokalen AD DS zugreifen, um Ihre Kennwörter zu aktualisieren. Dies ist für Roaming- oder Remote-Benutzer nützlich, die keine Remote-Zugriffsverbindung zum lokalen Netzwerk haben.
+Mit dem Kennwortrückschreiben können Sie Benutzern das Zurücksetzen ihrer Kennwörter über Azure AD ermöglichen, das dann in AD DS repliziert wird. Benutzer müssen nicht auf ihre lokale AD DS zugreifen, um ihre Kennwörter zu aktualisieren. Dies ist für Roaming- oder Remote-Benutzer nützlich, die keine Remote-Zugriffsverbindung zum lokalen Netzwerk haben.
 
 Das Kennwortrückschreiben ist erforderlich für die vollständige Nutzung von Azure AD Identity Protection, z. B. um zu verlangen, dass Benutzer ihre lokalen Kennwörter ändern, wenn ein hohes Risiko einer Kontogefährdung besteht.
 
-Weitere Informationen und Hinweise zur Konfiguration finden Sie unter [Azure AD SSPR mit Kennwortrückschreiben](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-writeback).
+Weitere Informationen und Hinweise zur Konfiguration finden Sie unter [Azure AD SSPR mit Kennwortrückschreiben](/azure/active-directory/active-directory-passwords-writeback).
 
 >[!Note]
->Führen Sie ein Upgrade auf die neueste Version von Azure AD Connect durch, um das bestmögliche Benutzererlebnis und die Verfügbarkeit neuer Features sicherzustellen, sobald diese veröffentlicht werden. Weitere Informationen finden Sie unter [Benutzerdefinierte Installation von Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
+>Führen Sie ein Upgrade auf die neueste Version von Azure AD Connect durch, um das bestmögliche Benutzererlebnis und die Verfügbarkeit neuer Features sicherzustellen, sobald diese veröffentlicht werden. Weitere Informationen finden Sie unter [Benutzerdefinierte Installation von Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
 >
 
 ## <a name="simplify-password-resets"></a>Vereinfachen der Kennwortzurücksetzung
 
-Self-Service Password Reset (SSPR) ermöglicht Benutzern das Zurücksetzen oder entsperren ihrer Kennwörter oder Konten. Um über eine fehlerhafte oder missbräuchliche Nutzung informiert zu werden, können Sie die ausführliche Berichterstellung verwenden, bei der der Benutzerzugriff auf das System nachverfolgt wird. Sie müssen das [Kenn Wort](#pw_writeback) Rückschreiben aktivieren, bevor Sie das Zurücksetzen von Kennwörtern bereitstellen können.
+Mit der Self-Service Password Reset (SSPR) können Benutzer ihre Kennwörter oder Konten zurücksetzen oder entsperren. Um über eine fehlerhafte oder missbräuchliche Nutzung informiert zu werden, können Sie die ausführliche Berichterstellung verwenden, bei der der Benutzerzugriff auf das System nachverfolgt wird. Sie müssen das [Kennwortrückschreiben aktivieren,](#pw_writeback) bevor Sie Kennwortzurücksetzungen bereitstellen können.
 
-Lesen Sie die [Anweisungen zum Rollout der Kennwortzurücksetzung](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
-
+Lesen Sie die [Anweisungen zum Rollout der Kennwortzurücksetzung](/azure/active-directory/authentication/howto-sspr-deployment).

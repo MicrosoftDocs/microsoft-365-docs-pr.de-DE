@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Benötigen Sie eine Lösung für die Datensatzverwaltung für Microsoft 365, die hochwertige Inhalte für rechtliche, geschäftliche oder behördliche Verpflichtungen verwaltet, aber Sie sind sich nicht sicher, wo Sie anfangen sollen? Hier finden Sie einige praktische Anweisungen für die ersten Schritte.
-ms.openlocfilehash: 0dc0258ed53aa07df778f5d0883b02b7635f50d8
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: a757cabf13e85731bd16ccd84f1eea3dbe7e432a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682722"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906007"
 ---
 # <a name="get-started-with-records-management"></a>Erste Schritte mit der Datensatzverwaltung
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Sind Sie bereit, mit der Verwaltung der hochwertigen Inhalte Ihrer Organisation für rechtliche, geschäftliche oder behördliche Verpflichtungen mithilfe einer Datensatzverwaltungslösung in Microsoft 365 zu beginnen? Verwenden Sie diese ausführliche Anleitung für Ihre ersten Schritte:
 
@@ -45,7 +45,7 @@ Sind Sie bereit, mit der Verwaltung der hochwertigen Inhalte Ihrer Organisation 
 
 Eine Reihe verschiedener Abonnements unterstützen die Datensatzverwaltung, und die Lizenzierungsanforderungen für Benutzer hängen von den von Ihnen verwendeten Features ab.
 
-Die Optionen für die Lizenzierung Ihrer Benutzer zur Nutzung der Microsoft 365-Compliancefeatures, finden Sie im [Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD). Zum Thema Datensatzverwaltung beachten Sie den Abschnitt [Datensatzverwaltung](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) sowie den zugehörigen PDF- oder Excel-Download für Lizenzierungsanforderungen auf Funktionsebene.
+Die Optionen für die Lizenzierung Ihrer Benutzer zur Nutzung der Microsoft 365-Compliancefeatures, finden Sie im [Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Zum Thema Datensatzverwaltung beachten Sie den Abschnitt [Datensatzverwaltung](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) sowie den zugehörigen PDF- oder Excel-Download für Lizenzierungsanforderungen auf Funktionsebene.
 
 ## <a name="permissions-required-for-records-management"></a>Erforderliche Berechtigungen für die Datensatzverwaltung
 
@@ -53,9 +53,9 @@ Die Mitglieder Ihres Complianceteams, die für die Datensatzverwaltung verantwor
 
 Für eine schreibgeschützte Rolle können Sie eine neue Rollengruppe erstellen und die Rolle **Datensatzverwaltung – nur Leserechte** zu dieser Gruppe hinzufügen. 
 
-Weitere Informationen zu Rollengruppen und Rollen finden Sie unter [Berechtigungen im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center).
+Weitere Informationen zu Rollengruppen und Rollen finden Sie unter [Berechtigungen im Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
 
-Anweisungen zum Hinzufügen von Benutzern zu Rollengruppen und zum Zuweisen von Rollen finden Sie unter [Freigeben des Benutzerzugriffs auf das Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+Anweisungen zum Hinzufügen von Benutzern zu Rollengruppen und zum Zuweisen von Rollen finden Sie unter [Freigeben des Benutzerzugriffs auf das Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Diese Berechtigungen sind nur erforderlich, um Aufbewahrungsbezeichnungen zu erstellen, zu konfigurieren und anzuwenden, die Datensätze deklarieren, um Löschungen zu verwalten. Die Person, die die Bezeichnungen konfiguriert, benötigt keinen Zugriff auf die Inhalte.
 

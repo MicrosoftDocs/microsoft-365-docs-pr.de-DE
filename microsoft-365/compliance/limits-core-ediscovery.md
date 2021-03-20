@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel werden die Grenzen im eDiscovery-Kernfall in Microsoft 365 beschrieben.
-ms.openlocfilehash: 2699e9b2511c742bb295f69611a976f6a3955980
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: e18e1e6c1d9d7ecd78deaf267be72ccdc9d1ba5d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423446"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905887"
 ---
 # <a name="limits-in-core-ediscovery"></a>Grenzwerte in Core eDiscovery
 
-In der folgenden Tabelle sind die Grenzwerte für eDiscovery-Kernfälle und -Hüllen aufgeführt, die einem eDiscovery-Kernfall zugeordnet sind. Weitere Informationen zu Core eDiscovery finden Sie [unter Overview of Core eDiscovery](ediscovery-cases.md).
+In der folgenden Tabelle sind die Grenzwerte für eDiscovery-Kernfälle und -Hüllen aufgeführt, die einem eDiscovery-Kernfall zugeordnet sind. Weitere Informationen zu Core eDiscovery finden Sie [unter Overview of Core eDiscovery](./get-started-core-ediscovery.md).
     
   | Beschreibung der Beschränkung | Grenze |
   |:-----|:-----|
@@ -40,9 +40,9 @@ In der folgenden Tabelle sind die Grenzwerte für eDiscovery-Kernfälle und -Hü
    > [!NOTE]
    > <sup>1</sup> Zum Anzeigen einer Liste mit mehr als 1.000 Fällen, Halte-, Such- oder Exporten können Sie die entsprechenden Office 365 Security & Compliance-PowerShell-Cmdlets verwenden:
    > 
-   > - [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)
-   > - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
-   > - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)
-   > - [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+   > - [Get-ComplianceCase](/powershell/module/exchange/get-compliancecase)
+   > - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
+   > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
+   > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)
 
 Weitere Informationen zu Beschränkungen im Zusammenhang mit Inhaltssuchen und -exporten im Zusammenhang mit einem Core eDiscovery-Fall finden Sie unter [Limits for Content Search und Core eDiscovery](limits-for-content-search.md).

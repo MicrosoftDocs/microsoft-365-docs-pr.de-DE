@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Beschreibung des Unterschieds zwischen Dokumentverständnis- und Formularverarbeitungsmodellen
-ms.openlocfilehash: a50941ec117480be586ba828e7b49c4a88a310ab
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 9640b028e4b5a9cbd914b183e61de9b8a7ba00bc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712294"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905790"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Unterschied zwischen Dokumentverständnis- und Formularverarbeitungsmodellen 
 
@@ -34,7 +34,7 @@ Es gibt zwei Modelltypen, die Sie verwenden können:
 Beide Modelle werden in der Regel für den gleichen Zweck verwendet, doch die unten aufgeführten wesentlichen Unterschiede bedingen, welches Sie verwenden können.
 
 > [!NOTE]
-> Weitere Informationen zu Beispielszenarien für Formularverarbeitung und Dokumentverständnis finden Sie unter [SharePoint Syntex – Leitfaden für die ersten Schritte](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example).
+> Weitere Informationen zu Beispielszenarien für Formularverarbeitung und Dokumentverständnis finden Sie unter [SharePoint Syntex – Leitfaden für die ersten Schritte](./adoption-getstarted.md#form-processing-scenario-example).
 
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Strukturierte, unstrukturierte und teilstrukturierte Inhalte
@@ -52,9 +52,9 @@ Verwenden Sie Formularverarbeitungsmodelle, um Dateien zu identifizieren und Dat
 Dokumentverständnismodelle werden auf einer SharePoint-Inhaltscenter-Site erstellt und verwaltet. 
 
 > [!NOTE]
-> Weitere Informationen zu Eingabedokumenten finden Sie unter [Formularverarbeitungsmodelle – Voraussetzungen und Einschränkungen](https://docs.microsoft.com/ai-builder/form-processing-model-requirements). 
+> Weitere Informationen zu Eingabedokumenten finden Sie unter [Formularverarbeitungsmodelle – Voraussetzungen und Einschränkungen](/ai-builder/form-processing-model-requirements). 
 
-Formularverarbeitungsmodelle werden in PowerApps [KI-Generator](https://docs.microsoft.com/ai-builder/overview) erstellt, aber die Erstellung wird direkt aus einer SharePoint-Dokumentbibliothek heraus gestartet. Für eine Dokumentbibliothek muss das Erstellen von Formularverarbeitungsmodellen aktiviert sein, damit ein Benutzer ein Formularverarbeitungsmodell dafür erstellen kann. Administratoren können die Erstellung eines Formularverarbeitungsmodells in den Administratoreinstellungen für das Inhaltsverständnis aktivieren. Formularverarbeitungsmodelle verwenden PowerAutomate-Flows zum Verarbeiten von Dateien, wenn diese in die Dokumentbibliothek hochgeladen werden.
+Formularverarbeitungsmodelle werden in PowerApps [KI-Generator](/ai-builder/overview) erstellt, aber die Erstellung wird direkt aus einer SharePoint-Dokumentbibliothek heraus gestartet. Für eine Dokumentbibliothek muss das Erstellen von Formularverarbeitungsmodellen aktiviert sein, damit ein Benutzer ein Formularverarbeitungsmodell dafür erstellen kann. Administratoren können die Erstellung eines Formularverarbeitungsmodells in den Administratoreinstellungen für das Inhaltsverständnis aktivieren. Formularverarbeitungsmodelle verwenden PowerAutomate-Flows zum Verarbeiten von Dateien, wenn diese in die Dokumentbibliothek hochgeladen werden.
 
 Bei der Erstellung eines Dokumentverständnismodells erstellen Sie einen neuen [SharePoint-Inhaltstyp](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978), der im SharePoint-Inhaltstypenkatalog gespeichert wird. Bei Bedarf können Sie auch vorhandene Inhaltstypen verwenden, um das Modell zu definieren.
 
@@ -85,7 +85,7 @@ Verwenden Sie die folgende Tabelle, um zu verstehen, wann Sie die Formularverarb
 | Unterstützte Sprachen| Englisch <br>Später in 2021: Sprachen des lateinischen Alphabets | Die Modelle arbeiten mit allen Sprachen des lateinischen Alphabets. Zusätzlich zu Englisch: Deutsch, Schwedisch, Französisch, Spanisch, Italienisch und Portugiesisch.|
 
 ## <a name="see-also"></a>Siehe auch
-[Schulungen: Verbessern der Geschäftsergebnisse mit AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Schulungen: Verbessern der Geschäftsergebnisse mit AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
 
 

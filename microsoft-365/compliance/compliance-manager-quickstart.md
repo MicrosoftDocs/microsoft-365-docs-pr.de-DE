@@ -1,5 +1,5 @@
 ---
-title: Leitfaden zum Microsoft Compliance-Manager-Schnellstart
+title: Schnellstartanleitung für Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,58 +13,58 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Verwenden Sie den Compliance-Manager-Schnellstart Leitfaden, um Sie auf dem Weg des Verständnisses, der Einrichtung und der Verwendung des Compliance-Managers zu unterstützen.
-ms.openlocfilehash: c5159e1e6faa293ba3bd49d82bb06898ec9e0bdd
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+description: Verwenden Sie den Schnellstartleitfaden für Compliance-Manager, um Sie auf ihrem Weg zu Verstehen, Einrichten und Verwenden des Compliance-Managers zu unterstützen.
+ms.openlocfilehash: bb40fe0ace2f4b751e24d77f46dc1fc509eb42f4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698428"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906027"
 ---
 # <a name="compliance-manager-quickstart"></a>Compliance-Manager-Schnellstart
 
-**In diesem Artikel:** Verwenden Sie diese Schnellstartanleitung, um Sie bei der Verwendung von Microsoft Compliance Manager zu unterstützen, um die Einhaltung von Vorschriften, Richtlinien und Standards in Ihrer Organisation zu verwalten.
+**In diesem Artikel:** Verwenden Sie diese Schnellstartanleitung, um Ihnen bei der Verwendung von Microsoft Compliance Manager zu helfen, die Einhaltung von Vorschriften, Richtlinien und Standards in Ihrer Organisation zu verwalten.
 
-Compliance-Manager stellt bei Ihrem ersten Besuch intelligente und umsetzbare Daten bereit. Compliance-Manager verfügt darüber hinaus über erweiterte Funktionen für die Skalierung Ihrer Compliance, wenn Sie bereit sind. Die verfügbaren Bewertungen hängen von Ihrem Lizenzvertrag ab; [Weitere Informationen](https://go.microsoft.com/fwlink/?linkid=2132371).
+Compliance Manager bietet intelligente und aktionenfähige Daten bei Ihrem ersten Besuch. Compliance Manager verfügt auch über erweiterte Funktionen für die Skalierung Ihrer Compliance, wenn Sie bereit sind. Verfügbare Bewertungen hängen von Ihrem Lizenzvertrag ab. [Weitere Informationen finden Sie unter](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-Unabhängig davon, ob Sie den Compliance-Manager zum ersten Mal erreichen oder einige der erweiterten Funktionen verwenden möchten, dieses Handbuch unterstützt Sie auf Ihrer Reise.
+Ganz gleich, ob Sie zum ersten Mal im Compliance Manager sind oder bereit sind, einige der erweiterten Features zu verwenden, dieses Handbuch kann Sie auf Ihrem Weg unterstützen.
 
-## <a name="first-visit-get-to-know-compliance-manager"></a>Erster Besuch: Get to Know Compliance Manager
+## <a name="first-visit-get-to-know-compliance-manager"></a>Erster Besuch: Kennenlernen des Compliance-Managers
 
-Compliance-Manager befindet sich im Microsoft 365 Compliance Center unter https://compliance.microsoft.com . Der globale Administrator Ihrer Organisation muss [Benutzerberechtigungen einrichten und Rollen zuweisen](compliance-manager-setup.md#set-user-permissions-and-assign-roles) , bevor Sie mit dem Compliance-Manager beginnen können.
+Compliance Manager befindet sich im Microsoft 365 Compliance Center unter https://compliance.microsoft.com . Der globale Administrator Ihrer Organisation muss Benutzerberechtigungen einrichten und Rollen [zuweisen,](compliance-manager-setup.md#set-user-permissions-and-assign-roles) bevor Sie mit der Verwendung des Compliance-Managers beginnen.
 
-Wenn Sie den Compliance-Manager zum ersten Mal besuchen, wird ein Kompatibilitäts Faktor für Ihre Organisation angezeigt. Compliance-Manager bewertet bereits Ihre aktuelle Microsoft 365-Umgebung anhand der Datenschutz Basis. Die beste Möglichkeit, sich mit Compliance-Manager vertraut zu machen, ist, zu verstehen, was Sie zeigt, die wichtigsten Elemente und wie Sie Ihr Dashboard anpassen.
+Wenn Sie den Compliance Manager zum ersten Mal besuchen, sehen Sie eine Compliance-Bewertung für Ihre Organisation. Compliance Manager bewertet Ihre aktuelle Microsoft 365-Umgebung bereits anhand der Datenschutzgrundlinie. Die beste Möglichkeit, sich mit dem Compliance-Manager vertraut zu machen, besteht in der Darstellung, den wichtigsten Elementen und der Anpassung Ihres Dashboards.
 
-Unsere [Kompatibilitäts-Manager](compliance-manager.md) -Übersichtsseite ist der beste erste Anlaufpunkt für eine umfassende Überprüfung, was Compliance-Manager ist und wie dies funktioniert. Möglicherweise möchten Sie auch über die folgenden Links zu wichtigen Abschnitten unserer Dokumentation wechseln:
+Unsere [Compliance-Manager-Übersichtsseite](compliance-manager.md) ist die beste erste Station für eine umfassende Überprüfung, was Compliance Manager ist und wie er funktioniert. Sie können auch direkt zu den wichtigsten Abschnitten unserer Dokumentation springen, indem Sie die folgenden Links verwenden:
 
-- [Grundlegendes zur Konformitätsbewertung](compliance-manager.md#understanding-your-compliance-score)
-- [Übersicht über die wichtigsten Elemente: Steuerelemente, Bewertungen, Vorlagen und Verbesserungs Aktionen](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
-- [Grundlegendes zum Compliance-Manager-Dashboard](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
+- [Verstehen Ihrer Compliance-Bewertung](compliance-manager.md#understanding-your-compliance-score)
+- [Übersicht über die wichtigsten Elemente: Steuerelemente, Bewertungen, Vorlagen und Verbesserungsmaßnahmen](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
+- [Verstehen des Compliance -Manager-Dashboards](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [Filtern der Dashboardansicht](compliance-manager-setup.md#filtering-your-dashboard-view)
-- [Informationen zu Verbesserungs Aktionen](compliance-manager-setup.md#improvement-actions-page)
-- [Grundlegendes zu Bewertungen](compliance-manager.md#assessments)
-- [Ausführen eines Schnellscans Ihrer Umgebung mit dem Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
+- [Informationen zu Verbesserungsmaßnahmen](compliance-manager-setup.md#improvement-actions-page)
+- [Verstehen von Bewertungen](compliance-manager.md#assessments)
+- [Durchführen einer schnellen Überprüfung Ihrer Umgebung mithilfe von Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
 
-## <a name="ramping-up-configure-compliance-manager-to-manage-your-compliance-activities"></a>Hochfahren: Configure Compliance Manager to manage your Compliance Activities
+## <a name="ramping-up-configure-compliance-manager-to-manage-your-compliance-activities"></a>Hochfahren: Konfigurieren von Compliance Manager zum Verwalten Ihrer Complianceaktivitäten
 
-Nachdem Sie sich mit den Grundlagen vertraut gemacht haben, müssen Sie die Anforderungen der Organisation entsprechend festlegen. Sie können mit der Arbeit mit Bewertungen beginnen und Verbesserungs Aktionen zur Implementierung von Steuerelementen und zum Verbessern der Konformitätsbewertung durchführen. Wenn Sie wissen, wie Sie alle Aktivitäten in dieser Phase durchführen, können Sie Ihrer Organisation dabei helfen, die Einhaltung von Bestimmungen in ihrer Branche und Region zu erfüllen und zu demonstrieren. Besuchen Sie die Links unten, um in zu Tauchen:
+Sobald Sie mit den Grundlagen vertraut sind, ist es an der Zeit, die Dinge für die Anforderungen Ihrer Organisation zu erstellen. Sie können mit Bewertungen beginnen und Verbesserungsmaßnahmen ergreifen, um Steuerelemente zu implementieren und Ihre Compliancebewertung zu verbessern. Wenn Sie wissen, wie Sie alle Aktivitäten in dieser Phase ausführen, kann Ihre Organisation die Einhaltung von Vorschriften in Ihrer Branche und Region unterstützen und nachweisen. Besuchen Sie die unten aufgeführten Links, um eintauchen zu können:
 
-- [Auswählen einer vordefinierten Bewertung zum Erstellen und Verwalten Ihrer ersten Bewertung](compliance-manager-assessments.md)
-- [Grundlegendes zur Verwendung von Vorlagen zum Erstellen von Bewertungen](compliance-manager-templates.md)
-- [Durchführen von Implementierungs-und Test arbeiten an Verbesserungs Aktionen zum Abschließen von Steuerelementen in ihren Bewertungen](compliance-manager-improvement-actions.md)
-- [Besser verstehen, wie sich unterschiedliche Aktionen auf das Konformitäts Ergebnis auswirken](compliance-score-calculation.md)
+- [Wählen Sie eine vordefinierte Bewertung aus, um Ihre erste Bewertung zu erstellen und zu verwalten.](compliance-manager-assessments.md)
+- [Informationen zur Verwendung von Vorlagen zum Erstellen von Bewertungen](compliance-manager-templates.md)
+- [Durchführen von Implementierungs- und Testarbeiten an Verbesserungsmaßnahmen zum Abschließen von Steuerelementen in Ihren Bewertungen](compliance-manager-improvement-actions.md)
+- [Besser verstehen, wie sich unterschiedliche Aktionen auf Ihre Compliance-Bewertung auswirken](compliance-score-calculation.md)
 
-## <a name="scaling-up-use-advanced-functionality-to-meet-your-custom-needs"></a>Aufwärtsskalierung: Verwenden Sie erweiterte Funktionen, um Ihre benutzerdefinierten Anforderungen zu erfüllen.
+## <a name="scaling-up-use-advanced-functionality-to-meet-your-custom-needs"></a>Hochskalieren: Verwenden sie erweiterte Funktionen, um Ihre benutzerdefinierten Anforderungen zu erfüllen
 
-Wenn Sie das Management von Assessments im Compliance-Manager komfortabel verwalten, können Sie mit Vorlagen zusammenarbeiten, um eine Compliance-Manager-Bewertung mit ihren eigenen Aktionen und Steuerelementen zu ändern. Sie können auch eine eigene benutzerdefinierte Bewertung erstellen. Benutzerdefinierte Bewertungen sind hilfreich für:
+Wenn Sie es sich bequem machen, Bewertungen im Compliance Manager zu verwalten, können Sie mit Vorlagen arbeiten, um eine Compliance-Manager-Bewertung mit Ihren eigenen Aktionen und Steuerelementen zu ändern. Sie können auch eine eigene benutzerdefinierte Bewertung erstellen. Benutzerdefinierte Bewertungen sind hilfreich für:
 
-- Verwalten der Compliance für nicht von Microsoft 365 Produkte wie apps und Dienste von Drittanbietern, lokale Anwendungen und andere Objekte.
-- Verwalten eigener benutzerdefinierter oder Geschäfts spezifischer Compliance-Steuerelemente.
+- Verwalten der Compliance für Nicht-Microsoft 365-Produkte wie Apps und Dienste von Drittanbietern, lokale Anwendungen und andere Ressourcen.
+- Verwalten Eigener benutzerdefinierter oder geschäftsspezifischer Compliancesteuerelemente.
 
-Sie können auch automatisierte Tests aller oder einer Teilmenge von Verbesserungs Aktionen einrichten. Besuchen Sie die Links unten, um mehr erweiterte Funktionen im Compliance-Manager zu erfahren:
+Sie können auch automatisierte Tests aller oder einer Teilmenge von Verbesserungsmaßnahmen einrichten. Besuchen Sie die folgenden Links, um die erweiterten Funktionen im Compliance Manager zu verstehen:
 
-- [Erweitern einer Konformitäts-Manager-Bewertung durch Hinzufügen eigener Steuerelemente und Verbesserungs Aktionen](compliance-manager-assessments.md#extend-a-pre-built-assessment)
-- [Erstellen einer eigenen benutzerdefinierten Bewertung](compliance-manager-assessments.md#create-your-own-custom-assessment)
+- [Erweitern einer Compliance-Manager-Bewertung durch Hinzufügen eigener Steuerelemente und Verbesserungsmaßnahmen](compliance-manager-assessments.md#extend-a-pre-built-assessment)
+- [Erstellen Einer eigenen benutzerdefinierten Bewertung](compliance-manager-assessments.md#create-your-own-custom-assessment)
 - [Ändern einer vorhandenen Vorlage zum Hinzufügen oder Entfernen von Steuerelementen und Aktionen](compliance-manager-templates.md#modify-a-template)
-- [Einrichten von automatisierten Tests von Verbesserungs Aktionen](compliance-manager-setup.md#set-up-automated-testing)
-- [Erneutes Zuweisen von Verbesserungs Aktionen zu einem anderen Benutzer](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)
+- [Einrichten automatisierter Tests von Verbesserungsmaßnahmen](compliance-manager-setup.md#set-up-automated-testing)
+- [Erneutes Zuweisen von Verbesserungsmaßnahmen zu einem anderen Benutzer](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)

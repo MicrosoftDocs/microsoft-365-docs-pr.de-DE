@@ -1,7 +1,7 @@
 ---
-title: Erlernen der Abfragesprache "Erweiterte Suche" in Microsoft 365 Defender
+title: Erfahren Sie mehr über die erweiterte Suchabfragesprache in Microsoft 365 Defender
 description: Erstellen Sie Ihre erste Suchabfrage für Bedrohungen, und erfahren Sie mehr über die allgemeinen Operatoren und andere Aspekte der Abfragesprache für die erweiterte Suche.
-keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, MTP, m365, Suche, Abfrage, Sprache, lernen, erste Abfrage, Telemetrie, Ereignisse, Telemetrie, benutzerdefinierte Erkennungen, Schema, Kusto, Operatoren, Datentypen, Powershell-Download, Abfragebeispiel
+keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft Threat Protection, microsoft 365, mtp, m365, search, query, language, learn, first query, telemetry, events, telemetry, custom detections, schema, kusto, operators, data types, powershell download, query example
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 41341a2b5238485fc58021fe4af71cd5c635352c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f996cd00cc2f7a1f1de2540f1d6686d26431c4f4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929802"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904079"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Erlernen der Abfragesprache für die erweiterte Suche
 
@@ -35,11 +35,11 @@ ms.locfileid: "49929802"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Die erweiterte Suche basiert auf der [Kusto-Abfragesprache](https://docs.microsoft.com/azure/kusto/query/). Sie können die Operatoren und Anweisungen von Kusto verwenden, um Abfragen zu erstellen, die Informationen in einem speziellen Schema [suchen.](advanced-hunting-schema-tables.md) Wenn Sie diese Konzepte besser verstehen möchten, führen Sie Ihre erste Abfrage aus.
+Die erweiterte Suche basiert auf der [Kusto-Abfragesprache](/azure/kusto/query/). Sie können Kusto-Operatoren und -Anweisungen verwenden, um Abfragen zu erstellen, die Informationen in einem spezialisierten Schema [suchen.](advanced-hunting-schema-tables.md) Wenn Sie diese Konzepte besser verstehen möchten, führen Sie Ihre erste Abfrage aus.
 
 ## <a name="try-your-first-query"></a>Testen Ihrer ersten Abfrage
 
-Wechseln Sie im Microsoft 365 Security Center zu **"Suche",** um Ihre erste Abfrage ausführen zu können. Verwenden Sie das folgende Beispiel:
+Wechseln Sie im Microsoft 365 Security Center zu **Hunting,** um Ihre erste Abfrage ausführen. Verwenden Sie das folgende Beispiel:
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -70,20 +70,20 @@ Am Anfang der Abfrage wurde ein kurzer Kommentar hinzugefügt, um zu beschreiben
 // Finds PowerShell execution events that could involve a download
 ```
 
-Die Abfrage selbst beginnt in der Regel mit einem Tabellennamen, gefolgt von mehreren Elementen, die mit einer Pipe ( ) `|` beginnen. In diesem Beispiel erstellen wir zunächst eine Vereinigung von zwei Tabellen und fügen bei Bedarf  `DeviceProcessEvents` `DeviceNetworkEvents` Pipeelemente hinzu.
+Die Abfrage selbst beginnt in der Regel mit einem Tabellennamen gefolgt von mehreren Elementen, die mit einer Pipe beginnen ( `|` ). In diesem Beispiel erstellen wir zunächst eine Vereinigung von zwei Tabellen und und fügen bei Bedarf  `DeviceProcessEvents` `DeviceNetworkEvents` piped-Elemente hinzu.
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
 ### <a name="set-the-time-range"></a>Festlegen des Zeitbereichs
-Das erste gepipente Element ist ein Zeitfilter, der auf die vorherigen sieben Tage begrenzt ist. Durch das Begrenzen des Zeitbereichs können Sie sicherstellen, dass Abfragen eine gute Leistung erzielen, verwaltbare Ergebnisse zurückgeben und kein Zeitergebnis auftreten.
+Das erste piped-Element ist ein Zeitfilter, der auf die vorherigen sieben Tage begrenzt ist. Durch die Begrenzung des Zeitbereichs können Sie sicherstellen, dass Abfragen gut ausgeführt werden, verwaltbare Ergebnisse zurückgeben und keine Zeit zu einem Zeitverlauf führen.
 
 ```kusto
 | where Timestamp > ago(7d)
 ```
 
 ### <a name="check-specific-processes"></a>Überprüfen bestimmter Prozesse
-Auf den Zeitraum folgt unmittelbar eine Suche nach Prozessdateinamen, die die PowerShell-Anwendung darstellen.
+Auf den Zeitraum folgt sofort eine Suche nach Prozessdateinamen, die die PowerShell-Anwendung darstellen.
 
 ```kusto
 // Pivoting on PowerShell processes
@@ -105,8 +105,8 @@ Anschließend sucht die Abfrage nach Zeichenfolgen in Befehlszeilen, die normale
     "https")
 ```
 
-### <a name="customize-result-columns-and-length"></a>Anpassen von Ergebnisspalten und -länge 
-Nachdem Ihre Abfrage nun die daten, die Sie suchen möchten, eindeutig identifiziert, können Sie definieren, wie die Ergebnisse aussehen. `project` gibt bestimmte Spalten zurück und `top` schränkt die Anzahl der Ergebnisse ein. Diese Operatoren tragen dazu bei, dass die Ergebnisse gut formatiert und relativ groß und einfach zu verarbeiten sind.
+### <a name="customize-result-columns-and-length"></a>Anpassen von Ergebnisspalten und -längen 
+Nachdem Ihre Abfrage nun die zu suchende Daten eindeutig identifiziert, können Sie definieren, wie die Ergebnisse aussehen. `project` gibt bestimmte Spalten zurück und `top` beschränkt die Anzahl der Ergebnisse. Diese Operatoren tragen dazu bei, sicherzustellen, dass die Ergebnisse gut formatiert und relativ groß und einfach zu verarbeiten sind.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -114,16 +114,16 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Wählen **Sie "Abfrage ausführen"** aus, um die Ergebnisse zu sehen. Verwenden Sie das Erweiterungssymbol oben rechts im Abfrage-Editor, um sich auf Ihre Suchabfrage und die Ergebnisse zu konzentrieren. 
+Wählen **Sie Abfrage ausführen aus,** um die Ergebnisse zu sehen. Verwenden Sie das Erweiterungssymbol oben rechts im Abfrage-Editor, um sich auf Ihre Suchabfrage und die Ergebnisse zu konzentrieren. 
 
-![Abbildung des Steuerelements "Erweitern" im Abfrageeditor für die erweiterte Suche](../../media/advanced-hunting-expand.png)
+![Abbildung des Expand-Steuerelements im editor für erweiterte Suchabfragen](../../media/advanced-hunting-expand.png)
 
 >[!TIP]
->Sie können Abfrageergebnisse als Diagramme anzeigen und Filter schnell anpassen. Anleitungen zum [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md)
+>Sie können Abfrageergebnisse als Diagramme anzeigen und Filter schnell anpassen. Informationen zum Arbeiten [mit Abfrageergebnissen](advanced-hunting-query-results.md)
 
-## <a name="learn-common-query-operators"></a>Informationen zu allgemeinen Abfrageoperatoren
+## <a name="learn-common-query-operators"></a>Informationen zu häufig verwendeten Abfrageoperatoren
 
-Sie haben gerade Ihre erste Abfrage ausgeführt und haben eine allgemeine Vorstellung von deren Komponenten. Es ist An der Zeit, ein wenig zurück zu fahren und einige Grundlagen zu erlernen. Die von der erweiterten Suche verwendete Kusto-Abfragesprache unterstützt eine Reihe von Operatoren, darunter die folgenden allgemeinen Operatoren.
+Sie haben gerade Ihre erste Abfrage ausgeführt und haben eine allgemeine Vorstellung von deren Komponenten. Es ist an der Zeit, ein wenig zurück zu fahren und einige Grundlagen zu erlernen. Die von der erweiterten Suche verwendete Kusto-Abfragesprache unterstützt eine Reihe von Operatoren, darunter die folgenden allgemeinen Operatoren.
 
 | Operator | Beschreibung und Verwendung |
 |--|--|
@@ -146,25 +146,25 @@ Die erweiterte Suche unterstützt Kusto-Datentypen, einschließlich der folgende
 
 | Datentyp | Beschreibung und Auswirkungen der Abfrage |
 |--|--|
-| `datetime` | Daten- und Zeitinformationen, die in der Regel Ereigniszeitstempel darstellen. [Unterstützte Datums-/Uhrzeitformate](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
-| `string` | Zeichenzeichenfolge in UTF-8, eingeschlossen in einfache Anführungszeichen ( `'` ) oder doppelte Anführungszeichen ( `"` ). [Weitere Informationen zu Zeichenfolgen](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/string) |
-| `bool` | Dieser Datentyp unterstützt oder gibt `true` `false` Zustände an. [Unterstützte Literale und Operatoren sehen](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/bool) |
+| `datetime` | Daten- und Zeitinformationen, die in der Regel Ereigniszeitstempel darstellen. [Siehe unterstützte Datums-/Uhrzeitformate](/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
+| `string` | Zeichenzeichenfolge in UTF-8, eingeschlossen in einfache Anführungszeichen ( `'` ) oder doppelte Anführungszeichen ( `"` ). [Weitere Informationen zu Zeichenfolgen](/azure/data-explorer/kusto/query/scalar-data-types/string) |
+| `bool` | Dieser Datentyp unterstützt `true` oder `false` zustände. [Siehe unterstützte Literale und Operatoren](/azure/data-explorer/kusto/query/scalar-data-types/bool) |
 | `int` | 32-Bit-Ganzzahl  |
 | `long` | 64-Bit-Ganzzahl |
 
-Weitere Informationen zu diesen Datentypen finden [Sie unter Kusto skalare Datentypen.](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/)
+Weitere Informationen zu diesen Datentypen finden Sie [unter Kusto scalar data types](/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## <a name="get-help-as-you-write-queries"></a>Hilfe beim Schreiben von Abfragen
 Nutzen Sie die folgenden Funktionen, um Abfragen schneller zu schreiben:
-- **Automatisches Uggest**– beim Schreiben von Abfragen bietet die erweiterte Suche Vorschläge von IntelliSense. 
-- **Schemastruktur**– eine Schemadarstellung, die die Liste der Tabellen und deren Spalten enthält, wird neben dem Arbeitsbereich bereitgestellt. Wenn Sie weitere Informationen erhalten möchten, zeigen Sie mit dem Mauszeiger auf ein Element. Doppelklicken Sie auf ein Element, um es im Abfrage-Editor einzufügen.
-- **[Schemareferenz –](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** Portalreferenz mit Tabellen- und Spaltenbeschreibungen sowie unterstützten Ereignistypen `ActionType` (Werten) und Beispielabfragen
+- **Autouggest**– Beim Schreiben von Abfragen bietet die erweiterte Suche Vorschläge von IntelliSense. 
+- **Schemastruktur**– Eine Schemadarstellung, die die Liste der Tabellen und deren Spalten enthält, wird neben Ihrem Arbeitsbereich bereitgestellt. Wenn Sie weitere Informationen erhalten möchten, zeigen Sie mit dem Mauszeiger auf ein Element. Doppelklicken Sie auf ein Element, um es im Abfrage-Editor einzufügen.
+- **[Schemareferenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**– In-Portal-Referenz mit Tabellen- und Spaltenbeschreibungen sowie unterstützten Ereignistypen ( `ActionType` Werte) und Beispielabfragen
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>Arbeiten mit mehreren Abfragen im Editor
-Sie können den Abfrageeditor verwenden, um mit mehreren Abfragen zu experimentieren. So verwenden Sie mehrere Abfragen:
+Sie können den Abfrage-Editor verwenden, um mit mehreren Abfragen zu experimentieren. So verwenden Sie mehrere Abfragen:
 
 - Trennen Sie jede Abfrage durch eine leere Zeile.
-- Platzieren Sie den Cursor auf einem beliebigen Teil einer Abfrage, um diese Abfrage auszuwählen, bevor Sie sie ausführen. Dadurch wird nur die ausgewählte Abfrage ausgeführt. Wenn Sie eine andere Abfrage ausführen möchten, verschieben Sie den Cursor entsprechend, und wählen Sie **"Abfrage ausführen" aus.**
+- Platzieren Sie den Cursor auf einem beliebigen Teil einer Abfrage, um diese Abfrage auszuwählen, bevor Sie sie ausführen. Dadurch wird nur die ausgewählte Abfrage ausgeführt. Wenn Sie eine andere Abfrage ausführen möchten, verschieben Sie den Cursor entsprechend, und wählen Sie **Abfrage ausführen aus.**
 
 ![Abbildung des Abfrage-Editors mit mehreren Abfragen](../../media/mtp-ah/ah-multi-query.png)
 
@@ -175,11 +175,11 @@ Der Abschnitt **Erste Schritte** bietet einige einfache Abfragen mit häufig ver
 ![Abbildung eines erweiterten Suchfensters](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
->Abgesehen von den einfachen Abfragebeispielen können Sie auch auf [freigegebene Abfragen](advanced-hunting-shared-queries.md) für bestimmte Szenarien zur Bedrohungssuche zugreifen. Erkunden Sie die freigegebenen Abfragen auf der linken Seite der Seite oder das [GitHub-Abfragerepository.](https://aka.ms/hunting-queries)
+>Abgesehen von den einfachen Abfragebeispielen können Sie auch auf [freigegebene Abfragen](advanced-hunting-shared-queries.md) für bestimmte Szenarien zur Bedrohungssuche zugreifen. Erkunden Sie die freigegebenen Abfragen auf der linken Seite der Seite oder im [GitHub-Abfragerepository](https://aka.ms/hunting-queries).
 
 ## <a name="access-query-language-documentation"></a>Zugreifen auf die Dokumentation zur Abfragesprache
 
-Weitere Informationen zur Kusto-Abfragesprache und zu unterstützten Operatoren finden Sie unter [Dokumentation zur Kusto-Abfragesprache](https://docs.microsoft.com/azure/kusto/query/).
+Weitere Informationen zur Kusto-Abfragesprache und zu unterstützten Operatoren finden Sie unter [Dokumentation zur Kusto-Abfragesprache](/azure/kusto/query/).
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

@@ -19,22 +19,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Sind Sie bereit für die Implementierung von Vertraulichkeitsbezeichnungen, um die Daten Ihrer Organisation zu schützen, aber nicht sicher, wo Sie beginnen sollten? Hier finden Sie einige praktische Anleitungen, die Ihnen auf dem Weg zu Bezeichnungen helfen.
-ms.openlocfilehash: ef89cadc09dea7c2186fbf4a0d76d2c690aa8acc
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: b88e32ccfc0f82749ede2b0919001e9c29f7f7be
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597217"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906017"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Erste Schritte mit Vertraulichkeitsbezeichnungen
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Informationen darüber, was Vertraulichkeitsbezeichnungen sind und wie sie Ihnen helfen, die Daten Ihrer Organisation zu schützen, finden Sie unter [Weitere Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md).
 
-Wenn Sie [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) verwenden, ermitteln Sie, ob Sie Bezeichnungen zur Plattform für einheitliche Bezeichnungen migrieren müssen und welcher Bezeichnungsclient verwendet werden soll:
-- [Wie kann ich feststellen, ob meine Mandanten sich auf der Plattform für einheitliche Bezeichnungen befinden?](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
-- [Auswählen der Windows-Lösung für Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)
+Wenn Sie [Azure Information Protection](/azure/information-protection/what-is-information-protection) verwenden, ermitteln Sie, ob Sie Bezeichnungen zur Plattform für einheitliche Bezeichnungen migrieren müssen und welcher Bezeichnungsclient verwendet werden soll:
+- [Wie kann ich feststellen, ob meine Mandanten sich auf der Plattform für einheitliche Bezeichnungen befinden?](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
+- [Auswählen der Windows-Lösung für Bezeichnungen](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)
 
 Wenn Sie bereit sind, die Daten Ihrer Organisation mit Vertraulichkeitsbezeichnungen zu schützen:
 
@@ -54,7 +54,7 @@ Im Folgenden werden die grundlegenden Schritte für die Bereitstellung und Anwen
 
 Eine Reihe verschiedener Abonnements unterstützen Vertraulichkeitsbezeichnungen, und die Lizenzierungsanforderungen für Benutzer hängen von den von Ihnen verwendeten Features ab.
 
-Die Optionen für die Lizenzierung Ihrer Benutzer zur Nutzung der Microsoft 365-Compliancefeatures, finden Sie im [Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD). Informationen zu Vertraulichkeitsbezeichnungen finden Sie im Abschnitt [Informationsschutz](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) und im zugehörigen PDF- oder Excel-Download.
+Die Optionen für die Lizenzierung Ihrer Benutzer zur Nutzung der Microsoft 365-Compliancefeatures, finden Sie im [Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Informationen zu Vertraulichkeitsbezeichnungen finden Sie im Abschnitt [Informationsschutz](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) und im zugehörigen PDF- oder Excel-Download.
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>Für das Erstellen und Verwalten von Vertraulichkeitsbezeichnungen erforderliche Berechtigungen
 
@@ -64,7 +64,7 @@ Standardmäßig haben globale Administratoren für Ihren Mandanten Zugriff auf d
 
 Alternativ zur Verwendung der Standardrollen können Sie eine neue Rollengruppe erstellen und dieser entweder die Rolle **Administrator für Vertraulichkeitsbezeichnungen** oder die Rolle **Organisationskonfiguration** hinzufügen. Verwenden Sie für eine schreibgeschützte Rolle den **Vertraulichkeitsbezeichnungen-Leser**. 
 
-Anweisungen zum Hinzufügen von Benutzern zu den Standardrollen oder zum Erstellen eigener Rollengruppen finden Sie unter [Freigeben des Benutzerzugriffs auf das Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+Anweisungen zum Hinzufügen von Benutzern zu den Standardrollen oder zum Erstellen eigener Rollengruppen finden Sie unter [Freigeben des Benutzerzugriffs auf das Office 365 Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Diese Berechtigungen sind nur zum Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Bezeichnungsrichtlinien erforderlich. Sie müssen die Bezeichnungen in Apps oder Diensten nicht anwenden. Wenn für bestimmte Konfigurationen, die sich auf Vertraulichkeitsbezeichnungen beziehen, zusätzliche Berechtigungen erforderlich sind, sind diese Berechtigungen in den entsprechenden Dokumentations-Anweisungen aufgelistet.
 
@@ -82,19 +82,19 @@ In allen Szenarien müssen Sie [Vertraulichkeitsbezeichnungen und deren Richtlin
 |Ich möchte...|Dokumentation|
 |----------------|---------------|
 |Verwalten von Vertraulichkeitsbezeichnungen für Office-Apps, sodass der Inhalt bei seiner Erstellung mit Bezeichnungen versehen wird – enthält Unterstützung für manuelle Bezeichnung auf allen Plattformen |[Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps](sensitivity-labels-office-apps.md)|
-|Erlauben Sie Benutzern, Dateien von Windows-Computern mithilfe von Office-Apps, Datei-Explorer und PowerShell zu bezeichnen und zu schützen.|[Azure Information Protection-Clients mit einheitlichen Bezeichnungen für Windows](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
+|Erlauben Sie Benutzern, Dateien von Windows-Computern mithilfe von Office-Apps, Datei-Explorer und PowerShell zu bezeichnen und zu schützen.|[Azure Information Protection-Clients mit einheitlichen Bezeichnungen für Windows](/azure/information-protection/rms-client/aip-clientv2)|
 |Verschlüsseln von Dokumenten und E-Mails mit Vertraulichkeitsbezeichnungen sowie Einschränken, wer darauf zugreifen kann und wie diese Inhalte verwendet werden können |[Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung](encryption-sensitivity-labels.md)|
 |Aktivieren Sie Vertraulichkeitsbezeichnungen für Office im Web mit Unterstützung für die gemeinsame Dokumenterstellung, eDiscovery, Verhinderung von Datenverlust und Suche – sogar für verschlüsselte Dokumente. | [Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 |Verwenden von gemeinsamer Dokumenterstellung und AutoSpeichern in Office-Desktop-Apps, wenn Dokumente verschlüsselt werden | [Aktivieren der gemeinsamen Erstellung für Dateien, die mit Vertraulichkeitsbezeichnungen verschlüsselt sind](sensitivity-labels-coauthoring.md)
 |Automatisches Anwenden von Vertraulichkeitsbezeichnungen auf Dokumente und E-Mails | [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)|
 |Vertraulichkeitsbezeichnungen zum Schützen von Inhalten in Teams und SharePoint verwenden |[Verwendung von Vertraulichkeitsbezeichnungen bei Microsoft Teams, Microsoft 365-Gruppen und Microsoft Office SharePoint Online-Websites](sensitivity-labels-teams-groups-sites.md) |
 |Verhindern oder Warnen von Benutzern vor dem Freigeben von Dateien oder E-Mails mit einer bestimmten Vertraulichkeitsbezeichnung |[Verwenden von Vertraulichkeitsbezeichnungen als Bedingungen in DLP-Richtlinien (Vorschau)](dlp-sensitivity-label-as-condition.md) |
-|Dateien, die in lokalen Datenspeichern gespeichert sind, ermitteln, mit Bezeichnungen versehen und schützen |[Bereitstellen des Azure Information Protection-Scanners zum automatischen Klassifizieren und Schützen von Dateien](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
-|Dateien, die in Datenspeichern in der Cloud gespeichert sind, ermitteln, mit Bezeichnungen versehen und schützen|[Ermitteln, Klassifizieren, Bezeichnen und Schützen regulierter und sensibler Daten, die in der Cloud gespeichert werde](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|Anwenden und Anzeigen von Bezeichnungen in Power BI und Schutz der Daten beim Speichern außerhalb des Diensts|[Vertraulichkeitsbezeichnungen in Power BI](https://docs.microsoft.com/power-bi/admin/service-security-sensitivity-label-overview)|
+|Dateien, die in lokalen Datenspeichern gespeichert sind, ermitteln, mit Bezeichnungen versehen und schützen |[Bereitstellen des Azure Information Protection-Scanners zum automatischen Klassifizieren und Schützen von Dateien](/azure/information-protection/deploy-aip-scanner)|
+|Dateien, die in Datenspeichern in der Cloud gespeichert sind, ermitteln, mit Bezeichnungen versehen und schützen|[Ermitteln, Klassifizieren, Bezeichnen und Schützen regulierter und sensibler Daten, die in der Cloud gespeichert werde](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|Anwenden und Anzeigen von Bezeichnungen in Power BI und Schutz der Daten beim Speichern außerhalb des Diensts|[Vertraulichkeitsbezeichnungen in Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|
 |Überwachen und Verstehen, wie Vertraulichkeitsbezeichnungen in meiner Organisation verwendet werden|[Kennen Sie Ihre Daten – Überblick über die Datenklassifizierung](data-classification-overview.md) <br /><br /> [Erste Schritte mit Datenklassifizierung](data-classification-overview.md)|
-|Erweitern von Vertraulichkeitsbezeichnungen auf Drittanbieter-Apps und -Dienste.|[Microsoft Information Protection-SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|
-|Erweitern von Vertraulichkeitsbezeichnungen auf Inhalte in Azure Blob Storage, Azure Files, Azure Data Lake Storage Gen1, und Azure Data Lake Storage Gen12.|[Automatische Beschriftung Ihrer Inhalte in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label) |
+|Erweitern von Vertraulichkeitsbezeichnungen auf Drittanbieter-Apps und -Dienste.|[Microsoft Information Protection-SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|
+|Erweitern von Vertraulichkeitsbezeichnungen auf Inhalte in Azure Blob Storage, Azure Files, Azure Data Lake Storage Gen1, und Azure Data Lake Storage Gen12.|[Automatische Beschriftung Ihrer Inhalte in Azure Purview](/azure/purview/create-sensitivity-label) |
 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Dokumentation für Endbenutzer zu Vertraulichkeitsbezeichnungen
@@ -111,6 +111,6 @@ Für grundlegende Anweisungen können Sie auch die folgenden Ressourcen verwende
 - [Automatisches Anwenden oder Empfehlen von Vertraulichkeitsbezeichnungen für Ihre Dateien und E-Mails in Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [Bekannte Probleme beim automatischen Anwenden oder Empfehlen von Vertraulichkeitsbezeichnungen](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
 
-- [Azure Information Protection-Benutzerleitfaden zu einheitliche Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-user-guide)
+- [Azure Information Protection-Benutzerleitfaden zu einheitliche Bezeichnungen](/azure/information-protection/rms-client/clientv2-user-guide)
 
-Wenn Ihre Vertraulichkeitsbezeichnungen Verschlüsselung für PDF-Dokumente anwenden, können Sie diese Dokumente mit Microsoft Edge unter Windows oder Mac öffnen. Weitere Informationen und alternative Reader finden Sie unter [Welche PDF-Reader werden bei geschützten PDFs unterstützt?](https://docs.microsoft.com/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
+Wenn Ihre Vertraulichkeitsbezeichnungen Verschlüsselung für PDF-Dokumente anwenden, können Sie diese Dokumente mit Microsoft Edge unter Windows oder Mac öffnen. Weitere Informationen und alternative Reader finden Sie unter [Welche PDF-Reader werden bei geschützten PDFs unterstützt?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)

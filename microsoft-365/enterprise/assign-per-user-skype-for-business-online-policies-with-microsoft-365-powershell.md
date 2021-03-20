@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Zusammenfassung: Verwenden Sie PowerShell für Microsoft 365, um Benutzerkommunikationseinstellungen mit Skype for Business Online-Richtlinien zuzuordnen.'
-ms.openlocfilehash: 6ee237e5d2ee0c9f472f372a6aa66c9612336265
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50514980"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905404"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Zuweisen von Skype for Business Online-Richtlinien pro Benutzer mit PowerShell für Microsoft 365
 
@@ -34,7 +34,7 @@ Bereiten Sie sich mithilfe dieser Anweisungen auf die Ausführung der Befehle vo
   > [!Note]
    > Der Skype for Business Online-Connector ist derzeit Bestandteil des aktuellen PowerShell-Moduls von Teams. Wenn Sie die neueste Version von Teams PowerShell verwenden, müssen Sie den Skype for Business Online-Connector nicht installieren.
 
-1. Installieren Sie [das Teams PowerShell-Modul](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
+1. Installieren Sie das [PowerShell-Modul von Teams](/microsoftteams/teams-powershell-install).
     
 2. Öffnen Sie eine Windows PowerShell-Eingabeaufforderung, und führen Sie die folgenden Befehle aus: 
     
@@ -71,7 +71,7 @@ EnablePublicCloudAudioVideoAccess : False
 EnableOutsideAccess               : True
 ```
 
-Nachdem wir Sie wissen, welche Richtlinie Sie Alex zuweisen müssen, können Sie die Richtlinie mithilfe des Cmdlets [Grant-CsExternalAccessPolicy](https://go.microsoft.com/fwlink/?LinkId=523974) zuweisen: Hier ein Beispiel:
+Nachdem wir Sie wissen, welche Richtlinie Sie Alex zuweisen müssen, können Sie die Richtlinie mithilfe des Cmdlets [Grant-CsExternalAccessPolicy](/powershell/module/skype/Get-CsExternalAccessPolicy) zuweisen: Hier ein Beispiel:
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly"
@@ -106,7 +106,7 @@ Dieser Befehl legt den Namen der Alex zugewiesenen externen Zugriffsrichtlinie a
 
 ## <a name="managing-large-numbers-of-users"></a>Verwalten einer großen Anzahl von Benutzern
 
-Zum Verwalten einer großen Anzahl von Benutzern (1000 oder mehr) müssen Sie die Befehle über einen Skriptblock mit dem [Cmdlet Invoke-Command](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) batchen.  In den vorherigen Beispielen muss jedes Mal, wenn ein Cmdlet ausgeführt wird, der Aufruf eingerichtet und dann auf das Ergebnis gewartet werden, bevor es zurücksennen.  Bei Verwendung eines Skriptblocks können die Cmdlets remote ausgeführt und nach Abschluss der Ausführung die Daten zurück gesendet werden. 
+Zum Verwalten einer großen Anzahl von Benutzern (1000 oder mehr) müssen Sie die Befehle über einen Skriptblock mit dem [Cmdlet Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) batchen.  In den vorherigen Beispielen muss jedes Mal, wenn ein Cmdlet ausgeführt wird, der Aufruf eingerichtet und dann auf das Ergebnis gewartet werden, bevor es zurücksennen.  Bei Verwendung eines Skriptblocks können die Cmdlets remote ausgeführt und nach Abschluss der Ausführung die Daten zurück gesendet werden. 
 
 ```powershell
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500

@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 26e62d6e59f1f90e35d9e18e6eed917a66876645
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: f8dd666c41863192d866693c6860a64064f846e6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453921"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904852"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for Enterprise
 
@@ -47,7 +47,7 @@ Microsoft Managed Desktop unterstützt die Bereitstellung der 32-Bit-Version von
 
 ## <a name="updates-to-microsoft-365-apps"></a>Updates für Microsoft 365-Apps
 
-Microsoft 365-Apps werden auf dem monatlichen Unternehmenskanal [aktualisiert.](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) Diese Vorgehensweise stellt Ihren Benutzern jeden Monat neue Office-Features zur Verfügung, sie erhalten jedoch nur ein Update pro Monat in einem vorhersagbaren Veröffentlichungszeitplan. Updates werden am zweiten Dienstag des Monats veröffentlicht. Diese Updates können Feature-, Sicherheits- und Qualitätsupdates enthalten. Diese Updates erfolgen automatisch und werden direkt aus dem Office CDN für diesen bestimmten Kanal gezogen.
+Microsoft 365-Apps werden auf dem monatlichen Unternehmenskanal [aktualisiert.](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) Diese Vorgehensweise stellt Ihren Benutzern jeden Monat neue Office-Features zur Verfügung, sie erhalten jedoch nur ein Update pro Monat in einem vorhersagbaren Veröffentlichungszeitplan. Updates werden am zweiten Dienstag des Monats veröffentlicht. Diese Updates können Feature-, Sicherheits- und Qualitätsupdates enthalten. Diese Updates erfolgen automatisch und werden direkt aus dem Office CDN für diesen bestimmten Kanal gezogen.
 
 Microsoft Managed Desktop staffelt jede Version, um potenzielle Probleme in Ihrer Umgebung zu identifizieren. Wir schließen den Rollout 28 Tage nach der Veröffentlichung der Microsoft 365 App-Produktgruppe ab. Microsoft Managed Desktop plant Aktualisierungsversionen für verschiedene Gruppen, um Zeit für Überprüfungen und Tests wie folgt zu lassen: 
 
@@ -56,7 +56,7 @@ Microsoft Managed Desktop staffelt jede Version, um potenzielle Probleme in Ihre
 - Schnell: 3 Tage
 - Broad: 7 Tage
 
-Microsoft Managed Desktop legt einen Updatetermin von sieben [Tagen für](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) Geräte fest. Sobald das Update verfügbar ist, muss es innerhalb von sieben Tagen installiert werden. Benutzer [werden](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) benachrichtigt, dass Updates an mehreren Stellen erforderlich sind: der Anwendung, in der Systemleiste 12 Stunden vor dem Stichtag, und sie erhalten eine 15-minütige Warnung vor dem Stichtag. Alle Microsoft 365-Apps müssen geschlossen werden, damit das Update abgeschlossen ist.
+Microsoft Managed Desktop legt einen Updatetermin von sieben [Tagen für](/deployoffice/configure-update-settings-microsoft-365-apps) Geräte fest. Sobald das Update verfügbar ist, muss es innerhalb von sieben Tagen installiert werden. Benutzer [werden](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) benachrichtigt, dass Updates an mehreren Stellen erforderlich sind: der Anwendung, in der Systemleiste 12 Stunden vor dem Stichtag, und sie erhalten eine 15-minütige Warnung vor dem Stichtag. Alle Microsoft 365-Apps müssen geschlossen werden, damit das Update abgeschlossen ist.
 
 ### <a name="pausing-or-rolling-back-an-update"></a>Anhalten oder Rollback eines Updates
 
@@ -68,7 +68,7 @@ Während einer Version überwacht Microsoft Managed Desktop die Fehlerraten alle
 
 Die Übermittlungsoptimierung ist eine Peer-zu-Peer-Verteilungstechnologie, die unter Windows 10 verfügbar ist. Sie ermöglicht Es Geräten, Inhalte, z. B. Updates, zu teilen, die die Geräte über das Internet von Microsoft heruntergeladen haben. Die Verwendung kann dazu beitragen, die Netzwerkbandbreite zu reduzieren, da ein Gerät Teile des Updates von einem anderen Gerät im lokalen Netzwerk erhalten kann, anstatt das Update vollständig von Microsoft herunterladen zu müssen.
 
-[Die Übermittlungsoptimierung](https://docs.microsoft.com/deployoffice/delivery-optimization) ist standardmäßig auf Geräten mit den Editionen Windows 10 Enterprise oder Windows 10 Education aktiviert. 
+[Die Übermittlungsoptimierung](/deployoffice/delivery-optimization) ist standardmäßig auf Geräten mit den Editionen Windows 10 Enterprise oder Windows 10 Education aktiviert. 
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>Von Microsoft Managed Desktop verwaltete Einstellungen
 
@@ -76,7 +76,7 @@ Microsoft verwaltet einige Einstellungen als Teil des Diensts. Microsoft Managed
 
 ### <a name="update-settings"></a>Einstellungen aktualisieren
 
-Microsoft Managed Desktop verwaltet alle [Updateeinstellungen](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) für verwaltete Geräte, und Sie sollten diese Einstellungen ändern.
+Microsoft Managed Desktop verwaltet alle [Updateeinstellungen](/deployoffice/configure-update-settings-microsoft-365-apps) für verwaltete Geräte, und Sie sollten diese Einstellungen ändern.
 
 ### <a name="set-updates-to-occur-automatically"></a>Festlegen der automatischen Durchführung von Updates
 
@@ -88,7 +88,7 @@ Diese Richtlinie ist so konfiguriert, dass alle Office-Geräte aus der Cloud auf
 
 **Standardwert:** 7 Tage
 
-Die **UpdateDeadline-Richtlinie** wird verwendet, um den Kulanzzeitraum zu konfigurieren, den Benutzer haben, bevor ein Update auf dem Gerät erzwungen wird. Diese Stichtagrichtlinie löst außerdem Benachrichtigungen [an](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) den Benutzer aus, um sie über die auf ihrem Gerät erforderlichen Änderungen zu informieren.  
+Die **UpdateDeadline-Richtlinie** wird verwendet, um den Kulanzzeitraum zu konfigurieren, den Benutzer haben, bevor ein Update auf dem Gerät erzwungen wird. Diese Stichtagrichtlinie löst außerdem Benachrichtigungen [an](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) den Benutzer aus, um sie über die auf ihrem Gerät erforderlichen Änderungen zu informieren.  
 
 ### <a name="defer-updates-on-a-device-for-a-period"></a>Zurückdingen von Updates auf einem Gerät für einen Bestimmten Zeitraum
 
@@ -103,7 +103,7 @@ Diese Richtlinie ist für jede Updateverwaltungsgerätegruppe unterschiedlich ko
 
 **Standardwert:** False
 
-Die Einstellung "Updatebenachrichtigungen ausblenden" ist auf Microsoft Managed Desktop-Geräten auf [](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) **False** festgelegt, um benutzern die beste Updateerfahrung zu bieten, indem Sie sie benachrichtigen, wenn Updates erforderlich sind.
+Die Einstellung "Updatebenachrichtigungen ausblenden" ist auf Microsoft Managed Desktop-Geräten auf [](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) **False** festgelegt, um benutzern die beste Updateerfahrung zu bieten, indem Sie sie benachrichtigen, wenn Updates erforderlich sind.
 
 ### <a name="specify-a-location-to-look-for-updates"></a>Angeben eines Orts für die Suche nach Updates
 
@@ -150,7 +150,7 @@ Einige Organisationen machen sich Sorgen darüber, dass Benutzer auf ihren Gerä
 
 ## <a name="settings-you-manage"></a>Von Ihnen verwaltete Einstellungen
 
-Es gibt viele andere Richtlinien, die Microsoft Managed Desktop noch nicht als Teil unseres Diensts festgelegt hat. Sie können diese Richtlinien mithilfe von Microsoft Intune konfigurieren, das den [Office Cloud Policy Service](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) verwendet. Führen Sie zum Festlegen dieser Richtlinien die folgenden Schritte aus:
+Es gibt viele andere Richtlinien, die Microsoft Managed Desktop noch nicht als Teil unseres Diensts festgelegt hat. Sie können diese Richtlinien mithilfe von Microsoft Intune konfigurieren, das den [Office Cloud Policy Service](/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) verwendet. Führen Sie zum Festlegen dieser Richtlinien die folgenden Schritte aus:
 
 1.  Melden Sie sich beim Microsoft Endpoint Manager Admin Center an.
 2.  Auswählen **von Apps > Richtlinien für Office-Apps > Erstellen**

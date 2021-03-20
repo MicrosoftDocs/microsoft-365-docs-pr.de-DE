@@ -1,5 +1,5 @@
 ---
-title: Testen von Microsoft 365 mit testumgebungsanleitungen (TLGs)
+title: Testen von Microsoft 365 mit Test Lab Guides (TLGs)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,15 +19,15 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Zusammenfassung: Verwenden Sie diese Test Lab Guides (TLGs), um Demo, Machbarkeitsstudie oder Entwicklungs-/Test Umgebungen für Microsoft 365 einzurichten.'
-ms.openlocfilehash: 9a8c13cfc89eff0852cc0589448e7745220e47b9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 'Zusammenfassung: Verwenden Sie diese Test Lab Guides (TLGs) zum Einrichten von Demonstrationen, Konzeptnachweisen oder Entwicklungs-/Testumgebungen für Microsoft 365.'
+ms.openlocfilehash: 6d6beccf450f3c03e4503bdcb18a189658a1af13
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690432"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905176"
 ---
-# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Testen von Microsoft 365 mit testumgebungsanleitungen (TLGs)
+# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Testen von Microsoft 365 mit Test Lab Guides (TLGs)
 
 Mithilfe von Testumgebungsanleitungen können Sie sich schnell mit Microsoft-Produkten vertraut machen. Sie eignen sich besonders für Situationen, in denen Sie eine Technologie oder Konfiguration bewerten müssen, bevor Sie entscheiden, ob sie die richtige für Sie ist und bevor Sie mit dem Entwurf und der Planung beginnen sowie bevor Sie sie für Ihre Benutzer einführen. Diese praktische Erfahrung erweitert Ihre Kenntnisse der Bereitstellungsanforderungen neuer Produkte oder Lösungen, sodass Sie besser planen können, wie diese in der Produktionsumgebung gehostet werden sollen.
   
@@ -45,7 +45,7 @@ Verwenden Sie diese Artikel, um Ihre Microsoft 365-Entwicklungs-/Testumgebung zu
 
 - [Die simulierte Unternehmensstandardkonfiguration](simulated-ent-base-configuration-microsoft-365-enterprise.md)
     
-    Erstellen Sie ein vereinfachtes Intranet, das in Microsoft Azure Infrastructure Services und einem Microsoft 365 Enterprise E5-Testabonnement läuft. 
+    Erstellen Sie ein vereinfachtes Intranet, das in Microsoft Azure-Infrastrukturdiensten ausgeführt wird, und ein Microsoft 365 Enterprise E5-Testabonnement. 
 
     Dies ist optional und ist erforderlich, wenn Sie eine simulierte Unternehmenskonfiguration für hybride Identität erstellen möchten.
     
@@ -53,6 +53,6 @@ Weitere TLGs, die sowohl für Office 365 als auch für Microsoft 365 gelten, fin
     
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Microsoft 365 Lösungs- und Architektur-Center](../solutions/solution-architecture-center.md)
+[Microsoft 365-Lösungs- und Architekturcenter](../solutions/index.yml)
   
 [Hybridlösungen](hybrid-solutions.md)

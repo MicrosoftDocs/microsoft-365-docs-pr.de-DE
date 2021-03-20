@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Erhalten Sie einen regelmäßigen Bericht darüber, wie Personen in Ihrer Organisation Microsoft 365-Dienste verwenden. Im Dashboard "Verwendungsübersicht" können Sie die einzelnen Diagramme weiter aufschlüsseln, um weitere Erkenntnisse zu erhalten.
-ms.openlocfilehash: a71ced2dd0aa71179c1b26cec571f3025af1ce05
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 9b58c6fa51fbca5d78680b4b13cbbc2129d9c393
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603852"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903724"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-Berichte im Admin Center
 
@@ -136,13 +136,13 @@ Je nach Abonnement stehen die folgenden Berichte zur Verfügung.
 
 - [SharePoint-Aktivitäten für US-Regierungsbehörden](sharepoint-activity.md)
   
-- [Skype for Business Online-Aktivitäten](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
+- [Skype for Business Online-Aktivitäten](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
-- [Skype for Business Online – Aktivitäten zum Organisieren von Konferenzen](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
+- [Skype for Business Online – Aktivitäten zum Organisieren von Konferenzen](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
   
-- [Skype for Business Online – Aktivitäten von Konferenzteilnehmern](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
+- [Skype for Business Online – Aktivitäten von Konferenzteilnehmern](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
   
-- [Skype for Business Online – Peer-to Peer-Aktivitäten](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
+- [Skype for Business Online – Peer-to Peer-Aktivitäten](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
   
 ::: moniker range="o365-worldwide"
 
@@ -242,5 +242,4 @@ Wenn Sie jedoch einen bestimmten Tag auswählen (siehe Nummer 3), wird in dem Be
   
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Berichte im Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
-  
+[Berichte im Security &amp; Compliance Center](../../compliance/reports-in-security-and-compliance.md)

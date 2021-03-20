@@ -1,5 +1,5 @@
 ---
-title: Zuweisen von Administratorrollen Microsoft 365 Admin Center
+title: Zuweisen von Administratorrollen zum Microsoft 365 Admin Center
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -26,53 +26,53 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
-description: Hier erfahren Sie, wie Sie einem Benutzer oder mehreren Benutzern in Ihrem Unternehmen Administratorrollen zuweisen, damit diese bestimmte Aufgaben im Admin Center ausführen können.
-ms.openlocfilehash: c0dfef0860e5729a135a142383bdb60aa9d310be
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+description: Erfahren Sie, wie Sie einem Benutzer oder mehreren Benutzern in Ihrem Unternehmen Administratorrollen zuweisen, damit sie bestimmte Aufgaben im Admin Center ausführen können.
+ms.openlocfilehash: cfc4a7e106ca343435777aba1d0b9836f90a6f44
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906251"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904504"
 ---
 # <a name="assign-admin-roles"></a>Zuweisen von Administratorrollen
 
-Wenn Sie die Person sind, die Ihr Microsoft Business-Abonnement erworben hat, sind Sie der globale Administrator. Dies bedeutet, dass Sie die Produkte in ihren Abonnements uneingeschränkt steuern und auf die meisten Daten zugreifen können.
+Wenn Sie die Person sind, die Ihr Microsoft Business-Abonnement erworben hat, sind Sie der globale Administrator. Dies bedeutet, dass Sie unbegrenzte Kontrolle über die Produkte in Ihren Abonnements haben und auf die meisten Daten zugreifen können.
 
 Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](about-admin-roles.md).
 
-Wenn Sie neue Benutzer hinzufügen, wenn Sie Ihnen keine Administratorrolle zuweisen, befinden Sie sich in der *Benutzerrolle* und verfügen nicht über Administratorrechte für eines der Microsoft Admin Center. Wenn Sie jedoch Hilfe beim erledigen von Aufgaben benötigen, können Sie einem Benutzer eine Administratorrolle zuweisen. Wenn Sie beispielsweise eine Person benötigen, die das Zurücksetzen von Kennwörtern unterstützt, sollten Sie Ihnen nicht die globale Administratorrolle zuweisen, sondern Ihnen die kennwortadministratorrolle zuweisen. Zu viele globale Administratoren mit unbegrenztem Zugriff auf Ihre Daten und Ihr Onlinegeschäft zu ernennen, stellt ein Sicherheitsrisiko dar.
+Wenn Sie neue Benutzer hinzufügen und ihnen keine Administratorrolle zuweisen,  befinden sie sich in der Benutzerrolle und verfügen nicht über Administratorrechte für die Microsoft Admin Center. Wenn Sie jedoch Hilfe beim Erledigen von Aufgaben benötigen, können Sie einem Benutzer eine Administratorrolle zuweisen. Wenn Sie z. B. eine Person benötigen, die beim Zurücksetzen von Kennwörtern helfen soll, sollten Sie ihnen nicht die globale Administratorrolle zuweisen, sondern ihnen die Administratorrolle kennwort zuweisen. Zu viele globale Administratoren mit unbegrenztem Zugriff auf Ihre Daten und Ihr Onlinegeschäft zu ernennen, stellt ein Sicherheitsrisiko dar.
 
-## <a name="watch-add-an-adminbrbr"></a>Watch: Fügen Sie einen Administrator hinzu.<br><br>
+## <a name="watch-add-an-adminbrbr"></a>Watch: Add an admin.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
 
 ## <a name="assign-admin-roles"></a>Zuweisen von Administratorrollen 
 
 ::: moniker range="o365-worldwide"
 
-Sie können Benutzern eine Rolle auf zwei verschiedene Arten zuweisen:
+Sie können einer Rolle auf 2 unterschiedliche Weise Benutzer zuweisen:
 
-- Sie können zu den Details des Benutzers wechseln und **Rollen verwalten** , um dem Benutzer eine Rolle zuzuweisen.
+- Sie können zu den Details des Benutzers wechseln und **Rollen** verwalten, um dem Benutzer eine Rolle zuzuordnen.
 - Sie können auch zu **Rollen** wechseln und die Rolle auswählen und dann mehrere Benutzer hinzufügen.
 
 ### <a name="assign-admin-roles-to-users-using-roles"></a>Zuweisen von Administratorrollen zu Benutzern mithilfe von Rollen
 
-1. Wechseln Sie im Admin Center zu **Rollen** > **Rollen** , um alle für Ihre Organisation verfügbaren Administratorrollen anzuzeigen.
+1. Wechseln Sie im Admin  Center zu Rollenrollen, um alle für Ihre Organisation verfügbaren >  Administratorrollen anzeigen zu können.
 2. Wählen Sie die Administratorrolle aus, der Sie den Benutzer zuweisen möchten.
-3. Wählen Sie **zugewiesene Administratoren** > **Hinzufügen** aus.
-4. Geben Sie den **Anzeigenamen** oder Benutzer **Namen** des Benutzers ein, und wählen Sie dann den Benutzer aus der Liste der Vorschläge aus.
+3. Wählen **Sie Zugewiesene Administratoren** Hinzufügen > **aus.**
+4. Geben Sie den **Anzeigenamen oder** Benutzernamen des Benutzers **ein,** und wählen Sie dann den Benutzer aus der Liste der Vorschläge aus.
 5. Fügen Sie mehrere Benutzer hinzu, bis Sie fertig sind.
-6. Wählen Sie **Speichern** aus, und dann wird der Benutzer der Liste der zugewiesenen Administratoren hinzugefügt.
+6. Wählen **Sie Speichern** aus, und dann wird der Benutzer der Liste der zugewiesenen Administratoren hinzugefügt.
 
 ### <a name="assign-a-user-to-an-admin-role-from-active-users"></a>Zuweisen eines Benutzers zu einer Administratorrolle über "Aktive Benutzer"
 
-1. Wechseln Sie im Admin Center zur Seite **Benutzer** > [aktive Benutzer](https://go.microsoft.com/fwlink/p/?linkid=834822) .
+1. Wechseln Sie im Admin Center zu **Seite Aktive** > [Benutzer.](https://go.microsoft.com/fwlink/p/?linkid=834822)
 
-2. Wählen Sie auf der Seite **aktive Benutzer** den Benutzer aus, dessen Administratorrolle Sie ändern möchten. Wählen Sie im Flyout-Bereich neben **Rollen** die Option **Rollen verwalten** aus.
+2. Wählen Sie **auf der Seite** Aktive Benutzer den Benutzer aus, dessen Administratorrolle Sie ändern möchten. Wählen Sie im Flyoutbereich neben **Rollen** die Option Rollen **verwalten aus.**
 
-3. Wählen Sie die Administratorrolle aus, die Sie dem Benutzer zuweisen möchten. Wenn die gesuchte Rolle nicht angezeigt wird, wählen Sie am Ende der Liste **Alle anzeigen** aus.
+3. Wählen Sie die Administratorrolle aus, die Sie dem Benutzer zuweisen möchten. Wenn die gesuchte Rolle nicht angezeigt wird, wählen Sie **am** Ende der Liste Alle anzeigen aus.
 
 ::: moniker-end
 
@@ -80,11 +80,11 @@ Sie können Benutzern eine Rolle auf zwei verschiedene Arten zuweisen:
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
 
-2. Wählen Sie auf der Seite **aktive Benutzer** den Benutzer aus, dessen Administratorrolle Sie ändern möchten. Wählen Sie im Flyout-Bereich neben **Rollen** die Option **Bearbeiten** aus. 
+2. Wählen Sie **auf der Seite** Aktive Benutzer den Benutzer aus, dessen Administratorrolle Sie ändern möchten. Wählen Sie im Flyoutbereich neben **Rollen** die Option **Bearbeiten aus.** 
 
-    Wenn die Option **Bearbeiten** nicht angezeigt wird, verfügen Sie nicht über die Berechtigung zum Bearbeiten und können anderen Personen keine Administratorrollen zuweisen. Bitten Sie einen globalen Administrator in Ihrem Unternehmen, Ihnen Rollen zuzuweisen. In einem kleinen Unternehmen ist der Geschäftsinhaber (die Person, die das Abonnement erworben hat) ein globaler Administrator. In einem großen Unternehmen sind die wichtigsten Personen in der IT-Abteilung globale Administratoren.
+    Wenn die Option Bearbeiten  nicht angezeigt wird, verfügen Sie nicht über die Berechtigung zum Bearbeiten und können anderen Personen keine Administratorrollen zuweisen. Bitten Sie einen globalen Administrator in Ihrem Unternehmen, Ihnen Rollen zuzuordnen. In einem kleinen Unternehmen ist der Geschäftsbesitzer (die Person, die Ihr Abonnement erworben hat) ein globaler Administrator. In einem großen Unternehmen sind die wichtigsten Mitarbeiter der IT-Abteilung globale Administratoren.
 
-3. Wählen Sie **benutzerdefinierter Administrator** aus, um eine Liste der Rollen anzuzeigen, die wir für Sie angepasst haben. Eine Beschreibung der einzelnen Rollen finden Sie unter [Informationen zu Administratorrollen.](about-admin-roles.md)
+3. Wählen **Sie Angepasster Administrator** aus, um eine Liste der Rollen zu sehen, die wir für Sie angepasst haben. Eine Beschreibung der einzelnen Rollen finden Sie unter [Informationen zu Administratorrollen.](about-admin-roles.md)
 
 ::: moniker-end
 
@@ -92,30 +92,30 @@ Sie können Benutzern eine Rolle auf zwei verschiedene Arten zuweisen:
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
 
-2. Wählen Sie auf der Seite **aktive Benutzer** den Benutzer aus, dessen Administratorrolle Sie ändern möchten. Wählen Sie im Flyout-Bereich neben **Rollen** die Option **Bearbeiten** aus.
+2. Wählen Sie **auf der Seite** Aktive Benutzer den Benutzer aus, dessen Administratorrolle Sie ändern möchten. Wählen Sie im Flyoutbereich neben **Rollen** die Option **Bearbeiten aus.**
 
-    Wenn die Option **Bearbeiten** nicht angezeigt wird, verfügen Sie nicht über die Berechtigung zum Bearbeiten und können anderen Personen keine Administratorrollen zuweisen. Bitten Sie einen globalen Administrator in Ihrem Unternehmen, Ihnen Rollen zuzuweisen. In einem kleinen Unternehmen ist der Geschäftsinhaber (die Person, die das Abonnement erworben hat) ein globaler Administrator. In einem großen Unternehmen sind die wichtigsten Personen in der IT-Abteilung globale Administratoren.
+    Wenn die Option Bearbeiten  nicht angezeigt wird, verfügen Sie nicht über die Berechtigung zum Bearbeiten und können anderen Personen keine Administratorrollen zuweisen. Bitten Sie einen globalen Administrator in Ihrem Unternehmen, Ihnen Rollen zuzuordnen. In einem kleinen Unternehmen ist der Geschäftsbesitzer (die Person, die Ihr Abonnement erworben hat) ein globaler Administrator. In einem großen Unternehmen sind die wichtigsten Mitarbeiter der IT-Abteilung globale Administratoren.
 
-3. Wählen Sie **benutzerdefinierter Administrator** aus, um eine Liste der Rollen anzuzeigen, die wir für Sie angepasst haben. Eine Beschreibung der einzelnen Rollen finden Sie unter [Informationen zu Administratorrollen.](about-admin-roles.md)
+3. Wählen **Sie Angepasster Administrator** aus, um eine Liste der Rollen zu sehen, die wir für Sie angepasst haben. Eine Beschreibung der einzelnen Rollen finden Sie unter [Informationen zu Administratorrollen.](about-admin-roles.md)
 
 ::: moniker-end
 
 ## <a name="assign-admin-roles-to-multiple-users"></a>Zuweisen von Administratorrollen zu mehreren Benutzern
 
-Wenn Sie PowerShell kennen, lesen Sie [Zuweisen von Rollen zu Benutzerkonten mit PowerShell](https://go.microsoft.com/fwlink/?linkid=854257). PowerShell ist ideal für die Zuweisung von Rollen zu mehreren hundert Benutzern geeignet.
+Wenn Sie PowerShell kennen, lesen Sie Zuweisen von Rollen [zu Benutzerkonten mit PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md). PowerShell ist ideal für die Zuweisung von Rollen zu mehreren hundert Benutzern geeignet.
   
 Verwenden Sie die folgenden Anweisungen, um dutzenden Benutzern Rollen zuzuweisen.
 
 ::: moniker range="o365-worldwide"
 
-## <a name="check-admin-roles-in-your-organization"></a>Überprüfen der Administratorrollen in Ihrer Organisation
+## <a name="check-admin-roles-in-your-organization"></a>Überprüfen von Administratorrollen in Ihrer Organisation
 
-Möglicherweise verfügen Sie nicht über die richtigen Berechtigungen, um anderen Benutzern Administratorrollen zuzuweisen. Stellen Sie sicher, dass Sie über die richtigen Berechtigungen verfügen, oder bitten Sie einen anderen Administrator, Ihnen Rollen zuzuweisen.
+Möglicherweise verfügen Sie nicht über die richtigen Berechtigungen zum Zuweisen von Administratorrollen zu anderen Benutzern. Überprüfen Sie, ob Sie über die richtigen Berechtigungen verfügen, oder bitten Sie einen anderen Administrator, Ihnen Rollen zu zuweisen.
 
-Sie können die Berechtigungen der Administratorrolle auf zwei verschiedene Arten überprüfen:
+Sie können die Administratorrolleberechtigungen auf zwei verschiedene Arten überprüfen:
 
-- Auf der Seite **Konto** können Sie zu den Details des Benutzers wechseln und unter **Rollen** suchen.
-- Sie können auch zu **Rollen** wechseln und die Administratorrolle auswählen und die zugewiesenen Administratoren auswählen, um zu sehen, welche Benutzer zugewiesen sind.
+- Sie können zu den Details des Benutzers wechseln und auf der Seite Konto unter **Rollen** **suchen.**
+- Sie können auch zu **Rollen** wechseln und die Administratorrolle auswählen und zugewiesene Administratoren auswählen, um zu sehen, welche Benutzer zugewiesen sind.
 
 ::: moniker-end
 
@@ -123,8 +123,8 @@ Sie können die Berechtigungen der Administratorrolle auf zwei verschiedene Arte
 
 [Informationen zu Microsoft 365-Administratorrollen](about-admin-roles.md)
 
-[Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+[Administratorrollenberechtigungen in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-[Zuweisen von Rollen zu Benutzerkonten mit PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell)
+[Zuweisen von Rollen zu Benutzerkonten mit PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md)
 
 [Autorisieren oder Entfernen von Partnerbeziehungen](../misc/add-partner.md)

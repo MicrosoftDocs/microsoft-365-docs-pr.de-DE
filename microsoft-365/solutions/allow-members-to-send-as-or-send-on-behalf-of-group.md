@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Erfahren Sie, wie Sie Gruppenmitgliedern das Senden von E-Mails als Microsoft 365-Gruppe oder das Senden von E-Mails im Namen einer Microsoft 365-Gruppe erlauben.
-ms.openlocfilehash: 44a0a7a690c8faa9fe00732e8154f36aa5a6fe6f
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: cc0a9472f127fae94d77f618ed7347d844879ba8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727079"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904744"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Zulassen, dass Mitglieder im Namen einer Gruppe senden oder senden
 
@@ -84,6 +84,6 @@ In diesem Abschnitt wird erläutert, wie Benutzern das Senden von E-Mails im Nam
 
 [Weitere Informationen zu Microsoft 365-Gruppen](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[Add-RecipientPermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
+[Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)
 
-[Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189)
+[Set-UnifiedGroup](/powershell/module/exchange/set-unifiedgroup)

@@ -12,16 +12,16 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: Erfahren Sie, wie Sie Exchange Online-Multi-Geo-Einstellungen in Ihrer Microsoft 365-Umgebung mit PowerShell verwalten.
-ms.openlocfilehash: 83889b4582d2e305b2cb9f07a64307e85d30be77
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: c8f06318313c4192fc2b3a289727933c5a54f3ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406042"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905584"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Verwalten von Exchange Online-Postfächern in einer Multi-Geo-Umgebung
 
-Exchange Online PowerShell ist erforderlich, um Multi-Geo-Eigenschaften in Ihrer Microsoft 365-Umgebung anzeigen und konfigurieren zu können. Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+Exchange Online PowerShell ist erforderlich, um Multi-Geo-Eigenschaften in Ihrer Microsoft 365-Umgebung anzeigen und konfigurieren zu können. Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 Sie benötigen das [Microsoft Azure Active Directory PowerShell-Modul](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 oder später in v1.x, um die **PreferredDataLocation**-Eigenschaft an Benutzerobjekten anzuzeigen. Benutzerobjekte, die über AAD Connect mit AAD synchronisiert werden, können ihren **PreferredDataLocation**-Wert direkt über AAD PowerShell ändern lassen. Nur-Cloud-Benutzerobjekte können über AAD PowerShell geändert werden. Wie Sie eine Verbindung mit Azure AD PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit PowerShell](connect-to-microsoft-365-powershell.md).
 
@@ -31,7 +31,7 @@ In Exchange Online Multi-Geo-Umgebungen müssen Sie keine manuellen Schritte zum
 
 Normalerweise verbindet sich Exchange Online PowerShell mit dem zentralen geografischen Standort. Sie können sich aber auch direkt mit geografischen Satellitenstandorten verbinden. Aufgrund von Leistungsverbesserungen empfehlen wir, sich direkt mit dem geografischen Satellitenstandort zu verbinden, wenn Sie nur Benutzer an diesem geografischem Standort verwalten.
 
-Die Anforderungen für die Installation und Verwendung des EXO V2-Moduls sind in [Installieren und Verwalten des EXO V2-Moduls](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module) beschrieben.
+Die Anforderungen für die Installation und Verwendung des EXO V2-Moduls sind in [Installieren und Verwalten des EXO V2-Moduls](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module) beschrieben.
 
 Um Exchange Online PowerShell mit einem bestimmten geografischen Standort zu verbinden, ist der *ConnectionUri-Parameter* anders als die regulären Verbindungsanweisungen. Die restlichen Befehle und Werte sind identisch.
 
@@ -136,7 +136,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 > [!NOTE]
 >
-> - Wie bereits erwähnt, können Sie dieses Verfahren nicht für synchronisierte Benutzerobjekte aus lokalem Active Directory verwenden. Sie müssen den **PreferredDataLocation**-Wert in Active Directory ändern und mithilfe von AAD Connect synchronisieren. Weitere Informationen finden Sie unter [Azure Active Directory Connect-Synchronisierung: Konfigurieren von bevorzugten Datenspeicherorten für Microsoft 365-Ressourcen](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+> - Wie bereits erwähnt, können Sie dieses Verfahren nicht für synchronisierte Benutzerobjekte aus lokalem Active Directory verwenden. Sie müssen den **PreferredDataLocation**-Wert in Active Directory ändern und mithilfe von AAD Connect synchronisieren. Weitere Informationen finden Sie unter [Azure Active Directory Connect-Synchronisierung: Konfigurieren von bevorzugten Datenspeicherorten für Microsoft 365-Ressourcen](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 >
 > - Wie lange es dauert, ein Postfach an einen neuen geografischen Standort zu verschieben, hängt von mehreren Faktoren ab:
 >
@@ -148,29 +148,29 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 Sie können inaktive Postfächer, die für Compliancezwecke beibehalten werden (z. B. Postfächer im Prozesssicherungsverfahren), nicht verschieben, indem Sie deren **PreferredDataLocation-Wert** ändern. Gehen Sie wie folgt vor, um ein inaktives Postfach in einen anderen geografischen Standort zu verschieben:
 
-1. Stellen Sie das inaktive Postfach wiederher. Anweisungen finden Sie unter [Recover an inactive mailbox](https://docs.microsoft.com/microsoft-365/compliance/recover-an-inactive-mailbox).
+1. Stellen Sie das inaktive Postfach wiederher. Anweisungen finden Sie unter [Recover an inactive mailbox](../compliance/recover-an-inactive-mailbox.md).
 
-2. Verhindern Sie, dass der Assistent für verwaltete Ordner das wiederhergestellte Postfach verarbeitet, indem er den Namen, den Alias, das Konto oder die E-Mail-Adresse des Postfachs ersetzt und den folgenden Befehl \<MailboxIdentity\> in [Exchange Online PowerShell ausführen:](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+2. Verhindern Sie, dass der Assistent für verwaltete Ordner das wiederhergestellte Postfach verarbeitet, indem er den Namen, den Alias, das Konto oder die E-Mail-Adresse des Postfachs ersetzt und den folgenden Befehl \<MailboxIdentity\> in [Exchange Online PowerShell ausführen:](/powershell/exchange/connect-to-exchange-online-powershell)
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
     ```
 
-3. Weisen Sie **dem wiederhergestellten** Postfach eine Exchange Online Plan 2-Lizenz zu. Dieser Schritt ist erforderlich, um das Postfach wieder im Prozesssicherungsverfahren zu platzieren. Anweisungen finden Sie unter [Zuweisen von Lizenzen zu Benutzern](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
+3. Weisen Sie **dem wiederhergestellten** Postfach eine Exchange Online Plan 2-Lizenz zu. Dieser Schritt ist erforderlich, um das Postfach wieder im Prozesssicherungsverfahren zu platzieren. Anweisungen finden Sie unter [Zuweisen von Lizenzen zu Benutzern](../admin/manage/assign-licenses-to-users.md).
 
 4. Konfigurieren Sie **den PreferredDataLocation-Wert** für das Postfach wie im vorherigen Abschnitt beschrieben.
 
-5. Nachdem Sie bestätigt haben, dass das Postfach an den neuen geografischen Speicherort verschoben wurde, setzen Sie das wiederhergestellte Postfach wieder in das Prozesssicherungsverfahren ein. Anweisungen finden Sie unter [Place a mailbox on Litigation Hold](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold#place-a-mailbox-on-litigation-hold).
+5. Nachdem Sie bestätigt haben, dass das Postfach an den neuen geografischen Speicherort verschoben wurde, setzen Sie das wiederhergestellte Postfach wieder in das Prozesssicherungsverfahren ein. Anweisungen finden Sie unter [Place a mailbox on Litigation Hold](../compliance/create-a-litigation-hold.md#place-a-mailbox-on-litigation-hold).
 
-6. Nachdem Sie überprüft haben, ob das Verfahrensverfahren in Kraft ist, können Sie dem Assistenten für verwaltete Ordner erlauben, das Postfach erneut zu verarbeiten, indem Sie den Namen, den Alias, das Konto oder die E-Mail-Adresse des Postfachs ersetzen und den folgenden Befehl \<MailboxIdentity\> in [Exchange Online PowerShell ausführen:](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+6. Nachdem Sie überprüft haben, ob das Verfahrensverfahren in Kraft ist, können Sie dem Assistenten für verwaltete Ordner erlauben, das Postfach erneut zu verarbeiten, indem Sie den Namen, den Alias, das Konto oder die E-Mail-Adresse des Postfachs ersetzen und den folgenden Befehl \<MailboxIdentity\> in [Exchange Online PowerShell ausführen:](/powershell/exchange/connect-to-exchange-online-powershell)
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
     ```
 
-7. Machen Sie das Postfach erneut inaktiv, indem Sie das Benutzerkonto entfernen, das dem Postfach zugeordnet ist. Anweisungen finden Sie unter [Löschen eines Benutzers aus Ihrer Organisation](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user). In diesem Schritt wird auch die Exchange Online Plan 2-Lizenz für andere Zwecke veröffentlicht.
+7. Machen Sie das Postfach erneut inaktiv, indem Sie das Benutzerkonto entfernen, das dem Postfach zugeordnet ist. Anweisungen finden Sie unter [Löschen eines Benutzers aus Ihrer Organisation](../admin/add-users/delete-a-user.md). In diesem Schritt wird auch die Exchange Online Plan 2-Lizenz für andere Zwecke veröffentlicht.
 
-**Hinweis**: Wenn Sie ein inaktives Postfach an einen anderen geografischen Speicherort verschieben, können Sie sich auf die Inhaltssuchergebnisse oder die Möglichkeit auswirken, das Postfach vom früheren geografischen Standort aus zu durchsuchen. Weitere Informationen finden Sie unter [Durchsuchen und Exportieren von Inhalten in Multi-Geo-Umgebungen](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments).
+**Hinweis**: Wenn Sie ein inaktives Postfach an einen anderen geografischen Speicherort verschieben, können Sie sich auf die Inhaltssuchergebnisse oder die Möglichkeit auswirken, das Postfach vom früheren geografischen Standort aus zu durchsuchen. Weitere Informationen finden Sie unter [Durchsuchen und Exportieren von Inhalten in Multi-Geo-Umgebungen](../compliance/set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments).
 
 ## <a name="create-new-cloud-mailboxes-in-a-specific-geo-location"></a>Neue Cloud-Postfächer an einem bestimmten geografischen Standort erstellen
 
@@ -207,11 +207,11 @@ Weitere Informationen zum Erstellen neuer Benutzerkonten und Suchen von LicenseA
 
 ## <a name="onboard-existing-on-premises-mailboxes-in-a-specific-geo-location"></a>Integrieren vorhandener lokaler Postfächer an einem bestimmten geografischen Standort
 
-Sie können die standardmäßigen Onboarding-Tools und -Prozesse verwenden, um ein Postfach von einer lokalen Exchange-Organisation zu Exchange Online zu migrieren, einschließlich des [Migrations-Dashboards im EAC](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331) und des [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch)-Cmdlets in Exchange Online PowerShell.
+Sie können die standardmäßigen Onboarding-Tools und -Prozesse verwenden, um ein Postfach von einer lokalen Exchange-Organisation zu Exchange Online zu migrieren, einschließlich des [Migrations-Dashboards im EAC](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331) und des [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch)-Cmdlets in Exchange Online PowerShell.
 
 Der erste Schritt besteht in der Überprüfung, ob für jedes zu integrierende Postfach ein Benutzerobjekt vorhanden ist und ob der korrekte **PreferredDataLocation**-Wert in Azure Active Directory konfiguriert ist. Die Onboarding-Tools berücksichtigen den **PreferredDataLocation**-Wert und migrieren die Postfächer direkt an den angegebenen geografischen Standorte.
 
-Oder Sie können die folgenden Schritte ausführen, um Postfächer direkt an einem bestimmten geografischen Standort mit dem [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/new-moverequest)-Cmdlet in Exchange Online PowerShell zu integrieren.
+Oder Sie können die folgenden Schritte ausführen, um Postfächer direkt an einem bestimmten geografischen Standort mit dem [New-MoveRequest](/powershell/module/exchange/new-moverequest)-Cmdlet in Exchange Online PowerShell zu integrieren.
 
 1. Überprüfen Sie, ob das Benutzerobjekt für jedes zu integrierende Postfach vorhanden ist und ob **PreferredDataLocation** in Azure AD auf den gewünschten Wert festgelegt ist. Der Wert von **PreferredDataLocation** wird mit dem Attribut **MailboxRegion** des entsprechenden E-Mail-Benutzerobjekts in Exchange Online synchronisiert.
 

@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Implementieren Sie die Microsoft-Informationsgovernance-Funktionen, um Ihre Daten mit Blick auf die Einhaltung von Compliance-Vorschriften oder behördlichen Anforderungen zu kontrollieren.
-ms.openlocfilehash: 6b06de54f18ce4081c3b13d108a5c0ceae6d24a7
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 8a104775cd9bfc75af5b5af9840274f5f84509f0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087114"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903491"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft-Informationsgovernance in Microsoft 365
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Verwenden Sie die Microsoft Information Governance (MIG)-Funktionen, um Ihre Daten mit Blick auf die Einhaltung von Compliance-Vorschriften oder behördlichen Anforderungen zu kontrollieren.
 
@@ -49,4 +49,3 @@ So verwalten Sie hochwertige Inhalte für gesetzliche, geschäftliche oder behö
 |Funktion|Welches Probleme löst es für Sie?|Erste Schritte|
 |:------|:------------|---------------------|:----------------------------|
 |[Datensatzverwaltung](records-management.md)| Eine einheitliche Lösung für E-Mails und Dokumente, die Aufbewahrungspläne und -anforderungen in einen Ablageplan integriert, der den gesamten Lebenszyklus Ihrer Inhalte mit der Deklaration, Aufbewahrung und Löschung von Datensätzen unterstützt. <br /><br />Beispielszenario: [Löschen von Datensätzen](disposition.md#disposition-of-records)|[Erste Schritte mit der Datensatzverwaltung](get-started-with-records-management.md) |
-

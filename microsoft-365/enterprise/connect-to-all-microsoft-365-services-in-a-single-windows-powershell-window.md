@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Zusammenfassung: Herstellen einer Verbindung mit allen Microsoft 365-Diensten in einem einzigen PowerShell-Fenster.'
-ms.openlocfilehash: cd030018dabff628af18d173cf542a3d375b27d0
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 18ff8e1789242b4dde3b4b31aaccf2462e4c5d74
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515112"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905128"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Herstellen einer Verbindung mit allen Microsoft 365-Diensten in einem einzigen PowerShell-Fenster
 
@@ -38,7 +38,7 @@ Dieses Szenario ist für das Verwalten von Microsoft 365 nicht optimal, da es n
 
 Bevor Sie Microsoft 365 von einer einzigen Instanz von PowerShell aus verwalten können, beachten Sie die folgenden Voraussetzungen:
   
-- Das Microsoft 365-Geschäfts-, Schul- oder Unikonto, das Sie verwenden, muss über eine Microsoft 365-Administratorrolle verfügen. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles). Das ist eine Voraussetzung für PowerShell für Microsoft 365, aber nicht unbedingt für andere Microsoft 365-Dienste.
+- Das Microsoft 365-Geschäfts-, Schul- oder Unikonto, das Sie verwenden, muss über eine Microsoft 365-Administratorrolle verfügen. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../admin/add-users/about-admin-roles.md). Das ist eine Voraussetzung für PowerShell für Microsoft 365, aber nicht unbedingt für andere Microsoft 365-Dienste.
     
 - Sie können folgende 64-Bit-Versionen von Windows verwenden:
     
@@ -56,7 +56,7 @@ Bevor Sie Microsoft 365 von einer einzigen Instanz von PowerShell aus verwalten
     
   - Windows Server 2008 R2 SP1*
     
-    \* Sie müssen Microsoft .NET Framework 4.5.*x* und dann Windows Management Framework 3.0 oder 4.0 installieren. Weitere Informationen finden Sie unter [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview).
+    \* Sie müssen Microsoft .NET Framework 4.5.*x* und dann Windows Management Framework 3.0 oder 4.0 installieren. Weitere Informationen finden Sie unter [Windows Management Framework](/powershell/scripting/windows-powershell/wmf/overview).
     
     Aufgrund der Anforderungen für das Skype for Business Online-Modul müssen Sie eine 64-Bit-Version von Windows und eins der Microsoft 365-Module verwenden.
     
@@ -64,9 +64,9 @@ Bevor Sie Microsoft 365 von einer einzigen Instanz von PowerShell aus verwalten
     
   - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   - [SharePoint Online-Verwaltungsshell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
-  - [Skype for Business Online, PowerShell-Modul](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
-  - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
-  - [Übersicht über PowerShell für Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
+  - [Skype for Business Online, PowerShell-Modul](/microsoftteams/teams-powershell-overview)
+  - [Exchange Online PowerShell V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
+  - [Übersicht über PowerShell für Microsoft Teams](/microsoftteams/teams-powershell-overview)
     
 -  PowerShell muss so konfiguriert werden, dass signierte Skripts für Skype for Business Online und das Security &amp; Compliance Center ausgeführt werden. Führen Sie den folgenden Befehl in einer PowerShell-Sitzung mit erhöhten Berechtigungen aus (eine PowerShell-Sitzung, die Sie **als Administrator ausführen**).
     
@@ -128,7 +128,7 @@ Folgen Sie den nachstehend beschriebenen Schritten zum Herstellen einer Verbindu
    ```
 
    > [!Note]
-   > Informationen zum Herstellen einer Verbindung mit Exchange Online für Microsoft 365-Clouds, außer der weltweiten, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+   > Informationen zum Herstellen einer Verbindung mit Exchange Online für Microsoft 365-Clouds, außer der weltweiten, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 7. Führen Sie diese Befehle zum Herstellen einer Verbindung mit dem Security &amp; Compliance Center aus.
     
@@ -138,7 +138,7 @@ Folgen Sie den nachstehend beschriebenen Schritten zum Herstellen einer Verbindu
    ```
 
    > [!Note]
-   > Informationen zur Verbindung mit dem Security &amp; Compliance Center für Microsoft 365-Clouds außer der weltweiten finden Sie unter [Verbinden mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+   > Informationen zur Verbindung mit dem Security &amp; Compliance Center für Microsoft 365-Clouds außer der weltweiten finden Sie unter [Verbinden mit Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 8. Führen Sie diese Befehle zum Herstellen einer Verbindung mit Teams PowerShell aus.
     
@@ -149,7 +149,7 @@ Folgen Sie den nachstehend beschriebenen Schritten zum Herstellen einer Verbindu
    ```
   
    > [!Note]
-   > Informationen zur Verbindung mit anderen Microsoft Teams-Clouds als der *Worldwide*-Cloud finden Sie unter [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).
+   > Informationen zur Verbindung mit anderen Microsoft Teams-Clouds als der *Worldwide*-Cloud finden Sie unter [Connect-MicrosoftTeams](/powershell/module/teams/connect-microsoftteams).
   
 
 

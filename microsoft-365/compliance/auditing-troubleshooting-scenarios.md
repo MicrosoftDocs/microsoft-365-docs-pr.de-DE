@@ -1,5 +1,5 @@
 ---
-title: Durchsuchen des Überwachungsprotokolls zur Problembehandlung bei allgemeinen Szenarien
+title: Durchsuchen des Überwachungsprotokolls zur Problembehandlung gängiger Szenarien
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,279 +17,279 @@ search.appverid:
 - MOE150
 ms.custom:
 - seo-marvel-apr2020
-description: Hier erfahren Sie, wie Sie das Microsoft 365-Überwachungsprotokoll-Such Tool verwenden, um häufige Supportprobleme für e-Mail-Konten zu beheben.
-ms.openlocfilehash: a32633d401156e00a45d15e4b38622b13bcb87cf
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+description: Erfahren Sie, wie Sie das Microsoft 365-Überwachungsprotokollsuchtool verwenden, um häufige Supportprobleme für E-Mail-Konten zu beheben.
+ms.openlocfilehash: 5f753163b5d4d6c04c121a7ce3fae970690a57b0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787591"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906093"
 ---
-# <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Durchsuchen des Überwachungsprotokolls zur Untersuchung allgemeiner Supportprobleme
+# <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Durchsuchen des Überwachungsprotokolls, um häufige Supportprobleme zu untersuchen
 
-In diesem Artikel wird beschrieben, wie Sie mithilfe des Überwachungsprotokoll-Such Tools häufige Supportprobleme untersuchen können. Dies umfasst die Verwendung des Überwachungsprotokolls für Folgendes:
+In diesem Artikel wird beschrieben, wie Sie das Suchtool für Überwachungsprotokolle verwenden, um häufige Supportprobleme zu untersuchen. Dazu gehört die Verwendung des Überwachungsprotokolls für:
 
-- Suchen der IP-Adresse des Computers, der für den Zugriff auf ein kompromittiertes Konto verwendet wurde
-- Bestimmen, wer die e-Mail-Weiterleitung für ein Postfach eingerichtet hat
-- Ermitteln, ob ein Benutzer e-Mail-Elemente in seinem Postfach gelöscht hat
+- Suchen der IP-Adresse des Computers, der für den Zugriff auf ein gefährdetes Konto verwendet wird
+- Bestimmen, wer die E-Mail-Weiterleitung für ein Postfach eingerichtet hat
+- Ermitteln, ob ein Benutzer E-Mail-Elemente in ihrem Postfach gelöscht hat
 - Ermitteln, ob ein Benutzer eine Posteingangsregel erstellt hat
-- Untersuchen der Gründe für eine erfolgreiche Anmeldung durch einen Benutzer außerhalb Ihrer Organisation
-- Suchen nach Postfachaktivitäten, die von Benutzern mit nicht-E5-Lizenzen ausgeführt werden
-- Suchen nach Postfachaktivitäten, die von Delegate-Benutzern ausgeführt werden
+- Untersuchen, warum es eine erfolgreiche Anmeldung durch einen Benutzer außerhalb Ihrer Organisation gab
+- Suchen nach Postfachaktivitäten, die von Benutzern mit Nicht-E5-Lizenzen ausgeführt werden
+- Suchen nach Postfachaktivitäten, die von stellvertretungsbenutzern ausgeführt werden
 
-## <a name="using-the-audit-log-search-tool"></a>Verwenden des Überwachungsprotokoll-Such Tools
+## <a name="using-the-audit-log-search-tool"></a>Verwenden des Überwachungsprotokollsuchtools
 
-Jedes der in diesem Artikel beschriebenen Problembehandlungsszenarien basiert auf der Verwendung des Überwachungsprotokoll-Such Tools im Security & Compliance Center. In diesem Abschnitt werden die Berechtigungen aufgelistet, die zum Durchsuchen des Überwachungsprotokolls erforderlich sind, und es werden die Schritte zum Zugreifen auf und Ausführen von Überwachungsprotokoll suchen beschrieben. In jedem Szenario-Abschnitt wird erklärt, wie Sie eine Überwachungsprotokoll-Suchabfrage konfigurieren und worauf Sie in den detaillierten Informationen in den Überwachungsdatensätzen achten, die den Suchkriterien entsprechen.
+Jedes der in diesem Artikel beschriebenen Problembehandlungsszenarien basiert auf der Verwendung des Überwachungsprotokollsuchtools im Security & Compliance Center. In diesem Abschnitt werden die berechtigungen aufgeführt, die zum Durchsuchen des Überwachungsprotokolls erforderlich sind, und die Schritte zum Zugreifen auf und Ausführen von Überwachungsprotokollsuchen beschrieben. In jedem Szenarioabschnitt wird erläutert, wie Sie eine Überwachungsprotokollsuchabfrage konfigurieren und wie Sie in den detaillierten Informationen in den Überwachungsdatensätzen suchen, die den Suchkriterien entsprechen.
 
-### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Erforderliche Berechtigungen für die Verwendung des Überwachungsprotokoll-Such Tools
+### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Erforderliche Berechtigungen für die Verwendung des Überwachungsprotokollsuchtools
 
-Sie müssen View-Only Überwachungsprotokolle oder Überwachungsprotokoll Rolle in Exchange Online zum Durchsuchen des Überwachungsprotokolls zugewiesen sein. Standardmäßig sind diese Rollen im Exchange Admin Center zugewiesen den Rollengruppen „Complianceverwaltung“ und „Organisationsverwaltung“ auf der Seite **Berechtigungen** . Globale Administratoren in Office 365 und Microsoft 365 werden automatisch als Mitglieder der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzugefügt. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+Ihnen muss die Rolle View-Only Überwachungsprotokolle oder Überwachungsprotokolle in Exchange Online zugewiesen werden, um das Überwachungsprotokoll zu durchsuchen. Standardmäßig sind diese Rollen im Exchange Admin Center zugewiesen den Rollengruppen „Complianceverwaltung“ und „Organisationsverwaltung“ auf der Seite **Berechtigungen**. Globale Administratoren in Office 365 und Microsoft 365 werden automatisch als Mitglieder der Rollengruppe Organisationsverwaltung in Exchange Online hinzugefügt. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](/Exchange/permissions-exo/role-groups).
 
-### <a name="running-audit-log-searches"></a>Ausführung von Überwachungsprotokoll suchen
+### <a name="running-audit-log-searches"></a>Ausführen von Überwachungsprotokollsuchen
 
-In diesem Abschnitt werden die Grundlagen für die Erstellung und Ausführung von Überwachungsprotokoll suchen beschrieben. Verwenden Sie diese Anweisungen als Ausgangspunkt für jedes Problembehandlungsszenario in diesem Artikel. Ausführlichere Schritt-für-Schritt-Anweisungen finden Sie unter durch [Suchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
+In diesem Abschnitt werden die Grundlagen zum Erstellen und Ausführen von Überwachungsprotokollsuchen beschrieben. Verwenden Sie diese Anweisungen als Ausgangspunkt für jedes Problembehandlungsszenario in diesem Artikel. Ausführlichere Schritt-für-Schritt-Anweisungen finden Sie unter [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
 
-1. Wechseln Sie zu, [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) und melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
+1. Wechseln Sie [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) zu, und melden Sie sich mit Ihrem Arbeits- oder Schulkonto an.
     
     Die Seite **Überwachungsprotokollsuche** wird angezeigt. 
     
-    ![Konfigurieren Sie Kriterien, und wählen Sie dann suchen aus, um die Suche auszuführen.](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Konfigurieren sie Kriterien, und wählen Sie dann Suchen aus, um die Suche ausführen zu können.](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
   
-4. Sie können die folgenden Suchkriterien konfigurieren. Jedes Problembehandlungsszenario in diesem Artikel empfiehlt spezielle Anleitungen zum Konfigurieren dieser Felder.
+4. Sie können die folgenden Suchkriterien konfigurieren. Jedes Problembehandlungsszenario in diesem Artikel empfiehlt spezifische Anleitungen zum Konfigurieren dieser Felder.
     
-    a. **Aktivitäten:** Wählen Sie die Dropdownliste aus, um die Aktivitäten anzuzeigen, nach denen Sie suchen können. Nachdem Sie die Suche ausgeführt haben, werden nur die Überwachungsdatensätze für die ausgewählten Aktivitäten angezeigt. Wenn Sie **Ergebnisse für alle Aktivitäten anzeigen** auswählen, werden die Ergebnisse für alle Aktivitäten angezeigt, die den anderen Suchkriterien entsprechen. Außerdem müssen Sie dieses Feld in einigen der Problembehandlungsszenarien leer lassen.
+    a. **Aktivitäten:** Wählen Sie die Dropdownliste aus, um die Aktivitäten anzeigen zu können, nach der Sie suchen können. Nachdem Sie die Suche ausgeführt haben, werden nur die Überwachungsdatensätze für die ausgewählten Aktivitäten angezeigt. Wenn **Sie Ergebnisse für alle Aktivitäten anzeigen auswählen,** werden Ergebnisse für alle Aktivitäten angezeigt, die die anderen Suchkriterien erfüllen. Sie müssen dieses Feld auch in einigen Problembehandlungsszenarien leer lassen.
     
-    b. **Start Datum** und **Enddatum:** wählen Sie einen Datums-und Zeitbereich aus, um die Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten sind. Die letzten sieben Tage sind standardmäßig ausgewählt. Das Datum und die Uhrzeit werden im UTC-Format (Coordinated Universal Time) angezeigt. Der maximale Datumsbereich, den Sie angeben können, umfasst 90 Tage.
+    b. **Startdatum** und **Enddatum: Wählen** Sie einen Datums- und Uhrzeitbereich aus, um die Ereignisse zu anzeigen, die innerhalb dieses Zeitraums aufgetreten sind. Die letzten sieben Tage sind standardmäßig ausgewählt. Das Datum und die Uhrzeit werden im UTC-Format (Coordinated Universal Time) angezeigt. Der maximale Datumsbereich, den Sie angeben können, umfasst 90 Tage.
 
-    c. **Benutzer:** Klicken Sie in dieses Feld, und wählen Sie einen oder mehrere Benutzer aus, für die Suchergebnisse angezeigt werden sollen. Überwachungsdatensätze für die ausgewählte Aktivität, die von den Benutzern ausgeführt werden, die Sie in diesem Feld ausgewählt haben, werden in der Ergebnisliste angezeigt. Lassen Sie dieses Feld leer, um die Einträge für alle Benutzer (und Dienstkonten) in Ihrer Organisation zurückzugeben.
+    c. **Benutzer:** Klicken Sie in dieses Feld, und wählen Sie dann einen oder mehrere Benutzer aus, für die Suchergebnisse angezeigt werden sollen. Überwachungsdatensätze für die ausgewählte Aktivität, die von den in diesem Feld ausgewählten Benutzern ausgeführt werden, werden in der Liste der Ergebnisse angezeigt. Lassen Sie dieses Feld leer, um die Einträge für alle Benutzer (und Dienstkonten) in Ihrer Organisation zurückzugeben.
     
-    d. **Datei, Ordner oder Website:** Geben Sie einen oder alle Datei-oder Ordnernamen ein, um nach Aktivitäten im Zusammenhang mit der Datei des Ordners zu suchen, die das angegebene Schlüsselwort enthält. Sie können auch die URL einer Datei oder eines Ordners verwenden. Wenn Sie eine URL verwenden, stellen Sie sicher, dass Sie den vollständigen URL-Pfad eingeben oder wenn Sie nur einen Teil der URL eingeben, keine Sonderzeichen oder Leerzeichen enthalten. Lassen Sie dieses Feld leer, um Einträge für alle Dateien und Ordner in Ihrer Organisation zurückzugeben. Dieses Feld bleibt in allen Problembehandlungsszenarien in diesem Artikel leer.
+    d. **Datei, Ordner oder Website:** Geben Sie einen oder alle Datei- oder Ordnernamen ein, um nach Aktivitäten im Zusammenhang mit der Ordnerdatei zu suchen, die das angegebene Schlüsselwort enthält. Sie können auch die URL einer Datei oder eines Ordners verwenden. Wenn Sie eine URL verwenden, stellen Sie sicher, dass Sie den vollständigen URL-Pfad eingeben oder wenn Sie nur einen Teil der URL eingeben, keine Sonderzeichen oder Leerzeichen enthalten. Lassen Sie dieses Feld leer, um Einträge für alle Dateien und Ordner in Ihrer Organisation zurückzugeben. Dieses Feld wird in allen Problembehandlungsszenarien in diesem Artikel leer gelassen.
     
-5. Wählen Sie **Suchen** aus, um die Suche mit Ihren Suchkriterien auszuführen. 
+5. Wählen **Sie Suchen** aus, um die Suche mithilfe Ihrer Suchkriterien ausführen zu können. 
     
-    Die Suchergebnisse werden geladen, und nach ein paar Momenten werden Sie unter **Ergebnisse** auf der Seite **Überwachungsprotokoll Suche** angezeigt. Jeder Abschnitt in diesem Artikel enthält Anleitungen zu den Dingen, die im Kontext des spezifischen Problembehandlungsszenarios gesucht werden sollen.
+    Die Suchergebnisse werden geladen und nach einigen Momenten unter **Ergebnisse** auf der Seite **Überwachungsprotokollsuche** angezeigt. Jeder abschnitt in diesem Artikel enthält Anleitungen zu Denkhilfen, die im Kontext des jeweiligen Problembehandlungsszenarios zu suchen sind.
 
-    Weitere Informationen zum Anzeigen, Filtern oder Exportieren von Überwachungsprotokoll-Suchergebnissen finden Sie unter:
+    Weitere Informationen zum Anzeigen, Filtern oder Exportieren von Überwachungsprotokollsuchergebnissen finden Sie unter:
 
     - [Anzeigen von Suchergebnissen](search-the-audit-log-in-security-and-compliance.md#step-2-view-the-search-results)
     - [Filtern von Suchergebnissen](search-the-audit-log-in-security-and-compliance.md#step-3-filter-the-search-results)
     - [Exportieren der Suchergebnisse](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file)
 
-## <a name="find-the-ip-address-of-the-computer-used-to-access-a-compromised-account"></a>Suchen der IP-Adresse des Computers, der für den Zugriff auf ein kompromittiertes Konto verwendet wurde
+## <a name="find-the-ip-address-of-the-computer-used-to-access-a-compromised-account"></a>Suchen der IP-Adresse des Computers, der für den Zugriff auf ein gefährdetes Konto verwendet wird
 
-Die IP-Adresse, die einer von einem beliebigen Benutzer ausgeführten Aktivität entspricht, ist in den meisten Überwachungsdatensätzen enthalten. Informationen zum verwendeten Client sind ebenfalls im Überwachungsprotokoll enthalten.
+Die IP-Adresse, die einer Aktivität eines beliebigen Benutzers entspricht, ist in den meisten Überwachungsdatensätzen enthalten. Informationen zum verwendeten Client sind auch im Überwachungsdatensatz enthalten.
 
-Hier erfahren Sie, wie Sie eine Überwachungsprotokoll-Suchabfrage für dieses Szenario konfigurieren:
+So konfigurieren Sie eine Überwachungsprotokollsuchabfrage für dieses Szenario:
 
-**Aktivitäten:** Wenn relevant für Ihren Fall, wählen Sie eine bestimmte Aktivität aus, nach der gesucht werden soll. Für die Problembehandlung in kompromittierten Konten sollten **Sie die Option Benutzer bei Post** Fach **Aktivitäten unter Exchange-Postfachaktivitäten** Anmelden auswählen. Dadurch werden Überwachungseinträge zurückgegeben, die die IP-Adresse anzeigen, die bei der Anmeldung beim Postfach verwendet wurde. Lassen Sie andernfalls dieses Feld leer, um Überwachungseinträge für alle Aktivitäten zurückzugeben. 
+**Aktivitäten:** Wählen Sie bei Relevanz für Ihren Fall eine bestimmte Aktivität aus, nach der gesucht werden soll. Zur Problembehandlung bei gefährdeten Konten sollten Sie die Option Benutzer, der sich **bei Postfachaktivitäten** unter **Exchange-Postfachaktivitäten angemeldet hat, auswählen.** Dadurch werden Überwachungsdatensätze zurückgegeben, die die BEI der Anmeldung beim Postfach verwendete IP-Adresse anzeigen. Lassen Sie andernfalls dieses Feld leer, um Überwachungsdatensätze für alle Aktivitäten zurück zu geben. 
 
 > [!TIP]
-> Wenn Sie dieses Feld leer lassen, werden **UserLoggedIn** -Aktivitäten zurückgegeben, bei denen es sich um eine Azure-Active Directory Aktivität handelt, die angibt, dass sich jemand bei einem Benutzerkonto angemeldet hat. Verwenden Sie die Filterung in den Suchergebnissen, um die **UserLoggedIn** -Überwachungseinträge anzuzeigen.
+> Wenn Sie dieses Feld leer lassen, werden **UserLoggedIn-Aktivitäten** zurückgeben, bei denen es sich um eine Azure Active Directory-Aktivität handelt, die angibt, dass sich jemand bei einem Benutzerkonto angemeldet hat. Verwenden Sie die Filterung in den Suchergebnissen, um die **UserLoggedIn-Überwachungsdatensätze** anzeigen.
 
-**Start Datum** und **Enddatum:** wählen Sie einen Datumsbereich aus, der für Ihre Untersuchung gilt.
+**Startdatum** und **Enddatum: Wählen** Sie einen Datumsbereich aus, der für Ihre Untersuchung gilt.
 
-**Benutzer:** Wenn Sie ein kompromittiertes Konto untersuchen, wählen Sie den Benutzer aus, dessen Konto kompromittiert wurde. Dadurch werden Überwachungsdatensätze für Aktivitäten zurückgegeben, die von diesem Benutzerkonto ausgeführt werden.
-
-**Datei, Ordner oder Website:** Lassen Sie dieses Feld leer.
-
-Nachdem Sie die Suche ausgeführt haben, wird die IP-Adresse für jede Aktivität in der Spalte **IP-Adresse** in den Suchergebnissen angezeigt. Wählen Sie den Datensatz in den Suchergebnissen aus, um ausführlichere Informationen auf der Flyout-Seite anzuzeigen.
-
-## <a name="determine-who-set-up-email-forwarding-for-a-mailbox"></a>Bestimmen, wer die e-Mail-Weiterleitung für ein Postfach eingerichtet hat
-
-Wenn die e-Mail-Weiterleitung für ein Postfach konfiguriert ist, werden e-Mail-Nachrichten, die an das Postfach gesendet werden, an ein anderes Postfach weitergeleitet. Nachrichten können an Benutzer innerhalb oder außerhalb Ihrer Organisation weitergeleitet werden. Wenn die e-Mail-Weiterleitung für ein Postfach eingerichtet wurde, ist das zugrunde liegende Exchange Online Cmdlet, das verwendet wird, " **festgelegt-Postfach** ".
-
-Hier erfahren Sie, wie Sie eine Überwachungsprotokoll-Suchabfrage für dieses Szenario konfigurieren:
-
-**Aktivitäten:** Lassen Sie dieses Feld leer, damit die Suche Überwachungsdatensätze für alle Aktivitäten zurückgibt. Dies ist erforderlich, um alle Überwachungseinträge im Zusammenhang mit dem Cmdlet " **Satz-Postfach** " zurückzugeben.
-
-**Start Datum** und **Enddatum:** wählen Sie einen Datumsbereich aus, der für Ihre Untersuchung gilt.
-
-**Benutzer:** Lassen Sie dieses Feld leer, wenn Sie ein e-Mail-Weiterleitungs Problem für einen bestimmten Benutzer nicht untersuchen. Auf diese Weise können Sie ermitteln, ob die e-Mail-Weiterleitung für einen beliebigen Benutzer eingerichtet wurde.
+**Benutzer:** Wenn Sie ein gefährdetes Konto untersuchen, wählen Sie den Benutzer aus, dessen Konto gefährdet wurde. Dadurch werden Überwachungsdatensätze für Aktivitäten zurückgegeben, die von diesem Benutzerkonto ausgeführt werden.
 
 **Datei, Ordner oder Website:** Lassen Sie dieses Feld leer.
 
-Nachdem Sie die Suche ausgeführt haben, wählen Sie auf der Suchergebnisseite **Filter Ergebnisse** aus. Geben Sie in das Feld unter **Aktivitäts** Spaltenkopf die **Option Satz-Postfach** ein, sodass nur Überwachungseinträge im Zusammenhang mit dem CmdletSet **-Mailbox** angezeigt werden.
+Nachdem Sie die Suche ausgeführt haben, wird die IP-Adresse für jede Aktivität in der Spalte **IP-Adresse** in den Suchergebnissen angezeigt. Wählen Sie den Datensatz in den Suchergebnissen aus, um detailliertere Informationen auf der Flyoutseite anzeigen zu können.
 
-![Filtern der Ergebnisse einer Überwachungsprotokoll Suche](../media/emailforwarding1.png)
+## <a name="determine-who-set-up-email-forwarding-for-a-mailbox"></a>Bestimmen, wer die E-Mail-Weiterleitung für ein Postfach eingerichtet hat
 
-An dieser Stelle müssen Sie sich die Details jedes Überwachungsdatensatzes ansehen, um zu ermitteln, ob die Aktivität mit der e-Mail-Weiterleitung zusammenhängt. Wählen Sie den Überwachungseintrag aus, um die **Detail** Flyout-Seite anzuzeigen, und wählen Sie dann **Weitere Informationen** aus. Im folgenden Screenshot und den Beschreibungen werden die Informationen hervorgehoben, die angeben, dass die e-Mail-Weiterleitung im Postfach festgelegt wurde.
+Wenn die E-Mail-Weiterleitung für ein Postfach konfiguriert ist, werden E-Mail-Nachrichten, die an das Postfach gesendet werden, an ein anderes Postfach weitergeleitet. Nachrichten können an Benutzer innerhalb oder außerhalb Ihrer Organisation weitergeleitet werden. Wenn die E-Mail-Weiterleitung für ein Postfach eingerichtet ist, ist das zugrunde liegende Exchange **Online-Cmdlet Set-Mailbox**.
 
-![Ausführliche Informationen aus dem Überwachungsprotokoll](../media/emailforwarding2.png)
+So konfigurieren Sie eine Überwachungsprotokollsuchabfrage für dieses Szenario:
 
-a. Im Feld **objectID** wird der Alias des Postfachs, auf dem die e-Mail-Weiterleitung festgelegt wurde, angezeigt. Dieses Postfach wird auch in der Spalte **Element** auf der Suchergebnisseite angezeigt.
+**Aktivitäten:** Lassen Sie dieses Feld leer, sodass die Suche Überwachungsdatensätze für alle Aktivitäten zurückgibt. Dies ist erforderlich, um Überwachungsdatensätze im Zusammenhang mit dem **Cmdlet Set-Mailbox** zurücksennen.
 
-b. Im Feld **Parameter** gibt der Wert *ForwardingSmtpAddress* an, dass die e-Mail-Weiterleitung für das Postfach festgelegt wurde. In diesem Beispiel wird e-Mail an die e-Mail-Adresse Mike@contoso.com weitergeleitet, die sich außerhalb der alpinehouse.onmicrosoft.com-Organisation befindet.
+**Startdatum** und **Enddatum: Wählen** Sie einen Datumsbereich aus, der für Ihre Untersuchung gilt.
 
-c. Der Wert *true* für den Parameter *DeliverToMailboxAndForward* gibt an, dass eine Kopie der Nachricht an Sarad@alpinehouse.onmicrosoft.com zugestellt *und* an die durch den *ForwardingSmtpAddress* -Parameter angegebene e-Mail-Adresse weitergeleitet wird, die in diesem Beispiel Mike@contoso.com ist. Wenn der Wert für den *DeliverToMailboxAndForward* -Parameter auf *false* festgelegt ist, wird e-Mail nur an die durch den *ForwardingSmtpAddress* -Parameter angegebene Adresse weitergeleitet. Sie wird nicht an das im Feld **objectID** angegebene Postfach übermittelt.
+**Benutzer:** Lassen Sie dieses Feld leer, es sei denn, Sie untersuchen ein E-Mail-Weiterleitungsproblem für einen bestimmten Benutzer. Auf diese Weise können Sie ermitteln, ob die E-Mail-Weiterleitung für jeden Benutzer eingerichtet wurde.
 
-d. Das **UserID** -Feld gibt den Benutzer an, der die e-Mail-Weiterleitung für das im Feld **objectID** angegebene Postfach festgelegt hat. Dieser Benutzer wird auch in der Spalte **Benutzer** auf der Suchergebnisseite angezeigt. In diesem Fall scheint es, dass der Besitzer des Postfachs die e-Mail-Weiterleitung für Ihr Postfach festgelegt hat.
+**Datei, Ordner oder Website:** Lassen Sie dieses Feld leer.
 
-Wenn Sie feststellen, dass die e-Mail-Weiterleitung nicht für das Postfach festgelegt werden sollte, können Sie Sie entfernen, indem Sie den folgenden Befehl in Exchange Online PowerShell ausführen:
+Nachdem Sie die Suche ausgeführt haben, wählen Sie **Auf der** Suchergebnissenseite Ergebnisse filtern aus. Geben Sie im Feld unter **Spaltenüberschrift** Aktivität **Set-Mailbox** ein, damit nur Überwachungsdatensätze im Zusammenhang mit dem **Cmdlet Set-Mailbox** angezeigt werden.
+
+![Filtern der Ergebnisse einer Überwachungsprotokollsuche](../media/emailforwarding1.png)
+
+An diesem Punkt müssen Sie sich die Details der einzelnen Überwachungsdatensatze anschauen, um festzustellen, ob die Aktivität im Zusammenhang mit der E-Mail-Weiterleitung steht. Wählen Sie den Überwachungsdatensatz aus, um die **Flyoutseite Details** anzuzeigen, und wählen Sie dann **Weitere Informationen aus.** Im folgenden Screenshot und in den Beschreibungen werden die Informationen hervorgehoben, die darauf hinweisen, dass die E-Mail-Weiterleitung für das Postfach festgelegt wurde.
+
+![Detaillierte Informationen aus dem Überwachungsdatensatz](../media/emailforwarding2.png)
+
+a. Im Feld **ObjectId** wird der Alias des Postfachs angezeigt, für das die E-Mail-Weiterleitung festgelegt wurde. Dieses Postfach wird auch in der Spalte **Element** auf der Suchergebnissetseite angezeigt.
+
+b. Im Feld **Parameter gibt** der Wert *ForwardingSmtpAddress* an, dass die E-Mail-Weiterleitung für das Postfach festgelegt wurde. In diesem Beispiel wird E-Mail an die E-Mail-Adresse mike@contoso.com weitergeleitet, die sich außerhalb der alpinehouse.onmicrosoft.com befindet.
+
+c. Der *True-Wert* für den *Parameter DeliverToMailboxAndForward* gibt an, dass eine  Kopie der Nachricht an sarad@alpinehouse.onmicrosoft.com übermittelt und an die E-Mail-Adresse weitergeleitet wird, die durch den *Parameter ForwardingSmtpAddress* angegeben wird, der in diesem Beispiel mike@contoso.com. Wenn der Wert für den *Parameter DeliverToMailboxAndForward* auf *False* festgelegt ist, wird die E-Mail nur an die adresse weitergeleitet, die durch den *Parameter ForwardingSmtpAddress angegeben* wird. Es wird nicht an das postfach übermittelt, das im **Feld ObjectId angegeben** ist.
+
+d. Das **Feld UserId** gibt den Benutzer an, der die E-Mail-Weiterleitung für das im Feld **ObjectId** angegebene Postfach festgelegt hat. Dieser Benutzer wird auch in der **Spalte Benutzer** auf der Suchergebnissetseite angezeigt. In diesem Fall scheint der Besitzer des Postfachs die E-Mail-Weiterleitung für ihr Postfach festgelegt zu haben.
+
+Wenn Sie feststellen, dass die E-Mail-Weiterleitung nicht für das Postfach festgelegt werden soll, können Sie sie entfernen, indem Sie den folgenden Befehl in Exchange Online PowerShell ausführen:
 
 ```powershell
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 
-Weitere Informationen zu den Parametern im Zusammenhang mit der e-Mail-Weiterleitung finden Sie im Artikel zum [Festlegen von Postfächern](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) .
+Weitere Informationen zu den Parametern im Zusammenhang mit der [E-Mail-Weiterleitung](/powershell/module/exchange/set-mailbox) finden Sie im Artikel Set-Mailbox.
 
-## <a name="determine-if-a-user-deleted-email-items"></a>Ermitteln, ob ein Benutzer e-Mail-Elemente gelöscht hat
+## <a name="determine-if-a-user-deleted-email-items"></a>Ermitteln, ob ein Benutzer E-Mail-Elemente gelöscht hat
 
-Ab Januar 2019 wird Microsoft die postfachüberwachungsprotokollierung standardmäßig für alle Office 365 und Microsoft-Organisationen aktivieren. Dies bedeutet, dass bestimmte von Postfachbesitzern ausgeführte Aktionen automatisch protokolliert werden und dass die entsprechenden Post Fach Überwachungseinträge zur Verfügung stehen, wenn Sie im postfachüberwachungsprotokoll nach diesen suchen. Bevor die postfachüberwachung standardmäßig aktiviert wurde, muss Sie für jedes Benutzerpostfach in Ihrer Organisation manuell aktiviert werden. 
+Ab Januar 2019 aktiviert Microsoft die Postfach-Überwachungsprotokollierung standardmäßig für alle Office 365- und Microsoft-Organisationen. Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern ausgeführt werden, automatisch protokolliert werden, und die entsprechenden Postfach-Überwachungsdatensätze sind verfügbar, wenn Sie im Postfach-Überwachungsprotokoll nach diesen suchen. Bevor die Postfachüberwachung standardmäßig aktiviert wurde, musste sie für jedes Benutzerpostfach in Ihrer Organisation manuell aktiviert werden. 
 
-Die standardmäßig protokollierten Postfachaktionen umfassen die SoftDelete-und HardDelete-Postfachaktionen, die von Postfachbesitzern ausgeführt werden. Dies bedeutet, dass Sie die folgenden Schritte zum Durchsuchen des Überwachungsprotokolls für Ereignisse im Zusammenhang mit gelöschten e-Mail-Elementen verwenden können. Weitere Informationen zur postfachüberwachung für standardmäßig finden Sie unter [Verwalten der postfachüberwachung](enable-mailbox-auditing.md).
+Die standardmäßig protokollierten Postfachaktionen umfassen die Postfachaktionen SoftDelete und HardDelete, die von Postfachbesitzern ausgeführt werden. Dies bedeutet, dass Sie die folgenden Schritte ausführen können, um das Überwachungsprotokoll nach Ereignissen im Zusammenhang mit gelöschten E-Mail-Elementen zu durchsuchen. Weitere Informationen zur Postfachüberwachung standardmäßig finden Sie unter [Verwalten der Postfachüberwachung](enable-mailbox-auditing.md).
 
-Hier erfahren Sie, wie Sie eine Überwachungsprotokoll-Suchabfrage für dieses Szenario konfigurieren:
+So konfigurieren Sie eine Überwachungsprotokollsuchabfrage für dieses Szenario:
 
-**Aktivitäten:** Wählen Sie unter **Exchange-Postfachaktivitäten** eine oder beide der folgenden Aktionen aus:
+**Aktivitäten:** Wählen **Sie unter Exchange-Postfachaktivitäten** eine oder beide der folgenden Aktivitäten aus:
 
-- **Gelöschte Nachrichten aus dem Ordner "Gelöschte Elemente":** Diese Aktivität entspricht der **SoftDelete** -Post Fach Überwachungsaktion. Diese Aktivität wird auch protokolliert, wenn ein Benutzer ein Element dauerhaft löscht, indem es ihn auswählt und **UMSCHALT + ENTF** drückt. Nachdem ein Element endgültig gelöscht wurde, kann es vom Benutzer wiederhergestellt werden, bis der Aufbewahrungszeitraum für gelöschte Elemente abläuft.
+- **Gelöschte Nachrichten aus dem Ordner "Gelöschte Elemente":** Diese Aktivität entspricht der **SoftDelete-Postfachüberwachungsaktion.** Diese Aktivität wird auch protokolliert, wenn ein Benutzer ein Element durch Auswahl und Drücken von **Umschalt+Löschen** endgültig löscht. Nachdem ein Element endgültig gelöscht wurde, kann der Benutzer es wiederherstellen, bis der Aufbewahrungszeitraum für gelöschte Elemente abläuft.
 
-- **Bereinigte Nachrichten aus dem Postfach:** Diese Aktivität entspricht der **HardDelete** -Post Fach Überwachungsaktion. Dies wird protokolliert, wenn ein Benutzer ein Element aus dem Ordner "refundable Items" löscht. Administratoren können das Inhalts Such Tool im Security and Compliance Center verwenden, um bereinigte Elemente zu suchen und wiederherzustellen, bis der Aufbewahrungszeitraum für gelöschte Elemente abläuft oder länger ist, wenn das Postfach des Benutzers in der Warteschleife steht.
+- **Gelöschte Nachrichten aus dem Postfach:** Diese Aktivität entspricht der Aktion zur Überwachung des **HardDelete-Postfachs.** Dies wird protokolliert, wenn ein Benutzer ein Element aus dem Ordner "Wiederherstellbare Elemente" entfernt. Administratoren können das Tool für die Inhaltssuche im Security and Compliance Center verwenden, um gelöschte Elemente zu suchen und wiederherstellungen, bis der Aufbewahrungszeitraum für gelöschte Elemente abläuft oder länger, wenn sich das Postfach des Benutzers im Haltebereich befindet.
 
-**Start Datum** und **Enddatum:** wählen Sie einen Datumsbereich aus, der für Ihre Untersuchung gilt.
+**Startdatum** und **Enddatum: Wählen** Sie einen Datumsbereich aus, der für Ihre Untersuchung gilt.
 
-**Benutzer:** Wenn Sie einen Benutzer in diesem Feld auswählen, gibt das Überwachungsprotokoll-Such Tool Überwachungsdatensätze für gelöschte e-Mail-Elemente zurück, die von dem von Ihnen angegebenen Benutzer (SoftDeleted oder HardDeleted) gelöscht wurden. Manchmal ist der Benutzer, der eine e-Mail löscht, möglicherweise nicht der Postfachbesitzer.
+**Benutzer:** Wenn Sie einen Benutzer in diesem Feld auswählen, gibt das Überwachungsprotokollsuchtool Überwachungsdatensätze für E-Mail-Elemente zurück, die vom angegebenen Benutzer gelöscht wurden (SoftDeleted oder HardDeleted). Manchmal ist der Benutzer, der eine E-Mail löscht, möglicherweise nicht der Postfachbesitzer.
 
 **Datei, Ordner oder Website:** Lassen Sie dieses Feld leer.
 
-Nachdem Sie die Suche ausgeführt haben, können Sie die Suchergebnisse filtern, um die Überwachungsdatensätze für vorläufig gelöschte Elemente oder für hart gelöschte Elemente anzuzeigen. Wählen Sie den Überwachungseintrag aus, um die **Detail** Flyout-Seite anzuzeigen, und wählen Sie dann **Weitere Informationen** aus. Zusätzliche Informationen zu dem gelöschten Element, beispielsweise die Betreffzeile und den Speicherort des Elements, wenn es gelöscht wurde, werden im Feld **AffectedItems** angezeigt. Die folgenden Screenshots zeigen ein Beispiel für das **AffectedItems** -Feld aus einem vorläufig gelöschten Element und einem hart gelöschten Element.
+Nachdem Sie die Suche ausgeführt haben, können Sie die Suchergebnisse filtern, um die Überwachungsdatensätze für elemente mit soft-deleted oder für hart gelöschte Elemente anzeigen zu können. Wählen Sie den Überwachungsdatensatz aus, um die **Flyoutseite Details** anzuzeigen, und wählen Sie dann **Weitere Informationen aus.** Zusätzliche Informationen zum gelöschten Element, z. B. die Betreffzeile und der Speicherort des Elements, wenn es gelöscht wurde, werden im **Feld AffectedItems** angezeigt. Die folgenden Screenshots zeigen ein Beispiel für das **Feld AffectedItems** aus einem soft-deleted-Element und einem hart gelöschten Element.
 
-**Beispiel für ein AffectedItems-Feld für vorläufig gelöschtes Element**
+**Beispiel für das Feld "AffectedItems" für "Soft-Deleted"-Element**
 
-![Überwachungseintrag für vorläufig gelöschtes Element](../media/softdeleteditem.png)
+![Überwachungsdatensatz für soft-deleted-Element](../media/softdeleteditem.png)
 
-**Beispiel für ein AffectedItems-Feld für das hart gelöschte Element**
+**Beispiel für das Feld "AffectedItems" für ein fest gelöschtes Element**
 
-![Überwachungseintrag für das hart gelöschte e-Mail-Element](../media/harddeleteditem.png)
+![Überwachungsdatensatz für fest gelöschtes E-Mail-Element](../media/harddeleteditem.png)
 
-### <a name="recover-deleted-email-items"></a>Wiederherstellen gelöschter e-Mail-Elemente
+### <a name="recover-deleted-email-items"></a>Wiederherstellen gelöschter E-Mail-Elemente
 
-Benutzer können vorläufig gelöschte Elemente wiederherstellen, wenn der Aufbewahrungszeitraum für gelöschte Elemente nicht abgelaufen ist. In Exchange Online ist der Aufbewahrungszeitraum für gelöschte Elemente standardmäßig 14 Tage, Administratoren können diese Einstellung jedoch auf maximal 30 Tage vergrössern. Zeigen Sie die Benutzer auf die [Wiederherstellung gelöschter Elemente oder e-Mails in Outlook](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4) im Artikel, um Anweisungen zur Wiederherstellung gelöschter Elemente zu erhalten.
+Benutzer können elemente mit soft-deleted wiederherstellen, wenn der Aufbewahrungszeitraum für gelöschte Elemente nicht abgelaufen ist. In Exchange Online beträgt der Standardaufbewahrungszeitraum für gelöschte Elemente 14 Tage, administratoren können diese Einstellung jedoch auf maximal 30 Tage erhöhen. Verweisen Sie Benutzer auf den [Artikel Wiederherstellen gelöschter Elemente](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4) oder E-Mails in Outlook im Web, um Anweisungen zum Wiederherstellen gelöschter Elemente zu erhalten.
 
-Wie bereits erläutert, können Administratoren möglicherweise gelöschte Elemente wiederherstellen, wenn der Aufbewahrungszeitraum für gelöschte Elemente nicht abgelaufen ist oder wenn das Postfach in der Warteschleife aufbewahrt wird, sodass die Elemente bis zum Ablauf der Haltedauer beibehalten werden. Wenn Sie eine Inhaltssuche ausführen, werden im Ordner "Wiederherstellbare Elemente" vorläufig gelöschte und hart gelöschte Elemente in den Suchergebnissen zurückgegeben, wenn Sie mit der Suchabfrage übereinstimmen. Weitere Informationen zum Durchführen von Inhalts suchen finden Sie unter [Inhaltssuche in Office 365](content-search.md).
+Wie bereits erläutert, können Administratoren hart gelöschte Elemente möglicherweise wiederherstellen, wenn der Aufbewahrungszeitraum für gelöschte Elemente nicht abgelaufen ist oder das Postfach in der Warteschleife ist. In diesem Fall werden Elemente bis zum Ablauf der Aufbewahrungsdauer aufbewahrt. Wenn Sie eine Inhaltssuche ausführen, werden soft-deleted- und hard-deleted-Elemente im Ordner "Wiederherstellbare Elemente" in den Suchergebnissen zurückgegeben, wenn sie mit der Suchabfrage übereinstimmen. Weitere Informationen zum Ausführen von Inhaltssuchen finden Sie unter [Inhaltssuche in Office 365](content-search.md).
 
 > [!TIP]
-> Um nach gelöschten e-Mail-Elementen zu suchen, suchen Sie nach der Betreffzeile, die im **AffectedItems** -Feld des Überwachungsdatensatzes angezeigt wird, oder in einem Teil der Betreffzeile.
+> Um nach gelöschten E-Mail-Elementen zu suchen, suchen Sie nach der Betreffzeile, die im **Feld AffectedItems** im Überwachungsdatensatz angezeigt wird.
 
 ## <a name="determine-if-a-user-created-an-inbox-rule"></a>Ermitteln, ob ein Benutzer eine Posteingangsregel erstellt hat
 
-Wenn Benutzer eine Posteingangsregel für Ihr Exchange Online Postfach erstellen, wird ein entsprechender Überwachungseintrag im Überwachungsprotokoll gespeichert. Weitere Informationen zu Posteingangsregeln finden Sie unter:
+Wenn Benutzer eine Posteingangsregel für ihr Exchange Online-Postfach erstellen, wird ein entsprechender Überwachungsdatensatz im Überwachungsprotokoll gespeichert. Weitere Informationen zu Posteingangsregeln finden Sie unter:
 
-- [Verwenden von Posteingangsregeln in Outlook im Internet](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
-- [Verwalten von e-Mail-Nachrichten in Outlook mithilfe von Regeln](https://support.office.com/article/Manage-email-messages-by-using-rules-C24F5DEA-9465-4DF4-AD17-A50704D66C59)
+- [Verwenden von Posteingangsregeln in Outlook im Web](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
+- [Verwalten von E-Mail-Nachrichten in Outlook mithilfe von Regeln](https://support.office.com/article/Manage-email-messages-by-using-rules-C24F5DEA-9465-4DF4-AD17-A50704D66C59)
 
-Hier erfahren Sie, wie Sie eine Überwachungsprotokoll-Suchabfrage für dieses Szenario konfigurieren:
+So konfigurieren Sie eine Überwachungsprotokollsuchabfrage für dieses Szenario:
 
-**Aktivitäten:** Wählen Sie unter **Exchange-Postfachaktivitäten** die Option **Posteingangsregel neu-InboxRule erstellen/ändern/aktivieren/deaktivieren** aus.
+**Aktivitäten:** Wählen **Sie unter Exchange-Postfachaktivitäten** **die Option New-InboxRule Posteingangsregel erstellen/ändern/aktivieren/deaktivieren aus.**
 
-**Start Datum** und **Enddatum:** wählen Sie einen Datumsbereich aus, der für Ihre Untersuchung gilt.
+**Startdatum** und **Enddatum: Wählen** Sie einen Datumsbereich aus, der für Ihre Untersuchung gilt.
 
-**Benutzer:** Lassen Sie dieses Feld leer, es sei denn, Sie untersuchen einen bestimmten Benutzer. Auf diese Weise können Sie neue Posteingangsregeln ermitteln, die von jedem Benutzer eingerichtet wurden.
+**Benutzer:** Lassen Sie dieses Feld leer, es sei denn, Sie untersuchen einen bestimmten Benutzer. Auf diese Weise können Sie neue Posteingangsregeln identifizieren, die von jedem Benutzer eingerichtet wurden.
 
 **Datei, Ordner oder Website:** Lassen Sie dieses Feld leer.
 
-Nachdem Sie die Suche ausgeführt haben, werden alle Überwachungseinträge für diese Aktivität in den Suchergebnissen angezeigt. Wählen Sie einen Überwachungseintrag aus, um die **Detail** Flyout-Seite anzuzeigen, und wählen Sie dann **Weitere Informationen** aus. Im Feld **Parameter** werden Informationen zu den Einstellungen für Posteingangsregeln angezeigt. Im folgenden Screenshot und den Beschreibungen werden die Informationen zu Posteingangsregeln hervorgehoben.
+Nachdem Sie die Suche ausgeführt haben, werden alle Überwachungsdatensätze für diese Aktivität in den Suchergebnissen angezeigt. Wählen Sie einen Überwachungsdatensatz aus, um die **Flyoutseite Details** anzuzeigen, und wählen Sie dann **Weitere Informationen aus.** Informationen zu den Posteingangsregeleinstellungen werden im Feld **Parameter** angezeigt. Im folgenden Screenshot und in den Beschreibungen werden die Informationen zu Posteingangsregeln hervorgehoben.
 
-![Überwachungseintrag für neue Posteingangsregel](../media/NewInboxRuleRecord.png)
+![Überwachungsdatensatz für neue Posteingangsregel](../media/NewInboxRuleRecord.png)
 
-a. Im Feld **objectID** wird der vollständige Name der Posteingangsregel angezeigt. Dieser Name enthält den Alias des Postfachs des Benutzers (beispielsweise "Sarad") und den Namen der Posteingangsregel (beispielsweise "Nachrichten von Administrator verschieben").
+a. Im **Feld ObjectId** wird der vollständige Name der Posteingangsregel angezeigt. Dieser Name enthält den Alias des Postfachs des Benutzers (z. B. SaraD) und den Namen der Posteingangsregel (z. B. "Nachrichten vom Administrator verschieben").
 
-b. Im Feld **Parameter** wird die Bedingung der Posteingangsregel angezeigt. In diesem Beispiel wird die Bedingung durch den *from* -Parameter angegeben. Der für den Parameter *from* definierte Wert gibt an, dass die Posteingangsregel auf von admin@alpinehouse.onmicrosoft.com gesendeten e-Mails agiert. Eine vollständige Liste der Parameter, die zum Definieren von Bedingungen für Posteingangsregeln verwendet werden können, finden Sie im Artikel [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/new-inboxrule) .
+b. Im Feld **Parameter** wird die Bedingung der Posteingangsregel angezeigt. In diesem Beispiel wird die Bedingung durch den *Parameter From* angegeben. Der für den *Parameter From* definierte Wert gibt an, dass die Posteingangsregel auf E-Mails wirkt, die von einem admin@alpinehouse.onmicrosoft.com. Eine vollständige Liste der Parameter, die zum Definieren von Bedingungen von Posteingangsregeln verwendet werden können, finden Sie im [Artikel New-InboxRule.](/powershell/module/exchange/new-inboxrule)
 
-c. Der Parameter *MoveToFolder* gibt die Aktion für die Posteingangsregel an. In diesem Beispiel werden Nachrichten, die von admin@alpinehouse.onmicrosoft.com empfangen werden, in den Ordner " *AdminSearch* " verschoben. Eine vollständige Liste der Parameter, die zum Definieren der Aktion einer Posteingangsregel verwendet werden können, finden Sie auch im Artikel [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/new-inboxrule) .
+c. Der *Parameter MoveToFolder* gibt die Aktion für die Posteingangsregel an. In diesem Beispiel werden nachrichten, die von admin@alpinehouse.onmicrosoft.com empfangen werden, in den Ordner *"AdminSearch" verschoben.* Eine vollständige Liste der Parameter, die zum Definieren der Aktion einer Posteingangsregel verwendet werden können, finden Sie im Artikel [New-InboxRule.](/powershell/module/exchange/new-inboxrule)
 
-d. Das **UserID** -Feld gibt den Benutzer an, der die im Feld **objectID** angegebene Posteingangsregel erstellt hat. Dieser Benutzer wird auch in der Spalte **Benutzer** auf der Suchergebnisseite angezeigt.
+d. Das **Feld UserId** gibt den Benutzer an, der die im Feld **ObjectId** angegebene Posteingangsregel erstellt hat. Dieser Benutzer wird auch in der **Spalte Benutzer** auf der Suchergebnissetseite angezeigt.
 
-## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>Untersuchen der Gründe für eine erfolgreiche Anmeldung durch einen Benutzer außerhalb Ihrer Organisation
+## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>Untersuchen, warum es eine erfolgreiche Anmeldung durch einen Benutzer außerhalb Ihrer Organisation gab
 
-Wenn Sie Überwachungseinträge im Überwachungsprotokoll überprüfen, werden möglicherweise Datensätze angezeigt, die angeben, dass ein externer Benutzer von Azure Active Directory authentifiziert wurde und sich erfolgreich bei Ihrer Organisation angemeldet hat. Beispielsweise kann ein Administrator in contoso.onmicrosoft.com einen Überwachungseintrag sehen, der anzeigt, dass ein Benutzer aus einer anderen Organisation (beispielsweise fabrikam.onmicrosoft.com) sich erfolgreich bei Contoso.onmicrosoft.com angemeldet hat. Ebenso werden möglicherweise Überwachungseinträge angezeigt, die Benutzer mit einem Microsoft-Konto (MSA) anzeigen, beispielsweise eine Outlook.com-oder Live.com, die sich erfolgreich bei Ihrer Organisation angemeldet haben. In diesen Situationen ist die überwachte Aktivität **Benutzer angemeldet** . 
+Beim Überprüfen von Überwachungsdatensätzen im Überwachungsprotokoll werden möglicherweise Datensätze angezeigt, die darauf hinweisen, dass ein externer Benutzer von Azure Active Directory authentifiziert und erfolgreich bei Ihrer Organisation angemeldet wurde. Beispielsweise wird einem Administrator in contoso.onmicrosoft.com möglicherweise ein Überwachungsdatensatz angezeigt, der zeigt, dass ein Benutzer aus einer anderen Organisation (z. B. fabrikam.onmicrosoft.com) erfolgreich bei einem contoso.onmicrosoft.com. Auf ähnliche Weise werden Möglicherweise Überwachungsdatensätze angezeigt, die darauf hinweisen, dass Benutzer mit einem Microsoft-Konto (MSA), z. B. Outlook.com oder Live.com, erfolgreich bei Ihrer Organisation angemeldet sind. In diesen Situationen ist die überwachte Aktivität **Benutzer angemeldet.** 
 
-Es handelt sich hierbei um ein beabsichtigtes Verhalten. Azure Active Directory (Azure AD), der Verzeichnisdienst, ermöglicht die so genannte *Pass-Through-Authentifizierung* , wenn ein externer Benutzer versucht, auf eine SharePoint-Website oder einen OneDrive-Standort in Ihrer Organisation zuzugreifen. Wenn der externe Benutzer versucht, dies zu tun, werden Sie aufgefordert, Ihre Anmeldeinformationen einzugeben. Azure AD verwendet die Anmeldeinformationen, um den Benutzer zu authentifizieren, was bedeutet, dass nur Azure AD überprüft, ob der Benutzer derjenige ist, der er sagt. Die Angabe der erfolgreichen Anmeldung im Überwachungsdatensatz ist das Ergebnis Azure AD Authentifizierung des Benutzers. Die erfolgreiche Anmeldung bedeutet nicht, dass der Benutzer in der Lage war, auf Ressourcen zuzugreifen oder andere Aktionen in Ihrer Organisation auszuführen. Er gibt nur an, dass der Benutzer von Azure AD authentifiziert wurde. Damit ein Pass-Through-Benutzer auf SharePoint-oder OneDrive-Ressourcen zugreifen kann, muss ein Benutzer in Ihrer Organisation eine Ressource explizit für den externen Benutzer freigeben, indem er Ihnen eine Freigabeeinladung oder einen anonymen Freigabe Link sendet. 
+Es handelt sich hierbei um ein beabsichtigtes Verhalten. Azure Active Directory (Azure AD), der Verzeichnisdienst, ermöglicht eine so genannte *Pass-Through-Authentifizierung,* wenn ein externer Benutzer versucht, auf eine #A0 oder einen #A1 in Ihrer Organisation zu zugreifen. Wenn der externe Benutzer versucht, dies zu tun, wird er zur Eingabe seiner Anmeldeinformationen aufgefordert. Azure AD verwendet die Anmeldeinformationen, um den Benutzer zu authentifizieren, was bedeutet, dass nur Azure AD überprüft, ob der Benutzer der Benutzer ist, von dem er sagt, dass er es ist. Der Hinweis auf die erfolgreiche Anmeldung im Überwachungsdatensatz ist das Ergebnis der Authentifizierung des Benutzers durch Azure AD. Die erfolgreiche Anmeldung bedeutet nicht, dass der Benutzer auf Ressourcen zugreifen oder andere Aktionen in Ihrer Organisation ausführen konnte. Es gibt nur an, dass der Benutzer von Azure AD authentifiziert wurde. Damit ein Pass-Through-Benutzer auf SharePoint- oder #A0 zugreifen kann, müsste ein Benutzer in Ihrer Organisation eine Ressource explizit für den externen Benutzer freigeben, indem er ihm eine Freigabeeinladung oder einen anonymen Freigabelink sendet. 
 
 > [!NOTE]
-> Azure AD ermöglicht die Pass-Through-Authentifizierung nur für *Anwendungen von Erstanbietern* wie SharePoint Online und OneDrive für Unternehmen. Sie ist für andere Drittanbieteranwendungen nicht zulässig.
+> Azure AD ermöglicht die Pass-Through-Authentifizierung nur für *Erstanwendungen,* z. B. SharePoint Online und OneDrive for Business. Es ist für andere Drittanbieteranwendungen nicht zulässig.
 
-Im folgenden finden Sie ein Beispiel und Beschreibungen relevanter Eigenschaften in einem Überwachungseintrag für einen **angemeldeten Benutzer** , der ein Ergebnis der Pass-Through-Authentifizierung ist. Wählen Sie den Überwachungseintrag aus, um die **Detail** Flyout-Seite anzuzeigen, und wählen Sie dann **Weitere Informationen** aus.
+Im Folgenden finden Sie ein Beispiel und Beschreibungen der relevanten Eigenschaften in einem Überwachungsdatensatz für einen angemeldeten **Benutzer,** der ein Ergebnis der Pass-Through-Authentifizierung ist. Wählen Sie den Überwachungsdatensatz aus, um die **Flyoutseite Details** anzuzeigen, und wählen Sie dann **Weitere Informationen aus.**
 
-![Beispiel für einen Überwachungseintrag für die erfolgreiche Pass-Through-Authentifizierung](../media/PassThroughAuth1.png)
+![Beispiel für einen Überwachungsdatensatz für eine erfolgreiche Pass-Thru-Authentifizierung](../media/PassThroughAuth1.png)
 
-   a. Dieses Feld gibt an, dass der Benutzer, der versucht hat, auf eine Ressource in Ihrer Organisation zuzugreifen, nicht im Azure AD Ihrer Organisation gefunden wurde.
+   a. Dieses Feld gibt an, dass der Benutzer, der versucht hat, auf eine Ressource in Ihrer Organisation zu zugreifen, nicht in Azure AD Ihrer Organisation gefunden wurde.
 
-   b. In diesem Feld wird der UPN des externen Benutzers angezeigt, der versucht hat, auf eine Ressource in Ihrer Organisation zuzugreifen. Diese Benutzer-ID wird auch in den Eigenschaften **User** und **UserID** im Überwachungseintrag identifiziert.
+   b. In diesem Feld wird der UPN des externen Benutzers angezeigt, der versucht hat, auf eine Ressource in Ihrer Organisation zu zugreifen. Diese Benutzer-ID wird auch in den **Eigenschaften User** und **UserId** im Überwachungsdatensatz identifiziert.
 
-   c. Die **ApplicationId** -Eigenschaft gibt die Anwendung an, die die Anmeldeanforderung ausgelöst hat. Der Wert von 00000003-0000-0ff1-ce00-000000000000, der in der ApplicationId-Eigenschaft in diesem Überwachungseintrag angezeigt wird, gibt SharePoint Online. OneDrive für Unternehmen hat auch dieselbe ApplicationId.
+   c. Die **ApplicationId-Eigenschaft** identifiziert die Anwendung, die die Anmeldeanforderung ausgelöst hat. Der Wert 00000003-0000-0ff1-ce00-00000000000000, der in der ApplicationId-Eigenschaft in diesem Überwachungsdatensatz angezeigt wird, gibt SharePoint Online an. OneDrive for Business verfügt auch über dieselbe ApplicationId.
 
-   d. Dies deutet darauf hin, dass die Pass-Through-Authentifizierung erfolgreich war. Mit anderen Worten: der Benutzer wurde erfolgreich von Azure AD authentifiziert. 
+   d. Dies weist darauf hin, dass die Pass-Through-Authentifizierung erfolgreich war. Anders ausgedrückt: Der Benutzer wurde erfolgreich von Azure AD authentifiziert. 
 
-   e. Der **RecordType** -Wert **15** gibt an, dass es sich bei der überwachten Aktivität (UserLoggedIn) um ein Sicherheitstokendienst-Anmeldeereignis (Secure Token Service, STS) in Azure AD handelt.
+   e. Der **RecordType-Wert** **von 15** gibt an, dass es sich bei der überwachten Aktivität (UserLoggedIn) um ein Secure Token Service (STS)-Anmeldeereignis in Azure AD handelt.
 
-Weitere Informationen zu den anderen Eigenschaften, die in einem UserLoggedIn-Überwachungseintrag angezeigt werden, finden Sie in den Azure AD bezogenen Schemainformationen im [API-Schema Office 365 Verwaltungsaktivität](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema).
+Weitere Informationen zu den anderen Eigenschaften, die in einem UserLoggedIn-Überwachungsdatensatz angezeigt werden, finden Sie in den Azure AD-bezogenen Schemainformationen im [Office 365-Verwaltungsaktivitäts-API-Schema](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema).
 
-Im folgenden finden Sie zwei Beispiele für Szenarien, die aufgrund der Pass-Through-Authentifizierung dazu führen, dass ein erfolgreicher **Benutzer in** der Überwachungsaktivität angemeldet ist: 
+Im Folgenden finden Sie zwei Beispielszenarien, die aufgrund der Pass-Through-Authentifizierung zu einer erfolgreichen Benutzer-angemeldeten Überwachungsaktivität führen würden:  
 
-  - Ein Benutzer mit einem Microsoft-Konto (beispielsweise SaraD@Outlook.com) hat versucht, auf ein Dokument in einem OneDrive für Unternehmen-Konto in fourthcoffee.onmicrosoft.com zuzugreifen, und es gibt kein entsprechendes Gastbenutzerkonto für SaraD@Outlook.com in fourthcoffee.onmicrosoft.com.
+  - Ein Benutzer mit einem #A0 (z. B. SaraD@outlook.com) hat versucht, auf ein Dokument in einem OneDrive for #A1 in fourthcoffee.onmicrosoft.com zu zugreifen, und es gibt kein entsprechendes Gastbenutzerkonto für SaraD@outlook.com in fourthcoffee.onmicrosoft.com.
 
-  - Ein Benutzer mit einem Arbeits-oder Schulkonto in einer Organisation (beispielsweise pilarp@fabrikam.onmicrosoft.com) hat versucht, auf eine SharePoint-Website in contoso.onmicrosoft.com zuzugreifen, und es gibt kein entsprechendes Gastbenutzerkonto für pilarp@fabrikam.com in contoso.onmicrosoft.com.
+  - Ein Benutzer mit einem Arbeits- oder Schulkonto in einer Organisation (z. B. pilarp@fabrikam.onmicrosoft.com) hat versucht, auf eine SharePoint-Website in contoso.onmicrosoft.com zu zugreifen, und es gibt kein entsprechendes Gastbenutzerkonto für pilarp@fabrikam.com in contoso.onmicrosoft.com.
 
-### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>Tipps für die Untersuchung erfolgreicher Anmeldungen, die sich aus der Pass-Through-Authentifizierung ergeben
+### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>Tipps zum Untersuchen erfolgreicher Anmeldungen, die sich aus der Pass-Through-Authentifizierung ergeben
 
-- Durchsuchen Sie das Überwachungsprotokoll nach Aktivitäten, die von dem externen Benutzer ausgeführt werden, der im Überwachungseintrag für **angemeldete Benutzer** angegeben ist. Geben Sie den UPN für den externen Benutzer in das Feld **Benutzer** ein, und verwenden Sie einen Datumsbereich, falls relevant für Ihr Szenario. Sie können beispielsweise eine Suche mit den folgenden Suchkriterien erstellen:
+- Durchsuchen Sie das Überwachungsprotokoll nach Aktivitäten, die von dem externen Benutzer ausgeführt werden, der im **Überwachungsdatensatz "Angemeldeter Benutzer"** identifiziert ist. Geben Sie den UPN für den externen Benutzer in das Feld **Benutzer** ein, und verwenden Sie einen Datumsbereich, sofern dies für Ihr Szenario relevant ist. Sie können z. B. eine Suche mit den folgenden Suchkriterien erstellen:
 
    ![Suchen nach allen Aktivitäten, die vom externen Benutzer ausgeführt werden](../media/PassThroughAuth2.png)
 
-    Zusätzlich zu den **in Aktivitäten angemeldeten Benutzern** werden möglicherweise andere Überwachungseinträge zurückgegeben, die angeben, dass ein Benutzer in Ihrer Organisation Ressourcen mit dem externen Benutzer freigegeben hat und ob der externe Benutzer ein Dokument, das für Sie freigegeben wurde, aufgerufen, geändert oder heruntergeladen hat.
+    Zusätzlich zu  den angemeldeten Aktivitäten des Benutzers können andere Überwachungsdatensätze zurückgegeben werden, z. B. solche, die angeben, dass ein Benutzer in Ihrer Organisation Ressourcen für den externen Benutzer freigegeben hat und ob der externe Benutzer auf ein dokument zugegriffen, geändert oder heruntergeladen hat, das für sie freigegeben wurde.
 
-- Suche nach SharePoint-freigabeaktivitäten, die darauf hindeuten, dass eine Datei für den externen Benutzer freigegeben wurde, der von einem im Überwachungsprotokoll **angemeldeten Benutzer** identifiziert wurde. Weitere Informationen finden Sie unter [Verwenden der Freigabeüberwachung im Überwachungsprotokoll](use-sharing-auditing.md).
+- Suchen Sie nach SharePoint-Freigabeaktivitäten, die darauf hinweisen, dass eine Datei für den externen Benutzer freigegeben wurde, der durch einen **angemeldeten Überwachungsdatensatz** des Benutzers identifiziert wurde. Weitere Informationen finden Sie unter [Verwenden der Freigabeüberwachung im Überwachungsprotokoll](use-sharing-auditing.md).
 
-- Exportieren Sie die Überwachungsprotokoll-Suchergebnisse, die Datensätze enthalten, die für Ihre Untersuchung relevant sind, damit Sie Excel für die Suche nach anderen Aktivitäten im Zusammenhang mit dem externen Benutzer verwenden können. Weitere Informationen finden Sie unter  [exportieren, konfigurieren und Anzeigen von Überwachungsprotokolldaten Sätzen](export-view-audit-log-records.md).
+- Exportieren Sie die Suchergebnisse des Überwachungsprotokolls, die datensätze enthalten, die für Ihre Untersuchung relevant sind, sodass Sie excel verwenden können, um nach anderen Aktivitäten im Zusammenhang mit dem externen Benutzer zu suchen. Weitere Informationen finden Sie unter Exportieren, Konfigurieren und Anzeigen  [von Überwachungsprotokolleinträgen](export-view-audit-log-records.md).
 
-## <a name="search-for-mailbox-activities-performed-by-users-with-non-e5-licenses"></a>Suchen nach Postfachaktivitäten, die von Benutzern mit nicht-E5-Lizenzen ausgeführt werden
+## <a name="search-for-mailbox-activities-performed-by-users-with-non-e5-licenses"></a>Suchen nach Postfachaktivitäten, die von Benutzern mit Nicht-E5-Lizenzen ausgeführt werden
 
-Selbst wenn die [postfachüberwachung](enable-mailbox-auditing.md) für Ihre Organisation standardmäßig aktiviert ist, bemerken Sie möglicherweise, dass Post Fach Überwachungsereignisse für einige Benutzer in Überwachungsprotokoll suchen nicht mithilfe des Compliance Centers, des Cmdlets " **Search-UnifiedAuditLog** " oder der API für die Office 365 Verwaltungsaktivität gefunden werden. Der Grund hierfür ist, dass Post Fach Überwachungsereignisse nur für Benutzer mit E5-Lizenzen zurückgegeben werden, wenn Sie eine der vorherigen Methoden zum Durchsuchen des einheitlichen Überwachungsprotokolls haben.
+Selbst [](enable-mailbox-auditing.md) wenn die Postfachüberwachung für Ihre Organisation standardmäßig aktiviert ist, können Sie feststellen, dass Postfachüberwachungsereignisse für einige Benutzer nicht in Überwachungsprotokollsuchen mithilfe des Compliance Centers, des **Cmdlets Search-UnifiedAuditLog** oder der Office 365-Verwaltungsaktivitäts-API gefunden werden. Der Grund dafür ist, dass Postfach-Überwachungsereignisse nur für Benutzer mit E5-Lizenzen zurückgegeben werden, wenn Sie eine der vorherigen Methoden zum Durchsuchen des einheitlichen Überwachungsprotokolls verwenden.
 
-Um postfachüberwachungsprotokoll-Datensätze für nicht-E5-Benutzer abzurufen, können Sie eine der folgenden Problemumgehungen ausführen:
+Zum Abrufen von Postfach-Überwachungsprotokolleinträgen für Nicht-E5-Benutzer können Sie eine der folgenden Problemumgehungen ausführen:
 
-- Aktivieren Sie die postfachüberwachung für einzelne Postfächer manuell (führen Sie den `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` Befehl in Exchange Online PowerShell aus). Suchen Sie anschließend mithilfe des Compliance Center, des Cmdlets **Search-UnifiedAuditLog** oder der API für die Office 365 Verwaltungsaktivität nach Post Fach Überwachungsaktivitäten.
+- Manuelles Aktivieren der Postfachüberwachung für einzelne Postfächer (Führen Sie den `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` Befehl in Exchange Online PowerShell aus). Suchen Sie anschließend mithilfe des Compliance Centers, des **Cmdlets Search-UnifiedAuditLog** oder der Office 365-Verwaltungsaktivitäts-API nach Postfach-Überwachungsaktivitäten.
   
   > [!NOTE]
-  > Wenn die postfachüberwachung für das Postfach bereits aktiviert ist, Ihre Suche jedoch keine Ergebnisse zurückgibt, ändern Sie den Wert des Parameters _AuditEnabled_ in `$false` und dann zurück zu `$true` .
+  > Wenn die Postfachüberwachung bereits für das Postfach aktiviert zu sein scheint, ihre Suchen jedoch keine Ergebnisse zurückgeben, ändern Sie den Wert des _Parameters AuditEnabled_ in und dann `$false` wieder in `$true` .
   
 - Verwenden Sie die folgenden Cmdlets in Exchange Online PowerShell:
 
-  - [Search-Mailbox auditlog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) , um das postfachüberwachungsprotokoll für bestimmte Benutzer zu durchsuchen.
+  - [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) zum Durchsuchen des Postfach-Überwachungsprotokolls nach bestimmten Benutzern.
 
-  - [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxauditlogsearch) , um das postfachüberwachungsprotokoll für bestimmte Benutzer zu durchsuchen und die Ergebnisse per e-Mail an angegebene Empfänger zu senden.
+  - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) zum Durchsuchen des Postfach-Überwachungsprotokolls nach bestimmten Benutzern und zum Senden der Ergebnisse per E-Mail an angegebene Empfänger.
 
 ## <a name="search-for-mailbox-activities-performed-in-a-specific-mailbox-including-shared-mailboxes"></a>Suchen nach Postfachaktivitäten, die in einem bestimmten Postfach ausgeführt werden (einschließlich freigegebener Postfächer)
 
-Wenn Sie die Dropdownliste " **Benutzer** " im Überwachungsprotokoll-Such Tool im Compliance Center oder den Befehl " **Search-UnifiedAuditLog-userids** " in Exchange Online PowerShell verwenden, können Sie nach Aktivitäten suchen, die von einem bestimmten Benutzer ausgeführt werden. Bei Post Fach Überwachungsaktivitäten sucht diese Art von Suche nach Aktivitäten, die von dem angegebenen Benutzer ausgeführt werden. Es wird nicht sichergestellt, dass alle im gleichen Postfach ausgeführten Aktivitäten in den Suchergebnissen zurückgegeben werden. Beispielsweise gibt eine Überwachungsprotokoll Suche keine Überwachungsdatensätze für Aktivitäten zurück, die von einem Stellvertreter Benutzer ausgeführt werden, da die Suche nach Postfachaktivitäten, die von einem bestimmten Benutzer ausgeführt werden, keine Aktivitäten zurückgibt, die von einem Stellvertreter ausgeführt wurden, dem Berechtigungen für den Zugriff auf das Postfach eines anderen Benutzers zugewiesen wurden. (Ein Stellvertreter Benutzer ist jemand, dem die Berechtigung "Senden", "SendOnBehalf" oder "FullAccess" für das Postfach eines anderen Benutzers zugewiesen wurde.)
+Wenn Sie  die Dropdownliste Benutzer im Überwachungsprotokollsuchtool im Compliance Center oder den **Befehl Search-UnifiedAuditLog -UserIds** in Exchange Online PowerShell verwenden, können Sie nach Aktivitäten suchen, die von einem bestimmten Benutzer ausgeführt werden. Bei Postfach-Überwachungsaktivitäten sucht diese Art von Suche nach Aktivitäten, die vom angegebenen Benutzer ausgeführt werden. Es garantiert nicht, dass alle Aktivitäten, die im gleichen Postfach ausgeführt werden, in den Suchergebnissen zurückgegeben werden. Beispielsweise gibt eine Überwachungsprotokollsuche keine Überwachungsdatensätze für Aktivitäten zurück, die von einem Stellvertretungsbenutzer ausgeführt werden, da die Suche nach Postfachaktivitäten, die von einem bestimmten Benutzer ausgeführt werden, keine Aktivitäten zurücksendet, die von einem Stellvertretungsbenutzer ausgeführt werden, dem Berechtigungen für den Zugriff auf das Postfach eines anderen Benutzers zugewiesen wurden. (Ein Stellvertretungsbenutzer ist eine Person, der die Postfachberechtigung SendAs, SendOnBehalf oder FullAccess für das Postfach eines anderen Benutzers zugewiesen wurde.)
 
-Außerdem werden mithilfe der Dropdownliste **Benutzer** im Überwachungsprotokoll-Such Tool oder der **Such-UnifiedAuditLog-UserID** keine Ergebnisse für Aktivitäten zurückgegeben, die in einem freigegebenen Postfach ausgeführt werden.
+Darüber hinaus gibt die Verwendung der **Dropdownliste** Benutzer im Suchtool für Überwachungsprotokolle oder **search-UnifiedAuditLog -UserIds** keine Ergebnisse für Aktivitäten zurück, die in einem freigegebenen Postfach ausgeführt werden.
 
-Verwenden Sie beim Ausführen des Cmdlets **Search-UnifiedAuditLog** die folgende Syntax, um nach den in einem bestimmten Postfach ausgeführten Aktivitäten zu suchen oder um nach Aktivitäten zu suchen, die in einem freigegebenen Postfach ausgeführt wurden:
+Verwenden Sie beim Ausführen des **Cmdlets Search-UnifiedAuditLog** die folgende Syntax, um nach den Aktivitäten zu suchen, die in einem bestimmten Postfach ausgeführt werden, oder um nach Aktivitäten zu suchen, die in einem freigegebenen Postfach ausgeführt werden:
 
 ```powershell
 Search-UnifiedAuditLog  -StartDate <date> -EndDate <date> -FreeText (Get-Mailbox <mailbox identity).ExchangeGuid
 ```
 
-Der folgende Befehl gibt beispielsweise Überwachungsdatensätze für Aktivitäten zurück, die im freigegebenen Postfach des Contoso-Konformitäts Teams zwischen August 2020 und Oktober 2020 ausgeführt wurden:
+Der folgende Befehl gibt beispielsweise Überwachungsdatensätze für Aktivitäten zurück, die zwischen August 2020 und Oktober 2020 im freigegebenen Postfach des Contoso Compliance Teams ausgeführt wurden:
 
 ```powershell
 Search-UnifiedAuditLog  -StartDate 08/01/2020 -EndDate 10/31/2020 -FreeText (Get-Mailbox complianceteam@contoso.onmicrosoft.com).ExchangeGuid
 ```
 
-Alternativ können Sie das Cmdlet **Search-Mailbox auditlog** verwenden, um nach Überwachungsdatensätzen für Aktivitäten zu suchen, die in einem bestimmten Postfach ausgeführt werden. Dies umfasst die Suche nach Aktivitäten, die in einem freigegebenen Postfach ausgeführt werden.
+Alternativ können Sie das **Cmdlet Search-MailboxAuditLog** verwenden, um nach Überwachungsdatensätzen für Aktivitäten zu suchen, die in einem bestimmten Postfach ausgeführt werden. Dies umfasst die Suche nach Aktivitäten, die in einem freigegebenen Postfach ausgeführt werden.
 
-Im folgenden Beispiel werden Datensätze für postfachüberwachungsprotokolle für Aktivitäten im freigegebenen Postfach des Contoso-Compliance-Teams zurückgegeben:
+Im folgenden Beispiel werden Postfach-Überwachungsprotokolleinträge für Aktivitäten zurückgegeben, die im freigegebenen Postfach des Contoso Compliance Teams ausgeführt werden:
 
 ```powershell
 Search-MailboxAuditLog -Identity complianceteam@contoso.onmicrosoft.com -StartDate 08/01/2020 -EndDate 10/31/2020 -ShowDetails
 ```
 
-Im folgenden Beispiel werden postfachüberwachungsprotokoll Einträge für Aktivitäten zurückgegeben, die im angegebenen Postfach durch Stellvertreter Benutzer ausgeführt werden:
+Im folgenden Beispiel werden Postfach-Überwachungsprotokolleinträge für Aktivitäten zurückgegeben, die im angegebenen Postfach von Stellvertretungsbenutzern ausgeführt werden:
 
 ```powershell
 Search-MailboxAuditLog -Identity <mailbox identity> -StartDate <date> -EndDate <date> -LogonTypes Delegate -ShowDetails
 ```
 
-Sie können auch das Cmdlet **New-MailboxAuditLogSearch** verwenden, um das Überwachungsprotokoll nach einem bestimmten Postfach zu durchsuchen und die Ergebnisse per e-Mail an angegebene Empfänger zu senden.
+Sie können auch das **Cmdlet New-MailboxAuditLogSearch** verwenden, um das Überwachungsprotokoll nach einem bestimmten Postfach zu durchsuchen und die Ergebnisse per E-Mail an angegebene Empfänger zu senden.

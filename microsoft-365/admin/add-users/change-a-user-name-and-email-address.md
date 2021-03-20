@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Erfahren Sie, wie ein globaler Administrator die E-Mail-Adresse und den Anzeigenamen eines Benutzers ändern kann. '
-ms.openlocfilehash: 7f894af3778964dfa6c696c1f467bc0dd8313f32
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+ms.openlocfilehash: 6a5498f4e480802f8770f7b7adde55fe7c996dc8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585294"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904480"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändern von Benutzernamen und -E-Mail-Adressen
 
@@ -221,7 +221,7 @@ Es kann bis zu 24 Stunden dauern, bis diese Änderung in allen Diensten wirksam 
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>„Es wurde kein Parameter gefunden, der dem Parameternamen ‚E-Mail-Adressen‘ entspricht“
 
-Wenn die Fehlermeldung „**Es wurde kein Parameter gefunden, der dem Parameternamen 'EmailAddresses' entspricht**“ angezeigt wird, bedeutet dies, dass es etwas länger dauert, bis das Einrichten Ihres Mandanten oder Ihrer benutzerdefinierten Domäne (falls Sie kürzlich eine hinzugefügt haben) abgeschlossen ist. Der Setupvorgang kann bis zu 4 Stunden dauern. Warten Sie eine Zeitlang, damit dieser Vorgang abgeschlossen werden kann. Versuchen Sie es dann erneut. Sollte das Problem weiterhin bestehen, rufen Sie den [Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) an und bitten Sie um eine vollständige Synchronisierung.
+Wenn die Fehlermeldung „**Es wurde kein Parameter gefunden, der dem Parameternamen 'EmailAddresses' entspricht**“ angezeigt wird, bedeutet dies, dass es etwas länger dauert, bis das Einrichten Ihres Mandanten oder Ihrer benutzerdefinierten Domäne (falls Sie kürzlich eine hinzugefügt haben) abgeschlossen ist. Der Setupvorgang kann bis zu 4 Stunden dauern. Warten Sie eine Zeitlang, damit dieser Vorgang abgeschlossen werden kann. Versuchen Sie es dann erneut. Sollte das Problem weiterhin bestehen, rufen Sie den [Support](../contact-support-for-business-products.md) an und bitten Sie um eine vollständige Synchronisierung.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>„Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen und versuchen Sie es noch einmal“
 
@@ -249,7 +249,7 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
 > [!TIP]
 > Damit wird das Attribut **userPrincipalName** einer Person geändert, allerdings hat dies keine Auswirkungen auf deren Microsoft Online E-Mail Routing-Adresse (MOERA). Als bewährte Methode sollten Sie jedoch dafür sorgen, dass der Anmelde-UPN dieser Person mit ihrer primären SMTP-Adresse übereinstimmt. 
   
-Wenn Sie erfahren möchten, wie ein Benutzername einer Person in Active Directory, in Windows Server 2003 und früher geändert wird, lesen Sie [Umbenennen eines Benutzerkontos](https://go.microsoft.com/fwlink/?LinkId=809091).
+Wenn Sie erfahren möchten, wie ein Benutzername einer Person in Active Directory, in Windows Server 2003 und früher geändert wird, lesen Sie [Umbenennen eines Benutzerkontos](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10)).
   
 ## <a name="related-articles"></a>Verwandte Artikel
 

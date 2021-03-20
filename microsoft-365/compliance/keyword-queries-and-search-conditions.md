@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über E-Mail- und Dateieigenschaften, die Sie mithilfe der Such- und eDiscovery-Tools in Microsoft 365 durchsuchen können.
-ms.openlocfilehash: d5b558df15cde6be6f87663dcb999efc6ec66f7e
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: e3282cd5b8bcc493e7c423db72c086f953d114ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50604031"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903583"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>Schlüsselwortabfragen und Suchbedingungen für inhaltssuche und eDiscovery
 
@@ -42,7 +42,7 @@ In diesem Thema werden die E-Mail- und Dokumenteigenschaften beschrieben, die Si
 Schrittweise Anweisungen zum Erstellen einer Inhaltssuche finden Sie unter [Inhaltssuche](content-search.md).
 
 > [!NOTE]
-> Die Inhaltssuche im Microsoft 365 Compliance Center und die entsprechenden **\* Cmdlets -ComplianceSearch** in Security & Compliance Center PowerShell verwenden die Keyword Query Language (KQL). Ausführlichere Informationen finden Sie unter [Keyword Query Language syntax reference](https://go.microsoft.com/fwlink/?LinkId=269603). 
+> Die Inhaltssuche im Microsoft 365 Compliance Center und die entsprechenden **\* Cmdlets -ComplianceSearch** in Security & Compliance Center PowerShell verwenden die Keyword Query Language (KQL). Ausführlichere Informationen finden Sie unter [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). 
   
 ## <a name="searchable-email-properties"></a>Durchsuchbare E-Mail-Eigenschaften
 
@@ -91,7 +91,7 @@ Beachten Sie jedoch, dass das Verhindern der Empfängererweiterung in der Suchab
 
 In der folgenden Tabelle sind einige der SharePoint- und OneDrive for & aufgeführt, die mithilfe der Inhaltssuche im Security & Compliance Center oder mithilfe des **Cmdlets New-ComplianceSearch** oder **set-ComplianceSearch** durchsucht werden können. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. 
   
-Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden können, finden Sie unter [Overview of crawled and managed properties in SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Eigenschaften, die **in** der Spalte **"Abfragebar"** mit "Ja" gekennzeichnet sind, können durchsucht werden. 
+Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden können, finden Sie unter [Overview of crawled and managed properties in SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Eigenschaften, die **in** der Spalte **"Abfragebar"** mit "Ja" gekennzeichnet sind, können durchsucht werden. 
   
 | Eigenschaft | Beschreibung der Eigenschaft | Beispiel | Von den Beispielen zurückgegebene Suchergebnisse |
 |:-----|:-----|:-----|:-----|
@@ -109,7 +109,7 @@ Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden kö
 |SharedWithUsersOWSUser|Dokumente, die für den angegebenen Benutzer  freigegeben und auf der Seite Für mich freigegeben auf der OneDrive for #A0 des Benutzers angezeigt wurden. Dies sind Dokumente, die von anderen Personen in Ihrer Organisation explizit für den angegebenen Benutzer freigegeben wurden. Wenn Sie Dokumente exportieren, die einer Suchabfrage entsprechen, die die SharedWithUsersOWSUser-Eigenschaft verwendet, werden die Dokumente aus dem ursprünglichen Inhaltsspeicherort der Person exportiert, die das Dokument für den angegebenen Benutzer freigegeben hat. Weitere Informationen finden Sie unter [Searching for site content shared within your organization](#searching-for-site-content-shared-within-your-organization).|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|Beide Beispiele geben alle internen Dokumente zurück, die explizit für  Garth Fort freigegeben wurden und auf der Seite Für mich freigegeben im OneDrive for #A0 von Garth Fort angezeigt werden.|
 |Website|Die URL einer Website oder Gruppe von Websites in Ihrer Organisation.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|Im ersten Beispiel werden Elemente von den OneDrive for #A0 für alle Benutzer in der Organisation zurückgegeben. Im zweiten Beispiel werden Elemente von allen Teamwebsites zurückgegeben.|
 |Größe|Die Größe eines Elements in Byte.|`size>=1`  <br/> `size:1..10000`|Im ersten Beispiel werden Elemente zurückgegeben, die größer als 1 Byte sind. Im zweiten Beispiel werden Elemente zwischen 1 und 10.000 Byte zurückgegeben.|
-|Title|Der Titel des Dokuments. Bei der Title-Eigenschaft handelt es sich um Metadaten, die in Microsoft Office angegeben werden. Sie unterscheiden sich vom Dateinamen des Dokuments.|`title:"communication plan"`|Jedes Dokument, das den Ausdruck "Kommunikationsplan" in der Title-Metadateneigenschaft eines Office-Dokuments enthält.|
+|Titel|Der Titel des Dokuments. Bei der Title-Eigenschaft handelt es sich um Metadaten, die in Microsoft Office angegeben werden. Sie unterscheiden sich vom Dateinamen des Dokuments.|`title:"communication plan"`|Jedes Dokument, das den Ausdruck "Kommunikationsplan" in der Title-Metadateneigenschaft eines Office-Dokuments enthält.|
 |||||
 
 ## <a name="searchable-contact-properties"></a>Durchsuchbare Kontakteigenschaften
@@ -138,7 +138,7 @@ In der folgenden Tabelle sind die Kontakteigenschaften aufgeführt, die indizier
 |OfficeLocation|Der Wert in **der Office-** oder **Office-Location-Eigenschaft.**|
 |OtherAddress|Der Wert für die **Other** address-Eigenschaft.|
 |Nachname|Der Name in der **Nachnamen-Eigenschaft.**|
-|Title|Der Titel in der **Job title-Eigenschaft.**|
+|Titel|Der Titel in der **Job title-Eigenschaft.**|
 |||||
 
 ## <a name="searchable-sensitive-data-types"></a>Durchsuchbare vertrauliche Datentypen
@@ -161,7 +161,7 @@ Weitere Informationen zum Erstellen von Abfragen mithilfe der Eigenschaft finden
 
   Anschließend können Sie die ID in der Sucheigenschaft verwenden, um Dokumente zurück zu geben, die den benutzerdefinierten `SensitiveType` vertraulichen Datentyp enthalten. Beispiel: `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
   
-- Sie können vertrauliche Informationstypen und die Sucheigenschaft nicht verwenden, um in Exchange Online-Postfächern nach vertraulichen Daten in Ruhe `SensitiveType` zu suchen. Dies umfasst 1:1-Chatnachrichten, 1:N-Gruppenchatnachrichten und Teamkanalunterhaltungen in Microsoft Teams, da all diese Inhalte in Postfächern gespeichert werden. Sie können jedoch DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) verwenden, um vertrauliche E-Mail-Daten bei der Übertragung zu schützen. Weitere Informationen finden Sie unter [Overview of data loss prevention policies](data-loss-prevention-policies.md) and Search for and find personal [data](search-for-and-find-personal-data.md).
+- Sie können vertrauliche Informationstypen und die Sucheigenschaft nicht verwenden, um in Exchange Online-Postfächern nach vertraulichen Daten in Ruhe `SensitiveType` zu suchen. Dies umfasst 1:1-Chatnachrichten, 1:N-Gruppenchatnachrichten und Teamkanalunterhaltungen in Microsoft Teams, da all diese Inhalte in Postfächern gespeichert werden. Sie können jedoch DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) verwenden, um vertrauliche E-Mail-Daten bei der Übertragung zu schützen. Weitere Informationen finden Sie unter [Overview of data loss prevention policies](data-loss-prevention-policies.md) and Search for and find personal [data](/compliance/regulatory/gdpr).
   
 ## <a name="search-operators"></a>Suchoperatoren
 
@@ -227,7 +227,7 @@ Erstellen Sie eine Bedingung mithilfe von E-Mail-Eigenschaften beim Durchsuchen 
 |:-----|:-----|
 |Nachrichten art| Der Nachrichtentyp, nach dem gesucht wird. Dies ist die gleiche Eigenschaft wie die E-Mail-Eigenschaft „Art“. Mögliche Werte:  <br/><br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|
 |Teilnehmer|Alle Personenfelder in einer E-Mail-Nachricht. Diese Felder sind From, To, Cc und Bcc.|
-|Typ|Die Nachrichtenklasseneigenschaft für ein E-Mail-Element. Dies ist dieselbe Eigenschaft wie die ItemClass-E-Mail-Eigenschaft. Es ist auch eine mehrwertige Bedingung. Wenn Sie also mehrere Nachrichtenklassen auswählen möchten, halten Sie die STRG-TASTE gedrückt, und klicken Sie dann in der Dropdownliste auf zwei oder mehr Nachrichtenklassen, die Sie der Bedingung hinzufügen möchten.  Jede Nachrichtenklasse, die Sie in der Liste auswählen, wird durch den **OR-Operator** in der entsprechenden Suchabfrage logisch verbunden.  <br/> Eine Liste der Nachrichtenklassen (und der entsprechenden Nachrichtenklassen-ID), die von Exchange  verwendet werden und die Sie in der Liste Nachrichtenklassen auswählen können, finden Sie unter [Item Types and Message Classes](https://go.microsoft.com/fwlink/?linkid=848143).|
+|Typ|Die Nachrichtenklasseneigenschaft für ein E-Mail-Element. Dies ist dieselbe Eigenschaft wie die ItemClass-E-Mail-Eigenschaft. Es ist auch eine mehrwertige Bedingung. Wenn Sie also mehrere Nachrichtenklassen auswählen möchten, halten Sie die STRG-TASTE gedrückt, und klicken Sie dann in der Dropdownliste auf zwei oder mehr Nachrichtenklassen, die Sie der Bedingung hinzufügen möchten.  Jede Nachrichtenklasse, die Sie in der Liste auswählen, wird durch den **OR-Operator** in der entsprechenden Suchabfrage logisch verbunden.  <br/> Eine Liste der Nachrichtenklassen (und der entsprechenden Nachrichtenklassen-ID), die von Exchange  verwendet werden und die Sie in der Liste Nachrichtenklassen auswählen können, finden Sie unter [Item Types and Message Classes](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes).|
 |Empfangen|Das Datum, an dem eine E-Mail-Nachricht von einem Empfänger empfangen wurde. Dies ist die gleiche Eigenschaft wie die E-Mail-Eigenschaft „Empfangen“.|
 |Empfänger|Alle Empfängerfelder in einer E-Mail-Nachricht. Diese Felder sind To, Cc und Bcc.|
 |Absender|Der Absender einer E-Mail-Nachricht.|
@@ -243,7 +243,7 @@ Erstellen Sie eine Bedingung mithilfe von Dokumenteigenschaften, wenn Sie auf Sh
 | Bedingung | Beschreibung |
 |:-----|:-----|
 |Ursprung|Das Autorenfeld aus Office-Dokumenten, das beibehalten wird, wenn ein Dokument kopiert wird. Wenn beispielsweise ein Benutzer ein Dokument erstellt und die E-Mails an eine andere Person senden, die es dann in SharePoint hochlädt, behält das Dokument weiterhin den ursprünglichen Autor bei.|
-|Title|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er ist anders als der Dateiname des Dokuments.|
+|Titel|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er ist anders als der Dateiname des Dokuments.|
 |Erstellt|Das Datum, an dem ein Dokument erstellt wird.|
 |Zuletzt geändert|Das Datum, an dem ein Dokument zuletzt geändert wurde.|
 |Dateityp|Die Erweiterung einer Datei; Beispiel: docx, one, pptx oder xlsx. Dies ist dieselbe Eigenschaft wie die FileExtension-Websiteeigenschaft.|

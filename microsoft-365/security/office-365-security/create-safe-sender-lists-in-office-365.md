@@ -17,12 +17,12 @@ ms.custom:
 description: Administratoren können sich über die verfügbaren und bevorzugten Optionen zum Zulassen eingehender Nachrichten in Exchange Online Protection (EOP) informieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 33f4e9ac33f7952612e8b469345e38507ece5f4b
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 88c70eea4952eda9315687ae90e2f6834f1edaf8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453741"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903820"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Erstellen von Listen sicherer Absender in EOP
 
@@ -58,7 +58,7 @@ Im Gegensatz dazu haben Sie auch mehrere Optionen, um E-Mails von bestimmten Que
 
 ## <a name="recommended-use-mail-flow-rules"></a>(Empfohlen) Verwenden von Nachrichtenflussregeln
 
-Nachrichtenflussregeln in Exchange Online und eigenständigen EOP verwenden Bedingungen und Ausnahmen, um Nachrichten zu identifizieren, und Aktionen, um anzugeben, was mit diesen Nachrichten geschehen soll. Weitere Informationen finden Sie unter [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
+Nachrichtenflussregeln in Exchange Online und eigenständigen EOP verwenden Bedingungen und Ausnahmen, um Nachrichten zu identifizieren, und Aktionen, um anzugeben, was mit diesen Nachrichten geschehen soll. Weitere Informationen finden Sie unter [Mail flow rules (transport rules) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
 Im folgenden Beispiel wird davon ausgegangen, dass Sie E-Mails von contoso.com zum Überspringen der Spamfilterung benötigen. Konfigurieren Sie dazu die folgenden Einstellungen:
 

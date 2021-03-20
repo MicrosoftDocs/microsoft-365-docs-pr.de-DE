@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Finden Sie heraus, wo innerhalb der Europäischen Union Ihre Microsoft 365-Kundendaten gespeichert werden
-ms.openlocfilehash: 78c2ae75656df017631fce0a189f6e25ee44f20f
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 28bfa7c18aff485e084e4d77bb2a36f0f5b7e95f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527685"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905680"
 ---
 # <a name="data-locations-for-the-european-union"></a>Datenspeicherorte für die Europäische Union
 
@@ -47,7 +47,7 @@ Wir haben Rechenzentrum in Deutschland und Frankreich eingerichtet, was Ihnen er
 |:-------|:-----|:-------|:-------|
 | Exchange Online | Frankreich | Deutschland | Europäische Union |
 | OneDrive for Business | Frankreich | Deutschland | Europäische Union |
-| Microsoft Office SharePoint Online | Frankreich | Deutschland | Europäische Union |
+| SharePoint Online | Frankreich | Deutschland | Europäische Union |
 | Skype for Business | Europäische Union | Europäische Union | Europäische Union |
 | Microsoft Teams | Frankreich | Deutschland | Europäische Union |
 | Office Online und Mobil | Frankreich | Deutschland | Europäische Union |
@@ -74,14 +74,14 @@ Wenn Sie die Nutzung eines der oben genannten Dienste beginnen, findet die Verar
 
 Wenn eine vorübergehende Übertragung erforderlich ist, verwenden wir bei der Übertragung stets eine dem letzten Stand der Technik entsprechende Verschlüsselung, und wir werden Ihre Daten immer unmittelbar nach der Verarbeitung an den von Ihnen ausgewählten Datenspeicherort zurücksenden. Wir setzen bei diesen vorübergehenden Übertragungen auf unsere Einhaltung europäischer Gesetze durch die Standardvertragsklauseln (SCCs – Standard Contractual Clauses) sowie unsere ergänzenden Maßnahmen zum Schutz der Daten. 
 
-Weitere Informationen finden Sie in den [Standardvertragsklauseln der Europäischen Union](https://docs.microsoft.com/microsoft-365/compliance/offering-eu-model-clauses).
+Weitere Informationen finden Sie in den [Standardvertragsklauseln der Europäischen Union](/compliance/regulatory/offering-EU-Model-Clauses).
 
 >[!Note]
 >Kundendaten für Sway und Workplace Analytics werden in den USA gespeichert und verarbeitet, wenn Sie diese Dienste nutzen.
 >
 
 >[!Note]
->Microsoft 365-Dienste können Teile von Informationen zu Mandantenverzeichnissen / Identitätsdaten in anderen Regionen als der EU abfragen und speichern, um bestimmte Szenarien zu vereinfachen. In Szenarien mit überregionalen e-Mail-Routing, Anrufweiterleitung und Authentifizierung benötigen Microsoft 365-Systeme möglicherweise einige Informationen zu EU-Empfängern, um diese Anforderungen ordnungsgemäß weiterzuleiten. Microsoft 365-Systeme sind für Identitäts- und Authentifizierungsfunktionen auch von Azure Active Directory abhängig. Weitere Informationen finden Sie unter [Identitätsdatenspeicherung für europäische Kunden in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-data-storage-eu).
+>Microsoft 365-Dienste können Teile von Informationen zu Mandantenverzeichnissen / Identitätsdaten in anderen Regionen als der EU abfragen und speichern, um bestimmte Szenarien zu vereinfachen. In Szenarien mit überregionalen e-Mail-Routing, Anrufweiterleitung und Authentifizierung benötigen Microsoft 365-Systeme möglicherweise einige Informationen zu EU-Empfängern, um diese Anforderungen ordnungsgemäß weiterzuleiten. Microsoft 365-Systeme sind für Identitäts- und Authentifizierungsfunktionen auch von Azure Active Directory abhängig. Weitere Informationen finden Sie unter [Identitätsdatenspeicherung für europäische Kunden in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-data-storage-eu).
 >
 
 ## <a name="how-microsoft-protects-your-data"></a>So schützt Microsoft Ihre Daten
@@ -126,8 +126,7 @@ Weitere Informationen betreffend Anforderungen von Regierungen und Strafverfolgu
 ## <a name="additional-resources"></a>Weitere Ressourcen
  
 - [Vertrauenswürdiger Datenschutz](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FhZn) bietet einen Überblick darüber, wie Microsoft Ihre Daten bei der Verwendung von Microsoft Online Services und Professional Services schützt. Es wird außerdem empfohlen, die [Microsoft Online Services-Nutzungsbedingungen (OST – Online Services Terms) und den Datenschutznachtrag (DPA – Data Protection Addendum)](https://www.microsoft.com/licensing/product-licensing/products) zu konsultieren, die Ihre Nutzung dieser Dienste regeln.
-- Mit [Office 365 Anträge betroffener Personen (DSR – Data Subject Request) für die DSGVO](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365) können Sie personenbezogene Daten oder Informationen finden und bearbeiten, um Anträge betroffener Personen (DSRs) mit Microsoft 365-Produkten, -Diensten und -Tools zu beantworten. 
-- [Datenschutz-Folgenabschätzung (DPIA): Leitlinien für Datencontroller mit Microsoft Office 365](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365) hilft Ihnen zu ermitteln, ob Ihr Unternehmen eine DPIA (Data Protection Impact Assessment) entwerfen muss, stellt Anleitungen bereit, enthält ein anpassbares DPIA-Vorlagendokument und bietet eine Matrix der DPIA-Serviceelemente für viele Microsoft 365-Dienste.
-- [Erfahren Sie, wie Module](https://docs.microsoft.com/learn/paths/audit-safeguard-customer-data/) für Personen in den Bereichen Audit, Compliance, Risiko und Recht entwickelt wurden, die ein umfassendes Verständnis benötigen, um eine eingehende Überprüfung der grundlegenden Sicherheits- und Datenschutzpraktiken von Microsoft 365 zum Schutz von Kundendaten zu ermöglichen.
-- [Microsoft Compliance-Angebote](https://docs.microsoft.com/microsoft-365/compliance/offering-home) zeigt, wie Microsoft 365-Dienste Ihrem Unternehmen dabei helfen, die gesetzlichen Compliance-Standards zu erfüllen. 
-
+- Mit [Office 365 Anträge betroffener Personen (DSR – Data Subject Request) für die DSGVO](/compliance/regulatory/gdpr-dsr-Office365) können Sie personenbezogene Daten oder Informationen finden und bearbeiten, um Anträge betroffener Personen (DSRs) mit Microsoft 365-Produkten, -Diensten und -Tools zu beantworten. 
+- [Datenschutz-Folgenabschätzung (DPIA): Leitlinien für Datencontroller mit Microsoft Office 365](/compliance/regulatory/gdpr-dpia-office365) hilft Ihnen zu ermitteln, ob Ihr Unternehmen eine DPIA (Data Protection Impact Assessment) entwerfen muss, stellt Anleitungen bereit, enthält ein anpassbares DPIA-Vorlagendokument und bietet eine Matrix der DPIA-Serviceelemente für viele Microsoft 365-Dienste.
+- [Erfahren Sie, wie Module](/learn/paths/audit-safeguard-customer-data/) für Personen in den Bereichen Audit, Compliance, Risiko und Recht entwickelt wurden, die ein umfassendes Verständnis benötigen, um eine eingehende Überprüfung der grundlegenden Sicherheits- und Datenschutzpraktiken von Microsoft 365 zum Schutz von Kundendaten zu ermöglichen.
+- [Microsoft Compliance-Angebote](/compliance/regulatory/offering-home) zeigt, wie Microsoft 365-Dienste Ihrem Unternehmen dabei helfen, die gesetzlichen Compliance-Standards zu erfüllen.

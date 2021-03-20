@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Erstellen Sie ein Formularverarbeitungsmodell in Microsoft SharePoint Syntex.
-ms.openlocfilehash: c025317a5eb88199b849f90b51fac9779e1c97a2
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: d71273e416bf7922627e44d9423eaa8903411689
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976009"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905846"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Erstellen eines Formularverarbeitungsmodells in Microsoft SharePoint Syntex
 
@@ -27,7 +27,7 @@ ms.locfileid: "49976009"
 
 </br>
 
-Mithilfe von [AI Builder](https://docs.microsoft.com/ai-builder/overview) – ein Feature in Microsoft PowerApps – können SharePoint Syntex-Benutzer ein [Formularverarbeitungsmodell](form-processing-overview.md) direkt aus einer SharePoint-Dokumentbibliothek erstellen. 
+Mithilfe von [AI Builder](/ai-builder/overview) – ein Feature in Microsoft PowerApps – können SharePoint Syntex-Benutzer ein [Formularverarbeitungsmodell](form-processing-overview.md) direkt aus einer SharePoint-Dokumentbibliothek erstellen. 
 
 Die Erstellung eines Formularverarbeitungsmodells umfasst folgende Schritte:
  - Schritt 1: Erstellen des Formularverarbeitungsmodells zur Erstellung des Inhaltstyps
@@ -68,7 +68,7 @@ Der erste Schritt zum Erstellen eines Formularverarbeitungsmodells besteht darin
 Nachdem Sie Ihr neues Formularverarbeitungsmodell erstellt haben, öffnet Ihr Browser eine neue PowerApps AI Builder-Formularverarbeitungsmodellseite. Auf dieser Seite können Sie Ihre Beispieldokumente hinzufügen und analysieren. </br>
 
 > [!NOTE]
-> Informationen zur Auswahl der Beispieldateien finden Sie unter [Eingabedokumente für Formularverarbeitungsmodelle – Anforderungen und Optimierungstipps ](https://docs.microsoft.com/ai-builder/form-processing-model-requirements). 
+> Informationen zur Auswahl der Beispieldateien finden Sie unter [Eingabedokumente für Formularverarbeitungsmodelle – Anforderungen und Optimierungstipps ](/ai-builder/form-processing-model-requirements). 
 
    ![Power Apps AI Builder](../media/content-understanding/powerapps.png)</br> 
  
@@ -148,6 +148,6 @@ Nach der Veröffentlichung des Modells und der Erstellung des PowerAutomate-Abla
 
 ## <a name="see-also"></a>Siehe auch
   
-[Power Automate-Dokumentation](https://docs.microsoft.com/power-automate/)
+[Power Automate-Dokumentation](/power-automate/)
 
-[Schulungen: Verbessern der Geschäftsergebnisse mit AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Schulungen: Verbessern der Geschäftsergebnisse mit AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)

@@ -14,13 +14,13 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Administratoren können sich mit der Verwaltung von SharePoint-und OneDrive-Diensten in einer Multi-Geo-Umgebung vertraut machen.
-ms.openlocfilehash: 1b6d2cb1cb9511677f717f0e58553abc4473e1ad
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 'Administratoren können erfahren, wie Sie SharePoint- und #A0 in einer Multi-Geo-Umgebung verwalten.'
+ms.openlocfilehash: 213070f2f7a04e15a1e2ac3cd9a3ae697b66a718
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690282"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905600"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Verwalten einer Multi-Geo-Umgebung
 
@@ -76,17 +76,17 @@ Administratoren können Freigaberichtlinien für die einzelnen Standorte einrich
 
 ## <a name="taxonomy"></a>Taxonomie
 
-Wir unterstützen eine einheitliche [Taxonomie](https://docs.microsoft.com/sharepoint/managed-metadata) für vom Unternehmen verwaltete Metadaten über geografische Standorte hinweg, wobei der Master am zentralen Standort Ihres Unternehmens gehostet wird. Wir empfehlen, dass Sie die globale Taxonomie vom zentralen Standort aus verwalten und nur standortspezifische Ausdrücke zur Taxonomie der Satellitenstandorte hinzufügen. Ausdrücke der globalen Taxonomie werden mit den Satellitenstandorten synchronisiert.
+Wir unterstützen eine einheitliche [Taxonomie](/sharepoint/managed-metadata) für vom Unternehmen verwaltete Metadaten über geografische Standorte hinweg, wobei der Master am zentralen Standort Ihres Unternehmens gehostet wird. Wir empfehlen, dass Sie die globale Taxonomie vom zentralen Standort aus verwalten und nur standortspezifische Ausdrücke zur Taxonomie der Satellitenstandorte hinzufügen. Ausdrücke der globalen Taxonomie werden mit den Satellitenstandorten synchronisiert.
 
-Weitere Informationen und Anleitungen für Entwickler finden Sie unter [Verwalten von Metadaten in einem Multi-Geo-Mandanten](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-managedmetadata).
+Weitere Informationen und Anleitungen für Entwickler finden Sie unter [Verwalten von Metadaten in einem Multi-Geo-Mandanten](/sharepoint/dev/solution-guidance/multigeo-managedmetadata).
 
 ## <a name="user-profile-application"></a>Benutzerprofilanwendung
 
-Es gibt eine [Benutzerprofilanwendung](https://docs.microsoft.com/sharepoint/manage-user-profiles) an jedem geografischen Standort. Profilinformationen der Benutzer werden an dem jeweiligen geografischen Standort gehostet und stehen dem Administrator für diesen geografischen Standort zur Verfügung.
+Es gibt eine [Benutzerprofilanwendung](/sharepoint/manage-user-profiles) an jedem geografischen Standort. Profilinformationen der Benutzer werden an dem jeweiligen geografischen Standort gehostet und stehen dem Administrator für diesen geografischen Standort zur Verfügung.
 
-Wenn Sie über benutzerdefinierte Profileigenschaften verfügen, wird empfohlen, dasselbe Profilschema für alle geografischen Standorte zu verwenden und die benutzerdefinierten Profileigenschaften entweder für alle oder bestimmte geografischen Standorte aufzufüllen. Eine Anleitung dazu, wie Sie Benutzerprofildaten programmgesteuert auffüllen, finden Sie unter [API für die Massenaktualisierung von Benutzerprofilen](https://docs.microsoft.com/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online).
+Wenn Sie über benutzerdefinierte Profileigenschaften verfügen, wird empfohlen, dasselbe Profilschema für alle geografischen Standorte zu verwenden und die benutzerdefinierten Profileigenschaften entweder für alle oder bestimmte geografischen Standorte aufzufüllen. Eine Anleitung dazu, wie Sie Benutzerprofildaten programmgesteuert auffüllen, finden Sie unter [API für die Massenaktualisierung von Benutzerprofilen](/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online).
 
-Weitere Informationen und Anleitungen für Entwickler finden Sie unter [Verwenden von Profilen in einem Multi-Geo-Mandanten](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-userprofileexperience).
+Weitere Informationen und Anleitungen für Entwickler finden Sie unter [Verwenden von Profilen in einem Multi-Geo-Mandanten](/sharepoint/dev/solution-guidance/multigeo-userprofileexperience).
 
 ## <a name="video-portal"></a>Videoportal
 
@@ -107,4 +107,4 @@ Stream ist jedoch noch nicht in den folgenden Regionen verfügbar, die derzeit f
 
 ## <a name="yammer"></a>Yammer
 
-Jammern ist keine Multi-Geo-Arbeitsauslastung. In "jammern" gespeicherte Threads zum jammern werden am zentralen Standort des Mandanten abgelegt. Bei jammern wird eine Dateispeicher Änderung eingeführt, in der die Jammer Dateien in SharePoint gespeichert werden. In SharePoint gespeicherte Jammer Dateien werden in die SharePoint-Website aufgenommen, die der Gruppe jammern zugeordnet ist. SharePoint-Gruppen Websites basieren auf der PDL-Logik, wie in [SharePoint-Websites und-Gruppen](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)beschrieben.
+Yammer ist keine Multi-Geo-Workload. Yammer threads stored in Yammer will be placed in the tenant's central location. Yammer wird eine Dateispeicheränderung in SharePoint Yammer gespeichert. Yammer in SharePoint gespeicherten Dateien wird die der Gruppe zugeordnete Yammer platziert. SharePoint-Gruppenwebsites basieren auf der PDL-Logik, wie in [SharePoint-Websites und -Gruppen beschrieben.](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)

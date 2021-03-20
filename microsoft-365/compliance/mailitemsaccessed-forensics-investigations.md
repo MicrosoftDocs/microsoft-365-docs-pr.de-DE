@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Verwenden Sie die MailItemsAccessed-Postfachüberwachungsaktion, um forensische Untersuchungen kompromittierter Benutzerkonten auszuführen.
-ms.openlocfilehash: 15379a5c24ee222cf097e94d46dc46de0e385820
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: e9dda101b330f6632e66c226156df3497ac38453
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868003"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903481"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Verwenden der erweiterten Überwachung zur Untersuchung kompromittierter Konten
 
@@ -31,7 +31,7 @@ Um Ihnen bei der Untersuchung von kompromittierten E-Mail-Konten zu helfen, wird
 
 ## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>Die Postfachüberwachungsaktion "MailItemsAccessed"
 
-Die neue MailItemsAccessed-Aktion ist Bestandteil der neuen [erweiterten Überwachungsfunktionen](advanced-audit.md). Sie ist Bestandteil der [Exchange-Postfachüberwachung](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) und für Benutzer, denen eine Office 365- oder Microsoft 365 E5-Lizenz zugewiesen wurde, oder für Unternehmen mit einem Abonnement des Microsoft 365 E5 Compliance-Add-Ons standardmäßig aktiviert.
+Die neue MailItemsAccessed-Aktion ist Bestandteil der neuen [erweiterten Überwachungsfunktionen](advanced-audit.md). Sie ist Bestandteil der [Exchange-Postfachüberwachung](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) und für Benutzer, denen eine Office 365- oder Microsoft 365 E5-Lizenz zugewiesen wurde, oder für Unternehmen mit einem Abonnement des Microsoft 365 E5 Compliance-Add-Ons standardmäßig aktiviert.
 
 Die Postfachüberwachungsaktion "MailItemsAccessed" deckt alle E-Mail-Protokolle ab: POP, IMAP, MAPI, EWS, Exchange ActiveSync und REST. Außerdem werden beide Arten des Zugriffs auf E-Mails abgedeckt: *Synchronisierung* und *Bindung*.
 
@@ -67,7 +67,7 @@ Ein Beispiel für die Darstellung der IsThrottled-Eigenschaft in einem Überwach
 
 Bei der Postfachüberwachung werden Überwachungseinträge für den Zugriff auf E-Mail-Nachrichten generiert, damit Sie sicher sein können, dass E-Mail-Nachrichten nicht kompromittiert wurden. Aus diesem Grund wird in Situationen, in denen nicht sicher ist, ob auf bestimmte Daten zugegriffen wurde, davon ausgegangen, dass ein Zugriff erfolgt ist, indem alle E-Mail-Access-Aktivitäten aufgezeichnet werden.
 
-Die Verwendung von MailItemsAccessed-Überwachungsdatensätzen für forensische Zwecke erfolgt in der Regel nach dem Beheben einer Datenverletzung und dem Entfernen des Angreifers. Um mit der Untersuchung zu beginnen, sollten Sie die Gruppe von Postfächern identifizieren, die kompromittiert wurden, und den Zeitrahmen ermitteln, in dem der Angreifer auf Postfächer in Ihrer Organisation zugreifen konnte. Anschließend können Sie die Cmdlets **Search-UnifiedAuditLog** oder **Search-MailboxAuditLog** in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) verwenden, um Überwachungsdatensätze zu durchsuchen, die der Datenverletzung entsprechen. 
+Die Verwendung von MailItemsAccessed-Überwachungsdatensätzen für forensische Zwecke erfolgt in der Regel nach dem Beheben einer Datenverletzung und dem Entfernen des Angreifers. Um mit der Untersuchung zu beginnen, sollten Sie die Gruppe von Postfächern identifizieren, die kompromittiert wurden, und den Zeitrahmen ermitteln, in dem der Angreifer auf Postfächer in Ihrer Organisation zugreifen konnte. Anschließend können Sie die Cmdlets **Search-UnifiedAuditLog** oder **Search-MailboxAuditLog** in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) verwenden, um Überwachungsdatensätze zu durchsuchen, die der Datenverletzung entsprechen. 
 
 Sie können einen der folgenden Befehle ausführen, um nach MailItemsAccessed-Überwachungsdatensätzen zu suchen:
 
@@ -192,4 +192,4 @@ Hier ist die Syntax für den im vorherigen Screenshot gezeigten Befehl:
 
 ```powershell
 Search-MailboxAuditLog -Identity admin -ShowDetails -Operations MailItemsAccessed -ResultSize 2000 | Select LastAccessed,Operation,AuditOperationsCountInAggregatedRecord,ClientInfoString
-``` 
+```

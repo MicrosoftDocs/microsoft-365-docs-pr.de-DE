@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Erfahren Sie mehr über die Konfigurationsschritte in Microsoft 365, die notwendig sind, um ein Team für die Zusammenarbeit mit Gästen in Teams bei Aufgaben, Unterhaltungen und Dokumentationen einzurichten.
-ms.openlocfilehash: 986f9c1f343c8ccc3d76557291938d170923c89b
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 4e734af198563d0bc4599b4476b3823384989212
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712318"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904660"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Zusammenarbeit mit Gästen in einem Team
 
@@ -38,7 +38,7 @@ Dieses Video zeigt die in diesem Dokument beschriebenen Konfigurationsschritte.<
 
 ## <a name="azure-external-collaboration-settings"></a>Einstellungen für die Azure Externe Zusammenarbeit
 
-Die Freigabe in Microsoft 365 wird auf der höchsten Ebene von den [Einstellungen für B2B externe Zusammenarbeit in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations) geregelt. Wenn die Gastfreigabe in Azure AD deaktiviert oder eingeschränkt ist, setzt diese Einstellung alle Freigabeeinstellungen, die Sie in Microsoft 365 konfiguriert haben, außer Kraft.
+Die Freigabe in Microsoft 365 wird auf der höchsten Ebene von den [Einstellungen für B2B externe Zusammenarbeit in Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations) geregelt. Wenn die Gastfreigabe in Azure AD deaktiviert oder eingeschränkt ist, setzt diese Einstellung alle Freigabeeinstellungen, die Sie in Microsoft 365 konfiguriert haben, außer Kraft.
 
 Überprüfen Sie die Einstellungen für B2B externe Zusammenarbeit um sicherzustellen, dass die Freigabe für Gäste nicht blockiert ist.
 
@@ -74,7 +74,7 @@ So legen Sie die Gastzugriffseinstellungen für Teams fest
 5. Stellen Sie sicher, dass **Gastzugriff in Teams zulassen** auf **Ein** ist.
 6. Nehmen Sie alle gewünschten Änderungen an den zusätzlichen Gasteinstellungen vor, und klicken Sie dann auf **Speichern**.
 
-Sobald Sie den Teams-Gastzugriff aktiviert haben, können Sie den Gastzugriff zu einzelnen Teams und deren zugeordneten SharePoint-Websites optional mithilfe von Vertraulichkeitsbeschriftungen steuern. Weitere Informationen finden Sie unter [Verwenden von Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Sobald Sie den Teams-Gastzugriff aktiviert haben, können Sie den Gastzugriff zu einzelnen Teams und deren zugeordneten SharePoint-Websites optional mithilfe von Vertraulichkeitsbeschriftungen steuern. Weitere Informationen finden Sie unter [Verwenden von Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 > [!NOTE]
 > Nachdem die Gasteinstellung für Teams eingeschaltet wurde, kann es bis zu vierundzwanzig Stunden dauern, bis sie aktiv wird.
@@ -187,6 +187,6 @@ Sie kann man Gäste zu einem Team hinzufügen
 
 [Erstellen eines B2B-Extranets mit verwalteten Gästen](b2b-extranet.md)
 
-[SharePoint- und OneDrive-Integration in Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+[SharePoint- und OneDrive-Integration in Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
 
-[Freigabeoptionen werden abgeblendet, wenn von SharePoint oder OneDrive freigegeben wird](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)
+[Freigabeoptionen werden abgeblendet, wenn von SharePoint oder OneDrive freigegeben wird](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

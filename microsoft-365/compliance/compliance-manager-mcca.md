@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie Microsoft Compliance Configuration Analyzer verwenden, um mit Microsoft Compliance Manager schnell in Betrieb zu gehen.
-ms.openlocfilehash: 272477251efed7ebf13bd2e644869eaf2aad1bc2
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: a77f38dcc0c0215e539c868e47135f5d7194f4b6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454686"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906037"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Microsoft Compliance Configuration Analyzer for Compliance Manager (Vorschau)
 
@@ -101,9 +101,9 @@ Führen Sie die folgenden Anweisungen aus, um einen Bericht basierend auf einem 
     ```
   | Input |  Land oder Region | 
   | :------------- | :------------: |
-  | 1  | Asien-Pazifik |
-  | 2  | Australien |
-  | 3  | Kanada |
+  | 1 | Asien-Pazifik |
+  | 2 | Australien |
+  | 3 | Kanada |
   | 4  | Europa (ohne Frankreich) / Naher Osten /Afrika |
   | 5  | Frankreich |
   | 6  | Indien |
@@ -167,4 +167,4 @@ Wählen Sie das Dropdown neben der **Empfehlungsbezeichnung** rechts neben der V
 
 Weitere Informationen zum Installieren, Einrichten und Verwenden von MCCA finden Sie in den [README-Anweisungen](https://github.com/OfficeDev/MCCA#overview) auf GitHub (kein GitHub-Konto erforderlich).
 
-Weitere Informationen zu Windows PowerShell finden Sie unter [Verwenden der PowerShell-Dokumentation](https://docs.microsoft.com/powershell/scripting/how-to-use-docs?view=powershell-7). Siehe auch [Starten Windows PowerShell](https://docs.microsoft.com/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7).
+Weitere Informationen zu Windows PowerShell finden Sie unter [Verwenden der PowerShell-Dokumentation](/powershell/scripting/how-to-use-docs?view=powershell-7). Siehe auch [Starten Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7).
