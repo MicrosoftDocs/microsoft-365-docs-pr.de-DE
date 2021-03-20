@@ -11,8 +11,9 @@
         - name: Sicherheitsempfehlungen für Prioritätskonten
           href: ./office-365-security/security-recommendations-for-priority-accounts.md
     - name: Konfigurationen für den Identitäts- und Gerätezugriff
-      href: ./office-365-security/microsoft-365-policies-configurations.md
       items:
+        - name: Übersicht
+          href: ./office-365-security/microsoft-365-policies-configurations.md
         - name: Erforderliche Arbeit
           href: ./office-365-security/identity-access-prerequisites.md
         - name: Allgemeine Identitäts- und Gerätezugriffsrichtlinien
@@ -360,6 +361,8 @@
               href: ./mtp/overview-security-center.md
             - name: Sicherheitsrisiken-Explorer (und Echtzeit-Erkennung)
               href: ./office-365-security/threat-explorer.md
+            - name: Die Seite „E-Mail-Entität"
+              href: ./office-365-security/mdo-email-entity-page.md
             - name: AIR-Übersicht
               href: ./office-365-security/office-365-air.md
             - name: Funktionsweise der automatischen Untersuchung und Reaktion
@@ -702,8 +705,8 @@
                 - name: Verwalten von Rollengruppen in EOP als eigenständige Lösung
                   href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
     - name: Microsoft 365 Enterprise
-      href: 'https://docs.microsoft.com/microsoft-365/enterprise'
+      href: ../enterprise/index.yml
     - name: Microsoft 365 für Unternehmen
-      href: 'https://docs.microsoft.com/microsoft-365/admin/admin-home'
+      href: ./index.yml
     - name: Microsoft 365 Compliance
-      href: 'https://docs.microsoft.com/microsoft-365/compliance/'
+      href: ../compliance/index.yml

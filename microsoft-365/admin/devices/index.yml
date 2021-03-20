@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Schützen und Verwalten von Geräten und App-Daten
-summary: Schauen Sie sich diese Ressourcen an, um Administratoren die Auswahl zwischen Geräte-und App-Daten Verwaltungsmethoden zu erleichtern.
+summary: Sehen Sie sich diese Ressourcen an, um Administratoren bei der Auswahl zwischen Geräte- und App-Datenverwaltungsmethoden zu helfen.
 metadata:
   title: Schützen und Verwalten von Geräten und App-Daten
-  description: Verwalten und schützen von Geräten und App-Daten
+  description: Verwalten und Schützen von Geräten und App-Daten
   ms.service: O365-administration
   ms.topic: landing-page
   author: Sirkkuw
@@ -11,58 +11,58 @@ metadata:
   ms.date: 09/09/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: a70d8471d8344f7bf479e050c59d6c6b3d97f5fe
-  ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+  ms.openlocfilehash: 2b15d19025f42db0b4f79adb6f4156f7a115f227
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/06/2020
-  ms.locfileid: "48930260"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50910438"
 landingContent:
-- title: Verschiedene MDM-und MAM-Methoden
+- title: Verschiedene MDM- und MAM-Methoden
   linkLists:
   - linkListType: overview
     links:
-    - text: Überprüfen von Geräte-und App-Datenschutzoptionen
+    - text: Überprüfen von Optionen zum Schutz von Geräte- und App-Daten
       url: choose-device-security.md
-- title: Verwalten von Geräten und App-Daten mit Microsoft InTune
+- title: Verwalten von Geräten und App-Daten mit Microsoft Intune
   linkLists:
   - linkListType: overview
     links:
     - text: Übersicht über die Geräteregistrierung
-      url: https://docs.microsoft.com/mem/intune/enrollment/device-enrollment
+      url: /mem/intune/enrollment/device-enrollment
   - linkListType: how-to-guide
     links:
     - text: Einrichten der automatischen Registrierung für Windows 10-Geräte
-      url: https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment
+      url: /mem/intune/enrollment/quickstart-setup-auto-enrollment
     - text: Einrichten der Android-Registrierung
-      url: https://docs.microsoft.com/mem/intune/enrollment/android-enroll
-    - text: Einrichten der Registrierung von IOS/iPads
-      url: https://docs.microsoft.com/mem/intune/enrollment/ios-enroll
+      url: /mem/intune/enrollment/android-enroll
+    - text: Einrichten der iOS/iPadOS-Registrierung
+      url: /mem/intune/enrollment/ios-enroll
 - title: Verwalten von Geräten und App-Daten mit Microsoft 365 Business Premium
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Anzeigen und Verwalten von Richtlinien für App-und Geräteverwaltung
+    - text: Anzeigen und Verwalten von App- und Geräteverwaltungsrichtlinien
       url: ../../business/view-policies-and-devices.md
     - text: Entfernen von Unternehmensdaten von Geräten
       url: ../../business/remove-company-data.md
-    - text: Zurücksetzen von Windows-Geräten auf die Werkseinstellungen
+    - text: Zurücksetzen von Windows-Geräten auf Werkseinstellungen
       url: ../../business/reset-devices-to-factory-settings.md
-- title: Verwalten von Geräten und App-Daten mit Microsoft 365 für Unternehmen
+- title: Verwalten von Geräten und App-Daten mit Microsoft 365 Enterprise
   linkLists:
   - linkListType: overview
     links:
-    - text: Übersicht über Microsoft 365 für Unternehmen
+    - text: Übersicht über Microsoft 365 Enterprise
       url: ../../enterprise/microsoft-365-overview.md
-    - text: Device Management Road-Map für Microsoft 365 für Unternehmen
+    - text: Roadmap für die Geräteverwaltung für Microsoft 365 Enterprise
       url: ../../enterprise/device-management-roadmap-microsoft-365.md
-- title: Verwalten von Geräten und App-Daten mit grundlegender Mobilität und Sicherheit
+- title: Verwalten von Geräten und App-Daten mit Basic Mobility and Security
   linkLists:
   - linkListType: overview
     links:
-    - text: Übersicht über grundlegende Mobilität und Sicherheit
+    - text: Übersicht von grundlegender Mobilität und Sicherheit
       url: ../basic-mobility-security/overview.md
-    - text: Einrichten von grundlegender Mobilität und Sicherheit
+    - text: Einrichten von Grundlegende Mobilität und Sicherheit
       url: ../basic-mobility-security/set-up.md
     - text: Funktionen der grundlegenden Mobilität und Sicherheit
       url: ../basic-mobility-security/capabilities.md
