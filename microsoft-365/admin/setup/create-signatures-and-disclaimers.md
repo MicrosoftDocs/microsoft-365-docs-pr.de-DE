@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Erfahren Sie, wie Sie E-Mail-Signaturen verwalten, einschließlich rechtlicher Haftungsausschlüsse oder Offenlegungserklärungen für alle E-Mail-Nachrichten, die Ihr Unternehmen erreichen oder verlassen.
-ms.openlocfilehash: c8d63a11a75b9b53de9cabdf1f4baabc61cc3e42
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
-ms.translationtype: HT
+ms.openlocfilehash: b599ef8b6d0bb236b6111bae86c92409601e00d0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926918"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914234"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Erstellen von organisationsweiten Signaturen und Haftungsausschlüssen
 
@@ -80,14 +80,14 @@ Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?
 6. Wählen Sie unter **Diese Regel anwenden** die Option **[Auf alle Nachrichten anwenden]** aus.
     
     > [!TIP]
-    > [Erfahren Sie mehr](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) zum Anwenden von Bedingungen, wenn der Haftungsausschluss nicht auf alle Nachrichten angewendet werden soll. (Dieser Artikel zur Bereichseingrenzung bezieht sich auf Exchange Server, gilt aber auch für Microsoft 365). 
+    > [Erfahren Sie mehr](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) zum Anwenden von Bedingungen, wenn der Haftungsausschluss nicht auf alle Nachrichten angewendet werden soll. (Dieser Artikel zur Bereichseingrenzung bezieht sich auf Exchange Server, gilt aber auch für Microsoft 365). 
   
 7. Lassen Sie unter „Folgendes ausführen“ die Option **Haftungsausschluss anfügen** ausgewählt. 
     
 8.  Wählen Sie **Text eingeben** aus, und geben Sie Ihren Haftungsausschluss ein. 
     
     > [!TIP]
-    > [Erfahren Sie mehr](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) über das Formatieren von Haftungsausschlüssen. (Dieser Artikel zur Formatierung bezieht sich auf Exchange Server, gilt aber auch für Microsoft 365). 
+    > [Erfahren Sie mehr](/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) über das Formatieren von Haftungsausschlüssen. (Dieser Artikel zur Formatierung bezieht sich auf Exchange Server, gilt aber auch für Microsoft 365). 
 
 9. Wählen Sie **Einen auswählen** aus, und wählen Sie **Umschlag** als Ausweichaktion aus. Klicken Sie dann auf **OK**. Dies bedeutet: Wenn der Haftungsausschluss wegen Verschlüsselung oder einer anderen E-Mail-Einstellung nicht hinzugefügt werden kann, wird er in einen Nachrichtenumschlag eingeschlossen.
     
@@ -115,4 +115,4 @@ Verwenden Sie ein Drittanbieter-Tool, um diese und andere Funktionen zum Verwalt
   
 ## <a name="more-resources"></a>Weitere Ressourcen
 
-- Weiter Informationen zur Verwendung von PowerShell finden Sie unter [Organisationsweite Haftungsausschlüsse, Signaturen, Fußzeilen oder Kopfzeilen für Nachrichten in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers).
+- Weiter Informationen zur Verwendung von PowerShell finden Sie unter [Organisationsweite Haftungsausschlüsse, Signaturen, Fußzeilen oder Kopfzeilen für Nachrichten in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers).

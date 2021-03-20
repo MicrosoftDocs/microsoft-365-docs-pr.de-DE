@@ -13,12 +13,12 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Microsoft 365 unterstützt Unternehmen der Energiebranche bei der Umstellung auf eine moderne Plattform für die Zusammenarbeit und hält gleichzeitig Daten und Systeme sicher und gesetzeskonform.
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 1e5acc09c72b47f583c2ee9330f78bf3e68aaa33
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 086cc176190549f2ec8e49ea992744059c5d9005
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558490"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916118"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Wichtige Überlegungen zur Compliance und Sicherheit der Energiebranche
 ![Illstrationsmetapher für eine globale Darstellung verschiedener Branchen, welche die Cloud nutzen](../media/solution-arch-center/MSC17_global_016.png)
@@ -38,7 +38,7 @@ Zu den regulatorischen Standards, die von Energieorganisationen in Erwägung gez
 - Azure und Azure Government wurde jeweils ein FedRAMP High P-ATO (vorläufige Autorisierung zum Einsatz) verliehen, was die höchste Berechtigungsstufe für FedRAMP darstellt. 
 
 Informationen zu Microsoft Cloud Services und FedRAMP finden Sie in den folgenden Ressourcen:
-- [Übersicht über Microsoft FedRAMP](https://docs.microsoft.com/microsoft-365/compliance/offering-fedramp?view=o365-worldwide)
+- [Übersicht über Microsoft FedRAMP](/compliance/regulatory/offering-FedRAMP?view=o365-worldwide)
 - [Office 365 FedRAMP-Berichte](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_FedRAMP_Reports)
 
 
@@ -193,9 +193,9 @@ Die Microsoft 365-Aufsichtsrichtlinien ermöglichen es Organisationen, Mitteilun
 Da Mitarbeitern viele Kommunikationskanäle zur Verfügung stehen, benötigen Organisationen zunehmend effektive Lösungen für die Überwachung der Kommunikation in regulierten Branchen wie den Energiehandelsmärkten. Die vor kurzem in Microsoft 365 integrierte Kommunikationscompliancelösung hilft Organisationen dabei, häufig auftretende Herausforderungen zu bewältigen, beispielsweise die steigende Anzahl von Kommunikationskanälen und des Nachrichtenaufkommens sowie das Risiko von potenziellen Bußgeldern für Verstöße gegen Richtlinien.
 
 Die Kommunikationscompliance kann mehrere Kommunikationskanäle überwachen und nutzt Machine-Learning-Modelle zur Ermittlung potenzieller Verstöße gegen die Richtlinien, einschließlich Office 365-E-Mails, Microsoft Teams, Skype for Business Online, Facebook, Twitter und Bloomberg-Chatnachrichten. Kommunikationscompliance unterstützt Compliance-Teams bei der effektiven und effizienten Überprüfung von Nachrichten auf mögliche Verstöße gegen:
-- Unternehmensrichtlinien, z. B. zulässige Nutzung, ethische Standards und unternehmensspezifische Richtlinien 
+- Unternehmensrichtlinien, z.B. zulässige Nutzung, ethische Standards und unternehmensspezifische Richtlinien 
 - Offenlegung vertraulicher Informationen oder Geschäftsgeheimnisse, z. B. nicht autorisierte Kommunikation zu vertraulichen Projekten wie anstehenden Akquisitionen, Fusionen, Ertragsangaben, Reorganisationen oder Änderungen am Leadership-Team
-- Vorschriften zur Einhaltung gesetzlicher Bestimmungen, z. B. Mitarbeiterkommunikation hinsichtlich der Arten von Unternehmen oder Transaktionen, in denen eine Organisation tätig ist, in Übereinstimmung mit FERC-Vorschriften für Energiemärkte
+- Vorschriften zur Einhaltung gesetzlicher Bestimmungen, z.B. Mitarbeiterkommunikation hinsichtlich der Arten von Unternehmen oder Transaktionen, in denen eine Organisation tätig ist, in Übereinstimmung mit FERC-Vorschriften für Energiemärkte
 
 Die Kommunikationscompliance bietet integrierte Klassifizierer für Bedrohungen, Belästigungen und Schimpfwörter, um dazu beizutragen, falsch-positive Ergebnisse bei der Überprüfung der Kommunikation zu reduzieren. Dadurch sparen Prüfer während des Untersuchungs- und Abhilfeverfahrens Zeit. Sie hilft Prüfern dabei, sich auf spezielle Nachrichten innerhalb langer Threads zu konzentrieren, die durch die Richtlinien-Benachrichtigungen hervorgehoben werden. Auf diese Weise können Compliance-Teams Risiken schneller erkennen und beheben. Sie bietet Compliance-Teams die Möglichkeit, Richtlinien auf einfache Weise zu konfigurieren und zu optimieren, die Lösung für die spezifischen Anforderungen des Unternehmens anzupassen und falsch-positive Ergebnisse zu verringern. Kommunikationscompliance kann auch das Benutzerverhalten über einen gewissen Zeitraum nachverfolgen und potenzielle Muster riskanter Verhaltensweisen oder Richtlinienverstöße hervorheben. Schließlich bietet es flexible integrierte Abhilfe-Workflows, damit Prüfer schnell Maßnahmen ergreifen und Fälle gemäß den definierten Unternehmensabläufen zu rechtlichen oder personellen Ressourcenteams eskalieren können.
 

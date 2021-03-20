@@ -21,12 +21,12 @@ description: Das Microsoft 365 Admin Center – Erfahren Sie mehr über die Feat
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 2ecf9ddbd1257e7273da36371abb9f9e38df3f4a
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+ms.openlocfilehash: 833f782e071e06d837ca5eacfcb72e2d6e16c8fb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717641"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913934"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neues im Microsoft 365 Admin Center
 
@@ -41,13 +41,13 @@ Wir fügen ständig neue Features zum [Microsoft 365 Admin Center](microsoft-365
 
 Und wenn Sie wissen möchten, was mit anderen Microsoft-Clouddiensten neu ist:
 
-- [Neues in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
-- [Neues im Exchange Admin Center](https://docs.microsoft.com/Exchange/whats-new)
-- [Neuerungen in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
-- [Neuerungen im Microsoft 365 Compliance Center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
-- [Neuerungen in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
-- [Aktive Websites im SharePoint Online Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
-- [Office-Updates](https://docs.microsoft.com/OfficeUpdates/)
+- [Neues in Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
+- [Neues im Exchange Admin Center](/Exchange/whats-new)
+- [Neuerungen in Microsoft Intune](/mem/intune/fundamentals/whats-new)
+- [Neuerungen im Microsoft 365 Compliance Center](/Office365/SecurityCompliance/whats-new)
+- [Neuerungen in Microsoft 365 Defender](../security/mtp/whats-new.md)
+- [Aktive Websites im SharePoint Online Admin Center](/sharepoint/what-s-new-in-admin-center)
+- [Office-Updates](/OfficeUpdates/)
 
 ## <a name="ignite-2021-march"></a>Ignite 2021 (März)
 
@@ -104,7 +104,7 @@ Es gibt zwei Möglichkeiten, um zu beginnen:
 - Wechseln Sie **zu Benutzer,** und wählen Sie  dann im Menü "Weitere Aktionen" Die Option Prioritätskonten verwalten aus, um der Liste Benutzer hinzuzufügen.
 - Wechseln Sie **zu Setup,** suchen Sie die Setupaufgabe Überwachen Der wichtigsten **Konten,** und wählen Sie **dann Erste Schritte aus.**
 
-Weitere Informationen zu Prioritätskonten finden Sie unter [Monitoring priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
+Weitere Informationen zu Prioritätskonten finden Sie unter [Monitoring priority accounts](./setup/priority-accounts.md).
 
 ### <a name="search-faster-and-get-better-results-from-any-page"></a>Schneller suchen und bessere Ergebnisse von jeder Seite erhalten
 
@@ -163,13 +163,13 @@ Im Mai haben wir angekündigt, dass Sie Nachrichtencenterbeiträge bald mit Micr
 
 ![Nachrichtencenterseite mit "Planersynchronisierung" in der Befehlsleiste neben der Einstellungsschaltfläche hervorgehoben.](../media/MAC-WN-MCPlannerSync.png)
 
-Weitere Informationen dazu finden Sie in diesem Artikel und Video, um zu sehen, wie es funktioniert: [Nachverfolgen Ihrer Nachrichtencenterbeiträge in Planner](https://docs.microsoft.com/Office365/Planner/track-message-center-tasks-planner)
+Weitere Informationen dazu finden Sie in diesem Artikel und Video, um zu sehen, wie es funktioniert: [Nachverfolgen Ihrer Nachrichtencenterbeiträge in Planner](/Office365/Planner/track-message-center-tasks-planner)
 
 ### <a name="documentation-training-and-videos"></a>Dokumentation, Schulungen und Videos
 
 - Brand new and just in time for Microsoft Ignite-[The Virtual Hub](https://adoption.microsoft.com/virtual-hub/). Tiefe Eintauchen in technische Schulungen für IT-Profis und Entwickler. Finden Sie schnell ca. 20 neue Videos im Rahmen #SIDETRACKED, dem Namen des Ignite-Admintracks in diesem Jahr.
 - Neues bei [Microsoft 365-Videoserien:](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) In diesem Monat werden neue Features in Whiteboard für Teams und im Web, die Automatisierung der Benutzerbereitstellung in Azure AD, neue Power Automate-Trigger und -Aktionen in Teams und vieles mehr zur Verfügung stehen. Bleiben Sie dran für den nächsten Monat, in dem wir eine Zusammenfassung aller großartigen Ereignisse in Ignite erhalten.
-- Wir haben die Microsoft [365-Dokumentationsseite](https://docs.microsoft.com/microsoft-365) neu gestaltet, die sich zuerst auf Lösungen konzentriert. Wir werden neue Lösungen hervorheben, sobald sie auf dieser Seite verfügbar sind, um ein Auge zu behalten.
+- Wir haben die Microsoft [365-Dokumentationsseite](/microsoft-365) neu gestaltet, die sich zuerst auf Lösungen konzentriert. Wir werden neue Lösungen hervorheben, sobald sie auf dieser Seite verfügbar sind, um ein Auge zu behalten.
 
 ![Neue Angebotsseite für Microsoft 365-Lösungen mit Lösungen wie "Empower remote workers".](../media/MAC-WN-M365Docspage.png)
 
@@ -221,7 +221,7 @@ Wenn Sie Ihren Benutzern erlauben, Office über das Portal selbst zu installiere
 
 In Verbindung mit der Veröffentlichung von Monthly Enterprise Channel werden auch die Namen der vorhandenen Updatekanäle überarbeitet. Beispielsweise wird monatlicher Kanal in Aktueller Kanal umbenannt. Die neuen Namen werden am 9. Juni 2020 wirksam.
 
-Weitere Informationen finden Sie unter [Änderungen am Aktualisieren von Kanälen für Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/update-channels-changes).
+Weitere Informationen finden Sie unter [Änderungen am Aktualisieren von Kanälen für Microsoft 365 Apps](/DeployOffice/update-channels-changes).
 
 ### <a name="new-admin-roles"></a>Neue Administratorrollen
 
@@ -231,7 +231,7 @@ Wir haben einige neue Azure Active Directory-Administratorrollen zum Microsoft 3
 - Mit der Netzwerkadministratorrolle können Benutzer Netzwerkstandorte verwalten und Netzwerkeinblicke für Microsoft 365 Software as a Service-Apps überprüfen.
 - Die Rolle des Druckeradministrators erteilt die Berechtigung zum Verwalten aller Aspekte von Druckern und Druckerverbindungen.
 - Druckertechniker ist eine Teilmenge der Administratorrolle Drucker, in der diese Benutzer Drucker registrieren und aufheben und den Druckerstatus aktualisieren können.
-Weitere Informationen zu diesen Rollen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+Weitere Informationen zu diesen Rollen finden Sie unter [Informationen zu Administratorrollen](./add-users/about-admin-roles.md).
 
 ### <a name="export-groups-list"></a>Liste der Exportgruppen
 
@@ -239,7 +239,7 @@ Wir haben von vielen Administratoren gehört, dass sie Informationen zu Gruppen 
 
 ### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 Lösungs- und Architektur-Center
 
-Erst in diesem Monat haben wir eine neue Website mit dem Namen [https://docs.microsoft.com](https://docs.microsoft.com) [Microsoft 365 Solution and Architecture Center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)veröffentlicht, die die technischen Anleitungen zusammen bringt, die Sie benötigen, um integrierte Microsoft 365-Lösungen für eine sichere und konforme Zusammenarbeit zu verstehen, zu planen und zu implementieren. In diesem Center finden Sie:
+Erst in diesem Monat haben wir eine neue Website mit dem Namen [https://docs.microsoft.com]() [Microsoft 365 Solution and Architecture Center](../solutions/index.yml)veröffentlicht, die die technischen Anleitungen zusammen bringt, die Sie benötigen, um integrierte Microsoft 365-Lösungen für eine sichere und konforme Zusammenarbeit zu verstehen, zu planen und zu implementieren. In diesem Center finden Sie:
 
 - Leitfaden für foundationale Lösungen
 - Arbeitsauslastungslösungen und Szenarioanleitungen
@@ -250,13 +250,13 @@ Erst in diesem Monat haben wir eine neue Website mit dem Namen [https://docs.mic
 ### <a name="docs-training-and-videos-may"></a>Dokumente, Schulungen und Videos (Mai)
 
 - Neues in **der Microsoft 365-Videoreihe:** In diesem Monat werden die neue Supporterfahrung in den Teams Admin and Security and Compliance Center, die Planner-Integration in das Message Center und das neue 3x3-Videolayout in Microsoft Teams themat. 
-- Die [Hilfehubseite des Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/) wurde aktualisiert, um Schneller zu finden, was Sie benötigen. Und wenn Sie diese Seite jetzt betrachten, haben wir eine Karte hinzugefügt, um Sie über wichtige Updates und Änderungen zu informieren.
+- Die [Hilfehubseite des Microsoft 365 Admin Center](./index.yml) wurde aktualisiert, um Schneller zu finden, was Sie benötigen. Und wenn Sie diese Seite jetzt betrachten, haben wir eine Karte hinzugefügt, um Sie über wichtige Updates und Änderungen zu informieren.
 
-## <a name="april-2020"></a>April 2020
+## <a name="april-2020"></a>April 2020
 
 ### <a name="intune-roles-management"></a>Verwaltung von Intune-Rollen
 
-[April 2020](#april-2020)
+[April 2020](#april-2020)
 
 Nun, wir haben es getan! Wir haben den zweiten Schritt zu einer einheitlichen Rollenerfahrung gemacht, und Sie können jetzt Intune-Rollen im Microsoft 365 Admin Center verwalten. Sie können auch Features nutzen, z. B. die Möglichkeit, nach Rollen zu suchen und Rollenberechtigungen anzeigen. Dies bedeutet, dass Sie keine zwei separaten Tools zum Verwalten von Rollen für Microsoft 365 und Intune benötigen. Wenn Sie sich beim Microsoft 365 Admin Center anmelden, werden Sie sehen, dass es zwei Pivots auf der Seite Rollen gibt, eines für Azure AD und eines für Intune.
 
@@ -362,7 +362,7 @@ Die neuen Produktnamen treten am 21. April 2020 in Kraft. Dies ist nur eine Änd
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Microsoft 365 Apps for Business       |
+|Office 365 Business     |    Microsoft 365 Apps for Business       |
 |Office 365 ProPlus    |   Microsoft 365-Apps für Unternehmen      |
 
 ### <a name="videos-training-and-docs"></a>Videos, Schulungen und Dokumente

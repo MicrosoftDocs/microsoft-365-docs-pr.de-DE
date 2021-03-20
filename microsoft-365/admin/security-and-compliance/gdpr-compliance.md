@@ -1,5 +1,5 @@
 ---
-title: Dsgvo vereinfachte eine Anleitung für Ihr kleines Unternehmen
+title: DSGVO vereinfacht Ein Leitfaden für Ihr Kleinunternehmen
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -18,155 +18,153 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
-description: Erfahren Sie, wie Microsoft 365 for Business Sie beim dsgvo-Prozess (General Data Protection Regulation) unterstützenkann.
-ms.openlocfilehash: 066803e15fe107c8a20b61d9871b6807629f2a9f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Erfahren Sie, wie Microsoft 365 Business Ihnen beim Prozess der Datenschutz-Grundverordnung (DSGVO) helfen kann.
+ms.openlocfilehash: c00dec46e47bde8afef8ffb2cd67dfc00ea98950
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399158"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914498"
 ---
-# <a name="gdpr-simplified-a-guide-for-your-small-business"></a>Dsgvo Simplified: Leitfaden für kleine Unternehmen
+# <a name="gdpr-simplified-a-guide-for-your-small-business"></a>Vereinfachte DSGVO: Ein Leitfaden für Ihr kleines Unternehmen
 
- *Verwenden von Microsoft 365 for Business zur Minderung und Verwaltung der dsgvo-Compliance* 
+ *Verwenden von Microsoft 365 Business zum Mindern und Verwalten der Einhaltung der DSGVO* 
   
-Die allgemeine Datenschutzverordnung (dsgvo) ist eine Europäische Union (EU)-Verordnung, die die Verwaltung von personenbezogenen Daten durch eine Organisation vorschreibt. Das dsgvo soll am 25. Mai 2018 in Kraft treten. Wenn Ihr Unternehmen an verkauft, Dienstleistungen anbietet oder Bürger der Europäischen Union beschäftigt, wirkt sich das [dsgvo](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) auf Sie aus. 
+Die Datenschutz-Grundverordnung (DSGVO) ist eine Verordnung der Europäischen Union (EU), die die Verarbeitung personenbezogener Daten durch eine Organisation vorsingt. Die DSGVO soll am 25. Mai 2018 in Kraft treten. Wenn Ihr Unternehmen An-, Dienstleistungs- oder Dienstleistungen für Bürger der Europäischen Union vertreibt oder beschäftigt, wirkt sich die [DSGVO](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) auf Sie aus. 
   
-Dieser Artikel hilft Ihnen, zu verstehen, was die dsgvo ist, warum Sie entstanden ist und wie Microsoft 365 for Business Ihrer Organisation bei der Einhaltung der dsgvo helfen kann.
+Dieser Artikel hilft Ihnen zu verstehen, was die DSGVO ist, warum sie erstellt wurde und wie Microsoft 365 For Business Ihre Organisation dabei unterstützen kann, die DSGVO zu erfüllen.
   
-## <a name="a-quick-overview-of-the-gdpr"></a>Eine kurze Übersicht über die dsgvo
+## <a name="a-quick-overview-of-the-gdpr"></a>Eine schnelle Übersicht über die DSGVO
 
-Die dsgvo ist eine EU-Verordnung, die die frühere Data Protection-Richtlinie (DPD) aktualisiert und erweitert, die erstmals in 1995 erwirkt wurde. Das dsgvo befasst sich mit dem Schutz der Daten der einzelnen Personen, seien Sie ein Kunde, ein Kunde, ein Mitarbeiter oder ein Geschäftspartner. Das Ziel von dsgvo ist es, den Schutz personenbezogener Daten für EU-Bürger zu stärken, unabhängig davon, ob Sie sich in der EU oder anderswo befinden. In der Verordnung werden die Erwartungen und Empfehlungen für deren Erreichung dargelegt. Wenn die dsgvo Ende Mai 2018 vollstreckbar ist, müssen Organisationen über Maßnahmen verfügen, die den Anforderungen der dsgvo entsprechen.
+Die DSGVO ist eine EU-Verordnung, die die frühere Datenschutzrichtlinie (Data Protection Directive, DPD) aktualisiert und erweitert, die erstmals 1995 erlassen wurde. Die DSGVO beschäftigt sich mit dem Datenschutz der Daten einer Person, sei es die Person eines Kunden, Kunden, Mitarbeiters oder Geschäftspartners. Das Ziel der DSGVO besteht darin, den Schutz personenbezogener Daten für EU-Bürger zu stärken, unabhängig davon, ob sie sich in der EU oder an einem anderen Ort befinden. Die Verordnung legt die Erwartungen fest und gibt Einen Rat, wie sie erreicht werden können. Wenn die DSGVO Ende Mai 2018 durchsetzbar wird, müssen Organisationen über Maßnahmen verfügen, die den Anforderungen der DSGVO entsprechen.
   
-Bei der dsgvo handelt es sich um Daten und deren Verwendung. Denken Sie daran, dass Daten einen Lebenszyklus aufweisen. Der Zyklus beginnt, wenn Sie Daten sammeln, fortsetzen, während Sie es speichern und verwenden (Verarbeitung) und endet, wenn Sie es vollständig aus ihren Systemen löschen. 
+Bei der DSGVO geht es um Daten und deren Verwendung. Denken Sie an Daten mit einem Lebenszyklus. Der Zyklus beginnt, wenn Sie Daten sammeln, während Sie sie speichern und verwenden (Verarbeitung) und endet, wenn Sie sie vollständig aus Ihren Systemen löschen. 
   
-Die dsgvo befasst sich mit den folgenden Datentypen: 
+Die DSGVO betrifft die folgenden Arten von Daten: 
   
-- **Personenbezogene Daten:** Wenn Sie Daten mit einer Person verknüpfen und diese identifizieren können, gelten diese Daten in Bezug auf die dsgvo als persönlich. Beispiele für personenbezogene Daten sind Name, Adresse, Geburtsdatum und IP-Adresse. Der dsgvo betrachtet sogar codierte Informationen (auch als "Pseudonym" bezeichnete Informationen) als personenbezogene Daten, unabhängig davon, wie undurchsichtig oder technisch die Daten sind, wenn die Daten mit einer Person verknüpft werden können.
+- **Personenbezogene Daten:** Wenn Sie Daten mit einer Person verknüpfen und identifizieren können, werden diese Daten im Hinblick auf die DSGVO als persönlich betrachtet. Beispiele für personenbezogene Daten sind Name, Adresse, Geburtsdatum und IP-Adresse. Die DSGVO betrachtet sogar codierte Informationen (auch als "pseudonyme" Informationen bezeichnet) als personenbezogene Daten, unabhängig davon, wie undurchsichtig oder technisch die Daten sind, wenn die Daten mit einer Person verknüpft werden können.
     
-- **Vertrauliche personenbezogene Daten** Dies sind Daten, die personenbezogenen Daten weitere Details hinzufügen. Beispiele sind Religion, Gewerkschaftszugehörigkeit, ethnische Herkunft usw. Sensible personenbezogene Daten umfassen auch biometrische Daten und DNA. Unter dsgvo gelten für vertrauliche Daten strengere Schutzregeln als personenbezogene Daten. 
+- **Vertrauliche personenbezogene Daten** Dies sind Daten, die den personenbezogenen Daten weitere Details hinzufügt. Beispiele hierfür sind z. B. Die Religiösen, die Mitgliedschaft in einer Gewerkschaft, die ethnische Herkunft und vieles mehr. Vertrauliche personenbezogene Daten umfassen auch biometrische Daten und DNA. Im Rahmen der DSGVO gelten für vertrauliche Daten strengere Schutzregeln als für personenbezogene Daten. 
     
-## <a name="gdpr-terms"></a>Dsgvo Ausdrücke
+## <a name="gdpr-terms"></a>DSGVO-Bedingungen
 
-Sie sehen einige Begriffe, die häufig im dsgvo genannt werden. Es ist wichtig, diese Begriffe zu verstehen.
+Einige Begriffe, auf die häufig in der DSGVO verwiesen wird. Es ist wichtig, diese Begriffe zu verstehen.
   
  **Zustimmung**
   
-Die dsgvo besagt: "die Verarbeitung personenbezogener Daten sollte so gestaltet sein, dass Sie der Menschheit dient." Die dsgvo hofft, dieses Ziel zu erreichen, indem Sie die Zustimmung zur Verarbeitung personenbezogener Daten verwendet. Dies kann der einfache Vorgang sein, bei dem Ihre Kunden gefragt werden, ob Sie e-Mail-Nachrichten von Ihrem Unternehmen erhalten möchten. Es bedeutet auch, dass Sie keine weiteren Kontrollkästchen für das Deaktivieren Ihrer Website haben, wenn Sie Daten für Marketing verwenden möchten. Sie müssen ausdrücklich mit einem "eindeutigen Affirmative Act" einwilligen. Außerdem müssen Sie Aufzeichnungen darüber führen, wann eine Zustimmung getroffen oder widerrufen wird.
+In der DSGVO heißt es: "Die Verarbeitung personenbezogener Daten sollte so konzipiert sein, dass sie der Europäischen Union dient." Die DSGVO möchte dieses Ziel mithilfe der Zustimmung bei der Verarbeitung personenbezogener Daten erreichen. Dies könnte die einfache Möglichkeit sein, Ihre Kunden zu fragen, ob sie E-Mail-Nachrichten von Ihrem Unternehmen empfangen möchten. Dies bedeutet auch, dass sie auf Ihrer Website keine Kontrollkästchen mehr abmelden, wenn Sie Daten für das Marketing verwenden möchten. Sie müssen eine ausdrückliche Zustimmung mit einem "eindeutigen bejahten Akt" einholen. Außerdem müssen Sie aufzeichnungen darüber, wann eine Zustimmung erteilt oder widerrufen wird.
   
  **Rechte betroffener Personen**
   
-Das dsgvo richtet Datensubjekt Rechte ein, was bedeutet, dass im Hinblick auf Ihre personenbezogenen Daten Kunden, Mitarbeiter, Geschäftspartner, Kunden, Auftragnehmer, Kursteilnehmer, Lieferanten und so weiter das Recht haben,:
+Die DSGVO richtet Rechte von Personen ein, was bedeutet, dass Kunden, Mitarbeiter, Geschäftspartner, Kunden, Auftragnehmer, Studenten, Lieferanten usw. im Hinblick auf ihre personenbezogenen Daten das Recht haben,
   
-- **Über die Daten informiert werden:** Sie müssen einzelne Personen über ihre Verwendung Ihrer Daten informieren. 
+- **Informieren Sie sich über ihre Daten:** Sie müssen Einzelpersonen über Ihre Verwendung ihrer Daten informieren. 
     
-- **Zugriff auf Ihre Daten haben:** Sie müssen einzelnen Personen Zugriff auf alle von ihnen gehaltenen Daten gewähren (beispielsweise mithilfe des Kontozugriffs oder auf manuelle Weise). 
+- **Haben Sie Zugriff auf ihre Daten:** Sie müssen Einzelpersonen Zugriff auf alle ihre Daten geben, die Sie speichern (z. B. mithilfe des Kontozugriffs oder manuell). 
     
-- **Fordern Sie die Datenberichtigung an:** Einzelne Personen können Sie bitten, ungenaue Daten zu korrigieren. 
+- **Bitten Sie um Datenrektifizierung:** Einzelpersonen können Sie bitten, ungenaue Daten zu korrigieren. 
     
-- **Fordern Sie die zu löschenden Daten an:** Dieses Recht, das auch als "Recht auf Löschung" bezeichnet wird, ermöglicht es einem einzelnen, zu verlangen, dass alle personenbezogenen Daten, die ein Unternehmen gesammelt hat, in allen Systemen gelöscht werden, die es verwenden oder Teilen. 
+- **Fordern Sie an, dass Daten gelöscht werden:** Dieses Recht wird auch als "Recht auf Löschung" bezeichnet und ermöglicht es einer Person, zu verlangen, dass alle von einem Unternehmen erfassten personenbezogenen Daten auf allen Systemen gelöscht werden, die sie verwenden oder freigeben. 
     
-- **Anforderungs beschränkte Verarbeitung:** Eine einzelne Person kann Sie bitten, Ihre Daten zu unterdrücken oder einzuschränken. Sie gilt jedoch nur unter bestimmten Umständen. 
+- **Anforderung eingeschränkter Verarbeitung:** Eine Person kann bitten, ihre Daten zu unterdrücken oder einzuschränken. Sie gilt jedoch nur unter bestimmten Umständen. 
     
-- **Übertragbarkeit von Daten:** Eine einzelne Person kann verlangen, dass Ihre Daten an ein anderes Unternehmen übertragen werden. 
+- **Datenportabilität haben:** Eine Person kann verlangen, dass ihre Daten an ein anderes Unternehmen übertragen werden. 
     
-- **Objekt:** Eine einzelne Person kann Widerspruch gegen Ihre Daten, die für verschiedene Zwecke verwendet werden, einschließlich Direktmarketing einwenden. 
+- **Objekt:** Eine Person kann der Verwendung ihrer Daten für verschiedene Zwecke, einschließlich Direktmarketing, ein Objekt 2014 en. 
     
-- **Stellen Sie sicher, dass keine automatisierte Entscheidungsfindung unterliegt, einschließlich der Profilerstellung:** Das dsgvo hat strenge Regeln für die Verwendung von Daten zum profilieren von Personen und zum Automatisieren von Entscheidungen basierend auf dieser Profilerstellung. 
+- Bitten Sie, keine automatisierten Entscheidungen zu **treffen, einschließlich Profilerstellung:** Die DSGVO verfügt über strenge Regeln für die Verwendung von Daten zum Profilieren von Personen und automatisieren Entscheidungen basierend auf dieser Profilerstellung. 
     
-## <a name="common-small-business-questions-about-the-gdpr"></a>Häufig gestellte Fragen zum Small Business zum dsgvo
+## <a name="common-small-business-questions-about-the-gdpr"></a>Häufige Fragen des kleinen Unternehmens zur DSGVO
 
-### <a name="im-a-sole-proprietor---do-i-really-have-to-worry-about-the-gdpr"></a>Ich bin ein alleiniger Inhaber – muss ich mich wirklich um die dsgvo sorgen?
+### <a name="im-a-sole-proprietor---do-i-really-have-to-worry-about-the-gdpr"></a>Ich bin alleiniger Besitzer – muss ich mich wirklich Gedanken über die DSGVO machen?
 
-Bei der dsgvo handelt es sich um die Daten, die Sie verarbeiten, nicht um die Anzahl der Mitarbeiter, die Sie haben. Es betrifft Unternehmen aller Größenordnungen, sogar alleinige Besitzer. Unternehmen mit weniger als 250 Mitarbeitern haben jedoch einige Ausnahmen, beispielsweise reduzierte Datensatzaufbewahrung, aber nur, wenn Sie sicher sind, dass die Datenverarbeitung die Rechte der einzelnen Personen nicht beeinträchtigt und gelegentlich verarbeitet wird.
+Bei der DSGVO geht es um die daten, die Sie verarbeiten, nicht um die Anzahl der Mitarbeiter, die Sie haben. Dies betrifft Unternehmen aller Größen, auch Einzelunternehmen. Unternehmen mit weniger als 250 Mitarbeitern haben jedoch einige Ausnahmen, z. B. eine eingeschränkte Datensatzführung, aber nur, wenn Sie sicher sind, dass die Datenverarbeitung keine Auswirkungen auf die Rechte der Person hat und gelegentlich verarbeitet wird.
   
-Beispielsweise wäre die Verarbeitung nicht personenbezogener Daten ausgenommen oder Bedarf reduzierter Maßnahmen. Wenn Sie allerdings Daten verarbeiten, die als "spezielle Kategorie vertrauliche Daten" betrachtet werden, müssen Sie diese Datenverarbeitung aufzeichnen, selbst wenn Sie nur gelegentlich erfolgt. Die Definition der "gelegentlichen Verarbeitung" ist vage, soll aber auf Daten angewendet werden, die nur einmal oder selten verwendet werden.
+Beispielsweise wäre die Verarbeitung nicht personenbezogener Daten ausgenommen oder müsste reduziert werden. Wenn Sie jedoch Daten verarbeiten, die als "vertrauliche Daten für besondere Kategorien" bezeichnet werden, müssen Sie diese Datenverarbeitung auch nur gelegentlich aufzeichnen. Die Definition der "gelegentlichen Verarbeitung" ist vage, soll jedoch auf Daten angewendet werden, die einmal oder selten verwendet werden.
   
-Außerdem sollten Sie sicherstellen, dass personenbezogene Daten, die Sie erfassen, geschützt sind. Dies bedeutet, dass Sie es verschlüsseln und sicherstellen müssen, dass der Zugriff darauf mit mindestens einem Kennwort gesteuert wird. Wenn Sie Ihre Kundendaten in einer Kalkulationstabelle auf Ihrem Desktop ohne Schutz schützen, entspricht dies nicht den Erwartungen von dsgvo. 
+Sie sollten auch sicherstellen, dass die von Ihnen erfassten personenbezogenen Daten geschützt sind. Dies bedeutet, dass Sie sie verschlüsseln und sicherstellen müssen, dass der Zugriff darauf mithilfe mindestens eines Kennworts gesteuert wird. Wenn Sie Ihre Kundendaten ohne Schutz in einer Kalkulationstabelle auf Ihrem Desktop speichern, werden die Erwartungen der DSGVO nicht erfüllt. 
   
-### <a name="how-can-i-tell-if-our-company-website-is-gdpr-compliant"></a>Wie kann ich feststellen, ob unsere Unternehmenswebsite dsgvo konform ist?
+### <a name="how-can-i-tell-if-our-company-website-is-gdpr-compliant"></a>Wie erzähle ich, ob unsere Unternehmenswebsite DSGVO-kompatibel ist?
 
-Die erste Frage, die Sie sich stellen müssen, lautet: sammeln Sie personenbezogene Daten überall auf Ihrer Website? Möglicherweise verfügen Sie über ein Kontaktformular, das nach einem Namen und einer e-Mail-Adresse fragt. Wenn Sie Marketing-e-Mails senden möchten, stellen Sie sicher, dass Sie ein "Opt-in"-Kontrollkästchen hinzufügen, in dem genau erläutert wird, wofür Sie die Daten verwenden. Nur wenn der Empfänger dieses Feld überprüft, können Sie Ihre personenbezogenen Daten zu Marketingzwecken verwenden.
+Die erste Frage, die Sie sich stellen müssen, lautet: Sammeln Sie personenbezogene Daten an einer beliebigen Stelle auf Ihrer Website? Beispielsweise können Sie über ein Kontaktformular verfügen, das nach einem Namen und einer E-Mail-Adresse fragt. Wenn Sie Marketing-E-Mails senden möchten, stellen Sie sicher, dass Sie ein "Opt-In"-Kontrollkästchen hinzufügen, das genau erläutert, wofür Sie die Daten verwenden. Nur wenn der Empfänger dieses Kontrollkästchen überprüft, können Sie seine personenbezogenen Daten zu Marketingzwecken verwenden.
   
-Stellen Sie außerdem sicher, dass die Datenbank, in der die Daten gespeichert sind, geschützt ist. Ihr Webhosting-Unternehmen oder Cloud-Speicheranbieter kann dies in diesem Fall beraten. Wenn Sie Microsoft 365 for Business verwenden, ist die Speicherung von Daten dsgvo-konform. 
+Überprüfen Sie außerdem, ob die Datenbank, in der die Daten gespeichert werden, geschützt ist. Ihr Webhostingunternehmen oder Cloudspeicheranbieter kann dies beraten. Wenn Sie Microsoft 365 business verwenden, ist die Speicherung von Daten DSGVO-konform. 
   
-### <a name="my-company-is-outside-europe-does-the-gdpr-really-affect-us"></a>Mein Unternehmen befindet sich außerhalb von Europa. Wirkt sich die dsgvo wirklich auf uns aus?
+### <a name="my-company-is-outside-europe-does-the-gdpr-really-affect-us"></a>Mein Unternehmen befindet sich außerhalb von Europa. Wirkt sich die DSGVO wirklich auf uns aus?
 
-Das dsgvo ist eine Verordnung, die EU-Bürger schützt. Wenn Ihr Unternehmen jetzt mit EU-Bürgern umgeht oder Sie in der Zukunft hoffen, dass Sie davon betroffen sind. Dies gilt sowohl für Bürger, die in einem EU-Staat leben, als auch für solche, die anderswo Leben.
+Die DSGVO ist eine Verordnung zum Schutz der EU-Bürger. Wenn Ihr Unternehmen sich jetzt mit EU-Bürgern beschäftigt oder Sie in Zukunft hoffen, sind Sie davon betroffen. Dies gilt sowohl für Bürger, die in einem EU-Staat leben, als auch für personen, die an anderer Stelle leben.
   
 Betrachten Sie die folgenden Beispiele:
   
-- Ein US-Unternehmen, das Autos für EU-Bürger anheuert, muss die Anforderungen von dsgvo erfüllen, wenn die Kundendaten erfasst und verarbeitet werden. Das Unternehmen muss die Zustimmung nehmen, wenn er die Daten des Kunden einnimmt und sicherstellt, dass die Daten sicher gespeichert werden. Außerdem müssen Sie sicherstellen, dass der Kunde alle Rechte für die betroffene Person anwenden kann. 
+- Ein US-Amerikanisches Unternehmen, das Autos an EU-Bürger anmiet, muss die DSGVO-Anforderungen erfüllen, wenn es die Daten des Kunden sammelt und verarbeiten. Das Unternehmen muss seine Zustimmung einholen, wenn es die Daten des Kunden an sich nimmt und dafür sorgt, dass die Daten sicher gespeichert werden. Außerdem müssen sie sicherstellen, dass der Kunde alle seine Rechte für die Person anwenden kann. 
     
-- Ein australisches Unternehmen verkauft Produkte online, und die Benutzer richten Onlinekonten ein. Dsgvo Datensubjekt Rechte und Zustimmung werden auf EU-Bürger angewendet, die ein Konto eröffnen. Das Unternehmen muss sicherstellen, dass der Kunde alle Rechte für die betroffene Person anwenden kann. 
+- Ein australisches Unternehmen verkauft Produkte online, und seine Benutzer richten Onlinekonten ein. Rechte und Zustimmung der DSGVO-Datensubjekte werden auf EU-Bürger angewendet, die ein Konto eröffnen. Das Unternehmen muss sicherstellen, dass der Kunde alle seine rechtesubjektorientierten Daten anwenden kann. 
     
-- Eine internationale Wohltätigkeitsorganisation sammelt Daten zu Spendern und verwendet Sie, um Updates und Spendenanfragen zu senden. Die dsgvo besagt: "... die Verarbeitung personenbezogener Daten zu Direktmarketingzwecken kann als für ein berechtigtes Interesse ausgeführt angesehen werden. " Die Verantwortung liegt jedoch bei der Organisation, um zu beweisen, dass Ihre Interessen die der betroffenen Person außer Kraft setzen. Das Unternehmen (oder in diesem Fall die gemeinnützige Organisation) sollte immer informiert, explizit, Opt-in Zustimmung erhalten.
+- Eine internationale Wohltätigkeitsorganisation sammelt Daten über Spender und verwendet sie, um Updates und Anträge auf Spende zu senden. In der DSGVO heißt es: "... die Verarbeitung personenbezogener Daten zu Direktmarketingzwecken kann für ein berechtigtes Interesse als durchgeführt angesehen werden." Die Organisation muss jedoch nachweisen, dass ihre Interessen die Interessen der betroffenen Person überschreiben. Das Unternehmen (oder in diesem Fall die gemeinnützige Organisation) sollte immer informiert, explizit und zustimmungswillig sein.
     
-Die dsgvo gilt auch, wenn Kundendaten grenzübergreifend verschoben werden. Wenn Sie Cloud Computing für die Datenspeicherung verwenden, müssen Sie sicherstellen, dass der Dienst vollständig dsgvo-kompatibel ist. Es kann kompliziert werden, wenn sich der Datenspeicher an Orten befindet, in denen der Datenschutz schlecht erfasst ist. Wenn Sie Microsoft 365 for Business verwenden, verfügen wir über die richtigen rechtlichen Dokumentationen, um die dsgvo-Anforderungen zu decken.
+Die DSGVO gilt auch, wenn Kundendaten über Grenzen hinweg bewegt werden. Wenn Sie Cloud Computing für die Datenspeicherung verwenden, müssen Sie sicherstellen, dass der Dienst vollständig DSGVO-konform ist. Es kann kompliziert werden, wenn sich die Datenspeicherung an Orten befindet, die einen schlechten Datenschutz haben. Wenn Sie Microsoft 365 Business verwenden, verfügen wir über die richtige rechtliche Dokumentation zur Abdeckung der DSGVO-Anforderungen.
   
-### <a name="sure-i-collect-data-but-some-other-company-stores-it-does-that-get-me-off-the-hook"></a>Sicher, ich sammle Daten, aber einige andere Unternehmen speichern Sie. Bringt mich das aus dem Schneider?
+### <a name="sure-i-collect-data-but-some-other-company-stores-it-does-that-get-me-off-the-hook"></a>Sicher, ich sammle Daten, aber ein anderes Unternehmen speichert sie. Kommt mir das aus dem Weg?
 
-Wenn Sie unter dem dsgvo Daten erfassen, sind Sie in gewissem Maße betroffen. Das dsgvo verfügt über das Konzept eines Daten Prozessors und eines Daten Controllers: 
+Wenn Sie Daten sammeln, sind Sie nach der DSGVO teilweise betroffen. Die DSGVO hat das Konzept eines Datenverarbeiters und eines Datenverantwortlichen: 
   
-- **Daten Controller:** Eine Person oder Organisation (Sie können gemeinsame Controller haben), die festlegt, wie, was und warum Daten erfasst werden. Sie können Sie unter Verwendung der Cloud-Server eines anderen Unternehmens speichern. Beispielsweise ist eine Website, die Kundendaten erfasst, ein Controller. 
+- **Datenverantwortlicher:** Eine Person oder Organisation (sie können gemeinsame Verantwortliche haben), die entscheidet, wie, was und warum Daten gesammelt werden. Sie können sie auf den Cloudservern eines anderen Unternehmens speichern. Beispielsweise ist eine Website, die Kundendaten erfasst, ein Verantwortlicher. 
     
-- **Datenprozessor:** Eine Einzelperson oder Organisation, die Daten im Auftrag des Controllers speichert und diese Daten auf Anforderung verarbeitet. Beispielsweise fungiert Microsoft 365 apps for Business-Datenspeicherung als Prozessor und ist vollständig dsgvo konform. 
+- **Datenverarbeiter:** Eine Person oder Organisation, die Daten im Auftrag der Verantwortlichen speichert und diese Daten auf Anfrage verarbeitet. Die Datenspeicherung von Microsoft 365 Apps for Business fungiert beispielsweise als Auftragsverarbeiter und ist vollständig DSGVO-kompatibel. 
     
-    Eine Organisation oder ein System kann sowohl als Controller als auch als Prozessor fungieren. Microsoft 365 for Business kann als beides fungieren und dem dsgvo entsprechen.
+    Eine Organisation oder ein System kann sowohl als Controller als auch als Prozessor fungieren. Microsoft 365 business kann als beides fungieren und entspricht der DSGVO.
     
-### <a name="can-i-still-send-out-marketing-emails-to-my-old-customers"></a>Kann ich weiterhin Marketing-e-Mails an meine alten Kunden senden?
+### <a name="can-i-still-send-out-marketing-emails-to-my-old-customers"></a>Kann ich weiterhin Marketing-E-Mails an meine alten Kunden senden?
 
-Sie müssen sicherstellen, dass Ihre Kunden, auch diejenigen, die Sie jahrelang hatten, zugestimmt haben, Ihre Daten für das Marketing zu verwenden. Möglicherweise haben Sie zuvor die Zustimmung erfasst, sowie einen Eintrag, um ihn anzuzeigen. Wenn dies der Fall ist, werden Sie alle für die Weitervermarktung festgelegt. Wenn dies nicht der Fall ist, müssen Sie die Berechtigung des Kunden erhalten, das Marketing für diese fortzusetzen. Dies umfasst normalerweise das Senden einer e-Mail, in der die Kunden aufgefordert werden, zu Ihrer Website zu wechseln und eine Option zur Zustimmung zum Empfang zukünftiger e-Mails auszuwählen. 
+Sie müssen sicherstellen, dass Ihre Kunden, auch diejenigen, die Sie seit Jahren haben, ihre Daten für das Marketing verwendet haben. Möglicherweise haben Sie zuvor die Zustimmung sowie einen Datensatz erfasst, um sie zu zeigen. Wenn ja, sind Sie alle für die Fortsetzung des Marketings festgelegt. Wenn nicht, müssen Sie die Berechtigung des Kunden erhalten, um das Marketing für sie fortzufahren. Dies umfasst in der Regel das Senden einer E-Mail, in der Kunden aufgefordert werden, zu Ihrer Website zu wechseln und eine Option auszuwählen, um dem Empfang zukünftiger E-Mails zu zustimmen. 
   
-### <a name="do-i-have-to-worry-about-the-gdpr-when-i-recruit-new-employees-what-about-current-employees"></a>Muss ich mich um die dsgvo kümmern, wenn ich neue Mitarbeiter anheuere? Was ist mit den aktuellen Mitarbeitern?
+### <a name="do-i-have-to-worry-about-the-gdpr-when-i-recruit-new-employees-what-about-current-employees"></a>Muss ich mich gedanken über die DSGVO machen, wenn ich neue Mitarbeiter anwerbe? Wie sieht es mit den aktuellen Mitarbeitern aus?
 
-Die dsgvo wirkt sich nicht nur auf Kundendaten aus; Sie erstreckt sich auch auf Mitarbeiterdaten. Neue Rekruten werden häufig mithilfe von Social Media-Plattformen wie LinkedIn platziert. Stellen Sie sicher, dass Sie keine potenziellen Rekrutierungs Daten ohne Ihre ausdrückliche Zustimmung speichern.
+Die DSGVO wirkt sich nicht nur auf Kundendaten aus. Sie erstreckt sich auch auf Mitarbeiterdaten. Neue Rekruten werden häufig über Social Media-Plattformen wie LinkedIn vermittelt. Stellen Sie sicher, dass Sie keine potenziellen Rekrutendaten ohne ihre ausdrückliche Genehmigung speichern.
   
-Wie bei vorhandenen Mitarbeitern und neuen Mitarbeiter Verträgen nimmt eine Signatur am Ende eines Vertrags nicht unbedingt eine Zustimmung ein, insbesondere dann nicht, wenn eine nicht Affirmative Klausel in einem Vertrag verwendet wird. In diesem Fall müssen Sie die Zustimmung in einer expliziten Weise erfassen, die mit der-Klausel verknüpft ist. Was dies bedeutet, hängt von Ihrem Mitarbeiter Vertrag ab, Sie können jedoch in einigen Fällen "berechtigtes Interesse" verwenden und eine Mitarbeiter Datenverarbeitungs Notiz hinzufügen, um sicherzustellen, dass Ihre Mitarbeiter wissen, was Sie mit Ihren Daten tun werden.
+Für bestehende Mitarbeiter und neue Mitarbeiterverträge setzt eine Signatur am Ende eines Vertrags nicht unbedingt eine Zustimmung voraus, insbesondere dann, wenn in einem Vertrag eine nicht-positive Klausel verwendet wird. In diesem Fall müssen Sie die Zustimmung explizit erfassen, die der Klausel zugeordnet ist. Was dies bedeutet, hängt von Ihrem Mitarbeitervertrag ab, Aber Sie können in einigen Fällen "berechtigtes Interesse" verwenden und einen Mitarbeiterdatenverarbeitungsbenachrichtigung hinzufügen, um sicherzustellen, dass Ihre Mitarbeiter wissen, was Sie mit ihren Daten tun werden.
   
-## <a name="satisfy-privacy-concerns-using-microsoft-365-for-business"></a>Vertraulichkeits Belange mit Microsoft 365 for Business erfüllen
+## <a name="satisfy-privacy-concerns-using-microsoft-365-for-business"></a>Erfüllen von Datenschutzbedenken mit Microsoft 365 Business
 
-Wenn Sie mit dem dsgvo konform werden, müssen Sie sicherstellen, dass personenbezogene Daten geschützt werden. Das dsgvo hat ein Konzept, das als Datenschutz nach Design und Standard bezeichnet wird. Dies bedeutet, dass der Datenschutz an ein System und ein Produkt "eingebrannt" werden muss, damit die Vertraulichkeits Belange von zweiter Natur sind. 
+Bei der Einhaltung der DSGVO geht es darum, sicherzustellen, dass personenbezogene Daten geschützt sind. Die DSGVO verfügt über ein Konzept, das als Datenschutz nach Entwurf und Standard bezeichnet wird. Dies bedeutet, dass der Datenschutz in ein System und ein Produkt "eingebrochen" werden sollte, damit die Erfüllung von Datenschutzbedenken zweiter Natur ist. 
   
-Wie bei ihren größeren Gegenstücken braucht ein kleines Unternehmen Bequemlichkeit, ohne dabei die Sicherheit zu beeinträchtigen. Microsoft 365 for Business wurde für Unternehmen mit weniger als 300 Mitarbeitern entwickelt. Kleine Unternehmen können Microsoft Cloud-basierte Tools verwenden, um die geschäftliche Produktivität zu verbessern. Mit Microsoft 365 for Business kann ein kleines Unternehmen e-Mails, Dokumentationen und sogar Besprechungen und Ereignisse verwalten. Außerdem verfügt es über integrierte Sicherheitsmaßnahmen und Geräteverwaltung, die für die dsgvo-Compliance unerlässlich sind.
+Wie ihre größeren Kollegen benötigt auch ein kleines Unternehmen Komfort ohne Sicherheitseinbußen. Microsoft 365 business ist für Unternehmen mit weniger als 300 Mitarbeitern konzipiert. Kleine Unternehmen können cloudbasierte Microsoft-Tools verwenden, um die Produktivität des Unternehmens zu verbessern. Mit Microsoft 365 Business kann ein kleines Unternehmen E-Mails, Dokumentationen und sogar Besprechungen und Ereignisse verwalten. Es verfügt auch über integrierte Sicherheitsmaßnahmen und Geräteverwaltung, die für die Einhaltung der DSGVO unerlässlich sind.
   
-Microsoft 365 for Business kann Ihnen auf folgende Weise beim dsgvo-Prozess helfen:
+Microsoft 365 for Business kann Ihnen beim DSGVO-Prozess auf folgende Weise helfen:
   
-- **Ermitteln Sie Folgendes:** Ein wichtiger Schritt zur dsgvo Compliance ist es zu wissen, welche Daten Sie haben. 
+- **Entdecken Sie:** Ein wichtiger Schritt zur Einhaltung der DSGVO besteht in der Kenntnis ihrer Daten. 
     
-- **Verwalten:** Die Steuerung des Zugriffs auf Daten und die Verwaltung ihrer Verwendung ist ein integraler Bestandteil von dsgvo. Microsoft 365 for Business schützt Geschäftsdaten basierend auf Richtlinien, die auf Geräte angewendet werden sollen. Die Geräteverwaltung ist in einem Alter von entscheidender Bedeutung, in dem Mitarbeiter Remote arbeiten. Microsoft 365 for Business umfasst Geräteverwaltungsfeatures, die sicherstellen, dass die Daten auf allen Geräten geschützt sind. Sie können beispielsweise festlegen, dass alle Windows 10-Geräte in Ihrem Unternehmen über Windows Defender geschützt sind. 
+- **Verwalten:** Die Steuerung des Zugriffs auf Daten und deren Verwaltung ist ein integraler Bestandteil der DSGVO. Microsoft 365 for Business schützt Geschäftsdaten basierend auf Richtlinien, die Sie auf Geräte anwenden möchten. Geräteverwaltung ist in einem Alter wichtig, in dem Mitarbeiter remote arbeiten. Microsoft 365 Business umfasst Geräteverwaltungsfunktionen, die sicherstellen, dass Daten auf allen Geräten geschützt sind. Sie können beispielsweise angeben, dass alle Windows 10-Geräte in Ihrem Unternehmen über Windows Defender. 
     
-- **Schützen:** Microsoft 365 for Business wurde für Sicherheit entwickelt. Die Steuerelemente für Geräteverwaltung und Datenschutz funktionieren über das Unternehmensnetzwerk hinweg, einschließlich Remotegeräten, um die Datensicherheit zu gewährleisten. Microsoft 365 for Business bietet Steuerelemente wie Datenschutzeinstellungen in Office-Anwendungen und die Verschlüsselung von Dokumenten. Mit Microsoft 365 for Business können Sie die dsgvo-Konformitätsüberwachung durchführen, um sicherzustellen, dass Sie die richtige Schutzebene festgelegt haben. 
+- **Schützen Sie:** Microsoft 365 business ist auf Sicherheit ausgelegt. Die Geräteverwaltungs- und Datenschutzsteuerelemente funktionieren in Ihrem gesamten Unternehmensnetzwerk, einschließlich Remotegeräten, um die Datensicherheit zu gewährleisten. Microsoft 365 for Business bietet Steuerelemente wie Datenschutzeinstellungen in Office-Anwendungen und Verschlüsselung von Dokumenten. Mit Microsoft 365 Business können Sie die Einhaltung der DSGVO überwachen, um sicherzustellen, dass Sie über die richtige Schutzstufe verfügen. 
     
-- **Bericht:** Das dsgvo legt großen Wert auf die Berichterstellung. Selbst ein Unternehmen mit einem einzelnen Mitarbeiter, wenn dieses Unternehmen große Datenmengen verarbeitet, muss seine Verfahren dokumentieren und darüber berichten. Microsoft 365 for Business nimmt die Anforderungen an die Berichterstellung für kleinere Organisationen in den Kopf. 
+- **Bericht:** Die DSGVO legt großen Wert auf die Berichterstellung. Selbst ein Unternehmen mit einem einzelnen Mitarbeiter, wenn dieses Unternehmen große Datenmengen verarbeitet, ist erforderlich, um seine Verfahren zu dokumentieren und zu melden. Microsoft 365 Business macht den Berichtspflichten für kleinere Organisationen keine Probleme. 
     
-    Mit Tools wie Überwachungsprotokollen können Sie Datenverschiebungen nachverfolgen und Berichten. Zu den Berichten gehören das Klassifizieren der erfassten und gespeicherten Daten, die Art und Weise, wie Sie mit den Daten und Datenübertragungen Vorgehen. 
+    Tools wie Überwachungsprotokolle ermöglichen ihnen das Nachverfolgen und Melden von Datenbewegungen. Zu den Berichten gehören die Klassifizierung der von Ihnen erfassten und gespeicherten Daten, ihre Aktivitäten mit den Daten und die Übertragung der Daten. 
     
-Kunden, Mitarbeiter und Kunden wissen um die Wichtigkeit des Datenschutzes und erwarten von einem Unternehmen oder einer Organisation, diesen Datenschutz zu respektieren. Microsoft 365 for Business bietet Ihnen die Tools zum erreichen und aufrecht erhalten der dsgvo-Compliance ohne massiven Umbruch für Ihr Unternehmen.
+Kunden, Mitarbeiter und Kunden werden sich der Wichtigkeit des Datenschutzes bewusst und erwarten nun, dass ein Unternehmen oder eine Organisation diesen Datenschutz respektiert. Microsoft 365 For Business bietet Ihnen die Tools, um die Einhaltung der DSGVO ohne massive Umbrüche in Ihrem Unternehmen zu erreichen und zu erhalten.
   
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wenn Sie sich für die dsgvo vorbereiten möchten, finden Sie hier einige Vorschläge für die nächsten Schritte:
+Um sich für die DSGVO zu bereiten, finden Sie hier einige Vorschläge für die nächsten Schritte:
   
-- Bewerten Sie Ihr dsgvo-Programm mit [Prüflisten zur Verantwortlichkeits Bereitschaft](https://docs.microsoft.com/microsoft-365/compliance/gdpr-arc).
+- Bewerten Sie Ihr DSGVO-Programm mit [Prüflisten für die Verantwortlichkeitsbereitschaft.](/compliance/regulatory/gdpr-arc)
     
-- Untersuchen Sie [Microsoft 365 for Business](https://www.microsoft.com/microsoft-365/business) als Lösung für das erreichen und aufrecht erhalten der Einhaltung von dsgvo. 
+- Untersuchen [Sie Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business) als Lösung für die Einhaltung der DSGVO. 
    
 
 > [!IMPORTANT]
-> Erhalten Sie einen Rechtsbeistand, der für Ihr Unternehmen oder Ihre Organisation geeignet ist.
+> Holen Sie sich rechtliche Hinweise, die für Ihr Unternehmen oder Ihre Organisation geeignet sind.
   
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+## <a name="additional-resources"></a>Weitere Ressourcen
 
-[Microsoft Trust Center – Übersicht über die dsgvo](https://www.microsoft.com/trust-center/privacy/gdpr-overview
+[Microsoft Trust Center – Übersicht über die DSGVO](https://www.microsoft.com/trust-center/privacy/gdpr-overview
 )
   
-Der offizielle Microsoft-Blog: [Microsoft Commitment to dsgvo](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)
+Der offizielle Microsoft-Blog: [Microsoft-Verpflichtung zur DSGVO](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)
   
 Websites der Europäischen Kommission:
   
 - [Datenschutz](https://ec.europa.eu/info/law/law-topic/data-protection)
     
-- [2018 Reform der EU-Datenschutzregeln](https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules)
-    
-
+- [Reform der EU-Datenschutzregeln von 2018](https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules)

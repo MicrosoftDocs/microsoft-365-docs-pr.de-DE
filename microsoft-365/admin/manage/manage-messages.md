@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Erfahren Sie, wie Nachrichten im Nachrichtencenter verwaltet werden können, um das Change Management zu unterstützen.
-ms.openlocfilehash: 3f0a3c5fe20e76d0fff63cefe7e6eaa687696426
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
-ms.translationtype: HT
+ms.openlocfilehash: ee3df1b2f4855421dab4d6715add6503027b24bc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405960"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915278"
 ---
 # <a name="manage-messages-in-message-center"></a>Verwalten von Nachrichten im Nachrichtencenter
 
@@ -171,6 +171,6 @@ Wenn Sie eine Nachricht in einem Lesebereich öffnen, können Sie mithilfe der P
 
 ## <a name="track-your-message-center-tasks-in-planner"></a>Nachverfolgen Ihrer Nachrichtencenter-Aufgaben in Planner
 
-Eine Vielzahl von umsetzbaren Informationen zu Änderungen an den Microsoft 365-Diensten gehen im Microsoft 365-Nachrichtencenter ein. Es kann schwierig sein, auf dem Laufenden darüber zu bleiben, welche Änderungen das Ergreifen von Maßnahmen erfordern, wann und von wem diese durchzuführen sind, und dann noch die einzelnen Aufgaben bis zu deren Erledigung nachzuverfolgen. Vielleicht möchten Sie sich auch etwas notieren und dies markieren, um es später zu überprüfen. Das alles und noch mehr können Sie erledigen, wenn Sie Ihre Nachrichten aus dem Microsoft 365 Admin Center in Microsoft Planner synchronisieren. Weitere Informationen finden Sie unter [Nachverfolgen von Aufgaben im Nachrichtencenter in Planner](https://docs.microsoft.com/office365/planner/track-message-center-tasks-planner).
+Eine Vielzahl von umsetzbaren Informationen zu Änderungen an den Microsoft 365-Diensten gehen im Microsoft 365-Nachrichtencenter ein. Es kann schwierig sein, auf dem Laufenden darüber zu bleiben, welche Änderungen das Ergreifen von Maßnahmen erfordern, wann und von wem diese durchzuführen sind, und dann noch die einzelnen Aufgaben bis zu deren Erledigung nachzuverfolgen. Vielleicht möchten Sie sich auch etwas notieren und dies markieren, um es später zu überprüfen. Das alles und noch mehr können Sie erledigen, wenn Sie Ihre Nachrichten aus dem Microsoft 365 Admin Center in Microsoft Planner synchronisieren. Weitere Informationen finden Sie unter [Nachverfolgen von Aufgaben im Nachrichtencenter in Planner](/office365/planner/track-message-center-tasks-planner).
 
-Eine Übersicht über das Nachrichtencenter finden Sie unter [Das Nachrichtencenter in Microsoft 365](message-center.md). Wenn Sie erfahren möchten, wie Sie die maschinelle Übersetzung für Beiträge im Nachrichtencenter aktivieren können, lesen Sie [Aktivieren der Sprachübersetzung für Nachrichtencenter-Beiträge](language-translation-for-message-center-posts.md). Wenn Sie eine alternative Möglichkeit zum Abrufen von Echtzeitinformationen zum Dienststatus programmieren möchten, lesen Sie [Übersicht über die Microsoft 365-Dienstkommunikations-API](https://go.microsoft.com/fwlink/p/?linkid=848507).
+Eine Übersicht über das Nachrichtencenter finden Sie unter [Das Nachrichtencenter in Microsoft 365](message-center.md). Wenn Sie erfahren möchten, wie Sie die maschinelle Übersetzung für Beiträge im Nachrichtencenter aktivieren können, lesen Sie [Aktivieren der Sprachübersetzung für Nachrichtencenter-Beiträge](language-translation-for-message-center-posts.md). Wenn Sie eine alternative Möglichkeit zum Abrufen von Echtzeitinformationen zum Dienststatus programmieren möchten, lesen Sie [Übersicht über die Microsoft 365-Dienstkommunikations-API](/previous-versions/office/developer/o365-enterprise-developers/jj984343(v=office.15)).

@@ -25,19 +25,19 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: 'Ändern Sie Ihre anfängliche E-Mail-Adresse auf eine benutzerfreundliche E-Mail-Adresse wie „kai@fourthcoffee.com“. Dazu müssen Sie einen Domänennamen kaufen und zu Microsoft 365 hinzufügen. '
-ms.openlocfilehash: 445b78f759cee79a794f9656afd5b26051534e26
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
-ms.translationtype: HT
+ms.openlocfilehash: 10dff4e0523062ae763c08a972563dc8b5582038
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114021"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915926"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Ändern der E-Mail-Adresse auf die eigene benutzerdefinierte Domäne
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -61,7 +61,7 @@ Ihre anfängliche E-Mail-Adresse in Office 365, betrieben von 21Vianet, schließ
 
 ::: moniker-end
 
-Wenn Sie Ihr E-Mail-System auf Microsoft 365 ändern, indem Sie im nächsten Schritt den MX-Eintrag der Domäne ändern, werden von nun an alle an diese Domäne gesendeten E-Mails an Microsoft 365 gesendet. Sorgen Sie dafür, dass Sie in Microsoft 365 Postfächer für alle Personen erstellt haben, die in Ihrer Domäne über E-Mail verfügen, BEVOR Sie den MX-Eintrag ändern. Sie möchten nicht für jeden in Ihrer Domäne E-Mails nach Microsoft 365 verschieben? Sie können stattdessen [ein Pilotprojekt mit Microsoft 365 und nur wenigen E-Mail-Adressen in die Wege leiten](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain?view=o365-worldwide). 
+Wenn Sie Ihr E-Mail-System auf Microsoft 365 ändern, indem Sie im nächsten Schritt den MX-Eintrag der Domäne ändern, werden von nun an alle an diese Domäne gesendeten E-Mails an Microsoft 365 gesendet. Sorgen Sie dafür, dass Sie in Microsoft 365 Postfächer für alle Personen erstellt haben, die in Ihrer Domäne über E-Mail verfügen, BEVOR Sie den MX-Eintrag ändern. Sie möchten nicht für jeden in Ihrer Domäne E-Mails nach Microsoft 365 verschieben? Sie können stattdessen [ein Pilotprojekt mit Microsoft 365 und nur wenigen E-Mail-Adressen in die Wege leiten](../misc/pilot-microsoft-365-from-my-custom-domain.md?view=o365-worldwide). 
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Ändern der E-Mail-Adresse auf die eigene benutzerdefinierte Domäne über das Microsoft 365 Admin Center
 
@@ -99,4 +99,3 @@ Sie werden durch das Verfahren zum ordnungsgemäßen Einrichten Ihrer Domäne in
 ## <a name="related-articles"></a>Verwandte Artikel
 
 [Erwerben einer benutzerdefinierten Domäne über Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
- 

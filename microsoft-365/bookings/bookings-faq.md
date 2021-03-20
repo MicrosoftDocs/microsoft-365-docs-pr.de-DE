@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Häufig gestellte Fragen zu Microsoft Bookings.
-ms.openlocfilehash: a293bf86225731917068712c2887ea79c2540039
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: c7bf14c35626eeeec781f6a9f45769e0ead1730e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454289"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913826"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Häufig gestellte Fragen zu Microsoft Bookings
 
@@ -184,7 +184,7 @@ Es gibt keine Bestimmung zum Festlegen der Zeitzone für Mitarbeiter in Bookings
 
 ### <a name="can-email-notifications-be-sent-as-the-tenant-domain-name"></a>Können E-Mail-Benachrichtigungen als Mandantendomänenname gesendet werden?
 
-Die E-Mail-Adressen werden auf der Einstellungsebene von Microsoft 365 gesteuert und verwaltet und hängen von den Domänenkonfigurationseinstellungen ab. Weitere Informationen finden Sie [hier](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain).
+Die E-Mail-Adressen werden auf der Einstellungsebene von Microsoft 365 gesteuert und verwaltet und hängen von den Domänenkonfigurationseinstellungen ab. Weitere Informationen finden Sie [hier](/powershell/module/exchange/get-accepteddomain).
 
 ### <a name="is-the-ability-to-send-sms-messages-dependent-on-a-different-service-or-specific-configuration"></a>Ist die Möglichkeit zum Senden von SMS-Nachrichten von einem anderen Dienst oder einer bestimmten Konfiguration abhängig?
 
@@ -218,7 +218,7 @@ Die Aufzeichnung von Auszeit in der Bookings Web App löst immer eine Benachrich
 
 ### <a name="can-bookings-calendars-be-cloned-or-duplicated-and-can-they-be-templatized-for-easy-scaling"></a>Können Bookings-Kalender geklont oder dupliziert werden, und können sie zur einfachen Skalierung templatiert werden?
 
-Der Prozess würde sein, die Graph-API zum Abrufen von Postfachdetails zu verwenden und diese Details dann zum Erstellen eines neuen Postfachs zu verwenden. Die API-Dokumentation [finden Sie hier](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta).
+Der Prozess würde sein, die Graph-API zum Abrufen von Postfachdetails zu verwenden und diese Details dann zum Erstellen eines neuen Postfachs zu verwenden. Die API-Dokumentation [finden Sie hier](/graph/api/resources/booking-api-overview?view=graph-rest-beta).
 
 ### <a name="what-reporting-is-available-in-bookings"></a>Welche Berichte sind in Bookings verfügbar?
 
@@ -349,7 +349,7 @@ Dies ist ein vorübergehender Fehler, der in der Regel aufgrund einer instabilen
 
 Wenn dieser Fehler nach einem längeren Zeitraum weiterhin auftritt oder sie häufig angezeigt wird, wenden Sie sich an den Support.
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+## <a name="additional-resources"></a>Weitere Ressourcen
 
 
   - [Microsoft Bookings erweitert die Verfügbarkeit im Unternehmensblog](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)
@@ -360,19 +360,19 @@ Wenn dieser Fehler nach einem längeren Zeitraum weiterhin auftritt oder sie hä
 
   - [Microsoft Bookings an- oder ausschalten](turn-bookings-on-or-off.md)
 
-  - [Hinzufügen von Benutzern einzeln oder in Massen](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users?view=o365-worldwide.)
+  - [Hinzufügen von Benutzern einzeln oder in Massen](../admin/add-users/add-users.md?view=o365-worldwide.)
 
   - [Mitarbeiter zu Bookings hinzufügen](add-staff.md)
 
-  - [API-Komponenten, die nach der Definition der Vorlage automatisiert werden sollen](https://docs.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses)
+  - [API-Komponenten, die nach der Definition der Vorlage automatisiert werden sollen](/graph/api/bookingbusiness-post-bookingbusinesses)
 
   - [URL zu Bookings Calendar for Display](https://outlook.office.com/bookings/calendar)
 
-  - [Bookings-Compliancerichtlinien](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365?view=o365-worldwide#bookings)
+  - [Bookings-Compliancerichtlinien](/compliance/regulatory/gdpr-dsr-Office365?view=o365-worldwide#bookings)
 
   - [Anpassen und Veröffentlichen Ihrer Buchungsseite](customize-booking-page.md)
 
-  - [Konfiguration des Mandantenpostfachs](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
+  - [Konfiguration des Mandantenpostfachs](/powershell/module/exchange/get-accepteddomain)
 
   - [Gruppenbuchungen](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)
 

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Erfahren Sie hier mehr über das von 21Vianet betriebene Office 365. Es erfüllt die Anforderungen an sichere, zuverlässige und skalierbare Clouddienste in China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 5906bf961e246f1d707b030ffb4c788da353200c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 92b69cc77f5c48af63651f2fd37761981ca45ad5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644651"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914342"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365, betrieben von 21Vianet
 
@@ -46,7 +46,7 @@ Scannen Sie diesen QR-Code, um uns auf WeChat zu folgen und die neuesten Updates
   
  **Verfügbare Dienste in Office 365, betrieben von 21Vianet**
   
-In den nachstehenden Abschnitten werden einige der Unterschiede aufgeführt, die die jeweiligen Dienste aufweisen. Letztlich ist es unser Ziel, Parität mit globalen Diensten zu erreichen. Aufgrund der Besonderheit von Diensten in China, die von einem Partner von Rechenzentren in China betrieben werden, stehen einige Features jedoch noch nicht zur Verfügung. Die Dienste werden im Laufe der Zeit einer vollständigen Feature-Parität immer näher kommen. Wenn Sie einen detaillierten Blick auf die Dienste werfen möchten, die im Rahmen der einzelnen Office 365-Pläne (von 21Vianet betrieben) bereitstehen, lesen Sie [Office 365-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
+In den nachstehenden Abschnitten werden einige der Unterschiede aufgeführt, die die jeweiligen Dienste aufweisen. Letztlich ist es unser Ziel, Parität mit globalen Diensten zu erreichen. Aufgrund der Besonderheit von Diensten in China, die von einem Partner von Rechenzentren in China betrieben werden, stehen einige Features jedoch noch nicht zur Verfügung. Die Dienste werden im Laufe der Zeit einer vollständigen Feature-Parität immer näher kommen. Wenn Sie einen detaillierten Blick auf die Dienste werfen möchten, die im Rahmen der einzelnen Office 365-Pläne (von 21Vianet betrieben) bereitstehen, lesen Sie [Office 365-Dienstbeschreibung](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
   
     
 Wenn Sie wissen möchten, wie Sie die ersten Schritte mit allgemeinen Office 365-Diensten unternehmen, lesen Sie [Erste Schritte](../admin-overview/get-started-with-office-365.md).
@@ -55,7 +55,7 @@ Wenn Sie wissen möchten, wie Sie die ersten Schritte mit allgemeinen Office 365
 
 |||
 |:-----|:-----|
-|Benutzerdefinierte Domänen  <br/> |Administratoren können benutzerdefinierte Domänen erstellen und/oder solche verwenden, die über Chinesisch-spezifische Domänenanbieter registriert wurden. Wenn Sie keine benutzerdefinierte Domäne besitzen, können Sie [einen Domänennamen von einer Domänenregistrierungsstelle erwerben](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name). Sollten Sie hingegen eine besitzen, [finden Sie Ihre Domänenregistrierungsstelle oder Ihren DNS-Hostinganbieter](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)  <br/> Wenn Sie eine öffentliche Website mit dem Office 365 SharePoint Online-Dienst erstellen, erfordert die Compliancerichtlinie für das Internet in China außerdem, dass Sie eine ICP-Nummer (Internet Content Provider, Internetinhaltsanbieter) beziehen.  **Hinweis:** Die automatische Überprüfung von nicht zulässigen Wörtern in benutzerdefinierten Domänennamen ist nicht verfügbar.           |
+|Benutzerdefinierte Domänen  <br/> |Administratoren können benutzerdefinierte Domänen erstellen und/oder solche verwenden, die über Chinesisch-spezifische Domänenanbieter registriert wurden. Wenn Sie keine benutzerdefinierte Domäne besitzen, können Sie [einen Domänennamen von einer Domänenregistrierungsstelle erwerben](../get-help-with-domains/buy-a-domain-name.md). Sollten Sie hingegen eine besitzen, [finden Sie Ihre Domänenregistrierungsstelle oder Ihren DNS-Hostinganbieter](../get-help-with-domains/find-your-domain-registrar.md)  <br/> Wenn Sie eine öffentliche Website mit dem Office 365 SharePoint Online-Dienst erstellen, erfordert die Compliancerichtlinie für das Internet in China außerdem, dass Sie eine ICP-Nummer (Internet Content Provider, Internetinhaltsanbieter) beziehen.  **Hinweis:** Die automatische Überprüfung von nicht zulässigen Wörtern in benutzerdefinierten Domänennamen ist nicht verfügbar.           |
 |Abonnements, Abrechnung und technischer Support  <br/> |Bereitgestellt von 21Vianet. Informationen zum Kontaktieren des Supports finden Sie unter [Kontaktieren des Supports für Office 365 Business](../contact-support-for-business-products.md).  <br/> |
 |Zurücksetzen von Kennwörtern durch den Benutzer  <br/> |Nur für Administratoren verfügbar. Weitere Informationen finden Sie unter [Ändern oder Zurücksetzen Ihres Kennworts in Office 365, betrieben von 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
 |Sicherheit, Datenschutz, Compliance und Details zu den Ebenen des Supports  <br/> |Bereitgestellt von 21Vianet.  <br/> |
@@ -82,10 +82,10 @@ Wenn Sie wissen möchten, wie Sie die ersten Schritte mit allgemeinen Office 365
 |ICP-Registrierung für öffentliche Website  <br/> |Compliancerichtlinien für das Internet in China erfordern, dass Sie eine Internetinhaltsanbieter-Nummer (Internet Content Provider, ICP) für Ihre öffentliche Website beziehen.  |
 |Features für öffentliche Websites  <br/> |Öffentliche Websites sind nur verfügbar, wenn Sie Office 365 vor dem 9. März 2015 erworben haben. Bing Maps, externe Freigaben und Kommentare sind auf öffentlichen Websites nicht verfügbar, da mit diesen Features ggf. Daten außerhalb Ihres Landes gesendet werden.  <br/> |
 |Newsfeed und Yammer (soziale Netzwerke für Unternehmen)  <br/> |Newsfeed (der soziale Knotenpunkt, an dem Updates zu Personen, Dokumenten, Websites und Kategorien angezeigt werden, denen Sie folgen) ist verfügbar. Yammer ist nicht verfügbar.  <br/> |
-|Automatisch gehostete Apps  <br/> |Sie können eine vom Anbieter gehostete App bereitstellen, die SharePoint und SQL Azure verwendet. Weitere Informationen finden Sie unter [Erstellen einer vom Anbieter gehosteten grundlegenden App für SharePoint](https://msdn.microsoft.com/library/office/apps/fp142381.aspx). Demnächst werden Entwickler eine App bereitstellen können, die eine automatisch gehostete Website verwendet.  <br/> |
+|Automatisch gehostete Apps  <br/> |Sie können eine vom Anbieter gehostete App bereitstellen, die SharePoint und SQL Azure verwendet. Weitere Informationen finden Sie unter [Erstellen einer vom Anbieter gehosteten grundlegenden App für SharePoint](/sharepoint/dev/sp-add-ins/get-started-creating-provider-hosted-sharepoint-add-ins). Demnächst werden Entwickler eine App bereitstellen können, die eine automatisch gehostete Website verwendet.  <br/> |
 |InfoPath  <br/> |Nicht verfügbar.  <br/> |
 |SharePoint Store  <br/> |Die Office und SharePoint App Stores sind optionale Dienste, die von der Microsoft Corporation oder einer Tochtergesellschaft von einer der weltweiten Microsoft-Einrichtungen aus betrieben werden. Die im Store verfügbaren Apps werden von unterschiedlichen App-Herausgebern bereitgestellt und unterliegen den Bedingungen und den Datenschutzerklärungen des App-Herausgebers. Die Nutzung irgendeiner dieser Apps kann dazu führen, dass Daten in ein anderes Land übertragen, dort gespeichert oder verarbeitet werden, in dem der App-Herausgeber, seine Niederlassungen oder Dienstanbieter Einrichtungen unterhalten. Lesen Sie die Bedingungen sowie die Datenschutzerklärungen des App-Herausgebers sorgfältig durch, bevor Sie eine App herunterladen und verwenden.  <br/> |
-|Office 365 Entwickler-Website: Veröffentlichen im SharePoint-Shop über das Verkäuferdashboard\*  <br/> |Erfahren Sie mehr über die [Voraussetzungen für das Einreichen von Apps für SharePoint](https://go.microsoft.com/fwlink/?LinkId=518102) zur Verteilung an Benutzer von Office 365, betrieben von 21Vianet.  <br/> |
+|Office 365 Entwickler-Website: Veröffentlichen im SharePoint-Shop über das Verkäuferdashboard\*  <br/> |Erfahren Sie mehr über die [Voraussetzungen für das Einreichen von Apps für SharePoint](/office/dev/store/submit-sharepoint-add-ins-for-office-365-operated-by-21vianet-in-china) zur Verteilung an Benutzer von Office 365, betrieben von 21Vianet.  <br/> |
    
 \*Optionale Dienste werden direkt von Microsoft bereitgestellt und unterliegen den Nutzungsbedingungen und Datenschutzbestimmungen von Microsoft.
   
@@ -141,12 +141,12 @@ Bei Organisationen mit älteren oder gemischten Versionen von Exchange Server we
   
  Darüber hinaus werden einige Exchange-Nachrichtenrichtlinien- und Compliance-Features in Hybridbereitstellungen mit Office 365-Mandanten, die von 21Vianet gehostet werden, nicht vollständig unterstützt. Zu diesen Funktionen zählen die folgenden:
 
-- [Verwaltung von Nachrichtendatensätzen (Messaging Records Management, MRM)](https://go.microsoft.com/fwlink/?LinkId=506754) 
-- [In-Situ-eDiscovery](https://go.microsoft.com/fwlink/?LinkID=506755) 
-- [In-Situ-Aufbewahrung](https://go.microsoft.com/fwlink/?LinkId=506758) 
-- [In-Situ-Archivierung](https://go.microsoft.com/fwlink/?LinkId=506759)
-- [Postfachüberwachung](https://go.microsoft.com/fwlink/?LinkId=506760)
-- Zugreifen auf Online-Archive mit [Outlook Web App (OWA)](https://go.microsoft.com/fwlink/?LinkId=506762) 
+- [Verwaltung von Nachrichtendatensätzen (Messaging Records Management, MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) 
+- [In-Situ-eDiscovery](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) 
+- [In-Situ-Aufbewahrung](/exchange/security-and-compliance/in-place-and-litigation-holds) 
+- [In-Situ-Archivierung](/exchange/in-place-archiving-in-exchange-2013-exchange-2013-help)
+- [Postfachüberwachung](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)
+- Zugreifen auf Online-Archive mit [Outlook Web App (OWA)](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-on-the-web) 
 
 In der folgenden Tabelle erfahren Sie mehr über die Unterstützung von Funktionen in verschiedenen Exchange-Bereitstellungsszenarien: 
 
@@ -160,9 +160,9 @@ In der folgenden Tabelle erfahren Sie mehr über die Unterstützung von Funktion
 <sup>1</sup> Für lokale und Exchange Online-Postfächer sind jeweils separate Suchvorgänge erforderlich.  <br/> <sup>2</sup> MRM-Richtlinien zum Verschieben von Archiven können für Postfächer verwendet werden, die sich auf einem Server ab Exchange 2013 CU5 befinden. 
 
 Weitere Informationen zum Konfigurieren einer Hybridbereitstellung mit Office 365-Mandanten, die von 21Vianet gehostet werden, finden Sie in den folgenden Artikeln: 
-- [Voraussetzungen für die Hybridbereitstellung](https://go.microsoft.com/fwlink/?LinkId=506764)
-- [Zertifikatanforderungen für Hybridbereitstellungen](https://go.microsoft.com/fwlink/?LinkId=506766) 
-- [Erstellen einer Hybridbereitstellung mit dem Assistenten für die Hybridkonfiguration](https://go.microsoft.com/fwlink/?LinkId=506767)
+- [Voraussetzungen für die Hybridbereitstellung](/exchange/hybrid-deployment-prerequisites)
+- [Zertifikatanforderungen für Hybridbereitstellungen](/exchange/certificate-requirements) 
+- [Erstellen einer Hybridbereitstellung mit dem Assistenten für die Hybridkonfiguration](/exchange/hybrid-deployment/deploy-hybrid)
 
 > [!IMPORTANT]
 >  Der [Bereitstellungs-Assistent für Exchange Server](https://go.microsoft.com/fwlink/?LinkId=506768) ist ein kostenloses webbasiertes Tool, mit dem Sie in Ihrer lokalen Organisation eine Hybridbereitstellung zwischen Ihrer lokalen Organisation und Office 365 konfigurieren oder eine vollständige Migration zu Office 365 vornehmen können. Der Assistent stellt Ihnen einige einfache Fragen und erstellt dann anhand Ihrer Antworten eine angepasste Checkliste mit Anweisungen zum Konfigurieren der Hybridbereitstellung. Es wird dringend empfohlen, den Bereitstellungs-Assistenten zum Konfigurieren einer Hybridbereitstellung zu verwenden. > Für Organisationen, die kein Upgrade auf Exchange 2013 CU5-Server durchführen bzw. keinen solchen hinzufügen möchten; Exchange 2013 SP1-Organisationen können den Austausch von Frei/Beschäftigt-Informationen zwischen ihren lokalen und Exchange Online-Organisationen konfigurieren. Wenn Sie dieses Feature für die Hybridbereitstellung konfigurieren möchten, lesen Sie [Konfigurieren von Features der Exchange-Hybridbereitstellung mit Office 365, betrieben von 21Vianet](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d). 
@@ -170,7 +170,7 @@ Weitere Informationen zum Konfigurieren einer Hybridbereitstellung mit Office 36
 |||  
 |---|---|
 |Koexistenz und Freigabe von Frei-/Beschäftigt-Informationen|Die Freigabe von Frei/Beschäftigt-Informationen des Kalenders zwischen zwei oder mehr lokalen Exchange-Organisationen oder zwischen zwei 21Vianet Office 365-Mandanten wird nicht unterstützt. Dieses Feature wird in Kürze verfügbar sein! | 
-|Kalenderfreigabe|Exchange 2013 SP1 und höher unterstützt die manuelle Konfiguration der Internet-Kalenderfreigabe mit anderen lokalen Exchange- oder Exchange Online-Organisationen. Weitere Details zum manuellen Konfigurieren dieser Funktion finden Sie unter [Aktivieren der Veröffentlichung von Kalenderinformationen im Internet](https://go.microsoft.com/fwlink/?LinkId=506769). | 
+|Kalenderfreigabe|Exchange 2013 SP1 und höher unterstützt die manuelle Konfiguration der Internet-Kalenderfreigabe mit anderen lokalen Exchange- oder Exchange Online-Organisationen. Weitere Details zum manuellen Konfigurieren dieser Funktion finden Sie unter [Aktivieren der Veröffentlichung von Kalenderinformationen im Internet](/exchange/enable-internet-calendar-publishing-exchange-2013-help). | 
 Teilen von Exchange-Kontaktdaten auf mobilen Apple-Geräten mit Apple iCloud |Diese Einstellung/dieses Feature ist standardmäßig aktiviert. Administratoren sollten dieses Feature deaktivieren, um zu verhindern, dass Benutzer Exchange-Daten außerhalb Ihrer Organisation freigeben. |
 |Exchange Hosted E-Mail-Verschlüsselung  |Nicht verfügbar.  |
 |Office 365-Nachrichtenverschlüsselung  |In Kürze verfügbar.  |
@@ -187,7 +187,7 @@ Teilen von Exchange-Kontaktdaten auf mobilen Apple-Geräten mit Apple iCloud |Di
 
 |||
 |:-----|:-----|
-|Konto verwalten (vom Office-Client aus)  <br/> |Dieses und andere ähnliche Features, die auf Ihr Office 365-Portal zugreifen sollen, verweisen derzeit auf das weltweite Office 365-Portal, und Sie können sich nicht mit Ihrem Office 365-Konto anmelden, das von 21Vianet betrieben wird. Hierbei handelt es sich um ein bekanntes Problem, an dessen Behebung gearbeitet wird. In der Zwischenzeit können Sie die URL https://portal.partner.microsoftonline.cn/ verwenden, um sich bei Ihrem Konto anzumelden und die Einstellungen von dort aus zu verwalten. Weitere Informationen finden Sie unter [Manage Your Microsoft 365 apps for Enterprise Account for Office 365 operated by 21Vianet](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8).  <br/> |
+|Konto verwalten (vom Office-Client aus)  <br/> |Dieses und andere ähnliche Features, die auf Ihr Office 365-Portal zugreifen sollen, verweisen derzeit auf das weltweite Office 365-Portal, und Sie können sich nicht mit Ihrem Office 365-Konto anmelden, das von 21Vianet betrieben wird. Hierbei handelt es sich um ein bekanntes Problem, an dessen Behebung gearbeitet wird. In der Zwischenzeit können Sie die URL https://portal.partner.microsoftonline.cn/ verwenden, um sich bei Ihrem Konto anzumelden und die Einstellungen von dort aus zu verwalten. Weitere Informationen finden Sie unter [Manage your Microsoft 365 Apps for Enterprise account for Office 365 operated by 21Vianet](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8).  <br/> |
    
 ## <a name="onenote"></a>OneNote
 
@@ -211,7 +211,7 @@ Teilen von Exchange-Kontaktdaten auf mobilen Apple-Geräten mit Apple iCloud |Di
 
 |||
 |:-----|:-----|
-|Domain-Provider zur Unterstützung von Skype for Business  <br/> |Sie müssen Ihre Domäne bei einem chinesischen Domänenanbieter registrieren, der SRV-Einträge unterstützt. Weitere Informationen zum Registrieren von Domänen finden Sie unter [Finden Ihrer Domänenregistrierungsstelle oder Ihres DNS-Hostinganbieters](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> |
+|Domain-Provider zur Unterstützung von Skype for Business  <br/> |Sie müssen Ihre Domäne bei einem chinesischen Domänenanbieter registrieren, der SRV-Einträge unterstützt. Weitere Informationen zum Registrieren von Domänen finden Sie unter [Finden Ihrer Domänenregistrierungsstelle oder Ihres DNS-Hostinganbieters](../get-help-with-domains/find-your-domain-registrar.md).  <br/> |
 |Einwahlkonferenzen (die Ermöglichung der telefonischen Teilnahme an Besprechungen für Benutzer, die keinen Zugang zu einem Computer haben)  <br/> |Möglicherweise werden Optionen für Einwahlkonferenzen und Anbieter in Skype for Business oder im Skype for Business Admin Center angezeigt, diese Features stehen aber noch nicht zur Verfügung. Sie werden jedoch in Kürze verfügbar sein.  <br/> |
 |Hilfe für Skype for Business-Desktops  <br/> |Hilfe für Skype for Business-Desktops finden Sie [hier](https://support.microsoft.com/office/6ae5853c-f0fd-4710-aecf-f46def8377ad). Allerdings ist die Desktop-Hilfe nicht über das Produkt verfügbar, es sei denn, Sie verwenden Office Klick-und-Los.  <br/> |
 |Lync 2010  <br/> |Nicht verfügbar.  <br/> |
@@ -233,5 +233,3 @@ Die DSGVO gewährt Personen (auch als „betroffene Personen“ bezeichnet) best
 - Vom System generierte Protokolle für Microsoft-Dienste, die von 21Vianet betrieben werden, können von Mandantenadministratoren mithilfe des Datenprotokollexports exportiert werden.
     
 Ausführliche Informationen und Anweisungen finden Sie unter [Anträge betroffener Personen im Rahmen der DSGVO](https://www.trustcenter.cn/privacy/gdpr-office365.mdl).
-  
-

@@ -1,5 +1,5 @@
 ---
-title: Fehler bei Deaktivierung eines Kontos in Outlook im Internet?
+title: Abrufen eines kontobehinderten Fehlers in Outlook im Web?
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -16,16 +16,16 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: Hier erfahren Sie, wie Sie nicht lizenzierten Benutzern eine Lizenz hinzufügen, um den Fehler "Konto deaktiviert" zu beheben.
-ms.openlocfilehash: b05b19ceb3c4b173164d37f780fd558bdd2d8040
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+description: Erfahren Sie, wie Sie nicht lizenzierten Benutzern eine Lizenz hinzufügen, um den Fehler "Konto deaktiviert" zu beheben.
+ms.openlocfilehash: f44ab0811fa3be0642ca662da7fae8cb1d967369
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804867"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914942"
 ---
-# <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a>Fehler beim Einrichten eines Kontos in Outlook im Internet
+# <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a>Abrufen eines kontobehinderten Fehlers in Outlook im Web
 
-Wenn Sie die Fehlermeldung erhalten, mit der **Ihr Konto deaktiviert wurde** `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException` , wenn Sie versuchen, Outlook im Internet zu öffnen (früher bekannt als Outlook Web App), hat Ihr Administrator möglicherweise Ihren Zugriff auf Outlook im Internet deaktiviert.
+Wenn Sie den  Fehler erhalten Ihr Konto wurde deaktiviert, wenn Sie versuchen, Outlook im Web zu öffnen (früher als Outlook Web App bezeichnet), hat Ihr Administrator möglicherweise Den Zugriff auf Outlook im Web `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException` deaktiviert.
 
-Der Administrator kann diesen Fehler beheben, indem Sie die Schritte im Thema [Aktivieren oder deaktivieren Outlook Web App für ein Postfach](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)ausführen.
+Ihr Administrator kann diesen Fehler beheben, indem Er die Schritte im Thema Aktivieren oder Deaktivieren von [Outlook Web App für ein Postfach ausführen.](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)

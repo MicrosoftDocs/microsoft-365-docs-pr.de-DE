@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Erfahren Sie, wie Sie mehr als eine E-Mail-Adresse, genannt E-Mail-Alias, mit Ihrem Microsoft 365 Business-Konto verknüpfen können. '
-ms.openlocfilehash: 3c97640f4bb16876ec028a1af2b361a21a0decab
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
-ms.translationtype: HT
+ms.openlocfilehash: 590782f7b22b1d26abef83f884d45da567f0425c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126405"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915950"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Hinzufügen eines weiteren E-Mail-Alias für einen Benutzer
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
   
@@ -72,7 +72,7 @@ Sie benötigen [Administrator-Berechtigungen](../add-users/about-admin-roles.md)
     > Wenn Sie Ihr Abonnement bei GoDaddy oder einem anderen Partner gekauft haben und den neuen Alias als primäre E-Mail-Adresse festlegen möchten, müssen Sie zur Verwaltungskonsole "GoDaddy/partner" wechseln. 
   
     > [!TIP]
-    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen dazu, wie Sie der Liste einen weiteren Domänenname hinzufügen, finden Sie unter [Hinzufügen einer Domäne zu Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen dazu, wie Sie der Liste einen weiteren Domänenname hinzufügen, finden Sie unter [Hinzufügen einer Domäne zu Microsoft 365](../setup/add-domain.md). 
   
      
 5. Wenn Sie fertig sind, wählen Sie **Änderungen speichern** aus.
@@ -104,7 +104,7 @@ Sie benötigen [Administrator-Berechtigungen](../add-users/about-admin-roles.md)
     > Wenn Sie Ihr Abonnement bei GoDaddy oder einem anderen Partner gekauft haben und den neuen Alias als primäre E-Mail-Adresse festlegen möchten, müssen Sie zur Verwaltungskonsole "GoDaddy/partner" wechseln. 
   
     > [!TIP]
-    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen dazu, wie Sie der Liste einen weiteren Domänenname hinzufügen, finden Sie unter [Hinzufügen einer Domäne zu Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen dazu, wie Sie der Liste einen weiteren Domänenname hinzufügen, finden Sie unter [Hinzufügen einer Domäne zu Microsoft 365](../setup/add-domain.md). 
 
 5. Wenn Sie fertig sind, wählen Sie **Speichern** aus.
 
@@ -135,7 +135,7 @@ Sie benötigen [Administrator-Berechtigungen](../add-users/about-admin-roles.md)
     > Wenn Sie Ihr Abonnement bei GoDaddy oder einem anderen Partner gekauft haben und den neuen Alias als primäre E-Mail-Adresse festlegen möchten, müssen Sie zur Verwaltungskonsole "GoDaddy/partner" wechseln. 
   
     > [!TIP]
-    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen dazu, wie Sie der Liste einen weiteren Domänenname hinzufügen, finden Sie unter [Hinzufügen einer Domäne zu Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > Der E-Mail-Alias muss mit einer Domäne aus der Dropdownliste enden. Informationen dazu, wie Sie der Liste einen weiteren Domänenname hinzufügen, finden Sie unter [Hinzufügen einer Domäne zu Microsoft 365](../setup/add-domain.md). 
 
 5. Wenn Sie fertig sind, wählen Sie **Speichern** aus.
 
@@ -164,5 +164,3 @@ Wenn Sie Ihr Abonnement bei GoDaddy oder einem anderen Partner gekauft haben und
 [Senden von E-Mail über eine andere Adresse](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e)
 
 [Ändern eines Benutzernamens und einer E-Mail-Adresse](../add-users/change-a-user-name-and-email-address.md)
-  
-

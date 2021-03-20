@@ -1,5 +1,5 @@
 ---
-title: Erstellen von DNS-Einträgen für Office 365 beim Verwalten von DNS-Einträgen
+title: Erstellen von DNS-Einträgen für Office 365 beim Verwalten Ihrer DNS-Einträge
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -19,26 +19,24 @@ search.appverid:
 - GEA150
 ms.assetid: 0669bf14-414d-4f51-8231-6b710ce7980b
 ROBOTS: NOINDEX
-description: 'Informationen zum Erstellen von DNS-Einträgen für Office 365, die von 21Vianet ausgeführt werden, wenn Ihre DNS-Einträge verwaltet werden. '
+description: 'Erfahren Sie, wie Sie DNS-Einträge für Office 365, betrieben von 21Vianet, erstellen, wenn Sie Ihre DNS-Einträge verwalten. '
 monikerRange: o365-21vianet
-ms.openlocfilehash: 8f252ba47fbd72f5a628a23567addcc84604fb3c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1eaa2bcc7263eaa12e53131246abd591006b0536
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644819"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914354"
 ---
-# <a name="create-dns-records-for-office-365-when-you-manage-your-dns-records"></a>Erstellen von DNS-Einträgen für Office 365 beim Verwalten von DNS-Einträgen
+# <a name="create-dns-records-for-office-365-when-you-manage-your-dns-records"></a>Erstellen von DNS-Einträgen für Office 365 beim Verwalten Ihrer DNS-Einträge
 
-Ausführliche Anweisungen zum Erstellen von DNS-Einträgen für Office 365, die von 21Vianet betrieben werden, einschließlich des MX-Eintrags für das e-Mail-Routing, finden Sie unter [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für Office 365](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). 
+Ausführliche Anweisungen zum Erstellen von DNS-Einträgen für Office 365, betrieben von 21Vianet, einschließlich des für das E-Mail-Routing erforderlichen MX-Eintrags, finden Sie unter [Create DNS records at any DNS hosting provider for Office 365](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). 
   
   
 Weitere Optionen und einige Dinge, die Sie beachten sollten:
       
--  Wenn Sie den DNS-Hostinganbieter oder die Domänenregistrierungsstelle für Ihre Domäne nicht kennen, lesen Sie [Finden Ihrer Domänenregistrierungsstelle oder Ihres DNS-Hostinganbieters](../get-help-with-domains/find-your-domain-registrar.md). Beschreibungen der DNS-Einträge finden Sie unter [DNS Basics](../get-help-with-domains/dns-basics.md).
+-  Wenn Sie den DNS-Hostinganbieter oder die Domänenregistrierungsstelle für Ihre Domäne nicht kennen, lesen Sie [Finden Ihrer Domänenregistrierungsstelle oder Ihres DNS-Hostinganbieters](../get-help-with-domains/find-your-domain-registrar.md). Beschreibungen der Funktionen der DNS-Einträge finden Sie unter [DNS-Grundlagen](../get-help-with-domains/dns-basics.md).
     
--  Einige DNS-Hostinganbieter können nicht alle erforderlichen Datensatztypen erstellen, wodurch Diensteinschränkungen verursacht werden, [Wenn Ihr Hostinganbieter keine Unterstützung für SRV, CNAME, txt oder Umleitung bietet](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). Wenn Ihr Anbieter keine SRV-, txt-oder CNAME-Einträge unterstützt, wird empfohlen, dass Sie Ihre Domäne an einen Anbieter [übertragen](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name) [, der alle erforderlichen Datensatztypen unterstützt](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
+-  Bei einigen #A0 können Sie nicht alle erforderlichen Datensatztypen erstellen, was zu Diensteinschränkungen führt, wenn Ihr Hostinganbieter [SRV, CNAME, TXT](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)oder Umleitung nicht unterstützt. Wenn Ihr Anbieter keine SRV-, TXT- oder #A0 [](../get-help-with-domains/buy-a-domain-name.md) unterstützt, wird empfohlen, ihre Domäne an einen Anbieter zu übertragen, der alle erforderlichen [Datensatztypen unterstützt.](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77) 
     
-- Um zu sehen, welche DNS-Einträge erforderlich sind, und die für jeden Datensatz zu verwendenden Werte finden, einschließlich des MX-Eintrags für e-Mail, finden Sie unter [Sammeln der erforderlichen Informationen zum Erstellen Office 365 DNS-Einträge](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records). Beschreibungen der DNS-Einträge finden Sie unter [DNS Basics](../get-help-with-domains/dns-basics.md).
-    
-
+- Informationen dazu, welche DNS-Einträge erforderlich sind und welche Werte für jeden Eintrag verwendet werden sollen, einschließlich des MX-Eintrags für E-Mails, finden Sie unter [Gather the information you need to create Office 365 DNS records](../get-help-with-domains/information-for-dns-records.md). Beschreibungen der Funktionen der DNS-Einträge finden Sie unter [DNS-Grundlagen](../get-help-with-domains/dns-basics.md).

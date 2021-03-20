@@ -1,5 +1,5 @@
 ---
-title: Verwalten der Zustimmung von Benutzern zu apps in Microsoft 365
+title: Verwalten der Zustimmung des Benutzers zu Apps in Microsoft 365
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -19,34 +19,34 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: Erfahren Sie mehr über die Benutzer Zustimmung zu apps und wie Sie Sie aktivieren, damit Drittanbieter-apps auf die Microsoft 365-Informationen von Benutzern zugreifen können.
-ms.openlocfilehash: 955ae9e58c14dbb8012a440ef6c336f44b0760a4
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+description: Erfahren Sie mehr über die Zustimmung des Benutzers zu Apps und darüber, wie Sie sie aktivieren, damit Apps von Drittanbietern auf microsoft 365-Informationen von Benutzern zugreifen können.
+ms.openlocfilehash: 1f6f08161d6dd85964f07ec4d48f9f2cc23a1ead
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999571"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914558"
 ---
-# <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Verwalten der Zustimmung von Benutzern zu apps in Microsoft 365
+# <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Verwalten der Zustimmung des Benutzers zu Apps in Microsoft 365
 
-Mit dieser Einstellung wird gesteuert, ob Benutzer diese Zustimmung für apps erteilen können, die OpenID Connect und OAuth 2,0 für die Anmeldung und Anforderungen für den Zugriff auf Daten verwenden. Eine APP kann in ihrer eigenen Organisation erstellt werden oder aus einer anderen Office 365 Organisation oder einem Drittanbieter stammen.
+Diese Einstellung steuert, ob Benutzer apps, die OpenID Connect und OAuth 2.0 für die Anmeldung und Anforderungen zum Zugriff auf Daten verwenden, diese Zustimmung erteilen können. Eine App kann aus Ihrer eigenen Organisation oder aus einer anderen Office 365-Organisation oder einem Drittanbieter erstellt werden.
 
-Wenn Sie diese Einstellung aktivieren, werden die Benutzer von diesen apps aufgefordert, die Berechtigungen für den Zugriff auf die Daten Ihrer Organisation aufzurufen, und die Benutzer können entscheiden, ob Sie Sie zulassen möchten. Wenn Sie diese Einstellung deaktivieren, müssen Administratoren diesen apps zustimmen, bevor Sie von Benutzern verwendet werden können. In diesem Fall sollten Sie einen Administrator-Genehmigungsworkflow im Azure-Portal einrichten, damit Benutzer eine Anforderung zur Genehmigung des Administrators senden können, um eine blockierte APP zu verwenden.
+Wenn Sie diese Einstellung aktivieren, bitten diese Apps Benutzer um Die Berechtigung für den Zugriff auf die Daten Ihrer Organisation, und Benutzer können auswählen, ob sie zulässig sind. Wenn Sie diese Einstellung deaktivieren, müssen Administratoren diesen Apps zustimmen, bevor Benutzer sie verwenden können. In diesem Fall sollten Sie einen Administrator-Zustimmungsworkflow im Azure-Portal einrichten, damit Benutzer eine Administratorgenehmigungsanforderung senden können, um blockierte Apps zu verwenden.
 
 Ein Benutzer kann nur Apps, deren Besitzer er ist, Zugriff auf seine Office 365-Informationen gewähren. Sie können einer App keinen Zugriff auf die Informationen anderer Benutzer gewähren.
 
-## <a name="turning-user-consent-on-or-off"></a>Aktivieren oder Deaktivieren der Benutzer Zustimmung
+## <a name="turning-user-consent-on-or-off"></a>Aktivieren oder Deaktivieren der Zustimmung des Benutzers
 <a name="__toc379982114"> </a>
 
-Hier erfahren Sie, wie Sie die Zustimmung von Benutzern zu Apps aktivieren oder deaktivieren.
+Hier erfahren Sie, wie Sie die Zustimmung des Benutzers zu Apps aktivieren oder deaktivieren.
 
-1. Wechseln Sie im Admin Center zur Seite **Einstellungen** für \> **Organisationseinstellungen** für  >  [Dienste](https://go.microsoft.com/fwlink/p/?linkid=2053743) , und wählen Sie dann **Benutzer Zustimmung für apps** aus.
+1. Wechseln Sie im Admin  Center zur Seite Einstellungen Organisationseinstellungen Dienste, und wählen Sie \>   >  [](https://go.microsoft.com/fwlink/p/?linkid=2053743) **dann Benutzer-Zustimmung zu Apps aus.**
 
-2. Wählen Sie auf der Seite **Benutzer Zustimmung für apps** die Option aus, um die Benutzer Zustimmung ein-oder auszuschalten.
+2. Wählen Sie **auf der** Seite Benutzer-Zustimmung zu Apps die Option aus, um die Zustimmung des Benutzers ein- oder auszuschalten.
 
 ## <a name="more-info"></a>Weitere Informationen
 <a name="__toc379982114"> </a>
 
-Informationen zum Konfigurieren ihrer Zustimmungs Einstellungen in Azure Active Directory finden Sie unter [Konfigurieren des Administrator-Genehmigungsworkflows](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow).
+Informationen zum Konfigurieren Ihrer Zustimmungseinstellungen in Azure Active Directory finden Sie unter [Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow).
 
-Informationen zum Verwalten der Benutzer Zustimmung zu apps finden Sie unter [Verwalten der Zustimmung zu Anwendungen und bewerten von Zustimmungs Anforderungen](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests).
+Weitere Informationen zum Verwalten der Zustimmung des Benutzers zu Apps finden Sie unter [Managing consent to applications und evaluating consent requests](/azure/active-directory/manage-apps/manage-consent-requests).

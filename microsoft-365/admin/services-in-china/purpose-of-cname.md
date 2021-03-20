@@ -18,20 +18,20 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NOINDEX
-description: Erfahren Sie mehr über den CNAME-Eintrag "MSOID" in Office 365, der Sie zum besten Server für Authentifizierungsprozesse leitet, sodass Sie eine schnellere Antwort erhalten.
+description: 'Erfahren Sie mehr über den #A0 "MSOID" in Office 365, der Sie zum besten Server für Authentifizierungsprozesse leitet, damit Sie schneller reagieren können.'
 monikerRange: o365-21vianet
-ms.openlocfilehash: aea04391768993c40978d94b50817244cd77405c
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: a1d587abc9db03c9a1f7c5f66711fde3648a0e96
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655484"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914306"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>Was ist der Zweck des CNAME-Eintrags für MSOID in Office 365?
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
 > [!NOTE]
-> Das folgende gilt nur für * * Office 365 betrieben von 21Vianet.
+> Das Folgende gilt nur für **Office 365, betrieben von 21Vianet.
   
 [] Möglicherweise wundern Sie sich, warum Sie den CNAME-Eintrag "MSOID" in Office 365 hinzufügen müssen. Dieser Eintrag muss für alle benutzerdefinierten Domänen hinzugefügt werden, ganz gleich, welches Abonnement Sie verwenden. Warum benötigen Sie diesen Eintrag? Zur Beantwortung dieser Frage müssen wir ein wenig in die Technik einsteigen, aber es geht im Wesentlichen darum, bei bestimmten Authentifizierungsprozessen die Umleitung auf den besten Server zu erreichen, damit Sie schnellere Antworten erhalten.
   
@@ -39,10 +39,8 @@ Zur Technik: Wenn Sie eine Clientanwendung ausführen, die mit Office 365 zusamm
   
 Wenn dieser CNAME-Eintrag für Ihre Domäne fehlt, verwenden die Anwendungen einen standardmäßigen Authentifizierungsendpunkt in den USA, was bedeutet, dass die Authentifizierung ggf. langsamer erfolgt. Wenn dieser CNAME-Eintrag nicht ordnungsgemäß konfiguriert ist, wenn es beispielsweise einen Tippfehler im Feld **Verweist auf die Adresse** gibt, sind diese Anwendungen nicht in der Lage, eine Authentifizierung durchzuführen.
   
- **Wenn Office 365 die DNS-Einträge Ihrer Domäne verwaltet,** Office 365 richtet diesen CNAME-Eintrag für Sie ein. 
+ **Wenn Office 365 die DNS-Einträge Ihrer Domäne verwaltet,** Office 365 richtet diesen #A0 für Sie ein. 
   
- **Wenn Sie DNS-Einträge für Ihre Domäne auf Ihrem DNS-Host verwalten,** erstellen Sie diesen Datensatz selbst, indem Sie [die Anweisungen für den DNS-Host befolgen](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+ **Wenn Sie DNS-Einträge** für Ihre Domäne auf Ihrem DNS-Host verwalten, erstellen Sie diesen Eintrag selbst, indem Sie die Anweisungen [für Ihren DNS-Host befolgen.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
   
-Wenn Sie eine Office 365-Bereitstellung planen und mehr über alle DNS-Einträge erfahren möchten, die Sie möglicherweise hinzufügen oder aktualisieren müssen, lesen Sie diese in [Bezug auf: externe Domänennamen-System Einträge für Office 365](https://go.microsoft.com/fwlink/?LinkId=579013).
-  
-
+Wenn Sie eine Office 365-Bereitstellung planen und mehr über alle DNS-Einträge erfahren möchten, die Sie möglicherweise hinzufügen oder aktualisieren müssen, lesen Sie dazu in [Reference: External Domain Name System records for Office 365](../../enterprise/external-domain-name-system-records.md).

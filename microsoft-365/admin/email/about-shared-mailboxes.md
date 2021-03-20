@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Freigegebene Postfächer werden verwendet, wenn mehrere Personen Zugriff auf dasselbe Postfach benötigen. Hier erfahren Sie, was Sie wissen müssen, bevor Sie ein freigegebenes Postfach erstellen.
-ms.openlocfilehash: f5d46af5abdd528ce3db817dbabce015ed5abade
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
-ms.translationtype: HT
+ms.openlocfilehash: eb1947b5baffd97f067bfe4e0c6d71d5c1329d65
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094721"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915986"
 ---
 # <a name="about-shared-mailboxes"></a>Info zu freigegebenen Postfächern
 
@@ -37,7 +37,7 @@ Benutzer, die über Berechtigungen für das Gruppenpostfach verfügen, können N
 
 Bevor Sie [ein freigegebenes Postfach erstellen](create-a-shared-mailbox.md) müssen Sie einige Dinge wissen:
 
-- **Lizenzen:** Ihr freigegebenes Postfach kann bis zu 50 GB Daten speichern, ohne dass Sie ihm eine Lizenz zuweisen müssen. Danach müssen Sie dem Postfach eine Lizenz zuweisen, um mehr Daten speichern zu können. Weiter Details über das Lizenzieren von freigegebenen Postfächern finden Sie unter [Exchange Online-Einschränkungen](https://technet.microsoft.com/library/exchange-online-limits.aspx#StorageLimits). Wenn ein freigegebenes Postfach die Speichergrenze erreicht, können Sie E-Mails noch eine Zeitlang empfangen, aber keine neuen E-Mails mehr senden. Danach wird auch der Empfang von E-Mails beendet. Absender für das Postfach erhalten einen Unzustellbarkeitsbericht.
+- **Lizenzen:** Ihr freigegebenes Postfach kann bis zu 50 GB Daten speichern, ohne dass Sie ihm eine Lizenz zuweisen müssen. Danach müssen Sie dem Postfach eine Lizenz zuweisen, um mehr Daten speichern zu können. Weiter Details über das Lizenzieren von freigegebenen Postfächern finden Sie unter [Exchange Online-Einschränkungen](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#StorageLimits). Wenn ein freigegebenes Postfach die Speichergrenze erreicht, können Sie E-Mails noch eine Zeitlang empfangen, aber keine neuen E-Mails mehr senden. Danach wird auch der Empfang von E-Mails beendet. Absender für das Postfach erhalten einen Unzustellbarkeitsbericht.
 
 - **Benutzerberechtigungen:** Sie müssen den Benutzern Berechtigungen (Mitgliedschaft) für das freigegebene Postfach erteilen. Nur Personen innerhalb Ihrer Organisation können ein freigegebenes Postfach nutzen.
 

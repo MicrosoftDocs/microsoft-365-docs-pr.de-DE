@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Erfahren Sie mehr über Domänen und die zugehörigen DNS-Einträge, um Domänen verwalten zu können.
-ms.openlocfilehash: 093641a5c80c70264c1d64ee27cb7621e5f7b2cb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f8d8171e306a0206facec1621bf2b1a9f8085757
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926414"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915662"
 ---
 # <a name="dns-basics"></a>Grundlagen von DNS
 
@@ -69,7 +69,7 @@ Domänennamen werden in URLs und E-Mail-Adressen verwendet und weisen unterschie
     
 Warum wird eine Domäne auf dritter Ebene verwendet? Möglicherweise möchten Sie für die Marketingabteilung oder einen Blog unterschiedliche Domänennamen verwenden, z. B. blog.contoso.com. Normalerweise fügen Sie eine Domäne auf zweiter Ebene, beispielsweise "contoso.com", für die Verwendung mit Microsoft hinzu, Sie können auf Wunsch aber auch Domänen auf dritter Ebene verwenden.
   
-Weitere Informationen zu den von Domänen gebotenen Möglichkeiten beim jeweiligen Angebotstyp finden Sie unter [Beschreibung der Microsoft 365- und Office 365-Plattformdienste](https://go.microsoft.com/fwlink/?LinkId=402693).
+Weitere Informationen zu den von Domänen gebotenen Möglichkeiten beim jeweiligen Angebotstyp finden Sie unter [Beschreibung der Microsoft 365- und Office 365-Plattformdienste](/office365/servicedescriptions/office-365-platform-service-description/domains).
   
 ## <a name="understand-dns-record-types"></a>Grundlegendes zu DNS-Eintragstypen
 
@@ -150,14 +150,14 @@ Warum befindet sich die Zonendatei Ihrer Domäne möglicherweise an einer andere
 ## <a name="why-add-a-domain-in-microsoft-365"></a>Warum muss ich in Microsoft 365 eine Domäne hinzufügen?
 
 
-Indem Sie eine benutzerdefinierte Domäne, z. B. "fourthcoffee.com" zu Microsoft 365 hinzufügen, können Sie eine kürzere, vertrautere E-Mail-Adresse und Benutzer-ID mit dem Dienst verwenden. Wenn Sie sich für ein Microsoft 365-Konto registrieren, [erhalten Sie eine Domäne, die Sie verwenden können](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). Diese enthält jedoch "onmicrosoft.com" im Namen. Viele Benutzer möchten lieber die Domäne ihrer Organisation oder ihres Unternehmens hinzufügen, wenn sie die Verwendung von Microsoft 365 für E-Mail planen. 
+Indem Sie eine benutzerdefinierte Domäne, z. B. "fourthcoffee.com" zu Microsoft 365 hinzufügen, können Sie eine kürzere, vertrautere E-Mail-Adresse und Benutzer-ID mit dem Dienst verwenden. Wenn Sie sich für ein Microsoft 365-Konto registrieren, [erhalten Sie eine Domäne, die Sie verwenden können](../setup/domains-faq.yml). Diese enthält jedoch "onmicrosoft.com" im Namen. Viele Benutzer möchten lieber die Domäne ihrer Organisation oder ihres Unternehmens hinzufügen, wenn sie die Verwendung von Microsoft 365 für E-Mail planen. 
   
 > [!NOTE]
 > Wenn Sie nur Microsoft-Apps wie Outlook oder Word herunterladen und verwenden möchten, müssen Sie keine Domäne hinzufügen: [Installieren von Office auf Ihrem PC oder Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658). 
   
 Sie können Ihren Domänennamen in Microsoft 365 mit Ihrer E-Mail-, öffentlichen Website- und Sofortnachrichtenadresse verwenden.
   
-- **E-Mail:** Sie können Ihre E-Mail mithilfe Ihres Domänennamens anpassen, sodass Sie eine kürzere, leichter zu merkende Adresse als die [ursprüngliche "onmicrosoft.com"-E-Mail-Adresse](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq), die Ihrem Konto zugeordnet ist, verwenden können. Also könnte anstelle von "joe@contoso.onmicrosoft.com" die E-Mail-Adresse (die auch das Firmenkonto darstellt, das Sie für die Anmeldung bei Microsoft 365 verwenden) "joe@contoso.com" lauten. 
+- **E-Mail:** Sie können Ihre E-Mail mithilfe Ihres Domänennamens anpassen, sodass Sie eine kürzere, leichter zu merkende Adresse als die [ursprüngliche "onmicrosoft.com"-E-Mail-Adresse](../setup/domains-faq.yml), die Ihrem Konto zugeordnet ist, verwenden können. Also könnte anstelle von "joe@contoso.onmicrosoft.com" die E-Mail-Adresse (die auch das Firmenkonto darstellt, das Sie für die Anmeldung bei Microsoft 365 verwenden) "joe@contoso.com" lauten. 
     
 - **Website:** Wenn Sie über ein Microsoft 365-Abonnement verfügen, das eine öffentliche SharePoint Online-Website umfasst (nicht mehr erhältlich), weist Ihre öffentliche Website eine ursprüngliche Adresse wie „contoso-public.sharepoint.com“ auf. Wenn Sie Ihre Website für Ihr Unternehmen einrichten, können Sie einen benutzerdefinierten Domänennamen verwenden, um die Websiteadresse umzubenennen, etwa in "www.contoso.com". 
     
@@ -169,14 +169,14 @@ Sie können Ihren Domänennamen in Microsoft 365 mit Ihrer E-Mail-, öffentliche
 ## <a name="why-add-a-domain-in-microsoft-365"></a>Warum muss ich in Microsoft 365 eine Domäne hinzufügen?
 
 
-Indem Sie eine benutzerdefinierte Domäne, z. B. "fourthcoffee.com" zu Microsoft 365 hinzufügen, können Sie eine kürzere, vertrautere E-Mail-Adresse und Benutzer-ID mit dem Dienst verwenden. Wenn Sie sich für ein Microsoft 365-Konto registrieren, [erhalten Sie eine Domäne, die Sie verwenden können](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). Diese enthält jedoch "onmicrosoft.com" im Namen. Viele Benutzer möchten lieber die Domäne ihrer Organisation oder ihres Unternehmens hinzufügen, wenn sie die Verwendung von Microsoft 365 für E-Mail planen. 
+Indem Sie eine benutzerdefinierte Domäne, z. B. "fourthcoffee.com" zu Microsoft 365 hinzufügen, können Sie eine kürzere, vertrautere E-Mail-Adresse und Benutzer-ID mit dem Dienst verwenden. Wenn Sie sich für ein Microsoft 365-Konto registrieren, [erhalten Sie eine Domäne, die Sie verwenden können](../setup/domains-faq.yml). Diese enthält jedoch "onmicrosoft.com" im Namen. Viele Benutzer möchten lieber die Domäne ihrer Organisation oder ihres Unternehmens hinzufügen, wenn sie die Verwendung von Microsoft 365 für E-Mail planen. 
   
 > [!NOTE]
 > Wenn Sie nur Microsoft 365-Apps wie Outlook oder Word herunterladen und verwenden möchten, müssen Sie keine Domäne hinzufügen: [Installieren von Office auf Ihrem PC oder Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658). 
   
 Sie können Ihren Domänennamen in Microsoft 365 mit Ihrer E-Mail-, öffentlichen Website- und Sofortnachrichtenadresse verwenden.
   
-- **E-Mail:** Sie können Ihre E-Mail mithilfe Ihres Domänennamens anpassen, sodass Sie eine kürzere, leichter zu merkende Adresse als die [ursprüngliche "onmicrosoft.com"-E-Mail-Adresse](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq), die Ihrem Konto zugeordnet ist, verwenden können. Also könnte anstelle von "joe@contoso.onmicrosoft.com" die E-Mail-Adresse (die auch das Firmenkonto darstellt, das Sie für die Anmeldung bei Microsoft 365 verwenden) "joe@contoso.com" lauten. 
+- **E-Mail:** Sie können Ihre E-Mail mithilfe Ihres Domänennamens anpassen, sodass Sie eine kürzere, leichter zu merkende Adresse als die [ursprüngliche "onmicrosoft.com"-E-Mail-Adresse](../setup/domains-faq.yml), die Ihrem Konto zugeordnet ist, verwenden können. Also könnte anstelle von "joe@contoso.onmicrosoft.com" die E-Mail-Adresse (die auch das Firmenkonto darstellt, das Sie für die Anmeldung bei Microsoft 365 verwenden) "joe@contoso.com" lauten. 
     
 - **Website:** Wenn Sie über ein Abonnement verfügen, das eine öffentliche SharePoint Online-Website umfasst (nicht mehr erhältlich), weist Ihre öffentliche Website eine ursprüngliche Adresse wie „contoso-public.sharepoint.com“ auf. Wenn Sie Ihre Website für Ihr Unternehmen einrichten, können Sie einen benutzerdefinierten Domänennamen verwenden, um die Websiteadresse umzubenennen, etwa in "www.contoso.com". 
     
@@ -190,7 +190,7 @@ In Microsoft 365 wird eine Reihe von DNS-Einträgen benötigt, damit der Dienst 
   
 Sie können [eine Liste von Werten suchen](information-for-dns-records.md), um Ihre Domäne einzurichten. Diese befinden sich unmittelbar im Microsoft 365 Admin Center. 
   
-Oder, wenn Sie eine Bereitstellung planen, möchten Sie sich vielleicht eine Liste aller für Microsoft 365 erforderlichen DNS-Einträge mit Funktion und Beispielwerten anschauen. Lesen Sie die Informationen unter [Externe DNS-Einträge für Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records).
+Oder, wenn Sie eine Bereitstellung planen, möchten Sie sich vielleicht eine Liste aller für Microsoft 365 erforderlichen DNS-Einträge mit Funktion und Beispielwerten anschauen. Lesen Sie die Informationen unter [Externe DNS-Einträge für Microsoft 365](../../enterprise/external-domain-name-system-records.md).
   
 ## <a name="how-can-i-learn-more"></a>Wie kann ich mehr erfahren?
 

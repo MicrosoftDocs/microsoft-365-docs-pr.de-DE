@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: Erfahren Sie, wie Sie Ihre Benutzer ihre Kalender für Besprechungen und Termine mit externen Benutzern gemeinsam nutzen lassen können.
-ms.openlocfilehash: 8204dc025f843953af13cba58fa0cf2e4d76de45
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
-ms.translationtype: HT
+ms.openlocfilehash: 5fc80965ae277e66dfbf73de80618dec03d26759
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760054"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915050"
 ---
 # <a name="share-calendars-with-external-users"></a>Freigeben von Kalendern für externe Benutzer
 
@@ -36,7 +36,7 @@ Manchmal ist es notwendig, dass Ihre Benutzer Besprechungen mit Personen außerh
 Sie können die Kalenderfreigabe für alle Benutzer in Ihrer Organisation im Microsoft 365 Admin Center aktivieren. Sobald die Freigabe aktiviert ist, können Ihre Benutzer die Outlook Web App verwenden, um ihre Kalender für jeden innerhalb oder außerhalb der Organisation freizugeben. Personen innerhalb der Organisation können den gemeinsamen Kalender zusammen mit ihrem eigenen Kalender anzeigen. Personen außerhalb der Organisation wird eine URL gesendet, mit der sie den Kalender anzeigen können. Die Benutzer in Ihrer Organisation entscheiden, wann und wie viel sie freigeben möchten.
 
 > [!NOTE]
-> Wenn Sie Kalender für eine Organisation freigeben möchten, die Exchange Server 2013 (eine lokale Lösung) verwendet, muss der Exchange-Administrator eine Authentifizierungsbeziehung mit der Cloud einrichten. Dies wird als Partnerverbund bezeichnet und muss Mindestanforderungen an die Software erfüllen. Weitere Informationen finden Sie unter [Freigabe](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx).
+> Wenn Sie Kalender für eine Organisation freigeben möchten, die Exchange Server 2013 (eine lokale Lösung) verwendet, muss der Exchange-Administrator eine Authentifizierungsbeziehung mit der Cloud einrichten. Dies wird als Partnerverbund bezeichnet und muss Mindestanforderungen an die Software erfüllen. Weitere Informationen finden Sie unter [Freigabe](/exchange/sharing-exchange-2013-help).
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Aktivieren Sie die Kalenderfreigabe über das Microsoft 365 Admin Center
 

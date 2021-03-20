@@ -21,19 +21,19 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: 'Erfahren Sie, wie Sie Websites und Dateien für Personen außerhalb der Organisation freigeben. '
-ms.openlocfilehash: 3857cee3073950bbb9c130368abdd7df68d0da2a
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 585034580fd18d9584b4df3d0bec7026cf207f50
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114465"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915037"
 ---
 # <a name="share-sites-and-files-with-guest-users"></a>Websites und Dateien für Gastbenutzer freigeben
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ Um mit Personen außerhalb Ihrer Organisation zusammenzuarbeiten, können Sie ga
 
 Beachten Sie in Bezug auf die externe Freigabe von Inhalten folgende Aspekte:
   
-- Wem möchten Sie Zugriff auf Inhalte auf der Website und allen Unterwebsites gewähren, und welche Möglichkeiten sollen diese haben?
+- Wem möchten Sie Zugriff auf Inhalte auf der Website und auf unterwebsites gewähren, und was sollen sie tun können?
     
 - Welchen Personen in Ihrer Organisation möchten Sie die Berechtigung erteilen, Inhalte extern freizugeben? 
     
@@ -58,29 +58,27 @@ Die Beantwortung dieser Fragen erleichtert die strategische Planung der Freigabe
 |**Aktion**|**Zweck**|
 |:-----|:-----|
 |Hinzufügen eines Gasts zu einer Gruppe  <br/> |Stellen Sie einer Person außerhalb Ihrer Organisation kontinuierlichen Zugriff auf Informationen und Inhalte auf einer Teamwebsite zur Verfügung. Die Personen benötigen dieselben Funktionen wie ein vollwertiger Benutzer und die Möglichkeit, Inhalte zu erstellen, zu bearbeiten und anzuzeigen.  <br/> |
-|Freigeben eines Dokuments und Erfordern der Authentifizierung durch Gäste.  <br/> |Geben Sie bestimmten Personen außerhalb Ihrer Organisation sicheren Zugriff auf ein Dokument zur Überprüfung oder Zusammenarbeit, aber diese Personen benötigen keinen Zugriff auf andere Inhalte auf der Website.  <br/> |
-|Freigeben eines Dokuments, erfordert jedoch keine Authentifizierung.  <br/> |Sie müssen einen Link zu einem Dokument ohne sensible oder vertrauliche Inhalte für Personen außerhalb Ihrer Organisation freigeben, damit sie es anzeigen oder mit Feedback aktualisieren können. Diese Personen benötigen keinen Zugriff auf Inhalte auf der Website.  <br/> |
+|Freigeben eines Dokuments und Erfordern der Authentifizierung durch Gäste.  <br/> |Stellen Sie bestimmten Personen außerhalb Ihrer Organisation sicheren Zugriff auf ein Dokument zur Überprüfung oder Zusammenarbeit zur Verfügung, aber diese Personen benötigen keinen Zugriff auf andere Inhalte auf der Website.  <br/> |
+|Freigeben eines Dokuments, aber keine Authentifizierung erforderlich.  <br/> |Sie müssen einen Link zu einem Dokument ohne sensible oder vertrauliche Inhalte für Personen außerhalb Ihrer Organisation freigeben, damit sie es anzeigen oder mit Feedback aktualisieren können. Diese Personen benötigen keinen Zugriff auf Inhalte auf der Website.  <br/> |
    
 > [!IMPORTANT]
-> Wenn Sie die externe Freigabe deaktivieren, haben Personen außerhalb der Organisation, die derzeit Zugriff haben, keinen Zugriff mehr. Wenn Sie später die externe Freigabe wieder aktivieren, wird der Zugriff für diese Personen wiederhergestellt. Um einen Benutzer am Zugriff auf freigegebene Inhalte zu hindern, entfernen Sie ihn aus der [Microsoft 365-Gruppe,](/office365/admin/create-groups/add-or-remove-members-from-groups)entfernen Sie seine Berechtigungen von der Website, oder beenden Sie die Freigabe der Datei oder des Ordners für [sie.](https://support.microsoft.com/office/0a36470f-d7fe-40a0-bd74-0ac6c1e13323) 
+> Wenn Sie die externe Freigabe deaktivieren, haben Personen außerhalb der Organisation, die derzeit Zugriff haben, keinen Zugriff mehr. Wenn Sie später die externe Freigabe wieder aktivieren, wird der Zugriff für diese Personen wiederhergestellt. Um zu verhindern, dass benutzer auf freigegebene Inhalte zugreifen, entfernen Sie sie aus der [Microsoft 365-Gruppe,](/office365/admin/create-groups/add-or-remove-members-from-groups)entfernen Sie ihre Berechtigungen von der Website, oder beenden Sie die Freigabe der Datei oder des Ordners für [sie.](https://support.microsoft.com/office/0a36470f-d7fe-40a0-bd74-0ac6c1e13323) 
   
 ## <a name="enable-external-sharing-at-the-organization-level"></a>Aktivieren der externen Freigabe auf Organisationsebene
 
-Die externe Freigabe ist standardmäßig auf Organisationsebene aktiviert, jedoch nicht für alle neuen Websites. Weitere Informationen finden Sie in [der Übersicht über die externe Freigabe.](/sharepoint/external-sharing-overview) 
+Die externe Freigabe ist standardmäßig auf Organisationsebene aktiviert, jedoch nicht für alle neuen Websites. Weitere Informationen finden Sie unter [Übersicht über die externe Freigabe](/sharepoint/external-sharing-overview). 
 
 > [!NOTE]
->  Um die externe Freigabe für jede Website zu ermöglichen, müssen Sie sie auf Organisationsebene zulassen. 
+>  Um die externe Freigabe für jede Website zu ermöglichen, müssen Sie dies auf Organisationsebene zulassen. 
   
-1. Geben Sie [im Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339)"extern" in das Suchfeld auf der Startseite ein, und wählen Sie **"Externe Freigabe von Websites" aus.**
+1. Geben Sie [im Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339)im Suchfeld auf der Startseite "extern" ein, und wählen Sie externe Freigabe von Websites **aus.**
   
-2. Wählen Sie auf der seite, die geöffnet wird, aus, ob Benutzer nur für vorhandene Gäste, neue und vorhandene Gäste oder andere Personen freigeben können. 
+2. Wählen Sie auf der geöffneten Seite aus, ob Benutzer nur für vorhandene Gäste, neue und vorhandene Gäste oder für andere Personen freigeben können. 
     
-3. Klicken Sie auf **Speichern**.
+3. Wählen Sie **Speichern** aus.
     
 Nachdem Sie die externe Freigabe auf Organisationsebene aktiviert haben, können Sie Ihre Freigabeeinstellungen optimieren, um die externe Freigabe für bestimmte Websites zu deaktivieren. Weitere Informationen finden Sie unter Aktivieren oder Deaktivieren [der externen Freigabe für eine Website.](/sharepoint/change-external-sharing-site)
   
 
   
-
-    
 

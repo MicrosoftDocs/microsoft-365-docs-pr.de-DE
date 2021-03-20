@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über die Microsoft-Produktivitätsbewertung.
-ms.openlocfilehash: 72f9bcfb273912629744ec25ad9c0be720e76081
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: d818bd766f76f3df6c67a740d6ad1994a2be66de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838425"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914582"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft-Produktivitätsbewertung 
 
@@ -44,7 +44,7 @@ Es werden Metriken, Erkenntnisse und Empfehlungen in zwei Bereichen bereitgestel
 
 - **Technologieerfahrung:** Ihre Organisation hängt von zuverlässigen und leistungsfähigen Technologien wie auch von der effizienten Nutzung von Microsoft 365 ab. [Endpunktanalyse:](https://aka.ms/endpointanalytics) Sie hilft Ihnen zu verstehen, wie Ihre Organisation durch Probleme mit der Leistung und Integrität Ihrer Hardware und Software beeinträchtigt werden kann. Die Microsoft 365 Apps-Integrität hilft Ihnen zu verstehen, ob Microsoft 365-Apps auf den Geräten in Ihrer Organisation in den empfohlenen Kanälen ausgeführt werden.
 
-Einen Überblick und Einzelheiten zu den Voraussetzungen finden Sie unter [Was ist die Endpunktanalyse](https://docs.microsoft.com/mem/analytics/overview). Weitere Informationen zu den Insights in die Microsoft 365-Netzwerkverbindungen finden Sie unter [Überblick über die Netzwerkverbindungen](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
+Einen Überblick und Einzelheiten zu den Voraussetzungen finden Sie unter [Was ist die Endpunktanalyse](/mem/analytics/overview). Weitere Informationen zu den Insights in die Microsoft 365-Netzwerkverbindungen finden Sie unter [Überblick über die Netzwerkverbindungen](../../enterprise/microsoft-365-networking-overview.md).
   
 
 ## <a name="how-the-score-is-calculated"></a>So wird Ihre Bewertung berechnet
@@ -74,7 +74,8 @@ Das Bewertungsergebnis Ihrer Organisation wird täglich aktualisiert und spiegel
 
 ## <a name="prerequisites"></a>Voraussetzungen 
 
-Für Mitarbeitererfahrungsdaten benötigen Sie ein Abonnement für Microsoft 365 für Business oder Office 365 für Unternehmen. Für Endpunktanalysedaten Ihres Mandanten müssen Sie Microsoft Intune zu Ihrem Abonnement hinzufügen. Intune hilft Ihnen beim Schutz Ihrer Unternehmensdaten durch die Verwaltung von Geräten und Apps. Sobald Sie Intune hinzugefügt haben, können Sie die Endpunktanalyse innerhalb der Intune-Umgebung aktivieren. Weitere Informationen zu [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
+Für Mitarbeitererfahrungsdaten benötigen Sie ein Abonnement für Microsoft 365 für Business oder Office 365 für Unternehmen. Für Endpunktanalysedaten Ihres Mandanten müssen Sie Microsoft Intune zu Ihrem Abonnement hinzufügen. Intune hilft Ihnen beim Schutz Ihrer Unternehmensdaten durch die Verwaltung von Geräten und Apps. Sobald Sie Intune hinzugefügt haben, können Sie die Endpunktanalyse innerhalb der Intune-Umgebung aktivieren. Weitere Informationen zu [Microsoft Intune](/mem/intune/). 
+
 > [!NOTE]
 > Eine Lizenz für Workplace Analytics ist nicht Voraussetzung, um die Produktivitätsbewertungsfunktionen nutzen zu können.
 
@@ -129,7 +130,7 @@ Die Detailseiten sind:
 - [Mobilität – Mitarbeiter-Erfahrungen](mobility.md)
 - [Teamarbeit – Mitarbeiter-Erfahrungen](teamwork.md)
 - [Microsoft 365 Apps-Integrität – Technologie-Erfahrungen](apps-health.md)
-- [Endpunktanalysen](https://docs.microsoft.com/mem/analytics/productivity-score)
+- [Endpunktanalysen](/mem/analytics/productivity-score)
 
 ## <a name="business-continuity-special-report"></a>Spezialbericht zur Geschäftskontinuität
 
@@ -143,12 +144,12 @@ Dieser Bericht hilft Organisationen beim Verständnis folgender Aspekte:
 
 - Ob Remote-Besprechungen eine effektive Entscheidungsfindung fördern.
 
-[Weitere Informationen zum Bericht zur Geschäftskontinuität](https://aka.ms/bcrps)
+[Weitere Informationen zum Bericht zur Geschäftskontinuität](/Workplace-Analytics/tutorials/bcrps)
 
-[Weitere Informationen über Microsoft Graph](https://docs.microsoft.com/graph/).
+[Weitere Informationen über Microsoft Graph](/graph/).
 
 > [!NOTE]
-> Benutzer haben auch die Möglichkeit, über das [MyAnalytics-Dashboard](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2) Einblicke in die Produktivität zu erhalten.
+> Benutzer haben auch die Möglichkeit, über das [MyAnalytics-Dashboard](/workplace-analytics/myanalytics/use/dashboard-2) Einblicke in die Produktivität zu erhalten.
 
 
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback

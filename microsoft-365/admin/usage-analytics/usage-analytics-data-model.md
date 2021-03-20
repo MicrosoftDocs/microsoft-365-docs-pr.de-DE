@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Erfahren Sie, wie die Verwendungsanalyse eine Verbindung mit einer API herstellt und einen monatlichen Trend der Nutzung verschiedener Microsoft 365-Dienste bietet.  '
-ms.openlocfilehash: 7d1e797fc388934f66ddc45d2e7f51566e89ad23
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: 1975fc0bdba279b281fb45c8aec22255579ef414
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50758940"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913850"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 Datenmodell von Nutzungsanalysen
 
@@ -35,7 +35,7 @@ ms.locfileid: "50758940"
 Microsoft 365 Usage Analytics stellt eine Verbindung mit einer API bereit, die ein mehrdimensionales Datenmodell verfügbar macht. Die APIs, die Microsoft 365-Verwendungsanalysen zum Generieren seiner Daten verwenden, sind aus den verschiedenen, allgemein verfügbaren Graph-APIs. Die Funktion der Microsoft 365-Verwendungsanalyse-API allein ist nicht allgemein verfügbar.
   
 > [!NOTE]
-> Weitere Informationen finden Sie unter [Arbeiten mit Microsoft 365-Verwendungsberichten in Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=864336). 
+> Weitere Informationen finden Sie unter [Arbeiten mit Microsoft 365-Verwendungsberichten in Microsoft Graph](/graph/api/resources/report). 
   
 Diese API enthält Informationen zum monatlichen Nutzungstrend der verschiedenen Microsoft 365-Dienste. Die genauen von der API zurückgegebenen Daten finden Sie in der Tabelle im folgenden Abschnitt.
   
@@ -295,5 +295,3 @@ Die Tabelle enthält Daten zur Anzahl der Office-Abonnementaktivierungen in den 
 |WinRtCount  <br/> |Die Anzahl von Aktivierungen pro Serviceplan für Windows Mobile-Geräte am Ende des Zeitrahmens.  <br/> |
 |Timeframe  <br/> |Diese Spalte enthält den Datumswert. Als n:1-Beziehung für die Tabelle "Kalender" verwendet.  <br/> |
 |Content Date  <br/> |Wenn der Zeitrahmen den aktuellen Monat angibt, stellt dieser Wert das neueste Datum des aktuellen Monats dar, für das Daten verfügbar sind.  <br/> Wenn der Zeitrahmen den vorherigen Monat angibt, stellt dieser Wert das letzte Datum des Zeitrahmenmonats dar.  <br/> |
-   
-

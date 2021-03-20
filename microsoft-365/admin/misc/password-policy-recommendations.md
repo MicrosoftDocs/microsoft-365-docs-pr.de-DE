@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Erfahren Sie, wie Sie Ihre Organisation vor Kennwortangriffen schützen und warum Sie häufig verwendete Kennwörter verbieten und die risikobasierte mehrstufige Authentifizierung aktivieren sollten.
-ms.openlocfilehash: 66a4048ac1add3a0d47f256dc29519a91ae6cb11
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ca9a88b0bb154416837254d785cf9cfee8876ae6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926714"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914726"
 ---
 # <a name="password-policy-recommendations"></a>Empfehlungen für Kennwortrichtlinien
 
@@ -136,10 +136,10 @@ Durch die risikobasierte mehrstufige Authentifizierung wird sichergestellt, dass
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Zurücksetzen von Kennwörtern](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
+[Zurücksetzen von Kennwörtern](../add-users/reset-passwords.md)
 
-[Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)
+[Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft](../add-users/set-password-to-never-expire.md)
 
-[Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten](https://docs.microsoft.com/microsoft-365/admin/add-users/let-users-reset-passwords)
+[Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten](../add-users/let-users-reset-passwords.md)
 
-[Erneutes Senden eines Benutzerkennworts – Administratorhilfe](https://docs.microsoft.com/microsoft-365/admin/add-users/resend-user-password)
+[Erneutes Senden eines Benutzerkennworts – Administratorhilfe](../add-users/resend-user-password.md)

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie Teams bereitstellen, in denen vertrauliche Daten geschützt sind.
-ms.openlocfilehash: 0f3f12867314fdd91dfb563f0377995807c0f63d
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 03f10c91461d440413ace418a3b6fdd84da1660a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921110"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916226"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Teams für den Schutz vertraulicher Daten konfigurieren
 
@@ -39,8 +39,8 @@ Je nach Art des Unternehmens ist möglicherweise die Gastfreigabe für Teams erf
 
 Details zur sicheren Freigabe für Gäste finden Sie in den folgenden Ressourcen:
 
-- [Begrenzen der versehentlichen Gefährdung von Dateien bei der Freigabe für Personen außerhalb Ihrer Organisation](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [Erstellen einer sicheren Gastfreigabeumgebung](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [Begrenzen der versehentlichen Gefährdung von Dateien bei der Freigabe für Personen außerhalb Ihrer Organisation](./share-limit-accidental-exposure.md)
+- [Erstellen einer sicheren Gastfreigabeumgebung](./create-secure-guest-sharing-environment.md)
 
 Für das Zulassen oder Blockieren des Gastfreigabe verwenden wir eine Kombination aus einer Vertraulichkeitsbezeichnung für das Team und Steuerelementen für die Freigabe auf Team- und Websiteebene für die zugeordnete SharePoint-Website, die beide später behandelt werden.
 
@@ -48,7 +48,7 @@ Für das Zulassen oder Blockieren des Gastfreigabe verwenden wir eine Kombinatio
 
 Für den Schutz auf Vertraulichkeitsebene werden wir eine Vertraulichkeitsbezeichnung verwenden, um das Team zu klassifizieren. Diese Bezeichnung kann auch verwendet werden, um einzelne Dateien in diesem oder anderen Teams oder an anderen Speicherorten wie SharePoint oder OneDrive zu klassifizieren. 
 
-Als ersten Schritt müssen Sie Vertraulichkeitsbezeichnungen für Microsoft Teams aktivieren. Weitere Informationen finden Sie unter [Verwenden von Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Office 365-Gruppen und SharePoint-Websites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Als ersten Schritt müssen Sie Vertraulichkeitsbezeichnungen für Microsoft Teams aktivieren. Weitere Informationen finden Sie unter [Verwenden von Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Office 365-Gruppen und SharePoint-Websites](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 Wenn Sie in Ihrer Organisation bereits über Vertraulichkeitsbezeichnungen verfügen, überlegen Sie, wie sich diese Bezeichnung in Ihre allgemeine Bezeichnungsstrategie einfügt. Sie können den Namen oder die Einstellungen bei Bedarf an die Anforderungen Ihrer Organisation anpassen.
 
@@ -63,8 +63,8 @@ Erstellen einer Vertraulichkeitsbezeichnung
 6. Wählen Sie auf der Seite **Definieren des Bereichs für diese Bezeichnung** die Option **Dateien & E-Mails** und **Gruppen & Websites** aus und klicken Sie **Weiter**.
 7. Klicken Sie auf der Seite **Auswählen der Schutzeinstellungen für Dateien und E-Mails** auf **Weiter**.
 8. Klicken Sie auf der Seite *Automatische Bezeichnung für Dateien und E-Mails* auf **Weiter**.
-9. Wählen Sie auf der Seite **Definieren der Schutzeinstellungen für Gruppen und Websites** die Option **Datenschutz und Einstellungen für den Zugriff externer Benutzer** und **Einstellungen für Gerätezugriff und externe Freigabe** aus und klicken Sie **Weiter**.
-10. Wählen Sie auf der Seite **Definieren von Datenschutz und Einstellungen für den Zugriff externer Benutzer** unter **Datenschutz** die Option **Privat** aus.
+9. Wählen Sie auf der Seite **Definieren der Schutzeinstellungen für Gruppen und Websites** die Option **Einstellungen für Datenschutz und den Zugriff externer Benutzer** und **Einstellungen für Gerätezugriff und externe Freigabe** aus und klicken Sie **Weiter**.
+10. Wählen Sie auf der Seite **Definieren von Einstellungen für Datenschutz und den Zugriff externer Benutzer** unter **Datenschutz** die Option **Privat** aus.
 11. Wenn Sie Gastzugriffe zulassen wollen, wählen Sie unter **Externer Benutzerzugriff** die Option **Zulassen, dass Microsoft 365-Gruppenbesitzer Personen außerhalb Ihrer Organisation als Gäste zur Gruppe hinzufügen**.
 12. Klicken Sie auf **Weiter**.
 13. Wählen Sie auf der Seite **Definieren der Einstellungen für externe Freigabe und Gerätezugriff** die Option **Steuerung der externen Freigabe aus bezeichneten SharePoint-Websites**.
@@ -74,7 +74,7 @@ Erstellen einer Vertraulichkeitsbezeichnung
 17. Klicken Sie auf der Seite **Automatisches Bezeichnen von Datenbank-Spalten** auf **Weiter**.
 18. Klicken Sie auf **Bezeichnung erstellen** und anschließend auf **Fertig**.
 
-Nachdem Sie die Bezeichnung erstellt haben, müssen Sie sie für die Benutzer veröffentlichen, die sie verwenden sollen. Zum Schutz vertraulicher Daten werden die Bezeichnungen für alle Benutzer verfügbar gemacht. Die Bezeichnung wird im Microsoft 365 Compliance Center auf der Seite **Schutz von Daten** auf der Registerkarte **Bezeichnungsrichtlinien** veröffentlicht. Wenn bereits eine Richtlinie vorhanden ist, die für alle Benutzer gilt, fügen Sie diese Bezeichnung zu dieser Richtlinie hinzu. Wenn Sie eine neue Richtlinie erstellen müssen, lesen Sie [Veröffentlichen von Vertraulichkeitsbezeichnungen durch Erstellen einer Bezeichnungsrichtlinie](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
+Nachdem Sie die Bezeichnung erstellt haben, müssen Sie sie für die Benutzer veröffentlichen, die sie verwenden sollen. Zum Schutz vertraulicher Daten werden die Bezeichnungen für alle Benutzer verfügbar gemacht. Die Bezeichnung wird im Microsoft 365 Compliance Center auf der Seite **Schutz von Daten** auf der Registerkarte **Bezeichnungsrichtlinien** veröffentlicht. Wenn bereits eine Richtlinie vorhanden ist, die für alle Benutzer gilt, fügen Sie diese Bezeichnung zu dieser Richtlinie hinzu. Wenn Sie eine neue Richtlinie erstellen müssen, lesen Sie [Veröffentlichen von Vertraulichkeitsbezeichnungen durch Erstellen einer Bezeichnungsrichtlinie](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
 ## <a name="create-a-team"></a>Ein Team erstellen
 
@@ -98,7 +98,7 @@ So schränken Sie die Erstellung privater Kanäle ein
 2. Erweitern Sie auf der Registerkarte **Einstellungen** den Eintrag **Mitgliedsberechtigungen**.
 3. Deaktivieren Sie das Kontrollkästchen **Mitglieder können private Kanäle erstellen**.
 
-Sie können auch [Teams-Richtlinien](https://docs.microsoft.com/MicrosoftTeams/teams-policies) verwenden, um zu steuern, wer private Kanäle erstellen kann.
+Sie können auch [Teams-Richtlinien](/MicrosoftTeams/teams-policies) verwenden, um zu steuern, wer private Kanäle erstellen kann.
 
 ## <a name="sharepoint-settings"></a>SharePoint-Einstellungen
 
@@ -125,7 +125,7 @@ So aktualisieren Sie Websiteeinstellungen
 6. Deaktivieren Sie unter "Standardmäßiger Freigabe-Linktyp" das Kontrollkästchen **Identisch mit der Einstellung auf Organisationsebene**, und wählen Sie **Bestimmte Personen (nur die Personen, die der Benutzer angibt)** aus.
 7. Klicken Sie auf **Speichern**.
 
-Wenn Sie dies als Teil des Team-Erstellungsprozesses in Form eines Skripts festlegen möchten, können Sie [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) mit den folgenden Parametern verwenden:
+Wenn Sie dies als Teil des Team-Erstellungsprozesses in Form eines Skripts festlegen möchten, können Sie [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) mit den folgenden Parametern verwenden:
 
 - `-SharingCapability Disabled` um die Gastfreigabe zu deaktivieren (standardmäßig aktiviert)
 - `-DefaultSharingLinkType Internal` um den standardmäßigen Freigabelink zu *Bestimmte Personen* zu ändern
@@ -149,6 +149,4 @@ So beschränken Sie die Websitefreigabe auf die Besitzer
 
 ## <a name="see-also"></a>Siehe auch
 
-[Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels)
-
-
+[Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien](../compliance/create-sensitivity-labels.md)

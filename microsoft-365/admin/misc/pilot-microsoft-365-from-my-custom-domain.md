@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hier erfahren Sie, wie Sie die E-Mail-Funktionalität aus Ihrer benutzerdefinierten Domäne an ein Microsoft 365-Postfach mit nur zwei Testkonten testen können.
-ms.openlocfilehash: 6cc5b1163f666af4bd13047ab3b1fda7fd747b5f
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 019f1786756a036132f95fd5e8ef8a1d42cd515b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688217"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914714"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Testen von Microsoft 365 aus Ihrer benutzerdefinierten Domäne
 
@@ -32,7 +32,7 @@ Sie können Microsoft 365 mit den folgenden Anforderungen und Einschränkungen t
 
 - Sie müssen Ihre Microsoft 365-DNS-Einträge bei Ihrem DNS-Hostinganbieter verwalten, statt diese Einträge von Microsoft 365 verwalten zu lassen.
 
-    Weitere Informationen finden Sie unter [Hinzufügen von DNS-Einträgen zum Verbinden Ihrer Domäne](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+    Weitere Informationen finden Sie unter [Hinzufügen von DNS-Einträgen zum Verbinden Ihrer Domäne](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 - Frei/Gebucht-Informationen für Benutzer auf dem anderen E-Mail-Server stehen nicht zur Verfügung.
 
@@ -115,22 +115,22 @@ Dafür sind zwei Schritte nötig:
 
 Stellen Sie sicher, dass Sie Folgendes in Microsoft 365 oder Office 365 erledigt haben:
 
-1. Zum Einrichten von Connectors benötigen Sie Ihnen zugewiesene Berechtigungen, bevor Sie beginnen können. Welche Berechtigungen Sie benötigen, können Sie dem Eintrag "Microsoft 365- und Office 365-Connectors" im Thema [Featureberechtigungen in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop) entnehmen.
+1. Zum Einrichten von Connectors benötigen Sie Ihnen zugewiesene Berechtigungen, bevor Sie beginnen können. Welche Berechtigungen Sie benötigen, können Sie dem Eintrag "Microsoft 365- und Office 365-Connectors" im Thema [Featureberechtigungen in EOP](../../security/office-365-security/feature-permissions-in-eop.md) entnehmen.
 
 2. Wenn Sie möchten, dass EOP oder Exchange Online E-Mails von Ihren E-Mail-Servern an das Internet weiterleitet, gehen Sie wie folgt vor:
 
-   - Verwenden Sie ein Zertifikat, das mit einem Antragstellernamen konfiguriert ist, der einer akzeptierte Domäne in Microsoft 365 oder Office 365 entspricht. Es wird empfohlen, dass der allgemeine Name des Zertifikats oder der alternative Antragstellername mit der primären SMTP-Domäne für Ihre Organisation übereinstimmt. Ausführliche Informationen finden Sie unter [Voraussetzungen für Ihre lokale E-Mail-Umgebung](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment).
+   - Verwenden Sie ein Zertifikat, das mit einem Antragstellernamen konfiguriert ist, der einer akzeptierte Domäne in Microsoft 365 oder Office 365 entspricht. Es wird empfohlen, dass der allgemeine Name des Zertifikats oder der alternative Antragstellername mit der primären SMTP-Domäne für Ihre Organisation übereinstimmt. Ausführliche Informationen finden Sie unter [Voraussetzungen für Ihre lokale E-Mail-Umgebung](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment).
 
    – ODER –
 
    - Stellen Sie sicher, dass alle Absenderdomänen und -unterdomänen in Ihrer Organisation in Microsoft 365 oder Office 365 als akzeptierte Domänen konfiguriert sind.
 
-   Weitere Informationen zum Definieren von akzeptierten Domänen finden Sie unter [Verwalten von akzeptierten Domänen in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) und [Aktivieren des Nachrichtenflusses für Unterdomänen in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains).
+   Weitere Informationen zum Definieren von akzeptierten Domänen finden Sie unter [Verwalten von akzeptierten Domänen in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) und [Aktivieren des Nachrichtenflusses für Unterdomänen in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains).
 
-3. Entscheiden Sie, ob Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet) oder Domänennamen verwenden möchten, um E-Mails von Microsoft 365 oder Office 365 an Ihre E-Mail-Server zu übermitteln. Die meisten Unternehmen entscheiden sich dafür, E-Mails für alle akzeptierten Domänen zu übermitteln. Weitere Informationen finden Sie unter [Szenario: Bedingtes E-Mail-Routing in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing).
+3. Entscheiden Sie, ob Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet) oder Domänennamen verwenden möchten, um E-Mails von Microsoft 365 oder Office 365 an Ihre E-Mail-Server zu übermitteln. Die meisten Unternehmen entscheiden sich dafür, E-Mails für alle akzeptierten Domänen zu übermitteln. Weitere Informationen finden Sie unter [Szenario: Bedingtes E-Mail-Routing in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing).
 
 > [!NOTE]
-> Sie können Nachrichtenflussregel einrichten, wie in [Aktionen für die Nachrichtenflussregel in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) beschrieben. Beispielsweise möchten Sie Nachrichtenflussregeln möglicherweise mit Connectors verwenden, wenn Ihre E-Mails zurzeit über Verteilerlisten an mehrere Standorte weitergeleitet werden.
+> Sie können Nachrichtenflussregel einrichten, wie in [Aktionen für die Nachrichtenflussregel in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) beschrieben. Beispielsweise möchten Sie Nachrichtenflussregeln möglicherweise mit Connectors verwenden, wenn Ihre E-Mails zurzeit über Verteilerlisten an mehrere Standorte weitergeleitet werden.
 
 ### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. Einrichten eines Connectors von Microsoft 365 oder Office 365 zu Ihrem E-Mail-Server
 
@@ -140,13 +140,13 @@ Einrichten von Connectors mithilfe des Assistenten.
 
 Klicken Sie zum Starten des Assistenten auf das Pluszeichen **+**. Wählen Sie auf dem ersten Bildschirm **Von** Office 365 und **An** den E-Mail-Server Ihrer Organisation aus.
 
-Klicken Sie auf **Weiter**, und befolgen Sie die Anweisungen des Assistenten. Klicken Sie auf die Links **Hilfe** oder **Weitere Informationen**, wenn Sie weitere Informationen benötigen. Der Assistent führt Sie durch das Setup. Stellen Sie am Ende sicher, dass Ihr Connector eine Bestätigung vornimmt. Wenn der Connector keine Bestätigung vornimmt, doppelklicken Sie auf angezeigte Meldung, um mehr Informationen zu erhalten, und lesen Sie [Validieren von Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors), um Hilfe zur Problembehebung zu erhalten.
+Klicken Sie auf **Weiter**, und befolgen Sie die Anweisungen des Assistenten. Klicken Sie auf die Links **Hilfe** oder **Weitere Informationen**, wenn Sie weitere Informationen benötigen. Der Assistent führt Sie durch das Setup. Stellen Sie am Ende sicher, dass Ihr Connector eine Bestätigung vornimmt. Wenn der Connector keine Bestätigung vornimmt, doppelklicken Sie auf angezeigte Meldung, um mehr Informationen zu erhalten, und lesen Sie [Validieren von Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors), um Hilfe zur Problembehebung zu erhalten.
 
 
 
 ### <a name="step-7-update-dns-records-at-your-dns-hosting-provider"></a>Schritt 7: Aktualisieren der DNS-Einträge bei Ihrem DNS-Hostinganbieter
 
-Melden Sie sich bei der Website Ihres DNS-Hostinganbieters an, und folgen Sie den Anweisungen unter [Hinzufügen von DNS-Einträgen zum Verbinden Ihrer Domäne](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Melden Sie sich bei der Website Ihres DNS-Hostinganbieters an, und folgen Sie den Anweisungen unter [Hinzufügen von DNS-Einträgen zum Verbinden Ihrer Domäne](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 **Machen Sie die folgenden beiden Ausnahmen:**
 
@@ -190,4 +190,3 @@ Nachdem Sie diesen Schritt ausgeführt haben, sind alle an usera@yourcompany.com
 Da Sie nur zwei Testbenutzer verschieben und Benutzer A und Benutzer B beide Outlook verwenden, können Sie die E-Mail verschieben, indem Sie die alte .PST-Datei im neuen Outlook-Profil öffnen und die Nachrichten, Kalenderelemente, Kontakte usw. kopieren. Weitere Informationen hierzu finden Sie unter [Importieren von E-Mails, Kontakten und Kalendern aus einer Outlook-PST-Datei](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
 
 Nachdem sie in die entsprechenden Speicherorte im Microsoft 365-Postfach importiert wurden, kann auf die Elemente von jedem beliebigen Gerät aus zugegriffen werden.
-

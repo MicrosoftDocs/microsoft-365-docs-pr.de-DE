@@ -1,5 +1,5 @@
 ---
-title: Minderjährige und Erwerb von Add-Ins aus dem Store
+title: Minderjährige und Erwerben von Add-Ins aus dem Store
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,32 +19,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: Erfahren Sie mehr über die allgemeinen Datenschutzverordnung (dsgvo)-Verordnungen, die die personenbezogenen Daten von Minderjährigen Regeln.
-ms.openlocfilehash: a738e22a0ac0b995c8e44fcf4cc5a2eb47375be5
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+description: Erfahren Sie mehr über die Datenschutz-Grundverordnung (DSGVO), die die personenbezogenen Daten von Minderjährigen regeln.
+ms.openlocfilehash: c49ea719bc85166cc8082200eb833273b0ab5835
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306551"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915254"
 ---
-# <a name="minors-and-acquiring-add-ins-from-the-store"></a>Minderjährige und Erwerb von Add-Ins aus dem Store
+# <a name="minors-and-acquiring-add-ins-from-the-store"></a>Minderjährige und Erwerben von Add-Ins aus dem Store
 
-Die allgemeine Datenschutzverordnung (dsgvo) ist eine Verordnung der Europäischen Union, die am 25. Mai 2018 wirksam wird. Es gibt Benutzern Rechte und Schutz Ihrer Daten. Einer der Aspekte des dsgvo ist, dass Minderjährige Ihre persönlichen Daten nicht an Parteien senden dürfen, die ihre Eltern oder Erziehungsberechtigten nicht genehmigt haben. Das spezifische Alter, das als Minderjährige definiert ist, hängt von der Region ab, in der sich die Person befindet.
+Die Datenschutz-Grundverordnung (DSGVO) ist eine Verordnung der Europäischen Union, die am 25. Mai 2018 wirksam wird. Es gibt Benutzern Rechte an und Schutz ihrer Daten. Einer der Aspekte der DSGVO ist, dass Minderjährige ihre personenbezogenen Daten nicht an Parteien übermitteln lassen können, die von ihren Eltern oder Erziehungsberechtigten nicht genehmigt wurden. Das spezifische Alter, das als Nebenperson definiert ist, hängt von der Region ab, in der sich die Person befindet.
   
-Regionen mit gesetzlichen Bestimmungen zur elterlichen Zustimmung sind die Vereinigten Staaten, Südkorea, das Vereinigte Königreich und die Europäische Union. Für diese Regionen wird ein Minderjähriger (über Azure Active Directory) daran gehindert, neue Office-Add-Ins aus dem Store abzurufen und Add-Ins auszuführen, die zuvor erworben wurden. Für Länder ohne gesetzliche Bestimmungen gibt es keine Downloadbeschränkungen.
+Zu den Regionen mit gesetzlichen Bestimmungen über die Zustimmung der Eltern gehören die USA, Südkorea, Großbritannien und die Europäische Union. Für diese Regionen wird ein Minderjähriger (über Azure Active Directory) daran blockiert, neue Office-Add-Ins aus dem Store zu erhalten und zuvor erworbene Add-Ins ausführen. Für Länder ohne gesetzliche Bestimmungen gibt es keine Downloadeinschränkungen.
   
-Ein Benutzer wird basierend auf den in Azure Active Directory angegebenen Daten als Minderjähriger festgelegt. Der Organisationsadministrator ist für die Deklaration der legalen Altersgruppe und der elterlichen Zustimmung für diesen Benutzer verantwortlich.
+Ein Benutzer wird basierend auf den in Azure Active Directory angegebenen Daten als Nebenbenutzer bestimmt. Der Organisationsadministrator ist für die Deklarieren der gesetzlichen Altersgruppe und der elterlichen Zustimmung für den Benutzer verantwortlich.
   
-Wenn der übergeordnete/Erziehungsberechtigte einem Minderjährigen unter Verwendung eines bestimmten Add-ins zustimmt, kann der Organisationsadministrator die zentralisierte Bereitstellung verwenden, um das Add-in für alle Minderjährigen bereitzustellen, die Zustimmung haben.
+Wenn das Übergeordnete/Erziehungsberechtigte einer Minderjährigen mithilfe eines bestimmten Add-Ins zuwilligt, kann der Organisationsadministrator die zentrale Bereitstellung verwenden, um dieses Add-In für alle Minderjährigen mit Zustimmung zu bereitstellen.
   
-Um dsgvo-konform für Minderjährige zu sein, müssen Sie sicherstellen, dass eine der folgenden Builds von Office in ihrer Schule/Organisation bereitgestellt wird.
+Damit die DSGVO für Minderjährige kompatibel ist, müssen Sie sicherstellen, dass eine der folgenden Builds von Office in Ihrer Schule/Organisation bereitgestellt wird.
  
  **Für Word, Excel, PowerPoint und Project**: 
 
 |**Plattform** <br/> |**Buildnummer** <br/> |
 |:-----|:-----|
-|Microsoft 365 apps for Enterprise (aktueller Kanal)  <br/> |9001,2138   <br/> |
-|Microsoft 365-Apps für Unternehmen (halbjährlicher Enterprise-Kanal)  <br/> |8431,2159  <br/> |
+|Microsoft 365 Apps for Enterprise (Aktueller Kanal)  <br/> |9001.2138   <br/> |
+|Microsoft 365 Apps for enterprise (Semi-Annual Enterprise Channel)  <br/> |8431.2159  <br/> |
 |Office 2016 für Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 für Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 für Mac  <br/> |16.11.18020200  <br/> |
@@ -54,28 +54,27 @@ Um dsgvo-konform für Minderjährige zu sein, müssen Sie sicherstellen, dass ei
   
 |**Plattform** <br/> |**Buildnummer** <br/> |
 |:-----|:-----|
-|Outlook 2016 für Windows (MSI)  <br/> |Build kein feststellen  <br/> |
+|Outlook 2016 für Windows (MSI)  <br/> |Build No TBD  <br/> |
 |Outlook 2016 für Windows (C2R)  <br/> |16.0.9323.1000  <br/> |
 |Office 2016 für Mac  <br/> |16.0.9318.1000  <br/> |
-|Outlook Mobile für IOS  <br/> |2.75.0  <br/> |
-|Outlook Mobile für Android  <br/> |2.2.145  <br/> |
+|Outlook mobile für iOS  <br/> |2.75.0  <br/> |
+|Outlook mobile für Android  <br/> |2.2.145  <br/> |
 |Outlook.com  <br/> |Nicht zutreffend  <br/> |
 
- **Office 2013 Anforderungen**
+ **Office 2013-Anforderungen**
   
-Word-, Excel-und PowerPoint 2013 für Windows unterstützt die gleichen Minderjährigen überprüft, ob Active Directory Authentifizierungsbibliothek (Adal) aktiviert ist. Es gibt zwei Optionen für die Compliance, wie weiter erläutert.
+Word, Excel und PowerPoint 2013 für Windows unterstützen dieselben Nebenprüfungen, ob die Active Directory Authentication Library (ADAL) aktiviert ist. Es gibt zwei Optionen für die Compliance, wie im nächsten Schritt erläutert.
   
-- **Aktivieren Sie Adal**. In diesem Artikel wird erläutert, wie Sie Adal für Office 2013 aktivieren: [Verwenden der modernen Authentifizierung von Microsoft 365 mit Office-Clients](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).<br/>Sie müssen auch die Registrierungsschlüssel festlegen, um Adal zu aktivieren, wie unter [Aktivieren der modernen Authentifizierung für Office 2013 auf Windows-Geräten](../security-and-compliance/enable-modern-authentication.md)erläutert.<br/>Darüber hinaus müssen Sie die folgenden April-Updates für Office 2013 installieren:
+- **Aktivieren Sie ADAL**. In diesem Artikel wird erläutert, wie Sie ADAL für Office 2013 aktivieren: Verwenden der [modernen Microsoft 365-Authentifizierung mit Office-Clients.](../../enterprise/modern-auth-for-office-2013-and-2016.md)<br/>Sie müssen auch die Registrierungsschlüssel festlegen, um ADAL zu aktivieren, wie unter [Enable Modern Authentication for Office 2013 on Windows devices erläutert.](../security-and-compliance/enable-modern-authentication.md)<br/>Darüber hinaus müssen Sie die folgenden Aprilupdates für Office 2013 installieren:
     
-  - [Beschreibung des Sicherheitsupdates für Office 2013:10. April 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
+  - [Beschreibung des Sicherheitsupdates für Office 2013: 10. April 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     
-  - [3. April 2018, Update für Office 2013 (KB4018333)](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
+  - [Update vom 3. April 2018 für Office 2013 (KB4018333)](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
     
-- **Aktivieren Sie Adal nicht**. Wenn Sie Adal nicht in Office 2013 aktivieren können, empfehlen wir die Verwendung von Gruppenrichtlinien zum Deaktivieren des Speichers für die Office-Clients. Informationen zum Deaktivieren der Einstellungen für die APP für Office finden Sie [hier](https://technet.microsoft.com/library/cc178992.aspx).
+- **Aktivieren Sie ADAL nicht.** Wenn Sie ADAL in Office 2013 nicht aktivieren können, empfehlen wir, den Store für die Office-Clients mithilfe von Gruppenrichtlinien zu deaktivieren. Informationen zum Deaktivieren der App für Office-Einstellungen finden Sie [hier.](/previous-versions/office/office-2013-resource-kit/cc178992(v=office.15))
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Bereitstellen von Add-Ins im Admin Center](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
+[Bereitstellen von Add-Ins im Admin Center](./manage-deployment-of-add-ins.md)
 
-[Verwalten von Add-Ins im Admin Center](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center)
-    
+[Verwalten von Add-Ins im Admin Center](./manage-addins-in-the-admin-center.md)

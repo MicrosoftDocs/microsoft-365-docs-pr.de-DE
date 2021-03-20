@@ -1,5 +1,5 @@
 ---
-title: Ende der Lebenszyklusoptionen für Gruppen, Teams und jammern
+title: End-of-Lifecycle-Optionen für Gruppen, Teams und Yammer
 ms.reviewer: mmclean
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,247 +14,247 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Ende der Lebenszyklusoptionen für Gruppen, Teams und jammern.
-ms.openlocfilehash: 31383287f3288cbab68d6e249f98210dec62af2f
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+description: End-of-Lifecycle-Optionen für Gruppen, Teams und Yammer.
+ms.openlocfilehash: 405d87c645118cf0ef318d4d68802d17da8c5673
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681710"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916130"
 ---
-# <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Ende der Lebenszyklusoptionen für Gruppen, Teams und jammern
+# <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>End-of-Lifecycle-Optionen für Gruppen, Teams und Yammer
 
-Microsoft 365-Gruppen und Microsoft Teams arbeiten mit einer Vielzahl von verbundenen Diensten. Wenn eine Gruppe oder ein Team gelöscht wird, werden die meisten Informationen in den verbundenen Diensten ebenfalls gelöscht. In diesem Artikel werden Optionen zum Beibehalten von Informationen beschrieben, indem Sie Sie vor dem Löschen aus der Gruppe oder aus dem Team verschieben.
+Microsoft 365-Gruppen und Microsoft Teams arbeiten mit einer Vielzahl von verbundenen Diensten. Wenn eine Gruppe oder ein Team gelöscht wird, werden die meisten Informationen in den verbundenen Diensten ebenfalls gelöscht. In diesem Artikel werden Optionen zum Beibehalten von Informationen beschrieben, indem sie vor dem Löschen aus der Gruppe oder dem Team gelöscht werden.
 
-Eine gängige Vorgehensweise für Gruppen oder Teams, die nicht mehr benötigt werden, besteht darin, die Dateien aus dem Team zu entfernen und an einem anderen Speicherort wie einer SharePoint-Dokumentbibliothek zu speichern, die als Repository oder Archiv fungiert. Diese Vorgehensweise basiert auf einer Legacy-Arbeitsweise, in der Informationen in Dateien und Ordnern gespeichert werden, und die Kommunikation erfolgt per e-Mail.
+Eine gängige Praxis für Gruppen oder Teams, die nicht mehr benötigt werden, ist das Verschieben der Dateien aus dem Team und das Speichern der Dateien an einem anderen Speicherort, z. B. einer SharePoint-Dokumentbibliothek, die als Repository oder Archiv agiert. Diese Vorgehensweise basiert auf einer älteren Arbeitsweise, bei der Informationen in Dateien und Ordnern gespeichert werden und die Kommunikation per E-Mail erfolgt.
 
-In der folgenden Tabelle werden die Dienste beschrieben, die mit Gruppen und Teams zusammenhängen, sowie die wichtigsten Inhaltstypen, die in den einzelnen gefunden werden:
+In der folgenden Tabelle sind die Dienste, die Gruppen und Teams zugeordnet sind, sowie die wichtigsten Inhaltstypen in den einzelnen Gruppen aufgeführt:
 
 |Dienst|Inhaltstypen|
 |:------|:---------------|
-|Teams|Kanal Unterhaltungen, Dateien in Kanälen|
-|Formulare|Vermessungs Struktur und Ergebnisse|
+|Teams|Kanalunterhaltungen, Dateien in Kanälen|
+|Formulare|Umfragestruktur und Ergebnisse|
 |OneNote|Notizbuch|
 |Outlook|E-Mail und Kalender|
 |Planner|Projektstatus und Vorgangsinformationen|
 |Power Automate|Workflows|
 |Power BI|Daten, Berichte und Dashboards|
-|Project im Internet|Projektpläne|
+|Project im Web|Projektpläne|
 |Roadmap|Roadmaps|
-|SharePoint|Dateien, Listen, wiki-Daten in Microsoft Teams-Kanälen|
+|SharePoint|Dateien, Listen, Teams-Kanal-Wiki-Daten|
 |Stream|Videos|
 |Yammer|Unterhaltungen|
 
-Beim Löschen einer Gruppe oder eines Teams werden die meisten zugeordneten Ressourcen ebenfalls gelöscht. Einige der Ausnahmen zu diesem gehören Videos in Stream – diese bleiben und werden immer noch von der Person besessen, die Sie hochgeladen/aufgezeichnet hat, ebenso wie Flows in Power automatisieren. Projekt-und Roadmap-Daten in Project im Internet verbleiben in den CDs und können separat wiederhergestellt werden.
+Beim Löschen einer Gruppe oder eines Teams werden die meisten zugeordneten Ressourcen ebenfalls gelöscht. Zu den Ausnahmen hierzu gehören Videos in Stream – diese bleiben erhalten und sind weiterhin im Besitz der Person, die sie hochgeladen/aufgezeichnet hat, ebenso wie Flüsse in Power Automate. Projekt- und Roadmapdaten in Project im Web bleiben im CDS erhalten und können separat wiederhergestellt werden.
 
-Gruppen und Teams verbleiben 30 Tage lang im Status "Soft-Delete" und können jederzeit wiederhergestellt werden. Nach Ablauf der 30 Tage und der zugehörigen Ressourcen wie Dienste und Inhalte werden Sie jedoch vollständig aus der Microsoft 365-Umgebung gelöscht. Alle Inhalte, die durch eine Aufbewahrungsrichtlinie geschützt sind, bleiben über eDiscovery-suchen verfügbar.
+Gruppen und Teams verbleiben 30 Tage lang im Status "Soft-Delete" und können jederzeit wiederhergestellt werden. Nach den 30 Tagen werden sie und alle zugehörigen Ressourcen wie Dienste und Inhalte jedoch vollständig aus der Microsoft 365-Umgebung gelöscht. Alle durch eine Aufbewahrungsrichtlinie geschützten Inhalte bleiben über eDiscovery-Suchen verfügbar.
 
-## <a name="end-of-life-cycle-considerations-for-group-connected-services"></a>Überlegungen zum Lebenszyklusende für Gruppen verbundene Dienste
+## <a name="end-of-life-cycle-considerations-for-group-connected-services"></a>Überlegungen zum Ende des Lebenszyklus für gruppenverkn nnte Dienste
 
-Es gibt drei wichtige Bereiche, die Team-und Gruppenbesitzer und IT-Administratoren beim Löschen einer Gruppe oder eines Teams berücksichtigen müssen.
+Es gibt drei wichtige Bereiche, die Team- und Gruppenbesitzer und IT-Administratoren beim Löschen einer Gruppe oder eines Teams berücksichtigen müssen.
 
-**Content**
+**Inhalt**
 
-Müssen die Inhalte beibehalten werden, nachdem das Team nicht mehr funktionsfähig oder noch nicht vorhanden ist? Genügt es, sich auf die Aufbewahrungsfunktionen von Microsoft 365 zu verlassen, oder handelt es sich um einen Teil des Inhalts in apps und Diensten, die keine Aufbewahrung anbieten? Muss der Inhalt für Zwecke der Datensatzverwaltung, für Archivierungszwecke oder für zukünftige Verwendungs-und Referenzzwecke aufbewahrt werden?
+Muss der Inhalt beibehalten werden, nachdem das Team nicht mehr funktionsfähig ist oder existiert? Reicht es aus, sich auf die Aufbewahrungsfunktionen von Microsoft 365 zu verlassen, oder ist ein Teil der Inhalte in Apps und Diensten, die keine Aufbewahrung anbieten? Muss der Inhalt zu Datensatzverwaltungszwecken, zu Archivzwecken oder zu zukünftigen Verwendungs- und Referenzzwecken aufbewahrt werden?
 
 Diese Fragen müssen gestellt werden, bevor ein Team archiviert oder gelöscht wird, um potenzielle Datenverluste zu vermeiden.
 
 **Dienste**
 
-Müssen die Benutzer über die Inhalte in verschiedenen apps und Diensten in Ihrem aktuellen arbeitsformular bleiben? Muss beispielsweise der Power BI-Bericht weiterhin zugänglich sein, müssen die Formularergebnisse in der visuellen Zusammenfassungsansicht verfügbar sein, sind die Listen in SharePoint mit verknüpfter oder eingebetteter beliebiger Stelle?
+Müssen sie zusätzlich zu den Inhalten in verschiedenen Apps und Diensten in ihrem aktuellen Arbeitsformular bleiben? Muss beispielsweise weiterhin auf den Power BI-Bericht zugegriffen werden, müssen die Formularergebnisse in der visuellen Zusammenfassungsansicht verfügbar sein, sind die Listen in SharePoint mit einer beliebigen Stelle verknüpft oder eingebettet?
 
-Ähnlich wie bei den inhaltlichen Überlegungen müssen diese Fragen vor dem Löschen der zugrunde liegenden Gruppe gestellt werden, da ein einfaches Exportieren des Inhalts möglicherweise nicht ausreicht.
+Ähnlich wie bei den Inhaltsüberlegungen müssen diese Fragen gestellt werden, bevor die zugrunde liegende Gruppe gelöscht wird, da das einfache Exportieren des Inhalts möglicherweise nicht ausreicht.
 
 **Gäste**
 
-Wenn Gäste zu einem Team eingeladen werden, erstellt der Workflow seine Identität in der Azure-Active Directory der Host Organisation, bevor er dem Team hinzugefügt wird. Wenn ein Team gelöscht wird, werden Gäste nicht aus Azure Active Directory entfernt und als solche noch in der Microsoft Teams-Umgebung vorhanden. Während Gäste nicht auf Gruppen, Websites, Teams oder Inhalte zugreifen können, die nicht für Sie freigegeben wurden, können Sie weiterhin Features in Microsoft Teams nutzen, beispielsweise Chats, sprach-und Videoanrufe initiieren und Apps verwenden.
+Wenn Gäste zu einem Team eingeladen werden, erstellt der Workflow seine Identität im Azure Active Directory der Hostorganisation, bevor er sie dem Team hinzu fügt. Wenn ein Team gelöscht wird, werden Gäste nicht aus Azure Active Directory entfernt und sind als solche weiterhin in der Microsoft Teams-Umgebung vorhanden. Während Gäste nicht auf Gruppen, Websites, Teams oder Inhalte zugreifen können, die nicht für sie freigegeben wurden, können sie dennoch potenziell Features in Microsoft Teams nutzen, z. B. das Initiieren von Chats, Sprach- und Videoanrufen und die Verwendung von Apps.
 
-Ein Team-oder Gruppenbesitzer kann einen externen Benutzer einladen, ein Gast in Azure Active Directory zu werden, ihn dem Team hinzuzufügen und aus dem Team zu entfernen. Ein Teambesitzer kann den Gast jedoch nicht aus Azure Active Directory entfernen – Dies kann nur von einem globalen Administrator oder Benutzer Administrator ausgeführt werden.
+Ein Team- oder Gruppenbesitzer kann einen externen Benutzer einladen, ein Gast in Azure Active Directory zu werden, ihn dem Team hinzuzufügen und ihn aus dem Team zu entfernen. Ein Teambesitzer kann den Gast jedoch nicht aus Azure Active Directory entfernen – dies kann nur von einem globalen Administrator oder Benutzeradministrator ausgeführt werden.
 
-Deshalb ist es wichtig, Gästebewertungen durchzuführen und zu verstehen, ob Gäste beim Löschen von Teams aus Azure Active Directory entfernt werden müssen. Es kann einen gültigen Fall geben, dass Gäste im Verzeichnis bleiben, beispielsweise Mitglied eines oder mehrerer anderer Teams oder andere Microsoft 365-oder Azure-Dienste verwenden.
+Daher ist es wichtig, Gastüberprüfungen durchzuführen und zu verstehen, ob Gäste nach dem Löschen des Teams aus Azure Active Directory entfernt werden müssen. Es kann ein gültiger Fall sein, dass Gäste im Verzeichnis verbleiben, z. B. Mitglied eines oder mehreren anderen Teams oder andere Microsoft 365- oder Azure-Dienste verwenden.
 
 ## <a name="teams"></a>Teams
 
-Teams-spezifische Inhalte sind hauptsächlich in Form von Unterhaltungen.
+Teams-spezifische Inhalte werden in erster Linie in Form von Unterhaltungen verwendet.
 
-Unterhaltungen in Kanälen können nicht mit systemeigenen Microsoft Teams-Funktionen kopiert oder verschoben werden. Sie können jedoch mithilfe der Graph-API exportiert werden.
+Unterhaltungen in Kanälen können nicht mit systemeigenen Microsoft Teams-Funktionen kopiert oder verschoben werden. Sie können jedoch mit der Graph-API exportiert werden.
 
-Wenn außerdem eine Aufbewahrungsrichtlinie auf Teams angewendet wird, werden die Unterhaltungen beibehalten und über eDiscovery-Suchvorgänge zur Verfügung gestellt. (Elemente, die in eDiscovery-suchen gefunden werden, können exportiert werden, es gibt jedoch keinen Kontext oder keine Struktur aus ihrer ursprünglichen Quelle, sondern lediglich einzelne Nachrichten.)
+Wenn außerdem eine Aufbewahrungsrichtlinie auf Teams angewendet wird, werden die Unterhaltungen beibehalten und über eDiscovery-Suchen verfügbar. (Elemente, die in eDiscovery-Suchen gefunden werden, können exportiert werden, es bleibt jedoch kein Kontext oder keine Struktur aus der ursprünglichen Quelle – es handelt sich lediglich um einzelne Nachrichten.)
 
-### <a name="archiving-a-team"></a>Archivieren eines Teams
+### <a name="archiving-a-team"></a>Archivierung eines Teams
 
-Der Vorteil der [Archivierung eines Teams](https://docs.microsoft.com/microsoftteams/archive-or-delete-a-team) liegt darin, dass es den vollständigen Zugriff auf das Team ermöglicht, sodass Benutzer weiterhin Kanal Unterhaltungen durchsuchen und Dateien öffnen können, auch wenn Sie nicht aktiv sind. Darüber hinaus können Teams nicht archiviert werden, wenn es erforderlich ist, diese weiter zu bearbeiten (beispielsweise im Fall einer Project-Erweiterung).
+Der Vorteil der [Archivierung](/microsoftteams/archive-or-delete-a-team) eines Teams ist, dass es vollzugriff auf das Team bietet, wie es war, sodass Benutzer weiterhin Kanalunterhaltungen durchsuchen und Dateien öffnen können, auch wenn sie nicht aktiv sind. Darüber hinaus können Teams nicht archiviert werden, wenn die Arbeit an ihnen fortgesetzt werden muss (z. B. bei einer Projekterweiterung).
 
-Wenn ein Team von einem Besitzer archiviert wird, wird es für Mitglieder sowohl für die Inhalte innerhalb des Teams als auch für die zugehörige SharePoint-Website als schreibgeschützt festgelegt. Das Ziel dieser Aktion besteht darin, sicherzustellen, dass Unterhaltungen in Kanälen im vorhandenen Zustand beibehalten werden, zusammen mit SharePoint-basierten Inhalten wie Dateien und Wikis.
+Wenn ein Team von einem Besitzer archiviert wird, wird es für Mitglieder sowohl für Inhalte innerhalb des Teams als auch für die zugeordnete SharePoint-Website auf schreibgeschützt festgelegt. Ziel dieser Aktion ist es, sicherzustellen, dass Unterhaltungen in Kanälen in ihrem vorhandenen Zustand sowie sharePoint-basierte Inhalte wie Dateien und Wikis erhalten bleiben.
 
-In der SharePoint-Website gibt es keine sichtbaren Änderungen, es können jedoch keine Änderungen an Dateien oder Listen vorgenommen werden, da die SharePoint-basierte Berechtigungsgruppe für die Microsoft 365-Gruppe auf Websitebesucher Ebene festgelegt ist. Dies umfasst das OneNote-Notizbuch für das Team, da dieses in der Bibliothek Website Objekte auf der SharePoint-Website gespeichert wird.
+Auf der SharePoint-Website gibt es keine sichtbaren Änderungen, es können jedoch keine Änderungen an Dateien oder Listen vorgenommen werden, da die SharePoint-basierte Berechtigungsgruppe für die Microsoft 365-Gruppe auf Websitebesucherebene festgelegt ist. Dies schließt das OneNote-Notizbuch für das Team ein, da dieses in der Websiteressourcenbibliothek auf der SharePoint-Website gespeichert ist.
 
-Wenn ein Team archiviert wird, unterliegt die zugrunde liegende Microsoft 365-Gruppe weiterhin der Ablaufrichtlinie (falls festgelegt), und als solcher muss der Besitzer das Team weiterhin erneuern.
+Wenn ein Team archiviert wird, unterliegt die zugrunde liegende Microsoft 365-Gruppe weiterhin der Ablaufrichtlinie (sofern festgelegt), und daher muss der Besitzer das Team weiterhin verlängern.
 
-Während die Kanal Unterhaltungen und SharePoint-Websiteinhalte des Teams auf schreibgeschützt festgelegt sind, wird das gleiche nicht auf andere zugeordnete Dienste angewendet:
+Während die Kanalunterhaltungen des Teams und die Inhalte der SharePoint-Website auf schreibgeschützt festgelegt sind, wird dies nicht auf andere zugeordnete Dienste angewendet:
 
-- Planner-Buckets und-Aufgaben können weiterhin erstellt, geändert und gelöscht werden
+- Planer-Buckets und -Aufgaben können weiterhin erstellt, geändert und gelöscht werden
 - Formulare können weiterhin Übermittlungen empfangen
-- Das Outlook-Postfach kann weiterhin e-Mails empfangen
-- Power BI-Dashboards, Berichte und Daten können noch geändert werden
-- Projekte und Roadmaps können weiterhin in Project im Internet bearbeitet werden
-- Videos können weiterhin im Stream hochgeladen, geändert und gelöscht werden.
-- Flows in Power Automation können weiterhin erstellt, geändert, gelöscht und weiterhin ausgeführt werden (bei Bedarf wird jedoch ein Fehler angezeigt, wenn eine Nachricht an einen Kanal des archivierten Teams gesendet wird).
+- Das Outlook-Postfach kann weiterhin E-Mails empfangen
+- Power BI-Dashboards, Berichte und Daten können weiterhin geändert werden
+- Projekte und Roadmaps können weiterhin in Project im Web bearbeitet werden
+- Videos können weiterhin in Stream hochgeladen, geändert und gelöscht werden
+- Flüsse in Power Automate können weiterhin erstellt, geändert, gelöscht und weiterhin ausgeführt werden (falls erforderlich, um eine Nachricht an einen Kanal des archivierten Teams zu posten)
 
 ## <a name="forms"></a>Formulare
 
-Während ein Formular von einem einzelnen Konto in eine Gruppe verschoben werden kann, kann es nicht verschoben oder von einer Gruppe in eine andere kopiert werden. Für ein Formular stehen drei Optionen zur Verfügung, wenn ein Team gelöscht wird.
+Ein Formular kann zwar von einem einzelnen Konto in eine Gruppe verschoben werden, es kann jedoch nicht von einer Gruppe in eine andere verschoben oder kopiert werden. Es stehen drei Optionen für ein Formular zur Verfügung, wenn ein Team gelöscht wird.
 
 **Duplizieren des Formulars**
 
-Formulare können [als Vorlagen freigegeben](https://support.microsoft.com/office/82ea9d8a-260a-47a0-afdb-497f3d746e3f)werden, sodass andere Benutzer Sie in Ihr eigenes Konto oder eine Gruppe kopieren können. Die Daten aus Ergebnis Übermittlungen werden dadurch nicht beibehalten. nur Formularstruktur wie Fragen und Einstellungen.
+Formulare können [als Vorlagen freigegeben werden,](https://support.microsoft.com/office/82ea9d8a-260a-47a0-afdb-497f3d746e3f)sodass andere Benutzer sie in ihr eigenes Konto oder eine Gruppe kopieren können. Dadurch werden die Daten aus Ergebnisübermittlungen nicht beibehalten. nur Formularstruktur, z. B. Fragen und Einstellungen.
 
-**Exportieren von Ergebnissen in ein Arbeitsblatt**
+**Exportieren von Ergebnissen in eine Kalkulationstabelle**
 
-Wenn die Daten der Formularantworten beibehalten werden müssen, kann dies erreicht werden, indem [die Ergebnisse in ein Excel-Arbeitsblatt exportiert](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af)werden. Dadurch werden die Fragen und Ihre Antworten nur als Daten exportiert – es werden keine von Formularen erstellten Grafiken einbezogen.
+Wenn die Daten der Formularantworten beibehalten werden müssen, kann dies erreicht werden, indem die Ergebnisse in eine [Excel-Kalkulationstabelle exportiert werden.](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af) Dadurch werden nur die Fragen und ihre Antworten als Daten exportiert – es sind keine von Forms erstellten Diagramme enthalten.
 
 
 **Löschen des Formulars**
 
-Während das Löschen der Gruppe auch dazu führen kann, dass alle zugeordneten Formulare gelöscht werden, können Gruppenmitglieder [Sie direkt löschen](https://support.microsoft.com/office/2207e468-ce1b-4c4a-a256-caf631d87af0) , ohne ein Besitzer der Gruppe zu sein – dies ist jedoch ein manueller Schritt, der keinen zusätzlichen Nutzen bringt.
+Während das Löschen der Gruppe auch zum Löschen zugeordneter [](https://support.microsoft.com/office/2207e468-ce1b-4c4a-a256-caf631d87af0) Formulare führt, können Gruppenmitglieder sie direkt löschen, ohne Besitzer der Gruppe zu sein – dies ist jedoch ein manueller Schritt, der keinen zusätzlichen Vorteil bietet.
 
 ## <a name="onenote"></a>OneNote
 
-Das in einer Gruppe enthaltene OneNote-Notizbuch wird in der Bibliothek Website Objekte auf der zugehörigen SharePoint-Website gespeichert. Während Notebook-Dateien manchmal auf mehrere einzelne Dateien verteilt werden können, können Sie nicht einfach kopiert und unabhängig voneinander geöffnet werden. Stattdessen muss der Inhalt des OneNote-Notizbuchs mit OneNote 2016 verschoben oder exportiert werden.
+Das in einer Gruppe enthaltene OneNote-Notizbuch wird in der Bibliothek Websiteressourcen innerhalb der zugeordneten SharePoint-Website gespeichert. Während Notizbuchdateien manchmal auf mehrere einzelne Dateien verteilt werden können, können sie nicht einfach kopiert und unabhängig geöffnet werden. Stattdessen muss der Inhalt des OneNote-Notizbuchs mithilfe von OneNote 2016 verschoben oder exportiert werden.
 
-**Seiten und Abschnitte in ein anderes Notizbuch verlagern**
+**Verschieben von Seiten und Abschnitten in ein anderes Notizbuch**
 
-Durch das [individuelle Verschieben von Seiten oder Abschnitten in ein anderes Notizbuch](https://support.office.com/article/c3c8b098-7f9c-4c2a-a0dc-ebb83bc76364) erhalten Besitzer die Möglichkeit, Ihre Daten zu bereinigen und nur das beizubehalten, was aufbewahrt werden muss.
+[Das individuelle Verschieben von Seiten](https://support.office.com/article/c3c8b098-7f9c-4c2a-a0dc-ebb83bc76364) oder Abschnitten in ein anderes Notizbuch bietet Besitzern die Möglichkeit, ihre Daten zu bereinigen und nur die zu speichernden Daten zu übernehmen.
 
-**Exportieren des gesamten Notebooks als Paket**
+**Exportieren des gesamten Notizbuchs als Paket**
 
-Wenn das gesamte Notizbuch mit der vorhandenen Struktur beibehalten werden muss, kann es [als OneNote-Paketdatei exportiert](https://support.office.com/article/a4b60da5-8f33-464e-b1ba-b95ce540f309) und anschließend an einen neuen Speicherort importiert werden. Alternativ kann dies als Methode verwendet werden, um den Inhalt in einer einzigen Datei anstelle der vorhandenen mehr Dateistruktur beizubehalten.
+Wenn das gesamte Notizbuch mit seiner vorhandenen Struktur beibehalten werden muss, kann es als [OneNote-Paketdatei](https://support.office.com/article/a4b60da5-8f33-464e-b1ba-b95ce540f309) exportiert und dann an einen neuen Speicherort importiert werden. Alternativ kann dies als Methode zum Beibehalten des Inhalts in einer einzelnen Datei anstelle der vorhandenen Mehrdateistruktur verwendet werden.
 
 **Als PDF drucken**
 
-In Szenarien, in denen einige Inhalte des Notizbuchs nur als Referenz oder als Datensätze aufbewahrt werden müssen, können einzelne Seiten [in PDF gedruckt und an anderer Stelle gespeichert](https://support.office.com/article/13d173b5-7f4c-45a8-94eb-9354d63af5cd)werden.
+In Szenarien, in denen einige Inhalte des Notizbuchs nur als Referenz oder als Datensätze aufbewahrt werden müssen, können einzelne Seiten in PDF gedruckt und an anderer [Stelle gespeichert werden.](https://support.office.com/article/13d173b5-7f4c-45a8-94eb-9354d63af5cd)
 
 ## <a name="mailbox-and-calendar"></a>Postfach und Kalender
 
-Es ist nicht ungewöhnlich, dass das mit der Gruppe verbundene Postfach verwendet wird, obwohl viele Unterhaltungen möglicherweise in Team Kanälen durchgeführt wurden. Das Postfach speichert nur e-Mails, die direkt per e-Mail an Sie gesendet wurden, und enthält keine e-Mails, die direkt an Kanäle gesendet wurden.
+Es ist nicht ungewöhnlich, dass das dem Gruppen zugeordnete Postfach verwendet wird, auch wenn viele Unterhaltungen innerhalb von Teamkanälen geführt wurden. Das Postfach speichert nur E-Mails, die direkt an das Postfach gesendet wurden, und enthält keine E-Mails, die direkt an Kanäle gesendet wurden.
 
-In einigen Fällen können die im Postfach gespeicherten e-Mails einfach Benachrichtigungen über Besprechungen, Planner-Aufgaben Aktualisierungen und andere vom APP oder System generierte Nachrichten sein. Es ist wichtig, dass der Inhalt des Postfachs überprüft wird, um festzustellen, ob der Inhalt aufbewahrt oder gelöscht werden soll.
+In einigen Fällen können die im Postfach gespeicherten E-Mails einfach Benachrichtigungen über Besprechungen, Planner-Aufgabenupdates und andere von Apps oder Vom System generierte Nachrichten sein. Es ist wichtig, dass der Inhalt des Postfachs überprüft wird, um zu bestimmen, ob der Inhalt beibehalten oder gelöscht werden soll.
 
-Wenn eine Aufbewahrungsrichtlinie auf Exchange angewendet wird, werden die e-Mails und Kalenderelemente beibehalten und über eDiscovery-Suchvorgänge zur Verfügung gestellt.
+Wenn eine Aufbewahrungsrichtlinie auf Exchange angewendet wird, werden die E-Mails und Kalenderelemente beibehalten und über eDiscovery-Suchen verfügbar.
 
-**Exportieren von e-Mail und Kalender**
+**Exportieren von E-Mails und Kalendern**
 
-Team-oder Gruppenmitglieder können [den Inhalt des Postfachs und Kalenders in eine PST-Datei (Outlook Data/Personal Storage) exportieren](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91). Diese Datei kann dann an anderer Stelle gespeichert werden, oder der Inhalt kann in ein anderes Postfach importiert werden. Die erste wird nicht empfohlen, da der Inhalt der PST-Datei nicht durchsuchbar ist, ohne Sie in Outlook zu öffnen, und die Datei selbst kann im Laufe der Zeit beschädigt werden.
+Team- oder Gruppenmitglieder können den Inhalt des Postfachs und Kalenders in eine [Outlook Data /Personal Storage (PST)-Datei exportieren.](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91) Diese Datei kann dann an anderer Stelle gespeichert werden, oder der Inhalt kann in ein anderes Postfach importiert werden. Erstere wird nicht empfohlen, da der Inhalt der PST-Datei nicht durchsucht werden kann, ohne sie in Outlook zu öffnen, und die Datei selbst kann im Laufe der Zeit beschädigt werden.
 
-**Durch IT-durchgeführte Inhaltsmigration**
+**Von der IT durchgeführte Inhaltsmigration**
 
-Administratoren können Tools von Drittanbietern verwenden, um e-Mails und Kalender Inhalte zwischen Postfächern ohne Benutzereingriff zu migrieren. Ein möglicher Speicherort kann ein freigegebenes Postfach sein, das lediglich als "Archiv" der Gruppen Postfachinhalte dient.
+Administratoren können Tools von Drittanbietern verwenden, um E-Mails und Kalenderinhalte ohne Benutzereingriff zwischen Postfächern zu migrieren. Ein potenzieller Speicherort könnte ein freigegebenes Postfach sein, das nur als "Archiv" des Gruppenpostfachinhalts erstellt wurde.
 
 ## <a name="planner"></a>Planner
 
-Jede Gruppe oder jedes Team kann mehrere Pläne haben. Es ist wichtig, dass Sie während des offboarding-Prozesses sicherstellen, dass alle Pläne berücksichtigt werden, ob der Inhalt beibehalten wird. Wie die anderen Produkte gibt es verschiedene Ansätze zum extern von Inhalten in Planner.
+Jede Gruppe oder jedes Team kann mehrere Pläne haben. Es ist wichtig, während des Offboardingprozesses sicherzustellen, dass jeder Plan darauf eingegangen wird, ob seine Inhalte beibehalten werden. Wie bei den anderen Produkten gibt es mehrere Ansätze für Offboardinhalte in Planner.
 
-**Exportieren des Plans in ein Arbeitsblatt**
+**Exportieren des Plans in eine Tabellenkalkulation**
 
-Wenn nur eine Kopie des Plans zur Aufbewahrung von Datensätzen aufbewahrt werden muss, besteht der einfachste Ansatz darin, [den Plan in ein Excel-Arbeitsblatt zu exportieren](https://support.microsoft.com/office/4d850c6e-e548-4aab-83b4-b62b68662d2a). Dies ist eine unidirektionale Aktion, da es keine Option zum Importieren von Plänen aus einer Kalkulationstabelle gibt.
+Wenn es nur erforderlich ist, eine Kopie des Plans für die Aufzeichnung zu behalten, besteht der einfachste Ansatz in dem Exportieren des Plans in eine [Excel-Kalkulationstabelle](https://support.microsoft.com/office/4d850c6e-e548-4aab-83b4-b62b68662d2a). Dies ist eine one-way-Aktion, da es keine Möglichkeit gibt, Pläne aus einer Kalkulationstabelle zu importieren.
 
 > [!IMPORTANT]
-> Beim Exportieren eines Plans nach Excel werden die meisten Informationen innerhalb des Plans übernommen, es werden jedoch keine Kommentare, Links oder Dateien eingefügt.
+> Beim Exportieren eines Plans nach Excel werden die meisten Informationen innerhalb des Plans verwendet, aber keine Kommentare, Links oder Dateien enthalten.
 
-**Kopieren und verlagern von Vorgängen in einen anderen Plan**
+**Kopieren und Verschieben von Vorgängen in einen anderen Plan**
 
-Dies scheint zwar eine Lösung zu sein, aber einzelne Vorgänge können nur zwischen den Plänen innerhalb der gleichen Gruppe [kopiert oder verschoben](https://support.microsoft.com/office/ad43a5d8-c1ad-42fd-b3da-fe97d72c8a1b) werden, wodurch der Vorteil in dem Fall negiert wird, dass die dem Plan zugeordnete Gruppe gelöscht wird.
+Während dies wie eine Lösung aussieht, können einzelne Vorgänge nur zwischen Plänen innerhalb derselben Gruppe kopiert oder verschoben werden. Dadurch wird der Vorteil in negiert, wenn die dem Plan zugeordnete Gruppe gelöscht wird. [](https://support.microsoft.com/office/ad43a5d8-c1ad-42fd-b3da-fe97d72c8a1b)
 
-**Gesamten Plan kopieren**
+**Kopieren des gesamten Plans**
 
-Es ist auch möglich, [den gesamten Plan zu kopieren](https://support.microsoft.com/office/50401e13-a25f-40df-93c6-b608cc28c3d4). Dies kann jedoch nicht für eine vorhandene Gruppe oder sogar innerhalb derselben Gruppe sein. Durch Kopieren des Plans wird eine neue Gruppe erstellt. Darüber hinaus enthält das Kopieren des gesamten Plans keine Kommentare, Zuweisungen, Verknüpfungen, Anlagen oder Daten.
+Es ist auch möglich, [den gesamten Plan zu kopieren.](https://support.microsoft.com/office/50401e13-a25f-40df-93c6-b608cc28c3d4) Dies kann jedoch nicht für eine vorhandene Gruppe oder sogar innerhalb derselben Gruppe sein. Wenn Sie den Plan kopieren, wird eine neue Gruppe erstellt. Darüber hinaus enthält das Kopieren des gesamten Plans keine Kommentare, Zuordnungen, Links, Anlagen oder Datumsangaben.
 
 ## <a name="power-automate"></a>Power Automate
 
-Flows, die in Power Automation erstellt und einer Gruppe oder einem Team zugeordnet sind, gehören nicht zur Gruppe, sondern befinden sich im Besitz des Erstellers und werden nur für andere Benutzer und Gruppen freigegeben. Sie sind daher nicht betroffen, wenn eine Gruppe oder ein Team gelöscht wird.
+Flüsse, die in Power Automate erstellt und einer Gruppe oder einem Team zugeordnet sind, gehören nicht zur Gruppe, sondern gehören dem Ersteller und werden nur für andere Benutzer und Gruppen freigegeben. Sie sind also nicht betroffen, wenn eine Gruppe oder ein Team gelöscht wird.
 
-**Ändern des Besitzes des Flusses**
+**Ändern des Besitzes des Datenflusses**
 
-Wenn der Workflow weiterhin in Betrieb sein muss, können alle Besitzer einfach andere Benutzer oder Microsoft 365-Gruppen als Besitzer hinzufügen.
+Wenn der Workflow weiterhin ausgeführt werden muss, können alle Besitzer einfach andere Benutzer oder Microsoft 365-Gruppen als Besitzer hinzufügen.
 
-**Exportieren des Flusses**
+**Exportieren des Datenflusses**
 
-Wenn der Workflow nicht weiter ausgeführt werden muss, aber für eine mögliche zukünftige Verwendung beibehalten werden muss, kann er [als Datei exportiert](https://flow.microsoft.com/blog/import-export-bap-packages/) und später erneut importiert werden.
+Wenn der Workflow nicht weiterhin ausgeführt werden muss, aber für eine [](https://flow.microsoft.com/blog/import-export-bap-packages/) mögliche zukünftige Verwendung beibehalten werden muss, kann er als Datei exportiert und später erneut importiert werden.
 
 ## <a name="power-bi"></a>Power BI
 
-Power BI-Daten und-Arbeitsbereiche können unabhängig von Gruppen und Teams betrieben werden, und wie andere Arbeitslasten bieten unterschiedliche Möglichkeiten der offboarded.
+Power BI-Daten und Arbeitsbereiche können unabhängig von Gruppen und Teams ausgeführt werden, und wie andere Workloads bieten unterschiedliche Möglichkeiten zum Offboarding.
 
 **Kopieren von Berichten in einen anderen Arbeitsbereich**
 
-Wenn der Bericht in seinem Funktionszustand über die Lebensdauer der Gruppe oder des Teams hinaus aufbewahrt werden muss, kann er [aus dem vorhandenen Arbeitsbereich in einen anderen Arbeitsbereich innerhalb von Power BI kopiert](https://docs.microsoft.com/power-bi/connect-data/service-datasets-copy-reports)werden.
+Wenn der Bericht in seinem Funktionsstatus über die Lebensdauer der Gruppe oder des Teams hinaus beibehalten werden muss, kann er aus dem vorhandenen Arbeitsbereich in einen anderen Arbeitsbereich [in Power BI kopiert werden.](/power-bi/connect-data/service-datasets-copy-reports)
 
 **Exportieren von Daten aus einem Dashboard oder Bericht**
 
-Wenn der Bericht nicht mehr aktiv sein muss, aber die Daten beibehalten werden müssen, kann er auch [nach Excel exportiert](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data)werden.
+Alternativ kann der Bericht nach Excel exportiert werden, wenn er nicht mehr aktiv sein muss, die Daten jedoch [beibehalten werden müssen.](/power-bi/visuals/power-bi-visualization-export-data)
 
 ## <a name="project"></a>Project
 
-Projekte und Roadmaps, die in Project im Internet erstellt wurden, können Microsoft 365-Gruppen zugeordnet werden und bieten offboarding ähnliche Ansätze wie Power BI.
+In Project im Web erstellte Projekte und Roadmaps können Microsoft 365-Gruppen zugeordnet werden und bieten Ansätze für offboarding ähnlich wie Power BI.
 
 **Zuweisen des Projekts zu einer anderen Gruppe**
 
-Wenn das Projekt in seinem Funktionszustand über die Lebensdauer der Gruppe oder des Teams hinaus beibehalten werden muss, kann es mithilfe der Dynamics 365-Verwaltungskonsole [einer anderen Microsoft 365-Gruppe zugewiesen](https://docs.microsoft.com/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project) werden.
+Wenn das Projekt in seinem Funktionszustand über die Lebensdauer der Gruppe oder des Teams hinaus beibehalten werden muss, kann es über das Dynamics 365 Administration Center einer anderen [Microsoft 365-Gruppe](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project) zugewiesen werden.
 
 **Exportieren von Daten aus dem Projekt oder der Roadmap**
 
-Mithilfe der Dynamics 365-Verwaltungskonsole können Sie [Benutzerdaten aus dem Projekt](https://docs.microsoft.com/project-for-the-web/export-user-data-from-project-for-the-web) in eine Kalkulationstabelle exportieren, oder wenn Sie ein PowerShell-Skript verwenden, können die Daten in die Projektdatei (exportiert werden. MPP) und XML-Dateiformate.
+Mithilfe des Dynamics 365 Administration [](/project-for-the-web/export-user-data-from-project-for-the-web) Center können Benutzerdaten aus dem Projekt in eine Kalkulationstabelle exportiert werden, oder wenn Sie ein PowerShell-Skript verwenden, können die Daten in die Project-Datei () exportiert werden. MPP) und XML-Dateiformate.
 
 ## <a name="sharepoint"></a>SharePoint
-Alle Dateien in Team Kanälen werden in der Dokumentbibliothek auf der SharePoint-Website der zugeordneten Gruppe gespeichert. In einigen Fällen können andere Inhalte als Dokumente in SharePoint vorhanden sein, beispielsweise Listen oder Seiten.
-Dateien werden in der Regel an drei primären Speicherorten in einer SharePoint-Website gespeichert:
+Alle Dateien in Teamkanälen werden in der Dokumentbibliothek auf der SharePoint-Website der zugeordneten Gruppe gespeichert. In einigen Fällen können andere Inhalte als Dokumente in SharePoint vorhanden sein, z. B. Listen oder Seiten.
+Dateien werden in der Regel an drei primären Speicherorten auf einer SharePoint-Website gespeichert:
 
-- Seiten – Bibliothek für Website Seiten
-- In Seiten verwendete Bilder – Bibliothek für Website Objekte
-- Dateien in Kanälen – Bibliothek "Dokumente"
-- Wiki-Seiten – Microsoft Teams wiki-Datenbibliothek
+- Seiten – Bibliothek für Websiteseiten
+- Bilder, die in Seiten verwendet werden – Bibliothek für Websiteressourcen
+- Dateien in Kanälen – Dokumentbibliothek
+- Wiki-Seiten – Teams Wiki Data Library
 
-Wenn die Website über eine oder mehrere Unterwebsites verschachtelt ist, muss der offboarding-Prozess für jede Unterwebsite wiederholt werden. Wenn das Team private Kanäle enthält, gibt es eine separate SharePoint-Website für jeden Kanal.
+Wenn die Website eine oder mehrere Unterwebsites darunter verschachtelt hat, muss der Offboardingprozess für jede Unterwebsite wiederholt werden. Wenn das Team private Kanäle enthält, gibt es für jeden Kanal eine separate SharePoint-Website.
 
-Es ist wichtig, beim Entfernen von Dateien aus einer Gruppe oder einem Team festzustellen, dass Sie möglicherweise für Benutzer freigegeben werden, die nicht Mitglieder der Gruppe oder des Teams sind (ob intern oder extern für die Organisation), und als solche kann es sinnvoll sein, Ihnen die bevorstehende Änderung mitzuteilen.
+Es ist wichtig, beim Entfernen von Dateien aus einer Gruppe oder einem Team zu berücksichtigen, dass sie für Benutzer freigegeben werden können, die nicht Mitglied der Gruppe oder des Teams sind (intern oder außerhalb der Organisation), und daher kann es sich lohnen, die bevorstehende Änderung an sie zu kommunizieren.
 
 **Herunterladen von Dateien**
 
-Im Fall von Dateien, die in SharePoint in einer der oben genannten Bibliotheken gespeichert sind, können diese [auf einen lokalen Computer heruntergeladen](https://support.office.com/article/5c7397b7-19c7-4893-84fe-d02e8fa5df05)werden.
+Bei Dateien, die in SharePoint in einer der oben genannten Bibliotheken gespeichert sind, können diese auf [einen lokalen Computer heruntergeladen werden.](https://support.office.com/article/5c7397b7-19c7-4893-84fe-d02e8fa5df05)
 
-**Dateien verlagern**
+**Verschieben von Dateien**
 
-Darüber hinaus können Dateien an einen anderen Speicherort in SharePoint verschoben werden, beispielsweise an eine Bibliothek an einer anderen Website.
-Referenz https://support.office.com/article/move-or-copy-files-in-sharepoint-00e2f483-4df3-46be-a861-1f5f0c1a87bc
+Darüber hinaus können Dateien an einen anderen Speicherort in SharePoint verschoben werden, z. B. eine Bibliothek an einer anderen Website.
+Referenz: https://support.office.com/article/move-or-copy-files-in-sharepoint-00e2f483-4df3-46be-a861-1f5f0c1a87bc
 
-**Liste exportieren** In SharePoint-Listen gespeicherte Daten können in [eine Excel-Kalkulationstabelle exportiert](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9)und erneut in eine Liste in einer anderen Website importiert werden.
+**Exportliste** In SharePoint-Listen gespeicherte Daten können [in](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9)eine Excel-Kalkulationstabelle exportiert und erneut in eine Liste auf einer anderen Website importiert werden.
 
-Alternativ kann ein Drittanbietertool verwendet werden, um die Liste zwischen Websites zu migrieren, um Funktionen, Listenansichten, Formatierungen und andere Attribute beizubehalten.
+Alternativ kann ein Drittanbietertool verwendet werden, um die Liste zwischen Websites zu migrieren, um Funktionen, Listenansichten, Formatierungen und andere Attribute zu erhalten.
 
-**"Exportieren" von wiki-Dateien**
+**"Exportieren" von Wikidateien**
 
-Wiki-Inhalte innerhalb von Team Kanälen werden in einer HTML-formatierten Datei in einer dedizierten Bibliothek der zugeordneten SharePoint-Website gespeichert. Sie können nicht ohne weiteres exportiert und in ein anderes Kanal wiki importiert werden, sondern können in eine HTML-Datei konvertiert und als Webseite geöffnet werden.
+Wikiinhalte in Teamkanälen werden in einer HTML-formatierten Datei in einer dedizierten Bibliothek der zugeordneten SharePoint-Website gespeichert. Sie können nicht ohne Weiteres exportiert und in ein anderes Kanalwiki importiert werden, können jedoch in eine HTML-Datei konvertiert und als Webseite geöffnet werden.
 
 ## <a name="microsoft-stream"></a>Microsoft Stream
 
-Wie Power Automation sind Videos im Datenstrom, die einer Gruppe oder einem Team zugeordnet sind, nicht tatsächlich im Besitz der Gruppe und werden nicht gelöscht, wenn die Gruppe gelöscht wird. Videos im Datenstrom befinden sich im Besitz der Person, die das Video hochgeladen oder erstellt hat, selbst wenn Sie Benutzer oder Gruppen als Besitzer hinzufügen. Dies gilt auch für Besprechungen, die in einem Teams-Kanal aufgezeichnet werden. Sie befinden sich im Besitz der Person, die die Aufzeichnung initiiert hat.
+Wie Power Automate gehören Videos in Stream, die einer Gruppe oder einem Team zugeordnet sind, nicht tatsächlich zur Gruppe und werden nicht gelöscht, wenn die Gruppe gelöscht wird. Videos in Stream gehören der Person, die das Video hochgeladen oder erstellt hat, auch wenn sie Benutzer oder Gruppen als Besitzer hinzufügen. Dies gilt auch für Besprechungen, die in einem #A0 aufgezeichnet werden. sie gehören der Person, die die Aufzeichnung initiiert hat.
 
-**Hinzufügen weiterer Besitzer**
+**Hinzufügen anderer Besitzer**
 
-Da das Video unabhängig von der Gruppen Löschung im Datenstrom aufbewahrt wird, kann der ursprüngliche Besitzer [das Video für andere Benutzer und Gruppen freigeben und es sogar als Besitzer hinzufügen](https://docs.microsoft.com/stream/portal-edit-video).
+Da das Video unabhängig vom Löschen von Gruppen in Stream aufbewahrt wird, kann der ursprüngliche Besitzer das Video für andere Benutzer und Gruppen freigeben und sogar als [Besitzer hinzufügen.](/stream/portal-edit-video)
 
 **Video herunterladen**
 
-In Szenarien, in denen das Video nicht im Datenstrom aufbewahrt werden muss oder an einem alternativen Speicherort wie einem Datensatzverwaltungssystem gespeichert werden muss, kann ein Besitzer [es lokal herunterladen](https://docs.microsoft.com/stream/portal-download-video) .
+In Szenarien, in denen das Video nicht in Stream aufbewahrt werden muss oder an einem alternativen Speicherort wie einem Datensatzverwaltungssystem gespeichert werden muss, kann ein Besitzer es lokal [herunterladen.](/stream/portal-download-video)
 
 ## <a name="yammer"></a>Yammer
 
-Im Gegensatz zu Unterhaltungen in Microsoft Teams bietet jammern sowohl Benutzern als auch Administratoren Optionen zum umlegen oder Exportieren von Unterhaltungen.
+Im Gegensatz zu Unterhaltungen in Microsoft Teams bietet Yammer Sowohl Benutzern als auch Administratoren Optionen zum Verschieben oder Exportieren von Unterhaltungen.
 
-**Verlagern von Unterhaltungen in eine andere Gruppe oder Community**
+**Verschieben von Unterhaltungen in eine andere Gruppe oder Community**
 
-Unterhaltungen können von jedem Benutzer in eine andere Jammer Gruppe verschoben werden, nicht nur auf Besitzer oder Administratoren. Dies ist sowohl im [klassischen jammern](https://support.office.com/article/149c6399-4ac1-4ced-84d7-e0660960a872)als auch in den [neuen Jammer](https://support.office.com/article/d63debf1-1c90-4ec5-b5ae-8a00939a1680) Schnittstellen möglich.
+Unterhaltungen können von jedem Benutzer Yammer in eine andere Gruppe verschoben werden, nicht nur von Besitzern oder Administratoren. Dies ist sowohl im [klassischen Yammer](https://support.office.com/article/149c6399-4ac1-4ced-84d7-e0660960a872)als auch in den neuen Yammer [möglich.](https://support.office.com/article/d63debf1-1c90-4ec5-b5ae-8a00939a1680)
 
 **Exportieren von Netzwerkdaten**
 
-Jammern von Netzwerkadministratoren können einen [Export von Netzwerkdaten](https://docs.microsoft.com/yammer/manage-security-and-compliance/export-yammer-enterprise-data)durchführen, wobei allerdings alle Unterhaltungen für das gesamte Netzwerk exportiert werden. Der resultierende Export listet jedoch die Gruppen-ID auf, sodass es möglich ist, Unterhaltungen basierend auf diesem zu filtern.
+Yammer Netzwerkadministratoren einen [Export](/yammer/manage-security-and-compliance/export-yammer-enterprise-data)von Netzwerkdaten ausführen können, werden jedoch alle Unterhaltungen für das gesamte Netzwerk exportiert. Im resultierenden Export wird jedoch die Gruppen-ID aufgeführt, sodass Unterhaltungen basierend auf diesem Filter gefiltert werden können.

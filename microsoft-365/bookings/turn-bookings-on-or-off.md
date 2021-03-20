@@ -1,5 +1,5 @@
 ---
-title: Aktivieren oder Deaktivieren von Microsoft-Buchungen
+title: Microsoft Bookings an- oder ausschalten
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,103 +8,103 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
-description: Erfahren Sie, wie Sie Zugriff auf Microsoft-Buchungen in Microsoft 365 erhalten.
-ms.openlocfilehash: 7e4eaa1e474f3f49807b842097c855193f028af0
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+description: Erfahren Sie, wie Sie zugriff auf Microsoft Bookings in Microsoft 365 erhalten.
+ms.openlocfilehash: 7b1582a480ac4fdcd5a131febcc59450aa13e299
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126591"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913766"
 ---
-# <a name="turn-microsoft-bookings-on-or-off"></a>Aktivieren oder Deaktivieren von Microsoft-Buchungen
+# <a name="turn-microsoft-bookings-on-or-off"></a>Microsoft Bookings an- oder ausschalten
 
-Buchungen können für die gesamte Organisation oder für bestimmte Benutzer aktiviert oder deaktiviert werden. Wenn Sie Buchungen für Benutzer aktivieren, können Sie eine Buchungsseite erstellen, einen Kalender erstellen und anderen Personen die Möglichkeit geben, Zeit mit Ihnen zu buchen.
+Buchungen können für Ihre gesamte Organisation oder für bestimmte Benutzer aktiviert oder deaktiviert werden. Wenn Sie Bookings für Benutzer aktivieren, können sie eine Bookings-Seite erstellen, einen Kalender erstellen und anderen Personen erlauben, Zeit mit ihnen zu reservieren.
 
 > [!NOTE]
-> Die in diesen Abschnitten beschriebenen Administrator Steuerelemente sind für Office 365, die von 21Vianet-Kunden (China) betrieben werden, nicht verfügbar.
+> Die in diesen Abschnitten beschriebenen Administratorsteuerelemente sind für Office 365 Operated by 21Vianet (China)-Kunden nicht verfügbar.
 
-## <a name="turn-bookings-on-or-off-for-your-organization-using-the-microsoft-365-admin-center"></a>Aktivieren oder Deaktivieren von Buchungen für Ihre Organisation mithilfe des Microsoft 365 Admin Center
+## <a name="turn-bookings-on-or-off-for-your-organization-using-the-microsoft-365-admin-center"></a>Aktivieren oder Deaktivieren von Bookings für Ihre Organisation mithilfe des Microsoft 365 Admin Centers
 
 1. Melden Sie sich beim Microsoft 365 Admin Center als globaler Administrator an.
 
-2. Wechseln Sie im Admin Center zu  **Einstellungen**   \> **org-Einstellungen** , und wählen Sie **Buchungen** aus.
+2. Wechseln Sie im Admin Center zu  **Einstellungen**   \> **Organisationseinstellungen,** und wählen Sie **Bookings aus.**
 
-3. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Ihre Organisation kann Buchungen verwenden** , um Buchungen für Ihre Organisation zu aktivieren oder zu deaktivieren.
+3. Aktivieren Sie das Kontrollkästchen **Zulassen, dass Ihre Organisation Bookings zum** Aktivieren oder Deaktivieren von Bookings für Ihre Organisation verwendet.
 
    > [!NOTE]
-   > Durch das Deaktivieren von Buchungen wird der gesamte Zugriff auf den Dienst deaktiviert, einschließlich der Erstellung und Verwaltung von Buchungsseiten.
+   > Wenn Sie Bookings deaktivieren, wird der Zugriff auf den Dienst deaktiviert, einschließlich der Erstellung und Verwaltung von Bookings-Seiten.
 
-4. Wählen Sie **Save Changes** aus.
+4. Wählen **Sie Änderungen speichern aus.**
 
-## <a name="turn-bookings-on-or-off-for-your-organization-using-powershell"></a>Aktivieren oder Deaktivieren von Reservierungen für Ihre Organisation mithilfe von PowerShell
+## <a name="turn-bookings-on-or-off-for-your-organization-using-powershell"></a>Aktivieren oder Deaktivieren von Bookings für Ihre Organisation mithilfe von PowerShell
 
-Zum Aktivieren oder Deaktivieren von Buchungen für Ihre Organisation mit dem PowerShell-Cmdlet " [OrganizationConfig" stellen](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig)Sie [eine Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) , und führen Sie den folgenden Befehl aus:
+Um Bookings für Ihre Organisation mit dem PowerShell-Cmdlet [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig)zu aktivieren oder zu deaktivieren, stellen Sie eine Verbindung mit [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) auf, und führen Sie den folgenden Befehl aus:
 
 ```PowerShell
    Set-OrganizationConfig -BookingsEnabled $false
 ```
 
-### <a name="turn-bookings-on-or-off-for-individual-users"></a>Aktivieren oder Deaktivieren von Buchungen für einzelne Benutzer
+### <a name="turn-bookings-on-or-off-for-individual-users"></a>Aktivieren oder Deaktivieren von Bookings für einzelne Benutzer
 
-Sie können Buchungen für einzelne Benutzer deaktivieren.
+Sie können Bookings für einzelne Benutzer deaktivieren.
 
-1. Wechseln Sie zum Microsoft 365 Admin Center, und wählen Sie dann **Benutzer** \> **aktive Benutzer** aus.
+1. Wechseln Sie zum Microsoft 365 Admin Center, und wählen Sie **dann Benutzer** Aktive \> **Benutzer aus.**
 
-1. Wählen Sie den gewünschten Benutzer aus, und wählen Sie dann **Lizenzen und apps** aus.
+1. Wählen Sie den gewünschten Benutzer aus, und wählen Sie **dann Lizenzen und Apps aus.**
 
-1. Erweitern Sie **apps** , und deaktivieren Sie das Kontrollkästchen für Microsoft-Buchungen.
+1. Erweitern **Sie Apps,** und aktivieren Sie das Kontrollkästchen für Microsoft Bookings.
 
-## <a name="require-staff-approvals-before-sharing-freebusy-information"></a>Personal Genehmigungen erfordern, bevor Sie Frei/Gebucht-Informationen freigeben
+## <a name="require-staff-approvals-before-sharing-freebusy-information"></a>Vor der Freigabe von Frei/Gebucht-Informationen Mitarbeitergenehmigungen benötigen
 
-Administratoren können von Mitarbeitern in Ihrer Organisation verlangen, dass Sie sich anmelden, bevor Ihre Verfügbarkeitsinformationen Überbuchungen freigegeben werden und bevor Sie über eine Buchungsseite gebucht werden können. Diese Einstellung steht im Microsoft 365 Admin Center unter Einstellungen für **Settings** \> **Settings** \> **Reservierungen** zur Verfügung.
+Administratoren können mitarbeiter in ihrer Organisation die Anmeldung verlangen, bevor ihre Verfügbarkeitsinformationen über Bookings freigegeben werden und bevor sie über eine Buchungsseite gebucht werden können. Diese Einstellung ist im Microsoft 365 Admin Center unter **Einstellungen** \> **Einstellungen** \> **Bookings verfügbar.**
 
-Wenn diese Einstellung aktiviert ist, werden Mitarbeiter, die in Buchungs Kalendern als Mitarbeiter hinzugefügt wurden, in der von Ihnen empfangenen e-Mail-Benachrichtigung einen Link genehmigen/ablehnen finden.
+Wenn diese Einstellung aktiviert ist, finden Mitarbeiter, die als Mitarbeiter in Buchungskalendern hinzugefügt werden, einen Link genehmigen/ablehnen in der E-Mail-Benachrichtigung, die sie erhalten.
 
-Dieses Feature wird schrittweise weltweit auf Microsoft 365-Kunden verteilt. Wenn diese Option im Microsoft 365 Admin Center nicht angezeigt wird, schauen Sie bald zurück.
+Dieses Feature wird schrittweise weltweit für Microsoft 365-Kunden eingeführt. Wenn diese Option im Microsoft 365 Admin Center nicht angezeigt wird, schauen Sie bald zurück.
 
-## <a name="block-social-sharing-options"></a>Blockieren von Optionen für die soziale Freigabe
+## <a name="block-social-sharing-options"></a>Blockieren von Optionen für die freigabe für soziale Netzwerke
 
-Administratoren können steuern, wie Buchungsseiten in sozialen Netzwerken freigegeben werden. Diese Einstellung steht im Microsoft 365 Admin Center unter Einstellungen für **Settings** \> **Settings** \> **Reservierungen** zur Verfügung.
+Administratoren können steuern, wie Buchungsseiten in sozialen Netzwerken freigegeben werden. Diese Einstellung ist im Microsoft 365 Admin Center unter **Einstellungen** \> **Einstellungen** \> **Bookings verfügbar.**
 
-Dieses Feature wird schrittweise weltweit auf Microsoft 365-Kunden verteilt. Wenn diese Option im Microsoft 365 Admin Center nicht angezeigt wird, schauen Sie bald zurück.
+Dieses Feature wird schrittweise weltweit für Microsoft 365-Kunden eingeführt. Wenn diese Option im Microsoft 365 Admin Center nicht angezeigt wird, schauen Sie bald zurück.
 
-## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>Nur ausgewählten Benutzern das Erstellen von Buchungs Kalendern erlauben
+## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>Nur ausgewählte Benutzer zum Erstellen von Bookings-Kalendern zulassen
 
-Durch die Verwendung von Richtlinieneinschränkungen können Sie die Lizenzierung von lizenzierten Benutzern daran hindern, Buchungen von Kalendern erstellen zu können. Sie müssen zunächst Buchungen für Ihre gesamte Organisation aktivieren. Alle Benutzer in Ihrer Organisation verfügen über Buchungs Lizenzen, aber nur die in der Richtlinie enthaltenen Buchungen können Buchungskalender erstellen und Vollzugriff auf die von Ihnen erstellten Kalender erhalten.
+Mithilfe von Richtlinieneinschränkungen können Sie verhindern, dass lizenzierte Benutzer Bookings-Kalender erstellen können. Sie müssen zuerst Bookings für Ihre gesamte Organisation aktivieren. Alle Benutzer in Ihrer Organisation verfügen über Bookings-Lizenzen, aber nur diejenigen, die in der Richtlinie enthalten sind, können Bookings-Kalender erstellen und voll darauf zugreifen, wer auf die von ihnen erstellten Kalender zugreifen kann.
 
-Benutzer, die in dieser Richtlinie enthalten sind, können neue Buchungskalender erstellen und können als Mitarbeiter in beliebiger Kapazität (einschließlich der Administratorrolle) vorhandenen Buchungs Kalendern hinzugefügt werden. Benutzer, die nicht in dieser Richtlinie enthalten sind, können keine neuen Buchungen Kalender erstellen und erhalten eine Fehlermeldung, wenn Sie versuchen, dies zu tun.
+Benutzer, die in dieser Richtlinie enthalten sind, können neue Bookings-Kalender erstellen und als Mitarbeiter in beliebiger Kapazität (einschließlich der Administratorrolle) vorhandenen Bookings-Kalendern hinzugefügt werden. Benutzer, die nicht in dieser Richtlinie enthalten sind, können keine neuen Bookings-Kalender erstellen und erhalten eine Fehlermeldung, wenn sie dies versuchen.
 
-Sie müssen die folgenden Befehle mit Exchange Online PowerShell ausführen. Weitere Informationen zum Ausführen von Exchange Online-Cmdlets finden Sie unter [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+Sie müssen die folgenden Befehle mit Exchange Online PowerShell ausführen. Weitere Informationen zum Ausführen von Exchange Online-Cmdlets finden Sie unter [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 > [!IMPORTANT]
-> In den folgenden Schritten wird davon ausgegangen, dass in Ihrer Organisation keine anderen Outlook Web App (OWA)-Postfachrichtlinien erstellt wurden.
+> In den folgenden Schritten wird davon ausgegangen, dass keine anderen Outlook Web App (OWA)-Postfachrichtlinien in Ihrer Organisation erstellt wurden.
 
-1. Erstellen Sie eine neue Postfachrichtlinie für Benutzer, die Kalender mit Buchungen erstellen dürfen. (Buchungen Kalendererstellung ist standardmäßig durch neue Postfachrichtlinien zulässig.)
+1. Erstellen Sie eine neue Postfachrichtlinie für Benutzer, die Bookings-Kalender erstellen dürfen sollten. (Die Erstellung von Bookings-Kalendern ist standardmäßig durch neue Postfachrichtlinien zulässig.)
 
    ```PowerShell
    New-OwaMailboxPolicy -Name "BookingsCreators"
    ```
 
-   Weitere Informationen finden Sie unter [New-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/new-owamailboxpolicy).
+   Weitere Informationen finden Sie unter [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy).
 
-2. Weisen Sie diese Richtlinie den relevanten Benutzern zu, indem Sie diesen Befehl für jeden Benutzer ausführen, dem Sie die Berechtigung zum Erstellen von Buchungs Kalendern erteilen möchten.
+2. Weisen Sie diese Richtlinie den relevanten Benutzern zu, indem Sie diesen Befehl für jeden Benutzer ausführen, den Sie zum Erstellen von Bookings-Kalendern berechtigt sein möchten.
 
    ```PowerShell
    Set-CASMailbox -Identity <someCreator@emailaddress> -OwaMailboxPolicy "BookingsCreators"
    ```
 
-   Weitere Informationen finden Sie unter [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
+   Weitere Informationen finden Sie unter [Set-CASMailbox](/powershell/module/exchange/set-casmailbox).
 
-3. Optional: führen Sie diesen Befehl aus, wenn Sie Buchungen für alle anderen Benutzer in Ihrer Organisation deaktivieren möchten.
+3. Optional: Führen Sie diesen Befehl aus, wenn Sie Bookings für alle anderen Benutzer in Ihrer Organisation deaktivieren möchten.
 
    ```PowerShell
    Set-OwaMailboxPolicy "OwaMailboxPolicy-Default" -BookingsMailboxCreationEnabled:$false
    ```
 
-   Weitere Informationen finden Sie unter [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-owamailboxpolicy).
+   Weitere Informationen finden Sie unter [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy).
 
 Weitere Informationen zu OWA-Postfachrichtlinien finden Sie in den folgenden Themen:
 
-- [Erstellen einer Outlook im Internet-Postfachrichtlinie in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+- [Erstellen einer Outlook im Webpostfachrichtlinie in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
 
-- [Anwenden oder Entfernen einer Outlook im webpostfach-Richtlinie für ein Postfach in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+- [Anwenden oder Entfernen einer Outlook im Webpostfachrichtlinie für ein Postfach in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)

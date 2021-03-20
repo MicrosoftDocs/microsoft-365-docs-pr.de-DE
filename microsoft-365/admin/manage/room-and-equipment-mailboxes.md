@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Erstellen Sie ein Raum- oder Gerätepostfach, damit jeder im Unternehmen mithilfe von Outlook eine Reservierung für Besprechungen oder Ereignisse vornehmen. '
-ms.openlocfilehash: ab48a0177acd212ff330a4a772ef84843406a3d5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6960f93e8c1978f94776f067dcd0f502f0665718
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399602"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915170"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Raum- und Gerätepostfächer
 
@@ -39,7 +39,7 @@ Sobald Sie ein Raum- oder Gerätepostfach erstellt haben, kann jeder im Unterneh
 
 Zum Verwenden von Raum- oder Gerätepostfächern öffnen Sie Outlook auf Ihrem Computer, oder melden Sie sich bei Outlook im Web an. Planen Sie eine neue Besprechung, und fügen Sie den Raum oder das Gerät auf gleiche Weise wie beim Einladen anderer Mitarbeiter oder Kunden zur Besprechung hinzu. Sie haben den Raum bzw. das Gerät nun reserviert.
   
-1. Öffnen Sie** **Outlook auf Ihrem Computer 
+1. Öffnen Sie **** Outlook auf Ihrem Computer 
     
 2. On the **Home** tab, choose **New Items** \> **Meeting**.<br/>![Um eine Besprechung zu planen, wählen Sie auf der Registerkarte "Start" in der Gruppe "Neu" die Option "Neue Elemente" und dann "Besprechung" aus.](../../media/ffd575a8-1036-4d67-b839-73941fc60276.png)<br/>Sie können auch einfach in Ihrem Kalender die Option **Neue Besprechung** auswählen.
     
@@ -88,7 +88,7 @@ Wenn Sie ein Raum- oder Gerätepostfach einrichten möchten, wechseln Sie zum Mi
 6. Wenn Sie Änderungen vorgenommen haben, wählen Sie **Speichern** und dann **Schließen** aus.
 
 > [!Note]
-> Damit Ihre Raum-und Gerätepostfächer geschützt bleiben, blockieren Sie die Anmeldung bei diesen Postfächern. Weitere Informationen finden Sie unter [Blockieren der Anmeldung für das freigegebene Postfachkonto](https://docs.microsoft.com/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account).
+> Damit Ihre Raum-und Gerätepostfächer geschützt bleiben, blockieren Sie die Anmeldung bei diesen Postfächern. Weitere Informationen finden Sie unter [Blockieren der Anmeldung für das freigegebene Postfachkonto](/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account).
 
 ## <a name="common-questions-about-room-and-equipment-mailboxes"></a>Häufige Fragen zu Raum- und Gerätepostfächern
 
@@ -110,4 +110,4 @@ Nein. Obwohl für die meisten Benutzer in Ihrer Organisation eine Lizenz für di
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>Benötige ich jemanden, der für das Buchen der Räume oder Geräte zuständig ist?
 
- Nein, brauchen Sie niemanden, der für das Raum- oder Gerätepostfach zuständig ist. 
+ Nein, brauchen Sie niemanden, der für das Raum- oder Gerätepostfach zuständig ist.

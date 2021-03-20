@@ -1,5 +1,5 @@
 ---
-title: Erstellen von DNS-Einträgen bei WiX für Microsoft
+title: Erstellen von DNS-Einträgen bei Wix für Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,15 +20,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
-description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für e-Mail, Skype for Business Online und andere Dienste bei WiX für Microsoft einrichten.
-ms.openlocfilehash: 01317f7e2da87b532c93f12269fd65b7d4fe2dd6
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für E-Mails, Skype for Business Online und andere Dienste bei Wix für Microsoft einrichten.
+ms.openlocfilehash: 3ec2ea0dc24e1872ba22e591fae96b39a9a0deee
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656879"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916106"
 ---
-# <a name="create-dns-records-at-wix-for-microsoft"></a>Erstellen von DNS-Einträgen bei WiX für Microsoft
+# <a name="create-dns-records-at-wix-for-microsoft"></a>Erstellen von DNS-Einträgen bei Wix für Microsoft
 
 **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
@@ -38,15 +38,15 @@ Das sind die wichtigsten hinzuzufügenden Einträge.
   
 - [Hinzufügen eines TXT-Eintrags zur Überprüfung](#add-a-txt-record-for-verification)
     
-- [Fügen Sie einen MX-Eintrag hinzu, damit e-Mails für Ihre Domäne an Microsoft gesendet werden](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft).
+- [Fügen Sie einen MX-Eintrag hinzu, damit E-Mails für Ihre Domäne an Microsoft gesendet werden.](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
-- [Fügen Sie die fünf CNAME-Einträge hinzu, die für Microsoft erforderlich sind](#add-the-five-cname-records-that-are-required-for-microsoft).
+- [Fügen Sie die fünf CNAME-Datensätze hinzu, die für Microsoft erforderlich sind.](#add-the-five-cname-records-that-are-required-for-microsoft)
     
 - [Hinzufügen eines TXT-Eintrags für SPF, um E-Mail-Spam zu verhindern](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [Fügen Sie die beiden SRV-Einträge hinzu, die für Microsoft erforderlich sind](#add-the-two-srv-records-that-are-required-for-microsoft).
+- [Fügen Sie die beiden SRV-Einträge hinzu, die für Microsoft erforderlich sind.](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-Nachdem Sie diese Einträge bei WiX hinzugefügt haben, ist Ihre Domäne für die Verwendung mit Microsoft-Diensten eingerichtet.
+Nachdem Sie diese Datensätze bei Wix hinzugefügt haben, wird Ihre Domäne für die Arbeit mit Microsoft-Diensten eingerichtet.
   
 > [!NOTE]
 >  Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
@@ -61,22 +61,22 @@ Bevor Sie Ihre Domäne mit Microsoft verwenden können, müssen wir uns vergewis
 > Dieser Eintrag wird nur verwendet, um zu überprüfen, ob Sie der Besitzer Ihrer Domäne sind. Er hat keine weiteren Auswirkungen. Sie können ihn später ggf. löschen. 
 
 > [!NOTE]
-> WiX unterstützt keine DNS-Einträge für Unterdomänen.
+> WIX unterstützt keine DNS-Einträge für Unterdomänen.
   
 1. Im ersten Schritt navigieren Sie über [diesen Link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account) zu Ihrer Domänenseite bei Wix. Sie werden aufgefordert, sich zuerst anzumelden.
     
-2. Klicken Sie auf der Seite **Meine Domänen** im Bereich **erweitert** auf die Schaltfläche **DNS bearbeiten** . 
+2. Wählen Sie **auf der** Seite Meine Domänen im Bereich **Erweitert** die Schaltfläche **DNS bearbeiten** aus. 
     
-3. Wählen Sie **+ Add other** in der txt-Zeile **(Text)** des DNS-Editors aus. 
+3. Wählen **Sie in der** Zeile TXT (Text) des **DNS-Editors** + Add another aus. 
     
 4. In the boxes for the new record, type or copy and paste the values from the following table. 
     
    ||||
    |:-----|:-----|:-----|
    | Hostname <br/> | TXT Value <br/> | TTL <br/> |
-   |Automatisch aufgefüllt  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihre spezifischen **Ziel-oder Punkt-zu-Adresse** -Werte aus der Tabelle.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)|1 Hour <br/> |          |
+   |Automatisch aufgefüllt  <br/> |MS=ms *XXXXXXXX*  <br/> **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen „Ziel“- oder **Verweist auf die Adresse**-Wert aus der Tabelle.  [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)|1 Hour <br/> |          |
    
-5. Wählen Sie die Schaltfläche " **DNS speichern** " oben im DNS-Editor aus. 
+5. Wählen Sie **oben im DNS-Editor** die Schaltfläche DNS speichern aus. 
     
 6. Warten Sie einige Minuten, bevor Sie fortfahren, damit der soeben erstellte Eintrag im Internet aktualisiert werden kann.
     
@@ -101,23 +101,23 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 
 1. Im ersten Schritt navigieren Sie über [diesen Link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account) zu Ihrer Domänenseite bei Wix. Sie werden aufgefordert, sich zuerst anzumelden.
     
-2. Wählen Sie auf der Seite **Meine Domänen** im Bereich **Postfächer** den Link **MX-Einträge konfigurieren** aus. 
+2. Wählen Sie **auf der** Seite Meine Domänen im Bereich **Postfächer** den Link Konfigurieren **Ihrer MX-Einträge** aus. 
     
-3. Wählen Sie in der Dropdownliste **Ihres e-Mail-Anbieters** die Option **Sonstiges** aus. 
+3. Wählen **Sie in** der **Dropdownliste Ihr E-Mail-Anbieter** andere aus. 
     
-4. Wählen Sie **+ Add other** aus.
+4. Wählen **Sie + Weitere hinzufügen aus.**
     
 5. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen:
     
    | Hostname | Points to  | Priority | TTL |
    |:-----|:-----|:-----|:-----|
-   |Automatisch aufgefüllt <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Holen Sie sich Ihr  *\<domain-key\>*  Microsoft-Konto.   [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) | 1 Hour|
+   |Automatisch aufgefüllt <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Hinweis:** Erhalten Sie Ihren *\<domain-key\>* über Ihr Microsoft-Konto.   [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](../setup/domains-faq.yml) | 1 Hour|
    
-6. Wenn andere MX-Einträge aufgeführt sind, löschen Sie diese. 
+6. Wenn andere MX-Einträge aufgelistet sind, löschen Sie jeden dieser Einträge. 
     
 7. Wählen Sie **OK** aus.
     
-8. Wählen Sie im Dialogfeld Bestätigung die Option **OK** aus.
+8. Wählen Sie im Bestätigungsdialogfeld OK **aus.**
     
     
 ## <a name="add-the-five-cname-records-that-are-required-for-microsoft"></a>Hinzufügen der fünf für Microsoft erforderlichen CNAME-Einträge
@@ -125,9 +125,9 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 
 1. Im ersten Schritt navigieren Sie über [diesen Link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account) zu Ihrer Domänenseite bei Wix. Sie werden aufgefordert, sich zuerst anzumelden.
     
-2. Klicken Sie auf der Seite **Meine Domänen** im Bereich **erweitert** auf die Schaltfläche **DNS bearbeiten** . 
+2. Wählen Sie **auf der** Seite Meine Domänen im Bereich **Erweitert** die Schaltfläche **DNS bearbeiten** aus. 
     
-3. Wählen Sie **+ Add other** in der Zeile **CNAME (Aliases)** des DNS-Editors für jeden CNAME-Eintrag aus. 
+3. Wählen **Sie für jeden CNAME-Eintrag** in der **Zeile CNAME (Aliases)** des #A0 einen weiteren aus. 
     
 4. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen:
     
@@ -139,7 +139,7 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
    |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 Hour <br/> |
    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |1 Hour  <br/> |
    
-5. Wählen Sie die Schaltfläche " **DNS speichern** " oben im DNS-Editor aus. 
+5. Wählen Sie **oben im DNS-Editor** die Schaltfläche DNS speichern aus. 
     
 6. Warten Sie einige Minuten, bevor Sie fortfahren, damit der soeben erstellte Eintrag im Internet aktualisiert werden kann.
     
@@ -148,21 +148,21 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 <a name="BKMK_spf"> </a>
 
 > [!IMPORTANT]
-> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, Fügen Sie stattdessen die erforderlichen Microsoft-Werte zum aktuellen Datensatz hinzu, sodass Sie einen  *einzelnen*  SPF-Eintrag haben, der beide Wertegruppen enthält.  
+> Es kann bei einer Domäne nur einen TXT-Eintrag für SPF geben. Wenn es bei Ihrer Domäne mehrere SPF-Einträge gibt, treten E-Mail-Fehler sowie Probleme bei der Übermittlung und Spamklassifizierung auf. Wenn es für Ihre Domäne bereits einen SPF-Eintrag gibt, erstellen Sie für Microsoft keinen neuen, sondern fügen Sie die erforderlichen Microsoft-Werte dem aktuellen Eintrag hinzu. Damit verfügen Sie über einen *einzigen* SPF-Eintrag, in dem beide Wertemengen enthalten sind.  
   
 1. Im ersten Schritt navigieren Sie über [diesen Link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account) zu Ihrer Domänenseite bei Wix. Sie werden aufgefordert, sich zuerst anzumelden.
     
-2. Klicken Sie auf der Seite **Meine Domänen** im Bereich **erweitert** auf die Schaltfläche **DNS bearbeiten** . 
+2. Wählen Sie **auf der** Seite Meine Domänen im Bereich **Erweitert** die Schaltfläche **DNS bearbeiten** aus. 
     
-3. Wählen Sie **+ Add other** in der txt-Zeile **(Text)** des DNS-Editors aus. 
+3. Wählen **Sie in der** Zeile TXT (Text) des **DNS-Editors** + Add another aus. 
     
 4. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen:
     
    | Hostname | TXT Value | TTL |
    |:-----|:-----|:-----|
-   |[leer lassen]  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.<br/> |TXT  <br/> | 1 Hour |
+   |[Lassen Sie dies leer]  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Hinweis:** Es wird empfohlen, diesen Eintrag zu kopieren und einzufügen, damit alle Abstände korrekt übernommen werden.<br/> |TXT  <br/> | 1 Hour |
    
-5. Wählen Sie die Schaltfläche " **DNS speichern** " oben im DNS-Editor aus. 
+5. Wählen Sie **oben im DNS-Editor** die Schaltfläche DNS speichern aus. 
     
 6. Warten Sie einige Minuten, bevor Sie fortfahren, damit der soeben erstellte Eintrag im Internet aktualisiert werden kann.
     
@@ -172,21 +172,20 @@ Wenn Microsoft den richtigen TXT-Eintrag findet, ist die Domäne überprüft.
 
 1. Im ersten Schritt navigieren Sie über [diesen Link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account) zu Ihrer Domänenseite bei Wix. Sie werden aufgefordert, sich zuerst anzumelden.
     
-2. Klicken Sie auf der Seite **Meine Domänen** im Bereich **erweitert** auf die Schaltfläche **DNS bearbeiten** . 
+2. Wählen Sie **auf der** Seite Meine Domänen im Bereich **Erweitert** die Schaltfläche **DNS bearbeiten** aus. 
     
-3. Wählen Sie **+ Add other** in der Zeile **SRV** des DNS-Editors aus. 
+3. Wählen **Sie in der** Zeile SRV des **DNS-Editors** + Hinzufügen eine weitere aus. 
     
 4. Geben Sie in den Feldern für den neuen Eintrag die Werte aus der folgenden Tabelle ein. Sie können die Werte auch kopieren und einfügen:
     
    | Dienst | Protokoll | Name | Schriftbreite | Port | Ziel | Priority | TTL |
    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-   |sip  |tls  |Automatisch aufgefüllt |1   |443   |sipdir.online.lync.com |100 |1 Hour |
-   |sipfed|tcp |Automatisch aufgefüllt|1  |5061 |sipfed.online.lync.com|100 | 1 Hour |
+   |sip  |tls  |Automatisch aufgefüllt |1  |443   |sipdir.online.lync.com |100 |1 Hour |
+   |sipfed|tcp |Automatisch aufgefüllt|1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
    
-5. Wählen Sie die Schaltfläche " **DNS speichern** " oben im DNS-Editor aus. 
+5. Wählen Sie **oben im DNS-Editor** die Schaltfläche DNS speichern aus. 
     
 6. Warten Sie einige Minuten, bevor Sie fortfahren, damit der soeben erstellte Eintrag im Internet aktualisiert werden kann.
     
 > [!NOTE]
 > Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
-  

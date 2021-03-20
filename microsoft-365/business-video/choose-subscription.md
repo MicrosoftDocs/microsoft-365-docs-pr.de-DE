@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, welches Microsoft 365-Abonnement für Ihre Organisation richtig ist.
-ms.openlocfilehash: 9bb72b01c7b1119f96120702e7b4f9c80aa4e729
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0ac7dbcad1f2d7fa99db607e6d4696c9f8fcb542
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422819"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913754"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Auswählen eines Microsoft 365-Abonnements
 
@@ -44,7 +44,7 @@ Die Auswahl des richtigen Microsoft 365-Abonnements ist der Schlüssel zum Nutze
 
 ## <a name="compare-plans"></a>Pläne im Vergleich
 
-| **Dienstbereich** | **Funktion** | **Microsoft 365 Business Standard** | **Microsoft 365 Business Premium** | **Office 365 Enterprise E3** |
+| **Dienstbereich** | **Feature** | **Microsoft 365 Business Standard** | **Microsoft 365 Business Premium** | **Office 365 Enterprise E3** |
 | --- | --- | --- | --- | --- |
 | **Verfügbare Lizenzen** | Maximale Anzahl von Benutzern | 300 | 300 | Unbegrenzt |
 | **Office-Apps** | Installieren von Office auf bis zu 5 PCs/Macs + 5 Smartphones pro Benutzer (Word, Excel, PowerPoint, OneNote, Access), Office Online | Business | Business | ProPlus |
@@ -74,4 +74,4 @@ Die Auswahl des richtigen Microsoft 365-Abonnements ist der Schlüssel zum Nutze
 
 \*\*\* Unbegrenzte Archivierung, wenn die automatische Erweiterung aktiviert ist.
 
-Informationen zum Vergleich von Microsoft 365 Business Premium mit anderen Produkten, einschließlich anderer Microsoft 365-Pläne, finden Sie unter [Lizenzierung von Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)für kleine und mittelständische Unternehmen .
+Informationen zum Vergleich von Microsoft 365 Business Premium mit anderen Produkten, einschließlich anderer Microsoft 365-Pläne, finden Sie unter [Lizenzierung von Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)für kleine und mittelständische Unternehmen .

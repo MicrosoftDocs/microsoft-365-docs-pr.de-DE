@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Erfahren Sie mehr über die Verwendung von zentralisierten Add-Ins zum Bereitstellen von Add-Ins für Benutzer und Gruppen in Ihrer Organisation.
-ms.openlocfilehash: b888c0f329e3f1f36f5aa566df7efbab07cd1f5f
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 0750b6c9b91bc5cbd67d227fadb304bfc6cf7537
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509134"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915398"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Verwalten von Add-Ins im Admin Center
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -40,7 +40,7 @@ Office-Add-Ins helfen Ihnen, Ihre Dokumente zu personalisieren und den Zugriff a
 
 Nachdem ein Administrator Add-Ins für Benutzer in einer Organisation bereitgestellt hat, kann der Administrator Add-Ins deaktivieren oder aktivieren, bearbeiten, löschen und den Zugriff auf die Add-Ins verwalten.
 
-Weitere Informationen zum Installieren von Add-Ins aus dem Admin Center finden Sie unter [Deploy add-ins in the Admin Center](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins).
+Weitere Informationen zum Installieren von Add-Ins aus dem Admin Center finden Sie unter [Deploy add-ins in the Admin Center](./manage-deployment-of-add-ins.md).
   
 ## <a name="add-in-states"></a>Add-In-Status
 
@@ -87,7 +87,7 @@ Nach der Bereitstellung können Administratoren auch den Benutzerzugriff auf Add
 ## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>Verhindern von Add-In-Downloads durch Deaktivieren des Office Store für alle Clients (außer Outlook)
 
 > [!NOTE]
-> Die Outlook-Add-In-Installation wird von einem anderen [Prozess verwaltet.](https://technet.microsoft.com/library/jj943754%28v=exchg.150%29.aspx)
+> Die Outlook-Add-In-Installation wird von einem anderen [Prozess verwaltet.](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins)
 
 Als Organisation möchten Sie möglicherweise verhindern, dass neue Office-Add-Ins aus dem Office Store heruntergeladen werden. Dies kann in Verbindung mit der zentralen Bereitstellung verwendet werden, um sicherzustellen, dass nur von der Organisation genehmigte Add-Ins für Benutzer in Ihrer Organisation bereitgestellt werden.
   
@@ -131,10 +131,10 @@ Unterstützung für das Deaktivieren des Office Store ist in den folgenden Versi
     
 Dies verhindert nicht, dass ein Administrator die zentrale Bereitstellung zum Zuweisen eines Add-Ins aus dem Office Store verwendet.
   
-Um zu verhindern, dass sich ein Benutzer mit einem Microsoft-Konto anmeldet, können Sie die Anmeldung auf die Verwendung des Organisationskontos beschränken. Weitere Informationen finden Sie unter [Identität, Authentifizierung und Autorisierung in Office 2016](https://technet.microsoft.com/library/jj683102%28v=office.16%29.aspx).  
+Um zu verhindern, dass sich ein Benutzer mit einem Microsoft-Konto anmeldet, können Sie die Anmeldung auf die Verwendung des Organisationskontos beschränken. Weitere Informationen finden Sie unter [Identität, Authentifizierung und Autorisierung in Office 2016](/DeployOffice/security/identity-authentication-and-authorization-in-office).  
 
 > [!NOTE]
-> Wenn Benutzer nicht auf den Office Store zugreifen können, wird auch verhindert, dass sie [Office-Add-Ins](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)zu Testzwecken querladen.
+> Wenn Benutzer nicht auf den Office Store zugreifen können, wird auch verhindert, dass sie [Office-Add-Ins](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)zu Testzwecken querladen.
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>Weitere Informationen zur Endbenutzererfahrung mit Add-Ins
 
@@ -162,12 +162,12 @@ Wenn das bereitgestellte Add-In keine Add-In-Befehle unterstützt oder Sie alle 
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-[Bereitstellen von Add-Ins im Admin Center](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
+[Bereitstellen von Add-Ins im Admin Center](./manage-deployment-of-add-ins.md)
 
-Weitere Informationen zum Erstellen von [Office-Add-Ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)
+Weitere Informationen zum Erstellen von [Office-Add-Ins](/office/dev/add-ins/overview/office-add-ins)
   
-[Verwenden Sie powerShell-Cmdlets für die zentrale Bereitstellung, um Add-Ins zu verwalten.](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
+[Verwenden Sie powerShell-Cmdlets für die zentrale Bereitstellung, um Add-Ins zu verwalten.](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md)
   
-[Problembehandlung: Benutzer sieht keine Add-Ins](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[Problembehandlung: Benutzer sieht keine Add-Ins](/office365/troubleshoot/access-management/user-not-seeing-add-ins)
 
-[Minderjährige und Erwerben von Add-Ins aus dem Microsoft Store](https://docs.microsoft.com/microsoft-365/admin/manage/minors-and-acquiring-addins-from-the-store)
+[Minderjährige und Erwerben von Add-Ins aus dem Microsoft Store](./minors-and-acquiring-addins-from-the-store.md)

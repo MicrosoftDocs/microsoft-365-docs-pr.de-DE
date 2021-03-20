@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: Verwenden Sie das Microsoft 365 Admin Center oder Windows PowerShell, um Bookings-Kalender zu löschen.
-ms.openlocfilehash: 7407298adb402de79a1010b51544deee4b94cf5a
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 7b79628327797d2e315d31e1b1a2671f0b24e447
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50604020"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913778"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Löschen eines Buchungskalenders in Bookings
 
@@ -46,7 +46,7 @@ Im Buchungskalender werden alle relevanten Informationen zu diesem Buchungskalen
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Löschen eines Buchungskalenders mithilfe von Exchange Online PowerShell
 
-Voraussetzungen und Anleitungen zum Herstellen einer Verbindung mit Exchange Online PowerShell finden Sie unter [Connect to Exchange Online PowerShell.](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps)
+Voraussetzungen und Anleitungen zum Herstellen einer Verbindung mit Exchange Online PowerShell finden Sie unter [Connect to Exchange Online PowerShell.](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps)
 
 Zum Ausführen dieser Schritte müssen Sie ein aktives Microsoft PowerShell-Befehlsfenster verwenden, das Sie ausgeführt haben, indem Sie die Option "Als Administrator ausführen" auswählen.
 
@@ -57,7 +57,7 @@ Zum Ausführen dieser Schritte müssen Sie ein aktives Microsoft PowerShell-Befe
    ```
 
    > [!NOTE]
-   > Wenn Sie [das EXO V2-Modul bereits installiert](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module) haben, funktioniert der vorherige Befehl wie beschrieben.
+   > Wenn Sie [das EXO V2-Modul bereits installiert](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module) haben, funktioniert der vorherige Befehl wie beschrieben.
    
 2. Die Syntax des Befehls, den Sie ausführen müssen, sieht so aus:
 

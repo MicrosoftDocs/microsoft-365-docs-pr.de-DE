@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
-description: Hier erfahren Sie, wie Sie das Microsoft 365-Konto eines Benutzers löschen oder wiederherstellen.
-ms.openlocfilehash: 13908a83ffa39369b2aea71e7212fd0d41488c44
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+description: Erfahren Sie, wie Sie das Microsoft 365-Konto eines Benutzers löschen oder wiederherstellen.
+ms.openlocfilehash: 3b078b782246229d1ddfb1f1fa51282140e71eb0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432183"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914786"
 ---
 # <a name="quick-help-deleted-user"></a>Schnelle Hilfe: Gelöschter Benutzer
 
@@ -38,9 +38,9 @@ ms.locfileid: "44432183"
   
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 
-2. Wählen Sie einen Benutzer aus, und wählen Sie dann oberhalb der Liste der Benutzer **Weitere Optionen** (**...**) aus, und wählen Sie dann **Benutzer löschen**aus.
+2. Wählen Sie einen Benutzer aus, und wählen Sie dann über der Liste der Benutzer weitere **Optionen** (**...**) aus, und wählen Sie dann **Benutzer löschen aus.**
   
-3. Wählen Sie im Bereich Löschungsbestätigung die Option **Benutzer löschen**aus. <br/>[Lesen Sie den vollständigen Artikel.](../add-users/delete-a-user.md)
+3. Wählen Sie im Löschbestätigungsbereich Benutzer **löschen aus.** <br/>[Lesen Sie den vollständigen Artikel.](../add-users/delete-a-user.md)
   
 ::: moniker-end
 
@@ -48,9 +48,9 @@ ms.locfileid: "44432183"
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.  
 
-2. Wählen Sie einen Benutzer aus, und wählen Sie dann oberhalb der Liste der Benutzer **Weitere** Benutzer > **Löschen**aus.
+2. Wählen Sie einen Benutzer aus, und wählen Sie dann über der Liste der Benutzer **weitere** > **Löschen eines Benutzers aus.**
   
-3. Wählen Sie im Bereich Löschungsbestätigung die Option **Benutzer löschen**aus. <br/>[Lesen Sie den vollständigen Artikel.](../add-users/delete-a-user.md)
+3. Wählen Sie im Löschbestätigungsbereich Benutzer **löschen aus.** <br/>[Lesen Sie den vollständigen Artikel.](../add-users/delete-a-user.md)
 
 ::: moniker-end
 
@@ -58,24 +58,24 @@ ms.locfileid: "44432183"
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>. 
 
-2. Wählen Sie einen Benutzer aus, und wählen Sie dann oberhalb der Liste der Benutzer **Weitere** Benutzer > **Löschen**aus.
+2. Wählen Sie einen Benutzer aus, und wählen Sie dann über der Liste der Benutzer **weitere** > **Löschen eines Benutzers aus.**
   
-3. Wählen Sie im Bereich Löschungsbestätigung die Option **Benutzer löschen**aus. <br/>[Lesen Sie den vollständigen Artikel.](../add-users/delete-a-user.md)
+3. Wählen Sie im Löschbestätigungsbereich Benutzer **löschen aus.** <br/>[Lesen Sie den vollständigen Artikel.](../add-users/delete-a-user.md)
 
 ::: moniker-end
 
   
 ## <a name="restore-a-user"></a>Wiederherstellen eines Benutzers
 
-Sie können Benutzer wiederherstellen, indem Sie auf der Startseite nach **gelöschten** Benutzern suchen und **Gelöschte Benutzer** in den Ergebnissen auswählen, oder indem Sie in der linken Navigationsleiste zur Seite **Gelöschte Benutzer** wechseln und den Benutzer auswählen, den Sie wiederherstellen möchten. [Den vollständigen Artikel lesen](../add-users/delete-a-user.md)
+Sie können Benutzer wiederherstellen, indem Sie auf der Startseite nach gelöschten Benutzern  suchen und **in** den Ergebnissen gelöschte Benutzer auswählen oder über die linke Navigation zur Seite Gelöschte Benutzer navigieren und den Benutzer auswählen, den Sie wiederherstellen möchten.  [Den vollständigen Artikel lesen](../add-users/delete-a-user.md)
   
 ## <a name="what-are-deleted-users"></a>Was sind gelöschte Benutzer?
 
 Ein gelöschter [Benutzer](../add-users/add-users.md) ist ein Geschäfts- oder Schulkonto, das Sie aus Ihrer Organisation löschen. 
   
-## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>Gibt das Löschen eines Benutzers Ihre Microsoft 365-Lizenzfrei?
+## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>Gibt das Löschen eines Benutzers seine Microsoft 365-Lizenz frei?
 
-Ja, das Löschen des Benutzers gibt die Microsoft 365-lizenzfrei, die diesem Benutzer zugewiesen ist. Diese Lizenz kann dann einem anderen Benutzer zugewiesen werden. [Den vollständigen Artikel lesen](../../commerce/licenses/remove-licenses-from-subscription.md)
+Ja, das Löschen des Benutzers gibt die microsoft 365-Lizenz frei, die diesem Benutzer zugewiesen ist. Diese Lizenz kann dann einem anderen Benutzer zugewiesen werden. [Den vollständigen Artikel lesen](../../commerce/licenses/buy-licenses.md)
   
 ## <a name="i-had-a-deleted-user-listed-in-deleted-users-and-then-it-disappeared-what-happened"></a>In meiner Liste der gelöschten Benutzer wurde ein gelöschter Benutzer aufgeführt, der nun nicht mehr angezeigt wird. Was ist geschehen?
 
@@ -91,6 +91,4 @@ Wenn Sie einen Benutzer löschen, gehen dessen Daten nicht verloren. Sie werden 
   
 ## <a name="how-do-i-restore-a-user"></a>Wie kann ich einen Benutzer wiederherstellen?
 
-Sie können Benutzer wiederherstellen, indem Sie auf der Startseite nach **gelöschten** Benutzern suchen und **Gelöschte Benutzer** in den Ergebnissen auswählen, oder indem Sie in der linken Navigationsleiste zur Seite **Gelöschte Benutzer** wechseln und den Benutzer auswählen, den Sie wiederherstellen möchten. [Den vollständigen Artikel lesen](../add-users/delete-a-user.md)
-  
-
+Sie können Benutzer wiederherstellen, indem Sie auf der Startseite nach gelöschten Benutzern  suchen und **in** den Ergebnissen gelöschte Benutzer auswählen oder über die linke Navigation zur Seite Gelöschte Benutzer navigieren und den Benutzer auswählen, den Sie wiederherstellen möchten.  [Den vollständigen Artikel lesen](../add-users/delete-a-user.md)

@@ -20,12 +20,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie, wie Sie Ihre Domäne bestätigen und DNS-Einträge mit Microsoft 365 erstellen.
 ms.custom:
 - AdminSurgePortfolio
-ms.openlocfilehash: c5c33af8a5635d1092aec2f1bffdfc942f2e4851
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 506ee887edbc59956aee11059a7085bc4b22624e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126335"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914594"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Verbinden Ihrer Domäne zu Microsoft 365
 
@@ -72,10 +72,10 @@ Stellen Sie sicher, dass die Felder auf die folgenden Werte festgelegt sind:
 
 Speichern Sie den Eintrag.
 
-Überprüfen Sie Ihren SPF-Eintrag, indem Sie eines dieser [SPF-Überprüfungstools](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain) verwenden.
+Überprüfen Sie Ihren SPF-Eintrag, indem Sie eines dieser [SPF-Überprüfungstools](/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain) verwenden.
 
 SPF ist dafür vorgesehen, Spoofing möglichst zu verhindern, es gibt aber Spoofing-Techniken, vor denen SPF nicht schützen kann. Zum Schutz vor diesen Techniken sollten Sie, nachdem Sie SPF eingerichtet haben, auch DKIM und DMARC für Microsoft 365 einrichten.
 
-Um hiermit zu beginnen, lesen Sie [Verwenden von DKIM zur Überprüfung von ausgehenden E-Mails, die von Ihrer Domäne in Microsoft 365 gesendet wurden](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx) und [Verwenden von DMARC zum Überprüfen von E-Mail in Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+Um hiermit zu beginnen, lesen Sie [Verwenden von DKIM zur Überprüfung von ausgehenden E-Mails, die von Ihrer Domäne in Microsoft 365 gesendet wurden](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) und [Verwenden von DMARC zum Überprüfen von E-Mail in Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
 
 Wechseln Sie schlussendlich zurück zum Assistenten für die Domäneneinrichtung im Admin Center, um Ihre Einrichtung abzuschließen.

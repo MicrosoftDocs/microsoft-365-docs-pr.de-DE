@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie die Administratorhilfe für Microsoft 365 Business Premium finden.
-ms.openlocfilehash: cf81ae934a35dadc895a1fc836ef1bd28f5000e0
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 5f09d74a5447b5023b2b3286a3aae504f707d44e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422591"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913634"
 ---
 # <a name="find-answers-and-help-for-admins"></a>Suchen von Antworten und Hilfe für Administratoren
 
@@ -47,6 +47,6 @@ Wenn Sie eine Frage haben oder Unterstützung bei Microsoft 365 Business Premium
 
 Sie können auch die folgenden Ressourcen verwenden, um Hilfe bei Ihrem Problem zu erhalten:
 
-- [aka.ms/learn365admin](https://aka.ms/learn365admin), um nach allen administratorbezogenen Aufgaben und Hilfen zu suchen, z. B. zurücksetzen von Kennwörtern und Zuweisen von Microsoft-Abonnements.
+- [aka.ms/learn365admin](../admin/index.yml), um nach allen administratorbezogenen Aufgaben und Hilfen zu suchen, z. B. zurücksetzen von Kennwörtern und Zuweisen von Microsoft-Abonnements.
 - [answers.microsoft.com](https://answers.microsoft.com), um nach Antworten zu suchen, eine Diskussion zu starten und Fragen von anderen Benutzern zu stellen.
 - [techcommunity.microsoft.com](https://techcommunity.microsoft.com), um einer Experten-Community bei treten und bewährte Methoden mit Microsoft 365 für Ihr Unternehmen zu finden.

@@ -20,24 +20,24 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
-description: Erfahren Sie, wie Sie Lizenzkonflikte mit Ihrem Microsoft 365 Business-Abonnement lösen.
-ms.openlocfilehash: 284a6b169c02314dd2bbd0e13c10c081cb50f58d
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: Erfahren Sie, wie Sie Lizenzkonflikte mit Ihrem Microsoft 365 Business-Abonnement beheben.
+ms.openlocfilehash: e2b5daa71164b41825282bd5652549347b8307c1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114453"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915182"
 ---
 # <a name="resolve-license-conflicts"></a>Lösen von Lizenzkonflikten
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
-Es wird empfohlen, dass Sie die Lizenzen erwerben, die Sie für Ihr Abonnement benötigen, bevor Sie neue Benutzer erstellen. Auf diese Weise kann neuen Benutzern beim Erstellen der Benutzerkonten eine Lizenz zugewiesen werden. Wenn Sie Benutzern bereits alle Lizenzen zugewiesen haben, einige der Lizenzen jedoch abgelaufen sind, oder wenn Sie versuchen, eine Lizenz zu entfernen, die bereits einem Benutzer zugewiesen ist, treten Lizenzkonflikte auf. Weitere Informationen finden Sie unter ["Entfernen von Lizenzen aus Ihrem Abonnement".](../../commerce/licenses/remove-licenses-from-subscription.md)
+Es wird empfohlen, die Lizenzen zu erwerben, die Sie für Ihr Abonnement benötigen, bevor Sie neue Benutzer erstellen. Auf diese Weise kann neuen Benutzern beim Erstellen der Benutzerkonten eine Lizenz zugewiesen werden. Wenn Sie Benutzern bereits alle Lizenzen zugewiesen haben, einige der Lizenzen jedoch abgelaufen sind, oder wenn Sie versuchen, eine Lizenz zu entfernen, die bereits einem Benutzer zugewiesen ist, treten Lizenzkonflikte auf. Weitere Informationen finden Sie unter [Entfernen von Lizenzen aus Ihrem Abonnement](../../commerce/licenses/buy-licenses.md).
   
 ## <a name="how-do-i-view-license-conflicts"></a>Wie kann ich Lizenzkonflikte anzeigen?
 
@@ -59,14 +59,14 @@ Es wird empfohlen, dass Sie die Lizenzen erwerben, die Sie für Ihr Abonnement b
 
 ::: moniker-end
 
-2. Prüfen Sie die Spalte **Status** auf Informationen zum Konflikt. Wenn ein Konflikt vor besteht, wird eine Warnmeldung angezeigt, dass mindestens ein Benutzer eine gültige Lizenz benötigt.
+2. Prüfen Sie die Spalte **Status** auf Informationen zum Konflikt. Wenn ein Konflikt besteht, wird eine Warnmeldung angezeigt, dass mindestens ein Benutzer eine gültige Lizenz benötigt.
 
     > [!NOTE]
     > Die Spalte **Status** wird nicht angezeigt, wenn keine Konflikte vorhanden sind.
 
 ## <a name="how-do-i-resolve-license-conflicts"></a>Wie kann ich Lizenzkonflikte lösen?
 
-Sie können Lizenzkonflikte lösen, indem Sie entweder [weitere](../../commerce/licenses/buy-licenses.md) Lizenzen erwerben oder Lizenzen von Benutzern entfernen, die [diese nicht mehr benötigen.](remove-licenses-from-users.md) Optional können Sie auch [ein Benutzerkonto löschen, um eine Lizenz freizugeben](../add-users/delete-a-user.md).
+Sie können Lizenzkonflikte [lösen,](../../commerce/licenses/buy-licenses.md) indem Sie entweder mehr Lizenzen kaufen oder Lizenzen von Benutzern entfernen, die sie nicht [mehr benötigen.](remove-licenses-from-users.md) Optional können Sie auch [ein Benutzerkonto löschen, um eine Lizenz freizugeben](../add-users/delete-a-user.md).
   
 ## <a name="related-articles"></a>Verwandte Artikel
 

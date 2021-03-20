@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Erfahren Sie, wie Sie Teams für eine bessere Sicherheit bei der gemeinsamen Nutzung von Dateien konfigurieren können, indem Sie drei Schutzebenen verwenden, die ein Gleichgewicht zwischen Sicherheit und einfacher Zusammenarbeit herstellen.
-ms.openlocfilehash: d41effb6db9f8995c3c878523babf200ab9af762
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 37d59d968d3a8e83a5b42fcce4c0400940314a41
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509242"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916214"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Konfigurieren von Teams mit drei Schutzebenen
 
@@ -42,7 +42,7 @@ Die Konfigurationen in diesem Artikel sind auf die Microsoft-Empfehlungen für d
 
 - Schutz vertraulicher Daten
 
-Für weitere Informationen zu diesen Ebenen und Funktionen, die für jede Ebene empfohlen werden, lesen Sie [Illustrationen zu Microsoft Cloud für Enterprise-Architekten](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)
+Für weitere Informationen zu diesen Ebenen und Funktionen, die für jede Ebene empfohlen werden, lesen Sie [Illustrationen zu Microsoft Cloud für Enterprise-Architekten](./cloud-architecture-models.md)
 
 
 ## <a name="three-tiers-at-a-glance"></a>Drei Ebenen auf einen Blick
@@ -68,11 +68,11 @@ Teams für vertraulichen und streng vertraulichen Schutz sind private Teams, in 
 
 ## <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
 
-Die Ebenen „Vertraulich“ und „Streng vertraulich“ verwenden Vertraulichkeitsbezeichnungen, um das Team und die zugehörigen Dateien zu schützen. Um diese Ebenen einzuführen, müssen Sie [Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Office 365-Gruppen und SharePoint-Websites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) aktivieren.
+Die Ebenen „Vertraulich“ und „Streng vertraulich“ verwenden Vertraulichkeitsbezeichnungen, um das Team und die zugehörigen Dateien zu schützen. Um diese Ebenen einzuführen, müssen Sie [Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Office 365-Gruppen und SharePoint-Websites](../compliance/sensitivity-labels-teams-groups-sites.md) aktivieren.
 
 Während auf der Basisebene keine Vertraulichkeitsbezeichnungen erforderlich sind, sollten Sie erwägen, eine "allgemeine" Bezeichnung zu erstellen und dann zu verlangen, dass alle Teams eine Bezeichnung erhalten. Auf diese Weise können Sie sicherstellen, dass die Benutzer die Vertraulichkeit beim Erstellen eines Teams bewusst auswählen. Wenn Sie die Ebenen „Vertraulich“ und „Streng vertraulich“ bereitstellen möchten, empfiehlt es sich, eine "allgemeine" Bezeichnung zu erstellen, die Sie für Basisplan-Teams und für Dateien verwenden können, die nicht vertraulich sind.
 
-Wenn Sie mit der Verwendung von Vertraulichkeitsbezeichnungen noch nicht vertraut sind, empfehlen wir Ihnen, [Erste Schritte mit Vertraulichkeitsbezeichnungen](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels) zu lesen. 
+Wenn Sie mit der Verwendung von Vertraulichkeitsbezeichnungen noch nicht vertraut sind, empfehlen wir Ihnen, [Erste Schritte mit Vertraulichkeitsbezeichnungen](../compliance/get-started-with-sensitivity-labels.md) zu lesen. 
 
 Wenn Sie in Ihrer Organisation bereits Vertraulichkeitsbezeichnungen eingeführt haben, sollten Sie bedenken, wie die in den Ebenen „Vertraulich“ und „Streng vertraulich“ verwendeten Bezeichnungen Ihrer Gesamtstrategie für Bezeichnungen entsprechen. 
 
@@ -95,7 +95,7 @@ Besitzer und Mitglieder des Teams können standardmäßig Dateien und Ordner fü
 
 ## <a name="guest-sharing"></a>Gastfreigabe
 
-Wenn Sie mit Personen außerhalb Ihrer Organisation zusammenarbeiten müssen, empfiehlt es sich, [SharePoint- und OneDrive-Integration mit Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) für optimale Freigabe- und Verwaltungsfunktionen zu konfigurieren.
+Wenn Sie mit Personen außerhalb Ihrer Organisation zusammenarbeiten müssen, empfiehlt es sich, [SharePoint- und OneDrive-Integration mit Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) für optimale Freigabe- und Verwaltungsfunktionen zu konfigurieren.
 
 Die Gastfreigabe von Teams ist standardmäßig deaktiviert, obwohl die Freigabe für Office 365-Gruppen (in denen die Teammitgliedschaft gespeichert ist) und SharePoint aktiviert ist. Die Freigabe von Teams wird auf der Basisplan-Ebene aktiviert und Sie können sie bei Bedarf in den Ebenen „Vertraulich“ und „Streng vertraulich“ mithilfe einer Vertraulichkeitsbezeichnung deaktivieren.
 
@@ -113,7 +113,7 @@ Lesen Sie die folgenden Verweise, um eine sichere und produktive Gastumgebung f�
 
 ## <a name="access-from-unmanaged-devices"></a>Zugriff von nicht verwalteten Geräten aus
 
-Bei den Ebenen „Vertraulich“ und „Streng vertraulich“ wird der Zugriff auf SharePoint-Inhalte mit Vertraulichkeitsbezeichnungen eingeschränkt. Der bedingte Zugriff über Azure AD bietet zahlreiche Optionen, um zu bestimmen, wie Personen auf Microsoft 365 zugreifen, einschließlich Einschränkungen basierend auf Standort, Risiko, Gerätekonformität und anderen Faktoren. Wir empfehlen Ihnen, den Artikel [Was ist bedingter Zugriff?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) zu lesen, und sich zu überlegen, welche zusätzlichen Richtlinien für Ihre Organisation geeignet sein könnten.
+Bei den Ebenen „Vertraulich“ und „Streng vertraulich“ wird der Zugriff auf SharePoint-Inhalte mit Vertraulichkeitsbezeichnungen eingeschränkt. Der bedingte Zugriff über Azure AD bietet zahlreiche Optionen, um zu bestimmen, wie Personen auf Microsoft 365 zugreifen, einschließlich Einschränkungen basierend auf Standort, Risiko, Gerätekonformität und anderen Faktoren. Wir empfehlen Ihnen, den Artikel [Was ist bedingter Zugriff?](/azure/active-directory/conditional-access/overview) zu lesen, und sich zu überlegen, welche zusätzlichen Richtlinien für Ihre Organisation geeignet sein könnten.
 
 Beachten Sie, dass Gäste oft keine Geräte haben, die von Ihrer Organisation verwaltet werden. Wenn Sie Gäste in eine der Ebenen erlauben, überlegen Sie, welche Arten von Geräten diese für den Zugriff auf Teams und Websites verwenden, und legen Sie Ihre Richtlinien für nicht verwaltete Geräte entsprechend fest.
 
@@ -123,6 +123,6 @@ Beginnen Sie mit dem [Konfigurieren der grundlegenden Schutzebene](configure-tea
 
 ## <a name="see-also"></a>Siehe auch
 
-[Sicherheit und Compliance in Microsoft Teams](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+[Sicherheit und Compliance in Microsoft Teams](/microsoftteams/security-compliance-overview)
 
-[Warnungsrichtlinien im Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+[Warnungsrichtlinien im Security & Compliance Center](../compliance/alert-policies.md)

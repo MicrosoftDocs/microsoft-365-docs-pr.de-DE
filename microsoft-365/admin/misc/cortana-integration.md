@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Wenn Sie mit gültigen Geschäfts- oder Schulkonten angemeldet sind, können Benutzer cloudbasierte Unterstützungsdienste mit Cortana in Microsoft 365-Erfahrungen erhalten, die den Datenschutz-, Sicherheits- und Compliance-Zusagen von Office 365 auf Unternehmensebene entsprechen.
-ms.openlocfilehash: 72d7eb2e4195e3941c382d96c7e7319b94202707
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 00702724a44cd75bc68e9f7adac7170d81c080fb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454361"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914798"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -37,7 +37,7 @@ In diesem Schritt konzentrieren wir uns auf Cortana auf die Unternehmensprodukti
 
 - In Übereinstimmung mit anderen Office 365-Diensten erfüllen Cortana-Unternehmensdienste die gleichen Datenschutz-, Sicherheits- und Compliancezusagen auf Unternehmensebene, wie in den [Onlinedienstbedingungen (OST) widergespiegelt.](https://www.microsoft.com/licensing/product-licensing/products)
 
-- Neue Microsoft 365-Erfahrungen, z. B. die Briefing-E-Mail und Meine E-Mails spielen, werden mithilfe von Cortana Enterprise-Diensten aktiviert und erfüllen diese Zusagen vollständig. Diese Features sind derzeit weltweit verfügbar (standard multi-tenant). Weitere Informationen zum Suchen des Verwendungsspeicherorts finden Sie unter [Weitere Eigenschaftswerte für Konten anzeigen.](https://docs.microsoft.com/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#view-additional-property-values-for-accounts)
+- Neue Microsoft 365-Erfahrungen, z. B. die Briefing-E-Mail und Meine E-Mails spielen, werden mithilfe von Cortana Enterprise-Diensten aktiviert und erfüllen diese Zusagen vollständig. Diese Features sind derzeit weltweit verfügbar (standard multi-tenant). Weitere Informationen zum Suchen des Verwendungsspeicherorts finden Sie unter [Weitere Eigenschaftswerte für Konten anzeigen.](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md?view=o365-worldwide#view-additional-property-values-for-accounts)
 
 - Benutzer können eine Verbindung mit Cortana Enterprise Services herstellen, die hier über Cortana in Windows 10 (Version 2004 und höher) beschrieben werden, sowie Clientanwendungen, z. B. Outlook für iOS und Android, unterliegen separaten Lizenzierungsbedingungen. 
 
@@ -77,9 +77,9 @@ Cortana in Windows 10, Version 2004 und höher, erfüllt die gleichen Datenschut
 
 Administratoren können Cortana in Windows 10 für ihre Organisation mithilfe der Richtlinie Experience\AllowCortana MDM oder über die Gruppenrichtlinie: Computerkonfiguration\Administrative Vorlagen\Windows-Komponenten\Suche\Cortana zulassen konfigurieren.
 
-Ab Windows 10, Version 2004, ist Cortana eine mit Windows vorinstallierte App für die universelle Windows-Plattform (UWP) und wird regelmäßig über den Microsoft Store aktualisiert. Um die neuesten Updates für Cortana zu erhalten, müssen Sie Updates [über den Microsoft Store aktivieren.](https://docs.microsoft.com/windows/configuration/stop-employees-from-using-microsoft-store)
+Ab Windows 10, Version 2004, ist Cortana eine mit Windows vorinstallierte App für die universelle Windows-Plattform (UWP) und wird regelmäßig über den Microsoft Store aktualisiert. Um die neuesten Updates für Cortana zu erhalten, müssen Sie Updates [über den Microsoft Store aktivieren.](/windows/configuration/stop-employees-from-using-microsoft-store)
 
-[Weitere Informationen zu Cortana in Windows 10](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview)
+[Weitere Informationen zu Cortana in Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview)
 
 ### <a name="cortana-voice-assistance-in-teams"></a>Cortana-Sprachunterstützung in Teams
 
@@ -101,7 +101,7 @@ Einzelne Benutzer können die Cortana-Sprachunterstützung in der mobilen Teams-
 
 4. Verschieben Sie den Umschalter auf **Ein** oder **Aus,** je nachdem, ob Sie die Cortana-Sprachunterstützung auf dem Gerät benötigen.
 
-[Weitere Informationen zur Cortana-Sprachunterstützung in Teams](https://docs.microsoft.com/microsoftteams/cortana-in-teams)
+[Weitere Informationen zur Cortana-Sprachunterstützung in Teams](/microsoftteams/cortana-in-teams)
 
 ### <a name="conversational-ai-in-outlook-for-ios-with-cortana"></a>Unterhaltungs-KI in Outlook für iOS mit Cortana
 
@@ -144,13 +144,13 @@ Cortana sendet eine personalisierte Briefing-E-Mail mit Aufgaben und Verpflichtu
 
 ### <a name="how-to-opt-out-of-briefing-email"></a>Abmelden von Briefing-E-Mails
 
-Administratoren können Briefing für ihre Organisation mithilfe von [PowerShell](https://docs.microsoft.com/briefing/be-admin) in Exchange Online konfigurieren. Einzelpersonen können cortanas Briefing-E-Mail abmelden, indem **sie** in der Fußzeile der Nachricht abmelden auswählen.
+Administratoren können Briefing für ihre Organisation mithilfe von [PowerShell](/briefing/be-admin) in Exchange Online konfigurieren. Einzelpersonen können cortanas Briefing-E-Mail abmelden, indem **sie** in der Fußzeile der Nachricht abmelden auswählen.
 
 [Weitere Informationen zur Briefing-E-Mail](https://support.microsoft.com/help/4558259)
 
 Wir werden weiterhin weitere Erfahrungen wie die oben genannten einführen, um die Produktivität Ihrer Organisation zu steigern.
 
-[Weitere Informationen zu Microsoft Compliance-Angeboten](https://docs.microsoft.com/microsoft-365/compliance/offering-home)
+[Weitere Informationen zu Microsoft Compliance-Angeboten](/compliance/regulatory/offering-home)
 
 ## <a name="how-is-the-delivery-of-cortana-enterprise-services-different-from-the-delivery-of-other-cortana-features-i-may-have-previously-experienced"></a>Wie unterscheiden sich die Bereitstellung von Cortana-Unternehmensdiensten von der Bereitstellung anderer Cortana-Features, die ich möglicherweise zuvor erlebt habe?
 
