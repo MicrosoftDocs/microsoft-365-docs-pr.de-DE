@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Leistung benutzerdefinierter Erweiterungen in modernen SharePoint Online-Webseiten optimieren können.
-ms.openlocfilehash: 92d328c64c89a1a01bbcd50fb7ad04affdf69af8
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 05d9b9cd9ad70630169595dc42080c718b39dbc8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287197"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923057"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimieren der Leistung benutzerdefinierter Erweiterungen in modernen SharePoint Online-Webseiten
 
@@ -45,16 +45,16 @@ Mögliche Ergebnisse sind:
 - **Verbesserungsmöglichkeiten** (gelb) Werden **fünf** oder mehr Erweiterungen verwendet, werden sie in diesem Abschnitt als Warnung hervorgehoben. Sobald sieben oder mehr verwendet werden, werden diese dann unter "Aktion erforderlich" hervorgehoben.
 - **Keine Aktion erforderlich** (grün): Keine Erweiterung benötigt länger als eine Sekunde zum Laden.
 
-Wenn sich eine Erweiterung auf die Seitenladezeit auswirken oder die Seite  zu viele Erweiterungen enthält, wird das Ergebnis im Abschnitt "Achtung" der Ergebnisse angezeigt. Klicken Sie auf das Ergebnis, um Einzelheiten anzuzeigen, wenn Erweiterungen langsam geladen oder zu viele Erweiterungen hervorgehoben werden. Zukünftige Updates des Tools "Seitendiagnose für SharePoint" können Aktualisierungen der Analyseregeln enthalten. Stellen Sie daher sicher, dass Sie immer über die neueste Version des Tools verfügen.
+Wenn sich eine Erweiterung auf die Ladezeit der Seite auswirken oder zu  viele Erweiterungen auf der Seite verfügbar sind, wird das Ergebnis im Abschnitt Aufmerksamkeit erforderlich der Ergebnisse angezeigt. Klicken Sie auf das Ergebnis, um Einzelheiten anzuzeigen, wenn Erweiterungen langsam geladen oder zu viele Erweiterungen hervorgehoben werden. Zukünftige Updates des Tools "Seitendiagnose für SharePoint" können Aktualisierungen der Analyseregeln enthalten. Stellen Sie daher sicher, dass Sie immer über die neueste Version des Tools verfügen.
 
 ![Ergebnisse der Seitenladezeiten](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
 Die verfügbaren Informationen in den Ergebnissen umfassen:
 
 - **Name und ID** zeigt identifizierende Informationen an, die Ihnen beim Auffinden der Erweiterung auf der Seite helfen können.
-- **Total** shows the total time for the extension to module load and initialize. Dies ist die gesamt relative Zeit, die die Erweiterung für die Ausführung auf der Seite vom Anfang bis zum Ende auf sich genommen hat.
-- **Module Load** zeigt die Zeit an, die zum Herunterladen, Auswerten und Laden der Erweiterungen JavaScript- und CSS-Dateien. Anschließend wird der Vorgang "Init" gestartet.
-- **"Initialisieren"** zeigt die Zeit an, die die Erweiterung zum Initialisieren der Daten auf sich genommen hat.
+- **Total** zeigt die Gesamtzeit für die Erweiterung zum Laden und Initialisieren des Moduls an. Es handelt sich um die gesamte relative Zeit, die die Erweiterung für die Ausführung auf der Seite von Anfang bis Ende auf sich genommen hat.
+- **Modullast** zeigt die Zeit zum Herunterladen, Auswerten und Laden der Erweiterungen JavaScript- und CSS-Dateien an. Anschließend wird der Init-Prozess gestartet.
+- **Init** zeigt die Zeit an, die für die Initialisierung der Daten für die Erweiterung verwendet wurde.
     Es handelt sich um einen asynchronen Aufruf, und die Initzeit ist die Berechnung der Zeit für die onInit-Funktion, wenn die zurückgegebene Zusage aufgelöst wird.
 
 Diese Informationen dienen Designern und Entwicklern zum Beheben von Problemen. Diese Informationen sollten Ihrem Entwurfs- und Entwicklungsteam bereitgestellt werden.
@@ -88,7 +88,7 @@ Seitenautoren können das Überwachungsergebnis auch verwenden, um festzustellen
 
 - **Erweiterungsgröße und Abhängigkeiten**
   - Die Verwendung von Office 365 CDN ist für den optimalen statischen Ressourcendownload erforderlich. Öffentliche CDN-Quellen sind für _js/css_-Dateien vorzuziehen. Weitere Informationen zur Verwendung von Office 365 CDN finden Sie unter [Verwendung von Office 365 Content Delivery Network (CDN) mit SharePoint Online](use-microsoft-365-cdn-with-spo.md).
-  - Verwenden Sie Frameworks wie _React_ und _Fabric-Importe_, die Bestandteil des SharePoint-Frameworks (SPFx) sind. Weitere Informationen finden Sie unter [Übersicht über das SharePoint-Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
+  - Verwenden Sie Frameworks wie _React_ und _Fabric-Importe_, die Bestandteil des SharePoint-Frameworks (SPFx) sind. Weitere Informationen finden Sie unter [Übersicht über das SharePoint-Framework](/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Stellen Sie sicher, dass Sie die neueste Version des SharePoint-Frameworks verwenden, und führen Sie stets Aktualisierungen auf neue Versionen durch, sobald diese verfügbar sind.
 - **Datenabruf/-zwischenspeicherung**
   - Wenn sich die Erweiterung auf zusätzliche Serveraufrufe stützt, um Daten für die Anzeige abzurufen, stellen Sie sicher, dass diese Server-APIs schnell sind und/oder clientseitige Zwischenspeicherung implementieren (z. B. die Verwendung von _localStorage_ oder _IndexDB_ für größere Sets).
@@ -115,7 +115,7 @@ Bevor Sie Seitenrevisionen zur Behebung von Leistungsproblemen durchführen, not
 
 [Optimieren der Leistung von Office 365](tune-microsoft-365-performance.md)
 
-[Leistung in der modernen SharePoint-Oberfläche](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Leistung in der modernen SharePoint-Oberfläche](/sharepoint/modern-experience-performance)
 
 [Netzwerke für die Inhaltsübermittlung](content-delivery-networks.md)
 

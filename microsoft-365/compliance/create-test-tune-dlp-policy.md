@@ -18,19 +18,19 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
-description: In diesem Artikel erfahren Sie, wie Sie eine DLP-Richtlinie entsprechend den Anforderungen Ihrer Organisation erstellen, testen und optimieren.
-ms.openlocfilehash: 9b43899969ab0fdc5d67b051db36c0b245f7811e
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+description: In diesem Artikel erfahren Sie, wie Sie eine DLP-Richtlinie entsprechend Ihren Organisatorischen Anforderungen erstellen, testen und optimieren.
+ms.openlocfilehash: d26412eb54176dfd3c5d881d82076b2a58330ebd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663192"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923451"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Erstellen, Testen und Optimieren einer DLP-Richtlinie
 
-Mit der Verhinderung von Datenverlust (DLP) können Sie verhindern, dass vertrauliche Informationen ungewollt oder versehentlich freigegeben werden.
+Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) hilft Ihnen, die unbeabsichtigte oder versehentliche Freigabe vertraulicher Informationen zu verhindern.
 
-DLP überprüft e-Mail-Nachrichten und Dateien auf vertrauliche Informationen wie eine Kreditkartennummer. Mithilfe von DLP können Sie vertrauliche Informationen identifizieren und die folgenden Aktionen vorsehen:
+DLP untersucht E-Mail-Nachrichten und -Dateien auf vertrauliche Informationen, z. B. eine Kreditkartennummer. Mithilfe von DLP können Sie vertrauliche Informationen identifizieren und die folgenden Aktionen vorsehen:
 
 - Protokollieren des Ereignisses zu Überwachungszwecken
 - Anzeigen einer Warnung für den Endbenutzer, der die E-Mail-Nachricht senden oder die Datei freigeben möchte
@@ -38,44 +38,44 @@ DLP überprüft e-Mail-Nachrichten und Dateien auf vertrauliche Informationen wi
 
 ## <a name="permissions"></a>Berechtigungen
 
-Mitglieder des Kompatibilitätsteams, die DLP-Richtlinien erstellen, benötigen Berechtigungen zum Zugreifen auf das Compliance Center. Standardmäßig hat ihr mandantenadministrator Zugriff auf Compliance Officer und andere Personen zugreifen können. Führen Sie die folgenden Schritte aus:
+Mitglieder des Kompatibilitätsteams, die DLP-Richtlinien erstellen, benötigen Berechtigungen zum Zugreifen auf das Compliance Center. Standardmäßig hat Ihr Mandantenadministrator Zugriff darauf, compliance officers und anderen Personen Zugriff zu geben. Gehen Sie wie folgt vor:
   
 1. Erstellen Sie eine Gruppe in Microsoft 365, und fügen Sie dieser Compliance Officers hinzu.
     
 2. Erstellen Sie eine Rollengruppe auf der Seite **Berechtigungen** des Security &amp; Compliance Center. 
 
-3. Verwenden Sie beim Erstellen der Rollengruppe im Abschnitt **Rollen auswählen** , um der Rollengruppe die folgende Rolle hinzuzufügen: **DLP Compliance Management**.
+3. Verwenden Sie beim Erstellen der Rollengruppe den Abschnitt Rollen **auswählen,** um der Rollengruppe die folgende Rolle **hinzuzufügen: DLP Compliance Management**.
     
 4. Verwenden Sie den Abschnitt **Mitglieder auswählen**, um die zuvor erstellte Microsoft 365-Gruppe der Rollengruppe hinzuzufügen.
 
-Verwenden Sie die **Verwaltungsrolle DLP-Konformität nur anzeigen** , um eine Rollengruppe mit nur-Lese-Berechtigungen für die DLP-Richtlinien und DLP-Berichte zu erstellen.
+Verwenden Sie die **Rolle View-Only DLP Compliance Management,** um Rollengruppen mit Nur-Ansicht-Berechtigungen für die DLP-Richtlinien und DLP-Berichte zu erstellen.
 
 Weitere Informationen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
-Diese Berechtigungen sind erforderlich, um eine DLP-Richtlinie nicht zum Erzwingen von Richtlinien zu erstellen und anzuwenden.
+Diese Berechtigungen sind erforderlich, um eine DLP-Richtlinie zu erstellen und anzuwenden, ohne Richtlinien zu erzwingen.
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>Wie vertrauliche Informationen durch DLP erkannt werden
 
-DLP sucht nach vertraulichen Informationen durch reguläre Ausdrücke (Regex) Mustervergleich, in Kombination mit anderen Indikatoren wie etwa der Nähe bestimmter Stichwörter zu den übereinstimmenden Mustern. Beispielsweise hat eine Visa-Kreditkartennummer 16 Ziffern. Diese Ziffern können jedoch auf unterschiedliche Weise geschrieben werden, beispielsweise 1111-1111-1111-1111, 1111 1111 1111 1111 oder 1111111111111111.
+DLP findet vertrauliche Informationen durch einen Musterabgleich mit regulären Ausdrücken (RegEx) in Kombination mit anderen Indikatoren, z. B. der Nähe bestimmter Schlüsselwörter zu den übereinstimmenden Mustern. Beispielsweise hat eine VISA-Kreditkartennummer 16 Ziffern. Diese Ziffern können jedoch auf unterschiedliche Weise geschrieben werden, z. B. 1111-1111-1111-1111, 1111 1111 1111 1111 oder 11111111111.
 
-Eine 16-stellige Zeichenfolge ist nicht unbedingt eine Kreditkartennummer, es kann sich um eine Ticketnummer von einem helpdesksystem oder eine Seriennummer einer Hardwarekomponente handeln. Um eine Kreditkartennummer von einer harmlosen 16-stelligen Zeichenfolge zu unterscheiden wird eine Berechnung (Prüfsumme) durchgeführt, um zu überprüfen, ob die Zahlen dem bekannten Muster eines der verschiedenen Kreditkartenanbieter entsprechen.
+Jede 16-stellige Zeichenfolge ist nicht unbedingt eine Kreditkartennummer, es kann sich um eine Ticketnummer aus einem Helpdesksystem oder eine Seriennummer eines Hardwareteils handelt. Um eine Kreditkartennummer von einer harmlosen 16-stelligen Zeichenfolge zu unterscheiden wird eine Berechnung (Prüfsumme) durchgeführt, um zu überprüfen, ob die Zahlen dem bekannten Muster eines der verschiedenen Kreditkartenanbieter entsprechen.
 
-Wenn DLP nach Stichwörtern wie "Visa" oder "Amex" sucht, werden near Date-Werte, die möglicherweise das Ablaufdatum der Kreditkarte sein könnten, von DLP verwendet, um zu entscheiden, ob es sich bei der Zeichenfolge um eine Kreditkartennummer handelt oder nicht.
+Wenn DLP Schlüsselwörter wie "VISA" oder "AMEX" findet, also nahe Datumswerte, die das Ablaufdatum der Kreditkarte sein können, verwendet DLP diese Daten auch, um zu entscheiden, ob es sich bei der Zeichenfolge um eine Kreditkartennummer handelt oder nicht.
 
-Das bedeutet, dass DLP intelligent genug ist, um den Unterschied zwischen diesen beiden Textzeichenfolgen in einer e-Mail zu erkennen:
+Anders ausgedrückt: DLP ist intelligent genug, um den Unterschied zwischen diesen beiden Textzeichenfolgen in einer E-Mail zu erkennen:
 
-- "Können Sie mir einen neuen Laptop bestellen. Verwenden Sie meine Visa Nummer 1111-1111-1111-1111, Verfall 11/22, und senden Sie mir das geschätzte Zustellungsdatum, wenn Sie es haben. "
-- "Meine Laptop-Seriennummer ist 2222-2222-2222-2222 und wurde am 11/2010 erworben. Übrigens: ist mein Reisevisum noch freigegeben? "
+- "Können Sie mir einen neuen Laptop bestellen. Verwenden Sie meine VISA-Nummer 1111-1111-1111-1111, ablaufen Sie 22.11., und senden Sie mir das geschätzte Zustellungsdatum, wenn Sie es haben."
+- "Meine Laptop serial number is 2222-2222-2222-2222 and it was purchased on 11/2010. Ist mein Reisevisum übrigens noch genehmigt?"
 
-Unter [vertrauliche Informationen geben Sie Entitätsdefinitionen](sensitive-information-type-entity-definitions.md) an, in denen erläutert wird, wie der jeweilige Informationstyp erkannt wird.
+Weitere Informationen finden Sie [unter Entitätsdefinitionen für vertrauliche Informationen,](sensitive-information-type-entity-definitions.md) in der erläutert wird, wie die einzelnen Informationstypen erkannt werden.
 
 ## <a name="where-to-start-with-data-loss-prevention"></a>Erste Schritte mit DLP (Verhinderung von Datenverlust)
 
-Wenn die Risiken von Datenverlust nicht ganz offensichtlich sind, ist es schwierig, herauszufinden, wo genau Sie mit der Implementierung von DLP beginnen sollten. Glücklicherweise können DLP-Richtlinien im Testmodus ausgeführt werden, sodass Sie ihre Effektivität und Genauigkeit messen können, bevor Sie Sie aktivieren.
+Wenn die Risiken von Datenverlust nicht ganz offensichtlich sind, ist es schwierig, herauszufinden, wo genau Sie mit der Implementierung von DLP beginnen sollten. Glücklicherweise können DLP-Richtlinien im "Testmodus" ausgeführt werden, sodass Sie ihre Effektivität und Genauigkeit messen können, bevor Sie sie aktivieren.
 
-DLP-Richtlinien für Exchange Online können über das Exchange Admin Center verwaltet werden. Sie können DLP-Richtlinien für alle Arbeitsvorgänge aber auch über das Security & Compliance Center konfigurieren, weshalb ich dies für Demonstrationen in diesem Artikel verwenden werde. Im Security & Compliance Center finden Sie die DLP-Richtlinien unter Richtlinie zur **Verhinderung von Datenverlust**  >  . Wählen Sie **Create a Policy** to Start aus.
+DLP-Richtlinien für Exchange Online können über das Exchange Admin Center verwaltet werden. Sie können DLP-Richtlinien für alle Arbeitsvorgänge aber auch über das Security & Compliance Center konfigurieren, weshalb ich dies für Demonstrationen in diesem Artikel verwenden werde. Im Security & Compliance Center finden Sie die DLP-Richtlinien unter Richtlinie zur Verhinderung **von**  >  **Datenverlust.** Wählen **Sie Zu startende Richtlinie** erstellen aus.
 
-Microsoft 365 bietet eine Reihe von [DLP-Richtlinienvorlagen](what-the-dlp-policy-templates-include.md) , die Sie zum Erstellen von Richtlinien verwenden können. Nehmen wir an, Sie sind Inhaber eines australischen Unternehmens. Sie können die Vorlagen in Australien filtern, und wählen Sie Finanzen, Medizin, Gesundheit und Datenschutz aus.
+Microsoft 365 bietet eine Reihe von [DLP-Richtlinienvorlagen,](what-the-dlp-policy-templates-include.md) die Sie zum Erstellen von Richtlinien verwenden können. Nehmen wir an, Sie sind Inhaber eines australischen Unternehmens. Sie können die Vorlagen nach Australien filtern und Finanz-, Medizin- und Gesundheitsschutz sowie Datenschutz auswählen.
 
 ![Option zur Auswahl von Land oder Region](../media/DLP-create-test-tune-choose-country.png)
 
@@ -91,11 +91,11 @@ Wählen Sie die Orte aus, auf die die Richtlinie angewendet werden soll. DLP-Ric
 
 ![Option zur Auswahl aller Orte](../media/DLP-create-test-tune-choose-locations.png)
 
-Akzeptieren Sie beim ersten Schritt der **Richtlinieneinstellungen** einfach die Standardwerte für jetzt. Sie können DLP-Richtlinien anpassen, die Standardwerte sind jedoch ein guter Ausgangspunkt.
+Übernehmen Sie im ersten **Schritt** Richtlinieneinstellungen nur die Standardwerte. Sie können DLP-Richtlinien anpassen, aber die Standardwerte sind ein feiner Anfangsort.
 
 ![Optionen zum Anpassen des zu schützenden Inhaltstyps](../media/DLP-create-test-tune-default-customization-settings.png)
 
-Nach dem Klicken auf Weiter, * * wird Ihnen eine zusätzliche Seite mit **Richtlinieneinstellungen** mit weiteren Anpassungsoptionen angezeigt. Bei einer Richtlinie, die Sie nur testen möchten, können Sie hier einige Anpassungen vornehmen.
+Nachdem Sie auf Weiter** geklickt haben, erhalten Sie eine zusätzliche Seite mit Richtlinieneinstellungen mit weiteren Anpassungsoptionen.  Bei einer Richtlinie, die Sie nur testen möchten, können Sie hier einige Anpassungen vornehmen.
 
 - Ich habe die Richtlinientipps vorläufig deaktiviert. Dies ist sinnvoll, wenn Sie nur einen Test durchführen und den Benutzern noch nichts anzeigen möchten. Richtlinientipps zeigen Benutzern Warnungen an, wenn sie dabei sind, gegen eine DLP-Richtlinie zu verstoßen. So wird einem Outlook-Benutzer beispielsweise eine Warnung angezeigt, dass die von ihm angefügte Datei Kreditkartennummern enthält und seine E-Mail deshalb abgelehnt werden wird. Richtlinientipps sollen Richtlinienverletzungen verhindern, bevor diese stattfinden.
 - Außerdem habe ich die Anzahl der Instanzen von 10 auf 1 gesenkt, damit diese Richtlinie jede Freigabe von australischen PII-Daten erkennt, und nicht nur die Massenfreigabe der Daten.
@@ -111,17 +111,17 @@ Klicken Sie auf der abschließenden Überprüfungsseite auf **Erstellen**, um di
 
 ## <a name="test-a-dlp-policy"></a>Testen einer DLP-Richtlinie
 
-Ihre neue DLP-Richtlinie wird innerhalb ungefähr einer Stunde wirksam. Sie können warten, bis sie durch normale Benutzeraktivitäten ausgelöst wird, oder die Auslösung selbst herbeiführen. Früher habe ich mit [vertraulichen Informationstypen Entitätsdefinitionen](sensitive-information-type-entity-definitions.md)verknüpft, die Informationen zum Auslösen von DLP-Übereinstimmungen bereitstellen.
+Ihre neue DLP-Richtlinie wird innerhalb ungefähr einer Stunde wirksam. Sie können warten, bis sie durch normale Benutzeraktivitäten ausgelöst wird, oder die Auslösung selbst herbeiführen. Zuvor habe ich mit Entitätsdefinitionen vom Typ "Vertrauliche [Informationen" verknüpft,](sensitive-information-type-entity-definitions.md)die Ihnen Informationen zum Auslösen von DLP-Übereinstimmungen bieten.
 
 Die DLP-Richtlinie, die ich für diesen Artikel erstellt habe, wird beispielsweise australische Steuernummern (TFN) erkennen. Gemäß der Dokumentation basiert der Abgleich auf den folgenden Kriterien:
 
 ![Dokumentation zu australischen Steuernummern](../media/DLP-create-test-tune-Australia-Tax-File-Number-doc.png)
  
-Um die TFN-Erkennung auf eine ziemlich unverblümte Weise zu demonstrieren, wird eine e-Mail mit den Worten "Steuerdatei Nummer" und einer 9-stelligen Zeichenfolge in unmittelbarer Nähe ohne Probleme durchfahren. Der Grund dafür, dass die DLP-Richtlinie nicht ausgelöst wird, besteht darin, dass die 9-stellige Zeichenfolge die Prüfsumme übergeben muss, die angibt, dass es sich um eine gültige TFN und nicht nur um eine harmlose Zahlenfolge handelt.
+Um die TFN-Erkennung auf ziemlich unverblümte Weise zu veranschaulichen, wird eine E-Mail mit den Wörtern "Steuerdateinummer" und einer 9-stelligen Zeichenfolge in unmittelbarer Nähe ohne Probleme durchgesegelt. Der Grund dafür, dass die DLP-Richtlinie nicht ausgelöst wird, besteht darin, dass die 9-stellige Zeichenfolge die Prüfsumme übergeben muss, die angibt, dass es sich um eine gültige TFN und nicht nur um eine harmlose Zahlenfolge handelt.
 
 ![Australische Steuernummer, die die Prüfsumme nicht zurückgibt](../media/DLP-create-test-tune-email-test1.png)
 
-Im Vergleich dazu löst eine e-Mail mit den Worten "Steuerdatei Nummer" und einer gültigen TFN, die die Prüfsumme übergibt, die Richtlinie aus. Die TFN, die ich hier verwende, wurde übrigens über eine Website erstellt, die gültige, aber nicht echte TFNs generiert. Solche Websites sind sehr hilfreich, da einer der häufigsten Fehler beim Testen einer DLP-Richtlinie darin besteht, eine gefälschte Zahl zu verwenden, die ungültig ist und deshalb die Prüfsumme nicht zurückgibt (weshalb die Richtlinie auch nicht ausgelöst wird).
+Im Vergleich dazu löst eine E-Mail mit den Wörtern "Steuerdateinummer" und einem gültigen TFN, der die Prüfsumme übergibt, die Richtlinie aus. Die TFN, die ich hier verwende, wurde übrigens über eine Website erstellt, die gültige, aber nicht echte TFNs generiert. Solche Websites sind sehr hilfreich, da einer der häufigsten Fehler beim Testen einer DLP-Richtlinie darin besteht, eine gefälschte Zahl zu verwenden, die ungültig ist und deshalb die Prüfsumme nicht zurückgibt (weshalb die Richtlinie auch nicht ausgelöst wird).
 
 ![Australische Steuernummer, die die Prüfsumme zurückgibt](../media/DLP-create-test-tune-email-test2.png)
 
@@ -195,7 +195,7 @@ Der Benutzer kann die falsch positiven Informationen melden, und der Administrat
 
 ![Vorfallsbericht mit falsch positiven Informationen](../media/DLP-create-test-tune-false-positive-incident-report.png)
 
-Dieser Führerscheinfall ist ein gutes Beispiel, das wir uns näher anschauen sollten. Der Grund, warum dieses falsch positive Ergebnis aufgetreten ist, ist, dass der Typ "australischer Führerschein" durch eine beliebige 9-stellige Zeichenfolge (sogar eine, die Teil einer 10-stelligen Zeichenfolge ist) ausgelöst wird, innerhalb von 300 Zeichen Nähe zu den Schlüsselwörtern "Sydney NSW" (Groß-/Kleinschreibung nicht beachtet). Hier wird sie also durch die Telefonnummer und die E-Mail-Signatur ausgelöst, nur weil der Benutzer zufällig in Sydney ist.
+Dieser Führerscheinfall ist ein gutes Beispiel, das wir uns näher anschauen sollten. Der Grund für dieses falsch positive Ergebnis ist, dass der Typ "Australischer Führerschein" von einer neunstelligen Zeichenfolge ausgelöst wird (auch von einer Zeichenfolge, die Teil einer 10-stelligen Zeichenfolge ist), innerhalb von 300 Zeichen Nähe zu den Schlüsselwörtern "sydney nsw" (keine Groß-/Kleinschreibung). Hier wird sie also durch die Telefonnummer und die E-Mail-Signatur ausgelöst, nur weil der Benutzer zufällig in Sydney ist.
 
 
 Eine besteht darin, den Informationstyp "australischer Führerschein" aus der Richtlinie zu entfernen. Sie ist darin enthalten, weil sie Teil der DLP-Richtlinienvorlage ist, wir sind jedoch nicht gezwungen, sie zu verwenden. Wenn Sie nur an Steuernummern und nicht an Führerscheinnummern interessiert sind, können Sie diesen Informationstyp einfach entfernen. So können Sie ihn beispielsweise aus der Regel zu geringen Mengen in der Richtlinie entfernen, ihn in der Regel zu großen Mengen hingegen belassen, sodass Listen mehrerer Führerscheinnummern weiterhin erkannt werden.
@@ -208,7 +208,7 @@ Eine andere Option besteht darin, einfach die Instanzenanzahl zu erhöhen, sodas
 
 Zusätzlich zum Ändern der Instanzenanzahl können Sie auch die Übereinstimmungsgenauigkeit (oder Konfidenzniveau) anpassen. Wenn Ihr Typ vertraulicher Informationen mehrere Muster aufweist, können Sie die Übereinstimmungsgenauigkeit in Ihrer Regel so anpassen, dass Letztere nur auf bestimmte Muster ausgerichtet ist. Um falsch positive Ergebnisse zu vermeiden, können Sie beispielsweise die Übereinstimmungsgenauigkeit Ihrer Regel so festlegen, dass sie nur dem Muster mit dem höchsten Konfidenzniveau entspricht. Die Berechnung des Konfidenzniveaus ist eine etwas komplexe Angelegenheit (und es zu erklären würde den Rahmen dieses Beitrags sprengen). Hier finden Sie eine gute Erläuterung, [wie Sie das Konfidenzniveau einsetzen können, um Ihre Regeln zu optimieren](data-loss-prevention-policies.md#match-accuracy).
 
-Wenn Sie sich noch etwas weiter fortgeschrittene wünschen, können Sie alle Arten von vertraulichen Informationen anpassen – beispielsweise können Sie "Sydney NSW" aus der Liste der Schlüsselwörter für die [australische Führerscheinnummer](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)entfernen, um das oben ausgelöste falsch positive Ergebnis zu eliminieren. Weitere Informationen dazu mithilfe von XML und PowerShell finden Sie unter [Anpassen eines integrierten vertraulichen Informationstyps](customize-a-built-in-sensitive-information-type.md).
+Wenn Sie noch ein wenig weiter fortgeschritten sein möchten, können Sie einen beliebigen vertraulichen Informationstyp anpassen – beispielsweise können Sie "Sydney NSW" aus der Liste der Schlüsselwörter für die Australische Führerscheinnummer [entfernen,](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)um das oben ausgelöste falsch positive Ergebnis zu beseitigen. Informationen dazu mithilfe von XML und PowerShell finden Sie unter Anpassen eines integrierten typs für vertrauliche [Informationen](customize-a-built-in-sensitive-information-type.md).
 
 ## <a name="turn-on-a-dlp-policy"></a>Aktivieren einer DLP-Richtlinie
 
@@ -216,7 +216,7 @@ Wenn Ihre DLP-Richtlinie vertrauliche Informationstypen genau und effektiv zu Ih
 
 ![Option zum Aktivieren der Richtlinie](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Wenn Sie darauf warten, dass die Richtlinie wirksam wird, [stellen Sie eine Verbindung mit dem Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) her, und führen Sie das [Get-DlpCompliancePolicy-Cmdlet](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy) aus, um den DistributionStatus anzuzeigen.
+Wenn Sie darauf warten, dass die Richtlinie wirksam wird, [stellen Sie eine Verbindung mit dem Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) her, und führen Sie das [Get-DlpCompliancePolicy-Cmdlet](/powershell/module/exchange/get-dlpcompliancepolicy) aus, um den DistributionStatus anzuzeigen.
 
 ![Ausführen des Cmdlets in PowerShell](../media/DLP-create-test-tune-PowerShell.png)
 

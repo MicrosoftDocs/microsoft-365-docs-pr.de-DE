@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Dieser Artikel enthält die neueste Anleitung für die sichere Optimierung der Microsoft 365-Netzwerkkonnektivität.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6f104f53abd0a9aa2376b09c93af96d7f8178e8
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: e0391133721270c0fdfb288b5d26ab23f301a844
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519739"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923290"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Prinzipien von Microsoft 365-Netzwerkverbindungen
 
@@ -226,11 +226,11 @@ Ein ganzheitlicher Ansatz zur Verbesserung der Sicherheit sollte folgende Aspekt
   - Reduzierung der Netzwerksicherheitsanforderungen des WAN-Unternehmensrands
   - Einige Geräte für den Netzwerkperimeterschutz wie Firewalls sind weiterhin erforderlich, aber die Auslastung wird reduziert.
   - Stellt lokalen Ausgangspunkt für Microsoft 365-Datenverkehr sicher
-- Verbesserungen können inkrementell umgesetzt werden, wie im Abschnitt [Inkrementelle Optimierung](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) beschrieben. Einige Optimierungstechniken bieten je nach Netzwerkarchitektur möglicherweise ein besseres Preis-Leistungs-Verhältnis. Wählen Sie die Optimierungen aus, die für Ihre Organisation am besten geeignet sind.
+- Verbesserungen können inkrementell umgesetzt werden, wie im Abschnitt [Inkrementelle Optimierung](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt) beschrieben. Einige Optimierungstechniken bieten je nach Netzwerkarchitektur möglicherweise ein besseres Preis-Leistungs-Verhältnis und Sie sollten die Optimierungen auswählen, die für Ihre Organisation am besten geeignet sind.
 
-Weitere Informationen zu Microsoft 365 Security und Compliance finden Sie im Artikel [Microsoft 365 Security](https://docs.microsoft.com/microsoft-365/security) und [Microsoft 365 Compliance](https://docs.microsoft.com/microsoft-365/compliance).
+Weitere Informationen zu Microsoft 365 Security und Compliance finden Sie im Artikel [Microsoft 365 Security](../security/index.yml) und [Microsoft 365 Compliance](../compliance/index.yml).
   
-## <a name="incremental-optimization"></a>Schrittweise Optimierung
+## <a name="incremental-optimization"></a>Inkrementelle Optimierung
 <a name="BKMK_IncOpt"> </a>
 
 Wir haben weiter oben in diesem Artikel das ideale Netzwerkverbindungsmodell für SaaS vorgestellt, aber vielen großen Organisationen mit historisch komplexen Netzwerkarchitekturen wird es nicht möglich sein, alle diese Änderungen direkt durchzuführen. In diesem Abschnitt befassen wir uns mit einer Reihe von inkrementellen Änderungen zur Verbesserung der Leistung und Zuverlässigkeit von Microsoft 365.

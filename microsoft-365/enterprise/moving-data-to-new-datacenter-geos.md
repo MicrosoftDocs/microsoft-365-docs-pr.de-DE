@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Informieren Sie sich über die neuen Regionen der Office 365-Rechenzentren und erfahren Sie, wie Sie die Option „Data Residency“ verwenden können, um einen Umzug Ihrer Kerndaten in eine neue Region anzufordern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6c5e63a973ca6fdf6aaaaca884df306ff790c325
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
-ms.translationtype: HT
+ms.openlocfilehash: f752956506df98ea71d0d02886d14dc719ed9413
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349244"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921606"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Verschieben von Kerndaten in neue Standorte der Microsoft 365-Rechenzentren
 
@@ -72,6 +72,6 @@ Für die Datenverschiebung in die neue Rechenzentrumsregion fallen keine zusätz
     
 [Allgemeine häufig gestellte Fragen zur Datenverschiebung](data-move-faq.md)
   
-[Neue Rechenzentrumsregionen für Microsoft Dynamics CRM Live](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Neue Rechenzentrumsregionen für Microsoft Dynamics CRM Live](/power-platform/admin/new-datacenter-regions)
   
 [Azure-Dienste nach Region](https://azure.microsoft.com/regions/)

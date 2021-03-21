@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zum Verwenden und Verwalten von Vorlagen zum Erstellen von Bewertungen in Microsoft Compliance Manager. Erstellen und Ändern von Vorlagen mithilfe einer formatierten Excel-Datei.
-ms.openlocfilehash: 9f76ff6202ff9ad4a876c57209748dd7c98877b4
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 2d95aa4172d80a81e8c635edb01ab56579513c53
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405829"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922785"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Arbeiten mit Bewertungsvorlagen im Compliance-Manager
 
 **In diesem Artikel:** Erfahren **Sie, wie Vorlagen funktionieren** und wie Sie sie **auf** ihrer Bewertungsvorlagenseite verwalten. Erhalten Sie Anweisungen **zum Erstellen** neuer Vorlagen, **zum Ändern** vorhandener Vorlagen, zum Formatieren der **Vorlagendaten mit Excel** und zum Exportieren von **Vorlagenberichten.**
 
 > [!IMPORTANT]
-> Die Bewertungsvorlagen, die Für Ihre Organisation verfügbar sind, hängen von Ihrem Lizenzvertrag ab. [Überprüfen Sie die Details](https://go.microsoft.com/fwlink/?linkid=2132371).
+> Die Bewertungsvorlagen, die Für Ihre Organisation verfügbar sind, hängen von Ihrem Lizenzvertrag ab. [Überprüfen Sie die Details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="templates-overview"></a>Übersicht über Vorlagen
 
@@ -38,7 +38,7 @@ Eine Vorlage ist ein Framework von Steuerelementen zum Erstellen einer Bewertung
 
 #### <a name="included-and-premium-templates"></a>Enthaltene und Premium-Vorlagen
 
-Die verfügbaren Vorlagen basieren auf dem Lizenzvertrag Ihrer Organisation ([Anzeigen von Lizenzierungsdetails](https://go.microsoft.com/fwlink/?linkid=2132371)). Es gibt zwei Kategorien von Vorlagen: enthalten und Premium.
+Die verfügbaren Vorlagen basieren auf dem Lizenzvertrag Ihrer Organisation ([Anzeigen von Lizenzierungsdetails](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)). Es gibt zwei Kategorien von Vorlagen: enthalten und Premium.
 
 1. **Enthaltene** Vorlagen können im Rahmen des Lizenzvertrags Ihrer Organisation verwendet werden.
 2. **Premiumvorlagen** müssen erworben werden, um Bewertungen von diesen zu erstellen. Nach dem Kauf können Sie aus einer Vorlage nach Bedarf so viele Bewertungen erstellen.
@@ -60,7 +60,7 @@ Wenn Ihr Indikator beispielsweise 2/5 zeigt, bedeutet dies, dass Ihre Organisati
 
 Wenn Ihr Indikator 5/2 zeigt, bedeutet dies, dass Ihre Organisation ihre Grenzen überschreitet und 3 der verwendeten Premiumvorlagen erwerben muss.
 
-Weitere [Informationen finden Sie unter Compliance Manager Licensing Guidance.](https://go.microsoft.com/fwlink/?linkid=2132371)
+Weitere [Informationen finden Sie unter Compliance Manager Licensing Guidance.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 ## <a name="viewing-and-managing-templates-from-the-assessment-templates-page"></a>Anzeigen und Verwalten von Vorlagen auf der Seite "Bewertungsvorlagen"
 
@@ -220,7 +220,7 @@ Sie können **actionTitle** (Spalte A) nicht bearbeiten, da der Compliance-Manag
 
 #### <a name="change-an-improvement-actions-name"></a>Ändern des Namens einer Verbesserungsaktion
 
-Wenn Sie den Namen einer Verbesserungsaktion ändern möchten, müssen Sie in der Tabelle explizit festlegen, dass Sie einen vorhandenen Namen durch einen neuen Namen ersetzen. Führen Sie die folgenden Schritte aus:
+Wenn Sie den Namen einer Verbesserungsaktion ändern möchten, müssen Sie in der Tabelle explizit festlegen, dass Sie einen vorhandenen Namen durch einen neuen Namen ersetzen. Gehen Sie wie folgt vor:
 
 1. Fügen Sie **auf** der Registerkarte Aktionen ihrer Tabelle der Tabelle nach Spalte A eine neue Spalte hinzu.
 2. In dieser neuen Spalte, die jetzt Spalte B ist, wird die Kopfzeile in Zeile 1: **oldActionTitle angezeigt.**

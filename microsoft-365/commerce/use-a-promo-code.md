@@ -1,5 +1,5 @@
 ---
-title: Verwenden Sie Ihren Promo-Code, um den Preis zu reduzieren
+title: Verwenden Ihres Promotionscodes zum Reduzieren des Preises
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,33 +23,33 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
-description: Hier erfahren Sie, wie Sie einen Promotionscode auf Ihr Microsoft 365-Abonnement anwenden, um den Preis zu reduzieren, und wie Sie im Falle eines Fehlers den Promocode beheben.
-ms.openlocfilehash: 09f39b6f82153c6b23525ab41cfb94e77437d062
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Erfahren Sie, wie Sie einen Werbecode auf Ihr Microsoft 365-Abonnement anwenden, um den Preis zu reduzieren, und wie Sie Werbecode im Falle eines Fehlers behandeln.
+ms.openlocfilehash: c526d5fd44db5e653f79c4987a35c72cdd6fdcad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646739"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921756"
 ---
-# <a name="use-your-promo-code-to-reduce-price"></a>Verwenden Sie Ihren Promo-Code, um den Preis zu reduzieren
+# <a name="use-your-promo-code-to-reduce-price"></a>Verwenden Ihres Promotionscodes zum Reduzieren des Preises
 
-Wenn Sie ein Abonnement erwerben, können Sie einen Promotionscode verwenden, um den Preis zu reduzieren. Lesen Sie diesen Artikel, um zu erfahren, wie Sie einen Promo-Code auf Ihr Abonnement anwenden, Informationen zu den [Promo-Code-Ausdrücken](#promo-code-terms)erhalten und Promo- [Codes behandeln](#troubleshooting-promo-codes)können.
+Wenn Sie ein Abonnement erwerben, können Sie einen Werbecode verwenden, um den Preis zu reduzieren. Lesen Sie diesen Artikel, um zu erfahren, wie Sie [](#promo-code-terms)einen Promotionscode auf Ihr Abonnement anwenden, um mehr über die Werbecodebedingungen und die Problembehandlung von [Promotionscodes zu erfahren.](#troubleshooting-promo-codes)
   
 ## <a name="apply-a-promo-code-to-your-subscription"></a>Zuweisen eines Promotionscodes zu Ihrem Abonnement
 
-1. Beginnen Sie Ihren Einkauf entweder mit dem Kauf eines neuen Abonnements oder indem Sie einem vorhandenen Abonnementdienste hinzufügen.
+1. Beginnen Sie mit dem Kauf eines neuen Abonnements oder durch Hinzufügen von Diensten zu einem vorhandenen Abonnement.
     
-2. Wenn Sie Auschecken, wählen Sie * * haben einen Promo-oder Rabattcode?, und geben Sie dann Ihren Code in das Feld ein. 
+2. Wenn Sie auschecken, wählen Sie **Werbe- oder Rabattcode? aus, und geben Sie dann Ihren Code in das Feld ein. 
   
-3. Wählen Sie **Promo-Code anwenden**aus. Die Bestätigung, dass die Anwendung erfolgreich angewendet wurde, sollte angezeigt werden. Wenn eine andere Meldung angezeigt wird, lesen Sie [Problembehandlung bei Promotionscodes](#troubleshooting-promo-codes), um den Grund herauszufinden. 
+3. Wählen **Sie Promocode anwenden aus.** Sie sollten die Bestätigung sehen, dass sie erfolgreich angewendet wurde. Wenn eine andere Meldung angezeigt wird, lesen Sie [Problembehandlung bei Promotionscodes](#troubleshooting-promo-codes), um den Grund herauszufinden. 
     
-4. Weiter Auschecken. Auf der Seite Auftragsbestätigung sehen Sie Ihren Rabattcode im Betrag. 
+4. Fahren Sie mit dem Auschecken fort. Auf der Seite mit der Auftragsbestätigung wird Ihr Rabattcode angezeigt, der im Betrag enthalten ist. 
     
 Sie können jederzeit nach Abschluss des Kaufs den Rabatt anzeigen, um den die Rechnung aufgrund des Promotionscodes reduziert wurde. Weitere Informationen finden Sie unter [View your](billing-and-payments/view-your-bill-or-invoice.md).
   
 ## <a name="promo-code-terms"></a>Bedingungen für den Promotionscode
 
-Die folgenden Richtlinien gelten für Promo-Codes für Microsoft 365 for Business-Abonnements.
+Die folgenden Richtlinien gelten für Promotionscodes für Microsoft 365 Business-Abonnements.
   
 - **Anzahl der Promotionscodes pro Abonnement** Sie können einen Promotionscode in der gleichen Reihenfolge für mehrere Abonnements verwenden, Sie können jedoch nicht mehrere Promotionscode für ein einziges Abonnement verwenden. 
     
@@ -73,8 +73,8 @@ Wenn Sie nach der Eingabe Ihres Promotionscodes eine Fehlermeldung erhalten, kan
   
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Erwerb eines Abonnements aus Ihrer kostenlosen Testversion](buy-a-subscription-from-your-free-trial.md)
+[Erwerb eines Abonnements aus Ihrer kostenlosen Testversion](./try-or-buy-microsoft-365.md)
   
-[Erwerb eines weiteren Abonnements](buy-another-subscription.md)
+[Erwerb eines weiteren Abonnements](./try-or-buy-microsoft-365.md)
   
 [Erwerben oder Bearbeiten eines Add-Ons](buy-or-edit-an-add-on.md)

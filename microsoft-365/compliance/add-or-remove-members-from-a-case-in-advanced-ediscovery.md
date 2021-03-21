@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Erfahren Sie, wie Sie die Mitglieder hinzufügen oder entfernen, die beim Verwalten eines Advanced eDiscovery-Falls auf einen Fall zugreifen können.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 53119bfa61e259eb7a22dea37ee99b0d7b533da6
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 06199ebfc9bdf24f1e4fb245f3b373c4129ebc9e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423384"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923495"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Hinzufügen oder Entfernen von Mitgliedern aus einem Fall
 
-Sie können Mitglieder hinzufügen oder entfernen, um die Benutzer zu verwalten, die auf den Fall zugreifen können. Bevor ein Mitglied jedoch auf einen Advanced eDiscovery-Fall zugreifen kann (und in diesem Fall Aufgaben ausführen  kann), müssen Sie den Benutzer der Rollengruppe eDiscovery-Manager auf der Seite Berechtigungen im Security and Compliance Center hinzufügen. Weitere Informationen finden Sie unter [Assign eDiscovery permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
+Sie können Mitglieder hinzufügen oder entfernen, um die Benutzer zu verwalten, die auf den Fall zugreifen können. Bevor ein Mitglied jedoch auf einen Advanced eDiscovery-Fall zugreifen kann (und in diesem Fall Aufgaben ausführen  kann), müssen Sie den Benutzer der Rollengruppe eDiscovery-Manager auf der Seite Berechtigungen im Security and Compliance Center hinzufügen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](./assign-ediscovery-permissions.md).
 
 1. Gehen Sie auf der Seite **Advanced eDiscovery** zu dem Fall, dem Sie ein Mitglied hinzufügen möchten.
 

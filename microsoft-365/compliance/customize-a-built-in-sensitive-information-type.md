@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie einen benutzerdefinierten vertraulichen Informationstyp erstellen, der es Ihnen ermöglicht, Regeln zu verwenden, die den Anforderungen Ihrer Organisation entsprechen.
-ms.openlocfilehash: 40584b430af6e822b115e014c20481c027222aae
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 79d79a220e0cd8de0755f6cdac99cf7cceb2997f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423404"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922659"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Anpassen eines benutzerdefinierten vertraulichen Informationstyps
 
@@ -33,7 +33,7 @@ Dieses Beispiel können Sie auf weitere integrierte vertrauliche Informationstyp
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>Exportieren der XML-Datei der aktuellen Regeln
 
-Zum Exportieren der XML-Datei müssen Sie [eine Verbindung mit dem Security and Compliance Center über Remote-PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+Zum Exportieren der XML-Datei müssen Sie [eine Verbindung mit dem Security and Compliance Center über Remote-PowerShell herstellen](/powershell/exchange/connect-to-scc-powershell).
   
 1. Geben Sie in PowerShell Folgendes ein, um die Regeln Ihrer Organisation anzuzeigen. Falls Sie keine eigenen Regeln erstellt haben, werden nur die integrierten Standardregeln mit der Bezeichnung „Microsoft-Regelpaket“ angezeigt.
 
@@ -201,7 +201,7 @@ Zum Hochladen der Regel müssen Sie wie folgt vorgehen.
   
 1. Speichern Sie sie als XML-Datei mit Unicode-Codierung. Dies ist wichtig, da die Regel nicht funktioniert, wenn die Datei mit einer anderen Codierung gespeichert wird.
     
-2. [Herstellen einer Verbindung zum Security and Compliance Center mithilfe von Remote-PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+2. [Herstellen einer Verbindung zum Security and Compliance Center mithilfe von Remote-PowerShell](/powershell/exchange/connect-to-scc-powershell)
     
 3. Geben Sie PowerShell Folgendes ein.
 

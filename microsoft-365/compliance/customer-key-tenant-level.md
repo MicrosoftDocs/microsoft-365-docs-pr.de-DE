@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Erfahren Sie, wie Sie den Kundenschlüssel für alle Daten in Ihrem Microsoft 365-Mandanten einrichten.
-ms.openlocfilehash: 2fed4730e79f6e2ace827eab338bf9da8fe55260
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: f50986b4e72808d4a1cd4dc8ee0182eb9c0a2455
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838240"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922689"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Übersicht über den Kundenschlüssel für Microsoft 365 auf Mandantenebene (öffentliche Vorschau)
 
@@ -68,9 +68,9 @@ Es gibt praktisch keine Beschränkung hinsichtlich der Anzahl von Azure-Abonneme
 
 Der temporäre oder dauerhafte Verlust von Stammverschlüsselungsschlüsseln kann für den Dienstbetrieb störend oder sogar katastrophal sein und zu Datenverlusten führen. Aus diesem Grund ist für die mit Customer Key verwendeten Ressourcen ein starker Schutz erforderlich. Alle Azure-Ressourcen, die mit Customer Key verwendet werden, bieten Schutzmechanismen, die weit über die Standardkonfiguration hinaus gehen. Azure-Abonnements können derart gekennzeichnet oder registriert werden, dass eine sofortige und unwiderrufliche Kündigung vermieden wird. Dies wird als Registrierung eines obligatorischen Aufbewahrungszeitraums bezeichnet. Die schritte, die zum Registrieren von Azure-Abonnements für einen obligatorischen Aufbewahrungszeitraum erforderlich sind, erfordern die Zusammenarbeit mit Microsoft. Dieser Vorgang kann bis zu fünf Arbeitstage dauern. Bisher wurde diese Funktion zeitweise als „Nicht kündigen" bezeichnet.
   
-Bevor Sie sich an das Microsoft 365-Team wenden, müssen Sie die folgenden Schritte für jedes Azure-Abonnement ausführen, das Sie mit Dem Kundenschlüssel verwenden. Stellen Sie sicher, dass Das [Azure PowerShell Az-Modul](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) installiert ist, bevor Sie beginnen.
+Bevor Sie sich an das Microsoft 365-Team wenden, müssen Sie die folgenden Schritte für jedes Azure-Abonnement ausführen, das Sie mit Dem Kundenschlüssel verwenden. Stellen Sie sicher, dass Das [Azure PowerShell Az-Modul](/powershell/azure/new-azureps-module-az) installiert ist, bevor Sie beginnen.
 
-1. Melden Sie sich mit Azure PowerShell an. Anweisungen finden Sie unter [Sign in with Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
+1. Melden Sie sich mit Azure PowerShell an. Anweisungen finden Sie unter [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
 
 2. Führen Sie Register-AzProviderFeature cmdlet aus, um Ihre Abonnements für die Verwendung eines obligatorischen Aufbewahrungszeitraums zu registrieren. Führen Sie diese Aktion für jedes Abonnement aus.
 
@@ -104,7 +104,7 @@ Bevor Sie sich an das Microsoft 365-Team wenden, müssen Sie die folgenden Schri
 
 ### <a name="create-a-premium-azure-key-vault-in-each-subscription"></a>Erstellen eines Premium Azure Key Vault für jedes Abonnement
 
-Die Schritte zum Erstellen eines Schlüssel Tresors sind in ["erste Schritte mit Azure Key Vault"](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)dokumentiert, das Sie durch das Installieren und Ingangsetzen von Azure PowerShell, das Herstellen einer Verbindung mit Ihrem Azure-Abonnement, das Erstellen einer Ressourcengruppe und das Erstellen eines Schlüsseltresors in dieser Ressourcengruppe führt.
+Die Schritte zum Erstellen eines Schlüssel Tresors sind in ["erste Schritte mit Azure Key Vault"](/azure/key-vault/general/overview)dokumentiert, das Sie durch das Installieren und Ingangsetzen von Azure PowerShell, das Herstellen einer Verbindung mit Ihrem Azure-Abonnement, das Erstellen einer Ressourcengruppe und das Erstellen eines Schlüsseltresors in dieser Ressourcengruppe führt.
   
 Wenn Sie einen Schlüsseltresor erstellen, müssen Sie eine SKU auswählen: entweder Standard oder Premium. Die Standard-SKU ermöglicht das Schützen von Azure Key Vault-Schlüsseln mittels Software – es gibt keinen Schlüsselschutz mittels eines Hardware-Sicherheitsmoduls (HSM) – und die Premium-SKU ermöglicht die Verwendung von Hardware-Sicherheitsmodulen zum Schutz von Key-Vault-Schlüsseln. Customer Key akzeptiert Schlüsseltresore mit jeder SKU, wobei Microsoft dringend empfiehlt, nur die Premium-SKU zu verwenden. Die Betriebskosten mit Schlüsseln eines der beiden Typen sind identisch. Der einzige Unterschied bei den Kosten sind die monatlichen Kosten für jeden HSM-geschützten Schlüsseln. Detailinformationen finden Si unter [Key Vault-Preise](https://azure.microsoft.com/pricing/details/key-vault/).
   
@@ -113,7 +113,7 @@ Wenn Sie einen Schlüsseltresor erstellen, müssen Sie eine SKU auswählen: entw
 
 Verwenden Sie ein allgemeines Präfix für Schlüsseltresor und eine Abkürzung für die Verwendung und den Bereich des Schlüsseltresor und der Schlüssel. Für den Contoso-Dienst, in dem sich die Tresore in Nordamerika befinden, ist beispielsweise ein mögliches Namenspaar Contoso-O365-NA-VaultA1 und Contoso-O365-NA-VaultA2. In Azure sind Tresornamen global eindeutige Zeichenfolgen, daher müssen Sie möglicherweise Variationen Ihrer gewünschten Namen ausprobieren, falls die gewünschten Namen bereits von anderen Azure-Kunden beansprucht werden. Nachdem sie konfiguriert wurden, können Die Namen von Tresoren nicht geändert werden. Daher sollten Sie einen schriftlichen Plan für die Einrichtung verwenden und eine zweite Person verwenden, um zu überprüfen, ob der Plan ordnungsgemäß ausgeführt wurde.
 
-Erstellen Sie Ihre Depots nach Möglichkeit in nicht-gekoppelten Regionen. Gekoppelte Azure-Regionen bieten eine hohe Verfügbarkeit über Dienstausfall-Domänen hinweg. Dementsprechend können regionale Paare gegenseitig als Backup-Region der jeweils anderen betrachtet werden. Dies bedeutet, dass eine Azure-Ressource, die in einer bestimmten Region platziert ist, durch die gekoppelte Region automatisch an Fehlertoleranz gewinnt. Aus diesem Grund bedeutet die Auswahl von Regionen für zwei Vaults, die in einer Datenverschlüsselungsrichtlinie verwendet werden, in der die Regionen gekoppelt sind, dass nur insgesamt zwei Verfügbarkeitsregionen verwendet werden. In den meisten geografischen Regionen gibt es nur zwei Regionen, weshalb es noch nicht möglich ist, nicht-gekoppelte Regionen auszuwählen. Wählen Sie nach Möglichkeit zwei nicht gekoppelte Bereiche für die beiden mit einer Datenverschlüsselungsrichtlinie verwendeten Tresore aus. Dies hat den positiven Effekt, dass insgesamt vier verfügbare Regionen genutzt werden. Weitere Informationen hierzu sowie ein aktuelles Verzeichnis der Regionenpaare finden Sie unter [Geschäftskontinuität und Notfallwiederherstellung (Business continuity and disaster recovery, BCDR): Gekoppelte Regionen in Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
+Erstellen Sie Ihre Depots nach Möglichkeit in nicht-gekoppelten Regionen. Gekoppelte Azure-Regionen bieten eine hohe Verfügbarkeit über Dienstausfall-Domänen hinweg. Dementsprechend können regionale Paare gegenseitig als Backup-Region der jeweils anderen betrachtet werden. Dies bedeutet, dass eine Azure-Ressource, die in einer bestimmten Region platziert ist, durch die gekoppelte Region automatisch an Fehlertoleranz gewinnt. Aus diesem Grund bedeutet die Auswahl von Regionen für zwei Vaults, die in einer Datenverschlüsselungsrichtlinie verwendet werden, in der die Regionen gekoppelt sind, dass nur insgesamt zwei Verfügbarkeitsregionen verwendet werden. In den meisten geografischen Regionen gibt es nur zwei Regionen, weshalb es noch nicht möglich ist, nicht-gekoppelte Regionen auszuwählen. Wählen Sie nach Möglichkeit zwei nicht gekoppelte Bereiche für die beiden mit einer Datenverschlüsselungsrichtlinie verwendeten Tresore aus. Dies hat den positiven Effekt, dass insgesamt vier verfügbare Regionen genutzt werden. Weitere Informationen hierzu sowie ein aktuelles Verzeichnis der Regionenpaare finden Sie unter [Geschäftskontinuität und Notfallwiederherstellung (Business continuity and disaster recovery, BCDR): Gekoppelte Regionen in Azure](/azure/best-practices-availability-paired-regions).
 
 ### <a name="assign-permissions-to-each-key-vault"></a>Zuweisen von Berechtigungen für jeden Schlüsseltresor (Key Vault)
 
@@ -124,7 +124,7 @@ Sie müssen für jeden Schlüsseltresor entsprechend der von Ihnen gewählten Im
   > [!IMPORTANT]
   > Die Berechtigungsgruppe, die Schlüsseltresor-Administratoren zugewiesen ist, beinhaltet keine Berechtigung zum Löschen von Schlüsseln. Dies ist beabsichtigt und eine wichtige Vorgehensweise. Kryptografische Schlüssel werden normalerweise nicht gelöscht, da dadurch Daten dauerhaft vernichtet werden. Eine bewährte Methode besteht darin, den Schlüsseltresor-Administratoren diese Berechtigung nicht standardmäßig zuzuweisen. Behalten Sie stattdessen diese Berechtigung den Schlüsseltresor-Mitwirkenden vor und weisen Sie diese einem Administrator nur kurzfristig und lediglich, sofern die damit verbundenen Folgen klar verstanden wurden, zu.
   
-  Melden Sie sich bei Ihrem Azure-Abonnement mit Azure PowerShell an, um diesen Berechtigungen einem Benutzer in Ihrer Organisation zuzuordnen. Anweisungen finden Sie unter [Sign in with Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
+  Melden Sie sich bei Ihrem Azure-Abonnement mit Azure PowerShell an, um diesen Berechtigungen einem Benutzer in Ihrer Organisation zuzuordnen. Anweisungen finden Sie unter [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
 
    Führen Sie Set-AzKeyVaultAccessPolicy cmdlet aus, um die erforderlichen Berechtigungen zu erteilen.
 
@@ -138,7 +138,7 @@ Sie müssen für jeden Schlüsseltresor entsprechend der von Ihnen gewählten Im
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- **Schlüsseltresor-Mitwirkenden**, die Berechtigungen für den Azure Key Vault selbst ändern können. Sie müssen diese Berechtigungen ändern, wenn Mitarbeiter Ihr Team verlassen oder ihrem Team beitreten, oder in der seltenen Situation, dass die Schlüsseltresoradministratoren berechtigterweise die Berechtigung zum Löschen oder Wiederherstellen eines Schlüssels benötigen. Dieser Gruppe von Schlüsseltresor-Mitwirkenden muss die Rolle Mitwirkender für Ihren Schlüsseltresor zugewiesen werden. Sie können diese Rolle mithilfe des Azure-Ressourcenmanagers zuweisen. Ausführliche Schritte finden Sie unter [Use Role-Based Access Control](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure) to manage access to your Azure subscription resources. Der Administrator, der ein Abonnement erstellt, verfügt standardmäßig über diesen Zugriff und kann der Mitwirkendenrolle andere Administratoren zuweisen.
+- **Schlüsseltresor-Mitwirkenden**, die Berechtigungen für den Azure Key Vault selbst ändern können. Sie müssen diese Berechtigungen ändern, wenn Mitarbeiter Ihr Team verlassen oder ihrem Team beitreten, oder in der seltenen Situation, dass die Schlüsseltresoradministratoren berechtigterweise die Berechtigung zum Löschen oder Wiederherstellen eines Schlüssels benötigen. Dieser Gruppe von Schlüsseltresor-Mitwirkenden muss die Rolle Mitwirkender für Ihren Schlüsseltresor zugewiesen werden. Sie können diese Rolle mithilfe des Azure-Ressourcenmanagers zuweisen. Ausführliche Schritte finden Sie unter [Use Role-Based Access Control](/azure/active-directory/role-based-access-control-configure) to manage access to your Azure subscription resources. Der Administrator, der ein Abonnement erstellt, verfügt standardmäßig über diesen Zugriff und kann der Mitwirkendenrolle andere Administratoren zuweisen.
 
 - **Microsoft 365-Daten im** Ruhedienst, der die Arbeit des Kundenschlüssels auf Mandantenebene vor sich hat. Führen Sie zum Erteilen von Berechtigungen für Microsoft 365 das **Cmdlet Set-AzKeyVaultAccessPolicy** mit der folgenden Syntax aus:
 
@@ -162,9 +162,9 @@ Wenn Sie Ihre Schlüssel schnell wiederherstellen können, ist ein umfassender D
   
 Führen Sie die folgenden Schritte aus, um Soft Delete für Ihre Schlüsseltresore zu aktivieren:
   
-1. Melden Sie sich bei Ihrem Azure-Abonnement mit Windows PowerShell. Anweisungen finden Sie unter [Sign in with Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
+1. Melden Sie sich bei Ihrem Azure-Abonnement mit Windows PowerShell. Anweisungen finden Sie unter [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
 
-2. Führen Sie [das Cmdlet Get-AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) aus. In diesem Beispiel ist *der Name des* Tresors der Schlüssel, für den Sie das soft delete aktivieren:
+2. Führen Sie [das Cmdlet Get-AzKeyVault](/powershell/module/az.keyvault/get-azkeyvault) aus. In diesem Beispiel ist *der Name des* Tresors der Schlüssel, für den Sie das soft delete aktivieren:
 
    ```powershell
    $v = Get-AzKeyVault -VaultName <vault name>
@@ -183,7 +183,7 @@ Führen Sie die folgenden Schritte aus, um Soft Delete für Ihre Schlüsseltreso
 
 Es gibt zwei Methoden zum Hinzufügen von Schlüsseln zu einem Azure Key Vault. Sie können entweder direkt im Schlüsseltresor einen Schlüssel erstellen oder aber einen Schlüssel importieren. Das Erstellen eines Schlüssels direkt im Schlüsseltresor ist die einfachere Methode, während der Import eines Schlüssels die vollständige Kontrolle über die Generierung des Schlüssels bietet. Verwenden Sie die RSA-Schlüssel. Azure Key Vault unterstützt das Um- und Auspacken mit elliptischen Kurventasten nicht.
   
-Führen Sie das [Cmdlet Add-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey) wie folgt aus, um einen Schlüssel direkt in Ihrem Schlüsseltresor zu erstellen:
+Führen Sie das [Cmdlet Add-AzKeyVaultKey](/powershell/module/az.keyvault/add-azkeyvaultkey) wie folgt aus, um einen Schlüssel direkt in Ihrem Schlüsseltresor zu erstellen:
   
 ```powershell
 Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Software> -KeyOps wrapKey,unwrapKey
@@ -222,7 +222,7 @@ Wenn die _Recovery Level-Eigenschaft_ einen anderen Wert als den Wert **Recovera
 
 Unmittelbar nach dem Erstellen oder Ändern eines Schlüssels, dem Durchführen einer Sicherung und dem Speichern von Kopien der Sicherung, sowohl online als auch offline. Verbinden Sie keine Offlinekopien mit einem Netzwerk. Speichern Sie sie stattdessen in einem physischen sicheren oder kommerziellen Speicher. Mindestens eine Kopie der Sicherung sollte an einem Speicherort gespeichert werden, auf den bei einem Notfall zugegriffen werden kann. Die einzelnen Sicherungen sind die einzige Möglichkeit zum Wiederherstellen des Schlüsselmaterials, sollte ein Key-Vault-Schlüssel dauerhaft vernichtet oder auf andere Weise funktionsuntüchtig gemacht worden sein. Schlüssel, die sich außerhalb des Azure Key Vault befinden und in Azure Key Vault importiert wurden, sind als Sicherung nicht geeignet, da die Metadaten, die für die Verwendung des Schlüssels mit Customer Key erforderlich sind, mit dem externen Schlüssel nicht vorhanden sind. Nur eine vom Azure Key Vault erstellte Sicherung kann für Wiederherstellungsvorgänge mit Customer Key verwendet werden. Daher ist es wichtig, dass Sie eine Sicherung von Azure Key Vault erstellen, sobald ein Schlüssel hochgeladen oder erstellt wurde.
   
-Führen Sie zum Erstellen einer Sicherung eines Azure Key Vault-Schlüssels das [Cmdlet Backup-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/backup-azkeyvaultkey) wie folgt aus:
+Führen Sie zum Erstellen einer Sicherung eines Azure Key Vault-Schlüssels das [Cmdlet Backup-AzKeyVaultKey](/powershell/module/az.keyvault/backup-azkeyvaultkey) wie folgt aus:
 
 ```powershell
 Backup-AzKeyVaultKey -VaultName <vault name> -Name <key name>
@@ -245,7 +245,7 @@ Das Durchführen der Überprüfung vor der Verwendung von Schlüsseln in einer D
   
 Überprüfen, ob für Ihre Schlüssel die Funktionen „Abrufen“, „WrapKey“ und „unWrapKey“ aktiviert sind:
   
-Führen Sie [das Cmdlet Get-AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) wie folgt aus:
+Führen Sie [das Cmdlet Get-AzKeyVault](/powershell/module/az.keyvault/get-azkeyvault) wie folgt aus:
   
 ```powershell
 Get-AzKeyVault -VaultName <vault name>
@@ -265,7 +265,7 @@ Beispiel: Ersetzen Sie für den Microsoft 365 Data at Rest Encryption-Dienst  *M
   Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName c066d759-24ae-40e7-a56f-027002b5d3e4
   ```
 
-Führen Sie das [Cmdlet Get-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) wie folgt aus, um zu überprüfen, ob für Ihre Schlüssel kein Ablaufdatum festgelegt ist:
+Führen Sie das [Cmdlet Get-AzKeyVaultKey](/powershell/module/az.keyvault/get-azkeyvault) wie folgt aus, um zu überprüfen, ob für Ihre Schlüssel kein Ablaufdatum festgelegt ist:
   
 ```powershell
 Get-AzKeyVaultKey -VaultName <vault name>
@@ -273,7 +273,7 @@ Get-AzKeyVaultKey -VaultName <vault name>
 
 Ein abgelaufener Schlüssel kann nicht vom Kundenschlüssel verwendet werden, und Vorgänge, die mit einem abgelaufenen Schlüssel versucht werden, führen möglicherweise zu einem Dienstausfall. Es wird dringend empfohlen, dass mit Customer Key verwendete Schlüssel kein Ablaufdatum aufweisen. Ein einmal festgelegtes Ablaufdatum kann nicht gelöscht werden, es kann jedoch eine Datumänderung vorgenommen werden. Wenn ein Schlüssel verwendet werden muss, für den ein Ablaufdatum festgelegt ist, ändern Sie bitte das Ablaufdatum auf 31.12.9999. Schlüssel mit einem Ablaufdatum, das auf ein anderes Datum als den 31.12.9999 festgelegt ist, bestehen die Microsoft 365-Überprüfung nicht.
   
-Führen Sie das [Cmdlet Update-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/update-azkeyvaultkey) wie folgt aus, um ein Ablaufdatum zu ändern, das auf einen anderen Wert als den 31.12.9999 festgelegt wurde:
+Führen Sie das [Cmdlet Update-AzKeyVaultKey](/powershell/module/az.keyvault/update-azkeyvaultkey) wie folgt aus, um ein Ablaufdatum zu ändern, das auf einen anderen Wert als den 31.12.9999 festgelegt wurde:
   
 ```powershell
 Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date -Date "12/31/9999")
@@ -291,7 +291,7 @@ In Azure PowerShell:
 
 ## <a name="set-up-the-customer-key-encryption-policy-for-your-tenant"></a>Einrichten der Kundenschlüsselverschlüsselungsrichtlinie für Ihren Mandanten
 
-Bevor Sie diese Cmdlets ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Obwohl in diesem Artikel alle Parameter für die Cmdlets aufgeführt sind, haben Sie möglicherweise keinen Zugriff auf einige Parameter, wenn sie nicht in den Ihnen zugewiesenen Berechtigungen enthalten sind. Wie Sie herausfinden, welche Berechtigungen zur Ausführung eines bestimmten Cmdlets oder Parameters in Ihrer Organisation erforderlich sind, können Sie unter [Find the permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions) nachlesen.
+Bevor Sie diese Cmdlets ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Obwohl in diesem Artikel alle Parameter für die Cmdlets aufgeführt sind, haben Sie möglicherweise keinen Zugriff auf einige Parameter, wenn sie nicht in den Ihnen zugewiesenen Berechtigungen enthalten sind. Wie Sie herausfinden, welche Berechtigungen zur Ausführung eines bestimmten Cmdlets oder Parameters in Ihrer Organisation erforderlich sind, können Sie unter [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions) nachlesen.
 
 ### <a name="create-policy"></a>Richtlinie erstellen
 

@@ -9,22 +9,22 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 34b2186ea3f9129ae7bb602aee879d7d23424136
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: cd45d6155fc0e01f6a285f6182aa051281d160e0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841064"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922908"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Voraussetzungen zugeordneter Laufwerke für Microsoft Managed Desktop
 
-Viele Unternehmensumgebungen haben Legacyanforderungen für zugeordnete Laufwerke, damit ihre Benutzer oder Teams Dateien freigeben und speichern können, oder für lokale Anwendungen. Microsoft empfiehlt nicht die Verwendung von zugeordneten Laufwerken mit Microsoft Managed Desktop. Stattdessen wird empfohlen, die Dateizugriffslösungen wie folgt zu modernisieren:
+Viele Unternehmensumgebungen haben Legacyanforderungen für zugeordnete Laufwerke, um benutzern oder Teams das Freigeben und Speichern von Dateien oder für lokale Anwendungen zu ermöglichen. Microsoft empfiehlt die Verwendung von zugeordneten Laufwerken mit microsoft Managed Desktop nicht. Stattdessen wird empfohlen, ihre Dateizugriffslösungen wie folgt zu modernisieren:
   
 - Migrieren Sie zugeordnete Laufwerke, die von einzelnen Benutzern verwendet werden, zu OneDrive for Business. 
-- Migrieren Sie zugeordnete Laufwerke, die von Teams zum Freigeben von Dateien verwendet werden, zu SharePoint Online. 
-- Modernisieren oder ersetzen Sie Anwendungen, die lokale Dateifreigaben verwenden, um diese Anforderung zu entfernen.
+- Migrieren Sie zugeordnete Laufwerke, die von Teams zum Freigeben von Dateien zu SharePoint Online verwendet werden. 
+- Modernisieren oder ersetzen Sie alle Anwendungen, die lokale Dateifreigaben verwenden, um diese Anforderung zu entfernen.
   
-Die Modernisierung dieser Dienste ermöglicht die beste Benutzererfahrung mit Microsoft Managed Desktop. Microsoft FastTrack Services kann Sie bei der Modernisierung Ihrer Umgebung mithilfe von Microsoft Cloud Services unterstützen. Sie können überprüfen, ob Sie für die FastTrack-Dienste bei [berechtigten](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) Diensten und Plänen berechtigt sind, und diese dann direkt kontaktieren, um sich auf Microsoft Managed Desktop vorzubereiten. Hintergrundinformationen zur FastTrack OneDrive for Business- oder SharePoint #A0 finden Sie unter [Datenmigration.](https://docs.microsoft.com/fasttrack/o365-data-migration)
+Die Modernisierung dieser Dienste ermöglicht eine optimale Benutzeroberfläche mit Microsoft Managed Desktop. Microsoft FastTrack Services unterstützt Sie bei der Modernisierung Ihrer Umgebung mithilfe von Microsoft Cloud Services. Sie können unter Berechtigte Dienste und [](/fasttrack/m365-eligible-services-and-plans) Pläne überprüfen, ob Sie für FastTrack-Dienste berechtigt sind, und sie dann direkt kontaktieren, um sich auf Microsoft Managed Desktop vorzubereiten. Hintergrundinformationen zur FastTrack OneDrive for Business- oder SharePoint #A0 finden Sie unter [Data Migration](/fasttrack/o365-data-migration).
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Zugeordnete Laufwerke auf Microsoft Managed Desktop
  
@@ -32,9 +32,9 @@ Wenn Sie zugeordnete Laufwerke für einige Verwendungsfälle nicht entfernen ode
     
 Für eine solche Anforderung müssen Sie die folgenden Details in der Supportanfrage bereitstellen: 
 
-- Alle UNC-Pfade zu Speicherorten für Dateifreigaben, die für Microsoft Managed Desktop Geräte zugeordnet werden müssen 
-- Benutzergruppen, die Zugriff auf diese Dateifreigabeorte benötigen 
-- Ein bestimmter Laufwerkbuchstabe, der (falls erforderlich) zugewiesen werden muss
+- Alle UNC-Pfade zu Dateifreigabestandorten, die für Microsoft Managed Desktop-Geräte zugeordnet werden müssen 
+- Benutzergruppen, die Zugriff auf diese Dateifreigabestandorte benötigen 
+- Jeder bestimmte Laufwerkbuchstabe, der zugewiesen werden muss (falls erforderlich)
 
 Beispiel:
 
@@ -42,14 +42,14 @@ Beispiel:
 |--------------|----------|------------|
 | X:  | \\\server\share\Marketing | ContosoMarketing |
 
-Es liegt in Ihrer Verantwortung sicherzustellen, dass Benutzer und Gruppen über die richtigen Berechtigungen für den Zugriff auf Speicherorte für Dateifreigaben verfügen und dass die lokalen Dateidienste weiterhin zugänglich sind. Darüber hinaus sollten Sie Ihre Anforderungen für solche Dateifreigaben so bald wie möglich entfernen.
+Es liegt in ihrer Verantwortung sicherzustellen, dass Benutzer und Gruppen über die richtigen Berechtigungen für den Zugriff auf Dateifreigabestandorte verfügen und darauf zugreifen können, dass auf die lokalen Dateidienste zugegriffen werden kann. Darüber hinaus sollten Sie ihre Anforderungen für solche Dateifreigaben so schnell wie möglich entfernen.
 
-### <a name="to-have-mapped-drives-deployed-in-microsoft-managed-desktop"></a>So müssen zugeordnete Laufwerke in Microsoft Managed Desktop bereitgestellt werden
+### <a name="to-have-mapped-drives-deployed-in-microsoft-managed-desktop"></a>So verfügen Sie über zugeordnete Laufwerke, die in Microsoft Managed Desktop bereitgestellt werden
  
-Stellen Sie sicher, dass zugeordnete Laufwerke nicht vermieden werden können, und dass Sie die Anforderungen sorgfältig überprüft haben, bevor Sie eine Dienstanforderung übermitteln. Führen Sie dann die folgenden Schritte aus:
+Stellen Sie sicher, dass zugeordnete Laufwerke nicht vermieden werden können, und Sie haben die Anforderungen sorgfältig überprüft, bevor Sie eine Dienstanforderung übermitteln. Führen Sie dann die folgenden Schritte aus:
 
-1. Navigieren Sie [zu Microsoft Endpoint Manager,](https://endpoint.microsoft.com/) und wählen Sie "Problembehandlung + Support" aus, und suchen Sie dann im Abschnitt "Microsoft Managed Desktop" nach "Serviceanfragen".  
-2. Übermitteln Sie eine Supportanfrage mit dem Titel "Bereitstellung zugeordneter Laufwerke", und geben Sie alle erforderlichen Dateifreigabedetails an.  
-3. Microsoft Managed Desktop IT Operations wird mithilfe von Supportanfrageupdates informieren, wenn die Anforderung abgeschlossen wurde. Zunächst wird diese Konfiguration nur auf Geräten in der Testbereitstellungsgruppe bereitgestellt.  
-4. Sie müssen testen und überprüfen, ob die von Microsoft Managed Desktop -IT-Vorgängen bereitgestellte Konfiguration wie erwartet funktioniert. Antworten Sie über die Registerkarte "Diskussion" in den Details derselben Supportanfrage, um microsoft Managed Desktop -IT-Vorgänge zu benachrichtigen, nachdem Sie die Tests abgeschlossen haben.  
-5. Microsoft Managed Desktop IT Operations team will then deploy the configuration to the other deployment groups. 
+1. Navigieren Sie [zu Microsoft Endpoint Manager,](https://endpoint.microsoft.com/) und wählen Sie "Problembehandlung + Support" aus, und suchen Sie dann im Abschnitt Microsoft Managed Desktop nach "Dienstanforderungen".  
+2. Senden Sie eine Supportanfrage mit dem Titel "Bereitstellung zugeordneter Laufwerke" und geben Sie alle erforderlichen Dateifreigabedetails an.  
+3. Microsoft Managed Desktop IT Operations wird mithilfe von Supportanforderungsupdates darüber informieren, wann die Anforderung abgeschlossen wurde. Anfangs wird diese Konfiguration nur auf Geräten in der Testbereitstellungsgruppe bereitgestellt.  
+4. Sie müssen testen und bestätigen, ob die von den Microsoft Managed Desktop-IT-Vorgängen bereitgestellte Konfiguration wie erwartet funktioniert. Antworten Sie auf der Registerkarte Diskussion in den Details der gleichen Supportanfrage, um Microsoft Managed Desktop IT Operations zu benachrichtigen, sobald Sie ihre Tests abgeschlossen haben.  
+5. Das Microsoft Managed Desktop IT Operations-Team stellt die Konfiguration dann für die anderen Bereitstellungsgruppen zur Bereitstellung zur Seite.

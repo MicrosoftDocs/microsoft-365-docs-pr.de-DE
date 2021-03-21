@@ -20,116 +20,116 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: In diesem Artikel werden Navigations Options Websites mit aktivierter SharePoint-Veröffentlichung in SharePoint Online beschrieben.
-ms.openlocfilehash: 86cefc60a26687835fd6a88de7f249143811de4f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: In diesem Artikel werden Navigationsoptionen beschrieben, auf deren SharePoint Publishing in SharePoint Online aktiviert ist.
+ms.openlocfilehash: b5989bf26ebf7bb1452f983af89a6e6739821d53
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695956"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923624"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Navigationsoptionen für SharePoint Online
 
-In diesem Artikel werden Navigations Options Websites mit aktivierter SharePoint-Veröffentlichung in SharePoint Online beschrieben. Die Auswahl und Konfiguration der Navigation wirkt sich erheblich auf die Leistung und Skalierbarkeit von Websites in SharePoint Online aus. Die Vorlage für die SharePoint-Veröffentlichungswebsite sollte nur bei Bedarf für ein zentralisiertes Portal verwendet werden, und das Veröffentlichungsfeature sollte nur auf bestimmten Websites aktiviert werden und nur, wenn es absolut erforderlich ist, da sich die Leistung bei falscher Verwendung auswirken kann.
+In diesem Artikel werden Navigationsoptionen beschrieben, auf deren SharePoint Publishing in SharePoint Online aktiviert ist. Die Auswahl und Konfiguration der Navigation wirkt sich erheblich auf die Leistung und Skalierbarkeit von Websites in SharePoint Online aus. Die Vorlage für die SharePoint-Veröffentlichungswebsite sollte nur verwendet werden, wenn dies für ein zentrales Portal erforderlich ist, und das Veröffentlichungsfeature sollte nur auf bestimmten Websites und nur dann aktiviert werden, wenn dies unbedingt erforderlich ist, da es sich bei falscher Verwendung auf die Leistung auswirken kann.
 
 >[!NOTE]
->Wenn Sie moderne SharePoint-Navigationsoptionen wie Mega-Menü, kaskadierende Navigation oder Hub-Navigation verwenden, gilt dieser Artikel nicht für Ihre Website. Moderne SharePoint-Website Architekturen nutzen eine vereinfachte Websitehierarchie und ein Hub-and-Spoke-Modell. Auf diese Weise können viele Szenarien erreicht werden, für die die Verwendung des SharePoint-Veröffentlichungsfeatures nicht erforderlich ist.
+>Wenn Sie moderne SharePoint-Navigationsoptionen wie Megamenü, kaskadierende Navigation oder Hubnavigation verwenden, gilt dieser Artikel nicht für Ihre Website. Moderne SharePoint-Websitearchitekturen nutzen eine flachere Websitehierarchie und ein Hub-and-Spoke-Modell. Dadurch können viele Szenarien erreicht werden, für die keine Verwendung des SharePoint-Veröffentlichungsfeatures erforderlich ist.
 
 ## <a name="overview-of-navigation-options"></a>Übersicht über Navigationsoptionen
 
-Die Konfiguration des Navigations Anbieters kann die Leistung für den gesamten Standort erheblich beeinträchtigen, und es ist sorgfältig darauf zu achten, dass Sie einen Navigationsanbieter und eine Konfiguration auswählen, die für die Anforderungen einer SharePoint-Website effektiv skaliert wird. Es gibt zwei out-of-the-Box-Navigationsanbieter sowie benutzerdefinierte Navigations Implementierungen.
+Die Konfiguration des Navigationsanbieters kann sich erheblich auf die Leistung für die gesamte Website auswirken, und es muss sorgfältig darauf bedacht werden, einen Navigationsanbieter und eine Konfiguration zu wählen, die effektiv für die Anforderungen einer SharePoint-Website skaliert wird. Es gibt zwei einsatzfertige Navigationsanbieter sowie benutzerdefinierte Navigationsimplementierung.
 
-Die erste Option, die [**strukturelle Navigation**](#using-structural-navigation-in-sharepoint-online), ist die empfohlene Navigationsoption in SharePoint Online für klassische SharePoint-Websites, **Wenn Sie die Zwischenspeicherung der Struktur Navigation für Ihre Website aktivieren**. Dieser Navigationsanbieter zeigt die Navigationselemente unter der aktuellen Website und optional die aktuelle Website und ihre Geschwister an. Es bietet zusätzliche Funktionen wie Sicherheits Kürzung und Websitestruktur Aufzählung. Wenn die Zwischenspeicherung deaktiviert ist, wirkt sich dies negativ auf die Leistung und Skalierbarkeit aus, und die Einschränkung ist möglicherweise eingeschränkt.
+Die erste Option, [**die Strukturnavigation,**](#using-structural-navigation-in-sharepoint-online)ist die empfohlene Navigationsoption in SharePoint Online für klassische Sharepoint-Websites, wenn Sie die zwischenspeicherung der strukturbaulichen Navigation für **Ihre Website aktivieren.** Dieser Navigationsanbieter zeigt die Navigationselemente unterhalb der aktuellen Website und optional die aktuelle Website und deren gleichgeordnete Elemente an. Es bietet zusätzliche Funktionen, wie z. B. die Sicherheitstrimmerung und die Aufzählung der Websitestruktur. Wenn die Zwischenspeicherung deaktiviert ist, wirkt sich dies negativ auf die Leistung und Skalierbarkeit aus und unterliegt möglicherweise einer Einschränkung.
 
-Die zweite Option, [**verwaltete (Metadaten) Navigation**](#using-managed-navigation-and-metadata-in-sharepoint-online), stellt Navigationselemente mithilfe eines Ausdruckssatzes für verwaltete Metadaten dar. Es wird empfohlen, die Sicherheits Kürzung nur dann zu deaktivieren, wenn dies erforderlich ist. Das Trimmen von Sicherheitsgründen ist als sichere Standardeinstellung für diesen Navigationsanbieter aktiviert. für viele Websites ist jedoch der Aufwand der Sicherheits Kürzung nicht erforderlich, da Navigationselemente häufig für alle Benutzer der Website konsistent sind. Mit der empfohlenen Konfiguration zum Deaktivieren der Einschränkung der Sicherheit erfordert dieser Navigationsanbieter keine Aufzählung der Websitestruktur und ist hochgradig skalierbar mit akzeptabler Leistungsbeeinträchtigung.
+Die zweite Option, [**verwaltete Navigation (Metadaten),**](#using-managed-navigation-and-metadata-in-sharepoint-online)stellt Navigationselemente mithilfe eines Ausdruckssatz für verwaltete Metadaten dar. Es wird empfohlen, die Sicherheitstrimmerung zu deaktivieren, sofern dies nicht erforderlich ist. Die Sicherheitstrimmerung ist als Standardeinstellung für diesen Navigationsanbieter aktiviert. Viele Websites erfordern jedoch keinen Aufwand für die Sicherheitsbeschneidung, da Navigationselemente häufig für alle Benutzer der Website konsistent sind. Mit der empfohlenen Konfiguration zum Deaktivieren der Sicherheitstrimmer erfordert dieser Navigationsanbieter keine Aufzählen der Websitestruktur und ist hochgradig skalierbar mit akzeptablen Auswirkungen auf die Leistung.
 
-Neben den standardmäßigen Navigations Anbietern haben viele Kunden erfolgreich Alternative benutzerdefinierte Navigations Implementierungen implementiert. Weitere Informationen finden Sie in diesem Artikel unter [Such gesteuerte clientseitige Skripts](#using-search-driven-client-side-scripting) .
+Neben den einsatzfertigen Navigationsanbietern haben viele Kunden erfolgreich alternative benutzerdefinierte Navigationsimplementierung implementiert. Weitere [Informationen finden Sie unter Search-driven client-side scripting](#using-search-driven-client-side-scripting) in this article.
   
-## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Vorteile und Nachteile von SharePoint Online Navigationsoptionen
+## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Vor- und Nachteile von SharePoint Online-Navigationsoptionen
 
-In der folgenden Tabelle sind die vor-und Nachteile der einzelnen Optionen zusammengefasst.
+In der folgenden Tabelle sind die Vor- und Nachteile der einzelnen Optionen zusammengefasst.
 
-|Strukturelle Navigation  |Verwaltete Navigation  |Such gesteuerte Navigation  |Benutzerdefinierter Navigationsanbieter  |
+|Strukturnavigation  |Verwaltete Navigation  |Suchgesteuerte Navigation  |Benutzerdefinierter Navigationsanbieter  |
 |---------|---------|---------|---------|
-|Experten<br/><br/>Einfache Wartung<br/>Getrimmte Sicherheit<br/>Wird automatisch innerhalb von 24 Stunden aktualisiert, wenn Inhalte geändert werden<br/>     |Experten<br/><br/>Einfache Wartung<br/>|Experten<br/><br/>Getrimmte Sicherheit<br/>Automatisch aktualisieren, wenn Websites hinzugefügt werden<br/>Schnelle Ladezeit und lokal zwischengespeicherte Navigationsstruktur<br/>|Experten<br/><br/>Breitere Auswahl von verfügbaren Optionen<br/>Schnelles Laden, wenn die Zwischenspeicherung ordnungsgemäß verwendet wird<br/>Viele Optionen funktionieren mit dem reaktionsschnellen Seitenentwurf gut<br/>|
-|Nachteile<br/><br/>**Auswirkungen auf die Leistung, wenn die Zwischenspeicherung deaktiviert ist**<br/>Einschränkungen unterliegen<br/>|Nachteile<br/><br/>Nicht automatisch aktualisiert, um die Websitestruktur widerzuspiegeln<br/>**Auswirkungen auf die Leistung, wenn die Sicherheits Kürzung aktiviert ist** oder wenn die Navigationsstruktur Komplex ist<br/>|Nachteile<br/><br/>Keine Möglichkeit, Websites problemlos zu bestellen<br/>Erfordert die Anpassung der Gestaltungsvorlage (erforderliche technische Kenntnisse)<br/>|Nachteile<br/><br/>Benutzerdefinierte Entwicklung ist erforderlich<br/>Externe Datenquelle/Cachespeicherung erforderlich, beispielsweise Azure<br/>|
+|Vorteile:<br/><br/>Einfach zu warten<br/>Sicherheit gekürzt<br/>Automatische Aktualisierung innerhalb von 24 Stunden, wenn Inhalte geändert werden<br/>     |Vorteile:<br/><br/>Einfach zu warten<br/>|Vorteile:<br/><br/>Sicherheit gekürzt<br/>Automatische Aktualisierungen beim Hinzufügen von Websites<br/>Schnelle Ladezeit und lokal zwischengespeicherte Navigationsstruktur<br/>|Vorteile:<br/><br/>Größere Auswahl an verfügbaren Optionen<br/>Schnelles Laden bei ordnungsgemäßer Zwischenspeicherung<br/>Viele Optionen funktionieren gut mit dem design für reaktionsschnelle Seiten<br/>|
+|Nachteile:<br/><br/>**Wirkt sich auf die Leistung aus, wenn die Zwischenspeicherung deaktiviert ist**<br/>Unterliegt Drosselung<br/>|Nachteile:<br/><br/>Nicht automatisch aktualisiert, um die Websitestruktur wider zuspiegeln<br/>**Wirkt sich auf die Leistung aus, wenn die Sicherheitsbeschneidung aktiviert ist** oder wenn die Navigationsstruktur komplex ist<br/>|Nachteile:<br/><br/>Keine Möglichkeit zum einfachen Bestellen von Websites<br/>Erfordert eine Anpassung der Gestaltungsseite (technische Kenntnisse erforderlich)<br/>|Nachteile:<br/><br/>Benutzerdefinierte Entwicklung ist erforderlich<br/>Externe Datenquelle/gespeicherter Cache ist erforderlich, z. B. Azure<br/>|
 
-Die am besten geeignete Option für Ihre Website hängt von den Anforderungen Ihrer Website und ihrer technischen Leistungsfähigkeit ab. Wenn Sie einen einfach zu konfigurierenden Navigationsanbieter wünschen, der automatisch aktualisiert wird, wenn Inhalt geändert wird, ist die strukturelle Navigation [mit aktivierter Zwischenspeicherung](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43) eine gute Option.
+Die am besten geeignete Option für Ihre Website hängt von Ihren Websiteanforderungen und Ihrer technischen Leistungsfähigkeit ab. Wenn Sie einen einfach zu konfigurierenden Navigationsanbieter wünschen, der automatisch [](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43) aktualisiert wird, wenn Inhalte geändert werden, ist die strukturelle Navigation mit aktivierter Zwischenspeicherung eine gute Option.
 
 >[!NOTE]
->Die Anwendung des gleichen Prinzips wie moderne SharePoint-Websites durch Vereinfachung der allgemeinen Websitestruktur in einer flacheren, nicht hierarchischen Struktur verbessert die Leistung und vereinfacht das Wechseln zu modernen SharePoint-Websites. Dies bedeutet, dass statt einer einzelnen Websitesammlung mit Hunderten von Websites (Unterwebs) ein besserer Ansatz darin besteht, viele Websitesammlungen mit sehr wenigen Unterwebsites (Unterwebs) zu haben.
+>Das Anwenden desselben Prinzips wie moderne SharePoint-Websites durch Vereinfachen der allgemeinen Websitestruktur auf eine flacheren, nicht hierarchischen Strukturen verbessert die Leistung und vereinfacht den Wechsel zu modernen SharePoint-Websites. Dies bedeutet, dass anstelle einer einzigen Websitesammlung mit Hunderten von Websites (Unterwebsites) ein besserer Ansatz besteht, viele Websitesammlungen mit sehr wenigen Unterwebsites (Unterwebsites) zu haben.
 
 ## <a name="analyzing-navigation-performance-in-sharepoint-online"></a>Analysieren der Navigationsleistung in SharePoint Online
 
-Das [Seiten Diagnosetool für SharePoint](https://aka.ms/perftool) ist eine Browser Erweiterung für Microsoft Edge-und Chrome-Browser, die sowohl SharePoint Online moderne Portal-als auch klassische Veröffentlichungswebsite-Seiten analysiert. Dieses Tool funktioniert nur für SharePoint Online und kann nicht auf einer SharePoint-System Seite verwendet werden.
+Das [Tool Seitendiagnose für SharePoint](./page-diagnostics-for-spo.md) ist eine Browsererweiterung für Microsoft Edge- und Chrome-Browser, die sowohl moderne SharePoint Online-Portal- als auch klassische Veröffentlichungswebsiteseiten analysiert. Dieses Tool funktioniert nur für SharePoint Online und kann nicht auf einer SharePoint-Systemseite verwendet werden.
 
-Das Tool generiert einen Bericht für jede analysierte Seite, die zeigt, wie die Seite mit einem vordefinierten Satz von Regeln ausgeführt wird, und zeigt ausführliche Informationen an, wenn Ergebnisse für einen Test außerhalb des Basiswerts liegen. SharePoint Online Administratoren und Designer können das Tool verwenden, um Leistungsprobleme zu beheben, um sicherzustellen, dass neue Seiten vor der Veröffentlichung optimiert werden.
+Das Tool generiert einen Bericht für jede analysierte Seite, in dem gezeigt wird, wie die Seite mit einem vordefinierten Satz von Regeln arbeitet, und zeigt detaillierte Informationen an, wenn ergebnisse für einen Test außerhalb des Basiswerts fallen. SharePoint Online-Administratoren und Designer können das Tool verwenden, um Leistungsprobleme zu beheben, um sicherzustellen, dass neue Seiten vor der Veröffentlichung optimiert werden.
 
-**SPRequestDuration** ist insbesondere die Zeit, die SharePoint benötigt, um die Seite zu verarbeiten. Die schwere Navigation (beispielsweise das Einschließen von Seiten in der Navigation), komplexe Websitehierarchien und andere Konfigurations-und Topologiefunktionen können einen erheblichen Beitrag zur längeren Dauer leisten.
+**SpRequestDuration ist** insbesondere die Zeit, die es dauert, bis SharePoint die Seite verarbeiten kann. Eine hohe Navigation (z. B. Seiten in der Navigation), komplexe Websitehierarchien sowie andere Konfigurations- und Topologieoptionen können erheblich zu längeren Laufzeiten beitragen.
 
-## <a name="using-structural-navigation-in-sharepoint-online"></a>Verwenden der Struktur Navigation in SharePoint Online
+## <a name="using-structural-navigation-in-sharepoint-online"></a>Verwenden der strukturellen Navigation in SharePoint Online
 
-Dies ist die standardmäßig verwendete Navigation, die die einfachste Lösung ist. Es ist keine Anpassung erforderlich, und ein nicht technischer Benutzer kann auch auf einfache Weise Elemente hinzufügen, Elemente ausblenden und die Navigation auf der Seite "Einstellungen" verwalten. Es wird empfohlen, die [Zwischenspeicherung zu aktivieren](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43), da andernfalls ein teurer Leistungskompromiss vorliegt.
+Dies ist die standardmäßig verwendete out-of-the-box-Navigation und die unkomplizierteste Lösung. Es ist keine Anpassung erforderlich, und ein nicht technischer Benutzer kann auch einfach Elemente hinzufügen, Elemente ausblenden und die Navigation auf der Einstellungsseite verwalten. Es wird [empfohlen, die Zwischenspeicherung](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43)zu aktivieren, andernfalls gibt es einen kostspieligen Leistungs-Trade-Off.
 
-### <a name="how-to-implement-structural-navigation-caching"></a>Vorgehensweise implementieren der Zwischenspeicherung der Struktur Navigation
+### <a name="how-to-implement-structural-navigation-caching"></a>Implementieren der strukturellen Navigations-Zwischenspeicherung
 
-Unter **Websiteeinstellungen**  >  **sehen und fühlen**  >  **Navigation**können Sie überprüfen, ob die strukturelle Navigation für die globale Navigation oder aktuelle Navigation ausgewählt ist. Das Auswählen von **Seiten anzeigen** wirkt sich negativ auf die Leistung aus.
+Unter **Websiteeinstellungen**  >  **Navigationsleiste suchen und** fühlen können Sie überprüfen, ob die strukturstrukturierte Navigation für die globale oder die aktuelle Navigation ausgewählt  >  ist. Das **Auswählen von Seiten** anzeigen hat negative Auswirkungen auf die Leistung.
 
-![Struktur Navigation mit ausgewählten Unterwebsites anzeigen](../media/SPONavOptionsStructuredShowSubsites.png)
+![Strukturnavigation mit ausgewählten Unterwebsites anzeigen](../media/SPONavOptionsStructuredShowSubsites.png)
 
-Die Zwischenspeicherung kann auf Websitesammlungsebene und auf Websiteebene aktiviert oder deaktiviert werden und ist standardmäßig für beide aktiviert. Aktivieren **Site Settings**  >  **Site Collection Administration**  >  Sie das Kontrollkästchen zum **Aktivieren der Zwischenspeicherung**auf Websitesammlungsebene Unterwebsite Sammlungsverwaltung Website Sammlungs**Navigation**.
+Die Zwischenspeicherung kann auf Websitesammlungsebene und auf Websiteebene aktiviert oder deaktiviert werden und ist standardmäßig für beide aktiviert. Aktivieren Sie zum Aktivieren auf Websitesammlungsebene unter **Websiteeinstellungen** Websitesammlungsverwaltung  >    >  **Websitesammlungsnavigation** das Kontrollkästchen **Zwischenspeicherung aktivieren.**
 
-![Aktivieren der Zwischenspeicherung auf Websiteebene](../media/structural-nav/structural-nav-caching-site-coll.png)
+![Aktivieren der Zwischenspeicherung auf Standortebene](../media/structural-nav/structural-nav-caching-site-coll.png)
 
-Aktivieren **Site Settings**  >  Sie das Kontrollkästchen **Zwischenspeicherung aktivieren**, um auf Websiteebene Unterwebsite Einstellungen zu**Navigieren**.
+Aktivieren Sie zum Aktivieren auf Websiteebene unter Navigation für **Websiteeinstellungen** das Kontrollkästchen  >   **Zwischenspeicherung aktivieren.**
 
-![Aktivieren der Zwischenspeicherung auf Websiteebene](../media/structural-nav/structural-nav-caching-site.png)
+![Aktivieren der Zwischenspeicherung auf Standortebene](../media/structural-nav/structural-nav-caching-site.png)
 
-## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Verwenden der verwalteten Navigation und der Metadaten in SharePoint Online
+## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Verwenden verwalteter Navigation und Metadaten in SharePoint Online
 
-Die verwaltete Navigation ist eine weitere out-of-the-Box-Option, die Sie verwenden können, um die meisten der gleichen Funktionen wie die strukturelle Navigation neu zu erstellen. Verwaltete Metadaten können so konfiguriert werden, dass die Sicherheits Kürzung aktiviert oder deaktiviert wird. Bei deaktivierter Sicherheits Kürzung ist die verwaltete Navigation relativ effizient, da alle Navigationslinks mit einer Konstanten Anzahl von Server aufrufen geladen werden. Durch das Aktivieren der Sicherheits Kürzung werden jedoch einige der Leistungsvorteile der verwalteten Navigation negiert.
+Die verwaltete Navigation ist eine weitere out-of-the-box-Option, die Sie verwenden können, um die meisten der gleichen Funktionen wie die Strukturnavigation neu zu erstellen. Verwaltete Metadaten können so konfiguriert werden, dass die Sicherheitsbeschneidung aktiviert oder deaktiviert ist. Bei deaktivierter Sicherheitstrimmerung ist die verwaltete Navigation relativ effizient, da sie alle Navigationslinks mit einer konstanten Anzahl von Serveraufrufen lädt. Durch die Aktivierung der Sicherheitstrimmerung werden jedoch einige der Leistungsvorteile der verwalteten Navigation negiert.
 
-Wenn Sie das Kürzen von Sicherheitsgründen aktivieren müssen, empfehlen wir Folgendes:
+Wenn Sie die Sicherheitsbeschneidung aktivieren müssen, wird empfohlen, dass Sie:
 
 - Aktualisieren aller benutzerfreundlichen URL-Links auf einfache Links
-- Hinzufügen erforderlicher Sicherheits Kürzungs Knoten als benutzerfreundliche URLs
-- Beschränken Sie die Anzahl der Navigationselemente auf nicht mehr als 100 und nicht mehr als 3 Ebenen tief
+- Hinzufügen erforderlicher Knoten zur Sicherheitsbeschneidung als benutzerfreundliche URLs
+- Beschränken sie die Anzahl der Navigationselemente auf nicht mehr als 100 und nicht mehr als 3 Ebenen tief
 
-Für viele Websites ist keine Sicherheits Kürzung erforderlich, da die Navigationsstruktur häufig für alle Benutzer der Website konsistent ist. Wenn die Sicherheits Kürzung deaktiviert ist und der Navigation ein Link hinzugefügt wird, auf den nicht alle Benutzer Zugriff haben, wird der Link weiterhin angezeigt, führt jedoch zu einer Meldung mit Zugriff verweigert. Es besteht keine Gefahr eines versehentlichen Zugriffs auf den Inhalt.
+Viele Websites erfordern keine Sicherheitsbeschneidung, da die Navigationsstruktur häufig für alle Benutzer der Website konsistent ist. Wenn die Sicherheitsentschneidung deaktiviert ist und der Navigation ein Link hinzugefügt wird, auf den nicht alle Benutzer Zugriff haben, wird der Link weiterhin angezeigt, führt aber zu einer Zugriffs verweigerten Nachricht. Es besteht kein Risiko eines unbeabsichtigten Zugriffs auf den Inhalt.
 
 ### <a name="how-to-implement-managed-navigation-and-the-results"></a>Implementieren der verwalteten Navigation und der Ergebnisse
 
-In docs.Microsoft.com finden Sie verschiedene Artikel zu den Details der verwalteten Navigation. Beispiel: siehe [Übersicht über die verwaltete Navigation in SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation).
+Es gibt mehrere Artikel zu docs.microsoft.com informationen zu den Details der verwalteten Navigation. Beispiel: Übersicht über [die verwaltete Navigation in SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
 
-Um die verwaltete Navigation zu implementieren, richten Sie Begriffe mit URLs ein, die der Navigationsstruktur der Website entsprechen. Die verwaltete Navigation kann sogar manuell kuratiert werden, um die Struktur Navigation in vielen Fällen zu ersetzen. Beispiel:
+Zum Implementieren der verwalteten Navigation richten Sie Begriffe mit URLs ein, die der Navigationsstruktur der Website entspricht. Die verwaltete Navigation kann sogar manuell kuratiert werden, um die Strukturnavigation in vielen Fällen zu ersetzen. Beispiel:
 
-![SharePoint Online Websitestruktur](../media/SPONavOptionsListOfSites.png))
+![SharePoint Online-Websitestruktur](../media/SPONavOptionsListOfSites.png))
 
-## <a name="using-search-driven-client-side-scripting"></a>Verwenden von Such gesteuerten clientseitigen Skripts
+## <a name="using-search-driven-client-side-scripting"></a>Verwenden von suchgesteuertem clientseitigem Skripting
 
-Eine allgemeine Klasse von Implementierungen für benutzerdefinierte Navigation umfasst Client gerenderte Entwurfsmuster, die einen lokalen Cache von Navigationsknoten speichern.
+Eine allgemeine Klasse von benutzerdefinierten Navigationsimplementierung umfasst vom Client gerenderte Entwurfsmuster, die einen lokalen Cache von Navigationsknoten speichern.
 
 Diese Navigationsanbieter haben einige wichtige Vorteile:
 
-- Sie funktionieren im Allgemeinen gut mit reaktionsschnellen Seitendesigns.
-- Sie sind extrem skalierbar und leistungsfähig, da Sie ohne Ressourcenkosten Rendern können (und nach einem Timeout im Hintergrund aktualisieren).
+- Sie funktionieren in der Regel gut mit ansprechenden Seitendesigns.
+- Sie sind äußerst skalierbar und performant, da sie ohne Ressourcenkosten gerendert werden können (und nach einem Timeout im Hintergrund aktualisiert werden).
 - Diese Navigationsanbieter können Navigationsdaten mithilfe verschiedener Strategien abrufen, von einfachen statischen Konfigurationen bis hin zu verschiedenen dynamischen Datenanbietern.
 
-Ein Beispiel für einen Datenanbieter ist die Verwendung einer **Such gesteuerten Navigation**, die Flexibilität beim Aufzählen von Navigationsknoten und der effizienten Handhabung von Sicherheits Trimmungen ermöglicht.
+Ein Beispiel für einen Datenanbieter ist die Verwendung einer suchgesteuerten **Navigation,** die flexibilität zum Aufzählen von Navigationsknoten und zum effizienten Behandeln von Sicherheitstrimmern ermöglicht.
 
-Es gibt andere beliebte Optionen zum Erstellen **benutzerdefinierter Navigationsanbieter**. Weitere Anleitungen zum Erstellen eines benutzerdefinierten Navigations Anbieters finden Sie unter [Navigationslösungen für SharePoint Online-Portale](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation) .
+Es gibt weitere beliebte Optionen zum Erstellen von **benutzerdefinierten Navigationsanbietern.** Weitere Anleitungen zum Erstellen eines benutzerdefinierten [Navigationsanbieters](/sharepoint/dev/solution-guidance/portal-navigation) finden Sie unter Navigationslösungen für SharePoint Online-Portale.
 
-Mithilfe der Suche können Sie die Indizes nutzen, die im Hintergrund mithilfe der kontinuierlichen Durchforstung aufgebaut werden. Die Suchergebnisse werden aus dem Suchindex abgerufen, und die Ergebnisse werden Sicherheits getrimmt. Dies ist im Allgemeinen schneller als bei der vordefinierten Navigation, wenn Sicherheits Kürzung erforderlich ist. Die Verwendung der Suche für die strukturelle Navigation, insbesondere wenn Sie über eine komplexe Websitestruktur verfügen, beschleunigt die Ladezeit der Seite erheblich. Der Hauptvorteil dieser über die verwaltete Navigation ist, dass Sie von Sicherheit Trimmen profitieren.
+Mithilfe der Suche können Sie die im Hintergrund aufgebauten Indizes mithilfe einer kontinuierlichen Durchforstung nutzen. Die Suchergebnisse werden aus dem Suchindex gezogen, und die Ergebnisse sind sicherheitsbeschnitten. Dies ist in der Regel schneller als bei nicht verwendeten Navigationsanbietern, wenn eine Sicherheitsbeschneidung erforderlich ist. Die Verwendung der Suche nach struktureller Navigation, insbesondere wenn Sie über eine komplexe Websitestruktur verfügen, beschleunigt die Ladezeit der Seite erheblich. Der Hauptvorteil dieser gegenüber der verwalteten Navigation ist, dass Sie von der Sicherheitstrimmerung profitieren.
 
-Dieser Ansatz umfasst das Erstellen einer benutzerdefinierten Gestaltungsvorlage und das Ersetzen des vordefinierten Navigations Codes durch benutzerdefinierten HTML-Code. Gehen Sie wie im folgenden Beispiel beschrieben vor, um den Navigationscode in der Datei zu ersetzen `seattle.html` . In diesem Beispiel werden Sie die Datei öffnen `seattle.html` und das gesamte `id="DeltaTopNavigation"` -Element durch benutzerdefinierten HTML-Code ersetzen.
+Dieser Ansatz umfasst das Erstellen einer benutzerdefinierten Gestaltungsmasterseite und das Ersetzen des out-of-the-box-Navigationscodes durch benutzerdefinierten HTML-Code. Gehen Sie wie im folgenden Beispiel beschrieben vor, um den Navigationscode in der Datei zu `seattle.html` ersetzen. In diesem Beispiel öffnen Sie die Datei und ersetzen das `seattle.html` gesamte Element `id="DeltaTopNavigation"` durch benutzerdefinierten HTML-Code.
 
-### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Beispiel: Ersetzen des Standard Navigations Codes in einer Gestaltungsvorlage
+### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Beispiel: Ersetzen des out-of-the-box-Navigationscodes in einer Masterseite
 
 1. Navigieren Sie zur Seite Websiteeinstellungen.
-2. Öffnen Sie den gestaltungsvorlagenkatalog, indem Sie auf **Masterseiten**klicken.
-3. Von hier aus können Sie durch die Bibliothek navigieren und die Datei herunterladen `seattle.master` .
-4. Bearbeiten Sie den Code mit einem Text-Editor, und löschen Sie den Codeblock im folgenden Screenshot.<br/>![Löschen des angezeigten Codeblocks](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
-5. Entfernen Sie den Code zwischen den `<SharePoint:AjaxDelta id="DeltaTopNavigation">` und- `<\SharePoint:AjaxDelta>` Tags, und ersetzen Sie ihn durch den folgenden Codeausschnitt:<br/>
+2. Öffnen Sie den Masterseitenkatalog, indem Sie auf **Masterseiten klicken.**
+3. Von hier aus können Sie durch die Bibliothek navigieren und die Datei `seattle.master` herunterladen.
+4. Bearbeiten Sie den Code mithilfe eines Texteditors, und löschen Sie den Codeblock im folgenden Screenshot.<br/>![Löschen des angezeigten Codeblocks](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
+5. Entfernen Sie den Code zwischen `<SharePoint:AjaxDelta id="DeltaTopNavigation">` den tags `<\SharePoint:AjaxDelta>` und, und ersetzen Sie ihn durch den folgenden Codeausschnitt:<br/>
 
 ```javascript
 <div id="loading">
@@ -200,23 +200,23 @@ Dieser Ansatz umfasst das Erstellen einer benutzerdefinierten Gestaltungsvorlage
 ```
 
 <br/>
-6. Ersetzen Sie die URL im Tag Loading Image Anchor am Anfang durch einen Link zu einem Bild laden in Ihrer Websitesammlung. Nachdem Sie die Änderungen vorgenommen haben, benennen Sie die Datei um, und laden Sie Sie dann in den gestaltungsvorlagenkatalog hoch. Dadurch wird eine neue Masterdatei generiert.<br/>
-7. Dieser HTML-Code ist das grundlegende Markup, das von den Suchergebnissen aufgefüllt wird, die von JavaScript-Code zurückgegeben werden. Sie müssen den Code so bearbeiten, dass der Wert für var root = "Website Sammlungs-URL" geändert wird, wie im folgenden Codeausschnitt gezeigt:<br/>
+6. Ersetzen Sie die URL im Laden des Bildankertags am Anfang durch einen Link zu einem Ladenimage in Ihrer Websitesammlung. Nachdem Sie die Änderungen vorgenommen haben, benennen Sie die Datei um, und laden Sie sie dann in den Masterseitenkatalog hoch. Dadurch wird eine neue .master-Datei generiert.<br/>
+7. Dieser HTML-Code ist das grundlegende Markup, das von den suchergebnissen aufgefüllt wird, die aus dem JavaScript-Code zurückgegeben werden. Sie müssen den Code bearbeiten, um den Wert für var root = "Websitesammlungs-URL" zu ändern, wie im folgenden Codeausschnitt gezeigt:<br/>
 
 ```javascript
 var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
 ```
 
 <br/>
-8. Die Ergebnisse werden dem Self. Nodes-Array zugewiesen, und eine Hierarchie wird aus den Objekten mit linq.js zuweisen der Ausgabe zu einem Array Self. Hierarchy erstellt. Dieses Array ist das Objekt, das an den HTML-Code gebunden ist. Dies erfolgt in der toggleView ()-Funktion, indem das Self-Objekt an die ko. applyBinding ()-Funktion übergeben wird.<br/>Dadurch wird das Hierarchie Array an den folgenden HTML-Code gebunden:<br/>
+8. Die Ergebnisse werden dem self.nodes-Array zugewiesen, und aus den Objekten wird eine Hierarchie erstellt, indem linq.js die Ausgabe einer Arrayhierarchie self.hierarchy zugewiesen wird. Dieses Array ist das Objekt, das an den HTML-Code gebunden ist. Dies geschieht in der toggleView()-Funktion, indem das self-Objekt an die ko.applyBinding()-Funktion übergeben wird.<br/>Dadurch wird das Hierarchiearray an den folgenden HTML-Code gebunden:<br/>
 
 ```javascript
 <div data-bind="foreach: hierarchy" class="noindex ms-core-listMenu-horizontalBox">
 ```
 
-Die Ereignishandler für `mouseenter` und `mouseexit` werden zur Navigation auf oberster Ebene hinzugefügt, um die Unterwebsite-Dropdownmenüs zu verarbeiten, die in der-Funktion ausgeführt werden `addEventsToElements()` .
+Die Ereignishandler für und werden der Navigation auf oberster Ebene hinzugefügt, um die Dropdownmenüs der Unterwebsite zu behandeln, die in der `mouseenter` `mouseexit` Funktion durchgeführt `addEventsToElements()` werden.
 
-In unserem komplexen Navigations Beispiel zeigt eine neue Seitenauslastung ohne lokale Zwischenspeicherung, dass die Zeit, die auf dem Server aufgewendet wurde, aus der Benchmark-Struktur Navigation reduziert wurde, um ein ähnliches Ergebnis wie beim verwalteten Navigations Ansatz zu erhalten.
+In unserem komplexen Navigationsbeispiel zeigt eine neue Seitenlast ohne lokale Zwischenspeicherung, dass die auf dem Server auf dem Server verbrachte Zeit von der Benchmarkstrukturnavigation abgeschnitten wurde, um ein ähnliches Ergebnis wie den verwalteten Navigationsansatz zu erhalten.
 
 ### <a name="about-the-javascript-file"></a>Informationen zur JavaScript-Datei...
 
@@ -458,27 +458,27 @@ function addEventsToElements() {
 
 ```
 
-Um den oben gezeigten Code in der Funktion zusammenzufassen, `jQuery $(document).ready` gibt es eine `viewModel object` erstellte und dann die- `loadNavigationNodes()` Funktion für dieses Objekt wird aufgerufen. Diese Funktion lädt entweder die zuvor erstellte Navigationshierarchie, die im lokalen HTML5-Speicher des Clientbrowsers gespeichert ist, oder Sie ruft die Funktion auf `queryRemoteInterface()` .
+Um den oben in der Funktion gezeigten Code zusammenzufassen, wird eine erstellt, und dann wird die `jQuery $(document).ready` Funktion für dieses Objekt `viewModel object` `loadNavigationNodes()` aufgerufen. Diese Funktion lädt entweder die zuvor erstellten Navigationshierarchie, die im lokalen HTML5-Speicher des Clientbrowsers gespeichert ist, oder ruft die Funktion `queryRemoteInterface()` auf.
 
-`QueryRemoteInterface()` erstellt eine Anforderung mithilfe der `getRequest()` Funktion mit dem zuvor im Skript definierten Abfrageparameter und gibt dann Daten vom Server zurück. Diese Daten sind im Wesentlichen ein Array aller Websites in der Websitesammlung, die als Daten Übertragungsobjekte mit verschiedenen Eigenschaften dargestellt werden.
+`QueryRemoteInterface()` erstellt eine Anforderung mithilfe der Funktion mit dem zuvor im Skript definierten Abfrageparameter und gibt dann `getRequest()` Daten vom Server zurück. Diese Daten sind im Wesentlichen ein Array aller Websites in der Websitesammlung, die als Datenübertragungsobjekte mit verschiedenen Eigenschaften dargestellt werden.
 
-Diese Daten werden dann in die zuvor definierten Objekte analysiert, `SPO.Models.NavigationNode` die `Knockout.js` zum Erstellen beobachtbarer Eigenschaften für die Verwendung durch Datenbindung der Werte in den HTML-Code verwenden, den wir zuvor definiert haben.
+Diese Daten werden dann in die zuvor definierten Objekte analysiert, die zum Erstellen von beobachtbaren Eigenschaften für die Verwendung durch Datenbindung der Werte an den ZUVOR definierten `SPO.Models.NavigationNode` `Knockout.js` HTML-Code verwendet werden.
 
-Die Objekte werden dann in ein Ergebnisarray eingefügt. Dieses Array wird mithilfe von Knockout in JSON analysiert und im lokalen Browser Speicher gespeichert, um die Leistung bei zukünftigen Seitenlasten zu verbessern.
+Die Objekte werden dann in ein Ergebnisarray hinzugefügt. Dieses Array wird mithilfe von Knockout in JSON analysiert und im lokalen Browserspeicher gespeichert, um die Leistung bei zukünftigen Seitenlasten zu verbessern.
 
 ### <a name="benefits-of-this-approach"></a>Vorteile dieses Ansatzes
 
-Ein wesentlicher Vorteil [dieses Ansatzes](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) ist, dass die Navigation bei Verwendung des lokalen HTML5-Speichers lokal für den Benutzer gespeichert wird, wenn Sie das nächste Mal die Seite laden. Bei der Verwendung der Such-API für die strukturelle Navigation erhalten wir deutliche Leistungsverbesserungen. Es erfordert jedoch einige technische Funktionen zum Ausführen und Anpassen dieser Funktionalität.
+Ein großer Vorteil dieses [Ansatzes](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) ist, dass die Navigation mithilfe des lokalen HTML5-Speichers beim nächsten Laden der Seite lokal für den Benutzer gespeichert wird. Wir erhalten wesentliche Leistungsverbesserungen durch die Verwendung der Such-API für die strukturelle Navigation. Es sind jedoch einige technische Funktionen erforderlich, um diese Funktionalität auszuführen und anzupassen.
 
-In der [Beispielimplementierung](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page)werden die Websites auf die gleiche Weise wie die standardmäßige Struktur Navigation sortiert. alphabetische Reihenfolge. Wenn Sie von dieser Reihenfolge abweichen möchten, wäre es komplizierter zu entwickeln und zu warten. Bei dieser Vorgehensweise müssen Sie auch von den unterstützten Masterseiten abweichen. Wenn die benutzerdefinierte Gestaltungsvorlage nicht beibehalten wird, verpasst ihre Website Updates und Verbesserungen, die Microsoft an den Gestaltungsvorlagen vornimmt.
+In der [Beispielimplementierung](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page)werden die Websites auf die gleiche Weise wie die out-of-the-box-Strukturnavigation geordnet. alphabetische Reihenfolge. Wenn Sie von dieser Reihenfolge abweichen möchten, wäre die Entwicklung und Wartung komplizierter. Außerdem müssen Sie bei diesem Ansatz von den unterstützten Masterseiten abweichen. Wenn die benutzerdefinierte Masterseite nicht verwaltet wird, verpasst Ihre Website Updates und Verbesserungen, die Microsoft an den Masterseiten vorgenommen hat.
 
 Der [obige Code](#about-the-javascript-file) hat die folgenden Abhängigkeiten:
 
-- jQuery https://jquery.com/
-- KnockoutJS - https://knockoutjs.com/
-- Linq.js- https://linqjs.codeplex.com/ oder GitHub.com/neuecc/-linq.js
+- jQuery - https://jquery.com/
+- KnockoutJS – https://knockoutjs.com/
+- Linq.js - https://linqjs.codeplex.com/ oder github.com/neuecc/linq.js
 
-Die aktuelle Version von LinqJS enthält nicht die ByHierarchy-Methode, die im obigen Code verwendet wird, und der Navigationscode wird unterbrochen. Um dies zu beheben, fügen Sie die folgende Methode zur Linq.js Datei vor der-Verbindung hinzu `Flatten: function ()` .
+Die aktuelle Version von LinqJS enthält nicht die im obigen Code verwendete ByHierarchy-Methode und bricht den Navigationscode auf. Um dies zu beheben, fügen Sie der Datei Linq.js vor der Zeile die folgende Methode `Flatten: function ()` hinzu.
 
 ```javascript
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
@@ -545,6 +545,6 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
   
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Übersicht über die verwaltete Navigation in SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)
+[Übersicht über die verwaltete Navigation in SharePoint Server](/sharepoint/administration/overview-of-managed-navigation)
 
-[Zwischenspeicherung und Leistung der Struktur Navigation](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43)
+[Zwischenspeicherung und Leistung der strukturellen Navigation](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43)

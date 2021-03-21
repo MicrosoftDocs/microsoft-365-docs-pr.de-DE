@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie die Erhaltungssperre mit Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien, um die Einhaltung behördlicher Vorschriften und die Absicherung gegen übel gesinnte Administratoren zu erleichtern.
-ms.openlocfilehash: 9890c73495bd14ea7264f3314f6313254ef1bf6b
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 72f667b970b4257a3a540fb74a121c620892b56d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49612987"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922529"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>Verwenden der Erhaltungssperre zum Einschränken von Änderungen an Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Die Erhaltungssperre sperrt eine Aufbewahrungsrichtlinie oder eine Aufbewahrungsbezeichnungsrichtlinie, sodass niemand – auch nicht ein globaler Administrator – die Richtlinie deaktivieren, löschen oder weniger restriktiv einstellen kann. Diese Konfiguration könnte aufgrund behördlicher Vorschriften erforderlich sein und kann zum Schutz vor übel gesinnten Administratoren beitragen.
 
@@ -56,13 +56,13 @@ Sie müssen PowerShell verwenden, wenn eine Erhaltungssperre angewendet werden s
 
 Alle Richtlinien für die Aufbewahrung und mit beliebiger Konfiguration unterstützen die Aufbewahrungssperre.
 
-1. [Stellen Sie eine Verbindung mit der Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. [Stellen Sie eine Verbindung mit der Security & Compliance Center PowerShell her](/powershell/exchange/connect-to-scc-powershell).
 
-2. Führen Sie zum Suchen nach dem Namen der Richtlinie, die Sie sperren möchten, den Befehl [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancepolicy) aus. Zum Beispiel:
+2. Führen Sie zum Suchen nach dem Namen der Richtlinie, die Sie sperren möchten, den Befehl [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy) aus. Zum Beispiel:
     
    ![Liste der Aufbewahrungsrichtlinien in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
-3. Um eine Aufbewahrungssperre auf Ihre Aufbewahrungsrichtlinie anzuwenden, führen Sie das Cmdlet [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) mit dem Namen der Richtlinie aus, und legen Sie den Parameter *RestrictiveRetention* auf „true“ fest:
+3. Um eine Aufbewahrungssperre auf Ihre Aufbewahrungsrichtlinie anzuwenden, führen Sie das Cmdlet [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) mit dem Namen der Richtlinie aus, und legen Sie den Parameter *RestrictiveRetention* auf „true“ fest:
     
     ```powershell
     Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true

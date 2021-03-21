@@ -1,7 +1,7 @@
 ---
 title: AssignedIPAddresses()-Funktion bei der erweiterten Suche nach Microsoft 365 Defender
-description: Erfahren Sie, wie Sie die Funktion AssignedIPAddresses() verwenden, um die neuesten IP-Adressen zu erhalten, die einem Gerät zugewiesen sind.
-keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Microsoft Threat Protection, Microsoft 365, Mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, FileProfile, Dateiprofil, Funktion, Anreicherung
+description: Erfahren Sie, wie Sie die AssignedIPAddresses()-Funktion verwenden, um die neuesten einem Gerät zugewiesenen IP-Adressen zu erhalten.
+keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungensuche, Microsoft Threat Protection, microsoft 365, mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, FileProfile, Dateiprofil, Funktion, Bereicherung
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d16cd7efc49cc2498eff3f705bb43fa62f37d975
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: c52f7b8bf5a93a75b3330a3377f3fab34b8e7837
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49933018"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922920"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -35,16 +35,16 @@ ms.locfileid: "49933018"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Verwenden Sie die Funktion in Ihren Abfragen für die erweiterte Suche, um schnell die neuesten IP-Adressen zu erhalten, die einem `AssignedIPAddresses()` Gerät zugewiesen wurden. [](advanced-hunting-overview.md) Wenn Sie ein Zeitstempelargument angeben, ruft diese Funktion die neuesten IP-Adressen zum angegebenen Zeitpunkt ab. 
+Verwenden Sie `AssignedIPAddresses()` die Funktion in Ihren [erweiterten](advanced-hunting-overview.md) Suchabfragen, um schnell die neuesten IP-Adressen zu erhalten, die einem Gerät zugewiesen wurden. Wenn Sie ein Zeitstempelargument angeben, ruft diese Funktion die neuesten IP-Adressen zum angegebenen Zeitpunkt ab. 
 
 Diese Funktion gibt eine Tabelle mit den folgenden Spalten zurück:
 
 | Spalte | Datentyp | Beschreibung |
 |------------|-------------|-------------|
-| `Timestamp` | datetime | Letzter Zeitpunkt, zu dem das Gerät mithilfe der IP-Adresse beobachtet wurde |
+| `Timestamp` | datetime | Die letzte Zeit, zu der das Gerät mithilfe der IP-Adresse beobachtet wurde |
 | `IPAddress` | string | Vom Gerät verwendete IP-Adresse |
-| `IPType` | string | Gibt an, ob es sich bei der IP-Adresse um eine öffentliche oder private Adresse handelt. |
-| `NetworkAdapterType` | int | Netzwerkadaptertyp, der vom Gerät verwendet wird, dem die IP-Adresse zugewiesen wurde. Die möglichen Werte finden Sie in [dieser Enumeration.](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `IPType` | string | Gibt an, ob es sich bei der IP-Adresse um eine öffentliche oder eine private Adresse handelt. |
+| `NetworkAdapterType` | int | Netzwerkadaptertyp, der vom Gerät verwendet wird, dem die IP-Adresse zugewiesen wurde. Mögliche Werte finden Sie in [dieser Enumeration.](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
 | `ConnectedNetworks` | int | Netzwerke, mit denen der Adapter mit der zugewiesenen IP-Adresse verbunden ist. Jedes JSON-Array enthält den Netzwerknamen, die Kategorie (öffentlich, privat oder Domäne), eine Beschreibung und ein Flag, das angibt, ob es öffentlich mit dem Internet verbunden ist. |
 
 ## <a name="syntax"></a>Syntax
@@ -56,7 +56,7 @@ AssignedIPAddresses(x, y)
 ## <a name="arguments"></a>Argumente
 
 - **x**– `DeviceId` oder `DeviceName` Wert, der das Gerät identifiziert
-- **y**- (datetime)-Wert, der die Funktion anweisen soll, die neuesten `Timestamp` zugewiesenen IP-Adressen aus einem bestimmten Zeitpunkt zu erhalten. Wenn nicht angegeben, gibt die Funktion die neuesten IP-Adressen zurück.
+- **y**– (datetime)-Wert, der die Funktion anweisen soll, die neuesten zugewiesenen IP-Adressen aus `Timestamp` einem bestimmten Zeitpunkt zu erhalten. Wenn nicht angegeben, gibt die Funktion die neuesten IP-Adressen zurück.
 
 ## <a name="examples"></a>Beispiele
 
@@ -66,8 +66,8 @@ AssignedIPAddresses(x, y)
 AssignedIPAddresses('example-device-name', ago(1d))
 ```
 
-### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a>Ip-Adressen, die von einem Gerät verwendet werden, und Geräte suchen, die mit ihm kommunizieren
-Diese Abfrage verwendet die Funktion, um zugewiesene IP-Adressen für das Gerät ( ) an oder vor einem bestimmten `AssignedIPAddresses()` Datum ( ) zu `example-device-name` `example-date` erhalten. Anschließend werden die IP-Adressen verwendet, um Verbindungen mit dem Gerät zu finden, die von anderen Geräten initiiert wurden. 
+### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a>Get IP addresses used by a device and find devices communicating with it
+Diese Abfrage verwendet die Funktion, um zugewiesene IP-Adressen für das Gerät ( ) an oder vor einem bestimmten Datum `AssignedIPAddresses()` `example-device-name` ( ) zu `example-date` erhalten. Anschließend werden die IP-Adressen verwendet, um Verbindungen mit dem Gerät zu finden, die von anderen Geräten initiiert wurden. 
 
 ```kusto
 let Date = datetime(example-date);

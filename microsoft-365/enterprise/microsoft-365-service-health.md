@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Integritätsstatus des Microsoft 365-Diensts
-ms.openlocfilehash: f7bb310452f841c04eabdd683d3ec82b4ad2b57a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d0e32fb34cf1d14a5da8c10a07551cee00e2421a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686602"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923112"
 ---
 # <a name="microsoft-365-network-health-status"></a>Integritätsstatus des Microsoft 365-Netzwerks
 
@@ -44,5 +44,5 @@ Wenn wir wichtige Probleme innerhalb des globalen Microsoft-Netzwerks oder mit d
 Verwenden Sie diese Ressourcen zur Verbesserung der Netzwerknutzung für Microsoft-Dienste.
 
 - [Optimieren der Microsoft 365-Konnektivität für Remotebenutzer mithilfe des geteilten VPN-Tunnels](microsoft-365-vpn-split-tunnel.md)
-- [Microsoft 365 – Grundsätze der Netzwerkkonnektivität](https://aka.ms/pnc)
-- [Remotearbeit mithilfe von Azure-Netzwerkdiensten](https://docs.microsoft.com/azure/networking/working-remotely-support)
+- [Microsoft 365 – Grundsätze der Netzwerkkonnektivität](./microsoft-365-network-connectivity-principles.md)
+- [Remotearbeit mithilfe von Azure-Netzwerkdiensten](/azure/networking/working-remotely-support)

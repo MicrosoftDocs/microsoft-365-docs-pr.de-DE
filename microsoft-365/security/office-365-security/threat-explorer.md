@@ -19,12 +19,12 @@ description: Verwenden Sie Explorer und Echtzeiterkennungen im Security Complian
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 614cd7c256fe8af5fd7474a2101f937b1ecfd0d3
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 3f8f8dfc5cf1066b4ebcf166487bfcdb0a8b2db7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406408"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922498"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Bedrohungs-Explorer und Echtzeiterkennungen
 
@@ -201,7 +201,7 @@ Zu den Verbesserungen gehören:
 
 - Zeigen Sie die vollständig geklickte URL (einschließlich aller Abfrageparameter, die Teil der URL sind) im Abschnitt **Klicks** des URL-Flyouts an. Derzeit werden die URL-Domäne und der Pfad in der Titelleiste angezeigt. Wir erweitern diese Informationen, um die vollständige URL anzeigen zu können.
 
-- Korrekturen über URL-Filter hinweg (*URL* versus *URL-Domäne* im Vergleich zu *URL-Domäne* und -Pfad ): Die Updates wirken sich auf die Suche nach Nachrichten aus, die eine URL/Klick-Urteil enthalten. Wir haben die Unterstützung für protokollagnostische Suchen aktiviert, sodass Sie ohne verwendung nach einer URL suchen `http` können. Standardmäßig wird die URL-Suche http zugestellt, es sei denn, ein anderer Wert wird explizit angegeben. Beispiel:
+- Korrekturen über URL-Filter hinweg (*URL* versus *URL-Domäne* im Vergleich zu *URL-Domäne* und -Pfad ): Die Updates wirken sich auf die Suche nach Nachrichten aus, die eine URL/Klick-Urteil enthalten. Wir haben die Unterstützung für protokollagnostische Suchen aktiviert, sodass Sie ohne verwendung nach einer URL suchen `http` können. Standardmäßig wird die URL-Suche http zugestellt, es sei denn, ein anderer Wert wird explizit angegeben. Zum Beispiel:
 
    -  Suchen Sie mit und ohne präfix `http://` in den **Feldern URL,** **URL Domain** und URL Domain and **Path.** Die Suchergebnisse sollten die gleichen Ergebnisse anzeigen.
 
@@ -507,7 +507,7 @@ Der Bericht wird aktualisiert, um Daten zu E-Mail-Nachrichten zu zeigen, die Per
 Zusätzlich zu den in diesem Artikel beschriebenen Szenarien stehen Ihnen mit Explorer (oder Echtzeiterkennungen) viele weitere Berichterstellungsoptionen zur Verfügung. Lesen Sie die folgenden Artikel:
 
 - [Suchen und Untersuchen von bösartigen E-Mails, die zugestellt wurden](investigate-malicious-email-that-was-delivered.md)
-- [Anzeigen schädlicher Dateien in SharePoint Online, OneDrive und Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
+- [Anzeigen schädlicher Dateien in SharePoint Online, OneDrive und Microsoft Teams](./atp-for-spo-odb-and-teams.md)
 - [Erhalten Sie eine Übersicht über die Ansichten im Bedrohungs-Explorer (und Echtzeiterkennungen)](threat-explorer-views.md)
 - [Threat Protection-Statusbericht](view-email-security-reports.md#threat-protection-status-report)
 - [Automatische Untersuchung und Reaktion in Microsoft Threat Protection](../mtp/mtp-autoir.md)
@@ -528,7 +528,7 @@ Zum Anzeigen und Verwenden von Explorer- oder Echtzeiterkennungen müssen Sie ü
   - Sicherheitsadministrator (dies kann im Azure Active Directory Admin Center zugewiesen werden ( <https://aad.portal.azure.com> )
   - Sicherheitsleseberechtigter
 
-- Für Exchange Online muss eine der folgenden Rollen entweder im Exchange Admin Center ( <https://admin.protection.outlook.com/ecp/> ) oder in Exchange Online [PowerShell zugewiesen sein:](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
+- Für Exchange Online muss eine der folgenden Rollen entweder im Exchange Admin Center ( <https://admin.protection.outlook.com/ecp/> ) oder in Exchange Online [PowerShell zugewiesen sein:](/powershell/exchange/exchange-online-powershell)
 
   - Organisationsverwaltung
   - Organisationsverwaltung – nur Leserechte
@@ -538,14 +538,14 @@ Zum Anzeigen und Verwenden von Explorer- oder Echtzeiterkennungen müssen Sie ü
 Weitere Informationen zu Rollen und Berechtigungen finden Sie in den folgenden Ressourcen:
 
 - [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
-- [Featureberechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+- [Featureberechtigungen in Exchange Online](/exchange/permissions-exo/feature-permissions)
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>Unterschiede zwischen Bedrohungs-Explorer und Echtzeiterkennung
 
 - Der *Bericht über Echtzeiterkennungen* ist in Defender for Office 365 Plan 1 verfügbar. *Der Bedrohungs-Explorer* ist in Defender for Office 365 Plan 2 verfügbar.
 - Mit dem Bericht über Echtzeiterkennungen können Sie Erkennungen in Echtzeit anzeigen. Der Bedrohungs-Explorer führt dies ebenfalls aus, bietet aber auch zusätzliche Details für einen bestimmten Angriff.
 - Eine *Alle-E-Mail-Ansicht* ist im Bedrohungs-Explorer verfügbar, jedoch nicht im Bericht über Echtzeiterkennungen.
-- Weitere Filterfunktionen und verfügbare Aktionen sind im Bedrohungs-Explorer enthalten. Weitere Informationen finden Sie unter [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- Weitere Filterfunktionen und verfügbare Aktionen sind im Bedrohungs-Explorer enthalten. Weitere Informationen finden Sie unter [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
 ## <a name="other-articles"></a>Weitere Artikel
 

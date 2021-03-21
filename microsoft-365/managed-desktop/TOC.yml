@@ -108,6 +108,8 @@
           href: get-started/get-started-devices.md
         - name: Eindruck beim ersten Ausführen mit Autopilot und der Registrierungsstatusseite
           href: get-started/esp-first-run.md
+        - name: Standortdienst für Windows 10
+          href: get-started/device-location.md
         - name: Erste Schritte mit dem App-Steuerelement
           href: get-started/get-started-app-control.md
         - name: Bereitstellen von Apps

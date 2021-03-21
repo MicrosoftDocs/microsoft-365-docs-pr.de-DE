@@ -14,14 +14,14 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: ac8e4b8cdcdfd4d2de0c48a22500338c7a8480a8
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 34c6551dd3a40852368b40d960bf921c52f46372
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454171"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921516"
 ---
-# <a name="edit-an-existing-topic"></a>Bearbeiten eines vorhandenen Themas 
+# <a name="edit-an-existing-topic"></a>Vorhandenes Thema bearbeiten 
 
 </br>
 
@@ -38,7 +38,7 @@ In Themen von "Viva" können Sie ein vorhandenes Thema bearbeiten. Möglicherwei
 
 Zum Bearbeiten eines vorhandenen Themas müssen Sie:
 - Verfügen Sie über eine Lizenz für "Viva Topics".
-- Haben Sie Berechtigungen für [**Die Personen, die Themen erstellen oder bearbeiten können.**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
+- Haben Sie Berechtigungen für [**Die Personen, die Themen erstellen oder bearbeiten können.**](./topic-experiences-user-permissions.md) Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
 
 > [!Note] 
 > Benutzer, die über die Berechtigung zum Verwalten von Themen im Topic Center (Knowledge Manager) verfügen, verfügen bereits über Berechtigungen zum Erstellen und Bearbeiten von Themen.
@@ -130,13 +130,6 @@ Wissensmanager können Themen auch direkt auf der Seite Themen verwalten bearbei
 
 
 ## <a name="see-also"></a>Weitere Informationen:
-
-
-
-  
-
-
-
 
 
 

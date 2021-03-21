@@ -14,7 +14,7 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-keywords: Automatisierte Reaktion auf Vorfälle, Untersuchung, Problembehebung, Bedrohungsschutz
+keywords: automatisierte Reaktion auf Vorfälle, Untersuchung, Behebung, Bedrohungsschutz
 ms.date: 01/29/2021
 description: Erfahren Sie, wie automatisierte Untersuchungs- und Reaktionsfunktionen in Microsoft Defender für Office 365 funktionieren
 ms.custom:
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a5a1384208141a42459c009952f89d18498cc21e
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 4cffbe1a531af05bebaed74811c0e3be08775751
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287925"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921276"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Funktionsweise der automatisierten Untersuchung und Reaktion in Microsoft Defender für Office 365
 
@@ -37,65 +37,65 @@ ms.locfileid: "50287925"
 - [Microsoft Defender für Office 365 – Plan 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Wenn Sicherheitswarnungen ausgelöst werden, ist es an Ihrem Sicherheitsteam, diese Warnungen zu betrachten und Maßnahmen zum Schutz Ihrer Organisation zu ergreifen. Manchmal können sich Sicherheitsteams überfordert fühlen, wenn die Anzahl der ausgelösten Warnungen zu groß ist. Automatisierte Untersuchungs- und Reaktionsfunktionen (AIR) in Microsoft Defender für Office 365 können hilfreich sein.
+Wenn Sicherheitswarnungen ausgelöst werden, ist es an Ihrem Sicherheitsbetriebsteam, diese Warnungen zu betrachten und Schritte zum Schutz Ihrer Organisation zu ergreifen. Manchmal können sich Sicherheitsteams von der Menge der ausgelösten Warnungen überfordert fühlen. Automatisierte Untersuchungs- und Reaktionsfunktionen (Automated Investigation and Response, AIR) in Microsoft Defender für Office 365 können hilfreich sein.
 
-AIR ermöglicht Es Ihrem Sicherheitsteam, effizienter und effektiver zu arbeiten. Die Funktionen von AIR umfassen automatisierte Untersuchungsprozesse als Reaktion auf bekannte Bedrohungen, die heute vorhanden sind. Geeignete Abhilfemaßnahmen warten auf Genehmigung, sodass Ihr Sicherheitsteam auf erkannte Bedrohungen reagieren kann.
+AIR ermöglicht Es Ihrem Sicherheitsteam, effizienter und effektiver zu arbeiten. Zu den AIR-Funktionen gehören automatisierte Untersuchungsprozesse als Reaktion auf bekannte Bedrohungen, die heute vorhanden sind. Geeignete Korrekturmaßnahmen warten auf die Genehmigung, sodass Ihr Sicherheitsteam auf erkannte Bedrohungen reagieren kann.
 
-In diesem Artikel wird die Funktionsweise von AIR anhand mehrerer Beispiele beschrieben. Wenn Sie bereit sind, mit AIR zu beginnen, lesen Sie "Automatische Untersuchung und [Reaktion auf Bedrohungen".](office-365-air.md)
+In diesem Artikel wird die Funktionsweise von AIR anhand mehrerer Beispiele beschrieben. Wenn Sie bereit sind, mit AIR zu beginnen, lesen [Sie Automatisch untersuchen und auf Bedrohungen reagieren.](office-365-air.md)
 
-- [Beispiel 1: Eine vom Benutzer gemeldete Phishingnachricht startet ein Playbook für die Untersuchung](#example-a-user-reported-phish-message-launches-an-investigation-playbook)
-- [Beispiel 2: Ein Sicherheitsadministrator löst eine Untersuchung von Threat Explorer aus](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
-- [Beispiel 3: Ein Sicherheitsteam integriert AIR mithilfe der Office 365-Verwaltungsaktivitäts-API in ihr SIEM.](#example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api)
+- [Beispiel 1: Eine vom Benutzer gemeldete Phishingnachricht startet ein Untersuchungsspielbuch](#example-a-user-reported-phish-message-launches-an-investigation-playbook)
+- [Beispiel 2: Ein Sicherheitsadministrator löst eine Untersuchung aus dem Bedrohungs-Explorer aus.](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
+- [Beispiel 3: Ein Sicherheitsbetriebsteam integriert AIR mithilfe der Office 365-Verwaltungsaktivitäts-API in ihr SIEM](#example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api)
 
-## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Beispiel: Eine vom Benutzer gemeldete Phishingnachricht startet ein Playbook zur Untersuchung
+## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Beispiel: Eine vom Benutzer gemeldete Phishingnachricht startet ein Untersuchungsspielbuch
 
-Angenommen, ein Benutzer in Ihrer Organisation empfängt eine E-Mail, die seiner Meinung nach ein Phishingversuch ist. Der Benutzer, der zum Melden solcher Nachrichten geschult ist, verwendet das [Add-In](enable-the-report-message-add-in.md) "Nachricht melden" oder das [Phishing-Add-In](enable-the-report-phish-add-in.md) "Melden", um es zur Analyse an Microsoft zu senden. Die Übermittlung wird auch an Ihr System gesendet  und im Explorer in der Ansicht "Übermittlungen" (früher als Vom Benutzer gemeldete **Ansicht bezeichnet)** angezeigt. Darüber hinaus löst die vom Benutzer gemeldete Nachricht jetzt eine systembasierte Informationswarnung aus, die automatisch das Playbook für die Untersuchung startet.
+Angenommen, ein Benutzer in Ihrer Organisation empfängt eine E-Mail, die er für einen Phishingversuch hält. Der Benutzer, der für die Meldung solcher Nachrichten geschult ist, verwendet das [Add-In](enable-the-report-message-add-in.md) "Nachricht melden" oder das [Phishing-Add-In](enable-the-report-phish-add-in.md) melden, um es zur Analyse an Microsoft zu senden. Die Übermittlung wird auch an Ihr System gesendet und im Explorer in der **Übermittlungsansicht** angezeigt (früher als vom Benutzer **gemeldete** Ansicht bezeichnet). Darüber hinaus löst die vom Benutzer gemeldete Nachricht nun eine systembasierte Informationswarnung aus, die automatisch das Untersuchungsspielbuch startet.
 
 Während der Stammuntersuchungsphase werden verschiedene Aspekte der E-Mail bewertet. Zu diesen Aspekten gehören:
 
-- Eine Entscheidung darüber, um welche Art von Bedrohung es sich handeln kann;
-- Wer hat es gesendet?
-- Woher die E-Mail gesendet wurde (Sendende Infrastruktur);
+- Eine Bestimmung darüber, um welche Art von Bedrohung es sich handeln kann.
+- Wer hat sie gesendet?
+- Woher die E-Mail gesendet wurde (sendende Infrastruktur);
 - Gibt an, ob andere Instanzen der E-Mail zugestellt oder blockiert wurden;
 - Eine Bewertung unserer Analysten;
 - Gibt an, ob die E-Mail bekannten Kampagnen zugeordnet ist.
 - und vieles mehr.
 
-Nach Abschluss der Stammuntersuchung bietet das Playbook eine Liste der empfohlenen Aktionen für die ursprüngliche E-Mail und die damit verbundenen Entitäten.
+Nachdem die Stammuntersuchung abgeschlossen ist, enthält das Playbook eine Liste der empfohlenen Aktionen für die ursprüngliche E-Mail und die zugehörigen Entitäten.
 
 Als Nächstes werden mehrere Schritte zur Bedrohungsuntersuchung und -suche ausgeführt:
 
 - Ähnliche E-Mail-Nachrichten werden über E-Mail-Clustersuchen identifiziert.
-- Das Signal wird mit anderen Plattformen geteilt, z. B. [Microsoft Defender für Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- Es wird bestimmt, ob Benutzer auf bösartige Links in verdächtigen E-Mail-Nachrichten geklickt haben.
-- Eine Überprüfung erfolgt in Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) und ([Microsoft Defender für Office 365](office-365-atp.md)), um zu überprüfen, ob andere ähnliche Nachrichten von Benutzern gemeldet wurden.
-- Es wird überprüft, ob ein Benutzer gefährdet wurde. Diese Überprüfung nutzt Signale in Office 365, [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)und Azure Active [Directory](https://docs.microsoft.com/azure/active-directory)und korreliert alle zugehörigen Benutzeraktivitätsanomalien.
+- Das Signal wird für andere Plattformen freigegeben, z. B. [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
+- Es wird bestimmt, ob Benutzer auf schädliche Links in verdächtigen E-Mail-Nachrichten geklickt haben.
+- Es wird in Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) und ([Microsoft Defender for Office 365](office-365-atp.md)) überprüft, ob andere ähnliche Nachrichten von Benutzern gemeldet wurden.
+- Es wird überprüft, ob ein Benutzer gefährdet wurde. Bei dieser Überprüfung werden Signale in Office 365, [Microsoft Cloud App Security](/cloud-app-security)und Azure Active [Directory](/azure/active-directory)verwendet, um alle zugehörigen Anomalien bei Benutzeraktivitäten zu korrelieren.
 
-Während der Suche werden Risiken und Bedrohungen verschiedenen Schritten für die Suche zugewiesen.
+Während der Suche werden Risiken und Bedrohungen verschiedenen Jagdschritten zugewiesen.
 
-Die Korrektur ist die letzte Phase des Playbooks. Während dieser Phase werden Korrekturschritte basierend auf den Untersuchungs- und Nachschlagephasen unternommen.
+Die Korrektur ist die letzte Phase des Spielbuchs. In dieser Phase werden Korrekturschritte basierend auf den Untersuchungs- und Nachschlagephasen unternommen.
 
-## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Beispiel: Ein Sicherheitsadministrator löst eine Untersuchung von Threat Explorer aus
+## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Beispiel: Ein Sicherheitsadministrator löst eine Untersuchung aus dem Bedrohungs-Explorer aus.
 
-Zusätzlich zu automatisierten Untersuchungen, die durch eine Warnung ausgelöst werden, kann das Sicherheitsteam Ihrer Organisation eine automatisierte Untersuchung aus einer Ansicht im [Threat Explorer auslösen.](threat-explorer.md)  Diese Untersuchung erstellt auch eine Warnung, damit Microsoft Defender Incidents und externe SIEM-Tools sehen können, dass diese Untersuchung ausgelöst wurde.
+Zusätzlich zu automatisierten Untersuchungen, die durch eine Warnung ausgelöst werden, kann das Sicherheitsteam Ihrer Organisation eine automatisierte Untersuchung aus einer Ansicht im [Bedrohungs-Explorer auslösen.](threat-explorer.md)  Diese Untersuchung erstellt auch eine Warnung, damit Microsoft Defender Incidents und externe SIEM-Tools erkennen können, dass diese Untersuchung ausgelöst wurde.
 
-Angenommen, Sie verwenden die Ansicht **"Schadsoftware"** im Explorer. Auf den Registerkarten unterhalb des Diagramms wählen Sie die Registerkarte **"E-Mail"** aus. Wenn Sie ein oder mehrere Elemente in der Liste auswählen, wird die Schaltfläche **+Aktionen** aktiviert.
+Angenommen, Sie verwenden die **Schadsoftwareansicht** im Explorer. Auf den Registerkarten unterhalb des Diagramms wählen Sie die Registerkarte **E-Mail** aus. Wenn Sie ein oder mehrere Elemente in der Liste auswählen, wird die **Schaltfläche + Aktionen** aktiviert.
 
 ![Explorer mit ausgewählten Nachrichten](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
-Im Menü **"Aktionen"** können Sie "Untersuchung **auslösen" auswählen.**
+Im Menü **Aktionen** können Sie Untersuchung **auslösen auswählen.**
 
 ![Menü "Aktionen" für ausgewählte Nachrichten](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
-Ähnlich wie bei Playbooks, die durch eine Warnung ausgelöst werden, umfassen automatische Untersuchungen, die von einer Ansicht im Explorer ausgelöst werden, eine Stammuntersuchung, Schritte zum Identifizieren und Korrelieren von Bedrohungen sowie empfohlene Maßnahmen zur Minderung dieser Bedrohungen.
+Ähnlich wie bei Playbooks, die durch eine Warnung ausgelöst werden, umfassen automatische Untersuchungen, die von einer Ansicht in Explorer ausgelöst werden, eine Stammuntersuchung, Schritte zum Identifizieren und Korrelieren von Bedrohungen sowie empfohlene Maßnahmen zur Minderung dieser Bedrohungen.
 
-## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>Beispiel: Ein Sicherheitsteam integriert AIR mithilfe der Office 365-Verwaltungsaktivitäts-API in ihr SIEM
+## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>Beispiel: Ein Sicherheitsbetriebsteam integriert AIR mithilfe der Office 365-Verwaltungsaktivitäts-API in ihr SIEM
 
-Die Funktionen von AIR in Microsoft Defender für Office 365 umfassen Berichte [&](air-view-investigation-results.md) Details, die Sicherheitsteams zum Überwachen und Reagieren auf Bedrohungen verwenden können. Sie können jedoch auch die Funktionen von AIR in andere Lösungen integrieren. Beispiele hierfür sind ein Sicherheitsinformations- und Ereignisverwaltungssystem (SIEM), ein Fallverwaltungssystem oder eine benutzerdefinierte Berichterstellungslösung. Diese Arten von Integrationen können mithilfe der [Office 365-Verwaltungsaktivitäts-API durchgeführt werden.](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)
+Die AIR-Funktionen in Microsoft Defender für Office 365 enthalten Berichte [&](air-view-investigation-results.md) Details, die Sicherheitsbetriebsteams zum Überwachen und Reagieren von Bedrohungen verwenden können. Sie können die FUNKTIONEN von AIR jedoch auch in andere Lösungen integrieren. Beispiele sind ein Sicherheitsinformations- und Ereignisverwaltungssystem (SIEM), ein Fallverwaltungssystem oder eine benutzerdefinierte Berichtslösung. Diese Arten von Integrationen können mithilfe der [Office 365-Verwaltungsaktivitäts-API durchgeführt werden.](/office/office-365-management-api/office-365-management-activity-api-reference)
 
-Vor kurzem hat eine Organisation beispielsweise eine Möglichkeit für ihr Sicherheitsteam eingerichtet, um von Benutzern gemeldete Phishingwarnungen anzuzeigen, die bereits von AIR verarbeitet wurden. Ihre Lösung integriert relevante Warnungen in den SIEM-Server und das Fallverwaltungssystem der Organisation. Die Lösung reduziert die Anzahl falsch positiver Ergebnisse erheblich, damit ihr Sicherheitsteam seine Zeit und Mühe auf echte Bedrohungen konzentrieren kann. Weitere Informationen zu dieser benutzerdefinierten Lösung finden Sie im Tech Community-Blog: Verbessern der Effektivität Ihres SOC mit Microsoft Defender für Office 365 und der [O365-Verwaltungs-API.](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)
+Beispielsweise hat eine Organisation kürzlich eine Möglichkeit für ihr Sicherheitsteam eingerichtet, um von Benutzern gemeldete Phishingwarnungen anzuzeigen, die bereits von AIR verarbeitet wurden. Ihre Lösung integriert relevante Warnungen in den SIEM-Server der Organisation und das Fallverwaltungssystem der Organisation. Die Lösung reduziert die Anzahl falsch positiver Ergebnisse erheblich, sodass das Sicherheitsteam seine Zeit und seinen Aufwand auf echte Bedrohungen konzentrieren kann. Weitere Informationen zu dieser benutzerdefinierten Lösung finden Sie unter [Tech Community blog: Improve the Effectiveness of your SOC with Microsoft Defender for Office 365 and the O365 Management API](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Erste Schritte mit AIR](office-365-air.md)
-- [Anzeigen ausstehender oder abgeschlossener Wartungsaktionen](air-review-approve-pending-completed-actions.md)
+- [Anzeigen ausstehender oder abgeschlossener Korrekturaktionen](air-review-approve-pending-completed-actions.md)

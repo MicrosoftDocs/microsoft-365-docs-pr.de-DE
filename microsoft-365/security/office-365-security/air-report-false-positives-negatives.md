@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 8a91a55d9598b5e780474315ddf1f7019e593fed
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 755be1dde256bc612ba85e1b1af485cfaacf7da9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406162"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921864"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Melden falsch positiver/negativer Ergebnisse in automatisierten Untersuchungs- und Reaktionsfunktionen
 
@@ -53,9 +53,9 @@ Sie können auch [eine Datei zur Schadsoftwareanalyse an Microsoft übermitteln.
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Anpassen einer Warnung, um zu verhindern, dass falsch positive Ergebnisse wiederholt werden
 
-Wenn eine Warnung durch legitime Verwendung ausgelöst wird oder die Warnung ungenau ist, können Sie Warnungen im [Cloud App Security-Portal verwalten.](https://docs.microsoft.com/cloud-app-security/managing-alerts)
+Wenn eine Warnung durch legitime Verwendung ausgelöst wird oder die Warnung ungenau ist, können Sie Warnungen im [Cloud App Security-Portal verwalten.](/cloud-app-security/managing-alerts)
 
-Wenn Ihre Organisation [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) zusätzlich zu Office 365 verwendet und eine Datei, EINE IP-Adresse, URL oder Domäne auf einem Gerät als Schadsoftware behandelt wird, obwohl sie sicher ist, können Sie einen benutzerdefinierten Indikator mit der Aktion ["Zulassen"](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)für Ihr Gerät erstellen.
+Wenn Ihre Organisation [Microsoft Defender for Endpoint](/windows/security/threat-protection) zusätzlich zu Office 365 verwendet und eine Datei, EINE IP-Adresse, URL oder Domäne auf einem Gerät als Schadsoftware behandelt wird, obwohl sie sicher ist, können Sie einen benutzerdefinierten Indikator mit der Aktion ["Zulassen"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)für Ihr Gerät erstellen.
 
 ## <a name="undo-a-remediation-action"></a>Rückgängig machen einer Korrekturaktion
 

@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Die erweiterte Überwachung in Microsoft 365 bietet neue Überwachungsfunktionen, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen.
-ms.openlocfilehash: 012361e8ebbf1961d5ca21cef97357d5150523d5
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 0a77a5c54ce328a3966a952fc8fef08553f42462
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712055"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923485"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Erweiterte Überwachung in Microsoft 365
 
 Die [einheitliche Überwachungsfunktionen](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 bieten Organisationen Einblick in viele Arten von überwachten Aktivitäten über viele verschiedene Dienste in Microsoft 365 hinweg. Die erweiterte Überwachung hilft Organisationen dabei, forensische und Compliance-Untersuchungen durchzuführen, da hierfür die Aufbewahrungsdauer des Überwachungsprotokolls verlängert wird. Dadurch wird der Zugang zu wichtigen Ereignissen ermöglicht, die für die Ermittlung des Umfangs der Kompromittierung hilfreich sind, sowie schneller Zugriff auf die Office 365-Verwaltungsaktivitäts-API.
 
 > [!NOTE]
-> Erweiterte Überwachung ist für Organisationen mit einem Office 365 E5/G5- oder Microsoft 365 Enterprise E5/G5-Abonnement verfügbar. Darüber hinaus kann Benutzern eine Microsoft 365 E5 Compliance- oder E5 eDiscovery und Überwachungs-Add-On-Lizenz zugewiesen werden, wenn für Features für die erweiterte Überwachung eine Lizenzierung pro Benutzer erforderlich ist, wie dies bei der langfristigen Aufbewahrung von Überwachungsprotokollen und für den Zugang zu wichtigen Ereignissen für Untersuchungen der Fall ist. Weitere Informationen zur Lizenzierung finden Sie unter [Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
+> Erweiterte Überwachung ist für Organisationen mit einem Office 365 E5/G5- oder Microsoft 365 Enterprise E5/G5-Abonnement verfügbar. Darüber hinaus kann Benutzern eine Microsoft 365 E5 Compliance- oder E5 eDiscovery und Überwachungs-Add-On-Lizenz zugewiesen werden, wenn für Features für die erweiterte Überwachung eine Lizenzierung pro Benutzer erforderlich ist, wie dies bei der langfristigen Aufbewahrung von Überwachungsprotokollen und für den Zugang zu wichtigen Ereignissen für Untersuchungen der Fall ist. Weitere Informationen zur Lizenzierung finden Sie unter [Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
 
 In diesem Artikel finden Sie eine Übersicht der Funktionen der Erweiterten Überwachung und eine Anweisung, wie Sie Benutzer für die Erweiterte Überwachung einrichten können.
 
@@ -85,7 +85,7 @@ Um nach MailItemsAccessed-Überwachungsaufzeichnungen zu suchen, können Sie im 
 
 ![Suchen nach MailItemsAccessed-Aktionen im Überwachungsprotokoll-Suchtool](../media/AdvAudit_MailItemsAccessed.png)
 
-Sie können auch die Befehle [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) oder [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) in Exchange Online PowerShell ausführen.
+Sie können auch die Befehle [Search-UnifiedAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-unifiedauditlog) oder [Search-MailboxAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-mailboxauditlog) in Exchange Online PowerShell ausführen.
 
 ### <a name="send"></a>Send
 
@@ -103,7 +103,7 @@ Um nach Send-Überwachungsaufzeichnungen zu suchen, können Sie im Microsoft 365
 
 ![Suche nach "Nachricht gesendet"-Aktionen im Überwachungsprotokoll-Suchtool](../media/AdvAudit_SentMessage.png)
 
-Sie können auch die Befehle [Search-UnifiedAuditLog -Operations Send](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) oder [Search-MailboxAuditLog -Operations Send](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) in Exchange Online PowerShell ausführen.
+Sie können auch die Befehle [Search-UnifiedAuditLog -Operations Send](/powershell/module/exchange/search-unifiedauditlog) oder [Search-MailboxAuditLog -Operations Send](/powershell/module/exchange/search-mailboxauditlog) in Exchange Online PowerShell ausführen.
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
@@ -125,7 +125,7 @@ Um nach SearchQueryInitiatedExchange-Überwachungsaufzeichnungen zu suchen, kön
 
 ![Suchen nach durchgeführten E-Mail-Suchaktionen im Überwachungsprotokoll-Suchtool](../media/AdvAudit_SearchExchange.png)
 
-Sie können auch den Befehl [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell ausführen.
+Sie können auch den Befehl [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell ausführen.
 
 > [!NOTE]
 > Damit (vom angegebenen E5-Benutzer ausgeführte) SearchQueryInitiatedExchange-Ereignisse in die Suchergebnisse für das Überwachungsprotokoll einbezogen werden, müssen Sie in Exchange Online PowerShell folgenden Befehl ausführen: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.<br/><br/>
@@ -150,7 +150,7 @@ Um nach SearchQueryInitiatedSharePoint-Überwachungsaufzeichnungen zu suchen, k�
 
 ![Suche nach durchgeführten SharePoint-Suchaktionen im Überwachungsprotokoll-Suchtool](../media/AdvAudit_SearchSharePoint.png)
 
-Sie können auch den Befehl [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell ausführen.
+Sie können auch den Befehl [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell ausführen.
 
 > [!NOTE]
 > Damit (vom angegebenen E5-Benutzer ausgeführte) SearchQueryInitiatedExchange-Ereignisse in die Suchergebnisse für das Überwachungsprotokoll einbezogen werden, müssen Sie in Exchange Online PowerShell folgenden Befehl ausführen: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.<br/><br/>
@@ -165,7 +165,7 @@ Mit der Veröffentlichung der erweiterten Überwachung wechseln wir von einem Gr
 
 Allen Organisationen ist anfänglich eine Baseline von 2.000-Anforderungen pro Minute zugeordnet. Dieser Wert wird abhängig von der Anzahl der Arbeitsplätze und Lizenzabonnements in einer Organisation dynamisch erhöht. E5-Organisationen erhalten ungefähr doppelt so viel Bandbreite wie Nicht-E5-Organisationen. Zum Schutz des Diensts gibt es auch eine Obergrenze für die maximale Bandbreite.
 
-Weitere Informationen finden Sie im Abschnitt "API-Drosselung" in der [Referenz der Office 365-Verwaltungsaktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
+Weitere Informationen finden Sie im Abschnitt "API-Drosselung" in der [Referenz der Office 365-Verwaltungsaktivitäts-API](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
 
 ## <a name="set-up-advanced-audit-for-users"></a>Erweiterte Überwachung für Benutzer einrichten
 
@@ -183,7 +183,7 @@ Die Funktionen der Erweiterten Überwachung, wie z.B. die Möglichkeit wichtige 
 
    Die Protokollierung von Überwachungsdatensätzen für MailItemsAccessed, Senden und andere wichtige Ereignisse für den Benutzer wird innerhalb von 24 Stunden anfangen.
 
-Für Organisationen, die Gruppen von Benutzern mithilfe einer gruppenbasierten Lizenzierung Lizenzen zuweisen, müssen Sie die Lizenzzuweisung für Microsoft 365 Advanced Auditing für die Gruppe deaktivieren. Nachdem Sie die Änderungen gespeichert haben, stellen Sie sicher, dass Microsoft 365 Erweiterte Überwachung für die Gruppe deaktiviert ist. Aktivieren Sie dann die Lizenzierungszuordnung für die Gruppe wieder. Lesen Sie [Zuweisen von Lizenzen zu Benutzern mithilfe der Gruppenmitgliedschaft in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) für Anweisungen zur gruppenbasierten Lizenzierung.
+Für Organisationen, die Gruppen von Benutzern mithilfe einer gruppenbasierten Lizenzierung Lizenzen zuweisen, müssen Sie die Lizenzzuweisung für Microsoft 365 Advanced Auditing für die Gruppe deaktivieren. Nachdem Sie die Änderungen gespeichert haben, stellen Sie sicher, dass Microsoft 365 Erweiterte Überwachung für die Gruppe deaktiviert ist. Aktivieren Sie dann die Lizenzierungszuordnung für die Gruppe wieder. Lesen Sie [Zuweisen von Lizenzen zu Benutzern mithilfe der Gruppenmitgliedschaft in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign) für Anweisungen zur gruppenbasierten Lizenzierung.
 
 Wenn Sie außerdem die Postfachaktionen, die für Benutzerpostfächer oder freigegebene Postfächer protokolliert sind, angepasst haben, werden neue standardmäßige Postfachaktionen, wie z.B. MailItemsAccessed, auf diesen Postfächern nicht automatisch überwacht. Weitere Informationen über das Ändern von Postfachaktionen, die für jeden Anmeldetyp überwacht werden, finden Sie unter „Standardmäßig überwachte Postfachaktionen ändern oder wiederherstellen“ in [Verwalten der Postfächern](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
 

@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Bietet eine Einführung in die Komponenten, Pläne und Bereitstellungspfade für Microsoft 365 Enterprise.
-ms.openlocfilehash: 324e5166dd722f9fcd682db7e536a4b864365025
-ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
+ms.openlocfilehash: 19bc4763f60fae1db914ab7c1f10354e7904cb50
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50068973"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923170"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Übersicht über Microsoft 365 Enterprise
 
@@ -87,7 +87,7 @@ Dieses zweiseitige Poster bietet eine schnelle Methode, um Ihre vorhandene Infra
 
 Der Support für diese Produkte endete am **13. Oktober 2020**:
 
-- [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
+- [Office 2010](/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
 
 Das Ende des Supports für [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) wird am **13. April 2021** erreicht. 
@@ -120,11 +120,11 @@ Ein Beispiel dafür, wie eine fiktive, aber repräsentative multinationale Organ
 
 ## <a name="additional-microsoft-365-products"></a>Weitere Microsoft 365-Produkte
 
-- [Microsoft 365 Business Premium](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 Business Premium](../business/index.yml)
 
   Kombinieren Sie die Funktionen in puncto Produktivität und Zusammenarbeit mit Geräte und Lösungen zum Schutz von Geschäftsdaten für kleine und mittlere Unternehmen.
 
-- [Microsoft 365 Education](https://docs.microsoft.com/education)
+- [Microsoft 365 Education](/education)
 
   Setzen Sie Kreativität frei, fördern Sie die Zusammenarbeit, und stellen Sie eine einfache und sichere Erfahrung in einer einzelnen, bezahlbaren Lösung für das Bildungswesen bereit.
 
@@ -154,7 +154,7 @@ Weitere Informationen und Konfigurationsbeispiele für kleine und mittelgroße U
 
 ![Grundlagen zu Microsoft 365-Schulung](../media/microsoft-365-overview/m365-fundamentals.svg)
 
-Wenn Sie mehr über Microsoft 365 und die Arbeit an einer Microsoft 365-Zertifizierung wissen möchten, können Sie mit [Microsoft 365-zertifiziert: Grundlagen](https://docs.microsoft.com/learn/paths/m365-fundamentals/) beginnen.
+Wenn Sie mehr über Microsoft 365 und die Arbeit an einer Microsoft 365-Zertifizierung wissen möchten, können Sie mit [Microsoft 365-zertifiziert: Grundlagen](/learn/paths/m365-fundamentals/) beginnen.
 
 ## <a name="see-also"></a>Siehe auch
 

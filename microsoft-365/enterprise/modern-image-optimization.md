@@ -20,13 +20,13 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Hier erfahren Sie, wie Sie die in SharePoint Online enthaltenen Tools verwenden, um Bilder auf SharePoint Online modernen Website Seiten zu optimieren.
-ms.openlocfilehash: 09122dfd0bc832cf9a09cfb05bf0540e323797d9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Erfahren Sie, wie Sie die in SharePoint Online enthaltenen Tools verwenden, um Bilder auf modernen SharePoint Online-Websiteseiten zu optimieren.
+ms.openlocfilehash: a4f2def86e1378a9fb76ae9ecbe6a55da75ecffc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690776"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923016"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>Optimieren von Bilder in modernen SharePoint Online-Websites
 
@@ -35,7 +35,7 @@ In diesem Artikel erfahren Sie, wie Sie Bilder in modernen SharePoint Online-Web
 Informationen zum Optimieren von Bildern in klassischen Veröffentlichungswebsites finden Sie unter [Bildoptimierung für SharePoint Online](image-optimization-for-sharepoint-online.md).
 
 >[!NOTE]
->Weitere Informationen zur Leistung in modernen SharePoint Online-Portalen finden Sie unter [Leistung in der modernen SharePoint-Umgebung](https://docs.microsoft.com/sharepoint/modern-experience-performance).
+>Weitere Informationen zur Leistung in modernen SharePoint Online-Portalen finden Sie unter [Leistung in der modernen SharePoint-Umgebung](/sharepoint/modern-experience-performance).
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-image-optimization"></a>Verwenden des Tools "Seitendiagnose für SharePoint" zum Analysieren der Bildoptimierung
 
@@ -72,7 +72,7 @@ Bevor Sie Seitenrevisionen zur Behebung von Leistungsproblemen durchführen, not
 
 [Optimieren der Leistung von Office 365](tune-microsoft-365-performance.md)
 
-[Leistung in der modernen SharePoint-Oberfläche](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Leistung in der modernen SharePoint-Oberfläche](/sharepoint/modern-experience-performance)
 
 [Netzwerke für die Inhaltsübermittlung](content-delivery-networks.md)
 

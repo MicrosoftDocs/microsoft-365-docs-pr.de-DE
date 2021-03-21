@@ -1,5 +1,5 @@
 ---
-title: Überlegungen zur Bereitstellung von Schulungspaketen für Angriffssimulationen und häufig gestellte Fragen
+title: Überlegungen zur Bereitstellung von Angriffssimulationstraining und FAQ
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,14 +20,14 @@ ms.custom:
 description: Administratoren können sich über Bereitstellungsüberlegungen und häufig gestellte Fragen zur Angriffssimulation und -schulung in Microsoft 365 E5- oder Microsoft Defender for Office 365 Plan 2-Organisationen informieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b57252252d8a22ade4b8e1a18f42d7fdce91324e
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: f404e2a47756a611135fc70026bf0cce3eec62c4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454734"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921372"
 ---
-# <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Überlegungen zur Bereitstellung von Schulungspaketen für Angriffssimulationen und häufig gestellte Fragen
+# <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Überlegungen zur Bereitstellung von Angriffssimulationstraining und FAQ
 
 Das Training zur Angriffssimulation ist [jetzt allgemein verfügbar.](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291) Die Schulung zur Angriffssimulation ermöglicht Microsoft 365 E5- oder Microsoft Defender für Office 365 Plan 2-Organisationen das Messen und Verwalten von Social Engineering-Risiken, indem die Erstellung und Verwaltung von Phishingsimulationen ermöglicht wird, die von realen, entwaffnten Phishing-Nutzlasten unterstützt werden. Hyper gezielte Schulungen, die in Zusammenarbeit mit der Sicherheit von "Teronova" zur Verbesserung von Kenntnissen und zum Ändern des Verhaltens von Mitarbeitern führen.
 
@@ -72,7 +72,7 @@ Es ist möglich, dass die Anzahl der Benutzer, die die Simulations-E-Mail-Nachri
 - Gastbenutzer.
 - Benutzer, die nicht mehr in Azure Active Directory (Azure AD) aktiv sind.
 
-Nur gültige, nicht gastfreie Benutzer mit einem gültigen Postfach werden in Simulationen einbezogen. Wenn Sie Verteilergruppen oder E-Mail-aktivierte Sicherheitsgruppen für Zielbenutzer verwenden, können Sie das [Cmdlet Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroupmember) in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) verwenden, um Verteilergruppenmitglieder zu anzeigen und zu überprüfen.
+Nur gültige, nicht gastfreie Benutzer mit einem gültigen Postfach werden in Simulationen einbezogen. Wenn Sie Verteilergruppen oder E-Mail-aktivierte Sicherheitsgruppen für Zielbenutzer verwenden, können Sie das [Cmdlet Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) verwenden, um Verteilergruppenmitglieder zu anzeigen und zu überprüfen.
 
 ## <a name="issues-with-attack-simulation-training-reporting"></a>Probleme bei der Berichterstellung für Angriffssimulationsschulungen
 

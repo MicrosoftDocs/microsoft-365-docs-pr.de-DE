@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: Verstehen Sie die grundlegenden Elemente der Verschlüsselung für die Datensicherheit in OneDrive for Business und SharePoint Online.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f0c78a9ca6e6bad1e4aea707f8be5dec818b7a27
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ca93d04fa21487ad054cd9cb924dff1fc15abfbd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817924"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922629"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>Datenverschlüsselung in OneDrive for Business und SharePoint Online
 
@@ -32,7 +32,7 @@ Verstehen Sie die grundlegenden Elemente der Verschlüsselung für die Datensich
   
 ## <a name="security-and-data-encryption-in-office-365"></a>Sicherheit und Datenverschlüsselung in Office 365
 
-Microsoft 365 ist eine hochsichere Umgebung mit umfangreichem Schutz in mehreren Schichten: Sicherheit von physischen Rechenzentren, Netzwerksicherheit, Zugriffssicherheit, Anwendungssicherheit und Datensicherheit. Dieser Artikel befasst sich speziell mit der Verschlüsselung der Datensicherheit während der Übertragung und im Ruhezustand für OneDrive for Business und SharePoint Online.
+Microsoft 365 ist eine hochgradig sichere Umgebung, die umfassenden Schutz in mehreren Ebenen bietet: Sicherheit des physischen Rechenzentrums, Netzwerksicherheit, Zugriffssicherheit, Anwendungssicherheit und Datensicherheit. Dieser Artikel befasst sich speziell mit der Verschlüsselung der Datensicherheit während der Übertragung und im Ruhezustand für OneDrive for Business und SharePoint Online.
   
 Sehen Sie sich im folgenden Video an, wie die Datenverschlüsselung funktioniert.
   
@@ -50,11 +50,11 @@ In OneDrive for Business und SharePoint Online gibt es zwei Szenarien, in denen 
 
 Die Verschlüsselung im Ruhezustand enthält zwei Komponenten: BitLocker-Verschlüsselung auf Datenträgerebene und dateispezifische Verschlüsselung von Kundeninhalten.
   
-BitLocker wird für OneDrive for Business und SharePoint Online im ganzen Dienst bereitgestellt. Die Verschlüsselung per Datei befindet sich auch in OneDrive für Unternehmen und SharePoint Online in Microsoft 365 Multi-Mandanten und neue dedizierte Umgebungen, die auf mehr mandantenfähiger Technologie basieren.
+BitLocker wird für OneDrive for Business und SharePoint Online im ganzen Dienst bereitgestellt. Die Dateiverschlüsselung befindet sich auch in OneDrive for Business und SharePoint Online in Microsoft 365 multi-tenant und neuen dedizierten Umgebungen, die auf mehrstufiger Technologie aufgebaut sind.
   
 Während alle Daten auf einem Datenträger mit BitLocker verschlüsselt werden, geht die Dateiverschlüsselung sogar noch weiter, indem ein eindeutiger Schlüssel für jede Datei eingeschlossen wird. Darüber hinaus wird jede Aktualisierung jeder Datei mit einem eigenen Schlüssel verschlüsselt. Bevor sie gespeichert werden, werden die Schlüssel für die verschlüsselten Inhalte an einem vom Inhalt separaten Speicherort gespeichert. Jeder Schritt der Verschlüsselung verwendet AES (Advanced Encryption Standard, erweiterter Verschlüsselungsstandard) mit 256-Bit-Schlüsseln und ist zu FIPS 140-2 (Federal Information Processing Standard) kompatibel. Die verschlüsselten Inhalte werden auf einer Reihe von Containern im gesamten Rechenzentrum verteilt, und jeder Container besitzt eindeutige Anmeldeinformationen. Diese Anmeldeinformationen werden in einem vom Inhalt oder den Inhaltsschlüsseln separaten physischen Speicherort gespeichert.
   
-Weitere Informationen zur FIPS 140-2-Konformität finden Sie unter [FIPS 140-2 Compliance](https://go.microsoft.com/fwlink/?LinkId=517625).
+Weitere Informationen zur FIPS 140-2-Compliance finden Sie unter [FIPS 140-2 Compliance](/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105)).
   
 Die Verschlüsselung im Ruhezustand auf Dateiebene nutzt BLOB-Speicher, um praktisch unbegrenzten Speicherplatz bereitzustellen und einen umfassenden Schutz zu ermöglichen. Alle Kundeninhalte in OneDrive for Business und SharePoint Online werden in BLOB-Speicher migriert. So werden die Daten geschützt:
   

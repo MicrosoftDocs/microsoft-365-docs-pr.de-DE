@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Anhand des Dashboards für die Datenklassifizierung können Sie sehen, wie viele vertrauliche Daten in Ihrer Organisation gefunden und klassifiziert wurden.
-ms.openlocfilehash: 7bf9a7151f8df45716ab032dd3c62a33f4f5adc8
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 8f3bb2da1e7011fef334ec345a02d7facedc25fc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999395"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922679"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Kennen Sie Ihre Daten – Überblick über die Datenklassifizierung
 
@@ -37,7 +37,7 @@ Als Microsoft 365-Administrator oder Compliance-Administrator können Sie Inhalt
 
 Diese Merkmale können Sie auch auf der Datenklassifizierungsseite verwalten:
 - [trainierbare Klassifizierungsmerkmale](classifier-learn-about.md)
-- [Typen vertraulicher Informationen](what-the-sensitive-information-types-look-for.md)
+- [Typen vertraulicher Informationen](./sensitive-information-type-entity-definitions.md)
 
 Sie finden die Datenklassifizierung im **Microsoft 365 Compliance Center** oder unter **Microsoft 365 Security Center** > **Klassifizierung** > **Datenklassifizierung**.
 
@@ -49,7 +49,7 @@ Die Datenklassifizierung scannt Ihre vertraulichen Inhalte und bezeichneten Inha
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Eine Reihe verschiedener Abonnements unterstützt Endpunkt-DLP. Um Lizenzierungsoptionen für Endpunkt-DLP anzuzeigen, lesen Sie [Leitfaden zur Lizenzierung des Informationsschutzes](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
+Eine Reihe verschiedener Abonnements unterstützt Endpunkt-DLP. Um Lizenzierungsoptionen für Endpunkt-DLP anzuzeigen, lesen Sie [Leitfaden zur Lizenzierung des Informationsschutzes](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
 
 ### <a name="permissions"></a>Berechtigungen
 
@@ -97,7 +97,7 @@ Auf der Karte mit der Vertraulichkeitsbezeichnung wird die Anzahl von Elementen 
 
 > [!NOTE]
 > Wenn Sie keine Vertraulichkeitsbezeichnungen erstellt oder veröffentlicht haben oder keine Vertraulichkeitsbezeichnung auf Inhalte angewendet wurde, wird auf dieser Karte die Meldung angezeigt, dass keine Vertraulichkeitsbezeichnungen gefunden wurden. Informationen zu den ersten Schritten mit Vertraulichkeitsbezeichnungen finden Sie unter:
->- [Erste Schritte mit Vertraulichkeitsbezeichnungen](get-started-with-sensitivity-labels.md) oder für AIP [Konfigurieren der Azure Information Protection-Richtlinie](https://docs.microsoft.com/azure/information-protection/configure-policy)
+>- [Erste Schritte mit Vertraulichkeitsbezeichnungen](get-started-with-sensitivity-labels.md) oder für AIP [Konfigurieren der Azure Information Protection-Richtlinie](/azure/information-protection/configure-policy)
 
 ## <a name="top-retention-labels-applied-to-content"></a>Die am häufigsten auf Inhalte angewendeten Aufbewahrungsbezeichnungen
 

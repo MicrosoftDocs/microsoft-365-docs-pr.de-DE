@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Hier erfahren Sie, was mit Ihren Daten geschieht, wenn Ihr Microsoft 365-Abonnement abläuft, deaktiviert wird oder Sie es kündigen.
-ms.openlocfilehash: a9e2e68c0eee119126af93552a50f1859f708c1f
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 7560e715a9b1951915866f96c8df3bd1f884a475
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741357"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921816"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Microsoft 365 Business-Abonnement endet?
 
 Wenn Ihr Abonnement endet – weil es entweder abläuft oder Sie es zu kündigen beschließen – durchläuft Ihr Zugriff auf Microsoft 365-Dienste, -Anwendungen und -Kundendaten mehrere Stadien, bevor das Abonnement vollständig deaktiviert oder *gelöscht* wird. Wenn Ihnen dieser Ablauf bewusst ist, sind Sie besser gerüstet, um das Abonnement auf einen aktiven Status zurückzusetzen, bevor es zu spät ist. Andererseits wissen Sie, dass Sie Ihre Daten vor dem Verlassen von Microsoft 365 unbedingt sichern sollten, bevor sie endgültig gelöscht werden.
 
-Lesen Sie diese wichtigen Informationen, bevor Sie sich mit dem [Microsoft 365-Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) in Verbindung setzen.
+Lesen Sie diese wichtigen Informationen, bevor Sie sich mit dem [Microsoft 365-Support](../../admin/contact-support-for-business-products.md) in Verbindung setzen.
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>Was geschieht beim Ablauf eines Abonnements mit den Daten?
 
@@ -51,7 +51,7 @@ Die nachstehende Abbildung veranschaulicht, womit zu rechnen ist, wenn ein bezah
 *Gilt für die meisten Angebote, in den meisten Ländern und Regionen.
   
 > [!NOTE]
-> **Was sind "Kundendaten"?** Der Begriff "Kundendaten" bezieht sich gemäß Definition in den [Microsoft Online Service-Lizenzbedingungen](https://go.microsoft.com/fwlink/p/?LinkId=613649) auf alle Daten, einschließlich aller Text-, Audio- und Bilddateien, die Microsoft vom Kunden oder in dessen Auftrag durch seine Nutzung der Microsoft 365-Dienste bereitgestellt werden. Weitere Informationen zum Schutz von Kundendaten finden Sie unter [Erste Schritte mit dem Microsoft Service Trust-Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal).
+> **Was sind "Kundendaten"?** Der Begriff "Kundendaten" bezieht sich gemäß Definition in den [Microsoft Online Service-Lizenzbedingungen](https://go.microsoft.com/fwlink/p/?LinkId=613649) auf alle Daten, einschließlich aller Text-, Audio- und Bilddateien, die Microsoft vom Kunden oder in dessen Auftrag durch seine Nutzung der Microsoft 365-Dienste bereitgestellt werden. Weitere Informationen zum Schutz von Kundendaten finden Sie unter [Erste Schritte mit dem Microsoft Service Trust-Portal](../../compliance/get-started-with-service-trust-portal.md).
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>Was geschieht, wenn ich ein Abonnement kündige?
 
@@ -210,13 +210,13 @@ Wenn Ihre Testversion endet, können Sie Microsoft 365 nicht weiterhin kostenlos
 
 ::: moniker range="o365-worldwide"
 
-- **Microsoft 365 kaufen.** Wenn Ihre Testversion abläuft, beginnt eine Nachfrist. So erhalten Sie (bei den meisten Testversionen, in den meisten Ländern und Regionen) weitere 30 Tage zum Kauf von Microsoft 365. Wenn Sie Ihre Testversion in ein kostenpflichtiges Abonnement umwandeln möchten, lesen Sie [Kaufen Ihrer Testversion von Microsoft 365 Business](../buy-a-subscription-from-your-free-trial.md).
+- **Microsoft 365 kaufen.** Wenn Ihre Testversion abläuft, beginnt eine Nachfrist. So erhalten Sie (bei den meisten Testversionen, in den meisten Ländern und Regionen) weitere 30 Tage zum Kauf von Microsoft 365. Wenn Sie Ihre Testversion in ein kostenpflichtiges Abonnement umwandeln möchten, lesen Sie [Kaufen Ihrer Testversion von Microsoft 365 Business](../try-or-buy-microsoft-365.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-- **Microsoft 365 kaufen.** Wenn Ihre Testversion abläuft, beginnt eine Nachfrist. So erhalten Sie (bei den meisten Testversionen, in den meisten Ländern und Regionen) weitere 30 Tage zum Kauf von Microsoft 365. Wenn Sie Ihre Testversion in ein kostenpflichtiges Abonnement umwandeln möchten, lesen Sie [Kaufen Ihrer Testversion von Microsoft 365 Business](../buy-a-subscription-from-your-free-trial.md).
+- **Microsoft 365 kaufen.** Wenn Ihre Testversion abläuft, beginnt eine Nachfrist. So erhalten Sie (bei den meisten Testversionen, in den meisten Ländern und Regionen) weitere 30 Tage zum Kauf von Microsoft 365. Wenn Sie Ihre Testversion in ein kostenpflichtiges Abonnement umwandeln möchten, lesen Sie [Kaufen Ihrer Testversion von Microsoft 365 Business](../try-or-buy-microsoft-365.md).
 
 ::: moniker-end
 
@@ -235,7 +235,6 @@ Wenn Ihre Testversion endet, können Sie Microsoft 365 nicht weiterhin kostenlos
 
 ## <a name="related-content"></a>Verwandte Inhalte 
 
-[Kündigen Ihres Abonnements](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (Artikel)\
-[Verlängern von Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (Artikel)\
-[Reaktivieren Ihres Abonnements](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (Artikel)
-
+[Kündigen Ihres Abonnements](./cancel-your-subscription.md) (Artikel)\
+[Verlängern von Microsoft 365 Business](./renew-your-subscription.md) (Artikel)\
+[Reaktivieren Ihres Abonnements](./reactivate-your-subscription.md) (Artikel)
