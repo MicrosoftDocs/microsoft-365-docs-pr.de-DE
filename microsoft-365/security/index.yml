@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: 971382e5da5b8bedf7527a7f30ae81dcbffdebdd
-  ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+  ms.openlocfilehash: 6a670287c98d185e4b9acfeb39715c5e1ddf177a
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/19/2020
-  ms.locfileid: "49356691"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50928976"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -41,15 +41,15 @@ landingContent:
   - linkListType: get-started
     links:
     - text: Remotemitarbeiter absichern
-      url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
+      url: /enterprise-mobility-security/remote-work/
 - title: Microsoft Defender for Identity
   linkLists:
   - linkListType: overview
     links:
     - text: Was ist Microsoft Defender for Identity?
-      url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
+      url: /azure-advanced-threat-protection/what-is-atp
     - text: Architektur von Microsoft Defender for Identity
-      url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
+      url: /azure-advanced-threat-protection/atp-architecture
 - title: Microsoft Defender for Office 365
   linkLists:
   - linkListType: overview
@@ -57,31 +57,31 @@ landingContent:
     - text: Was ist Defender for Office 365?
       url: office-365-security/office-365-atp.md
     - text: Defender for Office 365-Dienstbeschreibung
-      url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+      url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
 - title: Defender für Endpunkt
   linkLists:
   - linkListType: overview
     links:
     - text: Was ist Microsoft Defender für Endpunkt?
-      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+      url: /windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
     - text: Übersicht über die Funktionen
-      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
+      url: /windows/security/threat-protection/microsoft-defender-atp/overview
 - title: Azure Defender
   linkLists:
   - linkListType: overview
     links:
     - text: Was ist Azure Defender?
-      url: https://docs.microsoft.com/azure/security-center/security-center-intro
+      url: /azure/security-center/security-center-intro
     - text: Unterstützte Features
-      url: https://docs.microsoft.com/azure/security-center/security-center-services
+      url: /azure/security-center/security-center-services
 - title: Microsoft Cloud App Security
   linkLists:
   - linkListType: overview
     links:
     - text: Was ist Microsoft Cloud App Security?
-      url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
+      url: /cloud-app-security/what-is-cloud-app-security
     - text: Erste Schritte mit Microsoft Cloud App Security
-      url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
+      url: /cloud-app-security/getting-started-with-cloud-app-security
 - title: Sicherheitsverwaltung
   linkLists:
   - linkListType: overview
@@ -93,4 +93,4 @@ landingContent:
   - linkListType: overview
     links:
     - text: Was ist Azure Sentinel?
-      url: https://docs.microsoft.com/azure/sentinel/overview
+      url: /azure/sentinel/overview
