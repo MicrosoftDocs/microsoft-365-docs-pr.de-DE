@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: d1ac0bd289185f47fc5eb0bbe34c16fbe28bba84
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: a995b6fdbbff36c6466f5e55cda9d7e196fa2c02
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819891"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927029"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Erste Schritte mit dem Insider-Risikomanagement
 
@@ -227,7 +227,7 @@ Richtlinien für das Insider-Risikomanagement umfassen die zugewiesenen Benutzer
 
 11. Wenn Sie im vorherigen Schritt die Option Ich möchte **SharePoint-Websites,** Vertraulichkeitsbezeichnungen und/oder vertrauliche Informationstypen als Prioritätsinhalte angeben, werden die Detailseiten für *SharePoint-Websites,* Typen vertraulicher Informationen und Vertraulichkeitsbezeichnungen *angezeigt.* Verwenden Sie diese Detailseiten, um die SharePoint-, vertraulichen Informationstypen und Vertraulichkeitsbezeichnungen zu definieren, die in der Richtlinie priorisiert werden.
 
-    - **SharePoint-Websites:** Wählen Sie **SharePoint-Website hinzufügen aus,** und wählen Sie die SharePoint-Organisationen aus, auf die Sie Zugriff haben und priorisieren möchten. Beispiel: *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **SharePoint-Websites:** Wählen Sie **SharePoint-Website hinzufügen aus,** und wählen Sie die SharePoint-Websites aus, auf die Sie Zugriff haben und priorisieren möchten. Beispiel: *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Vertraulicher Infotyp:** Wählen Sie **Vertraulichen Informationstyp hinzufügen aus,** und wählen Sie die Vertraulichkeitstypen aus, die Sie priorisieren möchten. Beispiel: *"US-Bankkontonummer"* und *"Kreditkartennummer"*.
     - **Vertraulichkeitsbezeichnungen:** Wählen Sie **Vertraulichkeitsbezeichnung hinzufügen aus,** und wählen Sie die Bezeichnungen aus, die Sie priorisieren möchten. Beispiel: *"Vertraulich"* und *"Geheim"*.
 

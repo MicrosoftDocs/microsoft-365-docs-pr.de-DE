@@ -15,12 +15,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie Standard- und Strikte Richtlinieneinstellungen für die Schutzfunktionen von Exchange Online Protection (EOP) und Microsoft Defender für Office 365 anwenden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b49b980d217d60865029c8e64ad02ed722f6b86e
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: b57c13517d9fd41bcafea5c9d672da0e6b581ad7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407456"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926760"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Vordefinierte Sicherheitsrichtlinien in EOP und Microsoft Defender für Office 365
 
@@ -107,13 +107,13 @@ Anders ausgedrückt: Die Einstellungen  der Strikten Schutzrichtlinie überschre
 
 - Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **Voreingestellte Sicherheitsrichtlinien zu** wechseln, verwenden Sie <https://protection.office.com/presetSecurityPolicies> .
 
-- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in **Exchange Online** die entsprechenden Berechtigungen zugewiesen werden:
+- Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen in **Exchange Online** Berechtigungen zugewiesen werden:
   - Zum Konfigurieren vordefinierter Sicherheitsrichtlinien müssen Sie Mitglied der Rollengruppen **Organisationsverwaltung** oder **Sicherheitsadministrator** sein.
   - Für den schreibgeschützten Zugriff auf vordefinierte Sicherheitsrichtlinien müssen Sie Mitglied der Rollengruppe **"Globaler Leser"** sein.
 
-  Weitere Informationen finden Sie unter [Berechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
+  Weitere Informationen finden Sie unter [Berechtigungen in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   **Hinweis:** Durch hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im  Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen und Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 

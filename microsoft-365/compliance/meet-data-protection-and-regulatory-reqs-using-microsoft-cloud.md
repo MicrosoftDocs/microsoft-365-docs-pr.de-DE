@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Erfahren Sie, wie Sie Compliance Manager im Microsoft-Vertrauens-Portal verwenden, um den Datenschutz und die gesetzlichen Vorschriften zu erfüllen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f527aae2d36e392ecd646d48263a01b20a0785e8
-ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
+ms.openlocfilehash: e308de5bdf3441a602002e2fd6f216c361f64286
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50050399"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926525"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft Compliance-Manager (klassisch)
 
@@ -30,7 +30,7 @@ ms.locfileid: "50050399"
 
 *Der Compliance-Manager ist nicht in Office 365, betrieben von 21Vianet, Office 365 Deutschland, Office 365 US Government Community High (GCC) High oder Office 365 Department of Defense verfügbar.*
 
-Mit dem Compliance-Manager, einem workflowbasierten Tools zur Risikoabschätzung im Microsoft [Service Trust-Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal), können Sie Complianceaktivitäten Ihres Unternehmens im Zusammenhang mit Microsoft Professional Services und Microsoft Cloud Services, z. B. Microsoft Office 365, Microsoft Dynamics 365 und Microsoft Azure, nachverfolgen, zuweisen und überprüfen.
+Mit dem Compliance-Manager, einem workflowbasierten Tools zur Risikoabschätzung im Microsoft [Service Trust-Portal](./get-started-with-service-trust-portal.md), können Sie Complianceaktivitäten Ihres Unternehmens im Zusammenhang mit Microsoft Professional Services und Microsoft Cloud Services, z. B. Microsoft Office 365, Microsoft Dynamics 365 und Microsoft Azure, nachverfolgen, zuweisen und überprüfen.
 
 Für Compliance-Manager gilt Folgendes:
 

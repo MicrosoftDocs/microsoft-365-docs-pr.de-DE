@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Zusätzliche Geräteinformationen für Dienste beim Übergang von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
-ms.openlocfilehash: 151fcac882dc91d96df3ece000c28d1a7abe1d1f
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
-ms.translationtype: HT
+ms.openlocfilehash: 21188372f03af394fe1c0e227c1adeabbad02a85
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780296"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928156"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Zusätzliche Geräteinformationen für die Migration von Microsoft Cloud Deutschland
 
@@ -274,19 +274,19 @@ Benutzer können zu individuellen Apps wie Outlook, Teams oder OneDrive wechseln
 
 Erste Schritte:
 
-- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
+- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
 - [Hilfe zur Microsoft Cloud Deutschland-Migration Assistance](https://aka.ms/germanymigrateassist)
 - [So können Sie sich für die Migration anmelden](ms-cloud-germany-migration-opt-in.md)
 - [Kundenerfahrung während der Migration](ms-cloud-germany-transition-experience.md)
 
 Der Weg durch die Umstellung:
 
-- [Aktionen und Auswirkungen der Migrationsphasen](ms-cloud-germany-transition-phases.md)
+- [Phasen, Aktionen und Auswirkungen der Migration](ms-cloud-germany-transition-phases.md)
 - [Zusätzliche Vorarbeit](ms-cloud-germany-transition-add-pre-work.md)
-- Zusätzliche Informationen für [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräte](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräte](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud-Apps:
 
-- [Informationen zum Dynamics 365-Migrationsprogramm](https://aka.ms/d365ceoptin)
-- [Informationen zum Power BI-Migrationsprogramm](https://aka.ms/pbioptin)
-- [Erste Schritte mit dem Upgrade von Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Informationen zum Dynamics 365-Migrationsprogramm](/dynamics365/get-started/migrate-data-german-region)
+- [Informationen zum Power BI-Migrationsprogramm](/power-bi/admin/service-admin-migrate-data-germany)
+- [Erste Schritte mit dem Upgrade von Microsoft Teams](/microsoftteams/upgrade-start-here)

@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1f5fa231c371ca7a8d6a22ca0b4ff388fd89004c
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 5de805784b2772b0169b2ad2a503e9378b82fda7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50711916"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927096"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Neuerungen in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> Möchten Sie Microsoft 365 Defender erleben? Sie können [es in einer Laborumgebung auswerten](https://aka.ms/mtp-trial-lab) oder [Ihr Pilotprojekt in der Produktion ausführen.](https://aka.ms/m365d-pilotplaybook)
+> Sie möchten Microsoft 365 Defender ausprobieren? Sie können [in einer Laborumgebung auswerten](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) oder [ein Pilotprojekt in der Produktionsumgebung ausführen](./mtp-pilot.md?ocid=cx-evalpilot).
 >
 
 Die folgenden Features sind allgemein in der neuesten Version von Microsoft 365 Defender verfügbar.
@@ -42,7 +42,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="march-2021"></a>März 2021
 - [CloudAppEvents-Tabelle](advanced-hunting-cloudappevents-table.md) <br>Hier finden Sie Informationen zu Ereignissen in verschiedenen Cloud-Apps und -Diensten, die von Microsoft Cloud App Security abgedeckt werden. Diese Tabelle enthält auch Informationen, die zuvor in verfügbar `AppFileEvents` waren.
 ## <a name="february-2021"></a>Februar 2021
-- (Vorschau) Das erweiterte [Microsoft 365 https://security.microsoft.com) Security Center (](https://security.microsoft.com) ist jetzt in der öffentlichen Vorschau verfügbar. Diese neue Erfahrung bringt Defender for Endpoint und Defender für Office 365 in den Mittelpunkt. [Erfahren Sie mehr über die Geänderten](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center).
+- (Vorschau) Das erweiterte [Microsoft 365 https://security.microsoft.com) Security Center (](https://security.microsoft.com) ist jetzt in der öffentlichen Vorschau verfügbar. Diese neue Erfahrung bringt Defender for Endpoint und Defender für Office 365 in den Mittelpunkt. [Weitere Informationen zu den Neuerungen](./overview-security-center.md).
 
 ## <a name="september-2020"></a>September 2020
 - [IdentityDirectoryEvents-Tabelle](advanced-hunting-identitydirectoryevents-table.md) <br> Hier finden Sie Ereignisse mit einem lokalen Domänencontroller, auf dem Active Directory (AD) ausgeführt wird. Diese [erweiterte Schematabelle](advanced-hunting-overview.md) für die Suche deckt eine Reihe von identitätsbezogenen Ereignissen und Systemereignissen auf dem Domänencontroller ab.
@@ -66,7 +66,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [Automatische Untersuchung und Reaktion](mtp-autoir.md) <br> Mit AIR können Ihre Sicherheitsteams die Kapazität Ihrer Organisation im Umgang mit Sicherheitswarnungen und Vorfällen erheblich verbessern.
 - [Erweiterte Verbesserungen bei der Suche](advanced-hunting-overview.md) <br> Proaktive Suche nach Bedrohungen im modernen Arbeitsbereich mit Kusto Query Language und einem sicherheitsoptimierten Schema.
 
-## <a name="march-2019"></a>März 2019
+## <a name="march-2019"></a>März 2019
 - Erweiterte Suche <br> Landing page to various hunting capabilities that let you proactively find threats affecting email and data, devices, and identities.
 - [Microsoft-Sicherheitsbewertung](microsoft-secure-score.md) <br> Messung der Sicherheitslage einer Organisation mit einer höheren Anzahl, die mehr Verbesserungsmaßnahmen angibt. Wenn Sie den Empfehlungen der Sicherheitsbewertung folgen, können Sie Ihre Organisation vor Bedrohungen schützen. 
-- [Berichte](monitoring-and-reporting.md) <br>  Bietet eine Vielzahl von Karten, die eine Vielzahl von Bereichen abdecken, die Sicherheitsanalysten und Administratoren im Rahmen ihres täglichen Betriebs nachverfolgen.
+- [Berichte](./overview-security-center.md) <br>  Bietet eine Vielzahl von Karten, die eine Vielzahl von Bereichen abdecken, die Sicherheitsanalysten und Administratoren im Rahmen ihres täglichen Betriebs nachverfolgen.

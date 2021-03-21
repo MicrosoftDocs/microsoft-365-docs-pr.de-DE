@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: Erfahren Sie, wie Sie Custodians und deren Datenquellen speichern, um relevante Inhalte für Ihren Advanced eDiscovery-Fall zu erhalten.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fbad81e93635f823fab1c4f44867760d00fc59ed
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 07edcb2707d1dffecfa5a2aac6c4340ac6cbe53f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838586"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926373"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Verwalten von Halte halte in Advanced eDiscovery
 
@@ -80,7 +80,7 @@ So erstellen Sie einen nicht verwaisten Halteraum für einen Advanced eDiscovery
       Im Abschnitt **Häufig gestellte** Fragen finden Sie Tipps zum Halten von Microsoft 365-Gruppen und Microsoft Teams.
 
       > [!NOTE]
-      > Die URL für das #A0 eines Benutzers enthält ihren Benutzerprinzipalnamen (z. B. `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). In dem seltenen Fall, dass der UPN einer Person geändert wird, ändert sich auch die OneDrive-URL, um den neuen UPN zu integrieren. Wenn das #A0 eines Benutzers Teil eines nicht verwahrten Speichers ist und der UPN geändert wird, müssen Sie den Haltepunkt aktualisieren und auf die neue OneDrive-URL verweisen. Weitere Informationen hierzu finden Sie unter [Wie sich UPN-Änderungen auf die OneDrive-URL auswirken](https://docs.microsoft.com/onedrive/upn-changes).
+      > Die URL für das #A0 eines Benutzers enthält ihren Benutzerprinzipalnamen (z. B. `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). In dem seltenen Fall, dass der UPN einer Person geändert wird, ändert sich auch die OneDrive-URL, um den neuen UPN zu integrieren. Wenn das #A0 eines Benutzers Teil eines nicht verwahrten Speichers ist und der UPN geändert wird, müssen Sie den Haltepunkt aktualisieren und auf die neue OneDrive-URL verweisen. Weitere Informationen hierzu finden Sie unter [Wie sich UPN-Änderungen auf die OneDrive-URL auswirken](/onedrive/upn-changes).
 
    1. **Öffentliche Exchange-Ordner** : Verschieben Sie den Umschalter an die Position Alle, um alle öffentlichen Ordner in Ihrer Exchange Online-Organisation in den Halteraum zu setzen. Beachten Sie, dass Sie keine bestimmten öffentlichen Ordner auswählen können, die in der Warteschleife gespeichert werden. Lassen Sie den Umschalter auf **Keine festgelegt,** wenn Sie öffentliche Ordner nicht in der Warteschleife halten möchten.
 
@@ -92,7 +92,7 @@ So erstellen Sie einen nicht verwaisten Halteraum für einen Advanced eDiscovery
 
     - Klicken  **Sie auf Bedingungen** hinzufügen, um eine oder mehrere Bedingungen hinzuzufügen, um die Suchabfrage für den Halteraum zu einenten. Jede Bedingung fügt der KQL-Suchabfrage eine Klausel hinzu, die beim Erstellen des Haltezustands erstellt und ausgeführt wird. Sie können z. B. einen Datumsbereich angeben, damit E-Mails oder Websitedokumente, die innerhalb des Datumsbereichs erstellt wurden, in einem Haltebereich platziert werden. Eine Bedingung ist durch AND-Operator logisch mit der (im Schlüsselwortfeld angegebenen) Schlüsselwortabfrage verbunden. Das bedeutet, dass Elemente sowohl die Schlüsselwortabfrage als auch die Bedingung erfüllen müssen, die in der Warteschleife platziert werden soll.
 
-     Weitere Informationen zum Erstellen einer Suchabfrage und zum Verwenden von Bedingungen finden Sie unter [Schlüsselwortabfragen und Suchbedingungen für die Inhaltssuche](https://docs.microsoft.com/office365/SecurityCompliance/keyword-queries-and-search-conditions).
+     Weitere Informationen zum Erstellen einer Suchabfrage und zum Verwenden von Bedingungen finden Sie unter [Schlüsselwortabfragen und Suchbedingungen für die Inhaltssuche](/office365/SecurityCompliance/keyword-queries-and-search-conditions).
 
 11. Klicken Sie nach dem Konfigurieren eines abfragebasierten Halteraums auf **Weiter**.
 

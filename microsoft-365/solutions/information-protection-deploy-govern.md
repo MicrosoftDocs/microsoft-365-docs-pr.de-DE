@@ -1,5 +1,5 @@
 ---
-title: Steuern der Informationen unterliegen der Datenschutzverordnung
+title: Regeln von Informationen, die den Datenschutzbestimmungen unterliegen
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,17 +16,17 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Verwenden Sie Microsoft 365-Aufbewahrungs Bezeichnungen und-Richtlinien zum Verwalten personenbezogener Daten in Ihrer Microsoft 365-Umgebung.
-ms.openlocfilehash: c2a933e556213ae4b78db9dc5f903885df969b27
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: Verwenden Sie Microsoft 365-Aufbewahrungsbezeichnungen und -richtlinien, um personenbezogene Daten in Ihrer Microsoft 365-Umgebung zu verwalten.
+ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377045"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928436"
 ---
-# <a name="govern-information-subject-to-data-privacy-regulation"></a>Steuern der Informationen unterliegen der Datenschutzverordnung
+# <a name="govern-information-subject-to-data-privacy-regulation"></a>Regeln von Informationen, die den Datenschutzbestimmungen unterliegen
 
-Die Steuerelemente zur Steuerung der Informationssteuerung können in Ihrer Umgebung eingesetzt werden, um die Anforderungen an die Einhaltung von Datenschutzrichtlinien zu erfüllen, einschließlich einer spezifischen Datenschutzverordnung (dsgvo), des HIPAA-HITECH (Datenschutzgesetz der USA), des California Consumer Protection Act (CCPA) und des Brazil Data Protection Act (LGPD). 
+Steuerungssteuerelemente für die Information Governance können in Ihrer Umgebung eingesetzt werden, um anforderungen an die Einhaltung von Datenschutzbestimmungen zu erfüllen, einschließlich einer Zahl, die speziell für die DSGVO (General Data Protection Regulation, DSGVO), HIPAA-HITECH (Us States Health Care Privacy Act), California Consumer Protection Act (CCPA) und den Brazil Data Protection Act (LGPD) gilt. 
 
 Diese Steuerelemente fallen in erster Linie in die folgenden Lösungsbereiche:
 
@@ -34,61 +34,60 @@ Diese Steuerelemente fallen in erster Linie in die folgenden Lösungsbereiche:
 - Aufbewahrungsbezeichnungen
 - Datensatzverwaltung
 
-## <a name="data-privacy-regulations-impacting-information-governance-controls"></a>Datenschutzbestimmungen, die sich auf die Steuerung der Informationssteuerung auswirken
+## <a name="data-privacy-regulations-impacting-information-governance-controls"></a>Datenschutzbestimmungen, die sich auf Die Steuerung von Informationen auswirken
 
-Im folgenden finden Sie eine Beispielliste der Datenschutzbestimmungen, die sich möglicherweise auf die Steuerelemente für die Informationssteuerung beziehen:
+Im Folgenden finden Sie eine Beispielliste der Datenschutzbestimmungen, die sich auf Die Steuerung von Informationen beziehen können:
 
-- Dsgvo-Artikel (13) (2) (a)
-- Dsgvo-Artikel (5) (1) (f)
-- HIPAA-HITECH (45 CFR 164.312 (c) (2))
-- HIPAA-HITECH (45 CFR 164.316 (b) (1) (i))
-- HIPAA-HITECH (45 CFR 164.316 (b) (1) (II))
-- LGPD-Artikel 46
+- Artikel zur DSGVO (13)(2)(a)
+- Artikel zur DSGVO (5)(1)(f)
+- HIPAA-HITECH (45 CFR 164.312(c)(2))
+- HIPAA-HITECH (45 CFR 164.316(b)(1)(i))
+- HIPAA-HITECH (45 CFR 164.316(b)(1)(ii))
+- LGPD Artikel 46
 
-Weitere Informationen zu diesen Richtlinien finden Sie unter [bewerten von Datenschutzrisiken und Identifizieren von vertraulichen Informations Artikeln](information-protection-deploy-assess.md).
+Weitere Informationen zu diesen Bestimmungen finden Sie im Artikel "Bewerten von Datenschutzrisiken und Identifizieren [vertraulicher Informationen".](information-protection-deploy-assess.md)
 
-Für die Informationssteuerung werden in der Regel die Datenschutzbestimmungen für Folgendes gefordert:
+Für die Steuerung von Informationen müssen Datenschutzbestimmungen in der Regel Folgendes umfassen:
 
-- Sie sollten ein technisches Schema für Aufbewahrung und Löschung für personenbezogene Daten verwenden, die in Microsoft 365 gespeichert sind.
-- Wenn Sie personenbezogene Daten speichern möchten, informieren Sie den Betreff darüber, wie lange die Daten gespeichert werden, was heute auf Front-End-Websystemen üblich ist.
+- Sie sollten ein technisches Schema für die Aufbewahrung und Löschung von personenbezogenen Daten verwenden, die in Microsoft 365 gespeichert sind.
+- Wenn Sie personenbezogene Daten speichern möchten, informieren Sie den Betreff darüber, wie lange die Daten gespeichert werden, was in Front-End-Websystemen zur Standardpraxis gehört.
 - Personenbezogene Daten sollten mit überprüfbaren Methoden vor versehentlicher Verarbeitung, Verlust oder Änderung geschützt werden.
-- Alle Aktionen, die mit personenbezogenen Daten ausgeführt werden, sollten dokumentiert werden, und die Dokumentation sollte für einen bestimmten Zeitraum aufbewahrt werden.
+- Alle Aktionen, die gegen personenbezogene Daten ausgeführt werden, sollten dokumentiert werden, und diese Dokumentation sollte für einen bestimmten Zeitraum aufbewahrt werden.
 
-Da die Datenschutzbestimmungen hinsichtlich der Datenaufbewahrung und-Löschung nicht sehr spezifisch sind, müssen andere Faktoren berücksichtigt werden, die die Richtlinien für die Informationssteuerung für persönliche Informationen diktieren, die in Ihrem Microsoft 365-Abonnement gespeichert sind. Hier ein paar Beispiele:
+Da die Datenschutzbestimmungen nicht sehr spezifisch sind, wenn es um die Aufbewahrung und Löschung von Daten geht, müssen andere Faktoren berücksichtigt werden, die Richtlinien für die Informationsverwaltung für personenbezogene Informationen bestimmen können, die in Ihrem Microsoft 365-Abonnement gespeichert sind. Hier ein paar Beispiele:
 
-- Alterung von Consumer-Konten nach 5 Jahren Inaktivität und erfordert Löschung oder Anonymisierung von Kontodaten nach diesem Moment, erfordern Orchestrierung zwischen dem System speichern der Daten und Workflows im Zusammenhang mit Benachrichtigungen und andere Automatisierung.
-- Konfigurieren von Regeln für die Beibehaltung von Richtlinien und Verfahren im Zusammenhang mit dsgvo für drei Jahre nach der abgelösten Einstellung, die mit dem aufbewahrungszeitplan der Organisation für Richtlinien und Verfahren übereinstimmt.
-- Verwalten eines separaten Abonnements für die Kommunikation mit Verbrauchern über die Support Organisation. Alle e-Mail-Nachrichten wurden nach zwei Wochen aufbewahrt und gelöscht, um die Datenschutz Schulden im System zu reduzieren.
+- Das Altern von Verbraucherkonten nach 5 Jahren Inaktivität erfordert das Löschen oder Anonymisieren von Kontodaten nach diesem Zeitpunkt, was eine Orchestrierung zwischen dem System erfordert, in dem die Daten und Workflows im Zusammenhang mit Benachrichtigungen und anderer Automatisierung gespeichert werden.
+- Konfigurieren von Regeln für die Beibehaltung von Richtlinien und Verfahren im Zusammenhang mit der DSGVO für drei Jahre, nachdem sie ersetzt wurden, was dem Aufbewahrungszeitplan der Organisation für Richtlinien und Verfahren entspricht.
+- Verwalten eines separaten Abonnements für die Kommunikation mit Verbrauchern über die Supportorganisation. Alle E-Mail-Kommunikationen wurden nach zwei Wochen aufbewahrt und gelöscht, um den Aufbau von Datenschutzschulden im System zu reduzieren.
 
-Eine wichtige Frage zu beantworten ist: 
+Eine wichtige Frage, die Sie beantworten müssen, ist: 
 
-- Wie lange müssen Daten, die personenbezogene Daten enthalten, aus gültigen geschäftlichen Gründen aufbewahrt werden, um zu verhindern, dass "Keep it Forever" praktiziert wird? Dies muss mit dem aufbewahrungsbedarf für Business Continuity ausgeglichen werden.
+- Wie lange müssen Informationen, die personenbezogene Daten enthalten, aus gültigen geschäftlichen Gründen aufbewahrt werden, um zu verhindern, dass sie für immer beibehalten werden? Dies muss mit den Aufbewahrungsanforderungen für die Geschäftskontinuität abgewogen werden.
 
-Unabhängig von den rechtlichen und geschäftlichen Gründen, um personenbezogene Informationen zu speichern oder zu löschen, bietet Microsoft eine Reihe von Funktionen zur Implementierung Ihres Daten steuerungsschemas in Microsoft 365.
+Unabhängig von den rechtlichen und geschäftlichen Gründen für die Aufbewahrung personenbezogener Informationen oder deren Löschung bietet Microsoft eine Reihe von Funktionen zum Implementieren Ihres Data Governance-Schemas in Microsoft 365.
 
-## <a name="managing-information-governance-in-microsoft-365"></a>Managing Information Governance in Microsoft 365
+## <a name="managing-information-governance-in-microsoft-365"></a>Verwalten der Informationsverwaltung in Microsoft 365
 
-Informationen zu Beginn finden Sie unter [Manage Information Governance](../compliance/manage-information-governance.md) and [Data Retention, Deletion and Destruction in Microsoft 365](https://docs.microsoft.com/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview).
+Informationen zu Beginn finden Sie unter [Manage information governance](../compliance/manage-information-governance.md) and Data [Retention, Deletion and Destruction in Microsoft 365](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview).
 
-### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>Entwickeln von Zeitplänen für die Datenaufbewahrung für Container, e-Mail und Inhalte
+### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>Entwickeln von Datenaufbewahrungszeitplänen für Container, E-Mails und Inhalte
 
 Denken Sie dabei an Folgendes:
 
-- Das Festlegen eines Daten Aufbewahrungs Zeitplans für definierte Informationstypen sollte als Voraussetzung für die Implementierung eines Aufbewahrungs-oder Lösch Schemas betrachtet werden.
+- Die Festlegung eines Zeitplans für die Datenspeicherung für definierte Informationstypen sollte als Voraussetzung für die Implementierung eines Aufbewahrungs- oder Löschungsschemas betrachtet werden.
 
-- Angesichts der Anzahl von Informationstypen, die von den meisten Organisationen als wichtig erachtet werden, und der entsprechenden umfangreichen Aufbewahrungszeiträume für Datensätze, die mit diesen übereinstimmen, ist die Implementierung einer Daten Aufbewahrungs-und Datensatzverwaltungsstrategie geplant. 
+- Angesichts der Anzahl der Informationstypen, die die meisten Organisationen für wichtig halten, und der zugehörigen großen Aufbewahrungszeitpläne für Datensätze, die mit ihnen zusammenhingen, erfordert die Implementierung einer Strategie für die Datenspeicherung und Datensatzverwaltung eine Planung. 
 
-- Der Schlüssel zum Einrichten einer effektiven Strategie für die Datensteuerung dieses Typs besteht darin, sich auf die Geschäftsfunktionen und Informationstypen mit der höchsten Priorität zu konzentrieren, die eine formellere Verwaltung erfordern. Beispiele sind gesetzliche Verträge, Abschlüsse und Dokumentationen zur behördlichen Konformität. Versuchen Sie, einen separaten aufbewahrungszeitplan für jeden einzelnen Informationstyp zu vermeiden. Versuchen Sie, allgemeine Kategorien so weit wie möglich zu nutzen, beispielsweise mit Aufbewahrungszeit Plänen von 7 Jahren für allgemeine Geschäftsinhalte.
+- Der Schlüssel zum Einrichten einer effektiven Daten-Governance-Strategie dieses Typs besteht in der Fokussierung auf die wichtigsten Geschäftsfunktionen und Informationstypen, die eine formellere Verwaltung erfordern. Beispiele hierfür sind Gesetzliche Verträge, Abschlüsse und Dokumentation zur Einhaltung gesetzlicher Vorschriften. Versuchen Sie, einen separaten Aufbewahrungszeitplan für jeden einzelnen Informationstyp zu vermeiden. Versuchen Sie, allgemeine Kategorien so weit wie möglich zu verwenden, z. B. mit Aufbewahrungszeitplänen von 7 Jahren für allgemeine Geschäftsinhalte.
 
-- Wenn die personenbezogenen Informationstypen in Ihrer Umgebung besser bekannt sind, legen Sie Aufbewahrungs-und Lösch Zeitpläne für diese Art von Inhalten fest, und passen Sie Ihre Informationsarchitektur an, um die Steuerung dieser Art von Informationen zu vereinfachen. Isolieren Sie beispielsweise persönliche Informationen in separaten Websites, Bibliotheken oder Ordnern mit gesteuertem Zugriff.
+- Sobald die typen personenbezogenen Informationen in Ihrer Umgebung besser bekannt sind, richten Sie Aufbewahrungs- und Löschungszeitpläne für diese Art von Inhalten ein, und passen Sie Ihre Informationsarchitektur an, um die Steuerung dieser Art von Informationen zu vereinfachen. Isolieren Sie beispielsweise personenbezogene Informationen in separaten Websites, Bibliotheken oder Ordnern mit kontrolliertem Zugriff.
 
 ### <a name="retention-policies-and-retention-labels"></a>Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
-Verwenden Sie [Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen](../compliance/retention.md) zum aufbewahren oder Löschen von Inhalten in Microsoft 365, die personenbezogene Daten enthalten oder erwartet werden.
+Verwenden [Sie Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen,](../compliance/retention.md) um Inhalte in Microsoft 365 zu speichern oder zu löschen, die personenbezogene Daten enthalten oder voraussichtlich enthalten.
 
 ### <a name="records-management"></a>Datensatzverwaltung
 
-Verwenden Sie Aufbewahrungs Bezeichnungen, die Inhalte als Datensatz deklarieren, um eine Daten [Satz Verwaltungslösung](../compliance/records-management.md) für Daten in Microsoft 365 zu implementieren.
+Verwenden Sie Aufbewahrungsbezeichnungen, die Inhalte als Datensatz deklarieren, um eine [Datensatzverwaltungslösung](../compliance/records-management.md) für Daten in Microsoft 365 zu implementieren.
 
-Für den Datenschutz werden Datensubjekt Anfragen (DSRs), die von der Rechtsabteilung empfangen werden, als Datensatz deklariert und können auf unbestimmte Zeit gespeichert oder mit einem Nachweis entsorgt werden, um die Aufbewahrungspflichten für gesetzliche Aktivitäten einzuhalten.
-
+Für den Datenschutz werden Anträge von Personen, die von der Rechtsabteilung empfangen werden, als Datensatz deklariert und können für unbegrenzte Zeit gespeichert oder mit Nachweisen beseitigt werden, um die Aufbewahrungsspezifikationen für gesetzliche Aktivitäten einzuhalten.

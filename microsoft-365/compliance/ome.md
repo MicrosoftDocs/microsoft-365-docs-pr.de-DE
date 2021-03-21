@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie verschlüsselte E-Mail-Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen.
-ms.openlocfilehash: 8d1803442428f3061c686afa0b790d3f468abde8
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 504fa9918636cd596cde0d242083ccb7b9817e69
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741326"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927713"
 ---
 # <a name="message-encryption"></a>Nachrichtenverschlüsselung
 
@@ -36,7 +36,7 @@ Mit der Office 365-Nachrichtenverschlüsselung kann Ihre Organisation verschlüs
 
 Der Rest dieses Artikels bezieht sich auf die neuen OME-Funktionen.
 
-Die Office 365-Nachrichtenverschlüsselung ist ein Onlinedienst, der auf Microsoft Azure Rights Management (Azure RMS) baut, das Teil von Azure Information Protection ist. Dieser Dienst umfasst Verschlüsselungs-, Identitäts- und Autorisierungsrichtlinien, um Ihre E-Mails zu schützen. Sie können Nachrichten mithilfe von Vorlagen für die Rechteverwaltung, der [Option Nicht](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)weiterleiten und der Option nur verschlüsseln [.](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
+Die Office 365-Nachrichtenverschlüsselung ist ein Onlinedienst, der auf Microsoft Azure Rights Management (Azure RMS) baut, das Teil von Azure Information Protection ist. Dieser Dienst umfasst Verschlüsselungs-, Identitäts- und Autorisierungsrichtlinien, um Ihre E-Mails zu schützen. Sie können Nachrichten mithilfe von Vorlagen für die Rechteverwaltung, der [Option Nicht](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)weiterleiten und der Option nur verschlüsseln [.](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
 
 Benutzer können dann E-Mail-Nachrichten und verschiedene Anlagen mithilfe dieser Optionen verschlüsseln. Eine vollständige Liste der unterstützten Anlagentypen finden Sie unter "Dateitypen, die von IRM-Richtlinien abgedeckt werden, wenn sie an Nachrichten angefügt [werden" unter Einführung in IRM für E-Mail-Nachrichten](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM).
 
@@ -54,7 +54,7 @@ Endbenutzer, die verschlüsselte oder rechtegeschützte E-Mails auf anderen Clie
 
 Wenn sich der Absender der geschützten E-Mail in GCC High befindet und sich der Empfänger außerhalb von GCC High befindet, einschließlich kommerzieller Benutzer, Outlook.com-Benutzer und Benutzer anderer E-Mail-Anbieter wie Gmail, empfängt der Empfänger eine Wrapper-E-Mail. Die Wrapper-E-Mail leitet den Empfänger an das OME-Portal weiter, in dem der Empfänger die Nachricht lesen und beantworten kann. Andernfalls erhalten Empfänger, die Outlook-Clients zum Lesen von E-Mails verwenden, systemeigene, erstklassige Leseerfahrungen für verschlüsselte und rechtegeschützte E-Mails, wenn sich Absender und Empfänger beide in der GCC High-Umgebung befinden, auch wenn sie sich nicht in derselben Organisation befinden. Weitere Informationen zur unterschiedlichen Erfahrung in GCC High finden Sie [unter Compare versions of OME](ome-version-comparison.md).
 
-Weitere Informationen zu Größenbeschränkungen für Nachrichten und Anlagen, die Sie mit OME verschlüsseln können, finden Sie unter [Exchange Online Limits](https://technet.microsoft.com/library/exchange-online-limits.aspx).
+Weitere Informationen zu Größenbeschränkungen für Nachrichten und Anlagen, die Sie mit OME verschlüsseln können, finden Sie unter [Exchange Online Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
 ## <a name="how-office-365-advanced-message-encryption-works-on-top-of-ome"></a>Funktionsweise der erweiterten Office 365-Nachrichtenverschlüsselung über OME
 

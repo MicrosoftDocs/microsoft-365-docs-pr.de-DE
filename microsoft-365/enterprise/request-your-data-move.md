@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Bestehende Office 365-Kunden müssen vor Ablauf der Frist für Ihr Land eine Anforderung stellen, damit die Microsoft 365-Dienste in den neuen geografischen Raum verschoben werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 216cd3b0cb55cbbe6be89945b98a01ae469ec4e2
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
-ms.translationtype: HT
+ms.openlocfilehash: e68feeca842061c43c7be70d9b8b930f068d8e4e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349232"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927312"
 ---
 # <a name="how-to-request-your-data-move"></a>Anfordern der Datenverschiebung
 
@@ -76,8 +76,6 @@ Kunden in berechtigten Office 365-Ländern können sich ab Januar 2020 für die 
 
 [Allgemeine häufig gestellte Fragen zur Datenverschiebung](data-move-faq.md)
 
-[Neue Rechenzentrumsregionen für Microsoft Dynamics CRM Live](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Neue Rechenzentrumsregionen für Microsoft Dynamics CRM Live](/power-platform/admin/new-datacenter-regions)
   
 [Azure-Dienste nach Region](https://azure.microsoft.com/regions/)
-  
-

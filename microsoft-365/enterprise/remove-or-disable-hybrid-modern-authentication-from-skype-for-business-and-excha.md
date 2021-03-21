@@ -17,56 +17,54 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - seo-marvel-apr2020
-description: In diesem Artikel wird erläutert, wie Sie die moderne Hybrid Authentifizierung aus Skype for Business und Exchange entfernen oder deaktivieren.
-ms.openlocfilehash: 70f62b9b2165464837aa1dea0e12854df116efe0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+description: In diesem Artikel wird erläutert, wie Sie die moderne Hybridauthentifizierung aus Skype for Business und Exchange entfernen oder deaktivieren.
+ms.openlocfilehash: 9442ef3e19d0835bfd59f27ec425e36fd7dfcf7a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547096"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927288"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Entfernen oder Deaktivieren der modernen Hybridauthentifizierung aus Skype for Business und Exchange
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Wenn Sie die hybride moderne Authentifizierung (HMA) aktiviert haben, um zu ermitteln, ob Sie für Ihre aktuelle Umgebung ungeeignet ist, können Sie HMA deaktivieren. In diesem Artikel wird erläutert, wie.
+Wenn Sie die hybride moderne Authentifizierung (Hybrid Modern Authentication, HMA) nur aktiviert haben, um zu finden, dass sie für Ihre aktuelle Umgebung ungeeignet ist, können Sie HMA deaktivieren. In diesem Artikel wird dies erläutert.
   
-## <a name="who-is-this-article-for"></a>An wen richtet sich dieser Artikel?
+## <a name="who-is-this-article-for"></a>Für wen ist dieser Artikel da?
 
-Wenn Sie die moderne Authentifizierung in Skype for Business Online oder lokal und/oder Exchange Online oder lokal aktiviert haben und festgestellt haben, dass Sie HMA deaktivieren müssen, sind diese Schritte für Sie erforderlich.
+Wenn Sie die moderne Authentifizierung in Skype for Business Online oder lokal und/oder Exchange Online oder lokal aktiviert haben und festgestellt haben, dass Sie HMA deaktivieren müssen, sind diese Schritte für Sie da.
 
 > [!IMPORTANT]
-> Lesen Sie den Artikel "[Skype for Business Topologien mit moderner Authentifizierung unterstützt](https://technet.microsoft.com/library/mt803262.aspx)", wenn Sie sich in Skype for Business Online oder lokal befinden, eine HMA mit gemischten Topologien haben und unterstützte Topologien suchen müssen, bevor Sie beginnen.
+> Lesen Sie den Artikel "[Skype for Business topologies supported with Modern Authentication](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)", wenn Sie in Skype for Business Online oder lokal sind, über eine gemischte Topologie-HMA verfügen und unterstützte Topologien sehen müssen, bevor Sie beginnen.
   
-## <a name="how-to-disable-hybrid-modern-authentication-exchange"></a>Deaktivieren der modernen Hybrid Authentifizierung (Exchange)
+## <a name="how-to-disable-hybrid-modern-authentication-exchange"></a>Deaktivieren der hybriden modernen Authentifizierung (Exchange)
 
-1. **Exchange lokal**: Öffnen Sie das Exchange-Verwaltungsshell, und führen Sie die folgenden Befehle aus: 
+1. **Exchange Lokal**: Öffnen Sie die Exchange-Verwaltungsshell, und führen Sie die folgenden Befehle aus: 
 
 ```powershell
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
 Set-AuthServer -Identity evoSTS -IsDefaultAuthorizationEndpoint $false
 ```
 
-2. **Exchange Online**: [Verbinden mit Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) mit Remote-PowerShell. Führen Sie den folgenden Befehl aus, um die  *OAuth2ClientProfileEnabled*  -Kennzeichnung auf "false" zu verwandeln:
+2. **Exchange Online**: [Stellen Sie eine Verbindung mit Exchange Online mit](/powershell/exchange/connect-to-exchange-online-powershell) Remote PowerShell herzustellen. Führen Sie den folgenden Befehl aus, um das  *OAuth2ClientProfileEnabled-Flag*  in "false" zu verwandeln:
 
 ```powershell    
 Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false
 ```
     
-## <a name="how-to-disable-hybrid-modern-authentication-skype-for-business"></a>Deaktivieren der modernen Hybrid Authentifizierung (Skype for Business)
+## <a name="how-to-disable-hybrid-modern-authentication-skype-for-business"></a>Deaktivieren der modernen Hybridauthentifizierung (Skype for Business)
 
-1. **Skype for Business lokal**: führen Sie die folgenden Befehle in Skype for Business-Verwaltungsshell aus:
+1. **Skype for Business Lokal**: Führen Sie die folgenden Befehle in der Skype for Business Management Shell aus:
 
 ```powershell
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity ""
 ```
 
-2. **Skype for Business Online**: [Verbinden mit Skype for Business Online](manage-skype-for-business-online-with-microsoft-365-powershell.md) mit Remote-PowerShell. Führen Sie den folgenden Befehl aus, um die moderne Authentifizierung zu deaktivieren:
+2. **Skype for Business Online**: [Verbinden sie sich mit Skype for Business Online](manage-skype-for-business-online-with-microsoft-365-powershell.md) mit Remote PowerShell. Führen Sie den folgenden Befehl aus, um die moderne Authentifizierung zu deaktivieren:
 
 ```powershell    
 Set-CsOAuthConfiguration -ClientAdalAuthOverride Disallowed
 ```
 
-[Link zurück zur modernen Authentifizierung (Übersicht](hybrid-modern-auth-overview.md) ). 
-  
-
+[Link zurück zur Übersicht über die moderne Authentifizierung](hybrid-modern-auth-overview.md) . 

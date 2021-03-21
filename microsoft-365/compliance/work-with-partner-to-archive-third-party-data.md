@@ -15,56 +15,56 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: In diesem Artikel erfahren Sie, wie Sie einen benutzerdefinierten Connector zum Importieren von drittanbieterdaten aus Datenquellen wie Salesforce Chatter, Yahoo Messenger oder jammern einrichten.
-ms.openlocfilehash: 64e903604ea56e5f53e3cc154bd54459a6d8d554
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+description: Erfahren Sie, wie Sie einen benutzerdefinierten Connector zum Importieren von Drittanbieterdaten aus Datenquellen wie Salesforce Chatter, Yahoo Messenger oder Yammer.
+ms.openlocfilehash: adf6583f397296361e8f0cb6f12e7054436fa34f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620211"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928379"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Zusammenarbeit mit einem Partner zum Archivieren von Drittanbieterdaten
 
-Sie können mit einem Microsoft-Partner zusammenarbeiten, um Daten aus einer Drittanbieter-Datenquelle in Microsoft 365 zu importieren und zu archivieren. Ein Partner kann Ihnen einen benutzerdefinierten Connector zur Verfügung stellen, der so konfiguriert ist, dass er Elemente aus der Drittanbieter-Datenquelle extrahiert (regelmäßig) und diese Elemente dann importiert. Der Partner Connector wandelt den Inhalt eines Elements aus der Datenquelle in ein e-Mail-Nachrichtenformat um und speichert dann die Elemente in Postfächern. Nachdem Sie Daten von Drittanbietern importiert haben, können Sie Microsoft 365-Compliance-Features wie Beweissicherungsverfahren, eDiscovery, In-Place Archivierung, Überwachung und Microsoft 365-Aufbewahrungsrichtlinien auf diese Daten anwenden.
+Sie können mit einem Microsoft-Partner zusammenarbeiten, um Daten aus einer Datenquelle eines Drittanbieters in Microsoft 365 zu importieren und zu archivieren. Ein Partner kann Ihnen einen benutzerdefinierten Connector bereitstellen, der so konfiguriert ist, dass Elemente aus der Datenquelle eines Drittanbieters (regelmäßig) extrahiert und anschließend importiert werden. Der Partnerconnector konvertiert den Inhalt eines Elements aus der Datenquelle in ein E-Mail-Nachrichtenformat und speichert die Elemente dann in Postfächern. Nachdem Daten von Drittanbietern importiert wurden, können Sie Microsoft 365-Compliancefeatures wie z. B. Litigation Hold, eDiscovery, In-Place Archiving, Auditing und Microsoft 365 Retention Policies auf diese Daten anwenden.
 
 >[!IMPORTANT]
->Die [Kommunikations Kompatibilitäts](communication-compliance.md) Lösung in Microsoft 365 kann nicht auf die drittanbieterdaten angewendet werden, die von den in diesem Artikel erwähnten Partner-Konnektoren importiert wurden. 
+>Die [](communication-compliance.md) Kommunikationskonformitätslösung in Microsoft 365 kann nicht auf die von Partnerconnectors importierten Drittanbieterdaten angewendet werden, die in diesem Artikel erwähnt werden. 
 
-Im folgenden finden Sie eine Übersicht über den Prozess und die erforderlichen Schritte für die Zusammenarbeit mit einem Microsoft-Partner zum Importieren von drittanbieterdaten.
+Im Folgenden finden Sie eine Übersicht über den Prozess und die Schritte, die für die Zusammenarbeit mit einem Microsoft-Partner zum Importieren von Drittanbieterdaten erforderlich sind.
 
 [Step 1: Find a third-party data partner](#step-1-find-a-third-party-data-partner)
 
-[Schritt 2: Erstellen und Konfigurieren eines Drittanbieter-Daten Postfachs](#step-2-create-and-configure-a-third-party-data-mailbox-in-microsoft-365)
+[Schritt 2: Erstellen und Konfigurieren eines Drittanbieterdatenpostfachs](#step-2-create-and-configure-a-third-party-data-mailbox-in-microsoft-365)
 
 [Step 3: Configure user mailboxes for third-party data](#step-3-configure-user-mailboxes-for-third-party-data)
 
 [Schritt 4: Bereitstellen von Informationen für Ihren Partner](#step-4-provide-your-partner-with-information)
 
-[Schritt 5: Registrieren des drittanbieterdaten-Konnektors in Azure Active Directory](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
+[Schritt 5: Registrieren des Drittanbieterdatenconnector in Azure Active Directory](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
 
 ## <a name="how-the-third-party-data-import-process-works"></a>So funktioniert der Prozess zum Importieren von Drittanbieterdaten
 
-In der folgenden Abbildung und Beschreibung wird erläutert, wie der Datenimportvorgang eines Drittanbieters bei der Arbeit mit einem Partner funktioniert.
+In der folgenden Abbildung und Beschreibung wird erläutert, wie der Datenimportprozess eines Drittanbieters bei der Zusammenarbeit mit einem Partner funktioniert.
   
 ![So funktioniert der Prozess zum Importieren von Drittanbieterdaten](../media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
   
-1. Der Kunde arbeitet mit seinem Partner an der Wahl, um einen Connector zu konfigurieren, der Elemente aus der Drittanbieter-Datenquelle extrahiert und diese Elemente dann nach Microsoft 365 importiert wird.
+1. Der Kunde arbeitet mit seinem Partner ihrer Wahl zusammen, um einen Connector zu konfigurieren, der Elemente aus der Datenquelle eines Drittanbieters extrahiert und diese Elemente dann in Microsoft 365 importiert.
     
-2. Der Partner Connector stellt über eine API eines Drittanbieters (auf geplanter oder konfigurierter Basis) eine Verbindung mit Drittanbieter-Datenquellen her und extrahiert Elemente aus der Datenquelle. Der Partnerconnector konvertiert den Inhalt eines Elements in ein E-Mail-Format. Eine Beschreibung des Nachrichtenformat Schemas finden Sie im Abschnitt [Weitere Informationen](#more-information) . 
+2. Der Partnerconnector stellt eine Verbindung mit Datenquellen von Drittanbietern über eine Drittanbieter-API (geplant oder wie konfiguriert) bereit und extrahiert Elemente aus der Datenquelle. Der Partnerconnector konvertiert den Inhalt eines Elements in ein E-Mail-Format. Eine Beschreibung [des](#more-information) Nachrichtenformatschemas finden Sie im Abschnitt Weitere Informationen. 
     
-3. Partner Connector stellt über einen bekannten Endpunkt eine Verbindung mit dem Azure-Dienst in Microsoft 365 mithilfe des Exchange-Webdiensts (EWS) her.
+3. Partnerconnector stellt eine Verbindung mit dem Azure-Dienst in Microsoft 365 mithilfe von Exchange Web Service (EWS) über einen bekannten Endpunkt bereit.
     
 4. Elemente werden in das Postfach eines bestimmten Benutzers oder in ein spezielles Postfach zur Aufnahme aller Drittanbieterdaten importiert. Ob ein Element in das Postfach eines bestimmten Benutzers oder in das Postfach für Drittanbieterdaten importiert wird, basiert auf den folgenden Kriterien:
     
-   1. **Elemente mit einer Benutzer-ID, die einem Benutzerkonto entspricht:** Wenn der Partner Connector die Benutzer-ID des Elements in der Drittanbieter-Datenquelle einer bestimmten Benutzer-ID in Microsoft 365 zuordnen kann, wird das Element in den Ordner " **Bereinigungen** " des Ordners "refundable Items" des Benutzers kopiert. Benutzer können nicht auf Elemente im Ordner „Endgültige Löschvorgänge“ zugreifen. Sie können jedoch eDiscovery-Tools verwenden, um nach Elementen im Ordner "Säuberungen" zu suchen.
+   1. **Elemente mit einer Benutzer-ID, die einem Benutzerkonto entspricht:** Wenn der Partnerconnector die Benutzer-ID des Elements in der Datenquelle eines Drittanbieters einer bestimmten Benutzer-ID  in Microsoft 365 zuordnung, wird das Element in den Ordner "Löschen" im Ordner "Wiederherstellbare Elemente" des Benutzers kopiert. Benutzer können nicht auf Elemente im Ordner „Endgültige Löschvorgänge“ zugreifen. Sie können jedoch eDiscovery-Tools verwenden, um nach Elementen im Ordner "Löschen" zu suchen.
     
-   1. **Elemente, die nicht über eine Benutzer-ID verfügen, die einem Benutzerkonto entspricht:** Wenn der Partner Connector die Benutzer-ID eines Elements nicht einer bestimmten Benutzer-ID zuordnen kann, wird das Element in den Ordner **Posteingangs** Verzeichnis des Drittanbieter-Daten Postfachs kopiert. Das Importieren von Elementen in den Posteingang ermöglicht Ihnen oder einem anderen Benutzer in Ihrer Organisation, sich beim Drittanbieter-Postfach anzumelden und diese Elemente zu verwalten und zu sehen, ob Anpassungen an der Partnerconnectorkonfiguration vorgenommen werden müssen.
+   1. **Elemente, die keine Benutzer-ID haben, die einem Benutzerkonto entspricht:** Wenn der Partnerconnector die Benutzer-ID eines Elements nicht einer bestimmten Benutzer-ID zuordnung, wird das Element **in** den Posteingangsordner des Datenpostfachs eines Drittanbieters kopiert. Das Importieren von Elementen in den Posteingang ermöglicht Ihnen oder einem anderen Benutzer in Ihrer Organisation, sich beim Drittanbieter-Postfach anzumelden und diese Elemente zu verwalten und zu sehen, ob Anpassungen an der Partnerconnectorkonfiguration vorgenommen werden müssen.
  
 ## <a name="step-1-find-a-third-party-data-partner"></a>Schritt 1: Partner für Drittanbieterdaten suchen
 
-Eine wichtige Komponente für das Archivieren von drittanbieterdaten in Microsoft 365 besteht darin, einen Microsoft-Partner zu finden und zu verwenden, der sich auf das Erfassen von Daten aus einer Drittanbieter-Datenquelle und das Importieren dieser Daten in Microsoft 365 spezialisiert hat. Nachdem die Daten importiert wurden, können Sie zusammen mit anderen Microsoft-Daten Ihrer Organisation wie e-Mails von Exchange und Dokumenten aus SharePoint und OneDrive für Unternehmen archiviert und aufbewahrt werden. Ein Partner erstellt einen Konnektor, der Daten aus den drittanbieterdaten Quellen Ihrer Organisation extrahiert (wie BlackBerry, Facebook, Google +, Thomson Reuters, Twitter und YouTube) und übergibt diese Daten an eine Microsoft 365-API, die Elemente als e-Mail-Nachrichten in Exchange-Postfächer importiert.
+Eine wichtige Komponente für die Archivierung von Drittanbieterdaten in Microsoft 365 ist die Suche und Zusammenarbeit mit einem Microsoft-Partner, der sich auf die Erfassung von Daten aus einer Datenquelle eines Drittanbieters und deren Import in Microsoft 365 spezialisiert hat. Nachdem die Daten importiert wurden, können sie zusammen mit den anderen #A0 Ihrer Organisation archiviert und aufbewahrt werden, z. B. E-Mails aus Exchange und Dokumente aus SharePoint und OneDrive for Business. Ein Partner erstellt einen Connector, der Daten aus den Datenquellen von Drittanbietern Ihrer Organisation extrahiert (z. B. BlackBerry, Facebook, Google+, Thomson Reuters, Twitter und YouTube) und diese Daten an eine Microsoft 365-API weitergibt, die Elemente als E-Mail-Nachrichten in Exchange-Postfächer importiert.
   
-In den folgenden Abschnitten werden die Microsoft-Partner (und die von Ihnen unterstützten drittanbieterdaten Quellen) aufgeführt, die am Programm zum Archivieren von drittanbieterdaten in Microsoft 365 teilnehmen.
+In den folgenden Abschnitten sind die Microsoft-Partner (und die von ihnen unterstützten Drittanbieterdatenquellen) aufgeführt, die am Programm zur Archivierung von Drittanbieterdaten in Microsoft 365 teilnehmen.
 
 [17a-4 LLC](#17a-4-llc)
   
@@ -80,7 +80,7 @@ In den folgenden Abschnitten werden die Microsoft-Partner (und die von Ihnen unt
   
 ### <a name="17a-4-llc"></a>17a-4 LLC
 
-die [17a-4 LLC](https://www.17a-4.com) unterstützt die folgenden Drittanbieter-Datenquellen:
+[17a-4 LLC](https://www.17a-4.com) unterstützt die folgenden Drittanbieterdatenquellen:
   
 - BlackBerry
     
@@ -94,7 +94,7 @@ die [17a-4 LLC](https://www.17a-4.com) unterstützt die folgenden Drittanbieter-
     
 - InvestEdge
     
-- Schwätzchen
+- LivePerson
     
 - MessageLabs Data Streams
     
@@ -124,7 +124,7 @@ die [17a-4 LLC](https://www.17a-4.com) unterstützt die folgenden Drittanbieter-
   
 ### <a name="archivesocial"></a>ArchiveSocial
 
-[ArchiveSocial ](https://www.archivesocial.com) unterstützt die folgenden Drittanbieter-Datenquellen: 
+[ArchiveSocial ](https://www.archivesocial.com) unterstützt die folgenden Datenquellen von Drittanbietern: 
   
 - Facebook
     
@@ -144,7 +144,7 @@ die [17a-4 LLC](https://www.17a-4.com) unterstützt die folgenden Drittanbieter-
   
 ### <a name="globanet"></a>Globanet
 
-[Globanet](https://www.globanet.com) unterstützt die folgenden Drittanbieter-Datenquellen: 
+Die folgenden Datenquellen von Drittanbietern werden von ["Globenet"](https://www.globanet.com) unterstützt: 
   
 - AOL mit Pivot-Client
  
@@ -166,21 +166,21 @@ die [17a-4 LLC](https://www.17a-4.com) unterstützt die folgenden Drittanbieter-
     
 - CipherCloud for Salesforce Chatter
     
-- Cisco Chat &amp; Presence Server (v10, v 10.5.1 SU1, v 11.0, v 11.5 SU2)
+- Cisco IM &amp; Presence Server (v10, v10.5.1 SU1, v11.0, v11.5 SU2)
 
-- Cisco WebEx-Teams
+- Cisco Webex Teams
 
-- Citrix-Arbeitsbereichs &amp; Freigabe
+- Citrix Workspace &amp; ShareFile
 
 - CrowdCompass
 
-- Benutzerdefinierte Textdateien mit Trennzeichen
+- Benutzerdefinierte getrennte Textdateien
     
 - Benutzerdefinierte XML-Dateien
     
 - Facebook (Seiten)
     
-- FactSet
+- Factset
     
 - FXConnect
     
@@ -204,7 +204,7 @@ die [17a-4 LLC](https://www.17a-4.com) unterstützt die folgenden Drittanbieter-
     
 - Salesforce Chatter
 
-- Skype for Business Online
+- Skype for Business Online
     
 - Skype for Business, Versionen 2007 R2 - 2016 (lokal)
     
@@ -226,7 +226,7 @@ die [17a-4 LLC](https://www.17a-4.com) unterstützt die folgenden Drittanbieter-
   
 ### <a name="opentext"></a>OpenText
 
-[OpenText](https://www.opentext.com/what-we-do/products/opentext-product-offerings-catalog/rebranded-products/daegis) unterstützt die folgenden Drittanbieter-Datenquellen: 
+[OpenText](https://www.opentext.com/what-we-do/products/opentext-product-offerings-catalog/rebranded-products/daegis) unterstützt die folgenden Drittanbieterdatenquellen: 
   
 - Axs Encrypted
     
@@ -244,9 +244,9 @@ die [17a-4 LLC](https://www.17a-4.com) unterstützt die folgenden Drittanbieter-
   
 ### <a name="smarsh"></a>Smarsh
 
-[Smarsh](https://www.smarsh.com) unterstützt die folgenden Drittanbieter-Datenquellen: 
+[Smarsh](https://www.smarsh.com) unterstützt die folgenden Datenquellen von Drittanbietern: 
   
-- Versuchen
+- AIM
     
 - American Idol
     
@@ -278,9 +278,9 @@ die [17a-4 LLC](https://www.17a-4.com) unterstützt die folgenden Drittanbieter-
     
 - Echtzeitprotokollierung und -richtinie für Chat
     
-- Störgeräusche
+- Chatter
     
-- Cisco Chat &amp; Presence Server (v 9.0.1, v 9.1, v 9.1.1 SU1, V10, v 10.5.1 SU1)
+- Cisco IM &amp; Presence Server (v9.0.1, v9.1, v9.1.1 SU1, v10, v10.5.1 SU1)
     
 - Cisco Unified Presence Server (v8.6.3, v8.6.4, v8.6.5)
     
@@ -298,7 +298,7 @@ die [17a-4 LLC](https://www.17a-4.com) unterstützt die folgenden Drittanbieter-
     
 - Gnutella
     
-- Google +
+- Google+
     
 - GoToMyPC
     
@@ -324,7 +324,7 @@ die [17a-4 LLC](https://www.17a-4.com) unterstützt die folgenden Drittanbieter-
     
 - IBM SameTime Meeting 8.5.2 IFR1
     
-- Ice/YellowJacket
+- ICE/YellowJacket
     
 - Chat-Import
     
@@ -368,9 +368,9 @@ die [17a-4 LLC](https://www.17a-4.com) unterstützt die folgenden Drittanbieter-
     
 - NEONetwork
     
-- Dediziertes Microsoft 365 lync
+- Microsoft 365 Lync Dedicated
     
-- Microsoft 365 Shared Chat
+- Microsoft 365 Shared IM
     
 - Pinterest
     
@@ -407,7 +407,7 @@ die [17a-4 LLC](https://www.17a-4.com) unterstützt die folgenden Drittanbieter-
 
 ### <a name="verba"></a>Verba
 
-[Verba](https://www.verba.com) unterstützt die folgenden Drittanbieter-Datenquellen: 
+[Verba](https://www.verba.com) unterstützt die folgenden Datenquellen von Drittanbietern: 
   
 - Avaya Aura Video
     
@@ -429,9 +429,9 @@ die [17a-4 LLC](https://www.17a-4.com) unterstützt die folgenden Drittanbieter-
     
 - Cisco UC Voice
     
-- Cisco UCCX/UCCE-Video
+- Cisco UCCX/UCCE Video
     
-- Cisco UCCX/UCCE-VoIP
+- Cisco UCCX/UCCE Voice
     
 - ESChat Radio
     
@@ -473,50 +473,50 @@ die [17a-4 LLC](https://www.17a-4.com) unterstützt die folgenden Drittanbieter-
     
 - Windows Desktop-Computerbildschirm
   
-## <a name="step-2-create-and-configure-a-third-party-data-mailbox-in-microsoft-365"></a>Schritt 2: Erstellen und Konfigurieren eines Drittanbieter-Daten Postfachs in Microsoft 365
+## <a name="step-2-create-and-configure-a-third-party-data-mailbox-in-microsoft-365"></a>Schritt 2: Erstellen und Konfigurieren eines Drittanbieterdatenpostfachs in Microsoft 365
 
-Hier finden Sie die Schritte zum Erstellen und Konfigurieren eines Drittanbieter-Daten Postfachs zum Importieren von Daten nach Microsoft 365. Wie bereits erläutert, werden Elemente in dieses Postfach importiert, wenn der Partner Connector die Benutzer-ID des Elements keinem Benutzerkonto zuordnen kann.
+Im Folgenden finden Sie die Schritte zum Erstellen und Konfigurieren eines Datenpostfachs eines Drittanbieters zum Importieren von Daten in Microsoft 365. Wie bereits erläutert, werden Elemente in dieses Postfach importiert, wenn der Partnerconnector die Benutzer-ID des Elements nicht einem Benutzerkonto zuordnung.
   
- **Führen Sie diese Aufgaben im Microsoft 365 Admin Center aus.**
+ **Führen Sie diese Aufgaben im Microsoft 365 Admin Center aus**
   
-1. Erstellen Sie ein Benutzerkonto, und weisen Sie ihm eine Lizenz für Exchange Online Plan 2 zu. Weitere Informationen finden Sie unter [Hinzufügen von Benutzern zu Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=692098). Eine Plan 2-Lizenz ist erforderlich, um das Postfach in einem Beweissicherungsverfahren aufzubewahren oder ein Archivpostfach mit einem unbegrenzten Speicherkontingent zu aktivieren.
+1. Erstellen Sie ein Benutzerkonto, und weisen Sie ihm eine Exchange Online Plan 2-Lizenz zu. weitere [Informationen finden Sie unter Hinzufügen von Benutzern zu Microsoft 365](../admin/add-users/add-users.md). Eine Plan 2-Lizenz ist erforderlich, um das Postfach in einem Rechtsstreit zu platzieren oder ein Archivpostfach mit einem unbegrenzten Speicherkontingent zu aktivieren.
     
-2. Fügen Sie das Benutzerkonto für das Drittanbieter-Daten Postfach der **Administratorrolle Exchange-Administrator** in Microsoft 365 hinzu. Weitere Informationen finden Sie unter [Zuweisen von Administratorrollen in Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=532393).
+2. Fügen Sie das Benutzerkonto für das Datenpostfach eines Drittanbieters der **#A0** in Microsoft 365 hinzu. weitere [Informationen finden Sie unter Zuweisen von Administratorrollen in Microsoft 365](../admin/add-users/assign-admin-roles.md).
     
     > [!TIP]
     > Notieren Sie die Anmeldeinformationen für dieses Benutzerkonto. Sie müssen diese für Ihren Partner bereitstellen, wie in Schritt 4 beschrieben. 
   
- **Führen Sie diese Aufgaben im Exchange Admin Center aus.**
+ **Ausführen dieser Aufgaben im Exchange Admin Center**
   
-1. Ausblenden des Drittanbieter-Daten Postfachs aus dem Adressbuch und anderen Adresslisten in Ihrer Organisation; Weitere Informationen finden Sie unter [Verwalten von Benutzerpostfächern](https://go.microsoft.com/fwlink/p/?LinkId=616058). Alternativ können Sie den folgenden PowerShell-Befehl ausführen:
+1. Ausblenden des Drittanbieterdatenpostfachs aus dem Adressbuch und anderen Adresslisten in Ihrer Organisation; weitere [Informationen finden Sie unter Verwalten von Benutzerpostfächern](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes). Alternativ können Sie den folgenden PowerShell-Befehl ausführen:
     
     ```powershell
     Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
     ```
 
-2. Weisen Sie dem Drittanbieter-Daten Postfach die Berechtigung **FullAccess** zu, damit Administratoren oder Compliance Officer das Drittanbieter-Daten Postfach im Outlook-Desktop Client öffnen können. Weitere Informationen finden Sie unter [Manage Permissions for Recipients](https://go.microsoft.com/fwlink/p/?LinkId=692104).
+2. Weisen Sie dem Datenpostfach eines Drittanbieters die Berechtigung **FullAccess** zu, damit Administratoren oder Compliance officers das Datenpostfach eines Drittanbieters im #A0 öffnen können. Weitere [Informationen finden Sie unter Verwalten von Berechtigungen für Empfänger](https://go.microsoft.com/fwlink/p/?LinkId=692104).
     
-3. Aktivieren Sie die folgenden kompatibilitätsbezogenen Funktionen für das Drittanbieter-Daten Postfach:
+3. Aktivieren Sie die folgenden compliancebezogenen Features für das Datenpostfach eines Drittanbieters:
     
-    - Aktivieren des Archivpostfachs siehe [Aktivieren von archivpostfächern](enable-archive-mailboxes.md) und [Aktivieren der unbegrenzten Archivierung](enable-unlimited-archiving.md). Auf diese Weise können Sie Speicherplatz im primären Postfach freigeben, indem Sie eine Archivrichtlinie einrichten, mit der Datenelemente von Drittanbietern in das Archivpostfach verschoben werden. Dadurch erhalten Sie unbegrenzten Speicher für drittanbieterdaten.
+    - Aktivieren des Archivpostfachs; weitere [Informationen finden Sie unter Aktivieren von Archivpostfächern](enable-archive-mailboxes.md) und Aktivieren der [unbegrenzten Archivierung.](enable-unlimited-archiving.md) Auf diese Weise können Sie Speicherplatz im primären Postfach frei machen, indem Sie eine Archivrichtlinie einrichten, die Datenelemente von Drittanbietern in das Archivpostfach verschiebt. Dadurch erhalten Sie unbegrenzten Speicherplatz für Drittanbieterdaten.
     
-    - Aktivieren Sie für das Drittanbieterdaten-Postfach das Beweissicherungsverfahren. Sie können auch eine Microsoft 365-Aufbewahrungsrichtlinie im Security and Compliance Center anwenden. Beim Platzieren dieses Postfachs bleiben Datenelemente von Drittanbietern (auf unbestimmte Zeit oder für eine bestimmte Dauer) erhalten und verhindern, dass Sie aus dem Postfach gelöscht werden. Lesen Sie eines der folgenden Themen:
+    - Aktivieren Sie für das Drittanbieterdaten-Postfach das Beweissicherungsverfahren. Sie können auch eine Microsoft 365-Aufbewahrungsrichtlinie im Security and Compliance Center anwenden. Durch das Speichern dieses Postfachs werden Datenelemente von Drittanbietern (auf unbestimmte Zeit oder für eine bestimmte Dauer) aufbewahrt und verhindert, dass sie aus dem Postfach gelöscht werden. Sehen Sie sich eines der folgenden Themen an:
     
-      - [Aktivieren des Beweissicherungsverfahrens für ein Postfach](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+      - [Aktivieren des Beweissicherungsverfahrens für ein Postfach](./create-a-litigation-hold.md)
     
       - [Weitere Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md)
     
-    - Aktivieren der postfachüberwachungsprotokollierung für den Besitzer-, Stellvertreter-und Administratorzugriff auf das Daten Postfach eines Drittanbieters; siehe [Aktivieren der postfachüberwachung](enable-mailbox-auditing.md). Auf diese Weise können Sie alle von Benutzern ausgeführten Aktivitäten überwachen, die Zugriff auf das Daten Postfach eines Drittanbieters haben.
+    - Aktivieren der Postfach-Überwachungsprotokollierung für Besitzer-, Stellvertreter- und Administratorzugriff auf das Datenpostfach eines Drittanbieters; weitere [Informationen finden Sie unter Aktivieren der Postfachüberwachung](enable-mailbox-auditing.md). Auf diese Weise können Sie alle Aktivitäten überwachen, die von jedem Benutzer ausgeführt werden, der Zugriff auf das Datenpostfach eines Drittanbieters hat.
 
 ## <a name="step-3-configure-user-mailboxes-for-third-party-data"></a>Schritt 3: Benutzerpostfächer für Drittanbieterdaten konfigurieren
 
-Als Nächstes müssen Sie die Benutzerpostfächer für die Unterstützung von Drittanbieterdaten konfigurieren. Führen Sie diese Aufgaben mithilfe der Exchange-Verwaltungskonsole oder mithilfe der entsprechenden Windows PowerShell-Cmdlets aus.
+Als Nächstes müssen Sie die Benutzerpostfächer für die Unterstützung von Drittanbieterdaten konfigurieren. Führen Sie diese Aufgaben mithilfe des Exchange Admin Centers oder mithilfe der entsprechenden cmdlets Windows PowerShell aus.
   
-1. Aktivieren Sie das Archivpostfach für jeden Benutzer. siehe [Aktivieren von archivpostfächern](enable-archive-mailboxes.md) und [Aktivieren der unbegrenzten Archivierung](enable-unlimited-archiving.md).
+1. Aktivieren des Archivpostfachs für jeden Benutzer; weitere [Informationen finden Sie unter Aktivieren von Archivpostfächern](enable-archive-mailboxes.md) und Aktivieren der [unbegrenzten Archivierung.](enable-unlimited-archiving.md)
     
-2. Platzieren von Benutzerpostfächern für das Beweissicherungsverfahren oder Anwenden einer Microsoft 365-Aufbewahrungsrichtlinie Lesen Sie eines der folgenden Themen: 
+2. Platzieren von Benutzerpostfächern in einem Prozessaufbewahrungsverfahren oder Anwenden einer Microsoft 365-Aufbewahrungsrichtlinie; siehe eines der folgenden Themen: 
     
-    - [Aktivieren des Beweissicherungsverfahrens für ein Postfach](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+    - [Aktivieren des Beweissicherungsverfahrens für ein Postfach](./create-a-litigation-hold.md)
     
     - [Weitere Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md)
     
@@ -524,7 +524,7 @@ Als Nächstes müssen Sie die Benutzerpostfächer für die Unterstützung von Dr
 
 ## <a name="step-4-provide-your-partner-with-information"></a>Schritt 4: Bereitstellen von Informationen für Ihren Partner
 
-Der letzte Schritt besteht darin, dem Partner die folgenden Informationen bereitzustellen, damit er den Connector für die Verbindung mit Ihrer Organisation konfigurieren kann, um Daten in Benutzerpostfächer und das Drittanbieter-Daten Postfach zu importieren. 
+Der letzte Schritt besteht in der Bereitstellung der folgenden Informationen für Ihren Partner, damit er den Connector so konfigurieren kann, dass eine Verbindung mit Ihrer Organisation hergestellt wird, um Daten in Benutzerpostfächer und das Datenpostfach eines Drittanbieters zu importieren. 
   
 - Der Endpunkt, der zum Herstellen einer Verbindung mit dem Azure-Dienst in Microsoft 365 verwendet wird:
 
@@ -532,50 +532,50 @@ Der letzte Schritt besteht darin, dem Partner die folgenden Informationen bereit
     https://office365ingestionsvc.gble1.protection.outlook.com/service/ThirdPartyIngestionService.svc
     ```
 
-- Die Anmeldeinformationen (Benutzer-ID und Kennwort von Microsoft 365) des Drittanbieter-Daten Postfachs, das Sie in Schritt 2 erstellt haben. Diese Anmeldeinformationen sind erforderlich, damit der Partnerconnector auf Elemente zugreifen und sie in das Drittanbieterdaten-Postfach importieren kann.
+- Die Anmeldeinformationen (Microsoft 365-Benutzer-ID und -Kennwort) des Datenpostfachs eines Drittanbieters, das Sie in Schritt 2 erstellt haben. Diese Anmeldeinformationen sind erforderlich, damit der Partnerconnector auf Elemente zugreifen und sie in das Drittanbieterdaten-Postfach importieren kann.
  
-## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>Schritt 5: Registrieren des drittanbieterdaten-Konnektors in Azure Active Directory
+## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>Schritt 5: Registrieren des Drittanbieterdatenconnector in Azure Active Directory
 
-Ab dem 30. September 2018 wird der Azure-Dienst in Microsoft 365 die moderne Authentifizierung in Exchange Online verwenden, um Daten Konnektoren von Drittanbietern zu authentifizieren, die versuchen, eine Verbindung mit Ihrer Organisation herzustellen, um Daten zu importieren. Der Grund für diese Änderung besteht darin, dass die moderne Authentifizierung mehr Sicherheit bietet als die aktuelle Methode, die auf einer Zulassungsliste für Connectors von Drittanbietern basiert, die den zuvor beschriebenen Endpunkt zum Herstellen einer Verbindung mit dem Azure-Dienst verwenden.
+Ab dem 30. September 2018 verwendet der Azure-Dienst in Microsoft 365 die moderne Authentifizierung in Exchange Online, um Datenconnectors von Drittanbietern zu authentifizieren, die versuchen, eine Verbindung mit Ihrer Organisation herzustellen, um Daten zu importieren. Der Grund für diese Änderung ist, dass die moderne Authentifizierung mehr Sicherheit bietet als die aktuelle Methode, die auf einer Liste zulässiger Connectors von Drittanbietern basiert, die den zuvor beschriebenen Endpunkt zum Herstellen einer Verbindung mit dem Azure-Dienst verwenden.
 
-Damit ein Drittanbieter-Daten Konnektor mithilfe der neuen modernen Authentifizierungsmethode eine Verbindung mit Microsoft 365 herstellen kann, muss ein Administrator in Ihrer Organisation einwilligen, den Connector als vertrauenswürdige Dienstanwendung in Azure Active Directory zu registrieren. Dies erfolgt durch Annahme einer Berechtigungsanforderung, damit der Connector auf die Daten Ihrer Organisation in Azure Active Directory zugreifen kann. Nachdem Sie diese Anforderung angenommen haben, wird der Drittanbieter-Daten Konnektor als Unternehmensanwendung zu Azure Active Directory hinzugefügt und als Dienstprinzipal dargestellt. Weitere Informationen zum Zustimmungsprozess finden Sie unter  [Mandanten-admin-Zustimmung](https://docs.microsoft.com/skype-sdk/trusted-application-api/docs/tenantadminconsent).
+Damit ein Datenconnector eines Drittanbieters mithilfe der neuen modernen Authentifizierungsmethode eine Verbindung mit Microsoft 365 herstellen kann, muss ein Administrator in Ihrer Organisation zustimmen, den Connector als vertrauenswürdige Dienstanwendung in Azure Active Directory zu registrieren. Dazu wird eine Berechtigungsanforderung akzeptiert, um dem Connector den Zugriff auf die Daten Ihrer Organisation in Azure Active Directory zu ermöglichen. Nachdem Sie diese Anforderung akzeptiert haben, wird der Drittanbieterdatenconnector als Unternehmensanwendung zu Azure Active Directory hinzugefügt und als Dienstprinzipal dargestellt. Weitere Informationen zum Zustimmungsprozess finden Sie unter  [Tenant Admin Consent](/skype-sdk/trusted-application-api/docs/tenantadminconsent).
 
-Hier sind die Schritte zum Zugreifen auf und akzeptieren der Anforderung zum Registrieren des Connectors:
+Hier sind die Schritte, um auf die Anforderung zum Registrieren des Connectors zu zugreifen und diese zu akzeptieren:
 
-1. Wechseln Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) , und melden Sie sich mit den Anmeldeinformationen eines globalen Administrators an.
+1. Wechseln Sie [zu dieser Seite,](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) und melden Sie sich mit den Anmeldeinformationen eines globalen Administrators an.
 
    Das folgende Dialogfeld wird angezeigt. Sie können die Carets erweitern, um die Berechtigungen zu überprüfen, die dem Connector zugewiesen werden.
 
-   ![Das Dialogfeld Berechtigungsanforderung wird angezeigt.](../media/O365-ThirdPartyDataConnector-OptIn1.png)
+   ![Das Dialogfeld Berechtigungsanforderung wird angezeigt](../media/O365-ThirdPartyDataConnector-OptIn1.png)
 
 2. Klicken Sie auf **Annehmen**.
 
-Nachdem Sie die Anforderung angenommen haben, wird das [Azure-Portal](https://portal.azure.com) angezeigt. Um die Liste der Anwendungen für Ihre Organisation anzuzeigen, klicken Sie auf **Azure Active Directory**  >  **Enterprise Applications**. Der Microsoft 365-Drittanbieter-Daten Konnektor wird auf dem Blade **Enterprise-Anwendungen** aufgeführt.
+Nachdem Sie die Anforderung akzeptiert haben, wird das [Azure-Portal](https://portal.azure.com) angezeigt. Klicken Sie zum Anzeigen der Liste der Anwendungen für Ihre Organisation auf **Azure Active Directory**  >  **Enterprise-Anwendungen.** Der Microsoft 365-Drittanbieterdatenconnector ist auf dem Blatt **Enterprise-Anwendungen** aufgeführt.
 
 > [!IMPORTANT]
-> Nach dem 30. September 2018 werden drittanbieterdaten nicht mehr in Postfächer in Ihrer Organisation importiert, wenn Sie keinen Daten Konnektor eines Drittanbieters in Azure Active Directory registrieren. Hinweis vorhandene Drittanbieter-Daten-Konnektoren (die vor dem 30. September 2018 erstellt wurden) müssen ebenfalls in Azure Active Directory registriert werden, indem Sie das Verfahren in Schritt 5 ausführen.
+> Nach dem 30. September 2018 werden Drittanbieterdaten nicht mehr in Postfächer in Ihrer Organisation importiert, wenn Sie keinen Drittanbieterdatenconnector in Azure Active Directory registrieren. Beachten Sie, dass vorhandene Datenconnectors von Drittanbietern (die vor dem 30. September 2018 erstellt wurden) auch in Azure Active Directory registriert werden müssen, indem Sie das Verfahren in Schritt 5 folgen.
 
-### <a name="revoking-consent-for-a-third-party-data-connector"></a>Widerrufen der Zustimmung für einen Daten Konnektor eines Drittanbieters
+### <a name="revoking-consent-for-a-third-party-data-connector"></a>Widerrufen der Zustimmung für einen Datenconnector eines Drittanbieters
 
-Nachdem Ihre Organisation der Berechtigungsanforderung zugestimmt hat, um einen Drittanbieter-Daten Konnektor in Azure Active Directory zu registrieren, kann Ihre Organisation diese Zustimmung jederzeit widerrufen. Das Widerrufen der Zustimmung für einen Connector bedeutet jedoch, dass Daten aus der Drittanbieter-Datenquelle nicht mehr in Microsoft 365 importiert werden.
+Nachdem Ihre Organisation der Berechtigungsanforderung zur Registrierung eines Drittanbieterdatenconnector in Azure Active Directory zugestimmt hat, kann Ihre Organisation diese Zustimmung jederzeit widerrufen. Das Widerrufen der Zustimmung für einen Connector bedeutet jedoch, dass Daten aus der Datenquelle eines Drittanbieters nicht mehr in Microsoft 365 importiert werden.
 
-Um die Zustimmung für einen Drittanbieter-Datenconnector zu widerrufen, können Sie die Anwendung (durch Löschen des entsprechenden Dienst Prinzipals) aus Azure Active Directory mithilfe des Blades **Enterprise-Anwendungen** im Azure-Portal oder mithilfe der [Remove-MsolServicePrincipal](https://docs.microsoft.com/powershell/module/msonline/remove-msolserviceprincipal) in Microsoft 365 PowerShell löschen. Sie können auch das Cmdlet [Remove-AzureADServicePrincipal](https://docs.microsoft.com/powershell/module/azuread/remove-azureadserviceprincipal) in Azure Active Directory PowerShell verwenden.
+Um die Zustimmung für einen Datenconnector eines Drittanbieters zu widerrufen, können Sie die Anwendung (durch Löschen des entsprechenden Dienstprinzipals) aus Azure Active Directory mithilfe des Blatts **Enterprise-Anwendungen** im Azure-Portal oder mithilfe des [Remove-MsolServicePrincipal](/powershell/module/msonline/remove-msolserviceprincipal) in Microsoft 365 PowerShell löschen. Sie können auch das [Cmdlet Remove-AzureADServicePrincipal](/powershell/module/azuread/remove-azureadserviceprincipal) in Azure Active Directory PowerShell verwenden.
   
 ## <a name="more-information"></a>Weitere Informationen
 
-- Wie bereits weiter oben erläutert, werden Elemente aus Drittanbieter-Datenquellen als E-Mail-Nachrichten in Exchange-Postfächer importiert. Der Partner Connector importiert das Element mithilfe eines Schemas, das für die Microsoft 365-API erforderlich ist. Die folgende Tabelle beschreibt die Nachrichteneigenschaften eines Elements aus einer Drittanbieter-Datenquelle, nachdem es als E-Mail-Nachricht in ein Exchange-Postfach importiert wurde. Zudem ist angegeben, wenn die Nachrichteneigenschaft zwingend erforderlich ist. Erforderliche Eigenschaften müssen aufgefüllt werden. Wenn ein Element eine obligatorische Eigenschaft fehlt, wird es nicht in Microsoft 365 importiert werden. Beim Importvorgang wird eine Fehlermeldung mit der Erläuterung zurückgegeben, warum ein Element nicht importiert wurde und welche Eigenschaft fehlt.<br/><br/>
+- Wie bereits weiter oben erläutert, werden Elemente aus Drittanbieter-Datenquellen als E-Mail-Nachrichten in Exchange-Postfächer importiert. Der Partnerconnector importiert das Element mithilfe eines Schemas, das von der Microsoft 365-API benötigt wird. Die folgende Tabelle beschreibt die Nachrichteneigenschaften eines Elements aus einer Drittanbieter-Datenquelle, nachdem es als E-Mail-Nachricht in ein Exchange-Postfach importiert wurde. Zudem ist angegeben, wenn die Nachrichteneigenschaft zwingend erforderlich ist. Erforderliche Eigenschaften müssen aufgefüllt werden. Wenn einem Element eine obligatorische Eigenschaft fehlt, wird es nicht nach Microsoft 365 importiert. Der Importvorgang gibt eine Fehlermeldung zurück, in der erläutert wird, warum ein Element nicht importiert wurde und welche Eigenschaft fehlt.<br/><br/>
     
     |**Nachrichteneigenschaft**|**Erforderlich?**|**Beschreibung**|**Beispielwert**|
     |:-----|:-----|:-----|:-----|
-    |**FROM** <br/> |Ja  <br/> |Der Benutzer, der das Element in der Drittanbieter-Datenquelle ursprünglich erstellt oder gesendet hat. Der Partner Connector versucht, die Benutzer-ID des Quellelements (beispielsweiseeines Twitter-Handles) einem Benutzerkonto für alle Teilnehmer (Benutzer in den Feldern von und bis) zuzuordnen. Eine Kopie der Nachricht wird in das Postfach jedes Teilnehmers importiert. Wenn keines der Teilnehmer aus dem Element einem Benutzerkonto zugeordnet werden kann, wird das Element in das Archivierungs Postfach eines Drittanbieters in Microsoft 365 importiert.  <br/> <br/> Der Teilnehmer, der als Absender des Elements identifiziert wird, muss über ein aktives Postfach in der Organisation verfügen, in das das Element importiert wird. Wenn der Absender nicht über ein aktives Postfach verfügt, wird der folgende Fehler zurückgegeben:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
+    |**FROM** <br/> |Ja  <br/> |Der Benutzer, der das Element in der Drittanbieter-Datenquelle ursprünglich erstellt oder gesendet hat. Der Partnerconnector versucht, die Benutzer-ID aus dem Quellelement (z. B. ein Twitter-Handle) einem Benutzerkonto für alle Teilnehmer (Benutzer in den Feldern FROM und TO) zu zuordnungen. Eine Kopie der Nachricht wird in das Postfach jedes Teilnehmers importiert. Wenn keiner der Teilnehmer aus dem Element einem Benutzerkonto zugeordnet werden kann, wird das Element in das Archivierungspostfach eines Drittanbieters in Microsoft 365 importiert.  <br/> <br/> Der Teilnehmer, der als Absender des Elements identifiziert wird, muss über ein aktives Postfach in der Organisation verfügen, in die das Element importiert wird. Wenn der Absender nicht über ein aktives Postfach verfügt, wird der folgende Fehler zurückgegeben:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
     |**TO** <br/> |Ja  <br/> |Der Benutzer, der ein Element erhalten hat (wenn für ein Element in der Datenquelle zutreffend).  <br/> | `bob@contoso.com` <br/> |
     |**Betreff** <br/> |Nein  <br/> |Der Betreff des Quellelements.  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
-    |**Datum** <br/> |Ja  <br/> |Das Datum, an dem das Element ursprünglich erstellt oder in der Kundendatenquelle veröffentlicht wurde. Beispielsweise dieses Datum, an dem eine Twitter-Nachricht getweetet wurde.  <br/> | `01 NOV 2015` <br/> |
-    |**Text** <br/> |Nein  <br/> |Der Inhalt der Nachricht oder des Beitrags. Bei einigen Datenquellen kann der Inhalt dieser Eigenschaft mit dem Inhalt der Eigenschaft **SUBJECT** identisch sein. Während des Importvorgangs versucht der Partner Connector, die vollständige Genauigkeit von der Inhaltsquelle wie möglich beizubehalten. Soweit möglich, werden Dateien, Grafiken oder andere Inhalte aus dem Textkörper des Quellelements in diese Eigenschaft einbezogen. Andernfalls wird der Inhalt aus dem Quellelement in die Eigenschaft **ATTACHMENT** einbezogen. Der Inhalt dieser Eigenschaft hängt vom Partner-Konnektor und der Funktion der QuellPlattform ab.  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
-    |**Anlage** <br/> |Nein  <br/> |Wenn ein Element in der Datenquelle (beispielsweise ein tweet in Twitter oder eine Chatnachrichten Unterhaltung) über eine angefügte Datei verfügt oder Bilder enthält, versucht der Partner Connect zunächst, Anlagen in die **Body** -Eigenschaft einzuschließen. Wenn dies nicht möglich ist, wird es zur * * Attachment * *-Eigenschaft hinzugefügt. Weitere Beispiele für Anlagen sind „Gefällt mir“-Angaben in Facebook, Metadaten aus der Inhaltsquelle und Antworten auf eine Nachricht oder einen Beitrag.  <br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |Ja  <br/> | Dies ist eine Eigenschaft mit mehreren Werten, die vom Partnerconnector erstellt und mit Werten gefüllt wird. Das Format dieser Eigenschaft ist  `IPM.NOTE.Source.Event` . (Diese Eigenschaft muss mit beginnen  `IPM.NOTE` . Dieses Format ähnelt dem für die  `IPM.NOTE.X` Nachrichtenklasse.) Diese Eigenschaft enthält die folgenden Informationen:  <br/><br/>`Source`: Gibt die Datenquelle eines Drittanbieters an; zum Beispiel Twitter, Facebook oder BlackBerry.  <br/> <br/>  `Event`: Gibt die Art der Aktivität an, die in der Drittanbieter-Datenquelle ausgeführt wurde, die die Elemente erstellt hat; zum Beispiel ein tweet in Twitter oder ein Beitrag in Facebook. Ereignisse sind für die jeweilige Datenquelle spezifisch.  <br/> <br/>  Ein Zweck dieser Eigenschaft ist es zum Beispiel, bestimmte Elemente basierend auf der Datenquelle zu filtern, aus der ein Element stammt, oder basierend auf dem Typ des Ereignisses. So könnten Sie in einer eDiscovery-Suche zum Beispiel eine Suchabfrage erstellen, um alle Tweets zu finden, die von einem bestimmten Benutzer gepostet wurden.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**DATE** <br/> |Ja  <br/> |Das Datum, an dem das Element ursprünglich in der Kundendatenquelle erstellt oder veröffentlicht wurde. Beispielsweise das Datum, an dem eine Twitter-Nachricht getwittert wurde.  <br/> | `01 NOV 2015` <br/> |
+    |**BODY** <br/> |Nein  <br/> |Der Inhalt der Nachricht oder des Beitrags. Bei einigen Datenquellen kann der Inhalt dieser Eigenschaft mit dem Inhalt der Eigenschaft **SUBJECT** identisch sein. Während des Importvorgangs versucht der Partnerconnector, die vollständige Genauigkeit von der Inhaltsquelle so wie möglich zu erhalten. Soweit möglich, werden Dateien, Grafiken oder andere Inhalte aus dem Textkörper des Quellelements in diese Eigenschaft einbezogen. Andernfalls wird der Inhalt aus dem Quellelement in die Eigenschaft **ATTACHMENT** einbezogen. Der Inhalt dieser Eigenschaft hängt vom Partnerconnector und von der Funktion der Quellplattform ab.  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
+    |**ATTACHMENT** <br/> |Nein  <br/> |Wenn ein Element in der Datenquelle (z. B. ein Tweet in Twitter oder eine Instant Messaging-Unterhaltung) über eine angefügte Datei verfügt oder Bilder enthält, versucht die Partner-Verbindung zunächst, Anlagen in die **BODY-Eigenschaft** zu schließen. Wenn dies nicht möglich ist, wird es der ** ATTACHMENT ** -Eigenschaft hinzugefügt. Weitere Beispiele für Anlagen sind „Gefällt mir“-Angaben in Facebook, Metadaten aus der Inhaltsquelle und Antworten auf eine Nachricht oder einen Beitrag.  <br/> | `image.gif` <br/> |
+    |**MESSAGECLASS** <br/> |Ja  <br/> | Dies ist eine Eigenschaft mit mehreren Werten, die vom Partnerconnector erstellt und mit Werten gefüllt wird. Das Format dieser Eigenschaft ist  `IPM.NOTE.Source.Event` . (Diese Eigenschaft muss mit  `IPM.NOTE` beginnen. Dieses Format ähnelt dem format für die  `IPM.NOTE.X` Nachrichtenklasse.) Diese Eigenschaft enthält die folgenden Informationen:  <br/><br/>`Source`: Gibt die Datenquelle eines Drittanbieters an; z. B. Twitter, Facebook oder BlackBerry.  <br/> <br/>  `Event`: Gibt den Typ der Aktivität an, die in der Datenquelle eines Drittanbieters ausgeführt wurde, von der die Elemente erstellt wurden; z. B. ein Tweet in Twitter oder ein Beitrag in Facebook. Ereignisse sind für die jeweilige Datenquelle spezifisch.  <br/> <br/>  Ein Zweck dieser Eigenschaft ist es zum Beispiel, bestimmte Elemente basierend auf der Datenquelle zu filtern, aus der ein Element stammt, oder basierend auf dem Typ des Ereignisses. So könnten Sie in einer eDiscovery-Suche zum Beispiel eine Suchabfrage erstellen, um alle Tweets zu finden, die von einem bestimmten Benutzer gepostet wurden.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
-- Wenn Elemente erfolgreich in Postfächer in Microsoft 365 importiert werden, wird ein eindeutiger Bezeichner als Teil der HTTP-Antwort zurück an den Aufrufer zurückgegeben. Dieser Bezeichner,  `x-IngestionCorrelationID` der aufgerufen wird, kann für nachfolgende Problembehandlungszwecke von Partnern zur End-to-End-Überwachung von Elementen verwendet werden. Es wird empfohlen, dass Partner diese Informationen entsprechend erfassen und sammeln. Im Folgenden ist ein Beispiel einer HTTP-Antwort mit diesem Bezeichner aufgeführt:
+- Wenn Elemente erfolgreich in Postfächer in Microsoft 365 importiert werden, wird ein eindeutiger Bezeichner als Teil der HTTP-Antwort an den Aufrufer zurückgegeben. Dieser Bezeichner namens , kann für nachfolgende Problembehandlungszwecke von Partnern für die  `x-IngestionCorrelationID` End-to-End-Nachverfolgung von Elementen verwendet werden. Es wird empfohlen, dass Partner diese Informationen entsprechend erfassen und sammeln. Im Folgenden ist ein Beispiel einer HTTP-Antwort mit diesem Bezeichner aufgeführt:
 
     ```http
     HTTP/1.1 200 OK
@@ -587,13 +587,13 @@ Um die Zustimmung für einen Drittanbieter-Datenconnector zu widerrufen, können
     Date: Tue, 02 Feb 2016 22:55:33 GMT 
     ```
 
-- Sie können das Tool für die Inhaltssuche im Security and Compliance Center verwenden, um nach Elementen zu suchen, die von einer Drittanbieter-Datenquelle in Postfächer importiert wurden. Um gezielt nach diesen importierten Elementen zu suchen, können Sie die folgenden Nachrichten Eigenschaftswert-Paare im Feld Stichwort für eine Inhaltssuche verwenden.
+- Sie können das Tool für die Inhaltssuche im Security and Compliance Center verwenden, um nach Elementen zu suchen, die aus einer Datenquelle eines Drittanbieters in Postfächer importiert wurden. Um speziell nach diesen importierten Elementen zu suchen, können Sie die folgenden Nachrichteneigenschaft-Wert-Paare im Schlüsselwortfeld für eine Inhaltssuche verwenden.
     
-  - **`kind:externaldata`**: Verwenden Sie dieses Eigenschaftswert-Paar, um alle Drittanbieter-Datentypen zu durchsuchen. Um beispielsweise nach Elementen zu suchen, die aus einer Drittanbieter-Datenquelle importiert wurden und das Wort "Contoso" in der Subject-Eigenschaft des importierten Elements enthielten, würden Sie die Stichwortabfrage verwenden  `kind:externaldata AND subject:contoso` .
+  - **`kind:externaldata`**: Verwenden Sie dieses Eigenschaften-Wert-Paar, um alle Datentypen von Drittanbietern zu durchsuchen. Wenn Sie beispielsweise nach Elementen suchen möchten, die aus einer Datenquelle eines Drittanbieters importiert wurden und das Wort "contoso" in der Subject-Eigenschaft des importierten Elements enthalten, verwenden Sie die Schlüsselwortabfrage  `kind:externaldata AND subject:contoso` .
     
-  - **`itemclass:ipm.externaldata.<third-party data type>`**: Verwenden Sie dieses Eigenschaftswert-Paar, um nur einen Typ von drittanbieterdaten zu suchen. Wenn Sie beispielsweise nur Facebook-Daten durchsuchen möchten, die das Wort "Contoso" in der Subject-Eigenschaft enthalten, verwenden Sie die Stichwort-Abfrage  `itemclass:ipm.externaldata.Facebook* AND subject:contoso` . 
+  - **`itemclass:ipm.externaldata.<third-party data type>`**: Verwenden Sie dieses Eigenschaften-Wert-Paar, um nur einen angegebenen Typ von Drittanbieterdaten zu durchsuchen. Wenn Sie beispielsweise nur Facebook-Daten durchsuchen möchten, die das Wort "contoso" in der Subject-Eigenschaft enthalten, verwenden Sie die Schlüsselwortabfrage  `itemclass:ipm.externaldata.Facebook* AND subject:contoso` . 
 
-  Eine vollständige Liste der Werte, die für Drittanbieter-Datentypen für die Eigenschaft verwendet werden sollen  `itemclass` , finden Sie unter [Verwenden der Inhaltssuche zum Durchsuchen von drittanbieterdaten, die in Microsoft 365 importiert wurden](use-content-search-to-search-third-party-data-that-was-imported.md).
+  Eine vollständige Liste der Werte, die für Drittanbieterdatentypen für die Eigenschaft verwendet werden sollen, finden Sie unter  `itemclass` Use Content Search to search [third-party data that was imported to Microsoft 365](use-content-search-to-search-third-party-data-that-was-imported.md).
     
    Weitere Informationen zur Verwendung der Inhaltssuche und zum Erstellen von Stichwortsuchabfragen finden Sie unter:
     

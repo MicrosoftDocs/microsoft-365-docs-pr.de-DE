@@ -15,49 +15,49 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Verwenden Sie Office 365 erweiterte Nachrichtenverschlüsselung, um Ihre e-Mail-Sicherheit zu erweitern, indem Sie ein Ablaufdatum für e-Mails über eine benutzerdefinierte Marken Vorlage festlegen.
+description: Verwenden Sie office 365 Advanced Message Encryption, um Ihre E-Mail-Sicherheit zu erweitern, indem Sie ein Ablaufdatum für E-Mails über eine benutzerdefinierte Markenvorlage festlegen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bbd018e55592e5b17149edf1a4dc0907c0184417
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: f936ffa62f31e47f51fc1bcb2765195b0ea809af
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769165"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927785"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Festlegen eines Ablaufdatums für E-Mails, die mit der erweiterten Office 365-Nachrichtenverschlüsselung verschlüsselt wurden.
 
-Office 365 erweiterte Nachrichtenverschlüsselung ist in [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (Non-Profit-Mitarbeiter Preise), Office 365 Enterprise E5 (Nonprofit-Mitarbeiter Preise) und Office 365 Education A5 enthalten. Wenn Ihre Organisation über ein Abonnement verfügt, das Office 365 erweiterte Nachrichtenverschlüsselung nicht enthält, können Sie Sie mit dem Microsoft 365 E5 Compliance-SKU-Add-on für Microsoft 365 E3, Microsoft 365 E3 (Nonprofit Pricing) oder mit dem Office 365 Advanced Compliance SKU-Add-on für Microsoft 365 E3, Microsoft 365 E3 (Preise für gemeinnützige Mitarbeiter) oder Office 365-SKUs erwerben.
+Office 365 Advanced Message Encryption ist in [Microsoft 365 Enterprise E5,](https://www.microsoft.com/microsoft-365/enterprise/home)Office 365 E5, Microsoft 365 E5 (Preis für gemeinnützige Mitarbeiter), Office 365 Enterprise E5 (Gemeinnützige Mitarbeiterpreise) und Office 365 Education A5 enthalten. Wenn Ihre Organisation über ein Abonnement verfügt, das keine erweiterte Office 365-Nachrichtenverschlüsselung umfasst, können Sie es mit dem Microsoft 365 E5 Compliance SKU-Add-On für Microsoft 365 E3, Microsoft 365 E3 (Preis für gemeinnützige Mitarbeiter) oder dem Office 365 Advanced Compliance SKU-Add-On für Microsoft 365 E3, Microsoft 365 E3 (Preise für gemeinnützige Mitarbeiter) oder Office 365 SKUs erwerben.
 
-Sie können Nachrichtenablauf bei e-Mails verwenden, die Ihre Benutzer an externe Empfänger senden, die das OM-Portal zum Zugriff auf verschlüsselte e-Mails verwenden. Sie erzwingen, dass Empfänger das OM-Portal verwenden, um verschlüsselte e-Mails anzuzeigen und zu beantworten, die von Ihrer Organisation gesendet werden, indem Sie eine benutzerdefinierte Marken Vorlage verwenden, die ein Ablaufdatum in Windows PowerShell angibt.
+Sie können den Nachrichtenablauf für E-Mails verwenden, die Ihre Benutzer an externe Empfänger senden, die das OME-Portal für den Zugriff auf verschlüsselte E-Mails verwenden. Sie erzwingen, dass Empfänger das OME-Portal verwenden, um verschlüsselte E-Mails, die von Ihrer Organisation gesendet werden, mithilfe einer benutzerdefinierten Markenvorlage anzeigen und beantworten zu können, die ein Ablaufdatum in Windows PowerShell.
 
-Wenn Sie als Office 365 globaler Administrator Ihre Unternehmensmarke anwenden, um das Aussehen der e-Mail-Nachrichten Ihrer Organisation anzupassen, können Sie auch einen Ablauf für diese e-Mail-Nachrichten angeben. Mit Office 365 erweiterten Nachrichtenverschlüsselung können Sie mehrere Vorlagen für verschlüsselte e-Mails erstellen, die aus Ihrer Organisation stammen. Mithilfe einer Vorlage können Sie steuern, wie lange Empfänger Zugriff auf von Ihren Benutzern gesendete e-Mails haben.
+Wenn Sie als globaler Office 365-Administrator Ihre Unternehmensmarke anwenden, um das Erscheinungsbild der E-Mail-Nachrichten Ihrer Organisation anzupassen, können Sie auch einen Ablauf für diese E-Mail-Nachrichten angeben. Mit office 365 Advanced Message Encryption können Sie mehrere Vorlagen für verschlüsselte E-Mails erstellen, die aus Ihrer Organisation stammen. Mithilfe einer Vorlage können Sie steuern, wie lange Empfänger Zugriff auf von Ihren Benutzern gesendete E-Mails haben.
 
-Wenn ein Endbenutzer e-Mails erhält, für die ein Ablaufdatum festgelegt wurde, sieht der Benutzer das Ablaufdatum in der Wrapper-e-Mail. Wenn ein Benutzer versucht, eine abgelaufene e-Mail zu öffnen, wird im OM-Portal ein Fehler angezeigt.
+Wenn ein Endbenutzer E-Mails empfängt, für die ein Ablaufdatum festgelegt ist, wird dem Benutzer das Ablaufdatum in der Wrapper-E-Mail angezeigt. Wenn ein Benutzer versucht, eine abgelaufene E-Mail zu öffnen, wird im OME-Portal ein Fehler angezeigt.
 
-Sie können nur Ablaufdaten für e-Mails an externe Empfänger festlegen.
+Sie können nur Ablaufdaten für E-Mails an externe Empfänger festlegen.
 
-Bei Office 365 erweiterten Nachrichtenverschlüsselung wendet der Office 365 den Wrapper bei jeder Anwendung des benutzerdefinierten Branding auf e-Mail an, die der Nachrichtenfluss Regel entspricht, auf die die Vorlage angewendet wird. Außerdem können Sie die Ablaufzeit nur verwenden, wenn Sie benutzerdefiniertes Branding verwenden.
+Mit office 365 Advanced Message Encryption wendet office 365 den Wrapper auf E-Mails an, die der Nachrichtenflussregel entspricht, auf die Sie die Vorlage anwenden. Darüber hinaus können Sie den Ablauf nur verwenden, wenn Sie benutzerdefiniertes Branding verwenden.
 
-## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>Erstellen einer benutzerdefinierten Branding-Vorlage zum Erzwingen des e-Mail-Ablaufs mithilfe von PowerShell
+## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>Erstellen einer benutzerdefinierten Brandingvorlage zum Erzwingen des Ablaufs von E-Mails mithilfe von PowerShell
 
-1. Stellen Sie eine [Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) mit einem Konto her, das über globale Administratorberechtigungen in Ihrer Organisation verfügt.
+1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) mit einem Konto mit globalen Administratorberechtigungen in Ihrer Organisation sicher.
 
-2. Führen Sie das New-OMEConfiguration-Cmdlet aus.
+2. Führen Sie New-OMEConfiguration cmdlet aus.
 
     ```powershell
     New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
     ```
 
-Dabei gilt:
+Dabei gilt Folgendes:
 
 - `Identity` ist der Name der benutzerdefinierten Vorlage.
 
-- `ExternalMailExpiryInDays` Gibt an, wie viele Tage e-Mails von Empfängern aufbewahrt werden können, bevor Sie ablaufen. Sie können einen beliebigen Wert zwischen 1 bis 730 Tagen verwenden.
+- `ExternalMailExpiryInDays` gibt an, wie viele Tage Empfänger E-Mails behalten können, bevor sie ablaufen. Sie können einen beliebigen Wert zwischen 1 und 730 Tagen verwenden.
 
-## <a name="more-information-about-office-365-advanced-message-encryption"></a>Weitere Informationen zu Office 365 erweiterte Nachrichtenverschlüsselung
+## <a name="more-information-about-office-365-advanced-message-encryption"></a>Weitere Informationen zur erweiterten Office 365-Nachrichtenverschlüsselung
 
 - [Erweiterte Office 365-Nachrichtenverschlüsselung](ome-advanced-message-encryption.md)
 
 - [Widerrufen von E-Mails, die von der erweiterten Office 365-Nachrichtenverschlüsselung verschlüsselt wurden](revoke-ome-encrypted-mail.md)
 
-- [Beschreibung des Nachrichtenrichtlinien-und Kompatibilitätsdiensts](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)
+- [Beschreibung des Nachrichtenrichtlinien- und Compliancediensts](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)

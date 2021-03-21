@@ -15,70 +15,70 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Erfahren Sie, wie Advanced eDiscovery in Microsoft 365 die Sprachen Chinesisch, Japanisch und Koreanisch (CJK) unterstützt, die einen Doppelbyte-Zeichensatz verwenden.
-ms.openlocfilehash: cef91001f48512545ce528d6f43de97c28c4c495
-ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
+description: Erfahren Sie, wie Advanced eDiscovery in Microsoft 365 Sprachen wie Chinesisch, Japanisch und Koreanisch (CJK) unterstützt, die einen Doppel-Byte-Zeichensatz verwenden.
+ms.openlocfilehash: ee47c5cd7f1a378ccfff05b8f7712e91092907cb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48626935"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926601"
 ---
-# <a name="cjk-language-support-for-advanced-ediscovery"></a>Unterstützung für CJK-Sprachen für erweiterte eDiscovery
+# <a name="cjk-language-support-for-advanced-ediscovery"></a>CJK-Sprachunterstützung für Advanced eDiscovery
 
-Advanced eDiscovery unterstützt Doppelbyte-Zeichensatz Sprachen (darunter vereinfachtes Chinesisch, traditionelles Chinesisch, Japanisch und Koreanisch, die als *cjk* -Sprachen bezeichnet werden) für die folgenden erweiterten Szenarien in einem Überprüfungs Satz:
+Advanced eDiscovery unterstützt Doppel-Byte-Zeichensatzsprachen (dazu gehören vereinfachtes Chinesisch, traditionelles Chinesisch, Japanisch und Koreanisch, die gemeinsam als *CJK-Sprachen* bekannt sind) für die folgenden erweiterten Szenarien in einem Überprüfungssatz:
 
-- Wenn Sie [die Daten in einem Überprüfungs Satzes Abfragen](review-set-search.md).
+- Wenn Sie [die Daten in einem Überprüfungssatz abfragen.](review-set-search.md)
 
-- Wenn Sie [Dokumente in einem Überprüfungs Satzes markieren](tagging-documents.md).
+- Wenn Sie [Dokumente in einem Überprüfungssatz kennzeichnen.](tagging-documents.md)
 
-- Wenn Sie [Falldaten in einer Überprüfungsgruppe](analyzing-data-in-review-set.md) mithilfe von nahezu doppelter Erkennung, e-Mail-Threading und Design Analyse analysieren.
+- Wenn Sie [Falldaten in einem Überprüfungssatz](analyzing-data-in-review-set.md) mithilfe der Fast-Duplikaterkennung, des E-Mail-Threadings und der Designsanalyse analysieren.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-**Wie erstelle ich eine Suche zum Sammeln von Elementen, die CJK-Zeichen enthalten?**
+**Wie erstelle ich eine Suche zum Sammeln von Elementen, die #A0 enthalten?**
 
-Bei der Suche nach Inhalten in Advanced eDiscovery können Sie CJK-Zeichen für [Stichwortsuche](building-search-queries.md#keyword-searches), [Stichwortabfragen und Suchbedingungen](keyword-queries-and-search-conditions.md) verwenden. Die Suche nach CJK-Zeichen wird auch bei der Suche nach Inhalten in der zentralen eDiscovery-und Inhaltssuche unterstützt.
+Sie können #A0 [für](building-search-queries.md#keyword-searches)Stichwortsuchen, Stichwortabfragen und [Suchbedingungen](keyword-queries-and-search-conditions.md) verwenden, wenn Sie in Advanced eDiscovery nach Inhalten suchen. Die Suche nach #A0 wird auch bei der Suche nach Inhalten in Core eDiscovery und Content Search unterstützt.
 
-Wir bieten CJK-Unterstützung für alle [Suchoperatoren](keyword-queries-and-search-conditions.md#search-operators) und [Suchbedingungen](keyword-queries-and-search-conditions.md#search-conditions), einschließlich der booleschen Operatoren **and**, **or**, **Not**und **near**.
+Wir bieten CJK-Unterstützung für [](keyword-queries-and-search-conditions.md#search-conditions)alle [Suchoperatoren](keyword-queries-and-search-conditions.md#search-operators) und Suchbedingungen, einschließlich der booleschen Operatoren **AND**, **OR**, **NOT** und **NEAR**.
 
-Wenn Sie sicher sind, dass Inhaltsspeicher oder-Elemente CJK-Zeichen enthalten, die Suche jedoch keine Ergebnisse zurückgibt, klicken Sie auf das Symbol Abfragesprache – Land/Region ![Abfragesprache – Land/Region-Symbol in der Inhaltssuche](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) aus, und wählen Sie den entsprechenden Kultur Codewert für Sprache/Land für die Suche aus. Die standardmäßige Sprache/Region ist neutral.
+Wenn Sie sicher sind, dass Inhaltsstandorte oder -elemente #A0 enthalten, Suchabfragen jedoch keine Ergebnisse zurückgeben, klicken Sie auf das Symbol Abfragesprache-Land/Region ![Abfragesprache-Land/Region-Symbol in der Inhaltssuche](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) und wählen Sie den entsprechenden Sprach-Länder-Kulturcodewert für die Suche aus. Die standardmäßige Sprache/Region ist neutral.
 
-**Kann ich gleichzeitig nach mehreren Sprachen suchen?**
+**Kann ich nach mehreren Sprachen gleichzeitig suchen?**
 
-Dies hängt von Ihrem Such Szenario ab.
+Dies hängt von Ihrem Suchszenario ab.
 
-- Wenn Sie [Daten in einer Überprüfungsgruppe](review-set-search.md) in Advanced eDiscovery Abfragen, können Sie nach mehreren Sprachen suchen.
+- Wenn Sie [Daten in einem Überprüfungssatz](review-set-search.md) in Advanced eDiscovery abfragen, können Sie nach mehreren Sprachen suchen.
 
-- Wenn Sie [eine Suche zum Erfassen von Daten erstellen](create-search-to-collect-data.md), erstellen Sie eine separate Suche für jede Sprache, für die Sie sich interessieren. Wenn Sie beispielsweise nach einem Dokument suchen, das sowohl Chinesisch als auch Koreanisch enthält, wählen Sie Chinesisch für Ihre erste Abfrage aus, und wählen Sie Koreanisch für die zweite Abfrage aus.
+- Wenn Sie [eine Suche zum Sammeln von Daten erstellen,](create-search-to-collect-data.md)erstellen Sie eine separate Suche für jede Zielsprache. Wenn Sie z. B. nach einem Dokument suchen, das Chinesisch und Koreanisch enthält, wählen Sie chinesisch für die erste Abfrage aus, und wählen Sie koreanisch für die zweite Abfrage aus.
 
-**Das Symbol Abfragesprache-Land/Region wird nicht angezeigt, um eine Sprache für Abfragen in einem Überprüfungs Satzes auszuwählen. Wie kann ich eine Abfragesprache in einer Überprüfungs Sätze-Suche angeben?**
+**Das Symbol "Sprache/Land/Region der Abfrage" wird nicht angezeigt, um eine Sprache für Abfragen in einem Überprüfungssatz auszuwählen. Wie kann ich eine Abfragesprache in einer Überprüfungssatzsuche angeben?**
 
-Zum Überprüfen von Abfrage Sätzen müssen Sie keine Dokumentsprache angeben. Erweiterte eDiscovery erkennt Dokumentsprachen automatisch, wenn Sie einem Überprüfungs Satzes Inhalte hinzufügen. Auf diese Weise können Sie Ihre Abfrageergebnisse in einem Überprüfungspaket optimieren.
+Für Überprüfungssatzabfragen müssen Sie keine Dokumentsprache angeben. Advanced eDiscovery erkennt automatisch Dokumentsprachen, wenn Sie einem Überprüfungssatz Inhalte hinzufügen. Auf diese Weise können Sie Ihre Abfrageergebnisse in einem Überprüfungssatz optimieren.
 
-**Kann ich erkannte Sprachen in [Datei Metadaten](view-documents-in-review-set.md#file-metadata)anzeigen?**
+**Kann ich erkannte Sprachen in [Dateimetadaten sehen?](view-documents-in-review-set.md#file-metadata)**
 
-Nein, erkannte Sprachen werden in Datei Metadaten nicht angezeigt.
+Nein, in Dateimetadaten werden keine erkannten Sprachen angezeigt.
 
-**Kann ich nach Dokumentsprachen in einem Überprüfungs Satzes Filtern**?
+**Kann ich in einem Überprüfungssatz nach Dokumentsprachen filtern?**
 
-Nein, Sie können nicht nach Dokumentsprachen in einem Überprüfungs Satzes filtern, Sortieren oder durchsuchen.
+Nein, Sie können in einem Überprüfungssatz nicht nach Dokumentsprachen filtern, sortieren oder suchen.
 
-**Betrifft diese cjk-Version für die Überprüfung Szenarien Festlegen einer meiner vorhandenen suchen und Überprüfungs Sätze?**
+**Wirkt sich diese #A0 für Überprüfungssatzszenarien auf meine vorhandenen Such- und Überprüfungssätze aus?**
 
-Nein, keines der vorhandenen Such-und Überprüfungs Sätze wird geändert. Sie müssen keine vorhandenen Daten neu indizieren, und die Suchergebnisse für den englischen Text sind identisch.
+Nein, keine der vorhandenen Such- und Überprüfungssätze ändert sich. Vorhandene Daten müssen nicht neu indiziert werden, und die Suchergebnisse für englischen Text sind identisch.
 
-**Wie ändere ich meine Anzeigesprache in Chinesisch, Japanisch oder Koreanisch?**
+**Wie kann ich meine Anzeigesprache in Chinesisch, Japanisch oder Koreanisch ändern?**
 
-Informationen zum Ändern der Anzeigesprache und der Zeitzone finden Sie unter [Vorgehensweise Festlegen von Sprach-und Regionseinstellungen für Office 365](https://docs.microsoft.com/office365/troubleshoot/access-management/set-language-and-region).
+Informationen zum Ändern von Anzeigesprache und Zeitzone finden Sie unter Festlegen von Sprach- und [Regioneneinstellungen für Office 365](/office365/troubleshoot/access-management/set-language-and-region).
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-- OCR unterstützt keine CJK-Zeichen aus Bilddateien
+- OCR unterstützt keine #A0 aus Bilddateien
 
-- E-Mail-Dateien (wie *. eml und *. msg) in [anmerkungsansicht](view-documents-in-review-set.md#annotate-view) werden für CJK-Sprachen nicht unterstützt.
+- E-Mail-Dateien (z. B. *.eml und *.msg) [in](view-documents-in-review-set.md#annotate-view) der Anmerkungsansicht werden für #A0 nicht unterstützt.
 
-- Die Hervorhebung von Suchtreffern in der [Text Ansicht](view-documents-in-review-set.md#text-view) wird für CJK-Sprachen nicht unterstützt.
+- Die Hervorhebung von Suchtreffer in der [Textansicht](view-documents-in-review-set.md#text-view) wird für CJK-Sprachen nicht unterstützt.
 
-- Das zum Analysieren von Daten verwendete [Relevanz-Modul](using-relevance.md) unterstützt keine CJK-Sprachen.
+- Das [Relevanzmodul,](using-relevance.md) das zum Analysieren von Daten verwendet wird, unterstützt keine CJK-Sprachen.
 
-- [Abfragebasierte Aufbewahrungen](managing-holds.md#manage-non-custodial-holds) werden für CJK-Sprachen nicht unterstützt. 
+- [Abfragebasierte Halte halte](managing-holds.md#manage-non-custodial-holds) werden für CJK-Sprachen nicht unterstützt.

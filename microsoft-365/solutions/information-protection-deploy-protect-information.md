@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Stellen Sie Microsoft 365-Sicherheits- und Compliancefeatures zur Verfügung und schützen Sie Ihre persönlichen Informationen.
-ms.openlocfilehash: a5bba79f8ab382707b6fd5e448003a0271d690c6
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 657b3c9c6416c8a38629a0d26253e1222aa6d242
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597238"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928472"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Datenschutzbestimmungen unterliegende Informationen schützen
 
@@ -38,7 +38,7 @@ Diese Steuerelemente befinden sich in den folgenden Lösungsbereichen:
 ![Wichtige Dienste zum Schutz personenbezogener Informationen, die der Datenschutzbestimmungen unterliegen](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 >[!Note]
->Diese Lösung beschreibt Sicherheits- und Compliancefeatures zum Schutz von Informationen, die den Datenschutzbestimmungen unterliegen. Eine vollständige Liste der Sicherheitsfeatures in Microsoft 365 finden Sie in [der Microsoft 365-Sicherheitsdokumentation](https://docs.microsoft.com/microsoft-365/security/). Eine vollständige Liste der Compliancefeatures in Microsoft 365 finden Sie in [der Microsoft 365-Compliancedokumentation](https://docs.microsoft.com/microsoft-365/compliance/).
+>Diese Lösung beschreibt Sicherheits- und Compliancefeatures zum Schutz von Informationen, die den Datenschutzbestimmungen unterliegen. Eine vollständige Liste der Sicherheitsfeatures in Microsoft 365 finden Sie in [der Microsoft 365-Sicherheitsdokumentation](../security/index.yml). Eine vollständige Liste der Compliancefeatures in Microsoft 365 finden Sie in [der Microsoft 365-Compliancedokumentation](../compliance/index.yml).
 >
 
 ## <a name="data-privacy-regulations-that-impact-information-protection-controls"></a>Datenschutzbestimmungen, die Auswirkungen auf Die Kontrollen zum Schutz von Informationen haben
@@ -68,7 +68,7 @@ Damit Sie mit einem Informationsschutzschema in Microsoft 365 beginnen können, 
 Microsoft [Information Protection-Lösungen](../compliance/information-protection.md) umfassen eine Reihe von integrierten Funktionen in Microsoft 365, Microsoft Azure und Microsoft Windows. In Microsoft 365 umfassen Informationsschutzlösungen Folgendes:
 
 - [Dienstverschlüsselung mit Kundenschlüssel](../compliance/customer-key-overview.md)
-- [Typen vertraulicher Informationen](../compliance/what-the-sensitive-information-types-look-for.md) (beschrieben im Artikel "Bewerten von Datenschutzrisiken und Identifizieren [vertraulicher Elemente")](information-protection-deploy-assess.md)
+- [Typen vertraulicher Informationen](../compliance/sensitive-information-type-entity-definitions.md) (beschrieben im Artikel "Bewerten von Datenschutzrisiken und Identifizieren [vertraulicher Elemente")](information-protection-deploy-assess.md)
 - [Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels.md) 
   - Dienst-/Containerebene
   - Clientseitige/Inhaltsebene
@@ -81,10 +81,10 @@ Darüber hinaus sind Der Schutz auf Website- und Bibliotheksebene wichtige Mecha
 
 Weitere Informationen zu anderen Informationsschutzfunktionen außerhalb von Microsoft 365 finden Sie unter:
 
-- [Microsoft Cloud Application Security (MCAS)](https://docs.microsoft.com/cloud-app-security/)
-- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)
+- [Microsoft Cloud Application Security (MCAS)](/cloud-app-security/)
+- [Azure Information Protection](/azure/information-protection/what-is-information-protection)
 - [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
-- [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
+- [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
 ## <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
 
@@ -139,7 +139,7 @@ Wenn Sie [Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels-teams-
 
 - Microsoft Teams-Websites
 - Microsoft 365-Gruppen (früher Office 365-Gruppen)
-- Microsoft Office SharePoint Online-Websites
+- SharePoint-Websites
 
 Verwenden Sie die folgenden Bezeichnungseinstellungen zum Schutz von Inhalt in diesen Containern:
 

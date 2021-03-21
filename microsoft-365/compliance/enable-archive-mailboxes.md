@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: Erfahren Sie, wie Sie über das Security & Compliance Center die Archivierung von Postfächern aktivieren können, um den Anforderungen Ihrer Organisation hinsichtlich Nachrichtenarchivierung, eDiscovery und Aufbewahrung gerecht zu werden.
-ms.openlocfilehash: d7506b92cc16120f1d40a6d5a1744ab38d446a76
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 2bc80d347d1324a317cc2cc2712d475781adc492
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233815"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926515"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Aktivieren von Archivpostfächern im Security & Compliance Center
 
@@ -102,7 +102,7 @@ So deaktivieren Sie ein Archivpostfach:
 
 Alternativ können Sie Archivpostfächer auch mithilfe von Exchange Online PowerShell aktivieren. Der Hauptgrund für die Verwendung von PowerShell besteht darin, dass Sie schnell das Archivpostfach für alle Benutzer in Ihrer Organisation aktivieren können.
 
-Im ersten Schritt müssen Sie eine Verbindung mit Exchange Online PowerShell herstellen. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+Im ersten Schritt müssen Sie eine Verbindung mit Exchange Online PowerShell herstellen. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 Nachdem Sie eine Verbindung mit Exchange Online hergestellt haben, können Sie die Befehle in den folgenden Abschnitten ausführen, um Archivpostfächer zu aktivieren bzw. zu deaktivieren.
 
@@ -150,8 +150,8 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 
 - Weitere Informationen zu Archivpostfächern und Exchange-Aufbewahrungsrichtlinien finden Sie hier:
 
-  - [Aufbewahrungstags und Aufbewahrungsrichtlinien in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
+  - [Aufbewahrungstags und Aufbewahrungsrichtlinien in Exchange Online](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
 
-  - [Standardaufbewahrungsrichtlinie in Exchange Online ](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
+  - [Standardaufbewahrungsrichtlinie in Exchange Online ](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
 
   - [Einrichten einer Archivierungs- und Löschrichtlinie für Postfächer in Ihrer Organisation](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

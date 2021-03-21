@@ -25,46 +25,46 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: Beschreibt, wie Sie die Bereitstellung von Benutzern auf Microsoft 365 mithilfe der Verzeichnissynchronisierung und die langfristigen Vorteile der Verwendung dieser Methode vorbereiten.
-ms.openlocfilehash: e49cc4472b47320650d8a0ca90395b69ae5b6df7
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+description: Beschreibt, wie Sie die Bereitstellung von Benutzern für Microsoft 365 mithilfe der Verzeichnissynchronisierung und der langfristigen Vorteile dieser Methode vorbereiten.
+ms.openlocfilehash: 1fe99247a5c50c7bb8fc7eb1347ce6a4cd6aad94
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371624"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927324"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Vorbereiten der Verzeichnissynchronisierung mit Microsoft 365
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Zu den Vorteilen der Hybriden Identitäts-und Verzeichnissynchronisierung in Ihrer Organisation gehören:
+Zu den Vorteilen für die Hybrididentität und Verzeichnissynchronisierung in Ihrer Organisation gehören:
 
-- Reduzieren der Verwaltungsprogramme in Ihrer Organisation
-- Optionales Aktivieren des Szenarios für einmaliges Anmelden
+- Reduzieren der Administrativen Programme in Ihrer Organisation
+- Optional aktivieren des Szenarios für einmaliges Anmelden
 - Automatisieren von Kontoänderungen in Microsoft 365
 
-Weitere Informationen zu den Vorteilen der Verwendung der Verzeichnissynchronisierung finden Sie unter [Hybrid Identity with Azure Active Directory (Azure AD)](https://go.microsoft.com/fwlink/p/?LinkId=525398) und [Hybrid Identity for Microsoft 365](plan-for-directory-synchronization.md).
+Weitere Informationen zu den Vorteilen der Verzeichnissynchronisierung finden Sie unter [Hybrididentität mit Azure Active Directory (Azure AD)](/azure/active-directory/hybrid/whatis-hybrid-identity) und [Hybrididentität für Microsoft 365](plan-for-directory-synchronization.md).
 
-Die Verzeichnissynchronisierung erfordert jedoch die Planung und Vorbereitung, um sicherzustellen, dass Ihre Active Directory-Domänendienste (AD DS) mit dem Azure AD Mandanten Ihres Microsoft 365-Abonnements mit einem Minimum an Fehlern synchronisiert wird.
+Die Verzeichnissynchronisierung erfordert jedoch eine Planung und Vorbereitung, um sicherzustellen, dass Ihre Active Directory Domain Services (AD DS) mit dem Azure AD-Mandanten Ihres Microsoft 365-Abonnements mit einem Minimum an Fehlern synchronisiert wird.
 
 Führen Sie die folgenden Schritte aus, um die besten Ergebnisse zu erzielen.
 
-## <a name="1-directory-cleanup-tasks"></a>1. Aufgaben zur Verzeichnisbereinigung
+## <a name="1-directory-cleanup-tasks"></a>1. Verzeichnisbereinigungsaufgaben
 
-Bevor Sie Ihre AD DS mit Ihrem Azure AD-Mandanten synchronisieren, müssen Sie Ihre AD DS bereinigen.
+Bevor Sie Ad DS mit Ihrem Azure AD-Mandanten synchronisieren, müssen Sie Ad DS bereinigen.
 
 > [!IMPORTANT]
-> Wenn Sie AD DS Bereinigung vor der Synchronisierung nicht ausführen, kann dies zu erheblichen negativen Auswirkungen auf den Bereitstellungsprozess führen. Es kann Tage oder sogar Wochen dauern, bis der Zyklus der Verzeichnissynchronisierung durchläuft, Fehler identifiziert und erneut synchronisiert wird.
+> Wenn Sie vor der Synchronisierung keine AD DS-Bereinigung durchführen, kann dies zu erheblichen negativen Auswirkungen auf den Bereitstellungsprozess führen. Es kann Tage oder sogar Wochen dauern, bis der Zyklus der Verzeichnissynchronisierung, der Identifizierung von Fehlern und der erneuten Synchronisierung durchgehen kann.
 
 Führen Sie in Ihrem AD DS die folgenden Bereinigungsaufgaben für jedes Benutzerkonto aus, dem eine Microsoft 365-Lizenz zugewiesen wird:
 
-1. Stellen Sie eine gültige und eindeutige e-Mail-Adresse im **proxyAddresses** -Attribut sicher.
+1. Stellen Sie eine gültige und eindeutige E-Mail-Adresse im **proxyAddresses-Attribut** sicher.
 
-2. Entfernen Sie alle doppelten Werte im **proxyAddresses** -Attribut.
+2. Entfernen Sie alle doppelten Werte im **proxyAddresses-Attribut.**
 
-3. Stellen Sie nach Möglichkeit einen gültigen und eindeutigen Wert für das **userPrincipalName** -Attribut im **Benutzer** Objekt des Benutzers sicher. Stellen Sie sicher, dass der AD DS UPN mit dem Azure AD UPN übereinstimmt, um eine optimale Synchronisierung zu erzielen. Wenn ein Benutzer keinen Wert für das **userPrincipalName** -Attribut aufweist, muss das **User** -Objekt einen gültigen und eindeutigen Wert für das **sAMAccountName** -Attribut enthalten. Entfernen Sie alle doppelten Werte im **userPrincipalName** -Attribut.
+3. Stellen Sie nach Möglichkeit einen gültigen und eindeutigen Wert für das **userPrincipalName-Attribut** im **Benutzerobjekt** des Benutzers sicher. Stellen Sie sicher, dass der AD DS UPN dem Azure AD UPN entspricht, um eine optimale Synchronisierung zu gewährleisten. Wenn ein Benutzer keinen Wert für das **userPrincipalName-Attribut** hat, muss das **Benutzerobjekt** einen gültigen und eindeutigen Wert für das **sAMAccountName-Attribut** enthalten. Entfernen Sie alle doppelten Werte im **userPrincipalName-Attribut.**
 
-4. Stellen Sie für eine optimale Verwendung der globalen Adressliste (GAL) sicher, dass die Informationen in den folgenden Attributen des AD DS Benutzerkontos richtig sind:
+4. Stellen Sie sicher, dass die Informationen in den folgenden Attributen des AD DS-Benutzerkontos korrekt sind, um die globale Adressliste optimal zu verwenden:
 
    - givenName
    - surname
@@ -81,113 +81,113 @@ Führen Sie in Ihrem AD DS die folgenden Bereinigungsaufgaben für jedes Benutze
    - PLZ
    - Land oder Region
 
-## <a name="2-directory-object-and-attribute-preparation"></a>2. Verzeichnisobjekt-und Attribut Vorbereitung
+## <a name="2-directory-object-and-attribute-preparation"></a>2. Vorbereitung von Verzeichnisobjekten und Attributen
 
-Für eine erfolgreiche Verzeichnissynchronisierung zwischen Ihrem AD DS und Microsoft 365 müssen die AD DS-Attribute ordnungsgemäß vorbereitet werden. Beispielsweise müssen Sie sicherstellen, dass bestimmte Zeichen nicht in bestimmten Attributen verwendet werden, die mit der Microsoft 365-Umgebung synchronisiert werden. Unerwartete Zeichen führen nicht dazu, dass die Verzeichnissynchronisierung fehlschlägt, aber möglicherweise wird eine Warnung zurückgegeben. Ungültige Zeichen führen dazu, dass die Verzeichnissynchronisierung fehlschlägt.
+Eine erfolgreiche Verzeichnissynchronisierung zwischen Ad DS und Microsoft 365 erfordert, dass Ihre AD DS-Attribute ordnungsgemäß vorbereitet sind. Beispielsweise müssen Sie sicherstellen, dass bestimmte Zeichen nicht in bestimmten Attributen verwendet werden, die mit der Microsoft 365-Umgebung synchronisiert werden. Unerwartete Zeichen führen nicht zu einem Fehler bei der Verzeichnissynchronisierung, aber möglicherweise wird eine Warnung angezeigt. Ungültige Zeichen führen zu einem Fehler bei der Verzeichnissynchronisierung.
 
-Die Verzeichnissynchronisierung schlägt auch fehl, wenn einige Ihrer AD DS Benutzer über ein oder mehrere doppelte Attribute verfügen. Jeder Benutzer muss über eindeutige Attribute verfügen.
+Die Verzeichnissynchronisierung kann auch fehlschlagen, wenn einige Ad DS-Benutzer über ein oder mehrere doppelte Attribute verfügen. Jeder Benutzer muss über eindeutige Attribute verfügen.
 
-Die Attribute, die Sie vorbereiten müssen, sind hier aufgelistet:
+Die Attribute, die Sie vorbereiten müssen, sind hier aufgeführt:
 
 - **displayName**
 
-  - Wenn das Attribut im User-Objekt vorhanden ist, wird es mit Microsoft 365 synchronisiert.
-  - Wenn dieses Attribut im User-Objekt vorhanden ist, muss es einen Wert dafür geben. Das heißt, das Attribut darf nicht leer sein.
+  - Wenn das Attribut im Benutzerobjekt vorhanden ist, wird es mit Microsoft 365 synchronisiert.
+  - Wenn dieses Attribut im Benutzerobjekt vorhanden ist, muss ein Wert dafür vorhanden sein. Das heißt, das Attribut darf nicht leer sein.
   - Maximale Anzahl der Zeichen: 256
 
 - **givenName**
 
-  - Wenn das Attribut im User-Objekt vorhanden ist, wird es mit Microsoft 365 synchronisiert, aber Microsoft 365 erfordert oder verwendet es nicht.
+  - Wenn das Attribut im Benutzerobjekt vorhanden ist, wird es mit Microsoft 365 synchronisiert, aber Microsoft 365 erfordert es nicht oder verwendet es.
   - Maximale Anzahl der Zeichen: 64
 
-- **Mail**
+- **mail**
 
   - Der Attributwert muss innerhalb des Verzeichnisses eindeutig sein.
 
     > [!NOTE]
-    > Wenn es doppelte Werte gibt, wird der erste Benutzer mit dem Wert synchronisiert. Nachfolgende Benutzer werden in Microsoft 365 nicht angezeigt. Sie müssen entweder den Wert in Microsoft 365 ändern oder beide Werte in AD DS ändern, damit beide Benutzer in Microsoft 365 angezeigt werden.
+    > Wenn doppelte Werte vorhanden sind, wird der erste Benutzer mit dem Wert synchronisiert. Nachfolgende Benutzer werden in Microsoft 365 nicht angezeigt. Sie müssen entweder den Wert in Microsoft 365 oder beide Werte in AD DS ändern, damit beide Benutzer in Microsoft 365 angezeigt werden.
 
-- **mailnick Name** (Exchange-Alias)
+- **mailNickname** (Exchange-Alias)
 
-  - Der Attributwert darf nicht mit einem Punkt (.) beginnen.
+  - Der Attributwert kann nicht mit einem Zeitraum (.) beginnen.
   - Der Attributwert muss innerhalb des Verzeichnisses eindeutig sein.
 
     > [!NOTE]
-    > Unterstriche ("_") im synchronisierten Namen gibt an, dass der ursprüngliche Wert dieses Attributs ungültige Zeichen enthält. Weitere Informationen zu diesem Attribut finden Sie unter [Exchange-Alias Attribut](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+    > Unterstriche ("_") im synchronisierten Namen gibt an, dass der ursprüngliche Wert dieses Attributs ungültige Zeichen enthält. Weitere Informationen zu diesem Attribut finden Sie unter [Exchange-Aliasattribut](/powershell/module/exchange/set-mailbox).
     >
 
 - **proxyAddresses**
 
-  - Mehrwertiges Attribut
+  - Attribut mit mehreren Wert
   - Maximale Anzahl von Zeichen pro Wert: 256
   - Der Attributwert darf kein Leerzeichen enthalten.
   - Der Attributwert muss innerhalb des Verzeichnisses eindeutig sein.
-  - Ungültige Zeichen: \< \> ();, [] "'
+  - Ungültige Zeichen: \< \> ( ) ; , [ ] " '
 
-    Beachten Sie, dass die ungültigen Zeichen auf die Zeichen nach dem typtrennzeichen und ":" angewendet werden, so dass SMTP:User@contso.com zulässig ist, aber SMTP:User:M@contoso.com nicht ist.
+    Beachten Sie, dass die ungültigen Zeichen auf die Zeichen angewendet werden, die dem Typtrennzeichen und ":"folgen, so dass SMTP:User@contso.com zulässig ist, SMTP:user:M@contoso.com nicht.
 
     > [!IMPORTANT]
-    > Alle SMTP-Adressen (Simple Mail Transport Protocol) sollten den e-Mail-Messagingstandards entsprechen. Entfernen Sie, falls vorhanden, doppelte oder unerwünschte Adressen.
+    > Alle SMTP-Adressen (Simple Mail Transport Protocol) sollten den E-Mail-Messagingstandards entsprechen. Entfernen Sie doppelte oder unerwünschte Adressen, falls vorhanden.
 
 - **sAMAccountName**
 
   - Maximale Anzahl der Zeichen: 20
   - Der Attributwert muss innerhalb des Verzeichnisses eindeutig sein.
-  - Ungültige Zeichen: [\ "|,/: \< \> + =;? \* ']
-  - Wenn ein Benutzer ein ungültiges **sAMAccountName** -Attribut aufweist, aber über ein gültiges **userPrincipalName** -Attribut verfügt, wird das Benutzerkonto in Microsoft 365 erstellt.
-  - Wenn sowohl **sAMAccountName** als auch **userPrincipalName** ungültig sind, muss das AD DS **userPrincipalName** -Attribut aktualisiert werden.
+  - Ungültige Zeichen: [ \ " | , / : \< \> + = ; ? \* ']
+  - Wenn ein Benutzer über ein ungültiges **sAMAccountName-Attribut** verfügt, aber über ein gültiges **userPrincipalName-Attribut** verfügt, wird das Benutzerkonto in Microsoft 365 erstellt.
+  - Wenn **sowohl sAMAccountName als** auch **userPrincipalName** ungültig sind, muss das AD DS **userPrincipalName-Attribut** aktualisiert werden.
 
-- **SN** (Nachname)
+- **sn** (Nachname)
 
-  - Wenn das Attribut im User-Objekt vorhanden ist, wird es mit Microsoft 365 synchronisiert, aber Microsoft 365 erfordert oder verwendet es nicht.
+  - Wenn das Attribut im Benutzerobjekt vorhanden ist, wird es mit Microsoft 365 synchronisiert, aber Microsoft 365 erfordert es nicht oder verwendet es.
 
 - **targetAddress**
 
-    Es ist erforderlich, dass das **targetAddress** -Attribut (beispielsweise SMTP:Tom@contoso.com), das für den Benutzer aufgefüllt wird, in der Microsoft 365 GAL angezeigt wird. Bei Messaging Migrationsszenarien von Drittanbietern wäre dies die Microsoft 365-Schemaerweiterung für den AD DS erforderlich. Die Microsoft 365-Schemaerweiterung würde auch weitere nützliche Attribute zum Verwalten von Microsoft 365-Objekten hinzufügen, die mit einem Verzeichnissynchronisierungstool aus AD DS aufgefüllt werden. Beispielsweise würde das **msExchHideFromAddressLists** -Attribut zum Verwalten von ausgeblendeten Postfächern oder Verteilergruppen hinzugefügt werden.
+    Es ist erforderlich, dass das **targetAddress-Attribut** (z. B. SMTP:tom@contoso.com), das für den Benutzer aufgefüllt wird, in der Microsoft 365 GAL angezeigt werden muss. In Szenarien für die Messagingmigration von Drittanbietern würde dies die Microsoft 365-Schemaerweiterung für AD DS erfordern. Die Microsoft 365-Schemaerweiterung würde auch weitere nützliche Attribute hinzufügen, um Microsoft 365-Objekte zu verwalten, die mithilfe eines Verzeichnissynchronisierungstools aus AD DS aufgefüllt werden. Beispielsweise würde das **attribut msExchHideFromAddressLists** zum Verwalten ausgeblendeter Postfächer oder Verteilergruppen hinzugefügt.
 
   - Maximale Anzahl der Zeichen: 256
   - Der Attributwert darf kein Leerzeichen enthalten.
   - Der Attributwert muss innerhalb des Verzeichnisses eindeutig sein.
-  - Ungültige Zeichen: \ \< \> ();, [] "
-  - Alle SMTP-Adressen (Simple Mail Transport Protocol) sollten den e-Mail-Messagingstandards entsprechen.
+  - Ungültige Zeichen: \ \< \> ( ) ; , [ ] "
+  - Alle SMTP-Adressen (Simple Mail Transport Protocol) sollten den E-Mail-Messagingstandards entsprechen.
 
 - **userPrincipalName**
 
-  - Das **userPrincipalName** -Attribut muss das Anmeldeformat im Internet Format aufweisen, dem der Benutzername gefolgt von dem @-Zeichen (@) und einem Domänennamen folgt: beispielsweise user@contoso.com. Alle SMTP-Adressen (Simple Mail Transport Protocol) sollten den e-Mail-Messagingstandards entsprechen.
-  - Die maximale Anzahl von Zeichen für das **userPrincipalName** -Attribut lautet 113. Eine bestimmte Anzahl von Zeichen ist vor und nach dem @-Zeichen wie folgt zulässig:
-  - Maximale Anzahl von Zeichen für den Benutzernamen vor dem @-Zeichen (@): 64
-  - Maximale Anzahl von Zeichen für den Domänennamen nach dem @-Zeichen (@): 48
-  - Ungültige Zeichen: \% &amp; \* +/=? { } | \< \> ( ) ; : , [ ] "
-  - Zulässige Zeichen: a – z, a-z, 0 – 9, '. - _ ! # ^ ~
-  - Buchstaben mit diakritischen Zeichen wie Umlauten, Akzenten und Tilden sind ungültige Zeichen.
-  - Das @-Zeichen ist in jedem **userPrincipalName** -Wert erforderlich.
+  - Das **userPrincipalName-Attribut** muss im Anmeldeformat im Internetformat vorliegen, in dem auf den Benutzernamen das At-Zeichen (@) und ein Domänenname folgt, z. B. user@contoso.com. Alle SMTP-Adressen (Simple Mail Transport Protocol) sollten den E-Mail-Messagingstandards entsprechen.
+  - Die maximale Anzahl von Zeichen für das **userPrincipalName-Attribut** ist 113. Eine bestimmte Anzahl von Zeichen vor und nach dem At-Zeichen (@) ist wie folgt zulässig:
+  - Maximale Anzahl von Zeichen für den Benutzernamen vor dem At-Zeichen (@): 64
+  - Maximale Anzahl von Zeichen für den Domänennamen nach dem At-Zeichen (@): 48
+  - Ungültige Zeichen: \ % &amp; \* + / = ? { } | \< \> ( ) ; : , [ ] "
+  - Zulässige Zeichen: A – Z, a - z, 0 – 9, ' . - _ ! # ^ ~
+  - Buchstaben mit diakritischen Markierungen, z. B. Umlaute, Akzente und Tildes, sind ungültige Zeichen.
+  - Das @-Zeichen ist in jedem **userPrincipalName-Wert** erforderlich.
   - Das @-Zeichen darf nie das erste Zeichen in einem **userPrincipalName**-Wert sein.
-  - Der Benutzername darf nicht mit einem Punkt (.), einem kaufmännischen und- &amp; Zeichen (), einem Leerzeichen oder einem @-Zeichen enden.
+  - Der Benutzername kann nicht mit einem Zeitraum (.), einem kaufmännischenSand ( ), einem Leerzeichen oder einem At-Zeichen &amp; (@) enden.
   - Der Benutzername darf keine Leerzeichen enthalten.
-  - Routingfähige Domänen müssen verwendet werden; Beispielsweise können keine lokalen oder internen Domänen verwendet werden.
+  - Routingfähige Domänen müssen verwendet werden. Lokale oder interne Domänen können beispielsweise nicht verwendet werden.
   - Unicode-Zeichen werden in Unterstriche umgewandelt.
   - **userPrincipalName** darf keine doppelten Werte im Verzeichnis enthalten.
 
 ## <a name="3-prepare-the-userprincipalname-attribute"></a>3. Vorbereiten des userPrincipalName-Attributs
 
-Active Directory wurde entwickelt, um es den Endbenutzern in Ihrer Organisation zu ermöglichen, sich mit **sAMAccountName** oder **userPrincipalName** bei Ihrem Verzeichnis anzumelden. Auf ähnliche Weise können sich Endbenutzer bei Microsoft 365 mit dem Benutzerprinzipalnamen (User Principal Name, UPN) Ihres Geschäfts-oder Schul Kontos anmelden. Die Verzeichnissynchronisierung versucht, neue Benutzer in Azure Active Directory mithilfe desselben UPN zu erstellen, der in Ihrem AD DS ist. Der UPN ist wie eine e-Mail-Adresse formatiert.
+Active Directory ist so konzipiert, dass die Endbenutzer in Ihrer Organisation sich mit **sAMAccountName** oder **userPrincipalName** bei Ihrem Verzeichnis anmelden können. Ebenso können sich Endbenutzer mit dem Benutzerprinzipalnamen (User Principal Name, UPN) ihres Arbeits- oder Schulkontos bei Microsoft 365 anmelden. Die Verzeichnissynchronisierung versucht, neue Benutzer in Azure Active Directory mithilfe desselben UPNs zu erstellen, der sich in Ihrem AD DS befindet. Der UPN ist wie eine E-Mail-Adresse formatiert.
 
-In Microsoft 365 ist der UPN das Standardattribut, das zum Generieren der e-Mail-Adresse verwendet wird. Es ist ganz einfach, **userPrincipalName** (in AD DS und in Azure AD) und die primäre e-Mail-Adresse in **proxyAddresses** auf unterschiedliche Werte festgelegt zu erhalten. Wenn Sie auf unterschiedliche Werte festgelegt sind, kann es zu Verwirrung für Administratoren und Endbenutzer kommen.
+In Microsoft 365 ist der UPN das Standardattribut, das zum Generieren der E-Mail-Adresse verwendet wird. Es ist einfach, **userPrincipalName** (in AD DS und azure AD) und die primäre E-Mail-Adresse in **proxyAddresses** auf unterschiedliche Werte festgelegt zu erhalten. Wenn sie auf unterschiedliche Werte festgelegt sind, kann es für Administratoren und Endbenutzer zu Verwirrung kommen.
 
-Es empfiehlt sich, diese Attribute auszurichten, um Verwirrung zu verringern. Um die Anforderungen des einmaligen Anmeldens mit Active Directory-Verbunddienste (AD FS) 2.0 zu erfüllen, müssen Sie sicherstellen, dass die UPNs in Azure Active Directory und Ihre AD DS übereinstimmen und einen gültigen Domänennamespace verwenden.
+Es ist am besten, diese Attribute auszurichten, um Verwirrung zu vermeiden. Um die Anforderungen für einmaliges Anmelden mit Active Directory Federation Services (AD FS) 2.0 zu erfüllen, müssen Sie sicherstellen, dass die UPNs in Azure Active Directory und Ad DS übereinstimmen und einen gültigen Domänennamespace verwenden.
 
-## <a name="4-add-an-alternative-upn-suffix-to-ad-ds"></a>4. Hinzufügen eines alternativen UPN-Suffix zu AD DS
+## <a name="4-add-an-alternative-upn-suffix-to-ad-ds"></a>4. Hinzufügen eines alternativen UPN-Suffixs zu AD DS
 
 Möglicherweise müssen Sie ein alternatives UPN-Suffix hinzufügen, um die Unternehmensanmeldeinformationen des Benutzers der Microsoft 365-Umgebung zuzuordnen. Ein UPN-Suffix ist der Teil eines Benutzerprinzipalnamens, der rechts vom Zeichen @ steht. UPNs, die für einmaliges Anmelden verwendet werden, können Buchstaben, Zahlen, Punkte, Bindestriche und Unterstriche enthalten, aber keine anderen Zeichen.
 
-Weitere Informationen zum Hinzufügen eines alternativen UPN-Suffix zu Active Directory finden Sie unter [Prepare for Directory Synchronization]( https://go.microsoft.com/fwlink/p/?LinkId=525430).
+Weitere Informationen zum Hinzufügen eines alternativen UPN-Suffixes zu Active Directory finden Sie unter [Prepare for directory synchronization]( https://go.microsoft.com/fwlink/p/?LinkId=525430).
 
-## <a name="5-match-the-ad-ds-upn-with-the-microsoft-365-upn"></a>5. Übereinstimmung mit dem AD DS UPN mit dem Microsoft 365 UPN
+## <a name="5-match-the-ad-ds-upn-with-the-microsoft-365-upn"></a>5. Übereinstimmung des AD DS UPN mit dem Microsoft 365 UPN
 
-Wenn Sie die Verzeichnissynchronisierung bereits eingerichtet haben, stimmt der UPN des Benutzers für Microsoft 365 möglicherweise nicht mit dem AD DS UPN des Benutzers überein, der in Ihrem AD DS definiert ist. Das kann vorkommen, wenn einem Benutzer vor der Überprüfung der Domäne schon eine Lizenz zugewiesen wurde. Um dies zu beheben, verwenden Sie [PowerShell, um doppelten UPN zu beheben](https://go.microsoft.com/fwlink/p/?LinkId=396730) , um den UPN des Benutzers zu aktualisieren, um sicherzustellen, dass der Microsoft 365-UPN dem Benutzernamen und der Domäne des Unternehmens entspricht. Wenn Sie den UPN im AD DS aktualisieren und mit der Azure Active Directory-Identität synchronisieren möchten, müssen Sie die Lizenz des Benutzers in Microsoft 365 entfernen, bevor Sie die Änderungen in AD DS vornehmen.
+Wenn Sie die Verzeichnissynchronisierung bereits eingerichtet haben, passt der UPN des Benutzers für Microsoft 365 möglicherweise nicht zum AD DS UPN des Benutzers, der in Ihrem AD DS definiert ist. Das kann vorkommen, wenn einem Benutzer vor der Überprüfung der Domäne schon eine Lizenz zugewiesen wurde. Um dies zu beheben, verwenden Sie [PowerShell,](https://go.microsoft.com/fwlink/p/?LinkId=396730) um doppelten UPN zu beheben, um den UPN des Benutzers zu aktualisieren, um sicherzustellen, dass der Microsoft 365 UPN mit dem Benutzernamen und der Domäne des Unternehmens entspricht. Wenn Sie den UPN im AD DS aktualisieren und ihn mit der Azure Active Directory-Identität synchronisieren möchten, müssen Sie die Lizenz des Benutzers in Microsoft 365 entfernen, bevor Sie die Änderungen in AD DS vornehmen.
 
-Weitere Informationen finden Sie unter [Vorgehensweise Vorbereiten einer nicht routingfähigen Domäne (beispielsweise. Local Domain) für die Verzeichnissynchronisierung](prepare-a-non-routable-domain-for-directory-synchronization.md).
+Weitere Informationen finden Sie unter Vorbereiten einer nicht routingbaren Domäne (z. B. [lokale Domäne) für die Verzeichnissynchronisierung.](prepare-a-non-routable-domain-for-directory-synchronization.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wenn Sie die Schritte 1 bis 5 oben ausgeführt haben, finden Sie weitere Informationen unter [Einrichten der Verzeichnissynchronisierung](set-up-directory-synchronization.md).
+Wenn Sie die Schritte 1 bis 5 oben ausgeführt haben, lesen Sie [Einrichten der Verzeichnissynchronisierung](set-up-directory-synchronization.md).

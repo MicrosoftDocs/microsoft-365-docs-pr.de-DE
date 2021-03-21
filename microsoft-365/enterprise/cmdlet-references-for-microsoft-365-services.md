@@ -15,57 +15,57 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: Hier finden Sie Verweise auf Microsoft 365 PowerShell-Cmdlets für Azure AD, Exchange Online, SharePoint Online, Skype for Business Online und Sicherheit & Compliance.
-ms.openlocfilehash: 75cfb4e0293a12649708deb3607166075842bba7
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+description: Hier finden Sie Microsoft 365 PowerShell-Cmdletverweise für Azure AD, Exchange Online, SharePoint Online, Skype for Business Online und Security & Compliance.
+ms.openlocfilehash: 524f9b6c84741a2a31cd8e5727142fc735ad7128
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754504"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928214"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Cmdlet-Referenzen für Microsoft 365-Dienste 
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-In diesem Artikel werden Cmdlet-Verweise für die verschiedenen Microsoft 365-Dienste und-Verbindungsanweisungen für jeden Microsoft 365-Dienst bereitgestellt, den PowerShell unterstützt.
+Dieser Artikel enthält Cmdletverweise für die verschiedenen Microsoft 365-Dienste und Verbindungsanweisungen für jeden Microsoft 365-Dienst, den PowerShell unterstützt.
   
 > [!NOTE]
-> Informationen zum Herstellen einer Verbindung mit allen Diensten gleichzeitig finden Sie unter [Herstellen einer Verbindung mit allen Microsoft 365-Diensten in einem einzigen Windows PowerShell Fenster](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md).
+> Informationen zum Gleichzeitigen Herstellen einer Verbindung mit allen Diensten finden Sie unter Herstellen einer Verbindung mit allen [Microsoft 365-Diensten in](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md)einem Windows PowerShell Fenster .
   
 ## <a name="azure-active-directory-powershell-cmdlets"></a>Azure Active Directory PowerShell-Cmdlets
 
-Die Referenzthemen zu Azure Active Directory PowerShell for Graph-Cmdlets finden Sie im Abschnitt Reference der [Dokumentation Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+Die Referenzthemen des Azure Active Directory PowerShell für Graph-Cmdlets finden Sie im Abschnitt Referenz in der [Azure Active Directory PowerShell for Graph-Dokumentation](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
-Das Azure Active Directory Module für Windows PowerShell-Cmdlet-Referenzthemen finden Sie im Abschnitt Reference der [Azure Active Directory (MSOnline)-Dokumentation](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0).
+Das Azure Active Directory Module for Windows PowerShell cmdlet reference topics befindet sich im Abschnitt Referenz der [Azure Active Directory (MSOnline)-Dokumentation](/powershell/azure/active-directory/overview?view=azureadps-1.0).
 
-Informationen zu Microsoft 365 PowerShell-Verbindungsanweisungen finden Sie unter [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md).
+Anweisungen zur Microsoft 365 PowerShell-Verbindung finden Sie unter [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md).
   
 ## <a name="exchange-online-powershell-cmdlets"></a>Exchange Online PowerShell-Cmdlets
 
-Exchange Online-Cmdlet-Referenzthemen finden Sie im Abschnitt "Referenz" der [Exchange Online PowerShell-Dokumentation](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
+Referenzthemen für Exchange Online-Cmdlets finden Sie im Abschnitt Referenz in der [Exchange Online PowerShell-Dokumentation](/powershell/exchange/exchange-online-powershell).
   
-Verbindungsanweisungen für Exchange Online PowerShell finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+Verbindungsanweisungen für Exchange Online PowerShell finden Sie unter [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
   
 > [!NOTE]
-> Berichts-Cmdlets für andere Dienste wie SharePoint Online, Skype for Business Online und Microsoft 365-Benutzeraktivitäten stehen in Exchange Online PowerShell zur Verfügung. Weitere Informationen finden Sie unter [Reporting Cmdlets in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691595). 
+> Berichts-Cmdlets für andere Dienste, z. B. SharePoint Online, Skype for Business Online und Microsoft 365-Benutzeraktivitäten, sind in Exchange Online PowerShell verfügbar. Weitere Informationen finden Sie unter [Reporting cmdlets in Exchange Online](/powershell/exchange/exchange-online-powershell). 
   
 ## <a name="sharepoint-online-powershell-cmdlets"></a>SharePoint Online-PowerShell-Cmdlets
 
-Informationen zu SharePoint Online-Cmdlets finden Sie unter [Index of Windows PowerShell for SharePoint Online Cmdlets](https://go.microsoft.com/fwlink/p/?LinkId=691476).
+Weitere Informationen zu SharePoint Online-Cmdlets finden Sie unter [Index of Windows PowerShell for SharePoint Online cmdlets](/powershell/module/sharepoint-online/).
   
-Verbindungsanweisungen für SharePoint Online PowerShell finden Sie unter [Einrichten der SharePoint Online-Verwaltungsshell Windows PowerShell Umgebung](https://go.microsoft.com/fwlink/p/?LinkId=691603).
+Verbindungsanweisungen für SharePoint Online PowerShell finden Sie unter [Einrichten der SharePoint Online-Verwaltungsshell Windows PowerShell Umgebung.](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
   
 ## <a name="skype-for-business-online-powershell-cmdlets"></a>Skype for Business Online-PowerShell-Cmdlets
 
-Referenzthemen zu Skype for Business Online-Cmdlets finden Sie unter [Skype for Business Online-Cmdlets](https://technet.microsoft.com/library/mt228132.aspx).
+Referenzthemen zu Skype for Business Online-Cmdlet finden Sie unter [Skype for Business Online-Cmdlets](/previous-versions//mt228132(v=technet.10)).
   
 Verbindungsanweisungen für Skype for Business Online PowerShell finden Sie unter [Manage Skype for Business Online with PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md).
 
-## <a name="security--compliance-center-powershell-cmdlets"></a>Security & Compliance Center – PowerShell-Cmdlets
+## <a name="security--compliance-center-powershell-cmdlets"></a>Security & Compliance Center PowerShell-Cmdlets
 
-Die Verweise auf die Security & Compliance Center-Cmdlets finden Sie im Abschnitt Referenz der [Security & Compliance PowerShell-Dokumentation](https://docs.microsoft.com/powershell/exchange/scc-powershell).
+Die Verweise & Security & Compliance Center finden Sie im Abschnitt Referenz der [Security & Compliance PowerShell-Dokumentation](/powershell/exchange/scc-powershell).
   
-Verbindungsanweisungen für Sicherheits & Compliance Center PowerShell finden Sie unter [Connect to the Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+Verbindungsanweisungen für Security & Compliance Center PowerShell finden Sie unter [Connect to the Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Azure Active Directory Klassifizierungs-und Sensitivitäts Bezeichnungen für Microsoft 365-Gruppen
+title: Azure Active Directory-Klassifizierung und Vertraulichkeitsbezeichnungen für Microsoft 365-Gruppen
 ms.reviewer: vijagan
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -9,88 +9,88 @@ f1.keywords: NOCSH
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-description: In diesem Artikel werden die klassischen Azure Active Directory Klassifizierungs-und Sensitivitäts Bezeichnungen erläutert.
-ms.openlocfilehash: 2506e7f467a485878f1e26a23ee1071907b41614
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+description: In diesem Artikel werden die klassische Azure Active Directory-Klassifizierung und Vertraulichkeitsbezeichnungen behandelt.
+ms.openlocfilehash: 1be7e31ee4091e561f7eedb34b41958efc69a339
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545659"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926333"
 ---
-# <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Azure Active Directory Klassifizierungs-und Sensitivitäts Bezeichnungen für Microsoft 365-Gruppen
+# <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Azure Active Directory-Klassifizierung und Vertraulichkeitsbezeichnungen für Microsoft 365-Gruppen
 
-In diesem Artikel werden die klassischen Azure Active Directory Klassifizierungs-und Sensitivitäts Bezeichnungen erläutert.
+In diesem Artikel werden die klassische Azure Active Directory-Klassifizierung und Vertraulichkeitsbezeichnungen behandelt.
 
-Vertraulichkeits Bezeichnungen werden von [diesen Diensten](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#support-for-the-sensitivity-labels)unterstützt.
+Vertraulichkeitsbezeichnungen werden von [diesen Diensten unterstützt.](./sensitivity-labels-teams-groups-sites.md#support-for-the-sensitivity-labels)
 
-Ausführliche Informationen zu Sensitivitäts Bezeichnungen finden Sie unter [erfahren Sie mehr über Sensitivitäts Bezeichnungen](sensitivity-labels.md).
+Vollständige Informationen zu Vertraulichkeitsbezeichnungen finden Sie [unter Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md).
 
-Weitere Informationen zu Sensitivitäts Bezeichnungen und deren Verhalten für Websites und Microsoft 365-Gruppen finden Sie unter [use Sensitivity Labels to Protect Content in Microsoft Teams, Microsoft 365 Groups und SharePoint Sites](sensitivity-labels-teams-groups-sites.md).
+Weitere Informationen zu Vertraulichkeitsbezeichnungen und deren Verhalten für Websites und Microsoft 365-Gruppen finden Sie unter Verwenden von Vertraulichkeitsbezeichnungen zum Schutz von [Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites.](sensitivity-labels-teams-groups-sites.md)
 
-Lesen Sie die folgenden Szenarien für bewährte Methoden beim Migrieren von der klassischen Aad-Klassifizierung zu den Sensitivitäts Bezeichnungen.
+In den folgenden Szenarien finden Sie bewährte Methoden beim Migrieren von der klassischen AAD-Klassifizierung zu den Vertraulichkeitsbezeichnungen.
 
-## <a name="scenario-1-tenant-never-used-classic-aad-classifications-or-sensitivity-labels-for-documents-and-emails"></a>Szenario 1: Mandant nie verwendet klassischen Aad Klassifizierungen oder Sensitivitäts Bezeichnungen für Dokumente und e-Mails
+## <a name="scenario-1-tenant-never-used-classic-aad-classifications-or-sensitivity-labels-for-documents-and-emails"></a>Szenario 1: Der Mandant hat niemals klassische AAD-Klassifizierungen oder Vertraulichkeitsbezeichnungen für Dokumente und E-Mails verwendet.
 
-- Der mandantenadministrator aktiviert Vertraulichkeits Bezeichnungen für Gruppen, indem das Mandanten Kennzeichen "EnableMIPLabels" über das Aad PowerShell-Cmdlet auf true festgelegt wird.
-- Der mandantenadministrator erstellt die Sensitivitäts Bezeichnungen im [Microsoft 365 Compliance Center](https://compliance.microsoft.com).
-    - Der mandantenadministrator kann Datei-und e-Mail-bezogene Aktionen wie Verschlüsselung und Wasserzeichen auswählen.
-    - Mandantenadministrator kann Microsoft 365-Gruppen auswählen und Website bezogene Aktionen für die Sensitivitäts Bezeichnungen SharePoint Online.
-- Der mandantenadministrator veröffentlicht die Richtlinie.
-- **Kompatible Arbeitslasten** zeigen Sensitivitäts Bezeichnungen an. Verwenden Sie die Sensitivitäts Bezeichnungen zum Erstellen von Gruppen. Kompatible Arbeitslasten sind die Dienste, die Vertraulichkeits Bezeichnungen unterstützen.
-- **Nicht kompatible Arbeitsauslastungen** sind die Dienste, die noch keine Vertraulichkeits Bezeichnungen unterstützen. Gruppen können erstellt werden, Sie können jedoch nicht über nicht kompatible Arbeitsauslastungen der Sensitivitäts Bezeichnung zugeordnet werden. Um solche Gruppen mit Sensitivitäts Bezeichnungen zu verknüpfen, können mandantenadministratoren PowerShell-Cmdlets ausführen.
+- Mandantenadministrator aktiviert Vertraulichkeitsbezeichnungen für Gruppen, indem das Mandantenkennzeichen "EnableMIPLabels" über das AAD powershell-Cmdlet auf true festlegen.
+- Der Mandantenadministrator erstellt die Vertraulichkeitsbezeichnungen im [Microsoft 365 Compliance Center.](https://compliance.microsoft.com)
+    - Mandantenadministratoren können Datei- und E-Mail-bezogene Aktionen wie Verschlüsselung und Wasserzeichen auswählen.
+    - Mandantenadministratoren können Microsoft 365-Gruppen und SharePoint Online-websitebezogene Aktionen für die Vertraulichkeitsbezeichnungen auswählen.
+- Der Mandantenadministrator veröffentlicht die Richtlinie.
+- **Kompatible Arbeitsauslastungen** zeigen Vertraulichkeitsbezeichnungen an. Verwenden Sie die Vertraulichkeitsbezeichnungen, um Gruppen zu erstellen. Kompatible Workloads sind die Dienste, die Vertraulichkeitsbezeichnungen unterstützen.
+- **Nicht kompatible Workloads sind** die Dienste, die vertraulichkeitsbezeichnungen noch nicht unterstützen. Gruppen können jedoch nicht über nicht kompatible Arbeitsauslastungen der Vertraulichkeitsbezeichnung zugeordnet werden. Um solche Gruppen Vertraulichkeitsbezeichnungen zuzuordnen, können Mandantenadministratoren PowerShell-Cmdlets ausführen.
 
-Tabelle 1. Verhalten kompatibler und nicht kompatibler Arbeitsauslastungen – erstellen, bearbeiten oder Löschen von Gruppen
+Tabelle 1. Verhalten kompatibler und nicht kompatibler Arbeitsauslastungen – Erstellen, Bearbeiten oder Löschen von Gruppen
 
-|Arbeitslast|Welche Beschriftungsliste wird dem Benutzer im Gruppenfenster angezeigt?|Neue Gruppe erstellen |Gruppe bearbeiten |Gruppe löschen |
+|Arbeitslast|Welche Bezeichnungsliste wird benutzern im Gruppenfenster angezeigt?|Erstellen einer neuen Gruppe |Gruppe bearbeiten |Gruppe löschen |
 |:-------|:-------|:--------|:--------|:--------|   
-|Kompatibel   |Vertraulichkeits Bezeichnungen. |Keine Änderungen im Verhalten. |Keine Änderungen im Verhalten. |Keine Änderungen im Verhalten. |
-|Nicht kompatibel |Keine Sensitivitäts Bezeichnungen sichtbar. |Benutzer kann eine Gruppe erstellen, ohne Vertraulichkeits Bezeichnung auszuwählen. <br><br> Beachten Sie, dass der Administrator Cmdlets ausführen kann, um Sensitivitäts Bezeichnungen im Hintergrund anzuwenden. |**Fall 1**: keine Sensitivitäts Bezeichnung zuvor ausgewählt. Benutzer kann eine Gruppe bearbeiten.<br><br> **Fall 2**: Sensitivitäts Bezeichnung, die zuvor im Hintergrund mithilfe von Cmdlet angewendet wurde. Benutzer kann eine Gruppe erfolgreich bearbeiten, ohne den Fall, in dem der Benutzer eine ungültige Kombination der Datenschutzeinstellung in Bezug auf die Bezeichnung auswählt. |Keine Änderungen im Verhalten.|
+|Kompatibel   |Vertraulichkeitsbezeichnungen. |Keine Änderungen im Verhalten. |Keine Änderungen im Verhalten. |Keine Änderungen im Verhalten. |
+|Nicht kompatibel |Keine Vertraulichkeitsbezeichnungen sichtbar. |Der Benutzer kann eine Gruppe erstellen, ohne Vertraulichkeitsbezeichnungen auswählen zu müssen. <br><br> Hinweis: Der Administrator kann Cmdlets ausführen, um Vertraulichkeitsbezeichnungen im Hintergrund anzuwenden. |**Fall 1**: Keine zuvor ausgewählte Vertraulichkeitsbezeichnung. Der Benutzer kann eine Gruppe bearbeiten.<br><br> **Fall 2:** Vertraulichkeitsbezeichnung, die zuvor im Hintergrund mithilfe des Cmdlets angewendet wurde. Der Benutzer kann eine Gruppe erfolgreich bearbeiten, mit Ausnahme des Falls, in dem der Benutzer eine ungültige Kombination von Datenschutzeinstellungen im Hinblick auf die Bezeichnung auswählt. |Keine Änderungen im Verhalten.|
 
 > [!NOTE]
-> Im Fall von Outlook-Desktop-Client (Win 32), nachdem Administrator die Vertraulichkeits Bezeichnungen auf Ihrem Mandanten aktiviert und sich der Benutzer in einer älteren Version des Outlook-Desktop Clients (Win 32) befindet:
+> Im Fall des Outlook-Desktopclients (Win 32), nachdem der Administrator Vertraulichkeitsbezeichnungen für seinen Mandanten aktiviert hat und sich der Benutzer auf einer älteren Version des Outlook-Desktopclients befindet (Win 32):
 >
-> - Benutzer sieht Sensitivitäts Bezeichnungen werden in der älteren Version des Outlook-Desktop Clients angezeigt.
-> - Wenn der Benutzer jedoch eine Gruppe bearbeitet und die Gruppe mit einer Vertraulichkeits Bezeichnung speichert, wird die ausgewählte Datenschutzeinstellung durch die Datenschutzeinstellung der angewendeten Vertraulichkeits Bezeichnung außer Kraft gesetzt.
+> - Dem Benutzer werden Vertraulichkeitsbezeichnungen in der älteren Version des Outlook-Desktopclients angezeigt.
+> - Wenn der Benutzer jedoch eine Gruppe bearbeitet und die Gruppe mit einer Vertraulichkeitsbezeichnung speichert, wird die ausgewählte Datenschutzeinstellung durch die Datenschutzeinstellung der angewendeten Vertraulichkeitsbezeichnung überschrieben.
 >
-> Es wird empfohlen, dass Ihre Benutzer auf einer alten Version des Outlook-Clients auf die neuere Version aktualisieren.
+> Es wird empfohlen, dass Ihre Benutzer auf einer alten Version des Outlook-Clients ein Upgrade auf die neuere Version durchführen.
 
-## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>Szenario 2: der Mandant verwendet bereits klassische Aad- [Klassifikationen](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
+## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>Szenario 2: Mandant verwendet bereits klassische [AAD-Klassifizierungen](../enterprise/manage-microsoft-365-groups-with-powershell.md)
 
-### <a name="case-a-tenant-never-used-sensitivity-labels-for-documents-and-emails"></a>Fall A: Mandant verwendet keine Sensitivitäts Bezeichnungen für Dokumente und e-Mails.
+### <a name="case-a-tenant-never-used-sensitivity-labels-for-documents-and-emails"></a>Fall A: Der Mandant hat nieMals Vertraulichkeitsbezeichnungen für Dokumente und E-Mails verwendet.
 
-1. Im [Microsoft 365 Compliance Center](https://compliance.microsoft.com)wird empfohlen, Vertraulichkeits Bezeichnungen mit dem gleichen Namen wie die vorhandenen klassischen Azure AD Beschriftungen zu erstellen.
-2. Verwenden Sie das PowerShell-Cmdlet, um diese Sensitivitäts Bezeichnungen auf vorhandene Microsoft 365-Gruppen und SharePoint-Websites mithilfe der Namenszuordnung anzuwenden.
-3. Der Administrator kann die klassischen Azure AD Bezeichnungen löschen:
-    - Kompatible Arbeitsauslastungen zeigen diese Vertraulichkeits Bezeichnungen und Gruppen werden mit Ihnen erstellt.
-    - Nicht kompatible Arbeitsauslastungen funktionieren beim Erstellen von Gruppen, aber keine Vertraulichkeits Bezeichnung ist Ihnen zugeordnet.
-4. Administratoren können PowerShell-Cmdlets ausführen, um Vertraulichkeits Bezeichnungen auf diese Gruppen ohne Bezeichnungen anzuwenden.
-    - Alternativ kann ein Administrator auswählen, dass die klassischen Azure AD Bezeichnungen beibehalten werden:
-        - Kompatible Arbeitsauslastungen zeigen diese Sensitivitäts Bezeichnungen an, und Gruppen werden mit Ihnen erstellt. Kompatible Arbeitslasten sind die Dienste, die Vertraulichkeits Bezeichnungen unterstützen.
-        - Nicht kompatible Arbeitsauslastungen funktionieren beim Erstellen von Gruppen und beim Anzeigen von klassischen Azure AD Bezeichnungen. Diese klassischen Azure AD Bezeichnungen sind an diese Gruppen angehängt, die mit nicht kompatiblen Arbeitsauslastungen erstellt wurden.
-5. Es wird dringend empfohlen, dass Administratoren PowerShell-Cmdlets ausführen, um Sensitivitäts Bezeichnungen auf diese Gruppen mit klassischen Azure AD Bezeichnungen anzuwenden.
+1. Im [Microsoft 365 Compliance Center](https://compliance.microsoft.com)wird empfohlen, Vertraulichkeitsbezeichnungen mit demselben Namen wie die vorhandenen klassischen Azure AD-Bezeichnungen zu erstellen.
+2. Verwenden Sie das PowerShell-Cmdlet, um diese Vertraulichkeitsbezeichnungen mithilfe der Namenszuordnung auf vorhandene Microsoft 365-Gruppen und SharePoint-Websites anzuwenden.
+3. Der Administrator kann die klassischen Azure AD-Bezeichnungen löschen:
+    - Kompatible Arbeitsauslastungen zeigen diese Vertraulichkeitsbezeichnungen und Gruppen an, die mit ihnen erstellt werden.
+    - Nicht kompatible Arbeitsauslastungen funktionieren beim Erstellen von Gruppen, es ist jedoch keine Vertraulichkeitsbezeichnung an sie angefügt.
+4. Administratoren können PowerShell-Cmdlets ausführen, um Vertraulichkeitsbezeichnungen auf diese Gruppen ohne Bezeichnungen anzuwenden.
+    - Alternativ kann ein Administrator die klassischen Azure AD-Bezeichnungen behalten:
+        - Kompatible Arbeitsauslastungen zeigen diese Vertraulichkeitsbezeichnungen an, und Gruppen werden mit diesen erstellt. Kompatible Workloads sind die Dienste, die Vertraulichkeitsbezeichnungen unterstützen.
+        - Nicht kompatible Arbeitsauslastungen funktionieren beim Erstellen von Gruppen und zeigen klassische Azure AD-Bezeichnungen an. Diese klassischen Azure AD-Bezeichnungen werden diesen Gruppen zugeordnet, die mit nicht kompatiblen Workloads erstellt wurden.
+5. Es wird dringend empfohlen, dass Administratoren PowerShell-Cmdlets ausführen, um Vertraulichkeitsbezeichnungen auf diese Gruppen mit klassischen Azure AD-Bezeichnungen anzuwenden.
 
-Tabelle 2. Verhalten kompatibler und nicht kompatibler Arbeitsauslastungen – erstellen, bearbeiten oder Löschen von Gruppen
+Tabelle 2. Verhalten kompatibler und nicht kompatibler Arbeitsauslastungen – Erstellen, Bearbeiten oder Löschen von Gruppen
 
-|Arbeitslast|Welche Beschriftungsliste wird dem Benutzer im Gruppenfenster angezeigt?|Neue Gruppe erstellen |Gruppe bearbeiten |Gruppe löschen |
+|Arbeitslast|Welche Bezeichnungsliste wird benutzern im Gruppenfenster angezeigt?|Erstellen einer neuen Gruppe |Gruppe bearbeiten |Gruppe löschen |
 |:-------|:-------|:--------|:--------|:--------|   
-|Kompatibel   |Vertraulichkeits Bezeichnungen. |Keine Änderungen im Verhalten. |Keine Änderungen im Verhalten. |Keine Änderungen im Verhalten. |
-|Nicht kompatibel |Alte klassische Aad-Bezeichnungen. |Benutzer kann eine Gruppe mit klassischer Azure AD Bezeichnung erstellen ausgewählt. <br><br>Beachten Sie, dass der Administrator Cmdlets ausführen kann, um Sensitivitäts Bezeichnungen im Hintergrund anzuwenden. |**Fall 1**: keine Sensitivitäts Bezeichnung zuvor ausgewählt. Benutzer kann eine Gruppe bearbeiten.<br><br> **Fall 2**: klassische Aad-Bezeichnungen, die zuvor ausgewählt wurden. Benutzer kann eine Gruppe bearbeiten.<br><br> **Fall 3**: Vertraulichkeits Bezeichnung, die zuvor im Hintergrund mithilfe von Cmdlet angewendet wurde. Benutzer sollte in der Lage sein, eine Gruppe zu bearbeiten, ohne einen Fall, bei dem der Benutzer eine ungültige Kombination der Datenschutzeinstellung in Bezug auf die Bezeichnung auswählt. |Benutzer kann eine Gruppe löschen. |
+|Kompatibel   |Vertraulichkeitsbezeichnungen. |Keine Änderungen im Verhalten. |Keine Änderungen im Verhalten. |Keine Änderungen im Verhalten. |
+|Nicht kompatibel |Alte klassische AAD-Bezeichnungen. |Benutzer können eine Gruppe mit ausgewählter klassischer Azure AD-Bezeichnung erstellen. <br><br>Hinweis: Der Administrator kann Cmdlets ausführen, um Vertraulichkeitsbezeichnungen im Hintergrund anzuwenden. |**Fall 1**: Keine zuvor ausgewählte Vertraulichkeitsbezeichnung. Der Benutzer kann eine Gruppe bearbeiten.<br><br> **Fall 2:** Klassische AAD-Bezeichnungen, die zuvor ausgewählt wurden. Der Benutzer kann eine Gruppe bearbeiten.<br><br> **Fall 3:** Vertraulichkeitsbezeichnung, die zuvor mithilfe des Cmdlets im Hintergrund angewendet wurde. Der Benutzer sollte in der Lage sein, eine Gruppe zu bearbeiten, mit Ausnahme eines Falls, in dem der Benutzer eine ungültige Kombination von Datenschutzeinstellungen im Hinblick auf die Bezeichnung auswählt. |Der Benutzer kann eine Gruppe löschen. |
 
 > [!NOTE]
-> Im Fall von Outlook-Desktop-Client (Win 32), nachdem Administrator die Vertraulichkeits Bezeichnungen auf Ihrem Mandanten aktiviert und sich der Benutzer in einer älteren Version des Outlook-Desktop Clients (Win 32) befindet:
+> Im Fall des Outlook-Desktopclients (Win 32), nachdem der Administrator Vertraulichkeitsbezeichnungen für seinen Mandanten aktiviert hat und sich der Benutzer auf einer älteren Version des Outlook-Desktopclients befindet (Win 32):
 >
-> - Benutzer sieht Sensitivitäts Bezeichnungen werden in der älteren Version des Outlook-Desktop Clients angezeigt.
-> - Wenn der Benutzer jedoch eine Gruppe bearbeitet und die Gruppe mit einer Vertraulichkeits Bezeichnung speichert, wird die ausgewählte Datenschutzeinstellung durch die Datenschutzeinstellung der angewendeten Vertraulichkeits Bezeichnung außer Kraft gesetzt.
+> - Dem Benutzer werden Vertraulichkeitsbezeichnungen in der älteren Version des Outlook-Desktopclients angezeigt.
+> - Wenn der Benutzer jedoch eine Gruppe bearbeitet und die Gruppe mit einer Vertraulichkeitsbezeichnung speichert, wird die ausgewählte Datenschutzeinstellung durch die Datenschutzeinstellung der angewendeten Vertraulichkeitsbezeichnung überschrieben.
 >
-> Es wird empfohlen, dass Ihre Benutzer auf einer alten Version des Outlook-Clients auf die neuere Version aktualisieren.
+> Es wird empfohlen, dass Ihre Benutzer auf einer alten Version des Outlook-Clients ein Upgrade auf die neuere Version durchführen.
 
-### <a name="case-b-tenant-used-sensitivity-labels-for-documents-and-emails"></a>Fall B: Mandant verwendet Sensitivitäts Bezeichnungen für Dokumente und e-Mails
+### <a name="case-b-tenant-used-sensitivity-labels-for-documents-and-emails"></a>Fall B: Mandant verwendete Vertraulichkeitsbezeichnungen für Dokumente und E-Mails
 
-1. Sobald der Administrator das Feature für die Vertraulichkeits Kennzeichnung auf dem Mandanten aktiviert, indem das Mandanten Kennzeichen "EnableMIPLabels" auf true festgelegt wird, werden die Dialogfelder Dokument-und e-Mail-Empfindlichkeits Bezeichnungen in Gruppen/Standort/Team erstellen und bearbeiten angezeigt.
-2. Ein Administrator kann dieselben Dokument-und e-Mail-Vertraulichkeits Bezeichnungen verwenden, um den Datenschutz und den Zugriff durch externe Benutzer in der Gruppe/dem Standort/Team durch die Angabe verwandter Gruppeneinstellungen zu erzwingen:
-    1. Wählen Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com)die Registerkarte **Websites und Gruppen** aus.
-    2. Bearbeiten einer Bezeichnung für ein Dokument oder eine e-Mail-Vertraulichkeit.
+1. Sobald der Administrator das Feature für Vertraulichkeitsbezeichnungen für den Mandanten aktiviert, indem das Mandantenkennzeichen "EnableMIPLabels" auf true festgelegt wird, werden die Dokument- und E-Mail-Vertraulichkeitsbezeichnungen in den Dialogfeldern zum Erstellen und Bearbeiten von Gruppen/Website/Team angezeigt.
+2. Ein Administrator kann dieselben Dokument- und E-Mail-Vertraulichkeitsbezeichnungen verwenden, um Datenschutz und externen Benutzerzugriff auf die Gruppe/Website/das Team durch Angeben verwandter Gruppeneinstellungen zu erzwingen:
+    1. Wählen Sie [im Microsoft 365 Compliance Center](https://compliance.microsoft.com)die Registerkarte Websites und **Gruppen** aus.
+    2. Bearbeiten sie ein Dokument oder eine E-Mail-Vertraulichkeitsbezeichnung.
 
 ## <a name="sample-script"></a>Beispielskript
 
-Ein Beispielskript zum Migrieren von Gruppen mit klassischen Aad-Bezeichnungen zu Sensitivitäts Bezeichnungen finden Sie unter [klassische Azure Ad Gruppen Klassifizierung](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#classic-azure-ad-group-classification).
+Ein Beispielskript zum Migrieren von Gruppen mit klassischen AAD-Bezeichnungen zu Vertraulichkeitsbezeichnungen finden Sie unter [Classic Azure AD group classification](./sensitivity-labels-teams-groups-sites.md#classic-azure-ad-group-classification).

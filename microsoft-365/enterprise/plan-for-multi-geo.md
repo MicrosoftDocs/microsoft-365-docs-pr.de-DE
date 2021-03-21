@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Informationen zu Microsoft 365 Multi-Geo, zur Funktionsweise von Multi-Geo und zu für Datenspeicher verfügbaren geografischen Standorten.
-ms.openlocfilehash: ce8b752cc6a335249f9d8e03289fd16b04756ce9
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 9625d55015cc0f18801d59e82fc8ca7090b3b721
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712342"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927532"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Plan für Microsoft 365 Multi-Geo
 
@@ -69,13 +69,13 @@ Für jeden Benutzer muss ein *bevorzugter Datenspeicherort* festgelegt werden, d
 
 Erstellen Sie eine Liste Ihrer Benutzer mit den entsprechenden Benutzerprinzipalnamen und den Codes für die entsprechenden bevorzugten Datenspeicherorte. Fügen Sie Ihren Testbenutzer und die erste Pilotgruppe hinzu. Sie benötigen diese Liste für die Konfigurationsverfahren.
 
-Wenn Ihre Benutzer aus einem lokalen Active Directory-System mit Azure Active Directory synchronisiert werden, müssen Sie den bevorzugten Datenspeicherort als Active Directory-Attribut festlegen und mithilfe von Azure Active Directory Connect eine Synchronisierung vornehmen. Sie können den bevorzugten Datenspeicherort für synchronisierte Benutzer nicht direkt mithilfe von Azure AD PowerShell konfigurieren. Informationen zu den Schritten für die Einrichtung eines PDL in Active Directory und die entspreche Synchronisierung finden Sie in [Azure Active Directory Connect-Synchronisierung: Konfigurieren von bevorzugten Datenspeicherorten für Microsoft 365-Ressourcen](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+Wenn Ihre Benutzer aus einem lokalen Active Directory-System mit Azure Active Directory synchronisiert werden, müssen Sie den bevorzugten Datenspeicherort als Active Directory-Attribut festlegen und mithilfe von Azure Active Directory Connect eine Synchronisierung vornehmen. Sie können den bevorzugten Datenspeicherort für synchronisierte Benutzer nicht direkt mithilfe von Azure AD PowerShell konfigurieren. Informationen zu den Schritten für die Einrichtung eines PDL in Active Directory und die entspreche Synchronisierung finden Sie in [Azure Active Directory Connect-Synchronisierung: Konfigurieren von bevorzugten Datenspeicherorten für Microsoft 365-Ressourcen](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
 Die Verwaltung eines Multi-Geo-Mandanten kann von der eines Nicht-Multi-Geo-Mandanten abweichen, da viele SharePoint- und OneDrive-Einstellungen und -Dienste über Multi-Geo-Funktionen verfügen. Es wird empfohlen, den Artikel [Verwalten einer Multi-Geo-Umgebung](administering-a-multi-geo-environment.md) zu lesen, bevor Sie mit der Konfiguration fortfahren.
 
 Weitere Informationen zur Benutzererfahrung in einer [Multi-Geo-Umgebung](multi-geo-user-experience.md) finden Sie unter Benutzererfahrung in einer Multi-Geo-Umgebung.
 
-Ausführliche Informationen zur Teams-Erfahrung in einer Multi-Geo-fähigen Microsoft 365-Mandanteneinheit finden Sie unter [Teams-Umgebung in einer Microsoft 365 OneDrive und SharePoint Online Multi-Geo-fähigen Mandanteneinheit](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo).
+Ausführliche Informationen zur Teams-Erfahrung in einer Multi-Geo-fähigen Microsoft 365-Mandanteneinheit finden Sie unter [Teams-Umgebung in einer Microsoft 365 OneDrive und SharePoint Online Multi-Geo-fähigen Mandanteneinheit](/microsoftteams/teams-experience-o365odb-spo-multi-geo).
 
 Um mit der Konfigurierung von Microsoft 365 Multi-Geo zu beginnen, lesen Sie bitte [Konfigurieren von Microsoft 365-Multi-Geo](multi-geo-tenant-configuration.md).
 
@@ -83,4 +83,4 @@ Denken Sie nach Abschluss der Konfiguration daran, [die OneDrive-Bibliotheken Ih
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Konfiguration von Microsoft 365 Multi-Geo eDiscovery](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-ediscovery-configuration)
+[Konfiguration von Microsoft 365 Multi-Geo eDiscovery](./multi-geo-ediscovery-configuration.md)

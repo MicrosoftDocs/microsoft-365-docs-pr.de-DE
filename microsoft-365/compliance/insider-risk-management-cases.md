@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 58c8d2cdebdef6c0307b0c234951f6d32e5009df
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: f6f01a1bed296b6af2e6be973de6605910809fc3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820161"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926403"
 ---
 # <a name="insider-risk-management-cases"></a>Fälle des Insiderrisikomanagements
 
@@ -241,27 +241,6 @@ Bei Fällen, die vor der Aktivierung der Microsoft Team-Integration geöffnet wu
 Wenn ein Fall aufgelöst wird, wird das zugeordnete Microsoft Team automatisch archiviert (ausgeblendet und schreibgeschützt).
 
 Weitere Informationen zu Microsoft Teams for Insider Risk Management finden Sie unter [Getting started with insider risk management settings](insider-risk-management-settings.md#microsoft-teams-preview).
-
-### <a name="share-the-case"></a>Freigeben des Falls
-
-Die Freigabe eines Insider-Risikomanagement-Falls ermöglicht Risikoermittlern und Analysten die einfache Zusammenarbeit mit anderen Compliancebeteiligten in Ihrer Organisation. Sie können schnell einen Link zu einem Fall für insider risk management mit externen Beteiligten aus dem Fallmanagementbereich teilen. Um über den Link auf den Fall des Insiderrisikomanagements zu zugreifen, müssen die Beteiligten in eine der Rollengruppen für das Insiderrisikomanagement einbezogen werden.
-
->[!NOTE]
->Vielen Dank für Ihr Feedback und Ihren Support während der Vorschau des ServiceNow-Connectors. Wir haben beschlossen, die Vorschau des ServiceNow-Connectors zu beenden und den Support im Insider risk management am 30. November 2020 zu beenden. Wir bewerten derzeit aktiv alternative Methoden, um Kunden die ServiceNow-Integration in das Insider-Risikomanagement zu ermöglichen.
-
-Die folgenden Freigabeoptionen sind verfügbar:
-
-- **ServiceNow**: Nach der Konfiguration des Microsoft 365 ServiceNow-Connectors für Ihre Microsoft 365-Organisation können Sie ganz einfach einen Link zu dem Fall freigeben, einen Vorfall öffnen oder eine Änderung mit Ihrer ServiceNow-Organisation anfordern. Wenn Sie den Fall für ServiceNow freigeben möchten, wählen Sie **in** der Fallaktion  >  Fallaktionen **Freigeben**  >  **von ServiceNow** aus. Die ServiceNow-Integration in insider risk management unterstützt umfasst die folgenden Fallinformationen und -aktionen:
-    - **Vorgangsname**: Der Name der neuen ServiceNow-Aufgabe.
-    - **Aufgabenbeschreibung**: Die Beschreibung für die neue ServiceNow-Aufgabe. Dieses bearbeitbare Beschreibungsfeld enthält automatisch einen Link zum Fall des Insider-Risikomanagements.
-    - **Vorgangstyp**: Der Vorgangstyp für die neue ServiceNow-Aufgabe, entweder *Incident* oder *Change Request*.
-    - **Priorität**: Die Priorität für die neue ServiceNow-Aufgabe, entweder *Planning*, *Low*, *Moderate*, *High* oder *Critical*.
-    - **Fälligkeitsdatum**: Das angeforderte Datum für das Abschließen der ServiceNow-Aufgabe.
-
-![Freigabe von Insider-Risikomanagement mit ServiceNow](../media/insider-risk-share-servicenow.png)
-
-- **E-Mail:** Gibt einen Link zum Fall des Insider-Risikomanagements in einer E-Mail weiter. Sie können einen beliebigen lokal konfigurierten E-Mail-Client mit dieser Freigabeoption auswählen. Wenn Sie den Falllink für E-Mail freigeben möchten, wählen **Sie E-Mail** freigeben  >   in der Symbolleiste der Fallaktion aus.
-- **Link kopieren:** Kopiert einen Link zum Fall des Insider-Risikomanagements in die Zwischenablage. Wenn Sie den Falllink in die Zwischenablage kopieren möchten, wählen Sie **in** der Symbolleiste der Fallaktion den Link Kopieren  >   freigeben aus.
 
 ### <a name="resolve-the-case"></a>Auflösen des Falls
 

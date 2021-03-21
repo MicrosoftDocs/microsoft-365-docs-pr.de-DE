@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Lesen Sie in diesem Artikel eine Übersicht über die verschiedenen Verschlüsselungsmethoden, die zum Schutz von Kundendaten in der Microsoft Cloud verwendet werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 20236e67432ad5bc7e837b91590387355022ccb5
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: a8e184fbe722de674db6f9bcc47e2ab5aa0723d1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727576"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926222"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Verschlüsselung in der Microsoft-Cloud
 
@@ -30,7 +30,7 @@ Kundendaten innerhalb der Clouddienste von Microsoft enterprise sind durch versc
 
 Kundendaten, die in den Clouddiensten von Microsoft für Unternehmen gespeichert sind, werden mithilfe einer oder mehreren Verschlüsselungsformen geschützt. (Die Überprüfung unserer Kryptorichtlinie und ihrer Durchsetzung wird unabhängig von mehreren Prüfern von Drittanbietern überprüft, und Berichte über diese Prüfungen sind im [Service Trust Portal verfügbar.)](https://aka.ms/stp)
 
-Microsoft stellt dienstseitige Technologien zur Verfügung, die Ruhe- und Transitdaten von Kunden verschlüsseln. Für ruhende Kundendaten verwendet Microsoft Azure beispielsweise [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) und [DM-Crypt,](https://en.wikipedia.org/wiki/Dm-crypt)und Microsoft 365 verwendet BitLocker, [Azure Storage Service Encryption,](https://docs.microsoft.com/azure/) [Distributed Key Manager](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-secures-email-secrets) (DKM) und Microsoft 365-Dienstverschlüsselung. Für Kundendaten während der Übertragung verwenden Azure, Office 365, Microsoft Commercial Support, Microsoft Dynamics 365, Microsoft Power BI und Visual Studio Team Services branchenübliche sichere Transportprotokolle, z. B. Internet Protocol Security (IPsec) und Transport Layer Security (TLS), zwischen Microsoft-Rechenzentren und zwischen Benutzergeräten und Microsoft-Rechenzentren.
+Microsoft stellt dienstseitige Technologien zur Verfügung, die Ruhe- und Transitdaten von Kunden verschlüsseln. Für ruhende Kundendaten verwendet Microsoft Azure beispielsweise [BitLocker](/windows/device-security/bitlocker/bitlocker-overview) und [DM-Crypt,](https://en.wikipedia.org/wiki/Dm-crypt)und Microsoft 365 verwendet BitLocker, [Azure Storage Service Encryption,](/azure/) [Distributed Key Manager](./exchange-online-secures-email-secrets.md) (DKM) und Microsoft 365-Dienstverschlüsselung. Für Kundendaten während der Übertragung verwenden Azure, Office 365, Microsoft Commercial Support, Microsoft Dynamics 365, Microsoft Power BI und Visual Studio Team Services branchenübliche sichere Transportprotokolle, z. B. Internet Protocol Security (IPsec) und Transport Layer Security (TLS), zwischen Microsoft-Rechenzentren und zwischen Benutzergeräten und Microsoft-Rechenzentren.
 
 Neben der von Microsoft bereitgestellten Grundlegenden Stufe der kryptografischen Sicherheit umfassen unsere Clouddienste auch Kryptografieoptionen, die Sie verwalten können. Beispielsweise können Sie die Verschlüsselung für den Datenverkehr zwischen ihren virtuellen Computern (VMs) und ihren Benutzern aktivieren. Mit [virtuellen Azure-Netzwerken](https://azure.microsoft.com/services/virtual-network/)können Sie das branchenübliche IPsec-Protokoll verwenden, um den Datenverkehr zwischen Ihrem Unternehmens-VPN-Gateway und Azure zu verschlüsseln. Sie können den Datenverkehr zwischen den virtuellen Computern in Ihrem virtuellen Netzwerk auch verschlüsseln. Darüber hinaus können [Sie mit neuen Office 365-Nachrichtenverschlüsselungsfunktionen](set-up-new-message-encryption-capabilities.md) verschlüsselte E-Mails an alle Benutzer senden.
 
@@ -46,7 +46,7 @@ Microsoft zertifiziert die zugrunde liegenden kryptografischen Module, die in un
 - Dynamics 365 und Dynamics 365 U.S. Government
 - Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense
 
-Die Verschlüsselung ruherer Kundendaten wird von mehreren dienstseitigen Technologien bereitgestellt, einschließlich BitLocker, DKM, Azure Storage Service Encryption und Dienstverschlüsselung in Exchange Online, Skype for Business, OneDrive for Business und SharePoint Online. Die Office 365-Dienstverschlüsselung umfasst eine Option zum Verwenden von vom Kunden verwalteten Verschlüsselungsschlüsseln, die in Azure Key Vault gespeichert sind. Diese vom Kunden verwaltete Schlüsseloption namens [Customer Key](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview)ist für Exchange Online, SharePoint Online, Skype for Business und OneDrive for Business verfügbar.
+Die Verschlüsselung ruherer Kundendaten wird von mehreren dienstseitigen Technologien bereitgestellt, einschließlich BitLocker, DKM, Azure Storage Service Encryption und Dienstverschlüsselung in Exchange Online, Skype for Business, OneDrive for Business und SharePoint Online. Die Office 365-Dienstverschlüsselung umfasst eine Option zum Verwenden von vom Kunden verwalteten Verschlüsselungsschlüsseln, die in Azure Key Vault gespeichert sind. Diese vom Kunden verwaltete Schlüsseloption namens [Customer Key](./customer-key-overview.md)ist für Exchange Online, SharePoint Online, Skype for Business und OneDrive for Business verfügbar.
 
 Für Kundendaten, die übertragen werden, verhandeln alle Office 365-Server standardmäßig sichere Sitzungen mit TLS mit Clientcomputern, um Kundendaten zu schützen. Beispielsweise werden in Office 365 sichere Sitzungen mit Skype for Business, Outlook und Outlook im Web, mobilen Clients und Webbrowsern aushandelt.
 
@@ -57,8 +57,8 @@ Für Kundendaten, die übertragen werden, verhandeln alle Office 365-Server stan
 - [Verschlüsselung in Azure](office-365-azure-encryption.md)
 - [BitLocker und Distributed Key Manager (DKM) für die Verschlüsselung](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)
 - [Office 365-Dienstverschlüsselung](office-365-service-encryption.md)
-- [Office 365-Verschlüsselung für Skype for Business, OneDrive for Business, SharePoint Online und Exchange Online](office-365-encryption-for-skype-onedrive-sharepoint-and-exchange.md)
-- [Verschlüsselung von Daten während der Übertragung](office-365-encryption-for-data-in-transit.md)
+- [Office 365-Verschlüsselung für Skype for Business, OneDrive for Business, SharePoint Online und Exchange Online](./n/compliance/assurance/assurance-encryption-for-microsoft-365-services)
+- [Verschlüsselung von Daten während der Übertragung](/compliance/assurance/assurance-encryption-in-transit)
 - [Vom Kunden verwaltete Verschlüsselungsfunktionen](office-365-customer-managed-encryption-features.md)
 - [Verschlüsselungsrisiken und Schutzfunktionen](office-365-encryption-risks-and-protections.md)
 - [Verschlüsselung in Microsoft Dynamics 365](office-365-encryption-in-microsoft-dynamics-365.md)

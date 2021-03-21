@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Vergleichen Sie die Verschlüsselungsoptionen von Microsoft 365, einschließlich Office 365-Nachrichtenverschlüsselung (Office 365 Message Encryption, OME), S/MIME sowie Informationsrechteverwaltung (Information Rights Management, IRM), und erfahren Sie mehr über die Transportschichtsicherheit (Transport Layer Security, TLS).
-ms.openlocfilehash: e1f222595479ce525b38ab97971c998f77c78581
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: e5357384ebfe481e464ea8950c3f753b38a53b0c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709579"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926535"
 ---
 # <a name="email-encryption"></a>E-Mail-Verschlüsselung
 
@@ -64,13 +64,13 @@ In diesem Video sehen Sie eine Einführung in die [Verschlüsselung in Office 36
 |:-----|:-----|:-----|:-----|
 |Was ist das?|Office 365-Nachrichtenverschlüsselung (Office Message Encryption, OME) ist ein Dienst, der auf Azure Rights Management (Azure RMS) aufbaut und mit dem Sie verschlüsselte E-Mails an Personen innerhalb oder außerhalb Ihrer Organisation senden können, unabhängig von der E-Mail-Zieladresse (Gmail, Yahoo! Mail, Outlook.com usw.). <br/> Als Administrator können Sie Transportregeln einrichten, die die Bedingungen für die Verschlüsselung definieren. Wenn ein Benutzer eine Nachricht sendet, die mit einer Regel übereinstimmt, wird die Verschlüsselung automatisch angewendet. <br/> Zum Anzeigen verschlüsselter Nachrichten können Empfänger eine einmalige Kennung abrufen, sich mit einem Microsoft-Konto anmelden oder sich mit einem Geschäfts-, Schul- oder Unikonto, das Office 365 zugeordnet ist, anmelden. Empfänger können auch verschlüsselte Antworten senden. Sie benötigen kein Microsoft 365-Abonnement, um verschlüsselte Nachrichten anzuzeigen oder verschlüsselte Antworten zu senden.|IRM ist eine Verschlüsselungslösung, die auch Nutzungseinschränkungen auf E-Mail-Nachrichten anwendet. Mit dieser Lösung können Sie verhindern, dass vertrauliche Informationen von nicht autorisierten Personen gedruckt, weitergeleitet oder kopiert werden. <br/> IRM-Funktionen in Microsoft 365 verwenden Azure Rights Management (Azure RMS).|S/MIME ist eine zertifikatbasierte Verschlüsselungslösung, die es Ihnen gestattet, eine Nachricht sowohl zu verschlüsseln als auch digital zu signieren. Die Nachrichtenverschlüsselung hilft Ihnen bei der Sicherstellung, dass nur der beabsichtigte Empfänger die Nachricht öffnen und lesen kann. Eine digitale Signatur hilft dem Empfänger, die Identität des Absenders zu überprüfen. <br/> Sowohl digitale Signaturen als auch Nachrichtenverschlüsselung werden durch die Verwendung eindeutiger digitale Zertifikate ermöglicht, die die Schlüssel für die Überprüfung digitaler Signaturen und die Verschlüsselung bzw. Entschlüsselung von Nachrichten enthalten. <br/> Um S/MIME zu verwenden, müssen Sie für jeden Empfänger öffentliche Schlüssel besitzen. Empfänger müssen ihre eigenen privaten Schlüssel verwalten, die dauerhaft gesichert sein müssen. Wenn der private Schlüssel eines Empfängers gefährdet ist, muss der Empfänger einen neuen privaten Schlüssel abrufen und neue öffentliche Schlüssel an alle potenziellen Absender verteilen.|
 |Vorhandene Funktionen|OME: <br/> Verschlüsselt Nachrichten, die an interne oder externe Empfänger gesendet werden. <br/>  Ermöglicht Benutzern das Senden verschlüsselter Nachrichten an beliebige E-Mail-Adressen, einschließlich Outlook.com, Yahoo! Mail und Gmail. <br/>  Ermöglicht es Ihnen als Administrator, das E-Mail-Anzeigeportal entsprechend der Marke Ihrer Organisation anzupassen. <br/> Die Schlüssel werden von Microsoft sicher verwaltet und gespeichert, Sie müssen sich nicht darum kümmern. <br/> Es ist keine spezielle clientseitige Software erforderlich, sofern die verschlüsselte Nachricht (als HTML-Anlage gesendet) in einem Browser geöffnet werden kann.|IRM: <br/> Verwendet Verschlüsselung und Verwendungseinschränkungen, um Online- und Offlineschutz für E-Mails und Anlagen bereitzustellen. <br/> Gibt Ihnen als Administrator die Möglichkeit, Transportregeln oder Outlook-Schutzregeln einzurichten, um IRM automatisch auf ausgewählte Nachrichten anzuwenden. <br/> Ermöglicht Benutzern das manuelle Anwenden von Vorlagen in Outlook im Web (früher Outlook Web App).|In S/MIME erfolgt die Absenderauthentifizierung durch digitale Signaturen, und die Vertraulichkeit von Nachrichten wird durch Verschlüsselung sichergestellt.|
-|Nicht vorhandene Funktionen|Mit OME können keine Nutzungseinschränkungen auf Nachrichten angewendet werden. Sie können damit z. B. nicht verhindern, dass Empfänger eine verschlüsselte Nachricht weiterleiten oder drucken.|Einige Anwendungen unterstützen IRM-E-Mails möglicherweise nicht auf allen Geräten. Weitere Informationen zu diesen und anderen Produkten, die IRM-E-Mail unterstützen, finden Sie unter [Client-Gerätefunktionen](https://technet.microsoft.com/library/dn655136.aspx#BKMK_ClientCapabilities).|Mit S/MIME können verschlüsselte Nachrichten nicht auf Schadsoftware, Spam oder Richtlinien überprüft werden.|
+|Nicht vorhandene Funktionen|Mit OME können keine Nutzungseinschränkungen auf Nachrichten angewendet werden. Sie können damit z. B. nicht verhindern, dass Empfänger eine verschlüsselte Nachricht weiterleiten oder drucken.|Einige Anwendungen unterstützen IRM-E-Mails möglicherweise nicht auf allen Geräten. Weitere Informationen zu diesen und anderen Produkten, die IRM-E-Mail unterstützen, finden Sie unter [Client-Gerätefunktionen](/azure/information-protection/requirements#BKMK_ClientCapabilities).|Mit S/MIME können verschlüsselte Nachrichten nicht auf Schadsoftware, Spam oder Richtlinien überprüft werden.|
 |Empfehlungen und Beispielszenarien|Die Verwendung von OME wird empfohlen, wenn Sie vertrauliche Geschäftsinformationen an Personen außerhalb Ihrer Organisation senden möchten, unabhängig davon, ob es sich um Verbraucher oder andere Unternehmen handelt. Beispiel:  <br/>  Ein Bankangestellter sendet Kreditkartenabrechnungen an Kunden  <br/>  Eine Arztpraxis sendet eine Krankenakte an einen Patienten.  <br/>  Ein Anwalt sendet vertrauliche Rechtsinformationen an einen anderen Anwalt.|Die Verwendung von IRM wird empfohlen, wenn Sie Nutzungseinschränkungen und Verschlüsselung anwenden möchten. Beispiel:  <br/>  Ein Vorgesetzter, der vertrauliche Details über ein neues Produkt an sein Team sendet, wendet die Option "Nicht weiterleiten" an.  <br/>  Eine Führungskraft muss ein Angebot für ein anderes Unternehmen freigeben, das eine Anlage von einem Partner enthält, der Office 365 verwendet, und sowohl die E-Mail als auch die Anlage müssen geschützt werden.|Die Verwendung von S/MIME wird empfohlen, wenn Ihre Organisation oder die Organisation des Empfängers in eine echte Peer-zu-Peer-Verschlüsselung benötigt.  <br/>  S/MIME wird am häufigsten in den folgenden Szenarien verwendet:  <br/>  Kommunikation zwischen Behörden  <br/>  Kommunikation zwischen einem Unternehmen und einer Behörde|
 ||
 
 ## <a name="what-encryption-options-are-available-for-my-microsoft-365-subscription"></a>Welche Verschlüsselungsoptionen sind für mein Microsoft 365-Abonnement verfügbar?
 
-Informationen zu den E-Mail-Verschlüsselungsoptionen für Ihr Microsoft 365-Abonnement finden Sie unter [Exchange Online-Dienstbeschreibung](https://technet.microsoft.com/library/exchange-online-service-description.aspx). Hier finden Sie Informationen zu den folgenden Verschlüsselungsfeatures:
+Informationen zu den E-Mail-Verschlüsselungsoptionen für Ihr Microsoft 365-Abonnement finden Sie unter [Exchange Online-Dienstbeschreibung](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Hier finden Sie Informationen zu den folgenden Verschlüsselungsfeatures:
   
 - Azure RMS, einschließlich IRM-Funktionen und OME
 
@@ -84,7 +84,7 @@ Sie können auch Verschlüsselungstools von Drittanbietern mit Microsoft 365 ver
 
 ## <a name="what-about-encryption-for-data-at-rest"></a>Wissenswertes zur Verschlüsselung von Daten im Ruhezustand
 
-"Daten im Ruhezustand" bezieht sich auf Daten, für die derzeit keine Übertragung aktiv ist. In Microsoft 365 werden E-Mail-Daten im Ruhezustand mit der BitLocker-Laufwerkverschlüsselung verschlüsselt. BitLocker verschlüsselt die Festplatten in Microsoft-Datencentern, um verbesserten Schutz vor nicht autorisiertem Zugriff bereitzustellen. Weitere Informationen finden Sie unter [BitLocker-Übersicht](https://go.microsoft.com/fwlink/p/?LinkId=394737).
+"Daten im Ruhezustand" bezieht sich auf Daten, für die derzeit keine Übertragung aktiv ist. In Microsoft 365 werden E-Mail-Daten im Ruhezustand mit der BitLocker-Laufwerkverschlüsselung verschlüsselt. BitLocker verschlüsselt die Festplatten in Microsoft-Datencentern, um verbesserten Schutz vor nicht autorisiertem Zugriff bereitzustellen. Weitere Informationen finden Sie unter [BitLocker-Übersicht](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831713(v=ws.11)).
   
 ## <a name="more-information-about-email-encryption-options"></a>Weitere Informationen zu E-Mail-Verschlüsselungsoptionen
 
@@ -96,18 +96,18 @@ Weitere Informationen zu den E-Mail-Verschlüsselungsoptionen in diesem Artikel 
   
 **IRM**
   
-[Verwaltung von Informationsrechten in Exchange Online](https://technet.microsoft.com/library/jj983436%28v=exchg.150%29.aspx)
+[Verwaltung von Informationsrechten in Exchange Online](./information-rights-management-in-exchange-online.md)
   
-[Was ist Azure Rights Management?](https://technet.microsoft.com/library/jj585026)
+[Was ist Azure Rights Management?](/azure/information-protection/what-is-azure-rms)
   
 **S/MIME**
   
-[S/MIME für die Nachrichtensignierung und -verschlüsselung](https://technet.microsoft.com/library/dn626158)
+[S/MIME für die Nachrichtensignierung und -verschlüsselung](/Exchange/policy-and-compliance/smime/smime)
   
-[Grundlegendes zu S/MIME](https://technet.microsoft.com/library/aa995740%28v=exchg.65%29.aspx)
+[Grundlegendes zu S/MIME](/previous-versions/tn-archive/aa995740(v=exchg.65))
   
-[Grundlegendes zur Verschlüsselung mit öffentlichen Schlüsseln](https://technet.microsoft.com/library/aa998077%28v=exchg.65%29.aspx)
+[Grundlegendes zur Verschlüsselung mit öffentlichen Schlüsseln](/previous-versions/tn-archive/aa998077(v=exchg.65))
   
 **TLS**
   
-[Konfigurieren des benutzerdefinierten E-Mail-Flusses mithilfe von Connectors](https://technet.microsoft.com/library/jj723138%28v=exchg.150%29.aspx)
+[Konfigurieren des benutzerdefinierten E-Mail-Flusses mithilfe von Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)

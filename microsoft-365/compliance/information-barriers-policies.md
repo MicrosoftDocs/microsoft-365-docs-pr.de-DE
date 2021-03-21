@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 65fa24d0a69e43cbdb2deeed8362b83d6b097413
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: b245a0f7ca0845024fec0c498aca4c7d447f14ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838358"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928015"
 ---
 # <a name="define-information-barrier-policies"></a>Definieren von Richtlinien für Informationsbarrieren
 
@@ -60,7 +60,7 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
 - Verzeichnisdaten – Stellen Sie sicher, dass die Struktur Ihrer Organisation in Verzeichnisdaten widergespiegelt wird. Stellen Sie zum Ergreifen dieser Aktion sicher, dass Benutzerkontenattribute wie Gruppenmitgliedschaft, Abteilungsname usw. ordnungsgemäß in Azure Active Directory (oder Exchange Online) aufgefüllt werden. Weitere Informationen hierzu finden Sie in den folgenden Ressourcen:
   - [Attribute für Richtlinien für Informationsbarrieren](information-barriers-attributes.md)
   - [Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers mithilfe von Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
-  - [Konfigurieren von Eigenschaften eines Benutzerkontos mit Office 365 PowerShell](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
+  - [Konfigurieren von Eigenschaften eines Benutzerkontos mit Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
 - Bereichsverzeichnissuche : Bevor Sie die erste Richtlinie für Informationsbarrieren in Ihrer Organisation definieren, müssen Sie die Bereichsverzeichnissuche [in Microsoft Teams aktivieren.](/MicrosoftTeams/teams-scoped-directory-search) Warten Sie mindestens 24 Stunden, nachdem Sie die Bereichsverzeichnissuche aktiviert haben, bevor Sie Richtlinien für Informationsbarrieren einrichten oder definieren.
 
@@ -124,7 +124,7 @@ Erstellen Sie zusätzlich zu Ihrer anfänglichen Liste der Richtlinien eine List
 Bestimmen Sie, welche Attribute in den Verzeichnisdaten Ihrer Organisation zum Definieren von Segmenten verwendet werden. Sie können *Department*, *MemberOf* oder eines der unterstützten Attribute verwenden. Stellen Sie sicher, dass werte im Attribut enthalten sind, das Sie für Benutzer auswählen. [Informationen zu Informationsbarrieren finden Sie](information-barriers-attributes.md)in der Liste der unterstützten Attribute.
 
 > [!IMPORTANT]
-> **Bevor Sie mit dem nächsten Abschnitt fortfahren,** stellen Sie sicher, dass ihre Verzeichnisdaten Werte für Attribute aufweisen, die Sie zum Definieren von Segmenten verwenden können. Wenn Ihre Verzeichnisdaten keine Werte für die attribute aufweisen, die Sie verwenden möchten, müssen die Benutzerkonten aktualisiert werden, damit diese Informationen enthalten sind, bevor Sie mit Informationsbarrieren fortfahren. Hilfe dazu finden Sie in den folgenden Ressourcen:<br/>- [Konfigurieren von Benutzerkontoeigenschaften mit Office 365 PowerShell](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers mithilfe von Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **Bevor Sie mit dem nächsten Abschnitt fortfahren,** stellen Sie sicher, dass ihre Verzeichnisdaten Werte für Attribute aufweisen, die Sie zum Definieren von Segmenten verwenden können. Wenn Ihre Verzeichnisdaten keine Werte für die attribute aufweisen, die Sie verwenden möchten, müssen die Benutzerkonten aktualisiert werden, damit diese Informationen enthalten sind, bevor Sie mit Informationsbarrieren fortfahren. Hilfe dazu finden Sie in den folgenden Ressourcen:<br/>- [Konfigurieren von Benutzerkontoeigenschaften mit Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers mithilfe von Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>Definieren von Segmenten mithilfe von PowerShell
 

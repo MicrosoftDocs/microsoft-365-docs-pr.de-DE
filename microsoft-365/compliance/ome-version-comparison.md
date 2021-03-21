@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: In diesem Artikel werden die Unterschiede zwischen verschiedenen Versionen der Office 365-Nachrichtenverschlüsselung erläutert.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a587e27460d949811f9f30af0244cf325aaadac6
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: e75a709be6141c4bd1df4e63df677dd263c0777a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741336"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927733"
 ---
 # <a name="compare-versions-of-ome"></a>Vergleichen von OME-Versionen
 
@@ -41,7 +41,7 @@ Bevor Sie beginnen, überprüfen und bewerten Sie die Auswirkungen auf Ihre Orga
 
 ### <a name="prepare-for-ad-rms-deprecation"></a>Vorbereiten der AD RMS-Veraltetkeit
 
-Wenn Sie Azure Information Protection bereits eingerichtet haben, aber nicht verwenden, aktivieren Sie den Dienst mithilfe von Exchange Online PowerShell. Stellen Sie auf Ihrem lokalen Computer mithilfe eines Arbeits- oder Schulkontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, eine Verbindung mit [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) in einem Windows PowerShell herstellen.
+Wenn Sie Azure Information Protection bereits eingerichtet haben, aber nicht verwenden, aktivieren Sie den Dienst mithilfe von Exchange Online PowerShell. Stellen Sie auf Ihrem lokalen Computer mithilfe eines Arbeits- oder Schulkontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, eine Verbindung mit [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) in einem Windows PowerShell herstellen.
 
 Verwenden Sie zum Aktivieren von Azure Information Protection das cmdlet Set-IrmConfiguration, indem Sie den folgenden Befehl eingeben.
 
@@ -49,7 +49,7 @@ Verwenden Sie zum Aktivieren von Azure Information Protection das cmdlet Set-Irm
 Set-IrmConfiguration -AzureRMSLicensingEnabled $true
 ```
 
-Wenn Ihre Organisation Azure Information Protection noch nicht eingerichtet hat, müssen Sie von AD RMS zu Azure Information Protection migrieren. Anweisungen finden Sie unter [Migrieren von AD RMS zu Azure Information Protection](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms).
+Wenn Ihre Organisation Azure Information Protection noch nicht eingerichtet hat, müssen Sie von AD RMS zu Azure Information Protection migrieren. Anweisungen finden Sie unter [Migrieren von AD RMS zu Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms).
 
 ## <a name="side-by-side-comparison-of-features-and-capabilities"></a>Nebeneinanderer Vergleich von Features und Funktionen
 

@@ -12,31 +12,31 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
-description: Hier erhalten Sie Informationen zu den Ressourcen, die dem veralteten Desktop Bereitstellungs Center entsprechen.
-ms.openlocfilehash: 1b930bae76c510108556947977aa1393ae9bd86b
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+description: So erhalten Sie die Ressourcen, die dem veralteten Desktop Deployment Center entsprechen.
+ms.openlocfilehash: c4456d0f17e38920e77c855e31205e51025f111b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398831"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928168"
 ---
-# <a name="desktop-deployment-center-deprecated"></a>Desktop Bereitstellungs Center (veraltet)
+# <a name="desktop-deployment-center-deprecated"></a>Desktop Deployment Center (veraltet)
 
-Der Textkörper des Inhalts, der das Desktop Bereitstellungs Center umfasst, ist veraltet. 
+Der Inhaltskörper, der das Desktop Deployment Center umfasste, ist veraltet. 
 
-Verwenden Sie diese Ressourcen für die Bereitstellung moderner Desktops:
+Verwenden Sie diese Ressourcen, um moderne Desktops zu bereitstellen:
 
-- [Windows 10-Bereitstellung](https://docs.microsoft.com/windows/deployment/)
-- [Bereitstellen von Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
-- [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
+- [Windows 10-Bereitstellung](/windows/deployment/)
+- [Bereitstellen von Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
+- [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
 - [Identitäts- und Gerätezugriffsrichtlinien](../security/office-365-security/microsoft-365-policies-configurations.md)
 
-Sie können auch die [Videos der Desktop Bereitstellungs Reihe von Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)anzeigen.
+Sie können auch die Videos der [Desktopbereitstellungsserie von Microsoft Mechanics anzeigen.](https://www.aka.ms/watchhowtoshift)
 
-Sie können auch Hilfe zur Desktopbereitstellung von Microsoft [Partners und dem](https://www.microsoft.com/fasttrack/microsoft-365)Kurztext finden.
+Hilfe zu Ihrer Desktopbereitstellung finden Sie auch von Microsoft-Partnern und [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365).
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit für Windows und Office
 
-Dieses Kit unterstützt Sie beim Planen, testen und validieren Ihrer Bereitstellung und Verwaltung von Desktops mit Windows 10 Enterprise und Microsoft 365-Apps für Unternehmen. Die Übungseinheiten umfassen Microsoft Endpoint Configuration Manager, Desktop Analyse, Office-Anpassungs Tool, OneDrive, Windows Autopilot und vieles mehr.
+Mit diesem Kit können Sie Ihre Bereitstellung und Verwaltung von Desktops mit Windows 10 Enterprise und Microsoft 365 Apps for Enterprise planen, testen und überprüfen. Die Übungseinheiten umfassen Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot und vieles mehr.
 
-Ausführliche Informationen finden Sie unter [Windows und Office Deployment Lab Kit](modern-desktop-deployment-and-management-lab.md) .
+Weitere [Informationen finden Sie unter Windows and Office Deployment Lab Kit.](modern-desktop-deployment-and-management-lab.md)

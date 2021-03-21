@@ -15,16 +15,16 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen? Suchen Sie hier nach einer Antwort.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09d9293cfb1b574b4c179a0b486d436dab99edf2
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: fdfcc2e7454b1243016754ba32dcc2622b876672
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741346"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927753"
 ---
 # <a name="message-encryption-faq"></a>Häufig gestellte Fragen zur Nachrichtenverschlüsselung
 
-Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen? Suchen Sie hier nach einer Antwort. Schauen Sie sich auch häufig gestellte Fragen zum Datenschutz [in Azure Information Protection](https://docs.microsoft.com/information-protection/get-started/faqs-rms) an, um Antworten auf Fragen zum Datenschutzdienst Azure Rights Management in Azure Information Protection zu erhalten.
+Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen? Suchen Sie hier nach einer Antwort. Schauen Sie sich auch häufig gestellte Fragen zum Datenschutz [in Azure Information Protection](/information-protection/get-started/faqs-rms) an, um Antworten auf Fragen zum Datenschutzdienst Azure Rights Management in Azure Information Protection zu erhalten.
 
 ## <a name="what-is-office-365-message-encryption-ome"></a>Was ist Office 365 Message Encryption (OME)?
 
@@ -38,7 +38,7 @@ Sie können die neuen Funktionen für OME unter den folgenden Bedingungen verwen
 
 - Wenn Sie OME und IRM eingerichtet haben, können Sie diese Schritte ausführen, wenn Sie den Azure Rights Management-Dienst von Azure Information Protection verwenden.
 
-- Wenn Sie Exchange Online mit dem Active Directory Rights Management Service (AD RMS) verwenden, können Sie diese neuen Funktionen nicht sofort aktivieren. Stattdessen müssen Sie [AD RMS zuerst zu Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) migrieren. Wenn Sie die Migration abgeschlossen haben, können Sie OME erfolgreich einrichten.
+- Wenn Sie Exchange Online mit dem Active Directory Rights Management Service (AD RMS) verwenden, können Sie diese neuen Funktionen nicht sofort aktivieren. Stattdessen müssen Sie [AD RMS zuerst zu Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) migrieren. Wenn Sie die Migration abgeschlossen haben, können Sie OME erfolgreich einrichten.
 
   Wenn Sie weiterhin lokale AD RMS mit Exchange Online verwenden möchten, anstatt zu Azure Information Protection zu migrieren, können Sie diese neuen Funktionen nicht verwenden.
 
@@ -52,13 +52,13 @@ Für die Verwendung der neuen OME-Funktionen benötigen Sie einen der folgenden 
 
 - Jeder Benutzer, der von der Office 365-Nachrichtenverschlüsselung profitiert, muss lizenziert sein, um von dem Feature abgedeckt zu werden.
 
-- Die vollständige Liste finden Sie in den [Exchange Online-Dienstbeschreibungen](https://technet.microsoft.com/library/exchange-online-service-description.aspx) für die Office 365-Nachrichtenverschlüsselung.
+- Die vollständige Liste finden Sie in den [Exchange Online-Dienstbeschreibungen](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) für die Office 365-Nachrichtenverschlüsselung.
 
 ## <a name="can-i-use-exchange-online-with-bring-your-own-key-byok-in-azure-information-protection"></a>Kann ich Exchange Online mit ihrem eigenen Schlüssel (BYOK) in Azure Information Protection verwenden?
 
 Ja. Microsoft empfiehlt, dass Sie die Schritte zum Einrichten von BYOK ausführen, bevor Sie OME einrichten.
   
-Weitere Informationen zu BYOK finden Sie unter [Planning and implementing your Azure Information Protection tenant key](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key).
+Weitere Informationen zu BYOK finden Sie unter [Planning and implementing your Azure Information Protection tenant key](/information-protection/plan-design/plan-implement-tenant-key).
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Ändern OME und BYOK mit Azure Information Protection den Ansatz von Microsoft für Datenanforderungen von Drittanbietern wie Vorladungen?
 
@@ -88,11 +88,11 @@ Sie können weiterhin die vorherige Version von OME verwenden, sie ist zu diesem
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>Meine Organisation verwendet Active Directory Rights Management, kann ich diese Funktionalität verwenden?
 
-Nein. Wenn Sie Exchange Online mit dem Active Directory Rights Management Service (AD RMS) verwenden, können Sie diese neuen Funktionen nicht sofort aktivieren. Stattdessen müssen Sie [AD RMS zuerst zu Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) migrieren.
+Nein. Wenn Sie Exchange Online mit dem Active Directory Rights Management Service (AD RMS) verwenden, können Sie diese neuen Funktionen nicht sofort aktivieren. Stattdessen müssen Sie [AD RMS zuerst zu Azure Information Protection](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) migrieren.
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>Meine Organisation verfügt über eine Exchange-Hybridbereitstellung. Kann ich dieses Feature verwenden?
 
-Lokale Benutzer können verschlüsselte E-Mails mithilfe von Exchange Online-Nachrichtenflussregeln senden. Dazu müssen Sie E-Mails über Exchange Online routen. Weitere Informationen finden Sie unter Teil 2: Konfigurieren von E-Mails für den Fluss von Ihrem E-Mail-Server [zu Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).
+Lokale Benutzer können verschlüsselte E-Mails mithilfe von Exchange Online-Nachrichtenflussregeln senden. Dazu müssen Sie E-Mails über Exchange Online routen. Weitere Informationen finden Sie unter Teil 2: Konfigurieren von E-Mails für den Fluss von Ihrem E-Mail-Server [zu Microsoft 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>Welchen E-Mail-Client muss ich verwenden, um eine OME-verschlüsselte Nachricht zu erstellen? Welche Anwendungen werden für das Senden geschützter Nachrichten unterstützt?
 
@@ -108,11 +108,11 @@ Microsoft 365-Benutzer können Outlook für PC-Versionen 2019 und Microsoft 365 
 
 ## <a name="is-there-a-size-limit-for-messages-you-can-send-with-ome"></a>Gibt es eine Größenbeschränkung für Nachrichten, die Sie mit OME senden können?
 
-Ja. Die maximale Nachrichtengröße, die Sie mit OME senden können, einschließlich Anlagen, beträgt 25 MB. Weitere Informationen finden Sie unter [Nachrichtenbeschränkungen](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
+Ja. Die maximale Nachrichtengröße, die Sie mit OME senden können, einschließlich Anlagen, beträgt 25 MB. Weitere Informationen finden Sie unter [Nachrichtenbeschränkungen](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
 
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Welche Dateitypen werden als Anlagen in geschützten E-Mails unterstützt? Erben Anlagen die Schutzrichtlinien, die geschützten E-Mails zugeordnet sind?
 
-Sie können einen beliebigen Dateityp an eine geschützte E-Mail anfügen. Mit einer Ausnahme werden Schutzrichtlinien nur auf die Dateiformate angewendet, die unter Dateitypen erwähnt werden, die vom [Azure Information Protection-Client unterstützt werden.](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types) OME unterstützt die 97-2003-Versionen der folgenden Office-Programme nicht: Word (.doc), Excel (.xls) und PowerPoint (.ppt).
+Sie können einen beliebigen Dateityp an eine geschützte E-Mail anfügen. Mit einer Ausnahme werden Schutzrichtlinien nur auf die Dateiformate angewendet, die unter Dateitypen erwähnt werden, die vom [Azure Information Protection-Client unterstützt werden.](/information-protection/rms-client/client-admin-guide-file-types) OME unterstützt die 97-2003-Versionen der folgenden Office-Programme nicht: Word (.doc), Excel (.xls) und PowerPoint (.ppt).
 
 Wenn ein Dateiformat unterstützt wird, z. B. eine Word-, Excel- oder PowerPoint-Datei, ist die Datei immer geschützt, auch nachdem die Anlage vom Empfänger heruntergeladen wurde. Nehmen wir beispielsweise an, dass eine Anlage durch Do Not Forward geschützt ist. Der ursprüngliche Empfänger lädt die Datei herunter, erstellt eine Nachricht an einen neuen Empfänger und fügt die Datei an. Wenn der neue Empfänger die Datei empfängt, kann der Empfänger die geschützte Datei nicht öffnen.
   
@@ -124,7 +124,7 @@ Für Outlook im Web, Outlook für iOS und Outlook für Android können Sie PDF-D
 
 Der Outlook-Desktop unterstützt keine systemeigene Verschlüsselung von PDF-Dateianlagen. Stattdessen müssen Sie Exchange-Nachrichtenflussregeln oder DLP einrichten, um die Verschlüsselung zuerst auf PDF-Anlagen anzuwenden. Wenn Sie E-Mails von Outlook Desktop mit einer PDF-Anlage senden, sendet der Client die Nachricht mit der Anlage zuerst an den Dienst. Wenn der Dienst die Datei empfängt, wendet der Dienst den OME-Schutz der Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) oder der Nachrichtenflussregel in Exchange Online an. Als Nächstes sendet Exchange Online die Nachricht mit der geschützten PDF-Dateianlage.
 
-Führen Sie den folgenden Befehl in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)aus, um die Verschlüsselung für PDF-Anlagen zu aktivieren:
+Führen Sie den folgenden Befehl in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)aus, um die Verschlüsselung für PDF-Anlagen zu aktivieren:
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
@@ -210,7 +210,7 @@ Es gibt derzeit zwei bekannte Einschränkungen:
 
 **So weisen Sie einen Benutzer dem freigegebenen Postfach zu**
 
-1. [Herstellen einer Verbindung mit Exchange Online mithilfe von Remote PowerShell](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx).
+1. [Herstellen einer Verbindung mit Exchange Online mithilfe von Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150).aspx).
 
 2. Führen Sie Add-MailboxPermission cmdlet mit dem Parameter Automapping aus. In diesem Beispiel erhalten Ayla Vollzugriffsberechtigungen für ein Supportpostfach.
 

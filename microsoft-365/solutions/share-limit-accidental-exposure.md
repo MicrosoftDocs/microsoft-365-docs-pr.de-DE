@@ -16,12 +16,12 @@ ms.custom: ''
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Erfahren Sie, wie Sie die versehentliche Exposition von Informationen bei der Freigabe von Dateien für Personen außerhalb der Organisation begrenzen.
-ms.openlocfilehash: 430c00d46fa3801d0869b05a651fadd3bf5dea28
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: 952337790ce2f0418dd5ab637435f1523b27b562
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49029969"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928412"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Begrenzen der versehentlichen Exposition von Dateien bei deren Freigabe für Personen außerhalb der Organisation
 
@@ -33,15 +33,15 @@ Wenn Personen in Ihrer Organisation eine Freigabe ohne Authentifizierung vornehm
 
 ## <a name="turn-off-anyone-links"></a>Deaktivieren von "Jeder"-Links
 
-Wir empfehlen, die *Jeder* -Links für den entsprechenden Inhalt aktiviert zu lassen, da dies die einfachste Freigabemöglichkeit ist und das Risiko reduziert, dass Benutzer andere Lösungen außerhalb der Kontrolle Ihrer IT-Abteilung suchen. *Jeder* -Links können an andere weitergeleitet werden, aber Dateizugriff ist nur für diejenigen möglich, die den Link haben.
+Wir empfehlen, die *Jeder*-Links für den entsprechenden Inhalt aktiviert zu lassen, da dies die einfachste Freigabemöglichkeit ist und das Risiko reduziert, dass Benutzer andere Lösungen außerhalb der Kontrolle Ihrer IT-Abteilung suchen. *Jeder*-Links können an andere weitergeleitet werden, aber Dateizugriff ist nur für diejenigen möglich, die den Link haben.
 
-Wenn Personen von außerhalb der Organisation sich beim Zugreifen auf Inhalte in SharePoint, Gruppen oder Teams authentifizieren sollen, können Sie die *Jeder* -Freigabe deaktivieren. Das verhindert, dass Benutzer Inhalte ohne Authentifizierung freigeben.
+Wenn Personen von außerhalb der Organisation sich beim Zugreifen auf Inhalte in SharePoint, Gruppen oder Teams authentifizieren sollen, können Sie die *Jeder*-Freigabe deaktivieren. Das verhindert, dass Benutzer Inhalte ohne Authentifizierung freigeben.
 
-Wenn Sie die *Jeder* -Links deaktivieren, können Benutzer Elemente weiterhin mit *Bestimmte Personen* -Links für Gäste freigeben. In diesem Fall müssen sich alle Personen außerhalb der Organisation authentifizieren, bevor sie auf die freigegebenen Inhalte zugreifen können.
+Wenn Sie die *Jeder*-Links deaktivieren, können Benutzer Elemente weiterhin mit *Bestimmte Personen*-Links für Gäste freigeben. In diesem Fall müssen sich alle Personen außerhalb der Organisation authentifizieren, bevor sie auf die freigegebenen Inhalte zugreifen können.
 
-Je nach Ihren Anforderungen können Sie *Jeder* -Links für bestimmte Sites oder für Ihre gesamte Organisation deaktivieren.
+Je nach Ihren Anforderungen können Sie *Jeder*-Links für bestimmte Sites oder für Ihre gesamte Organisation deaktivieren.
 
-So deaktivieren Sie *Jeder* -Links für Ihre Organisation
+So deaktivieren Sie *Jeder*-Links für Ihre Organisation
 1. Klicken Sie im SharePoint Admin Center links in der Navigation auf **Freigabe**.
 2. Legen Sie für die SharePoint-Einstellungen für die externe Freigabe **Neue und vorhandene Gäste** fest.
 
@@ -49,7 +49,7 @@ So deaktivieren Sie *Jeder* -Links für Ihre Organisation
 
 3. Klicken Sie auf **Speichern**.
 
-So deaktivieren Sie *Jeder* -Links für eine Site
+So deaktivieren Sie *Jeder*-Links für eine Site
 1. Erweitern Sie im SharePoint Admin Center links in der Navigation **Sites** und klicken Sie auf **Aktive Sites**.
 2. Wählen Sie die Website aus, die Sie konfigurieren möchten.
 3. Klicken Sie im Menüband auf **Freigabe**. 
@@ -67,7 +67,7 @@ Mit einer Zulassungsliste können Sie eine Liste der Domänen festlegen, aus den
 
 Mit einer Verweigerungsliste können Sie eine Liste der Domänen festlegen, aus denen Benutzer in Ihrer Organisation keine Inhalte für Personen außerhalb der Organisation freigeben können. Die Freigabe der aufgeführten Domänen wird blockiert. Dies kann hilfreich sein, wenn Sie beispielsweise Konkurrenten haben, die Sie daran hindern möchten, auf Inhalte in Ihrer Organisation zuzugreifen.
 
-Die Zulassungs- und Verweigerungslisten wirken sich nur auf die Freigabe für Gäste aus. Benutzer können weiterhin für Personen aus verbotenen Domänen freigeben, indem sie *Jeder* -Links verwenden, wenn Sie diese nicht deaktiviert haben. Für optimale Ergebnisse in Bezug auf die Zulassungs- und Ablehnungslisten für Domänen, ziehen Sie die Deaktivierung von *Jeder* -Links wie oben beschrieben in Betracht.
+Die Zulassungs- und Verweigerungslisten wirken sich nur auf die Freigabe für Gäste aus. Benutzer können weiterhin für Personen aus verbotenen Domänen freigeben, indem sie *Jeder*-Links verwenden, wenn Sie diese nicht deaktiviert haben. Für optimale Ergebnisse in Bezug auf die Zulassungs- und Ablehnungslisten für Domänen, ziehen Sie die Deaktivierung von *Jeder*-Links wie oben beschrieben in Betracht.
 
 So richten Sie eine Zulassungs- oder Ablehnungsliste ein
 1. Klicken Sie im SharePoint Admin Center links in der Navigation auf **Freigabe**.
@@ -79,7 +79,7 @@ So richten Sie eine Zulassungs- oder Ablehnungsliste ein
 
 5. Klicken Sie auf **Speichern**.
 
-Wenn Sie die Freigabe mithilfe von Domänen auf einer höheren Ebene als SharePoint und OneDrive einschränken möchten, [lassen Sie Einladungen in Azure Active Directory für B2B-Benutzer aus bestimmten Organisationen zu oder blockieren Sie sie](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list). (Sie müssen die [SharePoint- und OneDrive-Integration mit Azure AD B2B Preview](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) konfigurieren, damit diese Einstellungen für SharePoint und OneDrive wirksam sind.)
+Wenn Sie die Freigabe mithilfe von Domänen auf einer höheren Ebene als SharePoint und OneDrive einschränken möchten, [lassen Sie Einladungen in Azure Active Directory für B2B-Benutzer aus bestimmten Organisationen zu oder blockieren Sie sie](/azure/active-directory/b2b/allow-deny-list). (Sie müssen die [SharePoint- und OneDrive-Integration mit Azure AD B2B Preview](/sharepoint/sharepoint-azureb2b-integration-preview) konfigurieren, damit diese Einstellungen für SharePoint und OneDrive wirksam sind.)
 
 ## <a name="limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups"></a>Einschränken der Freigabe von Dateien, Ordnern und Websites für Personen außerhalb Ihrer Organisation auf bestimmte Sicherheitsgruppen
 
@@ -91,7 +91,7 @@ So schränken Sie die externe Freigabe auf Mitglieder einer Sicherheitsgruppe ei
 
 3. Wählen Sie **Ausschließlich Benutzern in bestimmten Sicherheitsgruppen die externe Freigabe erlauben** und dann **Sicherheitsgruppen verwalten** aus.
 
-    ![Screenshot des Bereichs "Sicherheitsgruppen verwalten"](https://docs.microsoft.com/sharepoint/sharepointonline/media/manage-security-groups.png)
+    ![Screenshot des Bereichs "Sicherheitsgruppen verwalten"](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
 4. Geben Sie im Feld **Sicherheitsgruppe hinzufügen** einen Namen für eine Sicherheitsgruppe ein. Das Feld "Sicherheitsgruppe" wird angezeigt.
 

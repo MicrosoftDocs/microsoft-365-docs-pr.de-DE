@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) so konfigurieren können, dass Microsoft 365-EPDLP-Speicherorte (Endpoint Data Loss Prevention) verwendet werden.
-ms.openlocfilehash: 1bb4013069b8f4890ba420f13a0203eb63973121
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 91e8a25c2a15e82cd7f286d1110b1c87bedf31d5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820187"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926433"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Nutzen der Verhinderung von Datenverlust am Endpunkt
 
@@ -219,10 +219,10 @@ Bei diesen Szenarien ist es erforderlich, dass Sie bereits über Geräte verfüg
 - [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)
 - [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
 - [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md)
-- [Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+- [Microsoft Defender für Endpunkt](/windows/security/threat-protection/)
+- [Onboarding-Tools und -Methoden für Windows 10-Computer](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Azure Active Directory (AAD) Einbindung](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [Azure Active Directory (AAD) Einbindung](/azure/active-directory/devices/concept-azure-ad-join)
 - [Herunterladen des auf Chromium basierenden neuen Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
 - [Erste Schritte mit der standardmäßigen DLP-Richtlinie](get-started-with-the-default-dlp-policy.md)
 - [Erstellen einer DLP-Richtlinie aus einer Vorlage](create-a-dlp-policy-from-a-template.md)

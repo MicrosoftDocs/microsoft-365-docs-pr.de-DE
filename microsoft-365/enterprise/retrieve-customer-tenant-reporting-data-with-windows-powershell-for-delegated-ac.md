@@ -1,5 +1,5 @@
 ---
-title: Abrufen von Kundenmandanten Berichtsdaten mit Windows PowerShell für DAP-Partner
+title: Abrufen von Kunden-Mandantenberichtsdaten mit Windows PowerShell für DAP-Partner
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,27 +15,27 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: 'Zusammenfassung: Verwenden Sie Windows PowerShell für Microsoft Exchange Online remote, um Berichte von einzelnen Kundenmandanten abzurufen.'
-ms.openlocfilehash: 24d56fffa60232c4ea39f4fe7769131cab23be2f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8ea5f9834bfcc0d517fc1e0938c3547d88d1d8a8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690349"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927216"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Abrufen von Kundenberichtsdaten über Windows PowerShell für Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permission, DAP)
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Verwenden Sie Remote Windows PowerShell für Microsoft Exchange Online, um Berichte von einzelnen Kundenmandanten abzurufen.
+Verwenden Sie remote Windows PowerShell für Microsoft Exchange Online, um Berichte von einzelnen Kunden mandanten abzurufen.
   
-Partner für Syndication und Cloud Solution Provider (CSP) können auf die Daten zugreifen, aus denen Kundenmandanten Berichte direkt über Remote Windows PowerShell für Exchange Online PowerShell erstellt werden. Auf diese Weise können Partner die Berichtsdaten sammeln und speichern und anschließend andere Vorgänge damit durchführen. Nachdem Sie eine Remoteverbindung hergestellt haben, entspricht das Abrufen von Berichtsdaten zu einem Kundenmandanten dem Ausführen eines Cmdlets für einen Kundenmandanten.
+Partner von Syndication und Cloud Solution Provider (CSP) können direkt über remote Windows PowerShell Exchange Online PowerShell auf die Daten zugreifen, aus denen Kunden-Mandantenberichte besteht. Auf diese Weise können Partner die Berichtsdaten sammeln und speichern und anschließend andere Vorgänge damit durchführen. Nachdem Sie eine Remoteverbindung hergestellt haben, entspricht das Abrufen von Berichtsdaten zu einem Kundenmandanten dem Ausführen eines Cmdlets für einen Kundenmandanten.
   
-In diesem Artikel verwenden Sie die Remote Windows PowerShell für Exchange Online, um eine Verbindung mit einer einzelnen Kunden Mandantschaft herzustellen und einen Bericht abzurufen. In der Standardeinstellung unterstützt Windows PowerShell das Aggregieren von Daten aus mehreren Kundenmandanten nicht. Die mit diesem Verfahren abgerufenen Berichte sind nur für die  _DelegatedOrg_ bestimmt, mit er Sie eine Verbindung herstellen.
+In diesem Artikel verwenden Sie remote Windows PowerShell Exchange Online, um eine Verbindung mit einem einzelnen Kundenwarte zu herstellen und einen Bericht abzurufen. In der Standardeinstellung unterstützt Windows PowerShell das Aggregieren von Daten aus mehreren Kundenmandanten nicht. Die mit diesem Verfahren abgerufenen Berichte sind nur für die  _DelegatedOrg_ bestimmt, mit er Sie eine Verbindung herstellen.
   
  
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Sie müssen eine Verbindung zu Ihrem Exchange Online-Mandanten mithilfe von Windows PowerShell remote erstellen. Anweisungen hierzu finden Sie unter [Verbinden mit Exchange Online-Mandanten über eine Remotesitzung von Windows PowerShell für Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permissions, DAP)](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md).
+- Sie müssen eine Verbindung zu Ihrem Exchange Online-Mandanten mithilfe von Windows PowerShell remote erstellen. Anweisungen hierzu finden Sie unter [Verbinden mit Exchange Online-Mandanten über eine Remotesitzung von Windows PowerShell für Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permissions, DAP)](/powershell/exchange/connect-to-exchange-online-powershell).
     
 ## <a name="run-the-get-stalemailboxreport-sample"></a>Ausführen des Get-StaleMailboxReport-Beispiels
 
@@ -51,9 +51,8 @@ Es stehen zahlreiche andere Berichterstellungs-Cmdlets für Exchange Online, Lyn
 
 #### 
 
-[Office 365-Berichterstattungswebdienst](https://go.microsoft.com/fwlink/p/?LinkId=532777)
+[Office 365-Berichterstattungswebdienst](/previous-versions/office/developer/o365-enterprise-developers/jj984325(v=office.15))
   
-[Cmdlets für die Berichterstellung in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=526430)
+[Cmdlets für die Berichterstellung in Exchange Online](/powershell/module/exchange/get-csclientdevicedetailreport)
   
 [Hilfe für Partner](https://go.microsoft.com/fwlink/p/?LinkID=533477)
-

@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 description: Konfigurieren Sie Vertraulichkeitsbezeichnungen für die Verschlüsselung, die Ihre Daten durch Einschränken von Zugriff und Nutzung schützt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 602b4b3abd2b07386ad130e4b2cd21bb593eee7e
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 6f906e2a3ddd8a0847174a61e9f2b28238e5dc19
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261572"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928073"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie den Zugriff auf Inhalte beschränken, auf die die Bezeichnung angewendet wird. Mit den Verschlüsselungseinstellungen für eine Vertraulichkeitsbezeichnung können Sie beispielsweise Inhalte so schützen, dass:
 
@@ -49,9 +49,9 @@ Die Verschlüsselungseinstellungen stehen zur Verfügung, wenn Sie im Microsoft 
 
 ## <a name="understand-how-the-encryption-works"></a>Grundlegendes zur Funktionsweise der Verschlüsselung
 
-Die Verschlüsselung verwendet den Azure Rights Management-Dienst (Azure RMS) aus Azure Information Protection. Diese Schutzlösung verwendet Verschlüsselungs-, Identitäts- und Autorisierungsrichtlinien. Weitere Informationen hierzu finden Sie unter [Was ist Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) in der Dokumentation zum Azure Information Protection. 
+Die Verschlüsselung verwendet den Azure Rights Management-Dienst (Azure RMS) aus Azure Information Protection. Diese Schutzlösung verwendet Verschlüsselungs-, Identitäts- und Autorisierungsrichtlinien. Weitere Informationen hierzu finden Sie unter [Was ist Azure Rights Management?](/azure/information-protection/what-is-azure-rms) in der Dokumentation zum Azure Information Protection. 
 
-Wenn Sie diese Verschlüsselungslösung verwenden, wird mit der Funktion **Administrator** sichergestellt, dass autorisierte Personen und Dienste die Daten, die für Ihre Organisation verschlüsselt wurden, immer lesen und überprüfen können. Bei Bedarf kann die Verschlüsselung darauf entfernt oder geändert werden. Weitere Informationen hierzu finden Sie unter [Konfigurieren von Administratoren für Azure Dienste zur Informationssicherung und -Recherche oder Datenwiederherstellung](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+Wenn Sie diese Verschlüsselungslösung verwenden, wird mit der Funktion **Administrator** sichergestellt, dass autorisierte Personen und Dienste die Daten, die für Ihre Organisation verschlüsselt wurden, immer lesen und überprüfen können. Bei Bedarf kann die Verschlüsselung darauf entfernt oder geändert werden. Weitere Informationen hierzu finden Sie unter [Konfigurieren von Administratoren für Azure Dienste zur Informationssicherung und -Recherche oder Datenwiederherstellung](/azure/information-protection/configure-super-users).
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>Konfigurieren einer Bezeichnung für die Verschlüsselung
 
@@ -93,8 +93,8 @@ In der folgenden Tabelle wird dargestellt, was mit einer vorhandenen Verschlüss
 
 Beachten Sie, dass in den Fällen, in denen die neue Verschlüsselung mit Bezeichnungen angewendet oder die ursprüngliche Verschlüsselung entfernt wird, dies geschieht nur, wenn der Benutzer, der die Bezeichnung angewendet hat, über ein Nutzungsrecht oder eine Rolle verfügt, die diese Aktion unterstützt:
 
-- Die [Verwendungsberechtigung](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Export oder Vollzugriff.
-- Die Rolle von [Rechteverwaltung-Aussteller oder -Besitzer](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)oder [Administrator](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+- Die [Verwendungsberechtigung](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Export oder Vollzugriff.
+- Die Rolle von [Rechteverwaltung-Aussteller oder -Besitzer](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)oder [Administrator](/azure/information-protection/configure-super-users).
 
 Wenn der Benutzer nicht über eines dieser Rechte oder Rollen verfügt, kann die Bezeichnung nicht angewendet werden und die ursprüngliche Verschlüsselung bleibt erhalten. Dem Benutzer wird die folgende Meldung angezeigt: **Sie verfügen nicht über die erforderlichen Berechtigungen zum Ändern der Vertraulichkeitsbezeichnung. Wenden Sie sich an den Inhaltsbesitzer.**
 
@@ -141,7 +141,7 @@ Wenn kein Ablaufdatum festgelegt wurde, beträgt die Standardeinstellung für di
 
 Zusätzlich zur erneuten Authentifizierung werden die Verschlüsselungseinstellungen und die Benutzergruppenmitgliedschaft neu ausgewertet. Dies bedeutet, dass bei Benutzern unterschiedliche Zugriffsergebnisse für dasselbe Dokument oder dieselbe E-Mail auftreten könnten, wenn es seit dem letzten Zugriff auf den Inhalt Änderungen in den Verschlüsselungseinstellungen oder der Gruppenmitgliedschaft gab.
 
-Informationen zum Ändern der Standardeinstellung von 30 Tagen finden Sie unter [Rights Management-Verwendungslizenz](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-use-license).
+Informationen zum Ändern der Standardeinstellung von 30 Tagen finden Sie unter [Rights Management-Verwendungslizenz](/azure/information-protection/configure-usage-rights#rights-management-use-license).
 
 ### <a name="assign-permissions-to-specific-users-or-groups"></a>Zuweisen von Berechtigungen für bestimmte Benutzer oder Gruppen
 
@@ -163,7 +163,7 @@ Wenn Sie Berechtigungen zuweisen, können Sie folgende Optionen auswählen:
 
 - Alle authentifizierten Benutzer. Stellen Sie sicher, dass Sie die [Voraussetzungen und Einschränkungen](#requirements-and-limitations-for-add-any-authenticated-users) dieser Einstellung verstehen, bevor Sie sie auswählen.
 
-- Jede spezifische Benutzer- oder E-Mail-fähige Sicherheits-, Verteiler- oder Microsoft 365-Gruppe ([ehemals Office 365-Gruppe](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) in Azure AD. Die Microsoft 365-Gruppe kann die statische oder [dynamische Mitgliedschaft](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) haben. Sie können keine [dynamische Verteilergruppe aus Exchange](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) verwenden, da dieser Gruppentyp nicht mit Azure AD synchronisiert wird und Sie keine Sicherheitsgruppe verwenden können, die nicht E-Mail-aktiviert ist.
+- Jede spezifische Benutzer- oder E-Mail-fähige Sicherheits-, Verteiler- oder Microsoft 365-Gruppe ([ehemals Office 365-Gruppe](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) in Azure AD. Die Microsoft 365-Gruppe kann die statische oder [dynamische Mitgliedschaft](/azure/active-directory/users-groups-roles/groups-create-rule) haben. Sie können keine [dynamische Verteilergruppe aus Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) verwenden, da dieser Gruppentyp nicht mit Azure AD synchronisiert wird und Sie keine Sicherheitsgruppe verwenden können, die nicht E-Mail-aktiviert ist.
 
 - Beliebige E-Mail-Adresse oder Domäne. Verwenden Sie diese Option, um alle Benutzer in einer anderen Organisation, die Azure AD verwendet, anzugeben, indem Sie einen beliebigen Domänennamen aus dieser Organisation eingeben. Sie können diese Option auch für Anbieter sozialer Dienste verwenden, indem Sie deren Domänennamen eingeben, z. B. **gmail.com****hotmail.com** oder **Outlook.com**.
 
@@ -179,7 +179,7 @@ Als bewährte Methode sollten Sie besser Gruppen anstelle von Benutzern verwende
 Diese Einstellung schränkt den Zugriff der Benutzer auf den Inhalt nicht ein, der von der Bezeichnung verschlüsselt wird, während sie den Inhalt weiterhin verschlüsselt und Ihnen Optionen zum Einschränken des Inhalts (Berechtigungen) und zum Zugriff auf (Ablauf und Offlinezugriff) bietet. Die Anwendung, die die verschlüsselten Inhalte öffnet, muss die verwendete Authentifizierung unterstützen können. Aus diesem Grund funktionieren Partner-Sozialnetwerkanbieter wie Google und die Authentifizierung mit einer Einmalkennung nur für E-Mail und nur dann, wenn Sie Exchange Online verwenden. Microsoft-Konten können mit Office 365-Apps und dem [Azure Information Protection-Viewer](https://portal.azurerms.com/#/download)verwendet werden.
 
 > [!NOTE]
-> Erwägen Sie die Verwendung dieser Einstellung mit [SharePoint- und OneDrive-Integration in Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) wenn Vertraulichkeitsbezeichnungen [für Office-Dateien in SharePoint und OneDrive aktiviert](sensitivity-labels-sharepoint-onedrive-files.md) sind.
+> Erwägen Sie die Verwendung dieser Einstellung mit [SharePoint- und OneDrive-Integration in Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) wenn Vertraulichkeitsbezeichnungen [für Office-Dateien in SharePoint und OneDrive aktiviert](sensitivity-labels-sharepoint-onedrive-files.md) sind.
 
 Einige typische Szenarien für die Einstellung "Alle authentifizierten Benutzer":
 
@@ -191,10 +191,10 @@ Einige typische Szenarien für die Einstellung "Alle authentifizierten Benutzer"
 
 Wenn Sie die Berechtigungen für diese Benutzer oder Gruppen auswählen, können Sie folgende Optionen auswählen:
 
-- Eine [vordefinierte Berechtigungsstufe](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels) mit einer bereits festgelegten Gruppen von Rechten, z. B. Mitverfasser oder Überprüfer.
+- Eine [vordefinierte Berechtigungsstufe](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels) mit einer bereits festgelegten Gruppen von Rechten, z. B. Mitverfasser oder Überprüfer.
 - Benutzerdefinierte Berechtigungen, wobei Sie ein oder mehrere Nutzungsrechte auswählen.
 
-Weitere Informationen, die Ihnen bei der Auswahl der entsprechenden Berechtigungen helfen, finden Sie unter [Nutzungsrechte und Beschreibungen](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
+Weitere Informationen, die Ihnen bei der Auswahl der entsprechenden Berechtigungen helfen, finden Sie unter [Nutzungsrechte und Beschreibungen](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
 ![Optionen zum Auswählen bereits festgelegter oder benutzerdefinierter Berechtigungen](../media/Sensitivity-Choose-permissions-settings.png)
 
@@ -214,7 +214,7 @@ Der Rights Management-Aussteller erhält immer Vollzugriff für das Dokument ode
 - Der Rights Management-Aussteller kann immer offline auf das Dokument oder die E-Mail zugreifen.
 - Der Rights Management-Aussteller kann ein Dokument weiterhin öffnen, nachdem es gesperrt wurde.
 
-Weitere Informationen finden Sie unter [Rights Management-Aussteller und Rights Management-Besitzer](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
+Weitere Informationen finden Sie unter [Rights Management-Aussteller und Rights Management-Besitzer](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
 
 ### <a name="double-key-encryption"></a>Verschlüsselung mit Doppelschlüssel
 
@@ -229,7 +229,7 @@ Weitere Informationen, Voraussetzungen und Konfigurationsanweisungen finden Sie 
 
 Sie können mithilfe dieser Optionen Benutzern erlauben, Berechtigungen zuzuweisen, wenn sie eine Vertraulichkeitsbezeichnung manuell auf Inhalte anwenden:
 
-- In Outlook kann ein Benutzer Einschränkungen wählen, die der Option [Nicht weiterleiten](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) für Ihre gewählten Empfänger entsprechen.
+- In Outlook kann ein Benutzer Einschränkungen wählen, die der Option [Nicht weiterleiten](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) für Ihre gewählten Empfänger entsprechen.
 
 - In Word, PowerPoint und Excel wird ein Benutzer aufgefordert, ihre eigenen Berechtigungen für bestimmte Benutzer, Gruppen oder Organisationen auszuwählen.
 
@@ -406,7 +406,7 @@ Bevor Sie Verschlüsselung verwenden können, müssen Sie möglicherweise einige
 
 - Schutz vor Azure Information Protection aktivieren
     
-    Damit Vertraulichkeitsbezeichnungen angewendet werden können, muss der Protection Service (Azure Rights Management) aus Azure Information Protection für Ihren Mandanten aktiviert werden. In neueren Mandanten ist dies die Standardeinstellung, möglicherweise müssen Sie den Dienst jedoch manuell aktivieren. Weitere Informationen finden Sie unter [Aktivieren des Schutzdienstes von Azure Information Protection](https://docs.microsoft.com/azure/information-protection/activate-service).
+    Damit Vertraulichkeitsbezeichnungen angewendet werden können, muss der Protection Service (Azure Rights Management) aus Azure Information Protection für Ihren Mandanten aktiviert werden. In neueren Mandanten ist dies die Standardeinstellung, möglicherweise müssen Sie den Dienst jedoch manuell aktivieren. Weitere Informationen finden Sie unter [Aktivieren des Schutzdienstes von Azure Information Protection](/azure/information-protection/activate-service).
 
 - Konfigurieren von Exchange für Azure Information Protection
     
@@ -416,8 +416,8 @@ Bevor Sie Verschlüsselung verwenden können, müssen Sie möglicherweise einige
     
     Um sicherzustellen, dass Exchange diese zusätzlichen Szenarien unterstützt, lesen Sie die folgenden Informationen:
     
-    - Für Exchange Online lesen Sie die Anweisungen für [Exchange Online: Konfigurieren von IRM](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
-    - For das lokale Exchange müssen Sie den [RMS-Connector bereitstellen und Ihre Exchange-Server konfigurieren](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 
+    - Für Exchange Online lesen Sie die Anweisungen für [Exchange Online: Konfigurieren von IRM](/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
+    - For das lokale Exchange müssen Sie den [RMS-Connector bereitstellen und Ihre Exchange-Server konfigurieren](/azure/information-protection/deploy-rms-connector). 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
