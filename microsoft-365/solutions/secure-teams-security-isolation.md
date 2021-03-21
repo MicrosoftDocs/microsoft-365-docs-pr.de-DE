@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie ein Team mit einer eindeutigen Vertraulichkeitsbezeichnung für Sicherheit erstellen.
-ms.openlocfilehash: 5ddd42f9e2f2779ca6bf864554140a3f18d2cdea
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 2ecd8e0458f6ebef9ebd1b0c3724195cc70f6378
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405702"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920928"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurieren eines Teams mit Sicherheitsisolierung
 
@@ -40,7 +40,7 @@ Die Elemente der Konfiguration für ein Team mit Sicherheitsisolierung sind:
     - Dokumente verschlüsselt, auf die das Etikett angewendet wird
 
 > [!IMPORTANT]
-> Stellen Sie sicher, dass Sie die [Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Office 365-Gruppen und SharePoint-Websites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) aktiviert haben, bevor Sie mit den Schritten in diesem Artikel fortfahren.
+> Stellen Sie sicher, dass Sie die [Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Office 365-Gruppen und SharePoint-Websites](../compliance/sensitivity-labels-teams-groups-sites.md) aktiviert haben, bevor Sie mit den Schritten in diesem Artikel fortfahren.
 
 Schauen Sie sich dieses Video an, um einen Überblick über den Bereitstellungsprozess zu erhalten.
 <br>
@@ -70,8 +70,8 @@ Je nach Art des Unternehmens ist möglicherweise die Gastfreigabe für dieses Te
 
 Details zur sicheren Freigabe für Gäste finden Sie in den folgenden Ressourcen:
 
-- [Begrenzen der versehentlichen Gefährdung von Dateien bei der Freigabe für Personen außerhalb Ihrer Organisation](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [Erstellen einer sicheren Gastfreigabeumgebung](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [Begrenzen der versehentlichen Gefährdung von Dateien bei der Freigabe für Personen außerhalb Ihrer Organisation](./share-limit-accidental-exposure.md)
+- [Erstellen einer sicheren Gastfreigabeumgebung](./create-secure-guest-sharing-environment.md)
 
 Für das Zulassen oder Blockieren des Gastfreigabe verwenden wir eine Kombination aus einer Vertraulichkeitsbezeichnung für das Team und Steuerelementen für die Freigabe auf Team- und Websiteebene für die zugeordnete SharePoint-Website, die beide später behandelt werden.
 
@@ -98,7 +98,7 @@ So schränken Sie die Erstellung privater Kanäle ein
 2. Erweitern Sie auf der Registerkarte **Einstellungen** den Eintrag **Mitgliedsberechtigungen**.
 3. Deaktivieren Sie das Kontrollkästchen **Mitglieder können private Kanäle erstellen**.
 
-Sie können auch [Teams-Richtlinien](https://docs.microsoft.com/MicrosoftTeams/teams-policies) verwenden, um zu steuern, wer private Kanäle erstellen kann.
+Sie können auch [Teams-Richtlinien](/MicrosoftTeams/teams-policies) verwenden, um zu steuern, wer private Kanäle erstellen kann.
 
 ## <a name="create-a-sensitivity-label"></a>Erstellen einer Vertraulichkeitsbezeichnung
 
@@ -194,7 +194,7 @@ So aktualisieren Sie Websiteeinstellungen
 
 #### <a name="private-channels"></a>Private Kanäle
 
-Wenn Sie dem Team private Kanäle hinzufügen, erstellt jeder private Kanal eine neue SharePoint-Website mit den Standardeinstellungen für die Freigabe. Diese Websites werden im SharePoint Online Admin Center nicht angezeigt, daher müssen Sie das Cmdlet [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) PowerShell mit den folgenden Parametern verwenden, um die Gast-Freigabeeinstellungen zu aktualisieren:
+Wenn Sie dem Team private Kanäle hinzufügen, erstellt jeder private Kanal eine neue SharePoint-Website mit den Standardeinstellungen für die Freigabe. Diese Websites werden im SharePoint Online Admin Center nicht angezeigt, daher müssen Sie das Cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) PowerShell mit den folgenden Parametern verwenden, um die Gast-Freigabeeinstellungen zu aktualisieren:
 
 - `-SharingCapability Disabled` um die Gastfreigabe zu deaktivieren (standardmäßig aktiviert)
 - `-DefaultSharingLinkType Internal` um den standardmäßigen Freigabelink zu *Bestimmte Personen* zu ändern
@@ -229,10 +229,10 @@ So fügen Sie Benutzern zur Website hinzu
 
 Microsoft 365 bietet zusätzliche Methoden zum Schützen Ihrer Inhalte. Prüfen Sie, ob die folgenden Optionen zur Verbesserung der Sicherheit in Ihrer Organisation beitragen würden.
 
-- Lassen Sie Ihre Gastbenutzer den [Nutzungsbedingungen](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use) zustimmen.
-- Konfigurieren Sie eine [Richtlinie für Sitzungstimeout](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) für Gastbenutzer.
-- Erstellen Sie [Typen vertraulicher Informationen](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) und verwenden Sie [Schutz vor Datenverlust](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) zum Festlegen von Richtlinien für den Zugriff auf vertrauliche Informationen.
-- Verwenden Sie [Azure Active Directory Zugriffsüberprüfungen](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview), um den Zugriff und die Mitgliedschaft des Teams regelmäßig zu überprüfen.
+- Lassen Sie Ihre Gastbenutzer den [Nutzungsbedingungen](/azure/active-directory/conditional-access/terms-of-use) zustimmen.
+- Konfigurieren Sie eine [Richtlinie für Sitzungstimeout](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) für Gastbenutzer.
+- Erstellen Sie [Typen vertraulicher Informationen](../compliance/sensitive-information-type-learn-about.md) und verwenden Sie [Schutz vor Datenverlust](../compliance/data-loss-prevention-policies.md) zum Festlegen von Richtlinien für den Zugriff auf vertrauliche Informationen.
+- Verwenden Sie [Azure Active Directory Zugriffsüberprüfungen](/azure/active-directory/governance/access-reviews-overview), um den Zugriff und die Mitgliedschaft des Teams regelmäßig zu überprüfen.
 
 ## <a name="drive-user-adoption-for-team-members"></a>Fördern der Benutzerakzeptanz für Teammitglieder
 
@@ -266,4 +266,4 @@ Ihre Benutzer bei Bedarf erneut schulen.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)
+[Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)

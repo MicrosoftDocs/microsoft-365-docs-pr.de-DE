@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: AD FS-Migrationsschritte (Active Directory Federation Services, Active Directory-Verbunddienste) für die Migration von Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 852fc8f93158d7b6080f1add5a05e7367539f889
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
-ms.translationtype: HT
+ms.openlocfilehash: 146f476a43e46925d87763a800467bf52adc73e5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838413"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918906"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>AD FS-Migrationsschritte für die Migration von Microsoft Cloud Deutschland
 
@@ -89,7 +89,8 @@ Sie können mit [AD FS-Hilfe](https://adfshelp.microsoft.com/AadTrustClaims/Cla
 
 ## <a name="ad-fs-disaster-recovery-wid-database"></a>AD FS-Notfallwiederherstellung (WID-Datenbank)
 
-Wenn Sie die AD FS-Farm in einem Notfall wiederherstellen möchten, muss dazu das [AD FS Rapid Restore-Tool](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) genutzt werden. Deshalb muss das Tool heruntergeladen und vor Beginn der Migration eine Sicherung erstellt und sicher gespeichert werden. In diesem Beispiel wurden die folgenden Befehle ausgeführt, um eine Farm zu sichern, die auf einer WID-Datenbank läuft:
+
+Wenn Sie die AD FS-Farm in einem Notfall wiederherstellen möchten, muss dazu das [AD FS Rapid Restore-Tool](/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) genutzt werden. Deshalb muss das Tool heruntergeladen und vor Beginn der Migration eine Sicherung erstellt und sicher gespeichert werden. In diesem Beispiel wurden die folgenden Befehle ausgeführt, um eine Farm zu sichern, die auf einer WID-Datenbank läuft:
 
 <h2 id="backup"></h2>
 
@@ -144,6 +145,6 @@ Der Weg durch die Umstellung:
 
 Cloud-Apps:
 
-- [Informationen zum Dynamics 365-Migrationsprogramm](https://aka.ms/d365ceoptin)
-- [Informationen zum Power BI-Migrationsprogramm](https://aka.ms/pbioptin)
-- [Erste Schritte mit dem Upgrade von Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Informationen zum Dynamics 365-Migrationsprogramm](/dynamics365/get-started/migrate-data-german-region)
+- [Informationen zum Power BI-Migrationsprogramm](/power-bi/admin/service-admin-migrate-data-germany)
+- [Erste Schritte mit dem Upgrade von Microsoft Teams](/microsoftteams/upgrade-start-here)

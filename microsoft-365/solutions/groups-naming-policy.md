@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 gruppenbenennungsrichtlinie
+title: Benennungsrichtlinie für Microsoft 365-Gruppen
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -16,42 +16,42 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
-description: Hier erfahren Sie, wie Sie eine Benennungsrichtlinie für Microsoft 365-Gruppen erstellen.
-ms.openlocfilehash: acf660375508760bd2e9874a07454709849929b0
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+description: Erfahren Sie, wie Sie eine Benennungsrichtlinie für Microsoft 365-Gruppen erstellen.
+ms.openlocfilehash: 7fd2ea36b536924d85c7ca09b55593161a24dbe4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759824"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921048"
 ---
-# <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 gruppenbenennungsrichtlinie
+# <a name="microsoft-365-groups-naming-policy"></a>Benennungsrichtlinie für Microsoft 365-Gruppen
 
-Sie können eine gruppenbenennungsrichtlinie verwenden, um eine konsistente Benennungsstrategie für Gruppen zu erzwingen, die von Benutzern in Ihrer Organisation erstellt wurden. Eine Benennungsrichtlinie kann Ihnen und Ihren Benutzern bei der Identifizierung der Funktion der Gruppe, der Mitgliedschaft, der geografischen Region oder der Person helfen, die die Gruppe erstellt hat. Die Benennungsrichtlinie kann auch hilfreich beim Kategorisieren von Gruppen im Adressbuch sein. Mithilfe der Richtlinie können Sie bestimmte Wörter in Gruppennamen und -aliasen blockieren.
+Sie können eine Gruppenbenennungsrichtlinie verwenden, um eine konsistente Benennungsstrategie für Gruppen zu erzwingen, die von Benutzern in Ihrer Organisation erstellt wurden. Eine Benennungsrichtlinie kann Ihnen und Ihren Benutzern bei der Identifizierung der Funktion der Gruppe, der Mitgliedschaft, der geografischen Region oder der Person helfen, die die Gruppe erstellt hat. Die Benennungsrichtlinie kann auch hilfreich beim Kategorisieren von Gruppen im Adressbuch sein. Mithilfe der Richtlinie können Sie bestimmte Wörter in Gruppennamen und -aliasen blockieren.
 
-Die Benennungsrichtlinie wird auf Gruppen angewendet, die für alle Gruppen Arbeitsauslastungen erstellt werden (wie Outlook, Microsoft Teams, SharePoint, Planer, jammern usw.). Sie wird sowohl auf den Gruppennamen als auch auf den Gruppenalias angewendet. Sie wird auch angewendet, wenn ein Benutzer eine Gruppe erstellt und wenn der Gruppenname, der Alias, die Beschreibung oder der Avatar für eine vorhandene Gruppe bearbeitet wird.
+Die Benennungsrichtlinie wird auf Gruppen angewendet, die für alle Gruppenworkloads erstellt werden (z. B. Outlook, Microsoft Teams, SharePoint, Planner, Yammer usw.). Sie wird sowohl auf den Gruppennamen als auch auf den Gruppenalias angewendet. Sie wird auch angewendet, wenn ein Benutzer eine Gruppe erstellt und wenn der Gruppenname, alias, eine Beschreibung oder ein Avatar für eine vorhandene Gruppe bearbeitet wird.
 
 > [!TIP]
-> Eine Microsoft 365-gruppenbenennungsrichtlinie gilt nur für Microsoft 365-Gruppen. Sie gilt nicht für in Exchange Online erstellte Verteilergruppen. Informationen zum Erstellen einer Benennungsrichtlinie für Verteilergruppen finden Sie unter [Erstellen einer Namensrichtlinie für Verteilergruppen](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
+> Eine Microsoft 365-Gruppenbenennungsrichtlinie gilt nur für Microsoft 365-Gruppen. Sie gilt nicht für in Exchange Online erstellte Verteilergruppen. Informationen zum Erstellen einer Benennungsrichtlinie für Verteilergruppen finden Sie unter [Erstellen einer Namensrichtlinie für Verteilergruppen](/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
 
 Die Gruppenbenennungsrichtlinie besteht aus den folgenden Features:
 
-- **Präfix-Suffix-Benennungsrichtlinie**: Sie können Präfixe oder Suffixe verwenden, um die Benennungskonvention von Gruppen zu definieren (beispielsweise "US \_ My Group \_ Engineering"). Bei den Präfixen/Suffixen kann es sich entweder um feste Zeichenfolgen oder Benutzerattribute wie [Department] handeln, die basierend auf dem Benutzer ersetzt werden, der die Gruppe erstellt.
+- **Präfix-Suffix-Benennungsrichtlinie**: Sie können Präfixe oder Suffixe verwenden, um die Benennungskonvention von Gruppen zu definieren (z. B. "US \_ My Group \_ Engineering"). Die Präfixe/Suffixe können entweder feste Zeichenfolgen oder Benutzerattribute wie [Abteilung] sein, die basierend auf dem Benutzer ersetzt werden, der die Gruppe erstellt.
 
-- **Benutzerdefinierte blockierte Wörter**: Sie können eine Gruppe blockierter Wörter für Ihre Organisation hochladen, die in von Benutzern erstellten Gruppen blockiert werden. (Beispiel: "CEO, Abrechnung, HR").
+- **Benutzerdefinierte blockierte** Wörter: Sie können eine Gruppe blockierter Wörter hochladen, die für Ihre Organisation spezifisch sind und in Gruppen blockiert würden, die von Benutzern erstellt wurden. (Beispiel: "CEO Gehaltsabrechnung Personal").
 
 ## <a name="licensing-requirements"></a>Lizenzierungsanforderungen
 
-Wenn Sie Azure AD Benennungsrichtlinie für Microsoft 365-Gruppen verwenden, müssen Sie für jeden eindeutigen Benutzer (einschließlich Gäste), der Mitglied einer oder mehrerer Microsoft 365-Gruppen ist, eine Azure Active Directory Premium P1-Lizenz oder Azure AD Basic edu-Lizenz besitzen, jedoch nicht unbedingt zuweisen.
+Die Verwendung der Azure AD-Benennungsrichtlinie für Microsoft 365-Gruppen erfordert, dass Sie über eine Azure Active Directory Premium P1-Lizenz oder Azure AD Basic EDU-Lizenz für jeden eindeutigen Benutzer (einschließlich Gäste) verfügen, der Mitglied einer oder mehreren Microsoft 365-Gruppen ist.
 
-Dies ist auch für den Administrator erforderlich, der die Benennungsrichtlinie für Gruppen erstellt.
+Dies ist auch für den Administrator erforderlich, der die Gruppenbenennungsrichtlinie erstellt.
 
-## <a name="prefix-suffix-naming-policy"></a>Prefix-Suffix Benennungsrichtlinie
+## <a name="prefix-suffix-naming-policy"></a>Prefix-Suffix Namensrichtlinie
 
 Bei Präfixen und Suffixen kann es sich entweder um feste Zeichenfolgen oder um Benutzerattribute handeln.
 
 ### <a name="fixed-strings"></a>Feste Zeichenfolgen
 
-Sie können kurze Zeichenfolgen verwenden, mit denen Sie Gruppen in der GAL und der linken Navigation der Gruppen Arbeitsauslastungen unterscheiden können. Einige der gängigen Präfix Suffixe sind Schlüsselwörter wie "GRP \_ Name", " \# Name", " \_ Name".
+Sie können kurze Zeichenfolgen verwenden, mit deren Hilfe Sie Gruppen in der GAL und in der linken Navigation der Gruppenworkloads unterscheiden können. Einige der gängigen Präfixsuffixe sind Schlüsselwörter wie "Grp \_ Name", \# "Name", \_ "Name"
 
 ### <a name="attributes"></a>Attribute
 
@@ -63,29 +63,29 @@ Beispiele:
 - Abteilung des Benutzers = Entwicklung
 - Erstellter Gruppenname = "GRP Meine Gruppe Entwicklung"
 
-Die unterstützten Azure Active Directory (Azure AD)-Attribute sind [Department], [Firma], [Office], [StateOrProvince], [CountryOrRegion] und [title].
+Unterstützte Azure Active Directory-Attribute (Azure AD) sind [Department], [Company], [Office], [StateOrProvince], [CountryOrRegion] und [Title].
 
-- Nicht unterstützte Benutzerattribute werden als feste Zeichenfolgen betrachtet, beispielsweise [PostalCode].
+- Nicht unterstützte Benutzerattribute werden als feste Zeichenfolgen betrachtet, z. B. [postalCode].
 
 - Erweiterungsattribute und benutzerdefinierte Attribute werden nicht unterstützt.
 
 Es empfiehlt sich, Attribute mit ausgefüllten Werten für alle Benutzer in Ihrer Organisation zu verwenden und Attribute mit längeren Werten zu vermeiden.
 
-### <a name="things-to-look-out-for"></a>Worauf Sie achten sollten
+### <a name="things-to-look-out-for"></a>Dinge, auf die Sie achten müssen
 
 - Während der Erstellung der Richtlinie ist die Gesamtlänge der Zeichenfolgen für Präfixe und Suffixe auf 53 Zeichen eingeschränkt.
 
-- Präfixe und Suffixe können Sonderzeichen enthalten, die in Gruppennamen und Gruppenaliasen unterstützt werden. Wenn die Präfixe und Suffixe Sonderzeichen enthalten, die im Gruppen Alias nicht zulässig sind, werden Sie nur auf den Gruppennamen angewendet. In diesem Fall würden sich also die auf den Gruppennamen angewendeten Präfixe und Suffixe von den auf den Gruppennamen angewendeten unterscheiden.
+- Präfixe und Suffixe können Sonderzeichen enthalten, die in Gruppennamen und Gruppenaliasen unterstützt werden. Wenn die Präfixe und Suffixe Sonderzeichen enthalten, die im Gruppenalias nicht zulässig sind, werden sie nur auf den Gruppennamen angewendet. In diesem Fall würden sich also die auf den Gruppennamen angewendeten Präfixe und Suffixe von den auf den Gruppennamen angewendeten unterscheiden.
 
   > [!NOTE]
-  > Ein Punkt (.) oder ein Bindestrich (-) ist an beliebiger Stelle im Gruppennamen zulässig, außer am Anfang oder Ende des Namens. Ein Unterstrich (_) ist an beliebiger Stelle im Gruppennamen zulässig, einschließlich am Anfang oder Ende des Namens.
+  > Ein Zeitraum (.) oder ein Bindestrich (-) ist an einer beliebigen Stelle im Gruppennamen zulässig, außer am Anfang oder Ende des Namens. Ein Unterstrich (_) ist an einer beliebigen Stelle im Gruppennamen zulässig, auch am Anfang oder Ende des Namens.
 
-- Wenn Sie jammern Office 365 verbundene Gruppen verwenden, vermeiden Sie die Verwendung der folgenden Zeichen in ihrer Benennungsrichtlinie: @, \# , \[ , \] , \<, and \> . Wenn die Benennungsrichtlinie eines dieser Zeichen enthält, können normale Yammer-Benutzer keine Gruppen erstellen.
+- Wenn Sie Yammer office 365-verbundenen Gruppen verwenden, vermeiden Sie die verwendung der folgenden Zeichen in Ihrer Benennungsrichtlinie: @, \# , \[ , , \] \<, and \> . Wenn die Benennungsrichtlinie eines dieser Zeichen enthält, können normale Yammer-Benutzer keine Gruppen erstellen.
 
 > [!Tip]
 > - Verwenden Sie kurze Zeichenfolgen als Namenszusatz.
 > - Verwenden Sie Attribute mit Werten.
-> - Lassen Sie sich nicht zu kreativ sein, die gesamte Name-Länge hat maximal 264 Zeichen.
+> - Seien Sie nicht zu kreativ, die Gesamtnamenlänge beträgt maximal 264 Zeichen.
 > - Laden Sie spezifische blockierte Wörter Ihrer Organisation hoch, um die Nutzung einzuschränken.
 
 ## <a name="custom-blocked-words"></a>Benutzerdefinierte blockierte Wörter
@@ -94,7 +94,7 @@ Sie können eine durch Trennzeichen getrennte Liste der blockierten Wörter eing
 
 Es erfolgt keine Suche nach Teilzeichenfolgen, d. h. es muss eine genaue Übereinstimmung zwischen dem vom Benutzer eingegebenen Namen und den benutzerdefinierten blockierten Wörtern bestehen, um eine Ablehnung auszulösen.
 
-**Dinge, die Sie beachten** sollten:
+**Dinge, auf die Sie achten müssen:**
 
 - Bei blockierten Wörtern wird die Groß-/Kleinschreibung nicht berücksichtigt.
 
@@ -102,11 +102,11 @@ Es erfolgt keine Suche nach Teilzeichenfolgen, d. h. es muss eine genaue Überei
 
 - Es bestehen keine Zeichenbeschränkungen für die verwendeten blockierten Wörter.
 
-- Es gibt ein Limit von 5000 Wörtern, die als blockierte Wörter festgelegt werden können.
+- Es gibt eine Grenze von 5000 Wörtern, die als blockierte Wörter festgelegt werden können.
 
 ## <a name="admin-override"></a>Außerkraftsetzung durch Administratoren
 
-Einige Administratoren sind von diesen Richtlinien für alle Gruppen Arbeitslasten und-Endpunkte ausgenommen, sodass Sie Gruppen mit diesen blockierten Wörtern und mit Ihren gewünschten Benennungskonventionen erstellen können. Es folgt eine Liste der Administratorrollen, die von der Gruppenbenennungsrichtlinie ausgenommen sind.
+Einige Administratoren sind für alle Gruppenarbeitslasten und Endpunkte von diesen Richtlinien ausgenommen, sodass sie Gruppen mit diesen blockierten Wörtern und den gewünschten Benennungskonventionen erstellen können. Es folgt eine Liste der Administratorrollen, die von der Gruppenbenennungsrichtlinie ausgenommen sind.
 
 - Globaler Administrator
 
@@ -131,8 +131,8 @@ So richten Sie eine Benennungsrichtlinie ein:
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Planung der Collaboration-Steuerung Schritt für Schritt](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Schritt-für-Schritt-Planung für die Zusammenarbeitsgovernance](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Erstellen eines Steuerungsplans für die Zusammenarbeit](collaboration-governance-first.md)
+[Erstellen eines Plans für die Zusammenarbeitsgovernance](collaboration-governance-first.md)
 
-[Azure Active Directory-Cmdlets für die Konfiguration von Gruppeneinstellungen](https://go.microsoft.com/fwlink/?linkid=868341)
+[Azure Active Directory-Cmdlets für die Konfiguration von Gruppeneinstellungen](/azure/active-directory/enterprise-users/groups-settings-cmdlets)

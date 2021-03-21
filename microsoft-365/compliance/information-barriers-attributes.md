@@ -1,6 +1,6 @@
 ---
 title: Attribute für Richtlinien für Informationsbarrieren
-description: Dieser Artikel ist eine Referenz für die Azure Active Directory-Benutzerkontoattribute, die Sie zum Definieren von Segmenten von Informationsbarrieren verwenden können.
+description: Dieser Artikel ist eine Referenz für die Azure Active Directory-Benutzerkontenattribute, die Sie zum Definieren von Informationsbarrieresegmenten verwenden können.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,18 +13,18 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c45a2733c1fa7cf6d05cff747a9cfcdba1b124cc
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: ee410bf455e770087da7999ad2019c17419a8e00
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126162"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919731"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Attribute für Richtlinien für Informationsbarrieren
 
-Bestimmte Attribute in Azure Active Directory können verwendet werden, um Benutzer zu segmentieren. Nachdem Segmente definiert wurden, können diese Segmente als Filter für Richtlinien für Informationsbarrieren verwendet werden. Sie können beispielsweise **"Abteilung"** verwenden, um Benutzersegmente nach Abteilung in Ihrer Organisation zu definieren (vorausgesetzt, dass kein einzelner Mitarbeiter gleichzeitig für zwei Abteilungen arbeitet).
+Bestimmte Attribute in Azure Active Directory können zum Segmentieren von Benutzern verwendet werden. Nachdem Segmente definiert wurden, können diese Segmente als Filter für Richtlinien für Informationsbarrieren verwendet werden. Sie können beispielsweise  Abteilung verwenden, um Benutzersegmente nach Abteilungen in Ihrer Organisation zu definieren (vorausgesetzt, dass kein einzelner Mitarbeiter gleichzeitig für zwei Abteilungen arbeitet).
 
-Dieser Artikel beschreibt die Verwendung von Attributen mit Informationsbarrieren und enthält eine Liste der Attribute, die verwendet werden können. Weitere Informationen zu Informationsbarrieren finden Sie in den folgenden Ressourcen:
+In diesem Artikel wird die Verwendung von Attributen mit Informationsbarrieren beschrieben, und es wird eine Liste der Attribute angezeigt, die verwendet werden können. Weitere Informationen zu Informationsbarrieren finden Sie in den folgenden Ressourcen:
 
 - [Informationsbarrieren](information-barriers.md)
 - [Definieren von Richtlinien für Informationsbarrieren in Microsoft Teams](information-barriers-policies.md)
@@ -32,32 +32,32 @@ Dieser Artikel beschreibt die Verwendung von Attributen mit Informationsbarriere
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>Verwenden von Attributen in Richtlinien für Informationsbarrieren
 
-Die in diesem Artikel aufgeführten Attribute können zum Definieren oder Bearbeiten von Benutzersegmenten verwendet werden. Die definierten Segmente dienen als Parameter (so genannte *UserGroupFilter-Werte)* in [Richtlinien für Informationsbarrieren.](information-barriers-policies.md)
+Die in diesem Artikel aufgeführten Attribute können zum Definieren oder Bearbeiten von Benutzersegmenten verwendet werden. Ihre definierten Segmente dienen als Parameter (sogenannte *UserGroupFilter-Werte)* in [Informationsbarriererichtlinien.](information-barriers-policies.md)
 
-1. Bestimmen Sie, welches Attribut Sie zum Definieren von Segmenten verwenden möchten. (Weitere Informationen finden Sie im [Abschnitt "Referenz"](#reference) in diesem Artikel.)
+1. Bestimmen Sie, welches Attribut Sie zum Definieren von Segmenten verwenden möchten. (Weitere Informationen finden Sie im [Abschnitt Referenz](#reference) in diesem Artikel.)
 
-2. Stellen Sie sicher, dass für die Benutzerkonten Werte für die Attribute angegeben sind, die Sie in Schritt 1 ausgewählt haben. Zeigen Sie Die Details des Benutzerkontos an, und bearbeiten Sie bei Bedarf Benutzerkonten so, dass Attributwerte enthalten sind. 
+2. Stellen Sie sicher, dass für die Benutzerkonten werte ausgefüllt sind, die Sie in Schritt 1 ausgewählt haben. Zeigen Sie Die Details des Benutzerkontos an, und bearbeiten Sie bei Bedarf Benutzerkonten so, dass Attributwerte enthalten sind. 
 
-    - Informationen zum Bearbeiten mehrerer Konten (oder zum Bearbeiten eines einzelnen Kontos mithilfe von PowerShell) finden Sie unter Konfigurieren von Benutzerkontoeigenschaften mit [Office 365 PowerShell.](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
+    - Informationen zum Bearbeiten mehrerer Konten (oder Verwenden von PowerShell zum Bearbeiten eines einzelnen Kontos) finden Sie unter [Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).
 
-    - Informationen zum Bearbeiten eines einzelnen Kontos finden Sie unter Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers [mithilfe von Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+    - Informationen zum Bearbeiten eines einzelnen Kontos finden Sie unter Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers [mithilfe von Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
-3. [Definieren Sie Segmente mit PowerShell,](information-barriers-policies.md#define-segments-using-powershell)ähnlich wie in den folgenden Beispielen:
+3. [Definieren von Segmenten mit PowerShell](information-barriers-policies.md#define-segments-using-powershell), ähnlich den folgenden Beispielen:
 
     |**Beispiel**|**Cmdlet**|
     |:----------|:---------|
-    | Definieren eines Segments namens "Segment1" mithilfe des Attributs "Department" | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"` |
-    | Definieren Sie ein Segment namens "SegmentA" mit dem Attribut "MemberOf" (angenommen, dieses Attribut enthält Gruppennamen, z. B. "BlueGroup"). | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"` |
-    | Definieren Sie ein Segment namens DayTraders mithilfe von ExtensionAttribute1 (angenommen, dieses Attribut enthält Auftragstitel, z. B. "DayTrader"). | `New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
+    | Definieren eines Segments namens Segment1 mithilfe des Department-Attributs | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"` |
+    | Definieren Sie ein Segment namens SegmentA mit dem MemberOf-Attribut (angenommen, dieses Attribut enthält Gruppennamen, z. B. "BlueGroup"). | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"` |
+    | Definieren Eines Segments namens DayTraders mithilfe von ExtensionAttribute1 (angenommen, dieses Attribut enthält Auftragstitel, z. B. "DayTrader") | `New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
 
     > [!TIP]
-    > Wenn Sie Segmente definieren, verwenden Sie dasselbe Attribut für alle Segmente. Wenn Sie beispielsweise einige Segmente mithilfe von *Abteilung* definieren, definieren Sie alle Segmente mithilfe von *Abteilung*. Definieren Sie einige Segmente nicht mithilfe von *Department* und andere nicht mit *MemberOf*. Stellen Sie sicher, dass sich Ihre Segmente nicht überschneiden. Jedem Benutzer sollte genau ein Segment zugewiesen werden.
+    > Wenn Sie Segmente definieren, verwenden Sie dasselbe Attribut für alle Segmente. Wenn Sie beispielsweise einige Segmente mithilfe von *Department* definieren, definieren Sie alle Segmente mithilfe von *Department*. Definieren Sie einige Segmente nicht mithilfe von *Department* und andere mit *MemberOf*. Stellen Sie sicher, dass ihre Segmente nicht überlappen. Jedem Benutzer sollte genau ein Segment zugewiesen werden.
 
 ## <a name="reference"></a>Referenz
 
 In der folgenden Tabelle sind die Attribute aufgeführt, die Sie mit Informationsbarrieren verwenden können.
 
-|**Azure Active Directory-Eigenschaftenname <br/> (LDAP-Anzeigename)**|**Name der Exchange-Eigenschaft**|
+|**Azure Active <br/> Directory-Eigenschaftsname (LDAP-Anzeigename)**|**Name der Exchange-Eigenschaft**|
 |:---------------------------------------------------------------|:-------------------------|
 | Co | Co |
 | Company | Company |

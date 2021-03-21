@@ -19,12 +19,12 @@ search.appverid:
 description: Lernen Sie drei Tools kennen, mit denen Sie Lecks für personenbezogene Daten aufspüren können.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8fb8557d6cd2677aeb6dcda75d34e86ada8f68c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b51bc5d5d3cbfa8951392f88edc6e178778206df
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290669"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921252"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Überwachen auf Lecks für personenbezogene Daten
 
@@ -83,7 +83,7 @@ Informationenssicherheits- und Compliance-Teams können diese Tools verwenden, u
 
 Informationssicherheitsteams können auch das Überwachungsprotokoll durchsuchen, um einen vermeintlichen Datenmissbrauch zu untersuchen sowie Ursache und Ausmaß der Verletzung zu bestimmen. Diese integrierte Funktionalität erleichtert die Einhaltung der Artikel 33 und 34 der DSGVO. Diese verlangen bei einer Datenpanne die Benachrichtigung der Aufsichtsbehörde der DSGVO und der betroffenen Person selbst innerhalb eines bestimmten Zeitraums. Einträge im Überwachungsprotokoll werden nur 90 Tage lang im Dienst aufbewahrt. Häufig empfiehlt es sich, und viele Organisationen erfordern dies, dass die Protokolle länger aufbewahrt werden.
 
-Es sind Lösungen verfügbar, die über die Microsoft Verwaltungsaktivitäts-API die einheitlichen Überwachungsprotokolle (Unified Audit Logs) abonnieren und beide Protokolleinträge nach Bedarf speichern können. Diese bieten erweiterte Dashboards und Warnungen. Ein Beispiel hierfür ist [Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/azure/operations-management-suite/oms-solution-office-365).
+Es sind Lösungen verfügbar, die über die Microsoft Verwaltungsaktivitäts-API die einheitlichen Überwachungsprotokolle (Unified Audit Logs) abonnieren und beide Protokolleinträge nach Bedarf speichern können. Diese bieten erweiterte Dashboards und Warnungen. Ein Beispiel hierfür ist [Microsoft Operations Management Suite (OMS)](/azure/operations-management-suite/oms-solution-office-365).
 
 Weitere Informationen zu Warnungsrichtlinien und zum Durchsuchen des Überwachungsprotokolls finden Sie unter:
 
@@ -95,7 +95,7 @@ Weitere Informationen zu Warnungsrichtlinien und zum Durchsuchen des Überwachun
 
 - [Durchsuchen des Überwachungsprotokolls](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
-- [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) (Cmdlet)
+- [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) (Cmdlet)
 
 - [Detaillierte Eigenschaften im Überwachungsprotokoll](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
@@ -130,11 +130,11 @@ Hinweis: Aktivieren Sie unbedingt „Automatisch Dateien auf Azure Information P
 
 Weitere Informationen:
 
-- [Bereitstellen von Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
+- [Bereitstellen von Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
 
 - [Weitere Informationen zu Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
-- [Blockieren von Downloads vertraulicher Daten mithilfe des Microsoft Cloud App Security-Proxys](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
+- [Blockieren von Downloads vertraulicher Daten mithilfe des Microsoft Cloud App Security-Proxys](/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>Beispieldatei und Aktivitätsrichtlinien zum Erkennen der Freigabe von personenbezogenen Daten
 

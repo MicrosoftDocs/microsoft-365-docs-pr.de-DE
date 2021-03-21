@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Die Art und Weise, in der eine Organisation, die die neueste Version bereitstellt, Kanäle für Windows 10- und Microsoft 365-Apps verwendet.
-ms.openlocfilehash: fd1d8ddd342b2781470378c879ef70d2ba304316
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 29bda1651a83f0e043cf8a0d2a102c6c2e461bfd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686166"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919074"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>Beispiel für eine allgemeine Bereitstellung der neuesten Versionen
 
@@ -61,7 +61,7 @@ Auf der Grundlage der schnellen Bereitstellungsziele der neuesten Version verwen
 
 Das übergeordnete Ziel besteht darin, eine allgemeine Bereitstellung der neuesten halbjährlichen Kanalversion nach der Überprüfung der Änderungen an der Kanalversion (Vorschau) durch eine Gruppe von repräsentativen Benutzern und deren Geräten auszuführen.
 
-Weitere Informationen zu den Bereitstellungsmethoden und-Strategien für Windows 10 finden Sie unter [Windows 10-Bereitstellung](https://docs.microsoft.com/windows/deployment/).
+Weitere Informationen zu den Bereitstellungsmethoden und-Strategien für Windows 10 finden Sie unter [Windows 10-Bereitstellung](/windows/deployment/).
 
 | Stufe | Kanal | Bereitstellungsgruppe |
 |:-------|:-------|:-----|
@@ -85,7 +85,7 @@ Fortlaufender Updateprozess:
 
 Das übergeordnete Ziel besteht darin, eine allgemeine Bereitstellung der neuesten Version des aktuellen Kanals nach der Überprüfung der Änderungen am aktuellen Kanal (Vorschau) durch eine Gruppe von repräsentativen Benutzern auszuführen.
 
-Weitere Informationen zu den Bereitstellungsmethoden und -strategien für Microsoft 365-Apps finden Sie unter [Bereitstellung für Microsoft 365-Apps](https://docs.microsoft.com/deployoffice/plan-office-365-proplus).
+Weitere Informationen zu den Bereitstellungsmethoden und -strategien für Microsoft 365-Apps finden Sie unter [Bereitstellung für Microsoft 365-Apps](/deployoffice/plan-office-365-proplus).
 
 | Stufe | Kanal | Bereitstellungsgruppe |
 |:-------|:-------|:-----|

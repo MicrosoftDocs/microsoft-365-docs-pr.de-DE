@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: d81e272cfe50aa8379135406cbe538fbc8a18cb5
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 7c3b4f82d94888cfa6c63b25f20130a38f8b4c9f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454229"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919200"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Mandantenübergreifende Postfachmigration (Vorschau)
 
@@ -45,7 +45,7 @@ Dieser Abschnitt enthält weder die spezifischen Schritte, die zum Vorbereiten d
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Das mandantenübergreifende Postfach verschieben-Feature [erfordert,](https://docs.microsoft.com/azure/key-vault/basic-concepts) dass Azure Key Vault eine mandantenpaarspezifische Azure-Anwendung zum sicheren Speichern und Zugreifen auf das Zertifikat/den geheimen Schlüssel einrichten kann, das zum Authentifizieren und Autorisieren der Postfachmigration von einem Mandanten zum anderen verwendet wird. Dabei werden alle Anforderungen zum Freigeben von Zertifikaten/Geheimschlüsseln zwischen Mandanten entfernt. 
+Das mandantenübergreifende Postfach verschieben-Feature [erfordert,](/azure/key-vault/basic-concepts) dass Azure Key Vault eine mandantenpaarspezifische Azure-Anwendung zum sicheren Speichern und Zugreifen auf das Zertifikat/den geheimen Schlüssel einrichten kann, das zum Authentifizieren und Autorisieren der Postfachmigration von einem Mandanten zum anderen verwendet wird. Dabei werden alle Anforderungen zum Freigeben von Zertifikaten/Geheimschlüsseln zwischen Mandanten entfernt. 
 
 Stellen Sie vor dem Start sicher, dass Sie über die erforderlichen Berechtigungen zum Ausführen der Bereitstellungsskripts verfügen, um Azure Key Vault, Die Postfachanwendung verschieben, den EXO-Migrationsendpunkt und die EXO-Organisationsbeziehung zu konfigurieren. In der Regel verfügt der globale Administrator über die Berechtigung zum Ausführen aller Konfigurationsschritte.
 
@@ -116,7 +116,7 @@ Bereiten Sie den Quell-Mandanten vor:
     ||||
 
     >[!Note]
-    > Stellen Sie sicher, dass Sie das Azure AD PowerShell-Modul installiert haben, bevor Sie die Skripts ausführen. Installationsschritte ![ ](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-5.1.0) finden Sie hier.
+    > Stellen Sie sicher, dass Sie das Azure AD PowerShell-Modul installiert haben, bevor Sie die Skripts ausführen. Installationsschritte ![ ](/powershell/azure/install-az-ps?view=azps-5.1.0) finden Sie hier.
 
 6. Das Skript hält an und bittet Sie, die während dieses Vorgangs erstellte Exchange-Postfachmigrationsanwendung zu akzeptieren oder zu akzeptieren. Hier ein Beispiel.
 
@@ -590,7 +590,7 @@ Nein. Die Quell- und Ziel-Mandantendomänennamen müssen eindeutig sein. Beispie
 
 Ja, wir behalten jedoch nur die Speicherberechtigungen wie in den folgenden Artikeln beschrieben bei:
 
-- [Microsoft Docs | Verwalten von Berechtigungen für Empfänger in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
+- [Microsoft Docs | Verwalten von Berechtigungen für Empfänger in Exchange Online](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
 
 - [Microsoft Support | Erteilen von Exchange- und Outlook-Postfachberechtigungen in Office 365](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
@@ -604,11 +604,11 @@ Nicht mehr als 2.000 Postfächer pro Batch. Es wird dringend empfohlen, Batches 
 
 **Was passiert, wenn ich die Dienstverschlüsselung mit dem Kundenschlüssel verwende?**
 
-Das Postfach wird vor dem Verschieben entschlüsselt. Stellen Sie sicher, dass der Kundenschlüssel im Ziel-Mandant konfiguriert ist, wenn er weiterhin erforderlich ist. Weitere [Informationen](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview) finden Sie hier.  
+Das Postfach wird vor dem Verschieben entschlüsselt. Stellen Sie sicher, dass der Kundenschlüssel im Ziel-Mandant konfiguriert ist, wenn er weiterhin erforderlich ist. Weitere [Informationen](../compliance/customer-key-overview.md) finden Sie hier.  
 
 **Wie ist die geschätzte Migrationszeit?**
 
-Um Die Migration zu planen, [](https://docs.microsoft.com/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) enthält die hier gezeigte Tabelle die Richtlinien, wann Massenpostfachmigrationen oder einzelne Migrationen abgeschlossen werden sollen. Diese Schätzungen basieren auf einer Datenanalyse früherer Kundenmigrationen. Da jede Umgebung eindeutig ist, kann die genaue Migrationsgeschwindigkeit variieren.  
+Um Die Migration zu planen, [](/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) enthält die hier gezeigte Tabelle die Richtlinien, wann Massenpostfachmigrationen oder einzelne Migrationen abgeschlossen werden sollen. Diese Schätzungen basieren auf einer Datenanalyse früherer Kundenmigrationen. Da jede Umgebung eindeutig ist, kann die genaue Migrationsgeschwindigkeit variieren.  
 
 Denken Sie daran, dass sich dieses Feature derzeit in der Vorschau befindet und die SLA und alle anwendbaren ServiceLevels während des Vorschaustatus dieses Features nicht auf Leistungs- oder Verfügbarkeitsprobleme angewendet werden.
 
@@ -733,4 +733,3 @@ Denken Sie daran, dass sich dieses Feature derzeit in der Vorschau befindet und 
    | Microsoft Defender für Office 365 (Plan 2)    |
    | Office 365 Privileged Access Management           |
    | Premium-Verschlüsselung in Office 365                  |
-    

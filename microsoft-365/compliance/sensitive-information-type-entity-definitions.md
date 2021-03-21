@@ -17,19 +17,19 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
-description: Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Security Compliance Center umfasst 80 Typen vertraulicher Informationen, die Sie in Ihren &amp; DLP-Richtlinien verwenden können. In diesem Artikel werden alle diese vertraulichen Informationstypen aufgeführt, und es wird gezeigt, wo nach einer DLP-Richtlinie beim Erkennen der einzelnen Typen sucht.
-ms.openlocfilehash: d23c6900e9aeb9ad9b550bb069b7a9592faa9b10
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+description: Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Security Compliance Center umfasst 80 Typen vertraulicher Informationen, die für Die Verwendung in Ihren &amp; DLP-Richtlinien bereit sind. Dieser Artikel enthält eine Liste aller typen vertraulicher Informationen und zeigt, nach welcher DLP-Richtlinie beim Erkennen der einzelnen Typen sucht.
+ms.openlocfilehash: 341ded0c4c7f6ff31074d17624c029e7f6187480
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288136"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919711"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Entitätsdefinitionen für Typen vertraulicher Informationstypen
 
-Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Compliance Center umfasst viele vertrauliche Informationstypen, die in Ihren DLP-Richtlinien verwendet werden können. In diesem Artikel werden alle diese vertraulichen Informationstypen aufgeführt, und es wird gezeigt, wo nach einer DLP-Richtlinie beim Erkennen der einzelnen Typen sucht. Ein vertraulicher Informationstyp wird durch ein Muster definiert, das durch einen regulären Ausdruck oder eine Funktion identifiziert werden kann. Bestätigende Nachweise, z. B. Schlüsselwörter und Prüfsummen, können verwendet werden, um einen vertraulichen Informationstyp zu identifizieren. Beim Auswertungsprozess können auch die Zuverlässigkeitsstufe und die Näherung herangezogen werden.
+Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Compliance Center umfasst viele vertrauliche Informationstypen, die in Ihren DLP-Richtlinien verwendet werden können. Dieser Artikel enthält eine Liste aller typen vertraulicher Informationen und zeigt, nach welcher DLP-Richtlinie beim Erkennen der einzelnen Typen sucht. Ein vertraulicher Informationstyp wird durch ein Muster definiert, das durch einen regulären Ausdruck oder eine Funktion identifiziert werden kann. Bestätigende Nachweise, z. B. Schlüsselwörter und Prüfsummen, können verwendet werden, um einen vertraulichen Informationstyp zu identifizieren. Beim Auswertungsprozess können auch die Zuverlässigkeitsstufe und die Näherung herangezogen werden.
 
-Typen vertraulicher Informationen erfordern eines der folgenden Abonnements:
+Vertrauliche Informationstypen erfordern eines der folgenden Abonnements:
 - Microsoft 365 E3
 - Microsoft 365 E5
 
@@ -51,12 +51,12 @@ neun Ziffern, die in einem formatierten oder unformatierten Muster vorliegen kö
 
 Formatiert:
 - vier Ziffern beginnend mit 0, 1, 2, 3, 6, 7 oder 8
-- Ein Bindestrich
+- ein Bindestrich
 - vier Ziffern
-- Ein Bindestrich
+- ein Bindestrich
 - eine Ziffer
 
-Unformatiert: neun aufeinanderfolgende Ziffern beginnend mit 0, 1, 2, 3, 6, 7 oder 8 
+Unformatiert: neun aufeinander folgende Ziffern beginnend mit 0, 1, 2, 3, 6, 7 oder 8 
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -64,11 +64,11 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine Richtlinie hat mittleres Vertrauen, dass diese Art von vertraulichen Informationen erkannt wird, wenn innerhalb von 300 Zeichen:
+Eine Richtlinie hat mittlere Sicherheit, dass diese Art vertraulicher Informationen erkannt wird, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_aba_routing findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_ABA_Routing wurde gefunden.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_aba_routing findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -96,17 +96,17 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - abaroutingnumber
 - americanbankassociationrouting #
 - americanbankassociationroutingnumber
-- bankrouting #
+- Bankrouting #
 - bankroutingnumber
 - Routing #
-- routing no
+- Routing nein
 - Routingnummer
 - routing transit number
 - Routing #
 - RTN
 
 
-## <a name="argentina-national-identity-dni-number"></a>Argentinien – Nationale Identitätsnummer (DNI)
+## <a name="argentina-national-identity-dni-number"></a>Nationale Identität (DNI) (Argentina National Identity)
 
 ### <a name="format"></a>Format
 
@@ -116,9 +116,9 @@ Acht Ziffern mit oder ohne Punkte
 
 Acht Ziffern:
 - zwei Ziffern
-- Optionaler Zeitraum
+- optionaler Zeitraum
 - drei Ziffern
-- Optionaler Zeitraum
+- optionaler Zeitraum
 - drei Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -127,7 +127,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_argentina_national_id findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_argentina_national_id gefunden.
 
@@ -159,7 +159,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="format"></a>Format
 
-6 bis 10 Ziffern mit oder ohne Bank bank state branch number
+sechs bis zehn Ziffern mit oder ohne Bankstatus-Zweigstellennummer
 
 ### <a name="pattern"></a>Muster
 
@@ -167,7 +167,7 @@ Die Kontonummer ist 6 bis 10 Ziffern.
 
 Australische Bankleitzahl:
 - drei Ziffern 
-- Ein Bindestrich 
+- ein Bindestrich 
 - drei Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -176,12 +176,12 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_australia_bank_account_number inhalt, der dem Muster entspricht.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Der reguläre Ausdruck Regex_australia_bank_account_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_australia_bank_account_number wurde gefunden.
 - Der reguläre Ausdruck Regex_australia_bank_account_number_bsb findet Inhalte, die dem Muster entsprechen.
 
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_australia_bank_account_number findet Inhalte, die dem Muster entsprechen.
 
 - Ein Schlüsselwort aus Keyword_australia_bank_account_number wurde gefunden.
@@ -223,9 +223,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 
 ### <a name="format"></a>Format
@@ -237,11 +237,11 @@ Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 11 Ziffern mit optionalen Trennzeichen:
 
 - zwei Ziffern
-- Optionaler Bindestrich oder Leerzeichen
+- optionaler Bindestrich oder Leerzeichen
 - drei Ziffern
-- Optionaler Bindestrich oder Leerzeichen
+- optionaler Bindestrich oder Leerzeichen
 - drei Ziffern
-- Optionaler Bindestrich oder Leerzeichen
+- optionaler Bindestrich oder Leerzeichen
 - drei Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -250,12 +250,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion Func_australian_business_number findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Die Funktion Func_australian_business_number nach Inhalten, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_australian_business_number gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion Func_australian_business_number findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Die Funktion Func_australian_business_number nach Inhalten, die dem Muster entsprechen.
 
 ```xml
       <!-- Australia Business Number -->
@@ -273,21 +273,21 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keyword_australia_business_number"></a>Keyword_australia_business_number
 
-- australia business no
+- australien business no
 - Geschäftsnummer
 - abn #
 - businessid #
-- Geschäfts-ID
+- Business-ID
 - abn
 - businessno #
 
-## <a name="australia-company-number"></a>Australische Unternehmensnummer
+## <a name="australia-company-number"></a>Australische Firmennummer
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -298,7 +298,7 @@ neun Ziffern mit Trennzeichen
 neun Ziffern mit Trennzeichen:
 
 - drei Ziffern
-- Ein Leerzeichen
+- ein Leerzeichen
 - drei Ziffern
 - ein Leerzeichen
 - drei Ziffern
@@ -310,11 +310,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_Australian_Company_Number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Australian_Company_Number gefunden.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_Australian_Company_Number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -334,12 +334,12 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 #### <a name="keyword_australia_company_number"></a>Keyword_australia_company_number
 
 - can
-- australia company no
-- australia company no #
-- australische Unternehmensnummer
-- australian company no
-- australian company no #
-- australische Unternehmensnummer
+- australien unternehmen nein
+- australien unternehmen nein #
+- australische Firmennummer
+- australisches Unternehmen nein
+- australisches Unternehmen nein #
+- australische Firmennummer
 
 ## <a name="australia-drivers-license-number"></a>Australische Führerscheinnummer
 
@@ -351,18 +351,18 @@ neun Buchstaben und Ziffern
 
 neun Buchstaben und Ziffern: 
 
-- zwei Ziffern oder Buchstaben (groß-/klein geschrieben) 
+- zwei Ziffern oder Buchstaben (keine Groß-/Kleinschreibung) 
 - zwei Ziffern 
-- fünf Ziffern oder Buchstaben (Groß-/Kleinschreibung wird nicht beachtet)
+- fünf Ziffern oder Buchstaben (keine Groß-/Kleinschreibung)
 
 ODER
 
-- 1 bis 2 optionale Buchstaben (Groß-/Kleinschreibung wird nicht beachtet) 
+- 1 bis 2 optionale Buchstaben (keine Groß-/Kleinschreibung) 
 - vier bis neun Ziffern
 
 ODER
 
-- neun Ziffern oder Buchstaben (Groß-/Kleinschreibung wird nicht beachtet)
+- neun Ziffern oder Buchstaben (keine Groß-/Kleinschreibung)
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -370,7 +370,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_australia_drivers_license_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_australia_drivers_license_number wurde gefunden.
 - Es wurde kein Schlüsselwort aus Keyword_australia_drivers_license_number_exclusions gefunden.
@@ -409,8 +409,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Drivers Licences
 - Driver'Lic
 - Driver'Lics
-- Driver'Licence
-- Driver'Licences
+- Führerschein
+- Treiberlizenzen
 - Driver'Lic
 - Driver'Lics
 - Driver'Licence
@@ -441,8 +441,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Drivers Licences#
 - Driver'Lic #
 - Driver'Lics #
-- Driver'Licence #
-- Driver'Licences #
+- Führerschein #
+- Treiberlizenzen #
 - Driver' Lic#
 - Driver' Lics#
 - Driver' Licence#
@@ -468,7 +468,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Drivers License
 - Drivers Licenses
 - Driver'License
-- Driver'Licenses
+- Treiberlizenzen
 - Driver' License
 - Driver' Licenses
 - Driver'sLicense
@@ -484,7 +484,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Drivers License#
 - Drivers Licenses#
 - Driver'License #
-- Driver'Licenses #
+- Treiberlizenzen #
 - Driver' License#
 - Driver' Licenses#
 - Driver'sLicense #
@@ -492,7 +492,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Driver's License#
 - Driver's Licenses#
    
-## <a name="australia-medical-account-number"></a>Australische Medical -Kontonummer
+## <a name="australia-medical-account-number"></a>Australische Kontonummer für medizinisches Konto
 
 ### <a name="format"></a>Format
 
@@ -502,7 +502,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 10-11 Ziffern:
 - Erste Ziffer im Bereich von 2-6
-- Neun Ziffern sind Prüfziffern
+- Neun Ziffern sind eine Prüfziffer
 - Zehnte Ziffer ist die Ausgabeziffer
 - Elfte Ziffer (optional) ist die Einzelziffer
 
@@ -512,7 +512,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_australian_medical_account_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Australia_Medical_Account_Number wurde gefunden.
 - Die Prüfsumme stimmt.
@@ -551,7 +551,7 @@ Ein Buchstabe gefolgt von sieben Ziffern
 
 ### <a name="pattern"></a>Muster
 
-Ein Buchstabe (ohne Schreibung), gefolgt von sieben Ziffern
+Ein Buchstabe (ohne Zwischenfall) gefolgt von sieben Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -559,9 +559,9 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_australia_passport_number findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus Keyword_passport oder Keyword_australia_passport_number wurde gefunden.
+- Ein Schlüsselwort aus Keyword_passport oder Keyword_australia_passport_number gefunden.
 
 ```xml
 <!-- Australia Passport Number -->
@@ -589,7 +589,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - passportnumber
 - パスポート
 - パスポート番号
-- ポ .
+- 2ポ007
 - パスポート ＃ 
 - Numéro de passeport
 - Passeport n °
@@ -601,7 +601,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
-- passport
+- Passport
 - passport details
 - immigration and citizenship
 - commonwealth of australia
@@ -614,20 +614,20 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - travel document
 - issuing authority
    
-## <a name="australia-tax-file-number"></a>Australische Steuernummer
+## <a name="australia-tax-file-number"></a>Australische Steuerdateinummer
 
 ### <a name="format"></a>Format
 
-Acht bis neun Ziffern
+acht bis neun Ziffern
 
 ### <a name="pattern"></a>Muster
 
 Acht bis neun Ziffern werden in der Regel wie folgt mit Leerzeichen dargestellt:
 - drei Ziffern 
-- Ein optionales Leerzeichen 
+- ein optionales Leerzeichen 
 - drei Ziffern 
-- Ein optionales Leerzeichen 
-- zwei bis drei Ziffern, wobei die letzte Ziffer eine Prüfziffer ist
+- ein optionales Leerzeichen 
+- zwei bis drei Ziffern, bei denen die letzte Ziffer eine Prüfziffer ist
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -635,7 +635,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_australian_tax_file_number findet Inhalte, die dem Muster entsprechen.
 - Es wurde kein Schlüsselwort aus Keyword_Australia_Tax_File_Number oder Keyword_number_exclusions gefunden.
 - Die Prüfsumme stimmt.
@@ -664,11 +664,11 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - tax file number
 - tfn
 
-## <a name="austria-drivers-license-number"></a>Austria driver's license number
+## <a name="austria-drivers-license-number"></a>Österreich-Führerscheinnummer
 
 ### <a name="format"></a>Format
 
-Acht Ziffern ohne Leerzeichen und Trennzeichen
+acht Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -680,10 +680,10 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
   
 - Der reguläre Ausdruck  `Regex_austria_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_austria_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_austria_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Austria Driver's License Number -->
@@ -700,7 +700,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -712,8 +712,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -725,31 +725,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -760,9 +760,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -771,72 +771,72 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver A0 s_license_number
+#### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver's_license_number
 
-- langsamererschein
+- fuhrerschein
 - führerschein
 - Führerscheine
 - Führerscheinnummer
 - Führerscheinnummern
 
-## <a name="austria-identity-card"></a>Österreich- Identitätskarte
+## <a name="austria-identity-card"></a>Österreich-Identitätskarte
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -848,7 +848,7 @@ Eine 24-stellige Kombination aus Buchstaben, Ziffern und Sonderzeichen
   
 -  22 Buchstaben (ohne Groß-/Kleinschreibung), Ziffern, umgekehrte Schrägstriche, Schrägstriche oder Pluszeichen 
     
-- zwei Buchstaben (groß-/kleinschreibungsempfindlich), Ziffern, umgekehrte Schrägstriche, Schrägstriche, Pluszeichen oder Gleichheitszeichen
+- zwei Buchstaben (ohne Groß-/Kleinschreibung), Ziffern, umgekehrte Schrägstriche, Schrägstriche, Pluszeichen oder Gleichheitszeichen
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -856,10 +856,10 @@ Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
   
 - Der reguläre Ausdruck  `Regex_austria_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_austria_eu_national_id_card` gefunden. 
+- Es wird ein  `Keywords_austria_eu_national_id_card` Schlüsselwort aus gefunden. 
    
 ```xml
       <!-- Austria Identity Card -->
@@ -879,7 +879,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - national id
 - personalausweis republik österreich
 
-## <a name="austria-passport-number"></a>Österreich- Reisepassnummer
+## <a name="austria-passport-number"></a>Österreich-Reisepassnummer
 
 ### <a name="format"></a>Format
 
@@ -889,8 +889,8 @@ Ein Buchstabe gefolgt von einem optionalen Leerzeichen und sieben Ziffern
 
 Eine Kombination aus einem Buchstaben, sieben Ziffern und einem Leerzeichen:
   
-- Ein Buchstabe (ohne Schreibung)
-- Ein Leerzeichen (optional)
+- ein Buchstabe (ohne Zwischenfall)
+- ein Leerzeichen (optional)
 - sieben Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
@@ -899,14 +899,14 @@ nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_austria_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_austria_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Das Datum im Format TT.MM.JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_austria_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Datum im Format DD.MM.YYYY, oder es wird ein Schlüsselwort `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_austria_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_austria_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_austria_eu_passport_number` wird gefunden. 
     
 ```xml
       <!-- Austria Passport Number -->
@@ -936,12 +936,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -955,14 +955,14 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
-- reise 2013
+- reisepässe
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
-## <a name="austria-social-security-number"></a>Sozialversicherungsnummer Österreich
+## <a name="austria-social-security-number"></a>Nummer der sozialen Sicherheit in Österreich
 
 ### <a name="format"></a>Format
 
@@ -973,7 +973,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 10 Ziffern:
   
 - drei Ziffern, die einer Seriennummer entsprechen 
-- Eine Prüfziffer
+- eine Prüfziffer
 - sechs Ziffern, die dem Geburtsdatum entsprechen (DDMMYY)
     
 ### <a name="checksum"></a>Prüfsumme
@@ -982,11 +982,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_austria_eu_ssn_or_equivalent` findet Inhalte, die dem Muster entsprechen. 
-- es wurde ein Schlüsselwort  `Keywords_austria_eu_ssn_or_equivalent` gefunden. 
+- ein Schlüsselwort aus  `Keywords_austria_eu_ssn_or_equivalent` gefunden wird. 
     
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_austria_eu_ssn_or_equivalent` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -1010,13 +1010,13 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_austria_eu_ssn_or_equivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
-- zeit ssn
+- österreichisch ssn
 - ehic number
 - ehic no
 - Versicherungscode
 - insurancecode #
 - Versicherungsnummer
-- insurance no
+- Versicherungs nein
 - krankenkassennummer
 - krankenversicherung
 - socialsecurityno
@@ -1034,18 +1034,18 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - versicherungsnummer
 - zdravstveno zavarovanje
 
-## <a name="austria-tax-identification-number"></a>Steueridentifikationsnummer Für Österreich
+## <a name="austria-tax-identification-number"></a>Steueridentifikationsnummer für Österreich
 
 ### <a name="format"></a>Format
 
-Neun Ziffern mit optionalem Bindestrich und Schrägstrich
+neun Ziffern mit optionalem Bindestrich und Schrägstrich
   
 ### <a name="pattern"></a>Muster
 
 neun Ziffern mit optionalem Bindestrich und Schrägstrich:
   
 - zwei Ziffern
-- Ein Bindestrich (optional)
+- ein Bindestrich (optional)
 - drei Ziffern
 - Schrägstrich (optional)
 - vier Ziffern
@@ -1056,11 +1056,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_austria_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_austria_eu_tax_file_number` gefunden. 
+- Es wird ein  `Keywords_austria_eu_tax_file_number` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_austria_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -1084,15 +1084,15 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - st.nr.
 - steuernummer
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -1101,31 +1101,31 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - tin #
 - Steuernummer
  
-## <a name="austria-value-added-tax"></a>Umsatzsteuer für Österreich
+## <a name="austria-value-added-tax"></a>Mehrwertsteuer in Österreich
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-Alphanumerisches 11-Zeichen-Muster
+11-Zeichen-alphanumerisches Muster
 
 ### <a name="pattern"></a>Muster
 
-Alphanumerisches Muster mit 11 Zeichen:
+Alphanumerisches 11-Zeichen-Muster:
 
 - A oder a
 - T oder t
-- Optionaler Platz
-- U oder u
 - Optionaler Speicherplatz
+- U oder U
+- optionaler Speicherplatz
 - zwei oder drei Ziffern
-- Optionaler Platz
+- optionaler Speicherplatz
 - vier Ziffern
-- Optionaler Speicherplatz
+- optionaler Speicherplatz
 - eine oder zwei Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -1134,11 +1134,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_Austria_Value_Added_Tax findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Austria_Value_Added_Tax gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_Austria_Value_Added_Tax findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -1157,35 +1157,35 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keyword_austria_value_added_tax"></a>Keyword_austria_value_added_tax
 
-- uSt-Nummer
+- Umsatzsteuernummer
 - vat #
-- umsatzsteuernummer
+- Umsatzsteuernummer für Österreich
 - vat no.
 - vatno #
 - Umsatzsteuernummer
-- vat
+- österreichisch vat
 - mwst
 - umsatzsteuernummer
 - mwstnummer
 - ust.-identifikationsnummer
 - umsatzsteuer-identifikationsnummer
-- uSt-Identifikationsnummer
-- atu number
-- uid number
+- Umsatzsteueridentifikationsnummer
+- atu-Nummer
+- uid-Nummer
 
 
 ## <a name="azure-documentdb-auth-key"></a>Azure DocumentDB-Authentifizierungsschlüssel
 
 ### <a name="format"></a>Format
 
-Die Zeichenfolge "DocumentDb" gefolgt von den Im folgenden Muster beschriebenen Zeichen und Zeichenfolgen.
+Die Zeichenfolge "DocumentDb" gefolgt von den Zeichen und Zeichenfolgen im folgenden Muster.
 
 ### <a name="pattern"></a>Muster
 
 - Die Zeichenfolge "DocumentDb"
 - Beliebige Kombination aus 3-200 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
-- Ein Größer-als-Symbol (>), ein Gleichheitszeichen (=), ein Anführungszeichen (") oder ein Apostroph (')
-- Eine beliebige Kombination aus 86 Klein- oder Großbuchstaben, Ziffern, Schrägstrich (/) oder Pluszeichen (+)
+- Ein Größer als Symbol (>), ein Gleichheitszeichen (=), ein Anführungszeichen (") oder ein Apostroph (')
+- Beliebige Kombination aus 86 Klein- oder Großbuchstaben, Ziffern, Schrägstrich (/) oder Pluszeichen (+)
 - Zwei Gleichheitszeichen (=)
 
 ### <a name="checksum"></a>Prüfsumme
@@ -1194,9 +1194,9 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck CEP_Regex_AzureDocumentDBAuthKey findet Inhalte, die dem Muster entsprechen.
-- Der reguläre Ausdruck CEP_CommonExampleKeywords findet keine Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Der reguläre Ausdruck CEP_Regex_AzureDocumentDBAuthKey, der dem Muster entspricht.
+- Der reguläre Ausdruck CEP_CommonExampleKeywords findet keinen Inhalt, der dem Muster entspricht.
 
 ```xml
 <!-- Azure Document DB Auth Key -->
@@ -1219,7 +1219,7 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - contoso
 - fabrikam
 - northwind
-- Sandbox
+- Sandkasten
 - onebox
 - localhost
 - 127.0.0.1
@@ -1230,23 +1230,23 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 
 ### <a name="format"></a>Format
 
-Die Zeichenfolge "Server", "Server" oder "Datenquelle", gefolgt von den Im folgenden Muster beschriebenen Zeichen und Zeichenfolgen, einschließlich der Zeichenfolge "cloudapp.azure".<!--no-hyperlink-->com" oder "cloudapp.azure.<!--no-hyperlink-->net" oder "database.windows.<!--no-hyperlink-->"net" und die Zeichenfolge "Password" oder "password" oder "pwd".
+Die Zeichenfolge "Server", "Server" oder "Datenquelle", gefolgt von den Zeichen und Zeichenfolgen im folgenden Muster, einschließlich der Zeichenfolge "cloudapp.azure".<!--no-hyperlink-->com" oder "cloudapp.azure.<!--no-hyperlink-->net" oder "database.windows.<!--no-hyperlink-->net" und die Zeichenfolge "Password" oder "password" oder "pwd".
 
 ### <a name="pattern"></a>Muster
 
-- Die Zeichenfolge "Server", "Server" oder "Datenquelle"
+- die Zeichenfolge "Server", "Server" oder "Datenquelle"
 - Null bis zwei Leerzeichen
-- Ein Gleichheitszeichen (=)
+- ein Gleichheitszeichen (=)
 - Null bis zwei Leerzeichen
-- Beliebige Kombination aus 1-200 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- beliebige Kombination aus 1-200 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
 - Die Zeichenfolge "cloudapp.azure.<!--no-hyperlink-->com", "cloudapp.azure.<!--no-hyperlink-->net" oder "database.windows.<!--no-hyperlink-->net"
-- Beliebige Kombination aus 1-300 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- beliebige Kombination aus 1-300 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
 - die Zeichenfolge "Password", "password" oder "pwd"
 - Null bis zwei Leerzeichen
-- Ein Gleichheitszeichen (=)
+- ein Gleichheitszeichen (=)
 - Null bis zwei Leerzeichen
-- ein oder mehrere Zeichen, die kein Semikolon (;), Anführungszeichen (") oder Apostroph (') sind
-- Ein Semikolon (;), Anführungszeichen (") oder Apostroph (')
+- ein oder mehrere Zeichen, die kein Semikolon sind (;), Anführungszeichen (") oder Apostroph (')
+- ein Semikolon (;), Anführungszeichen (") oder Apostroph (')
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -1254,9 +1254,9 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck CEP_Regex_AzureConnectionString inhalt, der dem Muster entspricht.
-- Der reguläre Ausdruck CEP_CommonExampleKeywords findet keine Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Der reguläre Ausdruck CEP_Regex_AzureConnectionString, der dem Muster entspricht.
+- Der reguläre Ausdruck CEP_CommonExampleKeywords findet keinen Inhalt, der dem Muster entspricht.
 
 ```xml
 <!--Azure IAAS Database Connection String and Azure SQL Connection String-->
@@ -1279,7 +1279,7 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - contoso
 - fabrikam
 - northwind
-- Sandbox
+- Sandkasten
 - onebox
 - localhost
 - 127.0.0.1
@@ -1290,23 +1290,23 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 
 ### <a name="format"></a>Format
 
-Die Zeichenfolge "HostName" gefolgt von den Im folgenden Muster beschriebenen Zeichen und Zeichenfolgen, einschließlich der Zeichenfolgen "azure-devices.<!--no-hyperlink-->net" und "SharedAccessKey".
+Die Zeichenfolge "HostName" gefolgt von den Zeichen und Zeichenfolgen im folgenden Muster, einschließlich der Zeichenfolgen "azure-devices.<!--no-hyperlink-->net" und "SharedAccessKey".
 
 ### <a name="pattern"></a>Muster
 
 - die Zeichenfolge "HostName"
 - Null bis zwei Leerzeichen
-- Ein Gleichheitszeichen (=)
+- ein Gleichheitszeichen (=)
 - Null bis zwei Leerzeichen
-- Beliebige Kombination aus 1-200 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- beliebige Kombination aus 1-200 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
 - die Zeichenfolge "azure-devices.<!--no-hyperlink-->net"
-- Beliebige Kombination aus 1-200 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- beliebige Kombination aus 1-200 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
 - die Zeichenfolge "SharedAccessKey"
 - Null bis zwei Leerzeichen
-- Ein Gleichheitszeichen (=)
+- ein Gleichheitszeichen (=)
 - Null bis zwei Leerzeichen
-- Beliebige Kombination aus 43 Klein- oder Großbuchstaben, Ziffern, Schrägstrich (/) oder Pluszeichen (+)
-- Ein Gleichheitszeichen (=)
+- beliebige Kombination aus 43 Klein- oder Großbuchstaben, Ziffern, Schrägstrich (/) oder Pluszeichen (+)
+- ein Gleichheitszeichen (=)
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -1314,9 +1314,9 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck CEP_Regex_AzureIoTConnectionString findet Inhalte, die dem Muster entsprechen.
-- Der reguläre Ausdruck CEP_CommonExampleKeywords findet keine Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Der reguläre Ausdruck CEP_Regex_AzureIoTConnectionString nach Inhalten, die dem Muster entsprechen.
+- Der reguläre Ausdruck CEP_CommonExampleKeywords findet keinen Inhalt, der dem Muster entspricht.
 
 ```xml
 <!--Azure IoT Connection String-->
@@ -1339,24 +1339,24 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - contoso
 - fabrikam
 - northwind
-- Sandbox
+- Sandkasten
 - onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="azure-publish-setting-password"></a>Kennwort für Azure-Veröffentlichungseinstellung
+## <a name="azure-publish-setting-password"></a>Azure-Veröffentlichungseinstellungskennwort
 
 ### <a name="format"></a>Format
 
-Die Zeichenfolge "userpwd=", gefolgt von einer alphanumerischen Zeichenfolge.
+Die Zeichenfolge "userpwd=" gefolgt von einer alphanumerischen Zeichenfolge.
 
 ### <a name="pattern"></a>Muster
 
 - die Zeichenfolge "userpwd="
-- Beliebige Kombination aus 60 Kleinbuchstaben oder Ziffern
-- Anführungszeichen (")
+- beliebige Kombination aus 60 Kleinbuchstaben oder Ziffern
+- anführungszeichen (")
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -1364,9 +1364,9 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck CEP_Regex_AzurePublishSettingPasswords findet Inhalte, die dem Muster entsprechen.
-- Der reguläre Ausdruck CEP_CommonExampleKeywords findet keine Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Der reguläre Ausdruck CEP_Regex_AzurePublishSettingPasswords, der dem Muster entspricht.
+- Der reguläre Ausdruck CEP_CommonExampleKeywords findet keinen Inhalt, der dem Muster entspricht.
 
 
 ```xml
@@ -1390,14 +1390,14 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - contoso
 - fabrikam
 - northwind
-- Sandbox
+- Sandkasten
 - onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="azure-redis-cache-connection-string"></a>Verbindungszeichenfolge des Azure Redis-Caches
+## <a name="azure-redis-cache-connection-string"></a>Azure Redis-Cacheverbindungszeichenfolge
 
 ### <a name="format"></a>Format
 
@@ -1406,13 +1406,13 @@ Die Zeichenfolge "redis.cache.windows.<!--no-hyperlink-->net" gefolgt von den Im
 ### <a name="pattern"></a>Muster
 
 - die Zeichenfolge "redis.cache.windows.<!--no-hyperlink-->net"
-- Beliebige Kombination aus 1-200 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- beliebige Kombination aus 1-200 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
 - die Zeichenfolge "password" oder "pwd"
 - Null bis zwei Leerzeichen
-- Ein Gleichheitszeichen (=)
+- ein Gleichheitszeichen (=)
 - Null bis zwei Leerzeichen
-- Eine beliebige Kombination aus 43 Zeichen, die Klein- oder Großbuchstaben, Ziffern, Schrägstrich (/) oder Pluszeichen (+) sind
-- Ein Gleichheitszeichen (=)
+- beliebige Kombination aus 43 Zeichen, die Klein- oder Großbuchstaben, Ziffern, Schrägstrich (/) oder Pluszeichen (+) sind
+- ein Gleichheitszeichen (=)
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -1420,9 +1420,9 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck CEP_Regex_AzureRedisCacheConnectionString findet Inhalte, die dem Muster entsprechen.
-- Der reguläre Ausdruck CEP_CommonExampleKeywords findet keine Inhalte, die dem Muster entsprechen.
+- Der reguläre Ausdruck CEP_CommonExampleKeywords findet keinen Inhalt, der dem Muster entspricht.
 
 ```xml
 <!--Azure Redis Cache Connection String-->
@@ -1445,7 +1445,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - contoso
 - fabrikam
 - northwind
-- Sandbox
+- Sandkasten
 - onebox
 - localhost
 - 127.0.0.1
@@ -1456,17 +1456,17 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="format"></a>Format
 
-Die Zeichenfolge "sig" gefolgt von den Im folgenden Muster beschriebenen Zeichen und Zeichenfolgen.
+Die Zeichenfolge "sig" gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster beschrieben sind.
 
 ### <a name="pattern"></a>Muster
 
 - die Zeichenfolge "sig"
 - Null bis zwei Leerzeichen
-- Ein Gleichheitszeichen (=)
+- ein Gleichheitszeichen (=)
 - Null bis zwei Leerzeichen
-- Beliebige Kombination aus 43 bis 53 Zeichen, die Klein- oder Großbuchstaben, Ziffern oder das Prozentzeichen (%) sind
+- beliebige Kombination aus 43 bis 53 Zeichen, die Klein- oder Großbuchstaben, Ziffern oder das Prozentzeichen (%) sind
 - die Zeichenfolge "%3d"
-- Ein beliebiges Zeichen, bei dem es sich nicht um klein- oder groß geschriebene Buchstaben, Ziffern oder Prozentzeichen (%) handelt
+- jedes Zeichen, das kein Klein- oder Großbuchstabe, keine Ziffer oder kein Prozentzeichen ist (%)
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -1474,8 +1474,8 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck CEP_Regex_AzureSAS inhalt, der dem Muster entspricht.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Der reguläre Ausdruck CEP_Regex_AzureSAS findet Inhalte, die dem Muster entsprechen.
 
 ```xml
 <!--Azure SAS-->
@@ -1486,7 +1486,7 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 </Entity>
 ```
 
-## <a name="azure-service-bus-connection-string"></a>Verbindungszeichenfolge für Azure-Dienstbus
+## <a name="azure-service-bus-connection-string"></a>Azure-Dienstbusverbindungszeichenfolge
 
 ### <a name="format"></a>Format
 
@@ -1496,17 +1496,17 @@ Die Zeichenfolge "EndPoint" gefolgt von den Im folgenden Muster beschriebenen Ze
 
 - die Zeichenfolge "EndPoint"
 - Null bis zwei Leerzeichen
-- Ein Gleichheitszeichen (=)
+- ein Gleichheitszeichen (=)
 - Null bis zwei Leerzeichen
-- Beliebige Kombination aus 1-200 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- beliebige Kombination aus 1-200 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
 - die Zeichenfolge "servicebus.windows.<!--no-hyperlink-->net"
-- Beliebige Kombination aus 1-200 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- beliebige Kombination aus 1-200 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
 - die Zeichenfolge "SharedAccessKey"
 - Null bis zwei Leerzeichen
-- Ein Gleichheitszeichen (=)
+- ein Gleichheitszeichen (=)
 - Null bis zwei Leerzeichen
-- Eine beliebige Kombination aus 43 Zeichen, die Klein- oder Großbuchstaben, Ziffern, Schrägstrich (/) oder Pluszeichen (+) sind
-- Ein Gleichheitszeichen (=)
+- beliebige Kombination aus 43 Zeichen, die Klein- oder Großbuchstaben, Ziffern, Schrägstrich (/) oder Pluszeichen (+) sind
+- ein Gleichheitszeichen (=)
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -1514,9 +1514,9 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck CEP_Regex_AzureServiceBusConnectionString findet Inhalte, die dem Muster entsprechen.
-- Der reguläre Ausdruck CEP_CommonExampleKeywords findet keine Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Der reguläre Ausdruck CEP_Regex_AzureServiceBusConnectionString, der dem Muster entspricht.
+- Der reguläre Ausdruck CEP_CommonExampleKeywords findet keinen Inhalt, der dem Muster entspricht.
 
 ```xml
 <!--Azure Service Bus Connection String-->
@@ -1539,31 +1539,31 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - contoso
 - fabrikam
 - northwind
-- Sandbox
+- Sandkasten
 - onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="azure-storage-account-key"></a>Azure Storage Account Key
+## <a name="azure-storage-account-key"></a>Azure-Speicherkontoschlüssel
 
 ### <a name="format"></a>Format
 
-Die Zeichenfolge "DefaultEndpointsProtocol" gefolgt von den Im folgenden Muster beschriebenen Zeichen und Zeichenfolgen, einschließlich der Zeichenfolge "AccountKey".
+Die Zeichenfolge "DefaultEndpointsProtocol" gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster umrissen werden, einschließlich der Zeichenfolge "AccountKey".
 
 ### <a name="pattern"></a>Muster
 
 - die Zeichenfolge "DefaultEndpointsProtocol"
 - Null bis zwei Leerzeichen
-- Ein Gleichheitszeichen (=)
+- ein Gleichheitszeichen (=)
 - Null bis zwei Leerzeichen
-- Beliebige Kombination aus 1-200 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- beliebige Kombination aus 1-200 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
 - die Zeichenfolge "AccountKey"
 - Null bis zwei Leerzeichen
-- Ein Gleichheitszeichen (=)
+- ein Gleichheitszeichen (=)
 - Null bis zwei Leerzeichen
-- Eine beliebige Kombination aus 86 Zeichen, die Klein- oder Großbuchstaben, Ziffern, Schrägstrich (/) oder Pluszeichen (+) sind
+- beliebige Kombination aus 86 Zeichen, die Klein- oder Großbuchstaben, Ziffern, Schrägstrich (/) oder Pluszeichen (+) sind
 - zwei Gleichheitszeichen (=)
 
 ### <a name="checksum"></a>Prüfsumme
@@ -1572,10 +1572,10 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck CEP_Regex_AzureStorageAccountKey findet Inhalte, die dem Muster entsprechen.
-- Der reguläre Ausdruck CEP_AzureEmulatorStorageAccountFilter findet keine Inhalte, die dem Muster entsprechen.
-- Der reguläre Ausdruck CEP_CommonExampleKeywords findet keine Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Der reguläre Ausdruck CEP_Regex_AzureStorageAccountKey, der dem Muster entspricht.
+- Der reguläre Ausdruck CEP_AzureEmulatorStorageAccountFilter findet keinen Inhalt, der dem Muster entspricht.
+- Der reguläre Ausdruck CEP_CommonExampleKeywords findet keinen Inhalt, der dem Muster entspricht.
 
 ```xml
 <!--Azure Storage Account Key-->
@@ -1605,7 +1605,7 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - contoso
 - fabrikam
 - northwind
-- Sandbox
+- Sandkasten
 - onebox
 - localhost
 - 127.0.0.1
@@ -1616,12 +1616,12 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 
 ### <a name="format"></a>Format
 
-Eine beliebige Kombination aus 86 Klein- oder Großbuchstaben, Ziffern, Schrägstrich (/) oder Pluszeichen (+), vor oder gefolgt von den Im folgenden Muster beschriebenen Zeichen.
+Jede Kombination aus 86 Klein- oder Großbuchstaben, Ziffern, Schrägstrich (/) oder Pluszeichen (+), vor oder gefolgt von den Zeichen, die im folgenden Muster beschrieben sind.
 
 ### <a name="pattern"></a>Muster
 
-- Null bis zu einem der Größer-als-Zeichen (>), Apostroph ('), Gleichheitszeichen (=), Anführungszeichen (") oder Nummernzeichen (#)
-- Eine beliebige Kombination aus 86 Zeichen, die Klein- oder Großbuchstaben, Ziffern, Schrägstrich (/) oder Pluszeichen (+) sind
+- Null zu einem der größeren Zeichen (>), Apostroph ('), Gleichheitszeichen (=), Anführungszeichen (") oder Nummernzeichen (#)
+- beliebige Kombination aus 86 Zeichen, die Klein- oder Großbuchstaben, Ziffern, Schrägstrich (/) oder Pluszeichen (+) sind
 - zwei Gleichheitszeichen (=)
 
 ### <a name="checksum"></a>Prüfsumme
@@ -1630,8 +1630,8 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck CEP_Regex_AzureStorageAccountKeyGeneric findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Der reguläre Ausdruck CEP_Regex_AzureStorageAccountKeyGeneric nach Inhalten, die dem Muster entsprechen.
 
 ```xml
 <!--Azure Storage Account Key (Generic)-->
@@ -1657,9 +1657,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_belgium_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus `Keywords_eu_driver's_license_number` oder `Keywords_belgium_eu_driver's_license_number` wurde gefunden.
+- Ein Schlüsselwort aus `Keywords_eu_driver's_license_number` oder `Keywords_belgium_eu_driver's_license_number` wird gefunden.
     
 ```xml
       <!-- Belgium Driver's License Number -->
@@ -1677,7 +1677,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 ### <a name="keywords"></a>Schlüsselwörter
 
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -1689,8 +1689,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -1702,31 +1702,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -1737,9 +1737,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -1748,72 +1748,72 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
-#### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver A0 s_license_number
+#### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver's_license_number
 
 - rijbewijs
 - rijbewijsnummer
 - führerschein
 - führerscheinnummer
-- füscheinerscheinnummer
-- langsamererschein
-- fuscheinerschein
-- langsamererscheinnummer
-- fugifterscheinnummer
+- füehrerscheinnummer
+- fuhrerschein
+- fuehrerschein
+- fuhrerscheinnummer
+- fuehrerscheinnummer
 - permis de conduire
 - numéro permis conduire
 
 
-## <a name="belgium-national-number"></a>Nationale belgische Nummer
+## <a name="belgium-national-number"></a>Nationale Belgische Nummer
 
 ### <a name="format"></a>Format
 
@@ -1822,11 +1822,11 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 ### <a name="pattern"></a>Muster
 
 11 Ziffern plus Trennzeichen:
-- sechs Ziffern und zwei optionale Punkte im Format YY. MM.DD für das Geburtsdatum 
+- sechs Ziffern und zwei optionale Punkte im Format "YY". MM.DD für Geburtsdatum 
 - Ein optionales Trennzeichen von Punkt, Strich, Leerzeichen 
-- drei fortlaufende Ziffern (ungerade für 15- und 15-5-800er-Ziffern, auch für Frauen) 
+- drei sequenzielle Ziffern (ungerade für Männer, auch für Frauen) 
 - Ein optionales Trennzeichen von Punkt, Strich, Leerzeichen 
-- Zwei Prüfziffern
+- zwei Prüfziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -1834,12 +1834,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_belgium_national_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_belgium_national_number gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_belgium_national_number findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -1867,7 +1867,7 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - identifiant national
 - identifiantnational #
 - identificatie
-- identification
+- Identifikation
 - identifikation
 - identifikationsnummer
 - identifizierung
@@ -1875,9 +1875,9 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - identiteit
 - identiteitskaart
 - identity
-- vorn
+- inschrift
 - nationale Nummer
-- national register
+- nationales Register
 - nationalnumber #
 - nationalnumber
 - nif #
@@ -1893,7 +1893,7 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - personalausweis
 - personalidnumber #
 - registratie
-- registrierung
+- Registrierung
 - registrationsnumme
 - registrierung
 - social security number
@@ -1901,15 +1901,15 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - ssn
 - steuernummer
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -1933,14 +1933,14 @@ nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
- Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+ Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_belgium_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_belgium_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck findet Datum im Format TT MM JJ oder ein `Regex_eu_passport_date2` Schlüsselwort aus oder wird `Keywords_eu_passport_date` `Keywords_belgium_eu_passport_number` gefunden
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_belgium_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck findet Datum im Format `Regex_eu_passport_date2` DD MM YY oder ein Schlüsselwort aus oder wird `Keywords_eu_passport_date` `Keywords_belgium_eu_passport_number` gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_belgium_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_belgium_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_belgium_eu_passport_number` wird gefunden. 
 
 ```xml
       <!-- Belgium Passport Number -->
@@ -1972,12 +1972,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -1991,39 +1991,39 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - paspoortnummer
 - paspoortnummers
 - Passeport carte
-- Passeport 2013
+- Passeport livre
 - Pass-Nr
 - Passnummer
-- reisepass kein
+- kein
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
-## <a name="belgium-value-added-tax-number"></a>Umsatzsteuernummer für Belgien
+## <a name="belgium-value-added-tax-number"></a>Belgische Mehrwertsteuernummer
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-Alphanumerisches Muster mit 12 Zeichen
+12-Zeichen-alphanumerisches Muster
 
 ### <a name="pattern"></a>Muster
 
-Alphanumerisches Muster mit 12 Zeichen:
+Alphanumerisches 12-Zeichen-Muster:
 
-- Ein Buchstabe B oder b
-- Ein Buchstabe E oder e
-- Eine Ziffer 0
+- Buchstabe B oder b
+- ein Buchstabe E oder e
+- eine Ziffer 0
 - eine Ziffer von 1 bis 9
-- Optionaler Punkt oder Bindestrich oder Leerzeichen
+- optionaler Punkt oder Bindestrich oder Leerzeichen
 - vier Ziffern
-- Optionaler Punkt oder Bindestrich oder Leerzeichen
+- optionaler Punkt oder Bindestrich oder Leerzeichen
 - vier Ziffern
 
 
@@ -2034,11 +2034,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_belgium_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_belgium_value_added_tax_number gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_belgium_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -2059,7 +2059,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 #### <a name="keyword_belgium_value_added_tax_number"></a>Keyword_belgium_value_added_tax_number
 
 - nº tva
-- uSt-Nummer
+- Umsatzsteuernummer
 - vat no
 - numéro t.v.a
 - umsatzsteuer-identifikationsnummer
@@ -2069,7 +2069,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - vat #
 
 
-## <a name="brazil-cpf-number"></a>Brazil CPF number
+## <a name="brazil-cpf-number"></a>Brasilien CPF-Nummer
 
 ### <a name="format"></a>Format
 
@@ -2083,7 +2083,7 @@ Formatiert:
 - drei Ziffern
 - ein Zeitraum
 - drei Ziffern
-- Ein Bindestrich
+- ein Bindestrich
 - zwei Ziffern, die Prüfziffern sind
 
 Unformatiert:
@@ -2095,12 +2095,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_brazil_cpf findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_brazil_cpf gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_brazil_cpf findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -2132,7 +2132,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Receita 
 
    
-## <a name="brazil-legal-entity-number-cnpj"></a>Brazil legal entity number (CNPJ)
+## <a name="brazil-legal-entity-number-cnpj"></a>#A0 (CNPJ)
 
 ### <a name="format"></a>Format
 
@@ -2147,9 +2147,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drei Ziffern 
 - ein Zeitraum 
 - drei Ziffern (diese ersten acht Ziffern sind die Registrierungsnummer) 
-- Schrägstrich 
-- Vierstellige Zweigstellennummer 
-- Ein Bindestrich 
+- ein Schrägstrich 
+- vierstellige Verzweigungsnummer 
+- ein Bindestrich 
 - zwei Ziffern, die Prüfziffern sind
 
 ### <a name="checksum"></a>Prüfsumme
@@ -2158,12 +2158,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_brazil_cnpj findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_brazil_cnpj gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_brazil_cnpj findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -2205,7 +2205,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Empresa 
 
    
-## <a name="brazil-national-identification-card-rg"></a>Brasilien – Nationale Identifikationskarte (RG)
+## <a name="brazil-national-identification-card-rg"></a>Brasilien National Identification Card (RG)
 
 ### <a name="format"></a>Format
 
@@ -2221,13 +2221,13 @@ Registro Geral (altes Format):
 - drei Ziffern 
 - ein Zeitraum 
 - drei Ziffern 
-- Ein Bindestrich 
-- Eine Ziffer, die eine Prüfziffer ist
+- ein Bindestrich 
+- eine Ziffer, die eine Prüfziffer ist
 
 Registro de Identidade (RIC) (neues Format):
 - 10 Ziffern 
-- Ein Bindestrich 
-- Eine Ziffer, die eine Prüfziffer ist
+- ein Bindestrich 
+- eine Ziffer, die eine Prüfziffer ist
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -2235,7 +2235,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_brazil_rg findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_brazil_rg gefunden.
 - Die Prüfsumme stimmt.
@@ -2261,11 +2261,11 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - número de rregistro
 - registro de Iidentidade 
 - registro geral
-- RG (bei diesem Schlüsselwort wird die Kleinschreibung beachtet) 
-- RIC (bei diesem Schlüsselwort wird die Kleinschreibung beachtet) 
+- RG (bei diesem Schlüsselwort wird die Zwischen-/Kleinschreibung beachtet) 
+- RIC (bei diesem Schlüsselwort wird die Zwischen-/Kleinschreibung beachtet) 
 
 
-## <a name="bulgaria-drivers-license-number"></a>Führerscheinnummer für Bulgarien
+## <a name="bulgaria-drivers-license-number"></a>Kennzeichen des Bulgarien-Führerscheins
 
 ### <a name="format"></a>Format
 
@@ -2281,9 +2281,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_bulgaria_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_bulgaria_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_bulgaria_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Bulgaria Driver's License Number -->
@@ -2300,7 +2300,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -2312,8 +2312,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -2325,31 +2325,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -2360,9 +2360,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -2371,58 +2371,58 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver A0 s_license_number
+#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver's_license_number
 
 - свидетелство за управление на мпс
 - свидетелство за управление на моторно превозно средство
@@ -2430,13 +2430,13 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - шофьорска книжка
 - шофьорски книжки
 
-## <a name="bulgaria-uniform-civil-number"></a>Bulgarien uniform civil number
+## <a name="bulgaria-uniform-civil-number"></a>Uniforme zivile Nummer für Bulgarien
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -2448,8 +2448,8 @@ Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
   
 - sechs Ziffern, die dem Geburtsdatum entsprechen (YYMMDD) 
 - zwei Ziffern, die der Geburtsreihenfolge entsprechen
-- eine Ziffer, die dem Geschlecht entspricht: Eine gleichmäßige Ziffer für männlich und eine ungerade Ziffer für Frau
-- Eine Prüfziffer
+- eine Ziffer, die dem Geschlecht entspricht: Eine gleichmäßige Ziffer für männlich und eine ungerade Ziffer für frau
+- eine Prüfziffer
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -2457,11 +2457,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_bulgaria_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_bulgaria_eu_national_id_card` gefunden. 
+- Es wird ein  `Keywords_bulgaria_eu_national_id_card` Schlüsselwort aus gefunden. 
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_bulgaria_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -2489,7 +2489,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - bnn
 - bucn #
 - bucn
-- edinen druckerhdanski nomer
+- edinen grazhdanski nomer
 - egn #
 - egn
 - identification number
@@ -2497,21 +2497,21 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - nationale Nummer
 - nationalnumber #
 - nationalnumber
-- Persönliche ID
-- persönlich nein
-- Persönliche Nummer
+- persönliche ID
+- persönliche Nein
+- persönliche Nummer
 - personalidnumber #
 - social security number
 - ssn #
 - ssn
 - Uniform civil id
-- Uniform civil no
-- Uniform civil number
+- uniform civil no
+- Einheitliche zivile Nummer
 - uniformcivilno #
 - uniformcivilno
 - uniformcivilnumber #
 - uniformcivilnumber
-- Eindeutige Nummer der Bürgerschaft
+- eindeutige Staatsbürgerschaftsnummer
 - егн #
 - егн
 - единен граждански номер
@@ -2522,14 +2522,14 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - национален номер
 - номер на гражданството
 - униформ id
-- униформ граждански id
+- унижорм граждански id
 - униформ граждански не
 - униформ граждански номер
-- униформгражданскиid #
+- унижормгражданскиid #
 - униформгражданскине. #
 
 
-## <a name="bulgaria-passport-number"></a>Bulgarien Reisepassnummer
+## <a name="bulgaria-passport-number"></a>Reisepassnummer für Bulgarien
 
 ### <a name="format"></a>Format
 
@@ -2545,14 +2545,14 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_bulgaria_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_bulgaria_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Das Datum im Format TT.MM.JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_bulgaria_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Datum im Format DD.MM.YYYY, oder es wird ein Schlüsselwort `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_bulgaria_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_bulgaria_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_bulgaria_eu_passport_number` wird gefunden. 
 
 ```xml
       <!-- Bulgaria Passport Number -->
@@ -2581,12 +2581,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -2600,7 +2600,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 ## <a name="canada-bank-account-number"></a>Kanadische Bankkontonummer
@@ -2615,9 +2615,9 @@ Eine kanadische Bankkontonummer ist 7 oder 12 Ziffern.
 
 Eine kanadische Bankkontonummer setzt sich wie folgt zusammen:
 - fünf Ziffern 
-- Ein Bindestrich 
-- drei Ziffern ODER
-- a zero "0" 
+- ein Bindestrich 
+- drei Ziffern OR
+- null "0" 
 - acht Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -2626,12 +2626,12 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Regex_canada_bank_account_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_canada_bank_account_number wurde gefunden.
 - Der reguläre Ausdruck Regex_canada_bank_account_transit_number findet Inhalte, die dem Muster entsprechen.
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Regex_canada_bank_account_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_canada_bank_account_number wurde gefunden.
 
@@ -2693,7 +2693,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_[province_name]_drivers_license_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_[province_name]_drivers_license_name wurde gefunden.
 - Ein Schlüsselwort aus Keyword_canada_drivers_license wurde gefunden.
@@ -2794,9 +2794,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Driver'Lic
 - Driver'Lics
 - Driver'License
-- Driver'Licenses
-- Driver'Licence
-- Driver'Licences
+- Treiberlizenzen
+- Führerschein
+- Treiberlizenzen
 - Driver'Lic
 - Driver'Lics
 - Driver' License
@@ -2831,7 +2831,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - identification #s
 - identification card
 - identification cards
-- identification 
+- Identifikation 
 - DL #
 - DLS # 
 - CDL # 
@@ -2863,9 +2863,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Driver'Lic # 
 - Driver'Lics # 
 - Driver'License # 
-- Driver'Licenses # 
-- Driver'Licence # 
-- Driver'Licences # 
+- Treiberlizenzen # 
+- Führerschein # 
+- Treiberlizenzen # 
 - Driver' Lic# 
 - Driver' Lics# 
 - Driver' License# 
@@ -2892,7 +2892,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - idcard # 
 - identification card# 
 - identification cards# 
-- identification # 
+- Identifikation # 
 
    
 ## <a name="canada-health-service-number"></a>Kanadische Gesundheitsdienstnummer
@@ -2911,7 +2911,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_canada_health_service_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_canada_health_service_number wurde gefunden.
 
@@ -2937,9 +2937,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - speciality services
 - automobile accident
 - patient hospital
-- trigiatrist
+- psychiatrist
 - workers compensation
-- Disability
+- Behinderung
 
       
 ## <a name="canada-passport-number"></a>Kanadische Reisepassnummer
@@ -2958,9 +2958,9 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_canada_passport_number findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus Keyword_canada_passport_number oder Keyword_passport wurde gefunden.
+- Ein Schlüsselwort aus Keyword_canada_passport_number oder Keyword_passport gefunden.
 
 ```xml 
 <!-- Canada Passport Number -->
@@ -2999,7 +2999,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - passportnumber
 - パスポート
 - パスポート番号
-- ポ .
+- 2ポ007
 - パスポート＃
 - Numéro de passeport
 - Passeport n °
@@ -3010,7 +3010,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Passeportn °
 
    
-## <a name="canada-personal-health-identification-number-phin"></a>Kanadische Personal Health Identification Number (PHIN)
+## <a name="canada-personal-health-identification-number-phin"></a>Kanadische Persönliche Gesundheitsidentifikationsnummer (PHIN)
 
 ### <a name="format"></a>Format
 
@@ -3026,9 +3026,9 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_canada_phin findet Inhalte, die dem Muster entsprechen.
-- Es werden mindestens zwei Schlüsselwörter aus Keyword_canada_phin oder Keyword_canada_provinces gefunden.
+- Es werden mindestens zwei Schlüsselwörter Keyword_canada_phin oder Keyword_canada_provinces gefunden.
 
 ```xml
 <!-- Canada PHIN -->
@@ -3068,7 +3068,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Nunavut
 - Quebec
 - Northwest Territories
-- Toronto
+- Ontario
 - British Columbia
 - Alberta
 - Saskatchewan
@@ -3091,9 +3091,9 @@ neun Ziffern mit optionalen Bindestrichen oder Leerzeichen
 
 Formatiert:
 - drei Ziffern 
-- Ein Bindestrich oder Leerzeichen 
+- ein Bindestrich oder Leerzeichen 
 - drei Ziffern 
-- Ein Bindestrich oder Leerzeichen 
+- ein Bindestrich oder Leerzeichen 
 - drei Ziffern
 
 Unformatiert: neun Ziffern
@@ -3104,7 +3104,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_canadian_sin findet Inhalte, die dem Muster entsprechen.
 - Mindestens zwei dieser eine beliebige Kombination der folgenden Aktionen aus:
     - Ein Schlüsselwort aus Keyword_sin wurde gefunden.
@@ -3112,7 +3112,7 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
     - Die Funktion Func_eu_date findet ein Datum in das richtige Datumsformat.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_unformatted_canadian_sin findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_sin wurde gefunden.
 - Die Prüfsumme stimmt.
@@ -3142,7 +3142,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - sin 
 - social insurance 
 - numero d'assurance sociale 
-- sins 
+- sünd 
 - ssn 
 - ssns 
 - social security 
@@ -3165,22 +3165,22 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Date of Birth 
 
    
-## <a name="chile-identity-card-number"></a>Chile Identity Card Number
+## <a name="chile-identity-card-number"></a>Chile-Identitätskartennummer
 
 ### <a name="format"></a>Format
 
-Sieben bis acht Ziffern plus Trennzeichen für eine Prüfziffer oder einen Buchstaben
+sieben bis acht Ziffern plus Trennzeichen einer Prüfziffer oder eines Buchstabens
 
 ### <a name="pattern"></a>Muster
 
-Sieben bis acht Ziffern plus Trennzeichen:
+sieben bis acht Ziffern plus Trennzeichen:
 - ein bis zwei Ziffern 
-- Optionaler Zeitraum 
+- optionaler Zeitraum 
 - drei Ziffern 
-- Optionaler Zeitraum 
+- optionaler Zeitraum 
 - drei Ziffern 
-- Ein Bindestrich 
-- Eine Ziffer oder ein Buchstabe (ohne Schreibung), bei der es sich um eine Prüfziffer handelt
+- ein Strich 
+- eine Ziffer oder ein Buchstabe (ohne Zwischenfall), bei der es sich um eine Prüfziffer handelt
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -3188,13 +3188,13 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion Func_chile_id_card findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Die Funktion Func_chile_id_card nach Inhalten, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_chile_id_card gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion Func_chile_id_card findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Die Funktion Func_chile_id_card nach Inhalten, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -3221,12 +3221,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - national id
 - número de identificación nacional
 - rol único nacional
-- rol único enario
+- rol único tributario
 - RUN
 - RUT
 - tarjeta de identificación
 - Rol Unico Nacional
-- Rol UnicoArio
+- Rol Unico Tributario
 - RUN #
 - RUT #
 - nationaluniqueroleID #
@@ -3235,19 +3235,19 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - identidad número
 - numero identificacion
 - identidad numero
-- Chilean identity no.
-- Chileische Identitätsnummer
-- Chileische Identität #
-- Eindeutiges Steuerregistrierungsregister
-- Eindeutige Rolle "Auf der Welt"
+- Chilenische Identität Nein.
+- Chilenische Identitätsnummer
+- Chilenische Identität #
+- Eindeutige Steuerregistrierung
+- Eindeutige Nebenflussrolle
 - Eindeutige Steuerrolle
-- Eindeutige 15-1-Zahl
+- Eindeutige Nebenflussnummer
 - Eindeutige nationale Nummer
 - Eindeutige nationale Rolle
-- National eindeutige Rolle
-- Chile identity no.
-- Chile Identity Number
-- Chile identity #
+- Nationale eindeutige Rolle
+- Chile Identity No.
+- Chile-Identitätsnummer
+- Chile-Identität #
 
    
 ## <a name="china-resident-identity-card-prc-number"></a>China Resident Identity Card (PRC) number
@@ -3260,9 +3260,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 18 Ziffern:
 - sechs Ziffern, die ein Adresscode sind 
-- acht Ziffern im Format "YYYYMMDD", die das Geburtsdatum sind 
+- acht Ziffern im Format YYYYMMDD, die das Geburtsdatum sind 
 - drei Ziffern, die ein Bestellcode sind 
-- Eine Ziffer, die eine Prüfziffer ist
+- eine Ziffer, die eine Prüfziffer ist
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -3270,12 +3270,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_china_resident_id findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_china_resident_id gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_china_resident_id findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -3312,11 +3312,11 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="format"></a>Format
 
-14 bis 16 Ziffern, die formatiert oder unformatiert (dddddddddd) sein können und den Luhn-Test bestehen müssen.
+14 bis 16 Ziffern, die formatiert oder unformatiert (ddddddddddd) sein können und den Luhn-Test bestehen müssen.
 
 ### <a name="pattern"></a>Muster
 
-Komplexes und robustes Muster, das Karten aller wichtigen Marken weltweit erkennt, einschließlich Visa, MasterCard, Discover Card, DEBIT, American Express, Gift Cards und Diner-Karten.
+Komplexes und robustes Muster, das Karten von allen wichtigen Marken weltweit erkennt, einschließlich Visa, MasterCard, Discover Card, JCB, American Express, Geschenkkarten und Dinerkarten.
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -3324,7 +3324,7 @@ Ja, die Luhn-Prüfsumme
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_credit_card findet Inhalte, die dem Muster entsprechen.
 - Eine der folgenden Bedingungen trifft zu:
     - Ein Schlüsselwort aus Keyword_cc_verification wurde gefunden.
@@ -3332,7 +3332,7 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
     - Die Funktion Func_expiration_date findet ein Datum im richtigen Datumsformat.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_credit_card findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -3421,7 +3421,7 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - validade
 - valor
 - vencimento
-- transaction
+- Transaktion
 - Transaktionsnummer
 - Referenznummer
 - セキュリティコード
@@ -3437,19 +3437,19 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - americanexpress
 - americano espresso
 - Visa
-- zu
+- mastercard
 - master card
 - mc
-- unter
+- mastercards
 - master cards
 - diner's Club
 - diners club
-- diners in
+- dinersclub
 - discover
 - discover card
 - discovercard
 - discover cards
-- JON
+- JCB
 - BrandSmart
 - japanese card bureau
 - carte blanche
@@ -3472,7 +3472,7 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - card numbers
 - creditcard
 - credit cards
-- creditcards
+- Kreditkarten
 - ccn
 - card holder
 - cardholder
@@ -3498,12 +3498,12 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - Cardno
 - Unternehmenskarte
 - Unternehmenskarten
-- Kartentyp
+- Typ der Karte
 - Kartenkontonummer
 - Kartenmitgliedskonto
 - Cardmember Acct.
 - card no.
-- card no
+- Karte nein
 - card number
 - carte bancaire
 - carte de crédit
@@ -3587,7 +3587,7 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - アメックス
 - アメリカンエクスプレス
 - アメリカン エクスプレス
-- Visa
+- Visa 2012
 - Visa
 - マスターカード
 - マスター カード
@@ -3606,11 +3606,11 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - デビットカード
 
 
-## <a name="croatia-drivers-license-number"></a>Croatia driver's license number
+## <a name="croatia-drivers-license-number"></a>Kroatische Führerscheinnummer
 
 ### <a name="format"></a>Format
 
-Acht Ziffern ohne Leerzeichen und Trennzeichen
+acht Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -3622,10 +3622,10 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
   
 - Der reguläre Ausdruck  `Regex_croatia_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus `Keywords_eu_driver's_license_number` oder `Keywords_croatia_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus `Keywords_eu_driver's_license_number` oder `Keywords_croatia_eu_driver's_license_number` wird gefunden. 
 
 ```xml
       <!-- Croatia Driver's License Number -->
@@ -3642,7 +3642,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -3654,8 +3654,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -3667,31 +3667,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -3702,9 +3702,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -3713,65 +3713,65 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver A0 s_license_number
+#### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver's_license_number
 
 - vozačka dozvola
 - vozačke dozvole
 
 
-## <a name="croatia-identity-card-number"></a>Kreditkartennummer für Kroatien
-Diese Entität des Typs "Vertrauliche Informationen" ist im vertraulichen Informationstyp "Eu-Nationale Identifikationsnummer" enthalten. Es ist als eigenständige Entität für vertrauliche Informationstypen verfügbar.
+## <a name="croatia-identity-card-number"></a>Kroatische Identitätskartennummer
+Diese Entität vom Typ vertraulicher Informationen ist im vertraulichen Informationstyp "NATIONALE IDENTIFIKATIONSNUMMER" der EU enthalten. Es ist als eigenständige Entität vom Typ vertraulicher Informationen verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -3779,7 +3779,7 @@ neun Ziffern
 
 ### <a name="pattern"></a>Muster
 
-neun aufeinanderfolgende Ziffern
+neun aufeinander folgende Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -3787,7 +3787,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_croatia_id_card findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_croatia_id_card gefunden.
 
@@ -3805,7 +3805,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
-- grammstorski broj đana
+- majstorski broj grđana
 - Haupt-Citizen-Nummer
 - nacionalni identifikacijski broj
 - national identification number
@@ -3814,19 +3814,19 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - osobna iskaznica
 - osobni id
 - osobni identifikacijski broj
-- Persönliche Identifikationsnummer
-- tinzni broj
-- zeitzni identifikacijski broj
+- persönliche Identifikationsnummer
+- porenzni broj
+- porenzni identifikacijski broj
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -3835,7 +3835,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - tin #
 
 
-## <a name="croatia-passport-number"></a>Kroatien - Reisepassnummer
+## <a name="croatia-passport-number"></a>Kroatische Reisepassnummer
 
 ### <a name="format"></a>Format
 
@@ -3851,14 +3851,14 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_croatia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_croatia_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Das Datum im Format TT.MM.JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_croatia_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Datum im Format DD.MM.YYYY, oder es wird ein Schlüsselwort `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_croatia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_croatia_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_croatia_eu_passport_number` wird gefunden. 
     
 ```xml
       <!-- Croatia Passport Number -->
@@ -3887,12 +3887,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -3904,7 +3904,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - br. Putovnice
 - br putovnice
    
-## <a name="croatia-personal-identification-oib-number"></a>Kroatien – Persönliche Identifikationsnummer (OIB)
+## <a name="croatia-personal-identification-oib-number"></a>Kroatische Persönliche Identifikationsnummer (OIB)
 
 ### <a name="format"></a>Format
 
@@ -3914,7 +3914,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 11 Ziffern:
 - 10 Ziffern 
-- Die letzte Ziffer ist eine Prüfziffer.
+- Die letzte Ziffer ist eine Prüfziffer
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -3922,12 +3922,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_croatia_oib_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_croatia_eu_tax_file_number gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_croatia_oib_number findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -3948,7 +3948,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
-- grammstorski broj đana
+- majstorski broj grđana
 - Haupt-Citizen-Nummer
 - nacionalni identifikacijski broj
 - national identification number
@@ -3957,19 +3957,19 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - osobna iskaznica
 - osobni id
 - osobni identifikacijski broj
-- Persönliche Identifikationsnummer
-- tinzni broj
-- zeitzni identifikacijski broj
+- persönliche Identifikationsnummer
+- porenzni broj
+- porenzni identifikacijski broj
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -3977,68 +3977,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - tin no
 - tin #
 
-## <a name="croatia-social-security-number-or-equivalent-identification"></a>Croatia social security number or equivalent identification
-Diese Entität des Typs "Vertrauliche Informationen" ist nur im Vertraulichen Informationstyp "EU-Sozialversicherungsnummer" oder "Äquivalente ID" verfügbar.
-
-### <a name="format"></a>Format
-
-11 Ziffern ohne Leerzeichen und Trennzeichen
-  
-### <a name="pattern"></a>Muster
-
-11 Ziffern:
-  
-- 10 Ziffern
-- Eine Prüfziffer
-    
-### <a name="checksum"></a>Prüfsumme
-
-Ja
-  
-### <a name="definition"></a>Definition
-
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-  
-- Die Funktion  `Func_croatia_eu_ssn_or_equivalent` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_croatia_eu_ssn_or_equivalent` gefunden. 
-    
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-  
-- Die Funktion  `Func_croatia_eu_ssn_or_equivalent` findet Inhalte, die dem Muster entsprechen. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_croatia_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Schlüsselwörter
-
-#### <a name="keywords_croatia_eu_ssn_or_equivalent"></a>Keywords_croatia_eu_ssn_or_equivalent
-
-- Persönliche Identifikationsnummer
-- Haupt-Citizen-Nummer
-- national identification number
-- social security number
-- nationalnumber #
-- ssn #
-- ssn
-- nationalnumber
-- bnn #
-- bnn
-- Persönliche ID-Nummer
-- personalidnumber #
-- oib
-- osobni identifikacijski broj
-
-## <a name="cyprus-drivers-license-number"></a>Führerscheinnummer für Zypern
+## <a name="cyprus-drivers-license-number"></a>Führerscheinnummer der Zyprischen Treiber
 
 ### <a name="format"></a>Format
 
@@ -4054,9 +3993,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_cyprus_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_cyprus_eu_driver's_license_number` wurde gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_cyprus_eu_driver's_license_number` wird gefunden.
 
 ```xml
       <!-- Cyprus Driver's License Number -->
@@ -4073,7 +4012,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -4085,8 +4024,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -4098,31 +4037,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -4133,9 +4072,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -4144,57 +4083,57 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
-#### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver A0 s_license_number
+#### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver's_license_number
 
 - άδεια οδήγησης
 - αριθμό άδειας οδήγησης
@@ -4205,9 +4144,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -4223,9 +4162,9 @@ nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_cyprus_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_cyprus_eu_national_id_card` gefunden. 
+- Es wird ein  `Keywords_cyprus_eu_national_id_card` Schlüsselwort aus gefunden. 
     
 ```xml 
       <!-- Cyprus Identity Card -->
@@ -4241,7 +4180,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
-- id card number
+- ID-Kartennummer
 - Identitätskartennummer
 - kimlik karti
 - national identification number
@@ -4253,11 +4192,11 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="format"></a>Format
 
-Ein Buchstabe gefolgt von 6-8 Ziffern ohne Leerzeichen oder Trennzeichen
+ein Buchstabe gefolgt von 6 bis 8 Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Ein Buchstabe gefolgt von sechs bis acht Ziffern
+ein Buchstabe gefolgt von sechs bis acht Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -4265,14 +4204,14 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_cyprus_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_cyprus_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_cyprus_eu_passport_date` findet Datum im Format TT/MM/JJJJ oder ein Schlüsselwort wurde `Keywords_cyprus_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_cyprus_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck `Regex_cyprus_eu_passport_date` findet Datum im Format DD/MM/JJJJ oder ein Schlüsselwort wird `Keywords_cyprus_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_cyprus_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_cyprus_eu_passport_number` wurde gefunden.  
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_cyprus_eu_passport_number` wird gefunden.  
     
 ```xml
       <!-- Cyprus Passport Number -->
@@ -4302,12 +4241,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -4337,9 +4276,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -4349,9 +4288,9 @@ Acht Ziffern und ein Buchstabe im angegebenen Muster
 
 acht Ziffern und ein Buchstabe:
   
-- "0" oder "9"
+- eine "0" oder "9"
 - sieben Ziffern
-- Ein Buchstabe (ohne Schreibung)
+- ein Buchstabe (ohne Zwischenfall)
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -4359,11 +4298,11 @@ nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_cyprus_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_cyprus_eu_tax_file_number` gefunden. 
+- Es wird ein  `Keywords_cyprus_eu_tax_file_number` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_cyprus_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -4385,15 +4324,15 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 - tax id
 - Steueridentifikationscode
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -4410,7 +4349,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - φορολογικού κωδικού
 
 
-## <a name="czech-drivers-license-number"></a>Tschechische Führerscheinnummer
+## <a name="czech-drivers-license-number"></a>Kennzeichen des tschechischen Führerscheins
 
 ### <a name="format"></a>Format
 
@@ -4420,9 +4359,9 @@ zwei Buchstaben gefolgt von sechs Ziffern
 
 acht Buchstaben und Ziffern:
   
-- Buchstabe "E" (ohne Schreibung)
+- Buchstabe "E" (ohne Zwischenfall)
 - ein Buchstabe
-- Ein Leerzeichen (optional)
+- ein Leerzeichen (optional)
 - sechs Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -4431,9 +4370,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_czech_republic_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_czech_republic_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_czech_republic_eu_driver's_license_number` wird gefunden. 
 
 ```xml
       <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
@@ -4450,7 +4389,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -4462,8 +4401,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -4475,31 +4414,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -4510,9 +4449,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -4521,57 +4460,57 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
-#### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver A0 s_license_number
+#### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver's_license_number
 
 - řidičský prúkaz
 - řidičské průkazy
@@ -4583,11 +4522,11 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="format"></a>Format
 
-Acht Ziffern ohne Leerzeichen oder Trennzeichen
+acht Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Acht Ziffern ohne Leerzeichen oder Trennzeichen
+acht Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -4595,14 +4534,14 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_czech_republic_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_czech_republic_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Das Datum im Format TT.MM.JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_czech_republic_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Datum im Format DD.MM.YYYY, oder es wird ein Schlüsselwort `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_czech_republic_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_czech_republic_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_czech_republic_eu_passport_number` wird gefunden. 
     
 ```xml
       <!-- Czech Republic Passport Number -->
@@ -4632,12 +4571,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -4653,15 +4592,15 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 
-## <a name="czech-personal-identity-number"></a>Personal Identity Number (Tschechisch)
+## <a name="czech-personal-identity-number"></a>Persönliche Identitätsnummer der Tschechischen Republik
 
 ### <a name="format"></a>Format
 
-Neun Ziffern mit optionalem Schrägstrich (altes Format) 10 Ziffern mit optionalem Schrägstrich (neues Format)
+neun Ziffern mit optionalem Schrägstrich (altes Format) 10 Ziffern mit optionalem Schrägstrich (neues Format)
 
 ### <a name="pattern"></a>Muster
 
@@ -4673,7 +4612,7 @@ neun Ziffern (altes Format):
 10 Ziffern (neues Format):
 - sechs Ziffern, die das Geburtsdatum darstellen
 - Optionaler Schrägstrich 
-- vier Ziffern, wobei die letzte Ziffer eine Prüfziffer ist
+- vier Ziffern, bei denen die letzte Ziffer eine Prüfziffer ist
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -4681,13 +4620,13 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 
 - Die Funktion Func_czech_id_card findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_czech_id_card gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 
 - Die Funktion Func_czech_id_card_new_format findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
@@ -4716,7 +4655,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - czechidno #
 - daňové číslo
 - identifikační číslo
-- Identity no
+- identity no
 - Identitätsnummer
 - identityno #
 - identityno
@@ -4727,8 +4666,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - osobní číslo
 - personalidnumber #
 - Persönliche ID-Nummer
-- Persönliche Identifikationsnummer
-- Persönliche Nummer
+- persönliche Identifikationsnummer
+- persönliche Nummer
 - pid #
 - pid
 - pojištění číslo
@@ -4739,89 +4678,29 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - ssn #
 - social security number
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
 - tin #
-- Eindeutige Identifikationsnummer
+- eindeutige Identifikationsnummer
 
-## <a name="czech-social-security-number-or-equivalent-identification"></a>Tschechische Sozialversicherungsnummer oder gleichwertige Identifikation
 
-Diese Entität des Typs "Vertrauliche Informationen" ist nur im Vertraulichen Informationstyp "EU-Sozialversicherungsnummer" oder "Äquivalente ID" verfügbar.
-
-### <a name="format"></a>Format
-
-10 Ziffern und ein umgekehrter Schrägstrich im angegebenen Muster
-  
-### <a name="pattern"></a>Muster
-
-10 Ziffern und ein umgekehrter Schrägstrich:
-  
-- sechs Ziffern, die dem Geburtsdatum (YYMMDD) entsprechen: 
-- Umgekehrter Schrägstrich
-- drei Ziffern, die einer Fortlaufenden Zahl entsprechen, die Personen trennt, die am selben Datum stammen
-- Eine Prüfziffer
-    
-### <a name="checksum"></a>Prüfsumme
-
-Ja
-  
-### <a name="definition"></a>Definition
-
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion  `Func_czech_republic_eu_ssn_or_equivalent` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_czech_republic_eu_ssn_or_equivalent` gefunden. 
-    
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion  `Func_czech_republic_eu_ssn_or_equivalent` findet Inhalte, die dem Muster entsprechen. 
-
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Schlüsselwörter
-
-#### <a name="keywords_czech_republic_eu_ssn_or_equivalent"></a>Keywords_czech_republic_eu_ssn_or_equivalent
-
-- Geburtsnummer
-- national identification number
-- Persönliche Identifikationsnummer
-- social security number
-- nationalnumber #
-- ssn #
-- ssn
-- nationale Nummer
-- Persönliche ID-Nummer
-- personalidnumber #
-- rč
-- rodné číslo
-- rodne cislo
-
-## <a name="denmark-drivers-license-number"></a>Führerscheinnummer Dänemark
+## <a name="denmark-drivers-license-number"></a>Führerscheinnummer des Dänischen Führerscheins
 
 ### <a name="format"></a>Format
 
-Acht Ziffern ohne Leerzeichen und Trennzeichen
+acht Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -4833,9 +4712,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_denmark_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_denmark_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_denmark_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Denmark Driver's License Number -->
@@ -4852,7 +4731,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -4864,8 +4743,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -4877,31 +4756,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -4912,9 +4791,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -4923,63 +4802,63 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
-#### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver A0 s_license_number
+#### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver's_license_number
 
 - kørekort
 - kørekortnummer
 
 
-## <a name="denmark-passport-number"></a>Dänemark Reisepassnummer
+## <a name="denmark-passport-number"></a>Dänische Reisepassnummer
 
 ### <a name="format"></a>Format
 
@@ -4995,14 +4874,14 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_denmark_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_denmark_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date2` findet Datum im Format TT MM JJ oder ein Schlüsselwort gefunden `Keywords_eu_passport_date` wurde
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_denmark_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck findet Datum im Format DD MM JJ oder ein `Regex_eu_passport_date2` Schlüsselwort aus gefunden `Keywords_eu_passport_date` wird
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_denmark_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_denmark_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_denmark_eu_passport_number` wird gefunden. 
     
 ```xml
       <!-- Denmark Passport Number -->
@@ -5033,12 +4912,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -5052,11 +4931,11 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 
-## <a name="denmark-personal-identification-number"></a>Dänemark Persönliche Identifikationsnummer
+## <a name="denmark-personal-identification-number"></a>Persönliche Identifikationsnummer für Dänemark
 
 ### <a name="format"></a>Format
 
@@ -5066,8 +4945,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 10 Ziffern:
 - sechs Ziffern im Format DDMMYY, die das Geburtsdatum sind 
-- Ein Bindestrich 
-- vier Ziffern, wobei die letzte Ziffer eine Prüfziffer ist
+- ein Bindestrich 
+- vier Ziffern, bei denen die letzte Ziffer eine Prüfziffer ist
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -5075,13 +4954,13 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck Func_denmark_eu_tax_file_number inhalt, der dem Muster entspricht.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der reguläre Ausdruck Func_denmark_eu_tax_file_number, der dem Muster entspricht.
 - Ein Schlüsselwort aus Keyword_denmark_id gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck Func_denmark_eu_tax_file_number inhalt, der dem Muster entspricht.
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der reguläre Ausdruck Func_denmark_eu_tax_file_number, der dem Muster entspricht.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -5102,15 +4981,15 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 
 #### <a name="keyword_denmark_id"></a>Keyword_denmark_id
 
-- centrale personregister
+- zentrales Personenregister
 - civilt registreringsystem
 - cpr
 - cpr #
 - gesundheitskarte nummer
 - gesundheitsversicherungkarte nummer
 - Integritätskarte
-- Health Insurance Card Number
-- Health Insurance Number
+- Nummer der Krankenversicherungskarte
+- Krankenversicherungsnummer
 - identification number
 - identifikationsnummer
 - identifikationsnummer #
@@ -5124,7 +5003,7 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - Persönliche ID-Nummer
 - personnummer
 - personnummer #
-- reiseversicherungnversicherungskartenummer
+- reisekrankenversicherungskartenummer
 - rejsesygesikringskort
 - ssn
 - ssn #
@@ -5140,22 +5019,22 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - sygesikring
 - sygesikringkortnummer
 - Steuercode
-- Reiseversicherungskarte
+- Reise-Krankenversicherungskarte
 - uniqueidentityno #
 - Steuernummer
 - Steuerregistrierungsnummer
 - tax id
 - Steueridentifikationsnummer
-- zeitd #
+- taxd #
 - taxnumber #
-- tax no
+- Steuer nein
 - taxno #
 - taxnumber
-- steueridentifikation nein
+- Steueridentifikation nein
 - tin #
-- zeitdno #
-- zeitdnumber #
-- tax no #
+- taxdno #
+- taxdnumber #
+- Steuer nein #
 - tin id
 - tin no
 - cpr.nr
@@ -5172,64 +5051,8 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - sygesikringsnr
 - sygesikringsnummer
 
-## <a name="denmark-social-security-number-or-equivalent-identification"></a>Dänemark Sozialversicherungsnummer oder gleichwertige Identifikation
-Diese Entität des Typs "Vertrauliche Informationen" ist nur für den Vertraulichen Informationstyp "EU-Sozialversicherungsnummer" oder "Äquivalente ID" verfügbar.
 
-### <a name="format"></a>Format
-
-10 Ziffern und ein Bindestrich im angegebenen Muster
-  
-### <a name="pattern"></a>Muster
-
-10 Ziffern und ein Bindestrich:
-  
-- sechs Ziffern, die dem Geburtsdatum entsprechen (DDMMYY) 
-- Ein Bindestrich
-- vier Ziffern, die einer Sequenznummer entsprechen
-
-### <a name="checksum"></a>Prüfsumme
-
-Ja
-  
-### <a name="definition"></a>Definition
-
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion  `Func_denmark_eu_ssn_or_equivalent` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_denmark_eu_ssn_or_equivalent` gefunden. 
-    
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion  `Func_denmark_eu_ssn_or_equivalent` findet Inhalte, die dem Muster entsprechen. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_denmark_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Schlüsselwörter
-
-#### <a name="keywords_denmark_eu_ssn_or_equivalent"></a>Keywords_denmark_eu_ssn_or_equivalent
-
-- Persönliche Identifikationsnummer
-- national identification number
-- social security number
-- nationalnumber #
-- ssn #
-- ssn
-- nationale Nummer
-- Persönliche ID-Nummer
-- personalidnumber #
-- cpr-nummer
-- personnummer
-
-## <a name="drug-enforcement-agency-dea-number"></a>Drug Enforcement Agency (DEA) number
+## <a name="drug-enforcement-agency-dea-number"></a>Nummer der Drug Enforcement Agency (DEA)
 
 ### <a name="format"></a>Format
 
@@ -5238,8 +5061,8 @@ zwei Buchstaben gefolgt von sieben Ziffern
 ### <a name="pattern"></a>Muster
 
 Das Muster muss Folgendes enthalten:
-- Ein Buchstabe (ohne Schreibung) aus dieser Gruppe möglicher Buchstaben: abcdefghjklmnprstux, ein Registrierungscode 
-- Ein Buchstabe (ohne Schreibung), bei dem es sich um den ersten Buchstaben des Nachnamens oder der Ziffer "9" des Registranten handelt
+- ein Buchstabe (ohne Groß-/Kleinschreibung) aus dieser Gruppe möglicher Buchstaben: abcdefghjklmnprstux, bei dem es sich um einen Registrierungscode handelt 
+- ein Buchstabe (ohne Zwischenfall), der der erste Buchstabe des Nachnamens oder der Ziffer "9" des Registranten ist.
 - sieben Ziffern, von denen die letzte die Prüfziffer ist
 
 ### <a name="checksum"></a>Prüfsumme
@@ -5248,12 +5071,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_dea_number findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort wurde `Keyword_dea_number` gefunden.
+- Ein Schlüsselwort aus `Keyword_dea_number` wurde gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_dea_number findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -5283,11 +5106,11 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 - dea
 - dea #
-- Verwaltung der Erzwingung von Rauschmittel
+- Verwaltung der Erzwingung von Rauschgiften
 - Drug Enforcement Agency
 
 
-## <a name="estonia-drivers-license-number"></a>Estnisch- Führerscheinnummer
+## <a name="estonia-drivers-license-number"></a>Kennzeichen des Estnes-Führerscheins
 
 ### <a name="format"></a>Format
 
@@ -5297,7 +5120,7 @@ zwei Buchstaben gefolgt von sechs Ziffern
 
 zwei Buchstaben und sechs Ziffern:
   
-- Die Buchstaben "ET" (Groß-/Kleinschreibung wird nicht beachtet) 
+- die Buchstaben "ET" (keine Groß-/Kleinschreibung) 
 - sechs Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
@@ -5306,9 +5129,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_estonia_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_estonia_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_estonia_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Estonia Driver's License Number -->
@@ -5325,7 +5148,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -5337,8 +5160,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -5350,31 +5173,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -5385,9 +5208,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -5396,71 +5219,71 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 #### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver's_license_number
 
 -- permis de conduire
 - juhilubade numbrid
-- juhiloa number
+- juhiloa-Nummer
 - juhiluba
 
 
-## <a name="estonia-personal-identification-code"></a>Estnisch - Personal Identification Code
+## <a name="estonia-personal-identification-code"></a>Estonia Personal Identification Code
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -5470,10 +5293,10 @@ Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 
 11 Ziffern:
   
-- eine Ziffer, die dem Geschlecht und dem Geburtsjahr des Geburtsjahrs entspricht (ungerade Zahl männlich, gleichzahlig frau; 1-2: 19. Geburtstag; 3-4: 20. Jahrjahrjahr; 5.6.
+- eine Ziffer, die dem Geschlecht und dem Geburtsjahrhundert entspricht (ungerade Zahl männlich, sogar Zahl weiblich; 1-2: 19. Jahrhundert; 3-4: 20. Jahrhundert; 5.-6.: 21. Jahrhundert)
 - sechs Ziffern, die dem Geburtsdatum entsprechen (YYMMDD)
-- drei Ziffern, die einer Seriennummer entsprechen, die Personen trennt, die am selben Datum stammen
-- Eine Prüfziffer
+- drei Ziffern, die einer Seriennummer entsprechen, die Personen trennt, die am selben Datum geboren wurden
+- eine Prüfziffer
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -5481,11 +5304,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_estonia_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_estonia_eu_national_id_card` gefunden. 
+- Es wird ein  `Keywords_estonia_eu_national_id_card` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_estonia_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -5521,18 +5344,18 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Persönlicher Code
 - Persönliche ID-Nummer
 - Persönlicher Identifikationscode
-- Persönliche Identifikationsnummer
+- persönliche Identifikationsnummer
 - personalidnumber #
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -5541,15 +5364,15 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - tin #
 
 
-## <a name="estonia-passport-number"></a>Estnisch Reisepassnummer
+## <a name="estonia-passport-number"></a>Reisepassnummer für Estland
 
 ### <a name="format"></a>Format
 
-Ein Buchstabe gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
+ein Buchstabe gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Ein Buchstabe gefolgt von sieben Ziffern
+ein Buchstabe gefolgt von sieben Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -5557,14 +5380,14 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_estonia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_estonia_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Das Datum im Format TT.MM.JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_estonia_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Datum im Format DD.MM.YYYY, oder es wird ein Schlüsselwort `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_estonia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_estonia_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_estonia_eu_passport_number` wird gefunden. 
     
 ```xml
       <!-- Estonia Passport Number -->
@@ -5594,12 +5417,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -5611,7 +5434,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 
@@ -5631,7 +5454,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_eu_debit_card findet Inhalte, die dem Muster entsprechen.
 - Mindestens eine der folgenden Bedingungen trifft zu:
     - Ein Schlüsselwort aus Keyword_eu_debit_card wurde gefunden.
@@ -5721,15 +5544,15 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - check cards 
 - checkcard
 - checkcards 
-- undekaart 
+- chequekaart 
 - cirrus 
-- cirrus-edc-des 
+- cirrus-edc-maestro 
 - controlekaart 
 - controlekaarten 
 - credit card 
 - credit cards 
 - creditcard 
-- creditcards 
+- Kreditkarten 
 - debetkaart 
 - debetkaarten 
 - debit card 
@@ -5738,7 +5561,7 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - debitcards 
 - debito automatico 
 - diners club 
-- diners in 
+- dinersclub 
 - discover 
 - discover card 
 - discover cards 
@@ -5753,13 +5576,13 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - in viaggio 
 - japanese card bureau 
 - japanse kaartdienst 
-- jon 
+- jcb 
 - kaart 
 - kaart num 
 - kaartaantal 
-- kaartattallen 
-- kaoudouder 
-- kaoudouders 
+- kaartaantallen 
+- kaarthouder 
+- kaarthouders 
 - karte  
 - karteninhaber 
 - karteninhabers
@@ -5771,11 +5594,11 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - kreditkarteninstitut 
 - kreditkartennummer 
 - kreditkartentyp 
-- maestro 
+- von "maestro" 
 - master card 
 - master cards 
-- zu 
-- unter 
+- mastercard 
+- mastercards 
 - mc 
 - mister cash 
 - n carta 
@@ -5845,7 +5668,7 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - visa plus 
 - visa electron 
 - visto 
-- zeit 
+- ©A0 
 - vpay   
 
 #### <a name="keyword_card_security_terms_dict"></a>Keyword_card_security_terms_dict
@@ -5915,9 +5738,9 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - sicherheitsnummer 
 - speldblok 
 - veiligheid nr 
-- igheidsaantal 
-- codigheidscode 
-- igheidsnummer 
+- veiligheidsaantal 
+- veiligheidscode 
+- veiligheidsnummer 
 - verfalldatum 
 
 #### <a name="keyword_card_expiration_terms_dict"></a>Keyword_card_expiration_terms_dict
@@ -5939,7 +5762,7 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - espira 
 - exp date 
 - exp datum 
-- expiration 
+- ablaufen 
 - expire 
 - läuft ab 
 - expiry 
@@ -5967,7 +5790,7 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 
 ## <a name="eu-drivers-license-number"></a>EU-Führerscheinnummer
 
-Diese Entitäten befinden sich in der EU-Führerscheinnummer und sind vertrauliche Informationstypen.
+Diese Entitäten befinden sich in der EU-Führerscheinnummer und sind Typen vertraulicher Informationen.
 
 - [Österreich](#austria-drivers-license-number) 
 - [Belgien](#belgium-drivers-license-number)
@@ -6034,7 +5857,7 @@ Diese Entitäten befinden sich in der nationalen Identifikationsnummer der EU un
 
 ## <a name="eu-passport-number"></a>EU-Reisepassnummer 
 
-Diese Entitäten befinden sich in der EU-Reisepassnummer und sind vertrauliche Informationstypen. Diese Entitäten befinden sich im EU-Reisepass-Nummernbundl.
+Diese Entitäten befinden sich in der EU-Reisepassnummer und sind Typen vertraulicher Informationen. Diese Entitäten befinden sich im Bündel der EU-Reisepassnummer.
 
 - [Österreich](#austria-passport-number)
 - [Belgien](#belgium-passport-number)
@@ -6066,7 +5889,7 @@ Diese Entitäten befinden sich in der EU-Reisepassnummer und sind vertrauliche I
 - [Vereinigtes Königreich](#us--uk-passport-number)
 
 
-## <a name="eu-social-security-number-or-equivalent-identification"></a>Sozialversicherungsnummer der EU oder gleichwertige Identifikation
+## <a name="eu-social-security-number-or-equivalent-identification"></a>EU-Sozialversicherungsnummer oder gleichwertige Identifikation
 
 Diese Entitäten, die sich in der EU-Sozialversicherungsnummer oder einer entsprechenden Identifikation befinden und vertrauliche Informationstypen sind.
 
@@ -6076,7 +5899,7 @@ Diese Entitäten, die sich in der EU-Sozialversicherungsnummer oder einer entspr
 - [Tschechisch](#czech-personal-identity-number)
 - [Dänemark](#denmark-personal-identification-number)
 - [Finnland](#finland-national-id)
-- [Frankreich](#france-social-security-number-insee-or-equivalent-identification)
+- [Frankreich](#france-social-security-number-insee)
 - [Deutschland](#germany-identity-card-number)
 - [Griechenland](#greece-national-id-card)
 - [Ungarn](#hungary-social-security-number-taj)
@@ -6085,9 +5908,9 @@ Diese Entitäten, die sich in der EU-Sozialversicherungsnummer oder einer entspr
 - [Schweden](#sweden-national-id)
 
 
-## <a name="eu-tax-identification-number"></a>EU-Steuernummer
+## <a name="eu-tax-identification-number"></a>EU-Steueridentifikationsnummer
 
-Diese Entitäten befinden sich im Vertraulichen Informationstyp "EU-Steuernummer".
+Diese Entitäten befinden sich im Vertraulichen Informationstyp "EU-Steueridentifikationsnummer".
 
 - [Österreich](#austria-tax-identification-number)
 - [Belgien](#belgium-national-number)
@@ -6119,7 +5942,7 @@ Diese Entitäten befinden sich im Vertraulichen Informationstyp "EU-Steuernummer
 - [Vereinigtes Königreich](#uk-unique-taxpayer-reference-number)
 
 
-## <a name="finland-drivers-license-number"></a>Finnische Führerscheinnummer
+## <a name="finland-drivers-license-number"></a>Finnlands Führerscheinnummer
 
 ### <a name="format"></a>Format
 
@@ -6127,10 +5950,10 @@ Diese Entitäten befinden sich im Vertraulichen Informationstyp "EU-Steuernummer
   
 ### <a name="pattern"></a>Muster
 
-10 Ziffern mit einem Bindestrich:
+10 Ziffern, die einen Bindestrich enthalten:
   
 - sechs Ziffern 
-- Ein Bindestrich
+- ein Bindestrich
 - drei Ziffern 
 - Eine Ziffer oder ein Buchstabe
     
@@ -6140,9 +5963,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_finland_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_finland_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_finland_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Finland Driver's License Number -->
@@ -6159,7 +5982,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -6171,8 +5994,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -6184,31 +6007,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -6219,9 +6042,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -6230,58 +6053,58 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver A0 s_license_number
+#### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver's_license_number
 
 - ajokortti
 - permis de conduire
@@ -6298,20 +6121,20 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-20-stellige Nummer
+20-stellige Zahl
 
 ### <a name="pattern"></a>Muster
 
-20-stellige Nummer:
+20-stellige Zahl:
 
 - 10 Ziffern – 8024680246
-- Ein optionaler Leerzeichen oder Bindestrich
+- optionaler Leerzeichen oder Bindestrich
 - 10 Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -6320,8 +6143,8 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Regex_Finland_European_Health_Insurance_Number findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der regex-Regex_Finland_European_Health_Insurance_Number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Finland_European_Health_Insurance_Number gefunden.
 
 ```xml
@@ -6343,7 +6166,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - finska sjukförsäkringskort
 - Integritätskarte
 - Krankenversicherungskarte
-- Health Insurance Number
+- Krankenversicherungsnummer
 - hälsokort
 - sairaanhoitokortin
 - sairausvakuutuskortti
@@ -6351,22 +6174,22 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - sjukförsäkring nummer
 - sjukförsäkringskort
 - suomen sairausvakuutuskortti
-- terttiskortti
+- terveyskortti
 
 
-## <a name="finland-national-id"></a>Nationale finnische ID
+## <a name="finland-national-id"></a>Nationale ID Finnlands
 
 ### <a name="format"></a>Format
 
-sechs Ziffern plus ein Zeichen, das ein Hundertjahrjahr angibt, plus drei Ziffern plus eine Prüfziffer
+sechs Ziffern plus ein Zeichen, das ein Jahrhundert plus drei Ziffern plus eine Prüfziffer angibt
 
 ### <a name="pattern"></a>Muster
 
 Das Muster muss Folgendes enthalten:
-- sechs Ziffern im Format DDMMYY, die ein Geburtsdatum sind 
-- 1.000er-Markierung (entweder '-', '+' oder 'a') 
-- Dreistellige persönliche Identifikationsnummer 
-- Eine Ziffer oder ein Buchstabe (Groß-/Kleinschreibung wird nicht beachtet), bei der es sich um eine Prüfziffer handelt
+- sechs Ziffern im Format DDMMYY, bei denen es sich um ein Geburtsdatum handelt 
+- Century Marker (entweder '-', '+' oder 'a') 
+- dreistellige persönliche Identifikationsnummer 
+- Eine Ziffer oder ein Buchstabe (Groß-/Kleinschreibung nicht beachtet), bei der es sich um eine Prüfziffer handelt
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -6374,14 +6197,14 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion, Func_finnish_national_id Inhalt findet, der dem Muster entspricht
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Die Funktion Func_finnish_national_id findet Inhalte, die dem Muster entsprechen
 - Ein Schlüsselwort aus Keyword_finnish_national_id gefunden
-- Prüfsummenprüfungen
+- Die Prüfsummenprüfungen
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion, Func_finnish_national_id Inhalt findet, der dem Muster entspricht
-- Prüfsummenprüfungen
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Die Funktion Func_finnish_national_id findet Inhalte, die dem Muster entsprechen
+- Die Prüfsummenprüfungen
 
 ```xml
       <!-- Finnish National ID-->
@@ -6405,32 +6228,32 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - henkilötunnusnumero
 - hetu
 - id no
-- id number
+- ID-Nummer
 - identification number
 - identiteetti numero
 - Identitätsnummer
 - idnumber
 - kansallinen henkilötunnus
 - kansallisen henkilökortin
-- national id card
+- nationale ID-Karte
 - national id no.
-- Persönliche ID
-- Personal Identity Code
+- persönliche ID
+- Persönlicher Identitätscode
 - personalidnumber #
 - personbeteckning
 - personnummer
 - social security number
 - sosiaaliturvatunnus
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -6439,7 +6262,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - tin #
 - tunnistenumero
 - tunnus numero
-- tunnuslbrüche
+- tunnusluku
 - tunnusnumero
 - verokortti
 - veronumero
@@ -6447,16 +6270,16 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - verotunnus
 
 
-## <a name="finland-passport-number"></a>Finnische Reisepassnummer
+## <a name="finland-passport-number"></a>Finnland-Reisepassnummer
 
-Diese Entität für vertrauliche Informationstypen ist im vertraulichen Informationstyp "EU Passport Number" verfügbar und steht als eigenständige Entität für vertrauliche Informationen zur Verfügung.
+Diese Entität vom Typ vertraulicher Informationen ist im Vertraulichen Informationstyp EU Passport Number verfügbar und steht als eigenständige Entität vom Typ vertraulicher Informationen zur Verfügung.
 
 ### <a name="format"></a>Format
 Kombination aus neun Buchstaben und Ziffern
 
 ### <a name="pattern"></a>Muster
 Kombination aus neun Buchstaben und Ziffern:
-- zwei Buchstaben (Groß-/Kleinschreibung wird nicht beachtet) 
+- zwei Buchstaben (keine Groß-/Kleinschreibung) 
 - sieben Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -6465,14 +6288,14 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck `Regex_finland_passport_number` findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keyword_finland_passport_number` wurde gefunden.
-- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Das Datum im Format TT.MM.JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keyword_finland_passport_number` wird gefunden.
+- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Datum im Format DD.MM.YYYY, oder es wird ein Schlüsselwort `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck `Regex_finland_passport_number` findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keyword_finland_passport_number` wurde gefunden.
+- Ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keyword_finland_passport_number` wird gefunden.
 
 ```xml
       <!-- Finland Passport Number -->
@@ -6501,12 +6324,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -6524,12 +6347,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 ## <a name="france-drivers-license-number"></a>Französische Führerscheinnummer
 
-Diese Entität für vertrauliche Informationstypen ist im vertraulichen Informationstyp "EU Driver's License Number" verfügbar und steht als eigenständige Entität für vertrauliche Informationstypen zur Verfügung.
+Diese Entität vom Typ vertraulicher Informationen ist im vertraulichen Informationstyp EU Driver's License Number verfügbar und steht als eigenständige Entität für vertrauliche Informationen zur Verfügung.
 
 ### <a name="format"></a>Format
 
@@ -6545,9 +6368,9 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion Func_french_drivers_license findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus Keyword_french_drivers_license gefunden.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Die Funktion Func_french_drivers_license nach Inhalten sucht, die dem Muster entsprechen.
+- ein Schlüsselwort aus Keyword_french_drivers_license gefunden wird.
 
 ```xml
     <!-- France Driver's License Number -->
@@ -6573,8 +6396,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -6586,31 +6409,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -6621,9 +6444,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -6632,55 +6455,55 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 - permis de conduire
 - licence number
 - license number
@@ -6689,26 +6512,26 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - numéros de licence
 
 
-## <a name="france-health-insurance-number"></a>Französische Gesundheitsversicherungsnummer
+## <a name="france-health-insurance-number"></a>Französische Krankenversicherungsnummer
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-21-stellige Nummer
+21-stellige Zahl
 
 ### <a name="pattern"></a>Muster
 
-21-stellige Nummer:
+21-stellige Zahl:
 
 - 10 Ziffern
-- Ein optionales Leerzeichen
+- ein optionales Leerzeichen
 - 10 Ziffern
-- Ein optionales Leerzeichen
+- ein optionales Leerzeichen
 - eine Ziffer
 
 
@@ -6718,9 +6541,9 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Regex_France_Health_Insurance_Number findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus Keyword_France_Health_Insurance_Number gefunden.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der regex-Regex_France_Health_Insurance_Number findet Inhalte, die dem Muster entsprechen.
+- ein Schlüsselwort aus Keyword_France_Health_Insurance_Number gefunden wird.
 
 ```xml
       <!-- France Health Insurance Number -->
@@ -6735,12 +6558,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keyword_france_health_insurance_number"></a>Keyword_France_health_insurance_number
 
-- Insurance Card
+- Versicherungskarte
 - carte vitale
 - carte d'assuré social
 
 
-## <a name="france-national-id-card-cni"></a>Französische National-ID-Karte (CNI)
+## <a name="france-national-id-card-cni"></a>Französische nationale ID-Karte (CNI)
 
 ### <a name="format"></a>Format
 
@@ -6756,7 +6579,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_france_cni findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_france_eu_national_id_card gefunden.
 
@@ -6783,12 +6606,12 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - national identification number
 - nationale Identität
 - nationalidno #
-- numéro d'assuranceérdie
+- numéro d'assurance maledie
 - numéro de carte vitale
 
    
 ## <a name="france-passport-number"></a>Französische Reisepassnummer
-Diese Entität für vertrauliche Informationen ist im vertraulichen Informationstyp "EU Passport Number" verfügbar. Es ist als eigenständige Entität für vertrauliche Informationstypen verfügbar.
+Diese Entität vom Typ vertraulicher Informationen ist im Vertraulichen Informationstyp EU Passport Number verfügbar. Es ist als eigenständige Entität vom Typ vertraulicher Informationen verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -6798,7 +6621,7 @@ neun Ziffern und Buchstaben
 
 neun Ziffern und Buchstaben:
 - zwei Ziffern 
-- zwei Buchstaben (Groß-/Kleinschreibung wird nicht beachtet) 
+- zwei Buchstaben (keine Groß-/Kleinschreibung) 
 - fünf Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -6807,14 +6630,14 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion `Func_fr_passport` findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keywords_france_eu_passport_number` wurde gefunden.
-- Der reguläre Ausdruck `Regex_eu_passport_date3` findet Datum im Format TT MM JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keywords_france_eu_passport_number` wird gefunden.
+- Der reguläre Ausdruck `Regex_eu_passport_date3` findet Datum im Format DD MM JJJJ oder ein Schlüsselwort aus gefunden `Keywords_eu_passport_date` wird
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion `Func_fr_passport` findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keywords_france_eu_passport_number` wurde gefunden.
+- Ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keywords_france_eu_passport_number` wird gefunden.
 
 
 ```xml
@@ -6845,12 +6668,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -6865,8 +6688,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - passeport #
 - passeportnon
 - passeportn °
-- passeport çais
-- passeport 2013
+- passeport français
+- passeport livre
 - passeport carte
 - numéro passeport
 - passeport n°
@@ -6875,11 +6698,11 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 
-## <a name="france-social-security-number-insee-or-equivalent-identification"></a>Französische Sozialversicherungsnummer (INSEE) oder gleichwertige Identifikation
+## <a name="france-social-security-number-insee"></a>Französische Sozialversicherungsnummer (INSEE)
 
 ### <a name="format"></a>Format
 
@@ -6898,12 +6721,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion `Func_french_insee` findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_fr_insee wurde gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_french_insee oder Func_fr_insee findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -6955,7 +6778,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - social insurance number
 
 
-## <a name="france-tax-identification-number"></a>Französische Steuernummer
+## <a name="france-tax-identification-number"></a>Französische Steueridentifikationsnummer
 
 ### <a name="format"></a>Format
 
@@ -6983,11 +6806,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_france_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_france_eu_tax_file_number` gefunden. 
+- Es wird ein  `Keywords_france_eu_tax_file_number` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_france_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -7014,15 +6837,15 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 - numéro d'identification fiscale
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -7035,26 +6858,26 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-Alphanumerisches Muster mit 13 Zeichen
+13 Zeichen alphanumerisches Muster
 
 ### <a name="pattern"></a>Muster
 
-Alphanumerisches Muster mit 13 Zeichen:
+13 Zeichen alphanumerisches Muster:
 
-- zwei Buchstaben - FR (Groß-/Kleinschreibung wird nicht beachtet)
-- Ein optionaler Leerzeichen oder Bindestrich
+- zwei Buchstaben - FR (Groß-/Kleinschreibung nicht beachtet)
+- optionaler Leerzeichen oder Bindestrich
 - zwei Buchstaben oder Ziffern
-- Ein optionales Leerzeichen, ein Punkt, ein Bindestrich oder ein Komma
+- optionaler Leerzeichen, Punkt, Bindestrich oder Komma
 - drei Ziffern
-- Ein optionales Leerzeichen, ein Punkt, ein Bindestrich oder ein Komma
+- optionaler Leerzeichen, Punkt, Bindestrich oder Komma
 - drei Ziffern
-- Ein optionales Leerzeichen, ein Punkt, ein Bindestrich oder ein Komma
+- optionaler Leerzeichen, Punkt, Bindestrich oder Komma
 - drei Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -7063,11 +6886,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_france_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_france_value_added_tax_number gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_france_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -7086,13 +6909,13 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keyword_france_value_added_tax_number"></a>Keyword_France_value_added_tax_number
 
-- uSt-Nummer
+- Umsatzsteuernummer
 - vat no
 - vat #
-- Umsatzsteuer
-- siren identification no numéro d'identification taxe sur valeur atétée
-- taxe valeur atétée
-- taxe sur la valeur atétée
+- Mehrwertsteuer
+- siren identification no numéro d'identification taxe sur valeur ajoutée
+- taxe valeur ajoutée
+- taxe sur la valeur ajoutée
 - n° tva
 - numéro de tva
 - numéro d'identification siren
@@ -7100,7 +6923,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ## <a name="germany-drivers-license-number"></a>Deutsche Führerscheinnummer
 
-Diese Entität für vertrauliche Informationstypen ist im vertraulichen Informationstyp "EU Driver's License Number" enthalten. Es ist als eigenständige Entität für vertrauliche Informationstypen verfügbar.
+Diese Entität vom Typ vertraulicher Informationen ist im vertraulichen Informationstyp EU Driver's License Number enthalten. Es ist als eigenständige Entität vom Typ vertraulicher Informationen verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -7108,7 +6931,7 @@ Kombination aus 11 Ziffern und Buchstaben
 
 ### <a name="pattern"></a>Muster
 
-11 Ziffern und Buchstaben (ohne Schreibung):
+11 Ziffern und Buchstaben (ohne Groß-/Kleinschreibung):
 - Eine Ziffer oder ein Buchstabe 
 - zwei Ziffern 
 - sechs Ziffern oder Buchstaben 
@@ -7121,7 +6944,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_german_drivers_license findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_german_drivers_license_number wurde gefunden.
 - Die Prüfsumme stimmt.
@@ -7146,29 +6969,29 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Ausstellende Behorde
 - ausstellende behoerde
 - führerschein
-- langsamererschein
-- fuscheinerschein
+- fuhrerschein
+- fuehrerschein
 - führerscheinnummer
-- langsamererscheinnummer
-- fugifterscheinnummer
+- fuhrerscheinnummer
+- fuehrerscheinnummer
 - führerschein- 
-- langsamererschein- 
-- fuscheinerschein- 
+- fuhrerschein- 
+- fuehrerschein- 
 - führerscheinnummernr
-- langsamererscheinnummernr
-- fuscheinerscheinnummernr
+- fuhrerscheinnummernr
+- fuehrerscheinnummernr
 - führerscheinnummerklasse
-- langsamererscheinnummerklasse
-- fuscheinerscheinnummerklasse
+- fuhrerscheinnummerklasse
+- fuehrerscheinnummerklasse
 - nr-führerschein
-- nr-wiedererschein
-- nr-fugifterschein
+- nr-fuhrerschein
+- nr-fuehrerschein
 - no-führerschein
-- no-wiedererschein
-- no-fugifterschein
+- no-fuhrerschein
+- no-fuehrerschein
 - n-führerschein
-- n-wiedererschein
-- n-fugifterschein
+- n-fuhrerschein
+- n-fuehrerschein
 - permis de conduire
 - driverlic
 - driverlics
@@ -7180,8 +7003,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -7193,31 +7016,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -7228,9 +7051,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -7239,56 +7062,56 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dlno
 
 
-## <a name="germany-identity-card-number"></a>Deutschland - Personalausweisnummer
+## <a name="germany-identity-card-number"></a>Deutsche Identitätskartennummer
 
 ### <a name="format"></a>Format
 
@@ -7299,7 +7122,7 @@ vom 1. April 1987 bis zum 31. Oktober 2010: 10 Ziffern
 ### <a name="pattern"></a>Muster
 
 seit dem 1. November 2010:
-- Ein Buchstabe (ohne Schreibung) 
+- ein Buchstabe (ohne Zwischenfall) 
 - acht Ziffern
 
 vom 1. April 1987 bis zum 31. Oktober 2010:
@@ -7311,8 +7134,8 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck Regex_germany_id_card inhalt, der dem Muster entspricht.
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der reguläre Ausdruck Regex_germany_id_card, der dem Muster entspricht.
 - Ein Schlüsselwort aus Keyword_germany_id_card gefunden.
 
 ```xml
@@ -7331,13 +7154,13 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 
 - ausweis
 - gpid
-- identification
+- Identifikation
 - identifikation
 - identifizierungsnummer
 - identity card
 - Identitätsnummer
 - id-nummer
-- Persönliche ID
+- persönliche ID
 - personalausweis
 - persönliche id nummer
 - persönliche identifikationsnummer
@@ -7346,7 +7169,7 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 
 ## <a name="germany-passport-number"></a>Deutsche Reisepassnummer
 
-Diese Entität für vertrauliche Informationstypen ist im vertraulichen Informationstyp "EU Passport Number" enthalten und steht als eigenständige Entität für vertrauliche Informationen zur Verfügung.
+Diese Entität vom Typ vertraulicher Informationen ist im Vertraulichen Informationstyp EU Passport Number enthalten und steht als eigenständige Entität für vertrauliche Informationen zur Verfügung.
 
 ### <a name="format"></a>Format
 
@@ -7366,14 +7189,14 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_german_passport findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus `Keyword_german_passport` oder `Keywords_eu_passport_number_common` wurde gefunden.
+- Ein Schlüsselwort aus `Keyword_german_passport` oder `Keywords_eu_passport_number_common` wird gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_german_passport_data findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus `Keyword_german_passport` oder `Keywords_eu_passport_number_common` wurde gefunden.
+- Ein Schlüsselwort aus `Keyword_german_passport` oder `Keywords_eu_passport_number_common` wird gefunden.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -7406,18 +7229,18 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
-- reise 2013
+- reisepässe
 - passeport no.
 - passeport no
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -7441,7 +7264,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Drei Ziffern 
 - Ein optionales Leerzeichen
 - Zwei Ziffern
-- Eine Prüfziffer
+- eine Prüfziffer
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -7449,11 +7272,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_germany_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_germany_eu_tax_file_number` gefunden. 
+- Es wird ein  `Keywords_germany_eu_tax_file_number` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_germany_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -7478,49 +7301,49 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
 - tin #
-- zeit #
-- zeit
-- wiedererdingnummer
+- zinn #
+- zinn
+- zinnnummer
 
 
 ## <a name="germany-value-added-tax-number"></a>Deutsche Umsatzsteuernummer
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-Alphanumerisches Muster mit 11 Zeichen
+11 Zeichen alphanumerisches Muster
 
 ### <a name="pattern"></a>Muster
 
-Alphanumerisches Muster mit 11 Zeichen:
+Alphanumerisches 11-Zeichen-Muster:
 
-- Ein Buchstabe D oder d
-- Ein Buchstabe E oder e
-- Ein optionales Leerzeichen
+- Buchstabe D oder d
+- ein Buchstabe E oder e
+- ein optionales Leerzeichen
 - drei Ziffern
-- Ein optionales Leerzeichen oder Komma
+- ein optionales Leerzeichen oder Komma
 - drei Ziffern
-- Ein optionales Leerzeichen oder Komma
+- ein optionales Leerzeichen oder Komma
 - drei Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -7529,11 +7352,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_germany_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_germany_value_added_tax_number gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_germany_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -7552,7 +7375,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keyword_germany_value_added_tax_number"></a>Keyword_germany_value_added_tax_number
 
-- uSt-Nummer
+- Umsatzsteuernummer
 - vat no
 - vat #
 - vat# mehrwertsteuer
@@ -7563,7 +7386,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ## <a name="greece-drivers-license-number"></a>Führerscheinnummer für Griechenland
 
-Diese Entität für vertrauliche Informationstypen ist im vertraulichen Informationstyp "EU Driver's License Number" enthalten und steht als eigenständige Entität für vertrauliche Informationstypen zur Verfügung.
+Diese Entität vom Typ vertraulicher Informationen ist im vertraulichen Informationstyp "EU Driver's License Number" enthalten und steht als eigenständige Entität für vertraulichen Informationstyp zur Verfügung.
 
 ### <a name="format"></a>Format
 
@@ -7579,9 +7402,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_greece_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_greece_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_greece_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Greece Driver's License Number -->
@@ -7598,7 +7421,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -7610,8 +7433,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -7623,31 +7446,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -7658,9 +7481,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -7669,58 +7492,58 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver A0 s_license_number
+#### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver's_license_number
 
 - δεια οδήγησης
 - Adeia odigisis
@@ -7728,7 +7551,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Δίπλωμα οδήγησης
 
 
-## <a name="greece-national-id-card"></a>Griechenland - Personalausweis
+## <a name="greece-national-id-card"></a>Griechischer National-ID-Ausweis
 
 ### <a name="format"></a>Format
 
@@ -7752,11 +7575,11 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Regex_greece_id_card findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_greece_id_card gefunden.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_greece_id_card findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -7777,9 +7600,9 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 #### <a name="keyword_greece_id_card"></a>Keyword_greece_id_card
 
 - greek id
-- Greek national id
-- Greek personal id card
-- Greek police id
+- griechische nationale ID
+- griechische persönliche ID-Karte
+- griechische Polizei-ID
 - identity card
 - tautotita
 - ταυτότητα
@@ -7802,14 +7625,14 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_greece_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_greece_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_greece_eu_passport_date` findet datums im Format TT MMM JJ (Beispiel - 28 August 19) oder ein Schlüsselwort `Keywords_greece_eu_passport_date` gefunden wurde
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_greece_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck findet Datum im Format `Regex_greece_eu_passport_date` DD MMM YY (Beispiel - 28.08.19), oder es wird ein Schlüsselwort `Keywords_greece_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_greece_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_greece_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_greece_eu_passport_number` wird gefunden. 
     
 ```xml
       <!-- Greece Passport Number -->
@@ -7839,12 +7662,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -7861,9 +7684,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -7881,11 +7704,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_greece_eu_ssn` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_greece_eu_ssn_or_equivalent` gefunden. 
+- Es wird ein  `Keywords_greece_eu_ssn_or_equivalent` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_greece_eu_ssn` findet Inhalte, die dem Muster entsprechen. 
 
 ```xml
@@ -7919,9 +7742,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -7937,10 +7760,10 @@ Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
   
 - Der reguläre Ausdruck  `Regex_greece_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_greece_eu_tax_file_number` gefunden. 
+- Es wird ein  `Keywords_greece_eu_tax_file_number` Schlüsselwort aus gefunden. 
     
 ```xml
       <!-- Greek Tax Identification Number -->
@@ -7958,20 +7781,20 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 - afm #
 - afm
-- aφμ|aφμ αριθμός
+- aφμ|aφμ αριθμфς
 - aφμ
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- steuerregistrierung nein
+- Steuerregistrierung nein
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -7984,7 +7807,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - φορολογικού μητρώου νο
 
 
-## <a name="hong-kong-identity-card-hkid-number"></a>Hong Kong Identity Card (HKID) number
+## <a name="hong-kong-identity-card-hkid-number"></a>Hong Kong Identity Card (HKID)-Nummer
 
 ### <a name="format"></a>Format
 
@@ -7993,7 +7816,7 @@ Kombination aus 8-9Buchstaben und Zahlen sowie optionale Klammern um das letzte 
 ### <a name="pattern"></a>Muster
 
 Kombination aus Buchstaben 8-9 Buchstaben:
-- 1-2 Buchstaben (Groß-/Kleinschreibung wird nicht beachtet) 
+- 1-2 Buchstaben (keine Groß-/Kleinschreibung) 
 - Sechs Ziffern 
 - Das letzte Zeichen (eine Ziffer oder der Buchstabe A), bei dem es sich um die Prüfziffer handelt, die optional in Klammern eingeschlossen werden kann.
 
@@ -8003,12 +7826,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_hong_kong_id_card findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_hong_kong_id_card gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_hong_kong_id_card findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -8030,11 +7853,11 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 #### <a name="keyword_hong_kong_id_card"></a>Keyword_hong_kong_id_card
 
 - hkid
-- hong kong identity card
+- Hong kong-Identitätskarte
 - HKIDC
 - id card
 - identity card
-- hk identity card
+- hk-Identitätskarte
 - hong kong id
 - 香港身份證
 - 香港永久性居民身份證
@@ -8068,7 +7891,7 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - 香港特別行政區非永久性居民身分証
 
    
-## <a name="hungary-drivers-license-number"></a>Führerscheinnummer für Ungarn
+## <a name="hungary-drivers-license-number"></a>Kennzeichen des Ungarn-Führerscheins
 
 ### <a name="format"></a>Format
 
@@ -8078,7 +7901,7 @@ Zwei Buchstaben, gefolgt von sechs Ziffern
 
 Zwei Buchstaben und sechs Ziffern:
   
-- Zwei Buchstaben (groß-/kleinschreibungsempfindlich) 
+- Zwei Buchstaben (keine Groß-/Kleinschreibung) 
 - Sechs Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
@@ -8087,10 +7910,10 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
   
 - Der reguläre Ausdruck  `Regex_hungary_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_hungary_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_hungary_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
@@ -8106,7 +7929,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -8118,8 +7941,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -8131,31 +7954,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -8166,9 +7989,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -8177,55 +8000,55 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
 #### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver's_license_number
@@ -8235,13 +8058,13 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - vezetői engedélyek
 
 
-## <a name="hungary-personal-identification-number"></a>Personal Identification Number (Ungarn)
+## <a name="hungary-personal-identification-number"></a>Persönliche Identifikationsnummer für Ungarn
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -8251,7 +8074,7 @@ Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 
 11 Ziffern:
   
-- Eine Ziffer, die dem Geschlecht entspricht (1-männlich, 2-frau, andere Nummern sind auch für Bürger möglich, die vor 1900 oder Mitberechtigerechten sind) 
+- Eine Ziffer, die dem Geschlecht entspricht (1-männlich, 2-weiblich, andere Nummern sind auch für Bürger möglich, die vor 1900 geboren sind, oder Bürger mit doppelter Staatsbürgerschaft) 
 - Sechs Ziffern, die dem Geburtsdatum entsprechen (YYMMDD)
 - Drei Ziffern, die einer Seriennummer entsprechen
 - Eine Prüfziffer
@@ -8262,12 +8085,12 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
   
 - Die Funktion  `Func_hungary_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_hungary_eu_national_id_card` gefunden. 
+- Es wird ein  `Keywords_hungary_eu_national_id_card` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
   
 - Die Funktion  `Func_hungary_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
     
@@ -8292,16 +8115,16 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_hungary_eu_national_id_card"></a>Keywords_hungary_eu_national_id_card
 
-- id number
+- ID-Nummer
 - identification number
 - sz ig
 - sz. ig.
 - sz.ig.
-- személyazonosító igkrüvány
-- személyi igidovány
+- személyazonosító igazolvány
+- személyi igazolvány
 
 
-## <a name="hungary-passport-number"></a>Ungarn - Reisepassnummer
+## <a name="hungary-passport-number"></a>Ungarn-Reisepassnummer
 
 ### <a name="format"></a>Format
 
@@ -8309,7 +8132,7 @@ Zwei Buchstaben gefolgt von sechs oder sieben Ziffern ohne Leerzeichen oder Tren
   
 ### <a name="pattern"></a>Muster
 
-Zwei Buchstaben, gefolgt von sechs oder sieben Ziffern
+Zwei Buchstaben gefolgt von sechs oder sieben Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -8317,14 +8140,14 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_hungary_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_hungary_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck findet Datum im Format `Regex_hungary_eu_passport_date` TT MMM/MMM JJ (Beispiel - 01 MÁR/MRT 12) oder ein Schlüsselwort `Keywords_eu_passport_date` wurde gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_hungary_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck findet Datum im Format `Regex_hungary_eu_passport_date` DD MMM/MMM JJ (Beispiel - 01 MÁR/MAR 12) oder es wird ein Schlüsselwort `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_hungary_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_hungary_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_hungary_eu_passport_number` wird gefunden. 
     
 ```xml
       <!-- Hungary Passport Number -->
@@ -8353,12 +8176,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -8372,11 +8195,11 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 
-## <a name="hungary-social-security-number-taj"></a>Ungarn sozialversicherungsnummer (TAJ)
+## <a name="hungary-social-security-number-taj"></a>Ungarn Sozialversicherungsnummer (TAJ)
 
 ### <a name="format"></a>Format
 
@@ -8392,12 +8215,12 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
   
 - Die Funktion  `Func_hungary_eu_ssn_or_equivalent` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_hungary_eu_ssn_or_equivalent` gefunden. 
+- Es wird ein  `Keywords_hungary_eu_ssn_or_equivalent` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
   
 - Die Funktion  `Func_hungary_eu_ssn_or_equivalent` findet Inhalte, die dem Muster entsprechen. 
     
@@ -8418,7 +8241,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_hungary_eu_ssn_or_equivalent"></a>Keywords_hungary_eu_ssn_or_equivalent
 
-- ungarisch sozialversicherungsnummer
+- Ungar sozialversicherungsnummer
 - social security number
 - socialsecuritynumber #
 - hssn #
@@ -8441,9 +8264,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -8463,12 +8286,12 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
   
 - Die Funktion  `Func_hungary_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_hungary_eu_tax_file_number` gefunden. 
+- Es wird ein  `Keywords_hungary_eu_tax_file_number` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
   
 - Die Funktion  `Func_hungary_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
@@ -8500,42 +8323,42 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - hungatiantin #
 - Steuerbehörde nein
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
 - tin #
-- uSt-Nummer
+- Umsatzsteuernummer
 
 
-## <a name="hungary-value-added-tax-number"></a>Mehrwert-Steuernummer für Ungarn
+## <a name="hungary-value-added-tax-number"></a>Mehrwertsteuernummer für Ungarn
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-Alphanumerisches Muster mit 10 Zeichen
+10 Zeichen alphanumerisches Muster
 
 ### <a name="pattern"></a>Muster
 
-Alphanumerisches Muster mit 10 Zeichen:
+10 Zeichen alphanumerisches Muster:
 
-- zwei Buchstaben – HU oder Hu
-- Optionaler Speicherplatz
+- zwei Buchstaben - HU oder hu
+- optionaler Speicherplatz
 - acht Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -8544,12 +8367,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 
 - Die Funktion Func_hungarian_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_hungarian_value_added_tax_number gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 
 - Die Funktion Func_hungarian_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 
@@ -8574,16 +8397,16 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Umsatzsteuernummer
 - vat #
 - vatno #
-- ungarischvatno #
-- tax no.
-- value added tax áfa
+- hungarianvatno #
+- Steuernr.
+- Mehrwertsteuer áfa
 - közösségi adószám
 - általános forgalmi adó szám
 - hozzáadottérték adó
 - áfa szám
 
 
-## <a name="india-permanent-account-number-pan"></a>Indien – dauerhafte Kontonummer (PAN)
+## <a name="india-permanent-account-number-pan"></a>India permanent account number (PAN)
 
 ### <a name="format"></a>Format
 
@@ -8592,11 +8415,11 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 ### <a name="pattern"></a>Muster
 
 10 Buchstaben oder Ziffern:
-- Drei Buchstaben (Groß-/Kleinschreibung nicht beachtet) 
-- Ein Buchstabe in C, P, H, F, A, T, B, L, J, G (ohne Schreibung)
+- Drei Buchstaben (keine Groß-/Kleinschreibung) 
+- Ein Buchstabe in C, P, H, F, A, T, B, L, J, G (ohne Zwischenfall)
 - Ein Buchstabe
 - Vier Ziffern 
-- Ein Buchstabe, bei dem es sich um eine alphabetische Prüfziffer handelt
+- Ein Buchstabe, der eine alphabetische Prüfziffer ist
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -8604,12 +8427,12 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck Regex_india_permanent_account_number findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Der reguläre Ausdruck Regex_india_permanent_account_number, der dem Muster entspricht.
 - Ein Schlüsselwort aus Keyword_india_permanent_account_number gefunden.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck Regex_india_permanent_account_number findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der reguläre Ausdruck Regex_india_permanent_account_number, der dem Muster entspricht.
 
 
 ```xml
@@ -8634,7 +8457,7 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - Permanent Account Number 
 - PAN 
    
-## <a name="india-unique-identification-aadhaar-number"></a>Indien – eindeutige Identifikationsnummer (Aadhaar)
+## <a name="india-unique-identification-aadhaar-number"></a>Indien eindeutige Identifikationsnummer (Aadhaar)
 
 ### <a name="format"></a>Format
 
@@ -8656,12 +8479,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_india_aadhaar findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_india_aadhar gefunden.
 - Die Prüfsumme stimmt.
 - 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 
 - Die Funktion Func_india_aadhaar findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
@@ -8688,7 +8511,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - आधार
 - uidai
    
-## <a name="indonesia-identity-card-ktp-number"></a>Indonesische Personalausweisnummer (KTP)
+## <a name="indonesia-identity-card-ktp-number"></a>Indonesische Identitätskarte (KTP)-Nummer
 
 ### <a name="format"></a>Format
 
@@ -8712,9 +8535,9 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 
-- Der reguläre Ausdruck Regex_indonesia_id_card findet Inhalte, die dem Muster entsprechen.
+- Der reguläre Ausdruck Regex_indonesia_id_card, der dem Muster entspricht.
 - Ein Schlüsselwort aus Keyword_indonesia_id_card gefunden.
 
 ```xml
@@ -8738,18 +8561,18 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 
 ### <a name="format"></a>Format
 
-Ländercode (zwei Buchstaben) plus Prüfziffern (zwei Ziffern) plus Bban-Nummer (bis zu 30 Zeichen)
+Ländercode (zwei Buchstaben) plus Prüfziffern (zwei Ziffern) plus Bban-Zahl (bis zu 30 Zeichen)
 
 ### <a name="pattern"></a>Muster
 
 Das Muster muss Folgendes enthalten:
 
-- Zwei Buchstaben Ländercode
+- Zwei-Buchstaben-Ländercode
 - Zwei Prüfziffern (gefolgt von einem optionalen Leerzeichen) 
-- 1-7 Gruppen mit vier Buchstaben oder Ziffern (kann durch Leerzeichen getrennt werden)
+- 1-7 Gruppen mit vier Buchstaben oder Ziffern (können durch Leerzeichen getrennt werden)
 - 1 bis 3 Buchstaben oder Ziffern
 
-Das Format für jedes Land ist etwas anders. Der Typ vertraulicher IBAN-Informationen deckt die folgenden 60 Länder ab:
+Das Format für jedes Land ist geringfügig unterschiedlich. Der Typ vertraulicher IBAN-Informationen deckt die folgenden 60 Länder ab:
 
 ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk, sm, tn, tr, vg
 
@@ -8759,7 +8582,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 
 - Die Funktion Func_iban findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
@@ -8777,7 +8600,7 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 Keine
 
    
-## <a name="international-classification-of-diseases-icd-10-cm"></a>Internationale Klassifikation von Krankheit (ICD-10-CM)
+## <a name="international-classification-of-diseases-icd-10-cm"></a>Internationale Klassifikation von Erkrankungen (ICD-10-CM)
 
 ### <a name="format"></a>Format
 
@@ -8793,12 +8616,12 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Ein Schlüsselwort aus Dictionary_icd_10_updated gefunden.
 - Ein Schlüsselwort aus Dictionary_icd_10_codes gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Ein Schlüsselwort aus Dictionary_icd_10_ wurde gefunden.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Ein Schlüsselwort aus Dictionary_icd_10_ wird gefunden.
 
 ```xml
       <!-- ICD-10 CM -->
@@ -8815,11 +8638,11 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-Ein beliebiger Begriff aus Dictionary_icd_10_updated Schlüsselwörterbuch, der auf der International [Classification of Diseases, Tenth Revision, Modification Modification (ICD-10-CM) basiert.](https://go.microsoft.com/fwlink/?linkid=852604) Dieser Typ sucht nur nach dem Begriff, nicht nach den Versicherungscodes.
+Jeder Ausdruck aus dem Dictionary_icd_10_updated Schlüsselwortwörterbuch, das auf der Internationalen Klassifikation von Krankheit, zehnter Revision, klinischer Änderung [(ICD-10-CM) basiert.](https://go.microsoft.com/fwlink/?linkid=852604) Dieser Typ sucht nur nach dem Ausdruck, nicht nach den Versicherungscodes.
 
-Ein beliebiger Begriff aus Dictionary_icd_10_codes Schlüsselwörterbuch, der auf der International [Classification of Diseases, Tenth Revision, Modification Modification (ICD-10-CM) basiert.](https://go.microsoft.com/fwlink/?linkid=852604) Dieser Typ sucht nur nach Versicherungscodes, nicht nach der Beschreibung.
+Jeder Ausdruck aus dem Dictionary_icd_10_codes Schlüsselwortwörterbuch, das auf der Internationalen Klassifikation von Krankheit, zehnter Revision, klinischer Änderung [(ICD-10-CM) basiert.](https://go.microsoft.com/fwlink/?linkid=852604) Dieser Typ sucht nur nach Versicherungscodes, nicht nach der Beschreibung.
 
-## <a name="international-classification-of-diseases-icd-9-cm"></a>Internationale Klassifikation von Krankheit (ICD-9-CM)
+## <a name="international-classification-of-diseases-icd-9-cm"></a>Internationale Klassifikation von Erkrankungen (ICD-9-CM)
 
 ### <a name="format"></a>Format
 
@@ -8835,11 +8658,11 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Ein Schlüsselwort aus Dictionary_icd_9_updated gefunden.
 - Ein Schlüsselwort aus Dictionary_icd_9_codes gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Ein Schlüsselwort aus Dictionary_icd_9_updated gefunden.
 
 ```xml
@@ -8856,19 +8679,19 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-Ein beliebiger Begriff aus Dictionary_icd_9_updated Schlüsselwörterbuch, der auf der [International Classification of Diseases,Ninth Revision, Modification Modification (ICD-9-CM) basiert.](https://go.microsoft.com/fwlink/?linkid=852605) Dieser Typ sucht nur nach dem Begriff, nicht nach den Versicherungscodes.
+Ein beliebiger Ausdruck aus Dictionary_icd_9_updated Schlüsselwortwörterbuch, das auf der Internationalen Klassifikation von Krankheit, neunter Revision, klinischer Änderung [(ICD-9-CM) basiert.](https://go.microsoft.com/fwlink/?linkid=852605) Dieser Typ sucht nur nach dem Ausdruck, nicht nach den Versicherungscodes.
 
-Ein beliebiger Begriff aus Dictionary_icd_9_codes Schlüsselwortverzeichnis, das auf der [international Classification of Diseases,Ninth Revision, Modification Modification (ICD-9-CM) basiert.](https://go.microsoft.com/fwlink/?linkid=852605) Dieser Typ sucht nur nach Versicherungscodes, nicht nach der Beschreibung.
+Jeder Ausdruck aus dem Dictionary_icd_9_codes Schlüsselwortwörterbuch, das auf der Internationalen Klassifikation von Krankheit, neunter Revision, klinischer Änderung [(ICD-9-CM) basiert.](https://go.microsoft.com/fwlink/?linkid=852605) Dieser Typ sucht nur nach Versicherungscodes, nicht nach der Beschreibung.
 
 ## <a name="ip-address"></a>IP-Adresse
 
 ### <a name="format"></a>Format
 
 #### <a name="ipv4"></a>IPv4:
-Komplexes Muster, das formatierte (Perioden) und unformatierte (keine Punkte) Versionen der IPv4-Adressen abbildet
+Komplexes Muster, das formatierte (Perioden) und unformatierte (keine Zeiträume) Versionen der IPv4-Adressen verwendet
 
 #### <a name="ipv6"></a>IPv6:
-Komplexes Muster, das formatierte IPv6-Nummern (die Doppelpunkte enthalten)
+Komplexes Muster, das formatierte IPv6-Zahlen (die Doppelpunkte enthalten)
 
 ### <a name="pattern"></a>Muster
 
@@ -8878,15 +8701,15 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Für IPv6 hat eine DLP-Richtlinie eine hohe Sicherheit, dass diese Art von vertraulichen Informationen erkannt wurde, wenn in der Nähe von 300 Zeichen:
+Für IPv6 hat eine DLP-Richtlinie eine hohe Sicherheit, dass diese Art vertraulicher Informationen erkannt wird, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_ipv6_address findet Inhalte, die dem Muster entsprechen.
 - Es wurde kein Schlüsselwort aus Keyword_ipaddress gefunden.
 
-Für IPv4 ist eine DLP-Richtlinie zu 95 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Für IPv4 hat eine DLP-Richtlinie hohe Vertrauen, dass diese Art vertraulicher Informationen erkannt wird, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_ipv4_address findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_ipaddress wurde gefunden.
 
-Für IPv6 ist eine DLP-Richtlinie zu 95 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Für IPv6 hat eine DLP-Richtlinie eine hohe Sicherheit, dass diese Art vertraulicher Informationen erkannt wird, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_ipv6_address findet Inhalte, die dem Muster entsprechen.
 - Es wurde kein Schlüsselwort aus Keyword_ipaddress gefunden.
 
@@ -8918,13 +8741,13 @@ Für IPv6 ist eine DLP-Richtlinie zu 95 % sicher, dass diese Art von vertraulic
 
 #### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
-- IP (bei diesem Schlüsselwort wird die Kleinschreibung beachtet)
+- IP (bei diesem Schlüsselwort wird die Zwischen-/Kleinschreibung beachtet)
 - ip address 
 - IP-Adressen
 - internet protocol
 - IP-כתובת ה 
 
-## <a name="ireland-drivers-license-number"></a>Ireland driver's license number
+## <a name="ireland-drivers-license-number"></a>Führerscheinnummer des Irland-Treibers
 
 ### <a name="format"></a>Format
 
@@ -8935,7 +8758,7 @@ Sechs Ziffern, gefolgt von vier Buchstaben
 Sechs Ziffern und vier Buchstaben:
   
 - Sechs Ziffern
-- Vier Buchstaben (Groß-/Kleinschreibung nicht beachtet)
+- Vier Buchstaben (keine Groß-/Kleinschreibung)
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -8943,10 +8766,10 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
   
 - Der reguläre Ausdruck  `Regex_ireland_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_ireland_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_ireland_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Ireland Driver's License Number -->
@@ -8963,7 +8786,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -8975,8 +8798,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -8988,31 +8811,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -9023,9 +8846,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -9034,63 +8857,63 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver A0 s_license_number
+#### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver's_license_number
 
 - ceadúnas tiomána
 - ceadúnais tiomána
 
-## <a name="ireland-passport-number"></a>Irland - Reisepassnummer
+## <a name="ireland-passport-number"></a>Irland Reisepassnummer
 
 ### <a name="format"></a>Format
 
@@ -9100,7 +8923,7 @@ Zwei Buchstaben oder Ziffern gefolgt von sieben Ziffern ohne Leerzeichen oder Tr
 
 Zwei Buchstaben oder Ziffern gefolgt von sieben Ziffern:
   
-- Zwei Ziffern oder Buchstaben (Groß-/Kleinschreibung wird nicht beachtet)
+- Zwei Ziffern oder Buchstaben (keine Groß-/Kleinschreibung)
 - Sieben Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
@@ -9109,14 +8932,14 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_ireland_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_ireland_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck findet datums im Format `Regex_ireland_eu_passport_date` TT MMM/MMM JJJJ (Beispiel - 01 BEA/MAI 1988) oder ein Schlüsselwort gefunden `Keywords_eu_passport_date` wurde
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_ireland_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck findet Datum im Format `Regex_ireland_eu_passport_date` DD MMM/MMM YYYY (Beispiel - 01 BEA/MAY 1988) oder ein Schlüsselwort aus `Keywords_eu_passport_date` gefunden wird.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_ireland_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_ireland_eu_passport_number` wurde gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_ireland_eu_passport_number` wird gefunden.
     
 ```xml
       <!-- Ireland Passport Number -->
@@ -9146,12 +8969,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -9160,7 +8983,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 #### <a name="keywords_ireland_eu_passport_number"></a>Keywords_ireland_eu_passport_number
 
 - passeport numero
-- uimhreacha pasrea
+- uimhreacha pasana
 - uimhir pas
 - uimhir phas
 - uimhreacha pas
@@ -9169,11 +8992,11 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 
-## <a name="ireland-personal-public-service-pps-number"></a>Ireland Personal Public Service (PPS) number
+## <a name="ireland-personal-public-service-pps-number"></a>Nummer des öffentlichen Dienstes (Personal Public Service, PPS) in Irland
 
 ### <a name="format"></a>Format
 
@@ -9187,11 +9010,11 @@ Neues Format (1. Januar 2013 und danach):
 
 Altes Format (bis 31. Dezember 2012):
 - sieben Ziffern 
-- 1 bis 2 Buchstaben (Groß-/Kleinschreibung wird nicht beachtet) 
+- ein bis zwei Buchstaben (keine Groß-/Kleinschreibung) 
 
 Neues Format (1. Januar 2013 und danach):
 - sieben Ziffern 
-- Ein Buchstabe (ohne Schreibung), bei dem es sich um eine alphabetische Prüfziffer handelt 
+- ein Buchstabe (ohne Zwischenfall), bei dem es sich um eine alphabetische Prüfziffer handelt 
 - Ein optionaler Buchstabe im Bereich A-I oder "W"
 
 ### <a name="checksum"></a>Prüfsumme
@@ -9200,12 +9023,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_ireland_pps findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_ireland_eu_national_id_card gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_ireland_pps findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -9229,13 +9052,13 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - Clientidentitätsdienst
 - identification number
 - Persönliche ID-Nummer
-- Persönliche öffentliche Dienstnummer
+- Persönliche Öffentliche Dienstnummer
 - Persönlicher Dienst nein
-- phearsphe seirbhíse poiblí
+- phearsanta seirbhíse poiblí
 - pps no
-- pps number
+- pps-Zahl
 - pps num
-- pps service no
+- pps-Dienst nein
 - ppsn
 - ppsno #
 - ppsno
@@ -9245,23 +9068,23 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - publicserviceno
 - Umsatz- und Sozialversicherungsnummer
 - rsi no
-- rsi number
+- rsi-Nummer
 - rsin
-- seirbhís aithekliis client
+- seirbhís aitheantais client
 - uimh
-- uimhir aithemieis chánach
-- uimhir aithemieis phearsane
-- uimhir phearsphe seirbhíse poiblí
+- uimhir aitheantais chánach
+- uimhir aitheantais phearsanta
+- uimhir phearsanta seirbhíse poiblí
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -9270,7 +9093,7 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - tin #
 
 
-## <a name="israel-bank-account-number"></a>Israel bank account number
+## <a name="israel-bank-account-number"></a>Kontonummer für Israel
 
 ### <a name="format"></a>Format
 
@@ -9280,9 +9103,9 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 
 Formatiert:
 - zwei Ziffern 
-- Ein Bindestrich 
+- ein Strich 
 - drei Ziffern 
-- Ein Bindestrich 
+- ein Strich 
 - acht Ziffern
 
 Unformatiert:
@@ -9294,7 +9117,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_israel_bank_account_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_israel_bank_account_number wurde gefunden.
 
@@ -9319,7 +9142,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Account Number 
 - מספר חשבון בנק 
    
-## <a name="israel-national-identification-number"></a>Nationale Identifikationsnummer Israels
+## <a name="israel-national-identification-number"></a>Nationale Identifikationsnummer Für Israel
 
 ### <a name="format"></a>Format
 
@@ -9327,7 +9150,7 @@ neun Ziffern
 
 ### <a name="pattern"></a>Muster
 
-neun aufeinanderfolgende Ziffern
+neun aufeinander folgende Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -9335,7 +9158,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_israeli_national_id_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Israel_National_ID wurde gefunden.
 - Die Prüfsumme stimmt.
@@ -9365,30 +9188,30 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 -   رقم الهوية
 -   عدد هوية فريدة من نوعها
 -   idnumber #
--   id number
--   Identity no        
+-   ID-Nummer
+-   identity no        
 -   identitynumber #
 -   Identitätsnummer
--   zeitidentitynumber       
--   Persönliche ID
+-   israelidentitynumber       
+-   persönliche ID
 -   eindeutige ID  
 
    
 ## <a name="italy-drivers-license-number"></a>Italienische Führerscheinnummer
 
-Diese Entität für vertrauliche Informationstypen ist im vertraulichen Informationstyp "EU Driver's License Number" enthalten und steht als eigenständige Entität für vertrauliche Informationstypen zur Verfügung.
+Diese Entität vom Typ vertraulicher Informationen ist im vertraulichen Informationstyp "EU Driver's License Number" enthalten und steht als eigenständige Entität für vertraulichen Informationstyp zur Verfügung.
 
 ### <a name="format"></a>Format
 
-Eine Kombination aus 10 Buchstaben und Ziffern
+eine Kombination aus 10 Buchstaben und Ziffern
 
 ### <a name="pattern"></a>Muster
 
 eine Kombination aus 10 Buchstaben und Ziffern:
-- Ein Buchstabe (ohne Schreibung) 
-- Der Buchstabe "A" oder "V" (ohne Schreibung) 
+- ein Buchstabe (ohne Zwischenfall) 
+- Der Buchstabe "A" oder "V" (ohne Zwischenfall) 
 - sieben Ziffern
-- Ein Buchstabe (ohne Schreibung)
+- ein Buchstabe (ohne Zwischenfall)
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -9396,9 +9219,9 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck `Regex_italy_drivers_license_number` findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus `Keywords_eu_driver's_license_number` oder `Keyword_italy_drivers_license_number` wurde gefunden.
+- Ein Schlüsselwort aus `Keywords_eu_driver's_license_number` oder `Keyword_italy_drivers_license_number` wird gefunden.
 
 ```xml
     <!-- Italy Driver's license Number -->
@@ -9415,7 +9238,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -9427,8 +9250,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -9440,31 +9263,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -9475,9 +9298,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -9486,87 +9309,87 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 #### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
-- numero di patent
+- numero di patente
 - patente di guida 
-- patent guida
+- patente guida
 - patenti di guida
 - patenti guida
 
 
-## <a name="italy-fiscal-code"></a>Finanzcode für Italien
+## <a name="italy-fiscal-code"></a>Steuercode für Italien
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-Eine 16-stellige Kombination aus Buchstaben und Ziffern im angegebenen Muster
+eine 16-stellige Kombination aus Buchstaben und Ziffern im angegebenen Muster
   
 ### <a name="pattern"></a>Muster
 
 Eine 16-stellige Kombination aus Buchstaben und Ziffern:
 - drei Buchstaben, die den ersten drei Konsonanten im Familiennamen entsprechen
-- drei Buchstaben, die den ersten, dritten und vierten Konsonanten im Vornamen entsprechen
-- zwei Ziffern, die den letzten Ziffern des Geburtsjahrs entsprechen
-- Ein Buchstabe, der dem Buchstaben für den Geburtsmonat entspricht– Buchstaben werden in alphabetischer Reihenfolge verwendet, aber es werden nur die Buchstaben A bis E, H, L, M, P, R bis T verwendet (also ist Januar A und Oktober ist R).
-- zwei Ziffern, die dem Tag des Geburtsmonats entsprechen– um zwischen den Geschlechten zu unterscheiden, werden 40 zum Geburtstag für Frauen hinzugefügt.
-- vier Ziffern, die der Ortswahl entsprechen, die für die Herkunft der Person spezifisch ist (länderweite Codes werden für fremde Länder verwendet)
-- Eine Paritätsziffer
+- drei Buchstaben, die dem ersten, dritten und vierten Konsonanten im Vornamen entsprechen
+- zwei Ziffern, die den letzten Ziffern des Geburtsjahres entsprechen
+- ein Buchstabe, der dem Buchstaben für den Monat der Geburt entspricht– Buchstaben werden in alphabetischer Reihenfolge verwendet, aber nur die Buchstaben A bis E, H, L, M, P, R bis T werden verwendet (also ist Januar A und Oktober ist R)
+- zwei Ziffern, die dem Tag des Geburtsmonats entsprechen– um zwischen den Geschlechten zu unterscheiden, wird 40 zum Tag der Geburt für Frauen hinzugefügt.
+- vier Ziffern, die der ortsspezifischen Vorwahl für die Kommune entsprechen, in der die Person geboren wurde (länderweite Codes werden für fremde Länder verwendet)
+- eine Paritätsziffer
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -9574,11 +9397,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_italy_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_italy_eu_national_id_card` gefunden. 
+- Es wird ein  `Keywords_italy_eu_national_id_card` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_italy_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -9602,28 +9425,28 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - codice fiscale
 - codice id personale
 - codice personale
-- Finanzcode
+- Steuercode
 - numero certificato personale
 - numero di identificazione fiscale
 - numero id personale
 - numero personale
-- Persönliche Zertifikatnummer
+- Persönliche Zertifikatsnummer
 - Persönlicher Code
-- Personal -ID-Code
+- Persönlicher ID-Code
 - Persönliche ID-Nummer
 - personalcodeno #
 - Steuercode
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
 - Steueridentitätsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -9642,7 +9465,7 @@ zwei Buchstaben oder Ziffern gefolgt von sieben Ziffern ohne Leerzeichen oder Tr
 
 zwei Buchstaben oder Ziffern gefolgt von sieben Ziffern:
   
-- zwei Ziffern oder Buchstaben (groß-/klein geschrieben)
+- zwei Ziffern oder Buchstaben (keine Groß-/Kleinschreibung)
 - sieben Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
@@ -9651,14 +9474,14 @@ nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_italy_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_italy_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck findet Datum im Format `Regex_italy_eu_passport_date` TT MMM/MMM JJJJ (Beispiel - 01 GEN/JAN 1988) oder ein Schlüsselwort `Keywords_eu_passport_date` wurde gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_italy_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck findet Datum im Format `Regex_italy_eu_passport_date` DD MMM/MMM YYYY (Beispiel - 01 GEN/JAN 1988) oder es wird ein Schlüsselwort `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_italy_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_italy_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_italy_eu_passport_number` wird gefunden. 
     
 ```xml
       <!-- Italy Passport Number -->
@@ -9688,12 +9511,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -9711,29 +9534,29 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 
-## <a name="italy-value-added-tax-number"></a>Italienische Umsatzsteuernummer
+## <a name="italy-value-added-tax-number"></a>Mehrwertsteuernummer für Italien
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-Alphanumerisches Muster mit 13 Zeichen und optionalen Trennzeichen
+13 Zeichen alphanumerisches Muster mit optionalen Trennzeichen
 
 ### <a name="pattern"></a>Muster
 
-Alphanumerisches Muster mit 13 Zeichen und optionalen Trennzeichen:
+13 Zeichen alphanumerisches Muster mit optionalen Trennzeichen:
 
 - I oder i
 - T oder t
-- Optionales Leerzeichen, Punkt, Bindestrich oder Komma
+- optionaler Abstand, Punkt, Bindestrich oder Komma
 - 11 Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -9742,12 +9565,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion Func_italy_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Die Funktion Func_italy_value_added_tax_number nach Inhalten, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_italy_value_added_tax_number gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion Func_italy_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Die Funktion Func_italy_value_added_tax_number nach Inhalten, die dem Muster entsprechen.
 
 ```xml
       <!-- Italy Value Added Tax -->
@@ -9766,7 +9589,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keyword_italy_value_added_tax_number"></a>Keyword_italy_value_added_tax_number
 
-- uSt-Nummer
+- Umsatzsteuernummer
 - vat no
 - vat #
 - iva
@@ -9783,9 +9606,9 @@ sieben oder acht Ziffern
 
 Bankkontonummer:
 - sieben oder acht Ziffern
-- Bankfiliale:
+- Bankkonto-Filialcode:
 - vier Ziffern 
-- Leerzeichen oder Gedankenstriche (optional) 
+- Leerzeichen oder Strich (optional) 
 - drei Ziffern
 
 Prüfsumme
@@ -9794,14 +9617,14 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_jp_bank_account findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_jp_bank_account wurde gefunden.
 - Eine der folgenden Bedingungen trifft zu:
 - Die Funktion Func_jp_bank_account_branch_code findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_jp_bank_branch_code wurde gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_jp_bank_account findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_jp_bank_account wurde gefunden.
 
@@ -9892,7 +9715,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_jp_drivers_license_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_jp_drivers_license_number wurde gefunden.
 
@@ -9947,23 +9770,23 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - 免許 #
 
 
-## <a name="japan-my-number---corporate"></a>Japan – Meine Nummer – Unternehmen
+## <a name="japan-my-number---corporate"></a>Japan My Number – Corporate
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-13-stellige Nummer
+13-stellige Zahl
 
 ### <a name="pattern"></a>Muster
 
-13-stellige Nummer:
+13-stellige Zahl:
 
-- Eine Ziffer von 1 bis 9
+- eine Ziffer von 1 bis 9
 - 12 Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -9972,12 +9795,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion Func_japanese_my_number_corporate findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Die Funktion Func_japanese_my_number_corporate nach Inhalten, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_japanese_my_number_corporate gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion Func_japanese_my_number_corporate findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Die Funktion Func_japanese_my_number_corporate nach Inhalten, die dem Muster entsprechen.
 
 ```xml
       <!-- Japanese My Number – Corporate -->
@@ -10008,26 +9831,26 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - 指定通知書
 
 
-## <a name="japan-my-number---personal"></a>Japan – Eigene Nummer – Persönlich
+## <a name="japan-my-number---personal"></a>Japan My Number – Persönlich
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-12-stellige Nummer
+12-stellige Zahl
 
 ### <a name="pattern"></a>Muster
 
-12-stellige Nummer:
+12-stellige Zahl:
 
 - vier Ziffern
-- Ein optionales Leerzeichen, ein Punkt oder ein Bindestrich
+- optionaler Leerzeichen, Punkt oder Bindestrich
 - vier Ziffern
-- Optionaler Leerzeichen, Punkt oder Bindestrich
+- optionaler Leerzeichen, Punkt oder Bindestrich
 - vier Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -10036,11 +9859,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_japanese_my_number_personal findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_japanese_my_number_personal gefunden.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_japanese_my_number_personal findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -10060,7 +9883,7 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 
 #### <a name="keyword_japan_my_number_personal"></a>Keyword_japan_my_number_personal
 
-- Meine Nummer
+- meine Nummer
 - マイナンバー
 - 個人番号
 - 共通番号
@@ -10080,7 +9903,7 @@ zwei Buchstaben gefolgt von sieben Ziffern
 
 ### <a name="pattern"></a>Muster
 
-zwei Buchstaben (groß-/kleinschreibungsempfindlich) gefolgt von sieben Ziffern
+zwei Buchstaben (ohne Groß-/Kleinschreibung), gefolgt von sieben Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -10088,7 +9911,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_jp_passport findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_jp_passport wurde gefunden.
 
@@ -10108,14 +9931,14 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 - Passport
 - Passport Number
-- Passport No.
+- Passport-Nr.
 - Passport#
 - パスポート
 - パスポート番号
 - パスポートナンバー
 - パスポート＃
 - パスポート #
-- Oder sie ポ.
+- 20ポ07.000.000
 - 旅券番号
 - 旅券番号＃
 - 旅券番号♯
@@ -10131,9 +9954,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 ### <a name="pattern"></a>Muster
 
 12 Buchstaben und Ziffern:
-- zwei Buchstaben (Groß-/Kleinschreibung wird nicht beachtet)
+- zwei Buchstaben (keine Groß-/Kleinschreibung)
 - acht Ziffern 
-- zwei Buchstaben (Groß-/Kleinschreibung wird nicht beachtet)
+- zwei Buchstaben (keine Groß-/Kleinschreibung)
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -10141,8 +9964,8 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck Regex_jp_residence_card_number findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der reguläre Ausdruck Regex_jp_residence_card_number, der dem Muster entspricht.
 - Ein Schlüsselwort aus Keyword_jp_residence_card_number gefunden.
 
 ```xml
@@ -10159,14 +9982,14 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keyword_jp_residence_card_number"></a>Keyword_jp_residence_card_number
 
-- Nummer der Wohnortkarte
-- Wohnortkarte nein
-- Wohnortkarte #
+- Nummer der Aufenthaltskarte
+- Aufenthaltskarte nein
+- Aufenthaltskarte #
 - 在留カード番号
 - 在留カード
 - 在留番号
 
-## <a name="japan-resident-registration-number"></a>Japanische Einwohnerregistrierungsnummer
+## <a name="japan-resident-registration-number"></a>In Japan ansässige Registrierungsnummer
 
 ### <a name="format"></a>Format
 
@@ -10182,7 +10005,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_jp_resident_registration_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_jp_resident_registration_number wurde gefunden.
 
@@ -10222,8 +10045,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 7 bis 12 Ziffern:
 - vier Ziffern 
-- Ein Bindestrich (optional) 
-- sechs Ziffern ODER
+- ein Bindestrich (optional) 
+- sechs Ziffern OR
 - 7-12 aufeinanderfolgende Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -10232,11 +10055,11 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_jp_sin findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_jp_sin wurde gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_jp_sin_pre_1997 findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_jp_sin wurde gefunden.
 
@@ -10268,7 +10091,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - 雇用保険番号
 - 保険証番号
 - 社会保険番号
-- Oder 保険No.
+- 2007保険No.
 - 社会保険
 - 介護保険
 - 介護保険被保険者番号
@@ -10278,7 +10101,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - 厚生年金被保険者整理番号
 
 
-## <a name="latvia-drivers-license-number"></a>Führerscheinnummer für Lettland
+## <a name="latvia-drivers-license-number"></a>Lizenznummer des Lettland-Führerscheins
 
 ### <a name="format"></a>Format
 
@@ -10288,7 +10111,7 @@ drei Buchstaben gefolgt von sechs Ziffern
 
 drei Buchstaben und sechs Ziffern:
   
-- drei Buchstaben (Groß-/Kleinschreibung nicht beachtet) 
+- drei Buchstaben (keine Groß-/Kleinschreibung) 
 - sechs Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
@@ -10297,9 +10120,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_latvia_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_latvia_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_latvia_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Latvia Driver's License Number -->
@@ -10316,7 +10139,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -10328,8 +10151,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -10341,31 +10164,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -10376,9 +10199,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -10387,58 +10210,58 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver A0 s_license_number
+#### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver's_license_number
 
 - autovadītāja apliecība
 - autovadītāja apliecības
@@ -10457,9 +10280,9 @@ Altes Format
 11 Ziffern und ein Bindestrich:
   
 - sechs Ziffern, die dem Geburtsdatum entsprechen (DDMMYY) 
-- Ein Bindestrich
-- eine Ziffer, die dem Geburtsjahrjahr entspricht ("0" für das 19. Und "1" für das 20. Und "2" für das 21.
-- Vier Ziffern, nach dem Zufallsprinzip generiert
+- ein Bindestrich
+- eine Ziffer, die dem Geburtsjahrhundert ("0" für das 19. Jahrhundert, "1" für das 20. Und "2" für das 21. Jahrhundert) entspricht.
+- vier Ziffern, nach dem Zufallsprinzip generiert
 
 Neues Format
 
@@ -10474,12 +10297,12 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion  `Func_latvia_eu_national_id_card` oder der reguläreEx findet `Regex_latvia_eu_national_id_card_new_format` Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_latvia_eu_national_id_card` gefunden. 
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Die Funktion  `Func_latvia_eu_national_id_card` oder der regex `Regex_latvia_eu_national_id_card_new_format` findet Inhalte, die dem Muster entsprechen. 
+- Es wird ein  `Keywords_latvia_eu_national_id_card` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion  `Func_latvia_eu_national_id_card` oder der reguläreEx findet `Regex_latvia_eu_national_id_card_new_format` Inhalte, die dem Muster entsprechen. 
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Die Funktion  `Func_latvia_eu_national_id_card` oder der regex `Regex_latvia_eu_national_id_card_new_format` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
       <!-- Latvia Personal Code -->
@@ -10515,58 +10338,58 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 #### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
 - administrative Nummer
-- asils nē
+- alvas nē
 - Geburtsnummer
-- Citizen Number
-- standesamt.nn.
-- Elektronische Zählungsnummer
+- Citizen-Nummer
+- zivile Nummer
+- elektronische Zählungsnummer
 - elektronische Nummer
-- Finanzcode
-- Benutzernummer im Gesundheitswesen
+- Steuercode
+- Benutzernummer des Gesundheitswesens
 - id #
 - id-code
 - identification number
 - identifikācijas numurs
 - id-number
 - einzelne Zahl
-- latvija avas
+- latvija alva
 - nacionālais id
 - national id
-- Nationale Identifikationsnummer
-- national identity number
+- nationale Identifikationsnummer
+- nationale Identitätsnummer
 - national insurance number
-- national register number
-- nodokļa numurs
-- nodokļu id
-- nodokļu identifikācija numurs
-- Persönliche Zertifikatnummer
+- nationale Registernummer
+- nodok
+- nodok en id
+- nodok identifikācija numurs
+- Persönliche Zertifikatsnummer
 - Persönlicher Code
-- Personal -ID-Code
+- Persönlicher ID-Code
 - Persönliche ID-Nummer
 - Persönlicher Identifikationscode
-- Persönlicher Bezeichner
+- Persönliche ID
 - Persönliche Identitätsnummer
-- Persönliche Nummer
-- Persönlicher numerischer Code
+- persönliche Nummer
+- persönlicher numerischer Code
 - personalcodeno #
 - personas kods
-- Grundgesamtheitsidentifikationscode
+- Population Identification Code
 - Öffentliche Dienstnummer
 - registration number
 - Umsatznummer
 - social insurance number
 - social security number
-- Steuercode für Bundesland
+- Steuercode des Bundesstaats
 - tax file number
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -10575,7 +10398,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - tin #
 - Wählernummer
 
-## <a name="latvia-passport-number"></a>Lettisch - Reisepassnummer
+## <a name="latvia-passport-number"></a>Reisepassnummer für Lettland
 
 ### <a name="format"></a>Format
 
@@ -10585,7 +10408,7 @@ zwei Buchstaben oder Ziffern gefolgt von sieben Ziffern ohne Leerzeichen oder Tr
 
 zwei Buchstaben oder Ziffern gefolgt von sieben Ziffern:
   
-- zwei Ziffern oder Buchstaben (groß-/klein geschrieben)
+- zwei Ziffern oder Buchstaben (keine Groß-/Kleinschreibung)
 - sieben Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
@@ -10594,14 +10417,14 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_latvia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_latvia_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Das Datum im Format TT.MM.JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_latvia_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Datum im Format DD.MM.YYYY, oder es wird ein Schlüsselwort `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_latvia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_latvia_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_latvia_eu_passport_number` wird gefunden. 
     
 ```xml
       <!-- Latvia Passport Number -->
@@ -10631,12 +10454,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -10653,15 +10476,15 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 
-## <a name="lithuania-drivers-license-number"></a>Litauisch - Führerscheinnummer
+## <a name="lithuania-drivers-license-number"></a>Lizenznummer des Litauen-Führerscheins
 
 ### <a name="format"></a>Format
 
-Acht Ziffern ohne Leerzeichen und Trennzeichen
+acht Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -10673,9 +10496,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_lithuania_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_lithuania_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_lithuania_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Lithuania Driver's License Number -->
@@ -10692,7 +10515,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -10704,8 +10527,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -10717,31 +10540,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -10752,9 +10575,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -10763,70 +10586,70 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver A0 s_license_number
+#### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver's_license_number
 
 - vairuotojo pažymėjimas
 - vairuotojo pažymėjimo numeris
 - vairuotojo pažymėjimo numeriai
 
-## <a name="lithuania-personal-code"></a>Persönlicher Code für Litauen
+## <a name="lithuania-personal-code"></a>Persönlichen Code für Litauen
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -10836,10 +10659,10 @@ Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 
 11 Ziffern ohne Leerzeichen und Trennzeichen:
   
-- eine Ziffer (1-6), die dem Geschlecht und dem Geburtsjahr des Menschen entspricht
+- eine Ziffer (1-6), die dem Geschlecht und dem Geburtsdatum der Person entspricht
 - sechs Ziffern, die dem Geburtsdatum entsprechen (YYMMDD) 
 - drei Ziffern, die der Seriennummer des Geburtsdatums entsprechen
-- Eine Prüfziffer
+- eine Prüfziffer
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -10847,11 +10670,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_lithuania_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_lithuania_eu_tax_file_number` gefunden. 
+- Es wird ein  `Keywords_lithuania_eu_tax_file_number` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_lithuania_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -10875,8 +10698,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_lithuania_eu_national_id_card"></a>Keywords_lithuania_eu_national_id_card
 
-- asmeninis skaitmeninis öks
-- asmens öks
+- asmeninis skaitmeninis kodas
+- asmens kodas
 - Citizen Service Number
 - mokesčių id
 - mokesčių identifikavimas numeris
@@ -10884,39 +10707,39 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - mokesčių numeris
 - national identification number
 - Persönlicher Code
-- Persönlicher numerischer Code
+- persönlicher numerischer Code
 - piliečio paslaugos numeris
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
 - tin #
-- unikalus identifikavimo ikis
+- unikalus identifikavimo kodas
 - unikalus identifikavimo numeris
-- Eindeutige Identifikationsnummer
-- Eindeutige Identitätsnummer
+- eindeutige Identifikationsnummer
+- eindeutige Identitätsnummer
 - uniqueidentityno #
 
 ## <a name="lithuania-passport-number"></a>Reisepassnummer für Litauen
 
 ### <a name="format"></a>Format
 
-Acht Ziffern oder Buchstaben ohne Leerzeichen oder Trennzeichen
+acht Ziffern oder Buchstaben ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-acht Ziffern oder Buchstaben (groß-/klein geschrieben)
+acht Ziffern oder Buchstaben (keine Groß-/Kleinschreibung)
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -10924,14 +10747,14 @@ nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_lithuania_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_lithuania_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date3` findet Datum im Format TT MM JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_lithuania_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck `Regex_eu_passport_date3` findet Datum im Format DD MM JJJJ oder ein Schlüsselwort aus gefunden `Keywords_eu_passport_date` wird
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_lithuania_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_lithuania_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_lithuania_eu_passport_number` wird gefunden. 
     
 ```xml
       <!-- Lithuania Passport Number -->
@@ -10961,12 +10784,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -10980,7 +10803,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 
@@ -11000,9 +10823,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_luxemburg_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_luxemburg_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_luxemburg_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Luxemburg Driver's License Number -->
@@ -11019,7 +10842,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -11031,8 +10854,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -11044,31 +10867,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -11079,9 +10902,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -11090,69 +10913,69 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver A0 s_license_number
+#### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver's_license_number
 
-- fahr
-- Führschäin
+- fahrerlaubnis
+- Führerschäin
 
-## <a name="luxemburg-national-identification-number-natural-persons"></a>Nationale Identifikationsnummer (natürliche Personen) in Luxemburg
+## <a name="luxemburg-national-identification-number-natural-persons"></a>Nationale Luxemburger Identifikationsnummer (natürliche Personen)
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -11163,7 +10986,7 @@ Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 13 Ziffern:
   
 - 11 Ziffern 
-- Zwei Prüfziffern
+- zwei Prüfziffern
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -11171,11 +10994,11 @@ ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_luxemburg_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_luxemburg_eu_national_id_card` gefunden. 
+- Es wird ein  `Keywords_luxemburg_eu_national_id_card` Schlüsselwort aus gefunden. 
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_luxemburg_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
 
 
@@ -11206,30 +11029,30 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - id personnelle
 - idpersonnelle #
 - idpersonnelle
-- Einzelner Code
+- einzelner Code
 - individuelle ID
-- Einzelidentifikation
+- individuelle Identifikation
 - individuelle Identität
 - numéro d'identification personnel
-- Persönliche ID
+- persönliche ID
 - Persönliche Identifikation
 - Persönliche Identität
 - personalidno #
 - personalidnumber #
 - persönliche identifikationsnummer
 - eindeutige ID
-- Eindeutige Identität
+- eindeutige Identität
 - uniqueidkey #
 
 ## <a name="luxemburg-passport-number"></a>Luxemburger Reisepassnummer
 
 ### <a name="format"></a>Format
 
-Acht Ziffern oder Buchstaben ohne Leerzeichen oder Trennzeichen
+acht Ziffern oder Buchstaben ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-acht Ziffern oder Buchstaben (groß-/klein geschrieben)
+acht Ziffern oder Buchstaben (keine Groß-/Kleinschreibung)
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -11237,14 +11060,14 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_luxemburg_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_luxemburg_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date3` findet Datum im Format TT MM JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_luxemburg_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck `Regex_eu_passport_date3` findet Datum im Format DD MM JJJJ oder ein Schlüsselwort aus gefunden `Keywords_eu_passport_date` wird
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_luxemburg_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_luxemburg_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_luxemburg_eu_passport_number` wird gefunden. 
     
 ```xml
       <!-- Luxemburg Passport Number -->
@@ -11274,12 +11097,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -11287,9 +11110,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_luxemburg_eu_passport_number"></a>Keywords_luxemburg_eu_passport_number
 - ausweisnummer
-- luxemburg pass
-- luxemburg passeport
-- luxemburg passport
+- luxembourg pass
+- luxembourg passeport
+- Luxemburger Reisepass
 - no de passeport
 - no-reisepass
 - nr-reisepass
@@ -11298,17 +11121,17 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - pass nr
 - passnummer
 - passeport nombre
-- reise 2013
+- reisepässe
 - reisepass-nr
 - reisepassnummer
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 
-## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Nationale Identifikationsnummer luxemburgisch (nicht natürliche Personen)
+## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Nationale Luxemburger Identifikationsnummer (nicht natürliche Personen)
 
 ### <a name="format"></a>Format
 
@@ -11319,13 +11142,13 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 11 Ziffern
   
 - zwei Ziffern
-- Ein optionales Leerzeichen 
+- ein optionales Leerzeichen 
 - drei Ziffern 
-- Ein optionales Leerzeichen
+- ein optionales Leerzeichen
 - drei Ziffern 
-- Ein optionales Leerzeichen
+- ein optionales Leerzeichen
 - zwei Ziffern
-- Eine Prüfziffer
+- eine Prüfziffer
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -11333,11 +11156,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_luxemburg_eu_tax_file_number_non_natural` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_luxemburg_eu_tax_file_number` gefunden. 
+- Es wird ein  `Keywords_luxemburg_eu_tax_file_number` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_luxemburg_eu_tax_file_number_non_natural` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -11365,13 +11188,13 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - étain non
 - étain #
 - identifiant d'impôt
-- luxemburg tax identifikatiounsnummer
+- luxembourg tax identifikatiounsnummer
 - numéro d'étain
-- numéro d'identification fiscal luxemburgeois
+- numéro d'identification fiscal luxembourgeois
 - numéro d'identification fiscale
 - social security
-- sozialeunterstützung
-- sozialeversécherung
+- sozialunterstützung
+- sozialversécherung
 - sozialversicherungsausweis
 - steier id
 - steier identifikatiounsnummer
@@ -11380,27 +11203,27 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
 - tin #
-- zeit #
-- zeit
-- wiederzahl
+- zinn #
+- zinn
+- zinnzahl
 
 
-## <a name="malaysia-identification-card-number"></a>Malaysia - Identifikationskartennummer
+## <a name="malaysia-identification-card-number"></a>Nummer der Malaysia-Identifikationskarte
 
 ### <a name="format"></a>Format
 
@@ -11409,12 +11232,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 ### <a name="pattern"></a>Muster
 
 12 Ziffern:
-- sechs Ziffern im Format "YYMMDD", die das Geburtsdatum sind 
-- Ein Strich (optional) 
-- Aus zwei Buchstaben geerbte Geburtscode 
-- Bindestrich (optional) 
-- Drei zufällige Ziffern 
-- Einstelliger Gendercode
+- sechs Ziffern im Format YYMMDD, die das Geburtsdatum sind 
+- ein Strich (optional) 
+- Zwei-Buchstaben-Geburtsortcode 
+- ein Strich (optional) 
+- drei zufällige Ziffern 
+- einstelliger Gendercode
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -11422,8 +11245,8 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck Regex_malaysia_id_card_number inhalt, der dem Muster entspricht.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Der reguläre Ausdruck Regex_malaysia_id_card_number, der dem Muster entspricht.
 - Ein Schlüsselwort aus Keyword_malaysia_id_card_number gefunden.
 
 ```xml
@@ -11447,7 +11270,7 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - ic
 - ic no
 - id card
-- identification Card
+- Identifikationskarte
 - identity card
 - k/p
 - k/p no
@@ -11461,12 +11284,12 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - mykid
 - mypr
 - mytentera
-- malaysia identity card
-- malaysian identity card
+- malaysia-Identitätskarte
+- malaysischer Identitätskarte
 - nric
-- Persönliche Identifikationskarte
+- Personal Identification Card
 
-## <a name="malta-drivers-license-number"></a>Malta driver's license number
+## <a name="malta-drivers-license-number"></a>Führerscheinnummer des Malta-Treibers
 
 ### <a name="format"></a>Format
 
@@ -11476,10 +11299,10 @@ Kombination aus zwei Zeichen und sechs Ziffern im angegebenen Muster
 
 Kombination aus zwei Zeichen und sechs Ziffern:
   
-- zwei Zeichen (Ziffern oder Buchstaben, groß-/klein geschrieben)
-- Ein Leerzeichen (optional)
+- zwei Zeichen (Ziffern oder Buchstaben, keine Groß-/Kleinschreibung)
+- ein Leerzeichen (optional)
 - drei Ziffern
-- Ein Leerzeichen (optional)
+- ein Leerzeichen (optional)
 - drei Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
@@ -11488,9 +11311,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_malta_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_malta_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_malta_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Malta Driver's License Number -->
@@ -11507,7 +11330,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -11519,8 +11342,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -11532,31 +11355,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -11567,9 +11390,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -11578,70 +11401,70 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver A0 s_license_number
+#### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver's_license_number
 
 - lisenzja tas-sewqan
 - lisenzji tas-sewwieq
 
 
-## <a name="malta-identity-card-number"></a>Malta Identity Card Number
+## <a name="malta-identity-card-number"></a>Nummer des Malta-Identitätskarten
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -11652,7 +11475,7 @@ sieben Ziffern gefolgt von einem Buchstaben
 sieben Ziffern gefolgt von einem Buchstaben:
   
 - sieben Ziffern 
-- ein Buchstabe in "M, G, A, P, L, H, B, Z" (Groß-/Kleinschreibung wird nicht beachtet)
+- ein Buchstabe in "M, G, A, P, L, H, B, Z" (Groß-/Kleinschreibung nicht beachtet)
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -11660,11 +11483,11 @@ Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_malta_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_malta_eu_national_id_card` gefunden. 
+- Es wird ein  `Keywords_malta_eu_national_id_card` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_malta_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -11687,20 +11510,20 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - Citizen Service Number
 - id tat-taxxa
 - identifika numru tal-biljett
-- kodiei numerali personali
+- kodisi numerali personali
 - numru ta 'identifikazzjoni personali
 - numru ta 'identifikazzjoni tat-taxxa
 - numru ta 'identifikazzjoni uniku
 - numru ta' identità uniku
-- numru tas-servizz ta
+- numru tas-servizz ta.
 - numru tat-taxxa
-- Persönlicher numerischer Code
-- Eindeutige Identifikationsnummer
-- Eindeutige Identitätsnummer
+- persönlicher numerischer Code
+- eindeutige Identifikationsnummer
+- eindeutige Identitätsnummer
 - uniqueidentityno #
 
 
-## <a name="malta-passport-number"></a>Malta Passport number
+## <a name="malta-passport-number"></a>Malta-Reisepassnummer
 
 ### <a name="format"></a>Format
 
@@ -11716,14 +11539,14 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_malta_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_malta_eu_passport_number` wurde gefunden. 
-- Ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_malta_eu_passport_number` wird gefunden. 
+- Ein Schlüsselwort aus `Keywords_eu_passport_date` wurde gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_malta_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_malta_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_malta_eu_passport_number` wird gefunden. 
     
 ```xml
       <!-- Malta Passport Number -->
@@ -11750,12 +11573,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -11769,28 +11592,28 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 
-## <a name="malta-tax-identification-number"></a>Steuerkennnummer für Malta
+## <a name="malta-tax-identification-number"></a>Steueridentifikationsnummer für Malta
 
 ### <a name="format"></a>Format
 
-Für Nser aus Malta:
+Für maltesische Staatsangehörige:
 - sieben Ziffern und ein Buchstabe im angegebenen Muster
   
-Nischisch-nisch-nisch(n) und -Entitäten(n):
+Nicht-maltesische Staatsangehörige und maltesische Entitäten:
 - neun Ziffern
   
 ### <a name="pattern"></a>Muster
 
-Deutsche Nser: sieben Ziffern und ein Buchstabe
+Maltesische Staatsangehörige: sieben Ziffern und ein Buchstabe
   
 - sieben Ziffern 
-- Ein Buchstabe (ohne Schreibung)
+- ein Buchstabe (ohne Zwischenfall)
     
-Ns-nisch-deutsche und -deutsche Entitäten: neun Ziffern
+Nicht-maltesische Staatsangehörige und maltesische Entitäten: neun Ziffern
   
 - neun Ziffern 
     
@@ -11800,12 +11623,12 @@ Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläreEx  `Regex_malta_eu_tax_file_number`  oder `Regex_malta_eu_tax_file_number_non_maltese_national` sucht Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_malta_eu_tax_file_number` gefunden. 
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der regex  `Regex_malta_eu_tax_file_number`  oder `Regex_malta_eu_tax_file_number_non_maltese_national` findet Inhalte, die dem Muster entsprechen. 
+- Es wird ein  `Keywords_malta_eu_tax_file_number` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
-- Der reguläreEx  `Regex_malta_eu_tax_file_number` oder `Regex_malta_eu_tax_file_number_non_maltese_national` sucht Inhalte, die dem Muster entsprechen. 
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der regex  `Regex_malta_eu_tax_file_number` oder `Regex_malta_eu_tax_file_number_non_maltese_national` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
       <!-- Malta Tax ID Number -->
@@ -11834,35 +11657,35 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - Citizen Service Number
 - id tat-taxxa
 - identifika numru tal-biljett
-- kodiei numerali personali
+- kodisi numerali personali
 - numru ta 'identifikazzjoni personali
 - numru ta 'identifikazzjoni tat-taxxa
 - numru ta 'identifikazzjoni uniku
 - numru ta' identità uniku
-- numru tas-servizz ta
+- numru tas-servizz ta.
 - numru tat-taxxa
-- Persönlicher numerischer Code
+- persönlicher numerischer Code
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
 - tin #
-- Eindeutige Identifikationsnummer
-- Eindeutige Identitätsnummer
+- eindeutige Identifikationsnummer
+- eindeutige Identitätsnummer
 - uniqueidentityno #
 
-## <a name="netherlands-citizens-service-bsn-number"></a>Nummer des niederländischen Citizen's Service (BSN)
+## <a name="netherlands-citizens-service-bsn-number"></a>Nummer des niederländischen Bürgerdiensts (BSN)
 
 ### <a name="format"></a>Format
 
@@ -11872,9 +11695,9 @@ acht oder neun Ziffern mit optionalen Leerzeichen
 
 89 Ziffern:
 - drei Ziffern 
-- Ein Leerzeichen (optional) 
+- ein Leerzeichen (optional) 
 - drei Ziffern 
-- Ein Leerzeichen (optional) 
+- ein Leerzeichen (optional) 
 - zwei-drei Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -11883,7 +11706,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_netherlands_bsn findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_netherlands_bsn gefunden.
 - Die Prüfsumme stimmt.
@@ -11904,15 +11727,15 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
   
 - bsn #
 - bsn
-- ungservicenummer
+- burgerservicenummer
 - Citizen Service Number
 - Personennummer
-- Persönliche Nummer
-- Persönlicher numerischer Code
-- Personenbezogene Nummer
+- persönliche Nummer
+- persönlicher numerischer Code
+- personbezogene Nummer
 - persoonlijk nummer
-- persoonlijke num codiert
-- persoonsgeagaen
+- persoonlijke numerieke code
+- persoonsgebonden
 - persoonsnummer
 - sociaal-fiscaal nummer
 - Social-Fiscal-Nummer
@@ -11920,15 +11743,15 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - sofinummer
 - uniek identificatienummer
 - uniek identiteitsnummer
-- Eindeutige Identifikationsnummer
-- Eindeutige Identitätsnummer
+- eindeutige Identifikationsnummer
+- eindeutige Identitätsnummer
 - uniqueidentityno #
 
 ## <a name="netherlands-drivers-license-number"></a>Niederländische Führerscheinnummer
 
 ### <a name="format"></a>Format
 
-Zehn Ziffern ohne Leerzeichen und Trennzeichen
+zehn Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -11940,9 +11763,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_netherlands_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_netherlands_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_netherlands_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Netherlands Driver's License Number -->
@@ -11959,7 +11782,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -11971,8 +11794,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -11984,31 +11807,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -12019,9 +11842,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -12030,58 +11853,58 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver A0 s_license_number
+#### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver's_license_number
 
 - permis de conduire
 - rijbewijs
@@ -12107,14 +11930,14 @@ nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_netherlands_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_netherlands_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck findet Datum im Format `Regex_netherlands_eu_passport_date` TT MMM/MMM JJJJ (Beispiel - 26 MAA/MAR 2012)
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_netherlands_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck findet Datum im Format `Regex_netherlands_eu_passport_date` DD MMM/MMM YYYY (Beispiel - 26 MAA/MAR 2012)
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_netherlands_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_netherlands_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_netherlands_eu_passport_number` wird gefunden. 
     
 ```xml
       <!-- Netherlands Passport Number -->
@@ -12141,12 +11964,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -12163,9 +11986,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -12181,11 +12004,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_netherlands_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_netherlands_eu_tax_file_number` gefunden. 
+- Es wird ein  `Keywords_netherlands_eu_tax_file_number` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_netherlands_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -12206,34 +12029,34 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 #### <a name="keywords_netherlands_eu_tax_file_number"></a>Keywords_netherlands_eu_tax_file_number
 
 - btw nummer
-- zeitânske tax identification
-- hubild impuesto id number
-- hubild impuesto identification
+- steueridentifikation von "hollânske"
+- hulandes impuesto id number
+- hulandes impuesto identification
 - identificatienummer belasting
 - identificatienummer van belasting
-- impuesto identification number
+- impuesto-Identifikationsnummer
 - impuesto number
-- unter" belasting id nummer
-- unterding identificatie
-- unter anderem belasting identificatienummer
-- untere unterlastingnummer
-- phantomse belasting identificatie
-- niederlande steueridentifikation
-- Steueridentifikation für Das Land
-- netherlands tin
-- Netherland's tin
+- netherlandss belasting id nummer
+- dutchs belasting identificatie
+- nederlands belasting identificatienummer
+- dutchs belastingnummer
+- dutchse belasting identificatie
+- niederländische Steueridentifikation
+- Steueridentifikation des Landes
+- niederländisches Tin
+- Netherlands Tin
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
 - Steueridentifikationssatz
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- tax tal
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- Steuersatz
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -12246,23 +12069,23 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-Alphanumerisches Muster mit 14 Zeichen
+14 Zeichen alphanumerisches Muster
 
 ### <a name="pattern"></a>Muster
 
-Alphanumerisches Muster mit 14 Zeichen:
+Alphanumerisches 14-Zeichen-Muster:
 
 - N oder n
 - L oder l
-- Optionale Leerzeichen, Punkte oder Bindestriche
+- optionaler Abstand, Punkt oder Bindestrich
 - neun Ziffern
-- Optionale Leerzeichen, Punkte oder Bindestriche
+- optionaler Abstand, Punkt oder Bindestrich
 - B oder b
 - zwei Ziffern
 
@@ -12272,11 +12095,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_netherlands_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_netherlands_value_added_tax_number gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_netherlands_value_added_tax_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -12296,11 +12119,11 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keyword_netherlands_value_added_tax_number"></a>Keyword_netherlands_value_added_tax_number
 
-- uSt-Nummer
+- Umsatzsteuernummer
 - vat no
 - vat #
 - wearde tafoege tax getal
-- btw n'mer
+- btw nūmer
 - btw-nummer
 
 
@@ -12308,9 +12131,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -12321,13 +12144,13 @@ Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 14-stelliges bis 16-stelliges Muster mit optionalem Trennzeichen:
 
 - zwei Ziffern
-- Optionaler Bindestrich oder Leerzeichen
+- optionaler Bindestrich oder Leerzeichen
 - drei bis vier Ziffern
-- Optionaler Bindestrich oder Leerzeichen
+- optionaler Bindestrich oder Leerzeichen
 - sieben Ziffern
-- Optionaler Bindestrich oder Leerzeichen
+- optionaler Bindestrich oder Leerzeichen
 - zwei bis drei Ziffern
-- Ein Optionsbindestrich oder Leerzeichen
+- Ein Optionsbindestrich oder -leerzeichen
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -12335,11 +12158,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_new_zealand_bank_account_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_new_zealand_bank_account_number gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_new_zealand_bank_account_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -12366,21 +12189,21 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - bank_acct_nbr
 
 
-## <a name="new-zealand-drivers-license-number"></a>New Zealand driver's license number
+## <a name="new-zealand-drivers-license-number"></a>Führerscheinnummer des neuseeländischen Treibers
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-Alphanumerisches Muster mit acht Zeichen
+alphanumerisches Muster mit acht Zeichen
 
 ### <a name="pattern"></a>Muster
 
-Alphanumerisches Muster mit acht Zeichen
+alphanumerisches Muster mit acht Zeichen
 
 - zwei Buchstaben 
 - sechs Ziffern
@@ -12391,11 +12214,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_newzealand_driver_license_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_newzealand_driver_license_number gefunden.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_newzealand_driver_license_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -12418,89 +12241,89 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - driverlicence
 - driverlicences
 - driver lic
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslicence
 - driverslicences
 - drivers lic
 - drivers lics
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'licence
-- driver'licences
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's licence
-- driver's licences
+- Führerscheine
 - driverlic #
 - driverlics #
 - driverlicence #
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver licence #
-- driver licences #
+- Führerschein #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicence #
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'licence #
-- driver'licences #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Führerscheine #
 - international driving permit
 - international driving permits
 - nz automobile association
-- Neuseeländischer Autoverbund
+- new zealand automobile association
 
 
 ## <a name="new-zealand-inland-revenue-number"></a>New Zealand inland revenue number
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-Acht oder neun Ziffern mit optionalen Trennzeichen
+acht oder neun Ziffern mit optionalen Trennzeichen
 
 ### <a name="pattern"></a>Muster
 
-Acht oder neun Ziffern mit optionalen Trennzeichen
+acht oder neun Ziffern mit optionalen Trennzeichen
 
 - zwei oder drei Ziffern
-- Ein optionaler Leerzeichen oder Bindestrich
+- optionaler Leerzeichen oder Bindestrich
 - drei Ziffern
-- Ein optionaler Leerzeichen oder Bindestrich
+- optionaler Leerzeichen oder Bindestrich
 - drei Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -12509,12 +12332,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion Func_new_zealand_inland_revenue_number findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Die Funktion Func_new_zealand_inland_revenue_number nach Inhalten, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_new_zealand_inland_revenue_number gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion Func_new_zealand_inland_revenue_number findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Die Funktion Func_new_zealand_inland_revenue_number nach Inhalten, die dem Muster entsprechen.
 
 ```xml
       <!-- New Zealand Inland Revenue Number -->
@@ -12533,15 +12356,15 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keyword_new_zealand_inland_revenue_number"></a>Keyword_new_zealand_inland_revenue_number
 
-- ird no.
+- ird nein.
 - ird no #
 - nz ird
-- Neuseeland ird
-- ird number
-- Inlandsumsatznummer
+- neuseeland ird
+- ird-Nummer
+- Inland Umsatznummer
 
 
-## <a name="new-zealand-ministry-of-health-number"></a>Gesundheitsministeriumsnummer für Neuseeland
+## <a name="new-zealand-ministry-of-health-number"></a>Nummer des neuseeländischen Gesundheitsministeriums
 
 ### <a name="format"></a>Format
 
@@ -12549,8 +12372,8 @@ drei Buchstaben, ein Leerzeichen (optional) und vier Ziffern
 
 ### <a name="pattern"></a>Muster
 
-- Drei Buchstaben (ohne Schreibung) außer "I" und "O"
-- Ein Leerzeichen (optional) 
+- drei Buchstaben (ohne Groß-/Kleinschreibung) mit Ausnahme von "I" und "O"
+- ein Leerzeichen (optional) 
 - vier Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -12559,12 +12382,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_new_zealand_ministry_of_health_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_nz_terms wurde gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_new_zealand_ministry_of_health_number findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -12589,22 +12412,22 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - New Zealand
 - Gesundheitswesen
 - behandlung
-- National Health Index Number
-- nhi number
+- Nationale Integritätsindexnummer
+- nhi-Nummer
 - nhi nein.
 - NHI #
 - National Health Index No.
-- National Health Index Id
+- Nationale Integritätsindex-ID
 - National Health Index #
 
-## <a name="new-zealand-social-welfare-number"></a>Telefonnummer für soziale Netzwerke in Neuseeland
+## <a name="new-zealand-social-welfare-number"></a>Neuseeländische Nummer für soziales Wohl
 
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -12615,9 +12438,9 @@ neun Ziffern
 neun Ziffern
 
 - drei Ziffern
-- Ein optionaler Bindestrich
+- optionaler Bindestrich
 - drei Ziffern
-- Optionaler Bindestrich
+- optionaler Bindestrich
 - drei Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -12626,11 +12449,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_newzealand_social_welfare_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_newzealand_social_welfare_number gefunden.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_newzealand_social_welfare_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -12651,14 +12474,14 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
-- soziale Netzwerke #
-- soziale Netzwerke #
-- Social social social social no.
-- Social social social social number
+- Soziales Wohl #
+- Soziales Wohl #
+- Soziales Wohl nein.
+- Social Social Number
 - swn #
 
    
-## <a name="norway-identification-number"></a>Norwegische Identifikationsnummer
+## <a name="norway-identification-number"></a>Norwegen-Identifikationsnummer
 
 ### <a name="format"></a>Format
 
@@ -12668,8 +12491,8 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 
 11 Ziffern:
 - sechs Ziffern im Format DDMMYY, die das Geburtsdatum sind 
-- Dreistellige einzelne Zahl 
-- Zwei Prüfziffern
+- dreistellige einzelzahl 
+- zwei Prüfziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -12677,13 +12500,13 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_norway_id_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_norway_id_number gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion Func_norway_id_numbe findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Die Funktion Func_norway_id_numbe nach Inhalten, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -12711,7 +12534,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Fødselsnummer
 
    
-## <a name="philippines-unified-multi-purpose-identification-number"></a>Philippinen einheitliche mehrzweckige Identifikationsnummer
+## <a name="philippines-unified-multi-purpose-identification-number"></a>Einheitliche mehrzweckige Identifikationsnummer für Die Philippinen
 
 ### <a name="format"></a>Format
 
@@ -12721,10 +12544,10 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 12 Ziffern:
 - vier Ziffern 
-- Ein Bindestrich 
+- ein Bindestrich 
 - sieben Ziffern 
-- Ein Bindestrich 
-- Eine Ziffer
+- ein Bindestrich 
+- eine Ziffer
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -12732,8 +12555,8 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck Regex_philippines_unified_id inhalt, der dem Muster entspricht.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der reguläre Ausdruck Regex_philippines_unified_id, der dem Muster entspricht.
 - Ein Schlüsselwort aus Keyword_philippines_id gefunden.
 
 ```xml
@@ -12766,9 +12589,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 14 Ziffern und zwei Schrägstriche:
   
 - fünf Ziffern 
-- Schrägstrich
+- ein Schrägstrich
 - zwei Ziffern
-- Schrägstrich
+- ein Schrägstrich
 - sieben Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
@@ -12777,9 +12600,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_poland_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_poland_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_poland_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Poland Driver's License Number -->
@@ -12796,7 +12619,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -12808,8 +12631,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -12821,31 +12644,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -12856,9 +12679,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -12867,63 +12690,63 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver A0 s_license_number
+#### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver's_license_number
 
 - prawo jazdy
 - prawa jazdy
 
-## <a name="poland-identity-card"></a>Polnische Identitätskarte
+## <a name="poland-identity-card"></a>Polen-Identitätskarte
 
 ### <a name="format"></a>Format
 
@@ -12931,7 +12754,7 @@ drei Buchstaben und sechs Ziffern
 
 ### <a name="pattern"></a>Muster
 
-Drei Buchstaben (groß-/klein geschrieben) gefolgt von sechs Ziffern
+drei Buchstaben (ohne Groß-/Kleinschreibung), gefolgt von sechs Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -12939,7 +12762,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_polish_national_id findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_polish_national_id_passport_number wurde gefunden.
 - Die Prüfsumme stimmt.
@@ -12958,7 +12781,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keyword_poland_national_id_passport_number"></a>Keyword_poland_national_id_passport_number
 
-- Dowód osofelderty
+- Dowód osobisty
 - Numer dowodu osobistego
 - Nazwa i numer dowodu osobistego
 - Nazwa i nr dowodu osobistego
@@ -12967,7 +12790,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - dow. os.
 
    
-## <a name="poland-national-id-pesel"></a>Nationale polnische ID (PESEL)
+## <a name="poland-national-id-pesel"></a>Nationale POLNISCHE ID (PESEL)
 
 ### <a name="format"></a>Format
 
@@ -12975,9 +12798,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="pattern"></a>Muster
 
-- Sechs Ziffern, die das Geburtsdatum im Format "YYMMDD" darstellen
+- sechs Ziffern, die das Geburtsdatum im Format "YYMMDD" darstellen
 - vier Ziffern
-- Eine Prüfziffer
+- eine Prüfziffer
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -12985,12 +12808,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_pesel_identification_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_pesel_identification_number wurde gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_pesel_identification_number findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -13011,7 +12834,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keyword_pesel_identification_number"></a>Keyword_pesel_identification_number
 
-- dowód osofelderty
+- dowód osobisty
 - dowódosobisty
 - niepowtarzalny numer
 - niepowtarzalnynumer
@@ -13023,7 +12846,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
    
 ## <a name="poland-passport-number"></a>Polnische Reisepassnummer
-Diese Entität für vertrauliche Informationstypen ist im vertraulichen Informationstyp "EU Passport Number" enthalten. Es ist als eigenständige Entität für vertrauliche Informationstypen verfügbar.
+Diese Entität vom Typ vertraulicher Informationen ist im Vertraulichen Informationstyp EU Passport Number enthalten. Es ist als eigenständige Entität vom Typ vertraulicher Informationen verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -13039,18 +12862,18 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion `Func_polish_passport_number_v2` findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
-- Ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keyword_polish_national_passport_number` wurde gefunden.
-- Es wurde ein Schlüsselwort `Keywords_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keyword_polish_national_passport_number` wird gefunden.
+- Es wird ein `Keywords_eu_passport_date` Schlüsselwort aus gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion `Func_polish_passport_number_v2` findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
-- Ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keyword_polish_national_passport_number` wurde gefunden.
+- Ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keyword_polish_national_passport_number` wird gefunden.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion `Func_polish_passport_number_v2` findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -13082,12 +12905,12 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -13106,25 +12929,25 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 
-## <a name="poland-regon-number"></a>Polen -REGON-Nummer
+## <a name="poland-regon-number"></a>Polen REGON-Nummer
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-9-stellige oder 14-stellige Nummer
+9-stellige oder 14-stellige Zahl
 
 ### <a name="pattern"></a>Muster
 
-neunstellige oder 14-stellige Nummer:
+neun Ziffern oder 14 Ziffern:
 
 - neun Ziffern oder 
 - neun Ziffern
@@ -13137,11 +12960,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_polish_regon_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_polish_regon_number gefunden.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_polish_regon_number findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -13161,8 +12984,8 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 #### <a name="keywords_poland_regon_number"></a>Keywords_poland_regon_number
 
 - regon id
-- Statistische Zahl
-- Statistische ID
+- statistische Zahl
+- statistische ID
 - statistische Nein
 - Regonnummer
 - regonid #
@@ -13180,9 +13003,9 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -13198,9 +13021,9 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_poland_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_poland_eu_tax_file_number` gefunden. 
+- Es wird ein  `Keywords_poland_eu_tax_file_number` Schlüsselwort aus gefunden. 
     
   
 ```xml
@@ -13222,15 +13045,15 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - numer identyfikacji podatkowej
 - numeridentyfikacjipodatkowej #
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -13240,13 +13063,13 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - vat id #
 - vat id
 - vat no
-- uSt-Nummer
+- Umsatzsteuernummer
 - vatid #
 - vatid
 - vatno #
    
 
-## <a name="portugal-citizen-card-number"></a>Portugal Citizen Card Number
+## <a name="portugal-citizen-card-number"></a>Nummer der Portugiesischen Bürgerkarte
 
 ### <a name="format"></a>Format
 
@@ -13262,7 +13085,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck Regex_portugal_citizen_card findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_portugal_citizen_card gefunden.
 
@@ -13285,12 +13108,12 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - Citizen Card
 - Dokumentnummer
 - documento de identificação
-- id number
-- identification no
+- ID-Nummer
+- Identifikation nein
 - identification number
-- identity card no
+- Identitätskarte nein
 - Identitätskartennummer
-- national id card
+- nationale ID-Karte
 - nic
 - número bi de portugal
 - número de identificação civil
@@ -13299,7 +13122,7 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - portugal bi number
 
 
-## <a name="portugal-drivers-license-number"></a>Portugal driver's license number
+## <a name="portugal-drivers-license-number"></a>Führerscheinnummer für Portugal
 
 ### <a name="format"></a>Format
 
@@ -13308,14 +13131,14 @@ zwei Muster – zwei Buchstaben gefolgt von 5-8 Ziffern mit Sonderzeichen
 ### <a name="pattern"></a>Muster
 
 Muster 1: Zwei Buchstaben gefolgt von 5/6 mit Sonderzeichen:
-- Zwei Buchstaben (groß-/kleinschreibungsempfindlich)
+- Zwei Buchstaben (keine Groß-/Kleinschreibung)
 - Ein Bindestrich 
 - Fünf oder sechs Ziffern
 - Ein Leerzeichen
 - Eine Ziffer
 
 Muster 2: Ein Buchstabe gefolgt von 6/8 Ziffern mit Sonderzeichen:
-- Ein Buchstabe (ohne Schreibung)
+- Ein Buchstabe (ohne Zwischenfall)
 - Ein Bindestrich 
 - Sechs oder acht Ziffern
 - Ein Leerzeichen
@@ -13328,9 +13151,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_portugal_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_portugal_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_portugal_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Portugal Driver's License Number -->
@@ -13347,7 +13170,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -13359,8 +13182,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -13372,31 +13195,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -13407,9 +13230,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -13418,58 +13241,58 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver A0 s_license_number
+#### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver's_license_number
 
 - carteira de motorista
 - carteira motorista
@@ -13482,17 +13305,17 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Licença condução Portugal
 - carta de condução
 
-## <a name="portugal-passport-number"></a>Portugal - Reisepassnummer
+## <a name="portugal-passport-number"></a>Portugal-Reisepassnummer
 
 ### <a name="format"></a>Format
 
-Ein Buchstabe gefolgt von sechs Ziffern ohne Leerzeichen oder Trennzeichen
+ein Buchstabe gefolgt von sechs Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Ein Buchstabe gefolgt von sechs Ziffern:
+ein Buchstabe gefolgt von sechs Ziffern:
   
-- Ein Buchstabe (ohne Schreibung)
+- ein Buchstabe (ohne Zwischenfall)
 - sechs Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
@@ -13501,14 +13324,14 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_portugal_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_portugal_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Das Datum im Format TT.MM.JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_portugal_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Datum im Format DD.MM.YYYY, oder es wird ein Schlüsselwort `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_portugal_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_portugal_eu_passport_number` wurde gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_portugal_eu_passport_number` wird gefunden.
     
 ```xml
       <!-- Portugal Passport Number -->
@@ -13538,12 +13361,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -13554,21 +13377,21 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - número do passaporte
 - portugiesischer Reisepass
 - portugiesischer Passeport
-- portugiesisch passaporte
+- portugiesische Passaporte
 - passaporte nº
 - passeport nº
 - números de passaporte
-- portugiesischen Passes
+- portugiesische Pässe
 - número passaporte
 - números passaporte
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 
-## <a name="portugal-tax-identification-number"></a>Portugal Steueridentifikationsnummer
+## <a name="portugal-tax-identification-number"></a>Steueridentifikationsnummer für Portugal
 
 ### <a name="format"></a>Format
 
@@ -13577,9 +13400,9 @@ neun Ziffern mit optionalen Leerzeichen
 ### <a name="pattern"></a>Muster
 
 - drei Ziffern
-- Ein optionales Leerzeichen
+- ein optionales Leerzeichen
 - drei Ziffern
-- Ein optionales Leerzeichen
+- ein optionales Leerzeichen
 - drei Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
@@ -13588,11 +13411,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_portugal_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_portugal_eu_tax_file_number` gefunden. 
+- Es wird ein  `Keywords_portugal_eu_tax_file_number` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_portugal_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -13619,15 +13442,15 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - número de identificação fisca
 - numero fiscal
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -13636,16 +13459,16 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - tin #
 
 
-## <a name="romania-drivers-license-number"></a>Führerscheinnummer für Rumänien
+## <a name="romania-drivers-license-number"></a>Kennzeichen des Rumänien-Führerscheins
 
 ### <a name="format"></a>Format
 
-Ein Zeichen gefolgt von acht Ziffern
+ein Zeichen gefolgt von acht Ziffern
   
 ### <a name="pattern"></a>Muster
 
-Ein Zeichen gefolgt von acht Ziffern:
-- Ein Buchstabe (ohne Schreibung) oder Ziffer 
+ein Zeichen gefolgt von acht Ziffern:
+- ein Buchstabe (ohne Zwischenfall) oder Ziffer 
 - acht Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
@@ -13654,9 +13477,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_romania_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_romania_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_romania_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Romania Driver's License Number -->
@@ -13673,7 +13496,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -13685,8 +13508,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -13698,31 +13521,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -13733,9 +13556,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -13744,58 +13567,58 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver A0 s_license_number
+#### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver's_license_number
 
 - permis de conducere
 - permisului de conducere
@@ -13808,9 +13631,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -13818,8 +13641,8 @@ Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
   
 ### <a name="pattern"></a>Muster
 
-- Eine Ziffer von 1 bis 9
-- Sechs Ziffern, die das Geburtsdatum darstellen (YYMMDD)
+- eine Ziffer zwischen 1 und 9
+- sechs Ziffern, die das Geburtsdatum darstellen (YYMMDD)
 - zwei Ziffern, die 01-52 oder 99 sein können
 - vier Ziffern
 
@@ -13829,11 +13652,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_romania_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_romania_eu_national_id_card` gefunden. 
+- Es wird ein  `Keywords_romania_eu_national_id_card` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_romania_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -13864,7 +13687,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - id-ul taxei
 - Versicherungsnummer
 - insurancenumber #
-- national id #
+- nationale ID #
 - national id
 - national identification number
 - număr identificare personal
@@ -13876,37 +13699,37 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - numărpersonalunic
 - număru de identificare fiscală
 - numărul de identificare fiscală
-- Persönlicher numerischer Code
+- persönlicher numerischer Code
 - pin #
 - pin
 - Steuerdatei nein
 - tax file number
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
 - tin #
-- Eindeutige Identifikationsnummer
-- Eindeutige Identitätsnummer
+- eindeutige Identifikationsnummer
+- eindeutige Identitätsnummer
 - uniqueidentityno #
 - uniqueidentityno
 
-## <a name="romania-passport-number"></a>Rumänien – Reisepassnummer
+## <a name="romania-passport-number"></a>Rumänien-Reisepassnummer
 
 ### <a name="format"></a>Format
 
-Acht oder neun Ziffern ohne Leerzeichen und Trennzeichen
+acht oder neun Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -13918,14 +13741,14 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_romania_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_romania_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck findet Das Datum im Format `Regex_romania_eu_passport_date` TT MMM/MMM JJ (Beispiel- 01 FEB/FEB 10) oder ein Schlüsselwort `Keywords_eu_passport_date` gefunden wurde
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_romania_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck findet Datum im Format `Regex_romania_eu_passport_date` DD MMM/MMM YY (Beispiel- 01 FEB/FEB 10) oder ein Schlüsselwort aus `Keywords_eu_passport_date` gefunden wird.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_romania_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_romania_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_romania_eu_passport_number` wird gefunden. 
     
 ```xml
       <!-- Romania Passport Number -->
@@ -13955,12 +13778,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -13972,30 +13795,30 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 
-## <a name="russia-passport-number-domestic"></a>Russische Reisepassnummer Inland
+## <a name="russia-passport-number-domestic"></a>Russische Reisepassnummer inland
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-10-stellige Nummer
+10-stellige Zahl
 
 ### <a name="pattern"></a>Muster
 
-10-stellige Nummer:
+10-stellige Zahl:
 
 - zwei Ziffern
-- Ein optionaler Leerzeichen oder Bindestrich
+- optionaler Leerzeichen oder Bindestrich
 - zwei Ziffern
-- Ein optionales Leerzeichen
+- ein optionales Leerzeichen
 - sechs Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -14004,8 +13827,8 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Regex_Russian_Passport_Number_Domestic findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der regex-Regex_Russian_Passport_Number_Domestic findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Russian_Passport_Number gefunden.
 
 ```xml
@@ -14023,9 +13846,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 #### <a name="keyword_russia_passport_number_domestic"></a>Keyword_russia_passport_number_domestic
 
 - passport number
-- passport no
-- passport #
-- passport id
+- Passport no
+- Passport #
+- Passport-ID
 - passportno #
 - passportnumber #
 - паспорт нет
@@ -14042,9 +13865,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -14055,7 +13878,7 @@ neunstellige Zahl
 neunstellige Zahl:
 
 - zwei Ziffern
-- Ein optionaler Leerzeichen oder Bindestrich
+- optionaler Leerzeichen oder Bindestrich
 - sieben Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -14064,8 +13887,8 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Regex_Russian_Passport_Number_International findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der regex-Regex_Russian_Passport_Number_International findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Russian_Passport_Number gefunden.
 
 ```xml
@@ -14083,9 +13906,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 #### <a name="keywords_russia_passport_number_international"></a>Keywords_russia_passport_number_international
 
 - passport number
-- passport no
-- passport #
-- passport id
+- Passport no
+- Passport #
+- Passport-ID
 - passportno #
 - passportnumber #
 - паспорт нет
@@ -14114,7 +13937,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_saudi_arabia_national_id findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_saudi_arabia_national_id wurde gefunden.
 
@@ -14140,7 +13963,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - الوطنية الهوية بطاقة رقم 
 
    
-## <a name="singapore-national-registration-identity-card-nric-number"></a>Singapore national registration identity card (NRIC) number
+## <a name="singapore-national-registration-identity-card-nric-number"></a>Nummer des nationalen Registrierungsidentitätsausweises (NRIC) in Singapur
 
 ### <a name="format"></a>Format
 
@@ -14149,9 +13972,9 @@ neun Buchstaben und Ziffern
 ### <a name="pattern"></a>Muster
 
 - neun Buchstaben und Ziffern:
-- Der Buchstabe "F", "G", "S" oder "T" (ohne Schreibung) 
+- Der Buchstabe "F", "G", "S" oder "T" (nicht zwischen Zwischenfall) 
 - sieben Ziffern 
-- Eine alphabetische Prüfziffer
+- eine alphabetische Prüfziffer
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -14159,13 +13982,13 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck Regex_singapore_nric findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Der reguläre Ausdruck Regex_singapore_nric nach Inhalten, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_singapore_nric gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck Regex_singapore_nric findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der reguläre Ausdruck Regex_singapore_nric nach Inhalten, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -14194,17 +14017,17 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - 身份证 
 - 身份證 
 
-## <a name="slovakia-drivers-license-number"></a>Führerscheinnummer der Slowakei
+## <a name="slovakia-drivers-license-number"></a>Führerscheinnummer des Slowaken
 
 ### <a name="format"></a>Format
 
-Ein Zeichen gefolgt von sieben Ziffern
+ein Zeichen gefolgt von sieben Ziffern
   
 ### <a name="pattern"></a>Muster
 
-Ein Zeichen gefolgt von sieben Ziffern
+ein Zeichen gefolgt von sieben Ziffern
   
-- Ein Buchstabe (ohne Schreibung) oder Ziffer
+- ein Buchstabe (ohne Zwischenfall) oder Ziffer
 - sieben Ziffern 
     
 ### <a name="checksum"></a>Prüfsumme
@@ -14213,9 +14036,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_slovakia_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_slovakia_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_slovakia_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Slovakia Driver's License Number -->
@@ -14232,7 +14055,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -14244,8 +14067,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -14257,31 +14080,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -14292,9 +14115,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -14303,82 +14126,82 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver A0 s_license_number
+#### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver's_license_number
 
 - vodičský preukaz
 - vodičské preukazy
 - vodičského preukazu
 - vodičských preukazov
 
-## <a name="slovakia-personal-number"></a>Persönliche Rufnummer der Slowakei
+## <a name="slovakia-personal-number"></a>Persönliche Nummer der Slowakei
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-neun oder zehn Ziffern mit optionalem umgekehrten Schrägstrich
+neun oder zehn Ziffern mit optionalem umgekehrtem Schrägstrich
   
 ### <a name="pattern"></a>Muster
 
-- Sechs Ziffern, die das Geburtsdatum darstellen
-- Optionaler Schrägstrich (/)
+- sechs Ziffern, die das Geburtsdatum darstellen
+- optionaler Schrägstrich (/)
 - drei Ziffern
-- Eine optionale Prüfziffer
+- eine optionale Prüfziffer
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -14386,11 +14209,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_slovakia_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_slovakia_eu_national_id_card` gefunden. 
+- Es wird ein  `Keywords_slovakia_eu_national_id_card` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_slovakia_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -14416,17 +14239,17 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - číslo národnej identifikačnej karty
 - číslo občianského preukazu
 - daňové číslo
-- id number
-- identification no
+- ID-Nummer
+- Identifikation nein
 - identification number
 - identifikačná karta č
 - identifikačné číslo
-- identity card no
+- Identitätskarte nein
 - Identitätskartennummer
 - národná identifikačná značka č
 - nationale Nummer
 - nationalnumber #
-- nemzeti személyazonosító igkrüvány
+- nemzeti személyazonosító igazolvány
 - personalidnumber #
 - rč
 - rodne cislo
@@ -14434,21 +14257,21 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - social security number
 - ssn #
 - ssn
-- személyi igkrüvány szám
-- személyi igkrüvány száma
-- személyigejvány szám
+- személyi igazolvány szám
+- személyi igazolvány száma
+- személyigazolvány szám
 - Steuerdatei nein
 - tax file number
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -14456,15 +14279,15 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - tin no
 - tin #
 
-## <a name="slovakia-passport-number"></a>Slowakei - Reisepassnummer
+## <a name="slovakia-passport-number"></a>Reisepassnummer der Slowakei
 
 ### <a name="format"></a>Format
 
-Eine Ziffer oder ein Buchstabe gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
+eine Ziffer oder ein Buchstabe gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Eine Ziffer oder ein Buchstabe (ohne Schreibung) gefolgt von sieben Ziffern
+Eine Ziffer oder ein Buchstabe (ohne Zwischenfall) gefolgt von sieben Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -14472,14 +14295,14 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_slovakia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_slovakia_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Das Datum im Format TT.MM.JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_slovakia_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Datum im Format DD.MM.YYYY, oder es wird ein Schlüsselwort `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_slovakia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_slovakia_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_slovakia_eu_passport_number` wird gefunden. 
     
 ```xml
       <!-- Slovakia Passport Number -->
@@ -14509,12 +14332,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -14530,11 +14353,11 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 
-## <a name="slovenia-drivers-license-number"></a>Slowenisch - Führerscheinnummer
+## <a name="slovenia-drivers-license-number"></a>Führerscheinnummer des Slowenen
 
 ### <a name="format"></a>Format
 
@@ -14550,9 +14373,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_slovenia_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_slovenia_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_slovenia_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Slovenia Driver's License Number -->
@@ -14569,7 +14392,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -14581,8 +14404,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -14594,31 +14417,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -14629,9 +14452,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -14640,61 +14463,61 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver A0 s_license_number
+#### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver's_license_number
 
 - vozniško dovoljenje
-- vozniška številka licence
+- vozniška številka-Lizenz
 - vozniških dovoljenj
 - številka vozniškega dovoljenja
 - številke vozniških dovoljenj
@@ -14703,9 +14526,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -14715,10 +14538,10 @@ Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 
 13 Ziffern im angegebenen Muster:
   
-- sieben Ziffern, die dem Geburtsdatum (DDMMLLL) entsprechen, wobei "LLL" den letzten drei Ziffern des Geburtsjahrs entspricht 
+- sieben Ziffern, die dem Geburtsdatum (DDMMLLL) entsprechen, wobei "LLL" den letzten drei Ziffern des Geburtsjahres entspricht 
 - zwei Ziffern, die dem Geburtsbereich "50" entsprechen
-- drei Ziffern, die einer Kombination aus Geschlecht und Seriennummer für Personen entsprechen, die am selben Tag auf die Welt gekommen sind (000-499 für Männlich und 500-999 für Frauen)
-- Eine Prüfziffer
+- drei Ziffern, die einer Kombination aus Geschlecht und Seriennummer für Personen entsprechen, die am selben Tag geboren wurden (000-499 für männlich und 500-999 für frauen)
+- eine Prüfziffer
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -14726,11 +14549,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_slovenia_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_slovenia_eu_national_id_card` gefunden. 
+- Es wird ein  `Keywords_slovenia_eu_national_id_card` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_slovenia_eu_national_id_card` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -14761,22 +14584,22 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - nacionalni potni list
 - national id
 - osebna izkaznica
-- osebni iba
+- osebni koda
 - osebni ne
 - osebni številka
 - Persönlicher Code
-- Persönliche Nummer
-- Persönlicher numerischer Code
+- persönliche Nummer
+- persönlicher numerischer Code
 - številka državljana
-- Eindeutige Citizen Number
-- Eindeutige ID-Nummer
-- Eindeutige Identitätsnummer
+- eindeutige Citizen-Nummer
+- eindeutige ID-Nummer
+- eindeutige Identitätsnummer
 - Eindeutige Haupt-Citizen-Nummer
-- Eindeutige Registrierungsnummer
+- eindeutige Registrierungsnummer
 - uniqueidentityno #
 - uniqueidentityno #
 
-## <a name="slovenia-passport-number"></a>Slowenien - Reisepassnummer
+## <a name="slovenia-passport-number"></a>Slowenien-Reisepassnummer
 
 ### <a name="format"></a>Format
 
@@ -14786,8 +14609,8 @@ zwei Buchstaben gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
 
 zwei Buchstaben gefolgt von sieben Ziffern:
   
-- Der Buchstabe "P"
-- Ein Großbuchstabe
+- der Buchstabe "P"
+- ein Großbuchstabe
 - sieben Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
@@ -14796,14 +14619,14 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_slovenia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_slovenia_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Das Datum im Format TT.MM.JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_slovenia_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck `Regex_eu_passport_date1` findet Datum im Format DD.MM.YYYY, oder es wird ein Schlüsselwort `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_slovenia_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_slovenia_eu_passport_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_slovenia_eu_passport_number` wird gefunden. 
     
 ```xml
       <!-- Slovenia Passport Number -->
@@ -14833,12 +14656,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -14848,24 +14671,24 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 - številka potnega lista
 - potek veljavnosti
-- potni list #
+- potni-Liste #
 - datum rojstva
-- potni list
+- potni-Liste
 - številke potnih listov
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 
-## <a name="slovenia-tax-identification-number"></a>Slowenien - Steueridentifikationsnummer
+## <a name="slovenia-tax-identification-number"></a>Steueridentifikationsnummer für Slowenien
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -14873,9 +14696,9 @@ Acht Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-- Eine Ziffer von 1 bis 9
+- eine Ziffer zwischen 1 und 9
 - sechs Ziffern
-- Eine Prüfziffer
+- eine Prüfziffer
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -14883,11 +14706,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_slovenia_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_slovenia_eu_tax_file_number` gefunden. 
+- Es wird ein  `Keywords_slovenia_eu_tax_file_number` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_slovenia_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -14913,15 +14736,15 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - Steuerdatei nein
 - tax file number
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -14930,7 +14753,7 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - tin #
 
 
-## <a name="south-africa-identification-number"></a>Südafrika - Identifikationsnummer
+## <a name="south-africa-identification-number"></a>Südafrika-Identifikationsnummer
 
 ### <a name="format"></a>Format
 
@@ -14939,9 +14762,9 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 ### <a name="pattern"></a>Muster
 
 13 Ziffern:
-- sechs Ziffern im Format "YYMMDD", die das Geburtsdatum sind 
+- sechs Ziffern im Format YYMMDD, die das Geburtsdatum sind 
 - vier Ziffern 
-- Ein einstelliger Indikator für die Bürgerschaft 
+- ein einstelliger Staatsbürgerschaftsindikator 
 - die Ziffer "8" oder "9" 
 - eine Ziffer, bei der es sich um eine Prüfsummenziffer handelt
 
@@ -14951,7 +14774,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_south_africa_identification_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_south_africa_identification_number gefunden.
 - Die Prüfsumme stimmt.
@@ -14974,7 +14797,7 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - ID
 - Identifikation 
    
-## <a name="south-korea-resident-registration-number"></a>South Korea resident registration number
+## <a name="south-korea-resident-registration-number"></a>In Südkorea ansässige Registrierungsnummer
 
 ### <a name="format"></a>Format
 
@@ -14983,11 +14806,11 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 ### <a name="pattern"></a>Muster
 
 13 Ziffern:
-- sechs Ziffern im Format "YYMMDD", die das Geburtsdatum sind 
-- Ein Bindestrich 
-- Eine Ziffer, die durch das Geschlecht und das Geschlecht bestimmt wird 
-- Vierstelliger "Region-of-Birth"-Code 
-- Eine Ziffer, die verwendet wird, um Personen zu unterscheiden, für die die vorherigen Nummern identisch sind 
+- sechs Ziffern im Format YYMMDD, die das Geburtsdatum sind 
+- ein Bindestrich 
+- eine Ziffer, die durch das Jahrhundert und das Geschlecht bestimmt wird 
+- Vierstelliger Geburtsregionscode 
+- Eine Ziffer, die verwendet wird, um Personen zu unterscheiden, für die die vorherigen Zahlen identisch sind 
 - eine Prüfziffer.
 
 ### <a name="checksum"></a>Prüfsumme
@@ -14996,13 +14819,13 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion Func_south_korea_resident_number findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Die Funktion Func_south_korea_resident_number nach Inhalten, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_south_korea_resident_number gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion Func_south_korea_resident_number findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Die Funktion Func_south_korea_resident_number nach Inhalten, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
 ```xml
@@ -15032,14 +14855,14 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="format"></a>Format
 
-Acht Ziffern gefolgt von einem Zeichen
+acht Ziffern gefolgt von einem Zeichen
   
 ### <a name="pattern"></a>Muster
 
 acht Ziffern gefolgt von einem Zeichen:
   
 - acht Ziffern 
-- Eine Ziffer oder ein Buchstabe (ohne Schreibung)
+- eine Ziffer oder einen Buchstaben (ohne Zwischenfall)
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -15047,11 +14870,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_spain_eu_DL_and_NI_number_citizen` oder `Func_spain_eu_DL_and_NI_number_foreigner` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_spain_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_spain_eu_driver's_license_number` wird gefunden. 
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_spain_eu_DL_and_NI_number_citizen` oder `Func_spain_eu_DL_and_NI_number_foreigner` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -15082,7 +14905,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -15094,8 +14917,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -15107,31 +14930,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -15142,9 +14965,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -15153,58 +14976,58 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver A0 s_license_number
+#### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver's_license_number
 
 - permiso de conducción
 - permiso conducción
@@ -15223,21 +15046,21 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-Acht Ziffern gefolgt von einem Zeichen
+acht Ziffern gefolgt von einem Zeichen
   
 ### <a name="pattern"></a>Muster
 
 sieben Ziffern gefolgt von einem Zeichen
   
 - acht Ziffern
-- Ein optionaler Leerzeichen oder Bindestrich
-- Ein Prüfbuchstabe (ohne Schreibung)
+- Optionaler Leerzeichen oder Bindestrich
+- ein Prüfbuchstabe (ohne Zwischenfall)
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -15245,11 +15068,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_spain_eu_DL_and_NI_number_citizen` oder `Func_spain_eu_DL_and_NI_number_foreigner` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_spain_eu_national_id_card"` gefunden. 
+- Es wird ein  `Keywords_spain_eu_national_id_card"` Schlüsselwort aus gefunden. 
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_spain_eu_DL_and_NI_number_citizen` oder `Func_spain_eu_DL_and_NI_number_foreigner` findet Inhalte, die dem Muster entsprechen. 
 
     
@@ -15294,23 +15117,23 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - nienúmero #
 - número de identificación
 - número nacional identidad
-- Persönliche Identifikationsnummer
-- Persönliche Identität nein
-- Eindeutige Identitätsnummer
+- persönliche Identifikationsnummer
+- persönliche Identität nein
+- eindeutige Identitätsnummer
 - uniqueid #
 
 ## <a name="spain-passport-number"></a>Spanische Reisepassnummer
 
 ### <a name="format"></a>Format
 
-Eine kombination aus Buchstaben und Zahlen mit acht oder neun Zeichen ohne Leerzeichen oder Trennzeichen
+eine Acht- oder Neunzeichenkombination aus Buchstaben und Zahlen ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Eine kombination aus Buchstaben und Zahlen aus acht oder neun Zeichen:
+eine Acht- oder Neun-Zeichen-Kombination aus Buchstaben und Zahlen:
   
 - zwei Ziffern oder Buchstaben 
-- Eine Ziffer oder ein Buchstabe (optional)
+- eine Ziffer oder einen Buchstaben (optional)
 - sechs Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
@@ -15319,14 +15142,14 @@ Nicht zutreffend
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_spain_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_spain_eu_passport_number` wurde gefunden. 
-- Der reguläre Ausdruck `Regex_spain_eu_passport_date` findet Datum im Format TT-MM-JJJJ oder ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_spain_eu_passport_number` wird gefunden. 
+- Der reguläre Ausdruck `Regex_spain_eu_passport_date` findet Datum im Format DD-MM-YYYY oder ein Schlüsselwort wird `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_spain_eu_passport_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_spain_eu_passport_number` wurde gefunden.
+- Ein Schlüsselwort aus  `Keywords_eu_passport_number` oder `Keywords_spain_eu_passport_number` wird gefunden.
     
 ```xml
       <!-- Spain Passport Number -->
@@ -15356,12 +15179,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -15369,9 +15192,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_spain_eu_passport_number"></a>Keywords_spain_eu_passport_number
 
-- jalta pasaporte
+- libreta pasaporte
 - número pasaporte
-- espña pasaporte
+- españa pasaporte
 - números de pasaporte
 - número de pasaporte
 - números pasaporte
@@ -15380,15 +15203,15 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - n° Passeport
 - pasaporte no.
 - pasaporte n°
-- spanien passport
+- Spanien-Reisepass
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
 
-## <a name="spain-social-security-number-ssn"></a>Spanische Sozialversicherungsnummer (SSN)
+## <a name="spain-social-security-number-ssn"></a>Spanien Sozialversicherungsnummer (SSN)
 
 
 ### <a name="format"></a>Format
@@ -15410,12 +15233,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_spanish_social_security_number findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
-- - Es wurde ein Schlüsselwort  `Keywords_spain_eu_ssn_or_equivalent` gefunden. 
+- - Es wird ein  `Keywords_spain_eu_ssn_or_equivalent` Schlüsselwort aus gefunden. 
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_spanish_social_security_number findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -15443,13 +15266,13 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - social security number
 - número de la seguridad social
 
-## <a name="spain-tax-identification-number"></a>Spanische Steueridentifikationsnummer
+## <a name="spain-tax-identification-number"></a>Steueridentifikationsnummer für Spanien
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -15457,34 +15280,34 @@ sieben oder acht Ziffern und ein oder zwei Buchstaben im angegebenen Muster
   
 ### <a name="pattern"></a>Muster
 
-Spanische natürliche Personen mit spanischem Personalausweis:
+Spanische natürliche Personen mit einem nationalen Personalausweis Spaniens:
   
 - acht Ziffern 
-- Ein Großbuchstabe (Groß-/Kleinschreibung wird beachtet) 
+- ein Großbuchstabe (Groß-/Kleinschreibung) 
     
-Gebietsansässige Spaniards ohne spanische Personalausweis
+Gebietsansässige Spaniards ohne nationalen Personalausweis spaniens
   
-- Ein Großbuchstabe "L" (Groß-/Kleinschreibung wird beachtet)
+- ein Großbuchstabe "L" (Groß-/Kleinschreibung)
 - sieben Ziffern
-- Ein Großbuchstabe (Groß-/Kleinschreibung wird beachtet) 
+- ein Großbuchstabe (Groß-/Kleinschreibung) 
     
-Gebietsansässige Spaniarden unter 14 Jahren ohne spanische Personalausweis:
+Gebietsansässige Spaniards unter 14 Jahren ohne nationalen Personalausweis Spaniens:
   
-- Ein Großbuchstabe "K" (Groß-/Kleinschreibung wird beachtet)
+- ein Großbuchstabe "K" (Groß-/Kleinschreibung)
 - sieben Ziffern 
-- Ein Großbuchstabe (Groß-/Kleinschreibung wird beachtet)
+- ein Großbuchstabe (Groß-/Kleinschreibung)
     
-Wird mit einer Identifikationsnummer des Identifizierungszeichens des Identifizierungszeichens des Identifizierungszeichens
+Fremden mit der Identifikationsnummer eines Fremden
   
-- ein Großbuchstabe, der "X", "Y" oder "Z" ist (Groß-/Kleinschreibung wird beachtet) 
+- ein Großbuchstabe, der "X", "Y" oder "Z" (Groß-/Kleinschreibung) ist 
 - sieben Ziffern
-- Ein Großbuchstabe (Groß-/Kleinschreibung wird beachtet) 
+- ein Großbuchstabe (Groß-/Kleinschreibung) 
     
-Bezahlzeichen ohne Identifikationsnummer des Identifizierungszeichens des Identifizierungszeichens
+Fremde ohne Identifikationsnummer eines Fremden
   
-- Ein Großbuchstabe, der "M" ist (Groß-/Kleinschreibung wird beachtet) 
+- ein Großbuchstabe mit dem Buchstaben "M" (Groß-/Kleinschreibung) 
 - sieben Ziffern
-- Ein Großbuchstabe (Groß-/Kleinschreibung wird beachtet) 
+- ein Großbuchstabe (Groß-/Kleinschreibung) 
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -15492,11 +15315,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_spain_eu_tax_file_number` oder `Func_spain_eu_DL_and_NI_number_citizen` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_spain_eu_tax_file_number` gefunden. 
+- Es wird ein  `Keywords_spain_eu_tax_file_number` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_spain_eu_tax_file_number` oder `Func_spain_eu_DL_and_NI_number_citizen` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -15536,15 +15359,15 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Steuerdatei nein
 - tax file number
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -15557,17 +15380,17 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="format"></a>Format
 
-Die Zeichenfolge "Benutzer-ID", "Benutzer-ID", "uid" oder "UserId", gefolgt von den Im folgenden Muster beschriebenen Zeichen und Zeichenfolgen.
+Die Zeichenfolge "User ID", "User ID", "uid" oder "UserId" gefolgt von den Zeichen und Zeichenfolgen im folgenden Muster.
 
 ### <a name="pattern"></a>Muster
 
 - die Zeichenfolge "User ID", "User ID", "uid" oder "UserId"
-- Beliebige Kombination aus 1-200 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
-- Die Zeichenfolge "Password" oder "pwd", wobei "pwd" keinem Kleinbuchstaben vorangehen
-- Ein Gleichheitszeichen (=)
-- Ein beliebiges Zeichen, das kein Dollarzeichen ($), Prozentzeichen (%) größer als Symbol (>), bei Symbol (@), Anführungszeichen ("), Semikolon (;), linke geschweifte Klammer([) oder linke Klammer ({) ist
-- Beliebige Kombination aus 7 bis 128 Zeichen, die kein Semikolon (;), Schrägstrich (/) oder Anführungszeichen (") sind
-- Ein Semikolon (;) oder Anführungszeichen (")
+- beliebige Kombination aus 1-200 Klein- oder Großbuchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- die Zeichenfolge "Password" oder "pwd", wobei "pwd" nicht vor einem Kleinbuchstaben steht
+- ein Gleichheitszeichen (=)
+- jedes Zeichen, das kein Dollarzeichen ($), ein Prozentsymbol (%), größer als Symbol (>), bei Symbol (@), Anführungszeichen ("), Semikolon (;), linke geschweifte Klammer([) oder linke Klammer ({) ist
+- beliebige Kombination aus 7 bis 128 Zeichen, die kein Semikolon (;), Schrägstrich (/) oder Anführungszeichen (") sind
+- ein Semikolon (;) oder Anführungszeichen (")
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -15575,11 +15398,11 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck CEP_Regex_SQLServerConnectionString findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus CEP_GlobalFilter wurde nicht gefunden.
-- Der reguläre Ausdruck CEP_PasswordPlaceHolder findet keine Inhalte, die dem Muster entsprechen.
-- Der reguläre Ausdruck CEP_CommonExampleKeywords findet keine Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Der reguläre Ausdruck CEP_Regex_SQLServerConnectionString nach Inhalten, die dem Muster entsprechen.
+- Ein Schlüsselwort aus CEP_GlobalFilter nicht gefunden.
+- Der reguläre Ausdruck CEP_PasswordPlaceHolder findet keinen Inhalt, der dem Muster entspricht.
+- Der reguläre Ausdruck CEP_CommonExampleKeywords findet keinen Inhalt, der dem Muster entspricht.
 
 ```sql
 <!---SQL Server Connection String>
@@ -15606,41 +15429,41 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 
 #### <a name="cep_passwordplaceholder"></a>CEP_PasswordPlaceHolder
 
-(Beachten Sie, dass dieser vertrauliche Informationstyp technisch diese Schlüsselwörter mithilfe eines regulären Ausdrucks und nicht einer Schlüsselwortliste identifiziert.)
+(Beachten Sie, dass dieser vertrauliche Informationstyp diese Schlüsselwörter technisch mithilfe eines regulären Ausdrucks und nicht einer Schlüsselwortliste identifiziert.)
 
 - Kennwort oder Pwd gefolgt von 0-2 Leerzeichen, einem Gleichheitszeichen (=), 0-2 Leerzeichen und einem Sternchen (*) -OR-
-- Kennwort oder Pwd gefolgt von:
+- Kennwort oder pwd gefolgt von:
     - Gleichheitszeichen (=)
     - Kleiner als Symbol (<)
-    - Eine beliebige Kombination aus 1 bis 200 Zeichen, die Groß- oder Kleinbuchstaben, Ziffern, Ein Sternchen (*), Bindestrich (-), Unterstreichung (_) oder Leerzeichen sind
+    - Beliebige Kombination aus 1-200 Zeichen, die Groß- oder Kleinbuchstaben, Ziffern, Sternchen (*), Bindestrich (-), Unterstreichung (_) oder Leerzeichen sind
     - Größer als Symbol (>)
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
-(Beachten Sie, dass dieser vertrauliche Informationstyp technisch diese Schlüsselwörter mithilfe eines regulären Ausdrucks und nicht einer Schlüsselwortliste identifiziert.)
+(Beachten Sie, dass dieser vertrauliche Informationstyp diese Schlüsselwörter technisch mithilfe eines regulären Ausdrucks und nicht einer Schlüsselwortliste identifiziert.)
 
 - contoso
 - fabrikam
 - northwind
-- Sandbox
+- Sandkasten
 - onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="sweden-drivers-license-number"></a>Führerscheinnummer Für Schweden
+## <a name="sweden-drivers-license-number"></a>Schwedische Führerscheinnummer
 
 ### <a name="format"></a>Format
 
-Zehn Ziffern mit einem Bindestrich
+zehn Ziffern, die einen Bindestrich enthalten
   
 ### <a name="pattern"></a>Muster
 
-zehn Ziffern mit einem Bindestrich:
+zehn Ziffern, die einen Bindestrich enthalten:
   
 - sechs Ziffern 
-- Ein Bindestrich
+- ein Bindestrich
 - vier Ziffern
     
 ### <a name="checksum"></a>Prüfsumme
@@ -15649,9 +15472,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck  `Regex_sweden_eu_driver's_license_number` findet Inhalte, die dem Muster entsprechen. 
-- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_sweden_eu_driver's_license_number` wurde gefunden. 
+- Ein Schlüsselwort aus  `Keywords_eu_driver's_license_number` oder `Keywords_sweden_eu_driver's_license_number` wird gefunden. 
     
 ```xml
       <!-- Sweden Driver's License Number -->
@@ -15668,7 +15491,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -15680,8 +15503,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -15693,31 +15516,31 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -15728,9 +15551,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -15739,58 +15562,58 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
 
-#### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver A0 s_license_number
+#### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver's_license_number
 
 - ajokortti
 - permis de conducere
@@ -15804,7 +15627,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 -  דריווערס דערלויבעניש
 - körkortsnummer
 
-## <a name="sweden-national-id"></a>Nationale Id für Schweden
+## <a name="sweden-national-id"></a>Nationale SCHWEDISCHE ID
 
 ### <a name="format"></a>Format
 
@@ -15824,12 +15647,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion `Func_swedish_national_identifier` findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort wurde `Keywords_swedish_national_identifier` gefunden.
+- Ein Schlüsselwort aus `Keywords_swedish_national_identifier` wurde gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion `Func_swedish_national_identifier` findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -15852,23 +15675,23 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 #### <a name="keywords_swedish_national_identifier"></a>Keywords_swedish_national_identifier
 
 - id no
-- id number
+- ID-Nummer
 - id #
-- identification no
+- Identifikation nein
 - identification number
 - identifikationsnumret #
 - identifikationsnumret
 - identitetshandling
 - Identitätsdokument
-- Identity no
+- identity no
 - Identitätsnummer
 - id-nummer
-- Persönliche ID
+- persönliche ID
 - personnummer #
 - personnummer
 - skatteidentifikationsnummer
    
-## <a name="sweden-passport-number"></a>Reisepassnummer Für Schweden
+## <a name="sweden-passport-number"></a>Schwedische Reisepassnummer
 
 ### <a name="format"></a>Format
 
@@ -15876,7 +15699,7 @@ acht Ziffern
 
 ### <a name="pattern"></a>Muster
 
-Acht aufeinanderfolgende Ziffern
+Acht aufeinander folgende Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -15884,14 +15707,14 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck Regex_sweden_passport_number inhalt, der dem Muster entspricht.
-- ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keyword_sweden_passport` wurde gefunden.
-- Der reguläre Ausdruck findet ein Datum im Format `Regex_sweden_eu_passport_date` TT MMM/MMM JJ (01 JAN/JAN 12), oder es wird ein Schlüsselwort `Keywords_eu_passport_date` gefunden.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- der reguläre Ausdruck Regex_sweden_passport_number, der dem Muster entspricht.
+- ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keyword_sweden_passport` wird gefunden.
+- Der reguläre Ausdruck findet ein Datum im Format `Regex_sweden_eu_passport_date` DD MMM/MMM JJ (01 JAN/JAN 12), oder es wird ein Schlüsselwort `Keywords_eu_passport_date` gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck Regex_sweden_passport_number inhalt, der dem Muster entspricht.
-- ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keyword_sweden_passport` wurde gefunden.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- der reguläre Ausdruck Regex_sweden_passport_number, der dem Muster entspricht.
+- ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keyword_sweden_passport` wird gefunden.
 
 
 ```xml
@@ -15922,12 +15745,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
    
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -15935,8 +15758,8 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keyword_sweden_passport"></a>Keyword_sweden_passport
 
-- registrierungskarte
-- g3-Verarbeitungsgebühren
+- außerirdische Registrierungskarte
+- g3-Bearbeitungsgebühren
 - Mehrfacheintrag
 - Numéro de passeport
 - passeport n °
@@ -15947,88 +15770,27 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - passeportn °
 - passnummer
 - pass nr
-- visa
+- visa für "visa"
 - visas
 - Einzelner Eintrag
-- sverige pass
+- sverige-Pass
 - visa requirements
 - Visaverarbeitung
 - Visatyp
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Problemdatum
+- Datum der Ausgabe
 - Ablaufdatum
 
-
-## <a name="sweden-social-security-number-or-equivalent-identification"></a>Sozialversicherungsnummer (Sozialversicherungsnummer) Schweden oder gleichwertige Identifikation
-Diese Entität des Typs "Vertrauliche Informationen" ist nur im Vertraulichen Informationstyp "EU-Sozialversicherungsnummer" oder "Äquivalente ID" verfügbar.
-
-### <a name="format"></a>Format
-
-12 Ziffern ohne Leerzeichen und Trennzeichen
-  
-### <a name="pattern"></a>Muster
-
-12 Ziffern:
-  
-- acht Ziffern, die dem Geburtsdatum entsprechen (YYYYMMDD) 
-- drei Ziffern, die einer Seriennummer entsprechen, wobei: 
-  - Die letzte Ziffer in der Fortlaufenden Zahl gibt das Geschlecht durch die Zuweisung einer ungeraden Zahl für männlich und eine gleichmäßige Zahl für Eine Frau an.
-  - Vor 1990 entsprach die Zuweisung einer Seriennummer dem Kreis, in dem der Träger der Zahl auftrat. Oder (wenn vor 1947) dort leben, wo sie gemäß Steuerdatensätzen am 1. Januar 1947 mit einem speziellen Code (in der Regel 9 als siebte Ziffer) zur Vererbung leben.
-- Eine Prüfziffer
-    
-### <a name="checksum"></a>Prüfsumme
-
-Ja
-  
-### <a name="definition"></a>Definition
-
-Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion  `Func_sweden_eu_ssn_or_equivalent` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_sweden_eu_ssn_or_equivalent` gefunden. 
-    
-Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion  `Func_sweden_eu_ssn_or_equivalent` findet Inhalte, die dem Muster entsprechen. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_sweden_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Schlüsselwörter
-
-#### <a name="keywords_sweden_eu_ssn_or_equivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
-
-- Persönliche ID-Nummer
-- identification number
-- Persönliche ID nein
-- Identity no
-- identification no
-- Persönliche Identifikation nein
-- personnummer id
-- personligt id-nummer
-- unikt id-nummer
-- personnummer
-- identifikationsnumret
-- personnummer #
-- identifikationsnumret #
 
 ## <a name="sweden-tax-identification-number"></a>Steueridentifikationsnummer für Schweden
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -16039,11 +15801,11 @@ Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 10 Ziffern und ein Symbol:
   
 - sechs Ziffern, die dem Geburtsdatum entsprechen (YYMMDD) 
-- Ein Plus- oder Minuszeichen
+- ein Plus- oder Minuszeichen
 - drei Ziffern, die die Identifikationsnummer eindeutig machen, wobei: 
-  - für Nummern, die vor 1990 ausgestellt wurden, geben die siebte und die achte Ziffer den Geburtslandkreis oder fremde Personen an.
-  - Die Ziffer an der neunten Position gibt das Geschlecht entweder ungerade für Männlich oder sogar für Frau an.
-- Eine Prüfziffer
+  - für Vor 1990 ausgegebene Nummern geben die siebte und die achte Ziffer den Geburtslandkreis oder die fremd geborenen Personen an.
+  - die Ziffer an der neunten Position gibt das Geschlecht entweder ungerade für männlich oder sogar für weiblich an.
+- eine Prüfziffer
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -16051,11 +15813,11 @@ Ja
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion  `Func_sweden_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_sweden_eu_tax_file_number` gefunden. 
+- Es wird ein  `Keywords_sweden_eu_tax_file_number` Schlüsselwort aus gefunden. 
     
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_sweden_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
     
 ```xml
@@ -16087,15 +15849,15 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - sverige tin
 - Steuerdatei
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuernummer
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -16112,12 +15874,12 @@ vier Buchstaben gefolgt von 5-31 Buchstaben oder Ziffern
 
 ### <a name="pattern"></a>Muster
 
-vier Buchstaben gefolgt von 5-31 Buchstaben oder Ziffern:
-- Vierbuchstaben-Bankleitzahl (groß-/klein geschrieben) 
-- Ein optionales Leerzeichen 
+vier Buchstaben gefolgt von 5 bis 31 Buchstaben oder Ziffern:
+- Vier-Buchstaben-Bankleitzahl (keine Groß-/Kleinschreibung) 
+- ein optionales Leerzeichen 
 - 4 bis 28 Buchstaben oder Ziffern (BBAN, Basic Bank Account Number) 
-- Ein optionales Leerzeichen 
-- ein bis drei Buchstaben oder Ziffern (rest der BBAN)
+- ein optionales Leerzeichen 
+- ein bis drei Buchstaben oder Ziffern (Rest der BBAN)
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -16125,7 +15887,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_swift findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_swift wurde gefunden.
 
@@ -16165,40 +15927,40 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - le numéro BIC
 - # <a name="bic"></a>BIC
 - code identificateur de banque
-- SWIFT.
+- SWIFT 2012
 - SWIFT番
 - BIC番
-- BIC
+- BIC.
 - SWIFT
-- SWIFT 番
-- BIC 番
+- SWIFT 番.
+- BIC 番.
 - BIC
 - 金融機関識別コード
 - 金融機関コード
 - 銀行コード
 
-## <a name="switzerland-ssn-ahv-number"></a>Schweiz SSN AHV-Nummer
+## <a name="switzerland-ssn-ahv-number"></a>Schweiz SSN-AHV-Nummer
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
-13-stellige Nummer
+13-stellige Zahl
 
 ### <a name="pattern"></a>Muster
 
-13-stellige Nummer:
+13-stellige Zahl:
 
 - drei Ziffern – 756
-- Optionaler Punkt
+- optionaler Punkt
 - vier Ziffern
-- Optionaler Punkt
+- optionaler Punkt
 - vier Ziffern
-- Optionaler Punkt
+- optionaler Punkt
 - zwei Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -16207,11 +15969,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_swiss_social_security_number_ahv findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keywords_swiss_social_security_number_ahv gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_swiss_social_security_number_ahv findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -16238,30 +16000,30 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - personalidno #
 - social security number
 - Persönliche ID-Nummer
-- Persönliche Identifikation nein.
+- Persönliche Identifikationsnr.
 - insuranceno #
 - uniqueidno #
-- eindeutiger Identifikationsnr.
+- eindeutige Identifikationsnr.
 - avs number
-- Persönliche Identität no versicherungsnummer
+- persönliche Identität no versicherungsnummer
 - identifikationsnummer
 - einzigartige identität nicht
 - sozialversicherungsnummer
-- identification personnelle id
+- Id des Identifikationspersonals
 - numéro de sécurité sociale
 
    
-## <a name="taiwan-national-identification-number"></a>Taiwan national identification number
+## <a name="taiwan-national-identification-number"></a>Nationale Identifikationsnummer Taiwans
 
 ### <a name="format"></a>Format
 
-Ein Buchstabe (in Englisch), gefolgt von neun Ziffern
+ein Buchstabe (in Englisch), gefolgt von neun Ziffern
 
 ### <a name="pattern"></a>Muster
 
-Ein Buchstabe (in Englisch), gefolgt von neun Ziffern:
-- ein Buchstabe (in Englisch, ohne Schreibung zu beachtet) 
-- Die Ziffer "1" oder "2" 
+ein Buchstabe (in Englisch), gefolgt von neun Ziffern:
+- ein Buchstabe (in Englisch, ohne Zwischenfall) 
+- die Ziffer "1" oder "2" 
 - acht Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -16270,12 +16032,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_taiwanese_national_id findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_taiwanese_national_id wurde gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_taiwanese_national_id findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -16311,19 +16073,19 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - 簽名或蓋章 
 - 簽章   
    
-## <a name="taiwan-passport-number"></a>Taiwan Reisepassnummer
+## <a name="taiwan-passport-number"></a>Taiwan-Reisepassnummer
 
 ### <a name="format"></a>Format
 
-- Biometrische Reisepassnummer: neun Ziffern
-- Nicht biometrische Reisepassnummer: neun Ziffern
+- biometrische Reisepassnummer: neun Ziffern
+- nicht biometrische Reisepassnummer: neun Ziffern
 
 ### <a name="pattern"></a>Muster
-Biometrische Reisepassnummer:
-- Das Zeichen "3" 
+biometrische Reisepassnummer:
+- das Zeichen "3" 
 - acht Ziffern
 
-Nicht biometrische Reisepassnummer:
+nicht biometrische Reisepassnummer:
 - neun Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -16332,8 +16094,8 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck Regex_taiwan_passport findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der reguläre Ausdruck Regex_taiwan_passport, der dem Muster entspricht.
 - Ein Schlüsselwort aus Keyword_taiwan_passport gefunden.
 
 ```xml
@@ -16359,7 +16121,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - 中華民國護照 
 - Zhōnghuá Mínguó hùzhào
    
-## <a name="taiwan-resident-certificate-arctarc-number"></a>Taiwanesische Zertifikatnummer (ARC/TARC)
+## <a name="taiwan-resident-certificate-arctarc-number"></a>Nummer des in Taiwan ansässigen Zertifikats (ARC/TARC)
 
 ### <a name="format"></a>Format
 
@@ -16368,7 +16130,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 ### <a name="pattern"></a>Muster
 
 10 Buchstaben und Ziffern:
-- zwei Buchstaben (Groß-/Kleinschreibung wird nicht beachtet) 
+- zwei Buchstaben (keine Groß-/Kleinschreibung) 
 - acht Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -16377,8 +16139,8 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Ausdruck Regex_taiwan_resident_certificate inhalt, der dem Muster entspricht.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der reguläre Ausdruck Regex_taiwan_resident_certificate, der dem Muster entspricht.
 - Ein Schlüsselwort aus Keyword_taiwan_resident_certificate gefunden.
 
 ```xml
@@ -16407,7 +16169,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - 外僑居留證 
 - 台灣地區居留證 
 
-## <a name="thai-population-identification-code"></a>Identifikationscode für thailändische Grundgesamtheiten
+## <a name="thai-population-identification-code"></a>Identifikationscode der thailändischen Bevölkerung
 
 ### <a name="format"></a>Format
 
@@ -16416,7 +16178,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 ### <a name="pattern"></a>Muster
 
 13 Ziffern:
-- Erste Ziffer ist nicht null oder neun 
+- erste Ziffer ist nicht null oder neun 
 - 12 Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -16425,12 +16187,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion Func_Thai_Citizen_Id findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Die Funktion Func_Thai_Citizen_Id nach Inhalten, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Thai_Citizen_Id gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Die Funktion Func_Thai_Citizen_Id findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Die Funktion Func_Thai_Citizen_Id nach Inhalten, die dem Muster entsprechen.
 
 ```xml
 <!-- Thai Citizen ID -->
@@ -16456,7 +16218,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - บัตรประชาชน
 - รหัสบัตรประชาชน
   
-## <a name="turkish-national-identification-number"></a>Nationale identifikationsnummer für Türkisch
+## <a name="turkish-national-identification-number"></a>Nationale Identifikationsnummer der Türkei
 
 ### <a name="format"></a>Format
 
@@ -16472,11 +16234,11 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_Turkish_National_Id findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Turkish_National_Id gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_Turkish_National_Id findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -16496,12 +16258,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keyword_turkish_national_id"></a>Keyword_turkish_national_id
 
-- TC Kimlik No
+- TC Kimlik Nein
 - TC Kimlik numarası
-- Vatșşlık numarası
-- Vatșşlık no
+- Vatandaşlık numarası
+- Vatandaşlık no
 
-## <a name="uk-drivers-license-number"></a>Vereinigtes Königreich Driver's license number
+## <a name="uk-drivers-license-number"></a>Vereinigtes Königreich Führerscheinnummer des Treibers
 
 ### <a name="format"></a>Format
 
@@ -16512,7 +16274,7 @@ Kombination aus 18 Buchstaben und Ziffern im angegebenen Format
 18 Buchstaben und Ziffern:
 - Fünf Buchstaben (ohne Groß-/Kleinschreibung) oder die Ziffer "9" statt eines Buchstabens. 
 - Eine Ziffer.
-- Fünf Ziffern im Datumsformat MMDDY für das Geburtsdatum. Das siebte Zeichen wird um 50 erhöht, wenn der Treiber eine Frau ist. für prüfungpe, 51 bis 62 anstelle von 01 bis 12.
+- Fünf Ziffern im Datumsformat MMDDY für das Geburtsdatum. Das siebte Zeichen wird um 50 erhöht, wenn der Treiber weiblich ist. für exampe, 51 bis 62 statt 01 bis 12.
 - Zwei Buchstaben (ohne Groß-/Kleinschreibung) oder die Ziffer "9" statt eines Buchstabens. 
 - Fünf Ziffern.
 
@@ -16522,12 +16284,12 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion `Func_uk_drivers_license` findet Inhalte, die dem Muster entsprechen.
-- Es wurde ein Schlüsselwort `Keywords_eu_driver's_license_number` gefunden.
+- Es wird ein `Keywords_eu_driver's_license_number` Schlüsselwort aus gefunden.
 - Die Prüfsumme stimmt.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion `Func_uk_drivers_license` findet Inhalte, die dem Muster entsprechen.
 - Die Prüfsumme stimmt.
 
@@ -16546,7 +16308,7 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver A0 s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -16558,8 +16320,8 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- Führerschein
+- Führerscheine
 - driverslic
 - driverslics
 - driverslicence
@@ -16571,31 +16333,31 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- Treiberlizenzen
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- Driver'license
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- Driver' licence
-- driver' licences
+- lics des Treibers
+- Führerschein
+- Treiberlizenzen
+- Führerschein
+- Führerscheine
 - driver'slic
-- driver'slics
+- Treiberslics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- driver's lic
-- Driver's lics
+- lic des Treibers
+- Lics des Treibers
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- Führerscheine
 - dl #
 - dls #
 - driverlic #
@@ -16606,9 +16368,9 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Führerscheine #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -16617,58 +16379,58 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
-- drivers licenses #
-- drivers licence #
-- drivers licences #
+- Treiberlizenz #
+- Treiberlizenzen #
+- Treiberlizenz #
+- Treiberlizenzen #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- Driver'license #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver' lic #
-- driver' lics #
-- driver' license #
-- driver' licenses #
-- Driver' licence #
-- driver' licences #
+- lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - driver'slic #
-- driver'slics #
+- Treiberslics #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- driver's lic #
-- Driver's lics #
-- Driver's license #
-- Driver's licenses #
-- Driver's licence #
-- driver's licences #
+- lic des Treibers #
+- Lics des Treibers #
+- Führerschein #
+- Treiberlizenzen #
+- Führerschein #
+- Führerscheine #
 - Führerschein 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- Driv-Lizenz
+- Driv-Lizenzen
+- Driv-Lizenz
+- Driv-Lizenzen
 - driver licen
 - drivers licen
-- Driver's licen
-- driving lic
+- Lizenz des Treibers
+- Driving lic
 - Driving licen
-- Driving Licenses
+- Führerscheine
 - driving licence
 - driving licences
-- Driving Permit
+- Führerschein
 - dl no
 - dlno
-- dl number
+- dl-Nummer
 
    
-## <a name="uk-electoral-roll-number"></a>Vereinigtes Königreich die Nummer des 1.1-Rolls
+## <a name="uk-electoral-roll-number"></a>Vereinigtes Königreich Wahlrollennummer
 
 ### <a name="format"></a>Format
 
@@ -16676,7 +16438,7 @@ zwei Buchstaben gefolgt von 1-4 Ziffern
 
 ### <a name="pattern"></a>Muster
 
-Zwei Buchstaben (groß-/klein geschrieben) gefolgt von 1-4 Zahlen
+zwei Buchstaben (ohne Groß-/Kleinschreibung), gefolgt von 1-4 Zahlen
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -16684,7 +16446,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_uk_electoral findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_uk_electoral wurde gefunden.
 
@@ -16710,7 +16472,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - electoral roll
 
    
-## <a name="uk-national-health-service-number"></a>Vereinigtes Königreich Nationale Gesundheitsdienstnummer
+## <a name="uk-national-health-service-number"></a>Vereinigtes Königreich nationale Gesundheitsdienstnummer
 
 ### <a name="format"></a>Format
 
@@ -16720,9 +16482,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 10 bis 17 Stellen:
 - 3 oder 10 Ziffern 
-- Ein Leerzeichen 
+- ein Leerzeichen 
 - drei Ziffern 
-- Ein Leerzeichen 
+- ein Leerzeichen 
 - vier Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -16731,7 +16493,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_uk_nhs_number findet Inhalte, die dem Muster entsprechen.
 - Eine der folgenden Bedingungen trifft zu:
     - Ein Schlüsselwort aus Keyword_uk_nhs_number wurde gefunden.
@@ -16777,8 +16539,8 @@ Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informati
 - Date of Birth 
 - Birth Date 
    
-## <a name="uk-national-insurance-number-nino"></a>Vereinigtes Königreich national insurance number (NINO)
-Diese Entität des Typs "Vertrauliche Informationen" ist im vertraulichen Informationstyp "Eu-Nationale Identifikationsnummer" enthalten. Es ist als eigenständige Entität für vertrauliche Informationstypen verfügbar.
+## <a name="uk-national-insurance-number-nino"></a>Vereinigtes Königreich nationale Versicherungsnummer (National Insurance Number, NINO)
+Diese Entität vom Typ vertraulicher Informationen ist im vertraulichen Informationstyp "NATIONALE IDENTIFIKATIONSNUMMER" der EU enthalten. Es ist als eigenständige Entität vom Typ vertraulicher Informationen verfügbar.
 
 ### <a name="format"></a>Format
 
@@ -16788,20 +16550,20 @@ sieben Zeichen oder neun Zeichen durch Leerzeichen oder Bindestriche getrennt
 
 zwei mögliche Muster:
 
-- zwei Buchstaben (gültige NINOs verwenden nur bestimmte Zeichen in diesem Präfix, die dieses Muster überprüft; groß-/klein geschrieben)
+- zwei Buchstaben (gültige NINOs verwenden nur bestimmte Zeichen in diesem Präfix, die durch dieses Muster überprüft werden; keine Groß-/Kleinschreibung)
 - sechs Ziffern
-- entweder "A", "B", "C" oder "D" (wie das Präfix sind nur bestimmte Zeichen im Suffix zulässig; die Kleinschreibung wird nicht beachtet)
+- entweder "A", "B", "C" oder "D" (wie das Präfix sind nur bestimmte Zeichen im Suffix zulässig; keine Zwischen-/Kleinschreibung)
 
 ODER
 
 - zwei Buchstaben
-- Ein Leerzeichen oder Gedankenstrich
+- ein Leerzeichen oder Bindestrich
 - zwei Ziffern
-- Ein Leerzeichen oder Gedankenstrich
+- ein Leerzeichen oder Bindestrich
 - zwei Ziffern
-- Ein Leerzeichen oder Gedankenstrich
+- ein Leerzeichen oder Bindestrich
 - zwei Ziffern
-- Ein Leerzeichen oder Gedankenstrich
+- ein Leerzeichen oder Bindestrich
 - entweder "A", "B", "C" oder "D"
 
 ### <a name="checksum"></a>Prüfsumme
@@ -16810,11 +16572,11 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_uk_nino findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_uk_nino wurde gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_uk_nino findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -16837,7 +16599,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - national insurance number
 - national insurance contributions
 - protection act
-- insurance
+- Versicherungsschutz
 - social security number
 - insurance application
 - medical application
@@ -16845,11 +16607,11 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - medical attention
 - social security
 - great britain
-- NI Number
+- NI-Nummer
 - NI Nein.
 - NI #
 - NI #
-- insurance #
+- Versicherungsschutz #
 - insurancenumber
 - nationalinsurance #
 - nationalinsurancenumber
@@ -16859,9 +16621,9 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -16878,9 +16640,9 @@ Nein
   
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion  `Func_uk_eu_tax_file_number` findet Inhalte, die dem Muster entsprechen. 
-- Es wurde ein Schlüsselwort  `Keywords_uk_eu_tax_file_number` gefunden. 
+- Es wird ein  `Keywords_uk_eu_tax_file_number` Schlüsselwort aus gefunden. 
     
 ```xml
       <!-- U.K. Unique Taxpayer Reference Number -->
@@ -16899,14 +16661,14 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Steuernummer
 - Steuerdatei
 - tax id
-- steueridentifikation nein
+- Steueridentifikation nein
 - Steueridentifikationsnummer
-- tax no #
-- tax no
+- Steuer nein #
+- Steuer nein
 - Steuerregistrierungsnummer
-- zeitd #
-- zeitdno #
-- zeitdnumber #
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -16922,7 +16684,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 ### <a name="pattern"></a>Muster
 
-6 bis 17 aufeinanderfolgende Ziffern
+6-17 aufeinander folgende Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -16930,7 +16692,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Der reguläre Ausdruck Regex_usa_bank_account_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_usa_Bank_Account wurde gefunden.
 
@@ -16976,7 +16738,7 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - Debit Acct No. 
 - Debit Account No. 
 
-## <a name="us-drivers-license-number"></a>US-Führerscheinnummer
+## <a name="us-drivers-license-number"></a>Us.S. Driver's license number
 
 ### <a name="format"></a>Format
 
@@ -16984,9 +16746,9 @@ Abhängig vom Bundesstaat
 
 ### <a name="pattern"></a>Muster
 
-abhängig vom Bundesland – z. B. New York:
+hängt vom Zustand ab – z. B. New York:
 - Neun Ziffern, die wie ddd ddd ddd formatiert sind, entsprechen.
-- Neun Ziffern wie "dddddddddd" entsprechen nicht.
+- Neun Ziffern wie ddddddddd werden nicht übereinstimmen.
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -16994,12 +16756,12 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_new_york_drivers_license_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_[state_name]_drivers_license_name wurde gefunden.
 - Ein Schlüsselwort aus Keyword_us_drivers_license gefunden.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_new_york_drivers_license_number findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_[state_name]_drivers_license_name wurde gefunden.
 - Ein Schlüsselwort aus Keyword_us_drivers_license_abbreviations wurde gefunden.
@@ -17065,7 +16827,7 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - Driver'Lic 
 - Driver'Lics 
 - Driver'License 
-- Driver'Licenses 
+- Treiberlizenzen 
 - Driver'Lic 
 - Driver'Lics 
 - Driver' License 
@@ -17104,7 +16866,7 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - Driver'Lic # 
 - Driver'Lics # 
 - Driver'License # 
-- Driver'Licenses # 
+- Treiberlizenzen # 
 - Driver' Lic# 
 - Driver' Lics# 
 - Driver' License# 
@@ -17125,30 +16887,30 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 
 #### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
 
-- Abkürzung für Bundesland (z. B. "NY") 
+- Statusabkürzung (z. B. "NY") 
 - Statusname (z. B. "New York")
 
-## <a name="us-individual-taxpayer-identification-number-itin"></a>US-amerikanische Steuernummer (ITIN)
+## <a name="us-individual-taxpayer-identification-number-itin"></a>Us.S. individual taxpayer identification number (ITIN)
 
 ### <a name="format"></a>Format
 
-neun Ziffern, die mit "9" beginnen und eine "7" oder "8" als vierte Ziffer enthalten, optional mit Leerzeichen oder Bindestrichen formatiert
+neun Ziffern, die mit einer "9" beginnen und eine "7" oder "8" als vierte Ziffer enthalten, optional formatiert mit Leerzeichen oder Bindestrichen
 
 ### <a name="pattern"></a>Muster
 
 formatiert:
-- Die Ziffer "9" 
+- die Ziffer "9" 
 - zwei Ziffern 
-- Ein Leerzeichen oder Gedankenstrich 
-- "7" oder "8" 
+- ein Leerzeichen oder Bindestrich 
+- eine "7" oder "8" 
 - eine Ziffer 
 - ein Leerzeichen oder Bindestrich 
 - vier Ziffern
 
 unformatiert:
-- Die Ziffer "9" 
+- die Ziffer "9" 
 - zwei Ziffern 
-- "7" oder "8" 
+- eine "7" oder "8" 
 - fünf Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -17157,15 +16919,15 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_formatted_itin findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_itin wurde gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_unformatted_itin findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_itin wurde gefunden.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_formatted_itin oder Func_unformatted_itin findet Inhalte, die dem Muster entsprechen.
 
 ```xml
@@ -17202,26 +16964,26 @@ Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Infor
 - social security 
 - tax payer 
 - itins 
-- zeitd 
+- taxd 
 - individual taxpayer 
 
 
-## <a name="us-social-security-number-ssn"></a>US-Sozialversicherungsnummer (SSN)
+## <a name="us-social-security-number-ssn"></a>Us.S. Social Security Number (SSN)
 
 ### <a name="format"></a>Format
 
 neun Ziffern, die in einem formatierten oder unformatierten Muster vorliegen können
 
 > [!NOTE]
-> Wenn ein SSN vor Mitte 2011 ausgestellt wurde, verfügt er über eine starke Formatierung, bei der bestimmte Teile der Zahl innerhalb bestimmter Bereiche liegen müssen, um gültig zu sein (es gibt jedoch keine Prüfsumme).
+> Wenn er vor Mitte 2011 ausgegeben wird, verfügt ein SSN über eine starke Formatierung, bei der bestimmte Teile der Zahl innerhalb bestimmter Bereiche liegen müssen, um gültig zu sein (es gibt jedoch keine Prüfsumme).
 
 ### <a name="pattern"></a>Muster
 
-Vier Funktionen suchen in vier verschiedenen Mustern nach SSNs:
-- Func_ssn sucht SSNs mit starker Formatierung vor 2011, die mit Gedankenstrichen oder Leerzeichen formatiert sind (ddd-dd-dddd OR ddd dddd)
-- Func_unformatted_ssn sucht SSNs mit starker Formatierung vor 2011, die als neun aufeinanderfolgende Ziffern unformatiert sind (ddddddddddd)
-- Func_randomized_formatted_ssn sucht nach 2011-SSNs, die mit Gedankenstrichen oder Leerzeichen formatiert sind (ddd-dd-dddd OR ddd dddd)
-- Func_randomized_unformatted_ssn sucht nach 2011-SSNs, die als neun aufeinanderfolgende Ziffern unformatiert sind (dddddddddd)
+Vier Funktionen suchen nach SSNs in vier verschiedenen Mustern:
+- Func_ssn findet SSNs mit starker Formatierung vor 2011, die mit Strichen oder Leerzeichen formatiert sind (ddd-dd-dddd OR ddd dddd)
+- Func_unformatted_ssn sucht SSNs mit starker Formatierung vor 2011, die als neun aufeinander folgende Ziffern unformatiert sind (ddddddddd)
+- Func_randomized_formatted_ssn findet nach 2011 SSNs, die mit Strichen oder Leerzeichen formatiert sind (ddd-dd-dddd OR ddd dddd)
+- Func_randomized_unformatted_ssn nach 2011 SSNs, die als neun aufeinander folgende Ziffern unformatiert sind (ddddddddd)
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -17230,19 +16992,19 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_ssn findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_ssn wurde gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_unformatted_ssn findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_ssn wurde gefunden.
 
-Eine DLP-Richtlinie ist nur wenig sicher, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_randomized_formatted_ssn findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_ssn wurde gefunden.
 
-Eine DLP-Richtlinie ist zu 55 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_randomized_unformatted_ssn findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_ssn wurde gefunden.
 
@@ -17273,10 +17035,10 @@ Eine DLP-Richtlinie ist zu 55 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keyword_ssn"></a>Keyword_ssn
 
-- SSA Number
+- SSA-Nummer
 - social security number
-- Sozialversicherung #
-- Sozialversicherung #
+- Soziale Sicherheit #
+- Soziale Sicherheit #
 - Sozialversicherung nein
 - Social Security#
 - Soc Sec
@@ -17294,7 +17056,7 @@ neun Ziffern
 
 ### <a name="pattern"></a>Muster
 
-neun aufeinanderfolgende Ziffern
+neun aufeinander folgende Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -17302,14 +17064,14 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist besonders sicher, dass diese Art vertraulicher Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
 - Die Funktion Func_usa_uk_passport findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keywords_uk_eu_passport_number` wurde gefunden.
-- Ein Schlüsselwort wurde `Keywords_eu_passport_date` gefunden.
+- Ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keywords_uk_eu_passport_number` wird gefunden.
+- Ein Schlüsselwort aus `Keywords_eu_passport_date` wurde gefunden.
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
 - Die Funktion Func_usa_uk_passport findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keywords_uk_eu_passport_number` wurde gefunden.
+- Ein Schlüsselwort aus `Keywords_eu_passport_number` oder `Keywords_uk_eu_passport_number` wird gefunden.
 
 ```xml
     <!-- U.S. / U.K. Passport Number -->
@@ -17336,12 +17098,12 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport #
-- passport #
+- Passport #
+- Passport #
 - passportid
-- Passports
+- Pässe
 - passportno
-- passport no
+- Passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -17353,13 +17115,13 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 - uk passport 
 
 
-## <a name="ukraine-passport-domestic"></a>Ukraine passport domestic
+## <a name="ukraine-passport-domestic"></a>Ukraine-Reisepass im Inland
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -17375,8 +17137,8 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Regex_Ukraine_Passport_Domestic findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der regex-Regex_Ukraine_Passport_Domestic findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Ukraine_Passport_Domestic gefunden.
 
 ```xml
@@ -17395,19 +17157,19 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 - ukraine passport
 - passport number
-- passport no
+- Passport no
 - паспорт України
 - номер паспорта
 - персональний
 
 
-## <a name="ukraine-passport-international"></a>Ukraine passport international
+## <a name="ukraine-passport-international"></a>Ukraine Passport international
 Dieser vertrauliche Informationstyp ist nur für die Verwendung in:
 - Richtlinien zur Verhinderung von Datenverlust
 - Kommunikationskonformitätsrichtlinien
-- Informationssteuerung
+- Information Governance
 - Datensatzverwaltung
-- Microsoft Cloud App Security
+- Sicherheit von Microsoft Cloud App
 
 ### <a name="format"></a>Format
 
@@ -17415,7 +17177,7 @@ alphanumerisches Muster mit acht Zeichen
 
 ### <a name="pattern"></a>Muster
 
-Alphanumerisches Muster mit acht Zeichen:
+Alphanumerisches Achtzeichenmuster:
 - zwei Buchstaben oder Ziffern
 - sechs Ziffern
 
@@ -17425,8 +17187,8 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb von 300 Zeichen:
-- Der reguläre Regex_Ukraine_Passport_International findet Inhalte, die dem Muster entsprechen.
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der regex-Regex_Ukraine_Passport_International findet Inhalte, die dem Muster entsprechen.
 - Ein Schlüsselwort aus Keyword_Ukraine_Passport_International gefunden.
 
 ```xml
@@ -17445,6 +17207,6 @@ Eine DLP-Richtlinie hat mittlere Vertrauen, dass diese Art von vertraulichen Inf
 
 - ukraine passport
 - passport number
-- passport no
+- Passport no
 - паспорт України
 - номер паспорта

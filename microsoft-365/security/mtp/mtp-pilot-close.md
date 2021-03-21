@@ -1,7 +1,7 @@
 ---
-title: Zusammenfassung der Microsoft 365 Defender-Pilotprojektergebnisse
-description: Schließen Sie Ihr Microsoft 365 -Defender-Pilotprojekt ab, indem Sie Ihre Scorecard abschließen, Die Ergebnisse Ihres Berichts analysieren und entscheiden, wie es weiter gehen soll.
-keywords: Microsoft Threat Protection pilot, decide what to do next after pilot Microsoft Threat Protection project, what to do after evaluating Microsoft Threat Protection in production, transition from Microsoft Threat Protection pilot to deployment, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+title: Zusammenfassung ihrer Microsoft 365 Defender-Pilotprojektergebnisse
+description: Schließen Sie Ihr Microsoft 365 Defender-Pilotprojekt ab, indem Sie Ihre Scorecard abschließen, Ihre Berichtsergebnisse analysieren und entscheiden, wie Sie vorankommen.
+keywords: Microsoft Threat Protection-Pilot, entscheiden Sie nach dem Microsoft Threat Protection-Pilotprojekt, was nach der Auswertung von Microsoft Threat Protection in der Produktion, dem Übergang vom Microsoft Threat Protection-Pilot zur Bereitstellung, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Geräte, Gerät, Identität, Benutzer, Daten, Anwendungen, Vorfälle, automatisierte Untersuchung und Behebung, erweiterte Suche
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c8608568301f11a20c940a5ff9f1c205ce6e48f1
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f646fe7061fb0793fd9922068c9037be21a236cb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930162"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920396"
 ---
 # <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>Schließen und Zusammenfassen Ihres Microsoft 365 Defender-Pilotprojekts  
 
@@ -45,22 +45,22 @@ ms.locfileid: "49930162"
 
 Sie sind derzeit in der Abschluss- und Zusammenfassungsphase.
 
-Sie haben gerade eine erweiterte Angriffssimulation nur im Arbeitsspeicher ausgeführt, die Code remote auf einem Domänencontroller ausgeführt hat. Sie haben gesehen, wie Microsoft Defender for Endpoint und Microsoft Defender for Identity Warnungen zu stehlende böswilligen Aktivitäten erkennen und erstellen. Sie haben auch gesehen, wie Warnungen aus verschiedenen Quellen zusammen mit anderen kontextbezogenen Informationen zu einem einzelnen Vorfall im Microsoft 365 Security Center-Portal übermittelt werden. Eine solche Integration ermöglicht es SOC-Analysten, die erforderlichen Maßnahmen zu untersuchen und zu ergreifen. Sie haben auch eine erweiterte Suchabfrage erstellt, die eingehende E-Mails identifiziert, in denen der Benutzer die Anlage geöffnet oder gespeichert und basierend auf dieser Abfrage eine Erkennung erstellt hat.
+Sie haben gerade eine erweiterte Nur-Arbeitsspeicher-Angriffssimulation ausgeführt, die Code remote auf einem Domänencontroller ausgeführt hat. Sie haben gesehen, wie Microsoft Defender for Endpoint und Microsoft Defender for Identity Benachrichtigungen zu stealthy malicious activity erkennen und erstellen. Sie haben auch gesehen, wie Warnungen aus verschiedenen Quellen zusammen mit anderen kontextbezogenen Informationen zu einem einzelnen Vorfall im Microsoft 365 Security Center-Portal übermittelt werden. Eine solche Integration ermöglicht es SOC-Analysten, die erforderlichen Maßnahmen zu untersuchen und zu ergreifen. Sie haben auch eine erweiterte Suchabfrage erstellt, mit der eingehende E-Mails identifiziert werden, in denen der Benutzer die Anlage geöffnet oder gespeichert hat, und die Erkennung basierend auf dieser Abfrage erstellt.
 
 Sie haben das Ende des Prozesses erreicht, nachdem alle Tests abgeschlossen wurden.
 
-Die endgültige Ausgabe sollte wie dies sein:
+Die endgültige Ausgabe sollte wie:
 
 - Eine abgeschlossene Scorecard
 - Detaillierter Bericht über die Ergebnisse des Pilotprojekts
-- Eine Entscheidung über den Fortschritt
+- Eine Entscheidung über die Zukunft
 
-Stellen Sie die Berichte aus Ihrer endgültigen Ausgabe internen [](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) Beteiligten (die Sie während der Vorbereitungsphase identifiziert haben) und den Microsoft-Kontakten vor. Durch diesen Aufwand wird sichergestellt, dass feedback zur Verbesserung von Produkten und Dokumentationen verwendet werden kann.
+Stellen Sie die Berichte aus Ihrer endgültigen Ausgabe internen [](./prepare-mtpeval.md) Interessengruppen (die Sie während der Vorbereitungsphase identifiziert haben) und Microsoft-Kontakten vor. Durch diesen Aufwand wird sichergestellt, dass feedback zur Verbesserung von Produkten und Dokumentation verwendet werden kann.
 
-Wir hoffen, dass Ihnen diese Simulation spaßt. Beginnen Sie mit der Implementierung von Gelernten in größerem Umfang in Ihrer Organisation, um die integrierte Sicherheitslösung so gut wie nie zu verwenden.
+Wir hoffen, dass Ihnen diese Simulation spaßt. Beginnen Sie mit der Implementierung von Gelernten in einem größeren Umfang in Ihrer Organisation, um das Beste aus der integrierten Sicherheitslösung zu machen.
 
 ## <a name="next-step"></a>Nächster Schritt
-Weitere Informationen zu den Säulen von Microsoft 365 Defender finden Sie in den folgenden interaktiven Leitfäden:
+Weitere Informationen zu den Microsoft 365 Defender-Säulen finden Sie in den folgenden interaktiven Anleitungen:
 - [Schützen Ihrer Organisation mit Microsoft Defender für Office 365](https://aka.ms/O365ATP-Interactive-Guide)
 - [Erkennen Sie verdächtige Aktivitäten und potenzielle Angriffe mit Microsoft Defender for Identity](https://aka.ms/AATP-Interactive-Guide)
 - [Erkennen von Bedrohungen und Verwalten von Warnungen mit Microsoft Cloud App Security](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)

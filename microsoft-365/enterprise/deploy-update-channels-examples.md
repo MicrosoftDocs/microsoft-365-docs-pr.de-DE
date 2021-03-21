@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: So nutzen Beispielorganisationen Kanäle für die Bereitstellung und Aktualisierung.
-ms.openlocfilehash: 88567fedd92f01885c4971acc273a676c3e82de8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a91ee948ca2051ceccb3883b2dd0198c1070bc03
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686154"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919062"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>Bereitstellung und Aktualisierung der Beispielkonfigurationen des Kanals
 
@@ -41,9 +41,9 @@ Klicken Sie auf den Link in der Spalte **Beispiel**, um die Bereitstellungsphase
 
 | Angebot für Kunden/Kanäle | Windows 10 | Microsoft 365 Apps for Enterprise (Windows 10) | Beispiel |
 |:-------|:-------|:-----|:-------|
-| Für Kunden, die die neuesten Versionen erhalten möchten, sobald diese fertig sind. | Halbjährlicher Kanal | [Aktueller Kanal](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) | [Neueste Versionen](deploy-update-channels-examples-rapid-deploy.md) |
-| Unternehmen, die die neueste Version mit zusätzlicher Vorhersagbarkeit benötigen. | Halbjährlicher Kanal | [Monatlicher Enterprise-Kanal](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) |  |
-| Für Unternehmen, die umfassende IT-Tests vor jeder Aktualisierung durchführen. | Halbjährlicher Kanal | [Halbjährlicher Enterprise-Kanal](https://docs.microsoft.com/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview) |  |
+| Für Kunden, die die neuesten Versionen erhalten möchten, sobald diese fertig sind. | Halbjährlicher Kanal | [Aktueller Kanal](/deployoffice/overview-update-channels#current-channel-overview) | [Neueste Versionen](deploy-update-channels-examples-rapid-deploy.md) |
+| Unternehmen, die die neueste Version mit zusätzlicher Vorhersagbarkeit benötigen. | Halbjährlicher Kanal | [Monatlicher Enterprise-Kanal](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) |  |
+| Für Unternehmen, die umfassende IT-Tests vor jeder Aktualisierung durchführen. | Halbjährlicher Kanal | [Halbjährlicher Enterprise-Kanal](/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview) |  |
 |||||
 
 

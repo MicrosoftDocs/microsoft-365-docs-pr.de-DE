@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: b98d2385ee0ae130df115c85010366a5100ab78d
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 30363b544d9016b10dd9aad463d33c40065da0f3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838446"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919811"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Informationen zum Insider-Risikomanagement in Microsoft 365
 
@@ -125,7 +125,6 @@ Nachdem Fälle untersucht wurden, können Prüfer schnell handeln, um den Fall z
 In schwerwiegenderen Situationen müssen Sie die Fallinformationen für insider risk management möglicherweise mit anderen Prüfern oder Diensten in Ihrer Organisation teilen. Das Insider-Risikomanagement ist eng in andere Microsoft 365-Compliancelösungen integriert, um Ihnen bei der End-to-End-Risikoauflösung zu helfen.
 
 - **Advanced eDiscovery**: Durch eskalieren eines Untersuchungsfalles können Sie Daten und die Verwaltung des Falls an Advanced eDiscovery in Microsoft 365 übertragen. Advanced eDiscovery bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Inhalten, die auf die internen und externen Ermittlungen Ihrer Organisation abgestimmt sind. Dies ermöglicht es juristischen Teams, den gesamten Warnungs-Workflow für die gesetzliche Aufbewahrungspflicht zu verwalten. Weitere Informationen zu den Advanced eDiscovery-Fällen finden Sie unter [Übersicht über Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
-- **ServiceNow (Vorschau):** ServiceNow ist eine beliebte Cloud-Computing-Plattform, die Organisationen dabei hilft, digitale Workflows für den Unternehmensbetrieb zu verwalten. Das Insider-Risikomanagement unterstützt die Freigabe von Fallbenachrichtigungen mit Ihrem ServiceNow-Dienst und ermöglicht Ihnen das Erstellen von Vorfällen und Änderungsanforderungen im Zusammenhang mit einzelnen Insiderrisikofällen. Weitere Informationen zum Freigeben von Warnungsinformationen für ServiceNow finden Sie [unter Freigeben eines Falls mit ServiceNow](insider-risk-management-cases.md#share-the-case).
 - **Office 365-Verwaltungs-APIs**-Integration (Vorschau): Insider-Risikomanagement unterstützt das Exportieren von Warnungsinformationen in Sicherheitsinformationen und Ereignisverwaltungsdienste (EVENT Management, SIEM) über die Office 365-Verwaltungs-APIs. Der Zugriff auf Benachrichtigungsinformationen auf der Plattform passt am besten zu den Risikoprozessen Ihrer Organisation und bietet Ihnen mehr Flexibilität bei der Maßnahmen gegen Risikoaktivitäten. Weitere Informationen zum Exportieren von Warnungsinformationen mit Office 365-Verwaltungs-APIs finden Sie [unter Exportieren von Warnungen](insider-risk-management-settings.md#export-alerts-preview).
 
 >[!NOTE]

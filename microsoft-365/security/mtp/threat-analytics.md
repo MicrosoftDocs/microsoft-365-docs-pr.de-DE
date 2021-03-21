@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e27659517f8c7b5cbc7936b825ac867a2888e251
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 288be30aa9592ba7feed92b9ad49955406f59f10
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727148"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918798"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>Nachverfolgen und Reagieren auf neue Bedrohungen mit Bedrohungsanalysen 
 
@@ -35,7 +35,7 @@ ms.locfileid: "50727148"
 **Gilt für:**
 - Microsoft 365 Defender
 
-> Möchten Sie Microsoft 365 Defender erleben? Sie können [es in einer Laborumgebung auswerten](https://aka.ms/mtp-trial-lab) oder [Ihr Pilotprojekt in der Produktion ausführen.](https://aka.ms/m365d-pilotplaybook)
+> Sie möchten Microsoft 365 Defender ausprobieren? Sie können [in einer Laborumgebung auswerten](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) oder [ein Pilotprojekt in der Produktionsumgebung ausführen](./mtp-pilot.md?ocid=cx-evalpilot).
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -155,7 +155,7 @@ _Abschnitt "Verhinderte E-Mail-Versuche" eines Berichts zur Bedrohungsanalyse_
   - Schutz potenziell unerwünschter Anwendungen (PUA)
   - Echtzeitschutz
  
-Informationen zur Risikominderung in [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)diesem Abschnitt enthalten Daten aus der Bedrohungs- und Sicherheitsrisikoverwaltung, die auch detaillierte Drilldowninformationen aus verschiedenen Links im Bericht enthält.
+Informationen zur Risikominderung in [](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)diesem Abschnitt enthalten Daten aus der Bedrohungs- und Sicherheitsrisikoverwaltung, die auch detaillierte Drilldowninformationen aus verschiedenen Links im Bericht enthält.
 
 ![Abbildung des Abschnitts "Gegenmaßnahmen" eines Berichts zur Bedrohungsanalyse mit Details zur sicheren Konfiguration Abbildung des Abschnitts "Gegenmaßnahmen" eines Berichts zur Bedrohungsanalyse mit Details ](../../media/threat-analytics/ta_mitigations_mtp.png)
  ![ zu Sicherheitslücken](../../media/threat-analytics/ta_mitigations_mtp2.png)
@@ -181,4 +181,4 @@ Beachten Sie beim Blick auf die Daten zur Bedrohungsanalyse die folgenden Faktor
 ## <a name="related-topics"></a>Verwandte Themen
 - [Proaktives Aufsuchen von Bedrohungen mit erweiterter Suche](advanced-hunting-overview.md) 
 - [Verstehen des Abschnitts "Analystenbericht"](threat-analytics-analyst-reports.md)
-- [Bewerten und Beheben von Sicherheitsschwächen und -risiken](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Bewerten und Beheben von Sicherheitsschwächen und -risiken](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

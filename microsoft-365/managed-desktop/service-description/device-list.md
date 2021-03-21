@@ -8,18 +8,18 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 729e9dc9ab512a7e93bc291a9a52222c15a42b79
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: b0aa619f09f2d6b32289e037283a0dc6578d0150
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727421"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920504"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop-Geräte 
 
 Microsoft Managed Desktop wertet regelmäßig Geräte aus, die in den Dienst einbezogen werden sollen. In diesem Artikel werden die spezifischen Geräte aufgeführt, die derzeit unterstützt werden. Eine allgemeinere Anweisung der Geräteanforderungen finden Sie unter [Geräteanforderungen](device-requirements.md).
 
-Weitere Informationen zu Microsoft Managed Desktop finden Sie unter [Microsoft Managed Desktop documentation and resources](https://docs.microsoft.com/microsoft-365/managed-desktop/). 
+Weitere Informationen zu Microsoft Managed Desktop finden Sie unter [Microsoft Managed Desktop documentation and resources](../index.yml). 
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
@@ -78,11 +78,11 @@ Darüber hinaus muss das Gerät auch die folgenden Kriterien erfüllen:
 
 - Wenn eine bestimmte SKU in den Geräteanforderungen aufgeführt ist, stellen Sie sicher, dass Sie sie bei der Bestellung verwenden. Dadurch wird sichergestellt, dass Geräte den Microsoft Managed Desktop-Softwareanforderungen entsprechen. 
 - Die Windows-Erstlauferfahrung wurde noch nicht abgeschlossen.
-- Registrieren bei Microsoft Managed Desktop mithilfe des [Geräteregistrierungsfeatures](https://aka.ms/mmddrhelp)
+- Registrieren bei Microsoft Managed Desktop mithilfe des [Geräteregistrierungsfeatures](../get-started/register-devices-self.md)
 
 >[!NOTE]
 >Geräte mit einem Prozessor mit 2,0 GHz oder schneller bieten benutzern, die an diesen Aktivitäten beteiligt sind, eine wesentlich bessere Erfahrung:
->- Verwenden von Videokonferenzen mit Teams. Weitere [Informationen finden Sie unter Hardwareanforderungen](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app) für Microsoft Teams.
+>- Verwenden von Videokonferenzen mit Teams. Weitere [Informationen finden Sie unter Hardwareanforderungen](/microsoftteams/hardware-requirements-for-the-teams-app) für Microsoft Teams.
 >-  Verwenden eines Geräts für verschiedene Workloads.
 >- Verwenden mehrerer Monitore.
 
@@ -93,8 +93,3 @@ Mit diesen Ressourcen können Sie Fragen zu bestimmten Geräten beantworten:
 - Weitere Fragen zu Dell-Geräten finden Sie <a href="mailto:MMD_at_dell@dell.com">unter MMD_at_dell@dell.com</a>.
 
 - Weitere Fragen zu HP-Geräten und Anweisungen zur Gerätebestellung finden Sie unter: Americas (<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>); Europa/Naher Osten/Afrika (<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>); Asien-Pazifik/Japan (<a href="mailto:mmd-apj@hp.com">mmd-apj@hp.com</a>); Global (<a href="mailto:mmd@hp.com">mmd@hp.com</a>)
-
-
-
-
-

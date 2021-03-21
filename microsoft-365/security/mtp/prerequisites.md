@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: afa5cd42545eddafb1d0ec1a6d88eb0903e07820
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 0184b2c05121e1ea3bf365263df880548f1b9232
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454551"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918870"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Voraussetzungen für Microsoft 365 Defender
 
@@ -52,13 +52,13 @@ Jede dieser Lizenzen ermöglicht Ihnen den Zugriff auf Microsoft 365 Defender-Fe
 
 Weitere Informationen finden Sie [in den Microsoft 365 Enterprise-Dienstplänen.](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)
 
-> Sie haben noch keine Lizenz? [Testen oder Kaufen eines Microsoft 365-Abonnements](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
+> Sie haben noch keine Lizenz? [Testen oder Kaufen eines Microsoft 365-Abonnements](../../commerce/try-or-buy-microsoft-365.md?view=o365-worldwide)
 
 ### <a name="check-your-existing--licenses"></a>Überprüfen vorhandener Lizenzen
 Wechseln Sie zu Microsoft 365 Admin Center ([admin.microsoft.com](https://admin.microsoft.com/)), um Ihre vorhandenen Lizenzen zu sehen. Navigieren Sie im Admin Center zu **Abrechnung** > **Lizenzen**.
 
 >[!NOTE]
-> Sie müssen entweder der  Rolle "Abrechnungsadministrator" oder **"Globaler** [Leser" in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) zugewiesen werden, um Lizenzinformationen anzeigen zu können. Wenn Sie Probleme beim Zugriff haben, wenden Sie sich an einen globalen Administrator.
+> Sie müssen entweder der  Rolle "Abrechnungsadministrator" oder **"Globaler** [Leser" in Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) zugewiesen werden, um Lizenzinformationen anzeigen zu können. Wenn Sie Probleme beim Zugriff haben, wenden Sie sich an einen globalen Administrator.
 
 ## <a name="required-permissions"></a>Erforderliche Berechtigungen
 Sie müssen ein globaler Administrator **oder** **Sicherheitsadministrator** in Azure Active Directory sein, um Microsoft 365 Defender aktivieren zu können. Eine Liste der für die Verwendung von Microsoft 365 Defender erforderlichen Rollen und Informationen zur Regulierung des Zugriffs auf Daten finden Sie unter Verwalten des Zugriffs auf [Microsoft 365 Defender](mtp-permissions.md).

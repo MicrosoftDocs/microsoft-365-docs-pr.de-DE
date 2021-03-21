@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 90dee316ee5bdc99b6a2386260a3be38728e7282
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 18422f74d87bbadf014de24849235ce5c25bd614
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453717"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920468"
 ---
 # <a name="device-requirements"></a>Geräteanforderungen
 
@@ -70,7 +70,7 @@ Geräte sollten die folgenden Speicher- und Speichergrenzwerte erfüllen oder ü
 - Das Startlaufwerk muss eine Kapazität von mindestens 128 GB haben.
 - Interner Gerätespeicher (RAM) muss mindestens 8 GB groß sein.
 
-Wenn das Gerät nach dem 1. Juli 2020 hergestellt wurde, sollte es auch über eine IR-Kamera, einen Fingerabdruckleser oder beides verfügen, um [Windows Hello zu unterstützen.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
+Wenn das Gerät nach dem 1. Juli 2020 hergestellt wurde, sollte es auch über eine IR-Kamera, einen Fingerabdruckleser oder beides verfügen, um [Windows Hello zu unterstützen.](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
 
 ## <a name="recommended-requirements"></a>Empfohlene Anforderungen
 

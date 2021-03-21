@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in SharePoint- und Microsoft Teams-Websites sowie in Microsoft 365-Gruppen.
-ms.openlocfilehash: 3565b47e21d81b4b3d560d72a29f2deae9587709
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 501df9b167e917d79957d8b156597af67e6240af
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407315"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919581"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Zusätzlich zur Verwendung von [Vertraulichkeitsbezeichnungen](sensitivity-labels.md), um Dokumente und E-Mails zu klassifizieren und zu schützen, können Sie Vertraulichkeitsbezeichnungen auch verwenden, um Inhalte in den folgenden Containern zu schützen: Microsoft Teams-Websites, Microsoft 365-Gruppen ([vormals Office 365-Gruppen](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) und SharePoint-Websites. Verwenden Sie für diese Klassifizierung und den Schutz auf Containerebene die folgenden Bezeichnungseinstellungen:
 
@@ -57,7 +57,7 @@ Nachdem Sie Vertraulichkeitsbezeichnungen für Container aktiviert und konfiguri
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Container und Synchronisieren von Bezeichnungen
 
-1. Weil dieses Feature die Azure AD-Funktionen nutzt, führen Sie zum Aktivieren der Vertraulichkeitsbezeichnungen die Anleitungen in der Azure AD-Dokumentation aus: [Zuweisen von Vertraulichkeitsbezeichnungen zu Microsoft 365-Gruppen in Azure Active Directory (Vorschau)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
+1. Weil dieses Feature die Azure AD-Funktionen nutzt, führen Sie zum Aktivieren der Vertraulichkeitsbezeichnungen die Anleitungen in der Azure AD-Dokumentation aus: [Zuweisen von Vertraulichkeitsbezeichnungen zu Microsoft 365-Gruppen in Azure Active Directory (Vorschau)](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
 2. Sie müssen jetzt Ihre Vertraulichkeitsbezeichnungen mit Azure AD synchronisieren. Zuerst müssen Sie [eine Verbindung mit Security & Compliance Center PowerShell herstellen](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
@@ -100,9 +100,9 @@ Die Aktivierung von Vertraulichkeitsbezeichnungen für Container bedeutet, dass 
 
 4. Wenn Sie **Einstellungen für den Gerätezugriff und die externe Freigabe** ausgewählt haben, konfigurieren Sie nun die folgende Einstellungen:
     
-    - **Externe Freigabe von bezeichneten SharePoint-Websites steuern**: Wählen Sie diese Option, um dann entweder die externe Freigabe für jede beliebige Person, neue und bestehende Gäste, bestehende Gäste oder nur Personen in Ihrer Organisation auszuwählen. Weitere Informationen zu diesen Konfigurationen und Einstellungen finden Sie in der SharePoint-Dokumentation [Externe Freigabe für eine Website aktivieren oder deaktivieren](https://docs.microsoft.com/sharepoint/change-external-sharing-site).
+    - **Externe Freigabe von bezeichneten SharePoint-Websites steuern**: Wählen Sie diese Option, um dann entweder die externe Freigabe für jede beliebige Person, neue und bestehende Gäste, bestehende Gäste oder nur Personen in Ihrer Organisation auszuwählen. Weitere Informationen zu diesen Konfigurationen und Einstellungen finden Sie in der SharePoint-Dokumentation [Externe Freigabe für eine Website aktivieren oder deaktivieren](/sharepoint/change-external-sharing-site).
     
-    - **Zugriff von nicht verwalteten Geräten aus**: Diese Option verwendet das SharePoint-Feature, bei dem der bedingte Zugriff in Azure AD verwendet wird, um den Zugriff auf SharePoint- und OneDrive-Inhalte von nicht verwalteten Geräten aus zu sperren oder einzuschränken. Weitere Informationen finden Sie unter [Steuern des Zugriffs von nicht verwalteten Geräten aus](/sharepoint/control-access-from-unmanaged-devices) in der SharePoint-Dokumentation. Die Option, die Sie für diese Bezeichnungseinstellung festlegen, entspricht der Ausführung eines PowerShell-Befehls für eine Website, wie in den Schritten 3-5 im Abschnitt [Blockieren oder Einschränken des Zugriffs auf eine bestimmte SharePoint-Website oder OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) in der SharePoint-Anleitung beschrieben.
+    - **Zugriff von nicht verwalteten Geräten aus**: Diese Option verwendet das SharePoint-Feature, bei dem der bedingte Zugriff in Azure AD verwendet wird, um den Zugriff auf SharePoint- und OneDrive-Inhalte von nicht verwalteten Geräten aus zu sperren oder einzuschränken. Weitere Informationen finden Sie unter [Steuern des Zugriffs von nicht verwalteten Geräten aus](/sharepoint/control-access-from-unmanaged-devices) in der SharePoint-Dokumentation. Die Option, die Sie für diese Bezeichnungseinstellung festlegen, entspricht der Ausführung eines PowerShell-Befehls für eine Website, wie in den Schritten 3-5 im Abschnitt [Blockieren oder Einschränken des Zugriffs auf eine bestimmte SharePoint-Website oder OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) in der SharePoint-Anleitung beschrieben.
         
         Weitere Informationen finden Sie unter [Weitere Informationen zu den Abhängigkeiten für die Option „Nicht verwaltete Geräte“](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) am Ende dieses Abschnitts.
 
@@ -113,7 +113,7 @@ Wenn Ihre Vertraulichkeitskennzeichnung noch nicht veröffentlicht wurde, veröf
 
 ##### <a name="more-information-about-the-dependencies-for-the-unmanaged-devices-option"></a>Weitere Informationen zu den Abhängigkeiten für die Option „Nicht verwaltete Geräte“
 
-Wenn Sie die abhängige Richtlinie für den bedingten Zugriff für SharePoint nicht so konfigurieren, wie unter [App-erzwungene Einschränkungen](https://docs.microsoft.com/sharepoint/app-enforced-restrictions) angeführt, ist die von Ihnen angegebene Option wirkungslos. Darüber hinaus hat sie keine Auswirkungen, wenn sie weniger stark einschränkt als eine konfigurierte Einstellung auf Mandanten-Ebene. Wenn Sie eine organisationsweite Einstellung für nicht verwaltete Geräte konfiguriert haben, wählen Sie eine identische oder restriktivere Bezeichnungseinstellung aus
+Wenn Sie die abhängige Richtlinie für den bedingten Zugriff für SharePoint nicht so konfigurieren, wie unter [App-erzwungene Einschränkungen](/sharepoint/app-enforced-restrictions) angeführt, ist die von Ihnen angegebene Option wirkungslos. Darüber hinaus hat sie keine Auswirkungen, wenn sie weniger stark einschränkt als eine konfigurierte Einstellung auf Mandanten-Ebene. Wenn Sie eine organisationsweite Einstellung für nicht verwaltete Geräte konfiguriert haben, wählen Sie eine identische oder restriktivere Bezeichnungseinstellung aus
 
 Wenn Ihr Mandant beispielsweise für **Eingeschränkten, reinen Web-Zugriff zulassen** konfiguriert ist, hat die Bezeichnungseinstellung „Vollzugriff“ keine Auswirkungen, da sie weniger restriktiv ist. Wählen Sie für diese Mandantenebende die Bezeichnungseinstellung, die den Zugriff blockiert (stärker restriktiv) oder die Bezeichnungseinstellung für eingeschränkten Zugriff (diese entspricht der Mandanteneinstellung).
 
@@ -175,17 +175,17 @@ Sie können PowerShell verwenden, wenn Sie eine [Vertraulichkeitsbezeichnung auf
 
 Jetzt können Sie die Vertraulichkeitsbezeichnung(en) auf Microsoft 365-Gruppen anwenden. Kehren Sie für weitere Anweisungen zur Azure AD-Dokumentation zurück:
 
-- [Zuweisen einer Bezeichnung zu einer neuen Gruppe im Azure-Portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)
+- [Zuweisen einer Bezeichnung zu einer neuen Gruppe im Azure-Portal](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)
 
-- [Zuweisen einer Bezeichnung zu einer vorhandenen Gruppe im Azure-Portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
+- [Zuweisen einer Bezeichnung zu einer vorhandenen Gruppe im Azure-Portal](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
 
-- [Entfernen einer Bezeichnung von einer vorhandenen Gruppe im Azure-Portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal).
+- [Entfernen einer Bezeichnung von einer vorhandenen Gruppe im Azure-Portal](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal).
 
 ### <a name="apply-a-sensitivity-label-to-a-new-team"></a>Anwenden einer Vertraulichkeitsbezeichnung auf ein neues Team
 
 Benutzer können Vertraulichkeitsbezeichnungen auswählen, wenn sie neue Teams in Microsoft Teams erstellen. Wenn sie die Bezeichnung aus der Dropdownliste **Vertraulichkeit** auswählen, kann sich die Datenschutzeinstellung entsprechend der Bezeichnungskonfiguration ändern. Abhängig von der für die Bezeichnung festgelegten Einstellung für den externen Benutzerzugriff können Benutzer Personen außerhalb der Organisation zum Team hinzufügen oder nicht.
 
-[Weitere Informationen Vertraulichkeitsbezeichnungen für Teams](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
+[Weitere Informationen Vertraulichkeitsbezeichnungen für Teams](/microsoftteams/sensitivity-labels)
 
 ![Datenschutzeinstellung beim Erstellen eines neuen Teams](../media/privacy-setting-new-team.png)
 
@@ -215,19 +215,19 @@ Wenn die Bezeichnung angewendet wurde und Benutzer zur Website navigieren, werde
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>Verwenden von PowerShell, um eine Vertraulichkeitsbezeichnung auf mehrere Websites anzuwenden
 
-Sie können die Cmdlets [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) und [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) mit dem Parameter *SensitivityLabel* aus der aktuellen [SharePoint Online-Verwaltungsshell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) verwenden, um eine Vertraulichkeitsbezeichnung auf mehrere Websites anzuwenden. Die Websites können eine beliebige SharePoint-Websitesammlung oder eine OneDrive-Website sein.
+Sie können die Cmdlets [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) und [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) mit dem Parameter *SensitivityLabel* aus der aktuellen [SharePoint Online-Verwaltungsshell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) verwenden, um eine Vertraulichkeitsbezeichnung auf mehrere Websites anzuwenden. Die Websites können eine beliebige SharePoint-Websitesammlung oder eine OneDrive-Website sein.
 
 Stellen Sie sicher, dass Sie über die Version 16.0.19418.12000 oder höher der SharePoint Online-Verwaltungsshell verfügen.
 
 1. Öffnen Sie eine PowerShell-Sitzung mit der Option **als Administrator ausführen**.
 
-2. Wenn Sie die GUID ihrer Bezeichnung nicht kennen: [Stellen Sie eine Verbindung zur Security & Compliance Center-PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell), und rufen Sie die Liste der Vertraulichkeitsbezeichnungen und deren GUIDs ab.
+2. Wenn Sie die GUID ihrer Bezeichnung nicht kennen: [Stellen Sie eine Verbindung zur Security & Compliance Center-PowerShell her](/powershell/exchange/connect-to-scc-powershell), und rufen Sie die Liste der Vertraulichkeitsbezeichnungen und deren GUIDs ab.
 
    ```powershell
    Get-Label |ft Name, Guid
    ```
 
-3. Stellen Sie anschließend [eine Verbindung mit SharePoint Online PowerShell her](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online), und speichern Sie die GUID der Bezeichnung als Variable. Zum Beispiel:
+3. Stellen Sie anschließend [eine Verbindung mit SharePoint Online PowerShell her](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online), und speichern Sie die GUID der Bezeichnung als Variable. Zum Beispiel:
 
    ```powershell
    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
@@ -301,7 +301,7 @@ Die folgenden Apps und Dienste unterstützen derzeit keine Vertraulichkeitsbezei
 
 Microsoft 365 unterstützt die alten Klassifizierungen für neue Microsoft 365-Gruppen und SharePoint-Websites nicht mehr, wenn Sie Vertraulichkeitsbezeichnungen für Container aktivieren. Bestehende Gruppen und Websites, die Vertraulichkeitsbezeichnungen unterstützen, zeigen weiterhin die alten Klassifizierungswerte an, es sei denn, Sie konvertieren sie zur Verwendung von Vertraulichkeitsbezeichnungen.
 
-Ein Beispiel dafür, wie Sie die alte Gruppenklassifizierung für Microsoft Office SharePoint Online verwendet haben könnten, finden Sie unter [Klassifizierung "moderner" Microsoft Office SharePoint Online-Websites](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
+Ein Beispiel dafür, wie Sie die alte Gruppenklassifizierung für Microsoft Office SharePoint Online verwendet haben könnten, finden Sie unter [Klassifizierung "moderner" Microsoft Office SharePoint Online-Websites](/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 
 Diese Klassifizierungen wurden konfiguriert, indem Azure AD PowerShell oder die PnP-Kernbibliothek verwendet und Werte für die Einstellung `ClassificationList` festgelegt wurden. Wenn in Ihrem Mandanten Klassifizierungswerte definiert sind, werden sie angezeigt, wenn Sie den folgenden Befehl aus dem [AzureADPreview PowerShell-Modul](https://www.powershellgallery.com/packages/AzureADPreview) ausführen:
 
@@ -331,7 +331,7 @@ Informationen zum Verwalten der Koexistenz von Vertraulichkeitsbezeichnungen und
 
    Melden Sie sich beispielsweise bei einer PowerShell-Sitzung, die Sie als Administrator ausführen, mit einem globalen Administratorkonto an:
 
-2. Führen Sie das Cmdlet [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label) aus, um die Liste der Vertraulichkeitsbezeichnungen und deren GUIDs abzurufen:
+2. Führen Sie das Cmdlet [Get-Label](/powershell/module/exchange/get-label) aus, um die Liste der Vertraulichkeitsbezeichnungen und deren GUIDs abzurufen:
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -339,7 +339,7 @@ Informationen zum Verwalten der Koexistenz von Vertraulichkeitsbezeichnungen und
 
 3. Notieren Sie sich die GUIDs für die Vertraulichkeitsbezeichnungen, die Sie auf Ihre Microsoft 365-Gruppen anwenden möchten.
 
-4. Anschließend müssen Sie in einem separaten Windows PowerShell-Fenster[ eine Verbindung mit Exchange Online PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+4. Anschließend müssen Sie in einem separaten Windows PowerShell-Fenster[ eine Verbindung mit Exchange Online PowerShell herstellen](/powershell/exchange/connect-to-exchange-online-powershell).
 
 5. Verwenden Sie den folgenden Befehl als Beispiel, um die Liste der Gruppen abzurufen, die derzeit die Klassifizierung "Allgemein" aufweisen:
 
@@ -377,13 +377,13 @@ All diese Überwachungsereignisse sind in der Kategorie [Vertraulichkeitsbezeich
 
 ## <a name="how-to-disable-sensitivity-labels-for-containers"></a>Deaktivieren von Vertraulichkeitsbezeichnungen für Container
 
-Sie können Vertraulichkeitsbezeichnungen für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites unter Verwendung der Anweisungen im Abschnitt [Aktivieren der Unterstützung von Vertraulichkeitsbezeichnungen in PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell) deaktivieren. Wenn Sie das Feature jedoch deaktivieren möchten, geben Sie in Schritt 5 `$setting["EnableMIPLabels"] = "False"`an.
+Sie können Vertraulichkeitsbezeichnungen für Microsoft Teams, Office 365-Gruppen und SharePoint-Websites unter Verwendung der Anweisungen im Abschnitt [Aktivieren der Unterstützung von Vertraulichkeitsbezeichnungen in PowerShell](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell) deaktivieren. Wenn Sie das Feature jedoch deaktivieren möchten, geben Sie in Schritt 5 `$setting["EnableMIPLabels"] = "False"`an.
 
 Diese Aktion sorgt dafür, dass all diese Einstellungen nicht mehr für Gruppen und Websites verfügbar sind, wenn Sie Vertraulichkeitsbezeichnungen erstellen oder bearbeiten. Außerdem wird zurückgesetzt, welche Eigenschaft Container für ihre Konfiguration verwenden. Wenn Sie Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites aktivieren, wird die Eigenschaft, die aus **Klassifizierung** (für [Azure AD-Gruppen Klassifizierung](#classic-azure-ad-group-classification)) verwendet wird, auf **Vertraulichkeit** umgestellt. Wenn Sie Vertraulichkeitsbezeichnungen für Container deaktivieren, ignorieren Container die Eigenschaft „Vertraulichkeit“ und verwenden wieder die Eigenschaft „Klassifizierung“.
 
 Das bedeutet, dass alle Bezeichnungseinstellungen von Websites und Gruppen, die zuvor auf Container angewendet wurden, nicht erzwungen werden und Container die Bezeichnungen nicht mehr anzeigen.
 
-Wenn diesen Containern Azure AD-Klassifizierungswerte zugewiesen wurden, werden die Container wieder auf die Verwendung der Klassifizierungen zurückgesetzt. Beachten Sie, dass alle neuen Websites oder Gruppen, die nach der Aktivierung des Features erstellt wurden, keine Bezeichnung oder Klassifizierung aufweisen. Für diese Container und alle neuen Container können Sie jetzt Klassifizierungswerte anwenden. Weitere Informationen finden Sie unter [SharePoint "moderne" Website-Klassifizierung](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification) und [Erstellen von Klassifizierungen für Office-Gruppen in Ihrer Organisation](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell).
+Wenn diesen Containern Azure AD-Klassifizierungswerte zugewiesen wurden, werden die Container wieder auf die Verwendung der Klassifizierungen zurückgesetzt. Beachten Sie, dass alle neuen Websites oder Gruppen, die nach der Aktivierung des Features erstellt wurden, keine Bezeichnung oder Klassifizierung aufweisen. Für diese Container und alle neuen Container können Sie jetzt Klassifizierungswerte anwenden. Weitere Informationen finden Sie unter [SharePoint "moderne" Website-Klassifizierung](/sharepoint/dev/solution-guidance/modern-experience-site-classification) und [Erstellen von Klassifizierungen für Office-Gruppen in Ihrer Organisation](../enterprise/manage-microsoft-365-groups-with-powershell.md).
 
 ## <a name="additional-resources"></a>Weitere Ressourcen
 

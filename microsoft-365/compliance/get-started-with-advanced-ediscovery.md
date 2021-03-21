@@ -12,49 +12,33 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365solution-ediscovery
+- m365solution-aed
 - m365initiative-compliance
+- m365solution-scenario
 search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel wird beschrieben, wie Sie Advanced eDiscovery einrichten, damit Sie mit dem Erstellen und Verwalten von Fällen beginnen können. Außerdem werden die erforderlichen Microsoft-Abonnements und -Lizenzierung beschrieben. Nachdem Sie einige schnelle Schritte abgeschlossen haben, ist das Advanced eDiscovery-Tool einsatzbereit.
-ms.openlocfilehash: 29a220f36a55a04d1c1a24add03b2e013a5c60ba
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 6c6aed482da8f203154d94313ec04519d6a330ea
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727410"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919745"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>Einrichten von Microsoft 365 Advanced eDiscovery
 
-Advanced eDiscovery in Microsoft 365 bietet einen [End-to-End-Workflow](overview-ediscovery-20.md#advanced-ediscovery-workflow) zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Daten, die auf interne und externe Untersuchungen Ihrer Organisation reagieren. Für die Bereitstellung von Advanced eDiscovery ist nichts erforderlich, aber es gibt einige erforderliche Aufgaben, die ein IT-Administrator und eDiscovery-Manager ausführen müssen, bevor Ihre Organisation mit der Erstellung und Verwendung von Advanced eDiscovery-Fällen beginnen kann, um Ihre Untersuchungen zu verwalten.
+Advanced eDiscovery in Microsoft 365 bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Daten, die auf interne und externe Untersuchungen Ihrer Organisation reagieren. Für die Bereitstellung von Advanced eDiscovery ist nichts erforderlich, aber es gibt einige erforderliche Aufgaben, die ein IT-Administrator und eDiscovery-Manager ausführen müssen, bevor Ihre Organisation mit der Erstellung und Verwendung von Advanced eDiscovery-Fällen beginnen kann, um Ihre Untersuchungen zu verwalten.
 
-In diesem Artikel werden die schritte erläutert, die zum Einrichten von Advanced eDiscovery erforderlich sind. Dies umfasst die Sicherstellung der ordnungsgemäßen Lizenzierung, die für den Zugriff auf Advanced eDiscovery und das Hinzufügen von Verwahrern zu Fällen erforderlich ist, und das Zuweisen von Berechtigungen zu Ihrem Rechts- und Untersuchungsteam, damit diese auf Fälle zugreifen und diese verwalten können.
+In diesem Artikel werden die folgenden Schritte erläutert, die zum Einrichten von Advanced eDiscovery erforderlich sind.
+
+![Schritte zum Einrichten von Advanced eDiscovery](../media/set-up-advanced-ediscovery.png)
+
+Dies umfasst die Sicherstellung der ordnungsgemäßen Lizenzierung, die für den Zugriff auf Advanced eDiscovery und das Hinzufügen von Verwahrern zu Fällen erforderlich ist, und das Zuweisen von Berechtigungen zu Ihrem Rechts- und Untersuchungsteam, damit diese auf Fälle zugreifen und diese verwalten können.
 
 ## <a name="step-1-verify-and-assign-appropriate-licenses"></a>Schritt 1: Überprüfen und Zuweisen entsprechender Lizenzen
 
-Die Lizenzierung für Advanced eDiscovery erfordert das entsprechende Organisationsabonnement und die Benutzerlizenzierung.
-
-- **Organisationsabonnement:** Für den Zugriff auf Advanced eDiscovery im Microsoft 365 Compliance Center oder im Security & Compliance Center muss Ihre Organisation über eine der folgenden Funktionen verfügen:
-
-  - Microsoft 365 E5- oder Office 365 E5-Abonnement
-  
-  - Microsoft 365 E3-Abonnement mit E5-Compliance-Add-On
-
-  - Microsoft 365 E3-Abonnement mit E5 eDiscovery und Audit-Add-On
-
-  Wenn Sie keinen vorhandenen Microsoft 365 E5-Plan haben und Advanced eDiscovery ausprobieren möchten, können [](https://www.microsoft.com/microsoft-365/enterprise) Sie [Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) zu Ihrem vorhandenen Abonnement hinzufügen oder sich für eine Testversion von Microsoft 365 E5 registrieren.
-
-- **Benutzerlizenzierung:** Um einen Benutzer in einem Advance eDiscovery-Fall als Verwahrer hinzuzufügen, muss diesem Benutzer eine der folgenden Lizenzen zugewiesen werden, abhängig von Ihrem Organisationsabonnement:
-
-  - Microsoft 365: Benutzern muss eine Microsoft 365 E5-Lizenz, eine E5 Compliance-Add-On-Lizenz oder eine E5 eDiscovery- und Audit-Add-On-Lizenz zugewiesen werden.
-
-  - Office 365: Benutzern muss eine Office 365 E5-Lizenz zugewiesen sein.
-
-   Informationen zum Zuweisen von Lizenzen finden Sie unter [Zuweisen von Lizenzen zu Benutzern](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
-
-> [!NOTE]
-> Benutzer benötigen nur eine E5-Lizenz (oder die entsprechende Add-On-Lizenz), um einem Advanced eDiscovery-Fall als Verwahrer hinzugefügt zu werden. IT-Administratoren, eDiscovery-Manager, Anwälte, Paralegale oder Ermittler, die Advanced eDiscovery verwenden, um Fälle zu verwalten und Falldaten zu überprüfen, benötigen keine E5- oder Add-On-Lizenz.
+Die Lizenzierung für Advanced eDiscovery erfordert das entsprechende Organisationsabonnement und die Benutzerlizenzierung. Eine Liste der Lizenzierungsanforderungen für Advanced eDiscovery finden Sie unter [Abonnements und Lizenzierung](overview-ediscovery-20.md#subscriptions-and-licensing).
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Schritt 2: Zuweisen von eDiscovery-Berechtigungen
 
@@ -62,7 +46,7 @@ Um auf Advanced eDiscovery zu zugreifen oder als Mitglied eines Advanced eDiscov
 
 Führen Sie die folgenden Schritte aus, um der Rollengruppe eDiscovery Manager Benutzer hinzuzufügen:
 
-1. Wechseln Sie zu und melden Sie sich mit den Anmeldeinformationen für ein [https://protection.office.com/permissions](https://protection.office.com/permissions) Administratorkonto in Ihrer Microsoft 365-Organisation an.
+1. Wechseln Sie zu und melden Sie sich mit den Anmeldeinformationen für ein <https://protection.office.com/permissions> Administratorkonto in Ihrer Microsoft 365-Organisation an.
 
 2. Wählen Sie **auf der** Seite Berechtigungen die **Rollengruppe eDiscovery-Manager** aus.
 
@@ -80,7 +64,7 @@ Führen Sie die folgenden Schritte aus, um der Rollengruppe eDiscovery Manager B
 
 Die Rollengruppe eDiscovery Manager besteht aus zwei Untergruppen. Der Unterschied zwischen diesen Untergruppen basiert auf dem Bereich.
 
-- **eDiscovery-Manager:** Kann die erweiterten eDiscovery-Fälle anzeigen und verwalten, bei denen sie erstellt wurden oder Mitglied sind. Wenn ein anderer eDiscovery-Manager einen Fall erstellt, aber keinen zweiten eDiscovery-Manager als Mitglied dieses Falls hinzu fügt, kann der zweite eDiscovery-Manager den Fall nicht auf der Seite Advanced eDiscovery im Compliance Center anzeigen oder öffnen. Im Allgemeinen können die meisten Personen in Ihrer Organisation der Untergruppe eDiscovery Manager hinzugefügt werden.
+- **eDiscovery-Manager**: Kann die erweiterten eDiscovery-Fälle anzeigen und verwalten, in denen sie erstellen oder Mitglied sind. Wenn ein anderer eDiscovery-Manager einen Fall erstellt, aber keinen zweiten eDiscovery-Manager als Mitglied dieses Falls hinzu fügt, kann der zweite eDiscovery-Manager den Fall nicht auf der Seite Advanced eDiscovery im Compliance Center anzeigen oder öffnen. Im Allgemeinen können die meisten Personen in Ihrer Organisation der Untergruppe eDiscovery Manager hinzugefügt werden.
 
 - **eDiscovery-Administrator:** Kann alle Fallverwaltungsaufgaben ausführen, die ein eDiscovery-Manager ausführen kann. Außerdem kann ein eDiscovery-Administrator Folgendes:
 

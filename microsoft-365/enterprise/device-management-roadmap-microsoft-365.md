@@ -1,6 +1,6 @@
 ---
-title: Roadmap für die Geräteverwaltung für Microsoft 365
-keywords: Microsoft 365, Microsoft 365 für Unternehmen, Microsoft 365-Dokumentation, Verwaltung mobiler Geräte, InTune
+title: Roadmap für die Verwaltung mobiler Geräte für Microsoft 365
+keywords: Microsoft 365, Microsoft 365 for Enterprise, Microsoft 365-Dokumentation, Verwaltung mobiler Geräte, Intune
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -15,50 +15,50 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: Die Roadmap zum Einrichten der Geräteverwaltung für Microsoft 365.
-ms.openlocfilehash: 79be47d6bc83c124f2203866986e06181a1f7f3d
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+ms.openlocfilehash: 4c37033898865372fea19ddbb53ec9c8586f27b1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749539"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918966"
 ---
-# <a name="device-management-roadmap-for-microsoft-365"></a>Roadmap für die Geräteverwaltung für Microsoft 365
+# <a name="device-management-roadmap-for-microsoft-365"></a>Roadmap für die Verwaltung mobiler Geräte für Microsoft 365
 
-Microsoft 365 for Enterprise umfasst Features zur Unterstützung der Verwaltung von Geräten und deren apps in Ihrer Organisation. Die Verwaltung mobiler Geräte hilft Ihnen, die Ressourcen Ihrer Organisation zu sichern und zu schützen.
+Microsoft 365 for Enterprise enthält Features, mit deren Hilfe Geräte und ihre Apps innerhalb Ihrer Organisation verwaltet werden können. Durch die Verwaltung mobiler Geräte können Sie die Ressourcen Ihrer Organisation sichern und schützen.
 
-Für die Geräteverwaltung gibt es zwei Optionen:
+Es gibt zwei Optionen für die Geräteverwaltung:
 
 - [Microsoft Intune](#microsoft-intune)
 - [Grundlegende Mobilität und Sicherheit](#basic-mobility-and-security)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Mit Microsoft InTune können Sie den Zugriff auf Ihre Organisation mithilfe der Verwaltung mobiler Geräte oder der Verwaltung mobiler Anwendungen verwalten. Die Verwaltung mobiler Geräte erfolgt, wenn Benutzer ihre Geräte in InTune "registrieren". Nachdem ein Gerät registriert wurde, handelt es sich um ein verwaltetes Gerät. Daher kann es die Richtlinien, Regeln und Einstellungen Ihrer Organisation empfangen. Beispielsweise können Sie bestimmte apps installieren, eine Kennwortrichtlinie erstellen, eine VPN-Verbindung installieren und vieles mehr.
+Sie können Microsoft Intune verwenden, um den Zugriff auf Ihre Organisation mithilfe der Verwaltung mobiler Geräte oder mobiler Anwendungen zu verwalten. Die Verwaltung mobiler Geräte ist, wenn Benutzer ihre Geräte in Intune "registrieren". Nachdem ein Gerät registriert wurde, handelt es sich um ein verwaltetes Gerät. Daher kann sie die Richtlinien, Regeln und Einstellungen Ihrer Organisation empfangen. Sie können beispielsweise bestimmte Apps installieren, eine Kennwortrichtlinie erstellen, eine VPN-Verbindung installieren und vieles mehr.
 
-Benutzer mit ihren eigenen persönlichen Geräten möchten möglicherweise Ihre Geräte nicht registrieren oder von InTune und den Richtlinien Ihrer Organisation verwaltet werden. Sie müssen jedoch dennoch die Ressourcen und Daten Ihrer Organisation schützen. In diesem Szenario können Sie Ihre apps mithilfe der mobilen Anwendungsverwaltung schützen. Sie können beispielsweise eine Richtlinie für Mobile Anwendungsverwaltung verwenden, bei der ein Benutzer beim Zugriff auf SharePoint Online auf dem Gerät eine PIN eingeben muss.
+Benutzer mit ihren eigenen persönlichen Geräten möchten ihre Geräte möglicherweise nicht registrieren oder von Intune und den Richtlinien Ihrer Organisation verwaltet werden. Sie müssen jedoch weiterhin die Ressourcen und Daten Ihrer Organisation schützen. In diesem Szenario können Sie Ihre Apps mithilfe der verwaltung mobiler Anwendungen schützen. Sie können z. B. eine mobile Anwendungsverwaltungsrichtlinie verwenden, für die ein Benutzer beim Zugriff auf SharePoint Online auf dem Gerät eine PIN eingeben muss.
 
-Außerdem bestimmen Sie, wie Sie persönliche Geräte und Geräte der unternehmenseigenen Verwaltung verwalten werden. Möglicherweise möchten Sie Geräte je nach Verwendung anders behandeln.
+Außerdem bestimmen Sie, wie Sie persönliche Geräte und geräte im Besitz der Organisation verwalten. Sie können Geräte je nach Verwendung unterschiedlich behandeln.
 
 ## <a name="basic-mobility-and-security"></a>Grundlegende Mobilität und Sicherheit
 
-Dieses ist in Microsoft 365 integriert und hilft Ihnen, die mobilen Geräte ihrer Benutzer wie iPhones, iPads, Androiden und Windows phones zu sichern und zu verwalten. Sie können Sicherheitsrichtlinien für Geräte erstellen und verwalten, ein Gerät aus der Ferne zurücksetzen und detaillierte Berichte zu Geräten anzeigen.
+Dies ist in Microsoft 365 integrierte Und hilft Ihnen, die mobilen Geräte Ihrer Benutzer wie iPhones, iPads, Androids und Windows-Telefone zu sichern und zu verwalten. Sie können Sicherheitsrichtlinien für Geräte erstellen und verwalten, ein Gerät aus der Ferne zurücksetzen und detaillierte Berichte zu Geräten anzeigen.
 
 ## <a name="choose-between-the-two-options"></a>Wählen Sie zwischen den beiden Optionen aus.
 
-Um besser zu beurteilen, welche Geräte Verwaltungsoption für Sie am besten geeignet ist, lesen Sie [choose from Basic Mobility Security and InTune](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune).
+Informationen dazu, welche Geräteverwaltungsoption für Sie am besten geeignet ist, finden Sie unter [Choose between Basic Mobility Security and Intune](/office365/securitycompliance/choose-between-mdm-and-intune).
 
-Beginnen Sie auf der Grundlage ihrer Bewertung mit der Verwaltung Ihrer Geräte mit:
+Beginnen Sie basierend auf Ihrer Bewertung mit der Verwaltung Ihrer Geräte mit:
 
-- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
+- [Intune](/mem/intune/fundamentals/planning-guide)
 - [Grundlegende Mobilität und Sicherheit](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
  
 ## <a name="identity-and-device-access-recommendations"></a>Empfehlungen für den Identitäts- und Gerätezugriff
 
-Microsoft stellt eine Reihe von Empfehlungen für [Identität und Gerätezugriff](../security/office-365-security/microsoft-365-policies-configurations.md) bereit, um sicherzustellen, dass die Mitarbeiter sicher und produktiv arbeiten können. Verwenden Sie für den Geräte Zugriff die Empfehlungen und Einstellungen in den folgenden Artikeln:
+Microsoft stellt eine Reihe von Empfehlungen für [Identität und Gerätezugriff](../security/office-365-security/microsoft-365-policies-configurations.md) bereit, um sicherzustellen, dass die Mitarbeiter sicher und produktiv arbeiten können. Verwenden Sie für den Gerätezugriff die Empfehlungen und Einstellungen in den folgenden Artikeln:
 
 - [Voraussetzungen](../security/office-365-security/identity-access-prerequisites.md)
 - [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](../security/office-365-security/identity-access-policies.md)
 
-## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Funktionsweise von Contoso für die Geräteverwaltung für Microsoft 365
+## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Funktionsweise der Geräteverwaltung für Microsoft 365 durch Contoso
 
-Informationen darüber, wie ein fiktives, aber repräsentatives multinationales Unternehmen seine Infrastruktur für Mobile Geräteverwaltung mit Microsoft 365 Cloud Services bereitgestellt hat, finden Sie unter [Mobile Device Management for Contoso](contoso-mdm.md).
+Informationen dazu, wie ein fiktives, aber repräsentatives multinationales Unternehmen seine Infrastruktur für die Verwaltung mobiler Geräte mit Microsoft 365-Clouddiensten bereitgestellt hat, finden Sie unter [Mobile Device Management for Contoso](contoso-mdm.md).

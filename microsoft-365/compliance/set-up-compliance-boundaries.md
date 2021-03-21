@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Erfahren Sie, wie Sie Compliancegrenzen verwenden, um logische Grenzen zu erstellen, die die Speicherorte von Benutzerinhalten steuern, die ein eDiscovery-Manager in Microsoft 365 durchsuchen kann.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: df582d46472bc7ca6d6e99e823ab94c0884d60a0
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 80f1c6705550d21ac54a0fb4dda2b605b497adbc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423896"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919501"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Einrichten von Compliancegrenzen für eDiscovery-Untersuchungen
 
@@ -68,7 +68,7 @@ Sie müssen die folgenden Voraussetzungen erfüllen, bevor das Azure Active Dire
 
 - Benutzerpostfächer müssen mindestens 10 MB groß sein. Wenn das Postfach eines Benutzers weniger als 10 MB beträgt, wird das Attribut, das zum Definieren Ihrer Agenturen verwendet wird, nicht mit dem #A0 des Benutzers synchronisiert.
 
-- Kompatibilitätsgrenzen und die Attribute zum Erstellen von Suchberechtigungsfiltern erfordern, dass Azure Active Directory (Azure AD)-Attribute mit Benutzerpostfächern synchronisiert werden. Führen Sie das [Cmdlet Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) in Exchange Online PowerShell aus, um zu überprüfen, ob die zu verwendenden Attribute synchronisiert wurden. In der Ausgabe dieses Cmdlets werden die Azure AD-Attribute angezeigt, die mit Exchange Online synchronisiert wurden.
+- Kompatibilitätsgrenzen und die Attribute zum Erstellen von Suchberechtigungsfiltern erfordern, dass Azure Active Directory (Azure AD)-Attribute mit Benutzerpostfächern synchronisiert werden. Führen Sie das [Cmdlet Get-User](/powershell/module/exchange/get-user) in Exchange Online PowerShell aus, um zu überprüfen, ob die zu verwendenden Attribute synchronisiert wurden. In der Ausgabe dieses Cmdlets werden die Azure AD-Attribute angezeigt, die mit Exchange Online synchronisiert wurden.
 
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>Schritt 1: Identifizieren eines Benutzerattributs zum Definieren Ihrer Agenturen
 
@@ -87,7 +87,7 @@ Hier ist eine Liste der Azure AD-Benutzerattribute, die Sie für Compliancegrenz
 - C (Zwei-Buchstaben-Ländercode) <sup>*</sup>
 
   > [!NOTE]
-  > <sup>*</sup> Dieses Attribut ordnet der CountryOrRegion-Eigenschaft zu, die durch Ausführen des **Cmdlets Get-User** in Exchange Online PowerShell zurückgegeben wird. Das Cmdlet gibt den lokalisierten Ländernamen zurück, der aus dem zweibuchstabenigen Ländercode übersetzt wird. Weitere Informationen finden Sie in der Beschreibung des CountryOrRegion-Parameters im [Cmdlet-Referenzartikel Set-User.](https://docs.microsoft.com/powershell/module/exchange/set-user)
+  > <sup>*</sup> Dieses Attribut ordnet der CountryOrRegion-Eigenschaft zu, die durch Ausführen des **Cmdlets Get-User** in Exchange Online PowerShell zurückgegeben wird. Das Cmdlet gibt den lokalisierten Ländernamen zurück, der aus dem zweibuchstabenigen Ländercode übersetzt wird. Weitere Informationen finden Sie in der Beschreibung des CountryOrRegion-Parameters im [Cmdlet-Referenzartikel Set-User.](/powershell/module/exchange/set-user)
 
 Obwohl mehr Benutzerattribute verfügbar sind, insbesondere für #A0 sind die oben aufgeführten Attribute die einzigen, die derzeit von OneDrive unterstützt werden.
   
@@ -198,7 +198,7 @@ So erstellen Sie einen Fall und weisen Mitglieder zu:
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Suchen und Exportieren von Inhalten in Multi-Geo-Umgebungen
 
-Mithilfe von Suchberechtigungsfiltern können Sie auch steuern, wo Inhalte für den Export geroutet werden und welches Datencenter beim Durchsuchen von Inhaltsspeicherorten in einer [SharePoint Multi-Geo-Umgebung durchsucht werden kann.](https://go.microsoft.com/fwlink/?linkid=860840)
+Mithilfe von Suchberechtigungsfiltern können Sie auch steuern, wo Inhalte für den Export geroutet werden und welches Datencenter beim Durchsuchen von Inhaltsspeicherorten in einer [SharePoint Multi-Geo-Umgebung durchsucht werden kann.](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)
   
 - **Exportieren von Suchergebnissen:** Sie können die Suchergebnisse aus #A0, #A1 und #A1 aus einem bestimmten Datencenter exportieren. Dies bedeutet, dass Sie den Speicherort des Datencenters angeben können, aus dem Suchergebnisse exportiert werden.
 
@@ -267,7 +267,7 @@ Beachten Sie die folgenden Punkte beim Suchen und Exportieren von Inhalten in Mu
 
 ## <a name="using-compliance-boundaries-for-sharepoint-hub-sites"></a>Verwenden von Compliancegrenzen für SharePoint-Hubwebsites
 
-[SharePoint-Hubwebsites](https://docs.microsoft.com/sharepoint/dev/features/hub-site/hub-site-overview) richten sich häufig nach den gleichen geografischen oder Agenturgrenzen wie eDiscovery-Compliancegrenzen. Das bedeutet, dass Sie die Website-ID-Eigenschaft des Hubstandorts verwenden können, um eine Compliancegrenze zu erstellen. Verwenden Sie dazu das [Cmdlet Get-SPOHubSite](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spohubsite#examples) in SharePoint Online PowerShell, um die SiteId für die Hubwebsite zu erhalten, und verwenden Sie dann diesen Wert für die Department ID-Eigenschaft, um einen Suchberechtigungsfilter zu erstellen.
+[SharePoint-Hubwebsites](/sharepoint/dev/features/hub-site/hub-site-overview) richten sich häufig nach den gleichen geografischen oder Agenturgrenzen wie eDiscovery-Compliancegrenzen. Das bedeutet, dass Sie die Website-ID-Eigenschaft des Hubstandorts verwenden können, um eine Compliancegrenze zu erstellen. Verwenden Sie dazu das [Cmdlet Get-SPOHubSite](/powershell/module/sharepoint-online/get-spohubsite#examples) in SharePoint Online PowerShell, um die SiteId für die Hubwebsite zu erhalten, und verwenden Sie dann diesen Wert für die Department ID-Eigenschaft, um einen Suchberechtigungsfilter zu erstellen.
 
 Verwenden Sie die folgende Syntax, um einen Suchberechtigungsfilter für eine #A0 zu erstellen:
 

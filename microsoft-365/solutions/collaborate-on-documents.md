@@ -16,17 +16,17 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: In diesem Artikel erfahren Sie, wie Sie mit Gästen in einem Dokument in SharePoint und OneDrive zusammenarbeiten.
-ms.openlocfilehash: 1b2fe003902b69e4c0c58852af67862ce6f2eb34
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+description: In diesem Artikel erfahren Sie, wie Sie mit Gästen an einem Dokument in SharePoint und OneDrive zusammenarbeiten.
+ms.openlocfilehash: 9158ec7692ef90eb2e270242472fceb10d0e60b7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663511"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920228"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Zusammenarbeit mit Gästen an einem Dokument
 
-Wenn Sie mit Personen außerhalb Ihrer Organisation in Dokumenten in SharePoint oder OneDrive zusammenarbeiten müssen, können Sie Ihnen einen Freigabe Link an das Dokument senden. In diesem Artikel werden die Microsoft 365-Konfigurationsschritte durchlaufen, die erforderlich sind, um Freigabe-Links für SharePoint und OneDrive für die Anforderungen Ihrer Organisation einzurichten.
+Wenn Sie mit Personen außerhalb Ihrer Organisation an Dokumenten in SharePoint oder OneDrive zusammenarbeiten müssen, können Sie ihnen einen Freigabelink zum Dokument senden. In diesem Artikel werden die Microsoft 365-Konfigurationsschritte erläutert, die zum Einrichten von Freigabelinks für SharePoint und OneDrive für die Anforderungen Ihrer Organisation erforderlich sind.
 
 ## <a name="video-demonstration"></a>Videodemonstration
 
@@ -34,84 +34,84 @@ Dieses Video zeigt die in diesem Dokument beschriebenen Konfigurationsschritte.<
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE450Vt?autoplay=false]
 
-## <a name="azure-external-collaboration-settings"></a>Einstellungen für Azure-externe Zusammenarbeit
+## <a name="azure-external-collaboration-settings"></a>Einstellungen für die externe Zusammenarbeit in Azure
 
-Die Freigabe in Microsoft 365 wird auf der höchsten Ebene durch die [Einstellungen für die B2B-externe Zusammenarbeit in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)gesteuert. Wenn die Gast Freigabe in Azure AD deaktiviert oder eingeschränkt ist, überschreibt diese Einstellung alle Freigabeeinstellungen, die Sie in Microsoft 365 konfigurieren.
+Die Freigabe in Microsoft 365 wird auf der höchsten Ebene von den [Einstellungen für B2B externe Zusammenarbeit in Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations) geregelt. Wenn die Gastfreigabe in Azure AD deaktiviert oder eingeschränkt ist, überschreibt diese Einstellung alle Freigabeeinstellungen, die Sie in Microsoft 365 konfigurieren.
 
-Überprüfen Sie die Einstellungen für die externe Zusammenarbeit in B2B, um sicherzustellen, dass die Freigabe für Gäste nicht blockiert wird.
+Überprüfen Sie die B2B-Einstellungen für die externe Zusammenarbeit, um sicherzustellen, dass die Freigabe für Gäste nicht blockiert wird.
 
 ![Screenshot der Seite mit den Einstellungen für die Azure Active Directory-Organisationsbeziehungen](../media/azure-ad-organizational-relationships-settings.png)
 
-So legen Sie Einstellungen für die externe Zusammenarbeit fest
+Festlegen der Einstellungen für die Azure Externe Zusammenarbeit
 
-1. Melden Sie sich bei Azure Active Directory unter an [https://aad.portal.azure.com](https://aad.portal.azure.com) .
+1. Bei Azure Active Directory an [https://aad.portal.azure.com](https://aad.portal.azure.com) anmelden.
 2. Klicken Sie im linken Navigationsbereich auf **Azure Active Directory**.
-3. Klicken Sie auf **externe Identitäten**.
-4. Klicken Sie auf dem Bildschirm **Erste Schritte** im linken Navigationsbereich auf **Einstellungen für externe Zusammenarbeit**.
-5. Stellen Sie sicher, dass **Administratoren und Benutzer in der Rolle "Gast einladender" eingeladen** werden und **Mitglieder einladen können** , beide auf " **Ja**" festgelegt sind.
+3. Klicken Sie auf **Externe Identitäten**.
+4. Klicken Sie auf dem Bildschirm **Erste Schritte** im linken Navigationsbereich auf **Einstellungen für die externe Zusammenarbeit**.
+5. Stellen Sie sicher, dass sowie **Administratoren und Benutzer mit der Rolle "Einladender" können einladen** als auch **Mitglieder können einladen** beide auf **Ja** festgelegt sind.
 6. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
-Beachten Sie die Einstellungen im Abschnitt Einschränkungen für die **Zusammenarbeit** . Stellen Sie sicher, dass die Domänen der Gäste, mit denen Sie zusammenarbeiten möchten, nicht blockiert werden.
+Beachten Sie die Einstellungen im Bereich **Einschränkungen für die Zusammenarbeit**. Stellen Sie sicher, dass die Domänen der Gäste, mit denen Sie zusammenarbeiten möchten, nicht blockiert sind.
 
-Wenn Sie mit Gästen aus mehreren Organisationen zusammenarbeiten, möchten Sie möglicherweise die Möglichkeit zum Zugriff auf Verzeichnisdaten einschränken. Dadurch wird verhindert, dass Sie sehen, wer sonst ein Gast im Verzeichnis ist. Wählen Sie dazu unter **Benutzerzugriffs Einschränkungen** für Gast die Option **Gastbenutzer haben begrenzten Zugriff auf Eigenschaften und Mitgliedschaft in Verzeichnisobjekt Einstellungen** oder **Gastbenutzer Zugriff ist auf Eigenschaften und Mitgliedschaften ihrer eigenen Verzeichnisobjekte beschränkt**.
+Wenn Sie mit Gästen aus mehreren Organisationen arbeiten, könnten Sie möglicherweise Interesse daran haben, ihren Zugriff auf Verzeichnisdaten einzuschränken. Dies wird es ihnen verhindern zu sehen, wer sonst noch Gast im Verzeichnis ist. Wählen Sie dazu unter **Einschränkungen des Gastzugriffs** die Einstellung **Gastbenutzer haben eingeschränkten Zugriff auf Eigenschaften und die Mitgliedschaft bei den Einstellungen der Verzeichnisobjekte** oder **Zugriff der Gastbenutzer ist auf Eigenschaften und die Mitgliedschaft bei ihren eigenen Verzeichnisobjekten eingeschränkt**.
 
-## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint-Freigabeeinstellungen auf Organisationsebene
+## <a name="sharepoint-organization-level-sharing-settings"></a>Freigabeeinstellungen auf SharePoint-Organisationsebene
 
-Damit Personen außerhalb Ihrer Organisation Zugriff auf ein Dokument in SharePoint oder OneDrive haben, müssen die Freigabeeinstellungen für SharePoint und OneDrive auf Organisationsebene die Freigabe für Personen außerhalb Ihrer Organisation zulassen.
+Damit Personen außerhalb Ihrer Organisation Zugriff auf ein Dokument in SharePoint oder OneDrive haben, müssen die SharePoint- und OneDrive-Freigabeeinstellungen auf Organisationsebene die Freigabe für Personen außerhalb Ihrer Organisation zulassen.
 
-Die Einstellungen auf Organisationsebene für SharePoint bestimmen die Einstellungen, die für einzelne SharePoint-Websites verfügbar sind. Websiteeinstellungen dürfen nicht so restriktiv wie die Einstellungen auf Organisationsebene sein. Die Einstellung auf Organisationsebene für OneDrive bestimmt die Freigabeebene, die in den OneDrive-Bibliotheken der Benutzer verfügbar sein wird.
+Die Einstellungen auf Organisationsebene für SharePoint bestimmen die Einstellungen, die für einzelne SharePoint-Websites verfügbar sein werden. Websiteeinstellungen können nicht passiver sein als die Einstellungen auf Organisationsebene. Die Einstellung auf Organisationsebene für OneDrive bestimmt die Freigabestufe, die in den #A0 der Benutzer verfügbar sein wird.
 
-Wenn Sie für SharePoint und OneDrive die nicht authentifizierte Datei-und Ordnerfreigabe zulassen möchten, wählen Sie **jeden** aus. Wenn Sie sicherstellen möchten, dass sich Personen außerhalb Ihrer Organisation authentifizieren müssen, wählen Sie **neue und vorhandene Gäste** aus. *Jeder* Links ist die einfachste Möglichkeit zur Freigabe: Personen außerhalb Ihrer Organisation können die Verknüpfung ohne Authentifizierung öffnen und können Sie an andere weitergeben.
+Wenn Sie für SharePoint und OneDrive die nicht authentifizierte Datei- und Ordnerfreigabe zulassen möchten, wählen Sie **Jeder aus.** Wenn Sie sicherstellen möchten, dass Personen außerhalb Ihrer Organisation authentifiziert werden müssen, wählen Sie **Neu und vorhandene Gäste aus.** *Jeder* Links ist die einfachste Möglichkeit zum Teilen: Personen außerhalb Ihrer Organisation können den Link ohne Authentifizierung öffnen und können ihn an andere personen übergeben.
 
-Wählen Sie für SharePoint die frei zügigste Einstellung aus, die von einer beliebigen Website in Ihrer Organisation benötigt wird.
+Wählen Sie für SharePoint die lässigste Einstellung aus, die von jeder Website in Ihrer Organisation benötigt wird.
 
 ![Screenshot der SharePoint-Freigabeeinstellungen auf Organisationsebene](../media/sharepoint-organization-external-sharing-controls.png)
 
 
-So legen Sie Freigabeeinstellungen für SharePoint auf Organisationsebene fest
+So legt man SharePoint-Freigabeeinstellungen auf Organisationsebene fest
 
-1. Klicken Sie im Microsoft 365 Admin Center im linken Navigationsbereich unter **Admin Centers** auf **SharePoint**.
-2. Klicken Sie im SharePoint Admin Center im linken Navigationsbereich unter **Richtlinien** auf **Freigabe**.
-3. Stellen Sie sicher, dass die externe Freigabe für SharePoint oder OneDrive auf " **jeder** " oder " **neue und vorhandene Gäste**" festgelegt ist. (Beachten Sie, dass die OneDrive-Einstellung nicht restriktiver als die SharePoint-Einstellung sein kann.)
+1. Klicken Sie im Microsoft 365 Admin Center im linken Navigationsbereich unter **Admin Center** auf **SharePoint**.
+2. Klicken Sie im SharePoint Admin Center im linken Navigationsbereich unter **Richtlinien** auf **Freigeben.**
+3. Stellen Sie sicher, dass die externe Freigabe für SharePoint oder OneDrive auf **Jeder** oder **Neue und vorhandene Gäste festgelegt ist.** (Beachten Sie, dass die OneDrive-Einstellung nicht zulässiger als die #A0 sein darf.)
 4. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
-## <a name="sharepoint-organization-level-default-link-settings"></a>Standard Link Einstellungen für SharePoint auf Organisationsebene
+## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint-Standardlinkeinstellungen auf Organisationsebene
 
-Die Standardeinstellungen für Datei-und Ordnerverknüpfung bestimmen die Verknüpfungsoption, die Benutzern standardmäßig angezeigt wird, wenn Sie eine Datei oder einen Ordner freigeben. Benutzer können den Verknüpfungstyp in eine der anderen Optionen vor der Freigabe ändern, falls gewünscht.
+Die Standardeinstellungen für die Datei- und -ordnerverknüpfung bestimmen die Verknüpfungsoption, die Benutzern standardmäßig angezeigt wird, wenn sie eine Datei oder einen Ordner freigeben. Benutzer können, wenn sie so möchten, die Verknüpfungsart vor der Freigabe in eine der anderen Optionen ändern.
 
-Beachten Sie, dass sich diese Einstellung auf SharePoint-Websites in Ihrer Organisation sowie auf OneDrive auswirkt.
+Beachten Sie, dass sich diese Einstellung sowohl auf #A0 in Ihrer Organisation als auch auf OneDrive auswirkt.
 
-Wählen Sie einen Link von einem der folgenden Typen aus, der dann standardmäßig ausgewählt wird, wenn Benutzer Dateien und Ordner freigeben:
+Wählen Sie einen Link aus einem der folgenden Typen aus, der dann standardmäßig ausgewählt wird, wenn Benutzer Dateien und Ordner freigeben:
 
-- **Jeder, der über den Link verfügt** – wählen Sie diese Option aus, wenn Sie eine Vielzahl von nicht authentifizierten Datei-und Ordner Freigaben erwarten. Wenn Sie *alle* Links zulassen möchten, jedoch über versehentliche nicht authentifizierte Freigaben besorgt sind, sollten Sie eine der anderen Optionen als Standard verwenden. Dieser Linktyp ist nur verfügbar, wenn Sie die Freigabe von **Benutzern** aktiviert haben.
-- **Nur Personen in Ihrer Organisation** – wählen Sie diese Option aus, wenn Sie davon ausgehen, dass die meisten Datei-und Ordner Freigaben für Personen in Ihrer Organisation gelten.
-- **Bestimmte Personen** – diese Option wird empfohlen, wenn Sie eine Vielzahl von Datei-und Ordner Freigaben für Gäste erwarten. Diese Art von Link funktioniert mit Gästen und erfordert die Authentifizierung.
+- **Jeder mit dem Link** – Wählen Sie diese Option aus, wenn Sie mit einer großen Anzahl nicht authentifizierter Dateien und Ordnerfreigaben rechnen. Wenn Sie *Jeder*-Links erlauben wollen, aber zufällige nicht authentifizierte Freigaben befürchten, erwägen Sie eine der anderen Optionen als Standard. Diese Verknüpfungsart ist nur verfügbar, wenn Sie die Freigabe auf **Jeder** aktiviert haben.
+- **Nur Personen in Ihrer Organisation** – Wählen Sie diese Option, wenn Sie erwarten, dass die meisten Freigaben von Dateien und Ordnern zwischen Personen innerhalb Ihrer Organisation stattfinden werden.
+- **Bestimmte Personen** – erwägen Sie diese Option, wenn Sie erwarten, dass Sie viele Dateien und Ordner an Gäste freigeben werden. Dieser Typ von Link arbeitet mit Gästen und erfordert deren Authentifizierung.
  
 ![Screenshot der Freigabeeinstellungen auf Organisationsebene für Dateien und Ordner in SharePoint und OneDrive](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
-So legen Sie die Standard Link Einstellungen für SharePoint und OneDrive auf Organisationsebene fest
+So legen Sie die Standardlinkeinstellungen für SharePoint und OneDrive auf Organisationsebene
 
-1. Navigieren Sie im SharePoint Admin Center zur Seite Freigabe.
-2. Wählen Sie unter **Datei-und Ordner Links** den standardmäßigen Freigabe Link aus, den Sie verwenden möchten.
+1. Navigieren Sie zur Seite „Freigabe“ im SharePoint Admin Center.
+2. Wählen Sie unter **Datei- und Ordnerlinks** den Link zur Standardfreigabe, den Sie verwenden möchten.
 3. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
-Klicken Sie zum Festlegen der Berechtigung für den Freigabe Link unter **Wählen Sie die Berechtigung aus, die standardmäßig für Freigabelinks ausgewählt ist.**
+Wenn Sie die Berechtigung für den Freigabelink festlegen möchten, wählen Sie unter Wählen Sie die Berechtigung aus, die standardmäßig für **Freigabelinks ausgewählt ist.**
 
-1. Wählen Sie **Ansicht** aus, wenn Sie nicht möchten, dass nicht authentifizierte Benutzer Änderungen an den Dateien und Ordnern vornehmen.
-2. Wählen Sie **Bearbeiten** aus, wenn Sie zulassen möchten, dass nicht authentifizierte Benutzer Änderungen an den Dateien und Ordnern vornehmen.
+1. Wählen **Sie Ansicht** aus, wenn nicht authentifizierte Benutzer keine Änderungen an den Dateien und Ordnern vornehmen möchten.
+2. Wählen **Sie Bearbeiten** aus, wenn nicht authentifizierte Benutzer Änderungen an den Dateien und Ordnern vornehmen möchten.
 
-Beachten Sie, dass die beiden obigen premission-Optionen nicht nur für Gäste/externe Benutzer, sondern auch für interne Benutzer angewendet werden können. Die von Ihnen gewählte Berechtigungsoption wird durch selbst Diskretion bestimmt.
+Beachten Sie, dass die oben genannten beiden Voraboptionen nicht nur für Gäste/externe Benutzer, sondern auch für interne Benutzer angewendet werden können. Die von Ihnen festgelegte Berechtigungsoption wird durch Selbstverwaltung bestimmt.
 
-So legen Sie Berechtigungen für Links fest, die die Freigabe für beliebige Personen zulassen
+So legen Sie Berechtigungen für Links fest, die die Freigabe für alle Personen zulassen
 
-1. Unter den **folgenden Links können diese Berechtigungen erteilt werden:** Unterbereich, 
-    1. In der Dropdownliste **Dateien** 
-        - Wählen Sie **anzeigen und bearbeiten** aus, wenn Sie zulassen möchten, dass nicht authentifizierte Benutzer Änderungen an den Dateien vornehmen können.
-        - Wählen Sie **Ansicht** aus, wenn Sie nicht möchten, dass nicht authentifizierte Benutzer Änderungen an den Dateien vornehmen.
-    2. In der Dropdownliste **Ordner**
-        - Wählen Sie **anzeigen, bearbeiten und hochladen** aus, wenn Sie zulassen möchten, dass nicht authentifizierte Benutzer Änderungen an den Ordnern vornehmen können.
-        - Wählen Sie **Ansicht** aus, wenn Sie nicht möchten, dass nicht authentifizierte Benutzer Änderungen an den Ordnern vornehmen.
+1. Geben Sie **unter Diese Links die folgenden Berechtigungen ein:** Unterbereich, 
+    1. In der **Dropdownliste** Dateien 
+        - Wählen **Sie Ansicht und Bearbeiten** aus, wenn nicht authentifizierte Benutzer Änderungen an den Dateien vornehmen möchten.
+        - Wählen **Sie Ansicht** aus, wenn nicht authentifizierte Benutzer keine Änderungen an den Dateien vornehmen möchten.
+    2. In **der Dropdownliste** Ordner
+        - Wählen **Sie Anzeigen, Bearbeiten und Hochladen aus,** wenn Nicht authentifizierte Benutzer Änderungen an den Ordnern vornehmen möchten.
+        - Wählen **Sie Ansicht** aus, wenn nicht authentifizierte Benutzer keine Änderungen an den Ordnern vornehmen möchten.
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint-Freigabeeinstellungen auf Websiteebene
 
@@ -119,19 +119,19 @@ Wenn Sie Dateien und Ordner in einer SharePoint-Website freigeben, müssen Sie a
 
 ![Screenshot der externen SharePoint-Freigabeeinstellungen](../media/sharepoint-site-external-sharing-settings.png)
 
-So legen Sie Freigabeeinstellungen auf Websiteebene fest
+So legt man Freigabeeinstellungen auf Websiteebene fest
 
-1. Erweitern Sie im SharePoint Admin Center im linken Navigationsbereich den Knoten **Websites** , und klicken Sie dann auf **aktive Standorte**.
-2. Wählen Sie die Website aus, für die Sie Dateien und Ordner für Gäste freigeben möchten.
-3. Scrollen Sie nach rechts in der Zeile (in der die ausgewählte Website vorhanden ist), und klicken Sie auf eine beliebige Stelle in der Spalte **externe Freigabe** .
-4. Klicken Sie auf der Seite, die sich öffnet, auf Registerkarte **Richtlinien** .
-5. Klicken Sie im Bereich **externe Freigabe** auf **Bearbeiten**.
-6. Stellen Sie sicher, dass die Freigabe auf " **jeder** " oder " **neue und vorhandene Gäste**" festgelegt ist.
+1. Erweitern Sie im SharePoint Admin Center links im Navigationsbereich **Websites** und klicken Sie auf **Aktive Websites**.
+2. Wählen Sie die Website aus, auf der Sie Dateien und Ordner für Gäste freigeben möchten.
+3. Scrollen Sie rechts über die Zeile (in der die ausgewählte Website vorhanden ist), und klicken Sie in der Spalte Externe **Freigabe auf eine beliebige** Stelle.
+4. Klicken Sie auf der angezeigten Seite auf **die Registerkarte** Richtlinien.
+5. Klicken Sie **im Bereich Externe** Freigabe auf **Bearbeiten**.
+6. Vergewissern Sie sich, dass die Freigabe auf **Jeder** oder **Neue und vorhandene Gäste** festgelegt ist.
 7. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
 ## <a name="invite-users"></a>Benutzer einladen
 
-Einstellungen für die Gast Freigabe sind jetzt konfiguriert; Damit können Benutzer nun Dateien und Ordner für Personen außerhalb Ihrer Organisation freigeben. Weitere Informationen finden Sie unter [Freigeben von OneDrive-Dateien und-Ordnern](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07) und Freigeben von [SharePoint-Dateien oder-Ordnern](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) .
+Die Einstellungen für die Gastfreigabe sind jetzt konfiguriert. Benutzer können nun Dateien und Ordner für Personen außerhalb Ihrer Organisation freigeben. Weitere Informationen finden Sie unter Freigeben von [#A0 und](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07) -Ordnern und Share [SharePoint-Dateien](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) oder -Ordnern.
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -139,4 +139,4 @@ Einstellungen für die Gast Freigabe sind jetzt konfiguriert; Damit können Benu
 
 [Einschränken des Risikos der versehentlichen Gefährdung von Dateien bei der Freigabe für Gäste](share-limit-accidental-exposure.md)
 
-[SharePoint-und OneDrive-Integration mit Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+[SharePoint- und OneDrive-Integration in Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)

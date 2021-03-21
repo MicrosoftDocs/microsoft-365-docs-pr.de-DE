@@ -22,16 +22,16 @@ description: Verwenden Sie Vertraulichkeitsbezeichnungen aus dem Microsoft Infor
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6cdf7a6b9e75b575abda2c93f7531c45d93a9a51
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 6c1f8b404ddcda45d782a6517880955a6199025d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838628"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919591"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informationen zu Vertraulichkeitsbezeichnungen
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Wenn Sie nach Informationen zu Vertraulichkeitsbezeichnungen suchen, die in Ihren Office-Anwendungen angezeigt werden, lesen Sie den Abschnitt [Vertraulichkeitsbezeichnungen auf Dateien und E-Mails in Office anwenden](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
@@ -49,9 +49,9 @@ Hier ein Beispiel zur Anzeige verfügbarer Vertraulichkeitsbezeichnungen aus der
 Um Vertraulichkeitsbezeichnungen anwenden zu können müssen die Benutzer mit ihrem Microsoft 365-Geschäfts-, -Schul- oder -Unikonto angemeldet sein.
 
 > [!NOTE]
-> Vertraulichkeitsbezeichnungen werden neu für Mandanten der US-Regierung (GCC und GCC-H) unterstützt. Weitere Informationen finden Sie in den Anmerkungen zu dieser Version von Microsoft 365 Apps for Enterprise, [Version 2101: 26. Januar](https://docs.microsoft.com/officeupdates/current-channel#version-2101-january-26).
+> Vertraulichkeitsbezeichnungen werden neu für Mandanten der US-Regierung (GCC und GCC-H) unterstützt. Weitere Informationen finden Sie in den Anmerkungen zu dieser Version von Microsoft 365 Apps for Enterprise, [Version 2101: 26. Januar](/officeupdates/current-channel#version-2101-january-26).
 >
-> Informationen zum Azure Information Protection-Client und -Scanner mit einheitlichen Bezeichnungen finden Sie unter [Azure Information Protection Premium – Dienstbeschreibung für Behörden](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
+> Informationen zum Azure Information Protection-Client und -Scanner mit einheitlichen Bezeichnungen finden Sie unter [Azure Information Protection Premium – Dienstbeschreibung für Behörden](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
 Sie können Vertraulichkeitsbezeichnungen zu Folgendem verwenden:
   
@@ -118,7 +118,7 @@ Nachdem eine Vertraulichkeitsbezeichnung auf eine E-Mail oder ein Dokument angew
     
     ![Auffordern zum Zuweisen einer erforderlichen Bezeichnung](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    Weitere Informationen zu den Einstellungen für die **automatische Anwendung von Bezeichnungen für Dateien und E-Mails** beim Erstellen oder Bearbeiten einer Vertraulichkeitsbezeichnung finden Sie unter [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md) für Office-Apps und [Automatisches Bezeichnen Ihrer Daten in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
+    Weitere Informationen zu den Einstellungen für die **automatische Anwendung von Bezeichnungen für Dateien und E-Mails** beim Erstellen oder Bearbeiten einer Vertraulichkeitsbezeichnung finden Sie unter [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md) für Office-Apps und [Automatisches Bezeichnen Ihrer Daten in Azure Purview](/azure/purview/create-sensitivity-label).
 
 ### <a name="label-scopes"></a>Bezeichnungsbereiche
 
@@ -134,7 +134,7 @@ Standardmäßig ist der Bereich **Dateien und E-Mails** immer ausgewählt. Die w
 
 - **Gruppen und Websites**: [Aktivieren von Vertraulichkeitsbezeichnungen für Container und Synchronisieren von Bezeichnungen](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **Azure Purview-Ressourcen (Vorschau)**: [Automatische Beschriftung Ihrer Inhalte in Azure Purview](https://go.microsoft.com/fwlink/?linkid=2148989)
+- **Azure Purview-Ressourcen (Vorschau)**: [Automatische Beschriftung Ihrer Inhalte in Azure Purview](/azure/purview/create-sensitivity-label)
 
 Wenn Sie die Standardeinstellungen so ändern, dass nicht alle Bereiche ausgewählt sind, sehen Sie die erste Seite der Konfigurationseinstellungen für nicht ausgewählte Bereiche, können aber die Einstellungen nicht konfigurieren. Wenn beispielsweise der Bereich für Dateien und E-Mails nicht ausgewählt ist, können Sie die Optionen auf der nächsten Seite nicht auswählen:
 
@@ -178,7 +178,7 @@ Im Gegensatz zu Aufbewahrungsbezeichnungen, die an Speicherorten wie allen Excha
 
 Wenn Sie eine Kennzeichnungsrichtlinie konfigurieren, können Sie:
 
-- **Entscheiden, welchen Benutzern und Gruppen die Bezeichnungen angezeigt werden.** Die Bezeichnungen können für jeden spezifischen Benutzer oder jede E-Mail-fähige Sicherheits-, Verteiler- oder Microsoft 365-Gruppe (die eine [dynamische Mitgliedschaft](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) in Azure AD haben kann) veröffentlicht werden.
+- **Entscheiden, welchen Benutzern und Gruppen die Bezeichnungen angezeigt werden.** Die Bezeichnungen können für jeden spezifischen Benutzer oder jede E-Mail-fähige Sicherheits-, Verteiler- oder Microsoft 365-Gruppe (die eine [dynamische Mitgliedschaft](/azure/active-directory/users-groups-roles/groups-create-rule) in Azure AD haben kann) veröffentlicht werden.
 
 - **Wenden Sie eine Standardbezeichnung** auf alle neuen Dokumente und unbeschrifteten E-Mails an, die von den in der Bezeichnungsrichtlinie enthaltenen Benutzern und Gruppen erstellt wurden, und dieselbe oder eine andere Standardbezeichnung für Container (wenn Sie [Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Sites aktiviert haben](sensitivity-labels-teams-groups-sites.md)). Mit dieser Einstellung wendet der Azure Information Protection-Client für einheitliche Bezeichnungen die Standardbezeichnung auf vorhandene Dokumente an, die nicht gekennzeichnet sind. Ein Benutzer kann die Standardbezeichnung immer ändern, wenn sie für sein Dokument oder seine E-Mail nicht die richtige Bezeichnung ist.
     
@@ -236,7 +236,7 @@ Wenn Sie Bezeichnungen mit Azure Information Protection bereitgestellt haben, ma
 > [!NOTE]
 > Die Unterstützung der Verwaltung von Azure Information Protection-Bezeichnungen im Azure-Portal wird ab dem **31. März 2021** eingestellt. Weitere Informationen finden Sie in der offiziellen [Benachrichtigung über die Einstellung](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
 
-Wenn Sie Azure Information Protection-Bezeichnungen verwenden, weil Ihr Mandant noch nicht auf der [vereinheitlichten Bezeichnungs-Plattform](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)ist, empfehlen wir, dass Sie das Erstellen von Vertraulichkeitsbezeichnungen vermeiden, bis Sie die einheitlichen Bezeichnungen aktiviert haben. In diesem Szenario sind die Bezeichnungen, die Sie im Azure-Portal sehen, Azure Information Protection-Bezeichnungen anstelle von Vertraulichkeitsbezeichnungen. Diese Bezeichnungen können vom Azure Information Protection-Client (Classic) auf Windows-Computern verwendet werden, aber nicht von Geräten, auf denen macOS, iOS oder Android ausgeführt wird. Um dieses Problem zu beheben, [überführen Sie diese Bezeichnungen](/azure/information-protection/configure-policy-migrate-labels) in Vertraulichkeitsbezeichnungen. 
+Wenn Sie Azure Information Protection-Bezeichnungen verwenden, weil Ihr Mandant noch nicht auf der [vereinheitlichten Bezeichnungs-Plattform](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)ist, empfehlen wir, dass Sie das Erstellen von Vertraulichkeitsbezeichnungen vermeiden, bis Sie die einheitlichen Bezeichnungen aktiviert haben. In diesem Szenario sind die Bezeichnungen, die Sie im Azure-Portal sehen, Azure Information Protection-Bezeichnungen anstelle von Vertraulichkeitsbezeichnungen. Diese Bezeichnungen können vom Azure Information Protection-Client (Classic) auf Windows-Computern verwendet werden, aber nicht von Geräten, auf denen macOS, iOS oder Android ausgeführt wird. Um dieses Problem zu beheben, [überführen Sie diese Bezeichnungen](/azure/information-protection/configure-policy-migrate-labels) in Vertraulichkeitsbezeichnungen. 
 
 Die Metadaten beider Bezeichnungstypen sind kompatibel, sodass Sie Dokumente und E-Mails nach Abschluss der Migration nicht erneut kennzeichnen müssen.
 
@@ -256,7 +256,7 @@ Auch wenn Sie integrierte Bezeichnungen in Office-Apps verwenden, können Sie au
 
 - PowerShell-Modul zum Auffinden vertraulicher Informationen in lokalen Dateien sowie Anwenden oder Entfernen von Bezeichnungen und Verschlüsselung für diese Dateien
 
-Wenn Sie noch nicht mit Azure Information Protection vertraut sind, oder wenn Sie ein vorhandener Azure Information Protection-Kunde sind und gerade Ihre Bezeichnungen migriert haben, finden Sie weitere Informationen unter [Auswählen des Bezeichnungsclients, der für Windows-Computer verwendet werden soll](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) in der Dokumentation über Azure Information Protection.
+Wenn Sie noch nicht mit Azure Information Protection vertraut sind, oder wenn Sie ein vorhandener Azure Information Protection-Kunde sind und gerade Ihre Bezeichnungen migriert haben, finden Sie weitere Informationen unter [Auswählen des Bezeichnungsclients, der für Windows-Computer verwendet werden soll](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) in der Dokumentation über Azure Information Protection.
 
 ## <a name="sensitivity-labels-and-microsoft-cloud-app-security"></a>Vertraulichkeitsbezeichnungen und Microsoft Cloud App Security
 
@@ -268,11 +268,11 @@ Cloud App Security arbeitet sowohl mit Azure Information Protection-Bezeichnunge
 
 - Wenn die Bezeichnungs-Admin Center über keine veröffentlichten Vertraulichkeitsbezeichnungen verfügen: Es werden Azure Information Protection-Bezeichnungen verwendet.
 
-Eine Anleitung, wie Sie Cloud App Security mit diesen Bezeichnungen verwenden können, finden Sie unter [Azure Information Protection-Integration](https://docs.microsoft.com/cloud-app-security/azip-integration).
+Eine Anleitung, wie Sie Cloud App Security mit diesen Bezeichnungen verwenden können, finden Sie unter [Azure Information Protection-Integration](/cloud-app-security/azip-integration).
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>Vertraulichkeitsbezeichnungen und der Microsoft Information Protection SDK
 
-Da eine Vertraulichkeitsbezeichnung in den Metadaten eines Dokuments als Klartext gespeichert wird, können Apps und Dienste von Drittanbietern diese Bezeichnungsmetadaten lesen und in diese schreiben, um die Bereitstellung Ihrer Bezeichnungen zu ergänzen. Darüber hinaus können Softwareentwickler das [Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk) verwenden, um die Bezeichnungs- und Verschlüsselungsfunktionen auf mehreren Plattformen vollständig zu unterstützen. Weitere Informationen hierzu finden Sie in der [Ankündigung der allgemeinen Verfügbarkeit im Blog der Tech-Community](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). 
+Da eine Vertraulichkeitsbezeichnung in den Metadaten eines Dokuments als Klartext gespeichert wird, können Apps und Dienste von Drittanbietern diese Bezeichnungsmetadaten lesen und in diese schreiben, um die Bereitstellung Ihrer Bezeichnungen zu ergänzen. Darüber hinaus können Softwareentwickler das [Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk) verwenden, um die Bezeichnungs- und Verschlüsselungsfunktionen auf mehreren Plattformen vollständig zu unterstützen. Weitere Informationen hierzu finden Sie in der [Ankündigung der allgemeinen Verfügbarkeit im Blog der Tech-Community](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). 
 
 Außerdem erfahren Sie mehr über [Partnerlösungen, die in Microsoft Information Protection integriert sind](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657).
 

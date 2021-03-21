@@ -16,19 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch Dateien und E-Mails zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 4eeedca64d1b2244355bb3e0e233969bdd02810c
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: d645d185524d111af4eafed4b5fba06483525a85
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461890"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920075"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Informationen zur automatischen Anwendung einer Vertraulichkeitsbezeichnung in Azure Purview (Vorschau) finden Sie unter [Automatische Beschriftung Ihrer Inhalte in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
+> Informationen zur automatischen Anwendung einer Vertraulichkeitsbezeichnung in Azure Purview (Vorschau) finden Sie unter [Automatische Beschriftung Ihrer Inhalte in Azure Purview](/azure/purview/create-sensitivity-label).
 
 Wenn Sie ein Empfindlichkeitsetikett erstellen, können Sie dieses Etikett automatisch Dateien und E-Mails zuweisen, wenn es den von Ihnen angegebenen Bedingungen entspricht.
 
@@ -64,7 +64,7 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
     - Maximal 25.000 automatisch bezeichnete Dateien in Ihrem Mandanten pro Tag.
     - Maximal 10 Richtlinien zum automatischen Bezeichnen pro Mandant, die für jeweils bis zu 10 Websites (SharePoint oder OneDrive) vorgesehen sind.
     - Bestehende Werte für "Geändert", "Geändert von" und das Datum werden nicht aufgrund von automatischen Bezeichnungsrichtlinien geändert – sowohl für den Simulationsmodus als auch für den Zeitpunkt, zu dem Beschriftungen angewendet werden.
-    - Wenn das Etikett die Verschlüsselung anwendet, ist der [Rechteverwaltungaussteller und Rechteverwaltungbesitzer](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) das Konto, welches die Datei zuletzt geändert hat.
+    - Wenn das Etikett die Verschlüsselung anwendet, ist der [Rechteverwaltungaussteller und Rechteverwaltungbesitzer](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) das Konto, welches die Datei zuletzt geändert hat.
 
     Spezifisch für die automatische Bezeichnung für Exchange gilt:
     - Im Gegensatz zur manuellen oder automatischen Bezeichnung von Office-Apps werden Office-Anlagen (Word-, Excel- und PowerPoint-Dateien) ebenfalls auf die Bedingungen überprüft, die Sie in der Richtlinie zur automatischen Bezeichnung angeben. Wenn es eine Übereinstimmung gibt, wird die E-Mail-Adresse, aber nicht die Anlage bezeichnet.
@@ -72,7 +72,7 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
     - Wenn Sie über Exchange-Mailflussregeln oder DLP-Richtlinien (Verhinderung von Datenverlust) verfügen, welche die IRM-Verschlüsselung anwenden: Wenn Inhalte durch diese Regeln oder Richtlinien und eine Richtlinie zum automatischen Bezeichnen identifiziert werden, wird die Bezeichnung angewendet. Wenn diese Bezeichnung Verschlüsselung anwendet, werden die IRM-Einstellungen aus den Exchange-E-Mail-Flussregeln oder DLP-Richtlinien ignoriert. Wenn diese Bezeichnung jedoch keine Verschlüsselung anwendet, werden die IRM-Einstellungen aus den E-Mail-Flussregeln oder DLP-Richtlinien zusätzlich zu der Bezeichnung angewendet.
     - E-Mails, die eine IRM-Verschlüsselung ohne Bezeichnung haben, werden durch eine Bezeichnung mit beliebigen Verschlüsselungseinstellungen ersetzt, wenn eine Übereinstimmung durch die Verwendung automatischer Bezeichnung vorliegt.
     - Eingehende E-Mails werden bezeichnet, wenn eine Übereinstimmung mit den Bedingungen für die automatische Bezeichnung vorliegt. Wenn die Bezeichnung für die Verschlüsselung konfiguriert ist, wird diese Verschlüsselung jedoch nicht angewendet.
-    - Wenn über die Bezeichnung Verschlüsselung angewendet wird, ist der [Rights Management-Aussteller und -Besitzer](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) jene Person, die diese E-Mail versendet.
+    - Wenn über die Bezeichnung Verschlüsselung angewendet wird, ist der [Rights Management-Aussteller und -Besitzer](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) jene Person, die diese E-Mail versendet.
     
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Vergleichen Sie das automatische Bezeichnen für Office-Anwendungen mit den Richtlinien für das automatische Bezeichnen
@@ -151,7 +151,7 @@ Weitere Informationen über diese Klassifizierer finden Sie unter [Erfahren Sie 
 
 Während der Vorschauphase für diese Option unterstützen die folgenden Apps trainierbare Klassifizierungen für Vertraulichkeitsbezeichnungen:
 
-- Microsoft 365-Apps for Enterprise ([vormals Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) für Windows, die jetzt im [Aktuellen Kanal](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) in Version 2006 und höher bereitgestellt werden:
+- Microsoft 365-Apps for Enterprise ([vormals Office 365 ProPlus](/deployoffice/name-change)) für Windows, die jetzt im [Aktuellen Kanal](/deployoffice/overview-update-channels#current-channel-overview) in Version 2006 und höher bereitgestellt werden:
     - Word
     - Excel
     - PowerPoint
@@ -192,7 +192,7 @@ Spezifisch für Azure Information Protection-Clients mit einheitlichen Bezeichnu
 
 -  Automatische und empfohlene Bezeichnungen gelten für Word, Excel und PowerPoint beim Speichern eines Dokuments, und für Outlook beim Senden einer E-Mail.
 
-- Damit Outlook die empfohlenen Bezeichnungen unterstützt, müssen Sie zunächst eine [erweiterte Richtlinieneinstellung](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-recommended-classification-in-outlook) konfigurieren.
+- Damit Outlook die empfohlenen Bezeichnungen unterstützt, müssen Sie zunächst eine [erweiterte Richtlinieneinstellung](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-recommended-classification-in-outlook) konfigurieren.
 
 - Vertrauliche Informationen können im Text von Dokumenten und E-Mails sowie in Kopf- und Fußzeilen, aber nicht in der Betreffzeile oder E-Mail-Anlagen erkannt werden.
 
@@ -272,7 +272,7 @@ Schließlich können Sie den Simulationsmodus verwenden, um einen Näherungswert
     
     Beispielsweise bei einem Benutzer im Mandanten „Contoso“, der den Benutzernamen „rsimone“ hat: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
     
-    Informationen zum Überprüfen der Syntax für Ihren Mandanten und zum Identifizieren von URLs für Benutzer finden Sie unter [Abrufen einer Liste aller Benutzer OneDrive-URLs in Ihrer Organisation](https://docs.microsoft.com/onedrive/list-onedrive-urls).
+    Informationen zum Überprüfen der Syntax für Ihren Mandanten und zum Identifizieren von URLs für Benutzer finden Sie unter [Abrufen einer Liste aller Benutzer OneDrive-URLs in Ihrer Organisation](/onedrive/list-onedrive-urls).
 
 7. Für die Seite **Allgemeine oder erweiterte Regeln einrichten**: Behalten Sie die Standardeinstellung **Allgemeine Regeln** bei, um Regeln zu definieren, mit denen zu bezeichnende Inhalte für alle ausgewählten Speicherorte identifiziert werden. Wenn Sie pro Speicherort unterschiedliche Regeln benötigen, wählen Sie **Erweiterte Regeln** aus. Wählen Sie dann **Weiter** aus.
     
@@ -326,9 +326,9 @@ Sie können die Ergebnisse der Richtlinie für die automatische Bezeichnung auch
 
 ### <a name="use-powershell-for-auto-labeling-policies"></a>PowerShell für automatische Bezeichnungsrichtlinien verwenden
 
-Sie können [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell) verwenden, um automatische Bezeichnungsrichtlinien zu erstellen und zu konfigurieren. Dies bedeutet, dass Sie das Erstellen und Verwalten Ihrer automatischen Bezeichnungsrichtlinien vollständig mithilfe von Skripts durchführen können, was auch eine effizientere Methode zum Angeben mehrerer URLs für OneDrive-und SharePoint-Speicherorte darstellt.
+Sie können [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell) verwenden, um automatische Bezeichnungsrichtlinien zu erstellen und zu konfigurieren. Dies bedeutet, dass Sie das Erstellen und Verwalten Ihrer automatischen Bezeichnungsrichtlinien vollständig mithilfe von Skripts durchführen können, was auch eine effizientere Methode zum Angeben mehrerer URLs für OneDrive-und SharePoint-Speicherorte darstellt.
 
-Bevor Sie die Befehle in PowerShell ausführen, müssen Sie zunächst [eine Verbindung zu Security & Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+Bevor Sie die Befehle in PowerShell ausführen, müssen Sie zunächst [eine Verbindung zu Security & Compliance Center PowerShell herstellen](/powershell/exchange/connect-to-scc-powershell).
 
 So erstellen Sie eine neue automatische Bezeichnungsrichtlinie: 
 
@@ -356,10 +356,10 @@ Bei einer vorhandenen automatischen Bezeichnungsrichtlinie wird mit diesem Befeh
 
 Weitere Informationen zu den PowerShell-Cmdlets, die automatische Bezeichnungsrichtlinien unterstützen, deren verfügbare Parameter sowie einige Beispiele finden Sie in der folgenden Cmdlet-Hilfe:
 
-- [Get-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/get-autosensitivitylabelpolicy)
-- [New-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-autosensitivitylabelpolicy)
-- [New-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/new-autosensitivitylabelrule)
-- [Remove-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-autosensitivitylabelpolicy)
-- [Remove-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/remove-autosensitivitylabelrule)
-- [Set-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelpolicy)
-- [Set-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelrule)
+- [Get-AutoSensitivityLabelPolicy](/powershell/module/exchange/get-autosensitivitylabelpolicy)
+- [New-AutoSensitivityLabelPolicy](/powershell/module/exchange/new-autosensitivitylabelpolicy)
+- [New-AutoSensitivityLabelRule](/powershell/module/exchange/new-autosensitivitylabelrule)
+- [Remove-AutoSensitivityLabelPolicy](/powershell/module/exchange/remove-autosensitivitylabelpolicy)
+- [Remove-AutoSensitivityLabelRule](/powershell/module/exchange/remove-autosensitivitylabelrule)
+- [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
+- [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)

@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bbb3814a973bec53a877bc70d0299ce7b2eb87b5
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: f3e4b434f1ca267d5bbfbc7e67cb20c7e2b9dbbb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727553"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920564"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Archivierte Microsoft Managed Desktop-Geräte
 
@@ -75,7 +75,7 @@ Darüber hinaus muss das Gerät auch:
 
 - Verfügen Sie über ein von Microsoft Managed Desktop genehmigtes Bild. Wenn Sie Geräte bestellen, stellen Sie sicher, dass sie mit Microsoft Managed Desktop verwendet werden.
 - Die Windows-Erstlauferfahrung wurde noch nicht abgeschlossen.
-- Registrieren bei Microsoft Managed Desktop mithilfe des [Geräteregistrierungsfeatures](https://aka.ms/mmddrhelp)
+- Registrieren bei Microsoft Managed Desktop mithilfe des [Geräteregistrierungsfeatures](../get-started/register-devices-self.md)
 
 #### <a name="more-help"></a>Weitere Hilfe
 

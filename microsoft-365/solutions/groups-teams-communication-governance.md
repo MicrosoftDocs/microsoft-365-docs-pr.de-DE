@@ -1,5 +1,5 @@
 ---
-title: Kommunikation-Steuerung für Zusammenarbeitsszenarien
+title: Kommunikationssteuerung für Szenarien für die Zusammenarbeit
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,64 +14,64 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Hier finden Sie Informationen zu Szenarien für die Kommunikations Steuerungs Zusammenarbeit.
-ms.openlocfilehash: 4b60f0be3cde23330880d652bc62110cf4e55175
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: Erfahren Sie mehr über Kommunikations-Governance-Zusammenarbeitsszenarien.
+ms.openlocfilehash: 5386b127ead11f27dad94207383b7a5afddfde6f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613678"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920904"
 ---
-# <a name="communications-governance-for-collaboration-scenarios"></a>Kommunikation-Steuerung für Zusammenarbeitsszenarien
+# <a name="communications-governance-for-collaboration-scenarios"></a>Kommunikationssteuerung für Szenarien für die Zusammenarbeit
 
-Microsoft 365 bietet eine Reihe von Steuerelementen, mit denen Sie die Kommunikation in Ihrer Organisation steuern können, einschließlich der Einstellungen für Messaging und Besprechungen. Überprüfen Sie diese Optionen, und überprüfen Sie, wie Sie Ihre geschäftlichen Anforderungen, die Vertraulichkeit Ihrer Daten und den Umfang der Personen abbilden, mit denen Ihre Benutzer zusammenarbeiten müssen.
+Microsoft 365 bietet eine Reihe von Steuerelementen, mit denen Sie die Kommunikation in Ihrer Organisation steuern können, einschließlich Messaging- und Besprechungseinstellungen. Überprüfen Sie diese Optionen, und überlegen Sie, wie sie Ihren Geschäftlichen Anforderungen, der Vertraulichkeit Ihrer Daten und dem Umfang der Personen entsprechen, mit der Ihre Benutzer zusammenarbeiten müssen.
 
-Die folgende Tabelle enthält eine Kurzübersicht über die in Microsoft 365 verfügbaren kommunikationssteuer Elemente. Weitere Informationen finden Sie in den folgenden Abschnitten.
+Die folgende Tabelle enthält eine Kurzübersicht zu den in Microsoft 365 verfügbaren Kommunikationssteuerelementen. Weitere Informationen finden Sie in den folgenden Abschnitten.
 
 |Kategorie|Beschreibung|Referenz|
 |:-------|:----------|:--------|
 |Messaging |||
-||Verwalten der Aktionen, die Benutzer während der Nachrichtenübermittlung in Microsoft Teams ausführen können|[Verwalten von Messaging-Richtlinien in Teams](https://docs.microsoft.com/microsoftteams/messaging-policies-in-teams)|
-||Steuern, wer auf Beiträge in einem Kanal starten und Antworten kann.|[Einrichten und Verwalten der Kanal Moderation in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-channel-moderation-in-teams)|
+||Verwalten, was Benutzer beim Messaging in Teams tun können.|[Verwalten von Messaging-Richtlinien in Teams](/microsoftteams/messaging-policies-in-teams)|
+||Steuern, wer Beiträge in einem Kanal starten und beantworten kann.|[Einrichten und Verwalten der Kanalmoderation in Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)|
 |Besprechungen|||
-||Verwalten Sie, was Besprechungsteilnehmer tun können.|[Verwalten von Besprechungsrichtlinien in Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams)|
-||Zulassen oder verhindern, dass anonyme Benutzer Besprechungen beitreten.|[Zulassen, dass anonyme Benutzer an Besprechungen teilnehmen](https://docs.microsoft.com/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)|
+||Verwalten, was Besprechungsteilnehmer tun können.|[Verwalten von Besprechungsrichtlinien in Teams](/microsoftteams/meeting-policies-in-teams)|
+||Zulassen oder Verhindern, dass anonyme Benutzer an Besprechungen teilnehmen.|[Zulassen, dass anonyme Benutzer an Besprechungen teilnehmen](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)|
 |Kommunikationscompliance|||
-||Oberfläche und auf sorglose und fahrlässige Kommunikation reagieren|[Kommunikations Kompatibilität in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance)|
+||Oberfläche und Reaktion auf nachlässige und nachlässige Kommunikation|[Kommunikationskonformität in Microsoft 365](../compliance/communication-compliance.md)|
 
 ## <a name="messaging"></a>Messaging 
 
-Sie können steuern, welche Chat-und Kanal-Messaging-Funktionen wie das Bearbeiten oder Löschen von Nachrichten für Benutzer in Microsoft Teams mithilfe von Messagingrichtlinien zur Verfügung stehen. Sie können unterschiedliche Richtlinien für verschiedene Benutzer und Gruppen erstellen.
+Sie können steuern, welche Chat- und Kanalnachrichtenfeatures - z. B. Bearbeiten oder Löschen von Nachrichten - benutzern in Microsoft Teams mithilfe von Messagingrichtlinien zur Verfügung stehen. Sie können unterschiedliche Richtlinien für verschiedene Benutzer und Gruppen erstellen.
 
-[Verwalten von Messaging-Richtlinien in Teams](https://docs.microsoft.com/microsoftteams/messaging-policies-in-teams)
+[Verwalten von Messaging-Richtlinien in Teams](/microsoftteams/messaging-policies-in-teams)
 
-Sie können steuern, wer neue Beiträge starten und auf Beiträge in einem Teams-Kanal Antworten kann, indem Sie die Kanal Moderation konfigurieren.
+Sie können steuern, wer neue Beiträge starten und auf Beiträge in einem Teams-Kanal antworten kann, indem Sie die Kanalmoderation konfigurieren.
 
-[Einrichten und Verwalten der Kanal Moderation in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-channel-moderation-in-teams)
+[Einrichten und Verwalten der Kanalmoderation in Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)
 
 ## <a name="meetings"></a>Besprechungen
 
-Sie können steuern, welche Funktionen für Microsoft Teams-Besprechungsteilnehmer zur Verfügung stehen, einschließlich Planung, Inhaltsfreigabe, Teilnehmern und Audio-und Video Richtlinien.
+Sie können die Features steuern, die für Teams-Besprechungsteilnehmer verfügbar sind, einschließlich Planung, Inhaltsfreigabe, Teilnehmern sowie Audio- und Videorichtlinien.
 
-[Verwalten von Besprechungsrichtlinien in Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams)
+[Verwalten von Besprechungsrichtlinien in Teams](/microsoftteams/meeting-policies-in-teams)
 
-Sie können den anonymen Join für Teams-Besprechungen steuern, sodass jeder, der über einen Link zu der Besprechung verfügt, beitreten kann.
+Sie können den anonymen Beitritt für Teams-Besprechungen steuern, wodurch jeder mit einem Link zur Besprechung teilnehmen kann.
 
-[Zulassen, dass anonyme Benutzer an Besprechungen teilnehmen](https://docs.microsoft.com/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)
+[Zulassen, dass anonyme Benutzer an Besprechungen teilnehmen](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)
 
 
 ## <a name="communication-compliance"></a>Kommunikationscompliance
 
-Communication Compliance in Microsoft 365 ermöglicht Ihnen die Untersuchung der Kommunikation für anstößige Sprache, vertrauliche Informationen und Informationen im Zusammenhang mit internen und regulatorischen Standards. Chat Nachrichten, Postfächer und Jammer Meldungen können alle überwacht werden, wodurch Warnungen generiert werden. Mit Verwaltungstools können Sie Nachrichten mit Richtlinien Übereinstimmungen schnell identifizieren und Aktionen ausführen.
+Mit der Kommunikationskonformität in Microsoft 365 können Sie die Kommunikation auf anstößige Sprache, vertrauliche Informationen und Informationen im Zusammenhang mit internen und behördlichen Standards untersuchen. Chatkommunikation, Postfächer und Yammer können alle überwacht werden und generieren Warnungen. Mit Verwaltungstools können Sie Nachrichten mit Richtlinien übereinstimmungen schnell identifizieren und Maßnahmen ergreifen.
 
-[Kommunikations Kompatibilität in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance)
+[Kommunikationskonformität in Microsoft 365](../compliance/communication-compliance.md)
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Planung der Collaboration-Steuerung Schritt für Schritt](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Schritt-für-Schritt-Planung für die Zusammenarbeitsgovernance](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Erstellen eines Steuerungsplans für die Zusammenarbeit](collaboration-governance-first.md)
+[Erstellen eines Plans für die Zusammenarbeitsgovernance](collaboration-governance-first.md)
 
-[Verwalten von Microsoft Teams-Einstellungen für Ihre Organisation](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
+[Verwalten von Microsoft Teams-Einstellungen für Ihre Organisation](/microsoftteams/enable-features-office-365)
 
-[Verwalten der Yammer-Datencompliance](https://docs.microsoft.com/yammer/manage-security-and-compliance/manage-data-compliance)
+[Verwalten der Yammer-Datencompliance](/yammer/manage-security-and-compliance/manage-data-compliance)

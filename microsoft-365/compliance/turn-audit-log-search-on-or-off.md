@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Aktivieren oder Deaktivieren des Überwachungsprotokollsuchfeatures im Security & Compliance Center, um die Möglichkeit von Administratoren zum Durchsuchen des Überwachungsprotokolls zu aktivieren oder zu deaktivieren.
-ms.openlocfilehash: 3f3e1b913dd163e74f9e5359de772dfcbf3bd786
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: aecd1d47592b9a5e2f134b1d9db9ff203b815b18
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423676"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919281"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>Aktivieren oder Deaktivieren der Überwachungsprotokollsuche
 
@@ -41,7 +41,7 @@ Die Überwachungsprotokollierung ist für Microsoft 365- und Office 365 Enterpri
     > [!NOTE]
     > Benutzern müssen berechtigungen in Exchange Online zugewiesen werden, um die Überwachungsprotokollsuche ein- oder auszuschalten. Wenn Sie Benutzern die Rolle  Überwachungsprotokolle auf der Seite Berechtigungen im Security & Compliance Center zuweisen, können sie die Überwachungsprotokollsuche nicht aktivieren oder deaktivieren. Dies liegt daran, dass das zugrunde liegende Cmdlet ein Exchange Online PowerShell-Cmdlet ist. 
     
-- Schrittweise Anweisungen zum Durchsuchen des Überwachungsprotokolls finden Sie unter Durchsuchen des Überwachungsprotokolls im [Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md). Weitere Informationen zur Microsoft 365-Verwaltungsaktivitäts-API finden Sie unter [Erste Schritte mit Microsoft 365-Verwaltungs-APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
+- Schrittweise Anweisungen zum Durchsuchen des Überwachungsprotokolls finden Sie unter Durchsuchen des Überwachungsprotokolls im [Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md). Weitere Informationen zur Microsoft 365-Verwaltungsaktivitäts-API finden Sie unter [Erste Schritte mit Microsoft 365-Verwaltungs-APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 - Zur Überprüfung, dass die Überwachungsprotokollsuche aktiviert ist, können Sie den folgenden Befehl in der Exchange Online-PowerShell ausführen:
 
@@ -71,7 +71,7 @@ Wenn die Überwachungsprotokollsuche für Ihre Organisation nicht aktiviert ist,
 
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>Aktivieren der Überwachungsprotokollsuche mithilfe von PowerShell
 
-1. [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Führen Sie den folgenden PowerShell-Befehl aus, um die Überwachungsprotokollsuche in Office 365 zu aktivieren.
 
@@ -85,7 +85,7 @@ Wenn die Überwachungsprotokollsuche für Ihre Organisation nicht aktiviert ist,
 
 Sie müssen Exchange Online PowerShell verwenden, um die Überwachungsprotokollsuche zu deaktivieren.
   
-1. [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Führen Sie den folgenden PowerShell-Befehl aus, um die Überwachungsprotokollsuche zu deaktivieren.
 

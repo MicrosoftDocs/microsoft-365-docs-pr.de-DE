@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Erfahren Sie, wie Sie den Office 365-IP-Adress- und URL-Webdienst nutzen können, um den Netzwerkverkehr von Office 365 besser zu identifizieren und zu differenzieren.
-ms.openlocfilehash: 03e6eac86e66db6f9e94c3f98e6d7b565ffa0f14
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 1948491e1d3db724e7b7b6a5275234acab4be08a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456459"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918954"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365-IP-Adress- und -URL-Webdienst
 
@@ -66,7 +66,7 @@ Diese Parameter gelten für sämtliche Webdienstmethoden:
 - **format=<JSON | CSV>** – standardmäßig ist die zurückgegebene Datei als JSON formatiert. Verwenden Sie diesen optionalen Parameter, um die Daten in durch Trennzeichen getrennten Werten (CSV-Format) zurückzuerhalten.
 - **ClientRequestId=\<guid>** – eine erforderliche GUID, die Sie für die Clientzuordnung generieren. Generieren Sie eine eindeutige GUID für jeden Computer, von dem der Webdienst aufgerufen wird (die auf dieser Seite enthaltenen Skripts generieren eine GUID für Sie). Nutzen Sie nicht die in den folgenden Beispielen dargestellten GUIDs, da sie künftig durch den Webdienst blockiert werden könnten. Das GUID-Format ist _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, wobei x eine hexadezimale Zahl darstellt.
 
-  Wenn Sie eine GUID generieren möchten, können Sie den PowerShell-Befehl [New-Guid](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) verwenden oder einen Onlinedienst wie den [Online GUID Generator](https://www.guidgenerator.com/) nutzen.
+  Wenn Sie eine GUID generieren möchten, können Sie den PowerShell-Befehl [New-Guid](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) verwenden oder einen Onlinedienst wie den [Online GUID Generator](https://www.guidgenerator.com/) nutzen.
 
 ## <a name="version-web-method"></a>Versionswebmethode
 
@@ -180,7 +180,7 @@ Die Endpunktwebmethode gibt alle Datensätze für IP-Adressbereiche und URLs zur
 
 Parameter für die Endpunktwebmethode sind:
 
-- **ServiceAreas=<Common | Exchange | SharePoint | Skype>** – eine durch Trennzeichen getrennte Liste von Dienstbereichen. Gültige Elemente sind_Common_, _Exchange_, _SharePoint_ und _Skype_. Da _Common_-Dienstbereich-Elemente Voraussetzung für alle anderen Dienstbereiche sind, bezieht der Webdienst sie stets mit ein. Wenn Sie diesen Parameter nicht miteinschließen, werden alle Dienstbereiche zurückgegeben.
+- **ServiceAreas=<Common | Exchange | SharePoint | Skype>** – eine durch Trennzeichen getrennte Liste von Dienstbereichen. Gültige Elemente sind _Common_, _Exchange_, _SharePoint_ und _Skype_. Da _Common_-Dienstbereich-Elemente Voraussetzung für alle anderen Dienstbereiche sind, bezieht der Webdienst sie stets mit ein. Wenn Sie diesen Parameter nicht miteinschließen, werden alle Dienstbereiche zurückgegeben.
 - **TenantName=<tenant_name>** – Ihr Office 365-Mandantenname. Der Webdienst übernimmt Ihren angegebenen Namen und fügt ihn in URL-Teile ein, die den Mandantennamen enthalten. Wenn Sie keinen Mandantennamen angeben, haben diese URL-Teile das Platzhalterzeichen (\*).
 - **NoIPv6=<true | false>** – legen Sie für diesen Wert _true_ fest, um IPv6-Adressen von der Ausgabe auszuschließen, wenn Sie IPv6 nicht in Ihrem Netzwerk verwenden.
 - **Instance=<Weltweit | China | Deutschland | USGovDoD | USGovGCCHigh>** – dieser erforderliche Parameter gibt die Instanz an, von der die Endpunkte zurückgegeben werden sollen. Gültige Instanzen sind: _Weltweit_, _China_, _Deutschland_, _USGovDoD_ und _USGovGCCHigh_.
@@ -607,7 +607,7 @@ Sie können einige unterschiedliche Methoden nutzen, um E-Mail-Benachrichtigunge
 
 - Wenn Sie eine Microsoft Flow-Lösung verwenden möchten, lesen Sie [Verwenden von Microsoft Flow, um eine E-Mail wegen Änderungen an Office 365-IP-Adressen und -URLs zu erhalten](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 - Um eine Azure Logic App mithilfe einer ARM-Vorlage bereitzustellen, lesen Sie [Office 365-Updatebenachrichtigung (v1.1)](https://aka.ms/ipurlws-updates-template).
-- Wenn Sie Ihr eigenes Benachrichtigungsskript mithilfe von PowerShell schreiben möchten, lesen Sie [Send-MailMessage](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/send-mailmessage).
+- Wenn Sie Ihr eigenes Benachrichtigungsskript mithilfe von PowerShell schreiben möchten, lesen Sie [Send-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage).
 
 ## <a name="exporting-a-proxy-pac-file"></a>Exportieren einer Proxy-PAC-Datei
 

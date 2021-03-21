@@ -19,12 +19,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Erfahren Sie mehr über die Optionen zum Einschränken oder Deaktivieren der Freigabe in Microsoft 365.
-ms.openlocfilehash: 388d354886805f593b1c7815f16d1e0156e12fe0
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 46cef1aac6d3387366a5e8ce9f9c1129f6c83e61
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233530"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920204"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Einschränken der Freigabe in Microsoft 365
 
@@ -45,9 +45,9 @@ Die Methoden zum Freigeben von Dateien sind in der nachstehenden Tabelle aufgef�
 
 Sie können auch die Bedingungen einschränken, unter denen Personen auf freigegebene Inhalte zugreifen dürfen. Weitere Informationen hierzu finden Sie unter [bedingter Zugriff](#conditional-access) weiter unten in diesem Artikel.
 
-Sie können die Freigabe in Ihrer Organisation zwar mit den in diesem Artikel beschriebenen Administratorsteuerelemente einschränken, wir empfehlen Ihnen aber dringend, die in Microsoft 365 verfügbaren Sicherheits- und Compliancefeatures zu verwenden, um eine sichere Freigabeumgebung zu schaffen. Weitere Informationen finden Sie unter [Zusammenarbeit an Dateien in SharePoint mit Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration) und [Teams mit Sicherheitsisolation konfigurieren](secure-teams-security-isolation.md).
+Sie können die Freigabe in Ihrer Organisation zwar mit den in diesem Artikel beschriebenen Administratorsteuerelemente einschränken, wir empfehlen Ihnen aber dringend, die in Microsoft 365 verfügbaren Sicherheits- und Compliancefeatures zu verwenden, um eine sichere Freigabeumgebung zu schaffen. Weitere Informationen finden Sie unter [Zusammenarbeit an Dateien in SharePoint mit Microsoft 365](/sharepoint/deploy-file-collaboration) und [Teams mit Sicherheitsisolation konfigurieren](secure-teams-security-isolation.md).
 
-Um zu verstehen, wie die Freigabe in Ihrer Organisation verwendet wird, [führen Sie einen Bericht über die Datei- und Ordnerfreigabe aus](https://docs.microsoft.com/sharepoint/sharing-reports).
+Um zu verstehen, wie die Freigabe in Ihrer Organisation verwendet wird, [führen Sie einen Bericht über die Datei- und Ordnerfreigabe aus](/sharepoint/sharing-reports).
 
 ## <a name="microsoft-365-group-or-team"></a>Microsoft 365-Gruppe oder -Team
 
@@ -73,9 +73,9 @@ So deaktivieren Sie die Gastfreigabe in Microsoft 365-Gruppen
     ![Screenshot der Freigabeeinstellungen für Microsoft 365-Gruppen im Microsoft 365 Admin Center](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
-> Wenn Sie die Gastfreigabe für eine bestimmte Gruppe oder ein bestimmtes Team verhindern möchten, können Sie dies mithilfe von [Microsoft PowerShell](per-group-guest-access.md) oder [Vertraulichkeitsbezeichnungen](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) tun.
+> Wenn Sie die Gastfreigabe für eine bestimmte Gruppe oder ein bestimmtes Team verhindern möchten, können Sie dies mithilfe von [Microsoft PowerShell](per-group-guest-access.md) oder [Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels-teams-groups-sites.md) tun.
 
-Sie können die Gastfreigabe auf Benutzer aus bestimmten Domänen beschränken, indem Sie Domänen in Azure Active Directory zulassen oder blockieren. Dies wirkt sich auch auf die Gastfreigabe in SharePoint aus, wenn Sie die [SharePoint- und OneDrive-Integration mit Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) aktiviert haben.
+Sie können die Gastfreigabe auf Benutzer aus bestimmten Domänen beschränken, indem Sie Domänen in Azure Active Directory zulassen oder blockieren. Dies wirkt sich auch auf die Gastfreigabe in SharePoint aus, wenn Sie die [SharePoint- und OneDrive-Integration mit Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) aktiviert haben.
 
 So erlauben Sie Freigabeeinladungen nur aus bestimmten Domänen
 1. Klicken Sie in Azure Active Directory auf der Seite Übersicht auf **Organisationsbeziehungen**.
@@ -118,11 +118,11 @@ So beschränken Sie die Freigabe von Websites auf Domänen
 
 ### <a name="block-access-to-a-site"></a>Zugriff auf eine Website blockieren
 
-Sie können den Zugriff auf eine Website blockieren oder einen Schreibschutz festlegen, indem Sie ihren Sperrstatus ändern. Ausführliche Informationen finden Sie unter [Sperren und Entsperren von Websites](https://docs.microsoft.com/sharepoint/manage-lock-status).
+Sie können den Zugriff auf eine Website blockieren oder einen Schreibschutz festlegen, indem Sie ihren Sperrstatus ändern. Ausführliche Informationen finden Sie unter [Sperren und Entsperren von Websites](/sharepoint/manage-lock-status).
 
 ### <a name="permissions-inheritance"></a>Vererbung von Berechtigungen
 
-Dieses Vorgehen wird zwar nicht empfohlen, Sie können aber [mithilfe von SharePoint Berechtigungen vererben](https://docs.microsoft.com/sharepoint/what-is-permissions-inheritance), um Zugriffsebenen für Websites und Unterwebsites anzupassen.
+Dieses Vorgehen wird zwar nicht empfohlen, Sie können aber [mithilfe von SharePoint Berechtigungen vererben](/sharepoint/what-is-permissions-inheritance), um Zugriffsebenen für Websites und Unterwebsites anzupassen.
 
 ## <a name="sharing-with-specific-people"></a>Freigeben für bestimmte Personen
 
@@ -193,15 +193,15 @@ Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingL
 
 Standardmäßig können Benutzer neue Websites, Gruppen und Teams erstellen, für die sie (abhängig von Ihren Freigabeeinstellungen) Inhalte freigeben können. Sie können einschränken, wer Websites, Gruppen und Teams erstellen kann. Sehen Sie sich die folgenden Verweise an:
 
-- [Verwalten der Websiteerstellung in SharePoint](https://docs.microsoft.com/sharepoint/manage-site-creation)
-- [Verwalten von Personen, die Microsoft 365-Gruppen erstellen können](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
+- [Verwalten der Websiteerstellung in SharePoint](/sharepoint/manage-site-creation)
+- [Verwalten von Personen, die Microsoft 365-Gruppen erstellen können](./manage-creation-of-groups.md)
 
 > [!NOTE]
 > Das Einschränken der Gruppenerstellung schränkt auch das Erstellen von Teams ein.
 
 ## <a name="email"></a>E-Mails
 
-Sie können die unerwünschte Freigabe von E-Mails durch Verschlüsselung verhindern. Dadurch wird verhindert, dass E-Mails weitergeleitet oder anderweitig für nicht autorisierte Benutzer freigegeben werden. Die E-Mail-Verschlüsselung kann mithilfe von Vertraulichkeitsbezeichnungen aktiviert werden. Weitere Details finden Sie unter [Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels).
+Sie können die unerwünschte Freigabe von E-Mails durch Verschlüsselung verhindern. Dadurch wird verhindert, dass E-Mails weitergeleitet oder anderweitig für nicht autorisierte Benutzer freigegeben werden. Die E-Mail-Verschlüsselung kann mithilfe von Vertraulichkeitsbezeichnungen aktiviert werden. Weitere Details finden Sie unter [Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen](../compliance/encryption-sensitivity-labels.md).
 
 ## <a name="download-or-file-copy"></a>Download oder Dateikopie
 
@@ -209,12 +209,12 @@ Benutzer, die Zugriff auf Dateien und Ordner in Microsoft 365 haben, können Dat
 
 ## <a name="conditional-access"></a>Bedingter Zugriff
 
-Der bedingte Zugriff von Azure Active Directory bietet Optionen, um die Freigabe für Personen auf der Grundlage von Netzwerkadresse, Gerätestatus, Anmelderisiko und anderen Faktoren einzuschränken oder vollständig zu verhindern. Weitere Informationen finden Sie unter [Was ist der bedingte Zugriff?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+Der bedingte Zugriff von Azure Active Directory bietet Optionen, um die Freigabe für Personen auf der Grundlage von Netzwerkadresse, Gerätestatus, Anmelderisiko und anderen Faktoren einzuschränken oder vollständig zu verhindern. Weitere Informationen finden Sie unter [Was ist der bedingte Zugriff?](/azure/active-directory/conditional-access/overview).
 
 SharePoint bietet direkte Integration des bedingten Zugriffs durch Azure AD für nicht verwaltete Geräte und die Netzwerkadresse. Sehen Sie sich für Details die folgenden Verweise an:
 
-- [Steuern des Zugriffs von nicht verwalteten Geräten](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
-- [Steuern des Zugriffs auf SharePoint- und OneDrive-Daten anhand der Netzwerkadresse](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)
+- [Steuern des Zugriffs von nicht verwalteten Geräten](/sharepoint/control-access-from-unmanaged-devices)
+- [Steuern des Zugriffs auf SharePoint- und OneDrive-Daten anhand der Netzwerkadresse](/sharepoint/control-access-based-on-network-location)
 
 ## <a name="see-also"></a>Weitere Informationen:
 

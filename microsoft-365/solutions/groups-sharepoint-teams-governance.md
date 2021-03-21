@@ -1,5 +1,5 @@
 ---
-title: 'Einstellungen: Interaktionen zwischen Microsoft 365-Gruppen, Teams und SharePoint'
+title: Interaktion der Einstellungen zwischen Microsoft 365-Gruppen, Microsoft Teams und SharePoint
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,45 +14,45 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Informationen zu Einstellungen für Interaktionen zwischen Microsoft 365-Gruppen, Teams und SharePoint
-ms.openlocfilehash: 23ef7a316417109ae51c221f1a25524dea3abeca
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: Informationen zu Einstellungeninteraktionen zwischen Microsoft 365-Gruppen, Teams und SharePoint
+ms.openlocfilehash: ba3578903731a66d66c943f8daaec1a61943228c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613666"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921012"
 ---
-# <a name="settings-interactions-between-microsoft-365-groups-teams-and-sharepoint"></a>Einstellungen: Interaktionen zwischen Microsoft 365-Gruppen, Teams und SharePoint
+# <a name="settings-interactions-between-microsoft-365-groups-teams-and-sharepoint"></a>Interaktion der Einstellungen zwischen Microsoft 365-Gruppen, Microsoft Teams und SharePoint
 
-Einige Einstellungen für Microsoft 365-Gruppen, Microsoft Teams und SharePoint in Microsoft 365, insbesondere im Zusammenhang mit Freigabe und Gruppen-, Team-und SharePoint-Websiteerstellung, überlappen sich miteinander. Dieser Artikel enthält eine Beschreibung dieser Interaktionen und bewährten Methoden für die Verwendung dieser Einstellungen.
+Einige Einstellungen für Microsoft 365-Gruppen, Microsoft Teams und SharePoint in Microsoft 365, insbesondere im Zusammenhang mit der Freigabe und gruppen-/team- und SharePoint-Websiteerstellung, überlappen sich miteinander. Dieser Artikel enthält Beschreibungen dieser Interaktionen und bewährte Methoden für die Verwendung dieser Einstellungen.
 
-![Venn-Diagramm von SharePoint-, Teams-und Gruppenfeatures](../media/teams-groups-sharepoint-venn.png)
+![Venn-Diagramm der SharePoint-, Teams- und Gruppenfeatures](../media/teams-groups-sharepoint-venn.png)
 
-## <a name="the-effects-of-sharepoint-settings-on-groups-and-teams"></a>Auswirkungen von SharePoint-Einstellungen in Gruppen und Teams
+## <a name="the-effects-of-sharepoint-settings-on-groups-and-teams"></a>Auswirkungen von SharePoint-Einstellungen auf Gruppen und Teams
 
-|SharePoint-Einstellung|Beschreibung|Auswirkungen auf Microsoft 365-Gruppen und-Teams|Empfehlung|
+|SharePoint-Einstellung|Beschreibung|Auswirkungen auf Microsoft 365-Gruppen und Teams|Empfehlung|
 |:-----------------|:----------|:---------------------------------------|:-------------|
-|Externe Freigabe für Organisation und Website|Bestimmt, ob Websites, Dateien und Ordner für Personen außerhalb der Organisation freigegeben werden können.|Wenn die Einstellungen für SharePoint, Gruppen und Teams nicht übereinstimmen, können Gäste im Team möglicherweise den Zugriff auf die Website sperren, oder es kann ein unerwarteter externer Zugriff auftreten.|Überprüfen Sie beim Ändern der Freigabeeinstellungen Gruppeneinstellungen, Teams-Einstellungen und SharePoint-Websiteeinstellungen für Gruppen verbundene Teamwebsites.<br><br> Siehe [Zusammenarbeit mit Gästen in einem Team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team)|
-|Domäne zulassen/blockieren|Ermöglicht oder verhindert, dass Inhalte für bestimmte Domänen freigegeben werden.|Gruppen und Teams erkennen SharePoint-Zulassungs-oder Sperrlisten nicht. Benutzer aus Domänen, die in SharePoint nicht zugelassen sind, können über ein Team auf SharePoint-Websites oder-Inhalte zugreifen.|Verwalten von zugelassenen/blockierten Domänenlisten für Azure AD und SharePoint zusammen. Erstellen Sie einen organisationsweiten Steuerungsprozess für das zulassen und Blockieren von Domänen.<br><br>Siehe [SharePoint-Domäneneinstellungen](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) und [Azure AD Domäneneinstellungen](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)|
-|Ausschließlich Benutzern in bestimmten Sicherheitsgruppen die externe Freigabe erlauben|Gibt Sicherheitsgruppen an, die SharePoint-Websites,-Ordner und-Dateien extern freigeben können.|Diese Einstellung hindert Teambesitzer nicht daran, Teams extern freizugeben. Team Gäste haben Zugriff auf die zugehörige SharePoint-Website.||
-|SharePoint-Website Freigabeeinstellungen|Bestimmt, wer die Website direkt außerhalb der Teammitgliedschaft freigeben kann. Dies wird vom Team-oder Websitebesitzer konfiguriert.|Diese Einstellung wirkt sich nicht direkt auf das Team aus, Sie kann jedoch Benutzern das Hinzufügen zu einer Website ermöglichen und keinen Zugriff auf das Team selbst oder auf Ressourcen anderer Teams haben.|Verwenden Sie diese Einstellung, um die Freigabe der Website direkt zu begrenzen und den Website Zugriff über das Team zu verwalten.|
-|Zulassen, dass Benutzer Websites von der SharePoint-Startseite und OneDrive erstellen|Gibt an, ob Benutzer neue SharePoint-Websites erstellen können.|Wenn diese Einstellung deaktiviert ist, können Benutzer weiterhin Gruppen verbundene Teamwebsites erstellen, indem Sie ein Team erstellen.||
+|Externe Freigabe für Organisation und Website|Bestimmt, ob Websites, Dateien und Ordner für Personen außerhalb der Organisation freigegeben werden können.|Wenn SharePoint-, Gruppen- und Teams-Einstellungen nicht übereinstimmen, werden Gäste im Team möglicherweise am Zugriff auf die Website blockiert, oder es kann zu unerwartetem externen Zugriff kommen.|Überprüfen Sie beim Ändern der Freigabeeinstellungen Gruppeneinstellungen, Teams-Einstellungen und SharePoint-Websiteeinstellungen für gruppenverkn nnte Teamwebsites.<br><br> Weitere [Informationen finden Sie unter Zusammenarbeit mit Gästen in einem Team](./collaborate-as-team.md)|
+|Domänen zulassen/blockieren|Ermöglicht oder verhindert, dass Inhalte für angegebene Domänen freigegeben werden.|Gruppen und Teams erkennen keine Freigabe- oder Sperrlisten für SharePoint. Benutzer von Domänen, die in SharePoint nicht zulässig sind, können über ein Team Zugriff auf SharePoint-Websites oder -Inhalte erhalten.|Verwalten von Zulässig/Blockieren von Domänenlisten für Azure AD und SharePoint zusammen. Erstellen Sie einen organisationsweiten Steuerungsprozess zum Zulassen und Blockieren von Domänen.<br><br>Siehe [SharePoint-Domäneneinstellungen](/sharepoint/restricted-domains-sharing) und [Azure AD-Domäneneinstellungen](/azure/active-directory/b2b/allow-deny-list)|
+|Ausschließlich Benutzern in bestimmten Sicherheitsgruppen die externe Freigabe erlauben|Gibt Sicherheitsgruppen an, die SharePoint-Websites, Ordner und Dateien extern freigeben können.|Diese Einstellung verhindert nicht, dass Teambesitzer Teams extern freigeben. Teamgäste haben Zugriff auf die zugeordnete SharePoint-Website.||
+|Einstellungen für die Freigabe von SharePoint-Website|Bestimmt, wer die Website direkt außerhalb der Teammitgliedschaft freigeben kann. Dies wird vom Team- oder Websitebesitzer konfiguriert.|Diese Einstellung wirkt sich nicht direkt auf das Team aus, kann jedoch das Hinzufügen von Benutzern zu einer Website ermöglichen und keinen Zugriff auf das Team selbst oder andere Teams-Ressourcen haben.|Erwägen Sie die Verwendung dieser Einstellung, um die Freigabe der Website direkt zu beschränken und den Websitezugriff über das Team zu verwalten.|
+|Benutzern das Erstellen von Websites über die #A0 und OneDrive ermöglichen|Gibt an, ob Benutzer neue SharePoint-Websites erstellen können.|Wenn diese Einstellung deaktiviert ist, können Benutzer weiterhin Gruppen-verbundene Teamwebsites erstellen, indem sie ein Team erstellen.||
 
-## <a name="the-effects-of-groups-settings-on-teams"></a>Auswirkungen von Gruppeneinstellungen in Microsoft Teams
+## <a name="the-effects-of-groups-settings-on-teams"></a>Auswirkungen von Gruppeneinstellungen auf Teams
 
-|Microsoft 365 Gruppeneinstellung|Beschreibung|Auswirkung auf Teams|Empfehlung|
+|Microsoft 365-Gruppeneinstellung|Beschreibung|Auswirkungen auf Teams|Empfehlung|
 |:---------------------------|:----------|:--------------|:-------------|
-|Benennungsrichtlinien|Gibt Gruppennamen Präfixe und Suffixe sowie blockierte Wörter für die Gruppenerstellung an.|Richtlinien werden für Benutzer erzwungen, die Teams erstellen.||
-|Gruppengastzugriff|Gibt an, ob Personen außerhalb der Organisation Gruppen hinzugefügt werden können.|Wenn die Gast Freigabeeinstellungen für Gruppen oder Teams deaktiviert sind, kann das Team nicht für Gäste freigegeben werden.|Wenn Sie die Einstellungen für die Gast Freigabe ändern, überprüfen Sie die Einstellungen für Teams, Gruppen und die SharePoint-Website, die dem Team zugeordnet ist.<br><br> Siehe [Zusammenarbeit mit Gästen in einem Team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team)|
-|Gruppenerstellung nach Sicherheitsgruppe|Gruppen können nur von Mitgliedern einer bestimmten Sicherheitsgruppe erstellt werden.|Benutzer, die keine Mitglieder der Sicherheitsgruppe sind, können kein Team erstellen.|Stellen Sie sicher, dass Ihr Prozess zum Anfordern einer Gruppe Anweisungen zum Anfordern eines Teams oder einer SharePoint-Website enthält.|
-|Gruppenablaufrichtlinie|Gibt einen Zeitraum an, nach dem Gruppen, die nicht aktiv verwendet werden, automatisch gelöscht werden.|Wenn die Gruppe gelöscht wird, werden das Team und die zugehörige SharePoint-Website ebenfalls gelöscht. Durch Aufbewahrungsrichtlinien geschützte Inhalte werden beibehalten.|Verwenden Sie Ablaufrichtlinien, um eine Ausdehnung nicht verwendeter Teams, Gruppen und Websites zu vermeiden.|
+|Benennungsrichtlinien|Gibt Präfixe und Suffixe für Gruppennamen und blockierte Wörter für die Gruppenerstellung an.|Richtlinien werden für Benutzer erzwungen, die Teams erstellen.||
+|Gruppengastzugriff|Gibt an, ob Personen außerhalb der Organisation Gruppen hinzugefügt werden können.|Wenn die Gruppen- oder Teams-Gastfreigabeeinstellungen deaktiviert sind, kann das Team nicht für Gäste freigegeben werden.|Überprüfen Sie beim Ändern der Einstellungen für die Gastfreigabe die Einstellungen für Teams, Gruppen und die dem Team zugeordnete SharePoint-Website.<br><br> Weitere [Informationen finden Sie unter Zusammenarbeit mit Gästen in einem Team](./collaborate-as-team.md)|
+|Gruppenerstellung nach Sicherheitsgruppe|Gruppen können nur von Mitgliedern einer bestimmten Sicherheitsgruppe erstellt werden.|Benutzer, die nicht Mitglied der Sicherheitsgruppe sind, können kein Team erstellen.|Stellen Sie sicher, dass Ihr Prozess zum Anfordern einer Gruppe Anweisungen zum Anfordern eines Teams oder einer SharePoint-Website enthält.|
+|Gruppenablaufrichtlinie|Gibt einen Zeitraum an, nach dem nicht aktiv verwendete Gruppen automatisch gelöscht werden.|Wenn die Gruppe gelöscht wird, werden auch das Team und die zugeordnete SharePoint-Website gelöscht. Durch Aufbewahrungsrichtlinien geschützte Inhalte werden beibehalten.|Verwenden Sie Ablaufrichtlinien, um nicht verwendete Teams, Gruppen und Websites zu vermeiden.|
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Planung der Collaboration-Steuerung Schritt für Schritt](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Schritt-für-Schritt-Planung für die Zusammenarbeitsgovernance](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Erstellen eines Steuerungsplans für die Zusammenarbeit](collaboration-governance-first.md)
+[Erstellen eines Plans für die Zusammenarbeitsgovernance](collaboration-governance-first.md)
 
-[Zusammenarbeit mit Personen außerhalb Ihrer Organisation](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)
+[Zusammenarbeit mit Personen außerhalb Ihrer Organisation](./collaborate-with-people-outside-your-organization.md)
 
-[Verwalten der Websiteerstellung in SharePoint](https://docs.microsoft.com/sharepoint/manage-site-creation)
+[Verwalten der Websiteerstellung in SharePoint](/sharepoint/manage-site-creation)

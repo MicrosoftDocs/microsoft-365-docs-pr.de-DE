@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die neuen Funktionen der Office 365-Nachrichtenverschlüsselung, die die geschützte E-Mail-Kommunikation mit Personen innerhalb und außerhalb Ihrer Organisation ermöglichen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4102611d3be43a5bedffc83fba5c83c0b648ca42
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1519748c4bd535e0a3ea1cc3ee653e2c81e807bd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547617"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919391"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Einrichten neuer Nachrichtenverschlüsselungsfunktionen
 
@@ -33,14 +33,14 @@ Führen Sie die folgenden Schritte aus, um sicherzustellen, dass die neuen OME-F
 
 ## <a name="verify-that-azure-rights-management-is-active"></a>Überprüfen Sie, dass Azure Rights Management aktiv ist.
 
-Die neuen OME-Funktionen nutzen die Schutzfeatures in [Azure Rights Management Services (Azure RMS)](https://docs.microsoft.com/azure/information-protection/what-is-information-protection), der Technologie, die von [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) zum Schützen von E-Mails und Dokumenten mithilfe von Verschlüsselung und Zugriffssteuerelementen verwendet wird.
+Die neuen OME-Funktionen nutzen die Schutzfeatures in [Azure Rights Management Services (Azure RMS)](/azure/information-protection/what-is-information-protection), der Technologie, die von [Azure Information Protection](/azure/information-protection/what-is-azure-rms) zum Schützen von E-Mails und Dokumenten mithilfe von Verschlüsselung und Zugriffssteuerelementen verwendet wird.
 
-Die einzige Voraussetzung für die Verwendung der neuen OME-Funktionen besteht darin, dass [Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) im Mandanten Ihrer Organisation aktiviert sein muss. Wenn dies zutrifft, werden die neuen OME-Funktionen von Microsoft 365 automatisch aktiviert, und Sie müssen nichts unternehmen.
+Die einzige Voraussetzung für die Verwendung der neuen OME-Funktionen besteht darin, dass [Azure Rights Management](/azure/information-protection/what-is-azure-rms) im Mandanten Ihrer Organisation aktiviert sein muss. Wenn dies zutrifft, werden die neuen OME-Funktionen von Microsoft 365 automatisch aktiviert, und Sie müssen nichts unternehmen.
 
-Azure RMS wird auch bei den meisten berechtigenden Plänen automatisch aktiviert, daher müssen Sie in dieser Hinsicht wahrscheinlich auch keine Maßnahmen ergreifen. Weitere Informationen hierzu finden Sie unter [Aktivieren von Azure Rights Management](https://docs.microsoft.com/azure/information-protection/activate-service).
+Azure RMS wird auch bei den meisten berechtigenden Plänen automatisch aktiviert, daher müssen Sie in dieser Hinsicht wahrscheinlich auch keine Maßnahmen ergreifen. Weitere Informationen hierzu finden Sie unter [Aktivieren von Azure Rights Management](/azure/information-protection/activate-service).
 
 >[!IMPORTANT]
->Wenn Sie Active Directory Rights Management Services (AD RMS) mit Exchange Online verwenden, müssen Sie zu [Azure Information Protection migrieren](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms), bevor Sie die neuen OME-Funktionen verwenden können. OME ist nicht kompatibel mit AD RMS.  
+>Wenn Sie Active Directory Rights Management Services (AD RMS) mit Exchange Online verwenden, müssen Sie zu [Azure Information Protection migrieren](/azure/information-protection/migrate-from-ad-rms-to-azure-rms), bevor Sie die neuen OME-Funktionen verwenden können. OME ist nicht kompatibel mit AD RMS.  
 
 Weitere Informationen finden Sie unter:
 
@@ -51,20 +51,20 @@ Weitere Informationen finden Sie unter:
 
 Wenn Sie Azure RMS deaktiviert haben oder wenn es aus irgendeinem Grund nicht automatisch aktiviert wurde, können Sie es hier manuell im aktivieren:
 
-- **Microsoft 365 Admin Center**: Anweisungen hierzu finden Sie unter [Aktivieren von Azure Rights Management im Admin Center](https://docs.microsoft.com/azure/information-protection/activate-office365).
-- **Azure-Portal**: Anweisungen hierzu finden Sie unter [Aktivieren von Azure Rights Management im Azure-Portal](https://docs.microsoft.com/azure/information-protection/activate-azure).
+- **Microsoft 365 Admin Center**: Anweisungen hierzu finden Sie unter [Aktivieren von Azure Rights Management im Admin Center](/azure/information-protection/activate-office365).
+- **Azure-Portal**: Anweisungen hierzu finden Sie unter [Aktivieren von Azure Rights Management im Azure-Portal](/azure/information-protection/activate-azure).
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Konfigurieren der Verwaltung Ihres Azure Information Protection-Mandantenschlüssels
 
 Dies ist ein optionaler Schritt. Microsoft das Verwalten des Hauptschlüssels für Azure Information Protection zu gestatten, ist die Standardeinstellung und wird als bewährte Methode für die meisten Organisationen empfohlen. In diesem Fall brauchen Sie nichts zu unternehmen.
 
-Es gibt viele Gründe, beispielsweise Complianceanforderungen, aus denen Sie Ihren eigenen Hauptschlüssel generieren und verwalten müssen – auch als "Bring Your Own Key" (BYOK) bezeichnet. In diesem Fall empfehlen wir Ihnen, vor dem Einrichten der neuen OME-Funktionen die erforderlichen Schritte auszuführen. Weitere Informationen finden Sie unter [Planen und Implementieren Ihres Azure Information Protection-Mandantenschlüssels](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key).
+Es gibt viele Gründe, beispielsweise Complianceanforderungen, aus denen Sie Ihren eigenen Hauptschlüssel generieren und verwalten müssen – auch als "Bring Your Own Key" (BYOK) bezeichnet. In diesem Fall empfehlen wir Ihnen, vor dem Einrichten der neuen OME-Funktionen die erforderlichen Schritte auszuführen. Weitere Informationen finden Sie unter [Planen und Implementieren Ihres Azure Information Protection-Mandantenschlüssels](/information-protection/plan-design/plan-implement-tenant-key).
 
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Überprüfen der neuen OME-Konfiguration in Exchange Online PowerShell
 
-Sie können überprüfen, ob Ihr Microsoft 365-Mandant für die Verwendung der neuen OME-Funktionen in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) ordnungsgemäß konfiguriert wurde.
+Sie können überprüfen, ob Ihr Microsoft 365-Mandant für die Verwendung der neuen OME-Funktionen in [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell) ordnungsgemäß konfiguriert wurde.
   
-1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell), und verwenden Sie dafür ein Konto mit globalen Administratorberechtigungen in Ihrem Microsoft 365-Mandanten.
+1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](/powershell/exchange/connect-to-exchange-online-powershell), und verwenden Sie dafür ein Konto mit globalen Administratorberechtigungen in Ihrem Microsoft 365-Mandanten.
 
 2. Führen Sie das Cmdlet "Get-IRMConfiguration" aus.
 
@@ -102,7 +102,7 @@ Sie können überprüfen, ob Ihr Microsoft 365-Mandant für die Verwendung der n
 
    - Der Name Ihrer Organisation ersetzt *Contoso*.
 
-   - Die Standardvorlagennamen unterscheiden sich möglicherweise von den vorstehenden. Weitere Informationen finden Sie unter [Konfigurieren und Verwalten von Vorlagen für Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-templates).
+   - Die Standardvorlagennamen unterscheiden sich möglicherweise von den vorstehenden. Weitere Informationen finden Sie unter [Konfigurieren und Verwalten von Vorlagen für Azure Information Protection](/azure/information-protection/configure-policy-templates).
 
 4. Führen Sie das Cmdlet "Remove-PSSession" aus, um die Verbindung mit dem Rights Management-Dienst zu trennen.
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: eea8454a02667a42020f9ac1d54402e7b8a06b9b
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 1e6642113ddba9c9110a65e9032ec59db435ac7f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820061"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919861"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Erste Schritte mit Insider-Risikomanagementeinstellungen
 
@@ -483,7 +483,7 @@ Die Aktivierung der Microsoft Teams-Unterstützung für Fälle ist schnell und e
 
 Wenn Sie die Unterstützung von Microsoft Teams für das Insiderrisikomanagement aktivieren, nachdem Sie über vorhandene Fälle verfügen, müssen Sie bei Bedarf manuell ein Team für jeden Fall erstellen. Nach der Aktivierung der Microsoft Teams-Unterstützung in Insider-Risikomanagementeinstellungen erstellen neue Fälle automatisch ein neues Microsoft Teams-Team.
 
-Benutzer benötigen die Berechtigung zum Erstellen von Microsoft 365-Gruppen in Ihrer Organisation, um ein Microsoft Teams-Team aus einem Fall zu erstellen. Weitere Informationen zum Verwalten von Berechtigungen für Microsoft 365-Gruppen finden Sie [unter Manage who can create Microsoft 365 Groups](/microsoft-365/solutions/manage-creation-of-groups).
+Benutzer benötigen die Berechtigung zum Erstellen von Microsoft 365-Gruppen in Ihrer Organisation, um ein Microsoft Teams-Team aus einem Fall zu erstellen. Weitere Informationen zum Verwalten von Berechtigungen für Microsoft 365-Gruppen finden Sie [unter Manage who can create Microsoft 365 Groups](../solutions/manage-creation-of-groups.md).
 
 Zum Erstellen eines Teams für einen Fall verwenden Sie das Steuerelement Microsoft Team erstellen, wenn Sie direkt in einem vorhandenen Fall arbeiten. Führen Sie die folgenden Schritte aus, um ein neues Team zu erstellen:
 

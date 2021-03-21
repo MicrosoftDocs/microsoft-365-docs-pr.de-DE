@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Benachrichtigungen für genaue Datenübereinstimmungsaktivitäten erstellen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a537cffe253fa20cf6838ddf3fd9a51ec440fe76
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 2e2f67ef0f276211483519bd5e246e4e041b2b15
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766693"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919361"
 ---
 # <a name="create-notifications-for-exact-data-match-activities-preview"></a>Erstellen von Benachrichtigungen für exakte Datenübereinstimmungsaktivitäten (Vorschau)
 
-Wenn Sie [benutzerdefinierte vertrauliche Informationstypen mit exakter Datenübereinstimmung (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) erstellen, werden im [Überwachungsprotokoll](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log) eine Reihe von Aktivitäten erstellt. Mit dem PowerShell-Cmdlet [New-ProtectionAlert](https://docs.microsoft.com/powershell/module/exchange/new-protectionalert?view=exchange-ps) können Sie Benachrichtigungen erstellen, die Sie über folgende Aktivitäten informieren:
+Wenn Sie [benutzerdefinierte vertrauliche Informationstypen mit exakter Datenübereinstimmung (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) erstellen, werden im [Überwachungsprotokoll](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log) eine Reihe von Aktivitäten erstellt. Mit dem PowerShell-Cmdlet [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps) können Sie Benachrichtigungen erstellen, die Sie über folgende Aktivitäten informieren:
 
 - CreateSchema
 - EditSchema
@@ -54,11 +54,11 @@ Die EDM-basierte Klassifizierung ist in diesen Abonnements enthalten.
 - Microsoft 365 E5 Compliance
 - Microsoft E5/ A5 Information Protection und Governance
 
-Weitere Informationen zur DLP-Lizenzierung finden Sie in den [Microsoft 365-Lizenzierungsrichtlinien für Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
+Weitere Informationen zur DLP-Lizenzierung finden Sie in den [Microsoft 365-Lizenzierungsrichtlinien für Security & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
 
 ## <a name="configure-notifications-for-edm-activities"></a>Konfigurieren von Benachrichtigungen für EDM-Aktivitäten
 
-1. Stellen Sie eine Verbindung mit der [Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps). 
+1. Stellen Sie eine Verbindung mit der [Security & Compliance Center PowerShell her](/powershell/exchange/connect-to-scc-powershell?view=exchange-ps). 
 
 2. Führen Sie das `New-ProtectionAlert` -Cmdlet mit der Aktivität aus, für die Sie die Benachrichtigung erstellen möchten.  Wenn Sie beispielsweise benachrichtigt werden möchten, wenn die Aktion **UploadDataCompleted-Aktion** ausgeführt wurde, führen Sie das Folgende aus
 
@@ -75,4 +75,4 @@ New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUse
 ## <a name="related-articles"></a>Verwandte Artikel
 
 - [Erstellen benutzerdefinierter Typen vertraulicher Informationen mit genauer Datenübereinstimmung (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
-- [New-ProtectionAlert](https://docs.microsoft.com/powershell/module/exchange/new-protectionalert?view=exchange-ps) 
+- [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps)

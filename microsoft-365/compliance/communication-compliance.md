@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 774f03ebbf12a8bfbf4e2409735352b83e6963aa
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a5eab2aaecd3d0c339fdc2e58af17dcfd9feb199
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421542"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919881"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Informationen zur Kommunikationskonformität in Microsoft 365
 
@@ -38,6 +38,13 @@ Richtlinien zur Kommunikationskonformität in Microsoft 365 helfen Ihnen bei der
 - Behördliche Durchsetzung und Das Risiko von Bußgeldern
 
 Darüber hinaus gibt es möglicherweise eine Trennung der Aufgaben zwischen Ihren IT-Administratoren und Ihrem Compliance-Verwaltungsteam. Die Kommunikationskonformität unterstützt die Trennung zwischen der Konfiguration von Richtlinien und der Untersuchung und Überprüfung von Nachrichten. Beispielsweise ist die IT-Gruppe für Ihre Organisation möglicherweise für das Einrichten von Berechtigungen, Gruppen und Richtlinien für die Kommunikationskonformität zuständig, und Ermittler und Prüfer sind möglicherweise für Nachrichtentriage-, Überprüfungs- und Risikominderungsaktionen verantwortlich.
+
+Die neuesten Ignite-Präsentationen zur Kommunikationskonformität finden Sie in den folgenden Videos:
+
+- [Fördern einer Kultur der Sicherheit und Inklusion mit Kommunikationskonformität](https://www.youtube.com/watch?v=oLVzxcaef3w)
+- [Erfahren Sie, wie Sie Kommunikationsrisiken innerhalb Ihrer Organisation reduzieren können](https://www.youtube.com/watch?v=vzARb1YaxGo)
+- [Erfüllen gesetzlicher Complianceanforderungen mit Kommunikationskonformität](https://www.youtube.com/watch?v=gagOhtCBfgU)
+- [Besser mit Microsoft Teams – Erfahren Sie mehr über die neuesten integrierten Microsoft Teams-Features in der Kommunikationskonformität](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
 Einen schnellen Überblick über die Kommunikationskonformität finden Sie im Video "Erkennen von Belästigungen am Arbeitsplatz und Reagieren mit Kommunikationskonformität [in Microsoft 365"](https://youtu.be/z33ji7a7Zho) im [Microsoft Mechanics-Kanal.](https://www.youtube.com/user/OfficeGarageSeries)
 

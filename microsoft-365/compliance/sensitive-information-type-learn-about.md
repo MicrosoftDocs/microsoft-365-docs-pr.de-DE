@@ -16,16 +16,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 13dee9d5744639149960a16adcf36b7ebe5718f7
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 12a4e8873cb7212bfa7dde12bba9e98528cd859a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766400"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919671"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Weitere Informationen zu Typen vertraulicher Informationen
 
-Das Identifizieren und Klassifizieren vertraulicher Elemente, die sich unter der Kontrolle Ihrer Organisation befinden, ist der erste Schritt in der [Information Protection-Disziplin.](protect-information.md)  Microsoft 365 bietet drei Möglichkeiten zum Identifizieren von Elementen, sodass sie klassifiziert werden können:
+Das Identifizieren und Klassifizieren vertraulicher Elemente, die sich unter der Kontrolle Ihrer Organisation befinden, ist der erste Schritt in der [Information Protection-Disziplin.](./information-protection.md)  Microsoft 365 bietet drei Möglichkeiten zum Identifizieren von Elementen, sodass sie klassifiziert werden können:
 
 - manuell von Benutzern
 - Automatische Mustererkennung, wie vertrauliche Informationstypen
@@ -103,7 +103,7 @@ Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher In
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina National Identity number 
-- Identity 
+- Identität 
 - Identifikation der nationalen Identitätskarte 
 - DNI 
 - Nationales NIC-Personenregister 

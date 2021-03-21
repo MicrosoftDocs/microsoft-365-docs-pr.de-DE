@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365-Compliance-Erweiterbarkeit
+title: Microsoft 365 Compliance-Erweiterbarkeit
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,78 +19,78 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Erfahren Sie mehr über das Erweitern von Microsoft 365-Kompatibilitätslösungen mithilfe von Drittanbieter-Daten-Konnektoren und Microsoft Graph-APIs.
-ms.openlocfilehash: 8eeb83013ec412ed82973b37c4c10e2250f5eaf8
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+description: Erfahren Sie mehr über die Erweiterung von Microsoft 365-Compliancelösungen mithilfe von Datenconnectors von Drittanbietern und Microsoft Graph-APIs.
+ms.openlocfilehash: 676c0ba41e517dd0c3692fec29a1d4034641b634
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285741"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919721"
 ---
-# <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365-Compliance-Erweiterbarkeit
+# <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365 Compliance-Erweiterbarkeit
 
-Microsoft 365 Compliance-Lösungen helfen Organisationen, Ihre Compliance-Risiken intelligent zu bewerten, vertrauliche Daten zu steuern und zu schützen und effektiv auf regulatorische Anforderungen zu reagieren. Die Kompatibilität mit Microsoft 365 ist reich an Erweiterungs Szenarien und ermöglicht es Organisationen, Ihre Compliance-Lösungen anzupassen, zu erweitern, zu integrieren, zu beschleunigen und zu unterstützen.
+Microsoft 365-Compliancelösungen helfen Organisationen dabei, ihre Compliancerisiken intelligent zu bewerten, vertrauliche Daten zu verwalten und zu schützen und effektiv auf behördliche Anforderungen zu reagieren. Die Microsoft 365-Compliance bietet viele Erweiterbarkeitsszenarien und ermöglicht Es Organisationen, ihre Compliancelösungen anzupassen, zu erweitern, zu integrieren, zu beschleunigen und zu unterstützen.
 
-Für die Erweiterbarkeit der Kompatibilität gibt es zwei wichtige Bausteine:
+Es gibt zwei wichtige Bausteine für die Kompatibilitätsergehnbarkeit:
 
-- **Daten-Konnektoren**. Verwenden Sie zum Importieren und Archivieren von nicht-Microsoft-Daten, damit Sie Microsoft 365-Schutz-und-Steuerungsfunktionen auf drittanbieterdaten anwenden können.
+- **Datenconnectors**. Verwenden Sie zum Importieren und Archivieren von Nicht-Microsoft-Daten, damit Sie Microsoft 365-Schutz- und Governancefunktionen auf Drittanbieterdaten anwenden können.
 
-- **APIs**. Ermöglicht den programmgesteuerten Zugriff auf die Microsoft 365-Konformitäts Funktionen.
+- **APIs**. Ermöglicht programmgesteuerten Zugriff auf Microsoft 365-Compliancefunktionen.
 
 ## <a name="data-connectors"></a>Datenconnectors
 
-Microsoft stellt Daten-Konnektoren von Drittanbietern bereit, die im Microsoft 365 Compliance Center konfiguriert werden können. Eine Liste der von Microsoft bereitgestellten Daten-Konnektoren finden Sie in der Tabelle " [Drittanbieter-Daten Konnektoren](archiving-third-party-data.md#third-party-data-connectors) ". In der Tabelle mit Drittanbieter-Daten Konnektoren werden auch die Kompatibilitätslösungen zusammengefasst, die Sie nach dem Importieren und Archivieren von Daten in Microsoft 365 auf drittanbieterdaten anwenden können, sowie Links zu den schrittweisen Anleitungen für jeden Connector.
+Microsoft stellt Datenconnectors von Drittanbietern zur Verfügung, die im Microsoft 365 Compliance Center konfiguriert werden können. Eine Liste der von Microsoft bereitgestellten Datenconnectors finden Sie in der Tabelle [Datenconnectors von](archiving-third-party-data.md#third-party-data-connectors) Drittanbietern. In der Tabelle der Datenconnectors von Drittanbietern sind auch die Compliancelösungen zusammengefasst, die Sie auf Drittanbieterdaten anwenden können, nachdem Sie Daten in Microsoft 365 importiert und archiviert haben, und links zu den schrittweisen Anweisungen für jeden Connector.
 
-Weitere Informationen zu Microsoft 365-Daten Konnektoren finden Sie unter [Archivieren von drittanbieterdaten](archiving-third-party-data.md). Wenn ein Drittanbieter Datentyp nicht von den im Microsoft 365 Compliance Center verfügbaren Daten Konnektoren unterstützt wird, können Sie mit einem Partner zusammenarbeiten, der Ihnen einen benutzerdefinierten Connector zur Verfügung stellen kann. Eine Liste der Partner, mit denen Sie zusammenarbeiten können, und der schrittweise Prozess für diese Methode finden Sie unter [Arbeiten mit einem Partner zum Archivieren von drittanbieterdaten](work-with-partner-to-archive-third-party-data.md).
+Weitere Informationen zu Microsoft 365-Datenconnectors finden Sie unter [Archivierung von Drittanbieterdaten](archiving-third-party-data.md). Wenn ein Drittanbieterdatentyp von den im Microsoft 365 Compliance Center verfügbaren Datenconnectors nicht unterstützt wird, können Sie mit einem Partner zusammenarbeiten, der Ihnen einen benutzerdefinierten Connector bereitstellen kann. Eine Liste der Partner, mit der Sie zusammenarbeiten können, und den schrittweisen Prozess für diese Methode finden Sie unter Arbeiten mit einem Partner zum Archivieren von [Drittanbieterdaten](work-with-partner-to-archive-third-party-data.md).
 
-### <a name="prerequisites-for-data-connectors"></a>Voraussetzungen für Daten-Konnektoren
+### <a name="prerequisites-for-data-connectors"></a>Voraussetzungen für Datenconnectors
 
-Viele der im Microsoft 365 Compliance Center verfügbaren Daten Konnektoren zum Importieren und Archivieren von drittanbieterdaten erfordern die Vorbereitung und Ausführung von Konfigurationsaufgaben in der Drittanbieter-Datenquelle. Diese Voraussetzungen werden für jeden Daten Konnektor eines Drittanbieters ausführlich dokumentiert.
+Viele der im Microsoft 365 Compliance Center verfügbaren Datenconnectors zum Importieren und Archivieren von Drittanbieterdaten erfordern, dass Sie Konfigurationsaufgaben in der Datenquelle eines Drittanbieters vorbereiten und ausführen. Diese Voraussetzungen sind für jeden Datenconnector eines Drittanbieters detailliert dokumentiert.
 
-Für Daten-Konnektoren im Microsoft 365 Compliance Center, die von einem der Partner von Microsoft bereitgestellt werden, benötigt Ihre Organisation eine Geschäftsbeziehung mit dem Partner, bevor Sie einen Connector bereitstellen können.
+Für Datenconnectors im Microsoft 365 Compliance Center, die von einem der Microsoft-Partner bereitgestellt werden, benötigt Ihre Organisation eine Geschäftsbeziehung mit dem Partner, bevor Sie einen Connector bereitstellen können.
 
-Lizenzierungsanforderungen für Drittanbieter-Daten-Konnektoren finden Sie im [Microsoft 365 Compliance Licensing Comparison](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx) Document.
+Lizenzierungsanforderungen für Datenconnectors von Drittanbietern finden Sie im [Microsoft 365 Compliance Licensing Comparison-Dokument.](/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx)
 
 ## <a name="apis"></a>APIs
 
-Microsoft 365-Kompatibilitäts-APIs stehen im Microsoft Information Protection-SDK, in der Microsoft Graph-API und in der API für die Office 365-Verwaltungsaktivität zur Verfügung. Einige Kompatibilitäts-APIs sind Teil eines neuen Satzes an Sicherheits-und Kompatibilitäts-APIs, mit denen Entwickler von Microsoft 365-Kunden, unabhängigen Softwareanbietern, Systemintegratoren und verwalteten Sicherheitsdienst Anbietern hochwertige Sicherheits-und Compliance-Lösungen erstellen können.
+Microsoft 365-Compliance-APIs sind im Microsoft Information Protection SDK, der Microsoft Graph-API und der Office 365-Verwaltungsaktivitäts-API verfügbar. Einige Compliance-APIs sind Teil einer neuen Gruppe von Sicherheits- und Compliance-APIs, mit denen Entwickler für Microsoft 365-Kunden, unabhängige Softwareanbieter, Systemintegratoren und anbieter für verwaltete Sicherheitsdienste hochwertige Sicherheits- und Compliancelösungen erstellen können.
 
-Weitere Informationen zum Zugreifen auf Graph-APIs finden Sie unter [Overview of Microsoft Graph](https://docs.microsoft.com/graph/overview).
+Weitere Informationen zum Zugriff auf Graph-APIs finden Sie [unter Overview of Microsoft Graph](/graph/overview).
 
-### <a name="microsoft-information-protection-mip-sdk"></a>Microsoft Information Protection (MIP)-SDK
+### <a name="microsoft-information-protection-mip-sdk"></a>Microsoft Information Protection (MIP) SDK
 
-Das MIP-SDK macht die Bezeichnungs-und Schutzdienste von Microsoft 365 Security and Compliance Center für Anwendungen und Dienste von Drittanbietern verfügbar. Entwickler können das SDK verwenden, um systemeigene Unterstützung für das Anwenden von Bezeichnungen und Schutz auf Dateien zu erstellen. Entwickler können bestimmen, welche Aktionen ausgeführt werden sollen, wenn bestimmte Bezeichnungen erkannt werden, und begründen über MIP-verschlüsselte Informationen.
+Das MIP SDK macht die Bezeichnungs- und Schutzdienste von Microsoft 365-Sicherheits- und Compliancecentern für Anwendungen und Dienste von Drittanbietern verfügbar. Entwickler können das SDK verwenden, um systemeigene Unterstützung für das Anwenden von Bezeichnungen und Schutz auf Dateien zu erstellen. Entwickler können bestimmen, welche Aktionen beim Erkennen bestimmter Bezeichnungen ergriffen werden sollen, und einen Grund für MIP-verschlüsselte Informationen.
 
-High-Level-MIP-SDK-Anwendungsfälle umfassen Folgendes:
+Zu den high-level MIP SDK-Verwendungsfällen gehören:
 
-- Eine Branchenanwendung, die Klassifizierungs Bezeichnungen auf Dateien im Export anwendet.
+- Eine Geschäftsanwendung, die Klassifizierungsbezeichnungen auf Dateien beim Export angewendet.
 
-- Eine CAD/CAM-Design Anwendung, die systemeigene Unterstützung für MIP-Beschriftungen bereitstellt.
+- Eine CAD/CAM-Entwurfsanwendung, die systemeigene Unterstützung für die MIP-Bezeichnung bietet.
 
-- Ein Cloud Access-Sicherheits Broker oder eine Lösung zur Verhinderung von Datenverlusten, die Daten mit Azure Information Protection verschlüsseln kann.
+- Ein Cloudzugriffssicherheitsbroker oder eine Lösung zur Verhinderung von Datenverlust, die Daten mit Azure Information Protection verschlüsseln kann.
 
-Weitere Informationen zum MIP-SDK, Voraussetzungen, zusätzlichen Szenarien und Beispielen finden Sie unter [MIP SDK Overview](https://docs.microsoft.com/information-protection/develop/overview).
+Weitere Informationen zum MIP SDK, den Voraussetzungen, zusätzlichen Szenarien und Beispielen finden Sie unter [MIP SDK Overview](/information-protection/develop/overview).
 
 ### <a name="microsoft-graph-api-for-teams-dlp"></a>Microsoft Graph-API für Teams DLP
 
-Die Funktionen zur [Verhinderung von Datenverlust (Data Loss Prevention, DLP)](dlp-microsoft-teams.md) werden in Microsoft Teams häufig verwendet, zumal sich Organisationen zu Remote Arbeit verschoben haben. Anfang dieses Jahres haben wir [die öffentliche Vorschau](https://developer.microsoft.com/graph/blogs/announcing-change-notifications-for-microsoft-teams-messages/) der Microsoft Graph-Änderungs Benachrichtigungs-API für Nachrichten in Teams angekündigt. Mit dieser API können Entwickler apps erstellen, die Microsoft Teams-Nachrichten in nahezu Echtzeit abhören und dann DLP-Szenarien für Kunden und Partner implementieren. Darüber hinaus können Sie mit der Microsoft Graph-Patch-API DLP-Aktionen auf Teams-Nachrichten anwenden.
+[Funktionen zur Verhinderung von Datenverlust (Data Loss Prevention, DLP)](dlp-microsoft-teams.md) werden in Microsoft Teams häufig verwendet, insbesondere wenn Organisationen auf Remotearbeit umschichtet haben. Anfang dieses Jahres haben wir [die öffentliche](https://developer.microsoft.com/graph/blogs/announcing-change-notifications-for-microsoft-teams-messages/) Vorschau der Microsoft Graph Change Notification API für Nachrichten in Teams angekündigt. Mit dieser API können Entwickler Apps erstellen, die Microsoft Teams-Nachrichten nahezu in Echtzeit abhören und dann DLP-Szenarien für Kunden und Partner implementieren können. Darüber hinaus können Sie mit der Microsoft Graph-Patch-API DLP-Aktionen auf Teams-Nachrichten anwenden.
 
-Diese beiden APIs bilden die Microsoft Graph-API für Teams DLP. Sie können zunächst die [Beispiel-App](https://github.com/microsoftgraph/csharp-webhook-with-resource-data)ausprobieren. Weitere Informationen zu Microsoft Teams-Messaging-webhooks finden Sie in der [Dokumentation](https://docs.microsoft.com/graph/api/subscription-post-subscriptions).
+Diese beiden APIs bilden die Microsoft Graph-API für Teams DLP. Sie können mit der Beispiel-App [beginnen.](https://github.com/microsoftgraph/csharp-webhook-with-resource-data) Weitere Informationen zu Microsoft Teams Messaging-Webhooks finden Sie in der [Dokumentation](/graph/api/subscription-post-subscriptions).
 
-Die Lizenzierungsanforderungen für Teams DLP finden Sie unter [Microsoft 365-Lizenzierungsrichtlinien für Sicherheits & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-data-loss-prevention-for-teams).
+Die Lizenzierungsanforderungen für Teams DLP finden Sie unter [Microsoft 365 Licensing Guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-data-loss-prevention-for-teams).
 
 ### <a name="microsoft-graph-api-for-ediscovery-preview"></a>Microsoft Graph-API für eDiscovery (Vorschau)
 
-Mit [Advanced eDiscovery](overview-ediscovery-20.md)können Organisationen Daten ermitteln, in denen Sie leben, und Verwalten von mehr End-to-End-eDiscovery-Workflows mit intelligenten Funktionen für Maschinelles Lernen und Analyse, um Daten auf den relevanten Datensatz zu reduzieren, während die Daten innerhalb der Microsoft 365-Sicherheits-und-Kompatibilitäts Grenze bleiben.
+Mit [Advanced eDiscovery](overview-ediscovery-20.md)können Organisationen Daten dort ermitteln, wo sie sich befinden, und mehr End-to-End-eDiscovery-Workflows mit intelligenten Machine-Learning- und Analysefunktionen verwalten, um Daten auf den relevanten Satz zu reduzieren – und das alles, während die Daten innerhalb der Sicherheits- und Compliancegrenze von Microsoft 365 bleiben.
 
-Graph-APIs für Advanced eDiscovery können zum Erstellen und Verwalten von Fällen, zum Überprüfen von Sätzen und zum Überprüfen von Set-Abfragen in skalierbarer und wiederholbarer Weise verwendet werden. So können Kunden und Partner apps und Workflows erstellen, um häufige und sich wiederholende Prozesse wie das Erstellen von Fällen und das Verwalten von Depotbanken und rechtlichen Aufbewahrungen zu automatisieren.
+Graph-APIs für Advanced eDiscovery können zum Erstellen und Verwalten von Fällen, zum Überprüfen von Sätzen und zum Überprüfen von Satzabfragen auf skalierbare und wiederholbare Weise verwendet werden. Auf diese Weise können Kunden und Partner Apps und Workflows erstellen, um häufige und sich wiederholende Prozesse wie das Erstellen von Fällen und die Verwaltung von Verwahrern und rechtlichen Abläufen zu automatisieren.
 
-Die erste Gruppe von Graph-APIs für eDiscovery steht in der öffentlichen Vorschau zur Verfügung. Wir planen, bis zum Ende des Kalenderjahres weitere Funktionen hinzuzufügen. Weitere Informationen zu diesen APIs und anderen Updates für Advanced eDiscovery finden Sie in diesem [Blog](https://aka.ms/Ignite2020AeDAA).
+Der erste Satz von Graph-APIs für eDiscovery ist in der öffentlichen Vorschau verfügbar. Wir planen, bis zum Ende des Kalenderjahres weitere Funktionen hinzuzufügen. Weitere Informationen zu diesen APIs und anderen Updates für Advanced eDiscovery finden Sie in diesem [Blog.](https://aka.ms/Ignite2020AeDAA)
 
-Die Lizenzierungsanforderungen für Advanced eDiscovery und die API finden Sie im Abschnitt "eDiscovery" im [Microsoft 365-Lizenzierungs Handbuch für Sicherheits & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#ediscovery).
+Informationen zu den Lizenzierungsanforderungen für Advanced eDiscovery und die API finden Sie im Abschnitt "eDiscovery" im Microsoft 365-Lizenzierungsleitfasten für & [Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#ediscovery).
 
-### <a name="microsoft-graph-api-for-teams-export-preview"></a>Microsoft Graph-API für Teams-Export (Vorschau)
+### <a name="microsoft-graph-api-for-teams-export-preview"></a>Microsoft Graph API for Teams Export (Vorschau)
 
-Enterprise Information Archiving (UVP) for Microsoft Teams ist ein wichtiges Szenario für unsere Kunden, da es Ihnen die Lösung für regulatorische Anforderungen ermöglicht. Zusätzlich zu den integrierten Funktionen für die Archivierung von Inhalten in Microsoft Teams können Kunden und Partner nun Teams-Export-APIs verwenden, um benutzerdefinierte Anwendungs-und Integrationsszenarien zu lösen. Die Teams-Export-APIs unterstützen den Massenexport (bis zu 200 Anforderungen pro Sekunde/pro App/pro Mandanten) von Microsoft Teams-Nachrichten und Nachrichtenanlagen. Auf gelöschte Nachrichten kann die API auch bis zu 30 Tage nach dem Löschen zugreifen. Weitere Informationen zu diesen Teams-Export-APIs und deren Verwendung in Ihren Anwendungen finden Sie unter [Exportieren von Inhalten mit Microsoft Teams Export-APIs](https://docs.microsoft.com/microsoftteams/export-teams-content).
+Enterprise Information Archiving (EIA) für Microsoft Teams ist ein Schlüsselszenario für unsere Kunden, da es ihnen ermöglicht, gesetzliche Anforderungen zu erfüllen. Zusätzlich zu unseren integrierten Funktionen für die Archivierung von Inhalten in Microsoft Teams können Kunden und Partner jetzt Teams-Export-APIs verwenden, um benutzerdefinierte Anwendungs- und Integrationsszenarien zu lösen. Die Teams-Export-APIs unterstützen den Massenexport (bis zu 200 Anforderungen pro Sekunde/pro App/pro Mandant) von Teams-Nachrichten und -Nachrichtenanlagen. Auf gelöschte Nachrichten kann die API auch bis zu 30 Tage nach dem Löschen zugreifen. Weitere Informationen zu diesen Teams-Export-APIs und deren Verwendung in Ihren Anwendungen finden Sie unter Exportieren von Inhalten mit den [Microsoft Teams-Export-APIs](/microsoftteams/export-teams-content).
 
-Die Lizenzierungsanforderungen für die Verwendung der Teams-Export-APIs finden Sie unter [Microsoft 365 Licensing Guidance for Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Die Lizenzierungsanforderungen für die Verwendung der Teams-Export-APIs finden Sie unter [Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)Licensing Guidance for security & compliance .

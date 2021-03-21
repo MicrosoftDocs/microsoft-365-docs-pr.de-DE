@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c82b0a84582d18f8b08b369ff76ba34046c40eba
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 96a4a8ae902f0b8e4767ea3fd42079322d661208
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727115"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918810"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics"></a>Verstehen des Analystenberichts in der Bedrohungsanalyse
 
@@ -35,7 +35,7 @@ ms.locfileid: "50727115"
 **Gilt für:**
 - Microsoft 365 Defender
 
-> Möchten Sie Microsoft 365 Defender erleben? Sie können [es in einer Laborumgebung auswerten](https://aka.ms/mtp-trial-lab) oder [Ihr Pilotprojekt in der Produktion ausführen.](https://aka.ms/m365d-pilotplaybook)
+> Sie möchten Microsoft 365 Defender ausprobieren? Sie können [in einer Laborumgebung auswerten](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) oder [ein Pilotprojekt in der Produktionsumgebung ausführen](./mtp-pilot.md?ocid=cx-evalpilot).
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -68,7 +68,7 @@ Zusätzlich zu diesen nachverfolgten Gegenmaßnahmen werden im Analystenbericht 
 - Blockieren von E-Mails mit _.lnk-Anlagen_ oder anderen verdächtigen Dateitypen
 - Randomize local administrator passwords
 - Informieren von Endbenutzern über Phishing-E-Mails und andere Bedrohungsvektoren
-- Aktivieren bestimmter [Regeln zur Reduzierung der Angriffsfläche](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
+- Aktivieren bestimmter [Regeln zur Reduzierung der Angriffsfläche](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
 
 Sie können zwar die Registerkarte **Gegenmaßnahmen** verwenden, um Ihre Sicherheitslage gegenüber einer Bedrohung zu bewerten, aber mit diesen Empfehlungen können Sie zusätzliche Schritte zur Verbesserung Ihrer Sicherheitslage unternehmen. Lesen Sie sorgfältig alle Anleitungen zur Risikominderung im Analystenbericht, und wenden Sie sie wann immer möglich an.
 
@@ -76,13 +76,13 @@ Sie können zwar die Registerkarte **Gegenmaßnahmen** verwenden, um Ihre Sicher
 Der Analystenbericht enthält außerdem die Erkennungen  von Microsoft Defender for Endpoint Antivirus- und Endpunkterkennungs- und -reaktionsfunktionen (EDR).
 
 ### <a name="antivirus-detections"></a>Antiviruserkennungen
-Diese Erkennungen sind auf Geräten verfügbar, auf [deren Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) aktiviert ist. Wenn diese Erkennungen auf Geräten auftreten, die in Microsoft Defender for Endpoint onboarded wurden, lösen sie auch Warnungen aus, die die Diagramme im Bericht aufscheinen.
+Diese Erkennungen sind auf Geräten verfügbar, auf [deren Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) aktiviert ist. Wenn diese Erkennungen auf Geräten auftreten, die in Microsoft Defender for Endpoint onboarded wurden, lösen sie auch Warnungen aus, die die Diagramme im Bericht aufscheinen.
 
 >[!NOTE]
 >Der Analystenbericht  listet außerdem generische Erkennungen auf, mit denen eine vielzahl von Bedrohungen sowie Komponenten oder Verhaltensweisen identifiziert werden können, die für die verfolgte Bedrohung spezifisch sind. Diese generischen Erkennungen spiegeln sich nicht in den Diagrammen wider.
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>Endpunkterkennungs- und Reaktionswarnungen (EDR)
-EDR-Warnungen werden für Geräte [ausgelöst, die in Microsoft Defender for Endpoint onboarded sind.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure) Diese Warnungen beruhen im Allgemeinen auf Sicherheitssignalen, die vom Microsoft Defender for Endpoint-Sensor und anderen Endpunktfunktionen gesammelt werden , z. B. Antivirus, Netzwerkschutz, Manipulationsschutz, die als leistungsfähige Signalquellen dienen.
+EDR-Warnungen werden für Geräte [ausgelöst, die in Microsoft Defender for Endpoint onboarded sind.](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure) Diese Warnungen beruhen im Allgemeinen auf Sicherheitssignalen, die vom Microsoft Defender for Endpoint-Sensor und anderen Endpunktfunktionen gesammelt werden , z. B. Antivirus, Netzwerkschutz, Manipulationsschutz, die als leistungsfähige Signalquellen dienen.
 
 Wie die Liste der Antivirenerkennungen sind einige EDR-Warnungen so konzipiert, dass verdächtiges Verhalten, das möglicherweise nicht der nachverfolgten Bedrohung zugeordnet ist, allgemein kennzeichnen. In solchen Fällen identifiziert der Bericht die Warnung eindeutig als "generisch" und hat keinen Einfluss auf die Diagramme im Bericht.
 
@@ -100,10 +100,10 @@ Erweiterte Suchabfragen in den Analystenberichten wurden von Microsoft-Analysten
 
 
 >[!NOTE]
-> Die Bedrohungsanalyse ist auch in [Microsoft Defender for Endpoint verfügbar.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) Es verfügt jedoch nicht über die Datenintegration zwischen Microsoft Defender for Office und Microsoft Defender for Endpoint, über die Microsoft 365 Defender Threat Analytics verfügt.
+> Die Bedrohungsanalyse ist auch in [Microsoft Defender for Endpoint verfügbar.](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) Es verfügt jedoch nicht über die Datenintegration zwischen Microsoft Defender for Office und Microsoft Defender for Endpoint, über die Microsoft 365 Defender Threat Analytics verfügt.
 
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Bedrohungsanalyse – Übersicht](threat-analytics.md)
 - [Proaktives Aufsuchen von Bedrohungen mit erweiterter Suche](advanced-hunting-overview.md) 
-- [Benutzerdefinierte Erkennungsregeln](custom-detection-rules.md)
+- [Regeln für die benutzerdefinierte Erkennung](custom-detection-rules.md)

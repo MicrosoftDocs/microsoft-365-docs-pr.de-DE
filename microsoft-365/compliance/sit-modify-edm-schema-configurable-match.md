@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie ein EDM-Schema ändern, um eine konfigurierbare Übereinstimmung zu verwenden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2211e4d99d97fcce241a5f4c3ea7c9d8122ca9d7
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: e00466e4648ebe93f0658383515d1543f858e1b0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656801"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919372"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Ändern Sie das Schema für die genaue Datenübereinstimmung, um eine konfigurierbare Übereinstimmung zu verwenden
 
@@ -101,7 +101,7 @@ Das Banner `ignoredDelimiters` ist nicht vorhanden:
 - \"
 - \,
 
-6. Informationen zum Herstellen der Verbindung zu Security & Compliance Center PowerShell finden Sie unter [Verbinden mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+6. Informationen zum Herstellen der Verbindung zu Security & Compliance Center PowerShell finden Sie unter [Verbinden mit Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 7. Aktualisieren Sie Ihr Schema, indem Sie diese Cmdlets einzeln ausführen:
 
@@ -129,7 +129,7 @@ Das Banner `ignoredDelimiters` ist nicht vorhanden:
 
 - [Erstellen eines benutzerdefinierten Typs vertraulicher Informationen mit genauer Datenübereinstimmungsklassifizierung](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 - [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
-- [Benutzerdefinierte vertrauliche Informationstypen](custom-sensitive-info-types.md)
+- [Benutzerdefinierte vertrauliche Informationstypen](./sensitive-information-type-learn-about.md)
 - [Überblick über DLP-Richtlinien](data-loss-prevention-policies.md)
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
-- [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
+- [Microsoft Cloud App Security](/cloud-app-security)
+- [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

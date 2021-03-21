@@ -13,16 +13,16 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Aktivieren Sie eine Einstellung, die gemeinsame Erstellung und AutoSave in Desktop-Apps für beschriftete und verschlüsselte Dokumente in SharePoint und OneDrive aktiviert.
-ms.openlocfilehash: d26696530ed86e6608b6473fead0775fb07a060b
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 90c00eb448d6d8f02170a37062af05cb0c0db59d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454636"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919571"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Aktivieren Sie die gemeinsame Erstellung für Dateien, die mit Vertraulichkeitsbezeichnungen verschlüsselt sind
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Dieses Feature ist derzeit in der Vorschau und kann jederzeit geändert werden. 
@@ -58,7 +58,7 @@ Weitere Informationen zu dieser Metadatenänderung finden Sie in den folgenden R
 
 - Blogbeitrag: [Bevorstehende Änderungen am Microsoft Information Protection-Metadatenspeicher](https://techcommunity.microsoft.com/t5/microsoft-security-and/upcoming-changes-to-microsoft-information-protection-metadata/ba-p/1904418)
 
-- Öffnen von Spezifikationen: [2.6.3 Bezeichnungsinfos im Vergleich zu benutzerdefinierten Dokumenteigenschaften](https://docs.microsoft.com/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
+- Öffnen von Spezifikationen: [2.6.3 Bezeichnungsinfos im Vergleich zu benutzerdefinierten Dokumenteigenschaften](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
 Aufgrund dieser Änderungen aktivieren Sie diese Einstellung nicht, wenn Sie in Ihrer Organisation über Apps, Dienste, Skripts oder Tools verfügen, die Bezeichnungsmetadaten lesen oder in den alten Speicherort schreiben. Sollten Sie es tun, sind dies einige Beispielfolgen:
 
@@ -68,7 +68,7 @@ Aufgrund dieser Änderungen aktivieren Sie diese Einstellung nicht, wenn Sie in 
 
 - Gemeinsame Erstellung und AutoSave funktionieren für ein bezeichnetes und verschlüsseltes Dokument nicht, wenn ein anderer Benutzer es in einer Office-Desktop-App geöffnet hat, welche die neuen Bezeichnungsmetadaten nicht unterstützt
 
-- Eine Exchange Online-Nachrichtenflussregel, die [Bezeichnungen als benutzerdefinierte Eigenschaften in Office-Anlagen identifiziert](https://docs.microsoft.com/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization), verschlüsselt die E-Mail und den Anhang nicht oder verschlüsselt sie falsch
+- Eine Exchange Online-Nachrichtenflussregel, die [Bezeichnungen als benutzerdefinierte Eigenschaften in Office-Anlagen identifiziert](/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization), verschlüsselt die E-Mail und den Anhang nicht oder verschlüsselt sie falsch
 
 Im folgenden Abschnitt finden Sie eine Liste der Apps und Dienste, die diese Einstellung unterstützen, sowie die Änderungen an den Bezeichnungsmetadaten.
 
@@ -108,7 +108,7 @@ Microsoft 365-Dienste unterstützen automatisch die neuen Bezeichnungsmetadaten,
 
 - [Richtlinien für die automatische Bezeichnung](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [DLP-Richtlinien, die Vertraulichkeitsbezeichnungen als Bedingungen verwenden](dlp-sensitivity-label-as-condition.md)
-- [Microsoft Cloud App Security ist so konfiguriert, dass Vertraulichkeitsbezeichnungen angewendet werden](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
+- [Microsoft Cloud App Security ist so konfiguriert, dass Vertraulichkeitsbezeichnungen angewendet werden](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
 ## <a name="limitations"></a>Einschränkungen
 
@@ -125,7 +125,7 @@ Stellen Sie sicher, dass Sie die folgenden Einschränkungen dieses Features vers
     
     Bei Bezeichnungen mit einer dieser Verschlüsselungskonfigurationen werden die Bezeichnungen in Office-Apps angezeigt. Wenn Benutzer jedoch diese Bezeichnungen auswählen und niemand anderes das Dokument bearbeitet, werden sie gewarnt, dass das gemeinsame Erstellung und AutoSave nicht verfügbar sind. Wenn jemand anderes das Dokument bearbeitet, wird Benutzern eine Meldung angezeigt, dass die Bezeichnungen nicht angewendet werden können.
 
-- Wenn Sie den vereinheitlichten Bezeichnungs-Client von Azure Information Protection verwenden: Überprüfen Sie die Dokumentation für diesen Bezeichnungs-Client hinsichtlich [weiteren Voraussetzungen oder Einschränkungen](https://docs.microsoft.com/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview).
+- Wenn Sie den vereinheitlichten Bezeichnungs-Client von Azure Information Protection verwenden: Überprüfen Sie die Dokumentation für diesen Bezeichnungs-Client hinsichtlich [weiteren Voraussetzungen oder Einschränkungen](/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview).
 
 ## <a name="known-issues-for-this-preview"></a>Bekannte Probleme für diese Vorschau
 
@@ -171,7 +171,7 @@ Nachdem Sie die gemeinsame Erstellung für Dateien mit Vertraulichkeitsbezeichnu
 
 ![Option, bei der die gemeinsame Erstellung für Vertraulichkeitsbezeichnungen aktiviert ist](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-Wie Sie auf dem Screenshot sehen, nachdem diese Einstellung aktiviert wurde, können Sie sich an den [Microsoft-Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) wenden und das Deaktivieren dieser Einstellung anfordern. Diese Anfrage kann mehrere Tage dauern und Sie müssen nachweisen, dass Sie ein globaler Administrator für Ihren Mandanten sind. Gehen Sie davon aus, dass die üblichen Supportgebühren anfallen. 
+Wie Sie auf dem Screenshot sehen, nachdem diese Einstellung aktiviert wurde, können Sie sich an den [Microsoft-Support](/office365/admin/contact-support-for-business-products) wenden und das Deaktivieren dieser Einstellung anfordern. Diese Anfrage kann mehrere Tage dauern und Sie müssen nachweisen, dass Sie ein globaler Administrator für Ihren Mandanten sind. Gehen Sie davon aus, dass die üblichen Supportgebühren anfallen. 
 
 Wenn ein Supporttechniker diese Einstellung für Ihren Mandanten deaktiviert:
 
