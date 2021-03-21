@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen, wie die Aufbewahrung für SharePoint und OneDrive funktioniert.
-ms.openlocfilehash: dd1260df23579ad2e6605805bafe9e36d2274a8e
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 448f3e8e2ab827527b02263fea2b07de4b345dc1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727400"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919771"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informationen zur Aufbewahrung für SharePoint und OneDrive
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Die Informationen in diesem Artikel ergänzen den Beitrag [Informationen zur Aufbewahrung](retention.md) um spezifische Angaben für SharePoint und OneDrive.
 
@@ -49,7 +49,11 @@ Die folgenden Dateien können gelöscht werden:
 > [!TIP]
 > Wenn Sie eine [Abfrage mit einer Richtlinie für die automatische Anwendung einer Aufbewahrungsbezeichnung](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties) verwenden, können Sie Dokumentbibliotheken mithilfe des folgenden Eintrags ausschließen: `NOT(DocumentLink:"<URL to document library>")`
 
-Listenelemente werden von Aufbewahrungsbezeichnungen, nicht aber von Aufbewahrungsrichtlinien unterstützt, mit Ausnahme von Elementen in Systemlisten. Dies sind von SharePoint verwendete ausgeblendete Listen zum Verwalten des Systems und zum Einschließen des Gestaltungsvorlagenkatalogs, des Lösungskatalogs und der Datenquellen.
+Listenelemente werden von Aufbewahrungsbezeichnungen, nicht aber von Aufbewahrungsrichtlinien unterstützt, mit Ausnahme von Elementen in Systemlisten. Dies sind von SharePoint verwendete ausgeblendete Listen zum Verwalten des Systems und zum Einschließen des Gestaltungsvorlagenkatalogs, des Lösungskatalogs und der Datenquellen. Wenn Sie eine Aufbewahrungsbezeichnung auf ein unterstütztes Listenelement mit einem Dokumentanhang anwenden:
+- Für eine Standard-Aufbewahrungsbezeichnung (deklariert das Element nicht als Datensatz):
+    - Der Dokumentanhang erbt nicht automatisch die Aufbewahrungseinstellungen der Bezeichnung, sondern kann unabhängig davon bezeichnet werden.
+- Für eine Aufbewahrungsbezeichnung, die das Element als Datensatz deklariert: 
+    - Der Dokumentanhang erbt automatisch die Aufbewahrungseinstellungen der Bezeichnung, sondern das Dokument nicht bereits bezeichnet ist.
 
 Aufbewahrungseinstellungen aus Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen gelten nicht für Organisationsstrukturen, die Bibliotheken, Listen und Ordner umfassen.
 
