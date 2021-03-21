@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 3d083537f3a9337d88d63861e0bf66867f558aba
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 2443319d254130b38bb1047a633c85c160eadd8c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454005"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926000"
 ---
 # <a name="manage-topics-in-the-topic-center"></a>Verwalten von Themen im Themencenter 
 
@@ -52,7 +52,7 @@ Knowledge Manager unterstützen Sie dabei, ermittelte Themen durch den Themenleb
 Zum Verwalten von Themen im Themencenter müssen Sie folgende Themen verwalten:
 - Verfügen Sie über eine Lizenz für "Viva Topics".
 
-- Verfügen Sie über [**die Berechtigung Wer kann Themen**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) verwalten. Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
+- Verfügen Sie über [**die Berechtigung Wer kann Themen**](./topic-experiences-user-permissions.md) verwalten. Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
 
 Sie können die Seite Themen verwalten nicht im Themencenter anzeigen, es sei denn, Sie verfügen über die Berechtigung **Wer kann Themen verwalten.**
 
@@ -111,8 +111,4 @@ Beachten Sie, dass Sie ein bestätigtes Thema weiterhin ablehnen können.  Wechs
 ## <a name="published-topics"></a>Veröffentlichte Themen
 Veröffentlichte Themen wurden bearbeitet, sodass immer bestimmte Informationen angezeigt werden, die auf die Seite stoßen. Hier werden auch manuell erstellte Themen aufgelistet.
 
-   ![Verwalten von Themen](../media/knowledge-management/manage-topics-new.png) </br> 
-
-
-
-
+   ![Verwalten von Themen](../media/knowledge-management/manage-topics-new.png) </br>

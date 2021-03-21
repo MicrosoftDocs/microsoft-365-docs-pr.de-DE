@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 08dd78c7648126717113066e3c87b05e624f57d0
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 7426e22fd617e93fbf63748ba38fc705e4c995a9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712354"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924410"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -41,7 +41,7 @@ Die Tabelle im Schema der erweiterten Suche enthält Informationen zu Authentifi
 > Ausführliche Informationen zu den von einer Tabelle unterstützten Ereignistypen ( Werte) finden Sie unter Verwendung der integrierten Schemareferenz, die `ActionType` im Security Center verfügbar ist.
 
 >[!NOTE]
->Diese Tabelle enthält Azure Active Directory (AD)-Anmeldeaktivitäten, die von Cloud App Security nachverfolgt werden, insbesondere interaktive Anmeldungen und Authentifizierungsaktivitäten mithilfe von ActiveSync und anderen Legacyprotokollen. Nicht interaktive Anmeldungen, die in dieser Tabelle nicht verfügbar sind, können im Azure AD-Überwachungsprotokoll angezeigt werden. [Weitere Informationen zum Verbinden von Cloud App Security mit Microsoft 365](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
+>Diese Tabelle enthält Azure Active Directory (AD)-Anmeldeaktivitäten, die von Cloud App Security nachverfolgt werden, insbesondere interaktive Anmeldungen und Authentifizierungsaktivitäten mithilfe von ActiveSync und anderen Legacyprotokollen. Nicht interaktive Anmeldungen, die in dieser Tabelle nicht verfügbar sind, können im Azure AD-Überwachungsprotokoll angezeigt werden. [Weitere Informationen zum Verbinden von Cloud App Security mit Microsoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
 Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter [Referenz zur erweiterten Suche](advanced-hunting-schema-tables.md).
 

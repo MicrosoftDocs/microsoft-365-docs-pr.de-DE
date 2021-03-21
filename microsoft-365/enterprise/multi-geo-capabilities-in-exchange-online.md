@@ -11,13 +11,13 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
-description: Erfahren Sie mehr über Multi-Geo-Funktionen in Exchange Online, wie Funktionseinschränkungen und Post Fach Platzierung.
-ms.openlocfilehash: ca7203c72f23fd03512bf23eaa5a4687e4bac1b5
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Erfahren Sie mehr über Multi-Geo-Funktionen in Exchange Online, z. B. Funktionseinschränkungen und Postfachplatzierung.
+ms.openlocfilehash: bf1c3c8f510c57f47cbfc7b2609d97f5932e05d3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690602"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923732"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Multi-Geo-Funktionen in Exchange Online
 
@@ -59,4 +59,4 @@ Exchange Online synchronisiert die Eigenschaft **PreferredDataLocation** von Azu
 
 - Öffentliche Ordner werden in Multi-Geo-Organisationen unterstützt. Die öffentlichen Ordner müssen jedoch in dem zentralen Geo-Speicherort verbleiben. Sie können öffentliche Ordner nicht an Satelliten-Geo-Speicherorten verschieben.
 
-- In einer Multi-Geo-Umgebung wird die Geo-übergreifende Postfachüberwachung nicht unterstützt. Wenn beispielsweise einem Benutzer Berechtigungen für den Zugriff auf ein freigegebenes Postfach an einem anderen Geo-Speicherort zugewiesen wurden, werden die von diesem Benutzer ausgeführten Postfachaktionen im Postfachüberwachungsprotokoll des freigegebenen Postfachs nicht protokolliert. Weitere Informationen finden Sie unter [Postfachüberwachungen verwalten](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing?view=o365-worldwide).
+- In einer Multi-Geo-Umgebung wird die Geo-übergreifende Postfachüberwachung nicht unterstützt. Wenn beispielsweise einem Benutzer Berechtigungen für den Zugriff auf ein freigegebenes Postfach an einem anderen Geo-Speicherort zugewiesen wurden, werden die von diesem Benutzer ausgeführten Postfachaktionen im Postfachüberwachungsprotokoll des freigegebenen Postfachs nicht protokolliert. Weitere Informationen finden Sie unter [Postfachüberwachungen verwalten](../compliance/enable-mailbox-auditing.md?view=o365-worldwide).

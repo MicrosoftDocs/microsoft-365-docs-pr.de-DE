@@ -1,7 +1,7 @@
 ---
-title: Hello World für Microsoft 365 Defender REST-API
-description: Erfahren Sie, wie Sie eine App erstellen und ein Token für den Zugriff auf die Microsoft 365 -Defender-APIs verwenden.
-keywords: App, Token, Zugriff, AAD, App, Anwendungsregistrierung, Powershell, Skript, globaler Administrator, Berechtigung, Microsoft 365 Defender
+title: Hello World für Microsoft 365 Defender REST API
+description: Informationen zum Erstellen einer App und Verwenden eines Tokens für den Zugriff auf die Microsoft 365 Defender-APIs
+keywords: app, token, access, aad, app, application registration, powershell, script, global administrator, permission, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 66afa27d0fa7a092d3f9e9ed6c3b6abc6020cb8d
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 65319d46871282c454287af225647f89e3535c78
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928378"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924338"
 ---
-# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World für Microsoft 365 Defender REST-API
+# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World für Microsoft 365 Defender REST API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -44,47 +44,47 @@ Es sollte 5 bis 10 Minuten dauern, bis dieses Projekt abgeschlossen ist. Diese Z
 
 ### <a name="register-an-app-in-azure-active-directory"></a>Registrieren einer App in Azure Active Directory
 
-1. Melden Sie sich [bei Azure](https://portal.azure.com) als Benutzer mit der rolle **"Globaler Administrator"** an.
+1. Melden Sie sich [bei Azure](https://portal.azure.com) als Benutzer mit der Rolle **"Globaler Administrator"** an.
 
-2. Navigieren Sie zu **Azure Active**  >  **Directory-App-Registrierungen**  >  **Neue Registrierung.**
+2. Navigieren Sie zu **Azure Active Directory**  >  **App-Registrierungen** Neue  >  **Registrierung**.
 
    ![Abbildung von Microsoft Azure und Navigation zur Anwendungsregistrierung](../../media/atp-azure-new-app2.png)
 
-3. Wählen Sie im Registrierungsformular einen Namen für Ihre Anwendung aus, und wählen Sie dann **"Registrieren" aus.** Das Auswählen eines Umleitungs-URI ist optional. Sie benötigen keinen, um dieses Beispiel zu vervollständigen.
+3. Wählen Sie im Registrierungsformular einen Namen für Ihre Anwendung aus, und wählen Sie dann **Registrieren aus.** Das Auswählen eines Umleitungs-URI ist optional. Sie benötigen keinen, um dieses Beispiel zu vervollständigen.
 
-4. Wählen Sie auf der Anwendungsseite **die API-Berechtigungen** Hinzufügen von Berechtigungs-APIs aus, die meine Organisation >, geben Sie  >    >   Microsoft **Threat Protection** ein, und wählen Sie **Microsoft Threat Protection aus.** Ihre App kann jetzt auf Microsoft 365 Defender zugreifen.
+4. Wählen Sie auf der Anwendungsseite **API-Berechtigungen** Hinzufügen von Berechtigungs-APIs aus, die meine > verwendet, geben Sie  >    >   Microsoft **Threat Protection** ein, und wählen Sie **Microsoft Threat Protection aus.** Ihre App kann jetzt auf Microsoft 365 Defender zugreifen.
 
    > [!TIP]
    > *Microsoft Threat Protection* ist ein früherer Name für Microsoft 365 Defender und wird nicht in der ursprünglichen Liste angezeigt. Sie müssen damit beginnen, den Namen in das Textfeld zu schreiben, damit er angezeigt wird.
-   ![Abbildung der Auswahl von APIs](../../media/apis-in-my-org-tab.PNG)
+   ![Abbildung der API-Berechtigungsauswahl](../../media/apis-in-my-org-tab.PNG)
 
-   - Wählen **Sie "Anwendungsberechtigungen**  >  **Incident.Read.All"** und dann **"Berechtigungen hinzufügen" aus.**
+   - Wählen **Sie Anwendungsberechtigungen**  >  **Incident.Read.All aus,** und wählen Sie Berechtigungen hinzufügen **aus.**
 
    ![Abbildung des API-Zugriffs und der API-Auswahl](../../media/request-api-permissions.PNG)
 
-5. Wählen Sie **Administratorzuserteilung aus.** Jedes Mal, wenn Sie eine Berechtigung hinzufügen, müssen Sie die Administratorzuserteilung **auswählen,** damit sie wirksam wird.
+5. Wählen Sie **Administratorzuwilligung erteilen aus.** Jedes Mal, wenn Sie eine  Berechtigung hinzufügen, müssen Sie Administratorzuwilligung erteilen auswählen, damit sie wirksam wird.
 
     ![Abbildung der Berechtigungserteilung](../../media/grant-consent.PNG)
 
-6. Fügen Sie der Anwendung einen geheimen Schlüssel hinzu. Wählen **Sie & Schlüssel aus,** fügen Sie dem geheimen Schlüssel eine Beschreibung hinzu, und wählen Sie dann **"Hinzufügen" aus.**
+6. Fügen Sie der Anwendung einen geheimen Schlüssel hinzu. Wählen **Sie Zertifikate & Schlüssel** aus, fügen Sie dem Geheimen eine Beschreibung hinzu, und wählen Sie dann Hinzufügen **aus.**
 
     > [!TIP]
-    > Nachdem Sie **"Hinzufügen"** ausgewählt haben, wählen **Sie "Den generierten geheimen Wert kopieren" aus.** Sie können den geheimen Wert nach dem Verlassen nicht mehr abrufen.
+    > Nachdem Sie Hinzufügen **ausgewählt haben,** wählen **Sie den generierten geheimen Wert kopieren aus.** Sie können den geheimen Wert nach dem Verlassen nicht mehr abrufen.
 
-    ![Abbildung des Erstellens eines App-Schlüssels](../../media/webapp-create-key2.png)
+    ![Abbildung des App-Schlüssels erstellen](../../media/webapp-create-key2.png)
 
-7. Noten Sie Ihre Anwendungs-ID und Ihre Mandanten-ID an einem sicheren Ort auf. Sie werden auf der **Anwendungsseite unter "Übersicht"** aufgeführt.
+7. Noten Sie Ihre Anwendungs-ID und Ihre Mandanten-ID an einem sicheren Ort auf. Sie werden unter **Übersicht auf** Ihrer Anwendungsseite aufgelistet.
 
    ![Abbildung der erstellten App-ID](../../media/app-and-tenant-ids.png)
 
 ### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>Abrufen eines Tokens mithilfe der App und Verwenden des Tokens für den Zugriff auf die API
 
-Weitere Informationen zu Azure Active Directory-Token finden Sie im [Azure AD-Lernprogramm.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Weitere Informationen zu Azure Active Directory-Token finden Sie im [Azure AD-Lernprogramm](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
-> Obwohl das Beispiel in dieser Demo-App Sie dazu ermuntert, ihren geheimen Wert zu Testzwecken einzugeben, sollten Sie geheime Schlüssel niemals in eine Anwendung hartcodieren, die in der Produktion ausgeführt wird.  Ein Drittanbieter kann Ihr Geheimnis für den Zugriff auf Ressourcen verwenden. Mithilfe von Azure Key Vault können Sie die Geheimen Ihrer App [schützen.](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates) Ein praktisches Beispiel, wie Sie Ihre App schützen können, finden Sie unter "Verwalten geheimer Schlüssel [in Ihren Server-Apps mit Azure Key Vault".](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
+> Das Beispiel in dieser Demo-App ermutigt Sie zwar, ihren  geheimen Wert zu Testzwecken einzugeben, aber Sie sollten geheime Schlüssel niemals in eine Anwendung hartcodieren, die in der Produktion ausgeführt wird. Ein Drittanbieter kann Ihr Geheimnis für den Zugriff auf Ressourcen verwenden. Mithilfe von Azure Key Vault können Sie die Geheimen Ihrer App [schützen.](/azure/key-vault/general/about-keys-secrets-certificates) Ein praktisches Beispiel, wie Sie Ihre App schützen können, finden Sie unter [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
 
-1. Kopieren Sie das folgende Skript, und fügen Sie es in Ihren bevorzugten Texteditor ein. Speichern unter **Get-Token.ps1**. Sie können den Code auch wie in PowerShell ISE ausführen, aber Sie sollten ihn speichern, da wir ihn erneut ausführen müssen, wenn wir das Skript zum Abrufen von Vorfällen im nächsten Abschnitt verwenden.
+1. Kopieren Sie das skript unten, und fügen Sie es in Ihren bevorzugten Texteditor ein. Speichern unter **Get-Token.ps1**. Sie können den Code auch wie in PowerShell ISE ausführen, aber Sie sollten ihn speichern, da wir ihn erneut ausführen müssen, wenn wir das Skript zum Abrufen von Vorfällen im nächsten Abschnitt verwenden.
 
     Dieses Skript generiert ein Token und speichern es im Arbeitsordner unter dem Namen *Latest-token.txt*.
 
@@ -115,16 +115,16 @@ Weitere Informationen zu Azure Active Directory-Token finden Sie im [Azure AD-Le
 1. Kopieren Sie das token, das Sie erhalten haben, und fügen Sie es in [JWT](https://jwt.ms) ein, um es zu decodieren.
 1. *JWT* steht für *JSON Web Token*. Das decodierte Token enthält eine Reihe von JSON-formatierten Elementen oder Ansprüchen. Stellen Sie sicher, dass *der Rollenanspruch* innerhalb des decodierten Tokens die gewünschten Berechtigungen enthält.
 
-    In der folgenden Abbildung sehen Sie ein decodiertes Token, das von einer App mit ```Incidents.Read.All``` , und Berechtigungen erworben ```Incidents.ReadWrite.All``` ```AdvancedHunting.Read.All``` wurde:
+    In der folgenden Abbildung sehen Sie ein decodiertes Token, das von einer App erworben wurde, mit ```Incidents.Read.All``` , ```Incidents.ReadWrite.All``` und ```AdvancedHunting.Read.All``` Berechtigungen:
 
     ![Bild jwt.ms](../../media/api-jwt-ms.png)
 
 ### <a name="get-a-list-of-recent-incidents"></a>Eine Liste der letzten Vorfälle erhalten
 
-Das folgende Skript verwendet **Get-Token.ps1** für den Zugriff auf die API. Anschließend wird eine Liste der Vorfälle abgerufen, die innerhalb der letzten 48 Stunden zuletzt aktualisiert wurden, und die Liste wird als JSON-Datei gespeichert.
+Das folgende Skript verwendet **Get-Token.ps1** für den Zugriff auf die API. Anschließend wird eine Liste der Vorfälle abgerufen, die zuletzt innerhalb der letzten 48 Stunden aktualisiert wurden, und speichert die Liste als JSON-Datei.
 
 > [!IMPORTANT]
-> Speichern Sie dieses Skript in demselben Ordner, den **Sie** Get-Token.ps1.
+> Speichern Sie dieses Skript in dem Ordner, den Sie **Get-Token.ps1.**
 
 ```PowerShell
 # This script returns incidents last updated within the past 48 hours.
@@ -163,12 +163,12 @@ $outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"
 Out-File -FilePath $outputJsonPath -InputObject $incidents
 ```
 
-Sie sind fertig! Sie haben dies erfolgreich abgeschlossen:
+Sie sind alle fertig! Sie haben erfolgreich:
 
 - Eine Anwendung wurde erstellt und registriert.
-- Dieser Anwendung wurde die Berechtigung zum Lesen von Warnungen erteilt.
-- Verbunden mit der API.
-- Verwenden eines PowerShell-Skripts zum Zurückgeben von Vorfällen, die in den letzten 48 Stunden aktualisiert wurden.
+- Erteilte Berechtigung für diese Anwendung zum Lesen von Warnungen.
+- Mit der API verbunden.
+- Verwendet ein PowerShell-Skript, um Vorfälle zurückzukehren, die in den letzten 48 Stunden aktualisiert wurden.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
@@ -176,6 +176,6 @@ Sie sind fertig! Sie haben dies erfolgreich abgeschlossen:
 - [Zugreifen auf die Microsoft 365 Defender-APIs](api-access.md)
 - [Erstellen einer App für den Zugriff auf Microsoft 365 Defender ohne Benutzer](api-create-app-web.md)
 - [Erstellen einer App für den Zugriff auf Microsoft 365 Defender-APIs im Auftrag eines Benutzers](api-create-app-user-context.md)
-- [Erstellen einer App mit Mehr-Mandanten-Partnerzugriff auf Microsoft 365 -Defender-APIs](api-partner-access.md)
-- [Verwalten geheimer Schlüssel in Ihren Server-Apps mit Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
-- [OAuth 2.0-Autorisierung für die Benutzerauthentifizierung und den Zugriff auf die API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+- [Erstellen einer App mit Mehr-Mandanten-Partnerzugriff auf Microsoft 365 Defender-APIs](api-partner-access.md)
+- [Verwalten von Geheimschlüsseln in Ihren Server-Apps mit Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)
+- [OAuth 2.0 Autorisierung für die Benutzer anmeldung und den API-Zugriff](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

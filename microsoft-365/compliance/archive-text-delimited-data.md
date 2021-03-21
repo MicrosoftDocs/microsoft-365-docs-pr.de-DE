@@ -1,5 +1,5 @@
 ---
-title: Einrichten eines Connectors zum Archivieren von Text getrennten Daten in Microsoft 365
+title: Einrichten eines Connectors zum Archivieren von texttrennten Daten in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,78 +11,78 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Administratoren können einen Connector zum Importieren und Archivieren von Text getrennten Daten aus Globanet in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren. Nach dem Archivieren dieser Daten können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten von drittanbieterdaten verwenden.
-ms.openlocfilehash: 1c06a1220e597dbf8e278222347a5a5e9c46567e
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+description: Administratoren können einen Connector zum Importieren und Archivieren von texttrennten Daten aus Demanet in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren. Nachdem Sie diese Daten archiviert haben, können Sie Compliancefeatures wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um Daten von Drittanbietern zu verwalten.
+ms.openlocfilehash: 00003cbd897cc80b0596dbb7e5988f010cd7f7e2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49619901"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925009"
 ---
-# <a name="set-up-a-connector-to-archive-text-delimited-data"></a>Einrichten eines Connectors zum Archivieren von durch Text getrennten Daten
+# <a name="set-up-a-connector-to-archive-text-delimited-data"></a>Einrichten eines Connectors zum Archivieren von texttrennten Daten
 
-Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center, um Text getrennte Daten in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Globanet stellt einen [Text getrennten Connector](https://globanet.com/text-delimited) bereit, der zum Erfassen von Elementen aus einer Drittanbieter-Datenquelle (regelmäßig) und zum Importieren dieser Elemente in Microsoft 365 konfiguriert ist. Der Connector wandelt Inhalte aus der Text getrennten Datenquelle in ein e-Mail-Nachrichtenformat um und importiert diese Elemente dann in das Postfach des Benutzers in Microsoft 365.
+Verwenden Sie im Microsoft 365 Compliance Center einen Globanet-Connector, um texttrennte Daten in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Das Programm Bietet [](https://globanet.com/text-delimited) einen texttrennten Connector, der so konfiguriert ist, dass Elemente aus einer Datenquelle eines Drittanbieters (regelmäßig) erfasst und in Microsoft 365 importiert werden. Der Connector konvertiert Inhalte aus der texttrennten Datenquelle in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in das Postfach des Benutzers in Microsoft 365.
 
-Nachdem Text getrennte Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365-Kompatibilitätsfeatures wie Beweissicherungsverfahren, eDiscovery-und Aufbewahrungsrichtlinien sowie Aufbewahrungs Bezeichnungen anwenden. Durch die Verwendung eines Text getrennten Daten Konnektors zum Importieren und Archivieren von Daten in Microsoft 365 können Sie Ihrer Organisation dabei helfen, mit behördlichen und behördlichen Richtlinien konform zu bleiben.
+Nachdem texttrennte Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365-Compliancefeatures wie z. B. Das Aufbewahrungsverfahren für Rechtsstreitigkeiten, eDiscovery und Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen anwenden. Die Verwendung eines texttrennten Datenconnector zum Importieren und Archivieren von Daten in Microsoft 365 kann Dazu beitragen, dass Ihre Organisation die Richtlinien von Behörden und Behörden einhalten kann.
 
-## <a name="overview-of-archiving-the-text-delimited-data"></a>Übersicht über die Archivierung der durch Text getrennten Daten
+## <a name="overview-of-archiving-the-text-delimited-data"></a>Übersicht über die Archivierung der texttrennten Daten
 
-In der folgenden Übersicht wird erläutert, wie Sie mithilfe eines Konnektors Text getrennte Quellinformationen in Microsoft 365 archivieren.
+In der folgenden Übersicht wird der Prozess der Verwendung eines Connectors zum Archivieren von texttrennten Quellinformationen in Microsoft 365 erläutert.
 
-![Archivierungs Workflow für Text getrennte Daten](../media/TextDelimitedConnectorWorkflow.png)
+![Archivierungsworkflow für texttrennte Daten](../media/TextDelimitedConnectorWorkflow.png)
 
-1. Ihre Organisation arbeitet mit der Text getrennten Quelle zusammen, um eine Text getrennte Website einzurichten und zu konfigurieren.
+1. Ihre Organisation arbeitet mit der texttrennten Quelle zusammen, um eine durch Text getrennte Website einrichten und konfigurieren zu können.
 
-2. Alle 24 Stunden werden Chatnachrichten von der Text getrennten Quelle auf die Globanet Merge1-Website kopiert. Der Connector wandelt auch den Inhalt in ein e-Mail-Nachrichtenformat um.
+2. Einmal alle 24 Stunden werden Chatnachrichten aus der texttrennten Quelle auf die Website "Globenet Merge1" kopiert. Der Connector konvertiert den Inhalt auch in ein E-Mail-Nachrichtenformat.
 
-3. Der durch den Text getrennte Connector, den Sie im Microsoft 365 Compliance Center erstellen, stellt jeden Tag eine Verbindung mit der Globanet Merge1-Website her und überträgt die Nachrichten an einen sicheren Azure-Speicherort in der Microsoft-Cloud.
+3. Der texttrennte Connector, den Sie im Microsoft 365 Compliance Center erstellen, stellt jeden Tag eine Verbindung mit der Website "Globenet Merge1" bereit und überträgt die Nachrichten an einen sicheren Azure Storage-Speicherort in der Microsoft-Cloud.
 
-4. Der Connector importiert die konvertierten Nachrichtenelemente in die Postfächer bestimmter Benutzer, wobei der Wert der *Email* -Eigenschaft der automatischen Benutzerzuordnung wie in Schritt 3 beschrieben wird. Ein neuer Unterordner im Posteingangsordner mit dem Namen " **Text-Delimited** " wird in den Benutzerpostfächern erstellt, und die Nachrichtenelemente werden in diesen Ordner importiert. Der Connector bestimmt anhand des Werts der *Email* -Eigenschaft, in welches Postfach Elemente importiert werden sollen. Jede Nachricht enthält diese Eigenschaft, die mit der e-Mail-Adresse jedes Teilnehmers aufgefüllt wird.
+4. Der Connector importiert die konvertierten Nachrichtenelemente mithilfe des Werts der *Email-Eigenschaft* der automatischen Benutzerzuordnung in die Postfächer bestimmter Benutzer, wie in Schritt 3 beschrieben. In den Benutzerpostfächern wird ein neuer Unterordner im Posteingangsordner mit dem Namen **Text- Delimited** erstellt, und die Nachrichtenelemente werden in diesen Ordner importiert. Der Connector bestimmt mithilfe des Werts der Email-Eigenschaft, in welches Postfach Elemente *importiert werden.* Jede Nachricht enthält diese Eigenschaft, die mit der E-Mail-Adresse jedes Teilnehmers gefüllt wird.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Erstellen Sie ein Globanet-Merge1-Konto für Microsoft-Connectors. Um dieses Konto zu erstellen, wenden Sie sich an den [Globanet-Kunden Support](https://globanet.com/ms-connectors-contact). Sie melden sich bei diesem Konto an, wenn Sie den Connector in Schritt 1 erstellen.
+- Erstellen Sie ein Konto für das Merge1-Konto von "GlobeNet Merge1" für Microsoft-Connectors. Wenden Sie sich zum Erstellen dieses Kontos an [den Kundensupport von "Globenet".](https://globanet.com/ms-connectors-contact) Sie melden sich bei diesem Konto an, wenn Sie den Connector in Schritt 1 erstellen.
 
-- Der Benutzer, der den Text getrennten Connector in Schritt 1 erstellt (und in Schritt 3 vervollständigt wird), muss der Rolle "Post Fach Import/-Export" in Exchange Online zugewiesen sein. Diese Rolle ist für das Hinzufügen von Connectors auf der Seite **Daten Konnektoren** im Microsoft 365 Compliance Center erforderlich. Diese Rolle ist in Exchange Online standardmäßig keiner Rollengruppe zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Der Benutzer, der den texttrennten Connector in Schritt 1 erstellt (und in Schritt 3 abgeschlossen) muss der Rolle Postfachimportexport in Exchange Online zugewiesen werden. Diese Rolle ist erforderlich, um Connectors auf der Seite **Datenconnectors** im Microsoft 365 Compliance Center hinzuzufügen. Diese Rolle ist standardmäßig nicht einer Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle Postfachimportexport zur Rollengruppe Organisationsverwaltung in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle Postfachimportexport zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten Erstellen von [Rollengruppen](/Exchange/permissions-exo/role-groups#create-role-groups) oder [Ändern](/Exchange/permissions-exo/role-groups#modify-role-groups) von Rollengruppen im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
-## <a name="step-1-set-up-the-text-delimited-connector"></a>Schritt 1: Einrichten des Text getrennten Connectors
+## <a name="step-1-set-up-the-text-delimited-connector"></a>Schritt 1: Einrichten des durch Text getrennten Connectors
 
-Der erste Schritt besteht darin, auf die Seite " **Daten Konnektoren** " im Microsoft 365 Compliance Center zuzugreifen und einen Connector für Text getrennte Daten zu erstellen.
+Der erste Schritt besteht im Zugriff auf die Seite **Datenconnectors** im Microsoft 365 Compliance Center und dem Erstellen eines Connectors für texttrennte Daten.
 
-1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com/) und klicken Sie dann auf **Daten Konnektoren** mit  >  **Trenn** Zeichen.
+1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com/) zu, und klicken Sie dann auf **Datenconnectors**  >  **Text-Delimited**.
 
-2. Klicken Sie auf der Seite mit den **Text Trennzeichen** für Produktbeschreibungen auf **Connector hinzufügen**.
+2. Klicken Sie **auf der Seite mit texttrennten** Produktbeschreibungen auf Connector **hinzufügen.**
 
-3. Klicken Sie auf der Seite **Nutzungsbedingungen** auf **annehmen**.
+3. Klicken Sie **auf der Seite Nutzungsbedingungen** auf **Akzeptieren**.
 
-4. Geben Sie einen eindeutigen Namen ein, der den Connector identifiziert, und klicken Sie dann auf **weiter**.
+4. Geben Sie einen eindeutigen Namen ein, der den Connector identifiziert, und klicken Sie dann auf **Weiter**.
 
 5. Melden Sie sich bei Ihrem Merge1-Konto an, um den Connector zu konfigurieren.
 
-## <a name="step-2-configure-the-text-delimited-connector-on-the-globanet-merge1-site"></a>Schritt 2: Konfigurieren des Text getrennten Konnektors auf der Globanet-Merge1-Website
+## <a name="step-2-configure-the-text-delimited-connector-on-the-globanet-merge1-site"></a>Schritt 2: Konfigurieren des durch Text getrennten Connectors auf der Website "Globenet Merge1"
 
-Der zweite Schritt besteht darin, den Text getrennten Connector auf der Merge1-Website zu konfigurieren. Informationen zum Konfigurieren des Text getrennten Konnektors auf der Globanet-Merge1-Website finden Sie unter [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20text-delimited%20User%20Guide%20.pdf).
+Der zweite Schritt besteht im Konfigurieren des durch Text getrennten Connectors auf der Merge1-Website. Informationen zum Konfigurieren des durch Text getrennten Connectors auf der Website "Merge1" von "Merge1" finden Sie unter [Merge1-Benutzerhandbuch](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20text-delimited%20User%20Guide%20.pdf)für Drittanbieterconnectors .
 
-Nachdem Sie auf **& Ende speichern** klicken, wird die Seite **Benutzerzuordnung** im Connector-Assistenten im Microsoft 365 Compliance Center angezeigt.
+Nachdem Sie auf **& Beenden** klicken, wird die Seite Benutzerzuordnung im Connector-Assistenten im Microsoft 365 Compliance Center angezeigt. 
 
-## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Schritt 3: Zuordnen von Benutzern und Abschließen des Connector-Setups
+## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Schritt 3: Zuordnung von Benutzern und Abschließen der Connectoreinrichtung
 
-Führen Sie die folgenden Schritte aus, um Benutzer zuzuordnen und das Connector-Setup im Microsoft 365 Compliance Center abzuschließen:
+Führen Sie die folgenden Schritte aus, um Benutzer zu zuordnungen und die Connectoreinrichtung im Microsoft 365 Compliance Center abzuschließen:
 
-1. Aktivieren Sie auf der Seite **externe Benutzer auf Microsoft 365-Benutzer zuordnen** die Option Automatische Benutzerzuordnung. Die Text getrennten Quellelemente enthalten eine Eigenschaft mit dem Namen " *e-Mail*", die e-Mail-Adressen für Benutzer in Ihrer Organisation enthält. Wenn der Connector diese Adresse einem Microsoft 365-Benutzer zuordnen kann, werden die Elemente in das Postfach dieses Benutzers importiert.
+1. Aktivieren Sie auf der Seite Externe **Benutzer zu Microsoft 365-Benutzern** zuordnen die automatische Benutzerzuordnung. Die Text- Getrennte Quellelemente enthalten eine Eigenschaft namens *Email*, die E-Mail-Adressen für Benutzer in Ihrer Organisation enthält. Wenn der Connector diese Adresse einem Microsoft 365-Benutzer zuordnen kann, werden die Elemente in das Postfach dieses Benutzers importiert.
 
-2. Klicken Sie auf **weiter**, überprüfen Sie Ihre Einstellungen, und wechseln Sie dann zur Seite **Daten Konnektoren** , um den Fortschritt des Importvorgangs für den neuen Connector anzuzeigen.
+2. Klicken **Sie auf Weiter,** überprüfen Sie  Ihre Einstellungen, und wechseln Sie dann zur Seite Datenconnectors, um den Fortschritt des Importvorgangs für den neuen Connector zu sehen.
 
-## <a name="step-4-monitor-the-text-delimited-connector"></a>Schritt 4: Überwachen des Text getrennten Connectors
+## <a name="step-4-monitor-the-text-delimited-connector"></a>Schritt 4: Überwachen des durch Text getrennten Connectors
 
-Nachdem Sie den Text getrennten Connector erstellt haben, können Sie den Connectorstatus im Microsoft 365 Compliance Center anzeigen.
+Nachdem Sie den Text- Delimited Connector erstellt haben, können Sie den Connectorstatus im Microsoft 365 Compliance Center anzeigen.
 
-1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und klicken Sie im linken Navigationsbereich auf **Daten-Konnektoren** .
+1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und klicken Sie **im** linken Navigations navi auf Datenconnectors.
 
-2. Klicken Sie auf die Registerkarte **Connectors** , und wählen Sie dann den **Text getrennten** Verbinder aus, um die Flyout-Seite anzuzeigen. Diese Seite enthält die Eigenschaften und Informationen zum Connector.
+2. Klicken Sie **auf die** Registerkarte Connectors, und wählen Sie dann den **Text-Delimited Connector** aus, um die Flyoutseite anzeigen zu können. Diese Seite enthält die Eigenschaften und Informationen zum Connector.
 
-3. Klicken Sie unter **Connectorstatus with Source** auf den Link **Download Protokoll** , um das Statusprotokoll für den Connector zu öffnen (oder zu speichern). Dieses Protokoll enthält Informationen zu den Daten, die in die Microsoft-Cloud importiert wurden.
+3. Klicken **Sie unter Connectorstatus mit Quelle** auf den Link **Protokoll** herunterladen, um das Statusprotokoll für den Connector zu öffnen (oder zu speichern). Dieses Protokoll enthält Informationen zu den Daten, die in die Microsoft Cloud importiert wurden.
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-- Zurzeit wird das Importieren von Anlagen oder Elementen, die größer als 10 MB sind, nicht unterstützt. Unterstützung für größere Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.
+- Derzeit wird das Importieren von Anlagen oder Elementen, die größer als 10 MB sind, nicht unterstützt. Unterstützung für größere Elemente wird zu einem späteren Zeitpunkt verfügbar sein.

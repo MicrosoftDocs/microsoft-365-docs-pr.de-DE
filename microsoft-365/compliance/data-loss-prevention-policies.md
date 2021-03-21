@@ -22,18 +22,18 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie vertrauliche Informationen Ihrer Organisation in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: 75c2f4d81b3378d031adc394a9c8f7615d51079c
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 7d526d5eeb74f0d31f375974824e7a76344bcd76
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682798"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925809"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Verhinderung von Datenverlust – Übersicht
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
-> Kürzlich wurden Funktionen zur Verhinderung von Datenverlust zu den Microsoft Teams-Chat- und Kanalnachrichten für Benutzer hinzugefügt, die für Office 365 Advanced Compliance lizensiert sind. Sie sind als eigenständige Option verfügbar und in Office 365 E5 und Microsoft 365 E5 Compliance enthalten. Weitere Informationen zu den Lizenzierungsanforderungen finden Sie unter [Microsoft 365-Dienste auf Mandantenebene – Leitfaden zur Lizenzierung](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+> Kürzlich wurden Funktionen zur Verhinderung von Datenverlust zu den Microsoft Teams-Chat- und Kanalnachrichten für Benutzer hinzugefügt, die für Office 365 Advanced Compliance lizensiert sind. Sie sind als eigenständige Option verfügbar und in Office 365 E5 und Microsoft 365 E5 Compliance enthalten. Weitere Informationen zu den Lizenzierungsanforderungen finden Sie unter [Microsoft 365-Dienste auf Mandantenebene – Leitfaden zur Lizenzierung](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 Um Geschäftsstandards und branchenspezifische Vorschriften einzuhalten, müssen Organisationen vertrauliche Informationen schützen und verhindern, dass sie versehentlich offengelegt werden. Vertrauliche Informationen können Finanzdaten oder personenbezogene Informationen (PII) wie Kreditkartennummern, Sozialversicherungsnummern oder Gesundheitsakten umfassen. Mithilfe einer Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Office 365 Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
   
@@ -204,7 +204,7 @@ Darüber hinaus können Sie auch einen Vorfallsbericht mit Details zum Ereignis 
   
 ![Seite zum Konfigurieren von Vorfallberichten](../media/Alerts-and-incident-report.png)
 
-DLP überprüft E-Mails anders als Elemente in SharePoint Online oder OneDrive for Business. In SharePoint Online und OneDrive for Business überprüft DLP vorhandene sowie neue Elemente und generiert bei jeder gefundenen Übereinstimmung eine Warnung und einen Vorfallsbericht. In Exchange Online überprüft DLP nur neue E-Mail-Nachrichten und generiert einen Bericht, wenn eine Richtlinienübereinstimmung vorliegt. DLP* *überprüft oder vergleicht _nicht_* zuvor vorhandene E-Mail-Elemente, die in einem Postfach oder Archiv gespeichert sind.
+DLP überprüft E-Mails anders als Elemente in SharePoint Online oder OneDrive for Business. In SharePoint Online und OneDrive for Business überprüft DLP vorhandene sowie neue Elemente und generiert bei jeder gefundenen Übereinstimmung eine Warnung und einen Vorfallsbericht. In Exchange Online überprüft DLP nur neue E-Mail-Nachrichten und generiert einen Bericht, wenn eine Richtlinienübereinstimmung vorliegt. DLP überprüft oder vergleicht ***nicht*** zuvor vorhandene E-Mail-Elemente, die in einem Postfach oder Archiv gespeichert sind.
   
 ## <a name="grouping-and-logical-operators"></a>Gruppieren und logische Operatoren
 
@@ -240,7 +240,7 @@ Sie können eine Gruppe, die eigene Bedingungen und einen eigenen Operator inner
 
 Mit einem Operator zwischen Gruppen wählen Sie aus, ob die Bedingungen in einer Gruppe oder die Bedingungen in allen Gruppen erfüllt sein müssen, damit der Inhalt der Regel entspricht.
   
-Die integrierte *U.S. HIPAA*-Richtlinie enthält beispielsweise eine Regel mit einem **UND**-Operator zwischen den Gruppen, damit Inhalte identifiziert werden, die Folgendes enthalten: 
+Die integrierte **U.S. HIPAA**-Richtlinie enthält beispielsweise eine Regel mit einem **UND**-Operator zwischen den Gruppen, damit Inhalte identifiziert werden, die Folgendes enthalten: 
   
 - aus der Gruppe **PII-Bezeichner** (mindestens eine Sozialversicherungsnummer **ODER** eine DEA-Nummer) 
     
@@ -354,20 +354,20 @@ Wenn Sie eine zuvor erstellte und veröffentlichte [Aufbewahrungsbezeichnung](re
 
 - Die Aufbewahrungsbezeichnung muss vor der Verwendung als Bedingung in einer DLP-Richtlinie erstellt und veröffentlicht werden.
 - Die Synchronisierung veröffentlichter Aufbewahrungsbezeichnungen kann ein bis sieben Tage dauern. Weitere Informationen zu Aufbewahrungsbezeichnungen, die in einer Aufbewahrungsrichtlinie veröffentlicht sind, finden Sie unter [Wann Aufbewahrungsbezeichnungen zur Verfügung stehen](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) und zu automatisch veröffentlichten Aufbewahrungsbezeichnungen unter [Wie lange dauert es, bis Aufbewahrungsbezeichnungen übernommen werden](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect).
-- Die Verwendung einer Aufbewahrungsbezeichnung in einer Richtlinie **wird nur für Elemente in Microsoft Office SharePoint Online und OneDrive** unterstützt.
+- Die Verwendung einer Aufbewahrungsbezeichnung in einer Richtlinie **wird nur für Elemente in SharePoint und OneDrive** unterstützt.
 
   ![Bezeichnungen als Bedingung](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
   Vielleicht möchten Sie in einer DLP-Richtlinie eine Aufbewahrungsbezeichnung verwenden, weil Elemente vorliegen, die unter Aufbewahrung und Disposition stehen, und Sie auch andere Kontrollelemente anwenden möchten wie z. B.:
 
-  - Sie haben eine Aufbewahrungsbezeichnung namens Steuerjahr 2018 veröffentlicht. Durch die Anwendung auf in SharePoint gespeicherte Steuerdokumente von 2018, werden diese für 10 Jahre aufbewahrt und dann entsorgt. Sie möchten außerdem nicht, dass diese Elemente außerhalb Ihrer Organisation freigegeben werden, wofür Sie mit einer DLP-Richtlinie sorgen können.
+  - Sie haben eine Aufbewahrungsbezeichnung namens **Steuerjahr 2018** veröffentlicht, durch deren Anwendung auf Steuerdokumente von 2018, die in SharePoint gespeichert sind, diese für 10 Jahre aufbewahrt und dann freigegeben werden. Sie möchten außerdem nicht, dass diese Elemente außerhalb Ihrer Organisation freigegeben werden, wofür Sie mit einer DLP-Richtlinie sorgen können.
 
   > [!IMPORTANT]
   > Wenn Sie eine Aufbewahrungsbezeichnung als Bedingung in einer DLP-Richtlinie angeben und zudem Exchange und/oder Microsoft Teams als Speicherort verwenden, wird die folgende Fehlermeldung angezeigt: **"Der Schutz von mit Bezeichnungen versehenen Inhalten in E-Mail- und Teams-Nachrichten wird nicht unterstützt. Entfernen Sie die Bezeichnung unten, oder deaktivieren Sie Exchange und Microsoft Teams als Speicherort."** Der Grund dafür ist, dass der Exchange-Transport die Bezeichnungsmetadaten beim Senden und Zustellen von Nachrichten nicht ausgewertet. 
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>Verwenden einer Vertraulichkeitsbezeichnung als Bedingung in einer DLP-Richtlinie
 
-Vertraulichkeitsbezeichnung als Bedingung in DLP-Richtlinien befindet sich derzeit in der Vorschau. [Weitere Informationen](https://docs.microsoft.com/microsoft-365/compliance/dlp-sensitivity-label-as-condition).
+Vertraulichkeitsbezeichnung als Bedingung in DLP-Richtlinien befindet sich derzeit in der Vorschau. [Weitere Informationen](./dlp-sensitivity-label-as-condition.md).
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Die Beziehung dieses Features zu anderen Features
 
@@ -497,10 +497,10 @@ Während Dokumente auf Websites hinzugefügt oder geändert werden, werden die I
   
 <!-- conflict with a DLP policy is bad wording --> Dokumente können jedoch nicht nur mit einer DLP-Richtlinie in Konflikt stehen, sondern es können auch Änderungen vorgenommen werden, die dazu führen, dass sie nun einer DLP-Richtlinie entsprechen. Wenn eine Person zum Beispiel einem Dokument Kreditkartennummern hinzufügt, kann dies dazu führen, dass die DLP-Richtlinie den Zugriff auf das Dokument automatisch sperrt. Wenn die Person jedoch später die vertraulichen Informationen entfernt, wird die Aktion (in diesem Fall die Sperre) automatisch entfernt, wenn das Dokument das nächste Mal anhand der Richtlinie ausgewertet wird.
   
-Eine DLP wertet alle Inhalte aus, die indiziert werden können. Weitere Informationen zu den Dateitypen, die standardmäßig durchforstet werden, finden Sie unter [Standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
+Eine DLP wertet alle Inhalte aus, die indiziert werden können. Weitere Informationen zu den Dateitypen, die standardmäßig durchforstet werden, finden Sie unter [Standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 > [!NOTE]
-> Die externe Freigabe neuer Dateien in SharePoint kann standardmäßig blockiert werden, bis das neue Element von mindestens einer DLP-Richtlinie gescannt wurde. Ausführliche Informationen finden Sie unter [Neue Dateien standardmäßig als vertraulich kennzeichnen](https://docs.microsoft.com/sharepoint/sensitive-by-default). 
+> Die externe Freigabe neuer Dateien in SharePoint kann standardmäßig blockiert werden, bis das neue Element von mindestens einer DLP-Richtlinie gescannt wurde. Ausführliche Informationen finden Sie unter [Neue Dateien standardmäßig als vertraulich kennzeichnen](/sharepoint/sensitive-by-default). 
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Richtlinienauswertung in Exchange, Outlook und Outlook im Web
 
@@ -542,19 +542,19 @@ Diese Berechtigungen sind nur erforderlich, um eine DLP-Richtlinie zu erstellen 
 
 Zur Verwendung der meisten Cmdlets für das Security &amp; Compliance Center müssen Sie folgende Aktionen ausführen:
   
-1. [Stellen Sie eine Verbindung zum Office 365 Security &amp; Compliance Center mithilfe von Remote-PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. [Stellen Sie eine Verbindung zum Office 365 Security &amp; Compliance Center mithilfe von Remote-PowerShell her](/powershell/exchange/connect-to-scc-powershell).
     
-2. Verwenden Sie eines dieser [policy-and-compliance-dlp-Cmdlets](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection).
+2. Verwenden Sie eines dieser [policy-and-compliance-dlp-Cmdlets](/powershell/module/exchange/export-dlppolicycollection).
     
 DLP-Berichte müssen jedoch Daten aus allen Microsoft 365-Komponenten (einschließlich Exchange Online) abrufen. Aus diesem Grund sind die **Cmdlets für die DLP-Berichte in Exchange Online PowerShell und nicht in Security &amp; Compliance Center Powershell** verfügbar. Zur Verwendung der Cmdlets für die DLP-Berichte müssen Sie daher folgende Aktionen ausführen:
   
-1. [Stellen Sie eine Verbindung mit Exchange Online mithilfe der Remote-PowerShell her](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Stellen Sie eine Verbindung mit Exchange Online mithilfe der Remote-PowerShell her](/powershell/exchange/connect-to-exchange-online-powershell).
     
 2. Verwenden Sie eines dieser Cmdlets für die DLP-Berichte:
     
-    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetectionsReport)
+    - [Get-DlpDetectionsReport](/powershell/module/exchange/Get-DlpDetectionsReport)
 
-    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetailReport)
+    - [Get-DlpDetailReport](/powershell/module/exchange/Get-DlpDetailReport)
     
 ## <a name="more-information"></a>Weitere Informationen
 

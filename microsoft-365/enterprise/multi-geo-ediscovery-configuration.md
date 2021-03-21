@@ -12,19 +12,19 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 ms.collection: Strat_SP_gtc
-description: In diesem Artikel erfahren Sie, wie Sie mithilfe des Parameters Region eDiscovery für die Verwendung an Satellitenstandorten in Microsoft 365 Multi-Geo konfigurieren.
-ms.openlocfilehash: d1d66a9e7953b540e318c8364bdcb8d72654b482
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Erfahren Sie, wie Sie den Parameter Region verwenden, um eDiscovery für die Verwendung an Satellitenstandorten in Microsoft 365 Multi-Geo zu konfigurieren.
+ms.openlocfilehash: 4d3481fe8b72bb970893ce065293a7a2cc717331
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636805"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923720"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Konfiguration von Microsoft 365 Multi-Geo eDiscovery
 
-Mit den [erweiterten eDiscovery-Funktionen](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20) kann ein Multi-Geo-eDiscovery-Administrator alle GEOSS durchsuchen, ohne einen Sicherheitsfilter für die Region verwenden zu müssen. Daten werden in die Azure-Instanz des zentralen Speicherorts des Multi-Geo-Mandanten exportiert. 
+[Erweiterte eDiscovery-Funktionen](../compliance/overview-ediscovery-20.md) ermöglichen es einem Multi-Geo-eDiscovery-Administrator, alle Geografischen zu durchsuchen, ohne einen "Region"-Sicherheitsfilter verwenden zu müssen. Daten werden in die Azure-Instanz des zentralen Standorts des Multi-Geo-Mandanten exportiert. 
 
-Ohne erweiterte eDiscovery-Funktionen kann ein eDiscovery-Manager oder Administrator eines Multi-Geo-Mandanten eDiscovery nur am zentralen Standort dieses Mandanten durchführen. Um die Möglichkeit zur Durchführung von eDiscovery für Satellitenstandorte zu unterstützen, steht ein neuer Kompatibilitäts Sicherheitsfilter Parameter mit dem Namen "Region" über PowerShell zur Verfügung. Dieser Parameter kann von Mandanten verwendet werden, deren zentraler Standort in Nordamerika, Europa oder im asiatisch-pazifischen Raum liegt. Erweiterte eDiscovery wird für Mandanten empfohlen, deren zentraler Standort nicht in Nordamerika, Europa oder im asiatisch-pazifischen Raum liegt und die eDiscovery über Satelliten geografische Standorte hinweg ausführen müssen. 
+Ohne erweiterte eDiscovery-Funktionen kann ein eDiscovery-Manager oder Administrator eines Multi-Geo-Mandanten eDiscovery nur am zentralen Standort dieses Mandanten durchführen. Um die Möglichkeit zur Durchführung von eDiscovery für Satellitenstandorte zu unterstützen, steht über PowerShell ein neuer Compliancesicherheitsfilterparameter namens "Region" zur Verfügung. Dieser Parameter kann von Mandanten verwendet werden, deren zentraler Standort sich in Nordamerika, Europa oder dem Asiatisch-Pazifischen Raum befindet. Advanced eDiscovery wird für Mandanten empfohlen, deren zentraler Standort sich nicht in Nordamerika, Europa oder dem Asiatisch-Pazifischen Raum befindet und die eDiscovery über geografische Satellitenstandorte hinweg durchführen müssen. 
 
 Der globale Microsoft 365-Administrator muss eDiscovery-Managerberechtigungen zuweisen, damit andere Personen eDiscovery durchführen können, und einen "Region"-Parameter im entsprechenden Compliancesicherheitsfilter zuweisen, um die Region zum Durchführen von eDiscovery als Satellitenstandort festzulegen. Andernfalls wird eDiscovery nicht für den Satellitenstandort durchgeführt werden.
 
@@ -37,7 +37,7 @@ Wenn die eDiscovery-Manager- oder Administratorrolle für einen bestimmten Satel
 
 So legen Sie den Compliancesicherheitsfilter für eine Region fest
 
-1. [Herstellen einer Verbindung mit Microsoft 365 Security Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [Herstellen einer Verbindung mit Microsoft 365 Security Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. Verwenden Sie die folgende Syntax:
 
@@ -51,4 +51,4 @@ So legen Sie den Compliancesicherheitsfilter für eine Region fest
    New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
    ```
 
-Informationen zu weiteren Parametern und zur Syntax finden Sie im Artikel [New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/new-compliancesecurityfilter).
+Informationen zu weiteren Parametern und zur Syntax finden Sie im Artikel [New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter).

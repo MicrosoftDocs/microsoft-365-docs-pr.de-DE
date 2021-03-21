@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Verwenden Sie im Security & Compliance Center die Funktion zum Suchen und Löschen, um eine E-Mail-Nachricht in allen Postfächern in Ihrer Organisation zu suchen und daraus zu löschen.
-ms.openlocfilehash: 52871fc85a4d5aec1754c1957f2087552b442daf
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: b7bb1008120df8efefc983d526d90e8397b3a89e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423696"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924235"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Suchen nach und Löschen von E-Mail-Nachrichten
 
@@ -61,9 +61,9 @@ Im ersten Schritt wird eine Inhaltssuche erstellt und ausgeführt, um die Nachri
 
 - [Stichwortabfragen für die Inhaltssuche](keyword-queries-and-search-conditions.md)
 
-- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearch)
+- [New-ComplianceSearch](/powershell/module/exchange/New-ComplianceSearch)
 
-- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/Start-ComplianceSearch)
+- [Start-ComplianceSearch](/powershell/module/exchange/Start-ComplianceSearch)
 
 > [!NOTE]
 > Die Speicherorte für Inhalte, die im Rahmen der in diesem Schritt erstellten Inhaltssuche durchsucht werden, dürfen keine SharePoint- oder OneDrive for Business-Websites enthalten. Sie können nur Postfächer und öffentliche Ordner in eine Inhaltssuche einbeziehen, die zum Suchen von E-Mail-Nachrichten verwendet wird. Wenn die Inhaltssuche Websites umfasst, wird in Schritt 3 beim Ausführen des **New-ComplianceSearchAction**-Cmdlets eine Fehlermeldung angezeigt.
@@ -80,7 +80,7 @@ Das Ziel der Suchabfrage ist es, die Ergebnisse der Suche auf die Nachricht oder
 
 - Zeigen Sie eine Vorschau der Suchergebnisse an, um sicherzustellen, dass die Suche nur die Nachricht(en) zurückgegeben hat, die Sie löschen möchten.
 
-- Verwenden Sie die (im Detailbereich der Suche im Security & Compliance Center oder bei Verwendung des [Get-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517934)-Cmdlets angezeigten) statistischen Daten der Suchschätzung, um die Gesamtanzahl der Ergebnisse zu ermitteln.
+- Verwenden Sie die (im Detailbereich der Suche im Security & Compliance Center oder bei Verwendung des [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)-Cmdlets angezeigten) statistischen Daten der Suchschätzung, um die Gesamtanzahl der Ergebnisse zu ermitteln.
 
 Nachfolgend finden Sie zwei Beispiele für Abfragen, um verdächtige E-Mail-Nachrichten zu suchen.
 
@@ -105,7 +105,7 @@ Start-ComplianceSearch -Identity $Search.Identity
 
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Schritt 2: Herstellen einer Verbindung mit Security & Compliance Center-PowerShell
 
-Der nächste Schritt besteht darin, eine Verbindung mit der Security & Compliance Center PowerShell für Ihre Organisation herzustellen. Schrittweise Anleitungen erhalten Sie unter [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+Der nächste Schritt besteht darin, eine Verbindung mit der Security & Compliance Center PowerShell für Ihre Organisation herzustellen. Schrittweise Anleitungen erhalten Sie unter [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 Nachdem Sie die Verbindung mit der Security & Compliance Center-PowerShell hergestellt haben, führen Sie die Cmdlets **New-ComplianceSearch** und **Start-ComplianceSearch** aus, die Sie im vorherigen Schritt vorbereitet haben.
 
@@ -127,7 +127,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
 Wenn Sie den vorherigen Befehl ausführen, um Nachrichten vorläufig oder endgültig zu löschen, ist die durch den Parameter *SearchName* bestimmte Suche die Inhaltssuche, die Sie in Schritt 1 erstellt haben.
 
-Weitere Informationen finden Sie unter [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearchAction).
+Weitere Informationen finden Sie unter [New-ComplianceSearchAction](/powershell/module/exchange/New-ComplianceSearchAction).
 
 ## <a name="more-information"></a>Weitere Informationen
 

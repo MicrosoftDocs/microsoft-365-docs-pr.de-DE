@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie eine Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) verwenden, um Dokumente mit Eigenschaften aus einem Drittanbietersystem zu schützen.
-ms.openlocfilehash: 971d2a1dd4f69f7bbd2598e31fc99c9c5cfe1eda
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 2d66a0a863b2076044a5c1d1cb9c3d4e8c29a186
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423798"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925561"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI oder anderen Eigenschaften
 
@@ -55,7 +55,7 @@ Beispiele
 
 Dies ist wichtig, da DLP den Suchcrawl verwendet, um vertrauliche Informationen auf Ihren Websites zu identifizieren und zu klassifizieren und diese vertraulichen Informationen dann in einem sicheren Teil des Suchindex zu speichern. Wenn Sie ein Dokument in Office 365 hochladen, erstellt SharePoint automatisch durchforstete Eigenschaften auf Grundlage der Dokumenteigenschaften. Um aber eine FCI- oder eine andere Eigenschaft in einer DLP-Richtlinie zu verwenden, muss die durchforstete Eigenschaft einer verwalteten Eigenschaft zugeordnet werden, damit Inhalt mit dieser Eigenschaft im Index gespeichert wird.
 
-Weitere Informationen zur Suche und zu verwalteten Eigenschaften finden Sie unter [Verwalten des Suchschemas in SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=627454).
+Weitere Informationen zur Suche und zu verwalteten Eigenschaften finden Sie unter [Verwalten des Suchschemas in SharePoint Online](/sharepoint/manage-search-schema).
 
 ### <a name="step-1-upload-a-document-with-the-needed-property-to-office-365"></a>Schritt 1: Hochladen eines Dokuments mit der erforderlichen Eigenschaft in Office 365
 
@@ -105,9 +105,9 @@ Als Nächstes erstellen sie eine DLP-Richtlinie mit zwei Regeln, die beide die B
 
 Die Bedingung **Dokumenteigenschaften enthalten** einen dieser Werte ist vorübergehend nicht auf der Benutzeroberfläche des Security Compliance Center verfügbar, aber Sie können diese Bedingung weiterhin mithilfe &amp; von PowerShell verwenden. Sie können die Cmdlets verwenden, um mit einer DLP-Richtlinie zu arbeiten, und die Cmdlets mit dem Parameter verwenden, um die Bedingung Document-Eigenschaften hinzuzufügen, die einen dieser `New\Set\Get-DlpCompliancePolicy` `New\Set\Get-DlpComplianceRule` Werte `ContentPropertyContainsWords` **enthalten.**
 
-Weitere Informationen zu diesen Cmdlets finden Sie unter [Security &amp; Compliance Center cmdlets](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
+Weitere Informationen zu diesen Cmdlets finden Sie unter [Security &amp; Compliance Center cmdlets](/powershell/exchange/exchange-online-powershell).
 
-1. [Herstellen einer Verbindung mit dem Security &amp; Compliance Center mithilfe der Remote-PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [Herstellen einer Verbindung mit dem Security &amp; Compliance Center mithilfe der Remote-PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. Erstellen Sie die Richtlinie mithilfe  `New-DlpCompliancePolicy` von .
 
@@ -125,7 +125,7 @@ Diese PowerShell erstellt eine DLP-Richtlinie, die für alle Speicherorte gilt.
    New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
    ```
 
-   Windows Server FCI enthält viele integrierte Eigenschaften, einschließlich **personenbezogener Informationen, die** in diesem Beispiel verwendet werden. Die möglichen Werte für jede Eigenschaft können für jede Organisation unterschiedlich sein. Die **hier** **verwendeten Werte High, Moderate** und **Low** sind nur ein Beispiel. Für Ihre Organisation können Sie die Windows Server FCI-Klassifizierungseigenschaften mit ihren möglichen Werten in der Datei Server Resource Manager auf dem Windows Server-basierten Dateiserver anzeigen. Weitere Informationen finden Sie unter [Create a classification property](https://go.microsoft.com/fwlink/p/?LinkID=627456).
+   Windows Server FCI enthält viele integrierte Eigenschaften, einschließlich **personenbezogener Informationen, die** in diesem Beispiel verwendet werden. Die möglichen Werte für jede Eigenschaft können für jede Organisation unterschiedlich sein. Die **hier** **verwendeten Werte High, Moderate** und **Low** sind nur ein Beispiel. Für Ihre Organisation können Sie die Windows Server FCI-Klassifizierungseigenschaften mit ihren möglichen Werten in der Datei Server Resource Manager auf dem Windows Server-basierten Dateiserver anzeigen. Weitere Informationen finden Sie unter [Create a classification property](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11)).
 
 Wenn Sie fertig sind, sollte ihre Richtlinie über zwei neue Regeln verfügen, die beide die **Document-Eigenschaften verwenden, die eine dieser Werte enthalten.** Diese Bedingung wird nicht auf der Benutzeroberfläche angezeigt, obwohl die anderen Bedingungen, Aktionen und Einstellungen angezeigt werden.
 
@@ -142,7 +142,7 @@ Um überall Inhalte mit dieser Eigenschaft zu ermitteln, sollten Sie manuell anf
 > [!CAUTION]
 > Erneute Indizierung einer Website kann das Suchsystem massiv belasten. Indizieren Sie Ihre Website nur dann erneut, wenn dies in Ihrem Szenario unbedingt erforderlich ist.
 
-Weitere Informationen finden Sie unter [Manuelles Anfordern des Durchforstens und des erneuten Indizierens einer Website, Bibliothek oder Liste](https://go.microsoft.com/fwlink/p/?LinkID=627457).
+Weitere Informationen finden Sie unter [Manuelles Anfordern des Durchforstens und des erneuten Indizierens einer Website, Bibliothek oder Liste](/sharepoint/crawl-site-content).
 
 ### <a name="reindex-a-site-optional"></a>Erneutes Indizieren einer Website (optional)
 

@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Datensätze mithilfe von Aufbewahrungsbezeichnungen deklarieren.
-ms.openlocfilehash: 34b5272a8bed9be01c3965dae258c88facec0145
-ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
+ms.openlocfilehash: fd88858c8d5cd1870f594050607b784a9dc5b78c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "48830604"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925661"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Datensätzen mithilfe von Aufbewahrungsbezeichnungen deklarieren
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Um Dokumente und E-Mails als [Datensatz](records-management.md#records) zu deklarieren, verwenden Sie [Aufbewahrungsbezeichnungen](retention.md#retention-labels), die Elemente als **Datensatz** oder **regulatorischen Datensatz** markieren.
 
@@ -41,7 +41,7 @@ Danach können Sie diese Bezeichnungen entweder in einer Aufbewahrungsrichtlinie
 
 Standardmäßig wird die Aufbewahrungsbezeichnungsoption zum Markieren von Inhalten als regulatorischer Datensatz im Aufbewahrungsbezeichnungs-Assistenten nicht angezeigt. Wenn Sie diese Option anzeigen möchten, müssen Sie zuerst einen PowerShell-Befehl ausführen:
 
-1. [Herstellen einer Verbindung mit der Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Herstellen einer Verbindung mit der Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Führen Sie das folgende Cmdlet aus:
     

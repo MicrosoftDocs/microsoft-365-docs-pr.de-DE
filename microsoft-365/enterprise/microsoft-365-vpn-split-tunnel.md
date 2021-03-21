@@ -18,12 +18,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Anleitung zum Verwenden des geteilten VPN-Tunnels mit Office 365 zur Optimierung der Office 365-Konnektivität für Remotebenutzer.
-ms.openlocfilehash: 103a5cc36c9e981ccef5717971e32330078ed721
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 9f54d8836105896d8d00afc4a622975c007bda85
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456387"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924188"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Optimieren der Office 365-Konnektivität für Remotebenutzer mithilfe eines geteilten VPN-Tunnels
 <!---
@@ -43,7 +43,7 @@ Der Kern dieses Ansatzes besteht darin, Unternehmen eine einfache Methode bereit
 
 - Schwächt die Grundursache für die Mehrzahl der vom Kunden gemeldeten Probleme mit der Leistungs- und Netzwerkkapazität in Unternehmens-VPN-Architekturen mit Auswirkungen auf die Office 365-Benutzeroberfläche sofort ab
   
-  Die empfohlene Lösung zielt speziell auf die im Thema [Office 365-URLs und -IP-Adressbereiche](https://aka.ms/o365ips) als **Optimize** kategorisierten Office 365-Dienstendpunkte ab. Der Datenverkehr zu diesen Endpunkten ist in hohem Maße gegen Latenz und Bandbreiteneinschränkung empfindlich, und die Umgehung des VPN-Tunnels kann die Endbenutzererfahrung erheblich verbessern sowie die Netzwerklast des Unternehmens reduzieren. Office 365-Verbindungen, die nicht den größten Teil der Bandbreiten- oder der Benutzeroberflächenbasis bilden, können weiterhin mit dem restlichen Internet-gebundenen Datenverkehr durch den VPN-Tunnel geleitet werden. Weitere Informationen finden Sie unter [Die Strategie des geteilten VPN-Tunnels](#the-vpn-split-tunnel-strategy).
+  Die empfohlene Lösung zielt speziell auf die im Thema [Office 365-URLs und -IP-Adressbereiche](./urls-and-ip-address-ranges.md) als **Optimize** kategorisierten Office 365-Dienstendpunkte ab. Der Datenverkehr zu diesen Endpunkten ist in hohem Maße gegen Latenz und Bandbreiteneinschränkung empfindlich, und die Umgehung des VPN-Tunnels kann die Endbenutzererfahrung erheblich verbessern sowie die Netzwerklast des Unternehmens reduzieren. Office 365-Verbindungen, die nicht den größten Teil der Bandbreiten- oder der Benutzeroberflächenbasis bilden, können weiterhin mit dem restlichen Internet-gebundenen Datenverkehr durch den VPN-Tunnel geleitet werden. Weitere Informationen finden Sie unter [Die Strategie des geteilten VPN-Tunnels](#the-vpn-split-tunnel-strategy).
 
 - Kann von Kunden schnell konfiguriert, getestet und implementiert werden, ohne dass zusätzliche Infrastruktur- oder Anwendungsanforderungen erforderlich sind
 
@@ -90,7 +90,7 @@ Die festgelegten Endpunkte können auf den erzwungenen VPN-Tunnel aufgeteilt wer
 
 Sicherheitselemente, wie z. B. DLP, AV-Schutz, Authentifizierung und Zugriffssteuerung, können für diese Endpunkte auf verschiedenen Ebenen innerhalb des Diensts wesentlich effizienter bereitgestellt werden. Da auch der Großteil des Datenverkehrvolumens von der VPN-Lösung weggeleitet wird, setzt dies VPN-Kapazität für kritischen geschäftlichen Datenverkehr frei, der immer noch darauf angewiesen ist. Außerdem dürfte es in vielen Fällen nicht mehr notwendig sein, ein langwieriges und kostspieliges Aktualisierungsprogramm zu durchlaufen, um diese neue Arbeitsweise handhaben zu können.
 
-![VPN-Konfigurationsdetails für geteilte Tunnel](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![Konfigurationsdetails für geteilte Tunnel-VPN](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _Abbildung 3: eine geteilte VPN-Tunnellösung mit definierten Office 365-Ausnahmen, die direkt an den Dienst gesendet werden. Aller anderer Datenverkehr wird unabhängig vom Ziel zurück in das Unternehmensnetzwerk gezwungen._
 

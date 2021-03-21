@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Mehr zu Datensätzen, die Ihnen bei der Implementierung einer Datensatzverwaltungslösung in Microsoft 365 unterstützen.
-ms.openlocfilehash: 4b8209108564f0a75f8d70efecd57d2526d9face
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f622e7e6a75cacf5b9cf283847e6b3eea718d542
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200546"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925571"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Versionsverwaltung zur Aktualisierung von Datensätzen verwenden, die in Microsoft Office SharePoint Online oder OneDrive gespeichert sind
 
->*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 >[!NOTE] 
 > Da regulatorische Datensätze die Bearbeitung blockieren, ist die Versionsverwaltung für diese Datensätze nicht verfügbar.

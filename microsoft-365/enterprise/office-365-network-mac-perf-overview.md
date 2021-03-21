@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Übersicht über die Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
-ms.openlocfilehash: 159edf6f95910625c3f924d02c8307d681164df7
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 0bfcebff4ebbefdb77049119fef2402af1ca8f90
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454241"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926096"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
 
@@ -97,7 +97,7 @@ Viele Unternehmen verfügen über Netzwerkperimeterkonfigurationen, die im Laufe
 
 ## <a name="how-we-can-solve-these-challenges"></a>Wie wir diese Herausforderungen lösen können
 
-Unternehmen können die allgemeine Benutzerfreundlichkeit verbessern und ihre Umgebung schützen, indem sie [die Office 365-Konnektivitätsprinzipien](https://aka.ms/pnc) und das Netzwerkkonnektivitätsfeature für Microsoft 365 Admin Center verwenden. In den meisten Fällen hat das Folgen dieser allgemeinen Prinzipien erhebliche positive Auswirkungen auf die Wartezeit der Endbenutzer, die Dienstzuverlässigkeit und die Gesamtleistung von Microsoft 365.
+Unternehmen können die allgemeine Benutzerfreundlichkeit verbessern und ihre Umgebung schützen, indem sie [die Office 365-Konnektivitätsprinzipien](./microsoft-365-network-connectivity-principles.md) und das Netzwerkkonnektivitätsfeature für Microsoft 365 Admin Center verwenden. In den meisten Fällen hat das Folgen dieser allgemeinen Prinzipien erhebliche positive Auswirkungen auf die Wartezeit der Endbenutzer, die Dienstzuverlässigkeit und die Gesamtleistung von Microsoft 365.
 
 Microsoft wird manchmal aufgefordert, Probleme mit der Netzwerkleistung mit Microsoft 365 für große Unternehmenskunden zu untersuchen, und diese haben häufig eine Ursache im Zusammenhang mit der Netzwerkperimeterinfrastruktur der Kunden. Wenn eine häufige Ursache eines Kundennetzwerkperimeterproblems gefunden wird, versuchen wir, einfache Testmessungen zu identifizieren, die es identifizieren. Ein Test mit einem Messschwellenwert, der ein bestimmtes Problem identifiziert, ist wertvoll, da wir dieselbe Messung an jedem Beliebigen Ort testen, bestimmen können, ob diese Hauptursache vorhanden ist, und sie als Netzwerkinblick mit dem Administrator teilen können.
 

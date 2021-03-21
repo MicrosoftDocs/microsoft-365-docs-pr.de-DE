@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Zusammenfassung: Office 365 erfordert eine Internetverbindung. Die unten aufgeführten Endpunkte sollten für Kunden, die Office 365-Pläne verwenden, einschließlich Government Community Cloud (GCC), erreichbar sein.'
 hideEdit: true
-ms.openlocfilehash: 826da75ea4f6991a3291e8b1e36d644fb19a7704
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 1c0a2a486bf6964edc9b94fd670c96ade161cacd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50596956"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925268"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365-URLs und -IP-Adressbereiche
 
@@ -69,9 +69,9 @@ Dies sind die dargestellten Datenspalten:
 
 [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md)
 
-[Allgemeine Microsoft Stream Endpunkte](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
+[Allgemeine Microsoft Stream Endpunkte](/stream/network-overview#general-microsoft-stream-endpoints)
   
-[Überwachen der Microsoft 365-Konnektivität](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity)
+[Überwachen der Microsoft 365-Konnektivität](./monitor-connectivity.md)
 
 [Rooten Sie das ZS und das ZS-Paket auf das Anwendungssystem des Drittanbieters](../compliance/encryption-office-365-certificate-chains.md)
   

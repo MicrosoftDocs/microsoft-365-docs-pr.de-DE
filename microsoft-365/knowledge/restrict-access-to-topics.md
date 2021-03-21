@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: b8c49c96ace14ac1ba03411b5670d8e77268109a
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: dc344e0263bab287133ddb01ecab262440eb9e10
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453908"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925952"
 ---
 # <a name="restrict-access-to-topics-in-microsoft-viva-topics"></a>Einschränken des Zugriffs auf Themen in Microsoft Viva Topics
 
@@ -33,28 +33,21 @@ Während Wissensadministratoren die Einstellungen des Wissensnetzwerks steuern, 
 
 Der Wissensadministrator kann den Zugriff auf bestimmte Themen einschränken, indem er verhindert, dass er in der anfänglichen Indizierung gefunden wird. Es gibt zwei Möglichkeiten, diese Aufgabe in den Administratoreinstellungen des Knowledge Network im Microsoft 365 Admin Center auszuführen.
  
-- [Wählen Sie SharePoint-Websites](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery#select-sharepoint-topic-sources)aus, die von der Themenerkennung ausgeschlossen werden: Sie können diese Einstellung verwenden, um zu verhindern, dass bestimmte SharePoint-Websites nach Themen gecrawlt werden.
-- [Themen nach Name ausschließen:](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery#exclude-topics-by-name)Administratoren können diese Einstellung verwenden, um zu verhindern, dass bestimmte Themen nach Namen erkannt werden. In den Administratoreinstellungen des Wissensnetzwerks kann ein Administrator eine Liste der Themen hochladen, die in einer CSV-Datei ausgeschlossen werden sollen. Sie können Themen ausschließen, die genaue oder teilweise Übereinstimmungen mit einem Themennamen haben.
+- [Wählen Sie SharePoint-Websites](./topic-experiences-discovery.md#select-sharepoint-topic-sources)aus, die von der Themenerkennung ausgeschlossen werden: Sie können diese Einstellung verwenden, um zu verhindern, dass bestimmte SharePoint-Websites nach Themen gecrawlt werden.
+- [Themen nach Name ausschließen:](./topic-experiences-discovery.md#exclude-topics-by-name)Administratoren können diese Einstellung verwenden, um zu verhindern, dass bestimmte Themen nach Namen erkannt werden. In den Administratoreinstellungen des Wissensnetzwerks kann ein Administrator eine Liste der Themen hochladen, die in einer CSV-Datei ausgeschlossen werden sollen. Sie können Themen ausschließen, die genaue oder teilweise Übereinstimmungen mit einem Themennamen haben.
 
 ## <a name="prevent-topics-from-being-viewed-by-specific-users"></a>Verhindern, dass Themen von bestimmten Benutzern angezeigt werden
 
-Wissensadministratoren können auch [auswählen, wer Themen in Ihrer Organisation anzeigen kann.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules) Mit dieser Einstellung können Sie auswählen, welche lizenzierten Benutzer alle Themen anzeigen können. In einer Pilotumgebung können Sie beispielsweise nur einer kleinen Gruppe von Benutzern erlauben, Themen anzeigen zu können.
+Wissensadministratoren können auch [auswählen, wer Themen in Ihrer Organisation anzeigen kann.](./topic-experiences-knowledge-rules.md) Mit dieser Einstellung können Sie auswählen, welche lizenzierten Benutzer alle Themen anzeigen können. In einer Pilotumgebung können Sie beispielsweise nur einer kleinen Gruppe von Benutzern erlauben, Themen anzeigen zu können.
 
 ## <a name="remove-topics-from-being-viewed"></a>Entfernen von Themen aus der Anzeige
 
-Wissensmanager können Themen [entfernen,](https://docs.microsoft.com/microsoft-365/knowledge/manage-topics) damit benutzer sie nicht mehr sehen können. Auf der **Seite Themen verwalten** im **Themencenter** können Wissensmanager bestimmte Themen ablehnen, um zu verhindern, dass sie angezeigt werden. Themen können unabhängig davon entfernt werden, ob sie sich in einem vorgeschlagenen oder bestätigten Zustand befinden.
+Wissensmanager können Themen [entfernen,](./manage-topics.md) damit benutzer sie nicht mehr sehen können. Auf der **Seite Themen verwalten** im **Themencenter** können Wissensmanager bestimmte Themen ablehnen, um zu verhindern, dass sie angezeigt werden. Themen können unabhängig davon entfernt werden, ob sie sich in einem vorgeschlagenen oder bestätigten Zustand befinden.
 
 Entfernte Themen können später bei Bedarf wieder als angezeigte Themen hinzugefügt werden. 
 
 
 ## <a name="see-also"></a>Weitere Informationen:
-
-
-
-  
-
-
-
 
 
 

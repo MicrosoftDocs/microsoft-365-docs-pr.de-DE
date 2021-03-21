@@ -1,5 +1,5 @@
 ---
-title: Verringern des beim Lesen von e-Mail-Nachrichten verwendeten Arbeitsspeichers mithilfe von Lean Popouts
+title: Verwenden von schlanken Popups zum Reduzieren des beim Lesen von E-Mail-Nachrichten verwendeten Arbeitsspeichers
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,47 +13,47 @@ search.appverid:
 ms.assetid: a6d6ba01-2562-4c3d-a8f1-78748dd506cf
 f1.keywords:
 - NOCSH
-description: Dieser Artikel enthält Informationen zur Verwendung von Lean popouts, um die Leistung von Nachrichten Downloads in Outlook im Internet zu verbessern.
+description: Dieser Artikel enthält Informationen zur Verwendung schlanker Popouts, um die Leistung des Nachrichtendownloads in Outlook im Web zu verbessern.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7bf53464ac6b2783fbbfc335fd4ff73dbe4435fb
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0fec3e0267b7299e34de541a184cf92e99e260f1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690774"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925256"
 ---
-# <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Verringern des beim Lesen von e-Mail-Nachrichten verwendeten Arbeitsspeichers mithilfe von Lean Popouts
+# <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Verwenden von schlanken Popups zum Reduzieren des beim Lesen von E-Mail-Nachrichten verwendeten Arbeitsspeichers
 
-Dieser Artikel enthält Informationen zum Verbessern der Leistung von Nachrichten Downloads in Outlook im Internet. Dieser Artikel ist Teil der [Netzwerkplanung und Leistungsoptimierung für Office 365](https://aka.ms/tune) -Projekt.
+Dieser Artikel enthält Informationen zur Verbesserung der Leistung des Nachrichtendownloads in Outlook im Web. Dieser Artikel ist Teil des [Projekts Netzwerkplanung und Leistungsoptimierung für Office 365.](./network-planning-and-performance.md)
   
-Als Office 365 globaler Administrator können Sie Outlook im Internet so konfigurieren, dass es _schlanke Popouts_, eine kleinere, weniger arbeitsspeicherintensive Version bestimmter e-Mail-Nachrichten in Microsoft Edge oder Internet Explorer. Wenn Lean Popouts für Outlook im Internet konfiguriert sind, werden serverseitige gerenderte Komponenten geladen, die die Leistung optimieren.
+Als globaler Office 365-Administrator können Sie Outlook im Web so konfigurieren, dass schlanke _Popouts_ zur Verfügung gestellt werden, eine kleinere, weniger arbeitsspeicherintensive Version bestimmter E-Mail-Nachrichten in Microsoft Edge oder Internet Explorer. Wenn schlanke Popups für Outlook im Web konfiguriert sind, werden serverseitige gerenderte Komponenten geladen, die die Leistung optimieren.
   
 > [!NOTE]
-> Seit März 2018 sind keine Lean-Popouts für Nachrichten verfügbar, die Nutzungsrechte Einschränkungen angeben, beispielsweise IRM (Information Rights Management, Verwaltung von Informationsrechten).
+> Ab März 2018 sind schlanke Popouts nicht für Nachrichten verfügbar, die Nutzungsrechteinschränkungen angeben, z. B. IrM (Information Rights Management).
   
-Diese Features funktionieren weiterhin im Hauptfenster, stehen aber in Lean Popouts nicht zur Verfügung:
+Diese Features funktionieren weiterhin im Hauptfenster, sind jedoch in schlanken Popouts nicht verfügbar:
   
 - Outlook-Add-Ins
   
-- Skype for Business Anwesenheit
+- Skype for Business-Anwesenheit
   
-## <a name="to-configure-lean-popouts-for-all-users-within-your-office-365-organization"></a>So konfigurieren Sie Lean Popouts für alle Benutzer in Ihrer Office 365 Organisation
+## <a name="to-configure-lean-popouts-for-all-users-within-your-office-365-organization"></a>So konfigurieren Sie schlanke Popups für alle Benutzer in Ihrer Office 365-Organisation
   
-1. Stellen [Sie mithilfe von Remote-PowerShell eine Verbindung zu Exchange Online her](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx ).
+1. [Herstellen einer Verbindung mit Exchange Online mithilfe von Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
   
-2. Führen Sie das Cmdlet " [OrganizationConfig](https://technet.microsoft.com/library/aa997443%28v=exchg.160%29.aspx) " mit dem Parameter "LeanPopoutEnabled" wie folgt aus:
+2. Führen Sie [das Cmdlet Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) mit dem Parameter LeanPopoutEnabled wie folgt aus:
 
   ```powershell
   Set-OrganizationConfig -LeanPopoutEnabled <$true |$false >
   ```
 
-  Um beispielsweise Lean Popouts für alle Benutzer in Ihrer Organisation zu aktivieren:
+  So aktivieren Sie beispielsweise schlanke Popouts für alle Benutzer in Ihrer Organisation:
   
   ```powershell
   Set-OrganizationConfig -LeanPopoutEnabled $true
   ```
 
-  So deaktivieren Sie Lean Popouts für alle Benutzer in Ihrer Organisation:
+  So deaktivieren Sie schlanke Popups für alle Benutzer in Ihrer Organisation:
 
   ```powershell
   Set-OrganizationConfig -LeanPopoutEnabled $false

@@ -20,65 +20,65 @@ ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: Diese Übersichts Schritte sollen Ihnen helfen, Ihr Netzwerk einzurichten, Ihre Identitäten zu erstellen, Microsoft 365-apps bereitzustellen und Ihre Daten zu migrieren.
-ms.openlocfilehash: 65465b56c5bf9846dab8678b96e17b0646060c74
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Diese Übersichtsschritte helfen Ihnen beim Einrichten Ihres Netzwerks, beim Erstellen Ihrer Identitäten, beim Bereitstellen von Microsoft 365-Apps und beim Migrieren Ihrer Daten.
+ms.openlocfilehash: f750b14738de20251e1f218679384dcf8db4d1e9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690457"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924892"
 ---
 # <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>Bereitstellen von Microsoft 365 Enterprise für Ihre Organisation
 
-Sind Sie bereit, Microsoft 365 Enterprise bereitzustellen, es in Ihre lokale Infrastruktur zu integrieren und Ihre Mitarbeiter in die Lage zu versetzen, die Cloud-basierte Produktivität und Zusammenarbeit zu nutzen?
+Sind Sie bereit, Microsoft 365 Enterprise zu bereitstellen, in Ihre lokale Infrastruktur zu integrieren und Ihren Mitarbeitern zu ermöglichen, von der cloudbasierten Produktivität und Zusammenarbeit zu profitieren?
 
-In diesem Artikel werden zwei Bereitstellungsoptionen beschrieben, unabhängig davon, ob Sie Hilfe benötigen oder diese auf eigene Faust ausführen. In jedem Fall stellt Microsoft einen geführten Pfad für die erfolgreiche Bereitstellung zur Verfügung.
+In diesem Artikel werden zwei Bereitstellungsoptionen beschrieben, unabhängig davon, ob Sie Hilfe wünschen oder dies allein tun. In jedem Fall bietet Microsoft einen geführten Pfad, den Sie für einen erfolgreichen Bereitstellungserfolg befolgen können.
 
-## <a name="guided-microsoft-365-enterprise-setup-process-with-fasttrack"></a>Assistent für Microsoft 365 Enterprise-Setup mit "kurzschritt"
+## <a name="guided-microsoft-365-enterprise-setup-process-with-fasttrack"></a>Geführter Microsoft 365 Enterprise-Setupprozess mit FastTrack
 
-Der Kurzwert **[für Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)** ist die beste Methode für die Bereitstellung von Microsoft 365. FastTrack führt Sie durch die am häufigsten verwendeten Bereitstellungskonfigurationen und ist in der Lage, im Verlauf dieses Prozesses auftauchende Fragen beantworten. 
+**[FastTrack für Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)** ist die beste Methode für die Bereitstellung von Microsoft 365. FastTrack führt Sie durch die am häufigsten verwendeten Bereitstellungskonfigurationen und ist in der Lage, im Verlauf dieses Prozesses auftauchende Fragen beantworten. 
 
-Um auf eine Reihe von Installationsanleitungen zuzugreifen, melden Sie sich bei Ihrem Microsoft 365-Abonnement an, und wechseln Sie dann zu [Setup Anleitung](https://aka.ms/o365fasttrack).
+Um auf eine Reihe von Setuphandbüchern zu zugreifen, melden Sie sich bei Ihrem Microsoft 365-Abonnement an, und wechseln Sie dann zu [Setupanleitung](https://aka.ms/o365fasttrack).
 
 >[!Note]
->Sie können auch Hilfe von einem [Microsoft-Partner](https://www.microsoft.com/solution-providers/home)erhalten.
+>Sie können auch Hilfe von einem [Microsoft-Partner erhalten.](https://www.microsoft.com/solution-providers/home)
 >
 
-## <a name="do-it-yourself-guided-deployment-of-microsoft-365-enterprise"></a>Selbstgesteuerte Bereitstellung von "Do-it-yourself" von Microsoft 365 Enterprise
+## <a name="do-it-yourself-guided-deployment-of-microsoft-365-enterprise"></a>Do-it-yourself-geführte Bereitstellung von Microsoft 365 Enterprise
 
-Wenn Sie Microsoft 365 Enterprise selbst bereitstellen, müssen Sie detaillierte Untersuchungen durchführen, um die Entwurfsentscheidungen zu treffen, die die Konfiguration von Microsoft 365-Diensten und die Einführung von Benutzern rationalisieren. Beginnen Sie mit der Planung [hier](get-your-organization-ready-for-office-365.md).
+Die Bereitstellung von Microsoft 365 Enterprise allein erfordert, dass Sie detaillierte Recherchen durchführen, um die Entwurfsentscheidungen zu treffen, die die Konfiguration von Microsoft 365-Diensts und die Benutzeradzeptanz optimieren. Beginnen Sie hier mit der [Planung.](get-your-organization-ready-for-office-365.md)
 
-Um Microsoft 365 Enterprise auf eigene Faust nach Abschluss ihrer Planung bereitzustellen, sind dies die empfohlenen Schritte.
+Dies sind die empfohlenen Schritte, um Microsoft 365 Enterprise nach Abschluss der Planung allein zu bereitstellen.
 
 1. [Einrichten Ihres Netzwerks](set-up-network-for-microsoft-365.md)
 
-   Umfasst das Hinzufügen Ihrer Internet Domänen und die Optimierung der Netzwerkleistung für Ihre lokalen Benutzer.
+   Umfasst das Hinzufügen Ihrer Internetdomänen und die Optimierung der Netzwerkleistung für Ihre lokalen Benutzer.
  
 2. [Einrichten Ihrer Identitäten](protect-your-global-administrator-accounts.md)
 
-   Umfasst die Bestimmung eines Identitätsmodells (nur in der Cloud oder Hybrid) sowie die Einrichtung einer Verzeichnissynchronisierung zwischen Ihrer lokalen Active Directory-Domänendienste (AD DS) und Ihrem Microsoft 365-Abonnement für die Hybrid Identität.
+   Umfasst das Bestimmen eines Identitätsmodells (nur in der Cloud oder hybrid), und für die Hybrididentität das Einrichten der Verzeichnissynchronisierung zwischen Ihren lokalen Active Directory Domain Services (AD DS) und Ihrem Microsoft 365-Abonnement.
 
-3. [Implementieren der Sicherheit](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)
+3. [Implementieren der Sicherheit](/office365/securitycompliance/security-roadmap)
 
-   Umfasst das Konfigurieren und Bereitstellen grundlegender und erweiterter Sicherheits-, Bedrohungs-und Informationsschutzfunktionen für Ihren Mandanten und ihre Identitäten in den ersten 30 Tagen, 90 Tagen und darüber hinaus.
+   Umfasst das Konfigurieren und Rollieren grundlegender und erweiterter Sicherheits-, Bedrohungs- und Informationsschutz für Ihren Mandanten und Ihre Identitäten in den ersten 30 Tagen, 90 Tagen und darüber hinaus.
  
-4. [Bereitstellen der Client Software](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
+4. [Bereitstellen von Clientsoftware](/DeployOffice/deployment-guide-microsoft-365-apps)
 
-   Umfasst die Bereitstellung von Microsoft 365-Apps für Unternehmen (zuvor mit dem Namen Office 365 ProPlus), die in der Cloud aktualisierte und immer aktuelle Version der Office-Suite (Word, Excel, PowerPoint und andere) auf Ihren Geräten. Jede Microsoft 365-Clientlizenz enthält eine Lizenz für Microsoft 365 apps for Enterprise.
+   Umfasst die Bereitstellung von Microsoft 365 Apps for Enterprise (zuvor Office 365 ProPlus genannt), die cloud-aktualisierte und immer aktuelle Version der Office-Suite (Word, Excel, PowerPoint und andere) auf Ihren Geräten. Jede Microsoft 365-Clientlizenz enthält eine Lizenz für Microsoft 365 Apps for Enterprise.
  
 5. [Einrichten der Verwaltung mobiler Geräte](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
-   Microsoft 365 Enterprise umfasst Funktionen zur Verwaltung mobiler Geräte, mit denen Sie die mobilen Geräte ihrer Benutzer sichern und verwalten können.
+   Microsoft 365 Enterprise umfasst Verwaltungsfunktionen für mobile Geräte, mit deren Hilfe Sie die mobilen Geräte Ihrer Benutzer sichern und verwalten können.
  
 6. [Konfigurieren von Diensten und Anwendungen](configure-services-and-applications.md)
 
-   Enthält Informationen zur Migration Ihrer Daten und Links zu Artikeln, die Ihnen die ersten Schritte mit wichtigen Microsoft 365-Produktivitäts-apps wie Exchange Online, SharePoint Online und Teams erhalten.
+   Enthält Informationen zur Migration Ihrer Daten und Links zu Artikeln, die Sie mit wichtigen Microsoft 365-Produktivitäts-Apps wie Exchange Online, SharePoint Online und Teams beginnen.
  
-7. [Schulen der Benutzer](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
+7. [Schulen der Benutzer](/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
-   Enthält kurze Videos, mit denen Ihre Benutzer Microsoft 365 schnell optimal nutzen können.
+   Enthält kurze Videos, die Ihren Benutzern dabei helfen, Microsoft 365 schnell zu verwenden.
  
 
 >[!Note]
->Diese Schritte gelten auch für Unternehmen und [gemeinnützige](https://go.microsoft.com/fwlink/?LinkId=627221) Organisationen, die mit einer benutzerdefinierten Bereitstellung von Microsoft 365 Enterprise beginnen möchten. 
+>Diese Schritte sind auch für Unternehmen [und](https://go.microsoft.com/fwlink/?LinkId=627221) gemeinnützige Organisationen, die mit einer benutzerdefinierten Bereitstellung von Microsoft 365 Enterprise beginnen möchten. 
 >

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informationen zum Anwenden eines veröffentlichten Modells auf eine SharePoint-Dokumentbibliothek
-ms.openlocfilehash: 17da1e37f72504ac5e0e26c0dd190efced08d285
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 42168537c8d449a075b5e29ef9905b6b98b8d714
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080788"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925400"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Anwenden eines Dokumentverständnismodells in Microsoft SharePoint Syntex
 
@@ -94,7 +94,7 @@ Wenn ein SharePoint Syntex-Dokumentverständnis oder ein Formularverarbeitungsmo
 
    ![Die Spalte „Klassifizierungsdatum“](../media/content-understanding/class-date-column.png)</br> 
 
-Das Feld für das Klassifizierungsdatum wird vom Trigger [<b>Wenn eine Datei von einem Inhaltsverständnismodell klassifiziert wird</b> verwendet, ](https://docs.microsoft.com/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) um einen Power Automate-Ablauf auszuführen, nachdem ein Syntex-Modell für das Verstehen von Inhalten die Verarbeitung einer Datei abgeschlossen und das Feld „Klassifizierungsdatum“ aktualisiert hat.
+Das Feld für das Klassifizierungsdatum wird vom Trigger [<b>Wenn eine Datei von einem Inhaltsverständnismodell klassifiziert wird</b> verwendet, ](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) um einen Power Automate-Ablauf auszuführen, nachdem ein Syntex-Modell für das Verstehen von Inhalten die Verarbeitung einer Datei abgeschlossen und das Feld „Klassifizierungsdatum“ aktualisiert hat.
 
    ![Flusstrigger](../media/content-understanding/trigger.png)</br>
 
@@ -108,5 +108,3 @@ Der Trigger <b>Wenn eine Datei von einem Inhaltsverständnissmodell klassifizier
 [Erstellen eines Extraktors](create-an-extractor.md)
 
 [Übersicht über das Dokumentenverständnis](document-understanding-overview.md)
-
-

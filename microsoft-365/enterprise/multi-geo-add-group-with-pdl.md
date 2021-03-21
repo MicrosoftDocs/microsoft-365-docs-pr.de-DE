@@ -11,14 +11,14 @@ f1.keywords:
 - NOCSH
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: In diesem Artikel erfahren Sie, wie Sie eine Microsoft 365-Gruppe mit einem angegebenen bevorzugten Datenspeicherort in einer Multi-Geo-Umgebung erstellen.
+description: Erfahren Sie, wie Sie eine Microsoft 365-Gruppe mit einem angegebenen bevorzugten Datenspeicherort in einer Multi-Geo-Umgebung erstellen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5af32827d11289f7a966311080d2c15197786799
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 7f02a5eb6d8b30e8381c65d4735812675d35af2b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547734"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923744"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-pdl"></a>Erstellen einer Microsoft 365-Gruppe mit einer bestimmten PDL
 
@@ -26,7 +26,7 @@ Wenn Benutzer in einer Multi-Geo-Umgebung eine Microsoft 365-Gruppe erstellen, w
 
 Wenn Sie eine Gruppe mit einem bestimmten PLD erstellen möchten, können Sie dies über das SharePoint Admin Center oder unter Verwendung des Exchange Online New-UnifiedGroup Microsoft PowerShell-Cmdlets vornehmen. Wenn Sie dies tun, werden das zugewiesene Gruppenpostfach und die SharePoint-Website für die Gruppe der angegebenen Verteilerliste an diesem bestimmten PLD bereitgestellt.
 
-Um eine Microsoft 365-Gruppe mit der von Ihnen angegebenen PDL zu erstellen, wechseln Sie zum SharePoint Admin Center am geografischen Speicherort, an dem Sie die Gruppen Website erstellen möchten.
+Um eine Microsoft 365-Gruppe mit der angegebenen PDL zu erstellen, wechseln Sie zum SharePoint Admin Center am geografischen Standort, an dem Sie die Gruppenwebsite erstellen möchten.
 
 Zum Beispiel:
 
@@ -57,4 +57,4 @@ Beachten Sie, dass die Bereitstellung von SharePoint-Gruppenseiten nach Bedarf e
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+[Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).

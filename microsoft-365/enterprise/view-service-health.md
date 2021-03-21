@@ -1,5 +1,5 @@
 ---
-title: Überprüfen des Microsoft 365-Dienststatus
+title: Überprüfen des Microsoft 365-Dienstzustands
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -25,21 +25,21 @@ search.appverid:
 - BCS160
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
-description: Zeigen Sie den Integritätsstatus von Microsoft 365-Diensten an, bevor Sie den Support aufrufen, um zu sehen, ob eine aktive Dienstunterbrechung vorliegt.
-ms.openlocfilehash: b1819e455732d142c563f598433c410b0ae60882
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+description: Zeigen Sie den Integritätsstatus von Microsoft 365-Diensten an, bevor Sie den Support anrufen, um zu sehen, ob eine aktive Dienstunterbrechung vor sich geht.
+ms.openlocfilehash: 3802ca01902d5b0d457d2a3d75b784d38f71bd42
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072759"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924684"
 ---
-# <a name="how-to-check-microsoft-365-service-health"></a>Überprüfen des Microsoft 365-Dienststatus
+# <a name="how-to-check-microsoft-365-service-health"></a>Überprüfen des Microsoft 365-Dienstzustands
 
-[![Hinweis, der Sie darüber informiert, dass sich das Admin Center ändert und Sie unter "aka.ms/aboutM365preview" weitere Details finden.](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide&preserve-view=true)
+[![Hinweis, der Sie darüber informiert, dass sich das Admin Center ändert und Sie unter "aka.ms/aboutM365preview" weitere Details finden.](../media/O365-Admin-AdminCenterChanging.png)](/office365/admin/microsoft-365-admin-center-preview?preserve-view=true&view=o365-worldwide)
 
-Sie können die Integrität Ihrer Microsoft-Dienste, einschließlich Office im Internet, jammern, Microsoft Dynamics CRM und Cloud-Dienste für die Verwaltung mobiler Geräte, auf der Seite **Dienst Integrität** im [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339)anzeigen. Wenn bei einem Clouddienst Probleme auftreten, können Sie den Dienststatus überprüfen, um festzustellen, ob es sich um ein bekanntes Problem handelt, für das bereits an einer Lösung gearbeitet wird, bevor Sie den Support anrufen oder Zeit für die Problembehandlung aufwenden.
+Sie können den Integritätszustand Ihrer Microsoft-Dienste, einschließlich Office im Web, Yammer, Microsoft Dynamics CRM und Clouddiensten für die Verwaltung mobiler Geräte, auf der Seite Dienstinte health im [Microsoft 365 Admin Center anzeigen.](https://go.microsoft.com/fwlink/p/?linkid=2024339)  Wenn bei einem Clouddienst Probleme auftreten, können Sie den Dienststatus überprüfen, um festzustellen, ob es sich um ein bekanntes Problem handelt, für das bereits an einer Lösung gearbeitet wird, bevor Sie den Support anrufen oder Zeit für die Problembehandlung aufwenden.
 
-Wenn Sie sich nicht beim Admin Center anmelden können, können Sie die [Seite Dienststatus](https://status.office365.com) verwenden, um nach bekannten Problemen zu suchen, die eine Anmeldung bei Ihrem Mandanten verhindern.  Registrieren Sie sich auch, um uns unter [@MSFT365status](https://twitter.com/MSFT365Status) auf Twitter zu folgen, um Informationen zu bestimmten Ereignissen zu erhalten.
+Wenn Sie sich nicht beim Admin Center anmelden [](https://status.office365.com) können, können Sie die Dienststatusseite verwenden, um nach bekannten Problemen zu suchen, die die Anmeldung bei Ihrem Mandanten verhindern.  Melden Sie sich auch an, um uns [auf @MSFT365status](https://twitter.com/MSFT365Status) Twitter zu folgen, um Informationen zu bestimmten Ereignissen zu erhalten.
 
   
 ### <a name="how-to-check-service-health"></a>Überprüfen des Dienststatus
@@ -47,11 +47,11 @@ Wenn Sie sich nicht beim Admin Center anmelden können, können Sie die [Seite D
 1. Wechseln Sie zum Microsoft 365 Admin Center unter [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) , und melden Sie sich mit einem Administratorkonto an.
 
     > [!NOTE]
-    > Personen, denen die Rolle eines globalen Administrators oder Serviceadministrators zugewiesen ist, können den Dienststatus anzeigen. Damit Exchange-, SharePoint- und Skype for Business-Administratoren den Dienststatus anzeigen können, muss ihnen auch die Rolle des Dienstadministrators zugewiesen sein. Weitere Informationen zu Rollen, die den Dienststatus anzeigen können, finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#roles-available-in-the-microsoft-365-admin-center).
+    > Personen, denen die Rolle eines globalen Administrators oder Serviceadministrators zugewiesen ist, können den Dienststatus anzeigen. Damit Exchange-, SharePoint- und Skype for Business-Administratoren den Dienststatus anzeigen können, muss ihnen auch die Rolle des Dienstadministrators zugewiesen sein. Weitere Informationen zu Rollen, die den Dienststatus anzeigen können, finden Sie unter [Informationen zu Administratorrollen](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center).
   
-2. Wenn Sie nicht das neue Admin Center verwenden, klicken Sie auf der **Start** Seite auf die Schaltfläche **neuen Admin Center** -Schalter in der oberen rechten Ecke testen.
+2. Wenn Sie das neue Admin Center  nicht verwenden, wählen Sie auf der Startseite in der oberen rechten Ecke den Umschalter Neues **Admin Center** ausprobieren aus.
 
-3. Zum Anzeigen des Dienststatus wechseln Sie im Admin Center zu **Status** > **Dienststatus** , oder wählen Sie auf dem **Startdashboard** die Karte **Dienststatus** aus. Die Dashboardkarte gibt an, ob ein Problem mit einem aktiven Dienst vorliegt, und stellt einen Link zur Seite mit Details zum **Dienststatus** bereit.
+3. Zum Anzeigen des Dienststatus wechseln Sie im Admin Center zu **Status** > **Dienststatus**, oder wählen Sie auf dem **Startdashboard** die Karte **Dienststatus** aus. Die Dashboardkarte gibt an, ob ein Problem mit einem aktiven Dienst vorliegt, und stellt einen Link zur Seite mit Details zum **Dienststatus** bereit.
   
 4. Der Status der einzelnen Clouddienste wird auf der Seite **Dienstatus** in einem Tabellenformat angezeigt.
 
@@ -63,36 +63,36 @@ Wenn Sie die Ansicht nach Diensten filtern möchten, die aktuell einen Vorfall a
 
 Auf der Registerkarte **Verlauf** wird der Verlauf von Vorfällen und Empfehlungen angezeigt, die aufgelöst wurden.
 
-Wenn ein Problem mit einem Microsoft 365-Dienst auftritt und diese auf der Seite **Dienststatus** nicht aufgeführt sind, können Sie uns darüber informieren, indem Sie **ein Problem melden** auswählen und das kurze Formular ausfüllen. Wir werden uns mit verwandten Daten und Berichten aus anderen Organisationen beschäftigen, um zu sehen, wie weit verbreitet das Problem ist und ob es von unserem Dienst stammt. Wenn dies der Fall ist, fügen wir ihn als neuen Vorfall oder eine neue Empfehlung auf der Seite **Dienst Integrität** hinzu, auf der Sie die Lösung nachverfolgen können. Wenn es in der Liste nicht innerhalb von 30 Minuten angezeigt wird, sollten Sie sich an den Support wenden, um das Problem zu beheben.
+Wenn ein Problem mit einem Microsoft 365-Dienst auftritt und es  nicht auf der Seite Dienstintehzustand aufgeführt wird, teilen Sie uns dies mit, indem Sie Ein Problem melden auswählen und das kurze Formular ausfüllen.  Wir sehen uns verwandte Daten und Berichte aus anderen Organisationen an, um zu sehen, wie weit das Problem verbreitet ist und ob es von unserem Dienst stammt. Wenn dies der Fall ist, fügen wir sie  als neuen Vorfall oder eine Empfehlung auf der Seite Dienstintegte hinzu, auf der Sie die Lösung nachverfolgen können. Wenn sie nicht innerhalb von ca. 30 Minuten in der Liste angezeigt wird, wenden Sie sich an den Support, um das Problem zu beheben.
 
-Um die Ansicht anzupassen, welche Dienste im Dashboard angezeigt werden, wählen Sie **Preferences**  >  **benutzerdefinierte Ansicht** Einstellungen aus, und deaktivieren Sie die Kontrollkästchen für die Dienste, die aus der Dashboardansicht für den Dienstzustand gefiltert werden sollen. Stellen Sie sicher, dass das Kontrollkästchen für jeden Dienst aktiviert ist, den Sie überwachen möchten.    
+Wenn Sie Ihre Ansicht anpassen möchten, welche Dienste im Dashboard angezeigt werden, wählen Sie Einstellungen Benutzerdefinierte Ansicht aus, und aktivieren Sie die Kontrollkästchen für die Dienste, die Sie aus der Ansicht Dienstintehashboard  >  filtern möchten. Stellen Sie sicher, dass das Kontrollkästchen für jeden Dienst aktiviert ist, den Sie überwachen möchten.    
 
-Wenn Sie sich für e-Mail-Benachrichtigungen über neue Vorfälle, die sich auf ihren Mandanten und Statusänderungen für einen aktiven Vorfall auswirken, registrieren möchten, wählen Sie e-Mail- **Einstellungen** aus  >  **Email** , klicken Sie auf **mir Service Heath Notifications in e-Mail senden** und geben
+Um sich für E-Mail-Benachrichtigungen über neue Vorfälle zu registrieren, die sich auf Ihren Mandanten und Statusänderungen für einen aktiven Vorfall auswirken, wählen Sie Einstellungen E-Mail aus, klicken Sie auf Dienst-Heathbenachrichtigungen senden in E-Mail, und geben Sie dann  >  an: 
 
-- Bis zu zwei e-Mail-Adressen.
-- Ob Benachrichtigungen für Vorfälle oder Warnungen gewünscht werden
-- Die Dienste, für die eine Benachrichtigung gewünscht wird
+- Bis zu zwei E-Mail-Adressen.
+- Unabhängig davon, ob Sie Benachrichtigungen zu Vorfällen oder Ratgebern wünschen
+- Die Dienste, für die Sie eine Benachrichtigung wünschen
 
 > [!NOTE]
-> Jeder Administrator kann seine Einstellungen festlegen, und der obige Grenzwert von zwei e-Mail-Adressen ist pro Administratorkonto.
+> Jeder Administrator kann seine Einstellungen festlegen lassen, und der obige Grenzwert von zwei E-Mail-Adressen ist pro Administratorkonto festgelegt.
 
 > [!TIP]
-> Sie können auch die [Microsoft 365-Administrator-App](https://go.microsoft.com/fwlink/p/?linkid=627216) auf Ihrem mobilen Gerät verwenden, um die Dienst Integrität anzuzeigen, was eine hervorragende Möglichkeit ist, mit Push-Benachrichtigungen auf dem neuesten Stand zu bleiben. 
+> Sie können auch die [Microsoft 365 Admin-App](https://go.microsoft.com/fwlink/p/?linkid=627216) auf Ihrem mobilen Gerät verwenden, um den Dienstzustand anzuzeigen. Dies ist eine hervorragende Möglichkeit, um mit Pushbenachrichtigungen auf dem laufenden zu bleiben. 
   
 ### <a name="view-details-of-posted-service-health"></a>Anzeigen von Details des veröffentlichten Dienststatus
 
 Wenn Sie in der Ansicht **Alle Dienste** den Dienststatus auswählen, wird eine Zusammenfassungsansicht der Empfehlungen oder Vorfälle angezeigt.
   
-[![Ein Screenshot mit der Dienst Empfehlung ](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
+[![Screenshot der Dienstempfehlung ](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
 
 Die Empfehlungs- oder Vorfallzusammenfassung enthält folgende Informationen:
 
-- **Titel** : Eine Zusammenfassung des Problems.
-- **Dienst** : Der Name des betroffenen Diensts.
-- **ID** : Ein numerischer Bezeichner für das Problem.
-- **Status** : Wie sich dieses Problem auf den Dienst auswirkt.
-- **Startzeit** : Der Zeitpunkt, zu dem das Problem begann.
-- **Letzte Aktualisierung** : Der Zeitpunkt der letzten Aktualisierung der Nachricht zum Dienststatus. Wir veröffentlichen häufig Nachrichten, um Sie über die Fortschritte beim Anwenden einer Lösung zu informieren.
+- **Titel**: Eine Zusammenfassung des Problems.
+- **Dienst**: Der Name des betroffenen Diensts.
+- **ID**: Ein numerischer Bezeichner für das Problem.
+- **Status**: Wie sich dieses Problem auf den Dienst auswirkt.
+- **Startzeit**: Der Zeitpunkt, zu dem das Problem begann.
+- **Letzte Aktualisierung**: Der Zeitpunkt der letzten Aktualisierung der Nachricht zum Dienststatus. Wir veröffentlichen häufig Nachrichten, um Sie über die Fortschritte beim Anwenden einer Lösung zu informieren.
 
 Wählen Sie das Problem aus, um die Detailseite mit weiteren Informationen zum Problem anzuzeigen, einschließlich des [Verlaufs](#history) aller Nachrichten, die wir während unserer Arbeit an einer Lösung veröffentlicht haben.
 
@@ -113,7 +113,7 @@ Da Erläuterungen zum Dienststatus in Echtzeit veröffentlicht werden, sind sie 
 Die meiste Zeit werden Dienste als fehlerfrei und ohne weitere Informationen angezeigt. Wenn bei einem Dienst ein Problem vorliegt, wird das Problem entweder als eine Empfehlung oder als ein Vorfall angegeben, und der aktuelle Status wird angezeigt.
   
 > [!TIP]
-> Geplante Wartungsereignisse werden im Dienststatus nicht angezeigt. Sie können geplante Wartungsereignisse verfolgen, indem Sie sich mit dem **Nachrichtencenter** auf dem neuesten Stand halten. Filtern Sie nach Nachrichten, für dieeine geplante Änderung als Kategorie angegeben ist, um herauszufinden, wann die Änderung stattfinden soll, welche Auswirkungen sie hat und wie Sie Vorbereitungen dafür treffen können. Weitere Informationen finden Sie unter [Message Center in Microsoft 365](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093) .
+> Geplante Wartungsereignisse werden im Dienststatus nicht angezeigt. Sie können geplante Wartungsereignisse verfolgen, indem Sie sich mit dem **Nachrichtencenter** auf dem neuesten Stand halten. Filtern Sie nach Nachrichten, für dieeine geplante Änderung als Kategorie angegeben ist, um herauszufinden, wann die Änderung stattfinden soll, welche Auswirkungen sie hat und wie Sie Vorbereitungen dafür treffen können. Weitere [Informationen finden Sie unter Message Center in Microsoft 365.](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093)
   
 ### <a name="incidents-and-advisories"></a>Vorfälle und Empfehlungen
 
@@ -133,7 +133,7 @@ Die meiste Zeit werden Dienste als fehlerfrei und ohne weitere Informationen ang
 |**Erweiterte Wiederherstellung** | Dieser Status gibt an, dass eine Behebungsmaßnahme durchgeführt wird, um den Dienst für die Mehrzahl der Benutzer wiederherzustellen, es dauert jedoch einige Zeit, bis alle betroffenen Systeme erreicht sind. Dieser Status wird möglicherweise auch angezeigt, wenn wir eine temporäre Korrektur vorgenommen haben, um die Auswirkungen zu verringern, während wir an der Bereitstellung einer dauerhaften Lösung arbeiten. |
 |**Untersuchung angehalten** | Dieser Status wird angezeigt, wenn unsere detaillierte Untersuchung eines potenziellen Problems dazu führt, dass Kunden um Angabe zusätzlicher Informationen für eine weitere Untersuchung gebeten werden. Wenn Ihre Unterstützung erforderlich ist, informieren wir Sie, welche Daten oder Protokolle wir benötigen. |
 |**Dienst wiederhergestellt** | Wir haben bestätigt, dass durch die Behebungsmaßnahme das zugrunde liegende Problem gelöst und der Dienst wieder in einen fehlerfreien Zustand versetzt wurde. Informationen zur Fehlerursache finden Sie unter den Problemdetails. |
-|**Falsch positiv** | Nach einer detaillierten Untersuchung haben wir bestätigt, dass der Dienstfehler frei ausgeführt wurde und wie geplant funktioniert. Es wurden keine Auswirkungen auf den Dienst beobachtet, oder die Ursache des Vorfalls stammt außerhalb des Diensts. |
+|**Falsch positiv** | Nach einer detaillierten Untersuchung haben wir bestätigt, dass der Dienst fehlerfrei ist und wie entworfen ausgeführt wird. Es wurden keine Auswirkungen auf den Dienst festgestellt, oder die Ursache des Vorfalls stammte außerhalb des Diensts. |
 |**Vorfallnachsorgebericht veröffentlicht** | Wir haben für ein bestimmtes Problem einen Beitrag veröffentlicht, der Informationen zu den Ursachen sowie nächste Schritte umfasst, um sicherzustellen, dass ein ähnliches Problem nicht wieder auftritt. |
 
 ### <a name="history"></a>Verlauf
@@ -148,9 +148,9 @@ Es wird eine Liste aller Nachrichten zum Dienststatus angezeigt, die im ausgewä
   
 Erweitern Sie eine beliebige Zeile, um weitere Details zum Problem anzuzeigen.
   
-Weitere Informationen zu unserer Verpflichtung zur Verfügbarkeit finden Sie unter [transparente Vorgänge von Microsoft 365](https://go.microsoft.com/fwlink/?linkid=848695).
+Weitere Informationen zu unserer Verpflichtung zur Betriebszeit finden Sie unter [Transparente Vorgänge von Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity).
 
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Aktivitätsberichte im Microsoft 365 Admin Center](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
- [Nachrichtencenter-Einstellungen](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true#preferences11)
+ [Einstellungen für das Nachrichtencenter](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences11)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Festlegen von Microsoft Compliance Manager-Benutzerberechtigungen und -rollen und Konfigurieren automatisierter Tests von Aktionen. Verwalten Sie den Benutzerverlauf, und filtern Sie Ihre Dashboardansicht.
-ms.openlocfilehash: 3c8f3f30741d4b0fac5c940bc6ec3fb56ea4f79e
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: d8eb1d7d8245aa31cb5429452128cedc0adf4684
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405795"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925703"
 ---
 # <a name="get-started-with-compliance-manager"></a>Erste Schritte mit Compliance-Manager
 
@@ -30,7 +30,7 @@ ms.locfileid: "50405795"
 
 ## <a name="who-can-access-compliance-manager"></a>Wer auf compliance-Manager zugreifen kann
 
-Compliance Manager ist für Organisationen mit Office 365- und Microsoft 365-Lizenzen sowie für Moderate und GCC High-Kunden der US Government Community Cloud (GCC) verfügbar. Bewertungsverfügbarkeit und Verwaltungsfunktionen hängen von Ihrem Lizenzvertrag ab.  [Anzeigen von Dienstbeschreibungsdetails](https://go.microsoft.com/fwlink/?linkid=2132371).
+Compliance Manager ist für Organisationen mit Office 365- und Microsoft 365-Lizenzen sowie für Moderate und GCC High-Kunden der US Government Community Cloud (GCC) verfügbar. Bewertungsverfügbarkeit und Verwaltungsfunktionen hängen von Ihrem Lizenzvertrag ab.  [Anzeigen von Dienstbeschreibungsdetails](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
@@ -72,19 +72,19 @@ Führen Sie zum Festlegen von Berechtigungen und Zuweisen von Rollen im Office 3
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>Weitere Informationen zum Office 365 Security & Compliance Center
 
-Weitere Informationen zu [Berechtigungen finden Sie im Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+Weitere Informationen zu [Berechtigungen finden Sie im Office 365 Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 Wenn Sie keinen Zugriff auf das Office 365 Security and Compliance Center haben oder auf die klassische Version von Compliance Manager im Microsoft Service Trust Portal zugreifen müssen, bieten die Administratoreinstellungen im Dienstvertrauensportal eine weitere Möglichkeit zum Zuweisen von Rollen ([Ansichtsanweisungen](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)). Beachten Sie, dass diese Rollen in ihrer Funktionalität eingeschränkter sind.
 
 ##### <a name="more-about-azure-ad"></a>Weitere Informationen zu Azure AD
 
-Informationen zum Zuweisen von Rollen und Festlegen von Berechtigungen in Azure AD finden Sie unter [Assign administrator and non-administrator roles to users with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+Informationen zum Zuweisen von Rollen und Festlegen von Berechtigungen in Azure AD finden Sie unter [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
 Benutzer mit Azure AD-Identitäten, die nicht über Office 365- oder Microsoft 365-Abonnements verfügen, können im Microsoft 365 Compliance Center nicht auf den Compliance Manager zugreifen. Wenden Sie sich an cmresearch@microsoft.com, um Hilfe beim Zugriff [auf den Compliance-Manager cmresearch@microsoft.com.](mailto:cmresearch@microsoft.com)
 
 ### <a name="role-types"></a>Rollentypen
 
-In der folgenden Tabelle sind die Funktionen aufgeführt, die von den einzelnen Rollen im Compliance-Manager zulässig sind. In der Tabelle wird außerdem gezeigt, wie [jede Azure AD-Rolle](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) den Rollen des Compliance-Managers zugewiesen wird. Benutzer benötigen mindestens die Leserolle des Compliance-Managers oder die globale Azure AD-Leserrolle, um auf den Compliance-Manager zu zugreifen.
+In der folgenden Tabelle sind die Funktionen aufgeführt, die von den einzelnen Rollen im Compliance-Manager zulässig sind. In der Tabelle wird außerdem gezeigt, wie [jede Azure AD-Rolle](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) den Rollen des Compliance-Managers zugewiesen wird. Benutzer benötigen mindestens die Leserolle des Compliance-Managers oder die globale Azure AD-Leserrolle, um auf den Compliance-Manager zu zugreifen.
 
 
 | Der Benutzer kann: | Rolle "Compliance-Manager" | Azure AD-Rolle | 
@@ -104,7 +104,7 @@ Mit den Einstellungen des Compliance-Managers im Microsoft 365 Compliance Center
 
 ### <a name="set-up-automated-testing"></a>Einrichten automatisierter Tests
 
-Einige Verbesserungsmaßnahmen im Compliance Manager werden auch von [Microsoft Secure Score überwacht.](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) Sie können automatisierte Tests von Aktionen einrichten, die gemeinsam überwacht werden, d. h., wenn eine Aktion in Secure Score getestet und aktualisiert wird, synchronisieren sich diese Ergebnisse mit denselben Aktionen im Compliance-Manager und zählen auf Ihre Compliance-Bewertung.
+Einige Verbesserungsmaßnahmen im Compliance Manager werden auch von [Microsoft Secure Score überwacht.](../security/mtp/microsoft-secure-score.md) Sie können automatisierte Tests von Aktionen einrichten, die gemeinsam überwacht werden, d. h., wenn eine Aktion in Secure Score getestet und aktualisiert wird, synchronisieren sich diese Ergebnisse mit denselben Aktionen im Compliance-Manager und zählen auf Ihre Compliance-Bewertung.
 
 Automatische Tests sind standardmäßig für Organisationen aktiviert, die im Compliance Manager neu sind. Wenn Sie Microsoft 365 oder Office 365 zum ersten Mal bereitstellen, dauert es ungefähr sieben Tage, bis Secure Score Daten vollständig erfasst und in Ihre Compliance-Bewertung einbe berücksichtigt hat.  Wenn automatisierte Tests aktiviert sind, wird das Testdatum der Aktion nicht aktualisiert, aber der Teststatus wird aktualisiert. Wenn neue Bewertungen erstellt werden, enthalten Bewertungen automatisch Microsoft-Kontrollergebnisse und Secure Score-Integration.
 

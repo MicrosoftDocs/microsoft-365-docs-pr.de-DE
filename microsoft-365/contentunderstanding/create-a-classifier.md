@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informationen zum Erstellen eines Klassifizierers
-ms.openlocfilehash: bff23807fce18bf4a585dbb1ec47c1502ab686f6
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 13ae099d051ac526dc5b13e4cb55a1dc10eec087
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242688"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925356"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Erstellen eines Klassifizierers in Microsoft SharePoint Syntex
 
@@ -32,7 +32,7 @@ Ein Klassifizierer ist ein Modelltyp, mit dem Sie die Identifizierung und Klassi
 
 ![Dokument "Vertragsverlängerung"](../media/content-understanding/contract-renewal.png)
 
-Das Erstellen eines Klassifizierers ermöglicht es Ihnen, einen neuen [SharePoint-Inhaltstyp](https://docs.microsoft.com/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) zu erstellen, der mit dem Modell verknüpft wird.
+Das Erstellen eines Klassifizierers ermöglicht es Ihnen, einen neuen [SharePoint-Inhaltstyp](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) zu erstellen, der mit dem Modell verknüpft wird.
 
 Beim Erstellen des Klassifizierers müssen Sie *Erklärungen* erstellen, um das Modell zu definieren. Auf diese Weise können Sie gemeinsame Daten vermerken, bei denen Sie erwarten würden, dass dieser Dokumenttyp konsistent entdeckt wird. 
 

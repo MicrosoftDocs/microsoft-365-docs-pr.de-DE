@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Verstehen, was sich bei der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verändert hat.'
-ms.openlocfilehash: 0415f7b95cb9a9f2625798311946dac0f1f7c2c0
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
-ms.translationtype: HT
+ms.openlocfilehash: cadad596011bbcde02b61f01e949c93a5a62a1c3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688622"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923826"
 ---
 # <a name="what-has-changed-for-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Was hat sich bei der Migration zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen geändert
 
@@ -66,7 +66,7 @@ Zu beachtenden Überlegungen:
 
 - Während der Umstellung des Mandanten auf Office 365-Dienste werden die für Deutschland spezifischen Abonnements und Lizenzen durch neue Office 365-Dienstangebote standardisiert. Die entsprechenden Abonnements für Office 365-Dienste werden für die übertragenen Deutschland-Abonnements erworben. Benutzern mit Deutschland-Lizenzen werden Lizenzen für Office 365-Dienste zugewiesen. Alte Deutschland-Abonnements werden nach ihrem Abschluss gelöscht und aus dem aktuellen Office 365-Dienstmandanten entfernt.
 
-- Nach der Migration der einzelnen Workloads wird zusätzliche Funktionalität wegen der neuen Abonnements für Office 365-Dienste mittels der Office 365-Dienste zur Verfügung gestellt (wie z.B. des Microsoft Planners und Microsoft Flows). Wenn dies für Ihre Organisation geeignet ist, kann der Mandant oder der Lizenzierungsadministrator, während Sie das Änderungsmanagement für die Einführung der neuen Dienste planen, neue Dienste deaktivieren. Informationen über das Deaktivieren von Dienstplänen, die den Benutzerlizenzen zugewiesen sind, finden Sie unter [Deaktivieren des Zugriffs auf Microsoft 365-Dienste während des Zuweisens von Benutzerlizenzen](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses).
+- Nach der Migration der einzelnen Workloads wird zusätzliche Funktionalität wegen der neuen Abonnements für Office 365-Dienste mittels der Office 365-Dienste zur Verfügung gestellt (wie z.B. des Microsoft Planners und Microsoft Flows). Wenn dies für Ihre Organisation geeignet ist, kann der Mandant oder der Lizenzierungsadministrator, während Sie das Änderungsmanagement für die Einführung der neuen Dienste planen, neue Dienste deaktivieren. Informationen über das Deaktivieren von Dienstplänen, die den Benutzerlizenzen zugewiesen sind, finden Sie unter [Deaktivieren des Zugriffs auf Microsoft 365-Dienste während des Zuweisens von Benutzerlizenzen](/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses).
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -87,11 +87,11 @@ Auf Office-Online-Dienste kann man während und bevor des Übergangs mittels `of
 
 ## <a name="skype-for-business-online"></a>Skype for Business Online
 
-Bestehende Skype für Business Online Kunden werden auf Microsoft Teams umgestellt. Weitere Informationen finden Sie unter [https://aka.ms/SkypeToTeams-Home](https://aka.ms/SkypeToTeams-Home).
+Bestehende Skype für Business Online Kunden werden auf Microsoft Teams umgestellt. Weitere Informationen finden Sie unter [https://aka.ms/SkypeToTeams-Home](/microsoftteams/upgrade-start-here).
 
 ## <a name="office-365-video"></a>Office 365 Video
 
-Office 365 Video wird am 1. März 2021 eingestellt, und Office 365 Video wird nach Abschluss der Migration von SharePoint Online in die neuen deutschen Rechenzentren nicht mehr unterstützt. Inhalte aus Office 365 Video werden im Rahmen der Migration von SharePoint Online migriert. Videos in Office 365 Video werden jedoch nach der SharePoint-Migration nicht mehr in der Office 365 Video-Benutzeroberfläche wiedergegeben. Weitere Informationen zur Zeitachse der Migration finden Sie unter [Office 365 Video-Übergang zur Microsoft Stream (klassisch) Übersicht](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline).
+Office 365 Video wird am 1. März 2021 eingestellt, und Office 365 Video wird nach Abschluss der Migration von SharePoint Online in die neuen deutschen Rechenzentren nicht mehr unterstützt. Inhalte aus Office 365 Video werden im Rahmen der Migration von SharePoint Online migriert. Videos in Office 365 Video werden jedoch nach der SharePoint-Migration nicht mehr in der Office 365 Video-Benutzeroberfläche wiedergegeben. Weitere Informationen zur Zeitachse der Migration finden Sie unter [Office 365 Video-Übergang zur Microsoft Stream (klassisch) Übersicht](/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline).
 
 ## <a name="next-step"></a>Nächster Schritt
 
@@ -101,7 +101,7 @@ Office 365 Video wird am 1. März 2021 eingestellt, und Office 365 Video wird na
 
 Erste Schritte:
 
-- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
+- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
 - [Hilfe zur Microsoft Cloud Deutschland-Migration Assistance](https://aka.ms/germanymigrateassist)
 - [So können Sie sich für die Migration anmelden](ms-cloud-germany-migration-opt-in.md)
 
@@ -109,10 +109,10 @@ Der Weg durch die Umstellung:
 
 - [Phasen, Aktionen und Auswirkungen der Migration](ms-cloud-germany-transition-phases.md)
 - [Zusätzliche Vorarbeit](ms-cloud-germany-transition-add-pre-work.md)
-- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräten](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräte](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud-Apps:
 
-- [Informationen zum Dynamics 365-Migrationsprogramm](https://aka.ms/d365ceoptin)
-- [Informationen zum Power BI-Migrationsprogramm](https://aka.ms/pbioptin)
-- [Erste Schritte mit dem Upgrade von Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Informationen zum Dynamics 365-Migrationsprogramm](/dynamics365/get-started/migrate-data-german-region)
+- [Informationen zum Power BI-Migrationsprogramm](/power-bi/admin/service-admin-migrate-data-germany)
+- [Erste Schritte mit dem Upgrade von Microsoft Teams](/microsoftteams/upgrade-start-here)

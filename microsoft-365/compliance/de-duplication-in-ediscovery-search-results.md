@@ -19,58 +19,58 @@ search.appverid:
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 ms.custom:
 - seo-marvel-apr2020
-description: Hier erfahren Sie, wie Sie doppelte eDiscovery-Suchergebnisse eliminieren, sodass nur eine Kopie einer e-Mail-Nachricht exportiert wird.
-ms.openlocfilehash: 44b56faf54b32e8126885a3344448a4794c35783
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+description: Erfahren Sie, wie Sie doppelte eDiscovery-Suchergebnisse entfernen, sodass nur eine Kopie einer E-Mail-Nachricht exportiert wird.
+ms.openlocfilehash: 859c1c41a9f6a530cdefce5220039fbc6ba1a14e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357525"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925671"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Deduplizierung in eDiscovery-Suchergebnissen
 
-In diesem Artikel wird beschrieben, wie die Deduplizierung von eDiscovery-Suchergebnissen funktioniert, und es werden die Einschränkungen des Algorithmus für die Deduplizierung erläutert.
+In diesem Artikel wird die Funktionsweise der Deduplizierung von eDiscovery-Suchergebnissen beschrieben und die Einschränkungen des Deduplizierungsalgorithmus erläutert.
   
-Wenn Sie eDiscovery-Tools verwenden, um die Ergebnisse einer eDiscovery-Suche zu exportieren, haben Sie die Möglichkeit, die exportierten Ergebnisse zu deduplizieren. Szenario Wenn Sie die Deduplizierung aktivieren (Standardmäßig ist die Deduplizierung nicht aktiviert), wird nur eine Kopie einer e-Mail-Nachricht exportiert, obwohl in den durchsuchten Postfächern möglicherweise mehrere Instanzen derselben Nachricht gefunden wurden. Die Deduplizierung hilft Ihnen, Zeit zu sparen, indem die Anzahl der Elemente verringert wird, die Sie nach dem Exportieren der Suchergebnisse überprüfen und analysieren müssen. Es ist jedoch wichtig zu verstehen, wie die Deduplizierung funktioniert, und beachten Sie, dass es Einschränkungen für den Algorithmus gibt, die möglicherweise dazu führen, dass ein eindeutiges Element während des Exportvorgangs als Duplikat markiert wird.
+Wenn Sie eDiscovery-Tools zum Exportieren der Ergebnisse einer eDiscovery-Suche verwenden, haben Sie die Möglichkeit, die exportierten Ergebnisse zu deduplizieren. Szenario Wenn Sie die Deduplizierung aktivieren (standardmäßig ist die Deduplizierung nicht aktiviert), wird nur eine Kopie einer E-Mail-Nachricht exportiert, obwohl in den durchsuchten Postfächern möglicherweise mehrere Instanzen derselben Nachricht gefunden wurden. Die Deduplizierung hilft Ihnen, Zeit zu sparen, indem Sie die Anzahl der Elemente reduzieren, die Sie überprüfen und analysieren müssen, nachdem die Suchergebnisse exportiert wurden. Es ist jedoch wichtig, zu verstehen, wie die Deduplizierung funktioniert, und beachten Sie, dass es Einschränkungen für den Algorithmus gibt, die dazu führen können, dass ein eindeutiges Element während des Exportvorgangs als Duplikat gekennzeichnet wird.
   
-## <a name="how-duplicate-messages-are-identified"></a>Identifizieren von doppelten Nachrichten
+## <a name="how-duplicate-messages-are-identified"></a>Identifizieren doppelter Nachrichten
 
-eDiscovery-Tools verwenden eine Kombination der folgenden e-Mail-Eigenschaften, um zu ermitteln, ob eine Nachricht doppelt vorhanden ist:
+eDiscovery-Tools verwenden eine Kombination der folgenden E-Mail-Eigenschaften, um zu bestimmen, ob es sich bei einer Nachricht um ein Duplikat handelt:
   
-- **InternetMessageId** – diese Eigenschaft gibt den Internet Nachrichtenbezeichner einer e-Mail-Nachricht an, bei der es sich um eine global eindeutige ID handelt, die auf eine bestimmte Version einer bestimmten Nachricht verweist. Diese ID wird vom e-Mail-Clientprogramm des Absenders oder vom Host-e-Mail-System generiert, das die Nachricht sendet. Wenn eine Person eine Nachricht an mehrere Empfänger sendet, ist die Internet Nachrichten-ID für jede Instanz der Nachricht identisch. Bei nachfolgenden Überarbeitungen an die ursprüngliche Nachricht wird eine andere Nachrichtenkennung empfangen. 
+- **InternetMessageId** – Diese Eigenschaft gibt den Internetnachrichtenbezeichner einer E-Mail-Nachricht an, bei der es sich um einen global eindeutigen Bezeichner handelt, der auf eine bestimmte Version einer bestimmten Nachricht verweist. Diese ID wird vom E-Mail-Clientprogramm des Absenders oder vom Host-E-Mail-System generiert, das die Nachricht sendet. Wenn eine Person eine Nachricht an mehrere Empfänger sendet, ist die Internetnachrichten-ID für jede Instanz der Nachricht identisch. Nachfolgende Überarbeitungen der ursprünglichen Nachricht erhalten einen anderen Nachrichtenbezeichner. 
 
-- **ConversationTopic** – diese Eigenschaft gibt den Betreff des Unterhaltungs Threads einer Nachricht an. Der Wert der **ConversationTopic** -Eigenschaft ist die Zeichenfolge, die das allgemeine Thema der Unterhaltung beschreibt. Eine Bestandserhaltung besteht aus einer anfänglichen Nachricht und allen Nachrichten, die als Antwort auf die ursprüngliche Nachricht gesendet wurden. Nachrichten in derselben Unterhaltung haben denselben Wert für die **ConversationTopic** -Eigenschaft. Der Wert dieser Eigenschaft ist normalerweise die Betreffzeile der anfänglichen Nachricht, die die Unterhaltung hervorgerufen hat. 
+- **ConversationTopic** – Diese Eigenschaft gibt den Betreff des Unterhaltungsthreads einer Nachricht an. Der Wert der **ConversationTopic-Eigenschaft** ist die Zeichenfolge, die das allgemeine Thema der Unterhaltung beschreibt. Eine Erhaltung besteht aus einer anfänglichen Nachricht und allen Nachrichten, die als Antwort auf die ursprüngliche Nachricht gesendet werden. Nachrichten innerhalb derselben Unterhaltung haben denselben Wert für die **ConversationTopic-Eigenschaft.** Der Wert dieser Eigenschaft ist in der Regel die Betreffzeile aus der anfänglichen Nachricht, die die Unterhaltung gezeitet hat. 
 
-- **BodyTagInfo** -Dies ist eine interne Exchange-Informationsspeicher Eigenschaft. Der Wert dieser Eigenschaft wird durch Überprüfen verschiedener Attribute im Textkörper der Nachricht berechnet. Diese Eigenschaft wird verwendet, um Unterschiede im Nachrichtentext zu identifizieren. 
+- **BodyTagInfo** – Dies ist eine interne Exchange Store-Eigenschaft. Der Wert dieser Eigenschaft wird durch Überprüfen verschiedener Attribute im Nachrichtentext berechnet. Diese Eigenschaft wird verwendet, um Unterschiede im Nachrichtentext zu identifizieren. 
 
-Während des eDiscovery-Exportprozesses werden diese drei Eigenschaften für jede Nachricht verglichen, die mit den Suchkriterien übereinstimmt. Wenn diese Eigenschaften für zwei (oder mehr) Nachrichten identisch sind, werden diese Nachrichten als Duplikate festgelegt, und das Ergebnis ist, dass nur eine Kopie der Nachricht exportiert wird, wenn die Deduplizierung aktiviert ist. Die exportierte Nachricht wird als "Quellelement" bezeichnet. Informationen zu doppelten Nachrichten sind in den **Results.csv** -und **Manifest.xml** -Berichten enthalten, die in den exportierten Suchergebnissen enthalten sind. In der **Results.csv** Datei wird eine doppelte Nachricht durch einen Wert in der Spalte **Duplikat zu Element** identifiziert. Der Wert in dieser Spalte stimmt mit dem Wert in der **Element Identitäts** Spalte für die exportierte Nachricht überein. 
+Während des eDiscovery-Exportprozesses werden diese drei Eigenschaften für jede Nachricht verglichen, die den Suchkriterien entspricht. Wenn diese Eigenschaften für zwei (oder mehr) Nachrichten identisch sind, werden diese Nachrichten als Duplikate bestimmt, und das Ergebnis ist, dass nur eine Kopie der Nachricht exportiert wird, wenn die Deduplizierung aktiviert ist. Die exportierte Nachricht wird als "Quellelement" bezeichnet. Informationen zu doppelten Nachrichten  sind in denResults.csvund **Manifest.xml** enthalten, die in den exportierten Suchergebnissen enthalten sind. In der **Results.csv** wird eine doppelte Nachricht durch einen Wert in der Spalte Duplizieren in **Element** identifiziert. Der Wert in dieser Spalte entspricht dem Wert in der **Spalte Elementidentität** für die exportierte Nachricht. 
   
-Die folgenden Grafiken zeigen, wie doppelte Nachrichten im **Results.csv** angezeigt werden und **Manifest.xml** Berichte, die mit den Suchergebnissen exportiert werden. Diese Berichte enthalten nicht die zuvor beschriebenen e-Mail-Eigenschaften, die im Algorithmus für die Deduplizierung verwendet werden. Stattdessen enthalten die Berichte die **Element Identitäts** Eigenschaft, die Elementen vom Exchange-Informationsspeicher zugewiesen ist. 
+Die folgenden Grafiken zeigen, wie doppelte  Nachrichten in  denResults.csvundManifest.xmlangezeigt werden, die mit den Suchergebnissen exportiert werden. Diese Berichte enthalten nicht die zuvor beschriebenen E-Mail-Eigenschaften, die im Deduplizierungsalgorithmus verwendet werden. Stattdessen enthalten die Berichte die **Item Identity-Eigenschaft,** die Elementen vom Exchange-Speicher zugewiesen ist. 
   
- ### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv Bericht (in Excel angezeigt)
+ ### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv (in Excel angezeigt)
   
 ![Anzeigen von Informationen zu doppelten Elementen im Results.csv Bericht](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
- ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml Bericht (in Excel angezeigt)
+ ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml (in Excel angezeigt)
   
 ![Anzeigen von Informationen zu doppelten Elementen im Manifest.xml Bericht](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
-Darüber hinaus sind andere Eigenschaften aus doppelten Nachrichten in den Export Berichten enthalten. Dies umfasst das Postfach, in dem sich die doppelte Nachricht befindet, ob die Nachricht an eine Verteilergruppe gesendet wurde und ob die Nachricht CC 'd oder Bcc an einen anderen Benutzer gesendet wurde.
+Darüber hinaus sind andere Eigenschaften aus doppelten Nachrichten in den Exportberichten enthalten. Dies umfasst das Postfach, in dem sich die doppelte Nachricht befindet, ob die Nachricht an eine Verteilergruppe gesendet wurde und ob die Nachricht Cc'd oder Bcc'd an einen anderen Benutzer war.
   
-## <a name="limitations-of-the-de-duplication-algorithm"></a>Einschränkungen des Algorithmus zur Deduplizierung
+## <a name="limitations-of-the-de-duplication-algorithm"></a>Einschränkungen des Deduplizierungsalgorithmus
 
-Es gibt einige bekannte Einschränkungen des Algorithmus zur Deduplizierung, die dazu führen können, dass eindeutige Elemente als Duplikate markiert werden. Es ist wichtig, dass Sie diese Einschränkungen kennen, damit Sie entscheiden können, ob Sie das optionale Feature zur Deduplizierung verwenden möchten.
+Es gibt einige bekannte Einschränkungen des Deduplizierungsalgorithmus, die dazu führen können, dass eindeutige Elemente als Duplikate markiert werden. Es ist wichtig, diese Einschränkungen zu verstehen, damit Sie entscheiden können, ob Sie das optionale Deduplizierungsfeature verwenden möchten.
   
-Es gibt eine Situation, in der die Deduplizierung möglicherweise fälschlicherweise eine Nachricht als Duplikat identifiziert und nicht exportiert (Sie wird jedoch weiterhin als Duplikat in den Export Berichten zitiert). Dabei handelt es sich um Nachrichten, die ein Benutzer bearbeitet, aber nicht sendet. Angenommen, ein Benutzer wählt eine Nachricht in Outlook aus, kopiert den Inhalt der Nachricht und fügt Sie dann in eine neue Nachricht ein. Der Benutzer ändert dann eine der Kopien, indem er eine Anlage entfernt oder hinzufügt oder die Betreffzeile oder den Textkörper selbst ändert. Wenn diese beiden Nachrichten mit der Abfrage einer eDiscovery-Suche übereinstimmen, wird nur eine der Nachrichten exportiert, wenn die Deduplizierung aktiviert wird, wenn die Suchergebnisse exportiert werden. Obwohl die ursprüngliche Nachricht oder die kopierte Nachricht geändert wurde, wurden keine der überarbeiteten Nachrichten gesendet, weshalb die Werte der Eigenschaften **InternetMessageId**, **ConversationTopic** und **BodyTagInfo** nicht aktualisiert wurden. Aber wie bereits erläutert, werden beide Nachrichten in den Export Berichten aufgelistet. 
+Es gibt eine Situation, in der das Deduplizierungsfeature eine Nachricht fälschlicherweise als Duplikat identifiziert und nicht exportiert (aber dennoch als Duplikat in den Exportberichten zitiert). Dies sind Nachrichten, die ein Benutzer bearbeitet, aber nicht sendet. Angenommen, ein Benutzer wählt eine Nachricht in Outlook aus, kopiert den Inhalt der Nachricht und fügt sie dann in eine neue Nachricht ein. Anschließend ändert der Benutzer eine der Kopien, indem er eine Anlage entfernt oder hinzufügungen oder die Betreffzeile oder den Textkörper selbst ändert. Wenn diese beiden Nachrichten mit der Abfrage einer eDiscovery-Suche übereinstimmen, wird nur eine der Nachrichten exportiert, wenn die Deduplizierung aktiviert ist, wenn die Suchergebnisse exportiert werden. Obwohl also die ursprüngliche Nachricht oder die kopierte Nachricht geändert wurde, wurden keine der überarbeiteten Nachrichten gesendet, und daher wurden die Werte der **Eigenschaften InternetMessageId,** **ConversationTopic** und **BodyTagInfo** nicht aktualisiert. Wie bereits erläutert, werden beide Nachrichten jedoch in den Exportberichten aufgeführt. 
   
-Eindeutige Nachrichten können auch als Duplikate markiert werden, wenn das Feature zum Schutz durch Copy-on-Write-Seite aktiviert ist, wie bei einem Postfach, das das Beweissicherungsverfahren oder das in-situ-Archiv behielt. Das Feature Copy-on-Write kopiert die ursprüngliche Nachricht (und speichert Sie im Ordner "Versionen" des Ordners "refundable Items" des Benutzers), bevor die Revision des ursprünglichen Elements gespeichert wird. In diesem Fall werden die überarbeitete Kopie und die ursprüngliche Nachricht (im Ordner "Wiederherstellbare Elemente") möglicherweise als doppelte Nachrichten betrachtet, daher wird nur eine exportiert.
+Eindeutige Nachrichten können auch als Duplikate markiert werden, wenn das Feature zum Schutz von Seiten zum Kopieren bei Schreibzugriff aktiviert ist, wie im Fall eines Postfachs, das sich im Prozesssicherungsverfahren befindet oder In-Place wird. Das Feature Copy-on-Write kopiert die ursprüngliche Nachricht (und speichert sie im Ordner Versionen des Ordners "Wiederherstellbare Elemente") des Benutzers, bevor die Überarbeitung des ursprünglichen Elements gespeichert wird. In diesem Fall können die überarbeitete Kopie und die ursprüngliche Nachricht (im Ordner "Wiederherstellbare Elemente") als doppelte Nachrichten betrachtet werden, und daher würde nur eine davon exportiert.
   
 > [!IMPORTANT]
-> Wenn sich die Einschränkungen des Algorithmus für die Deduplizierung auf die Qualität Ihrer Suchergebnisse auswirken können, sollten Sie die Deduplizierung nicht aktivieren, wenn Sie Elemente exportieren. Wenn die in diesem Abschnitt beschriebenen Situationen unwahrscheinlich sind, dass Sie einen Faktor in ihren Suchergebnissen darstellen und die Anzahl der Elemente verringern möchten, die am ehesten Duplikate sind, sollten Sie die Deduplizierung aktivieren. 
+> Wenn sich die Einschränkungen des Deduplizierungsalgorithmus auf die Qualität Ihrer Suchergebnisse auswirken können, sollten Sie beim Exportieren von Elementen keine Deduplizierung aktivieren. Wenn die in diesem Abschnitt beschriebenen Situationen wahrscheinlich kein Faktor in ihren Suchergebnissen sind und Sie die Anzahl der Elemente verringern möchten, die wahrscheinlich Duplikate sind, sollten Sie die Deduplizierung aktivieren. 
   
 ## <a name="more-information"></a>Weitere Informationen
 
-- Die Informationen in diesem Artikel gelten beim Exportieren von Suchergebnissen mithilfe eines der folgenden eDiscovery-Tools:
+- Die Informationen in diesem Artikel gelten beim Exportieren von Suchergebnissen mit einem der folgenden eDiscovery-Tools:
 
   - Inhaltssuche im Compliance Center in Office 365
 
@@ -84,6 +84,6 @@ Eindeutige Nachrichten können auch als Duplikate markiert werden, wenn das Feat
 
   - [Exportieren eines Inhaltssuchberichts](export-a-content-search-report.md)
 
-  - [Exportieren von in-Place-eDiscovery-Suchergebnissen in eine PST-Datei](https://go.microsoft.com/fwlink/p/?linkid=832671)
+  - [Exportieren In-Place eDiscovery-Suchergebnisse in eine PST-Datei](/exchange/security-and-compliance/in-place-ediscovery/export-search-results)
 
-  - [Exportieren von Inhalten und Erstellen von Berichten im eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center)
+  - [Exportieren von Inhalten und Erstellen von Berichten im eDiscovery Center](/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center)

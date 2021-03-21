@@ -15,17 +15,17 @@ ms.custom:
 - Ent_Architecture
 - seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: Erfahren Sie, welche Typen von SharePoint 2013-Lösungen in Microsoft Azure virtuellen Computern gehostet werden können, und wie Sie Azure auf Host One einrichten.
-ms.openlocfilehash: 37d7eb2a746e30ad560949a933783beb6b971a08
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Erfahren Sie, welche Arten von SharePoint 2013-Lösungen auf virtuellen Microsoft Azure-Computern gehostet werden können, und wie Sie Azure als Host einrichten.
+ms.openlocfilehash: eed74e2dcbe383f0f63e7f6ea2fc70fe7b51b1b3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696013"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924176"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Microsoft Azure-Architekturen für SharePoint 2013
 
-Azure ist eine gut geeignete Umgebung für das Hosten einer SharePoint 2013-Lösung. In den meisten Fällen wird Microsoft 365 empfohlen, aber eine SharePoint Server Farm, die in Azure gehostet wird, kann eine gute Option für bestimmte Lösungen sein. In diesem Artikel wird beschrieben, wie SharePoint-Lösungen entworfen werden, damit sie sich für die Azure-Plattform eignen. Die folgenden beiden spezifischen Lösungen dienen als Beispiele:
+Azure ist eine gut geeignete Umgebung für das Hosten einer SharePoint 2013-Lösung. In den meisten Fällen wird Microsoft 365 empfohlen, aber eine in Azure gehostete SharePoint Server-Farm kann eine gute Option für bestimmte Lösungen sein. In diesem Artikel wird beschrieben, wie SharePoint-Lösungen entworfen werden, damit sie sich für die Azure-Plattform eignen. Die folgenden beiden spezifischen Lösungen dienen als Beispiele:
   
 - [SharePoint Server 2013 - Notfallwiederherstellung in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
@@ -39,14 +39,14 @@ Azure-Infrastrukturdienste sind eine überzeugende Option für das Hosting von S
 |:-----|:-----|
 |Entwicklungs- und Testumgebungen  <br/> |Es ist einfach, diese Umgebungen zu erstellen und zu verwalten.  <br/> |
 |Notfallwiederherstellung lokaler SharePoint-Farmen in Azure  <br/> |**Gehostetes sekundäres Rechenzentrum** Verwenden Sie Azure, statt in ein sekundäres Rechenzentrum in einer anderen Region zu investieren. <br/> **Kostengünstige Umgebungen für die Notfallwiederherstellung** Im Vergleich zu einer lokalen Umgebung für die Notfallwiederherstellung müssen Sie weniger Ressourcen vorhalten und bezahlen. Die Anzahl der Ressourcen hängt von der gewählten Umgebung für die Notfallwiederherstellung ab: verzögert betriebsbereit, betriebsbereit und unmittelbar betriebsbereit.<br/> **Flexiblere Plattform** Bei einem Notfall können Sie Ihre SharePoint-Wiederherstellungsfarm problemlos horizontal skalieren, um die Lastanforderungen zu erfüllen. Skalieren Sie sie horizontal herunter, wenn Sie die Ressourcen nicht mehr benötigen.<br/> Siehe [SharePoint Server 2013 - Notfallwiederherstellung in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md).  <br/> |
-|Mit dem Internet verbundene Websites mit Features und Skalierung, die in Microsoft 365 nicht verfügbar sind  <br/> |**Konzentrieren Ihrer Bemühungen** Konzentrieren Sie sich auf das Erstellen einer großartigen Website anstatt auf das Erstellen einer Infrastruktur. <br/> **Ausnutzen der Flexibilität in Azure** Wählen Sie die Größe der Farm den Anforderungen entsprechend durch Hinzufügen neuer Server aus, und zahlen Sie nur für Ressourcen, die Sie benötigen. Eine dynamische Zuordnung von Computern (automatische Skalierung) wird nicht unterstützt.<br/> **Verwendung von Azure Active Directory (AD)** Nutzen Sie Azure AD für Kundenkonten. <br/> **Hinzufügen von SharePoint-Funktionen in Microsoft 365 nicht verfügbar** Fügen Sie Deep Reporting und Webanalyse hinzu. <br/> Siehe [Internetwebsites in Microsoft Azure mit SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
-|App-Farmen zur Unterstützung von Microsoft 365 oder lokalen Umgebungen  <br/> |**Erstellen, Testen und Hosten von Apps** in Azure zum Unterstützen von sowohl lokalen als auch von Cloud-Umgebungen. <br/> **Hosten dieser Rolle** in Azure anstelle der Anschaffung neuer Hardware für lokale Umgebungen. <br/> |
+|Mit dem Internet verbundene Websites, die Features und Skalierung verwenden, sind in Microsoft 365 nicht verfügbar  <br/> |**Konzentrieren Ihrer Bemühungen** Konzentrieren Sie sich auf das Erstellen einer großartigen Website anstatt auf das Erstellen einer Infrastruktur. <br/> **Ausnutzen der Flexibilität in Azure** Wählen Sie die Größe der Farm den Anforderungen entsprechend durch Hinzufügen neuer Server aus, und zahlen Sie nur für Ressourcen, die Sie benötigen. Eine dynamische Zuordnung von Computern (automatische Skalierung) wird nicht unterstützt.<br/> **Verwendung von Azure Active Directory (AD)** Nutzen Sie Azure AD für Kundenkonten. <br/> **Hinzufügen von SharePoint-Funktionen, die in Microsoft 365 nicht verfügbar sind** Fügen Sie tiefe Berichte und Webanalysen hinzu. <br/> Siehe [Internetwebsites in Microsoft Azure mit SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
+|App-Farmen zur Unterstützung von Microsoft 365- oder lokalen Umgebungen  <br/> |**Erstellen, Testen und Hosten von Apps** in Azure zum Unterstützen von sowohl lokalen als auch von Cloud-Umgebungen. <br/> **Hosten dieser Rolle** in Azure anstelle der Anschaffung neuer Hardware für lokale Umgebungen. <br/> |
    
 Berücksichtigen Sie für Intranet- und Zusammenarbeitslösungen und Arbeitslasten die folgenden Optionen:
   
-- Ermitteln Sie, ob Microsoft 365 Ihre geschäftlichen Anforderungen erfüllt oder Teil der Lösung sein kann. Microsoft 365 bietet eine umfassende Funktionsgruppe, die immer auf dem neuesten Stand ist.
+- Ermitteln Sie, ob Microsoft 365 Ihre Geschäftlichen Anforderungen erfüllt oder Teil der Lösung sein kann. Microsoft 365 bietet einen reichhaltigen Funktionssatz, der immer auf dem neuesten Stand ist.
     
-- Wenn Microsoft 365 nicht alle Ihre geschäftlichen Anforderungen erfüllt, sollten Sie eine Standardimplementierung von SharePoint 2013 lokal von Microsoft Consulting Services (MCS) aus prüfen. Eine Standardarchitektur kann eine schnellere, kostengünstigere und einfachere Lösung für Sie sein als die Unterstützung einer angepassten Lösung. 
+- Wenn Microsoft 365 nicht alle Geschäftlichen Anforderungen erfüllt, sollten Sie eine standardimplementierung von SharePoint 2013 lokal von Microsoft Consulting Services (MCS) in Betracht ziehen. Eine Standardarchitektur kann eine schnellere, kostengünstigere und einfachere Lösung für Sie sein als die Unterstützung einer angepassten Lösung. 
     
 - Wenn eine Standardimplementierung Ihre geschäftlichen Anforderungen nicht erfüllt, erwägen Sie eine angepasste lokale Lösung.
     
@@ -56,9 +56,9 @@ Berücksichtigen Sie für Intranet- und Zusammenarbeitslösungen und Arbeitslast
 
 Auch wenn in diesem Artikels Beispieltopologien für SharePoint verwendet werden, können Sie diese Entwurfskonzepte auf alle anderen SharePoint-Farmtopologien übertragen. Befolgen Sie vor dem Entwurf der Azure-Umgebung die folgenden Anleitungen zu Topologie, Architektur, Kapazität und Leistung, um die SharePoint-Farm zu entwerfen.
   
-- [Technische Diagramme für SharePoint 2013](https://technet.microsoft.com/sharepoint/fp123594.aspx)
+- [Technische Diagramme für SharePoint 2013](/SharePoint/technical-reference/technical-diagrams)
     
-- [Plan for performance and capacity management in SharePoint Server 2013](https://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
+- [Plan for performance and capacity management in SharePoint Server 2013](/SharePoint/administration/performance-planning-in-sharepoint-server-2013)
     
 ## <a name="determine-the-active-directory-domain-type"></a>Bestimmen des Active Directory-Domänentyps
 
@@ -107,7 +107,7 @@ Inhalt dieses Diagramms:
     
 Weitere Informationen zum Planen und Erstellen eines standortübergreifenden virtuellen Netzwerks finden Sie unter [Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
   
-## <a name="add-active-directory-domain-services-ad-ds-and-dns"></a>Hinzufügen von Active Directory-Domänendienste (AD DS) und DNS
+## <a name="add-active-directory-domain-services-ad-ds-and-dns"></a>Hinzufügen von Active Directory Domain Services (AD DS) und DNS
 
 Für die Notfallwiederherstellung in Azure stellen Sie Windows Server AD und DNS in einem Hybridszenario bereit, wobei Windows Server AD sowohl lokal als auch auf virtuellen Azure-Computern bereitgestellt wird.
   
@@ -129,7 +129,7 @@ Die folgende Tabelle enthält Empfehlungen für diese virtuellen Computer in Azu
 |IP-Adressen  <br/> |Verwenden Sie statische IP-Adressen und konfigurieren Sie das virtuelle Netzwerk, um diese Adressen den virtuellen Computern im virtuellen Netzwerk zuzuweisen, nachdem die Domänencontroller konfiguriert wurden.  <br/> |
    
 > [!IMPORTANT]
-> Lesen Sie vor der Bereitstellung von Active Directory in Azure die [Richtlinien für die Bereitstellung von Windows Server Active Directory auf virtuellen Computern in Azure](https://go.microsoft.com/fwlink/p/?linkid=392681). Diese Hilfedateien helfen Ihnen zu bestimmen, ob eine andere Architektur oder andere Konfigurationseinstellungen für Ihre Lösung erforderlich sind. 
+> Lesen Sie vor der Bereitstellung von Active Directory in Azure die [Richtlinien für die Bereitstellung von Windows Server Active Directory auf virtuellen Computern in Azure](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100). Diese Hilfedateien helfen Ihnen zu bestimmen, ob eine andere Architektur oder andere Konfigurationseinstellungen für Ihre Lösung erforderlich sind. 
   
 ## <a name="add-the-sharepoint-farm"></a>Hinzufügen der SharePoint-Farm
 
@@ -219,10 +219,8 @@ Dieses Diagramm zeigt die in Azure-Infrastrukturdiensten implementierte SharePoi
   
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft 365 Lösungs- und Architektur-Center](../solutions/solution-architecture-center.md)
+[Microsoft 365-Lösungs- und Architekturcenter](../solutions/index.yml)
   
 [Internetwebsites in Microsoft Azure mit SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
 [SharePoint Server 2013 - Notfallwiederherstellung in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
-
-

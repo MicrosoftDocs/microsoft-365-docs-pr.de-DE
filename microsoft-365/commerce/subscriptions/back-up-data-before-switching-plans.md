@@ -1,5 +1,5 @@
 ---
-title: Sichern von Daten vor dem Ändern der Pläne
+title: Sichern von Daten vor dem Ändern von Plänen
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,19 +21,19 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
-description: Sichern von Outlook-, OneDrive-, Jammer-und SharePoint-Inhalten, bevor Sie Microsoft 365-Pläne ändern.
-ms.openlocfilehash: f74acee03a21f2dfdf01c10017346b81a2885b3b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 'Sichern von Outlook-, OneDrive-, Yammer- und #A0 vor dem Ändern von Microsoft 365-Plänen.'
+ms.openlocfilehash: d29d4e739a9328a63a491696ba26bee5b1947f0a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647855"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924060"
 ---
-# <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Sichern von Daten vor dem Wechsel von Microsoft 365 for Business-Plänen
+# <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Sichern von Daten vor dem Wechseln von Microsoft 365 Business-Plänen
 
-Wenn ein Benutzer zu einem anderen Abonnement mit weniger datenbezogenen Diensten gewechselt wird oder ein Benutzer die Organisation verlässt, kann eine Kopie der in Microsoft 365 gespeicherten Daten heruntergeladen werden, bevor Sie zum neuen Abonnement gewechselt werden.
+Wenn ein Benutzer zu einem anderen Abonnement mit weniger datenbezogenen Diensten gewechselt wird oder ein Benutzer die Organisation verlässt, kann eine Kopie seiner In Microsoft 365 gespeicherten Daten heruntergeladen werden, bevor er zum neuen Abonnement gewechselt wird.
 
-Wenn Sie einen Benutzer in ein Abonnement verschieben, das über dieselben oder mehrere Dienste verfügt, müssen Sie keine Benutzerdaten sichern. Weitere Informationen finden Sie unter " [Benutzer in ein anderes Abonnement migrieren](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/move-users-different-subscription)".
+Wenn Sie einen Benutzer in ein Abonnement mit den gleichen oder mehr Diensten verschieben, müssen Sie keine Benutzerdaten sichern. Weitere [Informationen finden Sie unter Verschieben von Benutzern in ein anderes Abonnement.](./move-users-different-subscription.md)
   
 ## <a name="save-a-copy-of-outlook-information"></a>Sichern einer Kopie von Outlook-Daten
 
@@ -47,11 +47,11 @@ Bevor sie auf ein anderes Abonnement umgestellt werden, können Benutzer[Dateien
   
 ## <a name="save-yammer-information"></a>Sichern von Yammer-Daten
 
-Administratoren können alle Nachrichten, Notizen, Dateien, Themen, Benutzer und Gruppen in Form einer ZIP-Datei exportieren. Weitere Informationen finden Sie unter [Exportieren von Daten aus Yammer Enterprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/export-yammer-enterprise-data). Entwickler können hierfür auch die [Yammer-API](https://go.microsoft.com/fwlink/p/?linkid=842495) verwenden.
+Administratoren können alle Nachrichten, Notizen, Dateien, Themen, Benutzer und Gruppen in Form einer ZIP-Datei exportieren. Weitere Informationen finden Sie unter [Exportieren von Daten aus Yammer Enterprise](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). Entwickler können hierfür auch die [Yammer-API](https://go.microsoft.com/fwlink/p/?linkid=842495) verwenden.
   
 ## <a name="how-to-save-sharepoint-information"></a>Sichern von SharePoint-Daten
 
-Wenn ein Benutzer von einem Abonnement umgeschaltet wird, das über SharePoint Online verfügt, wird die **SharePoint** -Kachel nicht mehr in Ihrem Microsoft 365-Menü angezeigt.
+Wenn ein Benutzer von einem Abonnement mit SharePoint Online zu einem Abonnement gewechselt wird, das es nicht besitzt, wird die **SharePoint-Kachel** nicht mehr im Microsoft 365-Menü angezeigt.
   
 Solange sich das neue Abonnement jedoch in derselben Organisation wie der befindet, in der der Umstieg erfolgt ist, sind die Benutzer weiterhin in der Lage, auf die SharePoint-Teamwebsite zuzugreifen. Sie können Notizbücher, Dokumente, Aufgabe und Kalender anzeigen und aktualisieren, indem sie die direkte URL der Teamwebsite aufrufen.
   

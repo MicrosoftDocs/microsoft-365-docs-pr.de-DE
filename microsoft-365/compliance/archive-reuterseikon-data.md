@@ -1,5 +1,5 @@
 ---
-title: Einrichten eines Connectors zum Archivieren von Reuters EIKON-Daten in Microsoft 365
+title: Einrichten eines Connectors zum Archivieren von Reuters-Eikon-Daten in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,78 +11,78 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Administratoren können einen Connector zum Importieren und Archivieren von Reuters-EIKON-Daten aus Globanet in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Drittanbieter-Datenquellen in Microsoft 365 archivieren. Nach dem Archivieren dieser Daten können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten von drittanbieterdaten verwenden.
-ms.openlocfilehash: f790317fb8ed8f94601d7915b484015c4cdf6088
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+description: Administratoren können einen Connector zum Importieren und Archivieren von Reuters-Eikon-Daten aus Demanet in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren. Nachdem Sie diese Daten archiviert haben, können Sie Compliancefeatures wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um Daten von Drittanbietern zu verwalten.
+ms.openlocfilehash: 3d125bb8d0c4481f17f6dfe4c85afd0e30b93e50
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620362"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925127"
 ---
-# <a name="set-up-a-connector-to-archive-reuters-eikon-data"></a>Einrichten eines Connectors zum Archivieren von Reuters EIKON-Daten
+# <a name="set-up-a-connector-to-archive-reuters-eikon-data"></a>Einrichten eines Connectors zum Archivieren von Reuters-Eikon-Daten
 
-Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center, um Daten aus der Reuters EIKON-Plattform in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Globanet bietet einen [Reuters EIKON](https://globanet.com/eikon/) -Connector, der so konfiguriert ist, dass er Elemente aus der Drittanbieter-Datenquelle (regelmäßig) erfasst und diese Elemente nach Microsoft 365 importiert. Der Connector wandelt die Inhalte wie persönliche Nachrichten, Gruppenchats, Anlagen und Haftungsausschlüsse aus dem Reuters EIKON-Konto eines Benutzers in ein e-Mail-Nachrichtenformat um und importiert diese Elemente dann in das Postfach des Benutzers in Microsoft 365.
+Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center, um Daten von der Reuters Eikon-Plattform in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Das Unternehmen Bietet einen [Reuters Eikon-Connector,](https://globanet.com/eikon/) der so konfiguriert ist, dass Elemente aus der Datenquelle eines Drittanbieters (regelmäßig) erfasst und in Microsoft 365 importiert werden. Der Connector konvertiert inhalte wie Personennachrichten, Gruppenchats, Anlagen und Haftungsausschlüsse aus dem Reuters-Eikon-Konto eines Benutzers in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in das Postfach des Benutzers in Microsoft 365.
 
-Nachdem die Reuters-EIKON-Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365-Compliance-Features wie Beweissicherungsverfahren, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen sowie die Kompatibilität der Kommunikation anwenden. Die Verwendung eines Reuters EIKON-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann dazu beitragen, dass Ihre Organisation mit behördlichen und behördlichen Richtlinien konform bleibt.
+Nachdem Reuters-Eikon-Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365-Compliancefeatures wie z. B. Litigation Hold, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen sowie Kommunikationskonformität anwenden. Die Verwendung eines Reuters-Eikon-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Dazu beitragen, dass Ihre Organisation die Behördlichen und behördlichen Richtlinien einhalten kann.
 
-## <a name="overview-of-archiving-reuters-eikon-data"></a>Übersicht über die Archivierung von Reuters-EIKON-Daten
+## <a name="overview-of-archiving-reuters-eikon-data"></a>Übersicht über archivierungs-Reuters-Eikon-Daten
 
-In der folgenden Übersicht wird der Vorgang der Verwendung eines Connectors zum Archivieren von Reuters-EIKON-Daten in Microsoft 365 erläutert.
+In der folgenden Übersicht wird der Prozess der Verwendung eines Connectors zum Archivieren von Reuters Eikon-Daten in Microsoft 365 erläutert.
 
-![Archivierungs Workflow für Reuters-EIKON-Daten](../media/ReutersEikonConnectorWorkflow.png)
+![Archivierungsworkflow für Reuters-Eikon-Daten](../media/ReutersEikonConnectorWorkflow.png)
 
-1. Ihre Organisation arbeitet mit Reuters EIKON zusammen, um eine Reuters EIKON-Website einzurichten und zu konfigurieren.
+1. Ihre Organisation arbeitet mit Reuters Eikon zusammen, um eine Reuters Eikon-Website zu einrichten und zu konfigurieren.
 
-2. Einmal alle 24 Stunden werden Reuters EIKON-Elemente in die Globanet-Merge1-Website kopiert. Der Connector wandelt auch Reuters EIKON-Elemente in ein e-Mail-Nachrichtenformat um.
+2. Alle 24 Stunden werden Reuters-Eikon-Elemente auf die Website "Globenet Merge1" kopiert. Der Connector konvertiert auch Reuters Eikon-Elemente in ein E-Mail-Nachrichtenformat.
 
-3. Der Reuters EIKON-Connector, den Sie im Microsoft 365 Compliance Center erstellen, stellt jeden Tag eine Verbindung mit der Globanet-Merge1-Website her und überträgt die Inhalte an einen sicheren Azure-Speicherort in der Microsoft-Cloud.
+3. Der Reuters-Eikon-Connector, den Sie im Microsoft 365 Compliance Center erstellen, stellt täglich eine Verbindung mit der Website "Globenet Merge1" bereit und überträgt den Inhalt an einen sicheren Azure Storage-Speicherort in der Microsoft-Cloud.
 
-4. Der Connector importiert Elemente in die Postfächer bestimmter Benutzer, indem er den Wert der *Email* -Eigenschaft der automatischen Benutzerzuordnung wie in [Schritt 3](#step-3-map-users-and-complete-the-connector-setup)beschrieben verwendet. Ein Unterordner im Ordner "Posteingang" **Reuters EIKON** wird in den Benutzerpostfächern erstellt, und die Elemente werden in diesen Ordner importiert. Der Connector bestimmt anhand des Werts der *Email* -Eigenschaft, in welches Postfach Elemente importiert werden sollen. Jedes Reuters-EIKON-Element enthält diese Eigenschaft, die mit der e-Mail-Adresse jedes Teilnehmers des Elements aufgefüllt wird.
+4. Der Connector importiert Elemente in die Postfächer bestimmter Benutzer mithilfe des Werts der *Email-Eigenschaft* der automatischen Benutzerzuordnung, wie in [Schritt 3 beschrieben.](#step-3-map-users-and-complete-the-connector-setup) In den Benutzerpostfächern wird ein Unterordner im Posteingangsordner mit dem Namen **Reuters Eikon** erstellt, und die Elemente werden in diesen Ordner importiert. Der Connector bestimmt mithilfe des Werts der Email-Eigenschaft, in welches Postfach Elemente *importiert werden.* Jedes Reuters Eikon-Element enthält diese Eigenschaft, die mit der E-Mail-Adresse jedes Teilnehmers des Elements aufgefüllt wird.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Erstellen Sie ein Globanet-Merge1-Konto für Microsoft-Connectors. Um ein Konto zu erstellen, wenden Sie sich an den [Globanet-Kunden Support](https://globanet.com/ms-connectors-contact). Sie melden sich bei diesem Konto an, wenn Sie den Connector in Schritt 1 erstellen.
+- Erstellen Sie ein Konto für das Merge1-Konto von "GlobeNet Merge1" für Microsoft-Connectors. Um ein Konto zu erstellen, wenden Sie sich an [den Kundensupport von "Globenet".](https://globanet.com/ms-connectors-contact) Sie melden sich bei diesem Konto an, wenn Sie den Connector in Schritt 1 erstellen.
 
-- Der Benutzer, der den Reuters EIKON Connector in Schritt 1 erstellt (und in Schritt 3 vervollständigt) muss der Rolle "Post Fach Import Export" in Exchange Online zugewiesen sein. Diese Rolle ist für das Hinzufügen von Connectors auf der Seite **Daten Konnektoren** im Microsoft 365 Compliance Center erforderlich. Diese Rolle ist in Exchange Online standardmäßig keiner Rollengruppe zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Der Benutzer, der den Reuters -Eikon-Connector in Schritt 1 erstellt (und in Schritt 3 abgeschlossen) muss der Rolle Postfachimportexport in Exchange Online zugewiesen werden. Diese Rolle ist erforderlich, um Connectors auf der Seite **Datenconnectors** im Microsoft 365 Compliance Center hinzuzufügen. Diese Rolle ist standardmäßig nicht einer Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle Postfachimportexport zur Rollengruppe Organisationsverwaltung in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle Postfachimportexport zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten Erstellen von [Rollengruppen](/Exchange/permissions-exo/role-groups#create-role-groups) oder [Ändern](/Exchange/permissions-exo/role-groups#modify-role-groups) von Rollengruppen im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
-## <a name="step-1-set-up-the-reuters-eikon-connector"></a>Schritt 1: Einrichten des Reuters EIKON Connectors
+## <a name="step-1-set-up-the-reuters-eikon-connector"></a>Schritt 1: Einrichten des Reuters-Eikon-Connectors
 
-Der erste Schritt besteht darin, auf die Seite " **Daten Konnektoren** " im Microsoft 365 Compliance Center zuzugreifen und einen Connector für Reuters EIKON-Daten zu erstellen.
+Der erste Schritt besteht im Zugriff auf die Seite **Datenconnectors** im Microsoft 365 Compliance Center und erstellen Sie einen Connector für Reuters Eikon-Daten.
 
-1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com/) und klicken Sie dann auf **Data Connectors**  >  **Reuters EIKON**.
+1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com/) zu, und klicken Sie dann auf **Datenconnectors**  >  **Reuters Eikon**.
 
-2. Klicken Sie auf der Seite **Reuters EIKON** Produktbeschreibung auf **Connector hinzufügen**.
+2. Klicken Sie auf der **Seite Reuters Eikon-Produktbeschreibung** auf **Connector hinzufügen.**
 
-3. Klicken Sie auf der Seite **Nutzungsbedingungen** auf **annehmen**.
+3. Klicken Sie **auf der Seite Nutzungsbedingungen** auf **Akzeptieren**.
 
-4. Geben Sie einen eindeutigen Namen ein, der den Connector identifiziert, und klicken Sie dann auf **weiter**.
+4. Geben Sie einen eindeutigen Namen ein, der den Connector identifiziert, und klicken Sie dann auf **Weiter**.
 
 5. Melden Sie sich bei Ihrem Merge1-Konto an, um den Connector zu konfigurieren.
 
-## <a name="step-2-configure-the-reuters-eikon-connector-on-the-globanet-merge1-site"></a>Schritt 2: Konfigurieren des Reuters EIKON-Connectors auf der Globanet-Merge1-Website
+## <a name="step-2-configure-the-reuters-eikon-connector-on-the-globanet-merge1-site"></a>Schritt 2: Konfigurieren des Reuters-Eikon-Connectors auf der Website "Globenet Merge1"
 
-Der zweite Schritt besteht darin, den Reuters EIKON-Connector auf der Merge1-Website zu konfigurieren. Informationen zum Konfigurieren des Reuters EIKON-Connectors auf der Globanet-Merge1-Website finden Sie unter [Merge1 Connector-Benutzerhandbuch für Drittanbieter](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Reuters%20Eikon%20User%20Guide%20.pdf).
+Der zweite Schritt besteht in der Konfiguration des Reuters-Eikon-Connectors auf dem Merge1-Standort. Informationen zum Konfigurieren des Reuters-Eikon-Connectors auf dem Standort "Merge1" finden Sie unter [Merge1-Benutzerhandbuch](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Reuters%20Eikon%20User%20Guide%20.pdf)für Drittanbieterconnectors .
 
-Nachdem Sie auf **& Ende speichern** klicken, wird die Seite **Benutzerzuordnung** im Connector-Assistenten im Microsoft 365 Compliance Center angezeigt.
+Nachdem Sie auf **& Beenden** klicken, wird die Seite Benutzerzuordnung im Connector-Assistenten im Microsoft 365 Compliance Center angezeigt. 
 
-## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Schritt 3: Zuordnen von Benutzern und Abschließen des Connector-Setups
+## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Schritt 3: Zuordnung von Benutzern und Abschließen der Connectoreinrichtung
 
-Führen Sie die folgenden Schritte aus, um Benutzer zuzuordnen und das Connector-Setup im Microsoft 365 Compliance Center abzuschließen:
+Führen Sie die folgenden Schritte aus, um Benutzer zu zuordnungen und die Connectoreinrichtung im Microsoft 365 Compliance Center abzuschließen:
 
-1. Aktivieren Sie auf der Seite **externe Benutzer auf Microsoft 365-Benutzer zuordnen** die Option Automatische Benutzerzuordnung. Die Reuters-EIKON-Elemente enthalten eine Eigenschaft mit dem Namen " *e-Mail*", die e-Mail-Adressen für Benutzer in Ihrer Organisation enthält. Wenn der Connector diese Adresse einem Microsoft 365-Benutzer zuordnen kann, werden die Elemente in das Postfach dieses Benutzers importiert.
+1. Aktivieren Sie auf der Seite Externe **Benutzer zu Microsoft 365-Benutzern** zuordnen die automatische Benutzerzuordnung. Die Reuters -Eikon-Elemente enthalten eine Eigenschaft namens *Email*, die E-Mail-Adressen für Benutzer in Ihrer Organisation enthält. Wenn der Connector diese Adresse einem Microsoft 365-Benutzer zuordnen kann, werden die Elemente in das Postfach dieses Benutzers importiert.
 
-2. Klicken Sie auf **weiter**, überprüfen Sie Ihre Einstellungen, und wechseln Sie dann zur Seite **Daten Konnektoren** , um den Fortschritt des Importvorgangs für den neuen Connector anzuzeigen.
+2. Klicken **Sie auf Weiter,** überprüfen Sie  Ihre Einstellungen, und wechseln Sie dann zur Seite Datenconnectors, um den Fortschritt des Importvorgangs für den neuen Connector zu sehen.
 
-## <a name="step-4-monitor-the-reuters-eikon-connector"></a>Schritt 4: Überwachen des Reuters EIKON-Connectors
+## <a name="step-4-monitor-the-reuters-eikon-connector"></a>Schritt 4: Überwachen des Reuters-Eikon-Connectors
 
-Nachdem Sie den Reuters EIKON Connector erstellt haben, können Sie den Connectorstatus im Microsoft 365 Compliance Center anzeigen.
+Nachdem Sie den Reuters Eikon-Connector erstellt haben, können Sie den Connectorstatus im Microsoft 365 Compliance Center anzeigen.
 
-1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und klicken Sie im linken Navigationsbereich auf **Daten-Konnektoren** .
+1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und klicken Sie **im** linken Navigations navi auf Datenconnectors.
 
-2. Klicken Sie auf die Registerkarte **Connectors** , und wählen Sie dann den **Reuters EIKON** Connector aus, um die Flyout-Seite anzuzeigen. Diese Seite enthält die Eigenschaften und Informationen zum Connector.
+2. Klicken Sie auf **die** Registerkarte Connectors, und wählen Sie dann **den Reuters-Eikon-Connector** aus, um die Flyoutseite anzeigen zu können. Diese Seite enthält die Eigenschaften und Informationen zum Connector.
 
-3. Klicken Sie unter **Connectorstatus with Source** auf den Link **Download Protokoll** , um das Statusprotokoll für den Connector zu öffnen (oder zu speichern). Dieses Protokoll enthält Informationen zu den Daten, die in die Microsoft-Cloud importiert wurden.
+3. Klicken **Sie unter Connectorstatus mit Quelle** auf den Link **Protokoll** herunterladen, um das Statusprotokoll für den Connector zu öffnen (oder zu speichern). Dieses Protokoll enthält Informationen zu den Daten, die in die Microsoft Cloud importiert wurden.
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-- Zurzeit wird das Importieren von Anlagen oder Elementen, die größer als 10 MB sind, nicht unterstützt. Unterstützung für größere Elemente wird zu einem späteren Zeitpunkt zur Verfügung stehen.
+- Derzeit wird das Importieren von Anlagen oder Elementen, die größer als 10 MB sind, nicht unterstützt. Unterstützung für größere Elemente wird zu einem späteren Zeitpunkt verfügbar sein.

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Zusätzliche Azure Active Directory-Informationen zur Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
-ms.openlocfilehash: 4fc5dda95e5e7afc4d69141a9a4debd0a74c492b
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
-ms.translationtype: HT
+ms.openlocfilehash: 1e3871dc5a8a8a9ecbef29df21431aa3707871d0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688803"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923850"
 ---
 # <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Zusätzliche Azure Active Directory-Informationen für die Migration von Microsoft Cloud Deutschland
 
@@ -45,14 +45,14 @@ Es gibt drei Voraussetzungen, um Ihre Anmeldeberechtigung zu aktualisieren:
 
 Eine Anwendung könnte eine der folgenden sein:
 
-- [Einzelseiten-App (Single Page App, SPA)](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
-- [Web-App, die Benutzer anmeldet](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-sign-user-overview)
-- [Web-App, welches Web-APIs aufruft](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
-- [Geschützte Web-API](https://docs.microsoft.com/azure/active-directory/develop/scenario-protected-web-api-overview)
-- [Web-API, welches Web-APIs aufruft](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-api-call-api-overview)
-- [Desktop-App](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
-- [Daemon-App](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
-- [Mobile App](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
+- [Einzelseiten-App (Single Page App, SPA)](/azure/active-directory/develop/scenario-spa-overview)
+- [Web-App, die Benutzer anmeldet](/azure/active-directory/develop/scenario-web-app-sign-user-overview)
+- [Web-App, welches Web-APIs aufruft](/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [Geschützte Web-API](/azure/active-directory/develop/scenario-protected-web-api-overview)
+- [Web-API, welches Web-APIs aufruft](/azure/active-directory/develop/scenario-web-api-call-api-overview)
+- [Desktop-App](/azure/active-directory/develop/scenario-desktop-overview)
+- [Daemon-App](/azure/active-directory/develop/scenario-daemon-overview)
+- [Mobile App](/azure/active-directory/develop/scenario-mobile-overview)
  
 > [!NOTE] 
 > Wenn eine Anwendung zur Verwendung `login.microsoftonline.com` als Autorität wechselt, werden die Token von dieser neuen Autorität signiert. Wenn Sie Ressourcenanwendungen hosten, die von anderen Anwendungen aufgerufen werden, müssen Sie eine laxe Token-Validierung zulassen. Das bedeutet, dass Ihre App Token zulassen muss, die sowohl von der Azure AD Germany als auch von der Azure AD Public Cloud signiert sind. Diese laxe Token-Validierung ist erforderlich, bis alle Client-Anwendungen, die Ihren Dienst aufrufen, vollständig in die Azure AD Public Cloud migriert sind. Nach der Migration muss Ihre Ressourcenanwendung nur noch von der Azure AD Public Cloud signierte Token akzeptieren.
@@ -72,10 +72,10 @@ Eine Anwendung könnte eine der folgenden sein:
 
 5. Aktualisieren Sie Umgebungsparameter auf `AzurePublic` (statt `AzureGermany`) in administrativen Tools und Skripten für:
 
-    - [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps)
-    - [Azure AD PowerShell (MSOnline)](https://docs.microsoft.com/powershell/azure/active-directory/overview)
-    - [Azure AD PowerShell (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2??)
-    - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli)
+    - [Azure PowerShell](/powershell/azure/install-az-ps)
+    - [Azure AD PowerShell (MSOnline)](/powershell/azure/active-directory/overview)
+    - [Azure AD PowerShell (AzureAD)](/powershell/azure/active-directory/install-adv2)
+    - [Azure CLI](/cli/azure/install-azure-cli)
  
 **Was ist mit Anwendungen, die ich veröffentliche?**
 
@@ -112,7 +112,7 @@ Hier sind einige zusätzliche Überlegungen für Azure AD:
 
 - Microsoft Cloud Deutschland-Benutzer, die die Mobile App Benachrichtigungsmethode für MFA-Anfragen verwenden, sehen in der Microsoft Authenticator-App die ObjectId (eine GUID) des Benutzers anstelle des Benutzerprinzipalname (UPN). Nachdem die Migration des Azure AD-Mandanten abgeschlossen ist und in Office 365-Diensten gehostet wird, werden bei neuen Microsoft Authenticator-Aktivierungen die UPNs der Benutzer angezeigt. Bestehende Microsoft Authenticator-Konten zeigen weiterhin die ObjectId des Benutzers an, funktionieren aber auch weiterhin für mobile App-Benachrichtigungen. 
 
-- Für Mandanten, die nach dem 22. Oktober 2019 erstellt werden, können die Sicherheitsvorgaben für den Mandanten automatisch aktiviert werden, wenn er auf den Office 365-Dienst migriert wird. Mandantenadministratoren können wählen, ob sie die Sicherheitsvorgaben aktiviert lassen und sich für MFA registrieren oder ob sie die Funktion deaktivieren. Weitere Informationen finden Sie in dieser [Übersicht der Sicherheitsstandards](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults). 
+- Für Mandanten, die nach dem 22. Oktober 2019 erstellt werden, können die Sicherheitsvorgaben für den Mandanten automatisch aktiviert werden, wenn er auf den Office 365-Dienst migriert wird. Mandantenadministratoren können wählen, ob sie die Sicherheitsvorgaben aktiviert lassen und sich für MFA registrieren oder ob sie die Funktion deaktivieren. Weitere Informationen finden Sie in dieser [Übersicht der Sicherheitsstandards](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults). 
 
   > [!NOTE]
   > Organisationen, die während der Migration nicht automatisch aktiviert werden, können in Zukunft dennoch automatisch registriert werden, wenn die Funktion zur Aktivierung von Sicherheitsvorgaben im Office 365-Dienst ausgerollt wird. Administratoren, die die Sicherheitsvorgaben explizit deaktivieren oder aktivieren möchten, können dies tun, indem sie die Funktion unter **Azure Active Directory > Eigenschaften aktualisieren**. Nachdem die Funktion explizit vom Administrator aktiviert wurde, wird sie nicht mehr automatisch aktiviert.
@@ -123,7 +123,7 @@ Hier sind einige zusätzliche Überlegungen für Azure AD:
 
 Erste Schritte:
 
-- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
+- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
 - [Hilfe zur Microsoft Cloud Deutschland-Migration Assistance](https://aka.ms/germanymigrateassist)
 - [So können Sie sich für die Migration anmelden](ms-cloud-germany-migration-opt-in.md)
 - [Kundenerfahrung während der Migration](ms-cloud-germany-transition-experience.md)
@@ -132,10 +132,10 @@ Der Weg durch die Umstellung:
 
 - [Phasen, Aktionen und Auswirkungen der Migration](ms-cloud-germany-transition-phases.md)
 - [Zusätzliche Vorarbeit](ms-cloud-germany-transition-add-pre-work.md)
-- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräten](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräte](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
-Cloud-Apps
+Cloud-Apps:
 
-- [Informationen zum Dynamics 365-Migrationsprogramm](https://aka.ms/d365ceoptin)
-- [Informationen zum Power BI-Migrationsprogramm](https://aka.ms/pbioptin)
-- [Erste Schritte mit dem Upgrade von Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Informationen zum Dynamics 365-Migrationsprogramm](/dynamics365/get-started/migrate-data-german-region)
+- [Informationen zum Power BI-Migrationsprogramm](/power-bi/admin/service-admin-migrate-data-germany)
+- [Erste Schritte mit dem Upgrade von Microsoft Teams](/microsoftteams/upgrade-start-here)

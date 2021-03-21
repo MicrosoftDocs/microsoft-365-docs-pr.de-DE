@@ -15,49 +15,49 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
-description: 'Zusammenfassung: Verwenden Sie PowerShell für Microsoft 365 zum Erstellen von Berichten, die im Microsoft 365 Admin Center nicht erstellt werden können.'
-ms.openlocfilehash: 10000f62b1d6a747cf0373623c6038b080666e1a
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+description: 'Zusammenfassung: Verwenden Sie PowerShell für Microsoft 365, um Berichte zu erstellen, die Sie im Microsoft 365 Admin Center nicht erstellen können.'
+ms.openlocfilehash: 12cba74d114ea03804741335bd34ece403926033
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753978"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924696"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Verwenden von PowerShell zum Erstellen von Berichten für Microsoft 365
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Im Microsoft 365 Admin Center stehen viele verschiedene Berichte zur Verfügung. Diese Berichte bieten jedoch nur so viele Informationen, und manchmal benötigen Sie mehr. Das ist, wenn Sie PowerShell für Microsoft 365 benötigen.
+Viele verschiedene Berichte sind im Microsoft 365 Admin Center verfügbar. Diese Berichte enthalten jedoch nur so viele Informationen, und manchmal benötigen Sie mehr. Dann benötigen Sie PowerShell für Microsoft 365.
   
-In diesen Artikeln wird beschrieben, wie Sie mithilfe von PowerShell für Microsoft 365 Informationen von Ihrem Microsoft 365-Mandanten erhalten:
+In diesen Artikeln wird beschrieben, wie Sie PowerShell für Microsoft 365 verwenden, um Informationen von Ihrem Microsoft 365-Mandanten zu erhalten:
   
-- Erste Schritte mit der Berichterstellung mithilfe von PowerShell für Microsoft 365:
+- Erste Schritte mit der Berichterstellung mit PowerShell für Microsoft 365:
     
-  - [Warum Sie PowerShell für Microsoft 365 verwenden müssen](https://technet.microsoft.com/library/dn568034.aspx#reveal)
+  - [Warum Sie PowerShell für Microsoft 365 verwenden müssen](./why-you-need-to-use-microsoft-365-powershell.md#reveal)
     
     
 - Berichte für Benutzerkonten und Lizenzen:
     
-  - [Anzeigen von Microsoft 365-Lizenzen und-Diensten mit PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
+  - [Anzeigen von Microsoft 365-Lizenzen und -Diensten mit PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
     
-  - [Anzeigen von Microsoft 365 lizenzierten und nicht lizenzierten Benutzern mit PowerShell](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
+  - [Anzeigen von Microsoft 365-lizenzierten und nicht lizenzierten Benutzern mit PowerShell](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
     
-  - [Anzeigen von Microsoft 365-Konto Lizenz-und-Dienstdetails mit PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
+  - [Anzeigen von Microsoft 365-Kontolizenz- und Dienstdetails mit PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
     
   - [Anzeigen von Microsoft 365-Benutzerkonten mit PowerShell](view-user-accounts-with-microsoft-365-powershell.md)
     
 - Berichte für SharePoint Online:
     
-  - [Erste Schritte mit der SharePoint Online-Verwaltungsshell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+  - [Erste Schritte mit der SharePoint Online-Verwaltungsshell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
     
-  - [Get-SPOSiteGroup-Ruft alle Gruppen für eine angegebene Websitesammlung ab.](https://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
+  - [Get-SPOSiteGroup – Ruft alle Gruppen in einer angegebenen Websitesammlung ab.](/powershell/module/sharepoint-online/get-spositegroup)
     
 - Berichte für Exchange Online:
     
-  - [Verwenden Exchange Online PowerShell zum Anzeigen von Postfächern](https://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
+  - [Verwenden von Exchange Online PowerShell zum Anzeigen von Postfächern](/exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information)
     
     
-## <a name="related-articlesl"></a>Verwandte Artikel
+## <a name="related-articlesl"></a>Verwandte Artikell
 
 [Verwalten von Microsoft 365 mit PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
@@ -66,4 +66,3 @@ In diesen Artikeln wird beschrieben, wie Sie mithilfe von PowerShell für Micros
 [Verwalten von SharePoint mit PowerShell](manage-sharepoint-online-with-microsoft-365-powershell.md)
   
 [Verwalten von Microsoft 365-Benutzerkonten, -Lizenzen und -Gruppen mit PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
-  

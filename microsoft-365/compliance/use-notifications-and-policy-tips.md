@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Erfahren Sie, wie Sie einer Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) einen Richtlinientipp hinzufügen, um einen Benutzer darüber zu informieren, dass er mit Inhalten arbeitet, die mit einer DLP-Richtlinie in Konflikt stehen.
-ms.openlocfilehash: 79435343df2d2cb3bc027a92acce44eb74b4d91c
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 63909be2f88ef5f9c42dcd07e127309b4b5b17e9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454530"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925471"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien
 
@@ -286,7 +286,7 @@ Sie können den Text für Richtlinientipps separat von der E-Mail-Benachrichtigu
 - [Übersicht über die Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md)
     
 - [Erstellen einer DLP-Richtlinie aus einer Vorlage](create-a-dlp-policy-from-a-template.md)
-- [DLP-Richtlinienbedingungen, Ausnahmen und Aktionen (Vorschau)](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide)
+- [DLP-Richtlinienbedingungen, Ausnahmen und Aktionen (Vorschau)](./dlp-microsoft-teams.md?view=o365-worldwide)
     
 - [Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI- oder anderen Eigenschaften](protect-documents-that-have-fci-or-other-properties.md)
     
