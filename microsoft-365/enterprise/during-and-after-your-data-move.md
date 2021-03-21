@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Bei Datenverschiebungen handelt es sich um Back-End-Vorgänge, die stattfinden, wenn Microsoft Dienste und zugeordnete Daten für Ihren Mandanten in eine neue Rechenzentrumsregion verschiebt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ca3159aeb951fb0cb3bf3aba953979dabc6ba024
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: 14563a695e5c092f9bddfbdfdcb758f90cea32c0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349256"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929420"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -30,7 +30,7 @@ Datenverschiebungen sind eine Back-End-Operation mit minimalen Auswirkungen auf 
 > [!NOTE]
 > Die Verschiebungen werden zu unterschiedlichen Zeiten für jeden Dienst ausgeführt. Dadurch sehen Sie die beschriebene eingeschränkte Funktionalität für jeden Dienst zu unterschiedlichen Zeiten. 
   
-Sehen Sie sich das Microsoft 365-Nachrichten Center zur Bestätigung an, wenn Moves für jeden Exchange Online, SharePoint Online und Teamchat Dienst abgeschlossen werden. Wie in der folgenden Tabelle dargestellt, kann es bis zu 24 Monate nach dem Ende des Registrierungszeitraums dauern, um die wichtigsten Kundendaten bei Rest-Verschiebungen an das neue Rechenzentrum Geo zu vervollständigen.   
+Sehen Sie sich das Microsoft 365 Message Center an, um zu bestätigen, wann die Umzüge für jeden Exchange Online-, SharePoint Online- und Teams-Chatdienst abgeschlossen sind. Wie in der folgenden Tabelle dargestellt, kann es bis zu 24 Monate nach dem Ende des Registrierungszeitraums dauern, bis die wichtigsten Ruhedaten des Kunden in das neue Rechenzentrums-Geo umge-   
 
 |**Kunden mit Anmeldeland in**|**Alle Verschiebungen abgeschlossen bis**|
 |:-----|:-----|
@@ -105,7 +105,7 @@ Die folgenden Suchfunktionen sind betroffen:
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Zusätzlich zu Exchange Online, SharePoint Online und OneDrive für Unternehmen migriert Microsoft Teams-Chatdienst Daten in das lokale Rechenzentrum.
+Neben Exchange Online, SharePoint Online und OneDrive for Business migriert Microsoft #A0 in das lokale Datencenter.
 
 - Teams-Chatnachrichten, einschließlich privater Nachrichten und Kanalmeldungen.
 - Bilder, die in Teams-Chats verwendet wurden.
@@ -114,7 +114,7 @@ Teams-Dateien werden in SharePoint Online gespeichert, und Teams-Chatdateien wer
 
 ## <a name="skype-for-business"></a>Skype for Business
 
-Skype for Business Verschiebungen sind nicht mehr verfügbar.  [Skype for Business Online wird](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement) am 31. Juli 2021 zurückgezogen. Nach dieser Zeit kann auf den Dienst nicht mehr zugegriffen werden. 
+Skype for Business-Umzüge sind nicht mehr verfügbar.  [Skype for Business Online wird am](/lifecycle/announcements/skype-for-business-online-retirement) 31. Juli 2021 eingestellt. Nach dieser Zeit ist der Zugriff auf den Dienst nicht mehr möglich. 
   
 ## <a name="related-topics"></a>Verwandte Themen 
  
@@ -122,6 +122,6 @@ Skype for Business Verschiebungen sind nicht mehr verfügbar.  [Skype for Busine
     
 [Allgemeine häufig gestellte Fragen zur Datenverschiebung](data-move-faq.md)
   
-[Neue Rechenzentrumsregionen für Microsoft Dynamics CRM Live](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Neue Rechenzentrumsregionen für Microsoft Dynamics CRM Live](/power-platform/admin/new-datacenter-regions)
   
 [Azure-Dienste nach Region](https://azure.microsoft.com/regions/)

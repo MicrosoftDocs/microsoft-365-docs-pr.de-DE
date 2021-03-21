@@ -21,19 +21,19 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Seitendiagnose verwenden, um die Leistung von Webparts auf modernen SharePoint Online-Websiteseiten zu optimieren.
-ms.openlocfilehash: ca1b9328ad71fdd4a3f3c6c6be47eaa3993d4fc7
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287149"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929060"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimieren der Leistung von Webparts in modernen SharePoint Online-Websites
 
 Die Seiten von modernen SharePoint Online-Website enthalten Webparts, die sich auf die allgemeinen Seitenladezeiten auswirken können. In diesem Artikel erfahren Sie, wie Sie die Auswirkungen von Webparts auf Ihren Seiten auf die vom Benutzer empfundene Latenz bestimmen und häufig auftretende Probleme beheben können.
 
 >[!NOTE]
->Weitere Informationen zur Leistung in modernen SharePoint Online-Portalen finden Sie unter [Leistung in der modernen SharePoint-Umgebung](https://docs.microsoft.com/sharepoint/modern-experience-performance).
+>Weitere Informationen zur Leistung in modernen SharePoint Online-Portalen finden Sie unter [Leistung in der modernen SharePoint-Umgebung](/sharepoint/modern-experience-performance).
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Verwenden des Tools "Seitendiagnose für SharePoint" zum Analysieren von Webparts
 
@@ -56,16 +56,16 @@ Wenn das Ergebnis **Webparts, die sich auf die Seitenladezeit auswirken** entwed
 
 Die verfügbaren Informationen in den Ergebnissen umfassen:
 
-- **Made by** zeigt an, ob das Web part benutzerdefiniert oder Microsoft OOTB ist.
-- **Name und ID zeigen** identifizierende Informationen an, die Ihnen bei der Suche nach dem Web part auf der Seite helfen können.
-- **Total** shows the total time for the web part to load, initialize and render. Dies ist die gesamt relative Zeit, die das Web part zum Rendern auf der Seite vom Anfang bis zum Ende auf sich genommen hat.
-- **Module Load** zeigt die Zeit an, die zum Herunterladen, Auswerten und Laden der Erweiterungen JavaScript- und CSS-Dateien. Anschließend wird der Vorgang "Init" gestartet.
-- **"Verzögertes Laden"** zeigt die Zeit für das verzögerte Laden von Webparts an, die im Hauptabschnitt der Seite nicht angezeigt werden. Es gibt bestimmte Bedingungen, in denen zu viele Webparts gerendert werden können, und sie werden in die Warteschlange eingereiht, um die Ladezeit der Seite zu minimieren.
-- **"Initialisieren"** zeigt die Zeit an, die das Web part zum Initialisieren der Daten auf sich genommen hat.
+- **Made by** zeigt an, ob das Webteil benutzerdefinierter Oder Microsoft OOTB ist.
+- **Name und ID zeigt** identifizierende Informationen an, die Ihnen bei der Suche nach dem Webteil auf der Seite helfen können.
+- **Total** zeigt die Gesamtzeit für das Webteil zum Laden, Initialisieren und Rendern des Webteils an. Es handelt sich um die gesamte relative Zeit, die das Webteil für das Rendern auf der Seite von Anfang bis Ende an sich genommen hat.
+- **Modullast** zeigt die Zeit zum Herunterladen, Auswerten und Laden der Erweiterungen JavaScript- und CSS-Dateien an. Anschließend wird der Init-Prozess gestartet.
+- **Verzögertes Laden** zeigt die Zeit für das verzögerte Laden von Webparts an, die im Hauptabschnitt der Seite nicht angezeigt werden. Es gibt bestimmte Bedingungen, unter denen zu viele Webparts gerendert werden können, und sie werden in die Warteschlange eingereiht, um die Ladezeit der Seite zu minimieren.
+- **Init** zeigt die Zeit an, die das Webteil zum Initialisieren der Daten in Sich genommen hat.
     Es handelt sich um einen asynchronen Aufruf, und die Initzeit ist die Berechnung der Zeit für die onInit-Funktion, wenn die zurückgegebene Zusage aufgelöst wird.
-- **Rendern** zeigt die Zeit an, die zum Rendern der Benutzeroberfläche (Benutzeroberfläche) nach Abschluss des Ladens des Moduls und der Init verwendet wird.
+- **Render** zeigt die Zeit an, die zum Rendern der Benutzeroberfläche (Benutzeroberfläche) nach Abschluss der Modullast und des Init-Vorgangs verwendet wird.
     Es ist die JavaScript-Ausführungszeit, um das DOM im Dokument (Seite) zu mounten.
-    Das Rendern von asynchronen Ressourcen, z. B. Bilder, kann zusätzliche Zeit in Die Gesamte dauern.
+    Das Rendern asynchroner Ressourcen, z. B. Bilder, kann zusätzliche Zeit in Sich nehmen.
 
 Diese Informationen dienen Designern und Entwicklern zum Beheben von Problemen. Diese Informationen sollten Ihrem Entwurfs- und Entwicklungsteam bereitgestellt werden.
 
@@ -80,10 +80,10 @@ Es gibt drei Kategorien möglicher Ursachen für eine schlechte Webpartleistung.
   - Verschieben Sie die weniger häufigen Szenarien und den Code für den Bearbeitungsmodus (z. B. den Eigenschaftenbereich) mithilfe der _import()_-Anweisung in separate Abschnitte.
   - Überprüfen Sie die Abhängigkeiten der Datei _package.json_, um sämtlichen ungenutzten Code vollständig zu entfernen. Verschieben Sie alle nur auf Test/Build-Versionen bezogenen Abhängigkeiten nach "devDependencies".
   - Die Verwendung von Office 365 CDN ist für den optimalen statischen Ressourcendownload erforderlich. Öffentliche CDN-Quellen sind für _js/css_-Dateien vorzuziehen. Weitere Informationen zur Verwendung von Office 365 CDN finden Sie unter [Verwendung von Office 365 Content Delivery Network (CDN) mit SharePoint Online](use-microsoft-365-cdn-with-spo.md).
-  - Verwenden Sie Frameworks wie _React_ und _Fabric-Importe_, die Bestandteil des SharePoint-Frameworks (SPFx) sind. Weitere Informationen finden Sie unter [Übersicht über das SharePoint-Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
+  - Verwenden Sie Frameworks wie _React_ und _Fabric-Importe_, die Bestandteil des SharePoint-Frameworks (SPFx) sind. Weitere Informationen finden Sie unter [Übersicht über das SharePoint-Framework](/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Stellen Sie sicher, dass Sie die neueste Version des SharePoint-Frameworks verwenden, und führen Sie stets Aktualisierungen auf neue Versionen durch, sobald diese verfügbar sind.
 - Datenabruf/-zwischenspeicherung
-  - Wenn das Web part zusätzliche Serveraufrufe zum Abrufen von Daten für die Anzeige verwendet, stellen Sie sicher, dass diese Server-APIs schnell sind und/oder clientseitiges Zwischenspeichern implementieren (z. B. verwenden _sie "localStorage"_ oder _"IndexedDB"_ für größere Gruppen).
+  - Wenn das Webteil zusätzliche Serveraufrufe zum Abrufen von Daten für die Anzeige verwendet, stellen Sie sicher, dass diese Server-APIs schnell sind, und/oder implementieren Sie clientseitige Zwischenspeicherung (z. B. die Verwendung von _localStorage_ oder _IndexedDB_ für größere Sätze).
   - Wenn zum Rendern wichtiger Daten mehrere Aufrufe erforderlich sind, sollten Sie die Batchverarbeitung auf dem Server oder andere Methoden zum Konsolidieren von Anforderungen in einen einzigen Anruf erwägen.
   - Wenn bestimmte Datenelemente eine langsamere API benötigen, für das anfängliche Rendern aber nicht kritisch sind, entkoppeln Sie diese mit einem separaten Aufruf, der nach dem Rendern kritischer Daten ausgeführt wird.
   - Wenn mehrere Webparts dieselben Daten nutzen, verwenden Sie eine gemeinsame Datenschicht, um doppelte Aufrufe zu vermeiden.
@@ -107,7 +107,7 @@ Bevor Sie Seitenrevisionen zur Behebung von Leistungsproblemen durchführen, not
 
 [Optimieren der Leistung von Office 365](tune-microsoft-365-performance.md)
 
-[Leistung in der modernen SharePoint-Oberfläche](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Leistung in der modernen SharePoint-Oberfläche](/sharepoint/modern-experience-performance)
 
 [Netzwerke für die Inhaltsübermittlung](content-delivery-networks.md)
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 51a6bc33778248a69e533d9e2077365a63b97e30
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ed1eeb29119d477673bb04d9474bd38438db9fd9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50424131"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928940"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Erstellen und Verwalten von benutzerdefinierten Erkennungsregeln
 
@@ -41,9 +41,9 @@ Benutzerdefinierte Erkennungsregeln sind Regeln, die Sie mit erweiterten Suchabf
 
 Zum Verwalten von benutzerdefinierten Erkennungen muss Ihnen eine der folgenden Rollen zugewiesen werden:
 
-- **Sicherheitsadministrator**– Benutzer mit dieser [Azure Active Directory-Rolle](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) können Sicherheitseinstellungen in Microsoft 365 Security Center und anderen Portalen und Diensten verwalten.
+- **Sicherheitsadministrator**– Benutzer mit dieser [Azure Active Directory-Rolle](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) können Sicherheitseinstellungen in Microsoft 365 Security Center und anderen Portalen und Diensten verwalten.
 
-- **Sicherheitsoperator**– Benutzer mit dieser [Azure Active Directory-Rolle](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) können Warnungen verwalten und über globalen schreibgeschützten Zugriff auf sicherheitsrelevante Features verfügen, einschließlich aller Informationen im Microsoft 365 Security Center. Diese Rolle ist nur ausreichend, um benutzerdefinierte Erkennungen zu verwalten, wenn die rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) in Microsoft Defender for Endpoint deaktiviert ist. Wenn Sie rbAC konfiguriert haben, benötigen Sie auch die **Berechtigung** Sicherheitseinstellungen verwalten für Defender for Endpoint.
+- **Sicherheitsoperator**– Benutzer mit dieser [Azure Active Directory-Rolle](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) können Warnungen verwalten und über globalen schreibgeschützten Zugriff auf sicherheitsrelevante Features verfügen, einschließlich aller Informationen im Microsoft 365 Security Center. Diese Rolle ist nur ausreichend, um benutzerdefinierte Erkennungen zu verwalten, wenn die rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) in Microsoft Defender for Endpoint deaktiviert ist. Wenn Sie rbAC konfiguriert haben, benötigen Sie auch die **Berechtigung** Sicherheitseinstellungen verwalten für Defender for Endpoint.
 
 Zum Verwalten der erforderlichen Berechtigungen kann **ein globaler Administrator:**
 
@@ -138,17 +138,17 @@ Ihre benutzerdefinierte Erkennungsregel kann automatisch Aktionen auf Geräten, 
 
 #### <a name="actions-on-devices"></a>Aktionen auf Geräten
 Diese Aktionen werden auf Geräte in der `DeviceId` Spalte der Abfrageergebnisse angewendet:
-- **Gerät isolieren**– verwendet Microsoft Defender for Endpoint, um eine vollständige Netzwerkisolation anzuwenden, um zu verhindern, dass das Gerät eine Verbindung mit einer Anwendung oder einem Dienst herstellen kann. [Weitere Informationen zur Microsoft Defender for Endpoint-Computerisolation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
-- **Untersuchungspaket sammeln**– Sammelt Geräteinformationen in einer ZIP-Datei. [Weitere Informationen zum Microsoft Defender for Endpoint-Untersuchungspaket](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
+- **Gerät isolieren**– verwendet Microsoft Defender for Endpoint, um eine vollständige Netzwerkisolation anzuwenden, um zu verhindern, dass das Gerät eine Verbindung mit einer Anwendung oder einem Dienst herstellen kann. [Weitere Informationen zur Microsoft Defender for Endpoint-Computerisolation](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **Untersuchungspaket sammeln**– Sammelt Geräteinformationen in einer ZIP-Datei. [Weitere Informationen zum Microsoft Defender for Endpoint-Untersuchungspaket](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
 - **Antivirusscan ausführen**– führt eine vollständige Überprüfung Windows Defender Antivirusscan auf dem Gerät aus.
 - **Initiieren der** Untersuchung – initiiert eine [automatisierte Untersuchung](mtp-autoir.md) auf dem Gerät
-- **Einschränken der App-Ausführung**– legt Einschränkungen auf dem Gerät fest, damit nur Dateien ausgeführt werden können, die mit einem von Microsoft ausgestellten Zertifikat signiert sind. [Weitere Informationen zu App-Einschränkungen mit Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
+- **Einschränken der App-Ausführung**– legt Einschränkungen auf dem Gerät fest, damit nur Dateien ausgeführt werden können, die mit einem von Microsoft ausgestellten Zertifikat signiert sind. [Weitere Informationen zu App-Einschränkungen mit Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
 
 #### <a name="actions-on-files"></a>Aktionen für Dateien
 Wenn diese Option ausgewählt ist, können Sie die Quarantänedateiaktion auf Dateien in der , , oder -Spalte der  `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` Abfrageergebnisse anwenden. Mit dieser Aktion wird die Datei vom aktuellen Speicherort gelöscht und eine Kopie in Quarantäne gestellt.
 
 #### <a name="actions-on-users"></a>Aktionen für Benutzer
-Wenn diese Option **ausgewählt** ist, wird die Aktion Benutzer als gefährdet markieren für Benutzer in der Spalte , oder in den `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` Abfrageergebnissen ausgeführt. Diese Aktion legt die Risikostufe für Benutzer in Azure Active Directory auf "hoch" fest und löst entsprechende [Identitätsschutzrichtlinien aus.](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+Wenn diese Option **ausgewählt** ist, wird die Aktion Benutzer als gefährdet markieren für Benutzer in der Spalte , oder in den `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` Abfrageergebnissen ausgeführt. Diese Aktion legt die Risikostufe für Benutzer in Azure Active Directory auf "hoch" fest und löst entsprechende [Identitätsschutzrichtlinien aus.](/azure/active-directory/identity-protection/overview-identity-protection)
 
 > [!NOTE]
 > Die Aktion "Zulassen" oder "Blockieren" für benutzerdefinierte Erkennungsregeln wird derzeit in Microsoft 365 Defender nicht unterstützt.

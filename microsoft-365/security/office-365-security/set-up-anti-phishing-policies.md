@@ -17,12 +17,12 @@ ms.custom:
 description: Administratoren können sich über die Antiphishingrichtlinien informieren, die in Exchange Online Protection (EOP) und Microsoft Defender für Office 365 verfügbar sind.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fe7d986c537cbc5da31811e0b49cf6224815d32c
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: eeb15040f0e47f7d51852dadf68c4b0c37de0975
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509314"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929228"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Antiphishingrichtlinien in Microsoft 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "50509314"
 
 Richtlinien zum Konfigurieren von Antiphishingschutzeinstellungen sind in Microsoft 365-Organisationen mit Exchange Online-Postfächern, eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächern und Microsoft Defender für Office 365-Organisationen verfügbar.
 
-Antiphishingrichtlinien in Microsoft Defender für Office 365 sind nur in Organisationen mit Defender for Office 365 verfügbar. Beispiel:
+Antiphishingrichtlinien in Microsoft Defender für Office 365 sind nur in Organisationen mit Defender for Office 365 verfügbar. Zum Beispiel:
 
 - Microsoft 365 Enterprise E5, Microsoft 365 Education A5 usw.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -103,7 +103,7 @@ Die folgenden Spoofeinstellungen sind in Antiphishingrichtlinien in EOP und Micr
   >
   > - Der Antis spoofing-Schutz ist standardmäßig in der Standardmäßigen Antiphishingrichtlinie und in allen neuen benutzerdefinierten Antiphishingrichtlinien aktiviert, die Sie erstellen.
   >
-  > - Sie müssen den Schutz vor Spoofing nicht deaktivieren, wenn Ihr #A0 nicht auf Microsoft 365 verweisen soll. Stattdessen aktivieren Sie erweiterte Filterung für Connectors. Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > - Sie müssen den Schutz vor Spoofing nicht deaktivieren, wenn Ihr #A0 nicht auf Microsoft 365 verweisen soll. Stattdessen aktivieren Sie erweiterte Filterung für Connectors. Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
   >
   > - Durch deaktivieren des Antis spoofing-Schutzes wird nur impliziter Spoofingschutz von [zusammengesetzten Authentifizierungsüberprüfungen](email-validation-and-authentication.md#composite-authentication) deaktiviert. Wenn der Absender einen expliziten [DMARC](use-dmarc-to-validate-email.md) nicht überprüft, wo die Richtlinie auf Quarantäne oder Ablehnung festgelegt ist, wird die Nachricht weiterhin isoliert oder abgelehnt.
 
@@ -173,7 +173,7 @@ Die folgenden Identitätswechseleinstellungen sind nur in Antiphishingrichtlinie
 
   Wenn Sie der Liste Benutzer  interne oder externe E-Mail-Adressen hinzufügen, um die Liste zu schützen, unterliegen Nachrichten von diesen Absendern Identitätswechselschutzprüfungen.  Die Nachricht wird auf  Identitätswechsel überprüft, wenn  die Nachricht an einen Empfänger gesendet wird, für den die Richtlinie gilt (alle Empfänger für die Standardrichtlinie; **Angewendet auf Empfänger** in benutzerdefinierten Richtlinien). Wenn der Identitätswechsel in der E-Mail-Adresse des Absenders erkannt wird, werden die Aktionen zum Identitätswechselschutz für Benutzer auf die Nachricht angewendet (was mit der Nachricht zu tun ist, ob Sicherheitstipps für imitierte Benutzer angezeigt werden sollen usw.).
 
-- **Zu schützende** Domänen: Verhindert, dass die angegebenen Domänen in der Domäne des Nachrichtensenders **als identitätswechselt werden.** Beispielsweise alle Domänen, die Sie besitzen ([akzeptierte](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)Domänen ) oder bestimmte Domänen (Domänen, die Sie besitzen oder Partnerdomänen). Diese Liste  der Absenderdomänen, die vor Identitätswechsel  geschützt sind, ist anders als die Liste der Empfänger, auf die die [](#policy-settings) Richtlinie angewendet wird (alle Empfänger für die Standardrichtlinie; bestimmte Empfänger, wie in der Einstellung Angewendet auf im Abschnitt Richtlinieneinstellungen konfiguriert). 
+- **Zu schützende** Domänen: Verhindert, dass die angegebenen Domänen in der Domäne des Nachrichtensenders **als identitätswechselt werden.** Beispielsweise alle Domänen, die Sie besitzen ([akzeptierte](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)Domänen ) oder bestimmte Domänen (Domänen, die Sie besitzen oder Partnerdomänen). Diese Liste  der Absenderdomänen, die vor Identitätswechsel  geschützt sind, ist anders als die Liste der Empfänger, auf die die [](#policy-settings) Richtlinie angewendet wird (alle Empfänger für die Standardrichtlinie; bestimmte Empfänger, wie in der Einstellung Angewendet auf im Abschnitt Richtlinieneinstellungen konfiguriert). 
 
   > [!NOTE]
   > Die maximale Anzahl geschützter Domänen, die Sie in allen Antiphishingrichtlinien definieren können, beträgt 50.

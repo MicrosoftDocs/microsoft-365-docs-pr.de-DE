@@ -1,5 +1,5 @@
 ---
-title: Verbund Authentifizierungs Phase 5 für hohe Verfügbarkeit Konfigurieren der Verbundauthentifizierung für Microsoft 365
+title: Hochverfügbarkeits-Verbundauthentifizierung Phase 5 Konfigurieren der Verbundauthentifizierung für Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,21 +13,21 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: 'Zusammenfassung: Konfigurieren Sie Azure AD Connect für die Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft 365 in Microsoft Azure.'
-ms.openlocfilehash: f00763487261b62940ac5def38d35158db77a699
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 'Zusammenfassung: Konfigurieren Sie Azure AD Connect für Ihre Hochverfügbarkeits-Verbundauthentifizierung für Microsoft 365 in Microsoft Azure.'
+ms.openlocfilehash: 2bca2b758486b85d185870e2e14b495b8f084cb7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690668"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929408"
 ---
-# <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>Hoch Verfügbarkeits Verbund Authentifizierungs Phase 5: Konfigurieren der Verbundauthentifizierung für Microsoft 365
+# <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>Hochverfügbarkeit der Verbundauthentifizierung Phase 5: Konfigurieren der Verbundauthentifizierung für Microsoft 365
 
-In dieser letzten Phase der Bereitstellung der Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft 365 in Azure-Infrastrukturdiensten erhalten und installieren Sie ein von einer öffentlichen Zertifizierungsstelle ausgestelltes Zertifikat, überprüfen Ihre Konfiguration und installieren und führen dann Azure AD Connect auf dem Verzeichnissynchronisierungsserver aus. Azure AD Connect konfiguriert Ihr Microsoft 365-Abonnement und Ihre Active Directory-Verbunddienste (AD FS) und Webanwendungs Proxy Server für die Verbundauthentifizierung.
+In dieser letzten Phase der Bereitstellung der Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft 365 in Azure-Infrastrukturdiensten erhalten und installieren Sie ein von einer öffentlichen Zertifizierungsstelle ausgestelltes Zertifikat, überprüfen Ihre Konfiguration und installieren und führen Dann Azure AD Connect auf dem Verzeichnissynchronisierungsserver aus. Azure AD Connect konfiguriert Ihr Microsoft 365-Abonnement und Ihre Active Directory Federation Services (AD FS) und Webanwendungsproxyserver für die Verbundauthentifizierung.
   
-Unter [Bereitstellen der Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) für alle Phasen.
+Alle Phasen finden Sie unter [Deploy high availability federated authentication for Microsoft 365 in Azure.](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>Rufen Sie ein öffentliches Zertifikat ab und kopieren Sie es auf den Verzeichnissynchronisierungsserver.
+## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>Ein öffentliches Zertifikat erhalten und auf den Verzeichnissynchronisierungsserver kopieren
 
 Rufen Sie ein digitales Zertifikat von einer öffentlichen Zertifizierungsstelle mit den folgenden Eigenschaften ab:
   
@@ -39,13 +39,13 @@ Rufen Sie ein digitales Zertifikat von einer öffentlichen Zertifizierungsstelle
     
 Außerdem müssen die Computer und Geräte Ihrer Organisation der öffentlichen Zertifizierungsstelle vertrauen, die das digitale Zertifikat ausstellt. Diese Vertrauensstellung wird eingerichtet, indem ein Stammzertifikat von der öffentlichen Zertifizierungsstelle im Speicher der vertrauenswürdigen Stammzertifizierungsstellen auf Ihren Computern und Geräten installiert wird. Computer, auf denen Microsoft Windows ausgeführt wird, verfügen in der Regel über eine Reihe dieser Zertifikattypen, die von häufig verwendeten Zertifizierungsstellen verwendet werden. Wenn das Stammzertifikat von der öffentlichen Zertifizierungsstelle noch nicht installiert ist, müssen Sie dieses auf den Computern und Geräten Ihrer Organisation bereitstellen.
   
-Weitere Informationen zu Zertifikatanforderungen für die Verbundauthentifizierung finden Sie unter [Voraussetzungen für die Verbundinstallation und -konfiguration](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration).
+Weitere Informationen zu Zertifikatanforderungen für die Verbundauthentifizierung finden Sie unter [Voraussetzungen für die Verbundinstallation und -konfiguration](/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration).
   
-Wenn Sie das Zertifikat erhalten, kopieren Sie es in einen Ordner auf dem Laufwerk C: des Verzeichnissynchronisierungsservers. Nennen Sie beispielsweise die Datei "SSL. pfx" und speichern Sie Sie im \\ Ordner "C: certs" auf dem Verzeichnissynchronisierungsserver.
+Wenn Sie das Zertifikat erhalten, kopieren Sie es in einen Ordner auf dem Laufwerk C: des Verzeichnissynchronisierungsservers. Nennen Sie beispielsweise die Datei SSL.pfx, und speichern Sie sie im Ordner C: \\ Certs auf dem Verzeichnissynchronisierungsserver.
   
 ## <a name="verify-your-configuration"></a>Überprüfen Ihrer Konfiguration
 
-Sie sollten nun Azure AD Connect-und Federated-Authentifizierung für Microsoft 365 konfigurieren können. Um sicherzustellen, dass Sie bereit sind, finden Sie hier eine Checkliste:
+Sie sollten nun bereit sein, Azure AD Connect und die Verbundauthentifizierung für Microsoft 365 zu konfigurieren. Um sicherzustellen, dass Sie bereit sind, finden Sie hier eine Checkliste:
   
 - Die öffentliche Domäne Ihrer Organisation wird Ihrem Microsoft 365-Abonnement hinzugefügt.
     
@@ -57,7 +57,7 @@ Sie sollten nun Azure AD Connect-und Federated-Authentifizierung für Microsoft 
     
 - Ein privater DNS-A-Eintrag für den FQDN Ihres Verbunddiensts zeigt auf die private IP-Adresse des internen Azure-Lastenausgleichs für die AD FS-Server.
     
-- Eine PFX-Datei, die auf dem Verzeichnissynchronisierungsserver gespeichert ist, ist ein digitales Zertifikat für öffentliche Zertifizierungsstellen, das für SSL-Verbindungen mit dem San-ausgestelltes für Ihren Verbunddienst-FQDN geeignet ist.
+- Ein von einer öffentlichen Zertifizierungsstelle ausgestelltes digitales Zertifikat, das für SSL-Verbindungen mit dem san festgelegten FQDN ihres Verbunddiensts geeignet ist, ist eine AUF Ihrem Verzeichnissynchronisierungsserver gespeicherte PFX-Datei.
     
 - Das Stammzertifikat für die öffentliche Zertifizierungsstelle wird im Speicher der vertrauenswürdigen Stammzertifizierungsstellen auf Ihren Computern und Geräten installiert.
     
@@ -65,15 +65,15 @@ Nachfolgend finden Sie ein Beispiel für die Contoso-Organisation:
   
 **Eine Beispielkonfiguration für die Verbundauthentifizierung mit Hochverfügbarkeit in Azure**
 
-![Eine Beispielkonfiguration der Microsoft 365-Verbund Authentifizierungsinfrastruktur mit hoher Verfügbarkeit in Azure](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![Beispielkonfiguration der Hochverfügbarkeit der Microsoft 365-Verbundauthentifizierungsinfrastruktur in Azure](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Ausführen von Azure AD Connect zum Konfigurieren der Verbundauthentifizierung
 
-Das Azure AD Connect-Tool konfiguriert die AD FS-Server, die Webanwendungs-Proxy Server und Microsoft 365 für die Verbundauthentifizierung mit den folgenden Schritten:
+Das Azure AD Connect-Tool konfiguriert die AD FS-Server, die Webanwendungsproxyserver und Microsoft 365 für die Verbundauthentifizierung mit den folgenden Schritten:
   
-1. Erstellen Sie eine Remotedesktopverbindung mit dem Verzeichnissynchronisierungsserver mit einem Domänenkonto, das über lokale Administratorrechte verfügt.
+1. Erstellen Sie eine Remotedesktopverbindung mit Ihrem Verzeichnissynchronisierungsserver mit einem Domänenkonto mit lokalen Administratorrechten.
     
-2. Öffnen Sie auf dem Desktop des Verzeichnissynchronisierungsservers Internet Explorer und wechseln Sie zu [https://aka.ms/aadconnect](https://aka.ms/aadconnect) .
+2. Öffnen Sie auf dem Desktop des Verzeichnissynchronisierungsservers Internet Explorer, und wechseln Sie zu [https://aka.ms/aadconnect](https://aka.ms/aadconnect) .
     
 3. Klicken Sie auf der Seite **Microsoft Azure Active Directory Connect** auf **Herunterladen** und dann auf **Ausführen**.
     
@@ -85,9 +85,9 @@ Das Azure AD Connect-Tool konfiguriert die AD FS-Server, die Webanwendungs-Proxy
     
 7. Klicken Sie auf der Seite **Benutzeranmeldung** auf **Verbund mit AD FS**, und klicken Sie dann auf **Weiter**.
     
-8. Geben Sie auf der Seite mit **Azure AD verbinden** den Namen und das Kennwort eines globalen Administratorkontos für Ihr Microsoft 365-Abonnement ein, und klicken Sie dann auf **weiter**.
+8. Geben Sie auf der Seite Verbindung mit **Azure AD** herstellen den Namen und das Kennwort eines globalen Administratorkontos für Ihr Microsoft 365-Abonnement ein, und klicken Sie dann auf **Weiter**.
     
-9. Stellen Sie auf der Seite **Ihre Verzeichnisse verbinden** sicher, dass Ihre lokale Active Directory-Domänendienste (AD DS) Gesamtstruktur in **Gesamtstruktur**ausgewählt ist, geben Sie den Namen und das Kennwort eines Domänenadministratorkontos ein, klicken Sie auf **Verzeichnis hinzufügen**, und klicken Sie dann auf **weiter**.
+9. Stellen  Sie auf der Seite Ihre Verzeichnisse verbinden sicher, dass Ihre lokale Active Directory Domain Services (AD DS)-Gesamtstruktur in **Gesamtstruktur** ausgewählt ist, geben Sie den Namen und das Kennwort eines Domänenadministratorkontos ein, klicken Sie auf Verzeichnis **hinzufügen,** und klicken Sie dann auf **Weiter**.
     
 10. Klicken Sie auf der Seite **Azure AD-Anmeldungskonfiguration** auf **Weiter**.
     
@@ -135,9 +135,9 @@ Nachfolgend sehen Sie die finale Konfiguration mit Platzhalternamen für die Ser
   
 **Phase 5: Die finale Konfiguration für die Verbundauthentifizierungsinfrastruktur mit hoher Verfügbarkeit in Azure**
 
-![Die endgültige Konfiguration der Microsoft 365-Verbund Authentifizierungsinfrastruktur mit hoher Verfügbarkeit in Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Die endgültige Konfiguration der Hochverfügbarkeit der Microsoft 365-Verbundauthentifizierungsinfrastruktur in Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
-Ihre hoch Verfügbarkeits-Verbund Authentifizierungsinfrastruktur für Microsoft 365 in Azure ist abgeschlossen.
+Ihre Hochverfügbarkeits-Verbundauthentifizierungsinfrastruktur für Microsoft 365 in Azure ist abgeschlossen.
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -145,8 +145,6 @@ Ihre hoch Verfügbarkeits-Verbund Authentifizierungsinfrastruktur für Microsoft
   
 [Verbundidentität für Ihre Microsoft 365-Entwicklungs-/Testumgebung](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365 Lösungs- und Architektur-Center](../solutions/solution-architecture-center.md)
+[Microsoft 365-Lösungs- und Architekturcenter](../solutions/index.yml)
 
 [Verbundidentität für Microsoft 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
-
-

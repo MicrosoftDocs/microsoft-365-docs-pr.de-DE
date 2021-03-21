@@ -14,12 +14,12 @@ ms.custom:
 description: Administratoren können die Nachrichtenverfolgung im Security & Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c3f7e4bc9624b9fae48074203da525d7a504a12
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 587e111a71b321c131d0e63a0510ec7e1afa289a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741575"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929396"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
@@ -40,7 +40,7 @@ Die Nachrichtenverfolgung im Security & Compliance Center verbessert die ursprü
 >
 > - Um eine Nachrichtenverfolgung zu erstellen, müssen Sie Mitglied der Rollengruppen Organisationsverwaltung, Complianceverwaltung oder HelpDesk sein. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 >
-> - Die maximale Anzahl von Nachrichten, die in den Ergebnissen angezeigt werden, hängt vom ausgewählten Berichtstyp ab (Weitere Informationen finden Sie im Abschnitt [Berichtstyp](#choose-report-type) auswählen). Das [Cmdlet Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) in Exchange Online PowerShell oder eigenständiger EOP PowerShell gibt alle Nachrichten in den Ergebnissen zurück.
+> - Die maximale Anzahl von Nachrichten, die in den Ergebnissen angezeigt werden, hängt vom ausgewählten Berichtstyp ab (Weitere Informationen finden Sie im Abschnitt [Berichtstyp](#choose-report-type) auswählen). Das [Cmdlet Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch) in Exchange Online PowerShell oder eigenständiger EOP PowerShell gibt alle Nachrichten in den Ergebnissen zurück.
 
 ## <a name="open-message-trace"></a>Öffnen der Nachrichtenverfolgung
 
@@ -124,7 +124,7 @@ Sie können den Standardwert **Alle** ausgewählt lassen, oder Sie können einen
 
 Dies ist die Internetnachrichten-ID (auch als Client-ID bezeichnet), die im **Nachrichtenkopffeld Message-ID:** im Nachrichtenkopf gefunden wird. Benutzer können Ihnen diesen Wert geben, um bestimmte Nachrichten zu untersuchen.
 
-Dieser Wert ist für die Lebensdauer der Nachricht konstant. Für Nachrichten, die in Microsoft 365 oder Exchange erstellt wurden, hat der Wert das Format , einschließlich der `<GUID@ServerFQDN>` eckigen Klammern ( \< \> ). Zum Beispiel, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Andere Messagingsysteme verwenden möglicherweise unterschiedliche Syntax oder Werte. Dieser Wert sollte eindeutig sein, aber nicht alle E-Mail-Systeme halten sich strikt an diese Anforderung. Wenn das **Kopfzeilenfeld Message-ID:** nicht vorhanden ist oder für eingehende Nachrichten aus externen Quellen leer ist, wird ein beliebiger Wert zugewiesen.
+Dieser Wert ist für die Lebensdauer der Nachricht konstant. Für Nachrichten, die in Microsoft 365 oder Exchange erstellt wurden, hat der Wert das Format , einschließlich der `<GUID@ServerFQDN>` eckigen Klammern ( \< \> ). Beispiel: `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Andere Messagingsysteme verwenden möglicherweise unterschiedliche Syntax oder Werte. Dieser Wert sollte eindeutig sein, aber nicht alle E-Mail-Systeme halten sich strikt an diese Anforderung. Wenn das **Kopfzeilenfeld Message-ID:** nicht vorhanden ist oder für eingehende Nachrichten aus externen Quellen leer ist, wird ein beliebiger Wert zugewiesen.
 
 Wenn Sie die Ergebnisse mithilfe der **Nachrichten-ID** filtern, müssen Sie unbedingt die vollständige Zeichenfolge einschließlich aller eckigen Klammern angeben.
 
@@ -231,11 +231,11 @@ Die Details zur Nachrichtenverfolgung enthalten die folgenden zusätzlichen Info
   > 
   > - Eine ungleichmäßige Nachricht, die erfolgreich zugestellt wird, generiert mehrere **Ereigniseinträge** in der Nachrichtenverfolgung.
   > 
-  > - Diese Liste soll nicht vollständig sein. Beschreibungen von weiteren Ereignissen finden Sie unter [Ereignistypen im Nachrichtenverfolgungsprotokoll](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log). Beachten Sie, dass dieser Link ein Exchange Server (lokales Exchange)-Thema ist.
+  > - Diese Liste soll nicht vollständig sein. Beschreibungen von weiteren Ereignissen finden Sie unter [Ereignistypen im Nachrichtenverfolgungsprotokoll](/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log). Beachten Sie, dass dieser Link ein Exchange Server (lokales Exchange)-Thema ist.
 
 - **Weitere Informationen**: Dieser Abschnitt enthält die folgenden Details:
 
-  - **Nachrichten-ID**: Dieser Wert wird weiter oben in diesem Artikel im Abschnitt [Nachrichten-ID](#message-id) beschrieben. Zum Beispiel, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+  - **Nachrichten-ID**: Dieser Wert wird weiter oben in diesem Artikel im Abschnitt [Nachrichten-ID](#message-id) beschrieben. Beispiel: `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
   - **Nachrichtengröße**
 
@@ -251,7 +251,7 @@ Verfügbare (abgeschlossene) Erweiterte Zusammenfassungsberichte sind im Abschni
 
 - **sender_address**: Die E-Mail-Adresse des Absenders ( @ *Aliasdomäne*).
 
-- **Recipient_status**: Der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status im Format angezeigt: \<*email address*\> ## \<*status*\> . Beispiel:
+- **Recipient_status**: Der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status im Format angezeigt: \<*email address*\> ## \<*status*\> . Zum Beispiel:
 
   - **##Receive, Send** bedeutet, dass die Nachricht vom Dienst empfangen und an das beabsichtigte Ziel gesendet wurde.
 
@@ -263,7 +263,7 @@ Verfügbare (abgeschlossene) Erweiterte Zusammenfassungsberichte sind im Abschni
 
 - **total_bytes**: Die Größe der Nachricht in Bytes, einschließlich Anlagen.
 
-- **message_id**: Dieser Wert wird weiter oben in diesem Artikel im Abschnitt [Nachrichten-ID](#message-id) beschrieben. Zum Beispiel, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+- **message_id**: Dieser Wert wird weiter oben in diesem Artikel im Abschnitt [Nachrichten-ID](#message-id) beschrieben. Beispiel: `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
 - **network_message_id**: Ein eindeutiger Nachrichten-ID-Wert, der in allen Kopien der Nachricht beibehalten wird, die aufgrund von Verfuellung oder Erweiterung von Verteilergruppen erstellt werden können. Ein Beispielwert ist `1341ac7b13fb42ab4d4408cf7f55890f` .
 
@@ -271,7 +271,7 @@ Verfügbare (abgeschlossene) Erweiterte Zusammenfassungsberichte sind im Abschni
 
 - **directionality**: Gibt an, ob die Nachricht eingehenden (1) an Ihre Organisation gesendet wurde oder ob sie ausgehend (2) von Ihrer Organisation gesendet wurde.
 
-- **connector_id**: Der Name des Quell- oder Zielconnector. Weitere Informationen zu Connectors in Exchange Online finden Sie unter [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
+- **connector_id**: Der Name des Quell- oder Zielconnector. Weitere Informationen zu Connectors in Exchange Online finden Sie unter [Configure mail flow using connectors in Office 365](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 - **delivery_priority**: Gibt an, ob die Nachricht mit der Priorität <sup>*</sup> **"Hoch",** **"Niedrig"** oder **"Normal" gesendet** wurde.
 
@@ -289,13 +289,13 @@ Verfügbare (abgeschlossene) Erweiterte Berichte sind im Abschnitt **Herunterlad
 
 - **server_hostname**: Der Hostname oder FQDN des Zielservers.
 
-- **source_context**: Zusätzliche Informationen, die dem **Quellfeld zugeordnet** sind. Beispiel:
+- **source_context**: Zusätzliche Informationen, die dem **Quellfeld zugeordnet** sind. Zum Beispiel:
 
   - `Protocol Filter Agent`
 
   - `3489061114359050000`
 
-- **source**: Die Exchange Online-Komponente, die für das Ereignis verantwortlich ist. Beispiel:
+- **source**: Die Exchange Online-Komponente, die für das Ereignis verantwortlich ist. Zum Beispiel:
 
   - `AGENT`
 
@@ -313,7 +313,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte sind im Abschnitt **Herunterlad
 
 - **related_recipient_address**: Wird mit , und -Ereignissen zum Anzeigen anderer E-Mail-Empfängeradressen verwendet, `EXPAND` die der Nachricht zugeordnet `REDIRECT` `RESOLVE` sind.
 
-- **reference**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Beispiel:
+- **reference**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Zum Beispiel:
 
   - **DSN**: Enthält den Berichtslink, bei dem es sich um den **message_id-Wert** der zugeordneten Zustellungsstatusbenachrichtigung (auch als DSN, Unzustellbarkeitsbericht, Unzustellbarkeitsbericht oder Unzustellbarkeitsnachricht bezeichnet) handelt, wenn ein DSN nach diesem Ereignis generiert wird. Wenn es sich um eine DSN-Nachricht handelt, enthält dieses Feld den message_id der ursprünglichen Nachricht, für die der DSN generiert wurde. 
 
@@ -331,7 +331,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte sind im Abschnitt **Herunterlad
 
 - **return_path**: Die durch den Befehl **MAIL FROM** angegebene E-Mail-Adresse, die die Nachricht gesendet hat. Obwohl dieses Feld nie leer ist, kann der Wert der Null-Absenderadresse als dargestellt `<>` werden.
 
-- **message_info**: Zusätzliche Informationen zur Nachricht. Beispiel:
+- **message_info**: Zusätzliche Informationen zur Nachricht. Zum Beispiel:
 
   - Die Datums-/Uhrzeit der Nachrichtenherkunft in UTC für `DELIVER` und `SEND` Ereignisse. Die Ursprungsdatumszeit ist der Zeitpunkt, zu dem die Nachricht zum ersten Mal in die Exchange Online-Organisation eingegeben wurde. Die UTC-Datums-Uhrzeit wird im Datums-Uhrzeit-Format iso 8601 dargestellt: , wobei = Jahr, = Monat, = Tag den Anfang der Zeitkomponente `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` `mm` `dd` `T` angibt, `hh` = Stunde, `mm` = Minute, = Sekunde, `ss` = `fff` `Z` `Zulu` Bruchteile einer Sekunde, und bedeutet , was eine weitere Möglichkeit zum Bezeichnen von UTC ist.
 
@@ -413,7 +413,7 @@ Ein **custom_data,** der mit beginnt, ist vom Transport Rule Agent für `S:TRA` 
 |---|---|
 |`ETR|ruleId=<guid>`|Die ID der Regel, die abgeglichen wurde.|
 |`St=<datetime>`|Datum und Uhrzeit in UTC, wenn die Regel übereinstimmung aufgetreten ist.|
-|`Action=<ActionDefinition>`|Die Aktion, die angewendet wurde. Eine Liste der verfügbaren Aktionen finden Sie unter [Nachrichtenflussregelaktionen in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
+|`Action=<ActionDefinition>`|Die Aktion, die angewendet wurde. Eine Liste der verfügbaren Aktionen finden Sie unter [Nachrichtenflussregelaktionen in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
 |`Mode=<Mode>`|Der Modus der Regel. Gültige Werte sind:<ul><li>**Enforce**: Alle Aktionen für die Regel werden erzwungen.</li><li>**Test mit Richtlinientipps:**: Alle Richtlinientippaktionen werden gesendet, andere Erzwingungsaktionen werden jedoch nicht durchgeführt.</li><li>**Test ohne Richtlinientipps:** Aktionen werden in einer Protokolldatei aufgeführt, Absender werden jedoch in keinem Fall benachrichtigt, und Erzwingungsaktionen werden nicht durchgeführt.</li></ul>|
 |
 

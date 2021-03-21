@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5afae4dd3f846e608f753d268470d53723a3dcf4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 6599e0c4a7bbf7c294f7dfed9f381c1ce211c285
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929270"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928640"
 ---
 # <a name="whats-new-in-microsoft-365-security"></a>Neuerungen in Microsoft 365 Security
 
@@ -39,6 +39,4 @@ ms.locfileid: "49929270"
 
 Dieses Thema befasst sich mit den Funktionen, die in der neuesten Version von Microsoft 365 Security allgemein verfügbar (GA) sind. 
 
-Weitere Informationen zu Vorschaufeatures finden Sie unter [Vorschaufeatures](mtp-preview.md).
-
-
+Weitere Informationen zu Vorschaufeatures finden Sie unter [Vorschaufeatures](./preview.md).
