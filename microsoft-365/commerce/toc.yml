@@ -40,6 +40,8 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: Verschieben von Benutzern zu einem anderen Abonnement
       href: subscriptions/move-users-different-subscription.md
+    - name: Verwalten von Richtlinien für automatischen Anspruch
+      href: licenses/manage-auto-claim-policies.md
     - name: Grundlegendes zu Abonnements und Lizenzen
       href: licenses/subscriptions-and-licenses.md
 - name: Abrechnungen und Zahlungen
@@ -67,7 +69,7 @@
     - name: Abrechnungskonten verwalten
       href: manage-billing-accounts.md
     - name: Zuordnen eines Mandanten zu Ihrem Abrechnungskonto
-      href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
+      href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
 - name: Beziehungen zu Ihren Partnern verwalten
   href: manage-partners.md
 - name: Schließen Ihres Kontos
