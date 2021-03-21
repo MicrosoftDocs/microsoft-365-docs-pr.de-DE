@@ -604,11 +604,11 @@
               href: search-for-ediscovery-activities-in-the-audit-log.md
     - name: Advanced eDiscovery
       items:
-        - name: Übersicht über Advanced eDiscovery
+        - name: Übersicht
           href: overview-ediscovery-20.md
         - name: Einrichten von Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
-        - name: Erstellen eines Advanced eDiscovery-Falls
+        - name: Erstellen und Verwalten eines Falls
           href: create-and-manage-advanced-ediscoveryv2-case.md
         - name: Verwalten von Depotbank und nicht-verwahrten Datenquellen
           href: managing-custodians.md
@@ -720,8 +720,6 @@
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
         - name: Referenz zu Advanced eDiscovery
           items:
-            - name: Advanced eDiscovery-Ausrichtung mit EDRM
-              href: advanced-ediscovery-edrm.md
             - name: Advanced eDiscovery-Beschränkungen
               href: limits-ediscovery20.md
             - name: Unterstützte Dateitypen
@@ -787,11 +785,11 @@
         - name: Office 365-Verwaltungsaktivitäts-API
           items:
             - name: Office 365-Verwaltungsaktivitäts-API – Referenz
-              href: 'https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference'
+              href: /office/office-365-management-api/office-365-management-activity-api-reference
             - name: Office 365-Verwaltungsaktivitäts-API-Schema
-              href: 'https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema'
+              href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: Häufig gestellte Fragen und Problembehandlung der Office 365-Verwaltungsaktivitäts-API
-              href: 'https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api'
+              href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
     - name: Postfachüberwachung
       href: enable-mailbox-auditing.md
     - name: Erweiterte Überwachung
@@ -846,8 +844,8 @@
         - name: Konfigurieren von IRM für die Verwendung eines lokalen AD RMS-Servers
           href: configure-irm-to-use-an-on-premises-ad-rms-server.md
 - name: Microsoft 365 Enterprise
-  href: 'https://docs.microsoft.com/microsoft-365/enterprise/'
+  href: ../enterprise/index.yml
 - name: Microsoft 365 Security
-  href: 'https://docs.microsoft.com/microsoft-365/security/'
+  href: ../security/index.yml
 - name: Microsoft 365 Apps for Business
-  href: 'https://docs.microsoft.com/office365/admin/admin-home'
+  href: /office365/admin/admin-home
