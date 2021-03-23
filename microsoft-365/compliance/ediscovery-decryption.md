@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Microsoft 365 eDiscovery-Tools verschlüsselte Dokumente verarbeiten, die an E-Mail-Nachrichten angefügt und in SharePoint Online und OneDrive for Business gespeichert sind.
-ms.openlocfilehash: 4ddc66d595b9d2129a7ba1b75e69586ccbd130f7
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ad7ee9816e83caa49e437e1723655162a44c93fa
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423818"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034068"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Entschlüsselung in Microsoft 365 eDiscovery-Tools
 
@@ -29,7 +29,7 @@ Verschlüsselung ist ein wichtiger Bestandteil Ihrer Strategie zum Schutz von Da
 
 Um allgemeine eDiscovery-Aufgaben für verschlüsselten Inhalt auszuführen, mussten eDiscovery-Manager E-Mail-Nachrichteninhalte beim Exportieren aus Inhaltssuchen, Core eDiscovery-Fällen und Advanced eDiscovery-Fällen entschlüsseln. Mit Microsoft-Verschlüsselungstechnologien verschlüsselte Inhalte waren erst nach dem Export zur Überprüfung verfügbar.
 
-Um die Verwaltung verschlüsselter Inhalte im eDiscovery-Workflow zu vereinfachen, umfassen Microsoft 365 eDiscovery-Tools jetzt die Entschlüsselung verschlüsselter Dateien, die an E-Mail-Nachrichten angefügt und in Exchange Online gesendet werden. Darüber hinaus werden verschlüsselte Dokumente, die in SharePoint Online und OneDrive for Business gespeichert sind, in Advanced eDiscovery entschlüsselt. 
+Um die Verwaltung verschlüsselter Inhalte im eDiscovery-Workflow zu vereinfachen, umfassen Microsoft 365 eDiscovery-Tools jetzt die Entschlüsselung verschlüsselter Dateien, die an E-Mail-Nachrichten angefügt und in Exchange Online gesendet werden. Darüber hinaus werden verschlüsselte Dokumente, die in SharePoint Online und OneDrive for Business gespeichert sind, in Advanced eDiscovery entschlüsselt.
 
 Vor dieser neuen Funktion wurden nur der Inhalt einer durch die Rechteverwaltung geschützten E-Mail-Nachricht (und nicht angefügte Dateien) entschlüsselt. Verschlüsselte Dokumente in SharePoint und OneDrive konnten während des eDiscovery-Workflows nicht entschlüsselt werden. Wenn nun eine Datei, die mit einer #A0 verschlüsselt ist, an eine E-Mail-Nachricht angefügt ist oder sich in einem SharePoint- oder OneDrive-Konto befindet, werden diese verschlüsselten Elemente entschlüsselt, wenn die Suchergebnisse für die Vorschau vorbereitet, einem Überprüfungssatz in Advanced eDiscovery hinzugefügt und exportiert werden. Auf diese Weise können eDiscovery-Manager den Inhalt von verschlüsselten E-Mail-Anlagen und Websitedokumenten anzeigen, wenn sie eine Vorschau der Suchergebnisse anzeigen und diese überprüfen, nachdem sie einem Überprüfungssatz in Advanced eDiscovery hinzugefügt wurden.
 
@@ -39,7 +39,7 @@ Microsoft eDiscovery-Tools unterstützen Elemente, die mit Microsoft-Verschlüss
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>eDiscovery-Aktivitäten, die verschlüsselte Elemente unterstützen
 
-In der folgenden Tabelle sind die unterstützten Aufgaben aufgeführt, die in Microsoft 365 eDiscovery-Tools für verschlüsselte Dateien ausgeführt werden können, die an E-Mail-Massagen und verschlüsselte Dokumente in SharePoint und OneDrive angefügt sind. Diese unterstützten Aufgaben können für verschlüsselte Dateien ausgeführt werden, die den Kriterien einer Suche entsprechen. Ein Wert von gibt an, dass die Funktionalität im entsprechenden `N/A` eDiscovery-Tool nicht verfügbar ist.
+In der folgenden Tabelle sind die unterstützten Aufgaben aufgeführt, die in Microsoft 365 eDiscovery-Tools für verschlüsselte Dateien ausgeführt werden können, die an E-Mail-Nachrichten und verschlüsselte Dokumente in SharePoint und OneDrive angefügt sind. Diese unterstützten Aufgaben können für verschlüsselte Dateien ausgeführt werden, die den Kriterien einer Suche entsprechen. Ein Wert von gibt an, dass die Funktionalität im entsprechenden `N/A` eDiscovery-Tool nicht verfügbar ist.
 
 |eDiscovery-Aufgabe  |Inhaltssuche  |Core eDiscovery  |Advanced eDiscovery  |
 |:---------|:---------|:---------|:---------|

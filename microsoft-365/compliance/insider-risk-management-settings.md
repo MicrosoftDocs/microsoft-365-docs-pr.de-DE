@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 1e6642113ddba9c9110a65e9032ec59db435ac7f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ee4f18342304cf46f97a6ae7aa6e1ba76685bccd
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919861"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994617"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Erste Schritte mit Insider-Risikomanagementeinstellungen
 
@@ -217,7 +217,7 @@ Für jede der folgenden Domäneneinstellungen können Sie bis zu 500 Domänen ei
     - Dateien, Ordner, Websites, die für externe Domänen freigegeben sind
     - In externe Domänen hochgeladene Dateien (mithilfe des Microsoft Edge-Browsers)
 
-    Durch das Angeben zulässiger Domänen in Einstellungen wird diese Aktivität mit diesen Domänen ähnlich behandelt wie die Behandlung interner Organisationsaktivitäten. Die hier hinzugefügten Domänen können z. B. die Freigabe von Inhalten für eine Person außerhalb Ihrer Organisation umfassen (z. B. das Senden von E-Mails an jemanden mit gmail.com Adresse). Sie können Ihre SharePoint-Websites nicht als zulässige Domänen hinzufügen. 
+    Durch das Angeben zulässiger Domänen in Einstellungen wird diese Aktivität mit diesen Domänen ähnlich behandelt wie die Behandlung interner Organisationsaktivitäten. Die hier hinzugefügten Domänen können z. B. die Freigabe von Inhalten für eine Person außerhalb Ihrer Organisation umfassen (z. B. das Senden von E-Mails an jemanden mit gmail.com Adresse).
 
 - **Domänen von Drittanbietern:** Wenn Ihre Organisation Domänen von Drittanbietern für geschäftsbezogene Zwecke (z. B. Cloudspeicher) verwendet, schließen Sie sie hier ein, damit Sie Benachrichtigungen über Aktivitäten im Zusammenhang mit dem Geräteindikator erhalten Können Sie einen Browser verwenden, um Inhalte von einer Drittanbieterwebsite *herunterzuladen.*
 

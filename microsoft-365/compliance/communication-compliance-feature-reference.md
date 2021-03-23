@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 48cc75276e4e3791fa16520df5a4c392c23a0cd5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 298300de8581d3eea185f05b92bb69cb6e7a69eb
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919911"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034204"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zu Kommunikationskonformitätsfeatures
 
@@ -63,7 +63,7 @@ Wählen Sie beim Konfigurieren der Kommunikationskonformität aus den folgenden 
 
 |**Rollengruppe**|**Rollengruppenberechtigungen**|
 |:-----|:-----|
-| **Kommunikationscompliance** | Verwenden Sie diese Rollengruppe, um die Kommunikationskonformität für Ihre Organisation in einer einzigen Gruppe zu verwalten. Durch Hinzufügen aller Benutzerkonten für designierte Administratoren, Analysten, Ermittler und Viewer können Sie Berechtigungen für die Kommunikationskonformität in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für die Kommunikationskonformität. Diese Konfiguration ist die einfachste Möglichkeit, schnell mit der Kommunikationskonformität zu beginnen und ist für Organisationen geeignet, die keine separaten Berechtigungen benötigen, die für separate Benutzergruppen definiert sind. |
+| **Kommunikationskonformität** | Verwenden Sie diese Rollengruppe, um die Kommunikationskonformität für Ihre Organisation in einer einzigen Gruppe zu verwalten. Durch Hinzufügen aller Benutzerkonten für designierte Administratoren, Analysten, Ermittler und Viewer können Sie Berechtigungen für die Kommunikationskonformität in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für die Kommunikationskonformität. Diese Konfiguration ist die einfachste Möglichkeit, schnell mit der Kommunikationskonformität zu beginnen und ist für Organisationen geeignet, die keine separaten Berechtigungen benötigen, die für separate Benutzergruppen definiert sind. |
 | **Kommunikations-Compliance-Administrator** | Verwenden Sie diese Rollengruppe, um zunächst die Kommunikationskonformität zu konfigurieren und später Administratoren der Kommunikationskonformität in eine definierte Gruppe zu trennen. Benutzer, die dieser Rollengruppe zugewiesen sind, können Kommunikationskonformitätsrichtlinien, globale Einstellungen und Rollengruppenzuweisungen erstellen, lesen, aktualisieren und löschen. Benutzer, die dieser Rollengruppe zugewiesen sind, können keine Benachrichtigungen anzeigen. |
 | **Communication Compliance Analyst** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die als Kommunikations-Compliance-Analysten fungieren. Benutzer, die dieser Rollengruppe zugewiesen sind, können Richtlinien anzeigen, in denen sie als Prüfer zugewiesen sind, Nachrichtenmetadaten (nicht Nachrichteninhalte) anzeigen, an andere Prüfer eskalieren oder Benachrichtigungen an Benutzer senden. Analysten können ausstehende Warnungen nicht auflösen. |
 | **Kommunikations-Compliance-Prüfer** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die als Ermittler für die Kommunikationskonformität fungieren. Benutzer, die dieser Rollengruppe zugewiesen sind, können Nachrichtenmetadaten und -inhalte anzeigen, an andere Prüfer eskalieren, zu einem Erweiterten eDiscovery-Fall eskalieren, Benachrichtigungen an Benutzer senden und die Warnung auflösen. |
@@ -78,7 +78,7 @@ Berücksichtigen Sie das folgende Beispiel, um Ihre Migrationsplanung zu unterst
 - Aufsichtsüberprüfungsadministrator
 - Fallverwaltung
 - Complianceadministrator
-- Review
+- Überprüfung
 
 Zum Aktualisieren der Rollen für diese Benutzer für die neue Rollengruppenstruktur und zum Trennen der Zugriffs- und Verwaltungsberechtigungen für die Benutzer können Sie drei neue Gruppen und die zugeordneten neuen Rollengruppenzuweisungen in Betracht ziehen:
 
@@ -526,6 +526,21 @@ In diesem Beispiel werden Aktivitäten zurückgegeben, die Ihren aktuellen Richt
 ```PowerShell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch 
 ```
+
+Übereinstimmungen mit Kommunikationskonformitätsrichtlinien werden in einem Aufsichtspostfach für jede Richtlinie gespeichert. In einigen Fällen müssen Sie möglicherweise die Größe Ihres Aufsichtspostfachs für eine Richtlinie überprüfen, um sicherzustellen, dass sie sich nicht dem aktuellen Grenzwert von 50 GB nähern. Wenn der Postfachgrenzwert erreicht ist, werden Richtlinien übereinstimmungen nicht erfasst, und Sie müssen eine neue Richtlinie (mit denselben Einstellungen) erstellen, um weiterhin Übereinstimmungen für dieselben Aktivitäten zu erfassen.
+
+Führen Sie die folgenden Schritte aus, um die Größe eines Aufsichtspostfachs für eine Richtlinie zu überprüfen:
+
+1. Verwenden Sie [das Cmdlet Connect-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) im Exchange Online PowerShell V2-Modul, um eine Verbindung mit Exchange Online PowerShell mithilfe der modernen Authentifizierung herzustellen.
+2. Führen Sie folgendes in PowerShell aus:
+
+    ```PowerShell
+    ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name) 
+    {
+       "<Name of your communication compliance policy>: " + $p.Name
+       Get-MailboxStatistics $p.ReviewMailbox | ft ItemCount,TotalItemSize
+    }
+    ```
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Übergang von der Aufsicht in Office 365
 

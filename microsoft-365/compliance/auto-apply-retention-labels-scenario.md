@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Die Verwendung von Aufbewahrungsbezeichnungen zur Verwaltung des Lebenszyklus von Dokumenten in SharePoint, mithilfe von Metadaten zur Klassifizierung von Inhalten, automatisch angewendeten Beschriftungen und ereignisbasierter Aufbewahrung zum Start der Aufbewahrungsdauer.
-ms.openlocfilehash: 5962b02468b31dda247d03807ef184955c53b83c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6c58658378fd0def9a56783e7b8b35db3323b135
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907857"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034214"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Verwenden von Aufbewahrungsbezeichnungen zur Verwaltung des Lebenszyklus von in SharePoint gespeicherten Dokumenten
 
@@ -269,7 +269,7 @@ Nachdem die Aufbewahrungsbeschriftungen angewendet wurden, konzentrieren wir uns
 
 Sie können das Ereignis im Microsoft 365 Compliance Center manuell erstellen, indem Sie zu **Datensatzverwaltung** > **Ereignisse** gehen. Wählen Sie den Ereignistyp aus, legen Sie die richtigen Objekt-IDs fest, und geben Sie ein Datum für das Ereignis ein. Weitere Informationen finden Sie unter [Übersicht über die ereignisgesteuerte Aufbewahrung](event-driven-retention.md).
 
-In diesem Szenario generieren wir das Ereignis jedoch automatisch aus einem externen Produktionssystem. Beim System handelt es sich um eine einfache SharePoint-Liste, die angibt, ob sich ein Produkt in der Produktion befindet. Das Ereignis wird durch einen [Power Automate](/flow/getting-started)-Workflow ausgelöst, der mit der Liste verknüpft ist. In einem realen Szenario können Sie ein beliebiges System verwenden, um das Ereignis zu generieren, z. B. ein HR- oder CRM-System. Power Automate enthält viele einsatzbereite Interaktionen und Bausteine für Microsoft 365-Workloads wie Microsoft Exchange, SharePoint, Teams und Dynamics 365 sowie Drittanbieter-Apps wie Twitter, Box, Salesforce und Workdays. Dieses Feature erleichtert die Integration von Power Automate mit verschiedenen Systemen. Weitere Informationen finden Sie unter [Automatisieren Sie die ereignisgesteuerte Aufbewahrung](./event-driven-retention.md#automate-events-by-using-a-rest-apiautomate-events-by-using-a-rest-api).
+In diesem Szenario generieren wir das Ereignis jedoch automatisch aus einem externen Produktionssystem. Beim System handelt es sich um eine einfache SharePoint-Liste, die angibt, ob sich ein Produkt in der Produktion befindet. Das Ereignis wird durch einen [Power Automate](/flow/getting-started)-Workflow ausgelöst, der mit der Liste verknüpft ist. In einem realen Szenario können Sie ein beliebiges System verwenden, um das Ereignis zu generieren, z. B. ein HR- oder CRM-System. Power Automate enthält viele einsatzbereite Interaktionen und Bausteine für Microsoft 365-Workloads wie Microsoft Exchange, SharePoint, Teams und Dynamics 365 sowie Drittanbieter-Apps wie Twitter, Box, Salesforce und Workdays. Dieses Feature erleichtert die Integration von Power Automate mit verschiedenen Systemen. Weitere Informationen finden Sie unter [Automatisieren Sie die ereignisgesteuerte Aufbewahrung](./event-driven-retention.md#automate-events-by-using-a-rest-api).
 
 Der folgende Screenshot zeigt die SharePoint-Liste, die zum Auslösen des Ereignisses verwendet wird:
 
