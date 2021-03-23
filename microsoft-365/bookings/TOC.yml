@@ -19,8 +19,6 @@
           href: customize-booking-page.md
         - name: Erstellen einer manuellen Buchung
           href: create-a-manual-booking.md
-        - name: 'Planen von Betriebsferien, arbeitsfreier Zeit und Urlaubszeit'
-          href: schedule-closures-time-off-vacation.md
         - name: Mitarbeiterstunden
           href: employee-hours.md
         - name: Benutzerdefinierte und erforderliche Fragen zur Buchungsseite hinzufügen
