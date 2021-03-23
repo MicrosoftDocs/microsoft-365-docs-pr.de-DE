@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 34c6551dd3a40852368b40d960bf921c52f46372
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 36af6e0f882c87d05c5f397982533fb48875b0da
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921516"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994606"
 ---
 # <a name="edit-an-existing-topic"></a>Vorhandenes Thema bearbeiten 
 
@@ -67,11 +67,11 @@ Wissensmanager können Themen auch direkt auf der Seite Themen verwalten bearbei
 
     ![Abschnitt "Description"](../media/knowledge-management/description.png)</br>
 
-4. Im Abschnitt <b>Angeheftet personen</b> können Sie eine Person "anheften", um sie als Experten für Das Thema zu zeigen. Geben Sie zunächst ihren Namen oder <b></b> ihre E-Mail-Adresse in das Feld Neuen Benutzer hinzufügen ein, und wählen Sie dann den Benutzer aus, den Sie aus den Suchergebnissen hinzufügen möchten. Sie können sie auch "entpin" entfernen, indem Sie auf der Benutzerkarte das Symbol Aus der Liste entfernen auswählen. <b></b>
+4. Im Abschnitt <b>Angeheftet personen</b> können Sie eine Person "anheften", um zu zeigen, dass sie eine Verbindung zum Thema hat (z. B. ein Besitzer einer verbundenen Ressource). Geben Sie zunächst ihren Namen oder <b></b> ihre E-Mail-Adresse in das Feld Neuen Benutzer hinzufügen ein, und wählen Sie dann den Benutzer aus, den Sie aus den Suchergebnissen hinzufügen möchten. Sie können sie auch "entpin" entfernen, indem Sie auf der Benutzerkarte das Symbol Aus der Liste entfernen auswählen. <b></b>
  
     ![Hinzufügen angehefteter Personen](../media/knowledge-management/pinned-people.png)</br>
 
-    Im <b>Abschnitt Vorgeschlagene Personen</b> werden Benutzer gezeigt, dass AI davon aus geht, dass es sich bei dem Thema um Experten im Zusammenhang mit Ressourcen zu diesem Thema geht. Sie können den Status von Vorgeschlagen in Angeheftet ändern, indem Sie das Pinsymbol auf der Benutzerkarte auswählen.
+    Im <b>Abschnitt Vorgeschlagene Personen</b> werden Benutzer angezeigt, die davon aus sind, dass AI über ihre Verbindung zu Ressourcen zu diesem Thema mit dem Thema verbunden sein könnte. Sie können den Status von Vorgeschlagen in Angeheftet ändern, indem Sie das Pinsymbol auf der Benutzerkarte auswählen.
 
    ![Anheften einer vorgeschlagenen Personen](../media/knowledge-management/suggested-people.png)</br>
 

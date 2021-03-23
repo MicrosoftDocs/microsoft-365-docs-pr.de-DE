@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: d6e953c86939d732632e87573fc2aa5392f09aa2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6a182556c68a472145f9d4eac69c8915653a67df
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904936"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994594"
 ---
 # <a name="create-a-new-topic"></a>Ein neues Thema erstellen 
 
@@ -66,7 +66,7 @@ Sie können ein neues Thema an zwei Speicherorten erstellen:
 
     ![Beschreibung des Themas](../media/knowledge-management/description.png)</br>
 
-4. Im Abschnitt <b>Angeheftet personen</b> können Sie eine Person "anheften", um sie als Experten für Das Thema zu zeigen. Geben Sie zunächst ihren Namen oder <b></b> ihre E-Mail-Adresse in das Feld Neuen Benutzer hinzufügen ein, und wählen Sie dann den Benutzer aus, den Sie in den Suchergebnissen hinzufügen möchten. Sie können sie auch "entpin" entfernen, indem Sie auf der Benutzerkarte das Symbol Aus der Liste entfernen auswählen. <b></b> Sie können die Person auch ziehen, um die Reihenfolge zu ändern, in der die Liste der Personen angezeigt wird.
+4. Im Abschnitt <b>Angeheftet personen</b> können Sie eine Person "anheften", um zu zeigen, dass sie eine Verbindung mit dem Thema hat (z. B. ein Besitzer einer verbundenen Ressource). Geben Sie zunächst ihren Namen oder <b></b> ihre E-Mail-Adresse in das Feld Neuen Benutzer hinzufügen ein, und wählen Sie dann den Benutzer aus, den Sie in den Suchergebnissen hinzufügen möchten. Sie können sie auch "entpin" entfernen, indem Sie auf der Benutzerkarte das Symbol Aus der Liste entfernen auswählen. <b></b> Sie können die Person auch ziehen, um die Reihenfolge zu ändern, in der die Liste der Personen angezeigt wird.
  
     ![Angeheftete Personen](../media/knowledge-management/pinned-people.png)</br>
 

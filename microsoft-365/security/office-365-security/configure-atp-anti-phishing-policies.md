@@ -15,12 +15,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie die erweiterten Antiphishingrichtlinien erstellen, ändern und löschen, die in Organisationen mit Microsoft Defender für Office 365 verfügbar sind.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2985766cf3388382dbe1d2217843504b2bfd1a1c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9f9fe04b2c3b6db3681212d678c8e827f6a83f41
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906588"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994570"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365
 
@@ -220,11 +220,11 @@ Verwenden Sie die folgenden Verfahren, um Antiphishingrichtlinien zu ändern: ei
 
      - **Postfachintelligenz aktivieren?**: Der Standardwert ist **On**. Um es zu deaktivieren, verschieben Sie den Umschalter auf **Aus**.
 
-     - **Aktivieren Despersonationsschutzes für Postfachintelligenz aktivieren?**: Diese Einstellung ist nur verfügbar, wenn **Postfachintelligenz aktivieren?** ist **On**.
+     - **Aktivieren Despersonationschutzes für Postfachintelligenz?**: Diese Einstellung ist nur verfügbar, wenn **Postfachintelligenz aktivieren?** ist **On**. Aktivieren Sie diese Einstellung, um die Aktion für Nachrichten für Identitätswechselerkennungen aus Ergebnissen der Postfachintelligenz anzugeben.
 
-       In **Wenn E-Mails** von einem imitierten Benutzer gesendet werden, können Sie eine der folgenden Aktionen für Nachrichten angeben, bei der die Postfachintelligenz fehlschlägt (die gleichen Aktionen, die für geschützte Benutzer und geschützte Domänen verfügbar sind):
+       In **Wenn E-Mails von** einem imitierten Benutzer gesendet werden, können Sie eine der folgenden Aktionen angeben (die gleichen Aktionen, die für geschützte Benutzer und geschützte Domänen verfügbar sind):
 
-       - **Keine Aktion anwenden**
+       - **Keine Aktion** anwenden: Beachten Sie, dass dieser Wert das gleiche Ergebnis hat wie das Aktivieren von Postfachintelligenz **aktivieren?** aber deaktivieren Aktivieren des Postfachintelligenz-basierten **Identitätswechselschutzes?**.
        - **Umleiten von Nachrichten an andere E-Mail-Adressen**
        - **Nachricht in Junk-E-Mail-Ordner verschieben**
        - **Isolieren der Nachricht**

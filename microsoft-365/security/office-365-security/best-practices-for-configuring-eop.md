@@ -12,12 +12,12 @@ ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Befolgen Sie diese bewährten Empfehlungen für eigenständige Exchange Online Protection (EOP), um sich für den Erfolg zu konfigurieren und häufige Konfigurationsfehler zu vermeiden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6a6a9fd0dfc654ca37fdd5168b3ecc0c4486f9d0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e968316e23fe2d8e68795318f8e0785a662c8aea
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924456"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994558"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Bewährte Methoden zum Konfigurieren eigenständiger EOP
 
@@ -44,6 +44,8 @@ Wir ermöglichen Sicherheitsadministratoren, ihre Sicherheitseinstellungen an di
 
 Diese Einstellungen umfassen eine Reihe von Features, die außerhalb von Sicherheitsrichtlinien liegen.
 
+<br>
+
 ****
 
 |Name des Sicherheitsfeatures|Standard|Strict|Kommentar|
@@ -57,8 +59,8 @@ Diese Einstellungen umfassen eine Reihe von Features, die außerhalb von Sicherh
 |Einheitliche Überwachung sollte aktiviert sein|Ja|Ja||
 |[IMAP-Konnektivität mit Postfach](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Deaktiviert|Deaktiviert||
 |[POP-Konnektivität mit Postfach](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Deaktiviert|Deaktiviert||
-|Authentifizierte SMTP-Übermittlung|Deaktiviert|Deaktiviert|Die authentifizierte Client-SMTP-Übermittlung (auch als Client-SMTP-Übermittlung oder SMTP-Authentifizierung bezeichnet) ist erforderlich, damit POP3- und IMAP4-Clients E-Mails senden können.|
-|EWS-Konnektivität mit Postfach|Deaktiviert|Deaktiviert||
+|Authentifizierte SMTP-Übermittlung|Deaktiviert|Deaktiviert|Die authentifizierte Client-SMTP-Übermittlung (auch als Client-SMTP-Übermittlung oder SMTP-Authentifizierung bezeichnet) ist für POP3- und IMAP4-Clients und -Anwendungen und -Geräte erforderlich, die E-Mails generieren und senden. <p> Anweisungen zum aktivieren und Deaktivieren von SMTP AUTH global oder selektiv finden Sie unter Aktivieren oder Deaktivieren der authentifizierten [Client-SMTP-Übermittlung in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission).|
+|EWS-Konnektivität mit Postfach|Deaktiviert|Deaktiviert|Outlook verwendet Exchange-Webdienste für Frei/Gebucht-, Out-of-Office-Einstellungen und Kalenderfreigabe. Wenn Sie EWS nicht global deaktivieren können, haben Sie die folgenden Optionen: <ul><li>Verwenden [Sie Authentifizierungsrichtlinien,](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) um zu verhindern, dass EWS die Standardauthentifizierung verwendet, wenn Ihre Clients moderne Authentifizierung (moderne Authentifizierung) unterstützen.</li><li>Verwenden [Sie Clientzugriffsregeln,](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) um EWS auf bestimmte Benutzer oder Quell-IP-Adressen zu beschränken.</li><li>Steuern des EWS-Zugriffs auf bestimmte Anwendungen global oder pro Benutzer. Anweisungen finden Sie unter [Steuern des Zugriffs auf EWS in Exchange](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange).</li></ul> <p> Das [Berichtsnachrichten-Add-In](enable-the-report-message-add-in.md) und das [Phishing-Add-In](enable-the-report-phish-add-in.md) Melden verwendet rest standardmäßig in unterstützten Umgebungen, wird jedoch auf EWS zurückfallen, wenn REST nicht verfügbar ist. Die unterstützten Umgebungen, die REST verwenden, sind:<ul><li>Exchange Online</li><li>Exchange 2019 oder Exchange 2016</li><li>Aktuelle Outlook für Windows aus einem Microsoft 365-Abonnement oder einmal kaufen Outlook 2019.</li><li>Aktuelle Outlook für Mac aus einem Microsoft 365-Abonnement oder einmal kaufen Outlook für Mac 2016 oder höher.</li><li>Outlook für iOS und Android</li><li>Outlook im Web</li></ul>|
 |[PowerShell-Konnektivität](/powershell/exchange/disable-access-to-exchange-online-powershell)|Deaktiviert|Deaktiviert|Verfügbar für Postfachbenutzer oder E-Mail-Benutzer (vom [Cmdlet Get-User zurückgegebene](/powershell/module/exchange/get-user) Benutzerobjekte).|
 |Verwenden [von Spoof Intelligence](learn-about-spoof-intelligence.md) zum Hinzufügen von Absendern zur Liste der zulässigen Nachrichten|Ja|Ja||
 |[Verzeichnisbasierte Edgeblockierung (Directory-Based Edge Blocking, DBEB)](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Aktiviert|Aktiviert|Domänentyp = Autoritative|

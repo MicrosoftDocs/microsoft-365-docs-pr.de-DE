@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Informationen zum Planen von Sicherheit und Datenschutz für Microsoft Viva Topics
-ms.openlocfilehash: 9ac7ea085be115ef06244422713099c01ec50a36
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 91d0d5c25502a1938976b9457f8a5dafc6ab957b
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917344"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994546"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Sicherheit und Datenschutz in Microsoft Viva Topics
 
@@ -51,7 +51,7 @@ In der folgenden Tabelle wird beschrieben, was Benutzer – Themenbetrachter, Mi
 
 |Themaelement|Was Benutzer sehen können|
 |:---------|:------------------|
-|Themaname|Benutzer können den Themennamen aller Themen im Themencenter sehen. Einige Themen sind möglicherweise nicht sichtbar, wenn sie eine geringe Relevanz für den Benutzer haben.|
+|Themaname|Benutzer können den Themanamen von Themen im Themencenter sehen. Einige Themen sind möglicherweise nicht sichtbar, wenn Benutzer nicht über Berechtigungen für den Quellinhalt verfügen oder eine geringe Relevanz für den Benutzer haben.|
 |Beschreibung des Themas|VON AI generierte Beschreibungen sind nur für Benutzer sichtbar, die über Berechtigungen für den Quellinhalt verfügen. Manuell eingegebene oder bearbeitete Beschreibungen sind für alle Benutzer sichtbar.|
 |Personen|Angeheftierte Personen sind für alle Benutzer sichtbar. Vorgeschlagene Personen sind nur für Benutzer sichtbar, die über Berechtigungen für den Quellinhalt verfügen.|
 |Dateien|Dateien sind nur für Benutzer sichtbar, die über Berechtigungen für den Quellinhalt verfügen.|

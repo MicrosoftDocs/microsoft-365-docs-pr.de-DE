@@ -17,12 +17,12 @@ ms.custom:
 description: Administratoren können sich über die Antiphishingrichtlinien informieren, die in Exchange Online Protection (EOP) und Microsoft Defender für Office 365 verfügbar sind.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eeb15040f0e47f7d51852dadf68c4b0c37de0975
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3458d6702dab48072e4846038400b087b1a4a8f1
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929228"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994582"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Antiphishingrichtlinien in Microsoft 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "50929228"
 
 Richtlinien zum Konfigurieren von Antiphishingschutzeinstellungen sind in Microsoft 365-Organisationen mit Exchange Online-Postfächern, eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächern und Microsoft Defender für Office 365-Organisationen verfügbar.
 
-Antiphishingrichtlinien in Microsoft Defender für Office 365 sind nur in Organisationen mit Defender for Office 365 verfügbar. Zum Beispiel:
+Antiphishingrichtlinien in Microsoft Defender für Office 365 sind nur in Organisationen mit Defender for Office 365 verfügbar. Beispiel:
 
 - Microsoft 365 Enterprise E5, Microsoft 365 Education A5 usw.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -206,17 +206,21 @@ Die folgenden Identitätswechseleinstellungen sind nur in Antiphishingrichtlinie
   - **Identitätswechseldomänen:** Die From-Adresse enthält eine geschützte Domäne.
   - **Ungewöhnliche Zeichen:** Die From-Adresse enthält ungewöhnliche Zeichensätze (z. B. mathematische Symbole und Text oder eine Kombination aus Groß- und Kleinbuchstaben) in einem geschützten Absender oder einer geschützten Domäne.
 
-
   > [!IMPORTANT]
   >
-  > Empfehlung zum Aktivieren eines Sicherheitstipps, der während des ersten Kontakts zwischen dem Absender und den Empfängern angezeigt **wird:** Auch wenn die Tipps zur Identitätswechselsicherheit deaktiviert **sind,** wird empfohlen, eine Nachrichtenflussregel (auch als  Transportregel bezeichnet) zum Hinzufügen eines Nachrichtenkopfs namens **X-MS-Exchange-EnableFirstContactSafetyTip** mit wertaktiviertem Wert für Nachrichten zu verwenden. Ein Sicherheitstipp benachrichtigt Empfänger, wenn sie zum ersten Mal eine Nachricht vom Absender erhalten oder wenn sie nicht häufig Nachrichten vom Absender erhalten. Diese Funktion bietet zusätzlichen Sicherheitsschutz vor potenziellen Identitätswechselangriffen. 
+  > Selbst wenn die Identitätswechselsicherheitstipps deaktiviert **sind,** wird empfohlen, eine Nachrichtenflussregel (auch als Transportregel bezeichnet) zu verwenden, um einen Nachrichtenkopf mit dem Namen **X-MS-Exchange-EnableFirstContactSafetyTip** mit **wertaktiviertem** Wert für Nachrichten hinzuzufügen. Ein Sicherheitstipp benachrichtigt Empfänger, wenn sie zum ersten Mal eine Nachricht vom Absender erhalten oder wenn sie nicht häufig Nachrichten vom Absender erhalten. Diese Funktion bietet zusätzlichen Sicherheitsschutz vor potenziellen Identitätswechselangriffen.
+  >
   > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="Der Text der Sicherheitstipps für den Identitätswechselschutz mit mehreren Empfängern.":::
 
-- **Postfachintelligenz:** Aktiviert oder deaktiviert künstliche Intelligenz (KI), die Benutzer-E-Mail-Muster mit ihren häufigen Kontakten bestimmt. Diese Einstellung hilft der KI, zwischen legitimen und spoofierten E-Mails von diesen Kontakten zu unterscheiden. Die Postfachintelligenz ist nur für Exchange Online-Postfächer verfügbar.
+- **Postfachintelligenz:** Aktiviert oder deaktiviert künstliche Intelligenz (KI), die Benutzer-E-Mail-Muster mit ihren häufigen Kontakten bestimmt. Diese Einstellung hilft der KI, zwischen Nachrichten von legitimen und identitätswechselten Absendern zu unterscheiden.
 
-- **Postfachintelligenz-basierter Identitätswechselschutz:** Aktiviert oder deaktiviert erweiterte Identitätswechselergebnisse basierend auf der individuellen Absenderzuordnung jedes Benutzers. Mit dieser Intelligenz kann Microsoft 365 die Erkennung von Identitätswechseln von Benutzern anpassen und falsch positive Ergebnisse besser verarbeiten. Wenn der Identitätswechsel des Benutzers erkannt wird, können Sie eine bestimmte Aktion für die Nachricht definieren:
+  Beispielsweise ist Gabriela Laureano (glaureano@contoso.com) die CEO Ihres Unternehmens, daher fügen Sie sie  als geschützten Absender in die Benutzer ein, um die Einstellungen der Richtlinie zu schützen. Einige der Empfänger, für die die Richtlinie gilt, kommunizieren jedoch regelmäßig mit einem Anbieter, der auch "Gabriela Laureano" (glaureano@fabrikam.com) heißt. Da diese Empfänger über einen Kommunikationsverlauf mit glaureano@fabrikam.com verfügen, identifiziert die Postfachintelligenz Nachrichten aus glaureano@fabrikam.com nicht als Identitätswechselversuch glaureano@contoso.com Empfängern.
 
-  - **Keine Aktion anwenden**
+  Um häufige Kontakte zu verwenden, die von der Postfachintelligenz (und deren  Fehlen) gelernt wurden, um Benutzer vor  Identitätswechselangriffen zu schützen, können Sie den Identitätswechselschutz für Postfachintelligenz aktivieren und die zu ergreifende Aktion angeben, wenn Sie auch **Mailbox Intelligence aktivieren.**
+
+- **Postfachintelligenz-basierter Identitätswechselschutz:** Aktivieren Sie diese Einstellung, um die Aktion für Nachrichten für Identitätswechselerkennungen aus Ergebnissen der Postfachintelligenz anzugeben:
+
+  - **Keine Aktion** anwenden: Beachten Sie, dass dieser Wert dasselbe Ergebnis hat wie das Aktivieren der Postfachintelligenz, aber das Deaktivieren des Identitätswechselschutzes für  Postfachintelligenz. 
   - **Umleiten von Nachrichten an andere E-Mail-Adressen**
   - **Nachricht in Junk-E-Mail-Ordner verschieben**
   - **Isolieren der Nachricht**

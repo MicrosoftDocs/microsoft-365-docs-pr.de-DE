@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Häufig gestellte Fragen zu Microsoft Bookings.
-ms.openlocfilehash: c7bf14c35626eeeec781f6a9f45769e0ead1730e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d357ae83d7fe6fdd9f3d0bff724b037e82a3f5d0
+ms.sourcegitcommit: 1df94f04f138ccf1a2356d26174335c44de7052b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913826"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50999529"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Häufig gestellte Fragen zu Microsoft Bookings
 
@@ -37,7 +37,7 @@ Ihren Kunden wird nur der Bookings-Kalender angezeigt, den Sie online für die D
 
 ### <a name="how-do-i-change-a-bookable-attribute-under-manage-staff"></a>Wie änderung ich ein buchbares Attribut unter Mitarbeiter verwalten?
 
-Wenn Mitarbeiter hinzugefügt wurden, hätten sie eine E-Mail erhalten, um die Anforderung zu akzeptieren oder abzulehnen. Sie können dieselbe E-Mail öffnen und "Ablehnen" auswählen, um sie nicht buchbar zu machen. Wir haben derzeit keine Möglichkeit, dies innerhalb der App umschalten zu können.
+Wenn Mitarbeiter hinzugefügt wurden, hätten sie eine E-Mail erhalten, um die Anforderung zu akzeptieren oder abzulehnen. Sie können dieselbe E-Mail öffnen und "Ablehnen" auswählen, damit sie nicht buchbar sind. Wir haben derzeit keine Möglichkeit, dies innerhalb der App umschalten zu können.
 
 ### <a name="how-do-end-users-access-the-bookings-app"></a>Wie greifen Endbenutzer auf die Bookings-App zu?
 
@@ -65,7 +65,7 @@ Ja, Bookings ist anpassbar und kann für verschiedene Szenarien verwendet werden
 
 ### <a name="is-all-the-functionality-of-the-original-bookings-web-app-available-in-microsoft-teams"></a>Sind alle Funktionen der ursprünglichen Bookings Web App in Microsoft Teams verfügbar?
 
-Eine einfache Version von Bookings ist jetzt als App in Teams verfügbar. Die erste Ankündigung finden Sie [hier](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/). In der Web-App gibt es funktionen für tiefe Verknüpfungen, und nach der Einrichtung kann die täglichen Verwendung von Bookings durchgeführt werden, ohne Teams jemals verlassen zu müssen. Informationen fließen plattformübergreifend.
+Eine einfache Version von Bookings ist jetzt als App in Teams verfügbar. Die erste Ankündigung ist [hier](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/). In der Web-App gibt es funktionen für tiefe Verknüpfungen, und nach der Einrichtung kann die täglichen Verwendung von Bookings durchgeführt werden, ohne Teams jemals verlassen zu müssen. Informationen fließen plattformübergreifend.
 
 ### <a name="is-bookings-a-small-business-offering-or-an-enterprise-offering-or-both"></a>Ist Bookings ein Kleinunternehmensangebot oder ein Enterprise-Angebot oder beides?
 
@@ -144,7 +144,7 @@ Mitarbeiter mit E1/F1/F3-Lizenzen oder ohne Lizenzen können weiterhin als Mitar
 
 Die Mitarbeiter des Store werden auch in Bookings als nicht verfügbar angezeigt, wenn zu diesem Zeitpunkt bereits ein Termin über die Bookings Web App geplant wurde. Termine, die über Bookings gebucht werden, werden in Bookings als gebucht im Kalender eines Mitarbeiters angezeigt. Mitarbeiter mit einer nicht für Bookings aktivierten Lizenz können ihren persönlichen Kalender weiterhin auf ihre Verfügbarkeit in Bookings auswirken, sofern sie sich innerhalb desselben Mandanten befinden.
 
-Personen in der Rolle "Gäste" können alle Informationen anzeigen, die der Kunde in der ersten Terminerstellung bereitgestellt hat. Wenn beispielsweise der für den Termin gebuchte Storemitarbeiter den Kunden vor dem Termin anrufen muss, hat er Zugriff auf die Informationen, die der Kunde während des Planungsprozesses zur Verfügung stellt. Der gebuchte Mitarbeiter hat Zugriff auf alle Informationen, die in der Bestätigungs-E-Mail angezeigt werden, sowie auf das ICS-Kalenderereignis (z. B. die Telefonnummer des Kunden, wenn sie eingegeben wurde).
+Personen in der Rolle "Gäste" können alle Informationen anzeigen, die der Kunde in der ersten Terminerstellung bereitgestellt hat. Wenn beispielsweise der für den Termin gebuchte Storemitarbeiter den Kunden vor dem Termin anrufen muss, hat er Zugriff auf die Informationen, die der Kunde während des Planungsprozesses zur Verfügung stellt. Der gebuchte Mitarbeiter hat Zugriff auf alle Informationen, die in der Bestätigungs-E-Mail angezeigt werden, sowie auf das Kalenderereignis ICS (z. B. die Kundentelefonnummer, wenn sie eingegeben wurde).
 
 Personen in der Gastrolle können nicht auf die Bookings-Web-App zugreifen, um Einstellungen zu ändern oder Termine (Hinzufügen, Abbrechen und Neuplanen) anzeigen und verwalten zu können. Sie können jedoch termine im Namen von Kunden über die Self-Service-Seite auf die gleiche Weise wie ein Kunde einen Termin vereinbaren.
 
@@ -176,7 +176,7 @@ Eine Einstellung mit **dem Namen Maximale Vorlaufzeit** bestimmt, wie weit im Vo
 
 ### <a name="how-does-bookings-work-across-time-zones"></a>Wie funktioniert Bookings in verschiedenen Zeitzonen?
 
-Alle Zeiten befinden sich standardmäßig in der Geschäftszeitzone (Ihrer lokalen Zeitzone). Dies bedeutet, dass alle Einstellungen, die Sie für einen Bookings-Kalender konfigurieren, z. B. Arbeitszeiten, in dieser Zeitzone angezeigt werden. Auf der Self-Service-Seite können alle Terminzeiten in der Zeitzone des Endbenutzers angezeigt werden, die bei Bedarf deaktiviert werden können. Wenn **Auf der** Registerkarte Bookings-Seite immer Zeitplätze in der Geschäftszeitzone angezeigt werden, werden den Personen, die die Seite besuchen, Zeitfenster in ihren eigenen lokalen Zeitzonen angezeigt.
+Alle Zeiten befinden sich standardmäßig in der Geschäftszeitzone (Ihrer lokalen Zeitzone). Alle Einstellungen, die Sie für einen Bookings-Kalender konfigurieren, z. B. Arbeitszeiten, werden in dieser Zeitzone angezeigt. Auf der Self-Service-Seite können alle Terminzeiten in der Zeitzone des Endbenutzers angezeigt werden, die bei Bedarf deaktiviert werden können. Wenn **Auf der** Registerkarte Bookings-Seite immer Zeitplätze in der Geschäftszeitzone angezeigt werden, werden den Personen, die die Seite besuchen, Zeitfenster in ihren eigenen lokalen Zeitzonen angezeigt.
 
 :::image type="content" source="media/bookings-faq-region.png" alt-text="Einstellungen für die Region und Zeitzone von Bookings":::
 
@@ -244,7 +244,7 @@ Buchungen können eine große Anzahl von Besuchern und Buchungen gleichzeitig un
 
 ### <a name="where-is-bookings-data-stored"></a>Wo werden Bookings-Daten gespeichert?
 
-Bookings ist eine Microsoft 365-App, d. h. alle Daten werden in der Microsoft 365-Plattform und in Exchange gespeichert. Bookings folgt allen von Microsoft festgelegten Datenspeicherrichtlinien, bei denen es sich um dieselben Richtlinien handelt, gefolgt von allen Office-Apps. Bookings verwendet freigegebene Postfächer in Exchange, um Kunden-, Mitarbeiter-, Service- und Termindetails zu speichern. Compliancerichtlinien für freigegebene Postfächer in Exchange gelten auch für Bookings-Postfächer. Alle Kundendaten (einschließlich informationen, die von Kunden bei der Buchung bereitgestellt werden) werden in Bookings erfasst und in der App gespeichert, daher werden sie in Exchange gespeichert. Microsoft Bookings verwendet dieselben Richtlinien wie Microsoft 365, die Sie hier [finden.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
+Bookings ist eine Microsoft 365-App, d. h. alle Daten werden in der Microsoft 365-Plattform und in Exchange gespeichert. Bookings folgt allen von Microsoft festgelegten Datenspeicherrichtlinien, bei denen es sich um dieselben Richtlinien handelt, die alle Office-Apps befolgen. Bookings verwendet freigegebene Postfächer in Exchange, um Kunden-, Mitarbeiter-, Service- und Termindetails zu speichern. Compliancerichtlinien für freigegebene Postfächer in Exchange gelten auch für Bookings-Postfächer. Alle Kundendaten (einschließlich informationen, die von Kunden bei der Buchung bereitgestellt werden) werden in Bookings erfasst und in der App gespeichert, daher werden sie in Exchange gespeichert. Microsoft Bookings verwendet dieselben Richtlinien wie Microsoft 365, die Sie hier [finden.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
 
 ### <a name="is-there-a-way-to-centrally-manage-bookings-calendars-for-all-users"></a>Gibt es eine Möglichkeit, Bookings-Kalender für alle Benutzer zentral zu verwalten?
 
@@ -274,7 +274,7 @@ Dieser Abschnitt unterstützt keinen Rich-Text-Text, aber links können unter de
 
 Der folgende Befehl kann verwendet werden, um Informationen aller Bookings-Postfächer und Benutzer abzurufen, die Zugriff auf diese Postfächer haben.
 
-`Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($_.user -like '@')}`
+`Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($_.user -like '*@*')}`
 
 ## <a name="technical-questions"></a>Technische Fragen
 
