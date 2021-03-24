@@ -314,7 +314,7 @@
             - name: Einrichten von Compliancefeatures
               href: ../business/set-up-compliance.md
         - name: Sicherheitsbewertung
-          href: ../security/mtp/microsoft-secure-score.md
+          href: 'https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score'
         - name: Ein Leitfaden zur DSGVO-Compliance
           href: security-and-compliance/gdpr-compliance.md
     - name: Verwalten Sie Geräte und App-Daten
