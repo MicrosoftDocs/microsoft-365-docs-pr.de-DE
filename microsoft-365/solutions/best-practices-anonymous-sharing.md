@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: In diesem Artikel werden Sie bewährte Methoden zum Freigeben von Dateien und Ordnern für nicht authentifizierte Benutzer lernen.
-ms.openlocfilehash: 3fbe48159dab7fd9ebb072feab7724c3186f7847
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: af0cc59813c76e4ed6a3c0e50140e7fa26c91080
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904804"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051066"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Bewährte Methoden zum Freigeben von Dateien und Ordnern für nicht authentifizierte Benutzer
 
@@ -140,7 +140,7 @@ Aktivieren von "Sichere Anlagen"
 
 4. Aktivieren Sie optional auch „Sichere Dokumente“, und klicken Sie dann auf **Speichern**
 
-Weitere Anweisungen finden Sie unter [ATP für SharePoint, OneDrive und Microsoft Teams](../security/office-365-security/atp-for-spo-odb-and-teams.md) und [ATP für SharePoint, OneDrive und Microsoft Teams aktivieren](../security/office-365-security/turn-on-atp-for-spo-odb-and-teams.md).
+Weitere Anweisungen finden Sie unter [ATP für SharePoint, OneDrive und Microsoft Teams](../security/defender-365-security/mdo-for-spo-odb-and-teams.md) und [ATP für SharePoint, OneDrive und Microsoft Teams aktivieren](../security/defender-365-security/turn-on-mdo-for-spo-odb-and-teams.md).
 
 ## <a name="add-copyright-information-to-your-files"></a>Hinzufügen von Copyright-Informationen zu Ihren Dateien
 

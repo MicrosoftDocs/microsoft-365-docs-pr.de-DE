@@ -16,14 +16,14 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Stellen Sie die richtige Option für die Geräte- und App-Verwaltung für Ihre Microsoft 365-Mandanten zur Auswahl.
-ms.openlocfilehash: 994ab7d21ae70307fa78e1f7249d39ac314a7358
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0351f6be3f191e1a131da5b0b665a205a0abda8c
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904612"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050994"
 ---
-# <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Schritt 5: Geräte- und App-Verwaltung für Ihre Microsoft 365 for Enterprise-Mandanten
+# <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Schritt 5. Geräte- und App-Verwaltung für Ihre Microsoft 365 for Enterprise-Mandanten
 
 Microsoft 365 for Enterprise enthält Features, mit denen Sie Geräte und die Verwendung von Apps auf diesen Geräten in Ihrer Organisation mit mobiler Geräteverwaltung (Mobile Device Management, MDM) und mobiler Anwendungsverwaltung (MOBILE Application Management, MAM) verwalten können. Sie können iOS-, Android-, macOS- und Windows-Geräte verwalten, um den Zugriff auf die Ressourcen Ihrer Organisation, einschließlich Ihrer Daten, zu schützen. Sie können beispielsweise verhindern, dass E-Mails an Personen außerhalb Ihrer Organisation gesendet werden, oder Sie können Organisationsdaten von personenbezogenen Daten auf den persönlichen Geräten Ihrer Mitarbeiter isolieren.
 
@@ -48,7 +48,7 @@ Außerdem bestimmen Sie, wie Sie persönliche Geräte und geräte im Besitz der 
 
 ## <a name="identity-and-device-access-configurations"></a>Konfigurationen für den Identitäts- und Gerätezugriff
 
-Microsoft bietet eine Reihe von Konfigurationen für den Identitäts- und [Gerätezugriff,](../security/office-365-security/microsoft-365-policies-configurations.md) um eine sichere und produktive Belegschaft sicherzustellen. Diese Konfigurationen umfassen die Verwendung von:
+Microsoft bietet eine Reihe von Konfigurationen für den Identitäts- und [Gerätezugriff,](../security/defender-365-security/microsoft-365-policies-configurations.md) um eine sichere und produktive Belegschaft sicherzustellen. Diese Konfigurationen umfassen die Verwendung von:
 
 - Azure AD-Richtlinien für den bedingten Zugriff
 - Microsoft Intune-Richtlinien für Gerätekonformität und App-Schutz
@@ -61,8 +61,8 @@ Hier ist ein Beispiel für die Anwendung dieser Einstellungen und Richtlinien zu
 
 Verwenden Sie für den Gerätezugriff und die App-Verwaltung die Konfigurationen in den folgenden Artikeln:
 
-- [Voraussetzungen](../security/office-365-security/identity-access-prerequisites.md)
-- [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](../security/office-365-security/identity-access-policies.md)
+- [Voraussetzungen](../security/defender-365-security/identity-access-prerequisites.md)
+- [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](../security/defender-365-security/identity-access-policies.md)
 
 ## <a name="results-of-step-5"></a>Ergebnisse von Schritt 5
 

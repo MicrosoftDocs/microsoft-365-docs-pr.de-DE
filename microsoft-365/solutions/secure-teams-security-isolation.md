@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie ein Team mit einer eindeutigen Vertraulichkeitsbezeichnung für Sicherheit erstellen.
-ms.openlocfilehash: 2ecd8e0458f6ebef9ebd1b0c3724195cc70f6378
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7c9b770c712d2468369482ba3a6256e57f621f74
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920928"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51042686"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurieren eines Teams mit Sicherheitsisolierung
 
@@ -60,8 +60,8 @@ Sehen Sie in [dieser Fallstudie](contoso-team-for-top-secret-project.md), wie di
 ## <a name="initial-protections"></a>Erste Schutzmaßnahmen
 
 Wenn Sie den Zugriff auf das Team und die zugrunde liegende SharePoint-Website schützen möchten, überprüfen Sie die folgenden bewährten Methoden:
-- [Identitäts- und Gerätezugriffsrichtlinien](../security/office-365-security/identity-access-policies.md)
-- [SharePoint-Online-Zugriffsrichtlinien](../security/office-365-security/sharepoint-file-access-policies.md)
+- [Identitäts- und Gerätezugriffsrichtlinien](../security/defender-365-security/identity-access-policies.md)
+- [SharePoint-Online-Zugriffsrichtlinien](../security/defender-365-security/sharepoint-file-access-policies.md)
 - [Bereitstellen von Teams mit grundlegendem Schutz](configure-teams-baseline-protection.md)
 
 ## <a name="guest-sharing"></a>Gastfreigabe

@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 10cebf0ab74936d7275586f2e8f09c841c8c653f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 746ca59fd0e9eb0d93d93c00b6a279a9156cc524
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918314"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050738"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>Zur Identität und darüber hinaus – Ansicht eines Architekten
 
@@ -135,9 +135,9 @@ Wenn Sie dieser erweiterten Definition der Autorisierung zustimmen, müssen Sie 
 - [Azure AD Identity Protection](/azure/active-directory/identity-protection/) 
 - [Microsoft Defender for Identity](/azure-advanced-threat-protection/)
 - [Microsoft Defender für Endpunkt](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft Defender für Office 365](../security/office-365-security/office-365-atp.md?view=o365-worldwide)
+- [Microsoft Defender für Office 365](../security/defender-365-security/defender-for-office-365.md?view=o365-worldwide)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS)
-- [Microsoft 365 Defender](../security/mtp/microsoft-threat-protection.md?view=o365-worldwide)
+- [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
 - [Microsoft Intune](/mem/intune/)
 - [Microsoft Information Protection](../compliance/information-protection.md?view=o365-worldwide) (MIP)
 - [Azure Sentinel](/azure/sentinel/)
@@ -227,7 +227,7 @@ Manchmal wird in Szenarien das Hinzufügen eines externen Benutzers zu einer Rol
 
 ### <a name="security-and-compliance-center-scc"></a>Security and Compliance Center (SCC)
 
-[Berechtigungen im Office 365 Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md) sind eine Sammlung von "Rollengruppen", die sich von Azure AD-Rollen unterscheiden. Dies kann verwirrend sein, da einige dieser Rollengruppen denselben Namen wie Azure AD-Rollen haben (z. B. Security Reader), aber sie können unterschiedliche Mitgliedschaften haben. Ich bevorzuge die Verwendung von Azure AD-Rollen. Jede Rollengruppe besteht aus einer oder mehreren "Rollen" (siehe was ich meine, um dasselbe Wort wieder zu verwenden?) und mitglieder aus Azure AD, d. h. E-Mail-aktivierte Objekte. Außerdem können Sie eine Rollengruppe mit demselben Namen wie eine Rolle erstellen, die diese Rolle enthalten kann oder nicht (vermeiden Sie diese Verwirrung).
+[Berechtigungen im Office 365 Security & Compliance Center](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md) sind eine Sammlung von "Rollengruppen", die sich von Azure AD-Rollen unterscheiden. Dies kann verwirrend sein, da einige dieser Rollengruppen denselben Namen wie Azure AD-Rollen haben (z. B. Security Reader), aber sie können unterschiedliche Mitgliedschaften haben. Ich bevorzuge die Verwendung von Azure AD-Rollen. Jede Rollengruppe besteht aus einer oder mehreren "Rollen" (siehe was ich meine, um dasselbe Wort wieder zu verwenden?) und mitglieder aus Azure AD, d. h. E-Mail-aktivierte Objekte. Außerdem können Sie eine Rollengruppe mit demselben Namen wie eine Rolle erstellen, die diese Rolle enthalten kann oder nicht (vermeiden Sie diese Verwirrung).
 
 In gewissem Sinne sind dies eine Weiterentwicklung des Exchange-Rollengruppenmodells. Exchange Online verfügt jedoch über eine eigene [Rollengruppenverwaltungsschnittstelle.](/exchange/permissions-exo) Einige Rollengruppen in Exchange Online werden von Azure AD oder dem Security & Compliance Center gesperrt und verwaltet, andere haben möglicherweise dieselben oder ähnliche Namen und werden in Exchange Online verwaltet (was zur Verwirrung führt). Es wird empfohlen, die Verwendung der Exchange Online-Benutzeroberfläche zu vermeiden, es sei denn, Sie benötigen Bereiche für die Exchange-Verwaltung.
 
@@ -262,7 +262,7 @@ Wie bereits erwähnt, suchen viele Kunden nach einem differenzierteren Delegieru
 Hinweis: Sicherheit und Delegierung der Datenplattform (power BI ist eine Komponente) ist ein komplexer Bereich.
 - **MEM/Intune**  -  [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control](/mem/intune/fundamentals/role-based-access-control)
 - **Microsoft Defender for Endpoint**  -  [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles)
-- **Microsoft 365 Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](../security/mtp/mtp-permissions.md)
+- **Microsoft 365 Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](../security/defender/m365d-permissions.md)
 - **Microsoft Cloud App Security** - [https://docs.microsoft.com/cloud-app-security/manage-admins](/cloud-app-security/manage-admins)
 - **Stream**  -  [https://docs.microsoft.com/stream/assign-administrator-user-role](/stream/assign-administrator-user-role)
 - **Informationsbarrieren**  -  [https://docs.microsoft.com/microsoft-365/compliance/information-barriers](../compliance/information-barriers.md)
@@ -296,7 +296,7 @@ Die Kombination aller Protokolle in einem Speicherort bietet zusätzliche Vortei
 
 Protokolle müssen nicht nur an einen Ort geleitet werden. Es kann auch von Vorteil sein, [Office 365-Protokolle in Microsoft Cloud App Security](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) oder ein benutzerdefiniertes RBAC-Modell in Power BI zu [integrieren.](../admin/usage-analytics/usage-analytics.md?view=o365-worldwide) Unterschiedliche Repositorys haben unterschiedliche Vorteile und Zielgruppen.
 
-Es ist erwähnenswert, dass es ein sehr umfangreiches integriertes Analysesystem für Sicherheit, Bedrohungen, Sicherheitsrisiken und so weiter in einem Dienst namens [Microsoft 365 Defender gibt.](../security/mtp/microsoft-threat-protection.md?view=o365-worldwide)
+Es ist erwähnenswert, dass es ein sehr umfangreiches integriertes Analysesystem für Sicherheit, Bedrohungen, Sicherheitsrisiken und so weiter in einem Dienst namens [Microsoft 365 Defender gibt.](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
 
 Viele große Kunden möchten diese Protokolldaten an ein Drittanbietersystem (z. B. SIEM) übertragen. Dafür gibt es unterschiedliche Ansätze, aber im Allgemeinen [sind Azure Event Hub](/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) und [Graph](/graph/security-integration) gute Ausgangspunkte.
 
