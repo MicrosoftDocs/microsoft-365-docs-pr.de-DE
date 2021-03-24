@@ -1,0 +1,30 @@
+### YamlMime:Landing
+title: Microsoft 365 Sicherheitsdokumentation
+summary: Informieren Sie sich über die robusten Sicherheitslösungen und -dienste in Microsoft 365 Security, damit Sie Ihr Unternehmen auf allen Angriffsflächen besser schützen können.
+metadata:
+  title: Microsoft 365 Sicherheitsdokumentation
+  description: Informieren Sie sich über die robusten Sicherheitslösungen und -dienste in Microsoft 365 Security, damit Sie Ihr Unternehmen auf allen Angriffsflächen besser schützen können
+  services: office-365-security-compliance
+  ms.service: O365-seccomp
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: m365-security-compliance
+  author: mjcaparas
+  ms.author: macapara
+  ms.date: 09/13/2019
+  localization_priority: Priority
+  ms.openlocfilehash: 1690dfc1c0a3a2afb32d4554ac4876c5f9928a2e
+  ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 03/23/2021
+  ms.locfileid: "51062016"
+landingContent:
+- title: Microsoft 365 Defender
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Was ist Microsoft 365 Defender?
+      url: ../defender/microsoft-365-defender.md
+    - text: Microsoft 365 Security Center
+      url: ../defender/overview-security-center.md

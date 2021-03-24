@@ -1,0 +1,82 @@
+---
+title: AlertEvidence-Tabelle im schema der erweiterten Suche
+description: Informationen zu Den Warnungen zugeordneten Informationen in der AlertEvidence-Tabelle des Schemas für die erweiterte Suche
+keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft Threat Protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, entities, evidence, file, IP address, device, machine, user, account
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+f1.keywords:
+- NOCSH
+ms.author: lomayor
+author: lomayor
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection:
+- M365-security-compliance
+- m365initiative-m365-defender
+ms.topic: article
+ms.technology: m365d
+ms.openlocfilehash: 3e4a8c9bffd285d45c7a4002b1ecd96e6dda40b9
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51063608"
+---
+# <a name="alertevidence"></a><span data-ttu-id="d92a1-104">AlertEvidence</span><span class="sxs-lookup"><span data-stu-id="d92a1-104">AlertEvidence</span></span>
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+<span data-ttu-id="d92a1-105">**Gilt für:**</span><span class="sxs-lookup"><span data-stu-id="d92a1-105">**Applies to:**</span></span>
+- <span data-ttu-id="d92a1-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="d92a1-106">Microsoft 365 Defender</span></span>
+
+<span data-ttu-id="d92a1-107">Die Tabelle im Schema der erweiterten Suche enthält Informationen zu verschiedenen Entitäten ( Dateien, IP-Adressen, URLs, Benutzer oder Geräte), die Warnungen von `AlertEvidence` Microsoft Defender for Endpoint, Microsoft Defender für Office 365, Microsoft Cloud App Security und Microsoft Defender for Identity zugeordnet sind. [](advanced-hunting-overview.md)</span><span class="sxs-lookup"><span data-stu-id="d92a1-107">The `AlertEvidence` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about various entities—files, IP addresses, URLs, users, or devices—associated with alerts from Microsoft  Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity.</span></span> <span data-ttu-id="d92a1-108">Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="d92a1-108">Use this reference to construct queries that return information from this table.</span></span>
+
+<span data-ttu-id="d92a1-109">Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter [Referenz zur erweiterten Suche](advanced-hunting-schema-tables.md).</span><span class="sxs-lookup"><span data-stu-id="d92a1-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+
+| <span data-ttu-id="d92a1-110">Spaltenname</span><span class="sxs-lookup"><span data-stu-id="d92a1-110">Column name</span></span> | <span data-ttu-id="d92a1-111">Datentyp</span><span class="sxs-lookup"><span data-stu-id="d92a1-111">Data type</span></span> | <span data-ttu-id="d92a1-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d92a1-112">Description</span></span> |
+|-------------|-----------|-------------|
+| `Timestamp` | <span data-ttu-id="d92a1-113">datetime</span><span class="sxs-lookup"><span data-stu-id="d92a1-113">datetime</span></span> | <span data-ttu-id="d92a1-114">Datum und Uhrzeit der Aufzeichnung des Ereignisses</span><span class="sxs-lookup"><span data-stu-id="d92a1-114">Date and time when the event was recorded</span></span> |
+| `AlertId` | <span data-ttu-id="d92a1-115">string</span><span class="sxs-lookup"><span data-stu-id="d92a1-115">string</span></span> | <span data-ttu-id="d92a1-116">Eindeutiger Bezeichner der Warnung</span><span class="sxs-lookup"><span data-stu-id="d92a1-116">Unique identifier for the alert</span></span> |
+| `ServiceSource` | <span data-ttu-id="d92a1-117">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d92a1-117">string</span></span> | <span data-ttu-id="d92a1-118">Produkt oder Dienst, das die Warnungsinformationen bereitgestellt hat</span><span class="sxs-lookup"><span data-stu-id="d92a1-118">Product or service that provided the alert information</span></span> |
+| `EntityType` | <span data-ttu-id="d92a1-119">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d92a1-119">string</span></span> | <span data-ttu-id="d92a1-120">Objekttyp, z. B. eine Datei, ein Prozess, ein Gerät oder ein Benutzer</span><span class="sxs-lookup"><span data-stu-id="d92a1-120">Type of object, such as a file, a process, a device, or a user</span></span> |
+| `EvidenceRole` | <span data-ttu-id="d92a1-121">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d92a1-121">string</span></span> | <span data-ttu-id="d92a1-122">Wie die Entität an einer Warnung beteiligt ist, die angibt, ob sie betroffen ist oder nur im Zusammenhang steht</span><span class="sxs-lookup"><span data-stu-id="d92a1-122">How the entity is involved in an alert, indicating whether it is impacted or is merely related</span></span> |
+| `EvidenceDirection` | <span data-ttu-id="d92a1-123">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d92a1-123">string</span></span> | <span data-ttu-id="d92a1-124">Gibt an, ob die Entität die Quelle oder das Ziel einer Netzwerkverbindung ist</span><span class="sxs-lookup"><span data-stu-id="d92a1-124">Indicates whether the entity is the source or the destination of a network connection</span></span> |
+| `FileName` | <span data-ttu-id="d92a1-125">string</span><span class="sxs-lookup"><span data-stu-id="d92a1-125">string</span></span> | <span data-ttu-id="d92a1-126">Name der Datei, auf die die aufgezeichnete Aktion angewendet wurde</span><span class="sxs-lookup"><span data-stu-id="d92a1-126">Name of the file that the recorded action was applied to</span></span> |
+| `FolderPath` | <span data-ttu-id="d92a1-127">string</span><span class="sxs-lookup"><span data-stu-id="d92a1-127">string</span></span> | <span data-ttu-id="d92a1-128">Ordner, der die Datei enthält, auf die die aufgezeichnete Aktion angewendet wurde</span><span class="sxs-lookup"><span data-stu-id="d92a1-128">Folder containing the file that the recorded action was applied to</span></span> |
+| `SHA1` | <span data-ttu-id="d92a1-129">string</span><span class="sxs-lookup"><span data-stu-id="d92a1-129">string</span></span> | <span data-ttu-id="d92a1-130">SHA-1 der Datei, auf die die aufgezeichnete Aktion angewendet wurde</span><span class="sxs-lookup"><span data-stu-id="d92a1-130">SHA-1 of the file that the recorded action was applied to</span></span> |
+| `SHA256` | <span data-ttu-id="d92a1-131">string</span><span class="sxs-lookup"><span data-stu-id="d92a1-131">string</span></span> | <span data-ttu-id="d92a1-132">SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde.</span><span class="sxs-lookup"><span data-stu-id="d92a1-132">SHA-256 of the file that the recorded action was applied to.</span></span> <span data-ttu-id="d92a1-133">Dieses Feld wird in der Regel nicht aufgefüllt– verwenden Sie die SHA1-Spalte, wenn verfügbar.</span><span class="sxs-lookup"><span data-stu-id="d92a1-133">This field is usually not populated—use the SHA1 column when available.</span></span> |
+| `FileSize` | <span data-ttu-id="d92a1-134">int</span><span class="sxs-lookup"><span data-stu-id="d92a1-134">int</span></span> | <span data-ttu-id="d92a1-135">Größe der Datei in Bytes</span><span class="sxs-lookup"><span data-stu-id="d92a1-135">Size of the file in bytes</span></span> |
+| `ThreatFamily` | <span data-ttu-id="d92a1-136">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d92a1-136">string</span></span> | <span data-ttu-id="d92a1-137">Schadsoftwarefamilie, unter der die verdächtige oder schädliche Datei oder der Prozess klassifiziert wurde</span><span class="sxs-lookup"><span data-stu-id="d92a1-137">Malware family that the suspicious or malicious file or process has been classified under</span></span> |
+| `RemoteIP` | <span data-ttu-id="d92a1-138">string</span><span class="sxs-lookup"><span data-stu-id="d92a1-138">string</span></span> | <span data-ttu-id="d92a1-139">IP-Adresse, mit der eine Verbindung hergestellt wurde</span><span class="sxs-lookup"><span data-stu-id="d92a1-139">IP address that was being connected to</span></span> |
+| `RemoteUrl` | <span data-ttu-id="d92a1-140">string</span><span class="sxs-lookup"><span data-stu-id="d92a1-140">string</span></span> | <span data-ttu-id="d92a1-141">URL oder vollqualifizierter Domänenname (FQDN), mit der bzw. dem eine Verbindung hergestellt wurde</span><span class="sxs-lookup"><span data-stu-id="d92a1-141">URL or fully qualified domain name (FQDN) that was being connected to</span></span> |
+| `AccountName` | <span data-ttu-id="d92a1-142">string</span><span class="sxs-lookup"><span data-stu-id="d92a1-142">string</span></span> | <span data-ttu-id="d92a1-143">Benutzername des Kontos</span><span class="sxs-lookup"><span data-stu-id="d92a1-143">User name of the account</span></span> |
+| `AccountDomain` | <span data-ttu-id="d92a1-144">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d92a1-144">string</span></span> | <span data-ttu-id="d92a1-145">Domäne des Kontos</span><span class="sxs-lookup"><span data-stu-id="d92a1-145">Domain of the account</span></span> |
+| `AccountSid` | <span data-ttu-id="d92a1-146">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d92a1-146">string</span></span> | <span data-ttu-id="d92a1-147">Security Identifier (SID) des Kontos</span><span class="sxs-lookup"><span data-stu-id="d92a1-147">Security Identifier (SID) of the account</span></span> |
+| `AccountObjectId` | <span data-ttu-id="d92a1-148">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d92a1-148">string</span></span> | <span data-ttu-id="d92a1-149">Eindeutige ID für das Konto in Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="d92a1-149">Unique identifier for the account in Azure Active Directory</span></span> |
+| `AccountUpn` | <span data-ttu-id="d92a1-150">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d92a1-150">string</span></span> | <span data-ttu-id="d92a1-151">Benutzerprinzipalname (UPN) des Kontos</span><span class="sxs-lookup"><span data-stu-id="d92a1-151">User principal name (UPN) of the account</span></span> |
+| `DeviceId` | <span data-ttu-id="d92a1-152">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d92a1-152">string</span></span> | <span data-ttu-id="d92a1-153">Eindeutige ID für das Gerät im Dienst</span><span class="sxs-lookup"><span data-stu-id="d92a1-153">Unique identifier for the device in the service</span></span> |
+| `DeviceName` | <span data-ttu-id="d92a1-154">string</span><span class="sxs-lookup"><span data-stu-id="d92a1-154">string</span></span> | <span data-ttu-id="d92a1-155">Vollqualifizierter Domänenname (FQDN) des Computers</span><span class="sxs-lookup"><span data-stu-id="d92a1-155">Fully qualified domain name (FQDN) of the machine</span></span> |
+| `LocalIP` | <span data-ttu-id="d92a1-156">string</span><span class="sxs-lookup"><span data-stu-id="d92a1-156">string</span></span> | <span data-ttu-id="d92a1-157">IP-Adresse, die dem lokalen Gerät zugewiesen ist, das während der Kommunikation verwendet wird</span><span class="sxs-lookup"><span data-stu-id="d92a1-157">IP address assigned to the local device used during communication</span></span> |
+| `NetworkMessageId` | <span data-ttu-id="d92a1-158">string</span><span class="sxs-lookup"><span data-stu-id="d92a1-158">string</span></span> | <span data-ttu-id="d92a1-159">Eindeutiger Bezeichner für die von Office 365 generierte E-Mail</span><span class="sxs-lookup"><span data-stu-id="d92a1-159">Unique identifier for the email, generated by Office 365</span></span> |
+| `EmailSubject` | <span data-ttu-id="d92a1-160">string</span><span class="sxs-lookup"><span data-stu-id="d92a1-160">string</span></span> | <span data-ttu-id="d92a1-161">Betreff der E-Mail</span><span class="sxs-lookup"><span data-stu-id="d92a1-161">Subject of the email</span></span> |
+| `ApplicationId` | <span data-ttu-id="d92a1-162">string</span><span class="sxs-lookup"><span data-stu-id="d92a1-162">string</span></span> | <span data-ttu-id="d92a1-163">Eindeutige ID für die Anwendung</span><span class="sxs-lookup"><span data-stu-id="d92a1-163">Unique identifier for the application</span></span> |
+| `Application` | <span data-ttu-id="d92a1-164">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d92a1-164">string</span></span> | <span data-ttu-id="d92a1-165">Anwendung, die die aufgezeichnete Aktion ausgeführt hat</span><span class="sxs-lookup"><span data-stu-id="d92a1-165">Application that performed the recorded action</span></span> |
+| `ProcessCommandLine` | <span data-ttu-id="d92a1-166">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d92a1-166">string</span></span> | <span data-ttu-id="d92a1-167">Befehlszeile zum Erstellen des neuen Prozesses</span><span class="sxs-lookup"><span data-stu-id="d92a1-167">Command line used to create the new process</span></span> |
+| `AdditionalFields` | <span data-ttu-id="d92a1-168">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d92a1-168">string</span></span> | <span data-ttu-id="d92a1-169">Zusätzliche Informationen zum Ereignis im JSON-Arrayformat</span><span class="sxs-lookup"><span data-stu-id="d92a1-169">Additional information about the event in JSON array format</span></span> |
+| `RegistryKey` |<span data-ttu-id="d92a1-170">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d92a1-170">string</span></span> | <span data-ttu-id="d92a1-171">Registrierungsschlüssel, auf den die aufgezeichnete Aktion angewendet wurde</span><span class="sxs-lookup"><span data-stu-id="d92a1-171">Registry key that the recorded action was applied to</span></span> |
+| `RegistryValueName` |<span data-ttu-id="d92a1-172">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d92a1-172">string</span></span> | <span data-ttu-id="d92a1-173">Name des Registrierungswerts, auf den die aufgezeichnete Aktion angewendet wurde</span><span class="sxs-lookup"><span data-stu-id="d92a1-173">Name of the registry value that the recorded action was applied to</span></span> |
+| `RegistryValueData` |<span data-ttu-id="d92a1-174">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d92a1-174">string</span></span> | <span data-ttu-id="d92a1-175">Daten des Registrierungswerts, auf den die aufgezeichnete Aktion angewendet wurde</span><span class="sxs-lookup"><span data-stu-id="d92a1-175">Data of the registry value that the recorded action was applied to</span></span> |
+
+## <a name="related-topics"></a><span data-ttu-id="d92a1-176">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="d92a1-176">Related topics</span></span>
+- [<span data-ttu-id="d92a1-177">Übersicht über die erweiterte Suche</span><span class="sxs-lookup"><span data-stu-id="d92a1-177">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="d92a1-178">Lernen der Abfragesprache</span><span class="sxs-lookup"><span data-stu-id="d92a1-178">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="d92a1-179">Verwenden freigegebener Abfragen</span><span class="sxs-lookup"><span data-stu-id="d92a1-179">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="d92a1-180">Suche über Geräte, E-Mails, Apps und Identitäten hinweg</span><span class="sxs-lookup"><span data-stu-id="d92a1-180">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="d92a1-181">Grundlegendes zum Schema</span><span class="sxs-lookup"><span data-stu-id="d92a1-181">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="d92a1-182">Anwenden bewährter Methoden für Abfragen</span><span class="sxs-lookup"><span data-stu-id="d92a1-182">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
