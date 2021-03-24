@@ -103,6 +103,8 @@
           href: view-bill.md
         - name: Neue Lizenzen kaufen
           href: buy-licenses.md
+        - name: Vorhandene Lizenzen entfernen
+          href: remove-existing-licenses.md
         - name: Aktualisieren Ihrer Zahlungsmethode
           href: update-payment.md
         - name: Zurücksetzen von Benutzerkennwörtern

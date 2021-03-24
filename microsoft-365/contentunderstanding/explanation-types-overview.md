@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Weitere Informationen über Erklärungstypen in Microsoft SharePoint Syntex
-ms.openlocfilehash: 5187b27438f25db1a2714f1fbc7b31db6d060ccc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b34de9ffc565e3d1a17cac05084e4e4b4113a3c6
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928400"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994628"
 ---
 # <a name="introduction-to-explanation-types"></a>Einführung in Erklärungstypen
 
@@ -157,25 +157,25 @@ Statt beispielsweise alle Varianten für *Datum* manuell hinzuzufügen, können 
  
 Die Erklärungsbibliothek enthält häufig verwendeten Begriffslistenerklärungen, einschließlich:</br>
 
-- Datum</br>
-- Datum (numerisch)</br>
-- Zeit</br>
-- Zahl</br>
-- Prozentsatz</br>
-- Telefonnummer</br>
-- PLZ</br>
-- Erstes Wort des Satzes</br>
-- Satzende</br>
-- Kreditkarte</br>
-- Sozialversicherungsnummer</br>
-- Kontrollkästchen</br>
-- Währung</br>
-- E-Mail CC</br>
-- E-Mail-Datum</br>
-- E-Mail-Begrüßung</br>
-- E-Mail-Empfänger</br>
-- E-Mail-Absender</br>
-- E-Mail-Betreff</br>
+- Datum: Kalenderdaten, alle Formate. Enthält Text und Zahlen (z. B. „Dec 9, 2020“).</br>
+- Datum (numerisch): Kalenderdaten, alle Formate. Beinhaltet Zahlen (zum Beispiel 1-11-2020).</br>
+- Zeit: 12- und 24-Stunden-Format.</br>
+- Zahl: Positive und negative Zahlen bis zu 2 Dezimalstellen. </br>
+- Prozentsatz: Eine Liste von Mustern, die einen Prozentsatz darstellen. Zum Beispiel 1%, 11%, 100%, 11,11%, usw.</br>
+- Rufnummer: Gängige Vereinigte Staaten- und internationale Formate. Zum Beispiel: 000 000 0000, 000-000-0000, (000)000-0000, (000) 000-0000, usw.</br>
+- Postleitzahl: Vereinigte Staaten-Postleitzahlenformate. Zum Beispiel, 11111, 11111-1111.</br>
+- Erstes Wort des Satzes: Gemeinsame Muster für Wörter mit bis zu 9 Zeichen. </br>
+- Ende des Satzes: Gängige Interpunktion für das Ende eines Satzes</br>
+- Kreditkarte: Gängige Formate für Kreditkartennummern. Zum Beispiel: 1111-1111-1111-1111. </br>
+- Sozialversicherungsnummer: Format der Vereinigten Staaten-Sozialversicherungsnummer. Zum Beispiel, 111-11-1111. </br>
+- Ankreuzfeld: Eine Begriffsliste, die Variationen für ein ausgefülltes Kontrollkästchen darstellt. Zum Beispiel: _X_, _ _X_, usw.</br>
+- Währung: Wichtige internationale Symbole. Zum Beispiel: $. </br>
+- E-Mail-CC: Eine Begriffsliste mit dem Begriff „CC:“, die oft in der Nähe der Namen oder E-Mail-Adressen von zusätzlichen Personen oder Gruppen zu finden ist, an die die Nachricht gesendet wurde.</br>
+- E-Mail-Datum: Eine Begriffsliste mit dem Begriff „Gesendet am:“, die oft in der Nähe des Datums zu finden ist, an dem die E-Mail gesendet wurde.</br>
+- E-Mail-Begrüßung: Gängige Anfangszeilen für E-Mails.</br>
+- E-Mail-Empfänger: Eine Begriffsliste mit dem Begriff „An:“, die oft in der Nähe der Namen oder E-Mail-Adressen von Personen oder Gruppen zu finden ist, an die die Nachricht gesendet wurde. </br>
+- E-Mail-Absender: Eine Begriffsliste mit dem Begriff „Von:“, die oft in der Nähe des Namens oder der E-Mail-Adresse des Absenders zu finden ist. </br>
+- E-Mail-Betreff: Eine Begriffsliste mit dem Begriff „Betreff:“, die oft in der Nähe des Betreffs der E-Mail zu finden ist. </br>
 
 Die Erläuterungsbibliothek beinhaltet auch drei automatische Vorlagentypen, die mit den von Ihnen in Ihren Beispieldateien bezeichneten Daten funktionieren:
 

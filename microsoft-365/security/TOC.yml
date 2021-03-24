@@ -9,701 +9,703 @@
         - name: Microsoft 365 Security für geschäftliche Entscheidungsträger
           href: Microsoft-365-security-for-bdm.md
         - name: Sicherheitsempfehlungen für Prioritätskonten
-          href: ./office-365-security/security-recommendations-for-priority-accounts.md
+          href: ./defender-365-security/security-recommendations-for-priority-accounts.md
     - name: Konfigurationen für den Identitäts- und Gerätezugriff
       items:
         - name: Übersicht
-          href: ./office-365-security/microsoft-365-policies-configurations.md
+          href: ./defender-365-security/microsoft-365-policies-configurations.md
         - name: Erforderliche Arbeit
-          href: ./office-365-security/identity-access-prerequisites.md
+          href: ./defender-365-security/identity-access-prerequisites.md
         - name: Allgemeine Identitäts- und Gerätezugriffsrichtlinien
-          href: ./office-365-security/identity-access-policies.md
+          href: ./defender-365-security/identity-access-policies.md
         - name: Richtlinien für Gäste und externe Benutzer
-          href: ./office-365-security/identity-access-policies-guest-access.md
+          href: ./defender-365-security/identity-access-policies-guest-access.md
         - name: Empfohlene Zugriffsrichtlinien für Teams
-          href: ./office-365-security/teams-access-policies.md
+          href: ./defender-365-security/teams-access-policies.md
         - name: Empfohlene Exchange Online-Zugriffsrichtlinien
-          href: ./office-365-security/secure-email-recommended-policies.md
+          href: ./defender-365-security/secure-email-recommended-policies.md
         - name: Empfohlene SharePoint Online-Zugriffsrichtlinien
-          href: ./office-365-security/sharepoint-file-access-policies.md
+          href: ./defender-365-security/sharepoint-file-access-policies.md
+        - name: Empfohlene MCAS-Richtlinien für SaaS-Apps
+          href: ./defender-365-security/mcas-saas-access-policies.md
     - name: Microsoft 365 Security Center
-      href: mtp/overview-security-center.md
+      href: defender/overview-security-center.md
     - name: Microsoft-Sicherheitsbewertung
       items:
         - name: Sicherheitsbewertung (Übersicht)
-          href: mtp/microsoft-secure-score.md
+          href: defender/microsoft-secure-score.md
         - name: Zugreifen auf Ihren Sicherheitsstatus
-          href: mtp/microsoft-secure-score-improvement-actions.md
+          href: defender/microsoft-secure-score-improvement-actions.md
         - name: Nachverfolgen Ihres Bewertungsverlaufs und Erfüllen von Zielen
-          href: mtp/microsoft-secure-score-history-metrics-trends.md
+          href: defender/microsoft-secure-score-history-metrics-trends.md
         - name: Was in Kürze verfügbar ist
-          href: mtp/microsoft-secure-score-whats-coming.md
+          href: defender/microsoft-secure-score-whats-coming.md
         - name: Neuigkeiten
-          href: mtp/microsoft-secure-score-whats-new.md
+          href: defender/microsoft-secure-score-whats-new.md
     - name: Microsoft 365 Defender
       items:
         - name: Übersicht
           items:
             - name: Was ist Microsoft 365 Defender?
-              href: mtp/microsoft-threat-protection.md
+              href: defender/microsoft-365-defender.md
             - name: Neuerungen in Microsoft 365 Defender
-              href: mtp/whats-new.md
+              href: defender/whats-new.md
             - name: Microsoft Defender für Endpunkt im Microsoft 365 Security Center
-              href: mtp/microsoft-365-security-center-mde.md
+              href: defender/microsoft-365-security-center-mde.md
             - name: Microsoft Defender für Office 365 im Microsoft 365 Security Center
-              href: mtp/microsoft-365-security-center-mdo.md
+              href: defender/microsoft-365-security-center-mdo.md
             - name: Umleiten von Microsoft Defender für Endpunkt in das Microsoft 365 Security Center
-              href: mtp/microsoft-365-security-mde-redirection.md
+              href: defender/microsoft-365-security-mde-redirection.md
             - name: Umleitung von Defender für Office 365 zum Microsoft 365 Security Center
-              href: mtp/microsoft-365-security-mdo-redirection.md
+              href: defender/microsoft-365-security-mdo-redirection.md
             - name: Vorschaufeatures
-              href: mtp/preview.md
+              href: defender/preview.md
             - name: Behandeln von Problemen
-              href: ./mtp/troubleshoot.md
+              href: ./defender/troubleshoot.md
             - name: Branchentests
-              href: ./mtp/top-scoring-industry-tests.md
+              href: ./defender/top-scoring-industry-tests.md
         - name: Plan
           items:
             - name: Voraussetzungen
-              href: mtp/prerequisites.md
+              href: defender/prerequisites.md
             - name: Sicherheit und Datenschutz
-              href: mtp/data-privacy.md
+              href: defender/data-privacy.md
             - name: Microsoft-Sicherheitsportale
-              href: mtp/portals.md
+              href: defender/portals.md
         - name: Auswerten von Funktionen
           items:
             - name: Erstellen eines Testlabors
               items:
                 - name: Übersicht über das Testlabor
-                  href: mtp/mtp-evaluation.md
+                  href: defender/m365d-evaluation.md
                 - name: Vorbereiten
-                  href: mtp/prepare-mtpeval.md
+                  href: defender/prepare-m365d-eval.md
                 - name: Setup
-                  href: mtp/setup-mtpeval.md
+                  href: defender/setup-m365deval.md
                 - name: Konfigurieren der Microsoft 365 Defender-Säulen und Onboarding
-                  href: mtp/config-mtpeval.md
+                  href: defender/config-m365d-eval.md
                 - name: Generieren einer Testwarnung
-                  href: mtp/generate-test-alert.md
+                  href: defender/generate-test-alert.md
             - name: Ausführen des Pilotprojekts in der Produktion
               items:
                 - name: Pilotprojekt – Übersicht
-                  href: mtp/mtp-pilot.md
+                  href: defender/m365d-pilot.md
                 - name: Plan
-                  href: mtp/mtp-pilot-plan.md
+                  href: defender/m365d-pilot-plan.md
                 - name: Vorbereiten
-                  href: mtp/prepare-mtpeval.md
+                  href: defender/prepare-m365d-eval.md
                 - name: Angriff simulieren
-                  href: mtp/mtp-pilot-simulate.md
+                  href: defender/m365d-pilot-simulate.md
                 - name: Schließen und zusammenfassen
-                  href: mtp/mtp-pilot-close.md
+                  href: defender/m365d-pilot-close.md
         - name: Erste Schritte
           items:
             - name: Übersicht
-              href: mtp/get-started.md
+              href: defender/get-started.md
             - name: Aktivieren von Microsoft Threat Protection
-              href: mtp/mtp-enable.md
+              href: defender/m365d-enable.md
             - name: Bereitstellen unterstützter Dienste
-              href: mtp/deploy-supported-services.md
+              href: defender/deploy-supported-services.md
             - name: "Aktivieren von Microsoft\_365 Defender – Häufig gestellte Fragen"
-              href: mtp/mtp-enable-faq.md
+              href: defender/m365d-enable-faq.md
         - name: Schrittanleitungen
           items:
             - name: Erstellen einer Testlabor- oder Pilotumgebung
-              href: mtp/mtp-evaluation.md
+              href: defender/m365d-evaluation.md
             - name: Ausführen eines Pilot-Playbooks
-              href: mtp/mtp-pilot.md
+              href: defender/m365d-pilot.md
             - name: Häufig gestellte Fragen aktivieren
-              href: mtp/mtp-enable-faq.md
+              href: defender/m365d-enable-faq.md
             - name: Bedrohungsanalyse
               items:
                 - name: Bedrohungsanalyse – Übersicht
-                  href: mtp/threat-analytics.md
+                  href: defender/threat-analytics.md
                 - name: Lesen Sie den Bericht der Analysten
-                  href: mtp/threat-analytics-analyst-reports.md
+                  href: defender/threat-analytics-analyst-reports.md
             - name: Vorfälle
               items:
                 - name: Übersicht
-                  href: mtp/incidents-overview.md
+                  href: defender/incidents-overview.md
                 - name: Priorisieren von Vorfällen
-                  href: mtp/incident-queue.md
+                  href: defender/incident-queue.md
                 - name: Untersuchen von Vorfällen
                   items:
                     - name: Untersuchen von Vorfällen
-                      href: mtp/investigate-incidents.md
+                      href: defender/investigate-incidents.md
                     - name: Verwalten von Vorfällen
-                      href: mtp/manage-incidents.md
+                      href: defender/manage-incidents.md
                     - name: Untersuchen von Warnungen
-                      href: mtp/investigate-alerts.md
+                      href: defender/investigate-alerts.md
                     - name: Untersuchen von Benutzern im Microsoft 365 Security Center
-                      href: mtp/investigate-users.md
+                      href: defender/investigate-users.md
                 - name: Abrufen von E-Mail-Benachrichtigungen
-                  href: mtp/get-incident-notifications.md
+                  href: defender/get-incident-notifications.md
             - name: Automatische Untersuchung und Reaktion
               items:
                 - name: Übersicht der automatischen Untersuchung und Reaktion
-                  href: mtp/mtp-autoir.md
+                  href: defender/m365d-autoir.md
                 - name: Konfigurieren der Funktionen der automatischen Untersuchung und Reaktion
-                  href: mtp/mtp-configure-auto-investigation-response.md
+                  href: defender/m365d-configure-auto-investigation-response.md
                 - name: Wartungsaktionen
-                  href: mtp/mtp-remediation-actions.md
+                  href: defender/m365d-remediation-actions.md
                 - name: Aufrufen des Aktionszentrums
-                  href: mtp/mtp-action-center.md
+                  href: defender/m365d-action-center.md
                 - name: Genehmigen oder Ablehnen ausstehender Korrekturaktionen
-                  href: mtp/mtp-autoir-actions.md
+                  href: defender/m365d-autoir-actions.md
                 - name: Anzeigen von Details und Ergebnissen von automatischen Untersuchungen
-                  href: mtp/mtp-autoir-results.md
+                  href: defender/m365d-autoir-results.md
                 - name: Melden falsch-positiver/negativer Ergebnisse
-                  href: mtp/mtp-autoir-report-false-positives-negatives.md
+                  href: defender/m365d-autoir-report-false-positives-negatives.md
             - name: Erweiterte Suche
               items:
                 - name: Übersicht über die erweiterte Suche
-                  href: mtp/advanced-hunting-overview.md
+                  href: defender/advanced-hunting-overview.md
                 - name: 'Lernen, trainieren, & Beispiele abrufen'
                   items:
                     - name: Lernen der Abfragesprache
-                      href: mtp/advanced-hunting-query-language.md
+                      href: defender/advanced-hunting-query-language.md
                     - name: Erhalten Sie ein fachliches Training
-                      href: mtp/advanced-hunting-expert-training.md
+                      href: defender/advanced-hunting-expert-training.md
                     - name: Verwenden freigegebener Abfragen
-                      href: mtp/advanced-hunting-shared-queries.md
+                      href: defender/advanced-hunting-shared-queries.md
                     - name: 'Suche über Geräte, E-Mails, Apps und Identitäten hinweg'
-                      href: mtp/advanced-hunting-query-emails-devices.md
+                      href: defender/advanced-hunting-query-emails-devices.md
                     - name: Suche nach Ransomware
-                      href: mtp/advanced-hunting-find-ransomware.md
+                      href: defender/advanced-hunting-find-ransomware.md
                     - name: Übergang von Defender für Endpunkt
-                      href: mtp/advanced-hunting-migrate-from-mdatp.md
+                      href: defender/advanced-hunting-migrate-from-mde.md
                 - name: Arbeiten mit Abfrageergebnissen
-                  href: mtp/advanced-hunting-query-results.md
+                  href: defender/advanced-hunting-query-results.md
                 - name: Ausführen von Aktionen in Abfrageergebnissen
-                  href: mtp/advanced-hunting-take-action.md
+                  href: defender/advanced-hunting-take-action.md
                 - name: Suche starten
-                  href: mtp/advanced-hunting-go-hunt.md
+                  href: defender/advanced-hunting-go-hunt.md
                 - name: Optimieren & Fehlerbehandlung
                   items:
                     - name: Anwenden bewährter Methoden für Abfragen
-                      href: mtp/advanced-hunting-best-practices.md
+                      href: defender/advanced-hunting-best-practices.md
                     - name: Fehlerbehandlung
-                      href: mtp/advanced-hunting-errors.md
+                      href: defender/advanced-hunting-errors.md
                     - name: Kontingente und Verwendungsparameter
-                      href: mtp/advanced-hunting-limits.md
+                      href: defender/advanced-hunting-limits.md
                 - name: Erweitern der Datenabdeckung
-                  href: mtp/advanced-hunting-extend-data.md
+                  href: defender/advanced-hunting-extend-data.md
                 - name: Datenschema
                   items:
                     - name: Grundlegendes zum Schema
-                      href: mtp/advanced-hunting-schema-tables.md
+                      href: defender/advanced-hunting-schema-tables.md
                     - name: Änderungen der Schemabenennung
-                      href: mtp/advanced-hunting-schema-changes.md
+                      href: defender/advanced-hunting-schema-changes.md
                     - name: AADSignInEventsBeta
-                      href: mtp/advanced-hunting-aadsignineventsbeta-table.md
+                      href: defender/advanced-hunting-aadsignineventsbeta-table.md
                     - name: AADSpnSignInEventsBeta
-                      href: mtp/advanced-hunting-aadspnsignineventsbeta-table.md
+                      href: defender/advanced-hunting-aadspnsignineventsbeta-table.md
                     - name: AlertEvidence
-                      href: mtp/advanced-hunting-alertevidence-table.md
+                      href: defender/advanced-hunting-alertevidence-table.md
                     - name: AlertInfo
-                      href: mtp/advanced-hunting-alertinfo-table.md
+                      href: defender/advanced-hunting-alertinfo-table.md
                     - name: AppFileEvents
-                      href: mtp/advanced-hunting-appfileevents-table.md
+                      href: defender/advanced-hunting-appfileevents-table.md
                     - name: CloudAppEvents
-                      href: mtp/advanced-hunting-cloudappevents-table.md
+                      href: defender/advanced-hunting-cloudappevents-table.md
                     - name: DeviceEvents
-                      href: mtp/advanced-hunting-deviceevents-table.md
+                      href: defender/advanced-hunting-deviceevents-table.md
                     - name: DeviceFileCertificateInfo
-                      href: mtp/advanced-hunting-devicefilecertificateinfo-table.md
+                      href: defender/advanced-hunting-devicefilecertificateinfo-table.md
                     - name: DeviceFileEvents
-                      href: mtp/advanced-hunting-devicefileevents-table.md
+                      href: defender/advanced-hunting-devicefileevents-table.md
                     - name: DeviceImageLoadEvents
-                      href: mtp/advanced-hunting-deviceimageloadevents-table.md
+                      href: defender/advanced-hunting-deviceimageloadevents-table.md
                     - name: DeviceInfo
-                      href: mtp/advanced-hunting-deviceinfo-table.md
+                      href: defender/advanced-hunting-deviceinfo-table.md
                     - name: DeviceLogonEvents
-                      href: mtp/advanced-hunting-devicelogonevents-table.md
+                      href: defender/advanced-hunting-devicelogonevents-table.md
                     - name: DeviceNetworkEvents
-                      href: mtp/advanced-hunting-devicenetworkevents-table.md
+                      href: defender/advanced-hunting-devicenetworkevents-table.md
                     - name: DeviceNetworkInfo
-                      href: mtp/advanced-hunting-devicenetworkinfo-table.md
+                      href: defender/advanced-hunting-devicenetworkinfo-table.md
                     - name: DeviceProcessEvents
-                      href: mtp/advanced-hunting-deviceprocessevents-table.md
+                      href: defender/advanced-hunting-deviceprocessevents-table.md
                     - name: DeviceRegistryEvents
-                      href: mtp/advanced-hunting-deviceregistryevents-table.md
+                      href: defender/advanced-hunting-deviceregistryevents-table.md
                     - name: DeviceTvmSecureConfigurationAssessment
-                      href: mtp/advanced-hunting-devicetvmsecureconfigurationassessment-table.md
+                      href: defender/advanced-hunting-devicetvmsecureconfigurationassessment-table.md
                     - name: DeviceTvmSecureConfigurationAssessmentKB
-                      href: mtp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
+                      href: defender/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
                     - name: DeviceTvmSoftwareInventory
-                      href: mtp/advanced-hunting-devicetvmsoftwareinventory-table.md
+                      href: defender/advanced-hunting-devicetvmsoftwareinventory-table.md
                     - name: DeviceTvmSoftwareVulnerabilities
-                      href: mtp/advanced-hunting-devicetvmsoftwarevulnerabilities-table.md
+                      href: defender/advanced-hunting-devicetvmsoftwarevulnerabilities-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
-                      href: mtp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
+                      href: defender/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
                     - name: EmailAttachmentInfo
-                      href: mtp/advanced-hunting-emailattachmentinfo-table.md
+                      href: defender/advanced-hunting-emailattachmentinfo-table.md
                     - name: EmailEvents
-                      href: mtp/advanced-hunting-emailevents-table.md
+                      href: defender/advanced-hunting-emailevents-table.md
                     - name: EmailPostDeliveryEvents
-                      href: mtp/advanced-hunting-emailpostdeliveryevents-table.md
+                      href: defender/advanced-hunting-emailpostdeliveryevents-table.md
                     - name: EmailUrlInfo
-                      href: mtp/advanced-hunting-emailurlinfo-table.md
+                      href: defender/advanced-hunting-emailurlinfo-table.md
                     - name: IdentityDirectoryEvents
-                      href: mtp/advanced-hunting-identitydirectoryevents-table.md
+                      href: defender/advanced-hunting-identitydirectoryevents-table.md
                     - name: IdentityInfo
-                      href: mtp/advanced-hunting-identityinfo-table.md
+                      href: defender/advanced-hunting-identityinfo-table.md
                     - name: IdentityLogonEvents
-                      href: mtp/advanced-hunting-identitylogonevents-table.md
+                      href: defender/advanced-hunting-identitylogonevents-table.md
                     - name: IdentityQueryEvents
-                      href: mtp/advanced-hunting-identityqueryevents-table.md
+                      href: defender/advanced-hunting-identityqueryevents-table.md
                 - name: Funktionen
                   items:
                     - name: AssignedIPAddresses()
-                      href: mtp/advanced-hunting-assignedipaddresses-function.md
+                      href: defender/advanced-hunting-assignedipaddresses-function.md
                     - name: DeviceFromIP()
-                      href: mtp/advanced-hunting-devicefromip-function.md
+                      href: defender/advanced-hunting-devicefromip-function.md
                     - name: FileProfile()
-                      href: mtp/advanced-hunting-fileprofile-function.md
+                      href: defender/advanced-hunting-fileprofile-function.md
                 - name: Benutzerdefinierte Erkennungen
                   items:
                     - name: Benutzerdefinierte Erkennungen – Übersicht
-                      href: mtp/custom-detections-overview.md
+                      href: defender/custom-detections-overview.md
                     - name: Erstellen und Verwalten von Erkennungsregeln
-                      href: mtp/custom-detection-rules.md
+                      href: defender/custom-detection-rules.md
         - name: Referenz
           items:
             - name: Berechtigungen und Einstellungen
               items:
                 - name: Zugriff verwalten
-                  href: mtp/mtp-permissions.md
+                  href: defender/m365d-permissions.md
                 - name: Benutzerdefinierte Rollen im rollenbasierten Zugriff
-                  href: mtp/custom-roles.md
+                  href: defender/custom-roles.md
                 - name: Festlegen der Zeitzone
-                  href: mtp/mtp-time-zone.md
+                  href: defender/m365d-time-zone.md
                 - name: Anzeigen von Geräteprofilen
-                  href: mtp/device-profile.md
+                  href: defender/device-profile.md
                 - name: Feedback geben
-                  href: mtp/feedback.md
+                  href: defender/feedback.md
                 - name: Zugriff auf Managed Security Service Provider (MSSP) bereitstellen
-                  href: mtp/mssp-access.md
+                  href: defender/mssp-access.md
                 - name: Erstellen von ServiceNow-Tickets und -Aufgaben
                   items:
                     - name: Übersicht über die ServiceNow-Integration
-                      href: ./mtp/tickets.md
+                      href: ./defender/tickets.md
             - name: Microsoft 365 Defender-APIs (Vorschau)
               items:
                 - name: Übersicht über Microsoft 365 Defender-APIs (Vorschau)
-                  href: mtp/api-overview.md
+                  href: defender/api-overview.md
                 - name: Erste Schritte mit Microsoft 365 Defender-APIs (Vorschau)
                   items:
                     - name: Microsoft 365 Defender-API-Lizenz und Nutzungsbedingungen
-                      href: mtp/api-terms.md
+                      href: defender/api-terms.md
                     - name: Zugriff auf Microsoft 365 Defender-APIs
-                      href: mtp/api-access.md
+                      href: defender/api-access.md
                     - name: Beispiel für Hello World
-                      href: mtp/api-hello-world.md
+                      href: defender/api-hello-world.md
                     - name: Zugriff mit Anwendungskontext
-                      href: mtp/api-create-app-web.md
+                      href: defender/api-create-app-web.md
                     - name: Zugriff mit Benutzerkontext
-                      href: mtp/api-create-app-user-context.md
+                      href: defender/api-create-app-user-context.md
                     - name: Zugriff mit Partneranwendungen
-                      href: mtp/api-partner-access.md
+                      href: defender/api-partner-access.md
                     - name: Andere API-Ressourcen
-                      href: mtp/api-articles.md
+                      href: defender/api-articles.md
                 - name: Microsoft 365 Defender-APIs und -Schema (Vorschau)
                   items:
                     - name: Unterstützte Microsoft 365 Defender-APIs
-                      href: mtp/api-supported.md
+                      href: defender/api-supported.md
                     - name: Häufige Rest-API-Fehlercodes
-                      href: mtp/api-error-codes.md
+                      href: defender/api-error-codes.md
                     - name: Erweiterte Suche-API
-                      href: mtp/api-advanced-hunting.md
+                      href: defender/api-advanced-hunting.md
                     - name: Vorfall-APIs
                       items:
                         - name: Vorfall-Methoden und Eigenschaften
-                          href: mtp/api-incident.md
+                          href: defender/api-incident.md
                         - name: Auflisten von Vorfällen
-                          href: mtp/api-list-incidents.md
+                          href: defender/api-list-incidents.md
                         - name: Aktualisieren von Vorfällen
-                          href: mtp/api-update-incidents.md
+                          href: defender/api-update-incidents.md
     - name: Sicherheit in Office 365
-      href: ./office-365-security/index.md
+      href: ./defender-365-security/index.yml
       items:
         - name: Übersicht
           items:
             - name: Sicherheitsroadmap
-              href: ./office-365-security/security-roadmap.md
+              href: ./defender-365-security/security-roadmap.md
             - name: Microsoft Defender für Office 365 im Microsoft 365 Security Center
-              href: mtp/microsoft-365-security-center-mdo.md
+              href: defender/microsoft-365-security-center-mdo.md
             - name: Exchange Online Protection
               items:
                 - name: Exchange Online Protection im Überblick
-                  href: ./office-365-security/exchange-online-protection-overview.md
+                  href: ./defender-365-security/exchange-online-protection-overview.md
                 - name: EOP-Funktionen
-                  href: ./office-365-security/eop-features.md
+                  href: ./defender-365-security/eop-features.md
                 - name: Berechtigungen in EOP als eigenständige Lösung
-                  href: ./office-365-security/feature-permissions-in-eop.md
+                  href: ./defender-365-security/feature-permissions-in-eop.md
                 - name: Exchange Admin Center in EOP als eigenständige Lösung
-                  href: ./office-365-security/exchange-admin-center-in-exchange-online-protection-eop.md
+                  href: ./defender-365-security/exchange-admin-center-in-exchange-online-protection-eop.md
                 - name: Verwalten von Empfängern in EOP als eigenständige Lösung
-                  href: ./office-365-security/manage-recipients-in-eop.md
+                  href: ./defender-365-security/manage-recipients-in-eop.md
                 - name: Nachrichtenfluss in EOP
-                  href: ./office-365-security/mail-flow-in-eop.md
+                  href: ./defender-365-security/mail-flow-in-eop.md
                 - name: Quarantäne
-                  href: ./office-365-security/quarantine-email-messages.md
+                  href: ./defender-365-security/quarantine-email-messages.md
                 - name: Überwachungsberichte in EOP als eigenständige Lösung
-                  href: ./office-365-security/auditing-reports-in-eop.md
+                  href: ./defender-365-security/auditing-reports-in-eop.md
             - name: Defender for Office 365
-              href: ./office-365-security/office-365-atp.md
+              href: ./defender-365-security/defender-for-office-365.md
             - name: Defender für Office 365 bewerten
-              href: ./office-365-security/office-365-evaluation.md
+              href: ./defender-365-security/office-365-evaluation.md
             - name: Neuerungen in Defender für Office 365
-              href: office-365-security/whats-new-in-office-365-atp.md
+              href: ./defender-365-security/whats-new-in-defender-for-office-365.md
             - name: 'Sichere Anlagen für SharePoint, OneDrive und Microsoft Teams'
-              href: ./office-365-security/atp-for-spo-odb-and-teams.md
+              href: ./defender-365-security/turn-on-mdo-for-spo-odb-and-teams.md
             - name: Microsoft 365 Security Center – Übersicht
-              href: ./mtp/overview-security-center.md
+              href: ./defender/overview-security-center.md
             - name: Sicherheitsrisiken-Explorer (und Echtzeit-Erkennung)
-              href: ./office-365-security/threat-explorer.md
+              href: ./defender-365-security/threat-explorer.md
             - name: Die Seite „E-Mail-Entität"
-              href: ./office-365-security/mdo-email-entity-page.md
+              href: ./defender-365-security/mdo-email-entity-page.md
             - name: AIR-Übersicht
-              href: ./office-365-security/office-365-air.md
+              href: ./defender-365-security/office-365-air.md
             - name: Funktionsweise der automatischen Untersuchung und Reaktion
-              href: ./office-365-security/automated-investigation-response-office.md
+              href: ./defender-365-security/automated-investigation-response-office.md
             - name: Wartungsaktionen
-              href: ./office-365-security/air-remediation-actions.md
+              href: ./defender-365-security/air-remediation-actions.md
             - name: Schutz vor Schadsoftware
-              href: ./office-365-security/anti-malware-protection.md
+              href: ./defender-365-security/anti-malware-protection.md
             - name: Antispamschutz
-              href: ./office-365-security/anti-spam-protection.md
+              href: ./defender-365-security/anti-spam-protection.md
             - name: Antiphishingschutz
-              href: ./office-365-security/anti-phishing-protection.md
+              href: ./defender-365-security/anti-phishing-protection.md
             - name: Antispoofingschutz
-              href: ./office-365-security/anti-spoofing-protection.md
+              href: ./defender-365-security/anti-spoofing-protection.md
             - name: Sichere Anlagen in Defender für Office 365
-              href: ./office-365-security/atp-safe-attachments.md
+              href: ./defender-365-security/safe-attachments.md
             - name: Sichere Links in Defender für Office 365
-              href: ./office-365-security/atp-safe-links.md
+              href: ./defender-365-security/safe-links.md
             - name: Ausgehender Spamschutz
-              href: ./office-365-security/outbound-spam-controls.md
+              href: ./defender-365-security/outbound-spam-controls.md
             - name: Übersicht über das Sicherheitsdashboard
-              href: ./office-365-security/security-dashboard.md
+              href: ./defender-365-security/security-dashboard.md
             - name: Wie die Untersuchung von und Reaktion auf Bedrohungen funktioniert
-              href: ./office-365-security/office-365-ti.md
+              href: ./defender-365-security/office-365-ti.md
             - name: Reaktion auf Sicherheitsvorfälle in Office 365
-              href: ./office-365-security/office365-security-incident-response-overview.md
+              href: ./defender-365-security/office365-security-incident-response-overview.md
             - name: Nachrichtenfluss-Einblicke im Security & Compliance Center
-              href: ./office-365-security/mail-flow-insights-v2.md
+              href: ./defender-365-security/mail-flow-insights-v2.md
             - name: 'Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen'
-              href: ./office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
+              href: ./defender-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
         - name: Bereitstellen
           items:
             - name: Exchange Online Protection
               items:
                 - name: Konfigurieren von Anti-Phishing-Richtlinien in EOP
-                  href: ./office-365-security/configure-anti-phishing-policies-eop.md
+                  href: ./defender-365-security/configure-anti-phishing-policies-eop.md
                 - name: Konfigurieren von EOP als eigenständige Lösung zum Weiterleiten von Spamnachrichten in den Junk-E-Mail-Ordner
-                  href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
+                  href: ./defender-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
                 - name: Verwalten von Gruppen in EOP als eigenständige Lösung
-                  href: ./office-365-security/manage-groups-in-eop.md
+                  href: ./defender-365-security/manage-groups-in-eop.md
                 - name: Verwalten von E-Mail-Benutzern in EOP als eigenständige Lösung
-                  href: ./office-365-security/manage-mail-users-in-eop.md
+                  href: ./defender-365-security/manage-mail-users-in-eop.md
                 - name: Einrichten Ihres EOP-Diensts
-                  href: ./office-365-security/set-up-your-eop-service.md
+                  href: ./defender-365-security/set-up-your-eop-service.md
             - name: Schutz vor Bedrohungen
-              href: ./office-365-security/protect-against-threats.md
+              href: ./defender-365-security/protect-against-threats.md
             - name: Integration von Defender in Office 365 mithilfe von Defender für Endpunkt
-              href: ./office-365-security/integrate-office-365-ti-with-wdatp.md
+              href: ./defender-365-security/integrate-office-365-ti-with-mde.md
             - name: Berechtigungen im Security & Compliance Center
-              href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
+              href: ./defender-365-security/permissions-in-the-security-and-compliance-center.md
             - name: SIEM-Serverintegration
-              href: ./office-365-security/siem-server-integration.md
+              href: ./defender-365-security/siem-server-integration.md
             - name: SIEM-Integration mit Defender für Office 365
-              href: ./office-365-security/siem-integration-with-office-365-ti.md
+              href: ./defender-365-security/siem-integration-with-office-365-ti.md
             - name: Standardmäßige Sicherheit
-              href: ./office-365-security/secure-by-default.md
+              href: ./defender-365-security/secure-by-default.md
             - name: Konfigurieren von Antiphishing-Richtlinien in Microsoft Defender für Office 365
-              href: ./office-365-security/configure-atp-anti-phishing-policies.md
+              href: ./defender-365-security/configure-atp-anti-phishing-policies.md
             - name: Konfigurieren von Richtlinien für Antischadsoftware
-              href: ./office-365-security/configure-anti-malware-policies.md
+              href: ./defender-365-security/configure-anti-malware-policies.md
             - name: Konfigurieren von Antispamrichtlinien
-              href: ./office-365-security/configure-your-spam-filter-policies.md
+              href: ./defender-365-security/configure-your-spam-filter-policies.md
             - name: Konfigurieren von Verbindungsfiltern
-              href: ./office-365-security/configure-the-connection-filter-policy.md
+              href: ./defender-365-security/configure-the-connection-filter-policy.md
             - name: Konfigurieren globaler Einstellungen für sichere Links in Defender für Office 365
-              href: ./office-365-security/configure-global-settings-for-safe-links.md
+              href: ./defender-365-security/configure-global-settings-for-safe-links.md
             - name: Konfigurieren der Junk-E-Mail-Einstellungen für Exchange Online-Postfächer
-              href: ./office-365-security/configure-junk-email-settings-on-exo-mailboxes.md
+              href: ./defender-365-security/configure-junk-email-settings-on-exo-mailboxes.md
             - name: Konfigurieren der Filterung für ausgehende Spamnachrichten
-              href: ./office-365-security/configure-the-outbound-spam-policy.md
+              href: ./defender-365-security/configure-the-outbound-spam-policy.md
             - name: Konfigurieren der Spoofintelligenz
-              href: ./office-365-security/learn-about-spoof-intelligence.md
+              href: ./defender-365-security/learn-about-spoof-intelligence.md
             - name: Erstellen von Listen blockierter Absender
-              href: ./office-365-security/Create-block-sender-lists-in-office-365.md
+              href: ./defender-365-security/Create-block-sender-lists-in-office-365.md
             - name: Erstellen von Listen sicherer Absender
-              href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
+              href: ./defender-365-security/Create-safe-sender-lists-in-office-365.md
             - name: E-Mail-Authentifizierung
-              href: ./office-365-security/email-validation-and-authentication.md
+              href: ./defender-365-security/email-validation-and-authentication.md
             - name: Freigeben des Benutzerzugriffs auf das Security Center
-              href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
+              href: ./defender-365-security/grant-access-to-the-security-and-compliance-center.md
             - name: Sichere Dokumente in Defender für Office 365
-              href: ./office-365-security/safe-docs.md
+              href: ./defender-365-security/safe-docs.md
             - name: Einrichten von Richtlinien für sichere Links in Defender für Office 365
-              href: ./office-365-security/set-up-atp-safe-links-policies.md
+              href: ./defender-365-security/set-up-safe-links-policies.md
             - name: Einrichten von Richtlinien für sichere Anlagen in Defender für Office 365
-              href: ./office-365-security/set-up-atp-safe-attachments-policies.md
+              href: ./defender-365-security/set-up-safe-attachments-policies.md
             - name: Einrichten von SPF zum Verhindern von Spoofing
-              href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
+              href: ./defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
             - name: Richtlinien für Benutzerübermittlungen
-              href: ./office-365-security/user-submission.md
+              href: ./defender-365-security/user-submission.md
             - name: Benutzertags in Defender für Office 365
-              href: ./office-365-security/user-tags.md
+              href: ./defender-365-security/user-tags.md
             - name: 'Aktivieren von Sicheren Anlagen für SharePoint, OneDrive und Microsoft Teams'
-              href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
+              href: ./defender-365-security/turn-on-mdo-for-spo-odb-and-teams.md
             - name: Verwenden von DKIM zum Überprüfen ausgehender E-Mails
-              href: ./office-365-security/use-dkim-to-validate-outbound-email.md
+              href: ./defender-365-security/use-dkim-to-validate-outbound-email.md
             - name: Verwenden von DMARC zum Überprüfen von E-Mails
-              href: ./office-365-security/use-dmarc-to-validate-email.md
+              href: ./defender-365-security/use-dmarc-to-validate-email.md
             - name: Hinzufügen von Unterstützung für anonym eingehende E-Mails über IPv6
-              href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
+              href: ./defender-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: Installieren von Application Guard für Office
-              href: ./office-365-security/install-app-guard.md
+              href: ./defender-365-security/install-app-guard.md
             - name: Konfigurieren von Gruppen und Benutzern für eine politische Kampagne in einer Entwicklungs-/Testumgebung
-              href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
+              href: ./defender-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
             - name: Erstellen von Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne
-              href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
+              href: ./defender-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
         - name: Migrieren
           items:
             - name: 'Wechseln zu EOP von Google Postini, Barracuda Spam & Virus Firewall oder Cisco IronPort'
-              href: ./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
+              href: ./defender-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
         - name: Verhindern
           items:
             - name: Konfigurieren Ihres Mandanten für höhere Sicherheit
-              href: ./office-365-security/tenant-wide-setup-for-increased-security.md
+              href: ./defender-365-security/tenant-wide-setup-for-increased-security.md
             - name: Voreingestellte Sicherheitsrichtlinien
-              href: ./office-365-security/preset-security-policies.md
+              href: ./defender-365-security/preset-security-policies.md
             - name: Konfigurationsanalyse für voreingestellte Sicherheitsrichtlinien
-              href: ./office-365-security/configuration-analyzer-for-security-policies.md
+              href: ./defender-365-security/configuration-analyzer-for-security-policies.md
             - name: Angriffssimulator in Defender für Office 365
-              href: ./office-365-security/attack-simulator.md
+              href: ./defender-365-security/attack-simulator.md
             - name: Erste Schritte mit dem Angriffssimulationstraining
-              href: ./office-365-security/attack-simulation-training-get-started.md
+              href: ./defender-365-security/attack-simulation-training-get-started.md
             - name: Simulieren eines Phishing-Angriffs durch Angriffssimulationsschulungen
-              href: ./office-365-security/attack-simulation-training.md
+              href: ./defender-365-security/attack-simulation-training.md
             - name: Erstellen einer benutzerdefinierten Nutzlast für Angriffssimulationsschulungen
-              href: ./office-365-security/attack-simulation-training-payloads.md
+              href: ./defender-365-security/attack-simulation-training-payloads.md
             - name: Gewinnen Sie Erkenntnisse durch Angriffssimulationsschulungen
-              href: ./office-365-security/attack-simulation-training-insights.md
+              href: ./defender-365-security/attack-simulation-training-insights.md
             - name: Überlegungen zur Bereitstellung von Angriffssimulationstraining und FAQ
-              href: ./office-365-security/attack-simulation-training-faq.md
+              href: ./defender-365-security/attack-simulation-training-faq.md
             - name: Empfohlene Einstellungen für das Konfigurieren von EOP und Defender für Office 365 Security
-              href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
+              href: ./defender-365-security/recommended-settings-for-eop-and-office365.md
             - name: Bewährte Methoden für das Konfigurieren von EOP
-              href: ./office-365-security/best-practices-for-configuring-eop.md
+              href: ./defender-365-security/best-practices-for-configuring-eop.md
             - name: Schützen von lokalen Postfächern in China mit EOP als eigenständige Lösung
-              href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
+              href: ./defender-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
             - name: Integration von AIR in eine benutzerdefinierte Lösung oder Lösung von Drittanbietern
-              href: ./office-365-security/air-custom-reporting.md
+              href: ./defender-365-security/air-custom-reporting.md
             - name: Einstellungen für den erweiterten Spamfilter (ASF)
-              href: ./office-365-security/advanced-spam-filtering-asf-options.md
+              href: ./defender-365-security/advanced-spam-filtering-asf-options.md
             - name: Verwalten der Zulassungs-/Sperrliste des Mandanten
-              href: ./office-365-security/tenant-allow-block-list.md
+              href: ./defender-365-security/tenant-allow-block-list.md
             - name: Nachrichtenablaufverfolgung im Security & Compliance Center
-              href: ./office-365-security/message-trace-scc.md
+              href: ./defender-365-security/message-trace-scc.md
             - name: Melden von Nachrichten und Dateien an Microsoft
-              href: ./office-365-security/report-junk-email-messages-to-microsoft.md
+              href: ./defender-365-security/report-junk-email-messages-to-microsoft.md
             - name: Verwenden Regeln für den Nachrichtenfluss zum Blockieren von Nachrichten mit ausführbaren Anlagen in EOP
-              href: ./office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
+              href: ./defender-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
             - name: Verwenden von Regeln zum Filtern von Massen-E-Mails in EOP
-              href: ./office-365-security/use-transport-rules-to-configure-bulk-email-filtering.md
+              href: ./defender-365-security/use-transport-rules-to-configure-bulk-email-filtering.md
             - name: Verwenden von Nachrichtenflussregeln zum Festlegen der SCL-Bewertung (Spam Confidence Level) in Nachrichten
-              href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
+              href: ./defender-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
             - name: Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware
-              href: ./office-365-security/zero-hour-auto-purge.md
+              href: ./defender-365-security/zero-hour-auto-purge.md
         - name: Erkennen
           items:
             - name: Verwendung von Bedrohungs-Trackern
-              href: ./office-365-security/threat-trackers.md
+              href: ./defender-365-security/threat-trackers.md
             - name: Warnungen anzeigen
               href: ../compliance/alert-policies.md
             - name: Intelligente Berichte und Einblicke im Security & Compliance Center
-              href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
+              href: ./defender-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Aktivieren des Add-Ins „Nachrichten melden“
-              href: ./office-365-security/enable-the-report-message-add-in.md
+              href: ./defender-365-security/enable-the-report-message-add-in.md
             - name: Aktivieren des Add-Ins „Phishing melden“
-              href: ./office-365-security/enable-the-report-phish-add-in.md
+              href: ./defender-365-security/enable-the-report-phish-add-in.md
             - name: Installieren und Verwenden des Add-Ins „Melden von Junk-E-Mails“
-              href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
+              href: ./defender-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
             - name: Regeln für den Nachrichtenfluss (Transportregeln) in EOP als eigenständige Lösung
-              href: ./office-365-security/mail-flow-rules-transport-rules-0.md
+              href: ./defender-365-security/mail-flow-rules-transport-rules-0.md
             - name: Melden von Junk-E-Mails und Phishing in Outlook im Web
-              href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
+              href: ./defender-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
             - name: Melden von Junk-E-Mails und Phishing in Outlook für iOS und Android
-              href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
+              href: ./defender-365-security/report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
             - name: Ausführen eines Administrator-Rollengruppenberichts in EOP als eigenständige Lösung
-              href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
+              href: ./defender-365-security/run-an-administrator-role-group-report-in-eop-eop.md
         - name: Untersuchen
           items:
             - name: Ansichten des Sicherheitsrisiken-Explorers
-              href: ./office-365-security/threat-explorer-views.md
+              href: ./defender-365-security/threat-explorer-views.md
             - name: Kampagnenansichten
-              href: ./office-365-security/campaigns.md
+              href: ./defender-365-security/campaigns.md
             - name: Untersuchen bösartiger E-Mails
-              href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
+              href: ./defender-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Anzeigen von Defender for Office 365-Berichten im Security & Compliance Center
-              href: ./office-365-security/view-reports-for-atp.md
+              href: ./defender-365-security/view-reports-for-mdo.md
             - name: Anzeigen von Details und Ergebnissen einer automatischen Untersuchung
-              href: ./office-365-security/air-view-investigation-results.md
+              href: ./defender-365-security/air-view-investigation-results.md
             - name: Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
-              href: ./office-365-security/view-email-security-reports.md
+              href: ./defender-365-security/view-email-security-reports.md
             - name: Nachrichtenfluss-Einblicke im Security & Compliance Center
-              href: ./office-365-security/view-mail-flow-reports.md
+              href: ./defender-365-security/view-mail-flow-reports.md
             - name: Anzeigen des Administratorüberwachungsprotokolls in EOP als eigenständige Lösung
-              href: ./office-365-security/view-the-admin-audit-log-eop.md
+              href: ./defender-365-security/view-the-admin-audit-log-eop.md
             - name: Berichterstellung und Nachrichtenablaufverfolgung in EOP als eigenständige Lösung
-              href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
+              href: ./defender-365-security/reporting-and-message-trace-in-exchange-online-protection.md
             - name: Einblick in automatisch weitergeleitete Nachrichten
-              href: ./office-365-security/mfi-auto-forwarded-messages-report.md
+              href: ./defender-365-security/mfi-auto-forwarded-messages-report.md
             - name: Zuordnung der Nachrichtenübermittlung
-              href: ./office-365-security/mfi-mail-flow-map-report.md
+              href: ./defender-365-security/mfi-mail-flow-map-report.md
             - name: Manuelles Übermitteln von Nachrichten an Microsoft
-              href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
+              href: ./defender-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
             - name: 'Einblick in E-Mails von neue Domänen, die weitergeleitet werden'
-              href: ./office-365-security/mfi-new-domains-being-forwarded-email.md
+              href: ./defender-365-security/mfi-new-domains-being-forwarded-email.md
             - name: Einblick in E-Mail-Weiterleitung von neuen Benutzern
-              href: ./office-365-security/mfi-new-users-forwarding-email.md
+              href: ./defender-365-security/mfi-new-users-forwarding-email.md
             - name: Bericht zu nicht akzeptierten Domänen
-              href: ./office-365-security/mfi-non-accepted-domain-report.md
+              href: ./defender-365-security/mfi-non-accepted-domain-report.md
             - name: Unzustellbarkeitsbericht
-              href: ./office-365-security/mfi-non-delivery-report.md
+              href: ./defender-365-security/mfi-non-delivery-report.md
             - name: Einblick in den Fluss eingehender und ausgehender E-Mails
-              href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
+              href: ./defender-365-security/mfi-outbound-and-inbound-mail-flow.md
             - name: Einblick und Berichte zu SMTP-AUTH-Clients
-              href: ./office-365-security/mfi-smtp-auth-clients-report.md
+              href: ./defender-365-security/mfi-smtp-auth-clients-report.md
             - name: Übermitteln von Schadsoftware und Nicht-Schadsoftware an Microsoft
-              href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+              href: ./defender-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
             - name: Einblick in den Top-Domänen-Nachrichtenflussstatus
-              href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
+              href: ./defender-365-security/mfi-domain-mail-flow-status-insight.md
             - name: Verwenden der Übermittlung durch den Administrator
-              href: ./office-365-security/admin-submission.md
+              href: ./defender-365-security/admin-submission.md
             - name: 'Verwenden von Nachrichtenflussregeln, um anzuzeigen, was Ihre Benutzer an Microsoft melden'
-              href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
+              href: ./defender-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
             - name: Einblick in die Warteschlange
-              href: ./office-365-security/mfi-queue-alerts-and-queues.md
+              href: ./defender-365-security/mfi-queue-alerts-and-queues.md
             - name: 'Exemplarische Vorgehensweise: Erkenntnisse der Spoofintelligenz'
-              href: ./office-365-security/walkthrough-spoof-intelligence-insight.md
+              href: ./defender-365-security/walkthrough-spoof-intelligence-insight.md
         - name: Reagieren
           items:
             - name: Schnelles Erkennen und Vorgehen gegen kompromittierte Benutzerkonten
-              href: ./office-365-security/address-compromised-users-quickly.md
+              href: ./defender-365-security/address-compromised-users-quickly.md
             - name: Erkennen und Korrigieren von unerlaubter Zustimmung in Office 365
-              href: ./office-365-security/detect-and-remediate-illicit-consent-grants.md
+              href: ./defender-365-security/detect-and-remediate-illicit-consent-grants.md
             - name: Erkennen und Korrigieren von Outlook-Regeln und benutzerdefinierten Formularen für Einschleusungsangriffe in Office 365
-              href: ./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md
+              href: ./defender-365-security/detect-and-remediate-outlook-rules-forms-attack.md
             - name: Handhaben falsch-positiver/negativer Ergebnisse
-              href: ./office-365-security/air-report-false-positives-negatives.md
+              href: ./defender-365-security/air-report-false-positives-negatives.md
             - name: Wiederherstellen nach einem Ransomware-Angriff
-              href: ./office-365-security/recover-from-ransomware.md
+              href: ./defender-365-security/recover-from-ransomware.md
             - name: Beseitigen bösartiger E-Mails
-              href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
+              href: ./defender-365-security/remediate-malicious-email-delivered-office-365.md
             - name: Reagieren auf ein angegriffenes E-Mail-Konto in Office 365
-              href: ./office-365-security/responding-to-a-compromised-email-account.md
+              href: ./defender-365-security/responding-to-a-compromised-email-account.md
             - name: Überprüfen und Genehmigen (oder Ablehnen) ausstehender Aktionen
-              href: ./office-365-security/air-review-approve-pending-completed-actions.md
+              href: ./defender-365-security/air-review-approve-pending-completed-actions.md
             - name: Optimieren des Schutzes gegen Phishing
-              href: ./office-365-security/tuning-anti-phishing.md
+              href: ./defender-365-security/tuning-anti-phishing.md
             - name: Suchen und Freigeben von Nachrichten in Quarantäne als Benutzer
-              href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
+              href: ./defender-365-security/find-and-release-quarantined-messages-as-a-user.md
             - name: Beheben eines möglichen Einblicks in den E-Mail-Loop
-              href: ./office-365-security/mfi-mail-loop-insight.md
+              href: ./defender-365-security/mfi-mail-loop-insight.md
             - name: Beheben des Einblicks in langsame Nachrichtenflussregeln
-              href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+              href: ./defender-365-security/mfi-slow-mail-flow-rules-insight.md
             - name: Verwalten von Nachrichten und Dateien in Quarantäne als Administrator
-              href: ./office-365-security/manage-quarantined-messages-and-files.md
+              href: ./defender-365-security/manage-quarantined-messages-and-files.md
             - name: Entfernen von blockierten Benutzern aus dem Portal „Eingeschränkte Benutzer“
-              href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
+              href: ./defender-365-security/removing-user-from-restricted-users-portal-after-spam.md
             - name: 'Verwenden des Listenentfernungsportals, um sich selbst aus der Liste der blockierten Absender zu entfernen'
-              href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
+              href: ./defender-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
         - name: Häufig gestellte Fragen
           items:
             - name: Häufig gestellte Fragen zur delegierten Verwaltung
-              href: ./office-365-security/delegated-administration-faq.md
+              href: ./defender-365-security/delegated-administration-faq.md
             - name: EOP – Allgemeine häufig gestellte Fragen
-              href: ./office-365-security/eop-general-faq.md
+              href: ./defender-365-security/eop-general-faq.md
             - name: 'Häufig gestellte Fragen zu durch EOP in Warteschlangen eingereihten, verzögerten oder nicht zugestellten Nachrichten'
-              href: ./office-365-security/eop-queued-deferred-and-bounced-messages-faq.md
+              href: ./defender-365-security/eop-queued-deferred-and-bounced-messages-faq.md
             - name: Häufig gestellte Fragen zum Schutz vor Schadsoftware
-              href: ./office-365-security/anti-malware-protection-faq-eop.md
+              href: ./defender-365-security/anti-malware-protection-faq-eop.md
             - name: Häufig gestellte Fragen zum Antispamschutz
-              href: ./office-365-security/anti-spam-protection-faq.md
+              href: ./defender-365-security/anti-spam-protection-faq.md
             - name: Häufig gestellte Fragen zum Antispoofingschutz
-              href: ./office-365-security/anti-spoofing-protection-faq.md
+              href: ./defender-365-security/anti-spoofing-protection-faq.md
             - name: Häufig gestellte Fragen zur Quarantäne
-              href: ./office-365-security/quarantine-faq.md
+              href: ./defender-365-security/quarantine-faq.md
         - name: Referenz
           items:
             - name: Verstehen der neuesten Angriffe mithilfe von Bedrohungsanalyse
-              href: ./mtp/latest-attack-campaigns.md
+              href: ./defender/latest-attack-campaigns.md
             - name: Hilfe und Support für EOP
-              href: ./office-365-security/help-and-support-for-eop.md
+              href: ./defender-365-security/help-and-support-for-eop.md
             - name: An Microsoft 365 gesendete E-Mail zur Problembehandlung
-              href: ./office-365-security/troubleshooting-mail-sent-to-office-365.md
+              href: ./defender-365-security/troubleshooting-mail-sent-to-office-365.md
             - name: Verwenden des SPF durch Microsoft 365 zum Verhindern von Spoofing
-              href: ./office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md
+              href: ./defender-365-security/how-office-365-uses-spf-to-prevent-spoofing.md
             - name: 'Wie Office 365 die Absenderadresse überprüft, um Phishing zu verhindern'
-              href: ./office-365-security/how-office-365-validates-the-from-address.md
+              href: ./defender-365-security/how-office-365-validates-the-from-address.md
             - name: Kombination von Richtlinien und Schutzmaßnahmen
-              href: ./office-365-security/how-policies-and-protections-are-combined.md
+              href: ./defender-365-security/how-policies-and-protections-are-combined.md
             - name: Antispam-Nachrichtenkopfzeilen
-              href: ./office-365-security/anti-spam-message-headers.md
+              href: ./defender-365-security/anti-spam-message-headers.md
             - name: Antiphishing-Richtlinien
-              href: ./office-365-security/set-up-anti-phishing-policies.md
+              href: ./defender-365-security/set-up-anti-phishing-policies.md
             - name: Rückläufer in EOP
-              href: ./office-365-security/backscatter-messages-and-eop.md
+              href: ./defender-365-security/backscatter-messages-and-eop.md
             - name: BCL-Werte (Bulk Complaint Level)
-              href: ./office-365-security/bulk-complaint-level-values.md
+              href: ./defender-365-security/bulk-complaint-level-values.md
             - name: Spambenachrichtigungen für Endbenutzer
-              href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
+              href: ./defender-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
             - name: Pools für die Zustellung ausgehender Nachrichten
-              href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
+              href: ./defender-365-security/high-risk-delivery-pool-for-outbound-messages.md
             - name: Intelligenter Nachrichtenfluss in EOP
-              href: ./office-365-security/mail-flow-intelligence-in-office-365.md
+              href: ./defender-365-security/mail-flow-intelligence-in-office-365.md
             - name: 'Referenz: Richtlinien, Methoden und Anleitungen'
-              href: ./office-365-security/reference-policies-practices-and-guidelines.md
+              href: ./defender-365-security/reference-policies-practices-and-guidelines.md
             - name: Sicherheitstipps in E-Mail-Nachrichten
-              href: ./office-365-security/safety-tips-in-office-365.md
+              href: ./defender-365-security/safety-tips-in-office-365.md
             - name: Beispielskript für das Anwenden von EOP-Einstellungen für mehrere Mandanten
-              href: ./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md
+              href: ./defender-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md
             - name: Senden von E-Mails an Office 365
-              href: ./office-365-security/sending-mail-to-office-365.md
+              href: ./defender-365-security/sending-mail-to-office-365.md
             - name: Dienste für Nicht-Kunden
-              href: ./office-365-security/services-for-non-customers.md
+              href: ./defender-365-security/services-for-non-customers.md
             - name: 'SCL-Bewertung (Spam Confidence Level, SCL)'
-              href: ./office-365-security/spam-confidence-levels.md
+              href: ./defender-365-security/spam-confidence-levels.md
             - name: Unterstützung für die Validierung von mit DKIM signierten Nachrichten
-              href: ./office-365-security/support-for-validation-of-dkim-signed-messages.md
+              href: ./defender-365-security/support-for-validation-of-dkim-signed-messages.md
             - name: Virenerkennung in SharePoint Online
-              href: ./office-365-security/virus-detection-in-spo.md
+              href: ./defender-365-security/virus-detection-in-spo.md
             - name: Worin besteht der Unterschied zwischen Junk- und Massen-E-Mails?
-              href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
+              href: ./defender-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
             - name: S/MIME
-              href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
+              href: ./defender-365-security/s-mime-for-message-signing-and-encryption.md
               items:
                 - name: S/MIME für die Nachrichtensignierung und -verschlüsselung
-                  href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
+                  href: ./defender-365-security/s-mime-for-message-signing-and-encryption.md
                 - name: Konfigurieren von S/MIME-Einstellungen für Outlook im Web
-                  href: ./office-365-security/configure-s-mime-settings-for-outlook-web-app.md
+                  href: ./defender-365-security/configure-s-mime-settings-for-outlook-web-app.md
                 - name: Senden und Empfangen S/MIME-signierter und -verschlüsselter E-Mails
-                  href: ./office-365-security/send-and-receive-s-mime-signed-and-encrypted-email.md
+                  href: ./defender-365-security/send-and-receive-s-mime-signed-and-encrypted-email.md
                 - name: Synchronisierung von Benutzerzertifikaten nach Microsoft 365 für S/MIME
-                  href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
+                  href: ./defender-365-security/sync-user-certificates-to-office-365-for-s-mime.md
                 - name: Einrichten einer virtuellen Zertifikatauflistung für die Überprüfung von S/MIME
-                  href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
+                  href: ./defender-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
                 - name: Konfigurieren von Gruppen und Benutzern für eine politische Kampagne in einer Entwicklungs-/Testumgebung
-                  href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
+                  href: ./defender-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
                 - name: Erstellen von Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne
-                  href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
+                  href: ./defender-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
                 - name: Verschieben von Domänen und Einstellungen zwischen EOP-Organisationen
-                  href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
+                  href: ./defender-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
                 - name: Verwalten von Rollengruppen in EOP als eigenständige Lösung
-                  href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
+                  href: ./defender-365-security/manage-admin-role-group-permissions-in-eop.md
     - name: Microsoft 365 Enterprise
       href: ../enterprise/index.yml
     - name: Microsoft 365 für Unternehmen
