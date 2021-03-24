@@ -20,12 +20,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie, wie Sie Ihre Domäne bestätigen und DNS-Einträge mit Microsoft 365 erstellen.
 ms.custom:
 - AdminSurgePortfolio
-ms.openlocfilehash: 506ee887edbc59956aee11059a7085bc4b22624e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 95b1caadfe0e5b331b2bd777263bd86a88bb581f
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914594"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050654"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Verbinden Ihrer Domäne zu Microsoft 365
 
@@ -76,6 +76,6 @@ Speichern Sie den Eintrag.
 
 SPF ist dafür vorgesehen, Spoofing möglichst zu verhindern, es gibt aber Spoofing-Techniken, vor denen SPF nicht schützen kann. Zum Schutz vor diesen Techniken sollten Sie, nachdem Sie SPF eingerichtet haben, auch DKIM und DMARC für Microsoft 365 einrichten.
 
-Um hiermit zu beginnen, lesen Sie [Verwenden von DKIM zur Überprüfung von ausgehenden E-Mails, die von Ihrer Domäne in Microsoft 365 gesendet wurden](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) und [Verwenden von DMARC zum Überprüfen von E-Mail in Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
+Um hiermit zu beginnen, lesen Sie [Verwenden von DKIM zur Überprüfung von ausgehenden E-Mails, die von Ihrer Domäne in Microsoft 365 gesendet wurden](../../security/defender-365-security/use-dkim-to-validate-outbound-email.md) und [Verwenden von DMARC zum Überprüfen von E-Mail in Microsoft 365](../../security/defender-365-security/use-dmarc-to-validate-email.md).
 
 Wechseln Sie schlussendlich zurück zum Assistenten für die Domäneneinrichtung im Admin Center, um Ihre Einrichtung abzuschließen.

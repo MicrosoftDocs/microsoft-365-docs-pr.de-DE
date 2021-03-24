@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Erfahren Sie, wie Microsoft Defender Antivirus Ihre Windows-Geräte vor Softwarebedrohungen wie Viren, Schadsoftware und Spyware schützt.
-ms.openlocfilehash: ce88e4f7b1caf3a98ebd6dc56d66f0d0fc99a9ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5fe55817018eeae49e6e41c95d93006b6f05ece0
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912430"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052218"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Von Microsoft Defender Antivirus entdeckte Bedrohungen
 
@@ -89,4 +89,4 @@ Weitere Informationen zu verschiedenen Bedrohungen finden Sie auf der <a href="h
 [Aktivieren und Verwenden von Microsoft Defender Antivirus über die Windows Security-App](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) (Artikel)\
 [Aktivieren von Microsoft Defender Antivirus mithilfe von Gruppenrichtlinien](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (Artikel)\
 [Aktualisieren Der Antivirendefinitionen](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (Artikel)\
-[So übermitteln Sie Schadsoftware und Nicht-Schadsoftware zur Analyse](../security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md) an Microsoft (Artikel)
+[So übermitteln Sie Schadsoftware und Nicht-Schadsoftware zur Analyse](/microsoft-365/security/defender-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) an Microsoft (Artikel)

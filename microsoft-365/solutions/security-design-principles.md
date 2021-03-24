@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b6696d15d728e6b66be5e54a9a3c372564c9f187
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7cd9098766024093a0b9fa2d6e95131bf13d09df
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920856"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052482"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>Sicherheitshürden, die Sie überwinden können – Ansicht eines Architekten
 
@@ -49,7 +49,7 @@ Kunden, die diese Hindernisse überwinden, verfügen über gute Partnerschaften 
 
 Übernehmen Sie als Nächstes einen Zero Trust-Architekturansatz. Dies beginnt mit dem Erstellen eines modernen, identitätsbasierten Sicherheitsperimeters. Entwerfen Sie die Sicherheitsarchitektur, bei der jeder Zugriffsversuch, ob on-prem oder cloud, als nicht vertrauenswürdig behandelt wird, bis er überprüft wurde – "niemals vertrauen, immer überprüfen". Dieser Entwurfsansatz erhöht nicht nur die Sicherheit und Produktivität, sondern ermöglicht es Benutzern auch, von überall aus mit jedem Gerätetyp zu arbeiten. Die ausgeklügelten Cloudsteuerelemente in Microsoft 365 helfen Ihnen, die Identitäten von Benutzern zu schützen und gleichzeitig den Zugriff auf wertvolle Ressourcen basierend auf der Risikostufe des Benutzers zu steuern.
 
-Eine empfohlene Konfiguration finden Sie unter [Identitäts- und Gerätezugriffskonfigurationen](../security/office-365-security/microsoft-365-policies-configurations.md).
+Eine empfohlene Konfiguration finden Sie unter [Identitäts- und Gerätezugriffskonfigurationen](../security/defender-365-security/microsoft-365-policies-configurations.md).
 
 ## <a name="transition-security-controls-to-the-cloud"></a>Übergang von Sicherheitssteuerelementen in die Cloud
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Schützen Sie Ihre Geschäftlichen E-Mails und Daten vor Cyberbedrohungen, einschließlich Ransomware, Phishing und schädlichen Anlagen. '
-ms.openlocfilehash: 5607d301ceda44fd582055d49daa9082ee321cb9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7affa7a2adaa166861c2932ebe32177335236114
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914486"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050678"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Die 10 besten Methoden zum Sichern von Microsoft 365 For Business-Plänen
 
@@ -55,7 +55,7 @@ Microsoft empfiehlt, die in der folgenden Tabelle aufgeführten Aufgaben auszuf�
 |9 |[Schützen vor schädlichen Anlagen und Dateien mit sicheren Anlagen](secure-your-business-data.md#atp)||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10  |[Schützen vor Phishingangriffen mit sicheren Links](secure-your-business-data.md#phishingatp)||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-Bevor Sie beginnen, überprüfen Sie [Ihre Microsoft 365 Secure Score](../../security/mtp/microsoft-secure-score.md) im Microsoft 365 Security Center. Über ein zentrales Dashboard können Sie die Sicherheit für Ihre Microsoft 365-Identitäten, Daten, Apps, Geräte und Infrastruktur überwachen und verbessern. Sie erhalten Punkte zum Konfigurieren empfohlener Sicherheitsfeatures, zum Ausführen sicherheitsbezogener Aufgaben (z. B. zum Anzeigen von Berichten) oder zum Adressieren von Empfehlungen mit einer Drittanbieteranwendung oder -software. Mit zusätzlichen Einblicken und mehr Einblick in eine breitere Palette von Microsoft-Produkten und -Diensten können Sie sich sicher fühlen, über den Sicherheitszustand Ihrer Organisation zu berichten.
+Bevor Sie beginnen, überprüfen Sie [Ihre Microsoft 365 Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) im Microsoft 365 Security Center. Über ein zentrales Dashboard können Sie die Sicherheit für Ihre Microsoft 365-Identitäten, Daten, Apps, Geräte und Infrastruktur überwachen und verbessern. Sie erhalten Punkte zum Konfigurieren empfohlener Sicherheitsfeatures, zum Ausführen sicherheitsbezogener Aufgaben (z. B. zum Anzeigen von Berichten) oder zum Adressieren von Empfehlungen mit einer Drittanbieteranwendung oder -software. Mit zusätzlichen Einblicken und mehr Einblick in eine breitere Palette von Microsoft-Produkten und -Diensten können Sie sich sicher fühlen, über den Sicherheitszustand Ihrer Organisation zu berichten.
 
 ![Screenshot der Microsoft Secure Score](../../media/secure-score.png)
 
@@ -132,7 +132,7 @@ Ihre Microsoft 365-Umgebung umfasst Schutz vor Schadsoftware. Sie können diesen
 
 6. Wählen Sie **Speichern aus.**
 
-Weitere Informationen finden Sie unter [Schutz vor Schadsoftware in EOP](../../security/office-365-security/anti-malware-protection.md).
+Weitere Informationen finden Sie unter [Schutz vor Schadsoftware in EOP](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-malware-protection).
 
 ## <a name="5-protect-against-ransomware"></a>5: Schutz vor Ransomware
 <a name="ransomware"> </a>
@@ -157,7 +157,7 @@ Um eine E-Mail-Transportregel zu erstellen, zeigen Sie ein [kurzes](https://supp
 
 5. Wenden Sie die Einstellungen in der folgenden Tabelle für jede Regel an. Lassen Sie die restlichen Einstellungen bei der Standardeinstellung, es sei denn, Sie möchten diese ändern.
 
-6. Wählen Sie **Speichern** aus.
+6. Klicken Sie auf **Speichern**.
     
 | Setting | Warnen von Benutzern vor dem Öffnen von Anlagen von Office-Dateien | Blockieren von Dateitypen, die Ransomware oder anderen schädlichen Code enthalten könnten |
 |:-----|:-----|:-----|
@@ -193,7 +193,7 @@ So erstellen Sie eine E-Mail-Transportregel:
 
 5. Wenden Sie die Einstellungen in der folgenden Tabelle an. Lassen Sie die restlichen Einstellungen bei der Standardeinstellung, es sei denn, Sie möchten diese ändern.
 
-6. Wählen Sie **Speichern** aus.
+6. Klicken Sie auf **Speichern**.
 
 |Setting|Ablehnen der automatischen Weiterleitung von E-Mails an externe Domänen|
 |---|---|
@@ -254,7 +254,7 @@ Um eine Antiphishingrichtlinie in Defender for Office 365 zu erstellen, zeigen S
 
 4. Wählen Sie auf der Seite Antiphishing die Option **+ Erstellen aus.** Ein Assistent startet Sie durch die Definition Ihrer Antiphishingrichtlinie.
 
-5. Geben Sie den Namen, die Beschreibung und die Einstellungen für Ihre Richtlinie wie im folgenden Diagramm empfohlen an. Weitere Informationen finden Sie unter Informationen zur [Antiphishingrichtlinie in Microsoft Defender für Office 365-Optionen.](../../security/office-365-security/set-up-anti-phishing-policies.md)
+5. Geben Sie den Namen, die Beschreibung und die Einstellungen für Ihre Richtlinie wie im folgenden Diagramm empfohlen an. Weitere Informationen finden Sie unter Informationen zur [Antiphishingrichtlinie in Microsoft Defender für Office 365-Optionen.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/set-up-anti-phishing-policies)
 
 6. Nachdem Sie Ihre Einstellungen überprüft haben, wählen Sie Diese Richtlinie **erstellen** oder **Speichern** aus, wenn dies der Richtige ist.
 
@@ -270,7 +270,7 @@ Um eine Antiphishingrichtlinie in Defender for Office 365 zu erstellen, zeigen S
 |Angewendet auf|Wählen Sie **Die Domäne des Empfängers ist** aus. Wählen Sie unter **Einer dieser**, **Auswählen** aus. Wählen Sie **+ Hinzufügen** aus. Aktivieren Sie das Kontrollkästchen neben dem Namen der Domäne, z. B. contoso.com in der Liste, und wählen Sie dann **Hinzufügen aus.** Wählen Sie **Fertig** aus.|
 |
 
-Weitere Informationen finden Sie unter [Einrichten von Antiphishingrichtlinien in Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
+Weitere Informationen finden Sie unter [Einrichten von Antiphishingrichtlinien in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies).
 
 ## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: Schutz vor schädlichen Anlagen und Dateien mit sicheren Anlagen
 <a name="atp"> </a>
@@ -302,7 +302,7 @@ Um eine Richtlinie für sichere Anlagen zu erstellen, zeigen Sie ein [kurzes](ht
 |Angewendet auf|Die Empfängerdomäne ist . . . Wählen Sie Ihre Domäne aus.|
 |
 
-Weitere Informationen finden Sie unter [Einrichten von Antiphishingrichtlinien in Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
+Weitere Informationen finden Sie unter [Einrichten von Antiphishingrichtlinien in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies).
 
 ## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: Schutz vor Phishingangriffen mit sicheren Links
 <a name="phishingatp"> </a>
@@ -331,7 +331,7 @@ So ändern Sie die Standardrichtlinie:
 
 3. Wählen **Sie** unter Einstellungen, die für Inhalte außer E-Mail gelten, **Office 365-Anwendungen** **aus,** Verfolgen Sie nicht, wenn Benutzer auf sichere Links klicken, und Lassen Sie benutzer nicht durch sichere Links zur ursprünglichen **URL klicken.**
 
-4. Wählen Sie **Speichern** aus.
+4. Klicken Sie auf **Speichern**.
 
 So erstellen Sie eine neue Richtlinie für alle Empfänger in Ihrer Domäne:
 
@@ -339,7 +339,7 @@ So erstellen Sie eine neue Richtlinie für alle Empfänger in Ihrer Domäne:
 
 2. Wenden Sie die in der folgenden Tabelle aufgeführten Einstellungen an.
 
-3. Wählen Sie **Speichern** aus.
+3. Klicken Sie auf **Speichern**.
 
 |Einstellung oder Option|Empfohlene Einstellung|
 |---|---|
@@ -349,4 +349,4 @@ So erstellen Sie eine neue Richtlinie für alle Empfänger in Ihrer Domäne:
 |Angewendet auf|Die Empfängerdomäne ist . . . Wählen Sie Ihre Domäne aus.|
 |
 
-Weitere Informationen finden Sie unter [Sichere Links in Microsoft Defender für Office 365](../../security/office-365-security/atp-safe-links.md).
+Weitere Informationen finden Sie unter [Sichere Links in Microsoft Defender für Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/atp-safe-links).

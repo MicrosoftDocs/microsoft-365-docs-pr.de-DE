@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Hilfe zum Erhöhen des Schutzniveaus in Microsoft 365 erhalten
-ms.openlocfilehash: aff5491bd8319be2daf9c9c4ed0fc6e49b27ee27
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0e8b63fec3b764f10039e9f738fd047ff2c513a4
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912210"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052206"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>Erhöhen des Bedrohungsschutzes für Microsoft 365-Abonnements
 
@@ -36,7 +36,7 @@ Dieser Artikel hilft Ihnen, den Schutz in Ihrem Microsoft 365-Abonnement zu erh�
 
 Bevor Sie beginnen, überprüfen Sie Ihre Microsoft Secure Score. Microsoft Secure Score analysiert die Sicherheit Ihrer Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen und weist eine Bewertung zu. Notieren Sie sich zunächst Ihre aktuelle Bewertung. Wenn Sie die in diesem Artikel empfohlenen Aktionen ausführen, wird Ihre Bewertung erhöht. Das Ziel ist nicht, die maximale Punktzahl zu erreichen, sondern die Möglichkeiten zum Schutz Ihrer Umgebung zu kennen, die sich nicht negativ auf die Produktivität ihrer Benutzer auswirken.
 
-Weitere Informationen finden Sie unter [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md).
+Weitere Informationen finden Sie unter [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Erhöhen des Schutzniveaus vor Schadsoftware in E-Mails
 
@@ -58,7 +58,7 @@ Ihre Office 365- oder Microsoft 365-Umgebung umfasst Schutz vor Schadsoftware. S
 
 6. Klicken Sie auf **Speichern**.
 
-Weitere Informationen finden Sie unter [Schutz vor Schadsoftware in EOP](../security/office-365-security/anti-malware-protection.md).
+Weitere Informationen finden Sie unter [Schutz vor Schadsoftware in EOP](../security/defender-365-security/anti-malware-protection.md).
 
 ## <a name="protect-against-ransomware"></a>Schutz vor Ransomware
 
@@ -138,7 +138,7 @@ Um eine Antiphishingrichtlinie in Defender for Office 365 zu erstellen, sehen Si
 
 4. Wählen Sie **auf der Seite Antiphishing** die Option **+ Erstellen aus.** Ein Assistent startet Sie durch die Definition Ihrer Antiphishingrichtlinie.
 
-5. Geben Sie den Namen, die Beschreibung und die Einstellungen für Ihre Richtlinie wie im folgenden Diagramm empfohlen an. Weitere Informationen finden Sie [unter Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../security/office-365-security/set-up-anti-phishing-policies.md).
+5. Geben Sie den Namen, die Beschreibung und die Einstellungen für Ihre Richtlinie wie im folgenden Diagramm empfohlen an. Weitere Informationen finden Sie [unter Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../security/defender-365-security/set-up-anti-phishing-policies.md).
 
 6. Nachdem Sie Ihre Einstellungen überprüft haben, wählen Sie Diese Richtlinie **erstellen** oder **Speichern** aus.
 
@@ -153,7 +153,7 @@ Um eine Antiphishingrichtlinie in Defender for Office 365 zu erstellen, sehen Si
 |Vertrauenswürdige Absender und Domänen hinzufügen|Hier können Sie Ihre eigene Domäne oder andere vertrauenswürdige Domänen hinzufügen.|
 |Angewendet auf|Wählen Sie **Die Domäne des Empfängers ist** aus. Wählen Sie unter **Einer dieser**, **Auswählen** aus. Wählen Sie **+ Hinzufügen** aus. Aktivieren Sie das Kontrollkästchen neben dem Namen der Domäne, z. B. *contoso. <span> <span> com*, in der Liste, und wählen Sie dann **Hinzufügen aus.** Wählen Sie **Fertig** aus.|
 
-Weitere Informationen finden Sie unter [Einrichten von Antiphishingrichtlinien in Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
+Weitere Informationen finden Sie unter [Einrichten von Antiphishingrichtlinien in Defender for Office 365](../security/defender-365-security/set-up-anti-phishing-policies.md).
 
 ## <a name="protect-against-malicious-attachments-files-and-links-with-defender-for-office-365"></a>Schutz vor schädlichen Anlagen, Dateien und Links mit Defender for Office 365
 
@@ -207,7 +207,7 @@ Um eine Richtlinie für sichere Anlagen zu erstellen, sehen Sie sich entweder di
 |Umleitungsanlage bei Erkennung|Umleitung aktivieren (aktivieren Sie dieses Feld) <br/> Geben Sie das Administratorkonto oder eine Postfacheinrichtung für die Quarantäne ein. <br/> Wenden Sie die oben aufgeführte Auswahl an, wenn bei der Schadsoftwareprüfung auf Anlagen ein Zeitfehler auftritt oder ein Fehler auftritt (aktivieren Sie dieses Feld).|
 |Angewendet auf|Die Empfängerdomäne ist . . . Wählen Sie Ihre Domäne aus.|
 
-Weitere Informationen finden Sie unter [Einrichten von Antiphishingrichtlinien in Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
+Weitere Informationen finden Sie unter [Einrichten von Antiphishingrichtlinien in Defender for Office 365](../security/defender-365-security/set-up-anti-phishing-policies.md).
 
 ### <a name="set-up-safe-links-in-the-security--compliance-center"></a>Einrichten sicherer Links im Security & Compliance Center
 
@@ -250,7 +250,7 @@ So erstellen Sie eine neue Richtlinie für alle Empfänger in Ihrer Domäne:
 |Verwenden sicherer Anlagen zum Überprüfen herunterladbarer Inhalte|Wählen Sie dieses Feld aus.|
 |Angewendet auf|Die Empfängerdomäne ist . . . Wählen Sie Ihre Domäne aus.|
 
-Weitere Informationen finden Sie unter [Sichere Links in Defender for Office 365](../security/office-365-security/atp-safe-links.md).
+Weitere Informationen finden Sie unter [Sichere Links in Defender for Office 365](../security/defender-365-security/safe-links.md).
 
 ## <a name="turn-on-the-unified-audit-log"></a>Aktivieren des einheitlichen Überwachungsprotokolls
 

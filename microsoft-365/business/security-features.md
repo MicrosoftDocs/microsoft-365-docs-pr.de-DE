@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Erfahren Sie mehr über die Sicherheitsfeatures von Microsoft 365 Business Premium, um Ihre Daten auf PCs, Smartphones und Tablets zu schützen.
-ms.openlocfilehash: 74a22b654e60e4a980e397598117bb4c435e833b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d641fc66e27f3c5e0a7c8609e4fa25fac93d8561
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912548"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052252"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 Business Premium-Sicherheits- und Compliancefeatures
 
@@ -63,7 +63,7 @@ Sie können viele der Microsoft 365 Business Premium-Sicherheitsfeatures im Admi
 
 Die erweiterten Features in Microsoft 365 Business Premium helfen Ihnen, Ihr Unternehmen vor Cyberbedrohungen zu bewahren und vertrauliche Informationen zu schützen.
   
-- **[Microsoft Defender für Office 365](../security/office-365-security/office-365-atp.md)**
+- **[Microsoft Defender für Office 365](../security/defender-365-security/defender-for-office-365.md)**
     
     Microsoft Defender für Office 365 schützt Ihr Unternehmen vor ausgefeilten Phishing- und Ransomwareangriffen, die Mitarbeiter- oder Kundeninformationen gefährdet. Zu den Features gehören:
     

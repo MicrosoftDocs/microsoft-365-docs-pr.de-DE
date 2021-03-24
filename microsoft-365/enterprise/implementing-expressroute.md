@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Erfahren Sie, wie Sie ExpressRoute für Office 365 implementieren, das einen alternativen Routingpfad zu vielen Office 365-Diensten mit Internetzugriff bietet.
-ms.openlocfilehash: d0f0b5156aae5a3e2c38f51ba0b74738918593e9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d75fe3a6dab4926babeef61fc14894566ff819b0
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909832"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051366"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementieren von ExpressRoute für Office 365
 
@@ -191,8 +191,8 @@ Häufig gibt es mehrere Meet-Me-Standorte, die innerhalb einer Region mit relati
 
 |**Geplante ExpressRoute-Meet-Me-Standorte in Kalifornien und New York**||
 |:-----|:-----|
-|Speicherort  <br/> |Anzahl der Personen  <br/> |Erwartete Latenz für Microsoft-Netzwerk über Internet-Abgress  <br/> |Erwartete Wartezeit für das Microsoft-Netzwerk über ExpressRoute  <br/> |
-|München  <br/> |10.000  <br/> |~15ms  <br/> |~10 ms (über das Silicon Valley)  <br/> |
+|Ort  <br/> |Anzahl der Personen  <br/> |Erwartete Latenz für Microsoft-Netzwerk über Internet-Abgress  <br/> |Erwartete Wartezeit für das Microsoft-Netzwerk über ExpressRoute  <br/> |
+|München  <br/> |10,000  <br/> |~15ms  <br/> |~10 ms (über das Silicon Valley)  <br/> |
 |Washington DC  <br/> |15,000  <br/> |~20 ms  <br/> |~10 ms (über New York)  <br/> |
 |Dallas  <br/> |5,000  <br/> |~15ms  <br/> |~40 ms (über New York)  <br/> |
 
@@ -225,7 +225,7 @@ Der Implementierungsplan sollte sowohl die technischen Details der Konfiguration
 
 - Entscheiden Sie, wie weit #A0 in Ihrem Netzwerk angekündigt werden und was der Mechanismus ist, mit dem Clients Internet- oder #A1 auswählen können. z. B. direktes Routing oder Anwendungsproxy.
 
-- Planen von ÄNDERUNGEN an DNS-Einträgen, einschließlich [Sender Policy Framework-Einträgen.](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+- Planen von ÄNDERUNGEN an DNS-Einträgen, einschließlich [Sender Policy Framework-Einträgen.](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
 - Planen der NAT-Strategie einschließlich ausgehender und eingehender Quell-NAT.
 

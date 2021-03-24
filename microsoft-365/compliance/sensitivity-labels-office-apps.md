@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen für IT-Administratoren zur Verwaltung von Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobilgeräte und das Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 41716fecd0c70c99fd61b090421cb3dc0277cb48
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 72b5422de2ee4b01e3209ec78ea0c10f1285d682
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919551"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034194"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -63,7 +63,7 @@ Die aufgelisteten Zahlen sind die minimale Office-Anwendungsversion, die für je
 |[Inhalt markieren](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – teilnehmen](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | Wird überprüft |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – teilnehmen](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | Wird überprüft   | Wird überprüft         | Wird überprüft                                                        |
+|[Benutzern das Zuweisen von Berechtigungen gestatten: <br /> – Benutzer auffordern](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | Wird überprüft   | Wird überprüft         | Wird überprüft                                                        |
 |[Überwachung bezeichnungsbezogener Benutzeraktivitäten](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | Rollout: 16.0.13628+ | Ja <sup>\*</sup>                                                        |
 |[Von Benutzern fordern, dass sie eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | Rollout: 16.45+         | Vorschau: [Betakanal](https://office.com/insider) | Rollout: 16.0.13628+ | Wird überprüft                                            
 |[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Rollout: 16.44+ | Wird überprüft | Wird überprüft | [Ja – teilnehmen](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -87,7 +87,8 @@ Die aufgelisteten Zahlen sind die minimale Office-Anwendungsversion, die für je
 |[Inhalt markieren](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables)                                              | Wird überprüft                     | Wird überprüft                 | Wird überprüft         | Wird überprüft           | Wird überprüft               |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
-|[Benutzern die Zuweisung von Berechtigungen überlassen](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
+|[Benutzern das Zuweisen von Berechtigungen gestatten: <br /> – Nicht weiterleiten](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
+|[Benutzern das Zuweisen von Berechtigungen gestatten: <br /> – Nur verschlüsseln](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | Wird überprüft | Wird überprüft  | Wird überprüft | Rollout |
 |[Von Benutzern fordern, dass sie eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | Rollout: 2101+                        | 16.43+ <sup>\*</sup>                    | Wird überprüft            | Wird überprüft                | Ja                |
 |[Überwachung bezeichnungsbezogener Benutzeraktivitäten](data-classification-activity-explorer.md) | 2011+ | Wird überprüft | Wird überprüft           | Wird überprüft               | Wird überprüft |
 |[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | Wird überprüft           | Wird überprüft               | Ja |

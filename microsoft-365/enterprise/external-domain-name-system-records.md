@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Eine Referenzliste für externe DNS-Einträge, die bei der Planung einer Office 365-Bereitstellung zu verwenden sind.
-ms.openlocfilehash: c2384f1e330692d43c923a7932db4c3ff2bc99ae
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3aa6bf3362005eb0dae5bca40322fe2178d5d69f
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924212"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051378"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Externe DNS-Einträge für Office 365
 
@@ -103,7 +103,7 @@ Wenn Sie [Office 365-URLs und IP-Adressbereiche](https://support.office.com/arti
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
-> Zwar soll SPF Spoofing verhindern, jedoch gibt es Spoofingtechniken, vor denen SPF keinen Schutz bietet. Zum Einrichten eines entsprechenden Schutzes sollten Sie nach dem Einrichten von SPF auch DKIM und DMARC für Office 365 konfigurieren. Die ersten Schritte finden Sie unter [Use DKIM to validate outbound email sent from your domain in Office 365](../security/office-365-security/use-dkim-to-validate-outbound-email.md). Lesen Sie anschließend [Use DMARC to validate email in Office 365](../security/office-365-security/use-dmarc-to-validate-email.md).
+> Zwar soll SPF Spoofing verhindern, jedoch gibt es Spoofingtechniken, vor denen SPF keinen Schutz bietet. Zum Einrichten eines entsprechenden Schutzes sollten Sie nach dem Einrichten von SPF auch DKIM und DMARC für Office 365 konfigurieren. Die ersten Schritte finden Sie unter [Use DKIM to validate outbound email sent from your domain in Office 365](../security/defender-365-security/use-dkim-to-validate-outbound-email.md). Lesen Sie anschließend [Use DMARC to validate email in Office 365](../security/defender-365-security/use-dmarc-to-validate-email.md).
   
 SPF-Einträge und TXT-Einträge helfen zu verhindern, dass Dritte Ihre Domäne verwenden, um Spam oder andere schädliche E-Mails zu senden. SPF-Einträge (Sender Policy Framework) identifizieren die Server, die autorisiert sind, um E-Mails Ihrer Domäne zu senden.
   
@@ -125,7 +125,7 @@ Ein E-Mail-System, das eine E-Mail über Ihre Domäne empfängt, prüft den SPF-
 In Szenarien, in denen Sie nicht nur Exchange Online-E-Mail für Office 365 verwenden (beispielsweise, wenn Sie außerdem mit E-Mails arbeiten, die von SharePoint Online stammen), verwenden Sie die folgende Tabelle, um zu bestimmen, was in den Wert des Eintrags aufgenommen werden soll.
   
 > [!NOTE]
-> In komplizierten Szenarien, die beispielsweise Edge-E-Mail-Server zum Verwalten des E-Mail-Verkehrs über Ihre Firewall hinweg umfassen, muss ein mit mehr Details versehener SPF-Eintrag eingerichtet werden. Hier erfahren Sie mehr: [Einrichten von SPF-Einträgen in Office 365 zur Unterstützung der Vermeidung von Spoofing](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md). Darüber hinaus können Sie viel mehr über die Funktionsweise von SPF im Zusammenspiel mit Office 365 aus [Verwenden des Sender Policy Framework (SPF) durch Office 365 zum Verhindern von Spoofing](../security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md) erfahren.
+> In komplizierten Szenarien, die beispielsweise Edge-E-Mail-Server zum Verwalten des E-Mail-Verkehrs über Ihre Firewall hinweg umfassen, muss ein mit mehr Details versehener SPF-Eintrag eingerichtet werden. Hier erfahren Sie mehr: [Einrichten von SPF-Einträgen in Office 365 zur Unterstützung der Vermeidung von Spoofing](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md). Darüber hinaus können Sie viel mehr über die Funktionsweise von SPF im Zusammenspiel mit Office 365 aus [Verwenden des Sender Policy Framework (SPF) durch Office 365 zum Verhindern von Spoofing](../security/defender-365-security/how-office-365-uses-spf-to-prevent-spoofing.md) erfahren.
   
 | Zahl|Wenn Sie Folgendes verwenden...  <br/> |Zweck  <br/> |Diese Einschlüsse hinzufügen  <br/> |
 |:-----|:-----|:-----|:-----|
@@ -181,6 +181,6 @@ TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com include:mail.contoso.com -all
 ```
 
-Dies sind einige gängige Beispiele, die Ihnen beim Anpassen Ihres vorhandenen SPF-Eintrags beim Hinzufügen Ihrer Domäne zu Office 365 für E-Mail helfen können. In komplizierten Szenarien, die beispielsweise Edge-E-Mail-Server zum Verwalten des E-Mail-Verkehrs über Ihre Firewall hinweg umfassen, muss ein mit mehr Details versehener SPF-Eintrag eingerichtet werden. Hier erfahren Sie mehr: [Einrichten von SPF-Einträgen in Office 365 zur Unterstützung der Vermeidung von Spoofing](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md).
+Dies sind einige gängige Beispiele, die Ihnen beim Anpassen Ihres vorhandenen SPF-Eintrags beim Hinzufügen Ihrer Domäne zu Office 365 für E-Mail helfen können. In komplizierten Szenarien, die beispielsweise Edge-E-Mail-Server zum Verwalten des E-Mail-Verkehrs über Ihre Firewall hinweg umfassen, muss ein mit mehr Details versehener SPF-Eintrag eingerichtet werden. Hier erfahren Sie mehr: [Einrichten von SPF-Einträgen in Office 365 zur Unterstützung der Vermeidung von Spoofing](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md).
   
 Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/o365edns]()

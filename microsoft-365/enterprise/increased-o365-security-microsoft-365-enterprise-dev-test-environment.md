@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Verwenden Sie dieses Testumgebungshandbuch, um zusätzliche Microsoft 365-Sicherheitseinstellungen für Ihre Microsoft 365 for Enterprise-Testumgebung zu aktivieren.
-ms.openlocfilehash: 928deae34dc16c70776eb512188d1a36ae169da5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 186452396af4227a94a7f6cd0fa0109e9d6a7e17
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909786"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051270"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Erhöhte Microsoft 365-Sicherheit für Ihre Microsoft 365 for Enterprise-Testumgebung
 
@@ -47,7 +47,7 @@ In dieser Phase aktivieren Sie erhöhte Microsoft 365-Sicherheit für Ihre Micro
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Konfigurieren von SharePoint Online zum Blockieren von Apps, die keine moderne Authentifizierung unterstützen
 
-Apps, die die moderne Authentifizierung nicht unterstützen, können keine Identitäts- und Gerätezugriffskonfigurationen auf sie angewendet werden. [Dies](../security/office-365-security/microsoft-365-policies-configurations.md) ist ein wichtiges Element zum Sichern Ihres Microsoft 365-Abonnements und seiner digitalen Ressourcen. 
+Apps, die die moderne Authentifizierung nicht unterstützen, können keine Identitäts- und Gerätezugriffskonfigurationen auf sie angewendet werden. [Dies](../security/defender-365-security/microsoft-365-policies-configurations.md) ist ein wichtiges Element zum Sichern Ihres Microsoft 365-Abonnements und seiner digitalen Ressourcen. 
 
 1. Wechseln Sie zum Microsoft 365 Admin Center ( ) und melden Sie sich mit Ihrem globalen Administratorkonto bei Ihrem [https://portal.microsoft.com](https://portal.microsoft.com) Microsoft 365-Testumgebungsabonnement an.
     
@@ -77,7 +77,7 @@ Defender für Office 365 für SharePoint, OneDrive und Microsoft Teams schützt 
 
 Malware ist Schadsoftware, die aus Viren und Spyware besteht. Viren infizieren Programme und Daten und breiten sich auf dem ganzen Computer aus. Als Spyware wird Schadsoftware bezeichnet, die persönliche Informationen, wie etwa Anmelde- und persönliche Daten, auf Ihrem Computer erfasst und an den Urheber der Schadsoftware zurücksendet. 
 
-Microsoft 365 verfügt über integrierte Schadsoftware- und Spamfilterfunktionen, die ein- und ausgehende Nachrichten vor Schadsoftware schützen und Sie vor Spam schützen. Weitere Informationen finden Sie unter [Antispamschutz & Schutz vor Schadsoftware](../security/office-365-security/anti-spam-and-anti-malware-protection.md).
+Microsoft 365 verfügt über integrierte Schadsoftware- und Spamfilterfunktionen, die ein- und ausgehende Nachrichten vor Schadsoftware schützen und Sie vor Spam schützen. Weitere Informationen finden Sie unter [Antispamschutz & Schutz vor Schadsoftware](../security/defender-365-security/anti-spam-and-anti-malware-protection.md).
 
 So stellen Sie sicher, dass die Schadsoftwareverarbeitung für Dateien mit gängigen Anlagendateitypen ausgeführt wird:
 
@@ -100,7 +100,7 @@ So sehen Sie das Sicherheitsdashboard:
 
 Werfen Sie einen genauen Blick auf alle Karten auf dem Dashboard, um sich mit den bereitgestellten Informationen vertraut zu machen.
 
-Weitere Informationen finden Sie unter [Security Dashboard](../security/office-365-security/security-dashboard.md).
+Weitere Informationen finden Sie unter [Security Dashboard](../security/defender-365-security/security-dashboard.md).
 
 
 ## <a name="phase-4-examine-microsoft-secure-score"></a>Phase 4: Überprüfen der Microsoft Secure Score
@@ -111,7 +111,7 @@ Microsoft Secure Score zeigt Ihre Sicherheitslage als Zahl an, die Ihre aktuelle
 2. Notieren Sie **sich**  auf der Registerkarte Übersicht Ihre aktuelle Secure Score und wie sie mit dem globalen Durchschnitt und Abonnements mit einer ähnlichen Anzahl von Lizenzen verglichen wird.
 3. Lesen Sie **auf der** Registerkarte Verbesserungsaktionen die Liste der Aktionen durch, die Sie zum Erhöhen Ihrer Bewertung ergreifen können.
 
-Weitere Informationen finden Sie unter [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md).
+Weitere Informationen finden Sie unter [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -16,58 +16,58 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: Die Roadmap zur Identität für Microsoft 365.
-ms.openlocfilehash: c79b7babbfbd97a13979de1ed23052ac572d9ded
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 456841bfc15d143409535140f2b5a63ee72e99d2
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446287"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051306"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Identitäts-Roadmap für Microsoft 365
 
-In Microsoft 365 für Unternehmen ebnet eine gut geplante und ausgeführte Identitätsinfrastruktur den Weg für eine stärkere Sicherheit, einschließlich der Einschränkung des Zugriffs auf Ihre Produktivitäts Arbeitslasten und ihrer Daten auf authentifizierte Benutzer und Geräte.
+In Microsoft 365 Enterprise ebnet eine gut geplante und ausgeführte Identitätsinfrastruktur den Weg für mehr Sicherheit, einschließlich der Einschränkung des Zugriffs auf Ihre Produktivitätsworkloads und deren Daten auf nur authentifizierte Benutzer und Geräte.
 
-Eine Übersicht über Identitäts Modelle und Authentifizierung für Microsoft 365 für Unternehmen finden Sie in diesem Video.
+Eine Übersicht über Identitätsmodelle und die Authentifizierung für Microsoft 365 Enterprise finden Sie in diesem Video.
 
 <p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-Informationen zu den Identitätsfeatures der einzelnen Microsoft 365 for Enterprise-Pläne, die Rolle von Azure Active Directory, sowohl die lokale als auch die Cloud-basierte Komponente sowie die gängigsten Authentifizierungs Konfigurationen finden Sie unter [Identity Infrastructure Poster](../downloads/m365e-identity-infra.pdf).
+Informationen zu den Identitätsfeatures der einzelnen Microsoft 365 For Enterprise-Pläne, zur Rolle von Azure Active Directory, zu den lokalen und cloudbasierten Komponenten sowie zu den gängigsten Authentifizierungskonfigurationen finden Sie im Poster [Identity Infrastructure](../downloads/m365e-identity-infra.pdf).
 
 [![Poster zur Identitätsinfrastruktur](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
-Überprüfen Sie dieses zweiseitige Poster, um die Identitätskonzepte und-Konfigurationen für Microsoft 365 for Enterprise schnell hochzufahren.
+Lesen Sie dieses zweiseitige Poster, um die Identitätskonzepte und -konfigurationen für Microsoft 365 Enterprise schnell zu entwickeln.
 
-Sie können [Dieses Poster auch herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) und im Format "Letter", "Legal" oder "Tabloid" (11 x 17) drucken.
+Sie können [dieses Poster auch herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) und im Buchstaben-, Rechts- oder Tabloidformat (11 x 17) drucken.
 
-## <a name="plan"></a>Plan
+## <a name="plan"></a>Planen
 
-So planen Sie die Implementierung Ihrer Identität:
+So planen Sie ihre Identitätsimplementierung:
 
-- [Grundlegendes zu den verschiedenen Identitäts Modellen](about-microsoft-365-identity.md)
-- [Planen der Hybriden Identitäts-und Verzeichnissynchronisierung](plan-for-directory-synchronization.md)
+- [Verstehen der verschiedenen Identitätsmodelle](about-microsoft-365-identity.md)
+- [Planen der Hybrididentität und Verzeichnissynchronisierung](plan-for-directory-synchronization.md)
 
 ## <a name="deploy"></a>Bereitstellen
 
-So stellen Sie die Identitäts Implementierung bereit:
+So stellen Sie Ihre Identitätsimplementierung zur Bereitstellung:
 
 - [Schützen Ihrer globalen Administratorkonten](protect-your-global-administrator-accounts.md)
-- [Konfigurieren und Verwenden von nur-Cloud-Identitäten](cloud-only-identities.md)
-- [Konfigurieren und Verwenden von Hybrid Identitäten](prepare-for-directory-synchronization.md)
+- [Konfigurieren und Verwenden von Nur-Cloud-Identitäten](cloud-only-identities.md)
+- [Konfigurieren und Verwenden von Hybrididentitäten](prepare-for-directory-synchronization.md)
 - [Einrichten der Verzeichnissynchronisierung](set-up-directory-synchronization.md)
-- Bereitstellen von [Hybriden Identitäts Szenarien](hybrid-solutions.md) bei Bedarf
+- Bereitstellen von [Hybrididentitätsszenarien bei Bedarf](hybrid-solutions.md)
 
 ### <a name="identity-and-device-access-recommendations"></a>Empfehlungen für den Identitäts- und Gerätezugriff
 
-Um eine sichere und produktive Belegschaft sicherzustellen, bietet Microsoft eine Reihe von Empfehlungen für den [Identitäts-und Geräte Zugriff](../security/office-365-security/microsoft-365-policies-configurations.md). Verwenden Sie für Identity die Empfehlungen und Einstellungen in den folgenden Artikeln:
+Um eine sichere und produktive Belegschaft sicherzustellen, bietet Microsoft eine Reihe von Empfehlungen für den Identitäts- und [Gerätezugriff.](../security/defender-365-security/microsoft-365-policies-configurations.md) Verwenden Sie zur Identitätsidentität die Empfehlungen und Einstellungen in den folgenden Artikeln:
 
-- [Voraussetzungen](../security/office-365-security/identity-access-prerequisites.md)
-- [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](../security/office-365-security/identity-access-policies.md)
+- [Voraussetzungen](../security/defender-365-security/identity-access-prerequisites.md)
+- [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](../security/defender-365-security/identity-access-policies.md)
 
 ## <a name="manage"></a>Verwalten
 
-Informationen zum Verwalten der Microsoft 365 Identity-Bereitstellung finden Sie unter:
+Informationen zum Verwalten Ihrer Microsoft 365-Identitätsbereitstellung finden Sie unter:
 
 - [Benutzerkonten](manage-microsoft-365-accounts.md)
 - [Lizenzen](assign-licenses-to-user-accounts.md)
@@ -76,18 +76,18 @@ Informationen zum Verwalten der Microsoft 365 Identity-Bereitstellung finden Sie
 - [Governance](manage-microsoft-365-identity-governance.md)
 - [Verzeichnissynchronisierung](view-directory-synchronization-status.md)
 
-## <a name="how-microsoft-does-identity-for-microsoft-365"></a>Funktionsweise von Microsoft Identity für Microsoft 365
+## <a name="how-microsoft-does-identity-for-microsoft-365"></a>Funktionsweise der Identität von Microsoft für Microsoft 365
 
 Erfahren Sie, wie IT-Experten bei Microsoft [Identitäten verwalten und den Zugriff sichern](https://www.microsoft.com/en-us/itshowcase/managing-user-identities-and-secure-access-at-microsoft).
 
 >[!Note]
->Diese IT-Showcase-Ressource ist nur in englischer Sprache verfügbar.
+>Diese IT -Showcase-Ressource ist nur in Englisch verfügbar.
 >
 
-## <a name="how-contoso-did-identity-for-microsoft-365"></a>Identität von Contoso für Microsoft 365
+## <a name="how-contoso-did-identity-for-microsoft-365"></a>Funktionsweise der Identität von Contoso für Microsoft 365
 
-Ein Beispiel dafür, wie eine fiktive, aber repräsentative multinationale Organisation eine hybride Identitätsinfrastruktur für Microsoft 365 Cloud Services bereitgestellt hat, finden Sie unter [Identity for the Contoso Corporation](contoso-identity.md).
+Ein Beispiel dafür, wie eine fiktive, aber repräsentative multinationale Organisation eine Hybrididentitätsinfrastruktur für Microsoft 365-Clouddienste bereitgestellt hat, finden Sie unter [Identity for the Contoso Corporation](contoso-identity.md).
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Starten Sie Ihre Identitäts Planung mit [Identitäts Modellen](about-microsoft-365-identity.md).
+Starten Sie Ihre Identitätsplanung mit [Identitätsmodellen.](about-microsoft-365-identity.md)

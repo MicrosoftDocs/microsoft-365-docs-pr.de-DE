@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie mehrstufige Authentifizierung in Microsoft 365.
-ms.openlocfilehash: e1635e48e3948425a6d91f80fd07d50c474b73d7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 080251efa7d7d3bda6ad89e95960e43dd38d076d
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914510"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050666"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Mehrstufige Authentifizierung für Microsoft 365
 
@@ -121,13 +121,13 @@ Unternehmen sollten [allgemeine Richtlinien für bedingten Zugriff verwenden,](/
 
 - [MFA für Administratoren erforderlich](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
 - [MFA für alle Nutzer erforderlich](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [Blockieren der Legacyauthentifizierung](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+- [Blockieren von Legacy-Authentifizierung](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 
 Weitere Informationen finden Sie in dieser [Übersicht über den bedingten Zugriff](/azure/active-directory/conditional-access/overview).
 
 ### <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-Mit Azure AD Identity Protection können Sie eine zusätzliche Richtlinie für bedingten Zugriff erstellen, um MFA zu erfordern, wenn das Anmelderisiko mittel oder [hoch ist.](../../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)
+Mit Azure AD Identity Protection können Sie eine zusätzliche Richtlinie für bedingten Zugriff erstellen, um MFA zu erfordern, wenn das Anmelderisiko mittel oder [hoch ist.](../../security/defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)
 
 Sie können Azure AD Identity Protection und risikobasierte Richtlinien für bedingten Zugriff mit:
 

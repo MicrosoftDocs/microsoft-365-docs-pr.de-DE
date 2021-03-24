@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Entdecken Sie die Setupschritte für Microsoft 365 Business Premium, einschließlich hinzufügen einer Domäne und Benutzer, Einrichten von Sicherheitsrichtlinien und mehr.
-ms.openlocfilehash: 5b082e78f3dc4067dcce4a96a8088b2347bc3af4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4d49ba7ccdb65691756aaa505d0856deb115595b
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912568"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052232"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Einrichten von Microsoft 365 Business Premium im Setup-Assistenten
 
@@ -107,7 +107,7 @@ Zum Einrichten von Diensten müssen Sie einige Einträge bei Ihrem DNS-Host oder
 
 Die richtlinien, die Sie im Assistenten eingerichtet haben, werden automatisch auf eine [Sicherheitsgruppe](/office365/admin/create-groups/compare-groups#security-groups) mit dem Namen *Alle Benutzer angewendet.* Sie können auch zusätzliche Gruppen erstellen, um Richtlinien im Admin Center zuzuordnen.
 
-1. Unter **Erhöhen des Schutzes** vor erweiterten Cyberbedrohungen wird empfohlen, dass Sie die Standardeinstellungen akzeptieren, um [Office 365 Advance Threat Protection](../security/office-365-security/office-365-atp.md) Dateien und Links in Office-Apps überprüfen zu lassen.
+1. Unter **Erhöhen des Schutzes** vor erweiterten Cyberbedrohungen wird empfohlen, dass Sie die Standardeinstellungen akzeptieren, um [Office 365 Advance Threat Protection](../security/defender-365-security/defender-for-office-365.md) Dateien und Links in Office-Apps überprüfen zu lassen.
 
     ![Screenshot der Seite Schutz erhöhen.](../media/increasetreatprotection.png)
 

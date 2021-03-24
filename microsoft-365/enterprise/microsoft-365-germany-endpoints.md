@@ -22,7 +22,7 @@ description: In diesem Artikel finden Sie Endpunkte, die für Kunden mit Office 
 hideEdit: true
 ms.openlocfilehash: 8d3e8bfe2a52027b412aff87e063f2458ca47f74
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50923990"

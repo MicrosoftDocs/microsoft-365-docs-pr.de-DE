@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Beschreibt das Zuweisen von Microsoft 365-Lizenzen zu Benutzerkonten, entweder einzeln oder basierend auf der Gruppenmitgliedschaft.
-ms.openlocfilehash: 6bba3cd767787f450840c5cae6c30f2be21bed1b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2fe1e2f959fae8b0bc82a7dcd4f65f33b21c368a
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905440"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051532"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Zuweisen von Microsoft 365-Lizenzen zu Benutzerkonten
 
@@ -67,7 +67,7 @@ Weitere Informationen finden Sie unter [gruppenbasierte](/azure/active-directory
 
 Mit dem entsprechenden Satz von Benutzerkonten, denen Lizenzen zugewiesen wurden, sind Sie jetzt bereit für:
 
-- [Implementieren der Sicherheit](../security/office-365-security/security-roadmap.md)
+- [Implementieren der Sicherheit](../security/defender-365-security/security-roadmap.md)
 - [Bereitstellen von Clientsoftware, z. B. Microsoft 365 Apps](/DeployOffice/deployment-guide-microsoft-365-apps)
 - [Einrichten der Geräteverwaltung](device-management-roadmap-microsoft-365.md)
 - [Konfigurieren von Diensten und Anwendungen](configure-services-and-applications.md)

@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Wie Contoso IDaaS (Identity as a Service) nutzt und eine cloudbasierte Authentifizierung für seine Mitarbeiter und eine Verbundauthentifizierung für Partner und Kunden bereitstellt.
-ms.openlocfilehash: accd60f6699e7ebf04963213128d1ca1ffc8f7fe
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f3c8746345683652ce601400ae7297e96fff2ee3
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911072"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051520"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identität für die Contoso Corporation
 
@@ -64,7 +64,7 @@ Hier ist der Server, auf dem Azure AD Connect ausgeführt wird, der die Contoso 
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>Richtlinien für bedingten Zugriff für Identitäts- und Gerätezugriff
 
-Contoso hat eine Gruppe von Azure AD- und Intune-[Richtlinien für bedingten Zugriff](../security/office-365-security/identity-access-policies.md) für drei Schutzebenen erstellt:
+Contoso hat eine Gruppe von Azure AD- und Intune-[Richtlinien für bedingten Zugriff](../security/defender-365-security/identity-access-policies.md) für drei Schutzebenen erstellt:
 
 - *Grundlegende* Schutzbestimmungen gelten für alle Benutzerkonten.
 - *Vertrauliche* Schutzmaßnahmen gelten für leitende Führungskräfte und Führungskräfte.

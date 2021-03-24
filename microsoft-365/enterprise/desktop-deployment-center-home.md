@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: So erhalten Sie die Ressourcen, die dem veralteten Desktop Deployment Center entsprechen.
-ms.openlocfilehash: c4456d0f17e38920e77c855e31205e51025f111b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 54847305576cb5b2cf96177ad810c1b1ccb11eed
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928168"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051472"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>Desktop Deployment Center (veraltet)
 
@@ -29,7 +29,7 @@ Verwenden Sie diese Ressourcen, um moderne Desktops zu bereitstellen:
 - [Windows 10-Bereitstellung](/windows/deployment/)
 - [Bereitstellen von Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
-- [Identitäts- und Gerätezugriffsrichtlinien](../security/office-365-security/microsoft-365-policies-configurations.md)
+- [Identitäts- und Gerätezugriffsrichtlinien](../security/defender-365-security/microsoft-365-policies-configurations.md)
 
 Sie können auch die Videos der [Desktopbereitstellungsserie von Microsoft Mechanics anzeigen.](https://www.aka.ms/watchhowtoshift)
 

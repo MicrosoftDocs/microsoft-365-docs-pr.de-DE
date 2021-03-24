@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Erfahren Sie mehr über Ablaufrichtlinien für Microsoft 365-Gruppen.
-ms.openlocfilehash: 8232e7df2a8390b905386773ed0656eb8239d5c5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 65a746751cd523a5dadce3eca573e6a9bfce0166
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920916"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052302"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365-Gruppenablaufrichtlinie
 
@@ -37,6 +37,8 @@ Gruppen, die aktiv verwendet werden, werden automatisch erneuert. Eine der folge
 - SharePoint – Anzeigen, Bearbeiten, Herunterladen, Verschieben, Freigeben oder Hochladen von Dateien. (Das Anzeigen einer SharePoint-Seite zählt nicht als Aktion für die automatische Verlängerung.)
 - Outlook – Gruppe beitreten, Gruppennachricht aus der Gruppe lesen oder schreiben und wie eine Nachricht (Outlook im Web).
 - Teams – Besuchen eines Teams-Kanals.
+
+Beachten Sie, dass die Yammer, die eine automatische Gruppenerneuerung auslöst, der Upload eines Dokuments in SharePoint innerhalb der Community ist.
 
 > [!IMPORTANT]
 > Wenn Sie die Ablaufrichtlinie ändern, berechnet der Dienst das Ablaufdatum für jede Gruppe neu. Er beginnt immer ab dem Datum, an dem die Gruppe erstellt wurde, und wendet dann die neue Ablaufrichtlinie an.

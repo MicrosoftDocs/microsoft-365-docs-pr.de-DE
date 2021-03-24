@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Implementierung von VPN-Split-Tunneling für Office 365
-ms.openlocfilehash: 2feb03f2142639a1c1de4ff9a69768e23f282546
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 93adc70882e0c8ce9752cb471b13c301a4a59bd4
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924224"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051282"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementieren eines geteilten VPN-Tunnels für Office 365
 
@@ -304,7 +304,7 @@ Wir können dann Richtlinien auslösen, wie z. B. die Genehmigung, die Auslösu
 
 ### <a name="how-do-i-protect-against-viruses-and-malware"></a>Wie kann ich mich vor Viren und Schadsoftware schützen?
 
-Auch hier bietet Office 365 Schutz für die mit „Optimieren“ markierten Endpunkte in verschiedenen Ebenen des Diensts selbst, die [in diesem Dokument beschrieben werden](/office365/Enterprise/office-365-malware-and-ransomware-protection). Wie bereits erwähnt, ist es sehr viel effizienter, diese Sicherheitselemente im Dienst selbst zur Verfügung zu stellen, anstatt dies in Einklang mit Geräten zu versuchen, die die Protokolle/den Datenverkehr möglicherweise nicht vollständig verstehen. Standardmäßig überprüft SharePoint Online [automatisch Dateiuploads](../security/office-365-security/virus-detection-in-spo.md) auf bekannte Schadsoftware.
+Auch hier bietet Office 365 Schutz für die mit „Optimieren“ markierten Endpunkte in verschiedenen Ebenen des Diensts selbst, die [in diesem Dokument beschrieben werden](/office365/Enterprise/office-365-malware-and-ransomware-protection). Wie bereits erwähnt, ist es sehr viel effizienter, diese Sicherheitselemente im Dienst selbst zur Verfügung zu stellen, anstatt dies in Einklang mit Geräten zu versuchen, die die Protokolle/den Datenverkehr möglicherweise nicht vollständig verstehen. Standardmäßig überprüft SharePoint Online [automatisch Dateiuploads](../security/defender-365-security/virus-detection-in-spo.md) auf bekannte Schadsoftware.
 
 Für die oben aufgeführten Exchange-Endpunkte bieten [Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) und Microsoft Defender für Office [365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) eine hervorragende Aufgabe, um die Sicherheit des Datenverkehrs für den Dienst zu gewährleisten.
 

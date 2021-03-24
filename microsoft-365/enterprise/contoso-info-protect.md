@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie, wie Contoso die Informationsschutzfunktionen in Microsoft 365 Enterprise verwendet, um ihre digitalen Ressourcen in der Cloud zu sichern.
-ms.openlocfilehash: 90a82fbd4dd77ff0f8faa024ced177a640a10b80
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3bd778708e30253e53cc465e89f7b783141771de
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911038"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051496"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Informationsschutz für die Contoso Corporation
 
@@ -78,9 +78,9 @@ Contoso hat die folgenden Schritte befolgt, um Microsoft 365 for Enterprise auf 
 
 Im Rahmen des Rollouts von Exchange Online und SharePoint hat Contoso die folgenden Richtlinien für bedingten Zugriff konfiguriert und auf die entsprechenden Gruppen angewendet:
 
-- [Richtlinien für den verwalteten und nicht verwalteten Zugriff auf Geräteanwendungen](../security/office-365-security/identity-access-policies.md)
-- [Exchange Online-Zugriffsrichtlinien](../security/office-365-security/secure-email-recommended-policies.md)
-- [SharePoint-Zugriffsrichtlinien](../security/office-365-security/sharepoint-file-access-policies.md)
+- [Richtlinien für den verwalteten und nicht verwalteten Zugriff auf Geräteanwendungen](../security/defender-365-security/identity-access-policies.md)
+- [Exchange Online-Zugriffsrichtlinien](../security/defender-365-security/secure-email-recommended-policies.md)
+- [SharePoint-Zugriffsrichtlinien](../security/defender-365-security/sharepoint-file-access-policies.md)
 
 Hier sehen Sie eine Reihe von Contoso-Richtlinien für den Informationsschutz.
 
@@ -119,7 +119,7 @@ Erfahren Sie, wie Contoso die [Sicherheitsfeatures in Microsoft 365 Enterprise](
 
 ## <a name="see-also"></a>Siehe auch
 
-[Sicherheitsroadmap](../security/office-365-security/security-roadmap.md)
+[Sicherheitsroadmap](../security/defender-365-security/security-roadmap.md)
 
 [Übersicht über Microsoft 365 Enterprise](microsoft-365-overview.md)
 

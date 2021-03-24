@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: Die Roadmap zum Einrichten der Geräteverwaltung für Microsoft 365.
-ms.openlocfilehash: 4c37033898865372fea19ddbb53ec9c8586f27b1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ec284a96fc8e7285f89e8a909b76c782b4469ce1
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918966"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051460"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Roadmap für die Verwaltung mobiler Geräte für Microsoft 365
 
@@ -54,10 +54,10 @@ Beginnen Sie basierend auf Ihrer Bewertung mit der Verwaltung Ihrer Geräte mit:
  
 ## <a name="identity-and-device-access-recommendations"></a>Empfehlungen für den Identitäts- und Gerätezugriff
 
-Microsoft stellt eine Reihe von Empfehlungen für [Identität und Gerätezugriff](../security/office-365-security/microsoft-365-policies-configurations.md) bereit, um sicherzustellen, dass die Mitarbeiter sicher und produktiv arbeiten können. Verwenden Sie für den Gerätezugriff die Empfehlungen und Einstellungen in den folgenden Artikeln:
+Microsoft stellt eine Reihe von Empfehlungen für [Identität und Gerätezugriff](../security/defender-365-security/microsoft-365-policies-configurations.md) bereit, um sicherzustellen, dass die Mitarbeiter sicher und produktiv arbeiten können. Verwenden Sie für den Gerätezugriff die Empfehlungen und Einstellungen in den folgenden Artikeln:
 
-- [Voraussetzungen](../security/office-365-security/identity-access-prerequisites.md)
-- [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](../security/office-365-security/identity-access-policies.md)
+- [Voraussetzungen](../security/defender-365-security/identity-access-prerequisites.md)
+- [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](../security/defender-365-security/identity-access-policies.md)
 
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Funktionsweise der Geräteverwaltung für Microsoft 365 durch Contoso
 

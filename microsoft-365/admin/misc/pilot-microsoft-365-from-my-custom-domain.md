@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hier erfahren Sie, wie Sie die E-Mail-Funktionalität aus Ihrer benutzerdefinierten Domäne an ein Microsoft 365-Postfach mit nur zwei Testkonten testen können.
-ms.openlocfilehash: 019f1786756a036132f95fd5e8ef8a1d42cd515b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e710218a2a5cb9821abb213eb2ebb0c92c9bdc42
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914714"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050690"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Testen von Microsoft 365 aus Ihrer benutzerdefinierten Domäne
 
@@ -115,7 +115,7 @@ Dafür sind zwei Schritte nötig:
 
 Stellen Sie sicher, dass Sie Folgendes in Microsoft 365 oder Office 365 erledigt haben:
 
-1. Zum Einrichten von Connectors benötigen Sie Ihnen zugewiesene Berechtigungen, bevor Sie beginnen können. Welche Berechtigungen Sie benötigen, können Sie dem Eintrag "Microsoft 365- und Office 365-Connectors" im Thema [Featureberechtigungen in EOP](../../security/office-365-security/feature-permissions-in-eop.md) entnehmen.
+1. Zum Einrichten von Connectors benötigen Sie Ihnen zugewiesene Berechtigungen, bevor Sie beginnen können. Welche Berechtigungen Sie benötigen, können Sie dem Eintrag "Microsoft 365- und Office 365-Connectors" im Thema [Featureberechtigungen in EOP](https://docs.microsoft.com/microsoft-365/security/defender-365-security/feature-permissions-in-eop) entnehmen.
 
 2. Wenn Sie möchten, dass EOP oder Exchange Online E-Mails von Ihren E-Mail-Servern an das Internet weiterleitet, gehen Sie wie folgt vor:
 
