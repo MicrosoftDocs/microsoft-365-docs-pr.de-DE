@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Verwenden Sie eDiscovery und Suchtools, um einen Datenlecksvorfall in Ihrer Organisation zu verwalten und darauf zu reagieren.
-ms.openlocfilehash: 9ca637dcd3b4b07846d977d64f535b7b5319d884
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: da473fcdf553176d3c6d4dfa2a4c4b17b2bcce03
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925681"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051977"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery-Lösungsreihe: Datenleckszenario – Suchen und Löschen
 
@@ -121,7 +121,7 @@ Um weiter zu untersuchen, ob E-Mails mit überlaufenen Daten freigegeben wurden,
   
 Sie können die Nachrichtenverfolgung im Security and Compliance Center oder die entsprechenden Cmdlets in Exchange Online PowerShell verwenden. Beachten Sie, dass die Nachrichtenablaufverfolgung keine vollständigen Garantien für die Vollständigkeit der zurückgegebenen Daten bietet. Weitere Informationen zur Verwendung der Nachrichtenverfolgung finden Sie unter: 
   
-- [Nachrichtenablaufverfolgung im Security & Compliance Center](../security/office-365-security/message-trace-scc.md)
+- [Nachrichtenablaufverfolgung im Security & Compliance Center](../security/defender-365-security/message-trace-scc.md)
     
 - [Neue Nachrichtenverfolgung im Security & Compliance Center](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     

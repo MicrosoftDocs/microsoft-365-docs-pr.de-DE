@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Erfahren Sie, wie Sie den Benutzer- und Gerätezugriff auf Microsoft 365-Daten und -Dienste schützen und vor Datenverlust schützen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bd8bbb62bc87ff59594e2fb2a3e21311c2452d9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9ff7bd2ff8b4b333eb30a6cc82797a8968941e0b
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925541"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051697"
 ---
 # <a name="protect-user-and-device-access"></a>Schutz von Benutzer- und Gerätezugriff
 
@@ -38,7 +38,7 @@ Die administrativen Konten, die Sie zum Verwalten Ihrer Microsoft 365-Umgebung v
 
 Verwenden Sie zunächst nur Administratorkonten für die Verwaltung. Administratoren sollten über ein separates Benutzerkonto für die reguläre, nicht administrative Verwendung verfügen und ihr Administratorkonto nur verwenden, wenn dies erforderlich ist, um eine Aufgabe auszuführen, die mit ihrer Auftragsfunktion verknüpft ist.
 
-Schützen Sie Ihre Administratorkonten mit mehrstufiger Authentifizierung und bedingten Zugriff. Weitere Informationen finden Sie unter [Schützen von Administratorkonten](../security/office-365-security/identity-access-prerequisites.md#protecting-administrator-accounts). 
+Schützen Sie Ihre Administratorkonten mit mehrstufiger Authentifizierung und bedingten Zugriff. Weitere Informationen finden Sie unter [Schützen von Administratorkonten](../security/defender-365-security/identity-access-prerequisites.md#protecting-administrator-accounts). 
 
 Konfigurieren Sie als Nächstes die Verwaltung des privilegierten Zugriffs in Office 365. Die Verwaltung des privilegierten Zugriffs ermöglicht eine präzise steuerbare Zugriffskontrolle über privilegierte Administratoraufgaben in Office 365. Sie kann Ihre Organisation vor Verstößen schützen, die vorhandene privilegierte Administratorkonten mit ständigem Zugriff auf vertrauliche Daten oder Zugriff auf kritische Konfigurationseinstellungen verwenden können.
 
@@ -50,7 +50,7 @@ Eine weitere empfehlung ist die Verwendung von Arbeitsstationen, die speziell f�
 Schließlich können Sie die Auswirkungen eines unbeabsichtigten Mangels an Administrativem Zugriff verringern, indem Sie zwei oder mehr Notfallzugriffskonten in Ihrem Mandanten erstellen. Weitere [Informationen finden Sie unter Verwalten von Notfallzugriffskonten in Azure AD](/azure/active-directory/users-groups-roles/directory-emergency-access). 
 
 ## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>Schritt 3: Konfigurieren empfohlener Identitäts- und Gerätezugriffsrichtlinien
-Mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) und Richtlinien für bedingten Zugriff sind leistungsstarke Tools zur Minderung von kompromittierten Konten und nicht autorisiertem Zugriff. Es wird empfohlen, eine Reihe von Richtlinien zu implementieren, die gemeinsam getestet wurden. Weitere Informationen, einschließlich bereitstellungsschritten, finden Sie unter [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md).
+Mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) und Richtlinien für bedingten Zugriff sind leistungsstarke Tools zur Minderung von kompromittierten Konten und nicht autorisiertem Zugriff. Es wird empfohlen, eine Reihe von Richtlinien zu implementieren, die gemeinsam getestet wurden. Weitere Informationen, einschließlich bereitstellungsschritten, finden Sie unter [Identity and device access configurations](../security/defender-365-security/microsoft-365-policies-configurations.md).
 
  Diese Richtlinien implementieren die folgenden Funktionen:
 - Mehrstufige Authentifizierung
@@ -63,7 +63,7 @@ Für die Implementierung der Intune-Gerätekonformität ist die Geräteregistrie
 
 ## <a name="step-4-configure-sharepoint-device-access-policies"></a>Schritt 4: Konfigurieren von SharePoint-Gerätezugriffsrichtlinien
 
-Microsoft empfiehlt, Inhalte auf SharePoint-Websites mit vertraulichen und streng regulierten Inhalten mit Gerätezugriffssteuerelementen zu schützen. Weitere Informationen finden Sie unter [Richtlinienempfehlungen zum Sichern von SharePoint-Websites und -Dateien](../security/office-365-security/sharepoint-file-access-policies.md).
+Microsoft empfiehlt, Inhalte auf SharePoint-Websites mit vertraulichen und streng regulierten Inhalten mit Gerätezugriffssteuerelementen zu schützen. Weitere Informationen finden Sie unter [Richtlinienempfehlungen zum Sichern von SharePoint-Websites und -Dateien](../security/defender-365-security/sharepoint-file-access-policies.md).
 
 
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Festlegen von Microsoft Compliance Manager-Benutzerberechtigungen und -rollen und Konfigurieren automatisierter Tests von Aktionen. Verwalten Sie den Benutzerverlauf, und filtern Sie Ihre Dashboardansicht.
-ms.openlocfilehash: d8eb1d7d8245aa31cb5429452128cedc0adf4684
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 08a62a12e5f412781595ba7d54c3b63a03ae19aa
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925703"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052133"
 ---
 # <a name="get-started-with-compliance-manager"></a>Erste Schritte mit Compliance-Manager
 
@@ -72,7 +72,7 @@ Führen Sie zum Festlegen von Berechtigungen und Zuweisen von Rollen im Office 3
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>Weitere Informationen zum Office 365 Security & Compliance Center
 
-Weitere Informationen zu [Berechtigungen finden Sie im Office 365 Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+Weitere Informationen zu [Berechtigungen finden Sie im Office 365 Security & Compliance Center](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md).
 
 Wenn Sie keinen Zugriff auf das Office 365 Security and Compliance Center haben oder auf die klassische Version von Compliance Manager im Microsoft Service Trust Portal zugreifen müssen, bieten die Administratoreinstellungen im Dienstvertrauensportal eine weitere Möglichkeit zum Zuweisen von Rollen ([Ansichtsanweisungen](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)). Beachten Sie, dass diese Rollen in ihrer Funktionalität eingeschränkter sind.
 
@@ -104,7 +104,7 @@ Mit den Einstellungen des Compliance-Managers im Microsoft 365 Compliance Center
 
 ### <a name="set-up-automated-testing"></a>Einrichten automatisierter Tests
 
-Einige Verbesserungsmaßnahmen im Compliance Manager werden auch von [Microsoft Secure Score überwacht.](../security/mtp/microsoft-secure-score.md) Sie können automatisierte Tests von Aktionen einrichten, die gemeinsam überwacht werden, d. h., wenn eine Aktion in Secure Score getestet und aktualisiert wird, synchronisieren sich diese Ergebnisse mit denselben Aktionen im Compliance-Manager und zählen auf Ihre Compliance-Bewertung.
+Einige Verbesserungsmaßnahmen im Compliance Manager werden auch von [Microsoft Secure Score überwacht.](../security/defender/microsoft-secure-score.md) Sie können automatisierte Tests von Aktionen einrichten, die gemeinsam überwacht werden, d. h., wenn eine Aktion in Secure Score getestet und aktualisiert wird, synchronisieren sich diese Ergebnisse mit denselben Aktionen im Compliance-Manager und zählen auf Ihre Compliance-Bewertung.
 
 Automatische Tests sind standardmäßig für Organisationen aktiviert, die im Compliance Manager neu sind. Wenn Sie Microsoft 365 oder Office 365 zum ersten Mal bereitstellen, dauert es ungefähr sieben Tage, bis Secure Score Daten vollständig erfasst und in Ihre Compliance-Bewertung einbe berücksichtigt hat.  Wenn automatisierte Tests aktiviert sind, wird das Testdatum der Aktion nicht aktualisiert, aber der Teststatus wird aktualisiert. Wenn neue Bewertungen erstellt werden, enthalten Bewertungen automatisch Microsoft-Kontrollergebnisse und Secure Score-Integration.
 

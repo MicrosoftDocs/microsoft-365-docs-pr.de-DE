@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Verwenden Sie die Inhaltssuchberechtigungsfilterung, damit ein eDiscovery-Manager nur eine Teilmenge der Postfächer und Websites in Ihrer Organisation durchsuchen kann.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be1daa4785f67ef54f107319bf88438c134896ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 78d36ccd602ea546099e768d7e91594a668df586
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927983"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051727"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Konfigurieren der Berechtigungsfilterung für die Compliancesuche
 
@@ -45,7 +45,7 @@ Die Filterung von Suchberechtigungen wird vom Feature "Inhaltssuche" im Security
 
 ## <a name="requirements-to-configure-permissions-filtering"></a>Anforderungen zum Konfigurieren der Berechtigungsfilterung
 
-- Zum Ausführen der Cmdlets für den Compliancesicherheitsfilter müssen Sie Mitglied der Rollengruppe Organisationsverwaltung im Security & Compliance Center sein. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+- Zum Ausführen der Cmdlets für den Compliancesicherheitsfilter müssen Sie Mitglied der Rollengruppe Organisationsverwaltung im Security & Compliance Center sein. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md).
 
 - Sie müssen eine Verbindung mit Exchange Online und Security & Compliance Center PowerShell herstellen, um die Cmdlets für den Compliancesicherheitsfilter zu verwenden. Dies ist erforderlich, da diese Cmdlets Zugriff auf Postfacheigenschaften benötigen, weshalb Sie eine Verbindung mit Exchange Online PowerShell herstellen müssen. Sehen Sie sich die Schritte im nächsten Abschnitt an.
 

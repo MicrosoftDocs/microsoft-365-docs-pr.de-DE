@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Diese Angebotsseite enthält Links und Planungsinformationen für Sicherheit und Compliance in Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f050d8bb7052ec2f62a9e33c35bcbe43546a40c2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 90f4083bdf38f4b1390ee31d0853ad65e3fe236f
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927961"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051707"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Planen der &amp; Sicherheitskonformität
 
@@ -38,7 +38,7 @@ Verschaffen Sie sich einen Überblick über die Möglichkeiten zum Schutz von In
 
 Beachten Sie nach dem Einrichten Ihres Microsoft 365-Abonnements Ihre Startnotiz. Secure Score bietet Konfigurationsvorschläge, die Sie zum Erhöhen Ihrer Bewertung verwenden können. Das Ziel besteht darin, vorhandene Möglichkeiten zu erkennen, mit denen Sie nutzen Ihre Umgebung schützen können, ohne die Produktivität Ihrer Benutzer einzuschränken.
   
-- [Einführung der Office 365 Sicherheitsbewertung](../security/mtp/microsoft-secure-score.md)
+- [Einführung der Office 365 Sicherheitsbewertung](../security/defender/microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>Schritt 3: Planen des Zugriffsschutzes für Identität und Geräte
 
@@ -46,7 +46,7 @@ Der Schutz des Zugriffs auf Ihre Microsoft 365-Daten und -Dienste ist entscheide
   
 - [Zugriffsschutz für Daten und Dienste in Office 365](protect-access-to-data-and-services.md)
     
-- [Sichere E-Mail-Richtlinien und Konfigurationen](../security/office-365-security/secure-email-recommended-policies.md)
+- [Sichere E-Mail-Richtlinien und Konfigurationen](../security/defender-365-security/secure-email-recommended-policies.md)
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=55032)
   
@@ -62,15 +62,15 @@ Das Security Compliance Center bietet Ihnen einen einzigen Einblick in die Steue
   
 - [Wechseln zum Security &amp; Compliance Center](./microsoft-365-compliance-center.md)
     
-- [Berechtigungen im Security &amp; Compliance Center](~/security/office-365-security/protect-against-threats.md)
+- [Berechtigungen im Security &amp; Compliance Center](~/security/defender-365-security/protect-against-threats.md)
     
-- [Benutzern Zugriff auf das Security &amp; Compliance Center ermöglichen](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [Benutzern Zugriff auf das Security &amp; Compliance Center ermöglichen](~/security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>Schritt 6: Verwenden von End-to-End-Sicherheitsszenarien als Ausgangspunkt
 
 Verwenden Sie diese empfohlene Konfiguration als Ausgangspunkt für Zugriffssicherheitsszenarien auf Unternehmensniveau oder auf fortschrittlichem Niveau.
   
-- [Sichere E-Mail-Richtlinien und Konfigurationen](../security/office-365-security/secure-email-recommended-policies.md)
+- [Sichere E-Mail-Richtlinien und Konfigurationen](../security/defender-365-security/secure-email-recommended-policies.md)
     
 - [Contoso in der Microsoft-Cloud](../enterprise/contoso-case-study.md)
     
@@ -80,6 +80,6 @@ Konfigurieren Ihrer Sicherheits- und Complianceeinstellungen in diesen Admin Cen
   
 |**Abonnement**|**Verwaltungs-URL**|**Dashboards und Admin-Center**|
 |:-----|:-----|:-----|
-|Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 Admin-Center  <br/>  Security &amp; Compliance-Center   <br/>  Exchange Admin-Center  <br/>  SharePoint Admin Center und OneDrive for Business Admin Center  <br/> |
+|Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 Admin-Center  <br/>  Security &amp; Compliance-Center   <br/>  Exchange Admin-Center  <br/>  SharePoint Admin Center und OneDrive for Business Admin Center  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft Mobile Anwendungsverwaltung  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud-App-Sicherheit  <br/> |

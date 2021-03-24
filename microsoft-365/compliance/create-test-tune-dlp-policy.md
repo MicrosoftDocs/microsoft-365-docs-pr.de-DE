@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: In diesem Artikel erfahren Sie, wie Sie eine DLP-Richtlinie entsprechend Ihren Organisatorischen Anforderungen erstellen, testen und optimieren.
-ms.openlocfilehash: d26412eb54176dfd3c5d881d82076b2a58330ebd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bd4857a2baefb22d789fc713a537d7e4a656718d
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923451"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052083"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Erstellen, Testen und Optimieren einer DLP-Richtlinie
 
@@ -38,7 +38,7 @@ DLP untersucht E-Mail-Nachrichten und -Dateien auf vertrauliche Informationen, z
 
 ## <a name="permissions"></a>Berechtigungen
 
-Mitglieder des Kompatibilitätsteams, die DLP-Richtlinien erstellen, benötigen Berechtigungen zum Zugreifen auf das Compliance Center. Standardmäßig hat Ihr Mandantenadministrator Zugriff darauf, compliance officers und anderen Personen Zugriff zu geben. Gehen Sie wie folgt vor:
+Mitglieder des Kompatibilitätsteams, die DLP-Richtlinien erstellen, benötigen Berechtigungen zum Zugreifen auf das Compliance Center. Standardmäßig hat Ihr Mandantenadministrator Zugriff darauf, compliance officers und anderen Personen Zugriff zu geben. Führen Sie die folgenden Schritte aus:
   
 1. Erstellen Sie eine Gruppe in Microsoft 365, und fügen Sie dieser Compliance Officers hinzu.
     
@@ -50,7 +50,7 @@ Mitglieder des Kompatibilitätsteams, die DLP-Richtlinien erstellen, benötigen 
 
 Verwenden Sie die **Rolle View-Only DLP Compliance Management,** um Rollengruppen mit Nur-Ansicht-Berechtigungen für die DLP-Richtlinien und DLP-Berichte zu erstellen.
 
-Weitere Informationen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Weitere Informationen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Compliance Center](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Diese Berechtigungen sind erforderlich, um eine DLP-Richtlinie zu erstellen und anzuwenden, ohne Richtlinien zu erzwingen.
 

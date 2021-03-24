@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Als Administrator und Nachrichtensender können Sie bestimmte E-Mails widerrufen, die mit der erweiterten Office 365-Nachrichtenverschlüsselung verschlüsselt wurden.
-ms.openlocfilehash: b49915b6ef72d366a4b2718319150d2d5b640b9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 340a9e73dba50e28223ee561db749a089c649df6
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917197"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051717"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Widerrufen von E-Mails, die durch erweiterte Nachrichtenverschlüsselung verschlüsselt wurden
 
@@ -75,7 +75,7 @@ Microsoft 365-Administratoren führen die folgenden allgemeinen Schritte aus, um
 - Stellen Sie sicher, dass Sie die Nachricht widerrufen können.
 - Widerrufen Sie die E-Mail.
 
-### <a name="step-1-obtain-the-message-id-of-the-email"></a>Schritt 1: Abrufen der Nachrichten-ID der E-Mail
+### <a name="step-1-obtain-the-message-id-of-the-email"></a>Schritt 1. Abrufen der Nachrichten-ID der E-Mail
 
 Bevor Sie eine verschlüsselte E-Mail widerrufen können, erfassen Sie die Nachrichten-ID der E-Mail. Die MessageId hat in der Regel das Format:
 
@@ -91,13 +91,13 @@ Es gibt mehrere Möglichkeiten, die Nachrichten-ID der E-Mail zu finden, die Sie
 
 #### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>So identifizieren Sie die Nachrichten-ID der E-Mail, die Sie widerrufen möchten, mithilfe von Berichten zur Office-Nachrichtenverschlüsselung im Security &amp; Compliance Center
 
-1. Navigieren Sie im Security &amp; Compliance Center zum **Nachrichtenverschlüsselungsbericht**. Informationen zu diesem Bericht finden Sie unter [Anzeigen von E-Mail-Sicherheitsberichten im Security &amp; Compliance Center](../security/office-365-security/view-email-security-reports.md).
+1. Navigieren Sie im Security &amp; Compliance Center zum **Nachrichtenverschlüsselungsbericht**. Informationen zu diesem Bericht finden Sie unter [Anzeigen von E-Mail-Sicherheitsberichten im Security &amp; Compliance Center](../security/defender-365-security/view-email-security-reports.md).
 
 2. Wählen Sie die **Tabelle Details anzeigen** aus, und identifizieren Sie die Nachricht, die Sie widerrufen möchten.
 
 3. Doppelklicken Sie auf die Nachricht, um Details anzuzeigen, die die Nachrichten-ID enthalten.
 
-### <a name="step-2-verify-that-the-mail-is-revocable"></a>Schritt 2: Überprüfen, ob die E-Mail wieder aufrufbar ist
+### <a name="step-2-verify-that-the-mail-is-revocable"></a>Schritt 2. Überprüfen, ob die E-Mail wieder aufrufbar ist
 
 Um zu überprüfen, ob Sie eine Nachricht widerrufen können, überprüfen Sie in der Tabelle **Details** im Security Compliance Center, ob das Feld Sperrstatus im Verschlüsselungsbericht &amp; angezeigt wird.
 
@@ -119,7 +119,7 @@ Führen Sie die folgenden Schritte aus, um zu überprüfen, ob Sie eine bestimmt
      "Test message" True
      ```
 
-### <a name="step-3-revoke-the-mail"></a>Schritt 3: Widerrufen der E-Mail
+### <a name="step-3-revoke-the-mail"></a>Schritt 3. Widerrufen der E-Mail
 
 Sobald Sie die Nachrichten-ID der E-Mail kennen, die Sie widerrufen möchten, und sie überprüft haben, ob die Nachricht wieder aufrufbar ist, können Sie die E-Mail über das Security Compliance Center oder über &amp; Windows PowerShell.
 

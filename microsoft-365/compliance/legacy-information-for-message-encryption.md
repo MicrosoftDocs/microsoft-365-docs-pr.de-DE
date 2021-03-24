@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie Legacydateien zu Office 365 Message Encryption (OME) für Ihre Organisation überwechseln.
-ms.openlocfilehash: 0b9c32b8b30753b02a5a0cdaa40b644ca89cfba3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: eabf655b6fa92a6f502ebe1e071d41f394f78929
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905917"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051827"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Legacyinformationen für die Office 365-Nachrichtenverschlüsselung
 
@@ -135,7 +135,7 @@ Wenn Ihre E-Mail-Benutzer verschlüsselte Nachrichten senden, können Empfänger
 
 7. Wählen **Sie in Gehen Sie wie folgt** aus Ändern der **Nachrichtensicherheit** \> **Entfernen der vorherigen Version von OME** aus.
 
-8. Wählen Sie **Speichern** aus.
+8. Klicken Sie auf **Speichern**.
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Verwenden von Exchange Online PowerShell zum Erstellen einer Regel zum Entfernen der Verschlüsselung aus verschlüsselten E-Mail-Antworten ohne die neuen OME-Funktionen
 
@@ -293,7 +293,7 @@ Wenn eine verschlüsselte Antwort aus dem Verschlüsselungsportal oder über die
   
  **F. Ich bin ein Exchange Hosted Encryption (EHE)-Abonnent. Wo kann ich mehr über das Upgrade auf Office 365-Nachrichtenverschlüsselung erfahren?**
   
-Bei allen EHE-Kunden wurde ein Upgrade auf Office 365-Nachrichtenverschlüsselung durchgeführt. Weitere Informationen finden Sie im [Exchange Hosted Encryption Upgrade Center](../security/office-365-security/exchange-online-protection-overview.md).
+Bei allen EHE-Kunden wurde ein Upgrade auf Office 365-Nachrichtenverschlüsselung durchgeführt. Weitere Informationen finden Sie im [Exchange Hosted Encryption Upgrade Center](../security/defender-365-security/exchange-online-protection-overview.md).
   
  **F. Muss ich URLs, IP-Adressen oder Ports in der Firewall meiner Organisation öffnen, um die Office 365-Nachrichtenverschlüsselung zu unterstützen?**
   

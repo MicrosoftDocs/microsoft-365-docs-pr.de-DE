@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: Erfahren Sie mehr über Aufgaben, mit deren Hilfe Sie schnell mit der Compliance in Microsoft 365 beginnen können.
-ms.openlocfilehash: 69aef07e65f5644f9aa294025c8388410f160243
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b8a6f98a38dcb6096287cbc2389648c0e7457e5c
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908585"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052103"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Schnelle Aufgaben für die ersten Schritte mit Microsoft 365 Compliance
 
@@ -34,7 +34,7 @@ Es ist wichtig zu verwalten, wer in Ihrer Organisation Zugriff auf das Microsoft
 
 Weisen Sie zunächst den Personen in Ihrer Organisation Complianceberechtigungen zu, damit sie diese Aufgaben ausführen können, und um zu verhindern, dass nicht autorisierte Personen Zugriff auf Bereiche haben, die außerhalb ihrer Zuständigkeiten stehen. Sie sollten sicherstellen, dass Sie dem Compliancedatenadministrator  und den Administratorrollen des Complianceadministrators die richtigen Personen zugewiesen haben, bevor Sie mit der Konfiguration und Implementierung von Compliancelösungen beginnen, die in Microsoft 365 enthalten sind.  Außerdem müssen Sie der globalen Azure Active Directory-Leserolle Benutzer zuweisen, um Daten im Compliance-Manager anzeigen zu können.
 
-Schrittweise Anleitungen zum Konfigurieren von Berechtigungen und Zuweisen von Personen zu Administratorrollen finden Sie unter Permissions in the [Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+Schrittweise Anleitungen zum Konfigurieren von Berechtigungen und Zuweisen von Personen zu Administratorrollen finden Sie unter Permissions in the [Security & Compliance Center](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="task-2-know-your-state-of-compliance"></a>Aufgabe 2: Kennen Des Status der Compliance
 
@@ -47,9 +47,9 @@ Eine schrittweise Anleitung für die ersten Schritte mit Compliance Manager find
 >[!IMPORTANT]
 >Sicherheit und Compliance sind für die meisten Organisationen eng integriert. Es ist wichtig, dass Ihre Organisation grundlegende Sicherheits-, Bedrohungsschutz- und Identitäts- und Zugriffsverwaltungsbereiche behandelt, um einen detaillierten Schutzansatz für Sicherheit und Compliance zu bieten.
 >
->Überprüfen Sie [Ihre Microsoft 365 Secure Score](../security/mtp/microsoft-secure-score.md) im Microsoft 365 Security Center, und erfüllen Sie die in den folgenden Artikeln beschriebenen Aufgaben:
+>Überprüfen Sie [Ihre Microsoft 365 Secure Score](../security/defender/microsoft-secure-score.md) im Microsoft 365 Security Center, und erfüllen Sie die in den folgenden Artikeln beschriebenen Aufgaben:
 >
-> - [Security Roadmap – Die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](../security/office-365-security/security-roadmap.md)
+> - [Security Roadmap – Die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](../security/defender-365-security/security-roadmap.md)
 > - [Top 12 Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus](../security/top-security-tasks-for-remote-work.md)
 
 ## <a name="task-3-enable-auditing-for-your-organization"></a>Aufgabe 3: Aktivieren der Überwachung für Ihre Organisation
@@ -107,7 +107,7 @@ Schrittweise Anleitungen zur Verwendung des Inhalts-Explorers finden Sie unter [
 
 ### <a name="activity-explorer"></a>Aktivitäten-Explorer
 Der Aktivitäts-Explorer hilft Ihnen zu überwachen, was mit Ihren klassifizierten und mit Bezeichnungen versehenen vertraulichen Elementen geschieht:
-- Microsoft Office SharePoint Online
+- SharePoint
 - Exchange
 - OneDrive
 
@@ -146,7 +146,7 @@ Definieren Sie Typen vertraulicher Informationen basierend auf dem Muster, das i
 
 Schrittweise Anleitungen zum Definieren benutzerdefinierter typen vertraulicher Informationen finden Sie unter [Create a custom sensitive information type in](./create-a-custom-sensitive-information-type.md)the Security & Compliance Center .
 
-### <a name="prevent-data-loss"></a>Datenverlust verhindern
+### <a name="prevent-data-loss"></a>Verhindern von Datenverlust
 
 Mit Den Richtlinien zur Verhinderung von Datenverlust [(Data Loss Prevention, DLP)](data-loss-prevention-policies.md) können Sie vertrauliche Informationen in Ihrer Microsoft 365-Organisation identifizieren, überwachen und automatisch schützen. Verwenden Sie DLP-Richtlinien, um vertrauliche Elemente in allen Microsoft-Diensten zu identifizieren, die versehentliche Freigabe vertraulicher Elemente zu verhindern und Benutzern zu helfen, richtlinienkonform zu bleiben, ohne ihren Workflow zu unterbrechen.
 

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Microsoft Compliance Manager eine personalisierte Bewertung basierend auf Maßnahmen berechnet, die zur Behandlung von Risiken und zur Verbesserung Ihrer Compliancehaltung ergriffen wurden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75d340c31b4f5477df845531bfb933883f331198
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 756ce207b1e9583bf63f19351e85955950487404
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908575"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052113"
 ---
 # <a name="compliance-score-calculation"></a>Berechnung der Compliance-Bewertung
 
@@ -61,7 +61,7 @@ Der Aktionsstatus wird alle 24 Stunden auf Ihrem Dashboard aktualisiert. Sobald 
 
 Wenn Sie beispielsweise die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) im Azure AD-Portal aktivieren, erkennt der Compliance-Manager die Einstellung und spiegelt sie in den Details der Steuerelementzugriffslösung wider. Wenn Sie MFA nicht aktivieren, gibt der Compliance-Manager dies als empfohlene Aktion an.
 
-Erfahren Sie mehr [über Secure Score und deren Funktionsweise.](../security/mtp/microsoft-secure-score.md)
+Erfahren Sie mehr [über Secure Score und deren Funktionsweise.](../security/defender/microsoft-secure-score.md)
   
 ## <a name="action-types-and-points"></a>Aktionstypen und -punkte
 
@@ -110,7 +110,7 @@ Aktionen wird ein Bewertungswert zugewiesen, der darauf basiert, ob sie obligato
   
 Jede Aktion hat einen zugewiesenen Wert im Compliance-Manager basierend auf dem Risiko, das sie darstellt:
 
-|**Typ**|**Zugewiesene Bewertung**|
+|**Type**|**Zugewiesene Bewertung**|
 |:-----|:-----|
 | Vorbeugendes Obligatorisches | 27 |
 | Vorbeugende Diskretion | 9  |
