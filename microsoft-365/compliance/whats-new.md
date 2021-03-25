@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ob es darum geht, dem Compliance Center neue Lösungen zu hinzufügen, vorhandene Features basierend auf Ihrem Feedback zu aktualisieren oder eine aktuelle und aktualisierte Dokumentation zu erstellen– Microsoft 365 hilft Ihnen, auf dem neuesten Stand der sich ständig ändernden Compliancelandschaft zu bleiben. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ed29ad5186972f56609a596d88a48c7c460f295f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c695bc2632e766eb6f14c4e9f7eabbbddff66fd2
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905857"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164974"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Neuerungen in Microsoft 365 Compliance
 
@@ -33,7 +33,7 @@ Ob es darum geht, dem [Microsoft 365 Compliance Center](microsoft-365-compliance
 > Einige Compliancefeatures werden für unsere Kunden mit unterschiedlichen Geschwindigkeiten ausgeführt. Wenn Sie noch kein Feature sehen, versuchen Sie, sich selbst zu [Gezieltes Release](/office365/admin/manage/release-options-in-office-365) hinzuzufügen.
 
 > [!TIP]
-> Interessieren Sie sich dafür, was in anderen Admin Centers geschieht? Dann lesen Sie die folgenden Artikel:<br>[Neuerungen im Microsoft 365 Admin Center](/office365/admin/whats-new-in-preview)<br>[Aktive Websites im SharePoint Online Admin Center](/sharepoint/what-s-new-in-admin-center)<br>[Neuerungen in Microsoft 365 Defender](../security/mtp/whats-new.md)<br><br>
+> Interessieren Sie sich dafür, was in anderen Admin Centers geschieht? Dann lesen Sie die folgenden Artikel:<br>[Neuerungen im Microsoft 365 Admin Center](/office365/admin/whats-new-in-preview)<br>[Aktive Websites im SharePoint Online Admin Center](/sharepoint/what-s-new-in-admin-center)<br>[Neuerungen in Microsoft 365 Defender](../security/defender/whats-new.md)<br><br>
 Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap), um sich über Features von Microsoft 365 zu informieren, die eingeführt wurden, bereitgestellt werden, sich in der Entwicklung befinden, eingestellt oder zuvor veröffentlicht wurden.
 
 ## <a name="january-2021"></a>Januar 2021
@@ -78,7 +78,7 @@ Verbesserte Workflow- und Funktionalität zum Hinzufügen von [Custodians](add-c
 
 ### <a name="data-connectors"></a>Datenconnectors
 
-[Vier neue "Globenet"-Connectors wurden veröffentlicht:](archiving-third-party-data.md#third-party-data-connectors)Redtail Speak, Salesforce Chatter, ServiceNow und Yieldbroker.
+[Vier neue Connectors für Denkelemente](archiving-third-party-data.md#third-party-data-connectors)wurden veröffentlicht: Redtail Speak, Salesforce Chatter, ServiceNow und Yieldbroker.
 
 ### <a name="encryption"></a>Verschlüsselung
 
@@ -122,7 +122,7 @@ Um die Verwaltung verschlüsselter Inhalte im eDiscovery-Workflow zu vereinfache
 
 ### <a name="data-connectors"></a>Datenconnectors
 
-[Fünf neue Globanet-Connectors in der Vorschau](archiving-third-party-data.md#third-party-data-connectors). Neue Connectors sind Reuters Dealing, Reuters FX, CellTrust, XIP, generische MS SQL Datenbankdaten.
+[Fünf neue Connectors in der Vorschau](archiving-third-party-data.md#third-party-data-connectors). Neue Connectors sind Reuters Dealing, Reuters FX, CellTrust, XIP, generische MS SQL Datenbankdaten.
 
 ### <a name="retention-labels-disposition-review"></a>Aufbewahrungsbezeichnungen (Dispositionsüberprüfung)
 
@@ -160,7 +160,7 @@ Sehen Sie sich das folgende Video an, um zu erfahren, wie Der Compliance-Manager
 - Die neue 10-jahres-Aufbewahrung von Überwachungsprotokollen unterstützt lange laufende Untersuchungen und reagiert auf behördliche, rechtliche und interne Verpflichtungen.
 - [Drei neue wichtige Ereignisse](advanced-audit.md#access-to-crucial-events-for-investigations). Die folgenden neuen Ereignisse können Ihnen dabei helfen, mögliche Verstöße zu untersuchen und den Umfang der Kompromisse zu ermitteln: Send, SearchQueryInitiatedExchange und SearchQueryInitiatedSharePoint.
 
-### <a name="communication-compliance"></a>Kommunikationsbezogene Compliance
+### <a name="communication-compliance"></a>Kommunikationscompliance
 
 - [Aktualisierte Rollengruppen](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance). Rollengruppen für die Kommunikationskonformität entsprechen nun der Rollengruppenstruktur, die für die Insider-Risikomanagementlösung verfügbar ist.
 - [Berichtedashboard](communication-compliance-feature-reference.md#reports). Ihr zentraler Ort zum Anzeigen aller Kommunikationskonformitätsberichte. Berichts-Widgets bieten eine schnelle Ansicht der Einblicke, die am häufigsten für eine allgemeine Bewertung des Status von Kommunikations-Compliance-Aktivitäten benötigt werden.
@@ -169,7 +169,7 @@ Sehen Sie sich das folgende Video an, um zu erfahren, wie Der Compliance-Manager
 
 ### <a name="data-connectors"></a>Datenconnectors
 
-- [Neue Datenconnectors von Drittanbietern](archiving-third-party-data.md#third-party-data-connectors). 25 neue Datenconnectors, darunter 14 Connectors von Globenet und 8 von Telemessage.
+- [Neue Datenconnectors von Drittanbietern](archiving-third-party-data.md#third-party-data-connectors). 25 neue Datenconnectors, darunter 14 Connectors von Veritas und 8 von Telemessage.
 - [Physischer Badging Connector](import-physical-badging-data.md). Importieren von physischen Daten, z. B. unformatierte physische Zugriffsereignisse von Mitarbeitern oder physische Zugriffsalarme, die durch das Schlechtungssystem Ihrer Organisation generiert werden. Beispiele hierfür sind Einträge in Gebäude, Serverräume oder Rechenzentren. Physische Schaddaten können von der Risikomanagementlösung für Insider verwendet werden, um Ihre Organisation vor böswilligen Aktivitäten oder Datendiebstahl in Ihrer Organisation zu schützen.
 
 ### <a name="insider-risk-management"></a>Insider-Risikomanagement

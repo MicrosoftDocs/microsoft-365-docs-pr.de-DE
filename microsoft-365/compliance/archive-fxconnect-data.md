@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus Der 365-Verbinder von "Globanet FX Connect" in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren, damit Sie Compliancefeatures wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: da6b0c82193fc76090ba9a324ea4c3d8f415063a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus Der Fx Connect in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren, damit Sie Compliancefeatures wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Drittanbieterdaten Ihrer Organisation zu verwalten.
+ms.openlocfilehash: 1efbe8d6d8cecdd8394b565abad4d33c8610398f
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904205"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164260"
 ---
 # <a name="set-up-a-connector-to-archive-fx-connect-data"></a>Einrichten eines Connectors zum Archivieren von FX Connect-Daten
 
-Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center, um Daten von der FX Connect-Plattform für die Zusammenarbeit in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Das Programm bietet einen [FX Connect-Connector,](https://globanet.com/fx-connect/) der für die Erfassung von FX Connect-Elementen und den Import dieser Elemente in Microsoft 365 konfiguriert ist. Der Connector konvertiert den Inhalt aus FX Connect, z. B. Gewerken, Nachrichten und anderen Details aus dem FX Connect-Konto Ihrer Organisation, in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in das Postfach des Benutzers in Microsoft 365.
+Verwenden Sie einen Connect-Connector im Microsoft 365 Compliance Center, um Daten von der FX Connect-Plattform für die Zusammenarbeit in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Mit Einem [FX Connect-Connector,](https://globanet.com/fx-connect/) der für die Erfassung von FX Connect-Elementen und den Import dieser Elemente in Microsoft 365 konfiguriert ist, stellt Einf. Der Connector konvertiert den Inhalt aus FX Connect, z. B. Gewerken, Nachrichten und anderen Details aus dem FX Connect-Konto Ihrer Organisation, in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in das Postfach des Benutzers in Microsoft 365.
 
 Nachdem FX Connect-Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365-Compliancefeatures anwenden, wie z. B. Litigation Hold, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen sowie Kommunikationskonformität. Die Verwendung eines FX Connect-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Dazu beitragen, dass Ihre Organisation den richtlinienkonformen Richtlinien von Behörden und Behörden entspricht.
 
@@ -33,15 +33,15 @@ In der folgenden Übersicht wird der Prozess der Verwendung eines Connectors zum
 
 1. Ihre Organisation arbeitet mit FX Connect zusammen, um eine FX Connect-Website zu einrichten und zu konfigurieren.
 
-2. Einmal alle 24 Stunden werden Elemente aus FX Connect-Konten auf die Website "Globenet Merge1" kopiert. Der Connector konvertiert auch die FX Connect-Elemente in ein E-Mail-Nachrichtenformat.
+2. Einmal alle 24 Stunden werden Elemente aus FX Connect-Konten auf die Website "Veritas Merge1" kopiert. Der Connector konvertiert auch die FX Connect-Elemente in ein E-Mail-Nachrichtenformat.
 
-3. Der fx Connect-Connector, den Sie im Microsoft 365 Compliance Center erstellen, stellt jeden Tag eine Verbindung mit dem Standort "GlobeNet Merge1" bereit und überträgt die FX Connect-Elemente an einen sicheren Azure Storage-Speicherort in der Microsoft-Cloud.
+3. Der fx Connect-Connector, den Sie im Microsoft 365 Compliance Center erstellen, stellt jeden Tag eine Verbindung mit dem Standort von "Veritas Merge1" her und überträgt die FX Connect-Elemente an einen sicheren Azure Storage-Speicherort in der Microsoft-Cloud.
 
 4. Der Connector importiert Elemente in die Postfächer bestimmter Benutzer mithilfe des Werts der *Email-Eigenschaft* der automatischen Benutzerzuordnung, wie in [Schritt 3 beschrieben.](#step-3-map-users-and-complete-the-connector-setup) In den Benutzerpostfächern wird ein Unterordner im Posteingangsordner mit dem Namen **FX Connect** erstellt, und die Elemente werden in diesen Ordner importiert. Der Connector verwendet dazu den Wert der *Email-Eigenschaft.* Jedes FX Connect-Element enthält diese Eigenschaft, die mit der E-Mail-Adresse jedes Teilnehmers des Elements gefüllt wird.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Erstellen Sie ein Konto für das Merge1-Konto von "GlobeNet Merge1" für Microsoft-Connectors.  Um ein Konto zu erstellen, wenden Sie sich an [den Kundensupport von "Globenet".](https://globanet.com/ms-connectors-contact) Sie melden sich bei diesem Konto an, wenn Sie den Connector in Schritt 1 erstellen.
+- Erstellen Sie ein Konto für Denkdruck1 für Microsoft Connectors.  Wenden Sie sich zum Erstellen eines Kontos an [den Kundensupport von Veritas](https://globanet.com/ms-connectors-contact). Sie melden sich bei diesem Konto an, wenn Sie den Connector in Schritt 1 erstellen.
 
 - Der Benutzer, der den FX Connect-Connector in Schritt 1 erstellt (und in Schritt 3 abgeschlossen) muss der Rolle Postfachimportexport in Exchange Online zugewiesen werden. Diese Rolle ist erforderlich, um Connectors auf der Seite **Datenconnectors** im Microsoft 365 Compliance Center hinzuzufügen. Diese Rolle ist standardmäßig nicht einer Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle Postfachimportexport zur Rollengruppe Organisationsverwaltung in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle Postfachimportexport zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten Erstellen von [Rollengruppen](/Exchange/permissions-exo/role-groups#create-role-groups) oder [Ändern](/Exchange/permissions-exo/role-groups#modify-role-groups) von Rollengruppen im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
@@ -59,7 +59,7 @@ Der erste Schritt besteht im Zugriff auf die Seite **Datenconnectors** im Micros
 
 5. Melden Sie sich bei Ihrem Merge1-Konto an, um den Connector zu konfigurieren.
 
-## <a name="step-2-configure-the-fx-connect-connector-on-the-globanet-merge1-site"></a>Schritt 2: Konfigurieren des FX Connect-Connectors auf der Website "Globenet Merge1"
+## <a name="step-2-configure-the-fx-connect-connector-on-the-veritas-merge1-site"></a>Schritt 2: Konfigurieren des FX Connect-Connectors auf dem Standort "Merge1"
 
 Der zweite Schritt besteht im Konfigurieren des FX Connect-Connectors auf dem Merge1-Standort. Informationen zum Konfigurieren des FX Connect-Connectors finden Sie unter [Merge1-Benutzerhandbuch](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20FX%20Connect%20User%20Guide%20.pdf)für Drittanbieterconnectors .
 

@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Administratoren können einen Connector zum Importieren und Archivieren von Salesforce Chatter-Daten aus Demanet in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren. Nachdem Sie diese Daten archiviert haben, können Sie Compliancefeatures wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um Daten von Drittanbietern zu verwalten.
-ms.openlocfilehash: 14f1f190acef1036ebe29e43a7df4005242f8c23
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Administratoren können einen Connector zum Importieren und Archivieren von Salesforce -Chatter-Daten aus DerEntraum in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren. Nachdem Sie diese Daten archiviert haben, können Sie Compliancefeatures wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um Daten von Drittanbietern zu verwalten.
+ms.openlocfilehash: c04dc3026eaa5abb23b332dbae826c052344da31
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925117"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164058"
 ---
 # <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>Einrichten eines Connectors zum Archivieren von Salesforce Chatter-Daten
 
-Verwenden Sie im Microsoft 365 Compliance Center einen Globenet-Connector, um Daten von der Salesforce Chatter-Plattform in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Das Unternehmen Bietet einen [Salesforce Chatter-Connector,](http://globanet.com/chatter/) der Elemente aus der Datenquelle eines Drittanbieters erfasst und diese Elemente nach Microsoft 365 importiert. Der Connector konvertiert die Inhalte wie Chats, Anlagen und Beiträge aus Salesforce Chatter in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in das Postfach des Benutzers in Microsoft 365.
+Verwenden Sie im Microsoft 365 Compliance Center einen Connectors für Denkvorgang, um Daten aus der Salesforce Chatter-Plattform in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Ein [Salesforce-Chatterconnector,](http://globanet.com/chatter/) der Elemente aus der Datenquelle eines Drittanbieters erfasst und diese Elemente nach Microsoft 365 importiert, wird von Dereinst mit einem Salesforce Chatter-Connector verbunden. Der Connector konvertiert die Inhalte wie Chats, Anlagen und Beiträge aus Salesforce Chatter in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in das Postfach des Benutzers in Microsoft 365.
 
 Nachdem Salesforce-Chatter-Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365-Compliancefeatures wie z. B. Das Aufbewahrungsverfahren für Rechtsstreitigkeiten, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen anwenden. Die Verwendung eines Salesforce Chatter-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Dazu beitragen, dass Ihre Organisation den richtlinienkonformen Richtlinien von Behörden und Behörden entspricht.
 
@@ -33,15 +33,15 @@ In der folgenden Übersicht wird der Prozess der Verwendung eines Connectors zum
 
 1. Ihre Organisation arbeitet mit Salesforce Chatter zusammen, um eine Salesforce Chatter-Website zu einrichten und zu konfigurieren.
 
-2. Einmal alle 24 Stunden werden Salesforce Chatter-Elemente auf die Website "Globenet Merge1" kopiert. Der Connector verwendet auch Salesforce Chatter-Elemente in einem E-Mail-Nachrichtenformat.
+2. Einmal alle 24 Stunden werden Salesforce Chatter-Elemente auf die Website "Merge1" von "Veritas Merge1" kopiert. Der Connector verwendet auch Salesforce Chatter-Elemente in einem E-Mail-Nachrichtenformat.
 
-3. Der Salesforce-Chatterconnector, den Sie im Microsoft 365 Compliance Center erstellen, stellt täglich eine Verbindung mit der Website "GlobeNet Merge1" bereit und überträgt die Chatterinhalte an einen sicheren Azure Storage-Speicherort in der Microsoft-Cloud.
+3. Der Salesforce Chatter-Connector, den Sie im Microsoft 365 Compliance Center erstellen, stellt jeden Tag eine Verbindung mit der Website von Veritas Merge1 her und überträgt die Chatterinhalte an einen sicheren Azure Storage-Speicherort in der Microsoft-Cloud.
 
 4. Der Connector importiert die konvertierten Elemente in die Postfächer bestimmter Benutzer mithilfe des Werts der *Email-Eigenschaft* der automatischen Benutzerzuordnung, wie in [Schritt 3 beschrieben.](#step-3-map-users-and-complete-the-connector-setup) In den Benutzerpostfächern wird ein Unterordner im Posteingangsordner namens **Salesforce Chatter** erstellt, und Elemente werden in diesen Ordner importiert. Der Connector bestimmt mithilfe des Werts der Email-Eigenschaft, in welches Postfach Elemente *importiert werden.* Jedes Chatter-Element enthält diese Eigenschaft, die mit der E-Mail-Adresse jedes Teilnehmers des Elements gefüllt wird.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Erstellen Sie ein Merge1-Konto für Microsoft Connectors. Um ein Konto zu erstellen, wenden Sie sich an [den Kundensupport von "Globenet".](https://globanet.com/contact-us/) Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
+- Erstellen Sie ein Merge1-Konto für Microsoft Connectors. Wenden Sie sich zum Erstellen eines Kontos an [den Kundensupport von Veritas](https://www.veritas.com/content/support/). Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
 - Erstellen Sie eine Salesforce-Anwendung, und erwerben Sie ein Token unter [https://salesforce.com](https://salesforce.com) . Sie müssen sich als Administrator beim Salesforce-Konto anmelden und ein persönliches Benutzertoken zum Importieren von Daten erhalten. Außerdem müssen Trigger auf der Chatter-Website veröffentlicht werden, um Updates, Lösch- und Bearbeitungen zu erfassen. Diese Trigger erstellen einen Beitrag auf einem Kanal, und Merge1 erfasst die Informationen aus dem Kanal. Schrittweise Anweisungen zum Erstellen der Anwendung und zum Erwerben des Tokens finden Sie unter [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf).
 
@@ -61,9 +61,9 @@ Der erste Schritt besteht im Zugriff auf die Seite **Datenconnectors** im Micros
 
 5. Melden Sie sich bei Ihrem Merge1-Konto an, um den Connector zu konfigurieren.
 
-## <a name="step-2-configure-the-salesforce-chatter-on-the-globanet-merge1-site"></a>Schritt 2: Konfigurieren des Salesforce-Chatters auf der Website "Globenet Merge1"
+## <a name="step-2-configure-the-salesforce-chatter-on-the-veritas-merge1-site"></a>Schritt 2: Konfigurieren des Salesforce-Chatters auf der Website "Veritas Merge1"
 
-Der zweite Schritt besteht in der Konfiguration des Salesforce-Chatterconnector auf dem Standort "Globenet Merge1". Informationen zum Konfigurieren des Salesforce-Chatterconnectors finden Sie unter [Merge1-Benutzerhandbuch für Drittanbieterconnectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf).
+Der zweite Schritt besteht im Konfigurieren des Salesforce-Chatterconnector auf dem Standort "Merge1" von "Merge1". Informationen zum Konfigurieren des Salesforce-Chatterconnectors finden Sie unter [Merge1-Benutzerhandbuch für Drittanbieterconnectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf).
 
 Nachdem Sie auf & Beenden  **klicken,** wird die Seite Benutzerzuordnung im Connector-Assistenten im Microsoft 365 Compliance Center angezeigt.
 

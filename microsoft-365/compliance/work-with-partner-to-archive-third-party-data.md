@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie einen benutzerdefinierten Connector zum Importieren von Drittanbieterdaten aus Datenquellen wie Salesforce Chatter, Yahoo Messenger oder Yammer.
-ms.openlocfilehash: adf6583f397296361e8f0cb6f12e7054436fa34f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6e93ff765129296f62b43c93937701169bbf4b03
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928379"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164940"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Zusammenarbeit mit einem Partner zum Archivieren von Drittanbieterdaten
 
@@ -70,7 +70,7 @@ In den folgenden Abschnitten sind die Microsoft-Partner (und die von ihnen unter
   
 [ArchiveSocial](#archivesocial)
   
-[Globanet](#globanet)
+[Veritas](#veritas)
   
 [OpenText](#opentext)
   
@@ -142,9 +142,9 @@ In den folgenden Abschnitten sind die Microsoft-Partner (und die von ihnen unter
     
 - Vimeo
   
-### <a name="globanet"></a>Globanet
+### <a name="veritas"></a>Veritas
 
-Die folgenden Datenquellen von Drittanbietern werden von ["Globenet"](https://www.globanet.com) unterstützt: 
+Die folgenden Datenquellen von Drittanbietern werden von ["Veritas"](https://www.globanet.com) unterstützt: 
   
 - AOL mit Pivot-Client
  

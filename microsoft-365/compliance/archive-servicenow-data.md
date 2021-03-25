@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Administratoren können einen Connector zum Importieren und Archivieren von ServiceNow-Daten aus Demanet in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren. Nachdem Sie diese Daten archiviert haben, können Sie Compliancefeatures wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um Daten von Drittanbietern zu verwalten.
-ms.openlocfilehash: d9cc40e8d7660be96cefb8ec0d13e2b95bb8f31a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Administratoren können einen Connector zum Importieren und Archivieren von ServiceNow-Daten aus Dement in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren. Nachdem Sie diese Daten archiviert haben, können Sie Compliancefeatures wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um Daten von Drittanbietern zu verwalten.
+ms.openlocfilehash: 8f1f56f79d3cdd0e198f03d948837249d3e0ff3b
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925107"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164039"
 ---
 # <a name="set-up-a-connector-to-archive-servicenow-data"></a>Einrichten eines Connectors zum Archivieren von ServiceNow-Daten
 
-Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center, um Daten von der ServiceNow-Plattform in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Das Programm Bietet einen [ServiceNow-Connector,](https://globanet.com/servicenow/) der Elemente aus der Datenquelle eines Drittanbieters erfasst und diese Elemente in Microsoft 365 importiert. Der Connector konvertiert die Inhalte wie Livenachrichten, Anlagen und Beiträge aus ServiceNow in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
+Verwenden Sie einen Connectors für Denkdaten im Microsoft 365 Compliance Center, um Daten von der ServiceNow-Plattform in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Mit einem ServiceNow-Connector, der Elemente aus der Datenquelle eines Drittanbieters erfasst und diese Elemente in Microsoft 365 importiert, wird ein [ServiceNow-Connector](https://globanet.com/servicenow/) zur Verfügung stehen. Der Connector konvertiert die Inhalte wie Livenachrichten, Anlagen und Beiträge aus ServiceNow in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
 
 Nachdem ServiceNow-Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365-Compliancefeatures wie z. B. Litigation Hold, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen anwenden. Die Verwendung eines ServiceNow-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Dazu beitragen, dass Ihre Organisation den richtlinienkonformen Richtlinien von Behörden und Behörden entspricht.
 
@@ -33,15 +33,15 @@ In der folgenden Übersicht wird der Prozess der Verwendung eines Connectors zum
 
 1. Ihre Organisation arbeitet mit ServiceNow zusammen, um eine ServiceNow-Website zu einrichten und zu konfigurieren.
 
-2. Einmal alle 24 Stunden werden ServiceNow-Elemente auf die Website "Globenet Merge1" kopiert. Der Connector konvertiert auch ServiceNow-Elemente in ein E-Mail-Nachrichtenformat.
+2. Einmal alle 24 Stunden werden Die ServiceNow-Elemente auf die Website "Merge1" kopiert. Der Connector konvertiert auch ServiceNow-Elemente in ein E-Mail-Nachrichtenformat.
 
-3. Der ServiceNow-Connector, den Sie im Microsoft 365 Compliance Center erstellen, stellt jeden Tag eine Verbindung mit der Website von GlobeNet Merge1 bereit und überträgt die ServiceNow-Inhalte an einen sicheren Azure Storage-Speicherort in der Microsoft-Cloud.
+3. Der ServiceNow-Connector, den Sie im Microsoft 365 Compliance Center erstellen, stellt jeden Tag eine Verbindung mit der Website von "Veritas Merge1" her und überträgt die ServiceNow-Inhalte an einen sicheren Azure Storage-Speicherort in der Microsoft-Cloud.
 
 4. Der Connector importiert die konvertierten Elemente in die Postfächer bestimmter Benutzer mithilfe des Werts der *Email-Eigenschaft* der automatischen Benutzerzuordnung, wie in [Schritt 3 beschrieben.](#step-3-map-users-and-complete-the-connector-setup) In den Benutzerpostfächern wird ein Unterordner im Posteingangsordner **"ServiceNow"** erstellt, und Elemente werden in diesen Ordner importiert. Der Connector bestimmt mithilfe des Werts der Email-Eigenschaft, in welches Postfach Elemente *importiert werden.* Jedes ServiceNow-Element enthält diese Eigenschaft, die mit der E-Mail-Adresse jedes Teilnehmers des Elements aufgefüllt wird.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Erstellen Sie ein Merge1-Konto für Microsoft Connectors. Um ein Konto zu erstellen, wenden Sie sich an [den Kundensupport von "Globenet".](https://globanet.com/contact-us/) Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
+- Erstellen Sie ein Merge1-Konto für Microsoft Connectors. Wenden Sie sich zum Erstellen eines Kontos an [den Kundensupport von Veritas](https://www.veritas.com/content/support/). Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
 - Erstellen Sie eine ServiceNow-Anwendung zum Abrufen von Daten aus Ihrem ServiceNow-Konto. Schrittweise Anleitungen zum Erstellen der Anwendung finden Sie unter [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20ServiceNow%20User%20Guide%20.pdf).
 
@@ -61,9 +61,9 @@ Der erste Schritt besteht im Zugriff auf die Seite **Datenconnectors** im Micros
 
 5. Melden Sie sich bei Ihrem Merge1-Konto an, um den Connector zu konfigurieren.
 
-## <a name="step-2-configure-the-servicenow-on-the-globanet-merge1-site"></a>Schritt 2: Konfigurieren von ServiceNow auf der Website "Globenet Merge1"
+## <a name="step-2-configure-the-servicenow-on-the-veritas-merge1-site"></a>Schritt 2: Konfigurieren von ServiceNow auf der Website "Veritas Merge1"
 
-Der zweite Schritt besteht in der Konfiguration des ServiceNow-Connectors auf dem Standort "Globenet Merge1". Informationen zum Konfigurieren des ServiceNow-Connectors finden Sie unter [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20ServiceNow%20User%20Guide%20.pdf).
+Der zweite Schritt besteht in der Konfiguration des ServiceNow-Connectors auf dem Standort "Merge1". Informationen zum Konfigurieren des ServiceNow-Connectors finden Sie unter [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20ServiceNow%20User%20Guide%20.pdf).
 
 Nachdem Sie auf & Beenden  **klicken,** wird die Seite Benutzerzuordnung im Connector-Assistenten im Microsoft 365 Compliance Center angezeigt.
 

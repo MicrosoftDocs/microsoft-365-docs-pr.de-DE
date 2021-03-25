@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus Der Kugellack eDiscovery in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren. Nachdem Sie diese Daten archiviert haben, können Sie Compliancefeatures wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um Daten von Drittanbietern zu verwalten.
-ms.openlocfilehash: a5273082ba2f88cda8c323f47aec40fed31455d2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus Demut slack eDiscovery in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren. Nachdem Sie diese Daten archiviert haben, können Sie Compliancefeatures wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um Daten von Drittanbietern zu verwalten.
+ms.openlocfilehash: 48b0a6d4d5e8f6eafaaf900aa5c773cf4f99fe72
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925097"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163958"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data"></a>Einrichten eines Connectors zum Archivieren von Slack eDiscovery-Daten
 
-Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center, um Drittanbieterdaten aus sozialen Medien, Chatnachrichten und Plattformen für die Dokumentzusammenarbeit in Postfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Das Programm Bietet einen [Slack-Connector,](https://globanet.com/slack/) der so konfiguriert ist, dass Elemente aus der Datenquelle eines Drittanbieters (regelmäßig) erfasst und anschließend in Microsoft 365 importiert werden. Slack zieht Nachrichten und Dateien aus der Slack-API, konvertiert sie in ein E-Mail-Nachrichtenformat und importiert das Element dann in Benutzerpostfächer.
+Verwenden Sie im Microsoft 365 Compliance Center einen Verbinder für Die Zusammenarbeit von Unternehmen, um Daten von Drittanbietern aus sozialen Medien, Chatnachrichten und Plattformen für die Dokumentzusammenarbeit in Postfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Mit Einem [Slack-Connector,](https://globanet.com/slack/) der so konfiguriert ist, dass Elemente aus der Datenquelle eines Drittanbieters (regelmäßig) erfasst und anschließend in Microsoft 365 importiert werden, wird ein Slack-Connector zur Verfeindung von Elementen zur Verwendung in der Datenbank verwendet. Slack zieht Nachrichten und Dateien aus der Slack-API, konvertiert sie in ein E-Mail-Nachrichtenformat und importiert das Element dann in Benutzerpostfächer.
 
 Nachdem Slack eDiscovery-Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365-Compliancefeatures wie z. B. Das Rechtsstreitigkeitensverfahren, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen und die Kommunikationskonformität anwenden. Die Verwendung eines Slack-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Dazu beitragen, dass Ihre Organisation den richtlinienkonformen Richtlinien von Behörden und Behörden entspricht.
 
@@ -33,15 +33,15 @@ In der folgenden Übersicht wird der Prozess der Verwendung eines Connectors zum
 
 1. Ihre Organisation arbeitet mit Slack zusammen, um einen Slack-Standort zu einrichten und zu konfigurieren.
 
-2. Einmal alle 24 Stunden werden Chatnachrichten von Slack eDiscovery auf die Website "GlobeNet Merge1" kopiert. Der Connector konvertiert auch den Inhalt einer Chatnachricht in ein E-Mail-Nachrichtenformat.
+2. Einmal alle 24 Stunden werden Chatnachrichten von Slack eDiscovery auf die Website "Merge1" von "Veritas Merge1" kopiert. Der Connector konvertiert auch den Inhalt einer Chatnachricht in ein E-Mail-Nachrichtenformat.
 
-3. Der Slack eDiscovery-Connector, den Sie im Microsoft 365 Compliance Center erstellen, stellt jeden Tag eine Verbindung mit der Website "Globenet Merge1" bereit und überträgt die Chatnachrichten an einen sicheren Azure Storage-Speicherort in der Microsoft-Cloud.
+3. Der Slack eDiscovery-Connector, den Sie im Microsoft 365 Compliance Center erstellen, stellt jeden Tag eine Verbindung mit der Website "Veritas Merge1" her und überträgt die Chatnachrichten an einen sicheren Azure Storage-Speicherort in der Microsoft-Cloud.
 
 4. Der Connector importiert die konvertierten Chatnachrichtenelemente mithilfe des Werts der *Email-Eigenschaft* und der automatischen Benutzerzuordnung in die Postfächer bestimmter Benutzer, wie in Schritt 3 beschrieben. In den Benutzerpostfächern wird ein neuer Unterordner im Posteingangsordner mit dem Namen **Slack eDiscovery** erstellt, und die Chatnachrichtenelemente werden in diesen Ordner importiert. Der Connector bestimmt mithilfe des Werts der Email-Eigenschaft, in welches Postfach Elemente *importiert werden.* Jede Chatnachricht enthält diese Eigenschaft, die mit der E-Mail-Adresse jedes Teilnehmers der Chatnachricht gefüllt wird.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Erstellen Sie ein Konto für das Merge1-Konto von "GlobeNet Merge1" für Microsoft-Connectors. Um ein Konto zu erstellen, wenden Sie sich an [den Kundensupport von "Globenet".](https://globanet.com/ms-connectors-contact) Sie melden sich bei diesem Konto an, wenn Sie den Connector in Schritt 1 erstellen.
+- Erstellen Sie ein Konto für Denkdruck1 für Microsoft Connectors. Wenden Sie sich zum Erstellen eines Kontos an [den Kundensupport von Veritas](https://globanet.com/ms-connectors-contact). Sie melden sich bei diesem Konto an, wenn Sie den Connector in Schritt 1 erstellen.
 
 - Rufen Sie den Benutzernamen und das Kennwort für das Slack-Unternehmenskonto Ihrer Organisation ab. Sie müssen sich bei diesem Konto in Schritt 2 anmelden, wenn Sie Slack konfigurieren.
 
@@ -63,7 +63,7 @@ Der erste Schritt besteht im Zugriff auf die Seite **Datenconnectors** im Micros
 
 ## <a name="step-2-configure-slack-ediscovery"></a>Schritt 2: Konfigurieren von Slack eDiscovery
 
-Der zweite Schritt besteht im Konfigurieren des Slack eDiscovery-Connectors auf dem Merge1-Standort. Weitere Informationen zum Konfigurieren des Slack eDiscovery-Connectors auf der Website von "Globenet Merge1" finden Sie unter [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Slack%20eDiscovery%20User%20Guide.pdf).
+Der zweite Schritt besteht im Konfigurieren des Slack eDiscovery-Connectors auf dem Merge1-Standort. Weitere Informationen zum Konfigurieren des Slack eDiscovery-Connectors auf dem Standort "Merge1" finden Sie unter [Merge1-Benutzerhandbuch](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Slack%20eDiscovery%20User%20Guide.pdf)für Drittanbieterconnectors .
 
 Nachdem Sie auf **& Beenden** klicken, wird die Seite Benutzerzuordnung im Connector-Assistenten im Microsoft 365 Compliance Center angezeigt. 
 

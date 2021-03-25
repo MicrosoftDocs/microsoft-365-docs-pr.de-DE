@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus Denanet-Zoombesprechungen in Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren, damit Sie Compliancefeatures wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: a8f6ab0a629054457a3a0dc7cbbe74c051820058
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Administratoren können einen Connector zum Importieren und Archivieren von Daten aus Denk-Zoom-Besprechungen in Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren, damit Sie Compliancefeatures wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Drittanbieterdaten Ihrer Organisation zu verwalten.
+ms.openlocfilehash: b67098f3ddb1149927f4b82270c8fa4f14bbe558
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923361"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163728"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Einrichten eines Connectors zum Archivieren von Zoombesprechungsdaten
 
-Verwenden Sie im Microsoft 365 Compliance Center einen Globanet-Connector, um Daten aus Zoombesprechungen in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Das Programm Bietet [](https://globanet.com/zoom/) einen Zoombesprechungsconnector, der so konfiguriert ist, dass Elemente aus der Datenquelle eines Drittanbieters (regelmäßig) erfasst und in Microsoft 365 importiert werden. Der Connector konvertiert den Inhalt der Besprechungen (einschließlich Chats, aufgezeichnete Dateien und Metadaten) aus dem Konto "Besprechungen zoomen" in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
+Verwenden Sie im Microsoft 365 Compliance Center einen Connectors für Denkvorgang, um Daten aus Zoombesprechungen in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Mit Einem [Connector für Zoombesprechungen](https://globanet.com/zoom/) wird ein Connector für Zoombesprechungen zum Erfassen von Elementen aus der Datenquelle eines Drittanbieters (in regelmäßigen Abständen) und zum Importieren dieser Elemente in Microsoft 365 konfiguriert. Der Connector konvertiert den Inhalt der Besprechungen (einschließlich Chats, aufgezeichnete Dateien und Metadaten) aus dem Konto "Besprechungen zoomen" in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
 
 Nachdem Zoombesprechungsdaten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365-Compliancefeatures anwenden, z. B. Litigation Hold, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen sowie Kommunikationskonformität. Die Verwendung eines Zoombesprechungsconnector zum Importieren und Archivieren von Daten in Microsoft 365 kann Dazu beitragen, dass Ihre Organisation die Richtlinien von Behörden und Behörden einhalten kann.
 
@@ -33,15 +33,15 @@ In der folgenden Übersicht wird der Prozess der Verwendung eines Connectors zum
 
 1. Ihre Organisation arbeitet mit Zoombesprechungen zusammen, um eine Zoombesprechungswebsite einrichten und konfigurieren zu können.
 
-2. Einmal alle 24 Stunden werden Besprechungselemente aus Zoombesprechungen auf die Website "Globenet Merge1" kopiert. Der Connector konvertiert auch den Inhalt der Besprechungen in ein E-Mail-Nachrichtenformat.
+2. Einmal alle 24 Stunden werden Besprechungselemente aus Zoombesprechungen auf die Website "Merge1" kopiert. Der Connector konvertiert auch den Inhalt der Besprechungen in ein E-Mail-Nachrichtenformat.
 
-3. Der Connector für Zoombesprechungen, den Sie im Microsoft 365 Compliance Center erstellen, stellt täglich eine Verbindung mit dem Merge1 von Globanet bereit und überträgt die Besprechungsnachrichten an einen sicheren Azure Storage-Speicherort in der Microsoft-Cloud.
+3. Der Connector für Zoombesprechungen, den Sie im Microsoft 365 Compliance Center erstellen, stellt täglich eine Verbindung mit dem Merge1 von Veritas her und überträgt die Besprechungsnachrichten an einen sicheren Azure Storage-Speicherort in der Microsoft Cloud.
 
 4. Der Connector importiert die konvertierten Besprechungselemente mithilfe des Werts der *Email-Eigenschaft* und der automatischen Benutzerzuordnung in die Postfächer bestimmter Benutzer, wie in Schritt 3 beschrieben. In Benutzerpostfächern wird ein neuer Unterordner im Posteingangsordner mit dem Namen **Zoom Besprechungen** erstellt, und die Besprechungselemente werden in diesen Ordner importiert. Der Connector verwendet dazu den Wert der *Email-Eigenschaft.* Jedes Besprechungselement enthält diese Eigenschaft, die mit der E-Mail-Adresse jedes Teilnehmers der Besprechung gefüllt wird.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Erstellen Sie ein Konto für das Merge1-Konto von "GlobeNet Merge1" für Microsoft-Connectors. Wenden Sie sich zum Erstellen dieses Kontos an [den Kundensupport von "Globenet".](https://globanet.com/ms-connectors-contact) Sie melden sich bei diesem Konto an, wenn Sie den Connector in Schritt 1 erstellen.
+- Erstellen Sie ein Konto für Denkdruck1 für Microsoft Connectors. Wenden Sie sich zum Erstellen dieses Kontos an [den Kundensupport von Veritas](https://globanet.com/ms-connectors-contact). Sie melden sich bei diesem Konto an, wenn Sie den Connector in Schritt 1 erstellen.
 
 - Rufen Sie den Benutzernamen und das Kennwort für das Zoom Business- oder Zoom Enterprise-Konto Ihrer Organisation ab. Sie müssen sich in Schritt 2 bei diesem Konto anmelden, wenn Sie den Connector für Zoombesprechungen konfigurieren.
 
@@ -73,7 +73,7 @@ Der erste Schritt besteht im Zugriff auf **die Datenconnectors** im Microsoft 36
 
 ## <a name="step-2-configure-the-zoom-meetings-connector"></a>Schritt 2: Konfigurieren des Connectors für Zoombesprechungen
 
-Der zweite Schritt besteht im Konfigurieren des Zoombesprechungsconnector auf dem Merge1-Standort. Weitere Informationen zum Konfigurieren des Zoombesprechungsconnectors auf der Website "Merge1" finden Sie unter [Merge1-Benutzerhandbuch](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf)für Drittanbieterconnectors .
+Der zweite Schritt besteht im Konfigurieren des Zoombesprechungsconnector auf dem Merge1-Standort. Weitere Informationen zum Konfigurieren des Zoombesprechungsconnectors auf der Website "Merge1" finden Sie unter [Merge1-Benutzerhandbuch für Drittanbieterconnectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
 
 Nachdem Sie auf **& Beenden** klicken, wird die Seite Benutzerzuordnung im Connector-Assistenten im Microsoft 365 Compliance Center angezeigt. 
 

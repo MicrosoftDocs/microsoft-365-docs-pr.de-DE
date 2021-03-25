@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Verstehen Sie die Gründe, warum manchmal das Wechseln von Plänen manuell oder durch Aufrufen des Support erfolgen muss.
-ms.openlocfilehash: d13b7290f4b5f9aede7406cf76ee60cac262c814
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0880337e4879c093119b98f4d0108ca65c17e705
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922268"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164461"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Warum kann ich microsoft 365 for Business-Pläne nicht wechseln?
 
@@ -63,19 +63,19 @@ Wenn die Schaltfläche Pläne wechseln nicht angezeigt **wird,** kann Ihr Plan n
 
 ::: moniker range="o365-worldwide"
 
-Damit die Schaltfläche **Pläne wechseln** zum automatischen Wechseln von Plänen verwendet werden kann, müssen allen Ihren Benutzern gültige Lizenzen zugewiesen worden sein. Wenn Sie mehr Lizenzen zugewiesen als erworben haben, werden Sie auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> in einer Warnung darüber informiert, dass ein Lizenzkonflikt vorliegt, der gelöst werden muss. [Hier finden Sie Informationen zum Lösen von Lizenzkonflikten](../../admin/manage/resolve-license-conflicts.md). Nachdem alle Lizenzkonflikte gelöst wurden, sollte die Schaltfläche **Pläne wechseln** angezeigt werden. Andern falls nicht, können Sie [Pläne manuell wechseln](switch-plans-manually.md)oder den Support [anrufen.](../../admin/contact-support-for-business-products.md)
+Damit die Schaltfläche **Pläne wechseln** zum automatischen Wechseln von Plänen verwendet werden kann, müssen allen Ihren Benutzern gültige Lizenzen zugewiesen worden sein. Wenn Sie mehr Lizenzen zugewiesen als erworben haben, werden Sie auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> in einer Warnung darüber informiert, dass ein Lizenzkonflikt vorliegt, der gelöst werden muss. [Hier finden Sie Informationen zum Lösen von Lizenzkonflikten](../../commerce/licenses/buy-licenses.md). Nachdem alle Lizenzkonflikte gelöst wurden, sollte die Schaltfläche **Pläne wechseln** angezeigt werden. Andern falls nicht, können Sie [Pläne manuell wechseln](switch-plans-manually.md)oder den Support [anrufen.](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Damit die Schaltfläche **Pläne wechseln** zum automatischen Wechseln von Plänen verwendet werden kann, müssen allen Ihren Benutzern gültige Lizenzen zugewiesen worden sein. Wenn Sie mehr Lizenzen zugewiesen als erworben haben, werden Sie auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Lizenzen</a> in einer Warnung darüber informiert, dass ein Lizenzkonflikt vorliegt, der gelöst werden muss. [Hier finden Sie Informationen zum Lösen von Lizenzkonflikten](../../admin/manage/resolve-license-conflicts.md). Nachdem alle Lizenzkonflikte gelöst wurden, sollte die Schaltfläche **Pläne wechseln** angezeigt werden. Andern falls nicht, können Sie [Pläne manuell wechseln](switch-plans-manually.md)oder den Support [anrufen.](../../admin/contact-support-for-business-products.md)
+Damit die Schaltfläche **Pläne wechseln** zum automatischen Wechseln von Plänen verwendet werden kann, müssen allen Ihren Benutzern gültige Lizenzen zugewiesen worden sein. Wenn Sie mehr Lizenzen zugewiesen als erworben haben, werden Sie auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Lizenzen</a> in einer Warnung darüber informiert, dass ein Lizenzkonflikt vorliegt, der gelöst werden muss. [Hier finden Sie Informationen zum Lösen von Lizenzkonflikten](../../commerce/licenses/buy-licenses.md). Nachdem alle Lizenzkonflikte gelöst wurden, sollte die Schaltfläche **Pläne wechseln** angezeigt werden. Andern falls nicht, können Sie [Pläne manuell wechseln](switch-plans-manually.md)oder den Support [anrufen.](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Damit die Schaltfläche **Pläne wechseln** zum automatischen Wechseln von Plänen verwendet werden kann, müssen allen Ihren Benutzern gültige Lizenzen zugewiesen worden sein. Wenn Sie mehr Lizenzen zugewiesen als erworben haben, werden Sie auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Lizenzen</a> in einer Warnung darüber informiert, dass ein Lizenzkonflikt vorliegt, der gelöst werden muss. [Hier finden Sie Informationen zum Lösen von Lizenzkonflikten](../../admin/manage/resolve-license-conflicts.md). Nachdem alle Lizenzkonflikte gelöst wurden, sollte die Schaltfläche **Pläne wechseln** angezeigt werden. Andern falls nicht, können Sie [Pläne manuell wechseln](switch-plans-manually.md)oder den Support [anrufen.](../../admin/contact-support-for-business-products.md)
+Damit die Schaltfläche **Pläne wechseln** zum automatischen Wechseln von Plänen verwendet werden kann, müssen allen Ihren Benutzern gültige Lizenzen zugewiesen worden sein. Wenn Sie mehr Lizenzen zugewiesen als erworben haben, werden Sie auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Lizenzen</a> in einer Warnung darüber informiert, dass ein Lizenzkonflikt vorliegt, der gelöst werden muss. [Hier finden Sie Informationen zum Lösen von Lizenzkonflikten](../../commerce/licenses/buy-licenses.md). Nachdem alle Lizenzkonflikte gelöst wurden, sollte die Schaltfläche **Pläne wechseln** angezeigt werden. Andern falls nicht, können Sie [Pläne manuell wechseln](switch-plans-manually.md)oder den Support [anrufen.](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 

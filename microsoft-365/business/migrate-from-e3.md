@@ -22,14 +22,14 @@ search.appverid:
 - BCS160
 - MET150
 description: Erfahren Sie, wie Sie Ihr Unternehmen von Office 365 E3 zu Microsoft 365 Business Premium verschieben.
-ms.openlocfilehash: f655037891bf8ec42e7b927256025c89c9354e98
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3f9fd70b2d31b32027981e638de249d92e98ea08
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912940"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164531"
 ---
-# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrieren von Office 365 E3 zu Microsoft 365 Business Premium 
+# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrieren von Office 365 E3 zu Microsoft 365 Business Premium
 
 Microsoft 365 Business Premium bietet alles, was Sie für Ihr kleines Unternehmen benötigen, und kombiniert die erstklassigen cloudbasierten Produktivitäts-Apps mit einfacher Geräteverwaltung und -sicherheit. Wenn Sie derzeit über ein Office 365 E3-Abonnement verfügen, aber nicht mehr als 300 Mitarbeiter haben, sollten Sie für zusätzliche Sicherheitsfeatures zu Microsoft 365 Business Premium wechseln.
 
@@ -49,7 +49,7 @@ Diese Tabelle zeigt die Unterschiede zwischen Microsoft 365 Business Premium und
 | OneDrive for Business    | Speichergrenzwert von 1 TB pro Benutzer    | Unbegrenzt | 
 | Yammer, SharePoint Online, Planner, Stream    | ![In Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | ![In Office 365 E3 enthalten](../media/check-mark.png) | 
 | StaffHub    | ![In Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | ![In Office 365 E3 enthalten](../media/check-mark.png) | 
-| Outlook Customer Manager, MileIQ    | ![In Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | | 
+| Outlook Customer Manager    | ![In Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | | 
 | **Bedrohungsschutz**        | | | 
 | Microsoft Defender für Office 365 Plan 1 | ![In Microsoft 365 Business Premium enthalten](../media/check-mark.png)    | Nicht enthalten, kann aber hinzugefügt werden | 
 | **Identitätsverwaltung**        | | | 
@@ -122,7 +122,7 @@ Microsoft 365 Business Premium verfügt bei Verwendung von Exchange Online Plan 
 
 ### <a name="threat-protection"></a>Bedrohungsschutz
 
-Nach der Migration zu Microsoft 365 Business Premium haben Sie Defender für Office 365. Eine [Übersicht finden Sie unter Microsoft Defender for Office 365.](../security/office-365-security/office-365-atp.md) Informationen zum Einrichten finden Sie [](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)unter [Einrichten sicherer Links,](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)Einrichten sicherer Anlagen und Einrichten [von Antiphishing in Defender for Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
+Nach der Migration zu Microsoft 365 Business Premium haben Sie Defender für Office 365. Eine [Übersicht finden Sie unter Microsoft Defender for Office 365.](../security/defender-365-security/defender-for-office-365.md) Informationen zum Einrichten finden Sie [](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)unter [Einrichten sicherer Links,](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)Einrichten sicherer Anlagen und Einrichten [von Antiphishing in Defender for Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
 
 ### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
 

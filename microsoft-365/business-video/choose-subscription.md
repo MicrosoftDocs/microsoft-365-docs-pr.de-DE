@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, welches Microsoft 365-Abonnement für Ihre Organisation richtig ist.
-ms.openlocfilehash: 0ac7dbcad1f2d7fa99db607e6d4696c9f8fcb542
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19da01142bfe0abf2ad02c3a0ccab4ef25e09df4
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913754"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164645"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Auswählen eines Microsoft 365-Abonnements
 
@@ -54,7 +54,6 @@ Die Auswahl des richtigen Microsoft 365-Abonnements ist der Schlüssel zum Nutze
 | **Soziale Netzwerke, Videos, Websites** | Stream, Yammer, Planner, SharePoint Online \* , PowerApps \* , Microsoft Flow\* | Ja | Ja | Ja |
 | **Business-Apps** | Planen von Apps – Bookings\*\* | Ja | Ja | Ja |
 |
- | Business-Apps – MileIQ\*\* | Ja | Ja | Nein |
 | **Bedrohungsschutz** | Office 365 Advanced Threat Protection | Nein | Ja | Nein |
  | Erzwingung von Windows Exploit Guard | Nein | Ja | Nein |
 | **Identitätsverwaltung** | Self-Service-Kennwortzurücksetzung für Azure Active Directory-Hybridkonten | Nein | Ja | Nein |

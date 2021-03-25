@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über die Freigabe Ihrer Geschäftsdateien.
-ms.openlocfilehash: b481e7564625fcd019a53ba9116acdb724b4af61
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 6066bb2b1f1ea4fb4fac6a2d9d08dbd19d6cb7b0
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422363"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164597"
 ---
 # <a name="overview-of-sharing-business-files"></a>Übersicht über die Freigabe von Geschäftsdateien
 
@@ -33,6 +33,10 @@ Sie müssen Dateien für Kunden, Kunden, Partner, Lieferanten und andere Persone
 
 |![Sichere Freigabe](../media/securely-share-file.png)<br/>[Freigeben einer Datei für eine Person außerhalb Ihres Unternehmens](#share-a-file-with-someone-outside-of-your-company)|![Zusammenarbeit mit einem Client](../media/share-and-collab-with-partner.png) <br/>[Freigeben und Zusammenarbeit mit einem Client oder Geschäftspartner](#share-and-collaborate-with-a-client-or-business-partner) | ![Freigeben innerhalb Ihrer Organisation](../media/share-inside-your-org.png) <br/>[Teilen innerhalb Ihres Unternehmens](#share-inside-your-business) |
 |--|--|--|
+
+Laden Sie eine Infografik herunter, um einen schnellen Überblick über die Möglichkeiten zum Freigeben Ihrer Geschäftsdateien zu erhalten. 
+
+[PDF](https://go.microsoft.com/fwlink/?linkid=2079435)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)
 
 ## <a name="share-a-file-with-someone-outside-of-your-company"></a>Freigeben einer Datei für eine Person außerhalb Ihres Unternehmens
 
@@ -68,7 +72,3 @@ Benötigen Sie ein wenig Hilfe? Hier lernen Sie Folgendes:
 - [Freigeben von Dateien und Ordnern mit OneDrive](https://support.microsoft.com/en-us/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
 - [Erstellen eines unternehmensweiten Teams](https://support.microsoft.com/en-us/office/create-an-org-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3)
 - [Hinzufügen von Gästen zu einem Team](https://support.microsoft.com/en-us/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f)
-
-Laden Sie eine Infografik herunter, um einen schnellen Überblick über die Möglichkeiten zum Freigeben Ihrer Geschäftsdateien zu erhalten. 
-
-[PDF](https://go.microsoft.com/fwlink/?linkid=2079435)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)

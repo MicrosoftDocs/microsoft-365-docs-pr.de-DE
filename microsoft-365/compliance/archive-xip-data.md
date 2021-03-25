@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Administratoren können einen Connector zum Importieren und Archivieren von XIP-Quelldaten aus Demanet in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren. Nachdem Sie diese Daten archiviert haben, können Sie Compliancefeatures wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um Daten von Drittanbietern zu verwalten.
-ms.openlocfilehash: d3e249c94ad68dbc2e0be51617807b1e48251fa6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Administratoren können einen Connector zum Importieren und Archivieren von XIP-Quelldaten aus Dement in Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren. Nachdem Sie diese Daten archiviert haben, können Sie Compliancefeatures wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um Daten von Drittanbietern zu verwalten.
+ms.openlocfilehash: dd0881260b278819d9a2a86d2d43cb22c3b2420a
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922885"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163799"
 ---
 # <a name="set-up-a-connector-to-archive-xip-source-data"></a>Einrichten eines Connectors zum Archivieren von XIP-Quelldaten
 
-Verwenden Sie einen Globanet-Connector im Microsoft 365 Compliance Center, um Daten von der XIP-Quellplattform in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Das Programm Bietet einen [XIP-Connector,](https://globanet.com/xip/) der die Verwendung einer XIP-Datei zum Importieren von Elementen in Microsoft 365 ermöglicht. Eine XIP-Datei ähnelt einer ZIP-Datei, ermöglicht jedoch die Verwendung einer digitalen Signatur. Die digitale Signatur wird durch das Merge 1 von "Globanet" überprüft, bevor die XIP-Quelldatei extrahiert wird. Der Connector konvertiert den Inhalt aus der XIP-Quelldatei in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in das Postfach des Benutzers in Microsoft 365.
+Verwenden Sie einen Connectors für Denkdaten im Microsoft 365 Compliance Center, um Daten von der XIP-Quellplattform in Benutzerpostfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Mit einem XIP-Connector, der die Verwendung einer XIP-Datei zum Importieren von Elementen in Microsoft 365 ermöglicht, wird ein [XIP-Connector](https://globanet.com/xip/) zur Verfeinerung von Elementen in Microsoft 365 verwendet. Eine XIP-Datei ähnelt einer ZIP-Datei, ermöglicht jedoch die Verwendung einer digitalen Signatur. Die digitale Signatur wird durch den 1.1-Merge von Veritas überprüft, bevor die XIP-Quelldatei extrahiert wird. Der Connector konvertiert den Inhalt aus der XIP-Quelldatei in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in das Postfach des Benutzers in Microsoft 365.
 
 Nachdem XIP-Quelldaten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365-Compliancefeatures wie z. B. Litigation Hold, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen und Kommunikationskonformität anwenden. Die Verwendung eines XIP-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Dazu beitragen, dass Ihre Organisation die Richtlinien von Behörden und Behörden einhalten kann.
 
@@ -33,15 +33,15 @@ In der folgenden Übersicht wird der Prozess der Verwendung eines Connectors zum
 
 1. Ihre Organisation arbeitet mit der XIP-Quelle zusammen, um eine XIP-Website zu einrichten und zu konfigurieren.
 
-2. Einmal alle 24 Stunden werden XIP-Quellelemente auf die Website "Globenet Merge1" kopiert. Der Connector konvertiert den Inhalt auch in ein E-Mail-Nachrichtenformat.
+2. Einmal alle 24 Stunden werden XIP-Quellelemente auf die Website "Merge1" kopiert. Der Connector konvertiert den Inhalt auch in ein E-Mail-Nachrichtenformat.
 
-3. Der XIP-Connector, den Sie im Microsoft 365 Compliance Center erstellen, stellt jeden Tag eine Verbindung mit dem Standort von GlobeNet Merge1 bereit und überträgt die Nachrichten an einen sicheren Azure Storage-Speicherort in der Microsoft Cloud.
+3. Der XIP-Connector, den Sie im Microsoft 365 Compliance Center erstellen, stellt jeden Tag eine Verbindung mit dem Standort Von -Merge1 her und überträgt die Nachrichten an einen sicheren Azure Storage-Speicherort in der Microsoft-Cloud.
 
 4. Der Connector importiert die konvertierten Nachrichtenelemente mithilfe des Werts der *Email-Eigenschaft* der automatischen Benutzerzuordnung in die Postfächer bestimmter Benutzer, wie in [Schritt 3 beschrieben.](#step-3-map-users-and-complete-the-connector-setup) In den Benutzerpostfächern wird ein Unterordner im Posteingangsordner **namens XIP** erstellt, und die Elemente werden in diesen Ordner importiert. Der Connector bestimmt mithilfe des Werts der Email-Eigenschaft, in welches Postfach Elemente *importiert werden.* Jedes Quellelement enthält diese Eigenschaft, die mit der E-Mail-Adresse jedes Teilnehmers gefüllt wird.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Erstellen Sie ein Konto für das Merge1-Konto von "GlobeNet Merge1" für Microsoft-Connectors. Um ein Konto zu erstellen, wenden Sie sich an [den Kundensupport von "Globenet".](https://globanet.com/contact-us/) Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
+- Erstellen Sie ein Konto für Denkdruck1 für Microsoft Connectors. Wenden Sie sich zum Erstellen eines Kontos an [den Kundensupport von Veritas](https://www.veritas.com/content/support/). Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
 - Der Benutzer, der den XIP-Connector in Schritt 1 erstellt (und in Schritt 3 abgeschlossen) muss der Rolle Postfachimportexport in Exchange Online zugewiesen sein. Diese Rolle ist erforderlich, um Connectors auf der Seite Datenconnectors im Microsoft 365 Compliance Center hinzuzufügen. Diese Rolle ist standardmäßig keinem Rollengruppen in Exchange Online zugewiesen. Sie können die Rolle Postfachimportexport zur Rollengruppe Organisationsverwaltung in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle Postfachimportexport zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten Erstellen von [Rollengruppen](/Exchange/permissions-exo/role-groups#create-role-groups) oder [Ändern](/Exchange/permissions-exo/role-groups#modify-role-groups) von Rollengruppen im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
@@ -59,7 +59,7 @@ Der erste Schritt besteht im Zugriff auf die Seite **Datenconnectors** im Micros
 
 5. Melden Sie sich bei Ihrem Merge1-Konto an, um den Connector zu konfigurieren.
 
-## <a name="step-2-configure-the-xip-connector-on-the-globanet-merge1-site"></a>Schritt 2: Konfigurieren des XIP-Connectors auf dem Standort "Globenet Merge1"
+## <a name="step-2-configure-the-xip-connector-on-the-veritas-merge1-site"></a>Schritt 2: Konfigurieren des XIP-Connectors auf der Website "Merge1" von "Veritas Merge1"
 
 Der zweite Schritt besteht in der Konfiguration des XIP-Connectors auf dem Merge1-Standort. Informationen zum Konfigurieren des XIP-Connectors finden Sie unter [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20XIP%20User%20Guide%20.pdf).
 

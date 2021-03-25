@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie ein Upgrade auf einen anderen Plan durchführen.
-ms.openlocfilehash: 62d6da5713a7785fde9e795bc22956d73616c3c3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5f853dcd0d247a6422489cbe5d0287765bfd72a6
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924314"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164449"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Zu einem anderen Plan wechseln
 
@@ -92,7 +92,7 @@ Wenn auf der Registerkarte Upgrade keine Pläne angezeigt **werden,** bedeutet d
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Sie können abonnements jetzt nicht aktualisieren, da Sie über mehr Benutzer als Lizenzen verfügen.
 
-Zum automatischen Upgrade von Plänen müssen allen Benutzern gültige Lizenzen zugewiesen werden. Wenn Sie mehr Lizenzen zugewiesen als erworben haben, werden Sie auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> in einer Warnung darüber informiert, dass ein Lizenzkonflikt vorliegt, der gelöst werden muss. [Hier finden Sie Informationen zum Lösen von Lizenzkonflikten](../../admin/manage/resolve-license-conflicts.md). Nachdem Sie Lizenzierungskonflikte behoben haben, sollten Sie pläne auf der Registerkarte **Upgrade** anzeigen. Andern falls nicht, können Sie [Pläne manuell ändern](change-plans-manually.md)oder den Support [anrufen.](../../admin/contact-support-for-business-products.md)
+Zum automatischen Upgrade von Plänen müssen allen Benutzern gültige Lizenzen zugewiesen werden. Wenn Sie mehr Lizenzen zugewiesen als erworben haben, werden Sie auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> in einer Warnung darüber informiert, dass ein Lizenzkonflikt vorliegt, der gelöst werden muss. [Hier finden Sie Informationen zum Lösen von Lizenzkonflikten](../../commerce/licenses/buy-licenses.md). Nachdem Sie Lizenzierungskonflikte behoben haben, sollten Sie pläne auf der Registerkarte **Upgrade** anzeigen. Andern falls nicht, können Sie [Pläne manuell ändern](change-plans-manually.md)oder den Support [anrufen.](../../admin/contact-support-for-business-products.md)
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Sie können abonnements derzeit nicht aktualisieren, da dieses Abonnement nicht vollständig eingerichtet ist oder der Dienst nicht verfügbar ist.
 

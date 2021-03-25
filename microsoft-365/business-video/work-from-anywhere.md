@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht darüber, wie Microsoft 365 Ihnen dabei hilft, von überall aus zu arbeiten.
-ms.openlocfilehash: 7c3a0ee4b69f7fa4e07064f0adc108afe70bd54d
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: f68c2f4b05437dd5cb29a3588a4878f464c5566a
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421681"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164561"
 ---
 # <a name="work-from-anywhere---overview"></a>Arbeiten von überall – Übersicht
 
@@ -33,7 +33,11 @@ Weg vom Schreibtisch? Kein Laptopakku mehr? Kein Problem! Behandeln Sie Ihre Arb
 
 **Pro-Tipp:** Halten Sie Ihre Balance zwischen Arbeit und Privatleben im Gleichgewicht, indem Sie Benachrichtigungen für Ihre Arbeits-Apps auf Ihren persönlichen Geräten deaktivieren.
 
-Verwenden Sie die folgenden vier Tipps, um überall zu arbeiten: Laden Sie eine Infografik herunter, um Tipps zum Arbeiten von überall aus zu erhalten: [PDF](https://go.microsoft.com/fwlink/?linkid=2079451), [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
+Verwenden Sie die vier unten aufgeführten Tipps, um überall zu arbeiten.
+
+Laden Sie eine Infografik herunter, um Tipps zum Arbeiten von überall zu erhalten: 
+
+[PDF](https://go.microsoft.com/fwlink/?linkid=2079451)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
 
 **Denken Sie daran, regelmäßig von zu Hause aus zu arbeiten?**
 

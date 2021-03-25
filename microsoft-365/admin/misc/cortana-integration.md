@@ -13,19 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Wenn Sie mit gültigen Geschäfts- oder Schulkonten angemeldet sind, können Benutzer cloudbasierte Unterstützungsdienste mit Cortana in Microsoft 365-Erfahrungen erhalten, die den Datenschutz-, Sicherheits- und Compliance-Zusagen von Office 365 auf Unternehmensebene entsprechen.
-ms.openlocfilehash: 00702724a44cd75bc68e9f7adac7170d81c080fb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a45f23c022474ff39eca891eec03139dda936027
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914798"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164669"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
