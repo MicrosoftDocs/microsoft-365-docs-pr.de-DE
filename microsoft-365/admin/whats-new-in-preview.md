@@ -21,12 +21,12 @@ description: Das Microsoft 365 Admin Center – Erfahren Sie mehr über die Feat
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 833f782e071e06d837ca5eacfcb72e2d6e16c8fb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b670c6a333485bc3a19ae14b8e7c71f08181cac5
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913934"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215576"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neues im Microsoft 365 Admin Center
 
@@ -48,6 +48,7 @@ Und wenn Sie wissen möchten, was mit anderen Microsoft-Clouddiensten neu ist:
 - [Neuerungen in Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [Aktive Websites im SharePoint Online Admin Center](/sharepoint/what-s-new-in-admin-center)
 - [Office-Updates](/OfficeUpdates/)
+- [Überprüfen der Windows-Release-Integrität](https://docs.microsoft.com/windows/deployment/update/check-release-health)
 
 ## <a name="ignite-2021-march"></a>Ignite 2021 (März)
 
@@ -221,7 +222,7 @@ Wenn Sie Ihren Benutzern erlauben, Office über das Portal selbst zu installiere
 
 In Verbindung mit der Veröffentlichung von Monthly Enterprise Channel werden auch die Namen der vorhandenen Updatekanäle überarbeitet. Beispielsweise wird monatlicher Kanal in Aktueller Kanal umbenannt. Die neuen Namen werden am 9. Juni 2020 wirksam.
 
-Weitere Informationen finden Sie unter [Änderungen am Aktualisieren von Kanälen für Microsoft 365 Apps](/DeployOffice/update-channels-changes).
+Weitere Informationen finden Sie unter [Änderungen an den Updatekanälen für Microsoft 365 Apps](/DeployOffice/update-channels-changes).
 
 ### <a name="new-admin-roles"></a>Neue Administratorrollen
 
@@ -237,7 +238,7 @@ Weitere Informationen zu diesen Rollen finden Sie unter [Informationen zu Admini
 
 Wir haben von vielen Administratoren gehört, dass sie Informationen zu Gruppen und deren Verwendung an Personen freigeben müssen, die keinen Zugriff auf die Admin Center haben. Sie können nun die Gruppenliste zu Überwachungszwecken in eine CSV-Datei exportieren, was bedeutet, dass Sie das alte PowerShell-Skript auswerfen können. Um es auszuprobieren, wechseln Sie zu **Gruppen**  >  **Gruppen,** und wählen Sie **dann Gruppen exportieren in** der Befehlsleiste aus.
 
-### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 Lösungs- und Architektur-Center
+### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365-Center – Lösungen und Architekturen
 
 Erst in diesem Monat haben wir eine neue Website mit dem Namen [https://docs.microsoft.com]() [Microsoft 365 Solution and Architecture Center](../solutions/index.yml)veröffentlicht, die die technischen Anleitungen zusammen bringt, die Sie benötigen, um integrierte Microsoft 365-Lösungen für eine sichere und konforme Zusammenarbeit zu verstehen, zu planen und zu implementieren. In diesem Center finden Sie:
 
