@@ -23,12 +23,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 85e9a47c0180fd7582b2bc107ddf7d78f57e6329
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3ef625e813961c09bb6f74d85fd5a7c8033f9c2a
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067272"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183873"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Adress false positives/negatives in Microsoft Defender for Endpoint
 
@@ -55,7 +55,7 @@ Und Sie können Hilfe erhalten, wenn nach der Ausführung der in diesem Artikel 
 ![Schritte zur Reaktion auf falsch positive und negative Ergebnisse](images/false-positives-step-diagram.png)
 
 > [!NOTE]
-> Dieser Artikel dient als Leitfaden für Sicherheitsoperatoren und Sicherheitsadministratoren, die [Microsoft Defender for Endpoint verwenden.](microsoft-defender-advanced-threat-protection.md)
+> Dieser Artikel dient als Leitfaden für Sicherheitsoperatoren und Sicherheitsadministratoren, die [Microsoft Defender for Endpoint verwenden.](microsoft-defender-endpoint.md)
 
 ## <a name="part-1-review-and-classify-alerts"></a>Teil 1: Überprüfen und Klassifizieren von Warnungen
 
