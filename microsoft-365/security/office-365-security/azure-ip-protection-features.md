@@ -1,0 +1,100 @@
+---
+title: Schutzfunktionen in Azure Information Protection, die für vorhandene Mandanten bereitgestellt werden
+f1.keywords:
+- NOCSH
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 6/29/2018
+audience: ITPro
+ms.topic: article
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
+ms.collection:
+- M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
+description: In diesem Artikel werden die Änderungen erläutert, die an den Schutzfunktionen in Azure Information Protection vorgenommen werden.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 77d45c8521e67c480b9e5557b05eed8ba5dd2645
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51206011"
+---
+# <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a><span data-ttu-id="633bb-103">Schutzfunktionen in Azure Information Protection, die für vorhandene Mandanten bereitgestellt werden</span><span class="sxs-lookup"><span data-stu-id="633bb-103">Protection features in Azure Information Protection rolling out to existing tenants</span></span>
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+<span data-ttu-id="633bb-104">**Gilt für**</span><span class="sxs-lookup"><span data-stu-id="633bb-104">**Applies to**</span></span>
+- [<span data-ttu-id="633bb-105">Microsoft Defender für Office 365 – Plan 2</span><span class="sxs-lookup"><span data-stu-id="633bb-105">Microsoft Defender for Office 365 plan 2</span></span>](defender-for-office-365.md)
+- [<span data-ttu-id="633bb-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="633bb-106">Microsoft 365 Defender</span></span>](../defender/microsoft-365-defender.md)
+
+<span data-ttu-id="633bb-107">Um den ersten Schritt beim Schutz Ihrer Informationen zu unterstützen, sind ab Juli 2018 alle azure Information Protection-berechtigten Mandanten standardmäßig über die Schutzfunktionen in Azure Information Protection aktiviert.</span><span class="sxs-lookup"><span data-stu-id="633bb-107">To help with the initial step in protecting your information, starting July 2018 all Azure Information Protection eligible tenants will have the protection features in Azure Information Protection turned on by default.</span></span> <span data-ttu-id="633bb-108">Die Schutzfunktionen in Azure Information Protection wurden früher in Office 365 als Rechteverwaltung oder Azure RMS bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="633bb-108">The protection features in Azure Information Protection were formerly known in Office 365 as Rights Management or Azure RMS.</span></span> <span data-ttu-id="633bb-109">Wenn Ihre Organisation über einen Office E3-Dienstplan oder einen höheren Dienstplan verfügt, erhalten Sie jetzt einen Vorstart zum Schutz von Informationen durch Azure Information Protection, wenn wir diese Features bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="633bb-109">If your organization has an Office E3 service plan or a higher service plan you will now get a head start protecting information through Azure Information Protection when we roll out these features.</span></span>
+
+## <a name="changes-beginning-july-1-2018"></a><span data-ttu-id="633bb-110">Änderungen ab dem 1. Juli 2018</span><span class="sxs-lookup"><span data-stu-id="633bb-110">Changes beginning July 1, 2018</span></span>
+
+<span data-ttu-id="633bb-111">Ab dem 1. Juli 2018 aktiviert Microsoft die Schutzfunktion in Azure Information Protection für alle Organisationen mit einem der folgenden Abonnementpläne:</span><span class="sxs-lookup"><span data-stu-id="633bb-111">Starting July 1, 2018, Microsoft will enable the protection capability in Azure Information Protection for all organizations with one of the following subscription plans:</span></span>
+
+- <span data-ttu-id="633bb-112">Die Office 365-Nachrichtenverschlüsselung wird als Teil von Office 365 E3 und E5, Microsoft E3 und E5, Office 365 A1, A3 und A5 sowie Office 365 G3 und G5 angeboten.</span><span class="sxs-lookup"><span data-stu-id="633bb-112">Office 365 Message Encryption is offered as part of Office 365 E3 and E5, Microsoft E3 and E5, Office 365 A1, A3, and A5, and Office 365 G3 and G5.</span></span> <span data-ttu-id="633bb-113">Sie benötigen keine zusätzlichen Lizenzen, um die neuen Schutzfunktionen zu erhalten, die von Azure Information Protection unterstützt werden.</span><span class="sxs-lookup"><span data-stu-id="633bb-113">You do not need additional licenses to receive the new protection capabilities powered by Azure Information Protection.</span></span>
+
+- <span data-ttu-id="633bb-114">Sie können Azure Information Protection Plan 1 auch den folgenden Plänen hinzufügen, um die neuen Office 365-Nachrichtenverschlüsselungsfunktionen zu erhalten: Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard oder Office 365 Enterprise E1.</span><span class="sxs-lookup"><span data-stu-id="633bb-114">You can also add Azure Information Protection Plan 1 to the following plans to receive the new Office 365 Message Encryption capabilities: Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard, or Office 365 Enterprise E1.</span></span>
+
+- <span data-ttu-id="633bb-115">Jeder Benutzer, der von der Office 365-Nachrichtenverschlüsselung profitiert, muss lizenziert sein, um von dem Feature abgedeckt zu werden.</span><span class="sxs-lookup"><span data-stu-id="633bb-115">Each user benefiting from Office 365 Message Encryption needs to be licensed to be covered by the feature.</span></span>
+
+- <span data-ttu-id="633bb-116">Die vollständige Liste finden Sie in den [Exchange Online-Dienstbeschreibungen](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) für die Office 365-Nachrichtenverschlüsselung.</span><span class="sxs-lookup"><span data-stu-id="633bb-116">For the full list, see the [Exchange Online service descriptions](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) for Office 365 Message Encryption.</span></span>
+
+<span data-ttu-id="633bb-117">Mandantenadministratoren können den Schutzstatus im Office 365-Administratorportal überprüfen.</span><span class="sxs-lookup"><span data-stu-id="633bb-117">Tenant administrators can check the protection status in the Office 365 administrator portal.</span></span>
+
+![Screenshot, der zeigt, dass die Rechteverwaltung in Office 365 aktiviert ist.](../../media/303453c8-e4a5-4875-b49f-e80c3eb7b91e.png)
+
+## <a name="why-are-we-making-this-change"></a><span data-ttu-id="633bb-119">Warum wird diese Änderung geändert?</span><span class="sxs-lookup"><span data-stu-id="633bb-119">Why are we making this change?</span></span>
+
+<span data-ttu-id="633bb-120">Die Office 365-Nachrichtenverschlüsselung nutzt die Schutzfunktionen in Azure Information Protection.</span><span class="sxs-lookup"><span data-stu-id="633bb-120">Office 365 Message Encryption leverages the protection capabilities in Azure Information Protection.</span></span> <span data-ttu-id="633bb-121">Im Mittelpunkt der jüngsten Verbesserungen bei der Office 365-Nachrichtenverschlüsselung und unserer umfassenderen Investitionen in den Informationsschutz in Microsoft 365 machen wir es Organisationen einfacher, unsere Schutzfunktionen zu aktivieren und zu nutzen, da verschlüsselungstechnologien in der Vergangenheit schwer eingerichtet werden können.</span><span class="sxs-lookup"><span data-stu-id="633bb-121">At the heart of the recent improvements to Office 365 Message Encryption and our broader investments to information protection in Microsoft 365, we are making it easier for organizations to turn on and use our protection capabilities, as historically, encryption technologies have been difficult to set up.</span></span> <span data-ttu-id="633bb-122">Wenn Sie standardmäßig die Schutzfunktionen in Azure Information Protection aktivieren, können Sie schnell damit beginnen, Ihre vertraulichen Daten zu schützen.</span><span class="sxs-lookup"><span data-stu-id="633bb-122">By turning on the protection features in Azure Information Protection by default, you can quickly get started to protect your sensitive data.</span></span>
+
+## <a name="does-this-impact-me"></a><span data-ttu-id="633bb-123">Wirkt sich dies auf mich aus?</span><span class="sxs-lookup"><span data-stu-id="633bb-123">Does this impact me?</span></span>
+
+<span data-ttu-id="633bb-124">Wenn Ihre Organisation eine berechtigte Office 365-Lizenz erworben hat, wird Ihr Mandant von dieser Änderung betroffen sein.</span><span class="sxs-lookup"><span data-stu-id="633bb-124">If your organization has purchased an eligible Office 365 license, then your tenant will be impacted by this change.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="633bb-125">Wenn Sie Active Directory-Rechteverwaltungsdienste (AD RMS) in Ihrer lokalen Umgebung verwenden, müssen Sie diese Änderung entweder sofort abmelden oder zu Azure Information Protection migrieren, bevor wir diese Änderung innerhalb der nächsten 30 Tage bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="633bb-125">If you're using Active Directory Rights Management Services (AD RMS) in your on-premises environment, you must either opt-out of this change immediately or migrate to Azure Information Protection before we roll out this change within the next 30 days.</span></span> <span data-ttu-id="633bb-126">Informationen zum Opt-out finden Sie unter "Ich verwende AD RMS, wie kann ich mich abmelden?"</span><span class="sxs-lookup"><span data-stu-id="633bb-126">For information on how to opt-out, see "I use AD RMS, how do I opt out?"</span></span> <span data-ttu-id="633bb-127">weiter später in diesem Artikel.</span><span class="sxs-lookup"><span data-stu-id="633bb-127">later in this article.</span></span> <span data-ttu-id="633bb-128">Wenn Sie lieber migrieren möchten, lesen [Sie Migrieren von AD RMS zu Azure Information Protection.](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)</span><span class="sxs-lookup"><span data-stu-id="633bb-128">If you prefer to migrate, see [Migrating from AD RMS to Azure Information Protection.](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms).</span></span>
+
+## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a><span data-ttu-id="633bb-129">Kann ich Azure Information Protection mit Active Directory-Rechteverwaltungsdienste (AD RMS) verwenden?</span><span class="sxs-lookup"><span data-stu-id="633bb-129">Can I use Azure Information Protection with Active Directory Rights Management Services (AD RMS)?</span></span>
+
+<span data-ttu-id="633bb-130">Nein.</span><span class="sxs-lookup"><span data-stu-id="633bb-130">No.</span></span> <span data-ttu-id="633bb-131">Dies ist kein unterstütztes Bereitstellungsszenario.</span><span class="sxs-lookup"><span data-stu-id="633bb-131">This is not a supported deployment scenario.</span></span> <span data-ttu-id="633bb-132">Ohne die zusätzlichen Abmeldeschritte zu ergreifen, können einige Computer automatisch mit der Verwendung des Azure Rights Management-Diensts beginnen und auch eine Verbindung mit Ihrem AD RMS-Cluster herstellen.</span><span class="sxs-lookup"><span data-stu-id="633bb-132">Without taking the additional opt-out steps, some computers might automatically start using the Azure Rights Management service and also connect to your AD RMS cluster.</span></span> <span data-ttu-id="633bb-133">Dieses Szenario wird nicht unterstützt und hat unzuverlässige Ergebnisse. Daher ist es wichtig, dass Sie diese Änderung innerhalb der nächsten 30 Tage abmelden, bevor wir diese neuen Features rollouten.</span><span class="sxs-lookup"><span data-stu-id="633bb-133">This scenario isn't supported and has unreliable results, so it's important that you opt out of this change within the next 30 days before we roll out these new features.</span></span> <span data-ttu-id="633bb-134">Informationen zum Opt-out finden Sie unter "Ich verwende AD RMS, wie kann ich mich abmelden?"</span><span class="sxs-lookup"><span data-stu-id="633bb-134">For information on how to opt-out, see "I use AD RMS, how do I opt out?"</span></span> <span data-ttu-id="633bb-135">weiter später in diesem Artikel.</span><span class="sxs-lookup"><span data-stu-id="633bb-135">later in this article.</span></span> <span data-ttu-id="633bb-136">Wenn Sie lieber migrieren möchten, lesen [Sie Migrieren von AD RMS zu Azure Information Protection.](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)</span><span class="sxs-lookup"><span data-stu-id="633bb-136">If you prefer to migrate, see [Migrating from AD RMS to Azure Information Protection.](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)</span></span>
+
+## <a name="how-do-i-know-if-im-using-ad-rms"></a><span data-ttu-id="633bb-137">Wo kann ich wissen, ob ich AD RMS verwendet?</span><span class="sxs-lookup"><span data-stu-id="633bb-137">How do I know if I'm using AD RMS?</span></span>
+
+<span data-ttu-id="633bb-138">Verwenden Sie die folgenden Anweisungen aus Preparing the environment for Azure Rights Management, wenn Sie auch [über Active Directory-Rechteverwaltungsdienste (AD RMS)](/azure/information-protection/deploy-use/prepare-environment-adrms) verfügen, um zu überprüfen, ob Sie AD RMS bereitgestellt haben:</span><span class="sxs-lookup"><span data-stu-id="633bb-138">Use these instructions from [Preparing the environment for Azure Rights Management when you also have Active Directory Rights Management Services (AD RMS)](/azure/information-protection/deploy-use/prepare-environment-adrms) to check if you have deployed AD RMS:</span></span>
+
+1. <span data-ttu-id="633bb-139">Obwohl optional, veröffentlichen die meisten AD RMS-Bereitstellungen den Dienstverbindungspunkt (Service Connection Point, SCP) in Active Directory, damit Domänencomputer den AD RMS-Cluster ermitteln können.</span><span class="sxs-lookup"><span data-stu-id="633bb-139">Although optional, most AD RMS deployments publish the service connection point (SCP) to Active Directory so that domain computers can discover the AD RMS cluster.</span></span>
+
+   <span data-ttu-id="633bb-140">Verwenden der #A0 zum Anzeigen, ob ein SCP in Active Directory veröffentlicht wurde: CN=Configuration [Servername], CN=Services, CN=RightsManagementServices, CN=SCP</span><span class="sxs-lookup"><span data-stu-id="633bb-140">Use ADSI Edit to see whether you have an SCP published in Active Directory: CN=Configuration [server name], CN=Services, CN=RightsManagementServices, CN=SCP</span></span>
+
+2. <span data-ttu-id="633bb-141">Wenn Sie keinen SCP verwenden, müssen Windows-Computer, die eine Verbindung mit einem AD RMS-Cluster herstellen, für die clientseitige Dienstermittlung oder Lizenzierungsumleitung mithilfe der Windows-Registrierung konfiguriert werden: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation` .</span><span class="sxs-lookup"><span data-stu-id="633bb-141">If you are not using an SCP, Windows computers that connect to an AD RMS cluster must be configured for client-side service discovery or licensing redirection by using the Windows registry: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation`.</span></span>
+
+<span data-ttu-id="633bb-142">Weitere Informationen zu diesen Registrierungskonfigurationen finden Sie unter [Enabling client-side service discovery by using the Windows registry](/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) and [Redirecting licensing server traffic](/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic).</span><span class="sxs-lookup"><span data-stu-id="633bb-142">For more information about these registry configurations, see [Enabling client-side service discovery by using the Windows registry](/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) and [Redirecting licensing server traffic](/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic).</span></span>
+
+## <a name="i-use-ad-rms-how-do-i-opt-out"></a><span data-ttu-id="633bb-143">Ich verwende AD RMS, wie kann ich mich abmelden?</span><span class="sxs-lookup"><span data-stu-id="633bb-143">I use AD RMS, how do I opt out?</span></span>
+
+<span data-ttu-id="633bb-144">Führen Sie die folgenden Schritte aus, um die bevorstehende Änderung abmelden zu können:</span><span class="sxs-lookup"><span data-stu-id="633bb-144">To opt out of the upcoming change, complete these steps:</span></span>
+
+1. <span data-ttu-id="633bb-145">Starten Sie mithilfe eines Arbeits- oder Schulkontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, eine Windows PowerShell und stellen Sie eine Verbindung mit Exchange Online ein.</span><span class="sxs-lookup"><span data-stu-id="633bb-145">Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online.</span></span> <span data-ttu-id="633bb-146">Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).</span><span class="sxs-lookup"><span data-stu-id="633bb-146">For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).</span></span>
+
+2. <span data-ttu-id="633bb-147">Führen Sie Set-IRMConfiguration cmdlet mit der folgenden Syntax aus:</span><span class="sxs-lookup"><span data-stu-id="633bb-147">Run the Set-IRMConfiguration cmdlet using the following syntax:</span></span>
+
+  ```powershell
+  Set-IRMConfiguration -AutomaticServiceUpdateEnabled $false
+  ```
+
+## <a name="what-can-i-expect-after-this-change-has-been-made"></a><span data-ttu-id="633bb-148">Was kann ich erwarten, nachdem diese Änderung vorgenommen wurde?</span><span class="sxs-lookup"><span data-stu-id="633bb-148">What can I expect after this change has been made?</span></span>
+
+<span data-ttu-id="633bb-149">Sobald dies aktiviert ist, können Sie die neue Version der Office 365-Nachrichtenverschlüsselung verwenden, die auf [der Microsoft Ignite 2017](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) angekündigt wurde und die Verschlüsselungs- und Schutzfunktionen von Azure Information Protection nutzt.</span><span class="sxs-lookup"><span data-stu-id="633bb-149">Once this is enabled, provided you haven't opted out, you can start using the new version of Office 365 Message Encryption which was announced at [Microsoft Ignite 2017](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) and leverages the encryption and protection capabilities of Azure Information Protection.</span></span>
+
+![Screenshot, der eine OME-geschützte Nachricht in Outlook im Web zeigt.](../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
+
+<span data-ttu-id="633bb-151">Weitere Informationen zu den neuen Verbesserungen finden Sie unter [Office 365 Message Encryption](../../compliance/ome.md).</span><span class="sxs-lookup"><span data-stu-id="633bb-151">For more information about the new enhancements, see [Office 365 Message Encryption](../../compliance/ome.md).</span></span>
