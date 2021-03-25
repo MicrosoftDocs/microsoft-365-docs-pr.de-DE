@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c8baf74d5f838c583b98fddd7d7d706c6e116a40
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a7d13da6abfb2cd6c829b6fd04fdf94de8cd20b8
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063872"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186869"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Abrufen von Microsoft Defender for Endpoint-Erkennungen mithilfe der SIEM REST-API
 
@@ -29,7 +29,7 @@ ms.locfileid: "51063872"
 
 
 **Gilt für:**
-- [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
@@ -63,7 +63,7 @@ Verwenden Sie die folgende Methode in der Microsoft Defender for Endpoint-API, u
 >[!NOTE]
 >Microsoft Defender Security Center führt ähnliche Warnungserkennungen in einer einzigen Warnung zusammen. Diese API erstellt Warnungserkennungen in ihrer rohen Form basierend auf den von Ihnen festgelegten Abfrageparametern, sodass Sie Ihre eigene Gruppierung und Filterung anwenden können. 
 
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 - Bevor Sie den Microsoft Defender for Endpoint-Endpunkt zum Ziehen von Erkennungen aufrufen, müssen Sie die SIEM-Integrationsanwendung in Azure Active Directory (AAD) aktivieren. Weitere Informationen finden Sie unter [Aktivieren der SIEM-Integration in Microsoft Defender for Endpoint](enable-siem-integration.md).
 
 - Notieren Sie sich die folgenden Werte bei der Registrierung Ihrer Azure-App. Sie benötigen diese Werte, um den OAuth-Fluss in Ihrem Dienst oder Ihrer Dämon-App zu konfigurieren:

@@ -16,12 +16,12 @@ ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: ae50d53fbc9bf01d4cd16b939461eecc9ec1a568
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: cd662dc130adc37b3bf8bd06839242ccc9a49f8e
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165177"
+ms.locfileid: "51185969"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Schützen wichtiger Ordner mit kontrolliertem Ordnerzugriff
 
@@ -40,7 +40,7 @@ Der kontrollierte Ordnerzugriff schützt Ihre wertvollen Daten vor schädlichen 
 > [!NOTE]
 > Skriptmodule sind nicht vertrauenswürdig, und Sie können ihnen keinen Zugriff auf kontrollierte geschützte Ordner erlauben.  Beispielsweise wird PowerShell nicht durch kontrollierten Ordnerzugriff vertrauenswürdig, auch wenn Sie dies mit Zertifikat- und [Dateiindikatoren zulassen.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates) 
 
-Der kontrollierte Ordnerzugriff funktioniert am besten mit [Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md), mit dem Sie detaillierte Berichte zu Ereignissen und Blöcken für den kontrollierten Ordnerzugriff im Rahmen der üblichen Warnungsuntersuchungsszenarien erstellen [können.](investigate-alerts.md)
+Der kontrollierte Ordnerzugriff funktioniert am besten mit [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md), mit dem Sie detaillierte Berichte zu Ereignissen und Blöcken für den kontrollierten Ordnerzugriff im Rahmen der üblichen Warnungsuntersuchungsszenarien erstellen [können.](investigate-alerts.md)
 
 > [!TIP]
 > Kontrollierte Ordnerzugriffsblöcke generieren keine Warnungen in der [Warnungswarteschlange.](alerts-queue.md) Sie können jedoch Informationen zu zugriffsgesteuerten Ordnerblöcken in [](advanced-hunting-overview.md)der Gerätezeitachsenansicht [anzeigen,](investigate-machines.md)während Sie erweiterte Suche oder benutzerdefinierte [Erkennungsregeln verwenden.](custom-detection-rules.md)

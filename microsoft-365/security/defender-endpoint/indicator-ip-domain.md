@@ -17,19 +17,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3cfdc226ec5b476a37d15b67ca6158313e508adf
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 0196148c9dbf3ec769594d714524a3fd9e4d18fd
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067711"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185957"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Erstellen von Indikatoren für IPs und URLs/Domänen 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
-- [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -46,7 +46,7 @@ Durch das Erstellen von Indikatoren für IPs und URLs oder Domänen können Sie 
 > [!NOTE]
 > Klassenlose Inter-Domain (CIDR)-Notation für IP-Adressen wird nicht unterstützt. 
 
-### <a name="before-you-begin"></a>Vorbereitung
+### <a name="before-you-begin"></a>Bevor Sie beginnen
 Es ist wichtig, vor dem Erstellen von Indikatoren für IPS, URLs oder Domänen die folgenden Voraussetzungen zu kennen:
 - URL/IP allow and block basiert darauf, dass die Defender for Endpoint-Komponente Netzwerkschutz im Blockmodus aktiviert wird. Weitere Informationen zu Netzwerkschutz und Konfigurationsanweisungen finden Sie unter [Enable network protection](enable-network-protection.md).
 - Die Antischalware-Clientversion muss 4.18.1906.x oder höher sein. 

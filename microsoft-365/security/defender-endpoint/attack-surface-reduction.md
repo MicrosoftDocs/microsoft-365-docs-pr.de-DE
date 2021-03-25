@@ -15,12 +15,12 @@ ms.reviewer: sugamar, jcedola
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: 2bd8442dd8e119a57c490773b6e01a7c5f7adcac
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 62f1f5f2d47482f642f00c870b3e0f3112f5f639
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067383"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185767"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Verwenden von Regeln zur Reduzierung der Angriffsfläche, um Schadsoftwareinfektionen zu verhindern
 
@@ -112,7 +112,7 @@ Sie können Regeln zur Reduzierung der Angriffsfläche für Geräte festlegen, a
 - Windows Server, [Version 1803 (Halbjährskanal)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) oder höher
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-Obwohl Regeln zur Reduzierung der Angriffsfläche keine [Windows E5-Lizenz](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)erfordern, erhalten Sie bei Windows E5 erweiterte Verwaltungsfunktionen. Diese Funktionen, die nur in Windows E5 verfügbar sind, umfassen Überwachung, Analyse und Workflows, die in [Defender for Endpoint](microsoft-defender-advanced-threat-protection.md)verfügbar sind, sowie Berichterstellungs- und Konfigurationsfunktionen im Microsoft [365 Security Center](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center). Diese erweiterten Funktionen sind nicht mit einer Windows Professional- oder Windows E3-Lizenz verfügbar. Wenn Sie jedoch über diese Lizenzen verfügen, können Sie die Ereignisanzeige- und Microsoft Defender Antivirus-Protokolle verwenden, um Ihre Ereignisse der Regel zur Reduzierung der Angriffsfläche zu überprüfen.
+Obwohl Regeln zur Reduzierung der Angriffsfläche keine [Windows E5-Lizenz](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)erfordern, erhalten Sie bei Windows E5 erweiterte Verwaltungsfunktionen. Diese Funktionen, die nur in Windows E5 verfügbar sind, umfassen Überwachung, Analyse und Workflows, die in [Defender for Endpoint](microsoft-defender-endpoint.md)verfügbar sind, sowie Berichterstellungs- und Konfigurationsfunktionen im Microsoft [365 Security Center](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center). Diese erweiterten Funktionen sind nicht mit einer Windows Professional- oder Windows E3-Lizenz verfügbar. Wenn Sie jedoch über diese Lizenzen verfügen, können Sie die Ereignisanzeige- und Microsoft Defender Antivirus-Protokolle verwenden, um Ihre Ereignisse der Regel zur Reduzierung der Angriffsfläche zu überprüfen.
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Überprüfen von Ereignissen zur Reduzierung der Angriffsfläche im Microsoft Defender Security Center
 

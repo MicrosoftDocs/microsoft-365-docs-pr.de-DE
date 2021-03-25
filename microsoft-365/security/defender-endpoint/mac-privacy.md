@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0d8a5add74cad89a4635d112b29e6495199e0e1d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 83a56a74ff949b23843417942923d2b4b810b4ee
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064119"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185927"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-for-mac"></a>Datenschutz für Microsoft Defender for Endpoint für Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
-- [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
@@ -111,7 +111,7 @@ Erforderliche Diagnosedaten helfen bei der Identifizierung von Problemen mit Mic
 
 **Installation/Deinstallation von Microsoft Defender for Endpoint**
 
-Die folgenden Felder werden erfasst:
+Die folgenden Felder werden gesammelt:
 
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
@@ -123,7 +123,7 @@ Die folgenden Felder werden erfasst:
 
 **Konfiguration von Microsoft Defender für Endpunkt**
 
-Die folgenden Felder werden erfasst:
+Die folgenden Felder werden gesammelt:
 
 | Feld                                               | Beschreibung |
 | --------------------------------------------------- | ----------- |
@@ -144,7 +144,7 @@ Die folgenden Felder werden erfasst:
 
 **Security Intelligence Update Report**
 
-Die folgenden Felder werden erfasst:
+Die folgenden Felder werden gesammelt:
 
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
@@ -159,7 +159,7 @@ Die folgenden Felder werden erfasst:
 
 **Kernelerweiterungsstatistiken**
 
-Die folgenden Felder werden erfasst:
+Die folgenden Felder werden gesammelt:
 
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
@@ -195,7 +195,7 @@ Beispiele für optionale Diagnosedaten sind Daten, die Microsoft über die Produ
 
 **Konfiguration von Microsoft Defender für Endpunkt**
 
-Die folgenden Felder werden erfasst:
+Die folgenden Felder werden gesammelt:
 
 | Feld                                              | Beschreibung |
 | -------------------------------------------------- | ----------- |
@@ -216,7 +216,7 @@ Die folgenden Felder werden erfasst:
 
 **Microsoft Auto-Update-Konfiguration**
 
-Die folgenden Felder werden erfasst:
+Die folgenden Felder werden gesammelt:
 
 | Feld                       | Beschreibung |
 | --------------------------- | ----------- |
@@ -229,7 +229,7 @@ Die folgenden Felder werden erfasst:
 
 #### <a name="diagnostic-log-upload-started-report"></a>Bericht "Start des Diagnoseprotokolluploads"
 
-Die folgenden Felder werden erfasst:
+Die folgenden Felder werden gesammelt:
 
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
@@ -240,7 +240,7 @@ Die folgenden Felder werden erfasst:
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Abgeschlossener Bericht zum Hochladen des Diagnoseprotokolls
 
-Die folgenden Felder werden erfasst:
+Die folgenden Felder werden gesammelt:
 
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
@@ -256,7 +256,7 @@ Unerwartete Anwendungsbeendungen und der Anwendungsstatus zum Zeitpunkt des Been
 
 **Kernelerweiterungsstatistiken**
 
-Die folgenden Felder werden erfasst:
+Die folgenden Felder werden gesammelt:
 
 | Feld                          | Beschreibung |
 | ------------------------------ | ----------- |
