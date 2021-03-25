@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Konfigurieren Sie Vertraulichkeitsbezeichnungen für die Verschlüsselung, die Ihre Daten durch Einschränken von Zugriff und Nutzung schützt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6f906e2a3ddd8a0847174a61e9f2b28238e5dc19
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4b5d25c51560cfe7a4d55419a7de9ce36321e78f
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928073"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034174"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung
 
@@ -227,22 +227,28 @@ Weitere Informationen, Voraussetzungen und Konfigurationsanweisungen finden Sie 
 
 ## <a name="let-users-assign-permissions"></a>Benutzern die Zuweisung von Berechtigungen überlassen
 
+> [!IMPORTANT]
+> Nicht alle Bezeichnungs-Assistenten unterstützen alle Optionen, mit denen Benutzer ihre eigenen Berechtigungen zuweisen können. Verwenden Sie diesen Abschnitt, um mehr zu erfahren.
+
 Sie können mithilfe dieser Optionen Benutzern erlauben, Berechtigungen zuzuweisen, wenn sie eine Vertraulichkeitsbezeichnung manuell auf Inhalte anwenden:
 
-- In Outlook kann ein Benutzer Einschränkungen wählen, die der Option [Nicht weiterleiten](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) für Ihre gewählten Empfänger entsprechen.
+- In Outlook kann ein Benutzer für seine ausgewählten Empfänger Einschränkungen auswählen, die der Option [Nicht weiterleiten](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) oder [Nur verschlüsseln](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) entsprechen.
+    
+    Die Option "Nicht weiterleiten" wird von allen E-Mail-Clients unterstützt, die Vertraulichkeitsbezeichnungen unterstützen. Die Anwendung der Option **Nur verschlüsseln** mit einer Vertraulichkeitsbezeichnung ist jedoch eine neue Version, die nur von der integrierten Kennzeichnung und nicht vom Azure Information Protection-Client für einheitliche Bezeichnungen unterstützt wird. Bei E-Mail-Clients, die diese Funktion nicht unterstützen, wird die Bezeichnung nicht sichtbar sein.
+    
+    Um zu überprüfen, welche Outlook-Apps, die die integrierte Bezeichnung verwenden, die Anwendung der Option "Nur verschlüsseln" mit einer Vertraulichkeitsbezeichnung unterstützen, verwenden Sie die [Funktionstabelle für Outlook](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) und die Zeile **Benutzer Berechtigungen zuweisen lassen: – Nur verschlüsseln**.
 
 - In Word, PowerPoint und Excel wird ein Benutzer aufgefordert, ihre eigenen Berechtigungen für bestimmte Benutzer, Gruppen oder Organisationen auszuwählen.
 
-    > [!NOTE]
-    > Diese Option für Word, PowerPoint und Excel wird vom Azure Information Protection-Clients mit einheitlichen Bezeichnungen unterstützt. Für Apps, die die integrierte Bezeichnung verwenden. [Überprüfen Sie, welche Apps diese Funktion unterstützen](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint).
-    >
-    > Ist diese Option ausgewählt, jedoch für die App eines Benutzers nicht unterstützt, wird die Bezeichnung dem Benutzer entweder nicht angezeigt oder die Bezeichnung wird zu Konsistenzzwecken angezeigt, kann jedoch nicht mit einer entsprechenden Erläuterung für die Benutzer angewendet werden.
+    Diese Option wird vom Azure Information Protection-Client für einheitliche Bezeichnungen und von einigen Apps, die die integrierte Kennzeichnung verwenden, unterstützt. Bei Apps, die diese Funktion nicht unterstützen, ist die Bezeichnung entweder für die Benutzer nicht sichtbar, oder die Bezeichnung ist für die Konsistenz sichtbar, kann aber nicht mit einer Erklärungsmeldung für die Benutzer angewendet werden.
+    
+    Um zu prüfen, welche Apps, die die integrierte Bezeichnung verwenden, diese Option unterstützen, verwenden Sie die [Funktionstabelle für Word, Excel und PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) und die Zeile **Benutzer Berechtigungen zuweisen lassen: – Benutzer auffordern**.
 
 Wenn die Optionen unterstützt werden, verwenden Sie die folgende Tabelle, um zu ermitteln, wann Benutzer die Vertraulichkeitsbezeichnung sehen:
 
 |Einstellung |Die Bezeichnung ist in Outlook sichtbar|Die Bezeichnung ist in Word, Excel, PowerPoint sichtbar|
 |:-----|:-----|:-----|:-----|
-|**In Outlook Einschränkungen durchsetzen, die der Option „Nicht weiterleiten“ entsprechen**|Ja |Nein |
+|Setzen Sie **in Outlook Einschränkungen mit der Option "Nicht weiterleiten" oder "Nur verschlüsseln** durch|Ja |Nein |
 |**In Word, PowerPoint und Excel die Benutzer auffordern, Berechtigungen anzugeben**|Nein |Ja|
 
 Wenn beide Einstellungen ausgewählt sind, ist die Bezeichnung sowohl in Outlook als auch in Word, Excel und PowerPoint sichtbar.
@@ -255,13 +261,21 @@ Konfigurieren der dem Benutzer zugewiesenen Berechtigungen:
 
 ### <a name="outlook-restrictions"></a>Einschränkungen in Outlook
 
-Wenn ein Benutzer in Outlook eine Vertraulichkeitsbezeichnung anwendet, die ihm das Zuweisen von Berechtigungen für eine Nachricht gestattet, entsprechen die Einschränkungen der Option "Nicht weiterleiten". Der Benutzer sieht oben in der Nachricht den Namen und die Beschreibung der Bezeichnung, die den Inhalt als geschützt ausweist. Anders als in Word, PowerPoint und Excel (mehr dazu im [nächsten Abschnitt](#word-powerpoint-and-excel-permissions)) werden die Benutzer hier nicht aufgefordert, bestimmte Berechtigungen auszuwählen.
+Wenn ein Benutzer in Outlook eine Vertraulichkeitsbezeichnung anwendet, die ihm das Zuweisen von Berechtigungen für eine Nachricht gestattet, entsprechen die Einschränkungen der Option **Nicht weiterleiten** oder **Nur Verschlüsseln**. Der Benutzer sieht oben in der Nachricht den Namen und die Beschreibung der Bezeichnung, die den Inhalt als geschützt ausweist. Anders als in Word, PowerPoint und Excel (mehr dazu im [nächsten Abschnitt](#word-powerpoint-and-excel-permissions)) werden die Benutzer hier nicht aufgefordert, bestimmte Berechtigungen auszuwählen.
 
 ![Auf eine E-Mail angewendete Vertraulichkeitsbezeichnung in Outlook](../media/sensitivity-label-outlook-protection-applied.png)
 
-Wenn die Option "Nicht weiterleiten" auf eine E-Mail angewendet wird, wird diese E-Mail verschlüsselt und die Empfänger müssen authentifiziert werden. Die Empfänger können dann die Nachricht nicht weiterleiten, drucken oder kopieren. Wenn beispielsweise im Outlook-Client die Schaltfläche "Weiterleiten" nicht verfügbar ist, sind die Menüoptionen "Speichern unter" und "Drucken" ebenfalls nicht verfügbar, und Sie können in den Feldern "An", CC oder Bcc keine Empfänger hinzufügen oder ändern.
+Wenn eine dieser beiden Optionen auf eine E-Mail angewendet wird, wird die E-Mail verschlüsselt und die Empfänger müssen authentifiziert werden. Die Empfänger haben dann automatisch eingeschränkte Nutzungsrechte:
 
-Für unverschlüsselte Office-Dokumente, die sich im Anhang der E-Mail befinden, werden automatisch die gleichen Beschränkungen übernommen. Die für diese Dokumente geltenden Nutzungsrechte sind "Inhalt bearbeiten", "Bearbeiten", "Speichern", "Anzeigen", "Öffnen", "Lesen" und "Makros zulassen". Wenn der Benutzer andere Nutzungsrechte für eine Anlage wünscht, oder wenn es sich bei der Anlage nicht um ein Office-Dokument handelt, das die Vererbung des Schutzes unterstützt, muss der Benutzer die Datei schützen, bevor er sie an die E-Mail anfügt.
+- **Nicht weiterleiten**: Die Empfänger können die E-Mail nicht weiterleiten, ausdrucken oder kopieren. Wenn beispielsweise im Outlook-Client die Schaltfläche "Weiterleiten" nicht verfügbar ist, sind die Menüoptionen "Speichern unter" und "Drucken" ebenfalls nicht verfügbar, und Sie können in den Feldern "An", CC oder Bcc keine Empfänger hinzufügen oder ändern.
+    
+    Weitere Informationen zur Funktionsweise dieser Option finden Sie unter Option [Nicht weiterleiten für E-Mails](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).
+
+- **Nur verschlüsseln**: Die Empfänger haben alle Nutzungsrechte außer Speichern unter, Exportieren und Vollzugriff. Diese Kombination von Nutzungsrechten bedeutet, dass die Empfänger keine Einschränkungen haben, außer dass sie den Schutz nicht entfernen können. Ein Empfänger kann z. B. eine Kopie der E-Mail erstellen, diese ausdrucken und weiterleiten.
+    
+    Weitere Informationen zur Funktionsweise dieser Option finden Sie unter Option [Nur Verschlüsselung für E-Mails](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails).
+
+Für unverschlüsselte Office-Dokumente, die sich im Anhang der E-Mail befinden, werden automatisch die gleichen Beschränkungen übernommen. Für "Nicht weiterleiten" gelten für diese Dokumente die Nutzungsrechte "Inhalt bearbeiten", "Bearbeiten", "Speichern", "Anzeigen", "Öffnen", "Lesen" und "Makros zulassen". Wenn der Benutzer andere Nutzungsrechte für eine Anlage wünscht, oder wenn es sich bei der Anlage nicht um ein Office-Dokument handelt, das die Vererbung des Schutzes unterstützt, muss der Benutzer die Datei schützen, bevor er sie an die E-Mail anfügt.
 
 ### <a name="word-powerpoint-and-excel-permissions"></a>Berechtigungen in Word, PowerPoint und Excel
 
