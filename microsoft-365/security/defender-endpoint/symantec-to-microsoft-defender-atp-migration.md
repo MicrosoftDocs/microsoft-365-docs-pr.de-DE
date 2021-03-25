@@ -22,18 +22,18 @@ ms.topic: conceptual
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 6cab09547501da9b533c49b7096389e13dbf1f87
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 35f1ce4bccbf2229106ef4b8417a44fe7c37cde5
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060836"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183705"
 ---
 # <a name="migrate-from-symantec-to-microsoft-defender-for-endpoint"></a>Migrieren von Symantec zu Microsoft Defender for Endpoint
 Wenn Sie planen, von Symantec Endpoint Protection (Symantec) zu [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender for Endpoint) zu wechseln, sind Sie an der richtigen Stelle. Verwenden Sie diesen Artikel als Leitfaden.
 
 **Gilt für:**
-- [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 :::image type="content" source="images/symantec-mde-migration.png" alt-text="Übersicht über die Migration von Symantec zu Defender for Endpoint":::

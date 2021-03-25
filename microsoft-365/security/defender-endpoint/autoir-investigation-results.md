@@ -22,12 +22,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 02/02/2021
-ms.openlocfilehash: c11d9cd1ce4c2ca49315ec62b51c23ef981555f4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b66640736e9dc3835919e39d482b2d38b0c9dcc7
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067327"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183681"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Details und Ergebnisse einer automatisierten Untersuchung
 
@@ -38,7 +38,7 @@ Wenn eine automatisierte Untersuchung [](automated-investigations.md) mit Micros
 
 ## <a name="new-unified-investigation-page"></a>(NEU!) Seite "Einheitliche Untersuchung"
 
-Die Untersuchungsseite wurde kürzlich aktualisiert, um Informationen auf Ihren Geräten, E-Mail- und Zusammenarbeitsinhalten zu enthalten. Die neue, einheitliche Untersuchungsseite definiert eine gemeinsame Sprache und bietet eine einheitliche Erfahrung für automatische Untersuchungen in [Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md)  und Microsoft Defender für Office [365](/microsoft-365/security/defender-365-security/office-365-atp). 
+Die Untersuchungsseite wurde kürzlich aktualisiert, um Informationen auf Ihren Geräten, E-Mail- und Zusammenarbeitsinhalten zu enthalten. Die neue, einheitliche Untersuchungsseite definiert eine gemeinsame Sprache und bietet eine einheitliche Erfahrung für automatische Untersuchungen in [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)  und Microsoft Defender für Office [365](/microsoft-365/security/defender-365-security/office-365-atp). 
 
 > [!TIP]
 > Weitere Informationen zu den Änderungen finden Sie unter [(NEU!) Vereinheitlichte Untersuchungsseite](/microsoft-365/security/mtp/mtp-autoir-results).

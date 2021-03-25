@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: AD FS-Migrationsschritte (Active Directory Federation Services, Active Directory-Verbunddienste) für die Migration von Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 146f476a43e46925d87763a800467bf52adc73e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 12465acf5b4afe7e252586ddd076250628b57dd3
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918906"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165657"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>AD FS-Migrationsschritte für die Migration von Microsoft Cloud Deutschland
 
@@ -59,11 +59,11 @@ Führen Sie nach Abschluss und Testen der AD FS-Sicherung die folgenden Schritte
 
 8. Für AD FS 2012: Lassen Sie im Dialogfeld **Ausgaberegeln auswählen** die Option **Allen Benutzern den Zugriff auf diese vertrauende Partei** erlauben ausgewählt und klicken Sie auf **Weiter**.
 
-8. Für AD FS 2016 und AD FS 2019: Wählen Sie auf der Seite **Zugriffskontrollrichtlinie auswählen** die entsprechende Zugriffssteuerungsrichtlinie aus und klicken Sie auf **Weiter**. Wenn keine ausgewählt wird, funktioniert die Vertrauensstellung der vertrauenden Partei **NICHT**.
+9. Für AD FS 2016 und AD FS 2019: Wählen Sie auf der Seite **Zugriffskontrollrichtlinie auswählen** die entsprechende Zugriffssteuerungsrichtlinie aus und klicken Sie auf **Weiter**. Wenn keine ausgewählt wird, funktioniert die Vertrauensstellung der vertrauenden Partei **NICHT**.
 
-9. Klicken Sie auf der Seite **Bereit zum Hinzufügen von Vertrauensstellung** auf **Weiter**, um den Assistenten abzuschließen.
+10. Klicken Sie auf der Seite **Bereit zum Hinzufügen von Vertrauensstellung** auf **Weiter**, um den Assistenten abzuschließen.
 
-10. Klicken Sie auf der Seite **Fertig stellen** auf **Schließen**.
+11. Klicken Sie auf der Seite **Fertig stellen** auf **Schließen**.
 
 Durch das Schließen des Assistenten wird die Vertrauensstellung der vertrauenden Partei mit dem Office 365 Global-Dienst eingerichtet. Es sind jedoch noch keine Ausstellungstransformationsregeln konfiguriert.
 
@@ -74,7 +74,19 @@ Sie können mit [AD FS-Hilfe](https://adfshelp.microsoft.com/AadTrustClaims/Cla
 
 1. Führen Sie **Ansprüche generieren** in [AD FS-Hilfe](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) aus und kopieren Sie das PowerShell-Skript über die Option **Kopieren** in der rechten oberen Ecke des Skripts.
 
-2. Führen Sie die in der [AD FS-Hilfe](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) beschriebenen Schritte aus, um das PowerShell-Skript in Ihrer AD FS-Farm auszuführen, um den globalen Relying Party Trust zu erzeugen.
+2. Führen Sie die in der [AD FS-Hilfe](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) beschriebenen Schritte aus, um das PowerShell-Skript in Ihrer AD FS-Farm auszuführen, um den globalen Relying Party Trust zu erzeugen. Ersetzen Sie vor dem Ausführen des Skripts die folgenden Codezeilen im generierten Skript wie unten beschrieben:
+
+   ```powershell
+   # AD FS Help generated value
+   $claims = Get-AdfsRelyingPartyTrust -Identifier $(Get-RpIdentifier) | Select-Object IssuanceTransformRules;
+   # replace with
+   $claims = Get-AdfsRelyingPartyTrust -Identifier urn:federation:MicrosoftOnline | Select-Object IssuanceTransformRules;
+
+   # AD FS Help generated value
+   Set-AdfsRelyingPartyTrust -TargetIdentifier $(Get-RpIdentifier) -IssuanceTransformRules $RuleSet.ClaimRulesString;
+   # replace with
+   Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $RuleSet.ClaimRulesString;
+   ```
 
 3. Stellen Sie sicher, dass zwei Vertrauensstellungen der vertrauenden Parteien vorhanden sind. Eine für die Microsoft Cloud Deutschland und eine für den Office 365 Global-Dienst. Der folgende Befehl kann für die Prüfung verwendet werden. Er sollte zwei Zeilen und die jeweiligen Namen und Bezeichner zurücksenden.
 
@@ -86,9 +98,7 @@ Sie können mit [AD FS-Hilfe](https://adfshelp.microsoft.com/AadTrustClaims/Cla
 
 5. Während sich Ihr Mandant in der Migration befindet, überprüfen Sie regelmäßig, ob die AD FS-Authentifizierung mit Microsoft Cloud Deutschland und Microsoft Global Cloud in den verschiedenen unterstützten Migrationsschritten funktioniert.
 
-
 ## <a name="ad-fs-disaster-recovery-wid-database"></a>AD FS-Notfallwiederherstellung (WID-Datenbank)
-
 
 Wenn Sie die AD FS-Farm in einem Notfall wiederherstellen möchten, muss dazu das [AD FS Rapid Restore-Tool](/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) genutzt werden. Deshalb muss das Tool heruntergeladen und vor Beginn der Migration eine Sicherung erstellt und sicher gespeichert werden. In diesem Beispiel wurden die folgenden Befehle ausgeführt, um eine Farm zu sichern, die auf einer WID-Datenbank läuft:
 
@@ -112,7 +122,6 @@ Wenn Sie die AD FS-Farm in einem Notfall wiederherstellen möchten, muss dazu d
 
 4. Speichern Sie die Sicherung sicher an einem bestimmten Ort.
 
-
 ### <a name="restore-an-ad-fs-farm"></a>Wiederherstellen einer AD FS-Farm
 
 Wenn Ihre Farm vollständig fehlgeschlagen ist und es keine Möglichkeit zur Rückkehr zu der alten Farm gibt, führen Sie die folgenden Schritte aus. 
@@ -126,7 +135,6 @@ Wenn Ihre Farm vollständig fehlgeschlagen ist und es keine Möglichkeit zur Rü
    ```
 
 3. Zeigen Sie auf den neuen AD FS-Servern auf Ihre neuen DNS-Einträge oder den Lastenausgleich.
-
 
 ## <a name="more-information"></a>Weitere Informationen
 

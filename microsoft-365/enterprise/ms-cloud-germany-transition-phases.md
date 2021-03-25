@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
-ms.openlocfilehash: 5e1bf9257cfd4751333e2e01789bb7dbaf2685fa
-ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
+ms.openlocfilehash: 53a8c9470093db9d57d8dc18f4242d1a596c6efd
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50939635"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165633"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Aktionen und Auswirkungen der Migrationsphasen für die Migration von Microsoft Cloud Deutschland (generell)
 
@@ -62,7 +62,7 @@ Die folgenden Abschnitte enthalten Aktionen und Auswirkungen für Workloads, wä
 
 ## <a name="before-the-migration-starts"></a>Vor beginn der Migration
 
-Stellen Sie sicher, dass Sie mit den Migrationsvorbereitungsschritten vertraut [sind, die für alle Kunden angewendet werden.](ms-cloud-germany-transition-add-pre-work.md#applies-to-everyone)
+Stellen Sie sicher, dass Sie mit den Migrationsvorbereitungsschritten vertraut [sind, die für alle Kunden gelten.](ms-cloud-germany-transition-add-pre-work.md)
 
 Falls Sie einen DNS-CNAME namens _msoid_ in einem oder mehreren #A0 festgelegt haben, die Sie besitzen, müssen Sie den CNAME bis spätestens Ende von Phase 8 entfernen. Sie können das CNAME _msoid_ jederzeit vor dem Ende von Phase 8 entfernen. Weitere Informationen [finden Sie in der Vorarbeit für DNS](ms-cloud-germany-transition-add-pre-work.md#dns).
 
@@ -111,7 +111,7 @@ Wenn Sie Exchange Online hybrid verwenden: Exchange Online-Hybridadministratoren
 
 Nach Abschluss der Migrationsphase **9** (wenn der Message Center-Hinweis veröffentlicht wird) müssen Sie den HCW erneut mithilfe von Office 365 Worldwide-Einstellungen ausführen, um Ihre lokalen Systeme auf die globalen Office 365-Dienste zu verweisen.
 
-Wenn Sie Benutzerfotos in Phase 5 ändern möchten, lesen [Sie Set-UserPhoto](ms-cloud-germany-transition-add-experience.md#exchange-online-before-phase-5)
+Informationen zum Ändern von Benutzerfotos in Phase 5 finden Sie unter [Exchange Online Set-UserPhoto Phase 5.](ms-cloud-germany-transition-add-experience.md#exchange-online-set-userphoto-during-phase-5)
 
 | Schritte: | Beschreibung | Auswirkung |
 |:-------|:-------|:-------|
@@ -211,11 +211,11 @@ Kunden mit Dynamics 365 benötigen zusätzliches Engagement, um die Dynamics-Org
 
 Office 365-Mandanten, die in die Region "Deutschland" überwechseln, müssen alle Benutzer schließen, sich von Office 365 abmelden und sich für alle Office-Desktopanwendungen (Word, Excel, PowerPoint, Outlook usw.) und oneDrive for #A0 anmelden, nachdem die Mandantenmigration Phase 9 erreicht hat. Wenn Sie sich ab- und anmelden, können die Office-Dienste neue Authentifizierungstoken vom globalen Azure AD-Dienst abrufen.
 
-Stellen Sie sicher, dass Sie die [Vorarbeiten für mobile Geräte abgeschlossen](ms-cloud-germany-transition-add-pre-work.md#mobile) haben.
+Stellen Sie sicher, dass Sie die [Vorarbeiten für mobile Geräte abgeschlossen](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) haben.
 
 | Schritte: | Beschreibung | Auswirkung |
 |:-------|:-------|:-------|
-| Clients, Office Online während der Office-Client-Übernahmemigration, Azure AD finalisiert den Mandantenbereich so, dass er auf die Office 365-Dienste verweist. | Mit dieser Konfigurationsänderung können Office-Clients aktualisiert und auf die Office 365-Dienstendpunkte verweisen. | <ul><li>Benachrichtigen Sie Benutzer, _alle_ Office-Apps zu schließen, und melden Sie sich dann wieder an (oder erzwingen Sie, dass Clients neu gestartet werden und benutzer sich anmelden), damit Office-Clients die Änderung auf sich nehmen können. </li><li>Benachrichtigen Sie Benutzer und  Mitarbeiter des Helpdesks, dass Benutzern möglicherweise ein Office-Banner angezeigt wird, das sie zum Reaktivieren von Office-Apps innerhalb von 72 Stunden nach der Umstellung anfordert. </li><li>Alle Office-Anwendungen auf persönlichen Computern müssen geschlossen werden, und Benutzer müssen sich abmelden und sich dann erneut anmelden. Melden Sie sich in der gelben Aktivierungsleiste an, um die Office 365-Dienste zu reaktivieren.</li><li>Für freigegebene Computer sind Aktionen erforderlich, die mit persönlichen Computern vergleichbar sind, und es ist kein spezielles Verfahren erforderlich. </li><li>Auf mobilen Geräten müssen Sich Benutzer von Apps abmelden, diese schließen und sich dann erneut anmelden. </li></ul>|
+| Clients, Office Online während der Office-Client-Übernahmemigration, Azure AD finalisiert den Mandantenbereich so, dass er auf die Office 365-Dienste verweist. | Mit dieser Konfigurationsänderung können Office-Clients aktualisiert und auf die Office 365-Dienstendpunkte verweisen. | <ul><li>Benachrichtigen Sie Benutzer, _alle_ Office-Apps zu schließen, und melden Sie sich dann wieder an (oder erzwingen Sie, dass Clients neu gestartet werden und benutzer sich anmelden), damit Office-Clients die Änderung auf sich nehmen können. </li><li>Benachrichtigen Sie Benutzer und  Mitarbeiter des Helpdesks, dass Benutzern möglicherweise ein Office-Banner angezeigt wird, das sie zum Reaktivieren von Office-Apps innerhalb von 72 Stunden nach der Umstellung anfordert. </li><li>Alle Office-Anwendungen auf persönlichen Computern müssen geschlossen werden, und Benutzer müssen sich abmelden und sich dann erneut anmelden. Melden Sie sich in der gelben Aktivierungsleiste an, um die Office 365-Dienste zu reaktivieren.</li><li>Für freigegebene Computer sind Aktionen erforderlich, die mit persönlichen Computern vergleichbar sind, und es ist kein spezielles Verfahren erforderlich. </li><li>Auf mobilen Geräten müssen Sich Benutzer von Apps abmelden, diese schließen und sich dann erneut anmelden.</li></ul>|
 ||||
 
 ## <a name="line-of-business-apps"></a>Branchenspezifische Apps
