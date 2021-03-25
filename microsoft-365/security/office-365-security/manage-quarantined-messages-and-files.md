@@ -19,12 +19,12 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie isolierte Nachrichten für alle Benutzer in Exchange Online Protection (EOP) anzeigen und verwalten. Administratoren in Organisationen mit Microsoft Defender für Office 365 können auch isolierte Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams verwalten.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8c606daccfd037cad4d894ab7f33ff02fcf172b5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3dee441a3442454c5f2978422d18a2084f8377f3
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204167"
+ms.locfileid: "51215537"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP
 
@@ -197,6 +197,8 @@ Nachdem Sie eine Nachricht ausgewählt haben, stehen Ihnen im  Flyoutbereich Det
 
 - **Nachricht herunterladen**: Wählen Sie im daraufhin angezeigten Flyout-Fenster **Ich verstehe die Risiken beim Herunterladen dieser Nachricht** aus, um eine lokale Kopie der Nachricht im eml-Format zu speichern.
 
+- **Absender blockieren:** Dadurch wird verhindert, dass der Absender E-Mails an das Postfach des Administratorempfängers sendet.
+
 - **Nachricht senden**: Wählen Sie im angezeigten Flyoutbereich die folgenden Optionen aus:
 
   - **Objekttyp:** **E-Mail** (Standard), **URL** oder **Attachment**.
@@ -307,6 +309,6 @@ Die cmdlets, die Sie zum Anzeigen und Verwalten von Nachrichten und Dateien in Q
 
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 
-- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): Beachten Sie, dass dieses Cmdlet nur für Nachrichten und nicht für Schadsoftwaredateien aus sicheren Anlagen für SharePoint, OneDrive und Microsoft Teams geeignet ist.
+- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): Beachten Sie, dass dieses Cmdlet nur für Nachrichten und nicht für Isolierte Dateien aus sicheren Anlagen für SharePoint, OneDrive und Microsoft Teams geeignet ist.
 
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)

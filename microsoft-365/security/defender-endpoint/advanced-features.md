@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ed6f6b42570a908a1f4a83d46ef5b2de0c558692
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 059cfbf37c79ff9f99b5e46c8d4329c203aa9665
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199741"
+ms.locfileid: "51215528"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurieren erweiterter Features in Defender for Endpoint
 
@@ -206,7 +206,7 @@ Sie haben Zugriff auf anstehende Features, zu denen Sie Feedback geben können, 
 
 Weitergeleitet Endpunktsicherheitswarnungen und deren Triagestatus an das Microsoft Compliance Center, sodass Sie Insider-Risikomanagementrichtlinien mit Warnungen verbessern und interne Risiken vor schaden verursachen können. Weitergeleitete Daten werden am gleichen Speicherort wie Ihre Office 365-Daten verarbeitet und gespeichert.
 
-Nach dem Konfigurieren der [Sicherheitsrichtlinienverletzungsindikatoren](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-settings.md#indicators) in den Einstellungen für das Insiderrisikomanagement werden Defender for Endpoint-Warnungen für das Insiderrisikomanagement für anwendbare Benutzer freigegeben.
+Nach dem Konfigurieren der [Sicherheitsrichtlinienverletzungsindikatoren](/microsoft-365/compliance/insider-risk-management-settings#indicators) in den Einstellungen für das Insiderrisikomanagement werden Defender for Endpoint-Warnungen für das Insiderrisikomanagement für anwendbare Benutzer freigegeben.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Benutzer können erfahren, wie sie Nachrichten in Quarantäne anzeigen und verwenden, die an freigegebene Postfächer gesendet wurden, für die sie über Berechtigungen verfügen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9490a9d5b2b4191d6c039be2758e2e0ba0c981cd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6e3bf4c84e7a762f7f54f42ff61f0fbdb9dc1edd
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206251"
+ms.locfileid: "51215504"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Anzeigen und Veröffentlichen isolierter Nachrichten aus freigegebenen Postfächern
 
@@ -51,7 +51,9 @@ Unabhängig von der Methode können Benutzer Verwirrung vermeiden, indem sie die
 
 - Derzeit ist die **Schaltfläche Absender blockieren** im **Flyout Details** für isolierte Nachrichten, die an das freigegebene Postfach gesendet wurden, nicht verfügbar.
 
-- Zum Verwalten isolierter Nachrichten für das freigegebene Postfach in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)muss der Endbenutzer das [Cmdlet Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) mit freigegebener Postfach-E-Mail-Adresse für den Wert des _Parameters RecipientAddress_ verwenden, um die Nachrichten zu identifizieren. Beispiel:
+- In Bezug auf Quarantänevorgänge für freigegebene Postfächer wird empfohlen, wenn Sie geschachtelte Sicherheitsgruppen verwenden, um Zugriff auf ein freigegebenes Postfach zu gewähren, nicht mehr als zwei Ebenen von geschachtelten Gruppen. Beispielsweise ist Gruppe A ein Mitglied der Gruppe B, die Mitglied der Gruppe C ist. Wenn Sie einem freigegebenen Postfach Berechtigungen zuweisen möchten, fügen Sie den Benutzer nicht der Gruppe A hinzu, und weisen Sie dann Gruppe C dem freigegebenen Postfach zu.  
+
+- Zum Verwalten isolierter Nachrichten für das freigegebene Postfach in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)muss der Endbenutzer das [Cmdlet Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) mit freigegebener Postfach-E-Mail-Adresse für den Wert des _Parameters RecipientAddress_ verwenden, um die Nachrichten zu identifizieren. Zum Beispiel:
 
   ```powershell
   Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com
