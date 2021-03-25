@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange-Onlineadministratoren verwalten die E-Mails und Postfächer Ihrer Organisation. Beispielsweise stellen sie gelöschte Elemente im Postfach eines Benutzers wiederher. '
-ms.openlocfilehash: 5b63f2b0a58fdce75e5d70e329b8a0d02fb94a1a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4dc1f435571650ae4a805198782c3c24a92024fb
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050970"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197649"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Informationen zur Exchange Online-Administratorrolle
 
@@ -34,7 +34,7 @@ Um Ihnen bei der Verwaltung von [](assign-admin-roles.md) Microsoft 365 zu helfe
   
  **Tipp:** Wenn Sie der Exchange-Administratorrolle eine Person zuweisen, weisen Sie sie auch der Dienstadministratorrolle zu. Auf diese Weise können wichtige Informationen im Microsoft 365 Admin Center angezeigt werden, z. B. die Integrität des Exchange Online-Diensts und Änderungs- und Veröffentlichungsbenachrichtigungen.
   
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Hier folgen einige der wichtigsten Aufgaben, die Benutzer ausführen können, wenn ihnen die Exchange-Administratorrolle zugewiesen wurde:
   
@@ -48,7 +48,7 @@ Hier folgen einige der wichtigsten Aufgaben, die Benutzer ausführen können, we
 
 - [Erstellen Sie ein freigegebenes Postfach,](../email/create-a-shared-mailbox.md) damit eine Gruppe von Personen E-Mails von einer gemeinsamen E-Mail-Adresse überwachen und senden kann.
 
-- [E-Mail-Antispamschutz-](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-spam-protection) und Schadsoftwarefilter für die Organisation.
+- [E-Mail-Antispamschutz-](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) und Schadsoftwarefilter für die Organisation.
 
 - Verwalten von Microsoft 365-Gruppen
 

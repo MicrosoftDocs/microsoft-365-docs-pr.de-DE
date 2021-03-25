@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 60de6ed5a53a5d778f041b1c609019d110d6b64b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e494bfe57c31c1d5044f72a8adb3e2548d531604
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068304"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199149"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Gefahrensuche über Geräte, E-Mails, Apps und Identitäten hinweg
 
@@ -104,7 +104,7 @@ DeviceInfo
 ## <a name="hunting-scenarios"></a>Suchszenarien
 
 ### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>Auflisten von Anmeldeaktivitäten von Benutzern, die E-Mails empfangen haben, die nicht erfolgreich abgezapft wurden
-[Die automatische NS-Bereinigung (Zero-Hour Auto Purge, ZAP) behebt](../defender-365-security/zero-hour-auto-purge.md) schädliche E-Mails, nachdem sie empfangen wurden. Wenn ZAP ausfällt, wird möglicherweise bösartiger Code auf dem Gerät ausgeführt und Konten gefährdet. Diese Abfrage überprüft die Anmeldeaktivität der Empfänger von E-Mails, die nicht erfolgreich von ZAP adressiert wurden.
+[Die automatische NS-Bereinigung (Zero-Hour Auto Purge, ZAP) behebt](../office-365-security/zero-hour-auto-purge.md) schädliche E-Mails, nachdem sie empfangen wurden. Wenn ZAP ausfällt, wird möglicherweise bösartiger Code auf dem Gerät ausgeführt und Konten gefährdet. Diese Abfrage überprüft die Anmeldeaktivität der Empfänger von E-Mails, die nicht erfolgreich von ZAP adressiert wurden.
 
 ```kusto
 EmailPostDeliveryEvents 

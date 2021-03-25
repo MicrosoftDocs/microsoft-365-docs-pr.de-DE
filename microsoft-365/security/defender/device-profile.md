@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: ad341de0d0aed45ff3bf734e3c933b423eac3353
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c51c002d263452142a1bcf6fc5603d6ec4ef4cf7
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060748"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197969"
 ---
 # <a name="device-profile-page"></a>Seite "Geräteprofil"
 
@@ -81,7 +81,7 @@ Auf der Seite "Geräteprofil" verfügbare Aktionen umfassen:
 * **Antivirusscan ausführen** – Updates Windows Defender Antivirusdefinitionen und führen sofort eine Antivirenscan aus. Wählen Sie zwischen Schnellscan oder Vollständiger Scan aus.
 * **Untersuchungspaket sammeln** – Sammelt Informationen über das Gerät. Wenn die Untersuchung abgeschlossen ist, können Sie sie herunterladen.
 * **Initiieren der Liveantwortsitzung** – Lädt eine Remoteshell auf dem Gerät für [eingehende Sicherheitsuntersuchungen.](/microsoft-365/security/defender-endpoint/live-response)
-* **Initiieren einer automatisierten** Untersuchung – Bedrohungen werden [automatisch untersucht und behoben.](../defender-365-security/office-365-air.md) Obwohl Sie automatisierte Untersuchungen manuell auslösen [können,](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies) um von dieser Seite aus ausgeführt zu werden, lösen bestimmte Warnungsrichtlinien automatische Untersuchungen allein aus.
+* **Initiieren einer automatisierten** Untersuchung – Bedrohungen werden [automatisch untersucht und behoben.](../office-365-security/office-365-air.md) Obwohl Sie automatisierte Untersuchungen manuell auslösen [können,](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies) um von dieser Seite aus ausgeführt zu werden, lösen bestimmte Warnungsrichtlinien automatische Untersuchungen allein aus.
 * **Aktionscenter** – Zeigt Informationen zu allen derzeit ausgeführten Reaktionsaktionen an.
 
 ## <a name="tabs-section"></a>Tabs section
@@ -183,4 +183,4 @@ Wenn Sie ein Element auswählen, wird ein Flyout geöffnet, das mit dem Update v
 * [Übersicht über Microsoft 365 Defender](microsoft-365-defender.md)
 * [Aktivieren von Microsoft 365 Defender](m365d-enable.md)
 * [Untersuchen von Entitäten auf Geräten mithilfe von Liveantworten](../defender-endpoint/live-response.md)
-* [Automatisierte Untersuchung und Reaktion (AIR) in Office 365](../defender-365-security/office-365-air.md)
+* [Automatisierte Untersuchung und Reaktion (AIR) in Office 365](../office-365-security/office-365-air.md)

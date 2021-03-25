@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0902dce0af3c101cbaf7ff526beb71e9f46a1bf4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 434c318be404ffb04cac7a05664c8f001bb46507
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187517"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198861"
 ---
 # <a name="deploy-supported-services"></a>Bereitstellen unterstützter Dienste
 
@@ -78,7 +78,7 @@ Für die Bereitstellung jedes Diensts ist in der Regel eine Bereitstellung für 
 | Dienst | Bereitstellungsanweisungen | Erstkonfiguration |
 | ------ | ------ | ------ |
 | Microsoft Defender für Endpunkt | [Bereitstellungshandbuch für Microsoft Defender for Endpoint](../defender-endpoint/deployment-phases.md) | *Siehe Bereitstellungsanweisungen* |
-|Microsoft Defender für Office 365 | *Keine, bereitgestellt mit Office 365* | [Konfigurieren von Microsoft Defender für Office 365-Richtlinien](/microsoft-365/security/defender-365-security/defender-for-office-365#configure-atp-policies) |
+|Microsoft Defender für Office 365 | *Keine, bereitgestellt mit Office 365* | [Konfigurieren von Microsoft Defender für Office 365-Richtlinien](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
 | Microsoft Defender for Identity | [Schnellstart: Erstellen Ihrer Microsoft Defender for Identity-Instanz](/azure-advanced-threat-protection/install-atp-step1) | *Siehe Bereitstellungsanweisungen* |
 | Microsoft Cloud App Security | *Keine* | [Schnellstart: Erste Schritte mit Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security) |
 
@@ -89,6 +89,6 @@ Nachdem Sie die unterstützten Dienste bereitgestellt haben, [aktivieren Sie Mic
 - [Übersicht über Microsoft 365 Defender](microsoft-365-defender.md)
 - [Aktivieren von Microsoft 365 Defender](m365d-enable.md)
 - [Übersicht über Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Übersicht über Microsoft Defender for Office 365](../defender-365-security/defender-for-office-365.md)
+- [Übersicht über Microsoft Defender for Office 365](../office-365-security/defender-for-office-365.md)
 - [Übersicht über Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
 - [Übersicht über Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)

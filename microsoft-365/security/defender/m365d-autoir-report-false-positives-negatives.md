@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 8658b08f0d3948d6d23486ec885486e8bbfdf273
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 851fd05f0fec4b8d113e515783092eed0114db0f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060723"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199113"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Behandeln falsch positiver/negativer Ergebnisse in automatisierten Untersuchungs- und Reaktionsfunktionen
 
@@ -48,7 +48,7 @@ In den folgenden Abschnitten wird beschrieben, wie Diese Aufgaben ausgeführt we
 
 |Element wurde verpasst oder falsch erkannt |Dienst  |Vorgehensweise  |
 |---------|---------|---------|
-|- E-Mail-Nachricht <br/>- E-Mail-Anlage <br/>- URL in einer E-Mail-Nachricht<br/>- URL in einer Office-Datei      |[Microsoft Defender für Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)        |[Übermitteln verdächtiger Spam-, Phishing-, URLs- und Dateien an Microsoft zur Überprüfung](../defender-365-security/admin-submission.md)         |
+|- E-Mail-Nachricht <br/>- E-Mail-Anlage <br/>- URL in einer E-Mail-Nachricht<br/>- URL in einer Office-Datei      |[Microsoft Defender für Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Übermitteln verdächtiger Spam-, Phishing-, URLs- und Dateien an Microsoft zur Überprüfung](../office-365-security/admin-submission.md)         |
 |Datei oder App auf einem Gerät    |[Microsoft Defender für Endpunkt](/windows/security/threat-protection)         |[Übermitteln einer Datei an Microsoft zur Schadsoftwareanalyse](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Anpassen einer Warnung, um zu verhindern, dass falsch positive Ergebnisse wiederholt werden

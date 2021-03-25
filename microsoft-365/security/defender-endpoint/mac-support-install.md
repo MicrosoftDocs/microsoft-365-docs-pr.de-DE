@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 60b50f3944a2cdd995b4877e22123018267ff044
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 888bffdb85adeb7af58504439c1c31c7232cd73b
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062239"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187625"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-for-mac"></a>Beheben von Installationsproblemen für Microsoft Defender for Endpoint für Mac
 
@@ -33,7 +33,7 @@ ms.locfileid: "51062239"
 **Gilt für:**
 
 - [Microsoft Defender für Endpoint für Mac](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)

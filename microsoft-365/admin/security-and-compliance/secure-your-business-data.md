@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Schützen Sie Ihre Geschäftlichen E-Mails und Daten vor Cyberbedrohungen, einschließlich Ransomware, Phishing und schädlichen Anlagen. '
-ms.openlocfilehash: 7affa7a2adaa166861c2932ebe32177335236114
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e45130d101c6e730fd2d487f5f8898c7cd268ab8
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050678"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197851"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Die 10 besten Methoden zum Sichern von Microsoft 365 For Business-Plänen
 
@@ -132,7 +132,7 @@ Ihre Microsoft 365-Umgebung umfasst Schutz vor Schadsoftware. Sie können diesen
 
 6. Wählen Sie **Speichern aus.**
 
-Weitere Informationen finden Sie unter [Schutz vor Schadsoftware in EOP](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-malware-protection).
+Weitere Informationen finden Sie unter [Schutz vor Schadsoftware in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-malware-protection).
 
 ## <a name="5-protect-against-ransomware"></a>5: Schutz vor Ransomware
 <a name="ransomware"> </a>
@@ -254,7 +254,7 @@ Um eine Antiphishingrichtlinie in Defender for Office 365 zu erstellen, zeigen S
 
 4. Wählen Sie auf der Seite Antiphishing die Option **+ Erstellen aus.** Ein Assistent startet Sie durch die Definition Ihrer Antiphishingrichtlinie.
 
-5. Geben Sie den Namen, die Beschreibung und die Einstellungen für Ihre Richtlinie wie im folgenden Diagramm empfohlen an. Weitere Informationen finden Sie unter Informationen zur [Antiphishingrichtlinie in Microsoft Defender für Office 365-Optionen.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/set-up-anti-phishing-policies)
+5. Geben Sie den Namen, die Beschreibung und die Einstellungen für Ihre Richtlinie wie im folgenden Diagramm empfohlen an. Weitere Informationen finden Sie unter Informationen zur [Antiphishingrichtlinie in Microsoft Defender für Office 365-Optionen.](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)
 
 6. Nachdem Sie Ihre Einstellungen überprüft haben, wählen Sie Diese Richtlinie **erstellen** oder **Speichern** aus, wenn dies der Richtige ist.
 
@@ -270,7 +270,7 @@ Um eine Antiphishingrichtlinie in Defender for Office 365 zu erstellen, zeigen S
 |Angewendet auf|Wählen Sie **Die Domäne des Empfängers ist** aus. Wählen Sie unter **Einer dieser**, **Auswählen** aus. Wählen Sie **+ Hinzufügen** aus. Aktivieren Sie das Kontrollkästchen neben dem Namen der Domäne, z. B. contoso.com in der Liste, und wählen Sie dann **Hinzufügen aus.** Wählen Sie **Fertig** aus.|
 |
 
-Weitere Informationen finden Sie unter [Einrichten von Antiphishingrichtlinien in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies).
+Weitere Informationen finden Sie unter [Einrichten von Antiphishingrichtlinien in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
 
 ## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: Schutz vor schädlichen Anlagen und Dateien mit sicheren Anlagen
 <a name="atp"> </a>
@@ -302,7 +302,7 @@ Um eine Richtlinie für sichere Anlagen zu erstellen, zeigen Sie ein [kurzes](ht
 |Angewendet auf|Die Empfängerdomäne ist . . . Wählen Sie Ihre Domäne aus.|
 |
 
-Weitere Informationen finden Sie unter [Einrichten von Antiphishingrichtlinien in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies).
+Weitere Informationen finden Sie unter [Einrichten von Antiphishingrichtlinien in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
 
 ## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: Schutz vor Phishingangriffen mit sicheren Links
 <a name="phishingatp"> </a>
@@ -349,4 +349,4 @@ So erstellen Sie eine neue Richtlinie für alle Empfänger in Ihrer Domäne:
 |Angewendet auf|Die Empfängerdomäne ist . . . Wählen Sie Ihre Domäne aus.|
 |
 
-Weitere Informationen finden Sie unter [Sichere Links in Microsoft Defender für Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/atp-safe-links).
+Weitere Informationen finden Sie unter [Sichere Links in Microsoft Defender für Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links).

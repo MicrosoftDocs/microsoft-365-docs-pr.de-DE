@@ -2,7 +2,7 @@
 title: Microsoft Defender ATP für Mac
 ms.reviewer: ''
 description: Erfahren Sie, wie Sie Microsoft Defender for Endpoint für Mac installieren, konfigurieren, aktualisieren und verwenden.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, catalina, mojave
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6af8a6e0e23201f3c5861cb6a28b2bffa0f04ea4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 34150088379445d66006c757b2c8ea607865bf4c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186437"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198993"
 ---
 # <a name="microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender für Endpoint für Mac
 
@@ -80,9 +80,9 @@ Die drei neuesten Hauptversionen von macOS werden unterstützt.
 > Unter macOS 11 (Big Sur) erfordert Microsoft Defender for Endpoint zusätzliche Konfigurationsprofile. Wenn Sie ein vorhandenes Kunden-Upgrade von früheren Versionen von macOS sind, stellen Sie sicher, dass Sie die zusätzlichen Konfigurationsprofile bereitstellen, die unter Neue Konfigurationsprofile für [macOS Catalina](mac-sysext-policies.md)und neuere Versionen von macOS aufgeführt sind.
 
 > [!IMPORTANT]
-> Die Unterstützung für macOS 10.13 (High Sierra) wird am 15. Februar 2021 eingestellt.
+> Die Unterstützung für macOS 10.13 (High Sierra) wurde ab dem 15. Februar 2021 eingestellt.
 
-- 11 (Big Sur), 10,15 (Catalina), 10,14 (Mojave), 10,13 (High Sierra)
+- 11 (Big Sur), 10.15 (Catalina), 10.14 (Mojave)
 - Speicherplatz: 1 GB
 
 Betaversionen von macOS werden nicht unterstützt.

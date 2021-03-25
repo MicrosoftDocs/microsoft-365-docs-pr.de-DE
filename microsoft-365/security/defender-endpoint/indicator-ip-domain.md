@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0196148c9dbf3ec769594d714524a3fd9e4d18fd
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: d468a77d2c1ab4f1b363e2e91b6e8507a5390d93
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185957"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198483"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Erstellen von Indikatoren für IPs und URLs/Domänen 
 
@@ -34,7 +34,8 @@ ms.locfileid: "51185957"
 
 
 
->Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> [!TIP]
+> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 
 Defender for Endpoint kann das blockieren, was Microsoft als bösartige IPs/URLs bezeichnet, über Windows Defender SmartScreen für Microsoft-Browser und über Netzwerkschutz für Nicht-Microsoft-Browser oder Anrufe außerhalb eines Browsers.
@@ -57,8 +58,10 @@ Es ist wichtig, vor dem Erstellen von Indikatoren für IPS, URLs oder Domänen d
 
 > [!IMPORTANT]
 > Der Indikatorliste können nur externe IPs hinzugefügt werden. Indikatoren können nicht für interne IPs erstellt werden.
-> Für Webschutzszenarien wird die Verwendung der integrierten Funktionen in Microsoft Edge empfohlen. Microsoft Edge nutzt [Network Protection zum](network-protection.md) Überprüfen des Netzwerkdatenverkehrs und ermöglicht Blöcke für TCP, HTTP und HTTPS (TLS). Für alle anderen Prozesse nutzen Webschutzszenarien Network Protection für die Überprüfung und Durchsetzung: <br>
-> HINWEIS:
+> Für Webschutzszenarien wird die Verwendung der integrierten Funktionen in Microsoft Edge empfohlen. Microsoft Edge nutzt [Network Protection zum](network-protection.md) Überprüfen des Netzwerkdatenverkehrs und ermöglicht Blöcke für TCP, HTTP und HTTPS (TLS). Wenn richtlinien für in Konflikt konfliktende URL-Indikatoren enthalten sind, wird der längere Pfad angewendet. Beispielsweise hat die Richtlinie zum URL-Indikator `https:\\support.microsoft.com/en-us/office` Vorrang vor der RICHTLINIE für URL-Indikator. `https:\\support.microsoft.com`
+
+> [!NOTE]
+> Für alle anderen Prozesse nutzen Webschutzszenarien Network Protection für die Überprüfung und Durchsetzung: 
 > - IP wird für alle drei Protokolle unterstützt
 > - Es werden nur einzelne IP-Adressen unterstützt (keine CIDR-Blöcke oder IP-Bereiche)
 > - Verschlüsselte URLs (vollständiger Pfad) können nur in Browsern erster Partei (Internet Explorer, Edge) blockiert werden.

@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: af9e9315088a8dd5da9740b33135551d28664ed7
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: f8dd48364f60da789ac95638018245cf46434822
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186113"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197637"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Besuchen Sie das Aktionscenter, um Korrekturaktionen zu sehen
 
@@ -46,7 +46,7 @@ In der folgenden Tabelle wird das neue, einheitliche Aktionscenter mit dem vorhe
 
 |Das neue, einheitliche Aktionscenter  |Das vorherige Aktionscenter  |
 |---------|---------|
-|Listet ausstehende und abgeschlossene Aktionen für Geräte und E-Mails an einem Speicherort auf. <br/>([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) plus Microsoft Defender for Office [365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp))|Listet ausstehende und abgeschlossene Aktionen für Geräte auf <br/> ([Nur Microsoft Defender for Endpoint)](microsoft-defender-endpoint.md)   |
+|Listet ausstehende und abgeschlossene Aktionen für Geräte und E-Mails an einem Speicherort auf. <br/>([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) plus Microsoft Defender for Office [365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp))|Listet ausstehende und abgeschlossene Aktionen für Geräte auf <br/> ([Nur Microsoft Defender for Endpoint)](microsoft-defender-endpoint.md)   |
 |Befindet sich unter:<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Befindet sich unter:<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
 | Wählen Sie im Microsoft 365 Security Center **Aktionscenter aus.** <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Navigieren zum Action Center im Microsoft 365 Security Center"::: | Wählen Sie im Microsoft Defender Security Center das **Aktionscenter automatisierte**  >  **Untersuchungen aus.** <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Navigieren zum Aktionscenter aus dem Microsoft Defender Security Center":::  |
 
@@ -54,7 +54,7 @@ Das einheitliche Action Center vereint Korrekturaktionen in Defender for Endpoin
 
 Sie können das einheitliche Aktionscenter verwenden, wenn Sie über entsprechende Berechtigungen und mindestens eines der folgenden Abonnements verfügen:
 - [Defender für Endpunkt](microsoft-defender-endpoint.md)
-- [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp)
+- [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 - [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 
 
 > [!TIP]

@@ -14,18 +14,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erstellen Sie eine Microsoft 365-Umgebung, um Identitäts- und Gerätezugriff zu testen.
-ms.openlocfilehash: e90c27edbf4ad5a78c337bf2488956ce82a1ec3e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5a9e9ef9ea6b8f6dc80aa7fea225f3573b8fcadc
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051318"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197875"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Identitäts- und Gerätezugriff für Ihre Microsoft 365-Testumgebung
 
 *Diese Testumgebungsanleitung kann nur für Microsoft 365 für Unternehmenstestumgebungen verwendet werden.*
 
-[Identitäts- und Gerätezugriffskonfigurationen](../security/defender-365-security/microsoft-365-policies-configurations.md) sind eine Reihe empfohlener Konfigurationen und Richtlinien für bedingten Zugriff, um den Zugriff auf alle Dienste zu schützen, die in Azure Active Directory (Azure AD) integriert sind.
+[Identitäts- und Gerätezugriffskonfigurationen](../security/office-365-security/microsoft-365-policies-configurations.md) sind eine Reihe empfohlener Konfigurationen und Richtlinien für bedingten Zugriff, um den Zugriff auf alle Dienste zu schützen, die in Azure Active Directory (Azure AD) integriert sind.
 
 So erstellen Sie eine Testumgebung mit gemeinsamen Identitäts- und Gerätezugriffskonfigurationen:
 
@@ -35,7 +35,7 @@ So erstellen Sie eine Testumgebung mit gemeinsamen Identitäts- und Gerätezugri
   - [Kennworthashsynchronisierung (Password hash synchronization, PHS)](phs-prereqs-m365-test-environment.md)
   - [Passthrough-Authentifizierung (PTA)](pta-prereqs-m365-test-environment.md)
 
-2. Verwenden [Sie allgemeine Identitäts- und](../security/defender-365-security/identity-access-policies.md) Gerätezugriffsrichtlinien, um die Richtlinien zu konfigurieren, die auf den für Ihre Testumgebung konfigurierten Voraussetzungen aufbauen, und den Schutz von Identitäten und Geräten zu untersuchen und zu überprüfen.
+2. Verwenden [Sie allgemeine Identitäts- und](../security/office-365-security/identity-access-policies.md) Gerätezugriffsrichtlinien, um die Richtlinien zu konfigurieren, die auf den für Ihre Testumgebung konfigurierten Voraussetzungen aufbauen, und den Schutz von Identitäten und Geräten zu untersuchen und zu überprüfen.
 
 ## <a name="see-also"></a>Siehe auch
 
