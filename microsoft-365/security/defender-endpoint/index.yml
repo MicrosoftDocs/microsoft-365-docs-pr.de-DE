@@ -1,0 +1,104 @@
+### YamlMime:Landing
+title: Microsoft Defender for Endpoint-Dokumentation
+summary: Microsoft Defender for Endpoint bietet vorbeugenden Schutz, Erkennung nach Sicherheitsverletzungen, automatisierte Untersuchung und Reaktion.
+metadata:
+  title: Microsoft Defender for Endpoint-Dokumentation
+  description: Erfahren Sie mehr über Microsoft Defender for Endpoint, und maximieren Sie die integrierten Sicherheitsfunktionen zum Schutz von Geräten, zum Erkennen bösartiger Aktivitäten und zur Behebung von Bedrohungen# Erforderlich; Artikelbeschreibung, die in den Suchergebnissen angezeigt wird. < 160 Zeichen.
+  services: office-365-security-compliance
+  ms.service: O365-seccomp
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: m365-security-compliance
+  author: mjcaparas
+  ms.author: macapara
+  ms.date: 02/5/2021
+  localization_priority: Priority
+  ms.openlocfilehash: a183f4d09b596f6dbecf2dc0636ff516b1b26eb6
+  ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 03/23/2021
+  ms.locfileid: "51067720"
+landingContent:
+- title: Microsoft Defender für Endpunkt
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Was ist Microsoft Defender für Endpunkt?
+      url: microsoft-defender-advanced-threat-protection.md
+  - linkListType: whats-new
+    links:
+    - text: Neues in Microsoft Defender for Endpoint
+      url: whats-new-in-microsoft-defender-atp.md
+  - linkListType: video
+    links:
+    - text: Übersichtsvideo
+      url: https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0
+- title: Auswerten & Bereitstellen des Diensts
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Bewerten von Microsoft Defender for Endpoint
+      url: evaluation-lab.md
+    - text: Ihre Bereitstellung planen
+      url: deployment-strategy.md
+  - linkListType: deploy
+    links:
+    - text: Bereitstellungshandbuch
+      url: deployment-phases.md
+    - text: Onboarding unterstützter Geräte
+      url: onboard-configure.md
+  - linkListType: how-to-guide
+    links:
+    - text: Migrationsleitfaden
+      url: migration-guides.md
+  - linkListType: video
+    links:
+    - text: Onboardingvideo
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr
+- title: Sicherheitsvorgänge
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Erkennung und Reaktion am Endpunkt
+      url: overview-endpoint-detection-response.md
+    - text: Verhaltensblockierung und -eindämmung
+      url: behavioral-blocking-containment.md
+    - text: Automatisierte Untersuchung und Reaktion (AIR)
+      url: automated-investigations.md
+    - text: Erweiterte Suche
+      url: advanced-hunting-overview.md
+    - text: Microsoft-Bedrohungsexperten
+      url: microsoft-threat-experts.md
+    - text: Bedrohungsanalyse
+      url: threat-analytics.md
+- title: Verwenden von Microsoft Defender for Endpoint auf anderen Plattformen
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Microsoft Defender für Endpoint für Mac
+      url: microsoft-defender-endpoint-mac.md
+    - text: Microsoft Defender für Endpunkt für iOS
+      url: microsoft-defender-endpoint-ios.md
+    - text: Microsoft Defender for Endpoint for Linux
+      url: microsoft-defender-endpoint-linux.md
+    - text: Microsoft Defender für Endpoint für Android
+      url: microsoft-defender-endpoint-android.md
+- title: Referenz
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Verwaltung und APIs
+      url: management-apis.md
+    - text: Partnerintegration
+      url: partner-integration.md
+- title: Sicherheitsverwaltung
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Sicherheitsrisikoverwaltung & Bedrohungen
+      url: next-gen-threat-and-vuln-mgt.md
+    - text: Angriffsfläche verringern
+      url: overview-attack-surface-reduction.md
+    - text: Schutz der nächsten Generation
+      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10
