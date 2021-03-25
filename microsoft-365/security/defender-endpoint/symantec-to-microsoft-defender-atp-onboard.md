@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 95b2e4bfc0eca58d6c71670b21ded81affcc219f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: cc005c559e0f91f1c5888f8d7e4e7a2a420894db
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185503"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218700"
 ---
 # <a name="migrate-from-symantec---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>Migrieren von Symantec – Phase 3: Onboarding zu Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "51185503"
 || |*Sie sind hier!* |
 
 
-**Willkommen bei Phase 3 der [Migration von Symantec zu Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. Diese Migrationsphase umfasst die folgenden Schritte:
+**Willkommen bei Phase 3 der [Migration von Symantec zu Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. Diese Migrationsphase umfasst die folgenden Schritte:
 
 1. [Onboarding von Geräten in Microsoft Defender for Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
 2. [Führen Sie einen Erkennungstest aus.](#run-a-detection-test)
@@ -105,6 +105,6 @@ Besuchen Sie dazu die Microsoft Defender for Endpoint-Demoszenarien-Website ( [h
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-**Herzlichen Glückwunsch!** Sie haben die Migration [von Symantec zu Microsoft Defender for Endpoint abgeschlossen!](symantec-to-microsoft-defender-atp-migration.md#the-migration-process) 
+**Herzlichen Glückwunsch!** Sie haben die Migration [von Symantec zu Microsoft Defender for Endpoint abgeschlossen!](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process) 
 - [Besuchen Sie Ihr Sicherheitsbetriebsdashboard](security-operations-dashboard.md) im Microsoft Defender Security Center ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ). 
 - [Verwalten von Microsoft Defender for Endpoint, post migration](manage-atp-post-migration.md).

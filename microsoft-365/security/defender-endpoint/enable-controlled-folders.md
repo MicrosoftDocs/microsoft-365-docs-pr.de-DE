@@ -14,12 +14,12 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a35c18d805ef3645659f49b8340cbb4cabab2f8d
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 6d07e2a21bb01794990160cf02837fc524008098
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165069"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218760"
 ---
 # <a name="enable-controlled-folder-access"></a>Aktivieren des kontrollierten Ordnerzugriffs
 
@@ -141,4 +141,4 @@ Verwenden `Disabled` Sie, um das Feature zu deaktivieren.
 
 * [Schützen wichtiger Ordner mit kontrolliertem Ordnerzugriff](controlled-folders.md)
 * [Anpassen des kontrollierten Ordnerzugriffs](customize-controlled-folders.md)
-* [Bewerten von Microsoft Defender for Endpoint](evaluate-atp.md)
+* [Bewerten von Microsoft Defender for Endpoint](evaluate-mde.md)
