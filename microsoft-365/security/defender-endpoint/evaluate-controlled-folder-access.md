@@ -13,12 +13,12 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e5da8ec3e4555af062aad1a4ebfa96d972bee23b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e965e1a882dadfb565231074165507a6727b45c1
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065872"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218748"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Bewerten des kontrollierten Ordnerzugriffs
 
@@ -76,5 +76,5 @@ Weitere [Informationen finden](controlled-folders.md) Sie unter Schützen wichti
 ## <a name="see-also"></a>Siehe auch
 
 * [Schützen wichtiger Ordner mit kontrolliertem Ordnerzugriff](controlled-folders.md)
-* [Bewerten von Microsoft Defender for Endpoint](evaluate-atp.md)
+* [Bewerten von Microsoft Defender for Endpoint](evaluate-mde.md)
 * [Verwenden des Überwachungsmodus](audit-windows-defender.md)

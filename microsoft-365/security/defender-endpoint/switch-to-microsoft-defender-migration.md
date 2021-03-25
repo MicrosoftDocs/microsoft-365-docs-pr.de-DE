@@ -22,12 +22,12 @@ ms.custom: migrationguides
 ms.date: 02/11/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 6e5b79e447579631e4aa2eaf02352dc3fa6a8daa
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2c6029a1aada8f5f5fb27723c868f28c3de6f8aa
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066088"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218652"
 ---
 # <a name="make-the-switch-from-a-non-microsoft-endpoint-solution-to-microsoft-defender-for-endpoint"></a>Wechseln von einer Nicht-Microsoft-Endpunktlösung zu Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ Wenn Sie zu Defender for Endpoint wechseln, beginnen Sie mit Ihrer Nicht-Microso
 
 > [!TIP]
 > - Wenn Sie derzeit McAfee Endpoint Security (McAfee) verwenden, lesen Sie Migrieren von [McAfee zu Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-migration.md).
-> - Wenn Sie derzeit Symantec Endpoint Protection (Symantec) verwenden, lesen [Sie Migrieren von Symantec zu Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md).
+> - Wenn Sie derzeit Symantec Endpoint Protection (Symantec) verwenden, lesen [Sie Migrieren von Symantec zu Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md).
 
 ## <a name="the-migration-process"></a>Der Migrationsprozess
 

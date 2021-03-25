@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f3e4b434f1ca267d5bbfbc7e67cb20c7e2b9dbbb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 79b4d343326d722e42e09ae2794c05dcdd8eb603
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920564"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218736"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Archivierte Microsoft Managed Desktop-Geräte
 
@@ -40,11 +40,14 @@ Um in Microsoft Managed Desktop registriert zu werden, muss ein Gerät eines der
 |---------|---------|---------|---------|
 |Dell Precision 3530| 256 GB / Intel i5 / 8 GB RAM | IR-Kamera erforderlich | **22. Mai 2023** |
 |Dell Latitude 5300 / 5300 2-in-1 / 5400 / 5500 | 256 GB / Intel i5 / 8 GB RAM | IR-Kamera erforderlich | **1. Juni 2024**  |
+|Dell Latitude 5310 / 5310 2-in-1 / 256 GB / Intel i5 / 8 GB RAM | IR-Kamera erforderlich | **28.04.2025**  |
+|Dell Latitude 5410 / 5410 2-in-1 / 256 GB / Intel i5 / 8 GB RAM | IR-Kamera erforderlich | **28.04.2025**  |
 |Dell Latitude 5490 | 256 GB / Intel i5 / 8 GB RAM | IR-Kamera erforderlich | **09.01.2023** |
 |Dell Latitude 7200 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR-Kamera erforderlich | **1. Mai 2024** |
 |Dell Latitude 7300 / 7400 / 7400 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR-Kamera erforderlich | **1. Mai 2024**  |
 |Dell Latitude 7390 / 7390 2-in-1 / 7490 | 256 GB / Intel i5 / 8 GB RAM   | IR-Kamera erforderlich | **09.01.2023** |
 |Dell Latitude 7410 / 7410 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR-Kamera erforderlich | **19. Mai 2025**  |
+|Dell Latitude 9410 / 9410 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | IR-Kamera erforderlich | **05. Mai 2025**  |
 |Dell Optiplex 3070 | 128 GB / Intel i3 / 8 GB RAM | Keine | **1. Mai 2025**  |
 |HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | SKU mit 5VS01AV, IR-Kamera oder Fingerabdrucksensor erforderlich  | **15. Februar 2023** |
 |HP EliteBook 830 / 840 / 850 G6| 128 GB / Intel i5 / 8 GB RAM | SKU mit 5VS01AV, IR-Kamera oder Fingerabdrucksensor erforderlich  | **30.11.2023** |

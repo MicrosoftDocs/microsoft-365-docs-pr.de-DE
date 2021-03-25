@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 6a5e5c10e92d5c8c017360033d7c3fc23b707730
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6d45e3aa0d3bf938e43201aca969613876ef1f31
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185479"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218712"
 ---
 # <a name="migrate-from-symantec---phase-2-set-up-microsoft-defender-for-endpoint"></a>Migrieren von Symantec – Phase 2: Einrichten von Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "51185479"
 ||*Sie sind hier!* | |
 
 
-**Willkommen bei der Setupphase der [Migration von Symantec zu Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. Diese Phase umfasst die folgenden Schritte:
+**Willkommen bei der Setupphase der [Migration von Symantec zu Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. Diese Phase umfasst die folgenden Schritte:
 1. [Aktivieren oder erneuten Installieren von Microsoft Defender Antivirus (für bestimmte Versionen von Windows)](#enable-or-reinstall-microsoft-defender-antivirus-for-certain-versions-of-windows).
 2. [Aktivieren Sie Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
 3. [Hier finden Sie Updates für Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
@@ -228,5 +228,5 @@ Konfigurieren Sie mithilfe von Configuration Manager und Ihren Gerätesammlungen
 
 ## <a name="next-step"></a>Nächster Schritt
 
-**Herzlichen Glückwunsch!** Sie haben die Setupphase der [Migration von Symantec zu Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)abgeschlossen.
+**Herzlichen Glückwunsch!** Sie haben die Setupphase der [Migration von Symantec zu Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)abgeschlossen.
 - [Fahren Sie mit Phase 3: Onboarding zu Microsoft Defender for Endpoint fort.](symantec-to-microsoft-defender-atp-onboard.md)
