@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: 476803d552748ff5dcadbb5b137eb59b6ad22577
-  ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+  ms.openlocfilehash: fdd4063947a262de2f4140412fa1b94362de4e96
+  ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 03/24/2021
-  ms.locfileid: "51165345"
+  ms.lasthandoff: 03/25/2021
+  ms.locfileid: "51199945"
 highlightedContent:
   items:
   - title: Fördern von Remotemitarbeitern
@@ -91,9 +91,9 @@ productDirectory:
       text: Konfigurieren von drei Schutzebenen mit Microsoft Teams
     - url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
       text: Microsoft Defender für Endpunkt bereitstellen
-    - url: security/defender-365-security/defender-for-office-365.md
+    - url: security/office-365-security/defender-for-office-365.md
       text: Microsoft Defender für Office 365 bereitstellen
-    - url: security/defender-365-security/microsoft-365-policies-configurations.md
+    - url: security/office-365-security/microsoft-365-policies-configurations.md
       text: Konfigurieren des Identitäts- und Gerätezugriffschutzes
   - title: Schutz Ihrer Informationen und Einhaltung gesetzlicher Vorschriften
     imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg

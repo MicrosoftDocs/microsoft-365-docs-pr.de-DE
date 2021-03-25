@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5ab4019751a26507fcc80007d3262f20f861d25c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8bb80e032fd2eb4c618b60f4ab46829d5cf11b6d
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063448"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199229"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Konfigurieren von Microsoft 365 Defender-Säulen für Ihre Testumgebung oder Pilotumgebung
 
@@ -96,7 +96,7 @@ Es gibt ein PowerShell-Modul namens *Office 365 Advanced Threat Protection Recom
  
 7. Wählen Sie als Nächstes die Richtlinie für **sichere** Links aus, und klicken Sie dann auf das Stiftsymbol, um die Standardrichtlinie zu bearbeiten.
 
-8. Stellen Sie sicher, dass die Option Nicht **nachverfolgen, wenn** Benutzer auf sichere Links klicken, nicht ausgewählt ist, während die restlichen Optionen ausgewählt sind. Weitere [Informationen finden Sie unter Einstellungen für sichere](/microsoft-365/security/defender-365-security/recommended-settings-for-eop-and-office365) Links. Klicken Sie auf **Speichern**. 
+8. Stellen Sie sicher, dass die Option Nicht **nachverfolgen, wenn** Benutzer auf sichere Links klicken, nicht ausgewählt ist, während die restlichen Optionen ausgewählt sind. Weitere [Informationen finden Sie unter Einstellungen für sichere](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365) Links. Klicken Sie auf **Speichern**. 
 
    ![Abbildung of_Office 365 Security & Compliance Center-Seite, die zeigt, dass die Option Nicht nachverfolgen, wenn Benutzer auf sicher klicken nicht ausgewählt ist](../../media/mtp-eval-38.png)
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Festlegen von Microsoft Compliance Manager-Benutzerberechtigungen und -rollen und Konfigurieren automatisierter Tests von Aktionen. Verwalten Sie den Benutzerverlauf, und filtern Sie Ihre Dashboardansicht.
-ms.openlocfilehash: 08a62a12e5f412781595ba7d54c3b63a03ae19aa
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3b32ac5a82bbc726c5bf61859266e0561ca7f53c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052133"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199218"
 ---
 # <a name="get-started-with-compliance-manager"></a>Erste Schritte mit Compliance-Manager
 
@@ -72,7 +72,7 @@ Führen Sie zum Festlegen von Berechtigungen und Zuweisen von Rollen im Office 3
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>Weitere Informationen zum Office 365 Security & Compliance Center
 
-Weitere Informationen zu [Berechtigungen finden Sie im Office 365 Security & Compliance Center](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md).
+Weitere Informationen zu [Berechtigungen finden Sie im Office 365 Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 Wenn Sie keinen Zugriff auf das Office 365 Security and Compliance Center haben oder auf die klassische Version von Compliance Manager im Microsoft Service Trust Portal zugreifen müssen, bieten die Administratoreinstellungen im Dienstvertrauensportal eine weitere Möglichkeit zum Zuweisen von Rollen ([Ansichtsanweisungen](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)). Beachten Sie, dass diese Rollen in ihrer Funktionalität eingeschränkter sind.
 

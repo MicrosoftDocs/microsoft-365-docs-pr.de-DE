@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 02/01/2021
-ms.openlocfilehash: c91e5152fc7a64c8d26363383192d6b8d74611b8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: d958f2787b9d66e42a32b8858139f7d13e83ddef
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186761"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199597"
 ---
 # <a name="the-action-center"></a>Das Info-Center
 
@@ -61,7 +61,7 @@ Das einheitliche Action Center vereint Korrekturaktionen in Defender for Endpoin
 Sie können das einheitliche Aktionscenter verwenden, wenn Sie über entsprechende Berechtigungen und mindestens eines der folgenden Abonnements verfügen:
 
 - [Defender für Endpunkt](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)
+- [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 
 > [!TIP]
@@ -113,11 +113,11 @@ Neben Denkmaßnahmen, die automatisch als Ergebnis automatisierter Untersuchunge
 | Aktionsquellenwert | Beschreibung |
 |:-----|:---|
 | **Manuelle Geräteaktion** | Eine manuelle Aktion auf einem Gerät. Beispiele hierfür [sind Geräteisolation](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) oder [Dateiquarantäne.](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files) |
-| **Manuelle E-Mail-Aktion** | Eine manuelle Aktion für E-Mails. Ein Beispiel umfasst das Soft-Deleting von E-Mail-Nachrichten oder [das Löschen einer E-Mail-Nachricht.](../defender-365-security/remediate-malicious-email-delivered-office-365.md) |
+| **Manuelle E-Mail-Aktion** | Eine manuelle Aktion für E-Mails. Ein Beispiel umfasst das Soft-Deleting von E-Mail-Nachrichten oder [das Löschen einer E-Mail-Nachricht.](../office-365-security/remediate-malicious-email-delivered-office-365.md) |
 | **Automatische Geräteaktion** | Eine automatisierte Aktion für eine Entität, z. B. eine Datei oder einen Prozess. Beispiele für automatisierte Aktionen sind das Senden einer Datei in quarantäne, das Beenden eines Prozesses und das Entfernen eines Registrierungsschlüssels. (Siehe [Korrekturaktionen in Microsoft Defender for Endpoint](../defender-endpoint/manage-auto-investigation.md#remediation-actions).) |
-| **Automatisierte E-Mail-Aktion** | Eine automatisierte Aktion für E-Mail-Inhalte, z. B. eine E-Mail-Nachricht, anlage oder URL. Beispiele für automatisierte Aktionen sind das soft-deleting von E-Mail-Nachrichten, das Blockieren von URLs und das Deaktivieren der externen E-Mail-Weiterleitung. (Siehe [Korrekturaktionen in Microsoft Defender für Office 365](../defender-365-security/air-remediation-actions.md).) |
+| **Automatisierte E-Mail-Aktion** | Eine automatisierte Aktion für E-Mail-Inhalte, z. B. eine E-Mail-Nachricht, anlage oder URL. Beispiele für automatisierte Aktionen sind das soft-deleting von E-Mail-Nachrichten, das Blockieren von URLs und das Deaktivieren der externen E-Mail-Weiterleitung. (Siehe [Korrekturaktionen in Microsoft Defender für Office 365](../office-365-security/air-remediation-actions.md).) |
 | **Erweiterte Suche** | Aktionen auf Geräten oder E-Mails mit [erweiterter Suche](./advanced-hunting-overview.md). |
-| **Explorer-Aktion** | Aktionen für E-Mail-Inhalte mit [Explorer](../defender-365-security/threat-explorer.md). |
+| **Explorer-Aktion** | Aktionen für E-Mail-Inhalte mit [Explorer](../office-365-security/threat-explorer.md). |
 | **Manuelle Liveantwortaktion** | Aktionen, die auf einem Gerät mit [Liveantwort ergriffen werden.](../defender-endpoint/live-response.md) Beispiele hierfür sind das Löschen einer Datei, das Beenden eines Prozesses und das Entfernen einer geplanten Aufgabe. |
 | **Liveantwortaktion** | Aktionen auf einem Gerät mit [Microsoft Defender für Endpunkt-APIs](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis). Beispiele für Aktionen sind das Isolieren eines Geräts, das Ausführen eines Antivirenscans und das Abrufen von Informationen zu einer Datei. |
 
@@ -128,7 +128,7 @@ Zum Ausführen von Aufgaben, z. B. genehmigen oder ablehnen ausstehende Aktionen
 |Wartungsaktion |Erforderliche Rollen und Berechtigungen |
 |--|----|
 |Microsoft Defender for Endpoint Remediation (Devices) |**Sicherheitsadministratorrolle** in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) oder im Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- oder ---<br/>In Microsoft Defender for Endpoint **zugewiesene** Rolle für aktive Korrekturaktionen <br/> <br/> Weitere Informationen hierzu finden Sie in den folgenden Ressourcen: <br/>- [Administratorrollenberechtigungen in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Erstellen und Verwalten von Rollen für die rollenbasierte Zugriffssteuerung (Microsoft Defender for Endpoint)](../defender-endpoint/user-roles.md)  |
-|Microsoft Defender for Office 365-Korrektur (Office-Inhalt und E-Mail)  |**Sicherheitsadministratorrolle** in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) oder im Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- und --- <br/>**Search and Purge** role assigned the Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**WICHTIG:** Wenn Die  Rolle "Sicherheitsadministrator" nur im Office 365 Security & Compliance Center ( ) zugewiesen ist, können Sie nicht auf die [https://protection.office.com](https://protection.office.com) Funktionen "Action Center" oder "Microsoft 365 Defender" zugreifen. Die Rolle **"Sicherheitsadministrator"** muss in Azure Active Directory oder im Microsoft 365 Admin Center zugewiesen sein. <br/><br/>Weitere Informationen hierzu finden Sie in den folgenden Ressourcen: <br/>- [Administratorrollenberechtigungen in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Berechtigungen im Security & Compliance Center](/microsoft-365/security/defender-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender for Office 365-Korrektur (Office-Inhalt und E-Mail)  |**Sicherheitsadministratorrolle** in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) oder im Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- und --- <br/>**Search and Purge** role assigned the Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**WICHTIG:** Wenn Die  Rolle "Sicherheitsadministrator" nur im Office 365 Security & Compliance Center ( ) zugewiesen ist, können Sie nicht auf die [https://protection.office.com](https://protection.office.com) Funktionen "Action Center" oder "Microsoft 365 Defender" zugreifen. Die Rolle **"Sicherheitsadministrator"** muss in Azure Active Directory oder im Microsoft 365 Admin Center zugewiesen sein. <br/><br/>Weitere Informationen hierzu finden Sie in den folgenden Ressourcen: <br/>- [Administratorrollenberechtigungen in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Berechtigungen im Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > Benutzer, denen in Azure Active Directory die Rolle **Globaler Administrator** zugewiesen ist, können alle ausstehenden Aktionen im Info-Center genehmigen oder ablehnen. Als bewährte Methode sollte Ihre Organisation jedoch die Anzahl der Personen begrenzen, denen die Rolle **"Globaler Administrator"** zugewiesen ist. Es wird empfohlen, die in der vorherigen Tabelle aufgeführten Rollen **"Sicherheitsadministrator",**"Aktive Korrekturmaßnahmen" und "Suchen und Löschen" für Berechtigungen im Aktionscenter zu verwenden.  

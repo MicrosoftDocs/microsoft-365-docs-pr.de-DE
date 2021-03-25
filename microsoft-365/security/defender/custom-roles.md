@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 17d55a434cc0499b9b24039f19ec7ed3c94310e8
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6582e4e940dc9910e7d341c92b525379b924f35b
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060747"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199957"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Benutzerdefinierte Rollen in der rollenbasierten Zugriffssteuerung für Microsoft 365 Defender
 
@@ -53,7 +53,7 @@ Benutzer mit vorhandenen benutzerdefinierten Rollen können auf Daten im Microso
 Benutzerdefinierte Rollen und Berechtigungen können über jedes der folgenden Sicherheitsportale erstellt und einzeln verwaltet werden: 
 
 - Microsoft Defender for Endpoint – [Bearbeiten von Rollen in Microsoft Defender for Endpoint](../defender-endpoint/user-roles.md)
-- Microsoft Defender für Office 365 – [Berechtigungen im Security & Compliance Center](../defender-365-security/permissions-in-the-security-and-compliance-center.md?preserve-view=true&view=o365-worldwide)
+- Microsoft Defender für Office 365 – [Berechtigungen im Security & Compliance Center](../office-365-security/permissions-in-the-security-and-compliance-center.md?preserve-view=true&view=o365-worldwide)
 - Microsoft Cloud App Security – [Verwalten des Administratorzugriffs](/cloud-app-security/manage-admins)
 
 Jede benutzerdefinierte Rolle, die über ein einzelnes Portal erstellt wird, ermöglicht den Zugriff auf die Daten des relevanten Produktportals. Beispielsweise ermöglicht eine benutzerdefinierte Rolle, die über Microsoft Defender for Endpoint erstellt wurde, nur den Zugriff auf Defender for Endpoint-Daten.

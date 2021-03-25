@@ -22,12 +22,12 @@ ms.custom: autoir
 ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: fa73756aa9f350793c00a7e4a960c215627b712f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c81f824a0faaca1c228aa650c003576cce210a67
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064712"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199207"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Korrekturaktionen in Microsoft 365 Defender
 
@@ -45,7 +45,7 @@ Während und nach einer automatisierten Untersuchung in Microsoft 365 Defender w
 > Ob Korrekturaktionen automatisch oder nur nach Genehmigung ausgeführt werden, hängt von bestimmten Einstellungen ab, z. B. von automatisierungsstufen. Weitere Informationen finden Sie in den folgenden Artikeln:
 > - [Konfigurieren Der automatisierten Untersuchungs- und Reaktionsfunktionen in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md)
 > - [Wie Bedrohungen auf Geräten behoben werden](../defender-endpoint/automated-investigations.md)
-> - [Bedrohungen und Abhilfemaßnahmen für E-Mail-& Inhalte der Zusammenarbeit](../defender-365-security/air-remediation-actions.md#threats-and-remediation-actions)
+> - [Bedrohungen und Abhilfemaßnahmen für E-Mail-& Inhalte der Zusammenarbeit](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
 In der folgenden Tabelle sind Korrekturaktionen zusammengefasst, die derzeit in Microsoft 365 Defender unterstützt werden: 
 
@@ -76,7 +76,7 @@ Zusätzlich zu Abhilfemaßnahmen, die automatisierten Untersuchungen folgen, kan
 - Manuelle Geräteaktion, z. B. Geräteisolation oder Dateiquarantäne.
 - Manuelle E-Mail-Aktion, z. B. das soft-deleting von E-Mail-Nachrichten. 
 - [Erweiterte Suche auf](../defender-endpoint/advanced-hunting-overview.md) Geräten oder E-Mails.
-- [Explorer-Aktion](../defender-365-security/threat-explorer.md) für E-Mail-Inhalte, z. B. das Verschieben von E-Mails in Junk- oder Soft-Deleting-E-Mails oder das Löschen von E-Mails.
+- [Explorer-Aktion](../office-365-security/threat-explorer.md) für E-Mail-Inhalte, z. B. das Verschieben von E-Mails in Junk- oder Soft-Deleting-E-Mails oder das Löschen von E-Mails.
 - Manuelle [Liveantwortaktion,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) z. B. Löschen einer Datei, Beenden eines Prozesses und Entfernen einer geplanten Aufgabe.
 - Liveantwortaktion mit [Microsoft Defender for Endpoint-APIs,](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)z. B. Isolieren eines Geräts, Ausführen einer Antivirenscans und Abrufen von Informationen zu einer Datei. 
 

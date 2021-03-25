@@ -17,12 +17,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 7a33fdf1436d88906257c8b603a5da579c2e3846
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: afdf4b4ec8824fa49843074880bcd6f4f1857cca
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068655"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200269"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Konfigurieren automatisierter Untersuchungs- und Reaktionsfunktionen in Microsoft 365 Defender
 
@@ -46,7 +46,7 @@ Nachdem Sie alle eingerichtet wurden, können Sie Aktionen im [Aktionscenter anz
 |Abonnementanforderungen |Eines der folgenden Abonnements: <br/>- Microsoft 365 E5<br/>- Microsoft 365 A5<br/>- Microsoft 365 E5 Security<br/>- Microsoft 365 A5 Security<br/>- Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5<p> Weitere Informationen [finden Sie unter Microsoft 365 Defender licensing requirements](./prerequisites.md#licensing-requirements).|
 |Netzwerkanforderungen |- [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) aktiviert<br/>- [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) konfiguriert<br/>- [Microsoft Defender for Identity-Integration](/cloud-app-security/mdi-integration) |
 |Windows-Computeranforderungen |– Windows 10, Version 1709 oder höher, muss installiert sein (siehe [Windows 10-Versionsinformationen](/windows/release-information/)) <br/>– Die folgenden Dienste zum Schutz vor Bedrohungen sind konfiguriert:<br/>- [Microsoft Defender for Endpoint](../defender-endpoint/configure-endpoints.md)<br/>- [Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
-|Schutz für E-Mail-Inhalte und Office-Dateien |[Microsoft Defender für Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365#configure-atp-policies) konfiguriert |
+|Schutz für E-Mail-Inhalte und Office-Dateien |[Microsoft Defender für Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) konfiguriert |
 |Berechtigungen | Zum Konfigurieren automatisierter Untersuchungs- und Reaktionsfunktionen müssen Sie die Rolle globaler Administrator oder Sicherheitsadministrator entweder in Azure Active Directory ( ) oder [https://portal.azure.com](https://portal.azure.com) im Microsoft 365 Admin Center ( ) zugewiesen haben. [https://admin.microsoft.com](https://admin.microsoft.com)<p>Informationen zu den berechtigungen, die zum Arbeiten mit automatisierten Untersuchungs- und Reaktionsfunktionen erforderlich sind, z. B. Überprüfen, Genehmigen oder Ablehnen ausstehender Aktionen, finden Sie unter Erforderliche Berechtigungen für Aufgaben im [Aktionscenter](m365d-action-center.md#required-permissions-for-action-center-tasks). |
 
 ## <a name="review-or-change-the-automation-level-for-device-groups"></a>Überprüfen oder Ändern der Automatisierungsebene für Gerätegruppen
@@ -61,21 +61,21 @@ Ob automatisierte Untersuchungen ausgeführt werden und ob Korrekturaktionen aut
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>Überprüfen Ihrer Sicherheits- und Warnungsrichtlinien in Office 365
 
-Microsoft bietet integrierte [Warnungsrichtlinien,](../../compliance/alert-policies.md) mit deren Hilfe bestimmte Risiken identifiziert werden können. Zu diesen Risiken gehören Missbrauch von Exchange-Administratorberechtigungen, Schadsoftwareaktivitäten, potenzielle externe und interne Bedrohungen sowie Risiken der Informationsverwaltung. Einige Warnungen können eine [automatisierte Untersuchung und Reaktion in Office 365 auslösen.](../defender-365-security/office-365-air.md) Stellen Sie [sicher, dass Ihre Microsoft Defender für Office 365-Features](/microsoft-365/security/defender-365-security/defender-for-office-365) ordnungsgemäß konfiguriert sind.
+Microsoft bietet integrierte [Warnungsrichtlinien,](../../compliance/alert-policies.md) mit deren Hilfe bestimmte Risiken identifiziert werden können. Zu diesen Risiken gehören Missbrauch von Exchange-Administratorberechtigungen, Schadsoftwareaktivitäten, potenzielle externe und interne Bedrohungen sowie Risiken der Informationsverwaltung. Einige Warnungen können eine [automatisierte Untersuchung und Reaktion in Office 365 auslösen.](../office-365-security/office-365-air.md) Stellen Sie [sicher, dass Ihre Microsoft Defender für Office 365-Features](/microsoft-365/security/office-365-security/defender-for-office-365) ordnungsgemäß konfiguriert sind.
 
 Obwohl bestimmte Warnungen und Sicherheitsrichtlinien automatisierte Untersuchungen auslösen können, werden für E-Mails und Inhalte keine Korrekturaktionen automatisch ausgeführt. Stattdessen warten alle Korrekturaktionen für E-Mail- und E-Mail-Inhalte auf die Genehmigung durch Ihr Sicherheitsteam im [Action Center.](m365d-action-center.md)
 
-Sicherheitseinstellungen in Office 365 helfen beim Schutz von E-Mails und Inhalten. Befolgen Sie zum Anzeigen oder Ändern dieser Einstellungen die Anweisungen unter [Schützen vor Bedrohungen.](../defender-365-security/protect-against-threats.md)
+Sicherheitseinstellungen in Office 365 helfen beim Schutz von E-Mails und Inhalten. Befolgen Sie zum Anzeigen oder Ändern dieser Einstellungen die Anweisungen unter [Schützen vor Bedrohungen.](../office-365-security/protect-against-threats.md)
 
 1. Wechseln Sie im Microsoft 365 Security Center ( [https://security.microsoft.com](https://security.microsoft.com) ) zu **Richtlinien**  >  **Bedrohungsschutz**.
-2. Stellen Sie sicher, dass alle folgenden Richtlinien konfiguriert sind. Hilfe und Empfehlungen finden Sie unter [Protect against threats](/microsoft-365/security/defender-365-security/protect-against-threats).
-   - [An malware (Office 365)](../defender-365-security/protect-against-threats.md#part-1---anti-malware-protection)
-   - [Antiphishing in Defender for Office 365)](../defender-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
-   - [Sichere Anlagen (Office 365)](../defender-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
-   - [Sichere Links (Office 365)](../defender-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
-   - [Antispam (Office 365)](../defender-365-security/protect-against-threats.md#part-3---anti-spam-protection)
-3. Stellen Sie [sicher, dass Microsoft Defender für Office 365 für SharePoint, OneDrive](../defender-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on) und Microsoft Teams aktiviert ist.
-4. Stellen Sie sicher, dass die automatische [Bereinigung für den E-Mail-Schutz](../defender-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) in der Nullstunde wirksam ist.
+2. Stellen Sie sicher, dass alle folgenden Richtlinien konfiguriert sind. Hilfe und Empfehlungen finden Sie unter [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats).
+   - [An malware (Office 365)](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection)
+   - [Antiphishing in Defender for Office 365)](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
+   - [Sichere Anlagen (Office 365)](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
+   - [Sichere Links (Office 365)](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
+   - [Antispam (Office 365)](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection)
+3. Stellen Sie [sicher, dass Microsoft Defender für Office 365 für SharePoint, OneDrive](../office-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on) und Microsoft Teams aktiviert ist.
+4. Stellen Sie sicher, dass die automatische [Bereinigung für den E-Mail-Schutz](../office-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) in der Nullstunde wirksam ist.
 5. (Dieser Schritt ist optional.) Überprüfen Sie [Ihre Office 365-Warnungsrichtlinien](../../compliance/alert-policies.md) im Microsoft 365 Compliance Center ( [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) ). Mehrere Standardbenachrichtigungsrichtlinien befinden sich in der Kategorie Bedrohungsverwaltung. Einige dieser Warnungen können automatisierte Untersuchungen und Reaktionen auslösen. Weitere Informationen finden Sie unter [Standardbenachrichtigungsrichtlinien](../../compliance/alert-policies.md#default-alert-policies).
 
 ## <a name="make-sure-microsoft-365-defender-is-turned-on"></a>Stellen Sie sicher, dass Microsoft 365 Defender aktiviert ist

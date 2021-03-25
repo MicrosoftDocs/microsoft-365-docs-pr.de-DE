@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 41c97d122362ec1fa945fc012ab7a1da46a43b68
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: ed6f6b42570a908a1f4a83d46ef5b2de0c558692
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165585"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199741"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurieren erweiterter Features in Defender for Endpoint
 
@@ -141,7 +141,7 @@ Wenn Sie dieses Feature aktivieren, können Sie Daten aus Office 365 Advanced Th
 > [!NOTE]
 > Sie benötigen die entsprechende Lizenz, um dieses Feature zu aktivieren.
 
-Um kontextbezogene Geräteintegration in Office 365 Threat Intelligence zu erhalten, müssen Sie die Defender for Endpoint-Einstellungen im Security & Compliance-Dashboard aktivieren. Weitere Informationen finden Sie unter [Threat investigation and response](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-ti).
+Um kontextbezogene Geräteintegration in Office 365 Threat Intelligence zu erhalten, müssen Sie die Defender for Endpoint-Einstellungen im Security & Compliance-Dashboard aktivieren. Weitere Informationen finden Sie unter [Threat investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti).
 
 ## <a name="microsoft-threat-experts"></a>Microsoft-Bedrohungsexperten
 

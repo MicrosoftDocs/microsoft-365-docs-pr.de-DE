@@ -14,20 +14,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erstellen Sie eine Microsoft 365-Umgebung zum Testen des Identitäts- und Gerätezugriffs anhand der Voraussetzungen für die Authentifizierung der Kennworthashsynchronisierung.
-ms.openlocfilehash: 2ca83b6ab715a752d3d9620af631263eb5d84fa3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a3b02167bc3c1d2e7bc809d227ce5537114ffff9
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051246"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199441"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Identitäts- und Gerätezugriffsvoraussetzungen für die Kennworthashsynchronisierung in Ihrer Microsoft 365-Umgebung
 
 *Diese Testumgebungsanleitung kann nur für Microsoft 365 für Unternehmenstestumgebungen verwendet werden.*
 
-[Identitäts-](../security/defender-365-security/microsoft-365-policies-configurations.md) und Gerätezugriffskonfigurationen sind eine Reihe von Konfigurationen und Richtlinien für bedingten Zugriff, um den Zugriff auf alle Dienste in Microsoft 365 For Enterprise zu schützen, die in Azure Active Directory (Azure AD) integriert sind.
+[Identitäts-](../security/office-365-security/microsoft-365-policies-configurations.md) und Gerätezugriffskonfigurationen sind eine Reihe von Konfigurationen und Richtlinien für bedingten Zugriff, um den Zugriff auf alle Dienste in Microsoft 365 For Enterprise zu schützen, die in Azure Active Directory (Azure AD) integriert sind.
 
-In diesem Artikel wird beschrieben, wie Sie eine Microsoft 365-Testumgebung konfigurieren, die die Anforderungen der Hybridumgebung mit kennworthashsynchroner Authentifizierung für die Erforderliche Konfiguration für den Identitäts- und Gerätezugriff erfüllt. [](../security/defender-365-security/identity-access-prerequisites.md#prerequisites)
+In diesem Artikel wird beschrieben, wie Sie eine Microsoft 365-Testumgebung konfigurieren, die die Anforderungen der Hybridumgebung mit kennworthashsynchroner Authentifizierung für die Erforderliche Konfiguration für den Identitäts- und Gerätezugriff erfüllt. [](../security/office-365-security/identity-access-prerequisites.md#prerequisites)
 
 Es gibt zehn Phasen zum Einrichten dieser Testumgebung:
 
@@ -119,11 +119,11 @@ Für Skype for Business Online:
   Get-CsOAuthConfiguration
   ```
 
-Das Ergebnis ist eine Test-Umgebung, die die Anforderungen von [Active Directory mit der erforderlichen Konfiguration für die Kennworthashsynchronisierung ](../security/defender-365-security/identity-access-prerequisites.md#prerequisites) für den Identitäts- und Gerätezugriff erfüllt. 
+Das Ergebnis ist eine Test-Umgebung, die die Anforderungen von [Active Directory mit der erforderlichen Konfiguration für die Kennworthashsynchronisierung ](../security/office-365-security/identity-access-prerequisites.md#prerequisites) für den Identitäts- und Gerätezugriff erfüllt. 
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Verwenden Sie [Gemeinsame Identitäts- und Gerätezugriffsrichtlinien](../security/defender-365-security/identity-access-policies.md), um die Richtlinien zu konfigurieren, die auf den Voraussetzungen aufbauen und Identitäten und Geräte schützen.
+Verwenden Sie [Gemeinsame Identitäts- und Gerätezugriffsrichtlinien](../security/office-365-security/identity-access-policies.md), um die Richtlinien zu konfigurieren, die auf den Voraussetzungen aufbauen und Identitäten und Geräte schützen.
 
 ## <a name="see-also"></a>Siehe auch
 

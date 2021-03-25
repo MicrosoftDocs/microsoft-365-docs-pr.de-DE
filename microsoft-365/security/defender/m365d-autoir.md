@@ -22,12 +22,12 @@ ms.custom: autoir
 ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: c12937c016875c26a7212117e41aac4349cb540d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8ed6f1ccd6587d6c618974a123f0d5d42a44e753
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065903"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199633"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Automatisierte Untersuchung und Reaktion in Microsoft 365 Defender
 
@@ -90,7 +90,7 @@ In Microsoft 365 Defender korreliert jede automatisierte Untersuchung Signale in
 |Entitäten |Dienste für den Bedrohungsschutz  |
 |:---------|:---------|
 |Geräte (auch als Endpunkte bezeichnet und manchmal auch als Computer bezeichnet)     |[Microsoft Defender für Endpunkt](../defender-endpoint/automated-investigations.md)<br/>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) |      
-|E-Mail-Inhalt (E-Mail-Nachrichten, die Dateien und URLs enthalten können)     |[Microsoft Defender für Office 365](../defender-365-security/defender-for-office-365.md)         |
+|E-Mail-Inhalt (E-Mail-Nachrichten, die Dateien und URLs enthalten können)     |[Microsoft Defender für Office 365](../office-365-security/defender-for-office-365.md)         |
 
 > [!NOTE]
 > Nicht jede Warnung löst eine automatisierte Untersuchung aus, und nicht jede Untersuchung führt zu automatisierten Abhilfemaßnahmen. es hängt davon ab, wie die automatisierte Untersuchung und Reaktion für Ihre Organisation konfiguriert ist. Weitere Informationen finden Sie unter [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d78f90e78a50d5902070f441a1d60693a5f531c8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 35a0b66a4cdc4cf39c15329eda2e0aafced79f34
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185719"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199609"
 ---
 # <a name="create-indicators-for-files"></a>Erstellen von Indikatoren für Dateien
 
@@ -35,7 +35,8 @@ ms.locfileid: "51185719"
 
 
 
->Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> [!TIP]
+> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 Sie können die weitere Verbreitung eines Angriffs in Ihrer Organisation verhindern, indem Sie potenziell schädliche Dateien oder mutmaßliche Schadsoftware verbieten. Wenn Sie eine potenziell schädliche ausführbare Datei (PE) kennen, können Sie sie blockieren. Dieser Vorgang verhindert, dass er auf Computern in Ihrer Organisation gelesen, geschrieben oder ausgeführt wird.
 
@@ -52,13 +53,13 @@ Es ist wichtig, die folgenden Voraussetzungen zu kennen, bevor Sie Indikatoren f
 - Um mit dem Blockieren von Dateien zu beginnen, müssen Sie zunächst das [ **Feature Blockieren**](advanced-features.md) oder Zulassen unter Einstellungen aktivieren.
 - Dieses Feature soll verhindern, dass mutmaßliche Schadsoftware (oder potenziell schädliche Dateien) aus dem Web heruntergeladen werden. Es unterstützt zurzeit portable ausführbare (PE)-Dateien, einschließlich _EXE-_ und _DLL-Dateien._ Die Abdeckung wird im Laufe der Zeit erweitert.
 
->[!IMPORTANT]
->- Die Funktion "Zulassen" oder "Blockieren" kann nicht für Dateien durchgeführt werden, wenn die Dateiklassifizierung im Cache des Geräts vor der Aktion "Zulassen" oder "Blockieren" vorhanden ist 
->- Vertrauenswürdige signierte Dateien werden unterschiedlich behandelt. Defender for Endpoint ist für die Verarbeitung schädlicher Dateien optimiert. Der Versuch, vertrauenswürdige signierte Dateien zu blockieren, kann in einigen Fällen Auswirkungen auf die Leistung haben.
+Die Leistung kann beeinträchtigt werden, wenn Sie große Dateien aus einer Netzwerkfreigabe auf Ihr lokales Gerät kopieren, insbesondere über eine VPN-Verbindung. 
 
- 
->[!NOTE]
->In der Regel werden Dateiblöcke innerhalb weniger Minuten erzwungen, können jedoch bis zu 30 Minuten dauern.
+> [!IMPORTANT]
+> - Die Funktion "Zulassen" oder "Blockieren" kann nicht für Dateien durchgeführt werden, wenn die Dateiklassifizierung im Cache des Geräts vor der Aktion "Zulassen" oder "Blockieren" vorhanden ist 
+> - Vertrauenswürdige signierte Dateien werden unterschiedlich behandelt. Defender for Endpoint ist für die Verarbeitung schädlicher Dateien optimiert. Der Versuch, vertrauenswürdige signierte Dateien zu blockieren, kann in einigen Fällen Auswirkungen auf die Leistung haben.
+> - In der Regel werden Dateiblöcke innerhalb weniger Minuten erzwungen, können jedoch bis zu 30 Minuten dauern.
+> - Wenn Richtlinien für Dateiindikator in Konflikt stehen, wird die Erzwingungsrichtlinie der sichereren Richtlinie angewendet. Beispielsweise hat eine SHA-256-Dateihashindikatorrichtlinie Vorrang vor einer MD5-Dateihashindikatorrichtlinie, wenn beide Hashtypen dieselbe Datei definieren.
 
 ### <a name="create-an-indicator-for-files-from-the-settings-page"></a>Erstellen eines Indikators für Dateien auf der Einstellungsseite
 
