@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 370048586c5ddfa6fa9ea265e929608357adf5df
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 4aab7f12b250c1415ad65a9e706edf6b68050b2f
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186881"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222652"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint -Vorschaufeatures
 
@@ -40,9 +40,6 @@ ms.locfileid: "51186881"
 
 
 Der Defender for Endpoint-Dienst wird ständig aktualisiert, um neue Funktionserweiterungen und -funktionen zu enthalten.
-
-> [!TIP]
-> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-abovefoldlink)
 
 Erfahren Sie mehr über neue Features in der Defender for Endpoint-Vorschauversion, und testen Sie als erstes die kommenden Features, indem Sie die Vorschaufunktion aktivieren.
 
@@ -68,15 +65,6 @@ In der Vorschauversion sind die folgenden Features enthalten:
 - [Webinhaltsfilterung](web-content-filtering.md) <br> Die Webinhaltsfilterung ist Teil der Webschutzfunktionen in Microsoft Defender for Endpoint. Sie ermöglicht Es Ihrer Organisation, den Zugriff auf Websites basierend auf ihren Inhaltskategorien nachverfolgt und zu regeln. Viele dieser Websites sind zwar nicht bösartig, können jedoch aufgrund von Compliancebestimmungen, Bandbreitennutzung oder anderen Bedenken problematisch sein.
 
 - [Bericht über Geräteintegität und -kompatibilität](machine-reports.md) <br/> Der Bericht über geräteintehitäts- und compliance enthält informationen auf hoher Ebene zu den Geräten in Ihrer Organisation.
-
-- [Schutz von Daten](information-protection-in-windows-overview.md)<BR>
-Der Informationsschutz ist ein integraler Bestandteil der Microsoft 365 Enterprise-Suite und bietet intelligenten Schutz, um vertrauliche Daten zu schützen und gleichzeitig die Produktivität am Arbeitsplatz zu ermöglichen. Microsoft Defender for Endpoint ist nahtlos in Microsoft Threat Protection integriert, um eine vollständige und umfassende Lösung zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) für Windows-Geräte zu bieten.
-
-    >[!NOTE]
-    >Teilweise verfügbar unter Windows 10, Version 1809.
-
-- [Onboarding von Windows Server 2019](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-version-1803-and-windows-server-2019) <BR> Microsoft Defender for Endpoint bietet jetzt Unterstützung für Windows Server 2019. Sie können Windows Server 2019 mit derselben Methode integrieren, die für Windows 10-Clientgeräte verfügbar ist.
-
 
 > [!TIP] 
 > Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  

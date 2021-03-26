@@ -22,12 +22,12 @@ search.appverid:
 description: Technischen und Abrechnungssupport erhalten Sie über die für Ihr Land oder Ihre Region aufgeführten Telefonnummern oder indem Sie online eine Serviceanfrage übermitteln.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: aa843f0c81f38e53b525b6e56d7f3fa69696de79
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6e355a07584d45a85c363956d1bb4e45eae708be
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907038"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222039"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Möglichkeiten, Kontakt mit dem Support für Geschäftsprodukte aufzunehmen – Administratorhilfe
 
@@ -42,7 +42,7 @@ Beginnen Sie mit [Überprüfen Sie den aktuellen Status der Dienste](../enterpri
 
 Sparen Sie Zeit, indem Sie Ihre Serviceanfrage online starten. Wir helfen Ihnen, eine Lösung zu finden oder verbinden Sie mit dem technischen Support.
 
-1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Wenn die Meldung, dass Sie keine Berechtigung haben, auf diese Seite zuzugreifen oder diese Aktion auszuführen, angezeigt wird, sind Sie kein Administrator. [Wer verfügt über Administratorberechtigungen in meinem Unternehmen?](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Wenn die Meldung, dass Sie keine Berechtigung haben, auf diese Seite zuzugreifen oder diese Aktion auszuführen, angezeigt wird, sind Sie kein Administrator. [Wer verfügt über Administratorberechtigungen in meinem Unternehmen?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview?#who-has-admin-permissions-in-my-business)
 
 2. Wählen Sie die Schaltfläche **Benötigen Sie Hilfe?** aus.
 

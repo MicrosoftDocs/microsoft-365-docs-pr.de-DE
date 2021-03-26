@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 'Zusammenfassung: Verwenden Sie PowerShell für Microsoft 365, um Berichte zu erstellen, die Sie im Microsoft 365 Admin Center nicht erstellen können.'
-ms.openlocfilehash: 12cba74d114ea03804741335bd34ece403926033
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dc183ae8a315bf788befc85474d0647802ac91ee
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924696"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222779"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Verwenden von PowerShell zum Erstellen von Berichten für Microsoft 365
 
@@ -33,7 +33,7 @@ In diesen Artikeln wird beschrieben, wie Sie PowerShell für Microsoft 365 verwe
   
 - Erste Schritte mit der Berichterstellung mit PowerShell für Microsoft 365:
     
-  - [Warum Sie PowerShell für Microsoft 365 verwenden müssen](./why-you-need-to-use-microsoft-365-powershell.md#reveal)
+  - [Warum Sie PowerShell für Microsoft 365 verwenden müssen](./why-you-need-to-use-microsoft-365-powershell.md)
     
     
 - Berichte für Benutzerkonten und Lizenzen:

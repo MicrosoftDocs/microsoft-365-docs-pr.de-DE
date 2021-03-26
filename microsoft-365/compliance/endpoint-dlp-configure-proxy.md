@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Erfahren Sie Näheres über das Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen für die Verhinderung von Datenverlust am Endpunkt (Data Loss Prevention, DLP).
-ms.openlocfilehash: 3b8ebdbb08a6a866cc84df2031e77378925eaa0e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4d1aa3b75ec0a0720f3d92c847bf7c6cde6d966f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907005"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199274"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen für die Verhinderung von Datenverlust am Endpunkt
 
@@ -96,7 +96,7 @@ Weitere Informationen hierzu finden Sie unter [netsh-Befehl: Syntax, Kontexte un
 
 Wenn ein Proxy oder eine Firewall den gesamten Datenverkehr standardmäßig blockiert und nur bestimmte Domänen durchlässt, fügen Sie die im herunterladbaren Blatt aufgeführten Domänen der Liste der zulässigen Domänen hinzu.
 
-Diese [herunterladbare Kalkulationstabelle](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx) enthält die Dienste und die zugehörigen URLs, mit denen Ihr Netzwerk sich verbinden können muss. Sie sollten sicherstellen, dass keine Firewall- oder Netzwerkfilterregeln den Zugriff auf diese URLs verhindern. Andernfalls müssen Sie eine eigene Zulassungsregel dafür erstellen.
+Diese [herunterladbare Kalkulationstabelle](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) enthält die Dienste und die zugehörigen URLs, mit denen Ihr Netzwerk sich verbinden können muss. Sie sollten sicherstellen, dass keine Firewall- oder Netzwerkfilterregeln den Zugriff auf diese URLs verhindern. Andernfalls müssen Sie eine eigene Zulassungsregel dafür erstellen.
 
 Wenn bei einem Proxy oder einer Firewall die HTTPS-Überprüfung aktiviert ist (SSL-Inspektion), schließen Sie die in der obigen Tabelle aufgeführten Domänen von der HTTPS-Überprüfung aus.
 Wenn ein Proxy oder eine Firewall anonymen Datenverkehr blockiert, stellen Sie sicher, dass für die zuvor aufgeführten URLs anonymer Datenverkehr zulässig ist (Endpunkt-DLP stellt eine Verbindung vom Systemkontext aus her).
@@ -123,7 +123,7 @@ Ersetzen Sie *HardDrivePath* durch den Pfad, in den das MDATPClientAnalyzer-Tool
 
 6.  Öffnen Sie **MDATPClientAnalyzerResult.txt**, und vergewissern Sie sich, dass Sie die Schritte zur Proxykonfiguration durchgeführt haben, um die Serverermittlung und den Zugriff auf die Dienst-URLs zu aktivieren.  Das Tool überprüft die Konnektivität von Defender für Endpunkt-Dienst-URLs, mit denen der Defender für Endpunkt-Client laut Konfiguration interagieren kann. Anschließend werden die Ergebnisse für jede URL, die potentiell für die Kommunikation mit den Defender für Endpunkt-Diensten verwendet werden kann, in die Datei **MDATPClientAnalyzerResult.txt** gedruckt. Beispiel:
 
-    **Getestete URL: https://xxx.microsoft.com/xxx </br> 1 - Default proxy: Succeeded (200) </br> 2 - Proxy auto discovery (WPAD): Succeeded (200)</br> 3 - Proxy disabled: Succeeded (200)</br> 4 - Named proxy: Doesn't exist</br> 5 - Command line proxy: Doesn't exist**</br>
+    **Getestete URL: https://xxx.microsoft.com/xxx </br> 1 - Standardproxy: Succeeded (200) </br> 2 - Proxy auto-discovery (WPAD): Succeeded (200)</br> 3 - Proxy deaktiviert: Succeeded (200)</br> 4 - Named proxy: Existiert nicht</br> 5 - Befehlszeilenproxy: Existiert nicht**</br>
 
 
 Wenn mindestens eine der Verbindungsoptionen einen (200)-Status zurückgibt, kann der Defender für Endpunkt-Client über diese Verbindungsmethode ordnungsgemäß mit der getesteten URL kommunizieren. 

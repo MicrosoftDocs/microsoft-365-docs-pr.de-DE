@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Erfahren Sie mehr über Benutzerrollen in Themen von "Viva".
-ms.openlocfilehash: 6d93046a96b60779c3cd3bd6c6aa600cb443118f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e91eda6807634ad27bf6c15c2dd0d1c9434ce299
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917356"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222767"
 ---
 # <a name="microsoft-viva-topics-roles"></a>Themen zu Microsoft Viva – Rollen 
 
@@ -49,7 +49,7 @@ Ein Mitwirkender eines Themas kann auch ein neues Thema über sein Themencenter 
 Zum Erstellen und Bearbeiten eines Themas muss der Benutzer:
 
 -   [Erhalten Sie von ihrem Microsoft](./set-up-topic-experiences.md#assign-licenses) 365-Administrator eine Lizenz für "Viva Topics".
--   [Ihnen werden Berechtigungen zum Erstellen und Bearbeiten von Themen zugewiesen.](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center) Diese Aufgabe wird vom Wissensadministrator auf der Seite "Einstellungen für Themen" im Microsoft 365 Admin Center ausgeführt.
+-   [Ihnen werden Berechtigungen zum Erstellen und Bearbeiten von Themen zugewiesen.](./topic-experiences-user-permissions.md) Diese Aufgabe wird vom Wissensadministrator auf der Seite "Einstellungen für Themen" im Microsoft 365 Admin Center ausgeführt.
 
 ## <a name="knowledge-managers"></a>Wissensmanager
 
@@ -64,7 +64,7 @@ Darüber hinaus kann ein Wissensmanager vorhandene Themen bearbeiten oder neue e
 
 Zum Verwalten von Themen muss der Benutzer folgende Themen verwalten:
 -   [Erhalten Sie von ihrem Microsoft](./set-up-topic-experiences.md#assign-licenses) 365-Administrator eine Lizenz für "Viva Topics".
--   [Ihnen werden Berechtigungen zum Verwalten von Themen zugewiesen).](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center) Diese Aufgabe wird vom Wissensadministrator auf der Seite "Einstellungen für Themen" im Microsoft 365 Admin Center ausgeführt.
+-   [Ihnen werden Berechtigungen zum Verwalten von Themen zugewiesen).](./topic-experiences-user-permissions.md) Diese Aufgabe wird vom Wissensadministrator auf der Seite "Einstellungen für Themen" im Microsoft 365 Admin Center ausgeführt.
 
 Benutzer, die über ein gutes Allgemeines Wissen über Ihr Unternehmen verfügen, können gute Kandidaten für die Rolle des Knowledge Managers sein. Diese Personen können nicht nur wissen, ob Themen gültig sind oder nicht, sondern auch Personen innerhalb des Unternehmens kennen, die mit diesen Themen in Verbindung stehen.
 

@@ -16,28 +16,26 @@ ms.custom: nextgen
 ms.date: 09/10/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 30e664aed74ed01944c67b139e6268fc3340ada4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bfd447120e171fed063b3224e3a47c2ef38f0f16
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51061823"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222611"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Onboarding von Windows 10-Geräten mit mehreren Sitzungen in Windows Virtual Desktop 
 6 Minuten zu lesen 
 
 Gilt für: 
 - Windows 10 multi-session running on Windows Virtual Desktop (WVD) 
-> [!IMPORTANT]
-> Willkommen bei Microsoft Defender for Endpoint, dem neuen Namen für Microsoft Defender for Endpoint. Lesen Sie hier mehr zu diesem Thema und anderen Updates. In Kürze aktualisieren wir die Namen in Produkten und Dokumentationen.
 
 > [!WARNING]
 > Die Microsoft Defender for Endpoint-Unterstützung für Windows Virtual Desktop-Szenarien mit mehreren Sitzungen befindet sich derzeit in der Vorschau und ist auf bis zu 25 gleichzeitige Sitzungen pro Host/VM beschränkt. Einzelne Sitzungsszenarien auf Windows Virtual Desktop werden jedoch vollständig unterstützt.
 
-Microsoft Defender for Endpoint unterstützt sowohl die Überwachung von VDI- als auch Windows Virtual Desktop-Sitzungen. Je nach Den Anforderungen Ihrer Organisation müssen Sie möglicherweise VDI- oder Windows Virtual Desktop-Sitzungen implementieren, um Ihren Mitarbeitern den Zugriff auf Unternehmensdaten und Apps von einem nicht verwalteten Gerät, Remotespeicherort oder ähnlichem Szenario zu unterstützen. Mit Microsoft Defender for Endpoint können Sie diese virtuellen Computer auf anomale Aktivitäten überwachen.
+Microsoft Defender for Endpoint unterstützt die Überwachung von VDI- und Windows Virtual Desktop-Sitzungen. Je nach Den Anforderungen Ihrer Organisation müssen Sie möglicherweise VDI- oder Windows Virtual Desktop-Sitzungen implementieren, um Ihren Mitarbeitern den Zugriff auf Unternehmensdaten und Apps von einem nicht verwalteten Gerät, Remotespeicherort oder ähnlichem Szenario zu unterstützen. Mit Microsoft Defender for Endpoint können Sie diese virtuellen Computer auf anomale Aktivitäten überwachen.
 
- ## <a name="before-you-begin"></a>Vorbereitung
-Machen Sie sich mit den [Überlegungen für nicht persistente VDI vertraut.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Windows [Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) bietet zwar keine Nichtpersistenzoptionen, bietet jedoch Möglichkeiten, ein goldenes Windows-Image zu verwenden, das zum Bereitstellen neuer Hosts und erneut bereitgestellter Computer verwendet werden kann. Dies erhöht die Unbeständigkeit in der Umgebung und wirkt sich somit auf die Einträge aus, die im Microsoft Defender for Endpoint-Portal erstellt und verwaltet werden, wodurch die Sichtbarkeit für Ihre Sicherheitsanalysten potenziell reduziert wird.
+ ## <a name="before-you-begin"></a>Bevor Sie beginnen
+Machen Sie sich mit den [Überlegungen für nicht persistente VDI vertraut.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Windows [Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) bietet zwar keine Nichtpersistenzoptionen, bietet jedoch Möglichkeiten zur Verwendung eines goldenen Windows-Images, das zum Bereitstellen neuer Hosts und erneut bereitgestellter Computer verwendet werden kann. Dies erhöht die Unbeständigkeit in der Umgebung und wirkt sich somit auf die Einträge aus, die im Microsoft Defender for Endpoint-Portal erstellt und verwaltet werden, wodurch die Sichtbarkeit für Ihre Sicherheitsanalysten potenziell reduziert wird.
 
 > [!NOTE]
 > Je nach Wahl der Onboardingmethode können Geräte im Microsoft Defender for Endpoint-Portal wie folgt angezeigt werden: 
@@ -46,7 +44,7 @@ Machen Sie sich mit den [Überlegungen für nicht persistente VDI vertraut.](htt
 
 Microsoft empfiehlt das Onboarding von Windows Virtual Desktop als einzelnen Eintrag pro virtuellem Desktop. Dadurch wird sichergestellt, dass sich die Untersuchungserfahrung im Microsoft Defender Endpoint-Portal im Kontext eines Geräts befindet, das auf dem Computernamen basiert. Organisationen, die häufig WVD-Hosts löschen und erneut bereitstellen, sollten die Verwendung dieser Methode in Betracht ziehen, da dadurch verhindert wird, dass mehrere Objekte für denselben Computer im Microsoft Defender for Endpoint-Portal erstellt werden. Dies kann bei der Untersuchung von Vorfällen zu Verwirrung führen. Für Testumgebungen oder nicht flüchtige Umgebungen können Sie eine andere Auswahl auswählen. 
 
-Microsoft empfiehlt das Hinzufügen des Microsoft Defender for Endpoint-Onboardingskripts zum goldenen WVD-Image. Auf diese Weise können Sie sicher sein, dass dieses Onboardingskript sofort beim ersten Start ausgeführt wird. Es wird beim ersten Start auf allen WVD-Computern, die aus dem goldenen Image der WVD bereitgestellt werden, als Startskript ausgeführt. Wenn Sie jedoch eines der Katalogbilder ohne Änderung verwenden, platzieren Sie das Skript an einem freigegebenen Speicherort, und rufen Sie es entweder aus einer lokalen oder einer Domänengruppenrichtlinie auf. 
+Microsoft empfiehlt das Hinzufügen des Microsoft Defender for Endpoint-Onboardingskripts zum goldenen WVD-Image. Auf diese Weise können Sie sicher sein, dass dieses Onboardingskript sofort beim ersten Start ausgeführt wird. Es wird beim ersten Start auf allen WVD-Computern, die aus dem goldenen WVD-Image bereitgestellt werden, als Startskript ausgeführt. Wenn Sie jedoch eines der Katalogbilder ohne Änderung verwenden, platzieren Sie das Skript an einem freigegebenen Speicherort, und rufen Sie es entweder aus einer lokalen oder einer Domänengruppenrichtlinie auf. 
 
 > [!NOTE]
 > Die Platzierung und Konfiguration des Startskripts für das VDI-Onboarding im goldenen WVD-Image konfiguriert es als Startskript, das beim Starten der WVD ausgeführt wird. Es wird NICHT empfohlen, das tatsächliche goldene WVD-Image zu integrieren. Eine weitere Überlegung ist die Methode, mit der das Skript ausgeführt wird. Sie sollte so früh wie möglich im Start-/Bereitstellungsprozess ausgeführt werden, um die Zeit zwischen dem Computer, der für den Empfang von Sitzungen verfügbar ist, und dem Onboarding des Geräts an den Dienst zu reduzieren. In den folgenden Szenarien 1 & 2 wird dies berücksichtigt.
@@ -103,7 +101,7 @@ Weitere Informationen finden Sie unter: [Onboarding von Windows 10-Geräten mit 
 
 #### <a name="tagging-your-machines-when-building-your-golden-image"></a>Markieren Ihrer Computer beim Erstellen Ihres goldenen Bilds 
 
-Im Rahmen Ihres Onboardings sollten Sie ein Computertag festlegen, um WVD-Computer im Microsoft Security Center einfacher unterscheiden zu können. Weitere Informationen finden Sie unter [Hinzufügen von Gerätetags durch Festlegen eines Registrierungsschlüsselwerts.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value) 
+Im Rahmen Ihres Onboardings sollten Sie ein Computertag festlegen, um WVD-Computer im Microsoft Security Center einfacher voneinander zu unterscheiden. Weitere Informationen finden Sie unter [Hinzufügen von Gerätetags durch Festlegen eines Registrierungsschlüsselwerts.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value) 
 
 #### <a name="other-recommended-configuration-settings"></a>Weitere empfohlene Konfigurationseinstellungen 
 

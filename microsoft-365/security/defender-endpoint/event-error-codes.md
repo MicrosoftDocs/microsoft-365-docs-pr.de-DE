@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 98c0f790c228989b261b95f3b87cdc9d18e4fa76
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1b8454107b6a2737f1236a066c3a24a2b9c776cb
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068583"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222653"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Überprüfen von Ereignissen und Fehlern mithilfe der Ereignisanzeige
 
@@ -57,14 +57,14 @@ Wenn Geräte beispielsweise nicht in der Liste Geräte angezeigt **werden,** mü
 <tbody style="vertical-align:top;">
 <tr>
 <th>Ereigniskennung</th>
-<th>Message</th>
+<th>Nachricht</th>
 <th>Beschreibung</th>
 <th>Aktion</th>
 </tr>
 <tr>
 <td>1</td>
 <td>Microsoft Defender for Endpoint Service gestartet (Version <code>variable</code> ).</td>
-<td>Tritt während des Start-, Herunterfahrens und während des Onbboardings auf.</td>
+<td>Tritt während des Systemstarts, heruntergefahren und während des Onboardings auf.</td>
 <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
 </tr>
 <tr>
@@ -284,7 +284,7 @@ Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 de
 <tr>
 <td>39</td>
 <td>Die Netzwerkverbindung wird als normal identifiziert. Microsoft Defender for Endpoint kontaktiert den Server alle %1 Minuten. Gemessene Verbindung: %2, Internet verfügbar: %3, kostenloses Netzwerk verfügbar: %4.</td>
-<td>Das Gerät verwendet keine gemessene/kostenpflichtige Verbindung und kontaktiert den Server wie gewohnt.</td>
+<td>Das Gerät verwendet keine meterierte/kostenpflichtige Verbindung und kontaktiert den Server wie gewohnt.</td>
 <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
 </tr>
 <tr>
@@ -326,7 +326,7 @@ Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 de
 <tr>
 <td>46</td>
 <td>Fehler beim Registrieren und Starten der Ereignisverfolgungssitzung [%1] aufgrund fehlender Ressourcen. Fehlercode: %2. Dies liegt wahrscheinlich daran, dass zu viele aktive Ereignisverfolgungssitzungen sind. Der Dienst wird in 1 Minute erneut versuchen.</td>
-<td>Fehler beim Starten des Diensts beim Erstellen einer ETW-Sitzung aufgrund fehlender Ressourcen. Der Dienst wurde gestartet und wird ausgeführt, berichtet aber erst, wenn die ETW-Sitzung gestartet wurde.</td>
+<td>Fehler beim Starten des Diensts beim Erstellen einer ETW-Sitzung aufgrund fehlender Ressourcen. Der Dienst wurde gestartet und wird ausgeführt, es wird jedoch erst ein Sensorereignis berichtet, wenn die ETW-Sitzung gestartet wurde.</td>
 <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich. Der Dienst versucht, die Sitzung jede Minute zu starten.</td>
 </tr>
 <tr>
@@ -341,6 +341,270 @@ Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 de
 <td>Fehler beim Hinzufügen eines Anbieters zur ETW-Sitzung. Aus diesem Grund werden die Anbieterereignisse nicht gemeldet.</td>
 <td>Überprüfen Sie den Fehlercode. Wenn der Fehler weiterhin auftritt, wenden Sie sich an den Support.</td>
 </tr>
+</tr>
+<tr>
+   <td>49</td>
+   <td>Ungültiger Cloudkonfigurationsbefehl empfangen und ignoriert. Version: %1, Status: %2, Fehlercode: %3, Meldung: %4</td>
+   <td>Vom Clouddienst wurde eine ungültige Konfigurationsdatei empfangen, die ignoriert wurde.</td>
+   <td>Wenn dieser Fehler weiterhin auftritt, wenden Sie sich an den Support.</td>
+</tr>
+<tr>
+   <td>50</td>
+   <td>Neue Cloudkonfiguration wurde erfolgreich angewendet. Version: %1.</td>
+   <td>Eine neue Konfiguration wurde erfolgreich vom Clouddienst angewendet.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>51</td>
+   <td>Neue Cloudkonfiguration konnte nicht angewendet werden, Version: %1. Die letzte bekannte gute Konfiguration, Version %2, wurde erfolgreich angewendet.</td>
+   <td>Vom Clouddienst wurde eine ungültige Konfigurationsdatei empfangen. Die letzte bekannte gute Konfiguration wurde erfolgreich angewendet.</td>
+   <td>Wenn dieser Fehler weiterhin auftritt, wenden Sie sich an den Support.</td>
+</tr>
+<tr>
+   <td>52</td>
+   <td>Neue Cloudkonfiguration konnte nicht angewendet werden, Version: %1. Außerdem konnte die letzte bekannte gute Konfiguration, Version %2, nicht angewendet werden. Die Standardkonfiguration wurde erfolgreich angewendet.</td>
+   <td>Vom Clouddienst wurde eine ungültige Konfigurationsdatei empfangen. Fehler beim Anwenden der letzten als gut bekannten Konfiguration – und die Standardkonfiguration wurde angewendet.</td>
+   <td>Der Dienst versucht, innerhalb von 5 Minuten eine neue Konfigurationsdatei herunterzuladen. Wenn das Ereignis nicht #50 , wenden Sie sich an den Support.</td>
+</tr>
+<tr>
+   <td>53</td>
+   <td>Cloudkonfiguration, die aus dem beständigen Speicher geladen wird, Version: %1.</td>
+   <td>Die Konfiguration wurde beim Starten des Diensts aus dem beständigen Speicher geladen.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>55</td>
+   <td>Fehler beim Erstellen des Secure ETW-Autologgers. Fehlercode: %1</td>
+   <td>Fehler beim Erstellen des sicheren ETW-Loggers.</td>
+   <td>Starten Sie das Gerät neu. Wenn dieser Fehler weiterhin auftritt, wenden Sie sich an den Support.</td>
+</tr>
+<tr>
+   <td>56</td>
+   <td>Fehler beim Entfernen des Secure ETW-Autologgers. Fehlercode: %1</td>
+   <td>Fehler beim Entfernen der sicheren ETW-Sitzung beim Offboarding.</td>
+   <td>Wenden Sie sich an den Support.</td>
+</tr>
+<tr>
+   <td>57</td>
+   <td>Erfassen einer Momentaufnahme des Computers zur Problembehandlung.</td>
+   <td>Ein Untersuchungspaket, das auch als Forensikpaket bezeichnet wird, wird gesammelt.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>59</td>
+   <td>Startbefehl: %1</td>
+   <td>Starten der Ausführung des Antwortbefehls.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>60</td>
+   <td>Befehl "%1" konnte nicht ausgeführt werden, Fehler: %2.</td>
+   <td>Antwortbefehl konnte nicht ausgeführt werden.</td>
+   <td>Wenn dieser Fehler weiterhin auftritt, wenden Sie sich an den Support.</td>
+</tr>
+<tr>
+   <td>61</td>
+   <td>Parameter des Datensammlungsbefehls sind ungültig: SasUri: %1, compressionLevel: %2.</td>
+   <td>Fehler beim Lesen oder Analysieren der Datensammlungsbefehlsargumente (ungültige Argumente).</td>
+   <td>Wenn dieser Fehler weiterhin auftritt, wenden Sie sich an den Support.</td>
+</tr>
+<tr>
+   <td>62</td>
+   <td>Fehler beim Starten des Diensts für verbundene Benutzererfahrungen und Telemetrie. Fehlercode: %1</td>
+   <td>Der Dienst für verbundene Benutzererfahrungen und Telemetrie (Diagtrack) konnte nicht gestartet werden. Telemetriedaten von Nicht-Microsoft Defender for Endpoint werden nicht von diesem Computer gesendet.</td>
+   <td>Weitere Hinweise zur Problembehandlung finden Sie im Ereignisprotokoll: Microsoft-Windows-UniversalTelemetryClient/Operational.</td>
+</tr>
+<tr>
+   <td>63</td>
+   <td>Aktualisieren des Starttyps des externen Diensts. Name: %1, tatsächlicher Starttyp: %2, erwarteter Starttyp: %3, Exitcode: %4</td>
+   <td>Der Starttyp des externen Diensts wurde aktualisiert.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>64</td>
+   <td>Starten des beendeten externen Diensts. Name: %1, Exitcode: %2</td>
+   <td>Starten eines externen Diensts.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>65</td>
+   <td>Microsoft Security Events Component Minifilter-Treiber konnte nicht geladen werden. Fehlercode: %1</td>
+   <td>Fehler beim Laden MsSecFlt.sys Dateisystem-Minifilters.</td>
+   <td>Starten Sie das Gerät neu. Wenn dieser Fehler weiterhin auftritt, wenden Sie sich an den Support.</td>
+</tr>
+<tr>
+   <td>66</td>
+   <td>Richtlinienupdate: Latenzmodus – %1</td>
+   <td>Die C&C-Verbindungshäufigkeitsrichtlinie wurde aktualisiert.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>68</td>
+   <td>Der Starttyp des Diensts ist unerwartet. Dienstname: %1, tatsächlicher Starttyp: %2, erwarteter Starttyp: %3</td>
+   <td>Unerwarteter Starttyp des externen Diensts.</td>
+   <td>Fix the external service start type.</td>
+</tr>
+<tr>
+   <td>69</td>
+   <td>Der Dienst wird beendet. Dienstname: %1</td>
+   <td>Der externe Dienst wird beendet.</td>
+   <td>Starten Sie den externen Dienst.</td>
+</tr>
+<tr>
+   <td>70</td>
+   <td>Richtlinienupdate: Beispielsammlung zulassen – %1</td>
+   <td>Die Beispielsammlungsrichtlinie wurde aktualisiert.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>71</td>
+   <td>Befehl konnte erfolgreich ausgeführt werden: %1</td>
+   <td>Der Befehl wurde erfolgreich ausgeführt.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>72</td>
+   <td>Es wurde versucht, den ersten vollständigen Computerprofilbericht zu senden. Ergebniscode: %1</td>
+   <td>Nur Information.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>73</td>
+   <td>Sinn beim Starten der Plattform: %1</td>
+   <td>Nur Information.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>74</td>
+   <td>Das Gerätetag in der Registrierung überschreitet die Längenbeschränkung. Tagname: %2. Längenbeschränkung: %1.</td>
+   <td>Das Gerätetag überschreitet den Längengrenzwert.</td>
+   <td>Verwenden Sie ein kürzeres Gerätetag.</td>
+</tr>
+<tr>
+   <td>81</td>
+   <td>Fehler beim Erstellen Windows Defender Advanced Threat Protection ETW-Autologgers. Fehlercode: %1</td>
+   <td>Fehler beim Erstellen der ETW-Sitzung.</td>
+   <td>Starten Sie das Gerät neu. Wenn dieser Fehler weiterhin auftritt, wenden Sie sich an den Support.</td>
+</tr>
+<tr>
+   <td>82</td>
+   <td>Fehler beim Entfernen Windows Defender Advanced Threat Protection ETW-Autologgers. Fehlercode: %1</td>
+   <td>Fehler beim Löschen der ETW-Sitzung.</td>
+   <td>Wenden Sie sich an den Support.</td>
+</tr>
+<tr>
+   <td>84</td>
+   <td>Festlegen Windows Defender Antivirus-Ausführungsmodus. Erzwingen des passiven Modus: %1, Ergebniscode: %2.</td>
+   <td>Festlegen des laufenden Defender-Modus (aktiv oder passiv).</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>85</td>
+   <td>Fehler beim Auslösen der Windows Defender Advanced Threat Protection. Fehlercode: %1</td>
+   <td>Fehler beim Ausführen der ausführbaren SenseIR-Datei.</td>
+   <td>Starten Sie das Gerät neu. Wenn dieser Fehler weiterhin auftritt, wenden Sie sich an den Support.</td>
+</tr>
+<tr>
+   <td>86</td>
+   <td>Beim erneuten Starten wurde der externe Dienst beendet, der eingerichtet werden sollte. Name: %1, Exitcode: %2</td>
+   <td>Starten Sie den externen Dienst erneut.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>87</td>
+   <td>Der externe Dienst kann nicht gestartet werden. Name: %1</td>
+   <td>Fehler beim Starten des externen Diensts.</td>
+   <td>Wenden Sie sich an den Support.</td>
+</tr>
+<tr>
+   <td>88</td>
+   <td>Aktualisieren des Starttyps des externen Diensts erneut. Name: %1, tatsächlicher Starttyp: %2, erwarteter Starttyp: %3, Exitcode: %4</td>
+   <td>Der Starttyp des externen Diensts wurde aktualisiert.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>89</td>
+   <td>Der Starttyp des externen Diensts kann nicht aktualisiert werden. Name: %1, tatsächlicher Starttyp: %2, erwarteter Starttyp: %3</td>
+   <td>Der Starttyp des externen Diensts kann nicht aktualisiert werden.</td>
+   <td>Wenden Sie sich an den Support.</td>
+</tr>
+<tr>
+   <td>90</td>
+   <td>Fehler beim Konfigurieren des System Guard-Laufzeitmonitors für die Verbindung mit dem Clouddienst in der geografischen Region "%1". Fehlercode: %2</td>
+   <td>System Guard Runtime Monitor sendet keine Nachweisdaten an den Clouddienst.</td>
+   <td>Überprüfen Sie die Berechtigungen im Registerpfad: "HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm". Wenn keine Probleme auftreten, wenden Sie sich an den Support.</td>
+</tr>
+<tr>
+   <td>91</td>
+   <td>Fehler beim Entfernen von Informationen zur geografischen Region des System Guard-Runtime-Monitors. Fehlercode: %1</td>
+   <td>System Guard Runtime Monitor sendet keine Nachweisdaten an den Clouddienst.</td>
+   <td>Überprüfen Sie die Berechtigungen im Registerpfad: "HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm". Wenn keine Probleme auftreten, wenden Sie sich an den Support.</td>
+</tr>
+<tr>
+   <td>92</td>
+   <td>Beenden des Sendens des Cyberdatenkontingents des Sensors, da das Datenkontingent überschritten wird. Wird das Senden fortgesetzt, sobald der Kontingentzeitraum vergeht. Zustandsmaske: %1</td>
+   <td>Drosselungsgrenzwert überschreiten.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>93</td>
+   <td>Fortsetzen des Sendens von Sensor-Cyberdaten. Zustandsmaske: %1</td>
+   <td>Fortsetzen der Cyberdatenübermittlung.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>94</td>
+   <td>Windows Defender der ausführbaren Datei Advanced Threat Protection wurde gestartet</td>
+   <td>Die ausführbare Datei SenseCE wurde gestartet.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>95</td>
+   <td>Windows Defender der ausführbaren Datei "Advanced Threat Protection" wurde beendet</td>
+   <td>Die ausführbare Datei SenseCE wurde beendet.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>96</td>
+   <td>Windows Defender Advanced Threat Protection Init wurde aufgerufen. Ergebniscode: %2</td>
+   <td>Die ausführbare SenseCE-Datei hat die MCE-Initialisierung aufgerufen.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>97</td>
+   <td>Es gibt Konnektivitätsprobleme mit der Cloud für das DLP-Szenario</td>
+   <td>Es gibt Netzwerkkonnektivitätsprobleme, die sich auf den DLP-Klassifizierungsfluss auswirken.</td>
+   <td>Überprüfen Sie die Netzwerkkonnektivität.</td>
+</tr>
+<tr>
+   <td>98</td>
+   <td>Die Konnektivität mit der Cloud für das DLP-Szenario wurde wiederhergestellt.</td>
+   <td>Die Verbindung mit dem Netzwerk wurde wiederhergestellt, und der DLP-Klassifizierungsfluss kann fortgesetzt werden.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>99</td>
+   <td>Bei der Kommunikation mit dem Server ist der folgende Fehler aufgetreten: (%1). Ergebnis: (%2)</td>
+   <td>Ein Kommunikationsfehler ist aufgetreten.</td>
+   <td>Überprüfen Sie die folgenden Ereignisse im Ereignisprotokoll auf weitere Details.</td>
+</tr>
+<tr>
+   <td>100</td>
+   <td>Windows Defender der ausführbaren Datei Advanced Threat Protection konnte nicht gestartet werden. Fehlercode: %1</td>
+   <td>Die ausführbare Datei SenseCE konnte nicht gestartet werden.</td>
+   <td>Starten Sie das Gerät neu. Wenn dieser Fehler weiterhin auftritt, wenden Sie sich an den Support.</td>
+</tr>
+<tr>
+   <td>102</td>
+   <td>Windows Defender advanced Threat Protection Network Detection and Response executable has started</td>
+   <td>Die ausführbare Datei SenseNdr wurde gestartet.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
+</tr>
+<tr>
+   <td>103</td>
+   <td>Windows Defender advanced Threat Protection Network Detection and Response executable has ended</td>
+   <td>Die ausführbare Datei SenseNdr wurde beendet.</td>
+   <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
 </tr>
 </tbody>
 </table>

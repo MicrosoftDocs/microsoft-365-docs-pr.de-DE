@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Erfahren Sie, wie Sie das Office 365 Content Delivery Network (CDN) verwenden, um die Zustellung Ihrer SharePoint Online-Objekte zu beschleunigen.
-ms.openlocfilehash: 6b740fc1429613627e0597dc6ecf2e150c015989
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 17c80b8718ea46c9dfba9f803093974e8ce3e706
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924816"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222683"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Verwenden des Office 365 Content Delivery Network (CDN) mit SharePoint Online
 
@@ -389,7 +389,7 @@ Nachdem Sie den Befehl ausgeführt haben, synchronisiert das System die Konfigur
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Beispiel: Konfigurieren eines privaten Ursprungs für eine Websitesammlung für SharePoint Online
 
-Verwenden Sie **das Cmdlet Add-SPOTenantCdnOrigin,** um eine Websitesammlung als privaten Ursprung zu definieren. Beispiel:
+Verwenden Sie **das Cmdlet Add-SPOTenantCdnOrigin,** um eine Websitesammlung als privaten Ursprung zu definieren. Zum Beispiel:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -672,7 +672,7 @@ Nachdem Sie den Befehl ausgeführt haben, synchronisiert das System die Konfigur
 <a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Beispiel: Konfigurieren eines privaten Ursprungs für eine Websitesammlung für SharePoint Online
 
-Verwenden Sie **das Cmdlet Add-PnPTenantCdnOrigin,** um eine Websitesammlung als privaten Ursprung zu definieren. Beispiel:
+Verwenden Sie **das Cmdlet Add-PnPTenantCdnOrigin,** um eine Websitesammlung als privaten Ursprung zu definieren. Zum Beispiel:
 
 ``` powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -888,7 +888,7 @@ Wenn Sie die vollständige URL zum Objekt anstelle eines relativen Pfads verwend
 `https://<TenantHostName>.sharepoint.com/sites/site/CDN_origins/public/image.png`
 
 > [!NOTE]
-> Im Allgemeinen sollten Sie URLs nicht direkt für Ressourcen im CDN hartcodieren. Sie können jedoch bei Bedarf manuell URLs für Objekte in öffentlichen Ursprüngen erstellen. Weitere Informationen finden Sie unter [Hardcoding CDN URLs for public assets](use-microsoft-365-cdn-with-spo.md#hardcoding-cdn-urls-for-public-assets).
+> Im Allgemeinen sollten Sie URLs nicht direkt für Ressourcen im CDN hartcodieren. Sie können jedoch bei Bedarf manuell URLs für Objekte in öffentlichen Ursprüngen erstellen. Weitere Informationen finden Sie unter [Hardcoding CDN URLs for public assets](use-microsoft-365-cdn-with-spo.md).
 
 Informationen zum Überprüfen, ob Ressourcen aus dem CDN bedient werden, finden Sie unter [How do I confirm that assets are being served by the CDN?](use-microsoft-365-cdn-with-spo.md#CDNConfirm) im Abschnitt Problembehandlung im [Office 365 CDN.](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting)
 
@@ -951,7 +951,7 @@ Das folgende Diagramm veranschaulicht den Workflow, wenn SharePoint eine Anforde
 
 Der Zugriff auf Objekte privater Herkunft im Office 365 CDN wird durch Token gewährt, die von SharePoint Online generiert werden. Benutzern, die bereits über die Berechtigung zum Zugriff auf den vom Ursprung festgelegten Ordner oder die Bibliothek verfügen, werden automatisch Token gewährt, mit denen der Benutzer basierend auf seiner Berechtigungsstufe auf die Datei zugreifen kann. Diese Zugriffstoken sind 30 bis 90 Minuten gültig, nachdem sie generiert wurden, um Tokenwiedergabeangriffe zu verhindern.
 
-Nachdem das Zugriffstoken generiert wurde, gibt SharePoint Online einen  benutzerdefinierten URI an den Client zurück, der zwei Autorisierungsparameter (Edgeautorisierungstoken) und _Oat_ (Ursprungsautorisierungstoken) enthält. Die Struktur der einzelnen Token _< "Ablaufzeit" im Epoch-Zeitformat'>__<'secure signature'>_. Beispiel:
+Nachdem das Zugriffstoken generiert wurde, gibt SharePoint Online einen  benutzerdefinierten URI an den Client zurück, der zwei Autorisierungsparameter (Edgeautorisierungstoken) und _Oat_ (Ursprungsautorisierungstoken) enthält. Die Struktur der einzelnen Token _< "Ablaufzeit" im Epoch-Zeitformat'>__<'secure signature'>_. Zum Beispiel:
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312

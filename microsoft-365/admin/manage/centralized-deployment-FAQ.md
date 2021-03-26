@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lesen Sie die Antworten auf häufige Fragen zur zentralen Bereitstellung im Microsoft 365 Admin Center.
-ms.openlocfilehash: 9f4841508701d4dd5878e99fcc51a436bc5824e2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 06e3b7973a209cdf40446c5a9511713d779373b8
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915470"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221835"
 ---
 # <a name="centralized-deployment-faq"></a>FAQ zur zentralen Bereitstellung
 
@@ -72,7 +72,7 @@ Ja. Die zentrale Bereitstellung bietet Administratoren die Flexibilität, währe
 
 Ja. Administratoren können eine neue Manifestdatei hochladen, um Metadatenänderungen für vom Administrator bereitgestellte BRANCHEN-Add-Ins zu unterstützen. Das Add-In wird aktualisiert, wenn die Office-Anwendungen das nächste Mal gestartet werden. Die Webanwendung kann sich jederzeit ändern.  
  
-Weitere Informationen finden Sie unter [Line-of-Business-Add-In](./manage-addins-in-the-admin-center.md#more-about-office-add-ins-security).  
+Weitere Informationen finden Sie unter [Line-of-Business-Add-In](./manage-addins-in-the-admin-center.md).  
 
 ## <a name="can-admins-turn-off-add-ins"></a>Können Administratoren Add-Ins deaktivieren?  
 

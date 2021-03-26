@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: Erfahren Sie, wie Sie Microsoft 365 auf Ihrem Computer, Smartphone und Tablet einrichten und verwenden.
-ms.openlocfilehash: 8df5170190a464c71030c938be61df591032c45c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 74821886832e699a90d9a54a9b8c7ce9a8cfab75
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906288"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222027"
 ---
 # <a name="get-started"></a>Erste Schritte
 
@@ -60,7 +60,7 @@ Hier finden Sie einige Ressourcen, die Ihnen beim Einstieg helfen.
   
 - [Schulung für Administratoren:](../index.yml)Hier erhalten Sie Links zu kostenlosen Onlineklassen für Administratoren.
     
-- [Admin-Hilfe:](./admin-overview.md)Hier erhalten Sie Informationen zu den hauptaufgaben, ersten Schritten mit Administratortools und zur Problembehandlung.
+- [Admin-Hilfe:](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)Hier erhalten Sie Informationen zu den hauptaufgaben, ersten Schritten mit Administratortools und zur Problembehandlung.
     
 - [Kontakt support - Admin Help](../contact-support-for-business-products.md) : Rufen Sie uns an, öffnen Sie eine Onlineanfrage, oder lassen Sie sich von der Community helfen. 
     

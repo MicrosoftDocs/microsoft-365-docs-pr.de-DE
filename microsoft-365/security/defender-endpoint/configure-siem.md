@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0b9ce376736e5f00ee0f6a4f308d783e75052357
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 97a64c8537ff2a6f9948ed6ed056b8aa7379ce69
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163297"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222335"
 ---
 # <a name="pull-detections-to-your-siem-tools"></a>Ziehen von Erkennungen an Ihre SIEM-Tools
 
@@ -53,7 +53,7 @@ Um eines dieser unterstützten SIEM-Tools zu verwenden, müssen Sie:
 
 - [Aktivieren der SIEM-Integration in Defender for Endpoint](enable-siem-integration.md)
 - Konfigurieren Des unterstützten SIEM-Tools:
-     - [Konfigurieren von HP ArcSight zum Ziehen von Defender for Endpoint-Erkennungen](configure-arcsight.md)
+     - [Konfigurieren von Micro Focus ArcSight zum Ziehen von Defender for Endpoint-Erkennungen](configure-arcsight.md)
      - Konfigurieren von IBM QRadar zum Ziehen von Defender for Endpoint-Erkennungen Weitere Informationen finden Sie unter [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).
 
 Weitere Informationen zur Liste der in der Erkennungs-API verfügbar gemachten Felder finden Sie unter [Defender for Endpoint Detection fields](api-portal-mapping.md).

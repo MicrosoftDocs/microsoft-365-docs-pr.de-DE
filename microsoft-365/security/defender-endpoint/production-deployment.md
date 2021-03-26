@@ -1,6 +1,6 @@
 ---
-title: Einrichten der Microsoft Defender ATP-Bereitstellung
-description: Informationen zum Einrichten der Bereitstellung für Microsoft Defender ATP
+title: Einrichten der Bereitstellung von Microsoft Defender for Endpoint
+description: Informationen zum Einrichten der Bereitstellung für Microsoft Defender for Endpoint
 keywords: Bereitstellen, Einrichten, Lizenzierungsüberprüfung, Mandantenkonfiguration, Netzwerkkonfiguration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4af84c21977e4b90c8b6d9ec4c785339ff229e7d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 8965594789c3c96c043e3cd1a8922d9ba996ef47
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186149"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222441"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Einrichten der Bereitstellung von Microsoft Defender for Endpoint
 
@@ -98,7 +98,7 @@ Beim ersten Zugriff auf Microsoft Defender Security Center ein Assistent, der Si
 
 4. Richten Sie Einstellungen ein.
 
-   **Datenspeicherort:** Es ist wichtig, dass Sie dies ordnungsgemäß einrichten. Bestimmen Sie, wo der Kunde hauptsächlich gehostet werden möchte: USA, EU oder Großbritannien. Sie können den Speicherort nach dieser Einrichtung nicht ändern, und Microsoft übertstrat die Daten nicht von der angegebenen Geolocation. 
+   **Datenspeicherort:** Es ist wichtig, dass Sie dies ordnungsgemäß einrichten. Bestimmen Sie, wo der Kunde hauptsächlich gehostet werden möchte: USA, EU oder Großbritannien. Sie können den Speicherort nach dieser Einrichtung nicht mehr ändern, und Microsoft übertstrat die Daten nicht von der angegebenen Geolocation. 
 
     **Datenaufbewahrung** – Der Standardwert ist sechs Monate.
 
@@ -106,7 +106,7 @@ Beim ersten Zugriff auf Microsoft Defender Security Center ein Assistent, der Si
 
     ![Abbildung des geografischen Standorts in der Einrichtung](images/setup-preferences.png)
 
-5. Wählen Sie **Weiter** aus.
+5. Klicken Sie auf **Weiter**.
 
      ![Abbildung der endgültigen Einstellungseinstellung](images/setup-preferences2.png)
 
@@ -124,10 +124,7 @@ Der Microsoft Defender für Endpunkt-Sensor setzt Microsoft Windows HTTP (WinHTT
 
 -   Webproxy-AutoErmittlungsprotokoll (WPAD)
 
-Wenn in der Netzwerktopologie ein transparenter Proxy oder ein WPAD implementiert wurde, sind keine speziellen Konfigurationseinstellungen erforderlich. Weitere Informationen zu Microsoft Defender for Endpoint-URL-Ausschlüssen im Proxy finden Sie im Abschnitt Anhang in diesem Dokument für die LISTE der URLs zulassen oder in [Microsoft Docs](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server).
-
-> [!NOTE]
-> Eine detaillierte Liste der URLs, die zugelassen werden müssen, finden Sie in [diesem Artikel](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
+Wenn in der Netzwerktopologie ein transparenter Proxy oder ein WPAD implementiert wurde, sind keine speziellen Konfigurationseinstellungen erforderlich. Weitere Informationen zu Microsoft Defender for Endpoint-URL-Ausschlüssen im Proxy finden Sie im Abschnitt [Proxydienst-URLs](production-deployment.md#proxy-service-urls) in diesem Dokument für die URLs allowlist oder unter Konfigurieren von Geräteproxy- und [Internetkonnektivitätseinstellungen.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
 
 **Manuelle Konfiguration von statischen Proxys:**
 
@@ -137,7 +134,7 @@ Wenn in der Netzwerktopologie ein transparenter Proxy oder ein WPAD implementier
 
 ### <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Manuelles Konfigurieren des Proxyservers mithilfe eines registrierungsbasierten statischen Proxys
 
-Konfigurieren Sie einen registrierungsbasierten statischen Proxy, damit nur microsoft Defender for Endpoint-Sensor Diagnosedaten melden und mit Microsoft Defender for Endpoint-Diensten kommunizieren können, wenn ein Computer keine Verbindung mit dem Internet herstellen darf. Der statische Proxy kann mithilfe von Gruppenrichtlinien konfiguriert werden. Die Gruppenrichtlinien finden Sie unter:
+Konfigurieren Sie einen registrierungsbasierten statischen Proxy, damit nur der Microsoft Defender for Endpoint-Sensor Diagnosedaten melden und mit Microsoft Defender for Endpoint-Diensten kommunizieren kann, wenn ein Computer keine Verbindung mit dem Internet herstellen darf. Der statische Proxy kann mithilfe von Gruppenrichtlinien konfiguriert werden. Die Gruppenrichtlinien finden Sie unter:
 
  - Administrative Vorlagen \> Windows-Komponenten Datensammlungs- und Vorschaubuilds Konfigurieren der authentifizierten Proxyverwendung für den verbundenen \> \> Benutzererfahrungs- und Telemetriedienst
      - Legen Sie sie auf **Aktiviert,** und wählen **Sie Authentifizierte Proxyverwendung deaktivieren aus.**
@@ -202,29 +199,32 @@ Wenn ein Proxy oder eine Firewall anonymen Datenverkehr blockiert, da der Micros
 
 In der folgenden herunterladbaren Kalkulationstabelle sind die Dienste und die zugehörigen URLs aufgeführt, mit deren Netzwerk eine Verbindung herstellen kann. Stellen Sie sicher, dass es keine Firewall- oder Netzwerkfilterregeln gibt, die  den Zugriff auf diese URLs verweigern würden, oder Sie müssen möglicherweise eine speziell für sie zulässige Regel erstellen.
 
-|**Tabellenkalkulation der Domänenliste**|**Beschreibung**|
+|**Tabellenkalkulation der Domänenliste**|**Description**|
 |:-----|:-----|
 |![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Tabellenkalkulation bestimmter DNS-Einträge für Dienststandorte, geografische Standorte und Betriebssysteme. <br><br>[Laden Sie die Tabelle hier herunter.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
 
-###  <a name="microsoft-defender-for-endpoint-service-backend-ip-range"></a>Microsoft Defender for Endpoint Service-Back-End-IP-Bereich
+###  <a name="microsoft-defender-for-endpoint-service-backend-ip-ranges"></a>Microsoft Defender for Endpoint Service-Back-End-IP-Bereiche
 
-Wenn Sie die im vorherigen Abschnitt aufgeführten URLs nicht unterstützen, können Sie die folgenden Informationen verwenden.
+Wenn Ihre Netzwerkgeräte KEINE DNS-basierten Regeln unterstützen, verwenden Sie stattdessen IP-Bereiche.
 
-Defender for Endpoint baut auf der Azure-Cloud auf, die in den folgenden Regionen bereitgestellt wird:
+Defender for Endpoint ist in der Azure-Cloud aufgebaut und wird in den folgenden Regionen bereitgestellt:
 
-- \+\<Region Name="uswestcentral">
-- \+\<Region Name="useast2">
-- \+\<Region Name="useast">
-- \+\<Region Name="europenorth">
-- \+\<Region Name="europewest">
-- \+\<Region Name="uksouth">
-- \+\<Region Name="ukwest">
+- AzureCloud.eastus
+- AzureCloud.eastus2
+- AzureCloud.westcentralus
+- AzureCloud.northeurope
+- AzureCloud.westeurope
+- AzureCloud.uksouth
+- AzureCloud.ukwest
 
-Den Azure-IP-Bereich finden Sie unter [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
+Die Azure-IP-Bereiche finden Sie unter [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519).
 
 > [!NOTE]
-> Als cloudbasierte Lösung kann sich der IP-Adressbereich ändern. Es wird empfohlen, zur Einstellung für die DNS-Auflösung zu wechseln.
+> Als cloudbasierte Lösung können sich die IP-Adressbereiche ändern. Es wird empfohlen, zu DNS-basierten Regeln zu wechseln.
+
+> [!NOTE]
+> Wenn Sie ein Us Government-Kunde sind, lesen Sie den entsprechenden Abschnitt auf der [Seite Defender for Endpoint für US Government.](gov.md#service-backend-ip-ranges)
 
 ## <a name="next-step"></a>Nächster Schritt
 

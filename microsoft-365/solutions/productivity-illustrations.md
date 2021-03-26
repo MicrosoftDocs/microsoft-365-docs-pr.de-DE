@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 423840ae62d0531da76044238bbeef05078a82c8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cc526371fdf12314f762c885ba1775fcf3f00d00
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907988"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215552"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Darstellungen zu Microsoft 365-Produktivitätslösungen
 
@@ -33,7 +33,7 @@ Die logische Architektur von Produktivitätsdiensten in Microsoft 365, beginnend
 
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>Gruppen in Microsoft 365 für IT-Architekten
-Was IT-Architekten über Gruppen in Microsoft 365 wissen müssen
+Diese Abbildung enthält Informationen für IT-Architekten zu Microsoft 365-Gruppen. Weitere Informationen zum Konfigurieren und Verwalten von Microsoft 365-Gruppen und -Teams für die Zusammenarbeit in Ihrer Organisation finden Sie unter Einrichten einer sicheren Zusammenarbeit mit [Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) und Was ist Governance für die [Zusammenarbeit?](/microsoft-365/solutions/collaboration-governance-overview).
 
 | Element | Beschreibung |
 |:-----|:-----|
@@ -52,7 +52,7 @@ Dieser Abbildungssatz verwendet eine der am stärksten regulierten Branchen, Fin
 
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>Sicherheit und Datenschutz für Organisationen, die in mehreren Regionen agieren
-Sicherheit und Datenschutz für Organisationen mit einem einzelnen Microsoft 365-Mandanten, die in mehreren Regionen agieren
+Sicherheits- und Informationsschutz für organisationen mit mehreren Regionen mit einem einzelnen Microsoft 365-Mandanten
 
 | Element | Beschreibung |
 |:-----|:-----|
