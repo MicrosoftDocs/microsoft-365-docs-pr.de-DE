@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Erfahren Sie mehr über die in Microsoft 365 verfügbaren Gastfreigabeeinstellungen, die sich auf die Freigabe für Personen außerhalb Ihrer Organisation auswirken können.
-ms.openlocfilehash: c87f1d0ea8a35d7685f91c1b20a709c58ec4d040
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bdb86dd7545c00f0ed24552b22062a983e450b47
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920216"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215564"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referenz zu Gastfreigabeeinstellungen für Microsoft 365
 
@@ -35,7 +35,7 @@ Dieser Artikel bietet eine Referenz zu den verschiedenen Einstellungen, die sich
 Azure Active Directory ist der von Microsoft 365 verwendete Verzeichnisdienst. Die Einstellungen für Azure Active Directory-Organisationsbeziehungen wirken sich unmittelbar auf die Freigabe in Teams, Microsoft 365-Gruppen, SharePoint und OneDrive aus.
 
 > [!NOTE]
-> Diese Einstellungen betreffen SharePoint nur, wenn die [SharePoint- und OneDrive-Integration in Azure AD B2B (Vorschau)](/sharepoint/sharepoint-azureb2b-integration-preview) konfiguriert wurde. Die nachstehende Tabelle setzt voraus, dass diese Konfiguration vorgenommen wurde.
+> Diese Einstellungen betreffen SharePoint nur, wenn die [SharePoint- und OneDrive-Integration in Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) konfiguriert wurde. Die nachstehende Tabelle setzt voraus, dass diese Konfiguration vorgenommen wurde.
 
 ### <a name="organizational-relationships-settings"></a>Einstellungen für Organisationsbeziehungen
 
@@ -43,7 +43,7 @@ Azure Active Directory ist der von Microsoft 365 verwendete Verzeichnisdienst. D
 
 ![Screenshot der Seite mit den Einstellungen für die Azure Active Directory-Organisationsbeziehungen](../media/azure-ad-organizational-relationships-settings.png)
 
-|**Setting**|**Standard**|**Beschreibung**|
+| Einstellung | Standard | Beschreibung |
 |:-----|:-----|:-----|
 |Berechtigungen für Gastbenutzer sind eingeschränkt|Ja|Diese Einstellung wirkt sich auf die Verzeichnisaufgaben aus, die ein Gast ausführen kann.|
 |Administratoren und Benutzer mit der Rolle "Einladender" können einladen|Ja|Ist diese Option auf **Ja** festgelegt, können Administratoren Gäste über Azure AD- und Microsoft 365-Freigabefunktionen wie Teams und SharePoint einladen. Ist die Option auf **Nein** festgelegt, ist dies nicht möglich.|
@@ -66,7 +66,7 @@ Das Microsoft 365 Admin Center bietet Einstellungen auf Organisationsebene für 
 
 ![Screenshot der Gastfreigabeeinstellung "Sicherheit und Datenschutz" im Microsoft 365 Admin Center](../media/sharepoint-security-privacy-sharing-setting.png)
 
-|**Setting**|**Standard**|**Beschreibung**|
+| Einstellung | Standard | Beschreibung |
 |:-----|:-----|:-----|
 |Benutzer dürfen neue Gäste zur Organisation hinzufügen|Ein|Ist diese Option auf **Ja** festgelegt, können Azure AD-Mitglieder Gäste über Azure AD einladen. Ist die Option auf **Nein** festgelegt, ist dies nicht möglich. Ist diese Option auf **Ja** festgelegt, können Microsoft 365-Gruppenmitglieder Gäste mit Genehmigung des Besitzers einladen. Ist die Option auf **Nein** festgelegt, können Microsoft 365-Gruppenmitglieder Gäste mit Genehmigung des Besitzers einladen, die Besitzer müssen jedoch globale Administratoren sein, um die Genehmigung zu erteilen. <br><br>Bitte beachten Sie, dass **können einladen** sich auf Mitglieder in Azure AD (im Gegensatz zu Gästen) bezieht und nicht auf Website- oder Gruppenmitglieder in Microsoft 365. <br><br>Dieser Wert ist mit der Einstellung **Mitglieder können einladen** in den Azure Active Directory-Einstellungen für Organisationsbeziehungen identisch.|
 
@@ -76,7 +76,7 @@ Das Microsoft 365 Admin Center bietet Einstellungen auf Organisationsebene für 
 
 ![Screenshot der Gasteinstellungen für Microsoft 365-Gruppen im Microsoft 365 Admin Center](../media/office-365-groups-guest-settings.png)
 
-|**Einstellung**|**Standard**|**Beschreibung**|
+| Einstellung | Standard | Beschreibung |
 |:-----|:-----|:-----|
 |Gruppenmitglieder von außerhalb Ihrer Organisation dürfen auf Gruppeninhalte zugreifen|Ein|Ist diese Option aktiviert, können Gäste auf Gruppeninhalte zugreifen. Ist die Option deaktiviert, ist dies nicht möglich. Diese Einstellung sollte für alle Szenarien **aktiviert** sein, in denen Gastbenutzer mit Microsoft 365-Gruppen oder Teams interagieren.|
 |Erlauben Sie Gruppenbesitzern, Personen von außerhalb Ihrer Organisation zu Gruppen hinzuzufügen|Ein|Ist diese Option **aktiviert**, können Besitzer von Microsoft 365-Gruppen oder -Teams neue Gäste zur Gruppe einladen. Ist diese Option deaktiviert, können Besitzer nur Gäste einladen, die sich bereits im Verzeichnis befinden.|
@@ -95,7 +95,7 @@ Die Teams-Masteroption für den Gastzugriff, **Gastzugriff in Teams ermöglichen
 
 ![Screenshot der Teams-Umschaltfläche für den Gastzugriff](../media/teams-guest-access-toggle.png)
 
-|**Setting**|**Standard**|**Beschreibung**|
+| Einstellung | Standard | Beschreibung |
 |:-----|:-----|:-----|
 |Gastzugriff in Teams ermöglichen|Aus|Aktiviert oder deaktiviert den Gastzugriff für Teams insgesamt. Es kann bis zu 24 Stunden dauern, bis eine Änderung dieser Einstellung wirksam wird.|
 
@@ -105,7 +105,7 @@ Die Teams-Masteroption für den Gastzugriff, **Gastzugriff in Teams ermöglichen
 
 ![Screenshot der Anrufoptionen für Teams-Gäste](../media/teams-guest-calling-setting.png)
 
-|**Setting**|**Standard**|**Beschreibung**|
+| Einstellung | Standard | Beschreibung |
 |:-----|:-----|:-----|
 |Private Anrufe führen|Ein|Ist diese Option aktiviert, können Gäste in Teams Peer-to-Peer-Anrufe führen. Ist die Option deaktiviert, ist dies nicht möglich.|
 
@@ -115,7 +115,7 @@ Die Teams-Masteroption für den Gastzugriff, **Gastzugriff in Teams ermöglichen
 
 ![Screenshot der Besprechungseinstellungen für Teams-Gäste](../media/teams-guest-meeting-settings.png)
 
-|**Setting**|**Standard**|**Beschreibung**|
+| Einstellung | Standard | Beschreibung |
 |:-----|:-----|:-----|
 |IP-Video zulassen|Ein|Ist diese Option aktiviert, können Gäste in ihren Anrufen und Besprechungen Video verwenden. Ist die Option deaktiviert, ist dies nicht möglich.|
 |Bildschirmfreigabemodus|Gesamter Bildschirm|Ist diese Option auf **Deaktiviert** festgelegt, können Gäste ihre Bildschirme nicht in Teams freigeben. Ist die Option auf **Einzelne Anwendung** festgelegt, können Gäste nur eine einzelne Anwendung auf ihrem Bildschirm freigeben. Ist die Option auf **Gesamter Bildschirm** festgelegt, können Gäste wählen, ob sie eine Anwendung oder ihren gesamten Bildschirm freigeben möchten.|
@@ -127,7 +127,7 @@ Die Teams-Masteroption für den Gastzugriff, **Gastzugriff in Teams ermöglichen
 
 ![Screenshot der Messagingeinstellungen für Teams-Gäste](../media/teams-guest-messaging-settings.png)
 
-|**Setting**|**Standard**|**Beschreibung**|
+| Einstellung | Standard | Beschreibung |
 |:-----|:-----|:-----|
 |Gesendete Nachrichten bearbeiten|Ein|Ist diese Option aktiviert, können Gäste zuvor gesendete Nachrichten bearbeiten. Ist die Option deaktiviert, ist dies nicht möglich.|
 |Gesendete Nachrichten löschen|Ein|Ist diese Option aktiviert, können Gäste zuvor gesendete Nachrichten löschen. Ist die Option deaktiviert, ist dies nicht möglich.|
@@ -152,7 +152,7 @@ Da OneDrive eine Hierarchie von Websites in SharePoint ist, wirken sich die Frei
 
 ![Screenshot der SharePoint-Freigabeeinstellungen auf Organisationsebene](../media/sharepoint-organization-external-sharing-controls.png)
 
-|**Setting**|**Standard**|**Beschreibung**|
+| Einstellung | Standard | Beschreibung |
 |:-----|:-----|:-----|
 |SharePoint|Jeder|Die am wenigsten restriktiven Freigabeberechtigungen für SharePoint-Websites.|
 |OneDrive|Jeder|Die am wenigsten restriktiven Freigabeberechtigungen für OneDrive-Websites. Diese Einstellung kann nicht weniger restriktiv sein als die SharePoint-Einstellung.|
@@ -163,7 +163,7 @@ Da OneDrive eine Hierarchie von Websites in SharePoint ist, wirken sich die Frei
 
 ![Screenshot der erweiterten Freigabeeinstellungen auf Organisationsebene für SharePoint und OneDrive](../media/sharepoint-organization-advanced-sharing-settings.png)
 
-|**Setting**|**Standard**|**Beschreibung**|
+| Einstellung | Standard | Beschreibung |
 |:-----|:-----|:-----|
 |Einschränken der externen Freigabe mithilfe von Domänen|Aus|Diese Einstellung ermöglicht es Ihnen, eine Liste der zulässigen oder gesperrte Domänen für die Freigabe festzulegen. Wenn zulässige Domänen angegeben sind, können Freigabeeinladungen nur an diese Domänen gesendet werden. Wenn gesperrte Domänen angegeben sind, können keine Freigabeeinladungen an diese Domänen gesendet werden.<br><br> Diese Einstellung wirkt sich auf alle SharePoint- und OneDrive-Websites in der Organisation aus.|
 |Gäste müssen sich mit dem gleichen Konto anmelden, an das auch Freigabeeinladungen gesendet werden|Aus|Hindert Gäste daran, Websitefreigabeeinladungen mit einer anderen E-Mail-Adresse als der Adresse einzulösen, an die die Einladung gesendet wurde.<br><br>In [SharePoint- und OneDrive-Integration in Azure AD B2B (Vorschau)](/sharepoint/sharepoint-azureb2b-integration-preview) wird diese Einstellung nicht verwendet, da alle Gäste dem Verzeichnis basierend auf der E-Mail-Adresse, an die die Einladung gesendet wurde, hinzugefügt werden. Alternative E-Mail-Adressen können für den Zugriff auf die Website nicht verwendet werden.|
@@ -177,7 +177,7 @@ Wenn Dateien und Ordner in SharePoint und OneDrive freigegeben werden, wird den 
 
 ![Screenshot der Freigabeeinstellungen auf Organisationsebene für Dateien und Ordner in SharePoint und OneDrive](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
-|**Setting**|**Standard**|**Beschreibung**|
+| Einstellung | Standard | Beschreibung |
 |:-----|:-----|:-----|
 |Datei- und Ordnerlinks|Jeder mit diesem Link|Gibt an, welcher Freigabelink standardmäßig angezeigt wird, wenn ein Benutzer eine Datei oder einen Ordner freigibt. Benutzer können die Option bei Bedarf vor der Freigabe ändern. Wenn die Standardeinstellung auf **Jeder mit diesem Link** festgelegt ist und die *Jeder*-Freigabe für eine bestimmte Website nicht zulässig ist, wird **Nur Personen in Ihrer Organisation** als Standard für diese Website angezeigt.|
 |Diese Links müssen innerhalb dieser Anzahl von Tagen ablaufen|Aus (kein Ablaufdatum)|Gibt an, wie viele Tage nach Erstellung ein *Jeder*-Link abläuft. Abgelaufene Links können nicht verlängert werden. Erstellen Sie einen neuen Link, wenn die Freigabe über das Ablaufdatum hinaus fortgesetzt werden soll.|
@@ -192,7 +192,7 @@ Wenn Sie einschränken möchten, welche Personen in SharePoint und OneDrive Elem
 
 ![Screenshot der SharePoint-Freigabeeinstellungen auf Organisationsebene für Sicherheitsgruppen](../media/sharepoint-organization-external-sharing-security-groups.png)
 
-|**Setting**|**Standard**|**Beschreibung**|
+| Einstellung | Standard | Beschreibung |
 |:-----|:-----|:-----|
 |Zulassen, dass nur Benutzer in ausgewählten Sicherheitsgruppen mit authentifizierten externen Benutzern teilen:|Aus|Ist diese Option **aktiviert**, können nur die Personen in den angegebenen Sicherheitsgruppen Elemente für Personen außerhalb der Organisation freigeben. Es sind nur *Bestimmte Personen*-Links verfügbar. Die *Jeder*-Freigabe wird effektiv deaktiviert, es sei denn, **Nur Benutzer in ausgewählten Sicherheitsgruppen dürfen mit authentifizierten externen Benutzern und mittels anonymer Links teilen** ist ebenfalls aktiviert.|
 |Nur Benutzer in ausgewählten Sicherheitsgruppen dürfen mit authentifizierten externen Benutzern und mittels anonymer Links teilen|Aus|Ist diese Option aktiviert, können nur die Personen in den angegebenen Sicherheitsgruppen Elemente für Gäste freigeben. Es sind *Jeder*- und *Bestimmte Personen*- Links verfügbar.|
@@ -215,7 +215,7 @@ Wenn auf die Website eine Vertraulichkeitsbezeichnung angewendet wird, kann dies
 
 ![Screenshot der externen SharePoint-Freigabeeinstellungen](../media/sharepoint-site-external-sharing-settings.png)
 
-|**Setting**|**Standard**|**Beschreibung**|
+| Einstellung | Standard | Beschreibung |
 |:-----|:-----|:-----|
 |Websiteinhalt kann freigegeben werden für:|Variiert je nach Websitetyp (siehe Tabelle unten)|Gibt den Typ der für diese Website zulässigen externen Freigabe an. Die hier verfügbaren Optionen unterliegen den Freigabeeinstellungen auf Unternehmensebene für SharePoint.|
 
@@ -227,7 +227,7 @@ Sie können Standardeinstellungen für Verknüpfungstyp und Berechtigungen sowie
 
 ![Screenshot der SharePoint-Link-Freigabeeinstellungen auf Websiteebene](../media/sharepoint-site-link-sharing-settings.png)
 
-|**Einstellung**|**Standard**|**Beschreibung**|
+| Einstellung | Standard | Beschreibung |
 |:-----|:-----|:-----|
 |Einschränken der Freigabe nach Domäne|Off|Diese Einstellung ermöglicht es Ihnen, eine Liste der zulässigen oder gesperrte Domänen für die Freigabe festzulegen. Wenn zulässige Domänen angegeben sind, können Freigabeeinladungen nur an diese Domänen gesendet werden. Wenn gesperrte Domänen angegeben sind, können keine Freigabeeinladungen an diese Domänen gesendet werden.<br><br> Diese Einstellung kann nicht dazu verwendet werden, die auf Organisations- oder Azure AD-Ebene festgelegten Domäneneinschränkungen außer Kraft zu setzen.|
 |Standardmäßiger Freigabe-Linktyp|Identisch mit der Einstellung auf Organisationsebene|Diese Einstellung ermöglicht es Ihnen, den standardmäßigen Freigabelink anzugeben, der Benutzern auf dieser Website angezeigt wird. Die Option *Identisch mit der Einstellung auf Organisationsebene* wird durch eine Kombination aus Organisations- und Website Freigabeeinstellungen definiert.|
@@ -238,7 +238,7 @@ Sie können Standardeinstellungen für Verknüpfungstyp und Berechtigungen sowie
 
 Die folgende Tabelle zeigt die Standardfreigabeeinstellung für jeden Websitetyp.
 
-|**Websitetyp**|**Standardfreigabeeinstellung**|
+| Websitetyp | Standardfreigabeeinstellung |
 |:-----|:-----|
 |Klassisch|**Nur Personen in Ihrer Organisation**|
 |OneDrive|**Jeder**|
