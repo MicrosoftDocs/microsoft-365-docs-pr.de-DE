@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Lesen Sie in diesem Artikel eine Übersicht über die verschiedenen Verschlüsselungsmethoden, die zum Schutz von Kundendaten in der Microsoft Cloud verwendet werden.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8e184fbe722de674db6f9bcc47e2ab5aa0723d1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4a351215b7773574d5932b936e30c5d5ca7aa116
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926222"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222280"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Verschlüsselung in der Microsoft-Cloud
 
@@ -57,7 +57,7 @@ Für Kundendaten, die übertragen werden, verhandeln alle Office 365-Server stan
 - [Verschlüsselung in Azure](office-365-azure-encryption.md)
 - [BitLocker und Distributed Key Manager (DKM) für die Verschlüsselung](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)
 - [Office 365-Dienstverschlüsselung](office-365-service-encryption.md)
-- [Office 365-Verschlüsselung für Skype for Business, OneDrive for Business, SharePoint Online und Exchange Online](./n/compliance/assurance/assurance-encryption-for-microsoft-365-services)
+- [Office 365-Verschlüsselung für Skype for Business, OneDrive for Business, SharePoint Online und Exchange Online](https://docs.microsoft.com/compliance/assurance/assurance-encryption-for-microsoft-365-services) 
 - [Verschlüsselung von Daten während der Übertragung](/compliance/assurance/assurance-encryption-in-transit)
 - [Vom Kunden verwaltete Verschlüsselungsfunktionen](office-365-customer-managed-encryption-features.md)
 - [Verschlüsselungsrisiken und Schutzfunktionen](office-365-encryption-risks-and-protections.md)

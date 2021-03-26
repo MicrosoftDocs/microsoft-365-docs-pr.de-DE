@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Datenconnector einrichten, um Daten aus dem Bloomberg Message E-Mail-Tool in Microsoft 365 zu importieren und zu archivieren. Auf diese Weise können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren, damit Sie Compliancefeatures wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: c29f8d0c09ce5e84ecf18830df4585f51361995b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7029b95e4b9ceb91859e2a4b38afb5205e3307b2
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919953"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222544"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Einrichten eines Connectors zum Archivieren von Bloomberg-Nachrichtendaten
 
@@ -37,13 +37,17 @@ In der folgenden Übersicht wird der Prozess der Verwendung eines Connectors zum
 
 3. Der Bloomberg Message Connector, den Sie im Microsoft 365 Compliance Center erstellen, stellt täglich eine Verbindung mit der Bloomberg SFTP-Website bereit und überträgt die E-Mail-Nachrichten aus den vorherigen 24 Stunden an einen sicheren Azure Storage-Bereich in der Microsoft Cloud.
 
-4. Der Connector importiert die E-Mail-Nachrichtenelemente in das Postfach eines bestimmten Benutzers. Im Postfach des jeweiligen Benutzers wird ein neuer Ordner namens BloombergMessage erstellt, in den die Elemente importiert werden. 
+4. Der Connector importiert die E-Mail-Nachrichtenelemente in das Postfach eines bestimmten Benutzers. Im Postfach des jeweiligen Benutzers wird ein neuer Ordner namens BloombergMessage erstellt, in den die Elemente importiert werden.
 
    Der Connector verwendet dazu den Wert der CorporateEmailAddress-Eigenschaft. Jede E-Mail-Nachricht enthält diese Eigenschaft, die mit der E-Mail-Adresse jedes Teilnehmers der E-Mail-Nachricht gefüllt wird. Neben der automatischen Benutzerzuordnung mithilfe des Werts der *CorporateEmailAddress-Eigenschaft* können Sie auch eine benutzerdefinierte Zuordnung definieren, indem Sie eine CSV-Zuordnungsdatei hochladen. Diese Zuordnungsdatei enthält eine Bloomberg-UUID und die entsprechende Microsoft 365-Postfachadresse für jeden Benutzer in Ihrer Organisation. Wenn Sie die automatische Benutzerzuordnung aktivieren und eine benutzerdefinierte Zuordnung bereitstellen, wird der Connector für jedes E-Mail-Element zunächst die datei für die benutzerdefinierte Zuordnung betrachten. Wenn es keinen gültigen Microsoft 365-Benutzer findet, der der Bloomberg-UUID eines Benutzers entspricht, verwendet der Connector die *CorporateEmailAddress-Eigenschaft* des E-Mail-Elements. Wenn der Connector keinen gültigen Microsoft 365-Benutzer in der benutzerdefinierten Zuordnungsdatei oder der *CorporateEmailAddress-Eigenschaft* des E-Mail-Elements findet, wird das Element nicht importiert.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-set-up-a-connector"></a>Vor dem Einrichten eines Connectors
 
 Einige der Implementierungsschritte, die zum Archivieren von Bloomberg-Nachrichtendaten erforderlich sind, sind außerhalb von Microsoft 365 und müssen abgeschlossen sein, bevor Sie den Connector im Compliance Center erstellen können.
+
+- Zum Einrichten eines Bloomberg-Nachrichtenconnector müssen Sie Schlüssel und Schlüsselpassphrasen für Pretty Good Privacy (PGP) und Secure Shell (SSH) verwenden. Diese Schlüssel werden zum Konfigurieren der Bloomberg -SFTP-Website verwendet und vom Connector verwendet, um eine Verbindung mit der Bloomberg SFTP-Website herzustellen, um Daten nach Microsoft 365 zu importieren. Der PGP-Schlüssel wird verwendet, um die Verschlüsselung von Daten zu konfigurieren, die von der Bloomberg SFTP-Website an Microsoft 365 übertragen werden. Der SSH-Schlüssel wird verwendet, um eine sichere Shell zu konfigurieren, um eine sichere Remoteanmeldung zu ermöglichen, wenn der Connector eine Verbindung mit dem Bloomberg SFTP-Standort herstellt.
+
+  Beim Einrichten eines Connectors haben Sie die Möglichkeit, von Microsoft bereitgestellte öffentliche Schlüssel und Schlüsselpassphrasen zu verwenden, oder Sie können eigene private Schlüssel und Passphrasen verwenden. Es wird empfohlen, die von Microsoft bereitgestellten öffentlichen Schlüssel zu verwenden. Wenn Ihre Organisation jedoch bereits eine Bloomberg -SFTP-Website mit privaten Schlüsseln konfiguriert hat, können Sie einen Connector mit diesen privaten Schlüsseln erstellen.
 
 - Abonnieren Sie [Bloomberg Anywhere](https://www.bloomberg.com/professional/product/remote-access/?bbgsum-page=DG-WS-PROF-PROD-BBA). Dies ist erforderlich, damit Sie sich bei Bloomberg Anywhere anmelden können, um auf die Bloomberg SFTP-Website zu zugreifen, die Sie einrichten und konfigurieren müssen.
 
@@ -54,9 +58,6 @@ Einige der Implementierungsschritte, die zum Archivieren von Bloomberg-Nachricht
   - Weitere Informationen finden Sie im Dokument "SFTP Connectivity Standards" unter [Bloomberg Support](https://www.bloomberg.com/professional/support/documentation/).
 
   - Wenden [Sie sich an den Bloomberg-Kundensupport](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc).
-
-   > [!NOTE]
-   > Wenn Ihre Organisation bereits einen Connector zum Archivieren von Instant Bloomberg-Daten bereitgestellt hat, müssen Sie keine weitere SFTP-Website einrichten. Sie können dieselbe SFTP-Website für den Bloomberg-Nachrichtenconnector verwenden.
 
 - Nachdem Sie mit Bloomberg eine SFTP-Website eingerichtet haben, stellt Bloomberg Ihnen einige Informationen zur Verfügung, nachdem Sie auf die Bloomberg-Implementierungs-E-Mail-Nachricht antworten. Speichern Sie eine Kopie der folgenden Informationen. Verwenden Sie ihn zum Einrichten eines Connectors in Schritt 3.
 
@@ -72,11 +73,15 @@ Einige der Implementierungsschritte, die zum Archivieren von Bloomberg-Nachricht
 
 - Dem Benutzer, der in Schritt 3 einen Bloomberg-Nachrichtenconnector erstellt (und der die öffentlichen Schlüssel und die IP-Adresse in Schritt 1 herunterlädt), muss die Rolle Postfachimportexport in Exchange Online zugewiesen werden. Dies ist erforderlich, um Connectors auf der Seite **Datenconnectors** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle Postfachimportexport zur Rollengruppe Organisationsverwaltung in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle Postfachimportexport zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten Erstellen von [Rollengruppen](/Exchange/permissions-exo/role-groups#create-role-groups) oder [Ändern](/Exchange/permissions-exo/role-groups#modify-role-groups) von Rollengruppen im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
-## <a name="step-1-obtain-ssh-and-pgp-public-keys"></a>Schritt 1: Abrufen öffentlicher SSH- und PGP-Schlüssel
+## <a name="set-up-a-connector-using-public-keys"></a>Einrichten eines Connectors mithilfe öffentlicher Schlüssel
 
-Der erste Schritt besteht im Abrufen einer Kopie der öffentlichen Schlüssel für Secure Shell (SSH) und Pretty Good Privacy (PGP). Sie verwenden diese Schlüssel in Schritt 2, um die Bloomberg SFTP-Website so zu konfigurieren, dass der Connector (den Sie in Schritt 3 erstellen) eine Verbindung mit der SFTP-Website herstellen und die Bloomberg Message-E-Mail-Daten an Microsoft 365-Postfächer übertragen kann. In diesem Schritt erhalten Sie auch eine IP-Adresse, die Sie beim Konfigurieren der Bloomberg SFTP-Website verwenden.
+Die Schritte in diesem Abschnitt zeigen, wie Sie einen Bloomberg Message-Connector mithilfe der öffentlichen Schlüssel für Pretty Good Privacy (PGP) und Secure Shell (SSH) einrichten.
 
-1. Wechseln Sie zu [ https://compliance.microsoft.com\ ]( https://compliance.microsoft.com) und klicken Sie im linken Navigations navi auf Datenconnectors. 
+### <a name="step-1-obtain-pgp-and-ssh-public-keys"></a>Schritt 1: Abrufen öffentlicher PGP- und SSH-Schlüssel
+
+Der erste Schritt besteht im Abrufen einer Kopie der öffentlichen PGP- und SSH-Schlüssel. Sie verwenden diese Schlüssel in Schritt 2, um die Bloomberg SFTP-Website so zu konfigurieren, dass der Connector (den Sie in Schritt 3 erstellen) eine Verbindung mit der SFTP-Website herstellen und die Bloomberg Message-E-Mail-Daten an Microsoft 365-Postfächer übertragen kann. In diesem Schritt erhalten Sie auch eine IP-Adresse, die Sie beim Konfigurieren der Bloomberg SFTP-Website verwenden.
+
+1. Wechseln Sie <https://compliance.microsoft.com> zu, und klicken Sie **im** linken Navigations navi auf Datenconnectors.
 
 2. Klicken Sie **auf der Seite** Datenconnectors unter **Bloomberg-Nachricht** auf **Anzeigen**.
 
@@ -84,31 +89,39 @@ Der erste Schritt besteht im Abrufen einer Kopie der öffentlichen Schlüssel f�
 
 4. Klicken Sie **auf der Seite Nutzungsbedingungen** auf **Akzeptieren**.
 
-5. Klicken Sie auf der Website Anmeldeinformationen für **Bloomberg SFTP** hinzufügen unter Schritt 1 auf die Links **SSH-Schlüssel** herunterladen, **PGP-Schlüssel** herunterladen und IP-Adresslinks herunterladen, um eine Kopie jeder Datei auf Ihrem lokalen Computer zu speichern.  Diese Dateien enthalten die folgenden Elemente, die zum Konfigurieren der Bloomberg -SFTP-Website in Schritt 2 verwendet werden:
+5. Klicken Sie **auf der Seite Anmeldeinformationen** für Inhaltsquelle hinzufügen auf Ich möchte öffentliche PGP- und SSH-Schlüssel von **Microsoft verwenden.**
 
-   - Öffentlicher SSH-Schlüssel: Dieser Schlüssel wird verwendet, um Secure Shell (SSH) zu konfigurieren, um eine sichere Remoteanmeldung zu aktivieren, wenn der Connector eine Verbindung mit dem Bloomberg SFTP-Standort herstellt.
+   ![Auswählen der Option zum Verwenden öffentlicher Schlüssel](../media/BloombergMessagePublicKeysOption.png)
+
+6. Klicken Sie unter Schritt 1 auf die Schaltfläche **SSH** herunterladen, **PGP-Schlüssel** herunterladen und IP-Adresslinks herunterladen, um eine Kopie jeder Datei auf Ihrem lokalen Computer zu speichern. 
+
+   ![Links zum Herunterladen öffentlicher Schlüssel und IP-Adresse](../media/BloombergMessagePublicKeyDownloadLinks.png)
+
+   Diese Dateien enthalten die folgenden Elemente, die zum Konfigurieren der Bloomberg -SFTP-Website in Schritt 2 verwendet werden:
 
    - Öffentlicher PGP-Schlüssel: Dieser Schlüssel wird verwendet, um die Verschlüsselung von Daten zu konfigurieren, die von der Bloomberg SFTP-Website an Microsoft 365 übertragen werden.
 
-   - IP-Adresse: Die Bloomberg-SFTP-Website ist so konfiguriert, dass sie nur eine Verbindungsanforderung von dieser IP-Adresse akzeptiert, die vom bloomberg Message Connector verwendet wird, den Sie in Schritt 3 erstellen.
+   - Öffentlicher SSH-Schlüssel: Dieser Schlüssel wird verwendet, um eine sichere Shell zu konfigurieren, um eine sichere Remoteanmeldung zu ermöglichen, wenn der Connector eine Verbindung mit dem Bloomberg SFTP-Standort herstellt.
 
-6. Klicken **Sie auf Abbrechen,** um den Assistenten zu schließen. Sie kommen in Schritt 3 zu diesem Assistenten zurück, um den Connector zu erstellen.
+   - IP-Adresse: Die Bloomberg-SFTP-Website ist so konfiguriert, dass Verbindungsanforderungen von dieser IP-Adresse akzeptiert werden. Dieselbe IP-Adresse wird vom Bloomberg Message Connector verwendet, um eine Verbindung mit der SFTP-Website herzustellen und Bloomberg Message-Daten an Microsoft 365 zu übertragen.
 
-## <a name="step-2-configure-the-bloomberg-sftp-site"></a>Schritt 2: Konfigurieren der Bloomberg SFTP-Website
+7. Klicken **Sie auf Abbrechen,** um den Assistenten zu schließen. Sie kommen in Schritt 3 zu diesem Assistenten zurück, um den Connector zu erstellen.
+
+### <a name="step-2-configure-the-bloomberg-sftp-site"></a>Schritt 2: Konfigurieren der Bloomberg SFTP-Website
 
 > [!NOTE]
-> Wie bereits erwähnt, müssen Sie, wenn Sie eine Bloomberg-SFTP-Website zum Archivieren von Instant Bloomberg-Daten eingerichtet haben, keine weitere einrichten. Sie können dieselbe SFTP-Website angeben, wenn Sie den Connector in Schritt 3 erstellen.
+> Wenn Ihre Organisation zuvor eine Bloomberg-SFTP-Website eingerichtet hat, um Instant Bloomberg-Daten mithilfe öffentlicher PGP- und SSH-Schlüssel zu archivieren, müssen Sie keine weitere einrichten. Sie können dieselbe SFTP-Website angeben, wenn Sie den Connector in Schritt 3 erstellen.
 
-Der nächste Schritt besteht in der Verwendung der öffentlichen SSH- und PGP-Schlüssel und der in Schritt 1 erhaltenen IP-Adresse, um die SSH-Authentifizierung und die PGP-Verschlüsselung für die Bloomberg-SFTP-Website zu konfigurieren. Dadurch kann der in Schritt 3 erstellte Bloomberg-Nachrichtenconnector eine Verbindung mit der Bloomberg -SFTP-Website herstellen und Bloomberg Message-Daten an Microsoft 365 übertragen. Sie müssen mit dem Bloomberg-Kundensupport zusammenarbeiten, um Ihre Bloomberg SFTP-Website einrichten zu können. Wenden [Sie sich an den Bloomberg-Kundensupport,](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc) um Unterstützung zu erhalten.
+Im nächsten Schritt verwenden Sie die öffentlichen PGP- und SSH-Schlüssel sowie die in Schritt 1 erhaltene IP-Adresse, um die PGP-Verschlüsselung und die SSH-Authentifizierung für den Bloomberg SFTP-Standort zu konfigurieren. Dadurch kann der in Schritt 3 erstellte Bloomberg-Nachrichtenconnector eine Verbindung mit der Bloomberg -SFTP-Website herstellen und Bloomberg Message-Daten an Microsoft 365 übertragen. Sie müssen mit dem Bloomberg-Kundensupport zusammenarbeiten, um Ihre Bloomberg SFTP-Website einrichten zu können. Wenden [Sie sich an den Bloomberg-Kundensupport,](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc) um Unterstützung zu erhalten.
 
 > [!IMPORTANT]
 > Bloomberg empfiehlt, die drei Dateien, die Sie in Schritt 1 heruntergeladen haben, an eine E-Mail-Nachricht anfügen und diese an das Kundensupportteam zu senden, wenn Sie mit ihnen zusammenarbeiten, um Ihre Bloomberg -SFTP-Website einrichten.
 
-## <a name="step-3-create-a-bloomberg-message-connector"></a>Schritt 3: Erstellen eines Bloomberg-Nachrichtenconnector
+### <a name="step-3-create-a-bloomberg-message-connector"></a>Schritt 3: Erstellen eines Bloomberg-Nachrichtenconnector
 
 Der letzte Schritt besteht im Erstellen eines Bloomberg-Nachrichtenconnector im Microsoft 365 Compliance Center. Der Connector verwendet die informationen, die Sie bereitstellen, um eine Verbindung mit der Bloomberg SFTP-Website herzustellen und E-Mail-Nachrichten an die entsprechenden Benutzerpostfächer in Microsoft 365 zu übertragen.
 
-1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und klicken Sie **im** linken Navigations navi auf Datenconnectors.
+1. Wechseln Sie <https://compliance.microsoft.com> zu, und klicken Sie **im** linken Navigations navi auf Datenconnectors.
 
 2. Klicken Sie **auf der Seite** Datenconnectors unter **Bloomberg-Nachricht** auf **Anzeigen**.
 
@@ -116,21 +129,108 @@ Der letzte Schritt besteht im Erstellen eines Bloomberg-Nachrichtenconnector im 
 
 4. Klicken Sie **auf der Seite Nutzungsbedingungen** auf **Akzeptieren**.
 
-5. Geben Sie auf der Seite Anmeldeinformationen für **Bloomberg SFTP-Website** hinzufügen unter Schritt 3 die erforderlichen Informationen in die folgenden Felder ein, und klicken Sie dann auf **Weiter**.
+5. Klicken Sie **auf der Seite Anmeldeinformationen** für Inhaltsquelle hinzufügen auf Ich möchte öffentliche PGP- und SSH-Schlüssel von **Microsoft verwenden.**
+
+6. Geben Sie unter Schritt 3 die erforderlichen Informationen in die folgenden Felder ein, und klicken Sie dann **auf Verbindung überprüfen.**
+
+      - **Name:** Der Name für den Connector. Sie muss in Ihrer Organisation eindeutig sein.
 
       - **Firmencode:** Die ID für Ihre Organisation, die als Benutzername für die Bloomberg SFTP-Website verwendet wird.
 
       - **Kennwort:** Das Kennwort für die Bloomberg-SFTP-Website Ihrer Organisation.
 
-      - **SFTP-URL:** Die URL für die Bloomberg-SFTP-Website (z. B. sftp.bloomberg.com).
+      - **SFTP-URL:** Die URL für die Bloomberg-SFTP-Website (z. B. `sftp.bloomberg.com` ). Sie können auch eine IP-Adresse für diesen Wert verwenden.
 
       - **SFTP-Port:** Die Portnummer für den Bloomberg SFTP-Standort. Der Connector verwendet diesen Port, um eine Verbindung mit dem SFTP-Standort herzustellen.
 
-6. Aktivieren Sie **auf der Seite** Benutzerzuordnung die automatische Benutzerzuordnung, und stellen Sie bei Bedarf eine benutzerdefinierte Benutzerzuordnung zur Verfügung.
+7. Nachdem die Verbindung erfolgreich überprüft wurde, klicken Sie auf **Weiter**.
 
-7. Klicken **Sie auf Weiter,** überprüfen Sie Ihre Einstellungen, und klicken Sie dann auf Vorbereiten, um den Connector zu erstellen.
+8. Aktivieren Sie auf der Seite **Bloomberg Nachrichtenbenutzer zu Microsoft 365-Benutzern** zuordnen die automatische Benutzerzuordnung und stellen Sie bei Bedarf eine benutzerdefinierte Benutzerzuordnung zur Verfügung.
 
-8. Wechseln Sie zur **Seite Datenconnectors,** um den Fortschritt des Importvorgangs für den neuen Connector zu sehen.
+   > [!NOTE]
+   > Der Connector importiert Nachrichtenelemente in das Postfach eines bestimmten Benutzers. Im Postfach des jeweiligen Benutzers wird ein neuer Ordner namens **BloombergMessage** erstellt, in den die Elemente importiert werden. Der Connector verwendet den Wert der *CorporateEmailAddress-Eigenschaft.* Jede Chatnachricht enthält diese Eigenschaft, und die Eigenschaft wird mit der E-Mail-Adresse jedes Teilnehmers der Chatnachricht gefüllt. Neben der automatischen Benutzerzuordnung mithilfe des Werts der *CorporateEmailAddress-Eigenschaft* können Sie auch benutzerdefinierte Zuordnungen definieren, indem Sie eine CSV-Zuordnungsdatei hochladen. Die Zuordnungsdatei sollte die Bloomberg-UUID und die entsprechende Microsoft 365-Postfachadresse für jeden Benutzer enthalten. Wenn Sie die automatische Benutzerzuordnung aktivieren und eine benutzerdefinierte Zuordnung bereitstellen, wird für jedes Nachrichtenelement zunächst die benutzerdefinierte Zuordnungsdatei vom Connector angezeigt. Wenn er keinen gültigen Microsoft 365-Benutzer findet, der der Bloomberg-UUID eines Benutzers entspricht, verwendet der Connector die *CorporateEmailAddress-Eigenschaft* des Chatelements. Wenn der Connector keinen gültigen Microsoft 365-Benutzer in der benutzerdefinierten Zuordnungsdatei oder der *CorporateEmailAddress-Eigenschaft* des Nachrichtenelements findet, wird das Element nicht importiert.
+
+9. Klicken **Sie auf Weiter,** überprüfen Sie Ihre Einstellungen, und klicken Sie dann auf **Fertig stellen,** um den Connector zu erstellen.
+
+10. Wechseln Sie zur **Seite Datenconnectors,** um den Fortschritt des Importvorgangs für den neuen Connector zu sehen. Klicken Sie auf den Connector, um die Flyoutseite mit Informationen zum Connector angezeigt zu werden.
+
+## <a name="set-up-a-connector-using-private-keys"></a>Einrichten eines Connectors mithilfe privater Schlüssel
+
+Die Schritte in diesem Abschnitt zeigen, wie Sie einen Bloomberg-Nachrichtenconnector mit privaten PGP- und SSH-Schlüsseln einrichten. Diese Connectoreinrichtungsoption ist für Organisationen vorgesehen, die bereits eine Bloomberg-SFTP-Website mithilfe privater Schlüssel konfiguriert haben.
+
+### <a name="step-1-obtain-an-ip-address-to-configure-the-bloomberg-sftp-site"></a>Schritt 1: Abrufen einer IP-Adresse zum Konfigurieren der Bloomberg-SFTP-Website
+
+> [!NOTE]
+> Wenn Ihre Organisation zuvor eine Bloomberg-SFTP-Website zum Archivieren von Instant Bloomberg-Daten mit privaten PGP- und SSH-Schlüsseln konfiguriert hat, müssen Sie keine andere konfigurieren. Sie können dieselbe SFTP-Website angeben, wenn Sie den Connector in Schritt 2 erstellen.
+
+Wenn Ihre Organisation private PGP- und SSH-Schlüssel zum Einrichten einer Bloomberg -SFTP-Website verwendet hat, müssen Sie eine IP-Adresse abrufen und sie dem Bloomberg-Kundensupport bereitstellen. Die Bloomberg -SFTP-Website muss so konfiguriert sein, dass Verbindungsanforderungen von dieser IP-Adresse akzeptiert werden. Dieselbe IP-Adresse wird vom Bloomberg Message Connector verwendet, um eine Verbindung mit der SFTP-Website herzustellen und Bloomberg Message-Daten an Microsoft 365 zu übertragen.
+
+So rufen Sie die IP-Adresse ab:
+
+1. Wechseln Sie <https://compliance.microsoft.com> zu, und klicken Sie **im** linken Navigations navi auf Datenconnectors.
+
+2. Klicken Sie **auf der Seite** Datenconnectors unter **Bloomberg-Nachricht** auf **Anzeigen**.
+
+3. Klicken Sie auf der Seite Produktbeschreibung für **Bloomberg-Nachricht** auf **Connector hinzufügen.**
+
+4. Klicken Sie **auf der Seite Nutzungsbedingungen** auf **Akzeptieren**.
+
+5. Klicken Sie **auf der Seite Anmeldeinformationen** für Inhaltsquelle hinzufügen auf Ich möchte private PGP- und **SSH-Schlüssel verwenden.**
+
+6. Klicken Sie unter Schritt 1 auf **IP-Adresse herunterladen,** um eine Kopie der IP-Adressdatei auf Ihrem lokalen Computer zu speichern.
+
+   ![Herunterladen der IP-Adresse](../media/BloombergMessageConnectorIPAddress.png)
+
+7. Klicken **Sie auf Abbrechen,** um den Assistenten zu schließen. Sie kommen in Schritt 2 zu diesem Assistenten zurück, um den Connector zu erstellen.
+
+Sie müssen mit dem Bloomberg-Kundensupport zusammenarbeiten, um Ihre Bloomberg -SFTP-Website so zu konfigurieren, dass Verbindungsanforderungen von dieser IP-Adresse akzeptiert werden. Wenden [Sie sich an den Bloomberg-Kundensupport,](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc) um Unterstützung zu erhalten.
+
+### <a name="step-2-create-a-bloomberg-message-connector"></a>Schritt 2: Erstellen eines Bloomberg-Nachrichtenconnector
+
+Nachdem Ihre Bloomberg -SFTP-Website konfiguriert wurde, besteht der nächste Schritt in der Erstellung eines Bloomberg Message-Connectors im Microsoft 365 Compliance Center. Der Connector verwendet die informationen, die Sie bereitstellen, um eine Verbindung mit der Bloomberg SFTP-Website herzustellen und E-Mail-Nachrichten an die entsprechenden Benutzerpostfächer in Microsoft 365 zu übertragen. Stellen Sie zum Abschließen dieses Schritts sicher, dass Kopien derselben privaten Schlüssel und Schlüsselpassphrasen vorhanden sind, die Sie zum Einrichten Ihrer Bloomberg-SFTP-Website verwendet haben.
+
+1. Wechseln Sie <https://compliance.microsoft.com> zu, und klicken Sie **im** linken Navigations navi auf Datenconnectors.
+
+2. Klicken Sie **auf der Seite** Datenconnectors unter **Bloomberg-Nachricht** auf **Anzeigen**.
+
+3. Klicken Sie auf der Seite Produktbeschreibung für **Bloomberg-Nachricht** auf **Connector hinzufügen.**
+
+4. Klicken Sie **auf der Seite Nutzungsbedingungen** auf **Akzeptieren**.
+
+5. Klicken Sie **auf der Seite Anmeldeinformationen** für Inhaltsquelle hinzufügen auf Ich möchte private PGP- und **SSH-Schlüssel verwenden.**
+
+   ![Auswählen der Option zum Verwenden privater Schlüssel](../media/BloombergMessagePrivateKeysOption.png)
+
+6. Geben Sie unter Schritt 3 die erforderlichen Informationen in die folgenden Felder ein, und klicken Sie dann **auf Verbindung überprüfen.**
+
+      - **Name:** Der Name für den Connector. Sie muss in Ihrer Organisation eindeutig sein.
+
+      - **Firmencode:** Die ID für Ihre Organisation, die als Benutzername für die Bloomberg SFTP-Website verwendet wird.
+
+      - **Kennwort:** Das Kennwort für die Bloomberg-SFTP-Website Ihrer Organisation.
+
+      - **SFTP-URL:** Die URL für die Bloomberg-SFTP-Website (z. B. `sftp.bloomberg.com` ). Sie können auch eine IP-Adresse für diesen Wert verwenden.
+
+      - **SFTP-Port:** Die Portnummer für den Bloomberg SFTP-Standort. Der Connector verwendet diesen Port, um eine Verbindung mit dem SFTP-Standort herzustellen.
+
+      - **Privater PGP-Schlüssel:** Der private PGP-Schlüssel für die Bloomberg-SFTP-Website. Achten Sie darauf, den gesamten privaten Schlüsselwert, einschließlich der Anfangs- und Endzeilen des Schlüsselblocks, zu enthalten.
+
+      - **PGP-Schlüsselpassphrase:** Die Passphrase für den privaten PGP-Schlüssel.
+
+      - **Privater SSH-Schlüssel:** Der private SSH-Schlüssel für die Bloomberg-SFTP-Website. Achten Sie darauf, den gesamten privaten Schlüsselwert, einschließlich der Anfangs- und Endzeilen des Schlüsselblocks, zu enthalten.
+
+      - **SSH-Schlüsselpassphrase:** Die Passphrase für den privaten SSH-Schlüssel.
+
+7. Nachdem die Verbindung erfolgreich überprüft wurde, klicken Sie auf **Weiter**.
+
+8. Aktivieren Sie auf der Seite **Bloomberg Nachrichtenbenutzer zu Microsoft 365-Benutzern** zuordnen die automatische Benutzerzuordnung und stellen Sie bei Bedarf eine benutzerdefinierte Benutzerzuordnung zur Verfügung.
+
+   > [!NOTE]
+   > Der Connector importiert Nachrichtenelemente in das Postfach eines bestimmten Benutzers. Im Postfach des jeweiligen Benutzers wird ein neuer Ordner namens **BloombergMessage** erstellt, in den die Elemente importiert werden. Der Connector verwendet den Wert der *CorporateEmailAddress-Eigenschaft.* Jede Chatnachricht enthält diese Eigenschaft, und die Eigenschaft wird mit der E-Mail-Adresse jedes Teilnehmers der Chatnachricht gefüllt. Neben der automatischen Benutzerzuordnung mithilfe des Werts der *CorporateEmailAddress-Eigenschaft* können Sie auch benutzerdefinierte Zuordnungen definieren, indem Sie eine CSV-Zuordnungsdatei hochladen. Die Zuordnungsdatei sollte die Bloomberg-UUID und die entsprechende Microsoft 365-Postfachadresse für jeden Benutzer enthalten. Wenn Sie die automatische Benutzerzuordnung aktivieren und eine benutzerdefinierte Zuordnung bereitstellen, wird für jedes Nachrichtenelement zunächst die benutzerdefinierte Zuordnungsdatei vom Connector angezeigt. Wenn er keinen gültigen Microsoft 365-Benutzer findet, der der Bloomberg-UUID eines Benutzers entspricht, verwendet der Connector die *CorporateEmailAddress-Eigenschaft* des Chatelements. Wenn der Connector keinen gültigen Microsoft 365-Benutzer in der benutzerdefinierten Zuordnungsdatei oder der *CorporateEmailAddress-Eigenschaft* des Nachrichtenelements findet, wird das Element nicht importiert.
+
+9. Klicken **Sie auf Weiter,** überprüfen Sie Ihre Einstellungen, und klicken Sie dann auf **Fertig stellen,** um den Connector zu erstellen.
+
+10. Wechseln Sie zur **Seite Datenconnectors,** um den Fortschritt des Importvorgangs für den neuen Connector zu sehen. Klicken Sie auf den Connector, um die Flyoutseite mit Informationen zum Connector angezeigt zu werden.
 
 ## <a name="known-issues"></a>Bekannte Probleme
 

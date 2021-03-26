@@ -10,18 +10,18 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 description: In diesem Artikel werden die klassische Azure Active Directory-Klassifizierung und Vertraulichkeitsbezeichnungen behandelt.
-ms.openlocfilehash: 1be7e31ee4091e561f7eedb34b41958efc69a339
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 07bc09afb3e490961a8cc5a88857ec49dd962856
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926333"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221750"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Azure Active Directory-Klassifizierung und Vertraulichkeitsbezeichnungen für Microsoft 365-Gruppen
 
 In diesem Artikel werden die klassische Azure Active Directory-Klassifizierung und Vertraulichkeitsbezeichnungen behandelt.
 
-Vertraulichkeitsbezeichnungen werden von [diesen Diensten unterstützt.](./sensitivity-labels-teams-groups-sites.md#support-for-the-sensitivity-labels)
+Vertraulichkeitsbezeichnungen werden von [diesen Diensten unterstützt.](./sensitivity-labels-teams-groups-sites.md)
 
 Vollständige Informationen zu Vertraulichkeitsbezeichnungen finden Sie [unter Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md).
 
