@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79db436c2017c00e1b5d669797c5fb025f651a8a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 563dd2a5102ec66a1e953ae6ab30d56ea4f99036
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186233"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382928"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Partneranwendungen in Microsoft Defender for Endpoint 
 
@@ -98,6 +98,7 @@ Logo |Partnername   | Beschreibung
 ![Abbildung des Logos von Aruba ClearPass Policy Manager](images/aruba-logo.png) | [Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2127544) | Stellen Sie sicher, dass Defender for Endpoint auf jedem Endpunkt installiert und aktualisiert wird, bevor Sie den Zugriff auf das Netzwerk zulassen
 ![Abbildung des Blauen Hexagons für das Netzwerklogo](images/bluehexagon-logo.png) | [Blaues Hexagon für Netzwerk](https://go.microsoft.com/fwlink/?linkid=2104613) | Blue Hexagon hat die erste Echtzeit-Deep-Learning-Plattform der Branche für den Schutz vor Netzwerkbedrohungen entwickelt.
 ![Abbildung des CyberMDX-Logos](images/cybermdx-logo.png) | [CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620) | Cyber MDX integriert umfassende Sichtbarkeit, Bedrohungsverhütung und -repose in Ihre Defender for Endpoint-Umgebung
+![Abbildung des HYAS Protect-Logos](images/hyas-logo.png) | [HYAS Protect](https://go.microsoft.com/fwlink/?linkid=2156763) | HYAS Protect nutzt autorisierende Kenntnisse der Angreiferinfrastruktur, um Microsoft Defender for Endpoint-Endpunkte proaktiv vor Cyberangriffen zu schützen.
 ![Abbildung des Vectra Network Detection and Response (NDR)-Logos](images/vectra-logo.png) |[Vectra Network Detection and Response (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)| Vectra wendet ki-& Sicherheitsforschung an, um Cyberangriffe in Echtzeit zu erkennen und darauf zu reagieren
 
 

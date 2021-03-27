@@ -1,5 +1,5 @@
 ---
-title: Intune-basierte Bereitstellung für Microsoft Defender ATP für Mac
+title: Intune-basierte Bereitstellung für Microsoft Defender for Endpoint für Mac
 description: Installieren Sie Microsoft Defender für Endpoint für Mac mithilfe von Microsoft Intune.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 08cb16f6ae6e259d1bc92e7d2bed96f093a435f0
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: bd74f3a487de4febecb2086cb126c50b8432c342
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222513"
+ms.locfileid: "51379582"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>Intune-basierte Bereitstellung für Microsoft Defender for Endpoint für Mac
 
@@ -137,9 +137,11 @@ Sie benötigen keine spezielle Bereitstellung für ein Mac-Gerät, das über ein
 
 1. Bestätigen Sie die Geräteverwaltung.
 
+   ![Bildschirmfoto zur Geräteverwaltung bestätigen](images/mdatp-3-confirmdevicemgmt.png)
+
     Wählen **Sie Systemeinstellungen öffnen** aus, suchen Sie **in** der Liste nach Verwaltungsprofil, und wählen Sie **Genehmigen...** aus. Ihr Verwaltungsprofil wird als Überprüft **angezeigt:**
 
-    ![Screenshot des Verwaltungsprofils](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-4-managementprofile)
+    ![Screenshot des Verwaltungsprofils](images/mdatp-4-managementprofile.png)
 
 2. Wählen **Sie Weiter** aus, und schließen Sie die Registrierung ab.
 
@@ -148,7 +150,7 @@ Sie benötigen keine spezielle Bereitstellung für ein Mac-Gerät, das über ein
 3. Öffnen Sie in Intune **Geräte**  >  **verwalten**  >  **Alle Geräte**. Hier sehen Sie Ihr Gerät unter den aufgeführten:
 
    > [!div class="mx-imgBorder"]
-   > ![Screenshot "Geräte hinzufügen"](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-5-alldevices)
+   > ![Screenshot "Geräte hinzufügen"](images/mdatp-5-alldevices.png)
 
 ## <a name="approve-system-extensions"></a>Genehmigen von Systemerweiterungen
 
@@ -184,7 +186,7 @@ So genehmigen Sie die Systemerweiterungen:
 
 4. Wählen Sie **OK** aus.
 
-    ![Importieren einer Konfiguration aus einer Datei für benutzerdefiniertes Konfigurationsprofil](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
+    ![Importieren einer Konfiguration aus einer Datei für benutzerdefiniertes Konfigurationsprofil](images/mdatp-6-systemconfigurationprofiles.png)
 
 5. Wählen **Sie**  >  **Zuordnungen verwalten aus.** Wählen Sie **auf** der Registerkarte Include die Option **Allen Benutzern & Alle Geräte zuweisen aus.**
 
@@ -208,7 +210,7 @@ So genehmigen Sie die Systemerweiterungen:
 Sobald die Intune-Änderungen an die registrierten Geräte übertragen wurden, werden sie unter **Monitor**  >  **Device status aufgeführt:**
 
 > [!div class="mx-imgBorder"]
-> ![Anzeigen des Gerätestatus im Monitor](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade.png)
+> ![Anzeigen des Gerätestatus im Monitor](images/mdatp-7-devicestatusblade.png)
 
 ## <a name="publish-application"></a>Anwendung veröffentlichen
 
@@ -230,43 +232,43 @@ Sobald die Intune-Änderungen an die registrierten Geräte übertragen wurden, w
     > Wenn die von Intune hochgeladene Version niedriger als die Version auf dem Gerät ist, wird die niedrigere Version installiert, und Microsoft Defender for Endpoint wird degradiert. Dies kann zu einer nicht funktionsfähigen Anwendung führen. Weitere Informationen zur Produktaktualisierung finden Sie unter Bereitstellen von Updates für [Microsoft Defender for Endpoint für Mac.](mac-updates.md) Wenn Sie Microsoft Defender for Endpoint mit *der App-Version Ignorieren* auf **Nein** bereitgestellt haben, ändern Sie sie bitte in **Ja**. Wenn Microsoft Defender for Endpoint weiterhin nicht auf einem Clientgerät installiert werden kann, deinstallieren Sie Microsoft Defender for Endpoint, und drücken Sie die aktualisierte Richtlinie.
      
     > [!div class="mx-imgBorder"]
-    > ![Anzeigen von App-Informationen in App-Add](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-8-intuneappinfo)
+    > ![Anzeigen von App-Informationen in App-Add](images/mdatp-8-intuneappinfo.png)
 
 7. Wählen **Sie OK** und Hinzufügen **aus.**
 
     > [!div class="mx-imgBorder"]
-    > ![Gerätestatus im Fenster "Benachrichtigungen" angezeigt](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-9-intunepkginfo)
+    > ![Gerätestatus im Fenster "Benachrichtigungen" angezeigt](images/mdatp-9-intunepkginfo.png)
 
 8. Es kann einige Minuten dauern, bis das Paket hochgeladen wird. Wählen Sie anschließend das Paket aus der Liste aus, und wechseln Sie zu **Zuordnungen** und **Gruppe hinzufügen.**
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot von Client-Apps](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-10-clientapps)
+    > ![Screenshot von Client-Apps](images/mdatp-10-clientapps.png)
 
 9. Ändern **des Zuweisungstyps** in **Erforderlich**.
 
 10. Wählen **Sie Eingeschlossene Gruppen aus.** Wählen **Sie Diese App für alle Geräte erforderlich machen=Ja aus.** Wählen **Sie Gruppe auswählen aus, um eine** Gruppe hinzuzufügen und hinzuzufügen, die die Benutzer enthält, die Sie als Ziel auswählen möchten. Wählen Sie **OK** und **Speichern aus.**
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot der Intune-Zuweisungen](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-11-assignments)
+    > ![Screenshot der Intune-Zuweisungen](images/mdatp-11-assignments.png)
 
 11. Nach einiger Zeit wird die Anwendung auf allen registrierten Geräten veröffentlicht. Sie finden sie unter **Monitor**  >  **Device**, under **Device install status**:
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot des Intune-Gerätestatus](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-12-deviceinstall)
+    > ![Screenshot des Intune-Gerätestatus](images/mdatp-12-deviceinstall.png)
 
 ## <a name="verify-client-device-state"></a>Überprüfen des Clientgerätestatus
 
 1. Nachdem die Konfigurationsprofile auf Ihren Geräten bereitgestellt wurden, öffnen Sie **Systemeinstellungsprofile**  >  **auf** Ihrem Mac-Gerät.
 
-    ![Screenshot der Systemeinstellungen](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-13-systempreferences)<br/>
-    ![Screenshot der Systemeinstellungenprofile](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-14-systempreferencesprofiles)
+    ![Screenshot der Systemeinstellungen](images/mdatp-13-systempreferences.png)<br/>
+    ![Screenshot der Systemeinstellungenprofile](images/mdatp-14-systempreferencesprofiles.png)
 
-2. Stellen Sie sicher, dass die folgenden Konfigurationsprofile vorhanden und installiert sind. Das **Verwaltungsprofil** sollte das Intune-Systemprofil sein. _Wdav-config_ und _wdav-kext_ sind Systemkonfigurationsprofile, die in Intune hinzugefügt ![ wurden: Screenshot der Profile](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-15-managementprofileconfig)
+2. Stellen Sie sicher, dass die folgenden Konfigurationsprofile vorhanden und installiert sind. Das **Verwaltungsprofil** sollte das Intune-Systemprofil sein. _Wdav-config_ und _wdav-kext_ sind Systemkonfigurationsprofile, die in Intune hinzugefügt ![ wurden: Screenshot der Profile](images/mdatp-15-managementprofileconfig.png)
 
 3. Außerdem sollte das Microsoft Defender-Symbol in der oberen rechten Ecke angezeigt werden:
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Defender-Symbol im Screenshot der Statusleiste](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-icon-bar)
+    > ![Microsoft Defender-Symbol im Screenshot der Statusleiste](images/mdatp-icon-bar.png)
 
 ## <a name="troubleshooting"></a>Problembehandlung
 

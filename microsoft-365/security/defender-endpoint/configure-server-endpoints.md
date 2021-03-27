@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd92b44892b49a007316acb97296a44514db0578
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5013d94277eeba7d1df100d2850cb950fe2e0742
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51061703"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379349"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Onboarding von Windows-Servern in den Microsoft Defender for Endpoint-Dienst
 
@@ -80,7 +80,7 @@ Im Allgemeinen müssen Sie die folgenden Schritte ausführen:
 > Nach dem Onboarding des Geräts können Sie einen Erkennungstest ausführen, um zu überprüfen, ob es ordnungsgemäß in den Dienst integrierte ist. Weitere Informationen finden Sie unter [Ausführen eines Erkennungstests auf einem neu integrierten Defender for Endpoint-Endpunkt](run-detection-test.md).
 
 
-#### <a name="before-you-begin"></a>Vorbereitung 
+#### <a name="before-you-begin"></a>Bevor Sie beginnen 
 Führen Sie die folgenden Schritte aus, um die Onboardinganforderungen zu erfüllen:
 
  - Stellen Windows Server 2008 R2 SP1 oder Windows Server 2012 R2 sicher, dass Sie den folgenden Hotfix installieren:
@@ -89,7 +89,10 @@ Führen Sie die folgenden Schritte aus, um die Onboardinganforderungen zu erfül
  - Stellen Sie außerdem für Windows Server 2008 R2 SP1 sicher, dass Sie die folgenden Anforderungen erfüllen:
     - Installieren des monatlichen [Updaterollups vom Februar](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
     - Installieren von [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (oder höher) oder [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
-
+   
+   > [!NOTE]
+    > Wenn Sie Ihre Windows Server 2008 R2 SP1 mit SCCM verwalten, installiert der SCCM-Client-Agent .Net Framework 4.5.2. Sie müssen also nicht das .NET Framework 4.5 (oder höher) installieren.
+   
  - Für Windows Server 2008 R2 SP1 und Windows Server 2012 R2: Konfigurieren und Aktualisieren [von System Center Endpoint Protection-Clients](#configure-and-update-system-center-endpoint-protection-clients).
 
     > [!NOTE]

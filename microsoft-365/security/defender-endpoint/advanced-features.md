@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 059cfbf37c79ff9f99b5e46c8d4329c203aa9665
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 684025441c8400775f469515df1bcd0423d6460b
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215528"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394746"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurieren erweiterter Features in Defender for Endpoint
 
@@ -63,6 +63,14 @@ Weitere Informationen zu Rollenzuweisungen finden Sie unter [Erstellen und Verwa
 ## <a name="live-response-unsigned-script-execution"></a>Ausführung eines nicht signierten Skripts für Liveantworten
 
 Wenn Sie dieses Feature aktivieren, können Sie nicht signierte Skripts in einer Liveantwortsitzung ausführen.
+
+
+## <a name="restrict-correlation-to-within-scoped-device-groups"></a>Einschränken der Korrelation auf bereichsierte Gerätegruppen
+Wenn diese Einstellung aktiviert ist, werden Warnungen in separaten Vorfällen basierend auf ihrer Bereichsgerätegruppe korreliert. Standardmäßig erfolgt die Vorfallkorrelation über den gesamten Mandantenbereich.
+
+>[!NOTE]
+>Das Ändern dieser Einstellung wirkt sich nur auf zukünftige Warnungskorrelation aus.
+
 
 ## <a name="autoresolve-remediated-alerts"></a>Behebung von Warnungen durch Autoresolve
 
@@ -211,4 +219,4 @@ Nach dem Konfigurieren der [Sicherheitsrichtlinienverletzungsindikatoren](/micro
 ## <a name="related-topics"></a>Verwandte Themen
 
 - [Aktualisieren von Einstellungen für die Datenaufbewahrung](data-retention-settings.md)
-- [Konfigurieren von Benachrichtigungen](configure-email-notifications.md)
+- [Warnungsbenachrichtigungen konfigurieren](configure-email-notifications.md)

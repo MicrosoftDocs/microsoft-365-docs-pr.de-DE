@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f014eea240e3c8e52c424be36402c2826cb131d1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 363d80431c14bc550cba34850c85593163aea1b1
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063472"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382841"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -55,6 +55,13 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `SHA1` | string | SHA-1 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `SHA256` | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
 | `MD5` | string | MD5-Hash der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
+| `FileSize` | long | Größe der Datei in Bytes |
+| `ProcessVersionInfoCompanyName` | Zeichenfolge | Firmenname aus den Versionsinformationen des neu erstellten Prozesses |
+| `ProcessVersionInfoProductName` | Zeichenfolge | Produktname aus den Versionsinformationen des neu erstellten Prozesses |
+| `ProcessVersionInfoProductVersion` | Zeichenfolge | Produktversion aus den Versionsinformationen des neu erstellten Prozesses |
+| `ProcessVersionInfoInternalFileName` | Zeichenfolge | Interner Dateiname aus den Versionsinformationen des neu erstellten Prozesses |
+| `ProcessVersionInfoOriginalFileName` | Zeichenfolge | Originaldateiname aus den Versionsinformationen des neu erstellten Prozesses |
+| `ProcessVersionInfoFileDescription` | Zeichenfolge | Beschreibung aus den Versionsinformationen des neu erstellten Prozesses |
 | `ProcessId` | int | Prozess-ID (PID) des neu erstellten Prozesses |
 | `ProcessCommandLine` | Zeichenfolge | Befehlszeile zum Erstellen des neuen Prozesses |
 | `ProcessIntegrityLevel` | Zeichenfolge | Integritätsebene des neu erstellten Prozesses. Windows weist Prozesse Integritätsstufen basierend auf bestimmten Merkmalen zu, z. B. wenn sie aus einem heruntergeladenen Internet gestartet wurden. Diese Integritätsstufen beeinflussen Berechtigungen für Ressourcen |
@@ -79,6 +86,12 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `InitiatingProcessMD5` | string | MD5-Hash des Prozesses (Bilddatei), der das Ereignis initiiert hat |
 | `InitiatingProcessFileName` | Zeichenfolge | Name des Prozesses, der das Ereignis initiiert hat |
 | `InitiatingProcessFileSize` | long | Größe der Datei, die den prozessverantwortlichen Vorgang für das Ereignis führte |
+| `InitiatingProcessVersionInfoCompanyName` | Zeichenfolge | Firmenname aus den Versionsinformationen des Für das Ereignis verantwortlichen Prozesses (Bilddatei) |
+| `InitiatingProcessVersionInfoProductName` | Zeichenfolge | Produktname aus den Versionsinformationen des prozesses (Bilddatei), der für das Ereignis verantwortlich ist |
+| `InitiatingProcessVersionInfoProductVersion` | Zeichenfolge | Produktversion aus den Versionsinformationen des Prozesses (Bilddatei), die für das Ereignis verantwortlich ist |
+| `InitiatingProcessVersionInfoInternalFileName` | Zeichenfolge | Interner Dateiname aus den Versionsinformationen des Prozesses (Bilddatei), die für das Ereignis verantwortlich ist |
+| `InitiatingProcessVersionInfoOriginalFileName` | Zeichenfolge | Ursprünglicher Dateiname aus den Versionsinformationen des Prozesses (Bilddatei), der für das Ereignis verantwortlich ist |
+| `InitiatingProcessVersionInfoFileDescription` | Zeichenfolge | Beschreibung der Versionsinformationen des für das Ereignis verantwortlichen Prozesses (Bilddatei) |
 | `InitiatingProcessId` | int | Prozess-ID (PID) des Prozesses, der das Ereignis initiiert hat |
 | `InitiatingProcessCommandLine` | Zeichenfolge | Befehlszeile zum Ausführen des Prozesses, der das Ereignis initiiert hat |
 | `InitiatingProcessCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu dem der Prozess gestartet wurde, der das Ereignis initiiert hat |
@@ -86,10 +99,12 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `InitiatingProcessParentId` | int | Prozess-ID (PID) des übergeordneten Prozesses, der den prozess, der für das Ereignis verantwortlich war, |
 | `InitiatingProcessParentFileName` | Zeichenfolge | Name des übergeordneten Prozesses, der den prozessverantwortlichen Prozess für das Ereignis gezeitet hat |
 | `InitiatingProcessParentCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu der das übergeordnete Element des für das Ereignis verantwortlichen Prozesses gestartet wurde |
+| `InitiatingProcessSignerType` | Zeichenfolge | Typ des Datei signer des Prozesses (Bilddatei), der das Ereignis initiiert hat |
+| `InitiatingProcessSignatureStatus` | Zeichenfolge | Informationen zum Signaturstatus des Prozesses (Bilddatei), der das Ereignis initiiert hat |
 | `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte in Verbindung mit den Spalten DeviceName und Timestamp verwendet werden. |
 | `AppGuardContainerId` | Zeichenfolge | Id für den virtualisierten Container, der von Application Guard zum Isolieren von Browseraktivitäten verwendet wird |
 | `AdditionalFields` | Zeichenfolge | Zusätzliche Informationen zum Ereignis im JSON-Arrayformat |
-| `FileSize` | long | Größe der Datei in Bytes |
+
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

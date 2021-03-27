@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 247b8b8d8e18c8eecb09029581635ae907433f55
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: df96b57b9898dd973fab053918d763d1972bd50d
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068336"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382805"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Expertenschulungen für die erweiterte Suche erhalten
 
@@ -37,8 +37,7 @@ ms.locfileid: "51068336"
 
 Steigern Sie Ihre Kenntnisse der erweiterten Suche schnell mit _Tracking the adversary_, einer Webcastreihe für neue Sicherheitsanalysten und erfahrene Bedrohungssucher. Die Reihe führt Sie durch die Grundlagen bis hin zum Erstellen eigener anspruchsvoller Abfragen. Beginnen Sie mit dem ersten Video zu Grundlagen, oder wechseln Sie zu erweiterten Videos, die Ihrem Erfahrungsniveau angepasst sind.
 
-
-| Titel | Beschreibung | Uhr | Abfragen | 
+| Position | Beschreibung | Uhr | Abfragen | 
 |--|--|--|--|
 | Episode 1: KQL-Grundlagen | Diese Episode behandelt die Grundlagen der erweiterten Suche in Microsoft 365 Defender. Erfahren Sie mehr über verfügbare erweiterte Suchesdaten und grundlegende KQL-Syntax und Operatoren. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [CSL-Datei](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | Folge 2: Beitritte | Erfahren Sie mehr über Daten in der erweiterten Suche und darüber, wie Sie Tabellen miteinander verbinden. Erfahren Sie mehr über , , und joins, und verstehen Sie die Nuancen der `inner` `outer` `unique` `semi` standardmäßigen Kusto-Verknüpfung. `innerunique` | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [CSL-Datei](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
@@ -48,7 +47,7 @@ Steigern Sie Ihre Kenntnisse der erweiterten Suche schnell mit _Tracking the adv
 
 Erhalten Sie weitere Expertenschulungen mit *L33TSP3AK:* Erweiterte Suche in Microsoft 365 Defender , einer Webcastreihe für Analysten, die ihr technisches Wissen und ihre praktischen Fähigkeiten bei der Durchführung von Sicherheitsuntersuchungen mithilfe der erweiterten Suche in Microsoft 365 Defender erweitern wollen. 
 
-| Titel | Beschreibung | Uhr | Abfragen | 
+| Position | Beschreibung | Uhr | Abfragen | 
 |--|--|--|--|
 | Episode 1  | In dieser Folge lernen Sie verschiedene bewährte Methoden beim Ausführen erweiterter Suchabfragen. Zu den behandelten Themen gehören: Optimieren Ihrer Abfragen, Verwenden der erweiterten Suche nach Ransomware, Behandeln von JSON als dynamischen Typ und Arbeiten mit externen Datenoperatoren. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [CSL-Datei](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.csl)
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9699b5e2bc2e33b94795b7c23bd3f34f0383a8cc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 12a35a9f80da6b401495fcae7c245436b35b991c
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060812"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382889"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Erstellen und Verwalten von benutzerdefinierten Erkennungsregeln
 
@@ -116,12 +116,16 @@ Wählen Sie mit der Abfrage  im Abfrage-Editor Erkennungsregel erstellen aus, un
 - **Empfohlene Aktionen**– zusätzliche Aktionen, die Reaktionshelfer als Reaktion auf eine Warnung ausführen können
 
 #### <a name="rule-frequency"></a>Regelhäufigkeit
-Wenn Sie eine neue Regel speichern oder bearbeiten, wird sie ausgeführt und auf Übereinstimmungen aus den letzten 30 Tagen der Daten überprüft. Die Regel wird dann erneut in festen Intervallen ausgeführt, und es wird eine Lookbackdauer basierend auf der von Ihnen festgelegten Häufigkeit angewendet:
+Wenn Sie eine neue Regel speichern, wird sie ausgeführt und auf Übereinstimmungen aus den letzten 30 Tagen der Daten überprüft. Die Regel wird dann erneut in festen Intervallen ausgeführt, und es wird eine Lookbackdauer basierend auf der von Ihnen festgelegten Häufigkeit angewendet:
 
 - **Alle 24 Stunden**– wird alle 24 Stunden ausgeführt und überprüft Daten aus den letzten 30 Tagen
 - **Alle 12 Stunden**– wird alle 12 Stunden ausgeführt und überprüft Daten aus den letzten 24 Stunden
 - **Alle 3 Stunden**– wird alle 3 Stunden ausgeführt und überprüft Daten aus den letzten 6 Stunden
 - **Jede Stunde**– wird stündlich ausgeführt und überprüft Daten aus den letzten 2 Stunden
+
+Wenn Sie eine Regel bearbeiten, wird sie mit den angewendeten Änderungen in der nächsten Laufzeit ausgeführt, die entsprechend der von Ihnen festgelegten Häufigkeit geplant ist.
+
+
 
 >[!TIP]
 > Match the time filters in your query with the lookback duration. Ergebnisse außerhalb der Lookbackdauer werden ignoriert.  

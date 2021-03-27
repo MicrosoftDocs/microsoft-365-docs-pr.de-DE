@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft 365 Sicherheitsdokumentation
-summary: Informieren Sie sich über die robusten Sicherheitslösungen und -dienste in Microsoft 365 Security, damit Sie Ihr Unternehmen auf allen Angriffsflächen besser schützen können.
+title: Microsoft 365 Defender
+summary: Erfahren Sie mehr über die robusten Sicherheitslösungen in Microsoft 365 Defender, damit Sie Ihr Unternehmen besser über Angriffsoberflächen hinweg schützen können.
 metadata:
-  title: Microsoft 365 Sicherheitsdokumentation
-  description: Informieren Sie sich über die robusten Sicherheitslösungen und -dienste in Microsoft 365 Security, damit Sie Ihr Unternehmen auf allen Angriffsflächen besser schützen können
+  title: Microsoft 365 Defender-Dokumentation
+  description: Erfahren Sie mehr über die robusten Sicherheitslösungen in Microsoft 365 Defender, damit Sie Ihr Unternehmen besser über Angriffsoberflächen hinweg schützen können.
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: 1690dfc1c0a3a2afb32d4554ac4876c5f9928a2e
-  ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+  ms.openlocfilehash: 4187cc69acba30ae5cbcad093d91ec291b42bca5
+  ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 03/23/2021
-  ms.locfileid: "51062016"
+  ms.lasthandoff: 03/26/2021
+  ms.locfileid: "51382495"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -28,3 +28,23 @@ landingContent:
       url: ../defender/microsoft-365-defender.md
     - text: Microsoft 365 Security Center
       url: ../defender/overview-security-center.md
+- title: Microsoft 365 Security Center
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Microsoft 365 Security Center – Übersicht
+      url: overview-security-center.md
+    - text: Microsoft Defender für Endpunkt im Microsoft 365 Security Center
+      url: microsoft-365-security-center-mde.md
+    - text: Microsoft Defender für Office 365 im Microsoft 365 Security Center
+      url: ../defender/microsoft-365-security-center-mdo.md
+- title: Verwalten von Vorfällen und Benachrichtigungen
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Untersuchen von Vorfällen
+      url: investigate-incidents.md
+    - text: Automatische Untersuchung und Reaktion
+      url: m365d-autoir.md
+    - text: Auf der Suche nach Bedrohungen
+      url: advanced-hunting-overview.md

@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/20/2020
 ms.technology: mde
-ms.openlocfilehash: fc4c15d2e391176ed0b4420c13fb865674da0361
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 48b1f1bf9506acc8491887fca49295d5e4ccbd69
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163587"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382709"
 ---
 # <a name="create-custom-detection-rules"></a>Erstellen von benutzerdefinierten Erkennungsregeln
 
@@ -98,8 +98,8 @@ Beim Speichern wird sofort eine neue benutzerdefinierte Erkennungsregel ausgefü
 - **Alle 3 Stunden**– wird alle 3 Stunden ausgeführt und überprüft Daten aus den letzten 6 Stunden
 - **Jede Stunde**– wird stündlich ausgeführt und überprüft Daten aus den letzten 2 Stunden
 
-> [!IMPORTANT]
-> Beim Ändern einer Abfrage, die bereits als benutzerdefinierte Erkennung geplant ist, hat die nächste sofortige Ausführung ein Lookbackfenster von 30 Tagen, genau so, als würde eine neue Abfrage erstellt. Änderungen an einer großen Anzahl von Abfragen und mit Zeitfiltern, die über der standardmäßigen Nachschlagedauer für die ausgewählte Häufigkeit liegen, können sich auf den Gesamtkontingentverbrauch der erweiterten Suche auswirken und dazu führt, dass das tägliche Kontingent ausgeschöpft wird.
+Wenn Sie eine Regel bearbeiten, wird sie mit den angewendeten Änderungen in der nächsten Laufzeit ausgeführt, die entsprechend der von Ihnen festgelegten Häufigkeit geplant ist.
+
 
 > [!TIP]
 > Match the time filters in your query with the lookback duration. Ergebnisse außerhalb der Lookbackdauer werden ignoriert.

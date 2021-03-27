@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e511c12240512af772b3552f63ad9ed98ff105af
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a9ca0af0c522205309ffdcbfd1ac28638bd197c7
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062080"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382793"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -38,23 +38,24 @@ ms.locfileid: "51062080"
 Die `FileProfile()` Funktion ist eine Anreicherungsfunktion bei der erweiterten [Suche,](advanced-hunting-overview.md) die dateien, die von der Abfrage gefunden werden, die folgenden Daten hinzufügt.
 
 | Spalte | Datentyp | Beschreibung |
-|------------|-------------|-------------|
-| SHA1 | string | SHA-1 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
-| SHA256 | Zeichenfolge | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
-| MD5 | Zeichenfolge | MD5-Hash der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
-| FileSize | int | Größe der Datei in Bytes |
-| GlobalPrevalence | int | Anzahl der Instanzen der Entität, die von Microsoft global beobachtet werden |
-| GlobalFirstSeen | Datum/Uhrzeit | Datum und Uhrzeit, zu dem die Entität erstmals von Microsoft global beobachtet wurde |
-| GlobalLastSeen | Datum/Uhrzeit | Datum und Uhrzeit, zu dem die Entität zuletzt von Microsoft global beobachtet wurde |
-| Signer | Zeichenfolge | Informationen zum Signier der Datei |
-| Aussteller | Zeichenfolge | Informationen zur ausstellenden Zertifizierungsstelle |
-| SignerHash | Zeichenfolge | Eindeutiger Hashwert, der den Signier identifiziert |
-| IsCertificateValid | boolean | Gibt an, ob das zum Signieren der Datei verwendete Zertifikat gültig ist |
-| IsRootSignerMicrosoft | boolean | Gibt an, ob der Signier des Stammzertifikats Microsoft ist |
-| IsExecutable | boolean | Gibt an, ob es sich bei der Datei um eine portable ausführbare Datei (Portable Executable, PE) handelt |
-| ThreatName | Zeichenfolge | Erkennungsname für gefundene Schadsoftware oder andere Bedrohungen |
-| Publisher | Zeichenfolge | Name der Organisation, die die Datei veröffentlicht hat |
-| SoftwareName | string | Name des Softwareprodukts |
+|------------|---------------|-------------|
+| `SHA1` | string | SHA-1 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
+| `SHA256` | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
+| `MD5` | Zeichenfolge | MD5-Hash der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
+| `FileSize` | int | Größe der Datei in Bytes |
+| `GlobalPrevalence` | int | Anzahl der Instanzen der Entität, die von Microsoft global beobachtet werden |
+| `GlobalFirstSeen` | Datum/Uhrzeit | Datum und Uhrzeit, zu dem die Entität erstmals von Microsoft global beobachtet wurde |
+| `GlobalLastSeen` | Datum/Uhrzeit | Datum und Uhrzeit, zu dem die Entität zuletzt von Microsoft global beobachtet wurde |
+| `Signer` | Zeichenfolge | Informationen zum Signier der Datei |
+| `Issuer` | Zeichenfolge | Informationen zur ausstellenden Zertifizierungsstelle |
+| `SignerHash` | Zeichenfolge | Eindeutiger Hashwert, der den Signier identifiziert |
+| `IsCertificateValid` | boolean | Gibt an, ob das zum Signieren der Datei verwendete Zertifikat gültig ist |
+| `IsRootSignerMicrosoft` | boolean | Gibt an, ob der Signier des Stammzertifikats Microsoft ist |
+| `SignatureState` | Zeichenfolge | Status der Dateisignatur: SignedValid - die Datei ist mit einer gültigen Signatur signiert, SignedInvalid - die Datei ist signiert, aber das Zertifikat ist ungültig, Unsigned - die Datei ist nicht signiert, unbekannt - Informationen zur Datei können nicht abgerufen werden
+| `IsExecutable` | boolean | Gibt an, ob es sich bei der Datei um eine portable ausführbare Datei (Portable Executable, PE) handelt |
+| `ThreatName` | Zeichenfolge | Erkennungsname für gefundene Schadsoftware oder andere Bedrohungen |
+| `Publisher` | Zeichenfolge | Name der Organisation, die die Datei veröffentlicht hat |
+| `SoftwareName` | string | Name des Softwareprodukts |
 
 ## <a name="syntax"></a>Syntax
 

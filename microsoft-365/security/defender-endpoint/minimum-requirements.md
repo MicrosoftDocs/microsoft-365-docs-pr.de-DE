@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c6afa48fcee80c0b8fb7ed0563264932566b6321
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6a8e1091490cb9f3fe1eedadec0b76a56ada936e
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185791"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379490"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Mindestanforderungen für Microsoft Defender for Endpoint
 
@@ -31,12 +31,10 @@ ms.locfileid: "51185791"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 
 Es gibt einige Mindestanforderungen für das Onboarding von Geräten in den Dienst. Erfahren Sie mehr über die Lizenzierungs-, Hardware- und Softwareanforderungen sowie andere Konfigurationseinstellungen, um Geräte in den Dienst zu integrieren.
-
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink).
 
 > [!TIP]
 > - Erfahren Sie mehr über die neuesten Verbesserungen in Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
@@ -80,7 +78,6 @@ Eine ausführliche Vergleichstabelle des Vergleichs der kommerziellen Windows 10
 Der Zugriff auf Defender for Endpoint erfolgt über einen Browser, der die folgenden Browser unterstützt:
 
 - Microsoft Edge
-- Internet Explorer, Version 11
 - Google Chrome
 
 > [!NOTE]
@@ -121,11 +118,12 @@ Die Hardwareanforderungen für Defender for Endpoint auf Geräten sind für die 
 
 ### <a name="other-supported-operating-systems"></a>Andere unterstützte Betriebssysteme
 - Android
+- iOS
 - Linux
 - macOS
 
 > [!NOTE]
-> Sie müssen die genauen Linux-Verteilungen und -Versionen von Android und macOS kennen, die mit Defender for Endpoint kompatibel sind, damit die Integration funktioniert.
+> Sie müssen die Linux-Verteilungen und -Versionen von Android, iOS und macOS bestätigen, die Sie mit Defender for Endpoint kompatibel sind, damit die Integration funktioniert.
 
 
 
@@ -164,7 +162,7 @@ Standardmäßig ist dieser Dienst aktiviert. Es ist eine bewährte Methode, um s
    ![Ergebnis des sc-Abfragebefehls für diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
 
-Sie müssen festlegen, dass der Dienst  automatisch gestartet wird, START_TYPE nicht auf **AUTO_START.**
+Sie müssen festlegen, dass der Dienst automatisch gestartet wird, **START_TYPE** nicht auf **AUTO_START.**
 
 
 **Verwenden Sie die Befehlszeile, um den Windows 10-Diagnosedatendienst so zu legen, dass er automatisch gestartet wird:**
@@ -191,7 +189,7 @@ Sie müssen festlegen, dass der Dienst  automatisch gestartet wird, START_TYPE n
 #### <a name="internet-connectivity"></a>Internetverbindung
 Die Internetverbindung auf Geräten ist entweder direkt oder über Proxy erforderlich.
 
-Der Defender for Endpoint-Sensor kann eine tägliche durchschnittliche Bandbreite von 5 MB nutzen, um mit dem Defender for Endpoint-Clouddienst zu kommunizieren und Cyberdaten zu melden. One-off-Aktivitäten wie Dateiuploads und Untersuchungspaketsammlungen sind in dieser täglichen durchschnittlichen Bandbreite nicht enthalten.
+Der Defender for Endpoint-Sensor kann eine tägliche durchschnittliche Bandbreite von 5 MB verwenden, um mit dem Defender for Endpoint-Clouddienst zu kommunizieren und Cyberdaten zu melden. Einmalaktivitäten wie Dateiuploads und Untersuchungspaketsammlungen sind in dieser täglichen durchschnittlichen Bandbreite nicht enthalten.
 
 Weitere Informationen zu zusätzlichen Proxykonfigurationseinstellungen finden Sie unter [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 

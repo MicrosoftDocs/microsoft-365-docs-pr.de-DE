@@ -1,6 +1,6 @@
 ---
-title: Behandeln von Problemen mit der Kernelerweiterung in Microsoft Defender ATP für Mac
-description: Behandeln von Problemen mit kernelerweiterungsbezogenen Problemen in Microsoft Defender ATP für Mac.
+title: Behandeln von Problemen mit der Kernelerweiterung in Microsoft Defender for Endpoint für Mac
+description: Behandeln von Problemen mit kernelerweiterungsbezogenen Problemen in Microsoft Defender for Endpoint für Mac.
 keywords: microsoft, defender, atp, mac, kernel, extension
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bdd5c6309a19863339b00e846c1c2670fc4f261b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 877cc619d3ba048cdf6ecc8149f073461d9eac8e
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187601"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379508"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-for-mac"></a>Behandeln von Problemen mit der Kernelerweiterung in Microsoft Defender for Endpoint für Mac
 
@@ -44,9 +44,9 @@ Ab macOS High Sierra (10.13) muss macOS alle Kernelerweiterungen explizit genehm
 
 Wenn Sie die Kernelerweiterung während der Bereitstellung/Installation von Microsoft Defender for Endpoint für Mac nicht genehmigt haben, zeigt die Anwendung ein Banner an, in dem Sie aufgefordert werden, sie zu aktivieren:
 
-   ![Deaktivierter Screenshot von RTP](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-32-main-app-fix)
+   ![Deaktivierter Screenshot von RTP](images/mdatp-32-main-app-fix.png)
 
-Sie können auch ```mdatp health``` ausführen. Es wird berichtet, ob der Echtzeitschutz aktiviert ist, aber nicht verfügbar ist. Dies bedeutet, dass die Kernelerweiterung nicht für die Ausführung auf Ihrem Gerät genehmigt ist.
+Sie können auch ```mdatp health``` ausführen. Es wird berichtet, ob der Echtzeitschutz aktiviert ist, aber nicht verfügbar ist. Dies bedeutet, dass die Kernelerweiterung nicht für die Ausführung auf Ihrem Gerät genehmigt wurde.
 
 ```bash
 mdatp health
@@ -73,7 +73,7 @@ Wenn seit der Installation des Produkts weniger als 30 Minuten vergangen sind, n
 
 Wenn diese Aufforderung nicht angezeigt wird, bedeutet dies, dass 30 oder mehr Minuten vergangen sind und die Kernelerweiterung weiterhin nicht genehmigt wurde, um auf Ihrem Gerät ausgeführt zu werden:
 
-![Sicherheits- und Datenschutzfenster nach ablaufend abgelaufener Eingabeaufforderung](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-33-securityprivacysettings-noprompt)
+![Sicherheits- und Datenschutzfenster nach ablaufend abgelaufener Eingabeaufforderung](images/mdatp-33-securityprivacysettings-noprompt.png)
 
 In diesem Fall müssen Sie die folgenden Schritte ausführen, um den Genehmigungsfluss erneut auszulösen.
 

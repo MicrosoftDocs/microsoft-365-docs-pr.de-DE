@@ -1,0 +1,60 @@
+### YamlMime:Landing
+title: Verwalten von Domänen
+summary: Sehen Sie sich diese Ressourcen mit aufgaben gemeinsamen Domänen an, oder sehen Sie sich den Navigationsbereich auf der linken Seite an, um eine vollständige Liste zu erhalten.
+metadata:
+  title: Verwalten von Domänen
+  description: Verwalten sie alle Aspekte von Domänen in Microsoft 365.
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: pebaum
+  ms.author: pebaum
+  ms.date: 03/25/2021
+  localization_priority: Priority
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: 2ca0bc79cc70ce738603dcdb7cb09ea1d238e4c9
+  ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 03/26/2021
+  ms.locfileid: "51379709"
+landingContent:
+- title: Verwalten von Domänen
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Häufig gestellte Fragen zu Domänen (FAQ)
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq
+  - linkListType: how-to-guide
+    links:
+    - text: Domäne hinzufügen
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+    - text: Kaufen eines Domänennamens
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name
+    - text: Entfernen einer Domäne
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/remove-a-domain
+- title: Übertragen einer Domäne
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Übertragen einer Domäne von Microsoft auf einen anderen Host
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host
+- title: Microsoft 365-Pilotprojekt
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Microsoft 365-Pilot aus benutzerdefinierter Domäne
+      url: https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain
+- title: Host-spezifische Anweisungen
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Nameserver bei jedem DNS-Host ändern
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar
+    - text: Erstellen von DNS-Einträgen bei jedem DNS-Host
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider
+- title: Problembehandlung
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Suchen und Beheben von Problemen, nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-and-fix-issues

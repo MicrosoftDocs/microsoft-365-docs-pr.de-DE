@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ce77d55ece955fbf97b5c9f32859514b55acb5a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: fb0cffb9716b2d0940e816dc69217486fd51a21d
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187649"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379337"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-for-mac"></a>Konfigurieren und Überprüfen von Ausschlüssen für Microsoft Defender for Endpoint für Mac
 
@@ -55,7 +55,7 @@ In der folgenden Tabelle sind die Ausschlusstypen aufgeführt, die von Defender 
 Ausschluss | Definition | Beispiele
 ---|---|---
 Dateierweiterung | Alle Dateien mit der Erweiterung, überall auf dem Computer | `.test`
-File | Eine bestimmte Datei, die durch den vollständigen Pfad identifiziert wird | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+Datei | Eine bestimmte Datei, die durch den vollständigen Pfad identifiziert wird | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 Ordner | Alle Dateien unter dem angegebenen Ordner (rekursiv) | `/var/log/`<br/>`/var/*/`
 Prozess | Ein bestimmter Prozess (entweder durch den vollständigen Pfad oder Dateinamen angegeben) und alle dateien, die von diesem geöffnet werden | `/bin/cat`<br/>`cat`<br/>`c?t`
 
@@ -79,7 +79,7 @@ Weitere Informationen zum Konfigurieren von Ausschlüssen aus JAMF, Intune oder 
 
 Öffnen Sie die Defender for Endpoint-Anwendung, und navigieren Sie zu Einstellungen **verwalten** Hinzufügen oder Entfernen von  >  **Ausschluss...**, wie im folgenden Screenshot gezeigt:
 
-![Screenshot "Verwalten von Ausschlüssen"](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-37-exclusions)
+![Screenshot "Verwalten von Ausschlüssen"](images/mdatp-37-exclusions.png)
 
 Wählen Sie den Typ des Ausschlusses aus, den Sie hinzufügen möchten, und folgen Sie den Eingabeaufforderungen.
 

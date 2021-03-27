@@ -20,22 +20,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 48958726528d3db00d705f5d7db9a3315bf52213
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4926b6e742be273637150ebe2fa700e5d4e6f54e
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063551"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382877"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Gilt für:**
 - Microsoft 365 Defender
-
-
 
 Die verschiedenen Geräteereignisse oder -tabellen im Schema für die erweiterte Suche enthalten Informationen zu verschiedenen Ereignistypen, einschließlich Ereignissen, die durch Sicherheitssteuerelemente ausgelöst werden, z. B. Windows Defender Antivirus- und `DeviceEvents` Exploitschutz. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
@@ -56,6 +53,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `SHA1` | string | SHA-1 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
 | `SHA256` | string | SHA-256 der Datei, auf die die aufgezeichnete Aktion angewendet wurde. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
 | `MD5` | string | MD5-Hash der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
+| `FileSize` | long | Größe der Datei in Bytes |
 | `AccountDomain` | Zeichenfolge | Domäne des Kontos |
 | `AccountName` | Zeichenfolge | Benutzername des Kontos |
 | `AccountSid` | Zeichenfolge | Security Identifier (SID) des Kontos |
@@ -75,28 +73,33 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `LocalPort` | int | TCP-Port auf dem lokalen Computer, der während der Kommunikation verwendet wird |
 | `FileOriginUrl` | Zeichenfolge | URL, von der die Datei heruntergeladen wurde |
 | `FileOriginIP` | Zeichenfolge | IP-Adresse, von der die Datei heruntergeladen wurde |
-| `AdditionalFields` | Zeichenfolge | Zusätzliche Informationen zum Ereignis im JSON-Arrayformat |
-| `InitiatingProcessFileSize` | long | Größe der Datei, die den prozessverantwortlichen Vorgang für das Ereignis führte |
-| `FileSize` | long | Größe der Datei in Bytes |
 | `InitiatingProcessSHA1` | Zeichenfolge | SHA-1 des Prozesses (Bilddatei), der das Ereignis initiiert hat |
 | `InitiatingProcessSHA256` | Zeichenfolge | SHA-256 des Prozesses (Bilddatei), der das Ereignis initiiert hat. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
-| `InitiatingProcessFileName` | string | Name des Prozesses, der das Ereignis initiiert hat |
+| `InitiatingProcessMD5` | string | MD5-Hash des Prozesses (Bilddatei), der das Ereignis initiiert hat |
+| `InitiatingProcessFileName` | Zeichenfolge | Name des Prozesses, der das Ereignis initiiert hat |
+| `InitiatingProcessFileSize` | long | Größe der Datei, die den prozessverantwortlichen Vorgang für das Ereignis führte |
 | `InitiatingProcessFolderPath` | Zeichenfolge | Ordner mit dem Prozess (Bilddatei), der das Ereignis initiiert hat |
 | `InitiatingProcessId` | int | Prozess-ID (PID) des Prozesses, der das Ereignis initiiert hat |
 | `InitiatingProcessCommandLine` | Zeichenfolge | Befehlszeile zum Ausführen des Prozesses, der das Ereignis initiiert hat |
 | `InitiatingProcessCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu dem der Prozess gestartet wurde, der das Ereignis initiiert hat |
-| `InitiatingProcessParentId` | int | Prozess-ID (PID) des übergeordneten Prozesses, der den prozess, der für das Ereignis verantwortlich war, |
-| `InitiatingProcessParentFileName` | Zeichenfolge | Name des übergeordneten Prozesses, der den prozessverantwortlichen Prozess für das Ereignis gezeitet hat |
-| `InitiatingProcessParentCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu der das übergeordnete Element des für das Ereignis verantwortlichen Prozesses gestartet wurde |
-| `InitiatingProcessMD5` | Zeichenfolge | MD5-Hash des Prozesses (Bilddatei), der das Ereignis initiiert hat |
 | `InitiatingProcessAccountDomain` | Zeichenfolge | Domäne des Kontos, mit dem der Prozess für das Ereignis verantwortlich war |
 | `InitiatingProcessAccountName` | Zeichenfolge | Benutzername des Kontos, das den prozess für das Ereignis verantwortlich führte |
 | `InitiatingProcessAccountSid` | Zeichenfolge | Security Identifier (SID) des Kontos, das den für das Ereignis verantwortlichen Prozess führte |
 | `InitiatingProcessAccountUpn` | Zeichenfolge | Benutzerprinzipalname (UPN) des Kontos, das den für das Ereignis verantwortlichen Prozess führte |
 | `InitiatingProcessAccountObjectId` | Zeichenfolge | Azure AD-Objekt-ID des Benutzerkontos, das den für das Ereignis verantwortlichen Prozess ausgeführt hat |
+| `InitiatingProcessVersionInfoCompanyName` | Zeichenfolge | Firmenname aus den Versionsinformationen des Für das Ereignis verantwortlichen Prozesses (Bilddatei) |
+| `InitiatingProcessVersionInfoProductName` | Zeichenfolge | Produktname aus den Versionsinformationen des prozesses (Bilddatei), der für das Ereignis verantwortlich ist |
+| `InitiatingProcessVersionInfoProductVersion` | Zeichenfolge | Produktversion aus den Versionsinformationen des Prozesses (Bilddatei), die für das Ereignis verantwortlich ist |
+|` InitiatingProcessVersionInfoInternalFileName` | Zeichenfolge | Interner Dateiname aus den Versionsinformationen des Prozesses (Bilddatei), die für das Ereignis verantwortlich ist |
+| `InitiatingProcessVersionInfoOriginalFileName` | Zeichenfolge | Ursprünglicher Dateiname aus den Versionsinformationen des Prozesses (Bilddatei), der für das Ereignis verantwortlich ist |
+| `InitiatingProcessVersionInfoFileDescription` | Zeichenfolge | Beschreibung der Versionsinformationen des für das Ereignis verantwortlichen Prozesses (Bilddatei) |
+| `InitiatingProcessParentId` | int | Prozess-ID (PID) des übergeordneten Prozesses, der den prozess, der für das Ereignis verantwortlich war, |
+| `InitiatingProcessParentFileName` | Zeichenfolge | Name des übergeordneten Prozesses, der den prozessverantwortlichen Prozess für das Ereignis gezeitet hat |
+| `InitiatingProcessParentCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu der das übergeordnete Element des für das Ereignis verantwortlichen Prozesses gestartet wurde |
 | `InitiatingProcessLogonId` | Zeichenfolge | Bezeichner für eine Anmeldesitzung des Prozesses, der das Ereignis initiiert hat. Dieser Bezeichner ist auf demselben Computer nur zwischen Neustarts eindeutig |
 | `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte in Verbindung mit den Spalten DeviceName und Timestamp verwendet werden. |
 | `AppGuardContainerId` | Zeichenfolge | Id für den virtualisierten Container, der von Application Guard zum Isolieren von Browseraktivitäten verwendet wird |
+| `AdditionalFields` | Zeichenfolge | Zusätzliche Informationen zum Ereignis im JSON-Arrayformat |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

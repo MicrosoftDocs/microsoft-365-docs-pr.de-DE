@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1c8a3f3ab91add9e057c4661677997e658f42386
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9a3806d3e2bff66e04f4adb50217fc1c6f267364
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063511"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382603"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -46,8 +46,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
 | `DeviceId` | string | Eindeutiger Bezeichner für den Computer im Dienst |
 | `DeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Computers |
-| `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte in Verbindung mit den Spalten DeviceName und Timestamp verwendet werden. |
-| `NetworkAdapterName` | Zeichenfolge | Name des Netzwerkadapters |
+| `NetworkAdapterName` | string | Name des Netzwerkadapters |
 | `MacAddress` | Zeichenfolge | MAC-Adresse des Netzwerkadapters |
 | `NetworkAdapterType` | Zeichenfolge | Netzwerkadaptertyp. Mögliche Werte finden Sie in [dieser Enumeration.](/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
 | `NetworkAdapterStatus` | Zeichenfolge | Betriebsstatus des Netzwerkadapters. Mögliche Werte finden Sie in [dieser Enumeration.](/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
@@ -58,6 +57,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `IPv6Dhcp` | Zeichenfolge | IPv6-Adresse des DHCP-Servers |
 | `DefaultGateways` | Zeichenfolge | Standardgatewayadressen im JSON-Arrayformat |
 | `IPAddresses` | Zeichenfolge | JSON-Array, das alle dem Adapter zugewiesenen IP-Adressen sowie das entsprechende Subnetzpräfix und den entsprechenden IP-Adressraum enthält, z. B. öffentlich, privat oder link-lokal |
+| `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte in Verbindung mit den Spalten DeviceName und Timestamp verwendet werden. |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

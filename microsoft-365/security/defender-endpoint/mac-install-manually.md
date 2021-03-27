@@ -1,6 +1,6 @@
 ---
-title: Manuelle Bereitstellung für Microsoft Defender ATP für macOS
-description: Installieren Sie Microsoft Defender ATP für macOS manuell über die Befehlszeile.
+title: Manuelle Bereitstellung für Microsoft Defender for Endpoint für macOS
+description: Installieren Sie Microsoft Defender for Endpoint für macOS manuell über die Befehlszeile.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b2629eb3d13e6eb908644dfcade46a7ac2768637
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 044a3d48dc350a5663a27ab3c16c2da7a5e3f3f1
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187445"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379444"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-for-macos"></a>Manuelle Bereitstellung für Microsoft Defender for Endpoint für macOS
 
@@ -64,20 +64,20 @@ Zum Abschließen dieses Vorgangs müssen Sie über Administratorrechte auf dem G
 
 1. Navigieren Sie zum heruntergeladenen wdav.pkg in Finder, und öffnen Sie es.
 
-    ![Screenshot der App-Installation1](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-28-appinstall)
+    ![Screenshot der App-Installation1](images/mdatp-28-appinstall.png)
 
 2. Wählen **Sie Weiter** aus, stimmen Sie den Lizenzbedingungen zu, und geben Sie das Kennwort ein, wenn Sie dazu aufgefordert werden.
 
-    ![Screenshot der App-Installation2](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-29-appinstalllogin)
+    ![Screenshot der App-Installation2](images/mdatp-29-appinstalllogin.png)
 
    > [!IMPORTANT]
    > Sie werden aufgefordert, die Installation eines Treibers von Microsoft zu erlauben (entweder "Systemerweiterung blockiert" oder "Installation ist gesperrt" oder beides. Der Treiber muss installiert werden dürfen.
 
-   ![Screenshot der App-Installation3](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-30-systemextension)
+   ![Screenshot der App-Installation3](images/mdatp-30-systemextension.png)
 
 3. Wählen **Sie Open Security Preferences** oder Open System **Preferences > Security & Privacy aus.** Wählen Sie **Zulassen** aus:
 
-    ![Screenshot des Sicherheits- und Datenschutzfensters](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-31-securityprivacysettings)
+    ![Screenshot des Sicherheits- und Datenschutzfensters](images/mdatp-31-securityprivacysettings.png)
 
    Die Installation wird fortgesetzt.
 
@@ -97,7 +97,7 @@ Zum Abschließen dieses Vorgangs müssen Sie über Administratorrechte auf dem G
 
 2. Wählen **Sie Weiter** aus, stimmen Sie den Lizenzbedingungen zu, und geben Sie das Kennwort ein, wenn Sie dazu aufgefordert werden.
 
-3. Am Ende des Installationsprozesses werden Sie zur Genehmigung der vom Produkt verwendeten Systemerweiterungen heraufgestuft. Wählen **Sie Sicherheitseinstellungen öffnen aus.**
+3. Am Ende des Installationsprozesses werden Sie heraufgestuft, um die vom Produkt verwendeten Systemerweiterungen zu genehmigen. Wählen **Sie Sicherheitseinstellungen öffnen aus.**
 
     ![Systemerweiterungsgenehmigung](images/big-sur-install-2.png)
 
@@ -139,7 +139,7 @@ Zum Abschließen dieses Vorgangs müssen Sie über Administratorrechte auf dem G
 
 Nach der Installation wird das Microsoft Defender-Symbol in der macOS-Statusleiste in der oberen rechten Ecke angezeigt.
 
-   ![Microsoft Defender-Symbol im Screenshot der Statusleiste](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-icon-bar)
+   ![Microsoft Defender-Symbol im Screenshot der Statusleiste](images/mdatp-icon-bar.png)
    
 
 ## <a name="how-to-allow-full-disk-access"></a>Zulassen des vollständigen Festplattenzugriffs

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 10009edab33d04ca01da9459c394634d0622cf3d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 62989eca2fd00757ea02d03bf24a0049135d97b0
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063543"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382865"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -63,11 +63,19 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `InitiatingProcessAccountName` | Zeichenfolge | Benutzername des Kontos, das den prozess für das Ereignis verantwortlich führte |
 | `InitiatingProcessAccountSid` | Zeichenfolge | Security Identifier (SID) des Kontos, das den für das Ereignis verantwortlichen Prozess führte |
 | `InitiatingProcessAccountUpn` | Zeichenfolge | Benutzerprinzipalname (UPN) des Kontos, das den für das Ereignis verantwortlichen Prozess führte |
+| `InitiatingProcessAccountObjectId` | Zeichenfolge | Azure AD-Objekt-ID des Benutzerkontos, das den für das Ereignis verantwortlichen Prozess ausgeführt hat |
 | `InitiatingProcessMD5` | Zeichenfolge | MD5-Hash des Prozesses (Bilddatei), der das Ereignis initiiert hat |
 | `InitiatingProcessSHA1` | Zeichenfolge | SHA-1 des Prozesses (Bilddatei), der das Ereignis initiiert hat |
 | `InitiatingProcessSHA256` | Zeichenfolge | SHA-256 des Prozesses (Bilddatei), der das Ereignis initiiert hat. Dieses Feld wird in der Regel nicht ausgefüllt – Verwenden Sie die SHA1-Spalte, wenn verfügbar. |
 | `InitiatingProcessFolderPath` | string | Ordner mit dem Prozess (Bilddatei), der das Ereignis initiiert hat |
 | `InitiatingProcessFileName` | Zeichenfolge | Name des Prozesses, der das Ereignis initiiert hat |
+| `InitiatingProcessFileSize` | long | Größe des Prozesses (Bilddatei), der das Ereignis initiiert hat |
+| `InitiatingProcessVersionInfoCompanyName` | Zeichenfolge | Firmenname aus den Versionsinformationen des Für das Ereignis verantwortlichen Prozesses (Bilddatei) |
+| `InitiatingProcessVersionInfoProductName` | Zeichenfolge | Produktname aus den Versionsinformationen des prozesses (Bilddatei), der für das Ereignis verantwortlich ist |
+|` InitiatingProcessVersionInfoProductVersion` | Zeichenfolge | Produktversion aus den Versionsinformationen des Prozesses (Bilddatei), die für das Ereignis verantwortlich ist |
+|` InitiatingProcessVersionInfoInternalFileName` | Zeichenfolge | Interner Dateiname aus den Versionsinformationen des Prozesses (Bilddatei), die für das Ereignis verantwortlich ist |
+| `InitiatingProcessVersionInfoOriginalFileName` | Zeichenfolge | Ursprünglicher Dateiname aus den Versionsinformationen des Prozesses (Bilddatei), der für das Ereignis verantwortlich ist |
+| `InitiatingProcessVersionInfoFileDescription` | Zeichenfolge | Beschreibung der Versionsinformationen des für das Ereignis verantwortlichen Prozesses (Bilddatei) |
 | `InitiatingProcessId` | int | Prozess-ID (PID) des Prozesses, der das Ereignis initiiert hat |
 | `InitiatingProcessCommandLine` | Zeichenfolge | Befehlszeile zum Ausführen des Prozesses, der das Ereignis initiiert hat |
 | `InitiatingProcessCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu dem der Prozess gestartet wurde, der das Ereignis initiiert hat |
@@ -77,20 +85,19 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `InitiatingProcessParentFileName` | Zeichenfolge | Name des übergeordneten Prozesses, der den prozessverantwortlichen Prozess für das Ereignis gezeitet hat |
 | `InitiatingProcessParentCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu der das übergeordnete Element des für das Ereignis verantwortlichen Prozesses gestartet wurde |
 | `RequestProtocol` | Zeichenfolge | Netzwerkprotokoll, das ggf. zum Initiieren der Aktivität verwendet wird: Unbekannt, Lokal, SMB oder NFS |
-| `ShareName` | Zeichenfolge | Name des freigegebenen Ordners, der die Datei enthält |
 | `RequestSourceIP` | Zeichenfolge | IPv4- oder IPv6-Adresse des Remotegeräts, das die Aktivität initiiert hat |
 | `RequestSourcePort` | Zeichenfolge | Quellport auf dem Remotegerät, das die Aktivität initiiert hat |
 | `RequestAccountName` | Zeichenfolge | Benutzername des Kontos, das zum Remoteinitiieren der Aktivität verwendet wird |
 | `RequestAccountDomain` | Zeichenfolge | Domäne des Kontos, das zum Remoteinitiieren der Aktivität verwendet wird |
 | `RequestAccountSid` | Zeichenfolge | Security Identifier (SID) des Kontos, das zum Remoteinitiieren der Aktivität verwendet wird |
-| `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte in Verbindung mit den Spalten DeviceName und Timestamp verwendet werden. |
-| `AppGuardContainerId` | Zeichenfolge | Id für den virtualisierten Container, der von Application Guard zum Isolieren von Browseraktivitäten verwendet wird |
-| `AdditionalFields` | Zeichenfolge | Zusätzliche Informationen zur Entität oder zum Ereignis |
+| `ShareName` | Zeichenfolge | Name des freigegebenen Ordners, der die Datei enthält |
 | `InitiatingProcessFileSize` | long | Größe der Datei, die den prozessverantwortlichen Vorgang für das Ereignis führte |
 | `SensitivityLabel` | Zeichenfolge | Bezeichnung, die auf E-Mails, Dateien oder andere Inhalte angewendet wird, um sie zum Schutz von Informationen zu klassifizieren |
 | `SensitivitySubLabel` | Zeichenfolge | Sublabel, das auf eine E-Mail, Datei oder andere Inhalte angewendet wird, um sie zum Schutz von Informationen zu klassifizieren; Vertraulichkeitsunterbezeichnungen werden unter Vertraulichkeitsbezeichnungen gruppieren, aber unabhängig behandelt |
 | `IsAzureInfoProtectionApplied` | boolean | Gibt an, ob die Datei von Azure Information Protection verschlüsselt wird |
-
+| `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte in Verbindung mit den Spalten DeviceName und Timestamp verwendet werden. |
+| `AppGuardContainerId` | Zeichenfolge | Id für den virtualisierten Container, der von Application Guard zum Isolieren von Browseraktivitäten verwendet wird |
+| `AdditionalFields` | Zeichenfolge | Zusätzliche Informationen zur Entität oder zum Ereignis |
 >[!NOTE]
 > Dateihashinformationen werden immer angezeigt, wenn sie verfügbar sind. Es gibt jedoch mehrere mögliche Gründe, warum ein SHA1, SHA256 oder MD5 nicht berechnet werden kann. Die Datei kann sich beispielsweise im Remotespeicher befinden, durch einen anderen Prozess gesperrt, komprimiert oder als virtuell markiert sein. In diesen Szenarien werden die Dateihashinformationen leer angezeigt.
 

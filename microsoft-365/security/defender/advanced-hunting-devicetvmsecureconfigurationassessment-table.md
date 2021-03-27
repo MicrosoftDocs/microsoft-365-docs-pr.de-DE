@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cf37fe2aeac193c6b45f55fd5f5c850470ba6da4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3d991bc5e78fc7b33e20df1f86471a0969b7345f
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063463"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382595"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -54,7 +54,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `IsCompliant` | Boolescher Wert | Gibt an, ob die Konfiguration oder Richtlinie ordnungsgemäß konfiguriert ist |
 | `IsApplicable` | boolean | Gibt an, ob die Konfiguration oder Richtlinie auf das Gerät angewendet wird |
 | `Context` | Zeichenfolge | Zusätzliche kontextbezogene Informationen zur Konfiguration oder Richtlinie |
-| `IsExpectedUserImpactCompliant` | boolean | Gibt an, ob sich Benutzer auswirken, wenn die Konfiguration oder Richtlinie angewendet wird. |
+| `IsExpectedUserImpact` | boolean | Gibt an, ob sich Benutzer auswirken, wenn die Konfiguration oder Richtlinie angewendet wird. |
 
 ## <a name="related-topics"></a>Verwandte Themen
 

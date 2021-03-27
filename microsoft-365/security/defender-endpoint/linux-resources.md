@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7196053ffef3dffc3c737d0df26a5d12bdfe8a4c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: ab5400a197a1f0ac61c8b298a06165d217f44fd1
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187757"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394734"
 ---
 # <a name="resources"></a>Ressourcen
 
@@ -105,6 +105,7 @@ In der folgenden Tabelle sind Befehle für einige der gängigsten Szenarien aufg
 |Gruppe                 |Szenario                                                |Befehl                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |Konfiguration         |Aktivieren/Deaktivieren des Echtzeitschutzes                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
+|Konfiguration         |Aktivieren/Deaktivieren der Verhaltensüberwachung                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
 |Konfiguration         |Aktivieren/Deaktivieren des Cloudschutzes                            |`mdatp config cloud --value [enabled\|disabled]`                       |
 |Konfiguration         |Aktivieren/Deaktivieren der Produktdiagnose                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
 |Konfiguration         |Aktivieren/Deaktivieren der automatischen Beispielübermittlung                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |

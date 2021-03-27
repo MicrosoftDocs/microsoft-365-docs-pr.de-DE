@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 83a56a74ff949b23843417942923d2b4b810b4ee
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1386809778edeb92521a8656e9ece78591a682a4
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185927"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382901"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-for-mac"></a>Datenschutz für Microsoft Defender for Endpoint für Mac
 
@@ -157,6 +157,18 @@ Die folgenden Felder werden gesammelt:
 
 #### <a name="product-and-service-performance-data-events"></a>Ereignisse im Zusammenhang mit Produkt- und Dienstleistungsdaten
 
+**Unerwartete Anwendungsbeendung (Absturz)**
+
+Sammelt Systeminformationen und den Status einer Anwendung, wenn eine Anwendung unerwartet beendet wird.
+
+Die folgenden Felder werden gesammelt:
+
+| Feld                          | Beschreibung |
+| ------------------------------ | ----------- |
+| v1_crash_count                 | Anzahl der Stündlichabstürzen des V1-Modulprozesses auf dem Clientcomputer  |
+| v2_crash_count                 | Anzahl der Stündlichabstürzen des V2-Modulprozesses auf dem Clientcomputer  |
+| EDR_crash_count                | Anzahl der Stündlichabstürzen des EDR-Prozesses auf dem Clientcomputer        |
+
 **Kernelerweiterungsstatistiken**
 
 Die folgenden Felder werden gesammelt:
@@ -236,7 +248,7 @@ Die folgenden Felder werden gesammelt:
 | sha256           | SHA256-ID des Supportprotokolls. |
 | size             | Größe des Supportprotokolls. |
 | original_path    | Pfad zum Supportprotokoll (immer unter */Library/Application Support/Microsoft/Defender/wdavdiag/*). |
-| format           | Format des Supportprotokolls. |
+| Format           | Format des Supportprotokolls. |
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Abgeschlossener Bericht zum Hochladen des Diagnoseprotokolls
 

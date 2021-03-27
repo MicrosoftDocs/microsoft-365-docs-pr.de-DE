@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 90e65c57321fa05a62bc94f4f56d92062d0826a1
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 18fbc13614753ae57856a124d76bbad682ab88e5
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186701"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379355"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-for-ios-features"></a>Konfigurieren von Microsoft Defender for Endpoint für iOS-Features
 
@@ -102,3 +102,9 @@ Mit Defender for Endpoint für iOS können Administratoren auch benutzerdefinier
 ## <a name="report-unsafe-site"></a>Unsichere Website melden
 
 Phishingwebsites geben sich als vertrauenswürdige Websites aus, um Ihre persönlichen oder finanziellen Informationen zu erhalten. Besuchen Sie [die Seite Feedback zum Netzwerkschutz](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) bereitstellen, wenn Sie eine Website melden möchten, bei der es sich um eine Phishingwebsite handelt.
+
+## <a name="battery-consumption-issues-on-ios-when-microsoft-defender-for-endpoint-is-installed"></a>Probleme mit dem Akkuverbrauch unter iOS bei der Installation von Microsoft Defender for Endpoint
+
+Der Akkuverbrauch einer App wird von Apple basierend auf einer Vielzahl von Faktoren wie CPU- und Netzwerknutzung berechnet. Microsoft Defender for Endpoint verwendet ein lokales /Loop-Back-VPN im Hintergrund, um den Webdatenverkehr auf schädliche Websites oder Verbindungen zu überprüfen. Netzwerkpakete von jeder App durchgehen diese Prüfung, was dazu führt, dass der Akkuverbrauch von Microsoft Defender for Endpoint ungenau berechnet wird. Dies gibt dem Benutzer einen falschen Eindruck. Der tatsächliche Akkuverbrauch von Microsoft Defender for Endpoint ist geringer als der, der auf der Seite Akkueinstellungen auf dem Gerät angezeigt wird. Dies basiert auf durchgeführten Tests, die mit der Microsoft Defender for Endpoint-App durchgeführt wurden, um den Akkuverbrauch zu verstehen.
+
+Auch das verwendete VPN ist ein lokales VPN und im Gegensatz zu herkömmlichen VPNs wird der Netzwerkdatenverkehr nicht außerhalb des Geräts gesendet.
