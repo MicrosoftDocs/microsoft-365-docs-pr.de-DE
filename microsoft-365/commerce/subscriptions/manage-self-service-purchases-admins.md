@@ -10,26 +10,24 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Administratoren können erfahren, wie Sie Self-Service-Käufe von Benutzern in ihrer Organisation verwalten.
-ms.openlocfilehash: 2ce12b7dba4e765745a94fa10f4ba15e7013e3c8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: febf0ee470e735a454dc7a9e747de5025c7a4a51
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920180"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398181"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Self-Service-Einkäufe (Administrator) verwalten
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Als Administrator können Sie Self-Service-Käufe von Personen in Ihrer Organisation sehen. Der Produktname, der Käufername, die erworbenen Abonnements, das Ablaufdatum, der Einkaufspreis und die zugewiesenen Benutzer werden für jeden Self-Service-Kauf angezeigt. Falls von Ihrer Organisation erforderlich, können Sie den Self-Service-Kauf pro Produktbasis über PowerShell deaktivieren. Sie verfügen über dieselben Datenverwaltungs- und Zugriffsrichtlinien über Produkte, die über den Self-Service-Kauf oder zentral erworben wurden.
 
@@ -37,13 +35,49 @@ Sie können auch steuern, ob Benutzer in Ihrer Organisation Self-Service-Käufe 
 
 ## <a name="view-self-service-subscriptions"></a>Anzeigen von Self-Service-Abonnements
 
+::: moniker range="o365-worldwide"
+
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">im Admin Center</a>zur Seite **Abrechnung** > **Ihre Produkte.**
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zur Seite **Abrechnung** > **Ihre Produkte.**
+
+::: moniker-end
+
 2. Wählen Sie **auf der** Registerkarte Produkte das Filtersymbol aus, und wählen Sie **dann Self-Service aus.**
 3. Wenn Sie weitere Details zu einem Abonnement anzeigen möchten, wählen Sie eines aus der Liste aus.
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Anzeigen von Lizenzen für ein Self-Service-Kaufabonnement
 
-1. Wechseln Sie im Admin Center zur Seite  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Abrechnungslizenzen.</a>
+> [!NOTE]
+> Als Administrator können Sie keine Lizenzen für ein Self-Service-Kaufabonnement zuweisen oder zuweisen, das von einem Benutzer in Ihrer Organisation erworben wurde. Sie können [ein Self-Service-Kaufabonnement übernehmen](#take-over-a-self-service-purchase-subscription)und dann Lizenzen zuweisen oder zuweisen.
+
+::: moniker range="o365-worldwide"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">im Admin Center</a>zur Seite  > **Abrechnungslizenzen.**
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zur Seite  > **Abrechnungslizenzen.**
+
+::: moniker-end
+
 2. Wählen Sie das Filtersymbol aus, und wählen Sie **dann Self-Service aus.**
 3. Wählen Sie ein Produkt aus, um Den Personen zugewiesene Lizenzen zu sehen.
     > [!NOTE]
@@ -67,7 +101,24 @@ Weitere Informationen finden Sie unter [Use AllowSelfServicePurchase for the MS 
 
 Sie können vorhandene Lizenzen zuweisen oder zusätzliche Abonnements über vorhandene Vereinbarungen für Benutzer erwerben, die Self-Service-Käufen zugewiesen sind. Nachdem Sie diese zentral erworbenen Lizenzen zugewiesen haben, können Sie anfordern, dass Käufer ihre vorhandenen Abonnements kündigen.
 
-1. Wechseln Sie im Admin  Center zur Seite \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Abrechnungskaufdienste.</a>
+::: moniker range="o365-worldwide"
+
+1. Wechseln Sie im Admin  Center zur Seite > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Abrechnungskaufdienste.</a>
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">im Admin Center</a>zur Seite  > **Abrechnungskaufdienste.**
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zur Seite  > **Abrechnungskaufdienste.**
+
+::: moniker-end
+
 2. Suchen Sie das Produkt, das Sie kaufen möchten, und wählen Sie dann **Kaufen aus.**
 3. Führen Sie die verbleibenden Schritte aus, um Ihren Kauf zu abschließen.
 4. Führen Sie die Schritte in [View who has licenses for a self-service purchased subscription](#view-who-has-licenses-for-a-self-service-purchase-subscription) aus, um eine Liste von Benutzern zu exportieren, auf die im nächsten Schritt verwiesen werden soll.
@@ -88,7 +139,24 @@ Wenn Sie Benutzer in ein anderes Abonnement verschieben, wird das alte Abonnemen
 > [!NOTE]
 > Sie müssen über eine verfügbare Lizenz für jeden Benutzer verfügen, in den Sie das Abonnement verschieben, zu dem Sie Benutzer verschieben.
 
+::: moniker range="o365-worldwide"
+
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">im Admin Center</a>zur Seite **Abrechnung** > **Ihre Produkte.**
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zur Seite **Abrechnung** > **Ihre Produkte.**
+
+::: moniker-end
+
 2. Wählen Sie **auf der** Registerkarte Produkte das Filtersymbol aus, und wählen Sie **dann Self-Service aus.**
 3. Wählen Sie das Abonnement aus, das Sie übernehmen möchten.
 4. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Abonnements und** Einstellungen die Option Kontrolle über dieses Abonnement **übernehmen aus.**
@@ -102,7 +170,24 @@ Wenn Sie Benutzer in ein anderes Abonnement verschieben, wird das alte Abonnemen
 
 Wenn Sie ein Self-Service-Kaufabonnement kündigen, verlieren Benutzer mit Lizenzen den Zugriff auf das Produkt. Der Benutzer, der das Self-Service-Kaufabonnement ursprünglich erworben hat, erhält eine E-Mail mit der Nachricht, dass das Abonnement gekündigt wurde.
 
+::: moniker range="o365-worldwide"
+
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">im Admin Center</a>zur Seite **Abrechnung** > **Ihre Produkte.**
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zur Seite **Abrechnung** > **Ihre Produkte.**
+
+::: moniker-end
+
 2. Wählen Sie **auf der** Registerkarte Produkte das Filtersymbol aus, und wählen Sie **dann Self-Service aus.**
 3. Wählen Sie das Abonnement aus, das Sie kündigen möchten.
 4. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Abonnements und** Einstellungen die Option Kontrolle über dieses Abonnement **übernehmen aus.**

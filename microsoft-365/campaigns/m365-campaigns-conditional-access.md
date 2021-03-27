@@ -1,11 +1,11 @@
 ---
-title: Einrichten von Richtlinien für bedingten Zugriff
+title: Aktivieren von Sicherheitseinstellungen
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,62 +23,65 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie MFA benötigen und Richtlinien für bedingten Zugriff für Microsoft 365 Business einrichten.
-ms.openlocfilehash: dcb79ed060dd15fd288cdcfb9e3739a788f5fbc2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Erfahren Sie, wie Sicherheitseinstellungen Ihre Organisation vor identitätsbezogenen Angriffen schützen können, indem sie vorkonfigurierte Sicherheitseinstellungen bereitstellen.
+ms.openlocfilehash: ea36ba45af26a767b08ee1e75931dca54dacea64
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912186"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398291"
 ---
-# <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Mehrstufige Authentifizierung erforderlich und Einrichten von Richtlinien für bedingten Zugriff
+# <a name="turn-on-security-defaults"></a>Aktivieren von Sicherheitseinstellungen
 
-Sie schützen den Zugriff auf Ihre Daten mit mehrstufiger Authentifizierung und Richtlinien für bedingten Zugriff. Diese erhöhen die Sicherheit erheblich. Microsoft bietet eine Reihe von Basisrichtlinien für bedingten Zugriff, die für alle Kunden empfohlen werden. Basisrichtlinien sind eine Reihe vordefinierter Richtlinien, die Organisationen vor vielen häufigen Angriffen schützen. Diese häufigen Angriffe können Kennwort-Spray, Wiedergabe und Phishing umfassen.
+Sicherheitseinstellungen schützen Ihre Organisation vor identitätsbezogenen Angriffen, indem sie vorkonfigurierte Sicherheitseinstellungen bereitstellen, die Microsoft im Auftrag Ihrer Organisation verwaltet. Zu diesen Einstellungen gehört das Aktivieren der mehrstufigen Authentifizierung (MFA) für alle Administratoren und Benutzerkonten. Für die meisten Organisationen bieten Sicherheitseinstellungen ein hohes Maß an zusätzlicher Anmeldesicherheit.
 
-Für diese Richtlinien müssen Administratoren und Benutzer unter bestimmten Bedingungen eine zweite Authentifizierungsform (als mehrstufige Authentifizierung oder MFA bezeichnet) eingeben. Wenn beispielsweise ein Benutzer in Ihrer Organisation versucht, sich von einem anderen Land oder von einem unbekannten Gerät bei Microsoft 365 zu anmelden, kann die Anmeldung als riskant angesehen werden. Der Benutzer muss eine zusätzliche Form der Authentifizierung (z. B. einen Fingerabdruck oder code) bereitstellen, um seine Identität nachweisen zu können.
+Weitere Informationen zu Sicherheitseinstellungen und den von ihnen erzwungenen Richtlinien finden Sie unter [Was sind Sicherheitseinstellungen?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
-Derzeit umfassen die Basisrichtlinien die folgenden Richtlinien:
+Wenn Ihr Abonnement am oder nach dem 22. Oktober 2019 erstellt wurde, wurden Sicherheitseinstellungen möglicherweise automatisch aktiviert, damit Sie Ihre Einstellungen überprüfen können, um dies &mdash; zu bestätigen.
 
-- Einrichten im Microsoft 365 Admin Center:
-  - **MFA für Administratoren** erforderlich: Erfordert die mehrstufige Authentifizierung für die privilegiertesten Administratorrollen, einschließlich des globalen Administrators.
-  - **Endbenutzerschutz:** Erfordert eine mehrstufige Authentifizierung für Benutzer nur, wenn eine Anmeldung riskant ist. 
-- Einrichten im Azure Active Directory-Portal:
-  - **Blockieren der** Legacyauthentifizierung: Ältere Client-Apps und einige neue Apps verwenden keine neueren, sichereren Authentifizierungsprotokolle. Diese älteren Apps können Richtlinien für bedingten Zugriff umgehen und nicht autorisierten Zugriff auf Ihre Umgebung erhalten. Diese Richtlinie blockiert den Zugriff von Clients, die bedingten Zugriff nicht unterstützen. 
-  - **MFA für Die Dienstverwaltung** erforderlich: Erfordert die mehrstufige Authentifizierung für den Zugriff auf Verwaltungstools, einschließlich des Azure-Portals (in dem Sie Basisrichtlinien konfigurieren).
+So aktivieren Sie Sicherheitseinstellungen in Ihrem Azure Active Directory (Azure AD) oder überprüfen Sie, ob sie bereits aktiviert sind:
 
-Es wird empfohlen, alle diese Basisrichtlinien zu aktivieren. Nachdem diese Richtlinien aktiviert wurden, werden Administratoren und Benutzer aufgefordert, sich für die mehrstufige Azure AD-Authentifizierung zu registrieren.
+1. Melden Sie sich beim <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a> mit globalen Administratoranmeldeinformationen an.
 
-Weitere Informationen zu diesen Richtlinien finden Sie unter [Was sind Basisrichtlinien?](/azure/active-directory/conditional-access/concept-baseline-protection)
+2. Wählen Sie im linken Bereich Alle anzeigen **aus,** und wählen Sie dann unter **Admin Center** **Azure Active Directory aus.**
 
-## <a name="require-mfa"></a>MFA erforderlich
+3. Wählen Sie im linken Bereich des **Azure Active Directory Admin Center** Azure Active Directory **aus.**
 
-So fordern Sie, dass sich alle Benutzer mit einer zweiten Form von ID anmelden:
+4. Wählen Sie im linken Menü des Dashboards im Abschnitt **Verwalten** die Option **Eigenschaften aus.**
 
-1. Wechseln Sie zum Admin Center <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> unter, und wählen Sie **Setup aus.**
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Screenshot des Azure Active Directory Admin Center mit dem Speicherort des Menüelements Eigenschaften.":::
 
-2. Wählen Sie auf der Seite Setup **in der** Option **Anmeldung sicherer** machen die Option Anzeigen aus.
+5. Wählen Sie unten auf der **Seite Eigenschaften** die Option **Sicherheitseinstellungen verwalten aus.**
 
-    ![Machen Sie die Anmeldung sicherer.](../media/setupmfa.png)
-3. Wählen Sie auf der Seite Anmeldung sicherer machen die Option **Erste Schritte aus.**
-
-4. Aktivieren Sie im Bereich Verstärkung der Anmeldesicherheit  die Kontrollkästchen neben Mehrstufige Authentifizierung für Administratoren erfordern und Benutzer für die mehrstufige Authentifizierung registrieren und den Zugriff blockieren, wenn ein Risiko **erkannt wird.**
-    Schließen Sie das [Notfall-](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) oder "Unterbrechungsglas"-Administratorkonto aus der MFA-Anforderung im Feld Benutzer **suchen** aus.
-
-    ![Stärken Sie die Sicherheitsseite für einsing-In.](../media/requiremfa.png)
-
-5. Klicken **Sie unten auf** der Seite auf Richtlinie erstellen.
-
-## <a name="set-up-baseline-policies"></a>Einrichten von Basisrichtlinien
-
-1. Wechseln Sie zum [Azure-Portal,](https://portal.azure.com)und navigieren Sie dann zu **Bedingter Azure Active** \> **Directory-Sicherheitszugriff,** \>  um eine neue Richtlinie **zu erstellen.**
-
-Sehen Sie sich die folgenden spezifischen Anweisungen für jede Richtlinie an: <br>
-    - [MFA für Administratoren erforderlich](/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
-    - [MFA für Benutzer erforderlich](/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
-    - [Blockieren der Legacyauthentifizierung](/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
-    - [MFA für die Dienstverwaltung erforderlich](/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+6. Im rechten Bereich wird die Einstellung **Sicherheitseinstellungen aktivieren** angezeigt. Wenn **Ja** ausgewählt ist, sind die Sicherheitseinstellungen bereits aktiviert, und es sind keine weiteren Aktionen erforderlich. Wenn Sicherheitseinstellungen derzeit nicht aktiviert sind, wählen Sie Ja aus, um sie zu aktivieren, und wählen Sie dann **Speichern aus.** 
 
 > [!NOTE]
-> Vorschaurichtlinien sind nicht mehr vorhanden, und Benutzer müssen eigene Richtlinien erstellen.
+> Wenn Sie Richtlinien für bedingten Zugriff verwendet haben, müssen Sie sie deaktivieren, bevor Sie Sicherheitseinstellungen verwenden.
+>
+> Sie können entweder Sicherheitseinstellungen oder Richtlinien für bedingten Zugriff verwenden, aber Sie können beide nicht gleichzeitig verwenden.
 
-Sie können zusätzliche Richtlinien einrichten, z. B. die Anforderung genehmigter Client-Apps. Weitere Informationen finden Sie in der [Dokumentation zum bedingten Zugriff](/azure/active-directory/conditional-access/).
+## <a name="consider-using-conditional-access"></a>Erwägen sie die Verwendung von bedingten Zugriff
+
+Wenn Ihre Organisation komplexe Sicherheitsanforderungen hat oder Sie eine genauere Kontrolle über Ihre Sicherheitsrichtlinien benötigen, sollten Sie die Verwendung von bedingtem Zugriff anstelle von Sicherheitseinstellungen in Betracht ziehen, um eine ähnliche oder höhere Sicherheitslage zu erreichen. 
+
+Mit bedingten Zugriff können Sie Richtlinien erstellen und definieren, die auf Anmeldeereignisse reagieren und zusätzliche Aktionen anfordern, bevor einem Benutzer Zugriff auf eine Anwendung oder einen Dienst gewährt wird. Richtlinien für bedingten Zugriff können präzise und spezifisch sein und es Benutzern ermöglichen, jederzeit produktiv zu sein, aber auch Ihre Organisation zu schützen.
+
+Sicherheitseinstellungen sind für alle Kunden verfügbar, während für bedingten Zugriff eine Lizenz für einen der folgenden Pläne erforderlich ist:
+
+- Azure Active Directory Premium P1 oder P2
+- Microsoft 365 Business Premium
+- Microsoft 365 E3 oder E5
+- Enterprise Mobility & Security E3 oder E5
+
+Wenn Sie bedingten Zugriff verwenden möchten, um Richtlinien zu konfigurieren, die den durch Sicherheitseinstellungen aktivierten Richtlinien entsprechen, lesen Sie die folgenden schrittweisen Anleitungen:
+
+- [MFA für Administratoren erforderlich](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+- [MFA für die Azure-Verwaltung erforderlich](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
+- [Blockieren von Legacy-Authentifizierung](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+- [MFA für alle Nutzer erforderlich](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+- [Azure AD MFA-Registrierung erforderlich](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) – Erfordert Azure AD Identity Protection, das Teil von Azure Active Directory Premium P2 ist
+
+Weitere Informationen zum bedingten Zugriff finden Sie unter [Was ist bedingter Zugriff?](/azure/active-directory/conditional-access/overview) Weitere Informationen zum Erstellen von Richtlinien für bedingten Zugriff finden Sie unter [Create a Conditional Access policy](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy).
+
+> [!NOTE]
+> Wenn Sie über einen Plan oder eine Lizenz verfügen, die bedingten Zugriff bietet, aber noch keine Richtlinien für bedingten Zugriff erstellt haben, können Sie Sicherheitseinstellungen verwenden. Sie müssen jedoch Sicherheitseinstellungen deaktivieren, bevor Sie Richtlinien für bedingten Zugriff verwenden können.

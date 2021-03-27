@@ -2,10 +2,10 @@
 title: Schützen Ihrer Administratorkonten
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Erfahren Sie, wie Sie Ihre Administratorkonten einrichten und schützen.
-ms.openlocfilehash: ec5b971ba4f1fdc8834e10ddf90ff219f763f805
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d687407fad1cec5da49dbc33ffeb84366f1c309
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912174"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398241"
 ---
 # <a name="protect-your-administrator-accounts"></a>Schützen Ihrer Administratorkonten
 
@@ -76,12 +76,11 @@ So erstellen Sie ein neues Benutzerkonto:
 3. Erweitern Sie den **Abschnitt Rollen,** und wählen **Sie Benutzer (kein Administratorzugriff) aus.**
 4. Verschieben Sie **im Abschnitt** Produktlizenzen die Auswahl für **Microsoft 365 Business** auf **Ein**.
 
-## <a name="register-each-of-these-accounts-for-multi-factor-authentication"></a>Registrieren jedes dieser Konten für die mehrstufige Authentifizierung
+## <a name="turn-on-security-defaults"></a>Aktivieren von Sicherheitseinstellungen
 
-Stellen Sie sicher, dass diese Konten die [mehrstufige Authentifizierung verwenden.](m365-campaigns-multifactor-authenication.md)
+Sicherheitseinstellungen schützen Ihre Organisation vor identitätsbezogenen Angriffen, indem sie vorkonfigurierte Sicherheitseinstellungen bereitstellen, die Microsoft im Auftrag Ihrer Organisation verwaltet. Zu diesen Einstellungen gehört das Aktivieren der mehrstufigen Authentifizierung (MFA) für alle Administratoren und Benutzerkonten. Weitere Informationen zu Sicherheitseinstellungen und deren Aktivierung finden Sie unter [Turn on security defaults](m365-campaigns-conditional-access.md).
 
 ## <a name="additional-recommendations"></a>Zusätzliche Empfehlungen
 
-- Stellen Sie sicher, dass Administratorkonten auch für die mehrstufige Authentifizierung eingerichtet sind. Wir zeigen Ihnen, wie Sie dies tun können, unter [Configure conditional access policies](m365-campaigns-conditional-access.md).
 - Schließen Sie vor der Verwendung von Administratorkonten alle nicht zusammenhängenden Browsersitzungen und Apps, einschließlich persönlicher E-Mail-Konten. Sie können sie auch in privaten oder inkognito-Browserfenstern verwenden.
 - Achten Sie nach Abschluss der Administratoraufgaben darauf, sich von der Browsersitzung abmelden.

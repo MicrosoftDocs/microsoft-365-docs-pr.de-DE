@@ -2,10 +2,10 @@
 title: Einrichten einer mehrstufigen Authentifizierung
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten der mehrstufigen Authentifizierung.
-ms.openlocfilehash: 35f96bc41eba9a903bdb3d377a523e2b82e8c428
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 2a0c8b8fb8451d3d8868c493ad5e1f65adc30b6c
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044432"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398205"
 ---
 # <a name="set-up-multifactor-authentication"></a>Einrichten einer mehrstufigen Authentifizierung
 
-Die mehrstufige Authentifizierung bietet mehr Sicherheit für Ihr Unternehmen. Nachdem Ihr Administrator MFA benötigt hat, können Sie die Microsoft Authenticator-App so einrichten, dass Sie sich sicher mit Ihrem Telefon bei wichtigen Apps anmelden können. 
+Die mehrstufige Authentifizierung bietet mehr Sicherheit für Ihr Unternehmen. Nachdem Ihr Administrator MFA verwendet haben, können Sie die Microsoft Authenticator-App einrichten, damit Sie sich sicher mit Ihrem Smartphone bei wichtigen Apps anmelden können. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
@@ -41,4 +41,4 @@ Weitere Informationen finden [Sie unter Einrichten der mehrstufigen Authentifizi
 
 ## <a name="use-the-outlook-app-in-your-devices"></a>Verwenden der Outlook-App auf Ihren Geräten
 
-Nachdem Ihr Administrator die Verwendung von MFA erfordert hat und Sie eine Authentisierungs-App als zweite Authentifizierungsmethode eingerichtet haben, wird empfohlen, die Outlook-App zu installieren und nur für den Zugriff auf Ihre Microsoft 365-E-Mails zu verwenden. Informationen [zum Installieren von Office-Apps,](../business/set-up-mobile-devices.md) einschließlich Outlook, auf Ihrem Telefon finden Sie unter "Einrichten mobiler Geräte".
+Nachdem Ihr Administrator MFA verwendet haben und Sie eine Authentisierungs-App als zweite Form der Authentifizierung eingerichtet haben, wird empfohlen, die Outlook-App zu installieren und nur für den Zugriff auf Ihre Microsoft 365-E-Mails zu verwenden. Informationen [zum Installieren von Office-Apps,](../business/set-up-mobile-devices.md) einschließlich Outlook, auf Ihrem Smartphone finden Sie unter Einrichten mobiler Geräte.

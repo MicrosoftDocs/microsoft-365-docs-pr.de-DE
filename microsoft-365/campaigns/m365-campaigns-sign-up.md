@@ -2,10 +2,10 @@
 title: Registrieren für Microsoft 365 für Kampagnen
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Schritt-für-Schritt-Anmeldung für Microsoft 365 für Kampagnen. Schützen Sie Ihre Kampagne vor Cybersicherheitsbedrohungen für E-Mails, Daten und Kommunikation.
-ms.openlocfilehash: 454fe7190c12d1dc9ddf0434ba0dcee322ab7cef
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: deaf91850ae5dbd3ed2a4637e0eb157d29215992
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912162"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398217"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Registrieren für Microsoft 365 für Kampagnen 
 
@@ -49,7 +49,7 @@ Hier erfahren Sie, wie Sie Ihre Anmeldung für Microsoft 365 für Kampagnen absc
 1. Wählen Sie in Ihrer Einladung zu Microsoft 365 for Campaigns E-Mail die Option **REGISTRIEREN IHRER ORGANISATION >**. Dies führt Sie zur Microsoft 365-Anmeldung.
     > [!NOTE]
     > Wenn Sie bereits über ein vorhandenes Microsoft 365 For Business-Abonnement verfügen und das Microsoft 365 for Campaigns-Angebot hinzufügen möchten, wechseln Sie zu [Microsoft 365 for Campaigns](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)zu einem vorhandenen Abonnement.
-1. **Geben Sie auf der Seite Microsoft 365 Business** Ihre Geschäftsdetails ein. Verwenden Sie für business-E-Mail-Adresse eine aktuelle E-Mail-Adresse.  Wir benötigen diese Adresse nur, um während des Setupprozesses mit Ihnen in Kontakt zu bleiben. Wählen Sie **Weiter** aus.
+1. **Geben Sie auf der Seite Microsoft 365 Business** Ihre Geschäftsdetails ein. Verwenden Sie für business-E-Mail-Adresse eine aktuelle E-Mail-Adresse.  Wir benötigen diese Adresse nur, um während des Setupprozesses mit Ihnen in Kontakt zu bleiben. Klicken Sie auf **Weiter**.
 1. **Auf der Seite Benutzer-ID erstellen:**
     1. Geben **Sie unter** Benutzername den Namen oder Alias ein, den Sie für Ihre E-Mail-Adresse wünschen. Sie können z. B. als "Alice" oder "Rob" bezeichnet werden. In einer größeren Kampagne können AliceC oder AliceChavez sinnvoller sein.
     2. Geben **Sie in Ihr** Unternehmen den Namen der Kampagne ein, für die Sie arbeiten. Beispiel: ContosoCampaign. Wenn Sie bereits eine Domäne besitzen, verwenden Sie diesen Namen hier. 
@@ -62,7 +62,7 @@ Hier erfahren Sie, wie Sie Ihre Anmeldung für Microsoft 365 für Kampagnen absc
     1. Stellen Sie Ihr Telefon bereit, und wählen Sie **Text me** (oder Rufen **Sie mich** an, wenn Sie es vorziehen). Geben Sie dann Ihre Telefonnummer ein. 
     2. Wenn Sie Text **me auswählen,** senden wir Ihnen einen Überprüfungscode. Oder wir rufen Sie mit einem Code auf, wenn Sie **Mich anrufen auswählen.**
     3. Geben Sie den Code aus Ihrer Textnachricht (oder Ihrem Anruf) ein, und wählen Sie **Weiter aus.** Erwarten Sie eine kurze Wartezeit. 
-5. **Wo werden Sie diese Seite verwenden:** Geben Sie die Informationen zum primären Arbeitsort und die Telefonnummer der Kampagne ein. Wählen Sie **Weiter** aus.
+5. **Wo werden Sie diese Seite verwenden:** Geben Sie die Informationen zum primären Arbeitsort und die Telefonnummer der Kampagne ein. Klicken Sie auf **Weiter**.
 6. **Wie sieht diese Seite aus:**
     1. Überprüfen Sie, ob die Kosten pro Benutzer 5,00 USD beträgt. 
     2. Wenn Sie sich erst einmal einrichten möchten, wählen Sie **Weiter aus.** 

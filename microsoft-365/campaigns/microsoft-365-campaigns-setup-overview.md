@@ -2,11 +2,11 @@
 title: Setupübersicht für Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
 ms.date: 9/20/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Setupübersicht für Microsoft 365 Business Premium für Kampagnen oder andere Unternehmen
-ms.openlocfilehash: fee9391d7a6375f14f0e38f8c6a349fe4ec11619
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e612771ca4e967462f190c41396f16c6faf9d195
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912106"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398265"
 ---
 # <a name="set-up-microsoft-365"></a>Einrichten von Microsoft 365
 
@@ -61,7 +61,7 @@ So richten Sie Benutzergeräte ein:
 Für wichtige Mitarbeiter wird empfohlen, [verwaltete](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) Geräte für einen noch besseren Schutz zu verwenden. Für alle Geräte möchten Sie die mehrstufige Authentifizierung [einrichten.](m365-campaigns-multifactor-authenication.md)
 3. Alle Benutzer sollten lernen, wie sie sich selbst und Ihre Kampagne schützen, indem sie mehr über [Phishing und andere Angriffe erfahren.](m365-campaigns-phishing-and-attacks.md) Diese [Infografik](m365-campaigns-protect-campaign-infographic.md) hilft Ihren Benutzern auch zu verstehen, wie Sie Ihre Kampagne vor Onlinebedrohungen schützen können.
 
-## <a name="contact-support"></a>Support kontaktieren
+## <a name="contact-support"></a>wenden Sie sich an den Support,
 
  **Wenn Sie den Support kontaktieren müssen:**
   
