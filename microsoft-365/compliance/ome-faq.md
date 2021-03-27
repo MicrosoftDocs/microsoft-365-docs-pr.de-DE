@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen? Suchen Sie hier nach einer Antwort.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 13d4181482bf8ad7460480a70c762fe60fd28ad0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2ad0ef4f16e5b458da80227b93fab574e3ce8dde
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051747"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394683"
 ---
 # <a name="message-encryption-faq"></a>Häufig gestellte Fragen zur Nachrichtenverschlüsselung
 
@@ -62,7 +62,7 @@ Weitere Informationen zu BYOK finden Sie unter [Planning and implementing your A
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Ändern OME und BYOK mit Azure Information Protection den Ansatz von Microsoft für Datenanforderungen von Drittanbietern wie Vorladungen?
 
-Nein. OME und die Option zum Bereitstellen und Steuern Ihrer eigenen Verschlüsselungsschlüssel, genannt BYOK, von Azure Information Protection wurden nicht für die Reaktion auf Vorladungen von Strafverfolgungsbehörden entwickelt. OME wurde mit BYOK für Azure Information Protection für complianceorientierte Kunden entwickelt. Microsoft nimmt Anfragen von Drittanbietern nach Kundendaten sehr ernst. Als Clouddienstanbieter setzen wir uns immer für den Datenschutz von Kundendaten ein. Für den Fall, dass wir eine Vorladung erhalten, versuchen wir immer, den Dritten an den Kunden umzuleiten, um die Informationen zu erhalten. (Lesen Sie den Blog von Brad Smith: [Schützen von Kundendaten vor Staatlichem Schnüffeln).](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/) Wir veröffentlichen regelmäßig detaillierte Informationen zu der Anforderung, die wir erhalten. Weitere Informationen zu Datenanforderungen von Drittanbietern finden Sie unter [Responding to government and law enforcement requests to access customer data](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) on the Microsoft Trust Center. Weitere Informationen finden Sie unter "Offenlegung von Kundendaten" in den [Online services Terms (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx).
+Nein. OME und die Option zum Bereitstellen und Steuern Ihrer eigenen Verschlüsselungsschlüssel, genannt BYOK, von Azure Information Protection wurden nicht für die Reaktion auf Vorladungen von Strafverfolgungsbehörden entwickelt. OME wurde mit BYOK für Azure Information Protection für complianceorientierte Kunden entwickelt. Microsoft nimmt Anfragen von Drittanbietern nach Kundendaten ernst. Als Clouddienstanbieter setzen wir uns immer für den Datenschutz von Kundendaten ein. Für den Fall, dass wir eine Vorladung erhalten, versuchen wir immer, den Dritten an den Kunden umzuleiten, um die Informationen zu erhalten. (Lesen Sie Den Blog von Brad Smith: [Schützen von Kundendaten vor Staatlichem Schnüffeln](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Wir veröffentlichen regelmäßig detaillierte Informationen zu der Anforderung, die wir erhalten. Weitere Informationen zu Datenanforderungen von Drittanbietern finden Sie unter [Responding to government and law enforcement requests to access customer data](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) on the Microsoft Trust Center. Weitere Informationen finden Sie unter "Offenlegung von Kundendaten" in den [Online services Terms (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx).
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>Wie steht dieses Feature im Zusammenhang mit älteren Office 365 Message Encryption (OME) und Information Rights Management (IRM)-Features?
 
@@ -120,7 +120,7 @@ Wenn ein Dateiformat unterstützt wird, z. B. eine Word-, Excel- oder PowerPoint
 
 Die kurze Antwort lautet Ja! Mit der PDF-Verschlüsselung können Sie vertrauliche PDF-Dokumente durch sichere Kommunikation oder sichere Zusammenarbeit schützen. Wenn Sie E-Mails senden, verschlüsselt der Office 365-Dienst PDF-Dateianlagen, nicht den Outlook-Client.
 
-Für Outlook im Web, Outlook für iOS und Outlook für Android können Sie PDF-Dateien verschlüsseln, die Sie ohne zusätzliche Schritte senden. Diese Clients unterstützen nativ die PDF-Verschlüsselung.
+Für Outlook im Web, Outlook für iOS und Outlook für Android können Sie PDF-Dateien verschlüsseln, die Sie ohne weitere Schritte senden. Diese Clients unterstützen nativ die PDF-Verschlüsselung.
 
 Der Outlook-Desktop unterstützt keine systemeigene Verschlüsselung von PDF-Dateianlagen. Stattdessen müssen Sie Exchange-Nachrichtenflussregeln oder DLP einrichten, um die Verschlüsselung zuerst auf PDF-Anlagen anzuwenden. Wenn Sie E-Mails von Outlook Desktop mit einer PDF-Anlage senden, sendet der Client die Nachricht mit der Anlage zuerst an den Dienst. Wenn der Dienst die Datei empfängt, wendet der Dienst den OME-Schutz der Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) oder der Nachrichtenflussregel in Exchange Online an. Als Nächstes sendet Exchange Online die Nachricht mit der geschützten PDF-Dateianlage.
 
@@ -165,7 +165,7 @@ Ja. Informationen zum Anpassen von E-Mail-Nachrichten und zum OME-Portal finden 
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>Gibt es Berichtsfunktionen oder Einblicke für verschlüsselte E-Mails?
 
-Es gibt einen Verschlüsselungsbericht im Security and Compliance Center. Weitere Informationen finden Sie unter Anzeigen von [E-Mail-Sicherheitsberichten im Security & Compliance Center](../security/defender-365-security/view-email-security-reports.md).
+Es gibt einen Verschlüsselungsbericht im Security and Compliance Center. Weitere Informationen finden Sie unter Anzeigen von [E-Mail-Sicherheitsberichten im Security & Compliance Center](../security/office-365-security/view-email-security-reports.md).
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>Kann ich nachrichtenverschlüsselung mit Compliancefeatures wie eDiscovery verwenden?
 
@@ -173,7 +173,7 @@ Ja. Alle verschlüsselten E-Mail-Nachrichten können von Microsoft 365-Complianc
 
 ## <a name="can-i-remove-encryption-from-email"></a>Kann ich die Verschlüsselung aus E-Mails entfernen?
 
-Administratoren können eine Nachrichtenflussregel einrichten, um die Verschlüsselung zu entfernen. Sie können die Verschlüsselung mithilfe einer Nachrichtenflussregel nicht aus E-Mails entfernen, die von einer anderen Organisation angewendet werden, es sei denn, die E-Mails werden mithilfe des schutzes verschlüsselt.
+Administratoren können eine Nachrichtenflussregel einrichten, um die Verschlüsselung zu entfernen. Sie können die Verschlüsselung mithilfe einer Nachrichtenflussregel nicht aus E-Mails entfernen, die von einer anderen Organisation angewendet werden, es sei denn, die E-Mails werden nur mit Verschlüsselungsschutz verschlüsselt.
 
 ## <a name="is-delegated-access-supported"></a>Wird der delegierte Zugriff unterstützt?
 

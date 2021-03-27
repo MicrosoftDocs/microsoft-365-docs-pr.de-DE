@@ -3,7 +3,7 @@ title: Kundenschlüssel für Microsoft 365 auf der Mandantenebene (öffentliche 
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 2/17/2021
+ms.date: 3/26/2021
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-description: Erfahren Sie, wie Sie den Kundenschlüssel für alle Daten in Ihrem Microsoft 365-Mandanten einrichten.
-ms.openlocfilehash: f50986b4e72808d4a1cd4dc8ee0182eb9c0a2455
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Erfahren Sie, wie Sie Kundenschlüssel für Ihre Daten in Microsoft 365 auf Mandantenebene einrichten.
+ms.openlocfilehash: 811b153d5b0a472c6e542851fec45f1f42bca59b
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922689"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394703"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Übersicht über den Kundenschlüssel für Microsoft 365 auf Mandantenebene (öffentliche Vorschau)
 
-Mithilfe von schlüsseln, die Sie bereitstellen, können Sie eine Datenverschlüsselungsrichtlinie (Data Encryption Policy, DEP) erstellen und sie dem Mandanten zuweisen. Die DEP verschlüsselt Daten über den Mandanten für diese Workloads:
+Mithilfe von schlüsseln, die Sie bereitstellen, können Sie eine Datenverschlüsselungsrichtlinie (Data Encryption Policy, DEP) erstellen und sie dem Mandanten zuweisen. Die mandantenweite DEP, die Sie erstellen, verschlüsselt die folgenden Daten:
 
 - Teams-Chatnachrichten (1:1-Chats, Gruppenchats, Besprechungschats und Kanalunterhaltungen)
 - Teams-Mediennachrichten (Bilder, Codeausschnitte, Videonachrichten, Audionachrichten, Wiki-Bilder)
@@ -34,39 +34,51 @@ Mithilfe von schlüsseln, die Sie bereitstellen, können Sie eine Datenverschlü
 - Teams-Statusmeldungen
 - Benutzer- und Signalinformationen für Exchange Online
 - Exchange Online-Postfächer, die nicht bereits verschlüsselte Kundenschlüsseldeps auf Anwendungsebene sind
+- #A0 (EDM)-Daten – (Datendateischemas, Regelpakete und die zum Hashen der vertraulichen Daten verwendeten Salts)
 
-Für Microsoft Teams verschlüsselt der Kundenschlüssel auf Mandantenebene neue Daten ab dem Zeitpunkt, zu dem die DEP dem Mandanten zugewiesen wurde. Die öffentliche Vorschau unterstützt das Verschlüsseln vergangener Daten nicht. Für Exchange Online verschlüsselt der Customer Key alle vorhandenen und neuen Daten.
+Für Microsoft Information Protection und Microsoft Teams verschlüsselt der Kundenschlüssel auf Mandantenebene neue Daten ab dem Zeitpunkt, zu dem Sie die DEP dem Mandanten zuweisen. Die öffentliche Vorschau unterstützt das Verschlüsseln vergangener Daten nicht. Für Exchange Online verschlüsselt der Customer Key alle vorhandenen und neuen Daten.
 
-Sie können mehrere DEPs pro Mandant erstellen, aber nur eine DEP zu einem beliebigen Zeitpunkt zuweisen. Wenn Sie die DEP zuweisen, beginnt die Verschlüsselung automatisch, kann jedoch abhängig von der Größe Ihres Mandanten einige Zeit dauern.
+Sie können mehrere DEPs pro Mandant erstellen, aber nur eine DEP gleichzeitig zuweisen. Wenn Sie die DEP zuweisen, beginnt die Verschlüsselung automatisch, dauert jedoch je nach Größe Ihres Mandanten einige Zeit.
 
 ## <a name="tenant-level-policies-add-broader-control-to-customer-key-for-microsoft-365"></a>Richtlinien auf Mandantenebene fügen dem Kundenschlüssel für Microsoft 365 eine umfassendere Kontrolle hinzu
 
 Wenn Sie bereits den Kundenschlüssel für Exchange Online und Sharepoint Online eingerichtet haben, passt die neue öffentliche Vorschau auf Mandantenebene dazu.
 
-Die von Ihnen erstellten Verschlüsselungsrichtlinien auf Mandantenebene verschlüsselt alle Daten für die Microsoft Teams- und Exchange Online-Workloads in Microsoft 365. Wenn Sie für Exchange Online jedoch bereits Kundenschlüssel-DEPs einzelnen Postfächern zugewiesen haben, setzt die Richtlinie auf Mandantenebene diese DEPs nicht außer Kraft. Die Richtlinie auf Mandantenebene verschlüsselt nur Postfächer, denen noch keine Kundenschlüssel-DEP auf Postfachebene zugewiesen ist.
+Die von Ihnen erstellten Verschlüsselungsrichtlinien auf Mandantenebene verschlüsselt alle Daten für die Microsoft Teams- und Exchange Online-Workloads in Microsoft 365. Wenn Sie für Exchange Online jedoch bereits Kundenschlüssel-DEPs einzelnen Postfächern zugewiesen haben, setzt die Richtlinie auf Mandantenebene diese DEPs nicht außer Kraft. Die Richtlinie auf Mandantenebene verschlüsselt nur Postfächer, denen noch keine Kundenschlüssel-DEP auf Postfachebene zugewiesen ist. Wenn Sie ein Benutzerpostfach mithilfe einer Mandanten-DEP verschlüsseln, werden alle Inhalte verschlüsselt. Informationen dazu, was mit einer DEP auf Anwendungsebene verschlüsselt wird, finden Sie unter [Service encryption with Customer Key](customer-key-overview.md).
 
-Beispielsweise werden Microsoft #A0 und einige #A1 und Besprechungsaufzeichnungen, die in OneDrive for Business und SharePoint gespeichert werden, durch eine SharePoint Online-DEP verschlüsselt. Eine einzelne SharePoint Online-DEP verschlüsselt Inhalte innerhalb eines einzelnen Geografischen.
+## <a name="data-that-isnt-encrypted-with-customer-key-at-the-tenant-level"></a>Daten, die nicht mit dem Kundenschlüssel auf Mandantenebene verschlüsselt werden
+
+Der Customer Key verschlüsselt die folgenden Datentypen nicht auf Mandantenebene. Stattdessen verwendet Microsoft 365 andere Verschlüsselungstypen, um diese Daten zu schützen.
+
+- Exchange-Onlinepostfächer, die Sie bereits mit einer Customer Key DEP auf Anwendungsebene verschlüsselt haben. Postfächer, denen keine Kundenschlüssel-DEP zugewiesen ist, werden mithilfe der Mandanten-DEP verschlüsselt. Diese Anordnung bedeutet, dass einige Postfächer mit einer Mandanten-DEP und einige Postfächer mit DEPs auf Anwendungsebene verschlüsselt sind.
+- SharePoint und OneDrive for Business verwenden Kundenschlüssel auf Anwendungsebene. Eine einzelne DEP verschlüsselt Inhalte in SharePoint für einen einzelnen Geografischen.
+- Microsoft #A0 und einige #A1 und Besprechungsaufzeichnungen, die in OneDrive for Business und SharePoint gespeichert sind, werden durch eine SharePoint Online-DEP verschlüsselt.
+
+Arbeitsauslastungen oder Szenarien, die derzeit nicht vom Kundenschlüssel für Microsoft 365 unterstützt werden.
+
+- Andere Microsoft 365-Workloads wie Yammer, Planner und so weiter.
+- Teams Live Events und Q&A in Live Events. Für Teams ist dieses Szenario das einzige Szenario, das nicht mit dem Kundenschlüssel auf Mandantenebene verschlüsselt wird.
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>Einrichten des Kundenschlüssels auf Mandantenebene (öffentliche Vorschau)
 
-Diese Schritte sind ähnlich, aber nicht identisch mit den Schritten zum Einrichten des Kundenschlüssels auf Anwendungsebene. Sie sollten diese öffentliche Vorschau nur mit Testdaten in Test mandanten verwenden. Verwenden Sie diese Version nicht mit Produktionsdaten oder in Ihrer Produktionsumgebung. Wenn Sie bereits über eine Produktionsbereitstellung des Kundenschlüssels verfügen, verwenden Sie diese Schritte, um den Kundenschlüssel auf Mandantenebene in einer Testumgebung zu einrichten. Nachdem Sie Ihrem Mandanten eine Mandantenebenen-DEP zugewiesen haben, können Sie den Überprüfungsprozess starten und sich bei fragen m365ck@microsoft.com Fragen oder Bedenken wenden. Dokumentierte Überprüfungsschritte finden Sie auch in der öffentlichen Vorschau der Validierungsanweisungen für [die Daten-at-Rest-Verschlüsselung für Microsoft 365](https://aka.ms/CustomerKey/PublicPreviewValidation).
+Diese Schritte sind ähnlich, aber nicht identisch mit den Schritten zum Einrichten des Kundenschlüssels auf Anwendungsebene. Verwenden Sie diese öffentliche Vorschau nur mit Testdaten in Test-Mandanten. Verwenden Sie diese Version nicht mit Produktionsdaten oder in Ihrer Produktionsumgebung. Wenn Sie bereits über eine Produktionsbereitstellung des Kundenschlüssels verfügen, verwenden Sie diese Schritte, um den Kundenschlüssel auf Mandantenebene in einer Testumgebung zu einrichten. Nachdem Sie Ihrem Mandanten eine Mandantenebenen-DEP zugewiesen haben, können Sie den Überprüfungsprozess starten und m365ck@microsoft.com fragen oder bedenken. Dokumentierte Überprüfungsschritte finden Sie auch in der öffentlichen Vorschau der Validierungsanweisungen für [die Daten-at-Rest-Verschlüsselung für Microsoft 365](https://aka.ms/CustomerKey/PublicPreviewValidation).
 
 Sie führen die meisten dieser Aufgaben durch eine Remoteverbindung mit Azure PowerShell aus. Um optimale Ergebnisse zu erzielen, sollten Sie Version 4.4.0 oder höher von Azure PowerShell verwenden.
 
-Bevor Sie beginnen, sollten Sie Folgendes sicherstellen:
+Bevor Sie beginnen:
 
 - Sie müssen ein Arbeits- oder Schulkonto verwenden, das über die Administratorrolle "Compliance" verfügt, um den Kundenschlüssel auf Mandantenebene einrichten zu können.
-- Stellen Sie sicher, dass Sie über die entsprechende Lizenzierung für Ihre Organisation verfügen. Verwenden Sie ein kostenpflichtiges, in Rechnung gestelltes Azure-Abonnement mithilfe Konzernvertrag oder eines Clouddienstanbieters. Azure-Abonnements, die mit Pay As You Go-Plänen oder mit einer Kreditkarte erworben wurden, werden für den Kundenschlüssel nicht unterstützt. Ab dem 1. April 2020 wird der Kundenschlüssel in Office 365 in Office 365 E5, M365 E5, M365 E5 Compliance und M365 E5 Information Protection & Governance SKUs angeboten. Office 365 Advanced Compliance SKU ist nicht mehr für die Beschaffung neuer Lizenzen verfügbar. Vorhandene Office 365 Advanced Compliance-Lizenzen werden weiterhin unterstützt. Während der Dienst mit mindestens einer Lizenz unter dem Mandanten mit der entsprechenden Lizenz aktiviert werden kann, sollten Sie dennoch sicherstellen, dass alle Benutzer, die von dem Dienst profitieren, über entsprechende Lizenzen verfügen.
+- Stellen Sie sicher, dass Sie über die entsprechende Lizenzierung für Ihre Organisation verfügen. Verwenden Sie ein kostenpflichtiges, in Rechnung gestelltes Azure-Abonnement mithilfe Konzernvertrag oder eines Clouddienstanbieters. Azure-Abonnements, die mit Pay As You Go-Plänen oder mit einer Kreditkarte erworben wurden, werden für den Kundenschlüssel nicht unterstützt. Ab dem 1. April 2020 wird der Kundenschlüssel in Office 365 in Office 365 E5, Microsoft 365 E5, Microsoft 365 E5 Compliance und Microsoft 365 E5 Information Protection & Governance SKUs angeboten. Office 365 Advanced Compliance SKU ist für neue Lizenzen nicht mehr verfügbar. Vorhandene Office 365 Advanced Compliance-Lizenzen werden weiterhin unterstützt. Während der Dienst mit mindestens einem entsprechend lizenzierten Benutzer unter dem Mandanten aktiviert werden kann, sollten Sie dennoch sicherstellen, dass alle Benutzer, die von dem Dienst profitieren, über entsprechende Lizenzen verfügen.
 
 ### <a name="create-two-new-azure-subscriptions"></a>Zwei neue Azure-Abonnements erstellen
 
-Für Customer Key sind zwei Schlüssel für jede Daten- Verschlüsselungsrichtlinie (DEP) erforderlich. Um dies zu erreichen, müssen Sie zwei Azure-Abonnements erstellen. Als bewährte Methode empfiehlt Microsoft, dass separate Mitglieder Ihrer Organisation jeweils einen Schlüssel für jedes Abonnement konfigurieren. Verwenden Sie diese Azure-Abonnements nur zum Verwalten von Verschlüsselungsschlüsseln für Microsoft 365. Auf diese Weise ist Ihre Organisation geschützt, falls einer ihrer Betreiber versehentlich, absichtlich oder in böswilliger Absicht die Schlüssel, für die Sie verantwortlich sind, löscht oder auf andere Weise unsachgemäß handhabt.
+Für Customer Key sind zwei Schlüssel für jede Daten- Verschlüsselungsrichtlinie (DEP) erforderlich. Zum Erstellen von zwei Schlüsseln müssen Sie zwei Azure-Abonnements erstellen. Als bewährte Methode empfiehlt Microsoft, dass separate Mitglieder Ihrer Organisation jeweils einen Schlüssel für jedes Abonnement konfigurieren. Verwenden Sie diese Azure-Abonnements nur zum Verwalten von Verschlüsselungsschlüsseln für Microsoft 365. Wenn Sie diese Richtlinien befolgen, schützen Sie Ihre Organisation, falls einer Ihrer Operatoren die Schlüssel, für die sie verantwortlich sind, versehentlich, absichtlich oder böswillig löscht oder anderweitig falsch verwaltet.
 
 Es gibt praktisch keine Beschränkung hinsichtlich der Anzahl von Azure-Abonnements, die Sie für Ihre Organisation erstellen können. Die Verwendung dieser bewährten Methode trägt dazu bei, die Auswirkungen von menschlichen Fehlern zu minimieren und gleichzeitig die vom Kundenschlüssel verwendeten Ressourcen zu verwalten.
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>Azure- Abonnements registrieren, um einen obligatorischen Aufbewahrungszeitraum zu nutzen.
 
-Der temporäre oder dauerhafte Verlust von Stammverschlüsselungsschlüsseln kann für den Dienstbetrieb störend oder sogar katastrophal sein und zu Datenverlusten führen. Aus diesem Grund ist für die mit Customer Key verwendeten Ressourcen ein starker Schutz erforderlich. Alle Azure-Ressourcen, die mit Customer Key verwendet werden, bieten Schutzmechanismen, die weit über die Standardkonfiguration hinaus gehen. Azure-Abonnements können derart gekennzeichnet oder registriert werden, dass eine sofortige und unwiderrufliche Kündigung vermieden wird. Dies wird als Registrierung eines obligatorischen Aufbewahrungszeitraums bezeichnet. Die schritte, die zum Registrieren von Azure-Abonnements für einen obligatorischen Aufbewahrungszeitraum erforderlich sind, erfordern die Zusammenarbeit mit Microsoft. Dieser Vorgang kann bis zu fünf Arbeitstage dauern. Bisher wurde diese Funktion zeitweise als „Nicht kündigen" bezeichnet.
+Der temporäre oder dauerhafte Verlust von Stammverschlüsselungsschlüsseln kann für den Dienstbetrieb störend oder sogar katastrophal sein und zu Datenverlusten führen. Aus diesem Grund ist für die mit Customer Key verwendeten Ressourcen ein starker Schutz erforderlich. Alle Azure-Ressourcen, die mit Customer Key verwendet werden, bieten Schutzmechanismen, die weit über die Standardkonfiguration hinaus gehen. Azure-Abonnements können derart gekennzeichnet oder registriert werden, dass eine sofortige und unwiderrufliche Kündigung vermieden wird. Dieser Vorgang wird als Registrierung für einen obligatorischen Aufbewahrungszeitraum bezeichnet. Die schritte, die zum Registrieren von Azure-Abonnements für einen obligatorischen Aufbewahrungszeitraum erforderlich sind, erfordern die Zusammenarbeit mit Microsoft. Dieser Vorgang kann bis zu fünf Arbeitstage dauern. Zuvor wurde dieser Prozess manchmal als "Do Not Cancel" bezeichnet.
   
 Bevor Sie sich an das Microsoft 365-Team wenden, müssen Sie die folgenden Schritte für jedes Azure-Abonnement ausführen, das Sie mit Dem Kundenschlüssel verwenden. Stellen Sie sicher, dass Das [Azure PowerShell Az-Modul](/powershell/azure/new-azureps-module-az) installiert ist, bevor Sie beginnen.
 
@@ -79,7 +91,7 @@ Bevor Sie sich an das Microsoft 365-Team wenden, müssen Sie die folgenden Schri
    Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.Resources
    ```
 
-3. Wenden Sie sich an Microsoft, um den Prozess unter [m365ck@microsoft.com.](mailto:m365ck@microsoft.com) Teilen Sie uns in Ihrem E-Mail bitte Folgendes mit:
+3. Wenden Sie sich an Microsoft, um den Prozess unter [m365ck@microsoft.com.](mailto:m365ck@microsoft.com) Fügen Sie die folgenden Inhalte in Ihre E-Mail ein:
 
    **Betreff**: Kundenschlüssel für \<*Your tenant's fully-qualified domain name*\>
 
@@ -113,18 +125,18 @@ Wenn Sie einen Schlüsseltresor erstellen, müssen Sie eine SKU auswählen: entw
 
 Verwenden Sie ein allgemeines Präfix für Schlüsseltresor und eine Abkürzung für die Verwendung und den Bereich des Schlüsseltresor und der Schlüssel. Für den Contoso-Dienst, in dem sich die Tresore in Nordamerika befinden, ist beispielsweise ein mögliches Namenspaar Contoso-O365-NA-VaultA1 und Contoso-O365-NA-VaultA2. In Azure sind Tresornamen global eindeutige Zeichenfolgen, daher müssen Sie möglicherweise Variationen Ihrer gewünschten Namen ausprobieren, falls die gewünschten Namen bereits von anderen Azure-Kunden beansprucht werden. Nachdem sie konfiguriert wurden, können Die Namen von Tresoren nicht geändert werden. Daher sollten Sie einen schriftlichen Plan für die Einrichtung verwenden und eine zweite Person verwenden, um zu überprüfen, ob der Plan ordnungsgemäß ausgeführt wurde.
 
-Erstellen Sie Ihre Depots nach Möglichkeit in nicht-gekoppelten Regionen. Gekoppelte Azure-Regionen bieten eine hohe Verfügbarkeit über Dienstausfall-Domänen hinweg. Dementsprechend können regionale Paare gegenseitig als Backup-Region der jeweils anderen betrachtet werden. Dies bedeutet, dass eine Azure-Ressource, die in einer bestimmten Region platziert ist, durch die gekoppelte Region automatisch an Fehlertoleranz gewinnt. Aus diesem Grund bedeutet die Auswahl von Regionen für zwei Vaults, die in einer Datenverschlüsselungsrichtlinie verwendet werden, in der die Regionen gekoppelt sind, dass nur insgesamt zwei Verfügbarkeitsregionen verwendet werden. In den meisten geografischen Regionen gibt es nur zwei Regionen, weshalb es noch nicht möglich ist, nicht-gekoppelte Regionen auszuwählen. Wählen Sie nach Möglichkeit zwei nicht gekoppelte Bereiche für die beiden mit einer Datenverschlüsselungsrichtlinie verwendeten Tresore aus. Dies hat den positiven Effekt, dass insgesamt vier verfügbare Regionen genutzt werden. Weitere Informationen hierzu sowie ein aktuelles Verzeichnis der Regionenpaare finden Sie unter [Geschäftskontinuität und Notfallwiederherstellung (Business continuity and disaster recovery, BCDR): Gekoppelte Regionen in Azure](/azure/best-practices-availability-paired-regions).
+Erstellen Sie Ihre Depots nach Möglichkeit in nicht-gekoppelten Regionen. Gekoppelte Azure-Regionen bieten eine hohe Verfügbarkeit über Dienstausfall-Domänen hinweg. Dementsprechend können regionale Paare gegenseitig als Backup-Region der jeweils anderen betrachtet werden. Eine Azure-Ressource, die in einer Region platziert wird, erhält automatisch Fehlertoleranz über die gekoppelte Region. Das Auswählen von Regionen für zwei Vaults, die in einer Datenverschlüsselungsrichtlinie verwendet werden, in der die Regionen gekoppelt sind, bedeutet, dass nur insgesamt zwei Verfügbarkeitsregionen verwendet werden. In den meisten geografischen Regionen gibt es nur zwei Regionen, weshalb es noch nicht möglich ist, nicht-gekoppelte Regionen auszuwählen. Wählen Sie nach Möglichkeit zwei nicht gekoppelte Bereiche für die beiden mit einer Datenverschlüsselungsrichtlinie verwendeten Tresore aus. Dieses Szenario profitiert von insgesamt vier Verfügbarkeitsregionen. Weitere Informationen hierzu sowie ein aktuelles Verzeichnis der Regionenpaare finden Sie unter [Geschäftskontinuität und Notfallwiederherstellung (Business continuity and disaster recovery, BCDR): Gekoppelte Regionen in Azure](/azure/best-practices-availability-paired-regions).
 
 ### <a name="assign-permissions-to-each-key-vault"></a>Zuweisen von Berechtigungen für jeden Schlüsseltresor (Key Vault)
 
-Sie müssen für jeden Schlüsseltresor entsprechend der von Ihnen gewählten Implementierung drei gesonderte Berechtigungsgruppen für Customer Key definieren. Sie müssen beispielsweise eine Berechtigungsgruppe für jede der folgenden Optionen definieren:
+Für jeden Schlüsseltresor müssen Sie je nach Implementierung drei separate Berechtigungssätze für Kundenschlüssel definieren. Sie müssen z. B. einen Satz von Berechtigungen für jede der folgenden Berechtigungen definieren:
   
 - **Schlüsseltresor-Administratoren**, deren Aufgabe das tägliche Verwalten Ihrer Schlüsseltresore für Ihre Organisation ist. Zu diesen Aufgaben gehören Datensicherung sowie Erstellen, Abrufen, Importieren, Auflisten und Wiederherstellen.
 
   > [!IMPORTANT]
   > Die Berechtigungsgruppe, die Schlüsseltresor-Administratoren zugewiesen ist, beinhaltet keine Berechtigung zum Löschen von Schlüsseln. Dies ist beabsichtigt und eine wichtige Vorgehensweise. Kryptografische Schlüssel werden normalerweise nicht gelöscht, da dadurch Daten dauerhaft vernichtet werden. Eine bewährte Methode besteht darin, den Schlüsseltresor-Administratoren diese Berechtigung nicht standardmäßig zuzuweisen. Behalten Sie stattdessen diese Berechtigung den Schlüsseltresor-Mitwirkenden vor und weisen Sie diese einem Administrator nur kurzfristig und lediglich, sofern die damit verbundenen Folgen klar verstanden wurden, zu.
   
-  Melden Sie sich bei Ihrem Azure-Abonnement mit Azure PowerShell an, um diesen Berechtigungen einem Benutzer in Ihrer Organisation zuzuordnen. Anweisungen finden Sie unter [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
+  Um diesen Berechtigungen einem Benutzer in Ihrer Organisation zuzuordnen, melden Sie sich bei Ihrem Azure-Abonnement mit Azure PowerShell an. Anweisungen finden Sie unter [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
 
    Führen Sie Set-AzKeyVaultAccessPolicy cmdlet aus, um die erforderlichen Berechtigungen zu erteilen.
 
@@ -208,7 +220,7 @@ Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-V
 
 ### <a name="check-the-recovery-level-of-your-keys"></a>Überprüfen der Wiederherstellungsebene Ihrer Schlüssel
 
-Microsoft 365 setzt voraus, dass das Azure Key Vault-Abonnement auf Do Not Cancel festgelegt ist und dass die von Customer Key verwendeten Schlüssel für die soft delete aktiviert sind. Sie können dies sicherstellen, indem Sie die Wiederherstellungsstufe für Ihre Schlüssel überprüfen.
+Microsoft 365 setzt voraus, dass das Azure Key Vault-Abonnement auf Do Not Cancel festgelegt ist und dass die von Customer Key verwendeten Schlüssel für die soft delete aktiviert sind. Sie können diese Einstellungen bestätigen, indem Sie sich die Wiederherstellungsstufe ihrer Schlüssel anschauen.
   
 Führen Sie zum Überprüfen der Wiederherstellungsstufe eines Schlüssels in Azure PowerShell das cmdlet Get-AzKeyVaultKey wie folgt aus:
   
@@ -220,7 +232,7 @@ Wenn die _Recovery Level-Eigenschaft_ einen anderen Wert als den Wert **Recovera
 
 ### <a name="back-up-azure-key-vault"></a>Sichern von Azure Key Vault
 
-Unmittelbar nach dem Erstellen oder Ändern eines Schlüssels, dem Durchführen einer Sicherung und dem Speichern von Kopien der Sicherung, sowohl online als auch offline. Verbinden Sie keine Offlinekopien mit einem Netzwerk. Speichern Sie sie stattdessen in einem physischen sicheren oder kommerziellen Speicher. Mindestens eine Kopie der Sicherung sollte an einem Speicherort gespeichert werden, auf den bei einem Notfall zugegriffen werden kann. Die einzelnen Sicherungen sind die einzige Möglichkeit zum Wiederherstellen des Schlüsselmaterials, sollte ein Key-Vault-Schlüssel dauerhaft vernichtet oder auf andere Weise funktionsuntüchtig gemacht worden sein. Schlüssel, die sich außerhalb des Azure Key Vault befinden und in Azure Key Vault importiert wurden, sind als Sicherung nicht geeignet, da die Metadaten, die für die Verwendung des Schlüssels mit Customer Key erforderlich sind, mit dem externen Schlüssel nicht vorhanden sind. Nur eine vom Azure Key Vault erstellte Sicherung kann für Wiederherstellungsvorgänge mit Customer Key verwendet werden. Daher ist es wichtig, dass Sie eine Sicherung von Azure Key Vault erstellen, sobald ein Schlüssel hochgeladen oder erstellt wurde.
+Sichern Sie unmittelbar nach der Erstellung oder änderung eines Schlüssels den Schlüssel, und speichern Sie Kopien der Sicherung online und offline. Verbinden Sie keine Offlinekopien mit einem Netzwerk. Speichern Sie sie stattdessen in einem physischen sicheren oder kommerziellen Speicher. Mindestens eine Kopie der Sicherung sollte an einem Speicherort gespeichert werden, auf den bei einem Notfall zugegriffen werden kann. Die einzelnen Sicherungen sind die einzige Möglichkeit zum Wiederherstellen des Schlüsselmaterials, sollte ein Key-Vault-Schlüssel dauerhaft vernichtet oder auf andere Weise funktionsuntüchtig gemacht worden sein. Schlüssel, die sich außerhalb von Azure Key Vault befinden und in Azure Key Vault importiert wurden, gelten nicht als Sicherung, da die Metadaten, die für die Verwendung des Schlüssels durch den Kundenschlüssel erforderlich sind, nicht mit dem externen Schlüssel vorhanden sind. Nur eine vom Azure Key Vault erstellte Sicherung kann für Wiederherstellungsvorgänge mit Customer Key verwendet werden. Daher ist es wichtig, dass Sie eine Sicherung von Azure Key Vault erstellen, sobald ein Schlüssel hochgeladen oder erstellt wurde.
   
 Führen Sie zum Erstellen einer Sicherung eines Azure Key Vault-Schlüssels das [Cmdlet Backup-AzKeyVaultKey](/powershell/module/az.keyvault/backup-azkeyvaultkey) wie folgt aus:
 
@@ -321,7 +333,7 @@ Parameter:
 Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "<Default_PolicyName or Default_PolicyID>"
 ```
 
-Beschreibung: Dieses Cmdlet wird zum Konfigurieren der Standardmäßigen Datenverschlüsselungsrichtlinie verwendet. Diese Richtlinie wird dann verwendet, um Daten über alle Supportarbeitslasten hinweg zu verschlüsseln. 
+Beschreibung: Dieses Cmdlet wird zum Konfigurieren der Standardmäßigen Datenverschlüsselungsrichtlinie verwendet. Diese Richtlinie wird dann verwendet, um Daten über alle Supportarbeitslasten hinweg zu verschlüsseln.
 
 Beispiel:
 
@@ -361,7 +373,7 @@ Parameter:
 
 | Name | Beschreibung | Optional (Y/N) |
 |----------|----------|---------|
-|-Identity (Identität)|Gibt die Datenverschlüsselungsrichtlinie an, die Sie ändern möchten.|N|
+|-Identity|Gibt die Datenverschlüsselungsrichtlinie an, die Sie ändern möchten.|N|
 |-Refresh|Verwenden Sie die Option Aktualisieren, um die Datenverschlüsselungsrichtlinie zu aktualisieren, nachdem Sie einen der zugeordneten Schlüssel im Azure Key Vault gedreht haben. Sie müssen keinen Wert für diese Option angeben.|v|
 |-Enabled|Der Parameter Enabled aktiviert oder deaktiviert die Datenverschlüsselungsrichtlinie. Bevor Sie eine Richtlinie deaktivieren, müssen Sie sie ihrem Mandanten zuweisen. Gültige Werte sind:</br > $true: Die Richtlinie ist aktiviert</br > $true: Die Richtlinie ist aktiviert. Dies ist der Standardwert.
 |v|
@@ -394,7 +406,7 @@ Parameter:
 
 | Name | Beschreibung | Optional (Y/N) |
 |----------|----------|---------|
-|-Identity (Identität)|Gibt die Datenverschlüsselungsrichtlinie an, für die Sie die Details auflisten möchten.|v|
+|-Identity|Gibt die Datenverschlüsselungsrichtlinie an, für die Sie die Details auflisten möchten.|v|
 
 ### <a name="get-policy-assignment-info"></a>Informationen zur Richtlinienzuweisung erhalten
 
@@ -404,11 +416,11 @@ Get-M365DataAtRestEncryptionPolicyAssignment
 
 Beschreibung: Dieses Cmdlet listet die Richtlinie auf, die dem Mandanten derzeit zugewiesen ist.
 
-## <a name="offboarding-from-customer-key"></a>Offboarding über den Kundenschlüssel
+## <a name="offboarding-from-customer-key-at-the-tenant-level"></a>Offboarding vom Kundenschlüssel auf Mandantenebene
 
 Wenn Sie zu von Microsoft verwalteten Schlüsseln zurückkehren müssen, können Sie dies. Beim Offboard werden Ihre Daten mithilfe der standardverschlüsselten Verschlüsselung, die von jeder einzelnen Arbeitsauslastung unterstützt wird, erneut verschlüsselt. Exchange Online unterstützt beispielsweise die Standardverschlüsselung mithilfe von von Microsoft verwalteten Schlüsseln.
 
-Wenn Sie sich entschieden haben, Ihren Mandanten vom Kundenschlüssel auf Mandantenebene zu entfernen, erreichen Sie Microsoft mit einer E-Mail-Anforderung, um den Dienst für den Mandanten unter [m365ck@microsoft.com zu deaktivieren.](mailto:m365ck@microsoft.com)
+Wenn Sie ihren Mandanten vom Kundenschlüssel auf Mandantenebene [](mailto:m365ck@microsoft.com) aus offboarden möchten, wird m365ck@microsoft.com eine Anforderung zum "Deaktivieren" des Diensts für den Mandanten gesendet.
 
 > [!IMPORTANT]
 > Offboarding ist nicht identisch mit einer Datenbereinigung. Eine Datenbereinigung löscht die Daten Ihrer Organisation dauerhaft aus Microsoft 365, offboarding nicht. Sie können keine Datenbereinigung für eine Richtlinie auf Mandantenebene ausführen. Informationen zum Datenbereinigungspfad finden Sie unter [Revoke your keys and start the data purge path process](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process).
@@ -419,9 +431,13 @@ Weitere Informationen zum Verfügbarkeitsschlüssel finden Sie [unter Informatio
 
 ## <a name="key-rotation"></a>Schlüsseldrehung
 
-Informationen zum Drehen oder Rollen von Schlüsseln, die mit dem Kundenschlüssel verwendet werden, finden Sie unter [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md). Wenn Sie die DEP so aktualisieren, dass die neue Version der Schlüssel verwendet wird, führen Sie das cmdlet Set-M365DataAtRestEncryptionPolicy aus, wie weiter oben in diesem Artikel beschrieben.
+Informationen zum Drehen oder Rollen von Schlüsseln, die Sie mit dem Kundenschlüssel verwenden, finden Sie unter [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md). Wenn Sie die DEP so aktualisieren, dass die neue Version der Schlüssel verwendet wird, führen Sie das cmdlet Set-M365DataAtRestEncryptionPolicy aus, wie weiter oben in diesem Artikel beschrieben.
 
-## <a name="related-articles"></a>Verwandte Artikel:
+## <a name="known-issues"></a>Bekannte Probleme
+
+Wenn Sie Kundenschlüssel auf Mandantenebene aktivieren, können Sie kein neues Team in Microsoft Teams erstellen.
+
+## <a name="related-articles"></a>Verwandte Artikel
 
 - [Dienstverschlüsselung mit Kundenschlüssel](customer-key-overview.md)
 

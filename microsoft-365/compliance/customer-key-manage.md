@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Nachdem Sie den Kundenschlüssel eingerichtet haben, erfahren Sie, wie Sie ihn verwalten, indem Sie AKV-Schlüssel wiederherstellen und Berechtigungen und Ihre Datenverschlüsselungsrichtlinien verwalten.
-ms.openlocfilehash: 8f55667254ce7f5cbd9d4de274623ca4a3c4aa9d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 284a8ff24fef2f7e8b807477c99e20aaf593552e
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909947"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394667"
 ---
 # <a name="manage-customer-key"></a>Verwalten des Kundenschlüssels
 
@@ -168,9 +168,11 @@ Die Ausgabe dieses Cmdlets umfasst Folgendes:
 
   - **Rolling:** Das Erstellen eines sich fortlaufend ändernden, sogenannten Rolling-Codes für den Schlüssel ist in Gang. Wenn der Schlüssel für den geografischen Standort rollt, erhalten Sie außerdem Informationen dazu, welcher Prozentsatz der Websites den Schlüsselrollvorgang abgeschlossen hat, damit Sie den Fortschritt überwachen können.
 
-## <a name="unassign-a-dep-from-a-mailbox"></a>Unassign a DEP from a mailbox
+## <a name="roll-back-from-customer-key-to-microsoft-managed-keys"></a>Rollback vom Kundenschlüssel zu verwalteten Schlüsseln von Microsoft
 
-Mit dem Set-mailbox PowerShell-Cmdlet können Sie eine DEP aus einem Postfach zuweisen und den auf `DataEncryptionPolicy` `$NULL` festlegen. Wenn Sie dieses Cmdlet ausführen, wird die derzeit zugewiesene DEP entfernt und das Postfach mithilfe der DEP erneut verschlüsselt, die den verwalteten Standardschlüsseln von Microsoft zugeordnet ist. Die von verwalteten Schlüsseln von Microsoft verwendete DEP kann nicht entfernt werden. Wenn Sie keine verwalteten Schlüssel von Microsoft verwenden möchten, können Sie dem Postfach eine weitere DEP zuweisen.
+Für Kundenschlüssel auf Mandantenebene müssen Sie microsoft mit einer Anforderung für "offboarding" über den Kundenschlüssel erreichen. Die Anforderung wird vom On Call Engineering-Team verarbeitet.
+
+Für Kundenschlüssel auf Anwendungsebene müssen Sie dazu eine DEP mithilfe des PowerShell-Cmdlets Set-mailbox aus Postfächern zuweisen und auf `DataEncryptionPolicy` `$NULL` festlegen. Wenn Sie dieses Cmdlet ausführen, wird die derzeit zugewiesene DEP entfernt und das Postfach mithilfe der DEP erneut verschlüsselt, die den verwalteten Standardschlüsseln von Microsoft zugeordnet ist. Die von verwalteten Schlüsseln von Microsoft verwendete DEP kann nicht entfernt werden. Wenn Sie keine verwalteten Schlüssel von Microsoft verwenden möchten, können Sie dem Postfach eine weitere Customer Key DEP zuweisen.
 
 Führen Sie die folgenden Schritte aus, um die DEP mithilfe des Set-Mailbox PowerShell-Cmdlets aus einem Postfach zuzuweisen.
 
@@ -184,7 +186,7 @@ Führen Sie die folgenden Schritte aus, um die DEP mithilfe des Set-Mailbox Powe
 
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>Widerrufen Der Schlüssel und Starten des Datenbereinigungspfadprozesses
 
-Sie steuern den Widerruf aller Stammschlüssel, einschließlich des Verfügbarkeitsschlüssels. Customer Key bietet die Kontrolle über den Aspekt der Beendigungsplanung der gesetzlichen Anforderungen für Sie. Wenn Sie ihre Schlüssel widerrufen möchten, um Ihre Daten zu löschen und den Dienst zu beenden, löscht der Dienst den Verfügbarkeitsschlüssel, sobald der Datenlöschvorgang abgeschlossen ist.
+Sie steuern den Widerruf aller Stammschlüssel, einschließlich des Verfügbarkeitsschlüssels. Customer Key bietet die Kontrolle über den Aspekt der Beendigungsplanung der gesetzlichen Anforderungen für Sie. Wenn Sie ihre Schlüssel widerrufen möchten, um Ihre Daten zu löschen und den Dienst zu beenden, löscht der Dienst den Verfügbarkeitsschlüssel, sobald der Datenlöschvorgang abgeschlossen ist. Sie können keine Datenbereinigung für eine Richtlinie auf Mandantenebene ausführen.
 
 Microsoft 365 überwacht und überprüft den Datenbereinigungspfad. Weitere Informationen finden Sie im SSAE 18 SOC 2-Bericht, der im [Service Trust Portal verfügbar ist.](https://servicetrust.microsoft.com/) Darüber hinaus empfiehlt Microsoft die folgenden Dokumente:
 
