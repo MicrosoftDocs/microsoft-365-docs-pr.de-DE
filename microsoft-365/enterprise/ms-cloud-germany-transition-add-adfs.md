@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: AD FS-Migrationsschritte (Active Directory Federation Services, Active Directory-Verbunddienste) für die Migration von Microsoft Cloud Deutschland.'
 ms.openlocfilehash: 12465acf5b4afe7e252586ddd076250628b57dd3
 ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51165657"
@@ -74,7 +74,7 @@ Sie können mit [AD FS-Hilfe](https://adfshelp.microsoft.com/AadTrustClaims/Cla
 
 1. Führen Sie **Ansprüche generieren** in [AD FS-Hilfe](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) aus und kopieren Sie das PowerShell-Skript über die Option **Kopieren** in der rechten oberen Ecke des Skripts.
 
-2. Führen Sie die in der [AD FS-Hilfe](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) beschriebenen Schritte aus, um das PowerShell-Skript in Ihrer AD FS-Farm auszuführen, um den globalen Relying Party Trust zu erzeugen. Ersetzen Sie vor dem Ausführen des Skripts die folgenden Codezeilen im generierten Skript wie unten beschrieben:
+2. Führen Sie die in der [AD FS-Hilfe](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) beschriebenen Schritte aus, um das PowerShell-Skript in Ihrer AD FS-Farm auszuführen, um den globalen Relying Party Trust zu erzeugen. Ersetzen Sie vor dem Ausführen des Skripts die folgenden Codezeilen im generierten Skript, wie nachstehend beschrieben:
 
    ```powershell
    # AD FS Help generated value
