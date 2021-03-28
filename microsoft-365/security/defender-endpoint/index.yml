@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft Defender for Endpoint-Dokumentation
-summary: Microsoft Defender for Endpoint bietet vorbeugenden Schutz, Erkennung nach Sicherheitsverletzungen, automatisierte Untersuchung und Reaktion.
+title: Microsoft Defender für Endpunkt-Dokumentation
+summary: Microsoft Defender für Endpunkt liefert präventiven Schutz, Erkennung nach einem Angriff, automatisierte Untersuchung und Reaktion.
 metadata:
-  title: Microsoft Defender for Endpoint-Dokumentation
-  description: Erfahren Sie mehr über Microsoft Defender for Endpoint, und maximieren Sie die integrierten Sicherheitsfunktionen zum Schutz von Geräten, zum Erkennen bösartiger Aktivitäten und zur Behebung von Bedrohungen# Erforderlich; Artikelbeschreibung, die in den Suchergebnissen angezeigt wird. < 160 Zeichen.
+  title: Microsoft Defender für Endpunkt-Dokumentation
+  description: Erfahren Sie mehr über Microsoft Defender für Endpunkt, und maximieren Sie die integrierten Sicherheitsfunktionen zum Schützen von Geräten, Erkennen von böswilligen Aktivitäten und Zur Behebung von Bedrohungen# Erforderlich; Artikelbeschreibung, die in den Suchergebnissen angezeigt wird. < 160 Zeichen.
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: efa23f4c40021d95185203c22c8bba5009e15f2f
   ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: de-DE
   ms.lasthandoff: 03/24/2021
   ms.locfileid: "51185743"
@@ -28,33 +28,33 @@ landingContent:
       url: microsoft-defender-endpoint.md
   - linkListType: whats-new
     links:
-    - text: Neues in Microsoft Defender for Endpoint
+    - text: Neuigkeiten in Microsoft Defender für Endpunkt
       url: whats-new-in-microsoft-defender-atp.md
   - linkListType: video
     links:
-    - text: Übersichtsvideo
+    - text: Video "Übersicht"
       url: https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0
-- title: Auswerten & Bereitstellen des Diensts
+- title: Auswerten und Bereitstellen des Diensts
   linkLists:
   - linkListType: get-started
     links:
-    - text: Bewerten von Microsoft Defender for Endpoint
+    - text: Auswerten des Microsoft Defender für Endpunkt
       url: evaluation-lab.md
-    - text: Ihre Bereitstellung planen
+    - text: Planen Ihrer Bereitstellung
       url: deployment-strategy.md
   - linkListType: deploy
     links:
     - text: Bereitstellungshandbuch
       url: deployment-phases.md
-    - text: Onboarding unterstützter Geräte
+    - text: Onboarding von unterstützten Geräten
       url: onboard-configure.md
   - linkListType: how-to-guide
     links:
-    - text: Migrationsleitfaden
+    - text: Migrationshandbuch
       url: migration-guides.md
   - linkListType: video
     links:
-    - text: Onboardingvideo
+    - text: Video "Onboarding"
       url: https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr
 - title: Sicherheitsvorgänge
   linkLists:
@@ -62,27 +62,27 @@ landingContent:
     links:
     - text: Erkennung und Reaktion am Endpunkt
       url: overview-endpoint-detection-response.md
-    - text: Verhaltensblockierung und -eindämmung
+    - text: Verhaltensbasiertes Blockieren und Eindämmen
       url: behavioral-blocking-containment.md
-    - text: Automatisierte Untersuchung und Reaktion (AIR)
+    - text: Automated Investigation and Response (AIR)
       url: automated-investigations.md
-    - text: Erweiterte Suche
+    - text: Erweiterte Bedrohungssuche
       url: advanced-hunting-overview.md
     - text: Microsoft-Bedrohungsexperten
       url: microsoft-threat-experts.md
     - text: Bedrohungsanalyse
       url: threat-analytics.md
-- title: Verwenden von Microsoft Defender for Endpoint auf anderen Plattformen
+- title: Verwenden von Microsoft Defender für Endpunkt auf anderen Plattformen
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft Defender für Endpoint für Mac
+    - text: Microsoft Defender für Endpunkt für Mac
       url: microsoft-defender-endpoint-mac.md
     - text: Microsoft Defender für Endpunkt für iOS
       url: microsoft-defender-endpoint-ios.md
-    - text: Microsoft Defender for Endpoint for Linux
+    - text: Microsoft Defender für Endpunkt für Linux
       url: microsoft-defender-endpoint-linux.md
-    - text: Microsoft Defender für Endpoint für Android
+    - text: Microsoft Defender für Endpunkt für Android
       url: microsoft-defender-endpoint-android.md
 - title: Referenz
   linkLists:
@@ -90,15 +90,15 @@ landingContent:
     links:
     - text: Verwaltung und APIs
       url: management-apis.md
-    - text: Partnerintegration
+    - text: Partner-Integration
       url: partner-integration.md
 - title: Sicherheitsverwaltung
   linkLists:
   - linkListType: overview
     links:
-    - text: Sicherheitsrisikoverwaltung & Bedrohungen
+    - text: Bedrohungs- und Sicherheitsrisikomanagement
       url: next-gen-threat-and-vuln-mgt.md
-    - text: Angriffsfläche verringern
+    - text: Verringerung der Angriffsfläche
       url: overview-attack-surface-reduction.md
     - text: Schutz der nächsten Generation
       url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10
