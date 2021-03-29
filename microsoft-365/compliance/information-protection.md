@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Implementieren Sie Microsoft Information Protection (MIP), um vertrauliche Informationen unabhängig davon, wo sie sich befinden oder unterwegs sind, zu schützen.
-ms.openlocfilehash: 285b5885f56151bcbd877eb6ede04447c7a405dc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e8487bf443592fa45b887929f947b701406dba55
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927039"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394693"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365
 
@@ -47,8 +47,8 @@ Informationen zum Kontrolle Ihrer Daten finden Sie unter [Microsoft Information 
 Verwenden Sie die folgenden Funktionen, um Ihre Datenlandschaft zu verstehen und wichtige Daten in Ihrer Hybridumgebung zu ermitteln:
  
 |Funktion|Welches Probleme löst es für Sie?|Erste Schritte|
-|:------|:------------|:--------------------|:-----------------------------|
-|[Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)| Identifiziert vertrauliche Daten mithilfe von integrierten oder benutzerdefinierten regulären Ausdrücken oder einer Funktion. Bestätigende Beweisen umfassen Schlüsselwörter, Konfidenzniveau und Näherung.| [Anpassen eines integrierten, vertraulichen Informationstyps](customize-a-built-in-sensitive-information-type.md)|
+|:------|:------------|:--------------------|
+|[Typen vertraulicher Informationen](sensitive-information-type-learn-about.md)| Identifiziert vertrauliche Daten mithilfe von integrierten oder benutzerdefinierten regulären Ausdrücken oder einer Funktion. Bestätigende Beweisen umfassen Schlüsselwörter, Konfidenzniveau und Näherung.| [Anpassen eines integrierten, vertraulichen Informationstyps](customize-a-built-in-sensitive-information-type.md)|
 |[Trainierbare Klassifizierer](classifier-learn-about.md)| Identifiziert vertrauliche Daten anhand von Beispielen für die Daten, an denen Sie interessiert sind, anstatt Elemente im Objekt zu identifizieren (Mustervergleich). Sie können integrierte Klassifizierer verwenden oder einen Klassifizierer mit Ihren eigenen Inhalten trainieren.| [Erste Schritte mit trainierbaren Klassifizierern](classifier-get-started-with.md) |
 |[Datenklassifizierung](data-classification-overview.md) | Eine grafische Kennzeichnung von Objekten in Ihrer Organisation, die eine Vertraulichkeitsbezeichnung oder eine Aufbewahrungskennzeichnung haben oder klassifiziert wurden. Sie können diese Informationen auch verwenden, um Insights in die Aktionen zu erhalten, die Ihre Benutzer auf diesen Objekten ausführen. | [Erste Schritte mit dem Inhalts-Explorer](data-classification-content-explorer.md)<br /><br /> [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md) |
 
@@ -57,7 +57,7 @@ Verwenden Sie die folgenden Funktionen, um Ihre Datenlandschaft zu verstehen und
 Verwenden Sie die folgenden Funktionen, um flexible Schutzmaßnahmen wie Verschlüsselung, Zugriffsbeschränkungen und visuelle Markierungen anzuwenden:
 
 |Funktion|Welches Probleme löst es für Sie?|Erste Schritte|
-|:------|:------------|---------------------|:----------------------------|
+|:------|:------------|---------------------|
 |[Vertraulichkeitsbezeichnungen](sensitivity-labels.md)| Eine einzige Lösung über Apps, Dienste und Geräte hinweg, um Ihre Daten zu kennzeichnen und zu schützen, während sie innerhalb und außerhalb Ihres Unternehmens übertragen werden. <br /><br />Beispielszenarien: <br /> [Verwalten von Vertraulichkeitsbezeichnungen für Office-Apps](sensitivity-labels-office-apps.md)<br /> [Verschlüsseln von Dokumenten und E-Mails](encryption-sensitivity-labels.md )<br /> [Anwenden und Anzeigen von Bezeichnungen in Power BI](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> Eine umfassende Liste von Szenarien für Vertraulichkeitsbezeichnungen finden Sie in der Dokumentation „Erste Schritte“.|[Erste Schritte mit Vertraulichkeitsbezeichnungen](get-started-with-sensitivity-labels.md) |
 |[Azure Information Protection-Client für einheitliche Bezeichnungen](/azure/information-protection/rms-client/aip-clientv2)| Erweitert auf Windows-Computern die Vertraulichkeitsbezeichnungen für zusätzliche Features und Funktionen, die das Bezeichnen und Schützen aller Dateitypen aus dem Datei-Explorer und PowerShell umfassen.<br /><br /> Beispiel für zusätzliche Features: [Benutzerdefinierte Konfigurationen für den Azure Information Protection-Client für einheitliche Bezeichnungen](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure Information Protection-Client für einheitliche Bezeichnungen – Leitfaden für Administratoren](/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Verschlüsselung mit Doppelschlüssel](double-key-encryption.md)| Unabhängig von den Umständen kann nur Ihre Organisation geschützte Inhalte entschlüsseln, und im Falle behördlicher Vorschriften müssen die Verschlüsselungsschlüssel innerhalb einer geographischen Region aufbewahrt werden. | [Bereitstellen der Verschlüsselung mit Doppelschlüssel](double-key-encryption.md#deploy-dke)|
@@ -76,6 +76,9 @@ Verwenden Sie die folgenden Funktionen, um die versehentliche Freigabe vertrauli
 
 
 |Funktion|Welches Probleme löst es für Sie?|Erste Schritte|
-|:------|:------------|:---------------------|:-----------------------------|
-|[Verhinderung von Datenverlust (Data Loss Prevention, DLP)](data-loss-prevention-policies.md)| Hilft, die unbeabsichtigte Freigabe von vertraulichen Elementen zu verhindern. <br /><br />Beispielszenario: [Schutz vertraulicher Informationen in Microsoft Teams-Chat- und Kanalnachrichten](dlp-microsoft-teams.md) | [Erste Schritte mit der standardmäßigen DLP-Richtlinie](get-started-with-the-default-dlp-policy.md)|
+|:------|:------------|:---------------------|
+|[Verhinderung von Datenverlust (Data Loss Prevention, DLP)](data-loss-prevention-policies.md)| Hilft, die unbeabsichtigte Freigabe von vertraulichen Elementen zu verhindern. | [Erste Schritte mit der standardmäßigen DLP-Richtlinie](get-started-with-the-default-dlp-policy.md)|
 |[Informationen zu Endpunkt-DLP](endpoint-dlp-learn-about.md)| Erweitert die DLP-Funktionen auf Elemente, die auf Windows 10-Computern verwendet und freigegeben werden. | [Endpunkt-DLP – Erste Schritte](endpoint-dlp-getting-started.md)|
+|[Erfahren Sie mehr über die Microsoft Compliance-Erweiterung (Vorschau)](dlp-chrome-learn-about.md) | Erweitert DLP-Funktionen im Chrome-Browser | [Erste Schritte mit der Microsoft Compliance Erweiterung (Vorschau)](dlp-chrome-get-started.md)|
+|[Informationen zum lokalen Microsoft 365-DLP-Scanner (Data Loss Prevention, Verhinderung von Datenverlust) (Vorschau)](dlp-on-premises-scanner-learn.md)|Erweitert die DLP-Überwachung von Dateiaktivitäten und Schutzaktionen für diese Dateien auf lokale Dateifreigaben sowie SharePoint-Ordner und Dokumentbibliotheken.|[Erste Schritte mit dem lokalen Microsoft 365-DLP-Scanner (Data Loss Prevention, Verhinderung von Datenverlust) (Vorschau)](dlp-on-premises-scanner-get-started.md)|
+|[Schutz vertraulicher Informationen in Microsoft Teams-Chat- und Kanalnachrichten](dlp-microsoft-teams.md) | Erweitert einige DLP-Funktionen auf Teamchats und Kanalnachrichten | [Weitere Informationen zur Standardrichtlinie zur Verhinderung von Datenverlust in Microsoft Teams (Vorschau)](dlp-teams-default-policy.md)| 

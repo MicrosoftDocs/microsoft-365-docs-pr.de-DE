@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Konfigurieren Sie Vertraulichkeitsbezeichnungen für die Verschlüsselung, die Ihre Daten durch Einschränken von Zugriff und Nutzung schützt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4b5d25c51560cfe7a4d55419a7de9ce36321e78f
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: f670a3cdefb7b6cd78d24a17fc2e6276274efff3
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034174"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222418"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung
 
@@ -230,7 +230,7 @@ Weitere Informationen, Voraussetzungen und Konfigurationsanweisungen finden Sie 
 > [!IMPORTANT]
 > Nicht alle Bezeichnungs-Assistenten unterstützen alle Optionen, mit denen Benutzer ihre eigenen Berechtigungen zuweisen können. Verwenden Sie diesen Abschnitt, um mehr zu erfahren.
 
-Sie können mithilfe dieser Optionen Benutzern erlauben, Berechtigungen zuzuweisen, wenn sie eine Vertraulichkeitsbezeichnung manuell auf Inhalte anwenden:
+Sie können die folgenden Optionen verwenden, um Benutzern zu erlauben, Berechtigungen zuweisen zu können, wenn sie eine Vertraulichkeitsbezeichnung manuell auf Inhalte anwenden:
 
 - In Outlook kann ein Benutzer für seine ausgewählten Empfänger Einschränkungen auswählen, die der Option [Nicht weiterleiten](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) oder [Nur verschlüsseln](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) entsprechen.
     
@@ -238,7 +238,7 @@ Sie können mithilfe dieser Optionen Benutzern erlauben, Berechtigungen zuzuweis
     
     Um zu überprüfen, welche Outlook-Apps, die die integrierte Bezeichnung verwenden, die Anwendung der Option "Nur verschlüsseln" mit einer Vertraulichkeitsbezeichnung unterstützen, verwenden Sie die [Funktionstabelle für Outlook](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) und die Zeile **Benutzer Berechtigungen zuweisen lassen: – Nur verschlüsseln**.
 
-- In Word, PowerPoint und Excel wird ein Benutzer aufgefordert, eigene Berechtigungen für bestimmte Benutzer, Gruppen oder Organisationen auszuwählen.
+- In Word, PowerPoint und Excel wird ein Benutzer aufgefordert, ihre eigenen Berechtigungen für bestimmte Benutzer, Gruppen oder Organisationen auszuwählen.
 
     Diese Option wird vom Azure Information Protection-Client für einheitliche Bezeichnungen und von einigen Apps, die die integrierte Kennzeichnung verwenden, unterstützt. Bei Apps, die diese Funktion nicht unterstützen, ist die Bezeichnung entweder für die Benutzer nicht sichtbar, oder die Bezeichnung ist für die Konsistenz sichtbar, kann aber nicht mit einer Erklärungsmeldung für die Benutzer angewendet werden.
     
@@ -248,7 +248,7 @@ Wenn die Optionen unterstützt werden, verwenden Sie die folgende Tabelle, um zu
 
 |Einstellung |Die Bezeichnung ist in Outlook sichtbar|Die Bezeichnung ist in Word, Excel, PowerPoint sichtbar|
 |:-----|:-----|:-----|:-----|
-|**In Outlook Einschränkungen mit der Option "Nicht weiterleiten" oder "Nur verschlüsseln" durchsetzen** |Ja |Nein |
+|Setzen Sie **in Outlook Einschränkungen mit der Option "Nicht weiterleiten" oder "Nur verschlüsseln** durch|Ja |Nein |
 |**In Word, PowerPoint und Excel die Benutzer auffordern, Berechtigungen anzugeben**|Nein |Ja|
 
 Wenn beide Einstellungen ausgewählt sind, ist die Bezeichnung sowohl in Outlook als auch in Word, Excel und PowerPoint sichtbar.

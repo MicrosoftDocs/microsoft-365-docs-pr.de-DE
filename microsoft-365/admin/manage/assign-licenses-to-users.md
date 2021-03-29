@@ -5,45 +5,36 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_TOC
-- commerce
 ms.custom:
+- AdminSurgePortfolio
 - TopSMBIssues
 - SaRA
 - okr_SMB
-- AdminSurgePortfolio
 - manage_licenses
+- commerce
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Benutzern Lizenzen zuweisen.
-ms.date: 08/14/2020
-ms.openlocfilehash: 9f044f29cabf4976d5fbf17b22777da62e4414c5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3622be180ae622d5d08066cc03773a8175fe9342
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915494"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398162"
 ---
 # <a name="assign-licenses-to-users"></a>Zuweisen von Lizenzen an Benutzer
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
 Sie können Benutzern entweder auf der Seite **Aktive Benutzer** oder auf der Seite **Lizenzen** Lizenzen zuweisen. Welche Methode Sie verwenden, hängt davon ab, ob Sie bestimmten Benutzern Produktlizenzen zuweisen oder Benutzern Lizenzen für ein bestimmtes Produkt zuweisen möchten.
 
-::: moniker-end
+> [!NOTE]
+> Als Administrator können Sie keine Lizenzen für ein Self-Service-Kaufabonnement zuweisen oder aufheben, die von einem Benutzer in Ihrer Organisation erworben wurden. Sie können ein [Self-Service-Kaufabonnement übernehmen](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)und dann Lizenzen zuweisen oder die Zuweisung von Lizenzen kündigen.
 
 [Erfahren Sie, wie Sie gleichzeitig einen Benutzer hinzufügen und eine Lizenz zuweisen](../add-users/add-users.md).
 
@@ -54,31 +45,58 @@ Sie können Benutzern entweder auf der Seite **Aktive Benutzer** oder auf der Se
 - Informationen zur gruppenbasierten Lizenzierung finden Sie unter [Zuweisen von Lizenzen zu Benutzern mithilfe der Gruppenmitgliedschaft in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 - Einige Dienste, z. B. Sway, werden Benutzern automatisch zugewiesen und müssen nicht einzeln zugewiesen werden.
 
-::: moniker range="o365-worldwide"
-
 ## <a name="use-the-licenses-page-to-assign-licenses-to-users"></a>Verwenden der Seite "Lizenzen", um Benutzern Lizenzen zuzuweisen
 
 Wenn Sie zum Zuweisen von Lizenzen die Seite **Lizenzen** verwenden, können Sie bis zu 20 Benutzern Lizenzen für ein bestimmtes Produkt zuweisen. Auf der Seite **Lizenzen** wird eine Liste aller Produkte angezeigt, die Sie abonniert haben. Außerdem wird die Gesamtanzahl der Lizenzen für jedes Produkt, wie viele Lizenzen zugewiesen sind und wie viele verfügbar sind, angezeigt.
 
+::: moniker range="o365-worldwide"
+
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Lizenzen**.
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Lizenzen**.
+
+::: moniker-end
+
 2. Wählen Sie ein Produkt aus.
 3. Wählen Sie auf der Seite "Produktdetails" **Lizenzen zuweisen** aus.
 4. Beginnen Sie im Bereich **Lizenzen an Benutzer zuweisen** mit der Eingabe eines Namens, und wählen Sie ihn dann aus den Ergebnissen aus, um ihn der Liste hinzuzufügen. Sie können bis zu 20 Benutzer gleichzeitig hinzufügen.
-5. Wählen Sie **Apps und Dienste aktivieren oder deaktivieren** aus, um bestimmte Elemente zuzuweisen oder zu entfernen.
+4. Wählen Sie **Apps und Dienste aktivieren oder deaktivieren** aus, um bestimmte Elemente zuzuweisen oder zu entfernen.
 6. Wählen Sie abschließend **Zuweisen** und dann **Schließen** aus.
 
 Wenn ein Konflikt vorliegt, wird eine Meldung angezeigt, in der Sie erfahren, was das Problem ist und wie Sie es beheben können. Wenn Sie beispielsweise Lizenzen ausgewählt haben, die in Konflikt stehende Dienste enthalten, weist die Fehlermeldung darauf hin, dass Sie die in der jeweiligen Lizenz enthaltenen Dienste überprüfen und es erneut versuchen sollen.
 
 ## <a name="change-the-apps-and-services-a-user-has-access-to"></a>Ändern der Apps und Dienste, auf die ein Benutzer zugreifen kann
 
+::: moniker range="o365-worldwide"
+
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a>.
-2. Wählen Sie auf der Seite **Lizenzen** die Zeile für einen bestimmten Benutzer aus.
-3. Aktivieren bzw. deaktivieren Sie im rechten Bereich die Apps und Dienste, für die Sie Zugriff gewähren oder entfernen möchten.
-4. Wählen Sie abschließend **Speichern** und dann **Schließen** aus.
 
 ::: moniker-end
 
-::: moniker range="o365-worldwide"
+::: moniker range="o365-germany"
+
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Lizenzen**.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Lizenzen**.
+
+::: moniker-end
+
+2. Wählen Sie auf der Seite **Lizenzen** die Zeile für einen bestimmten Benutzer aus.
+3. Aktivieren bzw. deaktivieren Sie im rechten Bereich die Apps und Dienste, für die Sie Zugriff gewähren oder entfernen möchten.
+4. Wählen Sie abschließend **Speichern** und dann **Schließen** aus.
 
 ## <a name="use-the-active-users-page-to-assign-licenses"></a>Verwenden der Seite "Aktive Benutzer" zum Zuweisen von Lizenzen
 
@@ -86,7 +104,24 @@ Wenn Sie Lizenzen über die Seite **Aktive Benutzer** zuweisen, weisen Sie einze
 
 ### <a name="assign-licenses-to-multiple-users"></a>Zuweisen von Lizenzen für mehrere Benutzer
 
+::: moniker range="o365-worldwide"
+
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Aktive Benutzer**.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Aktive Benutzer**.
+
+::: moniker-end
+
 2. Aktivieren Sie die Kreise neben den Namen der Benutzer, denen Sie Lizenzen zuweisen möchten.
 3. Wählen Sie am oberen Rand **Weitere Optionen** (...) und dann **Produktlizenzen verwalten** aus.
 4. Wählen Sie im Bereich **Produktlizenzen verwalten** die Optionen **Zu vorhandenen Produktlizenzzuweisungen hinzufügen** \> **Weiter** aus.
@@ -94,72 +129,29 @@ Wenn Sie Lizenzen über die Seite **Aktive Benutzer** zuweisen, weisen Sie einze
     Standardmäßig werden alle diesen Lizenzen zugeordneten Dienste dem Benutzer automatisch zugewiesen. Sie können die für die Benutzer verfügbaren Dienste einschränken. Setzen Sie die Umschaltfläche für die Dienste, die die Benutzer nicht erhalten sollen, auf die Stellung **Aus**.
 6. Wählen Sie am unteren Rand des Bereichs **Hinzufügen** \> **Schließen** aus.  
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-## <a name="assign-licenses-to-multiple-users"></a>Zuweisen von Lizenzen für mehrere Benutzer
-
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
-2. Aktivieren Sie die Kontrollkästchen neben den Namen der Benutzer, denen Sie Lizenzen zuweisen möchten.
-3. Wählen Sie im Bereich **Massenaktionen** die Option **Produktlizenzen bearbeiten** aus.
-4. Wählen Sie im Bereich **Produkte zuweisen** nacheinander **Zu vorhandenen Produktlizenzzuweisungen hinzufügen** \> **Weiter** aus.
-5. Setzen Sie die Umschaltfläche für die Lizenzen, die die ausgewählten Benutzer erhalten sollen, auf die Stellung **Ein**.\
-    Standardmäßig werden alle diesen Lizenzen zugeordneten Dienste dem Benutzer automatisch zugewiesen. Sie können die für die Benutzer verfügbaren Dienste einschränken. Setzen Sie die Umschaltfläche für die Dienste, die die Benutzer nicht erhalten sollen, auf die Stellung **Aus**.
-6. Wählen Sie unten im Bereich **Zu vorhandenen Produkten hinzufügen** **Hinzufügen** \> **Schließen** \> **Schließen** aus.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-## <a name="assign-licenses-to-multiple-users"></a>Zuweisen von Lizenzen für mehrere Benutzer
-
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
-2. Aktivieren Sie die Kontrollkästchen neben den Namen der Benutzer, denen Sie Lizenzen zuweisen möchten.
-3. Wählen Sie im Bereich **Massenaktionen** die Option **Produktlizenzen bearbeiten** aus.
-4. Wählen Sie im Bereich **Produkte zuweisen** nacheinander **Zu vorhandenen Produktlizenzzuweisungen hinzufügen** \> **Weiter** aus.
-5. Setzen Sie die Umschaltfläche für die Lizenzen, die die ausgewählten Benutzer erhalten sollen, auf die Stellung **Ein**.\
-    Standardmäßig werden alle diesen Lizenzen zugeordneten Dienste dem Benutzer automatisch zugewiesen. Sie können die für die Benutzer verfügbaren Dienste einschränken. Setzen Sie die Umschaltfläche für die Dienste, die die Benutzer nicht erhalten sollen, auf die Stellung **Aus**.
-6. Wählen Sie unten im Bereich **Zu vorhandenen Produkten hinzufügen** **Hinzufügen** \> **Schließen** \> **Schließen** aus.
-
-::: moniker-end
+### <a name="assign-licenses-to-one-user"></a>Zuweisen von Lizenzen an einen Benutzer
 
 ::: moniker range="o365-worldwide"
 
-### <a name="assign-licenses-to-one-user"></a>Zuweisen von Lizenzen an einen Benutzer
-
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
-2. Aktivieren Sie die Zeile des Benutzers, dem Sie eine Lizenz zuweisen möchten.
-3. Wählen Sie im rechten Bereich **Lizenzen und Apps** aus.
-4. Erweitern Sie den Abschnitt **Lizenzen**, aktivieren Sie die Kontrollkästchen für die Lizenzen, die Sie zuweisen möchten, und wählen Sie dann **Änderungen speichern** aus.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-## <a name="assign-licenses-to-one-user"></a>Zuweisen von Lizenzen an einen Benutzer
-
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
-2. Aktivieren Sie das Kontrollkästchen neben dem Namen des Benutzers, dem Sie eine Lizenz zuweisen möchten.
-3. Wählen Sie im rechten Bereich in der Zeile **Produktlizenzen** die Option **Bearbeiten** aus.
-4. Setzen Sie im Bereich **Produktlizenzen** die Umschaltfläche auf die Stellung **Ein** für die Lizenz, die Sie diesem Benutzer zuweisen möchten.\
-    Standardmäßig werden alle dieser Lizenz zugeordneten Dienste dem Benutzer automatisch zugewiesen. Sie können die für den Benutzer verfügbaren Dienste einschränken. Setzen Sie die Umschaltfläche für die Dienste, die dieser Benutzer nicht erhalten soll, auf die Stellung **Aus**.
-5. Wählen Sie unten im Bereich **Produktlizenzen** nacheinander **Speichern** \> **Schließen** \> **Schließen** aus.
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Aktive Benutzer**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-## <a name="assign-licenses-to-one-user"></a>Zuweisen von Lizenzen an einen Benutzer
-
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
-2. Aktivieren Sie das Kontrollkästchen neben dem Namen des Benutzers, dem Sie eine Lizenz zuweisen möchten.
-3. Wählen Sie im rechten Bereich in der Zeile **Produktlizenzen** die Option **Bearbeiten** aus.
-4. Setzen Sie im Bereich **Produktlizenzen** die Umschaltfläche auf die Stellung **Ein** für die Lizenz, die Sie diesem Benutzer zuweisen möchten.\
-    Standardmäßig werden alle dieser Lizenz zugeordneten Dienste dem Benutzer automatisch zugewiesen. Sie können die für den Benutzer verfügbaren Dienste einschränken. Setzen Sie die Umschaltfläche für die Dienste, die dieser Benutzer nicht erhalten soll, auf die Stellung **Aus**.
-5. Wählen Sie unten im Bereich **Produktlizenzen** nacheinander **Speichern** \> **Schließen** \> **Schließen** aus.
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Aktive Benutzer**.
 
 ::: moniker-end
+
+2. Aktivieren Sie die Zeile des Benutzers, dem Sie eine Lizenz zuweisen möchten.
+3. Wählen Sie im rechten Bereich **Lizenzen und Apps** aus.
+4. Erweitern Sie den Abschnitt **Lizenzen**, aktivieren Sie die Kontrollkästchen für die Lizenzen, die Sie zuweisen möchten, und wählen Sie dann **Änderungen speichern** aus.
 
 ## <a name="assign-a-license-to-a-guest-user"></a>Zuweisen einer Lizenz an einen Gastbenutzer
 

@@ -140,7 +140,7 @@
 ###### [Übersicht über die Gerätesteuerung](mac-device-control-overview.md)
 ###### [JAMF-Beispiele](mac-device-control-jamf.md)
 ###### [Intune-Beispiele](mac-device-control-intune.md)
-##### [Scans planen](mac-schedule-scan-atp.md)
+##### [Scans planen](mac-schedule-scan.md)
 
 #### [Problembehandlung]()
 ##### [Problembehandlung bei Problemen mit Installation und Update](mac-support-install.md)
@@ -354,7 +354,7 @@
 #### [Allgemein]()
 ##### [Überprüfen des Speicherorts der Daten und Aktualisieren der Einstellungen für die Datenaufbewahrung](data-retention-settings.md)
 ##### [Warnungsbenachrichtigungen konfigurieren](configure-email-notifications.md)
-##### [Erweiterte Funktionen konfigurieren] (advanced-features.md
+##### [Konfigurieren erweiterter Funktionen](advanced-features.md)
 
 #### [Berechtigungen]()
 ##### [Verwenden von grundlegenden Berechtigungen für den Zugriff auf das Portal](basic-permissions.md)
@@ -587,5 +587,5 @@
 ##### [Regeln zur Verringerung der Angriffsfläche](troubleshoot-asr.md)
 
 # [Microsoft 365 Security](../index.yml)
-# [Microsoft 365 Defender](../defender/index.yml)
+# [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 # [Defender for Office 365](../office-365-security/overview.md)
