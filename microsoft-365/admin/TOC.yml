@@ -57,7 +57,7 @@
     - name: Übersicht über das Microsoft 365 Admin Center
       items:
         - name: Übersicht über das Admin Center
-          href: admin-overview/about-the-admin-center.md
+          href: ../business-video/admin-center-overview.md
         - name: Info zu Administratorrollen
           href: add-users/about-admin-roles.md
         - name: Mobile Admin-App

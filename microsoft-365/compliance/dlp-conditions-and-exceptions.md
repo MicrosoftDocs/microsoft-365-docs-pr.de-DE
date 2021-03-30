@@ -1,5 +1,5 @@
 ---
-title: DLP-Richtlinienbedingungen, Ausnahmen und Aktionen (Vorschau)
+title: DLP-Richtlinienbedingungen, -Ausnahmen und -Aktionen
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu dlp-Richtlinienbedingungen und -Ausnahmen
-ms.openlocfilehash: 02880a89bf580d94bad4a5dbdce5027b0a194487
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cf9bc4ea220c319233a5eaec09352045190883e2
+ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918011"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418021"
 ---
-# <a name="dlp-policy-conditions-exceptions-and-actions-preview"></a>DLP-Richtlinienbedingungen, Ausnahmen und Aktionen (Vorschau)
+# <a name="dlp-policy-conditions-exceptions-and-actions"></a>DLP-Richtlinienbedingungen, -Ausnahmen und -Aktionen
 
 Bedingungen und Ausnahmen in DLP-Richtlinien identifizieren vertrauliche Elemente, auf die die Richtlinie angewendet wird. Aktionen definieren, was als Folge einer Bedingung der Ausnahme erfüllt wird.
 
@@ -56,13 +56,15 @@ In den Tabellen in den folgenden Abschnitten werden die Bedingungen und Ausnahme
 | Absenderadresse entspricht Mustern    | bedingung: *FromAddressMatchesPatterns* <br/> Ausnahme: *ExceptFromAddressMatchesPatterns*       |      Muster   |  Nachrichten, bei denen die E-Mail-Adresse des Absenders Textmuster enthält, die mit dem angegebenen regulären Ausdruck übereinstimmen.  |
 |Absenderdomäne ist  |  Bedingung: *SenderDomainIs* <br/> Ausnahme: *ExceptIfSenderDomainIs*       |DomainName         |     Nachrichten, bei denen die Domäne der E-Mail-Adresse des Absenders dem angegebenen Wert entspricht. Wenn Sie Absenderdomänen  suchen müssen, die die angegebene Domäne enthalten (z. B. eine beliebige Unterdomäne einer Domäne), verwenden Sie **die** Bedingung Absenderadresse entspricht (*FromAddressMatchesPatterns*) und geben Sie die Domäne mit der Syntax " \. domain \. com$" an.    |
 |Absenderbereich    | Bedingung: *FromScope* <br/> Ausnahme: *ExceptIfFromScope*    | UserScopeFrom    |    Nachrichten, die von internen oder externen Absendern gesendet werden.    |
+|Die angegebenen Eigenschaften des Absenders enthalten eines dieser Wörter|Bedingung: *SenderADAttributeContainsWords* <br/> Ausnahme: *ExceptIfSenderADAttributeContainsWords*|First-Eigenschaft: `ADAttribute` <p> Zweite Eigenschaft: `Words`|Nachrichten, bei denen das angegebene Active DirectoryAttribut des Absenders eines der angegebenen Wörter enthält.|
+|Die angegebenen Eigenschaften des Absenders entsprechen diesen Textmustern|Bedingung: *SenderADAttributeMatchesPatterns* <br/> Ausnahme: *ExceptIfSenderADAttributeMatchesPatterns*|First-Eigenschaft: `ADAttribute` <p> Zweite Eigenschaft: `Patterns`|Nachrichten, bei denen das angegebene Active Directory-Attribut des Absenders Textmuster enthält, die mit dem angegebenen regulären Ausdruck übereinstimmen.|
 
 ### <a name="recipients"></a>Empfänger
 
 |**Bedingung oder Ausnahme in DLP**| **Bedingungs-/Ausnahmeparameter in Microsoft 365 PowerShell** |    **Eigenschaftstyp** | **description**|
 |---------|---------|---------|---------|
 |Empfänger lautet|  Bedingung: *SentTo* <br/> Ausnahme: *ExceptIfSentTo* | Addresses | Nachrichten, bei denen es sich bei einem der Empfänger um das angegebene Postfach, den E-Mail-Benutzer oder den E-Mail-Kontakt in der Organisation handelt. Die Empfänger können in den Feldern **To**, **Cc** oder **Bcc** der Nachricht angegeben werden.  |
-|Empfängerdomäne lautet|   Bedingung: *RecipientDomainIs* <br/> Ausnahme: *ExceptIfRecipientDomainIs* |   DomainName |    Nachrichten, bei denen die Domäne der E-Mail-Adresse des Absenders dem angegebenen Wert entspricht.|
+|Empfängerdomäne lautet|   Bedingung: *RecipientDomainIs* <br/> Ausnahme: *ExceptIfRecipientDomainIs* |   DomainName |    Nachrichten, bei denen die Domäne der E-Mail-Adresse des Empfängers dem angegebenen Wert entspricht.|
 |Empfängeradresse enthält Wörter|  condition: *AnyOfRecipientAddressContainsWords* <br/> Ausnahme: *ExceptIfAnyOfRecipientAddressContainsWords*|  Words|  Nachrichten, die die angegebenen Wörter in der E-Mail-Adresse des Empfängers enthalten. <br/>**Hinweis**: Diese Bedingung berücksichtigt keine Nachrichten, die an Proxyadressen des Empfängers gesendet werden. Es werden nur Nachrichten berücksichtigt, die an die primäre E-Mail-Adresse des Empfängers gesendet werden.|
 |Empfängeradresse entspricht Mustern| condition: *AnyOfRecipientAddressMatchesPatterns* <br/> Ausnahme: *ExceptIfAnyOfRecipientAddressMatchesPatterns*| Muster    |Nachrichten, bei denen die E-Mail-Adresse des Empfängers Textmuster enthält, die mit dem angegebenen regulären Ausdruck übereinstimmen. <br/> **Hinweis**: Diese Bedingung berücksichtigt keine Nachrichten, die an Proxyadressen des Empfängers gesendet werden. Es werden nur Nachrichten berücksichtigt, die an die primäre E-Mail-Adresse des Empfängers gesendet werden.|
 |An Mitglied von gesendet| Bedingung: *SentToMemberOf* <br/> Ausnahme: *ExceptIfSentToMemberOf*|  Addresses|  Nachrichten, die Empfänger enthalten, die Mitglied der angegebenen Verteilergruppe, E-Mail-aktivierten Sicherheitsgruppe oder Microsoft 365-Gruppe sind. Die Gruppe kann in den Feldern **To**, **Cc** oder **Bcc** der Nachricht sein.|
@@ -90,6 +92,8 @@ In den Tabellen in den folgenden Abschnitten werden die Bedingungen und Ausnahme
 |Dokumentname entspricht Mustern|bedingung: *DocumentNameMatchesPatterns* <br/> Ausnahme: *ExceptIfDocumentNameMatchesPatterns*|    Muster    |Nachrichten, bei denen der Dateiname einer Anlage Textmuster enthält, die mit dem angegebenen regulären Ausdruck übereinstimmen.|
 |Dokumenteigenschaft lautet|Bedingung: *ContentPropertyContainsWords* <br/> Ausnahme: *ExceptIfContentPropertyContainsWords* |Words| Nachrichten oder Dokumente, bei denen die Dateierweiterung einer Anlage einem der angegebenen Wörter entspricht.|
 |Dokumentgröße gleich oder größer als| bedingung: *DocumentSizeOver* <br/> Ausnahme: *ExceptIfDocumentSizeOver*|    Size    |Nachrichten, bei denen eine Anlage größer oder gleich dem angegebenen Wert ist.|
+|Der Inhalt einer Anlage enthält eines der folgenden Wörter:| Bedingung: *DocumentContainsWords* <br/> Ausnahme: *ExceptIfDocumentContainsWords* |`Words`|Nachrichten, bei denen eine Anlage die angegebenen Wörter enthält.|
+|Inhalt von Anlagen entspricht diesen Textmustern|Bedingung: *DocumentMatchesPatterns* <br/> Ausnahme: *ExceptIfDocumentMatchesPatterns* |`Patterns`|Nachrichten, bei denen eine Anlage Textmuster enthält, die mit dem angegebenen regulären Ausdruck übereinstimmen. |
 
 ### <a name="message-headers"></a>Nachrichtenkopfzeilen
 
@@ -102,11 +106,11 @@ In den Tabellen in den folgenden Abschnitten werden die Bedingungen und Ausnahme
 
 |**Bedingung oder Ausnahme in DLP**| **Bedingungs-/Ausnahmeparameter in Microsoft 365 PowerShell**| **Eigenschaftstyp**   |**description**|
 |---------|---------|---------|---------|
-|Nachrichtengröße über|Bedingung: *MessageSizeOver* <br/> Ausnahme: *ExceptIfMessageSizeOver*| Size    |Nachrichten, deren Gesamtgröße (Nachricht sowie Anlagen) größer oder gleich dem angegebenen Wert ist. <br/>**Hinweis**: Grenzwerte für die Nachrichtengröße für Postfächer werden vor E-Mail-Flussregeln ausgewertet. Eine Nachricht, die für ein Postfach zu groß ist, wird zurückgewiesen, bevor eine Regel mit dieser Bedingung auf diese Nachricht angewendet wird.  |
 | Mit Wichtigkeit    | bedingung: *WithImportance* <br/> Ausnahme: *ExceptIfWithImportance*    | Importance    | Nachrichten, die mit der angegebenen Wichtigkeitsstufe markiert sind.    |
 | Inhaltszeichensatz enthält Wörter    | Bedingung: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*    | CharacterSets    | Nachrichten, die beliebige der angegebenen Zeichensatznamen enthalten.    |
 | Absenderüberschreibung    | Bedingung: *HasSenderOverride* <br/> Ausnahme: *ExceptIfHasSenderOverride*    | N/V    | Nachrichten, bei denen der Absender ausgewählt hat, eine Data Loss Prevention (DLP)-Richtlinie außer Kraft zu setzen. Weitere Informationen zu DLP-Richtlinien finden Sie unter [Verhinderung von Datenverlust.](./data-loss-prevention-policies.md)   |
 | Übereinstimmungen mit dem Nachrichtentyp    | bedingung: *MessageTypeMatches* <br/> Ausnahme: *ExceptIfMessageTypeMatches*    | MessageType    | Nachrichten vom angegebenen Typ.    |
+|Die Nachrichtengröße ist größer als oder gleich| Bedingung: *MessageSizeOver* <br/> Ausnahme: *ExceptIfMessageSizeOver* |`Size`|Nachrichten, deren Gesamtgröße (Nachricht sowie Anlagen) größer oder gleich dem angegebenen Wert ist. **Hinweis**: Grenzwerte für die Nachrichtengröße für Postfächer werden vor E-Mail-Flussregeln ausgewertet. Eine Nachricht, die für ein Postfach zu groß ist, wird zurückgewiesen, bevor eine Regel mit dieser Bedingung auf diese Nachricht angewendet wird.|
 
 ## <a name="actions-for-dlp-policies"></a>Aktionen für DLP-Richtlinien
 
@@ -122,5 +126,6 @@ In dieser Tabelle werden die Aktionen beschrieben, die in DLP verfügbar sind.
 |Weiterleiten der Nachricht zur Genehmigung an bestimmte genehmigende Benutzer| Mittel|First-Eigenschaft: *ModerateMessageByUser*</br>Zweite Eigenschaft: *Addresses*|Der Parameter Moderate gibt eine Aktion für die DLP-Regel an, die die E-Mail-Nachricht an einen Moderator sendet. Dieser Parameter verwendet die Syntax: @{ ModerateMessageByUser = @("emailaddress1","emailaddress2",..."emailaddressN")}|
 |Empfänger hinzufügen|AddRecipients|First-Eigenschaft: *Field*</br>Zweite Eigenschaft: *Addresses*| Fügt dem Feld An/Cc/Bcc der Nachricht einen oder mehrere Empfänger hinzu. Dieser Parameter verwendet die Syntax: @{<AddToRecipients \| CopyTo \| BlindCopyTo> = "emailaddress"}|
 |Hinzufügen des Vorgesetzten des Absenders als Empfänger|AddRecipients | First-Eigenschaft: *AddedManagerAction*</br>Zweite Eigenschaft: *Field* | Fügt den Vorgesetzten des Absenders als angegebenen Empfängertyp der Nachricht hinzu ( To, Cc, Bcc ) oder leitet die Nachricht an den Vorgesetzten des Absenders ohne Benachrichtigung des Absenders oder des Empfängers um. Diese Aktion funktioniert nur, wenn das Manager -Attribut des Absenders in Active Directory definiert ist. Dieser Parameter verwendet die Syntax: @{AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}|    
-Vordefinierter Betreff    |PrependSubject    |String    |Fügt den angegebenen Text am Anfang des Felds Subject der Nachricht ein. Verwenden Sie ein Leerzeichen oder einen Doppelpunkt (:) als letztes Zeichen des angegebenen Texts, um ihn vom ursprünglichen Betrefftext zu unterscheiden.</br>Um zu verhindern, dass nachrichten, die bereits den Text im Betreff enthalten (z. B. Antworten), dieselbe Zeichenfolge hinzugefügt werden, fügen Sie der Regel die Ausnahme "Der Betreff enthält Wörter" (ExceptIfSubjectContainsWords) hinzu.    |
-Anwenden eines HTML-Haftungsausschlusses    |ApplyHtmlDisclaimer    |First-Eigenschaft: *Text*</br>Zweite Eigenschaft: *Location*</br>Dritte Eigenschaft: *Fallbackaktion*    |Wendet den angegebenen HTML-Haftungsausschluss auf den erforderlichen Speicherort der Nachricht an.</br>Dieser Parameter verwendet die Syntax: @{ Text = " " ; Location = <Append \| Prepend>; FallbackAction = <\| Wrap Ignore \| Reject> }
+Vordefinierter Betreff    |PrependSubject    |String    |Fügt den angegebenen Text am Anfang des Felds Subject der Nachricht ein. Verwenden Sie ein Leerzeichen oder einen Doppelpunkt (:) als letztes Zeichen des angegebenen Texts, um ihn vom ursprünglichen Betrefftext zu unterscheiden.</br>Um zu verhindern, dass nachrichten, die bereits den Text im Betreff enthalten (z. B. Antworten), dieselbe Zeichenfolge hinzugefügt werden, fügen Sie der Regel die Ausnahme "Der Betreff enthält Wörter" (ExceptIfSubjectContainsWords) hinzu.    
+|Anwenden eines HTML-Haftungsausschlusses    |ApplyHtmlDisclaimer    |First-Eigenschaft: *Text*</br>Zweite Eigenschaft: *Location*</br>Dritte Eigenschaft: *Fallbackaktion*    |Wendet den angegebenen HTML-Haftungsausschluss auf den erforderlichen Speicherort der Nachricht an.</br>Dieser Parameter verwendet die Syntax: @{ Text = " " ; Location = <Append \| Prepend>; FallbackAction = <\| Wrap Ignore \| Reject> }
+|Entfernen von Office 365-Nachrichtenverschlüsselung und -rechteschutz    | RemoveRMSTemplate | n/v| Entfernt die auf eine E-Mail angewendete Office 365-Verschlüsselung.|

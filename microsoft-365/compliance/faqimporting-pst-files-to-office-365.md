@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 ms.custom: seo-marvel-apr2020
 description: Dieser Artikel enthält Antworten auf einige häufig gestellte Fragen für Administratoren zum Importieren von PST-Dateien nach Microsoft 365 mithilfe des Office 365-Importdiensts.
-ms.openlocfilehash: adcc84df7aed25f0d51c8fb6a1899bfa56453854
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d775e7cadb71e47cc916a064386971ecd3d08afc
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906789"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408634"
 ---
 # <a name="faq-about-importing-pst-files"></a>Häufig gestellte Fragen zum Importieren von PST-Dateien
 
 **Dieser Artikel ist für Administratoren vorgesehen. Möchten Sie PST-Dateien in Ihr eigenes Postfach importieren? Weitere Informationen finden Sie unter Importieren von [E-Mails, Kontakten und Kalendern aus einer Outlook-PST-Datei](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
-   
+
 Hier sind einige häufig gestellte Fragen zur Verwendung des Office 365-Importdiensts zum Massenimport von PST-Dateien in Microsoft 365-Postfächer. Weitere Informationen zum Importieren von PST-Dateien finden Sie unter Übersicht über das Importieren von [PST-Dateien in Office 365](./importing-pst-files-to-office-365.md).
   
 ## <a name="using-network-upload-to-import-pst-files"></a>Verwenden des Netzwerkuploads zum Importieren von PST-Dateien
@@ -83,7 +83,7 @@ Beim PST-Importprozess wird eine Überprüfung auf doppelte Elemente durchgefüh
 
  **Gibt es eine Beschränkung der Nachrichtengröße beim Importieren von PST-Dateien?**
   
-Ja. Wenn eine PST-Datei ein Postfachelement enthält, das größer als 150 MB ist, wird das Element beim Importvorgang übersprungen.
+Ja. Wenn eine PST-Datei ein Postfachelement enthält, das größer als 150 MB ist, wird das Element während des Importvorgangs übersprungen und nicht importiert. Elemente, die größer als 150 MB sind, werden nicht importiert, da 150 MB der Grenzwert für die Nachrichtengröße in Exchange Online ist. Weitere Informationen finden Sie unter [Nachrichtenbeschränkungen in Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   
  **Bleiben die Eigenschaften der Nachrichten (z. B. Sende- oder Empfangsdatum, Empfängerliste und andere Eigenschaften) erhalten, wenn PST-Dateien in ein Microsoft 365-Postfach importiert werden?**
   
@@ -156,7 +156,7 @@ Dies hängt von ein paar Dingen ab, z. B. von der Entfernung zum Microsoft-Reche
   
  **Wie lange dauert das Hochladen meiner PST-Dateien nach Azure, nachdem meine Festplatte im Microsoft Data Center eingetroffen ist?**
   
-Nachdem Ihre Festplatte im Microsoft Data Center empfangen wurde, dauert es zwischen 7 und 10 Werktage, bis die PST-Dateien in den Azure Storage-Bereich für Ihre Organisation hochgeladen werden. Die PST-Dateien werden in einen Azure-BLOB-Container mit dem Namen `ingestiondata` hochgeladen. 
+Nachdem Ihre Festplatte im Microsoft Data Center empfangen wurde, dauert es zwischen 7 und 10 Werktage, bis die PST-Dateien in den Azure Storage-Bereich für Ihre Organisation hochgeladen werden. Die PST-Dateien werden in einen Azure-BLOB-Container mit dem Namen `ingestiondata` hochgeladen.
   
  **Wie lange dauert das Importieren einer PST-Datei in ein Postfach?**
   
@@ -178,12 +178,12 @@ Darüber hinaus können PST-Dateien aus Outlook 2007 und neueren Versionen in Of
   
  **Gibt es eine Beschränkung der Nachrichtengröße beim Importieren von PST-Dateien?**
   
-Ja. Wenn eine PST-Datei ein Postfachelement enthält, das größer als 150 MB ist, wird das Element beim Importvorgang übersprungen.
+Ja. Wenn eine PST-Datei ein Postfachelement enthält, das größer als 150 MB ist, wird das Element während des Importvorgangs übersprungen und nicht importiert. Elemente, die größer als 150 MB sind, werden nicht importiert, da 150 MB der Grenzwert für die Nachrichtengröße in Exchange Online ist. Weitere Informationen finden Sie unter [Nachrichtenbeschränkungen in Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   
   **Wie behandelt der PST-Importprozess doppelte E-Mail-Elemente?**
 
 Beim PST-Importprozess wird eine Überprüfung auf doppelte Elemente durchgeführt, und die Elemente werden nicht aus einer PST-Datei in das Postfach oder Archiv kopiert, wenn ein übereinstimmendes Element im Zielordner im Zielpostfach oder -archiv vorliegt. Wenn Sie dieselbe PST-Datei erneut importieren und einen anderen Zielordner (mithilfe der TargetRootFolder-Eigenschaft in der PST-Importzuordnungsdatei) angeben als den, den Sie in einem vorherigen Importauftrag angegeben haben, werden alle Elemente in der PST-Datei erneut importiert.
- 
+
  **Bleiben die Eigenschaften der Nachrichten (z. B. Sende- oder Empfangsdatum, Empfängerliste und andere Eigenschaften) erhalten, wenn PST-Dateien in ein Microsoft 365-Postfach importiert werden?**
   
 Ja. Beim Importvorgang werden die Metadaten der ursprünglichen Nachricht nicht geändert.
@@ -224,6 +224,6 @@ Die Kosten für die Rücksendung variieren je nach Entfernung zum Microsoft-Rech
   
 Ja.
   
- **Was muss ich beachten, wenn ich meine Festplatte in ein anderes Land versenden muss?**
+ **If I have to ship my hard drive to another country, is there anything I need to do?**
   
-Die an Microsoft versendete Festplatte muss möglicherweise internationale Grenzen überqueren. In diesem Falls sind Sie dafür verantwortlich, dass die Festplatte und die darin enthaltenen Daten in Übereinstimmung mit den geltenden Gesetzen importiert und/oder exportiert wurden. Stellen Sie vor dem Versenden einer Festplatten mit Ihren Beratern sicher, dass Ihre Festplatte und die Daten gesetzmäßig an das angegebene Microsoft-Rechenzentrum gesendet werden können. Dies hilft sicherzustellen, dass die Festplatte Microsoft zeitgerecht erreicht.
+The hard drive that you ship to Microsoft might have to cross international borders. Wenn ja, müssen Sie sicherstellen, dass die Festplatte und die daten, die sie enthält, gemäß den geltenden Gesetzen importiert und/oder exportiert werden. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 10b29220e49dcb5fda8b1f7d18e52e10513fc599
-ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
+ms.openlocfilehash: 746f1345b47694f4a4122edc5d89cc924441ea81
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50939656"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408176"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Doppelschlüsselverschlüsselung für Microsoft 365
 
@@ -242,6 +242,8 @@ DkE-Mandanten- und -Schlüsseleinstellungen befinden sich in der **appsettings.j
      "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
    ]
    ```
+> [!NOTE]
+> Wenn Sie den externen B2B-Zugriff auf Ihren Schlüsselspeicher aktivieren möchten, müssen Sie diese externen Mandanten auch in die Liste der gültigen Aussteller aufgenommen haben.
 
 Suchen Sie die `JwtAudience` . Ersetzen `<yourhostname>` Sie durch den Hostnamen des Computers, auf dem der DKE-Dienst ausgeführt wird. Beispiel:
 

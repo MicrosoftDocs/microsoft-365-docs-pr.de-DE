@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie eine Frage zur Funktionsweise der neuen Nachrichtenschutzfunktionen? Suchen Sie hier nach einer Antwort.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ad0ef4f16e5b458da80227b93fab574e3ce8dde
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: 589a28690d1654576ace45edd482b8d67161d616
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394683"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408590"
 ---
 # <a name="message-encryption-faq"></a>Häufig gestellte Fragen zur Nachrichtenverschlüsselung
 
@@ -118,7 +118,7 @@ Wenn ein Dateiformat unterstützt wird, z. B. eine Word-, Excel- oder PowerPoint
   
 ## <a name="are-pdf-file-attachments-supported"></a>Werden PDF-Dateianlagen unterstützt?
 
-Die kurze Antwort lautet Ja! Mit der PDF-Verschlüsselung können Sie vertrauliche PDF-Dokumente durch sichere Kommunikation oder sichere Zusammenarbeit schützen. Wenn Sie E-Mails senden, verschlüsselt der Office 365-Dienst PDF-Dateianlagen, nicht den Outlook-Client.
+Die kurze Antwort lautet Ja! Bei aktivierter PDF-Verschlüsselung können Sie vertrauliche PDF-Dokumente durch sichere Kommunikation oder sichere Zusammenarbeit schützen. Wenn Sie eine E-Mail senden, verschlüsselt der Office 365-Dienst PDF-Dateianlagen. Der Outlook-Client verschlüsselt keine PDF-Dateianlagen.
 
 Für Outlook im Web, Outlook für iOS und Outlook für Android können Sie PDF-Dateien verschlüsseln, die Sie ohne weitere Schritte senden. Diese Clients unterstützen nativ die PDF-Verschlüsselung.
 

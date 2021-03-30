@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: In diesem Artikel werden die Unterschiede zwischen verschiedenen Versionen der Office 365-Nachrichtenverschlüsselung erläutert.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e75a709be6141c4bd1df4e63df677dd263c0777a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5c8b0852220b2144c4ab92ec9b692299c9d2c860
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927733"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408568"
 ---
 # <a name="compare-versions-of-ome"></a>Vergleichen von OME-Versionen
 
@@ -35,23 +35,11 @@ Dieser Artikel ist Teil einer größeren Reihe von Artikeln zur Office 365-Nachr
 
 ## <a name="overview-of-ad-rms-deprecation-in-exchange-online"></a>Übersicht über ad RMS-Veraltetkeit in Exchange Online
 
-Exchange Online enthält IrM-Funktionen (Information Rights Management), die Online- und Offlineschutz für E-Mail-Nachrichten und Anlagen bieten. Standardmäßig verwendet Exchange Online Azure Azure Information Protection. Ihre Organisation hat exchange Online IRM jedoch möglicherweise für die Verwendung des lokalen Active Directory Rights Management Service (AD RMS) konfiguriert. Die AD RMS-Unterstützung in Exchange Online geht in den Rente. Stattdessen ersetzt Azure Information Protection AD RMS vollständig.
+Exchange Online enthält IrM-Funktionen (Information Rights Management), die Online- und Offlineschutz für E-Mail-Nachrichten und Anlagen bieten. Standardmäßig verwendet Exchange Online Azure Information Protection. Ihre Organisation hat exchange Online IRM jedoch möglicherweise für die Verwendung des lokalen Active Directory Rights Management Service (AD RMS) konfiguriert. Die AD RMS-Unterstützung in Exchange Online geht in den Rente. Stattdessen ersetzt Azure Information Protection AD RMS vollständig.
 
-Bevor Sie beginnen, überprüfen und bewerten Sie die Auswirkungen auf Ihre Organisation. Wenn Ihre Organisation bereits Azure Information Protection zum Verschlüsseln von E-Mails in Exchange Online verwendet, können Sie nichts tun. Wenn Sie Ihre E-Mails mithilfe von Exchange-Nachrichtenflussregeln verschlüsseln, z. B. mithilfe der Office 365-Nachrichtenverschlüsselung, müssen Sie Ihre sichere E-Mail nicht ändern. Andernfalls müssen Sie sich auf die Ad RMS-Veraltetkeit vorbereiten, indem Sie zu Azure Information Protection wechseln.
+Informationen dazu, ob sich diese Veraltetkeit auf Ihre Organisation aus wirkt, finden Sie unter Migrieren von AD RMS zu [Azure RMS in Exchange Online](https://support.microsoft.com/help/5001237). Dieser Artikel enthält Empfehlungen zu Migrationsoptionen.
 
-### <a name="prepare-for-ad-rms-deprecation"></a>Vorbereiten der AD RMS-Veraltetkeit
-
-Wenn Sie Azure Information Protection bereits eingerichtet haben, aber nicht verwenden, aktivieren Sie den Dienst mithilfe von Exchange Online PowerShell. Stellen Sie auf Ihrem lokalen Computer mithilfe eines Arbeits- oder Schulkontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, eine Verbindung mit [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) in einem Windows PowerShell herstellen.
-
-Verwenden Sie zum Aktivieren von Azure Information Protection das cmdlet Set-IrmConfiguration, indem Sie den folgenden Befehl eingeben.
-
-```powershell
-Set-IrmConfiguration -AzureRMSLicensingEnabled $true
-```
-
-Wenn Ihre Organisation Azure Information Protection noch nicht eingerichtet hat, müssen Sie von AD RMS zu Azure Information Protection migrieren. Anweisungen finden Sie unter [Migrieren von AD RMS zu Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms).
-
-## <a name="side-by-side-comparison-of-features-and-capabilities"></a>Nebeneinanderer Vergleich von Features und Funktionen
+## <a name="side-by-side-comparison-of-ome-features-and-capabilities"></a>Nebeneinanderer Vergleich von OME-Features und -Funktionen
 
 |           **Situation**           | **Legacy OME**    | **IRM in AD RMS**        | **Neue OME-Funktionen** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
