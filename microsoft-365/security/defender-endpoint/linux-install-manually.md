@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf903bd1b09370dd7de2706b078778137ea029fb
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 98b568206d4263a574c8de653fe5345dd344ba43
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187817"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408547"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a>Manuelles Bereitstellen von Microsoft Defender for Endpoint für Linux
 
@@ -87,7 +87,7 @@ Um eine Vorschau neuer Features anzuzeigen und frühzeitig Feedback zu geben, em
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    Beispiel: Wenn Sie CentOS 7 ausführen und MDE für Linux über den *prod-Kanal bereitstellen* möchten:
+    Beispiel: Wenn Sie CentOS 7 ausführen und Defender for Endpoint für Linux über den *prod-Kanal bereitstellen* möchten:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
@@ -383,6 +383,27 @@ Weitere [Informationen zum](linux-resources.md#log-installation-issues) Suchen d
 ## <a name="operating-system-upgrades"></a>Betriebssystemupgrades
 
 Wenn Sie Ihr Betriebssystem auf eine neue Hauptversion aktualisieren, müssen Sie zunächst Defender for Endpoint für Linux deinstallieren, das Upgrade installieren und schließlich Defender for Endpoint für Linux auf Ihrem Gerät neu konfigurieren.
+
+## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>Migrieren von Insiders-Fast zum Produktionskanal
+
+1. Deinstallieren Sie die Version "Insiders-Fast channel" von MDE für macOS.
+
+    ``
+    sudo yum remove mdatp
+    ``
+
+1. Deaktivieren des MDE für Linux Insiders-Fast Repository  ``
+    sudo yum repolist
+    ``
+
+    > [!NOTE]
+    > Die Ausgabe sollte "packages-microsoft-com-fast-prod" enthalten.
+
+    ``
+    sudo yum-config-manager --disable packages-microsoft-com-fast-prod
+    ``
+1. Erneute Bereitstellung von MDE für Linux mithilfe des "Produktionskanals".
+
 
 ## <a name="uninstallation"></a>Deinstallation
 

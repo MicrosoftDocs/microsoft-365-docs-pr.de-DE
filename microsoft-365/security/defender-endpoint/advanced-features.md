@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 684025441c8400775f469515df1bcd0423d6460b
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: bcb96ea29649bf3525b2ffcf6d5cbb5d299bacf3
+ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394746"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418116"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurieren erweiterter Features in Defender for Endpoint
 
@@ -72,6 +72,9 @@ Wenn diese Einstellung aktiviert ist, werden Warnungen in separaten Vorfällen b
 >Das Ändern dieser Einstellung wirkt sich nur auf zukünftige Warnungskorrelation aus.
 
 
+## <a name="enable-edr-in-block-mode"></a>Aktivieren von EDR im Blockmodus
+Endpunkterkennung und -reaktion (Endpoint Detection and Response, EDR) im Blockmodus bietet Schutz vor schädlichen Artefakten, auch wenn Microsoft Defender Antivirus im passiven Modus ausgeführt wird. Bei aktivierter EDR im Blockmodus werden schädliche Artefakte oder Verhaltensweisen blockiert, die auf einem Gerät erkannt werden. EDR im Blockmodus arbeitet hinter den Kulissen, um bösartige Artefakte zu bewerkden, die nach der Verletzung erkannt werden.
+
 ## <a name="autoresolve-remediated-alerts"></a>Behebung von Warnungen durch Autoresolve
 
 Für Mandanten, die unter oder nach Windows 10, Version 1809, erstellt wurden, ist die automatische Untersuchungs- und Behebungsfunktion standardmäßig so konfiguriert, dass Warnungen aufgelöst werden, bei denen der Ergebnisstatus der automatisierten Analyse "Keine Bedrohungen gefunden" oder "Behoben" ist.  Wenn Warnungen nicht automatisch aufgelöst werden sollen, müssen Sie das Feature manuell deaktivieren.
@@ -115,6 +118,14 @@ Weitere Informationen finden Sie unter [Manage indicators](manage-indicators.md)
 
 > [!NOTE]
 > Der Netzwerkschutz nutzt Reputationsdienste, die Anforderungen an Orten verarbeiten, die sich möglicherweise außerhalb des für Ihre Defender for Endpoint-Daten ausgewählten Speicherorts befinden.
+
+
+## <a name="tamper-protection"></a>Schutz vor Manipulationen
+Bei einigen Arten von Cyberangriffen versuchen schlechte Akteure, Sicherheitsfeatures, z. B. Virenschutz, auf Ihren Computern zu deaktivieren. Schlechte Akteure möchten Ihre Sicherheitsfeatures deaktivieren, um leichteren Zugriff auf Ihre Daten zu erhalten, Schadsoftware zu installieren oder Ihre Daten, Identität und Geräte anderweitig auszunutzen.
+
+Manipulationsschutz sperrt Im Wesentlichen Microsoft Defender Antivirus und verhindert, dass Ihre Sicherheitseinstellungen über Apps und Methoden geändert werden.
+
+Halten Sie den Manipulationsschutz aktiviert, um unerwünschte Änderungen an Ihrer Sicherheitslösung und ihren wesentlichen Features zu verhindern.
 
 ## <a name="show-user-details"></a>Anzeigen von Benutzerdetails
 

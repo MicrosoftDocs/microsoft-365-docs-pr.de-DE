@@ -1,5 +1,5 @@
 ---
-title: Suche nach verfügbar gemachten Geräten
+title: Suchen nach offenen Geräten
 description: Erfahren Sie, wie das Bedrohungs- und Sicherheitsrisikomanagement verwendet werden kann, um Sicherheitsadministratoren, IT-Administratoren und SecOps bei der Zusammenarbeit zu helfen.
 keywords: mdatp-tvm-Szenarien, Mdatp-, TVM-, TVM-Szenarien, Reduzieren der Bedrohung & Sicherheitsrisikoexposition, Verringern von Bedrohungen und Sicherheitsrisiken, Verbessern der Sicherheitskonfiguration, Erhöhen der Microsoft Secure Score für Geräte, Erhöhen der Bedrohung & Sicherheitsrisiko Microsoft Secure Score for Devices, Microsoft Secure Score for Devices, Exposure Score, Sicherheitskontrollen
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9af7464d9cae06dc53abb019aa0b189d6e72e749
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 99e59005bc01a113567e64c921ddcdc1d66785d2
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060828"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408291"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Suche nach verfügbar gemachten Geräten – Bedrohungs- und Sicherheitsrisikoverwaltung
 
@@ -43,13 +43,13 @@ Bei der erweiterten Suche handelt es sich um ein abfragebasiertes Tool für die 
 
 ### <a name="schema-tables"></a>Schematabellen
 
-- [DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) – Inventar der auf Geräten installierten Software, einschließlich der Versionsinformationen und des Status des Endes des Supportstatus
+- [DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) – Inventar der auf Geräten installierten Software, einschließlich der Versionsinformationen und des Status des Supportendes.
 
-- [DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) – Softwarerisiken auf Geräten und die Liste der verfügbaren Sicherheitsupdates, die die einzelnen Sicherheitsrisiken adressieren
+- [DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) – Softwarerisiken, die auf Geräten gefunden werden, und die Liste der verfügbaren Sicherheitsupdates, die die einzelnen Sicherheitsrisiken adressieren.
 
-- [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) – Wissensdatenbank öffentlich offengelegter Sicherheitsrisiken, einschließlich der Frage, ob Exploitcode öffentlich verfügbar ist
+- [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) – Wissensdatenbank öffentlich offengelegter Sicherheitsrisiken, einschließlich der Frage, ob Exploitcode öffentlich verfügbar ist.
 
-- [DeviceTvmSecureConfigurationAssessment – Bewertungsereignisse](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) zur Bedrohungs- und Sicherheitsrisikoverwaltung, die den Status verschiedener Sicherheitskonfigurationen auf Geräten angeben
+- [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) – Ereignisse zur Bewertung der Bedrohungs- und Sicherheitsrisikoverwaltung, die den Status verschiedener Sicherheitskonfigurationen auf Geräten angeben.
 
 - [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) – Wissensdatenbank der verschiedenen Sicherheitskonfigurationen, die von Threat & Vulnerability Management zum Bewerten von Geräten verwendet werden; umfasst Zuordnungen zu verschiedenen Standards und Benchmarks
 

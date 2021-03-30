@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fc9e5fb29518207c5360d5fbe29b8b4848d350e2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 18e43d8e38c24a8aa28c6455dc1a769b8da0df2b
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067504"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408623"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -34,7 +34,9 @@ ms.locfileid: "51067504"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Die Tabelle im Schema für die erweiterte Suche enthält das Inventar & Threat & Vulnerability Management der software, die derzeit auf Geräten in Ihrem Netzwerk installiert ist, einschließlich Der Ende `DeviceTvmSoftwareInventory` der Supportinformationen. [](next-gen-threat-and-vuln-mgt.md) Sie können z. B. nach Ereignissen suchen, die Geräte enthalten, die mit einer derzeit anfälligen Softwareversion installiert sind. Verwenden Sie diese Referenz, um Abfragen zu erstellen, die Informationen aus der Tabelle zurückgeben.
+Die Tabelle im Schema der erweiterten Suche enthält das Bedrohungs- und Sicherheitsrisikoverwaltungsinventar der Software, die derzeit auf Geräten in Ihrem Netzwerk installiert ist, einschließlich der `DeviceTvmSoftwareInventory` Supportinformationen zum [](next-gen-threat-and-vuln-mgt.md) Ende. Sie können z. B. nach Ereignissen suchen, die Geräte enthalten, die mit einer derzeit anfälligen Softwareversion installiert sind. Verwenden Sie diese Referenz, um Abfragen zu erstellen, die Informationen aus der Tabelle zurückgeben.
+
+DeviceTVMSoftwareInventory enthält alle Software, die das Bedrohungs- und Sicherheitsrisikomanagement mit einer Common Platform Enumeration (CPE) übereinstimmen konnte – unabhängig davon, ob es anfällig ist oder nicht.
 
 >[!NOTE]
 >The `DeviceTvmSoftwareInventory` and tables have replaced the `DeviceTvmSoftwareVulnerabilities` `DeviceTvmSoftwareInventoryVulnerabilities` table. Zusammen enthalten die ersten beiden Tabellen weitere Spalten, die Sie verwenden können, um Ihre Aktivitäten zur Verwaltung von Sicherheitslücken zu informieren.
@@ -43,18 +45,16 @@ Informationen zu anderen Tabellen im Schema „Erweiterte Suche“ finden Sie un
 
 | Spaltenname | Datentyp | Beschreibung |
 |-------------|-----------|-------------|
-| `DeviceId` | string | Eindeutige ID für das Gerät im Dienst |
-| `DeviceName` | Zeichenfolge | Vollqualifizierter Domänenname (FQDN) des Geräts |
+| `DeviceId` | string | Eindeutige ID für das Gerät im Dienst. |
+| `DeviceName` | Zeichenfolge | Vollqualifizierter Domänenname (FQDN) des Geräts. |
 | `OSPlatform` | Zeichenfolge | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. |
-| `OSVersion` | string | Version des Betriebssystems, das auf dem Gerät ausgeführt wird |
-| `OSArchitecture` | Zeichenfolge | Architektur des Betriebssystems, das auf dem Gerät ausgeführt wird |
-| `SoftwareVendor` | Zeichenfolge | Name des Softwareanbieters |
-| `SoftwareName` | string | Name des Softwareprodukts |
-| `SoftwareVersion` | string | Versionsnummer des Softwareprodukts |
-| `EndOfSupportStatus` | string | Gibt die Lebenszyklusphase des Softwareprodukts relativ zum angegebenen End-of-Support (EOS) oder End-of-Life (EOL)-Datum an. |
-| `EndOfSupportDate` | Zeichenfolge | End-of-Support (EOS) oder End-of-Life (EOL) des Softwareprodukts |
-
-
+| `OSVersion` | string | Version des Betriebssystems, das auf dem Gerät ausgeführt wird. |
+| `OSArchitecture` | Zeichenfolge | Architektur des Betriebssystems, das auf dem Gerät ausgeführt wird. |
+| `SoftwareVendor` | Zeichenfolge | Name des Softwareanbieters. |
+| `SoftwareName` | Zeichenfolge | Name des Softwareprodukts. |
+| `SoftwareVersion` | Zeichenfolge | Versionsnummer des Softwareprodukts. |
+| `EndOfSupportStatus` | Zeichenfolge | Gibt die Lebenszyklusphase des Softwareprodukts relativ zum angegebenen End-of-Support (EOS) oder End-of-Life (EOL)-Datum an. |
+| `EndOfSupportDate` | Zeichenfolge | End-of-Support (EOS) oder End-of-Life (EOL)-Datum des Softwareprodukts. |
 
 ## <a name="related-topics"></a>Verwandte Themen
 
@@ -62,4 +62,3 @@ Informationen zu anderen Tabellen im Schema „Erweiterte Suche“ finden Sie un
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-reference.md)
 - [Übersicht über die Bedrohungs- und Sicherheitsrisikoverwaltung](next-gen-threat-and-vuln-mgt.md)
-

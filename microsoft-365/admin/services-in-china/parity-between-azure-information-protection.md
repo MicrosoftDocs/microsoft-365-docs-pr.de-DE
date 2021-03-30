@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: Erfahren Sie mehr über Azure Information Protection (AIP) für Office 365 betrieben von 21Vianet und wie Sie es für Kunden in China konfigurieren.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 77790249cbd544b2f11e9a16dd77bab297cac509
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bddba69ecc8b7b80d2b2c7c48d820ec22d293362
+ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914318"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418032"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Azure Information Protection-Unterstützung für Office 365 betrieben von 21Vianet
 
@@ -148,16 +148,24 @@ AIP-Apps unter Windows benötigen den folgenden Registrierungsschlüssel, um sie
 
 Installieren Sie den lokalen AIP-Scanner, um Ihre Netzwerk- und Inhaltsfreigaben auf vertrauliche Daten zu überprüfen, und wenden Sie Klassifizierungs- und Schutzbezeichnungen an, wie in der Richtlinie Ihrer Organisation konfiguriert.
 
-Verwenden Sie bei der Installation des Scanners und beim Verwalten Ihrer Inhaltsscanaufträge die folgenden Cmdlets anstelle der Azure-Portalschnittstelle, die von den kommerziellen Angeboten verwendet wird:<br><br>
+- Beim Erstellen und Konfigurieren von Azure AD-Anwendungen für den Befehl  [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) zeigt der Bereich Api-Berechtigungen anfordern die **APIs** an, die meine Organisation verwendet, anstelle der **Registerkarte Microsoft-APIs.** Wählen Sie **die APIs aus,** die meine Organisation verwendet, um dann **Azure Rights Management Services auszuwählen.**
 
-| Cmdlet | Beschreibung |
-|--|--|
-| [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository) | Fügt Ihrem Inhaltsscanauftrag ein neues Repository hinzu. |
-| [Get-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/get-aipscannercontentscanjob) | Ruft Details zu Ihrem Inhaltsscanauftrag ab. |
-| [Get-AIPScannerRepository](/powershell/module/azureinformationprotection/get-aipscannerrepository) | Ruft Details zu Repositorys ab, die für Ihren Inhaltsscanauftrag definiert sind. |
-| [Remove-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/remove-aipscannercontentscanjob) | Löscht den Auftrag zum Überprüfen von Inhalten. |
-| [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/remove-aipscannerrepository) | Entfernt ein Repository aus Ihrem Inhaltsscanauftrag. |
-| [Set-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) | Definiert Einstellungen für Ihren Inhaltsscanauftrag. |
-| [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Definiert Einstellungen für ein vorhandenes Repository in Ihrem Inhaltsscanauftrag. |
+- Verwenden Sie bei der Installation des Scanners und beim Verwalten Ihrer Inhaltsscanaufträge die folgenden Cmdlets anstelle der Azure-Portalschnittstelle, die von den kommerziellen Angeboten verwendet wird:<br><br>
 
+    | Cmdlet | Beschreibung |
+    |--|--|
+    | [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository) | Fügt Ihrem Inhaltsscanauftrag ein neues Repository hinzu. |
+    | [Get-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/get-aipscannercontentscanjob) | Ruft Details zu Ihrem Inhaltsscanauftrag ab. |
+    | [Get-AIPScannerRepository](/powershell/module/azureinformationprotection/get-aipscannerrepository) | Ruft Details zu Repositorys ab, die für Ihren Inhaltsscanauftrag definiert sind. |
+    | [Remove-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/remove-aipscannercontentscanjob) | Löscht den Auftrag zum Überprüfen von Inhalten. |
+    | [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/remove-aipscannerrepository) | Entfernt ein Repository aus Ihrem Inhaltsscanauftrag. |
+    | [Set-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) | Definiert Einstellungen für Ihren Inhaltsscanauftrag. |
+    | [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Definiert Einstellungen für ein vorhandenes Repository in Ihrem Inhaltsscanauftrag. |
+    | | |
+
+> [!TIP]
+> Verwenden [Sie bei der Installation](/azure/information-protection/deploy-aip-scanner-configure-install#install-the-scanner)des Scanners denselben Clusternamen im Befehl [Install-AIPScanner,](/powershell/module/azureinformationprotection/install-aipscanner) um mehrere Scannerknoten demselben Cluster zuzuordnen. Wenn Sie denselben Cluster für mehrere Scannerknoten verwenden, können mehrere Scanner zusammenarbeiten, um Ihre Scans durchzuführen.
+> 
+> Verwenden Sie [das Cmdlet Get-AIPScannerConfiguration,](/powershell/module/azureinformationprotection/get-aipscannerconfiguration) um Details zu Ihrem Cluster zurückzukehren.
+> 
 Weitere Informationen finden Sie unter [What is the Azure Information Protection unified labeling scanner?](/azure/information-protection/deploy-aip-scanner) und Manage your content scan jobs using [PowerShell only](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer).

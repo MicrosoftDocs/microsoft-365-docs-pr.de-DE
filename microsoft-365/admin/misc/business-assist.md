@@ -1,5 +1,5 @@
 ---
-title: Business Assist für Microsoft 365
+title: Business-Assistent für Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -15,19 +15,19 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Erfahren Sie mehr über das Microsoft Business Assist-Programm und darüber, wie es Ihrer Organisation mit verbesserter Hilfe und Verwendung für Microsoft 365 Business helfen kann.
-ms.openlocfilehash: eb0309ae68bf4569d4cba8dd8501343304389e80
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+description: Erfahren Sie mehr über das Business Assist-Programm und darüber, wie es Ihrer Organisation mit verbesserter Hilfe und Verwendung für Microsoft 365 Business helfen kann.
+ms.openlocfilehash: 4531c841b4856e22b364906c180aa336cb8fd04a
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034299"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408525"
 ---
-# <a name="business-assist-for-microsoft-365"></a>Business Assist für Microsoft 365
+# <a name="business-assist-for-microsoft-365"></a>Business-Assistent für Microsoft 365
 
 Holen Sie das Beste aus Ihrem Abonnement heraus, und erfahren Sie von Experten aus dem kleinen Unternehmen.
 
-**Business Assist für Microsoft 365** ist ein Dienst, der speziell für Unternehmen mit weniger als 5 Benutzern entwickelt wurde, um Ihnen und Ihren Mitarbeitern rund um die Uhr Zugriff auf Kleinunternehmensspezialisten zu bieten, während Sie Ihr Unternehmen wachsen– vom Onboarding bis zum täglichen Gebrauch.
+**Business Assist für Microsoft 365** ist für Unternehmen mit weniger als 5 Benutzern konzipiert, um Ihnen und Ihren Mitarbeitern rund um die Uhr Zugriff auf Kleinunternehmensspezialisten zu bieten, während Sie Ihr Unternehmen wachsen – vom Onboarding bis zum täglichen Gebrauch.
 
 ## <a name="business-assist-services"></a>Business Assist Services
 
@@ -38,7 +38,7 @@ Holen Sie das Beste aus Ihrem Abonnement heraus, und erfahren Sie von Experten a
 | | | |
 
 > [!div class="nextstepaction"]
-> [Jetzt kaufen](https://go.microsoft.com/fwlink/p/?linkid=868433)
+> [Jetzt kaufen](https://go.microsoft.com/fwlink/p/?linkid=2158423)
 
 ## <a name="eligibility-for-business-assist"></a>Berechtigung für Business Assist
 
@@ -58,4 +58,4 @@ Nur Organisationen, die berechtigt sind, sehen die Option zum Kauf von Business 
 :::image type="content" source="../../media/projectgenie-purchase services.png" alt-text="Screeenshot: Kauf von Business Assist im Abschnitt Add-Ons auf der Seite Dienste kaufen":::
 
 > [!div class="nextstepaction"]
-> [Jetzt kaufen](https://go.microsoft.com/fwlink/p/?linkid=868433)
+> [Jetzt kaufen](https://go.microsoft.com/fwlink/p/?linkid=2158423)

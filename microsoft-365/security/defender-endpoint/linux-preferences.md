@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ed28d3b5b7bafaea2d72b7a8c45f66bf69033bc2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a8595bae216911350d3f18fcceef729ef020a424
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187793"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408165"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-for-linux"></a>Festlegen von Einstellungen für Microsoft Defender for Endpoint für Linux
 
@@ -61,6 +61,7 @@ Der *Abschnitt antivirusEngine* des Konfigurationsprofils wird zum Verwalten der
 | **Schlüssel** | antivirusEngine |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
 | **Comments** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
+|||
 
 #### <a name="enable--disable-real-time-protection"></a>Aktivieren/Deaktivieren des Echtzeitschutzes
 
@@ -71,6 +72,7 @@ Bestimmt, ob der Echtzeitschutz (Scandateien, wie auf sie zugegriffen wird) akti
 | **Schlüssel** | enableRealTimeProtection |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | true (Standard) <br/> false |
+|||
 
 #### <a name="enable--disable-passive-mode"></a>Aktivieren/Deaktivieren des passiven Modus
 
@@ -87,6 +89,7 @@ Bestimmt, ob das Antivirenmodul im passiven Modus ausgeführt wird oder nicht. I
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | false (Standard) <br/> true |
 | **Comments** | Verfügbar in Defender for Endpoint, Version 100.67.60 oder höher. |
+|||
 
 #### <a name="exclusion-merge-policy"></a>Ausschlusszusammenführungsrichtlinie
 
@@ -98,6 +101,7 @@ Gibt die Seriendruckrichtlinie für Ausschlüsse an. Es kann eine Kombination au
 | **Datentyp** | String |
 | **Mögliche Werte** | merge (Standard) <br/> admin_only |
 | **Comments** | Verfügbar in Defender for Endpoint, Version 100.83.73 oder höher. |
+|||
 
 #### <a name="scan-exclusions"></a>Scannen von Ausschlüssen
 
@@ -108,6 +112,7 @@ Entitäten, die von der Überprüfung ausgeschlossen wurden. Ausschlüsse könne
 | **Schlüssel** | Ausschlüsse |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
 | **Comments** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
+|||
 
 **Art des Ausschlusses**
 
@@ -118,6 +123,7 @@ Gibt den Typ des Inhalts an, der von der Überprüfung ausgeschlossen wurde.
 | **Schlüssel** | $type |
 | **Datentyp** | String |
 | **Mögliche Werte** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
+|||
 
 **Pfad zu ausgeschlossenen Inhalten**
 
@@ -129,6 +135,7 @@ Wird verwendet, um Inhalte nach vollständigem Dateipfad von der Überprüfung a
 | **Datentyp** | String |
 | **Mögliche Werte** | gültige Pfade |
 | **Comments** | Gilt nur, *$type* *ausgeschlossen IstPath* |
+|||
 
 **Pfadtyp (Datei/Verzeichnis)**
 
@@ -140,6 +147,7 @@ Gibt an, ob *die path-Eigenschaft* auf eine Datei oder ein Verzeichnis verweist.
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | false (Standard) <br/> true |
 | **Comments** | Gilt nur, *$type* *ausgeschlossen IstPath* |
+|||
 
 **Dateierweiterung, die von der Überprüfung ausgeschlossen wurde**
 
@@ -151,6 +159,7 @@ Wird verwendet, um Inhalte von der Überprüfung nach Dateierweiterung auszuschl
 | **Datentyp** | String |
 | **Mögliche Werte** | Gültige Dateierweiterungen |
 | **Comments** | Gilt nur, *$type* *ausgeschlossen istFileExtension* |
+|||
 
 **Prozess, der von der Überprüfung ausgeschlossen wurde**
 
@@ -162,6 +171,7 @@ Gibt einen Prozess an, für den alle Dateiaktivitäten von der Überprüfung aus
 | **Datentyp** | String |
 | **Mögliche Werte** | eine beliebige Zeichenfolge |
 | **Comments** | Gilt nur, *$type* *ausgeschlossen istFileName* |
+|||
 
 #### <a name="allowed-threats"></a>Zulässige Bedrohungen
 
@@ -171,6 +181,7 @@ Liste der Bedrohungen (die durch ihren Namen identifiziert werden), die nicht vo
 |:---|:---|
 | **Schlüssel** | allowedThreats |
 | **Datentyp** | Array aus Zeichenfolgen |
+|||
 
 #### <a name="disallowed-threat-actions"></a>Unzulässige Bedrohungsaktionen
 
@@ -182,6 +193,7 @@ Schränkt die Aktionen ein, die der lokale Benutzer eines Geräts ausführen kan
 | **Datentyp** | Array aus Zeichenfolgen |
 | **Mögliche Werte** | allow (schränkt ein, dass Benutzer Bedrohungen zulassen) <br/> restore (schränkt benutzer das Wiederherstellen von Bedrohungen aus der Quarantäne ein) |
 | **Comments** | Verfügbar in Defender for Endpoint, Version 100.83.73 oder höher. |
+|||
 
 #### <a name="threat-type-settings"></a>Einstellungen für den Bedrohungstyp
 
@@ -192,6 +204,7 @@ Die *ThreatTypeSettings-Einstellung* im Antivirusmodul wird verwendet, um zu ste
 | **Schlüssel** | threatTypeSettings |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
 | **Comments** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
+|||
 
 **Bedrohungstyp**
 
@@ -202,6 +215,7 @@ Typ der Bedrohung, für die das Verhalten konfiguriert ist.
 | **Schlüssel** | Schlüssel |
 | **Datentyp** | String |
 | **Mögliche Werte** | potentially_unwanted_application <br/> archive_bomb |
+|||
 
 **Zu ergreifende Maßnahme**
 
@@ -216,6 +230,7 @@ Maßnahmen, die ausgeführt werden müssen, wenn eine Bedrohung des im vorherige
 | **Schlüssel** | Wert |
 | **Datentyp** | String |
 | **Mögliche Werte** | Überwachung (Standard) <br/> block <br/> off |
+|||
 
 #### <a name="threat-type-settings-merge-policy"></a>Richtlinie zum Zusammenführen von Bedrohungstypeinstellungen
 
@@ -227,6 +242,7 @@ Gibt die Seriendruckrichtlinie für Bedrohungstypeinstellungen an. Dies kann ein
 | **Datentyp** | String |
 | **Mögliche Werte** | merge (Standard) <br/> admin_only |
 | **Comments** | Verfügbar in Defender for Endpoint, Version 100.83.73 oder höher. |
+|||
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>Aufbewahrung des Antivirusscanverlaufs (in Tagen)
 
@@ -238,6 +254,7 @@ Geben Sie die Anzahl der Tage an, die Ergebnisse im Scanverlauf auf dem Gerät a
 | **Datentyp** | String |
 | **Mögliche Werte** | 90 (Standard). Zulässige Werte liegen zwischen 1 Tag und 180 Tagen. |
 | **Comments** | Verfügbar in Defender for Endpoint, Version 101.04.76 oder höher. |
+|||
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>Maximale Anzahl von Elementen im Antivirusscanverlauf
 
@@ -249,6 +266,7 @@ Geben Sie die maximale Anzahl von Einträgen an, die im Scanverlauf bleiben soll
 | **Datentyp** | String |
 | **Mögliche Werte** | 10000 (Standard). Zulässige Werte liegen zwischen 5.000 und 15.000 Elementen. |
 | **Comments** | Verfügbar in Defender for Endpoint, Version 101.04.76 oder höher. |
+|||
 
 ### <a name="cloud-delivered-protection-preferences"></a>Von der Cloud übermittelte Schutzeinstellungen
 
@@ -259,6 +277,7 @@ Der *cloudService-Eintrag* im Konfigurationsprofil wird verwendet, um das cloudg
 | **Schlüssel** | cloudService |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
 | **Comments** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
+|||
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>Aktivieren/Deaktivieren des von der Cloud übermittelten Schutzes
 
@@ -269,6 +288,7 @@ Bestimmt, ob der in der Cloud zugestellte Schutz auf dem Gerät aktiviert ist od
 | **Schlüssel** | aktiviert |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | true (Standard) <br/> false |
+|||
 
 #### <a name="diagnostic-collection-level"></a>Diagnosesammlungsebene
 
@@ -279,6 +299,7 @@ Diagnosedaten werden verwendet, um Defender for Endpoint sicher und auf dem neue
 | **Schlüssel** | diagnosticLevel |
 | **Datentyp** | String |
 | **Mögliche Werte** | optional (Standard) <br/> erforderlich |
+|||
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>Aktivieren/Deaktivieren automatischer Beispielübermittlungen
 
@@ -293,6 +314,7 @@ Bestimmt, ob verdächtige Beispiele (die wahrscheinlich Bedrohungen enthalten) a
 | **Schlüssel** | automaticSampleSubmissionConsent |
 | **Datentyp** | String |
 | **Mögliche Werte** | keine <br/> sicher (Standard) <br/> all |
+|||
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>Aktivieren/Deaktivieren automatischer Sicherheitsintelligenzupdates
 
@@ -303,6 +325,7 @@ Bestimmt, ob Sicherheitsintelligenzupdates automatisch installiert werden:
 | **Schlüssel** | automaticDefinitionUpdateEnabled |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | true (Standard) <br/> false |
+|||
 
 ## <a name="recommended-configuration-profile"></a>Empfohlenes Konfigurationsprofil
 
@@ -339,6 +362,7 @@ Das folgende Konfigurationsprofil hat Folgendes:
       "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
       "enabled":true
+      "proxy":"http://proxy.server:port/"
    }
 }
 ```
@@ -399,6 +423,7 @@ Das folgende Konfigurationsprofil enthält Einträge für alle in diesem Dokumen
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
       "automaticDefinitionUpdateEnabled":true
+      "proxy": "http://proxy.server:port/"
    }
 }
 ```
@@ -412,6 +437,17 @@ python -m json.tool mdatp_managed.json
 ```
 
 Wenn das JSON wohlgeformt ist, gibt der obige Befehl es zurück an das Terminal aus und gibt den Exitcode von `0` zurück. Andernfalls wird ein Fehler angezeigt, der das Problem beschreibt, und der Befehl gibt den Exitcode von `1` zurück.
+
+## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>Überprüfen, ob mdatp_managed.jsdatei wie erwartet funktioniert
+Um zu überprüfen, ob /etc/opt/microsoft/mdatp/managed/mdatp_managed.json ordnungsgemäß funktioniert, sollten Sie neben den folgenden Einstellungen "[verwaltet]" sehen:  
+- cloud_enabled
+- cloud_automatic_sample_submission_consent
+- passice_mode_enabled
+- real_time_protection_enabled
+- automatic_definition_update_enabled
+
+> [!NOTE]
+> Damit die mdatp_managed.jswirksam wird, ist kein Neustart des wdavdaemon erforderlich.
 
 ## <a name="configuration-profile-deployment"></a>Konfigurationsprofilbereitstellung
 

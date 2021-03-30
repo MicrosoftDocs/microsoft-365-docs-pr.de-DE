@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Übersicht über die Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
-ms.openlocfilehash: 0bfcebff4ebbefdb77049119fef2402af1ca8f90
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b80dd001bd2ee5d5725ea67c73aa34b4eb8816c
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926096"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408405"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
 
@@ -148,6 +148,10 @@ Auf der Registerkarte Details auf der Seite Bürostandort werden die spezifische
 
 > [!div class="mx-imgBorder"]
 > ![Standortspezifische Details](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
+
+## <a name="sharing-network-assessment-data-with-microsoft"></a>Freigeben von Netzwerkbewertungsdaten für Microsoft
+
+Standardmäßig werden die Netzwerkbewertungen für Ihre Organisation und die Netzwerkeinblicke für Microsoft-Mitarbeiter freigegeben. Dies umfasst keine personenbezogenen Daten von Ihren Mitarbeitern, sondern nur die spezifischen Netzwerkbewertungsmetriken und Netzwerkeinblicke, die im Admin Center für Ihre Bürostandorte angezeigt werden. Sie enthält auch keine Namen ihrer Bürostandorte oder Straßenadressen, daher müssen Sie ihnen die Stadt und die Support-ID des Büros mitteilen, das Sie besprechen möchten. Wenn dies deaktiviert ist, können die Microsoft-Techniker, mit der Sie Ihre Netzwerkkonnektivität besprechen, keine dieser Informationen anzeigen. Wenn Sie diese Einstellung aktivieren, werden nur die zukünftigen Daten verwendet, die am Tag nach der Aktivierung beginnen.
 
 ## <a name="csv-import-for-lan-subnet-office-locations"></a>CSV-Import für STANDORTE von LAN-Subnetzbüros
 
