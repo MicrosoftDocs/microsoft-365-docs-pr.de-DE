@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56645553c43289995012d53d7caf879874e65c8a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 56a62ca4ebbd140f507d1735c663924014ca4771
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186929"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445732"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Onboarding für den Microsoft Defender for Endpoint-Dienst
 
@@ -86,8 +86,8 @@ Nach dem Onboarding der Endpunkte konfigurieren Sie die verschiedenen Funktionen
 In diesem Bereitstellungshandbuch führen wir Sie durch die Verwendung von zwei Bereitstellungstools zum Onboarding von Endpunkten und zum Konfigurieren von Funktionen.
 
 Die Tools in den Beispielbereitstellungen sind:
-- [Onboarding mit Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
-- [Onboarding mit Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
+- [Onboarding mithilfe des Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
+- [Onboarding mithilfe des Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 Mithilfe der oben genannten Bereitstellungstools werden Sie dann bei der Konfiguration der folgenden Defender for Endpoint-Funktionen geführt:
 - Endpunkterkennung und Reaktionskonfiguration
@@ -95,5 +95,6 @@ Mithilfe der oben genannten Bereitstellungstools werden Sie dann bei der Konfigu
 - Konfiguration der Attack Surface Reduction
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Onboarding mit Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
-- [Onboarding mit Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
+- [Onboarding mithilfe des Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
+- [Onboarding mithilfe des Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
+- [Sichere Dokumente in Microsoft 365 E5](../office-365-security/safe-docs.md)

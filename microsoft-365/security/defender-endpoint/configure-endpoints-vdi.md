@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 167db9b5da841528e95f167b3af6a840b6c71eb4
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: bf1e706562db06064409cb7cf11441d048ef8db6
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165561"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445286"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)
 
@@ -48,8 +48,11 @@ Beim Onboarding von VDIs kann es zu herausforderungen kommen. Es folgen typische
 
 VDI-Geräte können im Defender for Endpoint-Portal wie folgt angezeigt werden:
 
-- Einzelner Eintrag für jedes Gerät.  
-Beachten Sie, dass  in diesem Fall derselbe Gerätename beim Erstellen der Sitzung konfiguriert werden muss, z. B. mithilfe einer unbeaufsichtigten Antwortdatei.
+- Einzelner Eintrag für jedes Gerät.
+
+  > [!NOTE]
+  > In diesem Fall muss derselbe *Gerätename* beim Erstellen der Sitzung konfiguriert werden, z. B. mithilfe einer unbeaufsichtigten Antwortdatei.
+
 - Mehrere Einträge für jedes Gerät – einer für jede Sitzung.
 
 Die folgenden Schritte führen Sie durch das Onboarding von VDI-Geräten und zeigen Schritte für einzelne und mehrere Einträge an.
@@ -84,14 +87,15 @@ Die folgenden Schritte führen Sie durch das Onboarding von VDI-Geräten und zei
    > [!NOTE]
    > Domänengruppenrichtlinien können auch zum Onboarding nicht persistenter VDI-Geräte verwendet werden.
 
-4. Führen Sie in Abhängigkeit von der Methode, die Sie implementieren möchten, die entsprechenden Schritte aus: <br>
-   **Für einen einzelnen Eintrag für jedes Gerät:**<br>
+4. Führen Sie in Abhängigkeit von der Methode, die Sie implementieren möchten, die entsprechenden Schritte aus:
+
+   - Für einen einzelnen Eintrag für jedes Gerät:
    
-   Wählen Sie **die Registerkarte PowerShell-Skripts** aus, und klicken Sie dann auf Hinzufügen **(Windows** Explorer wird direkt im Pfad geöffnet, in den Sie das Onboardingskript zuvor kopiert haben). Navigieren Sie zum Onboarding des PowerShell-Skripts `Onboard-NonPersistentMachine.ps1` .
+     Wählen Sie **die Registerkarte PowerShell-Skripts** aus, und klicken Sie dann auf Hinzufügen **(Windows** Explorer wird direkt im Pfad geöffnet, in den Sie das Onboardingskript zuvor kopiert haben). Navigieren Sie zum Onboarding des PowerShell-Skripts `Onboard-NonPersistentMachine.ps1` . Die andere Datei muss nicht angegeben werden, da sie automatisch ausgelöst wird.
    
-   **Für mehrere Einträge für jedes Gerät:**
+   - Für mehrere Einträge für jedes Gerät:
    
-   Wählen Sie **die Registerkarte Skripts** aus, und klicken Sie dann auf **Hinzufügen** (Windows Explorer wird direkt im Pfad geöffnet, in den Sie das Onboardingskript zuvor kopiert haben). Navigieren Sie zum Onboarding-Bash-Skript `WindowsDefenderATPOnboardingScript.cmd` .
+     Wählen Sie **die Registerkarte Skripts** aus, und klicken Sie dann auf **Hinzufügen** (Windows Explorer wird direkt im Pfad geöffnet, in den Sie das Onboardingskript zuvor kopiert haben). Navigieren Sie zum Onboarding-Bash-Skript `WindowsDefenderATPOnboardingScript.cmd` .
 
 5. Testen Sie Ihre Lösung:
 
@@ -103,8 +107,15 @@ Die folgenden Schritte führen Sie durch das Onboarding von VDI-Geräten und zei
 
    1. Bei einem anderen Benutzer am Gerät anmeldet.
       
-   1. **Für einen einzelnen Eintrag für jedes Gerät:** Überprüfen Sie nur einen Eintrag im Microsoft Defender Security Center.<br>
-      **Für mehrere Einträge für jedes Gerät:** Überprüfen Sie mehrere Einträge im Microsoft Defender Security Center.
+   1. Führen Sie in Abhängigkeit von der Methode, die Sie implementieren möchten, die entsprechenden Schritte aus:
+   
+      - Für einen einzelnen Eintrag für jedes Gerät: 
+    
+        Überprüfen Sie nur einen Eintrag im Microsoft Defender Security Center.
+
+      - Für mehrere Einträge für jedes Gerät: 
+       
+        Überprüfen Sie mehrere Einträge im Microsoft Defender Security Center.
 
 6. Klicken **Sie im** Navigationsbereich auf Geräteliste.
 
@@ -118,14 +129,14 @@ Die folgenden Schritte führen Sie durch das Onboarding von VDI-Geräten und zei
 
 1. Legen Sie den Registrierungswert auf:
 
-    ```reg
+    ```console
    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging]
     "VDI"="NonPersistent"
     ```
 
     oder verwenden Sie die Befehlszeile:
 
-    ```
+    ```console
     reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
     ```
 

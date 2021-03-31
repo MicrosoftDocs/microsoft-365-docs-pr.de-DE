@@ -1,18 +1,23 @@
 ---
 title: Selbstregistrieren neuer Geräte
 description: Registrieren Von Geräten selbst, damit sie von Microsoft Managed Desktop verwaltet werden können
-ms.prod: w10
+keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
+ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: medium
-ms.openlocfilehash: 8dc9412de7b682c34a48ae64b676e4b0313dea35
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
+audience: Admin
+ms.openlocfilehash: 3aff3bdc1260e9aa2a23760020aeabd71d6b28fd
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920680"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445578"
 ---
 # <a name="register-new-devices-yourself"></a>Selbstregistrieren neuer Geräte
 
@@ -83,7 +88,7 @@ Wählen [Sie im Microsoft Endpoint Manager](https://endpoint.microsoft.com/) **g
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
 
 
-Gehen Sie wie folgt vor:
+Führen Sie die folgenden Schritte aus:
 
 1. Geben **Sie unter Dateiupload** einen Pfad zur zuvor erstellten CSV-Datei an.
 3. Wählen **Sie Geräte registrieren aus.** Das System fügt die Geräte ihrer Liste der Geräte auf **Geräten** hinzu, die als **Registrierung ausstehend gekennzeichnet sind.** Die Registrierung dauert in der Regel weniger als 10 Minuten, und bei erfolgreicher Verwendung wird das Gerät als **Bereit** für Benutzer angezeigt, was bedeutet, dass es bereit ist und darauf wartet, dass ein Benutzer mit der Verwendung beginnt.

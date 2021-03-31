@@ -19,12 +19,12 @@ description: Verwenden Sie Explorer und Echtzeiterkennungen im Security Complian
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f48bad9d8ae6fc6d68ae27a655f4bdfdefd819d0
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 47bb14b90a94d0c8b542b12268bd6d5ed6e5c05a
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206174"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445720"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Bedrohungs-Explorer und Echtzeiterkennungen
 
@@ -58,7 +58,7 @@ Mit diesem Bericht können Sie:
 Wenn Sie heute von einer Warnung zum Bedrohungs-Explorer navigieren, wird im Explorer eine gefilterte Ansicht geöffnet, deren Ansicht nach der Warnungsrichtlinien-ID gefiltert ist (Richtlinien-ID ist ein eindeutiger Bezeichner für eine Warnungsrichtlinie).
 Wir machen diese Integration relevanter, indem wir die Warnungs-ID (siehe ein Beispiel für die Warnungs-ID unten) im Bedrohungs-Explorer und in Echtzeiterkennungen einführen, sodass Nachrichten angezeigt werden, die für die jeweilige Warnung relevant sind, sowie eine Anzahl von E-Mails. Sie können auch sehen, ob eine Nachricht Teil einer Warnung war, und von dieser Nachricht zu der spezifischen Warnung navigieren.  
 
-Die Warnungs-ID ist innerhalb der URL verfügbar, wenn Sie eine einzelne Warnung anzeigen. Ein Beispiel für die `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`
+Die Warnungs-ID ist innerhalb der URL verfügbar, wenn Sie eine einzelne Warnung anzeigen. Ein Beispiel ist `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1` .
 
 > [!div class="mx-imgBorder"]
 > ![Filtern nach Warnungs-ID](../../media/AlertID-Filter.png)
@@ -177,7 +177,6 @@ Derzeit wird der Zustellungsspeicherort im E-Mail-Raster und im E-Mail-Flyout an
 > - Es gibt neue Felder und Werte **für** Erkennungstechnologien und **zusätzliche Aktionen** (insbesondere für ZAP-Szenarien). Sie müssen Ihre vorhandenen gespeicherten und nachverfolgten Abfragen auswerten, um sicherzustellen, dass sie mit den neuen Werten funktionieren.
 
 > [!div class="mx-imgBorder"]
-
 > ![Zusätzliche Aktionen im Explorer](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>Systemüberschreibungen
@@ -185,9 +184,13 @@ Derzeit wird der Zustellungsspeicherort im E-Mail-Raster und im E-Mail-Flyout an
 *Systemüberschreibungen* ermöglichen es Ihnen, Ausnahmen vom beabsichtigten Zustellungsspeicherort einer Nachricht zu machen. Sie setzen den vom System bereitgestellten Zustellungsspeicherort basierend auf den Bedrohungen und anderen Erkennungen außer Kraft, die durch den Filterstapel identifiziert werden. Systemüberschreibungen können über Mandanten- oder Benutzerrichtlinien festgelegt werden, um die Nachricht wie von der Richtlinie vorgeschlagen zu senden. Außerkraftsetzungen können die unbeabsichtigte Zustellung schädlicher Nachrichten aufgrund von Konfigurationslücken identifizieren, z. B. eine zu umfassende Richtlinie für sichere Absender, die von einem Benutzer festgelegt wurde. Diese Außerkraftsetzungswerte können wie die folgenden sein:
 
 - Benutzerrichtlinie zulässig: Ein Benutzer erstellt Richtlinien auf Postfachebene, um Domänen oder Absender zu ermöglichen.
+
 - Durch Benutzerrichtlinie blockiert: Ein Benutzer erstellt Richtlinien auf Postfachebene, um Domänen oder Absender zu blockieren.
+
 - Durch Organisationsrichtlinie zulässig: Die Sicherheitsteams der Organisation legen Richtlinien oder Exchange-Nachrichtenflussregeln (auch als Transportregeln bezeichnet) fest, um Absendern und Domänen für Benutzer in ihrer Organisation zu ermöglichen. Dies kann für eine Gruppe von Benutzern oder die gesamte Organisation sein.
+
 - Durch Organisationsrichtlinie blockiert: Die Sicherheitsteams der Organisation legen Richtlinien oder Nachrichtenflussregeln zum Blockieren von Absendern, Domänen, Nachrichtensprachen oder Quell-IPs für Benutzer in ihrer Organisation bereit. Dies kann auf eine Gruppe von Benutzern oder die gesamte Organisation angewendet werden.
+
 - Durch Die Organisationsrichtlinie blockierte Dateierweiterung: Das Sicherheitsteam einer Organisation blockiert eine Dateinamenerweiterung über die Richtlinieneinstellungen für Ansoftware. Diese Werte werden nun in E-Mail-Details angezeigt, um Bei Untersuchungen zu unterstützen. Secops-Teams können auch die Rich-Filtering-Funktion verwenden, um nach blockierten Dateierweiterungen zu filtern.
 
 [![Systemüberschreibungen im Explorer](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
@@ -233,7 +236,8 @@ Sie können nun System- oder benutzerdefinierte Benutzertags sortieren und filte
 > [!IMPORTANT]
 > Das Filtern und Sortieren nach Benutzertags befindet sich derzeit in der öffentlichen Vorschau. Diese Funktionalität kann erheblich geändert werden, bevor sie kommerziell veröffentlicht wird. Microsoft gibt keine ausdrücklichen oder impliziten Garantien in Bezug auf die informationen, die darüber bereitgestellt werden.
 
-![Spalte "Tags" im Explorer](../../media/threat-explorer-tags.png)
+> [!div class="mx-imgBorder"]
+> ![Spalte "Tags" im Explorer](../../media/threat-explorer-tags.png)
 
 ### <a name="timezone-improvements"></a>Verbesserungen an zeitzonen
 
@@ -282,21 +286,20 @@ Im Rahmen der Datenerweiterung können Sie alle verschiedenen Exchange-Transport
 
 Sie können sowohl die GUID als auch den Namen der Transportregeln anzeigen, die auf die Nachricht angewendet wurden. Sie können mithilfe des Namens der Transportregel nach den Nachrichten suchen. Dies ist eine "Contains"-Suche, was bedeutet, dass Sie auch Teilsuchen machen können.
 
-#### <a name="important-note"></a>Wichtiger Hinweis:
-
-Die Verfügbarkeit von ETR-Such- und -Namen hängt von der bestimmten Rolle ab, die Ihnen zugewiesen ist. Sie benötigen eine der folgenden Rollen/Berechtigungen, um die ETR-Namen und die Suche anzeigen zu können. Wenn Ihnen keine dieser Rollen zugewiesen ist, können Sie die Namen der Transportregeln nicht anzeigen oder mithilfe von ETR-Namen nach Nachrichten suchen. In den E-Mail-Details können Sie jedoch die ETR-Bezeichnung und GUID-Informationen sehen. Andere Aufzeichnungsansichtserfahrungen in E-Mail-Rastern, E-Mail-Flyouts, Filtern und Export sind nicht betroffen.
-
-- Nur EXO – Verhinderung von Datenverlust: Alle
-- Nur EXO - O365SupportViewConfig: Alle
-- Microsoft Azure Active Directory oder EXO – Sicherheitsadministrator: Alle
-- AAD oder EXO - Security Reader: Alle
-- Nur EXO - Transportregeln: Alle
-- Nur EXO – View-Only Konfiguration: Alle
-
-Innerhalb des E-Mail-Rasters, des Details-Flyouts und des exportierten CSV erhalten die ETRs eine Name/GUID, wie unten gezeigt.
-
-> [!div class="mx-imgBorder"]
-> ![Exchange-Transportregeln](../../media/ETR_Details.png)
+> [!IMPORTANT]
+> Die Verfügbarkeit von ETR-Such- und -Namen hängt von der bestimmten Rolle ab, die Ihnen zugewiesen ist. Sie benötigen eine der folgenden Rollen/Berechtigungen, um die ETR-Namen und die Suche anzeigen zu können. Wenn Ihnen keine dieser Rollen zugewiesen ist, können Sie die Namen der Transportregeln nicht anzeigen oder mithilfe von ETR-Namen nach Nachrichten suchen. In den E-Mail-Details können Sie jedoch die ETR-Bezeichnung und GUID-Informationen sehen. Andere Aufzeichnungsansichtserfahrungen in E-Mail-Rastern, E-Mail-Flyouts, Filtern und Export sind nicht betroffen.
+> 
+> - Nur EXO – Verhinderung von Datenverlust: Alle
+> - Nur EXO - O365SupportViewConfig: Alle
+> - Microsoft Azure Active Directory oder EXO – Sicherheitsadministrator: Alle
+> - AAD oder EXO - Security Reader: Alle
+> - Nur EXO - Transportregeln: Alle
+> - Nur EXO – View-Only Konfiguration: Alle
+> 
+> Innerhalb des E-Mail-Rasters, des Details-Flyouts und des exportierten CSV erhalten die ETRs eine Name/GUID, wie unten gezeigt.
+> 
+> > [!div class="mx-imgBorder"]
+> > ![Exchange-Transportregeln](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>Eingehende Connectors
 
@@ -334,18 +337,23 @@ In diesem Beispiel wird Der Bedrohungs-Explorer verwendet.
 
 4. Wählen Sie den Betreff einer Nachricht unter der Registerkarte E-Mail-> Details aus, um zusätzliche Identitätswechselinformationen wie Identitätswechseldomäne /Erkannter Speicherort anzuzeigen.
 
-5. **OR** Wählen **Sie Imitierter Benutzer aus,** und geben Sie die E-Mail-Adresse eines geschützten Benutzers in das Textfeld ein.
+    **OR** 
 
-6. Wählen Sie **auf** der Registerkarte E-Mail-Registerkarte Details die Option Betreff einer Nachricht aus, um zusätzliche Identitätswechselinformationen zum Benutzer oder der Domäne sowie den Speicherort  >   *"Erkannt" anzuzeigen.*
+    Wählen **Sie Imitierter Benutzer aus,** und geben Sie die E-Mail-Adresse eines geschützten Benutzers in das Textfeld ein.
 
-:::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Der Detailbereich des Bedrohungs-Explorers für einen geschützten Benutzer, der den Erkennungsspeicherort und die erkannte Bedrohung (hier den Identitätswechsel eines Benutzers) zeigt.":::
+    > [!TIP]
+    > **Verwenden Sie vollständige** E-Mail-Adressen, um geschützte Benutzer *zu durchsuchen,* um optimale Ergebnisse zu erzielen. Sie finden Ihren geschützten Benutzer schneller und erfolgreicher, wenn Sie nach firstname.lastname@contoso.com *suchen,* z. B. bei der Untersuchung des Identitätswechsels von Benutzern. Bei der Suche nach einer geschützten Domäne wird die Stammdomäne (z. B. contoso.com) und der Domänenname ( contoso )*verwendet.* Bei der Suche nach der *Stammdomäne contoso.com* sowohl  Identitätswechsel von contoso.com als auch den Domänennamen *contoso zurück.*
 
-> [!TIP]
-> **Verwenden Sie vollständige** E-Mail-Adressen, um geschützte Benutzer *zu durchsuchen,* um optimale Ergebnisse zu erzielen. Sie finden Ihren geschützten Benutzer schneller und erfolgreicher, wenn Sie nach firstname.lastname@contoso.com *suchen,* z. B. bei der Untersuchung des Identitätswechsels von Benutzern. Bei der Suche nach einer geschützten Domäne wird die Stammdomäne (z. B. contoso.com) und der Domänenname ( contoso )*verwendet.* Bei der Suche nach der *Stammdomäne contoso.com* sowohl  Identitätswechsel von contoso.com als auch den Domänennamen *contoso zurück.*
+5. Wählen Sie **auf** der Registerkarte E-Mail-Registerkarte Details die Option Betreff einer Nachricht aus, um zusätzliche Identitätswechselinformationen zum Benutzer oder der Domäne sowie den Speicherort  >   *"Erkannt" anzuzeigen.*
+
+    :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Der Detailbereich des Bedrohungs-Explorers für einen geschützten Benutzer, der den Erkennungsspeicherort und die erkannte Bedrohung (hier den Identitätswechsel eines Benutzers) zeigt.":::
+
+> [!NOTE]
+> Wenn Sie in Schritt 3 oder 5  Erkennungstechnologie auswählen  und Identitätswechseldomäne bzw. Identitätswechselbenutzer auswählen, werden die Informationen auf der Registerkarte    >   *E-Mail-Details* über den Benutzer oder die Domäne und der Speicherort "Erkannt" nur in den Nachrichten angezeigt, die mit dem Benutzer oder der Domäne im Zusammenhang stehen, die auf der Seite Antiphishingrichtlinien aufgeführt sind. 
 
 ### <a name="preview-email-header-and-download-email-body"></a>Vorschau des E-Mail-Headers und des E-Mail-Textkörpers herunterladen
 
-Sie können jetzt eine Vorschau eines E-Mail-Headers anzeigen und den E-Mail-Textkörper in Threat Explorer herunterladen Admins können heruntergeladene Kopfzeilen/E-Mail-Nachrichten auf Bedrohungen analysieren. Da das Herunterladen von E-Mail-Nachrichten das Risiko der Informationsexposition darstellen kann, wird dieser Prozess durch die rollenbasierte Zugriffssteuerung (RBAC) gesteuert. Eine neue Rolle, *Vorschau*, muss einer anderen Rollengruppe hinzugefügt werden (z. B. Sicherheitsvorgänge oder Sicherheitsadministrator), um das Herunterladen von E-Mails in der Ansicht für E-Mail-Nachrichten zu gewähren. Für das Anzeigen des E-Mail-Headers ist jedoch keine zusätzliche Rolle erforderlich (es sei denn, dies ist erforderlich, um Nachrichten im Bedrohungs-Explorer anzeigen zu können).
+Sie können jetzt eine Vorschau eines E-Mail-Headers anzeigen und den E-Mail-Textkörper im Bedrohungs-Explorer herunterladen. Administratoren können heruntergeladene Kopfzeilen/E-Mail-Nachrichten auf Bedrohungen analysieren. Da das Herunterladen von E-Mail-Nachrichten das Risiko der Informationsexposition darstellen kann, wird dieser Prozess durch die rollenbasierte Zugriffssteuerung (RBAC) gesteuert. Eine neue Rolle, *Vorschau*, muss einer anderen Rollengruppe hinzugefügt werden (z. B. Sicherheitsvorgänge oder Sicherheitsadministrator), um das Herunterladen von E-Mails in der Ansicht für E-Mail-Nachrichten zu gewähren. Für das Anzeigen des E-Mail-Headers ist jedoch keine zusätzliche Rolle erforderlich (es sei denn, dies ist erforderlich, um Nachrichten im Bedrohungs-Explorer anzeigen zu können).
 
 Explorer- und Echtzeiterkennungen erhalten auch neue Felder, die ein vollständigeres Bild davon bieten, wo Ihre E-Mail-Nachrichten landen. Diese Änderungen erleichtern die Suche für Sicherheits-Ops. Das Hauptergebnis ist jedoch, dass Sie den Speicherort von problematischen E-Mail-Nachrichten auf einen Blick kennen.
 

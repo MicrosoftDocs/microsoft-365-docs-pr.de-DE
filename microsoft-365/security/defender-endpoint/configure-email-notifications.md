@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d8b68e6b6dc42de5730aa634386406d4762b1fa2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 0d9e63c5d89b13b02dfcf116c1555c8db319d23f
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163683"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445364"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-atp"></a>Konfigurieren von Benachrichtigungen in Microsoft Defender ATP
 
@@ -51,9 +51,9 @@ Die E-Mail-Benachrichtigung enthält grundlegende Informationen zu der Warnung u
 Sie können Regeln erstellen, die die Geräte und Denkschweregrade zum Senden von E-Mail-Benachrichtigungen für und die Benachrichtigungsempfänger bestimmen.
 
 
-1. Wählen Sie im Navigationsbereich **Benachrichtigungen über**  >  **Einstellungen aus.**
+1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **E-Mail-Benachrichtigungen aus.**
 
-2. Klicken **Sie auf Benachrichtigungsregel hinzufügen**.
+2. Klicken Sie **auf Element hinzufügen**.
 
 3. Geben Sie die allgemeinen Informationen an:
     - **Regelname** : Geben Sie einen Namen für die Benachrichtigungsregel an.
@@ -103,4 +103,4 @@ In diesem Abschnitt werden verschiedene Probleme aufgeführt, die bei der Verwen
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Aktualisieren von Einstellungen für die Datenaufbewahrung](data-retention-settings.md)
-- [Konfigurieren erweiterter Features](advanced-features.md)
+- [Konfigurieren erweiterter Funktionen](advanced-features.md)

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
-ms.openlocfilehash: d05b3fc06c4530a69c49962b0d2b793353033c99
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
-ms.translationtype: HT
+ms.openlocfilehash: fb352c17d9868cf5c42034e198be63b6e0543dbb
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165609"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445602"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Vorbereitung für die Migration von Microsoft Cloud Deutschland
 
@@ -113,11 +113,14 @@ Lesen und Anwenden der [ADFS-Migrationsschritte](ms-cloud-germany-transition-add
 ### <a name="exchange-online-hybrid-configuration"></a>Exchange Online Hybrid-Konfiguration
 
 **Gilt für:** Alle Kunden, die eine aktive Exchange-Hybridkonfiguration mit lokalen Exchange-Servern verwenden<br>
-**Bei Anwendung**: Jederzeit vor Beginn der Phase 5
+**Anwendung :** Immer vor Beginn von Phase 5
+
+Unternehmenskunden mit einer Hybridbereitstellung von Exchange Online und einer lokalen Exchange Server führen den Assistenten für die Hybridkonfiguration (Hybrid Configuration Wizard, HCW) aus, um die Hybrideinrichtung zu verwalten und zu einrichten. Beim Übergang von Microsoft Cloud Deutschland zur Office 365 Deutschland-Region muss der Administrator den neuesten Build von HCW im "Office 365 Deutschland"-Modus erneut ausführen, bevor die Exchange-Migration (Phase 5) beginnt. Führen Sie dann den HCW nach Abschluss von Phase 5 erneut im Modus "Office 365 Worldwide" aus, um die lokale Bereitstellung mit den Office 365 Deutschland-Regioneneinstellungen zu finalisieren.
 
 | Schritte: | Beschreibung | Auswirkung |
 |:-------|:-------|:-------|
-| Führen Sie jederzeit eine Aktualisierung auf die neueste Version des Assistenten für die Hybridkonfiguration (Hybrid Configuration Wizard, HCW) durch, bevor der Mandant in die Migrationsphase 5 übergeht. Sie können diese Aktivität unmittelbar nach Erhalt der Mitteilung vom Nachrichtencenter starten, dass die Migration Ihres Office 365-Mandanten begonnen hat (Phase 1).<br>Ihr Exchange-Administrator muss frühere Versionen des HCW deinstallieren, und dann die aktuellste Version (17.0.5378.0 oder höher) von [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) installieren und ausführen. |<ul><li>Die neueste Version des HCW enthält die erforderlichen Updates zur Unterstützung der Exchange Online-Migration, die von der Microsoft Cloud Deutschland-Instanz zu Office 365-Globalen Diensten ausgeführt wird.</li><li> Updates umfassen Änderungen an den lokalen Zertifikateinstellungen für den _Senden-Connector_ und den _Empfangen-Connector_.</li><li>Wählen Sie beim Ausführen des HCW vor Phase 5 auf der zweiten Seite des HCW unter _Office 365 Exchange Online_ „Office 365 Deutschland“ im Listenfeld unter _Meine Office 365-Organisation wird gehostet von_.</li><li>**HINWEIS**: Entfernen Sie nach Abschluss der Migration Ihres Office 365-Mandanten nach Phase 9 den HCW und installieren Sie ihn erneut, und verwenden Sie diesmal die Einstellungen für „Office 9 Weltweit“ auf der zweiten Seite des HCW, um Ihre Hybrideinrichtung mit dem globalen Exchange Online-Dienst abzuschließen.</li></ul>|Wenn dies nicht vor Phase 5 (Exchange-Migration) durchgeführt wird, kann es zu einem Ausfall des Dienstes oder des Clients kommen. |
+| (Pre-Stage 5) – Erneutes Ausführen von HCW mithilfe von Office 365 Deutschland-Einstellungen <br><br> <i>Sie können diese Aktivität unmittelbar nach Erhalt der Mitteilung vom Nachrichtencenter starten, dass die Migration Ihres Office 365-Mandanten begonnen hat (Phase 1).</i>| Wenn Sie HCW (17.0.5378.0 oder höher) vor Phase 5 deinstallieren und erneut ausführen, wird sichergestellt, dass Ihre lokale Konfiguration für das Senden und Empfangen von E-Mails mit Microsoft Cloud Deutschland-Benutzern und Benutzern bereit ist, die zu [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) Office 365 Deutschland migriert wurden. <p><li> Wählen Sie im HCW für das Listenfeld unter **Meine Office 365-Organisation,** die von gehostet wird, **Office 365 Deutschland aus.** | Wenn Sie diese Aufgabe nicht abschließen, bevor Phase 5 [Exchange Migration] beginnt, können unzuverl ndrs für E-Mails entstehen, die zwischen Ihrer lokalen Exchange-Bereitstellung und Office 365 geroutet werden.  
+| (Post-Stage 5) – Erneutes Ausführen von HCW mithilfe von Office 365 Worldwide-Einstellungen <br><br> <i>Sie können diese Aktivität starten, nachdem Sie die Benachrichtigung des Nachrichtencenters erhalten haben, dass Ihre Exchange-Migration abgeschlossen ist (Phase 5).</i>| Durch das Deinstallieren und erneute Ausführen von HCW nach Phase 5 wird die lokale Konfiguration für die Hybridkonfiguration mit [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) nur Office 365 global zurückgesetzt. <p><li> Wählen Sie im Listenfeld unter **Meine Office 365-Organisation,** die von gehostet wird, Die Option Office **365 Weltweit aus.** | Wenn Sie diese Aufgabe nicht vor Phase 9 [Migration Abgeschlossen] abschließen, können unzuverl ndrs für E-Mails entstehen, die zwischen Ihrer lokalen Exchange-Bereitstellung und Office 365 geroutet werden.  
 | Einrichten eines lokalen AuthServers, der auf den globalen Sicherheitstokendienst (STS) für die Authentifizierung verweist | Auf diese Weise wird sichergestellt, dass Authentifizierungsanforderungen für Exchange-Verfügbarkeitsanforderungen für Benutzer mit Migrationsstatus, die auf die lokale Hybridumgebung ausgerichtet sind, für den Zugriff auf den lokalen Dienst authentifiziert sind. Auf ähnliche Weise stellt dies die Authentifizierung von Anforderungen von lokalen zu Office 365-Globalen Dienstendpunkten sicher. | Nach Abschluss der Azure AD-Migration (Phase 2) muss der Administrator der lokalen Exchange-(Hybrid-)Topologie einen neuen Authentifizierungsdienstendpunkt für die Office 365-Globalen Dienste hinzufügen. Ersetzen Sie mit diesem Befehl von Exchange PowerShell `<TenantID>` durch die Mandanten-ID Ihrer Organisation im Azure-Portal unter Azure Active Directory.<br>`New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<TenantId>/metadata/json/1`<br> Wenn Sie diese Aufgabe nicht ausführen, kann es sein, dass die Frei/Gebucht-Hybridanforderungen keine Informationen für Postfachbenutzer bereitstellen, die von Microsoft Cloud Deutschland zu Office 365-Diensten migriert wurden.  |
 ||||
 

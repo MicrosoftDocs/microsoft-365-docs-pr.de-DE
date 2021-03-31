@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Erfahren Sie, wie Sie von einem Azure Active Directory-bei Windows 10-Gerät beigetretenen Windows 10-Gerät Zugriff auf lokale Ressourcen wie Unternehmens-Apps, Dateifreigaben und Drucker erhalten.
-ms.openlocfilehash: b78509d72cbd9b3c121039c4965625bf5c21c7e0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1bca0beb3ccc78e670ad33ce446b9b3f7c372ba7
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913520"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445346"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Zugreifen auf lokale Ressourcen von einem Azure AD-beigetretenen Gerät in Microsoft 365 Business Premium
 
@@ -64,3 +64,7 @@ Wenn das Windows-Gerät, dem Sie Azure-AD beigetreten sind, zuvor einer Domäne 
 - Benutzer können sich möglicherweise nicht bei Anwendungen authentifizieren, die von der Active Directory-Authentifizierung abhängig sind. Bewerten Sie die Legacy-App, und erwägen Sie nach Möglichkeit das Aktualisieren auf eine App, die moderne Auth verwendet.
 
 - Die Active Directory-Druckerermittlung funktioniert nicht. Sie können direkte Druckerpfade für alle Benutzer bereitstellen oder [Universal Print verwenden.](/universal-print/)
+
+### <a name="related-articles"></a>Verwandte Artikel
+
+[Voraussetzungen für Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)

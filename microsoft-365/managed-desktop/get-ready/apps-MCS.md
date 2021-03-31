@@ -1,20 +1,23 @@
 ---
 title: Arbeiten mit Microsoft Consulting Services
 description: Vorbereitung und schritte für die Arbeit mit MCS zum Packen Ihrer Apps
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, Dokumentation, Apps, MCS, Packen
+keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 04b0c7905c83be2afa46abcfb2d4bb5cd9735e06
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 1441ca3305a5f3e5a83ddd5e1547812f08d7d96b
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909226"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445696"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Arbeiten mit Microsoft Consulting Services
 
@@ -31,7 +34,7 @@ Um mit mcS-App-Paketen zu arbeiten, **müssen Sie die folgenden Elemente bereits
 **MCS kümmert sich um die folgenden Aktionen:**
 
 - Überprüfen, ob die App in der Microsoft Managed Desktop-Umgebung verboten oder eingeschränkt ist.
-- Testen der Installation, des Startens und der Deinstallation der App, um die Kompatibilität mit Windows 10 sicherzustellen. Wenn MCS ein Kompatibilitätsproblem entdeckt, wird die App zur Behebung an das [Desktop App Assure-Programm](/fasttrack/win-10-desktop-app-assure) weitergebe.
+- Testen der Installation, des Startens und der Deinstallation der App, um die Kompatibilität mit Windows 10 sicherzustellen. Wenn MCS ein Kompatibilitätsproblem entdeckt, wird die App zur Behebung an das [App Assure-Programm](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure) weitergebe.
 - Packen Sie die App nach Ihrer Spezifikation, und testen Sie dann die App-Bereitstellung mithilfe von Microsoft Intune.
 
 ## <a name="app-delivery-schedule"></a>Zeitplan für die App-Zustellung

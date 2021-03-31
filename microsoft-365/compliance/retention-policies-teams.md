@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: 985131900a5e07188c0af641fb86f794d558f80b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cc17f89da743afce0d64b45f96493c050e61e343
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919781"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408360"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informationen zur Aufbewahrung für Microsoft Teams
 
@@ -43,33 +43,33 @@ Informationen zu anderen Arbeitsbereichen finden Sie unter:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Lieferumfang für Aufbewahrung und Löschung
 
-Die folgenden Teams-Elemente können unter Verwendung von Aufbewahrungsrichtlinien für Teams aufbewahrt und gelöscht werden: Chatnachrichten und Kanalnachrichten, einschließlich eingebetteter Bilder, Tabellen, Hypertextlinks und Links zu anderen Teams-Nachrichten und Dateien sowie [Karteninhalte](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chatnachrichten umfassen alle Namen der Personen im Chat, und Kanalmeldungen umfassen den Teamnamen und den Nachrichtentitel (sofern vorhanden). 
+Team-Chat-Nachrichten und Kanalnachrichten können mithilfe von Aufbewahrungsrichtlinien für Teams gelöscht werden. Zusätzlich zum Text in den Nachrichten können die folgenden Elemente aus Compliance-Gründen beibehalten werden: Eingebettete Bilder, Tabellen, Hypertext-Links und Links zu anderen Teams-Nachrichten und Dateien und [Karteninhalt](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chatnachrichten umfassen alle Namen der Personen im Chat, und Kanalmeldungen umfassen den Teamnamen und den Nachrichtentitel (sofern vorhanden). 
 
 > [!NOTE]
 > Die Einbindung von Karteninhalten ist eine neue Funktion, die Mandanten nun vollständig zur Verfügung gestellt ist. Weitere Informationen finden Sie unter [Microsoft 365 Compliance-Funktionen für adaptive Karteninhalte über Apps in Teams jetzt verfügbar](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-Teams-Nachrichten in privaten Kanälen werden für Aufbewahrungsrichtlinien derzeit nicht unterstützt. Codeausschnitte, aufgezeichnete Sprachnotizen vom Mobile Microsoft Teams-Clients, Miniaturansichten, Ankündigungsbilder und Reaktionen anderer in Form von Emoticons sind nicht enthalten, wenn Sie Aufbewahrungsrichtlinien für Teams verwenden.
+Teams-Nachrichten in privaten Kanälen werden für Aufbewahrungsrichtlinien derzeit nicht unterstützt. Codeausschnitte, aufgezeichnete Sprachnotizen vom Mobile Microsoft Teams-Clients, Miniaturansichten, Ankündigungsbilder und Reaktionen anderer in Form von Emoticons sind nicht beibehalten, wenn Sie Aufbewahrungsrichtlinien für Teams verwenden.
 
 E-Mails und Dateien, die Sie mit Teams verwenden, sind in den Aufbewahrungsrichtlinien für Teams nicht beinhaltet. Diese Elemente haben ihre eigenen Aufbewahrungsrichtlinien.
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>Funktionsweise der Aufbewahrung mit Microsoft Teams
 
-Sie können eine Aufbewahrungsrichtlinie für die Aufbewahrung und Löschung von Daten von Chats und Kanalnachrichten in Microsoft Teams verwenden. Im Hintergrund werden Exchange-Postfächer zum Speichern dieser Nachrichten verwendet. Daten von Teams-Chats werden in einem verborgenen Ordner im Postfach jedes Benutzers gespeichert, der am Chat teilnimmt. Ein ähnlicher verborgener Ordner im Gruppenpostfach wird für Teams-Kanalnachrichten genutzt.
+Sie können eine Aufbewahrungsrichtlinie verwenden, um Daten aus Chats und Kanalnachrichten in Teams zu speichern und diese Chats und Nachrichten zu löschen. Hinter den Kulissen werden Exchange-Postfächer verwendet, um Daten aus diesen Nachrichten zu speichern. Daten von Teams-Chats werden in einem verborgenen Ordner im Postfach jedes Benutzers gespeichert, der am Chat teilnimmt. Ein ähnlicher verborgener Ordner im Gruppenpostfach wird für Teams-Kanalnachrichten genutzt.
 
 Diese Postfächer sind nach ihrem Attribut "RecipientTypeDetails" aufgelistet:
 
-- **MailUser**: In diesen Postfächern werden Nachrichten für Cloud-basierte Teams-Benutzer gespeichert.
-- **UserMailbox**: In diesen Postfächern werden Nachrichten für [lokale Teams-Benutzer](search-cloud-based-mailboxes-for-on-premises-users.md) gespeichert.
-- **GroupMailbox**: In diesen Postfächern werden Nachrichten für Teams-Kanäle gespeichert.
+- **MailUser**: In diesen Postfächern werden Nachrichtendaten für Cloud-basierte Teambenutzer gespeichert.
+- **UserMailbox**: In diesen Postfächern werden Nachrichtendaten für [lokale Teams-Benutzer](search-cloud-based-mailboxes-for-on-premises-users.md) gespeichert.
+- **GroupMailbox**: In diesen Postfächern werden Nachrichtendaten für Teams-Kanäle gespeichert.
 
 Andere Postfachtypen, z. B. RoomMailbox, die für Teams-Konferenzräume verwendet werden, werden für Teams-Aufbewahrungsrichtlinien nicht unterstützt.
 
-Es ist wichtig zu verstehen, dass Microsoft Teams einen Azure-Chatdienst verwendet, der diese Daten ebenfalls speichert, und standardmäßig werden die Daten von diesem Dienst unbefristet gespeichert. Wenn Sie Teams-Nachrichten aus Compliancegründen löschen müssen, empfehlen wir Ihnen aus diesem Grund, Aufbewahrungsrichtlinien für Teams zu verwenden, mit denen diese Daten sowohl aus den Exchange-Postfächern als auch aus dem zugrunde liegenden Azure-unterstützten Chatdienst endgültig gelöscht werden können. Weitere Informationen über die zugrunde liegende Architektur finden Sie unter [Sicherheit und Compliance in Microsoft Teams](/MicrosoftTeams/security-compliance-overview), insbesondere im Abschnitt [Information Protection-Architektur](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
+Es ist wichtig zu verstehen, dass Teams einen Azure-basierten Chat-Dienst als primären Speicher für alle Nachrichten (Chats und Kanalnachrichten) verwendet. Standardmäßig speichert dieser Dienst die Daten auf unbestimmte Zeit. Wenn Sie aus Compliance-Gründen Teams-Nachrichten löschen müssen, empfehlen wir aus diesem Grund, Aufbewahrungsrichtlinien für Teams zu verwenden, die Nachrichten nach einem bestimmten Zeitraum löschen können, je nachdem, wann sie erstellt wurden. Nachrichten werden dann dauerhaft sowohl aus den Exchange-Postfächern als auch aus dem zugrunde liegenden Chat-Dienst mit Azure-Unterstützung gelöscht. Weitere Informationen über die zugrunde liegende Architektur finden Sie unter [Sicherheit und Compliance in Microsoft Teams](/MicrosoftTeams/security-compliance-overview), insbesondere im Abschnitt [Information Protection-Architektur](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
-Obwohl Teams-Chats und -Kanalnachrichten in Postfächern gespeichert sind, werden diese Teams-Daten nur von einer Aufbewahrungsrichtlinie eingeschlossen, die für die Speicherorte von **Teams-Kanalnachrichten** und **Teams-Chats** konfiguriert ist. Aufbewahrungsrichtlinien, die für Postfächer von Exchange-Benutzern oder Gruppen konfiguriert sind, wirken sich nicht auf Teams-Chats und -Kanalnachrichten aus.
+Obwohl Daten aus Teams-Chats und -Kanalnachrichten in Postfächern gespeichert sind, werden diese Daten nur von einer Aufbewahrungsrichtlinie eingeschlossen, die für die Speicherorte von **Teams-Kanalnachrichten** und **Teams-Chats** konfiguriert ist. Aufbewahrungsrichtlinien, die für Postfächer von Exchange-Benutzern oder Gruppen konfiguriert sind, wirken sich nicht auf Teams-Chats und -Kanalnachrichten aus.
 
 > [!NOTE]
-> Wenn eine aktive Aufbewahrungsrichtlinie, durch die Microsoft Teams-Daten aufbewahrt werden, Benutzer einbezieht, und Sie ein Postfach eines in diese Richtlinie einbezogenen Benutzers löschen, wird es in ein [inaktives Postfach](inactive-mailboxes-in-office-365.md) konvertiert, damit die Teams-Daten aufbewahrt werden. Wenn diese Microsoft Teams-Daten für den Benutzer nicht aufbewahrt werden müssen, schließen Sie das Benutzerkonto aus der Aufbewahrungsrichtlinie aus, bevor Sie das Postfach löschen.
+> Wenn ein Benutzer in einer aktiven Aufbewahrungsrichtlinie enthalten ist, in der Teams-Nachrichten gespeichert sind, und Sie ein Postfach eines Benutzers löschen, der in dieser Richtlinie enthalten ist, wird das Postfach in ein [inaktives Postfach](inactive-mailboxes-in-office-365.md) konvertiert, um die Teams-Daten beizubehalten. Wenn diese Microsoft Teams-Daten für den Benutzer nicht aufbewahrt werden müssen, schließen Sie das Benutzerkonto aus der Aufbewahrungsrichtlinie aus, bevor Sie das Postfach löschen.
 
 Nachdem eine Aufbewahrungsrichtlinie für Chat- und Kanalnachrichten konfiguriert wurde, wertet ein Timer-Job des Exchange-Dienstes regelmäßig Elemente im verborgenen Ordner aus, in dem diese Teams-Nachrichten gespeichert sind. Die Ausführung des Timer-Jobs dauert bis zu sieben Tage. Wenn die Aufbewahrungszeit für die Elemente abgelaufen ist, werden sie in den Ordner SubstrateHolds verschoben – einen weiteren versteckten Ordner, der sich im Postfach von Benutzenden oder Gruppen befindet, um "vorläufig gelöschte" Elemente zu speichern, bevor sie endgültig gelöscht werden.
 
