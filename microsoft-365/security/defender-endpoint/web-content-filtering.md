@@ -1,5 +1,5 @@
 ---
-title: Filtern von Webinhalten
+title: Internet-Inhaltsfilterung
 description: Verwenden Sie die Webinhaltsfilterung in Microsoft Defender ATP, um den Zugriff auf Websites basierend auf ihren Inhaltskategorien nachverfolgt und zu regeln.
 keywords: Webschutz, Schutz vor Webbedrohungen, Browsen im Web, Überwachung, Berichte, Karten, Domänenliste, Sicherheit, Phishing, Schadsoftware, Exploit, Websites, Netzwerkschutz, Edge, Internet Explorer, Chrome, Firefox, Webbrowser
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a8ab1ba1f0dc1bb629e438380b7b77e1ed221f08
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 16f0d96b75ec7035ca133f75a83df1f284ee5c4b
+ms.sourcegitcommit: 847b0920016ae20c82a0501bda6019cd940482df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186029"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51484744"
 ---
-# <a name="web-content-filtering"></a>Filtern von Webinhalten
+# <a name="web-content-filtering"></a>Internet-Inhaltsfilterung
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -60,7 +60,7 @@ Um eine benutzerfreundlichere Browsererfahrung zu ermöglichen, sollten Sie Micr
 
 Stellen Sie vor dem Ausprobieren dieses Features sicher, dass Die folgenden Anforderungen erfüllt sind:
 
-- Windows 10 Enterprise E5-Lizenz ODER Microsoft 365 E3 + Microsoft 365 E5 Security-Add-On.
+- Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security Add-On oder die eigenständige Microsoft Defender for Endpoint-Lizenz. 
 - Zugriff auf das Microsoft Defender Security Center-Portal
 - Geräte mit Windows 10 Anniversary Update (Version 1607) oder höher mit dem neuesten MoCAMP-Update.
 
@@ -160,9 +160,11 @@ Verwenden Sie den Zeitbereichsfilter oben links auf der Seite, um einen Zeitraum
 
 - Auf nicht zugewiesenen Geräten werden falsche Daten im Bericht angezeigt. Im Pivot "Berichtdetails" > Gerätegruppen wird möglicherweise eine Zeile mit einem leeren Feld Gerätegruppe angezeigt. Diese Gruppe enthält Ihre nicht zugewiesenen Geräte, bevor sie in Ihre angegebene Gruppe eingesenert werden. Der Bericht für diese Zeile enthält möglicherweise keine genaue Anzahl von Geräten oder Zugriffsanzahlen.
 
+- Web content filtering reports are currently limited to showing the top 5000 records. Der Bericht "Domänen" zeigt beispielsweise nur maximal 5000 Domänen für eine bestimmte Filterabfrage an, sofern zutreffend. 
+
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Übersicht über den Webschutz](web-protection-overview.md)
-- [Schutz vor Webbedrohungen](web-threat-protection.md)
+- [Übersicht über Internetschutz](web-protection-overview.md)
+- [Internet-Bedrohungsschutz](web-threat-protection.md)
 - [Überwachen der Websicherheit](web-protection-monitoring.md)
-- [Reagieren auf Webbedrohungen](web-protection-response.md)
+- [Reagieren auf Internetbedrohungen](web-protection-response.md)

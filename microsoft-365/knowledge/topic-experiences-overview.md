@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Übersicht über Viva-Themen.
-ms.openlocfilehash: 68a88e74a674a7bbc290ae0e8f88bfbe0277d910
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4598c47b07287789a7a194914232799de5ca7b85
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917380"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488157"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics – Übersicht 
 
@@ -99,7 +99,7 @@ Weitere Informationen finden Sie unter [Verwalten von Themen im Themencenter](ma
 
 ## <a name="admin-controls"></a>Administratorsteuerelemente
 
-Mit den Administratorsteuerelementen im Microsoft 365 Admin Center können Sie Ihr Wissensnetzwerk verwalten. Mit ihnen können Microsoft 365 Global- oder SharePoint-Administrator:
+Mit Administratorsteuerelementen im Microsoft 365 Admin Center können Sie Themen von "Viva" verwalten. Mit ihnen können Microsoft 365 Global- oder SharePoint-Administrator:
 
 - Steuern, welche Benutzer in Ihrer Organisation Themen auf modernen SharePoint-Seiten oder in SharePoint-Suchergebnissen anzeigen dürfen.
 - Steuern, welche SharePoint-Websites durchsucht werden, um Themen zu identifizieren.

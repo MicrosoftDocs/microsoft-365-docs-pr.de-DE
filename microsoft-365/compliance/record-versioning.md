@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mehr zu Datensätzen, die Ihnen bei der Implementierung einer Datensatzverwaltungslösung in Microsoft 365 unterstützen.
-ms.openlocfilehash: 52ca56436686faac1d414dac47e2e9e16c36fa90
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 5c828f06f2ce9e2bd18869f897f1f372c1a62f21
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408558"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471124"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Versionsverwaltung zur Aktualisierung von Datensätzen verwenden, die in Microsoft Office SharePoint Online oder OneDrive gespeichert sind
 
@@ -45,8 +45,8 @@ Sie können jetzt Folgendes tun:
 
   - **Verwalten Sie ein erneuerndes Dokument, das alle Versionen enthält.** Standardmäßig enthält jedes SharePoint- und OneDrive-Dokument einen Versionsverlauf, der im Element „Menü“ zur Verfügung steht. In diesem Versionsverlauf können Sie leicht sehen, welche Versionen Datensätze sind und diese Dokumente anzeigen.
 
-> [!NOTE]
-> Wenn Sie die Datensatzversionsverwaltung mit einer Aufbewahrungsbezeichnung verwenden, das eine Löschaktion umfasst, empfiehlt es sich, auch die Aufbewahrungseinstellung so zu konfigurieren, dass der **Aufbewahrungszeitraum darauf basiert**, **wann Elemente bezeichnet wurden**. Mit dieser Bezeichnungseinstellung wird der Beginn des Aufbewahrungszeitraums für jede neue Datensatzversion zurückgesetzt, wodurch sichergestellt wird, dass ältere Versionen vor neueren Versionen gelöscht werden.
+> [!TIP]
+> Wenn Sie die Datensatzversionierung mit einer Aufbewahrungsbezeichnung verwenden, das eine Löschaktion umfasst, empfiehlt es sich, auch die Aufbewahrungseinstellung so zu konfigurieren, dass der **Aufbewahrungszeitraum darauf basiert** werden **wann Elemente bezeichnet wurden**. Mit dieser Bezeichnungseinstellung wird der Beginn des Aufbewahrungszeitraums für jede neue Datensatzversion zurückgesetzt, wodurch sichergestellt wird, dass ältere Versionen vor neueren Versionen gelöscht werden.
 
 Die Datensatzversionsverwaltung ist automatisch für alle Dokumente verfügbar, deren Aufbewahrungsbezeichnung das Element als Datensatz kennzeichnet. Wenn ein Benutzer die Dokumenteigenschaften im Detailbereich anzeigt, kann er den **Datensatzstatus** von **Gesperrt** auf **Entsperrt** umschalten. Diese Aktion erstellt einen Datensatz im Ordner "Datensätze" in dem permanenten Dokumentarchiv, in dem er sich für den Rest seiner Aufbewahrungsdauer befindet. 
 

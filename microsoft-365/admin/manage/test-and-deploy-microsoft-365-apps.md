@@ -1,9 +1,9 @@
 ---
-title: Testen und Bereitstellen von Microsoft 365-Apps
+title: Testen und Bereitstellen von Microsoft 365-Apps durch Partner im Portal für integrierte Apps
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -14,85 +14,124 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Suchen, Testen und Bereitstellen von Microsoft- und Microsoft-Partner-Apps für Benutzer und Gruppen in Ihrer Organisation über das Portal für integrierte Apps im Microsoft 365 Admin Center.
-ms.openlocfilehash: b0dc6277461ff03e8aae2e820543f8e5d9e2303c
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: f806d48e0ed582b1b5c1ee262058ce987125bd99
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790190"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488289"
 ---
-# <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>Testen und Bereitstellen von Microsoft 365-Apps im Microsoft 365 Admin Center
+# <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Testen und Bereitstellen von Microsoft 365-Apps durch Partner im Portal für integrierte Apps
 
-Das Microsoft 365 Admin Center bietet Ihnen die Flexibilität, Microsoft- und Microsoft-Partner-Apps von einem einzigen Ort aus bereitstellen zu können. Die Möglichkeit, erworbene und lizenzierte Apps von Microsoft- und Microsoft-Partnern über das Portal für integrierte Apps zu finden, zu testen und vollständig zu bereitstellen, bietet den Komfort und die Vorteile, die Ihre Organisation benötigt, um die Geschäftsdienste regelmäßig zu aktualisieren und effizient zu nutzen.  
+Das Microsoft 365 Admin Center bietet Ihnen die Flexibilität, Apps mit einem einzigen Store, benutzerdefinierten Geschäftsanwendungen und Microsoft 365-Partner-Apps von einem einzigen Standort aus bereitstellen zu können. Der Zugriff auf den Speicherort finden Sie unter Microsoft Admin Center > Einstellungen > integrierten Apps. Die Möglichkeit, erworbene und lizenzierte Apps von Microsoft-Partnern über das Portal für integrierte Apps zu finden, zu testen und vollständig zu bereitstellen, bietet den Komfort und die Vorteile, die Ihre Organisation benötigt, um Geschäftsdienste regelmäßig auf dem neuesten Stand zu halten und effizient zu arbeiten.
 
-Weitere Informationen zum Erwerb und zur Lizenzierung von Microsoft 365-Apps für Ihre Organisation finden Sie im Blogbeitrag "Verwalten und Bereitstellen von [Microsoft 365-Apps aus dem Microsoft 365 Admin Center".](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324)
-  
+Weitere Informationen zum Kauf und Zur Lizenzierung von Microsoft 365-Apps von Partnern für Ihre Organisation finden Sie unter [Manage and deploy Microsoft 365 Apps from the Microsoft 365 Admin Center](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324).
+
+Weitere Informationen zum Erstellen dieser Apps durch Partner finden Sie unter Planen eines [SaaS-Angebots für den kommerziellen Marketplace.](https://go.microsoft.com/fwlink/?linkid=2158277)
+
+Das Portal für integrierte Apps ist nur für globale Administratoren zugänglich und nur für WorldWide-Kunden verfügbar. Dieses Feature ist in Denk- und Regierungswölkchen nicht verfügbar.
+
+Das Portal für integrierte Apps zeigt eine Liste der Apps an, die einzelne Apps und Microsoft 365-Apps von Partnern enthält, die In Ihrer Organisation bereitgestellt werden. Nur Web-Apps, SPFx-Apps, Office-Add-Ins und Teams-Apps werden aufgelistet. Für Web-Apps werden 2 Arten von Apps angezeigt.
+
+- SaaS-Apps, die in appsource.microsoft.com verfügbar sind und von Administratoren bereitgestellt werden können, die im Namen der Organisation zustimmen.
+- SAML-Katalog-Apps, die mit Office-Add-Ins verknüpft sind.
+
 ## <a name="manage-apps-in-the-integrated-apps-portal"></a>Verwalten von Apps im Portal für integrierte Apps
 
-Indem Sie integrierte Apps im Microsoft 365 Admin Center auswählen, können Sie das Testen und Die Bereitstellung gekaufter und lizenzierter Microsoft- und Microsoft-Partner-Apps verwalten. 
+Sie können das Testen und Die Bereitstellung von gekauften und lizenzierten Microsoft 365-Apps von Partnern verwalten.
 
-1. Wählen Sie im Admin Center in der linken Navigationsleiste **"Einstellungen"** und dann "Integrierte **Apps" aus.** 
+1. Wählen Sie im Admin Center im linken Navigations navi die Option **Einstellungen** aus, und wählen Sie dann **Integrierte Apps aus.**
 
-2. Wählen Sie eine App mit **dem Status "Weitere** **verfügbare Apps" aus.**
+2. Wählen Sie eine App **mit status** of More apps **available aus,** um den Bereich **Verwalten zu** öffnen. Der Status von **weiteren verfügbaren Apps** zeigt, dass es mehr Integrationen von ISVs gibt, die noch nicht bereitgestellt wurden.
 
-3. Wählen **Sie** oben auf der Seite neben der Nachricht, die auf die Bereitstellung warten soll, die Option "Bereitstellen" aus.
+3. Wählen Sie **auf der Registerkarte** Übersicht die Option Bereitstellen **aus.** Für einige Apps müssen Sie Benutzer hinzufügen, bevor Sie Bereitstellen auswählen können.
 
-    Für einige Apps müssen Sie Benutzer hinzufügen, bevor Sie **"Bereitstellen" auswählen können.**
+4. Wählen **Sie Benutzer** aus, wählen Sie Ist **dies eine Testbereitstellung,** und wählen Sie dann Gesamte **Organisation,** **bestimmte Benutzer/Gruppen** oder **Just me aus.** Sie können auch test **deployment auswählen,** wenn Sie die Bereitstellung der App für die gesamte Organisation abwarten möchten. Bestimmte Benutzer oder Gruppen können eine Microsoft 365-Gruppe, eine Sicherheitsgruppe oder eine Verteilergruppe sein.
 
-    a. Wählen **Sie "Benutzer hinzufügen",** dann **"Vollständige Bereitstellung"** und dann **"Gesamte Organisation"** oder **"Bestimmte Benutzer/Gruppen" aus.**
+5. Wählen **Sie Aktualisieren** und dann Fertig **aus.** Sie können jetzt auf der Registerkarte Übersicht die Option Bereitstellen auswählen.
 
-    Bestimmte Benutzer/Gruppen können eine Microsoft 365-Gruppe, eine Sicherheitsgruppe oder eine verteilte Gruppe sein.
+6. Überprüfen Sie die App-Informationen, und wählen Sie dann **Bereitstellen aus.**
 
-    Sie können auch die **Testbereitstellung auswählen,** wenn Sie lieber warten möchten, bis die App für die gesamte Organisation bereitgestellt wird.
+7. Wählen **Sie auf** der Seite Bereitstellung abgeschlossen die Option Fertig aus, und überprüfen Sie die Details des Tests oder der vollständigen Bereitstellung auf der Registerkarte Übersicht. 
 
-    b. Wählen Sie **"Aktualisieren",**"Fertig" und jetzt **"Bereitstellen"** auf der Registerkarte **"Übersicht"** aus.   
+8. Wenn die App den Status **Ausstehendes Update** hat, können Sie auf die App klicken, um den Bereich Verwalten zu öffnen und die App zu aktualisieren.
 
-4. Überprüfen Sie die App-Informationen, und wählen Sie **"Bereitstellen" aus.** 
+## <a name="find-published-apps-for-testing-and-full-deployment"></a>Suchen veröffentlichter Apps für Tests und vollständige Bereitstellung
 
-5. Wählen Sie **auf der** Seite **"Bereitstellung abgeschlossen" die Option "Fertig"** aus. 
+Sie können veröffentlichte Apps finden, testen und vollständig bereitstellen, die noch nicht in der Liste auf der Seite Integrierte Apps angezeigt werden. Durch den Kauf und die Lizenzierung der Apps im Admin Center können Sie Microsoft- und Microsoft-Partner-Apps an einem einzigen Speicherort zu Ihrer Liste hinzufügen.
 
-    Überprüfen Sie die Details des Tests oder der vollständigen Bereitstellung auf der Registerkarte **"Übersicht".**
+1. Wählen Sie im Admin Center im linken Navigations navi die Option **Einstellungen** aus, und wählen Sie dann **Integrierte Apps aus.**
 
-## <a name="find-published-apps-for-testing-and-full-deployment"></a>Suchen nach veröffentlichten Apps zu Testzwecken und zur vollständigen Bereitstellung 
+2. Wählen **Sie Apps herunterladen** aus, um eine Ansicht der Apps zu erhalten.
 
-Sie können veröffentlichte Apps suchen, testen und vollständig bereitstellen, die noch nicht in der Liste auf der Seite "Integrierte Apps" angezeigt werden. Durch den Erwerb und die Lizenzierung der Apps über das Admin Center können Sie Microsoft- und Microsoft-Partner-Apps von einem einzigen Ort aus zu Ihrer Liste hinzufügen.
+3. Wählen Sie auf der **Seite veröffentlichte Microsoft 365 Apps-Apps** die App aus, die Sie bereitstellen möchten, indem Sie Jetzt herunterladen **auswählen.** Die angezeigten Apps sind in erster Linie Word, PowerPoint, Excel, Outlook-Add-Ins, Teams-App und SharePoint-Apps (auf SharePoint Framework-Technologie aufgebaut). Akzeptieren Sie die Berechtigungen, und wählen Sie **Weiter aus.**
 
-1. Wählen Sie im Admin Center in der linken Navigationsleiste **"Einstellungen"** und dann "Integrierte **Apps" aus.** 
+5. Wählen **Sie oben** auf der Seite neben der Nachricht bereitstellen aus, die auf das Warten auf die Bereitstellung verweist.
 
-2. Wählen **Sie "Apps über** der Liste der Apps herunterladen" aus.
+    Wenn die ausgewählte App von einem ISV mit einem SaaS-Angebot verknüpft ist, werden alle anderen Apps, die Teil dieses verknüpften Angebots sind, auf der Seite Konfiguration angezeigt. Wenn Sie alle Apps bereitstellen möchten, wählen Sie **Weiter aus.** Wählen Sie andernfalls **Bearbeiten** aus, und wählen Sie aus, welche Apps bereitgestellt werden soll. Für einige Apps müssen Sie Benutzer hinzufügen, bevor Sie **Bereitstellen auswählen können.**
 
-3. Wählen Sie auf der Seite "Veröffentlichte Apps für **Microsoft 365-Apps"** die App aus, die Sie bereitstellen möchten, indem Sie "Jetzt **herunterladen" auswählen.**
+6. Wählen **Sie Benutzer hinzufügen** aus, wählen Sie Ist **dies eine Testbereitstellung,** und wählen Sie dann **Gesamte** Organisation oder **Bestimmte Benutzer/Gruppen** oder **Just me aus.**
 
-4. Akzeptieren Sie die Berechtigungen, und wählen Sie dann **"Weiter" aus.**
+    Bestimmte Benutzer/Gruppen können eine Microsoft 365-Gruppe, eine Sicherheitsgruppe oder eine verteilte Gruppe sein. Sie können auch test **deployment auswählen,** wenn Sie die Bereitstellung der App für die gesamte Organisation abwarten möchten.
 
-5. Wählen **Sie** oben auf der Seite neben der Nachricht, die auf die Bereitstellung warten soll, die Option "Bereitstellen" aus.
+7. Wählen **Sie Weiter** aus, um zur Seite Berechtigungsanforderung akzeptieren **zu** gelangen. Die Funktionen und Berechtigungen der einzelnen Apps werden aufgelistet. Wenn die App ihre Zustimmung benötigt, wählen Sie **Berechtigungen akzeptieren aus.** Nur ein globaler Administrator kann zustimmen.
 
-    Für einige Apps müssen Sie Benutzer hinzufügen, bevor Sie **"Bereitstellen" auswählen können.**
-
-    a. Wählen **Sie "Benutzer hinzufügen",** dann **"Vollständige Bereitstellung"** und dann **"Gesamte Organisation"** oder **"Bestimmte Benutzer/Gruppen" aus.**
-
-    Bestimmte Benutzer/Gruppen können eine Microsoft 365-Gruppe, eine Sicherheitsgruppe oder eine verteilte Gruppe sein.
-
-    Sie können auch die **Testbereitstellung auswählen,** wenn Sie lieber warten möchten, bis die App für die gesamte Organisation bereitgestellt wird.
-
-    b. Wählen Sie **"Aktualisieren", "Fertig"** und jetzt **"Bereitstellen"** auf der Registerkarte **"Übersicht"** aus.   
-
-6. Überprüfen Sie die App-Informationen, und wählen Sie **"Bereitstellen" aus.** 
-
-7. Wählen Sie **auf der** Seite **"Bereitstellung abgeschlossen" die Option "Fertig"** aus. 
-
-    Überprüfen Sie die Details des Tests oder der vollständigen Bereitstellung auf der Registerkarte **"Übersicht".**
-
-Im Microsoft 365 Admin Center ist  jeder  Status  der bereitgestellten App mit dem Bereitstellungstyp **"Testbereitstellung",** "Vollständige Bereitstellung" oder **"Benutzerdefiniert"** und dem Datum der Bereitstellung der App in Ordnung.
+8. Wählen **Sie Weiter** aus, um die Bereitstellung zu überprüfen, und wählen Sie Bereitstellung fertig stellen **aus.** Sie können die Bereitstellung auf der Registerkarte **Übersicht** anzeigen, indem Sie **Diese Bereitstellung anzeigen auswählen.** Im Microsoft 365 Admin Center sehen Sie den Status der einzelnen bereitgestellten Apps und das Datum, an dem Sie die App bereitgestellt haben.
 
 > [!NOTE]
-> Wenn eine App zuvor von einem anderen Ort als dem Portal für integrierte Apps bereitgestellt wurde, ist der **Bereitstellungstyp** **"Benutzerdefiniert".**
+> Wenn eine App zuvor von einem anderen Ort als dem Portal für integrierte Apps bereitgestellt wurde, ist der **Bereitstellungstyp** **Benutzerdefinierter.**
 
 ## <a name="unsupported-scenarios"></a>Nicht unterstützte Szenarien
 
-Die folgenden Szenarien werden derzeit für die Bereitstellung über das Portal für integrierte Apps nicht unterstützt:
+Für die folgenden Szenarien können Sie keine einzelne Store-App oder Microsoft 365-Apps von Einem Partner über das Portal für integrierte Apps bereitstellen.
 
-- Die App oder das Add-In ist mit mehr als einer Software-as-a-Service -Angebot (SaaS) verknüpft.
-- Die SaaS-App ist mit Apps und Add-Ins verknüpft, hat aber keine zugeordnete AADid.
-- Zwei SaaS-Apps verwenden die gleiche AADid und sind beide mit Apps oder Add-Ins verknüpft.
-  
+- Das gleiche Add-In ist mit mehreren SaaS-Angeboten verknüpft.
+- Das SaaS-Angebot ist mit Add-Ins verknüpft, kann jedoch nicht in Microsoft Graph integriert werden, und es wird keine AAD-App-ID bereitgestellt.
+- Das SaaS-Angebot ist mit Add-Ins verknüpft, aber die für die Microsoft Graph-Integration bereitgestellte AAD-App-ID wird für mehrere SaaS-Angebote freigegeben.
+
+## <a name="upload-custom-line-of-business-apps-for-testing-and-full-deployment"></a>Hochladen benutzerdefinierter Business-Apps für Tests und vollständige Bereitstellung
+
+1. Wählen Sie im Admin Center im linken Navigations navi die Option **Einstellungen** und dann **Integrierte Apps aus.**
+
+2. Wählen **Sie Benutzerdefinierte Apps hochladen aus.** Es wird nur eine benutzerdefinierte Reihe von Apps für Word, PowerPoint, Excel und Outlook unterstützt.
+
+3. Laden Sie die Manifestdatei von Ihrem Gerät hoch, oder fügen Sie einen URL-Link hinzu. Für einige Apps müssen Sie Benutzer hinzufügen, bevor Sie Bereitstellen auswählen können.
+
+4. Wählen **Sie Benutzer hinzufügen** aus, wählen Sie Ist **dies eine Testbereitstellung,** und wählen Sie **Gesamte Organisation** oder Bestimmte **Benutzer/Gruppen** oder **Just me aus.**
+
+    Bestimmte Benutzer/Gruppen können eine Microsoft 365-Gruppe, eine Sicherheitsgruppe oder eine verteilte Gruppe sein. Sie können auch test **deployment auswählen,** wenn Sie warten möchten, bis die App in der gesamten Organisation bereitgestellt wird.
+
+5. Wählen **Sie Weiter** aus, um zur Seite Berechtigungsanforderung akzeptieren **zu** gelangen. Die Funktionen und Berechtigungen der Apps werden aufgelistet. Wenn die App ihre Zustimmung benötigt, wählen Sie **Berechtigungen akzeptieren aus.** Nur ein globaler Administrator kann zustimmen.
+
+6. Wählen **Sie Weiter** aus, um die Bereitstellung zu überprüfen, und wählen Sie Bereitstellung fertig stellen **aus.** Sie können die Bereitstellung auf der Registerkarte **Übersicht** anzeigen, indem Sie **Diese Bereitstellung anzeigen auswählen.**
+
+## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
+
+### <a name="which-administrator-role-do-i-need-to-access-integrated-apps"></a>Welche Administratorrolle muss ich für den Zugriff auf integrierte Apps verwenden?
+
+Nur globale Administratoren können auf integrierte Apps zugreifen. Integrierte Apps werden nicht im linken Navigations navi für andere Administratoren angezeigt.
+
+### <a name="why-do-i-see-add-in-in-the-left-nav-under-setting-but-not-integrated-apps"></a>Warum wird das Add-In im linken Navigations navig unter Einstellung, aber nicht integrierte Apps angezeigt?
+
+Es gibt einige Gründe:
+
+- Der angemeldete Administrator ist ein Exchange-Administrator.
+- Der Kunde befindet sich in einer unabhängigen Cloud, und integrierte Apps stehen für kundenorientierte Cloudkunden noch zur Verfügung.
+
+### <a name="what-apps-can-i-deploy-from-integrated-apps"></a>Welche Apps kann ich über integrierte Apps bereitstellen?
+
+Integrierte Apps ermöglichen die Bereitstellung von Web Apps, Teams-App, Excel, PowerPoint, Word, Outlook-Add-Ins und SPFx-Apps. Für Add-Ins unterstützen integrierte Apps die Bereitstellung in Exchange-Onlinepostfächern und nicht in lokalen Exchange-Postfächern.
+
+### <a name="can-administrators-delete-or-remove-apps"></a>Können Administratoren Apps löschen oder entfernen?
+
+Ja. Globale Administratoren können Apps löschen oder entfernen.
+
+- Wählen Sie eine App aus der Listenansicht aus. Wählen Sie **auf der** Registerkarte Konfiguration aus, welche Apps entfernt werden.  
+
+### <a name="is-integrated-apps-available-in-sovereign-cloud"></a>Sind integrierte Apps in der cloudbasierten Cloud verfügbar?
+
+Nein. Integrierte Apps sind für kundenbasierte Cloudkunden nicht verfügbar.
+
+### <a name="is-integrated-apps-available-in-government-clouds"></a>Sind integrierte Apps in Government Clouds verfügbar?
+
+Nein. Integrierte Apps sind für Government Cloud-Kunden nicht verfügbar.

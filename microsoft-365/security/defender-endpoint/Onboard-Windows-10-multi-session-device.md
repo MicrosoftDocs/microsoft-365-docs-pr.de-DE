@@ -1,5 +1,5 @@
 ---
-title: Onboarding von Windows 10-Geräten mit mehreren Sitzungen in Windows Virtual Desktop
+title: Onboarden von Windows 10-Geräten für mehrere Sitzungen in Windows Virtual Desktop
 description: Weitere Informationen finden Sie in diesem Artikel zum Onboarding von Windows 10-Geräten mit mehreren Sitzungen in Windows Virtual Desktop
 keywords: Windows Virtual Desktop, WVD, microsoft defender, endpoint, onboard
 search.product: eADQiWindows 10XVcnh
@@ -13,24 +13,20 @@ ms.topic: article
 author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
-ms.date: 09/10/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: bfd447120e171fed063b3224e3a47c2ef38f0f16
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 3f925fdc514c5e53b50f748d991f54d20fb49bd0
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222611"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488145"
 ---
-# <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Onboarding von Windows 10-Geräten mit mehreren Sitzungen in Windows Virtual Desktop 
+# <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Onboarden von Windows 10-Geräten für mehrere Sitzungen in Windows Virtual Desktop 
 6 Minuten zu lesen 
 
 Gilt für: 
 - Windows 10 multi-session running on Windows Virtual Desktop (WVD) 
-
-> [!WARNING]
-> Die Microsoft Defender for Endpoint-Unterstützung für Windows Virtual Desktop-Szenarien mit mehreren Sitzungen befindet sich derzeit in der Vorschau und ist auf bis zu 25 gleichzeitige Sitzungen pro Host/VM beschränkt. Einzelne Sitzungsszenarien auf Windows Virtual Desktop werden jedoch vollständig unterstützt.
 
 Microsoft Defender for Endpoint unterstützt die Überwachung von VDI- und Windows Virtual Desktop-Sitzungen. Je nach Den Anforderungen Ihrer Organisation müssen Sie möglicherweise VDI- oder Windows Virtual Desktop-Sitzungen implementieren, um Ihren Mitarbeitern den Zugriff auf Unternehmensdaten und Apps von einem nicht verwalteten Gerät, Remotespeicherort oder ähnlichem Szenario zu unterstützen. Mit Microsoft Defender for Endpoint können Sie diese virtuellen Computer auf anomale Aktivitäten überwachen.
 
