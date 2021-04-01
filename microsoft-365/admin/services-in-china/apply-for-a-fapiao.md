@@ -21,17 +21,14 @@ search.appverid:
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: Erfahren Sie, wie Sie Ihre Fapiao-Anforderung an das 21Vianet Fapiao-Verwaltungssystem übermitteln, nachdem Sie eine Zahlung im Office 365 durchgeführt von 21Vianet in China durchgeführt haben.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 681d2d79c510c773d7597c62811256458e3d166d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d9f75dfd00bb547e9d2e0f53826e5bc50926de39
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914474"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470953"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Beantragen eines Fapiao für Office 365, betrieben von 21Vianet
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 Sie können Ihre Fapiao-Anforderung an das 21Vianet-Fapiao-Verwaltungssystem etwa drei Tage nach der 21Vianet-Fapiao-Verwaltung übermitteln. Nachdem Sie Ihre Fapiao-Anforderung übermittelt haben, wird sie in zwei Tagen verarbeitet.
   
@@ -43,7 +40,7 @@ Es gibt zwei Möglichkeiten, sich für einen Fapiao zu bewerben:
   
 1. Nachdem Sie eine Zahlung auf der Office 365 betrieben von 21Vianet-Website durchgeführt haben, erhalten Sie eine Auftragsbestätigungs-E-Mail mit Ihrer Bestellnummer und einem Link zum Fapiao-Verwaltungssystem. Sie können den Link in der E-Mail verwenden, um ein Konto im <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao-Informationsverwaltungssystem zu erstellen.</a>
 
-    Oder
+    Oder:
 
 2. Sie können einen Fapiao im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center beantragen.</a>
 
@@ -111,7 +108,7 @@ Wenn Fapiao nicht mehr verwendet wird, zeigt das System einen Hinweis an und gib
   
 ![Die Fehlermeldung, die angezeigt wird, wenn das 21Vianet Fapiao-Verwaltungssystem nicht mehr verwendet wird.](../../media/effe0796-83aa-4a91-a488-15d6f58c01dc.png)
   
-## <a name="faqs"></a>Häufig gestellte Fragen
+## <a name="faqs"></a>FAQs
 
 ### <a name="what-services-can-i-get-from-online-support"></a>Welche Dienste kann ich vom Onlinesupport erhalten?
 

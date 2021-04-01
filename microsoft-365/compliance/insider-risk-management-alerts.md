@@ -12,16 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2a21dfead9b1f1ba2f05fc7629ce4fcda9991017
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 9fe1665eda882793a62315299a3cbf6667ec7988
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819970"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445653"
 ---
 # <a name="insider-risk-management-alerts"></a>Warnungen zum Risikomanagement von Insidern
 
 Warnungen zum Insider-Risikomanagement werden automatisch durch Risikoindikatoren generiert, die in den Richtlinien zum Insider-Risikomanagement definiert sind. Diese Warnungen geben Compliance-Analysten und -Ermittlern einen umfassenden Überblick über den aktuellen Risikostatus und ermöglichen es Ihrem Unternehmen, eine Einstufung vorzunehmen und Maßnahmen für entdeckte Risiken zu ergreifen. Standardmäßig generieren Richtlinien eine bestimmte Menge von Warnungen mit niedrigem, [](insider-risk-management-settings.md#alert-volume) mittlerem und hohem Schweregrad, Sie können jedoch das Benachrichtigungsvolumen entsprechend Ihren Anforderungen erhöhen oder verringern. Darüber hinaus können Sie den Warnungsschwellenwert für [Richtlinienindikatoren](insider-risk-management-settings.md#indicator-level-settings-preview) beim Erstellen einer neuen Richtlinie mit dem Richtlinienassistenten konfigurieren.
+
+Eine Übersicht darüber, wie Warnungen Details, Kontext und verwandte Inhalte für riskante Aktivitäten bereitstellen und wie Sie Ihren Untersuchungsprozess effektiver gestalten können, finden Sie im Video zu Insider [Risk Management Alerts Triage Experience.](https://www.youtube.com/watch?v=KgmpxBLJLPI)
 
 ## <a name="alert-dashboard"></a>Dashboard "Warnung"
 

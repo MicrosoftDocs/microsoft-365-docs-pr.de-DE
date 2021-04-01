@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über die Fallgrenzwerte, Indizierungsgrenzwerte und Suchgrenzwerte, die für die Advanced eDiscovery-Lösung in Microsoft 365 gelten.
-ms.openlocfilehash: 9b36407868a0f426b71a0a551d2f702d0a20b777
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 145d5de5027a9d6171215c0602a733ced5265657
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423436"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445321"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Grenzwerte in Advanced eDiscovery
 
@@ -40,6 +40,8 @@ In der folgenden Tabelle sind die Grenzwerte für Fälle und Überprüfungssätz
 |Maximale Anzahl von Überprüfungssätzen pro Fall.  <br/> |20 <br/> |
 |Maximale Anzahl von Taggruppen pro Fall.  <br/> |1000 <br/> |
 |Maximale Anzahl von Tags pro Fall.  <br/> |1000 <br/> |
+|Maximale Anzahl gleichzeitiger Aufträge in Ihrer Organisation zum Hinzufügen von Inhalten zu einem Überprüfungssatz. Diese Aufträge heißen **Hinzufügen von Daten** zu einem Überprüfungssatz und werden in einem Fall auf der Registerkarte **Aufträge** angezeigt.| 10 <sup>4</sup> |
+|Maximale Anzahl gleichzeitiger Aufträge zum Hinzufügen von Inhalten zu einem Überprüfungssatz pro Benutzer. Diese Aufträge heißen **Hinzufügen von Daten** zu einem Überprüfungssatz und werden in einem Fall auf der Registerkarte **Aufträge** angezeigt. | 3 |
 |||
 
 ## <a name="hold-limits"></a>Haltebeschränkungen
@@ -48,7 +50,7 @@ In der folgenden Tabelle sind die Grenzwerte für Haltewerte aufgeführt, die ei
 
 | Beschreibung der Beschränkung | Grenze |
 |:-----|:-----|
-|Maximale Anzahl von Postfächern in einem einzelnen Fall. Dieser Grenzwert umfasst die gesamtzahl der Benutzerpostfächer und die Postfächer, die Microsoft 365-Gruppen, Microsoft Teams und Yammer zugeordnet sind. <br/> |1.000  <br/> |
+|Maximale Anzahl von Postfächern in einem einzelnen Fall. Dieser Grenzwert umfasst die gesamtzahl der Benutzerpostfächer und die Postfächer, die Microsoft 365-Gruppen, Microsoft Teams und Yammer zugeordnet sind. <br/> |1,000  <br/> |
 |Maximale Anzahl von Websites in einem einzigen Fall. Dieser Grenzwert umfasst die gesamtzahl der OneDrive for #A0 und #A1 sowie die Websites, die Microsoft 365-Gruppen, Microsoft Teams und Yammer zugeordnet sind.  <br/> |100  <br/> |
 
 ## <a name="indexing-limits"></a>Indizierungsgrenzwerte
@@ -74,11 +76,11 @@ Die in diesem Abschnitt beschriebenen Grenzwerte stehen im  Zusammenhang mit der
 |Maximale Anzahl von Suchen, die gleichzeitig ausgeführt werden können. |Keine Begrenzung |
 |Maximale Anzahl von Suchen, die ein einzelner Benutzer gleichzeitig starten kann. |10   | 
 |Maximale Anzahl von Zeichen für eine Suchabfrage (einschließlich Operatoren und Bedingungen). |10.000 &nbsp; <sup>2</sup>|
-|Mindestanzahl von Alphazeichen für Präfix-Platzhalter; beispiel: **ein \* *_* oder \* _ set**.|3  |  
+|Mindestanzahl von Alphazeichen für Präfix-Platzhalter; beispiel: **ein \* *_* oder \* _ set**.|3 |  
 |Maximale Anzahl von Varianten, die zurückgegeben werden, wenn ein Präfix-Platzhalter verwendet wird, um nach einem exakten Ausdruck zu suchen, oder wenn ein Präfix-Platzhalter und der **NEAR** Boolean-Operator verwendet werden. |10.000 &nbsp; <sup>3</sup>|
 |Maximale Anzahl von Elementen pro Benutzerpostfach, die auf der Vorschauseite für Suchen angezeigt werden. Die neuesten Elemente werden angezeigt. |100|
-|Maximale Anzahl von Elementen aus allen Postfächern, die auf der Vorschauseite für Suchen angezeigt werden.|1.000|
-|Maximale Anzahl von Postfächern, die für Suchergebnisse in der Vorschau angezeigt werden können.  Wenn mehr als 1.000 Postfächer vorhanden sind, die Elemente enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die 1.000 postfächer mit den meisten Ergebnissen für die Vorschau zur Verfügung.|1.000|
+|Maximale Anzahl von Elementen aus allen Postfächern, die auf der Vorschauseite für Suchen angezeigt werden.|1,000|
+|Maximale Anzahl von Postfächern, die für Suchergebnisse in der Vorschau angezeigt werden können.  Wenn mehr als 1.000 Postfächer vorhanden sind, die Elemente enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die 1.000 postfächer mit den meisten Ergebnissen für die Vorschau zur Verfügung.|1,000|
 |Maximale Anzahl von Elementen aus SharePoint- und OneDrive for #A0 auf der Vorschauseite für Suchen. Die neuesten Elemente werden angezeigt. |200|
 |Maximale Anzahl von SharePoint- und OneDrive for Business-Websites, die für Suchergebnisse in der Vorschau angezeigt werden können. Wenn mehr als 200 Websites Elemente enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die 200 häufigsten Websites mit den meisten Ergebnissen für die Vorschau zur Verfügung.|200|
 |Maximale Anzahl von Elementen pro Postfach für öffentliche Ordner, die auf der Vorschauseite für Suchen angezeigt werden. |100|
@@ -107,16 +109,14 @@ Microsoft sammelt Leistungsinformationen für Suchdurchsuchungen, die von allen 
 |Maximale Größe der Excel-Datei, die im systemeigenen Viewer angezeigt werden kann.  <br/> |4 MB  <br/> |
 |||
 
-## <a name="export-limits"></a>Exportgrenzwerte
+## <a name="export-limits---final-export-out-of-review-set"></a>Exportbeschränkungen – Endgültiger Export außer Überprüfungssatz
+
+Die in diesem Abschnitt beschriebenen Grenzwerte stehen im Zusammenhang mit dem Exportieren von Dokumenten aus einem Überprüfungssatz.
 
 | Beschreibung der Beschränkung | Grenze |
 |:-----|:-----|
 |Maximale Größe eines einzelnen Exports.|3 Millionen Dokumente oder 100 GB, je nach Kleiner|
-|Maximale Datenmenge an einem einzigen Tag. | 2 TB |
-|Maximale Anzahl gleichzeitiger Exporte in Ihrer Organisation. | 10 <sup>4</sup> |
-|Maximale Anzahl gleichzeitiger Exporte pro Benutzer. | 3  |
-|Maximale Größe einer einzelnen PST-Datei. | 10 GB |
-|Maximale Anzahl gleichzeitiger Exporte pro Überprüfungssatz. | 1  |
+|Maximale Anzahl gleichzeitiger Exporte pro Überprüfungssatz. | 1 |
 |||
 
 ## <a name="review-set-download-limits"></a>Überprüfen von Festgelegten Downloadbeschränkungen
@@ -136,7 +136,7 @@ Microsoft sammelt Leistungsinformationen für Suchdurchsuchungen, die von allen 
 >
 > <sup>3</sup> Für Abfragen ohne Ausdrücke (ein Schlüsselwortwert, der keine doppelten Anführungszeichen verwendet) verwenden wir einen speziellen Präfixindex. Dies weist darauf hin, dass ein Wort in einem Dokument auftritt, aber nicht an dem Ort, an dem es im Dokument auftritt. Zum Ausführen einer Ausdrucksabfrage (ein Schlüsselwortwert mit doppelten Anführungszeichen) müssen wir die Position im Dokument für die Wörter im Ausdruck vergleichen. Dies bedeutet, dass der Präfixindex nicht für Phrasenabfragen verwendet werden kann. In diesem Fall erweitern wir die Abfrage intern mit allen möglichen Wörtern, auf die das Präfix erweitert wird. z. **B. kann Zeit _ zu _ "Zeit- ODER Zeitgeber ODER Zeiten \* ODER Timex ODER timeboxed OR ..." erweitert werden.** Der Grenzwert von 10.000 ist die maximale Anzahl von Varianten, auf die das Wort erweitert werden kann, nicht die Anzahl der Dokumente, die mit der Abfrage übereinstimmen. Es gibt keine Obergrenze für nicht ausdrückefreie Ausdrücke.
 >
-> <sup>4</sup> Dieser Grenzwert wird für alle eDiscovery-Tools freigegeben. Dies bedeutet, dass gleichzeitige Exporte in inhaltssuche, Core eDiscovery und Advanced eDiscovery auf diesen Grenzwert angewendet werden.
+> <sup>4</sup> Dieser Grenzwert wird für das Exportieren von Inhalten in anderen eDiscovery-Tools freigegeben. Dies bedeutet, dass gleichzeitige Exporte in die Inhaltssuche und Core eDiscovery (und das Hinzufügen von Inhalten zu Überprüfungssätzen in Advanced eDiscovery) gegen diesen Grenzwert angewendet werden.
 >
 > <sup>5</sup> Dieser Grenzwert gilt für das Herunterladen ausgewählter Dokumente aus einem Überprüfungssatz. Es gilt nicht für das Exportieren von Dokumenten aus einem Überprüfungssatz. Weitere Informationen zum Herunterladen und Exportieren von Dokumenten finden Sie unter [Export case data in Advanced eDiscovery](exporting-data-ediscover20.md).
 >

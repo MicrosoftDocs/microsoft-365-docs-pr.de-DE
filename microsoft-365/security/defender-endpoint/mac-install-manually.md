@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 044a3d48dc350a5663a27ab3c16c2da7a5e3f3f1
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: a9e75441a8c4a336e8c657d27330c118fcac4788
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379444"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476317"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-for-macos"></a>Manuelle Bereitstellung für Microsoft Defender for Endpoint für macOS
 
@@ -119,7 +119,7 @@ Zum Abschließen dieses Vorgangs müssen Sie über Administratorrechte auf dem G
 
 1. Kopieren Sie wdav.pkg und MicrosoftDefenderATPOnboardingMacOs.py auf das Gerät, auf dem Sie Microsoft Defender for Endpoint für macOS bereitstellen.
 
-    Das Clientgerät ist nicht orgId zugeordnet. Beachten Sie, dass *das orgId-Attribut* leer ist.
+    Das Clientgerät ist nicht mit org_id. Beachten Sie, *dass org_id-Attribut* leer ist.
 
     ```bash
     mdatp health --field org_id
@@ -131,23 +131,96 @@ Zum Abschließen dieses Vorgangs müssen Sie über Administratorrechte auf dem G
     /usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py
     ```
 
-3. Stellen Sie sicher, dass das Gerät jetzt Ihrer Organisation zugeordnet ist, und meldet eine gültige *orgId*:
+3. Stellen Sie sicher, dass das Gerät jetzt Ihrer Organisation zugeordnet ist, und melden Sie eine gültige Organisations-ID:
 
     ```bash
     mdatp health --field org_id
     ```
 
-Nach der Installation wird das Microsoft Defender-Symbol in der macOS-Statusleiste in der oberen rechten Ecke angezeigt.
+    Nach der Installation wird das Microsoft Defender-Symbol in der macOS-Statusleiste in der oberen rechten Ecke angezeigt.
+    
+    > [!div class="mx-imgBorder"]
+    > ![Microsoft Defender-Symbol im Screenshot der Statusleiste](images/mdatp-icon-bar.png)
 
-   ![Microsoft Defender-Symbol im Screenshot der Statusleiste](images/mdatp-icon-bar.png)
-   
 
 ## <a name="how-to-allow-full-disk-access"></a>Zulassen des vollständigen Festplattenzugriffs
 
 > [!CAUTION]
 > macOS 10.15 (Catalina) enthält neue Sicherheits- und Datenschutzverbesserungen. Ab dieser Version können Anwendungen standardmäßig ohne ausdrückliche Zustimmung nicht auf bestimmte Speicherorte auf dem Datenträger zugreifen (z. B. Dokumente, Downloads, Desktop usw.). In Ermangelung dieser Zustimmung kann Microsoft Defender for Endpoint Ihr Gerät nicht vollständig schützen.
 
-Um die Zustimmung zu erteilen, öffnen Sie system preferences -> Security & Privacy -> Privacy -> Full Disk Access. Klicken Sie auf das Sperrsymbol, um Änderungen vorzunehmen (unten im Dialogfeld). Wählen Sie Microsoft Defender for Endpoint aus.
+1. Um die Zustimmung zu erteilen, öffnen Sie **system preferences**  >  **Security & Privacy**  >  **Privacy** Full  >  **Disk Access**. Klicken Sie auf das Sperrsymbol, um Änderungen vorzunehmen (unten im Dialogfeld). Wählen Sie Microsoft Defender for Endpoint aus.
+
+2. Führen Sie einen AV-Erkennungstest aus, um zu überprüfen, ob das Gerät ordnungsgemäß onboardiert ist, und melden Sie den Dienst. Führen Sie die folgenden Schritte auf dem neu integrierten Gerät aus:
+
+    1. Stellen Sie sicher, dass der Echtzeitschutz aktiviert ist (wird durch ein Ergebnis von 1 davon bezeichnet, dass der folgende Befehl ausgeführt wird):
+
+        ```bash
+        mdatp health --field real_time_protection_enabled
+        ```
+
+    1. Öffnen Sie ein Terminalfenster. Kopieren Sie den folgenden Befehl, und führen Sie diesen aus:
+
+        ```bash
+        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+        ```
+
+    1. Die Datei sollte von Defender for Endpoint für Mac isoliert worden sein. Verwenden Sie den folgenden Befehl, um alle erkannten Bedrohungen auflisten:
+
+        ```bash
+        mdatp threat list
+        ```
+
+3. Führen Sie einen EDR-Erkennungstest aus, um zu überprüfen, ob das Gerät ordnungsgemäß onboardiert ist, und melden Sie den Dienst. Führen Sie die folgenden Schritte auf dem neu integrierten Gerät aus:
+
+   1. In Ihrem Browser wie Microsoft Edge für Mac oder Safari.
+
+   1. Laden Sie MDATP MacOS DIY.zip aus und https://aka.ms/mdatpmacosdiy extrahieren Sie es.
+
+      Möglicherweise werden Sie dazu aufgefordert:
+
+      > Möchten Sie Downloads auf "mdatpclientanalyzer.blob.core.windows.net" zulassen?<br/>
+      > Sie können ändern, welche Websites Dateien in den Einstellungen für Websites herunterladen können.
+
+4. Klicken Sie **auf Zulassen**.
+
+5. Öffnen **Sie Downloads**.
+
+6. Sie sollten **MDATP MacOS DIY sehen.**
+
+   > [!TIP]
+   > Wenn Sie doppelklicken, erhalten Sie die folgende Meldung:
+   > 
+   > > **"MDATP MacOS DIY" kann nicht geöffnet werden, da der Entwickler nicht überprüft werden kann.**<br/>
+   > > MacOS kann nicht überprüfen, ob diese App frei von Schadsoftware ist.<br/>
+   > > **\[ Move to \] Trash** **\[ Cancel \]** 
+  
+7. Klicken Sie auf **Abbrechen**.
+
+8. Klicken Sie mit der rechten **Maustaste auf MDATP MacOS DIY,** und klicken Sie dann auf **Öffnen**. 
+
+    Das System sollte die folgende Meldung anzeigen:
+
+    > **macOS kann den Entwickler von **MDATP MacOS DIY nicht überprüfen.** Möchten Sie es wirklich öffnen?**<br/>
+    > Durch das Öffnen dieser App überschreiben Sie die Systemsicherheit, die Ihren Computer und persönliche Informationen Schadsoftware zur Verfügung stellt, die Ihren Mac beeinträchtigt oder Ihre Privatsphäre gefährdet.
+
+10. Klicken Sie auf **Öffnen**.
+
+    Das System sollte die folgende Meldung anzeigen:
+
+    > Microsoft Defender ATP – MacOS EDR-HEIMWERKER-Testdatei<br/>
+    > Entsprechende Warnungen sind im MDATP-Portal verfügbar.
+
+11. Klicken Sie auf **Öffnen**.
+
+    In ein paar Minuten sollte eine Warnung namens "macOS EDR Test Alert" ausgelöst werden.
+
+12. Wechseln Sie zu Microsoft Defender Security Center ( https://SecurityCenter.microsoft.com) .
+
+13. Wechseln Sie zur Warnwarteschlange.
+
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Beispiel für eine macOS-EDR-Testwarnung, die den Schweregrad, die Kategorie, die Erkennungsquelle und ein reduziertes Menü mit Aktionen zeigt.":::
+    
+    Sehen Sie sich die Warnungsdetails und die Gerätezeitachse an, und führen Sie die regulären Untersuchungsschritte aus.
 
 ## <a name="logging-installation-issues"></a>Probleme bei der Protokollierung der Installation
 

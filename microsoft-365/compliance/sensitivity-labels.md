@@ -22,12 +22,12 @@ description: Verwenden Sie Vertraulichkeitsbezeichnungen aus dem Microsoft Infor
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6c1f8b404ddcda45d782a6517880955a6199025d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a540529c174cc12b0e037be4af4e08c29e3835ea
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919591"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408600"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informationen zu Vertraulichkeitsbezeichnungen
 
@@ -49,9 +49,9 @@ Hier ein Beispiel zur Anzeige verfügbarer Vertraulichkeitsbezeichnungen aus der
 Um Vertraulichkeitsbezeichnungen anwenden zu können müssen die Benutzer mit ihrem Microsoft 365-Geschäfts-, -Schul- oder -Unikonto angemeldet sein.
 
 > [!NOTE]
-> Vertraulichkeitsbezeichnungen werden neu für Mandanten der US-Regierung (GCC und GCC-H) unterstützt. Weitere Informationen finden Sie in den Anmerkungen zu dieser Version von Microsoft 365 Apps for Enterprise, [Version 2101: 26. Januar](/officeupdates/current-channel#version-2101-january-26).
+> Für US Government-Mandanten werden Vertraulichkeitsbezeichnungen [jetzt für GCC- und GCC-High-Umgebungen unterstützt](/officeupdates/current-channel#version-2101-january-26), zudem erfolgt derzeit das Rollout für DoD-Umgebungen.
 >
-> Informationen zum Azure Information Protection-Client und -Scanner mit einheitlichen Bezeichnungen finden Sie unter [Azure Information Protection Premium – Dienstbeschreibung für Behörden](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
+> Wenn Sie den Azure Information Protection-Client und -Scanner mit einheitlichen Bezeichnungen für diese Umgebungen verwenden, lesen Sie [Azure Information Protection Premium – Dienstbeschreibung für Behörden](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
 Sie können Vertraulichkeitsbezeichnungen zu Folgendem verwenden:
   

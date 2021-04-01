@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 0eaf89b3f49d8b69cb7b36e4e25df90946c19e32
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dbb294cdb865fb01f931e2e9c3bc4f6afb3f1e09
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917207"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471034"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -36,27 +36,29 @@ ms.locfileid: "50917207"
 > Die Informationen auf dieser Seite richten sich an IT-Administratoren, die aus Compliancegründen Aufbewahrungsrichtlinien und -bezeichnungen erstellen können.
 
 In den meisten Organisationen nimmt die Menge und Komplexität der Daten täglich zu – E-Mails, Dokumente, Chatnachrichten usw. Eine effektive Verwaltung bzw. Governance dieser Informationen ist wichtig, da Sie:
-  
-- **branchenspezifische Vorschriften und interne Richtlinien einhalten müssen**, nach denen Inhalte für eine bestimmte Mindestdauer aufzubewahren sind – z. B. müssen Sie gemäß dem Sarbanes-Oxley Act möglicherweise bestimmte Arten von Inhalten sieben Jahre lang aufbewahren. 
 
-- **das Risiko bei Rechtsstreitigkeiten oder einer Sicherheitsverletzung reduzieren müssen**, indem Sie alte Inhalte, die Sie nicht mehr aufbewahren müssen, endgültig löschen. 
-    
-- **Ihrer Organisation dabei helfen müssen, effektiven Wissensaustausch zu betreiben und agiler zu werden**, indem Sie sicherstellen, dass die Benutzer nur mit Inhalten arbeiten, die aktuell und für sie relevant sind. 
-    
-Die Aufbewahrungseinstellungen, die Sie konfigurieren, können Ihnen helfen, all diese Ziele zu erreichen. Zum Verwalten von Inhalten sind häufig zwei Aktionen erforderlich:
-  
-- **Aufbewahrung** von Inhalten, sodass sie nicht vor dem Ende des Aufbewahrungszeitraums dauerhaft gelöscht werden 
-    
-- **Endgültiges Löschen** von Inhalten am Ende des Aufbewahrungszeitraums. 
-    
+- **branchenspezifische Vorschriften und interne Richtlinien einhalten müssen**, nach denen Inhalte für eine bestimmte Mindestdauer aufzubewahren sind – z. B. müssen Sie gemäß dem Sarbanes-Oxley Act möglicherweise bestimmte Arten von Inhalten sieben Jahre lang aufbewahren.
+
+- **das Risiko bei Rechtsstreitigkeiten oder einer Sicherheitsverletzung reduzieren müssen**, indem Sie alte Inhalte, die Sie nicht mehr aufbewahren müssen, endgültig löschen.
+
+- **Ihrer Organisation dabei helfen müssen, effektiven Wissensaustausch zu betreiben und agiler zu werden**, indem Sie sicherstellen, dass die Benutzer nur mit Inhalten arbeiten, die aktuell und für sie relevant sind.
+
+Aufbewahrungseinstellungen, die Sie konfigurieren, können Ihnen helfen, diese Ziele zu erreichen. Zum Verwalten von Inhalten sind häufig zwei Aktionen erforderlich:
+
+| Aktion| Zweck |
+|:-----|:-----|
+|Inhalte beibehalten | Dauerhafte Löschung vermeiden und für eDiscovery verfügbar bleiben |
+|Löschen von Inhalt | Dauerhaftes Löschen von Inhalten aus Ihrer Organisation|
 
 Mit diesen beiden Aufbewahrungsaktionen können Sie Aufbewahrungseinstellungen für die folgenden Ergebnisse konfigurieren:
 
 - Nur Aufbewahren: Aufbewahren von Inhalten für immer oder für einen bestimmten Zeitraum.
-- Nur Löschen: Löscht Inhalte nach einem bestimmten Zeitraum.
-- Aufbewahren und Löschen: Inhalte für einen bestimmten Zeitraum aufbewahren und dann löschen.
+- Nur löschen: Inhalt nach einem bestimmten Zeitraum dauerhaft löschen.
+- Aufbewahren und dann löschen: Inhalte für einen bestimmten Zeitraum aufbewahren und dann dauerhaft löschen.
 
 Diese Aufbewahrungseinstellungen arbeiten mit bereits vorhandenen Inhalten und ersparen Ihnen den zusätzlichen Aufwand für die Erstellung und Konfiguration von zusätzlichem Speicherplatz, wenn Sie Inhalte aus Compliancegründen aufbewahren müssen. Außerdem müssen Sie keine benutzerdefinierten Prozesse implementieren, um diese Daten zu kopieren und zu synchronisieren.
+
+In den folgenden Abschnitten erfahren Sie mehr darüber, wie Aufbewahrungsrichtlinien und Aufbewahrungskennzeichnungen funktionieren, wann sie zu verwenden sind und wie sie sich gegenseitig ergänzen. Wenn Sie jedoch bereit sind, loszulegen und Aufbewahrungseinstellungen für einige gängige Szenarien zu implementieren, lesen Sie den Abschnitt [Erste Schritte mit Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](get-started-with-retention.md).
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Funktionsweise von Aufbewahrungseinstellungen bei vorhandenem Inhalt
 

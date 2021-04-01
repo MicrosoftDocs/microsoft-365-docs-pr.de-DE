@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f6f01a1bed296b6af2e6be973de6605910809fc3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1648c648401086b296bd267fc1a9e7b011930e74
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926403"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445643"
 ---
 # <a name="insider-risk-management-cases"></a>Fälle des Insiderrisikomanagements
 
@@ -29,6 +29,8 @@ Nachdem Sie die Details eines Falls untersucht haben, können Sie maßnahmen:
 - Lösen des Falls als gutartig
 - Freigeben des Falls mit Ihrer ServiceNow-Instanz oder mit einem E-Mail-Empfänger
 - Eskalieren des Falls für eine Erweiterte eDiscovery-Untersuchung
+
+Eine Übersicht darüber, wie Fälle im Insider Risk Management untersucht und verwaltet werden, finden Sie im Video zu [Insider Risk Management Investigation and Escalation.](https://www.youtube.com/watch?v=UONUSmkRC8s)
 
 ## <a name="cases-dashboard"></a>Falldashboard
 

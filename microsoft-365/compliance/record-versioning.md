@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mehr zu Datensätzen, die Ihnen bei der Implementierung einer Datensatzverwaltungslösung in Microsoft 365 unterstützen.
-ms.openlocfilehash: f622e7e6a75cacf5b9cf283847e6b3eea718d542
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 52ca56436686faac1d414dac47e2e9e16c36fa90
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925571"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408558"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Versionsverwaltung zur Aktualisierung von Datensätzen verwenden, die in Microsoft Office SharePoint Online oder OneDrive gespeichert sind
 
@@ -44,6 +44,9 @@ Sie können jetzt Folgendes tun:
   - **Lassen Sie die Datensätze automatisch in einem in-situ-Datensatzrepository speichern, das sich in der Websitesammlung befindet.** Jede Websitesammlung in SharePoint und OneDrive bewahrt Inhalte in ihrer Aufbewahrungsspeicherbibliothek auf. Datensatzversionen werden im Ordner „Datensätze“ in dieser Bibliothek gespeichert.
 
   - **Verwalten Sie ein erneuerndes Dokument, das alle Versionen enthält.** Standardmäßig enthält jedes SharePoint- und OneDrive-Dokument einen Versionsverlauf, der im Element „Menü“ zur Verfügung steht. In diesem Versionsverlauf können Sie leicht sehen, welche Versionen Datensätze sind und diese Dokumente anzeigen.
+
+> [!NOTE]
+> Wenn Sie die Datensatzversionsverwaltung mit einer Aufbewahrungsbezeichnung verwenden, das eine Löschaktion umfasst, empfiehlt es sich, auch die Aufbewahrungseinstellung so zu konfigurieren, dass der **Aufbewahrungszeitraum darauf basiert**, **wann Elemente bezeichnet wurden**. Mit dieser Bezeichnungseinstellung wird der Beginn des Aufbewahrungszeitraums für jede neue Datensatzversion zurückgesetzt, wodurch sichergestellt wird, dass ältere Versionen vor neueren Versionen gelöscht werden.
 
 Die Datensatzversionsverwaltung ist automatisch für alle Dokumente verfügbar, deren Aufbewahrungsbezeichnung das Element als Datensatz kennzeichnet. Wenn ein Benutzer die Dokumenteigenschaften im Detailbereich anzeigt, kann er den **Datensatzstatus** von **Gesperrt** auf **Entsperrt** umschalten. Diese Aktion erstellt einen Datensatz im Ordner "Datensätze" in dem permanenten Dokumentarchiv, in dem er sich für den Rest seiner Aufbewahrungsdauer befindet. 
 
@@ -75,7 +78,7 @@ Wenn ein Benutzer einen Datensatz sperrt, kann das ursprüngliche Dokument erneu
 
 ## <a name="record-versions"></a>Datensatzversionen
 
-Jedes Mal, wenn ein Benutzer einen Datensatz entsperrt, wird die aktuelle Version in den Ordner Datensätze in dem permanenten Dokumentarchiv kopiert, und diese Version enthält den Wert **Datensatz** im Feld **Kommentare** des Versionsverlaufs.
+Jedes Mal, wenn ein Benutzer einen Datensatz entsperrt, wird die aktuelle Version in das permanente Dokumentarchiv kopiert, und diese Version enthält den Wert **Datensatz** im Feld **Kommentare** des Versionsverlaufs.
 <br/><br/>
 
 ![Datensatz, der in dem permanenten Dokumentarchiv angezeigt wird](../media/recordversioning10.png)
@@ -93,16 +96,13 @@ Die Datensätze werden im Ordner „Datensätze“ in dem permanenten Dokumentar
 
 ![Datensatzordner in dem permanenten Dokumentarchiv](../media/recordversioning12.png)
 
-Das permanente Dokumentarchiv ist nur für Websitesammlungsadministratoren sichtbar. Außerdem ist das permanente Dokumentarchiv nicht standardmäßig vorhanden. Er wird nur erstellt, wenn Inhalte, die einer Aufbewahrungsbezeichnung oder einer Aufbewahrungsrichtlinie unterliegen, zum ersten Mal in der Websitesammlung gelöscht werden.
+Weitere Informationen zur Funktionsweise des permanenten Dokumentarchivs finden Sie unter [Funktionsweise der Aufbewahrung für SharePoint und OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
 ## <a name="searching-the-audit-log-for-record-versioning-events"></a>Durchsuchen des Überwachungsprotokolls nach Ereignissen für die Versionsverwaltung
 
-Die Aktionen zum Sperren und Entsperren von Datensätzen werden im Überwachungsprotokoll protokolliert. Sie können nach den spezifischen Aktivitäten **Datensatzstatus auf „gesperrt“ geändert** und **Datensatzstatus auf „entsperrt“ geändert** suchen, die sich im Abschnitt **Datei- und Seitenaktivitäten** auf der Dropdownliste **Aktivitäten** auf der Seite **Überprüfungsprotokoll durchsuchen** im Security & Compliance Center befinden.
-<br/><br/>
+Die Aktionen zum Sperren und Entsperren von Datensätzen werden im Überwachungsprotokoll protokolliert. Wählen Sie unter **Datei- und Seitenaktivitäten** die Optionen **Datensatzstatus in „Gesperrt“ geändert** und **Datensatzstatus in „Entsperrt“ geändert** aus.
 
-![Durchsuchen des Überwachungsprotokolls nach Ereignissen für die Versionsverwaltung](../media/recordversioning13.png)
-
-Weitere Informationen zum Durchsuchen dieser Ereignisse finden Sie im Abschnitt „Datei- und Seitenaktivitäten“ im [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+Weitere Informationen für die Suche nach diesen Ereignissen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
 
 ## <a name="next-steps"></a>Weitere Schritte
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: a995b6fdbbff36c6466f5e55cda9d7e196fa2c02
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9e1b7a18bea09d10cb133ce9106df45533a72172
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927029"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445229"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Erste Schritte mit dem Insider-Risikomanagement
 
@@ -96,7 +96,7 @@ Schrittweise Anweisungen zum Aktivieren der Überwachung finden Sie unter Aktivi
 
 ## <a name="step-3-enable-and-view-insider-risk-analytics-insights-optional"></a>Schritt 3: Aktivieren und Anzeigen von Insider Risk Analytics Insights (optional)
 
-Insider risk management analytics ermöglicht es Ihnen, eine Bewertung potenzieller Insiderrisiken in Ihrer Organisation zu führen, ohne Insiderrisikorichtlinien zu konfigurieren. Diese Bewertung kann Ihre Organisation dabei unterstützen, potenzielle Bereiche mit einem höheren Benutzerrisiko zu identifizieren und den Typ und Umfang von Insider-Risikomanagementrichtlinien zu bestimmen, die Sie möglicherweise konfigurieren möchten. Diese Bewertung kann Ihnen auch dabei helfen, die Anforderungen für eine zusätzliche Lizenzierung oder zukünftige Optimierung vorhandener Richtlinien zu ermitteln. Analysescanergebnisse können bis zu 48 Stunden dauern, bis Einblicke als Berichte zur Überprüfung verfügbar sind. Weitere Informationen zu Analyseeinblicken finden Sie unter [Insider risk management settings: Analytics (preview)](insider-risk-management-settings.md#analytics-preview).
+Insider risk management analytics ermöglicht es Ihnen, eine Bewertung potenzieller Insiderrisiken in Ihrer Organisation zu führen, ohne Insiderrisikorichtlinien zu konfigurieren. Diese Bewertung kann Ihre Organisation dabei unterstützen, potenzielle Bereiche mit einem höheren Benutzerrisiko zu identifizieren und den Typ und Umfang von Insider-Risikomanagementrichtlinien zu bestimmen, die Sie möglicherweise konfigurieren möchten. Diese Bewertung kann Ihnen auch dabei helfen, die Anforderungen für eine zusätzliche Lizenzierung oder zukünftige Optimierung vorhandener Richtlinien zu ermitteln. Analysescanergebnisse können bis zu 48 Stunden dauern, bis Einblicke als Berichte zur Überprüfung verfügbar sind. Weitere Informationen zu Analyseeinblicken finden Sie unter [Insider risk management settings: Analytics (preview)](insider-risk-management-settings.md#analytics-preview) und im [Video Insider Risk Management Analytics,](https://www.youtube.com/watch?v=5c0P5MCXNXk) um zu verstehen, wie Analysen die Identifizierung potenzieller Insiderrisiken beschleunigen und Ihnen dabei helfen, schnell Maßnahmen zu ergreifen.
 
 Um Insider risk Analytics zu aktivieren, müssen Sie Mitglied der Rollengruppe *Insider Risk Management,* *Insider Risk Management Admin* oder Microsoft 365 Global *admin* sein.
 

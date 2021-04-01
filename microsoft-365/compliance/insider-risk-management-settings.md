@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ee4f18342304cf46f97a6ae7aa6e1ba76685bccd
-ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
+ms.openlocfilehash: b3a555ba41cee7c8272467de20962eb1e7f25cfc
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50994617"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445613"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Erste Schritte mit Insider-Risikomanagementeinstellungen
 
@@ -242,12 +242,12 @@ Die folgenden Felder und Werte werden für Insider-Risikomanagementwarnungen fü
 | AlertType | Der Typ der Warnung ist *Custom*.  |
 | AlertId | Die GUID der Warnung. Warnungen zum Risikomanagement von Insidern können stummgeschaltet werden. Wenn sich der Warnungsstatus ändert, wird ein neues Protokoll mit derselben AlertID generiert. Diese AlertID kann verwendet werden, um Updates für eine Warnung zu korrelieren. |
 | Kategorie | Die Kategorie der Warnung ist *InsiderRiskManagement*. Diese Kategorie kann verwendet werden, um von diesen Warnungen von anderen Sicherheits- und & zu unterscheiden. |
-| Kommentare | Standardkommentare für die Warnung. Die Werte *sind Neue Warnung* (protokolliert, wenn eine Warnung erstellt wird) und Warnung *aktualisiert* (protokolliert, wenn eine Warnung aktualisiert wird). Verwenden Sie die AlertID, um Updates für eine Warnung zu korrelieren. |
+| Anmerkungen | Standardkommentare für die Warnung. Die Werte *sind Neue Warnung* (protokolliert, wenn eine Warnung erstellt wird) und Warnung *aktualisiert* (protokolliert, wenn eine Warnung aktualisiert wird). Verwenden Sie die AlertID, um Updates für eine Warnung zu korrelieren. |
 | Daten | Die Daten für die Warnung enthalten die eindeutige Benutzer-ID, den Benutzerprinzipalnamen sowie Datum und Uhrzeit (UTC), als der Benutzer in eine Richtlinie ausgelöst wurde. |
 | Name | Richtlinienname für insider risk management policy that generated the alert. |
 | PolicyId | Die GUID der Insider-Risikomanagementrichtlinie, die die Warnung ausgelöst hat. |
 | Severity | Der Schweregrad der Warnung. Die Werte sind *High*, *Medium* oder *Low*. |
-| Quelle | Die Quelle der Warnung. Der Wert ist *Office 365 Security & Compliance*. |
+| Source | Die Quelle der Warnung. Der Wert ist *Office 365 Security & Compliance*. |
 | Status | Der Status der Warnung. Die Werte sind *Aktiv* (*Needs Review* in insider risk), *Investigating* (*Confirmed* in insider risk), Resolved ( *Resolved* in insider risk), *Dismissed* (*Dismissed* in insider risk). |
 | Version | Die Version des Sicherheits- und Kompatibilitätsbenachrichtigungsschemas. |
 
@@ -502,12 +502,14 @@ Insider-Risikoanalysen ermöglichen Es Ihnen, potenzielle Insiderrisiken in Ihre
 - Minimale Datenschutzanforderungen: Scanergebnisse und Einblicke werden als anonymisierte Benutzeraktivität zurückgegeben, einzelne Benutzernamen sind von Prüfern nicht identifizierbar.
 - Verstehen potenzieller Risiken durch konsolidierte Einblicke: Scanergebnisse können Ihnen dabei helfen, potenzielle Risikobereiche für Ihre Benutzer schnell zu identifizieren, und welche Richtlinie am besten wäre, um diese Risiken zu mindern.
 
+Sehen Sie sich [das Video zu Insider Risk Management Analytics](https://www.youtube.com/watch?v=5c0P5MCXNXk) an, um zu verstehen, wie Analysen die Identifizierung potenzieller Insiderrisiken beschleunigen und Ihnen dabei helfen können, schnell Maßnahmen zu ergreifen.
+
 Analysescans auf Risikoaktivitätsereignisse aus mehreren Quellen, um Einblicke in potenzielle Risikobereiche zu ermitteln. Je nach aktueller Konfiguration sucht die Analyse nach qualifizierenden Risikoaktivitäten in den folgenden Bereichen:
 
-- Microsoft 365-Überwachungsprotokolle: Dies ist die primäre Quelle für die Identifizierung der meisten potenziell riskante Aktivitäten, die in allen Scans enthalten sind.
-- Exchange Online: Exchange Online-Aktivitäten, die in allen Scans enthalten sind, helfen dabei, Aktivitäten zu identifizieren, bei denen Daten in Anlagen per E-Mail an externe Kontakte oder Dienste gesendet werden.
-- Azure Active Directory: Der Azure Active Directory-Verlauf, der in allen Scans enthalten ist, hilft, riskante Aktivitäten zu identifizieren, die Benutzern mit gelöschten Benutzerkonten zugeordnet sind.
-- Microsoft 365 HR-Datenconnector: Wenn konfiguriert, helfen Hr-Connector-Ereignisse, riskante Aktivitäten zu identifizieren, die Benutzern mit Kündigungs- oder bevorstehenden Beendigungsterminen zugeordnet sind.
+- **Microsoft 365-Überwachungsprotokolle:** Dies ist die primäre Quelle für die Identifizierung der meisten potenziell riskanter Aktivitäten, die in allen Scans enthalten sind.
+- **Exchange Online**: Exchange Online-Aktivitäten, die in allen Scans enthalten sind, helfen dabei, Aktivitäten zu identifizieren, bei denen Daten in Anlagen per E-Mail an externe Kontakte oder Dienste gesendet werden.
+- **Azure Active Directory**: Der Azure Active Directory-Verlauf, der in allen Scans enthalten ist, hilft, riskante Aktivitäten zu identifizieren, die Benutzern mit gelöschten Benutzerkonten zugeordnet sind.
+- **Microsoft 365 HR-Datenconnector:** Wenn konfiguriert, helfen Hr-Connector-Ereignisse, riskante Aktivitäten zu identifizieren, die Benutzern mit Kündigungs- oder bevorstehenden Beendigungsterminen zugeordnet sind.
 
 Analyseeinblicke aus Scans basieren auf denselben Risikoaktivitätssignalen, die von Insider-Risikomanagementrichtlinien verwendet werden, und melden Ergebnisse basierend auf einzel- und sequenzbezogenen Benutzeraktivitäten. Die Risikobewertung für Analysen basiert jedoch auf bis zu 30 Tagen Aktivität, während Insiderrisikorichtlinien tägliche Aktivitäten für Einblicke verwenden. Wenn Sie die Analyse zum ersten Mal in Ihrer Organisation aktivieren und ausführen, werden die Scanergebnisse für einen Tag angezeigt. Wenn Sie die Analyse aktiviert lassen, sehen Sie die Ergebnisse jeder täglichen Überprüfung, die den Einblicksberichten für einen maximalen Bereich der vorherigen 30 Tage der Aktivität hinzugefügt wurde.
 

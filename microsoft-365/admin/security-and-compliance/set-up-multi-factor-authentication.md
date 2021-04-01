@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Hier erfahren Sie, wie Sie die Multi-Faktor-Authentifizierung für Ihre Organisation einrichten.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 54c862d8f7c25472d84557e177a9107d2c14d846
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: de5f8ffbc5c26015f6ff0eb2863b622273f96ca1
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914462"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408513"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
 
@@ -102,8 +102,8 @@ Wenn bisher die veraltete MFA auf Benutzerbasis aktiviert ist, müssen Sie diese
 - [Wie sie sich nach der Registrierung anmelden](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [Wie sie die zusätzliche Überprüfungsmethode ändern können](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Video: Aktivieren der mehrstufigen Authentifizierung](../../business-video/turn-on-mfa.md)
+[Aktivieren der mehrstufigen Authentifizierung](../../business-video/turn-on-mfa.md) (Video)
 
-[Video: Aktivieren der mehrstufigen Authentifizierung für Ihr Telefon](../../business-video/set-up-mfa.md)
+[Aktivieren der mehrstufigen Authentifizierung für Ihr Telefon](../../business-video/set-up-mfa.md) (Video)

@@ -20,21 +20,15 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Aktualisieren Sie Ihre Administratortelefonnummer und E-Mail-Adresse im Admin Center. Sie benötigen diese Informationen, wenn Sie Ihr eigenes Administratorkennwort zurücksetzen möchten.
-ms.openlocfilehash: a5b1548ee6ac0fa6bac976758ea8f6753ea2853c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 39b68905c0d43608a0d0ce1d37167fd7d9aff8fb
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914990"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470917"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Aktualisieren Ihrer Administratortelefonnummer und E-Mail-Adresse
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 In diesem Artikel wird erläutert, wie Sie, der Administrator, Ihr Geschäftstelefon und Ihre E-Mail-Adresse in Microsoft 365 ändern können.
   
 Wenn Sie wissen möchten, wie Sie die Profilinformationen Ihres Unternehmens, z. B. Unternehmensname und -adresse, Telefonnummer des Unternehmens und technische Kontaktinformationen, ändern können, lesen Sie [Ändern der Adress- und anderen Profilinformationen Ihrer Organisation](change-address-contact-and-more.md).

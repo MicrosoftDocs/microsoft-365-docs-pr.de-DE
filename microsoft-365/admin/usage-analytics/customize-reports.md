@@ -20,21 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: Erfahren Sie, wie Sie Berichte im Browser und in Power BI Desktop anpassen können.
-ms.openlocfilehash: 18b4352d3aaa2fd16b74f78e1f80da3ee98367a6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d36e07a19b0ebda0d154b11723630e38b746eb8d
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914006"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471089"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Individuelles Anpassen der Berichte in Microsoft 365-Nutzungsanalysen
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Microsoft 365 Usage Analytics bietet ein Dashboard in Power BI, das Einblicke in die Einführung und Verwendung von Microsoft 365 durch Benutzer bietet. Das Dashboard bildet lediglich einen Ausgangspunkt für die Interaktion mit den Nutzungsdaten. Die Berichte lassen sich zur Gewinnung stärker personalisierter Einblicke anpassen.
   

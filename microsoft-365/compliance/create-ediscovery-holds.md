@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie können einen Haltebereich erstellen, der einem Core eDiscovery-Fall zugeordnet ist, um Inhalte zu erhalten, die für eine Untersuchung relevant sein können.
-ms.openlocfilehash: ca87b1b2ad35949de01622771b1ae78c5b3038e9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c84d0be5a4a659ff9b64af14052bcf4033e2ed24
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908339"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470476"
 ---
 # <a name="create-an-ediscovery-hold"></a>Erstellen eines eDiscovery-Speichers
 
@@ -222,10 +222,10 @@ In der folgenden Tabelle sind die Grenzwerte für eDiscovery-Fälle und Fallaufb
   | Beschreibung der Beschränkung | Grenze |
   |:-----|:-----|
   |Maximale Anzahl von Fällen für eine Organisation.  <br/> |Keine Begrenzung  <br/> |
-  |Maximale Anzahl der eDiscovery-Haltewerte für eine Organisation.  <br/> |10.000  <br/> |
-  |Maximale Anzahl von Postfächern in einem einzigen eDiscovery-Archiv. Dieser Grenzwert umfasst die gesamtzahl der Benutzerpostfächer und die Postfächer, die Microsoft 365-Gruppen, Microsoft Teams und Yammer zugeordnet sind.  <br/> |1.000  <br/> |
+  |Maximale Anzahl der eDiscovery-Haltewerte für eine Organisation.  <br/> |10,000  <br/> |
+  |Maximale Anzahl von Postfächern in einem einzigen eDiscovery-Archiv. Dieser Grenzwert umfasst die gesamtzahl der Benutzerpostfächer und die Postfächer, die Microsoft 365-Gruppen, Microsoft Teams und Yammer zugeordnet sind.  <br/> |1,000  <br/> |
   |Maximale Anzahl von Websites in einem einzigen eDiscovery-Halteraum. Dieser Grenzwert umfasst die gesamtzahl der OneDrive for #A0 und #A1 sowie die Websites, die Microsoft 365-Gruppen, Microsoft Teams und Yammer zugeordnet sind.  <br/> |100  <br/> |
-  |Maximale Anzahl von Fällen, die auf der eDiscovery-Startseite angezeigt werden, und die maximale Anzahl von Elementen, die auf den Registerkarten Halte-, Such- und Exportregisterkarten in einem Fall angezeigt werden. <sup>1</sup> |1.000|
+  |Maximale Anzahl von Fällen, die auf der eDiscovery-Startseite angezeigt werden, und die maximale Anzahl von Elementen, die auf den Registerkarten Halte-, Such- und Exportregisterkarten in einem Fall angezeigt werden. <sup>1</sup> |1,000|
   |||
 
    > [!NOTE]

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 87190d9e0bb62d42642374bd7c9f6f3acad3c80a
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 6ff93b44627cf876384522f0c4f25d22347c8661
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379386"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476255"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-for-mac"></a>Behandeln von Leistungsproblemen für Microsoft Defender for Endpoint für Mac
 
@@ -32,7 +32,7 @@ ms.locfileid: "51379386"
 
 **Gilt für:**
 
-- [Microsoft Defender für Endpoint für Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender für Endpunkt für Mac](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -48,7 +48,7 @@ Die folgenden Schritte können verwendet werden, um diese Probleme zu beheben un
 
 1. Deaktivieren Sie den Echtzeitschutz mithilfe einer der folgenden Methoden, und beobachten Sie, ob sich die Leistung verbessert. Dieser Ansatz hilft, die Leistungsprobleme von Microsoft Defender for Endpoint für Mac zu verengt.
 
-    Wenn Ihr Gerät nicht von Ihrer Organisation verwaltet wird, kann der Echtzeitschutz mithilfe einer der folgenden Optionen deaktiviert werden:
+      Wenn Ihr Gerät nicht von Ihrer Organisation verwaltet wird, kann der Echtzeitschutz mithilfe einer der folgenden Optionen deaktiviert werden:
 
     - Über die Benutzeroberfläche. Öffnen Sie Microsoft Defender for Endpoint für Mac, und navigieren Sie zu **Einstellungen verwalten.**
 
@@ -60,10 +60,100 @@ Die folgenden Schritte können verwendet werden, um diese Probleme zu beheben un
       mdatp config real-time-protection --value disabled
       ```
 
-    Wenn Ihr Gerät von Ihrer Organisation verwaltet wird, kann der Echtzeitschutz von Ihrem Administrator mithilfe der Anweisungen unter Festlegen von Einstellungen für [Microsoft Defender for Endpoint für Mac deaktiviert werden.](mac-preferences.md)
+      Wenn Ihr Gerät von Ihrer Organisation verwaltet wird, kann der Echtzeitschutz von Ihrem Administrator mithilfe der Anweisungen unter Festlegen von Einstellungen für [Microsoft Defender for Endpoint für Mac deaktiviert werden.](mac-preferences.md)
+      
+      Wenn das Leistungsproblem weiterhin besteht, während der Echtzeitschutz deaktiviert ist, könnte der Ursprung des Problems die Endpunkterkennungs- und Reaktionskomponente sein. Wenden Sie sich in diesem Fall an den Kundensupport, um weitere Anweisungen und Gegenmaßnahmen zu erhalten.
 
 2. Öffnen Sie finder, und navigieren Sie zu   >  **Anwendungsprogramme**. Öffnen **Sie Aktivitätsüberwachung,** und analysieren Sie, welche Anwendungen die Ressourcen auf Ihrem System verwenden. Typische Beispiele sind Softwareupdater und Compiler.
 
-3. Konfigurieren Sie Microsoft Defender für Endpoint für Mac mit Ausschlüssen für die Prozesse oder Datenträgerspeicherorte, die zu Leistungsproblemen beitragen, und aktivieren Sie den Echtzeitschutz erneut.
+1. Um die Anwendungen zu finden, die die meisten Scans auslösen, können Sie von Defender for Endpoint für Mac gesammelte Echtzeitstatistiken verwenden.
 
-    Weitere Informationen finden Sie unter Configure [and validate exclusions for Microsoft Defender for Endpoint for Mac.](mac-exclusions.md)
+      > [!NOTE]
+      > Dieses Feature ist in Version 100.90.70 oder neuer verfügbar.
+      Dieses Feature ist standardmäßig auf den **Kanälen Dogfood** und **InsiderFast** aktiviert. Wenn Sie einen anderen Updatekanal verwenden, kann dieses Feature über die Befehlszeile aktiviert werden:
+      ```bash
+      mdatp config real-time-protection-statistics  --value enabled
+      ```
+
+      Dieses Feature erfordert die Aktivierung des Echtzeitschutzes. Führen Sie den folgenden Befehl aus, um den Status des Echtzeitschutzes zu überprüfen:
+
+      ```bash
+      mdatp health --field real_time_protection_enabled
+      ```
+
+    Stellen Sie **sicher, real_time_protection_enabled** eintrag true ist. Führen Sie andernfalls den folgenden Befehl aus, um ihn zu aktivieren:
+
+      ```bash
+      mdatp config real-time-protection --value enabled
+      ```
+
+      ```output
+      Configuration property updated
+      ```
+
+      Führen Sie zum Erfassen aktueller Statistiken aus:
+
+      ```bash
+      mdatp config real-time-protection --value enabled
+      ```
+
+      > [!NOTE]
+      > Die **Verwendung von --output json** (beachten Sie den doppelten Strich) stellt sicher, dass das Ausgabeformat für die Analyse bereit ist.
+      In der Ausgabe dieses Befehls werden alle Prozesse und die zugehörigen Scanaktivitäten angezeigt.
+
+1. Laden Sie auf Ihrem Mac-System den Beispiel-Python-Parser high_cpu_parser.py mit dem Befehl herunter:
+
+    ```bash
+    wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
+    ```
+
+    Die Ausgabe dieses Befehls sollte der folgenden ähneln:
+
+    ```Output
+    --2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.
+    mdatp-xplat/master/linus/diagnostic/high_cpu_parser.py
+    Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.xxx.xxx
+    Connecting to raw.githubusercontent.com (raw.githubusercontent.com)| 151.101.xxx.xxx| :443... connected.
+    HTTP request sent, awaiting response... 200 OK
+    Length: 1020 [text/plain]
+    Saving to: 'high_cpu_parser.py'
+    100%[===========================================>] 1,020    --.-K/s   in 
+    0s
+    ```
+
+1. Geben Sie als Nächstes die folgenden Befehle ein:
+
+      ```bash
+        chmod +x high_cpu_parser.py
+      ```
+
+      ```bash
+        cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
+      ```
+
+      Die Ausgabe der oben genannten Ist eine Liste der größten Mitwirkenden bei Leistungsproblemen. Die erste Spalte ist die Prozess-ID (PID), die zweite Spalte ist te Prozessname, und die letzte Spalte ist die Anzahl der gescannten Dateien, sortiert nach Auswirkung.
+
+      Die Ausgabe des Befehls ist z. B. wie folgt:
+
+      ```output
+        ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
+        27432 None 76703
+        73467 actool     1249
+        73914 xcodebuild 1081
+        73873 bash 1050
+        27475 None 836
+        1    launchd    407
+        73468 ibtool     344
+        549  telemetryd_v1   325
+        4764 None 228
+        125  CrashPlanService 164
+      ```
+
+      Um die Leistung von Defender for Endpoint für Mac zu verbessern, suchen Sie die Datei mit der höchsten Anzahl unter der Zeile Gescannte Dateien insgesamt, und fügen Sie einen Ausschluss hinzu. Weitere Informationen finden Sie unter [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).
+
+      > [!NOTE]
+      > Die Anwendung speichert Statistiken im Arbeitsspeicher und verfolgt nur die Dateiaktivität, seit sie gestartet wurde und der Echtzeitschutz aktiviert wurde. Prozesse, die vor oder während Zeiträumen gestartet wurden, in denen der Echtzeitschutz deaktiviert war, werden nicht gezählt. Darüber hinaus werden nur Ereignisse gezählt, die Scans ausgelöst haben.
+      > 
+1. Konfigurieren Sie Microsoft Defender für Endpoint für Mac mit Ausschlüssen für die Prozesse oder Datenträgerspeicherorte, die zu Leistungsproblemen beitragen, und aktivieren Sie den Echtzeitschutz erneut.
+
+     Weitere Informationen finden Sie unter Configure [and validate exclusions for Microsoft Defender for Endpoint for Mac.](mac-exclusions.md)

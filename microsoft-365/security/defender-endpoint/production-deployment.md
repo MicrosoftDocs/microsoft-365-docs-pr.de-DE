@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8965594789c3c96c043e3cd1a8922d9ba996ef47
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 7abf1c9e4115c928ae581da3789270fd8ed036d3
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222441"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476310"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Einrichten der Bereitstellung von Microsoft Defender for Endpoint
 
@@ -124,7 +124,7 @@ Der Microsoft Defender für Endpunkt-Sensor setzt Microsoft Windows HTTP (WinHTT
 
 -   Webproxy-AutoErmittlungsprotokoll (WPAD)
 
-Wenn in der Netzwerktopologie ein transparenter Proxy oder ein WPAD implementiert wurde, sind keine speziellen Konfigurationseinstellungen erforderlich. Weitere Informationen zu Microsoft Defender for Endpoint-URL-Ausschlüssen im Proxy finden Sie im Abschnitt [Proxydienst-URLs](production-deployment.md#proxy-service-urls) in diesem Dokument für die URLs allowlist oder unter Konfigurieren von Geräteproxy- und [Internetkonnektivitätseinstellungen.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
+Wenn in der Netzwerktopologie ein transparenter Proxy oder ein WPAD implementiert wurde, sind keine speziellen Konfigurationseinstellungen erforderlich. Weitere Informationen zu Microsoft Defender for Endpoint-URL-Ausschlüssen im Proxy finden Sie im Abschnitt [Proxydienst-URLs](production-deployment.md#proxy-service-urls) in diesem Dokument für die Liste der URLs zulassen oder unter Konfigurieren von Geräteproxy- und [Internetkonnektivitätseinstellungen.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
 
 **Manuelle Konfiguration von statischen Proxys:**
 
@@ -199,7 +199,7 @@ Wenn ein Proxy oder eine Firewall anonymen Datenverkehr blockiert, da der Micros
 
 In der folgenden herunterladbaren Kalkulationstabelle sind die Dienste und die zugehörigen URLs aufgeführt, mit deren Netzwerk eine Verbindung herstellen kann. Stellen Sie sicher, dass es keine Firewall- oder Netzwerkfilterregeln gibt, die  den Zugriff auf diese URLs verweigern würden, oder Sie müssen möglicherweise eine speziell für sie zulässige Regel erstellen.
 
-|**Tabellenkalkulation der Domänenliste**|**Description**|
+|**Tabellenkalkulation der Domänenliste**|**Beschreibung**|
 |:-----|:-----|
 |![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Tabellenkalkulation bestimmter DNS-Einträge für Dienststandorte, geografische Standorte und Betriebssysteme. <br><br>[Laden Sie die Tabelle hier herunter.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 

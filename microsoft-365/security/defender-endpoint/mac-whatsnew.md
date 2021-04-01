@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be906baca3a54183e22fa3b4ee424a9d8fc6957a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 16d78cf014e775ecb98a59d90b5734836eb3cbf2
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198693"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476625"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>Neues in Microsoft Defender for Endpoint für Mac
 
@@ -39,7 +39,12 @@ ms.locfileid: "51198693"
 > Unter macOS 11 (Big Sur) erfordert Microsoft Defender for Endpoint zusätzliche Konfigurationsprofile. Wenn Sie ein vorhandenes Kunden-Upgrade von früheren Versionen von macOS sind, stellen Sie sicher, dass Sie die zusätzlichen Konfigurationsprofile bereitstellen, die auf dieser [Seite aufgeführt sind.](mac-sysext-policies.md)
 
 > [!IMPORTANT]
-> Die Unterstützung für macOS 10.13 (High Sierra) wird am 15. Februar 2021 eingestellt.
+> Die Unterstützung für macOS 10.13 (High Sierra) wurde am 15. Februar 2021 eingestellt.
+
+## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
+
+- Dem Befehlszeilentool wurde eine neue Option hinzugefügt, um Informationen zum letzten On-Demand-Scan anzeigen zu können. Führen Sie zum Anzeigen von Informationen zum letzten Bedarfsscan aus `mdatp health --details antivirus`
+- Leistungsverbesserungen & Fehlerbehebungen
 
 ## <a name="1012279-20121012122790"></a>101.22.79 (20.121012.12279.0)
 

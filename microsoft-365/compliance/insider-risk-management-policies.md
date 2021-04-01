@@ -12,16 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 96d265a7b909b439f960c951b10c84f4bc7a63b0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 23c2ed180606e61820c6e736e472aef0ae4933a5
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916829"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445685"
 ---
 # <a name="insider-risk-management-policies"></a>Richtlinien für das Risikomanagement von Insidern
 
 Richtlinien für das Risikomanagement von Insidern bestimmen, welche Benutzer in den Bereich gehören und welche Arten von Risikoindikatoren für Warnungen konfiguriert sind. Sie können schnell eine Richtlinie erstellen, die für alle Benutzer in Ihrer Organisation gilt, oder einzelne Benutzer oder Gruppen für die Verwaltung in einer Richtlinie definieren. Richtlinien unterstützen Inhaltsprioritäten, um Richtlinienbedingungen auf mehrere oder bestimmte Microsoft Teams, SharePoint-Websites, Datensensitivitätstypen und Datenbeschriftungen zu konzentrieren. Mithilfe von Vorlagen können Sie bestimmte Risikoindikatoren auswählen und Ereignisschwellenwerte für Richtlinienindikatoren anpassen, risikosentsprechende Bewertungen effektiv anpassen sowie Die Höhe und Häufigkeit von Warnungen. Darüber hinaus helfen Risikosentsprecher und Anomalieerkennungen, Benutzeraktivitäten zu identifizieren, die von höherer Bedeutung oder ungewöhnlicher sind. Mit Richtlinienfenstern können Sie den Zeitrahmen für die Anwendung der Richtlinie auf Benachrichtigungsaktivitäten definieren und die Dauer der nach der Aktivierung aktivierten Richtlinie bestimmen.
+
+Im Konfigurationsvideo [zu Insider-Risikomanagementrichtlinien](https://www.youtube.com/watch?v=kudK5ajZTUo) finden Sie eine Übersicht darüber, wie Richtlinien, die mit integrierten Richtlinienvorlagen erstellt wurden, Ihnen helfen können, schnell Maßnahmen gegen potenzielle Risiken zu ergreifen.
 
 ## <a name="policy-dashboard"></a>Richtlinien-Dashboard
 
@@ -241,10 +243,10 @@ Verwenden Sie die folgende Tabelle, um die maximale Anzahl von Benutzern im Bere
 |:------------------|:--------------------------------|
 | Allgemeines Datenleck | 15,000 |
 | Datenleck durch unzufriedene Benutzer | 7,500 |
-| Datenlecks nach Prioritätsbenutzern | 1.000 |
+| Datenlecks nach Prioritätsbenutzern | 1,000 |
 | Datendiebstahl durch ausgehende Benutzer | 20,000 |
-| Verstöße gegen allgemeine Sicherheitsrichtlinien | 1.000 |
-| Sicherheitsrichtlinienverletzung durch Prioritätsbenutzer | 1.000 |
+| Verstöße gegen allgemeine Sicherheitsrichtlinien | 1,000 |
+| Sicherheitsrichtlinienverletzung durch Prioritätsbenutzer | 1,000 |
 | Sicherheitsrichtlinienverletzungen durch ausscheidende Benutzer | 15,000 |
 | Sicherheitsrichtlinienverletzungen durch verärgerte Benutzer | 7,500 |
 

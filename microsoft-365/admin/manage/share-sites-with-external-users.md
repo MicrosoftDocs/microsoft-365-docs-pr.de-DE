@@ -21,21 +21,14 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: 'Erfahren Sie, wie Sie Websites und Dateien für Personen außerhalb der Organisation freigeben. '
-ms.openlocfilehash: 585034580fd18d9584b4df3d0bec7026cf207f50
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 95698a36fe56d2c0d1a842425541e8aa7627d7dd
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915037"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470929"
 ---
 # <a name="share-sites-and-files-with-guest-users"></a>Websites und Dateien für Gastbenutzer freigeben
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Um mit Personen außerhalb Ihrer Organisation zusammenzuarbeiten, können Sie ganze Websites oder bestimmte Dateien extern freigeben. Wenn Sie die Freigabe direkt einrichten möchten, wählen Sie das Szenario aus, das Sie aktivieren möchten:
 

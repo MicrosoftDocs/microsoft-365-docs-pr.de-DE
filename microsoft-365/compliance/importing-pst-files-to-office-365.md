@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: overview
+ms.topic: article
 f1_keywords:
 - ms.o365.cc.IngestionHelp
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie mit dem Importdienst im Security & Compliance Center E-Mail-Daten (PST-Dateien) in Benutzerpostfächer importieren.
-ms.openlocfilehash: 6d0bca6d76a0eccb9bc8181e73f2c36c51acaf77
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c645228598eb9cf0e6edca7104b8977e7eaf72f7
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911319"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408536"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Übersicht über das Importieren von PST-Dateien Ihrer Organisation
 
@@ -178,7 +178,7 @@ Beim PST-Importprozess wird eine Überprüfung auf doppelte Elemente durchgefüh
  
  **Gibt es eine Beschränkung der Nachrichtengröße beim Importieren von PST-Dateien?**
   
-Ja. Wenn eine PST-Datei ein Postfachelement enthält, das größer als 150 MB ist, wird das Element beim Importvorgang übersprungen.
+Ja. Wenn eine PST-Datei ein Postfachelement enthält, das größer als 150 MB ist, wird das Element beim Importvorgang übersprungen und nicht importiert. Elemente, die größer als 150 MB sind, werden nicht importiert, da 150 MB der Grenzwert für die Nachrichtengröße in Exchange Online ist. Weitere Informationen finden Sie unter [Grenzwerte in Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   
  **Bleiben die Eigenschaften der Nachrichten (z. B. Sende- oder Empfangsdatum, Empfängerliste und andere Eigenschaften) erhalten, wenn PST-Dateien in ein Microsoft 365-Postfach importiert werden?**
   
@@ -271,7 +271,7 @@ Darüber hinaus können PST-Dateien aus Outlook 2007 und neueren Versionen in Mi
   
  **Gibt es eine Beschränkung der Nachrichtengröße beim Importieren von PST-Dateien?**
   
-Ja. Wenn eine PST-Datei ein Postfachelement enthält, das größer als 150 MB ist, wird das Element beim Importvorgang übersprungen.
+Ja. Wenn eine PST-Datei ein Postfachelement enthält, das größer als 150 MB ist, wird das Element beim Importvorgang übersprungen und nicht importiert. Elemente, die größer als 150 MB sind, werden nicht importiert, da 150 MB der Grenzwert für die Nachrichtengröße in Exchange Online ist. Weitere Informationen finden Sie unter [Grenzwerte in Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   
   **Wie behandelt der PST-Importprozess doppelte E-Mail-Elemente?**
 
@@ -317,6 +317,6 @@ Die Kosten für die Rücksendung variieren je nach Entfernung zum Microsoft-Rech
   
 Ja.
   
- **Was muss ich beachten, wenn ich meine Festplatte in ein anderes Land versenden muss?**
+ **If I have to ship my hard drive to another country, is there anything I need to do?**
   
-Die an Microsoft versendete Festplatte muss möglicherweise internationale Grenzen überqueren. In diesem Falls sind Sie dafür verantwortlich, dass die Festplatte und die darin enthaltenen Daten in Übereinstimmung mit den geltenden Gesetzen importiert und/oder exportiert wurden. Stellen Sie vor dem Versenden einer Festplatten mit Ihren Beratern sicher, dass Ihre Festplatte und die Daten gesetzmäßig an das angegebene Microsoft-Rechenzentrum gesendet werden können. Dies hilft sicherzustellen, dass die Festplatte Microsoft zeitgerecht erreicht.
+The hard drive that you ship to Microsoft might have to cross international borders. Wenn dies der Fall ist, sind Sie dafür verantwortlich, dass die Festplatte und die darauf befindlichen Daten in Übereinstimmung mit dem jeweils geltenden Recht importiert bzw. exportiert werden. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

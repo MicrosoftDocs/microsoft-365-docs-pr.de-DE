@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Indikatoren
+title: Indikatoren erstellen
 ms.reviewer: ''
 description: 'Erstellen Sie Indikatoren für einen Dateihash, eine #A0, URLs oder Domänen, die die Erkennung, Verhinderung und den Ausschluss von Entitäten definieren.'
 keywords: manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
@@ -17,14 +17,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 670c6449c1121bc329b1dfb37cd1d9948c99a3f8
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 481051b74c1be88ba78bbd44e4fc0c174ed0bdad
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379298"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470893"
 ---
-# <a name="create-indicators"></a>Erstellen von Indikatoren
+# <a name="create-indicators"></a>Indikatoren erstellen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -50,6 +50,9 @@ Die gleiche Liste von Indikatoren wird vom Präventions-Agent berücksichtigt. W
 
 **Automatisiertes Untersuchungs- und Korrekturmodul**<BR>
 Die automatisierte Untersuchung und Korrektur verhält sich gleich. Wenn ein Indikator auf "Zulassen" festgelegt ist, ignoriert die automatisierte Untersuchung und Korrektur ein "schlechtes" Urteil dafür. Wenn sie auf "Block" festgelegt ist, wird die automatische Untersuchung und Korrektur als "schlecht" behandelt.
+
+> [!NOTE]
+> Die Einstellung EnableFileHashComputation berechnet den Dateihash für das Zertifikat und die Datei IoC während der Dateiscans. Es unterstützt die #A0 von Hashes und Certs gehören zu vertrauenswürdigen Anwendungen. Sie wird gleichzeitig aktiviert und mit der Einstellung "Zulassen" oder "Blockieren" deaktiviert. EnableFileHashComputation wird manuell über die Gruppenrichtlinie aktiviert und standardmäßig deaktiviert.
 
 
 Die derzeit unterstützten Aktionen sind:

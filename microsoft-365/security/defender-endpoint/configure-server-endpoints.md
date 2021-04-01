@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5013d94277eeba7d1df100d2850cb950fe2e0742
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 1757160b37500e97586fbb6dfb16d81303bc54e4
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379349"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476481"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Onboarding von Windows-Servern in den Microsoft Defender for Endpoint-Dienst
 
@@ -204,7 +204,7 @@ Die folgenden Funktionen sind in dieser Integration enthalten:
 - Automatisiertes Onboarding – Der Defender for Endpoint-Sensor wird automatisch auf Windows-Servern aktiviert, die in Azure Security Center onboarded sind. Weitere Informationen zum Azure Security Center-Onboarding finden Sie [unter Onboarding to Azure Security Center Standard for enhanced security](https://docs.microsoft.com/azure/security-center/security-center-onboarding).
 
     > [!NOTE]
-    > Automatisiertes Onboarding gilt nur für Windows Server 2008 R2 SP1, Windows Server 2012 R2 und Windows Server 2016.
+    > Die Integration zwischen Azure Defender for Servers und Microsoft Defender for Endpoint wurde erweitert, um [Windows Server 2019 und Windows Virtual Desktop (WVD) zu unterstützen.](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
 - Windows-Server, die vom Azure Security Center überwacht werden, stehen auch in Defender for Endpoint zur Verfügung – Azure Security Center stellt nahtlos eine Verbindung mit dem Defender for Endpoint-Mandanten her und bietet eine einheitliche Ansicht über Clients und Server hinweg.  Darüber hinaus stehen Defender for Endpoint-Warnungen in der Azure Security Center-Konsole zur Verfügung.
 - Serveruntersuchung – Azure Security Center-Kunden können auf Microsoft Defender Security Center zugreifen, um eine detaillierte Untersuchung durchzuführen, um den Umfang einer potenziellen Verletzung aufzudecken.
@@ -283,8 +283,8 @@ Zum Offboarden des Windows-Servers können Sie eine der folgenden Methoden verwe
 <br>
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Onboarding von Windows 10-Geräten](configure-endpoints.md)
+- [Onboarding von Windows 10-Geräten](configure-endpoints.md)
 - [Onboarding von Nicht-Windows-Geräten](configure-endpoints-non-windows.md)
-- [Konfigurieren von Proxy- und Internetverbindungseinstellungen](configure-proxy-internet.md)
+- [Konfigurieren der Einstellungen für Endpunktproxy und Internetkonnektivität für Ihren Azure ATP-Sensor](configure-proxy-internet.md)
 - [Ausführen eines Erkennungstests auf einem neu integrierten Defender for Endpoint-Gerät](run-detection-test.md)
 - [Beheben von Problemen beim Onboarding von Microsoft Defender for Endpoint](troubleshoot-onboarding.md)
