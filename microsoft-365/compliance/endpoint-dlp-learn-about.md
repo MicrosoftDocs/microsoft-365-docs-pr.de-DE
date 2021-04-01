@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 Endpunkt-DLP erweitert die Überwachung von Dateiaktivitäten sowie schützende Maßnahmen für diese Dateien auf Endpunkte. Die Dateien werden in den Microsoft 365 Compliance-Lösungen angezeigt. '
-ms.openlocfilehash: d4a3fef03322912bf169cd195984a17d8dfe3b17
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5aaed57574f1ecabdf28442b30dcd42677243df1
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907049"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445275"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informationen zu Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust)
 
@@ -36,7 +36,7 @@ Sie können Microsoft 365-DLP (Data Loss Prevention, Verhinderung von Datenverlu
 
 Mit Microsoft Endpunkt-DLP können Sie die folgenden Aktivitätstypen überwachen und verwalten, die von Benutzern mit und an vertraulichen Elementen auf Windows 10-Geräten ausgeführt werden. 
 
-|Aktivität |Beschreibung  | überwachbar/einschränkbar|
+|Aktivität |Beschreibung  | Überwachbar/einschränkbar|
 |---------|---------|---------|
 |In einen Clouddienst hochladen oder über nicht zugelassene Browser zugreifen    | Erkennt, wenn ein Benutzer versucht, ein Element in eine eingeschränkte Dienstdomäne hochzuladen oder über einen Browser auf ein Element zuzugreifen.  Wird ein Browser verwendet, der im DLP als nicht zugelassener Browser aufgeführt ist, wird die Uploadaktivität blockiert, und der Benutzer wird umgeleitet, um Edge Chromium zu verwenden. Edge Chromium kann dann, basierend auf der DLP-Richtlinienkonfiguration, entweder den Upload erlauben oder blockieren oder auf das Element zugreifen.         |überwachbar und einschränkbar|
 |In andere App kopieren    |Erkennt, wenn ein Benutzer versucht, Informationen aus einem geschützten Element zu kopieren und in eine andere App, einen Prozess oder ein Element einzufügen. Das Kopieren und Einfügen von Informationen innerhalb derselben App, desselben Prozesses oder desselben Elements wird von dieser Aktivität nicht erkannt.         | überwachbar und einschränkbar|
@@ -67,7 +67,7 @@ Endpunkt-DLP unterstützt die Überwachung dieser Dateitypen:
 - H-Dateien
 - JAVA-Dateien
  
-Standardmäßig überwacht Endpunkt-DLP die Aktivitäten für diese Dateitypen, auch wenn keine Richtlinienübereinstimmung vorliegt. Wenn Sie nur Daten aus Richtlinienübereinstimmungen überwachen möchten, können Sie **Dateiaktivität für Geräte immer überwachen** in den globalen Endpunkt-DLP-Einstellungen deaktivieren. Unabhängig davon werden Aktivitäten für sämtliche Word-, PowerPoint-, Excel-, PDF- und CSV-Dateien immer überwacht.
+Standardmäßig überwacht Endpunkt-DLP die Aktivitäten für diese Dateitypen, auch wenn keine Richtlinienübereinstimmung vorliegt. Wenn Sie nur Daten aus Richtlinienübereinstimmungen überwachen möchten, können Sie **Dateiaktivität für Geräte immer überwachen** in den globalen Endpunkt-DLP-Einstellungen deaktivieren. Wenn diese Einstellung aktiviert ist, werden alle Aktivitäten für Word-, PowerPoint-, Excel-, PDF- und CSV-Dateien immer überwacht, auch wenn das Gerät von keiner Richtlinie betroffen ist.
 
 Verhinderung von Datenverlust am Endpunkt (Endpunkt-DLP) überwacht Aktivitäten basierend auf dem MIME-Typ, sodass sie auch dann erfasst werden, wenn die Dateierweiterung geändert wurde. 
 
@@ -102,15 +102,15 @@ Wenn das Onboarding eines Geräts über [Microsoft Defender für Endpunkt](/wind
 
 ### <a name="viewing-endpoint-dlp-data"></a>Anzeigen von Endpunkt-DLP-Daten
 
-
-
 Sie können Benachrichtigungen anzeigen, die mit auf Endpunktgeräten durchgesetzten DLP-Richtlinien verbunden sind, indem Sie zum [Verwaltungsdasboard „DLP-Benachrichtigungen“](dlp-configure-view-alerts-policies.md) wechseln.
 
-![Warninformationen](../media/Alert-info-1.png)
+> [!div class="mx-imgBorder"]
+> ![Warninformationen](../media/Alert-info-1.png)
 
 Sie können ebenfalls Details des zugehörigen Ereignisses mit umfangreichen Metadaten im gleichen Dashboard anzeigen.
 
-![Ereignisinformationen](../media/Event-info-1.png)
+> [!div class="mx-imgBorder"]
+> ![Ereignisinformationen](../media/Event-info-1.png)
 
 Nach dem Onboarding eines Geräts werden Informationen zu überwachten Aktivitäten an den Aktivitäten-Explorer gesendet, noch bevor Sie DLP-Richtlinien konfigurieren und bereitstellen, die Geräte als Speicherort verwenden.
 

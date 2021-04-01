@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über E-Mail- und Dateieigenschaften, die Sie mithilfe der Such- und eDiscovery-Tools in Microsoft 365 durchsuchen können.
-ms.openlocfilehash: e3282cd5b8bcc493e7c423db72c086f953d114ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b3b2410c899ec98f39a4f89e5ea0a86537e5b666
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903583"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488300"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>Schlüsselwortabfragen und Suchbedingungen für inhaltssuche und eDiscovery
 
@@ -105,11 +105,11 @@ Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden kö
 |FileName|Der Name einer Datei.|`filename:"marketing plan"`  <br/> `filename:estimate`|Im ersten Beispiel werden Dateien mit dem exakten Ausdruck "Marketingplan" im Titel zurückgegeben. Im zweiten Beispiel werden Dateien mit dem Wort "estimate" im Dateinamen zurückgegeben.|
 |LastModifiedTime|Das Datum, an dem ein Element zuletzt geändert wurde.|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|Im ersten Beispiel werden Elemente zurückgegeben, die am oder nach dem 1. Mai 2016 geändert wurden. Im zweiten Beispiel werden Elemente zurückgegeben, die zwischen dem 1. Mai 2016 und dem 1. Juni 2016 geändert wurden.|
 |ModifiedBy|Die Person, die zuletzt ein Element geändert hat. Achten Sie darauf, den Anzeigenamen des Benutzers für diese Eigenschaft zu verwenden.|`modifiedby:"Garth Fort"`|Alle Elemente, die zuletzt von Garth Fort geändert wurden.|
-|Pfad|Der Pfad (URL) einer bestimmten Website in einer SharePoint- oder OneDrive for #A0  <br/> Zum Zurückgeben von Elementen in Ordnern auf der Website, die Sie für die path-Eigenschaft angeben, müssen Sie /zur URL der angegebenen Website \* hinzufügen. Beispiel:  `path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **Hinweis:** Die Verwendung der Eigenschaft zum Durchsuchen von #A0 gibt keine Mediendateien  `Path` wie PNG-, TIFF- oder WAV-Dateien in den Suchergebnissen zurück. Verwenden Sie eine andere Websiteeigenschaft in Ihrer Suchabfrage, um nach Mediendateien in #A0 zu suchen. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|Im ersten Beispiel werden alle Elemente auf der angegebenen OneDrive for #A0 zurückgegeben. Im zweiten Beispiel werden Dokumente in der angegebenen Website (und Ordner auf der Website) zurückgegeben, die das Wort "vertraulich" im Dateinamen enthalten.|
+|Pfad|Der Pfad (URL) einer bestimmten Website in einer SharePoint- oder OneDrive for #A0<br/><br/>Wenn Sie Elemente nur von der angegebenen Website zurückgeben möchten, müssen Sie das Nachgestellte am Ende der URL hinzufügen, z. B. `/``path: "https://contoso.sharepoint.com/sites/international/"` <br/><br/> Zum Zurückgeben von Elementen in Ordnern auf der Website, die Sie in der path-Eigenschaft angeben, müssen Sie am Ende der URL hinzufügen, z. B. `/*``path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/><br/> **Hinweis:** Die Verwendung der Eigenschaft zum Durchsuchen von #A0 gibt keine Mediendateien  `Path` wie PNG-, TIFF- oder WAV-Dateien in den Suchergebnissen zurück. Verwenden Sie eine andere Websiteeigenschaft in Ihrer Suchabfrage, um nach Mediendateien in #A0 zu suchen. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|Im ersten Beispiel werden alle Elemente auf der angegebenen OneDrive for #A0 zurückgegeben. Im zweiten Beispiel werden Dokumente in der angegebenen Website (und Ordner auf der Website) zurückgegeben, die das Wort "vertraulich" im Dateinamen enthalten.|
 |SharedWithUsersOWSUser|Dokumente, die für den angegebenen Benutzer  freigegeben und auf der Seite Für mich freigegeben auf der OneDrive for #A0 des Benutzers angezeigt wurden. Dies sind Dokumente, die von anderen Personen in Ihrer Organisation explizit für den angegebenen Benutzer freigegeben wurden. Wenn Sie Dokumente exportieren, die einer Suchabfrage entsprechen, die die SharedWithUsersOWSUser-Eigenschaft verwendet, werden die Dokumente aus dem ursprünglichen Inhaltsspeicherort der Person exportiert, die das Dokument für den angegebenen Benutzer freigegeben hat. Weitere Informationen finden Sie unter [Searching for site content shared within your organization](#searching-for-site-content-shared-within-your-organization).|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|Beide Beispiele geben alle internen Dokumente zurück, die explizit für  Garth Fort freigegeben wurden und auf der Seite Für mich freigegeben im OneDrive for #A0 von Garth Fort angezeigt werden.|
 |Website|Die URL einer Website oder Gruppe von Websites in Ihrer Organisation.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|Im ersten Beispiel werden Elemente von den OneDrive for #A0 für alle Benutzer in der Organisation zurückgegeben. Im zweiten Beispiel werden Elemente von allen Teamwebsites zurückgegeben.|
 |Größe|Die Größe eines Elements in Byte.|`size>=1`  <br/> `size:1..10000`|Im ersten Beispiel werden Elemente zurückgegeben, die größer als 1 Byte sind. Im zweiten Beispiel werden Elemente zwischen 1 und 10.000 Byte zurückgegeben.|
-|Titel|Der Titel des Dokuments. Bei der Title-Eigenschaft handelt es sich um Metadaten, die in Microsoft Office angegeben werden. Sie unterscheiden sich vom Dateinamen des Dokuments.|`title:"communication plan"`|Jedes Dokument, das den Ausdruck "Kommunikationsplan" in der Title-Metadateneigenschaft eines Office-Dokuments enthält.|
+|Position|Der Titel des Dokuments. Bei der Title-Eigenschaft handelt es sich um Metadaten, die in Microsoft Office angegeben werden. Sie unterscheiden sich vom Dateinamen des Dokuments.|`title:"communication plan"`|Jedes Dokument, das den Ausdruck "Kommunikationsplan" in der Title-Metadateneigenschaft eines Office-Dokuments enthält.|
 |||||
 
 ## <a name="searchable-contact-properties"></a>Durchsuchbare Kontakteigenschaften
@@ -138,7 +138,7 @@ In der folgenden Tabelle sind die Kontakteigenschaften aufgeführt, die indizier
 |OfficeLocation|Der Wert in **der Office-** oder **Office-Location-Eigenschaft.**|
 |OtherAddress|Der Wert für die **Other** address-Eigenschaft.|
 |Nachname|Der Name in der **Nachnamen-Eigenschaft.**|
-|Titel|Der Titel in der **Job title-Eigenschaft.**|
+|Position|Der Titel in der **Job title-Eigenschaft.**|
 |||||
 
 ## <a name="searchable-sensitive-data-types"></a>Durchsuchbare vertrauliche Datentypen
@@ -243,7 +243,7 @@ Erstellen Sie eine Bedingung mithilfe von Dokumenteigenschaften, wenn Sie auf Sh
 | Bedingung | Beschreibung |
 |:-----|:-----|
 |Ursprung|Das Autorenfeld aus Office-Dokumenten, das beibehalten wird, wenn ein Dokument kopiert wird. Wenn beispielsweise ein Benutzer ein Dokument erstellt und die E-Mails an eine andere Person senden, die es dann in SharePoint hochlädt, behält das Dokument weiterhin den ursprünglichen Autor bei.|
-|Titel|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er ist anders als der Dateiname des Dokuments.|
+|Position|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er ist anders als der Dateiname des Dokuments.|
 |Erstellt|Das Datum, an dem ein Dokument erstellt wird.|
 |Zuletzt geändert|Das Datum, an dem ein Dokument zuletzt geändert wurde.|
 |Dateityp|Die Erweiterung einer Datei; Beispiel: docx, one, pptx oder xlsx. Dies ist dieselbe Eigenschaft wie die FileExtension-Websiteeigenschaft.|
@@ -446,3 +446,5 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 - Wenn Sie Inhalte mit einem bestimmten Eigenschaftswert in den Suchergebnissen ausschließen möchten, fügen Sie ein Minuszeichen (-) vor dem Namen der Eigenschaft hinzu. Schließt beispielsweise `-from:"Sara Davis"` alle nachrichten aus, die von Sara Davis gesendet werden.
 
 - Sie können Elemente basierend auf dem Nachrichtentyp exportieren. Verwenden Sie beispielsweise die Syntax, um #A0 und -Chats in Microsoft Teams zu `kind:im` exportieren. Wenn Sie nur E-Mail-Nachrichten zurückgeben möchten, verwenden Sie `kind:email` . Verwenden Sie zum Zurückgeben von Chats, Besprechungen und Anrufen in Microsoft Teams `kind:microsoftteams` .
+
+- Wie bereits erläutert, müssen Sie beim Durchsuchen von Websites das Nachgestellte am Ende der URL hinzufügen, wenn Sie die Eigenschaft verwenden, um nur Elemente an einer angegebenen `/` `path` Website zurück zu geben. Wenn Sie die nachgestellten Elemente nicht enthalten, werden auch Elemente von einer Website mit einem ähnlichen Pfadnamen `/` zurückgegeben. Wenn Sie beispielsweise Elemente von Websites mit dem Namen verwenden `path:sites/HelloWorld` `sites/HelloWorld_East` oder auch zurückgegeben `sites/HelloWorld_West` würden. Wenn Sie Elemente nur von der HelloWorld-Website zurückgeben möchten, müssen Sie `path:sites/HelloWorld/` verwenden.

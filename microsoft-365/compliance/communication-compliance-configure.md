@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: aa3af1e3cf507178a5747cca28fbda543aecd334
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e4dcbeeda50c6229935bae8003d8db129d852451
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052123"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488202"
 ---
 # <a name="get-started-with-communication-compliance"></a>Erste Schritte mit der Kommunikationscompliance
 
@@ -112,7 +112,7 @@ Verwenden Sie diese Option, um Benutzer bestimmten Rollengruppen zuzuordnen, um 
 
 9. Wählen **Sie Schließen** aus, um die Schritte zu ausführen.
 
-Weitere Informationen zu Rollengruppen und Berechtigungen finden Sie unter [Permissions im Compliance Center](../security/defender-365-security/protect-against-threats.md).
+Weitere Informationen zu Rollengruppen und Berechtigungen finden Sie unter [Permissions im Compliance Center](../security/office-365-security/protect-against-threats.md).
 
 ## <a name="step-2-required-enable-the-audit-log"></a>Schritt 2 (erforderlich): Aktivieren des Überwachungsprotokolls
 
@@ -134,9 +134,6 @@ Verwenden Sie das folgende Diagramm, um Gruppen in Ihrer Organisation für Kommu
 Wenn Sie eine Verteilergruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle E-Mails und Teams-Chats von jedem Benutzer in der Verteilergruppe. Wenn Sie eine Microsoft 365-Gruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle E-Mails und Teams-Chats, die an diese Gruppe gesendet werden, nicht die einzelnen E-Mails und Chats, die von jedem Gruppenmitglied empfangen werden.
 
 Wenn Sie eine Organisation mit einer lokalen Exchange-Bereitstellung oder einem externen E-Mail-Anbieter sind und Microsoft Teams-Chats für Ihre Benutzer überwachen möchten, müssen Sie eine Verteilergruppe für die Benutzer mit lokalen oder externen Postfächern erstellen, die überwacht werden sollen. Später in diesen Schritten weisen Sie diese  Verteilergruppe als Auswahl für überwachte Benutzer und Gruppen im Richtlinien-Assistenten zu.
-
->[!IMPORTANT]
->Sie müssen eine Anforderung beim Microsoft-Support stellen, damit Ihre Organisation die grafische Benutzeroberfläche im Security & Compliance Center verwenden kann, um für lokale Benutzer nach Teams-Chatdaten zu suchen. Weitere Informationen finden Sie unter [Durchsuchen cloudbasierter Postfächer für lokale Benutzer](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Um überwachte Benutzer in großen Unternehmensorganisationen zu verwalten, müssen Sie möglicherweise alle Benutzer über große Gruppen hinweg überwachen. Sie können PowerShell verwenden, um eine Verteilergruppe für eine globale Kommunikationskonformitätsrichtlinie für die zugewiesene Gruppe zu konfigurieren. Auf diese Weise können Sie Tausende von Benutzern mit einer einzigen Richtlinie überwachen und die Richtlinie zur Kommunikationskonformität aktualisieren, sobald neue Mitarbeiter Ihrer Organisation beitreten.
 
@@ -283,7 +280,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Kommunikationskonformitätsricht
 
 4. Beheben Sie die Warnung mithilfe der Korrektursteuerelemente, und stellen Sie sicher, dass die Warnung ordnungsgemäß aufgelöst wurde.
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Weitere Schritte
 
 Nachdem Sie diese Schritte zum Erstellen Ihrer ersten Kommunikationskonformitätsrichtlinie abgeschlossen haben, erhalten Sie nach 24-48 Stunden Benachrichtigungen von Aktivitätsindikatoren. Konfigurieren Sie zusätzliche Richtlinien nach Bedarf mithilfe der Anleitung in Schritt 5 dieses Artikels.
 

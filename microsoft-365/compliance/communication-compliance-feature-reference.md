@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 298300de8581d3eea185f05b92bb69cb6e7a69eb
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: dbfe1d4aaa821714bac68692d3be38ba8aad8e7f
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034204"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488222"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zu Kommunikationskonformitätsfeatures
 
@@ -114,11 +114,6 @@ Mit Kommunikationskonformitätsrichtlinien können Sie Nachrichten in einer oder
     - **Für Teams-Chatkommunikation:** Weisen Sie der Kommunikationskonformitätsrichtlinie einzelne Benutzer [zu,](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) oder weisen Sie der Kommunikationskonformitätsrichtlinie eine Verteilergruppe zu. Diese Einstellung gilt für Eins-zu-eins- oder Eins-zu-viele-Benutzer/Chat-Beziehungen.
     - **Für die Kommunikation im Teams-Kanal:** Weisen Sie jedem Microsoft Teams-Kanal oder jeder Microsoft 365-Gruppe, die Sie überprüfen möchten, einen bestimmten Benutzer zu, die Kommunikationskonformitätsrichtlinie zu. Wenn Sie denselben Benutzer zu anderen Microsoft Teams-Kanälen oder Microsoft 365-Gruppen hinzufügen, stellen Sie sicher, dass Sie diese neuen Kanäle und Gruppen in die Richtlinie zur Kommunikationscompliance aufnehmen. Wenn ein Mitglied des Kanals ein überwachter  Benutzer innerhalb einer Richtlinie ist und die eingehende Richtung in einer Richtlinie konfiguriert ist, unterliegen alle innerhalb des Kanals gesendeten Nachrichten der Überprüfung und potenziellen Richtlinien übereinstimmungen (auch für Benutzer im Kanal, die nicht explizit überwacht werden). Beispielsweise ist Benutzer A der Besitzer oder ein Mitglied eines Kanals. Benutzer B und Benutzer C sind Mitglieder desselben Kanals und verwenden Sprache, die der anstößigen Sprachrichtlinie entspricht, die nur Benutzer A überwacht. Benutzer B und Benutzer C erstellen Richtlinien übereinstimmungen für Unterhaltungen innerhalb des Kanals, obwohl sie nicht direkt in der anstößigen Sprachrichtlinie überwacht werden. #A0 zwischen Benutzer B und Benutzer C, die sich außerhalb des Kanals befinden, der Benutzer A enthält, unterliegen nicht der anstößigen Sprachrichtlinie, die Benutzer A enthält. Um Kanalmitglieder von der Aufsicht auszuschließen, wenn andere Mitglieder  des Kanals explizit überwacht werden, deaktivieren Sie die Einstellung eingehende Kommunikationsrichtung in der entsprechenden Kommunikationskonformitätsrichtlinie.
     - **Für Teams Chatkommunikation** mit Hybrid-E-Mail-Umgebungen: Kommunikationskonformität kann Chatnachrichten für Benutzer für Organisationen mit einer lokalen Exchange-Bereitstellung oder einem externen E-Mail-Anbieter überwachen, der Microsoft Teams aktiviert hat. Sie müssen eine Verteilergruppe für die Benutzer mit lokalen oder externen Postfächern erstellen, die überwacht werden sollen. Beim Erstellen einer Kommunikationskonformitätsrichtlinie weisen Sie  diese Verteilergruppe als Auswahl überwachter Benutzer und Gruppen im Richtlinien-Assistenten zu.
-
-    >[!IMPORTANT]
-    >Sie müssen eine Anforderung beim Microsoft-Support stellen, damit Ihre Organisation die grafische Benutzeroberfläche im Security & Compliance Center verwenden kann, um für lokale Benutzer nach Teams-Chatdaten zu suchen. Weitere Informationen finden Sie unter [Durchsuchen cloudbasierter Postfächer für lokale Benutzer](search-cloud-based-mailboxes-for-on-premises-users.md).
-
-Sie müssen eine Anforderung beim Microsoft-Support stellen, damit Ihre Organisation die grafische Benutzeroberfläche im Security & Compliance Center verwenden kann, um in den cloudbasierten Postfächern für lokale Benutzer nach Teams-Chatdaten zu suchen.
 
 - **Exchange-E-Mail:** Postfächer, die im Rahmen Ihres Microsoft 365- oder Office 365-Abonnements in Exchange Online gehostet werden, sind alle für die Nachrichtenprüfung berechtigt. Es kann bis zu 24 Stunden dauern, bis Exchange-E-Mail-Nachrichten und Anlagen mit den Richtlinienbedingungen für die Kommunikationskonformität übereinstimmen. Die für die Kommunikationscompliance unterstützten Anlagetypen sind die gleichen wie die [Dateitypen, die für die Inhaltsüberprüfung von Exchange-Mailflussregeln unterstützt werden](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 

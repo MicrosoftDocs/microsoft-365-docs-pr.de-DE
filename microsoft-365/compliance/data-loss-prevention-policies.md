@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Hier erfahren Sie, wie Sie vertrauliche Informationen Ihrer Organisation in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: 9ef369786aa4b79dbdec551c9750500f9c092906
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 737e556972ca8ab0f82e1c4fe9e8602f09e91fc8
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052073"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445429"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Verhinderung von Datenverlust – Übersicht
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -86,7 +86,7 @@ Angenommen, Sie verfügen über eine DLP-Richtlinie zur Erkennung von Informatio
 Die DLP-Richtlinien werden an Microsoft 365-Speicherorten auf vertrauliche Objekte angewendet und können, wie in dieser Tabelle beschrieben, weiter eingegrenzt werden.
 
 
-|Speicherort | einschließen/ausschließen nach|
+|Speicherort | Einschließen/Ausschließen nach|
 |---------|---------|
 |Exchange-E-Mail| Verteilergruppen|
 |Microsoft Office SharePoint Online-Websites |Websites |
@@ -96,9 +96,14 @@ Die DLP-Richtlinien werden an Microsoft 365-Speicherorten auf vertrauliche Objek
 |Microsoft Cloud App Security |Instanz |
 
 
- Wenn Sie sich dazu entscheiden, bestimmte Verteilergruppen in Exchange einzubeziehen, wird die DLP-Richtlinie nur auf Mitglieder dieser Gruppe beschränkt. Ebenso wenn Sie eine Verteilergruppe ausschließen, werden auch alle Mitglieder dieser Verteilergruppe aus der Richtlinienauswertung ausgeschlossen. Sie können eine Richtlinie auf die Mitglieder von Verteilerlisten, dynamischen Verteilergruppen und Sicherheitsgruppen beschränken. Eine DLP-Richtlinie darf nicht mehr als 50 solche Einschlüsse und Ausschlüsse enthalten.
+Wenn Sie sich dazu entscheiden, bestimmte Verteilergruppen in Exchange einzubeziehen, wird die DLP-Richtlinie nur auf Mitglieder dieser Gruppe beschränkt. Ebenso wenn Sie eine Verteilergruppe ausschließen, werden auch alle Mitglieder dieser Verteilergruppe aus der Richtlinienauswertung ausgeschlossen. Sie können eine Richtlinie auf die Mitglieder von Verteilerlisten, dynamischen Verteilergruppen und Sicherheitsgruppen beschränken. Eine DLP-Richtlinie darf nicht mehr als 50 solche Einschlüsse und Ausschlüsse enthalten.
 
-Wenn Sie festlegen, dass bestimmte SharePoint-Websites oder OneDrive-Konten berücksichtigt oder ausgeschlossen werden sollen, beachten Sie, dass eine DLP-Richtlinie höchstens 100 solcher Einschlüsse und Ausschlüsse enthalten kann. Diese Grenzwerte bestehen zwar, sie können jedoch durch das Anwenden einer organisationsweiten oder einer für ganze Speicherorte geltenden Richtlinie übergangen werden.
+Wenn Sie festlegen, dass bestimmte SharePoint-Websites berücksichtigt oder ausgeschlossen werden sollen, beachten Sie, dass eine DLP-Richtlinie höchstens 100 solcher Ein- und Ausschlüsse enthalten kann. Diese Grenzwerte bestehen zwar, sie können jedoch durch das Anwenden einer organisationsweiten oder einer für ganze Speicherorte geltenden Richtlinie übergangen werden.
+
+Wenn Sie festlegen, dass bestimmte OneDrive-Konten oder -Gruppen berücksichtigt oder ausgeschlossen werden sollen, beachten Sie, dass eine DLP-Richtlinie höchstens 100 Benutzerkonten bzw. 50 Gruppen als Ein- oder Ausschlüsse enthalten kann.
+
+> [!NOTE]
+> OneDrive for Business-Richtlinienbegrenzung mit Konten oder Gruppen befindet sich in der öffentlichen Vorschau. In dieser Phase können Sie Benutzerkonten und Gruppen als Teil einer DLP-Richtlinie entweder ein- oder ausschließen. Ein- und Ausschlüsse als Teil derselben Richtlinie werden nicht unterstützt.
   
 ### <a name="rules"></a>Regeln
 
@@ -201,8 +206,9 @@ So sieht ein Richtlinientipp in einem OneDrive for Business-Konto aus.
 Bei einer Übereinstimmung mit einer Regel können Sie eine E-Mail-Warnung mit Details zur Warnung an Ihren Compliance Officer (oder an beliebige andere Personen) senden. Diese E-Mail-Warnung enthält einen Link zum [Verwaltungsdashboard für DLP-Warnungen](dlp-configure-view-alerts-policies.md), zu dem der Compliance Officer zum Anzeigen der Details zu den Warnungen und Ereignissen wechseln kann. Das Dashboard enthält Details zu dem Ereignis, durch das die Warnung ausgelöst wurde, sowie zur entsprechenden DLP-Richtlinie und den erkannten vertraulichen Inhalten.
 
 Darüber hinaus können Sie auch einen Vorfallsbericht mit Details zum Ereignis senden. Dieser Bericht enthält Informationen zum Element, für das eine Übereinstimmung gefunden wurde, zum Inhalt, der mit der Regel übereinstimmte, und zum Namen der Person, die den Inhalt zuletzt geändert hat. Bei E-Mail-Nachrichten wird dem Bericht außerdem die ursprüngliche Nachricht, die einer DLP-Richtlinie entspricht, als Anlage beigefügt.
-  
-![Seite zum Konfigurieren von Vorfallberichten](../media/Alerts-and-incident-report.png)
+
+> [!div class="mx-imgBorder"]
+> ![Seite zum Konfigurieren von Vorfallberichten](../media/Alerts-and-incident-report.png)
 
 DLP überprüft E-Mails anders als Elemente in SharePoint Online oder OneDrive for Business. In SharePoint Online und OneDrive for Business überprüft DLP vorhandene sowie neue Elemente und generiert bei jeder gefundenen Übereinstimmung eine Warnung und einen Vorfallsbericht. In Exchange Online überprüft DLP nur neue E-Mail-Nachrichten und generiert einen Bericht, wenn eine Richtlinienübereinstimmung vorliegt. DLP überprüft oder vergleicht ***nicht*** zuvor vorhandene E-Mail-Elemente, die in einem Postfach oder Archiv gespeichert sind.
   
@@ -252,13 +258,15 @@ Die integrierte **U.S. HIPAA**-Richtlinie enthält beispielsweise eine Regel mit
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>Die Priorität, mit der Regeln verarbeitet werden
 
-Wenn Sie in einer Richtlinie Regeln erstellen, wird jeder Regel eine Priorität in der Reihenfolge ihrer Erstellung zugewiesen, was bedeutet, dass die zuerst erstellte Regel oberste Priorität, die danach erstellte Regel die zweite Priorität usw. erhält. 
-  
-![Regeln nach Priorität](../media/dlp-rules-in-priority-order.png)
+Wenn Sie in einer Richtlinie Regeln erstellen, wird jeder Regel eine Priorität in der Reihenfolge ihrer Erstellung zugewiesen, was bedeutet, dass die zuerst erstellte Regel oberste Priorität, die danach erstellte Regel die zweite Priorität usw. erhält.
+
+> [!div class="mx-imgBorder"]
+> ![Regeln nach Priorität](../media/dlp-rules-in-priority-order.png)
   
 Nachdem Sie mehr als eine DLP-Richtlinie eingerichtet haben, können Sie die Priorität einer oder mehrerer Richtlinien ändern. Wählen Sie dazu eine Richtlinie aus, wählen Sie **Richtlinie bearbeiten** aus, und verwenden Sie die **Prioritätsliste**, um deren Priorität anzugeben.
 
-![Festlegen der Priorität für eine Richtlinie](../media/dlp-set-policy-priority.png)
+> [!div class="mx-imgBorder"]
+> ![Festlegen der Priorität für eine Richtlinie](../media/dlp-set-policy-priority.png)
 
 Wenn Inhalte anhand von Regeln ausgewertet werden, werden diese Regeln in der Reihenfolge ihrer Priorität verarbeitet. Wenn ein Inhalt mehreren Regeln entspricht, werden die Regeln in der Reihenfolge ihrer Priorität verarbeitet, und die jeweils restriktivste Aktion wird durchgeführt. Wenn ein Inhalt beispielsweise allen folgenden Regeln entspricht, wird Regel 3 angewandt, da sie die höchste Priorität hat und die restriktivste Regel ist:
   
@@ -295,8 +303,9 @@ Um diese Probleme zu beheben, können Sie Ihre Regeln verbessern, indem Sie die 
 ### <a name="instance-count"></a>Instanzenanzahl
 
 Die Instanzenanzahl gibt einfach nur an, wie oft ein bestimmter Typ vertraulicher Informationen vorkommen muss, damit ein Inhalt der Regel entspricht. So entspricht beispielsweise ein Inhalt der Regel unten, wenn darin zwischen 1 und 9 eindeutige US-amerikanische oder britische Passnummern erkannt wurden.
-  
-Beachten Sie, dass bei der Anzahl der Instanzen nur **einmalig vorkommende** Übereinstimmungen für vertrauliche Informationstypen und Stichwörter gezählt werden. Wenn in einer E-Mail-Nachricht beispielsweise 10 mal die gleiche Kreditkartennummer vorkommt, zählen diese 10 Vorkommen als eine einzige Kreditkartennummerinstanz. 
+
+> [!NOTE]
+> Bei der Anzahl der Instanzen werden nur **einmalig vorkommende** Übereinstimmungen für vertrauliche Informationstypen und Stichwörter gezählt. Wenn in einer E-Mail-Nachricht beispielsweise 10 mal die gleiche Kreditkartennummer vorkommt, zählen diese 10 Vorkommen als eine einzige Kreditkartennummerinstanz.
   
 Die Optimierung von Regeln mithilfe der Instanzenanzahl ist einfach:
   
@@ -443,7 +452,8 @@ Wenn Sie DLP-Richtlinien erstellen, die potenziell weitreichende Auswirkungen ha
 
     Sie können auch die Priorität mehrerer Regeln in einer Richtlinie ändern. Öffnen Sie dazu eine Richtlinie zur Bearbeitung. Klicken Sie in einer Zeile für eine Regel auf die drei Auslassungspunkte (**...**), und wählen Sie dann eine Option aus, z. B. **Nach unten** oder **Nach ganz unten**.
 
-    ![Festlegen der Regelpriorität](../media/dlp-set-rule-priority.png)
+    > [!div class="mx-imgBorder"]
+    > ![Festlegen der Regelpriorität](../media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>DLP-Berichte
 
@@ -534,7 +544,7 @@ Mitglieder des Complianceteams, die DLP-Richtlinien erstellen, benötigen Berech
 
 Sie können auch eine Rollengruppe mit Nur-Lese-Rechten für die DLP-Richtlinien und DLP-Berichte erstellen, indem Sie die Rolle **DLP-Complianceverwaltung mit Leserechten**.
 
-Weitere Informationen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Compliance Center](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Weitere Informationen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Diese Berechtigungen sind nur erforderlich, um eine DLP-Richtlinie zu erstellen und anzuwenden. Für die Richtlinienerzwingung ist kein Zugriff auf den Inhalt erforderlich.
   

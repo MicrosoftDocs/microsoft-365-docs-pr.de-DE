@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie können einen Haltebereich erstellen, der einem Core eDiscovery-Fall zugeordnet ist, um Inhalte zu erhalten, die für eine Untersuchung relevant sein können.
-ms.openlocfilehash: c84d0be5a4a659ff9b64af14052bcf4033e2ed24
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 1026de3b5357c3417a00a69b4ae6890e8036c091
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470476"
+ms.locfileid: "51488244"
 ---
 # <a name="create-an-ediscovery-hold"></a>Erstellen eines eDiscovery-Speichers
 
@@ -131,8 +131,8 @@ Unterhaltungen, die Teil eines Microsoft Teams-Kanals sind, werden im Postfach g
 
 Alternativ werden Unterhaltungen, die Teil der Chatliste in Teams sind *(1:1-Chats* oder *1:N-Gruppenchats)* in den Postfächern der Benutzer gespeichert, die am Chat teilnehmen. Und Dateien, die Benutzer in Chatunterhaltungen freigeben, werden im #A0 des Benutzers gespeichert, der die Datei gemeinsam verwendet. Daher müssen Sie die einzelnen Benutzerpostfächer und #A0 einem eDiscovery-Archiv hinzufügen, um Unterhaltungen und Dateien in der Chatliste zu erhalten. Es ist eine gute Idee, die Postfächer von Mitgliedern eines Microsoft Teams in einem Archiv zu halten und das Teampostfach und die Website in der Warteschleife zu platzieren.
 
-> [!IMPORTANT]
-> In einer cloudbasierten Organisation müssen Benutzer, die an Unterhaltungen teilnehmen, die Teil der Chatliste in Teams sind, über ein Exchange Online-Postfach verfügen, damit Chatunterhaltungen beibehalten werden können, wenn das Postfach in einem eDiscovery-Archiv platziert wird. Das liegt daran, dass Unterhaltungen, die Teil der Chatliste sind, in den cloudbasierten Postfächern der Chatteilnehmer gespeichert werden. Wenn ein Chatteilnehmer kein Exchange Online-Postfach hat, können Sie diese Chatunterhaltungen nicht beibehalten. In einer Exchange-Hybridbereitstellung können Benutzer mit einem lokalen Postfach beispielsweise an Unterhaltungen teilnehmen, die Teil der Chatliste in Teams sind. In diesem Fall können Inhalte aus diesen Unterhaltungen jedoch nicht beibehalten werden, da diese Benutzer über keine cloudbasierten Postfächer verfügen, die in der Warteschleife platziert werden können.
+> [!NOTE]
+> Wenn Ihre Organisation über eine Exchange-Hybridbereitstellung verfügt (oder Ihre Organisation eine lokale Exchange-Organisation mit Office 365 synchronisiert) und Microsoft Teams aktiviert hat, können lokale Benutzer die Teams-Chatanwendung verwenden und an 1:1-Chats und 1:N-Gruppenchats teilnehmen. Diese Unterhaltungen werden in einem cloudbasierten Speicher gespeichert, der einem lokalen Benutzer zugeordnet ist. Wenn ein lokales Benutzer in einem eDiscovery-Speicher platziert wird, werden die Teams-Chatinhalte im cloudbasierten Speicher beibehalten. Weitere Informationen finden Sie unter [Nach Teams-Chatdaten für lokale Benutzer suchen](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Weitere Informationen zum Beibehalten von Microsoft Teams-Inhalten finden Sie unter [Place a Microsoft Teams user or team on legal hold](/MicrosoftTeams/legal-hold).
 
@@ -222,10 +222,10 @@ In der folgenden Tabelle sind die Grenzwerte für eDiscovery-Fälle und Fallaufb
   | Beschreibung der Beschränkung | Grenze |
   |:-----|:-----|
   |Maximale Anzahl von Fällen für eine Organisation.  <br/> |Keine Begrenzung  <br/> |
-  |Maximale Anzahl der eDiscovery-Haltewerte für eine Organisation.  <br/> |10,000  <br/> |
-  |Maximale Anzahl von Postfächern in einem einzigen eDiscovery-Archiv. Dieser Grenzwert umfasst die gesamtzahl der Benutzerpostfächer und die Postfächer, die Microsoft 365-Gruppen, Microsoft Teams und Yammer zugeordnet sind.  <br/> |1,000  <br/> |
+  |Maximale Anzahl der eDiscovery-Haltewerte für eine Organisation.  <br/> |10.000  <br/> |
+  |Maximale Anzahl von Postfächern in einem einzigen eDiscovery-Archiv. Dieser Grenzwert umfasst die gesamtzahl der Benutzerpostfächer und die Postfächer, die Microsoft 365-Gruppen, Microsoft Teams und Yammer zugeordnet sind.  <br/> |1.000  <br/> |
   |Maximale Anzahl von Websites in einem einzigen eDiscovery-Halteraum. Dieser Grenzwert umfasst die gesamtzahl der OneDrive for #A0 und #A1 sowie die Websites, die Microsoft 365-Gruppen, Microsoft Teams und Yammer zugeordnet sind.  <br/> |100  <br/> |
-  |Maximale Anzahl von Fällen, die auf der eDiscovery-Startseite angezeigt werden, und die maximale Anzahl von Elementen, die auf den Registerkarten Halte-, Such- und Exportregisterkarten in einem Fall angezeigt werden. <sup>1</sup> |1,000|
+  |Maximale Anzahl von Fällen, die auf der eDiscovery-Startseite angezeigt werden, und die maximale Anzahl von Elementen, die auf den Registerkarten Halte-, Such- und Exportregisterkarten in einem Fall angezeigt werden. <sup>1</sup> |1.000|
   |||
 
    > [!NOTE]

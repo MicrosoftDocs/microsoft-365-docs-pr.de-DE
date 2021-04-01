@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verstehen.'
-ms.openlocfilehash: 18df7c43e21fb186dee56dabc29a67654f0f6882
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7e170967e1670433a7d28753430f0cb15818039b
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923768"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476637"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen
 
@@ -63,9 +63,9 @@ Office 365 Video wird am 1. März 2021 eingestellt. Wenn Sie Ihren Office 365-Ma
 
 ## <a name="how-is-the-migration-organized"></a>Wie ist die Migration organisiert?
 
-Diese Abbildung zeigt die neun Phasen der Migration in die neuen deutschen Rechenzentren.
+Diese Abbildung zeigt die zehn Phasen der Migration in die neuen deutschen Rechenzentren.
 
-![Die neun Phasen der Migration in die neuen deutschen Rechenzentren](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![Die zehn Phasen der Migration in die neuen deutschen Rechenzentren](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 Diese Phasen beginnen mit Ihrer [Anmeldung für die Migration](./ms-cloud-germany-migration-opt-in.md). Die meisten Migrationsphasen werden nach und nach als Back-End-Dienstvorgänge durchgeführt, bei denen nur wenige Kundeninteraktionen erforderlich sind. Ab wann Maßnahmen auf Kundenseite erforderlich sind sowie der allgemeine Stand der Migration werden während des Migrationsprozesses über das Nachrichtencenter des Microsoft 365 Admin Centers mitgeteilt. Zu den kundenseitig erforderlichen Maßnahmen zählen beispielsweise durch Kunden verwaltete DNS-Updates, die Neukonfiguration des Hybrid-Setups für Kunden von Exchange-Hybridlösungen oder Azure-Migrationen.
 
@@ -93,6 +93,8 @@ Sie werden mittels Nachichtencenter-Mitteilungen über den Status der Migration 
 - Dynamics abgeschlossen
 - Power BI abgeschlossen
 - Endgültige Umstellung der Dienste abgeschlossen
+
+Nach der endgültigen Umstellung von Azure AD auf den weltweiten Dienst wird erwartet, dass alle Clients und Anwendungen vollständig auf die Verwendung der korrekten Endpunkte umgestellt werden. Es gibt ein 30-Tage-Fenster nach der endgültigen Umstellung, in dem es möglich sein kann, weiterhin Azure AD-Tokens vom Microsoft Cloud Deutschland-Dienst zu erhalten. Wenn das 30-Tage-Fenster abläuft, können Clients und Anwendungen nicht mehr auf die Azure AD-Endpunkte der Microsoft Cloud Deutschland zugreifen. Anwendungen oder Benutzerzugriffe werden ab diesem Punkt fehlschlagen. Sie müssen sicherstellen, dass alle Benutzer und Anwendungen auf die richtigen Endpunkte migriert werden, bevor dieses Zeitfenster geschlossen wird. 
 
 ## <a name="moving-to-the-new-german-datacenter-regions"></a>Verschiebung in die neuen deutschen Rechenzentrumsregionen
 
