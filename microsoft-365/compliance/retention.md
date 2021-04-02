@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: dbb294cdb865fb01f931e2e9c3bc4f6afb3f1e09
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 42fe70d1360f45deb6f98f41c0ffec97de7e00a9
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471034"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498349"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -259,7 +259,7 @@ Mithilfe der folgenden Tabelle können Sie anhand der Funktionen feststellen, ob
 |Deklarieren eines Elements als Datensatz| Nein | Ja |
 |Beginnen Sie den Aufbewahrungszeitraum, wenn er mit einer Bezeichnung versehen ist oder auf einem Ereignis basiert | Nein | Ja |
 |Dispositionsüberprüfung | Nein| Ja |
-|Dispositionsnachweise von bis zu 7 Jahren | Nein |Ja, wenn Element als ein Datensatz deklariert ist|
+|Dispositionsnachweise von bis zu 7 Jahren | Nein |Ja, wenn Sie die Löschungsprüfung verwenden oder ein Element als A-Datensatz markiert ist|
 |Administratoraktivitäten überwachen| Ja | Ja|
 |Identifizierung von Elementen, die der Aufbewahrung unterliegen: <br /> – Inhaltssuche <br /> – Datenklassifizierungsseite, Inhalts-Explorer, Aktivitäts-Explorer | <br /> Nein <br /> Nein | <br /> Ja <br /> Ja|
 

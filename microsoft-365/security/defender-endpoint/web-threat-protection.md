@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7754fa586b24fdedaa9691b45f5da4654c882a5b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: aeeea02ca1ef2d37623e9ab434b162237c2f4946
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185981"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499894"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Schützen Ihrer Organisation vor Webbedrohungen
 
@@ -36,7 +36,7 @@ ms.locfileid: "51185981"
 Der Schutz von Webbedrohungen ist Teil [des Webschutzes](web-protection-overview.md) in Defender for Endpoint. Es verwendet [Netzwerkschutz,](network-protection.md) um Ihre Geräte vor Webbedrohungen zu schützen. Durch die Integration mit Microsoft Edge und beliebten Browsern von Drittanbietern wie Chrome und Firefox stoppt der Webbedrohungsschutz Webbedrohungen ohne Webproxy und kann Geräte schützen, während sie nicht oder lokal sind. Der Schutz von Webbedrohungen verhindert den Zugriff auf Phishingwebsites, Schadsoftwarevektoren, Exploitwebsites, nicht vertrauenswürdige websites oder Websites mit niedriger Reputation sowie Websites, die Sie in Ihrer benutzerdefinierten Indikatorliste [blockiert haben.](manage-indicators.md)
 
 >[!Note]
->Es kann bis zu einer Stunde dauern, bis Geräte neue Kundenindikatoren erhalten.
+>Es kann bis zu einer Stunde dauern, bis Geräte neue benutzerdefinierte Indikatoren erhalten.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Der Webschutz verwendet Netzwerkschutz, um Sicherheit beim Browsen im Web in Microsoft Edge und Webbrowsern von Drittanbietern zu bieten.
@@ -50,8 +50,8 @@ So aktivieren Sie den Netzwerkschutz auf Ihren Geräten:
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Übersicht über den Webschutz](web-protection-overview.md)
-- [Schutz vor Webbedrohungen](web-threat-protection.md)
+- [Übersicht über Internetschutz](web-protection-overview.md)
+- [Internet-Bedrohungsschutz](web-threat-protection.md)
 - [Überwachen der Websicherheit](web-protection-monitoring.md)
-- [Reagieren auf Webbedrohungen](web-protection-response.md)
+- [Reagieren auf Internetbedrohungen](web-protection-response.md)
 - [Netzwerkschutz](network-protection.md)

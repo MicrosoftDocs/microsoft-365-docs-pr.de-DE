@@ -19,12 +19,12 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie das Übermittlungsportal im Security & Compliance Center verwenden, um verdächtige E-Mails, verdächtige Phishing-E-Mails, Spam und andere potenziell schädliche Nachrichten, URLs und Dateien zur Überprüfung an Microsoft zu übermitteln.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3dd566de3ba4b4281b19c423b8623f081c378bca
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6f1294335be5a82ef7219ef9096d84d840271c5b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206734"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499332"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Verwenden von Administrator-Übermittlung, um verdächtige Spam- oder Phishing-Nachrichten, URLs und Dateien an Microsoft zu übermitteln
 
@@ -122,9 +122,9 @@ Weitere Möglichkeiten zum Übermitteln von E-Mail-Nachrichten, URLs und Anlagen
 
    ![Beispiel für anlagenübermittlung](../../media/submission-file-flyout.PNG)
 
-## <a name="view-admin-submissions"></a>Anzeigen von Administratorübermittlungen
+## <a name="view-items-submitted-for-analysis"></a>Zur Analyse übermittelte Elemente anzeigen
 
-Wechseln Sie & Security & Compliance  Center zu Übermittlungen der \> **Bedrohungsverwaltung,** überprüfen Sie, ob Sie sich auf der Registerkarte **Administratorübermittlungen** befindet, und klicken Sie dann auf **Neue Übermittlung**.
+Wechseln Sie & Security & Compliance  Center zu Übermittlungen zur \> **Bedrohungsverwaltung,** überprüfen Sie, ob Sie auf der Registerkarte Übermittelt für **die Analyse** sind.
 
 Am oberen Rand der Seite können Sie ein Startdatum, ein Enddatum und  (standardmäßig) nach Übermittlungs-ID filtern (ein GUID-Wert, der jeder Übermittlung zugewiesen ist), indem Sie einen Wert in das Feld eingeben und auf Aktualisieren ![ ](../../media/scc-quarantine-refresh.png) klicken. Mehrere Werte können durch Kommata getrennt eingegeben werden.
 
@@ -254,6 +254,9 @@ Sie können auf die Schaltfläche **Spaltenoptionen** am unteren Rand der Seite 
 Am oberen Rand der Seite können Sie ein Startdatum, ein Enddatum eingeben und nach **Übermittelt** filtern, indem Sie in das Feld einen Wert eingeben und auf Aktualisieren ![ ](../../media/scc-quarantine-refresh.png) klicken. Mehrere Werte können durch Kommata getrennt eingegeben werden.
 
 Klicken Sie zum Exportieren der Ergebnisse **am** oberen Rand der Seite auf Exportieren, und wählen Sie **Diagrammdaten** oder **Tabelle aus.** Speichern Sie im angezeigten Dialogfeld die CSV-Datei.
+
+> [!NOTE]
+> Wenn Organisationen nur für das Senden an benutzerdefinierte Postfächer konfiguriert sind, werden die gemeldeten Nachrichten nicht zum erneuten Scannen gesendet, und die Ergebnisse im Portal für vom Benutzer gemeldete Nachrichten sind immer leer.
 
 ## <a name="undo-user-submissions"></a>Rückgängig machen von Benutzerübermittlungen
 

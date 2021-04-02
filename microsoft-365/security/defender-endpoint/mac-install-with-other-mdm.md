@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e3a20f0a356a32eddc05b3792c0c04c23197a7b0
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 5fa811b2419d107e91b301d5c9bad691fc016b5b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185695"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498964"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-for-mac"></a>Bereitstellung mit einem anderen Mobile Device Management (MDM)-System für Microsoft Defender for Endpoint für Mac
 
@@ -84,6 +84,10 @@ MDM verwendet sie zum Bereitstellen der **Einstellungsdatei in /Library/Managed 
 ### <a name="kernel-extension-policy"></a>Kernelerweiterungsrichtlinie
 
 Richten Sie eine KEXT- oder Kernelerweiterungsrichtlinie ein. Verwenden Sie die **Team-ID UBF8T346G9,** um von Microsoft bereitgestellte Kernelerweiterungen zu erlauben.
+
+> [!CAUTION]
+> Wenn Ihre Umgebung aus Apple Silicon (M1)-Geräten besteht, sollten diese Computer keine Konfigurationsprofile mit KEXT-Richtlinien erhalten.
+> Apple unterstützt KEXT auf diesen Computern nicht, die Bereitstellung eines solchen Profils würde auf M1-Computern fehlschlagen.
 
 ### <a name="system-extension-policy"></a>Systemerweiterungsrichtlinie
 

@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: d1402d8486725559335a5edc5ee13c78a0125932
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 0c3c5ebbcd4483cae159fe9b46a6f4c376443be3
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186425"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499069"
 ---
 # <a name="threat-and-vulnerability-management"></a>Bedrohungs- und Sicherheitsrisikoverwaltung
 
@@ -90,7 +90,7 @@ Bereich | Beschreibung
 [**Korrektur**](tvm-remediation.md) | Weitere Informationen finden Sie unter Korrekturaktivitäten, die Sie erstellt haben, und Empfehlungsausnahmen.
 [**Softwarebestand**](tvm-software-inventory.md) | Sehen Sie sich die Liste der anfälligen Software in Ihrer Organisation sowie Informationen zu Schwachstellen und Bedrohungen an.
 [**Schwächen**](tvm-weaknesses.md) | Sehen Sie sich die Liste der häufigen Sicherheitsrisiken und Risikorisiken (CVEs) in Ihrer Organisation an.
-[**Ereigniszeitachse**](threat-and-vuln-mgt-event-timeline.md) | Anzeigen von Ereignissen, die sich auf das Risiko Ihrer Organisation auswirken können.
+[**Ablauf der Veranstaltung**](threat-and-vuln-mgt-event-timeline.md) | Anzeigen von Ereignissen, die sich auf das Risiko Ihrer Organisation auswirken können.
 
 ## <a name="apis"></a>APIs
 
@@ -98,7 +98,7 @@ Führen Sie API-Aufrufe im Zusammenhang mit der Bedrohungs- und Sicherheitsrisik
 
 In den folgenden Artikeln finden Sie verwandte APIs:
 
-- [Unterstützte Microsoft Defender for Endpoint-APIs](exposed-apis-list.md)
+- [Unterstütze Microsoft Defender für Endpoint-APIs](exposed-apis-list.md)
 - [Computer-APIs](machine.md)
 - [Empfehlungs-APIs](vulnerability.md)
 - [Bewertungs-APIs](score.md)

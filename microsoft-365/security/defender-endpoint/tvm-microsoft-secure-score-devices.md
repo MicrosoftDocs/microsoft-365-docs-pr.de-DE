@@ -1,5 +1,5 @@
 ---
-title: Microsoft Secure Score for Devices
+title: Microsoft-Sicherheitsbewertung für Geräte
 description: Ihre Bewertung für Geräte zeigt den gemeinsamen Sicherheitskonfigurationsstatus Ihrer Geräte über Anwendungs-, Betriebssystem-, Netzwerk-, Konten- und Sicherheitssteuerelemente hinweg an.
 keywords: Microsoft Secure Score for Devices, mdatp Microsoft Secure Score for Devices, secure score, configuration score, threat and vulnerability management, security controls, improvement opportunities, security configuration score over time, security posture, baseline
 search.product: eADQiWindows 10XVcnh
@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d9ccd4f7dcc8b1546772a756aaf850dadfc87905
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: fcf33b309045b9ca763b0d3cabc44fb13505ee0b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063751"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500053"
 ---
-# <a name="microsoft-secure-score-for-devices"></a>Microsoft Secure Score for Devices
+# <a name="microsoft-secure-score-for-devices"></a>Microsoft-Sicherheitsbewertung für Geräte
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -112,5 +112,5 @@ Verbessern Sie Ihre Sicherheitskonfiguration, indem Sie Probleme aus der Liste d
 
 - [Übersicht über die Verwaltung von Bedrohungen und Sicherheitslücken](next-gen-threat-and-vuln-mgt.md)
 - [Dashboard](tvm-dashboard-insights.md)
-- [Belichtungsergebnis](tvm-exposure-score.md)
+- [Gefährdungsscore](tvm-exposure-score.md)
 - [Sicherheitsempfehlungen](tvm-security-recommendation.md)

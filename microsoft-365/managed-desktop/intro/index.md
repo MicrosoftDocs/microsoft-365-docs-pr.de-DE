@@ -3,18 +3,19 @@ title: Ist Microsoft Managed Desktop das Richtige für Sie?
 description: Orientierung, was der Dienst ist und Verknüpfungen zu Artikeln für verschiedene Zielgruppen
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
+audience: ITpro
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 07d3d50f012b2d93e9f7a75f47b0c35514b51350
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 73ce64bd83b475cc7cc0f78b6ac4a06683264144
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920620"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445554"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Was ist Microsoft Managed Desktop?
 
@@ -57,18 +58,21 @@ Ihre IT-Administratoren profitieren von folgenden Funktionen:
 Microsoft Managed Desktop übernimmt die Verwaltung registrierter Geräte und der von ihnen verwendeten Microsoft-Software.
 
 - **Hardware:** Anstatt dass Ihre IT-Abteilung Geräte (und deren Treiber) recherchieren und testen muss, werden bestimmte Geräte von Microsoft Managed Desktop sorgfältig getestet. Dies führt zu einer kuratierten [Liste von Geräten](../service-description/device-list.md), die die Leistungsanforderungen auf Unternehmensebene erfüllen und mit denen garantiert funktionieren Bedienung. Sie können Geräte entweder selbst beziehen (oder mit einem Partner zusammenarbeiten) oder bereits vorhandene Geräte wiederverwenden, sofern sie auf der genehmigten Liste stehen. Das Registrieren von Geräten ist einfach und unkompliziert. Bevor sie bereitgestellt werden, können Sie auch bestimmte Aspekte der Geräteerfahrung für Ihre Benutzer [anpassen](../working-with-managed-desktop/config-setting-overview.md).
+
 - **Updates:** Microsoft Managed Desktop richtet alle Aspekte von [Bereitstellungsgruppen](../service-description/updates.md) für Windows 10-Qualitäts- und Funktionsupdates, Treiber, Firmware, Antivirendefinitionen und Microsoft 365 Apps für Unternehmensupdates ein und verwaltet sie. Dies umfasst umfangreiche Tests und Überprüfungen aller Aktualisierungen, um sicherzustellen, dass registrierte Geräte immer auf dem neuesten Stand sind, und um Minimierungen von Störungen, wodurch Ihre IT-Abteilung von dieser laufenden Aufgabe befreit wird.
-- **Anwendungen:** Als Teil von Microsoft 365 Enterprise stellt Microsoft mehrere wichtige Microsoft-Apps für Sie bereit (und verwaltet diese). Aber Sie haben wahrscheinlich auch andere Anwendungen, die Sie für Ihr Unternehmen benötigen. Anstatt dass Ihre IT-Abteilung diese Anwendungen testen, verpacken und bereitstellen muss, hilft Microsoft Ihnen bei der Bereitstellung und kann bei Bedarf mit [Desktop App Assure](/fasttrack/win-10-desktop-app-assure) behilflich sein. Weitere Informationen finden Sie unter[Anwendungen in Microsoft Managed Desktop](../get-ready/apps.md).
+
+- **Anwendungen:** Als Teil von Microsoft 365 Enterprise stellt Microsoft mehrere wichtige Microsoft-Apps für Sie bereit (und verwaltet diese). Aber Sie haben wahrscheinlich auch andere Anwendungen, die Sie für Ihr Unternehmen benötigen. Anstatt dass Ihre IT-Abteilung diese Apps testen, verpacken und bereitstellen muss, unterstützt Microsoft Sie bei der Bereitstellung über das [FastTrack](https://www.microsoft.com/FastTrack)-Programm. Darüber hinaus kann das [App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assuree)-Programm von Microsoft dazu beitragen, App-Kompatibilitätsprobleme zu beheben, die bei der Migration auf die neuesten Versionen unserer Produkte auftreten. Weitere Informationen finden Sie unter[Anwendungen in Microsoft Managed Desktop](../get-ready/apps.md).
 
 
 ## <a name="device-monitoring"></a>Geräteüberwachung
 
 Wir helfen bei der Aufrechterhaltung der Sicherheit Ihrer Geräte mit einem speziellen Sicherheits-Operations-Center, das Ihre Geräte überwacht und Daten aus den speziellen Bedrohungen verwendet, die Microsoft jeden Monat analysiert. Diese Sicherheitsfunktionen sind integriert, anstatt später hinzugefügt zu werden.
 
-Wir überwachen auch den Gerätezustand und geben Ihnen Einblicke in die Geräteleistung. Weitere Informationen finden Sie unter [Microsoft Managed Desktop-Betrieb und -Überwachung](../service-description/operations-and-monitoring.md)
+Wir überwachen auch den Gerätezustand und geben Ihnen Einblicke in die Geräteleistung. Weitere Informationen finden Sie unter [Microsoft Managed Desktop-Betrieb und -Überwachung](../service-description/operations-and-monitoring.md).
 
 
 ## <a name="need-more-details"></a>Möchten Sie mehr wissen?
+
 Weitere Informationen zum Wert von Microsoft Managed Desktop, einschließlich Kundengeschichten, finden Sie unter [Microsoft Managed Desktop](https://aka.ms/mmd). Die [Roadmap](https://aka.ms/AA6jiam), eine [Forrester Total Economic Impact-Fallstudie](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf) und eine [einseitige Zusammenfassung](https://aka.ms/AA6ob3h) zum Herunterladen sind großartige Möglichkeiten, um mit mehr zu beginnen. Die neuesten Nachrichten finden Sie im Microsoft Managed Desktop-[Blog](https://aka.ms/AA6l2dd).
 
 Wenn Microsoft Managed Desktop für Ihr Unternehmen geeignet erscheint, können Sie weitere Dokumentationen lesen, in denen mehr über den Dienst erläutert wird, wie Sie Ihre Organisation auf die Registrierung vorbereiten, wie Sie mit dem Service beginnen und danach den Betrieb fortsetzen, einschließlich der Frage, wie Sie und Ihre Benutzer bei Bedarf problemlos Hilfe erhalten können. Wenn Sie bereits bereit sind, an Bord zu kommen, wenden Sie sich zunächst an Ihr [lokales Account-Team](https://pages.email.office.com/contactmmd/).

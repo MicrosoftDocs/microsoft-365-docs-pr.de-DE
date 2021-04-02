@@ -241,6 +241,8 @@
           href: manage/pin-apps-to-app-launcher.md
         - name: Aktualisieren Sie Benutzer auf die neuesten Apps
           href: setup/upgrade-users-to-latest-office-client.md
+        - name: Testen und Bereitstellen der Microsoft 365 Apps im Microsoft 365 Admin Center
+          href: manage/test-and-deploy-microsoft-365-apps.md
         - name: Zentrale Bereitstellung von Add-Ins
           items:
             - name: Anforderungen für die zentralisierte Bereitstellung von Add-Ins

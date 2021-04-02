@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f3dac57961308cc10bdb53a01745e6659bfaaded
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4883a4f04f06774d02aa0d942edc841867eb36b6
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067936"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499523"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>Proaktive Suche nach Bedrohungen mit erweiterter Suche
 
@@ -43,7 +43,7 @@ Sehen Sie sich dieses Video an, um einen schnellen Überblick über die erweiter
 Sie können die gleichen Abfragen für die Bedrohungssuche verwenden, um benutzerdefinierte Erkennungsregeln zu erstellen. Diese Regeln werden automatisch ausgeführt, um nach verdächtigen Sicherheitsverletzungen, falsch konfigurierten Computern und anderen Erkenntnissen zu suchen und darauf zu reagieren.
 
 >[!TIP]
->Verwenden [Sie die erweiterte Suche in Microsoft Threat Protection,](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview) um mithilfe von Daten von Defender for Endpoint, Microsoft Defender für Office 365, Microsoft Cloud App Security und Microsoft Defender for Identity nach Bedrohungen zu fahnen. [Aktivieren von Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/mtp-enable)
+>Verwenden [Sie die erweiterte Suche in Microsoft Threat Protection,](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview) um mithilfe von Daten von Defender for Endpoint, Microsoft Defender für Office 365, Microsoft Cloud App Security und Microsoft Defender for Identity nach Bedrohungen zu fahnen. [Microsoft 365 Defender aktivieren](https://docs.microsoft.com/microsoft-365/security/defender/mtp-enable)
 
 ## <a name="get-started-with-advanced-hunting"></a>Erste Schritte mit der erweiterten Suche
 

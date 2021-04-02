@@ -1,5 +1,5 @@
 ---
-title: Webschutz
+title: Internetschutz
 description: Erfahren Sie mehr über den Webschutz in Microsoft Defender ATP und darüber, wie Sie Ihre Organisation schützen können.
 keywords: Webschutz, Schutz vor Webbedrohungen, Browsen im Web, Sicherheit, Phishing, Schadsoftware, Exploit, Websites, Netzwerkschutz, Edge, Internet Explorer, Chrome, Firefox, Webbrowser, schädliche Websites
 search.product: eADQiWindows 10XVcnh
@@ -8,22 +8,22 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 059f960bae8a5a00f678bb6f52ef217b4f8ed7d6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 4c04ce3479ac995e59c3bdfa9a2bdcca87eca17b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185993"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499923"
 ---
-# <a name="web-protection"></a>Webschutz
+# <a name="web-protection"></a>Internetschutz
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ Webschutz in Microsoft Defender for Endpoint [](web-threat-protection.md) ist ei
 
 ![Abbildung aller Webschutzkarten](images/web-protection.png)
 
-## <a name="web-threat-protection"></a>Schutz vor Webbedrohungen
+## <a name="web-threat-protection"></a>Internet-Bedrohungsschutz
 
 Die Karten, die den Schutz von Webbedrohungen darstellen, sind **Erkennungen** von Webbedrohungen im Laufe der Zeit und **Zusammenfassung von Webbedrohungen.**
 
@@ -47,7 +47,7 @@ Der Schutz von Webbedrohungen umfasst:
 - Untersuchungsfunktionen über webbezogene Bedrohungsaktivitäten durch Warnungen und umfassende Profile von URLs und den Geräten, die auf diese URLs zugreifen
 - Eine vollständige Reihe von Sicherheitsfeatures, die allgemeine Zugriffstrends auf schädliche und unerwünschte Websites nachverfolgen
 
-## <a name="web-content-filtering"></a>Filtern von Webinhalten
+## <a name="web-content-filtering"></a>Internet-Inhaltsfilterung
 
 Die Karten, die die Webinhaltsfilterung umfassen, sind **Webaktivität nach** Kategorie, Zusammenfassung der **Webinhaltsfilterung** und **Zusammenfassung der Webaktivität.**
 
@@ -60,5 +60,5 @@ Die Webinhaltsfilterung umfasst:
 
 Thema | Beschreibung
 :---|:---
-[Schutz vor Webbedrohungen](web-threat-protection.md) | Beenden Sie den Zugriff auf Phishingwebsites, Schadsoftwarevektoren, Exploitwebsites, nicht vertrauenswürdige websites oder Websites mit niedriger Reputation sowie websites, die Sie blockiert haben.
-[Filtern von Webinhalten](web-content-filtering.md) | Verfolgen und regeln Sie den Zugriff auf Websites basierend auf ihren Inhaltskategorien.
+[Internet-Bedrohungsschutz](web-threat-protection.md) | Beenden Sie den Zugriff auf Phishingwebsites, Schadsoftwarevektoren, Exploitwebsites, nicht vertrauenswürdige websites oder Websites mit niedriger Reputation sowie websites, die Sie blockiert haben.
+[Internet-Inhaltsfilterung](web-content-filtering.md) | Verfolgen und regeln Sie den Zugriff auf Websites basierend auf ihren Inhaltskategorien.

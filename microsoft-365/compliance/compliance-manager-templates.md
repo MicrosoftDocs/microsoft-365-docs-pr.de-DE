@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zum Verwenden und Verwalten von Vorlagen zum Erstellen von Bewertungen in Microsoft Compliance Manager. Erstellen und Ändern von Vorlagen mithilfe einer formatierten Excel-Datei.
-ms.openlocfilehash: 2d95aa4172d80a81e8c635edb01ab56579513c53
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ac5fe5f0a62c3b20021a9829499d8cec9339f72a
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922785"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499021"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Arbeiten mit Bewertungsvorlagen im Compliance-Manager
 
@@ -38,17 +38,17 @@ Eine Vorlage ist ein Framework von Steuerelementen zum Erstellen einer Bewertung
 
 #### <a name="included-and-premium-templates"></a>Enthaltene und Premium-Vorlagen
 
-Die verfügbaren Vorlagen basieren auf dem Lizenzvertrag Ihrer Organisation ([Anzeigen von Lizenzierungsdetails](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)). Es gibt zwei Kategorien von Vorlagen: enthalten und Premium.
+Die verfügbaren Vorlagen basieren auf dem Lizenzvertrag Ihrer Organisation ([Anzeigen von Lizenzierungsdetails](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)). Es gibt zwei Kategorien von Vorlagen: enthalten und Premium.
 
 1. **Enthaltene** Vorlagen können im Rahmen des Lizenzvertrags Ihrer Organisation verwendet werden.
-2. **Premiumvorlagen** müssen erworben werden, um Bewertungen von diesen zu erstellen. Nach dem Kauf können Sie aus einer Vorlage nach Bedarf so viele Bewertungen erstellen.
+2. **Premiumvorlagen** müssen erworben werden, um Bewertungen von diesen zu erstellen. Nach dem Kauf können Sie aus einer Vorlage nach Bedarf so viele Bewertungen erstellen. [Erfahren Sie, wie Sie Premiumvorlagen kaufen können.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 #### <a name="active-and-inactive-templates"></a>Aktive und inaktive Vorlagen
 
 Vorlagen zeigen den Aktivierungsstatus entweder als aktiv oder inaktiv an:
 
 - Eine Vorlage wird als **aktiv betrachtet,** nachdem Sie eine Bewertung aus dieser Vorlage erstellt haben.
-- Eine Vorlage wird als **inaktiv** betrachtet, wenn Ihre Organisation sie nicht als Framework für eine Bewertung verwendet.
+- Eine Vorlage wird als **inaktiv** betrachtet, wenn Ihre Organisation sie nicht für eine Bewertung verwendet.
 
 Wenn Sie eine Premiumvorlage erwerben und eine Bewertung aus dieser erstellen, ist diese Vorlage ein Jahr aktiv. Ihr Kauf wird automatisch verlängert, es sei denn, Sie kündigen die Verlängerung.
 
@@ -60,7 +60,7 @@ Wenn Ihr Indikator beispielsweise 2/5 zeigt, bedeutet dies, dass Ihre Organisati
 
 Wenn Ihr Indikator 5/2 zeigt, bedeutet dies, dass Ihre Organisation ihre Grenzen überschreitet und 3 der verwendeten Premiumvorlagen erwerben muss.
 
-Weitere [Informationen finden Sie unter Compliance Manager Licensing Guidance.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+Weitere [Informationen finden Sie unter Compliance Manager Licensing Guidance.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 ## <a name="viewing-and-managing-templates-from-the-assessment-templates-page"></a>Anzeigen und Verwalten von Vorlagen auf der Seite "Bewertungsvorlagen"
 
@@ -220,7 +220,7 @@ Sie können **actionTitle** (Spalte A) nicht bearbeiten, da der Compliance-Manag
 
 #### <a name="change-an-improvement-actions-name"></a>Ändern des Namens einer Verbesserungsaktion
 
-Wenn Sie den Namen einer Verbesserungsaktion ändern möchten, müssen Sie in der Tabelle explizit festlegen, dass Sie einen vorhandenen Namen durch einen neuen Namen ersetzen. Gehen Sie wie folgt vor:
+Wenn Sie den Namen einer Verbesserungsaktion ändern möchten, müssen Sie in der Tabelle explizit festlegen, dass Sie einen vorhandenen Namen durch einen neuen Namen ersetzen. Führen Sie die folgenden Schritte aus:
 
 1. Fügen Sie **auf** der Registerkarte Aktionen ihrer Tabelle der Tabelle nach Spalte A eine neue Spalte hinzu.
 2. In dieser neuen Spalte, die jetzt Spalte B ist, wird die Kopfzeile in Zeile 1: **oldActionTitle angezeigt.**

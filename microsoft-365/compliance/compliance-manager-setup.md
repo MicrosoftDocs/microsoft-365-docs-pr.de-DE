@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Festlegen von Microsoft Compliance Manager-Benutzerberechtigungen und -rollen und Konfigurieren automatisierter Tests von Aktionen. Verwalten Sie den Benutzerverlauf, und filtern Sie Ihre Dashboardansicht.
-ms.openlocfilehash: 3b32ac5a82bbc726c5bf61859266e0561ca7f53c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4558f6b2a75f1635c7984b386f217efa148b22af
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199218"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499036"
 ---
 # <a name="get-started-with-compliance-manager"></a>Erste Schritte mit Compliance-Manager
 
@@ -32,7 +32,7 @@ ms.locfileid: "51199218"
 
 Compliance Manager ist für Organisationen mit Office 365- und Microsoft 365-Lizenzen sowie für Moderate und GCC High-Kunden der US Government Community Cloud (GCC) verfügbar. Bewertungsverfügbarkeit und Verwaltungsfunktionen hängen von Ihrem Lizenzvertrag ab.  [Anzeigen von Dienstbeschreibungsdetails](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Der globale Microsoft 365-Administrator für Ihre Organisation ist wahrscheinlich der erste Benutzer, der auf den Compliance-Manager zu zugegriffen hat. Es wird empfohlen, dass sich der globale Administrator anmeldet und Benutzerberechtigungen wie unten beschrieben festlegen, wenn er den Compliance-Manager zum ersten Mal besucht.
 
@@ -91,7 +91,7 @@ In der folgenden Tabelle sind die Funktionen aufgeführt, die von den einzelnen 
 | :------------- | :-------------: | :------------: |
 | **Daten lesen, aber nicht bearbeiten**| Compliance-Manager-Leser  | Azure AD Global Reader, Security Reader | 
 | **Bearbeiten von Daten**| Compliance-Manager-Beitrag | Complianceadministrator | 
-| **Bearbeiten von Testergebnissen**| Compliance-Manager-Bewertung | Complianceadministrator | 
+| **Bearbeiten von Testergebnissen**| Compliance-Manager-Sachverständiger | Complianceadministrator | 
 | **Verwalten von Bewertungen sowie Vorlagen- und Mandantendaten**| Verwaltung des Compliance-Managers | Complianceadministrator, Compliancedatenadministrator, Sicherheitsadministrator  | 
 | **Zuweisen von Benutzern**| Globaler Administrator | Globaler Administrator | 
 

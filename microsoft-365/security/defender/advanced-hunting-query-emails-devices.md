@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e494bfe57c31c1d5044f72a8adb3e2548d531604
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0fb8bb54e6a893fb434fe453c70ed38b8e8ccb30
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199149"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499314"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Gefahrensuche über Geräte, E-Mails, Apps und Identitäten hinweg
 

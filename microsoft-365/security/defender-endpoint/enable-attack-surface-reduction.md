@@ -1,5 +1,5 @@
 ---
-title: Aktivieren von Regeln zur Reduzierung der Angriffsfläche
+title: Aktivieren der Regeln zur Verringerung der Angriffsfläche
 description: Aktivieren Sie Regeln zur Reduzierung der Angriffsfläche (Attack Surface Reduction, ASR), um Ihre Geräte vor Angriffen zu schützen, die Makros, Skripts und allgemeine Einspritztechniken verwenden.
 keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, enable, turn on
 search.product: eADQiWindows 10XVcnh
@@ -14,14 +14,14 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 1deec767c6af777b23ab5a91c9e719f690e0c048
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: bf4fa88b3fbbf5d977d54a78c480129665049b23
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165141"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499402"
 ---
-# <a name="enable-attack-surface-reduction-rules"></a>Aktivieren von Regeln zur Reduzierung der Angriffsfläche
+# <a name="enable-attack-surface-reduction-rules"></a>Aktivieren der Regeln zur Verringerung der Angriffsfläche
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -137,7 +137,7 @@ Beispiel:
 
 2. Wechseln Sie **im Gruppenrichtlinienverwaltungs-Editor** zu **Computerkonfiguration,** und wählen Sie **Administrative Vorlagen aus.**
 
-3. Erweitern Sie die Struktur **auf Windows-Komponenten**  >  **Microsoft Defender Antivirus** Windows Defender Exploit  >  **Guard** Attack Surface  >  **Reduction**.
+3. Erweitern Sie die Struktur auf **Windows-Komponenten**  >  **Microsoft Defender Antivirus** Microsoft Defender Exploit  >  **Guard** Attack  >  **Surface Reduction**.
 
 4. Wählen **Sie Attack surface reduction rules konfigurieren aus,** und wählen Sie Aktiviert **aus.** Anschließend können Sie den einzelnen Status für jede Regel im Abschnitt Optionen festlegen.
 
@@ -211,4 +211,4 @@ Beispiel:
 
 - [Bewerten der Reduzierung der Angriffsfläche](evaluate-attack-surface-reduction.md)
 
-- [Häufig gestellte Fragen zur Reduzierung der Angriffsfläche](attack-surface-reduction.md)
+- [FAQ zu Verringerung der Angriffsfläche](attack-surface-reduction.md)
