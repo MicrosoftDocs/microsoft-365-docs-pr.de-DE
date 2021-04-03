@@ -2,8 +2,8 @@
 title: Einrichten von Outlook für E-Mail
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Outlook für Ihre Microsoft 365-E-Mail einrichten.
-ms.openlocfilehash: b27f59e50190a4f355ff1f4c346161b8efc4219e
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 9dc0ed41df4aaadee060e0c7606600ba5512df09
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421991"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578639"
 ---
 # <a name="set-up-outlook-for-microsoft-365-for-business-email"></a>Einrichten von Outlook für Microsoft 365 Business-E-Mails 
 

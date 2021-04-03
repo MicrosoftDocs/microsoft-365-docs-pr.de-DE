@@ -2,8 +2,8 @@
 title: Planen eines Ereignisses mit Microsoft Planner
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie ein Ereignis mit Microsoft Planner planen.
-ms.openlocfilehash: 11453ae83f636e20cd67cc7a4202e8d6995e09a1
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a1fe282b7edc9d52db643b47a5dc15a214588e10
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422303"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578723"
 ---
 # <a name="use-microsoft-planner-to-plan-an-event"></a>Planen eines Ereignisses mithilfe von Microsoft Planner
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie Microsoft Compliance Configuration Analyzer verwenden, um mit Microsoft Compliance Manager schnell in Betrieb zu gehen.
-ms.openlocfilehash: a77f38dcc0c0215e539c868e47135f5d7194f4b6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b91ac274d7270f5be9530742cf711a3918b287d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906037"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570374"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Microsoft Compliance Configuration Analyzer for Compliance Manager (Vorschau)
 
@@ -33,7 +33,7 @@ MCCA kann Ihnen dabei helfen, schnell zu erkennen, welche Verbesserungsmaßnahme
 
 Eine weitere Ressource zum Verständnis von MCCA ist der Besuch der [README-Anweisungen auf GitHub](https://github.com/OfficeDev/MCCA#overview). Diese Seite enthält detaillierte Informationen zu den Voraussetzungen und enthält vollständige Installationsanweisungen. Sie benötigen kein GitHub-Konto, um auf diese Seite zu zugreifen.
 
-**Verfügbarkeit**: MCCA ist für alle Organisationen mit Office 365- und Microsoft 365-Lizenzen und GCC (US Government Community) moderaten und GCC High-Kunden verfügbar, mit Plänen zur Erweiterung des Diensts für DOD-Kunden.
+**Verfügbarkeit**: MCCA ist für alle Organisationen mit Office 365- und Microsoft 365-Lizenzen und Kunden der US Government Community (GCC) Moderate, GCC High und Department of Defense (DoD) verfügbar.
 
 ## <a name="install-mcca-and-run-a-report"></a>Installieren von MCCA und Ausführen eines Berichts
 
@@ -113,7 +113,7 @@ Führen Sie die folgenden Anweisungen aus, um einen Bericht basierend auf einem 
   | 10   | Südamerika |
   | 11 | Südafrika |
   | 12  | Schweiz |
-  | 13  | Vereinigte Arabische Emirate |
+  | 13 | Vereinigte Arabische Emirate |
   | 14  | Vereinigtes Königreich |
 
 
@@ -129,11 +129,11 @@ Die folgende Tabelle zeigt, welche Rollen Zugriff auf welche Abschnitte des Beri
 ![MCCA – Rollen](../media/compliance-manager-mcca-roles.png "MCCA-Rollen")
 
 Ausnahmen:
-1. Der Benutzer kann unabhängig vom Abschnitt "Verwenden von IRM für Exchange Online" keinen Bericht für IP generieren.
-2. Der Benutzer kann unabhängig vom Abschnitt "Verwenden von IRM für Exchange Online" einen Bericht für IP generieren.
-3. Der Benutzer kann unabhängig vom Abschnitt "Enable Communication Compliance in O365" einen Bericht für IP generieren.
-4. Der Benutzer kann keinen Bericht für IP generieren, abgesehen vom Abschnitt "Überwachung in Office 365 aktivieren".
-5. Der Benutzer kann den Bericht für IP außerhalb des Abschnitts "Überwachung in Office 365 aktivieren" generieren.
+1. Abgesehen vom Abschnitt "Verwenden von IRM für Exchange Online" können Benutzer keinen Bericht für IP generieren.
+2. Benutzer können unabhängig vom Abschnitt "Verwenden von IRM für Exchange Online" berichte für IP generieren.
+3. Benutzer können unabhängig vom Abschnitt "Kommunikationskonformität in O365 aktivieren" berichte für IP generieren.
+4. Benutzer können keinen Bericht für IP generieren, abgesehen vom Abschnitt "Überwachung in Office 365 aktivieren".
+5. Benutzer können den Bericht für IP außerhalb des Abschnitts "Überwachung in Office 365 aktivieren" generieren.
 
 #### <a name="solutions-summary-section"></a>Abschnitt "Lösungszusammenfassung"
 

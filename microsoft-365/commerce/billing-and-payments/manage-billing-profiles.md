@@ -20,21 +20,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Abrechnungsprofile Rechnungen unterstützen.
-ms.openlocfilehash: 2f56b9a3edbbbe14927df64bed8b699a68826c9e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7f4c0aed1bccd0e5df5b09e15e6201933e937993
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911866"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576949"
 ---
 # <a name="understand-billing-profiles"></a>Informationen zu Abrechnungsprofilen
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Für kommerzielle Kunden, die Produkte und Dienste von Microsoft kaufen, können Sie mit Abrechnungsprofilen anpassen, welche Elemente in Ihrer Rechnung enthalten sind und wie Sie Ihre Rechnungen bezahlen.
 

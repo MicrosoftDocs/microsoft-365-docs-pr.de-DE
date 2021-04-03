@@ -2,8 +2,8 @@
 title: Senden verschlüsselter E-Mail-Nachrichten
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 ms.date: 9/20/2018
 ms.audience: Admin
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Erfahren Sie, wie Sie verschlüsselte E-Mails mit Outlook senden.
-ms.openlocfilehash: af34d632ead2ae1e6ed81845c56b95b95af1dc51
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 209734bd52d1d97278d5632f035723758fe2e016
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911979"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576973"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Verschlüsseln oder beschriften Sie Ihre vertraulichen E-Mails
 

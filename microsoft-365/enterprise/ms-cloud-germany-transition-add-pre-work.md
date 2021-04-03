@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
-ms.openlocfilehash: fb352c17d9868cf5c42034e198be63b6e0543dbb
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
-ms.translationtype: MT
+ms.openlocfilehash: 9f5a38eae6d42f992879f97b8e8e1e8e6c4d56c3
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445602"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476349"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Vorbereitung für die Migration von Microsoft Cloud Deutschland
 
@@ -102,25 +102,26 @@ Lesen und Anwenden der [ADFS-Migrationsschritte](ms-cloud-germany-transition-add
 
 <!-- before phase 5 -->
 
-**Gilt für**: Exchange Online-Kunden, die die Freigabe von Kalendern und Verfügbarkeitsadressraum aktiviert haben<br>
+**Gilt für:** Exchange Online-Kunden<br>
 **Bei Anwendung**: Jederzeit vor Ende der Phase 9
 
 | Schritte: | Beschreibung | Auswirkung |
 |:-------|:-------|:-------|
-| Benachrichtigen Sie externe Partner über den bevorstehenden Umstieg zu Office 365-Diensten. | Verfügbare Adressraumkonfigurationen ermöglichen die Freigabe von Frei-/Gebucht-Informationen mit Office 365. | Wenn dies nicht ausgeführt wird, kann dies in einer späteren Phase der Kundenmigration zu einem Dienst- oder Clientausfall führen. |
+| Benachrichtigen Sie externe Partner über den bevorstehenden Umstieg zu Office 365-Diensten. |  Kunden müssen ihre Partner benachrichtigen, für die sie die Kalenderfreigabe und die Adressraumverfügbarkeitskonfiguration aktiviert haben (ermöglichen des Teilens von Frei/Gebucht-Informationen mit Office 365). Die Verfügbarkeitskonfiguration muss umgestellt werden, damit die [weltweiten Office 365-Endpunkte](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) verwendet werden, wenn die Exchange Online-Migration abgeschlossen wird. | Ohne Umstellung kann es in einer späteren Phase der Kundenmigration zu einem Dienst- oder Clientausfall kommen. |
+| Benachrichtigen Sie Benutzer über erforderliche Änderungen am IMAP4-/POP3/SMTP-Client. | Benutzer, die Geräteverbindungen mit Microsoft Cloud Deutschland-Endpunkten für Clientprotokolle wie IMAP4, POP3 und SMTP haben, müssen ihre Clientgeräte manuell aktualisieren, um zu den [weltweiten Office 365-Endpunkten](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) zu wechseln. | Teilen Sie den Benutzern dieser Protokolle vorab diese Abhängigkeit mit, und stellen Sie sicher, dass sie während dieser Migration entweder zu Outlook Mobile oder Outlook im Web wechseln. Fehler beim Aktualisieren von Clientendpunkten führen zu Clientverbindungsfehlern mit Microsoft Cloud Deutschland, wenn Benutzerpostfächer migriert werden. |
 ||||
 
 ### <a name="exchange-online-hybrid-configuration"></a>Exchange Online Hybrid-Konfiguration
 
 **Gilt für:** Alle Kunden, die eine aktive Exchange-Hybridkonfiguration mit lokalen Exchange-Servern verwenden<br>
-**Anwendung :** Immer vor Beginn von Phase 5
+**Bei Anwendung**: Jederzeit vor Beginn der Phase 5
 
-Unternehmenskunden mit einer Hybridbereitstellung von Exchange Online und einer lokalen Exchange Server führen den Assistenten für die Hybridkonfiguration (Hybrid Configuration Wizard, HCW) aus, um die Hybrideinrichtung zu verwalten und zu einrichten. Beim Übergang von Microsoft Cloud Deutschland zur Office 365 Deutschland-Region muss der Administrator den neuesten Build von HCW im "Office 365 Deutschland"-Modus erneut ausführen, bevor die Exchange-Migration (Phase 5) beginnt. Führen Sie dann den HCW nach Abschluss von Phase 5 erneut im Modus "Office 365 Worldwide" aus, um die lokale Bereitstellung mit den Office 365 Deutschland-Regioneneinstellungen zu finalisieren.
+Enterprise-Kunden mit einer Hybridbereitstellung von Exchange Online und einem lokalen Exchange Server führen den Hybridkonfigurationsassistenten ( Hybrid Configuration Wizard, HCW) aus, um das Hybridsetup zu verwalten und einzurichten. Beim Umstieg von Microsoft Cloud Deutschland auf die Region „Office 365 Deutschland“ muss der Administrator den neuesten Build des Hybridkonfigurationsassistenten im Modus „Office 365 Deutschland“ erneut ausführen, bevor die Exchange-Migration (Phase 5) beginnt. Führen Sie nach Abschluss der Phase 5 den Hybridkonfigurationsassistenten erneut im Modus „Office 365 weltweit“ aus, um die lokale Bereitstellung mit den Regionseinstellungen „Office 365 Deutschland“ fertigzustellen.
 
 | Schritte: | Beschreibung | Auswirkung |
 |:-------|:-------|:-------|
-| (Pre-Stage 5) – Erneutes Ausführen von HCW mithilfe von Office 365 Deutschland-Einstellungen <br><br> <i>Sie können diese Aktivität unmittelbar nach Erhalt der Mitteilung vom Nachrichtencenter starten, dass die Migration Ihres Office 365-Mandanten begonnen hat (Phase 1).</i>| Wenn Sie HCW (17.0.5378.0 oder höher) vor Phase 5 deinstallieren und erneut ausführen, wird sichergestellt, dass Ihre lokale Konfiguration für das Senden und Empfangen von E-Mails mit Microsoft Cloud Deutschland-Benutzern und Benutzern bereit ist, die zu [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) Office 365 Deutschland migriert wurden. <p><li> Wählen Sie im HCW für das Listenfeld unter **Meine Office 365-Organisation,** die von gehostet wird, **Office 365 Deutschland aus.** | Wenn Sie diese Aufgabe nicht abschließen, bevor Phase 5 [Exchange Migration] beginnt, können unzuverl ndrs für E-Mails entstehen, die zwischen Ihrer lokalen Exchange-Bereitstellung und Office 365 geroutet werden.  
-| (Post-Stage 5) – Erneutes Ausführen von HCW mithilfe von Office 365 Worldwide-Einstellungen <br><br> <i>Sie können diese Aktivität starten, nachdem Sie die Benachrichtigung des Nachrichtencenters erhalten haben, dass Ihre Exchange-Migration abgeschlossen ist (Phase 5).</i>| Durch das Deinstallieren und erneute Ausführen von HCW nach Phase 5 wird die lokale Konfiguration für die Hybridkonfiguration mit [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) nur Office 365 global zurückgesetzt. <p><li> Wählen Sie im Listenfeld unter **Meine Office 365-Organisation,** die von gehostet wird, Die Option Office **365 Weltweit aus.** | Wenn Sie diese Aufgabe nicht vor Phase 9 [Migration Abgeschlossen] abschließen, können unzuverl ndrs für E-Mails entstehen, die zwischen Ihrer lokalen Exchange-Bereitstellung und Office 365 geroutet werden.  
+| (Vor Phase 5) – Erneutes Ausführen des Hybridkonfigurationsassistenten mithilfe der Einstellungen für „Office 365 Deutschland“ <br><br> <i>Sie können diese Aktivität unmittelbar nach Erhalt der Mitteilung des Nachrichtencenters, dass die Migration Ihres Office 365-Mandanten begonnen hat (Phase 1) starten.</i>| Durch Deinstallieren und erneutes Ausführen von des Hybridkonfigurationsassistenten (Version 17.0.5378.0 oder höher) in [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) vor Phase 5 wird sichergestellt, dass Ihre lokale Konfiguration für das Senden und Empfangen von E-Mails sowohl für Benutzer von Microsoft Cloud Deutschland als auch für Benutzer, die zur Region „Office 365 Deutschland” migriert sind, vorbereitet ist. <p><li> Wählen Sie im Hybridkonfigurationsassistenten im untenstehenden Listenfeld **Meine Office 365-Organisation wird von gehostet von** **Office 365 Deutschland** aus. | Wenn Sie diese Aufgabe nicht vor Beginn der Phase 5 [Exchange-Migration] abschließen, können Unzustellbarkeitsberichte (NDRs) für E-Mails auftreten, die zwischen Ihrer lokalen Exchange-Bereitstellung und Office 365 geroutet werden.  
+| (Nach Phase 5) – Erneutes Ausführen des Hybridkonfigurationsassistenten mithilfe der Einstellungen für „Office 365 weltweit“ <br><br> <i>Sie können diese Aktivität nach Erhalt der Nachrichtencentermitteilung starten, dass die Exchange-Migration abgeschlossen ist (Phase 5).</i>| Durch das Deinstallieren und erneute Ausführen des Hybridkonfigurationsassistenten in [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) nach Phase 5 wird die lokale Konfiguration für die Hybridkonfiguration auf „Office 365 weltweit“ zurückgesetzt. <p><li> Wählen Sie im Hybridkonfigurationsassistenten im untenstehenden Listenfeld **Meine Office 365-Organisation wird von gehostet von** **Office 365 weltweit** aus. | Wenn Sie diese Aufgabe nicht vor Beginn der Phase 9 [Migration abgeschlossen] abschließen, können Unzustellbarkeitsberichte (NDRs) für E-Mails auftreten, die zwischen Ihrer lokalen Exchange-Bereitstellung und Office 365 geroutet werden.  
 | Einrichten eines lokalen AuthServers, der auf den globalen Sicherheitstokendienst (STS) für die Authentifizierung verweist | Auf diese Weise wird sichergestellt, dass Authentifizierungsanforderungen für Exchange-Verfügbarkeitsanforderungen für Benutzer mit Migrationsstatus, die auf die lokale Hybridumgebung ausgerichtet sind, für den Zugriff auf den lokalen Dienst authentifiziert sind. Auf ähnliche Weise stellt dies die Authentifizierung von Anforderungen von lokalen zu Office 365-Globalen Dienstendpunkten sicher. | Nach Abschluss der Azure AD-Migration (Phase 2) muss der Administrator der lokalen Exchange-(Hybrid-)Topologie einen neuen Authentifizierungsdienstendpunkt für die Office 365-Globalen Dienste hinzufügen. Ersetzen Sie mit diesem Befehl von Exchange PowerShell `<TenantID>` durch die Mandanten-ID Ihrer Organisation im Azure-Portal unter Azure Active Directory.<br>`New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<TenantId>/metadata/json/1`<br> Wenn Sie diese Aufgabe nicht ausführen, kann es sein, dass die Frei/Gebucht-Hybridanforderungen keine Informationen für Postfachbenutzer bereitstellen, die von Microsoft Cloud Deutschland zu Office 365-Diensten migriert wurden.  |
 ||||
 

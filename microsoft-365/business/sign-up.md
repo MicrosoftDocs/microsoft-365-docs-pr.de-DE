@@ -2,8 +2,8 @@
 title: Anmelden bei Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Erfahren Sie, was Microsoft 365 Business Premium umfasst, und erhalten Sie schrittweise Anleitungen bei der Anmeldung für Microsoft 365 Business Premium.
-ms.openlocfilehash: 54a8e92ccced24f446e73a96f75e4aa1531a95aa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4aa1ae9ea48863434c960da69e41ffb2d3a0a89
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912508"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578105"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>Anmelden bei Microsoft 365 Business Premium
 
@@ -62,7 +62,7 @@ Führen Sie die folgenden Schritte aus, um Microsoft 365 für Ihr Unternehmen zu
 2. Auf der nächsten Seite finden Sie die monatlichen Kosten, und scrollen Sie dann nach unten auf der Seite, um mehr über die in Microsoft 365 enthaltenen Informationen zu erfahren. Wählen Sie unter Microsoft 365 Business Premium jetzt **kaufen aus.**
 3. Geben Sie auf der Seite Vielen **Dank für die Auswahl von Microsoft 365 Business Premium** Ihre Informationen ein, um zu beginnen.
 4. Geben **Sie in Schritt 1** eine E-Mail-Adresse ein, die Sie bereits verwenden. Dies kann Ihre aktuelle E-Mail-Adresse für Ihre Arbeit oder eine beliebige Adresse sein, die Microsoft für die Kommunikation mit Ihnen während des Setups verwenden soll. Es ist auch die Adresse, an der wir Ihnen Informationen zu Ihrer Rechnung und Verlängerungen senden. Wählen Sie dann Konto **einrichten aus.**
-5. Geben **Sie in Schritt 2** Ihren Namen, Ihre Geschäftliche Telefonnummer, ihren Firmennamen und Ihren Standort ein. Ihr Land oder Ihre Region bestimmt die genauen Dienste, die Sie von Microsoft erhalten, und kann nach Abschluss dieses Schritts nicht geändert werden. Wählen Sie **Weiter** aus.
+5. Geben **Sie in Schritt 2** Ihren Namen, Ihre Geschäftliche Telefonnummer, ihren Firmennamen und Ihren Standort ein. Ihr Land oder Ihre Region bestimmt die genauen Dienste, die Sie von Microsoft erhalten, und kann nach Abschluss dieses Schritts nicht geändert werden. Klicken Sie auf **Weiter**.
     > [!NOTE]
     > Wir zeigen Ihren Firmennamen im Admin Center an. Hier verwalten Sie Microsoft 365-Benutzer, Lizenzen und so weiter. Wir fügen sie auch in alle internen (SharePoint)-Website-URLs ein.
 6. In **Schritt 3**:

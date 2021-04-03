@@ -21,21 +21,14 @@ ms.custom:
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 44cb7b09c76ee5e49d2f556df104e55150212f30
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 582ecb0f9b46d877c30aa29334b30b9209c93993
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911782"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576937"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Bezahlen Ihres Abonnements
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Die Bezahlung eines Abonnements kann über eine Kreditkarte, eine Debitkarte oder ein Bankkonto erfolgen. In einigen Fällen können Sie per Rechnung, per Scheck oder über elektronische Überweisungen (EFT) bezahlen. Wenn Sie über ein Abrechnungsprofil verfügen, unterscheiden sich Ihre Optionen geringfügig. Weitere Informationen finden Sie unter [So zahlen Sie für Ihr Abonnement mit einem Abrechnungsprofil](pay-for-subscription-billing-profile.md). Wenn Sie nicht genau wissen, ob Ihr Konto über ein Abrechnungsprofil verfügt, lesen Sie [Informationen zu Abrechnungsprofilen](manage-billing-profiles.md).
 

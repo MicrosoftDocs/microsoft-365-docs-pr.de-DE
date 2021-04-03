@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Administratoren können die Unterstützung von Vertraulichkeitsbezeichnungen für Word-, Excel- und #A0 in SharePoint und OneDrive aktivieren.'
-ms.openlocfilehash: b4c6a0e3bbe9bae60bc3ccc7fceea04c65382373
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c4b77b8f66d31bc735d04d2b232964ce35ab4ddb
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919541"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569814"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Aktivieren Sie Vertraulichkeitsbezeichnungen für #A0 in SharePoint und OneDrive, damit Benutzer Ihre Vertraulichkeitsbezeichnungen [in](sensitivity-labels.md) Office im Web anwenden können. Wenn dieses Feature aktiviert ist,  wird den Benutzern die Schaltfläche Vertraulichkeit auf dem Menüband angezeigt, damit sie Bezeichnungen anwenden und einen beliebigen angewendeten Bezeichnungsnamen auf der Statusleiste sehen können.
+Aktivieren Sie Vertraulichkeitsbezeichnungen für #A0 in SharePoint und OneDrive, damit Benutzer [Ihre](sensitivity-labels.md) Vertraulichkeitsbezeichnungen in Office für das Web anwenden können. Wenn dieses Feature aktiviert ist,  wird den Benutzern die Schaltfläche Vertraulichkeit auf dem Menüband angezeigt, damit sie Bezeichnungen anwenden und einen beliebigen angewendeten Bezeichnungsnamen auf der Statusleiste sehen können.
 
 Das Aktivieren dieses Features führt auch dazu, dass SharePoint und OneDrive den Inhalt von Dateien verarbeiten können, die mithilfe einer Vertraulichkeitsbezeichnung verschlüsselt wurden. Die Bezeichnung kann in Office für das Web oder in #A0 angewendet und in SharePoint und OneDrive hochgeladen oder gespeichert werden. Bis Sie dieses Feature aktivieren, können diese Dienste keine verschlüsselten Dateien verarbeiten, was bedeutet, dass die gemeinsame Dokumentierung, eDiscovery, Verhinderung von Datenverlust, die Suche und andere funktionen für die Zusammenarbeit für diese Dateien nicht funktionieren.
 
@@ -40,7 +40,7 @@ Nachdem Sie Vertraulichkeitsbezeichnungen für #A0 in SharePoint und OneDrive ak
 
 - Wenn Benutzer mit Bezeichnungen und verschlüsselten Dateien nach SharePoint oder OneDrive hochladen, müssen sie mindestens über Anzeigerechte für diese Dateien verfügen. Beispielsweise können sie die Dateien außerhalb von SharePoint öffnen. Wenn sie nicht über dieses Mindestnutzungsrecht verfügen, ist der Upload erfolgreich, aber der Dienst erkennt die Bezeichnung nicht und kann den Dateiinhalt nicht verarbeiten.
 
-- Verwenden Sie Office im Web (Word, Excel, PowerPoint), um Office-Dateien mit Vertraulichkeitsbezeichnungen zu öffnen und zu bearbeiten, die Verschlüsselung anwenden. Die berechtigungen, die mit der Verschlüsselung zugewiesen wurden, werden erzwungen. Sie können auch [die automatische Bezeichnung für](apply-sensitivity-label-automatically.md) diese Dokumente verwenden.
+- Verwenden Sie Office für das Web (Word, Excel, PowerPoint), um Office-Dateien mit Vertraulichkeitsbezeichnungen zu öffnen und zu bearbeiten, die Verschlüsselung anwenden. Die berechtigungen, die mit der Verschlüsselung zugewiesen wurden, werden erzwungen. Sie können auch [die automatische Bezeichnung für](apply-sensitivity-label-automatically.md) diese Dokumente verwenden.
 
 - Externe Benutzer können mithilfe von Gastkonten auf Dokumente zugreifen, die mit Verschlüsselung gekennzeichnet sind. Weitere Informationen finden Sie unter [Support for external users and labeled content](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content). 
 
@@ -86,26 +86,26 @@ Verwenden Sie die #A0 Version 19.002.0121.0008 oder höher unter Windows und Ver
     - **Benutzerzugriff auf Inhalte läuft ab** ist auf einen anderen Wert als **Nie** eingestellt.
     - **Verschlüsselung mit Doppelschlüssel** ist ausgewählt.
     
-    Bei Bezeichnungen mit einer dieser Verschlüsselungskonfigurationen werden die Bezeichnungen benutzern in Office im Web nicht angezeigt. Darüber hinaus können die neuen Funktionen nicht mit mit Bezeichnungen versehenen Dokumenten verwendet werden, die bereits über diese Verschlüsselungseinstellungen verfügen. Beispielsweise werden diese Dokumente nicht in Suchergebnissen zurückgegeben, auch wenn sie aktualisiert werden.
+    Bei Bezeichnungen mit einer dieser Verschlüsselungskonfigurationen werden die Bezeichnungen benutzern in Office für das Web nicht angezeigt. Darüber hinaus können die neuen Funktionen nicht mit mit Bezeichnungen versehenen Dokumenten verwendet werden, die bereits über diese Verschlüsselungseinstellungen verfügen. Beispielsweise werden diese Dokumente nicht in Suchergebnissen zurückgegeben, auch wenn sie aktualisiert werden.
+
+- Möglicherweise kommt es zu Verzögerungen beim Öffnen verschlüsselter Dokumente im folgenden Save As-Szenario: Bei Verwendung einer Desktopversion von Office wählt ein Benutzer Speichern unter für ein Dokument mit einer Vertraulichkeitsbezeichnung aus, die verschlüsselungs gilt. Der Benutzer wählt SharePoint oder OneDrive für den Speicherort aus und versucht dann sofort, dieses Dokument in Office für das Web zu öffnen. Wenn der Dienst die Verschlüsselung weiterhin verarbeitet, wird dem Benutzer eine Meldung angezeigt, dass das Dokument in seiner Desktop-App geöffnet werden muss. Wenn sie es in ein paar Minuten erneut versuchen, wird das Dokument erfolgreich in Office für das Web geöffnet. 
 
 - Bei verschlüsselten Dokumenten wird das Drucken nicht unterstützt.
 
 - Bei einem verschlüsselten Dokument, das einem Benutzer Bearbeitungsberechtigungen erteilt, kann das Kopieren in den Webversionen der Office-Apps nicht blockiert werden.
-
-- Die Azure Information Protection-Dokumentverfolgungswebsite wird nicht unterstützt.
 
 - Standardmäßig unterstützen Office-Desktop-Apps und mobile Apps die gemeinsamen Erstellung von Dateien, die mit Verschlüsselung gekennzeichnet sind, nicht. Diese Apps öffnen weiterhin mit Bezeichnungen versehene und verschlüsselte Dateien im exklusiven Bearbeitungsmodus.
     
     > [!NOTE]
     > Die co-authoring wird jetzt in der Vorschau unterstützt. Weitere Informationen finden Sie unter Aktivieren der gemeinsamen Erstellung von [Dateien, die mit Vertraulichkeitsbezeichnungen verschlüsselt sind.](sensitivity-labels-coauthoring.md)
 
-- Wenn ein Administrator Einstellungen für eine veröffentlichte Bezeichnung ändert, die bereits auf Dateien angewendet wird, die auf den Synchronisierungsclient der Benutzer heruntergeladen wurden, können Benutzer änderungen, die sie an der Datei vornehmen, möglicherweise nicht in ihrem OneDrive-Synchronisierungsordner speichern. Dieses Szenario gilt für Dateien, die mit Verschlüsselung gekennzeichnet sind, und auch, wenn die Bezeichnungsänderung von einer Bezeichnung ist, die keine Verschlüsselung auf eine Bezeichnung angewendet hat, die Verschlüsselung angewendet hat. Benutzern wird ein [roter Kreis mit einem Weißkreuzsymbolfehler](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)angezeigt, und sie werden aufgefordert, neue Änderungen als separate Kopie zu speichern. Stattdessen können sie die Datei schließen und erneut öffnen oder Office im Web verwenden.
+- Wenn ein Administrator Einstellungen für eine veröffentlichte Bezeichnung ändert, die bereits auf Dateien angewendet wird, die auf den Synchronisierungsclient der Benutzer heruntergeladen wurden, können Benutzer änderungen, die sie an der Datei vornehmen, möglicherweise nicht in ihrem OneDrive-Synchronisierungsordner speichern. Dieses Szenario gilt für Dateien, die mit Verschlüsselung gekennzeichnet sind, und auch, wenn die Bezeichnungsänderung von einer Bezeichnung ist, die keine Verschlüsselung auf eine Bezeichnung angewendet hat, die Verschlüsselung angewendet hat. Benutzern wird ein [roter Kreis mit einem Weißkreuzsymbolfehler](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)angezeigt, und sie werden aufgefordert, neue Änderungen als separate Kopie zu speichern. Stattdessen können sie die Datei schließen und erneut öffnen oder Office für das Web verwenden.
 
-- Wenn ein mit Bezeichnungen versehenes Dokument in SharePoint oder OneDrive hochgeladen wird und die Bezeichnung Verschlüsselung mithilfe eines Kontos aus einem Dienstprinzipalnamen angewendet hat, kann das Dokument nicht in Office im Web geöffnet werden. Beispielszenarien sind Microsoft Cloud App Security und eine Datei, die per E-Mail an Teams gesendet wird.
+- Wenn ein mit Bezeichnungen versehenes Dokument in SharePoint oder OneDrive hochgeladen wird und die Bezeichnung die Verschlüsselung mithilfe eines Kontos aus einem Dienstprinzipalnamen angewendet hat, kann das Dokument nicht in Office für das Web geöffnet werden. Beispielszenarien sind Microsoft Cloud App Security und eine Datei, die per E-Mail an Teams gesendet wird.
 
 - Benutzer können Probleme beim Speichern nach dem Offlinemodus oder im Ruhemodus auftreten, wenn sie anstelle von Office für das Web die Desktop- und mobilen Apps für Word, Excel oder PowerPoint verwenden. Wenn diese Benutzer ihre Office-App-Sitzung fortsetzen und versuchen, Änderungen zu speichern, wird eine Uploadfehlernachricht mit der Option angezeigt, eine Kopie zu speichern, anstatt die Originaldatei zu speichern. 
 
-- Dokumente, die auf folgende Weise verschlüsselt wurden, können in Office im Web nicht geöffnet werden:
+- Dokumente, die auf folgende Weise verschlüsselt wurden, können in Office für das Web nicht geöffnet werden:
     - Verschlüsselung, die einen lokalen Schlüssel verwendet ("eigenen Schlüssel halten" oder HYOK)
     - Verschlüsselung, die mithilfe der [Doppelschlüsselverschlüsselung angewendet wurde](double-key-encryption.md)
     - Verschlüsselung, die unabhängig von einer Bezeichnung angewendet wurde, z. B. durch direktes Anwenden einer Vorlage zum Schutz der Rechteverwaltung.
@@ -200,9 +200,9 @@ Sie können jedoch beide Schutzlösungen zusammen verwenden, und das Verhalten l
 
 - Wenn Sie eine Datei mit einer Vertraulichkeitsbezeichnung hochladen, die Verschlüsselung angewendet wird, kann SharePoint den Inhalt dieser Dateien nicht verarbeiten, sodass die gemeinsame Dokumentsuche, eDiscovery, DLP und Suche für diese Dateien nicht unterstützt werden.
 
-- Wenn Sie eine Datei mit Office im Web beschriften, werden alle Verschlüsselungseinstellungen aus der Bezeichnung erzwungen. Für diese Dateien werden coauthoring, eDiscovery, DLP und Search unterstützt.
+- Wenn Sie eine Datei mit Office für das Web beschriften, werden alle Verschlüsselungseinstellungen aus der Bezeichnung erzwungen. Für diese Dateien werden coauthoring, eDiscovery, DLP und Search unterstützt.
 
-- Wenn Sie eine Datei herunterladen, die mit Office im Web beschriftet ist, wird die Bezeichnung beibehalten, und alle Verschlüsselungseinstellungen aus der Bezeichnung werden anstelle der IRM-Einschränkungseinstellungen erzwungen.
+- Wenn Sie eine Datei herunterladen, die mit Office für das Web beschriftet ist, wird die Bezeichnung beibehalten, und alle Verschlüsselungseinstellungen aus der Bezeichnung werden anstelle der IRM-Einschränkungseinstellungen erzwungen.
 
 - Wenn Sie eine Office- oder PDF-Datei herunterladen, die nicht mit einer Vertraulichkeitsbezeichnung verschlüsselt ist, werden IRM-Einstellungen angewendet.
 

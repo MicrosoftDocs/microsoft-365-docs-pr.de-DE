@@ -2,8 +2,8 @@
 title: Planen Sie eine Teams-Besprechung mit Gästen
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie eine Teams-Besprechung mit Gästen planen.
-ms.openlocfilehash: 8ac8ec610a60084b21809eef8c56d0619be4e43a
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 1a48fa290211507453004c54637e588ad9ad6759
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422231"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578699"
 ---
 # <a name="schedule-a-teams-meeting-with-guests"></a>Planen Sie eine Teams-Besprechung mit Gästen
 

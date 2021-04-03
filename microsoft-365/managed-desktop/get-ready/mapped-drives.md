@@ -1,6 +1,6 @@
 ---
 title: Voraussetzungen zugeordneter Laufwerke für Microsoft Managed Desktop
-description: Wichtige Schritte, um sicherzustellen, dass
+description: Wichtige Schritte, um sicherzustellen, dass Benutzer auf Daten auf zugeordneten Laufwerken zugreifen können
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: cd45d6155fc0e01f6a285f6182aa051281d160e0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: f770f5083fe9193660b03e7971b09a127f2dae16
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922908"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574559"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Voraussetzungen zugeordneter Laufwerke für Microsoft Managed Desktop
 
@@ -52,4 +53,16 @@ Stellen Sie sicher, dass zugeordnete Laufwerke nicht vermieden werden können, u
 2. Senden Sie eine Supportanfrage mit dem Titel "Bereitstellung zugeordneter Laufwerke" und geben Sie alle erforderlichen Dateifreigabedetails an.  
 3. Microsoft Managed Desktop IT Operations wird mithilfe von Supportanforderungsupdates darüber informieren, wann die Anforderung abgeschlossen wurde. Anfangs wird diese Konfiguration nur auf Geräten in der Testbereitstellungsgruppe bereitgestellt.  
 4. Sie müssen testen und bestätigen, ob die von den Microsoft Managed Desktop-IT-Vorgängen bereitgestellte Konfiguration wie erwartet funktioniert. Antworten Sie auf der Registerkarte Diskussion in den Details der gleichen Supportanfrage, um Microsoft Managed Desktop IT Operations zu benachrichtigen, sobald Sie ihre Tests abgeschlossen haben.  
-5. Das Microsoft Managed Desktop IT Operations-Team stellt die Konfiguration dann für die anderen Bereitstellungsgruppen zur Bereitstellung zur Seite.
+5. Das Microsoft Managed Desktop IT Operations-Team stellt die Konfiguration dann für die anderen Bereitstellungsgruppen zur Bereitstellung zur Seite. 
+
+## <a name="steps-to-get-ready"></a>Schritte für die ersten Schritte
+
+1. Überprüfen [Sie Voraussetzungen für Microsoft Managed Desktop](prerequisites.md).
+2. [Verwenden Sie Die Bereitschaftsbewertungstools](readiness-assessment-tool.md).
+3. [Voraussetzungen für Gastkonten](guest-accounts.md)
+4. [Netzwerkkonfiguration für Microsoft Managed Desktop](network.md)
+5. [Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop](certs-wifi-lan.md)
+6. [Vorbereiten des lokalen Ressourcenzugriffs für Microsoft Managed Desktop](authentication.md)
+7. [Anwendungen in Microsoft Managed Desktop](apps.md)
+8. [Vorbereiten zugeordneter Laufwerke für Microsoft Managed Desktop](mapped-drives.md) (In diesem Artikel)
+9. [Voraussetzungen von Druckressourcen für Microsoft Managed Desktop](printing.md)

@@ -2,8 +2,8 @@
 title: Einrichten mobiler Geräte für Microsoft 365 Business-Benutzer
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,16 +26,16 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installieren Sie Office auf einem iPhone oder Einem Android-Smartphone, und Ihre Arbeitsdateien in Office-Apps werden durch Microsoft 365 Business geschützt.
-ms.openlocfilehash: ef18fcce851b8fa1573fd5134bd25fb7d4a3d8f9
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: fefec17344d199ced230907fbaa85d98198cfb94
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928742"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578165"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Einrichten mobiler Geräte für Microsoft 365 Business-Benutzer
 
-Folgen Sie den Anweisungen auf den Registerkarten, um Office auf einem iPhone oder einem Android-Smartphone zu installieren. Nachdem Sie diese Schritte ausführen, werden Ihre in den Office-Apps erstellten Arbeitsdateien durch Microsoft 365 Business geschützt.
+Folgen Sie den Anweisungen auf den Registerkarten, um Office auf einem iPhone oder einem Android-Smartphone zu installieren. Nachdem Sie diese Schritte ausführen, werden Ihre in Office-Apps erstellten Arbeitsdateien durch Microsoft 365 Business geschützt.
 
 Das Beispiel ist für Outlook bestimmt, gilt aber auch für alle anderen Office-Apps, die Sie installieren möchten.
   
@@ -61,13 +61,13 @@ Tippen Sie nach Abschluss der Installation auf die Schaltfläche **Öffnen**, um
   
 ![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-Geben Sie Ihre geschäftliche  E-Mail-Adresse auf dem Bildschirm "E-Mail-Konto hinzufügen" ein, und geben Sie dann Ihre \> Microsoft 365 Business-Anmeldeinformationen \> **ein.**
+Geben Sie Ihre geschäftliche  E-Mail-Adresse auf dem Bildschirm E-Mail-Konto hinzufügen ein, und geben Sie dann \> Ihre Microsoft 365 for Business-Anmeldeinformationen \> **anmelden ein.**
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
-Wenn Ihre Organisation Dateien in Apps schützt, wird ein Dialogfeld angezeigt, das besagt, dass Ihre Organisation die Daten in der App jetzt schützt und Sie die App neu starten müssen, um sie weiterhin zu verwenden. Tippen Sie auf **OK**, und schließen Sie Outlook. 
+Wenn Ihre Organisation Dateien in Apps schützt, wird ein Dialogfeld angezeigt, in dem sie darauf hinweist, dass Ihre Organisation die Daten in der App schützt und Sie die App neu starten müssen, um sie weiterhin zu verwenden. Tippen Sie auf **OK**, und schließen Sie Outlook. 
   
-![Screenshot, der zeigt, dass Ihre Organisation Ihre Outlook-App jetzt schützt](../media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
+![Screenshot, der zeigt, dass Ihre Organisation jetzt Ihre Outlook-App schützt](../media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
   
 Suchen Sie Outlook auf dem iPhone, und starten Sie es erneut. Wenn Sie dazu aufgefordert werden, geben Sie eine PIN ein, und überprüfen Sie sie. Jetzt ist Outlook auf Ihrem iPhone einsatzbereit.
   
@@ -81,15 +81,15 @@ Sehen Sie sich ein Video zum Installieren von Outlook und Office auf Android-Ger
 
 Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
 
-Um mit der Einrichtung auf Ihrem Android Phone zu beginnen, wechseln Sie zum Play Store.
+Um mit dem Setup auf Ihrem Android-Smartphone zu beginnen, wechseln Sie zum Play Store.
   
 ![On the Android home screen, tap Play Store](../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
-Geben Sie Microsoft Outlook in das Suchfeld für Google Play ein, und tippen Sie auf **"Installieren".** Tippen Sie nach der Installation von Outlook auf **"Öffnen".**
+Geben Sie Microsoft Outlook in das Suchfeld Google Play ein, und tippen Sie auf **Installieren**. Tippen Sie nach der Installation von Outlook auf **Öffnen**.
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-Tippen Sie in der Outlook-App **auf "Erste** Schritte", fügen Sie dann Ihr Microsoft 365 Business-E-Mail-Konto "Weiter" hinzu, und melden Sie sich mit den Anmeldeinformationen Ihrer \> Organisation an.
+Tippen Sie in der Outlook-App auf **Erste** Schritte, und fügen Sie dann Ihr Microsoft 365 Business-E-Mail-Konto Continue hinzu, und melden Sie sich mit Ihren \> Unternehmensanmeldeinformationen an.
   
 ![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   

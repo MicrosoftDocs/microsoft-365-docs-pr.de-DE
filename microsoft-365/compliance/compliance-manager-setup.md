@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Festlegen von Microsoft Compliance Manager-Benutzerberechtigungen und -rollen und Konfigurieren automatisierter Tests von Aktionen. Verwalten Sie den Benutzerverlauf, und filtern Sie Ihre Dashboardansicht.
-ms.openlocfilehash: 4558f6b2a75f1635c7984b386f217efa148b22af
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 8877a9a1e65a624708646c17a2517647c8a72f6a
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499036"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570557"
 ---
 # <a name="get-started-with-compliance-manager"></a>Erste Schritte mit Compliance-Manager
 
@@ -30,7 +30,7 @@ ms.locfileid: "51499036"
 
 ## <a name="who-can-access-compliance-manager"></a>Wer auf compliance-Manager zugreifen kann
 
-Compliance Manager ist für Organisationen mit Office 365- und Microsoft 365-Lizenzen sowie für Moderate und GCC High-Kunden der US Government Community Cloud (GCC) verfügbar. Bewertungsverfügbarkeit und Verwaltungsfunktionen hängen von Ihrem Lizenzvertrag ab.  [Anzeigen von Dienstbeschreibungsdetails](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Compliance Manager ist für Organisationen mit Office 365- und Microsoft 365-Lizenzen sowie für Kunden der US Government Community Cloud (GCC) Moderate, GCC High und Department of Defense (DoD) verfügbar. Bewertungsverfügbarkeit und Verwaltungsfunktionen hängen von Ihrem Lizenzvertrag ab.  [Anzeigen von Dienstbeschreibungsdetails](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
@@ -52,7 +52,7 @@ Der Compliance-Manager verwendet ein rollenbasiertes Zugriffssteuerungsmodell (R
 Die Person, die die globale Administratorrolle für Ihre Organisation übernimmt, kann Benutzerberechtigungen für den Compliance-Manager festlegen. Berechtigungen können im Office 365 Security & Compliance Center sowie in Azure Active Directory (Azure AD) festgelegt werden.
 
 > [!NOTE]
-> Kunden in der US Government Community (GCC) Hohe Umgebungen können nur Benutzerberechtigungen und Rollen für Compliance Manager in Azure AD festlegen. Weitere Informationen zu Azure AD-Anweisungen und Rollentypdefinitionen finden Sie unten.
+> Kunden in Umgebungen der US Government Community (GCC) high and Department of Defense (DoD) können nur Benutzerberechtigungen und Rollen für Compliance Manager in Azure AD festlegen. Weitere Informationen zu Azure AD-Anweisungen und Rollentypdefinitionen finden Sie unten.
 
 Führen Sie zum Festlegen von Berechtigungen und Zuweisen von Rollen im Office 365 Security & Compliance Center die folgenden Schritte aus:
 
@@ -100,7 +100,7 @@ In der folgenden Tabelle sind die Funktionen aufgeführt, die von den einzelnen 
 Mit den Einstellungen des Compliance-Managers im Microsoft 365 Compliance Center können Sie automatische Tests von Verbesserungsmaßnahmen aktivieren und deaktivieren. Mit den Einstellungen können Sie auch die Daten von Benutzern verwalten, die Verbesserungsmaßnahmen zugeordnet sind, einschließlich der Möglichkeit, Verbesserungsmaßnahmen einem anderen Benutzer erneut zuzuweisen.  Nur Personen mit einer globalen Administrator- oder Compliance-Manager-Administratorrolle können auf die Compliance-Manager-Einstellungen zugreifen.
 
 > [!NOTE]
-> Das Feature für automatisierte Tests steht Kunden in GCC High-Umgebungen nicht zur Verfügung, da secure score in diesen Umgebungen nicht verfügbar ist. GCC Hohe Kunden müssen ihre Verbesserungsmaßnahmen manuell implementieren und testen.
+> Das Feature für automatisierte Tests steht Kunden in GCC High- und DoD-Umgebungen nicht zur Verfügung, da Secure Score in diesen Umgebungen nicht verfügbar ist. GCC High- und DoD-Kunden müssen ihre Verbesserungsmaßnahmen manuell implementieren und testen.
 
 ### <a name="set-up-automated-testing"></a>Einrichten automatisierter Tests
 

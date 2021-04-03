@@ -2,8 +2,8 @@
 title: Übersicht über Microsoft 365 Business Premium Security
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über die Sicherheitsfeatures von Microsoft 365 Business.
-ms.openlocfilehash: e21dc1a9f27f9b5896ace2f09ebb936b8189fdd3
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 5274d54fb39cfbeee8ce9abd7fb738543aaacc53
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422327"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578735"
 ---
 # <a name="overview-of-security"></a>Übersicht über die Sicherheit
 
@@ -34,7 +34,7 @@ ms.locfileid: "50422327"
 
 Microsoft 365 Business Premium bietet Bedrohungsschutz, Datenschutz und Geräteverwaltungsfunktionen, mit denen Sie Ihr Unternehmen vor Onlinebedrohungen und unbefugtem Zugriff schützen sowie Unternehmensdaten auf Ihren Smartphones, Tablets und Computern schützen und verwalten können.
 
-|![Bedrohungsschutz](../media/m365-business-security-threat-protection.png)<br/>[Bedrohungsschutz](#threat-protection)|![Zusammenarbeit mit einem Client](../media/m365-business-security-data-protection.png) <br/>[Datenschutz](#data-protection) | ![Geräteverwaltung](../media/m365-business-security-device-management.png) <br/>[deviceManagement](#device-management) |
+|![Bedrohungsschutz](../media/m365-business-security-threat-protection.png)<br/>[Bedrohungsschutz](#threat-protection)|![Zusammenarbeit mit einem Client](../media/m365-business-security-data-protection.png) <br/>[Datenschutz](#data-protection) | ![Geräteverwaltung](../media/m365-business-security-device-management.png) <br/>[Geräteverwaltung](#device-management) |
 |--|--|--|
 
 ## <a name="threat-protection"></a>Bedrohungsschutz

@@ -2,8 +2,8 @@
 title: Voraussetzungen für den Schutz von Daten auf Geräten mit Microsoft 365 Business
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: Erfahren Sie mehr über die Anforderungen für das Einrichten Ihrer Organisation mit Microsoft 365 Business und den Schutz von Arbeitsdaten auf den Geräten Ihrer Benutzer.
-ms.openlocfilehash: c0fca0e038d15b19cb2a37eb5705296ed3da3746
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 73e5ebf61ca828ff79b0688ce7dcd374b77daf16
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912900"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578285"
 ---
 # <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-for-business"></a>Voraussetzungen für den Schutz von Daten auf Geräten mit Microsoft 365 Business
 

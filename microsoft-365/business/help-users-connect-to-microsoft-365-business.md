@@ -1,9 +1,9 @@
 ---
-title: Unterstützen der Benutzer beim Herstellen einer Verbindung mit Microsoft 365 Business Premium
+title: Hilfe für Benutzer bei der Verbindung mit Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -27,22 +27,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
-description: Erfahren Sie, was Sie erwarten müssen, nachdem Business Cloud Suite-Setup abgeschlossen ist und Ihre standardmäßigen Geräterichtlinien installiert und einsatzfähig sind.
-ms.openlocfilehash: d3aad182f7e233f239b35e35c032e8ca09c57769
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Erfahren Sie, was Sie nach Abschluss des Business Cloud Suite-Setups erwarten sollten, und ihre Standardgeräterichtlinien sind eingerichtet und können angewendet werden.
+ms.openlocfilehash: d3e47247197f2688388ed50057b16fde53e7e830
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400920"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578445"
 ---
-# <a name="help-users-connect-to-microsoft-365-business-premium"></a>Unterstützen der Benutzer beim Herstellen einer Verbindung mit Microsoft 365 Business Premium
+# <a name="help-users-connect-to-microsoft-365-business-premium"></a>Hilfe für Benutzer bei der Verbindung mit Microsoft 365 Business Premium
 
-Nachdem Sie das Setup abgeschlossen haben, sind Ihre Standardgeräte Richtlinien vorhanden und können angewendet werden. Auf mobilen Geräten laden Benutzer Office-Apps herunter. Richtlinien werden dann angewendet, wenn sich der Benutzer mit seinem Arbeits-oder Schulkonto anmeldet. Es gibt ein bisschen mehr Arbeit, bevor Richtlinien auf Windows-PCs angewendet werden, beispielsweise auf ein direktes Upgrade. Weitere Informationen finden Sie unter und Freigeben der folgenden Themen, um Benutzer bei der Einrichtung und Verbindung zu unterstützen:
+Nachdem Sie das Setup abgeschlossen haben, sind die Standardgeräterichtlinien eingerichtet und können angewendet werden. Auf mobilen Geräten laden Benutzer Office-Apps herunter. Richtlinien werden dann angewendet, wenn sich der Benutzer mit seinem Arbeits- oder Schulkonto einschreibt. Es ist noch etwas mehr Zu tun, bevor Richtlinien auf Windows-PCs angewendet werden, z. B. ein in-Place-Upgrade. Sehen Sie sich die folgenden Themen an, und teilen Sie sie, damit Benutzer sich einrichten und eine Verbindung einrichten können:
   
 [Einrichten von Windows-Geräten für Microsoft 365 Business Premium-Benutzer](set-up-windows-devices.md)
   
-[Verwenden Sie die Schritt-für-Schritt-Anleitung zum Hinzufügen von Autopilot-Geräten und-Profil](add-autopilot-devices-and-profile.md)
+[Verwenden der schrittweisen Anleitung zum Hinzufügen von Autopilot-Geräten und -Profil](add-autopilot-devices-and-profile.md)
   
-[Einrichten von mobilen Geräten für Microsoft 365 Business Premium-Benutzer](set-up-mobile-devices.md)
+[Einrichten mobiler Geräte für Microsoft 365 Business Premium-Benutzer](set-up-mobile-devices.md)
   
 

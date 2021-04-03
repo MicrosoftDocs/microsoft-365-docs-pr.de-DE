@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager unterstützt Organisationen bei der Vereinfachung und Automatisierung von Risikobewertungen und schlägt empfohlene Maßnahmen zur Risikobeeinschätzung vor.
-ms.openlocfilehash: 80d955f3d321ef8f82fe3654e4d7d08572ec72cc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f938bb6b82ee7e24dd58b66597f0af7a3a00a9a2
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922729"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570452"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft Compliance-Manager
 
@@ -30,7 +30,7 @@ ms.locfileid: "50922729"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Neues: die GA-Version des Compliance-Managers
 
-Compliance Manager ist jetzt allgemein als End-to-End-Lösung für die Complianceverwaltung im [Microsoft 365 Compliance Center verfügbar.](microsoft-365-compliance-center.md) Mit dieser Version schließt der Compliance-Manager den Übergang vom vorherigen Speicherort im Microsoft Service Trust Portal ab. Compliance Manager ist jetzt auch für Moderate und GCC High Kunden der US Government Community (GCC) verfügbar.
+Compliance Manager ist jetzt allgemein als End-to-End-Lösung für die Complianceverwaltung im [Microsoft 365 Compliance Center verfügbar.](microsoft-365-compliance-center.md) Mit dieser Version schließt der Compliance-Manager den Übergang vom vorherigen Speicherort im Microsoft Service Trust Portal ab. Compliance Manager ist auch für Kunden der US Government Community (GCC) Moderate, GCC High und Department of Defense (DoD) verfügbar.
 
 Was als öffentliche Vorschau der Compliance-Bewertung begann, hat sich zu einem zentralen Tool mit erweiterten Complianceverwaltungsfunktionen und einer besseren Benutzerfreundlichkeit entwickelt.  Die GA-Version bietet eine größere Sammlung vordefinierter Bewertungen, die Ihnen bei der Skalierung Ihrer Complianceaktivitäten helfen.
 
@@ -67,7 +67,7 @@ Compliance Manager vergibt Punkte für das Abschließen von Verbesserungsmaßnah
 
 Der Compliance-Manager gibt Ihnen eine erste Bewertung basierend auf der Microsoft 365-Datenschutzgrundlinie. Diese Basislinie umfasst eine Reihe von Kontrollen, die wichtige Vorschriften und Standards für den Datenschutz und die allgemeine Datenkontrolle umfassen.
 
-##### <a name="learn-more"></a>Weitere Informationen
+##### <a name="learn-more"></a>Mehr erfahren
 
 [Erfahren Sie, wie Ihre Compliance-Bewertung berechnet wird.](compliance-score-calculation.md)
 
@@ -87,7 +87,7 @@ Der Compliance-Manager verfolgt die folgenden Arten von Steuerelementen:
 2. **Ihre Steuerelemente**: Manchmal als vom Kunden verwaltete Steuerelemente bezeichnet, sind dies Steuerelemente, die von Ihrer Organisation implementiert und verwaltet werden.
 3. **Freigegebene Steuerelemente:** Dies sind Steuerelemente, die sowohl Ihre Organisation als auch Microsoft gemeinsam für die Implementierung verantwortlich sind.
 
-##### <a name="learn-more"></a>Weitere Informationen
+##### <a name="learn-more"></a>Mehr erfahren
 
 [Überwachen sie den Fortschritt Ihrer Steuerelemente.](compliance-manager-assessments.md#monitor-assessment-progress-and-controls)
 
@@ -107,15 +107,15 @@ Bewertungen setzen sich aus mehrere Elementen zusammen:
 
 Beim Erstellen von Bewertungen weisen Sie sie einer Gruppe zu. Sie können Gruppen auf die für Ihre Organisation logischste Weise konfigurieren. Beispielsweise können Sie Bewertungen nach Auditjahr, Region, Lösung, Teams innerhalb Ihrer Organisation oder auf andere Weise gruppieren. Nachdem Sie Gruppen erstellt haben, können Sie [Ihr Compliance -Manager-Dashboard](compliance-manager-setup.md#filtering-your-dashboard-view) filtern, um Ihre Bewertung nach einer oder mehreren Gruppen anzuzeigen.
 
-##### <a name="learn-more"></a>Weitere Informationen
+##### <a name="learn-more"></a>Mehr erfahren
 
 [Erstellen und Verwalten von Bewertungen im Compliance Manager](compliance-manager-assessments.md).
 
 ### <a name="templates"></a>Vorlagen
 
-Der Compliance-Manager stellt Vorlagen bereit, mit deren Hilfe Sie Schnellbewertungen erstellen können. Sie können diese Vorlagen ändern, um eine bewertung zu erstellen, die für Ihre Anforderungen optimiert ist. Sie können auch eine benutzerdefinierte Bewertung erstellen, indem Sie eine Vorlage mit Ihren eigenen Steuerelementen und Aktionen erstellen. Beispielsweise möchten Sie, dass eine Vorlage ein internes Geschäftsprozesssteuerelement oder einen regionalen Datenschutzstandard behandelt, der nicht von einer unserer mehr als 150 vordefinierten Bewertungsvorlagen abgedeckt wird.
+Der Compliance-Manager stellt Vorlagen bereit, mit deren Hilfe Sie Schnellbewertungen erstellen können. Sie können diese Vorlagen ändern, um eine bewertung zu erstellen, die für Ihre Anforderungen optimiert ist. Sie können auch eine benutzerdefinierte Bewertung erstellen, indem Sie eine Vorlage mit Ihren eigenen Steuerelementen und Aktionen erstellen. Beispielsweise möchten Sie, dass eine Vorlage ein internes Geschäftsprozesssteuerelement oder einen regionalen Datenschutzstandard behandelt, der nicht von einer unserer mehr als 325 vordefinierten Bewertungsvorlagen abgedeckt wird.
 
-##### <a name="learn-more"></a>Weitere Informationen
+##### <a name="learn-more"></a>Mehr erfahren
 
 [Zeigen Sie die Liste der Bewertungsvorlagen an, die vom Compliance Manager bereitgestellt werden.](compliance-manager-templates-list.md)
 
@@ -125,7 +125,7 @@ Der Compliance-Manager stellt Vorlagen bereit, mit deren Hilfe Sie Schnellbewert
 
 Verbesserungsmaßnahmen helfen bei der Zentralisierung Ihrer Complianceaktivitäten. Jede Verbesserungsaktion enthält empfohlene Anleitungen, die Ihnen dabei helfen sollen, sich an Datenschutzbestimmungen und -standards auszurichten. Verbesserungsmaßnahmen können Benutzern in Ihrer Organisation zugewiesen werden, um Implementierungs- und Testarbeiten durchzuführen. Sie können dokumentations-, notizen- und datensatzstatusupdates auch innerhalb der Verbesserungsaktion speichern.
 
-##### <a name="learn-more"></a>Weitere Informationen
+##### <a name="learn-more"></a>Mehr erfahren
 
 [Verwenden Sie Verbesserungsmaßnahmen, um Ihren Complianceworkflow zu verwalten.](compliance-manager-improvement-actions.md)
 

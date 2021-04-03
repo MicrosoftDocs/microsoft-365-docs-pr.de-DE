@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: Erfahren Sie, wie Sie Custodians und deren Datenquellen speichern, um relevante Inhalte für Ihren Advanced eDiscovery-Fall zu erhalten.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 07edcb2707d1dffecfa5a2aac6c4340ac6cbe53f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 70390a933de788a6b1190e42b5087b85a175b9a2
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926373"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570589"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Verwalten von Halte halte in Advanced eDiscovery
 
@@ -76,8 +76,6 @@ So erstellen Sie einen nicht verwaisten Halteraum für einen Advanced eDiscovery
       > Wenn Sie auf **Benutzer, Gruppen** oder Teams auswählen klicken, um Postfächer anzugeben, die in der Warteschleife gespeichert werden, ist die angezeigte Postfachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Um dieser Liste Personen hinzuzufügen, geben Sie einen Namen (mindestens 3 Zeichen) in das Suchfeld ein.
 
    1. **SharePoint-Websites** – Klicken Sie  **auf Websites auswählen,** und klicken Sie dann erneut auf Websites auswählen, um SharePoint- und OneDrive for #A0 anzugeben, die in der Warteschleife gespeichert werden. Geben Sie die URL für jede Website ein, die Sie in der Warteschleife platzieren möchten. Sie können auch die URL für die SharePoint-Website für eine Microsoft 365-Gruppe oder ein Microsoft-Team hinzufügen. Klicken **Sie auf Auswählen** und dann auf **Fertig**.
-    
-      Im Abschnitt **Häufig gestellte** Fragen finden Sie Tipps zum Halten von Microsoft 365-Gruppen und Microsoft Teams.
 
       > [!NOTE]
       > Die URL für das #A0 eines Benutzers enthält ihren Benutzerprinzipalnamen (z. B. `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). In dem seltenen Fall, dass der UPN einer Person geändert wird, ändert sich auch die OneDrive-URL, um den neuen UPN zu integrieren. Wenn das #A0 eines Benutzers Teil eines nicht verwahrten Speichers ist und der UPN geändert wird, müssen Sie den Haltepunkt aktualisieren und auf die neue OneDrive-URL verweisen. Weitere Informationen hierzu finden Sie unter [Wie sich UPN-Änderungen auf die OneDrive-URL auswirken](/onedrive/upn-changes).
@@ -118,7 +116,7 @@ Beachten Sie die folgenden Punkte bei der Haltestatistik:
 
 ## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>Halten von Microsoft Teams und Office 365-Gruppen
 
-Microsoft Teams baut auf Office 365-Gruppen auf. Daher ist es sehr ähnlich, sie in Advanced eDiscovery in der Warteschleife zu platzieren. 
+Microsoft Teams baut auf Office 365-Gruppen auf. Daher ist es sehr ähnlich, sie in Advanced eDiscovery in der Warteschleife zu platzieren.
 
 - **Wie zuordnung ich eine zusätzliche Microsoft 365-Gruppen- oder Microsoft Teams-Website einem Verwahrer? Und wie sieht es mit einem nicht verwaisten Halterecht für Microsoft 365-Gruppen und Microsoft Teams aus?** Microsoft Teams baut auf Microsoft 365-Gruppen auf. Daher ist es sehr ähnlich, sie in einem eDiscovery-Fall zu halten. Beachten Sie folgendes, wenn Sie Microsoft 365-Gruppen und Microsoft Teams in der Warteschleife platzieren.
   - Um Inhalte in Microsoft 365-Gruppen und Microsoft Teams in der Warteschleife zu platzieren, müssen Sie das Postfach und die SharePoint-Website angeben, die einer Gruppe oder einem Team zugeordnet sind.

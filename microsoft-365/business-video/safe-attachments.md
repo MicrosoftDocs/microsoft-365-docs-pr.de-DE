@@ -2,8 +2,8 @@
 title: Sichere Anlagen verwalten
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie sichere Anlagen verwalten.
-ms.openlocfilehash: 89297ec7daeca4b20c01baa9f9554d4574d9df6a
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 9afbdef2c7b400cf0bee5ae1e1ac3a9de6588cb8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422279"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578711"
 ---
 # <a name="manage-safe-attachments"></a>Sichere Anlagen verwalten
 

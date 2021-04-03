@@ -2,8 +2,8 @@
 title: Verwalten von Windows 10 Pro-Geräterichtlinien mit Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Windows 10 Pro-Geräterichtlinien mit Microsoft 365 Business Premium verwalten.
-ms.openlocfilehash: 8d3e5107c0b2dfe3a84f31b98d9bd3ff8f7c5e4f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0f7cfff227e1ab4ea992414b513e341adbd9ef22
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422123"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578687"
 ---
 # <a name="manage-windows-10-pro-device-policies"></a>Verwalten von Windows 10 Pro-Geräterichtlinien
 

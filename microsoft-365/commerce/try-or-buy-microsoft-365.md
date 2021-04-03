@@ -19,28 +19,21 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie eine kostenlose Testversion erhalten oder ein Abonnement für Microsoft 365 Business erwerben.
 ms.date: 08/07/2020
-ms.openlocfilehash: 05ac30ae25f4748751eee04c34d049b07d5b7511
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9daa7022007aa3c71dc7291f592d3b166a2c45a5
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198435"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576901"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Testen oder Kaufen eines Microsoft 365 Business-Abonnements
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../admin/microsoft-365-admin-center-preview.md?view=o365-21vianet).
-
-::: moniker-end
 
 Microsoft 365 Business ist ein Abonnementdienst, mit dem Sie Ihre Organisation in der Cloud ausführen können, während Microsoft die IT für Sie übernimmt. Microsoft verwaltet Geräte, schützt vor realen Bedrohungen und stellt Ihrer Organisation die neueste Geschäftssoftware zur Verfügung. Sie können sich für ein kostenloses Testabonnement für Microsoft 365 Business Standard, Microsoft 365 Business Premium oder Microsoft 365 Apps for Business registrieren und es 30 Tage lang testen.
 
 > [!NOTE]
 > Sie müssen eine Kreditkarte verwenden, wenn Sie sich für eine kostenlose Testversion registrieren. Am Ende des kostenlosen Testzeitraums wird Ihr Testabonnement automatisch in ein kostenpflichtiges Abonnement konvertiert. Ihre Kreditkarte wird erst am Ende des Testzeitraums abgerechnet.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Sie benötigen kein vorhandenes Microsoft-Konto, um sich für eine kostenlose Testversion zu registrieren. Für alle anderen Verfahren in diesem Artikel müssen Sie ein globaler Administrator oder Abrechnungsadministrator für Ihre Organisation sein. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../admin/add-users/about-admin-roles.md).
 
@@ -110,6 +103,21 @@ Wenn Sie ein anderes Abonnement über das Admin Center erwerben, ist das neue Ab
 
 > [!NOTE]
 > Sie müssen Benutzer aus Ihrem kostenlosen Testabonnement in das neue Abonnement verschieben, bevor Ihre 90-tägige Nachfrist nach Ablauf Ihres Testabonnements endet. Dadurch behalten Sie Ihre Daten, Konten und Konfigurationen bei. Andernfalls werden diese Informationen gelöscht.
+
+::: moniker range="o365-21vianet"
+## <a name="payment-options"></a>Zahlungsoptionen
+
+Sie können Für Ihr Abonnement bezahlen, indem Sie:
+
+- Invoice
+
+- Onlinezahlung mit Alipay oder China UnionPay
+
+Der Zahlungsnachweis wird in Form von Fapiaos bereitgestellt. Sie können Ihre Fapiao-Anforderung etwa drei (3) Tage nach der Bezahlten an unser [Fapiao-System](https://go.microsoft.com/fwlink/p/?LinkId=395314) übermitteln. Weitere Informationen finden Sie [unter Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
+
+> [!NOTE]
+>  Internationale Kreditkarten werden nicht akzeptiert.
+::: moniker-end
 
 ## <a name="next-steps"></a>Nächste Schritte
 
