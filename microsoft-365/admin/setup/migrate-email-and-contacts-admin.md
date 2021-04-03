@@ -2,8 +2,8 @@
 title: Migrieren von E-Mail und Kontakten zu Office 365
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -28,12 +28,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Erfahren Sie, wie Sie Kontakte, Kalender und E-Mails von Gmail oder einem anderen E-Mail-Anbieter importieren und zu Microsoft 365 migrieren.
-ms.openlocfilehash: 91c8177322e8ebc1e1530675d92d60e96cc73adb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 752138d3194379529d78a299b36aa177a832d55b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914102"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580810"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Migrieren von E-Mail und Kontakten zu Office 365
 

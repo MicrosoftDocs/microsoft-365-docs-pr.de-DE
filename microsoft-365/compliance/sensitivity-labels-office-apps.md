@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen für IT-Administratoren zur Verwaltung von Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobilgeräte und das Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 72b5422de2ee4b01e3209ec78ea0c10f1285d682
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 5a82eba3801509ed2e8ffb46ab32045466204fab
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034194"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498820"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -119,7 +119,7 @@ Stellen Sie diese Einstellung mithilfe der Gruppenrichtlinie oder des [Office-Cl
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office integrierter Bezeichnungs-Assistent und der Azure Information Protection-Client
 
-Wenn Benutzer einen der Azure Information Protection-Clients installiert haben ([einheitliche Bezeichnungs-Assistent](/azure/information-protection/rms-client/aip-clientv2) oder [klassischer Client](/azure/information-protection/rms-client/aip-client)), ist der integrierte Bezeichnungsassistent in ihren Office-Apps standardmäßig deaktiviert. 
+Wenn Benutzer den [Azure Information Protection-Client installiert](/azure/information-protection/rms-client/aip-clientv2) haben, ist der integrierte Bezeichnungsassistent in ihren Office-Apps standardmäßig deaktiviert. 
 
 Um die integrierte Bezeichnung anstelle des Azure Information Protection-Clients für Office-Apps zu verwenden, empfehlen wir, dass Sie die Gruppenrichtlinieneinstellung **Liste der verwalteten Add-Ins** verwenden, die unter [Keine Add-Ins geladen aufgrund von Gruppenrichtlinieneinstellungen für Office 2013- und Office 2016-Programme](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off) dokumentiert ist.
 

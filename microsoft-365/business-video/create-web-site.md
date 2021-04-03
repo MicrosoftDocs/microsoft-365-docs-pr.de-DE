@@ -2,8 +2,8 @@
 title: Erstellen einer Website für Ihr Unternehmen
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie eine GoDaddy-Website für Ihr Unternehmen erstellen.
-ms.openlocfilehash: 64b8b7bacaf218f95a0fb89d03eb280f755f1f2f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 8f7057fcb7ed85502ce856fb50349a91466e0d6c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422735"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580642"
 ---
 # <a name="create-a-website"></a>Erstellen einer Website
 

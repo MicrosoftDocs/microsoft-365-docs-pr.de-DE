@@ -2,8 +2,8 @@
 title: Erstellen einer Gruppen-E-Mail-Adresse
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie eine Gruppen-E-Mail-Adresse erstellen.
-ms.openlocfilehash: 9591d7e70a480200977b6a77cab3a1bf683263ba
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0854c41a4af52649c09fc8e5e3d121282e615d8e
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422567"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580582"
 ---
 # <a name="create-a-group-email-address"></a>Erstellen einer Gruppen-E-Mail-Adresse
 

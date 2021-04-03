@@ -2,8 +2,8 @@
 title: Abrufen der mobilen Administrator-App
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie die mobile Microsoft 365 Admin-App auf Ihrem Smartphone installieren.
-ms.openlocfilehash: 43c2c2905dec978a520e2bf2d4b9b2aa7318b7a7
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0367123e9bd74ab79c17b38eb49cc31fc6fba8e4
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423011"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580702"
 ---
 # <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installieren der mobilen Microsoft 365 Admin-App auf Ihrem Smartphone
 

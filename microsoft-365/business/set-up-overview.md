@@ -2,8 +2,8 @@
 title: Übersicht über die Einrichtung
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Erfahren Sie mehr über die Einrichtungsschritte für Microsoft 365 Business Premium, vom Abonnieren über das Hinzufügen einer Domäne und Benutzer bis zum Einrichten von Sicherheitsrichtlinien und vielem mehr.
-ms.openlocfilehash: 9d92aefb3b5666bb7c2fd2e13c9a00f074f107a7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 749acbfdbde92ad97b09dc720c85dd850b76c9cf
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912488"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579932"
 ---
 # <a name="overview-of-setup"></a>Übersicht über die Einrichtung
 

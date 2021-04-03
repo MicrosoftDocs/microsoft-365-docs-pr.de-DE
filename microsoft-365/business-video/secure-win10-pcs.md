@@ -2,8 +2,8 @@
 title: Sichern Ihrer Windows 10-PCs
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Windows 10-Schutzrichtlinien mit Microsoft 365 Business Premium einrichten.
-ms.openlocfilehash: 6bda2c284cb2b7511339d42c61cf4a99b5abd80e
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a7049f96ecba317bd58fee9f9dc6b7e124f5f9d2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422075"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580450"
 ---
 # <a name="secure-windows-10-pcs"></a>Sichern von Windows 10-PCs
 

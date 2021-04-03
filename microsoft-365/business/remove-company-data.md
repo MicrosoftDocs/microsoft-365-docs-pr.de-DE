@@ -2,8 +2,8 @@
 title: Entfernen von Unternehmensdaten von Geräten
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,33 +23,33 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: Erfahren Sie, wie Microsoft 365 for Business zum Entfernen von Unternehmensdaten verwendet wird, die Ihre Benutzer auf Ihren Geräten oder Windows-PCs haben.
-ms.openlocfilehash: 3a2faf0c5617b5d1e6beccf1e457f8b483820604
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+description: Erfahren Sie, wie Sie Microsoft 365 Business verwenden, um Unternehmensdaten zu entfernen, die Ihre Benutzer auf ihren Geräten oder Windows-PCs haben.
+ms.openlocfilehash: 2e1af384d83937d65fd5c8ae655d228df48422cd
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470825"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579992"
 ---
 # <a name="remove-company-data-from-devices"></a>Entfernen von Unternehmensdaten von Geräten
 
-Dieser Artikel bezieht sich auf Microsoft 365 Business Premium.
+Dieser Artikel gilt für Microsoft 365 Business Premium.
 
 ## <a name="remove-company-data"></a>Entfernen von Unternehmensdaten
 
-Sie können Microsoft 365 for Business verwenden, um Unternehmensdaten zu entfernen, die Ihre Benutzer auf Ihren [Geräten](app-protection-settings-for-android-and-ios.md) oder [Windows-PCs](protection-settings-for-windows-10-devices.md) haben, die von Microsoft 365 geschützt sind. **Wenn Sie Unternehmensdaten von einem Gerät entfernen, können Sie sie später nicht wiederherstellen**. 
+Sie können Microsoft 365 Business verwenden, um Unternehmensdaten [](app-protection-settings-for-android-and-ios.md) zu entfernen, die Ihre Benutzer auf ihren Geräten oder [Windows-PCs](protection-settings-for-windows-10-devices.md) haben, die von Microsoft 365 geschützt sind. **Wenn Sie Unternehmensdaten von einem Gerät entfernen, können Sie sie später nicht wiederherstellen**. 
   
 1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
-2. Wählen Sie im linken Navigationsbereich **Geräte** \> **Verwalten**aus.  
+2. Wählen Sie im linken Navigations navig die Option **Geräte** \> **verwalten aus.**  
   
-3. Wählen Sie auf der Seite **Verwalten** die Option aus, oder suchen Sie nach einem Benutzer, der die zu entfernenden Daten hat, und wählen Sie den Namen aus. 
+3. Wählen Sie **auf** der Seite Verwalten einen Benutzer aus, den Sie entfernen möchten, oder suchen Sie ihn, und wählen Sie den Namen aus. 
     
-4. Wählen Sie im nächsten Bereich das Gerät oder die Geräte aus der Liste **Geräte** aus. Im daraufhin geöffneten Gerätebereich können Sie je nach Gerätetyp festlegen, ob das Gerät auf die Werkseinstellungen zurückgesetzt oder die Unternehmensdaten entfernt werden sollen. 
+4. Wählen Sie im nächsten Bereich das Gerät oder die Geräte in der Liste **Geräte** aus. Im geöffneten Gerätebereich können Sie das Gerät abhängig vom Gerätetyp auf Werkseinstellungen zurücksetzen oder Unternehmensdaten entfernen. 
     
-    ![Wählen Sie im Bereich Unternehmensdaten entfernen das Gerät aus, aus dem Sie die Daten entfernen möchten.](../media/resetorremove.png)
+    ![Wählen Sie im Bereich Unternehmensdaten entfernen das Gerät aus, von dem Sie die Daten entfernen möchten.](../media/resetorremove.png)
   
-5. Klicken Sie im Bestätigungsbereich **Confirm** auf \> **Schließen**bestätigen.
+5. Wählen Sie im Bestätigungsbereich Die Option **Schließen** \> **bestätigen aus.**
     
 
 

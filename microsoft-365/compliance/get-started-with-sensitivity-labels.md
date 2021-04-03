@@ -18,13 +18,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Sind Sie bereit für die Implementierung von Vertraulichkeitsbezeichnungen, um die Daten Ihrer Organisation zu schützen, aber nicht sicher, wo Sie beginnen sollten? Hier finden Sie einige praktische Anleitungen, die Ihnen auf dem Weg zu Bezeichnungen helfen.
-ms.openlocfilehash: a6b04bcce7d0fe505173a807fbc2d4105831419c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: Sind Sie bereit für die Bereitstellung von Vertraulichkeitsbezeichnungen, um die Daten Ihrer Organisation zu schützen, aber nicht sicher, wo Sie beginnen sollten? Hier finden Sie einige praktische Anleitungen, die Ihnen auf dem Weg zu Bezeichnungen helfen.
+ms.openlocfilehash: d685b050d32ea7bf482a39ad8d72abe3ee74567d
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051887"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499686"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Erste Schritte mit Vertraulichkeitsbezeichnungen
 
@@ -32,9 +32,7 @@ ms.locfileid: "51051887"
 
 Informationen darüber, was Vertraulichkeitsbezeichnungen sind und wie sie Ihnen helfen, die Daten Ihrer Organisation zu schützen, finden Sie unter [Weitere Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md).
 
-Wenn Sie [Azure Information Protection](/azure/information-protection/what-is-information-protection) verwenden, ermitteln Sie, ob Sie Bezeichnungen zur Plattform für einheitliche Bezeichnungen migrieren müssen und welcher Bezeichnungsclient verwendet werden soll:
-- [Wie kann ich feststellen, ob meine Mandanten sich auf der Plattform für einheitliche Bezeichnungen befinden?](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
-- [Auswählen der Windows-Lösung für Bezeichnungen](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)
+Wenn Sie [Azure Information Protection](/azure/information-protection/what-is-information-protection) einsetzen und immer noch Azure Information Protection-Bezeichnungen verwenden, die vom Azure-Portal verwaltet wurden, müssen Sie diese Bezeichnungen auf die [einheitliche Bezeichnungsplattform](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform) migrieren. Auf Windows-Computern können Sie dann auswählen, [welcher Bezeichnungsclient verwendet werden soll](/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) für Ihre veröffentlichen Vertraulichkeitsbezeichnungen.
 
 Wenn Sie bereit sind, die Daten Ihrer Organisation mit Vertraulichkeitsbezeichnungen zu schützen:
 
@@ -64,7 +62,7 @@ Standardmäßig haben globale Administratoren für Ihren Mandanten Zugriff auf d
 
 Alternativ zur Verwendung der Standardrollen können Sie eine neue Rollengruppe erstellen und dieser entweder die Rolle **Administrator für Vertraulichkeitsbezeichnungen** oder die Rolle **Organisationskonfiguration** hinzufügen. Verwenden Sie für eine schreibgeschützte Rolle den **Vertraulichkeitsbezeichnungen-Leser**. 
 
-Anweisungen zum Hinzufügen von Benutzern zu den Standardrollen oder zum Erstellen eigener Rollengruppen finden Sie unter [Freigeben des Benutzerzugriffs auf das Office 365 Security & Compliance Center](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Anweisungen zum Hinzufügen von Benutzern zu den Standardrollen oder zum Erstellen eigener Rollengruppen finden Sie unter [Freigeben des Benutzerzugriffs auf das Office 365 Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Diese Berechtigungen sind nur zum Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Bezeichnungsrichtlinien erforderlich. Sie müssen die Bezeichnungen in Apps oder Diensten nicht anwenden. Wenn für bestimmte Konfigurationen, die sich auf Vertraulichkeitsbezeichnungen beziehen, zusätzliche Berechtigungen erforderlich sind, sind diese Berechtigungen in den entsprechenden Dokumentations-Anweisungen aufgelistet.
 

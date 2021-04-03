@@ -2,8 +2,8 @@
 title: Wie werden Schutzfunktionen in Microsoft 365 Business Premium den Intune-Einstellungen zugewiesen?
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 ms.date: 8/13/2018
 audience: Admin
@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Erfahren Sie, wie Schutzfunktionen in Microsoft 365 Business Premium intune-Einstellungen zuordnungen. Mit dem Abonnement erhalten Sie eine Lizenz zum Ändern von Intune-Einstellungen.
-ms.openlocfilehash: 5e8a7aa570b0f56324a483fb2cdb77c19f3b2379
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9a6dcf014e009389e49860fa96486c264c22f501
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913020"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580112"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Wie werden Schutzfunktionen in Microsoft 365 Business Premium den Intune-Einstellungen zugewiesen?
 

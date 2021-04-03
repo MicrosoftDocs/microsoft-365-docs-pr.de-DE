@@ -2,8 +2,8 @@
 title: Erste Schritte mit Microsoft 365 Business
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Erfahren Sie mehr über Microsoft 365 Business, die Einrichtung und die Vorbereitung der Geräte und PCs Ihrer Benutzer, um sicherzustellen, dass sie durch Microsoft 365 Business geschützt sind.
-ms.openlocfilehash: 9430dc7aa637be3fdb833150b83e96caacc82170
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 83bd2ff87683c1ad810d20658ba20f3229408968
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912960"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580092"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Erste Schritte mit Microsoft 365 Business
 
@@ -99,7 +99,7 @@ Wenn Ihre Organisation Windows Server Active Directory lokal verwendet, können 
 Wenn Sie ein lokales Active Directory beibehalten, das einige lokale Ressourcen (z. B. Dateifreigaben und Drucker) enthält, können Sie Ihren **Azure AD-beigetretenen** Geräten Zugriff auf diese Ressourcen geben, indem Sie die folgenden Schritte ausführen: Zugreifen auf lokale Ressourcen von einem Azure AD-beigetretenen Gerät [in Microsoft 365 Business](access-resources.md).
   
   
-## <a name="contact-support"></a>Support kontaktieren
+## <a name="contact-support"></a>wenden Sie sich an den Support,
 
  **Wenn Sie den Support kontaktieren müssen:**
   
