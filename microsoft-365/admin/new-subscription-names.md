@@ -1,7 +1,7 @@
 ---
 title: Office 365 ist jetzt Microsoft 365
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: Erfahren Sie mehr über die neuen Microsoft 365-Abonnement Namen.
-ms.openlocfilehash: 42d1249b41d8f6025f63804374fa0287fdc680ce
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Erfahren Sie mehr über die neuen Microsoft 365-Abonnementnamen.
+ms.openlocfilehash: f9726f8860e25b800a253899b5c2f561325e5ca2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399194"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579206"
 ---
 # <a name="office-365-is-now-microsoft-365"></a>Office 365 ist jetzt Microsoft 365
 
@@ -29,7 +29,7 @@ Wir ändern einige unserer Abonnementnamen für Office 365 und Microsoft 365. Si
 - **Office 365 Business Essentials** ist jetzt **Microsoft 365 Business Basic**
 - **Office 365 Business Premium** ist jetzt **Microsoft 365 Business Standard**
 - **Microsoft 365 Business** ist jetzt **Microsoft 365 Business Premium**
-- **Office 365 Business** ist jetzt **Microsoft 365 apps for Business**
-- **Office 365 ProPlus** ist jetzt **Microsoft 365 apps for Enterprise**
+- **Office 365 Business** ist jetzt **Microsoft 365 Apps for Business**
+- **Office 365 ProPlus** ist jetzt **Microsoft 365 Apps for Enterprise**
 
 [Weitere Informationen!](https://go.microsoft.com/fwlink/?linkid=2120533)

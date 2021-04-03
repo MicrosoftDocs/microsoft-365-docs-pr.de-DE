@@ -1,9 +1,9 @@
 ---
-title: Microsoft Productivity Score-Teamarbeit
+title: Microsoft Productivity Score – Teamarbeit
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,148 +18,148 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Details zum Produktivitäts Ergebnis der Teamarbeit – People Experiences.
-ms.openlocfilehash: f64f60a6c9717d3d55ee2ac5cc6f507d4927fe18
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+description: Details zur Teamarbeit – Die Produktivitätswertung für Personen.
+ms.openlocfilehash: 0924114a73a9bcf55a74744ee371de8c2d326d1c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712555"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579158"
 ---
-# <a name="teamwork--people-experiences"></a>Teamwork – Personen Erfahrungen
+# <a name="teamwork--people-experiences"></a>Teamarbeit – Erfahrungen mit Personen
 
-Die Produktivitäts Bewertung bietet Einblicke in die digitale Transformationsreise Ihrer Organisation durch die Verwendung von Microsoft 365 und die damit unterstützten Technologie-Erlebnisse. Die Bewertung Ihrer Organisation reflektiert Personen-und Technologie Erfahrungs Messungen und kann mit Benchmarks von Organisationen vergleichbar mit Ihnen verglichen werden. Die Kategorie Teamwork ist Teil der Messungen, die unter Personen Erfahrungen fallen. Weitere Informationen finden Sie unter Übersicht über die [Produktivitäts Bewertung](productivity-score.md) und Lesen der [Datenschutzerklärung von Microsoft](https://privacy.microsoft.com/privacystatement).
+Die Produktivitätswertung bietet Einblicke in die digitale Transformation Ihrer Organisation durch die Verwendung von Microsoft 365 und die Technologieerfahrungen, die sie unterstützen. Die Bewertung Ihrer Organisation spiegelt Messungen der Benutzer- und Technologieerfahrung wider und kann mit Benchmarks von Organisationen vergleichbar mit Ihrer verglichen werden. Die Kategorie Teamarbeit ist Teil der Messungen, die unter die Erfahrungen von Personen fallen. Weitere Informationen finden Sie in der [Übersicht über die Produktivitätsergebnis](productivity-score.md) und in [der Datenschutzerklärung von Microsoft.](https://privacy.microsoft.com/privacystatement)
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Für die ersten Schritte mit den Einblicken in Teamwork müssen Personen in Ihrer Organisation lizenziert sein für:
+Um mit den Erkenntnissen zur Teamarbeit zu beginnen, müssen Die Mitarbeiter in Ihrer Organisation lizenziert werden für:
 
-- Microsoft Teams
-- Microsoft Office SharePoint Online
+- Microsoft Teams
+- SharePoint
 - Exchange Online
 
 Weitere Informationen finden Sie unter [Zuweisen von Lizenzen zu Benutzern](../manage/assign-licenses-to-users.md).
 
-Nachdem Personen in den oben genannten Produkten mindestens einmal in den letzten 28 Tagen aktiv waren, werden Sie beginnen, die Einblicke zu sehen.
+Nachdem Personen in den oben genannten Produkten in den letzten 28 Tagen mindestens einmal aktiv waren, werden Sie die Einblicke sehen.
 
-## <a name="why-your-orgs-teamwork-score-matters"></a>Gründe für das Teamwork-Ergebnis Ihrer Organisation
+## <a name="why-your-orgs-teamwork-score-matters"></a>Warum die Teamarbeitsleistung Ihrer Organisation wichtig ist
 
-Eine grundlegende Säule für die Produktivität der Organisation ist, wenn eine Gruppe von Personen mit einem gemeinsamen Ziel miteinander und mit gemeinsamen Ressourcen für gemeinsame Erfolge arbeitet. Untersuchungen deuten darauf hin, dass Benutzer, die Informationen freigeben und gemeinsam in freigegebenen Arbeitsbereichen zusammenarbeiten, bis zu 4 Stunden pro Woche speichern. Sie können verwandte Dokumente finden, Kontext für frühere Diskussionen finden und zu gemeinsamen Zielen beitragen. [Beweise](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf) anzeigen
+Eine wesentliche Säule für die Produktivität der Organisation ist, wenn eine Gruppe von Personen mit einem gemeinsamen Ziel miteinander und mit gemeinsamen Ressourcen für den gemeinsamen Erfolg arbeitet. Untersuchungen zeigen, dass Personen, die Informationen freigeben und in freigegebenen Arbeitsbereichen zusammenarbeiten, bis zu 4 Stunden pro Woche sparen. Sie können verwandte Dokumente finden, Kontext für vorherige Diskussionen finden und gemeinsame Ziele erreichen. Sehen Sie sich die[Nachweise an](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf)
 
-## <a name="how-we-calculate-the-teamwork-score"></a>Berechnung des Team Ergebnisses
+## <a name="how-we-calculate-the-teamwork-score"></a>Berechnen der Teamarbeitsleistung
 
-Wir bieten eine wesentliche Einblicke in die Erfahrung, die die wichtigsten Metriken für diese Kategorie in Ihrer Organisation enthält. Anschließend wird ein Bewertungs Framework, das unten detailliert beschrieben wird, für diese Metriken verwendet, um die Bewertung Ihrer Organisation zu berechnen.
+Wir bieten einen primären Einblick in die Erfahrung, die die wichtigsten Metriken für diese Kategorie in Ihrer Organisation enthält. Anschließend wird für diese Metriken ein Bewertungsframework verwendet, das unten beschrieben ist, um die Bewertung Ihrer Organisation zu berechnen.
 
-### <a name="primary-insight"></a>Primäre Einblicke
+### <a name="primary-insight"></a>Primärer Einblick
 
-Die primäre Einblicke betrachtet alle Personen, die über e-Mail und Nachrichten in Microsoft Teams kommunizieren, sowie die Interaktion mit Inhalten in der Cloud in freigegebenen Arbeitsbereichen. In Microsoft 365 sind Microsoft 365-Gruppen die Grundlage für Personen, die in einem freigegebenen Arbeitsbereich zusammen kommen, mit der Möglichkeit, e-Mails an das Gruppenpostfach zu senden, Dateien auf der SharePoint-Teamwebsite freizugeben und Kanal Nachrichten über Microsoft Teams zu senden.
+Der primäre Einblick betrachtet alle Personen, die über E-Mails und Nachrichten in Microsoft Teams kommunizieren und mit Inhalten in der Cloud in freigegebenen Arbeitsbereichen interagieren. In Microsoft 365 sind Microsoft 365-Gruppen die Grundlage für die Zusammenarbeit in einem freigegebenen Arbeitsbereich mit der Möglichkeit, E-Mails an das Gruppenpostfach zu senden, Dateien auf der SharePoint-Teamwebsite zu teilen und Kanalnachrichten über Microsoft Teams zu senden.
 
-:::image type="content" source="../../media/teamwork-score.png" alt-text="Diagramm mit primären Einblicken in das teamergebnis.":::
+:::image type="content" source="../../media/teamwork-score.png" alt-text="Diagramm mit primären Einblicken in die Teamarbeitsleistung.":::
 
-1. **Kopfzeile:** Stellt die wichtige Metrik von Personen dar, in denen eine der folgenden Aktivitäten durchgeführt wird:
-      - Senden von e-Mails an ein Gruppenpostfach über Exchange.
-      - Senden von Kanal Nachrichten über Teams
-      - Lesen und Erstellen von Inhalten (was wir gemeinsam als Inhalts Interaktion bezeichnen) in SharePoint-Teamwebsites.
+1. **Header:** Stellt die Schlüsselmetrik der Personen in ihrer Organisation bereit, die eine der folgenden Aktivitäten ausführen:
+      - Senden von E-Mails an ein Gruppenpostfach über Exchange.
+      - Senden von Kanalnachrichten über Teams
+      - Lesen und Erstellen von Inhalten (was wir gemeinsam als Inhaltsinteraktion bezeichnen) auf SharePoint-Teamwebsites.
 
         Als Prozentsatz aller Personen in Ihrer Organisation, die eine der folgenden Aktivitäten ausführen (innerhalb oder außerhalb freigegebener Arbeitsbereiche):
-        - Senden von e-Mails über Exchange.
-        - Senden von Nachrichten (Chat-oder Kanal Nachrichten) in Microsoft Teams.
-        - Lesen und Erstellen von Inhalten in OneDrive oder SharePoint.
+        - Senden von E-Mails über Exchange.
+        - Senden von Nachrichten (Chat- oder Kanalnachrichten) in Microsoft Teams.
+        - Lesen und Erstellen von Inhalten auf OneDrive oder SharePoint.
 
-            Und haben Zugriff auf mindestens einen der folgenden Dienste: Exchange, Microsoft Teams oder SharePoint
+            Und Zugriff auf mindestens einen der folgenden Dienste haben: Exchange, Microsoft Teams oder SharePoint
 
-1. **Body:** Enthält weitere Informationen darüber, wie die Kommunikation und Interaktion mit Inhalten in einem freigegebenen Arbeitsbereich positive Ergebnisse für die Produktivität in Ihrer Organisation haben kann.
+1. **Textkörper:** Enthält weitere Informationen dazu, wie die Kommunikation und Interaktion mit Inhalten innerhalb eines freigegebenen Arbeitsbereichs positive Ergebnisse für die Produktivität in Ihrer Organisation haben kann.
 2. **Visualisierung (aktueller Status):**
-      - Horizontale Leiste, wobei der blaue Teil den in der Kopfzeile ausgedrückten Prozentwert darstellt
-      - Markiert den Bruchteil (Zähler/Nenner), der für die Berechnung des in der Kopfzeile angezeigten Prozentsatzes verwendet wird.
-        - Zähler: die Anzahl der Personen in Ihrer Organisation, die über Exchange e-Mails an ein Gruppenpostfach senden oder die Kanal Nachrichten über Teams senden oder Inhalte in SharePoint-Teamwebsites lesen und erstellen.
-        - Nenner: die Anzahl der Personen in Ihrer Organisation, die e-Mails über Exchange senden oder Nachrichten (Chat-oder Kanal Nachrichten) in Microsoft Teams senden oder Inhalte in OneDrive oder SharePoint lesen und erstellen und über mindestens einen der folgenden Dienste Zugriff haben: Exchange, Microsoft Teams oder SharePoint.
-   - Der Peer-Benchmarkwert der Schlüssel Metrik wird auch als Prozentwert angezeigt.
+      - Horizontaler Balken, wobei der blaue Teil den in der Kopfzeile ausgedrückten Prozentsatz darstellt
+      - Hebt den Bruch (Zähler/Nenner) hervor, der für die Berechnung des in der Kopfzeile angezeigten Prozentsatzes verwendet wird.
+        - Zähler: Die Anzahl der Personen in Ihrer Organisation, die E-Mails über Exchange an ein Gruppenpostfach senden, ODER, die Kanalnachrichten über Teams senden oder Inhalte auf SharePoint-Teamwebsites lesen und erstellen.
+        - Denominator: Die Anzahl der Personen in Ihrer Organisation, die E-Mails über Exchange senden oder Nachrichten (Chat- oder Kanalnachrichten) in Microsoft Teams senden, ODER Inhalte auf OneDrive oder SharePoint lesen und erstellen und Zugriff auf mindestens einen der folgenden Dienste haben: Exchange, Microsoft Teams oder SharePoint.
+   - Der Peer-Benchmarkwert der Schlüsselmetrik wird auch als Prozentsatz angezeigt.
 3. **Anzeigen von Ressourcen zur Teamarbeit:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
-#### <a name="trend-visualization-of-the-primary-insight"></a>Trend Visualisierung der primären Einblicke
+#### <a name="trend-visualization-of-the-primary-insight"></a>Trendvisualisierung der primären Einblicke
 
-Das folgende Diagramm stellt den Trend des Zählers und den Nenner der Schlüssel Metrik in der primären Einsicht dar. Es zeigt die Anzahl der Personen an, die an freigegebenen Arbeitsbereichen beteiligt sind, sowie die Anzahl der Personen, die in den letzten 180 Tagen mit Inhalten kommunizieren oder mit ihr interagieren. Jeder Datenpunkt im Diagramm ist ein Aggregat von Aktivitäten für die letzten 28 Tage.
+Das folgende Diagramm enthält den Trend des Zählers und den Nenner der Schlüsselmetrik in der primären Einsicht. Es zeigt die Anzahl der Personen, die in freigegebenen Arbeitsbereichen beschäftigt sind, und die Anzahl der Personen, die innerhalb der letzten 180 Tage mit Inhalten kommunizieren oder mit inhalten interagieren. Jeder Datenpunkt im Liniendiagramm ist ein Aggregat der Aktivität für die letzten 28 Tage.
 
-:::image type="content" source="../../media/trend-peopleiinsharedworkspaces.png" alt-text="Diagramm, in dem die Anzahl der Personen angezeigt wird, die in freigegebenen Arbeitsbereichen tätig sind.":::
+:::image type="content" source="../../media/trend-peopleiinsharedworkspaces.png" alt-text="Diagramm, das die Anzahl der Personen an freigegebenen Arbeitsbereichen zeigt.":::
 
-### <a name="scoring-framework"></a>Bewertungs Framework
+### <a name="scoring-framework"></a>Bewertungsframework
 
-Das Ergebnis der Teamarbeit für Ihre Organisation misst auf einer aggregierten (organisatorischen) Ebene, unabhängig davon, ob Benutzer in den letzten 28 Tagen die Dateiaktivität in freigegebenen Arbeitsbereichen konsistent kommunizieren oder sich mit ihr beschäftigen.
+Die Teamarbeitsleistung für Ihre Organisation misst auf aggregierter (organisatorischer) Ebene, ob Benutzer innerhalb der letzten 28 Tage konsistent kommunizieren oder Dateiaktivitäten in freigegebenen Arbeitsbereichen ergreifen.
 
-Ergebnisse werden auf der einzelnen Benutzerebene nicht bereitgestellt.
+Die Ergebnisse werden nicht auf der einzelnen Benutzerebene bereitgestellt.
 
-## <a name="explore-more-about-teamwork-in-your-organization"></a>Erfahren Sie mehr über Teamarbeit in Ihrer Organisation.
+## <a name="explore-more-about-teamwork-in-your-organization"></a>Weitere Informationen zur Teamarbeit in Ihrer Organisation
 
-Außerdem stellen wir zusätzliche Informationen dazu bereit, wie Personen in Ihrer Organisation zusammenarbeiten. Diese zusätzlichen Metriken tragen nicht direkt zur Produktivitäts Bewertung bei, Sie sind jedoch für die Erstellung eines Aktionsplans im Rahmen ihrer digitalen Transformation relevant.
+Darüber hinaus stellen wir zusätzliche Informationen zur Zusammenarbeit von Personen in Ihrer Organisation zur Verfügung. Diese zusätzlichen Metriken tragen nicht direkt zu Ihrem Produktivitätsergebnis bei, sondern sind für die Erstellung eines Aktionsplans im Rahmen Ihrer digitalen Transformation relevant.
 
-### <a name="breakdown-of-how-people-engage-in-shared-workspaces"></a>Aufschlüsselung der Interaktion von Personen in freigegebenen Arbeitsbereichen
+### <a name="breakdown-of-how-people-engage-in-shared-workspaces"></a>Aufschlüsselung der Mitarbeiter in freigegebenen Arbeitsbereichen
 
-:::image type="content" source="../../media/people-sharedworkspace-engagement.png" alt-text="Diagramm, das zeigt, wie Personen in Ihrer Organisation in freigegebenen Arbeitsbereichen tätig sind.":::
+:::image type="content" source="../../media/people-sharedworkspace-engagement.png" alt-text="Diagramm, das zeigt, wie Personen in Ihrer Organisation in freigegebenen Arbeitsbereichen beschäftigt sind.":::
 
-1. **Kopfzeile:** Zeigt einen detaillierten Überblick über die verschiedenen Arten von Teamarbeit, die gemessen werden.
-2. **Body:** Enthält Informationen zum Nutzen von Arbeiten in freigegebenen Arbeitsbereichen, um Microsoft Teams effektiver zu gestalten.
-3. **Visualisierung:** Die Visualisierung zeigt, in welchem Ausmaß Personen, die Inhalte kommunizieren oder mit ihnen interagieren, in freigegebenen Arbeitsbereichen wie folgt vorgehen:
-      - **Senden von e-Mails**: der farbige Teil und der Anteil stellen den Prozentsatz der Personen dar, die e-Mails an Gruppen Postfächer senden. Die Fraktion besteht aus:
-        - Zähler: Personen, die in den letzten 28 Tagen e-Mails an Gruppen Postfächer gesendet haben.
-        - Nenner: Personen, die in den letzten 28 Tagen e-Mails gesendet haben. Dies ist die gleiche Gruppe von Personen, die in der primären Einblicke in die Produktivitäts Bewertung der Kommunikation als Senden von e-Mails gekennzeichnet sind.
-      - **Senden von Nachrichten**: der farbige Teil und der Anteil stellen den Prozentsatz der Personen dar, die Nachrichten in Kanälen in Microsoft Teams senden. Die Fraktion besteht aus:
-        - Zähler: Personen, die Kanal Nachrichten innerhalb der letzten 28 Tage senden.
-        - Nenner: Personen, die Chat-oder Kanal Nachrichten in den letzten 28 Tagen gesendet haben. Dies ist die gleiche Gruppe von Personen, die als Senden von Nachrichten in Microsoft Teams in der primären Einblicke der Kategorie Kommunikation in Produktivitäts Bewertung gekennzeichnet sind.
-    - **Erstellen von Inhalten**: der farbige Teil und der Bruchstellen den Prozentsatz der Personen dar, die Inhalte auf Microsoft 365 SharePoint-Teamwebsites lesen oder erstellen.
-        - Zähler: Anzahl der Personen, die Inhalte auf Microsoft 365 Group Connected-Teamwebsites lesen oder erstellen.
-        - Nenner: Anzahl der Personen mit Zugriff auf SharePoint, die in den letzten 28 Tagen Inhalte aller Art in OneDrive oder SharePoint-Websites gelesen oder erstellt haben.
-4. **Anzeigen von verwandtem Inhalt:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
+1. **Header:** Zeigt eine detaillierte Aufschlüsselung der verschiedenen Arten von Teamarbeit an, die gemessen werden.
+2. **Textkörper:** Enthält Informationen zum Wert der Arbeit in freigegebenen Arbeitsbereichen, um Teams effektiver zu gestalten.
+3. **Visualisierung:** Die Visualisierung zeigt, in welchem Umfang Personen, die mit Inhalten kommunizieren oder mit Inhalten interagieren, dies in freigegebenen Arbeitsbereichen tun, wie folgt:
+      - **Senden von E-Mails**: Der farbige Teil und der Anteil stellen den Prozentsatz der Personen dar, die E-Mails an Gruppenpostfächer senden. Der Bruch besteht aus:
+        - Zähler: Personen, die E-Mails an Gruppenpostfächer in den letzten 28 Tagen senden.
+        - Nenner: Personen, die E-Mails in den letzten 28 Tagen senden. Dies ist dieselbe Gruppe von Personen, die als Senden von E-Mails in der primären Einsicht in die Produktivitätswertung der Kommunikation gekennzeichnet sind.
+      - **Senden von** Nachrichten: Der farbige Teil und der Anteil stellen den Prozentsatz der Personen dar, die Nachrichten in Kanälen in Microsoft Teams senden. Der Bruch besteht aus:
+        - Zähler: Personen, die Kanalnachrichten innerhalb der letzten 28 Tage senden.
+        - Nenner: Personen, die Chat- oder Kanalnachrichten in den letzten 28 Tagen senden. Dies ist dieselbe Gruppe von Personen, die als Senden von Nachrichten in Microsoft Teams im primären Einblick der Kommunikationskategorie in Produktivitätsergebnis gekennzeichnet sind.
+    - **Erstellen von** Inhalten: Der farbige Teil und der Anteil stellen den Prozentsatz der Personen dar, die Inhalte auf Microsoft 365 SharePoint-Teamwebsites lesen oder erstellen.
+        - Zähler: Anzahl der Personen, die Inhalte auf Microsoft 365-Teamwebsites mit verbundenen Gruppen lesen oder erstellen.
+        - Nenner: Anzahl der Personen mit Zugriff auf SharePoint, die in den letzten 28 Tagen Inhalte beliebiger Art auf OneDrive- oder #A0 gelesen oder erstellt haben.
+4. **Anzeigen von verwandten Inhalten:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
-### <a name="breakdown-of-workspace-engagement-by-size-and-age"></a>Aufschlüsselung des Arbeitsbereichs Engagement nach Größe und Alter
+### <a name="breakdown-of-workspace-engagement-by-size-and-age"></a>Aufschlüsselung der Arbeitsbereichsbindung nach Größe und Alter
 
-:::image type="content" source="../../media/workspace-engagement-bysizeage.png" alt-text="Diagramm, in dem Engagement im Arbeitsbereich nach Größe und Alter kategorisiert wird.":::
+:::image type="content" source="../../media/workspace-engagement-bysizeage.png" alt-text="Diagramm, das die Interaktion im Arbeitsbereich nach Größe und Alter kategorisiert zeigt.":::
 
-1. **Kopfzeile:** Zeigt die Kategorisierung des Engagements in Arbeitsbereichen, aufgeschlüsselt nach Größe für die Anzahl der Mitglieder im Arbeitsbereich und das Arbeitsbereichs Alter in Monaten.
-2. **Body:** Enthält Informationen über den Wert der Förderung von Personen in Ihrer Organisation, nur die Arbeitsbereiche zu halten, die erforderlich sind, um eine effektivere Teamarbeit zu fördern.
-3. **Visualisierung:** Der Projekt Aufteilungsplan wird in Form einer heatkarte in zwei Dimensionen dargestellt.
+1. **Header:** Zeigt die Kategorisierung der Interaktion in Arbeitsbereichen, aufgeschlüsselt nach Größe für die Anzahl der Mitglieder im Arbeitsbereich und das Alter des Arbeitsbereichs in Monaten.
+2. **Textkörper:** Enthält Informationen darüber, wie wichtig es ist, Personen in Ihrer Organisation zu ermutigen, nur die Arbeitsbereiche zu behalten, die erforderlich sind, um eine effektivere Zusammenarbeit zu fördern.
+3. **Visualisierung:** Die Aufschlüsselung des Engagements wird in Form einer Heatmap über zwei Dimensionen angezeigt.
 
-      - **Größe des Arbeitsbereichs:** Arbeitsbereiche untergliedern sich in drei Kategorien basierend auf der Anzahl der Mitglieder: 2-10 Personen, 11-100 Personen und mehr als 100 Personen. Die &quot; &quot; Kategorie alle enthält alle Größenkategorien.
-      - **Alter des Arbeitsbereichs:** Arbeitsbereiche werden nach der Anzahl der Monate kategorisiert, seit der Arbeitsbereich erstmalig erstellt wurde. Die &quot; &quot; Kategorie alle umfasst alle Alterskategorien.
+      - **Größe des Arbeitsbereichs:** Arbeitsbereiche sind basierend auf der Anzahl der Mitglieder in drei Kategorien unterteilt: 2 bis 10 Personen, 11 bis 100 Personen und mehr als 100 Personen. Die &quot; Kategorie Alle enthält alle &quot; Größenkategorien.
+      - **Alter des Arbeitsbereichs:** Arbeitsbereiche werden nach der Anzahl der Monate kategorisiert, seit der Arbeitsbereich zum ersten Mal erstellt wurde. Die &quot; Kategorie Alle enthält alle &quot; Alterskategorien.
 
-        Jede Zelle im Diagramm hat eine Zahl und eine Farbe basierend auf dem Prozentsatz der verteilten Arbeitsbereiche, die zu dieser Kategorie gehören. Die Arbeitsbereichs Kategorien basieren auf dem Alter und der Größe, die im Schnittpunkt dieser Zelle angezeigt werden. Wenn beispielsweise die Zelle am Schnittpunkt von 11-100 Personen und 4-12 Monaten einen Wert von 52% hat, bedeutet dies, dass 52% der Arbeitsbereiche mit 11-100-Mitgliedern, die zwischen 4-12 Monate alt sind, eine gewisse Form von Engagement aufweisen. Der Prozentsatz wird wie folgt berechnet:
+        Jede Zelle im Diagramm verfügt über eine Zahl und Farbe basierend auf dem Prozentsatz der engagierten Arbeitsbereiche, die zu dieser Kategorie gehören. Die Arbeitsbereichskategorien basieren auf dem Alter und der Größe, die im Schnittpunkt dieser Zelle angezeigt werden. Wenn die Zelle an der Schnittmenge von 11 bis 100 Personen und 4 bis 12 Monaten beispielsweise einen Wert von 52 % hat, bedeutet dies, dass 52 % der Arbeitsbereiche mit 11 bis 100 Mitgliedern zwischen 4 und 12 Monaten eine Art Engagement haben. Der Prozentsatz wird wie folgt berechnet:
 
-        - **Zähler:** Arbeitsbereiche mit Engagement in Form von Kommunikation (e-Mail-und Kanal Nachrichten) oder Inhalts Interaktion in den letzten 28 Tagen
-        - **Nenner:** alle Arbeitsbereiche, die in Ihrer Organisation für die letzten 28 Tage verfügbar sind
+        - **Zähler:** Arbeitsbereiche, die in den letzten 28 Tagen in Form von Kommunikation (E-Mail- und Kanalnachrichten) oder inhaltsinteraktioniert wurden
+        - **Nenner: alle** Arbeitsbereiche, die in Ihrer Organisation für die letzten 28 Tage verfügbar sind
 
-1. **Anzeigen von verwandtem Inhalt:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
+1. **Anzeigen von verwandten Inhalten:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
-### <a name="breakdown-of-workspaces-by-level-of-engagement"></a>Aufschlüsselung der Arbeitsbereiche nach Engagements Ebene
+### <a name="breakdown-of-workspaces-by-level-of-engagement"></a>Aufschlüsselung der Arbeitsbereiche nach Engagementsstufe
 
-:::image type="content" source="../../media/workspace-by-engagement.png" alt-text="Diagramm, das den aufschlüsseln der Arbeitsbereiche nach Gruppen Engagement zeigt.":::
+:::image type="content" source="../../media/workspace-by-engagement.png" alt-text="Diagramm, das die Aufschlüsselung der Arbeitsbereiche nach Engagement nach Gruppen zeigt.":::
 
-1. **Kopfzeile:** Bietet eine Aufschlüsselung der Arbeitsbereiche, aufgeschlüsselt nach Engagements Ebene, Verwendung von Gruppen-e-Mails, Kanal Nachrichten und Inhalts Interaktion.
-2. **Body:** Enthält Informationen über den Wert des konsistenten Engagements in den freigegebenen Arbeitsbereichen, um Sie effektiver bei der Zusammenarbeit zu verbessern.
-3. **Visualisierung:** Bietet eine Ansicht der Arbeitsbereiche in Ihrer Organisation basierend auf der Intensität des Engagements pro Woche. Die Ansicht umfasst Verteilungen für unterschiedliche Aktivitätstypen, die in Teamarbeit gemessen werden, zusätzlich zu allen Engagements, die die folgenden Kategorien umfassen:
-      - **Gruppen-e-Mail:** Prozent der Arbeitsbereiche ohne Tage/1 Tag/2-3 Tage/4 + Tage der Gruppen-e-Mail-Aktivität pro Woche in den letzten 28 Tagen.
-      - **Kanalmeldungen:** Prozent der Arbeitsbereiche ohne Tage/1 Tag/2-3 Tage/4 + Tage Kanal Nachrichten pro Woche in den letzten 28 Tagen.
-      - **Lesen oder Erstellen von Inhalten:** Prozent der Arbeitsbereiche ohne Tage/1 Tag/2-3 Tage/4 + Tage des Lesens oder Erstellens von Inhalten pro Woche in den letzten 28 Tagen.
-4. **Anzeigen von verwandtem Inhalt:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
+1. **Header:** Stellt eine Aufschlüsselung der Arbeitsbereiche nach Interaktionsebene unter Verwendung von Gruppen-E-Mails, Kanalnachrichten und Inhaltsinteraktion zur Verfügung.
+2. **Textkörper:** Enthält Informationen zum Wert eines konsistenten Engagements in den freigegebenen Arbeitsbereichen, um sie bei der Teamarbeit effektiver zu gestalten.
+3. **Visualisierung:** Stellt eine Ansicht der Arbeitsbereiche in Ihrer Organisation basierend auf der Intensität des Engagements pro Woche zur Verfügung. Die Ansicht enthält Verteilungen für unterschiedliche Aktivitätstypen, die innerhalb der Teamarbeit gemessen werden, zusätzlich zu jeder Interaktion, die die folgenden Kategorien umfasst:
+      - **Gruppen-E-Mail:** Prozent der Arbeitsbereiche ohne Tage/1 Tag/2-3 Tage/4+ Tage gruppen-E-Mail-Aktivitäten pro Woche in den letzten 28 Tagen.
+      - **Kanalnachrichten:** Prozent der Arbeitsbereiche ohne Tage/1 Tag/2-3 Tage/4+ Tage Kanalnachrichten pro Woche in den letzten 28 Tagen.
+      - **Lesen oder Erstellen von Inhalten:** Prozent der Arbeitsbereiche ohne Tage/1 Tag/2-3 Tage/4+ Tage zum Lesen oder Erstellen von Inhalten pro Woche in den letzten 28 Tagen.
+4. **Anzeigen von verwandten Inhalten:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
-### <a name="use-of-teams-within-microsoft-teams"></a>Verwenden von Teams in Microsoft Teams
+### <a name="use-of-teams-within-microsoft-teams"></a>Verwendung von Teams in Microsoft Teams
 
-:::image type="content" source="../../media/useof-teams-within-teams.png" alt-text="Diagramm, das zeigt, wie viele Freigabe Arbeitsbereiche von Microsoft Teams verwendet werden.":::
+:::image type="content" source="../../media/useof-teams-within-teams.png" alt-text="Diagramm, das zeigt, wie viele Freigabearbeitsräume von Microsoft Teams verwendet werden.":::
 
-1. **Kopfzeile:** Zeigt die Anzahl der freigegebenen Arbeitsbereiche an, denen ein Microsoft Teams-Team zugeordnet ist.
-2. **Body:** Enthält Informationen über den Wert eines Microsoft Teams-Teams, das mit den freigegebenen Arbeitsbereichen verbunden ist, um die Effektivität von Personen in Zusammenarbeit zu verbessern.
-3. **Visualisierung:** Der farbige Teil des Donut-Diagramms gibt den Prozentsatz der Arbeitsbereiche wieder, denen ein Microsoft Teams-Team zugeordnet ist. Der Prozentsatz wird wie folgt berechnet:
+1. **Header:** Zeigt die Anzahl der freigegebenen Arbeitsbereiche an, deren Microsoft Teams-Team zugeordnet ist.
+2. **Textkörper:** Enthält Informationen darüber, wie wichtig es ist, ein Microsoft Teams-Team an die freigegebenen Arbeitsbereiche angefügt zu haben, um personen, die ihnen zugeordnet sind, bei der Teamarbeit effektiver zu gestalten.
+3. **Visualisierung:** Der farbige Teil des Donutdiagramms spiegelt den Prozentsatz der Arbeitsbereiche wider, an die ein Microsoft Teams-Team angefügt ist. Der Prozentsatz wird wie folgt berechnet:
 
-      - Zähler: die Anzahl von freigegebenen Arbeitsbereichen in Ihrer Organisation, denen in den letzten 28 Tagen ein Microsoft Teams-Team zugeordnet wurde
-      - Nenner: die Anzahl von freigegebenen Arbeitsbereichen in Ihrer Organisation in den letzten 28 Tagen
+      - Zähler: Die Anzahl der freigegebenen Arbeitsbereiche in Ihrer Organisation, mit der ein Microsoft Teams-Team in den letzten 28 Tagen verknüpft war
+      - Nenner: Die Anzahl der freigegebenen Arbeitsbereiche in Ihrer Organisation in den letzten 28 Tagen
 
-        Die Zahl in der Mitte des Donut-Diagramms stellt die Gesamtzahl der freigegebenen Arbeitsbereiche dar, denen ein Microsoft Teams-Team zugeordnet ist.
-4. **Anzeigen von verwandtem Inhalt:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
+        Die Zahl in der Mitte des Donutdiagramms stellt die Gesamtanzahl der freigegebenen Arbeitsbereiche dar, deren Microsoft Teams-Team zugeordnet ist.
+4. **Anzeigen von verwandten Inhalten:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Microsoft 365 apps Health – Technologie Erlebnisse](apps-health.md) (Artikel) \
-[Kommunikation – Personen Erfahrungen](communication.md) (Artikel) \
-[Content Collaboration – Personen Erfahrungen](content-collaboration.md) (Artikel) \
-[Besprechungen – Personen Erfahrungen](meetings.md) (Artikel) \
-[Mobilität – Personen Erfahrungen](mobility.md) (Artikel) \
-[Datenschutz-Steuerelemente für Produktivitäts Bewertung](privacy.md) (Artikel)
+[Microsoft 365 apps health – Technologieerfahrungen](apps-health.md) (Artikel)\
+[Kommunikation – Benutzererfahrungen](communication.md) (Artikel)\
+[Inhaltszusammenarbeit – Benutzererfahrungen](content-collaboration.md) (Artikel)\
+[Besprechungen – Benutzererfahrungen](meetings.md) (Artikel)\
+[Mobilität – Benutzererfahrungen](mobility.md) (Artikel)\
+[Datenschutzsteuerelemente für Produktivitätsergebnis](privacy.md) (Artikel)

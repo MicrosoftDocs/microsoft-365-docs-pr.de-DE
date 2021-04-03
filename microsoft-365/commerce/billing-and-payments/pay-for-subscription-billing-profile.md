@@ -19,21 +19,14 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 750420b6fac8fff16130710ef96a9ceb6345a87a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: be89c2d355202dd8ca8698ac735cbb384bb8ef06
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911830"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579770"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>So bezahlen Sie Ihr Abonnement mit einem Abrechnungsprofil
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Wenn Sie ein Abonnement kaufen, bezahlen Sie es mit einem Abrechnungsprofil. Das Abrechnungsprofil ist mit einer bestimmten Zahlungsmethode verknüpft und kann eine Kredit- oder Debitkarte oder eine Rechnung, aber kein Bankkonto sein.
 

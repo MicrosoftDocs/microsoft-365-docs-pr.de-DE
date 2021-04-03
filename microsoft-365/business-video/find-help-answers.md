@@ -2,8 +2,8 @@
 title: Nach Antworten und Hilfe suchen
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie die Administratorhilfe für Microsoft 365 Business Premium finden.
-ms.openlocfilehash: 5f09d74a5447b5023b2b3286a3aae504f707d44e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6d16f3ece9782a33c3377e4a6bc2a93b29d54c1a
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913634"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578903"
 ---
 # <a name="find-answers-and-help-for-admins"></a>Suchen von Antworten und Hilfe für Administratoren
 

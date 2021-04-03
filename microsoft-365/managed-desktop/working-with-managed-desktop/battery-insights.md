@@ -1,6 +1,6 @@
 ---
 title: Akku-Einblicke
-description: ''
+description: Ein Bericht, der Daten über die vorhergesagte Akkulaufzeit und die besten Stromverbraucher enthält
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,54 +9,55 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f339fc98ea94c291c533045e9906f626f4b74e2a
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+audience: Admin
+ms.openlocfilehash: 32ab3a984d5ab46aac26989518cd3e570082d688
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529839"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579710"
 ---
 # <a name="battery-insights"></a>Akku-Einblicke
-Diese Ansicht enthält Metriken für Energie, Akku und App-Nutzung für Ihre von Microsoft verwalteten Desktop Geräte. Für diese Zwecke wird eine App als "in Verwendung" betrachtet, wenn Sie aktiv ist und sich im Fokus befindet.
+Diese Ansicht bietet Leistungs-, Akku- und App-Nutzungsmetriken für Ihre Microsoft Managed Desktop-Geräte. Zu diesen Zwecken wird eine App als "in Gebrauch" betrachtet, wenn sie ausgeführt wird und im Fokus steht.
 
-Um Verwendungsdaten anzuzeigen, wählen Sie die Registerkarte **Akku** aus.
+Wählen Sie zum Anzeigen von Verwendungsdaten die Registerkarte **Akku** aus.
 
-![Batteriebereich: prognostizierte Batterielebensdauer pro Gerätemodell oben links, Top Energy Consumers (by APP) in der oberen rechten Ecke, Insights-Tabelle auf der unteren Seite. Link zur Dokumentation in der oberen rechten Ecke.](../../media/insights_battery.png)
+![Akkubereich: Vorhergesagte Akkulaufzeit pro Gerätemodell oben links, Energieverbraucher (per App) oben rechts, Einblicke tabelle unten. Dokumentationslink oben rechts](../../media/insights_battery.png)
 
-## <a name="predicted-battery-life"></a>Prognostizierte Akkulaufzeit
+## <a name="predicted-battery-life"></a>Vorhergesagte Akkulaufzeit
 
-Im Bereich der **prognostizierten Akkulaufzeit** stellen wir Vorhersagen für die erwartete Akkulaufzeit Ihrer Geräte bereitgestellt, geordnet nach dem Gerätemodell.
+Im Bereich **Vorhergesagte** Akkulaufzeit bieten wir Vorhersagen für die erwartete Akkulaufzeit für Ihre Geräte, organisiert nach Gerätemodell.
 
 > [!NOTE]
-> Diese Daten stammen aus einer Stichprobenahme von Energieverbrauch, Nutzungszeit und Batteriekapazität aus einer zufälligen <em>Auswahl</em> der Geräte in Ihrer Microsoft Managed Desktop-Bereitstellung, die auch Daten melden.
+> Diese Daten werden aus einer zufälligen Auswahl der Geräte <em></em> in Ihrer Microsoft Managed Desktop-Bereitstellung abgeleitet, die auch Daten melden.
 
-Die Tabelle enthält die prognostizierte Batterielebensdauer (in Stunden), die durchschnittliche Lebensdauer der Batterie für dieselben Modelle in anderen Microsoft Managed Desktop-Bereitstellungen sowie die Anzahl der Geräte, die diese Daten in Ihrer Umgebung melden. Sortieren Sie die Daten, indem Sie die Spaltenüberschriften auswählen.
+Die Tabelle enthält die vorhergesagte Akkulaufzeit (in Stunden), die durchschnittliche Akkulaufzeit für dieselben Modelle in anderen Microsoft Managed Desktop-Bereitstellungen und die Anzahl der Geräte, die diese Daten in Ihrer Umgebung melden. Sortieren Sie die Daten, indem Sie die Spaltenüberschriften auswählen.
 
 
 
-## <a name="top-energy-consumers"></a>Top Energy Consumer
+## <a name="top-energy-consumers"></a>Energieverbraucher am meisten
 
-Im Bereich der **oberen Energieverbraucher** finden Sie die apps in Ihrer Umgebung, die die meiste Energie in milliWatt-Stunden (MWh) verbrauchen. Die gezeigten apps sind pro spezifischem Gerät, das Sie im Abschnitt " **voraussichtliche Lebensdauer der Batterie** " Links auswählen. Wenn Sie beispielsweise den pro-App-Verbrauch für Ihre Microsoft Surface Book 2-Geräte anzeigen möchten, wählen Sie diese Zeile im Bereich Battery Life aus. Wenn Sie kein Modell auswählen, werden die angezeigten App-Nutzungsdaten für alle apps angezeigt, für die wir Daten gemeinsam haben.
+Im Bereich **Top energy consumers** finden Sie die Apps in Ihrer Umgebung, die die meiste Energie in mgWatt-Stunden (mWh) verbrauchen. Die angezeigten Apps werden pro bestimmtem Gerät angezeigt, das Sie im Abschnitt **"Vorhergesagte Akkulaufzeit"** links auswählen. Wenn Sie z. B. den Verbrauch pro App für Microsoft Surface Book 2-Geräte sehen möchten, wählen Sie diese Zeile im Bereich Akkulaufzeit aus. Wenn Sie kein Modell auswählen, werden die angezeigten App-Nutzungsdaten für alle Apps verwendet, für die wir Daten gemeinsam verwenden.
 
- Für jede APP zeigen farbige Segmente die Verteilung der Energieverwendung der app in den folgenden Kategorien an:
+ Für jede App zeigen farbige Segmente die Verteilung des Energieverbrauchs der App unter den folgenden Kategorien an:
 
 - CPU
 - Anzeigen
 - Netzwerk
 - Andere
 
-"Sonstiges" könnte den Energieverbrauch durch eine Vielzahl von Quellen wie Datenträgeraktivität, mobile Breitbandnutzung und Energieverlust im internen Widerstand einschließen. 
+"Other" könnte den Energieverbrauch aus einer Vielzahl von Quellen umfassen, z. B. Datenträgeraktivität, mobile Breitbandnutzung und Energie, die durch internen Widerstand verloren geht. 
 
-Sie können diese Ansicht filtern, um nur Vordergrund-apps, Hintergrund-Apps oder beides anzuzeigen, indem Sie das Menü in der oberen rechten Ecke verwenden. Apps im Vordergrund sind solche, die in den letzten 28 Tagen Benutzerinteraktion hatten, beispielsweise das Auswählen von etwas mit einer Maus.
+Sie können diese Ansicht filtern, um nur Vordergrund-Apps, Hintergrund-Apps oder beides anzuzeigen, indem Sie das Menü oben rechts verwenden. Vordergrund-Apps sind Apps, die in den letzten 28 Tagen eine Benutzerinteraktion hatten, z. B. das Auswählen einer Maus.
 
-## <a name="insights"></a>Insights
+## <a name="insights"></a>Einblicke
 
-Der Bereich " **Insights** " zeigt die drei wichtigsten Energieverbraucher in den Kategorien CPU und Netzwerk an. Diese Elemente verbrauchen mehr als die durchschnittliche Energie im Vergleich zu allen Microsoft Managed Desktop-Bereitstellungen. Die Anzeige Ressource wird nicht angezeigt, da Sie stark von der Geräte Nutzungszeit und den Bildschirm Helligkeitseinstellungen abhängt. 
+Der **Bereich Insights** zeigt die drei Energieverbraucher in den Kategorien CPU und Netzwerk an. Diese Elemente verbrauchen im Vergleich zu allen Microsoft Managed Desktop-Bereitstellungen überdurchschnittlich viel Energie. Die Anzeigeressource wird nicht angezeigt, da sie stark von der Gerätenutzungszeit und den Einstellungen für die Bildschirmhelligkeit abhängt. 
 
-Wählen Sie die Auflistungen in der Spalte **Details** aus, um weitere Informationen zu erhalten.
+Wählen Sie die Einträge in der **Spalte Details** aus, um weitere Informationen zu erhalten.
 
-## <a name="battery-optimization"></a>Batterieoptimierung
+## <a name="battery-optimization"></a>Akkuoptimierung
 
-Windows 10 bietet zahlreiche [Geräteeinstellungen](https://support.microsoft.com/help/20443/windows-10-battery-saving-tips) , um den Energieverbrauch zu verbessern und die Akkulaufzeit Ihrer verwalteten Microsoft-Desktop Geräte zu erhöhen. Einige dieser Einstellungen können andere Windows-Funktionen verringern, sodass Sie auch andere Faktoren wie die Rolle des Geräts in Ihrer Organisation berücksichtigen müssen. Die Windows-Unterstützung enthält eine Liste dieser [Tipps zum Speichern von Akkus](https://support.microsoft.com/help/20443/windows-10-battery-saving-tips).
+Windows 10 bietet zahlreiche [Geräteeinstellungen,](https://support.microsoft.com/help/20443/windows-10-battery-saving-tips) um den Energieverbrauch zu verbessern und die Akkulaufzeit Ihrer Microsoft Managed Desktop-Geräte zu erhöhen. Einige dieser Einstellungen können andere Windows-Funktionen verringern, sodass Sie auch andere Faktoren berücksichtigen müssen, z. B. die Rolle des Geräts in Ihrer Organisation. Die Windows-Unterstützung verwaltet eine Liste dieser [Tipps zum Speichern von Akkus.](https://support.microsoft.com/help/20443/windows-10-battery-saving-tips)
 
-Benutzer können einige Einstellungen selbst anpassen, ohne dass Sie eine Administrator Erweiterung oder-Unterstützung benötigen. Andere Einstellungen erfordern Unterstützung durch den IT-Administrator Ihrer Organisation.
+Benutzer können einige Einstellungen selbst anpassen, ohne dass administratorerweiterungen oder -support benötigt werden. Andere Einstellungen erfordern Unterstützung durch den IT-Administrator Ihrer Organisation.

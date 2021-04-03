@@ -2,8 +2,8 @@
 title: Erstellen von Vertraulichkeitsbezeichnungen
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Vertraulichkeitsbezeichnungen erstellen und verwalten.
-ms.openlocfilehash: e1e7d030065ab5146056d36f396eb5ddd44f360e
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 997b05ba549d3dc57e1793585331dfcfae1e277b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422783"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578939"
 ---
 # <a name="protect-documents-with-sensitivity-labels"></a>Schützen von Dokumenten mit Vertraulichkeitsbezeichnungen
 

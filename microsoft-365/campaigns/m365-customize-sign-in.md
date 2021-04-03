@@ -2,8 +2,8 @@
 title: Anpassen der Anmeldeseite mit einer Datenschutz- und Zustimmungsbenachrichtigung
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 ms.audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Passen Sie Ihre Anmeldeseite mit einem Datenschutz- und Zustimmungshinweise für Microsoft 365 an.
-ms.openlocfilehash: cb6e7f91c31e1a8bbacb9904a5aad7a76af8ffcb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 652566ca1caf46cd224e5205da3bebfd7b25cefa
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912118"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579806"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Anpassen Der Anmeldeseite mit einem Datenschutz- und Zustimmungsbemerkung
 

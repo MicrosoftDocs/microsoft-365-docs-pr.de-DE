@@ -15,21 +15,14 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie mit Von Microsoft zertifizierten Lösungsanbietern (Partnern) zum Kauf und Verwalten von Produkten und Diensten für Ihre Organisation oder Schule arbeiten.
-ms.openlocfilehash: 3297b2322983eabb793116a450a618b3a62a5a9c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a0c70f229ff11132beccf118f4158ab2880a8aa6
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911398"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579734"
 ---
 # <a name="manage-partner-relationships"></a>Verwalten von Partnerbeziehungen
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Sie können mit Microsoft-zertifizierten Lösungsanbietern (Partnern) zusammenarbeiten, um Produkte und Dienste für Ihre Organisation oder Schule zu erwerben und zu verwalten. Es gibt einige Schritte beim Einrichten von Dingen.
 
@@ -37,7 +30,7 @@ Sie können mit Microsoft-zertifizierten Lösungsanbietern (Partnern) zusammenar
 2. Partner senden eine E-Mail-Anforderung an Kunden, um eine Partnerbeziehung zu gründen.
 3. Kunden akzeptieren die Einladung im Microsoft 365 Admin Center und beginnen mit der Zusammenarbeit mit dem Partner.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Sie müssen entweder ein globaler Administrator oder ein Abrechnungsadministrator sein, um diese Schritte ausführen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../admin/add-users/about-admin-roles.md).
 

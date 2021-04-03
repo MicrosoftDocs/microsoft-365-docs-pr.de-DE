@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0311450386f3b7c9f950276340901daacc06b2a8
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+audience: Admin
+ms.openlocfilehash: caf9274284548a179e088131930ae832c098b521
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453936"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579398"
 ---
 # <a name="readiness-assessment-tools"></a>Tools für die Bereitschaftsbewertung
 
@@ -89,3 +90,15 @@ Für jede Prüfung berichtet das Tool eines von vier möglichen Ergebnissen:
 ## <a name="after-enrollment"></a>Nach der Registrierung
 
 Nachdem Sie die Registrierung bei Microsoft Managed Desktop abgeschlossen haben, denken Sie daran, zurück zu gehen und bestimmte Intune- und Azure AD-Einstellungen anzupassen. Weitere Informationen finden Sie unter [Anpassen von Einstellungen nach der Registrierung](../get-started/conditional-access.md).
+
+## <a name="steps-to-get-ready"></a>Schritte für die ersten Schritte
+
+1. Überprüfen [Sie die Voraussetzungen für Microsoft Managed Desktop](prerequisites.md).
+2. Verwenden [Sie Die Bereitschaftsbewertungstools](readiness-assessment-tool.md). (Dieser Artikel)
+3. [Voraussetzungen für Gastkonten](guest-accounts.md)
+4. [Netzwerkkonfiguration für Microsoft Managed Desktop](network.md)
+5. [Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop](certs-wifi-lan.md)
+6. [Vorbereiten des lokalen Ressourcenzugriffs für Microsoft Managed Desktop](authentication.md)
+7. [Anwendungen in Microsoft Managed Desktop](apps.md)
+8. [Voraussetzungen von zugeordneten Laufwerken für Microsoft Managed Desktop](mapped-drives.md)
+9. [Voraussetzungen von Druckressourcen für Microsoft Managed Desktop](printing.md)

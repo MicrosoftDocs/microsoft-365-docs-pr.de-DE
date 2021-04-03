@@ -2,8 +2,8 @@
 title: Microsoft 365 Apps for Business einrichten
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Erfahren Sie, wie Sie Ihr Microsoft 365-Apps für Business-Abonnement einrichten.
-ms.openlocfilehash: 04a1d4878e1d3d3e16e20a39dbadf2a7d3724e7b
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 56eb3eb0f28ee99aab1c50a970626c61514335cd
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126151"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579098"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Microsoft 365 Apps for Business einrichten
 

@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365-Berichte im Admin Center – jammern-Aktivitätsbericht
+title: Microsoft 365-Berichte im Admin Center – Yammer Aktivitätsbericht
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: Rufen Sie den Yammer-Aktivitätsbericht ab. Dieser stellt Ihnen Informationen über die Anzahl der Benutzer bereit, die Yammer verwenden, um eine Nachricht zu posten, mit "Gefällt mir" zu kennzeichnen oder zu lesen.
-ms.openlocfilehash: 2bf02c0599f999b0eebb52d119096567bb09508b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5ebf180189b2785070c269ef15b6a6c6c9f7f61a
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387465"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579482"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365-Berichte im Admin Center – jammern-Aktivitätsbericht
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365-Berichte im Admin Center – Yammer Aktivitätsbericht
 
 Das Dashboard **Berichte** zeigt Ihnen als Microsoft 365-Administrator Ihre Daten im Hinblick auf die Nutzung der Produkte innerhalb Ihrer Organisation an. Schauen Sie sich [Aktivitätsberichte im Admin Center](activity-reports.md) an. Mit dem **Yammer-Aktivitätsbericht** können Sie den Grad des Engagements Ihrer Organisation mit Yammer erkennen. Dazu schauen Sie sich die Anzahl eindeutiger Benutzer, die über Yammer eine Nachricht posten, lesen oder mit "Gefällt mir" bewerten, und den Umfang der Aktivitäten an, die organisationsweit generiert wurden. 
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator, ein globaler Leser oder ein Leser von Berichten in Microsoft 365 oder einer Exchange-, SharePoint-, Teams-Dienst-, Microsoft Teams-oder Skype for Business-Administrator sein, um Berichte anzuzeigen. 
+> Sie müssen ein globaler Administrator, globaler Leser oder Berichtleser in Microsoft 365 oder ein Exchange-, SharePoint-, Teams-Dienst-, Teams Communications- oder Skype for Business-Administrator sein, um Berichte anzeigen zu können. 
  
 ## <a name="how-to-get-to-the-yammer-activity-report"></a>Aufrufen des Yammer-Aktivitätsberichts
 
@@ -83,7 +83,7 @@ Der Aktivitätsbericht enthält die folgenden Informationen.
     
   - **Benutzername** ist die E-Mail-Adresse des Benutzers. Sie können die eigentliche E-Mail-Adresse anzeigen oder dieses Feld anonymisieren. 
     
-    Dieses Raster zeigt Benutzer an, die sich bei jammern mit dem Microsoft 365-Konto angemeldet haben oder sich mit einmaligem Anmelden am Netzwerk angemeldet haben.
+    Dieses Raster zeigt Benutzer, die sich mit Yammer Microsoft 365-Konto angemeldet haben oder sich über einmaliges Anmelden am Netzwerk angemeldet haben.
     
   - **Anzeigename** ist der vollständige Name des Benutzers. Sie können die eigentliche E-Mail-Adresse anzeigen oder dieses Feld anonymisieren. 
     
@@ -113,6 +113,6 @@ Der Aktivitätsbericht enthält die folgenden Informationen.
     
 - **Keine externen Netzwerkdaten** – Externe Netzwerkdaten sind in diesen Berichten nicht enthalten. 
     
-- **Aktivierte Netzwerke** Diese Berichte zeigen Daten für das Jammern-Netzwerk an, das Teil Ihres Microsoft 365-Abonnements ist. Das Diagramm aggregiert die Verwendung aller Benutzer, die sich am Jammer Netzwerk angemeldet haben, unabhängig davon, ob Sie Microsoft 365 oder jammern für die Anmeldung verwendet haben. 
+- **Aktivierte Netzwerke** Diese Berichte zeigen Daten für das Yammer, das Teil Ihres Microsoft 365-Abonnements ist. Das Diagramm aggregiert die Nutzung aller Benutzer, die sich beim Yammer-Netzwerk angemeldet haben, unabhängig davon, ob sie Microsoft 365 oder Yammer anmeldung verwendet haben. 
     
 

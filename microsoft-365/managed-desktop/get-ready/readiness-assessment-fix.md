@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 75c2967037ae83abca2aaa3cd02d1f6b2ae14caa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 5a22996ce9e39dc16191ddddc6aa9393de557bbc
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925916"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579410"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Lösen von Problemen, die durch das Tool zur Bereitschaftsbewertung gefunden wurden
 
@@ -26,7 +27,7 @@ Für jede Prüfung berichtet das Tool eines von vier möglichen Ergebnissen:
 |Bereit     | Vor Abschluss der Registrierung ist keine Aktion erforderlich.        |
 |Empfehlung    | Führen Sie die Schritte im Tool oder in diesem Artikel aus, um eine optimale Erfahrung mit der Registrierung und für Benutzer zu erhalten. Sie *können* die Registrierung abschließen, aber Sie müssen diese Probleme beheben, bevor Sie Ihr erstes Gerät bereitstellen.        |
 |Nicht bereit | *Wenn Sie diese Probleme nicht beheben, wird bei der Registrierung ein Fehler auftreten.* Führen Sie die Schritte im Tool oder in diesem Artikel aus, um sie zu beheben.        |
-|Fehler | Die von Ihnen verwendeten Azure Active Directory (AD)-Rolle verfügt nicht über ausreichende Berechtigungen, um diese Überprüfung ausführen zu können. |
+|Error | Die von Ihnen verwendeten Azure Active Directory (AD)-Rolle verfügt nicht über ausreichende Berechtigungen, um diese Überprüfung ausführen zu können. |
 
 > [!NOTE]
 > Die von diesem Tool gemeldeten Ergebnisse spiegeln den Status Ihrer Einstellungen nur zu dem bestimmten Zeitpunkt wider, zu dem Sie sie erstellt haben. Wenn Sie später Änderungen an Richtlinien in Microsoft Intune, Azure Active Directory oder Microsoft 365 vornehmen, können Elemente, die "Bereit" waren, "Nicht bereit" werden. Um Probleme mit Microsoft Managed Desktop-Vorgängen zu vermeiden, überprüfen Sie die in diesem Artikel beschriebenen spezifischen Einstellungen, bevor Sie Richtlinien ändern.
@@ -78,7 +79,7 @@ Sie verfügen über mindestens eine Richtlinie für bedingten Zugriff, die auf a
 
 Sie verfügen über Richtlinien für bedingten Zugriff, die verhindern können, dass Microsoft Managed Desktop den Microsoft Managed Desktop-Dienst verwaltet. Während der Registrierung schließen wir Microsoft Managed Desktop-Dienstkonten aus relevanten Richtlinien für bedingten Zugriff aus und wenden neue Richtlinien für bedingten Zugriff an, um den Zugriff auf diese Konten einzuschränken. Weitere Informationen zu diesen Dienstkonten finden Sie unter [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
-**Error**
+**Fehler**
 
 Die Intune-Administratorrolle verfügt nicht über ausreichende Berechtigungen für diese Prüfung. Sie benötigen außerdem eine der folgenden Azure AD-Rollen, um diese Prüfung ausführen zu können:
 
@@ -159,7 +160,7 @@ Sie haben einige mehrstufige Authentifizierungsrichtlinien als erforderlich für
 
 Für Richtlinien für bedingten Zugriff ist eine mehrstufige Authentifizierung erforderlich, die verhindern könnte, dass Microsoft Managed Desktop den Microsoft Managed Desktop-Dienst verwaltet. Während der Registrierung schließen wir Microsoft Managed Desktop-Dienstkonten aus relevanten Richtlinien für bedingten Zugriff aus und wenden neue Richtlinien für bedingten Zugriff an, um den Zugriff auf diese Konten einzuschränken. Weitere Informationen zu diesen Dienstkonten finden Sie unter [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
-**Error**
+**Fehler**
 
 Die Intune-Administratorrolle verfügt nicht über ausreichende Berechtigungen für diese Prüfung. Sie benötigen außerdem eine der folgenden Azure AD-Rollen, um diese Prüfung ausführen zu können:
 

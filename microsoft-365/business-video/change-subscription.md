@@ -2,8 +2,8 @@
 title: Verschieben von Benutzern in verschiedene Abonnements
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Benutzer in ein anderes Abonnement verschieben.
-ms.openlocfilehash: 158201eb4bcdf7e4b7451c1811dcc68692f341ff
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 4f26e890e7c3c008c807dfed75829562dbebd087
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422963"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578977"
 ---
 # <a name="move-users-to-different-subscriptions"></a>Verschieben von Benutzern in verschiedene Abonnements
 

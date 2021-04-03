@@ -6,17 +6,17 @@ metadata:
   description: Überwachen Sie den Status Ihres Dienstes, sichern Sie Daten, installieren Sie Add-Ins und führen Sie ein Upgrade auf die neuesten Apps durch
   ms.service: O365-administration
   ms.topic: landing-page
-  author: sirkkuw
-  ms.author: sirkkuw
+  author: kwekua
+  ms.author: kwekua
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: a483f0d60d54e1436738d44f95bfed3524968d18
-  ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+  ms.openlocfilehash: 63b3a0daa8c40a74e7da92aab1ded380e9985812
+  ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 03/23/2021
-  ms.locfileid: "51050702"
+  ms.lasthandoff: 04/02/2021
+  ms.locfileid: "51579278"
 landingContent:
 - title: Überwachen des Status unseres Diensts
   linkLists:

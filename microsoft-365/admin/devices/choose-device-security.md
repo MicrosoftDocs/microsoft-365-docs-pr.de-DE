@@ -2,8 +2,8 @@
 title: Vergleichen verschiedener Geräte- und App-Datenschutzmethoden
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Wählen Sie zwischen verschiedenen MDM- und MAM-Methoden.
-ms.openlocfilehash: c4928f272c0bdd8a7b6883f506cebf9a153e9c49
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 462fe28b1240681380d6a1d26ae362575c0d7c86
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910534"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579362"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>Optionen zum Schutz Ihrer Geräte und App-Daten
 

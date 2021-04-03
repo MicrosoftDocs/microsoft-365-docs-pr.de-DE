@@ -2,8 +2,8 @@
 title: Importieren und Umleiten von E-Mails
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie E-Mails in Microsoft 365 Business importieren.
-ms.openlocfilehash: 1339582fea07b276bf264d2635ea85a38b26c1c2
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 7049642d071ff6b16a489a89c9355b35667a1e58
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422555"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578891"
 ---
 # <a name="import-email-to-microsoft-365-for-business"></a>Importieren von E-Mails in Microsoft 365 Business 
 

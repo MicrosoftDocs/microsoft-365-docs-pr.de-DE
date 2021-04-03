@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365-Berichte im Admin Center-Microsoft 365-Gruppen
-ms.author: sirkkuw
-author: Sirkkuw
+title: Microsoft 365-Berichte im Admin Center – Microsoft 365-Gruppen
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,37 +18,37 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
-description: Informieren Sie sich über die Gruppen und ihre Aktivitäten über einen Microsoft 365-Gruppenbericht.
-ms.openlocfilehash: b45582388103e843e2893cfceb9aa1106cb9ce76
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+description: Erhalten Sie einen Microsoft 365-Gruppenbericht, um die Gruppen und ihre Aktivitäten kennen zu lernen.
+ms.openlocfilehash: 9ab034531099b5572c42eb3a48ec28d99487ac99
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295094"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579554"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365-Berichte im Admin Center-Microsoft 365-Gruppen
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365-Berichte im Admin Center – Microsoft 365-Gruppen
 
-Im Microsoft 365 **Reports** -Dashboard wird die Aktivitätsübersicht für die Produkte in Ihrer Organisation angezeigt. Sie können Drilldowns zu Einzelberichten auf Produktebene ausführen und auf diese Weise genauere Einblicke in die Aktivitäten innerhalb der einzelnen Produkte erhalten. Sehen Sie sich die [Übersicht über Berichte](activity-reports.md) an. Im Microsoft 365 Groups-Bericht erhalten Sie Einblicke in die Aktivitäten von Gruppen in Ihrer Organisation und sehen, wie viele Gruppen erstellt und verwendet werden.
+Das Microsoft 365 **Reports-Dashboard** zeigt Ihnen die Übersicht über die Aktivitäten in den Produkten in Ihrer Organisation. Sie können Drilldowns zu Einzelberichten auf Produktebene ausführen und auf diese Weise genauere Einblicke in die Aktivitäten innerhalb der einzelnen Produkte erhalten. Sehen Sie sich die [Übersicht über Berichte](activity-reports.md) an. Im Microsoft 365-Gruppenbericht können Sie Einblicke in die Aktivitäten von Gruppen in Ihrer Organisation gewinnen und sehen, wie viele Gruppen erstellt und verwendet werden.
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator, ein globaler Leser oder ein Leser von Berichten in Microsoft 365 oder einer Exchange-, SharePoint-, Teams-Dienst-, Microsoft Teams-oder Skype for Business-Administrator sein, um Berichte anzuzeigen.  
+> Sie müssen ein globaler Administrator, globaler Leser oder Berichtleser in Microsoft 365 oder ein Exchange-, SharePoint-, Teams-Dienst-, Teams Communications- oder Skype for Business-Administrator sein, um Berichte anzeigen zu können.  
   
 ## <a name="how-to-get-to-the-groups-report"></a>So gelangen Sie zum Gruppenbericht
 
 1. Wechseln Sie im Admin Center zur Seite **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a>.
 
-2. Wählen Sie unter **aktive Benutzer – Microsoft 365-Dienste**die Option **mehr anzeigen** aus.
+2. Wählen Sie in den Optionen unter Aktive **Benutzer** **– Microsoft 365** Services weitere Anzeigen aus.
 3. Wählen Sie in der Dropdownliste **Bericht auswählen** den Eintrag **Office 365** \> **Gruppenaktivität** aus.
   
 ## <a name="interpret-the-groups-report"></a>Interpretieren des Gruppenberichts
 
 Sie können sich einen Überblick über die Aktivitäten von Gruppen verschaffen, indem Sie sich die Diagramme **Gruppen**, **Aktivität**, **Dateien** und **Speicher** ansehen. 
   
-![Microsoft 365 Reports-Gruppenaktivitäten](../../media/852027a4-8eab-47d1-b770-2bb874bdc403.png)
+![Microsoft 365-Berichte – Gruppenaktivitäten](../../media/852027a4-8eab-47d1-b770-2bb874bdc403.png)
   
 |Element|Beschreibung|
 |:-----|:-----|
-|1.  <br/> |Der **Microsoft 365-Gruppen** Bericht kann für Trends in den letzten 7 Tagen, 30 Tagen, 90 Tagen oder 180 Tagen angezeigt werden. Wenn Sie im Bericht jedoch einen bestimmten Tag auswählen, werden in der Tabelle (7) Daten für bis zu 28 Tage ab dem aktuellen Datum angezeigt (nicht ab dem Datum, an dem der Bericht generiert wurde).  <br/> |
+|1.  <br/> |Der **Microsoft 365-Gruppenbericht** kann für Trends der letzten 7 Tage, 30 Tage, 90 Tage oder 180 Tage angezeigt werden. Wenn Sie im Bericht jedoch einen bestimmten Tag auswählen, werden in der Tabelle (7) Daten für bis zu 28 Tage ab dem aktuellen Datum angezeigt (nicht ab dem Datum, an dem der Bericht generiert wurde).  <br/> |
 |2.  <br/> |Die Daten in den einzelnen Berichten decken in der Regel die letzten 24 bis 48 Stunden ab.  <br/> |
 |3.  <br/> |In der Ansicht **Gruppen** wird die Gesamtzahl der Gruppen angezeigt, die an einem bestimmten Tag vorhanden waren, sowie aktive Gruppen an dem betreffenden Tag basierend auf E-Mail-Unterhaltungen, Yammer-Beiträgen, SharePoint-Dateiaktivitäten und angezeigten SharePoint-Seiten.  <br/> |
 |4.  <br/> |Die Ansicht **Aktivität** zeigt die Anzahl der Gruppenaktivitäten für Gruppenarbeitslasten an. Sie können die Exchange-E-Mails, die von den Gruppenpostfächern empfangen wurden, für alle Gruppen an einem beliebigen Tag während des Berichtszeitraums anzeigen. Sie können auch die veröffentlichten, gelesenen und mit "Gefällt mir" markierten Nachrichten in Yammer-Gruppen anzeigen, die einer Gruppe zugeordnet sind. <br/> |

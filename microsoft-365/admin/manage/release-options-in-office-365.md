@@ -2,8 +2,8 @@
 title: Einrichten der Standard- oder Zielversionsoptionen
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Erfahren Sie, wie Sie die Releaseoption für neue Produkt- und Featuresupdates im Microsoft 365 Admin Center einrichten.
-ms.openlocfilehash: 6c5d505f0ece47b0a47df8b7ed1dc015afe93e82
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: d3692f2e1cca58fec81f2ad492b9232d5576f99b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470571"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579254"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Einrichten der Standard- oder Zielversionsoptionen
 
@@ -107,7 +107,7 @@ Sie können ändern, wie Ihre Organisation Microsoft 365-Updates empfängt, inde
 
 
   
-## <a name="learn-more"></a>Weitere Informationen
+## <a name="learn-more"></a>Mehr erfahren
 
 Erfahren Sie, wie [Sie Nachrichten](/office365/admin/manage/message-center) in [Ihrem Microsoft 365 Message Center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) verwalten, um Benachrichtigungen über anstehende Microsoft 365-Updates und -Versionen zu erhalten.
 

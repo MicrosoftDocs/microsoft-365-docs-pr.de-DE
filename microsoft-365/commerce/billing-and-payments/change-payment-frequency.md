@@ -21,21 +21,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie ändern können, wie oft Sie für Ihr Geschäftsabonnement in Rechnung gestellt werden.
-ms.openlocfilehash: ae3e3b4d0231fc5992215d243e141fb643d13626
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a7d2f60e25611025e5b06d4e78555d59c486626d
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911890"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579794"
 ---
 # <a name="change-your-billing-frequency"></a>Ändern der Abrechnungshäufigkeit
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Wenn Sie ein Abonnement kaufen, wählen Sie monatliche oder jährliche Abrechnung aus. Verwenden Sie die folgenden Schritte, um zu ändern, wie oft Ihnen ein Abonnement in Rechnung zu stehen kommt.
 

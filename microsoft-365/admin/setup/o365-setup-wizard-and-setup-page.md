@@ -1,9 +1,9 @@
 ---
-title: Unterschied zwischen dem Setup-Assistenten und der Setup-Seite
+title: Unterschied zwischen dem Setup-Assistenten und der Setupseite
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,53 +19,53 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: Erfahren Sie mehr über den Unterschied zwischen dem Setup-Assistenten und der Seite Setup.
-ms.openlocfilehash: dd04920c1c686cd0082b0d3c11cc7869e5d3f4eb
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+description: Erfahren Sie mehr über den Unterschied zwischen dem Setup-Assistenten und der Setupseite.
+ms.openlocfilehash: 5e081df7800b5e1f3400f1525afddf2c230a13e4
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245925"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579110"
 ---
-# <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>Unterschied zwischen dem Setup-Assistenten und der Setup-Seite
+# <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>Unterschied zwischen dem Setup-Assistenten und der Setupseite
 
-Microsoft 365 bietet zwei Setup-Erfahrungen: 
+Microsoft 365 bietet zwei Einrichtungserfahrungen: 
 
-- Erst Setup mit dem Setup-Assistenten
-- Fortlaufendes und erweitertes Setup mithilfe der **Setup** -Seite
+- Ersteinrichtung mithilfe des Setup-Assistenten
+- Fortlaufendes und erweitertes Setup mithilfe der **Seite "Setup"**
 
-Der Setup-Assistent bietet eine Anleitung zum Einrichten der grundlegenden Konfiguration von Microsoft 365. Nachdem Sie das anfängliche Setup abgeschlossen haben, können Sie zur Seite **Setup** wechseln, um die Einrichtung und Konfiguration der Dienste abzuschließen, die mit ihren Abonnements geliefert werden.
+Der Setup-Assistent bietet eine geführte exemplarische Vorgehensweise zum Einrichten der grundlegenden Microsoft 365-Konfiguration. Nachdem Sie die Ersteinrichtung abgeschlossen haben, können Sie zur Seite **Setup** wechseln, um das Einrichten und Konfigurieren der Dienste zu beenden, die mit Ihren Abonnements enthalten sind.
 
-## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>Ausführen der anfänglichen Setupaufgaben mithilfe des Setup-Assistenten
+## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>Ausführen der ersten Setupaufgaben mithilfe des Setup-Assistenten
 
-Um Ihr Konto einzurichten, navigieren Sie zum [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339), wählen Sie im linken Navigationsbereich die Option **Setup** aus, und wählen Sie dann auf der Seite **Setup** die Option **gesteuertes Setup** aus.
+Wechseln Sie zum Einrichten Ihres Kontos zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=2024339)wählen Sie  **setup** im linken Navigationsbereich aus, und wählen Sie dann auf der Seite Setup die Option Geführte **Einrichtung** aus.
 
-![Starten des Setup-Assistenten für Microsoft 365 apps for Business](../../media/o365b-guided-setup.png)
+![Starten des Microsoft 365 Apps for Business-Setup-Assistenten](../../media/o365b-guided-setup.png)
 
-Der Setup-Assistent führt Sie durch die folgenden Schritte aus:
+Der Setup-Assistent führt Sie durch die folgenden Schritte:
 
-1. Installieren Sie die Microsoft 365-apps auf Ihrem Computer.
+1. Installieren Sie die Microsoft 365-Apps auf Ihrem Computer.
 
-2. Wählen Sie Ihre Domäne wie contoso.com aus, und überprüfen Sie diese.
+2. Wählen Und überprüfen Sie Ihre Domäne, z. B. contoso.com.
 
-3. Fügen Sie neue Benutzer hinzu, und weisen Sie Ihnen Lizenzen zu, damit Sie Microsoft 365-apps herunterladen und installieren können.
+3. Fügen Sie neue Benutzer hinzu, und weisen Sie ihnen Lizenzen zu, damit sie Microsoft 365-Apps herunterladen und installieren können.
 
 4. Verbinden Sie Ihre Domäne.
 
-## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>Verwenden der Setup Seite zum Abschließen und Verwalten Ihrer Konfiguration
+## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>Verwenden der Setupseite zum Abschließen und Verwalten Der Konfiguration
 
-Um auf die Seite **Setup** im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339)zuzugreifen, wählen Sie im Navigationsbereich die Option **Setup** aus. Basierend auf den von Ihnen erworbenen Produkten, den von Ihnen eingerichteten Features und der Administratorrolle werden hier Aufgaben und verwandte Informationen aus Across Microsoft 365.
+Wenn Sie auf die **Seite Setup** im Admin [Center zugreifen](https://go.microsoft.com/fwlink/p/?linkid=2024339)möchten, wählen Sie **setup im** Navigationsbereich aus. Basierend auf den von Ihnen erworbenen Produkten werden hier Features, die Sie eingerichtet haben, sowie Ihre Administratorrolle, Aufgaben und zugehörigen Informationen aus Microsoft 365 gezeigt.
 
-Sie sehen die vollständige Liste der Einrichtungsaufgaben, die in logischen Kategorien angeordnet sind, einschließlich derer, die Sie im Setup-Assistenten abgeschlossen haben.
+Die vollständige Liste der Setupaufgaben wird in logischen Kategorien angeordnet, einschließlich derer, die Sie im Setup-Assistenten abgeschlossen haben.
 
-![Microsoft 365 for Business-Setup Seite](../../media/o365b-setup-page.png)
+![Microsoft 365 Business Setup-Seite](../../media/o365b-setup-page.png)
 
-Wählen Sie **Ansicht** für eine beliebige Aufgabe aus, um auf einen Blick Informationen wie Aufgabenbeschreibung, Benutzer Auswirkungen, Voraussetzungen, Umsetzungsaufwand sowie Sicherheits-und Adoptions Statistiken zu erhalten, um Konsequenzen und Auswirkungen vor dem Fortfahren besser verstehen zu können.
+Wählen **Sie Ansicht** für jede Aufgabe aus, um Informationen auf einen Blick zu erhalten, z. B. Aufgabenbeschreibung, Benutzerauswirkungen, Voraussetzungen, Implementierungsaufwand sowie Sicherheits- und Einführungsstatistiken, um Die Folgen und Auswirkungen zu verstehen, bevor Sie fortfahren.
 
-Außerdem wird der Status der Aufgabe angezeigt (**gestartet**, **noch nicht gestartet**oder **abgeschlossen**). Wenn Sie Multi-Tasking ausführen, an Aufgaben über mehrere Tage arbeiten oder mehrere Administratoren an Aufgaben arbeiten, können Sie den Abschluss nachverfolgen, indem Sie auf einen Blick sehen, welche Aufgaben abgeschlossen wurden und welche noch beachtet werden müssen. 
+Außerdem wird der Status des Vorgangs angezeigt (**Started**, **Not started yet**, or **Completed**). Wenn Sie mehrere Aufgaben ausführen, mehrere Tage an Aufgaben arbeiten oder mehrere Administratoren an Aufgaben arbeiten, können Sie den Abschluss nachverfolgen, indem Sie auf einen Blick sehen, welche Aufgaben abgeschlossen wurden und welche noch Aufmerksamkeit erfordern. 
 
-Für den Zugriff auf umfassende Artikel zu den Features, die Sie einrichten möchten, wählen Sie einen der Links **Weitere Informationen** aus. Die Auflistung der Aufgaben ist immer hier, sodass Sie jederzeit zur **Setup** -Seite zurückkehren können, um die Ressourcen weiter zu erkunden.
+Für den Zugriff auf umfassende Artikel zu den Features, die Sie einrichten, wählen Sie einen der **Links Weitere Informationen** aus. Die Aufgabensammlung ist immer hier, sodass Sie jederzeit zur Seite **Setup** zurückkehren können, um die Ressourcen weiter zu erkunden.
 
-Wenn Sie bereit sind, eine Aufgabe abzuschließen, wählen Sie **Erste Schritte** aus, um den Konfigurationsprozess zu durchlaufen. Nachdem Sie eine Aufgabe abgeschlossen haben, wird die Schaltfläche **Erste Schritte** in die Schaltfläche **Verwalten** geändert, sodass Sie die Aufgabe bei Bedarf verwalten können.
+Wenn Sie bereit sind, eine Aufgabe auszuführen, wählen Sie **Erste** Schritte aus, um den Konfigurationsprozess zu durch führen. Nachdem Sie eine Aufgabe abgeschlossen haben, wird die Schaltfläche **Erste** Schritte in eine Schaltfläche **Verwalten** geändert, sodass Sie die Aufgabe bei Bedarf verwalten können.
 
-![Vorgangsansicht mit Informationen zum Überblick](../../media/o365b-at-a-glance.png)
+![Aufgabenansicht mit Informationen auf einen Blick](../../media/o365b-at-a-glance.png)

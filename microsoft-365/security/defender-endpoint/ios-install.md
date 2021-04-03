@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7887f26cb8ca7e0e769249a10f008308149aaa42
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: c076a64b1e35978f09999b288b6849580df24972
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186689"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579698"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-ios"></a>Bereitstellen von Microsoft Defender for Endpoint für iOS
 
@@ -38,7 +38,7 @@ ms.locfileid: "51186689"
 
 In diesem Thema wird die Bereitstellung von Defender for Endpoint für iOS auf registrierten Geräten des Intune-Unternehmensportals beschrieben. Weitere Informationen zur Registrierung von Intune-Geräten finden Sie unter [Registrieren von iOS-/iPadOS-Geräten in Intune](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Stellen Sie sicher, dass Sie Zugriff auf [Microsoft Endpoint Manager Admin Center haben.](https://go.microsoft.com/fwlink/?linkid=2109431)
 
@@ -58,7 +58,7 @@ Bereitstellen von Defender for Endpoint für iOS über das Intune-Unternehmenspo
     > [!div class="mx-imgBorder"]
     > ![Abbildung von Microsoft Endpoint Manager Admin Center1](images/ios-deploy-1.png)
 
-1. Klicken Sie auf der Seite App hinzufügen auf **Den App Store durchsuchen,** und geben Sie **Microsoft Defender ATP** in die Suchleiste ein. Klicken Sie im Abschnitt Suchergebnisse auf *Microsoft Defender ATP,* und klicken Sie auf **Auswählen**.
+1. Klicken Sie auf der Seite App hinzufügen auf **Den App Store durchsuchen,** und geben Sie **Microsoft Defender Endpoint** in die Suchleiste ein. Klicken Sie im Abschnitt Suchergebnisse auf *Microsoft Defender Endpoint,* und klicken Sie auf **Auswählen**.
 
 1. Wählen **Sie iOS 11.0 als** Mindestbetriebssystem aus. Überprüfen Sie die restlichen Informationen zur App, und klicken Sie auf **Weiter**.
 

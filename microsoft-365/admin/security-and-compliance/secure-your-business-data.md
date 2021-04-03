@@ -2,8 +2,8 @@
 title: Die 10 besten Methoden zum Sichern von Microsoft 365 For Business-Plänen
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Schützen Sie Ihre Geschäftlichen E-Mails und Daten vor Cyberbedrohungen, einschließlich Ransomware, Phishing und schädlichen Anlagen. '
-ms.openlocfilehash: e45130d101c6e730fd2d487f5f8898c7cd268ab8
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 77213ab7f63b87ba985e6e4ca43119acc2345e2d
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197851"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579146"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Die 10 besten Methoden zum Sichern von Microsoft 365 For Business-Plänen
 
@@ -159,7 +159,7 @@ Um eine E-Mail-Transportregel zu erstellen, zeigen Sie ein [kurzes](https://supp
 
 6. Klicken Sie auf **Speichern**.
     
-| Setting | Warnen von Benutzern vor dem Öffnen von Anlagen von Office-Dateien | Blockieren von Dateitypen, die Ransomware oder anderen schädlichen Code enthalten könnten |
+| Einstellung | Warnen von Benutzern vor dem Öffnen von Anlagen von Office-Dateien | Blockieren von Dateitypen, die Ransomware oder anderen schädlichen Code enthalten könnten |
 |:-----|:-----|:-----|
 |Name  <br/> |Anti-Ransomware-Regel: Benutzer warnen  <br/> |Anti-Ransomware-Regel: Dateitypen blockieren  <br/> |
 |Wenden Sie diese Regel an, wenn . . .  <br/> |Jede Anlage . . . Dateierweiterung entspricht . . .  <br/> |Jede Anlage . . . Dateierweiterung entspricht . . .  <br/> |
@@ -195,7 +195,7 @@ So erstellen Sie eine E-Mail-Transportregel:
 
 6. Klicken Sie auf **Speichern**.
 
-|Setting|Ablehnen der automatischen Weiterleitung von E-Mails an externe Domänen|
+|Einstellung|Ablehnen der automatischen Weiterleitung von E-Mails an externe Domänen|
 |---|---|
 |Name|Verhindern der automatischen Weiterleitung von E-Mails an externe Domänen|
 |Wenden Sie diese Regel an, wenn ...|Der Absender . . . ist extern/intern . . . Innerhalb der Organisation|

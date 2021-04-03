@@ -1,9 +1,9 @@
 ---
-title: Sicherheitsleitfaden für kleine Unternehmen
+title: Sicherheitshandbuch für kleine Unternehmen
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -16,20 +16,20 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: Erfahren Sie mehr über Sicherheitsrisiken für Ihr Unternehmen und einfache Möglichkeiten, wie Sie und Ihre Mitarbeiter Ihre Daten, Konten und Geräte schützen können.
-ms.openlocfilehash: a3c22f5644322beec942b8ba656a718317fc0940
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Erfahren Sie mehr über Sicherheitsbedrohungen, denen Ihr Unternehmen ausgesetzt ist, und einfache Möglichkeiten, wie Sie und Ihre Mitarbeiter Ihre Daten, Konten und Geräte schützen können.
+ms.openlocfilehash: 383b7245dc0cf2df713d4aa282a80b7481e7dd81
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399110"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579134"
 ---
-# <a name="security-info-graphic-for-small-businesses"></a>Grafik für Sicherheitsinformationen für kleine Unternehmen
+# <a name="security-info-graphic-for-small-businesses"></a>Sicherheitsinfografik für kleine Unternehmen
 
-**Zusammenfassung:** Erfahren Sie mehr über die grundlegenden Begriffe für die Bedrohungen, mit denen Ihr Unternehmen konfrontiert ist und was Sie tun können, um Ihre Daten, Konten und Geräte zu schützen. Nehmen Sie als Administrator für Microsoft 365 for Business Maßnahmen zur Sicherstellung Ihres Unternehmens vor, und unterstützen Sie jeden Mitarbeiter dabei, die Sicherheit Ihrer Geschäftsdaten und-Geräte zu gewährleisten.
+**Zusammenfassung:** Erfahren Sie mehr über die grundlegenden Begriffe für die Bedrohungen, denen Ihr Unternehmen ausgesetzt ist, und was Sie tun können, um Ihre Daten, Konten und Geräte zu schützen. Als Administrator für Microsoft 365 Business ergreifen Sie Maßnahmen, um Ihr Unternehmen sicherer zu machen und jedem Mitarbeiter zu helfen, zu erfahren, wie Sie Ihre Geschäftsdaten und Geräte schützen.
 
-Die Links für PowerPoint und PDF unten können heruntergeladen und im Tabloidformat (auch Ledger, 11 x 17 oder a3 genannt) gedruckt werden.
+Die links für PowerPoint und PDF unten können im Tabloidformat heruntergeladen und gedruckt werden (auch als Ledger, 11 x 17 oder A3 bekannt).
 
-![Image für Secure Your Small Business Info-Grafik](../media/smbthreatprotectioninfographic-thumbnail.png)
+![Bild zum Sichern Ihrer Infografik für kleine Unternehmen](../media/smbthreatprotectioninfographic-thumbnail.png)
 
-[PDF-Datei](downloads/smbthreatprotection-infographic.pdf)  |  [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/admin/downloads/smbthreatprotection-infographic.pptx)
+[PDF](downloads/smbthreatprotection-infographic.pdf)  |  [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/admin/downloads/smbthreatprotection-infographic.pptx)
