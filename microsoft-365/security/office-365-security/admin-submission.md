@@ -19,12 +19,12 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie das Übermittlungsportal im Security & Compliance Center verwenden, um verdächtige E-Mails, verdächtige Phishing-E-Mails, Spam und andere potenziell schädliche Nachrichten, URLs und Dateien zur Überprüfung an Microsoft zu übermitteln.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6f1294335be5a82ef7219ef9096d84d840271c5b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 96a5469b1093c71997747b2c4c3b49bc1964f72b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499332"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581070"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Verwenden von Administrator-Übermittlung, um verdächtige Spam- oder Phishing-Nachrichten, URLs und Dateien an Microsoft zu übermitteln
 
@@ -55,7 +55,7 @@ Weitere Möglichkeiten zum Übermitteln von E-Mail-Nachrichten, URLs und Anlagen
 
 - Zum Übermitteln von Nachrichten und Dateien an Microsoft müssen Sie Mitglied einer der folgenden Rollengruppen sein:
 
-  - **Organisationsverwaltung** oder **Sicherheitsadministrator** im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  - **Organisationsverwaltung** oder **Security Reader** im Security & [Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
   - **Organisationsverwaltung** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 

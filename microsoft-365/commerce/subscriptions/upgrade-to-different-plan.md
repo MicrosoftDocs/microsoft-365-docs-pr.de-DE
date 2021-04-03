@@ -20,21 +20,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie ein Upgrade auf einen anderen Plan durchführen.
-ms.openlocfilehash: 5f853dcd0d247a6422489cbe5d0287765bfd72a6
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 79ca18df28505c457e085dbd73c2fbd04eff53ca
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164449"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580978"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Zu einem anderen Plan wechseln
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Wenn sich Ihr Unternehmen ändert oder Sie weitere Features benötigen, können Sie Pläne aktualisieren. Die einfachste Möglichkeit besteht in der Verwendung der Registerkarte **Upgrade** im Admin Center. Die Verwendung der Registerkarte **Upgrade** wird jedoch nicht in allen Situationen unterstützt. In einigen Fällen können Sie Pläne möglicherweise manuell ändern.
 

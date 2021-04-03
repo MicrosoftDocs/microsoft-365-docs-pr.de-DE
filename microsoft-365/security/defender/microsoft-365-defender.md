@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f789053e0922ee81155a243bbaa7b3ab5b0f6d87
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 687077b1c9ff2449d9994875419a97cf0c503c2f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064656"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581082"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -56,7 +56,7 @@ Mit der integrierten Microsoft 365 Defender-Lösung können Sicherheitsexperten 
 
 In diesem interaktiven Leitfaden erfahren Sie, wie Sie Ihre Organisation mit Microsoft 365 Defender schützen. Sie sehen, wie Microsoft 365 Defender Ihnen dabei helfen kann, Sicherheitsrisiken zu erkennen, Angriffe auf Ihre Organisation zu untersuchen und schädliche Aktivitäten automatisch zu verhindern.
 
-> [!VIDEO https://aka.ms/M365Defender-InteractiveGuide]
+[Sehen Sie sich den interaktiven Leitfaden an](https://aka.ms/M365Defender-InteractiveGuide)
 
 
 
@@ -95,4 +95,4 @@ Zu den produktübergreifenden Microsoft 365 Defender-Features gehören:
 ## <a name="get-started"></a>Erste Schritte
 Microsoft 365 Defender-Lizenzierungsanforderungen müssen erfüllt sein, bevor Sie den Dienst im Microsoft 365 Security Center unter [security.microsoft.com.](https://security.microsoft.com) Weitere Informationen finden Sie unter:
 - [Lizenzanforderungen](prerequisites.md#licensing-requirements)
-- [Aktivieren von Microsoft 365 Defender](m365d-enable.md)
+- [Microsoft 365 Defender aktivieren](m365d-enable.md)

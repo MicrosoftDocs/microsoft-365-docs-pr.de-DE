@@ -2,8 +2,8 @@
 title: Einrichten von Outlook zum Lesen von E-Mails
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
-description: Informationen zum Einrichten eines e-Mail-Kontos in Outlook für Windows und Mac sowie zum Installieren von Office-Apps und zum Online Zugriff auf e-Mails.
-ms.openlocfilehash: e17e532afca0a552b7e0e2565cd34e9dda256421
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: Informationen zum Einrichten eines E-Mail-Kontos in Outlook für Windows und Mac sowie zum Installieren von Office-Apps und zum Onlinezugriff auf E-Mails.
+ms.openlocfilehash: c4c0f845fcdba1011e0c025ff0e29a98ba7046d5
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779989"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580894"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Einrichten von Outlook zum Lesen von E-Mails
 
-Ihr Microsoft 365-Abonnement enthält eine webbasierte Outlook, aber wenn Ihr Abonnement Office-Client-apps umfasst, erhalten Sie auch Outlook, das Sie auf Ihrem PC oder Ihren Geräten installieren können.
+Ihr Microsoft 365-Abonnement verfügt über ein webbasiertes Outlook, aber wenn Ihr Abonnement Office-Client-Apps enthält, erhalten Sie auch Outlook, das Sie auf Ihren persönlichen Computern oder Geräten installieren können.
   
 ## <a name="set-up-an-email-account-in-outlook"></a>Einrichten eines E-Mail-Kontos in Outlook
 
@@ -43,7 +43,7 @@ The first time you open Outlook, an Auto Account Wizard opens. If not, choose **
   
 ## <a name="how-do-i-install-the-office-apps-including-outlook"></a>Wie installiere ich die Office-Apps, einschließlich Outlook?
 
-1. Wechseln Sie zu [Admin.Microsoft.com/OLS/MySoftware](https://admin.microsoft.com/OLS/MySoftware.aspx).
+1. Wechseln Sie zu [admin.microsoft.com/OLS/MySoftware](https://admin.microsoft.com/OLS/MySoftware.aspx).
     
 2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
@@ -53,28 +53,28 @@ The first time you open Outlook, an Auto Account Wizard opens. If not, choose **
 
 Beim ersten Öffnen der Outlook-App wird der Assistent zum Einrichten des Posteingangs geöffnet. Im Assistenten: 
   
-1. Wählen Sie auf der Seite **meinen Posteingang einrichten** die Option **Konto hinzufügen**aus.
+1. Wählen Sie **auf der Seite Posteingang einrichten** die Option Konto hinzufügen **aus.**
     
-2. Wählen Sie auf der Seite **Konten** die Option **Exchange oder Office 365**aus.
+2. Wählen Sie **auf der** Seite Konten die Option Exchange oder **Office 365 aus.**
     
-3. Geben Sie auf der Seite **Ihre Exchange-Kontoinformationen eingeben** ihren Namen, Ihre e-Mail-Adresse und Ihr Kennwort ein, und wählen Sie dann **Konto hinzufügen**aus.
+3. Geben Sie **auf der Seite** Informationen zu Ihrem Exchange-Konto eingeben Ihren Namen, Ihre E-Mail-Adresse und Ihr Kennwort ein, und wählen Sie dann Konto **hinzufügen aus.**
     
 [Den vollständigen Artikel lesen](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac) 
   
 ## <a name="how-do-i-access-my-mail-online"></a>Wie greife ich online auf meine E-Mails zu?
 
-Nachdem Sie sich bei Microsoft 365 angemeldet haben, wählen Sie **Outlook**aus.
+Wählen Sie nach der Anmeldung bei Microsoft 365 **Outlook aus.**
   
 ![Die Microsoft 365-Startseite mit hervorgehobener Outlook-App](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
-Sie können die gesuchte App nicht finden? Wählen Sie im App-Startfeld **alle apps** aus, um eine alphabetische Liste der Microsoft 365-apps anzuzeigen, die Ihnen zur Verfügung stehen. Hier können Sie nach einer bestimmten App suchen. 
+Sie können die gesuchte App nicht finden? Wählen Sie im App-Startfeld **Alle Apps aus,** um eine alphabetische Liste der microsoft 365-Apps zu sehen, die Ihnen zur Verfügung stehen. Hier können Sie nach einer bestimmten App suchen. 
   
 ## <a name="how-do-i-know-if-my-subscription-includes-office-apps"></a>Wie stelle ich fest, ob mein Abonnement Office-Apps einschließt?
 
-Microsoft 365 Business Standard und Microsoft 365 apps for Business umfassen Office-Apps. Ausführliche Informationen finden Sie unter [Microsoft 365 for Business-Pläne](https://go.microsoft.com/fwlink/p/?LinkId=723731)oder [Office 365 Enterprise Pläne](https://go.microsoft.com/fwlink/p/?LinkId=800029).
+Microsoft 365 Business Standard und Microsoft 365 Apps for Business umfassen Office-Apps. Weitere Informationen finden [Sie unter Microsoft 365 for Business-Pläne](https://go.microsoft.com/fwlink/p/?LinkId=723731)oder [Office 365 Enterprise-Pläne](https://go.microsoft.com/fwlink/p/?LinkId=800029).
   
 ## <a name="how-do-i-determine-what-subscription-i-have"></a>Wie stelle ich fest, über welches Abonnement ich verfüge?
 
-Informationen zum bestimmen Ihres Abonnements finden Sie unter [welches Abonnement habe ich?](../admin-overview/what-subscription-do-i-have.md)
+Informationen zum Bestimmen Ihres Abonnements finden Sie unter [Welches Abonnement habe ich?](../admin-overview/what-subscription-do-i-have.md)
   
 

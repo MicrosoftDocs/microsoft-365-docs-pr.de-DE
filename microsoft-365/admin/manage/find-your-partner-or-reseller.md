@@ -2,8 +2,8 @@
 title: Suchen nach Ihrem Partner oder Händler
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,23 +22,23 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: 'Erfahren Sie, wie Sie einen neuen Microsoft 365-Partner suchen oder Kontaktinformationen für einen Partner erhalten, mit dem Sie in der Vergangenheit zusammengearbeitet haben. '
-ms.openlocfilehash: fad16990df7783908f59a6e3dd59cb0a1a13572e
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: 'Erfahren Sie, wie Sie einen neuen Microsoft 365-Partner finden oder Kontaktinformationen für einen Partner erhalten, mit dem Sie in der Vergangenheit zusammengearbeitet haben. '
+ms.openlocfilehash: 189eda83f3eca957e6f9fa720e2f6ccdd07db171
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780109"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580942"
 ---
 # <a name="find-your-partner-or-reseller"></a>Suchen nach Ihrem Partner oder Händler
 
-Als Administrator können Sie mit einem Partner zusammenarbeiten, um Microsoft 365-Abonnements über ein Microsoft Open-Volumenlizenzprogramm zu erwerben, zu aktivieren und zu erneuern. 
+Als Administrator können Sie mit einem Partner zusammenarbeiten, um Microsoft 365-Abonnements über ein Microsoft Open Volume Licensing-Programm zu erwerben, zu aktivieren und zu verlängern. 
   
  **Sind Sie nicht sicher, ob die Open-Volumenlizenzierung für Sie geeignet ist?** Sehen Sie sich die [Übersicht über Microsoft Open-Programme](https://go.microsoft.com/fwlink/p/?LinkId=613298) an.
   
 ## <a name="find-a-new-partner-or-reseller"></a>Suchen eines neuen Partners oder Händlers
 
-Wenn Sie Microsoft 365 über eine offene Volumenlizenzierung kaufen oder verlängern möchten oder einfach mehr Informationen zum Arbeiten mit einem Partner benötigen, wählen Sie eine der folgenden Optionen aus. 
+Wenn Sie bereit sind, Microsoft 365 über Open Volume Licensing zu kaufen oder zu verlängern, oder Wenn Sie einfach weitere Informationen zum Arbeiten mit einem Partner wünschen, wählen Sie unten eine Option aus. 
   
 - [Suchen nach einem Partner mithilfe von Microsoft PinPoint](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     
@@ -49,11 +49,11 @@ Wenn Sie Microsoft 365 über eine offene Volumenlizenzierung kaufen oder verlän
 > [!NOTE]
 > In einigen Fällen finden Sie Informationen im Microsoft 365 Admin Center für Partner, mit denen Sie in der Vergangenheit zusammengearbeitet haben. Beachten Sie, dass diese Informationen möglicherweise nicht mehr aktuell sind. Es wird empfohlen, sich an die für den Einkauf verantwortliche Person oder Abteilung in Ihrer Organisation zu wenden, um zu erfahren, mit welchem Partner Sie zusammenarbeiten sollten. 
   
-## <a name="get-partner-info-in-the-admin-center"></a>Abrufen von Partner Informationen im Admin Center
+## <a name="get-partner-info-in-the-admin-center"></a>Partnerinformationen im Admin Center erhalten
 
-1. Wechseln Sie im Admin Center zur Seite **Einstellungen**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner Beziehungen</a> .
+1. Wechseln Sie im Admin Center zur Seite **Einstellungen**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partnerbeziehungen.</a>
   
-2. Wenn Sie über einen Partner verfügen, werden hier der Name des Partners und die Beziehung zu Ihrer Organisation aufgeführt. Um Partner Kontaktinformationen (Telefonnummer und e-Mail-Adresse) anzuzeigen, wählen Sie den Partnernamen aus.
+2. Wenn Sie über einen Partner verfügen, werden hier der Name des Partners und die Beziehung zu Ihrer Organisation aufgeführt. Wählen Sie zum Anzeigen von Partnerkontaktinformationen (Telefonnummer und E-Mail-Adresse) den Partnernamen aus.
     
 ## <a name="more-resources"></a>Weitere Ressourcen
 

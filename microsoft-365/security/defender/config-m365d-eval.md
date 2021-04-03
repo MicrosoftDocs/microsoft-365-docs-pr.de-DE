@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8bb80e032fd2eb4c618b60f4ab46829d5cf11b6d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9b192a029704d1354867b169efdf0d489345030e
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199229"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580966"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Konfigurieren von Microsoft 365 Defender-Säulen für Ihre Testumgebung oder Pilotumgebung
 
@@ -285,8 +285,7 @@ Eine umfassendere Anleitung finden Sie unter [Turn on Microsoft 365 Defender](m3
 
 Glückwunsch! Sie haben gerade Ihre Microsoft 365 Defender-Testumgebung oder Pilotumgebung erstellt! Jetzt können Sie sich mit der Microsoft 365 Defender-Benutzeroberfläche vertraut machen! Erfahren Sie, was Sie aus dem folgenden interaktiven Microsoft 365 Defender-Leitfaden lernen können, und erfahren Sie, wie Sie jedes Dashboard für Ihre täglichen Sicherheitsaufgaben verwenden.
 
-
->[!VIDEO https://aka.ms/MTP-Interactive-Guide]
+[Sehen Sie sich den interaktiven Leitfaden an](https://aka.ms/MTP-Interactive-Guide)
 
 Als Nächstes können Sie einen Angriff simulieren und sehen, wie produktübergreifende Funktionen Warnungen erkennen, erstellen und automatisch auf einen dateilosen Angriff auf einen Endpunkt reagieren.
 

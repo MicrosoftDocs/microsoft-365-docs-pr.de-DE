@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Übersicht über die Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
-ms.openlocfilehash: 2b80dd001bd2ee5d5725ea67c73aa34b4eb8816c
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: dd97a6d5cc9662f01854e1432660784358bce7b8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408405"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581130"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
 
@@ -205,6 +205,10 @@ Eine optimale Microsoft 365-Service-Eingangstür ist eine, die Ihrem Netzwerkein
 ### <a name="what-is-an-internet-egress-location"></a>Was ist ein Internet-Ausgangsspeicherort?
 
 Der Internetaustrittsspeicherort ist der Ort, an dem Ihr Netzwerkdatenverkehr Ihr Unternehmensnetzwerk verlässt und eine Verbindung mit dem Internet herstellt. Dies wird auch als Standort identifiziert, an dem Sie über ein Nat-Gerät (Network Address Translation) verfügen und in der Regel eine Verbindung mit einem Internetdienstanbieter (Internet Service Provider, ISP) herstellen. Wenn sie einen langen Abstand zwischen Ihrem Standort und Ihrem Internet-Ausgangsstandort sehen, kann dies auf einen erheblichen WAN-Backhaul hinweisen.
+
+### <a name="what-license-is-needed-for-this-capability"></a>Welche Lizenz ist für diese Funktion erforderlich?
+
+Sie benötigen eine Lizenz, die Zugriff auf das Microsoft 365 Admin Center bietet.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

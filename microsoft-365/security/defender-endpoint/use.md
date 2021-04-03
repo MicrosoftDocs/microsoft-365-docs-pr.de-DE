@@ -1,5 +1,5 @@
 ---
-title: Übersicht über Microsoft Defender Security Center
+title: Übersicht über das Microsoft Defender Security Center
 description: Erfahren Sie mehr über die Features im Microsoft Defender Security Center, einschließlich der Funktionsweise von Warnungen und Vorschläge zur Untersuchung möglicher Verstöße und Angriffe.
 keywords: Dashboard, Benachrichtigungswarteschlange, Warnungen verwalten, Warnungen untersuchen, Warnungen untersuchen, Geräte untersuchen, Dateien übermitteln, tiefe Analyse, hoch, mittel, niedrig, Schweregrad, ioc, ioa
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b490159d12bebdb95b6f168671393f8939da33be
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ee6fd4bd8d60f828bb474fc80cb987f4f94edcbe
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068672"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581094"
 ---
-# <a name="overview-of-microsoft-defender-security-center"></a>Übersicht über Microsoft Defender Security Center
+# <a name="overview-of-microsoft-defender-security-center"></a>Übersicht über das Microsoft Defender Security Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,7 +46,7 @@ Verwenden Sie das **Threat Analytics-Dashboard,** um die Risikoexposition für S
 ## <a name="microsoft-defender-for-endpoint-interactive-guide"></a>Interaktive Anleitung für Microsoft Defender for Endpoint
 In diesem interaktiven Leitfaden erfahren Sie, wie Sie Bedrohungen für Ihre Organisation mit Microsoft Defender for Endpoint untersuchen. Sie sehen, wie Microsoft Defender for Endpoint Ihnen dabei helfen kann, verdächtige Aktivitäten zu identifizieren, Risiken für Ihre Organisation zu untersuchen und Bedrohungen zu vermeiden.
 
-> [!VIDEO https://aka.ms/MSDE-IG]
+[Sehen Sie sich den interaktiven Leitfaden an](https://aka.ms/MSDE-IG)
 
 ### <a name="in-this-section"></a>Inhalt dieses Abschnitts
 

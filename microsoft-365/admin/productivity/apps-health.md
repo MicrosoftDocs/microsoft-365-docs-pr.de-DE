@@ -1,9 +1,9 @@
 ---
-title: Microsoft Productivity Score – Microsoft 365 apps-Integrität
+title: Microsoft Productivity Score – Microsoft 365-Apps-Integrität
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,105 +18,105 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Details zum Produktivitäts Ergebnis der Microsoft 365 apps-Integritäts Technologie.
-ms.openlocfilehash: a84e919ce01775b8791ed7a1992464e4f52c7234
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+description: Details zur Microsoft 365 Apps-Integrität – Technologieerfahrungen Produktivitätsergebnis.
+ms.openlocfilehash: d8e9cb1f29c8138616c1cc2461bfa07fb9dafd9c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49562943"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580870"
 ---
-# <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 apps Health – Technologie-Erlebnisse
+# <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 Apps-Integrität – Technologie-Erfahrungen
 
-Die Produktivitäts Bewertung bietet Einblicke in die digitale Transformationsreise Ihrer Organisation durch die Verwendung von Microsoft 365 und die damit unterstützten Technologie-Erlebnisse. Die Bewertung Ihrer Organisation reflektiert Personen-und Technologie Erfahrungs Messungen und kann mit Benchmarks von Organisationen vergleichbar mit Ihnen verglichen werden. Die Kategorie apps-Integrität ist Teil der Messungen, die unter Technologie Erfahrungen fallen. Weitere Informationen finden Sie unter Übersicht über die [Produktivitäts Bewertung](productivity-score.md) und Lesen der [Datenschutzerklärung von Microsoft](https://privacy.microsoft.com/privacystatement).
+Die Produktivitätswertung bietet Einblicke in die digitale Transformation Ihrer Organisation durch die Verwendung von Microsoft 365 und die Technologieerfahrungen, die sie unterstützen. Die Bewertung Ihrer Organisation spiegelt Messungen der Benutzer- und Technologieerfahrung wider und kann mit Benchmarks von Organisationen vergleichbar mit Ihrer verglichen werden. Die Kategorie "Apps-Integrität" ist Teil der Messungen, die unter die Technologieerfahrung fallen. Weitere Informationen finden Sie in der [Übersicht über die Produktivitätsergebnis](productivity-score.md) und in [der Datenschutzerklärung von Microsoft.](https://privacy.microsoft.com/privacystatement)
 
-## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Warum Ihre Organisation&#39;s Microsoft 365 apps Health Score zählt
+## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Warum ihre Organisation&#39;Microsoft 365-Apps-Integritätsergebnis wichtig ist
 
-Die Produktivität Ihrer Organisation hängt von einer gesunden Anwendungsumgebung ab. Geräte, auf denen die meisten aktuellen Versionen von Microsoft 365-apps auf dem empfohlenen Kanal betrieben werden, sind sicherer und helfen Personen in Ihrer Organisation, die Funktionen von Microsoft 365 optimal zu nutzen.
+Die Produktivität Ihrer Organisation hängt von einer fehlerfreien Anwendungsumgebung ab. Geräte mit den meisten aktuellen Versionen von Microsoft 365-Apps im empfohlenen Kanal sind sicherer und helfen Personen in Ihrer Organisation, die Features in Microsoft 365 besser zu nutzen.
 
-## <a name="how-we-calculate-the-microsoft-365-apps-health-score"></a>Berechnen der Integritätsbewertung von Microsoft 365 apps
+## <a name="how-we-calculate-the-microsoft-365-apps-health-score"></a>Berechnen der Microsoft 365-Apps-Integritätsnote
 
-Wir berechnen Ihre Microsoft 365-apps-Integritätsbewertung, indem wir die Anzahl der Geräte auf jedem Update Kanal messen. Außerdem bestimmen wir, ob auf den Geräten eine unterstützte Version und die neueste Version von Microsoft 365-apps installiert werden.
+Wir berechnen Ihre Microsoft 365-Apps-Integritätsnote, indem wir die Anzahl der Geräte auf jedem Updatekanal messen. Außerdem bestimmen wir, ob auf den Geräten eine unterstützte Version und die neueste Version von Microsoft 365-Apps ausgeführt wird.
 
-Wir bieten eine wesentliche Einblicke in die Erfahrung, die die wichtigsten Metriken für diese Kategorie enthält. Anschließend wird ein Bewertungs Framework, das in den folgenden Abschnitten detailliert beschrieben wird, verwendet, um die Bewertung zu berechnen.
+Wir bieten einen primären Einblick in die Erfahrung, die die wichtigsten Metriken für diese Kategorie enthält. Anschließend wird ein Bewertungsframework verwendet, das in den folgenden Abschnitten beschrieben ist, um Ihre Bewertung zu berechnen.
 
-### <a name="primary-insight"></a>Primäre Einblicke
+### <a name="primary-insight"></a>Primärer Einblick
 
-Die primäre Einblicke wird von Geräten berechnet, die Microsoft 365-apps auf dem empfohlenen aktualisierten Kanal ausführt.
+Der primäre Einblick wird von Geräten mit Microsoft 365-Apps auf empfohlenen aktualisierten Kanälen berechnet.
 
-:::image type="content" source="../../media/appshealth-primary.png" alt-text="Primäre in-Sight-Visualisierung für Microsoft 365-apps.":::
+:::image type="content" source="../../media/appshealth-primary.png" alt-text="Primäre Visualisierung in Sicht für Microsoft 365-Apps.":::
 
-In Betracht gezogene Informationen umfassen Microsoft 365 apps-Kanal,-Build und-Version, die auf dem Gerät läuft.
+Zu den hier berücksichtigten Informationen gehören der Microsoft 365-Apps-Kanal, der Build und die Version, die auf dem Gerät ausgeführt wird.
 
-1. **Kopfzeile:**  Zeigt den Prozentsatz der Geräte im empfohlenen Update Kanal an.
-1. **Body:**  Enthält weitere Informationen darüber, wie das Durchführen der Geräte auf dem empfohlenen Update Kanal das erhalten der neuesten Updates und der laufenden Versionen auf Geräten unterstützt.
+1. **Header:**  Zeigt den Prozentsatz der Geräte im empfohlenen Updatekanal an
+1. **Textkörper:**  Enthält weitere Informationen dazu, wie das Ausführen der Geräte auf dem empfohlenen Updatekanal dabei hilft, die neuesten Updates und aktuelle Versionen auf Geräten zu erhalten.
 1. **Visualisierung (aktueller Status):**
-    - Horizontale Balken, bei denen die blau gefärbten Teile den Prozentsatz der Geräte darstellen, auf denen der empfohlene aktualisierte Kanal läuft.
-    - Markieren Sie den (Zähler/Nenner) des Bruchs, der zum Berechnen des in horizontalen Balken ausgedrückten Prozentsatzes verwendet wird.
-    - Der Peer-Benchmarkwert für Geräte, die auf dem empfohlenen aktualisierten Kanal betrieben werden, wird auch als Prozentsatz angezeigt.
+    - Horizontale Balken, bei denen die blau gefärbten Teile den Prozentsatz der Geräte darstellen, auf denen empfohlener aktualisierter Kanal ausgeführt wird.
+    - Markieren Sie den (Zähler/Nenner) des Anteils, der zum Berechnen des Prozentsatzes verwendet wird, der in horizontalen Balken ausgedrückt wird.
+    - Der Peer-Benchmark-Wert für Geräte, die auf dem empfohlenen aktualisierten Kanal ausgeführt werden, wird ebenfalls als Prozentsatz angezeigt.
 
-#### <a name="trend-visualization-of-the-primary-insight"></a>Trend Visualisierung der primären Einblicke
+#### <a name="trend-visualization-of-the-primary-insight"></a>Trendvisualisierung der primären Einblicke
 
-Das folgende Diagramm zeigt die Anzahl der Geräte im empfohlenen Update Kanal in den letzten 180 Tagen. Der Datenpunkt im Diagramm ist ein Aggregat von Aktivitäten für die letzten 28 Tage.
+Das folgende Diagramm zeigt die Anzahl der Geräte im empfohlenen Updatekanal in den letzten 180 Tagen. Der Datenpunkt im Liniendiagramm ist ein Aggregat der Aktivität der letzten 28 Tage.
 
-:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Diagramm, das den Trend für Geräte mit dem empfohlenen Update Kanal zeigt.":::
+:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Diagramm, das den Trend für Geräte mit empfohlenem Updatekanal zeigt.":::
 
-### <a name="scoring-framework"></a>Bewertungs Framework
+### <a name="scoring-framework"></a>Bewertungsframework
 
-Das Microsoft 365 apps-Integritäts Ergebnis misst, ob auf den Geräten Microsoft 365-apps auf dem empfohlenen Kanal und auf den neuesten Versionen installiert werden.
+Die Microsoft 365-Apps-Integritätsnote misst, ob auf Geräten Microsoft 365-Apps auf empfohlenen Kanälen und in den neuesten Versionen ausgeführt werden.
 
-## <a name="explore-your-organization-microsoft-365-app-channels-and-versions"></a>Untersuchen Ihrer Organisation Microsoft 365-App-Kanäle und-Versionen
+## <a name="explore-your-organization-microsoft-365-app-channels-and-versions"></a>Erkunden Ihrer Organisation Microsoft 365-App-Kanäle und -Versionen
 
-Außerdem bieten wir unterstützende Informationen, die Ihnen dabei helfen, zusätzliche Einblicke in die derzeit ausgeführten Kanäle und Versionen von Geräten in Ihrer Organisation zu erhalten. Diese zusätzlichen Metriken tragen nicht zu Ihrem Produktivitäts Ergebnis bei, sondern können Ihnen dabei helfen, einen Aktionsplan zur Steigerung Ihrer Microsoft 365-apps-Integritätsbewertung zu erstellen, indem Sie sicherstellen, dass auf den empfohlenen Kanälen auf den Geräten Microsoft 365-apps ausgeführt werden.
+Darüber hinaus stellen wir unterstützende Informationen zur Verfügung, mit deren Hilfe Sie zusätzliche Einblicke in die Kanäle und Versionsgeräte in Ihrer Organisation erhalten, die derzeit ausgeführt werden. Diese zusätzlichen Metriken tragen nicht zu Ihrem Produktivitätsergebnis bei, können Ihnen jedoch helfen, einen Aktionsplan zum Erhöhen der Integritätsnote Ihrer Microsoft 365-Apps zu erstellen, indem Sie sicherstellen, dass Geräte Microsoft 365-Apps auf empfohlenen Kanälen ausführen.
 
-### <a name="devices-on-current-channel-and-running-supported-versions"></a>Geräte auf dem aktuellen Kanal und unterstützte Versionen
+### <a name="devices-on-current-channel-and-running-supported-versions"></a>Geräte auf dem aktuellen Kanal mit unterstützten Versionen
 
-:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Diagramm, in dem die Anzahl der Geräte im aktuellen, unterstützten Kanal angezeigt wird.":::
+:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Diagramm mit der Anzahl der Geräte im aktuellen, unterstützten Kanal.":::
 
-1. **Kopfzeile:**  Hebt den Prozentsatz der Geräte auf dem aktuellen Kanal auf, auf denen unterstützte Versionen von Microsoft 365-apps
-1. **Body:**  Enthält Informationen zum Wert von Geräten, auf denen Microsoft 365-apps auf dem empfohlenen Kanal unterstützt werden.
-1. **Visualisierung:**  Die Aufteilung in der Visualisierung gibt an, wie viel Prozent der Geräte auf den neuesten und unterstützten Versionen von Microsoft 365-Apps über unterschiedliche Kanäle verteilt sind, wie im folgenden dargestellt:
-    - **Unterstützte Versionen:** Der blaue Balken stellt den Prozentsatz der Geräte dar, die auf der unterstützten Version von Microsoft 365-apps betrieben werden.
-    - **Neueste Versionen:** Die blaugrün-Farbleiste stellt den Prozentsatz der Geräte in den neuesten Versionen dar.
+1. **Header:**  Hebt den Prozentsatz der Geräte auf dem aktuellen Kanal hervor, auf dem unterstützte Versionen von Microsoft 365-Apps ausgeführt werden
+1. **Textkörper:**  Enthält Informationen zum Wert von Geräten, auf der Microsoft 365-Apps auf empfohlenem Kanal ausgeführt werden.
+1. **Visualisierung:**  Die Aufschlüsselung in der Visualisierung stellt den Prozentsatz der Geräte auf den neuesten und unterstützten Versionen von Microsoft 365-Apps über verschiedene Kanäle hinweg dar:
+    - **Unterstützte Versionen:** Die blaue Leiste gibt den Prozentsatz der Geräte an, die auf der unterstützten Version von Microsoft 365-Apps ausgeführt werden.
+    - **Neueste Versionen:** Die Tealfarbleiste stellt den Prozentsatz der Geräte in den neuesten Versionen dar.
 1. **Weitere Informationen:**   Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
-### <a name="devices-running-latest-and-supported-versions"></a>Geräte mit neuesten und unterstützten Versionen
+### <a name="devices-running-latest-and-supported-versions"></a>Geräte mit den neuesten und unterstützten Versionen
 
-:::image type="content" source="../../media/device-supported-versions.png" alt-text="Diagramm, in dem die Anzahl der Geräte mit den neuesten und unterstützten Versionen von apps angezeigt wird.":::
+:::image type="content" source="../../media/device-supported-versions.png" alt-text="Diagramm mit der Anzahl der Geräte, auf denen die neuesten und unterstützten Versionen von Apps ausgeführt werden.":::
 
-1. **Kopfzeile:**  Zeigt den Prozentsatz der Geräte an, auf denen unterstützte Versionen und Geräte mit den neuesten Versionen verwendet werden.
-1. **Body:**  Enthält Informationen zu den Werten, auf denen Geräte in empfohlenen Kanälen und unterstützten/neuesten Versionen installiert werden.
-1. **Visualisierung:** Die Aufteilung in der Visualisierung soll das Ausmaß darstellen, in dem gezeigt wird, wie viele Geräte mit unterstützten Versionen und den neuesten Versionen von Microsoft 365-apps angezeigt werden.
-    - **Unterstützte Versionen:** Der blaue (farbige) Teil des Balkens und der Bruch (Zähler/Nenner) auf der Leiste stellen den Prozentsatz der Geräte dar, auf denen die unterstützte Version von Microsoft 365-apps läuft.
-        - Zähler: die Anzahl der Geräte in unterstützten Versionen von Microsoft 365-apps in den letzten 28 Tagen
-        - Nenner: die Anzahl der Geräte, die Microsoft 365-apps in den letzten 28 Tagen verwenden
-    - Neueste **Versionen:** Der blaugrün-Teil (farbig) des Balkens und der Bruch (Zähler/Nenner) auf der Leiste stellen den Prozentsatz der Geräte dar, auf denen neuere Versionen von Microsoft 365-Apps verwendet werden.
-        - Zähler: die Anzahl der Geräte in den letzten Versionen von Microsoft 365-apps in den letzten 28 Tagen
-        - Nenner: die Anzahl der Geräte, die Microsoft 365-apps in den letzten 28 Tagen verwenden
+1. **Header:**  Hebt den Prozentsatz der Geräte mit unterstützten Versionen und Geräten mit den neuesten Versionen hervor.
+1. **Textkörper:**  Enthält Informationen zum Wert der Ausführung von Geräten in empfohlenen Kanälen und unterstützten/neuesten Versionen.
+1. **Visualisierung:** Die Aufschlüsselung in der Visualisierung soll zeigen, wie viele Geräte mit unterstützten Versionen und neuesten Versionen von Microsoft 365-Apps ausgeführt werden:
+    - **Unterstützte Versionen:** Der blaue (farbige) Teil der Leiste und der Bruch (Zähler/Nenner) auf der Leiste stellen den Prozentsatz der Geräte dar, auf dem unterstützte Versionen von Microsoft 365-Apps ausgeführt werden.
+        - Zähler: Die Anzahl der Geräte in unterstützten Versionen von Microsoft 365-Apps innerhalb der letzten 28 Tage
+        - Nenner: Die Anzahl der Geräte, die Microsoft 365-Apps innerhalb der letzten 28 Tage verwenden
+    - **Neueste Versionen:** Der teale (farbige) Teil der Leiste und der Bruch (Zähler/Nenner) auf der Leiste stellen den Prozentsatz der Geräte dar, auf der die letzten Versionen von Microsoft 365-Apps ausgeführt werden.
+        - Zähler: Die Anzahl der Geräte auf den letzten Versionen von Microsoft 365-Apps innerhalb der letzten 28 Tage
+        - Nenner: Die Anzahl der Geräte, die Microsoft 365-Apps innerhalb der letzten 28 Tage verwenden
 1. **Weitere Informationen:**   Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
-#### <a name="trend-visualization-of-the-devices"></a>Trend Visualisierung der Geräte
+#### <a name="trend-visualization-of-the-devices"></a>Trendvisualisierung der Geräte
 
-Dieses Diagramm zeigt die Trendreihe der Geräte, auf denen unterstützte Versionen und die neuesten Versionen von Microsoft 365-apps in den letzten 180 Tagen laufen.
+Dieses Diagramm zeigt die Trendlinie der Geräte mit unterstützten Versionen und neuesten Versionen von Microsoft 365-Apps in den letzten 180 Tagen.
 
-:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Diagramm, in dem dargestellt wird, wie viele Geräte im Laufe der Zeit unterstützte und aktuelle Versionen von apps ausführen.":::
+:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Diagramm, das zeigt, wie viele Geräte im Laufe der Zeit unterstützte und neueste Versionen von Apps ausführen.":::
 
 ## <a name="devices-in-your-organization"></a>Geräte in Ihrer Organisation
 
-In diesem Abschnitt können Sie auf die Metriken reagieren, auf die Sie sich konzentrieren möchten, indem Sie relevante Informationen zu allen Metriken für Microsoft 365 apps-Integritäts Technologie-Erlebnisse bereitstellen.
+Dieser Abschnitt hilft Ihnen, auf die Metriken zu setzen, auf die Sie sich konzentrieren möchten, indem Sie relevante Informationen zu allen Metriken für Die Integrität von Microsoft 365-Apps – Technologieerfahrungen bereitstellen.
 
-Die folgenden Spalten werden in der Tabelle auf Kanal/Version-Ebene angezeigt:
+Die folgenden Spalten werden in der Tabelle auf Kanal-/Versionsebene angezeigt:
 
-- **Kanal** : aktueller Microsoft 365-apps-Kanal auf den Geräten.
-- **Status:**   Microsoft 365 apps unterstützen den Status der Geräte basierend auf aktuellem Kanal und Version.
-- **Versionen:**   Aktuelle Microsoft 365-apps-Versionen auf den Geräten.
+- **Kanal:** Aktueller Microsoft 365-Apps-Kanal auf den Geräten.
+- **Status:**   Microsoft 365-Apps unterstützen den Status der Geräte basierend auf dem aktuellen Kanal und der aktuellen Version.
+- **Versionen:**   Aktuelle Microsoft 365-Apps-Versionen auf den Geräten.
 - **Anzahl der Geräte:**  Anzahl der Geräte.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Kommunikation – Personen Erfahrungen](communication.md) (Artikel) \
-[Content Collaboration – Personen Erfahrungen](content-collaboration.md) (Artikel) \
-[Besprechungen – Personen Erfahrungen](meetings.md) (Artikel) \
-[Mobilität – Personen Erfahrungen](mobility.md) (Artikel) \
-[Datenschutz-Steuerelemente für Produktivitäts Bewertung](privacy.md) (Artikel) \
-[Teamwork – People Experiences](teamwork.md) (Artikel)
+[Kommunikation – Benutzererfahrungen](communication.md) (Artikel)\
+[Inhaltszusammenarbeit – Benutzererfahrungen](content-collaboration.md) (Artikel)\
+[Besprechungen – Benutzererfahrungen](meetings.md) (Artikel)\
+[Mobilität – Benutzererfahrungen](mobility.md) (Artikel)\
+[Datenschutzsteuerelemente für Produktivitätsergebnis](privacy.md) (Artikel)\
+[Teamwork – Erfahrungen mit Personen](teamwork.md) (Artikel)
