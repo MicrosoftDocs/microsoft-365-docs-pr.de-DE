@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von Ereignissen zur Reduzierung der Angriffsfläche
+title: Anzeigen der Ereignisse zur Verringerung der Angriffsfläche
 description: Importieren Sie benutzerdefinierte Ansichten, um Angriffsflächenreduzierungsereignisse zu sehen.
 keywords: Ereignisansicht, Exploit Guard, Überwachung, Überprüfung, Ereignisse
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: de605a667284c1218a3efe6e388d99b26b42e333
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 0a2ec16685ede2e625528fc3944943923bba3fc9
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068576"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569743"
 ---
-# <a name="view-attack-surface-reduction-events"></a>Anzeigen von Ereignissen zur Reduzierung der Angriffsfläche
+# <a name="view-attack-surface-reduction-events"></a>Anzeigen der Ereignisse zur Verringerung der Angriffsfläche
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -147,32 +147,32 @@ Sie können auf diese Ereignisse in der Windows-Ereignisanzeige zugreifen:
 
 Feature | Anbieter/Quelle | Ereignis-ID | Beschreibung
 :-|:-|:-:|:-
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 1 | ACG-Überwachung
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 2 | Erzwingen von ACG
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 3 | Überwachung untergeordneter Prozesse nicht zulassen
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 4  | Blockieren untergeordneter Prozesse nicht zulassen
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 5  | Überwachung von Bildern mit niedriger Integrität blockieren
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 6  | Blockieren von Bildern mit niedriger Integrität
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 7  | Remoteabbildüberwachung blockieren
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 8  | Blockierung von Remotebildern
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 9  | Deaktivieren der Überwachung von win32k-Systemaufrufen
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 10   | Deaktivieren des win32k-Systemanrufblocks
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 11 | Codeintegritätsschutz-Überwachung
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 12  | Codeintegritätsschutzblock
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 13 | EAF-Überwachung
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 14  | Erzwingen von EAF
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 15  | EAF+-Überwachung
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 16  | Erzwingen von EAF+
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 17  | IAF-Überwachung
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 18  | IAF erzwingen
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 19 | ROP StackPivot-Überwachung
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 20 | Erzwingen von ROP StackPivot
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) |  21 | ROP CallerCheck-Überwachung
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 22 | Erzwingen von ROP CallerCheck
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 23 | ROP SimExec-Überwachung
-Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 24 | Erzwingen von ROP SimExec
-Exploit-Schutz | WER-Diagnostics | 5  | CFG-Block
-Exploit-Schutz | Win32K (Betriebsbereit) | 260 | Nicht vertrauenswürdige Schriftart
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 1 | ACG-Überwachung
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 2 | Erzwingen von ACG
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 3 | Überwachung untergeordneter Prozesse nicht zulassen
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 4  | Blockieren untergeordneter Prozesse nicht zulassen
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 5  | Überwachung von Bildern mit niedriger Integrität blockieren
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 6  | Blockieren von Bildern mit niedriger Integrität
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 7  | Remoteabbildüberwachung blockieren
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 8  | Blockierung von Remotebildern
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 9  | Deaktivieren der Überwachung von win32k-Systemaufrufen
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 10   | Deaktivieren des win32k-Systemanrufblocks
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 11 | Codeintegritätsschutz-Überwachung
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 12  | Codeintegritätsschutzblock
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 13 | EAF-Überwachung
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 14  | Erzwingen von EAF
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 15  | EAF+-Überwachung
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 16  | Erzwingen von EAF+
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 17  | IAF-Überwachung
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 18  | IAF erzwingen
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 19 | ROP StackPivot-Überwachung
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 20 | Erzwingen von ROP StackPivot
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) |  21 | ROP CallerCheck-Überwachung
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 22 | Erzwingen von ROP CallerCheck
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 23 | ROP SimExec-Überwachung
+Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 24 | Erzwingen von ROP SimExec
+Exploit-Schutz. | WER-Diagnostics | 5  | CFG-Block
+Exploit-Schutz. | Win32K (Betriebsbereit) | 260 | Nicht vertrauenswürdige Schriftart
 Netzwerkschutz | Windows Defender (Betriebsbereit) | 5007 | Ereignis, wenn Einstellungen geändert werden
 Netzwerkschutz | Windows Defender (Betriebsbereit) | 1125 | Ereignis, wenn der Netzwerkschutz im Überwachungsmodus abgeschaltet wird
 Netzwerkschutz | Windows Defender (Betriebsbereit) | 1126 | Ereignis, wenn der Netzwerkschutz im Blockmodus aktiviert wird
@@ -181,6 +181,6 @@ Kontrollierter Ordnerzugriff | Windows Defender (Betriebsbereit) | 1124 | Überw
 Kontrollierter Ordnerzugriff | Windows Defender (Betriebsbereit) | 1123 | Ereignis "Blockierter kontrollierter Ordnerzugriff"
 Kontrollierter Ordnerzugriff | Windows Defender (Betriebsbereit) | 1127 | Blockereignis "Blockierter kontrollierter Ordnerzugriffssektor"
 Kontrollierter Ordnerzugriff | Windows Defender (Betriebsbereit) | 1128 | Audited Controlled folder access sector write block event
-Angriffsfläche verringern | Windows Defender (Betriebsbereit) | 5007 | Ereignis, wenn Einstellungen geändert werden
-Angriffsfläche verringern | Windows Defender (Betriebsbereit) | 1122 | Ereignis, wenn die Regel im Überwachungsmodus abgeschaltet wird
-Angriffsfläche verringern | Windows Defender (Betriebsbereit) | 1121 | Ereignis, wenn die Regel im Blockmodus gestartet wird
+Verringerung der Angriffsfläche | Windows Defender (Betriebsbereit) | 5007 | Ereignis, wenn Einstellungen geändert werden
+Verringerung der Angriffsfläche | Windows Defender (Betriebsbereit) | 1122 | Ereignis, wenn die Regel im Überwachungsmodus abgeschaltet wird
+Verringerung der Angriffsfläche | Windows Defender (Betriebsbereit) | 1121 | Ereignis, wenn die Regel im Blockmodus gestartet wird

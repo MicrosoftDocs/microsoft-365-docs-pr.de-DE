@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Erfahren Sie, wie Sie das Office 365 Content Delivery Network (CDN) verwenden, um die Zustellung Ihrer SharePoint Online-Objekte zu beschleunigen.
-ms.openlocfilehash: 17c80b8718ea46c9dfba9f803093974e8ce3e706
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 6819f627d3590cd2739b36cb1bc303f197d6aaa5
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222683"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570405"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Verwenden des Office 365 Content Delivery Network (CDN) mit SharePoint Online
 
@@ -130,19 +130,29 @@ Weitere Informationen dazu, wie der CDN-Zugriff auf Objekte privater Herkunft fu
 + Objekte, die an einem öffentlichen Ursprung verfügbar gemacht werden, sind für jeden Benutzer anonym zugänglich.
     > [!IMPORTANT]
     > Sie sollten niemals Ressourcen platzieren, die Benutzerinformationen enthalten oder als vertraulich für Ihre Organisation in einem öffentlichen Ursprung betrachtet werden.
+
 + Wenn Sie ein Objekt aus einem öffentlichen Ursprung entfernen, ist es unter Umständen bis zu 30 Tage lang weiterhin über den Cache verfügbar. Links zu dem Objekt im CDN werden jedoch innerhalb von 15 Minuten ungültig.
+
 + Wenn Sie Stylesheets (CSS-Dateien) an einem öffentlichen Ursprung hosten, können Sie im Code relative Pfade und URIs verwenden. Dies bedeutet, dass Sie auf den Speicherort von Hintergrundbildern und anderen Objekten relativ zum Speicherort des Objekts, das sie aufruft, verweisen können.
-+ Während Sie die URL eines öffentlichen Ursprungs erstellen können, sollten Sie mit Vorsicht vorgehen und sicherstellen, dass Sie die Seitenkontexteigenschaft verwenden und die Anleitungen dazu befolgen. Der Grund hierfür ist folgender: Wenn der Zugriff auf das CDN nicht mehr verfügbar ist, wird die URL nicht automatisch auf Ihre Organisation in SharePoint Online aufgelöst, was zu fehlerhaften Links und anderen Fehlern führen kann. Die URL unterliegt auch Änderungen, weshalb sie nicht nur hart auf den aktuellen Wert codiert werden sollte.
+
++ Während Sie die URL eines öffentlichen Ursprungs erstellen können, sollten Sie mit Vorsicht vorgehen und sicherstellen, dass Sie die Seitenkontexteigenschaft verwenden und die Anleitungen dazu befolgen. Der Grund hierfür ist folgender: Wenn der Zugriff auf das CDN nicht mehr verfügbar ist, wird die URL nicht automatisch auf Ihre Organisation in SharePoint Online aufgelöst, was zu fehlerhaften Links und anderen Fehlern führen kann. Die URL kann ebenfalls geändert werden, weshalb sie nicht nur hart auf den aktuellen Wert codiert werden sollte.
+
 + Die Standarddateitypen, die für öffentliche Ursprünge enthalten sind, sind .css, .eot, .gif, .ico, .jpeg, .jpg, .js, .map, .png, .svg, .ttf, .woff und .woff2. Sie können zusätzliche Dateitypen angeben.
+
 + Sie können eine Richtlinie so konfigurieren, dass Objekte ausgeschlossen werden, die durch von Ihnen festgelegte Websiteklassifizierungen identifiziert wurden. Beispielsweise können Sie alle Objekte ausschließen, die als „vertraulich“ oder „eingeschränkt“ gekennzeichnet sind, auch wenn sie einen zulässigen Dateityp haben und sich an einem öffentlichen Ursprung befinden.
 
 #### <a name="attributes-and-advantages-of-hosting-assets-in-private-origins"></a>Attribute und Vorteile des Hostings von Ressourcen in privaten Ursprüngen
 
 + Private Ursprünge können nur für SharePoint Online-Objekte verwendet werden.
+
 + Benutzer können nur von einem privaten Ursprung aus auf die Objekte zugreifen, wenn sie über Berechtigungen für den Zugriff auf den Container verfügen. Der anonyme Zugriff auf diese Objekte wird verhindert.
+
 + Objekte privater Herkunft müssen vom SharePoint Online-Mandanten verwiesen werden. Der direkte Zugriff auf private CDN-Objekte funktioniert nicht.
+
 + Wenn Sie eine Ressource aus dem privaten Ursprung entfernen, ist die Ressource möglicherweise bis zu einer Stunde lang aus dem Cache verfügbar. Links zum Objekt im CDN werden jedoch innerhalb von 15 Minuten nach dem Entfernen der Ressource ungültig.
+
 + Die standardmäßigen Dateitypen, die für private Ursprünge eingeschlossen werden, sind GIF, ICO, JPEG, JPG, JS und PNG. Sie können zusätzliche Dateitypen angeben.
+
 + Wie bei öffentlichen Ursprüngen können Sie eine Richtlinie so konfigurieren, dass Objekte ausgeschlossen werden, die durch von Ihnen festgelegte Websiteklassifizierungen identifiziert wurden, auch wenn Sie Platzhalter verwenden, um alle Objekte in einen Ordner oder eine Dokumentbibliothek einschließen zu können.
 
 Weitere Informationen zur Verwendung des Office 365 CDN, allgemeiner CDN-Konzepte und anderer Microsoft CDNs, die Sie mit Ihrem Office 365-Mandanten verwenden können, finden Sie unter [Content Delivery Networks](content-delivery-networks.md).
@@ -179,13 +189,13 @@ Führen Sie die folgenden Schritte aus, um das CDN für das Hosten Ihrer Objekte
 
 Bevor Sie Änderungen an den Mandanten-CDN-Einstellungen vornehmen, sollten Sie den aktuellen Status der privaten CDN-Konfiguration in Ihrem Office 365-Mandanten abrufen. Stellen Sie mithilfe der SharePoint Online-Verwaltungsshell eine Verbindung mit Ihrem Mandanten herzustellen:
 
-``` powershell
+```powershell
 Connect-SPOService -Url https://contoso-admin.sharepoint.com
 ```
 
 Verwenden Sie nun **das Cmdlet Get-SPOTenantCdnEnabled,** um die Einstellungen für den CDN-Status aus dem Mandanten abzurufen:
 
-``` powershell
+```powershell
 Get-SPOTenantCdnEnabled -CdnType <Public | Private>
 ```
 
@@ -193,21 +203,21 @@ Der Status des CDN für den angegebenen CdnType wird auf dem Bildschirm ausgegeb
 
 Verwenden Sie **das Cmdlet Set-SPOTenantCdnEnabled,** um Ihrer Organisation die Verwendung des Office 365 CDN zu ermöglichen. Sie können Ihrer Organisation die Verwendung öffentlicher, privater Oder beides gleichzeitig ermöglichen. Sie können das CDN auch so konfigurieren, dass das Setup der Standardherkunft beim Aktivieren übersprungen wird. Sie können diese Ursprünge immer später hinzufügen, wie in diesem Thema beschrieben.
   
-In Windows Powershell für SharePoint Online:
+In Windows PowerShell für SharePoint Online:
 
-``` powershell
+```powershell
 Set-SPOTenantCdnEnabled -CdnType <Public | Private | Both> -Enable $true
 ```
 
 Geben Sie beispielsweise den folgenden Befehl ein, um ihrer Organisation die Verwendung öffentlicher und privater Ursprünge zu ermöglichen:
 
-``` powershell
+```powershell
 Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
 ```
 
 Geben Sie den folgenden Befehl ein, um ihrer Organisation die Verwendung öffentlicher und privater Ursprünge zu ermöglichen, aber das Einrichten der Standardherkunftstypen zu überspringen:
 
-``` powershell
+```powershell
 Set-SPOTenantCdnEnabled -CdnType Both -Enable $true -NoDefaultOrigins
 ```
 
@@ -215,13 +225,13 @@ Informationen zu den Ursprüngen, die standardmäßig bereitgestellt werden, wen
 
 Geben Sie den folgenden Befehl ein, um ihrer Organisation die Verwendung öffentlicher Ursprünge zu ermöglichen:
 
-``` powershell
+```powershell
 Set-SPOTenantCdnEnabled -CdnType Public -Enable $true
 ```
 
 Geben Sie den folgenden Befehl ein, um ihrer Organisation die Verwendung privater Ursprünge zu ermöglichen:
 
-``` powershell
+```powershell
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $true
 ```
 
@@ -237,19 +247,19 @@ Verwenden Sie **das Cmdlet Set-SPOTenantCdnPolicy,** um statische Dateitypen zu 
 
 In Windows PowerShell für SharePoint Online:
 
-``` powershell
+```powershell
 Set-SPOTenantCdnPolicy -CdnType <Public | Private> -PolicyType IncludeFileExtensions -PolicyValue "<Comma-separated list of file types >"
 ```
 
 Um z. B. das Hosten von CSS- und PNG-Dateien im CDN zu ermöglichen, geben Sie den Folgenden Befehl ein:
 
-``` powershell
+```powershell
 Set-SPOTenantCdnPolicy -CdnType Private -PolicyType IncludeFileExtensions -PolicyValue "CSS,PNG"
 ```
 
 Verwenden Sie das **Cmdlet Get-SPOTenantCdnPolicies,** um zu sehen, welche Dateitypen derzeit vom CDN zulässig sind:
 
-``` powershell
+```powershell
 Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 ```
 
@@ -265,13 +275,13 @@ Verwenden Sie das Cmdlet **Set-SPOTenantCdnPolicy** -Cmdlet zum Ausschließen vo
 
 In Windows PowerShell für SharePoint Online:
 
-``` powershell
+```powershell
 Set-SPOTenantCdnPolicy -CdnType <Public | Private> -PolicyType ExcludeRestrictedSiteClassifications  -PolicyValue "<Comma-separated list of site classifications >"
 ```
 
 Verwenden Sie das **Cmdlet Get-SPOTenantCdnPolicies,** um zu sehen, welche Websiteklassifizierungen derzeit eingeschränkt sind:
 
-``` powershell
+```powershell
 Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 ```
 
@@ -296,13 +306,13 @@ Verwenden Sie **das Cmdlet Add-SPOTenantCdnOrigin,** um einen Ursprung zu defini
 > [!IMPORTANT]
 > Sie sollten niemals Ressourcen platzieren, die Benutzerinformationen enthalten oder als vertraulich für Ihre Organisation in einem öffentlichen Ursprung betrachtet werden.
 
-``` powershell
+```powershell
 Add-SPOTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
 ```
 
 Der Wert des _Pfads_ ist der relative Pfad zu der Bibliothek oder dem Ordner, der die Objekte enthält. Sie können Platzhalter zusätzlich zu relativen Pfaden verwenden. Origins unterstützen Platzhalter, die der URL vorausgesprungen sind. Auf diese Weise können Sie Ursprünge erstellen, die mehrere Websites umfassen. Geben Sie beispielsweise den folgenden Befehl ein, um alle Ressourcen im Masterpages-Ordner für alle Websites als öffentlichen Ursprung im CDN zu verwenden:
 
-``` powershell
+```powershell
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
@@ -313,23 +323,23 @@ Sie können einen Ursprung mit einem bestimmten relativen Pfad hinzufügen. Sie 
 
 In diesem Beispiel wird auf einer bestimmten Website ein privater Ursprung der Websiteassetbibliothek hinzugefügt:
 
-``` powershell
+```powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
 In diesem Beispiel wird der Websiteressourcenbibliothek der Websitesammlung ein privater Ursprung des Ordners _"Ordner1"_ hinzugefügt:
 
-``` powershell
+```powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder1
 ```
 
 Wenn ein Leerzeichen im Pfad vorhanden ist, können Sie den Pfad entweder in doppelte Anführungszeichen setzen oder das Leerzeichen durch die URL-Codierung "%20" ersetzen. In den folgenden Beispielen wird der Websiteressourcenbibliothek der Websitesammlung ein privater Ursprung des Ordners _1_ hinzugefügt:
 
-``` powershell
+```powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%201
 ```
 
-``` powershell
+```powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
 ```
 
@@ -347,13 +357,13 @@ Normalerweise werden diese Ursprünge standardmäßig für Sie eingerichtet, wen
   
 + Verwenden Sie **das Cmdlet Add-SPOTenantCdnOrigin,** um die Formatbibliothek als öffentlichen Ursprung zu definieren.
 
-``` powershell
+  ```powershell
   Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */style%20library
   ```
 
 + Verwenden Sie **das Cmdlet Add-SPOTenantCdnOrigin,** um die Masterseiten als öffentlichen Ursprung zu definieren.
 
-``` powershell
+  ```powershell
   Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
   ```
 
@@ -366,19 +376,19 @@ Nachdem Sie den Befehl ausgeführt haben, synchronisiert das System die Konfigur
 
 + Verwenden Sie **das Cmdlet Add-SPOTenantCdnOrigin,** um den Ordner "Websiteressourcen" als privaten Ursprung zu definieren.
 
-``` powershell
+  ```powershell
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */siteassets
   ```
 
 + Verwenden Sie **das Cmdlet Add-SPOTenantCdnOrigin,** um den Websiteseitenordner als privaten Ursprung zu definieren.
 
-``` powershell
+  ```powershell
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */sitepages
   ```
 
 + Verwenden Sie **das Cmdlet Add-SPOTenantCdnOrigin,** um den Veröffentlichungsbildordner als privaten Ursprung zu definieren.
 
-``` powershell
+  ```powershell
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
   ```
 
@@ -389,9 +399,9 @@ Nachdem Sie den Befehl ausgeführt haben, synchronisiert das System die Konfigur
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Beispiel: Konfigurieren eines privaten Ursprungs für eine Websitesammlung für SharePoint Online
 
-Verwenden Sie **das Cmdlet Add-SPOTenantCdnOrigin,** um eine Websitesammlung als privaten Ursprung zu definieren. Zum Beispiel:
+Verwenden Sie **das Cmdlet Add-SPOTenantCdnOrigin,** um eine Websitesammlung als privaten Ursprung zu definieren. Beispiel:
 
-``` powershell
+```powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
@@ -416,7 +426,7 @@ Wenn Sie den Speicherort des Ursprungs abrufen müssen, können Sie das **Cmdlet
 
 Sie können den Zugriff auf einen Ordner oder eine SharePoint-Bibliothek entfernen, die Sie als Ursprung identifiziert haben. Verwenden Sie dazu das **Cmdlet Remove-SPOTenantCdnOrigin.**
 
-``` powershell
+```powershell
 Remove-SPOTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 ```
 
@@ -434,13 +444,13 @@ Verwenden Sie **das Cmdlet Set-SPOTenantCdnEnabled,** um das CDN für Ihre Organ
   
 Geben Sie den folgenden Befehl ein, um die Verwendung öffentlicher Ursprünge im CDN zu deaktivieren:
 
-``` powershell
+```powershell
 Set-SPOTenantCdnEnabled -CdnType Public -Enable $false
 ```
 
 Geben Sie den folgenden Befehl ein, um die Verwendung der privaten Ursprünge im CDN zu deaktivieren:
 
-``` powershell
+```powershell
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 ```
 
@@ -462,13 +472,13 @@ Führen Sie die folgenden Schritte aus, um das CDN für das Hosten Ihrer Objekte
 
 Bevor Sie Änderungen an den Mandanten-CDN-Einstellungen vornehmen, sollten Sie den aktuellen Status der privaten CDN-Konfiguration in Ihrem Office 365-Mandanten abrufen. Stellen Sie mithilfe von PnP PowerShell eine Verbindung mit Ihrem Mandanten herzustellen:
 
-``` powershell
+```powershell
 Connect-PnPOnline -Url https://contoso-admin.sharepoint.com -UseWebLogin
 ```
 
 Verwenden Sie nun **das Cmdlet Get-PnPTenantCdnEnabled,** um die Einstellungen für den CDN-Status aus dem Mandanten abzurufen:
 
-``` powershell
+```powershell
 Get-PnPTenantCdnEnabled -CdnType <Public | Private>
 ```
 
@@ -478,19 +488,19 @@ Verwenden Sie **das Cmdlet Set-PnPTenantCdnEnabled,** um Ihrer Organisation die 
   
 In PnP PowerShell:
 
-``` powershell
+```powershell
 Set-PnPTenantCdnEnabled -CdnType <Public | Private | Both> -Enable $true
 ```
 
 Geben Sie beispielsweise den folgenden Befehl ein, um ihrer Organisation die Verwendung öffentlicher und privater Ursprünge zu ermöglichen:
 
-``` powershell
+```powershell
 Set-PnPTenantCdnEnabled -CdnType Both -Enable $true
 ```
 
 Geben Sie den folgenden Befehl ein, um ihrer Organisation die Verwendung öffentlicher und privater Ursprünge zu ermöglichen, aber das Einrichten der Standardherkunftstypen zu überspringen:
 
-``` powershell
+```powershell
 Set-PnPTenantCdnEnabled -CdnType Both -Enable $true -NoDefaultOrigins
 ```
 
@@ -498,13 +508,13 @@ Informationen zu den Ursprüngen, die standardmäßig bereitgestellt werden, wen
 
 Geben Sie den folgenden Befehl ein, um ihrer Organisation die Verwendung öffentlicher Ursprünge zu ermöglichen:
 
-``` powershell
+```powershell
 Set-PnPTenantCdnEnabled -CdnType Public -Enable $true
 ```
 
 Geben Sie den folgenden Befehl ein, um ihrer Organisation die Verwendung privater Ursprünge zu ermöglichen:
 
-``` powershell
+```powershell
 Set-PnPTenantCdnEnabled -CdnType Private -Enable $true
 ```
 
@@ -520,19 +530,19 @@ Verwenden Sie **das Cmdlet Set-PnPTenantCdnPolicy,** um statische Dateitypen zu 
 
 In PnP PowerShell:
 
-``` powershell
+```powershell
 Set-PnPTenantCdnPolicy -CdnType <Public | Private> -PolicyType IncludeFileExtensions -PolicyValue "<Comma-separated list of file types >"
 ```
 
 Um z. B. das Hosten von CSS- und PNG-Dateien im CDN zu ermöglichen, geben Sie den Folgenden Befehl ein:
 
-``` powershell
+```powershell
 Set-PnPTenantCdnPolicy -CdnType Private -PolicyType IncludeFileExtensions -PolicyValue "CSS,PNG"
 ```
 
 Verwenden Sie das **Cmdlet Get-PnPTenantCdnPolicies,** um zu sehen, welche Dateitypen derzeit vom CDN zulässig sind:
 
-``` powershell
+```powershell
 Get-PnPTenantCdnPolicies -CdnType <Public | Private>
 ```
 
@@ -548,13 +558,13 @@ Verwenden Sie **das Cmdlet Set-PnPTenantCdnPolicy,** um Websiteklassifizierungen
 
 In PnP PowerShell:
 
-``` powershell
+```powershell
 Set-PnPTenantCdnPolicy -CdnType <Public | Private> -PolicyType ExcludeRestrictedSiteClassifications  -PolicyValue "<Comma-separated list of site classifications>"
 ```
 
 Verwenden Sie das **Cmdlet Get-PnPTenantCdnPolicies,** um zu sehen, welche Websiteklassifizierungen derzeit eingeschränkt sind:
 
-``` powershell
+```powershell
 Get-PnPTenantCdnPolicies -CdnType <Public | Private>
 ```
 
@@ -579,13 +589,13 @@ Verwenden Sie **das Cmdlet Add-PnPTenantCdnOrigin,** um einen Ursprung zu defini
 > [!IMPORTANT]
 > Sie sollten niemals Ressourcen platzieren, die Benutzerinformationen enthalten oder als vertraulich für Ihre Organisation in einem öffentlichen Ursprung betrachtet werden.
 
-``` powershell
+```powershell
 Add-PnPTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
 ```
 
 Der Wert des _Pfads_ ist der relative Pfad zu der Bibliothek oder dem Ordner, der die Objekte enthält. Sie können Platzhalter zusätzlich zu relativen Pfaden verwenden. Origins unterstützen Platzhalter, die der URL vorausgesprungen sind. Auf diese Weise können Sie Ursprünge erstellen, die mehrere Websites umfassen. Geben Sie beispielsweise den folgenden Befehl ein, um alle Ressourcen im Masterpages-Ordner für alle Websites als öffentlichen Ursprung im CDN zu verwenden:
 
-``` powershell
+```powershell
 Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
@@ -596,23 +606,23 @@ Sie können einen Ursprung mit einem bestimmten relativen Pfad hinzufügen. Sie 
 
 In diesem Beispiel wird auf einer bestimmten Website ein privater Ursprung der Websiteressourcenbibliothek hinzugefügt:
 
-``` powershell
+```powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
 In diesem Beispiel wird der Websiteressourcenbibliothek der Websitesammlung ein privater Ursprung des Ordners _"Ordner1"_ hinzugefügt:
 
-``` powershell
+```powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder1
 ```
 
 Wenn ein Leerzeichen im Pfad vorhanden ist, können Sie den Pfad entweder in doppelte Anführungszeichen setzen oder das Leerzeichen durch die URL-Codierung "%20" ersetzen. In den folgenden Beispielen wird der Websiteressourcenbibliothek der Websitesammlung ein privater Ursprung des Ordners _1_ hinzugefügt:
 
-``` powershell
+```powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%201
 ```
 
-``` powershell
+```powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
 ```
 
@@ -630,13 +640,13 @@ Normalerweise werden diese Ursprünge standardmäßig für Sie eingerichtet, wen
   
 + Verwenden Sie **das Cmdlet Add-PnPTenantCdnOrigin,** um die Formatbibliothek als öffentlichen Ursprung zu definieren.
 
-``` powershell
+  ```powershell
   Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */style%20library
   ```
 
 + Verwenden Sie **das Add-PnPTenantCdnOrigin-Cmdlet,** um die Masterseiten als öffentlichen Ursprung zu definieren.
 
-``` powershell
+  ```powershell
   Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
   ```
 
@@ -649,19 +659,19 @@ Nachdem Sie den Befehl ausgeführt haben, synchronisiert das System die Konfigur
 
 + Verwenden Sie **das Cmdlet Add-PnPTenantCdnOrigin,** um den Ordner "Websiteressourcen" als privaten Ursprung zu definieren.
 
-``` powershell
+  ```powershell
   Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */siteassets
   ```
 
 + Verwenden Sie **das Cmdlet Add-PnPTenantCdnOrigin,** um den Websiteseitenordner als privaten Ursprung zu definieren.
 
-``` powershell
+  ```powershell
   Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */sitepages
   ```
 
 + Verwenden Sie **das Cmdlet Add-PnPTenantCdnOrigin,** um den Veröffentlichungsbildordner als privaten Ursprung zu definieren.
 
-``` powershell
+  ```powershell
   Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
   ```
 
@@ -672,9 +682,9 @@ Nachdem Sie den Befehl ausgeführt haben, synchronisiert das System die Konfigur
 <a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Beispiel: Konfigurieren eines privaten Ursprungs für eine Websitesammlung für SharePoint Online
 
-Verwenden Sie **das Cmdlet Add-PnPTenantCdnOrigin,** um eine Websitesammlung als privaten Ursprung zu definieren. Zum Beispiel:
+Verwenden Sie **das Cmdlet Add-PnPTenantCdnOrigin,** um eine Websitesammlung als privaten Ursprung zu definieren. Beispiel:
 
-``` powershell
+```powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
@@ -699,7 +709,7 @@ Wenn Sie den Speicherort des Ursprungs abrufen müssen, können Sie das **Cmdlet
 
 Sie können den Zugriff auf einen Ordner oder eine SharePoint-Bibliothek entfernen, die Sie als Ursprung identifiziert haben. Verwenden Sie dazu das **Cmdlet Remove-PnPTenantCdnOrigin.**
 
-``` powershell
+```powershell
 Remove-PnPTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 ```
 
@@ -717,13 +727,13 @@ Verwenden Sie **das Cmdlet Set-PnPTenantCdnEnabled,** um das CDN für Ihre Organ
   
 Geben Sie den folgenden Befehl ein, um die Verwendung öffentlicher Ursprünge im CDN zu deaktivieren:
 
-``` powershell
+```powershell
 Set-PnPTenantCdnEnabled -CdnType Public -Enable $false
 ```
 
 Geben Sie den folgenden Befehl ein, um die Verwendung der privaten Ursprünge im CDN zu deaktivieren:
 
-``` powershell
+```powershell
 Set-PnPTenantCdnEnabled -CdnType Private -Enable $false
 ```
 
@@ -747,13 +757,13 @@ Sie können den Status des Office 365 CDN in Ihrem Mandanten mithilfe des Cmdlet
 
 Um das öffentliche Office 365 CDN in Ihrem Mandanten zu aktivieren, führen Sie Folgendes aus:
 
-```sh
+```cli
 spo cdn set --type Public --enabled true
 ```
 
 Führen Sie zum Aktivieren des Office 365 SharePoint CDN aus:
 
-```sh
+```cli
 spo cdn set --type Private --enabled true
 ```
 
@@ -763,7 +773,7 @@ Verwenden Sie den [Befehl spo cdn get,](https://pnp.github.io/office365-cli/cmd/
 
 Um zu überprüfen, ob das öffentliche Office 365 CDN aktiviert ist, führen Sie Folgendes aus:
 
-```sh
+```cli
 spo cdn get --type Public
 ```
 
@@ -771,7 +781,7 @@ spo cdn get --type Public
 
 Um die derzeit konfigurierten öffentlichen Office 365 CDN-Ursprünge anzuzeigen, führen Sie Folgendes aus:
 
-```sh
+```cli
 spo cdn origin list --type Public
 ```
 
@@ -784,7 +794,7 @@ Informationen zu den Ursprüngen, die standardmäßig bereitgestellt werden, wen
 
 Verwenden Sie den Befehl [spo cdn origin add](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-add/) zum Definieren eines CDN-Ursprungs. Sie können mehrere Ursprünge definieren. Der Ursprung ist eine URL, die auf eine SharePoint-Bibliothek oder einen Ordner mit den Objekten verweist, die vom CDN gehostet werden sollen.
 
-```sh
+```cli
 spo cdn origin add --type [Public | Private] --origin <path>
 ```
 
@@ -792,13 +802,13 @@ Dabei `path` handelt es sich um den relativen Pfad zu dem Ordner, der die Objekt
 
 Führen Sie Folgendes aus, um alle Objekte in den **Master page Gallery** aller Websites als öffentlichen Ursprung zu schließen:
 
-```sh
+```cli
 spo cdn origin add --type Public --origin */masterpage
 ```
 
 Um einen privaten Ursprung für eine bestimmte Websitesammlung zu konfigurieren, führen Sie Folgendes aus:
 
-```sh
+```cli
 spo cdn origin add --type Private --origin sites/site1/siteassets
 ```
 
@@ -811,7 +821,7 @@ Verwenden Sie den Befehl [spo cdn origin remove](https://pnp.github.io/office365
 
 Führen Sie zum Entfernen eines öffentlichen Ursprungs aus der CDN-Konfiguration aus:
 
-```sh
+```cli
 spo cdn origin remove --type Public --origin */masterpage
 ```
 
@@ -831,7 +841,7 @@ Standardmäßig sind die folgenden Dateitypen im CDN enthalten: _.css, .eot, .gi
 
 Führen Sie zum Hinzufügen des _Dateityps JSON_ zur Standardliste der im öffentlichen CDN enthaltenen Dateitypen aus:
 
-```sh
+```cli
 spo cdn policy set --type Public --policy IncludeFileExtensions --value "CSS,EOT,GIF,ICO,JPEG,JPG,JS,MAP,PNG,SVG,TTF,WOFF,JSON"
 ```
 
@@ -844,7 +854,7 @@ Verwenden Sie den Befehl [spo cdn policy set](https://pnp.github.io/office365-cl
 
 Führen Sie zum Ausschließen von Websites, die _als HBI klassifiziert_ sind, aus dem öffentlichen CDN aus
 
-```sh
+```cli
 spo cdn policy set --type Public --policy ExcludeRestrictedSiteClassifications --value "HBI"
 ```
 
@@ -852,7 +862,7 @@ spo cdn policy set --type Public --policy ExcludeRestrictedSiteClassifications -
 
 Um das Office 365 CDN zu deaktivieren, verwenden Sie den Befehl `spo cdn set`. Beispiel:
 
-```sh
+```cli
 spo cdn set --type Public --enabled false
 ```
 
@@ -890,7 +900,7 @@ Wenn Sie die vollständige URL zum Objekt anstelle eines relativen Pfads verwend
 > [!NOTE]
 > Im Allgemeinen sollten Sie URLs nicht direkt für Ressourcen im CDN hartcodieren. Sie können jedoch bei Bedarf manuell URLs für Objekte in öffentlichen Ursprüngen erstellen. Weitere Informationen finden Sie unter [Hardcoding CDN URLs for public assets](use-microsoft-365-cdn-with-spo.md).
 
-Informationen zum Überprüfen, ob Ressourcen aus dem CDN bedient werden, finden Sie unter [How do I confirm that assets are being served by the CDN?](use-microsoft-365-cdn-with-spo.md#CDNConfirm) im Abschnitt Problembehandlung im [Office 365 CDN.](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting)
+Informationen zum Überprüfen, ob Ressourcen aus dem CDN bedient werden, finden Sie unter [How do I confirm that assets are served by the CDN?](use-microsoft-365-cdn-with-spo.md#CDNConfirm) unter [Troubleshooting the Office 365 CDN](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting).
 
 ### <a name="using-assets-in-public-origins"></a>Verwenden von Ressourcen in öffentlichen Ursprüngen
 
@@ -924,15 +934,16 @@ Wenn  das Veröffentlichungsfeature für einen öffentlichen Ursprung nicht akti
 
 Bei öffentlichen CDN-Ressourcen sieht das URL-Format wie folgt aus:
 
-``` html
+```http
 https://publiccdn.sharepointonline.com/<TenantHostName>/sites/site/library/asset.png
 ```
 
 Ersetzen **Sie TenantHostName** durch Ihren Mandantennamen. Beispiel:
 
-``` html
+```http
 https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library/asset.png
 ```
+
 > [!NOTE]
 > Die Seitenkontexteigenschaft sollte zum Erstellen des Präfixes anstelle von Hartcodierung " " verwendet https://publiccdn.sharepointonline.com werden. Die URL kann geändert werden und sollte nicht hart codiert werden. Wenn Sie Anzeigevorlagen mit klassischem SharePoint Online verwenden, können Sie die Eigenschaft "window._spPageContextInfo.publicCdnBaseUrl" in Ihrer Anzeigevorlage für das Präfix der URL verwenden. Wenn Sie SPFx-Webparts für moderne und klassische SharePoint sind, können Sie die Eigenschaft "this.context.pageContext.legacyPageContext.publicCdnBaseUrl" verwenden. Dadurch wird das Präfix so angegeben, dass die Implementierung mit dem Präfix aktualisiert wird, wenn es geändert wird. Als Beispiel für SPFx kann die URL mithilfe der Eigenschaft "this.context.pageContext.legacyPageContext.publicCdnBaseUrl" + "/" + "host" + "/" + "relativeURL für das Element" erstellt werden. Weitere Informationen finden Sie unter Verwenden von [CDN im clientseitigen Code,](https://youtu.be/IH1RbQlbhIA) der Teil der [Leistungsreihe 1 der Staffel 1 ist.](https://aka.ms/sppnp-perfvideos)
 
@@ -951,9 +962,9 @@ Das folgende Diagramm veranschaulicht den Workflow, wenn SharePoint eine Anforde
 
 Der Zugriff auf Objekte privater Herkunft im Office 365 CDN wird durch Token gewährt, die von SharePoint Online generiert werden. Benutzern, die bereits über die Berechtigung zum Zugriff auf den vom Ursprung festgelegten Ordner oder die Bibliothek verfügen, werden automatisch Token gewährt, mit denen der Benutzer basierend auf seiner Berechtigungsstufe auf die Datei zugreifen kann. Diese Zugriffstoken sind 30 bis 90 Minuten gültig, nachdem sie generiert wurden, um Tokenwiedergabeangriffe zu verhindern.
 
-Nachdem das Zugriffstoken generiert wurde, gibt SharePoint Online einen  benutzerdefinierten URI an den Client zurück, der zwei Autorisierungsparameter (Edgeautorisierungstoken) und _Oat_ (Ursprungsautorisierungstoken) enthält. Die Struktur der einzelnen Token _< "Ablaufzeit" im Epoch-Zeitformat'>__<'secure signature'>_. Zum Beispiel:
+Nachdem das Zugriffstoken generiert wurde, gibt SharePoint Online einen  benutzerdefinierten URI an den Client zurück, der zwei Autorisierungsparameter (Edgeautorisierungstoken) und _Oat_ (Ursprungsautorisierungstoken) enthält. Die Struktur der einzelnen Token _< "Ablaufzeit" im Epoch-Zeitformat'>__<'secure signature'>_. Beispiel:
 
-``` html
+```http
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
 ```
 
@@ -1005,25 +1016,25 @@ Wenn der */clientsideassets-Ursprung fehlt, tritt bei SharePoint #A0 ein Fehler 
 
 Mit dem folgenden PowerShell-Befehl können Sie überprüfen, welche Ursprünge vorhanden sind:
 
-``` powershell
+```powershell
 Get-SPOTenantCdnOrigins -CdnType Public
 ```
 
 Sie können auch die Office 365 CLI überprüfen:
 
-``` powershell
+```cli
 spo cdn origin list
 ```
 
 So fügen Sie den Ursprung in PowerShell hinzu:
 
-``` powershell
+```powershell
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */CLIENTSIDEASSETS
 ```
 
 So fügen Sie den Ursprung in der Office 365 CLI hinzu:
 
-``` powershell
+```cli
 spo cdn origin add --origin */CLIENTSIDEASSETS
 ```
 

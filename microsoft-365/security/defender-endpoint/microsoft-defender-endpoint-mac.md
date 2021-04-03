@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender ATP für Mac
+title: Microsoft Defender für Endpunkt für Mac
 ms.reviewer: ''
 description: Erfahren Sie, wie Sie Microsoft Defender for Endpoint für Mac installieren, konfigurieren, aktualisieren und verwenden.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, catalina, mojave
+keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, catalina, mojave, mde for mac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34150088379445d66006c757b2c8ea607865bf4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 22d35a42eb7fb7eadbba686c292729772951c05c
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198993"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500691"
 ---
-# <a name="microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender für Endpoint für Mac
+# <a name="microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender für Endpunkt für Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,11 +39,11 @@ ms.locfileid: "51198993"
 In diesem Thema wird beschrieben, wie Sie Defender for Endpoint für Mac installieren, konfigurieren, aktualisieren und verwenden.
 
 > [!CAUTION]
-> Das Ausführen anderer Endpunktschutzprodukte von Drittanbietern zusammen mit Defender for Endpoint für Mac führt wahrscheinlich zu Leistungsproblemen und unvorhersehbaren Nebenwirkungen. Wenn in Ihrer Umgebung kein Microsoft-Endpunktschutz eine absolute Anforderung ist, können Sie weiterhin die MDATP für Mac EDR-Funktionalität nutzen, nachdem Sie die MDATP für Mac-Antivirenfunktionen für die Ausführung im passiven Modus konfiguriert [haben.](mac-preferences.md#enable--disable-passive-mode)
+> Das Ausführen anderer Endpunktschutzprodukte von Drittanbietern neben Microsoft Defender for Endpoint für Mac führt wahrscheinlich zu Leistungsproblemen und unvorhersehbaren Nebenwirkungen. Wenn In-Microsoft-Nicht-Endpunktschutz eine absolute Anforderung in Ihrer Umgebung ist, können Sie die Defender for Endpoint für Mac EDR-Funktionalität nutzen, nachdem Sie die Antivirenfunktionen für die Ausführung im passiven Modus konfiguriert [haben.](mac-preferences.md#enable--disable-passive-mode)
 
 ## <a name="whats-new-in-the-latest-release"></a>Neuigkeiten in der neuesten Version
 
-[Neues in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md)
+[Neuigkeiten in Microsoft Defender für Endpunkt](whats-new-in-microsoft-defender-atp.md)
 
 [Neues in Microsoft Defender for Endpoint für Mac](mac-whatsnew.md)
 
@@ -65,7 +65,7 @@ Um die neuesten Features, einschließlich Vorschaufunktionen (z. B. Endpunkterke
 Es gibt mehrere Methoden und Bereitstellungstools, die Sie zum Installieren und Konfigurieren von Defender for Endpoint für Mac verwenden können.
 
 - Verwaltungstools von Drittanbietern:
-    - [Microsoft Intune-basierte Bereitstellung](mac-install-with-intune.md)
+    - [Microsoft-Intune-basierte Bereitstellung](mac-install-with-intune.md)
     - [JAMF-basierte Bereitstellung](mac-install-with-jamf.md)
     - [Andere MDM-Produkte](mac-install-with-other-mdm.md)
 

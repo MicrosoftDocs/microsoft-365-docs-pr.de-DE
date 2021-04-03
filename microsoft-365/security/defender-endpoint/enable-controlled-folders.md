@@ -1,5 +1,5 @@
 ---
-title: Aktivieren des kontrollierten Ordnerzugriffs
+title: Kontrollierte Ordnerzugriff aktivieren
 keywords: Kontrollierter Ordnerzugriff, Windows 10, Windows Defender, Ransomware, Protect, Dateien, Ordner, aktivieren, aktivieren, verwenden
 description: Erfahren Sie, wie Sie Ihre wichtigen Dateien schützen, indem Sie den kontrollierten Ordnerzugriff aktivieren.
 search.product: eADQiWindows 10XVcnh
@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6d07e2a21bb01794990160cf02837fc524008098
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: ee87ac3bdfe88596a5f1625904af53499488f35f
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218760"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51571008"
 ---
-# <a name="enable-controlled-folder-access"></a>Aktivieren des kontrollierten Ordnerzugriffs
+# <a name="enable-controlled-folder-access"></a>Kontrollierte Ordnerzugriff aktivieren
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -140,5 +140,5 @@ Verwenden `Disabled` Sie, um das Feature zu deaktivieren.
 ## <a name="see-also"></a>Siehe auch
 
 * [Schützen wichtiger Ordner mit kontrolliertem Ordnerzugriff](controlled-folders.md)
-* [Anpassen des kontrollierten Ordnerzugriffs](customize-controlled-folders.md)
-* [Bewerten von Microsoft Defender for Endpoint](evaluate-mde.md)
+* [Kontrollierte Ordnerzugriff anpassen](customize-controlled-folders.md)
+* [Auswerten des Microsoft Defender für Endpunkt](evaluate-mde.md)

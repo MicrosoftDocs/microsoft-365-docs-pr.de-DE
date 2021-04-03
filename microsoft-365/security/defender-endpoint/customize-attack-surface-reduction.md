@@ -1,5 +1,5 @@
 ---
-title: Anpassen von Regeln zur Reduzierung der Angriffsfläche
+title: Anpassen der Regeln zur Verringerung der Angriffsfläche
 description: Individuelles Festlegen von Regeln in Überwachungs-, Block- oder deaktivierten Modi und Hinzufügen von Dateien und Ordnern, die von Regeln zur Reduzierung der Angriffsfläche ausgeschlossen werden sollten
 keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, customize, configure, exclude
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 99a88a869c8a79f79cbc3a16fc73bf556416c51a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 52a51b1035f1aa0fb152cf17dc9561cce378d59d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163296"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570351"
 ---
-# <a name="customize-attack-surface-reduction-rules"></a>Anpassen von Regeln zur Reduzierung der Angriffsfläche
+# <a name="customize-attack-surface-reduction-rules"></a>Anpassen der Regeln zur Verringerung der Angriffsfläche
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -116,6 +116,6 @@ Sie können die Benachrichtigung anpassen, wenn eine Regel ausgelöst wird, und 
 ## <a name="related-topics"></a>Verwandte Themen
 
 * [Reduzieren von Angriffsoberflächen mit Regeln zur Reduzierung der Angriffsfläche](attack-surface-reduction.md)
-* [Aktivieren von Regeln zur Reduzierung der Angriffsfläche](enable-attack-surface-reduction.md)
-* [Bewerten von Regeln zur Reduzierung der Angriffsfläche](evaluate-attack-surface-reduction.md)
-* [Häufig gestellte Fragen zur Reduzierung der Angriffsfläche](attack-surface-reduction.md)
+* [Aktivieren der Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md)
+* [Auswerten der Regeln zur Verringerung der Angriffsfläche](evaluate-attack-surface-reduction.md)
+* [FAQ zu Verringerung der Angriffsfläche](attack-surface-reduction.md)

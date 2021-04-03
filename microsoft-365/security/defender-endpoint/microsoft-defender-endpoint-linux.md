@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP für Linux
+title: Microsoft Defender für Endpunkt für Linux
 ms.reviewer: ''
 description: Beschreibt die Installation und Verwendung von Microsoft Defender ATP für Linux.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 08bb4c73cb9df429c4b07194f1c7615f44d745d8
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: cc2f5be700395f6d88c05481d74501f4d9d92b76
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408337"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500672"
 ---
 # <a name="microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender für Endpunkt für Linux
 
@@ -39,7 +39,7 @@ ms.locfileid: "51408337"
 In diesem Thema wird beschrieben, wie Sie Microsoft Defender for Endpoint für Linux installieren, konfigurieren, aktualisieren und verwenden.
 
 > [!CAUTION]
-> Das Ausführen anderer Endpunktschutzprodukte von Drittanbietern neben Microsoft Defender for Endpoint für Linux verursacht wahrscheinlich Leistungsprobleme und unvorhersehbare Systemfehler.
+> Das Ausführen anderer Endpunktschutzprodukte von Drittanbietern zusammen mit Microsoft Defender for Endpoint für Linux führt wahrscheinlich zu Leistungsproblemen und unvorhersehbaren Nebenwirkungen. Wenn der Schutz von Nicht-Microsoft-Endpunkten eine absolute Anforderung in Ihrer Umgebung ist, können Sie die Funktionen von Defender for Endpoint für Linux EDR weiterhin sicher nutzen, nachdem Sie die Antivirenfunktionen so konfiguriert haben, dass sie im passiven Modus [ausgeführt werden.](linux-preferences.md#enable--disable-passive-mode)
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-for-linux"></a>Installieren von Microsoft Defender for Endpoint für Linux
 
@@ -110,8 +110,8 @@ Wenn Installationsfehler auft werden, finden Sie informationen unter [Troublesho
 Nachdem Sie den Dienst aktiviert haben, müssen Sie möglicherweise Ihr Netzwerk oder ihre Firewall so konfigurieren, dass ausgehende Verbindungen zwischen dem Dienst und Ihren Endpunkten zulässig sind.
 
 - Das Überwachungsframework ( `auditd` ) muss aktiviert sein.
-  >[!NOTE]
-  > Systemereignisse, die von Regeln erfasst werden, die den Überwachungsprotokollen hinzugefügt werden, können sich auf die Hostüberwachung und `audit.logs` die Upstreamsammlung auswirken. Ereignisse, die von Microsoft Defender für Endopoint für Linux hinzugefügt werden, werden mit dem Schlüssel `mdatp` markiert.
+  > [!NOTE]
+  > Systemereignisse, die von Regeln erfasst werden, die hinzugefügt werden, werden zu (n) hinzugefügt und können sich auf die `/etc/audit/rules.d/` `audit.log` Hostüberwachung und die Upstreamsammlung auswirken. Ereignisse, die von Microsoft Defender für Endpoint für Linux hinzugefügt werden, werden mit dem Schlüssel `mdatp` markiert.
 
 ### <a name="network-connections"></a>Netzwerkverbindungen
 

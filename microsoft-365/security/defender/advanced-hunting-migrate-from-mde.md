@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: c0575b5eaf5a4683f86d4a48dd1076fa2c423acf
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c0a29f93b9ea926beaeecb840ba108da04a89ebb
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068312"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501146"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrieren erweiterter Suchabfragen von Microsoft Defender for Endpoint
 
@@ -179,7 +179,7 @@ AlertInfo
 ```
 
 ## <a name="see-also"></a>Siehe auch
-- [Aktivieren von Microsoft 365 Defender](advanced-hunting-query-language.md)
+- [Microsoft 365 Defender aktivieren](advanced-hunting-query-language.md)
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)
 - [Erweiterte Suche in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)

@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: dda0e58e587add2693f8448dd0833ce17706786c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7ce652d58be2d9ff28d82c088d5471a7bffdf6dc
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067352"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570972"
 ---
 # <a name="test-how-microsoft-defender-for-endpoint-features-work-in-audit-mode"></a>Testen der Funktionsweise von Microsoft Defender for Endpoint-Features im Überwachungsmodus
 
@@ -47,14 +47,14 @@ Sie können Gruppenrichtlinien, PowerShell und Konfigurationsdienstanbieter (CsP
 
  **Überwachungsoptionen** | **Aktivieren des Überwachungsmodus** | **Anzeigen von Ereignissen**
 |---------|---------|---------|
-| Überwachung gilt für alle Ereignisse | [Aktivieren des kontrollierten Ordnerzugriffs](enable-controlled-folders.md) | [Kontrollierte Ordnerzugriffsereignisse](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
-| Überwachung gilt für einzelne Regeln | [Aktivieren von Regeln zur Reduzierung der Angriffsfläche](enable-attack-surface-reduction.md) | [Attack surface reduction rule events](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
+| Überwachung gilt für alle Ereignisse | [Kontrollierte Ordnerzugriff aktivieren](enable-controlled-folders.md) | [Kontrollierte Ordnerzugriffsereignisse](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
+| Überwachung gilt für einzelne Regeln | [Aktivieren der Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md) | [Attack surface reduction rule events](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
 | Überwachung gilt für alle Ereignisse | [Aktivieren des Netzwerkschutzes](enable-network-protection.md) | [Netzwerkschutzereignisse](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer)
-| Überwachung gilt für einzelne Gegenmaßnahmen | [Aktivieren des Exploitschutzes](enable-exploit-protection.md) | [Exploit-Schutzereignisse](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
+| Überwachung gilt für einzelne Gegenmaßnahmen | [Aktivieren des Exploit-Schutzes](enable-exploit-protection.md) | [Exploit-Schutzereignisse](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
 
 ## <a name="related-topics"></a>Verwandte Themen
 
 * [Schützen von Geräten vor Exploits](exploit-protection.md)
 * [Reduzieren von Angriffsoberflächen mit Regeln zur Reduzierung der Angriffsfläche](attack-surface-reduction.md)
-* [Schützen Ihres Netzwerks](network-protection.md)
+* [Schützen Sie Ihr Netzwerk](network-protection.md)
 * [Schützen wichtiger Ordner](controlled-folders.md)

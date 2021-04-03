@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1bc8fb7dad16d141d6da3efc55200fce40a76900
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 97d496271c1ef7185419f7d39956da0429f070aa
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064831"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500488"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Sicherheitsempfehlungen – Bedrohungs- und Sicherheitsrisikoverwaltung
 
@@ -163,8 +163,8 @@ Sie können ein falsch positives Ergebnis melden, wenn vage, ungenaue, unvollst�
 
 - [Übersicht über die Verwaltung von Bedrohungen und Sicherheitslücken](next-gen-threat-and-vuln-mgt.md)
 - [Dashboard](tvm-dashboard-insights.md)
-- [Belichtungsergebnis](tvm-exposure-score.md)
-- [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
-- [Behebung von Sicherheitsrisiken](tvm-remediation.md)
+- [Gefährdungsscore](tvm-exposure-score.md)
+- [Microsoft-Sicherheitsbewertung für Geräte](tvm-microsoft-secure-score-devices.md)
+- [Sicherheitsrisiken korrigieren](tvm-remediation.md)
 - [Erstellen und Anzeigen von Ausnahmen für Sicherheitsempfehlungen](tvm-exception.md)
-- [Ereigniszeitachse](threat-and-vuln-mgt-event-timeline.md)
+- [Ablauf der Veranstaltung](threat-and-vuln-mgt-event-timeline.md)

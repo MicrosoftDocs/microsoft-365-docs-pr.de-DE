@@ -9,12 +9,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3decc7d67decc5557e7921e68108e2ddb447f0fd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 971644aafabda733bf745fae278bdfeeed3282e3
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924552"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574547"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Voraussetzungen von Druckressourcen für Microsoft Managed Desktop
 
@@ -37,3 +38,15 @@ Wenn Sie sich für die Bereitstellung von Druckern mithilfe eines benutzerdefini
 3.  Mithilfe des Administratorportals teilen wir Ihnen mit, wann die Anforderung abgeschlossen wurde. Zunächst stellen wir die Konfiguration nur auf Geräten in der Testbereitstellungsgruppe zur Verfügung.
 4.  Sie müssen testen und bestätigen, ob die Konfiguration wie erwartet funktioniert. Antworten Sie auf der Registerkarte **Diskussion** in der Supportanfrage, um uns zu sagen, wann Sie Ihre Tests abgeschlossen haben.
 5.  Anschließend wird die Konfiguration für die anderen Bereitstellungsgruppen bereitgestellt.
+
+## <a name="steps-to-get-ready"></a>Schritte für die ersten Schritte
+
+1. Überprüfen [Sie Voraussetzungen für Microsoft Managed Desktop](prerequisites.md).
+2. Verwenden [Sie Die Bereitschaftsbewertungstools](readiness-assessment-tool.md).
+3. [Voraussetzungen für Gastkonten](guest-accounts.md)
+4. [Netzwerkkonfiguration für Microsoft Managed Desktop](network.md)
+5. [Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop](certs-wifi-lan.md)
+6. [Vorbereiten des lokalen Ressourcenzugriffs für Microsoft Managed Desktop](authentication.md)
+7. [Anwendungen in Microsoft Managed Desktop](apps.md)
+8. [Voraussetzungen von zugeordneten Laufwerken für Microsoft Managed Desktop](mapped-drives.md)
+9. [Vorbereiten von Druckressourcen für Microsoft Managed Desktop](printing.md) (In diesem Artikel)

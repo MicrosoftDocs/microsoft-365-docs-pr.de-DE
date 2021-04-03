@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 594d4b5790f95abed966163e448d332467f35b51
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 35dd300d828bfa48ad753d7c65f36b2555cf4f60
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068752"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500172"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>Dashboard-Einblicke – Bedrohungs- und Sicherheitsrisikoverwaltung
 
@@ -65,8 +65,8 @@ Sehen Sie sich dieses Video an, um einen schnellen Überblick über das Bedrohun
 Bereich | Beschreibung
 :---|:---
 **Ausgewählte Gerätegruppen (#/#)**   | Filtern Sie die Daten zur Bedrohungs- und Sicherheitsrisikoverwaltung, die Sie im Dashboard anzeigen möchten, und Karten nach Gerätegruppen. Was Sie im Filter auswählen, gilt auf allen Seiten zur Verwaltung von Bedrohungen und Sicherheitslücken.
-[**Belichtungsergebnis**](tvm-exposure-score.md)   | Sehen Sie sich den aktuellen Status der Geräteexposition Ihrer Organisation gegenüber Bedrohungen und Sicherheitsrisiken an. Mehrere Faktoren wirken sich auf die Belichtungssentwertung Ihrer Organisation aus: Auf Ihren Geräten festgestellte Schwächen, wahrscheinlichkeit, dass Ihre Geräte verletzt werden, der Wert der Geräte für Ihre Organisation und relevante Warnungen, die mit Ihren Geräten erkannt wurden. Das Ziel ist es, die Belichtungszahl Ihrer Organisation zu senken, um sicherer zu sein. Um die Bewertung zu reduzieren, müssen Sie die zugehörigen Sicherheitskonfigurationsprobleme beheben, die in den Sicherheitsempfehlungen aufgeführt sind.
-[**Microsoft Secure Score for Devices**](tvm-microsoft-secure-score-devices.md) | Sehen Sie sich die Sicherheitslage des Betriebssystems, der Anwendungen, des Netzwerks, der Konten und der Sicherheitskontrollen Ihrer Organisation an. Ziel ist es, die damit verbundenen Sicherheitskonfigurationsprobleme zu beheben, um die Bewertung für Geräte zu erhöhen. Wenn Sie die Balken auswählen, gelangen Sie zur **Seite Sicherheitsempfehlung.**
+[**Gefährdungsscore**](tvm-exposure-score.md)   | Sehen Sie sich den aktuellen Status der Geräteexposition Ihrer Organisation gegenüber Bedrohungen und Sicherheitsrisiken an. Mehrere Faktoren wirken sich auf die Belichtungssentwertung Ihrer Organisation aus: Auf Ihren Geräten festgestellte Schwächen, wahrscheinlichkeit, dass Ihre Geräte verletzt werden, der Wert der Geräte für Ihre Organisation und relevante Warnungen, die mit Ihren Geräten erkannt wurden. Das Ziel ist es, die Belichtungszahl Ihrer Organisation zu senken, um sicherer zu sein. Um die Bewertung zu reduzieren, müssen Sie die zugehörigen Sicherheitskonfigurationsprobleme beheben, die in den Sicherheitsempfehlungen aufgeführt sind.
+[**Microsoft-Sicherheitsbewertung für Geräte**](tvm-microsoft-secure-score-devices.md) | Sehen Sie sich die Sicherheitslage des Betriebssystems, der Anwendungen, des Netzwerks, der Konten und der Sicherheitskontrollen Ihrer Organisation an. Ziel ist es, die damit verbundenen Sicherheitskonfigurationsprobleme zu beheben, um die Bewertung für Geräte zu erhöhen. Wenn Sie die Balken auswählen, gelangen Sie zur **Seite Sicherheitsempfehlung.**
 **Verteilung der Gerätebelichtung** | Sehen Sie, wie viele Geräte basierend auf ihrer Belichtungsstufe verfügbar gemacht werden. Wählen Sie einen Abschnitt im Ringdiagramm aus, um zur Listenseite Geräte zu wechseln und die betroffenen Gerätenamen, die Risikostufe, die Risikostufe und andere Details wie Domäne, Betriebssystemplattform, Integritätsstatus, wann sie zuletzt angezeigt wurde, und die Tags anzuzeigen. 
 **Die besten Sicherheitsempfehlungen** | Sehen Sie sich die sortierten Sicherheitsempfehlungen an, die basierend auf der Risikoexposition Ihrer Organisation und der benötigten Dringlichkeit sortiert und priorisiert werden. Wählen **Sie Weitere Anzeigen** aus, um die restlichen Sicherheitsempfehlungen in der Liste zu sehen. Wählen **Sie Ausnahmen anzeigen** für die Liste der Empfehlungen mit einer Ausnahme aus.
 **Besonders anfällige Software** | Erhalten Sie In Echtzeit Einblick in das Softwareinventar Ihrer Organisation mit einer liste mit Stapelrang auf den Geräten Ihres Netzwerks installierter anfälliger Software und deren Auswirkungen auf Ihre organisatorische Gefährdungsbewertung. Wählen Sie ein Element für Details oder **Weitere** Anzeigen aus, um den Rest der Liste anfälliger Software auf der **Seite Softwareinventar anzuzeigen.**
@@ -79,9 +79,9 @@ Weitere Informationen zu den im Portal verwendeten Symbolen finden Sie unter [Mi
 ## <a name="related-topics"></a>Verwandte Themen
 
 - [Übersicht über die Verwaltung von Bedrohungen und Sicherheitslücken](next-gen-threat-and-vuln-mgt.md)
-- [Belichtungsergebnis](tvm-exposure-score.md)
-- [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)
+- [Gefährdungsscore](tvm-exposure-score.md)
+- [Microsoft-Sicherheitsbewertung für Geräte](tvm-microsoft-secure-score-devices.md)
 - [Sicherheitsempfehlungen](tvm-security-recommendation.md)
 - [Softwarebestand](tvm-software-inventory.md)
-- [Ereigniszeitachse](threat-and-vuln-mgt-event-timeline.md)
+- [Ablauf der Veranstaltung](threat-and-vuln-mgt-event-timeline.md)
 

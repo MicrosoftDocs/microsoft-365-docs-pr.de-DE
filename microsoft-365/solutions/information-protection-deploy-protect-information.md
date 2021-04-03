@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Stellen Sie Microsoft 365-Sicherheits- und Compliancefeatures zur Verfügung und schützen Sie Ihre persönlichen Informationen.
-ms.openlocfilehash: 657b3c9c6416c8a38629a0d26253e1222aa6d242
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2d3a5baa063e6672760dda60ae6d76ea928ccd16
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928472"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500987"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Datenschutzbestimmungen unterliegende Informationen schützen
 
@@ -90,7 +90,8 @@ Weitere Informationen zu anderen Informationsschutzfunktionen außerhalb von Mic
 
 Mit Vertraulichkeitsbezeichnungen aus dem Microsoft Information Protection-Framework können Sie die Daten Ihrer Organisation klassifizieren und schützen, ohne die Produktivität der Benutzer und deren Zusammenarbeit zu beeinträchtigen.
 
-![Vertraulichkeitsbezeichnungen in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
+> [!div class="mx-imgBorder"]
+> ![Vertraulichkeitsbezeichnungen in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
 
 ### <a name="prerequisites-for-sensitivity-labels"></a>Voraussetzungen für Vertraulichkeitsbezeichnungen
 
@@ -115,7 +116,7 @@ Führen Sie diese Aktivitäten aus, bevor Sie eine der unten hervorgehobenen Fun
 
       Wenn Sie planen, moderne Vertraulichkeitsbezeichnungen für den E-Mail-Schutz zu verwenden, und vorhandene E-Mail-Verschlüsselungsmethoden wie OME vorhanden sind, können sie koexistent sein, Aber Sie sollten die Szenarien verstehen, in denen beides angewendet werden sollte. Weitere Informationen finden Sie unter [Office 365 Message Encryption New Capabilities (OME),](#office-365-message-encryption-ome-new-capabilities)die eine Tabelle enthält, in der der Moderne Schutz von Vertraulichkeitsbezeichnungen mit OME-basiertem Schutz verglichen wird.
 
-3. Planen der Integration in ein umfassenderes Informationsschutzsystem. Neben der Koexistenz mit OME können aktuelle Vertraulichkeitsbezeichnungen zusammen mit Funktionen wie Microsoft 365 Data Loss Prevention (DLP) und Microsoft Cloud App Security verwendet werden. Informationen zum Erreichen Ihrer Datenschutzziele finden Sie unter Vertraulichkeitsbezeichnungen und [Microsoft Cloud App Security.](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security)
+3. Planen der Integration in ein umfassenderes Informationsschutzsystem. Neben der Koexistenz mit OME können Vertraulichkeitsbezeichnungen zusammen mit Funktionen wie Microsoft 365 Data Loss Prevention (DLP) und Microsoft Cloud App Security verwendet werden. Informationen zum Datenschutz finden Sie [unter Microsoft Information Protection in Microsoft 365.](../compliance/information-protection.md)
 
 4. Entwickeln sie ein Klassifizierungs- und Steuerungsschema für Vertraulichkeitsbezeichnungen. Weitere [Informationen finden Sie unter Taxonomie von Datenklassifizierung und Vertraulichkeitsbezeichnungen.](https://aka.ms/dataclassificationwhitepaper)
 
@@ -139,7 +140,7 @@ Wenn Sie [Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels-teams-
 
 - Microsoft Teams-Websites
 - Microsoft 365-Gruppen (früher Office 365-Gruppen)
-- SharePoint-Websites
+- Microsoft Office SharePoint Online-Websites
 
 Verwenden Sie die folgenden Bezeichnungseinstellungen zum Schutz von Inhalt in diesen Containern:
 
@@ -215,11 +216,13 @@ Sie können beispielsweise jedes Dokument identifizieren, das eine Kreditkartenn
 
 Sie können auch vertrauliche Elemente in den lokal installierten Versionen von Excel, PowerPoint und Word überwachen und schützen. Dazu gehören die Möglichkeit, vertrauliche Elemente zu identifizieren und DLP-Richtlinien anzuwenden. DLP bietet eine kontinuierliche Überwachung, wenn Personen Inhalte aus diesen Office-Apps freigeben.
 
-![Unterstützte Workloads für DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
+> [!div class="mx-imgBorder"]
+> ![Unterstützte Workloads für DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
 
 Diese Abbildung zeigt ein Beispiel für den Schutz personenbezogener Daten durch DLP.
 
-![Beispiel für den Schutz personenbezogener Daten mithilfe von DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
+> [!div class="mx-imgBorder"]
+> ![Beispiel für den Schutz personenbezogener Daten mithilfe von DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
 
 DLP wird verwendet, um ein Dokument oder eine E-Mail mit einem Integritätsdatensatz zu identifizieren und dann automatisch den Zugriff auf dieses Dokument zu sperren oder das Senden der E-Mail zu sperren. DLP benachrichtigt den Empfänger dann mit einem Richtlinientipp und sendet eine Warnung an den Endbenutzer und Administrator.
 
@@ -252,7 +255,8 @@ Vertraulichkeitsbezeichnungen können zwar nicht in DLP-Richtlinienbedingungen v
 
 DLP-Richtlinien werden im Microsoft Compliance Admin Center konfiguriert und geben die Schutzebene, den vertraulichen Informationstyp, nach dem die Richtlinie sucht, und die Zielarbeitslasten an. Ihre grundlegenden Komponenten bestehen darin, den Schutz und die Arten von Daten zu identifizieren.
 
-![Konfiguration von DLP-Richtlinien in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
+> [!div class="mx-imgBorder"]
+> ![Konfiguration von DLP-Richtlinien in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
 Im Folgenden finden Sie ein Beispiel für eine DLP-Richtlinie für das Bewusstsein der DSGVO.
 
@@ -270,7 +274,7 @@ Die erste Konfiguration, Awareness, kann als Ausgangspunkt und Mindestschutznive
 
 >[!Note]
 >Mit dem Anstieg des Schutzniveaus nimmt die Fähigkeit der Benutzer zum Teilen und Zugreifen auf Informationen in einigen Fällen ab und kann sich potenziell auf ihre Produktivität oder die Fähigkeit auswirken, tägliche Aufgaben auszuführen.
->
+
 
 Damit Ihre Mitarbeiter bei der Erhöhung der Schutzstufen weiterhin produktiv in einer sichereren Umgebung arbeiten können, nehmen Sie sich die Zeit, um sie in neuen Sicherheitsrichtlinien und -verfahren zu schulen und zu schulen.
 
@@ -285,7 +289,8 @@ Vertraulichkeitsbezeichnungen können mit DLP zusammenarbeiten, um Datenschutz i
 
 Nachdem diese Elemente ermittelt wurden, können Sie vertrauliche Informationstypen, Die Taxonomie für Vertraulichkeitsbezeichnungen und DLP-Richtlinien zusammen verwenden. Diese Abbildung zeigt ein Beispiel.
 
-![Beispiel für Vertraulichkeitsbezeichnungen, die mit DLP arbeiten](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
+> [!div class="mx-imgBorder"]
+> ![Beispiel für Vertraulichkeitsbezeichnungen, die mit DLP arbeiten](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
 [Eine größere Version dieses Bilds sehen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 

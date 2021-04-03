@@ -1,6 +1,6 @@
 ---
 title: Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop
-description: certs/wifi/lan
+description: Zertifikatanforderungen und WLAN-Konnektivität
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -11,12 +11,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9f4490711c1ea051afe9d8efb081a2f7a141f8ba
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: a59add6f6821824f189703b3dedd35fda313ec31
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909118"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574583"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop  
  
@@ -86,3 +87,14 @@ Führen Sie zum Bereitstellen von Zertifikaten und Profilen die folgenden Schrit
 4. Erstellen Sie ein Profil für jedes Unternehmens-VPN (siehe Windows 10- und Windows Holographic-Geräteeinstellungen zum Hinzufügen [von VPN-Verbindungen mithilfe von Intune](/intune/vpn-settings-windows-10)).
 5. Senden Sie eine Supportanfrage mit dem Titel "Zertifikatbereitstellung" oder "Wlan-Profilbereitstellung" an Microsoft Managed Desktop IT Operations, indem Sie das Microsoft Managed Desktop Admin-Portal verwenden, um das Konfigurationsprofil zu überprüfen und auf "Moderne Arbeitsplatzgeräte – Test" zu installieren. Microsoft Managed Desktop-IT-Vorgänge teilen Ihnen mit, wann die Anforderung über die Supportanfrage im Administratorportal abgeschlossen wurde. 
  
+## <a name="steps-to-get-ready"></a>Schritte für die ersten Schritte
+
+1. Überprüfen [Sie Voraussetzungen für Microsoft Managed Desktop](prerequisites.md).
+2. Verwenden [Sie Die Bereitschaftsbewertungstools](readiness-assessment-tool.md).
+3. [Voraussetzungen für Gastkonten](guest-accounts.md)
+4. [Netzwerkkonfiguration für Microsoft Managed Desktop](network.md)
+5. [Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop](certs-wifi-lan.md) (In diesem Artikel)
+6. [Vorbereiten des lokalen Ressourcenzugriffs für Microsoft Managed Desktop](authentication.md)
+7. [Anwendungen in Microsoft Managed Desktop](apps.md)
+8. [Voraussetzungen von zugeordneten Laufwerken für Microsoft Managed Desktop](mapped-drives.md)
+9. [Voraussetzungen von Druckressourcen für Microsoft Managed Desktop](printing.md) 

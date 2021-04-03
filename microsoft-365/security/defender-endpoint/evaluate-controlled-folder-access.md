@@ -1,5 +1,5 @@
 ---
-title: Bewerten des kontrollierten Ordnerzugriffs
+title: Auswerten des kontrollierten Ordnerzugriffs
 description: Erfahren Sie, wie der kontrollierte Ordnerzugriff dazu beitragen kann, Dateien vor der Änderung durch schädliche Apps zu schützen.
 keywords: Exploit-Schutz, Windows 10, Windows Defender, Ransomware, Schützen, Bewerten, Testen, Demo, Testen
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e965e1a882dadfb565231074165507a6727b45c1
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: f996a8fdaf630c8ea389ac9648369cc955a6e95d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218748"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569905"
 ---
-# <a name="evaluate-controlled-folder-access"></a>Bewerten des kontrollierten Ordnerzugriffs
+# <a name="evaluate-controlled-folder-access"></a>Auswerten des kontrollierten Ordnerzugriffs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -76,5 +76,5 @@ Weitere [Informationen finden](controlled-folders.md) Sie unter Schützen wichti
 ## <a name="see-also"></a>Siehe auch
 
 * [Schützen wichtiger Ordner mit kontrolliertem Ordnerzugriff](controlled-folders.md)
-* [Bewerten von Microsoft Defender for Endpoint](evaluate-mde.md)
+* [Auswerten des Microsoft Defender für Endpunkt](evaluate-mde.md)
 * [Verwenden des Überwachungsmodus](audit-windows-defender.md)

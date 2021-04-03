@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie Bewertungen im Microsoft Compliance Manager, um Ihnen zu helfen, die Anforderungen von Vorschriften und Zertifizierungen zu erfüllen, die für Ihre Organisation wichtig sind.
-ms.openlocfilehash: ff2aa41b91f3cb019dbed542c422d61c79c4ecb5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b8051a036f2ffda2f3a2840880318466a2ec71af
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908595"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500636"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Erstellen und Verwalten von Bewertungen im Compliance Manager
 
@@ -53,7 +53,7 @@ Es gibt drei Möglichkeiten zum Einrichten von Bewertungen:
 3. [Erstellen Sie Ihre eigene benutzerdefinierte Bewertung](#create-your-own-custom-assessment).
 
 > [!NOTE]
-> Nur Benutzer, die eine Rolle als globaler Administrator oder Compliance-Manager haben, können Bewertungen erstellen und ändern. Erfahren Sie mehr über [Rollen und Berechtigungen](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
+> Nur Benutzer, die eine Rolle des globalen Administrators, der Compliance-Manager-Verwaltung oder der Compliance-Manager-Assessorrolle haben, können Bewertungen erstellen und ändern. Erfahren Sie mehr über [Rollen und Berechtigungen](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
 **Verwenden einer vordefinierten Bewertung**
 

@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f6b1e257fd767fa112fddb41d773065b8002a2a3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 6df23e0d7e3ea0ecd7ebacd96f00cb47b9e0aa84
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909190"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574595"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Vorbereiten des lokalen Ressourcenzugriffs für Microsoft Managed Desktop
 
@@ -77,3 +78,14 @@ Microsoft Managed Desktop-Geräte können keine Verbindung mit Druckern herstell
 Während Drucker nicht automatisch in einer cloudbasierten Umgebung erkannt werden können, können Ihre Benutzer lokale Drucker mithilfe des Druckerpfads oder des Druckerwarteschlangenpfads verwenden, solange die Geräte Zugriff auf einen lokalen Domänencontroller haben.
 
 <!--add fuller material on printers when available-->
+## <a name="steps-to-get-ready"></a>Schritte für die ersten Schritte
+
+1. Überprüfen [Sie Voraussetzungen für Microsoft Managed Desktop](prerequisites.md).
+2. Verwenden [Sie Die Bereitschaftsbewertungstools](readiness-assessment-tool.md).
+3. [Voraussetzungen für Gastkonten](guest-accounts.md)
+4. [Netzwerkkonfiguration für Microsoft Managed Desktop](network.md)
+5. [Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop](certs-wifi-lan.md)
+6. [Vorbereiten des zugriffs auf lokale Ressourcen für Microsoft Managed Desktop](authentication.md) (In diesem Artikel)
+7. [Anwendungen in Microsoft Managed Desktop](apps.md)
+8. [Voraussetzungen von zugeordneten Laufwerken für Microsoft Managed Desktop](mapped-drives.md)
+9. [Voraussetzungen von Druckressourcen für Microsoft Managed Desktop](printing.md)

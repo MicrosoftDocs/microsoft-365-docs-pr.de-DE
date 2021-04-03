@@ -4,8 +4,8 @@ description: Defender für Office 365 erstellt im Evaluierungsmodus Defender fü
 keywords: Bewerten von Office 365, Microsoft Defender für Office 365, Office 365-Evaluierung, Testen von Office 365, Microsoft Defender, ATP
 f1.keywords:
 - NOCSH
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2e97e510cbc3188f8cc6117c5d7bd1e1d23897eb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0b6166d22930119949faf99334416b85fdb64da0
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205903"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500273"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Bewerten von Microsoft Defender für Office 365
 
@@ -57,7 +57,7 @@ Mit der vereinfachten Einrichtungserfahrung können Sie sich auf:
 - Analysieren des Berichts für Aktionen
 - Präsentieren des Bewertungsergebniss
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorbereitung
 
 ### <a name="licensing"></a>Lizenzierung
 

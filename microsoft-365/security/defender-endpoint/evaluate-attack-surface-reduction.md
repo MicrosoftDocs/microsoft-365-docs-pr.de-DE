@@ -1,5 +1,5 @@
 ---
-title: Bewerten von Regeln zur Reduzierung der Angriffsfläche
+title: Auswerten der Regeln zur Verringerung der Angriffsfläche
 description: Erfahren Sie, wie die Reduzierung der Angriffsfläche Angriffe mit dem benutzerdefinierten Demotool blockieren und verhindern würde.
 keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, evaluate, test, demo
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 13b1ac5f71f2bc24ad6f52af6722e12fab935270
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 07573fd92643ce5fdf3e9140031bf5f15ae8f7aa
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067792"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570339"
 ---
-# <a name="evaluate-attack-surface-reduction-rules"></a>Bewerten von Regeln zur Reduzierung der Angriffsfläche
+# <a name="evaluate-attack-surface-reduction-rules"></a>Auswerten der Regeln zur Verringerung der Angriffsfläche
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -76,7 +76,7 @@ Ereignis-ID | Beschreibung
  1121 | Ereignis, wenn eine Regel zur Reduzierung der Angriffsfläche im Blockmodus gestartet wird
  1122 | Ereignis, wenn eine Regel zur Reduzierung der Angriffsfläche im Überwachungsmodus gestartet wird
 
-## <a name="customize-attack-surface-reduction-rules"></a>Anpassen von Regeln zur Reduzierung der Angriffsfläche
+## <a name="customize-attack-surface-reduction-rules"></a>Anpassen der Regeln zur Verringerung der Angriffsfläche
 
 Während der Auswertung können Sie jede Regel einzeln konfigurieren oder bestimmte Dateien und Prozesse von der Auswertung durch das Feature ausschließen.
 
@@ -86,4 +86,4 @@ Informationen zum Konfigurieren des Features mit Verwaltungstools, einschließli
 
 * [Reduzieren von Angriffsoberflächen mit Regeln zur Reduzierung der Angriffsfläche](attack-surface-reduction.md)
 * [Verwenden des Überwachungsmodus zum Auswerten Windows Defender](audit-windows-defender.md)
-* [Häufig gestellte Fragen zur Reduzierung der Angriffsfläche](attack-surface-reduction.md)
+* [FAQ zu Verringerung der Angriffsfläche](attack-surface-reduction.md)
