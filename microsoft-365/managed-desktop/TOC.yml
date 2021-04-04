@@ -57,23 +57,6 @@
       items:
         - name: Voraussetzungen für Microsoft Managed Desktop
           href: get-ready/prerequisites.md
-        - name: Vorbereiten des Netzwerks
-          href: get-ready/network.md
-        - name: Zugriff auf lokale Ressourcen vorbereiten
-          href: get-ready/authentication.md
-        - name: Zugeordnete Laufwerke vorbereiten
-          href: get-ready/mapped-drives.md
-        - name: Zertifikate und Netzwerkprofile vorbereiten
-          href: get-ready/certs-wifi-lan.md
-        - name: Voraussetzungen für Gastkonten
-          href: get-ready/guest-accounts.md
-        - name: Druckressourcen vorbereiten
-          href: get-ready/printing.md
-        - name: Vorbereiten von Apps
-          href: get-ready/apps.md
-          items:
-            - name: Arbeiten mit Microsoft Consulting Services
-              href: get-ready/apps-MCS.md
         - name: Verwenden des Tools zur Bereitschaftsbewertung
           href: get-ready/readiness-assessment-tool.md
           items:
@@ -81,6 +64,23 @@
               href: get-ready/readiness-assessment-fix.md
             - name: Herunterladbare Bereitschaftsbewertungsüberprüfung
               href: get-ready/readiness-assessment-downloadable.md
+        - name: Voraussetzungen für Gastkonten
+          href: get-ready/guest-accounts.md
+        - name: Netzwerk vorbereiten
+          href: get-ready/network.md
+        - name: Zertifikate und Netzwerkprofile vorbereiten
+          href: get-ready/certs-wifi-lan.md
+        - name: Zugriff auf lokale Ressourcen vorbereiten
+          href: get-ready/authentication.md
+        - name: Vorbereiten von Apps
+          href: get-ready/apps.md
+          items:
+            - name: Arbeiten mit Microsoft Consulting Services
+              href: get-ready/apps-MCS.md
+        - name: Zugeordnete Laufwerke vorbereiten
+          href: get-ready/mapped-drives.md
+        - name: Druckressourcen vorbereiten
+          href: get-ready/printing.md
     - name: Erste Schritte mit Microsoft Managed Desktop
       href: get-started/index.md
       items:
