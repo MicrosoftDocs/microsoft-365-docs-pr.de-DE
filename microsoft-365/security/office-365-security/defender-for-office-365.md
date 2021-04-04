@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender für Office 365 umfasst sichere Anlagen, sichere Links, erweiterte Antiphishing-Tools, Berichterstellungstools und Threat Intelligence-Funktionen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec60fc7063bdd4a2656385ed86098d6ae2b4abc0
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: dad2722a1f9e99fad53c83348d049fa9a60f8b62
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205954"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580990"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender für Office 365
 
@@ -52,7 +52,7 @@ Microsoft Defender für Office 365 schützt Ihre Organisation vor bösartigen Be
 ## <a name="interactive-guide-to-microsoft-defender-for-office-365"></a>Interaktiver Leitfaden für Microsoft Defender für Office 365
 In diesem interaktiven Leitfaden lernen Sie, wie Sie Ihre Organisation mit Microsoft Defender für Office 365 schützen können. Sie erfahren, wie Sie mithilfe von Defender für Office 365 Schutzrichtlinien definieren, Bedrohungen für Ihre Organisation analysieren und auf Angriffe reagieren können.
 
-> [!VIDEO https://aka.ms/MSDO-IG]
+[Sehen Sie sich den interaktiven Leitfaden an](https://aka.ms/MSDO-IG)
 
 ## <a name="getting-started"></a>Erste Schritte
 
@@ -97,6 +97,8 @@ In der folgenden Tabelle sind die Inhalte der einzelnen Pläne zusammengefasst.
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Konfigurieren von Microsoft Defender für Office 365-Richtlinien
 
 Mit Microsoft Defender für Office 365 kann das Sicherheitsteam Ihrer Organisation den Schutz durch Definition von Richtlinien im Security & Compliance Center konfigurieren. (Navigieren Sie zu <https://protection.office.com> \> **Bedrohungsverwaltung** \> **Richtlinie**.)
+
+Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=vivvTmWJ_3c) ansehen. 
 
 > [!TIP]
 > Eine schnelle Liste der zu definierenden Richtlinien finden Sie unter [Schutz vor Bedrohungen](protect-against-threats.md).

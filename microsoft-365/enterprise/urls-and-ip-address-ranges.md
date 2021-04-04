@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Zusammenfassung: Office 365 erfordert eine Internetverbindung. Die unten aufgeführten Endpunkte sollten für Kunden, die Office 365-Pläne verwenden, einschließlich Government Community Cloud (GCC), erreichbar sein.'
 hideEdit: true
-ms.openlocfilehash: 1c0a2a486bf6964edc9b94fd670c96ade161cacd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b4b256e9138f89cd9d44182a08dd22050b17f7c2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925268"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581106"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365-URLs und -IP-Adressbereiche
 
@@ -66,6 +66,7 @@ Dies sind die dargestellten Datenspalten:
 >
 
 ## <a name="related-topics"></a>Verwandte Themen
+[Zusätzliche Endpunkte, die nicht im IP-Adressen- und URL-Webdienst von Office 365 enthalten sind](https://docs.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide)
 
 [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md)
 
