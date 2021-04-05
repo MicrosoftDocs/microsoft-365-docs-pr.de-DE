@@ -1,6 +1,6 @@
 ---
-title: Clientverhaltensblockierung
-description: Das Blockieren von Clientverhalten ist Teil der Funktionen zum Blockieren und Eindähen von Verhaltensweisen in Microsoft Defender ATP
+title: Client-Verhaltensblockierung
+description: Das Blockieren von Clientverhalten ist Teil der Funktionen zum Blockieren und Eindähen von Verhaltensweisen in Microsoft Defender for Endpoint
 keywords: Verhaltensblockierung, schneller Schutz, Clientverhalten, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -19,14 +19,14 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: c37a1180f9def51daa4229418b05abe7cf787aa3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 9fcff96b2583c6ef6bec05429ec50a71f3872e43
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165261"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587107"
 ---
-# <a name="client-behavioral-blocking"></a>Clientverhaltensblockierung
+# <a name="client-behavioral-blocking"></a>Client-Verhaltensblockierung
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -87,15 +87,15 @@ Wenn Ihre Organisation Defender for Endpoint verwendet, ist die Clientverhaltens
 
 - [EDR im Blockmodus](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/edr-in-block-mode)
 
-- [Reduzierung der Angriffsfläche](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)
+- [Verringerung der Angriffsfläche](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction):
 
 - [Schutz der nächsten Generation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) (Antivirus)
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Verhaltensblockierung und -eindämmung](behavioral-blocking-containment.md)
+- [Verhaltensbasiertes Blockieren und Eindämmen](behavioral-blocking-containment.md)
 
-- [Blockieren von Feedbackschleifen](feedback-loop-blocking.md)
+- [Feedback-Loop-Blockierung](feedback-loop-blocking.md)
 
 - [(Blog) Verhaltensblockierung und -eindämmung: Transformieren von Optik in Schutz](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection/)
 

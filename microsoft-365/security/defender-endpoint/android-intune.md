@@ -1,7 +1,7 @@
 ---
-title: Bereitstellen von Microsoft Defender ATP für Android mit Microsoft Intune
-description: Beschreibt die Bereitstellung von Microsoft Defender ATP für Android mit Microsoft Intune
-keywords: microsoft, defender, atp, android, installation, deploy, deinstallation,
+title: Bereitstellen von Microsoft Defender für Endpunkt für Android mit Microsoft Intune
+description: Beschreibt die Bereitstellung von Microsoft Defender for Endpoint für Android mit Microsoft Intune
+keywords: microsoft, defender, atp, mde, android, installation, deploy, deinstallation,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -15,17 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e557f60346b2f68354df621b6e4812eac775d812
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: fdfc6e63945e15ce2d1f1a293c377f641eeb9bc4
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165669"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587695"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-android-with-microsoft-intune"></a>Bereitstellen von Microsoft Defender for Endpoint für Android mit Microsoft Intune 
+# <a name="deploy-microsoft-defender-for-endpoint-for-android-with-microsoft-intune"></a>Bereitstellen von Microsoft Defender für Endpunkt für Android mit Microsoft Intune 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -61,7 +60,7 @@ Erfahren Sie, wie Sie Defender for Endpoint für Android im Intune-Unternehmensp
    - **Publisher** als Microsoft.
    - **App Store-URL** als https://play.google.com/store/apps/details?id=com.microsoft.scmx (Defender for Endpoint-App Google Play Store-URL) 
 
-   Andere Felder sind optional. Wählen Sie **Weiter** aus.
+   Andere Felder sind optional. Klicken Sie auf **Weiter**.
 
    ![Abbildung von Microsoft Endpoint Manager Admin Center add app info](images/mda-addappinfo.png)
 
@@ -261,5 +260,5 @@ Wählen Sie **Erstellen** aus.
 
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Übersicht über Microsoft Defender for Endpoint für Android](microsoft-defender-endpoint-android.md)
-- [Konfigurieren von Microsoft Defender for Endpoint für Android-Features](android-configure.md)
+- [Übersicht über Microsoft Defender für Endpunkt für Android](microsoft-defender-endpoint-android.md)
+- [Konfigurieren von Funktionen von Microsoft Defender für Endpunkt für Android](android-configure.md)

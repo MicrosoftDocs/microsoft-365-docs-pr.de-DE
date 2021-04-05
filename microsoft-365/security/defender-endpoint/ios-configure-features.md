@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Microsoft Defender ATP für iOS-Features
+title: Konfigurieren von Microsoft Defender for Endpoint für iOS-Features
 description: Beschreibt die Bereitstellung von Microsoft Defender ATP für iOS-Features
 keywords: microsoft, defender, atp, ios, configure, features, ios
 search.product: eADQiWindows 10XVcnh
@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 18fbc13614753ae57856a124d76bbad682ab88e5
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 8f74d4799bcb02051cddd09b80ed6ab50258302b
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379355"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587227"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-for-ios-features"></a>Konfigurieren von Microsoft Defender for Endpoint für iOS-Features
 

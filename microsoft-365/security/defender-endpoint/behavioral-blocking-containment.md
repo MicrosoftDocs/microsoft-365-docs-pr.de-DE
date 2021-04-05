@@ -1,6 +1,6 @@
 ---
-title: Verhaltensblockierung und -eindämmung
-description: Erfahren Sie mehr über die Funktionen zum Blockieren und Eindämmung von Verhaltensweisen in Microsoft Defender ATP
+title: Verhaltensbasiertes Blockieren und Eindämmen
+description: Erfahren Sie mehr über die Funktionen zum Blockieren und Eindämmung von Verhaltensweisen in Microsoft Defender for Endpoint
 keywords: Microsoft Defender ATP, EDR im Blockmodus, Blockieren des passiven Modus
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -19,14 +19,14 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: dcad3b7233f2efd444d41c15916eaae195634c8c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7cea65292c427cb953e2e8e3ca866c89f83128b1
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166233"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587167"
 ---
-# <a name="behavioral-blocking-and-containment"></a>Verhaltensblockierung und -eindämmung
+# <a name="behavioral-blocking-and-containment"></a>Verhaltensbasiertes Blockieren und Eindämmen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,7 +42,7 @@ Die heutige Bedrohungslandschaft wird [](https://docs.microsoft.com/windows/secu
 
 Verhaltensblockierungs- und -eindämmungsfunktionen können dazu beitragen, Bedrohungen basierend auf ihrem Verhalten und ihren Prozessstrukturen zu identifizieren und zu beenden, selbst wenn die Bedrohung mit der Ausführung begonnen hat. Komponenten und Features der nächsten Generation für Schutz, EDR und Defender for Endpoint arbeiten bei den Funktionen zum Blockieren und Eindämmung von Verhaltensweisen zusammen. 
 
-:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Verhaltensblockierung und -eindämmung":::
+:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Verhaltensbasiertes Blockieren und Eindämmen":::
 
 Verhaltensblockierungs- und Eindämmungsfunktionen funktionieren mit mehreren Komponenten und Features von Defender for Endpoint, um Angriffe sofort zu beenden und zu verhindern, dass Angriffe ausgeführt werden.
 

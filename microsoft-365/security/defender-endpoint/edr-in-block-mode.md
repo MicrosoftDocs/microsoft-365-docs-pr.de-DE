@@ -1,7 +1,7 @@
 ---
 title: Endpunkterkennung und -reaktion im Blockmodus
 description: Informationen zur Erkennung und Reaktion von Endpunkten im Blockmodus
-keywords: Microsoft Defender ATP, EDR im Blockmodus, Blockieren des passiven Modus
+keywords: Microsoft Defender ATP, mde, EDR im Blockmodus, Blockieren des passiven Modus
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 7bee6c99d2c1c5ad3cec8f2e317b729a0a4e1f8b
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: e492d57d8a7e10a1fff57980408ed8234bbeead0
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379478"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587203"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Endpunkterkennung und -antwort (EDR) im Blockmodus
 
@@ -139,6 +139,6 @@ Wenn Sie EDR im Blockmodus deaktivieren möchten, kann es bis zu 30 Minuten daue
 ## <a name="see-also"></a>Siehe auch
 
 - [Tech Community-Blog: Einführung in EDR im Blockmodus: Beenden von Angriffen in ihren Spuren](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
-- [Verhaltensblockierung und -eindämmung](behavioral-blocking-containment.md)
+- [Verhaltensbasiertes Blockieren und Eindämmen](behavioral-blocking-containment.md)
 - [Besser zusammen: Microsoft Defender Antivirus und Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
 

@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 484869535c466435ab997f32bf858dd1ad52c841
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: f5e9c237f53351df0249f0a12d08b8ba61572f7e
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187493"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587083"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-for-linux"></a>Konfigurieren und Überprüfen von Ausschlüssen für Microsoft Defender for Endpoint für Linux
 
@@ -55,7 +54,7 @@ In der folgenden Tabelle sind die Ausschlusstypen aufgeführt, die von Defender 
 Ausschluss | Definition | Beispiele
 ---|---|---
 Dateierweiterung | Alle Dateien mit der Erweiterung, überall auf dem Gerät | `.test`
-File | Eine bestimmte Datei, die durch den vollständigen Pfad identifiziert wird | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+Datei | Eine bestimmte Datei, die durch den vollständigen Pfad identifiziert wird | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 Ordner | Alle Dateien unter dem angegebenen Ordner (rekursiv) | `/var/log/`<br/>`/var/*/`
 Prozess | Ein bestimmter Prozess (entweder durch den vollständigen Pfad oder Dateinamen angegeben) und alle dateien, die von diesem geöffnet werden | `/bin/cat`<br/>`cat`<br/>`c?t`
 

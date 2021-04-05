@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1386809778edeb92521a8656e9ece78591a682a4
-ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
+ms.openlocfilehash: d1d4aa871438e10aed86ddd436757072fb6b5cc4
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382901"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587503"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-for-mac"></a>Datenschutz für Microsoft Defender for Endpoint für Mac
 
@@ -111,7 +110,7 @@ Erforderliche Diagnosedaten helfen bei der Identifizierung von Problemen mit Mic
 
 **Installation/Deinstallation von Microsoft Defender for Endpoint**
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
@@ -123,7 +122,7 @@ Die folgenden Felder werden gesammelt:
 
 **Konfiguration von Microsoft Defender für Endpunkt**
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld                                               | Beschreibung |
 | --------------------------------------------------- | ----------- |
@@ -144,7 +143,7 @@ Die folgenden Felder werden gesammelt:
 
 **Security Intelligence Update Report**
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
@@ -161,7 +160,7 @@ Die folgenden Felder werden gesammelt:
 
 Sammelt Systeminformationen und den Status einer Anwendung, wenn eine Anwendung unerwartet beendet wird.
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld                          | Beschreibung |
 | ------------------------------ | ----------- |
@@ -171,7 +170,7 @@ Die folgenden Felder werden gesammelt:
 
 **Kernelerweiterungsstatistiken**
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
@@ -207,7 +206,7 @@ Beispiele für optionale Diagnosedaten sind Daten, die Microsoft über die Produ
 
 **Konfiguration von Microsoft Defender für Endpunkt**
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld                                              | Beschreibung |
 | -------------------------------------------------- | ----------- |
@@ -228,7 +227,7 @@ Die folgenden Felder werden gesammelt:
 
 **Microsoft Auto-Update-Konfiguration**
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld                       | Beschreibung |
 | --------------------------- | ----------- |
@@ -241,7 +240,7 @@ Die folgenden Felder werden gesammelt:
 
 #### <a name="diagnostic-log-upload-started-report"></a>Bericht "Start des Diagnoseprotokolluploads"
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
@@ -252,7 +251,7 @@ Die folgenden Felder werden gesammelt:
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Abgeschlossener Bericht zum Hochladen des Diagnoseprotokolls
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
@@ -268,7 +267,7 @@ Unerwartete Anwendungsbeendungen und der Anwendungsstatus zum Zeitpunkt des Been
 
 **Kernelerweiterungsstatistiken**
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld                          | Beschreibung |
 | ------------------------------ | ----------- |

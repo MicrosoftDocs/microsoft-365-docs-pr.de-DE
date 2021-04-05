@@ -16,15 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c076a64b1e35978f09999b288b6849580df24972
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c94c6839c17b3bbb432cef12fe58723d0cc2ecff
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579698"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587239"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-ios"></a>Bereitstellen von Microsoft Defender for Endpoint für iOS
 
@@ -38,7 +37,7 @@ ms.locfileid: "51579698"
 
 In diesem Thema wird die Bereitstellung von Defender for Endpoint für iOS auf registrierten Geräten des Intune-Unternehmensportals beschrieben. Weitere Informationen zur Registrierung von Intune-Geräten finden Sie unter [Registrieren von iOS-/iPadOS-Geräten in Intune](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Stellen Sie sicher, dass Sie Zugriff auf [Microsoft Endpoint Manager Admin Center haben.](https://go.microsoft.com/fwlink/?linkid=2109431)
 

@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Erfahren Sie mehr über Ablaufrichtlinien für Microsoft 365-Gruppen.
-ms.openlocfilehash: 65a746751cd523a5dadce3eca573e6a9bfce0166
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: fdef06918ec2c35547c084e5f431aa7bef8d6a8c
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052302"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587623"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365-Gruppenablaufrichtlinie
 
@@ -63,7 +63,7 @@ Die Gruppenlebensdauer wird in Tagen angegeben und kann auf 180, 365 oder auf ei
 
 Wenn die Gruppe keinen Besitzer hat, gehen die Ablauf-E-Mails an den angegebenen Administrator.
 
-Sie können die Richtlinie für alle Gruppen festlegen, nur für ausgewählte Gruppen, oder sie vollständig deaktivieren, indem Sie **Keine auswählen.** Beachten Sie, dass sie derzeit keine unterschiedlichen Richtlinien für unterschiedliche Gruppen haben können.
+Sie können die Richtlinie für alle Ihre Gruppen festlegen, nur für ausgewählte Gruppen (bis zu 500), oder sie vollständig deaktivieren, indem Sie **Keine auswählen.** Beachten Sie, dass sie derzeit keine unterschiedlichen Richtlinien für unterschiedliche Gruppen haben können.
 
 ![Screenshot der Gruppenablaufeinstellungen in Azure Active Directory](../media/azure-groups-expiration-settings.png)
 

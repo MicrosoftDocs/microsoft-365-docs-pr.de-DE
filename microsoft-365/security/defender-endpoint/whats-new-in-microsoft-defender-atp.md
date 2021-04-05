@@ -15,17 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea6beba2d17b72f100703d26dd4106d0537c6fa6
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a72b742d8f4a69d2e38cf4fa234ba5b7e2961ac6
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063624"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587611"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Neues in Microsoft Defender for Endpoint
+# <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Neuigkeiten in Microsoft Defender für Endpunkt
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -56,19 +55,19 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter [Vorschaufeatures](ht
 - [Microsoft Defender für Endpunkt für iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für iOS. Erfahren Sie, wie Sie Microsoft Defender for Endpoint für iOS installieren, konfigurieren, aktualisieren und verwenden.
 
 ## <a name="september-2020"></a>September 2020
-- [Microsoft Defender für Endpoint für Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für Android. Erfahren Sie, wie Sie Microsoft Defender for Endpoint für Android installieren, konfigurieren, aktualisieren und verwenden.
+- [Microsoft Defender für Endpunkt für Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für Android. Erfahren Sie, wie Sie Microsoft Defender for Endpoint für Android installieren, konfigurieren, aktualisieren und verwenden.
 - [MacOS-Unterstützung für die Verwaltung von Bedrohungen und Sicherheitslücken](tvm-supported-os.md)<br> Das Bedrohungs- und Sicherheitsrisikomanagement für macOS befindet sich jetzt in der öffentlichen Vorschau und erkennt kontinuierlich Sicherheitslücken auf Ihren macOS-Geräten, damit Sie die Behebung priorisieren können, indem Sie sich auf das Risiko konzentrieren. Weitere Informationen finden Sie in diesem [Microsoft Tech Community-Blogbeitrag](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824).
 
 
 ## <a name="august-2020"></a>August 2020
-- [Microsoft Defender für Endpoint für Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für Android. Erfahren Sie, wie Sie Microsoft Defender for Endpoint für Android installieren, konfigurieren und verwenden.
+- [Microsoft Defender für Endpunkt für Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für Android. Erfahren Sie, wie Sie Microsoft Defender for Endpoint für Android installieren, konfigurieren und verwenden.
 
 
 ## <a name="july-2020"></a>Juli 2020
 - [Erstellen von Indikatoren für Zertifikate](manage-indicators.md) <br> Erstellen Sie Indikatoren zum Zulassen oder Blockieren von Zertifikaten. 
 
 ## <a name="june-2020"></a>Juni 2020
-- [Microsoft Defender for Endpoint for Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für Linux. Erfahren Sie, wie Sie Microsoft Defender for Endpoint für Linux installieren, konfigurieren, aktualisieren und verwenden.
+- [Microsoft Defender für Endpunkt für Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für Linux. Erfahren Sie, wie Sie Microsoft Defender for Endpoint für Linux installieren, konfigurieren, aktualisieren und verwenden.
 
 - [Angriffssimulatoren im Evaluierungslabor](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint hat eine Partnerschaft mit verschiedenen Bedrohungssimulationsplattformen entwickelt, um Ihnen bequemen Zugriff auf die Funktionen der Plattform direkt im Portal zu bieten.
 
@@ -79,7 +78,7 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter [Vorschaufeatures](ht
 
 ## <a name="november-december-2019"></a>November-December 2019
 
-- [Microsoft Defender für Endpoint für Mac](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender für Endpoint für Mac bietet den Schutz der nächsten Generation für Mac-Geräte. Kernkomponenten der einheitlichen Endpunktsicherheitsplattform stehen jetzt für Mac-Geräte zur Verfügung, einschließlich [Endpunkterkennung und -antwort.](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender für Endpunkt für Mac](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender für Endpoint für Mac bietet den Schutz der nächsten Generation für Mac-Geräte. Kernkomponenten der einheitlichen Endpunktsicherheitsplattform stehen jetzt für Mac-Geräte zur Verfügung, einschließlich [Endpunkterkennung und -antwort.](microsoft-defender-endpoint-mac.md)
  
 - [Informationen zum & und zur Anwendungsversion der Sicherheitsrisikoverwaltung](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) <BR>Anwendungen und Anwendungsversionen, die ihr Ende ihrer Lebensdauer erreicht haben, werden als solche gekennzeichnet oder gekennzeichnet, sodass Sie wissen, dass sie nicht mehr unterstützt werden und Maßnahmen ergreifen können, um entweder zu deinstallieren oder zu ersetzen. Auf diese Weise werden die Risiken im Zusammenhang mit verschiedenen Sicherheitsrisiken aufgrund nicht gepatchter Anwendungen geringer.
 
@@ -120,7 +119,7 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter [Vorschaufeatures](ht
 
 ## <a name="may-2019"></a>Mai 2019
 
-- [Berichte zum Schutz vor Bedrohungen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection)<BR>Der Bericht zum Schutz vor Bedrohungen enthält informationen auf hoher Ebene zu in Ihrer Organisation generierten Warnungen. 
+- [Berichte zum Bedrohungsschutz](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection)<BR>Der Bericht zum Schutz vor Bedrohungen enthält informationen auf hoher Ebene zu in Ihrer Organisation generierten Warnungen. 
 
 
 - [Microsoft-Bedrohungsexperten](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)<BR> Microsoft Threat Experts ist der neue dienst für die Suche nach verwalteten Bedrohungen in Microsoft Defender for Endpoint, der proaktive Suche, Priorisierung sowie zusätzliche Kontexte und Einblicke bietet, die sicherheitsbezogene Operations Center (SOCs) weiter in die Lage versetzt, Bedrohungen schnell und präzise zu identifizieren und darauf zu reagieren. Es bietet zusätzliche Kompetenz und Optik, die Microsoft-Kunden nutzen können, um die Funktionen des Sicherheitsbetriebs als Teil von Microsoft 365 zu erweitern.  
@@ -134,14 +133,14 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter [Vorschaufeatures](ht
 ## <a name="april-2019"></a>April 2019
 - [Microsoft Threat Experts Targeted Attack Notification-Funktion](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts#targeted-attack-notification) <BR> Die Warnungen von Microsoft Threat Experts für gezielte Angriffsbenachrichtigungen sind auf Organisationen zugeschnitten, um so viele Informationen wie möglich zur Verfügung zu stellen und so auf kritische Bedrohungen in ihrem Netzwerk aufmerksam zu machen, einschließlich der Zeitachse, des Umfangs der Verletzung und der Angriffsmethoden.
 
-- [Microsoft Defender für Endpunkt-API](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro) <BR> Microsoft Defender for Endpoint macht einen Großen Teil seiner Daten und Aktionen über eine Reihe programmgesteuerter APIs verfügbar. Mit diesen APIs können Sie Workflows automatisieren und innovationen basierend auf Microsoft Defender for Endpoint-Funktionen entwickeln. 
+- [Microsoft Defender für Endpunkt API](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro) <BR> Microsoft Defender for Endpoint macht einen Großen Teil seiner Daten und Aktionen über eine Reihe programmgesteuerter APIs verfügbar. Mit diesen APIs können Sie Workflows automatisieren und innovationen basierend auf Microsoft Defender for Endpoint-Funktionen entwickeln. 
 
 
 
 ## <a name="february-2019"></a>Februar 2019
 - [Vorfälle](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/incidents-queue) <BR> Incident ist eine neue Entität in Microsoft Defender for Endpoint, die alle relevanten Warnungen und zugehörigen Entitäten zusammen bringt, um die umfassendere Angriffsgeschichte zu erzählen und Analysten eine bessere Perspektive auf die Purview komplexer Bedrohungen zu bieten. 
 
-- [Onboarding früherer Versionen von Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> Onboarding unterstützter Versionen von Windows-Geräten, damit sie Sensordaten an den Microsoft Defender for Endpoint-Sensor senden können.
+- [Onboarding von früheren Windows-Versionen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> Onboarding unterstützter Versionen von Windows-Geräten, damit sie Sensordaten an den Microsoft Defender for Endpoint-Sensor senden können.
 
 
 ## <a name="october-2018"></a>Oktober 2018

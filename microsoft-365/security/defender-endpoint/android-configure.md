@@ -1,7 +1,7 @@
 ---
-title: Konfigurieren von Microsoft Defender ATP für Android-Features
-description: Beschreibt das Konfigurieren von Microsoft Defender ATP für Android
-keywords: microsoft, defender, atp, android, configuration
+title: Konfigurieren von Funktionen von Microsoft Defender für Endpunkt für Android
+description: Beschreibt das Konfigurieren von Microsoft Defender for Endpoint für Android
+keywords: microsoft, defender, atp, mde, android, configuration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4325020e653f14898ece4192e03cbf8b90131136
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c395aafc8a468cfdeaea973ab02421212870192a
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163447"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587215"
 ---
 # <a name="configure-defender-for-endpoint-for-android-features"></a>Konfigurieren von Defender for Endpoint für Android-Features
 
@@ -52,5 +51,5 @@ Defender for Endpoint für Android ermöglicht IT-Administratoren die Konfigurat
 > Defender für Endpoint für Android würde ein VPN verwenden, um das Web Protection-Feature zur Verfügung zu stellen. Dies ist kein normales VPN und ein lokales VPN mit selbstschleifender Schleife, das keinen Datenverkehr außerhalb des Geräts verwendet. Weitere Informationen finden Sie unter [Configure web protection on devices that run Android](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-manage-android).
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Übersicht über Microsoft Defender for Endpoint für Android](microsoft-defender-endpoint-android.md)
-- [Bereitstellen von Microsoft Defender for Endpoint für Android mit Microsoft Intune](android-intune.md)
+- [Übersicht über Microsoft Defender für Endpunkt für Android](microsoft-defender-endpoint-android.md)
+- [Bereitstellen von Microsoft Defender für Endpunkt für Android mit Microsoft Intune](android-intune.md)

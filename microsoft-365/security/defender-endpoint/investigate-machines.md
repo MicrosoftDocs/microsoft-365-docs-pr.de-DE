@@ -1,5 +1,5 @@
 ---
-title: Untersuchen von Geräten in der Liste Defender for Endpoint Defender ATP Devices
+title: Untersuchen von Geräten in der Liste "Defender for Endpoint Devices"
 description: Untersuchen Sie betroffene Geräte, indem Sie Warnungen, Netzwerkverbindungsinformationen, Gerätetags und Gruppen hinzufügen und den Dienstzustand überprüfen.
 keywords: Geräte, Tags, Gruppen, Endpunkt, Warnungswarteschlange, Warnungen, Gerätename, Domäne, zuletzt gesehen, interne IP, aktive Warnungen, Bedrohungskategorie, Filter, Sortierung, Warnungen überprüfen, Netzwerk, Verbindung, Typ, Kennwortdiebstahl, Ransomware, Exploit, Bedrohung, niedriger Schweregrad, Dienstintegheit
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f5415b6337d21b780a75a192a565078a6cacc06
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 154ecd66399b031ef2e60eef16227bb9bc2f8785
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185731"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587719"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Untersuchen von Geräten in der Microsoft Defender for Endpoint Devices-Liste
 
@@ -67,14 +67,14 @@ Der Abschnitt Gerätedetails enthält Informationen wie die Domäne, das Betrieb
 
 Reaktionsaktionen werden am oberen Rand einer bestimmten Geräteseite ausgeführt und umfassen Folgendes:
 
-- Verwalten von Tags
+- Verwalten von Kategorien
 - Isolieren des Geräts
 - Einschränken der App-Ausführung
-- Ausführen der Antivirenscans
+- Antivirusscan ausführen
 - Untersuchungspaket sammeln
 - Initiieren der Liveantwortsitzung
 - Initiieren einer automatisierten Untersuchung
-- Konsultieren eines Bedrohungsexperten
+- Wenden Sie sich an einen Bedrohungsexperten
 - Info-Center
 
 Sie können Reaktionsaktionen im Aktionscenter, auf einer bestimmten Geräteseite oder auf einer bestimmten Dateiseite ausführen.

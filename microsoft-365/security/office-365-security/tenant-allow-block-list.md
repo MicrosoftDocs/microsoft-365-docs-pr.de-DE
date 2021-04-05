@@ -16,12 +16,12 @@ ms.collection:
 description: Administratoren können erfahren, wie Sie im Sicherheitsportal in der Liste "Mandanten zulassen/blockieren" Zulassen und Blockieren von Zulassen und Blockieren konfigurieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55116ddac8fa25b63e50b7fba73f668855e2858d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 103ddc9aa0858f9203582ac07a655fd7f5506cf3
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206441"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587587"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Verwalten der Zulassungs-/Sperrliste des Mandanten
 
@@ -33,9 +33,6 @@ ms.locfileid: "51206441"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
->
-> Die in diesem Artikel beschriebenen Features befinden sich in Vorschau, können geändert werden und sind nicht in allen Organisationen verfügbar.
->
 > Sie können zu **diesem Zeitpunkt** keine zulässigen Elemente in der Mandanten zulassen/blockieren-Liste konfigurieren.
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer können Sie mit dem EOP-Filterungs-Urteil nicht einverstanden sein. Beispielsweise kann eine gute Nachricht als ungültig (falsch positiv) gekennzeichnet werden, oder eine schlechte Nachricht kann als ungültig (falsch negativ) zugelassen werden.
@@ -476,7 +473,7 @@ Die folgenden Einträge sind ungültig:
   - contoso
   - \*.contoso.\*
   - \*.com
-  - \*.pdf
+  - \*.PDF
 
 - **Platzhalter für Text oder ohne Abstandszeichen**:
 
