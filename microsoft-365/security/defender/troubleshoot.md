@@ -1,6 +1,6 @@
 ---
 title: Behandeln von Problemen mit dem Microsoft 365 Defender-Dienst
-description: Suchen von Lösungen und Arbeiten zu bekannten Microsoft 365 Defender-Problemen
+description: Suchen von Lösungen und Problemumgehungen für bekannte Microsoft 365 Defender-Probleme
 keywords: Problembehandlung für Microsoft Threat Protection, Problembehandlung, Azure ATP, Probleme, Add-On, Einstellungsseite
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8d8083cbba3582c41ca91c57978675987822d0d9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a2cd27bf7bf8b1c4931b9d768f3a6b5e5f2a0d93
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065896"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592036"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Behandeln von Problemen mit dem Microsoft 365 Defender-Dienst
 
@@ -49,6 +49,12 @@ Wenn Sie Microsoft Defender for Identity in Ihrer Umgebung bereitgestellt haben,
 
 Weitere Informationen finden Sie unter [Microsoft Defender for Identity integration](/cloud-app-security/mdi-integration).
 
-## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>Wo ist die Einstellungsseite zum Aktivieren des Diensts?
+## <a name="where-is-the-settings-page-for-turning-on-the-service"></a>Wo befindet sich die Einstellungsseite zum Aktivieren des Diensts?
 
 Um Microsoft 365 Defender  zu aktivieren, greifen Sie über den Navigationsbereich im Microsoft 365 Security Center auf Einstellungen zu. Dieses Navigationselement ist nur sichtbar, wenn Sie über die erforderlichen [Berechtigungen und Lizenzen verfügen.](m365d-enable.md#check-license-eligibility-and-required-permissions)
+
+## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>Wie erstelle ich eine Ausnahme für meine Datei/URL?
+
+Ein falsch positives Ergebnis ist eine Datei oder URL, die als schädlich erkannt wird, aber keine Bedrohung darstellt. Sie können Indikatoren erstellen und Ausschlüsse definieren, um die Blockierung zu aufheben und bestimmte Dateien/URLs zu erlauben. Weitere [Informationen finden Sie unter Address false positives/negatives in Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives).
+
+

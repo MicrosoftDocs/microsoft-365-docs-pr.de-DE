@@ -1,5 +1,5 @@
 ---
-title: Vorbereitung für die Migration von Microsoft Cloud Deutschland
+title: Vorabmigrationsaktivitäten für die Migration aus Microsoft Cloud Deutschland
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -18,28 +18,32 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
-ms.openlocfilehash: 9f5a38eae6d42f992879f97b8e8e1e8e6c4d56c3
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
-ms.translationtype: HT
+ms.openlocfilehash: e04246626088d9fca653c98246fd4a5b81bc1d30
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476349"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591874"
 ---
-# <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Vorbereitung für die Migration von Microsoft Cloud Deutschland
+# <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Vorabmigrationsaktivitäten für die Migration aus Microsoft Cloud Deutschland
 
-Über diese Links gelangen Sie zu den Schritten für die Vorarbeit, die für Ihre Organisation relevant ist:
+Verwenden Sie diese Links, um zu den schritten vor der Migration zu kommen, die für Ihre Organisation relevant sind.
 
-- Für **alle Kunden**, die Office 365 in Microsoft Cloud Deutschland verwenden: Führen Sie [diese Schritte](#general-tenant-migration-considerations) aus.
-- Führen Sie [diesen Schritt](#dns) für **DNS-Änderungen** aus.
-- Wenn Sie **Active Directory-Verbunddienste (AD FS)** lokal verwenden, führen Sie [diese Schritte](#active-directory-federation-services-ad-fs) aus.
-- Führen Sie [diesen Schritt](#sharepoint-online) aus, wenn Sie **SharePoint Online** verwenden.
-- Führen Sie [diesen Schritt](#exchange-online) aus, wenn Sie **Exchange Online** oder eine **Exchange-Hybridversion** verwenden.
-- Wenn Sie **Skype for Business Online** verwenden, führen Sie [diesen Schritt](#skype-for-business-online) aus
-- Führen Sie [diesen Schritt](#mobile-device-management) aus, wenn Sie eine MDM-Lösung (Mobile Device Management) eines Drittanbieters verwenden.
-- Führen Sie [diesen Schritt](#line-of-business-apps) aus, wenn Sie einen **Drittanbieterdienst** oder **branchenspezifische Apps** verwenden, die in Office 365 integriert sind.
-- Führen Sie [diesen Schritt](#dynamics365) aus, wenn Sie außerdem **Dynamics 365** verwenden.
-- Führen Sie [diesen Schritt](#power-bi) aus, wenn Sie außerdem **Power BI** verwenden.
-- Führen Sie [diesen Schritt](#microsoft-azure) aus, wenn Sie **Azure-Dienste** mit Ihrem Office 365-Abonnement nutzen.
+Wenn Sie verwenden
+
+- **Gehen Sie wie in Office 365 in Microsoft Cloud Deutschland** vor. [](#general-tenant-migration-considerations)
+- **Benutzerdefinierte Domänen**, gehen [Sie wie in diesem Schritt vor.](#dns-entries-for-custom-domains)
+
+- **SharePoint Online**, gehen [Sie wie in diesem Schritt vor.](#sharepoint-online)
+- **Gehen Sie wie** in **diesem Schritt in Exchange Online** oder Exchange Hybrid [vor.](#exchange-online)
+- **Skype for Business Online**, führen [Sie diesen Schritt aus.](#skype-for-business-online)
+- **Dynamics 365**, gehen [Sie wie in diesem Schritt vor.](#dynamics365)
+- **Power BI**, gehen [Sie wie in diesem Schritt vor.](#power-bi)
+
+- **Gehen Sie wie die folgenden** Schritte vor: Active Directory Federation Services for Azure AD [Connect.](#active-directory-federation-services-ad-fs)
+- **Gehen Sie** wie  in Office 365 integrierte Dienste von Drittanbietern oder Branchen-Apps [vor.](#line-of-business-apps)
+- Gehen Sie wie in diesem Schritt als Mobile Device Management (MDM)-Lösung eines [Drittanbieters vor.](#mobile-device-management)
+- **Gehen Sie in** diesem Schritt auf Azure-Dienste mit Ihrem Office 365-Abonnement. [](#microsoft-azure)
 
 ## <a name="general-tenant-migration-considerations"></a>Überlegungen zur allgemeinen Mandantenmigration
 
@@ -59,7 +63,7 @@ Office 365-Mandanten- und Benutzer-IDs bleiben während der Migration erhalten. 
 | Erstellen Sie organisationsweite [Aufbewahrungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/retention) zum Schutz vor dem versehentlichen Löschen von Inhalten während der Migration.  |<ul><li>Um sicherzustellen, dass Inhalte während der Migration nicht versehentlich von Endbenutzern gelöscht werden, können Kunden eine organisationsweite Aufbewahrungsrichtlinie aktivieren. </li><li>Eine Aufbewahrung ist zwar nicht erforderlich, da die Aufbewahrungsfristen während der Migration erwartungsgemäß funktionieren sollten. Eine Aufbewahrungsrichtlinie ist daher ein Sicherheitsmechanismus. Gleichermaßen wird eine Aufbewahrungsrichtlinie vielleicht nicht von allen Kunden verwendet, insbesondere von denjenigen, die sich Sorgen um die übermäßige Aufbewahrung machen.</li></ul>| Wenden Sie Aufbewahrungsrichtlinie so an, wie in [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) beschrieben. Es kann zu Ausfällen des Dienstes oder der Client-Software kommen, wenn dies nicht vor Phase 4 von 9 erfolgt. </li></ul>|
 |||||
 
-## <a name="dns"></a>DNS
+## <a name="dns-entries-for-custom-domains"></a>DNS-Einträge für benutzerdefinierte Domänen
 
 <!-- before phase 9 -->
 
@@ -72,7 +76,7 @@ Falls Sie ein DNS CNAME namens _msoid_ in einem oder vielen DNS-Namespaces, die 
 Um zu bestätigen, dass Sie ein CNAME in ihrem DNS-Namespace festgelegt haben, folgen Sie den Schritten unten und ersetzen Sie _contoso.com_ mit Ihrem eigenen Domänennamen:
 
 ```console
-nslookup -querytype=CNMAE msoid.contoso.com
+nslookup -querytype=CNAME msoid.contoso.com
 ```
 
 Wenn die Befehlszeile einen DNS-Datensatz zurückgibt, entfernen Sie das _msoid_ CNAME von Ihrer Domäne.

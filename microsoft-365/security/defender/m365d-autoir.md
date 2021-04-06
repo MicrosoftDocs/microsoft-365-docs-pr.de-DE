@@ -19,15 +19,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 8ed6f1ccd6587d6c618974a123f0d5d42a44e753
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: be0423b0af8251347420d9e970dcfe10db0bb72b
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199633"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591923"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Automatisierte Untersuchung und Reaktion in Microsoft 365 Defender
 
@@ -94,6 +93,11 @@ In Microsoft 365 Defender korreliert jede automatisierte Untersuchung Signale in
 
 > [!NOTE]
 > Nicht jede Warnung löst eine automatisierte Untersuchung aus, und nicht jede Untersuchung führt zu automatisierten Abhilfemaßnahmen. es hängt davon ab, wie die automatisierte Untersuchung und Reaktion für Ihre Organisation konfiguriert ist. Weitere Informationen finden Sie unter [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
+
+## <a name="viewing-a-list-of-investigations"></a>Anzeigen einer Liste von Untersuchungen
+
+Wenn Sie Untersuchungen anzeigen möchten, wechseln Sie zur **Seite Vorfälle.** Wählen Sie einen Vorfall aus, und wählen Sie dann die Registerkarte **Untersuchungen** aus. Weitere Informationen finden Sie unter [Details und Ergebnisse einer automatisierten Untersuchung.](m365d-autoir-results.md)
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 

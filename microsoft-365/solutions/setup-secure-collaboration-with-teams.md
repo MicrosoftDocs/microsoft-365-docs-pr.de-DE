@@ -16,18 +16,16 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Erfahren Sie, wie Sie eine sichere Inhaltszusammenarbeit in Teams einrichten, um Ihre Daten basierend auf ihrer Vertraulichkeit zu schützen.
-ms.openlocfilehash: 88cb3557f1c150a9c9fd68ba362fcc9c424aa73a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 804307b3035f0d2246dc0ac541cce2d63506c351
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906468"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591910"
 ---
-# <a name="set-up-secure-collaboration-with-microsoft-365"></a>Sichere Zusammenarbeit mit Microsoft 365 einrichten
+# <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>Einrichten einer sicheren Zusammenarbeit mit Microsoft 365 und Microsoft Teams
 
 Die Möglichkeit zum einfachen Teilen von Informationen mit den richtigen Personen und gleichzeitiger Verhinderung von Überschattung ist der Schlüssel zum Erfolg einer Organisation. Dies umfasst die Möglichkeit, vertrauliche Daten sicher nur für diejenigen zu teilen, die Zugriff darauf haben sollten. Je nach Projekt kann dies die Freigabe vertraulicher Daten für Personen außerhalb Ihrer Organisation umfassen.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 Diese Lösungsanleitung für die Zusammenarbeit umfasst zwei Komponenten, die Ihnen helfen:
 - Bereitstellen von Microsoft Teams mit dem richtigen Schutzniveau für jedes Projekt
@@ -36,6 +34,8 @@ Diese Lösungsanleitung für die Zusammenarbeit umfasst zwei Komponenten, die Ih
 ![Bereitstellen von Teams mit entsprechendem Schutz und Konfigurieren der externen Freigabe mit entsprechenden Sicherheitseinstellungen](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
 Wenn keine vielseitigen und einfach zu verwendenden Tools für die Inhaltszusammenarbeit verfügbar sind, arbeiten Benutzer häufig per E-Mail zusammen. Dies ist eine mühsame und fehleranfällige Methode der Zusammenarbeit und kann das Risiko einer unangemessenen Freigabe von Informationen erhöhen. Wenn die Freigabe von Informationen zu schwierig ist, könnten sie wieder Verbraucherprodukte verwenden, die nicht von der IT geregelt werden. Dies kann ein noch höheres Risiko darstellen.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 Mit Microsoft 365 können Sie Teams mit einer Vielzahl von Konfigurationen bereitstellen, die Ihnen helfen:
 
@@ -152,6 +152,7 @@ Diese Schulungsmodule von Microsoft Learn helfen Ihnen, die Features für Zusamm
 > [Starten >](/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
 
 #### <a name="information-protection"></a>Schutz von Daten
+
 
 |Schulung:|Schützen von Unternehmensinformationen mit Microsoft 365|
 |:---|:---|

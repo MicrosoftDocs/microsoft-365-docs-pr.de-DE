@@ -1,6 +1,6 @@
 ---
 title: Details und Ergebnisse einer automatisierten Untersuchung
-description: Während und nach einer automatischen Untersuchung können Sie die Ergebnisse und die wichtigsten Erkenntnisse anzeigen.
+description: Anzeigen der Ergebnisse und wichtigsten Ergebnisse der automatisierten Untersuchung in Microsoft 365 Defender
 keywords: automatisch, Untersuchungen, Ergebnisse, analysieren, Details, Behebung, autoair
 search.appverid: met150
 ms.prod: m365-security
@@ -21,13 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/08/2021
-ms.openlocfilehash: 05208dd8ba893d65db50430861ad5dd5ad9d34fb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ca023ea49a8d92123467be640a097a72233d3198
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198969"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592120"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Details und Ergebnisse einer automatisierten Untersuchung
 
@@ -61,8 +60,11 @@ Im [verbesserten Aktionscenter](m365d-action-center.md) ( ) werden Korrekturakti
 > Sie müssen über [bestimmte Berechtigungen zum](m365d-action-center.md#required-permissions-for-action-center-tasks) Genehmigen, Ablehnen oder Rückgängig machen von Aktionen verfügen.
 
 1. Gehen Sie zu [https://security.microsoft.com](https://security.microsoft.com), und melden Sie sich an. 
+
 2. Wählen Sie im Navigationsbereich **Info-Center** aus. 
+
 3. Wählen Sie auf der Registerkarte **Ausstehend** oder **Verlauf** ein Element aus. Der Flyoutbereich wird geöffnet.
+
 4. Überprüfen Sie die Informationen im Flyoutbereich, und gehen Sie dann wie folgt vor:
    - Wählen **Sie Die Seite Untersuchung öffnen aus,** um weitere Details zur Untersuchung anzuzeigen.
    - Wählen **Sie Genehmigen** aus, um eine ausstehende Aktion zu initiieren.
@@ -76,9 +78,13 @@ Verwenden Sie die Seite „Vorfalldetails“, um detaillierte Informationen zu e
 ![Vorfalldetails](../../media/mtp-incidentdetails-tabs.png)
 
 1. Gehen Sie zu [https://security.microsoft.com](https://security.microsoft.com), und melden Sie sich an. 
+
 2. Wählen Sie im Navigationsbereich **Incidents & Alerts**  >  **Incidents aus.** 
+
 3. Wählen Sie ein Element in der Liste aus, und wählen Sie dann **Seite Vorfall öffnen aus.**
+
 4. Wählen Sie die **Registerkarte** Untersuchungen aus, und wählen Sie dann eine Untersuchung in der Liste aus. Der Flyoutbereich wird geöffnet.
+
 5. Wählen **Sie Untersuchungsseite öffnen aus.** 
 
 ## <a name="investigation-details"></a>Untersuchungsdetails

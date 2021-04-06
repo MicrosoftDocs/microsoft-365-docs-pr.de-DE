@@ -20,13 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/01/2021
-ms.openlocfilehash: d958f2787b9d66e42a32b8858139f7d13e83ddef
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: edf809c5fbc257e1dacafeed931da1a2d1471f4a
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199597"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592084"
 ---
 # <a name="the-action-center"></a>Das Info-Center
 
@@ -96,12 +95,12 @@ Alle Aktionen, unabhängig davon, ob sie noch ausstehen oder bereits ergriffen w
 
 - Untersuchungspaket sammeln 
 - Gerät isolieren (diese Aktion kann rückgängig gemacht werden) 
-- Offboardcomputer 
+- Offboarding des Computers 
 - Ausführung von Releasecode 
 - Veröffentlichung aus der Quarantäne 
 - Anforderungsbeispiel 
 - Einschränken der Codeausführung (diese Aktion kann rückgängig gemacht werden) 
-- Ausführen der Antivirenscans 
+- Antivirusscan ausführen 
 - Beenden und Isolieren 
 
 Neben Denkmaßnahmen, die automatisch als Ergebnis automatisierter Untersuchungen ausgeführt [werden,](m365d-autoir.md)verfolgt das Action Center auch Aktionen, die Ihr Sicherheitsteam zur Behebung erkannter Bedrohungen ergriffen hat, sowie Aktionen, die als Ergebnis von Bedrohungsschutzfeatures in Microsoft 365 Defender ausgeführt wurden. Weitere Informationen zu automatischen und manuellen Korrekturaktionen finden Sie unter [Remediation actions](m365d-remediation-actions.md).

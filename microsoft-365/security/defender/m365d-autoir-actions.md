@@ -20,14 +20,13 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 01/29/2021
 ms.technology: m365d
-ms.openlocfilehash: d78bf3689020b5a24863e5a0f1ec817af50178ad
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7106f5d2e740d2b4cacbcaeb0b9391095bbeb356
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065904"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592024"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Anzeigen und Verwalten von Aktionen im Aktionscenter
 
@@ -52,8 +51,11 @@ Es ist wichtig, ausstehende Aktionen so bald wie möglich zu genehmigen (oder ab
 ![Genehmigen oder Ablehnen einer Aktion](../../media/air-actioncenter-itemselected.png)
 
 1. Gehen Sie zu [https://security.microsoft.com](https://security.microsoft.com), und melden Sie sich an. 
+
 2. Wählen Sie im Navigationsbereich **Info-Center** aus. 
+
 3. Wählen Sie im Info-Center auf der Registerkarte **Ausstehend** ein Element in der Liste aus. Der Flyoutbereich wird geöffnet.
+
 4. Überprüfen Sie die Informationen im Flyoutbereich, und gehen Sie dann wie folgt vor:
    - Wählen **Sie Die Seite Untersuchung öffnen aus,** um weitere Details zur Untersuchung anzuzeigen.
    - Wählen **Sie Genehmigen** aus, um eine ausstehende Aktion zu initiieren.
@@ -71,19 +73,25 @@ Wenn Sie festgestellt haben, dass ein Gerät oder eine Datei keine Bedrohung dar
 ### <a name="undo-one-remediation-action"></a>Rückgängig machen einer Korrekturaktion
 
 1. Wechseln Sie zum Aktionscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) und melden Sie sich an.
+
 2. Wählen Sie **auf der** Registerkarte Verlauf eine Aktion aus, die Rückgängig gemacht werden soll.
+
 3. Wählen Sie im Bereich auf der rechten Seite des Bildschirms **Rückgängig aus.**
 
 ### <a name="undo-multiple-remediation-actions"></a>Rückgängig machen mehrerer Korrekturaktionen
 
 1. Wechseln Sie zum Aktionscenter ( https://security.microsoft.com/action-center) und melden Sie sich an.
+
 2. Wählen Sie **auf der Registerkarte** Verlauf die Aktionen aus, die Rückgängig gemacht werden sollen. Stellen Sie sicher, dass Sie Elemente mit demselben Aktionstyp auswählen. Ein Flyoutbereich wird geöffnet.
+
 3. Wählen Sie im Flyoutbereich **Rückgängig aus.**
 
 ### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>So entfernen Sie eine Datei auf mehreren Geräten aus der Quarantäne 
 
 1. Wechseln Sie zum Aktionscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) und melden Sie sich an.
+
 2. Wählen Sie **auf der Registerkarte** Verlauf eine Datei mit dem Aktionstyp **Quarantänedatei aus.**
+
 3. Wählen Sie im Bereich auf der rechten Seite des Bildschirms Anwenden auf **X** weitere Instanzen dieser Datei aus, und wählen Sie **dann Rückgängig aus.**
 
 ## <a name="next-steps"></a>Nächste Schritte

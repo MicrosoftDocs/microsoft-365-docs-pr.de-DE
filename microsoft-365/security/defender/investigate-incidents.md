@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f6b085f200d3b0c71bb3608f8e5ba9ed85632676
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a6c7e7e920d18d9d8bf29d71d317008ea0c37bbf
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500326"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592096"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Untersuchen von Vorfällen in Microsoft 365 Defender
 
@@ -85,6 +85,10 @@ Wenn Sie auf den Namen des Rechners klicken, auf dem der Angriff ausgeführt wur
 ![Abbildung der Registerkarte "Rechner" eines Vorfalls](../../media/incident-machines.png)
 
 Durch Auswahl der Registerkarte Zeitachse können Sie durch die Zeitachse der Rechner scrollen und alle Ereignisse und Verhaltensweisen, die auf dem Rechner beobachtet wurden, in chronologischer Reihenfolge anzeigen, durchsetzt mit den ausgegebenen Warnungen.
+
+> [!TIP]
+> Sie können Bedarfsscans auf einer Geräteseite durchführen. Wählen Sie im Microsoft 365 Security Center **Gerätebestand aus.** Wählen Sie ein Gerät mit Warnungen aus, und führen Sie dann eine Antivirenscan aus. Aktionen, z. B. Antivirenscans, werden nachverfolgt und sind auf der Seite **Geräteinventar** sichtbar. Weitere Informationen finden Sie unter [Ausführen der Microsoft Defender Antivirus-Überprüfung auf Geräten](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
+
 
 ## <a name="users"></a>Nutzer
 
