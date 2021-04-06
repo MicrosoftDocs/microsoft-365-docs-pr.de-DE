@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4f0be1b416bb80bc5cd2b43f5e4c95f0dbc24142
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 7e564bfd090a778ae2cd14214c35af8cd2fc6692
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50542323"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591863"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Untersuchen und Beheben von Warnungen zur Kommunikationscompliance
 
@@ -122,25 +122,6 @@ Nachdem Sie nun die Details der Nachricht für die Warnung überprüft haben, k�
 - **Benachrichtigen**: Sie können das **Notify-Steuerelement** verwenden, um der Warnung eine benutzerdefinierte Benachrichtigungsvorlage zuzuordnen und eine Warnmeldung an den Benutzer zu senden. Wählen Sie die entsprechende Benachrichtigungsvorlage aus, die im Bereich Kommunikationskonformitätseinstellungen konfiguriert ist, und wählen Sie **Senden** an eine E-Mail-Erinnerung an den Benutzer aus, der die Nachricht gesendet hat, und um das Problem zu beheben. 
 - **Eskalieren**: Mit dem **Steuerelement Eskalieren** können Sie auswählen, wer die Nachricht von anderen Personen in Ihrer Organisation überprüfen soll. Wählen Sie aus einer Liste von Prüfern aus, die in der Kommunikationskonformitätsrichtlinie konfiguriert sind, um eine E-Mail-Benachrichtigung zu senden, die eine zusätzliche Überprüfung der Nachrichtenwarnung anfordert. Der ausgewählte Prüfer kann einen Link in der E-Mail-Benachrichtigung verwenden, um direkt zu den an ihn zur Prüfung eskalierten Elementen zu gelangen.
 - **Eskalieren zur Untersuchung:** Mithilfe der **Eskalation** für die Untersuchungskontrolle können Sie einen neuen [Advanced eDiscovery-Fall](overview-ediscovery-20.md) für einzelne oder mehrere Nachrichten erstellen. Sie geben einen Namen und Notizen für den neuen Fall an, und der Benutzer, der die Nachricht gesendet hat, die mit der Richtlinie übereinstimmen, wird automatisch als Fallverwahrer zugewiesen. Sie benötigen keine zusätzlichen Berechtigungen, um den Fall zu verwalten. Beim Erstellen eines Falls wird kein neues Tag für die Nachricht aufgelöst oder erstellt. Beim Erstellen eines Advanced eDiscovery-Falls während des Korrekturprozesses können Sie insgesamt 100 Nachrichten auswählen. Nachrichten in allen Kommunikationskanälen, die von der Kommunikationskonformität überwacht werden, werden unterstützt. Sie können beispielsweise 50 Microsoft Teams-Chats, 25 Exchange Online-E-Mail-Nachrichten und 25 Yammer-Nachrichten auswählen, wenn Sie einen neuen Advanced eDiscovery-Fall für einen Benutzer öffnen.
-- **Verbesserung der Klassifizierung (Vorschau):** Warnungen, die aus Klassifizierertyp-Übereinstimmungen erstellt werden, benötigen möglicherweise Feedback, um falsch positive Ergebnisse in Ihrer Organisation zu minimieren. Verwenden Sie **das Steuerelement Klassifizierung verbessern,** um Feedback zu geben, ob die Klassifizierung für die Kommunikationskonformität gültig ist, oder um andere trainierbare Klassifizierungen für diese Art von Übereinstimmungen zu vorschlagen. Sie können bestätigen, dass es sich bei den Klassifizierungen entweder um eine *Übereinstimmung* oder keine Übereinstimmung *handelt,* oder sie können andere trainierbare Klassifizierungen vorschlagen, die dieser Art von Warnungsaktivität in Zukunft zugeordnet werden sollen.
-
-    1. Wählen Sie eine Nachricht aus der Warnungsliste aus.
-    2. Wählen Sie die Auslassungspunkte aus, und wählen Sie **Klassifizierung verbessern aus.**
-    3. Wenn **das Element ein echtes Positives** ist, wählen Sie im Bereich Detailliertes Klassifiziererfeedback die **Option Match aus.**  Wenn das Element fälschlicherweise als falsch positives Element in die Kategorie aufgenommen wurde, wählen Sie **Keine Übereinstimmung aus.**
-    4. Wenn es einen anderen Klassifikator gibt, der für das Element geeigneter wäre, wählen Sie ihn in der Liste **Andere trainierbare Klassifikatoren** vorschlagen aus. Dieses Feedback löst die andere Klassifizierung aus, um das Element auszuwerten.
-
-    > [!TIP]
-    > Sie können Feedback zu mehreren Elementen gleichzeitig bereitstellen, indem Sie sie alle auswählen und dann **detailliertes** Feedback in der Befehlsleiste bereitstellen auswählen.
-
-    5. Wählen **Sie Feedback senden** aus,  um Ihre Bewertung der **Übereinstimmungs-** und Nicht-Übereinstimmungsklassifizierungen zu senden, und schlagen Sie andere trainierbare Klassifizierungen vor. Wenn Sie einem Klassifikator 30 Feedbackinstanzen bereitgestellt haben, wird er automatisch umtrainiert. Die Umschulung kann 1 bis 4 Stunden dauern. Klassifizierungen können nur zweimal pro Tag umtrainiert werden.
-
-    > [!IMPORTANT]
-    > Diese Informationen werden an den Klassifikator in Ihrem Mandanten gesendet, **sie gehen nicht zurück zu Microsoft.**
-
-    Weitere Informationen zum Umschulungsklassifikator für die Kommunikationskonformität finden Sie im Artikel [How to retrain a classifier in communications compliance.](classifier-how-to-retrain-comms-compliance.md)
-
-    ![Verbesserung der Klassifizierung der Kommunikationskonformität](../media/communication-compliance-improve-classifier.png)
-
 - **Nachricht in Teams** entfernen: Mithilfe des Steuerelements Nachricht **in Teams** entfernen können Sie unangemessene Nachrichten und Inhalte blockieren, die in Warnungen aus Microsoft Teams-Kanälen und 1:1- und Gruppenchats identifiziert wurden. Entfernte Nachrichten und Inhalte werden durch einen Richtlinientipp ersetzt, der erläutert, dass sie blockiert ist und die Richtlinie, die für das Entfernen aus der Ansicht gilt. Empfängern wird ein Link im Richtlinientipp bereitgestellt, um mehr über die anwendbare Richtlinie und den Überprüfungsprozess zu erfahren. Der Absender erhält einen Richtlinientipp für die blockierte Nachricht und den Inhalt, kann jedoch die Details der blockierten Nachricht und des Inhalts für kontextbezogene Entfernungen überprüfen.
 
     ![Entfernen einer Nachricht aus Microsoft Teams](../media/communication-compliance-remove-teams-message.png)
