@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Hier erfahren Sie, wie Sie die Informationen zu Gebühren, Abrechnung und Zahlung auf Ihrer Rechnung für Microsoft 365 für Unternehmen interpretieren sowie die Auftragsnummer ändern können.
-ms.openlocfilehash: 99b52928d458e7883919ee46aaafaa7a66278447
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 56f1ba3e7cc328593873aaf06ddfe6dc82fc1a17
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911686"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615375"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Grundlegendes zu Ihrer Rechnung für Microsoft 365 für Unternehmen
 
@@ -106,36 +106,24 @@ Wenn Sie per Rechnung bezahlen, können Sie Ihrem Abonnement die Auftragsnummer 
 ::: moniker range="o365-worldwide"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-
-2. Wenn Sie sich in der Ansicht **Tabelle** befinden, wählen Sie **Karten** aus, um die Ansichten zu wechseln.
-
-3. Suchen Sie das Abonnement, das Sie ändern möchten.
-
-4. Wählen Sie im Abschnitt **Abrechnung** neben **Rechnung** die Option **Bearbeiten** aus.
-
-5. Geben Sie am unteren Rand des Bereichs **Zahlungsdetails bearbeiten** Ihre Auftragsnummer ein, und wählen Sie **Speichern** aus.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-
-2. Wählen Sie das Abonnement, das Sie ändern möchten, und dann im Abschnitt **Zahlungsmethode** die Option **Zahlungsdetails ändern** aus.
-
-3. Geben Sie am unteren Rand des Bereichs **Zahlungsdetails ändern** Ihre Auftragsnummer ein, und wählen Sie **Absenden** aus.
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Ihre Produkte</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
-
-2. Wählen Sie das Abonnement, das Sie ändern möchten, und dann im Abschnitt **Zahlungsmethode** die Option **Zahlungsdetails ändern** aus.
-
-3. Geben Sie am unteren Rand des Bereichs **Zahlungsdetails ändern** Ihre Auftragsnummer ein, und wählen Sie **Absenden** aus.
-
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ihre Produkte</a>.
 ::: moniker-end
+
+1. Wählen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie ändern möchten.
+
+1. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Abonnement- und** Zahlungseinstellungen die Option **Rechnung bearbeiten aus.** 
+
+1. Geben Sie unten im Bereich Details für die Zahlung **per** Sprachsteuerung bearbeiten Ihre Postfachnummer ein, und wählen Sie dann **Speichern aus.**
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

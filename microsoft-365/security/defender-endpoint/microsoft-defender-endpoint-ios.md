@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 72c3cfd51e472bbbda61f0084e131c4298633193
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 7d4bc095a9fbc0b9cd166d3133ed291a2c8c01da
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186989"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615423"
 ---
 # <a name="microsoft-defender-for-endpoint-for-ios"></a>Microsoft Defender für Endpunkt für iOS
 
@@ -78,7 +78,7 @@ Weitere Informationen finden Sie unter [Deploy Microsoft Defender for Endpoint f
 
 ## <a name="resources"></a>Ressourcen
 
-- Informieren Sie sich über bevorstehende Versionen, indem Sie unseren [Blog besuchen.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)
+- Informieren Sie sich über bevorstehende Versionen, indem Sie Informationen zu Den neuen [Versionen in Microsoft Defender for Endpoint für iOS](ios-whatsnew.md) oder in unserem Blog [finden.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)
 
 - Bereitstellen von Feedback über das In-App-Feedbacksystem oder über [das SecOps-Portal](https://securitycenter.microsoft.com)
 

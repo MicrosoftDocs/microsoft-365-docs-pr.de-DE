@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,21 +20,14 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie mehr Lizenzen kaufen oder die Anzahl der Lizenzen für Ihr Microsoft 365 Business-Abonnement reduzieren.
 ms.date: ''
-ms.openlocfilehash: 904444790a7984ebce4f549c77bfd22e8f459c9c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4d0b73fb33d27f82a02b4ae0c6ecb009eb9d38d
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911542"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615135"
 ---
 # <a name="buy-or-remove-licenses"></a>Kaufen oder Entfernen von Lizenzen
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Sie können mehr Lizenzen erwerben oder die Anzahl der Lizenzen für Ihre Abonnements reduzieren, indem Sie die folgenden Schritte ausführen.
 
@@ -60,29 +53,24 @@ Wenn Sie Lizenzen aus einem Abonnement entfernt haben, müssen Sie als Nächstes
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Microsoft 365 Admin Center zu **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-2. Suchen Sie **auf der** Registerkarte Produkte nach dem Abonnement, für das Sie Lizenzen kaufen oder entfernen möchten. Wählen **Sie Weitere Aktionen** (drei Punkte) aus, und wählen Sie dann Lizenzen kaufen **aus.** [Was passiert, wenn die Schaltflächen Lizenzen kaufen oder Lizenzen entfernen nicht angezeigt werden?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. Wenn Sie die Anzahl der Lizenzen reduzieren möchten, wählen Sie oben im Bereich Lizenzen kaufen die Option **Lizenzen entfernen aus.** 
-4. Um Lizenzen zu kaufen oder zu  entfernen, geben Sie unter **Neue** Menge im Feld Lizenzen insgesamt die Gesamtzahl der Lizenzen ein, die Sie für dieses Abonnement benötigen. Wenn Sie beispielsweise über 100 Lizenzen verfügen und fünf weitere hinzufügen möchten, geben Sie 105 ein. Wenn Sie fünf davon entfernen möchten, geben Sie 95 ein.
-5. Wählen Sie **Speichern** aus.
-
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-2. Wählen Sie **auf** der Seite Abonnements das Abonnement aus, für das Sie Lizenzen kaufen oder entfernen möchten, und wählen Sie dann **Lizenzen hinzufügen/entfernen aus.** [Was passiert, wenn die Schaltflächen Lizenzen kaufen oder Lizenzen entfernen nicht angezeigt werden?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. Geben Sie **im Feld** Lizenzen insgesamt die Gesamtanzahl der Lizenzen ein, die Sie für dieses Abonnement benötigen, und wählen Sie **Dann Schließen** \> **absenden aus.** Wenn Sie beispielsweise über 100 Lizenzen verfügen und fünf weitere hinzufügen möchten, geben Sie 105 ein. Wenn Sie fünf Lizenzen entfernen möchten, geben Sie 95 ein.
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Ihre Produkte</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
-2. Wählen Sie **auf** der Seite Abonnements das Abonnement aus, für das Sie Lizenzen kaufen oder entfernen möchten, und wählen Sie dann **Lizenzen hinzufügen/entfernen aus.** [Was passiert, wenn die Schaltflächen Lizenzen kaufen oder Lizenzen entfernen nicht angezeigt werden?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. Geben Sie **im Feld** Lizenzen insgesamt die Gesamtanzahl der Lizenzen ein, die Sie für dieses Abonnement benötigen, und wählen Sie **dann Schließen** \> **absenden aus.** Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen müssen, geben Sie 105 ein. Wenn Sie 5 davon entfernen möchten, geben Sie 95 ein.
-
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ihre Produkte</a>.
 ::: moniker-end
+
+2. Suchen Sie **auf der** Registerkarte Produkte nach dem Abonnement, für das Sie Lizenzen kaufen oder entfernen möchten. Wählen **Sie Weitere Aktionen** (drei Punkte) aus, und wählen Sie dann Lizenzen kaufen **aus.** [Was passiert, wenn die Schaltflächen Lizenzen kaufen oder Lizenzen entfernen nicht angezeigt werden?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+3. Wenn Sie die Anzahl der Lizenzen reduzieren möchten, wählen Sie oben im Bereich Lizenzen kaufen die Option **Lizenzen entfernen aus.** 
+4. Um Lizenzen zu kaufen oder zu  entfernen, geben Sie unter **Neue** Menge im Feld Lizenzen insgesamt die Gesamtzahl der Lizenzen ein, die Sie für dieses Abonnement benötigen. Wenn Sie beispielsweise über 100 Lizenzen verfügen und fünf weitere hinzufügen möchten, geben Sie 105 ein. Wenn Sie fünf davon entfernen möchten, geben Sie 95 ein.
+5. Klicken Sie auf **Speichern**.
 
 > [!NOTE]
 > Sie können die Anzahl der Lizenzen für Ihr Abonnement nicht reduzieren, wenn derzeit alle Lizenzen Benutzern zugewiesen sind. Um die Anzahl der Lizenzen zu reduzieren, entfernen Sie zunächst eine oder mehrere Lizenzen von [Benutzern,](../../admin/manage/remove-licenses-from-users.md)und entfernen Sie dann die Lizenzen aus dem Abonnement.

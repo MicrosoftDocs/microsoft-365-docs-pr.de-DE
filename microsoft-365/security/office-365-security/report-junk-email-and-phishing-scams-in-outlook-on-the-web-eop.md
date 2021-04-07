@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren können sich über die integrierten Junk-, nicht Junk- und Phishing-E-Mail-Berichterstellungsoptionen in Outlook im Web (Outlook Web App) in Exchange Online informieren und erfahren, wie Sie diese Berichterstellungsoptionen für Benutzer deaktivieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77a1233b85ad213091ac84ac6f7e8eb93d9145af
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 933387dd32a6c1ca1e27ee11e4a9384615e8fdec
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205726"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615211"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Melden von Junk- und Phishing-E-Mails in Outlook im Web in Exchange Online
 
@@ -33,9 +33,11 @@ ms.locfileid: "51205726"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online können Sie die integrierten Berichtsoptionen in Outlook im Web (früher als Outlook Web App bezeichnet) verwenden, um falsch positive Ergebnisse (gute E-Mails, die als Spam gekennzeichnet sind), falsch negative Nachrichten (ungültige E-Mails zulässig) und Phishingnachrichten an Exchange Online Protection (EOP) zu senden.
+In Microsoft 365-Organisationen mit Postfächern in Exchange [](../../enterprise/hybrid-modern-auth-overview.md)Online oder lokalen Postfächern mit moderner Hybridauthentifizierung können Sie falsch positive Nachrichten (gute E-Mails als Spam gekennzeichnet), falsch negative Nachrichten (ungültige E-Mails zulässig) und Phishingnachrichten an Exchange Online Protection (EOP) senden.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
+
+- Für eine optimale Benutzerübermittlung empfehlen wir die Verwendung der Berichtsnachricht und der Phishing-Add-Ins melden. Weitere [Informationen finden Sie unter Enable the Report Message add-in](./enable-the-report-message-add-in.md) und Enable the Report Phishing [add-in.](./enable-the-report-phish-add-in.md)
 
 - Wenn Sie ein Administrator in einer Organisation mit Exchange Online-Postfächern sind, wird empfohlen, das Übermittlungsportal im Security & Compliance Center zu verwenden. Weitere Informationen finden Sie unter [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
@@ -44,42 +46,6 @@ In Microsoft 365-Organisationen mit Postfächern in Exchange Online können Sie 
 - Sie können gemeldete Nachrichten so konfigurieren, dass sie in ein von Ihnen festgelegtes Postfach kopiert oder umgeleitet werden. Weitere Informationen finden Sie unter [Benutzerübermittlungsrichtlinien](user-submission.md).
 
 - Weitere Informationen zum Melden von Nachrichten an Microsoft finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
-
-## <a name="report-spam-and-phishing-messages-in-outlook-on-the-web"></a>Melden von Spam- und Phishingnachrichten in Outlook im Web
-
-1. Verwenden Sie für Nachrichten im Posteingang oder in einem anderen E-Mail-Ordner mit Ausnahme von Junk-E-Mails eine der folgenden Methoden, um Spam- und Phishingnachrichten zu melden:
-
-   - Wählen Sie die Nachricht aus, klicken Sie **auf der** Symbolleiste auf Junk, und wählen Sie dann **Junk oder** **Phishing aus.**
-
-     ![Melden von Junk- oder Phishing-E-Mails über das Menüband](../../media/owa-report-junk.png)
-
-   - Wählen Sie eine oder mehrere Nachrichten aus, klicken Sie mit der rechten Maustaste, und wählen Sie **dann Als Junk markieren aus.**
-
-2. Klicken Sie im angezeigten Dialogfeld auf **Bericht**. Wenn Sie Ihre Meinung ändern, klicken Sie auf **Nicht melden**.
-
-   |Junk-E-Mail|Phishing-E-Mail|
-   |:---:|:---:|
-   |![Melden als Junkdialogfeld](../../media/owa-report-as-junk-dialog.png)|![Melden als Phishingdialogfeld](../../media/owa-report-as-phishing-dialog.png)|
-
-3. Die ausgewählten Nachrichten werden zur Analyse an Microsoft gesendet. Wenn Sie überprüfen möchten, ob die Nachrichten gesendet wurden, öffnen Sie den Ordner **Gesendete Objekte**, in dem die gesendeten Nachrichten angezeigt werden sollten.
-
-## <a name="report-non-spam-and-phishing-messages-from-the-junk-email-folder-in-outlook-on-the-web"></a>Melden von Nichtspam- und Phishingnachrichten aus dem Junk-E-Mail-Ordner in Outlook im Web
-
-1. Verwenden Sie im Ordner Junk-E-Mail eine der folgenden Methoden, um Spam falsch positive Nachrichten oder Phishingnachrichten zu melden:
-
-   - Wählen Sie die Nachricht aus, klicken **Sie auf der** Symbolleiste auf Nicht Junk, und wählen Sie dann Nicht Junk **oder** **Phishing aus.**
-
-     ![Melden sie keine Junk-E-Mails oder keine Phishing-E-Mails vom Menüband](../../media/owa-report-not-junk.png)
-
-   - Wählen Sie eine oder mehrere Nachrichten aus, klicken Sie mit der rechten Maustaste, und wählen Sie **dann Als Junk markieren aus.**
-
-2. Lesen Sie im angezeigten Dialogfeld die Informationen, und klicken Sie auf **Bericht**. Wenn Sie Ihre Meinung ändern, klicken Sie auf **Nicht melden**.
-
-   |Keine Junk-E-Mail|Phishing|
-   |:---:|:---:|
-   |![Melden als Nicht-Junk-Dialogfeld](../../media/owa-report-as-not-junk-dialog.png)|![Melden als Phishingdialogfeld](../../media/owa-report-as-phishing-dialog.png)|
-
-3. Die ausgewählten Nachrichten werden zur Analyse an Microsoft gesendet. Wenn Sie überprüfen möchten, ob die Nachrichten gesendet wurden, öffnen Sie den Ordner **Gesendete Objekte**, in dem die gesendeten Nachrichten angezeigt werden sollten.
 
 ## <a name="disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>Deaktivieren oder Aktivieren der Junk-E-Mail-Berichterstellung in Outlook im Web
 

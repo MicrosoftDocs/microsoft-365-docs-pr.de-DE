@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4883a4f04f06774d02aa0d942edc841867eb36b6
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 9e5f29874ae42f2b82906a5ac0d2e615009d499f
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499523"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615483"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>Proaktive Suche nach Bedrohungen mit erweiterter Suche
 
@@ -43,7 +43,8 @@ Sehen Sie sich dieses Video an, um einen schnellen Überblick über die erweiter
 Sie können die gleichen Abfragen für die Bedrohungssuche verwenden, um benutzerdefinierte Erkennungsregeln zu erstellen. Diese Regeln werden automatisch ausgeführt, um nach verdächtigen Sicherheitsverletzungen, falsch konfigurierten Computern und anderen Erkenntnissen zu suchen und darauf zu reagieren.
 
 >[!TIP]
->Verwenden [Sie die erweiterte Suche in Microsoft Threat Protection,](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview) um mithilfe von Daten von Defender for Endpoint, Microsoft Defender für Office 365, Microsoft Cloud App Security und Microsoft Defender for Identity nach Bedrohungen zu fahnen. [Microsoft 365 Defender aktivieren](https://docs.microsoft.com/microsoft-365/security/defender/mtp-enable)
+>Verwenden Sie die erweiterte Suche [in Microsoft 365 Defender,](/microsoft-365/security/defender/advanced-hunting-overview) um mithilfe von Daten von Defender for Endpoint, Microsoft Defender für Office 365, Microsoft Cloud App Security und Microsoft Defender for Identity nach Bedrohungen zu fahnen. [Aktivieren Sie Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).<br><br>
+Erfahren Sie mehr darüber, wie Sie Ihre erweiterten Suchworkflows von Microsoft Defender for Endpoint zu Microsoft 365 Defender in [Migrate advanced hunting queries from Microsoft Defender for Endpoint verschieben.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
 
 ## <a name="get-started-with-advanced-hunting"></a>Erste Schritte mit der erweiterten Suche
 

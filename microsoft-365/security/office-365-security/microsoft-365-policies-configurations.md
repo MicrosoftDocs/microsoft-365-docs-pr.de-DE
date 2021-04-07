@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 9d7170ff261a53ba5755134973a912221363b3c8
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 104ef919d356642985e7b34d16650c27a8141e86
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599807"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615099"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationen für den Identitäts- und Gerätezugriff
 
@@ -201,7 +201,7 @@ Microsoft empfiehlt, keine Richtliniensätze zu erstellen, die für alle Apps ge
 1. Konfigurieren sie erforderliche Identitätsfeatures und deren Einstellungen.
 2. Konfigurieren Sie die allgemeinen Identitäts- und Zugriffsrichtlinien für bedingten Zugriff.
 3. Konfigurieren sie Richtlinien für bedingten Zugriff für Gastbenutzer und externe Benutzer.
-4. Konfigurieren sie Richtlinien für bedingten Zugriff für Microsoft 365-Cloud-Apps wie Microsoft Teams, Exchange Online und SharePoint.
+4. Konfigurieren sie Richtlinien für bedingten Zugriff für Microsoft 365-Cloud-Apps, z. B. Microsoft Teams, Exchange Online und SharePoint, und Microsoft Cloud App Security-Richtlinien.
 
 Nachdem Sie den Identitäts- und Gerätezugriff konfiguriert haben, finden Sie im Azure AD-Featurebereitstellungshandbuch eine schrittweise Prüfliste mit zusätzlichen zu berücksichtigenden Features und [Azure AD Identity Governance](/azure/active-directory/governance/) zum Schützen, Überwachen und Überwachen des Zugriffs. [](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2)
 

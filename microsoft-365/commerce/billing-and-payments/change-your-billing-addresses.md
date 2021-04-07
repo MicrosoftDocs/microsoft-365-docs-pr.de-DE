@@ -12,34 +12,21 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
+- commerce
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Erfahren Sie, wie Sie Ihre Rechnungsadressen für Microsoft 365 for Business aktualisieren. Sie können auch die E-Mail-Adresse aktualisieren, an die Rechnungsbenachrichtigungen gesendet werden.
-ms.openlocfilehash: 816198f8ff79c7136add6ec33c84a7812daf2daa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5d6e9eac3ef1caccb2672bfc7f46e8e5b9ac3721
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911902"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615411"
 ---
 # <a name="change-your-billing-addresses"></a>Ändern der Rechnungsadressen
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Ihre Rechnung enthält drei Adressen:
   
@@ -50,30 +37,30 @@ Ihre Rechnung enthält drei Adressen:
 - **Dienstnutzungsadresse** Dies ist die Adresse, unter welcher der Dienst genutzt wird. Normalerweise ist diese Adresse mit der **Auftraggeberadresse** identisch. Wenn Ihre Organisation Remotebenutzer oder mehrere Niederlassungen hat, verwenden Sie die Adresse, an der sich die Mehrheit der Benutzer befindet.
 
 In den meisten Fällen sind diese Adressen identisch. Bei Bedarf können Sie eine oder mehrere Adressen ändern. Sie können auch eine alternative E-Mail-Adresse zum Empfang von Rechnungsbenachrichtigungen angeben, und die alternative E-Mail-Adresse für andere Administratoren ändern.
-  
-::: moniker range="o365-worldwide"
 
 Weitere Informationen zu Ihrer Rechnung finden Sie unter [Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md) und [Grundlegendes zu Ihrer Rechnung](understand-your-invoice2.md).
+
+## <a name="change-your-sold-to-address"></a>Ändern der Auftraggeberadresse
+
+::: moniker range="o365-worldwide"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Abrechnungskonten</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Weitere Informationen zu Ihrer Rechnung finden Sie unter [Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md) und [Grundlegendes zu Ihrer Rechnung](understand-your-invoice2.md).
+1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">im Admin Center</a>zur Seite  > **Abrechnungskonten.**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Wenn Sie Office 365, betrieben von 21Vianet in China verwenden, lesen Sie [Anzeigen Ihrer Rechnung oder Abrufen von Fapiaos für Office 365, betrieben von 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
+1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zur Seite  > **Abrechnungskonten.**
 
 ::: moniker-end
 
-## <a name="change-your-sold-to-address"></a>Ändern der Auftraggeberadresse
-
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Abrechnungskonten</a>.
-
-2. Wählen Sie **Ändern der Kontoinformationen** aus.
+2. Wählen **Sie Rechnungskontoinformationen bearbeiten aus.**
 
 3. Aktualisieren Sie die Informationen Ihrer Organisation, und wählen Sie dann **Speichern** aus.
   
@@ -83,82 +70,53 @@ Wenn Sie Office 365, betrieben von 21Vianet in China verwenden, lesen Sie [Anzei
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Zahlungsmethoden</a>.
 
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">im Admin Center</a>zur Seite **Abrechnung** > **zahlungsmethoden.**
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zur Seite **Abrechnung** > **zahlungsmethoden.**
+
+::: moniker-end
+
 2. Wählen Sie die Kreditkarte oder das Bankkonto aus, die bzw. das Sie ändern möchten.
 
 3. Wählen Sie auf der Seite **Details zur Zahlungsmethode** die Option **Bearbeiten** aus.
 
 4. Aktualisieren Sie Ihre Rechnungsadresse, und wählen Sie dann **Speichern** \> **Fertig** aus.
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-
-2. Wählen Sie das Abonnement aus, das Sie ändern möchten, und wählen Sie dann **Zahlungsdetails ändern** aus.
-
-    ![Abschnitt "Zahlungsmethode" einer Abonnementkarte für ein per Kreditkarte bezahltes Abonnement.](../../media/6c9d9cae-6086-4687-a979-bb971f35f1b4.png)
-  
-3. *Bankkonto- und Kreditkartenkunden:*  Wählen Sie auf der Seite **Zahlungsdetails ändern** die Kreditkarte oder das Bankkonto aus, die/das Sie aktualisieren möchten, wählen Sie **Details bearbeiten** aus, aktualisieren Sie Ihre Rechnungsadresse, und wählen Sie dann **Absenden** aus.
-  
-    > [!NOTE]
-    > Die Option zum Bezahlen über ein Bankkonto ist in einigen Ländern oder Regionen nicht verfügbar.
-
-     *Rechnungskunden:*  Aktualisieren Sie auf der Seite **Zahlungsdetails ändern** Ihre Rechnungsadresse, und wählen Sie dann **Absenden** aus.
-  
-    > [!NOTE]
-    > Die Möglichkeit, eine Rechnung per Scheck zu bezahlen, ist in einigen Ländern oder Regionen nicht verfügbar.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
-
-2. Wählen Sie das Abonnement aus, das Sie ändern möchten, und wählen Sie dann **Zahlungsdetails ändern** aus.
-
-    ![Abschnitt "Zahlungsmethode" einer Abonnementkarte für ein per Rechnung bezahltes Abonnement.](../../media/51ab38aa-6e15-4e51-9f27-261c38c98fed.png)
-  
-3. Aktualisieren Sie auf der Seite **Rechnungsdetails ändern** Ihre Rechnungsadresse, und wählen Sie dann **Absenden** aus.
-
-    Sie können die Zahlungsmethode für Office 365, betrieben von 21Vianet, von "Zahlung per Rechnung" auf "Onlinezahlung" (Alipay oder UnionPay China) ändern (und umgekehrt).
-
-::: moniker-end
-
 ## <a name="change-your-service-usage-address"></a>Ändern der Dienstnutzungsadresse
 
 ::: moniker range="o365-worldwide"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-2. Wählen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie ändern möchten.
-3. Wählen Sie auf der Seite mit den Abonnementdetails im Abschnitt **Dienstnutzungsadresse** die Option **Dienstnutzungsadresse bearbeiten** aus.
-4. Aktualisieren Sie im Bereich **Dienstnutzungsadresse bearbeiten** Ihre Adresse, und wählen Sie dann **Speichern** aus.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-
-2. Wählen Sie das Abonnement aus, das Sie ändern möchten, klicken Sie auf **Weitere Aktionen** und dann auf **Dienstnutzungsadresse bearbeiten**.
-
-    ![Nahansicht des Menüs "Weitere Aktionen".](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
-  
-3. Aktualisieren Sie im Bereich **Dienstnutzungsadresse bearbeiten** Ihre Adresse, und wählen Sie dann **Absenden** aus.
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Ihre Produkte</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ihre Produkte</a>.
 
-2. Wählen Sie das Abonnement aus, das Sie ändern möchten, klicken Sie auf **Weitere Aktionen** und dann auf **Dienstnutzungsadresse bearbeiten**.
-
-    ![Nahansicht des Menüs "Weitere Aktionen".](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
-  
-3. Aktualisieren Sie im Bereich **Dienstnutzungsadresse bearbeiten** Ihre Adresse, und wählen Sie dann **Absenden** aus.
+    Wenn Sie Office 365, betrieben von 21Vianet in China verwenden, lesen Sie [Anzeigen Ihrer Rechnung oder Abrufen von Fapiaos für Office 365, betrieben von 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
 ::: moniker-end
+
+2. Wählen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie ändern möchten.
+
+3. Wählen Sie auf der Seite mit den Abonnementdetails im Abschnitt **Dienstnutzungsadresse** die Option **Dienstnutzungsadresse bearbeiten** aus.
+
+4. Aktualisieren Sie im Bereich **Dienstnutzungsadresse bearbeiten** Ihre Adresse, und wählen Sie dann **Speichern** aus.
 
 ## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>Ändern der alternativen E-Mail-Adresse, an die Rechnungsbenachrichtigungen gesendet werden
 
@@ -177,9 +135,9 @@ Standardmäßig werden die Abrechnungsbenachrichtigungen für Ihre Organisation 
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>Ändern der alternativen E-Mail-Adresse für einen anderen Administrator
 
 Sie können auch die alternative E-Mail-Adresse anderer globaler Administratoren oder Rechnungsadministratoren in Ihrer Organisation ändern.
-
-::: moniker range="o365-worldwide"
   
+::: moniker range="o365-worldwide"
+
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Abrechnungsbenachrichtigungen</a>.
 
 ::: moniker-end
@@ -200,12 +158,9 @@ Sie können auch die alternative E-Mail-Adresse anderer globaler Administratoren
 
 3. Geben Sie im Feld **Benutzerrollen ändern** die zu verwendende alternative E-Mail-Adresse ein, und wählen Sie dann **Speichern** aus.
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md)
-
-[Erläuterungen zu Ihrer Rechnung](understand-your-invoice2.md)
-
-[Bezahlen Ihres Abonnements](pay-for-your-subscription.md)
-
+[Anzeigen Ihrer Rechnung oder Rechnung](view-your-bill-or-invoice.md)\
+[Verstehen Ihrer Rechnung oder Rechnung](understand-your-invoice2.md)\
+[Bezahlen Für Ihr Abonnement](pay-for-your-subscription.md)\
 [Abonnements und Abrechnung – Administratorhilfe](../index.yml)

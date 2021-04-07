@@ -22,44 +22,34 @@ search.appverid:
 - BEA160
 ms.assetid: 82ba88fa-ebdf-4d44-a7b3-cea82b25d71a
 ROBOTS: NOINDEX
-description: Informationen zum Hinzufügen von Lizenzen zu Ihrem Microsoft 365-Abonnement, das über den drittanbieterpartner erworben wurde und von Microsoft erkannt wurde.
-ms.openlocfilehash: 7670a7eb8fffbb3aef8cc3e20f2170c1b2674bd4
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Erfahren Sie, wie Sie Ihrem Microsoft 365-Abonnement Lizenzen hinzufügen, die über den Von Microsoft anerkannten Drittanbieterpartner erworben wurden.
+ms.openlocfilehash: 6a20955e83a05a46c1ac52c63dda374ec9d83f51
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638243"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615339"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>Hinzufügen von Lizenzen zu einem Abonnement, das über das Volume Licensing Service Center erworben wurde
 
-Wenn Sie Ihren Microsoft 365 Business-oder Office 365 Enterprise-Plan über einen Drittanbieter erworben haben, müssen Sie über diesen Partner zusätzliche Lizenzen erwerben. Wenn der Partner, bei dem Sie das Abonnement gekauft haben, Microsoft bekannt ist, können Sie anhand der folgenden Schritte herausfinden, wie Sie Kontakt mit ihm aufnehmen können.
-
-::: moniker range="o365-worldwide"
+Wenn Sie Ihren Microsoft 365 Business- oder Office 365 Enterprise-Plan über einen Drittanbieter erworben haben, müssen Sie zusätzliche Lizenzen über den Partner erwerben. Wenn der Partner, bei dem Sie das Abonnement gekauft haben, Microsoft bekannt ist, können Sie anhand der folgenden Schritte herausfinden, wie Sie Kontakt mit ihm aufnehmen können.
   
+::: moniker range="o365-worldwide"
+
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-
-2. Wählen Sie das Abonnement aus, dem Sie Lizenzen hinzufügen möchten, und wählen Sie dann den Link **Volume Licensing Service Center (VLSC)** aus.
-
-3. Folgen Sie den Schritten im VLSC, um den Kauf abzuschließen.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-
-2. Wählen Sie auf der Seite Abonnements das Abonnement aus, dem Sie Lizenzen hinzufügen möchten, und wählen Sie dann den Link **Volume Licensing Service Center (VLSC)** aus.
-
-3. Folgen Sie den Schritten im VLSC, um den Kauf abzuschließen. 
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Ihre Produkte</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ihre Produkte</a>.
+::: moniker-end
 
-2. Wählen Sie auf der Seite Abonnements das Abonnement aus, dem Sie Lizenzen hinzufügen möchten, und wählen Sie dann den Link **Volume Licensing Service Center (VLSC)** aus.
+2. Wählen Sie das Abonnement aus, dem Sie Lizenzen hinzufügen möchten, und wählen Sie dann den Link **Volume Licensing Service Center (VLSC)** aus.
 
 3. Folgen Sie den Schritten im VLSC, um den Kauf abzuschließen.
-
-::: moniker-end

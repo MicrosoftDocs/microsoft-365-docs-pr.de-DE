@@ -24,81 +24,31 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Verstehen Sie die Gründe, warum manchmal das Wechseln von Plänen manuell oder durch Aufrufen des Support erfolgen muss.
-ms.openlocfilehash: 0880337e4879c093119b98f4d0108ca65c17e705
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 41cc0511b1c04249a6c359054b2fdc829ca40713
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164461"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615327"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Warum kann ich microsoft 365 for Business-Pläne nicht wechseln?
 
-::: moniker range="o365-worldwide"
 > [!NOTE]
 > Dieser Artikel gilt für das alte Admin Center. Informationen zum Artikel über das Admin Center (Vorschau) finden Sie unter [Why can't I upgrade plans?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans). Die Vorschau ist für alle Microsoft 365-Administratoren verfügbar. Sie können sich dafür entscheiden, indem Sie die Option Vorschau probieren am oberen Rand der Startseite auswählen.  Weitere Informationen lesen Sie unter [Informationen zum neuen Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md).
-::: moniker-end
 
 Wenn die Schaltfläche Pläne wechseln nicht angezeigt **wird,** kann Ihr Plan nicht automatisch gewechselt werden. In einigen Fällen können Sie das Problem möglicherweise beheben,  sodass Sie die Schaltfläche Pläne [](switch-plans-manually.md)wechseln verwenden können, oder Sie können pläne stattdessen manuell wechseln. Positionieren Sie die Maus über das Infosymbol, um eine Meldung zu sehen, die erläutert, warum **die** Schaltfläche Pläne wechseln nicht verfügbar ist. Verwenden Sie die Informationen in diesem Artikel, um das Problem zu beheben.
-  
-::: moniker range="o365-worldwide"
 
  **Benötigen Sie etwas anderes?** [Kaufen eines anderen Abonnements](../try-or-buy-microsoft-365.md)  |  [Kündigen Ihres Abonnements](cancel-your-subscription.md)  |  [Abonnements und Abrechnung](../index.yml)  |  [Anrufunterstützung](../../admin/contact-support-for-business-products.md)
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- **Benötigen Sie etwas anderes?** [Kaufen eines anderen Abonnements](../try-or-buy-microsoft-365.md)  |  [Kündigen Ihres Abonnements](cancel-your-subscription.md)  |  [Abonnements und Abrechnung](../index.yml)  |  [Anrufunterstützung](../../admin/contact-support-for-business-products.md)
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
- **Benötigen Sie etwas anderes?** [Kaufen oder Testen von Abonnements für Office 365 betrieben von 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md)  |  [Kündigen Ihres Abonnements](cancel-your-subscription.md)  |  [Anrufunterstützung](../../admin/contact-support-for-business-products.md)
-
-::: moniker-end
 
 ## <a name="why-isnt-the-switch-plans-button-available-for-my-subscription"></a>Warum ist die Schaltfläche "Pläne wechseln" für mein Abonnement nicht verfügbar?
 
 ### <a name="you-cant-switch-subscriptions-now-because-you-have-more-users-than-licenses"></a>Sie können das Abonnement jetzt nicht wechseln, weil mehr Benutzer als Lizenzen vorhanden sind.
 
-::: moniker range="o365-worldwide"
-
 Damit die Schaltfläche **Pläne wechseln** zum automatischen Wechseln von Plänen verwendet werden kann, müssen allen Ihren Benutzern gültige Lizenzen zugewiesen worden sein. Wenn Sie mehr Lizenzen zugewiesen als erworben haben, werden Sie auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> in einer Warnung darüber informiert, dass ein Lizenzkonflikt vorliegt, der gelöst werden muss. [Hier finden Sie Informationen zum Lösen von Lizenzkonflikten](../../commerce/licenses/buy-licenses.md). Nachdem alle Lizenzkonflikte gelöst wurden, sollte die Schaltfläche **Pläne wechseln** angezeigt werden. Andern falls nicht, können Sie [Pläne manuell wechseln](switch-plans-manually.md)oder den Support [anrufen.](../../admin/contact-support-for-business-products.md)
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Damit die Schaltfläche **Pläne wechseln** zum automatischen Wechseln von Plänen verwendet werden kann, müssen allen Ihren Benutzern gültige Lizenzen zugewiesen worden sein. Wenn Sie mehr Lizenzen zugewiesen als erworben haben, werden Sie auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Lizenzen</a> in einer Warnung darüber informiert, dass ein Lizenzkonflikt vorliegt, der gelöst werden muss. [Hier finden Sie Informationen zum Lösen von Lizenzkonflikten](../../commerce/licenses/buy-licenses.md). Nachdem alle Lizenzkonflikte gelöst wurden, sollte die Schaltfläche **Pläne wechseln** angezeigt werden. Andern falls nicht, können Sie [Pläne manuell wechseln](switch-plans-manually.md)oder den Support [anrufen.](../../admin/contact-support-for-business-products.md)
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-Damit die Schaltfläche **Pläne wechseln** zum automatischen Wechseln von Plänen verwendet werden kann, müssen allen Ihren Benutzern gültige Lizenzen zugewiesen worden sein. Wenn Sie mehr Lizenzen zugewiesen als erworben haben, werden Sie auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Lizenzen</a> in einer Warnung darüber informiert, dass ein Lizenzkonflikt vorliegt, der gelöst werden muss. [Hier finden Sie Informationen zum Lösen von Lizenzkonflikten](../../commerce/licenses/buy-licenses.md). Nachdem alle Lizenzkonflikte gelöst wurden, sollte die Schaltfläche **Pläne wechseln** angezeigt werden. Andern falls nicht, können Sie [Pläne manuell wechseln](switch-plans-manually.md)oder den Support [anrufen.](../../admin/contact-support-for-business-products.md)
-
-::: moniker-end
 
 ### <a name="you-cant-switch-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Sie können das Abonnement jetzt nicht wechseln, weil dieses Abonnement nicht vollständig eingerichtet oder der Dienst nicht verfügbar ist.
 
-
-::: moniker range="o365-worldwide"
-
 Um zu sehen, ob Bereitstellungs- oder Dienstinte health-Probleme auftreten,  wechseln Sie im Admin Center zur Seite Dienstintegzustand, oder wählen Sie Integritätsdienstzustand <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a> \> **aus.**
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Um zu sehen, ob Bereitstellungs- oder Dienstinte health-Probleme auftreten, <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank"></a> wechseln Sie im Microsoft 365 Admin Center zur Seite Dienstinte health, oder wählen **Sie** \> **Integritätsdienstinteg. aus.**
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-Um zu sehen, ob Bereitstellungs- oder Dienstinte health-Probleme auftreten, <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank"></a> wechseln Sie im Microsoft 365 Admin Center zur Seite Dienstinte health, oder wählen **Sie** \> **Integritätsdienstinteg. aus.**
-
-::: moniker-end
 
 Wenn Sie feststellen, dass ein Dienst nicht vollständig bereitgestellt wurde, oder wenn ein Dienstintegritätsproblem vorliegt, warten Sie einige Stunden, bis der Dienst wieder zur Verfügung steht, und versuchen Sie es dann erneut. Wenn sie weiterhin ein Problem haben, rufen Sie [bitte den Support an.](../../admin/contact-support-for-business-products.md)
   
