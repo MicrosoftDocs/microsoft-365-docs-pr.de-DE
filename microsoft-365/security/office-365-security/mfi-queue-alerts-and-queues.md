@@ -12,12 +12,12 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Administratoren können erfahren, wie Sie das Widget Warteschlangen im Nachrichtenflussdashboard im Security & Compliance Center verwenden, um den erfolglosen Nachrichtenfluss über ausgehende Connectors an ihre lokalen oder Partnerorganisationen zu überwachen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14cadd0e8611fbbc65c3bdc9849beebf3a3eb34d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 65452b0ad7c31673c910ba48c9c6709995e563ce
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206944"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599983"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Einblicke in Warteschlangen im Security & Compliance Center
 

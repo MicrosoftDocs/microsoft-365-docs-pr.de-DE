@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Erfahren Sie, wie Sie eine Exchange Server für die Verwendung der hybriden modernen Authentifizierung (Hybrid Modern Authentication, HMA) konfigurieren und ihnen eine sicherere Benutzerauthentifizierung und -autorisierung bieten.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9393b457c219fb03ae2e8a35c3f795c324919f27
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e0a0e521f4ac81a8aa113b2e945045d31f2c1952
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579722"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599499"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Lokale Konfiguration von Exchange Server derart, dass die moderne Hybridauthentifizierung verwendet wird
 
@@ -65,6 +65,9 @@ Das Aktivieren von HMA bedeutet:
 ## <a name="make-sure-you-meet-all-the-prerequisites"></a>Stellen Sie sicher, dass alle Voraussetzungen erfüllt sind
 
 Da viele Voraussetzungen sowohl für Skype for Business als auch für Exchange üblich sind, lesen Sie die Übersicht über die moderne Hybridauthentifizierung und die Voraussetzungen für die Verwendung mit lokalen Skype for Business- und [Exchange-Servern.](hybrid-modern-auth-overview.md) Gehen Sie  *dazu vor,*  bevor Sie mit den Schritten in diesem Artikel beginnen.
+
+> [!NOTE]
+> Outlook Web App und die Exchange-Systemsteuerung funktionieren nicht mit der modernen Hybridauthentifizierung.
 
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Hinzufügen von lokalen Webdienst-URLs als SPNs in Azure AD
 
@@ -185,6 +188,8 @@ Wenn Sie ein lokaler Kunde sind, der den Exchange-Server unter TCP 443 verwendet
 52.125.128.0/20
 52.127.96.0/23
 ```
+
+Die Outlook-App für iOS und Android ist die beste Möglichkeit, Microsoft 365 oder Office 365 auf Ihrem mobilen Gerät mithilfe von Microsoft-Diensten zu nutzen, um Ihren täglichen Lebens- und Arbeitsalltag zu finden, zu planen und zu priorisieren. Weitere Informationen finden Sie unter [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019).
 
 ## <a name="related-topics"></a>Verwandte Themen
 

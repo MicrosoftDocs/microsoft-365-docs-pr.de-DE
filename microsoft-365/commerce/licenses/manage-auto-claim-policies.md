@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Richtlinien für automatische Ansprüche
+title: Verwalten von Richtlinien für automatischen Anspruch
 f1.keywords:
 - CSH
 ms.author: cmcatee
@@ -18,14 +18,14 @@ ms.custom:
 - commerce
 search.appverid:
 - MET150
-ms.openlocfilehash: bf3f79e425b3f7cd86f1a5ab95a337ef5127e345
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 001b612820bb13873ec18733d68828837fcecd78
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911471"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599451"
 ---
-# <a name="manage-auto-claim-policies"></a>Verwalten von Richtlinien für automatische Ansprüche
+# <a name="manage-auto-claim-policies"></a>Verwalten von Richtlinien für automatischen Anspruch
 
 Mit einer Richtlinie für automatische Ansprüche können Benutzer bei der ersten Anmeldung bei einer App automatisch eine Lizenz für ein Produkt beanspruchen. Als Administrator weisen Sie Benutzern in der Regel Lizenzen entweder manuell oder mithilfe der gruppenbasierten Lizenzierung zu. Mithilfe von Richtlinien für automatische Ansprüche verwalten Sie die Produkte, für die Benutzer automatisch Lizenzen beanspruchen können. Sie können auch steuern, von welchen Produkten diese Lizenzen stammen.
 
@@ -43,7 +43,7 @@ Nachdem Sie eine Richtlinie für automatische Ansprüche erstellt haben, können
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Sie müssen ein globaler Administrator sein, um Richtlinien für automatische Ansprüche zu erstellen und zu verwalten. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Microsoft 365](../../admin/add-users/about-admin-roles.md).
+Sie müssen ein globaler, Benutzer- oder Lizenzadministrator sein, um Richtlinien für automatische Ansprüche zu erstellen und zu verwalten. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Microsoft 365](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>Aktivieren oder Deaktivieren des Richtlinienfeatures für automatische Ansprüche
 
@@ -55,6 +55,8 @@ Standardmäßig ist das Feature für automatische Anspruchsrichtlinien deaktivie
 2. Wählen Sie in der Mitte der Seite die Schaltfläche Einstellung **aktivieren** aus.
 
 ### <a name="turn-off-auto-claim-policies"></a>Automatische Anspruchsrichtlinien deaktivieren
+
+Nur ein globaler Administrator kann eine Richtlinieneinstellung für automatische Ansprüche deaktivieren.
 
 1. Wechseln Sie im Admin Center zu **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Organisationseinstellungen</a>.
 2. Wählen Sie am unteren Rand der Tabelle die Option **Benutzereigene Apps und Dienste aus.**
@@ -76,7 +78,7 @@ Wenn Sie eine Richtlinie für automatische Ansprüche erstellen, können Sie ihr
 3. Geben Sie auf der Seite Diese Richtlinie für **automatischen** Anspruch benennen einen Namen für die Richtlinie ein, und wählen Sie **dann Weiter aus.**
 4. Wählen Sie **auf der Seite** App und Produkt für automatische Ansprüche festlegen eine App und das Abonnement aus, aus dem Lizenzen zugewiesen werden.
 5. Wenn Sie ein Sicherungsprodukt hinzufügen möchten, wählen Sie **Dieser** Richtlinie ein Sicherungsprodukt hinzufügen aus, und wählen Sie dann das Produkt aus der Liste aus.
-6. Wählen Sie **Weiter** aus.
+6. Klicken Sie auf **Weiter**.
 7. Löschen oder aktivieren Sie **auf** der Seite Apps auswählen die Felder für die Apps, die ausgeschlossen oder in die Lizenz mit einschließen werden, und wählen Sie dann **Weiter aus.**
 8. Wenn Sie ein oder mehrere Sicherungsprodukte hinzugefügt haben, wiederholen Sie Schritt 7 für jedes Produkt. Wechseln Sie andernfalls zu Schritt 9.
 9. Überprüfen Sie **auf der Seite** Überprüfen und Fertig stellen die neuen Richtlinieninformationen, nehmen Sie alle erforderlichen Änderungen vor, und wählen Sie dann Richtlinie erstellen **aus.**

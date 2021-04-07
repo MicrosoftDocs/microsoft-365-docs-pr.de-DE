@@ -20,12 +20,12 @@ description: Benutzern müssen berechtigungen im Microsoft 365 Security & Compli
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 16dbbe81d1131821dfdbf75caff5b5121f8cc45b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7cd36ac0dec20851a423acd58e5ad7d38cb65d93
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206304"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599923"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Freigeben des Benutzerzugriffs auf das Security & Compliance Center
 
@@ -80,7 +80,7 @@ Weitere Informationen zu den verschiedenen Berechtigungen, die Sie Benutzern im 
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
-Ausführliche Syntax- und Parameterprobleme finden Sie unter [Add-RoleGroupMember.](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember)
+Ausführliche Syntax- und Parameterprobleme finden Sie unter [Add-RoleGroupMember.](/powershell/module/exchange/add-rolegroupmember)
 
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 

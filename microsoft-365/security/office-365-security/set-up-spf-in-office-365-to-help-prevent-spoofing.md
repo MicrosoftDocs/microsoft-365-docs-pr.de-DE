@@ -19,12 +19,12 @@ ms.custom:
 description: Erfahren Sie, wie ein DNS-Eintrag (Domain Name Service) für die Verwendung von SPF (Sender Policy Framework) mit Ihrer benutzerdefinierten Domäne in Office 365 aktualisiert wird.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1aff62792be86b9c77430777c23edc655fe3bb9b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0a2c400e77c83fa61e276dee1d870835d466b5af
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204113"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599547"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Einrichten von SPF zum Verhindern von Spoofing
 
@@ -137,6 +137,6 @@ Erweiterte Beispiele, eine ausführlichere Erläuterung zur unterstützten SPF-S
 
  SPF ist dafür vorgesehen, Spoofing möglichst zu verhindern, es gibt aber Spoofing-Techniken, vor denen SPF nicht schützen kann. Um sich dagegen zu verteidigen, sollten Sie nach dem Einrichten von SPF auch DKIM und DMARC für Office 365 konfigurieren.
 
-Das Ziel der [DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide)-E-Mail-Authentifizierung ist es, nachzuweisen, dass der Inhalt der E-Mail nicht manipuliert wurde.
+Das Ziel der [DKIM](use-dkim-to-validate-outbound-email.md)-E-Mail-Authentifizierung ist es, nachzuweisen, dass der Inhalt der E-Mail nicht manipuliert wurde.
 
-Das Ziel der [DMARC](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)-E-Mail-Authentifizierung ist es, sicherzustellen, dass die SPF- und DKIM-Informationen mit der Absenderadresse übereinstimmen.
+Das Ziel der [DMARC](use-dmarc-to-validate-email.md)-E-Mail-Authentifizierung ist es, sicherzustellen, dass die SPF- und DKIM-Informationen mit der Absenderadresse übereinstimmen.

@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Benutzer können erfahren, wie sie Nachrichten in Quarantäne anzeigen und verwenden, die an freigegebene Postfächer gesendet wurden, für die sie über Berechtigungen verfügen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e3bf4c84e7a762f7f54f42ff61f0fbdb9dc1edd
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: cb915ad6ad6e6130d8704339559f4c370cef3a20
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215504"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599511"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Anzeigen und Veröffentlichen isolierter Nachrichten aus freigegebenen Postfächern
 
@@ -35,7 +35,7 @@ Zuvor mussten Administratoren die Möglichkeit, isolierte Nachrichten, die an ei
 
 Jetzt ist das automatischeMapping nicht mehr erforderlich, damit Benutzer isolierte Nachrichten verwalten können, die an freigegebene Postfächer gesendet wurden. Es funktioniert einfach. Es gibt zwei verschiedene Methoden für den Zugriff auf isolierte Nachrichten, die an ein freigegebenes Postfach gesendet wurden:
 
-- Wenn der Administrator Spambenachrichtigungen für Endbenutzer [in](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies) Antispamrichtlinien aktiviert hat, kann jeder Benutzer, der  Zugriff auf die Spambenachrichtigungen für Endbenutzer im freigegebenen Postfach hat, auf die Schaltfläche Überprüfen in der Benachrichtigung klicken, um im Security & Compliance Center in Quarantäne zu wechseln. Beachten Sie, dass diese Methode benutzern nur die Verwaltung isolierter Nachrichten ermöglicht, die an das freigegebene Postfach gesendet wurden. Benutzer können in diesem Kontext keine eigenen Quarantänenachrichten verwalten.
+- Wenn der Administrator Spambenachrichtigungen für Endbenutzer [in Antispamrichtlinien](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)aktiviert hat, kann jeder Benutzer, der  Zugriff auf die Spambenachrichtigungen für Endbenutzer im freigegebenen Postfach hat, auf die Schaltfläche Überprüfen in der Benachrichtigung klicken, um im Security & Compliance Center in Quarantäne zu wechseln. Beachten Sie, dass diese Methode benutzern nur die Verwaltung isolierter Nachrichten ermöglicht, die an das freigegebene Postfach gesendet wurden. Benutzer können in diesem Kontext keine eigenen Quarantänenachrichten verwalten.
 
 - Der Benutzer kann [zur Quarantäne im Security & Compliance Center wechseln.](find-and-release-quarantined-messages-as-a-user.md) Standardmäßig werden nur Nachrichten angezeigt, die an den Benutzer gesendet wurden. Der Benutzer kann jedoch die Sortierergebnisse **(standardmäßig** die Schaltfläche  **Nachrichten-ID)** in Empfänger-E-Mail-Adresse **ändern,** die E-Mail-Adresse des freigegebenen Postfachs eingeben und dann auf Aktualisieren klicken, um die isolierten Nachrichten zu sehen, die an das freigegebene Postfach gesendet wurden.
 
@@ -53,7 +53,7 @@ Unabhängig von der Methode können Benutzer Verwirrung vermeiden, indem sie die
 
 - In Bezug auf Quarantänevorgänge für freigegebene Postfächer wird empfohlen, wenn Sie geschachtelte Sicherheitsgruppen verwenden, um Zugriff auf ein freigegebenes Postfach zu gewähren, nicht mehr als zwei Ebenen von geschachtelten Gruppen. Beispielsweise ist Gruppe A ein Mitglied der Gruppe B, die Mitglied der Gruppe C ist. Wenn Sie einem freigegebenen Postfach Berechtigungen zuweisen möchten, fügen Sie den Benutzer nicht der Gruppe A hinzu, und weisen Sie dann Gruppe C dem freigegebenen Postfach zu.  
 
-- Zum Verwalten isolierter Nachrichten für das freigegebene Postfach in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)muss der Endbenutzer das [Cmdlet Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) mit freigegebener Postfach-E-Mail-Adresse für den Wert des _Parameters RecipientAddress_ verwenden, um die Nachrichten zu identifizieren. Zum Beispiel:
+- Zum Verwalten isolierter Nachrichten für das freigegebene Postfach in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)muss der Endbenutzer das [Cmdlet Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) mit freigegebener Postfach-E-Mail-Adresse für den Wert des _Parameters RecipientAddress_ verwenden, um die Nachrichten zu identifizieren. Beispiel:
 
   ```powershell
   Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com

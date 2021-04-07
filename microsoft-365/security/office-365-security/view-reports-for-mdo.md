@@ -20,12 +20,12 @@ description: Suchen und verwenden Sie Berichte für Microsoft Defender für Offi
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 28978dbca3f9e4039b4f8c21c49a2963802afa54
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0b3e1ddf48ccd74b36c594d232c6761b921dee8c
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205603"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599899"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Anzeigen von Defender for Office 365-Berichten im Dashboard "Berichte" im Security & Compliance Center
 
@@ -282,8 +282,8 @@ Der **Bericht zum Schutz** vor URL-Bedrohungen verfügt über zwei aggregierte A
 - **URL-Klickschutzaktion**: Zeigt die Anzahl der URL-Klicks von Benutzern in der Organisation und die Ergebnisse des Klicks an:
 
   - **Blockiert** (der Benutzer wurde an der Navigation zur URL blockiert)
-  - **Blockiert und durchklickt**
-  - **Während der Überprüfung durchklickt**
+  - **Blockiert und durchklickt** (der Benutzer hat sich entschieden, weiterhin zur URL zu navigieren)
+  - **Während der Überprüfung durchklickt** (der Benutzer hat auf den Link geklickt, bevor die Überprüfung abgeschlossen wurde)
 
   Ein Klick gibt an, dass der Benutzer über die Sperrseite zur schädlichen Website geklickt hat (Administratoren können das Klicken unter Richtlinien für sichere Links deaktivieren).
 

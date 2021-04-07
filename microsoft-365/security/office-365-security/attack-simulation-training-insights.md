@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Administratoren können erfahren, wie sich Das Training zur Angriffssimulation im Microsoft 365 Security Center auf Mitarbeiter auswirkt und Einblicke aus Simulations- und Schulungsergebnissen gewinnen.
 ms.technology: mdo
-ms.openlocfilehash: 93d8829f9fbc4271d33e3208e5564529b4022fc3
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0fcb88406558f73b587d8452375c33dbbec1c78b
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204077"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51600007"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Gewinnen Sie Erkenntnisse durch Angriffssimulationsschulungen
 
@@ -45,7 +45,7 @@ Klicken Sie auf Simulationen und Schulungseffizienzbericht anzeigen, um einen au
 
 Auf der [ **Registerkarte Simulationen**](https://security.microsoft.com/attacksimulator?viewid=simulations)finden Sie durch Auswählen einer Simulation die Simulationsdetails, in denen Sie den Abschnitt **Empfohlene Aktionen** finden.
 
-Im Abschnitt empfohlene Aktionen werden empfehlungen beschrieben, die in [Microsoft Secure Score verfügbar sind.](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) Diese Empfehlungen basieren auf der In der Simulation verwendeten Nutzlast und helfen Ihnen, Ihre Mitarbeiter und Ihre Umgebung zu schützen. Wenn Sie auf jede Verbesserungsaktion klicken, erfahren Sie mehr über die Details.
+Im Abschnitt empfohlene Aktionen werden empfehlungen beschrieben, die in [Microsoft Secure Score verfügbar sind.](../defender/microsoft-secure-score.md) Diese Empfehlungen basieren auf der In der Simulation verwendeten Nutzlast und helfen Ihnen, Ihre Mitarbeiter und Ihre Umgebung zu schützen. Wenn Sie auf jede Verbesserungsaktion klicken, erfahren Sie mehr über die Details.
 
 > [!div class="mx-imgBorder"]
 > ![Abschnitt "Empfehlungsaktionen" zum Training zur Angriffssimulation](../../media/attack-sim-preview-recommended-actions.png)

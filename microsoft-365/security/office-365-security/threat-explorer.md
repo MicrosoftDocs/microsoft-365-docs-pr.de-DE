@@ -19,12 +19,12 @@ description: Verwenden Sie Explorer und Echtzeiterkennungen im Security Complian
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c5935115d7496aca22c3941f34983cddebe7b46
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 7c601169d76fe92ac3038ccb25c5c50aa390f714
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570984"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599887"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Bedrohungs-Explorer und Echtzeiterkennungen
 
@@ -113,7 +113,7 @@ Tags-Informationen werden auch im Flyout "URL-Klicks" angezeigt. Wechseln Sie zu
 > [!div class="mx-imgBorder"]
 > ![URL-Tags](../../media/tags-urls.png)
 > 
-Weitere Informationen finden Sie in [diesem Video.](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4) 
+Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4) ansehen. 
 
 ## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>Verbesserungen bei der Bedrohungssuche (anstehender)
 
@@ -520,7 +520,7 @@ Zusätzlich zu den in diesem Artikel beschriebenen Szenarien stehen Ihnen mit Ex
 - [Anzeigen schädlicher Dateien in SharePoint Online, OneDrive und Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [Erhalten Sie eine Übersicht über die Ansichten im Bedrohungs-Explorer (und Echtzeiterkennungen)](threat-explorer-views.md)
 - [Threat Protection-Statusbericht](view-email-security-reports.md#threat-protection-status-report)
-- [Automatische Untersuchung und Reaktion in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)
+- [Automatische Untersuchung und Reaktion in Microsoft Threat Protection](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>Erforderliche Lizenzen und Berechtigungen
 

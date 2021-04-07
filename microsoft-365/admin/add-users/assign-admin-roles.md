@@ -27,14 +27,14 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Erfahren Sie, wie Sie einem Benutzer oder mehreren Benutzern in Ihrem Unternehmen Administratorrollen zuweisen, damit sie bestimmte Aufgaben im Admin Center ausführen können.
-ms.openlocfilehash: cfc4a7e106ca343435777aba1d0b9836f90a6f44
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5c40199823c93968be97302efc8e2d404f3cfed1
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904504"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604333"
 ---
-# <a name="assign-admin-roles"></a>Zuweisen von Administratorrollen
+# <a name="assign-admin-roles"></a>Administratorrollen zuweisen
 
 Wenn Sie die Person sind, die Ihr Microsoft Business-Abonnement erworben hat, sind Sie der globale Administrator. Dies bedeutet, dass Sie unbegrenzte Kontrolle über die Produkte in Ihren Abonnements haben und auf die meisten Daten zugreifen können.
 
@@ -48,7 +48,7 @@ Wenn Sie neue Benutzer hinzufügen und ihnen keine Administratorrolle zuweisen, 
 
 Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
 
-## <a name="assign-admin-roles"></a>Zuweisen von Administratorrollen 
+## <a name="assign-admin-roles"></a>Administratorrollen zuweisen 
 
 ::: moniker range="o365-worldwide"
 
@@ -59,7 +59,7 @@ Sie können einer Rolle auf 2 unterschiedliche Weise Benutzer zuweisen:
 
 ### <a name="assign-admin-roles-to-users-using-roles"></a>Zuweisen von Administratorrollen zu Benutzern mithilfe von Rollen
 
-1. Wechseln Sie im Admin  Center zu Rollenrollen, um alle für Ihre Organisation verfügbaren >  Administratorrollen anzeigen zu können.
+1. Wechseln Sie im Admin Center zu **Rollen**. Wählen Sie **die Registerkarten Azure AD** oder **Intune** aus, um die für Ihre Organisation verfügbaren Administratorrollen anzeigen zu können.
 2. Wählen Sie die Administratorrolle aus, der Sie den Benutzer zuweisen möchten.
 3. Wählen **Sie Zugewiesene Administratoren** Hinzufügen > **aus.**
 4. Geben Sie den **Anzeigenamen oder** Benutzernamen des Benutzers **ein,** und wählen Sie dann den Benutzer aus der Liste der Vorschläge aus.
@@ -70,7 +70,7 @@ Sie können einer Rolle auf 2 unterschiedliche Weise Benutzer zuweisen:
 
 1. Wechseln Sie im Admin Center zu **Seite Aktive** > [Benutzer.](https://go.microsoft.com/fwlink/p/?linkid=834822)
 
-2. Wählen Sie **auf der Seite** Aktive Benutzer den Benutzer aus, dessen Administratorrolle Sie ändern möchten. Wählen Sie im Flyoutbereich neben **Rollen** die Option Rollen **verwalten aus.**
+2. Wählen Sie **auf der Seite** Aktive Benutzer den Benutzer aus, dessen Administratorrolle Sie ändern möchten. Wählen Sie im Flyoutbereich unter **Rollen** die Option Rollen **verwalten aus.**
 
 3. Wählen Sie die Administratorrolle aus, die Sie dem Benutzer zuweisen möchten. Wenn die gesuchte Rolle nicht angezeigt wird, wählen Sie **am** Ende der Liste Alle anzeigen aus.
 

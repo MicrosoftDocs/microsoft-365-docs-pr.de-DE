@@ -5,6 +5,7 @@ author: MicrosoftHeidi
 manager: serdars
 ms.prod: m365-security
 ms.topic: article
+audience: Admin
 f1.keywords:
 - NOCSH
 ms.author: heidip
@@ -19,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 51dec80c541cd77a1d4813505d82429487e8381c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 52e6709d18bd5ecbc91755a6c0e7be336d346f0c
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206434"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599603"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Richtlinienempfehlungen zum Schützen von Teams-Chats, -Gruppen und -Dateien
 

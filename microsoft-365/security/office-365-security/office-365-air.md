@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1460deef11a87044530c54c8b10637284829a0cd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6dfa22b2afb33c318eae8937888b5b75a1742938
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206681"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599463"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatisierte Untersuchung und Reaktion (AIR) in Microsoft Defender für Office 365
 
@@ -81,11 +81,9 @@ Air-Funktionen sind in [Microsoft Defender für Office 365](defender-for-office-
 - [Richtlinien für Antischadsoftware](protect-against-threats.md#part-1---anti-malware-protection)
 - [Schutz vor Phishing](protect-against-threats.md#part-2---anti-phishing-protection)
 - [Antispamschutz](protect-against-threats.md#part-3---anti-spam-protection)
-- [Schutz vor Phishing](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-2---anti-phishing-protection)
-- [Antispamschutz](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-3---anti-spam-protection)
-- [Sichere Links und sichere Anlagen](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
-- [Sichere Anlagen für SharePoint, OneDrive und Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
-- [Automatisches Löschen von E-Mails in null Stunden](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop)
+- [Sichere Links und sichere Anlagen](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [Sichere Anlagen für SharePoint, OneDrive und Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
+- [Automatisches Löschen von E-Mails in null Stunden](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
 
 Überprüfen Sie außerdem die Warnungsrichtlinien Ihrer [Organisation,](../../compliance/alert-policies.md)insbesondere die Standardrichtlinien in der Kategorie [Bedrohungsverwaltung.](../../compliance/alert-policies.md#default-alert-policies)
 
@@ -94,7 +92,7 @@ Air-Funktionen sind in [Microsoft Defender für Office 365](defender-for-office-
 Microsoft 365 bietet viele integrierte Warnungsrichtlinien, mit denen Missbrauch von Exchange-Administratorberechtigungen, Schadsoftwareaktivitäten, potenzielle externe und interne Bedrohungen und Risiken der Informationsverwaltung identifiziert werden können. Mehrere der [Standardmäßigen Warnungsrichtlinien können](../../compliance/alert-policies.md#default-alert-policies) automatisierte Untersuchungen auslösen. In der folgenden Tabelle werden die Warnungen beschrieben, die automatisierte Untersuchungen auslösen, ihren Schweregrad im Microsoft 365 Security Center und deren Generierung:
 
 |Warnung|Severity|So wird die Warnung generiert|
-|:---|:---|:---|
+|---|---|---|
 |Ein potenziell schädlicher URL-Klick wurde erkannt.|**High**|Diese Warnung wird generiert, wenn eine der folgenden Schritte auftritt: <ul><li>Ein durch sichere [Links](safe-links.md) in Ihrer Organisation geschützter Benutzer klickt auf einen schädlichen Link.</li><li>Diktieränderungen für URLs werden von Microsoft Defender für Office 365 identifiziert</li><li>Benutzer überschreiben Warnseiten für sichere Links (basierend auf der Richtlinie für sichere Links in [Ihrer Organisation).](set-up-safe-links-policies.md)</li></ul> <p> Weitere Informationen zu Ereignissen, die diese Warnung auslösen, finden Sie unter [Set up Safe Links policies](set-up-safe-links-policies.md).|
 |Eine E-Mail-Nachricht wird von einem Benutzer als Schadsoftware oder Phishing gemeldet.|**Informational**|Diese Warnung wird generiert, wenn Benutzer in Ihrer Organisation Nachrichten mithilfe des [Berichtsnachrichten-Add-Ins](enable-the-report-message-add-in.md) oder [des Phishing-Add-Ins melden als Phishing-E-Mail melden.](enable-the-report-phish-add-in.md)|
 |E-Mail-Nachrichten, die Schadsoftware enthalten, werden nach der Zustellung entfernt|**Informational**|Diese Warnung wird generiert, wenn E-Mail-Nachrichten, die Schadsoftware enthalten, an Postfächer in Ihrer Organisation zugestellt werden. Wenn dieses Ereignis auftritt, entfernt Microsoft die infizierten Nachrichten aus Exchange Online-Postfächern mithilfe der automatischen [Null-Stunden-Bereinigung](zero-hour-auto-purge.md).|
@@ -113,7 +111,7 @@ Berechtigungen werden über bestimmte Rollen erteilt, z. B. über die in der fol
 |Aufgabe|Erforderliche Rollen|
 |---|---|
 |Einrichten von AIR-Features|Eine der folgenden Rollen: <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li></ul> <p> Diese Rollen können in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im Security & Compliance Center zugewiesen [werden.](permissions-in-the-security-and-compliance-center.md)|
-|Starten einer automatisierten Untersuchung <p> --- oder --- <p> Genehmigen oder Ablehnen empfohlener Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im Security & Compliance Center zugewiesen [sind:](permissions-in-the-security-and-compliance-center.md) <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li><li>Sicherheitsoperator</li><li>Sicherheitsleseberechtigter <br> --- und --- </li><li>Suchen und Löschen (diese Rolle wird nur im [Security & Compliance Center zugewiesen.](permissions-in-the-security-and-compliance-center.md) Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und der neuen Rollengruppe die Rolle Suchen und Löschen hinzufügen.</li></ul>|
+|Beginnen einer automatische Untersuchung <p> --- oder --- <p> Genehmigen oder Ablehnen empfohlener Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im Security & Compliance Center zugewiesen [sind:](permissions-in-the-security-and-compliance-center.md) <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li><li>Sicherheitsoperator</li><li>Sicherheitsleseberechtigter <br> --- und --- </li><li>Suchen und Löschen (diese Rolle wird nur im [Security & Compliance Center zugewiesen.](permissions-in-the-security-and-compliance-center.md) Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und der neuen Rollengruppe die Rolle Suchen und Löschen hinzufügen.</li></ul>|
 
 ## <a name="required-licenses"></a>Erforderliche Lizenzen
 
@@ -122,7 +120,6 @@ Berechtigungen werden über bestimmte Rollen erteilt, z. B. über die in der fol
 - Sicherheitsadministratoren (einschließlich globaler Administratoren)
 - Das Sicherheitsteam Ihrer Organisation (einschließlich Sicherheitsleser und Personen mit der Rolle **Suchen und** Löschen)
 - Endbenutzer
-
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>Änderungen werden in Kürze in Ihrem Security Center vorgenommen
 
@@ -152,9 +149,9 @@ In der folgenden Tabelle sind Änderungen und Verbesserungen aufgeführt, die ai
 |**Registerkarte Entitäten**|Die **Registerkarte Entitäten** verfügt über eine Tab-in-Tab-Formatvorlage, die eine Gesamtzusammenfassungsansicht und die Möglichkeit zum Filtern nach Entitätstyp enthält. Die **Registerkarte Entitäten** enthält nun **zusätzlich** zur Option Öffnen im Explorer eine Option Zum **Aufsuchen** gehen. Sie können jetzt entweder den [Bedrohungs-Explorer](threat-explorer.md) oder die [erweiterte Suche](../defender-endpoint/advanced-hunting-overview.md) verwenden, um Entitäten und Bedrohungen zu finden und nach Ergebnissen zu filtern.|
 |**Registerkarte "Aktionen"**|Die Registerkarte **Aktionen aktualisiert** enthält jetzt eine **Registerkarte Ausstehende Aktionen** und eine Registerkarte **Aktionen-Verlauf.** Aktionen können in einem Seitenbereich genehmigt (oder abgelehnt) werden, der geöffnet wird, wenn Sie eine ausstehende Aktion auswählen.|
 |**Registerkarte "Nachweis"**|Eine neue **Registerkarte Nachweis** zeigt die wichtigsten Entitätsbefunde im Zusammenhang mit Aktionen. Aktionen im Zusammenhang mit den einzelnen Nachweisen können in einem Seitenbereich genehmigt (oder abgelehnt) werden, der geöffnet wird, wenn Sie eine ausstehende Aktion auswählen.|
-|**Info-Center**|Das aktualisierte **Aktionscenter** ( ) führt ausstehende und abgeschlossene Aktionen über E-Mails, [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) Geräte und Identitäten hinweg zusammen. Weitere Informationen finden Sie unter Action Center. (Weitere Informationen finden Sie unter [The Action Center](https://docs.microsoft.com/microsoft-365/security/defender/mtp-action-center).)
-|**Seite "Vorfälle"**|Die **Seite Vorfälle** korreliert nun mehrere Untersuchungen, um eine bessere konsolidierte Ansicht der Untersuchungen zu bieten. ([Weitere Informationen zu Vorfällen](https://docs.microsoft.com/microsoft-365/security/defender/incidents-overview).)
-
+|**Info-Center**|Das aktualisierte **Aktionscenter** ( ) führt ausstehende und abgeschlossene Aktionen über E-Mails, [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) Geräte und Identitäten hinweg zusammen. Weitere Informationen finden Sie unter Action Center. (Weitere Informationen finden Sie unter [The Action Center](../defender/m365d-action-center.md).)|
+|**Seite "Vorfälle"**|Die **Seite Vorfälle** korreliert nun mehrere Untersuchungen, um eine bessere konsolidierte Ansicht der Untersuchungen zu bieten. ([Weitere Informationen zu Vorfällen](../defender/incidents-overview.md).)|
+|
 
 ## <a name="next-steps"></a>Nächste Schritte
 

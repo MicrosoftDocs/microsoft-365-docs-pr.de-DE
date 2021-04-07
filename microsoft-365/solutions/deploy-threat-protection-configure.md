@@ -1,12 +1,13 @@
 ---
 title: Schritte zum Konfigurieren von Bedrohungsschutzfunktionen in Microsoft 365
-description: Erfahren Sie, wie Sie Bedrohungsschutzdienste und -funktionen in Microsoft 365 E5 bereitstellen.
+description: Verwenden Sie diesen Artikel als Leitfaden für die Implementierung Ihrer Lösung zum Schutz vor Bedrohungen. Erfahren Sie, wie Sie Bedrohungsschutzdienste und -funktionen in Microsoft 365 E5 bereitstellen.
+keywords: Sicherheit, Setup, Konfiguration, Microsoft 365 E5, erweiterter Bedrohungsschutz
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.prod: m365-security
 ms.technology: m365d
 localization_priority: Normal
@@ -16,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: bd7c98f5888f8dc93a8aa341b186ea744d5b2882
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 925c62e1c6201c54fcf09d0dd98b06906d9e057f
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199933"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599863"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Konfigurieren von Bedrohungsschutzfunktionen in Microsoft 365
 
@@ -30,7 +31,7 @@ Führen Sie die folgenden Schritte aus, um den Bedrohungsschutz in Microsoft 365
 
 ## <a name="step-1-set-up-multi-factor-authentication-and-conditional-access-policies"></a>Schritt 1: Einrichten von mehrstufiger Authentifizierung und Richtlinien für bedingten Zugriff
 
-[Die mehrstufige Authentifizierung (Multi-Factor Authentication,](/azure/active-directory/authentication/concept-mfa-howitworks) MFA) erfordert, dass Benutzer ihre Identität mit einem Telefonanruf oder einer Authentifizierungs-App überprüfen. [Richtlinien für bedingten](/azure/active-directory/conditional-access/overview) Zugriff definieren bestimmte Anforderungen, die erfüllt sein müssen, damit Benutzer auf Apps und Daten in Microsoft 365 zugreifen können. MFA- und Conditional Access-Richtlinien arbeiten zusammen, um Ihre Organisation zu schützen. Wenn beispielsweise jemand versucht, sich über ein für MFA nicht aktiviertes Konto von einem mobilen Gerät aus zu registrieren, und eine Richtlinie für bedingten Zugriff erfordert, dass MFA wirksam ist, kann sich dieser Benutzer nicht anmelden.  
+[Für die mehrstufige Authentifizierung (Multi-Factor Authentication,](/azure/active-directory/authentication/concept-mfa-howitworks) MFA) müssen Benutzer ihre Identität mit einem Telefonanruf oder einer Authentifizierungs-App überprüfen. [Richtlinien für bedingten](/azure/active-directory/conditional-access/overview) Zugriff definieren bestimmte Anforderungen, die erfüllt sein müssen, damit Benutzer auf Apps und Daten in Microsoft 365 zugreifen können. MFA- und Conditional Access-Richtlinien arbeiten zusammen, um Ihre Organisation zu schützen. Wenn beispielsweise jemand versucht, sich über ein für MFA nicht aktiviertes Konto von einem mobilen Gerät aus zu registrieren, und eine Richtlinie für bedingten Zugriff erfordert, dass MFA wirksam ist, kann sich dieser Benutzer nicht anmelden.  
 
 Microsoft hat einen bestimmten Satz bedingten Zugriffs und zugehörige Richtlinien zum Schutz des Zugriffs auf alle Ihre SaaS-Anwendungen getestet und empfohlen, insbesondere Microsoft 365. Richtlinien werden für grundlegenden, vertraulichen und streng regulierten Schutz empfohlen. Implementieren Sie zunächst die Richtlinien für den Basisschutz. 
 
@@ -53,7 +54,7 @@ Microsoft hat einen bestimmten Satz bedingten Zugriffs und zugehörige Richtlini
 
 ## <a name="step-2-configure-microsoft-defender-for-identity"></a>Schritt 2: Konfigurieren von Microsoft Defender for Identity
 
-[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) ist eine cloudbasierte Sicherheitslösung, die mit Ihren lokalen Active Directory Domain Services (AD DS)-Signalen arbeitet, um erweiterte Bedrohungen, gefährdete Identitäten und böswillige Insideraktionen zu identifizieren, zu erkennen und zu untersuchen, die auf Ihre Organisation gerichtet sind.
+[Microsoft Defender for Identity](/defender-for-identity/what-is) ist eine cloudbasierte Sicherheitslösung, die mit Ihren lokalen Active Directory Domain Services (AD DS)-Signalen arbeitet, um erweiterte Bedrohungen, gefährdete Identitäten und böswillige Insideraktionen zu identifizieren, zu erkennen und zu untersuchen, die auf Ihre Organisation gerichtet sind.
 
 Microsoft Defender for Identity ermöglicht SecOps(Security Operations) Analysten und Sicherheitsexperten, die fortgeschrittene Angriffe in Hybridumgebungen erkennen müssen, um:
 - Überwachen Sie Benutzer, Entitätsverhalten und Aktivitäten mit lernbasierten Analysen.
@@ -79,7 +80,7 @@ Microsoft Defender for Identity ermöglicht SecOps(Security Operations) Analyste
 
 [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md) kombiniert Signale und orchestriert Funktionen in einer einzigen Lösung. Mit der integrierten Microsoft 365 Defender-Lösung können Sicherheitsexperten die Bedrohungssignale, die jedes dieser Produkte erhält, zusammenbringen und den vollständigen Umfang und die Auswirkungen der Bedrohung bestimmen. Wie sie in die Umgebung eintrat, welche Auswirkungen sie hat und wie sie sich derzeit auf die Organisation auswirken. Microsoft 365 Defender ergreift automatische Maßnahmen, um den Angriff zu verhindern oder zu beenden und betroffene Postfächer, Endpunkte und Benutzeridentitäten selbst zu beenden.
 
-Microsoft 365 Defender vereint Warnungen, Vorfälle, automatisierte Untersuchung und Reaktion sowie erweiterte Suche über Arbeitslasten hinweg (Microsoft Defender for Identity, Microsoft Defender für Office 365, Microsoft Defender for Endpoint und Microsoft Cloud App Security) in einem einzigen Bereich mit glasbasierter Erfahrung. Nachdem Sie einen oder mehrere Ihrer Defender for Office 365-Dienste konfiguriert haben, aktivieren Sie Microsoft 365 Defender. Neue Features werden ständig zu Microsoft 365 Defender hinzugefügt. Erwägen Sie, sich für den Erhalt von Vorschaufeatures zu entscheiden.
+Microsoft 365 Defender vereint Warnungen, Vorfälle, automatisierte Untersuchung und Reaktion sowie erweiterte Suche über Arbeitslasten hinweg (Microsoft Defender for Identity, Microsoft Defender für Office 365, Microsoft Defender for Endpoint und Microsoft Cloud App Security) in einem einzigen Bereich mit glasbasierter Erfahrung. Neue Features werden ständig zu Microsoft 365 Defender hinzugefügt. Erwägen Sie, sich für den Erhalt von Vorschaufeatures zu entscheiden.
 
 ### <a name="to-set-up-microsoft-365-defender"></a>So richten Sie Microsoft 365 Defender ein
 
@@ -161,7 +162,7 @@ Nachdem Sie Ihre Bedrohungsschutzdienste und -funktionen eingerichtet und bereit
 
 ![Microsoft 365 Security Center](../media/solutions-architecture-center/m365-security-center.png)
 
-Das Microsoft 365 Security Center ist speziell für Sicherheitsadministratoren und Sicherheitsbetriebsteams vorgesehen. Im Microsoft 365 Security Center können Sie:
+Das Microsoft 365 Security Center richtet sich an Sicherheitsadministratoren und Sicherheitsbetriebsteams. Im Microsoft 365 Security Center können Sie:
 - Zeigen Sie den allgemeinen Sicherheitszustand Ihrer Organisation mit [Secure Score an.](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score)
 - [Überwachen und anzeigen Sie Berichte](https://docs.microsoft.com/microsoft-365/security/defender/monitoring-and-reporting) über den Status Ihrer Identitäten, Daten, Geräte, Apps und Infrastruktur.
 - Verbinden Sie die Punkte bei Warnungen über [Vorfälle](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue).
@@ -187,7 +188,7 @@ Microsoft 365 stellt die folgenden Ressourcen zur Verfügung, um Benutzer in Ihr
 |Konzept  |Ressourcen  |
 |---------|---------|
 |Microsoft 365     |[Anpassbare Lernpfade](/office365/customlearning/) <p>Diese Ressourcen können Ihnen helfen, Schulungen für Endbenutzer in Ihrer Organisation zusammen zu stellen.        |
-|Microsoft 365 Security Center |[Lernmodul: Sichern Ihrer Organisation mit integrierter, intelligenter Sicherheit von Microsoft 365](/learn/modules/security-with-microsoft-365) <p>In diesem Modul können Sie beschreiben, wie Microsoft 365-Sicherheitsfeatures zusammenarbeiten und die Vorteile dieser Sicherheitsfeatures erläutern. |
+|Microsoft 365 Security |[Lernmodul: Sichern Ihrer Organisation mit integrierter, intelligenter Sicherheit von Microsoft 365](/learn/modules/security-with-microsoft-365) <p>In diesem Modul können Sie beschreiben, wie Microsoft 365-Sicherheitsfeatures zusammenarbeiten und die Vorteile dieser Sicherheitsfeatures erläutern. |
 |Mehrstufige Authentifizierung     | [Zweistufige Überprüfung: Was ist die zusätzliche Überprüfungsseite?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Dieser Artikel hilft Endbenutzern zu verstehen, was die mehrstufige Authentifizierung ist und warum sie in Ihrer Organisation verwendet wird.    |
 
 Zusätzlich zu dieser Anleitung empfiehlt Microsoft, dass Ihre Benutzer die in diesem Artikel beschriebenen Aktionen ausführen: Schützen Sie Ihr Konto und Ihre Geräte [vor Hackern und Schadsoftware.](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx) Diese setzen sich wie folgt zusammen:
