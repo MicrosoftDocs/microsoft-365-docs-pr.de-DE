@@ -115,6 +115,8 @@
 ##### [Kontrollierte Ordnerzugriff aktivieren](enable-controlled-folders.md)
 ##### [Kontrollierte Ordnerzugriff anpassen](customize-controlled-folders.md)
 
+### [Netzwerkgeräte](network-devices.md)
+
 ### [Microsoft Defender für Endpunkt für Mac]()
 #### [Übersicht über Microsoft Defender für Endpunkt für Mac](microsoft-defender-endpoint-mac.md)
 #### [Neuerungen](mac-whatsnew.md)
