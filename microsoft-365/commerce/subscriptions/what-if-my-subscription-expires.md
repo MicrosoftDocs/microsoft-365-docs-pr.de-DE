@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Hier erfahren Sie, was mit Ihren Daten geschieht, wenn Ihr Microsoft 365-Abonnement abläuft, deaktiviert wird oder Sie es kündigen.
-ms.openlocfilehash: 7560e715a9b1951915866f96c8df3bd1f884a475
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ee83e237d17dc2de60b08b8d4dbdc46c98fc8251
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921816"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615399"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Microsoft 365 Business-Abonnement endet?
 
@@ -66,15 +66,13 @@ Dies können Sie für sich und Ihre Benutzer erwarten, wenn Sie ein Abonnement k
 Wenn Sie sich über das Kündigen informieren möchten, lesen Sie [Kündigen Ihres Abonnements](cancel-your-subscription.md).
   
 > [!IMPORTANT]
-> Wenn Sie möchten, dass Ihre Abonnementdaten vor Ablauf des typischen "Deaktiviert"-Zeitraums gelöscht werden, können Sie [Ihr Konto schließen](../close-your-account.md).
+> Wenn Sie möchten, dass Ihre Abonnementdaten vor Ablauf des typischen "Deaktiviert"-Stadiums gelöscht werden, können Sie [Ihr Konto schließen](../close-your-account.md).
   
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>Welche Möglichkeiten habe ich, wenn mein Abonnement bald abläuft?
 
 Während Ihr Abonnement aktiv ist, verfügen Sie und ihre Endbenutzer über normalen Zugriff auf Ihre Daten, Dienste wie E-Mail und OneDrive for Business sowie Office-Anwendungen. Wenn sich Ihr Abonnement dem Ablaufdatum nähert, erhalten Sie als Administrator per E-Mail und im Admin Center eine Reihe entsprechender Benachrichtigungen.
   
 Bevor das Abonnement tatsächlich sein Laufzeit-Enddatum erreicht, haben Sie ein paar Möglichkeiten:
-
-::: moniker range="o365-worldwide"
   
 - **Aktivieren der wiederkehrenden Abrechnung für das Abonnement**
 
@@ -92,100 +90,29 @@ Bevor das Abonnement tatsächlich sein Laufzeit-Enddatum erreicht, haben Sie ein
 
   - Wenn Sie ein Open-Volumenlizenzkunde sind, der mit einem Partner zusammenarbeitet, können Sie Ihr Abonnement ablaufen lassen, indem Sie keine Maßnahme ergreifen.
 
-  - Wenn Sie ein Office 365 Small Business Premium-Kunde sind und Office 365 im Voraus bezahlt und mit einem Product Key aktiviert haben, können Sie Ihr Abonnement ablaufen lassen, ohne eine Maßnahme zu ergreifen.
-
-- **Kündigen vor Ablauf des Abonnements** Weitere Informationen hierzu finden Sie unter [Kündigen Ihres Abonnements](cancel-your-subscription.md).
-  
-::: moniker-end
-
-::: moniker range="o365-germany"
-  
-- **Verwalten der wiederkehrenden Abrechnung für das Abonnement.**
-
-  - Wenn die **wiederkehrende Abrechnung** bereits aktiviert ist, müssen Sie nichts tun. Ihr Abonnement wird automatisch abgerechnet, und Ihnen wird – je nach Ihrer aktuellen Zahlungshäufigkeit – ein weiteres Jahr oder ein weiterer Monat in Rechnung gestellt. Wenn Sie die **wiederkehrende Abrechnung** aus irgendeinem Grund deaktiviert haben, [können Sie sie jederzeit wieder aktivieren](renew-your-subscription.md).
-
-  - Wenn Sie Microsoft 365 Apps for Business mit einer Prepaidkarte erworben haben, können Sie die [wiederkehrende Abrechnung für Ihr Abonnement aktivieren](renew-your-subscription.md).
-
-  - Wenn Sie ein Open-Volumenlizenzkunde mit einem im Voraus bezahlten Jahresabonnement sind, wenden Sie sich an Ihren Partner, um einen neuen Product Key zu erwerben. Sie erhalten dann per E-Mail Anweisungen zum Aktivieren Ihres Product Keys im [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). Informationen zum Suchen nach einem neuen Partner oder dem Partner, mit dem Sie in der Vergangenheit zusammengearbeitet haben, finden Sie unter [Suchen nach Ihrem Partner oder Händler](../../admin/manage/find-your-partner-or-reseller.md).
-
-  - Wenn Sie Microsoft 365 Apps for Business verwenden, lesen Sie [Erneuern Ihres Abonnement](renew-your-subscription.md).
-
-- **Das Abonnement ablaufen lassen**
-
-  - Wenn Sie per Kreditkarte oder Rechnung bezahlen und Ihr Abonnement nicht verlängern möchten, [deaktivieren Sie die wiederkehrende Abrechnung](renew-your-subscription.md). Ihr Abonnement läuft am Ablaufdatum ab, und Sie können alle in diesem Zusammenhang empfangenen E-Mail-Benachrichtigungen ignorieren.
-
-  - Wenn Sie ein Open-Volumenlizenzkunde sind, der mit einem Partner zusammenarbeitet, können Sie Ihr Abonnement ablaufen lassen, indem Sie keine Maßnahme ergreifen.
-
-  - Wenn Sie ein Office 365 Small Business Premium-Kunde sind und Office 365 im Voraus bezahlt und mit einem Product Key aktiviert haben, können Sie Ihr Abonnement ablaufen lassen, ohne eine Maßnahme zu ergreifen.
-
-- **Kündigen vor Ablauf des Abonnements** Weitere Informationen hierzu finden Sie unter [Kündigen Ihres Abonnements](cancel-your-subscription.md).
-  
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-  
-- **Verlängern des Abonnements.** Wenn die **wiederkehrende Abrechnung** bereits aktiviert ist, müssen Sie nichts tun. Ihr Abonnement wird automatisch abgerechnet, und Ihnen wird – je nach Ihrer aktuellen Zahlungshäufigkeit – ein weiteres Jahr oder ein weiterer Monat in Rechnung gestellt. Wenn Sie die **wiederkehrende Abrechnung** aus irgendeinem Grund deaktiviert haben, [können Sie sie jederzeit wieder aktivieren](renew-your-subscription.md).
-
-- **Das Abonnement ablaufen lassen** Wenn Sie per Kreditkarte oder Rechnung bezahlen und Ihr Abonnement nicht verlängern möchten, [deaktivieren Sie die wiederkehrende Abrechnung](renew-your-subscription.md). Ihr Abonnement läuft am Ablaufdatum ab, und Sie können alle in diesem Zusammenhang empfangenen E-Mail-Benachrichtigungen ignorieren.
+  - Wenn Sie ein Microsoft 365 Business Standard-Kunde sind und Ihr Abonnement im Voraus bezahlt und mit einem Product Key aktiviert haben, können Sie Ihr Abonnement ablaufen lassen, ohne eine Maßnahme zu ergreifen.
 
 - **Kündigen Sie vor Ablauf des Abonnements.** Weitere Informationen hierzu finden Sie unter [Kündigen Ihres Abonnements](cancel-your-subscription.md).
 
-::: moniker-end
-
 ## <a name="what-happens-after-my-subscription-expires"></a>Was geschieht nach Ablauf meines Abonnements?
+
 Wenn Sie Ihr Abonnement ablaufen lassen, durchläuft es mehrere Stadien, bevor es endgültig gelöscht wird. Damit erhalten Sie als Administrator Zeit zum Reaktivieren, wenn Sie den Dienst doch fortsetzen möchten, oder Zeit zum Sichern Ihrer Daten, falls Sie entscheiden, dass Sie das Abonnement nicht mehr nutzen möchten.
   
 Nachstehend wird aufgeführt, womit im jeweiligen Stadium Ihres Abonnements zu rechnen ist.
   
 ### <a name="state-expired"></a>Status: Abgelaufen
-  
-::: moniker range="o365-worldwide"
 
- **Was Sie erwarten können:** Der Status "Abgelaufen" dauert bei den meisten Abonnements, einschließlich über [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) erworbene Abonnements, in den meisten Ländern und Regionen 30 Tage. Für Volumenlizenzprodukte (außer Microsoft Open) dauert der Status "Abgelaufen" 90 Tage.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- **Was Sie erwarten können:** Der Status "Abgelaufen" dauert bei den meisten Abonnements, einschließlich über [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) erworbene Abonnements, in den meisten Ländern und Regionen 30 Tage. Für Volumenlizenzprodukte (außer Microsoft Open) dauert der Status "Abgelaufen" 90 Tage.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
- **Was Sie erwarten können:** Der Status "Abgelaufen" dauert bei den meisten Abonnements, in den meisten Ländern und Regionen, 30 Tage.
-
-::: moniker-end
+ **Was Sie erwarten können:** Das Stadium "Abgelaufen" dauert bei den meisten Abonnements, einschließlich über [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) erworbene Abonnements, in den meisten Ländern und Regionen 30 Tage. Für Produkte mit Volumenlizenzierung, außer Microsoft Open, dauert das Stadium „Abgelaufen“ 90 Tage.
 
 Bei diesem Status können die Benutzer ganz normal auf das Microsoft 365-Portal, Office-Anwendungen und Dienste wie E-Mail und SharePoint Online zugreifen.
   
 Sie selbst als Administrator können weiterhin auf das Admin Center zugreifen. Keine Sorge – globale oder Abrechnungsadministratoren können [das Abonnement reaktivieren](reactivate-your-subscription.md) und Microsoft 365 weiterhin verwenden. Wenn Sie das Abonnement nicht reaktivieren, denken Sie daran, [Ihre Daten zu sichern](back-up-data-before-switching-plans.md).
   
 ### <a name="state-disabled"></a>Status: Deaktiviert
-  
-::: moniker range="o365-worldwide"
 
- **Was Sie erwarten können:** Wenn Sie Ihr Abonnement während des Status "Abgelaufen" nicht reaktivieren, beginnt der Status "Deaktiviert", der bei den meisten Abonnements, in den meisten Ländern und Regionen, 90 Tage dauert. Für Volumenlizenzprodukten dauert der Status "Abgelaufen" 30 Tage.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- **Was Sie erwarten können:** Wenn Sie Ihr Abonnement während des Status "Abgelaufen" nicht reaktivieren, beginnt der Status "Deaktiviert", der bei den meisten Abonnements, in den meisten Ländern und Regionen, 90 Tage dauert. Für Volumenlizenzprodukten dauert der Status "Abgelaufen" 30 Tage.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
- **Was Sie erwarten können:** Wenn Sie Ihr Abonnement während des Status "Abgelaufen" nicht reaktivieren, beginnt der Status "Deaktiviert", der bei den meisten Abonnements, in den meisten Ländern und Regionen, 90 Tage dauert.
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
+ **Was Sie erwarten können:** Wenn Sie Ihr Abonnement während des Status "Abgelaufen" nicht reaktivieren, beginnt der Status "Deaktiviert", der bei den meisten Abonnements, in den meisten Ländern und Regionen, 90 Tage dauert. Für Produkte mit Volumenlizenzierung dauert das Stadium „Deaktiviert“ 30 Tage.
 
 In diesem Status wird Ihr Zugriff erheblich verringert. Ihre Benutzer können sich nicht anmelden oder auf Dienste wie E-Mail oder SharePoint Online zugreifen. Office-Anwendungen wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt. Sie selbst können sich weiterhin anmelden und auf das Admin Center zugreifen, aber Benutzern keine Lizenzen hinzufügen. Ihre Kundendaten, einschließlich aller Benutzerdaten, E-Mails und Dateien auf Teamwebsites, stehen nur Ihnen und anderen Administratoren zur Verfügung.
-
-::: moniker-end
 
 Als globaler Administrator oder Abechnungsadministrator können Sie [das Abonnement reaktivieren](reactivate-your-subscription.md) und Microsoft 365 weiterhin verwenden, wobei alle Ihre Kundendaten erhalten geblieben sind. Wenn Sie beschließen, das Abonnement nicht zu reaktivieren, denken Sie daran, [Ihre Daten zu sichern](back-up-data-before-switching-plans.md).
 
@@ -198,42 +125,23 @@ Administratoren und Benutzer können nicht mehr auf die im Abonnement enthaltene
 Zu diesem Zeitpunkt können Sie das Abonnement nicht mehr reaktivieren. Als globaler Administrator oder Abrechnungsadministrator können Sie jedoch weiterhin auf das Admin Center zugreifen, um andere Abonnements zu verwalten oder um neue Abonnements zur Erfüllung Ihrer Geschäftsanforderungen zu kaufen.
   
 > [!NOTE]
-> Durch Hinzufügen eines neuen Abonnements desselben Typs wie das Abonnement, das gelöscht wurde, werden die diesem Abonnement zuvor zugeordneten Daten nicht wiederhergestellt.
-
-
-> [!NOTE]
-> Wenn eine CSP-Lizenz ausgesetzt wird, besteht keine Nachfrist von 30 Tagen, und Dienste werden sofort deaktiviert. Daten werden nach 90 Tagen gelöscht, wenn der Mandant durch Hinzufügen einer neuen Lizenz nicht reaktiviert wird.
+> - Durch Hinzufügen eines neuen Abonnements desselben Typs wie das Abonnement, das gelöscht wurde, werden die diesem Abonnement zuvor zugeordneten Daten nicht wiederhergestellt.
+> - Wenn eine CSP-Lizenz ausgesetzt wird, besteht kein Stadium „Abgelaufen“ von 30 Tagen, und Dienste werden sofort deaktiviert. Daten werden nach 90 Tagen gelöscht, wenn der Mandant nicht durch Hinzufügen einer neuen Lizenz reaktiviert wird.
 
 ### <a name="what-happens-when-my-trial-ends"></a>Was geschieht, wenn meine Testversion endet?
 
 Wenn Ihre Testversion endet, können Sie Microsoft 365 nicht weiterhin kostenlos nutzen. Es gibt ein paar Optionen:
 
-::: moniker range="o365-worldwide"
-
-- **Microsoft 365 kaufen.** Wenn Ihre Testversion abläuft, beginnt eine Nachfrist. So erhalten Sie (bei den meisten Testversionen, in den meisten Ländern und Regionen) weitere 30 Tage zum Kauf von Microsoft 365. Wenn Sie Ihre Testversion in ein kostenpflichtiges Abonnement umwandeln möchten, lesen Sie [Kaufen Ihrer Testversion von Microsoft 365 Business](../try-or-buy-microsoft-365.md).
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-- **Microsoft 365 kaufen.** Wenn Ihre Testversion abläuft, beginnt eine Nachfrist. So erhalten Sie (bei den meisten Testversionen, in den meisten Ländern und Regionen) weitere 30 Tage zum Kauf von Microsoft 365. Wenn Sie Ihre Testversion in ein kostenpflichtiges Abonnement umwandeln möchten, lesen Sie [Kaufen Ihrer Testversion von Microsoft 365 Business](../try-or-buy-microsoft-365.md).
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-- **Office 365 kaufen.** Wenn Ihre Testversion abläuft, beginnt eine Nachfrist. So erhalten Sie (bei den meisten Testversionen, in den meisten Ländern und Regionen) weitere 30 Tage zum Kauf von Office 365. Wenn Sie Ihre Testversion in ein kostenpflichtiges Abonnement umwandeln möchten, lesen Sie [Buy or try subscriptions for Office 365 operated by 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md).
-
-::: moniker-end
+- **Microsoft 365 kaufen.** Wenn Ihre Testversion abläuft, beginnt das Stadium „Abgelaufen“. So erhalten Sie (bei den meisten Testversionen, in den meisten Ländern und Regionen) weitere 30 Tage zum Kauf von Microsoft 365. Wenn Sie Ihre Testversion in ein kostenpflichtiges Abonnement umwandeln möchten, lesen Sie [Erwerb eines Abonnements aus Ihrer kostenlosen Testversion](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial).
 
 - **Verlängern Sie Ihre Testversion.** Benötigen Sie mehr Zeit zum Beurteilen von Microsoft 365? In bestimmten Fällen können Sie [Ihre Testversion verlängern](../extend-your-trial.md).
 
-- **Die Testversion kündigen oder ablaufen lassen.** Wenn Sie sich beschließen, Microsoft 365 nicht zu kaufen, können Sie Ihre Testversion ablaufen lassen oder [kündigen](cancel-your-subscription.md). Sichern Sie alle Daten, die Sie behalten möchten. Kurz nach Ablauf der 30-Tage-Nachfrist werden die Informationen Ihres Testkontos und alle Daten endgültig gelöscht.
+- **Die Testversion kündigen oder ablaufen lassen.** Wenn Sie sich beschließen, Microsoft 365 nicht zu kaufen, können Sie Ihre Testversion ablaufen lassen oder [kündigen](cancel-your-subscription.md). Sichern Sie alle Daten, die Sie behalten möchten. Kurz nach Ablauf des 30 Tage andauernden Stadiums „Abgelaufen“ werden die Informationen Ihres Testkontos und alle Daten endgültig gelöscht.
 
 > [!NOTE]
 > Die Informationen auf dieser Seite unterliegen der [Microsoft Policy Disclaimer and Change Notice](https://go.microsoft.com/fwlink/p/?LinkId=613651) (Microsoft-Richtlinie für Haftungsausschluss und Änderungsmitteilung). Kehren Sie regelmäßig zu dieser Website zurück, um über Änderungen auf dem Laufenden zu bleiben.
 
-## <a name="related-content"></a>Verwandte Inhalte 
+## <a name="related-content"></a>Verwandte Inhalte
 
 [Kündigen Ihres Abonnements](./cancel-your-subscription.md) (Artikel)\
 [Verlängern von Microsoft 365 Business](./renew-your-subscription.md) (Artikel)\

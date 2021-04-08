@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: Überwachen sie fehlgeschlagene und verzögerte E-Mail-Nachrichten, die an oder von Konten gesendet werden, die hohe geschäftliche Auswirkungen haben.
-ms.openlocfilehash: 0bba1f87f80de9fea249ce2604e83ceeadfb79ee
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f67b9c6f0eaa229b650026670cf1b2adf88ab3c0
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050642"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632180"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Verwalten und Überwachen von Prioritätskonten
 
@@ -26,12 +26,18 @@ In jeder Microsoft 365-Organisation gibt es wichtige Personen, z. B. Führungskr
 
 Um Ihre Organisation beim Schutz dieser Konten zu unterstützen, können Sie nun bestimmte Benutzer als Prioritätskonten festlegen und app-spezifische Features nutzen, die ihnen zusätzlichen Schutz bieten. In Zukunft werden mehr Apps und Features Prioritätskonten unterstützen, und zu Beginn haben wir zwei Funktionen **angekündigt:** Den Schutz von Prioritätskonten und die Premium-Nachrichtenflussüberwachung. 
 
-- **Prioritätskontoschutz** – Microsoft Defender für Office 365 (früher Office 365 Advanced Threat Protection) unterstützt Prioritätskonten als Tags, die in Filtern in Warnungen, Berichten und Untersuchungen verwendet werden können. Weitere Informationen finden Sie unter [Benutzertags in Microsoft Defender für Office 365](../../security/defender-365-security/user-tags.md).
+- **Prioritätskontoschutz** – Microsoft Defender für Office 365 (früher Office 365 Advanced Threat Protection) unterstützt Prioritätskonten als Tags, die in Filtern in Warnungen, Berichten und Untersuchungen verwendet werden können. Weitere Informationen finden Sie unter [Benutzertags in Microsoft Defender für Office 365](../../security/office-365-security/user-tags.md).
+
+  Eine natürliche Frage lautet: "Sind nicht alle Benutzer eine Priorität? Warum sollten nicht alle Benutzer als Prioritätskonten bestimmt werden?" Ja, alle Benutzer haben Priorität, aber der Schutz des Prioritätskontos bietet die folgenden zusätzlichen Vorteile:
+
+  - **Zusätzliche Heuristiken:** Unsere Analyse des Nachrichtenflusses in den Microsoft-Rechenzentren weist darauf hin, dass sich die Nachrichtenflussmuster für Führungskräfte des Unternehmens von den durchschnittlichen Mitarbeitern unterscheiden. Der Schutz vor prioritätsmäßigen Konten bietet zusätzliche Heuristiken, die speziell auf Führungskräfte des Unternehmens zugeschnitten sind, die keinem regulären Mitarbeiter nützen würden.
+  - **Zusätzliche Sichtbarkeit in der Berichterstellung:** Tatsächlich sind Informationen für alle Benutzer (oder alle betroffenen Benutzer) bereits in Warnungen, Berichten und Untersuchungen verfügbar. Mit dem Prioritätskontentag als Filter können Sie ihre Untersuchungen gezielt verwenden.
+
 - **Premium-Nachrichtenflussüberwachung** – Ein fehlerfreier Nachrichtenfluss kann für den Geschäftserfolg von entscheidender Bedeutung sein, und Verzögerungen oder Fehler bei der Zustellung können sich negativ auf das Unternehmen auswirken. Sie können einen Schwellenwert für fehlgeschlagene oder verzögerte E-Mails auswählen, Benachrichtigungen empfangen, wenn dieser Schwellenwert überschritten wird, und einen Bericht über E-Mail-Probleme für Prioritätskonten anzeigen. Weitere Informationen finden Sie unter [E-Mail-Probleme für Prioritätskontenbericht in der modernen EAC.](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
 
-Bewährte Sicherheitsmethoden für Prioritätskonten finden Sie unter [Sicherheitsempfehlungen für Prioritätskonten](../../security/defender-365-security/security-recommendations-for-priority-accounts.md).
+Bewährte Sicherheitsmethoden für Prioritätskonten finden Sie unter [Sicherheitsempfehlungen für Prioritätskonten](../../security/office-365-security/security-recommendations-for-priority-accounts.md).
 
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Die **in diesem** Thema beschriebene Prioritätskontoschutzfunktion ist nur für Organisationen verfügbar, die die folgenden Anforderungen erfüllen:
 
@@ -44,6 +50,8 @@ Die in diesem Thema beschriebene Premium Mail **Flow Monitoring-Funktion** ist n
 
 > [!NOTE]
 > Sie können bis zu 250 Prioritätskonten überwachen.
+
+Wenn Sie einen Prioritätskontoschutz auf ein Postfach anwenden, sollten Sie auch den Prioritätskontoschutz auf Benutzer anwenden, die Zugriff auf das Postfach haben (z. B. den CEO und den Executive Assistant des CEO, der den Kalender des CEO verwaltet).
 
 ### <a name="add-priority-accounts-from-the-setup-page"></a>Hinzufügen von Prioritätskonten von der Seite "Setup"
 

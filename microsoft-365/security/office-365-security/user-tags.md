@@ -16,12 +16,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie bestimmte Benutzergruppen mit Benutzertags in Microsoft Defender für Office 365 Plan 2 identifizieren. Die Tagfilterung ist in Warnungen, Berichten und Untersuchungen in Microsoft Defender für Office 365 verfügbar, um die markierten Benutzer schnell zu identifizieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6f98dcfe3e8c44e852134e7a12def4ff78c1bcdd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4c439dcb91831475bc10da4a01d0fa29e7aae359
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206261"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632202"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Benutzertags in Microsoft Defender für Office 365
 
@@ -34,6 +34,9 @@ Benutzertags sind Bezeichner für bestimmte Benutzergruppen in [Microsoft Defend
 - **Benutzerdefinierte Tags:** Sie erstellen diese Benutzertags selbst.
 
 Wenn Ihre Organisation Defender für Office 365 Plan 2 (in Ihrem Abonnement oder als Add-On enthalten) hat, können Sie zusätzlich zum Prioritätskontotag benutzerdefinierte Benutzertags erstellen.
+
+> [!NOTE]
+> Derzeit können Sie Benutzertags nur auf Postfachbenutzer anwenden.
 
 Nachdem Sie Systemtags oder benutzerdefinierte Tags auf Benutzer angewendet haben, können Sie diese Tags als Filter in Warnungen, Berichten und Untersuchungen verwenden:
 
@@ -64,6 +67,8 @@ Informationen dazu, wie Benutzertags Teil der Strategie zum Schutz von Benutzerk
   - Die Verwaltung von Benutzertagen wird durch die **Rollen Tag Reader und** Tag **Manager** gesteuert.
 
 - Sie können auch Prioritätskonten im Microsoft 365 Admin Center verwalten und überwachen. Anweisungen finden Sie unter [Verwalten und Überwachen von Prioritätskonten](../../admin/setup/priority-accounts.md).
+
+- Informationen zum Sichern _privilegierter Konten_ (Administratorkonten) finden Sie [in diesem Thema.](/azure/architecture/framework/security/critical-impact-accounts)
 
 ## <a name="use-the-security--compliance-center-to-create-user-tags"></a>Erstellen von Benutzertags mithilfe & Security & Compliance Center
 

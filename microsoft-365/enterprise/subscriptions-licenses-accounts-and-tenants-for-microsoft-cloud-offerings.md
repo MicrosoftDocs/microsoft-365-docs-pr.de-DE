@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: Lernen Sie die Beziehungen von Organisationen, Abonnements, Lizenzen, Benutzerkonten und Mandanten über die Microsoft-Cloudangebote hinweg kennen.
-ms.openlocfilehash: eaf1c2399b5d44ea8d6000042b3258d0e8b5a7de
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 34e920e6b5a48adaffcc31150090e96f9c8d8b0e
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909514"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604321"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, Lizenzen, Konten und Mandanten für Microsoft-Cloud-Angebote
 
@@ -88,7 +88,7 @@ Abbildung 3 zeigt ein Beispiel für mehrere Abonnements einer Organisation, die 
   
 ### <a name="tenants"></a>Mandanten
 
-Bei SaaS-Cloudangeboten ist der Mandant die regionale Stelle, an der sich die Server befinden, die Clouddienste bereitstellen. Die Contoso Corporation hat beispielsweise Europa als Region zum Hosten ihrer Microsoft 365-, EMS- und Dynamics 365-Mandanten für die 15.000 Mitarbeiter in der Pariser Zentrale festgelegt.
+Bei SaaS-Cloudangeboten ist der Mandant die regionale Stelle, an der sich die Server befinden, die Clouddienste bereitstellen. So hat sich die Contoso Corporation beispielsweise für die europäische Region als Host für die Microsoft 365-, EMS- und Dynamics 365-Abonnements für die 15.000 Mitarbeiter in der Zentrale in Paris entschieden.
   
 Azure PaaS-Dienste und in Azure IaaS gehostete VM-basierte Arbeitslasten können Mandanten in einem beliebigen Azure-Rechenzentrum auf der ganzen Welt haben. Sie geben das Azure-Rechenzentrum an, das als Standort bezeichnet wird, wenn Sie die Azure PaaS-App oder den Dienst bzw. das Element einer IaaS-IT-Arbeitslast erstellen.
   

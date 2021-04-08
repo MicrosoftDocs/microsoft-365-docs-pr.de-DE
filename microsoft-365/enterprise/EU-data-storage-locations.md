@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Finden Sie heraus, wo innerhalb der Europäischen Union Ihre Microsoft 365-Kundendaten gespeichert werden
-ms.openlocfilehash: 28bfa7c18aff485e084e4d77bb2a36f0f5b7e95f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19df44a702d842d4171d867946fb818d3f36fd80
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905680"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615231"
 ---
 # <a name="data-locations-for-the-european-union"></a>Datenspeicherorte für die Europäische Union
 
@@ -92,7 +92,7 @@ Microsoft schützt Ihre Daten mithilfe mehrerer Ebenen von Sicherheits- und Vers
 
 Standardmäßig schützen von Microsoft verwaltete Schlüssel Ihre Kundendaten. Daten, die auf beliebigen physischen Medien persistiert sind, werden immer mit FIPS 140-2-kompatiblen Verschlüsselungsprotokollen verschlüsselt. Sie können auch selbst verwaltete Schlüssel (CMK – Customer Managed Keys), [doppelte Verschlüsselung](../compliance/double-key-encryption.md) und/oder HSM (Hardware Security Modules) verwenden, um den Datenschutz zu erhöhen.
 
-Der gesamte Datenverkehr zwischen Rechenzentren wird auch mithilfe von IEEE 802.1AE Mac-Sicherheitsstandards geschützt und verhindert so physische „Mann-in-der-Mitte“-Angriffe.
+Zusätzlich verwendet Microsoft standardmäßig das [Transport Layer Security (TLS)](https://wikipedia.org/wiki/Transport_Layer_Security)-Protokoll, um Daten zu verschlüsseln, während diese zwischen Clouddiensten und Kunden bewegt werden. Microsoft-Dienste verhandeln eine TLS-Verbindung mit den Client-Systemen, die sich mit Microsoft 365-Diensten verbinden. 
 
 Um unbefugten Zutritt in Rechenzentren zu verhindern, verwenden wir strenge Betriebskontrollen und Prozesse, die Videoüberwachung rund um die Uhr, geschultes Sicherheitspersonal und -Prozesse sowie Zugriffskontrollen mit Smartcards oder mehrfachen biometrischen Faktoren umfassen. Nach Ende der Lebensdauer werden Datendisketten zerkleinert und vernichtet. Wenn ein für die Speicherung verwendetes Festplattenlaufwerk einen Hardwarefehler aufweist oder sein Lebensende erreicht, wird es sicher gelöscht oder vernichtet. Die Daten auf dem Laufwerk werden vollständig überschrieben, um sicherzustellen, dass die Daten auf keinen Fall wiederhergestellt werden können. Wenn solche Geräte außer Betrieb genommen werden, werden Sie gemäß NIST Special Publication 800-88 R1 (Richtlinien für die Medienbereinigung) zerkleinert und vernichtet. Aufzeichnungen über die Vernichtung werden als Teil des Microsoft-Audit- und Compliance-Prozesses aufbewahrt und überprüft. Alle Microsoft 365-Dienste nutzen genehmigte Medienspeicher und Verwaltungsdienste für die Entsorgung.
 

@@ -20,12 +20,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie die Sicherheitseinstellungen erhöhen und Berichte, Warnungen und Untersuchungen für Prioritätskonten in ihren Microsoft 365-Organisationen verwenden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9bb2586c11a22286bde5be01f1e9b3e5e0d981ac
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 73be3832b2391b6f47e4c796daf76c884a17dcdd
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206544"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632221"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Sicherheitsempfehlungen für Prioritätskonten in Microsoft 365
 
@@ -45,8 +45,11 @@ Microsoft 365 und Microsoft Defender für Office 365 enthalten mehrere wichtige 
 |[Verwenden von strengen voreingestellten Sicherheitsrichtlinien für Prioritätskonten](#use-strict-preset-security-policies-for-priority-accounts)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Anwenden von Benutzertags auf Prioritätskonten](#apply-user-tags-to-priority-accounts)|||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Überwachen von Prioritätskonten in Warnungen, Berichten und Erkennungen](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|[Benutzer trainieren](#train-users)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Schulung der Benutzer](#train-users)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
+
+> [!NOTE]
+> Informationen zum Sichern _privilegierter Konten_ (Administratorkonten) finden Sie [in diesem Thema.](/azure/architecture/framework/security/critical-impact-accounts)
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>Erhöhen der Anmeldesicherheit für Prioritätskonten
 
@@ -101,7 +104,7 @@ Nachdem Sie Ihre Prioritätsbenutzer gesichert und identifiziert haben, können 
 |Bericht über E-Mail-Probleme für Prioritätskonten|Der **Bericht E-Mail-Probleme** für Prioritätskonten im Exchange Admin Center (EAC) enthält Informationen zu nicht zugestellten und verzögerten Nachrichten für **Prioritätskonten.** Weitere Informationen finden Sie unter [E-Mail-Probleme für Prioritätskonten Bericht](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|
 |
 
-## <a name="train-users"></a>Benutzer trainieren
+## <a name="train-users"></a>Schulung der Benutzer
 
 Die Schulung von Benutzern mit Prioritätskonten kann dazu beitragen, diese Benutzer und Ihr Sicherheitsteam viel Zeit und Frustration zu sparen. Versierte Benutzer öffnen anlagen seltener anlagen oder klicken auf Links in fragwürdigen E-Mail-Nachrichten, und sie vermeiden eher verdächtige Websites.
 
@@ -116,7 +119,7 @@ Microsoft 365 stellt die folgenden Ressourcen zur Verfügung, um Benutzer in Ihr
 |Konzept|Ressourcen|Beschreibung|
 |---|---|---|
 |Microsoft 365|[Anpassbare Lernpfade](/office365/customlearning/)|Diese Ressourcen können Ihnen dabei helfen, Schulungen für Benutzer in Ihrer Organisation zusammen zu stellen.|
-|Microsoft 365 Security Center|[Lernmodul: Sichern Ihrer Organisation mit integrierter, intelligenter Sicherheit von Microsoft 365](/learn/modules/security-with-microsoft-365)|In diesem Modul können Sie beschreiben, wie Microsoft 365-Sicherheitsfeatures zusammenarbeiten und die Vorteile dieser Sicherheitsfeatures erläutern.|
+|Microsoft 365 Security|[Lernmodul: Sichern Ihrer Organisation mit integrierter, intelligenter Sicherheit von Microsoft 365](/learn/modules/security-with-microsoft-365)|In diesem Modul können Sie beschreiben, wie Microsoft 365-Sicherheitsfeatures zusammenarbeiten und die Vorteile dieser Sicherheitsfeatures erläutern.|
 |Mehrstufige Authentifizierung|[Zweistufige Überprüfung: Was ist die zusätzliche Überprüfungsseite?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Dieser Artikel hilft Endbenutzern zu verstehen, was die mehrstufige Authentifizierung ist und warum sie in Ihrer Organisation verwendet wird.|
 |Schulung zur Angriffssimulation|[Erste Schritte mit dem Angriffssimulationstraining](attack-simulation-training-get-started.md)|Das Training zur Angriffssimulation in Microsoft Defender für Office 365 Plan 2 ermöglicht Administratoren das Konfigurieren, Starten und Nachverfolgen simulierter Phishingangriffe auf bestimmte Benutzergruppen.|
 
