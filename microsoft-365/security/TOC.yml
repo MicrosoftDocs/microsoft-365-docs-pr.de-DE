@@ -332,6 +332,8 @@
                           href: defender/api-update-incidents.md
     - name: Sicherheit in Office 365
       href: ./office-365-security/overview.md
+    - name: Schrittweiser Bedrohungsschutz in Microsoft Defender für Office 365
+      href: ./office-365-security/protection-stack-microsoft-defender-for-office365.md
       items:
         - name: Übersicht
           items:
