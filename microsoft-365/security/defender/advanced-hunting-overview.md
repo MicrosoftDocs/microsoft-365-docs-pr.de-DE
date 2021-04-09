@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 3aa964f8e213d64f583738d8957899c1b7b5146c
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 3532fd461fff02fac54e96e0a1a1e69c39c16907
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501091"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51657019"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Proaktive Suche nach Bedrohungen mit erweiterter Suche in Microsoft 365 Defender
 
@@ -54,6 +54,17 @@ Diese Funktion ähnelt der [erweiterten Suche in Microsoft Defender for Endpoint
 - Microsoft Defender for Identity
 
 Um die erweiterte Suche zu verwenden, [aktivieren Sie Microsoft 365 Defender](m365d-enable.md).
+
+### <a name="before-you-begin"></a>Bevor Sie beginnen
+
+Benutzer benötigen eine der folgenden Berechtigungsstufen für den Zugriff auf Microsoft Defender:
+
+- Vollzugriff (Lese- und Schreibzugriff)
+- Schreibgeschützter Zugriff
+
+**Vollzugriff:** Benutzer mit Vollzugriff können eine Abfrage speichern, ändern und freigeben. Zum Zuweisen von Vollzugriffsrechten müssen die Benutzer den integrierten Rollen "Sicherheitsadministrator" oder "Globaler Administrator" in Azure Active Directory (AAD) hinzugefügt werden.
+
+**Schreibgeschützter Zugriff:** Benutzer mit schreibgeschützten Zugriff können sich anmelden und alle Warnungen und zugehörigen Informationen anzeigen. Sie können eine Abfrage nicht speichern, ändern oder freigeben. Zum Zuweisen von schreibgeschützten Zugriffsrechten müssen die Benutzer der integrierten Rolle "Security Reader" in AAD hinzugefügt werden.
 
 ## <a name="get-started-with-advanced-hunting"></a>Erste Schritte mit der erweiterten Suche
 

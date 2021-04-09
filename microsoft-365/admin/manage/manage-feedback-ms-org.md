@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Verwalten Sie Feedback, das Ihre Benutzer an Microsoft zu Microsoft-Produkten senden können.
-ms.openlocfilehash: 9c6ed46b21a5ee697c4c512c09defd66e6b961c9
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: c92adec1689d6f0c46b03ae4f46c567f054b6457
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644861"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650016"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Verwalten von Microsoft-Feedback für Ihre Organisation
 
@@ -32,7 +32,7 @@ Als Administrator einer Microsoft 365-Organisation gibt es nun mehrere Richtlini
 
 Weitere Informationen zu den Arten von Feedback und dazu, wie Microsoft Benutzerfeedback verwendet, finden Sie unter Erfahren Sie mehr über [Das Feedback von Microsoft für Ihre Organisation.](../misc/feedback-user-control.md)
 
-Die folgende Tabelle stellt dar, welche Apps und Dienste derzeit mit den Feedbackrichtlinien in der folgenden Tabelle mit Feedbackrichtlinien verbunden sind.
+Die folgende Tabelle stellt dar, welche Apps und Dienste derzeit mit den Feedbackrichtlinien in der folgenden Tabelle mit Feedbackrichtlinien verbunden sind. Unter der Tabelle finden Sie Screenshotbeispiele.
 
 |**Apps & Services**|**Produktfeedback** <br> |**In-Product-Umfragen** <br> |**Metadatensammlung** <br> |**Kundenbindung** <br> |
 |:-----|:-----|:-----|:-----|:-----|
@@ -51,15 +51,7 @@ Die folgende Tabelle stellt dar, welche Apps und Dienste derzeit mit den Feedbac
 |**Visio**|Ja|Ja|Ja|Ja|
 |**Yammer**|Ja|Ja|Ja|Ja|
 
-Hier sind einige Beispiele für Produktfeedback.
-
-**Produktfeedback**
-
-:::image type="content" source="../../media/feedback-in-product-help.png" alt-text="Screenshot: In-Product-Hilfebeispiel":::
-
-**In-Product-Umfragen**
-
-:::image type="content" source="../../media/feedback-in-product-survey.png" alt-text="Screenshot: Beispiel für eine Produktumfrage der Microsoft-App":::
+[Hier finden Sie einige Beispiele für Produktumfragen und Feedback.](https://docs.microsoft.com/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#in-product-surveys)
 
 **Metadatensammlung**
 

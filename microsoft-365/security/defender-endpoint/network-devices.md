@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06b52e937dd0260a50883c45c36389a6a955ad0e
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: d0ae82c2e284235d96531c04dc2240063d4e4183
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604507"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51657041"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Netzwerkgeräteerkennung und Sicherheitsrisikoverwaltung
 
@@ -46,7 +46,7 @@ Netzwerkerkennungsfunktionen sind im  Abschnitt Gerätebestand des Microsoft 365
 
 Für jedes Netzwerksegment wird ein bestimmtes Microsoft Defender for Endpoint-Gerät verwendet, um regelmäßig authentifizierte Scans vorkonfigurierter Netzwerkgeräte durchzuführen. Nach dem Entdecken bieten die Bedrohungs- und Sicherheitsmanagementfunktionen von Defender for Endpoint integrierte Workflows, um ermittelte Switches, Router, WLAN-Controller, Firewalls und VPN-Gateways zu sichern.  
 
-Sobald die Netzwerkgeräte erkannt und klassifiziert wurden, können Sicherheitsadministratoren die neuesten Sicherheitsempfehlungen erhalten und die kürzlich entdeckten Sicherheitsrisiken für in ihren Organisationen bereitgestellte Netzwerkgeräte überprüfen.
+Sobald die Netzwerkgeräte erkannt und klassifiziert wurden, können Sicherheitsadministratoren die neuesten Sicherheitsempfehlungen erhalten und kürzlich festgestellte Sicherheitsrisiken auf Netzwerkgeräten überprüfen, die in ihren Organisationen bereitgestellt wurden.
 
 ## <a name="approach"></a>Ansatz
 
@@ -95,9 +95,9 @@ Im ersten Schritt wählen Sie ein Gerät aus, auf dem die authentifizierten Netz
     - login.windows.net  
     - *.securitycenter.windows.com
     - login.microsoftonline.com
-    - *.blob.core.windows.net/networkscannerstable/*
+    - *.blob.core.windows.net/networkscannerstable/ *
 
-    Hinweis: Diese URLs sind nicht in der dokumentierten Liste der zulässigen Datensammlungen von Defender for Endpoint angegeben.
+    Hinweis: Nicht alle URLs sind in der dokumentierten Liste der zulässigen Datensammlungen von Defender for Endpoint angegeben.
 
 ## <a name="permissions"></a>Berechtigungen
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Feedback, das Ihre Benutzer über Microsoft-Produkte an Microsoft senden können.
-ms.openlocfilehash: 0a6c895eacd7a1cf8077141c6a848236a53818e7
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 29fe6b7f43b3c888c3848daeb6ab4c2152a9c44c
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644845"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650063"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>Erfahren Sie mehr über Das Feedback von Microsoft für Ihre Organisation
 
@@ -49,9 +49,9 @@ Wenn Ihre Benutzer eine der Microsoft-Apps verwenden und Feedback bereitstellen 
 
 Benutzer können ihre Erfahrung auch bewerten und zusätzliche Informationen zu ihrer Erfahrung über vom System initiierte Umfrageaufforderungen bereitstellen. Diese Aufforderungen treten von Zeit zu Zeit innerhalb der Microsoft 365-Produkte auf. Wenn Sie dazu aufgefordert werden, können Benutzer auswählen, ob sie Feedback geben möchten. Die Umfrageaufforderungen werden in der Regel unten rechts in der App angezeigt. Wenn sich der Benutzer entscheidet, Feedback zu senden, die Eingabeaufforderung zu schließen oder die Eingabeaufforderung allein verschwinden zu lassen, wird die Umfrage für einige Zeit nicht mehr angezeigt. Microsoft nutzt außerdem einen Steuerungsprozess, um die Anzahl dieser vom System initiierten Umfragen zu begrenzen.  Die Absicht der Steuerung besteht in der Sicherstellung, dass Benutzer nicht von der Anzahl der Umfrageaufforderungen überlastet werden.
 
-:::image type="content" source="../../media/feedback-outlook-example.png" alt-text="Screenshot: Beispiel für Produktfeedback für Outlook":::
-:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Screenshot: Wahrscheinlichkeit, dass Sie eine Microsoft 365-Umfrage empfehlen":::
-:::image type="content" source="../../media/feedback-in-product1.png" alt-text="Screenshot: Beispiele für Produktfeedbackseiten":::
+:::image type="content" source="../../media/feedback-love.png" alt-text="Screenshot: Beispiel für eine Produktfeedbackanforderung":::
+
+:::image type="content" source="../../media/feedback-excel.png" alt-text="Screenshot: Beispiel für eine Produktfeedbackanforderung":::
 
 ## <a name="what-kind-of-feedback-is-best"></a>Welche Art von Feedback ist am besten?
 
@@ -90,3 +90,7 @@ Wir arbeiten daran, Vertrauen zu gewinnen, indem wir sicherstellen, dass wir uns
 Wir stellen sicher, dass das feedback, das wir erhalten, unter Microsoft-Steuerungsregeln gespeichert und verarbeitet wird und dass nur für genehmigte Verwendungen darauf zugegriffen werden kann.
 
 Mit einfachen Tools und klaren Auswahlmöglichkeiten haben Sie die Kontrolle über Ihre Privatsphäre. Wir sind transparent, wie wir Daten sammeln und verwenden, damit Sie fundierte Entscheidungen darüber treffen können, was Sie freigeben möchten. Wir schützen die daten, die Sie uns anvertrauen, mit starker Sicherheit und Verschlüsselung. Wir respektieren lokale Datenschutzgesetze und kämpfen für den rechtlichen Schutz Ihrer Privatsphäre als Menschenrecht. Wir verwenden Ihre E-Mails, Chats, Dateien oder anderen persönlichen Inhalte nicht, um Werbung für Sie zu schalten. Wenn wir Daten sammeln, verwenden wir sie, um Ihre Erfahrungen zu verbessern. Weitere Informationen zu Microsofts Datenschutzansatz finden Sie [hier.](https://privacy.microsoft.com/) Erfahren Sie mehr über unsere [Datenschutzübersicht](/compliance/assurance/assurance-privacy).
+
+## <a name="how-can-i-see-my-users-feedback"></a>Wie kann ich das Feedback meines Benutzers sehen?
+
+In Kürze geben wir die Feedbackdaten, die wir für Microsoft-Produkte sammeln, an Sie zurück. Wir arbeiten an einer neuen Erfahrung im Microsoft 365 Admin Center, mit der sie die Feedbackdaten für Ihre Organisation anzeigen, löschen und exportieren können. Dadurch erhalten Sie direkte Transparenz und nützliche Einblicke in die Erfahrungen Ihrer Benutzer mit Microsoft 365-Produkten.
