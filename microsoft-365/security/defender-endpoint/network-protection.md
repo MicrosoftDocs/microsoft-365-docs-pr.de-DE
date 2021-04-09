@@ -17,14 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.date: 03/08/2021
 ms.topic: how-to
-ms.openlocfilehash: be98bf810d00b6e39ba9d2674604a9fd2128a8cc
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2ef3fbeec65be512dfe07f1d533df4d8e9b31532
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198653"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644500"
 ---
-# <a name="protect-your-network"></a>Schützen Ihres Netzwerks
+# <a name="protect-your-network"></a>Schützen Sie Ihr Netzwerk
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -90,6 +90,16 @@ Mit diesem Verfahren wird eine benutzerdefinierte Ansicht erstellt, die filtert,
 | 5007 | Ereignis, wenn Einstellungen geändert werden |
 | 1125 | Ereignis, wenn der Netzwerkschutz im Überwachungsmodus abgeschaltet wird |
 | 1126 | Ereignis, wenn der Netzwerkschutz im Blockmodus abgeschaltet wird |
+
+## <a name="network-protection-troubleshooting"></a>Problembehandlung beim Netzwerkschutz
+
+Aufgrund der Umgebung, in der Network Protection ausgeführt wird, kann Microsoft möglicherweise keine Betriebssystemproxyeinstellungen erkennen. In einigen Fällen können Network Protection-Clients den Clouddienst nicht erreichen. Um das Konnektivitätsproblem zu beheben, sollten Kunden mit E5-Lizenzen einen der folgenden Defender-Registrierungsschlüssel konfigurieren:
+
+```console
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+
+```
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

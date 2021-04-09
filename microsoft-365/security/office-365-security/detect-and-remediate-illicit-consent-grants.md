@@ -18,12 +18,12 @@ description: Erfahren Sie, wie Sie den Angriff auf unrechtmäßige Zustimmungszu
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4a9b3ff11acb32a4b3038cc18922f8e22fda0b4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7869419677ba1d5d6b480b7f0dea7f67880af0c7
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205942"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644680"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Erkennen und Behebung unrechtmäßiger Zustimmungszuserm n
 
@@ -128,7 +128,7 @@ Die einfachste Möglichkeit zum Überprüfen des Angriffs auf unrechtmäßige Zu
 5. Führen Sie diesen PowerShell-Befehl aus:
 
    ```powershell
-   Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
+   .\Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
    ```
 
 Das Skript erzeugt eine Datei namens Permissions.csv. Führen Sie die folgenden Schritte aus, um nach unrechtmäßigen Anwendungsberechtigungen zu suchen:

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
-ms.openlocfilehash: 0cf1358b4170b69d3506062c336a1cf67a2da2de
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: e3ed1d76a755ce6326ac6ae53b990136a10b564a
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591732"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644716"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Migrationsphasenaktionen und Auswirkungen auf die Migration aus Microsoft Cloud Deutschland
 
@@ -128,7 +128,7 @@ Zusätzliche Überlegungen:
 
 **Gilt für:** Alle Kunden, die Exchange Online verwenden
 
-Wenn Sie Exchange Online Hybrid verwenden: Exchange Online Hybrid-Administratoren  **müssen den Assistenten für die Hybridkonfiguration (Hybrid Configuration Wizard, HCW)** im Rahmen dieser Überführung mehrmals ausführen. Wenden Sie die [Exchange-Vorbereitung](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-configuration) **an, bevor Sie den Migrationsschritt der Phase 5 beginnen**. Exchange Online-Hybrid-Kunden müssen die neueste Version des Assistenten für die Exchange-Hybridkonfiguration (Exchange Hybrid Configuration Wizard, HCW) im Modus „Office 365 Deutschland“ ausführen, um die lokale Konfiguration für die Migration zu Office 365-Globalen Diensten vorzubereiten.
+Wenn Sie Exchange Online Hybrid verwenden: Exchange Online Hybrid-Administratoren  **müssen den Assistenten für die Hybridkonfiguration (Hybrid Configuration Wizard, HCW)** im Rahmen dieser Überführung mehrmals ausführen. Wenden Sie die [Exchange-Vorbereitung](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-customers) **an, bevor Sie den Migrationsschritt der Phase 5 beginnen**. Exchange Online-Hybrid-Kunden müssen die neueste Version des Assistenten für die Exchange-Hybridkonfiguration (Exchange Hybrid Configuration Wizard, HCW) im Modus „Office 365 Deutschland“ ausführen, um die lokale Konfiguration für die Migration zu Office 365-Globalen Diensten vorzubereiten.
 
 Nach **Abschluss von Migrationsphase 9** (wenn der Nachrichtencenterhinweis veröffentlicht wurde) müssen Sie erneut den HCW mit Office 365 Worldwide-Einstellungen ausführen, um Ihre lokalen Systeme auf die Office 365-Globale Dienste zu verweisen.
 

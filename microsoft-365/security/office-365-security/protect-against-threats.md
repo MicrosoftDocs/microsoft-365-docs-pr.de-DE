@@ -20,12 +20,12 @@ description: Administratoren können mehr über den Bedrohungsschutz in Microsof
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 189325dab37a548c717cd554ecd1d37c19ae57ea
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2df88df9f1f0e2c14c0adcf0d5772189a1276e9d
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205795"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650230"
 ---
 # <a name="protect-against-threats"></a>Schutz vor Bedrohungen
 
@@ -60,7 +60,7 @@ Bedrohungsschutzfunktionen sind in *allen Microsoft-* oder Office 365-Abonnement
 |Antispamschutz|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Automatisches Löschen in null Stunden (für E-Mails)|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Schutz vor schädlichen URLs und Dateien in E-Mail- und Office-Dokumenten (sichere Links und sichere Anlagen)|[Microsoft Defender für Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|Aktivieren sicherer Anlagen für SharePoint-, OneDrive- und Microsoft #A0|[Defender für Office 365 ](turn-on-mdo-for-spo-odb-and-teams.md)|
+|Aktivieren sicherer Anlagen für SharePoint-, OneDrive- und Microsoft #A0|[Defender for Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
 |Erweiterter Antiphishingschutz|[Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Rollen und Berechtigungen

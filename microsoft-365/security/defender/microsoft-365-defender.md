@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 687077b1c9ff2449d9994875419a97cf0c503c2f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 86bc6ef03438b637f62cf0e2a46e418dbea7a3c1
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581082"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650278"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -96,3 +96,7 @@ Zu den produktübergreifenden Microsoft 365 Defender-Features gehören:
 Microsoft 365 Defender-Lizenzierungsanforderungen müssen erfüllt sein, bevor Sie den Dienst im Microsoft 365 Security Center unter [security.microsoft.com.](https://security.microsoft.com) Weitere Informationen finden Sie unter:
 - [Lizenzanforderungen](prerequisites.md#licensing-requirements)
 - [Microsoft 365 Defender aktivieren](m365d-enable.md)
+
+
+## <a name="see-also"></a>Siehe auch
+- [Bereitstellen von Bedrohungsschutzfunktionen in Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/solutions/deploy-threat-protection)

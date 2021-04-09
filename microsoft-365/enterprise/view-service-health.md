@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Zeigen Sie den Integritätsstatus von Microsoft 365-Diensten an, bevor Sie den Support anrufen, um zu sehen, ob eine aktive Dienstunterbrechung vor sich geht.
-ms.openlocfilehash: 30b677a80e5a08d75534a91aa04d735443660f18
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: e0ab4eaa1f7a96168839a4abef2f0f254a21d0ad
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215480"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644632"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Überprüfen des Microsoft 365-Dienstzustands
 
@@ -47,7 +47,7 @@ Wenn Sie sich nicht beim Admin Center anmelden [](https://status.office365.com) 
 1. Wechseln Sie zum Microsoft 365 Admin Center unter [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) , und melden Sie sich mit einem Administratorkonto an.
 
     > [!NOTE]
-    > Personen, denen die Rolle eines globalen Administrators oder Serviceadministrators zugewiesen ist, können den Dienststatus anzeigen. Damit Exchange-, SharePoint- und Skype for Business-Administratoren den Dienststatus anzeigen können, muss ihnen auch die Rolle des Dienstadministrators zugewiesen sein. Weitere Informationen zu Rollen, die den Dienststatus anzeigen können, finden Sie unter [Informationen zu Administratorrollen](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
+    > Personen, denen die Administratorrolle globaler Administrator oder Dienstsupport zugewiesen ist, können den Dienstzustand anzeigen. Damit Exchange-, SharePoint- und Skype for Business-Administratoren den Dienststatus anzeigen können, muss ihnen auch die Rolle des Dienstadministrators zugewiesen sein. Weitere Informationen zu Rollen, die den Dienststatus anzeigen können, finden Sie unter [Informationen zu Administratorrollen](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
   
 2. Wenn Sie das neue Admin Center  nicht verwenden, wählen Sie auf der Startseite in der oberen rechten Ecke den Umschalter Neues **Admin Center** ausprobieren aus.
 

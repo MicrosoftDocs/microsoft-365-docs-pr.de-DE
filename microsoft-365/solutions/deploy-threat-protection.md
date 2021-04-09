@@ -1,7 +1,7 @@
 ---
 title: Bereitstellen von Bedrohungsschutzfunktionen in Microsoft 365
 description: Verschaffen Sie sich einen Überblick über Die Bedrohungsschutzdienste und Sicherheitsfunktionen in Microsoft 365 E5. Schützen Sie Ihre Benutzerkonten, Geräte, E-Mail-Inhalte und mehr mit Microsoft 365 E5.
-keywords: Bedrohungsschutz, Sicherheit, E5, Cyberangriff, Schadsoftware, M365, Lösung
+keywords: advanced threat protection, security, microsoft 365 E5, solution, protect devices, defender
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 806c97a55b3cbe46d597566425cf71476586ecee
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: ea28e9c244b6b8faaeb9b1f3685d57169605cbb9
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604378"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650314"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>Bereitstellen von Bedrohungsschutzfunktionen in Microsoft 365 E5
 

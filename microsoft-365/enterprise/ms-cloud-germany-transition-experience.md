@@ -1,5 +1,5 @@
 ---
-title: Was sich nach der Migration zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen ändert
+title: Was wird sich nach der Migration zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen ändern
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -21,12 +21,12 @@ ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Verstehen, was sich bei der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verändert hat.'
 ms.openlocfilehash: 74ad9a662d3ea7a68ef1f82961864eb4468f6098
 ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51591780"
 ---
-# <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Was sich nach der Migration zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen ändert
+# <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Was wird sich nach der Migration zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen ändern
 
 Mandantenmigrationen sind so angelegt, dass sie nur minimale Auswirkungen auf Nutzer und Administratoren haben. Allerdings gibt es unterschiedliche Überlegungen für jedes Workload. Überprüfen Sie bitte die folgenden Abschnitte, um die Migrationsumgebung für die Workloads besser zu verstehen.
 
@@ -35,7 +35,7 @@ Folgend kommen die wichtigsten Unterschiede zwischen Microsoft Cloud Deutschland
 | Kategorie | Microsoft Cloud Deutschland | Office 365-Dienste in den neuen deutschen Rechenzentrumsregionen |
 |:-------|:-----|:-------|
 | Microsoft 365-Dienste, die mit nur einem Office 365-Mandanten als Abonnement verfügbar sind | 15 Dienste | 29 Dienste <br><br> Weitere Informationen finden Sie unter [Wie hoch ist die Dienstverfügbarkeit der verschiedenen Office 365-Clouddienstangebote?](ms-cloud-germany-transition.md#serv-avail). |
-| Neue Features | Es sind keine neuen Features verfügbar. | Neue Funktionen werden in Übereinstimmung mit den Office 365-Diensten bereitgestellt. |
+| Neue Features | Es werden keine neuen Features verfügbar sein. | Neue Funktionen werden in Übereinstimmung mit den Office 365-Diensten bereitgestellt. |
 | Datentreuhänder | Ja | Nein |
 | Mandantenübergreifende Zusammenarbeit mit Office 365-Mandanten weltweit | Nein | Ja |
 | Kundendatenhaltung | Kundendaten werden nur in deutschen Rechenzentren gespeichert. | Microsoft wird die folgenden Kundendaten ausschließlich in Deutschland speichern: <ul><li> Exchange Online-Postfachinhalte (E-Mail-Texte, Kalendereinträge und der Inhalt von E-Mail-Anlagen) </li><li> Microsoft Office SharePoint Online-Websiteinhalte und die auf der Website gespeicherten Dateien und auf OneDrive for Business hochgeladene Dateien </li></ul> |

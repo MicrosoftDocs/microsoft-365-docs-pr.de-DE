@@ -20,16 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: 'Erfahren Sie, wie Sie den Posteingang mit Relevanz mit dem Posteingang für alle oder bestimmte Benutzer Ihrer Organisation konfigurieren. '
-ms.openlocfilehash: 7059fbb886669af99c1471789cbbc623dc9719b8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 62a38f911e4e1b878af6489f096f17644e070978
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914282"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644512"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Konfigurieren des Posteingangs mit Relevanz für jeden Benutzer in Ihrer Organisation
 
-  Wenn Sie dafür zuständig sind, die Funktion der E-Mail für JEDEN in einem Unternehmen zu konfigurieren, dann ist das genau der Artikel für Sie! Es wird erläutert, wie Sie die E-Mail-Funktion für Ihr Unternehmen anpassen oder deaktivieren und beantwortet [Häufig gestellte Fragen](#faq-for-focused-inbox).  <br/> Wenn Sie den Posteingang mit Relevanz für sich selbst deaktivieren möchten, lesen Sie [Deaktivieren des Posteingangs mit Relevanz](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
+Wenn Sie dafür zuständig sind, die Funktion der E-Mail für JEDEN in einem Unternehmen zu konfigurieren, dann ist das genau der Artikel für Sie! Es wird erläutert, wie Sie die E-Mail-Funktion für Ihr Unternehmen anpassen oder deaktivieren und beantwortet [Häufig gestellte Fragen](#faq-for-focused-inbox).
+
+Wenn Sie den Posteingang mit Relevanz für sich selbst deaktivieren möchten, lesen Sie [Deaktivieren des Posteingangs mit Relevanz](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
 
 Wenn Sie sicher sein möchten, dass Ihre Benutzer geschäftsspezifische E-Mail-Nachrichten wie E-Mails von der Personalabteilung oder der Buchhaltung erhalten, können Sie den Posteingang mit Relevanz so konfigurieren, dass diese Nachrichten in der Ansicht "Relevant" angezeigt werden. Sie können außerdem steuern, ob den Benutzern in Ihrer Organisation der Posteingang mit Relevanz angezeigt wird.
   
@@ -37,7 +39,7 @@ Wenn Sie sicher sein möchten, dass Ihre Benutzer geschäftsspezifische E-Mail-N
 
 Sie verwenden PowerShell, um den Posteingang mit Relevanz für alle Benutzer in Ihrer Organisation zu aktivieren oder deaktivieren. Möchten Sie diesen Vorgang im Microsoft 365 Admin Center ausführen? Teilen Sie dies unserem Entwicklungsteam mit. **[Stimmen Sie hier ab!](https://go.microsoft.com/fwlink/?linkid=862489)**
   
- **So deaktivieren Sie den Posteingang mit Relevanz:**
+**So deaktivieren Sie den Posteingang mit Relevanz:**
   
 In dem folgenden PowerShell-Beispiel wird der Posteingang mit Relevanz in Ihrer Organisation auf **Aus** festgelegt. Dadurch wird die Verfügbarkeit der Funktion für Ihre Benutzer jedoch nicht blockiert. Auf Wunsch können sie den Posteingang mit Relevanz trotzdem wieder auf jedem ihrer Clients aktivieren.  
   
@@ -47,9 +49,9 @@ In dem folgenden PowerShell-Beispiel wird der Posteingang mit Relevanz in Ihrer 
 
 3. Führen Sie das Cmdlet **Get-OrganizationConfig** aus. 
 
- ``` PowerShell
-Get-OrganizationConfig
- ```
+    ```powershell
+    Get-OrganizationConfig
+    ```
 
 4. Suchen Sie nach **FocusedInboxOn**, um die aktuelle Einstellung anzuzeigen: 
 
@@ -57,27 +59,27 @@ Get-OrganizationConfig
   
 5. Führen Sie das folgende Cmdlet aus, um "Posteingang mit Relevanz" zu deaktivieren.
 
- ``` PowerShell
- Set-OrganizationConfig -FocusedInboxOn $false
- ```
+    ```powershell
+    Set-OrganizationConfig -FocusedInboxOn $false
+    ```
 
 6. Führen Sie das Cmdlet **Get-OrganizationConfig** erneut aus, und Sie sehen, dass "FocusedInboxOn" auf "$false" festgelegt ist, d. h. dass der Posteingang mit Relevanz deaktiviert ist. 
 
- **So aktivieren Sie den Posteingang mit Relevanz:**
+**So aktivieren Sie den Posteingang mit Relevanz:**
   
 - Führen Sie in Schritt 5 oben das folgende Cmdlet aus, um "Posteingang mit Relevanz" zu aktivieren.
 
- ``` PowerShell
- Set-OrganizationConfig -FocusedInboxOn $true
- ```
-
+  ```powershell
+  Set-OrganizationConfig -FocusedInboxOn $true
+  ```
+    
 ## <a name="what-do-users-see-after-i-turn-on-focused-inbox"></a>Was wird Benutzern angezeigt, nachdem der Posteingang mit Relevanz aktiviert wurde? 
 
 Der Posteingang mit Relevanz wird Benutzern erst nach dem Schließen und erneuten Starten von Outlook angezeigt. Beim Neustart von Outlook wird ein Tipp in der Outlook-Benutzeroberfläche angezeigt, der auf die Möglichkeit verweist, den neuen Posteingang mit Relevanz zu nutzen.
   
 ![Die Abbildung zeigt, wie der Posteingang mit Relevanz aussieht, wenn ein Benutzer Outlook im Web zum ersten Mal öffnet.](../../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
   
-Wenn Sie von "Clutter" zum Posteingang mit Relevanz wechseln, können sie entscheiden, ob sie ihn aktivieren ("Testen") oder das Feature schließen möchten. Wenn ein Benutzer über mehrere (unterstützte) Clients verfügt, kann er den Posteingang mit Relevanz für jeden Client einzeln aktivieren bzw. deaktivieren. Der Tipp sieht so aus:
+Wenn Sie von "Clutter&quot; zum Posteingang mit Relevanz wechseln, können sie entscheiden, ob sie ihn aktivieren (&quot;Testen") oder das Feature schließen möchten. Wenn ein Benutzer über mehrere (unterstützte) Clients verfügt, kann er den Posteingang mit Relevanz für jeden Client einzeln aktivieren bzw. deaktivieren. Der Tipp sieht so aus:
   
 ![So sieht der Posteingang mit Relevanz aus, wenn er für Ihre Benutzer bereitgestellt wurde und Outlook erneut geöffnet wird.](../../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
   
@@ -93,9 +95,9 @@ In diesem Beispiel wird "Posteingang mit Relevanz" für Tim Matthews in der Orga
 
 3. Führen Sie das cmdlet **Get-FocusedInbox** aus, z. B.: 
 
- ``` PowerShell
- Get-FocusedInbox -Identity <tim@contoso.com>
- ```
+    ```powershell
+    Get-FocusedInbox -Identity <tim@contoso.com>
+    ```
 
 4. Suchen Sie nach "FocusedInboxOn", um die aktuelle Einstellung anzuzeigen:
 
@@ -103,15 +105,15 @@ In diesem Beispiel wird "Posteingang mit Relevanz" für Tim Matthews in der Orga
   
 5. Führen Sie das folgende Cmdlet aus, um "Posteingang mit Relevanz" zu deaktivieren:
 
- ``` PowerShell
- Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
- ```
+    ```powershell
+    Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
+    ```
 
-6. Oder führen Sie das folgende Cmdlet aus, um "Posteingang mit Relevanz" zu aktivieren:
+    Oder führen Sie das folgende Cmdlet aus, um "Posteingang mit Relevanz" zu aktivieren:
 
- ``` PowerShell
- Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $true
- ```
+    ```powershell
+    Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $true
+    ```
 
 ## <a name="use-the-ui-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Verwenden der Benutzeroberfläche, um für alle Benutzer eine Transportregel zum Weiterleiten von E-Mail-Nachrichten an die Ansicht "Relevant" zu erstellen
 
@@ -125,8 +127,8 @@ In diesem Beispiel wird "Posteingang mit Relevanz" für Tim Matthews in der Orga
 
     ![focusedinbox payroll](../../media/focusedinbox-transport-rule.PNG)
 
-> [!NOTE]
-> Der Textwert der Kopfzeile in diesem Beispiel lautet **X-MS-Exchange-Organization-BypassFocusedInbox**.
+    > [!NOTE]
+    > Der Textwert der Kopfzeile in diesem Beispiel lautet **X-MS-Exchange-Organization-BypassFocusedInbox**.
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Verwenden von PowerShell, um für alle Benutzer eine Transportregel zum Weiterleiten von E-Mail-Nachrichten an die Ansicht "Relevant" zu erstellen
 
@@ -136,9 +138,9 @@ In diesem Beispiel wird "Posteingang mit Relevanz" für Tim Matthews in der Orga
 
 3. Führen Sie den folgenden Befehl aus, um zuzulassen, dass alle Nachrichten beispielsweise von der Lohnbuchhaltung an den Posteingang mit Relevanz zugestellt werden.
 
- ``` PowerShell
- New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
- ```
+    ```powershell
+    New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
+    ```
 
 > [!IMPORTANT]
 > In diesem Beispiel wird sowohl bei "X-MS-Exchange-Organization-BypassFocusedInbox" als auch bei "true" die Groß- und Kleinschreibung berücksichtigt.
@@ -147,6 +149,10 @@ In diesem Beispiel wird "Posteingang mit Relevanz" für Tim Matthews in der Orga
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
 Sie können die Kopfzeilen der E-Mail-Nachrichten überprüfen, um zu sehen, ob die E-Mail-Nachrichten basierend auf der Transportregelumleitung für den Posteingang mit Relevanz im Postfach ankommen. Wählen Sie in einem Postfach in Ihrer Organisation eine E-Mail-Nachricht aus, auf die die Transportregel "Posteingang mit Relevanz" angewendet wird. Schauen Sie sich die Kopfzeilen der Nachricht an. Hier sollte **X-MS-Exchange-Organization-BypassFocusedInbox: true** angezeigt werden. Dies bedeutet, dass die Umgehung funktioniert. Informationen zum Anzeigen der Kopfzeileninformationen finden Sie unter [Anzeigen der Internetkopfzeileninformationen einer E-Mail-Nachricht](https://go.microsoft.com/fwlink/p/?LinkId=822530).
+
+### <a name="what-will-the-user-see"></a>Was wird der Benutzer sehen?
+
+Wenn eine Transportregel vorhanden ist, wird eine Benachrichtigung für die Überschreibung angezeigt. Bei Outlook im Web wird die Option "Immer in Sonstige verschieben" deaktiviert und eine QuickInfo angezeigt. Outlook-Clients auf dem Desktop erlauben die Auswahl von "Immer in Sonstige verschieben" und zeigen einen Dialog an.
 
 ## <a name="turn-onoff-clutter"></a>Aktivieren/Deaktivieren von "Clutter"
 
@@ -201,3 +207,4 @@ Es gibt zwei Cmdlets für die Steuerung von "Posteingang mit Relevanz". Wenn Sie
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>Kann ich ein Skript ausführen, um zu sehen, wer den Posteingang mit Relevanz aktiviert hat?
 
 Nein, und dies ist beabsichtigt. Die Aktivierung des Posteingangs mit Relevanz ist eine clientseitige Einstellung. Deshalb kann Sie das Cmdlet lediglich informieren, wenn das Postfach des Benutzers für die Client-Oberfläche berechtigt ist. Es ist möglich, dass es in einigen Clients gleichzeitig aktiviert und in anderen deaktiviert ist, z. B. in der Outlook-App und Outlook Mobile aktiviert, doch in Outlook im Web deaktiviert.
+

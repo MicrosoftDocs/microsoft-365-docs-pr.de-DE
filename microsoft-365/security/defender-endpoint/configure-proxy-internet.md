@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b529b1c7fa5c4f9f81cb6bfbb5f1a6bd7823a9ad
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 97d1d50e2557cbb760248738b1f096614873958f
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587599"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644704"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen
 
@@ -58,6 +58,13 @@ Die WinHTTP-Konfigurationseinstellung ist unabhängig von den Windows Internet (
 
 Konfigurieren Sie einen registrierungsbasierten statischen Proxy, damit nur defender for Endpoint-Sensor Diagnosedaten melden und mit Defender for Endpoint-Diensten kommunizieren kann, wenn ein Computer keine Verbindung mit dem Internet herstellen darf.
 
+> [!NOTE]
+> - Wenn Sie diese Option unter Windows 10 oder Windows Server 2019 verwenden, wird empfohlen, das folgende (oder höher) Build- und kumulative Updaterollup zu verwenden:</br>
+> Windows 10, Version 1909 – https://support.microsoft.com/kb/4601380</br>
+> Windows 10, Version 2004 – https://support.microsoft.com/kb/4601382</br>
+> Windows 10, Version 20H2 – https://support.microsoft.com/kb/4601382</br>
+> Diese Updates verbessern die Konnektivität und Zuverlässigkeit des CnC(Command and Control)-Kanals.</br>
+
 Der statische Proxy kann mithilfe von Gruppenrichtlinien konfiguriert werden. Die Gruppenrichtlinien finden Sie unter:
 
 - Administrative Vorlagen > Windows-Komponenten > Datensammlungs- und Vorschaubuilds > Konfigurieren der authentifizierten Proxyverwendung für den verbundenen Benutzererfahrungs- und Telemetriedienst
@@ -66,7 +73,7 @@ Der statische Proxy kann mithilfe von Gruppenrichtlinien konfiguriert werden. Di
   - Konfigurieren des Proxys:<br>
     ![Abbildung der Gruppenrichtlinieneinstellung2](images/atp-gpo-proxy2.png)
 
-    Die Richtlinie setzt zwei Registrierungswerte (`TelemetryProxyServer` als "REG_SZ" und `DisableEnterpriseAuthProxy` als "REG_DWORD") unter dem Registrierungsschlüssel `HKLM\Software\Policies\Microsoft\Windows\DataCollection` fest.
+    Die Richtlinie setzt zwei Registrierungswerte (`TelemetryProxyServer` als "REG_SZ&quot; und `DisableEnterpriseAuthProxy` als &quot;REG_DWORD") unter dem Registrierungsschlüssel `HKLM\Software\Policies\Microsoft\Windows\DataCollection` fest.
 
     Der Registrierungswert `TelemetryProxyServer` hat das folgende Zeichenfolgenformat:
 

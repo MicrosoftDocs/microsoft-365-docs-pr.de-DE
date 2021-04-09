@@ -21,12 +21,12 @@ ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: '
 ms.openlocfilehash: 7b99238b588363203f7aac07b3fb056d7a37e19f
 ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51592072"
 ---
-# <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>So melden Sie sich für eine neue Migration von Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen an
+# <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Anmelden für die neue Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen
 
 > [!NOTE]
 > Dieser Artikel gilt nur für Kunden von Microsoft Cloud Germany (Microsoft Cloud Deutschland).

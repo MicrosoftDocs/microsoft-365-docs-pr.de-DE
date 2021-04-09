@@ -1,5 +1,5 @@
 ---
-title: Aktivitäten nach der Migration für die Migration aus Microsoft Cloud Deutschland
+title: Post-Migrationsaktivitäten für die Migration von Microsoft Cloud Deutschland
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -17,17 +17,17 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 'Zusammenfassung: Aktivitäten nach der Migration nach dem Wechsel von Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
+description: 'Zusammenfassung: Post-Migrationsaktivitäten nach der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
 ms.openlocfilehash: 745589c1c997540094fc4a770e437de89015f88a
 ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51591756"
 ---
-# <a name="post-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Aktivitäten nach der Migration für die Migration aus Microsoft Cloud Deutschland
+# <a name="post-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Post-Migrationsaktivitäten für die Migration von Microsoft Cloud Deutschland
 
-Die folgenden Abschnitte bieten Aktivitäten nach der Migration für mehrere Dienste nach dem Wechsel von Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.
+Die folgenden Abschnitte enthalten Post-Migrationsaktivitäten für mehrere Dienste nach dem Wechsel von Microsoft Cloud Deutschland zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.
 
 ## <a name="azure-ad"></a>Azure AD
 
@@ -40,7 +40,7 @@ Die folgenden Abschnitte bieten Aktivitäten nach der Migration für mehrere Die
 |||||
 
 ### <a name="azure-ad-federated-authentication-with-ad-fs"></a>Azure AD-Verbundauthentifizierung mit AD FS
-**Gilt für:** Alle Kunden, die die Verbundauthentifizierung mit AD FS verwenden
+**Gilt für:** Alle Kunden, die Verbundauthentifizierung mit AD FS verwenden
 
 | Schritte: | Beschreibung | Auswirkung |
 |:-------|:-------|:-------|
@@ -72,7 +72,7 @@ Die folgenden Abschnitte bieten Aktivitäten nach der Migration für mehrere Die
 ||||
 
 ## <a name="third-party-services"></a>Drittanbieterdienste
-**Gilt für:** Kunden, die Dienste von Drittanbietern für Office 365-Dienste-Endpunkte verwenden
+**Gilt für:** Kunden, die Drittanbieterdienste für Office 365-Dienstendpunkte verwenden.
 
 | Schritte: | Beschreibung | Auswirkung |
 |:-------|:-------|:-------|
@@ -85,7 +85,7 @@ Die folgenden Abschnitte bieten Aktivitäten nach der Migration für mehrere Die
 | Schritte: | Beschreibung | Auswirkung |
 |:-------|:-------|:-------|
 | Veröffentlichen Sie SharePoint 2013-Workflows erneut. | Bei der Vorbereitung der Migration wurde die Anzahl der SharePoint 2013-Workflows reduziert. Nach Abschluss der Migration kann der Kunde die Workflows erneut veröffentlichen. | Dies ist eine erforderliche Aktion. Wird sie nicht ausgeführt, kann dies zu Verwirrungen bei Benutzern und Helpdesk-Anrufen führen. |
-| Freigeben von Elementen über Outlook | Die Freigabe von Elementen in SharePoint Online und OneDrive for Business über Outlook funktioniert nach der Mandantenübergabe nicht mehr. |<ul><li>In SharePoint Online und OneDrive for Business können Sie Elemente über Outlook freigeben. Nach dem Klicken auf die Outlook-Schaltfläche wird ein Link für die Freigabe erstellt und in eine neue Nachricht in Outlook Web App eingefügt.</li><li>Nach der Mandantenübernahmemigration funktioniert diese Freigabemethode nicht. Dieses Problem ist bereits bekannt. Da diese Outlook-Funktion allerdings bereits veraltet ist, ist die Behebung des Problems erst geplant, wenn die Unterstützung beendet wurde. </li></ul>|
+| Freigeben von Elementen über Outlook | Die Freigabe von Elementen in SharePoint Online und OneDrive for Business über Outlook funktioniert nach der Mandantenübernahmemigration nicht mehr. |<ul><li>In SharePoint Online und OneDrive for Business können Sie Elemente über Outlook freigeben. Nach dem Klicken auf die Outlook-Schaltfläche wird ein Link für die Freigabe erstellt und in eine neue Nachricht in Outlook Web App eingefügt.</li><li>Nach der Mandantenübernahmemigration funktioniert diese Freigabemethode nicht. Dieses Problem ist bereits bekannt. Da diese Outlook-Funktion allerdings bereits veraltet ist, ist die Behebung des Problems erst geplant, wenn die Unterstützung beendet wurde. </li></ul>|
 ||||
 
 ## <a name="exchange-online"></a>Exchange Online

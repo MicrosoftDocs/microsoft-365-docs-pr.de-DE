@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Hier erfahren Sie, was mit Ihren Daten geschieht, wenn Ihr Microsoft 365-Abonnement abläuft, deaktiviert wird oder Sie es kündigen.
-ms.openlocfilehash: ee83e237d17dc2de60b08b8d4dbdc46c98fc8251
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 8f853000ebd20ab8f6625df9f773bbb182bdb7fd
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615399"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644656"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Microsoft 365 Business-Abonnement endet?
 
@@ -68,6 +68,9 @@ Wenn Sie sich über das Kündigen informieren möchten, lesen Sie [Kündigen Ihr
 > [!IMPORTANT]
 > Wenn Sie möchten, dass Ihre Abonnementdaten vor Ablauf des typischen "Deaktiviert"-Stadiums gelöscht werden, können Sie [Ihr Konto schließen](../close-your-account.md).
   
+> [!NOTE]
+> Wenn Sie ein Abonnement explizit löschen, dann überspringt es die Phasen "Abgelaufen" und "Deaktiviert" und die SharePoint Online-Daten und -Inhalte, einschließlich OneDrive, werden sofort gelöscht.
+
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>Welche Möglichkeiten habe ich, wenn mein Abonnement bald abläuft?
 
 Während Ihr Abonnement aktiv ist, verfügen Sie und ihre Endbenutzer über normalen Zugriff auf Ihre Daten, Dienste wie E-Mail und OneDrive for Business sowie Office-Anwendungen. Wenn sich Ihr Abonnement dem Ablaufdatum nähert, erhalten Sie als Administrator per E-Mail und im Admin Center eine Reihe entsprechender Benachrichtigungen.

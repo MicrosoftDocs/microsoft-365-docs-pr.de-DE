@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Suchen, Testen und Bereitstellen von Microsoft- und Microsoft-Partner-Apps für Benutzer und Gruppen in Ihrer Organisation über das Portal für integrierte Apps im Microsoft 365 Admin Center.
-ms.openlocfilehash: f806d48e0ed582b1b5c1ee262058ce987125bd99
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: da67cbe5f8b6e5f2da42e1f4b57a55d7d4a768fb
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488289"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644476"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Testen und Bereitstellen von Microsoft 365-Apps durch Partner im Portal für integrierte Apps
 
@@ -29,7 +29,7 @@ Weitere Informationen zum Kauf und Zur Lizenzierung von Microsoft 365-Apps von P
 
 Weitere Informationen zum Erstellen dieser Apps durch Partner finden Sie unter Planen eines [SaaS-Angebots für den kommerziellen Marketplace.](https://go.microsoft.com/fwlink/?linkid=2158277)
 
-Das Portal für integrierte Apps ist nur für globale Administratoren zugänglich und nur für WorldWide-Kunden verfügbar. Dieses Feature ist in Denk- und Regierungswölkchen nicht verfügbar.
+Das Portal für integrierte Apps ist nur für globale Administratoren zugänglich und nur für weltweite Kunden verfügbar. Dieses Feature ist in Denk- und Regierungswölkchen nicht verfügbar.
 
 Das Portal für integrierte Apps zeigt eine Liste der Apps an, die einzelne Apps und Microsoft 365-Apps von Partnern enthält, die In Ihrer Organisation bereitgestellt werden. Nur Web-Apps, SPFx-Apps, Office-Add-Ins und Teams-Apps werden aufgelistet. Für Web-Apps werden 2 Arten von Apps angezeigt.
 

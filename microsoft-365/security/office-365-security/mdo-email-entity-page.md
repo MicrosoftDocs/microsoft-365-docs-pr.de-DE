@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender für Office 365 E5- und ATP P1- und ATP P2-Kunden können jetzt eine 360-Grad-Ansicht jeder E-Mail mit E-Mail-Entitätsseite erhalten.
-ms.openlocfilehash: 6d2777113e7e9f9ce760dab3b83252eceab520ff
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 7797e9f5965f43b856c2c34df1f99fddf72d5df5
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599487"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650338"
 ---
 # <a name="the-email-entity-page"></a>Die Seite „E-Mail-Entität"
 
@@ -119,7 +119,7 @@ Benutzern werden bereicherte Detonationsdetails für bekannte schädliche Anlage
   - Wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist, kann Exchange Online Protection (EOP) Nachrichten nach bestimmten Kriterien in Junk verschieben. Die Verschieben kann auf der Spamfilterungsverkündungsaktion Nachricht in Junk-E-Mail-Ordner verschieben oder auf der Liste blockierter Absender im Postfach basieren.  Durch Deaktivieren der Junk-E-Mail-Regel wird die Zustellung von Nachrichten an den Junk-E-Mail-Ordner basierend auf der Liste sicherer *Absender* im Postfach verhindert.
   - Wenn die Junk-E-Mail-Regel für das Postfach deaktiviert ist, kann EOP Nachrichten nicht in den Junk-E-Mail-Ordner verschieben, basierend auf der Spamfilterungs-Verdict-Aktion Nachricht in Junk-E-Mail-Ordner verschieben oder die Sammlung sicherer Listen im Postfach.  
 
-- *Massenkonforme Ebene (Bulk Compliant Level, BCL):* Die Massenbeschwerdestufe (Bulk Complaint Level, BCL) der Nachricht. Eine höhere BCL gibt an, dass eine Massen-E-Mail-Nachricht mit höherer Wahrscheinlichkeit Beschwerden generiert (das natürliche Ergebnis, wenn es sich bei der E-Mail wahrscheinlich um Spam handelt).
+- *Massenbeschwerdestufe (Bulk Complaint Level, BCL):* Die Massenbeschwerdestufe (Bulk Complaint Level, BCL) der Nachricht. Eine höhere BCL gibt an, dass eine Massen-E-Mail-Nachricht mit höherer Wahrscheinlichkeit Beschwerden generiert (das natürliche Ergebnis, wenn es sich bei der E-Mail wahrscheinlich um Spam handelt).
 
 - *Spam Confidence Level (SCL)*: Die Spamsicherheitsstufe (Spam Confidence Level, SCL) der Nachricht. Ein höherer Wert gibt an, dass die Nachricht mit größerer Wahrscheinlichkeit Spam ist.
 

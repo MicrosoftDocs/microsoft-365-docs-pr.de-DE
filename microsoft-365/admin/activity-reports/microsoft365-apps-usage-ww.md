@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Erfahren Sie, wie Sie einen Microsoft 365 Apps for Usage Report mithilfe des Microsoft 365 Reports-Dashboards im Microsoft 365 Admin Center erhalten.
-ms.openlocfilehash: 88ef5e1291c35bbac050609e26e2ac5adef9d981
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 5b45e7994126018701c409d4fbfc6f1172924773
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579590"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644267"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365-Berichte im Admin Center – Microsoft 365-Apps-Nutzung
 
@@ -33,7 +33,7 @@ Das Microsoft 365 **Reports-Dashboard** zeigt Ihnen die Übersicht über die Akt
 
 
  > [!NOTE]
- > Sie müssen ein globaler Administrator, globaler Leser oder Berichtleser in Microsoft 365 oder ein Exchange-, SharePoint- oder Skype for Business-Administrator sein, um Berichte anzeigen zu können.
+ > Sie müssen ein globaler Administrator, globaler Leser oder Berichtleser in Microsoft 365 oder ein Exchange-, SharePoint- oder Skype for Business-Administrator sein, um Berichte anzeigen zu können. Aktivierungen freigegebener Computer werden in diesem Bericht nicht unterstützt.
 
 ## <a name="how-to-get-to-the-microsoft-365-apps-usage-report"></a>So erhalten Sie den Microsoft 365 Apps-Nutzungsbericht
 
@@ -44,7 +44,8 @@ Das Microsoft 365 **Reports-Dashboard** zeigt Ihnen die Übersicht über die Akt
 
 Sie können einen Einblick in die Microsoft 365-Apps-Aktivität Ihres Benutzers erhalten, indem Sie sich die Benutzer- **und** **Plattformdiagramme** ansehen.
 
-![Microsoft 365 Apps-Nutzungsbericht](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
+> [!div class="mx-imgBorder"]
+> ![Microsoft 365 Apps-Nutzungsbericht](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
 
 |Element|Beschreibung|
  |:-----|:-----|

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bcb96ea29649bf3525b2ffcf6d5cbb5d299bacf3
-ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
+ms.openlocfilehash: 3ad31e385ed1a3c32a261286b91912c7b2562f87
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51418116"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650290"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurieren erweiterter Features in Defender for Endpoint
 
@@ -64,6 +64,11 @@ Weitere Informationen zu Rollenzuweisungen finden Sie unter [Erstellen und Verwa
 
 Wenn Sie dieses Feature aktivieren, können Sie nicht signierte Skripts in einer Liveantwortsitzung ausführen.
 
+## <a name="always-remediate-pua"></a>PuA immer 2013
+Potenziell unerwünschte Anwendungen (PUA) sind eine Kategorie von Software, die dazu führen kann, dass Ihr Computer langsam ausgeführt wird, unerwartete Anzeigen anzeigen oder im schlechtesten Fall andere Software installieren kann, die unerwartet oder unerwünscht sein kann. 
+
+Aktivieren Sie dieses Feature, damit potenziell unerwünschte Anwendungen (PUA) auf allen Geräten in Ihrem Mandanten behoben werden, auch wenn der PUA-Schutz auf den Geräten nicht konfiguriert ist. Dies schützt Benutzer vor versehentlicher Installation unerwünschter Anwendungen auf ihrem Gerät. Wenn diese Einstellung deaktiviert ist, hängt die Behebung von der Gerätekonfiguration ab. 
+
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>Einschränken der Korrelation auf bereichsierte Gerätegruppen
 Wenn diese Einstellung aktiviert ist, werden Warnungen in separaten Vorfällen basierend auf ihrer Bereichsgerätegruppe korreliert. Standardmäßig erfolgt die Vorfallkorrelation über den gesamten Mandantenbereich.
@@ -71,9 +76,9 @@ Wenn diese Einstellung aktiviert ist, werden Warnungen in separaten Vorfällen b
 >[!NOTE]
 >Das Ändern dieser Einstellung wirkt sich nur auf zukünftige Warnungskorrelation aus.
 
-
 ## <a name="enable-edr-in-block-mode"></a>Aktivieren von EDR im Blockmodus
 Endpunkterkennung und -reaktion (Endpoint Detection and Response, EDR) im Blockmodus bietet Schutz vor schädlichen Artefakten, auch wenn Microsoft Defender Antivirus im passiven Modus ausgeführt wird. Bei aktivierter EDR im Blockmodus werden schädliche Artefakte oder Verhaltensweisen blockiert, die auf einem Gerät erkannt werden. EDR im Blockmodus arbeitet hinter den Kulissen, um bösartige Artefakte zu bewerkden, die nach der Verletzung erkannt werden.
+
 
 ## <a name="autoresolve-remediated-alerts"></a>Behebung von Warnungen durch Autoresolve
 
@@ -119,13 +124,13 @@ Weitere Informationen finden Sie unter [Manage indicators](manage-indicators.md)
 > [!NOTE]
 > Der Netzwerkschutz nutzt Reputationsdienste, die Anforderungen an Orten verarbeiten, die sich möglicherweise außerhalb des für Ihre Defender for Endpoint-Daten ausgewählten Speicherorts befinden.
 
-
 ## <a name="tamper-protection"></a>Schutz vor Manipulationen
 Bei einigen Arten von Cyberangriffen versuchen schlechte Akteure, Sicherheitsfeatures, z. B. Virenschutz, auf Ihren Computern zu deaktivieren. Schlechte Akteure möchten Ihre Sicherheitsfeatures deaktivieren, um leichteren Zugriff auf Ihre Daten zu erhalten, Schadsoftware zu installieren oder Ihre Daten, Identität und Geräte anderweitig auszunutzen.
 
 Manipulationsschutz sperrt Im Wesentlichen Microsoft Defender Antivirus und verhindert, dass Ihre Sicherheitseinstellungen über Apps und Methoden geändert werden.
 
 Halten Sie den Manipulationsschutz aktiviert, um unerwünschte Änderungen an Ihrer Sicherheitslösung und ihren wesentlichen Features zu verhindern.
+
 
 ## <a name="show-user-details"></a>Anzeigen von Benutzerdetails
 
@@ -137,6 +142,7 @@ Aktivieren Sie dieses Feature, damit Benutzerdetails in Azure Active Directory g
 
 Weitere Informationen finden Sie unter [Untersuchen eines Benutzerkontos](investigate-user.md).
 
+
 ## <a name="skype-for-business-integration"></a>Skype for Business-Integration
 
 Wenn Sie die Skype for Business-Integration aktivieren, können Sie mit Benutzern über Skype for Business, E-Mail oder Telefon kommunizieren. Dies kann nützlich sein, wenn Sie mit dem Benutzer kommunizieren und Risiken mindern müssen.
@@ -144,7 +150,7 @@ Wenn Sie die Skype for Business-Integration aktivieren, können Sie mit Benutzer
 > [!NOTE]
 > Wenn ein Gerät vom Netzwerk isoliert wird, gibt es ein Popup, in dem Sie die Outlook- und Skype-Kommunikation aktivieren können, wodurch die Kommunikation mit dem Benutzer ermöglicht wird, während er vom Netzwerk getrennt ist. Diese Einstellung gilt für die Skype- und Outlook-Kommunikation, wenn sich Geräte im Isolationsmodus befinden.
 
-## <a name="azure-advanced-threat-protection-integration"></a>Azure Advanced Threat Protection-Integration
+## <a name="microsoft-defender-for-identity-integration"></a>Microsoft Defender for Identity-Integration
 
 Die Integration in Azure Advanced Threat Protection ermöglicht es Ihnen, direkt in ein anderes Microsoft Identity-Sicherheitsprodukt zu pivotieren. Azure Advanced Threat Protection erweitert eine Untersuchung um zusätzliche Einblicke zu einem mutmaßlich gefährdeten Konto und zugehörigen Ressourcen. Durch aktivieren dieses Feature bereichern Sie die gerätebasierte Untersuchungsfunktion, indem Sie aus identifikationsbezogener Sicht über das Netzwerk pivotieren.
 
@@ -162,13 +168,12 @@ Wenn Sie dieses Feature aktivieren, können Sie Daten aus Office 365 Advanced Th
 
 Um kontextbezogene Geräteintegration in Office 365 Threat Intelligence zu erhalten, müssen Sie die Defender for Endpoint-Einstellungen im Security & Compliance-Dashboard aktivieren. Weitere Informationen finden Sie unter [Threat investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti).
 
-## <a name="microsoft-threat-experts"></a>Microsoft-Bedrohungsexperten
+## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft Threat Experts – Benachrichtigungen über gezielte Angriffe
 
 Von den beiden Microsoft Threat Expert-Komponenten ist eine gezielte Angriffsbenachrichtigung allgemein verfügbar. Die Experten-bei-Bedarf-Funktion befindet sich noch in der Vorschau. Sie können die Experten-bei-Bedarf-Funktion nur verwenden, wenn Sie eine Vorschau beantragt haben und Ihre Anwendung genehmigt wurde. Sie können gezielte Angriffsbenachrichtigungen von Microsoft Threat Experts über das Benachrichtigungsdashboard ihres Defender for Endpoint-Portals und per E-Mail empfangen, wenn Sie es konfigurieren.
 
 > [!NOTE]
 > Die Microsoft Threat Experts-Funktion in Defender for Endpoint ist mit einer E5-Lizenz für [Enterprise Mobility + Security verfügbar.](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
 Wenn Sie diese Einstellung aktivieren, werden Defender for Endpoint-Signale an Microsoft Cloud App Security weitergeleitet, um einen tieferen Einblick in die Verwendung von Cloudanwendung zu erhalten. Weitergeleitete Daten werden am gleichen Speicherort wie Ihre Cloud App Security-Daten gespeichert und verarbeitet.
@@ -176,13 +181,10 @@ Wenn Sie diese Einstellung aktivieren, werden Defender for Endpoint-Signale an M
 > [!NOTE]
 > Dieses Feature ist mit einer E5-Lizenz für [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) auf Geräten mit Windows 10, Version 1709 (Os Build 16299.1085 mit [KB4493441),](https://support.microsoft.com/help/4493441)Windows 10, verfügbar. Version 1803 (Betriebssystem build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, Version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)) oder höher Windows 10-Versionen.
 
-## <a name="azure-information-protection"></a>Azure Information Protection
-
-Wenn Sie diese Einstellung aktivieren, können Signale an Azure Information Protection weitergeleitet werden. Sie bietet Datenbesitzern und Administratoren Einblick in geschützte Daten auf integrierten Geräten und Geräterisikobewertungen.
-
 ## <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
 Weiterleitung von Microsoft Defender for Endpoint-Signalen an Microsoft Secure Score im Microsoft 365 Security Center. Wenn Sie dieses Feature aktivieren, erhält Microsoft Secure Score Einblick in die Sicherheitslage des Geräts. Weitergeleitete Daten werden am gleichen Speicherort wie Ihre Microsoft Secure Score-Daten gespeichert und verarbeitet.
+
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>Aktivieren der Microsoft Defender for Endpoint-Integration über das Microsoft Defender for Identity-Portal
 
@@ -196,6 +198,17 @@ Um kontextbezogene Geräteintegration in Microsoft Defender for Identity zu erha
 
 Nachdem Sie die Integrationsschritte in beiden Portalen abgeschlossen haben, können Sie relevante Warnungen auf der Seite Gerätedetails oder Benutzerdetails anzeigen.
 
+## <a name="web-content-filtering"></a>Internet-Inhaltsfilterung
+Blockieren Sie den Zugriff auf Websites, die unerwünschte Inhalte enthalten, und verfolgen Sie Webaktivitäten in allen Domänen. Erstellen Sie eine Webinhaltsfilterrichtlinie, um die Webinhaltskategorien anzugeben, die Sie [blockieren möchten.](https://security.microsoft.com/preferences2/web_content_filtering_policy) Stellen Sie sicher, dass Sie beim Bereitstellen der Microsoft Defender for Endpoint-Sicherheitsgrundlinie über [Netzwerkschutz im Sperrmodus verfügen.](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2)
+
+
+## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Freigeben von Endpunktwarnungen mit Microsoft Compliance Center
+Weitergeleitet Endpunktsicherheitswarnungen und deren Triagestatus an das Microsoft Compliance Center, sodass Sie Insider-Risikomanagementrichtlinien mit Warnungen verbessern und interne Risiken vor schaden verursachen können. Weitergeleitete Daten werden am gleichen Speicherort wie Ihre Office 365-Daten verarbeitet und gespeichert.
+
+Nach dem Konfigurieren der [Sicherheitsrichtlinienverletzungsindikatoren](/microsoft-365/compliance/insider-risk-management-settings#indicators) in den Einstellungen für das Insiderrisikomanagement werden Defender for Endpoint-Warnungen für das Insiderrisikomanagement für anwendbare Benutzer freigegeben.
+
+
+
 ## <a name="microsoft-intune-connection"></a>Microsoft Intune-Verbindung
 
 Defender for Endpoint kann in [Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune) integriert werden, um den [risikobasierten bedingten](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)Zugriff auf Geräte zu ermöglichen. Wenn Sie [dieses Feature aktivieren,](configure-conditional-access.md)können Sie Defender for Endpoint-Geräteinformationen für Intune freigeben und so die Richtliniendurchsetzung verbessern.
@@ -207,6 +220,7 @@ Dieses Feature ist nur verfügbar, wenn Sie über Folgendes verfügen:
 
 - Ein lizenzierter Mandant für Enterprise Mobility + Security E3 und Windows E5 (oder Microsoft 365 Enterprise E5)
 - Eine aktive Microsoft Intune-Umgebung, bei der Intune-verwaltete Windows [10-Geräte Azure AD beigetreten sind.](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/)
+
 
 ### <a name="conditional-access-policy"></a>Richtlinie für bedingten Zugriff
 
@@ -221,11 +235,8 @@ Erfahren Sie mehr über neue Features in der Defender for Endpoint-Vorschauversi
 
 Sie haben Zugriff auf anstehende Features, zu denen Sie Feedback geben können, um die Allgemeine Erfahrung zu verbessern, bevor Features allgemein verfügbar sind.
 
-## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Freigeben von Endpunktwarnungen mit Microsoft Compliance Center
 
-Weitergeleitet Endpunktsicherheitswarnungen und deren Triagestatus an das Microsoft Compliance Center, sodass Sie Insider-Risikomanagementrichtlinien mit Warnungen verbessern und interne Risiken vor schaden verursachen können. Weitergeleitete Daten werden am gleichen Speicherort wie Ihre Office 365-Daten verarbeitet und gespeichert.
 
-Nach dem Konfigurieren der [Sicherheitsrichtlinienverletzungsindikatoren](/microsoft-365/compliance/insider-risk-management-settings#indicators) in den Einstellungen für das Insiderrisikomanagement werden Defender for Endpoint-Warnungen für das Insiderrisikomanagement für anwendbare Benutzer freigegeben.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

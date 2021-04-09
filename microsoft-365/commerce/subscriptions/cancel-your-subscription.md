@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Microsoft 365 für Business-Testversion oder ein kostenpflichtiges Abonnement kündigen können.
 ms.date: ''
-ms.openlocfilehash: 0d37a2459c89bf5931af26a91ed14e2898c1c8c4
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 2163462ae206871d66155331096337c29d6a87c2
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615387"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644644"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
@@ -47,6 +47,15 @@ Wenn Sie Ihren eigenen Domänennamen für die Nutzung mit Ihrem Abonnement hinzu
 ::: moniker range="o365-worldwide"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
+2. Suchen Sie das Abonnement, das Sie kündigen möchten. Wählen Sie **Weitere Aktionen** (drei Punkte) und dann **Abonnement kündigen** aus.
+3. Wählen Sie im Bereich **Abonnement kündigen** einen Grund aus, warum Sie kündigen. Geben Sie optional Feedback.
+4. Wählen Sie **Speichern** aus.
+
+Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nur noch eingeschränkte Funktionen, bis es gelöscht wird. Weitere Informationen über die Folgen der Kündigung eines kostenpflichtigen Microsoft 365 Business-Abonnements finden Sie unter [Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Microsoft 365 Business-Abonnement endet?](what-if-my-subscription-expires.md)
+
+> [!NOTE]
+> Wenn Sie ein Abonnement explizit löschen, dann überspringt es die Phasen "Abgelaufen" und "Deaktiviert" und die SharePoint Online-Daten und -Inhalte, einschließlich OneDrive, werden sofort gelöscht.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"

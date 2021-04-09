@@ -21,12 +21,12 @@ ms.custom:
 description: Administratoren können sich über die Antispameinstellungen und -filter informieren, mit deren Hilfe Spam in Exchange Online Protection (EOP) verhindert wird.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f19330d7af9c4a6601baa9562766eb5a6e7052a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: eaff771d6fa0490819ec076b5a9a43ac843cf207
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206864"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650266"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Antispamschutz in EOP
 
@@ -91,7 +91,7 @@ Hier sind einige bewährte Methoden, die für beide Szenarien gelten:
 
   - **DMARC**: Domänenbasierte Nachrichtenauthentifizierung, -berichterstellung und -konformität hilft Ziel-E-Mail-Systemen zu bestimmen, was mit Nachrichten zu tun ist, bei der SPF- oder DKIM-Prüfungen fehlschlagen, und stellt eine weitere Vertrauensebene für Ihre E-Mail-Partner zur Verfügung. Weitere Informationen finden Sie unter [Verwenden von DMARC zum Überprüfen von E-Mails in Microsoft 365](use-dmarc-to-validate-email.md).
 
-- **Überprüfen Sie Ihre** Massen-E-Mail-Einstellungen: Der In Antispamrichtlinien konfigurierte Schwellenwert (Bulk Compliant Level, BCL) bestimmt, ob Massen-E-Mails (auch als graue E-Mails _bezeichnet)_ als Spam gekennzeichnet sind. Die powerShell-only-Einstellung _MarkAsSpamBulkMail,_ die standardmäßig aktiviert ist, trägt ebenfalls zu den Ergebnissen bei. Weitere Informationen finden Sie unter [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
+- **Überprüfen Sie Ihre** Massen-E-Mail-Einstellungen: Der In Antispamrichtlinien konfigurierte Schwellenwert (Bulk Complaint Level, BCL) bestimmt, ob Massen-E-Mails (auch als graue E-Mails _bezeichnet)_ als Spam gekennzeichnet sind. Die powerShell-only-Einstellung _MarkAsSpamBulkMail,_ die standardmäßig aktiviert ist, trägt ebenfalls zu den Ergebnissen bei. Weitere Informationen finden Sie unter [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>Verhindern der Zustellung von Spam an den Posteingang
 

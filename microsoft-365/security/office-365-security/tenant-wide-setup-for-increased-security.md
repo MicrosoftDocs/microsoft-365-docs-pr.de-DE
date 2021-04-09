@@ -20,12 +20,12 @@ ms.custom:
 description: In diesem Thema werden Sie durch die empfohlene Konfiguration für mandantenweite Einstellungen, die sich auf die Sicherheit Ihrer Microsoft 365-Umgebung auswirken, beschrieben.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64715b026c3dcb029bea4d75697bf687559c168c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: efcc468dc9b6a41af79ecf2f22a6ad58a410e08f
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206424"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650326"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Konfigurieren Ihres Microsoft 365-Mandanten für höhere Sicherheit 
 
@@ -145,7 +145,7 @@ Weitere Informationen:
 
 ![Cloud App Security-Dashboard](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+## <a name="additional-resources"></a>Weitere Ressourcen
 
 Diese Artikel und Leitfäden enthalten zusätzliche Anleitungen zum Schützen Ihrer Microsoft 365-Umgebung:
 

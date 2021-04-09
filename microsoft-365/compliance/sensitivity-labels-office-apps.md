@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen für IT-Administratoren zur Verwaltung von Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobilgeräte und das Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5a82eba3801509ed2e8ffb46ab32045466204fab
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 3aa5c8065b882dff670d6b829141955bf615d933
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498820"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599840"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -85,18 +85,20 @@ Die aufgelisteten Zahlen sind die minimale Office-Anwendungsversion, die für je
 |[Eine Begründung für die Änderung einer Beschriftung verlangen](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Link zu einer benutzerdefinierten Hilfeseite bereitstellen](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Inhalt markieren](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
-|[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables)                                              | Wird überprüft                     | Wird überprüft                 | Wird überprüft         | Wird überprüft           | Wird überprüft               |
+|[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables) <sup>1</sup>                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Benutzern das Zuweisen von Berechtigungen gestatten: <br /> – Nicht weiterleiten](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Benutzern das Zuweisen von Berechtigungen gestatten: <br /> – Nur verschlüsseln](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | Wird überprüft | Wird überprüft  | Wird überprüft | Rollout |
-|[Von Benutzern fordern, dass sie eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | Rollout: 2101+                        | 16.43+ <sup>\*</sup>                    | Wird überprüft            | Wird überprüft                | Ja                |
+|[Von Benutzern fordern, dass sie eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | Rollout: 2101+                        | 16.43+ <sup>2</sup>                    | Wird überprüft            | Wird überprüft                | Ja                |
 |[Überwachung bezeichnungsbezogener Benutzeraktivitäten](data-classification-activity-explorer.md) | 2011+ | Wird überprüft | Wird überprüft           | Wird überprüft               | Wird überprüft |
-|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | Wird überprüft           | Wird überprüft               | Ja |
+|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>2</sup>                    | Wird überprüft           | Wird überprüft               | Ja |
 |
 
-**Fußnote:**
+**Fußnoten:**
 
-<sup>\*</sup> Erfordert das [neue Outlook für Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
+<sup>1</sup> Derzeit werden nur die [Item.Label- und If.App-Variablen](#dynamic-markings-with-variables) unterstützt
+<br />
+<sup>2</sup> Erfordert das [neue Outlook für Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
 
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office-integrierter Bezeichnungs-Assistent und andere Bezeichnungslösungen
@@ -291,20 +293,20 @@ Für diese Szenarien kann ein Benutzer mit seinen Office-Apps die Inhaltsmarkier
 ### <a name="dynamic-markings-with-variables"></a>Weitere Informationen finden Sie unter Dynamische Markierungen mit Variablen.
 
 > [!IMPORTANT]
-> Derzeit unterstützen nicht alle Apps auf allen Plattformen dynamische Inhaltsmarkierungen, die Sie für Ihre Kopf- und Fußzeilen sowie Wasserzeichen festlegen können. Bei Apps, die diese Fähigkeit nicht unterstützen, wenden sie die Markierungen als den in der Bezeichnungskonfiguration angegebenen Originaltext an, anstatt die Variablen aufzulösen.
+> Derzeit unterstützen nicht alle Apps auf allen Plattformen dynamische Inhaltsmarkierungen, die Sie für Ihre Kopf- und Fußzeilen sowie Wasserzeichen festlegen können. Bei Apps, welche diese Fähigkeit nicht unterstützen, wenden sie die Markierungen als den in der Bezeichnungskonfiguration angegebenen Originaltext an, anstatt die Variablen aufzulösen.
 > 
-> Der einheitliche Bezeichnungs-Assistent von Azure Information Protection unterstützt dynamische Markierungen. Für die in Office integrierte Bezeichnung siehe die Tabellen im Abschnitt [Fähigkeiten](#support-for-sensitivity-label-capabilities-in-apps) auf dieser Seite.
+> Der einheitliche Bezeichnungs-Client von Azure Information Protection unterstützt dynamische Markierungen und alle aufgelisteten Variablen. Für die in Office integrierte Bezeichnung finden Sie die Mindestversionen in den Tabellen im Abschnitt [Funktionen](#support-for-sensitivity-label-capabilities-in-apps) auf dieser Seite, und dann in der folgenden Tabelle, um die unterstützten Variablen zu identifizieren.
 
 Wenn Sie eine Vertraulichkeitsbezeichnungen für Inhaltsmarkierungen konfigurieren, können Sie die folgenden Variablen in der Textzeichenfolge für Ihre Kopf- und Fußzeile oder Ihr Wasserzeichen verwenden:
 
 | Variable | Beschreibung | Beispiel beim Aufbringen der Bezeichnung |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Bezeichnungs-Anzeigename der angewendeten Bezeichnung| **Allgemein**|
-| `${Item.Name}` | Dateiname oder E-Mail-Betreff des zu bezeichnenden Inhalts | **Sales.docx** |
-| `${Item.Location}` | Pfad und Dateiname des zu bezeichnenden Dokuments bzw. der E-Mail-Betreff für eine zu bezeichnenden E-Mail | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Anzeigename des Benutzers, der die Bezeichnung anbringt| **Richard Simone** |
-| `${User.PrincipalName}` | Azure AD-Benutzerprinzipalname (UPN) des Benutzers, der die Bezeichnung anwendet | **rsimone\@contoso.com** |
-| `${Event.DateTime}` | Datum und Uhrzeit, zu der der Inhalt bezeichnet wird, in der lokalen Zeitzone des Benutzers, der die Bezeichnung anbringt | **10.08.2020 13:30 UHR** |
+| `${Item.Label}` | Bezeichnungs-Anzeigename der angewendeten Bezeichnung <br /><br> Integrierte Bezeichnung: Unterstützt durch Word, Excel, PowerPoint und Outlook | **Allgemein**|
+| `${Item.Name}` | Dateiname oder E-Mail-Betreff des zu bezeichnenden Inhalts <br /><br> Integrierte Bezeichnung: Unterstützt durch Word, Excel, PowerPoint | **Sales.docx** |
+| `${Item.Location}` | Pfad und Dateiname des zu bezeichnenden Dokuments bzw. der E-Mail-Betreff für eine zu bezeichnenden E-Mail <br /><br> Integrierte Bezeichnung: Unterstützt durch Word, Excel, PowerPoint | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Anzeigename des Benutzers, der die Bezeichnung anbringt <br /><br> Integrierte Bezeichnung: Unterstützt durch Word, Excel, PowerPoint | **Richard Simone** |
+| `${User.PrincipalName}` | Azure AD-Benutzerprinzipalname (UPN) des Benutzers, der die Bezeichnung anwendet <br /><br> Integrierte Bezeichnung: Unterstützt durch Word, Excel, PowerPoint  | **rsimone\@contoso.com** |
+| `${Event.DateTime}` | Datum und Uhrzeit, zu der der Inhalt bezeichnet wird, in der lokalen Zeitzone des Benutzers, der die Bezeichnung anbringt <br /><br> Integrierte Bezeichnung: Unterstützt durch Word, Excel, PowerPoint  | **10.08.2020 13:30 UHR** |
 
 > [!NOTE]
 > Bei der Syntax für diese Variablen wird zwischen Groß- und Kleinschreibung unterschieden.
@@ -312,9 +314,6 @@ Wenn Sie eine Vertraulichkeitsbezeichnungen für Inhaltsmarkierungen konfigurier
 #### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Setzen unterschiedlicher visueller Markierungen für Word, Excel, PowerPoint und Outlook
 
 Als zusätzliche Variable können Sie visuelle Markierungen pro Office-Anwendungstyp konfigurieren, indem Sie eine "If.App"-Variablenanweisung in der Textzeichenfolge verwenden und den Anwendungstyp durch die Werte **Word**, **Excel**, **PowerPoint** oder **Outlook** identifizieren. Sie können diese Werte auch abkürzen, was notwendig ist, wenn Sie mehrere Werte in derselben If.App-Anweisung angeben möchten.
-
-> [!NOTE]
-> Der Vollständigkeit halber sind auch Anleitungen für Outlook enthalten, obwohl diese derzeit nur vom einheitlichen Bezeichnungs-Assistent von Azure Information Protection unterstützt werden.
 
 Verwenden Sie die folgende Syntax:
 

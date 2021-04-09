@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie ein Postfach zum Sammeln von Spam- und Phishing-E-Mails konfigurieren, die von Benutzern gemeldet werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d86c79f0f0ab74d1dfbb88e7803f4ee4d691ea73
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 321e27f22295a4da17d0eb37b477a1dc7b779d38
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501183"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644764"
 ---
 # <a name="user-submissions-policy"></a>Richtlinie für Benutzerübermittlungen
 
@@ -98,30 +98,36 @@ Nachdem Sie überprüft haben, ob Ihr Postfach alle erforderlichen Voraussetzung
 
         - **Vor der** Übermittlung:  Geben Sie in die Meldungsfelder Titel und Bestätigung den beschreibenden Text ein, der Benutzern angezeigt wird, bevor sie eine Nachricht mithilfe des Add-Ins "Nachricht melden" oder des Phishing-Add-Ins melden melden.  Sie können die Variable %type% verwenden, um den Übermittlungstyp (Junk, nicht Junk, Phish usw.) zu verwenden.
 
-            Wie bereits erwähnt, wird der Benachrichtigung auch der folgende Text hinzugefügt, wenn Sie eine Option auswählen, die die gemeldeten Nachrichten an Microsoft sendet:
+          Wie bereits erwähnt, wird der Benachrichtigung auch der folgende Text hinzugefügt, wenn Sie eine Option auswählen, die die gemeldeten Nachrichten an Microsoft sendet:
 
-        > Ihre E-Mails werden wie folgt zur Analyse an Microsoft übermittelt. Einige E-Mails enthalten möglicherweise persönliche oder vertrauliche Informationen.
+          > Ihre E-Mails werden wie folgt zur Analyse an Microsoft übermittelt. Einige E-Mails enthalten möglicherweise persönliche oder vertrauliche Informationen.
 
         - **Nach der Übermittlung**: Klicken Sie ![ auf Erweitern ](../../media/scc-expand-icon.png) (Symbol). Geben Sie  **in** die Meldungsfelder Titel und Bestätigung den beschreibenden Text ein, der Benutzern angezeigt wird, nachdem sie eine Nachricht mithilfe des Berichtsnachrichten-Add-Ins oder des Phishing-Add-Ins Melden gemeldet haben. Sie können die Variable %type% verwenden, um den Übermittlungstyp zu verwenden.
 
       Klicken Sie nach Abschluss des Vorgangs auf **Speichern**. Klicken Sie auf der Seite Benutzerübermittlungen auf **Wiederherstellen,** um diese **Werte zu** löschen.
     
     - **Anpassen der Berichtsoptionen für Endbenutzer**: Klicken Sie auf diesen Link. Geben Sie im angezeigten Flyout Optionen für die Endbenutzerberichterstellung anpassen den beschreibenden Text für **Junk-E-Mail-Berichtsoptionen** ein. 
-Wählen **Sie unter Optionen zum Anzeigen, wann Nachrichten gemeldet werden,** mindestens eine der folgenden Optionen aus:
+    
+      Wählen **Sie unter Optionen zum Anzeigen, wann Nachrichten gemeldet werden,** mindestens eine der folgenden Optionen aus:
         - **Fragen Sie mich vor dem Senden eines Berichts**
         - **Automatisches Senden von Berichten**
-        -  **Niemals Berichte senden** \
-   Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
-              - **Senden Sie die gemeldeten Nachrichten an**: Nehmen Sie eine der folgenden Auswahlen vor:
-              - **Microsoft (empfohlen):** Das Benutzerübermittlungspostfach wird nicht verwendet (alle gemeldeten Nachrichten gehen an Microsoft).
-              - **Microsoft und ein benutzerdefiniertes Postfach:** Geben Sie in das angezeigte Feld die E-Mail-Adresse eines vorhandenen Exchange Online-Postfachs ein. Verteilergruppen sind nicht zulässig. Benutzerübermittlungen werden sowohl zur Analyse an Microsoft als auch an das benutzerdefinierte Postfach für Ihr Administrator- oder Sicherheitsteam zur Analyse gesendet.
-              - **Nur benutzerdefiniertes** Postfach: Geben Sie in das angezeigte Feld die E-Mail-Adresse eines vorhandenen Exchange Online-Postfachs ein. Verteilergruppen sind nicht zulässig. Verwenden Sie diese Option, wenn die Nachricht zunächst nur an einen Administrator oder das Sicherheitsbetriebsteam zur Analyse gehen soll. Nachrichten werden nur dann an Microsoft gesendet, wenn der Administrator sie selbst weitersent.
+        - **Niemals Berichte senden**
+       
+      Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
-        > [!NOTE]
-        > Us.S. Government organizations (GCC, GCC-H, and DoD) can only configure **Custom mailbox**. Die beiden anderen Optionen sind deaktiviert.
+        - **Senden Sie die gemeldeten Nachrichten an**: Nehmen Sie eine der folgenden Auswahlen vor:
 
-        > [!NOTE]
-        > Wenn Organisationen nur für das Senden an benutzerdefinierte Postfächer konfiguriert sind, werden die gemeldeten Nachrichten nicht zum erneuten Scannen gesendet, und die Ergebnisse im Portal für vom Benutzer gemeldete Nachrichten sind immer leer.
+        - **Microsoft (empfohlen):** Das Benutzerübermittlungspostfach wird nicht verwendet (alle gemeldeten Nachrichten gehen an Microsoft).
+
+        - **Microsoft und ein benutzerdefiniertes Postfach:** Geben Sie in das angezeigte Feld die E-Mail-Adresse eines vorhandenen Exchange Online-Postfachs ein. Verteilergruppen sind nicht zulässig. Benutzerübermittlungen werden sowohl zur Analyse an Microsoft als auch an das benutzerdefinierte Postfach für Ihr Administrator- oder Sicherheitsteam zur Analyse gesendet.
+
+        - **Nur benutzerdefiniertes** Postfach: Geben Sie in das angezeigte Feld die E-Mail-Adresse eines vorhandenen Exchange Online-Postfachs ein. Verteilergruppen sind nicht zulässig. Verwenden Sie diese Option, wenn die Nachricht zunächst nur an einen Administrator oder das Sicherheitsbetriebsteam zur Analyse gehen soll. Nachrichten werden nur dann an Microsoft gesendet, wenn der Administrator sie selbst weitersent.
+
+          > [!NOTE]
+          > Us.S. Government organizations (GCC, GCC-H, and DoD) can only configure **Custom mailbox**. Die beiden anderen Optionen sind deaktiviert.
+
+          > [!NOTE]
+          > Wenn Organisationen nur für das Senden an benutzerdefinierte Postfächer konfiguriert sind, werden die gemeldeten Nachrichten nicht zum erneuten Scannen gesendet, und die Ergebnisse im Portal für vom Benutzer gemeldete Nachrichten sind immer leer.
 
       Klicken Sie nach Abschluss des Abschlusses auf **Bestätigen**.
 
@@ -129,11 +135,11 @@ Wählen **Sie unter Optionen zum Anzeigen, wann Nachrichten gemeldet werden,** m
       > Wenn Sie die Junk-E-Mail-Berichterstellung [in Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) im Web mithilfe von Outlook im Webpostfachrichtlinien deaktiviert haben, Sie jedoch eine der vorherigen Einstellungen zum Melden von Nachrichten an Microsoft konfigurieren, können Benutzer Nachrichten über das Add-In "Nachricht melden" oder das Phishing-Add-In Melden an Microsoft in Outlook im Web melden.
 
 
-    1. Deaktivieren des Berichtsnachrichtenfeatures für **Outlook:** Wählen Sie diese Option aus, wenn Sie Berichtstools von Drittanbietern anstelle des Berichtsnachrichten-Add-Ins, des Phishing-Add-Ins "Melden" oder der integrierten Berichterstellung in Outlook im Web verwenden, und konfigurieren Sie dann die folgenden Einstellungen:
+    2. Deaktivieren Des Berichtsnachrichtenfeatures für **Outlook:** Wählen Sie diese Option aus, wenn Sie Berichtstools von Drittanbietern anstelle des Berichtsnachrichten-Add-Ins, des Phishing-Add-Ins "Phishing melden" oder der integrierten Berichterstellung in Outlook im Web verwenden, und konfigurieren Sie dann die folgenden Einstellungen:
 
-          Wählen **Sie Dieses benutzerdefinierte Postfach verwenden, um vom Benutzer gemeldete Übermittlungen zu empfangen.** Geben Sie in das angezeigte Feld die E-Mail-Adresse eines vorhandenen Postfachs ein, das sich bereits in Office 365 befindet. Dies muss ein vorhandenes Postfach in Exchange Online sein, das E-Mails empfangen kann.
+       Wählen **Sie Dieses benutzerdefinierte Postfach verwenden, um vom Benutzer gemeldete Übermittlungen zu empfangen.** Geben Sie in das angezeigte Feld die E-Mail-Adresse eines vorhandenen Postfachs ein, das sich bereits in Office 365 befindet. Dies muss ein vorhandenes Postfach in Exchange Online sein, das E-Mails empfangen kann.
 
-          Klicken Sie nach Abschluss des Abschlusses auf **Bestätigen**.
+       Klicken Sie nach Abschluss des Abschlusses auf **Bestätigen**.
 
 ## <a name="message-submission-format"></a>Nachrichtenübermittlungsformat
 
