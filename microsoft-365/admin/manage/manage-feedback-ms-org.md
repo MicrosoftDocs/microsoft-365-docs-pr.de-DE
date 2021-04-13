@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Microsoft-Feedback für Ihre Organisation
+title: Microsoft-Feedback für Ihre Organisation verwalten
 f1.keywords:
 - NOCSH
 ms.author: Kwekua
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Verwalten Sie Feedback, das Ihre Benutzer an Microsoft zu Microsoft-Produkten senden können.
-ms.openlocfilehash: c92adec1689d6f0c46b03ae4f46c567f054b6457
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 490081ace32203d015ee8cf3561ccf0ae978bace
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650016"
+ms.locfileid: "51657007"
 ---
-# <a name="manage-microsoft-feedback-for-your-organization"></a>Verwalten von Microsoft-Feedback für Ihre Organisation
+# <a name="manage-microsoft-feedback-for-your-organization"></a>Microsoft-Feedback für Ihre Organisation verwalten
 
-Als Administrator einer Microsoft 365-Organisation gibt es nun mehrere Richtlinien, mit denen Sie die Feedbacksammlung und die Kundenbindungserfahrung Ihrer Benutzer bei der Verwendung von Microsoft 365-Anwendungen verwalten können. Sie können für jede dieser Richtlinien vorhandene Azure Active Directory-Gruppen in Ihrer Organisation erstellen und verwenden. Mit diesen Policen können Sie steuern, wie verschiedene Abteilungen in Ihrer Organisation Feedback an Microsoft senden können. Microsoft überprüft alle von Kunden übermittelten Feedbacks und verwendet dieses Feedback, um das Produkt zu verbessern. Wenn Sie die Feedbackerfahrung **aktiviert** halten, können Sie sehen, was Ihre Benutzer zu den von ihnen verwendeten Microsoft-Produkten sagen. Das Feedback, das wir von Ihren Benutzern sammeln, wird bald im Microsoft 365 Admin Center verfügbar sein."
+Als Administrator einer Microsoft 365-Organisation gibt es nun mehrere Richtlinien, mit denen Sie die Feedbacksammlung und die Kundenbindungserfahrung Ihrer Benutzer bei der Verwendung von Microsoft 365-Anwendungen verwalten können. Sie können für jede dieser Richtlinien vorhandene Azure Active Directory-Gruppen in Ihrer Organisation erstellen und verwenden. Mit diesen Policen können Sie steuern, wie verschiedene Abteilungen in Ihrer Organisation Feedback an Microsoft senden können. Microsoft überprüft alle von Kunden übermittelten Feedbacks und verwendet dieses Feedback, um das Produkt zu verbessern. Wenn Sie die Feedbackerfahrung **aktiviert** halten, können Sie sehen, was Ihre Benutzer zu den von ihnen verwendeten Microsoft-Produkten sagen. Das Feedback, das wir von Ihren Benutzern sammeln, wird in Kürze im Microsoft 365 Admin Center verfügbar sein.
 
 Weitere Informationen zu den Arten von Feedback und dazu, wie Microsoft Benutzerfeedback verwendet, finden Sie unter Erfahren Sie mehr über [Das Feedback von Microsoft für Ihre Organisation.](../misc/feedback-user-control.md)
 
