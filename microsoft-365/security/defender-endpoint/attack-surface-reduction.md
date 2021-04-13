@@ -11,17 +11,17 @@ localization_priority: Normal
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: sugamar, jcedola
+ms.reviewer: oogunrinde, sugamar, jcedola
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: d88da04e91875e24b13478b17d6a1e3862e1062e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8790d959dc41e3edea684c66e556a2ec67f85ae1
+ms.sourcegitcommit: 0fe5989b7ee2f7ae0181f2781e31db7f58689441
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197661"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697527"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Verwenden von Regeln zur Reduzierung der Angriffsfläche, um Schadsoftwareinfektionen zu verhindern
 
@@ -80,7 +80,7 @@ Weitere Informationen und Informationen zum Herunterladen Ihrer Updates finden S
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>Fälle, in denen der Warnmodus nicht unterstützt wird
 
-Der Warnmodus wird für die folgenden Regeln zur Reduzierung der Angriffsfläche nicht unterstützt:
+Der Warnmodus wird für drei Regeln zur Reduzierung der Angriffsfläche nicht unterstützt, wenn Sie sie im Microsoft Endpoint Manager konfigurieren. (Wenn Sie Gruppenrichtlinien verwenden, um Ihre Regeln zur Reduzierung der Angriffsfläche zu konfigurieren, wird der Warnmodus unterstützt.) Die drei Regeln, die den Warnmodus nicht unterstützen, wenn Sie sie im Microsoft Endpoint Manager konfigurieren, sind wie folgt:
 
 - [Blockieren des Startens heruntergeladener ausführbarer](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) Inhalte (GUID) durch JavaScript oder VBScript `d3e037e1-3eb8-44c8-a917-57927947596d`
 - [Blockieren der Persistenz über das WMI-Ereignisabonnement](#block-persistence-through-wmi-event-subscription) `e6db77e5-3df2-4cf1-b95a-636979351e5b` (GUID)
@@ -466,7 +466,7 @@ GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Häufig gestellte Fragen zur Reduzierung der Angriffsfläche](attack-surface-reduction-faq.md)
-- [Aktivieren von Regeln zur Reduzierung der Angriffsfläche](enable-attack-surface-reduction.md)
-- [Bewerten von Regeln zur Reduzierung der Angriffsfläche](evaluate-attack-surface-reduction.md)
+- [FAQ zu Verringerung der Angriffsfläche](attack-surface-reduction-faq.md)
+- [Aktivieren der Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md)
+- [Auswerten der Regeln zur Verringerung der Angriffsfläche](evaluate-attack-surface-reduction.md)
 - [Kompatibilität von Microsoft Defender Antivirus mit anderen Antiviren-/Antischalwarelösungen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

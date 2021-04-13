@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 18bde560543fd1344a64cf1edd64f02f12831c25
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 8dfaf1dbf2c3742cc97060c7f9e811c83d0cb023
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689101"
+ms.locfileid: "51698220"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Behandeln von Leistungsproblemen für Microsoft Defender for Endpoint unter macOS
 
@@ -149,7 +149,7 @@ Die folgenden Schritte können verwendet werden, um diese Probleme zu beheben un
         125  CrashPlanService 164
       ```
 
-      Um die Leistung von Defender for Endpoint für Mac zu verbessern, suchen Sie die Datei mit der höchsten Anzahl unter der Zeile Gescannte Dateien insgesamt, und fügen Sie einen Ausschluss hinzu. Weitere Informationen finden Sie unter [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).
+      Um die Leistung von Defender for Endpoint auf Dem Mac zu verbessern, suchen Sie die Datei mit der höchsten Zahl unter der Zeile Gescannte Dateien insgesamt, und fügen Sie einen Ausschluss hinzu. Weitere Informationen finden Sie unter [Configure and validate exclusions for Defender for Endpoint on Linux](linux-exclusions.md).
 
       > [!NOTE]
       > Die Anwendung speichert Statistiken im Arbeitsspeicher und verfolgt nur die Dateiaktivität, seit sie gestartet wurde und der Echtzeitschutz aktiviert wurde. Prozesse, die vor oder während Zeiträumen gestartet wurden, in denen der Echtzeitschutz deaktiviert war, werden nicht gezählt. Darüber hinaus werden nur Ereignisse gezählt, die Scans ausgelöst haben.

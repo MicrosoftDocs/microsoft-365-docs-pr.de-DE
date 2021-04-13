@@ -35,6 +35,6 @@
 |TO-DO|Geplant|Geplant|Geplant|Nicht zutreffend|Geplant|
 |VISIO|Nicht zutreffend|✔|Nicht zutreffend|Geplant|Nicht zutreffend|
 |WHITEBOARD|Nicht zutreffend|Geplant|Nicht zutreffend|Nicht zutreffend|Geplant|
-|WORD|✔|Geplant|Geplant|Geplant|Geplant|
+|WORD|✔|Geplant|Geplant|Geplant|✔|
 |WORKPLACE ANALYTICS|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
 |YAMMER|Geplant|Geplant|Geplant|Geplant|–|

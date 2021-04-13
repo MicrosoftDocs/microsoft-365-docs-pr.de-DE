@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 1d332f6b0d6338d18c5a85dcf737f968f00f275f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b42a33d975e1368ad25d4a7102ef44bf8b9824a8
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689521"
+ms.locfileid: "51698280"
 ---
 # <a name="migrate-from-symantec---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>Migrieren von Symantec – Phase 3: Onboarding zu Microsoft Defender for Endpoint
 
@@ -89,7 +89,7 @@ Nachdem Sie die Geräte Ihrer Organisation in Microsoft Defender for Endpoint in
    - [Deinstallieren von Symantec Endpoint Protection](https://knowledge.broadcom.com/external/article/156148/uninstall-symantec-endpoint-protection.html)
    - Windows-Geräte: [Endpoint Protection 14-Clients unter Windows manuell deinstallieren](https://knowledge.broadcom.com/external/article?articleId=170040)
    - macOS-Computer: [Entfernen der Symantec-Software für Mac mithilfe von RemoveSymantecMacFiles](https://knowledge.broadcom.com/external/article?articleId=151387)
-   - Linux-Geräte: [Häufig gestellte Fragen zu Endpoint Protection für Linux](https://knowledge.broadcom.com/external/article?articleId=162054)
+   - Linux-Geräte: [Häufig gestellte Fragen zu Endpoint Protection unter Linux](https://knowledge.broadcom.com/external/article?articleId=162054)
 
 ## <a name="make-sure-microsoft-defender-for-endpoint-is-in-active-mode"></a>Stellen Sie sicher, dass sich Microsoft Defender for Endpoint im aktiven Modus befindet
 

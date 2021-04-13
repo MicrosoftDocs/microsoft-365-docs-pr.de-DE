@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3ad31e385ed1a3c32a261286b91912c7b2562f87
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: c5e6edb40254ab905ef5ef3ddef9bf8bf54fc54b
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650290"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698268"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurieren erweiterter Features in Defender for Endpoint
 
@@ -228,6 +228,10 @@ Wenn Sie die Intune-Integration aktivieren, erstellt Intune automatisch eine kla
 
 > [!NOTE]
 > Die von Intune erstellte klassische Zertifizierungsstellenrichtlinie unterscheidet sich von modernen [Richtlinien](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/)für bedingten Zugriff, die zum Konfigurieren von Endpunkten verwendet werden.
+
+
+## <a name="device-discovery"></a>Geräteerkennung
+Hilft Ihnen, nicht verwaltete Geräte zu finden, die mit Ihrem Unternehmensnetzwerk verbunden sind, ohne dass zusätzliche Appliances oder aufwändige Prozessänderungen nötig sind. Mithilfe von integrierten Geräten können Sie nicht verwaltete Geräte in Ihrem Netzwerk finden und Sicherheitsrisiken und Risiken bewerten. Weitere Informationen finden Sie unter [Device discovery](device-discovery.md).
 
 ## <a name="preview-features"></a>Vorschaufeatures
 

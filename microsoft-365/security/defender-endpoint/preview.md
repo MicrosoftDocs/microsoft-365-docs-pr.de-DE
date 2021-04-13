@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4aab7f12b250c1415ad65a9e706edf6b68050b2f
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 4a91fa3c8ff55f46619c7b49eaf973ad94f60bfe
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222652"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698188"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint -Vorschaufeatures
 
@@ -61,6 +61,12 @@ Aktivieren Sie die Einstellung für die Vorschauerfahrung, um zu den ersten zu g
 ## <a name="preview-features"></a>Vorschaufeatures
 
 In der Vorschauversion sind die folgenden Features enthalten:
+
+- [Geräteerkennung](device-discovery.md) <br> Hilft Ihnen, nicht verwaltete Geräte zu finden, die mit Ihrem Unternehmensnetzwerk verbunden sind, ohne dass zusätzliche Appliances oder aufwändige Prozessänderungen nötig sind. Mithilfe von integrierten Geräten können Sie nicht verwaltete Geräte in Ihrem Netzwerk finden und Sicherheitsrisiken und Risiken bewerten. Sie können dann ermittelte Geräte integrieren, um Risiken im Zusammenhang mit nicht verwalteten Endpunkten in Ihrem Netzwerk zu reduzieren.
+
+   > [!IMPORTANT]
+   > Die Standardermittlung ist der Standardmodus für alle Vorschaukunden ab dem 10. Mai 2021. Sie können den Basismodus über die Einstellungsseite beibehalten. 
+
 
 - [Webinhaltsfilterung](web-content-filtering.md) <br> Die Webinhaltsfilterung ist Teil der Webschutzfunktionen in Microsoft Defender for Endpoint. Sie ermöglicht Es Ihrer Organisation, den Zugriff auf Websites basierend auf ihren Inhaltskategorien nachverfolgt und zu regeln. Viele dieser Websites sind zwar nicht bösartig, können jedoch aufgrund von Compliancebestimmungen, Bandbreitennutzung oder anderen Bedenken problematisch sein.
 
