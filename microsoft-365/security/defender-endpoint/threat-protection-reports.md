@@ -1,5 +1,5 @@
 ---
-title: Bedrohungsschutzbericht in Microsoft Defender ATP
+title: Bedrohungsschutzbericht in Microsoft Defender for Endpoint
 description: Nachverfolgen von Warnungserkennungen, Kategorien und Schweregrad mithilfe des Bedrohungsschutzberichts
 keywords: Warnungserkennung, Quelle, Warnung nach Kategorie, Warnungsschweregrad, Warnungsklassifizierung, Ermittlung
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4ecd2df31e1e03da5134d3d4180dcba75d3cee26
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: d32ab04f4acda60f65316719a4607c6c9bbd6447
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183837"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688981"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Bedrohungsschutzbericht in Microsoft Defender for Endpoint
 

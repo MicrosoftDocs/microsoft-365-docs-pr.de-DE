@@ -1,6 +1,6 @@
 ---
 title: Aktualisieren der Benachrichtigungsentitäts-API
-description: Erfahren Sie, wie Sie eine Microsoft Defender ATP-Warnung mithilfe dieser API aktualisieren. Sie können die Eigenschaften status, determination, classification und assignedTo aktualisieren.
+description: Erfahren Sie, wie Sie eine Microsoft Defender for Endpoint-Warnung mithilfe dieser API aktualisieren. Sie können die Eigenschaften status, determination, classification und assignedTo aktualisieren.
 keywords: apis, graph api, supported apis, get, alert, information, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7dd3ab3da34efa6cb954db2a596d7a1e48efedf1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 94be185bd30cd36f456a66d5ae30a4361abc0c48
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199309"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688249"
 ---
 # <a name="update-alert"></a>Warnung aktualisieren
 

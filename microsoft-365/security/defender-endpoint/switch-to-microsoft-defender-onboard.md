@@ -21,12 +21,12 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: afc3590bb3ad57a63868bb8218612ae69956186c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: cd4cf62ee532519e0f6d2aa857d30eb4cf1a7290
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185539"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688081"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Wechseln zu Microsoft Defender for Endpoint – Phase 3: Onboard
 
@@ -46,7 +46,7 @@ ms.locfileid: "51185539"
 3. [Deinstallieren Sie Ihre Nicht-Microsoft-Lösung.](#uninstall-your-non-microsoft-solution)
 4. [Stellen Sie sicher, dass sich Microsoft Defender for Endpoint im aktiven Modus befindet.](#make-sure-microsoft-defender-for-endpoint-is-in-active-mode)
 
-## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Onboarding von Geräten in Microsoft Defender for Endpoint
+## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Geräte in Microsoft Defender für Endpunkt onboarden
 
 1. Wechseln Sie zum Microsoft Defender Security Center ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ) und melden Sie sich an.
 2. Wählen **Sie Einstellungen**  >  **Geräteverwaltung**  >  **Onboarding aus.** 
@@ -72,8 +72,8 @@ Um sicherzustellen, dass Ihre integrierten Geräte ordnungsgemäß mit Microsoft
 |Betriebssystem  |Richtlinien  |
 |---------|---------|
 |- Windows 10 <br/>- Windows Server 2019 <br/>- Windows Server, Version 1803 <br/>- Windows Server 2016 <br/>- Windows Server 2012 R2     |Weitere [Informationen finden Sie unter Ausführen eines Erkennungstests.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-detection-test) <br/><br/>Besuchen Sie die Microsoft Defender for Endpoint-Demoszenarien-Website ( ) und testen Sie eines [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) oder mehrere der Szenarien. Testen Sie beispielsweise das **Demoszenario für den Cloud-zugestellten** Schutz.         |
-|macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)     |Laden Sie die HEIMWERKER-App unter herunter und verwenden Sie [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) sie. <br/><br/>Weitere Informationen finden Sie unter [Microsoft Defender for Endpoint für Mac](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac).        |
-|Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS oder höher LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |1. Führen Sie den folgenden Befehl aus, und suchen Sie nach einem Ergebnis von **1:** <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. Öffnen Sie ein Terminalfenster, und führen Sie den folgenden Befehl aus: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. Führen Sie den folgenden Befehl aus, um erkannte Bedrohungen auflisten: <br/>`mdatp threat list`. <br/><br/>Weitere Informationen finden Sie unter [Microsoft Defender ATP für Linux](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-linux). |
+|macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)     |Laden Sie die HEIMWERKER-App unter herunter und verwenden Sie [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) sie. <br/><br/>Weitere Informationen finden Sie unter [Microsoft Defender for Endpoint auf macOS](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac).        |
+|Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS oder höher LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |1. Führen Sie den folgenden Befehl aus, und suchen Sie nach einem Ergebnis von **1:** <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. Öffnen Sie ein Terminalfenster, und führen Sie den folgenden Befehl aus: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. Führen Sie den folgenden Befehl aus, um erkannte Bedrohungen auflisten: <br/>`mdatp threat list`. <br/><br/>Weitere Informationen finden Sie unter [Microsoft Defender for Endpoint unter Linux](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux). |
 
 ## <a name="uninstall-your-non-microsoft-solution"></a>Deinstallieren Ihrer Nicht-Microsoft-Lösung
 

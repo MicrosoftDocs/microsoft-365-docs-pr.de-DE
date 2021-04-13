@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Microsoft Defender for Endpoint für iOS-Features
+title: Konfigurieren von Microsoft Defender for Endpoint unter iOS-Features
 description: Beschreibt die Bereitstellung von Microsoft Defender ATP für iOS-Features
 keywords: microsoft, defender, atp, ios, configure, features, ios
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8f74d4799bcb02051cddd09b80ed6ab50258302b
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 0e351f6500d5076e724653d0fde1940592dd1ae5
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587227"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687485"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-for-ios-features"></a>Konfigurieren von Microsoft Defender for Endpoint für iOS-Features
+# <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Konfigurieren von Microsoft Defender for Endpoint unter iOS-Features
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51587227"
 > Defender for Endpoint für iOS würde ein VPN verwenden, um das Web Protection-Feature zur Verfügung zu stellen. Dies ist kein normales VPN und ein lokales VPN mit selbstschleifender Schleife, das keinen Datenverkehr außerhalb des Geräts verwendet.
 
 ## <a name="conditional-access-with-defender-for-endpoint-for-ios"></a>Bedingter Zugriff mit Defender for Endpoint für iOS  
-Microsoft Defender for Endpoint für iOS ermöglicht zusammen mit Microsoft Intune und Azure Active Directory die Erzwingung der Gerätekonformität und Richtlinien für bedingten Zugriff basierend auf gerätebezogenen Risikostufen. Defender for Endpoint ist eine Mobile Threat Defense (MTD)-Lösung, die Sie bereitstellen können, um diese Funktion über Intune zu nutzen.
+Microsoft Defender for Endpoint unter iOS ermöglicht zusammen mit Microsoft Intune und Azure Active Directory die Erzwingung der Gerätekonformität und Richtlinien für bedingten Zugriff auf der Grundlage von Geräterisikostufen. Defender for Endpoint ist eine Mobile Threat Defense (MTD)-Lösung, die Sie bereitstellen können, um diese Funktion über Intune zu nutzen.
 
 Weitere Informationen zum Einrichten des bedingten Zugriffs mit Defender for Endpoint für iOS finden Sie unter [Defender for Endpoint und Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
 
@@ -68,7 +68,7 @@ Apple iOS unterstützt nicht mehrere geräteweite VPNs, um gleichzeitig aktiv zu
 Um den Zugriff auf Unternehmensdaten auf ins Jailbroken gebrokenen iOS-Geräten zu schützen, wird empfohlen, die folgende Compliancerichtlinie für Intune zu erstellen.
 
 > [!NOTE]
-> Derzeit bietet Microsoft Defender for Endpoint für iOS keinen Schutz vor Jailbreakszenarien. Wenn sie auf einem jailbroken Gerät verwendet werden, können in bestimmten Szenarien Daten, die von der Anwendung verwendet werden, wie z. B. Ihre Unternehmens-E-Mail-ID und das Unternehmensprofilbild (sofern verfügbar) lokal verfügbar gemacht werden.
+> Derzeit bietet Microsoft Defender for Endpoint unter iOS keinen Schutz vor Jailbreakszenarien. Wenn sie auf einem jailbroken Gerät verwendet werden, können in bestimmten Szenarien Daten, die von der Anwendung verwendet werden, wie z. B. Ihre Unternehmens-E-Mail-ID und das Unternehmensprofilbild (sofern verfügbar) lokal verfügbar gemacht werden.
 
 Führen Sie die folgenden Schritte aus, um eine Compliancerichtlinie für jailbrokene Geräte zu erstellen.
 

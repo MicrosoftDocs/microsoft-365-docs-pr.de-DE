@@ -1,6 +1,6 @@
 ---
-title: Ausführen eines Erkennungstests auf einem neu integrierten Microsoft Defender ATP-Gerät
-description: Führen Sie das Erkennungsskript auf einem neu integrierten Gerät aus, um sicherzustellen, dass es ordnungsgemäß in den Microsoft Defender ATP-Dienst integrierte ist.
+title: Ausführen eines Erkennungstests auf einem neu integrierten Microsoft Defender for Endpoint-Gerät
+description: Führen Sie das Erkennungsskript auf einem neu integrierten Gerät aus, um zu überprüfen, ob es ordnungsgemäß in den Microsoft Defender for Endpoint-Dienst integrierte ist.
 keywords: Erkennungstest, Erkennung, Powershell, Skript, Überprüfen, Onboarding, Microsoft Defender für Endpunkt-Onboarding, Clients, Server, Test
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 10154a734bb4c3d8b26fffb8618484aeb11f907a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 89b8ac7d99cfcd4c5e5e647e5ba54e14184ef0bd
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066095"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688117"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Ausführen eines Erkennungstests auf einem neu integrierten Microsoft Defender for Endpoint-Gerät 
 
@@ -61,6 +61,6 @@ Führen Sie das folgende PowerShell-Skript auf einem neu integrierten Gerät aus
 Das Eingabeaufforderungsfenster wird automatisch geschlossen. Bei erfolgreicher Erkennung wird der Erkennungstest als abgeschlossen markiert, und eine neue Warnung wird in etwa 10 Minuten im Portal für das integrierte Gerät angezeigt.
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Onboarding von Windows 10-Geräten](configure-endpoints.md)
+- [Onboarding von Windows 10-Geräten](configure-endpoints.md)
 - [Onboarding von Servern](configure-server-endpoints.md)
 - [Behandeln von Problemen beim Onboarding von Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

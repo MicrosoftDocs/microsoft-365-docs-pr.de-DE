@@ -18,27 +18,27 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 645c3657bdd1540ac95b68460b4dff6d25627c2c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 69dd85394837bb7f37e7d277110c8a5dbf7b6506
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185926"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689113"
 ---
-# <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-for-mac"></a>Behandeln von Lizenzproblemen für Microsoft Defender for Endpoint für Mac
+# <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Behandeln von Lizenzproblemen für Microsoft Defender for Endpoint unter macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Gilt für:**
 
-- [Microsoft Defender für Endpoint für Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint unter macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Während Sie Microsoft Defender for Endpoint [](mac-install-manually.md) für [Mac](microsoft-defender-endpoint-mac.md) und manuelle Bereitstellungstests oder einen Proof Of Concept (PoC) durchführen, wird möglicherweise der folgende Fehler angezeigt:
+Während Sie Microsoft Defender for Endpoint auf [macOS](microsoft-defender-endpoint-mac.md) und [manuellen](mac-install-manually.md) Bereitstellungstests oder einem Proof Of Concept (PoC) durch führen, wird möglicherweise der folgende Fehler angezeigt:
 
 ![Abbildung des Lizenzfehlers](images/no-license-found.png)
 
@@ -52,7 +52,7 @@ Weitere Informationen erhalten Sie von Ihrem Administrator.
 
 **Ursache:** 
 
-Sie haben das Microsoft Defender for Endpoint für macOS-Paket ("Installationspaket herunterladen") bereitgestellt und/oder installiert, aber möglicherweise haben Sie das Konfigurationsskript ("Onboardingpaket herunterladen") ausgeführt.
+Sie haben das Microsoft Defender for Endpoint auf macOS-Paket bereitgestellt und/oder installiert ("Installationspaket herunterladen"), aber möglicherweise haben Sie das Konfigurationsskript ("Onboardingpaket herunterladen") ausgeführt.
 
 **Lösung:**
 

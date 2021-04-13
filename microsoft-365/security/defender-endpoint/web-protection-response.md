@@ -1,5 +1,5 @@
 ---
-title: Reagieren auf Webbedrohungen in Microsoft Defender ATP
+title: Reagieren auf Webbedrohungen in Microsoft Defender for Endpoint
 description: Reagieren Sie auf Warnungen im Zusammenhang mit schädlichen und unerwünschten Websites. Verstehen, wie der Schutz von Webbedrohungen Endbenutzer über ihre Webbrowser und Windows-Benachrichtigungen informiert
 keywords: Webschutz, Webbedrohungenschutz, Webbrowsing, Warnungen, Antwort, Sicherheit, Phishing, Schadsoftware, Exploit, Websites, Netzwerkschutz, Edge, Internet Explorer, Chrome, Firefox, Webbrowser, Benachrichtigungen, Endbenutzer, Windows-Benachrichtigungen, Sperrseite,
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b0e6bb0d71c14bf7742f8d6508fbb95b76b10a34
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 110b379863b4c6e23c947c56faf831e136231237
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498357"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688477"
 ---
 # <a name="respond-to-web-threats"></a>Reagieren auf Internetbedrohungen
 

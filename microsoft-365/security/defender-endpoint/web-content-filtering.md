@@ -1,6 +1,6 @@
 ---
 title: Internet-Inhaltsfilterung
-description: Verwenden Sie die Webinhaltsfilterung in Microsoft Defender ATP, um den Zugriff auf Websites basierend auf ihren Inhaltskategorien nachverfolgt und zu regeln.
+description: Verwenden Sie die Webinhaltsfilterung in Microsoft Defender for Endpoint, um den Zugriff auf Websites basierend auf ihren Inhaltskategorien nachverfolgt und zu regeln.
 keywords: Webschutz, Schutz vor Webbedrohungen, Browsen im Web, Überwachung, Berichte, Karten, Domänenliste, Sicherheit, Phishing, Schadsoftware, Exploit, Websites, Netzwerkschutz, Edge, Internet Explorer, Chrome, Firefox, Webbrowser
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c5f44b4ab8354330ec9701261e8fb0dcc2e9fe52
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: c9a069deded237c5ded6bcd9f6c6a77f644e65a2
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499973"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689341"
 ---
 # <a name="web-content-filtering"></a>Internet-Inhaltsfilterung
 

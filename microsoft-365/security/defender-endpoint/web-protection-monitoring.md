@@ -1,6 +1,6 @@
 ---
-title: Überwachen der Sicherheit des Browsens im Web in Microsoft Defender ATP
-description: Verwenden von Webschutz in Microsoft Defender ATP zum Überwachen der Sicherheit des Webbrowsers
+title: Überwachen der Sicherheit des Browsens im Web in Microsoft Defender for Endpoint
+description: Verwenden von Webschutz in Microsoft Defender for Endpoint zum Überwachen der Sicherheit des Webbrowsings
 keywords: Webschutz, Schutz vor Webbedrohungen, Browsen im Web, Überwachung, Berichte, Karten, Domänenliste, Sicherheit, Phishing, Schadsoftware, Exploit, Websites, Netzwerkschutz, Edge, Internet Explorer, Chrome, Firefox, Webbrowser
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 629e18c7387f6063254f3482f93a5e17023c7316
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: ee6388c779d2c5bc09a82f5e9064d1b981e885cb
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499946"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687423"
 ---
 # <a name="monitor-web-browsing-security"></a>Überwachen der Sicherheit des Browsens im Web
 

@@ -1,6 +1,6 @@
 ---
 title: Gerätesteuerung für macOS
-description: Erfahren Sie, wie Sie Microsoft Defender for Endpoint für Mac konfigurieren, um Bedrohungen durch wechselbare Speicher wie z. B. USB-Geräte zu reduzieren.
+description: Erfahren Sie, wie Sie Microsoft Defender for Endpoint auf Mac konfigurieren, um Bedrohungen durch Wechselmedien wie z. B. USB-Geräte zu reduzieren.
 keywords: microsoft, defender, atp, mac, device, control, usb, removable, media
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 098eb30764870e69c5b1b6c2cec3cf8e5cb11691
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 696bc45f7bb66313cc9353e252d76c2e9fd73259
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186569"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688681"
 ---
 # <a name="device-control-for-macos"></a>Gerätesteuerung für macOS
 
@@ -52,7 +52,7 @@ Die Gerätesteuerung für macOS verfügt über die folgenden Voraussetzungen:
 >   ```bash
 >   mdatp health --field real_time_protection_subsystem 
 >   ```
-> - Ihr Gerät muss sich im `Beta` (zuvor `InsiderFast` als ) Microsoft AutoUpdate-Updatekanal bezeichneten Kanal für Updates. Weitere Informationen finden Sie unter [Deploy updates for Microsoft Defender for Endpoint for Mac](mac-updates.md).
+> - Ihr Gerät muss sich im `Beta` (zuvor `InsiderFast` als ) Microsoft AutoUpdate-Updatekanal bezeichneten Kanal für Updates. Weitere Informationen finden Sie unter [Deploy updates for Microsoft Defender for Endpoint on Mac](mac-updates.md).
 > 
 >   Sie können den Updatekanal mithilfe des folgenden Befehls überprüfen: 
 > 
@@ -66,7 +66,7 @@ Die Gerätesteuerung für macOS verfügt über die folgenden Voraussetzungen:
 >    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
 >    ```
 >
->    Alternativ können Sie den Updatekanal remote konfigurieren, wenn Sie sich in einer verwalteten Umgebung (JAMF oder Intune) befinden. Weitere Informationen finden Sie unter [Deploy updates for Microsoft Defender for Endpoint for Mac](mac-updates.md). 
+>    Alternativ können Sie den Updatekanal remote konfigurieren, wenn Sie sich in einer verwalteten Umgebung (JAMF oder Intune) befinden. Weitere Informationen finden Sie unter [Deploy updates for Microsoft Defender for Endpoint on Mac](mac-updates.md). 
 
 ## <a name="device-control-policy"></a>Gerätesteuerungsrichtlinie
 
@@ -76,12 +76,12 @@ Die Gerätesteuerungsrichtlinie ist im Konfigurationsprofil enthalten, das zum K
 
 Innerhalb des Konfigurationsprofils wird die Gerätesteuerungsrichtlinie im folgenden Abschnitt definiert:
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | deviceControl |
+| **Key** | deviceControl |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
-| **Comments** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
+| **Kommentare** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
 
 Die Gerätesteuerungsrichtlinie kann verwendet werden, um:
 
@@ -96,12 +96,12 @@ Wenn die von Ihnen installierte Gerätesteuerungsrichtlinie auf einem Gerät erz
 
 Wenn Endbenutzer auf diese Benachrichtigung klicken, wird im Standardbrowser eine Webseite geöffnet. Sie können die URL konfigurieren, die geöffnet wird, wenn Endbenutzer auf die Benachrichtigung klicken.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | navigationTarget |
+| **Key** | navigationTarget |
 | **Datentyp** | String |
-| **Comments** | Wenn das Produkt nicht definiert ist, verwendet es eine Standard-URL, die auf eine generische Seite verweist, auf der die vom Produkt ergriffene Aktion erläutert wird. |
+| **Kommentare** | Wenn das Produkt nicht definiert ist, verwendet es eine Standard-URL, die auf eine generische Seite verweist, auf der die vom Produkt ergriffene Aktion erläutert wird. |
 
 ### <a name="allow-or-block-removable-devices"></a>Zulassen oder Blockieren von Wechselmedien
 
@@ -110,12 +110,12 @@ Der Abschnitt Wechselmedien der Gerätesteuerungsrichtlinie wird verwendet, um d
 > [!NOTE]
 > Die folgenden Arten von Wechselmedien werden derzeit unterstützt und können in der Richtlinie enthalten sein: USB-Speichergeräte.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | removableMediaPolicy |
+| **Key** | removableMediaPolicy |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
-| **Comments** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
+| **Kommentare** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
 
 Dieser Abschnitt der Richtlinie ist hierarchisch, ermöglicht maximale Flexibilität und deckt eine Vielzahl von Verwendungsfällen ab. Auf der obersten Ebene sind Lieferanten, die durch eine Anbieter-ID identifiziert werden. Für jeden Anbieter gibt es Produkte, die durch eine Produkt-ID identifiziert werden. Schließlich gibt es für jedes Produkt Seriennummern, die bestimmte Geräte enthalten.
 
@@ -143,10 +143,10 @@ Im Abschnitt Wechselmedien gibt es eine Option zum Festlegen der Erzwingungsstuf
 - `audit` – Wenn unter dieser Erzwingungsstufe der Zugriff auf ein Gerät eingeschränkt ist, wird dem Benutzer eine Benachrichtigung angezeigt, das Gerät kann jedoch weiterhin verwendet werden. Diese Erzwingungsstufe kann hilfreich sein, um die Effektivität einer Richtlinie zu bewerten.
 - `block` – Unter dieser Erzwingungsstufe sind die Vorgänge, die der Benutzer auf dem Gerät ausführen kann, auf das beschränkt, was in der Richtlinie definiert ist. Darüber hinaus wird eine Benachrichtigung an den Benutzer ausgelöst. 
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | enforcementLevel |
+| **Key** | enforcementLevel |
 | **Datentyp** | String |
 | **Mögliche Werte** | Überwachung (Standard) <br/> block |
 
@@ -168,10 +168,10 @@ Diese Einstellung kann auf festgelegt werden:
 > [!NOTE]
 > Die `execute` Berechtigung bezieht sich nur auf die Ausführung von Mach-O-Binärdateien. Die Ausführung von Skripts oder anderen Nutzlasttypen ist nicht enthalten.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | permission |
+| **Key** | permission |
 | **Datentyp** | Array aus Zeichenfolgen |
 | **Mögliche Werte** | keine <br/> Lesen <br/> Schreiben <br/> execute |
 
@@ -183,35 +183,35 @@ Auf der obersten Ebene der Richtlinie für Wechselmedien können Sie optional de
 
 Das `vendors` Wörterbuch enthält einen oder mehrere Einträge, bei dem jeder Eintrag durch die Anbieter-ID identifiziert wird.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | Anbieter |
+| **Key** | Anbieter |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
 
 Für jeden Anbieter können Sie die gewünschte Berechtigungsstufe für Geräte von diesem Anbieter angeben.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | permission |
+| **Key** | permission |
 | **Datentyp** | Array aus Zeichenfolgen |
 | **Mögliche Werte** | Identisch mit [Standardberechtigungsstufe](#default-permission-level) |
 
 Darüber hinaus können Sie optional den Satz von Produkten angeben, die zu diesem Anbieter gehören, für die detailliertere Berechtigungen definiert sind. Das `products` Wörterbuch enthält einen oder mehrere Einträge, bei dem jeder Eintrag durch die Produkt-ID identifiziert wird. 
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | produkte |
+| **Key** | produkte |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
 
 Für jedes Produkt können Sie die gewünschte Berechtigungsstufe für dieses Produkt angeben.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | permission |
+| **Key** | permission |
 | **Datentyp** | Array aus Zeichenfolgen |
 | **Mögliche Werte** | Identisch mit [Standardberechtigungsstufe](#default-permission-level) |
 
@@ -219,18 +219,18 @@ Darüber hinaus können Sie einen optionalen Satz von Seriennummern angeben, fü
 
 Das `serialNumbers` Wörterbuch enthält einen oder mehrere Einträge, bei dem jeder Eintrag durch die Seriennummer identifiziert wird.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | serialNumbers |
+| **Key** | serialNumbers |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
 
 Für jede Seriennummer können Sie die gewünschte Berechtigungsstufe angeben.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | permission |
+| **Key** | permission |
 | **Datentyp** | Array aus Zeichenfolgen |
 | **Mögliche Werte** | Identisch mit [Standardberechtigungsstufe](#default-permission-level) |
 
@@ -336,7 +336,7 @@ DeviceEvents
 
 ## <a name="device-control-policy-deployment"></a>Bereitstellung von Gerätesteuerungsrichtlinien
 
-Die Gerätesteuerungsrichtlinie muss neben den anderen Produkteinstellungen enthalten sein, wie unter Festlegen von Einstellungen für [Microsoft Defender für Endpoint für Mac beschrieben.](mac-preferences.md)
+Die Gerätesteuerungsrichtlinie muss neben den anderen Produkteinstellungen enthalten sein, wie unter Festlegen von Einstellungen für [Microsoft Defender for Endpoint unter macOS beschrieben.](mac-preferences.md)
 
 Dieses Profil kann mithilfe der Unter Konfigurationsprofilbereitstellung aufgeführten [Anweisungen bereitgestellt werden.](mac-preferences.md#configuration-profile-deployment)
 

@@ -1,6 +1,6 @@
 ---
-title: Behandeln von Leistungsproblemen für Microsoft Defender for Endpoint für Mac
-description: Behandeln von Leistungsproblemen in Microsoft Defender for Endpoint für Mac.
+title: Behandeln von Leistungsproblemen für Microsoft Defender for Endpoint unter macOS
+description: Behandeln von Leistungsproblemen in Microsoft Defender for Endpoint unter macOS.
 keywords: microsoft, defender, atp, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,39 +18,39 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6ff93b44627cf876384522f0c4f25d22347c8661
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 18bde560543fd1344a64cf1edd64f02f12831c25
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476255"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689101"
 ---
-# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-for-mac"></a>Behandeln von Leistungsproblemen für Microsoft Defender for Endpoint für Mac
+# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Behandeln von Leistungsproblemen für Microsoft Defender for Endpoint unter macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Gilt für:**
 
-- [Microsoft Defender für Endpunkt für Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint unter macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Dieses Thema enthält einige allgemeine Schritte, mit deren Unterstützung Leistungsprobleme im Zusammenhang mit Microsoft Defender for Endpoint für Mac eindr werden können.
+Dieses Thema enthält einige allgemeine Schritte, mit deren Unterstützung Leistungsprobleme im Zusammenhang mit Microsoft Defender for Endpoint auf macOS eindr werden können.
 
-Der Echtzeitschutz (Real-Time Protection, RTP) ist ein Feature von Microsoft Defender for Endpoint für Mac, das Ihr Gerät kontinuierlich überwacht und vor Bedrohungen schützt. Es besteht aus Datei- und Prozessüberwachung und anderen Heuristiken.
+Der Echtzeitschutz (Real-Time Protection, RTP) ist ein Feature von Microsoft Defender for Endpoint unter macOS, das Ihr Gerät kontinuierlich überwacht und vor Bedrohungen schützt. Es besteht aus Datei- und Prozessüberwachung und anderen Heuristiken.
 
-Abhängig von den ausgeführten Anwendungen und den Gerätemerkmalen kann es bei der Ausführung von Microsoft Defender for Endpoint für Mac zu einer suboptimalen Leistung führen. Insbesondere Anwendungen oder Systemprozesse, die über einen kurzen Zeitraum auf viele Ressourcen zugreifen, können zu Leistungsproblemen in Microsoft Defender for Endpoint für Mac führen.
+Je nach den ausgeführten Anwendungen und den Gerätemerkmalen kann es bei der Ausführung von Microsoft Defender for Endpoint unter macOS zu einer suboptimalen Leistung führen. Insbesondere Anwendungen oder Systemprozesse, die über einen kurzen Zeitraum auf viele Ressourcen zugreifen, können zu Leistungsproblemen in Microsoft Defender for Endpoint auf macOS führen.
 
 Die folgenden Schritte können verwendet werden, um diese Probleme zu beheben und zu beheben:
 
-1. Deaktivieren Sie den Echtzeitschutz mithilfe einer der folgenden Methoden, und beobachten Sie, ob sich die Leistung verbessert. Dieser Ansatz hilft, die Leistungsprobleme von Microsoft Defender for Endpoint für Mac zu verengt.
+1. Deaktivieren Sie den Echtzeitschutz mithilfe einer der folgenden Methoden, und beobachten Sie, ob sich die Leistung verbessert. Dieser Ansatz hilft, die Leistungsprobleme von Microsoft Defender for Endpoint auf macOS zu verengt.
 
       Wenn Ihr Gerät nicht von Ihrer Organisation verwaltet wird, kann der Echtzeitschutz mithilfe einer der folgenden Optionen deaktiviert werden:
 
-    - Über die Benutzeroberfläche. Öffnen Sie Microsoft Defender for Endpoint für Mac, und navigieren Sie zu **Einstellungen verwalten.**
+    - Über die Benutzeroberfläche. Öffnen Sie Microsoft Defender for Endpoint unter macOS, und navigieren Sie zu **Einstellungen verwalten.**
 
       ![Verwalten des Screenshots für den Echtzeitschutz](images/mdatp-36-rtp.png)
 
@@ -60,7 +60,7 @@ Die folgenden Schritte können verwendet werden, um diese Probleme zu beheben un
       mdatp config real-time-protection --value disabled
       ```
 
-      Wenn Ihr Gerät von Ihrer Organisation verwaltet wird, kann der Echtzeitschutz von Ihrem Administrator mithilfe der Anweisungen unter Festlegen von Einstellungen für [Microsoft Defender for Endpoint für Mac deaktiviert werden.](mac-preferences.md)
+      Wenn Ihr Gerät von Ihrer Organisation verwaltet wird, kann der Echtzeitschutz von Ihrem Administrator mithilfe der Anweisungen unter Festlegen von Einstellungen für Microsoft Defender for Endpoint unter [macOS deaktiviert werden.](mac-preferences.md)
       
       Wenn das Leistungsproblem weiterhin besteht, während der Echtzeitschutz deaktiviert ist, könnte der Ursprung des Problems die Endpunkterkennungs- und Reaktionskomponente sein. Wenden Sie sich in diesem Fall an den Kundensupport, um weitere Anweisungen und Gegenmaßnahmen zu erhalten.
 
@@ -154,6 +154,6 @@ Die folgenden Schritte können verwendet werden, um diese Probleme zu beheben un
       > [!NOTE]
       > Die Anwendung speichert Statistiken im Arbeitsspeicher und verfolgt nur die Dateiaktivität, seit sie gestartet wurde und der Echtzeitschutz aktiviert wurde. Prozesse, die vor oder während Zeiträumen gestartet wurden, in denen der Echtzeitschutz deaktiviert war, werden nicht gezählt. Darüber hinaus werden nur Ereignisse gezählt, die Scans ausgelöst haben.
       > 
-1. Konfigurieren Sie Microsoft Defender für Endpoint für Mac mit Ausschlüssen für die Prozesse oder Datenträgerspeicherorte, die zu Leistungsproblemen beitragen, und aktivieren Sie den Echtzeitschutz erneut.
+1. Konfigurieren Sie Microsoft Defender for Endpoint unter macOS mit Ausschlüssen für die Prozesse oder Datenträgerspeicherorte, die zu Leistungsproblemen beitragen, und aktivieren Sie den Echtzeitschutz erneut.
 
-     Weitere Informationen finden Sie unter Configure [and validate exclusions for Microsoft Defender for Endpoint for Mac.](mac-exclusions.md)
+     Weitere Informationen finden Sie unter Configure [and validate exclusions for Microsoft Defender for Endpoint auf macOS.](mac-exclusions.md)

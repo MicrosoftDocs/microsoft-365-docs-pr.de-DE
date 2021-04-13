@@ -1,7 +1,6 @@
 ---
 title: Selbstregistrieren vorhandener Geräte
 description: Registrieren sie wiederverwendete Geräte, die Sie möglicherweise bereits selbst haben, damit sie von Microsoft Managed Desktop verwaltet werden können.
-keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -12,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 1703e4ed4ea0f3306edf6fdf07ab9c97a9266d4f
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: f2b3e109493331a4b63d669501525a48cb996809
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445566"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689221"
 ---
 # <a name="register-existing-devices-yourself"></a>Selbstregistrieren vorhandener Geräte
 
@@ -150,9 +149,11 @@ Wählen [Sie im Microsoft Endpoint Manager](https://endpoint.microsoft.com/) **g
 Führen Sie die folgenden Schritte aus:
 
 1. Geben **Sie unter Dateiupload** einen Pfad zur zuvor erstellten CSV-Datei an.
+2. Wählen Sie [im](../service-description/profiles.md) Dropdownmenü ein Geräteprofil aus.
+3. Wählen **Sie Geräte registrieren aus.** Das System fügt die Geräte ihrer Liste der Geräte auf dem **Blatt Geräte** hinzu, das als **Registrierung ausstehend gekennzeichnet ist.** Die Registrierung dauert in der Regel weniger als 10 Minuten, und bei erfolgreicher Verwendung wird das Gerät als **Bereit** für Benutzer angezeigt, was bedeutet, dass es bereit ist und darauf wartet, dass ein Benutzer mit der Verwendung beginnt.
 
-1. Wählen **Sie Geräte registrieren aus.** Das System fügt die Geräte ihrer Liste der Geräte auf dem **Blatt Geräte** hinzu, das als **Registrierung ausstehend gekennzeichnet ist.** Die Registrierung dauert in der Regel weniger als 10 Minuten, und bei erfolgreicher Verwendung wird das Gerät als **Bereit** für Benutzer angezeigt, was bedeutet, dass es bereit ist und darauf wartet, dass ein Benutzer mit der Verwendung beginnt.
-
+> [!NOTE]
+> Wenn Sie die Azure Active Directory (AAD)-Gruppenmitgliedschaft eines Geräts manuell ändern, wird sie automatisch der Gruppe für ihr Geräteprofil zugewiesen und aus konfliktverf genden Gruppen entfernt.
 
 Sie können den Fortschritt der Geräteregistrierung auf der Hauptseite überwachen. Mögliche gemeldete Zustände sind:
 

@@ -1,5 +1,5 @@
 ---
-title: Ausführen von Reaktionsaktionen auf einem Gerät in Microsoft Defender ATP
+title: Ergreifen von Reaktionsaktionen auf einem Gerät in Microsoft Defender for Endpoint
 description: Ergreifen Sie Reaktionsaktionen auf einem Gerät, z. B. das Isolieren von Geräten, das Sammeln eines Untersuchungspakets, das Verwalten von Tags, das Ausführen der av-Überprüfung und das Einschränken der App-Ausführung.
 keywords: reagieren, isolieren, Gerät isolieren, Untersuchungspaket sammeln, Aktionscenter, einschränken, Tags verwalten, av scannen, App einschränken
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f918d1673ef8a83c54f365dd06406c33bcc4d983
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f538bd33ad2f595aa9b3dafa8a13a5682161b52f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060966"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688321"
 ---
-# <a name="take-response-actions-on-a-device"></a>Ausführen von Reaktionsaktionen auf einem Gerät
+# <a name="take-response-actions-on-a-device"></a>Ergreifen von Reaktionen auf einem Gerät
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,14 +36,14 @@ Reagieren Sie schnell auf erkannte Angriffe, indem Sie Geräte isolieren oder ei
 
 Reaktionsaktionen werden am oberen Rand einer bestimmten Geräteseite ausgeführt und umfassen Folgendes:
 
-- Verwalten von Tags
+- Verwalten von Kategorien
 - Initiieren einer automatisierten Untersuchung
 - Initiieren der Liveantwortsitzung
 - Untersuchungspaket sammeln
-- Ausführen der Antivirenscans
+- Antivirusscan ausführen
 - Einschränken der App-Ausführung
 - Isolieren des Geräts
-- Konsultieren eines Bedrohungsexperten
+- Wenden Sie sich an einen Bedrohungsexperten
 - Info-Center
 
 [![Abbildung von Reaktionsaktionen ](images/response-actions.png)](images/response-actions.png#lightbox)
@@ -59,7 +59,7 @@ Reaktionsaktionen werden am oberen Rand einer bestimmten Geräteseite ausgeführ
 > - Diese Reaktionsaktionen sind nur für Geräte unter Windows 10, Version 1703 oder höher, verfügbar. 
 > - Für Nicht-Windows-Plattformen sind Reaktionsfunktionen (z. B. Geräteisolation) von den Drittanbieterfunktionen abhängig.
 
-## <a name="manage-tags"></a>Verwalten von Tags
+## <a name="manage-tags"></a>Verwalten von Kategorien
 
 Hinzufügen oder Verwalten von Tags zum Erstellen einer logischen Gruppenzugehörigkeit. Gerätetags unterstützen die ordnungsgemäße Zuordnung des Netzwerks, sodass Sie verschiedene Tags anfügen können, um Kontext zu erfassen und dynamische Listenerstellung als Teil eines Vorfalls zu ermöglichen.
 
@@ -159,7 +159,7 @@ Wenn eine App eingeschränkt ist, wird die folgende Benachrichtigung angezeigt, 
 
 ![Abbildung der App-Einschränkung](images/atp-app-restriction.png)
 
-## <a name="isolate-devices-from-the-network"></a>Isolieren von Geräten vom Netzwerk
+## <a name="isolate-devices-from-the-network"></a>Isolieren von Geräten aus dem Netzwerk
 
 Abhängig vom Schweregrad des Angriffs und der Vertraulichkeit des Geräts können Sie das Gerät vom Netzwerk isolieren. Diese Aktion kann verhindern, dass der Angreifer das gefährdete Gerät steuert und weitere Aktivitäten wie Daten-Exfiltration und Querbewegungen ausführen kann.
 
@@ -186,7 +186,7 @@ Wenn ein Gerät isoliert wird, wird die folgende Benachrichtigung angezeigt, um 
 
 ![Image of no network connection](images/atp-notification-isolate.png)
 
-## <a name="consult-a-threat-expert"></a>Konsultieren eines Bedrohungsexperten
+## <a name="consult-a-threat-expert"></a>Wenden Sie sich an einen Bedrohungsexperten
 
 Sie können einen Microsoft-Bedrohungsexperten konsultieren, um weitere Einblicke in ein potenziell gefährdetes oder bereits gefährdetes Gerät zu erhalten. Microsoft Threat Experts können direkt im Microsoft Defender Security Center für eine zeitnahe und genaue Reaktion eingeschaltet werden. Experten bieten Einblicke nicht nur zu einem potenziell gefährdeten Gerät, sondern auch zum besseren Verständnis komplexer Bedrohungen, gezielter Angriffsbenachrichtigungen, die Sie erhalten, oder wenn Sie weitere Informationen zu den Warnungen oder einen Bedrohungsintelligenzkontext benötigen, den Sie im Portaldashboard sehen.
 
@@ -207,5 +207,5 @@ Alle anderen zugehörigen Details werden ebenfalls angezeigt, z. B. Übermittlun
 ![Abbildung des Aktionscenters mit Informationen](images/action-center-details.png)
 
 ## <a name="related-topic"></a>Verwandtes Thema
-- [Ausführen von Reaktionsaktionen für eine Datei](respond-file-alerts.md)
+- [Ergreifen von Reaktionen auf eine Datei](respond-file-alerts.md)
 - [Ungenauigkeit melden](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

@@ -18,28 +18,28 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 578830d44a9a69c3ccafd78ceaf59ddfe100e43f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 951c51c767ba09ebc6056481b4fac45da09c5671
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068895"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688549"
 ---
-# <a name="set-preferences-for-microsoft-defender-for-endpoint-for-mac"></a>Festlegen von Einstellungen für Microsoft Defender for Endpoint für Mac
+# <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Festlegen von Einstellungen für Microsoft Defender for Endpoint unter macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Gilt für:**
 
-- [Microsoft Defender für Endpoint für Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint unter macOS](microsoft-defender-endpoint-mac.md)
 
 >[!IMPORTANT]
->Dieser Artikel enthält Anweisungen zum Festlegen von Einstellungen für Microsoft Defender for Endpoint für Mac in Unternehmensorganisationen. Informationen zum Konfigurieren von Microsoft Defender for Endpoint für Mac über die Befehlszeilenschnittstelle finden Sie unter [Resources](mac-resources.md#configuring-from-the-command-line).
+>Dieser Artikel enthält Anweisungen zum Festlegen von Einstellungen für Microsoft Defender for Endpoint auf macOS in Unternehmensorganisationen. Informationen zum Konfigurieren von Microsoft Defender for Endpoint unter macOS über die Befehlszeilenschnittstelle finden Sie unter [Resources](mac-resources.md#configuring-from-the-command-line).
 
 ## <a name="summary"></a>Zusammenfassung
 
-In Unternehmensorganisationen kann Microsoft Defender for Endpoint für Mac über ein Konfigurationsprofil verwaltet werden, das mithilfe eines von mehreren Verwaltungstools bereitgestellt wird. Einstellungen, die vom Sicherheitsbetriebsteam verwaltet werden, haben Vorrang vor Einstellungen, die lokal auf dem Gerät festgelegt werden. Das Ändern der Einstellungen, die über das Konfigurationsprofil festgelegt werden, erfordert eskalierte Berechtigungen und ist für Benutzer ohne Administratorberechtigungen nicht verfügbar.
+In Unternehmensorganisationen kann Microsoft Defender for Endpoint unter macOS über ein Konfigurationsprofil verwaltet werden, das mithilfe eines von mehreren Verwaltungstools bereitgestellt wird. Einstellungen, die vom Sicherheitsbetriebsteam verwaltet werden, haben Vorrang vor Einstellungen, die lokal auf dem Gerät festgelegt werden. Das Ändern der Einstellungen, die über das Konfigurationsprofil festgelegt werden, erfordert eskalierte Berechtigungen und ist für Benutzer ohne Administratorberechtigungen nicht verfügbar.
 
 Dieser Artikel beschreibt die Struktur des Konfigurationsprofils, enthält ein empfohlenes Profil, das Sie für die ersten Schritte verwenden können, und enthält Anweisungen zum Bereitstellen des Profils.
 
@@ -56,21 +56,21 @@ Die oberste Ebene des Konfigurationsprofils enthält produktweite Einstellungen 
 
 Der *Abschnitt antivirusEngine* des Konfigurationsprofils wird verwendet, um die Einstellungen der Antiviruskomponente von Microsoft Defender for Endpoint zu verwalten.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | antivirusEngine |
+| **Key** | antivirusEngine |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
-| **Comments** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
+| **Kommentare** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
 
 #### <a name="enable--disable-real-time-protection"></a>Aktivieren/Deaktivieren des Echtzeitschutzes
 
 Geben Sie an, ob der Echtzeitschutz aktiviert werden soll, der Dateien beim Zugriff überprüft.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | enableRealTimeProtection |
+| **Key** | enableRealTimeProtection |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | true (Standard) <br/> false |
 
@@ -83,45 +83,45 @@ Geben Sie an, ob das Antivirenmodul im passiven Modus ausgeführt wird. Der pass
 - Sicherheitsintelligenzupdates sind aktiviert
 - Statusmenüsymbol ist ausgeblendet
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | passiveMode |
+| **Key** | passiveMode |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | false (Standard) <br/> true |
-| **Comments** | Verfügbar in Microsoft Defender for Endpoint, Version 100.67.60 oder höher. |
+| **Kommentare** | Verfügbar in Microsoft Defender for Endpoint, Version 100.67.60 oder höher. |
 
 #### <a name="exclusion-merge-policy"></a>Ausschlusszusammenführungsrichtlinie
 
 Geben Sie die Seriendruckrichtlinie für Ausschlüsse an. Dies kann eine Kombination aus vom Administrator definierten und benutzerdefinierten Ausschlüssen ( ) oder nur vom Administrator definierten `merge` Ausschlüssen ( `admin_only` ) sein. Diese Einstellung kann verwendet werden, um lokale Benutzer an der Definition eigener Ausschlüsse zu beschränken.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | exclusionsMergePolicy |
+| **Key** | exclusionsMergePolicy |
 | **Datentyp** | String |
 | **Mögliche Werte** | merge (Standard) <br/> admin_only |
-| **Comments** | Verfügbar in Microsoft Defender for Endpoint, Version 100.83.73 oder höher. |
+| **Kommentare** | Verfügbar in Microsoft Defender for Endpoint, Version 100.83.73 oder höher. |
 
 #### <a name="scan-exclusions"></a>Scannen von Ausschlüssen
 
 Geben Sie Entitäten an, die von der Gescannten ausgeschlossen werden. Ausschlüsse können durch vollständige Pfade, Erweiterungen oder Dateinamen angegeben werden.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | Ausschlüsse |
+| **Key** | Ausschlüsse |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
-| **Comments** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
+| **Kommentare** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
 
 ##### <a name="type-of-exclusion"></a>Art des Ausschlusses
 
 Geben Sie Inhalte an, die vom Typ ausgeschlossen werden.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | $type |
+| **Key** | $type |
 | **Datentyp** | String |
 | **Mögliche Werte** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
 
@@ -129,91 +129,91 @@ Geben Sie Inhalte an, die vom Typ ausgeschlossen werden.
 
 Geben Sie Inhalte an, die nicht durch den vollständigen Dateipfad gescannt werden.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | path |
+| **Key** | path |
 | **Datentyp** | String |
 | **Mögliche Werte** | gültige Pfade |
-| **Comments** | Gilt nur, *$type* *ausgeschlossen IstPath* |
+| **Kommentare** | Gilt nur, *$type* *ausgeschlossen IstPath* |
 
 ##### <a name="path-type-file--directory"></a>Pfadtyp (Datei/Verzeichnis)
 
 Gibt an, ob *die path-Eigenschaft* auf eine Datei oder ein Verzeichnis verweist. 
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | isDirectory |
+| **Key** | isDirectory |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | false (Standard) <br/> true |
-| **Comments** | Gilt nur, *$type* *ausgeschlossen IstPath* |
+| **Kommentare** | Gilt nur, *$type* *ausgeschlossen IstPath* |
 
 ##### <a name="file-extension-excluded-from-the-scan"></a>Dateierweiterung, die von der Überprüfung ausgeschlossen wurde
 
 Geben Sie Inhalte an, die von der Dateierweiterung nicht gescannt werden.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | erweiterung |
+| **Key** | erweiterung |
 | **Datentyp** | String |
 | **Mögliche Werte** | Gültige Dateierweiterungen |
-| **Comments** | Gilt nur, *$type* *ausgeschlossen istFileExtension* |
+| **Kommentare** | Gilt nur, *$type* *ausgeschlossen istFileExtension* |
 
 ##### <a name="process-excluded-from-the-scan"></a>Prozess, der von der Überprüfung ausgeschlossen wurde
 
 Geben Sie einen Prozess an, für den alle Dateiaktivitäten von der Überprüfung ausgeschlossen werden. Der Prozess kann entweder durch seinen Namen (z. B. ) oder den vollständigen `cat` Pfad (z. B. ) angegeben werden. `/bin/cat`
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | Name |
+| **Key** | Name |
 | **Datentyp** | String |
 | **Mögliche Werte** | eine beliebige Zeichenfolge |
-| **Comments** | Gilt nur, *$type* *ausgeschlossen istFileName* |
+| **Kommentare** | Gilt nur, *$type* *ausgeschlossen istFileName* |
 
 #### <a name="allowed-threats"></a>Zulässige Bedrohungen
 
 Geben Sie Bedrohungen nach Namen an, die nicht von Defender for Endpoint für Mac blockiert werden. Diese Bedrohungen können ausgeführt werden.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | allowedThreats |
+| **Key** | allowedThreats |
 | **Datentyp** | Array aus Zeichenfolgen |
 
 #### <a name="disallowed-threat-actions"></a>Unzulässige Bedrohungsaktionen
 
 Schränkt die Aktionen ein, die der lokale Benutzer eines Geräts ausführen kann, wenn Bedrohungen erkannt werden. Die in dieser Liste enthaltenen Aktionen werden nicht auf der Benutzeroberfläche angezeigt.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | disallowedThreatActions |
+| **Key** | disallowedThreatActions |
 | **Datentyp** | Array aus Zeichenfolgen |
 | **Mögliche Werte** | allow (schränkt ein, dass Benutzer Bedrohungen zulassen) <br/> restore (schränkt benutzer das Wiederherstellen von Bedrohungen aus der Quarantäne ein) |
-| **Comments** | Verfügbar in Microsoft Defender for Endpoint, Version 100.83.73 oder höher. |
+| **Kommentare** | Verfügbar in Microsoft Defender for Endpoint, Version 100.83.73 oder höher. |
 
 #### <a name="threat-type-settings"></a>Einstellungen für den Bedrohungstyp
 
-Geben Sie an, wie bestimmte Bedrohungstypen von Microsoft Defender for Endpoint für Mac behandelt werden.
+Geben Sie an, wie bestimmte Bedrohungstypen von Microsoft Defender for Endpoint unter macOS behandelt werden.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | threatTypeSettings |
+| **Key** | threatTypeSettings |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
-| **Comments** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
+| **Kommentare** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
 
 ##### <a name="threat-type"></a>Bedrohungstyp
 
 Geben Sie Bedrohungstypen an.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | Schlüssel |
+| **Key** | Schlüssel |
 | **Datentyp** | String |
 | **Mögliche Werte** | potentially_unwanted_application <br/> archive_bomb |
 
@@ -225,10 +225,10 @@ Geben Sie an, welche Aktion ausgeführt werden soll, wenn eine Bedrohung des im 
 - **Block**: Ihr Gerät ist vor dieser Art von Bedrohung geschützt, und Sie werden über die Benutzeroberfläche und die Sicherheitskonsole benachrichtigt.
 - **Aus**: Ihr Gerät ist nicht vor dieser Art von Bedrohung geschützt, und es wird nichts protokolliert.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | Wert |
+| **Key** | Wert |
 | **Datentyp** | String |
 | **Mögliche Werte** | Überwachung (Standard) <br/> block <br/> off |
 
@@ -236,57 +236,57 @@ Geben Sie an, welche Aktion ausgeführt werden soll, wenn eine Bedrohung des im 
 
 Geben Sie die Seriendruckrichtlinie für Bedrohungstypeinstellungen an. Dies kann eine Kombination aus vom Administrator definierten und benutzerdefinierten Einstellungen ( ) oder nur vom Administrator definierten Einstellungen `merge` ( ) `admin_only` sein. Diese Einstellung kann verwendet werden, um lokale Benutzer an der Definition eigener Einstellungen für verschiedene Bedrohungstypen zu beschränken.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | threatTypeSettingsMergePolicy |
+| **Key** | threatTypeSettingsMergePolicy |
 | **Datentyp** | String |
 | **Mögliche Werte** | merge (Standard) <br/> admin_only |
-| **Comments** | Verfügbar in Microsoft Defender for Endpoint, Version 100.83.73 oder höher. |
+| **Kommentare** | Verfügbar in Microsoft Defender for Endpoint, Version 100.83.73 oder höher. |
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>Aufbewahrung des Antivirusscanverlaufs (in Tagen)
 
 Geben Sie die Anzahl der Tage an, die Ergebnisse im Scanverlauf auf dem Gerät aufbewahrt werden. Alte Scanergebnisse werden aus dem Verlauf entfernt. Alte isolierte Dateien, die ebenfalls vom Datenträger entfernt wurden.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | scanResultsRetentionDays |
+| **Key** | scanResultsRetentionDays |
 | **Datentyp** | String |
 | **Mögliche Werte** | 90 (Standard). Zulässige Werte liegen zwischen 1 Tag und 180 Tagen. |
-| **Comments** | Verfügbar in Microsoft Defender for Endpoint, Version 101.07.23 oder höher. |
+| **Kommentare** | Verfügbar in Microsoft Defender for Endpoint, Version 101.07.23 oder höher. |
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>Maximale Anzahl von Elementen im Antivirusscanverlauf
 
 Geben Sie die maximale Anzahl von Einträgen an, die im Scanverlauf bleiben sollen. Zu den Einträgen gehören alle in der Vergangenheit durchgeführten Bedarfsscans und alle Antivirenerkennungen.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | scanHistoryMaximumItems |
+| **Key** | scanHistoryMaximumItems |
 | **Datentyp** | String |
 | **Mögliche Werte** | 10000 (Standard). Zulässige Werte liegen zwischen 5.000 und 15.000 Elementen. |
-| **Comments** | Verfügbar in Microsoft Defender for Endpoint, Version 101.07.23 oder höher. |
+| **Kommentare** | Verfügbar in Microsoft Defender for Endpoint, Version 101.07.23 oder höher. |
 
 ### <a name="cloud-delivered-protection-preferences"></a>Von der Cloud übermittelte Schutzeinstellungen
 
-Konfigurieren Sie die cloudgesteuerten Schutzfunktionen von Microsoft Defender for Endpoint für Mac.
+Konfigurieren Sie die cloudgesteuerten Schutzfunktionen von Microsoft Defender for Endpoint unter macOS.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | cloudService |
+| **Key** | cloudService |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
-| **Comments** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
+| **Kommentare** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>Aktivieren/Deaktivieren des in der Cloud übermittelten Schutzes
 
 Geben Sie an, ob der in der Cloud zugestellte Schutz auf dem Gerät aktiviert werden soll. Um die Sicherheit Ihrer Dienste zu verbessern, wird empfohlen, dieses Feature aktiviert zu halten.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | aktiviert |
+| **Key** | aktiviert |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | true (Standard) <br/> false |
 
@@ -294,10 +294,10 @@ Geben Sie an, ob der in der Cloud zugestellte Schutz auf dem Gerät aktiviert we
 
 Diagnosedaten werden verwendet, um Microsoft Defender for Endpoint sicher und auf dem neuesten Stand zu halten, Probleme zu erkennen, zu diagnostizieren und zu beheben sowie Produktverbesserungen vorzunehmen. Diese Einstellung bestimmt die Diagnosestufe, die von Microsoft Defender for Endpoint an Microsoft gesendet wird.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | diagnosticLevel |
+| **Key** | diagnosticLevel |
 | **Datentyp** | String |
 | **Mögliche Werte** | optional (Standard) <br/> erforderlich |
 
@@ -305,10 +305,10 @@ Diagnosedaten werden verwendet, um Microsoft Defender for Endpoint sicher und au
 
 Bestimmt, ob verdächtige Beispiele (die wahrscheinlich Bedrohungen enthalten) an Microsoft gesendet werden. Sie werden aufgefordert, wenn die übermittelte Datei wahrscheinlich personenbezogene Informationen enthält.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | automaticSampleSubmission |
+| **Key** | automaticSampleSubmission |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | true (Standard) <br/> false |
 
@@ -316,31 +316,31 @@ Bestimmt, ob verdächtige Beispiele (die wahrscheinlich Bedrohungen enthalten) a
 
 Bestimmt, ob Sicherheitsintelligenzupdates automatisch installiert werden:
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
-| **Schlüssel** | automaticDefinitionUpdateEnabled |
+| **Key** | automaticDefinitionUpdateEnabled |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | true (Standard) <br/> false |
 
 ### <a name="user-interface-preferences"></a>Benutzeroberflächeneinstellungen
 
-Verwalten Sie die Einstellungen für die Benutzeroberfläche von Microsoft Defender for Endpoint für Mac.
+Verwalten Sie die Einstellungen für die Benutzeroberfläche von Microsoft Defender for Endpoint unter macOS.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | userInterface |
+| **Key** | userInterface |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
-| **Comments** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
+| **Kommentare** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
 
 #### <a name="show--hide-status-menu-icon"></a>Symbol für Das Menü "Status anzeigen/ausblenden"
 
 Geben Sie an, ob das Statusmenüsymbol in der oberen rechten Ecke des Bildschirms ein- oder ausgeblendet werden soll.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | hideStatusMenuIcon |
+| **Key** | hideStatusMenuIcon |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | false (Standard) <br/> true |
 
@@ -348,24 +348,24 @@ Geben Sie an, ob das Statusmenüsymbol in der oberen rechten Ecke des Bildschirm
 
 Geben Sie an, ob Benutzer Feedback an Microsoft senden können, indem Sie zu `Help`  >  `Send Feedback` gehen.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | userInitiatedFeedback |
+| **Key** | userInitiatedFeedback |
 | **Datentyp** | String |
 | **Mögliche Werte** | aktiviert (Standard) <br/> deaktiviert |
-| **Comments** | Verfügbar in Microsoft Defender for Endpoint, Version 101.19.61 oder höher. |
+| **Kommentare** | Verfügbar in Microsoft Defender for Endpoint, Version 101.19.61 oder höher. |
 
 ### <a name="endpoint-detection-and-response-preferences"></a>Einstellungen für endpunkterkennung und -reaktion
 
-Verwalten Sie die Einstellungen der Endpunkterkennungs- und -antwortkomponente (EDR) von Microsoft Defender for Endpoint für Mac.
+Verwalten Sie die Einstellungen der Endpunkterkennungs- und -antwortkomponente von Microsoft Defender for Endpoint unter macOS.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | edr |
+| **Key** | edr |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
-| **Comments** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
+| **Kommentare** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
 
 #### <a name="device-tags"></a>Gerätetags
 
@@ -373,21 +373,21 @@ Geben Sie einen Tagnamen und dessen Wert an.
 
 - Das GROUP-Tag tagt das Gerät mit dem angegebenen Wert. Das Tag wird im Portal unter der Geräteseite angezeigt und kann zum Filtern und Gruppieren von Geräten verwendet werden.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | tags |
+| **Key** | tags |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
-| **Comments** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
+| **Kommentare** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
 
 ##### <a name="type-of-tag"></a>Tagtyp
 
 Gibt den Typ des Tags an.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | Schlüssel |
+| **Key** | Schlüssel |
 | **Datentyp** | String |
 | **Mögliche Werte** | `GROUP` |
 
@@ -395,10 +395,10 @@ Gibt den Typ des Tags an.
 
 Gibt den Wert des Tags an.
 
-|||
+|Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | Wert |
+| **Key** | Wert |
 | **Datentyp** | String |
 | **Mögliche Werte** | eine beliebige Zeichenfolge |
 
@@ -542,7 +542,7 @@ Das folgende Konfigurationsprofil (oder im Fall von JAMF eine Eigenschaftenliste
 
 ## <a name="full-configuration-profile-example"></a>Beispiel für ein vollständiges Konfigurationsprofil
 
-Die folgenden Vorlagen enthalten Einträge für alle in diesem Dokument beschriebenen Einstellungen und können für erweiterte Szenarien verwendet werden, in denen Sie mehr Kontrolle über Microsoft Defender for Endpoint für Mac wünschen.
+Die folgenden Vorlagen enthalten Einträge für alle in diesem Dokument beschriebenen Einstellungen und können für erweiterte Szenarien verwendet werden, in denen Sie mehr Kontrolle über Microsoft Defender for Endpoint unter macOS wünschen.
 
 ### <a name="property-list-for-jamf-configuration-profile"></a>Eigenschaftenliste für das JAMF-Konfigurationsprofil
 

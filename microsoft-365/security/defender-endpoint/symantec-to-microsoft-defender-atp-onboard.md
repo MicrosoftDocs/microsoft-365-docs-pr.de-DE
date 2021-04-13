@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: cc005c559e0f91f1c5888f8d7e4e7a2a420894db
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 1d332f6b0d6338d18c5a85dcf737f968f00f275f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218700"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689521"
 ---
 # <a name="migrate-from-symantec---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>Migrieren von Symantec – Phase 3: Onboarding zu Microsoft Defender for Endpoint
 
@@ -46,7 +46,7 @@ ms.locfileid: "51218700"
 3. [Deinstallieren Von Symantec](#uninstall-symantec).
 4. [Stellen Sie sicher, dass sich Microsoft Defender for Endpoint im aktiven Modus befindet.](#make-sure-microsoft-defender-for-endpoint-is-in-active-mode)
 
-## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Onboarding von Geräten in Microsoft Defender for Endpoint
+## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Geräte in Microsoft Defender für Endpunkt onboarden
 
 1. Wechseln Sie zum Microsoft Defender Security Center ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ) und melden Sie sich an.
 2. Wählen **Sie Einstellungen**  >  **Geräteverwaltung**  >  **Onboarding aus.** 
@@ -72,8 +72,8 @@ Um sicherzustellen, dass Ihre integrierten Geräte ordnungsgemäß mit Microsoft
 |Betriebssystem  |Richtlinien  |
 |---------|---------|
 |- Windows 10 <br/>- Windows Server 2019 <br/>- Windows Server, Version 1803 <br/>- Windows Server 2016 <br/>- Windows Server 2012 R2     |Weitere [Informationen finden Sie unter Ausführen eines Erkennungstests.](run-detection-test.md) <br/><br/>Besuchen Sie die Microsoft Defender for Endpoint-Demoszenarien-Website ( ) und testen Sie eines [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) oder mehrere der Szenarien. Testen Sie beispielsweise das **Demoszenario für den Cloud-zugestellten** Schutz.         |
-|macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)     |Laden Sie die HEIMWERKER-App unter herunter und verwenden Sie [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) sie. <br/><br/>Weitere Informationen finden Sie unter [Microsoft Defender for Endpoint für Mac](microsoft-defender-endpoint-mac.md).        |
-|Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS oder höher LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |1. Führen Sie den folgenden Befehl aus, und suchen Sie nach einem Ergebnis von **1:** <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. Öffnen Sie ein Terminalfenster, und führen Sie den folgenden Befehl aus: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. Führen Sie den folgenden Befehl aus, um erkannte Bedrohungen auflisten: <br/>`mdatp threat list`. <br/><br/>Weitere Informationen finden Sie unter [Microsoft Defender for Endpoint for Linux](microsoft-defender-endpoint-linux.md). |
+|macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)     |Laden Sie die HEIMWERKER-App unter herunter und verwenden Sie [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) sie. <br/><br/>Weitere Informationen finden Sie unter [Microsoft Defender for Endpoint auf macOS](microsoft-defender-endpoint-mac.md).        |
+|Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS oder höher LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |1. Führen Sie den folgenden Befehl aus, und suchen Sie nach einem Ergebnis von **1:** <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. Öffnen Sie ein Terminalfenster, und führen Sie den folgenden Befehl aus: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. Führen Sie den folgenden Befehl aus, um erkannte Bedrohungen auflisten: <br/>`mdatp threat list`. <br/><br/>Weitere Informationen finden Sie unter [Microsoft Defender for Endpoint unter Linux](microsoft-defender-endpoint-linux.md). |
 
 ## <a name="uninstall-symantec"></a>Deinstallieren von Symantec
 

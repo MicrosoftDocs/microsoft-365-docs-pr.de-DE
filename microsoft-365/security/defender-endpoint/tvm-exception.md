@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Anzeigen von Ausnahmen für Sicherheitsempfehlungen – Bedrohungs- und Sicherheitsrisikoverwaltung
 description: Erstellen und Überwachen von Ausnahmen für Sicherheitsempfehlungen im Bedrohungs- und Sicherheitsrisikomanagement.
-keywords: microsoft defender atp tvm remediation, mdatp tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
+keywords: microsoft defender for endpoint tvm remediation, mdatp tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13ac09b1ad918ed945edec6167fd57ea02b616ea
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 4f37300a742ab8cac32e95863cb706f1fd5f5d66
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500187"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689413"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Erstellen und Anzeigen von Ausnahmen für Sicherheitsempfehlungen – Bedrohungs- und Sicherheitsrisikoverwaltung
 
@@ -84,7 +84,7 @@ Es wird ein Flyout angezeigt, in dem Sie Gerätegruppen suchen und auswählen k�
 
 ### <a name="global-exceptions"></a>Globale Ausnahmen
 
-Wenn Sie über globale Administratorberechtigungen (als Microsoft Defender ATP-Administrator bezeichnet) verfügen, können Sie eine globale Ausnahme erstellen und abbrechen. Sie wirkt **sich auf** alle aktuellen und zukünftigen Gerätegruppen in Ihrer Organisation aus, und nur ein Benutzer mit einer ähnlichen Berechtigung kann sie ändern. Der Empfehlungsstatus wird von "aktiv" in "vollständige Ausnahme" geändert.
+Wenn Sie über globale Administratorberechtigungen verfügen, können Sie eine globale Ausnahme erstellen und abbrechen. Sie wirkt **sich auf** alle aktuellen und zukünftigen Gerätegruppen in Ihrer Organisation aus, und nur ein Benutzer mit einer ähnlichen Berechtigung kann sie ändern. Der Empfehlungsstatus wird von "aktiv" in "vollständige Ausnahme" geändert.
 
 ![Zeigt die globale Ausnahmeoption an.](images/tvm-exception-global.png)
 

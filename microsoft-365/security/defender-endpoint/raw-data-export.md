@@ -1,6 +1,6 @@
 ---
 title: Streamen des Microsoft Defender for Endpoint-Ereignisses
-description: Informationen zum Konfigurieren von Microsoft Defender ATP zum Streamen von Advanced Hunting-Ereignissen an Event Hubs oder Azure-Speicherkonto
+description: Informationen zum Konfigurieren von Microsoft Defender for Endpoint zum Streamen von Advanced Hunting-Ereignissen an Event Hubs oder Azure-Speicherkonto
 keywords: Rohdatenexport, Streaming-API, API, Event Hubs, Azure-Speicher, Speicherkonto, Erweiterte Suche, Freigabe von Rohdaten
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 22f4e4c974b60e291273eb9bebfa34583f4e2fb7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f6a45629d610ea3cc3ca7d517021a215b72b1439
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063847"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688753"
 ---
 # <a name="raw-data-streaming-api"></a>Raw Data Streaming API
 

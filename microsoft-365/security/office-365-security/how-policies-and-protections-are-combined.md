@@ -1,6 +1,6 @@
 ---
 title: Reihenfolge und Rangfolge des E-Mail-Schutzes
-keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Security Center, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
+keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Security Center, ATP, Microsoft Defender for Endpoint, Office 365 ATP, Azure ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.custom:
 description: Administratoren können sich über die Anwendungsreihenfolge von Schutzen in Exchange Online Protection (EOP) und darüber informieren, wie der Prioritätswert in Schutzrichtlinien bestimmt, welche Richtlinie angewendet wird.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2a72420340993c027ec99820dcd3edddab1a304
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3419cba5781e7ab1042f7312c721069d88fb8767
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204179"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687649"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Reihenfolge und Rangfolge des E-Mail-Schutzes
 

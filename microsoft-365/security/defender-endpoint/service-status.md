@@ -1,6 +1,6 @@
 ---
-title: Überprüfen des Microsoft Defender ATP-Dienstzustands
-description: Überprüfen Sie die Integrität des Microsoft Defender ATP-Diensts, überprüfen Sie, ob beim Dienst Probleme auftreten, und überprüfen Sie frühere Probleme, die behoben wurden.
+title: Überprüfen der Integrität des Microsoft Defender for Endpoint-Diensts
+description: Überprüfen Sie die Integrität des Microsoft Defender for Endpoint-Diensts, überprüfen Sie, ob beim Dienst Probleme auftreten, und überprüfen Sie frühere Probleme, die behoben wurden.
 keywords: dashboard, service, issues, service health, current status, status history, summary of impact, preliminary root cause, resolution, resolution time, expected resolution time
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45782fcce51e15adf61757d836d313d229558571
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1b4545daace5df1a1a9c6e827f7d8f1b522a690c
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064879"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687625"
 ---
 # <a name="check-the-microsoft-defender-for-endpoint-service-health"></a>Überprüfen der Integrität des Microsoft Defender for Endpoint-Diensts
 

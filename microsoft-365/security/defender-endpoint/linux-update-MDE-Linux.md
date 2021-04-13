@@ -16,16 +16,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b4c2e4d80628dab40de9e99abb27237176b9f171
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a967333a58f74938ea70e32e0c48d2decb597e98
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062464"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688801"
 ---
-# <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Planen eines Updates von Microsoft Defender for Endpoint (Linux)
+# <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Planen eines Updates von Microsoft Defender für Endpunkt (Linux)
 
-Informationen zum Ausführen eines Updates auf Microsoft Defender for Endpoint für Linux finden Sie unter [Deploy updates for Microsoft Defender for Endpoint for Linux](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates).
+Informationen zum Ausführen eines Updates für Microsoft Defender for Endpoint unter Linux finden Sie unter [Deploy updates for Microsoft Defender for Endpoint on Linux](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates).
 
 Linux (und Unix) verfügen über ein Tool namens **"crontab"** (ähnlich wie Task Scheduler), um geplante Aufgaben ausführen zu können.
 

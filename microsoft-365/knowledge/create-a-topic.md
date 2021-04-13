@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: c1f7b67bb49aff8d6656798d80636d9de5858877
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7d1dc1af6e845ccfe2fb0e8f5701a2cd3018c308
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165837"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687531"
 ---
 # <a name="create-a-new-topic-in-microsoft-viva-topics"></a>Erstellen eines neuen Themas in Microsoft Viva Topics
 
@@ -42,82 +42,77 @@ Zum Erstellen eines neuen Themas müssen Sie:
 
 Sie können ein neues Thema an zwei Speicherorten erstellen:
 
-- Startseite des Themencenters: Jeder  lizenzierte Benutzer mit der Berechtigung "Wer kann Themen erstellen oder <b></b> bearbeiten" (Mitwirkende) kann ein neues Thema im Themencenter erstellen, indem er das Menü Neu und die Seite Thema <b>auswählt.</b></br> 
+- Startseite des Themencenters: Jeder  lizenzierte Benutzer mit der Berechtigung "Wer kann Themen erstellen oder  bearbeiten" (Mitwirkende) kann ein neues Thema im Themencenter erstellen, indem er das Menü Neu und die Seite Thema **auswählt.** 
 
-    ![Neues Thema aus dem Themencenter](../media/knowledge-management/new-topic.png) </br> 
+    ![Neues Thema aus dem Themencenter](../media/knowledge-management/new-topic.png)  
 
-- Seite "Themen verwalten": Jeder lizenzierte Benutzer, der über die Berechtigung **"Wer** kann Themen verwalten" verfügt (Wissensmanager), kann ein neues Thema auf der Seite Themen verwalten im Themencenter erstellen, indem er neue <b>Themenseite aus wählt.</b></br> 
+- Seite "Themen verwalten": Jeder lizenzierte Benutzer, der über die Berechtigung **"Wer** kann Themen verwalten" verfügt (Wissensmanager), kann ein neues Thema auf der Seite Themen verwalten im Themencenter erstellen, indem er neue **Themenseite aus wählt.** 
 
-    ![Neues Thema aus Verwalten von Themen](../media/knowledge-management/new-topic-topic-center.png) </br> 
+    ![Neues Thema aus Verwalten von Themen](../media/knowledge-management/new-topic-topic-center.png)  
 
 ### <a name="to-create-a-new-topic"></a>So erstellen Sie ein neues Thema:
 
 1. Wählen Sie die Option zum Erstellen einer neuen Themenseite im Menüband auf der Seite Themen verwalten aus.
 
-2.   Geben Sie **im Abschnitt Dieses Thema** benennen den Namen des neuen Themas ein.
+2.  Geben Sie **im Abschnitt Dieses Thema** benennen den Namen des neuen Themas ein.
 
-    ![Benennen Sie dieses Thema](../media/knowledge-management/k-new-topic-page.png) </br> 
+    ![Benennen Sie dieses Thema](../media/knowledge-management/k-new-topic-page.png)  
 
+3. Geben Sie **im Abschnitt** Alternative Namen alle anderen Namen ein, auf die das Thema möglicherweise verwiesen wird. 
 
-3. Geben Sie <b>im Abschnitt</b> Alternative Namen alle anderen Namen ein, auf die das Thema möglicherweise verwiesen wird. 
+    ![Alternative Namen](../media/knowledge-management/alt-names.png)  
 
-    ![Alternative Namen](../media/knowledge-management/alt-names.png) </br> 
-4. Geben Sie <b>im Abschnitt</b> Beschreibung einige Sätze ein, die das Thema beschreiben. 
+4. Geben Sie **im Abschnitt** Beschreibung einige Sätze ein, die das Thema beschreiben. 
 
-    ![Beschreibung des Themas](../media/knowledge-management/description.png)</br>
+    ![Beschreibung des Themas](../media/knowledge-management/description.png)
 
-4. Im Abschnitt <b>Angeheftet personen</b> können Sie eine Person "anheften", um zu zeigen, dass sie eine Verbindung mit dem Thema hat (z. B. ein Besitzer einer verbundenen Ressource). Geben Sie zunächst ihren Namen oder <b></b> ihre E-Mail-Adresse in das Feld Neuen Benutzer hinzufügen ein, und wählen Sie dann den Benutzer aus, den Sie in den Suchergebnissen hinzufügen möchten. Sie können sie auch "entpin" entfernen, indem Sie auf der Benutzerkarte das Symbol Aus der Liste entfernen auswählen. <b></b> Sie können die Person auch ziehen, um die Reihenfolge zu ändern, in der die Liste der Personen angezeigt wird.
+4. Im Abschnitt **Angeheftet personen** können Sie eine Person "anheften", um zu zeigen, dass sie eine Verbindung mit dem Thema hat (z. B. ein Besitzer einer verbundenen Ressource). Geben Sie zunächst ihren Namen oder  ihre E-Mail-Adresse in das Feld Neuen Benutzer hinzufügen ein, und wählen Sie dann den Benutzer aus, den Sie in den Suchergebnissen hinzufügen möchten. Sie können sie auch "entpin" entfernen, indem Sie auf der Benutzerkarte das Symbol Aus der Liste entfernen auswählen.  Sie können die Person auch an einen anderen Ort in der Liste ziehen.
  
-    ![Angeheftete Personen](../media/knowledge-management/pinned-people.png)</br>
+    ![Angeheftete Personen](../media/knowledge-management/pinned-people.png)
 
+5. Im Abschnitt **Angeheftete Dateien** und Seiten können Sie eine Datei oder Eine SharePoint-Websiteseite hinzufügen oder anheften, die dem Thema zugeordnet ist.
 
-5. Im Abschnitt <b>Angeheftete Dateien</b> und Seiten können Sie eine Datei oder Eine SharePoint-Websiteseite hinzufügen oder anheften, die dem Thema zugeordnet ist.
-
-   ![Angeheftete Dateien und Seiten](../media/knowledge-management/pinned-files-and-pages.png)</br>
+   ![Angeheftete Dateien und Seiten](../media/knowledge-management/pinned-files-and-pages.png)
  
-    Um eine neue Datei hinzuzufügen, wählen Sie <b>Hinzufügen</b>aus, wählen Sie die SharePoint-Website aus Ihren Häufigen oder gefolgten Websites aus, und wählen Sie dann die Datei aus der Dokumentbibliothek der Website aus.
+    Um eine neue Datei hinzuzufügen, wählen Sie **Hinzufügen** aus, wählen Sie die SharePoint-Website aus Ihren Häufigen oder gefolgten Websites aus, und wählen Sie dann die Datei aus der Dokumentbibliothek der Website aus.
 
-    Sie können auch die Option <b>Von einem Link verwenden,</b> um eine Datei oder Seite hinzuzufügen, indem Sie die URL angeben. 
+    Sie können auch die Option **Von einem Link verwenden,** um eine Datei oder Seite hinzuzufügen, indem Sie die URL angeben. 
 
     > [!Note] 
     > Dateien und Seiten, die Sie hinzufügen, müssen sich im gleichen Microsoft 365-Mandanten befinden. Wenn Sie einen Link zu einer externen Ressource im Thema hinzufügen möchten, können Sie ihn über das Zeichenbereichsymbol in Schritt 8 hinzufügen.
 
 
-6.  Im <b>Abschnitt Verwandte Websites</b> werden Websites mit Informationen zum Thema angezeigt. 
+6.  Im **Abschnitt Verwandte Websites** werden Websites mit Informationen zum Thema angezeigt. 
 
-    ![Abschnitt "Verwandte Websites"](../media/knowledge-management/related-sites.png)</br>
+    ![Abschnitt "Verwandte Websites"](../media/knowledge-management/related-sites.png)
 
-    Sie können eine verwandte Website hinzufügen, indem Sie <b>Hinzufügen</b> auswählen und dann entweder nach der Website suchen oder sie in Ihrer Liste der häufigen oder zuletzt verwendeten Websites auswählen.</br>
+    Sie können eine verwandte Website hinzufügen, indem Sie **Hinzufügen** auswählen und dann entweder nach der Website suchen oder sie in Ihrer Liste der häufigen oder zuletzt verwendeten Websites auswählen.
     
-    ![Website auswählen](../media/knowledge-management/sites.png)</br>
+    ![Website auswählen](../media/knowledge-management/sites.png)
 
-7. Der <b>Abschnitt Verwandte Themen</b> zeigt Verbindungen zwischen Themen. Sie können eine Verbindung zu einem <b></b> anderen Thema hinzufügen, indem Sie die Schaltfläche Verbinden mit einem verwandten Thema auswählen und dann den Namen des verwandten Themas eingeben und aus den Suchergebnissen auswählen. 
+7. Der **Abschnitt Verwandte Themen** zeigt Verbindungen zwischen Themen. Sie können eine Verbindung zu einem  anderen Thema hinzufügen, indem Sie die Schaltfläche Verbinden mit einem verwandten Thema auswählen und dann den Namen des verwandten Themas eingeben und aus den Suchergebnissen auswählen. 
 
-   ![Verwandte Themen](../media/knowledge-management/related-topic.png)</br>  
+   ![Verwandte Themen](../media/knowledge-management/related-topic.png)  
 
-    Anschließend können Sie eine Beschreibung der Beziehung zwischen den Themen geben und Aktualisieren <b>auswählen.</b></br>
+    Anschließend können Sie eine Beschreibung der Beziehung zwischen den Themen geben und Aktualisieren **auswählen.**
 
-   ![Beschreibung verwandter Themen](../media/knowledge-management/related-topics-update.png)</br> 
+   ![Beschreibung verwandter Themen](../media/knowledge-management/related-topics-update.png) 
 
    Das verwandte Thema, das Sie hinzugefügt haben, wird als verbundenes Thema angezeigt.
 
-   ![Verwandte Themen verbunden](../media/knowledge-management/related-topics-final.png)</br> 
+   ![Verwandte Themen verbunden](../media/knowledge-management/related-topics-final.png) 
 
-   Wählen Sie zum Entfernen eines verwandten Themas das Zu entfernende Thema aus, und wählen Sie dann das <b>Symbol Thema entfernen</b> aus.</br>
+   Wählen Sie zum Entfernen eines verwandten Themas das Zu entfernende Thema aus, und wählen Sie dann das **Symbol Thema entfernen** aus.
  
-   ![Entfernen eines verwandten Themas](../media/knowledge-management/remove-related.png)</br>  
+   ![Entfernen eines verwandten Themas](../media/knowledge-management/remove-related.png)  
 
-   Wählen Sie dann <b>Entfernen aus.</b></br>
+   Wählen Sie dann **Entfernen aus.**
 
-   ![Bestätigen des Entfernens](../media/knowledge-management/remove-related-confirm.png)</br> 
-     
- 
-
+   ![Bestätigen des Entfernens](../media/knowledge-management/remove-related-confirm.png) 
 
 8. Sie können der Seite auch statische Elemente hinzufügen (z. B. Text, Bilder oder Links), indem Sie das Zeichenbereichsymbol auswählen, das Sie unter der kurzen Beschreibung finden. Durch Die Auswahl wird die SharePoint-Toolbox geöffnet, aus der Sie das Element auswählen können, das Sie der Seite hinzufügen möchten.
 
-   ![Canvas-Symbol](../media/knowledge-management/webpart-library.png)</br> 
-
+   ![Canvas-Symbol](../media/knowledge-management/webpart-library.png) 
 
 9. Wählen **Sie Veröffentlichen** aus, um Ihre Änderungen zu speichern. 
 

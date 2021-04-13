@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b56e8a74875b3377b6f3228bbefb339680dbc6e1
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: aaf537c84adaba3d632367567cc569069650d21a
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187781"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688357"
 ---
-# <a name="privacy-for-microsoft-defender-for-endpoint-for-linux"></a>Datenschutz für Microsoft Defender for Endpoint für Linux
+# <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Datenschutz für Microsoft Defender for Endpoint unter Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ Microsoft verpflichtet sich, Ihnen die Informationen und Steuerelemente zur Verf
 
 In diesem Thema werden die im Produkt verfügbaren Datenschutzsteuerelemente, die Verwaltung dieser Steuerelemente mit Richtlinieneinstellungen und weitere Details zu den erfassten Datenereignissen beschrieben.
 
-## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-for-linux"></a>Übersicht über Datenschutzsteuerelemente in Microsoft Defender for Endpoint für Linux
+## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Übersicht über Datenschutzsteuerelemente in Microsoft Defender for Endpoint unter Linux
 
 In diesem Abschnitt werden die Datenschutzsteuerelemente für die verschiedenen Arten von Daten beschrieben, die von Defender for Endpoint für Linux erfasst werden.
 
@@ -111,7 +111,7 @@ Erforderliche Diagnosedaten helfen bei der Identifizierung von Problemen mit Mic
 
 **Installation/Deinstallation von Microsoft Defender for Endpoint**
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
@@ -123,7 +123,7 @@ Die folgenden Felder werden gesammelt:
 
 **Konfiguration von Microsoft Defender für Endpunkt**
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld                                               | Beschreibung |
 | --------------------------------------------------- | ----------- |
@@ -144,7 +144,7 @@ Die folgenden Felder werden gesammelt:
 
 **Security Intelligence Update Report**
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
@@ -159,7 +159,7 @@ Die folgenden Felder werden gesammelt:
 
 **Kernelerweiterungsstatistiken**
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
@@ -193,7 +193,7 @@ Beispiele für optionale Diagnosedaten sind Daten, die Microsoft über die Produ
 
 **Konfiguration von Microsoft Defender für Endpunkt**
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld                                              | Beschreibung |
 | -------------------------------------------------- | ----------- |
@@ -214,7 +214,7 @@ Die folgenden Felder werden gesammelt:
 
 **Microsoft Auto-Update-Konfiguration**
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld                       | Beschreibung |
 | --------------------------- | ----------- |
@@ -227,18 +227,18 @@ Die folgenden Felder werden gesammelt:
 
 #### <a name="diagnostic-log-upload-started-report"></a>Bericht "Start des Diagnoseprotokolluploads"
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
 | sha256           | SHA256-ID des Supportprotokolls. |
 | size             | Größe des Supportprotokolls. |
 | original_path    | Pfad zum Supportprotokoll (immer unter */var/opt/microsoft/mdatp/wdavdiag/*). |
-| format           | Format des Supportprotokolls. |
+| Format           | Format des Supportprotokolls. |
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Abgeschlossener Bericht zum Hochladen des Diagnoseprotokolls
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
@@ -254,7 +254,7 @@ Unerwartete Anwendungsbeendungen und der Anwendungsstatus zum Zeitpunkt des Been
 
 **Kernelerweiterungsstatistiken**
 
-Die folgenden Felder werden gesammelt:
+Die folgenden Felder werden erfasst:
 
 | Feld                          | Beschreibung |
 | ------------------------------ | ----------- |

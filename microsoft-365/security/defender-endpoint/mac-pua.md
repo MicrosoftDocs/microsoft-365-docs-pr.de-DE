@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6e65e847403160d24eac04a553ca16a46314e33d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: cf61c6a501a53ac03d3c4cc28068f7af4c0f88d6
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187421"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688105"
 ---
-# <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-for-mac"></a>Erkennen und Blockieren potenziell unerwünschter Anwendungen mit Microsoft Defender for Endpoint für Mac
+# <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>Erkennen und Blockieren potenziell unerwünschter Anwendungen mit Microsoft Defender for Endpoint unter macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "51187421"
 > Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Das Feature zum Schutz potenziell unerwünschter Anwendungen (PUA) in Microsoft Defender for Endpoint für Mac kann PUA-Dateien auf Endpunkten in Ihrem Netzwerk erkennen und blockieren.
+Das Feature zum Schutz potenziell unerwünschter Anwendungen (PUA) in Microsoft Defender for Endpoint auf macOS kann PUA-Dateien auf Endpunkten in Ihrem Netzwerk erkennen und blockieren.
 
 Diese Anwendungen gelten nicht als Viren, Schadsoftware oder andere Arten von Bedrohungen, sie können jedoch Aktionen für Endpunkte ausführen, die sich negativ auf ihre Leistung oder Verwendung auswirken. PUA kann sich auch auf Anwendungen beziehen, die als schlecht angesehen werden.
 
@@ -44,13 +44,13 @@ Diese Anwendungen können das Risiko erhöhen, dass Ihr Netzwerk mit Schadsoftwa
 
 ## <a name="how-it-works"></a>Funktionsweise
 
-Microsoft Defender for Endpoint für Mac kann PUA-Dateien erkennen und melden. Wenn sie im Sperrmodus konfiguriert sind, werden PUA-Dateien in die Quarantäne verschoben.
+Microsoft Defender for Endpoint auf macOS kann PUA-Dateien erkennen und melden. Wenn sie im Sperrmodus konfiguriert sind, werden PUA-Dateien in die Quarantäne verschoben.
 
-Wenn ein PUA auf einem Endpunkt erkannt wird, stellt Microsoft Defender for Endpoint für Mac dem Benutzer eine Benachrichtigung vor, es sei denn, Benachrichtigungen wurden deaktiviert. Der Bedrohungsname enthält das Wort "Application".
+Wenn ein PUA auf einem Endpunkt erkannt wird, stellt Microsoft Defender for Endpoint unter macOS eine Benachrichtigung für den Benutzer vor, es sei denn, Benachrichtigungen wurden deaktiviert. Der Bedrohungsname enthält das Wort "Application".
 
 ## <a name="configure-pua-protection"></a>Konfigurieren des PUA-Schutzes
 
-Der PUA-Schutz in Microsoft Defender for Endpoint für Mac kann auf eine der folgenden Arten konfiguriert werden:
+Der PUA-Schutz in Microsoft Defender for Endpoint unter macOS kann auf eine der folgenden Arten konfiguriert werden:
 
 - **Off**: Der PUA-Schutz ist deaktiviert.
 - **Überwachung:** PUA-Dateien werden in den Produktprotokollen, jedoch nicht im Microsoft Defender Security Center gemeldet. Dem Benutzer wird keine Benachrichtigung angezeigt, und es werden keine Aktionen vom Produkt ergriffen.
@@ -71,8 +71,8 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### <a name="use-the-management-console-to-configure-pua-protection"></a>Konfigurieren des PUA-Schutzes mithilfe der Verwaltungskonsole:
 
-In Ihrem Unternehmen können Sie den PUA-Schutz über eine Verwaltungskonsole wie JAMF oder Intune konfigurieren, ähnlich wie andere Produkteinstellungen konfiguriert sind. Weitere Informationen finden Sie im Abschnitt [Bedrohungstypeinstellungen](mac-preferences.md#threat-type-settings) im Thema Festlegen von Einstellungen für [Microsoft Defender for Endpoint für Mac.](mac-preferences.md)
+In Ihrem Unternehmen können Sie den PUA-Schutz über eine Verwaltungskonsole wie JAMF oder Intune konfigurieren, ähnlich wie andere Produkteinstellungen konfiguriert sind. Weitere Informationen finden Sie im Abschnitt [Bedrohungstypeinstellungen](mac-preferences.md#threat-type-settings) im Thema Festlegen von Einstellungen für [Microsoft Defender for Endpoint auf macOS.](mac-preferences.md)
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Festlegen von Einstellungen für Microsoft Defender for Endpoint für Mac](mac-preferences.md)
+- [Festlegen von Einstellungen für Microsoft Defender for Endpoint unter macOS](mac-preferences.md)

@@ -1,5 +1,5 @@
 ---
-title: Beispiele für Liveantwortbefehle
+title: Kommandobeispiele für Liveantworten
 description: Erfahren Sie, wie Sie einfache oder erweiterte Liveantwortbefehle für Microsoft Defender for Endpoint ausführen, und sehen Sie sich Beispiele zur Verwendung an.
 keywords: beispiel, befehl, cli, remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0e00464b5d5dcf348fcc76a3f093ac8bac373627
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: f08f20753a1f0926abbbce01fe97f20ef1c07f2c
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187709"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689089"
 ---
-# <a name="live-response-command-examples"></a>Beispiele für Liveantwortbefehle
+# <a name="live-response-command-examples"></a>Kommandobeispiele für Liveantworten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -198,7 +198,11 @@ run script.ps1
 # Run PowerShell script from the library with arguments
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
-
+>[!NOTE]
+>
+> Bei lang ausgeführten Befehlen wie '**run**' oder '**getfile**' können Sie das Symbol ' ' am Ende des Befehls verwenden, um diese Aktion im Hintergrund **&** auszuführen.
+> Auf diese Weise können Sie den Computer weiter untersuchen und zum Hintergrundbefehl zurückkehren, wenn Sie den Einfachbefehl **"fg"** [verwenden.](live-response.md#basic-commands)
+>
 ## <a name="scheduledtask"></a>scheduledtask
 
 ```

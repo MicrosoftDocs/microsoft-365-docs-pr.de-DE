@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: In diesem Artikel erfahren Sie mehr über Azure ExpressRoute-Routinganforderungen, -Schaltungen und Routingdomänen für die Verwendung mit Office 365.
-ms.openlocfilehash: 9d3c381cfb6e24c1c87ef3dcfb83a9b93f991b93
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: b455ed7e53b3018babb1abd58919a077fb9d0685
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222407"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687169"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Routing mit ExpressRoute für Office 365
 
@@ -106,7 +106,7 @@ In dieser Tabelle werden die Platzhalter-FQDNs angezeigt, die sowohl für das In
 
 In der Regel sollen PAC-Dateien Netzwerkanforderungen an von ExpressRoute angekündigte Endpunkte direkt an die Leitung und alle anderen Netzwerkanforderungen an Ihren Proxy senden. Wenn Sie eine PAC-Datei wie die folgende konfigurieren, erstellen Sie die PAC-Datei in der folgenden Reihenfolge:
   
-1. Schließen Sie die Unter-FQDNs aus Spalte 2 in die obige Tabelle oben in Der PAC-Datei ein, und senden Sie den Datenverkehr an Ihren Proxy. Wir haben eine Beispiel-PAC-Datei für Sie erstellt, die Sie in unserem Artikel zum Verwalten von [Office 365-Endpunkten verwenden können.](./managing-expressroute-for-connectivity.md)
+1. Schließen Sie die Unter-FQDNs aus Spalte 2 in die obige Tabelle oben in Der PAC-Datei ein, und senden Sie den Datenverkehr an Ihren Proxy. Wir haben eine Beispiel-PAC-Datei für Sie erstellt, die Sie in unserem Artikel zum Verwalten von [Office 365-Endpunkten verwenden können.](./managing-office-365-endpoints.md)
 
 2. Schließen Sie alle FQDNs ein, die [für](./urls-and-ip-address-ranges.md) ExpressRoute in diesem Artikel unterhalb des ersten Abschnitts angekündigt sind, und senden Sie den Datenverkehr direkt an Ihre ExpressRoute-Schaltung.
 

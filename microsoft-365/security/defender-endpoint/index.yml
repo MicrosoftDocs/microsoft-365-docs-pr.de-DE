@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 02/5/2021
   localization_priority: Priority
-  ms.openlocfilehash: efa23f4c40021d95185203c22c8bba5009e15f2f
-  ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
-  ms.translationtype: HT
+  ms.openlocfilehash: ba8e43ca41b478cd370c94455f5f641102f15353
+  ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+  ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 03/24/2021
-  ms.locfileid: "51185743"
+  ms.lasthandoff: 04/13/2021
+  ms.locfileid: "51688669"
 landingContent:
 - title: Microsoft Defender für Endpunkt
   linkLists:
@@ -76,13 +76,13 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft Defender für Endpunkt für Mac
+    - text: Microsoft Defender für Endpoint auf Dem Mac
       url: microsoft-defender-endpoint-mac.md
-    - text: Microsoft Defender für Endpunkt für iOS
+    - text: Microsoft Defender for Endpoint unter iOS
       url: microsoft-defender-endpoint-ios.md
-    - text: Microsoft Defender für Endpunkt für Linux
+    - text: Microsoft Defender for Endpoint unter Linux
       url: microsoft-defender-endpoint-linux.md
-    - text: Microsoft Defender für Endpunkt für Android
+    - text: Microsoft Defender für Endpoint unter Android
       url: microsoft-defender-endpoint-android.md
 - title: Referenz
   linkLists:

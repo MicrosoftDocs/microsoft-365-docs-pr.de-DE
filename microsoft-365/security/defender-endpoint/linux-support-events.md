@@ -18,20 +18,20 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e489d5bece292065ad2e82a7eb9011747733b4f6
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5981cb75b4c835390e27d902b5950e3c68305200
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065704"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687454"
 ---
-# <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-for-linux"></a>Behandeln fehlender Ereignisse oder Warnungen für Microsoft Defender for Endpoint für Linux
+# <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Behandeln fehlender Ereignisse oder Warnungen für Microsoft Defender for Endpoint unter Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 
-- [Microsoft Defender for Endpoint for Linux](microsoft-defender-endpoint-linux.md)
+- [Microsoft Defender for Endpoint unter Linux](microsoft-defender-endpoint-linux.md)
 
 Dieser Artikel enthält einige allgemeine Schritte zum Verringern fehlender Ereignisse oder Warnungen im [Security Center-Portal.](https://securitycenter.windows.com/)
 

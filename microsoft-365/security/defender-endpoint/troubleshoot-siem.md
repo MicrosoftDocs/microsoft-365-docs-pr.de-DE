@@ -1,6 +1,6 @@
 ---
-title: Behandeln von Problemen mit der Integration von SIEM-Tools in Microsoft Defender ATP
-description: Behandeln von Problemen, die bei der Verwendung von SIEM-Tools mit Microsoft Defender ATP auftreten können.
+title: Behandeln von Problemen mit der Integration von SIEM-Tools in Microsoft Defender for Endpoint
+description: Behandeln von Problemen, die bei der Verwendung von SIEM-Tools mit Microsoft Defender for Endpoint auftreten können.
 keywords: Problembehandlung, Siem, geheimer Client, Geheimer Schlüssel
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: c1c8fdb0b6e84d4265defb95d91b59a584b7f4c2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 60220d00ca1b612564b72103b9206e3d6d89dc60
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185779"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689449"
 ---
-# <a name="troubleshoot-siem-tool-integration-issues"></a>Problembehandlung bei der Integration von SIEM-Tools
+# <a name="troubleshoot-siem-tool-integration-issues"></a>Behandeln von Problemen mit der Integration von SIEM-Tools
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5aedf841ddfc5a592fe4afd2f13d6470e24c438c
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 6ca6b3dd41b867145bfc4af331fb742be469d2a9
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587515"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688393"
 ---
-# <a name="set-preferences-for-microsoft-defender-for-endpoint-for-linux"></a>Festlegen von Einstellungen für Microsoft Defender for Endpoint für Linux
+# <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Festlegen von Einstellungen für Microsoft Defender for Endpoint unter Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -57,9 +57,9 @@ Der *Abschnitt antivirusEngine* des Konfigurationsprofils wird zum Verwalten der
 
 |||
 |:---|:---|
-| **Schlüssel** | antivirusEngine |
+| **Key** | antivirusEngine |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
-| **Comments** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
+| **Kommentare** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
 |||
 
 #### <a name="enable--disable-real-time-protection"></a>Aktivieren/Deaktivieren des Echtzeitschutzes
@@ -68,7 +68,7 @@ Bestimmt, ob der Echtzeitschutz (Scandateien, wie auf sie zugegriffen wird) akti
 
 |||
 |:---|:---|
-| **Schlüssel** | enableRealTimeProtection |
+| **Key** | enableRealTimeProtection |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | true (Standard) <br/> false |
 |||
@@ -84,10 +84,10 @@ Bestimmt, ob das Antivirenmodul im passiven Modus ausgeführt wird oder nicht. I
 
 |||
 |:---|:---|
-| **Schlüssel** | passiveMode |
+| **Key** | passiveMode |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | false (Standard) <br/> true |
-| **Comments** | Verfügbar in Defender for Endpoint, Version 100.67.60 oder höher. |
+| **Kommentare** | Verfügbar in Defender for Endpoint, Version 100.67.60 oder höher. |
 |||
 
 #### <a name="exclusion-merge-policy"></a>Ausschlusszusammenführungsrichtlinie
@@ -96,10 +96,10 @@ Gibt die Seriendruckrichtlinie für Ausschlüsse an. Es kann eine Kombination au
 
 |||
 |:---|:---|
-| **Schlüssel** | exclusionsMergePolicy |
+| **Key** | exclusionsMergePolicy |
 | **Datentyp** | String |
 | **Mögliche Werte** | merge (Standard) <br/> admin_only |
-| **Comments** | Verfügbar in Defender for Endpoint, Version 100.83.73 oder höher. |
+| **Kommentare** | Verfügbar in Defender for Endpoint, Version 100.83.73 oder höher. |
 |||
 
 #### <a name="scan-exclusions"></a>Scannen von Ausschlüssen
@@ -108,9 +108,9 @@ Entitäten, die von der Überprüfung ausgeschlossen wurden. Ausschlüsse könne
 
 |||
 |:---|:---|
-| **Schlüssel** | Ausschlüsse |
+| **Key** | Ausschlüsse |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
-| **Comments** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
+| **Kommentare** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
 |||
 
 **Art des Ausschlusses**
@@ -119,7 +119,7 @@ Gibt den Typ des Inhalts an, der von der Überprüfung ausgeschlossen wurde.
 
 |||
 |:---|:---|
-| **Schlüssel** | $type |
+| **Key** | $type |
 | **Datentyp** | String |
 | **Mögliche Werte** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
 |||
@@ -130,10 +130,10 @@ Wird verwendet, um Inhalte nach vollständigem Dateipfad von der Überprüfung a
 
 |||
 |:---|:---|
-| **Schlüssel** | path |
+| **Key** | path |
 | **Datentyp** | String |
 | **Mögliche Werte** | gültige Pfade |
-| **Comments** | Gilt nur, *$type* *ausgeschlossen IstPath* |
+| **Kommentare** | Gilt nur, *$type* *ausgeschlossen IstPath* |
 |||
 
 **Pfadtyp (Datei/Verzeichnis)**
@@ -142,10 +142,10 @@ Gibt an, ob *die path-Eigenschaft* auf eine Datei oder ein Verzeichnis verweist.
 
 |||
 |:---|:---|
-| **Schlüssel** | isDirectory |
+| **Key** | isDirectory |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | false (Standard) <br/> true |
-| **Comments** | Gilt nur, *$type* *ausgeschlossen IstPath* |
+| **Kommentare** | Gilt nur, *$type* *ausgeschlossen IstPath* |
 |||
 
 **Dateierweiterung, die von der Überprüfung ausgeschlossen wurde**
@@ -154,10 +154,10 @@ Wird verwendet, um Inhalte von der Überprüfung nach Dateierweiterung auszuschl
 
 |||
 |:---|:---|
-| **Schlüssel** | erweiterung |
+| **Key** | erweiterung |
 | **Datentyp** | String |
 | **Mögliche Werte** | Gültige Dateierweiterungen |
-| **Comments** | Gilt nur, *$type* *ausgeschlossen istFileExtension* |
+| **Kommentare** | Gilt nur, *$type* *ausgeschlossen istFileExtension* |
 |||
 
 **Prozess, der von der Überprüfung ausgeschlossen wurde**
@@ -166,10 +166,10 @@ Gibt einen Prozess an, für den alle Dateiaktivitäten von der Überprüfung aus
 
 |||
 |:---|:---|
-| **Schlüssel** | Name |
+| **Key** | Name |
 | **Datentyp** | String |
 | **Mögliche Werte** | eine beliebige Zeichenfolge |
-| **Comments** | Gilt nur, *$type* *ausgeschlossen istFileName* |
+| **Kommentare** | Gilt nur, *$type* *ausgeschlossen istFileName* |
 |||
 
 #### <a name="allowed-threats"></a>Zulässige Bedrohungen
@@ -178,7 +178,7 @@ Liste der Bedrohungen (die durch ihren Namen identifiziert werden), die nicht vo
 
 |||
 |:---|:---|
-| **Schlüssel** | allowedThreats |
+| **Key** | allowedThreats |
 | **Datentyp** | Array aus Zeichenfolgen |
 |||
 
@@ -188,10 +188,10 @@ Schränkt die Aktionen ein, die der lokale Benutzer eines Geräts ausführen kan
 
 |||
 |:---|:---|
-| **Schlüssel** | disallowedThreatActions |
+| **Key** | disallowedThreatActions |
 | **Datentyp** | Array aus Zeichenfolgen |
 | **Mögliche Werte** | allow (schränkt ein, dass Benutzer Bedrohungen zulassen) <br/> restore (schränkt benutzer das Wiederherstellen von Bedrohungen aus der Quarantäne ein) |
-| **Comments** | Verfügbar in Defender for Endpoint, Version 100.83.73 oder höher. |
+| **Kommentare** | Verfügbar in Defender for Endpoint, Version 100.83.73 oder höher. |
 |||
 
 #### <a name="threat-type-settings"></a>Einstellungen für den Bedrohungstyp
@@ -200,9 +200,9 @@ Die *ThreatTypeSettings-Einstellung* im Antivirusmodul wird verwendet, um zu ste
 
 |||
 |:---|:---|
-| **Schlüssel** | threatTypeSettings |
+| **Key** | threatTypeSettings |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
-| **Comments** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
+| **Kommentare** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
 |||
 
 **Bedrohungstyp**
@@ -211,7 +211,7 @@ Typ der Bedrohung, für die das Verhalten konfiguriert ist.
 
 |||
 |:---|:---|
-| **Schlüssel** | Schlüssel |
+| **Key** | Schlüssel |
 | **Datentyp** | String |
 | **Mögliche Werte** | potentially_unwanted_application <br/> archive_bomb |
 |||
@@ -226,7 +226,7 @@ Maßnahmen, die ausgeführt werden müssen, wenn eine Bedrohung des im vorherige
 
 |||
 |:---|:---|
-| **Schlüssel** | Wert |
+| **Key** | Wert |
 | **Datentyp** | String |
 | **Mögliche Werte** | Überwachung (Standard) <br/> block <br/> off |
 |||
@@ -237,10 +237,10 @@ Gibt die Seriendruckrichtlinie für Bedrohungstypeinstellungen an. Dies kann ein
 
 |||
 |:---|:---|
-| **Schlüssel** | threatTypeSettingsMergePolicy |
+| **Key** | threatTypeSettingsMergePolicy |
 | **Datentyp** | String |
 | **Mögliche Werte** | merge (Standard) <br/> admin_only |
-| **Comments** | Verfügbar in Defender for Endpoint, Version 100.83.73 oder höher. |
+| **Kommentare** | Verfügbar in Defender for Endpoint, Version 100.83.73 oder höher. |
 |||
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>Aufbewahrung des Antivirusscanverlaufs (in Tagen)
@@ -249,10 +249,10 @@ Geben Sie die Anzahl der Tage an, die Ergebnisse im Scanverlauf auf dem Gerät a
 
 |||
 |:---|:---|
-| **Schlüssel** | scanResultsRetentionDays |
+| **Key** | scanResultsRetentionDays |
 | **Datentyp** | String |
 | **Mögliche Werte** | 90 (Standard). Zulässige Werte liegen zwischen 1 Tag und 180 Tagen. |
-| **Comments** | Verfügbar in Defender for Endpoint, Version 101.04.76 oder höher. |
+| **Kommentare** | Verfügbar in Defender for Endpoint, Version 101.04.76 oder höher. |
 |||
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>Maximale Anzahl von Elementen im Antivirusscanverlauf
@@ -261,10 +261,10 @@ Geben Sie die maximale Anzahl von Einträgen an, die im Scanverlauf bleiben soll
 
 |||
 |:---|:---|
-| **Schlüssel** | scanHistoryMaximumItems |
+| **Key** | scanHistoryMaximumItems |
 | **Datentyp** | String |
 | **Mögliche Werte** | 10000 (Standard). Zulässige Werte liegen zwischen 5.000 und 15.000 Elementen. |
-| **Comments** | Verfügbar in Defender for Endpoint, Version 101.04.76 oder höher. |
+| **Kommentare** | Verfügbar in Defender for Endpoint, Version 101.04.76 oder höher. |
 |||
 
 ### <a name="cloud-delivered-protection-preferences"></a>Von der Cloud übermittelte Schutzeinstellungen
@@ -273,9 +273,9 @@ Der *cloudService-Eintrag* im Konfigurationsprofil wird verwendet, um das cloudg
 
 |||
 |:---|:---|
-| **Schlüssel** | cloudService |
+| **Key** | cloudService |
 | **Datentyp** | Wörterbuch (geschachtelte Einstellung) |
-| **Comments** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
+| **Kommentare** | Eine Beschreibung der Wörterbuchinhalte finden Sie in den folgenden Abschnitten. |
 |||
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>Aktivieren/Deaktivieren des von der Cloud übermittelten Schutzes
@@ -284,7 +284,7 @@ Bestimmt, ob der in der Cloud zugestellte Schutz auf dem Gerät aktiviert ist od
 
 |||
 |:---|:---|
-| **Schlüssel** | aktiviert |
+| **Key** | aktiviert |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | true (Standard) <br/> false |
 |||
@@ -295,7 +295,7 @@ Diagnosedaten werden verwendet, um Defender for Endpoint sicher und auf dem neue
 
 |||
 |:---|:---|
-| **Schlüssel** | diagnosticLevel |
+| **Key** | diagnosticLevel |
 | **Datentyp** | String |
 | **Mögliche Werte** | optional (Standard) <br/> erforderlich |
 |||
@@ -310,7 +310,7 @@ Bestimmt, ob verdächtige Beispiele (die wahrscheinlich Bedrohungen enthalten) a
 
 |||
 |:---|:---|
-| **Schlüssel** | automaticSampleSubmissionConsent |
+| **Key** | automaticSampleSubmissionConsent |
 | **Datentyp** | String |
 | **Mögliche Werte** | keine <br/> sicher (Standard) <br/> all |
 |||
@@ -321,7 +321,7 @@ Bestimmt, ob Sicherheitsintelligenzupdates automatisch installiert werden:
 
 |||
 |:---|:---|
-| **Schlüssel** | automaticDefinitionUpdateEnabled |
+| **Key** | automaticDefinitionUpdateEnabled |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | true (Standard) <br/> false |
 |||

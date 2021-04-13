@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0d9e63c5d89b13b02dfcf116c1555c8db319d23f
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: d5a19464b9d5d1b9659d7bfae2d853f7a640a00b
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445364"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687889"
 ---
-# <a name="configure-alert-notifications-in-microsoft-defender-atp"></a>Konfigurieren von Benachrichtigungen in Microsoft Defender ATP
+# <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Konfigurieren von Benachrichtigungen in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ Sie können Defender for Endpoint so konfigurieren, dass E-Mail-Benachrichtigung
 > [!NOTE]
 > Nur Benutzer mit den Berechtigungen "Sicherheitseinstellungen verwalten" können E-Mail-Benachrichtigungen konfigurieren. Wenn Sie sich für die Verwendung der grundlegenden Berechtigungsverwaltung entschieden haben, können Benutzer mit Sicherheitsadministrator- oder globalen Administratorrollen E-Mail-Benachrichtigungen konfigurieren.
 
-Sie können die Benachrichtigungsschweregrade festlegen, die Benachrichtigungen auslösen. Sie können auch Empfänger der E-Mail-Benachrichtigung hinzufügen oder entfernen. Neue Empfänger werden über Warnungen benachrichtigt, die nach dem Hinzufügen auftreten. Weitere Informationen zu Warnungen finden Sie unter [Anzeigen und Organisieren der Warnungswarteschlange](alerts-queue.md).
+Sie können die Benachrichtigungsschweregrade festlegen, die Benachrichtigungen auslösen. Sie können auch Empfänger der E-Mail-Benachrichtigung hinzufügen oder entfernen. Neue Empfänger werden über Warnungen benachrichtigt, die ausgelöst werden, nachdem sie hinzugefügt wurden. Weitere Informationen zu Warnungen finden Sie unter [Anzeigen und Organisieren der Warnungswarteschlange](alerts-queue.md).
 
 Wenn Sie die rollenbasierte Zugriffssteuerung verwenden, erhalten Empfänger nur Benachrichtigungen basierend auf den Gerätegruppen, die in der Benachrichtigungsregel konfiguriert wurden.
 Benutzer mit der entsprechenden Berechtigung können nur Benachrichtigungen erstellen, bearbeiten oder löschen, die auf den Verwaltungsbereich der Gerätegruppe beschränkt sind.
@@ -71,7 +71,7 @@ Sie können Regeln erstellen, die die Geräte und Denkschweregrade zum Senden vo
     
 5. Geben Sie die E-Mail-Adresse des Empfängers ein, und klicken Sie dann **auf Empfänger hinzufügen.** Sie können mehrere E-Mail-Adressen hinzufügen.
 
-6. Überprüfen Sie, ob E-Mail-Empfänger die E-Mail-Benachrichtigungen empfangen können, indem Sie **Test-E-Mail senden auswählen.**
+6. Überprüfen Sie, ob E-Mail-Empfänger die E-Mail-Benachrichtigungen empfangen können, indem **Sie Test-E-Mail senden auswählen.**
 
 7. Klicken **Sie auf Benachrichtigungsregel speichern.**
 

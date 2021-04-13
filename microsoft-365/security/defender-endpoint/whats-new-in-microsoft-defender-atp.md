@@ -1,7 +1,7 @@
 ---
-title: Neues in Microsoft Defender ATP
-description: Sehen Sie sich an, welche Features allgemein verfügbar sind (GA) in der neuesten Version von Microsoft Defender ATP sowie sicherheitsfeatures in Windows 10 und Windows Server.
-keywords: Neues in microsoft defender atp, ga, allgemein verfügbar, Funktionen, verfügbar, neu
+title: Neuigkeiten in Microsoft Defender für Endpunkt
+description: Welche Features allgemein verfügbar sind (GA) finden Sie in der neuesten Version von Microsoft Defender for Endpoint sowie in Sicherheitsfeatures in Windows 10 und Windows Server.
+keywords: neues in microsoft defender for endpoint, ga, generally available, capabilities, available, new
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a72b742d8f4a69d2e38cf4fa234ba5b7e2961ac6
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: c9f4c0689739224b00c9c14db1482d54faab3512
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587611"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688237"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Neuigkeiten in Microsoft Defender für Endpunkt
 
@@ -52,22 +52,22 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter [Vorschaufeatures](ht
 - [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für Windows Virtual Desktop.
 
 ## <a name="december-2020"></a>Dezember 2020
-- [Microsoft Defender für Endpunkt für iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für iOS. Erfahren Sie, wie Sie Microsoft Defender for Endpoint für iOS installieren, konfigurieren, aktualisieren und verwenden.
+- [Microsoft Defender for Endpoint unter iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für iOS. Erfahren Sie, wie Sie Microsoft Defender for Endpoint unter iOS installieren, konfigurieren, aktualisieren und verwenden.
 
 ## <a name="september-2020"></a>September 2020
-- [Microsoft Defender für Endpunkt für Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für Android. Erfahren Sie, wie Sie Microsoft Defender for Endpoint für Android installieren, konfigurieren, aktualisieren und verwenden.
+- [Microsoft Defender für Endpoint unter Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für Android. Erfahren Sie, wie Sie Microsoft Defender for Endpoint unter Android installieren, konfigurieren, aktualisieren und verwenden.
 - [MacOS-Unterstützung für die Verwaltung von Bedrohungen und Sicherheitslücken](tvm-supported-os.md)<br> Das Bedrohungs- und Sicherheitsrisikomanagement für macOS befindet sich jetzt in der öffentlichen Vorschau und erkennt kontinuierlich Sicherheitslücken auf Ihren macOS-Geräten, damit Sie die Behebung priorisieren können, indem Sie sich auf das Risiko konzentrieren. Weitere Informationen finden Sie in diesem [Microsoft Tech Community-Blogbeitrag](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824).
 
 
 ## <a name="august-2020"></a>August 2020
-- [Microsoft Defender für Endpunkt für Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für Android. Erfahren Sie, wie Sie Microsoft Defender for Endpoint für Android installieren, konfigurieren und verwenden.
+- [Microsoft Defender für Endpoint unter Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für Android. Erfahren Sie, wie Sie Microsoft Defender for Endpoint unter Android installieren, konfigurieren und verwenden.
 
 
 ## <a name="july-2020"></a>Juli 2020
 - [Erstellen von Indikatoren für Zertifikate](manage-indicators.md) <br> Erstellen Sie Indikatoren zum Zulassen oder Blockieren von Zertifikaten. 
 
 ## <a name="june-2020"></a>Juni 2020
-- [Microsoft Defender für Endpunkt für Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für Linux. Erfahren Sie, wie Sie Microsoft Defender for Endpoint für Linux installieren, konfigurieren, aktualisieren und verwenden.
+- [Microsoft Defender for Endpoint unter Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für Linux. Erfahren Sie, wie Sie Microsoft Defender for Endpoint unter Linux installieren, konfigurieren, aktualisieren und verwenden.
 
 - [Angriffssimulatoren im Evaluierungslabor](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint hat eine Partnerschaft mit verschiedenen Bedrohungssimulationsplattformen entwickelt, um Ihnen bequemen Zugriff auf die Funktionen der Plattform direkt im Portal zu bieten.
 
@@ -78,7 +78,7 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter [Vorschaufeatures](ht
 
 ## <a name="november-december-2019"></a>November-December 2019
 
-- [Microsoft Defender für Endpunkt für Mac](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender für Endpoint für Mac bietet den Schutz der nächsten Generation für Mac-Geräte. Kernkomponenten der einheitlichen Endpunktsicherheitsplattform stehen jetzt für Mac-Geräte zur Verfügung, einschließlich [Endpunkterkennung und -antwort.](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint unter macOS](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Endpoint auf macOS bietet den Schutz der nächsten Generation für Mac-Geräte. Kernkomponenten der einheitlichen Endpunktsicherheitsplattform stehen jetzt für Mac-Geräte zur Verfügung, einschließlich [Endpunkterkennung und -antwort.](microsoft-defender-endpoint-mac.md)
  
 - [Informationen zum & und zur Anwendungsversion der Sicherheitsrisikoverwaltung](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) <BR>Anwendungen und Anwendungsversionen, die ihr Ende ihrer Lebensdauer erreicht haben, werden als solche gekennzeichnet oder gekennzeichnet, sodass Sie wissen, dass sie nicht mehr unterstützt werden und Maßnahmen ergreifen können, um entweder zu deinstallieren oder zu ersetzen. Auf diese Weise werden die Risiken im Zusammenhang mit verschiedenen Sicherheitsrisiken aufgrund nicht gepatchter Anwendungen geringer.
 

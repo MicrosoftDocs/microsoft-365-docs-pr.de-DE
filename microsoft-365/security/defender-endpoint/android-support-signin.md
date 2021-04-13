@@ -1,6 +1,6 @@
 ---
-title: Behandeln von Problemen mit Microsoft Defender for Endpoint für Android
-description: Problembehandlung für Microsoft Defender for Endpoint für Android
+title: Behandeln von Problemen mit Microsoft Defender for Endpoint unter Android
+description: Behandeln von Problemen für Microsoft Defender for Endpoint unter Android
 keywords: microsoft, defender, atp, mde, android, cloud, connectivity, communication
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5fabcb3156a54d4aa8a4671d7561a8deca16fe1f
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 1a19582073565a958aab444541381f5772b6f4f1
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587647"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687603"
 ---
-# <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-for-android"></a>Problembehandlung bei Microsoft Defender for Endpoint für Android
+# <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Problembehandlung bei Microsoft Defender for Endpoint unter Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

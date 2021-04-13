@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP für Android
+title: Microsoft Defender ATP unter Android
 ms.reviewer: ''
 description: Beschreibt die Installation und Verwendung von Microsoft Defender ATP für Android
 keywords: microsoft, defender, atp, android, installation, deploy, deinstallation, intune
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e2432dc4aa2c67fadc9112512a080f24c0064df4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 32c42691b3a2b43f9740da26084bf45af0ee80f5
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187613"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687781"
 ---
-# <a name="microsoft-defender-for-endpoint-for-android"></a>Microsoft Defender für Endpoint für Android
+# <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender für Endpoint unter Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,7 +42,7 @@ In diesem Thema wird beschrieben, wie Sie Defender for Endpoint für Android ins
 > Das Ausführen anderer Endpunktschutzprodukte von Drittanbietern zusammen mit Defender for Endpoint für Android verursacht wahrscheinlich Leistungsprobleme und unvorhersehbare Systemfehler.
 
 
-## <a name="how-to-install-microsoft-defender-for-endpoint-for-android"></a>Installieren von Microsoft Defender for Endpoint für Android
+## <a name="how-to-install-microsoft-defender-for-endpoint-on-android"></a>Installieren von Microsoft Defender for Endpoint unter Android
 
 ### <a name="prerequisites"></a>Voraussetzungen
 
@@ -62,7 +62,7 @@ In diesem Thema wird beschrieben, wie Sie Defender for Endpoint für Android ins
     -   Zugriff auf das Microsoft Defender Security Center-Portal.
 
         > [!NOTE]
-        > Microsoft Intune ist die einzige unterstützte Mobile Device Management (MDM)-Lösung für die Bereitstellung von Microsoft Defender for Endpoint für Android. Derzeit werden nur registrierte Geräte unterstützt, um Defender for Endpoint für Android-bezogene Gerätekonformitätsrichtlinien in Intune zu erzwingen. 
+        > Microsoft Intune ist die einzige unterstützte Mobile Device Management (MDM)-Lösung für die Bereitstellung von Microsoft Defender for Endpoint unter Android. Derzeit werden nur registrierte Geräte unterstützt, um Defender for Endpoint für Android-bezogene Gerätekonformitätsrichtlinien in Intune zu erzwingen. 
 
     -   Greifen [Sie auf Microsoft Endpoint Manager Admin Center zu,](https://go.microsoft.com/fwlink/?linkid=2109431)um die App für registrierte Benutzergruppen in Ihrer Organisation zu bereitstellen.
 
@@ -73,23 +73,23 @@ In diesem Thema wird beschrieben, wie Sie Defender for Endpoint für Android ins
 
 ### <a name="installation-instructions"></a>Installationsanweisungen
 
-Microsoft Defender für Endpoint für Android unterstützt die Installation auf beiden Modi von registrierten Geräten – dem älteren Geräteadministrator und dem Android Enterprise-Modus.
-**Derzeit werden persönliche Geräte mit Geschäftsprofil und unternehmenseigenen, vollständig verwalteten Benutzergeräten in Android Enterprise unterstützt. Unterstützung für andere Android Enterprise-Modi wird angekündigt, sobald sie bereit sind.**
+Microsoft Defender for Endpoint unter Android unterstützt die Installation auf beiden Modi registrierter Geräte – dem älteren Geräteadministrator und dem Android Enterprise-Modus.
+**Derzeit werden persönliche Geräte mit Geschäftsprofil und unternehmenseigenen Registrierungen für vollständig verwaltete Benutzergeräte in Android Enterprise unterstützt. Unterstützung für andere Android Enterprise-Modi wird angekündigt, sobald sie bereit sind.**
 
-Die Bereitstellung von Microsoft Defender for Endpoint für Android erfolgt über Microsoft Intune (MDM).
-Weitere Informationen finden Sie unter [Deploy Microsoft Defender for Endpoint for Android with Microsoft Intune](android-intune.md).
+Die Bereitstellung von Microsoft Defender for Endpoint unter Android erfolgt über Microsoft Intune (MDM).
+Weitere Informationen finden Sie unter [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md).
 
 
 > [!NOTE]
-> **Microsoft Defender für Endpoint für Android ist jetzt auf [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx) verfügbar.** <br> Sie können von Intune aus eine Verbindung mit Google Play herstellen, um Microsoft Defender for Endpoint-App über geräteadministrator- und Android Enterprise-Entrollmentmodi bereitzustellen. 
+> **Microsoft Defender für Endpoint unter Android ist jetzt auf [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx) verfügbar.** <br> Sie können von Intune aus eine Verbindung mit Google Play herstellen, um Microsoft Defender for Endpoint-App über geräteadministrator- und Android Enterprise-Entrollmentmodi bereitzustellen. 
 
-## <a name="how-to-configure-microsoft-defender-for-endpoint-for-android"></a>Konfigurieren von Microsoft Defender for Endpoint für Android
+## <a name="how-to-configure-microsoft-defender-for-endpoint-on-android"></a>Konfigurieren von Microsoft Defender for Endpoint unter Android
 
-Anleitungen zum Konfigurieren von Microsoft Defender for Endpoint für Android-Features finden Sie unter [Configure Microsoft Defender for Endpoint for Android features](android-configure.md).
+Anleitungen zum Konfigurieren von Microsoft Defender for Endpoint auf Android-Features finden Sie unter [Configure Microsoft Defender for Endpoint on Android features](android-configure.md).
 
 
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Bereitstellen von Microsoft Defender for Endpoint für mit Microsoft Intune](android-intune.md)
-- [Konfigurieren von Microsoft Defender for Endpoint für Android-Features](android-configure.md)
+- [Bereitstellen von Microsoft Defender for Endpoint unter Android mit Microsoft Intune](android-intune.md)
+- [Konfigurieren von Microsoft Defender for Endpoint unter Android-Features](android-configure.md)
 
