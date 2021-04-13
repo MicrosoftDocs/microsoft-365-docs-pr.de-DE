@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 37d31fe93a849871e7da92fff521b6a75beac531
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 71ebe48fdbb8f9995ef2f3429cb8a824ed76f244
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187637"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689641"
 ---
-# <a name="resources-for-microsoft-defender-for-endpoint-for-mac"></a>Ressourcen für Microsoft Defender for Endpoint für Mac
+# <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Ressourcen für Microsoft Defender for Endpoint unter macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -80,7 +80,7 @@ Das detaillierte Protokoll wird in `/Library/Logs/Microsoft/mdatp/install.log` g
 
 ## <a name="uninstalling"></a>Deinstallieren
 
-Es gibt verschiedene Möglichkeiten, Microsoft Defender for Endpoint für Mac zu deinstallieren. Beachten Sie, dass die zentral verwaltete Deinstallation zwar auf JAMF verfügbar ist, aber noch nicht für Microsoft Intune verfügbar ist.
+Es gibt mehrere Möglichkeiten, Microsoft Defender for Endpoint unter macOS zu deinstallieren. Beachten Sie, dass die zentral verwaltete Deinstallation zwar auf JAMF verfügbar ist, aber noch nicht für Microsoft Intune verfügbar ist.
 
 ### <a name="interactive-uninstallation"></a>Interaktive Deinstallation
 
@@ -143,7 +143,7 @@ So aktivieren Sie die automatische Vervollständigung in zsh:
    echo "autoload -Uz compinit && compinit" >> ~/.zshrc
    ```
 
-- Führen Sie die folgenden Befehle aus, um die automatische Kompletion für Microsoft Defender for Endpoint für Mac zu aktivieren und die Terminalsitzung neu zu starten:
+- Führen Sie die folgenden Befehle aus, um die automatische Kompletion für Microsoft Defender for Endpoint unter macOS zu aktivieren und die Terminalsitzung neu zu starten:
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions

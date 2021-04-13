@@ -1,6 +1,6 @@
 ---
-title: Behandeln von Problemen beim Microsoft Defender ATP-Onboarding
-description: Behandeln von Problemen, die beim Onboarding von Geräten oder beim Microsoft Defender ATP-Dienst auftreten können.
+title: Behandeln von Problemen beim Onboarding von Microsoft Defender for Endpoint
+description: Behandeln von Problemen, die beim Onboarding von Geräten oder beim Microsoft Defender for Endpoint-Dienst auftreten können.
 keywords: Problembehandlung bei Onboarding, Onboardingproblemen, Ereignisanzeige, Datensammlungs- und Vorschaubuilds, Sensordaten und Diagnose
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 3b2c944cd7fc9d629b47947db9d6e8856729e0d7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4599741f501e9b55bc73e0eb8def9208bc988957
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066024"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689665"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Behandeln von Problemen beim Onboarding von Microsoft Defender for Endpoint
 
@@ -455,6 +455,6 @@ Die folgenden Schritte bieten Anleitungen für das folgende Szenario:
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Problembehandlung für Microsoft Defender for Endpoint](troubleshoot-mdatp.md)
+- [Problembehandlung von Microsoft Defender für Endpunkt](troubleshoot-mdatp.md)
 - [Onboarding von Geräten](onboard-configure.md)
 - [Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen](configure-proxy-internet.md)

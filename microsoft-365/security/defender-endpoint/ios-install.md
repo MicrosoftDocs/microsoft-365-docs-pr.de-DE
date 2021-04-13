@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c94c6839c17b3bbb432cef12fe58723d0cc2ecff
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 6cfd2953e752ed9c96f7f16a3ec7ea1fd8862ab2
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587239"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689737"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-ios"></a>Bereitstellen von Microsoft Defender for Endpoint für iOS
+# <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Bereitstellen von Microsoft Defender for Endpoint unter iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -91,7 +91,7 @@ Bereitstellen von Defender for Endpoint für iOS über das Intune-Unternehmenspo
 
 ## <a name="configure-microsoft-defender-for-endpoint-for-supervised-mode"></a>Konfigurieren von Microsoft Defender for Endpoint für den überwachten Modus
 
-Die Microsoft Defender for Endpoint für iOS-App verfügt über spezielle Funktionen für überwachte iOS/iPadOS-Geräte, da die Plattform auf diesen Gerätetypen mehr Verwaltungsfunktionen bietet. Um diese Funktionen nutzen zu können, muss die Defender for Endpoint-App wissen, ob sich ein Gerät im überwachten Modus befindet.
+Die Microsoft Defender for Endpoint auf iOS-App verfügt über spezielle Funktionen für überwachte iOS/iPadOS-Geräte, da die Plattform auf diesen Gerätetypen mehr Verwaltungsfunktionen bietet. Um diese Funktionen nutzen zu können, muss die Defender for Endpoint-App wissen, ob sich ein Gerät im überwachten Modus befindet.
 
 ### <a name="configure-supervised-mode-via-intune"></a>Konfigurieren des überwachten Modus über Intune
 

@@ -1,6 +1,6 @@
 ---
-title: Behandeln von Problemen mit der Kernelerweiterung in Microsoft Defender for Endpoint für Mac
-description: Behandeln von Problemen mit kernelerweiterungsbezogenen Problemen in Microsoft Defender for Endpoint für Mac.
+title: Behandeln von Problemen mit der Kernelerweiterung in Microsoft Defender for Endpoint unter macOS
+description: Behandeln von Problemen mit kernelerweiterungsbezogenen Problemen in Microsoft Defender for Endpoint unter macOS.
 keywords: microsoft, defender, atp, mac, kernel, extension
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,31 +18,31 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 877cc619d3ba048cdf6ecc8149f073461d9eac8e
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 32a4819f7a607c69b4dbf45b3284b2f4ea66ffc4
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379508"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689653"
 ---
-# <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-for-mac"></a>Behandeln von Problemen mit der Kernelerweiterung in Microsoft Defender for Endpoint für Mac
+# <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Behandeln von Problemen mit der Kernelerweiterung in Microsoft Defender for Endpoint unter macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Gilt für:**
 
-- [Microsoft Defender für Endpoint für Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint unter macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Dieser Artikel enthält Informationen zum Behandeln von Problemen mit der Kernelerweiterung, die als Teil von Microsoft Defender for Endpoint für Mac installiert ist.
+Dieser Artikel enthält Informationen zum Behandeln von Problemen mit der Kernelerweiterung, die als Teil von Microsoft Defender for Endpoint unter macOS installiert ist.
 
 Ab macOS High Sierra (10.13) muss macOS alle Kernelerweiterungen explizit genehmigt werden, bevor sie auf dem Gerät ausgeführt werden dürfen.
 
-Wenn Sie die Kernelerweiterung während der Bereitstellung/Installation von Microsoft Defender for Endpoint für Mac nicht genehmigt haben, zeigt die Anwendung ein Banner an, in dem Sie aufgefordert werden, sie zu aktivieren:
+Wenn Sie die Kernelerweiterung während der Bereitstellung/Installation von Microsoft Defender for Endpoint auf macOS nicht genehmigt haben, zeigt die Anwendung ein Banner an, in dem Sie aufgefordert werden, sie zu aktivieren:
 
    ![Deaktivierter Screenshot von RTP](images/mdatp-32-main-app-fix.png)
 
@@ -58,14 +58,14 @@ real_time_protection_available              : true
 ...
 ```
 
-In den folgenden Abschnitten finden Sie Anleitungen zur Behandlung dieses Problems, abhängig von der Methode, die Sie zum Bereitstellen von Microsoft Defender for Endpoint für Mac verwendet haben.
+In den folgenden Abschnitten finden Sie Anleitungen zur Behandlung dieses Problems, abhängig von der Methode, die Sie zum Bereitstellen von Microsoft Defender for Endpoint auf macOS verwendet haben.
 
 ## <a name="managed-deployment"></a>Verwaltete Bereitstellung
 
 Weitere Informationen finden Sie in den Anweisungen zum Verwaltungstool, das Sie zum Bereitstellen des Produkts verwendet haben:
 
 - [JAMF-basierte Bereitstellung](mac-install-with-jamf.md)
-- [Microsoft Intune-basierte Bereitstellung](mac-install-with-intune.md#create-system-configuration-profiles)
+- [Microsoft-Intune-basierte Bereitstellung](mac-install-with-intune.md#create-system-configuration-profiles)
 
 ## <a name="manual-deployment"></a>Manuelle Bereitstellung
 

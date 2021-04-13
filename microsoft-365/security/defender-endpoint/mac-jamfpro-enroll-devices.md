@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ef6e387d4e945afb71f1fa6ecef9d78ba2d74a55
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: ea71875dedf7e8706c9022420abd63bc5eb20c69
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185683"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689725"
 ---
-# <a name="enroll-microsoft-defender-for-endpoint-for-macos-devices-into-jamf-pro"></a>Registrieren von Microsoft Defender for Endpoint für macOS-Geräte bei Jamf Pro 
+# <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>Registrieren von Microsoft Defender for Endpoint auf macOS-Geräten bei Jamf Pro 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
