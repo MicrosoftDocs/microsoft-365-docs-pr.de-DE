@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 6ad61d583815f669affe989d7519ba0ade6fe08d
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 0ef80e2aaccbf25a79083c2f95ea7399e30ea651
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760086"
+ms.locfileid: "51764317"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Onboarden von Windows 10-Geräten für mehrere Sitzungen in Windows Virtual Desktop 
 6 Minuten zu lesen 
@@ -76,62 +76,75 @@ In diesem Szenario wird ein zentral gelegenes Skript verwendet und mithilfe eine
 
 1. Öffnen Sie die Gruppenrichtlinienverwaltungskonsole (Group Policy Management Console, GPMC), klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt(GPO), das Sie konfigurieren möchten, und klicken Sie auf **Bearbeiten**.
 
-1. Wechseln Sie im Gruppenrichtlinienverwaltungs-Editor zu **Einstellungen** für die \> Systemsteuerung **der** \> **Computerkonfiguration.** 
+2. Wechseln Sie im Gruppenrichtlinienverwaltungs-Editor zu **Einstellungen** für die \> Systemsteuerung **der** \> **Computerkonfiguration.** 
 
-1. Klicken Sie mit der rechten Maustaste auf Geplante **Vorgänge,** klicken Sie auf **Neu,** und klicken Sie dann auf **Sofortaufgabe** (Mindestens Windows 7). 
+3. Klicken Sie mit der rechten Maustaste auf Geplante **Vorgänge,** klicken Sie auf **Neu,** und klicken Sie dann auf **Sofortaufgabe** (Mindestens Windows 7). 
 
-1. Wechseln Sie im geöffneten Aufgabenfenster zur Registerkarte **Allgemein.** Klicken **Sie unter Sicherheitsoptionen** **auf Benutzer oder Gruppe ändern, und** geben Sie SYSTEM ein. Klicken **Sie auf Namen** überprüfen, und klicken Sie dann auf OK. NT AUTHORITY\SYSTEM wird als Benutzerkonto angezeigt, unter dem die Aufgabe ausgeführt wird. 
+4. Wechseln Sie im geöffneten Aufgabenfenster zur Registerkarte **Allgemein.** Klicken **Sie unter Sicherheitsoptionen** **auf Benutzer oder Gruppe ändern, und** geben Sie SYSTEM ein. Klicken **Sie auf Namen** überprüfen, und klicken Sie dann auf OK. NT AUTHORITY\SYSTEM wird als Benutzerkonto angezeigt, unter dem die Aufgabe ausgeführt wird. 
 
-1. Aktivieren **Sie Ausführen, ob der Benutzer** angemeldet ist oder nicht, und aktivieren Sie das Kontrollkästchen Mit höchsten **Rechten** ausführen. 
+5. Aktivieren **Sie Ausführen, ob der Benutzer** angemeldet ist oder nicht, und aktivieren Sie das Kontrollkästchen Mit höchsten **Rechten** ausführen. 
 
-1. Wechseln Sie zur **Registerkarte Aktionen,** und klicken Sie auf **Neu**. Stellen Sie **sicher, dass Programm starten** im Feld Aktion ausgewählt ist. Geben Sie Folgendes ein: 
+6. Wechseln Sie zur **Registerkarte Aktionen,** und klicken Sie auf **Neu**. Stellen Sie **sicher, dass Programm starten** im Feld Aktion ausgewählt ist. Geben Sie Folgendes ein: 
 
-    > Action = "Programm starten" <br>
-    > Programm/Skript = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
-    > Hinzufügen von Argumenten (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
+   `Action = "Start a program"`
 
-1. Klicken Sie **auf OK,** und schließen Sie alle geöffneten GPMC-Fenster.
+   `Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe`
+
+   `Add Arguments (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"`
+
+   Wählen Sie dann **OK aus,** und schließen Sie alle geöffneten GPMC-Fenster.
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*Szenario 3: Onboarding mithilfe von Verwaltungstools*
 
 Wenn Sie planen, Ihre Computer mithilfe eines Verwaltungstools zu verwalten, können Sie Geräte mit Microsoft Endpoint Configuration Manager integrieren.
 
-Weitere Informationen finden Sie unter [OnboardIng Windows 10 devices using Configuration Manager](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm). 
+Weitere Informationen finden Sie unter [OnboardIng Windows 10 devices using Configuration Manager](configure-endpoints-sccm.md).
 
 > [!WARNING]
-> Wenn Sie Attack Surface Reduction [Rules](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)verwenden möchten, beachten Sie, dass die Regel " Block process creations from[PSExec and WMI commands](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)" nicht verwendet werden sollte, da sie mit der Verwaltung über Microsoft Endpoint Configuration Manager nicht kompatibel ist, da diese Regel WMI-Befehle blockiert, die der Configuration Manager-Client verwendet, um ordnungsgemäß zu funktionieren. 
+> Wenn Sie Attack Surface Reduction [Rules](attack-surface-reduction.md)verwenden möchten, beachten Sie, dass die Regel " Block process creations from[PSExec and WMI commands](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)" nicht verwendet werden sollte, da diese Regel mit der Verwaltung über Microsoft Endpoint Configuration Manager nicht kompatibel ist. Die Regel blockiert WMI-Befehle, die der Configuration Manager-Client verwendet, um ordnungsgemäß zu funktionieren. 
 
 > [!TIP]
-> Nach dem Onboarding des Geräts können Sie einen Erkennungstest ausführen, um sicherzustellen, dass das Gerät ordnungsgemäß in den Dienst integrierte ist. Weitere Informationen finden Sie unter Ausführen eines Erkennungstests auf einem neu integrierten [Microsoft Defender for Endpoint-Gerät.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-detection-test) 
+> Nach dem Onboarding des Geräts können Sie einen Erkennungstest ausführen, um sicherzustellen, dass das Gerät ordnungsgemäß in den Dienst integrierte ist. Weitere Informationen finden Sie unter Ausführen eines Erkennungstests auf einem neu integrierten [Microsoft Defender for Endpoint-Gerät.](run-detection-test.md) 
 
 #### <a name="tagging-your-machines-when-building-your-golden-image"></a>Markieren Ihrer Computer beim Erstellen Ihres goldenen Bilds 
 
-Im Rahmen Ihres Onboardings sollten Sie ein Computertag festlegen, um WVD-Computer im Microsoft Security Center einfacher voneinander zu unterscheiden. Weitere Informationen finden Sie unter [Hinzufügen von Gerätetags durch Festlegen eines Registrierungsschlüsselwerts.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value) 
+Im Rahmen Ihres Onboardings sollten Sie ein Computertag festlegen, um WVD-Computer im Microsoft Security Center einfacher voneinander zu unterscheiden. Weitere Informationen finden Sie unter [Hinzufügen von Gerätetags durch Festlegen eines Registrierungsschlüsselwerts.](machine-tags.md#add-device-tags-by-setting-a-registry-key-value) 
 
 #### <a name="other-recommended-configuration-settings"></a>Weitere empfohlene Konfigurationseinstellungen 
 
-Beim Erstellen Ihres goldenen Bilds sollten Sie möglicherweise auch die anfänglichen Schutzeinstellungen konfigurieren. Weitere Informationen finden Sie unter [Weitere empfohlene Konfigurationseinstellungen](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-gp#other-recommended-configuration-settings). 
+Beim Erstellen Ihres goldenen Bilds sollten Sie möglicherweise auch die anfänglichen Schutzeinstellungen konfigurieren. Weitere Informationen finden Sie unter [Weitere empfohlene Konfigurationseinstellungen](configure-endpoints-gp.md#other-recommended-configuration-settings). 
 
 Wenn Sie außerdem FSlogix-Benutzerprofile verwenden, wird empfohlen, die folgenden Dateien vom Immer-On-Schutz auszuschließen: 
 
 **Ausschließen von Dateien:** 
 
-> %ProgramFiles%\FSLogix\Apps\frxdrv.sys <br>
-> %ProgramFiles%\FSLogix\Apps\frxdrvvt.sys <br>
-> %ProgramFiles%\FSLogix\Apps\frxccd.sys <br>
-> %TEMP% \* . VHD <br>
-> %TEMP% \* . VHDX <br>
-> %Windir%\TEMP \* . VHD <br>
-> %Windir%\TEMP \* . VHDX <br>
-> \\storageaccount.file.core.windows.net\share \* \* . VHD <br>
-> \\storageaccount.file.core.windows.net\share \* \* . VHDX <br>
+`%ProgramFiles%\FSLogix\Apps\frxdrv.sys`
+
+`%ProgramFiles%\FSLogix\Apps\frxdrvvt.sys`
+
+`%ProgramFiles%\FSLogix\Apps\frxccd.sys`
+
+`%TEMP%\*.VHD`
+
+`%TEMP%\*.VHDX`
+
+`%Windir%\TEMP\*.VHD`
+
+`%Windir%\TEMP\*.VHDX`
+
+`\\storageaccount.file.core.windows.net\share\*\*.VHD`
+
+`\\storageaccount.file.core.windows.net\share\*\*.VHDX`
 
 **Ausschließen von Prozessen:**
 
-> %ProgramFiles%\FSLogix\Apps\frxccd.exe <br>
-> %ProgramFiles%\FSLogix\Apps\frxccds.exe <br>
-> %ProgramFiles%\FSLogix\Apps\frxsvc.exe <br>
+`%ProgramFiles%\FSLogix\Apps\frxccd.exe`
+
+`%ProgramFiles%\FSLogix\Apps\frxccds.exe`
+
+`%ProgramFiles%\FSLogix\Apps\frxsvc.exe`
 
 #### <a name="licensing-requirements"></a>Lizenzierungsanforderungen 
 
-Windows 10 Multi-Session ist ein Clientbetriebssystem. Lizenzierungsanforderungen für Microsoft Defender für Endpunkt finden Sie unter: [Lizenzierungsanforderungen](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements).
+Hinweis zur Lizenzierung: Bei der Verwendung von Windows 10 Enterprise-Mehrsitzungen können Sie je nach Ihren Anforderungen entweder alle Benutzer über Microsoft Defender for Endpoint (pro Benutzer), Windows Enterprise E5, Microsoft 365 Security oder Microsoft 365 E5 lizenziert haben oder den virtuellen Computer über Azure Defender lizenziert haben.
+Lizenzierungsanforderungen für Microsoft Defender für Endpunkt finden Sie unter: [Lizenzierungsanforderungen](minimum-requirements.md#licensing-requirements).

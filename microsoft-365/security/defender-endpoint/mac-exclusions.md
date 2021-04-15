@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b1282543a68ce4cb5c322423656d33c5db12b97b
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 2281fccfb97d38dbdc218799b087290433deff30
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688585"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764157"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Konfigurieren und Überprüfen von Ausschlüssen für Microsoft Defender for Endpoint unter macOS
 
@@ -39,18 +39,18 @@ ms.locfileid: "51688585"
 Dieser Artikel enthält Informationen zum Definieren von Ausschlüssen, die für Scans bei Bedarf gelten, sowie Zum Schutz und Überwachung in Echtzeit.
 
 >[!IMPORTANT]
->Die in diesem Artikel beschriebenen Ausschlüsse gelten nicht für andere Defender for Endpoint für Mac-Funktionen, einschließlich Endpunkterkennung und -reaktion (EDR). Dateien, die Sie mithilfe der in diesem Artikel beschriebenen Methoden ausschließen, können weiterhin EDR-Warnungen und andere Erkennungen auslösen.
+>Die in diesem Artikel beschriebenen Ausschlüsse gelten nicht für andere Defender for Endpoint auf Mac-Funktionen, einschließlich Endpunkterkennung und -reaktion (EDR). Dateien, die Sie mithilfe der in diesem Artikel beschriebenen Methoden ausschließen, können weiterhin EDR-Warnungen und andere Erkennungen auslösen.
 
-Sie können bestimmte Dateien, Ordner, Prozesse und prozessgeladene Dateien aus Defender for Endpoint für Mac-Scans ausschließen.
+Sie können bestimmte Dateien, Ordner, Prozesse und prozessgeladene Dateien aus Defender for Endpoint auf Mac-Scans ausschließen.
 
-Ausschlüsse können hilfreich sein, um fehlerhafte Erkennungen für Dateien oder Software zu vermeiden, die eindeutig oder an Ihre Organisation angepasst sind. Sie können auch hilfreich sein, um Leistungsprobleme zu mildern, die von Defender for Endpoint für Mac verursacht werden.
+Ausschlüsse können hilfreich sein, um fehlerhafte Erkennungen für Dateien oder Software zu vermeiden, die eindeutig oder an Ihre Organisation angepasst sind. Sie können auch hilfreich sein, um Leistungsprobleme zu mildern, die von Defender for Endpoint auf Dem Mac verursacht werden.
 
 >[!WARNING]
->Durch das Definieren von Ausschlüssen wird der von Defender for Endpoint für Mac angebotene Schutz gesenkt. Sie sollten immer die Risiken bewerten, die mit der Implementierung von Ausschlüssen verbunden sind, und Sie sollten nur Dateien ausschließen, von deren Ausführung Sie sicher sind, dass sie nicht bösartig sind.
+>Durch das Definieren von Ausschlüssen wird der von Defender for Endpoint auf Dem Mac gebotene Schutz gesenkt. Sie sollten immer die Risiken bewerten, die mit der Implementierung von Ausschlüssen verbunden sind, und Sie sollten nur Dateien ausschließen, von deren Ausführung Sie sicher sind, dass sie nicht bösartig sind.
 
 ## <a name="supported-exclusion-types"></a>Unterstützte Ausschlusstypen
 
-In der folgenden Tabelle sind die Ausschlusstypen aufgeführt, die von Defender for Endpoint für Mac unterstützt werden.
+In der folgenden Tabelle sind die Ausschlusstypen aufgeführt, die von Defender for Endpoint auf Dem Mac unterstützt werden.
 
 Ausschluss | Definition | Beispiele
 ---|---|---
@@ -73,7 +73,7 @@ Platzhalter | Beschreibung | Beispiel | Übereinstimmungen | Nicht übereinstimm
 
 ### <a name="from-the-management-console"></a>Über die Verwaltungskonsole
 
-Weitere Informationen zum Konfigurieren von Ausschlüssen aus JAMF, Intune oder einer anderen Verwaltungskonsole finden Sie unter [Set preferences for Defender for Endpoint for Mac](mac-preferences.md).
+Weitere Informationen zum Konfigurieren von Ausschlüssen aus JAMF, Intune oder einer anderen Verwaltungskonsole finden Sie unter [Set preferences for Defender for Endpoint on Mac](mac-preferences.md).
 
 ### <a name="from-the-user-interface"></a>Über die Benutzeroberfläche
 
@@ -93,7 +93,7 @@ Ersetzen Sie im folgenden Bash-Codeausschnitt durch eine Datei, die `test.txt` I
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-Wenn Defender for Endpoint für Mac Schadsoftware meldet, funktioniert die Regel nicht. Wenn kein Bericht über Schadsoftware vorhanden ist und die heruntergeladene Datei vorhanden ist, funktioniert der Ausschluss. Sie können die Datei öffnen, um zu bestätigen, dass der Inhalt mit den auf der [EICAR-Testdateiwebsite beschriebenen Inhalten identisch ist.](http://2016.eicar.org/86-0-Intended-use.html)
+Wenn Defender for Endpoint auf Mac Schadsoftware meldet, funktioniert die Regel nicht. Wenn kein Bericht über Schadsoftware vorhanden ist und die heruntergeladene Datei vorhanden ist, funktioniert der Ausschluss. Sie können die Datei öffnen, um zu bestätigen, dass der Inhalt mit den auf der [EICAR-Testdateiwebsite beschriebenen Inhalten identisch ist.](http://2016.eicar.org/86-0-Intended-use.html)
 
 Wenn Sie keinen Internetzugriff haben, können Sie eine eigene EICAR-Testdatei erstellen. Schreiben Sie die EICAR-Zeichenfolge mit dem folgenden Bash-Befehl in eine neue Textdatei:
 

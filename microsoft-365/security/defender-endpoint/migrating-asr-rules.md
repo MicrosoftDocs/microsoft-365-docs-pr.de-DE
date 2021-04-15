@@ -20,7 +20,7 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755552"
+ms.locfileid: "51759966"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migrieren von einem Drittanbieter-HIPS zu ASR-Regeln
 
@@ -146,7 +146,7 @@ Dieser Artikel hilft Ihnen bei der Zuordnung gängiger Regeln zu Microsoft Defen
 - **Attack Surface Reduction-Regeln**– ASR-Regeln decken diese Szenarien nicht ab, da sie Teil des integrierten Microsoft Defender for Endpoint-Schutzes sind.
 - Weitere empfohlene Features **–** Tamper Protection (Opt-In, verwaltet von Intune) verhindert nicht autorisierte Änderungen an Den Registrierungsschlüsseln DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring und DisableIOAVProtection (und mehr).
 
-Weitere Informationen
+Siehe auch
 
 - [FAQ zu Verringerung der Angriffsfläche](attack-surface-reduction-faq.md)
 - [Aktivieren der Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md)

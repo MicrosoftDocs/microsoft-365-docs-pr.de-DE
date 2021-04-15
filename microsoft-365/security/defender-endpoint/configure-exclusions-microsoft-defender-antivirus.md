@@ -1,24 +1,26 @@
 ---
-title: Einrichten von Ausschlüssen für Microsoft Defender AV-Scans
+title: Einrichten von Ausschlüssen für Microsoft Defender Antivirus-Scans
 description: Sie können Dateien (einschließlich Dateien, die durch bestimmte Prozesse geändert wurden) und Ordner von Microsoft Defender AV aus der Scanung ausschließen. Überprüfen Sie Ihre Ausschlüsse mit PowerShell.
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: ''
+ms.reviewer: ksarens
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 47db9b4451a885c92ca4fda0f87f0150415d3338
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: 08f7f9d4a6e9e70d3ef071f30712b2ae53f4ea52
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690730"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764663"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Konfigurieren und Überprüfen von Ausschlüssen für Microsoft Defender Antivirus-Scans
 
@@ -40,7 +42,8 @@ Informationen zum Konfigurieren und Überprüfen von Ausschlüssen finden Sie im
 - [Konfigurieren und Überprüfen von Ausschlüssen für Dateien, die von Prozessen geöffnet werden.](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md) Auf diese Weise können Sie Dateien von Scans ausschließen, die von einem bestimmten Prozess geöffnet wurden.
 
 ## <a name="recommendations-for-defining-exclusions"></a>Empfehlungen zum Definieren von Ausschlüssen
-
+[!IMPORTANT]
+Microsoft Defender Antivirus enthält viele automatische Ausschlüsse, die auf bekannten Betriebssystemverhalten und typischen Verwaltungsdateien basieren, z. B. solche, die in der Unternehmensverwaltung, datenbankverwaltung und anderen Unternehmensszenarien und -situationen verwendet werden.  
 Durch das Definieren von Ausschlüssen wird der von Microsoft Defender Antivirus gebotene Schutz gesenkt. Sie sollten immer die Risiken bewerten, die mit der Implementierung von Ausschlüssen verbunden sind, und Sie sollten nur Dateien ausschließen, von deren Ausführung Sie sicher sind, dass sie nicht bösartig sind.
 
 Im Folgenden finden Sie eine Liste von Empfehlungen, die Sie beim Definieren von Ausschlüssen berücksichtigen sollten:  

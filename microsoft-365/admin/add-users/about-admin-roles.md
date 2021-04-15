@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratorrollen sind Geschäftsfunktionen zugeordnet. Über sie werden Berechtigungen für bestimmte Aufgaben im Admin Center erteilt. So kann beispielsweise der Dienstadministrator Supporttickets über das Admin Center öffnen.
-ms.openlocfilehash: e0155ee9e263d4b62dced0e2bd943781ccf93a4c
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: d220ee918f70a56ba27bdad9d7d0f45025fad451
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644255"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755618"
 ---
 # <a name="about-admin-roles"></a>Info zu Administratorrollen
 
@@ -61,11 +61,7 @@ Wenn im Admin Center eine Nachricht angezeigt wird, die besagt, dass Sie nicht �
 
 ## <a name="commonly-used-microsoft-365-admin-center-roles"></a>Häufig verwendete Microsoft 365 Admin Center-Rollen
 
-::: moniker range="o365-worldwide"
-
 Im Microsoft 365 Admin Center können Sie zu **Rollen** wechseln und dann eine beliebige Rolle auswählen, um den entsprechenden Detailbereich zu öffnen. Wählen Sie die Registerkarte **Berechtigungen** aus, um eine detaillierte Liste der Berechtigungen anzuzeigen, über die Administratoren mit dieser Rolle verfügen. Wählen Sie die Registerkarte **Zugewiesene** oder **Zugewiesene Administratoren** aus, um Benutzer zu Rollen hinzuzufügen.
-
-::: moniker-end
 
 Es genügt wahrscheinlich, wenn Sie in Ihrer Organisation nur die nachstehend aufgeführten Rollen zuweisen. Standardmäßig werden zuerst die Rollen angezeigt, die von den meisten Organisationen verwendet werden. Wenn Sie eine Rolle nicht finden können, gehen Sie zum Ende der Liste, und wählen Sie **Alle nach Kategorie anzeigen** aus. (Ausführliche Informationen, einschließlich der mit einer Rolle verknüpften Cmdlets, finden Sie unter [Administratorrollenberechtigungen in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).)
 
