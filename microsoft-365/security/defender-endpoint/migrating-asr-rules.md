@@ -15,36 +15,138 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: ced969fdd3e8b63136f8bd3f043272e76d99bc5e
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 4385a99206b6d10dee710e4315e690c82359f397
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476519"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755552"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migrieren von einem Drittanbieter-HIPS zu ASR-Regeln
 
-Dieser Artikel hilft Ihnen bei der Zuordnung gängiger Regeln zu Microsoft Defender for Endpoint. Die folgende Tabelle enthält häufige Fragen und Szenarien bei der Migration von einem Drittanbieter-HIPS-Produkt zu ASR-Regeln.
+Dieser Artikel hilft Ihnen bei der Zuordnung gängiger Regeln zu Microsoft Defender for Endpoint.
 
-|Bereich und Aktion|Prozesse|Vorgang|Beispiele für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse, Dienste|Attack Surface Reduction-Regeln|Weitere empfohlene Features|
-|:--|:--|:--|:--|:--|:--|
-|Alle Prozesse: Blockieren der Erstellung bestimmter Dateien und Registrierungsschlüssel||Erstellen von Dateien|*.zepto, *.odin, *.locky, *.jaff, *.lukitus, *.wnry, *.krab|AsR-Regeln blockieren die Angriffstechniken und nicht die Indikatoren des Kompromisses (IOC). Das Blockieren einer bestimmten Dateierweiterung ist nicht immer hilfreich, da es nicht verhindert, dass ein Gerät gefährdet wird. Es vereitelt einen Angriff nur teilweise, bis Angreifer einen neuen Erweiterungstyp für die Nutzlast erstellen.|Es wird dringend empfohlen, Microsoft Defender AV zusammen mit Cloud Protection und Verhaltensanalyse aktiviert zu haben. Es wird empfohlen, andere Präventionsmaßnahmen zu verwenden, z. B. die ASR-Regel "Erweiterten Schutz vor Ransomware verwenden". Dies bietet ein höheres Maß an Schutz vor Ransomware-Angriffen. Darüber hinaus werden mehrere dieser Registrierungsschlüssel von Microsoft Defender for Endpoint überwacht, z. B. ASEP-Techniken, die bestimmte Warnungen auslösen. Für die verwendeten Registrierungsschlüssel sind mindestens lokale Administrator- oder Vertrauenswürdige Installationsprogramme erforderlich, um geändert werden zu können. Es wird empfohlen, eine gesperrte Umgebung mit minimalen Administratorkonten oder -rechten zu verwenden. Andere Systemkonfigurationen können aktiviert werden, einschließlich "Deaktivieren von SeDebug für nicht erforderliche Rollen", die Teil unserer umfassenderen Sicherheitsempfehlungen sind.|
-|Alle Prozesse: Blockieren der Erstellung bestimmter Dateien und Registrierungsschlüssel||Registrierungsänderungen|*\Software \* ,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs \* \StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options \* \Debugger,HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit \* \MonitorProcess|AsR-Regeln blockieren die Angriffstechniken und nicht die Indikatoren des Kompromisses (IOC). Das Blockieren einer bestimmten Dateierweiterung ist nicht immer hilfreich, da es nicht verhindert, dass ein Gerät gefährdet wird. Es vereitelt einen Angriff nur teilweise, bis Angreifer einen neuen Erweiterungstyp für die Nutzlast erstellen.|Es wird dringend empfohlen, Microsoft Defender AV zusammen mit Cloud Protection und Verhaltensanalyse aktiviert zu haben. Es wird empfohlen, zusätzliche Prävention zu verwenden, z. B. die ASR-Regel "Erweiterten Schutz vor Ransomware verwenden". Dies bietet ein höheres Maß an Schutz vor Ransomware-Angriffen. Darüber hinaus werden mehrere dieser Registrierungsschlüssel von Microsoft Defender for Endpoint überwacht, z. B. ASEP-Techniken, die bestimmte Warnungen auslösen. Darüber hinaus benötigen die verwendeten Registrierungsschlüssel mindestens lokale Administrator- oder Vertrauenswürdige Installer-Berechtigungen, um geändert werden zu können. Es wird empfohlen, eine gesperrte Umgebung mit minimalen Administratorkonten oder -rechten zu verwenden. Andere Systemkonfigurationen können aktiviert werden, einschließlich "Deaktivieren von SeDebug für nicht erforderliche Rollen", die Teil unserer umfassenderen Sicherheitsempfehlungen sind.|
-|Nicht vertrauenswürdige Programme von USB: Blockieren, dass nicht vertrauenswürdige Programme von Wechseldatenträgern ausgeführt werden|*|Prozessausführung|*|ASR-Regeln verfügen über eine integrierte Regel, um das Starten nicht vertrauenswürdiger und nicht signierter Programme von Wechseldatenträgern zu verhindern: "Nicht vertrauenswürdige und nicht signierte Prozesse blockieren, die von USB ausgeführt werden", GUID "b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4".|Weitere Steuerelemente für USB-Geräte und andere Wechselmedien finden Sie unter Verwendung von Microsoft Defender for Endpoint: Steuern von USB-Geräten und anderen Wechselmedien mithilfe [von Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/device-control/control-usb-devices-using-intune). |
-|Mshta: Mshta am Starten bestimmter untergeordneter Prozesse blockieren|mshta.exe|Prozessausführung|powershell.exe, cmd.exe, regsvr32.exe|ASR-Regeln enthalten keine bestimmte Regel, um zu verhindern, dass untergeordnete Prozesse "mshta.exe". Dieses Steuerelement befindet sich im Aufgabenbereich von Exploit Protection oder Windows Defender Application Control.|Aktivieren Windows Defender Anwendungssteuerung, um zu verhindern, dass mshta.exe vollständig ausgeführt wird. Wenn Ihre Organisation "mshta.exe" für Business-Apps erfordert, konfigurieren Sie eine bestimmte Windows Defender Exploit Protection-Regel, um zu verhindern, dass mshta.exe untergeordnete Prozesse starten.|
-|Outlook: Blockieren des Startens untergeordneter Prozesse durch Outlook|outlook.exe|Prozessausführung|powershell.exe|AsR-Regeln verfügen über eine integrierte Regel, um zu verhindern, dass Office-Kommunikations-Apps (Outlook, Skype und Teams) untergeordnete Prozesse starten: "Blockieren der Office-Kommunikationsanwendung am Erstellen untergeordneter Prozesse", GUID "26190899-1602-49e8-8b27-eb1d0a1ce869".|Es wird empfohlen, den eingeschränkten Sprachmodus von PowerShell zu aktivieren, um die Angriffsfläche von PowerShell zu minimieren.|
-|Office: Blockieren des Startens untergeordneter Prozesse durch Office Apps und Erstellen ausführbarer Inhalte|winword.exe, powerpnt.exe, excel.exe|Prozessausführung|powershell.exe, cmd.exe, wscript.exe, mshta.exe, EQNEDT32.EXE, regsrv32.exe|ASR-Regeln verfügen über eine integrierte Regel, um zu verhindern, dass Office-Apps untergeordnete Prozesse starten: "Blockieren aller Office-Anwendungen am Erstellen untergeordneter Prozesse", GUID "D4F940AB-401B-4EFC-AADC-AD5F3C50688A".|Nicht zutreffend|
-|Office: Blockieren des Startens untergeordneter Prozesse durch Office Apps und Erstellen ausführbarer Inhalte|winword.exe, powerpnt.exe, excel.exe|Erstellen von Dateien|C:\Users \* \AppData \* *\* .exe, C:\ProgramData \** \* .exe, C:\ProgramData \* *\* .com, C:\Users \* AppData\Local\Temp \** \* .com, C:\Users \* *\Downloads \** \* .exe, C:\Users \* \AppData \* *\* .scf, C:\ProgramData \* .scf,* \* C:\Users\Public \* .exe, C:\Users \* \Desktop \* * \* .exe|Nicht zutreffend|
-|Wscript: Blockieren des Lesens bestimmter Dateitypen durch Wscript|wscript.exe|Datei lesen|C:\Users \* \AppData \* *\* .js*, C:\Users \* \Downloads \* *\* .js*|Aufgrund von Zuverlässigkeits- und Leistungsproblemen können ASR-Regeln nicht verhindern, dass ein bestimmter Prozess einen bestimmten Skriptdateityp liest. Wir verfügen über eine Regel, um Angriffsvektoren zu verhindern, die aus diesen Szenarien stammen können. Der Regelname ist "JavaScript oder VBScript vom Starten heruntergeladener ausführbarer Inhalte blockieren" (GUID "D3E037E1-3EB8-44C8-A917-57927947596 "Block execution of potentially obfuscated scripts" (GUID " 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC")|Obwohl es bestimmte ASR-Regeln gibt, die bestimmte Angriffsvektoren in diesen Szenarien mindern, ist es wichtig zu erwähnen, dass AV standardmäßig Skripts (PowerShell, Windows Script Host, JavaScript, VBScript und vieles mehr) über die Antischalware Scan Interface (AMSI) in Echtzeit überprüfen kann. Weitere Informationen finden Sie hier: [AntischalwareScan Interface (AMSI)](https://docs.microsoft.com/windows/win32/amsi/antimalware-scan-interface-portal). |
-|Adobe Acrobat: Start von untergeordneten Prozessen blockieren|AcroRd32.exe, Acrobat.exe|Prozessausführung|cmd.exe, powershell.exe, wscript.exe|ASR-Regeln ermöglichen das Blockieren des Startens untergeordneter Prozesse durch Adobe Reader. Der Regelname ist "Adobe Reader am Erstellen untergeordneter Prozesse blockieren", GUID "7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c".|Nicht zutreffend|
-|CertUtil: Herunterladen oder Erstellen ausführbarer Inhalte blockieren|certutil.exe|Erstellen von Dateien|*.exe|ASR-Regeln unterstützen diese Szenarien nicht, da sie Teil des Microsoft Defender Antivirus-Schutzes sind.|Microsoft Defender AV hindert CertUtil am Erstellen oder Herunterladen ausführbarer Inhalte.|
-|Alle Prozesse: Blockieren des Beendens kritischer Systemkomponenten durch Prozesse|*|Prozessendigung|MsSense.exe, MsMpEng.exe, NisSrv.exe, svchost.exe*, services.exe, csrss.exe, smss.exe, wininit.exe und mehr.|ASR-Regeln unterstützen diese Szenarien nicht, da sie mit integrierten Windows 10-Sicherheitsschutzvorkehrungen geschützt sind.|ELAM (Early Launch AnMalware), PPL (Protection Process Light), PPL AntiMalware Light und System Guard.|
-|Spezifische Prozesse: Blockieren eines bestimmten Startprozessversuchs|"Name Ihres Prozesses"|Prozessausführung|tor.exe, bittorrent.exe, cmd.exe, powershell.exe und mehr.|Insgesamt sind ASR-Regeln nicht für die Funktion als Anwendungs-Manager konzipiert.|Um zu verhindern, dass Benutzer bestimmte Prozesse oder Programme starten, empfehlen wir die Verwendung Windows Defender Anwendungssteuerung. Microsoft Defender für Endpunktdatei- und #A0 kann in einem Szenario für die Reaktion auf Vorfälle verwendet werden (sollte nicht als Anwendungssteuerungsmechanismus gesehen werden).|
-|Alle Prozesse: Blockieren nicht autorisierter Änderungen an MDATP-AV-Konfigurationen|*|Registrierungsänderungen|HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware, HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\AllowRealTimeMonitoring usw.|AsR-Regeln decken diese Arten von Szenarien nicht ab, da sie Teil des integrierten Microsoft Defender for Endpoint-Schutzes sind.|Manipulationsschutz (Opt-In, verwaltet von Intune) verhindert nicht autorisierte Änderungen an Den Registrierungsschlüsseln DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring und DisableIOAVProtection. |
+## <a name="scenarios-when-migrating-from-a-third-party-hips-product-to-asr-rules"></a>Szenarien bei der Migration von einem Drittanbieter-HIPS-Produkt zu ASR-Regeln
+
+### <a name="block-creation-of-specific-files-and-registry-keys"></a>Blockieren der Erstellung bestimmter Dateien und Registrierungsschlüssel
+
+- **Gilt für**– Alle Prozesse
+- **Vorgang**– Dateierstellung
+- **Beispiele für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse, Dienste**- *.zepto, *.odin, *.locky, *.jaff, *.lukitus, *.wnry, *.krab
+- **Attack Surface Reduction-Regeln**– ASR-Regeln blockieren die Angriffstechniken und nicht die Indikatoren für Kompromisse (IOC). Das Blockieren einer bestimmten Dateierweiterung ist nicht immer hilfreich, da es nicht verhindert, dass ein Gerät gefährdet wird. Es vereitelt einen Angriff nur teilweise, bis Angreifer einen neuen Erweiterungstyp für die Nutzlast erstellen.
+- **Weitere empfohlene Features**– Microsoft Defender AV aktiviert zu haben, sowie Cloud Protection und Verhaltensanalyse wird dringend empfohlen. Es wird empfohlen, andere Präventionsmaßnahmen zu verwenden, z. B. die ASR-Regel "Erweiterten Schutz vor Ransomware verwenden". Dies bietet ein höheres Maß an Schutz vor Ransomware-Angriffen. Darüber hinaus werden viele dieser Registrierungsschlüssel von Microsoft Defender for Endpoint überwacht, z. B. ASEP-Techniken, die bestimmte Warnungen auslösen. Die verwendeten Registrierungsschlüssel erfordern mindestens lokale Administrator- oder Vertrauenswürdige Installer-Berechtigungen, die geändert werden können. Es wird empfohlen, eine gesperrte Umgebung mit minimalen Administratorkonten oder -rechten zu verwenden. Andere Systemkonfigurationen können aktiviert werden, einschließlich "Deaktivieren von SeDebug für nicht erforderliche Rollen", die Teil unserer umfassenderen Sicherheitsempfehlungen sind.
+
+### <a name="block-creation-of-specific-files-and-registry-keys"></a>Blockieren der Erstellung bestimmter Dateien und Registrierungsschlüssel
+
+- **Gilt für**– Alle Prozesse
+- **Prozesse**– N/A
+- **Vorgang**– Registrierungsänderungen
+- **Beispiele für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse,Dienste** -  *\Software*,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs *\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger,HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
+- **Attack Surface Reduction-Regeln**– ASR-Regeln blockieren die Angriffstechniken und nicht die Indikatoren für Kompromisse (IOC). Das Blockieren einer bestimmten Dateierweiterung ist nicht immer hilfreich, da es nicht verhindert, dass ein Gerät gefährdet wird. Es vereitelt einen Angriff nur teilweise, bis Angreifer einen neuen Erweiterungstyp für die Nutzlast erstellen.
+- **Weitere empfohlene Features**– Microsoft Defender AV aktiviert zu haben, sowie Cloud Protection und Verhaltensanalyse wird dringend empfohlen. Es wird empfohlen, zusätzliche Prävention zu verwenden, z. B. die ASR-Regel "Erweiterten Schutz vor Ransomware verwenden". Dies bietet ein höheres Maß an Schutz vor Ransomware-Angriffen. Darüber hinaus werden mehrere dieser Registrierungsschlüssel von Microsoft Defender for Endpoint überwacht, z. B. ASEP-Techniken, die bestimmte Warnungen auslösen. Darüber hinaus erfordern die verwendeten Registrierungsschlüssel, dass mindestens lokale Administrator- oder Vertrauenswürdige Installer-Berechtigungen geändert werden können. Es wird empfohlen, eine gesperrte Umgebung mit minimalen Administratorkonten oder -rechten zu verwenden. Andere Systemkonfigurationen können aktiviert werden, einschließlich "Deaktivieren von SeDebug für nicht erforderliche Rollen", die Teil unserer umfassenderen Sicherheitsempfehlungen sind.
+
+### <a name="block-untrusted-programs-from-running-from-removable-drives"></a>Blockieren der Ausführung nicht vertrauenswürdiger Programme von Wechseldatenträgern
+
+- **Gilt für**: Nicht vertrauenswürdige Programme von USB
+- **Prozesse**– *
+- **Vorgang**– Prozessausführung
+- **Beispiele für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse,Dienste:-*
+- **Attack Surface Reduction-Regeln**– ASR-Regeln verfügen über eine integrierte Regel, um das Starten nicht vertrauenswürdiger und nicht signierter Programme an Wechseldatenträgern zu verhindern: "Nicht vertrauenswürdige und nicht signierte Prozesse blockieren, die über USB ausgeführt werden", GUID "b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4".
+- **Weitere empfohlene Features**: Weitere Steuerelemente für USB-Geräte und andere Wechselmedien mithilfe von Microsoft Defender for Endpoint: Steuern von USB-Geräten und anderen Wechselmedien mithilfe von [Microsoft Defender for Endpoint](/windows/security/threat-protection/device-control/control-usb-devices-using-intune).
+
+### <a name="block-mshta-from-launching-certain-child-processes"></a>Blockieren des Startens bestimmter untergeordneter Prozesse durch Mshta
+
+- **Gilt für**- Mshta
+- **Prozesse**– mshta.exe
+- **Vorgang**– Prozessausführung
+- **Beispiele für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse,** Dienste – powershell.exe, cmd.exe, regsvr32.exe
+- **Attack Surface Reduction rules**– ASR rules don't contain any specific rule to prevent child processes from "mshta.exe". Dieses Steuerelement befindet sich im Aufgabenbereich von Exploit Protection oder Windows Defender Application Control.
+- **Weitere empfohlene Features**: Aktivieren Windows Defender Anwendungssteuerung, um zu verhindern, mshta.exe vollständig ausgeführt werden. Wenn Ihre Organisation "mshta.exe" für Business-Apps erfordert, konfigurieren Sie eine bestimmte Windows Defender Exploit Protection-Regel, um zu verhindern, dass mshta.exe untergeordnete Prozesse starten.
+
+### <a name="block-outlook-from-launching-child-processes"></a>Blockieren des Startens von untergeordneten Prozessen durch Outlook
+
+- **Gilt für**– Outlook
+- **Prozesse**– outlook.exe
+- **Vorgang**– Prozessausführung
+- **Beispiele für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse, Dienste**– powershell.exe
+- **Attack Surface Reduction rules**– ASR rules have a built-in rule to prevent Office communication apps (Outlook, Skype and Teams) from launching child processes: "Block Office communication application from creating child processes", GUID "26190899-1602-49e8-8b27-eb1d0a1ce869".
+- **Weitere empfohlene Features:** Es wird empfohlen, den eingeschränkten Sprachmodus von PowerShell zu aktivieren, um die Angriffsfläche von PowerShell zu minimieren.
 
 
+### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>Blockieren von Office Apps am Starten untergeordneter Prozesse und am Erstellen ausführbarer Inhalte
 
-Siehe auch
+- **Gilt für**- Office  
+- **Prozesse**– winword.exe, powerpnt.exe, excel.exe
+- **Vorgang**– Prozessausführung
+- **Beispiele für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse,** Dienste – powershell.exe, cmd.exe, wscript.exe, mshta.exe, EQNEDT32.EXE, regsrv32.exe
+- **Attack Surface Reduction rules**– ASR rules have a built-in rule to prevent Office apps from launching child processes: "Block all Office applications from creating child processes", GUID "D4F940AB-401B-4EFC-AADC-AD5F3C50688A".
+- **Weitere empfohlene Features**– N/A
+    
+### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>Blockieren von Office Apps am Starten untergeordneter Prozesse und am Erstellen ausführbarer Inhalte
+
+- **Gilt für**- Office
+- **Prozesse**– winword.exe, powerpnt.exe, excel.exe
+- **Vorgang**– Dateierstellung
+- Beispiele **für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse,Dienste**- C:\Users *\AppData **.exe, C:\ProgramData**.exe, C:\ProgramData**.com, C:\Users* AppData\Local\Temp **.com, C:\Users*\Downloads**.exe, C:\Users *\AppData **.scf, C:\ProgramData**.scf, C:\Users\Public*.exe, C:\Users*\Desktop***.exe
+- **Attack Surface Reduction Rules**– N/A.
+
+### <a name="block-wscript-from-reading-certain-types-of-files"></a>Blockieren des Lesens bestimmter Dateitypen durch Wscript
+
+- **Gilt für**- Wscript
+- **Prozesse**– wscript.exe
+- **Vorgang**– Datei lesen
+- **Beispiele für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse, Dienste**- C:\Users *\AppData**.js, C:\Users*\Downloads**.js
+- **Attack Surface Reduction-Regeln**– Aufgrund von Zuverlässigkeits- und Leistungsproblemen können ASR-Regeln nicht verhindern, dass ein bestimmter Prozess einen bestimmten Skriptdateityp liest. Wir verfügen über eine Regel, um Angriffsvektoren zu verhindern, die aus diesen Szenarien stammen können. Der Regelname ist "JavaScript oder VBScript vom Starten heruntergeladener ausführbarer Inhalte blockieren" (GUID "D3E037E1-3EB8-44C8-A917-57927947596 "Block execution of potentially obfuscated scripts" (GUID " 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC").
+- **Weitere** empfohlene Features – Obwohl es bestimmte ASR-Regeln gibt, die bestimmte Angriffsvektoren in diesen Szenarien mindern, ist es wichtig zu erwähnen, dass AV standardmäßig Skripts (PowerShell, Windows Script Host, JavaScript, VBScript und mehr) über die Antischantischungsscanschnittstelle (AmSI) in Echtzeit überprüfen kann. Weitere Informationen finden Sie hier: [AntischalwareScan Interface (AMSI)](/windows/win32/amsi/antimalware-scan-interface-portal).
+
+### <a name="block-launch-of-child-processes"></a>Blockieren des Startes von untergeordneten Prozessen
+
+- **Gilt für**– Adobe Acrobat
+- **Prozesse**– AcroRd32.exe, Acrobat.exe
+- **Vorgang**– Prozessausführung
+- **Beispiele für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse,** Dienste – cmd.exe, powershell.exe, wscript.exe
+- **Attack Surface Reduction Rules**– ASR-Regeln ermöglichen das Blockieren des Startens untergeordneter Prozesse durch Adobe Reader. Der Regelname ist "Adobe Reader am Erstellen untergeordneter Prozesse blockieren", GUID "7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c".
+- **Weitere empfohlene Features**– N/A
+
+
+### <a name="block-download-or-creation-of-executable-content"></a>Herunterladen oder Erstellen ausführbarer Inhalte blockieren
+
+- **Gilt für**- CertUtil: Herunterladen oder Erstellen von ausführbaren Dateien blockieren 
+- **Prozesse**– certutil.exe
+- **Vorgang**– Dateierstellung
+- **Beispiele für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse, Dienste**- *.exe
+- **Attack Surface Reduction-Regeln**– ASR-Regeln unterstützen diese Szenarien nicht, da sie Teil des Microsoft Defender Antivirus-Schutzes sind.
+- **Weitere empfohlene Features**: Microsoft Defender AV hindert CertUtil am Erstellen oder Herunterladen ausführbarer Inhalte.
+
+
+### <a name="block-processes-from-stopping-critical-system-components"></a>Blockieren des Beendens kritischer Systemkomponenten durch Prozesse
+
+- **Gilt für**– Alle Prozesse
+- **Prozesse**– *
+- **Vorgang**– Prozessendigung
+- Beispiele für **Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse,** Dienste – MsSense.exe, MsMpEng.exe, NisSrv.exe, svchost.exe*, services.exe, csrss.exe, smss.exe, wininit.exe und mehr.
+- **Attack Surface Reduction-Regeln**– ASR-Regeln unterstützen diese Szenarien nicht, da sie durch integrierten Windows 10-Sicherheitsschutz geschützt sind.
+- **Weitere empfohlene Features:** ELAM (Early Launch AnMalware), PPL (Protection Process Light), PPL AnMalware Light und System Guard.
+
+### <a name="block-specific-launch-process-attempt"></a>Block specific launch Process Attempt
+
+- **Gilt für**– spezifische Prozesse
+- **Prozesse**– "Name Ihres Prozesses"
+- **Vorgang**– Prozessausführung
+- **Beispiele für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse,** Dienste – tor.exe, bittorrent.exe, cmd.exe, powershell.exe und mehr
+- **Attack Surface Reduction-Regeln**– Allgemeine AsR-Regeln sind nicht für die Funktion als Anwendungs-Manager konzipiert.
+- **Weitere empfohlene Features:** Um zu verhindern, dass Benutzer bestimmte Prozesse oder Programme starten, wird empfohlen, Windows Defender Anwendungssteuerung zu verwenden. Microsoft Defender für Endpunktdatei- und #A0 kann in einem Szenario für die Reaktion auf Vorfälle verwendet werden (sollte nicht als Anwendungssteuerungsmechanismus gesehen werden).
+    
+### <a name="block-unauthorized-changes-to-mdatp-av-configurations"></a>Blockieren nicht autorisierter Änderungen an MDATP-AV-Konfigurationen
+
+- **Gilt für**– Alle Prozesse
+- **Prozesse**– *
+- **Vorgang**– Registrierungsänderungen
+- Beispiele für **Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse,** Dienste - HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware, HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\AllowRealTimeMonitoring und so weiter.
+- **Attack Surface Reduction-Regeln**– ASR-Regeln decken diese Szenarien nicht ab, da sie Teil des integrierten Microsoft Defender for Endpoint-Schutzes sind.
+- Weitere empfohlene Features **–** Tamper Protection (Opt-In, verwaltet von Intune) verhindert nicht autorisierte Änderungen an Den Registrierungsschlüsseln DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring und DisableIOAVProtection (und mehr).
+
+Weitere Informationen
 
 - [FAQ zu Verringerung der Angriffsfläche](attack-surface-reduction-faq.md)
 - [Aktivieren der Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md)

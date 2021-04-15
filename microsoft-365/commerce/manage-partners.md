@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie mit Von Microsoft zertifizierten Lösungsanbietern (Partnern) zum Kauf und Verwalten von Produkten und Diensten für Ihre Organisation oder Schule arbeiten.
-ms.openlocfilehash: a0c70f229ff11132beccf118f4158ab2880a8aa6
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f4c270e179a3d52616f6d7efb049beac4d1a8e03
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579734"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51749854"
 ---
 # <a name="manage-partner-relationships"></a>Verwalten von Partnerbeziehungen
 
@@ -30,7 +30,7 @@ Sie können mit Microsoft-zertifizierten Lösungsanbietern (Partnern) zusammenar
 2. Partner senden eine E-Mail-Anforderung an Kunden, um eine Partnerbeziehung zu gründen.
 3. Kunden akzeptieren die Einladung im Microsoft 365 Admin Center und beginnen mit der Zusammenarbeit mit dem Partner.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Sie müssen entweder ein globaler Administrator oder ein Abrechnungsadministrator sein, um diese Schritte ausführen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../admin/add-users/about-admin-roles.md).
 
@@ -85,7 +85,7 @@ Wenn Sie dem Partner keine Administratorrollen zuweisen möchten, brechen Sie di
 
 Sie können jederzeit Administratorrollen von einem Partner entfernen. Durch das Entfernen der Administratorrollen wird die Partnerbeziehung nicht entfernt. Sie können weiterhin mit Ihnen in einer anderen Kapazität arbeiten, z. B. einem Händler. Wenn Sie entscheiden, dass Sie nicht mehr mit einem Partner arbeiten möchten, wenden Sie sich an Ihren Partner, um die Beziehung zu beenden.
 
-1. Wechseln Sie im Admin Center zur Seite  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Abrechnungspartnerbeziehungen.</a>
+1. Wechseln Sie im Admin Center zur Seite **Einstellungen**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partnerbeziehungen.</a>
 2. Wählen Sie auf der Seite **Partnerbeziehungen** die Zeile aus, die den Namen des Partners enthält, den Sie entfernen möchten.
 3. Wählen Sie die Zeile aus, die den Namen des Partners enthält.
 4. Wählen Sie auf der Partnerseite Rollen **entfernen aus.**

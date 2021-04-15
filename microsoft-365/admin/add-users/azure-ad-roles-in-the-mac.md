@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Verwalten Sie diese Azure-Administratorrollen im Microsoft 365 Admin Center.
-ms.openlocfilehash: b07174763384150a7ae8cda6709f5d0ec5cb40ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 72835a0f9fdf9a15fc3ffa07c0fab6ca6f0260cb
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904492"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759942"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Rollen in Azure Active Directory im Microsoft 365 Admin Center
 
@@ -29,15 +29,11 @@ Im Microsoft 365 Admin Center können Sie mehr als 30 Azure AD-Rollen verwalten.
 
 Ein Benutzer, dem eine Administratorrolle zugewiesen wurde, verfügt über die gleichen Zugriffsrechte für Clouddienste, die Ihre Organisation abonniert hat, unabhängig davon, ob Sie die Rolle im Microsoft 365 Admin Center, im Azure-Portal oder mithilfe des Azure AD-Moduls für Windows PowerShell zuweisen.
 
-::: moniker range="o365-worldwide"
-
 Im Microsoft 365 Admin Center können Sie zu **Rollen** wechseln und dann eine beliebige Rolle auswählen, um den entsprechenden Detailbereich zu öffnen. Wählen Sie die Registerkarte **Berechtigungen** aus, um eine detaillierte Liste der Berechtigungen anzuzeigen, über die Administratoren mit dieser Rolle verfügen. Wählen Sie die Registerkarte **Zugewiesene** oder **Zugewiesene Administratoren** aus, um Benutzer zu Rollen hinzuzufügen. Weitere Informationen zum Zuweisen von Rollen im Microsoft 365 Admin Center finden Sie unter [Zuweisen von Administratorrollen](assign-admin-roles.md).
-
-::: moniker-end
 
 ## <a name="all-azure-ad-roles"></a>Alle Azure AD-Rollen
 
-Hier ist eine Liste aller im Microsoft 365 Admin Center verfügbaren Administratorrollen. Suchen Sie nach den detaillierten Rollenbeschreibungen der Microsoft 365-Administratorrollen? Siehe [Info zu Administratorrollen](./about-admin-roles.md?view=o365-worldwide).
+Hier ist eine Liste aller im Microsoft 365 Admin Center verfügbaren Administratorrollen. Suchen Sie nach den detaillierten Rollenbeschreibungen der Microsoft 365-Administratorrollen? Siehe [Info zu Administratorrollen](./about-admin-roles.md).
 
 |Administratorrolle     |Beschreibung  |
 |---------|---------|

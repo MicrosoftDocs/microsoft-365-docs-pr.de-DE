@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
-ms.openlocfilehash: e3ed1d76a755ce6326ac6ae53b990136a10b564a
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
-ms.translationtype: HT
+ms.openlocfilehash: cd83d2abcc061562047aeb384856cc9ab04dcad3
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644716"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760038"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Aktionen während der Migrationsphasen und Auswirkungen für die Migration von Microsoft Cloud Deutschland
 
@@ -82,6 +82,20 @@ Wenn Sie Active Directory-Verbunddienste (AD FS) verwenden, sorgen Sie für die 
 ## <a name="phase-2-azure-ad-migration"></a>Phase 2: Azure AD-Migration
 In dieser Phase wird Azure Active Directory in die neue Rechenzentrumsregion migriert und wird aktiv. Die alten Azure AD-Endpunkte sind weiterhin verfügbar.
 
+### <a name="exchange-online-hybrid---modify-authserver-on-premises"></a>Exchange Online Hybrid – Lokales Ändern von AuthServer
+**Gilt für:** Alle Kunden, die eine aktive Exchange-Hybridkonfiguration mit lokalen Exchange-Servern verwenden
+
+**Anwendung :** Nach Ende von Phase 2
+
+Der lokale AuthServer muss zur Authentifizierung nach Abschluss der Azure AD-Migration auf den globalen Sicherheitstokendienst (Security Token Service, STS) verweisen.
+Auf diese Weise wird sichergestellt, dass Authentifizierungsanforderungen für Exchange-Verfügbarkeitsanforderungen für Benutzer mit Migrationsstatus, die auf die lokale Hybridumgebung ausgerichtet sind, für den Zugriff auf den lokalen Dienst authentifiziert sind. Auf ähnliche Weise stellt dies die Authentifizierung von Anforderungen von lokalen zu Office 365-Globalen Dienstendpunkten sicher. Nach Abschluss der Azure AD-Migration (Phase 2) muss der Administrator der lokalen Exchange-(Hybrid-)Topologie einen neuen Authentifizierungsdienstendpunkt für die Office 365-Globalen Dienste hinzufügen. Ersetzen Sie mit diesem Befehl von Exchange PowerShell `<TenantID>` durch die Mandanten-ID Ihrer Organisation im Azure-Portal unter Azure Active Directory.
+
+```powershell
+New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<TenantID>/metadata/json/1
+```
+
+Wenn Sie diese Aufgabe nicht ausführen, kann es sein, dass die Frei/Gebucht-Hybridanforderungen keine Informationen für Postfachbenutzer bereitstellen, die von Microsoft Cloud Deutschland zu Office 365-Diensten migriert wurden.
+
 ## <a name="phase-3-subscription-transfer"></a>Phase 3: Abonnementübertragung
 
 **Gilt für**: Alle Kunden mit einem in Microsoft Cloud Deutschland (MCD) gehosteten Office 365-Mandanten
@@ -117,30 +131,36 @@ Wenn Sie immer noch SharePoint 2013-Workflows verwenden, schränken Sie die Verw
 Zusätzliche Überlegungen:
 
 - Wenn Ihre Organisation immer noch SharePoint 2010-Workflows verwendet, werden diese nach 31. Dezember 2021 nicht mehr funktionieren. SharePoint 2013-Workflows bleiben unterstützt, obwohl sie ab 1. November 2020 für neue Mandaten standardmäßig ausgeschaltet werden. Wenn die Migration zu den SharePoint Onlinediensten abgeschlossen ist, empfehlen wir, dass Sie zu Power Automate oder anderen unterstützten Lösungen wechseln.
-
+ 
 - Microsoft Cloud Deutschland-Kunden, deren SharePoint Online-Instanz noch nicht migriert wurde, müssen bei Version 16.0.20616.12000 (oder niedriger) von SharePoint Online-PowerShell-Modul/Microsoft.SharePointOnline.CSOM bleiben. Andernfalls schlagen Verbindungen zu SharePoint Online über PowerShell oder das clientseitige Objektmodell fehl.
+
+- In dieser Phase ändern sich die IP-Adressen hinter den SharePoint-URLs. Nach dem Übergang zu Office 365 Global Services werden die Adressen für die beibehaltenen Mandanten-URLs (z. B. und ) in die urLs und `contoso.sharepoint.de` `contoso-my.sharepoint.de` #A0 von Microsoft [365 weltweit (SharePoint Online und OneDrive for Business)](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business)geändert.
 
 
 > [!NOTE]
-> Falls Sie eDiscovery verwenden, achten Sie auf die [eDiscovery Migrationserfahrung](ms-cloud-germany-transition-add-experience.md).
+> Falls Sie eDiscovery verwenden, achten Sie auf die [eDiscovery Migrationserfahrung](ms-cloud-germany-transition-add-scc.md).
 
 ## <a name="phase-5-exchange-online"></a>Phase 5: Exchange Online 
+Ab Phase 5 werden Exchange Online-Postfächer von Microsoft Cloud Deutschland zu Globalen Office 365-Diensten verschoben.
 
-**Gilt für:** Alle Kunden, die Exchange Online verwenden
+Die Office 365 Global-Dienste-Region ist als standardmäßig festgelegt, sodass der interne Lastenausgleichsdienst die Postfächer an die entsprechende Standardregion in den Office 365-Diensten weiterverteilen kann. Bei diesem Übergang befinden sich die Benutzer beider Seiten (MCD- oder Global-Dienste) in der gleichen Organisation und können einen der beiden URL-Endpunkte verwenden.
 
-Wenn Sie Exchange Online Hybrid verwenden: Exchange Online Hybrid-Administratoren  **müssen den Assistenten für die Hybridkonfiguration (Hybrid Configuration Wizard, HCW)** im Rahmen dieser Überführung mehrmals ausführen. Wenden Sie die [Exchange-Vorbereitung](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-customers) **an, bevor Sie den Migrationsschritt der Phase 5 beginnen**. Exchange Online-Hybrid-Kunden müssen die neueste Version des Assistenten für die Exchange-Hybridkonfiguration (Exchange Hybrid Configuration Wizard, HCW) im Modus „Office 365 Deutschland“ ausführen, um die lokale Konfiguration für die Migration zu Office 365-Globalen Diensten vorzubereiten.
+Die neue Region "Deutschland" wird zum Organisationssetup hinzugefügt. Die Exchange Online-Konfiguration fügt die neue lokale Region "Deutschland" zur wechselnden Organisation hinzu.
 
-Nach **Abschluss von Migrationsphase 9** (wenn der Nachrichtencenterhinweis veröffentlicht wurde) müssen Sie erneut den HCW mit Office 365 Worldwide-Einstellungen ausführen, um Ihre lokalen Systeme auf die Office 365-Globale Dienste zu verweisen.
+- Stellen Sie Benutzer und Dienste von Ihren älteren MCD-URLs ( ) zu neuen URLs für `https://outlook.office.de` Office 365-Dienste ( `https://outlook.office365.com` ) um.
+-  Die Exchange Online-Dienste (Outlook Web Access und Exchange Admin Center) für die neue deutsche Rechenzentrumsregion stehen in dieser Phase zur Verfügung, sie sind vorher nicht verfügbar.
+- Benutzer können während der Migration weiterhin über ältere MCD-URLs auf den Dienst zugreifen, müssen jedoch nach Abschluss der Migration die Verwendung der älteren URLs einstellen.
+- Die Benutzer sollten zum weltweiten Office-Portal für Office Online-Features ("Kalender", "E-Mail", "Personen") übergehen. Die Navigation zu Diensten, die noch nicht zu Office 365-Diensten migriert wurden, wird erst nach ihrer Migration möglich sein.
+- In der Outlook Web App wird das Feature "Öffentlicher Ordner" während der Migration nicht verfügbar sein.
 
-Wenn Sie die Fotos eines Benutzer während der Phase 5 ändern möchten, lesen Sie [Exchange Online-Set-UserPhoto während der Phase 5](#exchange-online-powershell)
+Wenn Sie Benutzerfotos in Phase 5 ändern möchten, lesen Sie [Exchange Online PowerShell - Set-UserPhoto Phase 5](#exchange-online-powershell).
 
-| Schritte: | Beschreibung | Auswirkung |
-|:-------|:-------|:-------|
-|**Administrator**: Beenden von Postfachverschiebungen|Beenden oder löschen Sie alle Onboarding- oder Offboarding-Postfachverschiebungen, d. h. verschieben Sie keine Postfächer zwischen Exchange (lokal) und Exchange Online.  | Dadurch wird sichergestellt, dass die Anforderungen zum Verschieben der Postfächer nicht fehlschlagen. Wird diese Aktion nicht ausgeführt, kann dies zu einem Ausfall des Diensts oder der Office-Clients führen. |
-| Die neue Region "Deutschland" wird zum Organisationssetup hinzugefügt. | Die Exchange Online-Konfiguration fügt die neue lokale Region "Deutschland" zur wechselnden Organisation hinzu. | |
-| Exchange Online-Postfächer werden von Microsoft Cloud Deutschland zu Office 365 Global-Diensten verschoben.| Die Office 365 Global-Dienste-Region ist als standardmäßig festgelegt, sodass der interne Lastenausgleichsdienst die Postfächer an die entsprechende Standardregion in den Office 365-Diensten weiterverteilen kann. Bei diesem Übergang befinden sich die Benutzer beider Seiten (MCD- oder Global-Dienste) in der gleichen Organisation und können einen der beiden URL-Endpunkte verwenden. |<ul><li>Überführung der Benutzer und Dienste von Ihren älteren MCD-URLs (outlook.office.de) zu neuen Office 365-Dienst-URLs (`https://outlook.office365.com`).</li><li>Benutzer können während der Migration weiterhin über ältere MCD-URLs auf den Dienst zugreifen, müssen jedoch nach Abschluss der Migration die Verwendung der älteren URLs einstellen.</li><li>Die Benutzer sollten zum weltweiten Office-Portal für Office Online-Features ("Kalender", "E-Mail", "Personen") übergehen. Die Navigation zu Diensten, die noch nicht zu Office 365-Diensten migriert wurden, wird erst nach ihrer Migration möglich sein. </li><li>In der Outlook Web App wird das Feature "Öffentlicher Ordner" während der Migration nicht verfügbar sein. </li></ul>|
-| **Administrator**: Aktualisieren benutzerdefinierter DNS-Einstellungen für AutoErmittlung| Vom Kunden verwaltete DNS-Einstellungen für AutoErmittlung, die derzeit auf Microsoft Cloud Deutschland verweisen, müssen aktualisiert werden, um nach Abschluss der Exchange Online-Phase (Phase 5) auf den Office 365 Global-Endpunkt zu verweisen. <br> Bestehende DNS-Einträge mit CNAME mit Verweis auf autodiscover-outlook.office.de müssen aktualisiert werden, damit sie auf autodiscover.outlook.com verweisen. |  Verfügbarkeitsanforderungen und Serviceermittlungsanrufe über AutoErmittlung verweisen direkt auf die Office 365-Dienste. Bei Kunden, die diese DNS-Updates nicht ausführen, können nach Abschluss der Migration Probleme mit dem AutoErmittlung-Dienst auftreten. |
-||||
+### <a name="dns-record-for-autodiscover-in-exchange-online"></a>DNS-Eintrag für die AutoErmittlung in Exchange Online
+**Gilt für:** Kunden, die Exchange Online mit einer benutzerdefinierten Domäne verwenden
+
+Vom Kunden verwaltete DNS-Einstellungen für AutoErmittlung, die derzeit auf Microsoft Cloud Deutschland verweisen, müssen aktualisiert werden, um nach Abschluss der Exchange Online-Phase (Phase 5) auf den Office 365 Global-Endpunkt zu verweisen. <br> Vorhandene #A0 mit CNAME, die auf autodiscover-outlook.office.de müssen aktualisiert werden, um auf **autodiscover.outlook.com.**
+
+Kunden, die diese DNS-Updates nach Abschluss der **Migrationsphase 9** nicht ausführen, treten möglicherweise Dienstprobleme auf, wenn die Migration abgeschlossen ist.
 
 ### <a name="exchange-online-powershell"></a>Exchange Online PowerShell
 **Gilt für:** Exchange Online-Administratoren, die Exchange Online PowerShell verwenden
@@ -169,8 +189,8 @@ Zusätzliche Überlegungen:
 - `myaccount.microsoft.com` will only work after the tenant cutover in phase 9. Links will produce "something went wrong" error messages until that time.
 -->
 - Benutzer, die mit Outlook Web App auf ein freigegebenes Postfach in der anderen Umgebung zugreifen (Beispiel: ein Benutzer in der MCD-Umgebung greift auf ein freigegebenes Postfach in der Global-Umgebung zu), werden aufgefordert, sich ein zweites Mal zu authentifizieren. Der Benutzer muss sich zuerst authentifizieren und auf sein eigenes Postfach in `outlook.office.de` zugreifen und dann das freigegebene Postfach in `outlook.office365.com` öffnen. Sie müssen sich ein zweites Mal authentifizieren, wenn sie auf die freigegebenen Ressourcen zugreifen, die im anderen Dienst gehostet werden.
-
 - Für bestehende Microsoft Cloud Deutschland-Kunden oder solche, die sich in der Übergangsphase befinden, kann das Anzeigen von Kalenderberechtigungen fehlschlagen, wenn ein freigegebenes Postfach über **Datei > Info > Konto hinzufügen** zu Outlook hinzugefügt wird (der Outlook-Client versucht, die Rest-API `https://outlook.office.de/api/v2.0/Me/Calendars` zu verwenden). Kunden, die ein Konto hinzufügen möchten, um Kalenderberechtigungen anzuzeigen, können den Registrierungsschlüssel wie in [Änderungen der Benutzererfahrung für die Freigabe eines Kalenders in Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) beschrieben hinzufügen, um sicherzustellen, dass diese Aktion erfolgreich sein wird. Dieser Registrierungsschlüssel kann unternehmensweit über eine Gruppenrichtlinie bereitgestellt werden.
+- Stellen Sie sicher, dass alle Benutzer, die Legacyprotokolle (POP3/IMAP4/SMTP) für ihre Geräte verwenden, bereit sind, die Endpunkte auf ihrem Client zu ändern, nachdem ihr Exchange-Postfach in die neue deutsche Rechenzentrumsregion verschoben wurde, wie in den Schritten vor der Migration für [Exchange Online beschrieben.](ms-cloud-germany-transition-add-pre-work.md#exchange-online)
 
 Um mehr über die Unterschiede zwischen Organisationen bei der Migration und nach der Migration von Exchange Online-Ressourcen zu erfahren, lesen Sie die Informationen in [Kundenerfahrung während der Migration zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition-experience.md).
 
@@ -185,6 +205,19 @@ Die Backend-Funktionen von Exchange Online Protection (EOP) werden in die neue R
 |:-------|:-------|:-------|
 | Migration des Exchange Online-Routing und von historischen Nachrichtendetails. | Exchange Online ermöglicht das Weiterleiten von externen Hosts auf Office 365. Die externen MX-Datensätze werden umgestellt, um auf die EOP-Dienste weiterzuleiten. Die Mandanten-Konfiguration und historische Details werden migriert. |<ul><li>Von Microsoft-verwaltete DNS-Einträge werden von Office 365 Deutschland EOP zu Office 365-Diensten aktualisiert.</li><li>Kunden sollten 30 Tage nach dem EOP Dual Write auf die EOP-Migration warten. Anderenfalls kann es zu einem Datenverlust kommen.</li></ul>|
 ||||
+
+### <a name="exchange-online-hybrid-deployments"></a>Exchange Online Hybridbereitstellungen
+**Gilt für:** Alle Kunden, die eine aktive Exchange-Hybridkonfiguration mit lokalen Exchange-Servern verwenden
+
+Stellen Sie sicher, [dass die Exchange-Vorarbeit](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-customers) angewendet wurde, **bevor der Migrationsschritt 5 beginnt.** Exchange Online-Hybrid-Kunden müssen die neueste Version des Assistenten für die Exchange-Hybridkonfiguration (Exchange Hybrid Configuration Wizard, HCW) im Modus „Office 365 Deutschland“ ausführen, um die lokale Konfiguration für die Migration zu Office 365-Globalen Diensten vorzubereiten.
+
+**Administratoraktionen:**
+- Zwischen dem Beginn der Migrationsphase 6 und dem Abschluss der Migrationsphase 9 (wenn der Message Center-Hinweis veröffentlicht wird) müssen Sie den HCW erneut mithilfe von Office 365 Worldwide-Einstellungen ausführen, um Ihre lokalen Systeme auf die globalen Office 365-Dienste zu verweisen. Wenn Sie diese Aufgabe nicht vor Phase 9 [Migration Abgeschlossen] abschließen, kann dies zu Unzuverl ndsern für E-Mails führen, die zwischen Ihrer lokalen Exchange-Bereitstellung und Office 365 geroutet werden.
+- Beenden oder löschen Sie alle Onboarding- oder Offboarding-Postfachverschiebungen, d. h. verschieben Sie keine Postfächer zwischen Exchange (lokal) und Exchange Online.  Dadurch wird sichergestellt, dass die Anforderungen zum Verschieben der Postfächer nicht fehlschlagen. Wird diese Aktion nicht ausgeführt, kann dies zu einem Ausfall des Diensts oder der Office-Clients führen.
+- Zusätzliche Send-Connectors, die neben dem vom HCW erstellten Connector erstellt wurden und auf Exchange Online zielgerichtet sind, müssen in dieser Phase unmittelbar nach ausführung des HCW aktualisiert werden, andernfalls funktionieren sie nicht mehr. Die TLS-Domäne muss für diese Sendeconnectors aktualisiert werden. <br> Verwenden Sie zum Aktualisieren der TLS-Domäne den folgenden PowerShell-Befehl in Exchange Server Umgebung:
+```powershell
+Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outlook.com"
+```
 
 ## <a name="phase-7-skype-for-business-online"></a>Phase 7: Skype for Business Online
 
@@ -236,6 +269,27 @@ Kunden mit Dynamics 365 müssen zusätzliche Aktionen ausführen, um die Dynamic
 
 \*\* (i) Kunden mit Microsoft Power BI müssen in diesem Migrationsszenario Maßnahmen ergreifen, die durch den bereitgestellten Migrationsprozess definiert sind. (ii) Wenn der Kunde keine Maßnahmen ergreift, bedeutet dies, dass Microsoft die Migration nicht abschließen kann. (iii) Wenn Microsoft die Migration aufgrund der Inaktivität des Kunden nicht abschließen kann, läuft das Abonnement des Kunden am 29. Oktober 2021 ab.
 
+## <a name="phase-9-office-apps"></a>Phase 9: Office Apps
+
+**Gilt für:** Alle Kunden, die Office-Desktopanwendungen (Word, Excel, PowerPoint, Outlook, ...) verwenden
+
+Die Umstellung von Office 365-Mandanten auf die Region „Deutschland“ erfordert, dass alle Benutzer Anwendungen schließen, sich von Office 365 abmelden und für alle Office-Desktopanwendungen (Word, Excel, PowerPoint, Outlook usw.) und den OneDrive for Business-Client erneut anmelden, nachdem die Mandantenmigration Phase 9 erreicht hat. Durch das Ab- und Anmelden können die Office-Dienste neue Authentifizierungstoken vom globalen Azure AD-Dienst abrufen.
+
+Die beste Benutzeroberfläche kann mithilfe der neuesten Office-Anwendungen sichergestellt werden. Unternehmen sollten die Verwendung des monatlichen Unternehmenskanals in Betracht ziehen.
+
+Stellen Sie sicher, dass Sie den Vorgang [Vorbereitung für Mobilgeräte](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) abgeschlossen haben.
+
+| Schritte: | Beschreibung | Auswirkung |
+|:-------|:-------|:-------|
+| Clients, Office Online während der Office-Client-Übernahmemigration, Azure AD finalisiert den Mandantenbereich so, dass er auf die Office 365-Dienste verweist. | Mit dieser Konfigurationsänderung können Office-Clients aktualisiert und auf die Office 365-Dienstendpunkte verweisen. | <ul><li>Benachrichtigen Sie die Benutzer, dass _alle_ Office-Apps geschlossen werden müssen, und sich dann erneut anzumelden (oder erzwingen Sie den Neustart der Clients und die Anmeldung der Benutzer), damit die Office-Clients die Änderung übernehmen können. </li><li>Informieren Sie die Benutzer und Mitarbeiter des Helpdesks, dass Benutzern *möglicherweise* ein Office-Banner angezeigt wird, das sie dazu auffordert, Office-Apps innerhalb von 72 Stunden nach der Umstellung zu reaktivieren. </li><li>Alle Office-Anwendungen auf privaten Computern müssen geschlossen werden, und die Benutzer müssen sich abmelden und dann erneut anmelden. Melden Sie sich in der gelben Aktivierungsleiste an, um die Office 365-Dienste zu reaktivieren.</li><li>Gemeinsam genutzte Computer erfordern Aktionen, die mit jenen für private Computer vergleichbar sind, erfordern aber keine spezielle Vorgehensweise. </li><li>Auf mobilen Geräten müssen sich die Benutzer von Apps abmelden, sie schließen und sich dann erneut anmelden.</li></ul>|
+||||
+
+## <a name="phase-9-line-of-business-apps"></a>Phase 9: Vorbereiten branchenspezifischer Apps
+
+**Gilt für:** Alle Kunden, die Mit Office 365 verbundene Line-of-Business-Apps verwenden
+
+Falls Sie über branchenspezifische Apps verfügen, stellen Sie sicher, dass Sie den Vorgang zur [Vorbereitung für branchenspezifische Apps](ms-cloud-germany-transition-add-pre-work.md#line-of-business-apps) abgeschlossen haben.
+
 ## <a name="phase-9--10-azure-ad-finalization"></a>Phase 9 und 10: Azure AD-Abschluss
 
 **Gilt für:** Alle Kunden
@@ -247,23 +301,6 @@ Wenn der Office 365-Mandant den letzten Schritt der Migration [Azure AD-Abschlus
 | Aktualisieren von Benutzerendpunkten | Sicherstellen, dass alle Benutzer mithilfe der entsprechenden weltweiten Microsoft-Endpunkte auf den Dienst zugreifen |30 Tage nach Abschluss der Migration werden Anforderungen von Microsoft Cloud Deutschland-Endpunkten nicht mehr unterstützt. Client- oder Anwendungsverkehr schlägt dann fehl.  |
 | Aktualisieren der Azure AD-Anwendungsendpunkte | Sie müssen die Authentifizierungs-, Azure Active Directory (Azure AD) Graph- und MS Graph-Endpunkte für Ihre Anwendungen auf diejenigen des Dienstes „Microsoft weltweit“ aktualisieren. | 30 Tage nach Abschluss der Migration werden Anforderungen von Microsoft Cloud Deutschland-Endpunkten nicht mehr unterstützt. Client- oder Anwendungsverkehr schlägt dann fehl. |
 ||||
-
-## <a name="office-apps"></a>Office-Apps
-
-**Gilt für:** Alle Kunden, die Office-Desktopanwendungen (Word, Excel, PowerPoint, Outlook, ...) verwenden
-
-Die Umstellung von Office 365-Mandanten auf die Region „Deutschland“ erfordert, dass alle Benutzer Anwendungen schließen, sich von Office 365 abmelden und für alle Office-Desktopanwendungen (Word, Excel, PowerPoint, Outlook usw.) und den OneDrive for Business-Client erneut anmelden, nachdem die Mandantenmigration Phase 9 erreicht hat. Durch das Ab- und Anmelden können die Office-Dienste neue Authentifizierungstoken vom globalen Azure AD-Dienst abrufen.
-
-Stellen Sie sicher, dass Sie den Vorgang [Vorbereitung für Mobilgeräte](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) abgeschlossen haben.
-
-| Schritte: | Beschreibung | Auswirkung |
-|:-------|:-------|:-------|
-| Clients, Office Online während der Office-Client-Übernahmemigration, Azure AD finalisiert den Mandantenbereich so, dass er auf die Office 365-Dienste verweist. | Mit dieser Konfigurationsänderung können Office-Clients aktualisiert und auf die Office 365-Dienstendpunkte verweisen. | <ul><li>Benachrichtigen Sie die Benutzer, dass _alle_ Office-Apps geschlossen werden müssen, und sich dann erneut anzumelden (oder erzwingen Sie den Neustart der Clients und die Anmeldung der Benutzer), damit die Office-Clients die Änderung übernehmen können. </li><li>Informieren Sie die Benutzer und Mitarbeiter des Helpdesks, dass Benutzern *möglicherweise* ein Office-Banner angezeigt wird, das sie dazu auffordert, Office-Apps innerhalb von 72 Stunden nach der Umstellung zu reaktivieren. </li><li>Alle Office-Anwendungen auf privaten Computern müssen geschlossen werden, und die Benutzer müssen sich abmelden und dann erneut anmelden. Melden Sie sich in der gelben Aktivierungsleiste an, um die Office 365-Dienste zu reaktivieren.</li><li>Gemeinsam genutzte Computer erfordern Aktionen, die mit jenen für private Computer vergleichbar sind, erfordern aber keine spezielle Vorgehensweise. </li><li>Auf mobilen Geräten müssen sich die Benutzer von Apps abmelden, sie schließen und sich dann erneut anmelden.</li></ul>|
-||||
-
-## <a name="phase-9-line-of-business-apps"></a>Phase 9: Vorbereiten branchenspezifischer Apps
-
-Falls Sie über branchenspezifische Apps verfügen, stellen Sie sicher, dass Sie den Vorgang zur [Vorbereitung für branchenspezifische Apps](ms-cloud-germany-transition-add-pre-work.md#line-of-business-apps) abgeschlossen haben.
 
 ## <a name="post-migration"></a>Nach der Migration
 

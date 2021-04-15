@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratorrollen sind Geschäftsfunktionen zugeordnet. Über sie werden Berechtigungen für bestimmte Aufgaben im Admin Center erteilt. So kann beispielsweise der Dienstadministrator Supporttickets über das Admin Center öffnen.
-ms.openlocfilehash: 8092d199dc6ecfda5d76c9198ba44a72ec7b4d71
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e0155ee9e263d4b62dced0e2bd943781ccf93a4c
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197685"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644255"
 ---
 # <a name="about-admin-roles"></a>Info zu Administratorrollen
 
@@ -80,7 +80,7 @@ Es genügt wahrscheinlich, wenn Sie in Ihrer Organisation nur die nachstehend au
 |Lizenzadministrator    |   Weisen Sie die Rolle des Lizenzadministrators Benutzern zu, die Lizenzen für Benutzer zuweisen und entfernen und deren Verwendungsort bearbeiten müssen. <br/><br/> Lizenzadministratoren können ebenfalls: <br> – Lizenzzuweisungen für die gruppenbasierte Lizenzierung erneut verarbeiten <br> – Produktlizenzen für die gruppenbasierte Lizenzierung an Gruppen zuweisen  |
 |Office-Apps-Administrator    |   Weisen Sie die Rolle des Office-Apps-Administrators Benutzern zu, die folgende Aktionen ausführen müssen: <br> - Verwenden des Office-Cloudrichtliniendiensts zum Erstellen und Verwalten von cloudbasierten Richtlinien für Office <br> - Serviceanfragen erstellen und verwalten <br> - Verwalten der Inhalte im Dialogfenster "Neuigkeiten", das den Benutzern in ihren Office-Apps angezeigt wird   <br> - Den Dienststatus überwachen  |
 |Kennwortadministrator  |   Weisen Sie die Rolle des Kennwortadministrators Benutzern zu, die Kennwörter für Nicht-Administratoren und Kennwortadministratoren zurücksetzen müssen.   |
-|Dienstsupportadministrator   |   Weisen Sie die Rolle des Dienstsupportadministrators als zusätzliche Rolle für Administratoren oder Benutzer zu, die zusätzlich zu ihrer normalen Administratorrolle folgende Aufgaben erfüllen müssen: <br> - Serviceanfragen öffnen und verwalten <br> - Nachrichtencenter-Beiträge anzeigen und freigeben   |
+|Dienstsupportadministrator   |   Weisen Sie die Rolle des Dienstsupportadministrators als zusätzliche Rolle für Administratoren oder Benutzer zu, die zusätzlich zu ihrer normalen Administratorrolle folgende Aufgaben erfüllen müssen: <br> - Serviceanfragen öffnen und verwalten <br> - Nachrichtencenter-Beiträge anzeigen und freigeben <br> - Den Dienststatus überwachen   |
 |SharePoint-Administrator    |   Weisen Sie die SharePoint-Administratorrolle Benutzern zu, die auf das SharePoint Online Admin Center zugreifen und dieses verwalten müssen. <br><br>SharePoint-Administratoren sind zudem zu Folgendem berechtigt: <br> - Erstellen und Löschen von Websites <br> - Verwalten von Websitesammlungen und globalen SharePoint-Einstellungen   |
 |Teams-Dienstadministrator    |   Weisen Sie die Teams-Dienstadministratorrolle Benutzern zu, die auf das Teams Admin Center zugreifen und es verwalten müssen. <br><br>Teams-Dienstadministratoren können auch folgende Aktionen ausführen: <br> - Verwalten von Besprechungen <br> - Verwalten von Konferenzbrücken <br> - Verwalten aller organisationsweiten Einstellungen einschließlich Partnerverbund, Microsoft Teams-Upgrades und Einstellungen des Microsoft Teams-Clients   |
 |Benutzeradministrator     |    Weisen Sie die Rolle des Benutzeradministrators Benutzern zu, die folgende Aktionen für alle Benutzer ausführen müssen: <br> - Benutzer und Gruppen hinzufügen <br> - Lizenzen zuweisen <br> - Die meisten Benutzereigenschaften verwalten <br> - Benutzeransichten erstellen und verwalten <br> - Kennwortablaufrichtlinien aktualisieren <br> - Serviceanfragen verwalten <br> - Den Dienststatus überwachen <br><br>  Der Benutzeradministrator kann außerdem die unten aufgeführten Aktionen für Benutzer ohne Administratorrolle sowie für Benutzer ausführen, denen die folgenden Rollen zugewiesen sind: Verzeichnisleseberechtigter, Gasteinladender, Helpdesk-Administrator, Nachrichtencenter-Leseberechtigter und Berichtleseberechtigter. <br> - Benutzernamen verwalten<br> - Benutzerkonten löschen und wiederherstellen<br> - Kennwörter zurücksetzen <br> - Die Abmeldung von Benutzern erzwingen <br> - (FIDO)-Geräteschlüssel aktualisieren   |

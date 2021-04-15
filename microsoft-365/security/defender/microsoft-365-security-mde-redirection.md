@@ -20,18 +20,16 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c993977e0f052a7dc2e7827ff5bdefacee19ac2d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: db458015d8434843ec64f3c2c00d640d4c4d8ff2
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064647"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51760176"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-the-microsoft-365-security-center"></a>Umleiten von Konten von Microsoft Defender für Endpunkt zum Microsoft 365 Security Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **Gilt für:**
 - Microsoft 365 Defender

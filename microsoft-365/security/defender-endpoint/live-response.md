@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 784e73467efc114f05ebdfca9bc4034e2d75f6c6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 235df8c84077311444c597b120a19477cfd0986a
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185707"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760416"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Untersuchen von Entitäten auf Geräten mithilfe von Liveantworten
 
@@ -144,11 +144,13 @@ Die folgenden Befehle stehen für Benutzerrollen zur  Verfügung, für die grund
 |`connections` | Zeigt alle aktiven Verbindungen an. |
 |`dir` | Zeigt eine Liste der Dateien und Unterverzeichnisse in einem Verzeichnis an. |
 |`download <file_path> &` | Lädt eine Datei im Hintergrund herunter. |
-drivers |  Zeigt alle auf dem Gerät installierten Treiber an. |
-|`fg <command ID>` | Gibt einen Dateidownload in den Vordergrund zurück. |
+|`drivers` |  Zeigt alle auf dem Gerät installierten Treiber an. |
+|`fg <command ID>` | Platzieren Sie den angegebenen Auftrag im Vordergrund, wodurch er zum aktuellen Auftrag wird. <br> HINWEIS: fg verwendet eine "Befehls-ID", die von Aufträgen und nicht von einer PID verfügbar ist. |
 |`fileinfo` | Abrufen von Informationen zu einer Datei. |
 |`findfile` | Sucht Dateien nach einem bestimmten Namen auf dem Gerät. |
+|`getfile <file_path>` | Lädt eine Datei herunter. |
 |`help` | Enthält Hilfeinformationen für Liveantwortbefehle. |
+|`jobs` | Zeigt derzeit ausgeführte Aufträge, ihre ID und den Status an. |
 |`persistence` | Zeigt alle bekannten Persistenzmethoden auf dem Gerät an. |
 |`processes` | Zeigt alle auf dem Gerät ausgeführten Prozesse an. |
 |`registry` | Zeigt Registrierungswerte an. |
@@ -162,7 +164,6 @@ Die folgenden Befehle sind für Benutzerrollen verfügbar, für die erweiterte *
 | Befehl | Beschreibung |
 |---|---|
 | `analyze` | Analysiert die Entität mit verschiedenen Beschuldigungsmodule, um ein Urteil zu erreichen. |
-| `getfile` | Ruft eine Datei vom Gerät ab. <br> HINWEIS: Dieser Befehl verfügt über einen erforderlichen Befehl. Sie können den Befehl `-auto` zusammen mit verwenden, `getfile` um den erforderlichen Befehl automatisch auszuführen. |
 | `run` | Führt ein PowerShell-Skript aus der Bibliothek auf dem Gerät aus. |
 | `library` | Listet Dateien auf, die in die Liveantwortbibliothek hochgeladen wurden. |
 | `putfile` | Legt eine Datei aus der Bibliothek auf das Gerät. Dateien werden in einem Arbeitsordner gespeichert und gelöscht, wenn das Gerät standardmäßig neu gestartet wird. |
@@ -298,15 +299,14 @@ processes > output.txt
 Wählen Sie **die Registerkarte Befehlsprotokoll** aus, um die Befehle anzuzeigen, die während einer Sitzung auf dem Gerät verwendet werden. Jeder Befehl wird mit vollständigen Details nachverfolgt, z. B.:
 - ID
 - Befehlszeile
-- Duration
+- Dauer
 - Status- und Eingabe- oder Ausgabeleiste
 
 ## <a name="limitations"></a>Einschränkungen
 
-- Liveantwortsitzungen sind auf 10 Liveantwortsitzungen gleichzeitig beschränkt.
-- Die Ausführung von Großbefehlen wird nicht unterstützt.
-- Inaktiver Timeoutwert der Liveantwortsitzung beträgt 5 Minuten. 
-- Ein Benutzer kann nur eine Sitzung gleichzeitig initiieren.
+- Liveantwortsitzungen sind auf 25 Liveantwortsitzungen gleichzeitig beschränkt.
+- Inaktiver Timeoutwert der Liveantwortsitzung beträgt 30 Minuten. 
+- Ein Benutzer kann bis zu 10 gleichzeitige Sitzungen initiieren.
 - Ein Gerät kann nur in einer Sitzung gleichzeitig sein.
 - Es gelten die folgenden Dateigrößenbeschränkungen:
    - `getfile` Grenzwert: 3 GB
@@ -314,4 +314,4 @@ Wählen Sie **die Registerkarte Befehlsprotokoll** aus, um die Befehle anzuzeige
    - `library` Grenzwert: 250 MB
 
 ## <a name="related-article"></a>Verwandter Artikel
-- [Beispiele für Liveantwortbefehle](live-response-command-examples.md)
+- [Kommandobeispiele für Liveantworten](live-response-command-examples.md)

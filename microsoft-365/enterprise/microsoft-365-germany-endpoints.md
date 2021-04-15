@@ -20,18 +20,22 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: In diesem Artikel finden Sie Endpunkte, die für Kunden mit Office 365 in Deutschland erreichbar sind.
 hideEdit: true
-ms.openlocfilehash: 8d3e8bfe2a52027b412aff87e063f2458ca47f74
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: HT
+ms.openlocfilehash: 0d96300e77c67ac05ea18ab23d63c01d4f840dfb
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923990"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759894"
 ---
 # <a name="office-365-germany-endpoints"></a>Endpunkte für Office 365 Deutschland
 
  *Gültig für Office 365 Admin*
 
 Office 365 setzt eine Internetverbindung voraus. Die folgenden Endpunkte sollten nur für Kunden mit **Office 365 Deutschland**-Plänen erreichbar sein.
+
+> [!NOTE]
+> Für Kunden, die sich im Übergang zur neuen Microsoft 365-Rechenzentrumsregion in Deutschland befinden, ändern sich die Endpunkte.
+> Weitere Informationen finden Sie unter [Migration from Microsoft Cloud Deutschland to Office 365 services in the new German datacenter regions](ms-cloud-germany-transition.md).
   
  **Office 365-Endpunkte:** [Weltweit (einschließlich GCC)](urls-and-ip-address-ranges.md)  | [Office 365, betrieben von 21Vianet](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 Deutschland* | [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   

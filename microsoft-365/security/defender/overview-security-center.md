@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.date: 02/02/2021
+ms.date: 04/07/2021
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -19,18 +19,16 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 142bc305950f9322c90e0d207f255c14abbc6b8c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d89e5dc29bfe7f980d40a9a5b139884750a966bc
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197933"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760014"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Das vereinheitlichte Microsoft 365 Security Center – Übersicht
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **Gilt für:**
 
@@ -57,39 +55,39 @@ Wenn Sie Informationen zu den Aktualisierungen im Office 365 Security & Complian
 
 Alle Sicherheitsinhalte, die Sie im Office 365 Security & Compliance Center (protection.office.com) und im Microsoft Defender Security Center (securitycenter.microsoft.com) verwenden, finden Sie jetzt im *Microsoft 365 Security Center*.
 
-Das Microsoft 365 Security Center hilft Sicherheitsteams, Angriffe zu untersuchen und darauf zu reagieren, indem es Signale aus verschiedenen Workloads zu einer einzigen, einheitlichen Oberfläche sendet:
+Microsoft 365 Security Center unterstützt Sicherheitsteams bei der Untersuchung und Reaktion auf Angriffe, indem Signale von verschiedenen Arbeitsauslastungen in eine Reihe einheitlicher Erfahrungen für:
 
 - Vorfälle und Benachrichtigungen
 - Suchen
 - Info-Center
 - Bedrohungsanalyse
 
-Das Microsoft 365 Security Center hebt beim Zusammenführen von Microsoft Defender für Office 365 und Microsoft Defender für Endpunkt *Einheit, Klarheit und gemeinsame Ziele* hervor. Die Zusammenlegung basierte auf den unten aufgeführten Prioritäten und erfolgte ohne Abstriche an den Fähigkeiten, die jede Sicherheitssuite in die Kombination einbrachte:
+Das Microsoft 365 Security Center hebt beim Zusammenführen von Microsoft Defender für Office 365 und Microsoft Defender für Endpunkt *Einheit, Klarheit und gemeinsame Ziele* hervor. Die Zusammenführung basierte auf den unten aufgeführten Prioritäten und wurde ohne Beeinträchtigung der Funktionen vorgenommen, die die einzelnen Sicherheitssuiten zu einer Kombination aus folgenden Funktionen gebracht haben:
 
-- gemeinsame Bausteine
-- gemeinsame Terminologie
-- gemeinsame Entitäten
+- Allgemeine Bausteine
+- Allgemeine Terminologie
+- Allgemeine Entitäten
 - Featureparität mit anderen Workloads
 
 ## <a name="unified-investigations"></a>Vereinheitlichte Untersuchungen
 
-Durch die Optimierung der Sicherheitscenter wird ein einzelner Bereich zum Untersuchen von Vorfällen in einer Microsoft 365-Organisation erstellt. Ein primäres Beispiel ist der Node **Vorfälle** auf der Schnellstartansicht des Microsoft 365 Security Centers.
+Durch das Zusammenziehen von Sicherheitscentern wird ein einzelner Ort für die Untersuchung von Sicherheitsvorfällen in Microsoft 365 erstellt. Ein hauptbeispiel ist **Incidents** under **Incidents & alerts** on the quick launch of the Microsoft 365 security center.
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Die Seite „Vorfälle“ in MDO.":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Die Seite Vorfälle im Microsoft 365 Security Center.":::
 
-Beispielsweise bringt Sie das Doppelklicken auf einen Vorfallnamen mit dem Schweregrad **Hoch** zu einer Seite, auf der der Vorteil von zusammenlaufenden Centers veranschaulicht wird.
+Wenn Sie einen Vorfallnamen auswählen, wird eine Seite angezeigt, die den Wert von konvergierenden Sicherheitscentern veranschaulicht.
 
-![Mehrstufiger Vorfall mit Privilegien-Eskalation auf mehreren Endpunkten, wobei 16 betroffene Geräte und 9 betroffene Benutzer angezeigt werden.](../../media/converged-incident-info-3.png)
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Beispiel für die Zusammenfassungsseite für einen Vorfall im Microsoft 365 Security Center":::
 
-> [!TIP]
-> Die konvergierte Registerkarte **Benutzer** ist ein guter Ort, um Ihre Anfragen zu beginnen. Auf dieser einzelnen Seite werden Informationen für Benutzer aus konvergierten Workloads (Microsoft Defender für Endpunkt, Microsoft Defender for Identity und MCAS, sofern verwendet) sowie aus einer Reihe von Quellen wie Windows Server Active Directory, Azure Active Directory, synchronisierten, lokalen Benutzern und Drittanbieterbenutzern angezeigt. Erfahren Sie mehr über [die neue Benutzererfahrung](investigate-users.md).
+<!--
+![Example of the Summary page for an incident in the Microsoft 365 security center](../../media/converged-incident-info-3.png)
+--> 
 
-Vorfallinformationen zeigen die Spezifischen Benutzer/Identitäten und Geräte mit Risiken neben betroffenen Postfächern an. Es bezieht sich auch auf alle **Untersuchungsinformationen** und gesammelte **Beweise**. Dies erleichtert Administratoren und Teams für den Sicherheitsbetrieb das Pivotieren einer Warnung mit hohem Risiko für die betroffenen Benutzer und Postfächer. Auf der Registerkarten **Vorfall**, die sich oben auf dieser Seite befinden, sehen Sie weitere wichtige Sicherheitspivots, die von diesem einen Ort aus verfügbar sind.
+Am oberen Rand einer Vorfallseite werden die Registerkarten **Zusammenfassung** **,** Warnungen , **Geräte**, **Benutzer**, **Postfächer,** Untersuchungen **und** **Nachweise** angezeigt. Wählen Sie diese Registerkarten aus, um ausführlichere Informationen zu erhalten. Auf der  Registerkarte Benutzer werden beispielsweise Informationen für Benutzer aus konvergenten Arbeitsauslastungen (Microsoft Defender for Endpoint, Microsoft Defender for Identity und Microsoft Cloud App Security) und einer Reihe von Quellen wie lokalen Active Directory Domain Services (AD DS), Azure Active Directory (Azure AD) und Drittanbieteridentitätsanbietern angezeigt. Weitere Informationen finden Sie unter [Untersuchen von Benutzern](investigate-users.md).
 
-> [!IMPORTANT]
-> Am oberen Seitenanfang einer bestimmten Seite werden die Registerkarten **Zusammenfassung**, **Benachrichtigungen**, **Geräte**, **Benutzer**, **Postfächer**, **Untersuchungen** und **Beweise** angezeigt.
+Nehmen Sie sich die Zeit, um die Vorfälle in Ihrer Umgebung zu überprüfen, einen Drilldown auf diesen Registerkarten zu machen und zu erfahren, wie Sie auf die Informationen zugreifen können, die für Vorfälle für verschiedene Arten von Bedrohungen bereitgestellt werden.
 
-Durch Auswählen von **Untersuchungen** wird eine Seite geöffnet, die eine Grafik der stattfindenden Analyse zeigt und einen Status (z. B. **ausstehende Genehmigung**) zur Behebung auflistet. Nehmen Sie sich Zeit, um bestimmte Vorfälle in Ihrer Umgebung auszuwählen, führen Sie einen Drilldown in diese Registerkarten aus, und üben Sie das Erstellen eines Profils für verschiedene Arten von Bedrohungen. Die Vertrautheit kommt allen späteren dringenden Untersuchungen zugute.
+Weitere Informationen finden Sie unter [Vorfälle im Microsoft 365 Security Center](incidents-overview.md).
 
 ## <a name="improved-processes"></a>Verbesserte Prozesse
 

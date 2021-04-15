@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: ddd10e6164a8fae5d0d3d60c04ca854ef9771dba
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f2615cf5ec49c9df27472f04c367f30511e9c0cc
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688741"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759870"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Adressiert falsch positive/negative Ergebnisse in Microsoft Defender für Endpunkt
 
@@ -125,9 +125,11 @@ Wenn Sie Warnungen haben, bei denen es sich entweder um falsch positive Oder um 
 Andere Aktionen, z. B. das Starten eines Antivirenscans oder das Sammeln eines Untersuchungspakets, erfolgen manuell oder über [Live Response](live-response.md). Aktionen, die über die Liveantwort ergriffen werden, können nicht rückgängig gemacht werden.
 
 Nachdem Sie Ihre Warnungen überprüft haben, besteht der nächste Schritt in der Überprüfung [von Korrekturaktionen.](manage-auto-investigation.md) Wenn Aktionen als Ergebnis falsch positiver Ergebnisse ergriffen wurden, können Sie die meisten Arten von Korrekturaktionen rückgängig machen. Insbesondere können Sie:
-- [Rückgängig machen eine Aktion nach dem anderen](#undo-an-action);
-- [Rückgängig machen mehrerer Aktionen gleichzeitig](#undo-multiple-actions-at-one-time); und 
-- [Entfernen einer Datei aus der Quarantäne auf mehreren Geräten](#remove-a-file-from-quarantine-across-multiple-devices). 
+
+- [Wiederherstellen einer isolierten Datei aus dem Action Center](#restore-a-quarantined-file-from-the-action-center)
+- [Rückgängig machen mehrerer Aktionen gleichzeitig](#undo-multiple-actions-at-one-time)
+- [Entfernen einer Datei aus der Quarantäne auf mehreren Geräten](#remove-a-file-from-quarantine-across-multiple-devices).  und 
+- [Datei aus der Quarantäne wiederherstellen](#restore-file-from-quarantine)
 
 Wenn Sie aktionen überprüft und rückgängig gemacht haben, die als Ergebnis falsch positiver Ergebnisse durchgeführt wurden, fahren Sie mit dem Überprüfen oder Definieren von [Ausschlüssen fort.](#part-3-review-or-define-exclusions)
 
@@ -139,7 +141,7 @@ Wenn Sie aktionen überprüft und rückgängig gemacht haben, die als Ergebnis f
 
 3. Wählen Sie ein Element aus, um weitere Details zu der ergriffenen Korrekturaktion anzuzeigen.
 
-### <a name="undo-an-action"></a>Rückgängig machen einer Aktion
+### <a name="restore-a-quarantined-file-from-the-action-center"></a>Wiederherstellen einer isolierten Datei aus dem Action Center
 
 1. Wechseln Sie zum Aktionscenter ( [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) ) und melden Sie sich an.
 
@@ -164,7 +166,33 @@ Wenn Sie aktionen überprüft und rückgängig gemacht haben, die als Ergebnis f
 
 2. Wählen Sie **auf der Registerkarte** Verlauf eine Datei mit dem Aktionstyp **Quarantänedatei aus.**
 
+3. Wählen Sie im Bereich auf der rechten Seite des Bildschirms Anwenden auf **X** weitere Instanzen dieser Datei aus, und wählen Sie **dann Rückgängig aus.**
+
+### <a name="restore-file-from-quarantine"></a>Datei aus der Quarantäne wiederherstellen
+
+Sie können ein Rollback für eine Datei aus der Quarantäne erstellen und entfernen, wenn Sie nach einer Untersuchung festgestellt haben, dass sie sauber ist. Führen Sie auf jedem Gerät, auf dem die Datei isoliert wurde, den folgenden Befehl aus.
+
+1. Öffnen Sie eine Eingabeaufforderung mit erhöhten Rechten auf dem Gerät:
+
+   1. Wechseln Sie zu **Start**, und geben Sie _cmd_ ein.
+
+   1. Klicken Sie mit der rechten Maustaste auf Eingabeaufforderung, und wählen **Sie Als Administrator ausführen aus.** 
+
+2. Geben Sie den folgenden Befehl ein, und drücken Sie die **EINGABETASTE**:
+
+    ```console
+    "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+    ```
+
+    > [!NOTE]
+    > In einigen Szenarien kann **ThreatName** wie folgt angezeigt werden: `EUS:Win32/
+CustomEnterpriseBlock!cl` . Defender for Endpoint stellt alle benutzerdefinierten blockierten Dateien wieder in Quarantäne, die in den letzten 30 Tagen auf diesem Gerät isoliert wurden.
+
+    > [!IMPORTANT]
+    > Eine Datei, die als potenzielle Netzwerkbedrohung isoliert wurde, kann möglicherweise nicht wiederhergestellt werden. Wenn ein Benutzer versucht, die Datei nach der Quarantäne wiederherzustellen, ist der Zugriff auf diese Datei möglicherweise nicht möglich. Dies kann daran liegt, dass das System keine Netzwerkanmeldeinformationen mehr für den Zugriff auf die Datei hat. In der Regel ist dies das Ergebnis einer temporären Anmeldung bei einem System oder freigegebenen Ordner, und die Zugriffstoken sind abgelaufen.
+
 3. Wählen Sie im Bereich auf der rechten Seite des Bildschirms Anwenden auf **X** weitere Instanzen dieser Datei aus, und wählen Sie **dann Rückgängig aus.** 
+
 
 ## <a name="part-3-review-or-define-exclusions"></a>Teil 3: Überprüfen oder Definieren von Ausschlüssen
 

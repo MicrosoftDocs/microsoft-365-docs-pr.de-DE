@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 3f925fdc514c5e53b50f748d991f54d20fb49bd0
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: 6ad61d583815f669affe989d7519ba0ade6fe08d
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488145"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760086"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Onboarden von Windows 10-Geräten für mehrere Sitzungen in Windows Virtual Desktop 
 6 Minuten zu lesen 
@@ -54,7 +54,7 @@ Es gibt mehrere Möglichkeiten zum Onboarding eines WVD-Hostcomputers:
 #### <a name="scenario-1-using-local-group-policy"></a>*Szenario 1: Verwenden der lokalen Gruppenrichtlinie*
 In diesem Szenario muss das Skript in einem goldenen Bild platziert werden und verwendet lokale Gruppenrichtlinien, um frühzeitig im Startvorgang ausgeführt zu werden.
 
-Verwenden Sie die Anweisungen unter [Onboard non-persistent virtual desktop infrastructure VDI devices](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1).
+Verwenden Sie die Anweisungen unter [Onboard non-persistent virtual desktop infrastructure VDI devices](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1).
 
 Befolgen Sie die Anweisungen für einen einzelnen Eintrag für jedes Gerät.
 
@@ -62,32 +62,41 @@ Befolgen Sie die Anweisungen für einen einzelnen Eintrag für jedes Gerät.
 In diesem Szenario wird ein zentral gelegenes Skript verwendet und mithilfe einer domänenbasierten Gruppenrichtlinie ausgeführt. Sie können das Skript auch in das goldene Bild platzieren und auf die gleiche Weise ausführen.
 
 **Laden Sie die WindowsDefenderATPOnboardingPackage.zip aus dem Windows Defender Security Center herunter**
+
 1. Öffnen Sie die ZIP-Datei des VDI-Konfigurationspakets (WindowsDefenderATPOnboardingPackage.zip)  
-    - Wählen Sie im Navigationsbereich des Microsoft Defender Security Center die Option **Einstellungen**  >  **Onboarding aus.** 
-    - Wählen Sie Windows 10 als Betriebssystem aus. 
-    - Wählen Sie **im Feld Bereitstellungsmethode** die Option VDI-Onboardingskripts für nicht persistente Endpunkte aus. 
-    - Klicken **Sie auf Paket herunterladen,** und speichern Sie die ZIP-Datei. 
+
+    1. Wählen Sie im Navigationsbereich des Microsoft Defender Security Center die Option **Einstellungen**  >  **Onboarding aus.** 
+    1. Wählen Sie Windows 10 als Betriebssystem aus. 
+    1. Wählen Sie **im Feld Bereitstellungsmethode** die Option VDI-Onboardingskripts für nicht persistente Endpunkte aus. 
+    1. Klicken **Sie auf Paket herunterladen,** und speichern Sie die ZIP-Datei. 
+
 2. Extrahieren Sie den Inhalt der ZIP-Datei an einen freigegebenen schreibgeschützten Speicherort, auf den das Gerät zugreifen kann. Sie sollten über einen Ordner **namens OptionalParamsPolicy** und die **Dateien WindowsDefenderATPOnboardingScript.cmd** und **Onboard-NonPersistentMachine.ps1**.
 
 **Verwenden der Gruppenrichtlinienverwaltungskonsole zum Ausführen des Skripts beim Starten des virtuellen Computers**
+
 1. Öffnen Sie die Gruppenrichtlinienverwaltungskonsole (Group Policy Management Console, GPMC), klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt(GPO), das Sie konfigurieren möchten, und klicken Sie auf **Bearbeiten**.
+
 1. Wechseln Sie im Gruppenrichtlinienverwaltungs-Editor zu **Einstellungen** für die \> Systemsteuerung **der** \> **Computerkonfiguration.** 
+
 1. Klicken Sie mit der rechten Maustaste auf Geplante **Vorgänge,** klicken Sie auf **Neu,** und klicken Sie dann auf **Sofortaufgabe** (Mindestens Windows 7). 
+
 1. Wechseln Sie im geöffneten Aufgabenfenster zur Registerkarte **Allgemein.** Klicken **Sie unter Sicherheitsoptionen** **auf Benutzer oder Gruppe ändern, und** geben Sie SYSTEM ein. Klicken **Sie auf Namen** überprüfen, und klicken Sie dann auf OK. NT AUTHORITY\SYSTEM wird als Benutzerkonto angezeigt, unter dem die Aufgabe ausgeführt wird. 
+
 1. Aktivieren **Sie Ausführen, ob der Benutzer** angemeldet ist oder nicht, und aktivieren Sie das Kontrollkästchen Mit höchsten **Rechten** ausführen. 
+
 1. Wechseln Sie zur **Registerkarte Aktionen,** und klicken Sie auf **Neu**. Stellen Sie **sicher, dass Programm starten** im Feld Aktion ausgewählt ist. Geben Sie Folgendes ein: 
 
-> Action = "Programm starten" <br>
-> Programm/Skript = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
-> Hinzufügen von Argumenten (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
+    > Action = "Programm starten" <br>
+    > Programm/Skript = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
+    > Hinzufügen von Argumenten (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
 
-Klicken Sie **auf OK,** und schließen Sie alle geöffneten GPMC-Fenster.
+1. Klicken Sie **auf OK,** und schließen Sie alle geöffneten GPMC-Fenster.
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*Szenario 3: Onboarding mithilfe von Verwaltungstools*
 
 Wenn Sie planen, Ihre Computer mithilfe eines Verwaltungstools zu verwalten, können Sie Geräte mit Microsoft Endpoint Configuration Manager integrieren.
 
-Weitere Informationen finden Sie unter: [Onboarding von Windows 10-Geräten mit Configuration Manager](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm) 
+Weitere Informationen finden Sie unter [OnboardIng Windows 10 devices using Configuration Manager](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm). 
 
 > [!WARNING]
 > Wenn Sie Attack Surface Reduction [Rules](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)verwenden möchten, beachten Sie, dass die Regel " Block process creations from[PSExec and WMI commands](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)" nicht verwendet werden sollte, da sie mit der Verwaltung über Microsoft Endpoint Configuration Manager nicht kompatibel ist, da diese Regel WMI-Befehle blockiert, die der Configuration Manager-Client verwendet, um ordnungsgemäß zu funktionieren. 

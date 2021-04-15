@@ -1,8 +1,8 @@
 ---
-title: Verwalten von Themen im Topic Center in Microsoft Viva Topics
+title: Verwalten von Themen im Themencenter in Microsoft Viva Topics
 description: Verwalten von Themen im Topic Center.
-author: efrene
-ms.author: efrene
+author: chuckedmonson
+ms.author: chucked
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -13,14 +13,14 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 2443319d254130b38bb1047a633c85c160eadd8c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e2cbf62339e2ade240474fed9db86e68dc0b3bb4
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926000"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760122"
 ---
-# <a name="manage-topics-in-the-topic-center"></a>Verwalten von Themen im Themencenter 
+# <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Verwalten von Themen im Themencenter in Microsoft Viva Topics
 
 </br>
 
@@ -37,19 +37,19 @@ Im Themencenter "Viva Topics" kann  ein Wissensmanager die Seite Themen verwalte
 
 Knowledge Manager unterstützen Sie dabei, ermittelte Themen durch den Themenlebenszyklus zu führen, in dem es sich um folgende Themen handelt:
 
-- Vorgeschlagen: Ein Thema wurde von AI identifiziert und verfügt über genügend unterstützende Ressourcen, Verbindungen und Eigenschaften.
-- Bestätigt: Ein Thema, das von AI vorgeschlagen wurde, wird überprüft. Die Überprüfung erfolgt durch Bestätigung durch einen Knowledge Manager. Darüber hinaus kann ein Thema bestätigt werden, wenn mindestens zwei Benutzer über die Feedbackfrage auf der Themenkarte positives Feedback geben.
-- Veröffentlicht: Ein bestätigtes, kuratiertes Thema: Manuelle Bearbeitungen wurden vorgenommen, um die Qualität zu verbessern.
-- Entfernt: Ein Thema wird von einem Wissensmanager abgelehnt und ist für die Betrachter nicht mehr sichtbar. Das Thema kann sich in einem beliebigen Zustand befindet, wenn es entfernt wird (vorgeschlagen, bestätigt oder veröffentlicht). Wenn ein veröffentlichtes Thema entfernt wird, muss die Seite mit den kuratierten Details manuell über die Seitenbibliothek des Themencenters gelöscht werden.
+- **Vorgeschlagen:** Ein Thema wurde von AI identifiziert und verfügt über genügend unterstützende Ressourcen, Verbindungen und Eigenschaften.
+- **Bestätigt**: Ein Thema, das von AI vorgeschlagen wurde, wird überprüft. Die Überprüfung erfolgt durch Bestätigung durch einen Knowledge Manager. Darüber hinaus kann ein Thema bestätigt werden, wenn mindestens zwei Benutzer über die Feedbackfrage auf der Themenkarte positives Feedback geben.
+- **Veröffentlicht**: Ein bestätigtes Thema, das kuratiert wurde: Manuelle Bearbeitungen wurden vorgenommen, um die Qualität zu verbessern.
+- **Entfernt:** Ein Thema wird von einem Wissensmanager abgelehnt und ist für die Betrachter nicht mehr sichtbar. Das Thema kann sich in einem beliebigen Zustand befindet, wenn es entfernt wird (vorgeschlagen, bestätigt oder veröffentlicht). Wenn ein veröffentlichtes Thema entfernt wird, muss die Seite mit den kuratierten Details manuell über die Seitenbibliothek des Themencenters gelöscht werden.
 
    ![Topic-Lifecycle-Diagramm](../media/knowledge-management/topic-lifecycle.png) </br> 
 
 > [!Note] 
-> Auf der Seite Themen verwalten kann jeder Wissensmanager nur Themen anzeigen, in denen er Zugriff auf die Dateien und Seiten des Themas hat. Dies spiegelt sich in den Themen wider, die unter den Registerkarten Vorgeschlagen, Bestätigt, Entfernt und Veröffentlicht aufgeführt sind. Die Anzahl der Themen zeigt jedoch die Gesamtzahlen in der Organisation an.
+> Auf der Seite Themen verwalten kann jeder Wissensmanager nur Themen anzeigen, in denen er Zugriff auf die Dateien und Seiten des Themas hat. Dies spiegelt sich in den Themen wider, die unter den Registerkarten **Vorgeschlagen,** **Bestätigt,** **Entfernt** und **Veröffentlicht** aufgeführt sind. Die Anzahl der Themen zeigt jedoch die Gesamtzahlen in der Organisation an.
 
 ## <a name="requirements"></a>Anforderungen
 
-Zum Verwalten von Themen im Themencenter müssen Sie folgende Themen verwalten:
+Zum Verwalten von Themen im Themencenter müssen Sie:
 - Verfügen Sie über eine Lizenz für "Viva Topics".
 
 - Verfügen Sie über [**die Berechtigung Wer kann Themen**](./topic-experiences-user-permissions.md) verwalten. Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
@@ -61,7 +61,7 @@ Im Themencenter kann ein Knowledge Manager Themen überprüfen, die an den angeg
 
 ## <a name="review-suggested-topics"></a>Überprüfen der vorgeschlagenen Themen
 
-Auf der Seite Themen im Themencenter Verwalten von Themen werden Themen, die in Ihren angegebenen SharePoint-Quellstandorten gefunden wurden, auf der Registerkarte **Vorgeschlagen** aufgeführt. Bei Bedarf kann ein Wissensmanager unbestätigte Themen überprüfen und diese bestätigen oder ablehnen.
+Auf der Seite Themen verwalten des Themencenters werden Themen, die in Den angegebenen SharePoint-Quellstandorten gefunden wurden, auf der Registerkarte **Vorgeschlagen** aufgeführt. Bei Bedarf kann ein Wissensmanager unbestätigte Themen überprüfen und diese bestätigen oder ablehnen.
 
    ![Vorgeschlagene Themen](../media/knowledge-management/quality-score.png) </br> 
 
@@ -85,20 +85,19 @@ So überprüfen Sie ein vorgeschlagenes Thema:
 
 ### <a name="quality-score"></a>Qualitätsergebnis
 
-Jedem Thema, das auf der Seite Vorgeschlagene Themen angezeigt wird, wird eine <b>Qualitätsnote</b> zugewiesen. Die Qualitätsnote spiegelt die Menge der Informationen wider, die der durchschnittliche Benutzer für die Informationen zu dem Thema sehen wird, und dabei berücksichtigen, dass jedem Benutzer aufgrund der Berechtigungen, die er für die Informationen in einem Thema hat, möglicherweise mehr oder weniger Informationen angezeigt werden. 
+Jedem Thema, das auf der Seite Vorgeschlagene Themen angezeigt wird, wird eine Qualitätsnote zugewiesen. Die Qualitätskontrolle spiegelt die Informationsmenge wider, die dem durchschnittlichen Benutzer für die Informationen zu diesem Thema angezeigt wird, und dabei zu berücksichtigen, dass für jeden Benutzer aufgrund der Berechtigungen, die er möglicherweise für die Informationen in einem Thema hat, mehr oder weniger Informationen angezeigt werden. 
 
-Die Qualitätsnote kann ihnen helfen, einen Einblick in die Themen mit den meisten Informationen zu erhalten, und kann hilfreich sein, um Themen zu finden, die möglicherweise manuell bearbeitet werden müssen.  Beispielsweise kann ein Thema mit einer niedrigeren Qualitätsnote das Ergebnis davon sein, dass einige Benutzer nicht über SharePoint-Berechtigungen für relevante Dateien oder Websites verfügen, die AI in das Thema aufgenommen hat. Ein Mitwirkender könnte dann das Thema bearbeiten, um die Informationen (falls angemessen) zu enthalten, die dann für alle Benutzer angezeigt werden können, die das Thema anzeigen können.
+Die Qualitätsnote kann einen Einblick in die Themen mit den meisten Informationen bieten und hilfreich sein, um Themen zu finden, die möglicherweise manuell bearbeitet werden müssen. Beispielsweise kann ein Thema mit einer niedrigeren Qualitätsnote das Ergebnis davon sein, dass einige Benutzer nicht über SharePoint-Berechtigungen für relevante Dateien oder Websites verfügen, die AI in das Thema aufgenommen hat. Ein Mitwirkender könnte dann das Thema bearbeiten, um die Informationen (falls angemessen) zu enthalten, die dann für alle Benutzer angezeigt werden können, die das Thema anzeigen können.
 
-Die Qualität kann zwischen 1 und 100 liegen. Ein neu gefundenes Thema hat eine Qualitätsnote von 0, bis es von zwei oder mehr Benutzern angezeigt wurde. Die Qualität der einzelnen Benutzer wird durch eine Reihe von Faktoren bestimmt, z. B. durch die Menge an Inhalten, die für den jeweiligen Benutzer angezeigt werden. Dabei werden die Berechtigungen des Benutzers gesteuert, da auf jeder Themenseite die Sicherheitsbeschneidung für VON AI generierte Inhalte festgelegt ist. Die Auf der Registerkarte Vorgeschlagene Themen angezeigte Qualitätsnote ist ein Durchschnittswert der einzelnen Benutzer.
+Die Qualität kann zwischen 1 und 100 liegen. Ein neu gefundenes Thema hat eine Qualitätsnote von 0, bis es von zwei oder mehr Benutzern angezeigt wurde. Die Qualität der einzelnen Benutzer wird durch eine Reihe von Faktoren bestimmt, z. B. durch die Menge an Inhalten, die für den jeweiligen Benutzer angezeigt werden. Dabei werden die Berechtigungen des Benutzers gesteuert, da auf jeder Themenseite die Sicherheitsbeschneidung für VON AI generierte Inhalte erfolgt. Die auf der  Registerkarte Vorgeschlagene Themen angezeigte Qualitätsnote ist ein Durchschnittswert der einzelnen Benutzer.
 
 ### <a name="impressions"></a>Impressionen
 
-In <b>der Spalte</b> Impressionen wird angezeigt, wie oft ein Thema endbenutzern angezeigt wurde. Dies umfasst Ansichten über Themenkarten in der Suche, über Themenhighlights und über Themencenteransichten. Es spiegelt nicht das Klicken auf diese Themen wider, sondern das Thema wurde angezeigt. Die Spalte Impressionen wird für Themen auf den Registerkarten Vorgeschlagen, Bestätigt, Veröffentlicht und Entfernt auf der Seite Themen verwalten angezeigt.
-
+In **der Spalte** Impressionen wird angezeigt, wie oft ein Thema endbenutzern angezeigt wurde. Dies umfasst Ansichten über Themenkarten in der Suche, über Themenhighlights und über Themencenteransichten. Es spiegelt nicht das Klicken auf diese Themen wider, sondern das Thema wurde angezeigt. Die **Spalte Impressionen** wird für Themen auf den  Registerkarten **Vorgeschlagen,** **Bestätigt,** Veröffentlicht und Entfernt auf der Seite Themen verwalten angezeigt.
 
 ## <a name="confirmed-topics"></a>Bestätigte Themen
 
-Auf der Seite Themen verwalten werden Themen, die in Ihren angegebenen SharePoint-Quellstandorten entdeckt wurden und von einem Wissensmanager oder "crowd-sourced" bestätigt wurden, die von zwei oder mehr Personen über den Kartenfeedbackmechanismus bestätigt wurden, auf der Registerkarte **Bestätigt** aufgeführt. Bei Bedarf kann ein Benutzer mit berechtigungen zum Verwalten von Themen bestätigte Themen überprüfen und ablehnen.
+Auf der Seite Themen verwalten werden Themen, die in Ihren angegebenen SharePoint-Quellstandorten entdeckt wurden und von einem Knowledge Manager oder "crowdsourced" bestätigt wurden, die von zwei oder mehr Personen über den Kartenfeedbackmechanismus bestätigt wurden, auf der Registerkarte **Bestätigt** aufgeführt. Bei Bedarf kann ein Benutzer mit berechtigungen zum Verwalten von Themen bestätigte Themen überprüfen und ablehnen.
 
 So überprüfen Sie ein bestätigtes Thema:
 
@@ -106,7 +105,7 @@ So überprüfen Sie ein bestätigtes Thema:
 
 2. Überprüfen Sie auf der Themenseite die Themenseite, und wählen Sie **Bearbeiten** aus, wenn Sie Änderungen an der Seite vornehmen müssen.
 
-Beachten Sie, dass Sie ein bestätigtes Thema weiterhin ablehnen können.  Wechseln Sie dazu in der Liste Bestätigt zum ausgewählten Thema, und wählen Sie **das x** aus, wenn Sie das Thema ablehnen möchten.
+Beachten Sie, dass Sie ein bestätigtes Thema weiterhin ablehnen können. Wechseln Sie dazu auf der Registerkarte  Bestätigt zum ausgewählten Thema, und wählen Sie **das x** aus, wenn Sie das Thema ablehnen möchten.
 
 ## <a name="published-topics"></a>Veröffentlichte Themen
 Veröffentlichte Themen wurden bearbeitet, sodass immer bestimmte Informationen angezeigt werden, die auf die Seite stoßen. Hier werden auch manuell erstellte Themen aufgelistet.

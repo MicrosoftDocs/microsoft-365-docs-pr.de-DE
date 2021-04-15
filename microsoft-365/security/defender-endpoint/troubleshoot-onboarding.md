@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 4599741f501e9b55bc73e0eb8def9208bc988957
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 193e7e634ecf8407816db10c820edcd241b94b12
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689665"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755798"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Behandeln von Problemen beim Onboarding von Microsoft Defender for Endpoint
 
@@ -292,8 +292,9 @@ Wenn die Überprüfung fehlschlägt und Ihre Umgebung einen Proxy verwendet, um 
     ![Abbildung des Registrierungsschlüssels für Microsoft Defender Antivirus](images/atp-disableantispyware-regkey.png)
 
    > [!NOTE]
-   > Darüber hinaus müssen Sie sicherstellen, dass wdfilter.sys und wdboot.sys auf die Standardwerte "0" festgelegt sind.
+   > Alle Windows Defender (wdboot, wdfilter, wdnisdrv, wdnissvc und windefend) sollten den Standardstatus haben. Das Ändern des Startvorgangs dieser Dienste wird nicht unterstützt und kann dazu zwingen, Ihr System neu zu abbilden.
    >
+   > Beispiel für Standardkonfigurationen für WdBoot und WdFilter:
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
 
@@ -306,7 +307,7 @@ Wenn beim Onboarding eines Servers Probleme auftreten, führen Sie die folgenden
 
 Möglicherweise müssen Sie auch Folgendes überprüfen:
 
-- Überprüfen Sie, ob auf der Registerkarte  Prozesse im Task Manager ein Microsoft Defender for Endpoint Service **ausgeführt wird.** Zum Beispiel:
+- Überprüfen Sie, ob auf der Registerkarte  Prozesse im Task Manager ein Microsoft Defender for Endpoint Service **ausgeführt wird.** Beispiel:
 
     ![Abbildung der Prozessansicht mit ausgeführter Microsoft Defender for Endpoint Service](images/atp-task-manager.png)
 

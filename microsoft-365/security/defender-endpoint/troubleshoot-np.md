@@ -11,26 +11,26 @@ localization_priority: Normal
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.date: 01/26/2021
-ms.reviewer: ''
+ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 34bebddcf052a643529f1d2b8a8a869a0ffe4a91
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.topic: how-to
+ms.openlocfilehash: 9efc42441c2cb30f35abf658071088f7f7bbaf00
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183819"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760098"
 ---
 # <a name="troubleshoot-network-protection"></a>Problembehandlung beim Netzwerkschutz
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Gilt für:**
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> [!TIP]
 > Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
@@ -103,11 +103,31 @@ Wenn Sie ein Problem mit dem Netzwerkschutz melden, werden Sie aufgefordert, Dia
    mpcmdrun -getfiles
    ```
 
-3. Standardmäßig werden sie in C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab. Fügen Sie die Datei an das Übermittlungsformular an.
+3. Fügen Sie die Datei an das Übermittlungsformular an. Diagnoseprotokolle werden standardmäßig unter `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` gespeichert. 
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="resolve-connectivity-issues-with-network-protection-for-e5-customers"></a>Beheben von Konnektivitätsproblemen beim Netzwerkschutz (für E5-Kunden)
+
+Aufgrund der Umgebung, in der der Netzwerkschutz ausgeführt wird, kann Microsoft die Proxyeinstellungen des Betriebssystems nicht sehen. In einigen Fällen können Netzwerkschutzclients den Clouddienst nicht erreichen. Um Konnektivitätsprobleme mit dem Netzwerkschutz zu beheben, konfigurieren Sie einen der folgenden Registrierungsschlüssel, damit der Netzwerkschutz die Proxykonfiguration kennt:
+
+```powershell
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+```
+
+---OR---
+
+
+```powershell
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+```
+
+Sie können den Registrierungsschlüssel mithilfe von PowerShell, Microsoft Endpoint Manager oder Gruppenrichtlinien konfigurieren. Hier sind einige Ressourcen, die Ihnen helfen:
+- [Arbeiten mit Registrierungsschlüsseln](/powershell/scripting/samples/working-with-registry-keys)
+- [Konfigurieren von benutzerdefinierten Clienteinstellungen für Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
+- [Verwenden von Gruppenrichtlinieneinstellungen zum Verwalten von Endpunktschutz](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
+
+## <a name="see-also"></a>Siehe auch
 
 - [Netzwerkschutz](network-protection.md)
-- [Bewerten des Netzwerkschutzes](evaluate-network-protection.md)
+- [Auswerten des Netzwerkschutzes](evaluate-network-protection.md)
 - [Aktivieren des Netzwerkschutzes](enable-network-protection.md)
 - [Adress false positives/negatives in Defender for Endpoint](defender-endpoint-false-positives-negatives.md)

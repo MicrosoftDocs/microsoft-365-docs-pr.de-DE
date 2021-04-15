@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Erfahren Sie, wie Sie die Dateien und E-Mails eines Mitarbeiters beibehalten, wenn die Person Ihre Organisation verlässt.
-ms.openlocfilehash: 38cc44bbe602f3c8c38ca54391d0967fbafbfcf7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 17911e4a4551bba07d2c2ad034941bba737dcc1d
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906312"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755606"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Zugreifen auf die und Sichern der Daten eines ehemaligen Benutzers
 
@@ -44,8 +44,22 @@ Um die #A0 eines ehemaligen Benutzers zu erhalten, geben Sie sich zunächst Zugr
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.  
-    
+1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
+
+::: moniker-end
+
 2. Wählen Sie einen Benutzer aus.
 
 3. Wählen Sie im rechten Bereich **OneDrive aus.** Wählen **Sie unter Zugriff auf Dateien erhalten** die Option Link zu Dateien erstellen **aus.**
@@ -56,69 +70,27 @@ Um die #A0 eines ehemaligen Benutzers zu erhalten, geben Sie sich zunächst Zugr
 > Sie können bis zu 500 MB an Dateien und Ordnern gleichzeitig verschieben oder kopieren.<br/>
 > Wenn Sie Dokumente mit Versionsverlauf verschieben oder kopieren, wird nur die neueste Version verschoben.  
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.  
-
-2. Wählen Sie einen Benutzer aus.
-
-3. Erweitern Sie im rechten Bereich **die Option OneDrive-Einstellungen,** und wählen Sie dann neben **Access** die Option **Access-Dateien aus.**
-
-4. Wählen Sie den Link aus, um den Dateispeicherort zu öffnen. Laden Sie die Dateien auf Ihren  Computer herunter, oder wählen Sie **Verschieben oder** Kopieren aus, um sie auf Ihr eigenes OneDrive oder in eine freigegebene Bibliothek zu verschieben oder zu kopieren. 
-
-> [!NOTE]
-> Sie können bis zu 500 MB an Dateien und Ordnern gleichzeitig verschieben oder kopieren.<br/>
-> Wenn Sie Dokumente mit Versionsverlauf verschieben oder kopieren, wird nur die neueste Version verschoben.  
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>. 
-
-2. Wählen Sie einen Benutzer aus.
-
-3. Erweitern Sie im rechten Bereich **die Option OneDrive-Einstellungen,** und wählen Sie dann neben **Access** die Option **Access-Dateien aus.**
-
-4. Wählen Sie den Link aus, um den Dateispeicherort zu öffnen. Laden Sie die Dateien auf Ihren  Computer herunter, oder wählen Sie **Verschieben oder** Kopieren aus, um sie auf Ihr eigenes OneDrive oder in eine freigegebene Bibliothek zu verschieben oder zu kopieren.  
-
-> [!NOTE]
-> Sie können bis zu 500 MB an Dateien und Ordnern gleichzeitig verschieben oder kopieren.<br/>
-> Wenn Sie Dokumente mit Versionsverlauf verschieben oder kopieren, wird nur die neueste Version verschoben.  
-
-::: moniker-end
-    
-
-
 ## <a name="revoke-admin-access-to-a-users-onedrive"></a>Widerrufen des Administratorzugriffs auf oneDrive eines Benutzers
 
 Als globaler Administrator können Sie sich selbst Zugriff auf die Inhalte im OneDrive eines Benutzers geben, aber Sie können Ihren Zugriff entfernen, wenn Sie ihn nicht mehr benötigen. 
 
-::: moniker range="o365-worldwide"
+ ::: moniker range="o365-worldwide"
 
-1. Melden Sie sich beim <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin Center</a> als globaler Administrator oder Als SharePoint-Administrator an. 
-
-    Wenn Sie eine Meldung erhalten, dass Sie nicht über die Berechtigung zum Zugriff auf das Admin Center verfügen, verfügen Sie nicht über Administratorberechtigungen in Ihrer Organisation.
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Melden Sie sich beim <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> als globaler Administrator oder Als SharePoint-Administrator an.
-
-    Wenn Sie eine Meldung erhalten, dass Sie nicht über die Berechtigung zum Zugriff auf das Admin Center verfügen, verfügen Sie nicht über Administratorberechtigungen in Ihrer Organisation.
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Melden Sie sich beim <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> als globaler Administrator oder Als SharePoint-Administrator an.
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
-    Wenn Sie eine Meldung erhalten, dass Sie nicht über die Berechtigung zum Zugriff auf das Admin Center verfügen, verfügen Sie nicht über Administratorberechtigungen in Ihrer Organisation.
-
-::: moniker-end
+::: moniker-end 
 
 2. Wählen Sie im linken Bereich **Admin Center** \> **SharePoint aus.** (Möglicherweise müssen Sie **Alle anzeigen** auswählen, um die Liste der Admin Center anzuzeigen.)
 
@@ -126,7 +98,7 @@ Als globaler Administrator können Sie sich selbst Zugriff auf die Inhalte im On
 
 4. Wählen Sie im linken Bereich Weitere **Features aus.**
 
-5. Wählen **Sie unter Benutzerprofile** die Option **Öffnen aus.**
+5. Wählen Sie unter **Benutzerprofile** **Öffnen** aus.
 
 6. Wählen **Sie unter Personen** die Option **Benutzerprofile verwalten aus.**
 
@@ -164,7 +136,7 @@ Zum Speichern der E-Mail-Nachrichten, Kalender, Aufgaben und Kontakte des ehemal
   
     ![Dialogfeld 'Outlook-Datendatei exportieren' mit ausgewähltem Ordner der obersten Ebene und aktiviertem 'Unterordner einbeziehen'](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
-7. Wählen Sie **Weiter** aus.
+7. Klicken Sie auf **Weiter**.
     
 8. Wählen **Sie Durchsuchen** aus, um auszuwählen, wo die Outlook-Datendatei (PST) gespeichert werden soll. Geben Sie  *einen Dateinamen ein,* und wählen Sie **dann OK aus, um** fortzufahren. 
     
@@ -209,7 +181,7 @@ Um einem anderen Mitarbeiter Zugriff auf E-Mail-Nachrichten, Kalender, Aufgaben 
     
 5. Wählen Sie unter **Optionen** aus, wie Duplikate behandelt werden sollen.
     
-6. Wählen Sie **Weiter** aus.
+6. Klicken Sie auf **Weiter**.
     
 7. Wenn der Outlook-Datendatei (PST) ein Kennwort zugewiesen wurde, geben Sie das Kennwort ein, und wählen Sie dann **OK aus.**
     

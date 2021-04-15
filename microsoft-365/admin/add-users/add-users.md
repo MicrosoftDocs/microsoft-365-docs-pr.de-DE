@@ -21,21 +21,14 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie gleichzeitig mehrere Benutzer hinzufügen und Lizenzen für Microsoft 365 zuweisen können.
 ms.date: 07/01/2020
-ms.openlocfilehash: 3c752bd12c0aeb3806ad7d5d90373aad13730944
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a7c5fcf1a129a1d434b6e641688ce4c5d234817d
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906300"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760002"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Gleichzeitiges Hinzufügen von Benutzern und Zuweisen von Lizenzen
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Jede Person in Ihrem Team benötigt ein Benutzerkonto, um sich bei [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business) anmelden und darauf zugreifen zu können. Die einfachste Methode zum Hinzufügen von Benutzerkonten besteht darin, sie im Microsoft 365 Admin Center nacheinander hinzuzufügen. Nachdem Sie diesen Schritt durchgeführt haben, verfügen die Benutzer über Microsoft 365-Lizenzen, Anmeldeinformationen und Microsoft 365-Postfächer.
 
@@ -52,9 +45,24 @@ Sie müssen ein globaler, Lizenz- oder Benutzeradministrator sein, um Benutzer h
 
 ## <a name="add-users-one-at-a-time"></a>Hinzufügen von jeweils einem Benutzer
 
-::: moniker range="o365-worldwide"
+ ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie zum Admin Center unter <https://admin.microsoft.com>.
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
+
+::: moniker-end 
+
 2. Wählen Sie **Benutzer** > **Aktive Benutzer** und **Benutzer hinzufügen** aus.
 3. Geben Sie im Bereich **Grundlagen einrichten** die grundlegenden Benutzerinformationen ein, und wählen Sie dann **Weiter** aus.
     - **Name** Geben Sie den Vor- und Nachnamen, den Anzeigenamen und den Benutzernamen ein.
@@ -65,36 +73,6 @@ Sie müssen ein globaler, Lizenz- oder Benutzeradministrator sein, um Benutzer h
 4. Wählen Sie im Bereich **Produktlizenzen zuweisen** den Speicherort und die entsprechende Lizenz für den Benutzer aus. Wenn Sie keine Lizenzen zur Verfügung haben, können Sie trotzdem einen Benutzer hinzufügen und zusätzliche Lizenzen kaufen. Erweitern Sie **Apps**, und aktivieren oder deaktivieren Sie Apps, um die Apps einzuschränken, für die der Benutzer eine Lizenz hat. Wählen Sie **Weiter** aus.
 5. Erweitern Sie auf der Seite **Optionale Einstellungen** die Option **Rollen**, um diesen Benutzer als Administrator festzulegen. Erweitern Sie **Profilinformationen**, um weitere Informationen zum Benutzer hinzuzufügen.
 6. Wählen Sie **Weiter** aus, überprüfen Sie die Einstellungen des neuen Benutzers, nehmen Sie eventuell Änderungen vor, und wählen Sie dann **Hinzufügen fertig stellen** > **Schließen** aus.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wechseln Sie zum Admin Center unter <https://portal.office.de/adminportal>.
-2. Wählen Sie **Benutzer** > **Aktive Benutzer** und **Benutzer hinzufügen** aus.
-3. Geben Sie im Bereich **Neuer Benutzer** die nachstehenden Informationen ein. Wenn Sie fertig sind, wählen Sie **Hinzufügen** aus.
-    - **Name** Geben Sie den Vornamen, Nachnamen, Anzeigenamen und Benutzernamen ein. 
-    - **Domäne** Wenn beispielsweise der Benutzername des Benutzers „Jan“ ist und die Domäne „contoso.com“ heißt, meldet er sich durch Eingabe von „jan@contoso.com“ an.
-    - **Kontaktinformationen** Erweitern Sie diesen Abschnitt, um eine Mobiltelefonnummer, Anschrift usw. einzugeben. 
-    - **Kennwort** Verwenden Sie das automatisch generierte Kennwort, oder erweitern Sie den Abschnitt, um ein sicheres Kennwort für den Benutzer festzulegen.  Benutzer müssen ihr Kennwort nach 90 Tagen ändern. Sie können aber auch die folgende Option auswählen: **Der Benutzer muss sein Kennwort bei der ersten Anmeldung ändern**.
-    - **Rollen** Erweitern Sie diesen Abschnitt, wenn der betreffende Benutzer ein Administrator werden soll. 
-    - **Produktlizenzen** Erweitern Sie diesen Abschnitt, und wählen Sie die entsprechende Lizenz aus.  Wenn Sie keine Lizenzen zur Verfügung haben, können Sie trotzdem einen Benutzer hinzufügen und zusätzliche Lizenzen kaufen.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie zum Admin Center unter <https://portal.partner.microsoftonline.cn>.
-2. Wählen Sie **Benutzer** > **Aktive Benutzer** und **Benutzer hinzufügen** aus.
-3. Geben Sie im Bereich **Neuer Benutzer** die nachstehenden Informationen ein. Wenn Sie fertig sind, wählen Sie **Hinzufügen** aus.
-    - **Name** Geben Sie den Vornamen, Nachnamen, Anzeigenamen und Benutzernamen ein. 
-    - **Domäne** Wenn beispielsweise der Benutzername des Benutzers „Jan“ ist und die Domäne „contoso.com“ heißt, meldet er sich durch Eingabe von „jan@contoso.com“ an.
-    - **Kontaktinformationen** Erweitern Sie diesen Abschnitt, um eine Mobiltelefonnummer, Anschrift usw. einzugeben. 
-    - **Kennwort** Verwenden Sie das automatisch generierte Kennwort, oder erweitern Sie den Abschnitt, um ein sicheres Kennwort für den Benutzer festzulegen.  Benutzer müssen ihr Kennwort nach 90 Tagen ändern. Sie können aber auch die folgende Option auswählen: **Der Benutzer muss sein Kennwort bei der ersten Anmeldung ändern**.
-    - **Rollen** Erweitern Sie diesen Abschnitt, wenn der betreffende Benutzer ein Administrator werden soll. 
-    - **Produktlizenzen** Erweitern Sie diesen Abschnitt, und wählen Sie die entsprechende Lizenz aus.  Wenn Sie keine Lizenzen zur Verfügung haben, können Sie trotzdem einen Benutzer hinzufügen und zusätzliche Lizenzen kaufen.
-
-::: moniker-end
 
 ## <a name="add-multiple-users-at-the-same-time"></a>Gleichzeitiges Hinzufügen von mehreren Benutzern
 

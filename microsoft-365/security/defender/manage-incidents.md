@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72d368cd92739e191dcb292000b8429a472aa981
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 2d2bf18c6cacb377e710f34b74ec8f83bb77d3b1
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498447"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760064"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Verwalten von Vorfällen in Microsoft 365 Defender
 
@@ -37,49 +37,63 @@ ms.locfileid: "51498447"
 **Gilt für:**
 - Microsoft 365 Defender
 
+Die Vorfallverwaltung ist von entscheidender Bedeutung, um sicherzustellen, dass Bedrohungen eindämmt und behoben werden.
 
+Sie verwalten Vorfälle aus Vorfällen **& Warnungen > Vorfällen** beim Schnellstart des Microsoft 365 Security Centers ([security.microsoft.com](https://security.microsoft.com)). Im Folgenden sehen Sie ein Beispiel.
 
-Das Verwalten von Vorfällen ist entscheidend, um sicherzustellen, dass Bedrohungen eingedämmt und bearbeitet werden. In Microsoft 365 Defender haben Sie Zugriff auf die Verwaltung von Vorfällen auf Geräten, Benutzern und Postfächern. 
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Beispiel für die Warteschlange für Vorfälle":::
 
+Hier sind die Möglichkeiten, wie Sie Ihre Vorfälle verwalten können:
 
-Sie können Vorfälle verwalten, indem Sie einen Vorfall aus der Warteschlange **Vorfälle** auswählen. 
+- Ändern des Vorfallnamens
+- Fügen Sie Vorfalltags hinzu.
+- Zuweisen des Vorfalls zu einem Benutzerkonto
+- Auflösen 
+- Festlegen der Klassifizierung und Bestimmung
+- Fügen Sie Kommentare hinzu.
 
-Sie können den Namen eines Vorfalls bearbeiten, ihn auflösen, seine Klassifizierung und Bestimmung festlegen. Sie können den Vorfall auch sich selbst zuweisen, Ereigniskategorien und Kommentare hinzufügen.
+Sie können Vorfälle im Bereich Vorfall verwalten **für** einen Vorfall verwalten. Im Folgenden sehen Sie ein Beispiel.
 
-In Fällen, in denen Sie bei der Untersuchung bestimmte Alerts von einem Vorfall auf einen anderen verschieben möchten, können Sie dies auch über die Registerkarte "Alerts" tun und so einen größeren oder kleineren Vorfall erstellen, der alle relevanten Alerts enthält.
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Beispiel für den Bereich &quot;Vorfall verwalten&quot; eines Vorfalls":::
 
-## <a name="edit-incident-name"></a>Name des Vorfalls bearbeiten
-Vorfällen wird automatisch ein Name basierend auf Warnungsattributen zugewiesen, z. B. der Anzahl betroffener Endpunkte, betroffener Benutzer, Erkennungsquellen oder Kategorien. Auf diese Weise können Sie den Umfang des Vorfalls schnell verstehen.
+Sie können diesen Bereich über **den** Link Vorfall verwalten auf der folgenden Seite anzeigen:
 
-Beispiel: *Mehrstufiger Vorfall auf mehreren Endpunkten, die von mehreren Quellen gemeldet wurden.*
+- Eigenschaftenbereich eines Vorfalls in der Vorfallwarteschlange.
+- **Zusammenfassungsseite** eines Vorfalls.
 
-Sie können den Namen des Vorfalls ändern, damit er besser mit Ihrer bevorzugten Benennungskonvention übereinstimmt.
+In Fällen, in denen Sie während der Untersuchung Warnungen von einem Vorfall zu einem anderen verschieben möchten, können Sie dies auch auf der Registerkarte Warnungen tun, wodurch ein größerer oder kleinerer Vorfall mit allen relevanten Warnungen erstellt wird. 
+
+## <a name="edit-the-incident-name"></a>Bearbeiten des Vorfallnamens
+
+Vorfällen wird automatisch ein Name basierend auf Warnungsattributen zugewiesen, z. B. der Anzahl betroffener Endpunkte, betroffener Benutzer, Erkennungsquellen oder Kategorien. Auf diese Weise können Sie den Umfang des Vorfalls schnell verstehen. Beispiel: *Mehrstufiger Vorfall auf mehreren Endpunkten, die von mehreren Quellen gemeldet wurden.*
+
+Sie können den Vorfallnamen im Feld **Vorfallname** im Bereich Vorfall **verwalten** bearbeiten.
 
 > [!NOTE]
 > Vorfälle, die vor dem Rollout der funktion für die automatische Benennung von Vorfällen vorhanden waren, behalten ihren Namen.
 
+## <a name="add-incident-tags"></a>Hinzufügen von Ereigniskategorien
 
+Sie können einem Vorfall benutzerdefinierte Tags hinzufügen, um beispielsweise eine Gruppe von Vorfällen mit einem gemeinsamen Merkmal zu kennzeichnen. Sie können die Vorfallwarteschlange später nach allen Vorfällen filtern, die ein bestimmtes Tag enthalten.
+
+Wenn Sie mit der Eingabe beginnen, haben Sie die Möglichkeit, aus einer Liste ausgewählter Tags auszuwählen.
 
 ## <a name="assign-incidents"></a>Zuweisen von Vorfällen
-Falls ein Vorfall noch nicht zugewiesen wurde, können Sie **Mir zuweisen** auswählen, um sich den Vorfall selbst zuzuweisen. Dies setzt voraus, dass nicht nur der Vorfall, sondern auch alle ihm zugeordneten Alerts in Ihrem Besitz sind.
 
-## <a name="set-status-and-classification"></a>Festlegen des Status und der Klassifizierung
-### <a name="incident-status"></a>Status des Vorfalls
-Sie können Ereignisse kategorisieren (z.B. als **aktive** oder **aufgelöste**), indem Sie deren Status ändern, während ihre Untersuchung voranschreitet. Auf diese Weise können Sie organisieren und verwalten, wie Ihr Team auf Vorfälle reagiert.
+Wenn ein Vorfall noch nicht zugewiesen wurde, können Sie **Zuweisen zu** auswählen und das Benutzerkonto angeben. Dadurch wird der Besitz des Vorfalls und aller damit verbundenen Warnungen zugewiesen.
 
-So kann Ihr SOC-Analyst beispielsweise die dringlichen **aktiven** Vorfälle für den Tag überprüfen und sich entscheiden, sie sich selbst zur Untersuchung zuzuweisen.
+## <a name="resolve-incident"></a>Beheben eines Vorfalls
 
-Alternativ kann Ihr SOC-Analyst den Vorfall als **aufgelöst** einstufen, wenn der Vorfall behoben wurde. Wenn Sie einen Vorfall auflösen, werden automatisch alle Alerts geschlossen, die Teil des Vorfalls sind und bis dahin noch offen sind. 
+Wenn der Vorfall behoben wurde, wählen Sie **Vorfall** beheben aus, um den Umschalter nach rechts zu verschieben. Beachten Sie, dass beim Auflösen eines Vorfalls auch alle verknüpften und aktiven Warnungen im Zusammenhang mit dem Vorfall behoben werden.
 
-### <a name="classification-and-determination"></a>Klassifizierung und Ermittlung
-Sie können festlegen, dass keine Klassifizierung festgelegt wird, oder Sie können angeben, ob ein Vorfall wahr oder falsch ist. Auf diese Weise kann das Team Muster erkennen und von ihnen lernen. 
+Ein nicht aufgelöster Vorfall wird als **Aktiv angezeigt.**
+
+## <a name="set-the-classification-and-determination"></a>Festlegen der Klassifizierung und Ermittlung
+
+Die Vorfallklassifizierung ist, ob es sich um eine echte warnung oder eine falsche Warnung handelt, die Sie im Feld **Klassifizierung konfigurieren.** 
+
+Wenn es sich um eine echte Warnung handeln sollte, sollten Sie auch angeben, um welche Art von Bedrohung es sich bei dem Feld **Bestimmung handeln** sollte. Das Angeben des Bedrohungstyps hilft Ihrem Sicherheitsteam, Bedrohungsmuster zu erkennen und zu handeln, um Ihre Organisation vor ihnen zu schützen. 
 
 ## <a name="add-comments"></a>Kommentare hinzufügen
-Sie können Kommentare hinzufügen und Historien-Ereignisse zu einem Vorfall anzeigen, um die vorherigen vorgenommenen Änderungen anzuzeigen.
 
-Immer wenn eine Änderung an einem Alert vorgenommen oder ein Kommentar zu einem Alert hinterlassen wird, wird dies im Abschnitt Kommentare und Verlauf aufgezeichnet.
-
-Hinzugefügte Kommentare werden sofort in diesem Bereich angezeigt.
-
-## <a name="add-incident-tags"></a>Hinzufügen von Ereigniskategorien
-Sie können einem Vorfall benutzerdefinierte Tags hinzufügen, um beispielsweise eine Gruppe von Vorfällen mit einem gemeinsamen Merkmal zu kennzeichnen. Sie können die Liste der Vorfälle später nach allen Einträgen filtern, die eine bestimmte Kategorie enthalten.
+Sie können einem Vorfall mit dem Feld Kommentar mehrere **Kommentare** hinzufügen. Jeder Kommentar wird den historischen Ereignissen des Vorfalls hinzugefügt. Sie können die Kommentare und den Verlauf eines Vorfalls über den Link **Kommentare und** Verlauf auf der **Seite Zusammenfassung** anzeigen.

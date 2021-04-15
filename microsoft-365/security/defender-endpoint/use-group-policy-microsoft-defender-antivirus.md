@@ -10,16 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/31/2021
+ms.date: 04/13/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6c411507b834bd7f09f4688bda11e3ece9f6d7c8
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: b8122807b8e26a848781f9f66f8e13032345f3fd
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690625"
+ms.locfileid: "51749914"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Konfigurieren und Verwalten von Microsoft Defender Antivirus mithilfe von Gruppenrichtlinieneinstellungen
 
@@ -87,9 +89,9 @@ In der folgenden Tabelle in diesem Thema sind die gruppenrichtlinieneinstellunge
 | Korrektur | Angeben der Uhrzeit für die Ausführung einer geplanten vollständigen Überprüfung zum Abschließen der Korrektur | [Konfigurieren geplanter Microsoft Defender Antivirus-Scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Berichterstellung | Deaktivieren erweiterter Benachrichtigungen | [Konfigurieren der Benachrichtigungen, die auf Endpunkten angezeigt werden](configure-notifications-microsoft-defender-antivirus.md)
 | Root | Deaktivieren von Microsoft Defender Antivirus | Nicht verwendet (Diese Einstellung  muss auf Nicht konfiguriert sein, um sicherzustellen, dass installierte Antiviren-Apps von Drittanbietern ordnungsgemäß funktionieren)
-| Root | Definieren von Adressen zum Umgehen des Proxyservers | Nicht mehr relevant |
-| Root | Definieren der proxy autoconfig (.pac) für die Verbindung mit dem Netzwerk | Nicht mehr relevant |
-| Root | Definieren des Proxyservers für die Verbindung mit dem Netzwerk | Nicht mehr relevant |
+| Root | Definieren von Adressen zum Umgehen des Proxyservers | Nicht verwendet |
+| Root | Definieren der proxy autoconfig (.pac) für die Verbindung mit dem Netzwerk | Nicht verwendet |
+| Root | Definieren des Proxyservers für die Verbindung mit dem Netzwerk | Nicht verwendet |
 | Root | Konfigurieren des Zusammenführungsverhaltens lokaler Administratoren für Listen | [Verhindern oder Zulassen, dass Benutzer Richtlinieneinstellungen lokal ändern](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Root | Starten des Antischalwarediensts mit normaler Priorität zulassen | [Konfigurieren der Korrektur für Microsoft Defender Antivirus-Scans](configure-remediation-microsoft-defender-antivirus.md) |
 | Root | Zulassen, dass der Antischalwaredienst immer ausgeführt wird | [Konfigurieren der Korrektur für Microsoft Defender Antivirus-Scans](configure-remediation-microsoft-defender-antivirus.md) |

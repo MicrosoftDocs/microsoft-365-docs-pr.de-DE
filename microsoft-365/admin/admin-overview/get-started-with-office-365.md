@@ -23,23 +23,16 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: Erfahren Sie, wie Sie Microsoft 365 auf Ihrem Computer, Smartphone und Tablet einrichten und verwenden.
-ms.openlocfilehash: 74821886832e699a90d9a54a9b8c7ce9a8cfab75
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0bc2478375cdec231a00bade933680cb69578126
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222027"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755642"
 ---
 # <a name="get-started"></a>Erste Schritte
 
 Ihre Organisation hat kürzlich Microsoft 365 erhalten, und jetzt müssen Sie es verwenden, damit Sie mit dem Lesen von E-Mails, der Freigabe von Dokumenten und mehr beginnen können. Erfahren Sie, wie Sie Microsoft 365 auf Ihrem Computer, Smartphone und Tablet einrichten und verwenden.
-  
-::: moniker range="o365-worldwide"
-
-****
-
-
-::: moniker-end
 
 ## <a name="training-resources-for-your-users"></a>Schulungsressourcen für Ihre Benutzer
 
