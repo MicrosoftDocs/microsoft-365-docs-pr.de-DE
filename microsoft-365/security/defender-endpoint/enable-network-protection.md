@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a513013c4b5f41cf95b876648882cb56ba818b32
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 5c7a2d943ec1813623065e70330b914a3911d1eb
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570996"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768998"
 ---
 # <a name="turn-on-network-protection"></a>Netzwerkschutz aktivieren
 
@@ -28,20 +28,24 @@ ms.locfileid: "51570996"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> [!TIP]
+> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [Der Netzwerkschutz](network-protection.md) verhindert, dass Mitarbeiter eine Anwendung verwenden, um auf gefährliche Domänen zu zugreifen, die Phishingbetrüger, Exploits und andere schädliche Inhalte im Internet hosten können. Sie können [den Netzwerkschutz](evaluate-network-protection.md) in einer Testumgebung überwachen, um zu sehen, welche Apps blockiert werden, bevor Sie ihn aktivieren.
 
-[Weitere Informationen zu Konfigurationsoptionen für die Netzwerkfilterung](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
+[Weitere Informationen zu Konfigurationsoptionen für die Netzwerkfilterung](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
 ## <a name="check-if-network-protection-is-enabled"></a>Überprüfen, ob der Netzwerkschutz aktiviert ist
 
 Überprüfen Sie mithilfe des Registrierungs-Editors, ob der Netzwerkschutz auf einem lokalen Gerät aktiviert wurde.
 
 1. Wählen Sie die **Schaltfläche Start** in der Aufgabenleiste aus, und geben Sie **regedit ein,** um den Registrierungs-Editor zu öffnen.
-1. Wählen **HKEY_LOCAL_MACHINE** im Seitenmenü aus
-1. Navigieren Sie durch die geschachtelten Menüs zu  >  **SOFTWARERichtlinien**  >  **Microsoft**  >  **Windows Defender**  >  **Windows Defender Exploit Guard** Network  >  **Protection**
-1. Wählen **Sie EnableNetworkProtection** aus, um den aktuellen Status des Netzwerkschutzes auf dem Gerät zu sehen.
+
+2. Wählen **HKEY_LOCAL_MACHINE** im Seitenmenü aus
+
+3. Navigieren Sie durch die geschachtelten Menüs zu  >  **SOFTWARERichtlinien**  >  **Microsoft**  >  **Windows Defender**  >  **Windows Defender Exploit Guard** Network  >  **Protection**
+
+4. Wählen **Sie EnableNetworkProtection** aus, um den aktuellen Status des Netzwerkschutzes auf dem Gerät zu sehen.
 
     * 0 oder **Aus**
     * 1 oder **Ein**
@@ -83,9 +87,9 @@ Verwenden Sie [den ./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection]
 
 1. Melden Sie sich beim Microsoft Endpoint Manager Admin Center an (https://endpoint.microsoft.com)
 
-2. Erstellen oder Bearbeiten eines [Konfigurationsprofils für den Endpunktschutz](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-configure)
+2. Erstellen oder Bearbeiten eines [Konfigurationsprofils für den Endpunktschutz](/mem/intune/protect/endpoint-protection-configure)
 
-3. Wechseln Sie im Profilfluss unter "Konfigurationseinstellungen" zu **Microsoft Defender Exploit Guard**  >  **Netzwerkfilterung** Netzwerkschutz aktivieren oder  >    >   **überwachen**
+3. Wechseln **Sie unter Konfigurationseinstellungen** im Profilfluss zu **Microsoft Defender Exploit Guard** Network  >  **filtering**  >  **Network Protection**  >  **Enable** or **Audit only**
 
 ### <a name="group-policy"></a>Gruppenrichtlinien
 
@@ -116,7 +120,7 @@ Vergewissern Sie sich, dass der Netzwerkschutz auf einem lokalen Computer mithil
 
 1. Wählen **Sie Start** aus, und geben Sie **regedit ein,** um den **Registrierungs-Editor zu öffnen.**
 
-2. Navigieren Sie zu **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection**
+2. Navigieren Sie zu **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\EnableNetworkProtection**
 
 3. Wählen **Sie EnableNetworkProtection aus,** und bestätigen Sie den Wert:
    * 0=Aus

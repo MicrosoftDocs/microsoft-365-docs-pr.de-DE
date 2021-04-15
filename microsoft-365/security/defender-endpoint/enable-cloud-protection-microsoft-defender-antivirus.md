@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.date: 11/13/2020
@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: cfaf4563e96568ae26bd990678462836b9202656
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9f949a4cb54ca5dd64a2648bb05a5cb9ad50e44d
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690715"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764963"
 ---
 # <a name="turn-on-cloud-delivered-protection"></a>Aktivieren des in der Cloud übermittelten Schutzes
 

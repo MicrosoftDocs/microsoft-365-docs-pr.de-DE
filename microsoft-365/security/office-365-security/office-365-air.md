@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6dfa22b2afb33c318eae8937888b5b75a1742938
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 9850506771f53b125c08b1df2149ee024191d823
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599463"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768866"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatisierte Untersuchung und Reaktion (AIR) in Microsoft Defender für Office 365
 
@@ -123,7 +123,7 @@ Berechtigungen werden über bestimmte Rollen erteilt, z. B. über die in der fol
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>Änderungen werden in Kürze in Ihrem Security Center vorgenommen
 
-Wenn Sie bereits die AIR-Funktionen in Microsoft Defender für Office 365 verwenden, sehen Sie einige Änderungen im verbesserten [Microsoft 365 Security Center](../defender/overview-security-center.md). 
+Wenn Sie bereits die AIR-Funktionen in Microsoft Defender für Office 365 verwenden, sehen Sie einige Änderungen im verbesserten [Microsoft 365 Security Center](../defender/overview-security-center.md).
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Einheitliches Aktionscenter":::
 

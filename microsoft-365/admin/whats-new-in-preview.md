@@ -21,12 +21,12 @@ description: Das Microsoft 365 Admin Center – Erfahren Sie mehr über die Feat
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 7b802556e051200bf39bc4bd9b97974d4d2d4c47
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0c17c6840d73c5b0a2714c6c6a832c154e2a9640
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222003"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768721"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neues im Microsoft 365 Admin Center
 
@@ -50,6 +50,27 @@ Und wenn Sie wissen möchten, was mit anderen Microsoft-Clouddiensten neu ist:
 - [Office-Updates](/OfficeUpdates/)
 - [Überprüfen der Windows-Release-Integrität](https://docs.microsoft.com/windows/deployment/update/check-release-health)
 
+## <a name="april-2021"></a>April 2021
+
+### <a name="admin-mobile-app"></a>Mobile Admin-App
+
+### <a name="manage-licenses-and-bills-from-the-admin-mobile-app"></a>Verwalten von Lizenzen und Rechnungen über die mobile Admin-App
+
+- Sie können jetzt alle verfügbaren und zugewiesenen Lizenzen für Ihre Abonnements anzeigen. Sie können Benutzern auch Lizenzen zuweisen oder nicht zuweisen und Lizenzen hinzufügen oder entfernen.
+- Sie können nun detaillierte Rechnungen in der App anzeigen.
+- Diese Updates sind sowohl auf [Android-](https://go.microsoft.com/fwlink/p/?linkid=2159786) als auch [auf iOS-Geräten](https://go.microsoft.com/fwlink/p/?linkid=2159787) verfügbar.
+
+:::image type="content" source="../media/assign-license-mobile-app2.png" alt-text="Screenshot: Administrator mobile App zuweisen Lizenzseite":::
+:::image type="content" source="../media/license-screen-mobile-app2.png" alt-text="Screenshot: Bildschirm mobiler Apps für Administratoren mit Benutzern und deren Lizenzen":::
+:::image type="content" source="../media/invoice-summary-mobile-app.png" alt-text="Screenshot: Zusammenfassungsseite der Verwaltungsrechnung für mobile Apps":::
+
+### <a name="updated-message-center-feed-in-the-admin-mobile-app"></a>Aktualisierter Nachrichtencenterfeed in der mobilen Admin-App
+
+- Sie haben jetzt eine flexiblere Leseerfahrung des Nachrichtencenterfeeds. Sie haben jetzt die Möglichkeit, Nachrichten basierend auf Dienst- oder Tags zu filtern und Nachrichten als Favoriten zu markieren. Es wurden auch Massenaktionen zum Markieren von Nachrichten als gelesen, ungelesen oder archiviert hinzugefügt.
+- Diese Updates sind sowohl auf [Android-](https://go.microsoft.com/fwlink/p/?linkid=2159786) als auch [auf iOS-Geräten](https://go.microsoft.com/fwlink/p/?linkid=2159787) verfügbar.
+
+:::image type="content" source="../media/mc-feed-mobile-app.png" alt-text="Screenshot: Admin mobile app Message center feed page":::
+
 ## <a name="ignite-2021-march"></a>Ignite 2021 (März)
 
 Willkommen bei Microsoft Ignite. Wir hoffen, dass Sie an einigen unserer Sitzungen teilnehmen konnten: [Microsoft Ignite 2021](https://myignite.microsoft.com/sessions). Hier sind einige der Dinge, über die wir bei Ignite gesprochen haben.
@@ -66,7 +87,7 @@ Weitere Informationen zu den neuen Features finden Sie unter [Verwalten von Nach
 
 ### <a name="whats-new-features"></a>Neue Features
 
-Wir haben Verbesserungen bei der Anzeige der Features "Was ist neu" für Benutzer in den Office-Apps vorgenommen. Sie können nun den reichhaltigen Inhalt im neuen Bereich von Whats sehen, den Ihre Benutzer sehen können. Sie können auch mehr über das Feature erfahren, bevor Sie ihre Benutzer über das Feature informieren möchten. For more info, check out [Manage which Office‎ features appear in What's New](manage/show-hide-new-features.md).
+Wir haben Verbesserungen bei der Anzeige der Features "Was ist neu" für Benutzer in den Office-Apps vorgenommen. Sie können nun den reichhaltigen Inhalt im neuen Bereich von Whats sehen, den Ihre Benutzer sehen können. Sie können auch mehr über das Feature erfahren, bevor Sie ihre Benutzer über das Feature informieren möchten. Weitere Informationen finden Sie unter [Verwalten, welche Office-Features in What's New angezeigt werden.](manage/show-hide-new-features.md)
 
 :::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot: Neue Seite für Office-Apps mit Verbesserungen an Power BI":::
 
@@ -206,7 +227,7 @@ Neues bei [Microsoft 365-Videoserien:](https://youtu.be/m1Nu8WJgCDY) In diesem M
 
 ### <a name="keeping-up-with-office-whats-new-management"></a>Mit Office What's New Management im Einklang bleiben
 
-Vor ein paar Monaten haben wir eine Einstellung hinzugefügt, mit der Sie die [What's New-Nachrichten](#office-whats-new-management)verwalten können, die in den Office-Apps eines Benutzers angezeigt werden. In diesem Monat haben wir eine neue Homepagekarte veröffentlicht, mit  der Sie schnell handeln und die Neuen Nachrichten nachverfolgen können, die Den Benutzern in Ihrer Organisation angezeigt werden sollen.
+Vor ein paar Monaten haben wir eine Einstellung hinzugefügt, mit der Sie die Neuen Nachrichten verwalten können, die in den Office-Apps eines Benutzers angezeigt werden. In diesem Monat haben wir eine neue Homepagekarte veröffentlicht, mit  der Sie schnell handeln und die Neuen Nachrichten nachverfolgen können, die Den Benutzern in Ihrer Organisation angezeigt werden sollen.
 
 ### <a name="docs-training-and-videos-june"></a>Dokumente, Schulungen und Videos (Juni)
 
@@ -253,11 +274,11 @@ Erst in diesem Monat haben wir eine neue Website mit dem Namen [https://docs.mic
 - Neues in **der Microsoft 365-Videoreihe:** In diesem Monat werden die neue Supporterfahrung in den Teams Admin and Security and Compliance Center, die Planner-Integration in das Message Center und das neue 3x3-Videolayout in Microsoft Teams themat. 
 - Die [Hilfehubseite des Microsoft 365 Admin Center](./index.yml) wurde aktualisiert, um Schneller zu finden, was Sie benötigen. Und wenn Sie diese Seite jetzt betrachten, haben wir eine Karte hinzugefügt, um Sie über wichtige Updates und Änderungen zu informieren.
 
-## <a name="april-2020"></a>April 2020
+## <a name="april-2020"></a>April 2020
 
 ### <a name="intune-roles-management"></a>Verwaltung von Intune-Rollen
 
-[April 2020](#april-2020)
+[April 2020](#april-2020)
 
 Nun, wir haben es getan! Wir haben den zweiten Schritt zu einer einheitlichen Rollenerfahrung gemacht, und Sie können jetzt Intune-Rollen im Microsoft 365 Admin Center verwalten. Sie können auch Features nutzen, z. B. die Möglichkeit, nach Rollen zu suchen und Rollenberechtigungen anzeigen. Dies bedeutet, dass Sie keine zwei separaten Tools zum Verwalten von Rollen für Microsoft 365 und Intune benötigen. Wenn Sie sich beim Microsoft 365 Admin Center anmelden, werden Sie sehen, dass es zwei Pivots auf der Seite Rollen gibt, eines für Azure AD und eines für Intune.
 
@@ -398,46 +419,3 @@ Einige Änderungen im Bereich "Gruppen" in diesem Monat:
 - Neuigkeiten in **Microsoft 365-Videoserien:** In diesem Monat konzentrieren wir uns auf benutzerdefinierte Suchfunktionen für SharePoint Online, das Office-Verwaltungsfeature "Neuigkeiten", mit dem Sie bestimmte Features über den In-App-Hilfebereich, die neuesten Sicherheits- und Kompatibilitätsupdates in Yammer und vieles mehr vor Endbenutzern ein- oder ausblenden können. Hier ist die neueste Folge: [Neuigkeiten in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
 - **Docs move**: Wir haben die Office 365 Admin Web Articles mit den Microsoft 365-Inhalten kombiniert, und Sie haben die neue URL möglicherweise bemerkt. Dieser Artikel wurde beispielsweise unter gehostet: **docs.microsoft.com/Office365/Admin/whats-new-in-preview**, aber die URL ist **jetzt: docs.microsoft.com/microsoft-365/admin/whats-new-in-preview**. Wenn Sie Seiten mit Lesezeichen versehen haben, sollten Sie Ihre Links aktualisieren. Inhaltslinks werden jedoch an das neue Inhalts-Repository umgeleitet.
-
-## <a name="january-2020---happy-new-year"></a>Januar 2020 – Happy New Year
-
-> [!NOTE]
-> Wussten Sie, dass es eine [What's New in Microsoft 365-Videoreihe](https://go.microsoft.com/fwlink/p/?linkid=2118096) auf YouTube gibt? Es werden die neuesten Features hervorgehoben, die wir benutzern zur Verfügung stellen. Jeden Monat beginnen wir mit der Verknüpfung mit der neuesten Folge im Abschnitt [Videos, Schulungen und](#videos-training-and-docs) Dokumente. <br> <br> Hier ist die neueste Folge: [Neuigkeiten in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
-
-### <a name="dark-mode"></a>Dunkler Modus
-
-Als wir den dunklen Modus zum ersten Mal ausrollten, war er nur auf der Startseite verfügbar. Der dunkle Modus ist jetzt nicht mehr in der Vorschau verfügbar und befindet sich auf den meisten Seiten im Admin Center in der gezielten Veröffentlichung.
-
-1. Zunächst müssen Sie die einstellungsorientierte Veröffentlichung aktivieren: Wechseln **Sie** zu Einstellungen \> **Einstellungen** \> **Organisationsprofil** \> **Veröffentlichungseinstellungen**.
-1. Um dann den dunklen Modus zu aktivieren, wechseln Sie zur **Startseite,** und wählen Sie dann die Schaltfläche **Dunkler Modus** aus. (Es ist neben dem **Suchfeld** und dem Link **What's new** in diesem Artikel.)
-1. Für jede Seite, für die der dunkle Modus verfügbar ist, befindet sich die Schaltfläche oben auf der Seite neben dem umschalten des neuen **Admin Center.**
-
-### <a name="office-whats-new-management"></a>Office What's New Management
-
-Administratoren möchten steuern, wie Microsoft den Benutzern in den Office-Apps "Neues" kommuniziert – und Sie haben nun dieses Steuerelement. Wechseln Sie **zu Einstellungen** \> **Office What's New management Preview**. Wählen Sie ein Feature aus, um dessen  Details anzuzeigen, und sie können dann die Schaltfläche Benutzer ausblenden auswählen, wenn Ihren Benutzern keine bestimmte Meldung "Was ist neu" angezeigt werden soll. Beispielsweise wartet Ihre Organisation möglicherweise darauf, Die Benutzer über ein Feature zu erfahren, bis alle Mitarbeiter in Ihrer Organisation darauf geschult sind.
-
-![Bildschirmaufnahme der Office What's New-Vorschau, bei der der Detailbereich eines Features geöffnet ist.](../media/whatsnew-officemgmt-preview.png)
-
-Dieses Feature wurde erstmals im November zur Vorschau veröffentlicht, es gab jedoch einige Featureupdates, die Sie kennen sollten: [Office What's New Management Preview updates now available](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-preview/ba-p/1020438)
-
-### <a name="partners"></a>Partner
-
-Howdy, Partners! (Konnte mir nicht helfen.) Wir haben auch in diesem Monat ein Update für Sie. Es gibt ein neues Feature, mit dem Partner #A0 die Möglichkeit geben können, ihren Microsoft Customer Agreement (MCA) im Abschnitt Abrechnungskonten des Admin Centers zu akzeptieren.  In dieser neuen Erfahrung:
-
-1. Der Kunde erhält eine Einladungs-E-Mail mit einem Link, um die Partnerbeziehung und die MCA zu akzeptieren.
-2. Nachdem sich der Kunde meldet, kann er die McA- und Partnerberechtigungen direkt im Admin Center anzeigen und akzeptieren.
-
-### <a name="resource-mailboxes"></a>Ressourcenpostfächer
-
-Die Liste Ressourcenpostfächer wurde auf die neue Formatvorlage aktualisiert. Wechseln Sie im Microsoft 365 Admin Center zu **Resources** \> **Rooms & Equipment**.
-
-### <a name="videos-training-and-docs-january"></a>Videos, Schulungen und Dokumente (Januar)
-
-Sehen Sie sich die Schulung für kleine Unternehmen an, die wir im Januar veröffentlicht haben:
-
-- [Erstellen Ihrer Geschäftswebsite](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9)
-- [Nach Antworten und Hilfe suchen](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
-- [Anfordern von Hilfe oder Support](https://support.microsoft.com/office/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
-- [Benutzer löschen](https://support.microsoft.com/office/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
-- [Auswählen eines Microsoft-Abonnements](https://support.microsoft.com/office/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Übersicht über Microsoft 365 Business Security](https://support.microsoft.com/office/3274b159-a825-46d7-9421-7d6e209389d1)

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 93715f761beded95cfaa91b4747a2e4b5a3c61c1
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: bf837dca5f05310045c06178b8fc587f3fc55137
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689677"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765779"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Datenschutz für Microsoft Defender for Endpoint unter macOS
 
@@ -33,7 +33,6 @@ ms.locfileid: "51689677"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
-
 
 Microsoft verpflichtet sich, Ihnen die Informationen und Steuerelemente zur Verfügung zu stellen, die Sie benötigen, um entscheidungen darüber zu treffen, wie Ihre Daten gesammelt und verwendet werden, wenn Sie Microsoft Defender for Endpoint unter macOS verwenden.
 

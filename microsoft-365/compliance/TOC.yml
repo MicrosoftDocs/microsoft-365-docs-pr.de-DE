@@ -245,6 +245,8 @@
               href: dlp-on-premises-scanner-learn.md
             - name: Erfahren Sie mehr über das Microsoft Compliance-Erweiterung (Vorschau)
               href: dlp-chrome-learn-about.md
+            - name: Informationen zum Dashboard zur Verhinderung von Datenverlust
+              href: dlp-alerts-dashboard-learn.md
         - name: Erste Schritte mit DLP
           items:
             - name: Erste Schritte mit der DLP-Standardrichtlinie
@@ -261,6 +263,8 @@
               href: endpoint-dlp-configure-proxy.md
             - name: Erste Schritte mit der Microsoft Compliance Erweiterung (Vorschau)
               href: dlp-chrome-get-started.md
+            - name: Erste Schritte mit dem Dashboard zur Verhinderung von Datenverlust
+              href: dlp-alerts-dashboard-get-started.md
             - name: "Verhinderung von Datenverlust am Endpunkt\_– Onboarding-Tools und -Methoden für Windows\_10-Geräte"
               items:
                 - name: "Onboarding-Tools und -Methoden für Windows\_10-Computer"
@@ -594,6 +598,8 @@
               href: ediscovery-decryption.md
             - name: Sammeln von eDiscovery-Diagnoseinformationen
               href: ediscovery-diagnostic-info.md
+            - name: Behandeln von eDiscovery-Archiv-Fehlern
+              href: hold-distribution-errors.md
             - name: Behandeln allgemeiner eDiscovery-Probleme
               href: ediscovery-troubleshooting-common-issues.md
             - name: Wiederholen einer fehlgeschlagenen Suche
@@ -748,6 +754,8 @@
               href: what-is-stored-in-exo-mailbox.md
             - name: Entschlüsselung in eDiscovery-Tools
               href: ediscovery-decryption.md
+            - name: Behandeln von eDiscovery-Archiv-Fehlern
+              href: hold-distribution-errors.md
             - name: Sammeln von eDiscovery-Diagnoseinformationen
               href: ediscovery-diagnostic-info.md
             - name: Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll
@@ -766,6 +774,8 @@
       href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: Erhöhen des Kontingents für wiederherstellbare Elemente für aufzubewahrende Postfächer
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: Behandeln von eDiscovery-Archiv-Fehlern
+      href: hold-distribution-errors.md
     - name: Beibehalten von Bcc-Empfängern und Empfängern aus erweiterten Verteilergruppen
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Verwalten von Überwachungs- und Warnungsrichtlinien

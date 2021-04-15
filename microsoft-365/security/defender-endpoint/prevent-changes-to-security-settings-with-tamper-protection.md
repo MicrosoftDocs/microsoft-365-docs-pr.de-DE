@@ -9,18 +9,18 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 147247435564133502f33d33799d05ef809e0427
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 84864965d7a18902a01307c1dcf373fa7c0534e8
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690667"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765575"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Schützen von Sicherheitseinstellungen mit Manipulationsschutz
 

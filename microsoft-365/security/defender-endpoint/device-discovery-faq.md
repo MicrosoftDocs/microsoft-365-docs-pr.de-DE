@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: medium
+localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7165d943fd39e298894531f1dabdec408144898d
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: b3fef3479fa2d36806e6657b31f5152c54b9251f
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698438"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764999"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Häufig gestellte Fragen zur Geräteerkennung
 
@@ -70,7 +70,7 @@ Sie haben die Möglichkeit, die Geräteerkennung über die Seite Erweiterte [Fea
  Da die Geräteermittlung passive Methoden zum Ermitteln von Geräten im Netzwerk verwendet, kann jedes Gerät, das mit Ihren integrierten Geräten im Unternehmensnetzwerk kommuniziert, ermittelt und im Inventar aufgeführt werden. Sie können Geräte nur von der aktiven Probe ausschließen.
 
 ## <a name="how-frequent-is-the-active-probing"></a>Wie häufig ist die aktive Probe?
- Geräte werden aktiv untersucht, wenn Änderungen der Gerätemerkmale beobachtet werden, und einmal pro Woche, um sicherzustellen, dass die vorhandenen Informationen auf dem neuesten Stand sind.
+ Geräte werden aktiv untersucht, wenn Änderungen der Gerätemerkmale (alle 1 bis 3 Wochen) beobachtet werden, um sicherzustellen, dass die vorhandenen Informationen auf dem neuesten Stand sind.
 
 ## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>Mein Sicherheitstool hat eine Warnung UnicastScanner.ps1 oder von diesem initiierten Portprüfungsaktivitäten ausgelöst. Was sollte ich tun?
  Die aktiven Probeskripts werden von Microsoft signiert und sind sicher. Sie können der Ausschlussliste den folgenden Pfad hinzufügen: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`

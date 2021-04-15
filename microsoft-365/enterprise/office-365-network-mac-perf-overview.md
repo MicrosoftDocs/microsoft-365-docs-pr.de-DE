@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Übersicht über die Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
-ms.openlocfilehash: dd97a6d5cc9662f01854e1432660784358bce7b8
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: cc01f2a22f6f8c89d0ae8fcd8b53498790930d3e
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581130"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768626"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
 
@@ -39,9 +39,9 @@ Das Microsoft 365 Admin Center enthält nun aggregierte Metriken für die Netzwe
 
 Wenn Sie zum ersten Mal zur Seite "Netzwerkleistung" navigieren, wird ein Übersichtsbereich mit einer Karte der globalen Netzwerkleistung, einer Netzwerkbewertung auf den gesamten Mandanten und einer Liste der aktuellen Probleme angezeigt. In der Übersicht können Sie einen Drilldown erstellen, um bestimmte Metriken und Probleme der Netzwerkleistung nach Standort anzuzeigen. Weitere Informationen finden Sie unter [Übersicht über die Netzwerkleistung im Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
-Möglicherweise werden Sie aufgefordert, im Namen Ihrer Organisation an der öffentlichen Vorschau für dieses Feature teil zu nehmen. Die Annahme ist in der Regel sofort erfolgt, und dann wird die Seite mit der Netzwerkverbindung angezeigt. 
+Möglicherweise werden Sie aufgefordert, im Namen Ihrer Organisation an der öffentlichen Vorschau für dieses Feature teil zu nehmen. Die Annahme erfolgt in der Regel sofort, danach wird die Seite "Netzwerkkonnektivität" angezeigt. 
 
-Bei der Navigation zur Seite "Netzwerkkonnektivität" wird ein Übersichtsbereich mit einer Karte der globalen Netzwerkleistung, einer Auf den gesamten Mandanten umfassenden Netzwerkbewertung und einer Liste der aktuellen Probleme angezeigt. Für den Zugriff auf diese Seite müssen Sie ein Administrator für die Organisation in Microsoft 365 sein. Die Administratorrolle "Berichtsleser" hat Lesezugriff auf diese Informationen. Zum Konfigurieren von Speicherorten und anderen Elementen der Netzwerkkonnektivität muss ein Administrator Teil einer Serveradministratorrolle sein, z. B. der Administratorrolle Dienstunterstützung. In der Übersicht können Sie einen Drilldown erstellen, um bestimmte Metriken und Probleme der Netzwerkleistung nach Standort anzuzeigen. Weitere Informationen finden Sie unter [Übersicht über die Netzwerkkonnektivität im Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
+Bei der Navigation zur Seite "Netzwerkkonnektivität" sehen Sie einen Übersichtsbereich mit einer Karte der globalen Netzwerkleistung, einer Netzwerkbewertung, die auf den gesamten Mandanten begrenzt ist, den Prozentsatz Ihrer Benutzer, die remote und vor Ort arbeiten, sowie eine Liste der aktuellen Probleme, mit denen Sie Maßnahmen ergreifen oder weitere Untersuchungen ausführen können. Um auf diese Seite zugreifen zu können, müssen Sie ein Administrator für die Organisation in Microsoft 365 sein. Die Administratorrolle "Berichtsleser" hat Lesezugriff auf diese Informationen. Zum Konfigurieren von Speicherorten und anderen Elementen der Netzwerkkonnektivität muss ein Administrator Teil einer Serveradministratorrolle sein, z. B. der Administratorrolle Dienstunterstützung. In der Übersicht können Sie einen Drilldown erstellen, um bestimmte Metriken und Probleme der Netzwerkleistung nach Standort anzuzeigen. 
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>Voraussetzungen für die Schätzung der Netzwerkkonnektivität
 
@@ -49,7 +49,7 @@ Aktivieren Sie die Einstellung standortanmelden, um automatisch Daten von Gerät
 
 ### <a name="1-enable-windows-location-services"></a>1. Aktivieren von Windows Location Services
 
-Für diese Option müssen an jedem Bürostandort mindestens zwei Computer ausgeführt werden, die die Voraussetzungen unterstützen. OneDrive für #A0 muss auf jedem Computer auf dem neuesten Stand sein und installiert sein. Weitere Informationen zu #A0 finden Sie in den [OneDrive-Versionshinweisen](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Netzwerkmessungen sollen in naher Zukunft in anderen Office 365-Clientanwendungen hinzugefügt werden.
+Für diese Option müssen an jedem Bürostandort mindestens zwei Computer ausgeführt werden, die die Voraussetzungen unterstützen. OneDrive für #A0 muss auf jedem Computer auf dem neuesten Stand sein und installiert sein. Weitere Informationen zu #A0 finden Sie in den [OneDrive-Versionshinweisen](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Netzwerkmessungen sollen in naher Zukunft anderen Office 365-Clientanwendungen hinzugefügt werden.
 
 Windows Location Service muss auf den Computern zugestimmt werden. Sie können dies testen, indem Sie die **Karten-App** ausführen und sich selbst suchen. Sie kann auf einem einzelnen Computer mit Einstellungen aktiviert **| Datenschutz | Speicherort,** an dem die Einstellung _Apps den Zugriff auf Ihren_ Standort erlauben aktiviert sein muss. Die Zustimmung von Windows Location Services kann auf PCs mithilfe von MDM oder Gruppenrichtlinien mit der Einstellung _LetAppsAccessLocation bereitgestellt werden._
 
@@ -61,17 +61,17 @@ Messbeispiele und Bürostandorte sollten 24 Stunden nach Erfüllen dieser Voraus
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. Hinzufügen von Speicherorten und Bereitstellen von LAN-Subnetzinformationen
 
-Für diese Option sind weder Windows Location Services noch Wi-Fi erforderlich. Ihre OneDrive für #A0 muss auf dem neuesten Stand sein und auf jedem Computer am Standort installiert sein.
+Für diese Option sind weder Windows Location Services noch Wi-Fi erforderlich. Ihre OneDrive für #A0 muss auf dem neuesten Stand sein und auf mindestens einem Computer am Standort installiert sein.
 
-Sie müssen auch Speicherorte auf der Admin Center-Netzwerkverbindungsseite hinzufügen oder diese aus einer CSV-Datei importieren. Die hinzugefügten Speicherorte müssen Ihre Office -LAN-Subnetzinformationen enthalten.
+Sie müssen auch Speicherorte auf  der Seite Speicherorte hinzufügen oder aus einer CSV-Datei importieren. Die hinzugefügten Speicherorte müssen Ihre Office -LAN-Subnetzinformationen enthalten.
 
-Da Sie die Standorte hinzufügen, können mehrere Büros innerhalb einer Stadt definiert sein.
+Mit dieser Option können Sie mehrere Büros innerhalb einer Stadt definieren.
 
 Alle Testmessungen von Clientcomputern umfassen die LAN-Subnetzinformationen, die mit den eingegebenen Details zum Bürostandort korreliert sind. Messbeispiele und Bürostandorte sollten 24 Stunden nach Erfüllen dieser Voraussetzungen angezeigt werden.
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. Manuelles Sammeln von Testberichten mit dem Microsoft 365-Netzwerkverbindungstesttool
 
-Für diese Option müssen Sie eine Person an jedem Standort identifizieren. Bitten Sie sie, zum [Microsoft 365-Netzwerkverbindungstest](https://connectivity.office.com) auf einem Windows-Computer zu navigieren, auf dem sie über Administratorberechtigungen verfügen. Auf der Website müssen sie sich bei ihrem Office 365-Konto für dieselbe Organisation anmelden, für die Sie die Ergebnisse sehen möchten. Anschließend sollten sie auf **Test ausführen klicken.** Während des Tests gibt es eine heruntergeladene Konnektivitätstest-EXE. Sie müssen dies auch öffnen und ausführen. Sobald die Tests abgeschlossen sind, wird das Testergebnis in Office 365 hochgeladen.
+Für diese Option müssen Sie eine Person an jedem Standort identifizieren. Bitten Sie sie, zum [Microsoft 365-Netzwerkverbindungstest](https://connectivity.office.com) auf einem Windows-Computer zu navigieren, auf dem sie über Administratorberechtigungen verfügen. Auf der Website müssen sie sich bei ihrem Office 365-Konto für dieselbe Organisation anmelden, für die Sie die Ergebnisse sehen möchten. Anschließend sollten sie auf **Test ausführen klicken.** Während des Tests gibt es eine heruntergeladene Konnektivitätstest-EXE. Sie müssen dies öffnen und ausführen. Sobald die Tests abgeschlossen sind, wird das Testergebnis in das Admin Center hochgeladen.
 
 Testberichte sind mit einem Speicherort verknüpft, wenn sie mit LAN-Subnetzinformationen hinzugefügt wurden, andernfalls werden sie nur am Ortsstandort angezeigt.
 
@@ -79,7 +79,7 @@ Messbeispiele und Bürostandorte sollten 2 bis 3 Minuten nach Abschluss eines Te
 
 ## <a name="how-do-i-use-this-information"></a>Wie verwende ich diese Informationen?
 
-**Netzwerkeinblicke,** deren zugehörige Leistungsempfehlungen und Netzwerkbewertungen sollen beim Entwerfen von Netzwerkperimetern für Ihre Bürostandorte helfen. Jeder Einblick enthält Details zu den Leistungsmerkmalen für ein bestimmtes häufiges Problem für jeden geografischen Standort, an dem Benutzer auf Ihren Mandanten zugreifen. **Leistungsempfehlungen** für jede Netzwerkeinblick bieten spezifische Änderungen an der Netzwerkarchitektur, die Sie vornehmen können, um die Benutzerfreundlichkeit im Zusammenhang mit der Microsoft 365-Netzwerkkonnektivität zu verbessern. Die Netzwerkbewertung zeigt, wie sich die Netzwerkkonnektivität auf die Benutzerfreundlichkeit aus wirkt und ermöglicht einen Vergleich verschiedener Netzwerkverbindungen mit Benutzerstandorten.
+**Netzwerkeinblicke,** deren zugehörige Leistungsempfehlungen und Netzwerkbewertungen sollen beim Entwerfen von Netzwerkperimetern für Ihre Bürostandorte helfen. Jeder Einblick enthält Details zu den Leistungsmerkmalen für ein bestimmtes häufiges Netzwerkproblem für jeden geografischen Standort, an dem Benutzer auf Ihren Mandanten zugreifen. **Leistungsempfehlungen** für jede Netzwerkeinblick bieten spezifische Änderungen an der Netzwerkarchitektur, die Sie vornehmen können, um die Benutzerfreundlichkeit im Zusammenhang mit der Microsoft 365-Netzwerkkonnektivität zu verbessern. Die Netzwerkbewertung zeigt, wie sich die Netzwerkkonnektivität auf die Benutzerfreundlichkeit aus wirkt und ermöglicht einen Vergleich verschiedener Netzwerkverbindungen mit Benutzerstandorten.
 
 **Netzwerkbewertungen** verwerten ein Aggregat aus vielen Netzwerkleistungsmetriken in einer Momentaufnahme der Integrität Ihres Unternehmensnetzwerks, dargestellt durch einen Punktwert zwischen 0 und 100. Netzwerkbewertungen sind sowohl auf den gesamten Mandanten als auch auf jeden geografischen Standort begrenzt, von dem aus Benutzer eine Verbindung mit Ihrem Mandanten herstellen, und bieten Microsoft 365-Administratoren eine einfache Möglichkeit, sofort eine Gestalt des Netzwerkzustands des Unternehmens zu erfassen und schnell einen detaillierten Bericht für jeden globalen Bürostandort zu erstellen.
 
@@ -93,13 +93,13 @@ Komplexe Unternehmen mit mehreren Bürostandorten und nicht trivialen Netzwerkpe
 > [!div class="mx-imgBorder"]
 > ![Kundennetzwerk in die Cloud](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
-Viele Unternehmen verfügen über Netzwerkperimeterkonfigurationen, die im Laufe der Zeit gewachsen sind und in erster Linie für den Zugriff auf die Internetwebsite von Mitarbeitern ausgelegt sind, bei denen die meisten Websites im Voraus nicht bekannt sind und nicht vertrauenswürdig sind. Der vorherrschende und notwendige Fokus liegt auf der Vermeidung von Schadsoftware und Angelangriffen von diesen unbekannten Websites. Diese Netzwerkkonfigurationsstrategie kann zwar aus Sicherheitsgründen hilfreich sein, aber zu einer Beeinträchtigung der Leistung und Benutzerfreundlichkeit von Microsoft 365 führen.
+Viele Unternehmen verfügen über Netzwerkperimeterkonfigurationen, die im Laufe der Zeit gewachsen sind und in erster Linie für den Zugriff auf die Internetwebsite von Mitarbeitern ausgelegt sind, bei denen die meisten Websites im Voraus nicht bekannt sind und nicht vertrauenswürdig sind. Der vorherrschende und notwendige Fokus liegt auf der Vermeidung von Schadsoftware und Phishingangriffen von diesen unbekannten Websites. Diese Netzwerkkonfigurationsstrategie kann zwar aus Sicherheitsgründen hilfreich sein, aber zu einer Beeinträchtigung der Leistung und Benutzerfreundlichkeit von Microsoft 365 führen.
 
 ## <a name="how-we-can-solve-these-challenges"></a>Wie wir diese Herausforderungen lösen können
 
 Unternehmen können die allgemeine Benutzerfreundlichkeit verbessern und ihre Umgebung schützen, indem sie [die Office 365-Konnektivitätsprinzipien](./microsoft-365-network-connectivity-principles.md) und das Netzwerkkonnektivitätsfeature für Microsoft 365 Admin Center verwenden. In den meisten Fällen hat das Folgen dieser allgemeinen Prinzipien erhebliche positive Auswirkungen auf die Wartezeit der Endbenutzer, die Dienstzuverlässigkeit und die Gesamtleistung von Microsoft 365.
 
-Microsoft wird manchmal aufgefordert, Probleme mit der Netzwerkleistung mit Microsoft 365 für große Unternehmenskunden zu untersuchen, und diese haben häufig eine Ursache im Zusammenhang mit der Netzwerkperimeterinfrastruktur der Kunden. Wenn eine häufige Ursache eines Kundennetzwerkperimeterproblems gefunden wird, versuchen wir, einfache Testmessungen zu identifizieren, die es identifizieren. Ein Test mit einem Messschwellenwert, der ein bestimmtes Problem identifiziert, ist wertvoll, da wir dieselbe Messung an jedem Beliebigen Ort testen, bestimmen können, ob diese Hauptursache vorhanden ist, und sie als Netzwerkinblick mit dem Administrator teilen können.
+Microsoft wird manchmal aufgefordert, Probleme mit der Netzwerkleistung mit Microsoft 365 für große Unternehmenskunden zu untersuchen, und diese haben häufig eine Ursache im Zusammenhang mit der Netzwerkperimeterinfrastruktur des Kunden. Wenn eine häufige Ursache eines Kundennetzwerkperimeterproblems gefunden wird, versuchen wir, einfache Testmessungen zu identifizieren, die es identifizieren. Ein Test mit einem Messschwellenwert, der ein bestimmtes Problem identifiziert, ist wertvoll, da wir dieselbe Messung an jedem Beliebigen Ort testen, bestimmen können, ob diese Hauptursache vorhanden ist, und sie als Netzwerkinblick mit dem Administrator teilen können.
 
 Einige Netzwerkeinblicke deuten lediglich auf ein Problem hin, das weiter untersucht werden muss. Eine Netzwerkuntersuchung, bei der wir über genügend Tests verfügen, um eine bestimmte Korrekturaktion zur Behebung der Hauptursache zu zeigen, wird als empfohlene Aktion **aufgeführt.** Diese Empfehlungen, die auf Livemetriken basieren, die Werte anzeigen, die außerhalb eines vordefinierten Schwellenwerts liegen, sind viel wertvoller als allgemeine Empfehlungen zu bewährten Verfahren, da sie spezifisch für Ihre Umgebung sind und die tatsächliche Verbesserung zeigen, sobald die empfohlenen Änderungen vorgenommen wurden.
 
@@ -117,7 +117,7 @@ Auf der Übersichtsseite wird auch die Netzwerkbewertung für den Kunden als gew
 > [!div class="mx-imgBorder"]
 > ![Netzwerkbewertung](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
-Sie können eine Tabellenansicht der Speicherorte anzeigen, an denen sie auf der Registerkarte Speicherorte gefiltert, sortiert und bearbeitet werden können. Standorte mit bestimmten Empfehlungen können auch eine geschätzte potenzielle Latenzverbesserung enthalten. Dies wird berechnet, indem die mediane Wartezeit der Benutzer Ihrer Organisation am Standort und die mediane Latenz für alle Organisationen in derselben Stadt subtrahiert werden.
+Sie können eine Tabellenansicht der Speicherorte anzeigen, an denen sie auf der Registerkarte Speicherorte gefiltert, sortiert und bearbeitet **werden** können. Standorte mit bestimmten Empfehlungen können auch eine geschätzte potenzielle Latenzverbesserung enthalten. Dies wird berechnet, indem die mediane Wartezeit der Benutzer Ihrer Organisation am Standort und die mediane Latenz für alle Organisationen in derselben Stadt subtrahiert werden.
 
 > [!div class="mx-imgBorder"]
 > ![Speicherorte für Netzwerkeinblicke](../media/m365-mac-perf/m365-mac-perf-locations.png)
@@ -149,6 +149,7 @@ Auf der Registerkarte Details auf der Seite Bürostandort werden die spezifische
 > [!div class="mx-imgBorder"]
 > ![Standortspezifische Details](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
+
 ## <a name="sharing-network-assessment-data-with-microsoft"></a>Freigeben von Netzwerkbewertungsdaten für Microsoft
 
 Standardmäßig werden die Netzwerkbewertungen für Ihre Organisation und die Netzwerkeinblicke für Microsoft-Mitarbeiter freigegeben. Dies umfasst keine personenbezogenen Daten von Ihren Mitarbeitern, sondern nur die spezifischen Netzwerkbewertungsmetriken und Netzwerkeinblicke, die im Admin Center für Ihre Bürostandorte angezeigt werden. Sie enthält auch keine Namen ihrer Bürostandorte oder Straßenadressen, daher müssen Sie ihnen die Stadt und die Support-ID des Büros mitteilen, das Sie besprechen möchten. Wenn dies deaktiviert ist, können die Microsoft-Techniker, mit der Sie Ihre Netzwerkkonnektivität besprechen, keine dieser Informationen anzeigen. Wenn Sie diese Einstellung aktivieren, werden nur die zukünftigen Daten verwendet, die am Tag nach der Aktivierung beginnen.
@@ -157,7 +158,7 @@ Standardmäßig werden die Netzwerkbewertungen für Ihre Organisation und die Ne
 
 Für die Identifikation von LAN-Subnetzbüros müssen Sie jeden Standort im Voraus hinzufügen. Anstatt einzelne Bürostandorte auf der **Registerkarte** Speicherorte zu hinzufügen, können Sie sie aus einer CSV-Datei importieren. Sie können diese Daten möglicherweise von anderen Orten abrufen, die Sie gespeichert haben, z. B. das Anrufqualitätsdashboard oder Active Directory-Websites und -Dienste.
 
-In der CSV-Datei wird ein gefundener Ort in der Spalte userEntered als leer angezeigt, und ein manuell hinzugefügter Bürostandort wird als 1 angezeigt.
+In der CSV-Datei wird ein ermittelter Ort in der Spalte userEntered als leer angezeigt, und ein manuell hinzugefügter Bürostandort wird als 1 angezeigt.
 
 1. Klicken Sie im _Hauptfenster Konnektivität mit Microsoft 365_ auf die Registerkarte **Speicherorte.**
 
@@ -170,7 +171,8 @@ In der CSV-Datei wird ein gefundener Ort in der Spalte userEntered als leer ange
 
 1. Öffnen Sie die CSV, und fügen Sie Ihre Speicherorte hinzu, indem Sie die folgenden Felder in einer neuen Zeile für jeden Speicherort ausfüllen, den Sie hinzufügen möchten. Lassen Sie alle anderen Felder leer. Werte, die Sie in andere Felder eingeben, werden ignoriert.
 
-   1. **userEntered** (erforderlich): Muss 1 für einen neuen Office-Standort des LAN-Subnetzes sein
+   1. **userEntered** (erforderlich): Muss 1 sein, damit ein neuer LAN-Subnetz-Office-Standort hinzugefügt wird
+   1. **Name** (erforderlich): Der Name des Bürostandorts
    1. **Adresse** (erforderlich): Die physische Adresse des Büros
    1. **Latitude** (optional): Aufgefüllt aus Bing-Karten-Suche der Adresse, wenn leer
    1. **Längengrad** (optional): Aus Bing aufgefüllte Karten-Suche der Adresse, wenn leer
@@ -179,12 +181,12 @@ In der CSV-Datei wird ein gefundener Ort in der Spalte userEntered als leer ange
    
 1. Wenn Sie Ihre Bürostandorte hinzugefügt und die Datei gespeichert haben, klicken Sie auf die Schaltfläche **Durchsuchen** neben dem **Feld Abgeschlossen** hochladen, und wählen Sie die gespeicherte CSV-Datei aus.
 
-1. Die Datei wird automatisch überprüft. Wenn Überprüfungsfehler auftreten, wird die Fehlermeldung Angezeigt: Es gibt einige Fehler _in der Importdatei. Überprüfen Sie die Fehler, korrigieren Sie die Importdatei, und versuchen Sie es dann erneut._ Klicken Sie auf den **Link Fehlerdetails öffnen** für eine Liste bestimmter Feldüberprüfungsfehler.
+1. Die Datei wird automatisch überprüft. Wenn Überprüfungsfehler auftreten, wird die Fehlermeldung angezeigt: Es gibt einige Fehler _in der Importdatei. Überprüfen Sie die Fehler, korrigieren Sie die Importdatei, und versuchen Sie es dann erneut._ Klicken Sie auf den **Link Fehlerdetails öffnen** für eine Liste bestimmter Feldüberprüfungsfehler.
 
    > [!div class="mx-imgBorder"]
    > ![Fehlermeldung zum CSV-Import](../media/m365-mac-perf/m365-mac-perf-import-error.png)
 
-1. Wenn die Datei keine Fehler enthält, wird die Meldung _Der Bericht ist bereit angezeigt. X-Speicherorte zum Hinzufügen und zu aktualisierende x-Speicherorte gefunden._ Klicken Sie auf **die Schaltfläche Importieren,** um die CSV hochzuladen.
+1. Wenn die Datei keine Fehler enthält, wird die Meldung angezeigt: _Der Bericht ist bereit. X-Speicherorte zum Hinzufügen und zu aktualisierende x-Speicherorte gefunden._ Klicken Sie auf **die Schaltfläche Importieren,** um die CSV hochzuladen.
 
    > [!div class="mx-imgBorder"]
    > ![CSV-importbereite Nachricht](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
@@ -204,7 +206,7 @@ Eine optimale Microsoft 365-Service-Eingangstür ist eine, die Ihrem Netzwerkein
 
 ### <a name="what-is-an-internet-egress-location"></a>Was ist ein Internet-Ausgangsspeicherort?
 
-Der Internetaustrittsspeicherort ist der Ort, an dem Ihr Netzwerkdatenverkehr Ihr Unternehmensnetzwerk verlässt und eine Verbindung mit dem Internet herstellt. Dies wird auch als Standort identifiziert, an dem Sie über ein Nat-Gerät (Network Address Translation) verfügen und in der Regel eine Verbindung mit einem Internetdienstanbieter (Internet Service Provider, ISP) herstellen. Wenn sie einen langen Abstand zwischen Ihrem Standort und Ihrem Internet-Ausgangsstandort sehen, kann dies auf einen erheblichen WAN-Backhaul hinweisen.
+Der Internetaustrittsspeicherort ist der Ort, an dem Ihr Netzwerkdatenverkehr Ihr Unternehmensnetzwerk verlässt und eine Verbindung mit dem Internet herstellt. Dies wird auch als Standort identifiziert, an dem Sie über ein Nat-Gerät (Network Address Translation) verfügen und in der Regel eine Verbindung mit einem Internetdienstanbieter (Internet Service Provider, ISP) herstellen. Wenn ein langer Abstand zwischen Ihrem Standort und Ihrem Internet-Ausgangsspeicherort angezeigt wird, kann dies auf einen erheblichen WAN-Backhaul hinweisen.
 
 ### <a name="what-license-is-needed-for-this-capability"></a>Welche Lizenz ist für diese Funktion erforderlich?
 

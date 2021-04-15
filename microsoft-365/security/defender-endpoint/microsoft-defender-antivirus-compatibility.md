@@ -7,19 +7,19 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: tewchen, pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 8eb52e277f7987477114db9333c3f90bb581ebb5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 131b9970572b1034ba5c9907a001f0497d450339
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690389"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765443"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Microsoft Defender Antivirus-Kompatibilität
 

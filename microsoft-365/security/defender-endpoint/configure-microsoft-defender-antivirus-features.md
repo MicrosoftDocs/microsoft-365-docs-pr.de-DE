@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,12 @@ ms.date: 11/18/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3dcf0ab24541a8837fbab91049fed0157b7f1fc9
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 8503bb5bdd6337ec60390ef1d8e59f6f506fbce2
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690296"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765167"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Konfigurieren von Microsoft Defender Antivirus-Features
 

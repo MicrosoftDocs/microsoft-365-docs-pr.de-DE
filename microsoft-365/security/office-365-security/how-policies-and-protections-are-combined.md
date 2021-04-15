@@ -17,12 +17,12 @@ ms.custom:
 description: Administratoren können sich über die Anwendungsreihenfolge von Schutzen in Exchange Online Protection (EOP) und darüber informieren, wie der Prioritätswert in Schutzrichtlinien bestimmt, welche Richtlinie angewendet wird.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3419cba5781e7ab1042f7312c721069d88fb8767
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b36e66f095ff81f551a55d2dc2af0693f8b3455a
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687649"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51769010"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Reihenfolge und Rangfolge des E-Mail-Schutzes
 
@@ -41,6 +41,8 @@ Es gibt zwei wichtige Faktoren, die bestimmen, welche Richtlinie auf eine Nachri
 
 - **Die Priorität des E-Mail-Schutztyps**: Diese Reihenfolge ist nicht konfigurierbar und wird in der folgenden Tabelle beschrieben:
 
+  <br>
+
   ****
 
   |Priorität|E-Mail-Schutz|Kategorie|Zu verwaltende Stelle|
@@ -57,19 +59,21 @@ Es gibt zwei wichtige Faktoren, die bestimmen, welche Richtlinie auf eine Nachri
 
   <sup>\*</sup> Diese Features sind nur in Antiphishingrichtlinien in Microsoft Defender für Office 365 verfügbar.
 
-- **Die Priorität** der Richtlinie: Für jeden Schutztyp (Antispam, Schadsoftware, Antiphishing usw.) gibt es eine Standardrichtlinie, die für alle gilt, Sie können jedoch benutzerdefinierte Richtlinien erstellen, die für bestimmte Benutzer gelten. Jede benutzerdefinierte Richtlinie hat einen Prioritätswert, der die Reihenfolge bestimmt, in der die Richtlinien angewendet werden. Die Standardrichtlinie wird immer zuletzt angewendet.
+- **Die Priorität** der Richtlinie: Für jeden Richtlinientyp (Antispam, An malware, Antiphishing usw.) gibt es eine Standardrichtlinie, die für alle gilt, Sie können jedoch benutzerdefinierte Richtlinien erstellen, die für bestimmte Benutzer gelten. Jede benutzerdefinierte Richtlinie hat einen Prioritätswert, der die Reihenfolge bestimmt, in der die Richtlinien angewendet werden. Die Standardrichtlinie wird immer zuletzt angewendet.
 
   Wenn ein Benutzer in mehreren Richtlinien desselben Typs definiert ist, wird nur die Richtlinie mit der höchsten Priorität auf sie angewendet. Alle verbleibenden Richtlinien dieses Typs werden nicht für den Benutzer ausgewertet (einschließlich der Standardrichtlinie).
 
 Berücksichtigen Sie beispielsweise die folgenden Antiphishingrichtlinien in Microsoft Defender für Office 365, die für dieselben Benutzer gelten, und eine Nachricht, die sowohl als Identitätswechsel als auch als Spoofing identifiziert wird:
 
-  ****
+<br>
 
-  |Richtlinienname|Priorität|Benutzeridentitätswechsel|Antis spoofing|
-  |---|---|---|---|
-  |Richtlinie A|1|Ein|Off|
-  |Richtlinie B|2|Off|Ein|
-  |
+****
+
+|Richtlinienname|Priorität|Benutzeridentitätswechsel|Antis spoofing|
+|---|---|---|---|
+|Richtlinie A|1|Ein|Off|
+|Richtlinie B|2|Off|Ein|
+|
 
 1. Die Nachricht wird als Spoof gekennzeichnet und behandelt, da spoofing eine höhere Priorität (4) hat als der Identitätswechsel des Benutzers (5).
 2. Richtlinie A wird auf die Benutzer angewendet, da sie eine höhere Priorität als Richtlinie B hat.

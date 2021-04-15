@@ -10,16 +10,16 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-maave
 author: martyav
-ms.localizationpriority: medium
+localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: 93e900423fcef1fd357ca50db70e250ef6082dc7
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 38bf768f1a5603fa3da0d7a3acc8f409ed6372de
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570578"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765527"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Konfigurieren und Verwalten von Microsoft Threat Experts-Funktionen über Microsoft 365 Defender
 
@@ -32,7 +32,7 @@ ms.locfileid: "51570578"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 > [!IMPORTANT]
 > Bevor Sie sich bewerben, sollten Sie die Berechtigungsanforderungen für die Microsoft Threat Experts – Targeted Attack Notifications Managed Threat Hunting Service mit Ihrem Microsoft Technical Service-Anbieter und Ihrem Kontoteam besprechen.

@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: ae7dbea7d476e8a8f6198378e1d1bb29e24c37a2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 95c87330eec3cb557e5fea96148d626b7e0ee4b3
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688345"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768914"
 ---
 # <a name="protect-your-network"></a>Schützen Sie Ihr Netzwerk
 
@@ -35,7 +35,7 @@ ms.locfileid: "51688345"
 
 Der Netzwerkschutz reduziert die Angriffsfläche Ihrer Geräte durch internetbasierte Ereignisse. Es verhindert, dass Mitarbeiter eine Anwendung verwenden, um auf gefährliche Domänen zu zugreifen, die Phishingbetrüger, Exploits und andere schädliche Inhalte im Internet hosten können. Der Netzwerkschutz erweitert den Umfang von [Microsoft Defender SmartScreen,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) um den gesamten ausgehenden HTTP-Datenverkehr zu blockieren, der versucht, eine Verbindung mit Quellen mit niedriger Reputation herzustellen (basierend auf der Domäne oder dem Hostnamen).
 
-Der Netzwerkschutz wird unter Windows unterstützt, beginnend mit Windows 10, Version 1709. Der Netzwerkschutz wird auf anderen Betriebssystemen noch nicht unterstützt, der Webschutz wird jedoch mithilfe des neuen Microsoft Edge unterstützt, der auf Chromium basiert. Weitere Informationen finden Sie unter [Web protection](web-protection-overview.md).
+Der Netzwerkschutz wird unter Windows unterstützt, beginnend mit Windows 10, Version 1709. Der Netzwerkschutz wird auf anderen Betriebssystemen noch nicht unterstützt, der Webschutz wird jedoch mit dem neuen Microsoft Edge unterstützt, das auf Chromium basiert. Weitere Informationen finden Sie unter [Web protection](web-protection-overview.md).
 
 Der Netzwerkschutz erweitert den Schutz im [Webschutz](web-protection-overview.md) auf die Betriebssystemebene. Es bietet Webschutzfunktionen in Edge für andere unterstützte Browser und Nicht-Browser-Anwendungen. Darüber hinaus bietet der Netzwerkschutz Sichtbarkeit und Blockierung von Indikatoren für Kompromisse (IoCs) bei Verwendung mit [Endpunkterkennung und -antwort](overview-endpoint-detection-response.md). Der Netzwerkschutz funktioniert z. B. mit Ihren [benutzerdefinierten Indikatoren.](manage-indicators.md)
 

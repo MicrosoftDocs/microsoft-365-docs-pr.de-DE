@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender für Office 365 E5- und ATP P1- und ATP P2-Kunden können jetzt eine 360-Grad-Ansicht jeder E-Mail mit E-Mail-Entitätsseite erhalten.
-ms.openlocfilehash: 7797e9f5965f43b856c2c34df1f99fddf72d5df5
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: e96e83ce5e3af9e61599ab67ce9f91ac797cc6db
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650338"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768758"
 ---
 # <a name="the-email-entity-page"></a>Die Seite „E-Mail-Entität"
 

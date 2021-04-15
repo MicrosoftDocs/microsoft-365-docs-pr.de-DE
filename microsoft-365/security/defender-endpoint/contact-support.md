@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 726a85969dab715a1b6244f14d1bf0259cf301e8
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 4c44e2c73eabcb89c178235bc3ce6738d2322dfa
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163375"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768986"
 ---
-# <a name="contact-microsoft-defender-for-endpoint-support"></a>Kontaktieren des Microsoft Defender for Endpoint-Support
+# <a name="contact-microsoft-defender-for-endpoint-support"></a>Kontaktieren des Microsoft Defender für Endpunkt-Support
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -79,10 +79,10 @@ Falls die vorgeschlagenen Artikel nicht ausreichen, können Sie eine Dienstanfor
 
 Erfahren Sie, wie Sie Supporttickets öffnen, indem Sie sich an den Defender for Endpoint-Support wenden. 
 
+> [!Note]
+> Wenn Sie einen vertrag mit microsoft permier support haben, wird das premier-Tag auf dem Widget angezeigt. Wenn nicht, wenden Sie sich an Ihren Microsoft-Konto-Manager.
 
-
-
-### <a name="contact-support"></a>Support kontaktieren
+### <a name="contact-support"></a>wenden Sie sich an den Support,
 Diese Option ist verfügbar, indem Sie auf das Symbol klicken, das wie ein Headset aussieht. Sie erhalten dann die folgende Seite, um Ihren Supportfall zu übermitteln:
 
 ![Abbildung des Widget "Dienstanforderung öffnen"](images/Support4.png)
@@ -96,4 +96,4 @@ Diese Option ist verfügbar, indem Sie auf das Symbol klicken, das wie ein Heads
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Behandeln von Dienstproblemen](troubleshoot-mdatp.md)
-- [Überprüfen des Dienstzustands](service-status.md)
+- [Überprüfen des Dienststatus](service-status.md)

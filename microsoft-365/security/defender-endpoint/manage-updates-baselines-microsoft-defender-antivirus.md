@@ -7,19 +7,19 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: bf027dd7f5fad032d57d2dd0b686ccd129f568c7
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b70cf96cde7d4dff8e2a4db6ce2469090dba7eb1
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690392"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765611"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Verwalten von Microsoft Defender Antivirus-Updates und Anwenden von Basiswerten
 

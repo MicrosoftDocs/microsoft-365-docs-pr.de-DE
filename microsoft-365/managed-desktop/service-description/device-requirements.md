@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 18422f74d87bbadf014de24849235ce5c25bd614
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: baaebd185389e7ac1f2173aed092141067a5629f
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920468"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768890"
 ---
 # <a name="device-requirements"></a>Geräteanforderungen
 
@@ -46,7 +46,7 @@ Das Gerät muss von einem der folgenden Hersteller hergestellt worden sein:
 Auf dem Gerät muss diese Software vorinstalliert sein:
 
 - Windows 10 Enterprise, Pro oder Pro Workstation Edition
-- die 64-Bit-Version Microsoft Office Klick-und-Ausführen 
+- die 64-Bit-Version von Microsoft 365 Apps for Enterprise 
 - Alle anwendbaren Gerätetreiber
 
 
@@ -57,7 +57,7 @@ Geräte müssen über die folgenden Funktionen verfügen:
 - Aktiviert für den sicheren Start von UEFI 
 - Vertrauenswürdiges Plattformmodul 2.0 
 - Virtualisierungsbasierte Sicherheit 
-- Unterstützt hypervisorgeschützte Codeintegrität 
+- [Hypervisorgeschützte Codeintegrität,](/windows-hardware/drivers/bringup/device-guard-and-credential-guard) die vom BIOS unterstützt wird
 
 Weitere Informationen zu diesen Funktionen und den technologien, die der Dienst verwendet, finden Sie unter [Microsoft Managed Desktop-Technologien](../intro/technologies.md).
 
@@ -72,12 +72,13 @@ Geräte sollten die folgenden Speicher- und Speichergrenzwerte erfüllen oder ü
 
 Wenn das Gerät nach dem 1. Juli 2020 hergestellt wurde, sollte es auch über eine IR-Kamera, einen Fingerabdruckleser oder beides verfügen, um [Windows Hello zu unterstützen.](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
 
-## <a name="recommended-requirements"></a>Empfohlene Anforderungen
+## <a name="recommended-features"></a>Empfohlene Features
 
-Obwohl es sich nicht um absolute Anforderungen handelt, haben Ihre Benutzer eine wesentlich bessere Erfahrung, wenn Sie Geräte mit den folgenden Features auswählen:
+Ihre Benutzer haben eine wesentlich bessere Erfahrung, wenn Sie Geräte mit den folgenden Features auswählen:
 
 - Entweder ein Intel vPro-Plattformprozessor oder ein AMD Ryzen Pro-Prozessor
 - Startlaufwerk des SSD-Typs mit einer Kapazität von mindestens 256 GB
+- Interner Gerätespeicher (RAM) von mindestens 16 GB
 - Unterstützung für modernen Standbymodus
 - Gerät vom Typ Secured-Core-PC
 - Unterstützt Kernel-DMA-Schutz

@@ -27,7 +27,7 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755618"
+ms.locfileid: "51759408"
 ---
 # <a name="about-admin-roles"></a>Info zu Administratorrollen
 

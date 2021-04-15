@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 287ad9adeccd527b756bdd5304d3c89fc1b2d789
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7d12afd27288655f4f5a82eeed24686f27171a7a
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068455"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765395"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender für Endpoint und andere Microsoft-Lösungen
 
@@ -45,7 +45,7 @@ Microsoft Defender for Endpoint bietet eine umfassende Serverschutzlösung, eins
 Mit dem Microsoft Defender for Endpoint-Connector können Sie Warnungen von Microsoft Defender for Endpoint in Azure Sentinel streamen. Auf diese Weise können Sie Sicherheitsereignisse in Ihrer Organisation umfassender analysieren und Playbooks für eine effektive und sofortige Reaktion erstellen.
 
 ### <a name="azure-information-protection"></a>Azure Information Protection
-Schützen Sie vertrauliche Daten, und ermöglichen Sie gleichzeitig die Produktivität am Arbeitsplatz durch Datenermittlung und Datenschutz.
+Wir haben die Azure Information Protection-Integration kürzlich veraltet, da unsere Endpoint DLP-Funktionen eine verbesserte Ermittlungs- und Schutzlösung für vertrauliche Daten enthalten, die auf Endpunktgeräten gespeichert sind und eine bessere Sichtbarkeit und Integration zwischen Lösungen ermöglichen. Dies wurde im folgenden Blog [angekündigt.](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protecting-sensitive-information-on-devices/ba-p/2143555) Es wird empfohlen, dass Kunden zu Endpoint DLP wechseln.
 
 ### <a name="conditional-access"></a>Bedingter Zugriff
 Die dynamische Geräterisikobewertung von Microsoft Defender for Endpoint ist in die Bewertung für bedingten Zugriff integriert und stellt sicher, dass nur sichere Geräte Zugriff auf Ressourcen haben. 
@@ -74,5 +74,5 @@ Mit Microsoft 365 Defender bilden Microsoft Defender für Endpoint und verschied
 ## <a name="related-topics"></a>Verwandte Themen
 - [Konfigurieren der Integration und anderer erweiterter Features](advanced-features.md)
 - [Übersicht über Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
-- [Aktivieren von Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/mtp-enable)
+- [Microsoft 365 Defender aktivieren](https://docs.microsoft.com/microsoft-365/security/defender/mtp-enable)
 - [Schützen von Benutzern, Daten und Geräten mit bedingten Zugriff](conditional-access.md)
