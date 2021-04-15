@@ -30,6 +30,8 @@
               href: service-description/archived-device-list.md
         - name: Gerätedienste
           href: service-description/device-services.md
+        - name: Geräteprofile
+          href: service-description/profiles.md
         - name: Gerätekonfiguration
           href: service-description/device-policies.md
         - name: Sicherheitstechnologien
@@ -153,6 +155,8 @@
           href: working-with-managed-desktop/manage-apps.md
         - name: Arbeiten mit dem App-Steuerelement
           href: working-with-managed-desktop/work-with-app-control.md
+        - name: Ändern des Geräteprofils
+          href: working-with-managed-desktop/change-device-profile.md
         - name: Konfigurierbare Einstellungen
           href: working-with-managed-desktop/config-setting-overview.md
           items:
