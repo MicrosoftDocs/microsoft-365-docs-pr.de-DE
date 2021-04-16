@@ -25,10 +25,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: Fügen Sie Ihre Domäne zu Microsoft 365 im Microsoft 365 Admin Center hinzu, indem Sie einen DNS-Eintrag auf Ihrem DNS-Host hinzufügen. Der Setup-Assistent führt Sie nun durch den Vorgang.
+description: Fügen Sie Ihre Domäne zu Microsoft 365 im Microsoft 365 Admin Center hinzu, indem Sie einen DNS-Eintrag bei Ihrem DNS-Host hinzufügen. Der Setup-Assistent führt Sie nun durch den Vorgang.
 ms.openlocfilehash: 747de5f61dc9fce53f82f52b65f701572a56f8d4
 ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/31/2021
 ms.locfileid: "51470881"
@@ -76,16 +76,16 @@ ms.locfileid: "51470881"
     
 5. Wählen Sie aus, wie Sie überprüfen möchten, ob Sie die Domäne besitzen.
     
-    1. Wenn Ihre Domänenregistrierungsstelle [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365)verwendet, [wird](../get-help-with-domains/domain-connect.md) Microsoft Ihre Datensätze automatisch einrichten, indem Sie sich bei Ihrer Registrierungsstelle anmelden und die Verbindung zu Microsoft 365 bestätigen. Sie werden an das Admin Center zurückgegeben, und Microsoft überprüft dann automatisch Ihre Domäne.
+    1. Wenn Ihre Domänenregistrierungsstelle [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365) verwendet, richtet Microsoft [Ihre Einträge automatisch ein](../get-help-with-domains/domain-connect.md). Hierfür müssen Sie sich bei Ihrer Registrierungsstelle anmelden und die Verbindung zu Microsoft 365 bestätigen. Sie werden zum Admin Center zurückgeführt, und Microsoft überprüft dann Ihre Domäne automatisch.
     2. Sie können einen TXT-Eintrag zur Überprüfung Ihrer Domäne verwenden. Wählen Sie dies und dann **Weiter** aus, um Anleitungen dazu anzuzeigen, wie Sie diesen DNS-Eintrag zur Website Ihrer Registrierungsstelle hinzufügen. Nachdem Sie den Eintrag hinzugefügt haben, kann die Überprüfung bis zu 30 Minuten dauern. 
-    3. Sie können der Website Ihrer Domäne eine Textdatei hinzufügen. Wählen Sie die TXT-Datei aus dem Setup-Assistenten aus, und laden Sie sie dann in den Ordner der obersten Ebene Ihrer Website hoch. Der Pfad zur Datei sollte ähnlich aussehen wie: `http://mydomain.com/ms39978200.txt` . Wir bestätigen, dass Sie DerEnt der Domäne sind, indem wir die Datei auf Ihrer Website suchen.
+    3. Sie können der Website Ihrer Domäne eine Textdatei hinzufügen. Wählen Sie die TXT-Datei aus dem Setup-Assistenten aus, laden Sie sie herunter, und laden Sie sie dann in den Ordner der obersten Ebene Ihrer Website hoch. Der Pfad zu der Datei sollte ähnlich wie dieser aussehen: `http://mydomain.com/ms39978200.txt`. Wir werden überprüfen, ob Sie die Domänen besitzen, indem wir die Datei auf Ihrer Website suchen.
     
-6. Wählen Sie aus, wie Sie die für die Verwendung Ihrer Domäne von Microsoft erforderlichen DNS-Änderungen vornehmen möchten.
+6. Wählen Sie aus, wie Sie die erforderlichen DNS-Änderungen vornehmen möchten, damit Microsoft Ihre Domäne verwenden kann.
     
-    1. Wählen **Sie Hinzufügen der DNS-Einträge** für mich aus, wenn Ihre Registrierungsstelle Domain [Connect](#domain-connect-registrars-integrating-with-microsoft-365)unterstützt, und [Microsoft](../get-help-with-domains/domain-connect.md) wird Ihre Einträge automatisch einrichten, indem Sie sich bei Ihrer Registrierungsstelle anmelden und die Verbindung zu Microsoft 365 bestätigen.
-    2. Wählen **Sie I'll add the DNS records myself** if you want to attach only specific Microsoft 365 services to your domain or if you want to skip this for now and do this later. **Wählen Sie diese Option aus, wenn Sie genau wissen, was Sie tun.**
+    1. Wählen Sie **DNS-Einträge für mich hinzufügen**, falls Ihre Domänenregistrierungsstelle [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365) unterstützt. Microsoft wird dann [Ihre Einträge automatisch einrichten](../get-help-with-domains/domain-connect.md). Hierfür müssen Sie sich bei Ihrer Registrierungsstelle anmelden und die Verbindung zu Microsoft 365 bestätigen.
+    2. Wählen Sie **Ich füge die DNS-Einträge selbst hinzu** aus, wenn Sie nur bestimmte Microsoft 365-Dienste zu Ihrer Domäne hinzufügen oder diesen Schritt zunächst überspringen und erst zu einem späteren Zeitpunkt ausführen möchten. **Wählen Sie diese Option aus, wenn Sie genau wissen, was Sie tun.**
 
-7. Wenn Sie selbst *DNS-Einträge*  hinzufügen möchten, wählen Sie **Weiter** aus, und Es wird eine Seite mit allen Datensätzen angezeigt, die Sie zur Registrierungsstellenwebsite hinzufügen müssen, um Ihre Domäne einrichten zu können. 
+7. Wenn Sie ausgewählt haben, dass Sie *DNS-Einträge selbst hinzufügen* möchten, klicken Sie auf **Weiter**. Anschließend wird eine Seite mit allen Einträgen angezeigt, die Sie zur Website Ihrer Registrierungsstelle hinzufügen müssen, um Ihre Domäne einzurichten. 
 
     Wenn das Portal Ihre Registrierungsstelle nicht erkennt, können Sie [diesen allgemeinen Anleitungen folgen](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
     
@@ -93,13 +93,13 @@ ms.locfileid: "51470881"
     
     Wenn Sie den DNS-Hostinganbieter oder die Domänenregistrierungsstelle für Ihre Domäne nicht kennen, lesen Sie [Finden Ihrer Domänenregistrierungsstelle oder Ihres DNS-Hostinganbieters](../get-help-with-domains/find-your-domain-registrar.md).
     
-    Wenn Sie später warten möchten, deaktivieren Sie entweder die Auswahl aller Dienste, und klicken Sie auf **Weiter**, oder wählen Sie im vorherigen Schritt domänenverbindung die Option **Weitere Optionen** aus, und wählen Sie diese option für den Moment **überspringen aus.**
+    Wenn Sie auf einen späteren Zeitpunkt warten möchten, deaktivieren Sie entweder die Auswahl aller Dienste, und klicken Sie auf **Weiter**, oder wählen Sie im vorherigen Schritt für die Domänenverbindung **Weitere Optionen** und dann **Dies vorerst überspringen** aus.
     
-8. Wählen Sie **Fertig stellen** aus. Sie haben es geschafft!
+8. Klicken Sie auf **Fertigstellen**. Sie haben es geschafft!
 
 ## <a name="add-or-edit-custom-dns-records"></a>Hinzufügen oder Bearbeiten von benutzerdefinierten DNS-Einträgen
 
-Führen Sie die folgenden Schritte aus, um einen benutzerdefinierten Datensatz für eine Website oder einen Drittanbieterdienst hinzuzufügen.
+Führen Sie die folgenden Schritte aus, um einen benutzerdefinierten Eintrag für eine Website oder den Dienst eines Drittanbieters hinzuzufügen.
 
 1. Melden Sie sich beim Microsoft Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> an.
 
@@ -107,40 +107,40 @@ Führen Sie die folgenden Schritte aus, um einen benutzerdefinierten Datensatz f
 
 3. Wählen Sie auf der Seite **Domänen** eine Domäne aus. 
     
-4. Wählen **Sie unter #A0** **benutzerdefinierte Datensätze aus.** wählen Sie dann **Neuer benutzerdefinierter Datensatz aus.**
+4. Wählen Sie unter **DNS-Einstellungen** die Option **Benutzerdefinierte Einträge** und dann **Neuer benutzerdefinierter Eintrag** aus.
 
 5. Wählen Sie den Typ des DNS-Eintrags aus, den Sie hinzufügen möchten, und geben Sie die Informationen für den neuen Eintrag ein.
     
-6. Wählen Sie **Speichern** aus.
+6. Klicken Sie auf **Speichern**.
 
-## <a name="registrars-with-domain-connect"></a>Registrierungsstellen mit Domänen verbinden
+## <a name="registrars-with-domain-connect"></a>Registrierungsstellen mit Domain Connect
 
-[Domain](https://www.domainconnect.org/) Connect-aktivierte Registrierungsstellen ermöglicht es Ihnen, Ihre Domäne in einem Drei-Schritt-Prozess, der Minuten dauert, zu Microsoft 365 hinzuzufügen. 
+Registrierungsstellen, die [Domain Connect](https://www.domainconnect.org/) unterstützen, ermöglichen es Ihnen, Ihre Domäne in einem dreistufigen Prozess zu Microsoft 365 hinzuzufügen, der nur wenige Minuten dauert. 
   
-Im Assistenten bestätigen wir nur, dass Sie der Domänenname sind, und richten dann automatisch die Datensätze Ihrer Domäne ein, damit E-Mails an Microsoft 365 und andere Microsoft 365-Dienste wie Teams mit Ihrer Domäne funktionieren.
+Im Assistenten werden wir nur überprüfen, ob Sie der Besitzer der Domäne sind. Anschließend werden die Einträge der Domäne automatisch eingerichtet, damit E-Mails bei Microsoft 365 eingehen und andere Microsoft 365-Dienste wie Microsoft Teams mit Ihrer Domäne verwendet werden können.
   
 > [!NOTE]
-> Stellen Sie sicher, dass Sie alle Popupblocker in Ihrem Browser deaktivieren, bevor Sie den Setup-Assistenten starten.
+> Stellen Sie sicher, dass alle Popupblocker in Ihrem Browser deaktiviert sind, bevor Sie den Setup-Assistenten starten.
   
-### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Integration von Domänen-Connect-Registrierungsstellen in Microsoft 365
+### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Domain Connect-Registrierungsstellen, die eine Microsoft 365-Integration ermöglichen
 
-- [1 &amp; 1 IONOS](https://www.1and1.com/)
+- [1&amp;1 IONOS](https://www.1and1.com/)
 - [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress.com](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
-- SecureServer oder WildWestDomains (GoDaddy-Vertriebspartner, die SecureServer-DNS-Hosting verwenden)
+- SecureServer oder WildWestDomains (GoDaddy-Wiederverkäufer, die SecureServer DNS-Hosting verwenden)
     - Beispiele:
         - [DomainsPricedRight](https://www.domainspricedright.com/products/domain-registration)
         - [DomainRightNow](https://www.domainrightnow.com/)
 
-### <a name="what-happens-to-my-email-and-website"></a>Was geschieht mit meiner E-Mail und Website?
+### <a name="what-happens-to-my-email-and-website"></a>Was geschieht mit meinen E-Mails und meiner Website?
 
-Nachdem Sie das Setup abgeschlossen haben, wird der MX-Eintrag für Ihre Domäne auf Microsoft 365 aktualisiert, und alle E-Mails für Ihre Domäne werden an Microsoft 365 gesendet. Stellen Sie sicher, dass Sie Benutzer hinzugefügt und Postfächer in Microsoft 365 für alle Benutzer eingerichtet haben, die E-Mails in Ihrer Domäne erhalten!
+Nachdem Sie das Setup abgeschlossen haben, wird der MX-Eintrag für Ihre Domäne aktualisiert, damit er auf Microsoft 365 verweist. Daraufhin gehen sämtliche E-Mails für Ihre Domäne bei Microsoft 365 ein. Stellen Sie sicher, dass Sie in Microsoft 365 Benutzer und Postfächer für alle Personen hinzugefügt und erstellt haben, die in Ihrer Domäne E-Mails erhalten.
   
-Wenn Sie über eine Website verfügen, die Sie für Ihr Unternehmen verwenden, funktioniert sie weiterhin wie zuvor. Die Schritte zum Einrichten von Domänen verbinden wirken sich nicht auf Ihre Website aus.
+Wenn Sie über eine Website verfügen, die Sie für Ihr Unternehmen verwenden, funktioniert diese weiterhin wie zuvor. Die Einrichtungsschritte für Domain Connect wirken sich nicht auf Ihre Website aus.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

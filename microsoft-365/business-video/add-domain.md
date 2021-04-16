@@ -20,10 +20,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie Ihrem Abonnement eine weitere Domäne hinzufügen.
+description: Erfahren Sie, wie Sie Ihrem Abonnement eine weitere Domäne hinzufügen können.
 ms.openlocfilehash: 8899cb9667ffa080746ca9173b61897f9c5db399
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51579001"
@@ -32,24 +32,24 @@ ms.locfileid: "51579001"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
 
-Ihr Unternehmen benötigt möglicherweise mehrere Domänennamen für verschiedene Zwecke. Sie können z. B. eine andere Schreibweise Ihres Firmennamens hinzufügen, da Kunden sie bereits verwenden und ihre Kommunikation Sie nicht erreicht hat.
+In Ihrem Unternehmen könnten mehrere Domänennamen für unterschiedliche Zwecke benötigt werden. Beispielsweise könnte es sein, dass Sie eine andere Schreibweise für Ihren Firmennamen hinzufügen möchten, weil Kunden diese bereits verwenden und ihre Mitteilungen bei Ihnen nicht angekommen sind.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Wählen Sie im Microsoft 365 Admin Center **Setup aus.**
-1. Wählen **Sie unter Einrichten Ihrer benutzerdefinierten Domäne die** Option Ansicht **aus.**
-1. Wählen **Sie Verwalten** und dann Domäne hinzufügen **aus.**
-1. Geben Sie den neuen Domänennamen ein, den Sie hinzufügen möchten, und wählen Sie dann **Weiter aus.**
-1. Melden Sie sich bei Ihrer Domänenregistrierungsstelle an, in diesem Fall GoDaddy, und wählen Sie dann **Weiter aus.**
-1. Wenn Sie dazu aufgefordert werden, melden Sie sich bei Ihrer Registrierungsstelle an, und wählen Sie dann **Autorisieren aus.**
-1. Wählen **Sie Hinzufügen der DNS-Einträge für mich** aus, und wählen Sie dann Weiter **aus.**
-1. Wählen Sie die Dienste für Ihre neue Domäne aus, und aktivieren Sie die Kontrollkästchen für alle Dienste, die von einer anderen Domäne verarbeitet werden. Wenn Sie beispielsweise nur die neue Domäne für E-Mails verwenden möchten, wählen Sie **Exchange** aus, und aktivieren Sie die Kontrollkästchen für **Skype for Business** und Mobile Device Management für Office **365**.
-1. Wählen **Sie Weiter**, **Autorisieren**, **Weiter** und dann Fertig **stellen aus.** Ihre neue Domäne wurde hinzugefügt.
+1. Wählen Sie im Microsoft 365 Admin Center **Einrichten** aus.
+1. Wählen Sie unter **Benutzerdefinierte Domäne einrichten** die Option **Anzeigen** aus.
+1. Wählen Sie **Verwalten** und dann **Domäne hinzufügen** aus.
+1. Geben Sie den Namen der Domäne ein, die Sie hinzufügen möchten, und klicken Sie auf **Weiter**.
+1. Melden Sie sich bei Ihrer Domänenregistrierungsstelle an, in diesem Fall GoDaddy, und klicken Sie dann auf **Weiter**.
+1. Melden Sie sich bei der Registrierungsstelle an, sofern Sie dazu aufgefordert werden, und wählen Sie dann **Autorisieren** aus.
+1. Wählen Sie **DNS-Einträge für mich hinzufügen** und dann **Weiter** aus.
+1. Wählen Sie die Dienste für Ihre neue Domäne aus, und deaktivieren Sie die Kontrollkästchen für alle Dienste, die von einer anderen Domäne verarbeitet werden. Wenn Sie beispielsweise die neue Domäne nur für E-Mails verwenden möchten, wählen Sie **Exchange** aus, und deaktivieren Sie die Kontrollkästchen für **Skype for Business** und **Verwaltung mobiler Geräte für Office 365**.
+1. Wählen Sie **Weiter**, **Autorisieren**, **Weiter** und dann **Fertigstellen** aus. Ihre neue Domäne wurde hinzugefügt.
 
-Zum Empfangen von E-Mails in Ihrer neuen Domäne müssen Sie für jeden Benutzer einen neuen E-Mail-Alias hinzufügen:
+Um E-Mails in Ihrer neuen Domäne zu empfangen, müssen Sie für jeden Benutzer einen neuen E-Mail-Alias hinzufügen:
 
-1. Wählen **Sie Benutzer**, **Aktive** Benutzer und dann den Benutzer aus, dem der neue Alias zugewiesen wird.
-1. Wählen **Sie Verwalten von E-Mail-Aliasen** aus, und fügen Sie dann einen Alias **hinzu.**
+1. Wählen Sie **Benutzer**, **Aktive Benutzer** und dann den Benutzer aus, dem der neue Alias zugewiesen werden soll.
+1. Wählen Sie **Verwalten von E-Mail-Aliasen** und dann **Alias hinzufügen** aus.
 1. Geben Sie den Benutzernamen ein, und wählen Sie dann in der Dropdownliste die neue Domäne aus.
-1. Wählen **Sie Änderungen speichern** aus, und schließen Sie das Fenster.
+1. Klicken Si auf **Änderungen speichern**, und schließen Sie dann das Fenster.
 1. Wiederholen Sie diese Schritte für jeden Benutzer, der E-Mails in der neuen Domäne empfangen soll.
