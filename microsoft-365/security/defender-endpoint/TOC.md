@@ -85,6 +85,65 @@
 ##### [Anpassen der Regeln zur Verringerung der Angriffsfläche](customize-attack-surface-reduction.md)
 ##### [Anzeigen der Ereignisse zur Verringerung der Angriffsfläche](event-views.md)
 
+### Schutzlösungen der nächsten Generation
+#### [Übersicht über Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
+#### [Microsoft Defender Antivirus auf Windows Server](microsoft-defender-antivirus-on-windows-server.md)
+#### [Noch besser zusammen: Microsoft Defender Antivirus und Microsoft Defender für Endpunkt](why-use-microsoft-defender-antivirus.md)
+#### [Noch besser zusammen: Microsoft Defender Antivirus und Office 365](office-365-microsoft-defender-antivirus.md)
+#### [Schutz über die Cloud und Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
+#### [Microsoft Defender Antivirus beurteilen](evaluate-microsoft-defender-antivirus.md)
+#### [Konfigurieren von Microsoft Defender Antivirus-Features](configure-microsoft-defender-antivirus-features.md)
+##### [Über die Cloud bereitgestellten Netzwerkschutz aktivieren](enable-cloud-protection-microsoft-defender-antivirus.md)
+##### [Stufe des über die Cloud bereitgestellten Schutzes festlegen](specify-cloud-protection-level-microsoft-defender-antivirus.md)
+##### [Konfigurieren und Überprüfen von Microsoft Defender Antivirus-Netzwerkverbindungen](configure-network-connections-microsoft-defender-antivirus.md)
+##### [Schützen von Sicherheitseinstellungen mit Manipulationsschutz](prevent-changes-to-security-settings-with-tamper-protection.md)
+##### [Aktivieren von „Bei erster Anzeige blockieren“](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+##### [Konfigurieren des Timeoutzeitraums für Cloudblockierung](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
+##### [Konfigurieren von verhaltensbasiertem, heuristischem und Echtzeitschutz](configure-protection-features-microsoft-defender-antivirus.md)
+##### [Erkennen und Blockieren von potenziell unerwünschten Anwendungen](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
+##### [Aktivieren und Konfigurieren des immer aktivierten Schutzes von Microsoft Defender Antivirus in einer Gruppenrichtlinie](configure-real-time-protection-microsoft-defender-antivirus.md)
+##### [Festlegen von Gegenmaßnahmen für Microsoft Defender Antivirus-Erkennungen](configure-remediation-microsoft-defender-antivirus.md)
+##### [Konfigurieren geplanter schneller oder vollständiger Microsoft Defender Antivirus-Scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+##### [Verwendung von eingeschränkten periodischen Scans in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
+#### [Kompatibilität mit anderen Sicherheitsprodukten](microsoft-defender-antivirus-compatibility.md)
+
+#### [Herunterladen von Updates für Antivirensoftware und Antimalware](manage-updates-baselines-microsoft-defender-antivirus.md)
+##### [Verwalten der Quellen für Updates für Microsoft Defender Antivirus-Schutz](manage-protection-updates-microsoft-defender-antivirus.md)
+##### [Verwalten des Zeitplans für Download und Anwendung von Schutzupdates](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+##### [Verwalten von Updates und Scans von Microsoft Defender Antivirus für veraltete Endpunkte](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+##### [Verwalten von ereignisbasierten erzwungenen Updates](manage-event-based-updates-microsoft-defender-antivirus.md)
+##### [Verwalten von Updates für Mobilgeräte und virtuelle Computer (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+
+#### [Verwalten von Microsoft Defender Antivirus für Ihre Organisation](configuration-management-reference-microsoft-defender-antivirus.md)
+##### [Verwenden von Microsoft Endpoint Manager zum Verwalten von Microsoft Defender Antivirus](use-intune-config-manager-microsoft-defender-antivirus.md)
+##### [Verwenden von Gruppenrichtlinieneinstellungen zum Verwalten von Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
+##### [Verwenden von PowerShell-Cmdlets zum Verwalten von Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+##### [Verwenden von Windows-Verwaltungsinstrumentation (WMI) zum Verwalten von Microsoft Defender Antivirus](use-wmi-microsoft-defender-antivirus.md)
+##### [Verwenden des mpcmdrun.exe-Tools zum Verwalten von Microsoft Defender Antivirus](command-line-arguments-microsoft-defender-antivirus.md)
+
+#### [Bereitstellung und Berichte zu Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
+##### [Bereitstellen und Aktivieren von Microsoft Defender Antivirus](deploy-microsoft-defender-antivirus.md)
+##### [Bereitstellungshandbuch für Microsoft Defender Antivirus in einer VDI-Umgebung (Virtual Desktop Infrastructure)](deployment-vdi-microsoft-defender-antivirus.md)
+##### [Berichte zu Microsoft Defender Antivirus](report-monitor-microsoft-defender-antivirus.md)
+
+#### [Scans und Gegenmaßnahmen](review-scan-results-microsoft-defender-antivirus.md)
+##### [Konfigurieren und Ausführen von bedarfsgesteuerten Scans durch Microsoft Defender Antivirus](run-scan-microsoft-defender-antivirus.md)
+##### [Ausführen und Überprüfen der Ergebnisse eines Microsoft Defender Offline-Scans](microsoft-defender-offline.md)
+##### [Konfigurieren der Scanoptionen von Microsoft Defender Antivirus](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+##### [Wiederherstellen von in Quarantäne gesetzten Dateien in Microsoft Defender Antivirus](restore-quarantined-files-microsoft-defender-antivirus.md)
+
+#### [Microsoft Defender Antivirus-Ausschlüsse](configure-exclusions-microsoft-defender-antivirus.md)
+##### [Ausschluss basierend auf Dateierweiterung und Ordnerspeicherort](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+##### [Ausschluss von Dateien, die von Prozessen geöffnet sind](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+##### [Ausschlüsse für Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+##### [Häufige Fehler, die beim Festlegen von Ausschlüssen vermieden werden sollten](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+
+#### Microsoft Defender Antivirus – Problembehandlung
+##### [Behandeln von Problemen bei der Microsoft Defender Antivirus-Berichterstattung in Update Compliance](troubleshoot-reporting.md)
+##### [Überprüfen von Ereignisprotokollen und Fehlercodes zum Behandeln von Problemen mit Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
+##### [Behandeln von Problemen mit Microsoft Defender Antivirus bei der Migration von einer Drittanbieterlösung](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
+
+
 #### [Hardwarebasierte Isolation]()
 ##### [Hardwarebasierte Isolation in Windows 10](overview-hardware-based-isolation.md)
 
@@ -115,16 +174,23 @@
 ##### [Kontrollierte Ordnerzugriff aktivieren](enable-controlled-folders.md)
 ##### [Kontrollierte Ordnerzugriff anpassen](customize-controlled-folders.md)
 
+
+### [Geräteermittlung]()
+#### [Übersicht über die Geräteermittlung](device-discovery.md)
+#### [Konfigurieren der Geräteermittlung](configure-device-discovery.md)
+#### [Häufig gestellte Fragen (FAQ) zur Geräteermittlung](device-discovery-faq.md)
+
+
 ### [Netzwerkgeräte](network-devices.md)
 
-### [Microsoft Defender für Endpunkt für Mac]()
-#### [Übersicht über Microsoft Defender für Endpunkt für Mac](microsoft-defender-endpoint-mac.md)
+### [Microsoft Defender für Endpunkt unter Mac OS]()
+#### [Übersicht über Microsoft Defender für Endpunkt unter macOS](microsoft-defender-endpoint-mac.md)
 #### [Neuerungen](mac-whatsnew.md)
 
 #### [Bereitstellen]()
 ##### [Microsoft-Intune-basierte Bereitstellung](mac-install-with-intune.md)
 ##### [JAMF-Pro-basierte Bereitstellung]()
-###### [Installation von Microsoft Defender für Endpunkt für macOS mit Jamf Pro](mac-install-with-jamf.md)
+###### [Installation von Microsoft Defender für Endpunkt unter macOS mit Jamf Pro](mac-install-with-jamf.md)
 ###### [Anmelden bei Jamf Pro](mac-install-jamfpro-login.md)
 ###### [Gerätegruppen einrichten](mac-jamfpro-device-groups.md)
 ###### [Einrichten von Richtlinien](mac-jamfpro-policies.md)
@@ -155,18 +221,18 @@
 #### [Ressourcen](mac-resources.md)
 
 ### [Microsoft Defender für Endpunkt für iOS]()
-#### [Übersicht über Microsoft Defender für Endpunkt für iOS](microsoft-defender-endpoint-ios.md)
+#### [Übersicht über Microsoft Defender für Endpunkt unter iOS](microsoft-defender-endpoint-ios.md)
 
 #### [Bereitstellen]()
-##### [Bereitstellen von Microsoft Defender für Endpunkt für iOS über Intune](ios-install.md)
+##### [Bereitstellen von Microsoft Defender für Endpunkt unter iOS über Intune](ios-install.md)
 
 #### [Konfigurieren]()
 ##### [Konfigurieren von iOS-Features](ios-configure-features.md)
 #### [Datenschutz](ios-privacy.md)
 
 
-### [Microsoft Defender für Endpunkt für Linux]()
-#### [Übersicht über Microsoft Defender für Endpunkt für Linux](microsoft-defender-endpoint-linux.md)
+### [Microsoft Defender für Endpunkt unter Linux]()
+#### [Übersicht über Microsoft Defender für Endpunkt unter Linux](microsoft-defender-endpoint-linux.md)
 #### [Neuigkeiten](linux-whatsnew.md)
 #### [Bereitstellen]()
 ##### [Manuelle Bereitstellung](linux-install-manually.md)
@@ -180,7 +246,7 @@
 ##### [Konfiguration von statischen Proxys](linux-static-proxy-configuration.md)
 ##### [Festlegen von Einstellungen](linux-preferences.md)
 ##### [Erkennen und Blockieren von potenziell unerwünschten Anwendungen](linux-pua.md)
-##### [Scans planen mit Microsoft Defender für Endpunkt für Linux](linux-schedule-scan-atp.md)
+##### [Scans planen mit Microsoft Defender für Endpunkt unter Linux](linux-schedule-scan-atp.md)
 ##### [Planen eines Updates von Microsoft Defender für Endpunkt (Linux)](linux-update-MDE-Linux.md)
 
 #### [Problembehandlung]()
@@ -192,17 +258,17 @@
 #### [Datenschutz](linux-privacy.md)
 #### [Ressourcen](linux-resources.md)
 
-### [Microsoft Defender für Endpunkt für Android]()
-#### [Übersicht über Microsoft Defender für Endpunkt für Android](microsoft-defender-endpoint-android.md)
+### [Microsoft Defender für Endpunkt unter Android]()
+#### [Übersicht über Microsoft Defender für Endpunkt unter Android](microsoft-defender-endpoint-android.md)
 
 #### [Bereitstellen]()
-##### [Bereitstellen von Microsoft Defender für Endpunkt für Android mit Microsoft Intune](android-intune.md)
+##### [Bereitstellen von Microsoft Defender für Endpunkt unter Android mit Microsoft Intune](android-intune.md)
 
 #### [Konfigurieren]()
-##### [Konfigurieren von Funktionen von Microsoft Defender für Endpunkt für Android](android-configure.md)
+##### [Konfigurieren von Funktionen von Microsoft Defender für Endpunkt unter Android](android-configure.md)
 
 #### [Datenschutz]()
-##### [Microsoft Defender für Endpunkt für Android – Datenschutzinformationen](android-privacy.md)
+##### [Microsoft Defender für Endpunkt unter Android – Datenschutzinformationen](android-privacy.md)
 
 #### [Problembehandlung]()
 ##### [Behandeln von Problemen](android-support-signin.md)
