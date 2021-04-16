@@ -1,6 +1,6 @@
 ---
 title: Möglichkeiten für eine Partnerschaft mit einem verwalteten Sicherheitsdienstanbieter (Managed Security Service Provider, MSSP)
-description: Verstehen der Integration von Microsoft Defender ATP in anbieter für verwaltete Sicherheitsdienste (Managed Security Service Provider, MSSP)
+description: Verstehen der Integration von Microsoft Defender for Endpoint in anbieter für verwaltete Sicherheitsdienste (Managed Security Service Provider, MSSP)
 keywords: mssp, Integration, verwaltet, Sicherheit, Dienst, Anbieter
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3f357553e259075b3a47d6866faee06c98036a8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 790abaad5506a77b70cb8d772e83289d8dbd791f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186581"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860785"
 ---
 # <a name="managed-security-service-provider-partnership-opportunities"></a>Möglichkeiten für die Partnerschaft mit verwalteten Sicherheitsdienstanbietern
 
@@ -49,7 +49,7 @@ Defender for Endpoint fügt diesem Szenario Partnerschaftsmöglichkeiten hinzu u
 
 
 ## <a name="related-topic"></a>Verwandtes Thema
-- [Konfigurieren der Integration von verwalteten Sicherheitsdienstanbietern](configure-mssp-support.md)
+- [Konfigurieren von verwalteten Sicherheitsdienstanbietern (Managed Security Service Provider, MSSP)](configure-mssp-support.md)
 
 
 

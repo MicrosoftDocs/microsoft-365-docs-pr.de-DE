@@ -1,6 +1,6 @@
 ---
-title: Einrichten der Microsoft Defender ATP für macOS-Richtlinien in Jamf Pro
-description: Informationen zum Einrichten der Microsoft Defender ATP für macOS-Richtlinien in Jamf Pro
+title: Einrichten der Microsoft Defender for Endpoint für macOS-Richtlinien in Jamf Pro
+description: Informationen zum Einrichten des Microsoft Defender Endpoint für macOS-Richtlinien in Jamf Pro
 keywords: policies, microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79f5837ae6bae6e6a9d952d90605f4cf7b31262e
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 1a00d1c0863db7f4f5f853312f202b5e985b1512
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765131"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862271"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Einrichten der Microsoft Defender for Endpoint für macOS-Richtlinien in Jamf Pro
 
@@ -125,7 +125,7 @@ Sie müssen die folgenden Schritte ausführen:
 
     ![Abbildung von Zielen](images/jamfpro-targets.png) 
 
-11. Klicken Sie auf **Speichern**.
+11. Wählen Sie **Speichern** aus.
 
     ![Abbildung von Bereitstellungszielcomputern](images/jamfpro-deployment-target.png)
 
@@ -318,7 +318,7 @@ Sie müssen die folgenden Schritte ausführen:
     >![Abbildung der Konfigurationseinstellungen intune-Dateiupload](images/8e69f867664668796a3b2904896f0436.png)
 
 
-11. Klicken Sie auf **Speichern**. 
+11. Wählen Sie **Speichern** aus. 
 
     ![Abbildung der Konfigurationseinstellungen Bild speichern](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
 
@@ -360,7 +360,7 @@ Diese Schritte gelten für macOS 10.15 (Catalina) oder neuer.
         - **Verteilungsmethode**: Automatisch installieren *(Standardeinstellung)*
         - **Ebene**: Computerebene *(Standard)*
 
-        ![Abbildung der Konfigurationsprofileinstellungen mdatpmdav](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![Abbildung des neuen MacOS-Konfigurationsprofilbildschirms](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
     - Registerkarte Benachrichtigungen, klicken **Sie auf Hinzufügen**, und geben Sie die folgenden Werte ein:
         - **Bundle-ID**: `com.microsoft.wdav.tray`
@@ -460,7 +460,7 @@ Diese Schritte gelten für macOS 10.15 (Catalina) oder neuer.
 
     ![Abbildung der Konfigurationseinstellung uplimg](images/4ec20e72c8aed9a4c16912e01692436a.png)
 
-11. Klicken Sie auf **Speichern**.
+11. Wählen Sie **Speichern** aus.
 
     ![Abbildung der Konfigurationseinstellung saveimg](images/253274b33e74f3f5b8d475cf8692ce4e.png)
 
@@ -561,7 +561,7 @@ Diese Schritte gelten für macOS 10.15 (Catalina) oder neuer.
 
 15. Klicken Sie auf **Hinzufügen**. 
 
-16. Klicken Sie auf **Speichern**. 
+16. Wählen Sie **Speichern** aus. 
     
 17. Wählen Sie **Fertig** aus.
     
@@ -616,7 +616,7 @@ Alternativ können Sie [fulldisk.mobileconfig](https://github.com/microsoft/mdat
 
     ![Abbildung der Konfigurationseinstellungen Zum Hinzufügen von Bildern](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. Klicken Sie auf **Speichern**.
+9. Wählen Sie **Speichern** aus.
 
     ![Abbildung der Konfigurationseinstellungen saveimag](images/0add8019b85a453b47fa5c402c72761b.png)
 
@@ -671,7 +671,7 @@ Alternativ können Sie [kext.mobileconfig](https://github.com/microsoft/mdatp-xp
 
    ![Abbildung der Konfigurationseinstellungen addima](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. Klicken Sie auf **Speichern**.
+9. Wählen Sie **Speichern** aus.
 
    ![Abbildung des sysext-Bereichs der Konfigurationseinstellungen](images/sysext-scope.png)
 
@@ -721,7 +721,7 @@ Diese Schritte gelten für macOS 10.15 (Catalina) oder neuer.
 
     ![Abbildung der Konfigurationseinstellungen adim](images/0dde8a4c41110dbc398c485433a81359.png)
 
-7. Klicken Sie auf **Speichern**.
+7. Wählen Sie **Speichern** aus.
 
     ![Abbildung der Konfigurationseinstellungen savimg netextscop](images/netext-scope.png)
 
@@ -780,7 +780,7 @@ Befolgen Sie die Anweisungen unter [Planen von Scans mit Microsoft Defender for 
     
      ![Abbildung der Registerkarte "Einschränkung der Konfigurationseinstellungen"](images/56dac54634d13b2d3948ab50e8d3ef21.png)
    
-8. Klicken Sie auf **Speichern**. Das Paket wird in Jamf Pro hochgeladen. 
+8. Wählen Sie **Speichern** aus. Das Paket wird in Jamf Pro hochgeladen. 
 
    ![Abbildung der Konfigurationseinstellungen Pack upl jamf pro](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
@@ -808,7 +808,7 @@ Befolgen Sie die Anweisungen unter [Planen von Scans mit Microsoft Defender for 
     ![Image of configuration settings recur checkin](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
   
-13. Klicken Sie auf **Speichern**. 
+13. Wählen Sie **Speichern** aus. 
  
 14. Wählen **Sie Pakete > Konfigurieren aus.**
  
@@ -818,7 +818,7 @@ Befolgen Sie die Anweisungen unter [Planen von Scans mit Microsoft Defender for 
 
     ![Abbildung der Konfigurationseinstellungen MDATP und MDA add](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
-16. Klicken Sie auf **Speichern**.
+16. Wählen Sie **Speichern** aus.
 
     ![Abbildung der Konfigurationseinstellungenavimg](images/9d6e5386e652e00715ff348af72671c6.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Verwalten von Gerätegruppen in Microsoft Defender ATP
+title: Erstellen und Verwalten von Gerätegruppen in Microsoft Defender for Endpoint
 description: Erstellen von Gerätegruppen und Festlegen automatisierter Behebungsstufen für diese Gruppen, indem Sie die regeln, die für die Gruppe gelten, verwechseln
 keywords: Gerätegruppen, Gruppen, Korrektur, Ebene, Regeln,Ad-Gruppe, Rolle, Zuweisen, Rang
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dfc7c04bbde2b7061c92f5a25115b75a2f5b47b5
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: acd24e5c87a74bbb32835ec170a121c5c0b6bb33
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066303"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860303"
 ---
 # <a name="create-and-manage-device-groups"></a>Erstellen und Verwalten von Gerätegruppen
 
@@ -94,5 +94,5 @@ Geräte, die nicht mit Gruppen übereinstimmen, werden der Gruppe Nicht gruppier
 ## <a name="related-topics"></a>Verwandte Themen
 
 - [Verwalten des Portalzugriffs mithilfe der rollenbasierten Zugriffssteuerung](rbac.md)
-- [Erstellen und Verwalten von Gerätetags](machine-tags.md)
+- [Erstellen und Verwalten von Gerätekategorien](machine-tags.md)
 - [Abrufen einer Liste der Mandantengerätegruppen mithilfe der Graph-API](https://docs.microsoft.com/graph/api/device-list-memberof)

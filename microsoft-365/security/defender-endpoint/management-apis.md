@@ -1,7 +1,7 @@
 ---
-title: Übersicht über Verwaltung und APIs
+title: Übersicht über die Verwaltung und APIs
 ms.reviewer: ''
-description: Erfahren Sie mehr über die Verwaltungstools und API-Kategorien in Microsoft Defender ATP
+description: Erfahren Sie mehr über die Verwaltungstools und API-Kategorien in Microsoft Defender for Endpoint
 keywords: onboarding, api, siem, rbac, access, portal, integration, investigation, response, entities, entity, user context, application context, streaming
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 94cfe1cc053be896c137e0c0b9ee02ea53dd2717
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 9e54fb5f2105f0a77c4b63e8d880135005c17168
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187553"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862091"
 ---
-# <a name="overview-of-management-and-apis"></a>Übersicht über Verwaltung und APIs 
+# <a name="overview-of-management-and-apis"></a>Übersicht über die Verwaltung und APIs 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -57,7 +57,7 @@ Defender for Endpoint macht einen großen Teil seiner Daten und Aktionen über e
 
 Die Defender for Endpoint-APIs können in drei gruppen:
 - Microsoft Defender für Endpunkt-APIs 
-- Unformatierte Datenstreaming-API
+- API für das Streaming von Rohdaten
 - SIEM-Integration
 
 ## <a name="microsoft-defender-for-endpoint-apis"></a>Microsoft Defender für Endpunkt-APIs
@@ -71,7 +71,7 @@ Die **Untersuchungs-API** macht den Reichhaltigen von Defender for Endpoint verf
 
 Die **Reaktions-API** macht die Möglichkeit verfügbar, Aktionen im Dienst und auf Geräten zu ergreifen, sodass Kunden Indikatoren abrufen, Einstellungen verwalten, Warnungsstatus verwalten sowie Reaktionsaktionen auf Geräten programmgesteuert ausführen können, z. B. Geräte vom Netzwerk isolieren, Quarantänedateien und andere. 
 
-## <a name="raw-data-streaming-api"></a>Unformatierte Datenstreaming-API 
+## <a name="raw-data-streaming-api"></a>API für das Streaming von Rohdaten 
 Die Raw Data Streaming-API von Defender for Endpoint bietet Kunden die Möglichkeit, Echtzeitereignisse und Warnungen von ihren Instanzen innerhalb eines einzelnen Datenstroms zu senden, was einen Mechanismus für die Zustellung mit niedriger Latenz und hohem Durchsatz bietet.
 
 Die Defender for Endpoint-Ereignisinformationen werden zur langfristigen Datenaufbewahrung direkt an den Azure-Speicher oder an Azure Event Hubs zur Nutzung durch Visualisierungsdienste oder zusätzliche Datenverarbeitungsmodule gesendet. 
@@ -85,5 +85,5 @@ Wenn Sie die Integration von Sicherheitsinformationen und Ereignisverwaltung (SI
 ## <a name="related-topics"></a>Verwandte Themen
 - [Zugreifen auf die Microsoft Defender for Endpoint-APIs ](apis-intro.md)
 - [Unterstützte APIs](exposed-apis-list.md)
-- [Technische Partnerchancen](partner-integration.md)
+- [Chancen für technische Partner](partner-integration.md)
 

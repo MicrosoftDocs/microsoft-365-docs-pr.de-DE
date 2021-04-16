@@ -1,6 +1,6 @@
 ---
-title: Datenschutz für Microsoft Defender ATP für Mac
-description: Datenschutzsteuerelemente, Konfigurieren von Richtlinieneinstellungen, die sich auf den Datenschutz auswirken, sowie Informationen zu diagnosedaten, die in Microsoft Defender ATP für Mac erfasst werden.
+title: Datenschutz für Microsoft Defender for Endpoint für Mac
+description: Datenschutzsteuerelemente, Konfigurieren von Richtlinieneinstellungen, die sich auf den Datenschutz auswirken, sowie Informationen zu den diagnosedaten, die in Microsoft Defender for Endpoint für Mac gesammelt werden.
 keywords: microsoft, defender, atp, mac, privacy, diagnostic
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bf837dca5f05310045c06178b8fc587f3fc55137
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 26ae83dc8a8b3bb7d686e3674437a12999b5146f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765779"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862235"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Datenschutz für Microsoft Defender for Endpoint unter macOS
 

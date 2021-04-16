@@ -1,6 +1,6 @@
 ---
-title: Onboarding früherer Versionen von Windows auf Microsoft Defender ATP
-description: Onboarding unterstützter früherer Versionen von Windows-Geräten, damit sie Sensordaten an den Microsoft Defender ATP-Sensor senden können
+title: Onboarding früherer Versionen von Windows auf Microsoft Defender for Endpoint
+description: Onboarding unterstützter früherer Versionen von Windows-Geräten, damit sie Sensordaten an den Microsoft Defender for Endpoint-Sensor senden können
 keywords: onboard, windows, 7, 81, oms, sp1, enterprise, pro, down level
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b180e7555bb3339324d3b99956d8f8ad73dc13c3
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 945645e0f20f316c094f746adb6ba193f6806f86
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186389"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861359"
 ---
-# <a name="onboard-previous-versions-of-windows"></a>Onboarding früherer Versionen von Windows
+# <a name="onboard-previous-versions-of-windows"></a>Onboarding von früheren Windows-Versionen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -63,7 +63,7 @@ Die folgenden Schritte sind erforderlich, um diese Integration zu aktivieren:
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint"></a>Installieren und Konfigurieren von Microsoft Monitoring Agent (MMA) zum Melden von Sensordaten an Microsoft Defender for Endpoint
 
-### <a name="before-you-begin"></a>Bevor Sie beginnen
+### <a name="before-you-begin"></a>Vorbereitung
 Überprüfen Sie die folgenden Details, um die Mindestsystemanforderungen zu überprüfen:
 - Installieren des monatlichen Updaterollups vom Februar [2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
   
@@ -102,7 +102,7 @@ Die folgenden Schritte sind erforderlich, um diese Integration zu aktivieren:
 
 Sobald sie abgeschlossen sind, sollten integrierte Endpunkte innerhalb einer Stunde im Portal angezeigt werden.
 
-### <a name="configure-proxy-and-internet-connectivity-settings"></a>Konfigurieren von Proxy- und Internetverbindungseinstellungen
+### <a name="configure-proxy-and-internet-connectivity-settings"></a>Konfigurieren der Einstellungen für Endpunktproxy und Internetkonnektivität für Ihren Azure ATP-Sensor
  
 - Jeder Windows-Endpunkt muss über HTTPS eine Verbindung mit dem Internet herstellen können. Diese Verbindung kann direkt über einen Proxy oder über das [OMS-Gateway hergestellt werden.](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway)
 - Wenn ein Proxy oder eine Firewall standardmäßig den ganzen Datenverkehr blockiert und nur bestimmte Domänen über oder die HTTPS-Überprüfung (SSL-Überprüfung) aktiviert ist, stellen Sie sicher, dass Sie den Zugriff auf [DIE URLs](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)des Defender for Endpoint-Diensts aktivieren.

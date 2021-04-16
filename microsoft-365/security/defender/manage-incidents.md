@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2d2bf18c6cacb377e710f34b74ec8f83bb77d3b1
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: da5a2190a53dfe7f8dd0cc3cf7b410af92ca4ec5
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760064"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861731"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Verwalten von Vorfällen in Microsoft 365 Defender
 
@@ -65,7 +65,7 @@ In Fällen, in denen Sie während der Untersuchung Warnungen von einem Vorfall z
 
 ## <a name="edit-the-incident-name"></a>Bearbeiten des Vorfallnamens
 
-Vorfällen wird automatisch ein Name basierend auf Warnungsattributen zugewiesen, z. B. der Anzahl betroffener Endpunkte, betroffener Benutzer, Erkennungsquellen oder Kategorien. Auf diese Weise können Sie den Umfang des Vorfalls schnell verstehen. Beispiel: *Mehrstufiger Vorfall auf mehreren Endpunkten, die von mehreren Quellen gemeldet wurden.*
+Microsoft 365 Defender weist automatisch einen Namen basierend auf Warnungsattributen zu, z. B. der Anzahl betroffener Endpunkte, betroffener Benutzer, Erkennungsquellen oder Kategorien. Auf diese Weise können Sie den Umfang des Vorfalls schnell verstehen. Beispiel: *Mehrstufiger Vorfall auf mehreren Endpunkten, die von mehreren Quellen gemeldet wurden.*
 
 Sie können den Vorfallnamen im Feld **Vorfallname** im Bereich Vorfall **verwalten** bearbeiten.
 
@@ -97,3 +97,9 @@ Wenn es sich um eine echte Warnung handeln sollte, sollten Sie auch angeben, um 
 ## <a name="add-comments"></a>Kommentare hinzufügen
 
 Sie können einem Vorfall mit dem Feld Kommentar mehrere **Kommentare** hinzufügen. Jeder Kommentar wird den historischen Ereignissen des Vorfalls hinzugefügt. Sie können die Kommentare und den Verlauf eines Vorfalls über den Link **Kommentare und** Verlauf auf der **Seite Zusammenfassung** anzeigen.
+
+## <a name="related-topics"></a>Verwandte Themen
+
+- [Übersicht über Vorfälle](incidents-overview.md)
+- [Priorisieren von Vorfällen](incident-queue.md)
+- [Untersuchen von Vorfällen](investigate-incidents.md)

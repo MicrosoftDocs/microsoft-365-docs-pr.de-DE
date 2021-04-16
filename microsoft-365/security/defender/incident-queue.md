@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 12207d69b0a1565caf762a265c1a0d32158ca291
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 8acd8d85826d7bda399c03cc60f2806af954c6c3
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759850"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861603"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorisieren von Vorfällen in Microsoft 365 Defender
 
@@ -44,9 +44,9 @@ Beim Schnellstart des  Microsoft 365 Security Centers ([security.microsoft.com](
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Beispiel für die Warteschlange für Vorfälle":::
 
-Standardmäßig werden in der Warteschlange im Microsoft 365 Security Center Vorfälle angezeigt, die in den letzten sechs Monaten beobachtet wurden. Der letzte Vorfall befindet sich ganz oben in der Liste, damit Sie ihn zuerst sehen können.
+Standardmäßig werden in der Warteschlange für Vorfälle im Microsoft 365 Security Center Vorfälle angezeigt, die in den letzten sechs Monaten beobachtet wurden. Der letzte Vorfall befindet sich ganz oben in der Liste, damit Sie ihn zuerst sehen können.
 
-Die Vorfallwarteschlange verfügt über anpassbare Spalten **(wählen** Sie Spalten auswählen) aus, die Ihnen Einblicke in verschiedene Merkmale des Vorfalls oder der betroffenen Entitäten bieten. Dies hilft Ihnen, eine fundierte Entscheidung über die Priorisierung von Vorfällen für Anaylsis zu treffen.
+Die Vorfallwarteschlange verfügt über anpassbare Spalten **(wählen** Sie Spalten auswählen) aus, die Ihnen Einblicke in verschiedene Merkmale des Vorfalls oder der betroffenen Entitäten bieten. Dies hilft Ihnen, eine fundierte Entscheidung hinsichtlich der Priorisierung von Vorfällen für die Analyse zu treffen.
 
 Für eine zusätzliche Sichtbarkeit auf einen Blick generiert die automatische Vorfallbenennung Vorfallnamen basierend auf Warnungsattributen wie der Anzahl betroffener Endpunkte, betroffener Benutzer, Erkennungsquellen oder Kategorien. Auf diese Weise können Sie den Umfang des Vorfalls schnell verstehen.
 
@@ -108,7 +108,7 @@ Nachdem Sie den Vorfall behoben haben, nehmen Sie sich einen Moment Zeit, um dar
 
 - Verstehen sie den Typ des Angriffs und seine Auswirkungen.
 - Recherchieren Sie den Angriff in der Sicherheitsgemeinschaft auf einen Trend zu Sicherheitsangriffen.
-- Erinnern Sie sich an den Workflow, den Sie verwendet haben, um den Vorfall zu beheben und Ihre Standardworkflows und Plalbooks nach Bedarf zu aktualisieren.
+- Erinnern Sie sich an den Workflow, den Sie verwendet haben, um den Vorfall zu beheben und Ihre Standardworkflows und Playbooks nach Bedarf zu aktualisieren.
 
 Hier finden Sie eine Zusammenfassung des grundlegenden Prozesses.
 

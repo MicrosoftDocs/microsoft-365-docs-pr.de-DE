@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Erfahren Sie, wie Sie Microsoft Office auf den neuesten Office-Client für Benutzer in Ihrer Organisation aktualisieren.
-ms.openlocfilehash: 14be8d63b2acb3e4838640dc399595c0ba3f97f5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3d2d5e54506d06662c6c2feef0d142f1e195163f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913994"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860571"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Aktualisieren Ihrer Microsoft 365 Business-Benutzer auf den neuesten Office-Client
 
@@ -91,7 +91,7 @@ Wechseln Sie zu einem Abonnement, das Office enthält. Weitere [Informationen fi
 
 **Option 2: Kaufen einzelner, einmaler Käufe von Office oder Kaufen von Office über eine Volumenlizenz**
 
- - Kaufen Sie einen individuellen, einmal gekauften Office-Kauf. Siehe [Office Home &amp; Business](https://products.office.com/home-and-business) oder [Office Professional](https://products.office.com/professional)
+ - Kaufen Sie einen individuellen, einmal gekauften Office-Kauf. Siehe [Office Home &amp; Business](https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products-b) oder [Office Professional](https://www.microsoft.com/microsoft-365/p/office-professional-2019/CFQ7TTC0K7C5/)
 
      ODER
 

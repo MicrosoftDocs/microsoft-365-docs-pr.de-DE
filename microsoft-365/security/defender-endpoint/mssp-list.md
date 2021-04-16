@@ -1,6 +1,6 @@
 ---
-title: Unterstützte anbieter für verwaltete Sicherheitsdienste
-description: Sehen Sie sich die Liste der MSSPs an, in die Microsoft Defender ATP integriert ist.
+title: Unterstützte Anbieter von verwalteten Sicherheitsdienstanbietern
+description: Sehen Sie sich die Liste der MSSPs an, in die Microsoft Defender for Endpoint integriert ist.
 keywords: Managed Security Service Provider, mssp, configure, integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 16b238a1d38e1aad70a4286d4ce8ecae1aae9a21
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 71db42f4bd651f4e9d4236e1f4d794aeb99dfa9f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186605"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862151"
 ---
-# <a name="supported-managed-security-service-providers"></a>Unterstützte anbieter für verwaltete Sicherheitsdienste
+# <a name="supported-managed-security-service-providers"></a>Unterstützte Anbieter von verwalteten Sicherheitsdienstanbietern
 
 **Gilt für:**
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)

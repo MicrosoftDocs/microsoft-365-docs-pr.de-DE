@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Erfahren Sie, wie Sie Apps von Drittanbietern im Microsoft 365 Admin Center aktivieren und verwalten.
-ms.openlocfilehash: 974ce99b55dcb078286d7f6dba35166e51ce62a7
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 457545282801829ca34de0318dd9eb7791866214
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576913"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860535"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Verwalten von Drittanbieter-App-Abonnements für Ihre Organisation
 
@@ -31,7 +31,7 @@ Sie können Lizenzen und Abrechnungen für Apps von Drittanbietern im Microsoft 
 
 Es gibt verschiedene Möglichkeiten, Apps von Drittanbietern zu erwerben.
 
-- **Direkter Kauf** – Kunden können Direktabonnements über [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)oder [AppSource erwerben.](https://www.appsource.com/)
+- **Direkter Kauf** – Kunden können Direktabonnements über [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)oder [AppSource erwerben.](https://appsource.microsoft.com/)
 - **Partnerkauf** – Arbeiten Sie mit einem Partner über das Partner Center zusammen, um Abonnements zu erwerben.
 - **Microsoft-Vorschlag** – Reagieren Sie auf einen Vorschlag von Microsoft Sales, der Apps von Drittanbietern enthält.
 
@@ -81,7 +81,7 @@ Hier sehen Sie, was Sie in den einzelnen Portalen tun können.
 
 Nachdem die App aktiviert wurde, bleibt sie aktiv, es sei denn, sie wird abgebrochen, läuft ab oder wenn die Zahlung nicht auf dem aktuellen Stand gehalten wird. Diese Ereignisse ändern den App-Status in deaktiviert. Sobald eine App deaktiviert ist, kann sie nicht erneut aktiviert werden. Um die App weiterhin zu verwenden, kaufen Sie eine weitere Kopie davon.
 
-## <a name="assign-licenses"></a>Zuweisen von Lizenzen
+## <a name="assign-licenses"></a>Lizenzen zuweisen
 
 Administratoren müssen Apps von Drittanbietern aktivieren, bevor sie Benutzern zugewiesen werden. Sie werden im Portal des Drittanbieterherausgebers aktiviert. Wählen Sie auf der Seite App unter Einstellungen **&** den Link zum Zuweisen von Lizenzen aus.
 

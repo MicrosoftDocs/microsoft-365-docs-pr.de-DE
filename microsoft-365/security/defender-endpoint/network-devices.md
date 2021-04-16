@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 43ade52e18ffc8e5db890cb0776090e9b32419e2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: da15519211599bfc248c20c36cfab456c1661caa
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687673"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862067"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Netzwerkgeräteerkennung und Sicherheitsrisikoverwaltung
 
@@ -41,6 +41,9 @@ ms.locfileid: "51687673"
 > Weitere Informationen finden Sie unter [Microsoft Defender for Endpoint Preview Features](preview.md).
 
 >Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+
+> [!NOTE]  
+> Der [Blog zur](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) Ermittlung und Bewertung von Sicherheitslücken für Netzwerkgeräte in \( 04-13-2021 bietet Einblicke in die neuen Netzwerkgeräteerkennungsfunktionen \) in Defender for Endpoint.  Dieser Artikel enthält eine Übersicht  über die Herausforderung, die die Netzwerkgeräteermittlung bewältigen soll, sowie ausführliche Informationen über die ersten Schritte mit diesen neuen Funktionen.
 
 Netzwerkerkennungsfunktionen sind im  Abschnitt Gerätebestand des Microsoft 365 Security Center und der Microsoft Defender Security Center-Konsolen verfügbar.  
 
@@ -97,20 +100,22 @@ Im ersten Schritt wählen Sie ein Gerät aus, auf dem die authentifizierten Netz
     - login.microsoftonline.com
     - *.blob.core.windows.net/networkscannerstable/ *
 
-    Hinweis: Nicht alle URLs sind in der dokumentierten Defender for Endpoint-Liste der zulässigen Datensammlung angegeben.
+    > [!NOTE]
+    > Nicht alle URLs sind in der dokumentierten Liste der zulässigen Datensammlungen von Defender for Endpoint angegeben.
 
 ## <a name="permissions"></a>Berechtigungen
 
-Zum Konfigurieren von Bewertungsaufträgen ist die folgende Benutzerberechtigungsoption erforderlich: **Verwalten von Sicherheitseinstellungen in Security Center**. Sie können die Berechtigung finden, indem Sie zu **Einstellungen**  >  **Rollen .** Weitere Informationen finden Sie unter [Erstellen und Verwalten von Rollen für die rollenbasierte Zugriffssteuerung.](user-roles.md)
+Zum Konfigurieren von Bewertungsaufträgen ist die folgende Benutzerberechtigungsoption erforderlich: **Verwalten von Sicherheitseinstellungen in Security Center**. Sie können die Berechtigung finden, indem Sie zu **Einstellungen**  >  **Rollen .** Weitere Informationen finden Sie unter [Erstellen und Verwalten von Rollen für die rollenbasierte Zugriffssteuerung](user-roles.md).
 
 ## <a name="install-the-network-scanner"></a>Installieren des Netzwerkscanners
 
-1. Wechseln Sie **zu Microsoft 365 Security**  >  **Settings**  >  **Endpoints**  >  **Assessment jobs** (under 'Network assessments').
+1. Wechseln Sie **zu Microsoft 365 Security**  >  **Settings**  >  **Endpoints**  >  **Assessment jobs** (under Network **assessments**).
     1. Wechseln Sie im Microsoft Defender Security Center zur Seite Einstellungen > Bewertungsaufträge.
 
 2. Laden Sie den Netzwerkscanner herunter, und installieren Sie ihn auf dem dafür vorgesehenen Defender for Endpoint-Bewertungsgerät.
 
-![Schaltfläche "Scanner herunterladen"](images/assessment-jobs-download-scanner.png)
+    > [!div class="mx-imgBorder"]
+    > ![Schaltfläche "Scanner herunterladen"](images/assessment-jobs-download-scanner.png)
 
 ## <a name="network-scanner-installation--registration"></a>Netzwerkscannerinstallation & Registrierung
 
@@ -119,7 +124,9 @@ Der Anmeldungsprozess kann auf dem festgelegten Bewertungsgerät selbst oder auf
 So führen Sie den Registrierungsprozess für Netzwerkscanner aus:
 
 1. Kopieren Und folgen Sie der URL, die in der Befehlszeile angezeigt wird, und verwenden Sie den bereitgestellten Installationscode, um den Registrierungsprozess abzuschließen.
-    - Hinweis: Möglicherweise müssen Sie die Eingabeaufforderungseinstellungen ändern, um die URL kopieren zu können.
+
+    > [!NOTE]
+    > Möglicherweise müssen Sie die Eingabeaufforderungseinstellungen ändern, um die URL kopieren zu können.
 
 2. Geben Sie den Code ein, und melden Sie sich mit einem Microsoft-Konto an, das die Defender for Endpoint-Berechtigung "Sicherheitseinstellungen in Security Center verwalten" besitzt.
 
@@ -131,13 +138,17 @@ Wählen Sie auf der Seite Bewertungsaufträge unter **Einstellungen** die Option
 
 Stellen Sie sicher, dass jede IP-Adresse nur einmal auf mehreren Bewertungsgeräten konfiguriert ist, um eine Geräteduplizierung im Netzwerkgerätebestand zu verhindern.
 
-![Hinzufügen einer Netzwerkbewertungsauftragsschaltfläche](images/assessment-jobs-add.png)
+> [!div class="mx-imgBorder"]
+> ![Hinzufügen einer Netzwerkbewertungsauftragsschaltfläche](images/assessment-jobs-add.png)
 
 Hinzufügen eines Auftrags zur Netzwerkbewertung:
 
-1. Wählen Sie den Namen "Bewertungsauftrag" und das "Bewertungsgerät", auf dem der Netzwerkscanner installiert wurde. Dieses Gerät führt die regelmäßig authentifizierten Scans aus. 
+1. Wählen Sie den Namen "Bewertungsauftrag" und das "Bewertungsgerät", auf dem der Netzwerkscanner installiert wurde. Dieses Gerät führt die regelmäßig authentifizierten Scans aus.
+
 2. Fügen Sie IP-Adressen der zu scannenden Zielnetzwerkgeräte (oder der Subnetze, in denen diese Geräte bereitgestellt werden) hinzu. 
+
 3. Fügen Sie erforderliche SNMP-Anmeldeinformationen der Zielnetzwerkgeräte hinzu. 
+
 4. Speichern Sie den neu konfigurierten Netzwerkbewertungsauftrag, um die regelmäßige Netzwerkprüfung zu starten. 
 
 ### <a name="scan-and-add-network-devices"></a>Überprüfen und Hinzufügen von Netzwerkgeräten
@@ -157,7 +168,8 @@ Sobald die Ergebnisse angezeigt werden, können Sie auswählen, welche Geräte i
 
 Neu ermittelte Geräte werden  auf der Seite Geräteinventar unter der Registerkarte Neue **Netzwerkgeräte** angezeigt. Es kann bis zu zwei Stunden nach dem Hinzufügen eines Bewertungsauftrags dauern, bis die Geräte aktualisiert wurden.
 
-![Abschnitt "Netzwerkgeräte" im Geräteinventar](images/assessment-jobs-device-inventory.png)
+> [!div class="mx-imgBorder"]
+> ![Abschnitt "Netzwerkgeräte" im Geräteinventar](images/assessment-jobs-device-inventory.png)
 
 ## <a name="troubleshooting"></a>Problembehandlung
 

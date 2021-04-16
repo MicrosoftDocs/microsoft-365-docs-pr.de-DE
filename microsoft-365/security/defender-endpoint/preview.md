@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP-Vorschaufeatures
+title: Microsoft Defender for Endpoint -Vorschaufeatures
 description: Erfahren Sie, wie Sie auf Microsoft Defender for Endpoint-Vorschaufeatures zugreifen.
 keywords: Vorschau, Vorschau, Microsoft Defender for Endpoint, Features, Updates
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4a91fa3c8ff55f46619c7b49eaf973ad94f60bfe
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 817ed5e33505f691b11970e3da4c956afa7dc76c
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698188"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861059"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Microsoft Defender for Endpoint -Vorschaufeatures
 
@@ -62,7 +62,7 @@ Aktivieren Sie die Einstellung für die Vorschauerfahrung, um zu den ersten zu g
 
 In der Vorschauversion sind die folgenden Features enthalten:
 
-- [Geräteerkennung](device-discovery.md) <br> Hilft Ihnen, nicht verwaltete Geräte zu finden, die mit Ihrem Unternehmensnetzwerk verbunden sind, ohne dass zusätzliche Appliances oder aufwändige Prozessänderungen nötig sind. Mithilfe von integrierten Geräten können Sie nicht verwaltete Geräte in Ihrem Netzwerk finden und Sicherheitsrisiken und Risiken bewerten. Sie können dann ermittelte Geräte integrieren, um Risiken im Zusammenhang mit nicht verwalteten Endpunkten in Ihrem Netzwerk zu reduzieren.
+- [Geräteermittlung](device-discovery.md) <br> Hilft Ihnen, nicht verwaltete Geräte zu finden, die mit Ihrem Unternehmensnetzwerk verbunden sind, ohne dass zusätzliche Appliances oder aufwändige Prozessänderungen nötig sind. Mithilfe von integrierten Geräten können Sie nicht verwaltete Geräte in Ihrem Netzwerk finden und Sicherheitsrisiken und Risiken bewerten. Sie können dann ermittelte Geräte integrieren, um Risiken im Zusammenhang mit nicht verwalteten Endpunkten in Ihrem Netzwerk zu reduzieren.
 
    > [!IMPORTANT]
    > Die Standardermittlung ist der Standardmodus für alle Vorschaukunden ab dem 10. Mai 2021. Sie können den Basismodus über die Einstellungsseite beibehalten. 

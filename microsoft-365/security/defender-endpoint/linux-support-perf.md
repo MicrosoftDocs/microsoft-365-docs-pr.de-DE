@@ -1,6 +1,6 @@
 ---
-title: Beheben von Leistungsproblemen für Microsoft Defender ATP für Linux
-description: Behandeln von Leistungsproblemen in Microsoft Defender ATP für Linux.
+title: Behandeln von Leistungsproblemen für Microsoft Defender for Endpoint für Linux
+description: Behandeln von Leistungsproblemen in Microsoft Defender Endpoint für Linux.
 keywords: microsoft, defender, atp, linux, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a8865da0c8080213f6a2b82f78a6b31983c50409
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: cb43fd383606ab26ba2688ad5704bb7653e82a7f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688621"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860339"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Behandeln von Leistungsproblemen für Microsoft Defender for Endpoint unter Linux
 

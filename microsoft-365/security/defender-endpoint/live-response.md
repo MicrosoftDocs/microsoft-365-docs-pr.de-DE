@@ -1,5 +1,5 @@
 ---
-title: Untersuchen von Entitäten auf Geräten mithilfe von Liveantworten in Microsoft Defender ATP
+title: Untersuchen von Entitäten auf Geräten mithilfe von Liveantworten in Microsoft Defender for Endpoint
 description: Greifen Sie über eine sichere Remoteshellverbindung auf ein Gerät zu, um Ermittlungsarbeit zu ergreifen und sofortige Reaktionsaktionen auf einem Gerät in Echtzeit zu ergreifen.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file,
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 235df8c84077311444c597b120a19477cfd0986a
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 4898081103faa27c19d3a09ffba1b59670833dd8
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760416"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860797"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Untersuchen von Entitäten auf Geräten mithilfe von Liveantworten
 
@@ -47,7 +47,7 @@ Mit einer Liveantwort können Analysten alle folgenden Aufgaben ausführen:
 - Laden Sie ein PowerShell-Skript oder eine ausführbare Datei in die Bibliothek hoch, und führen Sie es auf einem Gerät auf Mandantenebene aus.
 - Ausführen oder Rückgängig machen von Korrekturaktionen.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorbereitung
 
 Bevor Sie eine Sitzung auf einem Gerät initiieren können, stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen:
 
@@ -302,7 +302,7 @@ Wählen Sie **die Registerkarte Befehlsprotokoll** aus, um die Befehle anzuzeige
 - Dauer
 - Status- und Eingabe- oder Ausgabeleiste
 
-## <a name="limitations"></a>Einschränkungen
+## <a name="limitations"></a>Begrenzungen
 
 - Liveantwortsitzungen sind auf 25 Liveantwortsitzungen gleichzeitig beschränkt.
 - Inaktiver Timeoutwert der Liveantwortsitzung beträgt 30 Minuten. 

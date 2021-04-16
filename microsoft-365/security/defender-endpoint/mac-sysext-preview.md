@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP für Mac – Systemerweiterungen (Vorschau)
-description: Dieser Artikel enthält Anweisungen zum Ausprobieren der Systemerweiterungsfunktionalität von Microsoft Defender ATP für Mac. Diese Funktionalität befindet sich derzeit in der öffentlichen Vorschau.
+title: Microsoft Defender for Endpoint für Mac - Systemerweiterungen (Vorschau)
+description: Dieser Artikel enthält Anweisungen zum Ausprobieren der Systemerweiterungsfunktionalität von Microsoft Defender for Endpoint für Mac. Diese Funktionalität befindet sich derzeit in der öffentlichen Vorschau.
 keywords: microsoft, defender, atp, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0e89977c10de04d8c3331733cd1432525ac3196d
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 0b593aa0046a28e558523c2f3ebc7da9976f62d3
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689065"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860327"
 ---
 # <a name="microsoft-defender-for-endpoint-on-macos---system-extensions-public-preview"></a>Microsoft Defender for Endpoint unter macOS – öffentliche Vorschau der Systemerweiterungen)
 
@@ -62,7 +62,7 @@ Bei diesen Schritten wird davon ausgegangen, dass Defender for Endpoint bereits 
   defaults write com.microsoft.autoupdate2 ChannelName -string Beta
   ```
 
-  Alternativ können Sie den Updatekanal remote konfigurieren, wenn Sie in einer verwalteten Umgebung (JAMF oder Intune) sind. Weitere Informationen finden Sie unter [Deploy updates for Microsoft Defender ATP for Mac: Set the channel name](mac-updates.md#set-the-channel-name).
+  Alternativ können Sie den Updatekanal remote konfigurieren, wenn Sie in einer verwalteten Umgebung (JAMF oder Intune) sind. Weitere Informationen finden Sie unter [Deploy updates for Microsoft Defender for Endpoint for Mac: Set the channel name](mac-updates.md#set-the-channel-name).
 
 ## <a name="deployment-steps"></a>Bereitstellungsschritte
 

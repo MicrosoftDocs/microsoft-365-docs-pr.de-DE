@@ -1,5 +1,5 @@
 ---
-title: Onboarding von Geräten in den Microsoft Defender ATP-Dienst
+title: Onboarding von Geräten in den Microsoft Defender for Endpoint-Dienst
 description: Onboarding von Windows 10-Geräten, -Servern, Nicht-Windows-Geräten und Erfahren Sie, wie Sie einen Erkennungstest ausführen.
 keywords: onboarding, microsoft defender for endpoint onboarding, windows atp onboarding, sccm, group policy, mdm, local script, detection test
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b7a225e29b4b79b2e6caf95332cb91da3dade7f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 4aa3e30f34e7d9dc362cc0bbb277aaee5834b4fe
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186953"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861375"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>Onboarding von Geräten in den Microsoft Defender for Endpoint-Dienst
 
@@ -63,12 +63,12 @@ In der folgenden Tabelle sind die verfügbaren Tools aufgeführt, die auf dem En
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 Thema | Beschreibung
 :---|:---
-[Onboarding früherer Versionen von Windows](onboard-downlevel.md)| Onboarding von Windows 7- und Windows 8.1-Geräten zu Defender for Endpoint. 
-[Onboarding von Windows 10-Geräten](configure-endpoints.md) | Sie müssen Geräte integrieren, damit sie dem Defender for Endpoint-Dienst melden können. Erfahren Sie mehr über die Tools und Methoden, die Sie zum Konfigurieren von Geräten in Ihrem Unternehmen verwenden können.
+[Onboarding von früheren Windows-Versionen](onboard-downlevel.md)| Onboarding von Windows 7- und Windows 8.1-Geräten zu Defender for Endpoint. 
+[Onboarding von Windows 10-Geräten](configure-endpoints.md) | Sie müssen Geräte integrieren, damit sie dem Defender for Endpoint-Dienst melden können. Erfahren Sie mehr über die Tools und Methoden, die Sie zum Konfigurieren von Geräten in Ihrem Unternehmen verwenden können.
 [Onboarding von Servern](configure-server-endpoints.md) |  Onboarding Windows Server 2008 R2 SP1, Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC) Version 1803 und höher, Windows Server 2019 und höher und Windows Server 2019 Core Edition zu Defender for Endpoint.
 [Onboarding von Nicht-Windows-Geräten](configure-endpoints-non-windows.md) | Defender for Endpoint bietet eine zentrale Sicherheitsbetriebserfahrung für Windows- und Nicht-Windows-Plattformen. Sie können Warnungen von verschiedenen unterstützten Betriebssystemen im Microsoft Defender Security Center anzeigen und das Netzwerk Ihrer Organisation besser schützen. Diese Erfahrung nutzt sensorische Daten eines Drittanbieters für Sicherheitsprodukte. 
 [Ausführen eines Erkennungstests auf einem neu integrierten Gerät](run-detection-test.md) | Führen Sie ein Skript auf einem neu integrierten Gerät aus, um sicherzustellen, dass es ordnungsgemäß an den Defender for Endpoint-Dienst berichtet.
 [Konfigurieren von Proxy- und Interneteinstellungen](configure-proxy-internet.md)| Aktivieren Sie die Kommunikation mit dem Defender for Endpoint-Clouddienst, indem Sie die Proxy- und Internetverbindungseinstellungen konfigurieren.
-[Behandeln von Problemen beim Onboarding](troubleshoot-onboarding.md) | Erfahren Sie mehr über das Beheben von Problemen, die beim Onboarding auftreten können.
+[Behandeln von Onboarding-Problemen](troubleshoot-onboarding.md) | Erfahren Sie mehr über das Beheben von Problemen, die beim Onboarding auftreten können.
 
 >Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

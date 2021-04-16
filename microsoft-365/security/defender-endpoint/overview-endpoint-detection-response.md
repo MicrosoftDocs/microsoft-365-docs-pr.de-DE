@@ -1,8 +1,8 @@
 ---
 title: Übersicht über Die Erkennungs- und Reaktionsfunktionen von Endpunkten
 ms.reviewer: ''
-description: Erfahren Sie mehr über die Funktionen zur Erkennung und Reaktion von Endpunkten in Microsoft Defender ATP
-keywords: ''
+description: Erfahren Sie mehr über die Funktionen für die Erkennung und Reaktion von Endpunkten in Microsoft Defender for Endpoint
+keywords: microsoft defender für Endpunkt, Endpunkterkennung und -reaktion, Reaktion, Erkennung, Cybersicherheit, Schutz
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0a5a665fac1883016ac222197ba8322f78e2558f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 138a6afde9e8c601fd41811928580644b85bf2e2
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186173"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861719"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>Übersicht über Die Erkennung und Reaktion von Endpunkten
 
@@ -48,7 +48,7 @@ Die Antwortfunktionen bieten Ihnen die Möglichkeit, Bedrohungen zeitnah zu behe
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Dashboard für Sicherheitsvorgänge](security-operations-dashboard.md)
-- [Warteschlange für Vorfälle](view-incidents-queue.md)
+- [Vorfallswarteschlange](view-incidents-queue.md)
 - [Benachrichtigungswarteschlange](alerts-queue.md)
 - [Geräteliste](machines-view-overview.md)
 

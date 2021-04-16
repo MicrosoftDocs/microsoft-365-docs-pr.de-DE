@@ -1,6 +1,6 @@
 ---
-title: Ressourcen für Microsoft Defender ATP für Mac
-description: Ressourcen für Microsoft Defender ATP für Mac, einschließlich der Deinstallation, der Erfassung von Diagnoseprotokollen, CLI-Befehlen und bekannten Problemen mit dem Produkt.
+title: Ressourcen für Microsoft Defender for Endpoint für Mac
+description: Ressourcen für Microsoft Defender for Endpoint für Mac, einschließlich der Deinstallation, der Erfassung von Diagnoseprotokollen, CLI-Befehlen und bekannten Problemen mit dem Produkt.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 71ebe48fdbb8f9995ef2f3429cb8a824ed76f244
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 98e123ac4775096c968bc831965a562481c848b6
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689641"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862175"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Ressourcen für Microsoft Defender for Endpoint unter macOS
 
@@ -84,7 +84,7 @@ Es gibt mehrere Möglichkeiten, Microsoft Defender for Endpoint unter macOS zu d
 
 ### <a name="interactive-uninstallation"></a>Interaktive Deinstallation
 
-- Öffnen **Sie finder > Applications**. Klicken Sie mit der rechten Maustaste **auf Microsoft Defender ATP > In Papierkorb verschieben.**
+- Öffnen **Sie finder > Applications**. Klicken Sie mit der rechten Maustaste **auf Microsoft Defender for Endpoint > Move to Trash**.
 
 ### <a name="from-the-command-line"></a>Über die Befehlszeile
 

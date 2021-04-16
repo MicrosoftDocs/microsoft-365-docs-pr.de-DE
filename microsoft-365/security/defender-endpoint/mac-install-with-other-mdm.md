@@ -1,6 +1,6 @@
 ---
-title: Bereitstellung mit einem anderen Mobile Device Management (MDM)-System für Microsoft Defender ATP für Mac
-description: Installieren Sie Microsoft Defender ATP für Mac auf anderen Verwaltungslösungen.
+title: Bereitstellung mit einem anderen Mobile Device Management (MDM)-System für Microsoft Defender for Endpoint für Mac
+description: Installieren Sie Microsoft Defender for Endpoint für Mac auf anderen Verwaltungslösungen.
 keywords: microsoft, defender, atp, mac, installation, deploy, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3343eb433a6ae5c708651abf298bd4f061817543
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: e929c17ada761a334700f6e66d2921483686834b
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764133"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861563"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Bereitstellung mit einem anderen Mobile Device Management (MDM)-System für Microsoft Defender for Endpoint unter macOS
 

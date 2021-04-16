@@ -1,7 +1,7 @@
 ---
-title: Bereitstellen von Updates für Microsoft Defender ATP für Linux
+title: Bereitstellen von Updates für Microsoft Defender for Endpoint für Linux
 ms.reviewer: ''
-description: Beschreibt, wie Updates für Microsoft Defender ATP für Linux in Unternehmensumgebungen bereitgestellt werden.
+description: Beschreibt, wie Updates für Microsoft Defender for Endpoint für Linux in Unternehmensumgebungen bereitgestellt werden.
 keywords: microsoft, defender, atp, linux, updates, deploy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2e4ea4942446317aef90288da9fb181935503fa9
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 77b428e359596e73e08dc04f15190ecf68db29be
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687466"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861147"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>Bereitstellen von Updates für Microsoft Defender for Endpoint unter Linux
 

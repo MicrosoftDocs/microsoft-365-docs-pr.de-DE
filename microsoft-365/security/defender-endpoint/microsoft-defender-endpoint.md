@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender für Endpunkt
 description: Microsoft Defender for Endpoint ist eine Sicherheitsplattform für Unternehmensendpunkte, die bei der Verteidigung vor erweiterten beständigen Bedrohungen hilft.
-keywords: Einführung in Microsoft Defender for Endpoint, Einführung in Microsoft Defender Advanced Threat Protection, Einführung in Microsoft Defender ATP, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Computerverhaltenssensor, Cloudsicherheit, Analyse, Bedrohungsintelligenz, Reduzierung der Angriffsfläche, Schutz der nächsten Generation, automatisierte Untersuchung und Behebung, Microsoft Threat Experts, Secure Score, Advanced Hunting, Microsoft Threat Protection, Cyber Threat Hunting
+keywords: Einführung in Microsoft Defender for Endpoint, Einführung in Microsoft Defender Advanced Threat Protection, Einführung in Microsoft Defender for Endpoint, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Computerverhaltenssensor, Cloudsicherheit, Analyse, Bedrohungsintelligenz, Reduzierung der Angriffsfläche, Schutz der nächsten Generation, automatisierte Untersuchung und Behebung, Microsoft Threat Experts, Secure Score, Advanced Hunting, Microsoft Threat Protection, Cyber Threat Hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8c5d02a4d76ae7e031ad9f3af0db282cc4cb45ed
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: adc7d780c1af73d8cb4fe229720ac2ed74f90251
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187213"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861827"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender für Endpunkt
 
@@ -94,7 +94,7 @@ Zur weiteren Verstärkung des Sicherheitsperimeters Ihres Netzwerks verwendet Mi
 
 <a name="edr"></a>
 
-**[Endpunkterkennung und -antwort](overview-endpoint-detection-response.md)**<br>
+**[Erkennung und Reaktion am Endpunkt](overview-endpoint-detection-response.md)**<br>
 Funktionen zur Erkennung und Reaktion von Endpunkten werden zum Erkennen, Untersuchen und Reagieren auf erweiterte Bedrohungen verwendet, die die ersten beiden Sicherheitspfeiler möglicherweise über die ersten beiden Sicherheitspfeiler hinaus haben. [Die erweiterte Suche](advanced-hunting-overview.md) bietet ein abfragebasiertes Tool zur Bedrohungssuche, mit dem Sie Verstöße proaktiv finden und benutzerdefinierte Erkennungen erstellen können.
 
 <a name="ai"></a>
@@ -104,7 +104,7 @@ In Verbindung mit der schnellen Reaktion auf erweiterte Angriffe bietet Microsof
 
 <a name="ss"></a>
 
-**[Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md)**<br>
+**[Microsoft-Sicherheitsbewertung für Geräte](tvm-microsoft-secure-score-devices.md)**<br>
 
 Defender for Endpoint enthält Microsoft Secure Score for Devices, mit dem Sie den Sicherheitsstatus Ihres Unternehmensnetzwerks dynamisch bewerten, nicht geschützte Systeme identifizieren und empfohlene Maßnahmen ergreifen können, um die allgemeine Sicherheit Ihrer Organisation zu verbessern.
 

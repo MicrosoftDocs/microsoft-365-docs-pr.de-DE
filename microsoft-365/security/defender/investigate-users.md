@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 6535493efb844f1413c569a28ebf36ddb05c167d
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 68fc924ee14932ebdf92ef76306ba00e352b6030
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760200"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861260"
 ---
 # <a name="investigate-users-in-microsoft-365-security-center"></a>Untersuchen von Benutzern im Microsoft 365 Security Center
 
@@ -34,16 +34,44 @@ ms.locfileid: "51760200"
 
 - Microsoft 365 Defender
 
-Im Rahmen Ihrer Untersuchung können Sie feststellen, dass ein Benutzer gefährdet wurde.
+Ein Teil Ihrer Vorfalluntersuchung kann Benutzerkonten enthalten. Beginnen Sie mit der **Registerkarte Benutzer** für einen Vorfall von & Warnungen **>** *Vorfall* **> Benutzer**. 
 
-Die Microsoft 365 Security Center-Benutzerseite kombiniert Informationen von Microsoft Defender for Endpoint, Microsoft Defender for Identity und Microsoft Cloud App Security (je nachdem, welche Lizenzen Sie besitzen). Diese Seite ist der ideale Ausgangspunkt für die Untersuchung von Benutzern und potenziellen Vorfällen.
-![Benutzerseite](../../media/m3d-userpage.png)
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Beispiel einer Benutzerseite für einen Vorfall":::
 
-Diese Seite enthält Informationen, die speziell auf das Sicherheitsrisiko eines Benutzers spezifisch sind. Dies umfasst eine Bewertung, die bei der Bewertung von Risiken, aktuellen Ereignissen und Warnungen hilft, die zum Gesamtrisiko des Benutzers beigetragen haben, und vieles mehr.
+Um eine kurze Zusammenfassung eines Benutzerkontos für den Vorfall zu erhalten, aktivieren Sie das Kontrollkästchen neben dem Benutzernamen. Im Folgenden sehen Sie ein Beispiel.
 
-Sie können über mehrere Bereiche im Microsoft 365 Security Center auf diese Seite zugreifen. Sie können über einen bestimmten Vorfall auf der Registerkarte Benutzer auf **diese Seite** zugreifen. Einige Warnungen enthalten möglicherweise Benutzer als eine bestimmte betroffene Ressource. Sie können auch nach Benutzern suchen.  
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Beispiel für den Zusammenfassungsbereich des Benutzerkontos für einen Vorfall im Microsoft 365 Security Center":::
 
-Weitere Informationen zum Untersuchen von Benutzern und potenziellen Risiken finden Sie [in diesem Lernprogramm für Cloud App Security](/cloud-app-security/tutorial-ueba#:~:text=To%20identify%20who%20your%20riskiest,user%20page%20to%20investigate%20them).
+Hier können Sie zur Benutzerseite wechseln **auswählen,** um die Details eines Benutzerkontos anzuzeigen. Im Folgenden sehen Sie ein Beispiel.
+
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Beispiel für die Benutzerkontoseite für einen Vorfall im Microsoft 365 Security Center":::
+
+Sie können diese Seite auch anzeigen, indem Sie den Namen des Benutzerkontos aus der Liste auf der Seite **Benutzer** auswählen.
+
+Die Microsoft 365 Security Center-Benutzerseite kombiniert Informationen von Microsoft Defender for Endpoint, Microsoft Defender for Identity und Microsoft Cloud App Security (je nachdem, welche Lizenzen Sie besitzen). 
+
+Diese Seite enthält Informationen, die speziell für das Sicherheitsrisiko eines Benutzerkontos spezifisch sind. Dies umfasst eine Bewertung, die bei der Bewertung von Risiken und aktuellen Ereignissen und Warnungen hilft, die zum Gesamtrisiko des Benutzers beigetragen haben.
+
+Auf dieser Seite können Sie die folgenden zusätzlichen Aktionen ausführen: 
+
+- Kennzeichnen des Benutzerkontos als gefährdet
+- Benutzer erneut anmelden
+- Anhalten des Benutzerkontos
+- Weitere Informationen finden Sie unter Azure Active Directory (Azure AD)-Benutzerkonteneinstellungen.
+- Anzeigen der Dateien im Besitz des Benutzerkontos
+- Anzeigen von Dateien, die für diesen Benutzer freigegeben sind. 
+
+Im Folgenden sehen Sie ein Beispiel.
+
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Beispiel für die Aktionen für ein Benutzerkonto für einen Vorfall im Microsoft 365 Security Center":::
+
+
+<!--
+You can access this page from multiple areas in the Microsoft 365 security center. You can access this page from a specific incident in the **Users** tab. Some alerts might include users as a specific affected asset. You can also search for users.  
+
+Learn more about how to investigate users and potential risk [in this Cloud App Security tutorial](/cloud-app-security/tutorial-ueba#:~:text=To%20identify%20who%20your%20riskiest,user%20page%20to%20investigate%20them).
+
+--> 
 
 ## <a name="related-topics"></a>Verwandte Themen
 

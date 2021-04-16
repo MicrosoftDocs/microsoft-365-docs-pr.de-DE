@@ -20,28 +20,43 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Erfahren Sie, wie Sie eine oder mehrere Verteilerlisten auf Microsoft 365-Gruppen in Outlook aktualisieren und wie Sie PowerShell verwenden, um mehrere Verteilerlisten gleichzeitig zu aktualisieren.
-ms.openlocfilehash: ab7c2ff68b1f16915d65fff0d7292e3b3ad72d02
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ef2d6d87d01d0e4874312026909fdeed9c0a8d43
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579242"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860607"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Aktualisieren von Verteilerlisten auf Microsoft 365-Gruppen in Outlook
 
-Sie können Verteilerlisten mit Outlook auf Microsoft 365-Gruppen aktualisieren. Dies ist eine hervorragende Möglichkeit, um den Verteilerlisten Ihrer Organisation alle Features und Funktionen von Microsoft 365-Gruppen zu geben. [Warum Sie Ihre Verteilerlisten für Gruppen in Outlook aktualisieren sollten](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+Sie können Verteilerlisten in Outlook auf Microsoft 365-Gruppen aktualisieren. Dies ist eine hervorragende Möglichkeit, um den Verteilerlisten Ihrer Organisation alle Features und Funktionen von Microsoft 365-Gruppen zu geben. [Warum Sie Ihre Verteilerlisten für Gruppen in Outlook aktualisieren sollten](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 Sie können ein Upgrade für eine einzelne Verteilerliste oder für mehrere Verteilerlisten gleichzeitig ausführen.
 
-## <a name="upgrade-one-or-many-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Upgrade einer oder vieler Verteilerlisten auf Microsoft 365-Gruppen in Outlook
+## <a name="upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Upgrade einer oder vieler Verteilerlistengruppen auf Microsoft 365-Gruppen in Outlook
 
-Sie müssen globaler Administrator oder Exchange-Administrator sein, um eine Verteilerliste aktualisieren zu können. Zum Upgrade auf Microsoft 365-Gruppen muss eine Verteilergruppe über einen Besitzer mit einem Postfach verfügen.
+Sie müssen ein globaler Administrator oder Exchange-Administrator sein, um ein Upgrade einer Verteilerlistengruppe durchführen zu können. Zum Upgrade auf Microsoft 365-Gruppen muss die Verteilerlistengruppe über einen Besitzer mit einem Postfach verfügen.
 
-1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>.
+### <a name="use-the-new-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Aktualisieren einer oder vieler Verteilerlistengruppen auf Microsoft 365-Gruppen in Outlook mithilfe der neuen EAC
 
-2. Wechseln Sie im Exchange  Admin Center zu \> **Empfängergruppen**.<br/>Es wird eine Meldung angezeigt, dass Sie Verteilerlisten (auch Verteilergruppen **genannt)** haben, die berechtigt sind, auf Microsoft 365-Gruppen aktualisiert zu werden.<br/> ![Wählen Sie die Schaltfläche Erste Schritte aus.](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+1. Wechseln Sie zum neuen [Exchange Admin Center,](https://admin.exchange.microsoft.com)und navigieren Sie zu  \> **Empfängergruppen**.
 
-3. Wählen Sie eine oder mehrere Verteilerlisten (auch als **Verteilergruppe** bezeichnet) auf der Seite **Gruppen** aus.<br/>![Auswählen einer Verteilergruppe](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
+2. Wählen Sie die Verteilerlistengruppe (auch Verteilergruppe **genannt)** aus, die Sie auf der Seite Gruppen auf Microsoft 365 **aktualisieren** möchten.
+
+3. Wählen Sie **auf der Toolleiste** die Verteilergruppe Upgrade aus.
+
+4. Klicken Sie im Dialogfeld **Bereit zum Upgrade?** auf **Upgrade**. Der Prozess beginnt sofort. Je nach Größe und Anzahl der Verteilerlistengruppen, die Sie aktualisieren, kann der Vorgang Minuten oder Stunden dauern.
+
+> [!NOTE]
+> Ein Banner oben zeigt das Upgrade an, z. B. wurde ein Upgrade für *Verteilergruppen durchgeführt. Es dauert 5 Minuten, bis die Änderungen widerspiegelt werden. Filtern Sie nach Microsoft 365-Gruppen, um die aktualisierten Distrubtionsgruppen zu sehen.*
+
+### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Aktualisieren einer oder vieler Verteilerlistengruppen auf Microsoft 365-Gruppen in Outlook mithilfe der klassischen EAC
+
+1. Wechseln Sie zum klassischen <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>.
+
+2. Wechseln Sie im klassischen  Exchange Admin Center zu \> **Empfängergruppen**.<br/>Es wird eine Meldung angezeigt, dass Sie Verteilerlisten (auch Verteilergruppen **genannt)** haben, die berechtigt sind, auf Microsoft 365-Gruppen aktualisiert zu werden.<br/> ![Wählen Sie die Schaltfläche Erste Schritte aus.](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+
+3. Wählen Sie auf der Seite Gruppen eine oder mehrere Verteilerlisten (auch **Verteilergruppe genannt)** aus.<br/>![Auswählen einer Verteilergruppe](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
 4. Wählen Sie das Upgradesymbol aus.<br/>![Upgrade auf Microsoft 365-Gruppen (Symbol)](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
@@ -49,7 +64,7 @@ Sie müssen globaler Administrator oder Exchange-Administrator sein, um eine Ver
 
 6. Wenn Sie mehrere Verteilerlisten aktualisieren, verwenden Sie die Dropdownliste, um zu filtern, welche Verteilerlisten aktualisiert wurden. Wenn die Liste nicht vollständig ist, warten Sie  etwas länger, und wählen Sie Aktualisieren aus, um zu sehen, was erfolgreich aktualisiert wurde.<br/>Es wird keine Benachrichtigung ausgegeben, die Sie informiert, wann das Upgrade für alle ausgewählten Verteilerlisten abgeschlossen wurde. Sie können dies jedoch herausfinden, indem Sie die Elemente untersuchen, die unter **Für Upgrade verfügbar** oder **Aktualisierte Verteilerlisten** angezeigt werden.
 
-7. Wenn Sie eine Verteilerliste für das Upgrade ausgewählt haben, diese aber auf der Seite noch als "Für Upgrade verfügbar" angezeigt wird, ist beim Upgrade ein Fehler aufgetreten. Lesen Sie in diesem Fall [Wie gehe ich vor, wenn das Upgrade nicht funktioniert?](#what-to-do-if-the-upgrade-doesnt-work)
+7. Wenn Sie eine DL für das Upgrade ausgewählt haben, sie jedoch weiterhin auf der Seite als Verfügbar für ein Upgrade angezeigt wird, konnte sie nicht aktualisiert werden. Lesen Sie in diesem Fall [Wie gehe ich vor, wenn das Upgrade nicht funktioniert?](#what-to-do-if-the-upgrade-doesnt-work)
 
 > [!NOTE]
 > Wenn Sie die Digest-E-Mails der Gruppen erhalten, wird im unteren Bereich ggf. angeboten, ein Upgrade für alle geeigneten Verteilerlisten auszuführen, deren Besitzer Sie sind. Weitere Informationen zu Digest-E-Mails finden Sie unter [Führen einer Gruppenunterhaltung in Outlook](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22).
@@ -60,7 +75,7 @@ Verteilerlisten, für die beim Upgrade ein Fehler auftritt, bleiben unverändert
 
 Wenn für mindestens eine **geeignete** Verteilerliste beim Upgrade ein Fehler auftritt, öffnen Sie ein [Supportticket](../contact-support-for-business-products.md). Das Problem muss an das Gruppenentwicklungsteam eskaliert werden, damit dieses das Problem ermitteln kann.
 
-Es ist möglich, dass für die Verteilerliste aufgrund eines Dienstausfalls kein Upgrade ausgeführt wurde. Dies ist aber ziemlich unwahrscheinlich. Wenn Sie möchten, können Sie auch eine Weile warten und dann erneut versuchen, ein Upgrade für die Verteilerliste auszuführen.
+Es ist möglich, dass die Verteilerliste aufgrund eines Dienstausfalls nicht aktualisiert wurde, aber unwahrscheinlich. Warten Sie, falls sie möchten, eine Weile, und versuchen Sie dann, die DL erneut zu aktualisieren.
 
 ## <a name="how-to-use-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>Verwenden von PowerShell zum gleichzeitigen Ausführen eines Upgrades mehrerer Verteilerlisten
 
@@ -68,7 +83,7 @@ Wenn Sie im Umgang mit PowerShell erfahren sind, können Sie diese Methode anste
 
 ### <a name="upgrade-a-single-dl"></a>Upgrade einer einzelnen DL
 
-Führen Sie den folgenden Befehl aus, um ein Upgrade einer einzelnen DL auszuführen:
+Führen Sie zum Aktualisieren einer einzelnen DL den folgenden Befehl aus:
 
 ```PowerShell
 Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
@@ -131,8 +146,8 @@ Sie können nur für in der Cloud verwaltete, einfache, nicht geschachtelte Vert
 |Geschachtelte Verteilerliste. Die Verteilerliste hat untergeordnete Gruppen oder ist Mitglied einer anderen Gruppe.  <br/> |Nein  <br/> |
 |Verteilerlisten mit dem Mitglied **RecipientTypeDetails,** mit Ausnahme **von UserMailbox**, **SharedMailbox**, **TeamMailbox**, **MailUser**  <br/> |Nein  <br/> |
 |Verteilerliste mit mehr als 100 Besitzern  <br/> |Nein  <br/> |
-|Verteilerliste, die nur Mitglieder aber keinen Besitzer enthält  <br/> |Nein  <br/> |
-|Verteilerliste, die einen Alias mit Sonderzeichen enthält  <br/> |Nein  <br/> |
+|Verteilerliste, die nur Mitglieder, aber keinen Besitzer hat  <br/> |Nein  <br/> |
+|Verteilerliste mit Alias mit Sonderzeichen  <br/> |Nein  <br/> |
 |Die Verteilerliste ist als Weiterleitungsadresse für das freigegebene Postfach konfiguriert  <br/> |Nein  <br/> |
 |Wenn die DL Teil der **Absendereinschränkung** in einer anderen DL ist.  <br/> |Nein  <br/> |
 |Sicherheitsgruppen  <br/> |Nein  <br/> |
@@ -154,9 +169,9 @@ Wenn Sie überprüfen möchten, welche DLs für ein Upgrade berechtigt sind, fü
 
 Personen mit globalen Administrator- oder Exchange-Administratorrechten.
 
-### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-a-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>Warum wird auf der Visitenkarte weiterhin eine Verteilerliste angezeigt? Wie kann ich vorgehen, um zu verhindern, dass eine Verteilerliste, für die ein Upgrade ausgeführt wurde, in meiner Vorschlagssuche angezeigt wird?
+### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-an-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>Warum wird auf der Visitenkarte weiterhin eine Verteilerliste angezeigt? Was soll ich tun, um zu verhindern, dass eine aktualisierte Verteilerliste in meiner Liste für automatische Vorschläge angezeigt wird?
 
-- For Outlook: When someone tries to send an email in Outlook by tipping the Microsoft 365 group name after migration, the recipient will be resolved as the distribution list instead of the group. Die Visitenkarte des Empfängers entspricht der Visitenkarte der Verteilerliste. Der Grund hierfür liegt im Empfängercache oder "Spitznamen"-Cache von Outlook. Die E-Mail wird erfolgreich an die Gruppe gesendet, kann jedoch zu Verwirrung beim Absender führen.<br/>Sie können die Schritte im Thema [Informationen zur AutoVervollständigen-Liste von Outlook](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list) ausführen, um den Cache zurückzusetzen und das Problem zu beheben.
+- For Outlook: When someone tries to send an email in Outlook by tipping the Microsoft 365 group name after migration, the recipient will be resolved as the distribution list instead of the group. Die Visitenkarte des Empfängers entspricht der Visitenkarte der Verteilerliste. Der Grund hierfür liegt im Empfängercache oder "Spitznamen"-Cache von Outlook. Die E-Mail wird erfolgreich an die Gruppe gesendet, kann jedoch zu Verwirrung beim Absender führen.<br/>Sie können die Schritte in diesem Artikel, [Informationen zur Outlook AutoComplete-Liste,](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list) ausführen, um den Cache zurückzusetzen, wodurch dieses Problem behoben wird.
 
 - Für Outlook im Web: Bei Outlook im Web bleibt der Empfänger der Verteilerliste weiterhin im Cache. Sie können die Schritte unter Entfernen des vorgeschlagenen Namens oder der [E-Mail-Adresse](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) aus der Liste der automatischen Vervollständigen ausführen, um den Cache zu aktualisieren, um die Gruppenkontaktkarte zu sehen.
 

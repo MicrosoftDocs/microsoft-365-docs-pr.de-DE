@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Übersicht über die Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
-ms.openlocfilehash: cc01f2a22f6f8c89d0ae8fcd8b53498790930d3e
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 99c05c18f3825680824854f86e469ab4aa8bbcba
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768626"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860863"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
 
@@ -63,7 +63,7 @@ Messbeispiele und Bürostandorte sollten 24 Stunden nach Erfüllen dieser Voraus
 
 Für diese Option sind weder Windows Location Services noch Wi-Fi erforderlich. Ihre OneDrive für #A0 muss auf dem neuesten Stand sein und auf mindestens einem Computer am Standort installiert sein.
 
-Sie müssen auch Speicherorte auf  der Seite Speicherorte hinzufügen oder aus einer CSV-Datei importieren. Die hinzugefügten Speicherorte müssen Ihre Office -LAN-Subnetzinformationen enthalten.
+Sie müssen auch Speicherorte auf der Seite Speicherorte **hinzufügen** oder aus einer CSV-Datei importieren. Die hinzugefügten Speicherorte müssen Ihre Office -LAN-Subnetzinformationen enthalten.
 
 Mit dieser Option können Sie mehrere Büros innerhalb einer Stadt definieren.
 
@@ -121,6 +121,14 @@ Sie können eine Tabellenansicht der Speicherorte anzeigen, an denen sie auf der
 
 > [!div class="mx-imgBorder"]
 > ![Speicherorte für Netzwerkeinblicke](../media/m365-mac-perf/m365-mac-perf-locations.png)
+
+## <a name="remote-worker-assessment-and-user-connection-metrics"></a>Remotearbeitsbewertung und Benutzerverbindungsmetriken
+
+Wir klassifizieren Netzwerkdatenverkehrsprotokolle als Remote- oder Benutzer vor Ort und zeigen deren Prozentsätze im Abschnitt Benutzerverbindungsmetriken im Übersichtsbereich an. Für Städte, in denen Sie Remotebenutzer haben, finden Sie beim Öffnen der Seite dieses Standorts die Standortbewertung für ein bestimmtes Remotenetzwerk. Die Liste der Standorte enthält sowohl Bürostandorte als auch Remotearbeitsorte, die gefiltert und sortiert werden können. Wir stellen die Bewertungsbewertung für Remotemitarbeiter mit Punktaufschlüsselung für Exchange, SharePoint und Teams zur Verfügung.
+
+Einblicke in das Netzwerk von Privatbenutzern werden auf Stadtebene aggregiert und gemeldet und sind auf Städte mit mindestens 5 Remotemitarbeitern beschränkt. Wir identifizieren nicht einzelne Mitarbeiter, die von zu Hause aus arbeiten.
+
+Speicherorte werden automatisch als "onsite" oder "remote" klassifiziert. Sie haben jedoch die Möglichkeit, alle Ihre vor Ort abziehende IP-Adressen manuell ein eingeben, um eine 100 %-Klassifizierung sicherzustellen. Wenn Sie sich für diese Route entscheiden, müssen Sie das Kontrollkästchen Alle vor Ort abgehende **IP-Adressen** manuell eingeben im Flyout Standorteinstellungen aktivieren, nachdem Sie alle Ihre abgehende IP-Adressen hinzugefügt haben. Wenn dies geschieht, werden alle Netzwerkdatenverkehrsprotokolle von ip-Ausgangsadressen, die Sie als "vor Ort" gekennzeichnet haben, immer als Büros klassifiziert, und jede andere abziehende IP-Adresse wird als Remote klassifiziert.
 
 ## <a name="specific-office-location-network-performance-summary-and-insights"></a>Zusammenfassung und Einblicke in die Leistung eines bestimmten Office-Standortnetzwerks
 

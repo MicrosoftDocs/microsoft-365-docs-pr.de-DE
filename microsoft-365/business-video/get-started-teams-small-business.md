@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit Microsoft Teams in Ihrem kleinen Unternehmen
+title: Erste Schritte mit Microsoft Teams in Ihrem Kleinunternehmen
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Microsoft Teams in Ihrem kleinen Unternehmen verwenden.
-ms.openlocfilehash: 592d5eda985239f79ce42291af840ff7762a903c
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: b77ad43722764895a4f89c623d4af9403aa25e5b
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034289"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860559"
 ---
-# <a name="get-started-with-microsoft-teams-in-your-small-business"></a>Erste Schritte mit Microsoft Teams in Ihrem kleinen Unternehmen
+# <a name="get-started-with-microsoft-teams-in-your-small-business"></a>Erste Schritte mit Microsoft Teams in Ihrem Kleinunternehmen
 
 - [Verwenden von Teams für Ihr Unternehmen (Video)](#use-teams-for-your-business-video)
 - [Hosten von Onlinebesprechungen für Ihr Unternehmen (Video)](#host-online-meetings-for-your-business-video)
@@ -47,7 +47,7 @@ Für Hilfe beim Remote arbeiten empfehlen wir, mit den folgenden drei Schritten 
 
 ## <a name="1-get-ready"></a>1. Machen Sie sich bereit 
 
-Die ersten Schritte sind einfach. Wenn Sie bereits über ein Microsoft 365-Abonnement verfügen, stellen Sie sicher, dass jeder über eine Lizenz verfügt, die Microsoft Teams enthält. Wenn Ihr Unternehmen noch nicht über Microsoft Teams verfügt, können Sie das richtige [Microsoft Teams für](https://aka.ms/TeamsBusinessBasic) Ihr Unternehmen finden und sich registrieren.
+Die ersten Schritte sind einfach. Wenn Sie bereits über ein Microsoft 365-Abonnement verfügen, stellen Sie sicher, dass jeder über eine Lizenz verfügt, die Microsoft Teams enthält. Wenn Ihr Unternehmen noch nicht über Microsoft Teams verfügt, können Sie das richtige [Microsoft Teams für](https://www.microsoft.com/microsoft-teams/teams-for-work) Ihr Unternehmen finden und sich registrieren.
 
 ### <a name="get-microsoft-teams-ready-for-your-customers"></a>Bereiten Sie Microsoft Teams für Ihre Kunden vor
 
@@ -133,4 +133,4 @@ Verwandeln Sie alle PCs, Macs oder mobilen Geräte in ein funktionierendes Gesch
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Unterstützen Sie Ihr Kleinunternehmen mit Remotearbeit](https://docs.microsoft.com/microsoft-365/admin/misc/empower-your-small-business-with-remote-work.md) (Artikel)
+[Unterstützen Sie Ihr Kleinunternehmen mit Remotearbeit](https://docs.microsoft.com/microsoft-365/admin/misc/empower-your-small-business-with-remote-work) (Artikel)

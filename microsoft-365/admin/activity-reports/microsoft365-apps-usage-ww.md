@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Erfahren Sie, wie Sie einen Microsoft 365 Apps for Usage Report mithilfe des Microsoft 365 Reports-Dashboards im Microsoft 365 Admin Center erhalten.
-ms.openlocfilehash: 5b45e7994126018701c409d4fbfc6f1172924773
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: d41a1680b46709c3f41b5238d309794c68101cee
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644267"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860749"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365-Berichte im Admin Center – Microsoft 365-Apps-Nutzung
 
@@ -33,7 +33,7 @@ Das Microsoft 365 **Reports-Dashboard** zeigt Ihnen die Übersicht über die Akt
 
 
  > [!NOTE]
- > Sie müssen ein globaler Administrator, globaler Leser oder Berichtleser in Microsoft 365 oder ein Exchange-, SharePoint- oder Skype for Business-Administrator sein, um Berichte anzeigen zu können. Aktivierungen freigegebener Computer werden in diesem Bericht nicht unterstützt.
+ > Sie müssen ein globaler Administrator, globaler Leser oder Berichtleser in Microsoft 365 oder ein Exchange-, SharePoint- oder Skype for Business-Administrator sein, um Berichte anzeigen zu können. Aktivierungen freigegebener Computer sind in diesem Bericht nicht enthalten.
 
 ## <a name="how-to-get-to-the-microsoft-365-apps-usage-report"></a>So erhalten Sie den Microsoft 365 Apps-Nutzungsbericht
 
@@ -50,7 +50,7 @@ Sie können einen Einblick in die Microsoft 365-Apps-Aktivität Ihres Benutzers 
 |Element|Beschreibung|
  |:-----|:-----|
  |1. <br/> |Der **Microsoft 365** Apps-Nutzungsbericht kann für Trends der letzten 7 Tage, 30 Tage, 90 Tage oder 180 Tage angezeigt werden. Wenn Sie im Bericht jedoch einen bestimmten Tag auswählen, werden in der Tabelle (7) Daten für bis zu 28 Tage ab dem aktuellen Datum angezeigt (nicht ab dem Datum, an dem der Bericht generiert wurde). <br/> |
- |2. <br/> |Die Daten in den einzelnen Berichten decken in der Regel bis zu den letzten sieben Tagen ab. <br/> |
+ |2. <br/> |Die Daten in den einzelnen Berichten decken in der Regel bis zu den letzten beiden Tagen ab. Alle sechs Tage aktualisieren wir den Bericht mit kleinen Updates, um die Datenqualität sicherzustellen. <br/> |
  |3. <br/> |Die **Benutzeransicht** zeigt den Trend in der Anzahl der aktiven Benutzer für jede App – Outlook, Word, Excel, PowerPoint, OneNote und Teams. "Aktive Benutzer" sind alle Personen, die beabsichtigte Aktionen in diesen Apps ausführen. <br/> |
  |4. <br/> |Die **Ansicht Plattformen** zeigt den Trend aktiver Benutzer für alle Apps für jede Plattform – Windows, Mac, Web und Mobile. <br/> |
  |5.<br/>|Im Diagramm **Benutzer** ist die Y-Achse die Anzahl der eindeutigen aktiven Benutzer für die jeweilige App. Im **Diagramm Plattformen**   ist die Y-Achse die Anzahl eindeutiger Benutzer für die jeweilige Plattform. Die X-Achse in beiden Diagrammen ist das Datum, an dem eine App auf einer bestimmten Plattform verwendet wurde.<br/>|
