@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Administratoren können sich über die Anti-Spoofing-Funktionen informieren, die in Exchange Online Protection (EOP) verfügbar sind und die dazu beitragen können, Phishing-Angriffe von gefälschten Absendern und Domänen abzuschwächen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 54b94e2d2cc0395ce7a9785887c253df3addf7fa
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 20294bf00c62e59da33b54ea0c8ee85f7b1372af
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688777"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51769022"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Schutz vor Spoofing in EOP
 
@@ -120,7 +120,7 @@ Microsoft unterscheidet zwei verschiedene Typen von gefälschten Nachrichten:
 
   - `reason=000` gibt an, dass die explizite E-Mail-Authentifizierung der Nachricht fehlerhaft war. Der Wert `reason=001` gibt an, dass die implizite E-Mail-Authentifizierung für die Nachricht fehlgeschlagen ist.
 
-  - SFTY ist die Sicherheitsstufe der Nachricht. 9 zeigt Phishing an, 22 steht für organisationsinternes Spoofing.
+  - `SFTY` ist die Sicherheitsstufe der Nachricht. 9 zeigt Phishing an, 22 steht für organisationsinternes Spoofing.
 
 > [!NOTE]
 > Wenn Sie eine Nachricht wie ***compauth=fail reason=###** _ erhalten haben und Informationen zur zusammengesetzten Authentifizierung (compauth) sowie den Werten im Zusammenhang mit Spoofing benötigen, lesen Sie folgendes: [_Antispam-Nachrichtenkopfzeilen in Microsoft 365*](anti-spam-message-headers.md). Oder wechseln Sie direkt zu [*Grund*](anti-spam-message-headers.md) Codes.
