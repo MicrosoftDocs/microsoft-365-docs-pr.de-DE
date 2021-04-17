@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 560eeb1e1099576f9f4babf02cc38eb842094fd1
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5175d630dd5d80b62451b3a1eafc4c2f6350ac32
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862418"
+ms.locfileid: "51876337"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Behandeln von Leistungsproblemen im Zusammenhang mit dem Echtzeitschutz
 
@@ -60,7 +60,7 @@ In **MPLog-xxxxxxxx-xxxxxx.log** finden Sie die geschätzten Leistungsauswirkung
 
 | Feldname | Beschreibung |
 |---|---|
-|ProcessImageName   | Prozessbildname |
+|ProcessImageName | Prozessbildname |
 | TotalTime | Die kumulierte Dauer in Millisekunden für Scans von Dateien, auf die durch diesen Prozess zugegriffen wird |
 |Anzahl | Die Anzahl der gescannten Dateien, auf die von diesem Prozess zugegriffen wird |
 |MaxTime |  Die Dauer in Millisekunden bei der längsten einzelnen Überprüfung einer Datei, auf die von diesem Prozess zugegriffen wird |
@@ -69,13 +69,13 @@ In **MPLog-xxxxxxxx-xxxxxx.log** finden Sie die geschätzten Leistungsauswirkung
 
 Wenn die Leistungsauswirkung hoch ist, versuchen Sie, den Prozess den Pfad-/Prozessausschlüssen zu hinzufügen, indem Sie die Schritte unter Konfigurieren und Überprüfen von Ausschlüssen für [Microsoft Defender Antivirus-Scans ausführen.](collect-diagnostic-data.md)
 
-Wenn das Problem im vorherigen Schritt nicht gelöst wird, können Sie weitere Informationen über den Prozessmonitor oder die [Windows-Leistungsaufzeichnung](#capture-performance-logs-using-windows-performance-recorder) in den folgenden Abschnitten sammeln. [](#capture-process-logs-using-process-monitor) 
+Wenn das Problem im vorherigen Schritt nicht gelöst wird, können Sie weitere Informationen über den Prozessmonitor oder die [Windows-Leistungsaufzeichnung](#capture-performance-logs-using-windows-performance-recorder) in den folgenden Abschnitten sammeln. [](#capture-process-logs-using-process-monitor)
      
 ## <a name="capture-process-logs-using-process-monitor"></a>Erfassen von Prozessprotokollen mithilfe der Prozessüberwachung
 
-Process Monitor (ProcMon) ist ein erweitertes Überwachungstool, das Echtzeitprozesse anzeigen kann. Sie können dies verwenden, um das Leistungsproblem zu erfassen, während es auftritt. 
+Process Monitor (ProcMon) ist ein erweitertes Überwachungstool, das Echtzeitprozesse anzeigen kann. Sie können dies verwenden, um das Leistungsproblem zu erfassen, während es auftritt.
 
-1. Laden [Sie Process Monitor v3.60](/sysinternals/downloads/procmon) in einen Ordner wie `C:\temp` herunter. 
+1. Laden [Sie Process Monitor v3.60](/sysinternals/downloads/procmon) in einen Ordner wie `C:\temp` herunter.
 
 2. So entfernen Sie die Dateimarke des Webs:
     1. Klicken Sie mit der **rechtenProcessMonitor.zip,** und wählen Sie **Eigenschaften aus.**
@@ -188,7 +188,9 @@ Alternativ können Sie auch das Befehlszeilentool *wpr.exe* verwenden, das in Wi
 6. Wählen **Sie Profile hinzufügen...** aus, und navigieren Sie zum Pfad der `WD.wprp` Datei.
 
 7. Danach sollte ein neuer Profilsatz  unter Benutzerdefinierte Messungen namens *Microsoft Defender for Endpoint-Analyse* darunter angezeigt werden.
+
     ![in-file](images/wpr-infile.png)
+
     >[!WARNING]
     >Wenn Ihr Windows Server über 64 GB RAM oder mehr verfügt, verwenden Sie die benutzerdefinierte Maßeinheit `Microsoft Defender for Endpoint analysis for large servers` anstelle von `Microsoft Defender for Endpoint analysis` . Andernfalls kann ihr System eine hohe Menge an nicht aus seiteierten Poolspeichern oder Puffern verbrauchen, was zu Systeminstabilität führen kann. Sie können auswählen, welche Profile hinzugefügt werden, indem Sie die **Ressourcenanalyse erweitern.** Dieses benutzerdefinierte Profil bietet den erforderlichen Kontext für eine detaillierte Leistungsanalyse.
  
@@ -219,7 +221,7 @@ Alternativ können Sie auch das Befehlszeilentool *wpr.exe* verwenden, das in Wi
     >[!TIP]
     >Halten Sie die Datensammlung auf nicht länger als fünf Minuten. Zwei bis drei Minuten sind ein guter Bereich, da viele Daten gesammelt werden.
 
-12. Wählen Sie **Speichern** aus.
+12. Klicken Sie auf **Speichern**.
 
     ![Speichern auswählen](images/wpr-10.png)
 
@@ -227,8 +229,8 @@ Alternativ können Sie auch das Befehlszeilentool *wpr.exe* verwenden, das in Wi
 
     ![Ausfüllen von Details](images/wpr-12.png)
 
-    1. Wählen **Sie Dateiname:** aus, um zu bestimmen, wo Ihre Ablaufverfolgungsdatei gespeichert wird. Standardmäßig wird 1.is `%user%\Documents\WPR Files\` gespeichert. 
-    1. Wählen Sie **Speichern** aus. 
+    1. Wählen **Sie Dateiname:** aus, um zu bestimmen, wo Ihre Ablaufverfolgungsdatei gespeichert wird. Standardmäßig wird 1.is `%user%\Documents\WPR Files\` gespeichert.
+    1. Klicken Sie auf **Speichern**.
 
 14. Warten Sie, während die Ablaufverfolgung zusammengeführt wird.
 

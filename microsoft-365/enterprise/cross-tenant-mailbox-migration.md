@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f24f519ec3bb12622d74c1d02fbc0bb017aa2b24
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: d52a0ca4a2dc9b799a32f70962416ffe190e16db
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476409"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876187"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Mandantenübergreifende Postfachmigration (Vorschau)
 
@@ -435,6 +435,10 @@ Sobald das Postfach von Quelle zu Ziel verschoben wird, sollten Sie sicherstelle
 **Müssen wir RemoteMailboxen nach dem Verschieben lokal in der Quelle aktualisieren?**
 
 Ja, Sie sollten die targetAddress (RemoteRoutingAddress/ExternalEmailAddress) der lokalen Quellbenutzer aktualisieren, wenn das Quell-Mandantenpostfach in den Ziel mandanten verschoben wird.  Während das E-Mail-Routing den Empfehlungen für mehrere E-Mail-Benutzer mit unterschiedlichen targetAddresses folgen kann, müssen Frei/Gebucht-Suchen für E-Mail-Benutzer auf den Speicherort des Postfachbenutzers zielen. Frei/Gebucht-Suchen verfolgen nicht mehrere Umleitungen. 
+
+**Migrieren Teams-Besprechungen mandantenübergreifende?**  
+
+Die Besprechungen werden jedoch von der Teams-Besprechungs-URL nicht aktualisiert, wenn elemente mandantenübergreifende Migriert werden. Da die URL im Ziel-Mandant ungültig ist, müssen Sie die Teams-Besprechungen entfernen und neu erstellen.
 
 **Migriert der Inhalt des Teams-Chatordners mandantenübergreifende Inhalte?**  
 

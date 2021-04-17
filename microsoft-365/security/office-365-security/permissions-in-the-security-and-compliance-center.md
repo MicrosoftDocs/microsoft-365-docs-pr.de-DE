@@ -19,12 +19,12 @@ description: Administratoren können sich über die Berechtigungen informieren, 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 769396dc2c39b5b0efe2f1141f07e6c05f6a43bd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a4cfb0e8638c8ad9ae921f6853ebd4c003ebbe4a
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205846"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876325"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Berechtigungen im Security & Compliance Center
 
@@ -86,7 +86,7 @@ Informationen zum Gewähren des Zugriffs auf das Security & Compliance Center fi
 |**Insider Risk Management**|Verwenden Sie diese Rollengruppe zum Verwalten des Risikomanagements für Ihr Unternehmen in einer einzigen Gruppe. Wenn Sie alle Benutzerkonten für designierte Administratoren, Analytiker und Prüfer hinzufügen, können Sie Berechtigungen für das Insider-Risikomanagement in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für Insider-Risikomanagement. Dies ist die einfachste Möglichkeit, den Einstieg in das Insider-Risikomanagement schnell zu finden und eignet sich gut für Unternehmen, die keine separaten Berechtigungen benötigen, die für getrennte Benutzergruppen definiert sind.|Fallverwaltung <p> Insider Risk Management Admin <p> Insider Risk Management Analysis <p> Untersuchung des Insider-Risikomanagements <p> View-Only Fall|
 |**Insider Risk Management Admins**|Verwenden Sie diese Rollengruppe, um zunächst das Insiderrisikomanagement zu konfigurieren und später Insiderrisikoadministratoren in eine definierte Gruppe zu trennen. Benutzer in dieser Rollengruppe können Verwaltungsrichtlinien, globale Einstellungen und Rollengruppenzuweisungen für Insiderrisiken erstellen, lesen, aktualisieren und löschen.|Fallverwaltung <p> Insider Risk Management Admin <p> View-Only Fall|
 |**Insider-Risikomanagement-Analysten**|Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Analysten im Falle eines Insiderrisikos fungieren. Benutzer in dieser Rollengruppe können auf alle Warnungs-, Falll- und Benachrichtigungsvorlagen für Insiderrisiken zugreifen. Sie könne nicht auf den Inhalts-Explorer für Insider-Risiken zugreifen.|Fallverwaltung <p> Insider Risk Management Analysis <p> View-Only Fall|
-|**Insider Risk Management Auditoren**|Auditoren des Insider-Risikomanagements, die die Überwachungsprotokolle von Aktionen anzeigen können, die von Analysten, Ermittlern und Administratoren ausgeführt werden.|Insider Risk Management Audit|
+|**Insider Risk Management Auditoren**|Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zu erteilen, die Insider-Risikomanagementaktivitäten überwachen. Benutzer in dieser Rollengruppe können auf das Überwachungsprotokoll für Insiderrisiken zugreifen.|Insider Risk Management Audit|
 |**Insider-Risikomanagement-Prüfer**|Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Datenprüfer für Insiderrisiken fungieren. Benutzer in dieser Rollengruppe können auf alle Warnungs-, Falll- und Benachrichtigungsvorlagen für Insiderrisiken sowie auf den Inhalts-Explorer für alle Fälle zugreifen.|Fallverwaltung <p> Untersuchung des Insider-Risikomanagements <p> View-Only Fall|
 |**IRM-Mitwirkende**|Diese Rollengruppe ist sichtbar, wird jedoch nur von Hintergrunddiensten verwendet.|Permanenter Beitrag zum Insider Risk Management <p> Temporärer Beitrag zum Insider Risk Management|
 |**MailFlow-Administrator**|Mitglieder können Einblicke und Berichte zum Nachrichtenfluss im Security & Compliance Center überwachen und anzeigen. Globale Administratoren können dieser Gruppe normale Benutzer hinzufügen, aber wenn der Benutzer kein Mitglied der Exchange Admin-Gruppe ist, hat der Benutzer keinen Zugriff auf Exchange-Administratoraufgaben.|Schreibgeschützte Empfänger|
@@ -179,7 +179,7 @@ Beachten Sie, dass die folgenden Rollen standardmäßig nicht der Rollengruppe O
 |**Untersuchung des Insider-Risikomanagements**|Greifen Sie auf alle Insider-Risikomanagementwarnungen, Fälle, Benachrichtigungsvorlagen und den Inhalts-Explorer für alle Fälle zu.|Insider-Risikomanagement <p> Insider-Risikomanagement-Prüfer|
 |**Permanenter Beitrag zum Insider Risk Management**|Diese Rollengruppe ist sichtbar, wird jedoch nur von Hintergrunddiensten verwendet.|IRM-Mitwirkende|
 |**Temporärer Beitrag zum Insider Risk Management**|Diese Rollengruppe ist sichtbar, wird jedoch nur von Hintergrunddiensten verwendet.|IRM-Mitwirkende|
-|**Benachrichtigungen verwalten**|Anzeigen und Bearbeiten von Einstellungen und Berichten für Warnungen.|Complianceadministrator <p> Compliancedatenadministrator <p> Organisationsverwaltung <p> Sicherheitsadministrator <p> Sicherheitsoperator|
+|**Verwalten von Warnungen**|Anzeigen und Bearbeiten von Einstellungen und Berichten für Warnungen.|Complianceadministrator <p> Compliancedatenadministrator <p> Organisationsverwaltung <p> Sicherheitsadministrator <p> Sicherheitsoperator|
 |**Organisationskonfiguration**|Ausführen, Anzeigen und Exportieren von Überwachungsberichten und Verwalten von Compliancerichtlinien für DLP, Geräte und Aufbewahrung.|Complianceadministrator <p> Compliancedatenadministrator <p> Organisationsverwaltung|
 |**Preview**|Zeigen Sie eine Liste der Elemente an, die von Inhaltssuchen zurückgegeben werden, und öffnen Sie jedes Element aus der Liste, um dessen Inhalt anzuzeigen.|eDiscovery-Manager|
 |**Quarantäne**|Ermöglicht das Anzeigen und Freigeben von isolierten E-Mails.|Quarantäneadministrator <p> Sicherheitsadministrator <p> Organisationsverwaltung|
