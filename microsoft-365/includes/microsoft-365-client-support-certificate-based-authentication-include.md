@@ -7,7 +7,6 @@
 |UNTERNEHMENSPORTAL|✔|✔|✔|Nicht zutreffend|✔|
 |CORTANA|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|✔|
 |DELVE|✔|✔|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
-|EDGE|✔|✔|Nicht zutreffend|✔|Nicht zutreffend|
 |EXCEL|✔|✔|✔|✔|✔|
 |EXCHANGE ADMIN|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|✔|Nicht zutreffend|
 |FORMS|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|

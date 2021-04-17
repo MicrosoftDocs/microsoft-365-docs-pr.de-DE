@@ -6,7 +6,6 @@
 |UNTERNEHMENSPORTAL|Geplant|Geplant|Geplant|Nicht zutreffend|Geplant|
 |CORTANA|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Geplant|
 |DELVE|✔|✔|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
-|EDGE|Geplant|Geplant|Nicht zutreffend|Geplant|Nicht zutreffend|
 |EXCEL|✔|Geplant|Geplant|Geplant|Nicht zutreffend|
 |EXCHANGE ADMIN|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|✔|Nicht zutreffend|
 |FORMS|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|

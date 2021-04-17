@@ -5,7 +5,6 @@
 |UNTERNEHMENSPORTAL|Nicht zutreffend|✔|Geplant|Nicht zutreffend|✔|
 |CORTANA|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|✔|
 |DELVE|✔|✔|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
-|EDGE|✔|Geplant|Nicht zutreffend|✔|Nicht zutreffend|
 |EXCEL|✔|✔|✔|✔|✔|
 |KAIZALA|✔|Geplant|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
 |MICROSOFT ROOMS|Geplant|Geplant|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
