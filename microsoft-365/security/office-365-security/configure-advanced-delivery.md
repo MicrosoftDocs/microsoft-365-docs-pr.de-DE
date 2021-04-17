@@ -18,12 +18,12 @@ description: Administratoren können erfahren, wie Sie die erweiterte Zustellung
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX
-ms.openlocfilehash: 09e07d8406b470fd3dac25944d013b997f2f90c1
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 9d737472be5da2af0a0a36beb4b7914b8bfe3a10
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760431"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876065"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Konfigurieren der Übermittlung von Phishingsimulationen von Drittanbietern an Benutzer und ungefilterte Nachrichten an SecOps-Postfächer
 
@@ -35,7 +35,7 @@ ms.locfileid: "51760431"
 > [!NOTE]
 > Das in diesem Artikel beschriebene Feature befindet sich in Preview, ist nicht für alle verfügbar und kann geändert werden.
 
-Wir möchten Ihre Organisation standardmäßig [schützen,](secure-by-default.md)sodass Exchange Online Protection (EOP) keine sicheren Listen oder Filterumgehungen für Nachrichten zu lässt, die zu Schadsoftware oder phishingsicheren Phishing-Urteilen führen. Wir wissen jedoch, dass es bestimmte Szenarien gibt, die die Zustellung ungefilterter Nachrichten erfordern. Beispiel:
+Um Ihre Organisation standardmäßig zu [schützen,](secure-by-default.md)lässt Exchange Online Protection (EOP) keine sicheren Listen oder Filterumgehungen für Nachrichten zu, die zu Schadsoftware oder Phishing mit hoher Vertrauenheit führen. Es gibt jedoch bestimmte Szenarien, in denen die Zustellung ungefilterter Nachrichten erforderlich ist. Beispiel:
 
 - **Phishingsimulationen von** Drittanbietern: Simulierte Angriffe können Ihnen helfen, anfällige Benutzer zu identifizieren, bevor sich ein tatsächlicher Angriff auf Ihre Organisation aus wirkt.
 - **Sicherheitsvorgänge (SecOps)-Postfächer:** Dedizierte Postfächer, die von Sicherheitsteams zum Sammeln und Analysieren ungefilterter Nachrichten (sowohl gut als auch schlecht) verwendet werden.
@@ -47,9 +47,9 @@ Sie verwenden die _erweiterte Zustellungsrichtlinie_ in Microsoft 365, um zu ver
 - [Standardsystemwarnungen](alerts.md) werden für diese Szenarien nicht ausgelöst.
 - [AIR und clustering in Defender for Office 365](office-365-air.md) ignoriert diese Nachrichten.
 - Speziell für Phishingsimulationen von Drittanbietern:
-  - [Administratorübermittlungen](admin-submission.md) generiert eine automatische Antwort, die besagt, dass die Nachricht Teil einer Phishingsimulationskampagne ist und keine echte Bedrohung ist. Warnungen und AIR werden nicht ausgelöst.
-  - [Sichere Links in Defender for Office 365](safe-links.md) blockieren oder detonieren die speziell identifizierten URLs in diesen Nachrichten nicht.
-  - [Sichere Anlagen in Defender für Office 365](safe-attachments.md) detonieren anlagen in diesen Nachrichten nicht.
+  - [Administratorübermittlungen](admin-submission.md) generiert eine automatische Antwort mit der Meldung, dass die Nachricht Teil einer Phishingsimulationskampagne ist und keine echte Bedrohung ist. Warnungen und AIR werden nicht ausgelöst.
+  - [Sichere Links in Defender für Office 365](safe-links.md) blockieren oder detonieren die speziell identifizierten URLs in diesen Nachrichten nicht.
+  - [Sichere Anlagen in Defender für Office 365](safe-attachments.md) detonieren Anlagen in diesen Nachrichten nicht.
 
 <sup>\*</sup> Sie können Schadsoftwarefilterung oder ZAP für Schadsoftware nicht umgehen.
 
@@ -106,8 +106,8 @@ Die von Ihnen konfigurierten SecOps-Postfacheinträge werden auf der **Registerk
 
 Zusätzlich zu den beiden Szenarien, die Ihnen die erweiterte Übermittlungsrichtlinie helfen kann, gibt es weitere Szenarien, für die Sie die Filterung umgehen müssen:
 
-- **Filter von** Drittanbietern: Wenn der MX-Eintrag Ihrer Domäne nicht auf Office 365 (Nachrichten werden zuerst an einen anderen Ort geroutet) [](secure-by-default.md) verweisen, ist die Sicherheit standardmäßig nicht verfügbar.
+- **Filter von** Drittanbietern: Wenn der MX-Eintrag Ihrer Domäne nicht auf Office 365 (Nachrichten werden zuerst an einen anderen Ort geroutet) angezeigt wird, ist die Sicherheit standardmäßig [](secure-by-default.md) *nicht verfügbar.* 
 
   Verwenden Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet), um die Microsoft-Filterung für Nachrichten zu umgehen, die bereits von Drittanbietern ausgewertet wurden. Weitere Informationen finden Sie unter Use mail flow rules to set [the SCL in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
-- **Falsch positive** Ergebnisse werden überprüft: Möglicherweise möchten Sie vorübergehend zulassen, dass [](admin-submission.md) bestimmte Nachrichten, die noch von Microsoft über Administratorübermittlungen analysiert werden, bekannte gute Nachrichten melden, die fälschlicherweise als schlecht für Microsoft markiert werden (falsch positive Ergebnisse). Wie bei allen Außerkraftsetzungen wird dringend empfohlen, dass diese Zertifikate temporär sind.
+- **Falsch positive** Ergebnisse werden überprüft: Möglicherweise möchten Sie vorübergehend zulassen, dass [](admin-submission.md) bestimmte Nachrichten, die noch von Microsoft über Administratorübermittlungen analysiert werden, bekannte gute Nachrichten melden, die fälschlicherweise als schlecht für Microsoft markiert werden (falsch positive Ergebnisse). Wie bei allen Außerkraftsetzungen wird dringend empfohlen, **_diese_** Zertifikate vorübergehend zu verwenden.

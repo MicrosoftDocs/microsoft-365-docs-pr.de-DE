@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8acd8d85826d7bda399c03cc60f2806af954c6c3
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: cd571414512ce876e730199b21bf755e4c4b733f
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861603"
+ms.locfileid: "51876199"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorisieren von Vorfällen in Microsoft 365 Defender
 
@@ -88,7 +88,7 @@ Hier ist der typische Workflow für die Reaktion auf Vorfälle:
 1. Identifizieren und verdingen Sie die Vorfälle mit der höchsten Priorität für Untersuchung und Lösung.
 2. Starten Sie für jeden Vorfall mit hoher Priorität eine [Untersuchung:](investigate-incidents.md)
 
-   a. Zeigen Sie die Zusammenfassung des Vorfalls an, um den Umfang, die betroffenen Entitäten und den Schweregrad (die Registerkarte **Zusammenfassung) zu** verstehen.
+   a. Zeigen Sie die Zusammenfassung des Vorfalls an, um den Umfang und den Schweregrad des Vorfalls sowie die betroffenen Entitäten zu verstehen (registerkarte **Zusammenfassung).**
 
    b. Schauen Sie sich die Warnungen an, um ihren Ursprung, Umfang und Schweregrad zu verstehen (registerkarte **Warnungen).**
 
@@ -98,17 +98,18 @@ Hier ist der typische Workflow für die Reaktion auf Vorfälle:
    
    e. Verwenden Sie bei Bedarf Informationen im Datensatz für den Vorfall, um weitere Informationen zu erhalten (registerkarte **Nachweis und** Antwort).
 
-Bei der Untersuchung sollten Sie sich um Dies sorgen:
+   Bei der Untersuchung sollten Sie sich um Dies sorgen:
 
-- Containment: Reduzierung zusätzlicher Auswirkungen auf Ihren Mandanten.
-- Auslöschung: Entfernen der Sicherheitsbedrohung.
-- Wiederherstellung: Wiederherstellen der Mandantenressourcen in dem Zustand, in dem sie sich vor dem Angriff auf dem Computer bew nkt haben.
+   - Containment: Reduzierung zusätzlicher Auswirkungen auf Ihren Mandanten.
+   - Auslöschung: Entfernen der Sicherheitsbedrohung.
+   - Wiederherstellung: Wiederherstellen der Mandantenressourcen in dem Zustand, in dem sie sich vor dem Angriff auf dem Computer bew nkt haben.
 
-Nachdem Sie den Vorfall behoben haben, nehmen Sie sich einen Moment Zeit, um daraus zu lernen:
+3. Nachdem Sie den Vorfall behoben haben, nehmen Sie sich die Zeit für:
 
-- Verstehen sie den Typ des Angriffs und seine Auswirkungen.
-- Recherchieren Sie den Angriff in der Sicherheitsgemeinschaft auf einen Trend zu Sicherheitsangriffen.
-- Erinnern Sie sich an den Workflow, den Sie verwendet haben, um den Vorfall zu beheben und Ihre Standardworkflows und Playbooks nach Bedarf zu aktualisieren.
+   - Verstehen sie den Typ des Angriffs und seine Auswirkungen.
+   - Recherchieren Sie den Angriff in der Sicherheitsgemeinschaft auf einen Trend zu Sicherheitsangriffen.
+   - Erinnern Sie sich an den Workflow, den Sie verwendet haben, um den Vorfall zu beheben und Ihre Standardworkflows und Playbooks nach Bedarf zu aktualisieren.
+   - Bestimmen Sie, ob Änderungen in Ihrer Sicherheitslage erforderlich sind, und ergreifen Sie die Schritte, um sie zu implementieren.
 
 Hier finden Sie eine Zusammenfassung des grundlegenden Prozesses.
 

@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft 365 Sicherheitsdokumentation
-summary: Informieren Sie sich über die robusten Sicherheitslösungen und -dienste in Microsoft 365 Security, damit Sie Ihr Unternehmen auf allen Angriffsflächen besser schützen können.
+summary: Das Microsoft 365 Security Center vereint mehrere Sicherheitstechnologien in einer umfassenden Verwaltungskonsole, mit Erweiterungen zum Schutz Ihres Unternehmens.
 metadata:
   title: Microsoft 365 Sicherheitsdokumentation
   description: Informationen zu Microsoft Defender für Endpunkt – wie es Endpunkte vor Cyberbedrohungen schützt und Sicherheitsteams Funktionen zur Bekämpfung von Drohungen bereitstellt.
@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 02/05/2021
   localization_priority: Priority
-  ms.openlocfilehash: c7ec3e0bb970d74d9e33c3d74eb0cd18aaf8d16c
-  ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+  ms.openlocfilehash: a8d2e2c5ec41436bba7f013304daa8f259db9444
+  ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "51200353"
+  ms.lasthandoff: 04/15/2021
+  ms.locfileid: "51768554"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
