@@ -201,7 +201,7 @@
           href: misc/pilot-microsoft-365-from-my-custom-domain.md
         - name: FAQ zu Domänen
           href: setup/domains-faq.yml
-        - name: Host-spezifische Anweisungen
+        - name: DNS-Anweisungen
           items:
             - name: Nameserver bei jedem DNS-Host ändern
               href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
