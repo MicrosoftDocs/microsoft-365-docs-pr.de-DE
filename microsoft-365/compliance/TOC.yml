@@ -208,7 +208,7 @@
             - name: Vergleichen von OME-Versionen
               href: ome-version-comparison.md
             - name: "Häufig gestellte Fragen zur Office\_365-Nachrichtenverschlüsselung"
-              href: ome-faq.md
+              href: ome-faq.yml
             - name: Wie vertrauliche Daten in E-Mails in Exchange Online geschützt werden
               href: exchange-online-secures-email-secrets.md
             - name: Wie Exchange Online mithilfe von TLS E-Mail-Verbindungen in Office 365 schützt
@@ -305,8 +305,10 @@
               href: dlp-sensitivity-label-as-condition.md
             - name: Verwenden von Richtlinien zur Verhinderung von Datenverlust für nicht von Microsoft stammende Cloud-Apps
               href: dlp-use-policies-non-microsoft-cloud-apps.md
-            - name: 'DLP-Richtlinien: Bedingungen und Ausnahmen (Vorschau)'
+            - name: DLP-Richtlinienbedingungen und -Ausnahmen
               href: dlp-conditions-and-exceptions.md
+            - name: 'Referenz: Richtlinientipps zur Verhinderung von Datenverlust (Data Loss Prevention, DLP)'
+              href: dlp-policy-tips-reference.md
 - name: Verwalten der Informationsgovernance
   items:
     - name: Ihre Daten verwalten
