@@ -140,6 +140,7 @@
 
 #### Microsoft Defender Antivirus – Problembehandlung
 ##### [Behandeln von Problemen bei der Microsoft Defender Antivirus-Berichterstattung in Update Compliance](troubleshoot-reporting.md)
+##### [Behandlung von Leistungsproblemen](troubleshoot-performance-issues.md)
 ##### [Überprüfen von Ereignisprotokollen und Fehlercodes zum Behandeln von Problemen mit Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Behandeln von Problemen mit Microsoft Defender Antivirus bei der Migration von einer Drittanbieterlösung](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
@@ -249,6 +250,7 @@
 ##### [Erkennen und Blockieren von potenziell unerwünschten Anwendungen](linux-pua.md)
 ##### [Scans planen mit Microsoft Defender für Endpunkt unter Linux](linux-schedule-scan-atp.md)
 ##### [Planen eines Updates von Microsoft Defender für Endpunkt (Linux)](linux-update-MDE-Linux.md)
+##### [Microsoft Defender für Endpunkt unter Linux mit Chef bereitstellen](linux-deploy-defender-for-endpoint-with-chef.md)
 
 #### [Problembehandlung]()
 ##### [Problembehandlung bei Installationsproblemen](linux-support-install.md)

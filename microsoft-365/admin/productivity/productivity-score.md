@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über die Microsoft-Produktivitätsbewertung.
-ms.openlocfilehash: d818bd766f76f3df6c67a740d6ad1994a2be66de
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0eac22eadd099ebe4c7efbdf1198f6dc576dc080
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914582"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876131"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft-Produktivitätsbewertung 
 
@@ -155,3 +155,11 @@ Dieser Bericht hilft Organisationen beim Verständnis folgender Aspekte:
 ## <a name="we-want-to-hear-from-you"></a>Wir freuen uns über Ihr Feedback
 
 Teilen Sie uns Ihre Gedanken zur Produktivitätsbewertung mit und Ihre Ideen, wie sie verbessert werden könnte. Verwenden Sie dafür die **Feedback**-Abschnitte innerhalb des Produkts und/oder wenden Sie sich an das für die Produktivitätsbewertung zuständige Team unter prodscorefeedback@microsoft.com.
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Überwachen der Microsoft 365-Aktivitäten mit Hilfe von Berichten](https://docs.microsoft.com/microsoft-365/admin/activity-reports/activity-reports) (Artikel)
+
+[Aktivieren von Analysen zur Nutzung von Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/enable-usage-analytics) (Artikel)
+
+[Übersicht über das Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (Video)

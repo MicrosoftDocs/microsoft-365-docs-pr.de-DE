@@ -22,7 +22,7 @@ description: In diesem Artikel finden Sie Endpunkte, die für Kunden mit Office 
 hideEdit: true
 ms.openlocfilehash: 0d96300e77c67ac05ea18ab23d63c01d4f840dfb
 ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/14/2021
 ms.locfileid: "51759894"
@@ -34,8 +34,8 @@ ms.locfileid: "51759894"
 Office 365 setzt eine Internetverbindung voraus. Die folgenden Endpunkte sollten nur für Kunden mit **Office 365 Deutschland**-Plänen erreichbar sein.
 
 > [!NOTE]
-> Für Kunden, die sich im Übergang zur neuen Microsoft 365-Rechenzentrumsregion in Deutschland befinden, ändern sich die Endpunkte.
-> Weitere Informationen finden Sie unter [Migration from Microsoft Cloud Deutschland to Office 365 services in the new German datacenter regions](ms-cloud-germany-transition.md).
+> Für Kunden, die sich im Übergang zur neuen Microsoft 365 Rechenzentrumsregion in Deutschland befinden, ändern sich die Endpunkte.
+> Weiter Informationen finden Sie in [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md).
   
  **Office 365-Endpunkte:** [Weltweit (einschließlich GCC)](urls-and-ip-address-ranges.md)  | [Office 365, betrieben von 21Vianet](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 Deutschland* | [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   
