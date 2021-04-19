@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: cd571414512ce876e730199b21bf755e4c4b733f
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 3b381749108d4a75024d9a546c0d3f1631c948ed
+ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876199"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51887257"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorisieren von Vorfällen in Microsoft 365 Defender
 
@@ -102,7 +102,7 @@ Hier ist der typische Workflow für die Reaktion auf Vorfälle:
 
    - Containment: Reduzierung zusätzlicher Auswirkungen auf Ihren Mandanten.
    - Auslöschung: Entfernen der Sicherheitsbedrohung.
-   - Wiederherstellung: Wiederherstellen der Mandantenressourcen in dem Zustand, in dem sie sich vor dem Angriff auf dem Computer bew nkt haben.
+   - Wiederherstellung: Wiederherstellen der Mandantenressourcen in dem Zustand, in dem sie sich vor dem Vorfall auf dem Computer begnauft haben.
 
 3. Nachdem Sie den Vorfall behoben haben, nehmen Sie sich die Zeit für:
 
