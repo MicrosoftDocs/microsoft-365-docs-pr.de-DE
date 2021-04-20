@@ -18,26 +18,35 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Post-Migrationsaktivitäten nach der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
-ms.openlocfilehash: 745589c1c997540094fc4a770e437de89015f88a
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: ee8dedf7ffaf6bfc4246b1a8cc2522c15d763cd1
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591756"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899364"
 ---
 # <a name="post-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Post-Migrationsaktivitäten für die Migration von Microsoft Cloud Deutschland
 
 Die folgenden Abschnitte enthalten Post-Migrationsaktivitäten für mehrere Dienste nach dem Wechsel von Microsoft Cloud Deutschland zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.
 
 ## <a name="azure-ad"></a>Azure AD
+<!-- This AAD Endpoints comparison table could be added to the documentation, not finally decided.
+### Azure AD Endpoints
+**Applies to:** All customers
 
-### <a name="azure-ad-connect"></a>Azure AD Connect
-**Gilt für:** Alle Kunden, die Identitäten mit Azure AD Connect synchronisieren
+After the cut over to Azure AD is complete, the organization is fully using Office 365 services and is no longer connected to Microsoft Cloud Deutschland and the endpoints cannot be used anymore. At this point, the customer needs to ensure that all applications are using the endpoints for the new German datacenter region.
+The following table provides an overview about which endpoints will replace the previously used endpoints in Microsoft Cloud Germany (Microsoft Cloud Deutschland). 
 
-| Schritte: | Beschreibung | Auswirkung |
-|:-------|:-------|:-------|
-| Aktualisieren Sie Azure AD Connect. | Nach Abschluss der Übernahmemigration zu Azure AD verwendet die gesamte Organisation Office 365-Dienste und ist nicht mehr mit Microsoft Cloud Deutschland verbunden. An diesem Punkt muss der Kunde sicherstellen, dass der Delta-Synchronisierungsprozess abgeschlossen ist. Ändern Sie danach den Zeichenfolgenwert von `AzureInstance` aus 3 (Microsoft Cloud Deutschland) im Registrierungspfad `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` in 0. | Ändern Sie den Wert `AzureInstance` des Registrierungsschlüssels. Andernfalls werden Objekte nicht synchronisiert, wenn die Microsoft Cloud Deutschland-Endpunkte nicht mehr verfügbar sind. |
-|||||
+|Endpoint in Microsoft Cloud Germany  |Endpoint in the new German datacenter region  |
+|:---------|:---------|
+|becws.microsoftonline.de<br>provisioningapi.microsoftonline.de |becws.microsoftonline.com<br>provisioningapi.microsoftonline.com |
+|adminwebservice.microsoftonline.de |adminwebservice.microsoftonline.com |
+|login.microsoftonline.de<br>logincert.microsoftonline.de<br>sts.microsoftonline.de |login.microsoftonline.com<br>login.windows.net<br>logincert.microsoftonline.com<br>accounts.accesscontrol.windows.net |
+|enterpriseregistration.microsoftonline.de |enterpriseregistration.windows.net |
+|graph.cloudapi.de |graph.windows.net |
+|graph.microsoft.de |graph.microsoft.com |
+|||
+-->
 
 ### <a name="azure-ad-federated-authentication-with-ad-fs"></a>Azure AD-Verbundauthentifizierung mit AD FS
 **Gilt für:** Alle Kunden, die Verbundauthentifizierung mit AD FS verwenden

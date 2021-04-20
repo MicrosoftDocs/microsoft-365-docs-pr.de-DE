@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Erfahren Sie mehr über Complianceoptionen für Microsoft 365-Gruppen, Teams und SharePoint-Zusammenarbeit.
-ms.openlocfilehash: 88083d88b274e750e0fc6f1907268c996312163c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5006f0cf9f7eb174082d4fc2508bf112864fcba3
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920892"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899352"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Complianceoptionen für Microsoft 365-Gruppen, Teams und SharePoint-Zusammenarbeit
 
@@ -37,8 +37,8 @@ Die folgende Tabelle enthält eine Kurzübersicht zu den in Microsoft 365 verfü
 ||Klassifizieren von Gruppen und Teams|[Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||Automatisches Klassifizieren vertraulicher Inhalte|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](../compliance/apply-sensitivity-label-automatically.md)|
 ||Verschlüsseln vertraulicher Inhalte|[Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung](../compliance/encryption-sensitivity-labels.md)|
-|Schutz von Daten|||
-||Verhindern des Verlusts vertraulicher Informationen|[Verhinderung von Datenverlust – Übersicht](../compliance/data-loss-prevention-policies.md)|
+|Information Protection|||
+||Verhindern des Verlusts vertraulicher Informationen|[Übersicht über die Verhinderung von Datenverlust](../compliance/data-loss-prevention-policies.md)|
 ||Schützen sie vertrauliche Informationen im Chat.|[Verhinderung von Datenverlust (DLP) und Microsoft Teams](../compliance/dlp-microsoft-teams.md).|
 ||Definieren der vertraulichen Informationen Ihrer Organisation|[Benutzerdefinierte vertrauliche Informationstypen](../compliance/sensitive-information-type-learn-about.md)|
 |Benutzersegmentierung|||
@@ -60,7 +60,7 @@ Benutzerchats werden auch dann unbegrenzt aufbewahrt, wenn ein Benutzerkonto gel
 
 - [Aufbewahrungsrichtlinien in Microsoft Teams](/microsoftteams/retention-policies)
 
-Eine einzelne Aufbewahrungsrichtlinie kann auf Microsoft 365-Gruppen, Teams-Chats und Teams-Kanalnachrichten angewendet werden. 
+Eine einzelne Aufbewahrungsrichtlinie kann so festgelegt werden, dass sie auf Teams-Chat- und Teams-Kanalnachrichten angewendet wird. 
 
 Zusätzliche Ressourcen:
 
@@ -89,11 +89,11 @@ Zusätzliche Ressourcen:
 - [Weitere Informationen zu Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels.md)
 
 
-## <a name="information-protection"></a>Schutz von Daten
+## <a name="information-protection"></a>Information Protection
 
 DLP-Richtlinien können die versehentliche Freigabe vertraulicher Informationen in SharePoint, Exchange und Teams verhindern. Sie können Richtlinien erstellen, die aktionen (z. B. Sperren des Zugriffs) basierend auf einer Reihe von Regeln angeben.
 
-- [Verhinderung von Datenverlust – Übersicht](../compliance/data-loss-prevention-policies.md)
+- [Übersicht über die Verhinderung von Datenverlust](../compliance/data-loss-prevention-policies.md)
 
 DLP in Teams kann dazu beitragen, vertrauliche Informationen in Teams-Chat- und -Kanalnachrichten zu schützen, indem Nachrichten gelöscht werden, die vertrauliche Informationen enthalten.
 
