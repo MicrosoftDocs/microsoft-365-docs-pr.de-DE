@@ -175,6 +175,9 @@
 ##### [Kontrollierte Ordnerzugriff aktivieren](enable-controlled-folders.md)
 ##### [Kontrollierte Ordnerzugriff anpassen](customize-controlled-folders.md)
 
+#### [Gerätesteuerung]()
+##### [Gerätesteuerungsberichte](device-control-report.md)
+##### [Steuern von USB-Geräten](control-usb-devices-using-intune.md)
 
 ### [Geräteermittlung]()
 #### [Übersicht über die Geräteermittlung](device-discovery.md)
