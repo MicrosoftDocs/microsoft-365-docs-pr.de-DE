@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: f2b3e109493331a4b63d669501525a48cb996809
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 21b0062a337dbeb3c7dec8b715971dbbc4917db1
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689221"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893275"
 ---
 # <a name="register-existing-devices-yourself"></a>Selbstregistrieren vorhandener Geräte
 
@@ -136,7 +136,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 Nachdem die Hashdaten in einer #A0 zusammengeführt wurden, können Sie nun mit der [Registrierung der Geräte fortfahren.](#register-devices-by-using-the-admin-portal)
 
 
-#### <a name="register-devices-by-using-the-admin-portal"></a>Registrieren von Geräten mithilfe des Administratorportals
+## <a name="register-devices-by-using-the-admin-portal"></a>Registrieren von Geräten mithilfe des Administratorportals
 
 Wählen [Sie im Microsoft Endpoint Manager](https://endpoint.microsoft.com/) **geräte** im linken Navigationsbereich aus. Suchen Sie im Menü nach dem Abschnitt Microsoft Managed Desktop, und wählen Sie **Geräte aus.** Wählen Sie im Arbeitsbereich Microsoft Managed Desktop Devices die Option **+ Geräte registrieren** aus, wodurch ein Fly-In zum Registrieren neuer Geräte geöffnet wird.
 
@@ -165,7 +165,7 @@ Sie können den Fortschritt der Geräteregistrierung auf der Hauptseite überwac
 | Aktiv | Das Gerät wurde an den Benutzer zugestellt und bei Ihrem Mandanten registriert. Dies bedeutet auch, dass sie das Gerät regelmäßig verwenden. |
 | Inaktiv | Das Gerät wurde an den Benutzer zugestellt und bei Ihrem Mandanten registriert. Sie haben das Gerät jedoch in letzter Zeit (in den letzten 7 Tagen) nicht verwendet.  | 
 
-#### <a name="troubleshooting-device-registration"></a>Problembehandlung bei der Geräteregistrierung
+### <a name="troubleshooting-device-registration"></a>Problembehandlung bei der Geräteregistrierung
 
 | Fehlermeldung | Details |
 |---------------|-------------|
@@ -175,13 +175,13 @@ Sie können den Fortschritt der Geräteregistrierung auf der Hauptseite überwac
 | Von einer anderen Organisation beanspruchtes Gerät | Dieses Gerät wurde bereits von einer anderen Organisation beansprucht. Informieren Sie sich bei Ihrem Geräteanbieter. |
 | Unerwarteter Fehler | Ihre Anforderung konnte nicht automatisch verarbeitet werden. Wenden Sie sich an den Support, und geben Sie die Anforderungs-ID an: <requestId> |
 
-### <a name="check-the-image"></a>Überprüfen des Bilds
+## <a name="check-the-image"></a>Überprüfen des Bilds
 
 Wenn Ihr Gerät von einem Microsoft Managed Desktop-Partneranbieter stammen, sollte das Bild korrekt sein.
 
 Sie können das Bild auch selbst anwenden, wenn Sie es bevorzugen. Um zu beginnen, wenden Sie sich an den Microsoft-Vertreter, mit dem Sie arbeiten, und er stellt Ihnen den Speicherort und die Schritte zum Anwenden des Bilds zur Verfügung.
 
-### <a name="deliver-the-device"></a>Bereitstellen des Geräts
+## <a name="deliver-the-device"></a>Bereitstellen des Geräts
 
 > [!IMPORTANT]
 > Bevor Sie das Gerät an Ihren Benutzer senden, stellen Sie sicher, dass Sie die entsprechenden [Lizenzen](../get-ready/prerequisites.md) für diesen Benutzer erhalten und angewendet haben.

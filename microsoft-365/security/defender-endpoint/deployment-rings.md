@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2d34b984436b3ed0537af2eebcd8475ec270cd8e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 8123bdf610b30407e5d262296f9c3639bc21b12f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165789"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893485"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Bereitstellen von Microsoft Defender for Endpoint in Ringen
 
@@ -75,7 +75,7 @@ Identifizieren Sie eine kleine Anzahl von Testcomputern in Ihrer Umgebung, die f
 
 
 ### <a name="pilot"></a>Pilotprojekt
-Microsoft Defender ATP unterstützt eine Vielzahl von Endpunkten, die Sie in den Dienst integrieren können. Identifizieren Sie in diesem Ring mehrere Zu integrierende Geräte, und fahren Sie basierend auf den von Ihnen definierten Beendigungskriterien mit dem nächsten Bereitstellungsring fort.
+Microsoft Defender for Endpoint unterstützt eine Vielzahl von Endpunkten, die Sie in den Dienst integrieren können. Identifizieren Sie in diesem Ring mehrere Zu integrierende Geräte, und fahren Sie basierend auf den von Ihnen definierten Beendigungskriterien mit dem nächsten Bereitstellungsring fort.
 
 In der folgenden Tabelle sind die unterstützten Endpunkte und das entsprechende Tool aufgeführt, mit dem Sie Geräte in den Dienst integrieren können. 
 
@@ -94,11 +94,11 @@ In der folgenden Tabelle sind die unterstützten Endpunkte und das entsprechende
 In dieser Phase können Sie das [Bereitstellungsmaterial planen](deployment-strategy.md) verwenden, um Die Bereitstellung zu planen. 
 
 
-Verwenden Sie das folgende Material, um die geeignete Microsoft Defender ATP-Architektur auszuwählen, die Am besten in Ihre Organisation einwählt.
+Verwenden Sie das folgende Material, um die geeignete Microsoft Defender for Endpoint-Architektur auszuwählen, die am besten in Ihrer Organisation verwendet wird.
 
-|**Aspekt**|**Beschreibung**|
+|**Item**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturbild zur Microsoft Defender ATP-Bereitstellungsstrategie](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | Das Architekturmaterial hilft Ihnen bei der Planung der Bereitstellung für die folgenden Architekturen: <ul><li> Cloudspezifisch </li><li> Co-Management </li><li> Lokal</li><li>Auswertung und lokales Onboarding</li>
+|[![Thumb image for Microsoft Defender for Endpoint deployment strategy](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | Das Architekturmaterial hilft Ihnen bei der Planung der Bereitstellung für die folgenden Architekturen: <ul><li> Cloudspezifisch </li><li> Co-Management </li><li> Lokal</li><li>Auswertung und lokales Onboarding</li>
 
 
 

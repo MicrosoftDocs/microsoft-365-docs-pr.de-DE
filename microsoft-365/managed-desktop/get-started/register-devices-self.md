@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 4de1d173a26005d32fb07117d93ee78582b77d54
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b2976fc643eb433039d9595bc8e9632fd8cb60ea
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689209"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893473"
 ---
 # <a name="register-new-devices-yourself"></a>Selbstregistrieren neuer Geräte
 
@@ -77,7 +77,7 @@ Sie müssen die Daten in den CSV-Dateien in einer einzigen Datei kombinieren, um
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 
-#### <a name="register-devices-by-using-the-admin-portal"></a>Registrieren von Geräten mithilfe des Administratorportals
+### <a name="register-devices-by-using-the-admin-portal"></a>Registrieren von Geräten mithilfe des Administratorportals
 
 Wählen [Sie im Microsoft Endpoint Manager](https://endpoint.microsoft.com/) **geräte** im linken Navigationsbereich aus. Suchen Sie im Menü nach dem Abschnitt Microsoft Managed Desktop, und wählen Sie **Geräte aus.** Wählen Sie im Arbeitsbereich Microsoft Managed Desktop Devices die Option **+ Geräte registrieren** aus, wodurch ein Fly-In zum Registrieren neuer Geräte geöffnet wird.
 

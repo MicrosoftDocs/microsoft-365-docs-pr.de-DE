@@ -14,40 +14,37 @@ audience: ITPro
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 20d4767f9813b741c55109d617f78302feaa0f7e
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 8350db473580fd4d1728c3473742da5b63196c52
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765023"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893577"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Erkennen und Blockieren potenziell unerwünschter Anwendungen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Gilt für:**
 
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 - [Microsoft Edge](/microsoft-edge/deploy/microsoft-edge)
 
-> [!NOTE]
-> Potenziell unerwünschte Anwendungen (PUA) sind eine Kategorie von Software, die dazu führen kann, dass Ihr Computer langsam ausgeführt wird, unerwartete Anzeigen anzeigen oder im schlechtesten Fall andere Software installieren kann, die unerwartet oder unerwünscht sein kann. In Windows 10 (Version 2004 und höher) blockiert Microsoft Defender Antivirus standardmäßig Apps, die als PUA gelten, für Enterprise (E5)-Geräte.
-
-Potenziell unerwünschte Anwendungen (PUA) werden nicht als Viren, Schadsoftware oder andere Arten von Bedrohungen betrachtet, sie können jedoch Aktionen für Endpunkte ausführen, die sich negativ auf die Leistung oder Verwendung von Endpunkten auswirken. _PUA_ kann sich auch auf eine Anwendung beziehen, die aufgrund bestimmter Arten von unerwünschtem Verhalten einen schlechten Ruf hat, wie von Microsoft Defender for Endpoint bewertet.
+Potenziell unerwünschte Anwendungen (PUA) sind eine Kategorie von Software, die dazu führen kann, dass Ihr Computer langsam ausgeführt wird, unerwartete Anzeigen anzeigen oder im schlechtesten Fall andere Software installieren kann, die unerwartet oder unerwünscht sein kann. PUA wird nicht als Virus, Schadsoftware oder eine andere Art von Bedrohung betrachtet, kann jedoch Aktionen für Endpunkte ausführen, die sich negativ auf die Leistung oder Verwendung von Endpunkten auswirken. Der Begriff *PUA* kann sich auch auf eine Anwendung beziehen, die aufgrund bestimmter Arten von unerwünschtem Verhalten einen schlechten Ruf hat, wie von Microsoft Defender for Endpoint bewertet.
 
 Im Folgenden finden Sie einige Beispiele:
 
 - **Werbesoftware,** die Werbung oder Werbeaktionen anzeigt, einschließlich Software, die Werbung auf Webseiten einfüge.
-- **Bündelungssoftware,** die die Installation anderer Software anbietet, die nicht digital von derselben Entität signiert ist. Außerdem Software, die die Installation anderer Software anbietet, die als PUA qualifiziert ist.
+- **Bündelungssoftware,** die die Installation anderer Software anbietet, die nicht digital von derselben Entität signiert ist. Außerdem software that offers to install other software that qualifies as PUA.
 - **Software zum** Ausweichen, die aktiv versucht, der Erkennung durch Sicherheitsprodukte zu entweichen, einschließlich Software, die sich bei Vorhandensein von Sicherheitsprodukten anders verhält.
 
 > [!TIP]
 > Weitere Beispiele und eine Beschreibung der Kriterien, die wir zum Beschriften von Anwendungen für besondere Aufmerksamkeit von Sicherheitsfeatures verwenden, finden Sie unter [How Microsoft identifies malware and potentially unwanted applications](/windows/security/threat-protection/intelligence/criteria).
 
-Potenziell unerwünschte Anwendungen können das Risiko erhöhen, dass Ihr Netzwerk mit tatsächlicher Schadsoftware infiziert wird, Schadsoftwareinfektionen schwieriger zu identifizieren oder IT-Ressourcen beim Bereinigen zu verschwenden. Der PUA-Schutz wird unter Windows 10, Windows Server 2019 und Windows Server 2016 unterstützt.
+Potenziell unerwünschte Anwendungen können das Risiko erhöhen, dass Ihr Netzwerk mit tatsächlicher Schadsoftware infiziert wird, Schadsoftwareinfektionen schwieriger zu identifizieren oder IT-Ressourcen beim Bereinigen zu verschwenden. Der PUA-Schutz wird unter Windows 10, Windows Server 2019 und Windows Server 2016 unterstützt. In Windows 10 (Version 2004 und höher) blockiert Microsoft Defender Antivirus Standardmäßig Apps, die als PUA for Enterprise (E5)-Geräte gelten.
 
-## <a name="microsoft-edge"></a>Microsoft Edge
+## <a name="microsoft-edge"></a>Aktuelle Version von Microsoft Edge
 
 Das [neue Auf Chromium-basierte Microsoft Edge](https://support.microsoft.com/microsoft-edge/get-to-know-microsoft-edge-3f4bb0ff-58de-2188-55c0-f560b7e20bea)blockiert potenziell unerwünschte Anwendungsdownloads und zugeordnete Ressourcen-URLs. Dieses Feature wird über [Microsoft Defender SmartScreen bereitgestellt.](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
@@ -55,8 +52,10 @@ Das [neue Auf Chromium-basierte Microsoft Edge](https://support.microsoft.com/mi
 
 Obwohl der potenziell unerwünschte Anwendungsschutz in Microsoft Edge (Chromium-basiert, Version 80.0.361.50) standardmäßig deaktiviert ist, kann er problemlos über den Browser aktiviert werden.
 
-1. Wählen Sie die Ellipsen aus, und wählen Sie dann **Einstellungen aus.**
+1. Wählen Sie im Edgebrowser die Ellipsen aus, und wählen Sie dann **Einstellungen aus.**
+
 2. Wählen **Sie Datenschutz, Suche und Dienste aus.**
+
 3. Aktivieren Sie **im Abschnitt Sicherheit** potenziell unerwünschte Apps **blockieren.**
 
 > [!TIP]
@@ -68,7 +67,7 @@ In Chromium-basiertem Edge mit aktiviertem PUA-Schutz schützt Microsoft Defende
 
 Sicherheitsadministratoren können [konfigurieren,](/DeployEdge/configure-microsoft-edge) wie Microsoft Edge und Microsoft Defender SmartScreen zusammenarbeiten, um Benutzergruppen vor PUA-zugeordneten URLs zu schützen. Es sind mehrere [Gruppenrichtlinieneinstellungen explizit](/DeployEdge/microsoft-edge-policies#smartscreen-settings) für Microsoft Defender SmartScreen verfügbar, einschließlich einer für das Blockieren [von PUA](/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled). Darüber hinaus können Administratoren [Microsoft Defender SmartScreen](/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) als Ganzes konfigurieren, indem Sie Gruppenrichtlinieneinstellungen verwenden, um Microsoft Defender SmartScreen ein- oder auszuschalten.
 
-Obwohl Microsoft Defender for Endpoint über eine eigene Sperrliste basierend auf einem von Microsoft verwalteten Datensatz verfügt, können Sie diese Liste basierend auf Ihrer eigenen Bedrohungsintelligenz anpassen. Wenn Sie [Indikatoren im](/microsoft-365/security/defender-endpoint/manage-indicators) Microsoft Defender for Endpoint-Portal erstellen und verwalten, respektiert Microsoft Defender SmartScreen die neuen Einstellungen.
+Obwohl Microsoft Defender for Endpoint über eine eigene Blockliste basierend auf einem von Microsoft verwalteten Datensatz verfügt, können Sie diese Liste basierend auf Ihrer eigenen Bedrohungsintelligenz anpassen. Wenn Sie [Indikatoren im](manage-indicators.md) Microsoft Defender for Endpoint-Portal erstellen und verwalten, respektiert Microsoft Defender SmartScreen die neuen Einstellungen.
 
 ## <a name="microsoft-defender-antivirus"></a>Microsoft Defender Antivirus
 
@@ -135,7 +134,7 @@ Informationen zu System Center 2012 Configuration Manager finden Sie unter Berei
 Set-MpPreference -PUAProtection Enabled
 ```
 
-Wenn Sie den Wert für dieses Cmdlet festlegen, wird das `Enabled` Feature aktiviert, wenn es deaktiviert wurde.
+Festlegen des Werts für dieses Cmdlet, um das Feature zu `Enabled` aktivieren, wenn es deaktiviert wurde.
 
 ##### <a name="to-set-pua-protection-to-audit-mode"></a>So legen Sie den PUA-Schutz auf den Überwachungsmodus
 
@@ -153,7 +152,7 @@ Es wird empfohlen, den PUA-Schutz aktiviert zu halten. Sie können sie jedoch mi
 Set-MpPreference -PUAProtection Disabled
 ```
 
-Wenn Sie den Wert für dieses Cmdlet festlegen, wird das `Disabled` Feature deaktiviert, wenn es aktiviert wurde.
+Wenn Sie den Wert für dieses Cmdlet festlegen, wird das Feature `Disabled` deaktiviert, wenn es aktiviert wurde.
 
 Weitere Informationen zur Verwendung von PowerShell mit Microsoft Defender Antivirus finden Sie unter Verwenden von [PowerShell-Cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) zum Konfigurieren und Ausführen von Microsoft Defender Antivirus- und [Defender-Cmdlets.](/powershell/module/defender/index)
 
@@ -180,6 +179,17 @@ Sie können E-Mail-Benachrichtigungen aktivieren, um E-Mails zu PUA-Erkennungen 
 
 Weitere Informationen zum Anzeigen von Microsoft Defender Antivirus-Ereignissen finden Sie unter [Troubleshoot event IDs.](troubleshoot-microsoft-defender-antivirus.md) PUA-Ereignisse werden unter ereignis-ID **1160 aufgezeichnet.**
 
+Wenn Sie Microsoft Defender for Endpoint verwenden, können Sie eine erweiterte Suchabfrage zum Anzeigen von PUA-Ereignissen verwenden. Hier ist eine Beispielabfrage:
+
+```console
+DeviceEvents
+| where ActionType == "AntivirusDetection"
+| extend x = parse_json(AdditionalFields)
+| evaluate bag_unpack(x)
+| where ThreatName startswith_cs 'PUA:'
+| project Timestamp, DeviceName, FolderPath, FileName, SHA256, ThreatName, WasExecutingWhileDetected, WasRemediated
+```
+
 ## <a name="excluding-files"></a>Ausschließen von Dateien
 
 Manchmal wird eine Datei fälschlicherweise durch den PUA-Schutz blockiert, oder ein Feature einer PUA ist erforderlich, um eine Aufgabe auszuführen. In diesen Fällen kann einer Ausschlussliste eine Datei hinzugefügt werden.
@@ -188,5 +198,5 @@ Weitere Informationen finden Sie unter [Configure and validate exclusions based 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Schutz der nächsten Generation](microsoft-defender-antivirus-in-windows-10.md)
-- [Konfigurieren von Verhaltens-, Heuristik- und Echtzeitschutz](configure-protection-features-microsoft-defender-antivirus.md)
+- [Schutzlösungen der nächsten Generation](microsoft-defender-antivirus-in-windows-10.md)
+- [Konfigurieren von verhaltensbasiertem, heuristischem und Echtzeitschutz](configure-protection-features-microsoft-defender-antivirus.md)

@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen
-description: Konfigurieren Sie den Microsoft Defender ATP-Proxy und die Interneteinstellungen, um die Kommunikation mit dem Clouddienst zu ermöglichen.
+description: Konfigurieren Sie den Microsoft Defender for Endpoint-Proxy und die Interneteinstellungen, um die Kommunikation mit dem Clouddienst zu ermöglichen.
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 97d1d50e2557cbb760248738b1f096614873958f
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: ebfff7721bc61012811a66146079ac9758889594
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644704"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893601"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen
 
@@ -178,7 +178,7 @@ Der *.blob.core.windows.net-URL-Endpunkt kann durch die URLs ersetzt werden, die
 > [!NOTE]
 > Im Falle des Onboardings über das Azure Security Center (ASC) werden möglicherweise mehrere Arbeitsbereiche verwendet. Sie müssen das oben beschriebene TestCloudConnection.exe auf einem integrierten Computer aus jedem Arbeitsbereich ausführen (um zu ermitteln, ob änderungen an den URLs *.blob.core.windows.net zwischen den Arbeitsbereichen vorhanden sind).
 
-## <a name="verify-client-connectivity-to-microsoft-defender-atp-service-urls"></a>Überprüfen der Clientkonnektivität mit Microsoft Defender ATP-Dienst-URLs
+## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>Überprüfen der Clientkonnektivität mit Microsoft Defender for Endpoint-Dienst-URLs
 
 Vergewissern Sie sich, dass die Proxykonfiguration erfolgreich abgeschlossen wurde, dass WinHTTP ermitteln und über den Proxyserver in Ihrer Umgebung kommunizieren kann und dass der Proxyserver Datenverkehr zu Defender für Endpunkt-Dienst-URLs zulässt.
 

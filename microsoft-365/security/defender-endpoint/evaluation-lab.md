@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ead616b7af3df05f4c0c5755ad779f0251555734
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2382281fbb975daa18ec21aabaf5acf8d3fbfb2f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066544"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893437"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint-Evaluierungslabor
 
@@ -74,10 +74,10 @@ Sie können über das Menü auf die Übungseinheit zugreifen. Wählen Sie im Nav
 ![Abbildung des Evaluierungslabors im Menü](images/evaluation-lab-menu.png)
 
 >[!NOTE]
->- Jede Umgebung wird mit einer begrenzten Anzahl von Testgeräten bereitgestellt.
 >- Je nachdem, welche Umgebungsstruktur Sie auswählen, stehen Geräte für die angegebene Anzahl von Stunden ab dem Aktivierungstag zur Verfügung.
->- Wenn Sie die bereitgestellten Geräte verwendet haben, werden keine neuen Geräte bereitgestellt. Ein gelöschtes Gerät aktualisiert die anzahl der verfügbaren Testgeräte nicht.
->- Angesichts der begrenzten Ressourcen empfiehlt es sich, die Geräte sorgfältig zu verwenden.
+>- Jede Umgebung wird mit einer begrenzten Anzahl von Testgeräten bereitgestellt. Wenn Sie die bereitgestellten Geräte verwendet haben, werden keine neuen Geräte bereitgestellt. Ein gelöschtes Gerät aktualisiert die anzahl der verfügbaren Testgeräte nicht.
+>- Sie können die Übungseinheit nicht mehr verwenden, wenn die Ressourcen aufb gewesen sind. Es wird weder zurückgesetzt noch aktualisiert.
+>- Es empfiehlt sich, die Ressourcen sorgfältig zu verwenden. Die Laborressourcen sind begrenzt. Sie werden weder zurückgesetzt noch aktualisiert. 
 
 Sie haben bereits ein Labor? Stellen Sie sicher, dass sie die neuen Bedrohungssimulatoren aktivieren und über aktive Geräte verfügen.
 
@@ -122,13 +122,13 @@ Das Gerät wird automatisch in Ihren Mandanten onboardiert, und die empfohlenen 
 
 Die folgenden Sicherheitskomponenten sind auf den Testgeräten vorkonfiguriert:
 
-- [Reduzierung der Angriffsfläche](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+- [Verringerung der Angriffsfläche](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard):
 - [Bei erster Sicht blockieren](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 - [Kontrollierter Ordnerzugriff](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
-- [Exploit-Schutz](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
+- [Exploit-Schutz.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
 - [Netzwerkschutz](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
 - [Erkennung potenziell unerwünschter Anwendungen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [In der Cloud zugestellter Schutz](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [Aus der Cloud gelieferter Schutz](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
 - [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
 
 >[!NOTE]

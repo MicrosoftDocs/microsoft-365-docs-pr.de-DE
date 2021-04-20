@@ -1,7 +1,7 @@
 ---
-title: Erhöhen der Einhaltung der Microsoft Defender ATP-Sicherheitsgrundlinie
-description: Die Microsoft Defender ATP-Sicherheitsgrundlinie legt Microsoft Defender ATP-Sicherheitskontrollen fest, um optimalen Schutz zu bieten.
-keywords: Intune-Verwaltung, MDATP, WDATP, Microsoft Defender, erweiterte Bedrohungsschutz-ASR, Sicherheitsgrundlinie
+title: Erhöhen der Einhaltung der Microsoft Defender for Endpoint-Sicherheitsgrundlinie
+description: Die Microsoft Defender for Endpoint-Sicherheitsgrundlinie legt Sicherheitssteuerelemente fest, um optimalen Schutz zu bieten.
+keywords: Intune-Verwaltung, MDATP, WDATP, MDE, Microsoft Defender for Endpoint, erweiterte Bedrohungsschutz-ASR, Sicherheitsgrundlinie
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 74073441ad7be89e0af278ff1e371133251b5ea7
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 19a2276955b253a23ee1552a3f1d4d0345dfe247
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163399"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893541"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Erhöhen der Einhaltung der Microsoft Defender for Endpoint-Sicherheitsgrundlinie
 
@@ -41,11 +41,11 @@ Bevor Sie die Einhaltung von Sicherheitsgrundwerten bereitstellen und nachverfol
 - [Registrieren Ihrer Geräte bei der Intune-Verwaltung](configure-machines.md#enroll-devices-to-intune-management)
 - [Sicherstellen, dass Sie über die erforderlichen Berechtigungen verfügen](configure-machines.md#obtain-required-permissions)
 
-## <a name="compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines"></a>Vergleichen der Sicherheitsgrundwerte für Microsoft Defender ATP und Windows Intune
+## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Vergleichen der Microsoft Defender for Endpoint- und Windows Intune-Sicherheitsgrundwerte
 Die Windows Intune-Sicherheitsgrundlinie enthält eine umfassende Reihe empfohlener Einstellungen, die zum sicheren Konfigurieren von Geräten unter Windows erforderlich sind, einschließlich Browsereinstellungen, PowerShell-Einstellungen sowie Einstellungen für einige Sicherheitsfeatures wie Microsoft Defender Antivirus. Im Gegensatz dazu enthält die Defender for Endpoint-Baseline Einstellungen, mit denen alle Sicherheitssteuerelemente im Defender for Endpoint-Stapel optimiert werden, einschließlich Einstellungen für endpunkterkennung und -reaktion (Endpoint Detection and Response, EDR) sowie Einstellungen, die auch in der Windows Intune-Sicherheitsgrundlinie zu finden sind. Weitere Informationen zu den einzelnen Baselines finden Sie unter:
 
 - [Windows-Sicherheitsgrundeinstellungen für Intune](https://docs.microsoft.com/intune/security-baseline-settings-windows)
-- [Microsoft Defender ATP-Basiseinstellungen für Intune](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
+- [Basiseinstellungen für Microsoft Defender for Endpoint für Intune](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
 
 Im Idealfall werden die in Defender for Endpoint integrierten Geräte beide Basiswerte bereitgestellt: die Windows Intune-Sicherheitsgrundlinie zum anfänglichen Sichern von Windows und anschließend die Defender for Endpoint-Sicherheitsgrundlinie, die sich auf einer Schicht befindet, um die Defender for Endpoint-Sicherheitssteuerelemente optimal zu konfigurieren. Um von den neuesten Daten zu Risiken und Bedrohungen zu profitieren und Konflikte bei der Entwicklung der Basiswerte zu minimieren, wenden Sie immer die neuesten Versionen der Basiswerte für alle Produkte an, sobald sie veröffentlicht werden.
 

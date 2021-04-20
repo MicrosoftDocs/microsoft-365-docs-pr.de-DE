@@ -1,5 +1,5 @@
 ---
-title: Onboarding von Windows 10-Geräten in Microsoft Defender ATP über Gruppenrichtlinien
+title: Onboarding von Windows 10-Geräten in Microsoft Defender for Endpoint über Gruppenrichtlinien
 description: Verwenden Sie Gruppenrichtlinien, um das Konfigurationspaket auf Windows 10-Geräten so zu bereitstellen, dass sie in den Dienst onboardiert werden.
 keywords: Konfigurieren von Geräten mithilfe von Gruppenrichtlinien, Geräteverwaltung, Konfigurieren von Windows ATP-Geräten, Onboarding von Microsoft Defender for Endpoint-Geräten, Gruppenrichtlinie
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: fc4b17ef96e85d3bacd4e83c2de3f4bb7fbfa5c3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b839cf204e8ab042e0c88a8f8c48df79770e7b4f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166170"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893634"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Onboarding von Windows 10-Geräten mithilfe von Gruppenrichtlinien 
 

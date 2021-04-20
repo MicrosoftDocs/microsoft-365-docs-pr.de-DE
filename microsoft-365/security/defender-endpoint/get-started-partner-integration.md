@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint-Partner werden
+title: Werden Sie Microsoft Defender für Endpunkt-Partner
 ms.reviewer: ''
-description: Erfahren Sie mehr über die Schritte und Anforderungen, um Ihre Lösung in Microsoft Defender ATP zu integrieren und Partner zu sein
+description: Erfahren Sie mehr über die Schritte und Anforderungen, um Ihre Lösung in Microsoft Defender for Endpoint zu integrieren und Partner zu sein.
 keywords: Partner, Integration, Lösungsüberprüfung, Zertifizierung, Anforderungen, Mitglied, Misa, Anwendungsportal
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: ea7ebe1656c0173395df158b8f934ab388bea4ba
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 35ba1fe85fa9b62770142636d46303b37534b976
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064183"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893317"
 ---
-# <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Microsoft Defender for Endpoint-Partner werden
+# <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Werden Sie Microsoft Defender für Endpunkt-Partner
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -58,7 +58,7 @@ Damit Ihr Unternehmen als Partner auf der Produktpartnerseite aufgeführt wird, 
 5.  Wenn Sie einen azure AD-Ansatz mit mehreren Mandanten verwenden, benötigen wir den Azure AD-Anwendungsnamen, um die Verwendung der Anwendung nachverfolgt zu können.
 6. Fügen Sie User-Agent-Feld in jeden API-Aufruf ein, der an öffentliche APIs oder Graph-Sicherheits-APIs an Microsoft Defender for Endpoint gesendet wird. Dies wird zu statistischen Zwecken, zur Problembehandlung und zur Partnererkennung verwendet. Darüber hinaus ist dieser Schritt eine Voraussetzung für die Mitgliedschaft in Microsoft Intelligent Security Association (MISA).
 
-    Gehen Sie wie folgt vor:
+    Führen Sie die folgenden Schritte aus:
     
     - Legen Sie das User-Agent in jedem HTTP-Anforderungsheader auf das folgende Format.
 
@@ -71,4 +71,4 @@ Damit Ihr Unternehmen als Partner auf der Produktpartnerseite aufgeführt wird, 
 Partnerschaften mit Microsoft Defender for Endpoint helfen unseren gemeinsamen Kunden, die Verteidigung weiter zu optimieren, zu integrieren und zu orchestrieren. Wir freuen uns, dass Sie sich entschieden haben, Microsoft Defender for Endpoint-Partner zu werden und unser gemeinsames Ziel zu erreichen, Kunden und ihre Ressourcen effektiv zu schützen, indem Sie moderne Bedrohungen gemeinsam verhindern und darauf reagieren.
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Technische Partnerchancen](partner-integration.md)
+- [Chancen für technische Partner](partner-integration.md)

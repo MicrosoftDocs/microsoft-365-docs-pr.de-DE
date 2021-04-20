@@ -1,6 +1,6 @@
 ---
 title: Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)
-description: Stellen Sie das Konfigurationspaket auf einem Virtuellen Desktopinfrastrukturgerät (Virtual Desktop Infrastructure, VDI) so sicher, dass es in Microsoft Defender ATP den Dienst integrierte.
+description: Stellen Sie das Konfigurationspaket auf einem Virtuellen Desktopinfrastrukturgerät (Virtual Desktop Infrastructure, VDI) so sicher, dass es in den Microsoft Defender for Endpoint-Dienst integrierte wird.
 keywords: Konfigurieren von Virtual Desktop Infrastructure (VDI)-Geräten, vdi, Geräteverwaltung, Konfigurieren von Windows ATP-Endpunkten, Konfigurieren von Microsoft Defender für Endpunkte
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: bf1e706562db06064409cb7cf11441d048ef8db6
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 1e970be7967e221c29017be804a98770a778654f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445286"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892793"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)
 

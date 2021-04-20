@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: b477f302855cb5d4b00e0502bcfa9aa3aeb6b5c2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3550bec28945ab888efbe2ca46f12ca7f96aab4a
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165573"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892863"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Onboarding von Windows 10-Geräten mithilfe von Configuration Manager
 
@@ -119,7 +119,7 @@ Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
 
-Dabei gilt Folgendes:<br>
+Dabei gilt:<br>
 Der Schlüsseltyp ist D-WORD. <br>
 Die folgenden Werte sind möglich:
 - 0 – lässt keine Beispielfreigabe von diesem Gerät zu
@@ -223,7 +223,7 @@ Wenn Sie System Center 2012 R2 Configuration Manager verwenden, besteht die Übe
 
     ![Configuration Manager zeigt eine erfolgreiche Bereitstellung ohne Fehler an](images/sccm-deployment.png)
 
-### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-atp-service"></a>Überprüfen, ob die Geräte mit dem Microsoft Defender ATP-Dienst kompatibel sind
+### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>Überprüfen, ob die Geräte mit dem Microsoft Defender for Endpoint-Dienst kompatibel sind
 
 Sie können eine Complianceregel für das Konfigurationselement in System Center 2012 R2 Configuration Manager festlegen, um Ihre Bereitstellung zu überwachen.
 
@@ -244,5 +244,5 @@ Weitere Informationen finden Sie [unter Einführung in Complianceeinstellungen i
 - [Onboarding von Windows 10-Geräten mithilfe von Tools für die Verwaltung von Mobilgeräten](configure-endpoints-mdm.md)
 - [Onboarding von Windows 10-Geräten mithilfe eines lokalen Skripts](configure-endpoints-script.md)
 - [Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)](configure-endpoints-vdi.md)
-- [Ausführen eines Erkennungstests auf einem neu integrierten Microsoft Defender ATP-Gerät](run-detection-test.md)
+- [Ausführen eines Erkennungstests auf einem neu integrierten Microsoft Defender for Endpoint-Gerät](run-detection-test.md)
 - [Behandeln von Problemen beim Onboarding von Microsoft Defender for Endpoint](troubleshoot-onboarding.md)

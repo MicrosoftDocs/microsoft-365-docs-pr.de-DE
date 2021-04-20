@@ -14,12 +14,12 @@ ms.custom: nextgen
 ms.reviewer: tewchen, pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 131b9970572b1034ba5c9907a001f0497d450339
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 8e179135f12ad6f4ea765eaf975a40534446b51f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765443"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893389"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Microsoft Defender Antivirus-Kompatibilität
 
@@ -60,7 +60,7 @@ In der folgenden Tabelle wird zusammengefasst, was mit Microsoft Defender Antivi
 
 Wenn Sie Windows Server, Version 1803 oder neuer, oder Windows Server 2019 verwenden, können Sie Microsoft Defender Antivirus auf den passiven Modus festlegen, indem Sie den folgenden Registrierungsschlüssel festlegen:
 - Pfad: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- Name: `ForcePassiveMode`
+- Name: `ForceDefenderPassiveMode`
 - Typ: `REG_DWORD`
 - Wert: `1`
 

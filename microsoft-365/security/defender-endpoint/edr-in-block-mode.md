@@ -1,7 +1,7 @@
 ---
 title: Endpunkterkennung und -reaktion im Blockmodus
 description: Informationen zur Erkennung und Reaktion von Endpunkten im Blockmodus
-keywords: Microsoft Defender ATP, mde, EDR im Blockmodus, Blockieren des passiven Modus
+keywords: Microsoft Defender for Endpoint, mde, EDR im Blockmodus, Blockieren des passiven Modus
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: e492d57d8a7e10a1fff57980408ed8234bbeead0
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: a2fbb8f1b48dacb27468f8f088f5000da9fcb3b9
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587203"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893565"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Endpunkterkennung und -antwort (EDR) im Blockmodus
 
@@ -79,7 +79,7 @@ Die folgende Abbildung zeigt eine Instanz unerwünschter Software, die im Blockm
 |Betriebssystem     |Eine der folgenden Versionen: <br/>- Windows 10 (alle Versionen) <br/>- Windows Server, Version 1803 oder neuer <br/>- Windows Server 2019         |
 |Windows E5-Registrierung     |Windows E5 ist in den folgenden Abonnements enthalten: <br/>- Microsoft 365 E5 <br/>– Microsoft 365 E3 zusammen mit dem Identity & Threat Protection-Angebot <br/><br/>Weitere [Informationen finden](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide&preserve-view=true#components) Sie unter Komponenten und Features und Funktionen für jeden [Plan.](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)       |
 |Microsoft Defender Antivirus  |Microsoft Defender Antivirus muss entweder im aktiven oder passiven Modus installiert und ausgeführt werden. (Sie können Microsoft Defender Antivirus zusammen mit einer Nicht-Microsoft-Antivirenlösung verwenden.) [Vergewissern Sie sich, dass sich Microsoft Defender Antivirus im aktiven oder passiven Modus befindet.](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode) |
-|In der Cloud zugestellter Schutz |Stellen Sie sicher, dass Microsoft Defender Antivirus so konfiguriert ist, dass der über die [Cloud übermittelte Schutz aktiviert ist.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) |
+|Aus der Cloud gelieferter Schutz |Stellen Sie sicher, dass Microsoft Defender Antivirus so konfiguriert ist, dass der über die [Cloud übermittelte Schutz aktiviert ist.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) |
 |Microsoft Defender Antivirus-Antischasoftwareclient |Stellen Sie sicher, dass Ihr Client auf dem neuesten Stand ist. Führen Sie mithilfe von PowerShell das [Cmdlet Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) als Administrator aus. In der **Zeile AMProductVersion** sollten **Sie 4.18.2001.10** oder höher sehen. |
 |Microsoft Defender Antivirus-Modul |Stellen Sie sicher, dass Ihr Modul auf dem neuesten Stand ist. Führen Sie mithilfe von PowerShell das [Cmdlet Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) als Administrator aus. In der **Zeile AMEngineVersion** sollten **Sie 1.1.16700.2** oder höher sehen. |
 
@@ -140,5 +140,5 @@ Wenn Sie EDR im Blockmodus deaktivieren möchten, kann es bis zu 30 Minuten daue
 
 - [Tech Community-Blog: Einführung in EDR im Blockmodus: Beenden von Angriffen in ihren Spuren](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 - [Verhaltensbasiertes Blockieren und Eindämmen](behavioral-blocking-containment.md)
-- [Besser zusammen: Microsoft Defender Antivirus und Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
+- [Noch besser zusammen: Microsoft Defender Antivirus und Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
 

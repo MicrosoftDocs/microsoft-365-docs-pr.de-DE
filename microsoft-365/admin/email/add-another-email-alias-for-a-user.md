@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Erfahren Sie, wie Sie mehr als eine E-Mail-Adresse, genannt E-Mail-Alias, mit Ihrem Microsoft 365 Business-Konto verknüpfen können. '
-ms.openlocfilehash: a44271cdbf52136e61702697a960cc3cbcd8119d
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 4003dcfca29a722ccdf9b86cca5aa1141fbdb367
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471001"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892805"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Hinzufügen eines weiteren E-Mail-Alias für einen Benutzer
   
@@ -75,7 +75,7 @@ Sie benötigen [Administrator-Berechtigungen](../add-users/about-admin-roles.md)
     Der Benutzer hat nun eine primäre Adresse und einen Alias. Alle E-Mails, die an Jana Hoffmanns primäre E-Mail-Adresse („Jana@NodPublishers.com“) und ihren Alias („Vertrieb@NodPublishers.com“) gesendet wurden, werden jetzt in Janas Posteingang zugestellt.
     
   
-7. **Wenn der Benutzer antwortet, ist die *Von*-Adresse der primäre E-Mail-Alias.** Angenommen, eine Nachricht wurde an „Vertrieb@NodPublishers.com“ gesendet und ist dann in Janas Posteingang angekommen. Wenn Jana auf die Nachricht antwortet, wird ihre primäre E-Mail-Adresse als Absender angezeigt und nicht „Vertrieb@NodPublishers.com“. 
+7. **Wenn der Benutzer antwortet, hängt die *Von-Adresse* von ihrem Outlook-Client ab. Outlook im Web verwendet den Alias, unter dem die E-Mail empfangen wurde (wir nennen dies das Ping-Pong-Prinzip). Outlook Desktop verwendet ihren primären E-Mail-Alias.** Angenommen, eine Nachricht wurde an „Vertrieb@NodPublishers.com“ gesendet und ist dann in Janas Posteingang angekommen. Wenn Eliza über outlook desktop auf die Nachricht antwortet, wird ihre primäre E-Mail-Adresse als Eliza@NodPublishers.com, nicht als Sales@NodPublishers.com.
     
 ::: moniker-end
 
@@ -106,7 +106,7 @@ Sie benötigen [Administrator-Berechtigungen](../add-users/about-admin-roles.md)
     Der Benutzer hat nun eine primäre Adresse und einen Alias. Alle E-Mails, die an Jana Hoffmanns primäre E-Mail-Adresse („Jana@NodPublishers.com“) und ihren Alias („Vertrieb@NodPublishers.com“) gesendet wurden, werden jetzt in Janas Posteingang zugestellt.
     
   
-7. **Wenn der Benutzer antwortet, ist die *Von*-Adresse der primäre E-Mail-Alias.** Angenommen, eine Nachricht wurde an „Vertrieb@NodPublishers.com“ gesendet und ist dann in Janas Posteingang angekommen. Wenn Jana auf die Nachricht antwortet, wird ihre primäre E-Mail-Adresse als Absender angezeigt und nicht „Vertrieb@NodPublishers.com“. 
+7. **Wenn der Benutzer antwortet, hängt die *Von-Adresse* von ihrem Outlook-Client ab. Outlook im Web verwendet den Alias, unter dem die E-Mail empfangen wurde (wir nennen dies das Ping-Pong-Prinzip). Outlook Desktop verwendet ihren primären E-Mail-Alias.** Angenommen, eine Nachricht wurde an „Vertrieb@NodPublishers.com“ gesendet und ist dann in Janas Posteingang angekommen. Wenn Eliza über outlook desktop auf die Nachricht antwortet, wird ihre primäre E-Mail-Adresse als Eliza@NodPublishers.com, nicht als Sales@NodPublishers.com.
 
 ::: moniker-end
 
@@ -137,7 +137,7 @@ Sie benötigen [Administrator-Berechtigungen](../add-users/about-admin-roles.md)
     Der Benutzer hat nun eine primäre Adresse und einen Alias. Alle E-Mails, die an Jana Hoffmanns primäre E-Mail-Adresse („Jana@NodPublishers.com“) und ihren Alias („Vertrieb@NodPublishers.com“) gesendet wurden, werden jetzt in Janas Posteingang zugestellt.
     
   
-7. **Wenn der Benutzer antwortet, ist die *Von*-Adresse der primäre E-Mail-Alias.** Angenommen, eine Nachricht wurde an „Vertrieb@NodPublishers.com“ gesendet und ist dann in Janas Posteingang angekommen. Wenn Jana auf die Nachricht antwortet, wird ihre primäre E-Mail-Adresse als Absender angezeigt und nicht „Vertrieb@NodPublishers.com“. 
+7. **Wenn der Benutzer antwortet, hängt die *Von-Adresse* von ihrem Outlook-Client ab. Outlook im Web verwendet den Alias, unter dem die E-Mail empfangen wurde (wir nennen dies das Ping-Pong-Prinzip). Outlook Desktop verwendet ihren primären E-Mail-Alias.** Angenommen, eine Nachricht wurde an „Vertrieb@NodPublishers.com“ gesendet und ist dann in Janas Posteingang angekommen. Wenn Eliza über outlook desktop auf die Nachricht antwortet, wird ihre primäre E-Mail-Adresse als Eliza@NodPublishers.com, nicht als Sales@NodPublishers.com.
 
 ::: moniker-end
 
@@ -151,6 +151,10 @@ Wenn die Fehlermeldung "**Es wurde kein Parameter gefunden, der dem Parameternam
 
 
 Wenn Sie Ihr Abonnement bei GoDaddy oder einem anderen Partner gekauft haben und den neuen Alias als primäre E-Mail-Adresse festlegen möchten, müssen Sie zur Verwaltungskonsole "GoDaddy/partner" wechseln.
+
+## <a name="sending-email-from-the-proxy-address-easily"></a>Einfaches Senden von E-Mails von der Proxyadresse
+
+Im April 2021 wird ein neues Feature ins Rollen gebracht, mit dem Benutzer bei Verwendung von Outlook im Web problemlos von ihren Aliasen senden können. Wenn das Feature in einen Mandanten rollt, in dem der Mandantenadministrator das Cmdlet verwendet, erhalten Benutzer innerhalb des Mandanten Zugriff auf eine Liste von Kontrollkästchen, in denen jeder Eintrag einem Alias in den Outlook-Einstellungen `Set-OrganizationConfig -SendFromAliasEnabled $true` entspricht. Wenn Sie einen Alias auswählen, wird er im Dropdownmenü Von im Formular Verfassen angezeigt.
   
 ## <a name="related-articles"></a>Verwandte Artikel
 

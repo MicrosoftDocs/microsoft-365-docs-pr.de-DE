@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: a24dc4ef23d32b19de9d2871b7d87aae90d05828
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3a26951a796d72237f992e520e1b793654e467e3
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065696"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893401"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Beheben fehlerhafter Sensoren in Microsoft Defender for Endpoint
 
@@ -68,7 +68,7 @@ Mit den folgenden vorgeschlagenen Aktionen können Probleme im Zusammenhang mit 
 - [Sicherstellen, dass das Gerät über eine Internetverbindung verfügt](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
   Für den Window Defender ATP-Sensor muss Microsoft Windows HTTP (WinHTTP) Sensordaten melden und mit dem Microsoft Defender for Endpoint-Dienst kommunizieren.
 
-- [Überprüfen der Clientkonnektivität mit Microsoft Defender for Endpoint-Dienst-URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls)</br>
+- [Überprüfen der Clientkonnektivität mit Microsoft Defender for Endpoint-Dienst-URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   Überprüfen Sie, ob die Proxykonfiguration erfolgreich abgeschlossen wurde, dass WinHTTP den Proxyserver in Ihrer Umgebung ermitteln und kommunizieren kann und dass der Proxyserver Datenverkehr an die URLs des Microsoft Defender for Endpoint-Diensts zulässt.
 
 Wenn Sie Korrekturmaßnahmen ergriffen haben und der Gerätestatus weiterhin falsch konfiguriert ist, öffnen [Sie ein Supportticket](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
@@ -80,7 +80,7 @@ Führen Sie diese Aktionen aus, um bekannte Probleme im Zusammenhang mit einem f
 - [Sicherstellen, dass das Gerät über eine Internetverbindung verfügt](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
   Für den Window Defender ATP-Sensor muss Microsoft Windows HTTP (WinHTTP) Sensordaten melden und mit dem Microsoft Defender for Endpoint-Dienst kommunizieren.
 
-- [Überprüfen der Clientkonnektivität mit Microsoft Defender for Endpoint-Dienst-URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls)</br>
+- [Überprüfen der Clientkonnektivität mit Microsoft Defender for Endpoint-Dienst-URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   Überprüfen Sie, ob die Proxykonfiguration erfolgreich abgeschlossen wurde, dass WinHTTP den Proxyserver in Ihrer Umgebung ermitteln und kommunizieren kann und dass der Proxyserver Datenverkehr an die URLs des Microsoft Defender for Endpoint-Diensts zulässt.
 
 - [Sicherstellen, dass der Diagnosedatendienst aktiviert ist](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>

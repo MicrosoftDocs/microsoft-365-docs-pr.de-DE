@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Häufig gestellte Fragen zu Microsoft Bookings.
-ms.openlocfilehash: d357ae83d7fe6fdd9f3d0bff724b037e82a3f5d0
-ms.sourcegitcommit: 1df94f04f138ccf1a2356d26174335c44de7052b
+ms.openlocfilehash: 5338d710fa58ff9eba88b068f4fb412cecb83ae1
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50999529"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892917"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Häufig gestellte Fragen zu Microsoft Bookings
 
@@ -118,7 +118,7 @@ Bookings ist eine ideale Lösung für Unternehmens- und Kleinunternehmen in vers
 
 ### <a name="how-do-i-get-microsoft-bookings"></a>Wie kann ich Microsoft Bookings erhalten?
 
-Bookings ist in Microsoft 365 für Kunden mit Microsoft 365 Business Premium- und Microsoft 365 Business Standard-, A3-, A5-, E3- und E5-Lizenzen sowie einer iOS- und Android-Begleit-App verfügbar. Bookings ist nicht als eigenständige App verfügbar. Outlook Web App oder Outlook im Web muss für die Verwendung von Bookings aktiviert sein, da daten in Outlook gespeichert werden.
+Bookings ist für Kunden mit Office 365 A3, A5, E3 und E5 sowie Microsoft 365 Business Standard, Microsoft 365 Business Premium, A3, A5, E3 und E5 verfügbar. Sie können Bookings mit einer iOS- und Android-Begleit-App verwenden. Bookings ist nicht als eigenständige App verfügbar. Outlook Web App oder Outlook im Web muss für die Verwendung von Bookings aktiviert sein, da daten in Outlook gespeichert werden.
 
 Eine Bookings-Lizenz bietet vollständige Funktionalität für das Produkt, einschließlich des Erstellens und Verwaltens von Kalendern. Außerdem können Benutzer vorhandene Kalender anzeigen und bearbeiten, wenn diese Benutzer als Mitarbeiter in einer Administrator- oder Viewerrolle hinzugefügt werden.
 
@@ -349,7 +349,7 @@ Dies ist ein vorübergehender Fehler, der in der Regel aufgrund einer instabilen
 
 Wenn dieser Fehler nach einem längeren Zeitraum weiterhin auftritt oder sie häufig angezeigt wird, wenden Sie sich an den Support.
 
-## <a name="additional-resources"></a>Weitere Ressourcen
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 
   - [Microsoft Bookings erweitert die Verfügbarkeit im Unternehmensblog](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)

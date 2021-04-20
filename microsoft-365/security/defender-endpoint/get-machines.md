@@ -1,6 +1,6 @@
 ---
 title: Computer-API auflisten
-description: Erfahren Sie, wie Sie mithilfe der Api Für Computer auflisten eine Sammlung von Computern abrufen, die mit der Microsoft Defender ATP-Cloud kommuniziert haben.
+description: Hier erfahren Sie, wie Sie die Api "Computer auflisten" verwenden, um eine Sammlung von Computern abzurufen, die mit der Microsoft Defender for Endpoint-Cloud kommuniziert haben.
 keywords: apis, graph api, supported apis, get, devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 23997cf4997ccfea8ee89a9b9ec5cc991dfa1ed0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 01e36427116ad7bd845901e7da7f5aa152bd44f9
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200377"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893353"
 ---
 # <a name="list-machines-api"></a>Computer-API auflisten
 
@@ -70,7 +70,7 @@ GET https://api.securitycenter.microsoft.com/api/machines
 
 Name | Typ | Beschreibung
 :---|:---|:---
-Authorization | String | Bearer {token}. **Erforderlich**.
+Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
 
 
 ## <a name="request-body"></a>Anforderungstext

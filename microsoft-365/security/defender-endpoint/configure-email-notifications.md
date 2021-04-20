@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren von Benachrichtigungen in Microsoft Defender for Endpoint
 description: Sie können Microsoft Defender for Endpoint verwenden, um E-Mail-Benachrichtigungseinstellungen für Sicherheitswarnungen basierend auf dem Schweregrad und anderen Kriterien zu konfigurieren.
-keywords: E-Mail-Benachrichtigungen, Konfigurieren von Benachrichtigungen, Microsoft Defender Atp-Benachrichtigungen, Microsoft Defender Atp-Benachrichtigungen, Windows 10 Enterprise, Windows 10 Education
+keywords: E-Mail-Benachrichtigungen, Konfigurieren von Benachrichtigungen, Microsoft Defender für Endpunktbenachrichtigungen, Microsoft Defender für Endpunktbenachrichtigungen, Windows 10 Enterprise, Windows 10 Education
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d5a19464b9d5d1b9659d7bfae2d853f7a640a00b
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b629d6a90931026ce28ce241e74d490ce67c6962
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687889"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893628"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Konfigurieren von Benachrichtigungen in Microsoft Defender for Endpoint
 
