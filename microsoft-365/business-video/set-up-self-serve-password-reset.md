@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Benutzer ihre eigenen Kennwörter in Microsoft 365 Business Premium zurücksetzen können.
-ms.openlocfilehash: 3ba46529dcbb8d5af7343aafbb9e5a5863b9139f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 62f82f106327c5378310bac0d41fde8462449329
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580426"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903706"
 ---
 # <a name="set-up-self-service-password-reset"></a>Einrichten der Self-Service-Kennwortzurücksetzung
 
@@ -42,3 +42,7 @@ Damit Ihre Benutzer ihre eigenen Kennwörter zurücksetzen können, ohne sie jed
 1. Wählen **Sie Alle** aus, um die Self-Service-Kennwortzurücksetzung zu aktivieren, und wählen Sie dann Speichern **aus.**
 
 Wenn sich ein Benutzer das nächste Mal bei ihrem Konto einschreibt, wird er nach seiner Benutzer-ID und dem Kennwort gefragt. Sie wählen **Weiter** aus, und wählen dann aus, ob sie sich mit ihrem Telefon, ihrer E-Mail oder mit beiden authentifizieren möchten. Sie geben den empfangenen Code ein, wählen **Überprüfen** und dann **Fertig stellen aus.** Wenn sie fertig sind, können sie ihr eigenes Kennwort zurücksetzen.
+
+## <a name="related-content"></a>Verwandte Inhalte 
+
+[Festlegen der Kennwortablaufrichtlinie](https://docs.microsoft.com/microsoft-365/admin/manage/set-password-expiration-policy) für Ihre [](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire) Organisation (Artikel) Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft (Artikel) [](https://docs.microsoft.com/microsoft-365/admin/add-users/strong-password) Starke Kennwortanforderungen für Benutzer deaktivieren (Artikel)

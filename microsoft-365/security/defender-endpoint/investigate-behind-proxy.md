@@ -1,6 +1,6 @@
 ---
 title: Untersuchen von Verbindungsereignissen hinter Weiterleitungsproxys
-description: Erfahren Sie, wie Sie die erweiterte Überwachung auf HTTP-Ebene mithilfe von Netzwerkschutz in Microsoft Defender ATP verwenden, der anstelle eines Proxys ein echtes Ziel zeigt.
+description: Erfahren Sie, wie Sie die erweiterte ÜBERWACHUNG auf HTTP-Ebene mithilfe von Netzwerkschutz in Microsoft Defender for Endpoint verwenden, der anstelle eines Proxys ein echtes Ziel zeigt.
 keywords: Proxy, Netzwerkschutz, Weiterleitungsproxy, Netzwerkereignisse, Überwachung, Block, Domänennamen, Domäne
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 28d8a113ed77e9624bd914571b1af4a7ece2aa5c
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 47be07759a72a080a3687ed3bb50cef9d0a959b7
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587563"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904046"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Untersuchen von Verbindungsereignissen hinter Weiterleitungsproxys
 

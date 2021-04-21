@@ -1,5 +1,5 @@
 ---
-title: Untersuchen von Vorfällen in Microsoft Defender ATP
+title: Untersuchen von Vorfällen in Microsoft Defender for Endpoint
 description: Siehe zugeordnete Warnungen, Verwalten des Vorfalls und Anzeigen von Warnungsmetadaten zur Untersuchung eines Vorfalls
 keywords: untersuchen, Vorfall, Warnungen, Metadaten, Risiko, Erkennungsquelle, betroffene Geräte, Muster, Korrelation
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5a74da55d733d690cb218c78b87b67d6eba6b9d2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1d8f4452273047684a30db3b18d1281f40f46378
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186053"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903298"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Untersuchen von Vorfällen in Microsoft Defender for Endpoint
 
@@ -92,6 +92,6 @@ Sie können auf die Kreise im Vorfalldiagramm klicken, um die Details der schäd
 ![Abbildung von Vorfalldetails](images/atp-incident-graph-details.png)
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Warteschlange für Vorfälle](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
+- [Vorfallswarteschlange](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [Untersuchen von Vorfällen in Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-incidents)
 - [Verwalten von Microsoft Defender for Endpoint-Vorfällen](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-incidents)

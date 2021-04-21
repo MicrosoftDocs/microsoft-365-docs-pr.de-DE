@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP für Linux-Ressourcen
+title: Microsoft Defender for Endpoint auf Linux-Ressourcen
 ms.reviewer: ''
-description: Beschreibt Ressourcen für Microsoft Defender ATP für Linux, einschließlich der Deinstallation, der Erfassung von Diagnoseprotokollen, CLI-Befehlen und bekannten Problemen mit dem Produkt.
+description: Beschreibt Ressourcen für Microsoft Defender for Endpoint unter Linux, einschließlich der Deinstallation, der Erfassung von Diagnoseprotokollen, CLI-Befehlen und bekannten Problemen mit dem Produkt.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a4f2324bc47bdee38e1cdeed1e21b5f9063e9a5c
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: de2602bdc94507d27236b939553a6567b2587f36
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587064"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903142"
 ---
 # <a name="resources"></a>Ressourcen
 

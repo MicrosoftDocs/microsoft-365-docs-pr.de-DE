@@ -1,6 +1,6 @@
 ---
-title: Behandeln fehlender Ereignisse oder Warnungen für Microsoft Defender ATP für Linux
-description: Behandeln fehlender Ereignisse oder Warnungen in Microsoft Defender ATP für Linux.
+title: Behandeln fehlender Ereignisse oder Warnungen für Microsoft Defender for Endpoint unter Linux
+description: Behandeln fehlender Ereignisse oder Warnungen in Microsoft Defender for Endpoint unter Linux.
 keywords: microsoft, defender, atp, linux, events
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5981cb75b4c835390e27d902b5950e3c68305200
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 40d394a4fc7349789dea9bd96ccdaf71067ab39e
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687454"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903998"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Behandeln fehlender Ereignisse oder Warnungen für Microsoft Defender for Endpoint unter Linux
 
@@ -31,7 +31,7 @@ ms.locfileid: "51687454"
 
 **Gilt für:**
 
-- [Microsoft Defender for Endpoint unter Linux](microsoft-defender-endpoint-linux.md)
+- [Microsoft Defender für Endpunkt unter Linux](microsoft-defender-endpoint-linux.md)
 
 Dieser Artikel enthält einige allgemeine Schritte zum Verringern fehlender Ereignisse oder Warnungen im [Security Center-Portal.](https://securitycenter.windows.com/)
 

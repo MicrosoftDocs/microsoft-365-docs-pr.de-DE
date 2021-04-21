@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 220e4e6546899dd00f3a02bf83039a928be4f8dc
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: bfc8724f8dc27aa2475c293e7370488b2ea392b8
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498844"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903754"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Erstellen und Verwalten von benutzerdefinierten Erkennungsregeln
 
@@ -179,6 +179,9 @@ Sie behalten die Kontrolle über die Breite oder Spezifizität Ihrer benutzerdef
 ## <a name="manage-existing-custom-detection-rules"></a>Verwalten vorhandener benutzerdefinierter Erkennungsregeln
 Sie können die Liste der vorhandenen benutzerdefinierten Erkennungsregeln anzeigen, die vorherigen Läufe überprüfen und die ausgelösten Warnungen überprüfen. Sie können auch eine Regel bei Bedarf ausführen und ändern.
 
+>[!TIP]
+> Warnungen, die von benutzerdefinierten Erkennungen ausgelöst werden, sind über Warnungen und Vorfall-APIs verfügbar. Weitere Informationen finden Sie unter [Supported Microsoft 365 Defender APIs](api-supported.md).
+
 ### <a name="view-existing-rules"></a>Anzeigen vorhandener Regeln
 
 Navigieren Sie zum Anzeigen aller vorhandenen benutzerdefinierten Erkennungsregeln zu **Hunting**  >  **Custom detections**. Auf der Seite sind alle Regeln mit den folgenden Ausführungsinformationen aufgeführt:
@@ -217,7 +220,7 @@ Wechseln Sie im Regeldetailsescreen (**Suche** nach benutzerdefinierten Erkennun
 >[!TIP]
 >Verwenden Sie die Auswahlspalte [&#10003;] links neben der Tabelle, um Informationen schnell anzeigen und Aktionen für ein Element in einer Tabelle ergreifen zu können.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 - [Benutzerdefinierte Erkennungen – Übersicht](custom-detections-overview.md)
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Erlernen der Abfragesprache für die erweiterte Suche](advanced-hunting-query-language.md)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 733f86ed48b9cc7a68fb0cd346c7b15fdcc3ce65
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 803c0af0c495eedfd26023d4e71d98df6a1b1b64
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187505"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904022"
 ---
 # <a name="information-protection-in-windows-overview"></a>Übersicht über den Informationsschutz in Windows
 
@@ -41,7 +41,7 @@ Der Informationsschutz ist ein integraler Bestandteil der Microsoft 365 Enterpri
 
 
 >[!TIP]
-> Lesen Sie unseren Blogbeitrag über die [Integration von Microsoft Defender ATP in Microsoft Information Protection,](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)um vertrauliche Daten auf Windows-Geräten zu ermitteln, zu schützen und zu überwachen.
+> Lesen Sie unseren Blogbeitrag darüber, wie Microsoft Defender for Endpoint (früher als Microsoft Defender ATP bezeichnet) in Microsoft Information Protection integriert wird, um vertrauliche Daten auf Windows-Geräten zu ermitteln, zu schützen und [zu überwachen.](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)
 
 Defender for Endpoint wendet die folgenden Methoden zum Ermitteln, Klassifizieren und Schützen von Daten an:
 

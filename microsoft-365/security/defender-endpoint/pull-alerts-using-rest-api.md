@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a7d13da6abfb2cd6c829b6fd04fdf94de8cd20b8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 06028f64a3340aeeef52269bc8a1e739d18e6db7
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186869"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903118"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Abrufen von Microsoft Defender for Endpoint-Erkennungen mithilfe der SIEM REST-API
 
@@ -63,7 +63,7 @@ Verwenden Sie die folgende Methode in der Microsoft Defender for Endpoint-API, u
 >[!NOTE]
 >Microsoft Defender Security Center führt ähnliche Warnungserkennungen in einer einzigen Warnung zusammen. Diese API erstellt Warnungserkennungen in ihrer rohen Form basierend auf den von Ihnen festgelegten Abfrageparametern, sodass Sie Ihre eigene Gruppierung und Filterung anwenden können. 
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorbereitung
 - Bevor Sie den Microsoft Defender for Endpoint-Endpunkt zum Ziehen von Erkennungen aufrufen, müssen Sie die SIEM-Integrationsanwendung in Azure Active Directory (AAD) aktivieren. Weitere Informationen finden Sie unter [Aktivieren der SIEM-Integration in Microsoft Defender for Endpoint](enable-siem-integration.md).
 
 - Notieren Sie sich die folgenden Werte bei der Registrierung Ihrer Azure-App. Sie benötigen diese Werte, um den OAuth-Fluss in Ihrem Dienst oder Ihrer Dämon-App zu konfigurieren:
@@ -125,7 +125,7 @@ sinceTimeUtc | DateTime | Definiert die Warnungen mit niedrigerer Zeit, die basi
 untilTimeUtc | DateTime | Definiert die Warnungen für die obere Zeit, die abgerufen werden. <br> Der Zeitraum ist: von `sinceTimeUtc` Zeit zu `untilTimeUtc` Zeit. <br><br> **HINWEIS**: Wenn dieser Wert nicht angegeben wird, ist der Standardwert die aktuelle Uhrzeit.
 ago | Zeichenfolge | Zieht Warnungen im folgenden Zeitraum: von `(current_time - ago)` Zeit zu `current_time` Zeit. <br><br> Wert sollte gemäß **ISO 8601-Dauerformat** festgelegt werden <br> Beispiel: `ago=PT10M` Benachrichtigungen, die in den letzten 10 Minuten empfangen wurden.
 Begrenzung | int | Definiert die Anzahl der abzurufenden Warnungen. Die neuesten Warnungen werden basierend auf der definierten Anzahl abgerufen.<br><br> **HINWEIS**: Wenn nicht angegeben, werden alle im Zeitraum verfügbaren Warnungen abgerufen.
-machinegroups | Zeichenfolge | Gibt Gerätegruppen an, aus der Warnungen abziehen sollen. <br><br> **HINWEIS:** Wenn nicht angegeben, werden Warnungen von allen Gerätegruppen abgerufen. <br><br> Beispiel: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/Alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
+machinegroups | Zeichenfolge | Gibt Gerätegruppen an, aus der Warnungen abziehen sollen. <br><br> **HINWEIS:** Wenn nicht angegeben, werden Warnungen von allen Gerätegruppen abgerufen. <br><br> Beispiel: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
 DeviceCreatedMachineTags | Zeichenfolge | Einzelnes Gerätetag aus der Registrierung.
 CloudCreatedMachineTags | Zeichenfolge | Gerätetags, die im Microsoft Defender Security Center erstellt wurden.
 
@@ -339,4 +339,4 @@ HTTP-Fehlercode | Beschreibung
 - [Konfigurieren von ArcSight zum Ziehen von Microsoft Defender for Endpoint-Erkennungen](configure-arcsight.md)
 - [Ziehen von Erkennungen an Ihre SIEM-Tools](configure-siem.md)
 - [Microsoft Defender for Endpoint Detection-Felder](api-portal-mapping.md)
-- [Problembehandlung bei der Integration von SIEM-Tools](troubleshoot-siem.md)
+- [Behandeln von Problemen mit der Integration von SIEM-Tools](troubleshoot-siem.md)

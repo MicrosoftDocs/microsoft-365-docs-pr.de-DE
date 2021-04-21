@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 01b3310f5f822f3f6f38bf4d9e727d41fe2b179b
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 290c06d95c6569b5a446a7a7410d34ff3b57055d
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760110"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904070"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Übersicht über das Thema Center in Microsoft Viva Topics
 
@@ -70,12 +70,12 @@ Sobald ein Benutzer seine Verbindung zu einem Thema bestätigt hat, kann er Änd
 
 ## <a name="manage-topics-page"></a>Seite "Themen verwalten"
 
-Damit Sie im Abschnitt **Themen verwalten** im Themencenter arbeiten können, benötigen Sie die erforderlichen Berechtigungen zum Verwalten von Themen, die für die Rolle des Wissensmanagers erforderlich sind. Ihr Administrator kann diese Berechtigungen Benutzern während der Einrichtung [](topic-experiences-knowledge-rules.md) der Wissensverwaltung [zuweisen,](set-up-topic-experiences.md)oder neue Benutzer können anschließend von einem Administrator über das Microsoft 365 Admin Center hinzugefügt werden.
+Damit Sie im Abschnitt **Themen** verwalten im Themencenter arbeiten können, benötigen Sie die erforderlichen Berechtigungen zum Verwalten von Themen, die für die Rolle des Wissensmanagers erforderlich sind. Ihr Administrator kann diese Berechtigungen Benutzern während der Einrichtung [](topic-experiences-knowledge-rules.md) der Wissensverwaltung [zuweisen,](set-up-topic-experiences.md)oder neue Benutzer können anschließend von einem Administrator über das Microsoft 365 Admin Center hinzugefügt werden.
 
 Auf der Seite Themen verwalten zeigt das Themendashboard alle Themen an, auf die Sie Zugriff haben, die von Den angegebenen Quellstandorten identifiziert wurden. Jedes Thema zeigt das Datum an, an dem das Thema entdeckt wurde. Ein Benutzer, dem Berechtigungen zum Verwalten von Themen zugewiesen wurden, kann die nicht bestätigten Themen überprüfen und folgende Aufgaben auswählen:
-- Bestätigen Sie das Thema: Hebt das Thema für Benutzer hervor, die Zugriff auf die Dateien und Seiten im Zusammenhang mit dem Thema haben, und ermöglicht ihnen das Anzeigen der zugehörigen Themenkarte und -seite.
+- Bestätigen Sie das Thema: Gibt Benutzern an, dass ein von AI vorgeschlagenes Thema von einem menschlichen Konservator überprüft wurde. 
 - Veröffentlichen Sie das Thema: Bearbeiten Sie die Themeninformationen, um die Qualität des anfangs identifizierten Themas zu verbessern, und hebt das Thema für alle Benutzer hervor, die Zugriff auf Themen haben. 
-- Ablehnen des Themas: Stellt das Thema benutzern nicht zur Verfügung. Das Thema wird auf die Registerkarte **Abgelehnt** verschoben und kann bei Bedarf später bestätigt werden. 
+- Ablehnen des Themas: Macht das Thema für Endbenutzer nicht wiederherstellbar. Das Thema wird auf die Registerkarte **Abgelehnt** verschoben und kann bei Bedarf später bestätigt werden. 
 
 > [!Note] 
 > Weitere [Informationen zur Themenverwaltung](manage-topics.md) finden Sie unter Verwalten von Themen auf der Seite Themen verwalten.
@@ -88,7 +88,7 @@ Wenn Sie über Berechtigungen zum Erstellen und Bearbeiten von Themen verfügen,
 - [Neue Themen erstellen:](create-a-topic.md)Sie können neue Themen für Themen erstellen, die nicht durch Die Ermittlung gefunden wurden, oder ob die AI-Tools nicht genügend Nachweise zum Erstellen eines Themas gefunden haben.
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Themen im Topic Center verwalten](manage-topics.md)
 

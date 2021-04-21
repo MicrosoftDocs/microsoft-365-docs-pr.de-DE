@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie einem Team als Gast in Microsoft Teams beitreten.
-ms.openlocfilehash: 9e60882907021c11d906ce9cd778a0f1eef32beb
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0260365e8a064dd96cda75c9becf9f82bc6871a3
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578855"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903718"
 ---
 # <a name="join-a-team-as-a-guest"></a>Treten Sie einem Team als Gast bei
 
@@ -48,3 +48,7 @@ Wenn Sie eine Microsoft Teams-Einladung zum Beitritt zu einem Team erhalten, gib
 
 1. Öffnen Sie einfach die Microsoft Teams-App, und wählen Sie  **Ja**  aus, um zu dem Team zu wechseln, zu dem Sie eingeladen sind.  Jetzt können Sie an dem Projekt in Teams zusammenarbeiten.
 2. Wenn Sie zum Team Ihres Unternehmens wechseln möchten, wählen Sie es in der  **Dropdownliste Organisation**  aus.
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Gasterfahrung in Teams](https://docs.microsoft.com/microsoftteams/guest-experience) (Artikel) Verwalten von [Microsoft Teams-Einstellungen](https://docs.microsoft.com/microsoftteams/enable-features-office-365) für Ihre Organisation (Artikel) Verwenden des Gastzugriffs und des externen Zugriffs für die Zusammenarbeit mit Personen außerhalb Ihrer [Organisation](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations) (Artikel)

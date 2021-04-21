@@ -1,7 +1,7 @@
 ---
 title: Client-Verhaltensblockierung
 description: Das Blockieren von Clientverhalten ist Teil der Funktionen zum Blockieren und Eindähen von Verhaltensweisen in Microsoft Defender for Endpoint
-keywords: Verhaltensblockierung, schneller Schutz, Clientverhalten, Microsoft Defender ATP
+keywords: Verhaltensblockierung, schneller Schutz, Clientverhalten, Microsoft Defender ATP, Microsoft Defender für Endpunkt
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 9fcff96b2583c6ef6bec05429ec50a71f3872e43
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 48929d0e2b0c932d37cb5d29783712d00b17117f
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587107"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904152"
 ---
 # <a name="client-behavioral-blocking"></a>Client-Verhaltensblockierung
 
@@ -65,7 +65,7 @@ Verhaltensbasierte Erkennungen werden gemäß der [MITRE ATT-&CK Matrix for Ente
 |Berechtigungseskalation   | Verhalten:Win32/PrivilegeEscalation.*!ml |
 |Schutzhinterziehung    | Behavior:Win32/DefenseEvasion.*!ml |
 |Zugriff auf Anmeldeinformationen  | Verhalten:Win32/CredentialAccess.*!ml |
-|Suche  | Behavior:Win32/Discovery.*!ml |
+|Discovery  | Behavior:Win32/Discovery.*!ml |
 |Laterale Bewegung | Verhalten:Win32/LateralMovement.*!ml |
 |Auflistung |   Behavior:Win32/Collection.*!ml |
 |Befehl und Steuerelement | Verhalten:Win32/CommandAndControl.*!ml |

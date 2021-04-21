@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 362222e4737b1a8dd6b8a0a284bf3bfb1903c288
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: aa699aae24b1e6383f5a2afbe7fce31e0f53805c
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861446"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903928"
 ---
-# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Bereitstellen von Defender for Endpoint unter Linux mit Chef
+# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Microsoft Defender für Endpunkt unter Linux mit Chef bereitstellen
 
 Bevor Sie beginnen:
 
@@ -110,7 +110,7 @@ end
 
 Achten Sie darauf, den Pfadnamen auf den Speicherort der Onboardingdatei zu aktualisieren.
 Führen Sie einfach aus, um die Bereitstellung auf der Chef-Arbeitsstation zu ``sudo chef-client -z -o mdatp`` testen.
-Nach der Bereitstellung sollten Sie das Erstellen und Bereitstellen einer Konfigurationsdatei auf den Servern basierend auf Den Einstellungen für Microsoft Defender ATP für Linux festlegen –  [Windows-Sicherheitseinstellungen | Microsoft Docs](/windows/security/threat-protection/microsoft-defender-atp/linux-preferences).  
+Nach der Bereitstellung sollten Sie das Erstellen und Bereitstellen einer Konfigurationsdatei auf den Servern basierend auf  [Set preferences for Microsoft Defender for Endpoint unter Linux in](/linux-preferences.md)Betracht ziehen.  
 Nachdem Sie die Konfigurationsdatei erstellt und getestet haben, können Sie sie in den Ordner cookbook/mdatp/files platzieren, in dem Sie auch das Onboardingpaket platziert haben.  Anschließend können Sie eine datei settings_mdatp.rb im Ordner mdatp/recipies erstellen und diesen Text hinzufügen:
 
 ```powershell

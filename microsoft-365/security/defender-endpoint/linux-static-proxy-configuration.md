@@ -1,7 +1,7 @@
 ---
-title: Statische Proxyermittlung von Microsoft Defender ATP für Linux
+title: Microsoft Defender for Endpoint on Linux Static Proxy Discovery
 ms.reviewer: ''
-description: Beschreibt, wie Sie Microsoft Defender ATP für die statische Proxyermittlung konfigurieren.
+description: Beschreibt, wie Sie Microsoft Defender for Endpoint unter Linux für die statische Proxyerkennung konfigurieren.
 keywords: microsoft, defender, atp, linux, installation, proxy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 93d654773fc73903cbe0c5de289dcfdf9fd34f9f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: e59727b6bb5fca58595764fc003009891546d8f6
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687853"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903846"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Konfigurieren von Microsoft Defender for Endpoint unter Linux für die statische Proxyermittlung
 
@@ -36,7 +36,7 @@ ms.locfileid: "51687853"
 
 > Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft Defender ATP kann einen Proxyserver mithilfe der ```HTTPS_PROXY``` Umgebungsvariablen ermitteln. Diese Einstellung muss sowohl **bei** der Installation als auch nach der Installation des Produkts konfiguriert werden.
+Microsoft Defender for Endpoint kann einen Proxyserver mithilfe der ```HTTPS_PROXY``` Umgebungsvariablen ermitteln. Diese Einstellung muss sowohl **bei** der Installation als auch nach der Installation des Produkts konfiguriert werden.
 
 ## <a name="installation-time-configuration"></a>Konfiguration der Installationszeit
 

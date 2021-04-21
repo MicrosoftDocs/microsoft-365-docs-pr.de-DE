@@ -1,7 +1,7 @@
 ---
-title: Bereitstellen von Microsoft Defender ATP für Linux mit Ansible
+title: Bereitstellen von Microsoft Defender for Endpoint unter Linux mit Ansible
 ms.reviewer: ''
-description: Beschreibt, wie Microsoft Defender ATP für Linux mithilfe von Ansible bereitgestellt wird.
+description: Beschreibt, wie Microsoft Defender for Endpoint unter Linux mithilfe von Ansible bereitgestellt wird.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 48c34f2a8fb65cb0fc8ecbb616b9d041f61ae044
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 697fcddad595c6883fe1e1f7258ca6154c48b94d
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688129"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903904"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Bereitstellen von Microsoft Defender for Endpoint unter Linux mit Ansible
 

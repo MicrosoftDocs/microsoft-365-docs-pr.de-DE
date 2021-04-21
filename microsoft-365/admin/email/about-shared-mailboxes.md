@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Freigegebene Postfächer werden verwendet, wenn mehrere Personen Zugriff auf dasselbe Postfach benötigen. Hier erfahren Sie, was Sie wissen müssen, bevor Sie ein freigegebenes Postfach erstellen.
-ms.openlocfilehash: eb1947b5baffd97f067bfe4e0c6d71d5c1329d65
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 83e779d59a8e763b3d0c0482966e75604d5f1574
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915986"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903214"
 ---
 # <a name="about-shared-mailboxes"></a>Info zu freigegebenen Postfächern
 
@@ -63,7 +63,7 @@ Bevor Sie [ein freigegebenes Postfach erstellen](create-a-shared-mailbox.md) mü
 > [!NOTE]
 > Um auf ein freigegebenes Postfach zugreifen zu können, benötigt ein Benutzer eine Exchange Online-Lizenz, das freigegebene Postfach selber benötigt aber keine eigene Lizenz. Zu jedem freigegebenen Postfach gehört ein entsprechendes Benutzerkonto. Haben Sie festgestellt, dass Sie beim Erstellen des freigegebenen Postfachs nicht zur Eingabe eines Kennworts aufgefordert wurden? Das Konto verfügt über ein Kennwort, das jedoch vom System generiert wurde (unbekannt). Sie sollten nicht das Konto verwenden, um sich beim freigegebenen Postfach anzumelden. Ohne eine Lizenz sind freigegebene Postfächer auf 50 GB beschränkt. Wenn Sie die Größenbeschränkung auf 100 GB erhöhen möchten, muss dem freigegebene Postfach eine Exchange Online Plan 2-Lizenz oder eine Exchange Online Plan 1-Lizenz mit einer zusätzlichen Exchange Online-Archivierungslizenz zugewiesen werden. Auf diese Weise können Sie auch die automatische Erweiterung der Archivierung für eine unbegrenzte Menge an Archivspeicherkapazität aktivieren. Ähnlich verhält es sich, wenn Sie ein freigegebenes Postfach in die Status „Aufbewahrung für juristische Zwecke“ setzen möchten: Das freigegebene Postfach muss über eine Exchange Online Plan 2-Lizenz oder eine Exchange Online Plan 1-Lizenz mit einer zusätzlichen Exchange Online-Archivierungslizenz verfügen. Wenn Sie erweiterte Funktionen wie Microsoft Defender für Office 365, Advanced eDiscovery oder automatische Aufbewahrungsrichtlinien anwenden möchten, muss das freigegebene Postfach für diese Funktionen lizenziert sein.
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
 [Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md)
 

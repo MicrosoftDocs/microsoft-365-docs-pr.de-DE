@@ -1,5 +1,5 @@
 ---
-title: Überprüfen des Integritätsstatus des Sensors in Microsoft Defender ATP
+title: Überprüfen des Integritätsstatus des Sensors in Microsoft Defender for Endpoint
 description: Überprüfen Sie den Sensorzustand auf Geräten, um zu ermitteln, welche Sensordaten falsch konfiguriert, inaktiv sind oder keine Sensordaten melden.
 keywords: sensor, sensor health, misconfigured, inactive, no sensor data, sensor data, impaired communications, communication
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 21313463519383f4bf052465a0d907d2df293ec8
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 0361b7956339670d006c9f050274e07d4e979bca
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165273"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904164"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Überprüfen des Sensorintestatus in Microsoft Defender for Endpoint
 

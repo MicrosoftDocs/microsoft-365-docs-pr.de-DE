@@ -1,6 +1,6 @@
 ---
-title: Behandeln von Leistungsproblemen für Microsoft Defender for Endpoint für Linux
-description: Behandeln von Leistungsproblemen in Microsoft Defender Endpoint für Linux.
+title: Behandeln von Leistungsproblemen für Microsoft Defender for Endpoint unter Linux
+description: Behandeln von Leistungsproblemen in Microsoft Defender Endpoint unter Linux.
 keywords: microsoft, defender, atp, linux, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb43fd383606ab26ba2688ad5704bb7653e82a7f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5aaa95ef8202f3d0957113d8f20a39e4d3840227
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860339"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903986"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Behandeln von Leistungsproblemen für Microsoft Defender for Endpoint unter Linux
 
@@ -145,6 +145,6 @@ Die folgenden Schritte können verwendet werden, um diese Probleme zu beheben un
     >[!NOTE]
     > Die Anwendung speichert Statistiken im Arbeitsspeicher und verfolgt nur die Dateiaktivität, seit sie gestartet wurde und der Echtzeitschutz aktiviert wurde. Prozesse, die vor oder während Zeiträumen gestartet wurden, in denen der Echtzeitschutz deaktiviert war, werden nicht gezählt. Darüber hinaus werden nur Ereignisse gezählt, die Scans ausgelöst haben.
 
-5. Konfigurieren Sie Microsoft Defender ATP für Linux mit Ausschlüssen für die Prozesse oder Datenträgerspeicherorte, die zu Leistungsproblemen beitragen, und aktivieren Sie den Echtzeitschutz erneut.
+5. Konfigurieren Sie Microsoft Defender Endpoint unter Linux mit Ausschlüssen für die Prozesse oder Datenträgerspeicherorte, die zu Leistungsproblemen beitragen, und aktivieren Sie den Echtzeitschutz erneut.
 
-    Weitere Informationen finden Sie unter [Configure and validate exclusions for Microsoft Defender ATP for Linux](linux-exclusions.md).
+    Weitere Informationen finden Sie unter [Configure and validate exclusions for Microsoft Defender for Endpoint for Linux](linux-exclusions.md).

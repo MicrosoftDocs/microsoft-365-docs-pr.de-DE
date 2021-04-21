@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Details zur Inhaltszusammenarbeit – Die Produktivitätssentwertung für Personen.
-ms.openlocfilehash: dedd39a84580f26e80e5586e07fb64c8a6d35573
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 43a5fbc3b1c4b6227cd29d79bfb0928a3b4b8ac9
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580858"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903322"
 ---
 # <a name="content-collaboration--people-experiences"></a>Inhaltszusammenarbeit – Erfahrungen mit Personen
 
@@ -35,7 +35,7 @@ Die Produktivitätswertung bietet Einblicke in die digitale Transformation Ihrer
 Um mit Denkkenntnissen zur Inhaltszusammenarbeit zu beginnen, müssen Personen in Ihrer Organisation lizenziert sein für:
 
 - OneDrive for Business
-- SharePoint
+- Microsoft Office SharePoint Online
 - Exchange Online
 
 Weitere Informationen finden Sie unter [Zuweisen von Lizenzen zu Benutzern](../manage/assign-licenses-to-users.md).
@@ -49,6 +49,9 @@ Ein wichtiger Aspekt der digitalen Transformation ist die Zusammenarbeit von Per
 ## <a name="how-we-calculate-the-content-collaboration-score"></a>Berechnen der Bewertung für die Inhaltszusammenarbeit
 
 Wir bieten einen primären Einblick, der die wichtigsten Metriken für die Inhaltszusammenarbeit in Ihrer Organisation enthält. Anschließend wird ein unten beschriebenes Bewertungsframework für diese Metriken verwendet, um die Bewertung Ihrer Organisation zu berechnen.
+
+> [!NOTE]
+> Am 22. April 2021 haben wir die Berechnung der Metrik der Mitarbeiter geändert. Dies wirkt [sich auf den primären Einblick,](#primary-insight)die Einblicke [in](#number-of-files-collaborated-on)die Dateizusammenarbeit und die Art und Weise aus, wie die Bewertung der Inhaltszusammenarbeit gemessen wird. Diese Änderung trägt dazu bei, das Rauschen in den Daten von nicht menschlichen Agents (oder Bots) von Microsoft und anderen Drittanbieteranwendungen zu reduzieren, was zu einer genaueren und umsetzbaren Bewertung führt.
 
 ### <a name="primary-insight"></a>Primärer Einblick
 
@@ -67,7 +70,7 @@ Für diese Informationen berücksichtigte Typen sind Word-, Excel-, PowerPoint-,
         Sie sind wie folgt definiert:</br>
         **Leser:** Personen, die auf Onlinedateien in OneDrive oder SharePoint zugreifen oder diese herunterladen.</br>
         **Ersteller:** Personen, die OneDrive- oder #A0 erstellen, ändern, hochladen, synchronisieren, einchecken, kopieren oder online verschieben.</br>
-        **Mitarbeiter:** Personen, die mit Onlinedateien mit OneDrive oder SharePoint zusammenarbeiten. Zwei Personen sind Mitarbeiter, wenn einer von ihnen eine Online-Office-App oder -PDF liest oder bearbeitet, nachdem die andere Person sie innerhalb eines 28-Tage-Fensters erstellt oder geändert hat.
+        **Mitarbeiter:** Personen, die mit Onlinedateien mithilfe von OneDrive oder SharePoint zusammenarbeiten. Zwei Personen sind Mitarbeiter, wenn einer von ihnen eine Online-Office-App oder -PDF liest oder bearbeitet, nachdem die andere Person sie innerhalb eines 28-Tage-Fensters erstellt oder geändert hat.
 
         > [!NOTE]
         > Die in der Visualisierung berücksichtigten Dateien sind Word-, Excel-, PowerPoint-, OneNote- oder PDF-Dateien, die online sind und in OneDrive oder SharePoint gespeichert werden. 
@@ -101,10 +104,9 @@ Die Bewertung der Inhaltszusammenarbeit für Ihre Organisation misst auf aggregi
 
 Die Ergebnisse werden nicht auf der einzelnen Benutzerebene bereitgestellt.
 
-
 ## <a name="explore-how-your-organization-collaborates"></a>Erfahren Sie, wie Ihre Organisation zusammenarbeitet
 
-Darüber hinaus stellen wir Ihnen Informationen zur Verfügung, mit deren Hilfe Sie einblicken können, wie Ihre Organisation an Inhalten zusammenarbeitt. Diese zusätzlichen Metriken tragen nicht direkt zur Produktivitätsleistung bei, sondern helfen Ihnen, einen Aktionsplan als Teil Ihrer digitalen Transformation zu erstellen, um die Arbeit von Personen zu optimieren.
+Darüber hinaus stellen wir Ihnen Informationen zur Verfügung, mit deren Hilfe Sie einblicken können, wie Ihre Organisation an Inhalten zusammenarbeitt. Diese zusätzlichen Metriken tragen nicht direkt zu Ihrer Produktivitätsleistung bei, sondern helfen Ihnen, einen Aktionsplan als Teil Ihrer digitalen Transformation zu erstellen, um die Arbeit von Personen zu optimieren.
 
 ### <a name="creating-files-in-onedrive-or-sharepoint"></a>Erstellen von Dateien in OneDrive oder SharePoint
 
@@ -131,13 +133,13 @@ Darüber hinaus stellen wir Ihnen Informationen zur Verfügung, mit deren Hilfe 
 3. **Visualisierung:** Die Aufschlüsselung in der Visualisierung soll das Ausmaß darstellen, in dem Personen, die Inhalte in E-Mails anfügen, unterschiedliche Modi verwenden (Dateien nicht auf OneDrive oder SharePoint, Links zu Onlinedateien und in die E-Mail eingebettete Links):
       - **Anfügen von Dateien:** Der blaue (farbige) Teil der Leiste und der Bruch (Zähler/Nenner) auf der Leiste stellen den Prozentsatz der Personen dar, die Anlagen in E-Mails verwenden.
         - Zähler: Die Anzahl der Personen, die Dateien an E-Mails anfügen, die in den letzten 28 Tagen nicht in OneDrive oder SharePoint gespeichert wurden.
-        - Nenner: - Nenner: Die Anzahl der Personen, die innerhalb der letzten 28 Tage Zugriff auf Exchange und OneDrive, SharePoint oder beides hatten.
+        - Nenner: Die Anzahl der Personen, die innerhalb der letzten 28 Tage Zugriff auf Exchange und OneDrive, SharePoint oder beides hatten.
       - **Links zu Onlinedateien:** Der blaue (farbige) Teil der Leiste und der Bruch (Zähler/Nenner) auf der Leiste stellen den Prozentsatz der Personen dar, die Anlagen verwenden und Links zu Dateien in E-Mails anfügen.
         - Numerator: Die Anzahl der Personen, die innerhalb der letzten 28 Tage Links zu Onlinedateien (in OneDrive oder SharePoint gespeichert) an E-Mails anfügen.
-        - Nenner: - Nenner: Die Anzahl der Personen, die innerhalb der letzten 28 Tage Zugriff auf Exchange und OneDrive, SharePoint oder beide haben.
+        - Nenner: Die Anzahl der Personen, die innerhalb der letzten 28 Tage Zugriff auf Exchange und OneDrive, SharePoint oder beide haben.
       - **Einbetten von Links in E-Mail:** Der blaue (farbige) Teil der Leiste und der Bruch auf der Leiste stellen den Prozentsatz der Personen dar, die Links in den Textkörper der E-Mails einbetten.
         - Numerator: Die Anzahl der Personen, die Links in E-Mails in Onlinedateien einbetten (in OneDrive oder SharePoint gespeichert) innerhalb der letzten 28 Tage.
-        - Nenner: - Nenner: Die Anzahl der Personen, die innerhalb der letzten 28 Tage Zugriff auf Exchange und OneDrive, SharePoint oder beide haben.
+        - Nenner: Die Anzahl der Personen, die innerhalb der letzten 28 Tage Zugriff auf Exchange und OneDrive, SharePoint oder beide haben.
 4. **Link zu Ressourcen:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
 ### <a name="sharing-of-online-files"></a>Freigeben von Onlinedateien
@@ -159,21 +161,21 @@ Darüber hinaus stellen wir Ihnen Informationen zur Verfügung, mit deren Hilfe 
 
 :::image type="content" source="../../media/intensityofcollab.png" alt-text="Diagramm, das zeigt, an wie vielen Dateien am meisten zusammengearbeitet wurde.":::
 
-1. **Header:** Dies unterstreicht den Prozentsatz der Personen, die Zugriff auf OneDrive oder SharePoint haben, die an mindestens vier Dateien zusammenarbeiten.
-2. **Textkörper:** Dies enthält Informationen dazu, wie Benutzer Onlinedateien für eine bessere Zusammenarbeit nutzen können.
-3. **Visualisierung:** Dies zeigt eine Verteilung der Personen, die Zugriff auf OneDrive oder SharePoint haben, basierend auf der Anzahl der Dateien, an denen sie zusammenarbeiten. Dies wird in den folgenden vier Kategorien gezeigt (für jede der blaue Teil der Leiste und der Anteil stellen den Prozentsatz der Personen dar, die Zugriff auf OneDrive oder SharePoint haben, die in diese Kategorie fallen):
+1. **Header:** Hebt den Prozentsatz der Personen hervor, die Zugriff auf OneDrive oder SharePoint haben, die an 4 oder mehr Dateien zusammenarbeiten.
+2. **Textkörper:** Enthält Informationen dazu, wie Benutzer Onlinedateien für eine bessere Zusammenarbeit nutzen können.
+3. **Visualisierung:** Zeigt eine Verteilung der Personen an, die Zugriff auf OneDrive oder SharePoint haben, basierend auf der Anzahl der Dateien, an denen sie zusammenarbeiten. Dies wird in den folgenden vier Kategorien gezeigt (für jede der blaue Teil der Leiste und der Anteil stellen den Prozentsatz der Personen dar, die Zugriff auf OneDrive oder SharePoint haben, die in diese Kategorie fallen):
       - **Keine Zusammenarbeit:**
-        - **Zähler:** Die Anzahl der Personen, die in den letzten 28 Tagen nicht an Dateien zusammenarbeiten
-        - **Nenner:** Die Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage Zugriff auf OneDrive oder SharePoint haben.
+        - Numerator: Anzahl der Personen, die in den letzten 28 Tagen nicht an Dateien zusammenarbeiten.
+        - Nenner: Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage Zugriff auf OneDrive oder SharePoint haben.
       - **Zusammenarbeit an 1-3-Dateien:**
-        - **Zähler:** Die Anzahl der Personen, die in den letzten 28 Tagen an 1-3 Dateien zusammenarbeiten.
-        - **Nenner:** Die Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage Zugriff auf OneDrive oder SharePoint hatten.
+        - Zähler: Anzahl der Personen, die in den letzten 28 Tagen an 1-3 Dateien zusammenarbeiten.
+        - Nenner: Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage Zugriff auf OneDrive oder SharePoint hatten.
       - **Zusammenarbeit an 4-10-Dateien:**
-        - **Zähler:** Die Anzahl der Personen, die in den letzten 28 Tagen an 4-10 Dateien zusammenarbeiten
-        - **Nenner: Die** Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage Zugriff auf OneDrive oder SharePoint hatten.
+        - Zähler: Anzahl der Personen, die in den letzten 28 Tagen an 4-10 Dateien zusammenarbeiten.
+        - Nenner: Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage Zugriff auf OneDrive oder SharePoint hatten.
       - **Zusammenarbeit an 11 oder mehr Dateien:**
-        - **Zähler:** Die Anzahl der Personen, die in den letzten 28 Tagen an 11 oder mehr Dateien zusammenarbeiten
-        - **Nenner:** Die Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage Zugriff auf OneDrive oder SharePoint hatten.
+        - Zähler: Anzahl der Personen, die in den letzten 28 Tagen an 11 oder mehr Dateien zusammenarbeiten.
+        - Nenner: Gesamtzahl der Personen, die mindestens 1 der letzten 28 Tage Zugriff auf OneDrive oder SharePoint hatten.
         
 4. **Link zu Ressourcen:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
@@ -185,9 +187,9 @@ Darüber hinaus stellen wir Ihnen Informationen zur Verfügung, mit deren Hilfe 
 2. **Textkörper:** Enthält Informationen dazu, warum die Netzwerkverbindungsleistung für die Zusammenarbeit wichtig ist. 
 3. **Visualisierung:** Zeigt einen Prozentsatz der Geräte mit unterschiedlichen Ebenen der Netzwerkkonnektivitätsleistung im Zusammenhang mit OneDrive und SharePoint an:
       - **81-100 (am besten):** Der dunkelgrüne (farbige) Teil der Leiste stellt den Prozentsatz der Geräte mit der besten Leistung dar.
-      - **61-80**: Der grüne (farbige) Teil der Leiste stellt den Prozentsatz der Geräte dar, deren Netzwerkleistung zwischen 60 und 80 liegt. 
-      - **41-60**: Der orangefarbene Teil der Leiste stellt den Prozentsatz der Geräte dar, deren Netzwerkleistung zwischen 40 und 60 liegt. 
-      - **21-40**: Der rote (farbige) Teil der Leiste stellt den Prozentsatz der Geräte dar, deren Netzwerkleistung zwischen 20 und 40 liegt. 
+      - **61-80**: Der grüne (farbige) Teil der Leiste stellt den Prozentsatz der Geräte mit einer Netzwerkleistungsleistung zwischen 60 und 80 dar. 
+      - **41-60**: Der orangefarbene Teil der Leiste stellt den Prozentsatz der Geräte mit einer Netzwerkleistungsleistung zwischen 40 und 60 dar. 
+      - **21-40**: Der rote (farbige) Teil der Leiste stellt den Prozentsatz der Geräte mit einer Netzwerkleistungsleistung zwischen 20 und 40 dar. 
       - **0-20**: Der dunkelrote (farbige) Teil der Leiste stellt den Prozentsatz der Geräte mit der schlechtesten Netzwerkleistungsleistung zwischen 0 und 20 dar. 
 
 ## <a name="related-content"></a>Verwandte Inhalte

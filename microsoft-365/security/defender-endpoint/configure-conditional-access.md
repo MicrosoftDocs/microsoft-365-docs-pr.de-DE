@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 482f86d4a0a181b72a0a33eeb1a857dce0664584
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: e68a8c35fb1028fa8e60cf52a8e8bb411a534b19
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893649"
+ms.locfileid: "51903778"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Konfigurieren des bedingten Zugriffs in Microsoft Defender for Endpoint
 
@@ -98,7 +98,7 @@ Gehen Sie wie folgt vor, um bedingten Zugriff zu aktivieren:
 
 ### <a name="step-4-assign-the-policy"></a>Schritt 4: Zuweisen der Richtlinie
 1. Wählen Sie [im Azure-Portal](https://portal.azure.com) **Alle Dienste** aus, filtern Sie nach **Intune,** und wählen Sie **Microsoft Intune aus.**
-2. Wählen **Sie Gerätekonformitätsrichtlinien**  >  > Sie Ihre Microsoft Defender ATP-Konformitätsrichtlinie aus.
+2. Wählen Sie Gerätekonformitätsrichtlinien> Microsoft Defender for   >   Endpoint-Konformitätsrichtlinie aus.
 3. Wählen Sie **Zuweisungen** aus.
 4. Schließen Sie Ihre Azure AD-Gruppen ein, oder schließen Sie sie aus, um ihnen die Richtlinie zuzuordnen.
 5. Wählen Sie Speichern aus, um die Richtlinie für die Gruppen **zu bereitstellen.** Die benutzerorientierten Geräte, auf die die Richtlinie ausgerichtet ist, werden auf Compliance geprüft.
@@ -114,6 +114,6 @@ Gehen Sie wie folgt vor, um bedingten Zugriff zu aktivieren:
 
 6. Wählen **Sie Richtlinie aktivieren** und dann **Erstellen** aus, um Ihre Änderungen zu speichern.
 
-Weitere Informationen finden Sie unter [Aktivieren von Microsoft Defender ATP mit bedingten Zugriff in Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
+Weitere Informationen finden Sie unter [Enforce compliance for Microsoft Defender for Endpoint with Conditional Access in Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
 
 >Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

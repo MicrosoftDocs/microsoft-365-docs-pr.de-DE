@@ -1,7 +1,7 @@
 ---
-title: App-basierte Bereitstellung für Microsoft Defender ATP für iOS
+title: App-basierte Bereitstellung für Microsoft Defender for Endpoint unter iOS
 ms.reviewer: ''
-description: Beschreibt die Bereitstellung von Microsoft Defender ATP für iOS mithilfe einer App
+description: Beschreibt die Bereitstellung von Microsoft Defender for Endpoint unter iOS mithilfe einer App
 keywords: microsoft, defender, atp, ios, app, installation, deploy, deinstallation, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6cfd2953e752ed9c96f7f16a3ec7ea1fd8862ab2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 4ddaf8759fa0f2ffb4ed3eb3bb940426dfb3da2c
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689737"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904058"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Bereitstellen von Microsoft Defender for Endpoint unter iOS
 
@@ -37,14 +37,14 @@ ms.locfileid: "51689737"
 
 In diesem Thema wird die Bereitstellung von Defender for Endpoint für iOS auf registrierten Geräten des Intune-Unternehmensportals beschrieben. Weitere Informationen zur Registrierung von Intune-Geräten finden Sie unter [Registrieren von iOS-/iPadOS-Geräten in Intune](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorbereitung
 
 - Stellen Sie sicher, dass Sie Zugriff auf [Microsoft Endpoint Manager Admin Center haben.](https://go.microsoft.com/fwlink/?linkid=2109431)
 
 - Stellen Sie sicher, dass die iOS-Registrierung für Ihre Benutzer erfolgt. Benutzern muss eine Defender for Endpoint-Lizenz zugewiesen sein, um Defender for Endpoint für iOS verwenden zu können. Anweisungen zum [Zuweisen von](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) Lizenzen finden Sie unter Zuweisen von Lizenzen zu Benutzern.
 
 > [!NOTE]
-> Microsoft Defender ATP (Microsoft Defender for Endpoint) für iOS ist jetzt im [Apple App Store verfügbar.](https://aka.ms/mdatpiosappstore)
+> Microsoft Defender for Endpoint unter iOS ist jetzt im [Apple App Store verfügbar.](https://aka.ms/mdatpiosappstore)
 
 ## <a name="deployment-steps"></a>Bereitstellungsschritte
 

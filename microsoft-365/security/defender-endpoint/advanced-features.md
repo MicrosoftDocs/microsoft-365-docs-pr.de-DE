@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c5e6edb40254ab905ef5ef3ddef9bf8bf54fc54b
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 9c77cb19731e55976058ce2f628baf4026639949
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698268"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903790"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurieren erweiterter Features in Defender for Endpoint
 
@@ -71,8 +71,7 @@ Aktivieren Sie dieses Feature, damit potenziell unerwünschte Anwendungen (PUA) 
 
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>Einschränken der Korrelation auf bereichsierte Gerätegruppen
-Wenn diese Einstellung aktiviert ist, werden Warnungen in separaten Vorfällen basierend auf ihrer Bereichsgerätegruppe korreliert. Standardmäßig erfolgt die Vorfallkorrelation über den gesamten Mandantenbereich.
-
+Diese Konfiguration kann für Szenarien verwendet werden, in denen lokale SOC-Vorgänge Warnungskorrelation nur auf Gerätegruppen beschränken möchten, auf die sie zugreifen können. Wenn Sie diese Einstellung aktivieren, wird ein Vorfall, der aus Warnungen besteht, dass geräteübergreifende Gruppen nicht mehr als einzelner Vorfall betrachtet werden. Der lokale SOC kann dann Maßnahmen gegen den Vorfall ergreifen, da er Zugriff auf eine der beteiligten Gerätegruppen hat. In der globalen Sicherheitsgruppe werden jedoch mehrere unterschiedliche Vorfälle nach Gerätegruppe anstelle eines Vorfalls angezeigt. Es wird nicht empfohlen, diese Einstellung zu aktivieren, es sei denn, dies überwiegt die Vorteile der Vorfallkorrelation in der gesamten Organisation.
 >[!NOTE]
 >Das Ändern dieser Einstellung wirkt sich nur auf zukünftige Warnungskorrelation aus.
 
@@ -230,7 +229,7 @@ Wenn Sie die Intune-Integration aktivieren, erstellt Intune automatisch eine kla
 > Die von Intune erstellte klassische Zertifizierungsstellenrichtlinie unterscheidet sich von modernen [Richtlinien](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/)für bedingten Zugriff, die zum Konfigurieren von Endpunkten verwendet werden.
 
 
-## <a name="device-discovery"></a>Geräteerkennung
+## <a name="device-discovery"></a>Geräteermittlung
 Hilft Ihnen, nicht verwaltete Geräte zu finden, die mit Ihrem Unternehmensnetzwerk verbunden sind, ohne dass zusätzliche Appliances oder aufwändige Prozessänderungen nötig sind. Mithilfe von integrierten Geräten können Sie nicht verwaltete Geräte in Ihrem Netzwerk finden und Sicherheitsrisiken und Risiken bewerten. Weitere Informationen finden Sie unter [Device discovery](device-discovery.md).
 
 ## <a name="preview-features"></a>Vorschaufeatures

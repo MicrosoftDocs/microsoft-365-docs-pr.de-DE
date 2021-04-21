@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2b191c4a24ce170d23fc3d9e43293cc7bbe59e80
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: dfdfcdcfb8d76f95e3b866f5f95af7efd94ed59e
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892817"
+ms.locfileid: "51904128"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Datenspeicherung und Datenschutz von Microsoft Defender for Endpoint
 
@@ -90,7 +90,7 @@ Nein. Kundendaten werden von anderen Kunden isoliert und nicht freigegeben. Einb
 
 ## <a name="how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy"></a>Wie lange werden meine Daten von Microsoft gespeichert? Was ist die Datenaufbewahrungsrichtlinie von Microsoft?
 **Beim Onboarding des Diensts**<br>
-Sie können die Datenaufbewahrungsrichtlinie für Ihre Daten auswählen. Dies bestimmt, wie lange Window Defender for Endpoint Ihre Daten speichern wird. Es gibt eine Flexibilität bei der Auswahl zwischen einem Monat und sechs Monaten, um die Gesetzlichen Complianceanforderungen Ihres Unternehmens zu erfüllen.
+Standardmäßig werden Daten 180 Tage lang aufbewahrt. Sie können jedoch die Datenaufbewahrungsrichtlinie für Ihre Daten angeben. Dies bestimmt, wie lange Window Defender for Endpoint Ihre Daten speichern wird. Es gibt eine Flexibilität bei der Auswahl zwischen einem Monat und sechs Monaten, um die Gesetzlichen Complianceanforderungen Ihres Unternehmens zu erfüllen.
 
 **Bei Beendigung oder Ablauf des Vertrags**<br>
 Ihre Daten werden aufbewahrt und stehen Ihnen zur Verfügung, während sich die Lizenz im Kulanzzeitraum oder angehaltenen Modus befindet. Am Ende dieses Zeitraums werden diese Daten aus den Systemen von Microsoft gelöscht, damit sie nicht mehr als 180 Tage nach Beendigung oder Ablauf des Vertrags wiederherstellbar sind.

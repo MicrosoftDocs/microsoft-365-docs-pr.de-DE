@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie den Namen oder die E-Mail-Adresse eines Benutzers ändern.
-ms.openlocfilehash: 6c08110e8725645f2e1d0deffcadd9f34354e1f9
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0f2a378cccf2def9cd951483b23a11c2a414607d
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580678"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903730"
 ---
 # <a name="change-a-users-name-or-email-address"></a>Ändern des Namens oder der E-Mail-Adresse eines Benutzers
 
@@ -60,3 +60,7 @@ Gelegentlich müssen Sie möglicherweise den Namen oder die E-Mail-Adresse eines
 1. Geben Sie den neuen Benutzernamen ein, überprüfen Sie die Domäne, und wählen **Sie Änderungen speichern aus.**
 
     Als Ergebnis dieser Änderung muss sich der Benutzer mit diesem neuen Benutzernamen bei Microsoft 365 anmelden und das neue E-Mail-Konto zu Outlook hinzufügen.
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Erteilen von Postfachberechtigungen für](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user) einen anderen Benutzer (Artikel) [Konvertieren eines Benutzerpostfachs](https://docs.microsoft.com/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox) in ein freigegebenes Postfach (Artikel) [Benutzer-E-Mail-Einstellungen](https://docs.microsoft.com/microsoft-365/admin/email/office-365-user-email-settings) (Artikel)

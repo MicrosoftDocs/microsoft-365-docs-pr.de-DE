@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Ihrem Abonnement eine weitere Domäne hinzufügen können.
-ms.openlocfilehash: 8899cb9667ffa080746ca9173b61897f9c5db399
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
-ms.translationtype: HT
+ms.openlocfilehash: a641005913f7dfd866366f0f8065019dd5c17fe8
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579001"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903742"
 ---
 # <a name="add-another-domain"></a>Hinzufügen einer weiteren Domäne
 
@@ -53,3 +53,7 @@ Um E-Mails in Ihrer neuen Domäne zu empfangen, müssen Sie für jeden Benutzer 
 1. Geben Sie den Benutzernamen ein, und wählen Sie dann in der Dropdownliste die neue Domäne aus.
 1. Klicken Si auf **Änderungen speichern**, und schließen Sie dann das Fenster.
 1. Wiederholen Sie diese Schritte für jeden Benutzer, der E-Mails in der neuen Domäne empfangen soll.
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+Hinzufügen einer Domäne zu [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) (Artikel) Hinzufügen von [DNS-Einträgen](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) zum Verbinden Ihrer Domäne (Artikel) Ändern von Namenservern zum Einrichten von Microsoft [365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar) mit jeder Domänenregistrierungsstelle (Artikel) [Häufig](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) gestellte Fragen zu Domänen (Artikel)
