@@ -2,7 +2,7 @@
 title: Zugreifen auf die Microsoft Defender für Endpoint-APIs
 ms.reviewer: ''
 description: Erfahren Sie, wie Sie APIs verwenden können, um Workflows zu automatisieren und Innovationen basierend auf Microsoft Defender for Endpoint-Funktionen zu entwickeln.
-keywords: apis, api, Microsoft Defender for Endpoint, open api, Microsoft Defender for Endpoint api, public api, supported apis, alerts, device, user, domain, ip, file, advanced hunting, query
+keywords: apis, api, wdatp, open api, microsoft defender for endpoint api, microsoft defender atp, public api, supported apis, alerts, device, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 87dce8ff4fde505eb8d4e458c8d9fb56556f4d78
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 843bd953b97f29a5b9c80fc44a9b19fae60a6fa7
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935105"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939766"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Zugreifen auf die Microsoft Defender für Endpoint-APIs 
 
@@ -61,7 +61,7 @@ Sie können auf defender for Endpoint-API **mit Anwendungskontext oder** **Benut
   2. Weisen Sie der Anwendung die gewünschte Berechtigung zu, z. B. "Warnungen lesen", "Computer isolieren". 
   3. Erstellen Sie einen Schlüssel für diese Anwendung.
   4. Token mit der Anwendung mit ihrem Schlüssel abzurufen.
-  5. Verwenden des Tokens für den Zugriff auf Die Microsoft Defender for Endpoint-API
+  5. Verwenden des Tokens für den Zugriff auf die Microsoft Defender for Endpoint-API
 
      Weitere Informationen finden Sie unter [Zugriff mit Anwendungskontext erhalten.](exposed-apis-create-app-webapp.md)
 
@@ -74,7 +74,7 @@ Sie können auf defender for Endpoint-API **mit Anwendungskontext oder** **Benut
   1. Erstellen Sie AAD Native-Application.
   2. Weisen Sie der Anwendung die gewünschte Berechtigung zu, z. B. "Warnungen lesen", "Computer isolieren" usw. 
   3. Token mithilfe der Anwendung mit Benutzeranmeldeinformationen abzurufen.
-  4. Verwenden des Tokens für den Zugriff auf Die Microsoft Defender for Endpoint-API
+  4. Verwenden des Tokens für den Zugriff auf die Microsoft Defender for Endpoint-API
 
      Weitere Informationen finden Sie unter [Get access with user context](exposed-apis-create-app-nativeapp.md).
 

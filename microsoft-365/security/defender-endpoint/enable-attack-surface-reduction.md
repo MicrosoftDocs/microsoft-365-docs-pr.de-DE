@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: e6f3d6da2424b2b3b6b7c1f2c9973e4046d6e27f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 7aeda679d5ce350ef64a2758359390adc4a280f0
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689175"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939242"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Aktivieren der Regeln zur Verringerung der Angriffsfläche
 
@@ -38,6 +38,15 @@ ms.locfileid: "51689175"
 - Windows 10 Enterprise, [Version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) oder höher
 - Windows Server, [Version 1803 (Halbjährskanal)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) oder höher
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+
+**Anforderungen** Sie können Regeln zur Reduzierung der Angriffsfläche für Geräte festlegen, auf der eine der folgenden Editionen und Versionen von Windows ausgeführt wird:
+
+- Windows 10 Pro, Version 1709 oder höher
+- Windows 10 Enterprise, Version 1709 oder höher
+- Windows Server, Version 1803 (Halbjährskanal) oder höher
+- Windows Server 2019
+
+Obwohl Regeln zur Reduzierung der Angriffsfläche keine Windows E5-Lizenz erfordern, erhalten Sie bei Windows E5 erweiterte Verwaltungsfunktionen. Diese Funktionen, die nur in Windows E5 verfügbar sind, umfassen Überwachung, Analyse und Workflows, die in Defender for Endpoint verfügbar sind, sowie Berichterstellungs- und Konfigurationsfunktionen im Microsoft 365 Security Center. Diese erweiterten Funktionen sind nicht mit einer Windows Professional- oder Windows E3-Lizenz verfügbar. Wenn Sie jedoch über diese Lizenzen verfügen, können Sie die Ereignisanzeige- und Microsoft Defender Antivirus-Protokolle verwenden, um Ihre Ereignisse der Regel zur Reduzierung der Angriffsfläche zu überprüfen.
 
 Jede ASR-Regel enthält eine von vier Einstellungen:
 
@@ -108,7 +117,7 @@ Die Werte zum Aktivieren (Blockieren), Deaktivieren, Warnen oder Aktivieren im �
 - 0 : Disable (Disable the ASR rule)
 - 1 : Block (Aktivieren der ASR-Regel)
 - 2 : Überwachung (Bewerten, wie sich die ASR-Regel auf Ihre Organisation auswirken würde, wenn sie aktiviert wäre)
-- 6 : Warnen (Aktivieren Sie die ASR-Regel, aber erlauben Sie dem Endbenutzer, den Block zu umgehen)
+- 6 : Warnen (Aktivieren Sie die ASR-Regel, aber erlauben Sie dem Endbenutzer, den Block zu umgehen). Der Warnmodus ist jetzt für die meisten ASR-Regeln verfügbar.
 
 Verwenden Sie [den ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) Configuration Service Provider (CSP), um Ausschlüsse hinzuzufügen.
 
@@ -159,8 +168,8 @@ Beispiel:
 
 5. Um Dateien und Ordner von ASR-Regeln auszuschließen, wählen Sie die Einstellung Dateien und Pfade von Attack **surface reduction rules** ausschließen aus, und legen Sie die Option auf Aktiviert **.** Wählen **Sie Anzeigen** aus, und geben Sie jede Datei oder jeden Ordner in der Spalte **Wertname** ein. Geben **Sie 0** in die **Spalte Wert** für jedes Element ein.
 
-> [!WARNING]
-> Verwenden Sie keine Anführungszeichen, da sie weder für die Spalte **Wertname** noch für die **Spalte Wert unterstützt** werden.
+   > [!WARNING]
+   > Verwenden Sie keine Anführungszeichen, da sie weder für die Spalte **Wertname** noch für die **Spalte Wert unterstützt** werden.
 
 ## <a name="powershell"></a>PowerShell
 

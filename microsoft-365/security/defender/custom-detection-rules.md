@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Verwalten von benutzerdefinierten Erkennungsregeln in Microsoft 365 Defender
 description: Informationen zum Erstellen und Verwalten von benutzerdefinierten Erkennungsregeln basierend auf erweiterten Suchabfragen
-keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft Threat Protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, rules, schema, kusto, microsoft 365, Microsoft Threat Protection, RBAC, permissions, Microsoft Defender ATP
+keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, rules, schema, kusto, RBAC, permissions, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bfc8724f8dc27aa2475c293e7370488b2ea392b8
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: bcb31b904f8e6156d644864f03143e9fc37ae34b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903754"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935713"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Erstellen und Verwalten von benutzerdefinierten Erkennungsregeln
 
@@ -220,7 +220,7 @@ Wechseln Sie im Regeldetailsescreen (**Suche** nach benutzerdefinierten Erkennun
 >[!TIP]
 >Verwenden Sie die Auswahlspalte [&#10003;] links neben der Tabelle, um Informationen schnell anzeigen und Aktionen für ein Element in einer Tabelle ergreifen zu können.
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 - [Benutzerdefinierte Erkennungen – Übersicht](custom-detections-overview.md)
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Erlernen der Abfragesprache für die erweiterte Suche](advanced-hunting-query-language.md)

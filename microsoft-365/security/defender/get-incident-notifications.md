@@ -1,7 +1,7 @@
 ---
-title: Vorfallbenachrichtigungen in Microsoft 365 Defender erhalten
+title: Vorfallbenachrichtigungen per E-Mail in Microsoft 365 Defender erhalten
 description: Informationen zum Erstellen von Regeln zum Erhalten von E-Mail-Benachrichtigungen für Vorfälle in Microsoft 365 Defender
-keywords: Incident, email, email notfications, configure, users, mailbox, email, incidents
+keywords: Incident, email, email notfications, configure, users, mailbox, email, incidents, analyze, response
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72a1f8fe71efcfa7f4f73671611576a454b508e6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 7ba21e08f72760654993335764df00e78abc87b2
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861313"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939718"
 ---
 # <a name="get-incident-notifications-by-email"></a>Vorfallbenachrichtigungen per E-Mail erhalten
 
@@ -43,7 +43,7 @@ Sie können Microsoft 365 Defender einrichten, um Ihre Mitarbeiter per E-Mail ü
 - Gerätegruppe.
 - Nur beim ersten Update pro Vorfall.
 
-Die E-Mail-Benachrichtigung enthält wichtige Details zu dem Vorfall, z. B. den Vorfallnamen, schweregrad und Kategorien. Sie können auch direkt zu dem Vorfall wechseln und ihre Untersuchung sofort starten. Weitere Informationen finden Sie unter [Investigate incidents](investigate-incidents.md).
+Die E-Mail-Benachrichtigung enthält wichtige Details zu dem Vorfall, z. B. den Vorfallnamen, schweregrad und Kategorien. Sie können auch direkt zu dem Vorfall wechseln und ihre Analyse sofort starten. Weitere Informationen finden Sie unter [Analysieren von Vorfällen](investigate-incidents.md).
 
 Sie können Empfänger in den E-Mail-Benachrichtigungen hinzufügen oder entfernen. Neue Empfänger werden über Vorfälle benachrichtigt, nachdem sie hinzugefügt wurden. 
 
@@ -77,4 +77,4 @@ Um eine vorhandene Regel zu bearbeiten, wählen Sie sie aus der Liste der Regeln
 ## <a name="see-also"></a>Siehe auch
 - [Übersicht über Vorfälle](incidents-overview.md)
 - [Priorisieren von Vorfällen](incident-queue.md)
-- [Untersuchen von Vorfällen](investigate-incidents.md)
+- [Analysieren von Vorfällen](investigate-incidents.md)

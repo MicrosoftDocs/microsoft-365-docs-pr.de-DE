@@ -1,7 +1,7 @@
 ---
 title: Erhalten relevanter Informationen zu einer Entität mit einer Go-Hunt
 description: Erfahren Sie, wie Sie mit dem Go-Hunt-Tool schnell relevante Informationen zu einer Entität oder einem Ereignis mithilfe der erweiterten Suche abfragen können.
-keywords: advanced hunting, incident, pivot, entity, go hunt, relevant events, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft Threat Protection
+keywords: advanced hunting, incident, pivot, entity, go hunt, relevant events, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0f09f74a1cefad5a9b6b438752ebe57e583397c7
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 51d33ea9a372b5bfe017f4c3544e0d6413d53001
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759978"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935833"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Schnelle Suche nach Entitäts- oder Ereignisinformationen mit Go Hunt
 

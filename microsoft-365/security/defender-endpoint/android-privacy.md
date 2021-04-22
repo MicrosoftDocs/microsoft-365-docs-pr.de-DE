@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 415a1f555e1a33c103894221086b783aa754cf32
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1aaae2970cfb2f6da82507eefa87c8d0e2227661
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930137"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939624"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender für Endpunkt unter Android – Datenschutzinformationen
 
@@ -70,7 +70,7 @@ Informationen zu **schädlichen** Android-Anwendungspaketen (APKs) auf dem Gerä
 
     -   Azure-Mandanten-ID – GUID, die Ihre Organisation in Azure Active Directory identifiziert
 
-    -   Microsoft Defender ATP org ID – Eindeutige ID, die dem Unternehmen zugeordnet ist, zu dem das Gerät gehört. Ermöglicht Microsoft zu ermitteln, ob sich Probleme auf eine ausgewählte Gruppe von Unternehmen auswirken und wie viele Unternehmen betroffen sind 
+    -   Microsoft Defender for Endpoint Org ID – Eindeutige ID, die dem Unternehmen zugeordnet ist, zu dem das Gerät gehört. Ermöglicht Microsoft zu ermitteln, ob sich Probleme auf eine ausgewählte Gruppe von Unternehmen auswirken und wie viele Unternehmen betroffen sind 
 
     -   Benutzerprinzipalname – E-Mail-ID des Benutzers
 

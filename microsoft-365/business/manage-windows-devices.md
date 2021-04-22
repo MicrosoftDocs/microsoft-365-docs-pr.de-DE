@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Erfahren Sie, wie Sie Microsoft 365 aktivieren, um lokale Active-Directory-beigetretene Windows 10-Geräte in nur wenigen Schritten zu schützen.
-ms.openlocfilehash: 8a45c6959bee368491c5c6424e3713300c443779
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c9f5a21d993200abcf9ecf1fa236879245e1c153
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580132"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939500"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Aktivieren der In der Domäne beigetretenen Windows 10-Geräte, die von Microsoft 365 Business Premium verwaltet werden können
 
@@ -116,3 +116,7 @@ Wenn die Richtlinie Automatische **MDM-Registrierung** mit standardmäßigen Azu
 6.  Für den Fall, dass Mehrere Domänencontroller vorhanden sind, warten Sie, bis SYSVOL repliziert wird, bis die Richtlinien verfügbar sind. Dieses Verfahren funktioniert auch für jede zukünftige Version der administrativen Vorlagen.
 
 An diesem Punkt sollte die Richtlinie Automatische MDM-Registrierung aktivieren mit standardmäßig verfügbaren **Azure AD-Anmeldeinformationen angezeigt** werden.
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+Synchronisieren von Domänenbenutzern mit [Microsoft 365](manage-domain-users.md) (Artikel) Erstellen einer Gruppe im [Admin Center](../admin/create-groups/create-groups.md) (Artikel) [Lernprogramm: Konfigurieren](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) der Azure Active Directory-Hybrid-Verknüpfung für verwaltete Domänen (Artikel)

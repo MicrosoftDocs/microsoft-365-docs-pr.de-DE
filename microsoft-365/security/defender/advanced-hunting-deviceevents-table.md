@@ -1,7 +1,7 @@
 ---
 title: DeviceEvents-Tabelle im schema der erweiterten Suche
 description: Informationen zu Antivirus, Firewall und anderen Ereignistypen finden Sie in der Tabelle verschiedene Geräteereignisse (DeviceEvents) des schemas für die erweiterte Suche.
-keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft Threat Protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, firewall, exploit guard, DeviceEvents
+keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, firewall, exploit guard, DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9b9023ae87fed452396501980d719be3a2e207b3
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: fc28159f9f83354868142584740e2cb7810724b9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498643"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933685"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 

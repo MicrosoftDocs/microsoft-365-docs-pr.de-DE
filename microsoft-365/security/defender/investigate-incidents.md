@@ -1,7 +1,7 @@
 ---
-title: Untersuchen von Vorfällen in Microsoft 365 Defender
+title: Analysieren von Vorfällen in Microsoft 365 Defender
 description: Analysieren Sie Vorfälle in Bezug auf Geräte, Nutzer und Postfächer.
-keywords: Vorfall, Vorfälle, Rechner, Geräte, Nutzer, Identitäten, Post, E-Mail, Postfach, Untersuchung, Graph, Beweise
+keywords: Incident, Incidents, analyze, response, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,17 +22,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 99acc25c3949b758dab990a9c2e9104b9158accd
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 22d3bba03745cee330f89b67061e6c6b13e78aed
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861875"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939742"
 ---
-# <a name="investigate-incidents-in-microsoft-365-defender"></a>Untersuchen von Vorfällen in Microsoft 365 Defender
+# <a name="analyze-incidents-in-microsoft-365-defender"></a>Analysieren von Vorfällen in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **Gilt für:**
 
@@ -40,9 +39,9 @@ ms.locfileid: "51861875"
 
 Microsoft 365 Defender aggregiert alle zugehörigen Warnungen, Ressourcen, Untersuchungen und Nachweise aus Ihren Geräten, Benutzern und Postfächern in einem Vorfall, um Ihnen einen umfassenden Überblick über die gesamte Bandbreite eines Angriffs zu geben.
 
-Innerhalb eines Vorfalls untersuchen Sie die Warnungen, die sich auf Ihr Netzwerk auswirken, verstehen, was sie bedeuten, und erstellen die Nachweise, damit Sie einen effektiven Korrekturplan entwickeln können.
+Innerhalb eines Vorfalls analysieren Sie die Warnungen, die sich auf Ihr Netzwerk auswirken, verstehen, was sie bedeuten, und erstellen die Nachweise, damit Sie einen effektiven Korrekturplan entwickeln können.
 
-## <a name="initial-investigation"></a>Erste Untersuchung
+## <a name="initial-analysis"></a>Erste Analyse
 
 Bevor Sie in die Details eintauchen, sehen Sie sich die Eigenschaften und die Zusammenfassung des Vorfalls an.
 
@@ -87,9 +86,9 @@ Im Folgenden sehen Sie ein Beispiel.
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Beispiel für eine Warnungsseite für einen Vorfall":::
 
-Standardmäßig werden die Warnungen chronologisch geordnet, damit Sie sehen können, wie sich der Vorfall im Laufe der Zeit abgespielt hat. Wenn Sie jede Warnung auswählen, gelangen Sie zur Hauptseite der Warnung, auf der Sie eine eingehende Untersuchung dieser Warnung durchführen können. 
+Standardmäßig werden die Warnungen chronologisch geordnet, damit Sie sehen können, wie sich der Vorfall im Laufe der Zeit abgespielt hat. Wenn Sie jede Warnung auswählen, gelangen Sie zur Hauptseite der Warnung, auf der Sie eine eingehende Analyse dieser Warnung durchführen können. 
 
-Informationen zur Verwendung der Warnungswarteschlange und der Warnungsseiten unter [Warnungen untersuchen](investigate-alerts.md)
+Informationen zur Verwendung der Warnungswarteschlange und der Warnungsseiten bei [der Analyse von Warnungen](investigate-alerts.md)
 
 ## <a name="devices"></a>Geräte
 

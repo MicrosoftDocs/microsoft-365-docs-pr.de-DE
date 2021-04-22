@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender für Endpunkt unter Linux
 ms.reviewer: ''
-description: Beschreibt die Installation und Verwendung von Microsoft Defender for Endpoint für Linux.
-keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+description: Beschreibt, wie Sie Microsoft Defender for Endpoint unter Linux installieren und verwenden.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f67dd28902e8b45a5401b60c027faa89d7467cd8
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 34274e260da2e8acc8088fcff6d324b6b31fc2ef
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861395"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935941"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender für Endpunkt unter Linux
 
@@ -39,7 +39,7 @@ ms.locfileid: "51861395"
 In diesem Thema wird beschrieben, wie Sie Microsoft Defender for Endpoint unter Linux installieren, konfigurieren, aktualisieren und verwenden.
 
 > [!CAUTION]
-> Das Ausführen anderer Endpunktschutzprodukte von Drittanbietern neben Microsoft Defender for Endpoint unter Linux führt wahrscheinlich zu Leistungsproblemen und unvorhersehbaren Nebenwirkungen. Wenn der Schutz von Nicht-Microsoft-Endpunkten eine absolute Anforderung in Ihrer Umgebung ist, können Sie die Funktionen von Defender for Endpoint für Linux EDR weiterhin sicher nutzen, nachdem Sie die Antivirenfunktionen so konfiguriert haben, dass sie im passiven Modus [ausgeführt werden.](linux-preferences.md#enable--disable-passive-mode)
+> Das Ausführen anderer Endpunktschutzprodukte von Drittanbietern neben Microsoft Defender for Endpoint unter Linux führt wahrscheinlich zu Leistungsproblemen und unvorhersehbaren Nebenwirkungen. Wenn der Schutz von Nicht-Microsoft-Endpunkten in Ihrer Umgebung eine absolute Anforderung ist, können Sie die Funktionen von Defender for Endpoint unter Linux EDR weiterhin sicher nutzen, nachdem Sie die Antivirenfunktionen so konfiguriert haben, dass sie im passiven Modus [ausgeführt werden.](linux-preferences.md#enable--disable-passive-mode)
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Installieren von Microsoft Defender for Endpoint unter Linux
 
@@ -80,10 +80,10 @@ Wenn Installationsfehler auft werden, finden Sie informationen unter [Troublesho
 - Minimale Kernelversion 3.10.0-327
 - Die `fanotify` Kerneloption muss aktiviert sein
   > [!CAUTION]
-  > Das Ausführen von Defender for Endpoint für Linux neben anderen -basierten Sicherheitslösungen `fanotify` wird nicht unterstützt. Dies kann zu unvorhersehbaren Ergebnissen führen, einschließlich des Aufhängens des Betriebssystems.
+  > Das Ausführen von Defender for Endpoint auf Linux neben anderen -basierten Sicherheitslösungen `fanotify` wird nicht unterstützt. Dies kann zu unvorhersehbaren Ergebnissen führen, einschließlich des Aufhängens des Betriebssystems.
 
 - Speicherplatz: 1 GB
-- /opt/microsoft/mdatp/sbin/wdavdaemon erfordert ausführbare Berechtigungen. Weitere Informationen finden Sie unter "Sicherstellen, dass der Daemon über ausführbare Berechtigungen verfügt" unter [Problembehandlung](/microsoft-365/security/defender-endpoint/linux-support-install)von Installationsproblemen für Microsoft Defender for Endpoint für Linux .
+- /opt/microsoft/mdatp/sbin/wdavdaemon erfordert ausführbare Berechtigungen. Weitere Informationen finden Sie unter "Sicherstellen, dass der Daemon über ausführbare Berechtigungen verfügt" unter [Problembehandlung](/microsoft-365/security/defender-endpoint/linux-support-install)von Installationsproblemen für Microsoft Defender for Endpoint unter Linux .
 - Arbeitsspeicher: 1 GB
     > [!NOTE]
     > Stellen Sie sicher, dass Sie freien Speicherplatz in /var haben.

@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Erhalten Sie einen Microsoft 365-Gruppenbericht, um die Gruppen und ihre Aktivitäten kennen zu lernen.
-ms.openlocfilehash: fd3aa664b5a40bb5fffe0ed23e07ba6f1a5907c2
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 9426f7a35dea6c0f4a34e78dd8b2c214a0619bdd
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579566"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939230"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365-Berichte im Admin Center – Microsoft 365-Gruppen
 
@@ -63,6 +63,11 @@ Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren
 |Nachrichten in Yammer (veröffentlicht)  <br/> |Die Anzahl der Nachrichten, die in der Yammer Berichtszeitraum veröffentlicht wurden.  <br/> |
 |Nachrichten in Yammer (Lesen)  <br/> |Die Anzahl der Unterhaltungen, die in der gruppe Yammer Berichtszeitraum gelesen werden.  <br/> |
 |Nachrichten in Yammer (gefällt)  <br/> |Die Anzahl der nachrichten, die in der gruppe Yammer Berichtszeitraum gefielen.  <br/> |
-|Mitglieder  <br/> |Die Anzahl der Mitglieder in der Gruppe.  <br/> |
+|Members  <br/> |Die Anzahl der Mitglieder in der Gruppe.  <br/> |
 |Externe Mitglieder |Die Anzahl der externen Benutzer in der Gruppe.|
 |||
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Microsoft 365-Berichte im Admin Center](activity-reports.md) (Artikel) Berichte im [Security & Compliance Center](../../compliance/reports-in-security-and-compliance.md) (Artikel) [Microsoft 365-Berichte im Admin Center - Aktive Benutzer](../../admin/activity-reports/active-users-ww.md) (Artikel)
+

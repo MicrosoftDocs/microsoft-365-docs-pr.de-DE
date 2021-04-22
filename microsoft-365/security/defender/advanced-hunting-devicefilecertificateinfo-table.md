@@ -1,7 +1,7 @@
 ---
 title: DeviceFileCertificateInfo-Tabelle im schema der erweiterten Suche
 description: Informationen zum Signieren von Dateien finden Sie in der DeviceFileCertificateInfo-Tabelle des schemas für die erweiterte Suche.
-keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft Threat Protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, digital signature, certificate, file signing, DeviceFileCertificateInfo
+keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, digital signature, certificate, file signing, DeviceFileCertificateInfo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eafe84e2d08ce15fe2c3a7cbfafb0822a2f38666
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 272896c745386f13fc0e36301c5c16f5f24dbb42
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498632"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933673"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -45,7 +45,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `DeviceId` | string | Eindeutiger Bezeichner für den Computer im Dienst |
 | `DeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Computers |
 | `SHA1` | string | SHA-1 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
-| `IsSigned` | boolean | Gibt an, ob die Datei signiert ist |
+| `IsSigned` | Boolescher Wert | Gibt an, ob die Datei signiert ist |
 | `SignatureType` | Zeichenfolge | Gibt an, ob Signaturinformationen als eingebetteter Inhalt in der Datei selbst gelesen oder aus einer externen Katalogdatei gelesen wurden |
 | `Signer` | Zeichenfolge | Informationen zum Signier der Datei |
 | `SignerHash` | Zeichenfolge | Eindeutiger Hashwert, der den Signier identifiziert |
@@ -56,8 +56,8 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `CertificateCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu der das Zertifikat erstellt wurde |
 | `CertificateExpirationTime` | Datum/Uhrzeit | Datum und Uhrzeit des Ablaufs des Zertifikats |
 | `CertificateCountersignatureTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu der das Zertifikat gegensigniert wurde |
-| `IsTrusted` | boolean | Gibt an, ob die Datei basierend auf den Ergebnissen der WinVerifyTrust-Funktion vertrauenswürdig ist, die nach unbekannten Stammzertifikatinformationen, ungültigen Signaturen, widerrufenen Zertifikaten und anderen fragwürdigen Attributen sucht. |
-| `IsRootSignerMicrosoft` | boolean | Gibt an, ob der Signier des Stammzertifikats Microsoft ist |
+| `IsTrusted` | Boolescher Wert | Gibt an, ob die Datei basierend auf den Ergebnissen der WinVerifyTrust-Funktion vertrauenswürdig ist, die nach unbekannten Stammzertifikatinformationen, ungültigen Signaturen, widerrufenen Zertifikaten und anderen fragwürdigen Attributen sucht. |
+| `IsRootSignerMicrosoft` | Boolescher Wert | Gibt an, ob der Signier des Stammzertifikats Microsoft ist |
 | `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte in Verbindung mit den Spalten DeviceName und Timestamp verwendet werden. | 
 
 ## <a name="related-topics"></a>Verwandte Themen

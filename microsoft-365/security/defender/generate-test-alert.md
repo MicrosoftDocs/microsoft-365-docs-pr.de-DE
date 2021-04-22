@@ -1,7 +1,7 @@
 ---
 title: Generieren einer Microsoft 365 Defender-Testwarnung
 description: Generieren einer Testwarnung, um zu testen, wie Ihre Microsoft 365 Defender-Lab-Umgebung funktioniert
-keywords: Microsoft Threat Protection simulation, try Microsoft Threat Protection, generate test alert in Microsoft Threat Protection, test alert in Microsoft Threat Protection evaluation lab
+keywords: Microsoft 365 Defender simulation, try Microsoft 365 Defender, generate test alert in Microsoft 365 Defender, test alert in Microsoft 365 Defender evaluation lab
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: eae17a2cec3aa4da036ef1de52c3cd637701b929
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ebe01570b8b425b45acdcb11cc7df47d2d62e547
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060731"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935653"
 ---
 # <a name="generate-a-test-alert-in-your-microsoft-365-defender-evaluation-lab"></a>Generieren einer Testwarnung in Ihrem Microsoft 365 Defender-Evaluierungslabor  
 

@@ -1,7 +1,7 @@
 ---
 title: CloudAppEvents-Tabelle im schema der erweiterten Suche
 description: Erfahren Sie mehr über Ereignisse aus Cloud-Apps und -Diensten in der CloudAppEvents-Tabelle des schemas für erweiterte Suche
-keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungensuche, Microsoft Threat Protection, microsoft 365, mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, CloudAppEvents, Cloud App Security, MCAS
+keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, CloudAppEvents, Cloud App Security, MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 83b9eec37648ba48aa8e6931e836e8a5e22458c8
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 17f424d368c0df2f07cda41917f005e4163e5750
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760026"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935869"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -49,27 +49,27 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
 | `ActionType` | string | Typ der Aktivität, die das Ereignis ausgelöst hat |
-| `Application` | string | Anwendung, die die aufgezeichnete Aktion ausgeführt hat |
-| `ApplicationId` | string | Eindeutige ID für die Anwendung |
-| `AccountObjectId` | string | Eindeutige ID für das Konto in Azure Active Directory |
-| `AccountDisplayName` | string | Name des Kontobenutzers, der im Adressbuch angezeigt wird. In der Regel eine Kombination aus einem angegebenen oder Vornamen, einer mittleren Initiierung und einem Nachnamen oder Nachnamen. |
-| `IsAdminOperation` | string | Gibt an, ob die Aktivität von einem Administrator ausgeführt wurde |
-| `DeviceType` | string | Gerätetyp basierend auf Zweck und Funktionalität, z. B. "Netzwerkgerät", "Workstation", "Server", "Mobile", "Spielekonsole" oder "Drucker" | 
-| `OSPlatform` | string | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Diese Spalte gibt bestimmte Betriebssysteme an, einschließlich Variationen innerhalb derselben Familie, z. B. Windows 10 und Windows 7. |
-| `IPAddress` | string | DEM Endpunkt zugewiesene und während der zugehörigen Netzwerkkommunikation verwendete IP-Adresse |
-| `IsAnonymousProxy` | string | Gibt an, ob die IP-Adresse zu einem bekannten anonymen Proxy gehört |
-| `CountryCode` | string | Zwei-Buchstaben-Code, der das Land angibt, in dem die Client-IP-Adresse geolokaliert ist |
-| `City` | string | Ort, in dem die Client-IP-Adresse geolokaliert ist |
-| `Isp` | string | Internetdienstanbieter (Internet Service Provider, ISP), der der IP-Adresse zugeordnet ist |
-| `UserAgent` | string | Benutzer-Agent-Informationen aus dem Webbrowser oder einer anderen Clientanwendung |
-| `ActivityType` | string | Typ der Aktivität, die das Ereignis ausgelöst hat |
-| `ActivityObjects` | string | Liste der Objekte, z. B. Dateien oder Ordner, die an der aufgezeichneten Aktivität beteiligt waren |
-| `ObjectName` | string | Name des Objekts, auf das die aufgezeichnete Aktion angewendet wurde |
-| `ObjectType` | string | Objekttyp, z. B. eine Datei oder ein Ordner, auf den die aufgezeichnete Aktion angewendet wurde |
-| `ObjectId` | string | Eindeutiger Bezeichner des Objekts, auf das die aufgezeichnete Aktion angewendet wurde |
-| `ReportId` | string | Eindeutiger Bezeichner für das Ereignis |
-| `RawEventData` | string | Unformatierte Ereignisinformationen aus der Quellanwendung oder dem Quelldienst im JSON-Format |
-| `AdditionalFields` | string | Zusätzliche Informationen zur Entität oder zum Ereignis |
+| `Application` | Zeichenfolge | Anwendung, die die aufgezeichnete Aktion ausgeführt hat |
+| `ApplicationId` | Zeichenfolge | Eindeutige ID für die Anwendung |
+| `AccountObjectId` | Zeichenfolge | Eindeutige ID für das Konto in Azure Active Directory |
+| `AccountDisplayName` | Zeichenfolge | Name des Kontobenutzers, der im Adressbuch angezeigt wird. In der Regel eine Kombination aus einem angegebenen oder Vornamen, einer mittleren Initiierung und einem Nachnamen oder Nachnamen. |
+| `IsAdminOperation` | Zeichenfolge | Gibt an, ob die Aktivität von einem Administrator ausgeführt wurde |
+| `DeviceType` | Zeichenfolge | Gerätetyp basierend auf Zweck und Funktionalität, z. B. "Netzwerkgerät", "Workstation", "Server", "Mobile", "Spielekonsole" oder "Drucker" | 
+| `OSPlatform` | Zeichenfolge | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Diese Spalte gibt bestimmte Betriebssysteme an, einschließlich Variationen innerhalb derselben Familie, z. B. Windows 10 und Windows 7. |
+| `IPAddress` | Zeichenfolge | DEM Endpunkt zugewiesene und während der zugehörigen Netzwerkkommunikation verwendete IP-Adresse |
+| `IsAnonymousProxy` | Zeichenfolge | Gibt an, ob die IP-Adresse zu einem bekannten anonymen Proxy gehört |
+| `CountryCode` | Zeichenfolge | Zwei-Buchstaben-Code, der das Land angibt, in dem die Client-IP-Adresse geolokaliert ist |
+| `City` | Zeichenfolge | Ort, in dem die Client-IP-Adresse geolokaliert ist |
+| `Isp` | Zeichenfolge | Internetdienstanbieter (Internet Service Provider, ISP), der der IP-Adresse zugeordnet ist |
+| `UserAgent` | Zeichenfolge | Benutzer-Agent-Informationen aus dem Webbrowser oder einer anderen Clientanwendung |
+| `ActivityType` | Zeichenfolge | Typ der Aktivität, die das Ereignis ausgelöst hat |
+| `ActivityObjects` | Zeichenfolge | Liste der Objekte, z. B. Dateien oder Ordner, die an der aufgezeichneten Aktivität beteiligt waren |
+| `ObjectName` | Zeichenfolge | Name des Objekts, auf das die aufgezeichnete Aktion angewendet wurde |
+| `ObjectType` | Zeichenfolge | Objekttyp, z. B. eine Datei oder ein Ordner, auf den die aufgezeichnete Aktion angewendet wurde |
+| `ObjectId` | Zeichenfolge | Eindeutiger Bezeichner des Objekts, auf das die aufgezeichnete Aktion angewendet wurde |
+| `ReportId` | Zeichenfolge | Eindeutiger Bezeichner für das Ereignis |
+| `RawEventData` | Zeichenfolge | Unformatierte Ereignisinformationen aus der Quellanwendung oder dem Quelldienst im JSON-Format |
+| `AdditionalFields` | Zeichenfolge | Zusätzliche Informationen zur Entität oder zum Ereignis |
 
 ## <a name="apps-and-services-covered"></a>Abgedeckte Apps und Dienste
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4488a552475121adc4a439106bc0bf0d97cb509a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7fb0de4f8dc67331e7acca59e70d061fe7c19493
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062040"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935737"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Auflisten der Incidents-API in Microsoft 365 Defender
 
@@ -82,7 +82,7 @@ GET /api/incidents
 
 Name | Typ | Beschreibung
 -|-|-
-Authorization | String | Bearer {token}. **Erforderlich**
+Authorization | Zeichenfolge | Bearer {token}. **Required**
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -142,7 +142,7 @@ Geräte | Alle Geräte, auf denen Warnungen im Zusammenhang mit dem Vorfall gese
 
 Feldname | Beschreibung | Beispielwert
 -|-|-
-DeviceId | Die In Microsoft Defender ATP festgelegte Geräte-ID. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
+DeviceId | Die Geräte-ID, die in Microsoft Defender for Endpoint festgelegt ist. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
 aadDeviceId |  Die Geräte-ID, die in [Azure Active Directory festgelegt ist.](/azure/active-directory/fundamentals/active-directory-whatis) Nur für Geräte verfügbar, die der Domäne beigetreten sind. | null
 deviceDnsName | Der vollqualifizierte Domänenname für das Gerät. | user5cx.middleeast.corp.contoso.com
 osPlatform | Die Betriebssystemplattform, auf der das Gerät ausgeführt wird.| WindowsServer2016
@@ -185,7 +185,7 @@ securityGroupId | Verfügbar, wenn entityType *SecurityGroup ist.* | 301c47c8-e1
 securityGroupName | Verfügbar, wenn entityType *SecurityGroup ist.* | Netzwerkkonfigurationsoperatoren
 registryHive | Verfügbar, wenn entityType die *Registrierung ist.* | LOKALER \_ \_ HKEY-COMPUTER |
 registryKey | Verfügbar, wenn entityType die *Registrierung ist.* | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType | Verfügbar, wenn entityType die *Registrierung ist.* | String
+registryValueType | Verfügbar, wenn entityType die *Registrierung ist.* | Zeichenfolge
 registryValue | Verfügbar, wenn entityType die *Registrierung ist.* | 31-00-00-00
 deviceId | Die ID des Geräts, das sich auf die Entität bezogen hat. | 986e5df8b73dacd43c8917d17e523e76b13c75cd
 

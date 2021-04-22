@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie eine kostenlose Testversion erhalten oder ein Abonnement für Microsoft 365 Business erwerben.
 ms.date: 08/07/2020
-ms.openlocfilehash: 9daa7022007aa3c71dc7291f592d3b166a2c45a5
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 505ce060b9b40d72a54adbfffbcb2b3cf47a66e6
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576901"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939184"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Testen oder Kaufen eines Microsoft 365 Business-Abonnements
 
@@ -32,6 +32,16 @@ Microsoft 365 Business ist ein Abonnementdienst, mit dem Sie Ihre Organisation i
 
 > [!NOTE]
 > Sie müssen eine Kreditkarte verwenden, wenn Sie sich für eine kostenlose Testversion registrieren. Am Ende des kostenlosen Testzeitraums wird Ihr Testabonnement automatisch in ein kostenpflichtiges Abonnement konvertiert. Ihre Kreditkarte wird erst am Ende des Testzeitraums abgerechnet.
+
+
+::: moniker region="o365-21vianet"
+
+> [!IMPORTANT]
+> **Zahlungsoptionen für Office 365, betrieben von 21Vianet in China** Internationale Kreditkarten werden nicht akzeptiert. Sie können Für Ihr Abonnement bezahlen, indem Sie:
+> - Invoice
+> - Onlinezahlung mit Alipay oder China UnionPay Zahlungsnachweis wird in Form von Fapiaos bereitgestellt. Sie können Ihre Fapiao-Anforderung etwa drei (3) Tage nach der Bezahlten an unser [Fapiao-System](https://go.microsoft.com/fwlink/p/?LinkId=395314) übermitteln. Weitere Informationen finden Sie [unter Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
+
+::: moniker-end
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen:
 

@@ -1,7 +1,7 @@
 ---
 title: FileProfile()-Funktion bei der erweiterten Suche für Microsoft 365 Defender
 description: Erfahren Sie, wie Sie FileProfile() zum Anreichern von Informationen zu Dateien in Ihren erweiterten Suchergebnissen verwenden.
-keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungensuche, Microsoft Threat Protection, microsoft 365, mtp, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, FileProfile, Dateiprofil, Funktion, Bereicherung
+keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ea4f22b70e607b42155342dde1ac16b1ad640981
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 67295529cdb7b8a3e93e663f2a8a28d27a8f6737
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498451"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935845"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -49,10 +49,10 @@ Die `FileProfile()` Funktion ist eine Anreicherungsfunktion bei der erweiterten 
 | `Signer` | Zeichenfolge | Informationen zum Signier der Datei |
 | `Issuer` | Zeichenfolge | Informationen zur ausstellenden Zertifizierungsstelle |
 | `SignerHash` | Zeichenfolge | Eindeutiger Hashwert, der den Signier identifiziert |
-| `IsCertificateValid` | boolean | Gibt an, ob das zum Signieren der Datei verwendete Zertifikat gültig ist |
-| `IsRootSignerMicrosoft` | boolean | Gibt an, ob der Signier des Stammzertifikats Microsoft ist |
+| `IsCertificateValid` | Boolescher Wert | Gibt an, ob das zum Signieren der Datei verwendete Zertifikat gültig ist |
+| `IsRootSignerMicrosoft` | Boolescher Wert | Gibt an, ob der Signier des Stammzertifikats Microsoft ist |
 | `SignatureState` | Zeichenfolge | Status der Dateisignatur: SignedValid - die Datei ist mit einer gültigen Signatur signiert, SignedInvalid - die Datei ist signiert, aber das Zertifikat ist ungültig, Unsigned - die Datei ist nicht signiert, unbekannt - Informationen zur Datei können nicht abgerufen werden
-| `IsExecutable` | boolean | Gibt an, ob es sich bei der Datei um eine portable ausführbare Datei (Portable Executable, PE) handelt |
+| `IsExecutable` | Boolescher Wert | Gibt an, ob es sich bei der Datei um eine portable ausführbare Datei (Portable Executable, PE) handelt |
 | `ThreatName` | Zeichenfolge | Erkennungsname für gefundene Schadsoftware oder andere Bedrohungen |
 | `Publisher` | Zeichenfolge | Name der Organisation, die die Datei veröffentlicht hat |
 | `SoftwareName` | string | Name des Softwareprodukts |

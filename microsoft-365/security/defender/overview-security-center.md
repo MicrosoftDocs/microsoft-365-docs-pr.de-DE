@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Security Center – Übersicht
+title: Microsoft 365 Security Center – Übersicht über die Kombination von MDO, MDE, MDI und MCAS
 description: 'Vorteile im Microsoft 365 Security Center: Microsoft Defender für Office 365 (MDO) und Microsoft Defender für Endpunkt (MDE), mit Microsoft Defender for Identity (MDI) und Microsoft Cloud App Security (MCAS). In diesem Artikel werden die Fortschritte im Microsoft 365 Security Center für Administratoren erläutert.'
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Monitor, Bericht, Identitäten, Daten, Geräte, Apps
 ms.prod: m365-security
@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.date: 04/07/2021
+ms.date: 04/21/2021
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 2e1553b231692d184146897ddc05e11930ed1bf0
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: f3920942925efbe334df84370c61fbe6a98ad49f
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903974"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939264"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Das vereinheitlichte Microsoft 365 Security Center – Übersicht
 
@@ -68,6 +68,9 @@ Das Microsoft 365 Security Center hebt beim Zusammenführen von Microsoft Defend
 - Allgemeine Terminologie
 - Allgemeine Entitäten
 - Featureparität mit anderen Workloads
+
+> [!NOTE]
+> Auf das einheitliche Microsoft 365 Security Center kann zugegriffen werden, ohne dass Kunden Migrationsschritte ausführen oder eine neue Lizenz erwerben müssen. Beispielsweise kann auf dieses neue Portal für Administratoren mit einem #A0 zugegriffen werden, genauso wie für Administratoren mit Microsoft Defender für Office 365 Plan 1 und Plan 2. Exchange Online Protection- oder MDO Plan 1-Kunden sehen jedoch nur die Sicherheitsfeatures, die ihre Abonnementlizenz unterstützt. Das Ziel des neuen Centers ist die Zentralisierung der Sicherheit.
 
 ## <a name="unified-investigations"></a>Vereinheitlichte Untersuchungen
 

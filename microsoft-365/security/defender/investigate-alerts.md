@@ -1,7 +1,7 @@
 ---
-title: Untersuchen von Warnungen in Microsoft 365 Defender
-description: Untersuchen Sie Warnungen, die auf Geräten, Benutzern und Postfächern angezeigt werden.
-keywords: Vorfälle, Warnungen, untersuchen, Korrelation, Angriff, Computer, Geräte, Benutzer, Identitäten, Identität, Postfach, E-Mail, 365, Microsoft, m365
+title: Analysieren von Warnungen in Microsoft 365 Defender
+description: Analysieren Sie Warnungen, die auf Geräten, Benutzern und Postfächern angezeigt werden.
+keywords: Vorfälle, Warnungen, untersuchen, analysieren, Reaktion, Korrelation, Angriff, Computer, Geräte, Benutzer, Identitäten, Identität, Postfach, E-Mail, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 77b30e8a8eee70470115bcd61f081863fa5a41ee
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 18b4df6a2dbb22235d6781f1430f7a75e319fbcf
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862006"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939542"
 ---
-# <a name="investigate-alerts-in-microsoft-365-defender"></a>Untersuchen von Warnungen in Microsoft 365 Defender
+# <a name="analyze-alerts-in-microsoft-365-defender"></a>Analysieren von Warnungen in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51862006"
 
 Warnungen sind die Grundlage aller Vorfälle und geben das Auftreten von böswilligen oder verdächtigen Ereignissen in Ihrer Umgebung an. Warnungen sind in der Regel Teil eines umfassenderen Angriffs und geben Hinweise zu einem Vorfall.
 
-In Microsoft 365 Defender werden verwandte Warnungen zu Vorfällen [zusammengefasst.](incidents-overview.md) Vorfälle bieten immer den umfassenderen Kontext eines Angriffs. Es kann jedoch hilfreich sein, Warnungen zu untersuchen, wenn eine tiefergehende Analyse erforderlich ist. 
+In Microsoft 365 Defender werden verwandte Warnungen zu Vorfällen [zusammengefasst.](incidents-overview.md) Vorfälle bieten immer den umfassenderen Kontext eines Angriffs. Die Analyse von Warnungen kann jedoch hilfreich sein, wenn eine tiefergehende Analyse erforderlich ist. 
 
 Die **Warnungswarteschlange** zeigt den aktuellen Satz von Warnungen an. Sie erhalten die Benachrichtigungswarteschlange von **Incidents & alerts > Alerts** beim Schnellstart des Microsoft 365 Security Centers ([security.microsoft.com](https://security.microsoft.com)).
 
@@ -134,12 +134,12 @@ Die Liste der zusätzlichen Aktionen hängt vom Typ der Warnung ab.
 
 ## <a name="resolve-an-alert"></a>Auflösen einer Warnung
 
-Sobald Sie eine Warnung untersucht haben und sie aufgelöst  werden kann, wechseln Sie zum Bereich Warnung verwalten für  die Warnung, und markieren Sie den Status als **Aufgelöst,** und klassifizieren Sie sie entweder als False-Warnung oder **als True-Warnung.** Geben Sie bei echten Warnungen den Bedrohungstyp der Warnung im Feld **Bestimmung** an.
+Sobald Sie die Analyse einer Warnung durchgeführt haben und  diese aufgelöst werden kann, wechseln Sie zum Bereich Warnung verwalten  für die Warnung, markieren Sie den Status als **Aufgelöst,** und klassifizieren Sie sie entweder als False-Warnung oder **als True-Warnung.** Geben Sie bei echten Warnungen den Bedrohungstyp der Warnung im Feld **Bestimmung** an.
 
 Das Klassifizieren von Warnungen und das Angeben ihrer Bestimmung trägt dazu bei, Microsoft 365 Defender so zu optimieren, dass mehr echte Warnungen und weniger falsch Warnungen angezeigt werden.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über Vorfälle](incidents-overview.md)
-- [Untersuchen von Vorfällen](investigate-incidents.md)
 - [Verwalten von Vorfällen](manage-incidents.md)
+- [Analysieren von Vorfällen](investigate-incidents.md)

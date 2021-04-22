@@ -1,7 +1,7 @@
 ---
 title: Priorisieren von Vorfällen in Microsoft 365 Defender
 description: Informationen zum Filtern von Vorfällen aus der Vorfallwarteschlange in Microsoft 365 Defender
-keywords: Vorfall, Warteschlange, Übersicht, Geräte, Identitäten, Benutzer, Postfach, E-Mail, Vorfälle
+keywords: Incident, queue, overview, devices, identities, users, mailbox, email, incidents, analyze, response
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3b381749108d4a75024d9a546c0d3f1631c948ed
-ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
+ms.openlocfilehash: c3efff1e7ebb3a5e868ede018512d12cf38e38fc
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51887257"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939706"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorisieren von Vorfällen in Microsoft 365 Defender
 
@@ -81,45 +81,11 @@ In dieser Tabelle sind die verfügbaren Filternamen aufgeführt.
 | Status | Sie können die Liste der Vorfälle basierend auf deren Status einschränken, um zu sehen, welche Vorgänge aktiv oder aufgelöst sind. |
 |||
 
-## <a name="incident-response-workflow"></a>Workflow zur Reaktion auf Vorfälle
-
-Hier ist der typische Workflow für die Reaktion auf Vorfälle:
-
-1. Identifizieren und verdingen Sie die Vorfälle mit der höchsten Priorität für Untersuchung und Lösung.
-2. Starten Sie für jeden Vorfall mit hoher Priorität eine [Untersuchung:](investigate-incidents.md)
-
-   a. Zeigen Sie die Zusammenfassung des Vorfalls an, um den Umfang und den Schweregrad des Vorfalls sowie die betroffenen Entitäten zu verstehen (registerkarte **Zusammenfassung).**
-
-   b. Schauen Sie sich die Warnungen an, um ihren Ursprung, Umfang und Schweregrad zu verstehen (registerkarte **Warnungen).**
-
-   c. Sammeln Sie bei Bedarf Informationen zu betroffenen Geräten, Benutzern und Postfächern (die Registerkarten **Geräte,** **Benutzer** **und** Postfächer).
-
-   d. Erfahren Sie, wie Microsoft 365 Defender einige Warnungen automatisch aufgelöst hat (registerkarte **Untersuchungen).**
-   
-   e. Verwenden Sie bei Bedarf Informationen im Datensatz für den Vorfall, um weitere Informationen zu erhalten (registerkarte **Nachweis und** Antwort).
-
-   Bei der Untersuchung sollten Sie sich um Dies sorgen:
-
-   - Containment: Reduzierung zusätzlicher Auswirkungen auf Ihren Mandanten.
-   - Auslöschung: Entfernen der Sicherheitsbedrohung.
-   - Wiederherstellung: Wiederherstellen der Mandantenressourcen in dem Zustand, in dem sie sich vor dem Vorfall auf dem Computer begnauft haben.
-
-3. Nachdem Sie den Vorfall behoben haben, nehmen Sie sich die Zeit für:
-
-   - Verstehen sie den Typ des Angriffs und seine Auswirkungen.
-   - Recherchieren Sie den Angriff in der Sicherheitsgemeinschaft auf einen Trend zu Sicherheitsangriffen.
-   - Erinnern Sie sich an den Workflow, den Sie verwendet haben, um den Vorfall zu beheben und Ihre Standardworkflows und Playbooks nach Bedarf zu aktualisieren.
-   - Bestimmen Sie, ob Änderungen in Ihrer Sicherheitslage erforderlich sind, und ergreifen Sie die Schritte, um sie zu implementieren.
-
-Hier finden Sie eine Zusammenfassung des grundlegenden Prozesses.
-
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-process.png" alt-text="Grundlegendes Verfahren zur Untersuchung von Vorfällen":::
-
 ## <a name="next-step"></a>Nächster Schritt
 
-Nachdem Sie ermittelt haben, welcher Vorfall die höchste Priorität erfordert, wählen Sie ihn aus, und beginnen Sie mit der [Untersuchung.](investigate-incidents.md)
+Nachdem Sie ermittelt haben, welcher Vorfall die höchste Priorität erfordert, wählen Sie ihn aus, und beginnen Sie mit der [Analyse.](investigate-incidents.md)
 
 ## <a name="see-also"></a>Siehe auch
 - [Übersicht über Vorfälle](incidents-overview.md)
-- [Untersuchen von Vorfällen](investigate-incidents.md)
+- [Analysieren von Vorfällen](investigate-incidents.md)
 - [Verwalten von Vorfällen](manage-incidents.md)

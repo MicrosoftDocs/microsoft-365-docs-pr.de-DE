@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Vorfällen in Microsoft 365 Defender
 description: Erfahren Sie, wie Sie einen Status zuweisen und aktualisieren können,
-keywords: Vorfall, Vorfälle, Alert, korrelierte Alerts, zuweisen, aktualisieren, Status, verwalten, Klassifizierung, Microsoft, 365, m365
+keywords: Incident, Incidents, analyze, response, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: da5a2190a53dfe7f8dd0cc3cf7b410af92ca4ec5
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5f66189979f401430353f4c15978a85276b48840
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861731"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939754"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Verwalten von Vorfällen in Microsoft 365 Defender
 
@@ -61,7 +61,7 @@ Sie können diesen Bereich über **den** Link Vorfall verwalten auf der folgende
 - Eigenschaftenbereich eines Vorfalls in der Vorfallwarteschlange.
 - **Zusammenfassungsseite** eines Vorfalls.
 
-In Fällen, in denen Sie während der Untersuchung Warnungen von einem Vorfall zu einem anderen verschieben möchten, können Sie dies auch auf der Registerkarte Warnungen tun, wodurch ein größerer oder kleinerer Vorfall mit allen relevanten Warnungen erstellt wird. 
+In Fällen, in denen Sie während der Analyse Warnungen von einem Vorfall  zu einem anderen verschieben möchten, können Sie dies auch auf der Registerkarte Warnungen tun, wodurch ein größerer oder kleinerer Vorfall erstellt wird, der alle relevanten Warnungen enthält.
 
 ## <a name="edit-the-incident-name"></a>Bearbeiten des Vorfallnamens
 
@@ -102,4 +102,4 @@ Sie können einem Vorfall mit dem Feld Kommentar mehrere **Kommentare** hinzufü
 
 - [Übersicht über Vorfälle](incidents-overview.md)
 - [Priorisieren von Vorfällen](incident-queue.md)
-- [Untersuchen von Vorfällen](investigate-incidents.md)
+- [Analysieren von Vorfällen](investigate-incidents.md)

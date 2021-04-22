@@ -1,7 +1,7 @@
 ---
 title: Geräteprofil im Microsoft 365-Sicherheitsportal
 description: Anzeigen der Risiko- und Risikostufen für ein Gerät in Ihrer Organisation. Analysieren Sie frühere und aktuelle Bedrohungen, und schützen Sie das Gerät mit den neuesten Updates.
-keywords: Security, Malware, Microsoft 365, M365, Microsoft Threat Protection, MTP, Security Center, Microsoft Defender ATP, Office 365 ATP, Azure ATP, Geräteseite, Geräteprofil, Computerseite, Computerprofil
+keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Microsoft 365 Defender, Security Center, Microsoft Defender for Endpoint, Microsoft Defender für Office 365, Microsoft Defender for Identity, Geräteseite, Geräteprofil, Computerseite, Computerprofil
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: c51c002d263452142a1bcf6fc5603d6ec4ef4cf7
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8e2788fd9163a27b41bd3788facf5fc9623b0543
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197969"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935665"
 ---
 # <a name="device-profile-page"></a>Seite "Geräteprofil"
 
@@ -181,6 +181,6 @@ Wenn Sie ein Element auswählen, wird ein Flyout geöffnet, das mit dem Update v
 ## <a name="related-topics"></a>Verwandte Themen
 
 * [Übersicht über Microsoft 365 Defender](microsoft-365-defender.md)
-* [Aktivieren von Microsoft 365 Defender](m365d-enable.md)
+* [Microsoft 365 Defender aktivieren](m365d-enable.md)
 * [Untersuchen von Entitäten auf Geräten mithilfe von Liveantworten](../defender-endpoint/live-response.md)
 * [Automatisierte Untersuchung und Reaktion (AIR) in Office 365](../office-365-security/office-365-air.md)

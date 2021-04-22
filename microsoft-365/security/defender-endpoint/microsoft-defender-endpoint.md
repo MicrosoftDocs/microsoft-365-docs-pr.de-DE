@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender für Endpunkt
 description: Microsoft Defender for Endpoint ist eine Sicherheitsplattform für Unternehmensendpunkte, die bei der Verteidigung vor erweiterten beständigen Bedrohungen hilft.
-keywords: Einführung in Microsoft Defender for Endpoint, Einführung in Microsoft Defender Advanced Threat Protection, Einführung in Microsoft Defender for Endpoint, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Computerverhaltenssensor, Cloudsicherheit, Analyse, Bedrohungsintelligenz, Reduzierung der Angriffsfläche, Schutz der nächsten Generation, automatisierte Untersuchung und Behebung, Microsoft Threat Experts, Secure Score, Advanced Hunting, Microsoft Threat Protection, Cyber Threat Hunting
+keywords: Einführung in Microsoft Defender for Endpoint, Einführung in Microsoft Defender for Endpoint, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Computerverhaltenssensor, Cloudsicherheit, Analyse, Bedrohungsintelligenz, Reduzierung der Angriffsfläche, Schutz der nächsten Generation, automatisierte Untersuchung und Behebung, Microsoft Threat Experts, Secure Score, Advanced Hunting, Microsoft 365 Defender, Cyber Threat Hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: adc7d780c1af73d8cb4fe229720ac2ed74f90251
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 57d4506e32db5defe29f2d0e59f72bd4c1998310
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861827"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935929"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender für Endpunkt
 
@@ -49,7 +49,7 @@ Defender for Endpoint verwendet die folgende Kombination aus Technologie, die in
 
 -   Bedrohungsintelligenz: Generiert von Microsoft-Jägern, Sicherheitsteams und erweitert durch Bedrohungsintelligenz, die von Partnern bereitgestellt wird, ermöglicht die Bedrohungsintelligenz Defender for Endpoint, Angreifertools, -techniken und -verfahren zu identifizieren und Warnungen zu generieren, wenn sie in gesammelten Sensordaten beobachtet werden.
 
-<center><h2>Microsoft Defender for Endpoint</center></h2>
+<center><h2>Microsoft Defender für Endpunkt</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>Sicherheitsrisikoverwaltung & Bedrohungen</b></center></a></td>
@@ -64,7 +64,7 @@ Defender for Endpoint verwendet die folgende Kombination aus Technologie, die in
 <a href="#apis"><center><b>Zentrale Konfiguration und Verwaltung, APIs</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft Threat Protection</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -89,7 +89,7 @@ Der Satz von Funktionen zur Reduzierung der Angriffsfläche stellt die erste Ver
 
 <a name="ngp"></a>
 
-**[Schutz der nächsten Generation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
+**[Schutzlösungen der nächsten Generation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 Zur weiteren Verstärkung des Sicherheitsperimeters Ihres Netzwerks verwendet Microsoft Defender for Endpoint den Schutz der nächsten Generation, der alle Arten neuer Bedrohungen abfangen soll.
 
 <a name="edr"></a>
@@ -126,7 +126,7 @@ Integrieren Sie Microsoft Defender for Endpoint in Ihre vorhandenen Workflows.
 
 **[Integration in Microsoft-Lösungen](threat-protection-integration.md)** <br>
 Defender for Endpoint kann direkt in verschiedene Microsoft-Lösungen integriert werden, darunter:
-- Azure Security Center
+- Azure Defender
 - Azure Sentinel
 - Intune
 - Microsoft Cloud App Security

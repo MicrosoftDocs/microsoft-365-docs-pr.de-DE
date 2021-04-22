@@ -2,7 +2,7 @@
 title: Hello World for Microsoft Defender for Endpoint API
 ms.reviewer: ''
 description: Erstellen Sie einen api-Aufruf im "Hello world"-Stil für die Microsoft Defender for Endpoint-API.
-keywords: apis, supported apis, advanced hunting, query
+keywords: apis, supported apis, advanced hunting, query, microsoft defender atp, microsoft defender for endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f4571607181fc96d87934ff60801643f5969e7e9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 08188acf1209ea2247a0eb09d722ce74c4540254
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929251"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939612"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender für Endpunkt-API – Hello World 
 

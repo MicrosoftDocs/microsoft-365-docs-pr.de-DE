@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Onlinebesprechungen für Ihr Unternehmen hosten.
-ms.openlocfilehash: dffdf847962962b2f2e9daf70dae210abbb7614b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 893a03b064b6f73711b69a61c90cd40023241c48
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580510"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939518"
 ---
 # <a name="host-online-meetings-for-your-business"></a>Hosten von Onlinebesprechungen für Ihr Unternehmen
 
@@ -35,9 +35,9 @@ Sie müssen die kostenlose [](https://support.microsoft.com/office/6d79a648-6913
 
 Wenn Sie häufig eng an Projekten mit einem Client, [](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7) Kunden oder Partner zusammenarbeiten, sollten Sie die Erstellung eines Teams für Ihre Kunden in Betracht ziehen, um sie einfach zu Besprechungen einzuläten und Unterhaltungen zu führen, Dateien gemeinsam zu verwenden und Projekte in Microsoft Teams nachverfolgt zu werden.
 
-Laden Sie eine Infografik herunter, um eine schnelle Übersicht über den Beitritt oder das Hosten einer Online-Besprechung mit Microsoft Teams zu erhalten.
+Laden Sie eine Infografik herunter, um eine schnelle Übersicht über die Teilnahme oder das Hosten einer Online-Besprechung mit Microsoft Teams zu erhalten:
 
-Laden Sie eine Infografik herunter, um eine schnelle Übersicht über den Beitritt oder das Hosten einer Online-Besprechung mit Microsoft Teams zu erhalten. [PDF](https://go.microsoft.com/fwlink/?linkid=2078712)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
+[PDF](https://go.microsoft.com/fwlink/?linkid=2078712)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
 
 ## <a name="1-schedule-a-meeting"></a>1. Planen einer Besprechung
 

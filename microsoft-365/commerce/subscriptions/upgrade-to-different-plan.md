@@ -20,19 +20,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie ein Upgrade auf einen anderen Plan durchführen.
-ms.openlocfilehash: 79ca18df28505c457e085dbd73c2fbd04eff53ca
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c8d71e6ab79bfea35334f2c034dbc13f60397227
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580978"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939172"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Zu einem anderen Plan wechseln
 
 Wenn sich Ihr Unternehmen ändert oder Sie weitere Features benötigen, können Sie Pläne aktualisieren. Die einfachste Möglichkeit besteht in der Verwendung der Registerkarte **Upgrade** im Admin Center. Die Verwendung der Registerkarte **Upgrade** wird jedoch nicht in allen Situationen unterstützt. In einigen Fällen können Sie Pläne möglicherweise manuell ändern.
-
-> [!NOTE]
-> Dieser Artikel gilt für das neue Admin Center. Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen. Informationen zum Artikel über das alte Admin Center finden Sie unter [Switch to a different Microsoft 365 for Business plan](switch-to-a-different-plan.md).
 
 ## <a name="use-the-upgrade-tab"></a>Verwenden der Registerkarte Upgrade
 

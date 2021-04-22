@@ -1,7 +1,7 @@
 ---
 title: Schemareferenz für erweiterte Suche
 description: Erfahren Sie mehr über die Tabellen im erweiterten Suchschema, um die Daten zu verstehen, auf die Sie Abfragen zur Bedrohungssuche ausführen können.
-keywords: Erweiterte Suche, Bedrohungssuche, Suche nach Cyberbedrohungen, Microsoft Defender for Endpoint, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Daten
+keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Mdatp, Microsoft Defender Atp, Microsoft Defender für Endpunkt, wdatp-Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Daten
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: b35cc32f776083b58bc6467be43508a805d92d9c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: fa111197dfd68cfcca40ce8a39befe20b97d1be8
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934345"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939636"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Verstehen des erweiterten Jagdschemas in Microsoft Defender for Endpoint
 

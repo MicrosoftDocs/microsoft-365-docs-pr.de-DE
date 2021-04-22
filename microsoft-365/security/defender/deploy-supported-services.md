@@ -1,7 +1,7 @@
 ---
 title: Bereitstellen von Diensten, die von Microsoft 365 Defender unterstützt werden
 description: Erfahren Sie mehr über die Microsoft-Sicherheitsdienste, die von Microsoft 365 Defender integriert werden können, deren Lizenzierungsanforderungen und Bereitstellungsverfahren
-keywords: Deploy, licenses, supported services, provisioning, configuration Microsoft Threat Protection, M365, license eligibility, Microsoft Defender ATP, MDATP, Office 365 ATP, Azure ATP, Microsoft Cloud App Security, MCAS, advanced threat protection, E5, A5, EMS
+keywords: Deploy, licenses, supported services, provisioning, configuration Microsoft 365 Defender, M365, license eligibility, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Cloud App Security, MCAS, E5, A5, EMS
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 434c318be404ffb04cac7a05664c8f001bb46507
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4e1b36423974e46a485727f7e1f158dc6163d834
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198861"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935677"
 ---
 # <a name="deploy-supported-services"></a>Bereitstellen unterstützter Dienste
 
@@ -87,7 +87,7 @@ Nachdem Sie die unterstützten Dienste bereitgestellt haben, [aktivieren Sie Mic
 ## <a name="related-topics"></a>Verwandte Themen
 
 - [Übersicht über Microsoft 365 Defender](microsoft-365-defender.md)
-- [Aktivieren von Microsoft 365 Defender](m365d-enable.md)
+- [Microsoft 365 Defender aktivieren](m365d-enable.md)
 - [Übersicht über Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Übersicht über Microsoft Defender for Office 365](../office-365-security/defender-for-office-365.md)
 - [Übersicht über Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)

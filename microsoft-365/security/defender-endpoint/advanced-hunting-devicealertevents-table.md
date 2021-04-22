@@ -1,7 +1,7 @@
 ---
 title: DeviceAlertEvents-Tabelle im schema der erweiterten Suche
 description: Informationen zu Benachrichtigungsgenerierungsereignissen in der DeviceAlertEvents-Tabelle des schemas für die erweiterte Suche
-keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft Defender for Endpoint, search, query, telemetry, schema reference, kusto, table, column, data type, description, DeviceAlertEvents, alert, severity, category
+keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Mdatp, microsoft defender atp, microsoft defender for endpoint, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, DeviceAlertEvents, alert, severity, category
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: bb2350fed5fadee359695743989e02a3b3e44fb2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f4f6ecdc57d8602f49fb389c741c5e01dc1b41b5
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935341"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939648"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
