@@ -1,7 +1,7 @@
 ---
 title: DeviceLogonEvents-Tabelle im schema der erweiterten Suche
 description: Weitere Informationen zu Authentifizierungs- oder Anmeldeereignissen finden Sie in der DeviceLogonEvents-Tabelle des schemas für die erweiterte Suche.
-keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, logonevents, DeviceLogonEvents, authentication, logon, sign in
+keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, logonevents, DeviceLogonEvents, authentication, logon, sign in
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 781013878ee0aa097780ca6bb646cb956c93149d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 62e0179f4a8c7b45d0c9743d2f133f9a10fb4c24
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498543"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934057"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -56,7 +56,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `AccountSid` | Zeichenfolge | Security Identifier (SID) des Kontos |
 | `Protocol` | Zeichenfolge | Während der Kommunikation verwendetes Protokoll |
 | `FailureReason` | Zeichenfolge | Informationen zur Erklärung, warum die aufgezeichnete Aktion fehlgeschlagen ist |
-| `IsLocalAdmin` | boolean | Boolescher Indikator, ob der Benutzer ein lokaler Administrator auf dem Computer ist |
+| `IsLocalAdmin` | Boolescher Wert | Boolescher Indikator, ob der Benutzer ein lokaler Administrator auf dem Computer ist |
 | `LogonId` | Zeichenfolge | Bezeichner für eine Anmeldesitzung. Dieser Bezeichner ist auf demselben Computer nur zwischen Neustarts eindeutig |
 | `RemoteDeviceName` | Zeichenfolge | Name des Computers, der einen Remotevorgang auf dem betroffenen Computer ausgeführt hat. Je nach gemeldeten Ereignis kann es sich bei diesem Namen um einen vollqualifizierten Domänennamen (Fully Qualified Domain Name, FQDN), einen NetBIOS-Namen oder einen Hostnamen ohne Domäneninformationen geben. |
 | `RemoteIP` | string | IP-Adresse, mit der eine Verbindung hergestellt wurde |

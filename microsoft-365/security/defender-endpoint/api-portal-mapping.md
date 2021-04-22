@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP-Erkennungen von API-Feldern
+title: Microsoft Defender for Endpoint Detections-API-Felder
 description: Verstehen der Zuordnung der Erkennungs-API-Felder zu den Werten im Microsoft Defender Security Center
 keywords: Erkennungen, Erkennungsfelder, Felder, API, Felder, Pullerkennungen, Rest-API, Anforderung, Antwort
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e304d731409c4cd0fac722d492b3fab5ed28fd35
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: d6d2ad9abe88d0099b58dd2df486120082bb22c1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164881"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933637"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Microsoft Defender for Endpoint Detections-API-Felder
 
@@ -51,7 +51,7 @@ Feldnummern entsprechen den Zahlen in den folgenden Bildern.
 > 
 > | Portalbeschriftung   | NAME des SIEM-Felds           | ArcSight-Feld      | Beispielwert                                                                      | Beschreibung                                                                                                                                                                    |
 > |------------------|---------------------------|---------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-> | 1                | AlertTitle                | Name                | Microsoft Defender AV erkannte Schadsoftware mit hohem Schweregrad "Mikatz" | Wert, der für jede Erkennung verfügbar ist.                                                                                                                                               |
+> | 1                | AlertTitle                | name                | Microsoft Defender AV erkannte Schadsoftware mit hohem Schweregrad "Mikatz" | Wert, der für jede Erkennung verfügbar ist.                                                                                                                                               |
 > | 2                | Severity                  | deviceSeverity      | Hoch                                                                             | Wert, der für jede Erkennung verfügbar ist.                                                                                                                                               |
 > | 3                | Kategorie                  | deviceEventCategory | Schadsoftware                                                               | Wert, der für jede Erkennung verfügbar ist.                                                                                                                                               |
 > | 4                 | Erkennungsquelle                    | sourceServiceName   | Antivirus                                                                 | Microsoft Defender Antivirus oder Defender for Endpoint. Wert, der für jede Erkennung verfügbar ist.                                                                                         |
@@ -105,4 +105,4 @@ Feldnummern entsprechen den Zahlen in den folgenden Bildern.
 - [Aktivieren der SIEM-Integration in Microsoft Defender for Endpoint](enable-siem-integration.md)
 - [Konfigurieren von ArcSight zum Ziehen von Microsoft Defender for Endpoint-Erkennungen](configure-arcsight.md)
 - [Abrufen von Microsoft Defender for Endpoint-Erkennungen mithilfe der REST-API](pull-alerts-using-rest-api.md)
-- [Problembehandlung bei der Integration von SIEM-Tools](troubleshoot-siem.md)
+- [Behandeln von Problemen mit der Integration von SIEM-Tools](troubleshoot-siem.md)

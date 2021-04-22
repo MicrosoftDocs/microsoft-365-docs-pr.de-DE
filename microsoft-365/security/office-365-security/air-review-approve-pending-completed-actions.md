@@ -1,6 +1,6 @@
 ---
 title: Überprüfen und Verwalten von Korrekturaktionen in Microsoft Defender für Office 365
-keywords: AIR, AutoIR, ATP, automatisiert, Untersuchung, Reaktion, Behebung, Bedrohungen, erweitert, Bedrohung, Schutz
+keywords: AIR, AutoIR, Microsoft Defender for Endpoint, automatisiert, Untersuchung, Antwort, Korrektur, Bedrohungen, erweitert, Bedrohung, Schutz
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -19,12 +19,12 @@ description: Erfahren Sie mehr über Korrekturaktionen in automatisierten Unters
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: 61e9df45419cc73dae27b86dad47e1938183593d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ce6cfd920845f5a85dbc7d7d48cfefdd6209ec3a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204047"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933649"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Überprüfen und Verwalten von Korrekturaktionen in Office 365
 

@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren und Überprüfen von Ausschlüssen für Microsoft Defender for Endpoint unter Linux
 description: Bereitstellen und Überprüfen von Ausschlüssen für Microsoft Defender for Endpoint unter Linux. Ausschlüsse können für Dateien, Ordner und Prozesse festgelegt werden.
-keywords: microsoft, defender, atp, linux, exclusions, scans, antivirus
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, exclusions, scans, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56fe152532b77f7f04c9edd52998fea83493adfe
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 8e861055067a55630da458e87b7376a607dc69c4
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903940"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934297"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Konfigurieren und Überprüfen von Ausschlüssen für Microsoft Defender for Endpoint unter Linux
 
@@ -38,18 +38,18 @@ ms.locfileid: "51903940"
 Dieser Artikel enthält Informationen zum Definieren von Ausschlüssen, die für Scans bei Bedarf gelten, sowie Zum Schutz und Überwachung in Echtzeit.
 
 > [!IMPORTANT]
-> Die in diesem Artikel beschriebenen Ausschlüsse gelten nicht für andere Defender for Endpoint for Linux-Funktionen, einschließlich Endpunkterkennung und -reaktion (EDR). Dateien, die Sie mithilfe der in diesem Artikel beschriebenen Methoden ausschließen, können weiterhin EDR-Warnungen und andere Erkennungen auslösen.
+> Die in diesem Artikel beschriebenen Ausschlüsse gelten nicht für andere Defender for Endpoint on Linux-Funktionen, einschließlich Endpunkterkennung und -reaktion (EDR). Dateien, die Sie mithilfe der in diesem Artikel beschriebenen Methoden ausschließen, können weiterhin EDR-Warnungen und andere Erkennungen auslösen.
 
-Sie können bestimmte Dateien, Ordner, Prozesse und prozessge öffnende Dateien aus Defender for Endpoint für Linux-Scans ausschließen.
+Sie können bestimmte Dateien, Ordner, Prozesse und prozessge öffnende Dateien aus Defender for Endpoint auf Linux-Scans ausschließen.
 
-Ausschlüsse können hilfreich sein, um fehlerhafte Erkennungen für Dateien oder Software zu vermeiden, die eindeutig oder an Ihre Organisation angepasst sind. Sie können auch hilfreich sein, um Leistungsprobleme zu mildern, die von Defender for Endpoint für Linux verursacht werden.
+Ausschlüsse können hilfreich sein, um fehlerhafte Erkennungen für Dateien oder Software zu vermeiden, die eindeutig oder an Ihre Organisation angepasst sind. Sie können auch hilfreich sein, um Leistungsprobleme zu mildern, die von Defender for Endpoint unter Linux verursacht werden.
 
 > [!WARNING]
-> Durch das Definieren von Ausschlüssen wird der von Defender for Endpoint für Linux gebotene Schutz gesenkt. Sie sollten immer die Risiken bewerten, die mit der Implementierung von Ausschlüssen verbunden sind, und Sie sollten nur Dateien ausschließen, von deren Ausführung Sie sicher sind, dass sie nicht bösartig sind.
+> Durch das Definieren von Ausschlüssen wird der von Defender for Endpoint unter Linux gebotene Schutz gesenkt. Sie sollten immer die Risiken bewerten, die mit der Implementierung von Ausschlüssen verbunden sind, und Sie sollten nur Dateien ausschließen, von deren Ausführung Sie sicher sind, dass sie nicht bösartig sind.
 
 ## <a name="supported-exclusion-types"></a>Unterstützte Ausschlusstypen
 
-In der folgenden Tabelle sind die Ausschlusstypen aufgeführt, die von Defender for Endpoint für Linux unterstützt werden.
+In der folgenden Tabelle sind die Ausschlusstypen aufgeführt, die von Defender for Endpoint unter Linux unterstützt werden.
 
 Ausschluss | Definition | Beispiele
 ---|---|---
@@ -72,7 +72,7 @@ Platzhalter | Beschreibung | Beispiel | Übereinstimmungen | Nicht übereinstimm
 
 ### <a name="from-the-management-console"></a>Über die Verwaltungskonsole
 
-Weitere Informationen zum Konfigurieren von Ausschlüssen von Puppet, Ansible oder einer anderen Verwaltungskonsole finden Sie unter [Set preferences for Defender for Endpoint for Linux](linux-preferences.md).
+Weitere Informationen zum Konfigurieren von Ausschlüssen von Puppet, Ansible oder einer anderen Verwaltungskonsole finden Sie unter [Set preferences for Defender for Endpoint on Linux](linux-preferences.md).
 
 ### <a name="from-the-command-line"></a>Über die Befehlszeile
 
@@ -152,7 +152,7 @@ Ersetzen Sie im folgenden Bash-Codeausschnitt durch eine Datei, die `test.txt` I
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-Wenn Defender for Endpoint für Linux Schadsoftware meldet, funktioniert die Regel nicht. Wenn kein Bericht über Schadsoftware vorhanden ist und die heruntergeladene Datei vorhanden ist, funktioniert der Ausschluss. Sie können die Datei öffnen, um zu bestätigen, dass der Inhalt mit den auf der [EICAR-Testdateiwebsite beschriebenen Inhalten identisch ist.](http://2016.eicar.org/86-0-Intended-use.html)
+Wenn Defender for Endpoint unter Linux Schadsoftware meldet, funktioniert die Regel nicht. Wenn kein Bericht über Schadsoftware vorhanden ist und die heruntergeladene Datei vorhanden ist, funktioniert der Ausschluss. Sie können die Datei öffnen, um zu bestätigen, dass der Inhalt mit den auf der [EICAR-Testdateiwebsite beschriebenen Inhalten identisch ist.](http://2016.eicar.org/86-0-Intended-use.html)
 
 Wenn Sie keinen Internetzugriff haben, können Sie eine eigene EICAR-Testdatei erstellen. Schreiben Sie die EICAR-Zeichenfolge mit dem folgenden Bash-Befehl in eine neue Textdatei:
 

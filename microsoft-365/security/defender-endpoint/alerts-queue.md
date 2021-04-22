@@ -1,6 +1,6 @@
 ---
-title: Anzeigen und Organisieren der Microsoft Defender ATP-Benachrichtigungswarteschlange
-description: Erfahren Sie, wie die Microsoft Defender ATP-Benachrichtigungswarteschlangen funktionieren und wie Listen von Warnungen sortiert und gefiltert werden.
+title: Anzeigen und Organisieren der Microsoft Defender for Endpoint Alerts-Warteschlange
+description: Erfahren Sie, wie die Microsoft Defender for Endpoint-Benachrichtigungswarteschlangen funktionieren und wie Sie Listen von Warnungen sortieren und filtern.
 keywords: Warnungen, Warteschlangen, Benachrichtigungswarteschlange, Sortieren, Sortieren, Sortieren, Filtern, Verwalten von Warnungen, neu, in Bearbeitung, aufgelöst, neueste, Zeit in der Warteschlange, Schweregrad, Zeitraum, Microsoft Threat Experts Warnungen
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: e1c85db5afac70ec4f2520eed55dcc4f3773fd03
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 48a3ff8dba5bccd62d7d43b295c136a814056a15
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067928"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934333"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Anzeigen und Organisieren der Microsoft Defender for Endpoint Alerts-Warteschlange
 
@@ -61,7 +61,7 @@ Warnungsschweregrad | Beschreibung
 Hoch </br>(Rot) | Warnungen, die häufig im Zusammenhang mit erweiterten beständigen Bedrohungen (Advanced Persistent Threats, APT) angezeigt werden. Diese Warnungen weisen auf ein hohes Risiko aufgrund des Schweregrads des Schadens hin, den sie auf Geräten verursachen können. Einige Beispiele sind: Aktivitäten zum Diebstahl von Anmeldeinformationen, Ransomware-Aktivitäten, die keinem Gruppen zugeordnet sind, Manipulationen an Sicherheitssensoren oder schädliche Aktivitäten, die auf einen menschlichen Widersacher hinweisen.
 Mittel </br>(Orange) | Warnungen aus Verhaltensmustern nach der Erkennung und Reaktion von Endpunkten, die Teil einer erweiterten beständigen Bedrohung (Advanced Persistent Threat, APT) sein können. Dies umfasst beobachtete Verhaltensweisen, die typisch für Angriffsphasen, anomale Registrierungsänderung, Ausführung verdächtiger Dateien usw. sind. Obwohl einige möglicherweise Teil interner Sicherheitstests sind, ist eine Untersuchung erforderlich, da sie auch Teil eines erweiterten Angriffs sein kann.
 Niedrig </br>(Gelb) | Warnungen zu Bedrohungen, die mit verbreiteter Schadsoftware verbunden sind. Beispielsweise Hacktools, Nicht-Schadsoftware-Hacktools, z. B. das Ausführen von Explorationsbefehlen, Löschen von Protokollen usw., die häufig keine erweiterte Bedrohung für die Organisation angeben. Es kann auch aus einem isolierten Sicherheitstool stammen, das von einem Benutzer in Ihrer Organisation getestet wurde.
-Informational </br>(Grau) | Warnungen, die möglicherweise nicht als schädlich für das Netzwerk betrachtet werden, aber das Sicherheitsbewusstsein der Organisation für potenzielle Sicherheitsprobleme erhöhen können.
+Zur Information </br>(Grau) | Warnungen, die möglicherweise nicht als schädlich für das Netzwerk betrachtet werden, aber das Sicherheitsbewusstsein der Organisation für potenzielle Sicherheitsprobleme erhöhen können.
 
 #### <a name="understanding-alert-severity"></a>Grundlegendes zum Schweregrad von Warnungen
 

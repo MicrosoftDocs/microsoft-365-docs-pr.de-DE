@@ -1,7 +1,7 @@
 ---
 title: Onboarding von Geräten in den Microsoft Defender for Endpoint-Dienst
 description: Onboarding von Windows 10-Geräten, -Servern, Nicht-Windows-Geräten und Erfahren Sie, wie Sie einen Erkennungstest ausführen.
-keywords: onboarding, microsoft defender for endpoint onboarding, windows atp onboarding, sccm, group policy, mdm, local script, detection test
+keywords: Onboarding, Microsoft Defender for Endpoint-Onboarding, sccm, Gruppenrichtlinie, MDM, lokales Skript, Erkennungstest
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4aa3e30f34e7d9dc362cc0bbb277aaee5834b4fe
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 05cc5770df5bb05687bb8be69ad89a7abd6875ed
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861375"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933553"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>Onboarding von Geräten in den Microsoft Defender for Endpoint-Dienst
 

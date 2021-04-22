@@ -1,6 +1,6 @@
 ---
 title: Korrekturaktionen in Microsoft Defender für Office 365
-keywords: AIR, AutoIR, ATP, automatisiert, Untersuchung, Reaktion, Behebung, Bedrohungen, erweitert, Bedrohung, Schutz
+keywords: AIR, AutoIR, Microsoft Defender for Endpoint, automatisiert, Untersuchung, Antwort, Korrektur, Bedrohungen, erweitert, Bedrohung, Schutz
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fa4e2d6656ec430edc221ab94cac494e1ec0ca98
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 37953ad1125d5dad10eb5c6933b1ed9931d5de60
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204048"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933661"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Korrekturaktionen in Microsoft Defender für Office 365
 
@@ -55,7 +55,7 @@ Microsoft Defender für Office 365 umfasst Korrekturaktionen zur Behebung versch
 |:---|:---|:---|
 |E-Mail senden|Schadsoftware|Soft delete email/cluster <p> Wenn mehr als eine Handvoll E-Mail-Nachrichten in einem Cluster Schadsoftware enthält, wird der Cluster als bösartig betrachtet.|
 |E-Mail senden|Bösartige URL<br/>(Eine schädliche URL wurde von sicheren [Links erkannt.)](safe-links.md)|Soft delete email/cluster <br/>Blockieren der URL (Überprüfung der Uhrzeit des Klicks)<p> E-Mails, die eine schädliche URL enthalten, werden als schädlich betrachtet.|
-|E-Mail senden|Phish|Soft delete email/cluster <p> Wenn mehr als eine Handvoll E-Mail-Nachrichten in einem Cluster Phishingversuche enthält, wird der gesamte Cluster als Phishingversuch betrachtet.|
+|E-Mail senden|Phishing|Soft delete email/cluster <p> Wenn mehr als eine Handvoll E-Mail-Nachrichten in einem Cluster Phishingversuche enthält, wird der gesamte Cluster als Phishingversuch betrachtet.|
 |E-Mail senden|Zapped Phish <br>(E-Mail-Nachrichten wurden zugestellt und dann [abgezapft.)](zero-hour-auto-purge.md)|Soft delete email/cluster <p>Berichte stehen zum Anzeigen von gezapften Nachrichten zur Verfügung. [Sehen Sie, ob ZAP eine Nachricht und FAQs verschoben hat.](zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message)|
 |E-Mail senden|Verpasste Phishing-E-Mails, [die von](enable-the-report-message-add-in.md) einem Benutzer gemeldet wurden|[Automatisierte Untersuchung, ausgelöst durch den Bericht des Benutzers](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
 |E-Mail senden|Volumenanomalie <br> (Die letzten E-Mail-Mengen überschreiten die vorherigen 7-10 Tage für übereinstimmende Kriterien.)|Eine automatisierte Untersuchung führt nicht zu einer bestimmten ausstehenden Aktion. <p>Volume anomaly is not a clear threat, but is merely an indication of larger email volumes in recent days compared to the last 7-10 days. <p>Obwohl ein hohes E-Mail-Volumen auf potenzielle Probleme hinweisen kann, ist eine Bestätigung in Bezug auf böswillige Urteile oder eine manuelle Überprüfung von E-Mail-Nachrichten/Clustern erforderlich. Weitere [Informationen finden Sie unter Suchen verdächtiger E-Mails, die zugestellt wurden.](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered)|

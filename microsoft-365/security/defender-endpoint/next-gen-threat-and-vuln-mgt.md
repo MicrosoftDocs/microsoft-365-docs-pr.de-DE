@@ -1,7 +1,7 @@
 ---
 title: Bedrohungs- und Sicherheitsrisikoverwaltung
 description: Diese neue Funktion verwendet einen spielveränderungsbasierten ansatz für die Ermittlung, Priorisierung und Behebung von Endpunktrisiken und Fehlkonfigurationen.
-keywords: Threat & Vulnerability Management, Threat and Vulnerability Management, MDATP TVM, MDATP-TVM, Vulnerability Management, Vulnerability Assessment, Threat and Vulnerability Scanning, Secure Configuration Assessment, microsoft defender for endpoint, microsoft defender atp, endpoint vulnerabilities, next generation
+keywords: Threat & Vulnerability Management, Threat and Vulnerability Management, Microsoft Defender for Endpoint TVM, Microsoft Defender for Endpoint-TVM, Vulnerability Management, Vulnerability Assessment, Threat and Vulnerability Scanning, Secure Configuration Assessment, Microsoft Defender for Endpoint, endpoint vulnerabilities, next generation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: e9c575aa8968b8cab2c5d91b9fe0b1cb46b292d3
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 474b8f032d32668eaea3a477da013c2b8e74019b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860761"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934165"
 ---
 # <a name="threat-and-vulnerability-management"></a>Bedrohungs- und Sicherheitsrisikoverwaltung
 

@@ -1,7 +1,7 @@
 ---
 title: Gefährdungsergebnis im Bedrohungs- und Sicherheitsrisikomanagement
 description: Die Bewertung der Bedrohungs- und Sicherheitsrisikoverwaltung spiegelt wider, wie anfällig Ihre Organisation für Cybersicherheitsbedrohungen ist.
-keywords: Belichtungsergebnis, Mdatp-Belichtungsergebnis, Mdatp-TVM-Belichtungsergebnis, Unternehmensbelichtungsergebnis, Tvm-Organisationsbelichtungsergebnis, Bedrohungs- und Sicherheitsrisikoverwaltung, Microsoft Defender for Endpoint
+keywords: Exposure score, Microsoft Defender for Endpoint exposure score, Microsoft Defender for Endpoint tvm exposure score, organization exposure score, tvm organization exposure score, threat and vulnerability management, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34c3122b017b14605fdbb3358f31f73e26361a4d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: fcea240fe1dc0ce97a2800391320b04c39c84336
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500130"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934105"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>Belichtungsergebnis – Bedrohungs- und Sicherheitsrisikoverwaltung
 

@@ -1,7 +1,7 @@
 ---
 title: Automatisierungsebenen bei automatisierter Untersuchung und Behebung
 description: Erhalten Sie eine Übersicht über Automatisierungsstufen und deren Funktionsweise in Microsoft Defender for Endpoint
-keywords: automatisiert, Untersuchung, Ebene, Defender atp
+keywords: automatisiert, Untersuchung, Ebene, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: bb3e8c468983622d780ca185640c2816316bfd48
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 013e01e9f84cae01258afc6ba139b7b5ada5912f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165321"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934117"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Automatisierungsebenen in automatisierten Untersuchungs- und Behebungsfunktionen
 
@@ -49,7 +49,7 @@ In der folgenden Tabelle werden die einzelnen Automatisierungsebenen und deren F
 |Automatisierungsebene | Beschreibung|
 |:---|:---|
 |**Vollständig – Automatische Behebung von Bedrohungen** <br/>(wird auch als *vollautomatisierung bezeichnet*)| Bei vollständiger Automatisierung werden Korrekturaktionen automatisch ausgeführt. Alle ergriffenen Korrekturaktionen können im [Aktionscenter](auto-investigation-action-center.md) auf der Registerkarte **Verlauf angezeigt** werden. Bei Bedarf kann eine Korrekturaktion rückgängig gemacht werden.<br/><br/>**_Die vollständige_* Automatisierung wird empfohlen und ist standardmäßig für Mandanten ausgewählt, die am oder nach dem 16. August 2020 mit Microsoft Defender for Endpoint erstellt wurden, ohne dass noch keine Gerätegruppen definiert sind.*  |
-|**Semi – Genehmigung für alle Korrekturen erforderlich** <br/>(wird auch als *Semiautomatisierung bezeichnet*)| Bei dieser Stufe der Semiautomatisierung ist eine Genehmigung für *alle Korrekturmaßnahmen* erforderlich. Solche ausstehenden Aktionen können im [Aktionscenter](auto-investigation-action-center.md)auf der Registerkarte Ausstehend angezeigt **und genehmigt** werden.<br/><br/>*Diese Stufe der Semiautomatisierung wird standardmäßig für Mandanten ausgewählt, die vor dem 16. August 2020 mit Microsoft Defender ATP erstellt wurden, ohne dass Gerätegruppen definiert wurden.*|
+|**Semi – Genehmigung für alle Korrekturen erforderlich** <br/>(wird auch als *Semiautomatisierung bezeichnet*)| Bei dieser Stufe der Semiautomatisierung ist eine Genehmigung für *alle Korrekturmaßnahmen* erforderlich. Solche ausstehenden Aktionen können im [Aktionscenter](auto-investigation-action-center.md)auf der Registerkarte Ausstehend angezeigt **und genehmigt** werden.<br/><br/>*Diese Stufe der Semiautomatisierung wird standardmäßig für Mandanten ausgewählt, die vor dem 16. August 2020 mit Microsoft Defender for Endpoint erstellt wurden, ohne dass Gerätegruppen definiert wurden.*|
 |**Semi – Erfordert die Genehmigung für die Korrektur von Kernordnern** <br/>(auch eine Art *von Semiautomatisierung*)  | Bei dieser Stufe der Semiautomatisierung ist die Genehmigung für alle Korrekturaktionen erforderlich, die für Dateien oder ausführbare Dateien in Kernordnern erforderlich sind. Zu den Hauptordnern gehören Betriebssystemverzeichnissen, z. B. **Windows** ( `\windows\*` ).<br/><br/>Korrekturaktionen können automatisch für Dateien oder ausführbare Dateien ausgeführt werden, die sich in anderen Ordnern (nicht im Kern) befinden. <br/><br/>Ausstehende Aktionen für Dateien oder ausführbare Dateien in Kernordnern können im [Aktionscenter](auto-investigation-action-center.md)auf der Registerkarte **Ausstehend angezeigt und** genehmigt werden. <br/><br/>Aktionen, die für Dateien oder ausführbare Dateien in anderen Ordnern ausgeführt wurden, können im [Aktionscenter](auto-investigation-action-center.md)auf der Registerkarte **Verlauf angezeigt** werden. |
 |**Semi – Genehmigung für nicht temporäre Ordnerbehebung erforderlich** <br/>(auch eine Art *von Semiautomatisierung*)| Bei dieser Stufe der Semiautomatisierung ist eine Genehmigung für alle Korrekturaktionen erforderlich, die für Dateien oder ausführbare Dateien erforderlich sind, die sich *nicht* in temporären Ordnern befinden. <br/><br/>Temporäre Ordner können die folgenden Beispiele enthalten: <br/>- `\users\*\appdata\local\temp\*`<br/>- `\documents and settings\*\local settings\temp\*` <br/>- `\documents and settings\*\local settings\temporary\*`<br/>- `\windows\temp\*`<br/>- `\users\*\downloads\*`<br/>- `\program files\` <br/>- `\program files (x86)\*`<br/>- `\documents and settings\*\users\*`<br/><br/>Korrekturaktionen können automatisch für Dateien oder ausführbare Dateien ausgeführt werden, die sich in temporären Ordnern befinden. <br/><br/>Ausstehende Aktionen für Dateien oder ausführbare Dateien, die sich nicht in temporären Ordnern befinden, können im [Aktionscenter](auto-investigation-action-center.md)auf der Registerkarte **Ausstehend** angezeigt und genehmigt werden.<br/><br/>Aktionen, die für Dateien oder ausführbare Dateien in temporären Ordnern ausgeführt wurden, können im [Aktionscenter](auto-investigation-action-center.md)auf der Registerkarte Verlauf angezeigt und **genehmigt** werden.   |
 |**Keine automatisierte Antwort** <br/>(auch als keine *Automatisierung bezeichnet*) | Ohne Automatisierung wird die automatisierte Untersuchung nicht auf den Geräten Ihrer Organisation ausgeführt. Aus diesem Grund werden keine Korrekturaktionen als Ergebnis einer automatisierten Untersuchung ergriffen oder ausstehend. Je nachdem, wie Ihre Antiviren- und Schutzfunktionen der nächsten Generation konfiguriert [sind,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)können jedoch andere Bedrohungsschutzfeatures wirksam werden, z. B. schutz vor potenziell unerwünschten Anwendungen.<br/><br/>***Es wird *nicht empfohlen,* die Option "Keine** Automatisierung" zu verwenden, da dadurch die Sicherheitslage der Geräte Ihrer Organisation reduziert wird. [Erwägen Sie, Ihre Automatisierungsebene auf vollständige Automatisierung (oder zumindest semiautomatisierung) *](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups)zu setzen. |

@@ -1,7 +1,7 @@
 ---
 title: Adressiert falsch positive/negative Ergebnisse in Microsoft Defender für Endpunkt
 description: Erfahren Sie, wie Sie falsch positive oder falsch negative Ergebnisse in Microsoft Defender for Endpoint behandeln.
-keywords: Antivirus, Ausnahme, Ausschluss, Defender Atp, falsch positiv, falsch negativ, blockierte Datei, blockierte URL
+keywords: Antivirus, Ausnahme, Ausschluss, Microsoft Defender for Endpoint, falsch positiv, falsch negativ, blockierte Datei, blockierte URL
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: f2615cf5ec49c9df27472f04c367f30511e9c0cc
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 368de770f772dc75a366b2120c8824fda6a7ba11
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759870"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933589"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Adressiert falsch positive/negative Ergebnisse in Microsoft Defender für Endpunkt
 
@@ -338,11 +338,11 @@ Um nach Updates für Ihre Übermittlung zu suchen, melden Sie sich auf der [Micr
 
 Microsoft Defender for Endpoint bietet eine Vielzahl von Optionen, einschließlich der Möglichkeit, Einstellungen für verschiedene Features und Funktionen zu optimieren. Wenn Sie zahlreiche falsch positive Ergebnisse erhalten, überprüfen Sie unbedingt die Bedrohungsschutzeinstellungen Ihrer Organisation. Möglicherweise müssen Sie einige Anpassungen an:
 
-- [In der Cloud zugestellter Schutz](#cloud-delivered-protection)
+- [Aus der Cloud gelieferter Schutz](#cloud-delivered-protection)
 - [Behebung von potenziell unerwünschten Anwendungen](#remediation-for-potentially-unwanted-applications)
 - [Automatisierte Untersuchung und Behebung](#automated-investigation-and-remediation)
 
-### <a name="cloud-delivered-protection"></a>In der Cloud zugestellter Schutz
+### <a name="cloud-delivered-protection"></a>Aus der Cloud gelieferter Schutz
 
 Überprüfen Sie Ihre in der Cloud zugestellte Schutzstufe für Microsoft Defender Antivirus. Standardmäßig ist der in der Cloud zugestellte Schutz auf **Nicht** konfiguriert festgelegt, was einem normalen Schutzniveau für die meisten Organisationen entspricht. Wenn Ihr in der Cloud zugestellter Schutz auf **Hohe**, Hohe **+** oder **Nulltoleranz** festgelegt ist, wird möglicherweise eine höhere Anzahl falsch positiver Ergebnisse erreicht.
 

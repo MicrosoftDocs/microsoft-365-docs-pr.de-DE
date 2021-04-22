@@ -2,7 +2,7 @@
 title: Microsoft Defender für Endpoint auf Dem Mac
 ms.reviewer: ''
 description: Erfahren Sie, wie Sie Microsoft Defender for Endpoint auf Mac installieren, konfigurieren, aktualisieren und verwenden.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, catalina, mojave, mde for mac
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, catalina, mojave, mde for mac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 705b1fffbc38282441f66e0dc411cf09699cb3f9
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: b5af93e82f72bac900682b2e231453e448b267d9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903766"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934189"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender für Endpoint auf Dem Mac
 

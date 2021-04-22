@@ -1,7 +1,7 @@
 ---
 title: Untersuchen einer einer Warnung zugeordneten IP-Adresse
 description: Verwenden Sie die Untersuchungsoptionen, um die mögliche Kommunikation zwischen Geräten und externen IP-Adressen zu untersuchen.
-keywords: Untersuchen, Untersuchen, IP-Adresse, Warnung, Microsoft Defender Atp, externe IP
+keywords: Untersuchen, Untersuchen, IP-Adresse, Warnung, Microsoft Defender for Endpoint, externe IP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 003abd854e34bb5a9a05f675313ba6c4f6ce1d71
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: cb95deb890b52f0f5fde26a3a193181713b8ae5f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186041"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933829"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Untersuchen einer einer Microsoft Defender for Endpoint-Warnung zugeordneten IP-Adresse
 

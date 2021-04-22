@@ -1,7 +1,7 @@
 ---
 title: Behandeln von Leistungsproblemen für Microsoft Defender for Endpoint unter macOS
 description: Behandeln von Leistungsproblemen in Microsoft Defender for Endpoint unter macOS.
-keywords: microsoft, defender, atp, mac, performance
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8dfaf1dbf2c3742cc97060c7f9e811c83d0cb023
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 623717e7b1a3149dbccf07d32200820a7f9083cb
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698220"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934249"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Behandeln von Leistungsproblemen für Microsoft Defender for Endpoint unter macOS
 
@@ -32,7 +32,7 @@ ms.locfileid: "51698220"
 
 **Gilt für:**
 
-- [Microsoft Defender for Endpoint unter macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender für Endpunkt unter Mac OS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -66,7 +66,7 @@ Die folgenden Schritte können verwendet werden, um diese Probleme zu beheben un
 
 2. Öffnen Sie finder, und navigieren Sie zu   >  **Anwendungsprogramme**. Öffnen **Sie Aktivitätsüberwachung,** und analysieren Sie, welche Anwendungen die Ressourcen auf Ihrem System verwenden. Typische Beispiele sind Softwareupdater und Compiler.
 
-1. Um die Anwendungen zu finden, die die meisten Scans auslösen, können Sie von Defender for Endpoint für Mac gesammelte Echtzeitstatistiken verwenden.
+1. Um die Anwendungen zu finden, die die meisten Scans auslösen, können Sie Echtzeitstatistiken verwenden, die von Defender for Endpoint auf Mac gesammelt wurden.
 
       > [!NOTE]
       > Dieses Feature ist in Version 100.90.70 oder neuer verfügbar.

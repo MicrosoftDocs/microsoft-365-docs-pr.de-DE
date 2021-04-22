@@ -1,7 +1,7 @@
 ---
-title: Erleben von Microsoft Defender ATP durch simulierte Angriffe
-description: Führen Sie die bereitgestellten Simulationen des Angriffsszenarios aus, um zu erfahren, wie Microsoft Defender ATP Verstöße erkennen, untersuchen und darauf reagieren kann.
-keywords: wdatp, test, scenario, attack, simulation, simulated, diy, Microsoft Defender for Endpoint
+title: Erleben von Microsoft Defender for Endpoint durch simulierte Angriffe
+description: Führen Sie die bereitgestellten Simulationen des Angriffsszenarios aus, um zu erfahren, wie Microsoft Defender for Endpoint Verstöße erkennen, untersuchen und darauf reagieren kann.
+keywords: test, scenario, attack, simulation, simulated, diy, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/20/2018
 ms.technology: mde
-ms.openlocfilehash: b3fb862ac6e845ed4a3f5b72bae902f00c125b53
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 6ecbf98c81b1f68e42f39269809592fb446e6036
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498302"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934381"
 ---
 # <a name="experience-microsoft-defender-for-endpoint-through-simulated-attacks"></a>Erleben von Microsoft Defender for Endpoint durch simulierte Angriffe 
 
@@ -36,12 +36,12 @@ ms.locfileid: "51498302"
 >Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-abovefoldlink)
 
 >[!TIP]
->- Erfahren Sie mehr über die neuesten Verbesserungen in Microsoft Defender ATP: [Was ist neu in Defender for Endpoint?](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
+>- Erfahren Sie mehr über die neuesten Verbesserungen in Microsoft Defender for Endpoint: [Was ist neu in Defender for Endpoint?](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
 >- Defender for Endpoint hat in der kürzlichen MITRE-Evaluierung branchenführende Optik- und Erkennungsfunktionen gezeigt. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 Möglicherweise möchten Sie Defender for Endpoint nutzen, bevor Sie mehr als ein paar Geräte in den Dienst integrieren. Dazu können Sie kontrollierte Angriffssimulationen auf einigen Testgeräten ausführen. Nachdem Sie die simulierten Angriffe ausgeführt haben, können Sie überprüfen, wie Defender for Endpoint schädliche Aktivitäten aufgreift, und untersuchen, wie eine effiziente Reaktion ermöglicht wird.
 
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Zum Ausführen einer der bereitgestellten Simulationen benötigen Sie mindestens [ein integriertes Gerät.](onboard-configure.md) 
 

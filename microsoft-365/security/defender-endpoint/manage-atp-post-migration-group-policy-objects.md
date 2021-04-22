@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Microsoft Defender for Endpoint mithilfe von Gruppenrichtlinienobjekten
 description: Informationen zum Verwalten von Microsoft Defender for Endpoint mit Gruppenrichtlinienobjekten
-keywords: nach der Migration, verwalten, Betrieb, Wartung, Auslastung, PowerShell, windows defender advanced threat protection, atp, edr
+keywords: nach der Migration, Verwalten, Betrieb, Wartung, Auslastung, PowerShell, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 6d10bd932d9414f1460076d3fe7ca8dbed8041a6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1b8f2e7c7435f2161f7261722795b35ca848ec2f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185655"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934237"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Verwalten von Microsoft Defender for Endpoint mit Gruppenrichtlinienobjekten
 
@@ -52,7 +52,7 @@ In der folgenden Tabelle sind verschiedene Aufgaben aufgeführt, die Sie zum Kon
 |**Verwalten von Einstellungen für Benutzer- und Computerobjekte** <br/><br/>*Passen Sie integrierte Gruppenrichtlinienobjekte an, oder erstellen Sie benutzerdefinierte Gruppenrichtlinienobjekte und Organisationseinheiten, die Ihren Organisatorischen Anforderungen entsprechen.*     |[Verwalten von Gruppenrichtlinien in einer verwalteten Azure Active Directory Domain Services-Domäne](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy)   |
 |**Konfigurieren von Microsoft Defender Antivirus** <br/><br/>*Konfigurieren Von Antivirusfeatures & Funktionen, einschließlich Richtlinieneinstellungen, Ausschlüssen, Korrekturen und geplanten Scans auf den Geräten Ihrer Organisation (auch als Endpunkte bezeichnet).*   |[Konfigurieren und Verwalten von Microsoft Defender Antivirus mithilfe von Gruppenrichtlinieneinstellungen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus) <br/><br/>[Verwenden von Gruppenrichtlinien zum Aktivieren des in der Cloud übermittelten Schutzes](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-group-policy-to-enable-cloud-delivered-protection)      |
 |**Verwalten der Regeln zur Reduzierung der Angriffsfläche In Ihrer Organisation** <br/><br/>*Passen Sie Ihre Regeln für die Reduzierung der Angriffsfläche an, indem Sie Dateien & oder benutzerdefinierten Text zu Benachrichtigungsbenachrichtigungen hinzufügen, die auf den Geräten der Benutzer angezeigt werden.* |[Anpassen von Regeln zur Reduzierung der Angriffsfläche mit Gruppenrichtlinienobjekten](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-group-policy-to-exclude-files-and-folders) |
-|**Verwalten von Exploitschutzeinstellungen**<br/><br/>*Sie können Ihre Exploitschutzeinstellungen anpassen, eine Konfigurationsdatei importieren und dann gruppenrichtlinien zum Bereitstellen dieser Konfigurationsdatei verwenden.*  |[Anpassen der Einstellungen für den Exploitschutz](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/>[Importieren, Exportieren und Bereitstellen von Exploitschutzkonfigurationen](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml)<br/><br/>[Verwenden von Gruppenrichtlinien zum Verteilen der Konfiguration](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml#use-group-policy-to-distribute-the-configuration)  |
+|**Verwalten von Exploitschutzeinstellungen**<br/><br/>*Sie können Ihre Exploitschutzeinstellungen anpassen, eine Konfigurationsdatei importieren und dann gruppenrichtlinien zum Bereitstellen dieser Konfigurationsdatei verwenden.*  |[Anpassen der Einstellungen für den Exploitschutz](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/>[Importieren, Exportieren und Bereitstellen von Konfigurationen für Exploit-Schutz](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml)<br/><br/>[Verwenden von Gruppenrichtlinien zum Verteilen der Konfiguration](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml#use-group-policy-to-distribute-the-configuration)  |
 |**Aktivieren von Netzwerkschutz,** um Zu verhindern, dass Mitarbeiter Apps verwenden, die schädliche Inhalte im Internet enthalten <br/><br/>*Es wird empfohlen, [zunächst den Überwachungsmodus](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-network-protection) für den Netzwerkschutz in einer Testumgebung zu verwenden, um zu sehen, welche Apps vor dem Roll out blockiert werden.* |[Aktivieren des Netzwerkschutzes mithilfe von Gruppenrichtlinien](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-network-protection#group-policy)  |
 |**Konfigurieren des kontrollierten Ordnerzugriffs** zum Schutz vor Ransomware <br/><br/>*[Der kontrollierte Ordnerzugriff](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders) wird auch als Antiransomwareschutz bezeichnet.*  |[Aktivieren des kontrollierten Ordnerzugriffs mithilfe von Gruppenrichtlinien](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy) |
 |**Konfigurieren Sie Microsoft Defender SmartScreen** zum Schutz vor schädlichen Websites und Dateien im Internet.  |[Konfigurieren von Microsoft Defender SmartScreen-Gruppenrichtlinien und Einstellungen für die mobile Geräteverwaltung (Mobile Device Management, MDM) mithilfe von Gruppenrichtlinien](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)  |

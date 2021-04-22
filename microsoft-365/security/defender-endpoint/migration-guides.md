@@ -1,6 +1,6 @@
 ---
 title: Migrationsleitfäden zum Wechseln zu Microsoft Defender for Endpoint
-description: Erfahren Sie, wie Sie von einer Nicht-Microsoft-Lösung zum Schutz vor Bedrohungen zu Microsoft Defender for Endpoint wechseln
+description: Erfahren Sie, wie Sie den Wechsel von einer Nicht-Microsoft 365 Defender-Lösung zu Microsoft Defender for Endpoint
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 09/24/2020
 ms.technology: mde
-ms.openlocfilehash: c191e2006f42eda215508ba961dcbeb1ea282078
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: f834ab371b9d860c451c89bb1a4e7d64bdd6ec1f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218628"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934441"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>Wechseln zu Microsoft Defender for Endpoint und Microsoft Defender Antivirus
 
@@ -34,16 +34,16 @@ ms.locfileid: "51218628"
 
 > Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="migration-guides"></a>Migrationsanleitungen
+## <a name="migration-guides"></a>Migrationsleitfäden
 
-Wenn Sie erwägen, von einer Nicht-Microsoft-Lösung zum Schutz vor Bedrohungen zu Microsoft Defender for Endpoint mit Microsoft Defender Antivirus zu wechseln, lesen Sie unsere Migrationsleitfaden. Wählen Sie das Szenario aus, das am besten den Ort ihres Bereitstellungsprozesses darstellt, und sehen Sie sich die Anleitungen an.
+Wenn Sie erwägen, von einer Nicht-Microsoft 365 Defender-Lösung zu Microsoft Defender for Endpoint mit Microsoft Defender Antivirus zu wechseln, lesen Sie unsere Migrationsanleitungen. Wählen Sie das Szenario aus, das am besten den Ort ihres Bereitstellungsprozesses darstellt, und sehen Sie sich die Anleitungen an.
 
 |Szenario |Richtlinien |
 |:--|:--|
 |Sie haben noch keine Endpunktschutzlösung, und Sie möchten mehr über die Funktionsweise von Microsoft Defender for Endpoint & Microsoft Defender Antivirus wissen.  |[Microsoft Defender for Endpoint-Evaluierungslabor](evaluation-lab.md)   |
 |Sie verfügen über Microsoft Defender for Endpoint & Microsoft Defender Antivirus und benötigen Hilfe bei der Einrichtung und Konfiguration.  |[Bereitstellungshandbuch für Microsoft Defender for Endpoint](deployment-phases.md)  |
-|Sie planen die Migration von McAfee Endpoint Security (McAfee) zu Microsoft Defender for Endpoint & Microsoft Defender Antivirus. |[Wechseln von McAfee zu Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-migration.md) |
-|Sie planen die Migration von Symantec Endpoint Protection (Symantec) zu Microsoft Defender for Endpoint & Microsoft Defender Antivirus. |[Wechseln von Symantec zu Microsoft Defender for Endpoint](symantec-to-microsoft-defender-endpoint-migration.md) |
+|Sie planen die Migration von McAfee Endpoint Security (McAfee) zu Microsoft Defender for Endpoint & Microsoft Defender Antivirus. |[Wechsel von McAfee zu Microsoft Defender für Endpunkt](mcafee-to-microsoft-defender-migration.md) |
+|Sie planen die Migration von Symantec Endpoint Protection (Symantec) zu Microsoft Defender for Endpoint & Microsoft Defender Antivirus. |[Wechsel von Symantec zu Microsoft Defender für Endpunkt](symantec-to-microsoft-defender-endpoint-migration.md) |
 |Sie planen die Migration von einer Nicht-Microsoft-Lösung für den Endpunktschutz (außer McAfee oder Symantec) zu Microsoft Defender for Endpoint & Microsoft Defender Antivirus. |[Wechseln zu Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md)   |
 |Sie sind zu Microsoft Defender for Endpoint & Microsoft Defender Antivirus migriert und benötigen Hilfe bei den nächsten Schritten, z. B. beim Konfigurieren zusätzlicher Features oder beim Optimieren Ihrer Sicherheitseinstellungen. | [Verwalten von Microsoft Defender for Endpoint nach der Migration](manage-atp-post-migration.md) |
 

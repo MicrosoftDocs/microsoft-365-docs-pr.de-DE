@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 1b8454107b6a2737f1236a066c3a24a2b9c776cb
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: a8b7268e89470a85a34015967b69abb1818fe64f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222653"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933841"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Überprüfen von Ereignissen und Fehlern mithilfe der Ereignisanzeige
 
@@ -57,7 +57,7 @@ Wenn Geräte beispielsweise nicht in der Liste Geräte angezeigt **werden,** mü
 <tbody style="vertical-align:top;">
 <tr>
 <th>Ereigniskennung</th>
-<th>Nachricht</th>
+<th>Message</th>
 <th>Beschreibung</th>
 <th>Aktion</th>
 </tr>
@@ -301,13 +301,13 @@ Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 de
 </tr>
 <tr>
 <td>42</td>
-<td>Microsoft Defender for Endpoint WDATP-Komponente konnte keine Aktion ausführen. Komponente: %1, Aktion: %2, Ausnahmetyp: %3, Ausnahmemeldung: %4</td>
+<td>Microsoft Defender for Endpoint-Komponente konnte keine Aktion ausführen. Komponente: %1, Aktion: %2, Ausnahmetyp: %3, Ausnahmemeldung: %4</td>
 <td>Interner Fehler. Der Dienst konnte nicht gestartet werden.</td>
 <td>Wenn dieser Fehler weiterhin auftritt, wenden Sie sich an den Support.</td>
 </tr>
 <tr>
 <td>43</td>
-<td>Microsoft Defender for Endpoint WDATP-Komponente konnte keine Aktion ausführen. Komponente: %1, Aktion: %2, Ausnahmetyp: %3, Ausnahmefehler: %4, Ausnahmemeldung: %5</td>
+<td>Microsoft Defender for Endpoint-Komponente konnte keine Aktion ausführen. Komponente: %1, Aktion: %2, Ausnahmetyp: %3, Ausnahmefehler: %4, Ausnahmemeldung: %5</td>
 <td>Interner Fehler. Der Dienst konnte nicht gestartet werden.</td>
 <td>Wenn dieser Fehler weiterhin auftritt, wenden Sie sich an den Support.</td>
 </tr>
@@ -482,13 +482,13 @@ Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 de
 </tr>
 <tr>
    <td>81</td>
-   <td>Fehler beim Erstellen Windows Defender Advanced Threat Protection ETW-Autologgers. Fehlercode: %1</td>
+   <td>Fehler beim Erstellen des AutomatischenLoggers von Microsoft Defender for Endpoint ETW. Fehlercode: %1</td>
    <td>Fehler beim Erstellen der ETW-Sitzung.</td>
    <td>Starten Sie das Gerät neu. Wenn dieser Fehler weiterhin auftritt, wenden Sie sich an den Support.</td>
 </tr>
 <tr>
    <td>82</td>
-   <td>Fehler beim Entfernen Windows Defender Advanced Threat Protection ETW-Autologgers. Fehlercode: %1</td>
+   <td>Fehler beim Entfernen des Autologgers von Microsoft Defender for Endpoint ETW. Fehlercode: %1</td>
    <td>Fehler beim Löschen der ETW-Sitzung.</td>
    <td>Wenden Sie sich an den Support.</td>
 </tr>
@@ -500,7 +500,7 @@ Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 de
 </tr>
 <tr>
    <td>85</td>
-   <td>Fehler beim Auslösen der Windows Defender Advanced Threat Protection. Fehlercode: %1</td>
+   <td>Fehler beim Auslösen der ausführbaren Datei "Microsoft Defender for Endpoint". Fehlercode: %1</td>
    <td>Fehler beim Ausführen der ausführbaren SenseIR-Datei.</td>
    <td>Starten Sie das Gerät neu. Wenn dieser Fehler weiterhin auftritt, wenden Sie sich an den Support.</td>
 </tr>
@@ -554,19 +554,19 @@ Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 de
 </tr>
 <tr>
    <td>94</td>
-   <td>Windows Defender der ausführbaren Datei Advanced Threat Protection wurde gestartet</td>
+   <td>Die ausführbare Datei "Microsoft Defender for Endpoint" wurde gestartet.</td>
    <td>Die ausführbare Datei SenseCE wurde gestartet.</td>
    <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
 </tr>
 <tr>
    <td>95</td>
-   <td>Windows Defender der ausführbaren Datei "Advanced Threat Protection" wurde beendet</td>
+   <td>Die ausführbare Datei "Microsoft Defender for Endpoint" wurde beendet.</td>
    <td>Die ausführbare Datei SenseCE wurde beendet.</td>
    <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
 </tr>
 <tr>
    <td>96</td>
-   <td>Windows Defender Advanced Threat Protection Init wurde aufgerufen. Ergebniscode: %2</td>
+   <td>Microsoft Defender for Endpoint Init hat aufgerufen. Ergebniscode: %2</td>
    <td>Die ausführbare SenseCE-Datei hat die MCE-Initialisierung aufgerufen.</td>
    <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
 </tr>
@@ -590,19 +590,19 @@ Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 de
 </tr>
 <tr>
    <td>100</td>
-   <td>Windows Defender der ausführbaren Datei Advanced Threat Protection konnte nicht gestartet werden. Fehlercode: %1</td>
+   <td>Die ausführbare Microsoft Defender for Endpoint-Datei konnte nicht gestartet werden. Fehlercode: %1</td>
    <td>Die ausführbare Datei SenseCE konnte nicht gestartet werden.</td>
    <td>Starten Sie das Gerät neu. Wenn dieser Fehler weiterhin auftritt, wenden Sie sich an den Support.</td>
 </tr>
 <tr>
    <td>102</td>
-   <td>Windows Defender advanced Threat Protection Network Detection and Response executable has started</td>
+   <td>Microsoft Defender for Endpoint Network Detection and Response executable has started</td>
    <td>Die ausführbare Datei SenseNdr wurde gestartet.</td>
    <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
 </tr>
 <tr>
    <td>103</td>
-   <td>Windows Defender advanced Threat Protection Network Detection and Response executable has ended</td>
+   <td>Microsoft Defender for Endpoint Network Detection and Response executable has ended</td>
    <td>Die ausführbare Datei SenseNdr wurde beendet.</td>
    <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
 </tr>
@@ -612,6 +612,6 @@ Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 de
 >Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Onboarding von Windows 10-Geräten](configure-endpoints.md)
+- [Onboarding von Windows 10-Geräten](configure-endpoints.md)
 - [Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen](configure-proxy-internet.md)
-- [Problembehandlung für Microsoft Defender for Endpoint](troubleshoot-onboarding.md)
+- [Problembehandlung von Microsoft Defender für Endpunkt](troubleshoot-onboarding.md)

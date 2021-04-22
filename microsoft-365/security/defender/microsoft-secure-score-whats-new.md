@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 5a868904a43e17952368e097c0b0e963252d5bed
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: b3f86dfbc1ae89eff61c680737061b01998a527b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570363"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933865"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Neues in Microsoft Secure Score
 
@@ -50,7 +50,7 @@ Microsoft Teams-Kunden sehen "Einschränken der Teilnahme anonymer Benutzer an B
 
 ## <a name="december-2020"></a>Dezember 2020
 
-### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Es wurden sechs kontenbezogene Verbesserungsmaßnahmen für Microsoft Defender for Endpoint (zuvor Microsoft Defender ATP) hinzugefügt:
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Es wurden sechs kontenbezogene Verbesserungsmaßnahmen für Microsoft Defender for Endpoint hinzugefügt:
 
 - Festlegen der Mindestkennwortlänge auf "14 oder mehr Zeichen"
 - Festlegen von "Kennwortverlauf erzwingen" auf "24 oder mehr Kennwort(n)"
@@ -65,7 +65,7 @@ Microsoft Teams-Kunden sehen "Einschränken der Teilnahme anonymer Benutzer an B
 
 Die Möglichkeit, ServiceNow-Tickets über Secure Score zu erstellen, indem Sie zu **Share > ServiceNow** gehen, ist nicht mehr verfügbar. Vielen Dank für Ihr Feedback und ihren weiteren Support, während wir die nächsten Schritte festlegen.
 
-### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Es wurden drei dienstbezogene Verbesserungsmaßnahmen für Microsoft Defender for Endpoint (zuvor Microsoft Defender ATP) hinzugefügt:
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Drei dienstebezogene Verbesserungsmaßnahmen für Microsoft Defender for Endpoint wurden hinzugefügt:
 
 - Fix unquoted service path for Windows services
 - Ändern des ausführbaren Pfads des Diensts zu einem gemeinsamen geschützten Speicherort

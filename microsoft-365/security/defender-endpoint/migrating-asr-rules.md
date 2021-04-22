@@ -1,7 +1,7 @@
 ---
 title: Migrieren von einem Drittanbieter-HIPS zu ASR-Regeln
 description: Beschreibt, wie Sie eine Migration von einer Host Intrusion Prevention System (HIPS)-Lösung eines Drittanbieters in ASR-Regeln nähern.
-keywords: Attack surface reduction rules, asr, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint, Microsoft Defender ATP
+keywords: Attack surface reduction rules, asr, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.topic: article
 ms.prod: m365-security
@@ -15,12 +15,12 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: 5b2c6c12de7b87a045a81a552e3fe74b4829e94d
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: de65c134560ecca219de9174ff222d31dd578d31
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764783"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933781"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migrieren von einem Drittanbieter-HIPS zu ASR-Regeln
 
@@ -41,7 +41,7 @@ Dieser Artikel hilft Ihnen bei der Zuordnung gängiger Regeln zu Microsoft Defen
 - **Gilt für**– Alle Prozesse
 - **Prozesse**– N/A
 - **Vorgang**– Registrierungsänderungen
-- **Beispiele für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse,Dienste** -  *\Software*,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs *\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger,HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
+- **Beispiele für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse, Dienste** -  *\Software*,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs *\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger, HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
 - **Attack Surface Reduction-Regeln**– ASR-Regeln blockieren die Angriffstechniken und nicht die Indikatoren für Kompromisse (IOC). Das Blockieren einer bestimmten Dateierweiterung ist nicht immer hilfreich, da es nicht verhindert, dass ein Gerät gefährdet wird. Es vereitelt einen Angriff nur teilweise, bis Angreifer einen neuen Erweiterungstyp für die Nutzlast erstellen.
 - **Weitere empfohlene Features**– Microsoft Defender AV aktiviert zu haben, sowie Cloud Protection und Verhaltensanalyse wird dringend empfohlen. Es wird empfohlen, zusätzliche Prävention zu verwenden, z. B. die ASR-Regel "Erweiterten Schutz vor Ransomware verwenden". Dies bietet ein höheres Maß an Schutz vor Ransomware-Angriffen. Darüber hinaus werden mehrere dieser Registrierungsschlüssel von Microsoft Defender for Endpoint überwacht, z. B. ASEP-Techniken, die bestimmte Warnungen auslösen. Darüber hinaus erfordern die verwendeten Registrierungsschlüssel, dass mindestens lokale Administrator- oder Vertrauenswürdige Installer-Berechtigungen geändert werden können. Es wird empfohlen, eine gesperrte Umgebung mit minimalen Administratorkonten oder -rechten zu verwenden. Andere Systemkonfigurationen können aktiviert werden, einschließlich "Deaktivieren von SeDebug für nicht erforderliche Rollen", die Teil unserer umfassenderen Sicherheitsempfehlungen sind.
 
@@ -50,7 +50,7 @@ Dieser Artikel hilft Ihnen bei der Zuordnung gängiger Regeln zu Microsoft Defen
 - **Gilt für**: Nicht vertrauenswürdige Programme von USB
 - **Prozesse**– *
 - **Vorgang**– Prozessausführung
-- **Beispiele für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse,Dienste:-*
+- **Beispiele für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse, Dienste:-*
 - **Attack Surface Reduction-Regeln**– ASR-Regeln verfügen über eine integrierte Regel, um das Starten nicht vertrauenswürdiger und nicht signierter Programme an Wechseldatenträgern zu verhindern: "Nicht vertrauenswürdige und nicht signierte Prozesse blockieren, die über USB ausgeführt werden", GUID "b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4".
 - **Weitere empfohlene Features**: Weitere Steuerelemente für USB-Geräte und andere Wechselmedien mithilfe von Microsoft Defender for Endpoint: Steuern von USB-Geräten und anderen Wechselmedien mithilfe von [Microsoft Defender for Endpoint](/windows/security/threat-protection/device-control/control-usb-devices-using-intune).
 
@@ -69,7 +69,7 @@ Dieser Artikel hilft Ihnen bei der Zuordnung gängiger Regeln zu Microsoft Defen
 - **Prozesse**– outlook.exe
 - **Vorgang**– Prozessausführung
 - **Beispiele für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse, Dienste**– powershell.exe
-- **Attack Surface Reduction rules**– ASR rules have a built-in rule to prevent Office communication apps (Outlook, Skype and Teams) from launching child processes: "Block Office communication application from creating child processes", GUID "26190899-1602-49e8-8b27-eb1d0a1ce869".
+- **Attack Surface Reduction rules**– ASR rules have a built-in rule to prevent Office communication apps (Outlook, Skype, and Teams) from launching child processes: "Block Office communication application from creating child processes", GUID "26190899-1602-49e8-8b27-eb1d0a1ce869".
 - **Weitere empfohlene Features:** Es wird empfohlen, den eingeschränkten Sprachmodus von PowerShell zu aktivieren, um die Angriffsfläche von PowerShell zu minimieren.
 
 
@@ -87,7 +87,7 @@ Dieser Artikel hilft Ihnen bei der Zuordnung gängiger Regeln zu Microsoft Defen
 - **Gilt für**- Office
 - **Prozesse**– winword.exe, powerpnt.exe, excel.exe
 - **Vorgang**– Dateierstellung
-- Beispiele **für Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse,Dienste**- C:\Users *\AppData **.exe, C:\ProgramData**.exe, C:\ProgramData**.com, C:\Users* AppData\Local\Temp **.com, C:\Users*\Downloads**.exe, C:\Users *\AppData **.scf, C:\ProgramData**.scf, C:\Users\Public*.exe, C:\Users*\Desktop***.exe
+- Beispiele für **Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse,** Dienste - C:\Users *\AppData **.exe, C:\ProgramData**.exe, C:\ProgramData**.com, C:\Users* AppData\Local\Temp **.com, C:\Users*\Downloads**.exe, C:\Users *\AppData **.scf, C:\ProgramData**.scf, C:\Users\Public*.exe, C:\Users*\Desktop***.exe
 - **Attack Surface Reduction Rules**– N/A.
 
 ### <a name="block-wscript-from-reading-certain-types-of-files"></a>Blockieren des Lesens bestimmter Dateitypen durch Wscript
@@ -137,14 +137,14 @@ Dieser Artikel hilft Ihnen bei der Zuordnung gängiger Regeln zu Microsoft Defen
 - **Attack Surface Reduction-Regeln**– Allgemeine AsR-Regeln sind nicht für die Funktion als Anwendungs-Manager konzipiert.
 - **Weitere empfohlene Features:** Um zu verhindern, dass Benutzer bestimmte Prozesse oder Programme starten, wird empfohlen, Windows Defender Anwendungssteuerung zu verwenden. Microsoft Defender für Endpunktdatei- und #A0 kann in einem Szenario für die Reaktion auf Vorfälle verwendet werden (sollte nicht als Anwendungssteuerungsmechanismus gesehen werden).
     
-### <a name="block-unauthorized-changes-to-mdatp-av-configurations"></a>Blockieren nicht autorisierter Änderungen an MDATP-AV-Konfigurationen
+### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>Blockieren nicht autorisierter Änderungen an Microsoft Defender Antivirus-Konfigurationen
 
 - **Gilt für**– Alle Prozesse
 - **Prozesse**– *
 - **Vorgang**– Registrierungsänderungen
 - Beispiele für **Dateien/Ordner, Registrierungsschlüssel/Werte, Prozesse,** Dienste - HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware, HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\AllowRealTimeMonitoring und so weiter.
 - **Attack Surface Reduction-Regeln**– ASR-Regeln decken diese Szenarien nicht ab, da sie Teil des integrierten Microsoft Defender for Endpoint-Schutzes sind.
-- Weitere empfohlene Features **–** Tamper Protection (Opt-In, verwaltet von Intune) verhindert nicht autorisierte Änderungen an Den Registrierungsschlüsseln DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring und DisableIOAVProtection (und mehr).
+- Weitere empfohlene Features **–** Tamper Protection (Opt-In, verwaltet von Intune) verhindert nicht autorisierte Änderungen an DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring und DisableIOAVProtection-Registrierungsschlüsseln (und mehr).
 
 Siehe auch
 

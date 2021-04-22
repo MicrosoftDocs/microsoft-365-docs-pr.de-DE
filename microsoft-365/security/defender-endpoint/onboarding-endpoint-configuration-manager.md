@@ -1,7 +1,7 @@
 ---
-title: Onboarding mit Microsoft Endpoint Configuration Manager
+title: Onboarding mithilfe des Microsoft Endpoint Configuration Manager
 description: Informationen zum Onboarding in Microsoft Defender for Endpoint mithilfe von Microsoft Endpoint Configuration Manager
-keywords: onboarding, configuration, deploy, deployment, endpoint configuration manager, mdatp, advanced threat protection, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint configuration manager
+keywords: Onboarding, Konfiguration, Bereitstellung, Bereitstellung, Endpunktkonfigurations-Manager, Microsoft Defender for Endpoint, Sammlungserstellung, Endpunkterkennungsantwort, Schutz der nächsten Generation, Reduzierung der Angriffsfläche, Microsoft Endpoint Configuration Manager
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,14 +18,14 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 31c946ccad84aca3b2fc86c95655cea9e66e182f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 84273ce3e060eb86ee246a5cc6a8cae3cba743b5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186401"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934489"
 ---
-# <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Onboarding mit Microsoft Endpoint Configuration Manager
+# <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Onboarding mithilfe des Microsoft Endpoint Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -117,8 +117,8 @@ Nachdem Sie diese Aufgabe abgeschlossen haben, verfügen Sie nun über eine Ger�
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>Schritt 2: Konfigurieren von Microsoft Defender for Endpoint-Funktionen 
 In diesem Abschnitt werden Sie beim Konfigurieren der folgenden Funktionen mithilfe von Microsoft Endpoint Configuration Manager auf Windows-Geräten unterstützt:
 
-- [**Endpunkterkennung und -antwort**](#endpoint-detection-and-response)
-- [**Schutz der nächsten Generation**](#next-generation-protection)
+- [**Erkennung und Reaktion am Endpunkt**](#endpoint-detection-and-response)
+- [**Schutzlösungen der nächsten Generation**](#next-generation-protection)
 - [**Reduzierung der Angriffsfläche**](#attack-surface-reduction)
 
 
@@ -264,7 +264,7 @@ Microsoft Defender Antivirus ist eine integrierte Lösung zur Bekämpfung von Sc
 
 Nachdem Sie diese Aufgabe abgeschlossen haben, haben Sie die Antivirus-Windows Defender konfiguriert.
 
-### <a name="attack-surface-reduction"></a>Angriffsfläche verringern
+### <a name="attack-surface-reduction"></a>Verringerung der Angriffsfläche
 Die Angriffsflächenreduzierungssäule von Defender for Endpoint umfasst den Funktionssatz, der unter Exploit Guard verfügbar ist. Attack Surface Reduction (ASR)-Regeln, kontrollierter Ordnerzugriff, Netzwerkschutz und Exploit-Schutz. 
 
 Alle diese Features bieten einen Überwachungsmodus und einen Blockmodus. Im Überwachungsmodus gibt es keine Auswirkungen auf endbenutzer. Sie sammelt nur zusätzliche Telemetrie und stellt sie im Microsoft Defender Security Center zur Verfügung. Das Ziel einer Bereitstellung besteht in der schrittweisen Bewegung von Sicherheitssteuerelementen in den Blockmodus.
@@ -389,4 +389,4 @@ Nachdem Sie diese Aufgabe abgeschlossen haben, haben Sie Network Protection im �
 Sie haben nun den kontrollierten Ordnerzugriff im Überwachungsmodus erfolgreich konfiguriert.
 
 ## <a name="related-topic"></a>Verwandtes Thema
-- [Onboarding mit Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
+- [Onboarding mithilfe des Microsoft Endpoint Manager](onboarding-endpoint-manager.md)

@@ -1,7 +1,7 @@
 ---
-title: Behandeln von Problemen mit dem Microsoft Defender for Endpoint-Dienst
+title: Behandeln von Problemen mit dem Dienst "Microsoft Defender für Endpunkt"
 description: Hier finden Sie Lösungen und Problemumgehungen für bekannte Probleme, z. B. Serverfehler beim Zugriff auf den Dienst.
-keywords: Problembehandlung bei Microsoft Defender für Endpunkt, Problembehandlung bei Windows ATP, Serverfehler, Zugriff verweigert, ungültige Anmeldeinformationen, keine Daten, Dashboardportal, zulassen, Ereignisanzeige
+keywords: Problembehandlung für Microsoft Defender for Endpoint, Serverfehler, Zugriff verweigert, ungültige Anmeldeinformationen, keine Daten, Dashboardportal, zulassen, Ereignisanzeige
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 112f682836da37ddfb51c103282518ff74563727
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 81f1b4154de25f6186679adc5b1f24f78f302415
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186017"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933757"
 ---
 # <a name="troubleshoot-service-issues"></a>Behandeln von Dienstproblemen
 
@@ -80,7 +80,7 @@ Die Verwendung von Kommas als Trennzeichen in Zahlen wird nicht unterstützt. Re
 >Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 
 ## <a name="microsoft-defender-for-endpoint-tenant-was-automatically-created-in-europe"></a>Microsoft Defender for Endpoint-Mandant wurde automatisch in Europa erstellt
-Wenn Sie Azure Security Center zum Überwachen von Servern verwenden, wird automatisch ein Microsoft Defender for Endpoint-Mandant erstellt. Die Microsoft Defender for Endpoint-Daten werden standardmäßig in Europa gespeichert.
+Wenn Sie Azure Defender zum Überwachen von Servern verwenden, wird automatisch ein Microsoft Defender for Endpoint-Mandant erstellt. Die Microsoft Defender for Endpoint-Daten werden standardmäßig in Europa gespeichert.
 
 
 
