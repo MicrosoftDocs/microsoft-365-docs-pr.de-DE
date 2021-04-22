@@ -138,6 +138,8 @@
           href: data-classification-content-explorer.md
         - name: Erste Schritte mit dem Aktivitäten-Explorer
           href: data-classification-activity-explorer.md
+        - name: 'Beschriftungsaktionen, die im Aktivitäten-Explorer gemeldet wurden'
+          href: data-classification-activity-explorer-available-events.md
         - name: Veröffentlichungshinweise zur Datenklassifizierung
           href: data-classification-pub-preview-relnotes.md
     - name: Vertraulichkeitsbezeichnungen
