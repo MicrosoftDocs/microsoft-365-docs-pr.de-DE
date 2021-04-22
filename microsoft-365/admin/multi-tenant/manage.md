@@ -19,21 +19,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie den Mandantenschalter verwenden, und erfahren Sie mehr mandantenverdingte Ansichten.
-ms.openlocfilehash: 21b51a5e0c79496bf73e60c04aea68def3cf8ad6
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d59760b8a143acc33747aff9f7deaa0b6dd3e711
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580882"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51943029"
 ---
 # <a name="multi-tenant-management"></a>Verwaltung mit mehreren Mandanten
 
-Die verwaltung mit mehreren Mandanten bietet eine einheitliche Verwaltungsform, mit der Administratoren alle Mandanten verwalten können, die sie von einem einzigen Standort aus verwalten können. Wenn Sie mehrere Mandanten verwalten, können Sie:
+Die mehrstufige Verwaltung bietet eine einheitliche Verwaltungsform, mit der Microsoft 365-Partneradministratoren alle Mandanten verwalten können, die sie von einem einzigen Standort aus verwalten können. Wenn Sie ein Partner sind, der mehrere Mandanten verwaltet, können Sie:
 
 - Wechseln Sie schnell zwischen mandanten, die Sie verwalten.
 - Bewerten des Dienstzustands, der Produkte und der Abrechnung über mehrere Mandanten hinweg.
 - Auf der **Seite Alle** Mandanten können Sie schnell den Integritätszustand aller Mandantendienste, alle offenen Dienstanforderungen, Ihre Produkte und Abrechnung sowie die Anzahl der Benutzer in diesem Mandanten anzeigen.
-
 
 ## <a name="move-between-tenants"></a>Verschieben zwischen Mandanten
 
@@ -54,7 +53,6 @@ Die verwaltung mit mehreren Mandanten bietet eine einheitliche Verwaltungsform, 
   - Suchen sie nach dem Mandanten, den Sie verwalten möchten, oder wählen Sie diesen aus.
   - Sie können ihren am häufigsten besuchten Mandanten auch an den oberen Rand der Liste anheften.
 
-
 Wenn Sie einen Mandanten als Favoriten markiert haben, wird er automatisch erweitert, sodass Sie die Statusdetails sofort anzeigen können.
 
 ## <a name="view-service-health-for-all-accounts"></a>Anzeigen des Dienstzustands für alle Konten
@@ -63,7 +61,7 @@ Die Dienstinteratansicht zeigt, ob sich Vorfälle oder Ratgeber auf die Mandante
 
 1. Wählen Sie im Microsoft 365 Admin Center in der Ansicht mit mehreren Mandanten die Option **Dienstinte health aus.**
 2. In  der aggregierten Ansicht dienstintegierte Integritätsseite können Sie auch die Gesamtanzahl von Vorfällen, die Gesamtanzahl von Ratgebern, die einen der verwalteten Mandanten betreffen, und die Anzahl der Dienste mit aktiven Vorfällen anzeigen. Sie können auch sehen, wie viele Ihrer Mandanten von Vorfällen und Ratgebern betroffen sind.
-    
+
     - Mit der Filteroption können Sie Probleme nach Problemtyp oder Dienst anzeigen.
 
     - Sie können Probleme auf den **Registerkarten Alle Dienste** oder **Alle Probleme** überprüfen.

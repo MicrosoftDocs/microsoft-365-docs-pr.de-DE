@@ -10,6 +10,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: article
 search.appverid:
@@ -18,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: c8e38e3f22b48b58ea7fb1a4a6f000c80c170675
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: bad31160bb27c79f672ddd28a5fced3bf8c2ee1b
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934405"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51943041"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft Defender für Endpunkt im Microsoft 365 Security Center
 
@@ -75,7 +76,7 @@ Diese Tabelle ist eine Kurzübersicht über die Änderungen zwischen dem Microso
 
 |**Bereich**  |**Beschreibung der Änderung**  |
 |---------|---------|
-|Suche   |  Anstatt in der Überschrift zu sein, bewegt sich die Microsoft Defender for Endpoint-Suchleiste unter dem Abschnitt Endpunkte. Sie können weiterhin nach Geräten, Dateien, Benutzern, URLs, IPs, Sicherheitsrisiken, Software und Empfehlungen suchen.  |
+|Suchen   |  Anstatt in der Überschrift zu sein, bewegt sich die Microsoft Defender for Endpoint-Suchleiste unter dem Abschnitt Endpunkte. Sie können weiterhin nach Geräten, Dateien, Benutzern, URLs, IPs, Sicherheitsrisiken, Software und Empfehlungen suchen.  |
 |[Dashboard](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  Dies ist Ihr Sicherheitsbetriebsdashboard. Sehen Sie sich eine Übersicht darüber an, wie viele aktive Warnungen ausgelöst wurden, welche Geräte gefährdet sind, welche Benutzer gefährdet sind, und den Schweregrad für Warnungen, Geräte und Benutzer. Sie können auch sehen, ob auf geräten Sensorprobleme auftreten, ihr Gesamtdienstzustand und wie nicht aufgelöste Warnungen erkannt wurden. |
 |Geräteübersicht | Keine Änderungen. |
 |[Bedrohungs- und Sicherheitsrisikomanagement](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Der Name wurde so verkürzt, dass er in den Navigationsbereich passt. Es ist identisch mit dem Abschnitt zur Verwaltung von Bedrohungen und Sicherheitslücken mit allen Seiten darunter.     |
@@ -85,6 +86,9 @@ Diese Tabelle ist eine Kurzübersicht über die Änderungen zwischen dem Microso
 
 > [!NOTE]
 > **Die automatische Untersuchung und Behebung** ist jetzt Teil von Vorfällen. Auf der Registerkarte Incident > Investigation werden Ereignisse zur automatischen Untersuchung **und Behebung** angezeigt.
+
+> [!TIP]
+> Die Gerätesuche erfolgt über Endpoints > Search.
 
 ### <a name="access-and-reporting"></a>Zugriff und Berichterstellung
 

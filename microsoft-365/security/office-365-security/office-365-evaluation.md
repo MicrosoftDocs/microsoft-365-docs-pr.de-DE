@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
@@ -18,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86433ef505cd1b9afca100dc731f1885e22c8401
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 005c1f6ad7806c8d1ba1d38e4e82edd25034075d
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935137"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51942993"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Bewerten von Microsoft Defender für Office 365
 
@@ -32,11 +33,14 @@ ms.locfileid: "51935137"
 > [!IMPORTANT]
 > Die Microsoft Defender for Office 365-Evaluierung befindet sich in der öffentlichen Vorschau. Diese Vorschauversion wird ohne Vereinbarung zum Servicelevel bereitgestellt. Bestimmte Features werden möglicherweise nicht unterstützt oder verfügen möglicherweise über eingeschränkte Funktionen.
 
-Durch die Durchführung einer umfassenden Sicherheitsproduktbewertung können Sie fundierte Entscheidungen zu Upgrades und Käufen treffen. Es hilft, die Funktionen des Sicherheitsprodukts auszuprobieren, um zu bewerten, wie es Ihrem Sicherheitsbetriebsteam bei seinen täglichen Aufgaben helfen kann.
+Durch eine sorgfältige Sicherheitsproduktbewertung können Sie fundierte Entscheidungen zu Upgrades und Käufen treffen. Es hilft, die Funktionen des Sicherheitsprodukts auszuprobieren, um zu bewerten, wie es Ihrem Sicherheitsbetriebsteam bei seinen täglichen Aufgaben helfen kann.
 
 Die Evaluierungsumgebung von [Microsoft Defender für Office 365](defender-for-office-365.md) soll die Komplexität der Geräte- und Umgebungskonfiguration beseitigen, sodass Sie sich auf die Auswertung der Funktionen von Microsoft Defender für Office 365 konzentrieren können. Im Auswertungsmodus können alle Nachrichten, die an Exchange Online-Postfächer gesendet werden, ausgewertet werden, ohne auf Microsoft zu verweisen. Das Feature gilt nur für den E-Mail-Schutz und nicht für Office-Clients wie Word, SharePoint oder Teams.
 
 Wenn Sie noch nicht über eine Lizenz verfügen, die Microsoft Defender für Office 365 unterstützt, können Sie eine kostenlose [30-tägige](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) Evaluierung starten und die Funktionen im Office 365 Security & Compliance Center ( https://protection.office.com/homepage) testen. Sie genießen die schnelle Einrichtung und können sie bei Bedarf ganz einfach deaktivieren.
+
+> [!NOTE]
+> Wenn Sie im einheitlichen Microsoft 365-Sicherheitsportal (security.microsoft.com) sind, können Sie hier eine Defender for Office 365-Evaluierung starten: E-Mail & Collaboration > Policies & Rules > Threat Policies > Additional Policies.
 
 ## <a name="how-the-evaluation-works"></a>Funktionsweise der Auswertung
 

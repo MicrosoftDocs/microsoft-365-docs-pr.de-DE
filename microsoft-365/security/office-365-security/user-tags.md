@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie bestimmte Benutzergruppen mit Benutzertags in Microsoft Defender für Office 365 Plan 2 identifizieren. Die Tagfilterung ist in Warnungen, Berichten und Untersuchungen in Microsoft Defender für Office 365 verfügbar, um die markierten Benutzer schnell zu identifizieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4c439dcb91831475bc10da4a01d0fa29e7aae359
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: 2c1dc426bae77cd35b567bf166032855327a8ffe
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632202"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51943011"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Benutzertags in Microsoft Defender für Office 365
 
@@ -49,6 +49,9 @@ Nachdem Sie Systemtags oder benutzerdefinierte Tags auf Benutzer angewendet habe
 In diesem Artikel wird erläutert, wie Sie Benutzertags im Security & Compliance Center konfigurieren. Es gibt keine Cmdlets im Security & Compliance Center zum Verwalten von Benutzertags.
 
 Informationen dazu, wie Benutzertags Teil der Strategie zum Schutz von Benutzerkonten mit hoher Auswirkung sind, finden Sie unter Sicherheitsempfehlungen für Prioritätskonten [in Microsoft 365](security-recommendations-for-priority-accounts.md).
+
+> [!NOTE]
+> Wenn Sie das einheitliche Microsoft 365 Security Center verwenden, können Sie tags hier festlegen: https://security.microsoft.com/userTags .
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 

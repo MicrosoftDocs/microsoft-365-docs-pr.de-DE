@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: f3920942925efbe334df84370c61fbe6a98ad49f
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: f9bb0690cf48c4cc694c0d563ba7d4203953358a
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939264"
+ms.locfileid: "51943053"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Das vereinheitlichte Microsoft 365 Security Center – Übersicht
 
@@ -50,6 +50,9 @@ Wenn Sie Informationen zu den Aktualisierungen im Office 365 Security & Complian
 
 - [Defender für Office 365 im Microsoft 365 Security Center](microsoft-365-security-center-mdo.md)
 - [Defender für Endpunkt im Microsoft 365 Security Center](microsoft-365-security-center-mde.md)
+
+> [!NOTE]
+> Das Microsoft 365-Sicherheitsportal verwendet und erzwingt vorhandenen rollenbasierten Zugriff und verschiebt jedes Sicherheitsmodell in das einheitliche Portal. Jede konvergente Arbeitsauslastung (z. B. MDO oder MDE) verfügt über einen eigenen rollenbasierten Zugriff. Die bereits in den Produkten vorhandenen Rollen werden automatisch in das Microsoft 365-Sicherheitsportal zusammengeführt. Rollen und Berechtigungen für MCAS werden jedoch weiterhin in MCAS behandelt.
 
 ## <a name="what-to-expect"></a>Das erwartet Sie
 

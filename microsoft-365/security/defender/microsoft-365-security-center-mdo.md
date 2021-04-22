@@ -2,7 +2,7 @@
 title: Microsoft Defender für Office 365 im Microsoft 365 Security Center
 description: Erfahren Sie mehr über die Änderungen vom Office 365 Security and Compliance Center zum Microsoft 365 Security Center.
 keywords: Microsoft 365-Sicherheit, Erste Schritte mit dem Microsoft 365 Security Center, Microsoft Defender für Office 365, Microsoft Defender for Endpoint, MDO, MDE, einzelner Fensterausschnitt, neues Sicherheitsportal, neues Defender-Sicherheitsportal
-ms.date: 02/02/2021
+ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 980a384d3c4fd44a368f35d6f885ea0c8288376a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b5decd562509d134899b85b380791087a913cd58
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935413"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51943065"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender für Office 365 im Microsoft 365 Security Center
 
@@ -64,6 +64,9 @@ Lesen Sie auch den Abschnitt **Verwandte Informationen** am Ende dieses Artikels
 
 > [!IMPORTANT]
 > Das Microsoft 365-Sicherheitsportal (https://security.microsoft.com) führt Sicherheitsfeatures von https://securitycenter.windows.comund https://protection.office.com zusammen. Was Sie darin sehen, hängt jedoch von Ihrem Abonnement ab. Wenn Sie z. B. nur über Microsoft Defender für Office 365 Plan 1 oder 2 als eigenständige Abonnements verfügen, werden Sie keine Funktionen für die Sicherheit von Endpunkten sehen, und Kunden mit Defender für Office Plan 1 werden Elemente wie "Bedrohungsanalyse" nicht angezeigt.
+
+> [!TIP]
+>  Alle Exchange Online Protection (EOP)-Funktionen sind im Microsoft 365 Security Center enthalten, da EOP ein Kernelement von Defender für Office 365 ist.
 
 ## <a name="microsoft-365-security-center-home-page"></a>Microsoft 365 Security Center-Startseite
 
