@@ -457,6 +457,7 @@
 ####### [Warnungen auflisten](get-alerts.md)
 ####### [Warnung erstellen](create-alert-by-reference.md)
 ####### [Warnung aktualisieren](update-alert.md)
+####### [Aktualisierungswarnung zum Batch](batch-update-alerts.md)
 ####### [Erhalten von Warnungsinformationen nach ID](get-alert-info-by-id.md)
 ####### [Erhalten von Informationen zu Benachrichtigungen zu Domänen](get-alert-related-domain-info.md)
 ####### [Erhalten von Informationen zu Benachrichtigungen zu Dateien](get-alert-related-files-info.md)
@@ -501,6 +502,7 @@
 
 ###### [Indikatoren]()
 ####### [Methoden und Eigenschaften von Indikatoren](ti-indicator.md)
+####### [Importindikatoren](import-ti-indicators.md)
 ####### [Indikator für "Absenden"](post-ti-indicator.md)
 ####### [Indikatoren auflisten](get-ti-indicators-collection.md)
 ####### [Indikator löschen](delete-ti-indicator-by-id.md)
