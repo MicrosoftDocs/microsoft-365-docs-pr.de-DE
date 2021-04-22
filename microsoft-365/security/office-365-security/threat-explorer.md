@@ -19,12 +19,12 @@ description: Verwenden Sie Explorer und Echtzeiterkennungen im Security Complian
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c601169d76fe92ac3038ccb25c5c50aa390f714
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 0dcda063fc544c88157cff21b8a28f7a84a6a6fb
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599887"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934705"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Bedrohungs-Explorer und Echtzeiterkennungen
 
@@ -520,7 +520,7 @@ Zusätzlich zu den in diesem Artikel beschriebenen Szenarien stehen Ihnen mit Ex
 - [Anzeigen schädlicher Dateien in SharePoint Online, OneDrive und Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [Erhalten Sie eine Übersicht über die Ansichten im Bedrohungs-Explorer (und Echtzeiterkennungen)](threat-explorer-views.md)
 - [Threat Protection-Statusbericht](view-email-security-reports.md#threat-protection-status-report)
-- [Automatische Untersuchung und Reaktion in Microsoft Threat Protection](../defender/m365d-autoir.md)
+- [Automatisierte Untersuchung und Reaktion in Microsoft 365 Defender](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>Erforderliche Lizenzen und Berechtigungen
 

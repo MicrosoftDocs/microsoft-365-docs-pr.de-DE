@@ -1,7 +1,7 @@
 ---
-title: Festlegen von Einstellungen für Microsoft Defender for Endpoint für Mac
-description: Konfigurieren von Microsoft Defender für Endpoint für Mac in Unternehmensorganisationen.
-keywords: microsoft, defender, atp, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
+title: Festlegen von Einstellungen für Microsoft Defender for Endpoint auf Dem Mac
+description: Konfigurieren Sie MMicrosoft Defender for Endpoint auf Dem Mac in Unternehmensorganisationen.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d2bea469031e2c5932e859fbad7d442ebe4d34ed
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: f13734392e4975738a0d60d38e618595b5175667
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860923"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934561"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Festlegen von Einstellungen für Microsoft Defender for Endpoint unter macOS
 
@@ -168,14 +168,14 @@ Geben Sie einen Prozess an, für den alle Dateiaktivitäten von der Überprüfun
 |Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Key** | Name |
+| **Key** | name |
 | **Datentyp** | String |
 | **Mögliche Werte** | eine beliebige Zeichenfolge |
 | **Kommentare** | Gilt nur, *$type* *ausgeschlossen istFileName* |
 
 #### <a name="allowed-threats"></a>Zulässige Bedrohungen
 
-Geben Sie Bedrohungen nach Namen an, die nicht von Defender for Endpoint für Mac blockiert werden. Diese Bedrohungen können ausgeführt werden.
+Geben Sie Bedrohungen nach Namen an, die nicht von Defender for Endpoint auf dem Mac blockiert werden. Diese Bedrohungen können ausgeführt werden.
 
 |Abschnitt|Wert|
 |:---|:---|

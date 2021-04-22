@@ -1,7 +1,7 @@
 ---
 title: Untersuchen eines Benutzerkontos in Microsoft Defender for Endpoint
 description: Untersuchen Sie während einer Untersuchung ein Benutzerkonto auf potenzielle gefährdete Anmeldeinformationen oder Pivot für das zugeordnete Benutzerkonto.
-keywords: investigate, account, user, user entity, alert, microsoft defender atp
+keywords: investigate, account, user, user entity, alert, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 672867d107d005004201caab7d6497ceb048ac97
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: e98142e4076c5e695f16eb06c062bc69d3d7dd55
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587707"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935065"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Untersuchen eines Benutzerkontos in Microsoft Defender for Endpoint
 
@@ -51,7 +51,7 @@ In diesen Ansichten ist ein klickbarer Benutzerkontolink verfügbar, über den S
 
 Wenn Sie eine Benutzerkontenentität untersuchen, sehen Sie:
 
-- Benutzerkontodetails, Azure Advanced Threat Protection (Azure ATP)-Warnungen und angemeldete Geräte, Rolle, Anmeldetyp und andere Details
+- Benutzerkontodetails, Microsoft Defender for Identity-Warnungen und angemeldete Geräte, Rolle, Anmeldetyp und andere Details
 - Übersicht über vorfälle und Benutzergeräte
 - Warnungen im Zusammenhang mit diesem Benutzer
 - Beobachtet in der Organisation (angemeldete Geräte)
@@ -60,10 +60,10 @@ Wenn Sie eine Benutzerkontenentität untersuchen, sehen Sie:
 
 ### <a name="user-details"></a>Benutzerdetails
 
-Der  Bereich Benutzerdetails auf der linken Seite enthält Informationen über den Benutzer, z. B. verwandte offene Vorfälle, aktive Warnungen, SAM-Name, SID, Azure ATP-Warnungen, Anzahl der Geräte, bei denen der Benutzer angemeldet ist, wann der Benutzer zuerst und zuletzt gesehen wurde, Rollen- und Anmeldetypen. Je nach den von Ihnen aktivierten Integrationsfeatures werden weitere Details zu sehen sein. Wenn Sie beispielsweise die Skype for Business-Integration aktivieren, können Sie den Benutzer über das Portal kontaktieren. Der **Abschnitt Azure ATP-Warnungen** enthält einen Link, über den Sie zur Azure ATP-Seite gelangen, wenn Sie das Azure ATP-Feature aktiviert haben und es Warnungen im Zusammenhang mit dem Benutzer gibt. Die Azure ATP-Seite enthält weitere Informationen zu den Warnungen.
+Der  Bereich Benutzerdetails auf der linken Seite enthält Informationen zum Benutzer, z. B. verwandte offene Vorfälle, aktive Warnungen, SAM-Name, SID, Microsoft Defender for Identity-Warnungen, Anzahl der Geräte, bei denen der Benutzer angemeldet ist, wann der Benutzer zum ersten und letzten Mal gesehen wurde, Rollen- und Anmeldetypen. Je nach den von Ihnen aktivierten Integrationsfeatures werden weitere Details zu sehen sein. Wenn Sie beispielsweise die Skype for Business-Integration aktivieren, können Sie den Benutzer über das Portal kontaktieren. Der **Abschnitt Azure ATP-Warnungen** enthält einen Link, über den Sie zur Seite Microsoft Defender for Identity gelangen, wenn Sie das Microsoft Defender for Identity-Feature aktiviert haben und es Warnungen im Zusammenhang mit dem Benutzer gibt. Auf der Seite Microsoft Defender for Identity finden Sie weitere Informationen zu den Warnungen.
 
 >[!NOTE]
->Sie müssen die Integration in Azure ATP und Defender for Endpoint aktivieren, um dieses Feature verwenden zu können. In Defender for Endpoint können Sie dieses Feature in erweiterten Features aktivieren. Weitere Informationen zum Aktivieren erweiterter Features finden Sie unter [Turn on advanced features](advanced-features.md).
+>Sie müssen die Integration in Microsoft Defender for Identity und Defender for Endpoint aktivieren, um dieses Feature verwenden zu können. In Defender for Endpoint können Sie dieses Feature in erweiterten Features aktivieren. Weitere Informationen zum Aktivieren erweiterter Features finden Sie unter [Turn on advanced features](advanced-features.md).
 
 Die Registerkarten Übersicht, Warnungen und Beobachtet in der Organisation sind unterschiedliche Registerkarten, die verschiedene Attribute zum Benutzerkonto anzeigen.
 

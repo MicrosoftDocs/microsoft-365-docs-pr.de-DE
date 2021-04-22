@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP-APIs-Verbindung zu Power BI
+title: Verbindung von Microsoft Defender für Endpunkt-APIs zu Power BI
 ms.reviewer: ''
 description: Erstellen Sie einen Power Business Intelligence (BI)-Bericht über Microsoft Defender for Endpoint-APIs.
 keywords: apis, supported apis, Power BI, reports
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 696782ca03e5494c3fc5ca08943d1079c5d78f8a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7c99267d75c89b3484d207cd763131e4bcc91527
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166656"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935041"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Erstellen benutzerdefinierter Berichte mithilfe von Power BI
 
@@ -141,7 +141,7 @@ Im ersten Beispiel wird veranschaulicht, wie Sie Power BI mit der Erweiterten Su
 Weitere Informationen finden Sie in den [Power BI-Berichtsvorlagen](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
 
 ## <a name="sample-reports"></a>Beispielberichte
-Anzeigen der Microsoft Defender ATP Power BI-Berichtsbeispiele. Weitere Informationen finden Sie unter [Durchsuchen von Codebeispielen](https://docs.microsoft.com/samples/browse/?products=mdatp).
+Anzeigen der Microsoft Defender for Endpoint Power BI-Berichtsbeispiele. Weitere Informationen finden Sie unter [Durchsuchen von Codebeispielen](https://docs.microsoft.com/samples/browse/?products=mdatp).
 
 
 ## <a name="related-topic"></a>Verwandtes Thema

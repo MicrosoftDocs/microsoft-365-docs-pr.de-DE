@@ -1,7 +1,7 @@
 ---
 title: Gerätesteuerung für macOS
 description: Erfahren Sie, wie Sie Microsoft Defender for Endpoint auf Mac konfigurieren, um Bedrohungen durch Wechselmedien wie z. B. USB-Geräte zu reduzieren.
-keywords: microsoft, defender, atp, mac, device, control, usb, removable, media
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, device, control, usb, removable, media
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 696bc45f7bb66313cc9353e252d76c2e9fd73259
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 39f8367c34e98c5e9dd11e9716f08e6c9e7fd9c0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688681"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935125"
 ---
 # <a name="device-control-for-macos"></a>Gerätesteuerung für macOS
 
@@ -100,7 +100,7 @@ Wenn Endbenutzer auf diese Benachrichtigung klicken, wird im Standardbrowser ein
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
 | **Key** | navigationTarget |
-| **Datentyp** | String |
+| **Datentyp** | Zeichenfolge |
 | **Kommentare** | Wenn das Produkt nicht definiert ist, verwendet es eine Standard-URL, die auf eine generische Seite verweist, auf der die vom Produkt ergriffene Aktion erläutert wird. |
 
 ### <a name="allow-or-block-removable-devices"></a>Zulassen oder Blockieren von Wechselmedien

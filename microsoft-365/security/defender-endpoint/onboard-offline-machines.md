@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fb5a9a4d35af2d400cdff1e417727e662738514e
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ee06f927579445825a2b2813e483c24357d2ed78
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861347"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934921"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Onboarding von Geräten ohne Internetzugriff auf Microsoft Defender for Endpoint
 
@@ -73,7 +73,7 @@ Weitere Informationen zu Onboardingmethoden finden Sie in den folgenden Artikeln
       - Konfigurieren der Azure Log Analytics-IP als Proxy
       - Azure Log Analytics Workspace Key & ID
 
-    - Azure Security Center (ASC)
+    - Azure Defender
       - [Security Policy \> Log Analytics Workspace](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
       - [\>Bedrohungserkennung Ermöglichen des Zugriffs auf meine Daten durch Defender for Endpoint](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 

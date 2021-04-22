@@ -1,7 +1,7 @@
 ---
 title: Onboarding von Windows 10-Geräten mithilfe von Tools für die Verwaltung von Mobilgeräten
 description: Verwenden Sie Tools für die Verwaltung mobiler Geräte, um das Konfigurationspaket auf Geräten zu bereitstellen, sodass sie in den Dienst integrierte werden.
-keywords: Onboarding von Geräten mithilfe von mdm, Geräteverwaltung, Onboarding von Windows ATP-Geräten, Onboarding von Microsoft Defender for Endpoint-Geräten, mdm
+keywords: Onboarding von Geräten mithilfe von mdm, Geräteverwaltung, Onboarding von Microsoft Defender for Endpoint-Geräten, mdm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f3042ef9ced11ebc5439308d2781528d5267975f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 951b0f33356ab99485f09ccc4147691e13ed3c6e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893613"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935005"
 ---
 # <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>Onboarding von Windows 10-Geräten mithilfe von Tools für die Verwaltung von Mobilgeräten
 
@@ -37,7 +37,7 @@ Sie können Mobile Device Management (MDM)-Lösungen verwenden, um Geräte zu ko
 
 Weitere Informationen zur Verwendung von Defender for Endpoint CSP finden Sie unter [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) und [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 Wenn Sie Microsoft Intune verwenden, muss das Gerät MDM registriert sein. Andernfalls werden einstellungen nicht erfolgreich angewendet. 
 
 Weitere Informationen zum Aktivieren von MDM mit Microsoft Intune finden Sie unter [Device enrollment (Microsoft Intune)](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment).

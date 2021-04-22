@@ -1,7 +1,7 @@
 ---
 title: Voraussetzungen für Microsoft 365 Defender
 description: Erfahren Sie mehr über die Lizenzierungs-, Hardware- und Softwareanforderungen und andere Konfigurationseinstellungen für Microsoft 365 Defender
-keywords: Anforderungen, Voraussetzungen, Hardware, Software, Browser, MTP, M365, Lizenz, E5, A5, EMS, Kauf
+keywords: Anforderungen, Voraussetzungen, Hardware, Software, Browser, Microsoft 365 Defender, M365, Lizenz, E5, A5, EMS, Kauf
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f9904ecb5b9ab0a0f634903a5dc0ee3049d06b38
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 930a3de078d6d003241bb6fcd5df71bc9f301962
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066744"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935605"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Voraussetzungen für Microsoft 365 Defender
 
@@ -75,5 +75,5 @@ Derzeit steht Microsoft 365 Defender *nicht* zur Verfügung für:
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über Microsoft 365 Defender](microsoft-365-defender.md)
-- [Aktivieren von Microsoft 365 Defender](m365d-enable.md)
+- [Microsoft 365 Defender aktivieren](m365d-enable.md)
 - [Verwalten von Zugriff und Berechtigungen](m365d-permissions.md)

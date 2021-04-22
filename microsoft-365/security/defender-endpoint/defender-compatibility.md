@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Antivirus-Kompatibilität mit Defender for Endpoint
 description: Erfahren Sie, wie Windows Defender Microsoft Defender for Endpoint funktioniert und wie es funktioniert, wenn ein Antischalwareclient eines Drittanbieters verwendet wird.
-keywords: Windows Defender-Kompatibilität, Defender, Microsoft Defender Atp, Defender für Endpunkt, Antivirus, mde
+keywords: Windows Defender-Kompatibilität, Defender, Microsoft Defender für Endpoint, Defender für Endpunkt, Antivirus, mde
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 63dca2694dae5dee924c9a0a02a660003907c42b
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: a8dca4a80385fabcdc64a5584474214d05be4a6c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165957"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935377"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-microsoft-defender-for-endpoint"></a>Microsoft Defender Antivirus-Kompatibilität mit Microsoft Defender for Endpoint
 

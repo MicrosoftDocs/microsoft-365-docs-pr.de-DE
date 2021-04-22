@@ -1,7 +1,7 @@
 ---
 title: Symantec zu Microsoft Defender for Endpoint – Phase 2, Einrichten
 description: Dies ist Phase 2, Setup, der Migration von Symantec zu Microsoft Defender for Endpoint
-keywords: Migration, windows defender advanced threat protection, atp, edr
+keywords: migration, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 6d45e3aa0d3bf938e43201aca969613876ef1f31
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 755eb54f848e0cc5da3ca1b7b613a951c77d0b4c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218712"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935233"
 ---
 # <a name="migrate-from-symantec---phase-2-set-up-microsoft-defender-for-endpoint"></a>Migrieren von Symantec – Phase 2: Einrichten von Microsoft Defender for Endpoint
 

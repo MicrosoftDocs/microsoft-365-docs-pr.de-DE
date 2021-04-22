@@ -1,7 +1,7 @@
 ---
 title: Bewerten von Microsoft Defender für Office 365
 description: Defender für Office 365 erstellt im Evaluierungsmodus Defender für Office 365-E-Mail-Richtlinien, die Bewertungen protokollieren, z. B. Schadsoftware, aber keine Nachrichten verwenden.
-keywords: Bewerten von Office 365, Microsoft Defender für Office 365, Office 365-Evaluierung, Testen von Office 365, Microsoft Defender, ATP
+keywords: Bewerten von Office 365, Microsoft Defender für Office 365, Office 365-Evaluierung, Testen von Office 365, Microsoft Defender, Microsoft Defender für Endpunkt
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5862361dbd3a220e4b37400dbb6515af91eaa959
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 86433ef505cd1b9afca100dc731f1885e22c8401
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768806"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935137"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Bewerten von Microsoft Defender für Office 365
 
@@ -57,7 +57,7 @@ Mit der vereinfachten Einrichtungserfahrung können Sie sich auf:
 - Analysieren des Berichts für Aktionen
 - Präsentieren des Bewertungsergebniss
 
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 ### <a name="licensing"></a>Lizenzierung
 

@@ -1,7 +1,7 @@
 ---
 title: Unterstützte Betriebssysteme und Plattformen für die Verwaltung von Bedrohungen und Sicherheitslücken
 description: Stellen Sie sicher, dass Sie die Anforderungen des Betriebssystems oder der Plattform für die Bedrohungs- und Sicherheitsrisikoverwaltung erfüllen, damit die Aktivitäten auf allen Geräten ordnungsgemäß berücksichtigt werden.
-keywords: Bedrohung &, Bedrohungs- und Sicherheitsrisikoverwaltung, Betriebssystem, Plattformanforderungen, Voraussetzungen, mdatp-tvm-unterstütztes Os, mdatp-tvm,
+keywords: Bedrohung &, Bedrohungs- und Sicherheitsrisikoverwaltung, Betriebssystem, Plattformanforderungen, Voraussetzungen, Von Microsoft Defender für Endpoint-tvm unterstütztes Betriebssystem, Microsoft Defender für Endpoint-tvm,
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fd778b66e85507d5e6d91ed786b16454a5c0fc8f
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 55322d238839d347882ec1d74b767c68fd2be2b3
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500441"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935521"
 ---
 # <a name="supported-operating-systems-and-platforms---threat-and-vulnerability-management"></a>Unterstützte Betriebssysteme und Plattformen – Bedrohungs- und Sicherheitsrisikoverwaltung
 
@@ -44,7 +44,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Betriebssystem- o
 
 Betriebssystem | Unterstützung für die Sicherheitsbewertung
 :---|:---
-Windows 7 | Betriebssystemrisiken
+Windows 7 | Betriebssystemrisiken
 Windows 8.1 | Betriebssystemrisiken<br/>Sicherheitsrisiken für Softwareprodukt<br/>Betriebssystemkonfigurationsbewertung<br/>Konfigurationsbewertung für Sicherheitssteuerelemente<br/>Bewertung der Softwareproduktkonfiguration |
 Windows 10, Versionen 1607-1703 | Betriebssystemrisiken
 Windows 10, Version 1709 oder höher |Betriebssystemrisiken<br/>Sicherheitsrisiken für Softwareprodukt<br/>Betriebssystemkonfigurationsbewertung<br/>Konfigurationsbewertung für Sicherheitssteuerelemente<br/>Bewertung der Softwareproduktkonfiguration

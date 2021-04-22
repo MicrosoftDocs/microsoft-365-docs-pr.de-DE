@@ -1,7 +1,7 @@
 ---
 title: Vorbereiten Ihrer Microsoft 365 Defender-Testumgebung
 description: Vorbereiten der Abmelde-, Zeitachsen, Umgebungsüberlegungen und der Einführungsreihenfolge beim Einrichten Ihrer Microsoft 365 Defender-Testumgebung oder Pilotumgebung
-keywords: MTP-Testvorbereitung, MTP-Pilotvorbereitung, Vorbereitung für die Ausführung eines MTP-Pilotprojekts, Ausführen eines MTP-Pilotprojekts, Bereitstellen, Vorbereiten, Interessengruppen, Zeitachse, Umgebung, Endpunkt, Server, Verwaltung, Einführung
+keywords: Microsoft 365 Defender-Testvorbereitung, Microsoft 365 Defender-Pilotvorbereitung, Vorbereitung für die Ausführung eines Microsoft 365 Defender-Pilotprojekts, Ausführen eines Microsoft 365 Defender-Pilotprojekts, Bereitstellen, Vorbereiten, Interessengruppen, Zeitachse, Umgebung, Endpunkt, Server, Verwaltung, Einführung
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: dada110faca71c9e8fcf384eb5bb0a78faefaad9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d5e98cead84c0be76ca252b23f3c2d062b22dd73
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199137"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935617"
 ---
 # <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Vorbereiten Ihrer Microsoft 365 Defender-Testumgebung oder Pilotumgebung
 

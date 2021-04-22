@@ -1,8 +1,8 @@
 ---
-title: Lizenzbedingungen für Microsoft Defender ATP für Android-Anwendungen
+title: Lizenzbedingungen für Microsoft Defender for Endpoint für Android-Anwendungen
 ms.reviewer: ''
-description: Beschreibt die Microsoft Defender ATP für Android-Lizenzbedingungen
-keywords: microsoft, defender, atp, android,license, terms, application, use, installation, service, feedback, scope,
+description: Beschreibt die Microsoft Defender for Endpoint für Android-Lizenzbedingungen
+keywords: microsoft, defender, Microsoft Defender for Endpoint, android, license, terms, application, use, installation, service, feedback, scope,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 2bcc8c1f977a6060ac94dc3a634f075a5c1ee041
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d73ddb3a8defb7697a995c2593d6a240a59c9cfe
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687949"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934621"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android-application-license-terms"></a>Lizenzbedingungen für Microsoft Defender for Endpoint für Android-Anwendungen
 
@@ -105,7 +105,7 @@ für diese Anwendung, es sei denn, diese Elemente werden von anderen Begriffen b
 
     2.  Der jeweilige Anwendungsspeicheranbieter und seine Tochtergesellschaften sind Drittbegünstigte dieser Bedingungen, und wenn Sie diese Bedingungen akzeptieren, haben die Anwendungsspeicheranbieter das Recht, jede Bestimmung dieser Bedingungen, die ihnen eine Leistung oder Rechte gewährt, direkt durchzusetzen und sich auf diese zu verlassen.
 
-9.  **MARKENHINWEISE.** Microsoft, Microsoft Defender ATP, MDATP und Microsoft 365 sind registrierte oder gängige Marken der Microsoft Corporation in den USA und/oder anderen Ländern.
+9.  **MARKENHINWEISE.** Microsoft, Microsoft Defender for Endpoint und Microsoft 365 sind registrierte oder common-law Marken der Microsoft Corporation in den USA und/oder anderen Ländern.
 
 10. **ENTIRE AGREEMENT.** Diese Vereinbarung und die Bedingungen für Ergänzungen, Updates, internetbasierte Dienste und Supportdienste, die Sie verwenden, sind die gesamte Vereinbarung für die Anwendungs- und Supportdienste.
 

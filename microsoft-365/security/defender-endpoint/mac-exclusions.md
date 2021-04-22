@@ -1,7 +1,7 @@
 ---
-title: Konfigurieren und Überprüfen von Ausschlüssen für Microsoft Defender for Endpoint für Mac
-description: Bereitstellen und Überprüfen von Ausschlüssen für Microsoft Defender for Endpoint für Mac. Ausschlüsse können für Dateien, Ordner und Prozesse festgelegt werden.
-keywords: microsoft, defender, atp, mac, exclusions, scans, antivirus
+title: Konfigurieren und Überprüfen von Ausschlüssen für Microsoft Defender for Endpoint auf Dem Mac
+description: Bereitstellen und Überprüfen von Ausschlüssen für Microsoft Defender for Endpoint auf Dem Mac. Ausschlüsse können für Dateien, Ordner und Prozesse festgelegt werden.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, exclusions, scans, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7b5254e9b4289219a08730d736c8f9738e7a65f0
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: c014447e51e5c5fcb96924e5e98c62f478a32ea7
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861587"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935029"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Konfigurieren und Überprüfen von Ausschlüssen für Microsoft Defender for Endpoint unter macOS
 

@@ -2,7 +2,7 @@
 title: Bereitstellen von Microsoft Defender for Endpoint unter Linux mit Ansible
 ms.reviewer: ''
 description: Beschreibt, wie Microsoft Defender for Endpoint unter Linux mithilfe von Ansible bereitgestellt wird.
-keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 697fcddad595c6883fe1e1f7258ca6154c48b94d
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 15ee02d90e81c48bf5ec718e669bf8f88f6424ff
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903904"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934777"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Bereitstellen von Microsoft Defender for Endpoint unter Linux mit Ansible
 
@@ -36,7 +36,7 @@ ms.locfileid: "51903904"
 
 > Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-In diesem Artikel wird beschrieben, wie Sie Defender for Endpoint für Linux mithilfe von Ansible bereitstellen. Eine erfolgreiche Bereitstellung erfordert den Abschluss aller folgenden Aufgaben:
+In diesem Artikel wird beschrieben, wie Sie Defender for Endpoint unter Linux mithilfe von Ansible bereitstellen. Eine erfolgreiche Bereitstellung erfordert den Abschluss aller folgenden Aufgaben:
 
 - [Herunterladen des Onboardingpakets](#download-the-onboarding-package)
 - [Erstellen von ansiblen YAML-Dateien](#create-ansible-yaml-files)
@@ -45,7 +45,7 @@ In diesem Artikel wird beschrieben, wie Sie Defender for Endpoint für Linux mit
 
 ## <a name="prerequisites-and-system-requirements"></a>Voraussetzungen und Systemanforderungen
 
-Bevor Sie beginnen, finden Sie auf der Hauptseite [von Defender for Endpoint für Linux](microsoft-defender-endpoint-linux.md) eine Beschreibung der Voraussetzungen und Systemanforderungen für die aktuelle Softwareversion.
+Bevor Sie beginnen, finden Sie auf der Hauptseite [von Defender for Endpoint unter Linux](microsoft-defender-endpoint-linux.md) eine Beschreibung der Voraussetzungen und Systemanforderungen für die aktuelle Softwareversion.
 
 Darüber hinaus müssen Sie für die Ansible-Bereitstellung mit ansiblen Verwaltungsaufgaben vertraut sein, ansible konfigurieren und wissen, wie Sie Playbooks und Aufgaben bereitstellen. Ansible hat viele Möglichkeiten, dieselbe Aufgabe auszuführen. Diese Anweisungen setzen voraus, dass unterstützte Ansible-Module verfügbar sind, z. B. *apt* und *unarchive,* um das Paket bereitstellen zu können. Ihre Organisation kann einen anderen Workflow verwenden. Ausführliche Informationen finden Sie in [der Ansible-Dokumentation.](https://docs.ansible.com/)
 
@@ -129,7 +129,7 @@ Erstellen Sie eine Unteraufgabe oder Rollendateien, die zu einem Playbook oder e
 
 - Fügen Sie das Defender for Endpoint-Repository und den Schlüssel hinzu.
 
-    Defender for Endpoint für Linux kann über einen der folgenden Kanäle bereitgestellt werden (unten als *[Channel]* bezeichnet): *insiders-fast*, *insiders-slow* oder *prod*. Jeder dieser Kanäle entspricht einem Linux-Softwarerepository.
+    Defender for Endpoint unter Linux kann über einen der folgenden Kanäle bereitgestellt werden (unten als *[Channel]* bezeichnet): *insiders-fast*, *insiders-slow* oder *prod*. Jeder dieser Kanäle entspricht einem Linux-Softwarerepository.
 
     Die Auswahl des Kanals bestimmt den Typ und die Häufigkeit der Updates, die auf Ihrem Gerät angeboten werden. Geräte in *insiders-fast* sind die ersten, die Updates und neue Features erhalten, gefolgt von *insiders-slow* und schließlich von *prod*.
 
@@ -271,7 +271,7 @@ Weitere [Informationen zum](linux-resources.md#log-installation-issues) Suchen d
 
 ## <a name="operating-system-upgrades"></a>Betriebssystemupgrades
 
-Wenn Sie Ihr Betriebssystem auf eine neue Hauptversion aktualisieren, müssen Sie zunächst Defender for Endpoint für Linux deinstallieren, das Upgrade installieren und schließlich Defender for Endpoint für Linux auf Ihrem Gerät neu konfigurieren.
+Wenn Sie Ihr Betriebssystem auf eine neue Hauptversion aktualisieren, müssen Sie zunächst Defender for Endpoint unter Linux deinstallieren, das Upgrade installieren und schließlich Defender for Endpoint unter Linux auf Ihrem Gerät neu konfigurieren.
 
 ## <a name="references"></a>Informationsquellen
 

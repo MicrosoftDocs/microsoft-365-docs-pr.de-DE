@@ -1,7 +1,7 @@
 ---
 title: Bereitstellen des Zugriffs auf verwaltete Sicherheitsdienstanbieter (Managed Security Service Provider, MSSP)
 description: Informationen zu Änderungen vom Microsoft Defender Security Center zum Microsoft 365 Security Center
-keywords: Erste Schritte mit dem Microsoft 365 Security Center, OATP, MDATP, MDO, MDE, einzelnem Fensterausschnitt, konvergenten Portal, Sicherheitsportal, Defender-Sicherheitsportal
+keywords: Erste Schritte mit dem Microsoft 365 Security Center, Microsoft Defender für Office 365, Microsoft Defender for Endpoint, MDO, MDE, einzelner Fensterausschnitt, konvergenten Portal, Sicherheitsportal, Defender-Sicherheitsportal
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 4ea8c5a07016d3fe875d60501acee2cd46481489
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 4b34d3ea20716fb2424d9317b8a51c088a5714a6
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165729"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935353"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Bereitstellen des Zugriffs auf verwaltete Sicherheitsdienstanbieter (Managed Security Service Provider, MSSP) 
 

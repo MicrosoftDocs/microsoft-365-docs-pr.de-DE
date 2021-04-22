@@ -1,7 +1,7 @@
 ---
 title: DeviceFileEvents-Tabelle im schema der erweiterten Suche
 description: Informationen zu dateibezogenen Ereignissen in der DeviceFileEvents-Tabelle des schemas für erweiterte Suche
-keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft Threat Protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, filecreationevents, DeviceFileEvents, files, path, hash, sha1, sha256, md5
+keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, filecreationevents, DeviceFileEvents, files, path, hash, sha1, sha256, md5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6528d25b385a2b4eafc408cbfb6609372a6688de
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 40663a06e380377ccfa33dcb41a69c42e729704d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498585"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935509"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -94,7 +94,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `InitiatingProcessFileSize` | long | Größe der Datei, die den prozessverantwortlichen Vorgang für das Ereignis führte |
 | `SensitivityLabel` | Zeichenfolge | Bezeichnung, die auf E-Mails, Dateien oder andere Inhalte angewendet wird, um sie zum Schutz von Informationen zu klassifizieren |
 | `SensitivitySubLabel` | Zeichenfolge | Sublabel, das auf eine E-Mail, Datei oder andere Inhalte angewendet wird, um sie zum Schutz von Informationen zu klassifizieren; Vertraulichkeitsunterbezeichnungen werden unter Vertraulichkeitsbezeichnungen gruppieren, aber unabhängig behandelt |
-| `IsAzureInfoProtectionApplied` | boolean | Gibt an, ob die Datei von Azure Information Protection verschlüsselt wird |
+| `IsAzureInfoProtectionApplied` | Boolescher Wert | Gibt an, ob die Datei von Azure Information Protection verschlüsselt wird |
 | `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte in Verbindung mit den Spalten DeviceName und Timestamp verwendet werden. |
 | `AppGuardContainerId` | Zeichenfolge | Id für den virtualisierten Container, der von Application Guard zum Isolieren von Browseraktivitäten verwendet wird |
 | `AdditionalFields` | Zeichenfolge | Zusätzliche Informationen zur Entität oder zum Ereignis |

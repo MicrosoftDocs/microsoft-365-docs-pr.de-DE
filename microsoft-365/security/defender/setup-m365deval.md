@@ -1,7 +1,7 @@
 ---
 title: Einrichten Ihrer Microsoft 365 Defender-Testumgebung oder Pilotumgebung
 description: Greifen Sie auf Microsoft 365 Security Center zu, und richten Sie dann Ihre Microsoft 365 Defender-Testumgebung ein.
-keywords: Microsoft Threat Protection-Testeinrichtung, Microsoft Threat Protection-Piloteinrichtung, Testen der Microsoft Threat Protection- und Microsoft Threat Protection-Evaluierungsumgebung
+keywords: Microsoft 365 Defender-Testeinrichtung, Microsoft 365 Defender-Piloteinrichtung, Testen der Microsoft 365 Defender- und Microsoft 365 Defender-Evaluierungsumgebung
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 976f6a1ec010348e8a281c251064acdd7a26748b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ae81f6be0a83d5d0141f0f0c8c89f8f2207cc56c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066736"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935425"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>Einrichten Ihrer Microsoft 365 Defender-Testumgebung 
 

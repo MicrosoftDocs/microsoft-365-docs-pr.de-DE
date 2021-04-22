@@ -1,6 +1,6 @@
 ---
 title: Häufig gestellte Fragen (FAQ) zur Reduzierung der Angriffsfläche
-description: Hier finden Sie Antworten auf häufig gestellte Fragen zu den Regeln zur Reduzierung der Angriffsfläche von Microsoft Defender ATP.
+description: Hier finden Sie Antworten auf häufig gestellte Fragen zu den Attack Surface Reduction-Regeln von Microsoft Defender for Endpoint.
 keywords: Attack Surface Reduction Rules, Asr, Hips, Host Intrusion Prevention System, Protection Rules, Anti-Exploit, Antiexploit, Exploit, Infection Prevention, microsoft defender for endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71c3f89b721039753709d65daa135cad74a81711
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: cf41dda4ff61137d6b60b2fc735227f15418477e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476454"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935593"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>Häufig gestellte Fragen (FAQ) zur Reduzierung der Angriffsfläche
 

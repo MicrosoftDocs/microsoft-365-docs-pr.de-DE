@@ -1,7 +1,7 @@
 ---
 title: Threat Protection (Windows 10)
 description: Microsoft Defender für Endpunkt ist eine einheitliche Plattform für präventiven Schutz, die Erkennung nach einem Angriff, die automatisierte Untersuchung und Reaktion.
-keywords: Bedrohungsschutz, Microsoft Defender Advanced Threat Protection, Reduzierung der Angriffsfläche, Schutz der nächsten Generation, Endpunkterkennung und -reaktion, automatisierte Untersuchung und Reaktion, Microsoft-Bedrohungsexperten, Microsoft Secure Score für Geräte, erweiterte Suche, Suche nach Cyberbedrohungen, Schutz vor Webbedrohungen
+keywords: Bedrohungsschutz, Microsoft Defender for Endpoint, Reduzierung der Angriffsfläche, Schutz der nächsten Generation, Endpunkterkennung und -reaktion, automatisierte Untersuchung und Reaktion, Microsoft Threat Experts, Microsoft Secure Score for Devices, Advanced Hunting, Cyber Threat Hunting, Web Threat Protection
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 4206519d62feb82bbc297659e01b0cc3902b83dc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3098c2786874650ad14d226beacd5ec760decef0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51061165"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934933"
 ---
 # <a name="threat-protection"></a>Bedrohungsschutz
 [Microsoft Defender für Endpunkt](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) ist eine einheitliche Plattform für präventiven Schutz, die Erkennung nach einem Angriff, die automatisierte Untersuchung und Reaktion. Defender for Endpoint schützt Endpunkte vor Cyberbedrohungen, erkennt erweiterte Angriffe und Datenschutzverletzungen, automatisiert Sicherheitsvorfälle und verbessert die Sicherheitslage.
@@ -27,7 +27,7 @@ ms.locfileid: "51061165"
 > [!TIP]
 > Ermöglichen Sie Ihren Benutzern den problemlosen Zugriff auf Clouddienste und lokale Anwendungen und ermöglichen Sie moderne Verwaltungsfunktionen für alle Geräte. Weitere Informationen finden Sie unter [Secure your remote workforce](https://docs.microsoft.com/enterprise-mobility-security/remote-work/). 
 
-<center><h2>Microsoft Defender for Endpoint</center></h2>
+<center><h2>Microsoft Defender für Endpunkt</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>Sicherheitsrisikoverwaltung & Bedrohungen</b></center></a></td>
@@ -59,7 +59,7 @@ Diese integrierte Funktion verwendet einen spielveränderungsbasierten Ansatz f�
 - [Erste Schritte](tvm-prerequisites.md)
 - [Zugreifen auf Ihre Sicherheitslage](tvm-dashboard-insights.md)
 - [Verbessern Sie Ihre Sicherheitslage und verringern Sie das Risiko](tvm-security-recommendation.md)
-- [Verstehen von Sicherheitsrisiken auf Ihren Geräten](tvm-software-inventory.md)
+- [Erkennen von Sicherheitsrisiken auf Ihren Geräten](tvm-software-inventory.md)
 
 <a name="asr"></a>
 
@@ -69,7 +69,7 @@ Der Satz von Funktionen zur Reduzierung der Angriffsfläche stellt die erste Ver
 - [Hardwarebasierte Isolation](overview-hardware-based-isolation.md)
 - [Anwendungssteuerung](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
 - [Gerätesteuerung](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
-- [Exploit-Schutz](exploit-protection.md)
+- [Exploit-Schutz.](exploit-protection.md)
 - [Netzwerkschutz,](network-protection.md) [Webschutz](web-protection-overview.md)
 - [Kontrollierter Ordnerzugriff](controlled-folders.md)
 - [Netzwerkfirewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
@@ -77,7 +77,7 @@ Der Satz von Funktionen zur Reduzierung der Angriffsfläche stellt die erste Ver
 
 <a name="ngp"></a>
 
-**[Schutz der nächsten Generation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
+**[Schutzlösungen der nächsten Generation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 Zur weiteren Verstärkung des Sicherheitsperimeters Ihres Netzwerks verwendet Microsoft Defender for Endpoint den Schutz der nächsten Generation, der alle Arten neuer Bedrohungen abfangen soll.
 
 - [Verhaltensüberwachung](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
@@ -88,7 +88,7 @@ Zur weiteren Verstärkung des Sicherheitsperimeters Ihres Netzwerks verwendet Mi
 
 <a name="edr"></a>
 
-**[Endpunkterkennung und -antwort](overview-endpoint-detection-response.md)**<br>
+**[Erkennung und Reaktion am Endpunkt](overview-endpoint-detection-response.md)**<br>
 Funktionen zur Erkennung und Reaktion von Endpunkten werden zum Erkennen, Untersuchen und Reagieren auf Angriffsversuche und aktive Sicherheitsverletzungen verwendet. Mit der erweiterten Suche verfügen Sie über ein abfragebasiertes Tool zur Bedrohungssuche, mit dem Sie Verstöße proaktiv finden und benutzerdefinierte Erkennungen erstellen können.
 
 - [Benachrichtigungen](alerts-queue.md)

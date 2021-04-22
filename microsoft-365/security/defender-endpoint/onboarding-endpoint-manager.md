@@ -1,7 +1,7 @@
 ---
-title: Onboarding mit Microsoft Endpoint Manager
+title: Onboarding mithilfe des Microsoft Endpoint Manager
 description: Informationen zum Onboarding in Microsoft Defender for Endpoint mithilfe von Microsoft Endpoint Manager
-keywords: onboarding, configuration, deploy, deployment, endpoint manager, mdatp, advanced threat protection, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint manager
+keywords: onboarding, configuration, deploy, deployment, endpoint manager, Microsoft Defender for Endpoint, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint manager
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,14 +18,14 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9edcceca2f6cc7c2377eb388d7394a23dfbae99d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: e744262cfd63383e69abf02be9fbf91d2d229db2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186257"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935257"
 ---
-# <a name="onboarding-using-microsoft-endpoint-manager"></a>Onboarding mit Microsoft Endpoint Manager
+# <a name="onboarding-using-microsoft-endpoint-manager"></a>Onboarding mithilfe des Microsoft Endpoint Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -123,12 +123,12 @@ Im folgenden Abschnitt erstellen Sie eine Reihe von Konfigurationsrichtlinien.
 
 Zunächst wird eine Konfigurationsrichtlinie verwendet, um auszuwählen, welche Benutzergruppen oder Geräte in Defender for Endpoint onboarded werden:
 
-- [Endpunkterkennung und -antwort](#endpoint-detection-and-response) 
+- [Erkennung und Reaktion am Endpunkt](#endpoint-detection-and-response) 
 
 Anschließend erstellen Sie verschiedene Arten von Endpunktsicherheitsrichtlinien:
 
-- [Schutz der nächsten Generation](#next-generation-protection)
-- [Reduzierung der Angriffsfläche](#attack-surface-reduction--attack-surface-reduction-rules)
+- [Schutzlösungen der nächsten Generation](#next-generation-protection)
+- [Verringerung der Angriffsfläche](#attack-surface-reduction--attack-surface-reduction-rules):
 
 ### <a name="endpoint-detection-and-response"></a>Erkennung und Reaktion am Endpunkt
 
@@ -178,7 +178,7 @@ Anschließend erstellen Sie verschiedene Arten von Endpunktsicherheitsrichtlinie
     > [!div class="mx-imgBorder"]
     > ![Abbildung des Microsoft Endpoint Manager-Portals11](images/5a568b6878be8243ea2b9d82d41ed297.png)
 
-### <a name="next-generation-protection"></a>Schutz der nächsten Generation
+### <a name="next-generation-protection"></a>Schutzlösungen der nächsten Generation
 
 1.  Öffnen Sie das MEM-Portal.
 
@@ -373,7 +373,7 @@ Führen Sie den folgenden Prozess für jede Konfigurationsrichtlinie aus, um zu 
     > [!div class="mx-imgBorder"]
     > [![Abbildung von Microsoft Defender Security Center ](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
-### <a name="next-generation-protection"></a>Schutz der nächsten Generation
+### <a name="next-generation-protection"></a>Schutzlösungen der nächsten Generation
 
 1.  Bevor Sie die Richtlinie auf ein Testgerät anwenden, sollten Sie die Einstellungen wie unten gezeigt manuell verwalten können.
 

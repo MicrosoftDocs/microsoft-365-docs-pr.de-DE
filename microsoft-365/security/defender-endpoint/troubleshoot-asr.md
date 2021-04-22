@@ -1,7 +1,7 @@
 ---
 title: Behandeln von Problemen mit Regeln zur Reduzierung der Angriffsfläche
 description: Ressourcen und Beispielcode zur Problembehandlung bei Attack Surface Reduction-Regeln in Microsoft Defender for Endpoint.
-keywords: Problembehandlung, Fehler, Behebung, Windows Defender z. B. Asr, Regeln, Hips, Problembehandlung, Überwachung, Ausschluss, falsch positiv, gebrochen, Blockieren, Microsoft Defender für Endpunkt, microsoft defender advanced threat protection
+keywords: Problembehandlung, Fehler, Behebung, Windows Defender z. B. Asr, Regeln, Hips, Problembehandlung, Überwachung, Ausschluss, falsch positiv, gebrochen, Blockieren, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: d483c098f221e2d4d2e61a10393154b8f5d1498d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9ff00c706b0fb336c178e227b1cb33eff9e9ebbc
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198741"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935221"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Problembehandlung bei Regeln zur Reduzierung der Angriffsfläche
 
@@ -124,6 +124,6 @@ Wenn Sie ein Problem mit Regeln zur Reduzierung der Angriffsfläche melden, werd
 
 - [Regeln zur Verringerung der Angriffsfläche](attack-surface-reduction.md)
 
-- [Aktivieren von Regeln zur Reduzierung der Angriffsfläche](enable-attack-surface-reduction.md)
+- [Aktivieren der Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md)
 
-- [Bewerten von Regeln zur Reduzierung der Angriffsfläche](evaluate-attack-surface-reduction.md)
+- [Auswerten der Regeln zur Verringerung der Angriffsfläche](evaluate-attack-surface-reduction.md)
