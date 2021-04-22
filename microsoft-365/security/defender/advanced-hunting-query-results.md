@@ -1,7 +1,7 @@
 ---
 title: Arbeiten mit erweiterten Suchabfrageergebnissen in Microsoft 365 Defender
 description: Nutzen der Abfrageergebnisse, die von der erweiterten Suche in Microsoft 365 Defender zurückgegeben werden
-keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungensuche, Microsoft Threat Protection, microsoft 365, mtp, m365, Suche, Abfrage, Telemetrie, benutzerdefinierte Erkennungen, Schema, Kusto, Microsoft 365, Microsoft Threat Protection, Visualisierung, Diagramm, Filter, Drilldown
+keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungensuche, Microsoft 365 Defender, microsoft 365, m365, Suche, Abfrage, Telemetrie, benutzerdefinierte Erkennungen, Schema, Kusto, Visualisierung, Diagramm, Filter, Drilldown
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7086108febc25c4ecaaa3015c1d9a49f9d8ee642
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 34880c870cdf398ab1565f7f532ac95a6fde475d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500919"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932929"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Arbeiten mit erweiterten Suchabfrageergebnissen
 

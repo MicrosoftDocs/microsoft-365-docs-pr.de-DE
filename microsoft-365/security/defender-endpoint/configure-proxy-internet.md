@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ebfff7721bc61012811a66146079ac9758889594
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: a3885a462265368bc42c758ee5a8fd1c673ec08c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893601"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932799"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen
 
@@ -176,7 +176,7 @@ Die Platzhalter (*) in *.ods.opinsights.azure.com-, *.oms.opinsights.azure.com- 
 Der *.blob.core.windows.net-URL-Endpunkt kann durch die URLs ersetzt werden, die im Abschnitt "Firewallregel: *.blob.core.windows.net" der Testergebnisse angezeigt werden. 
 
 > [!NOTE]
-> Im Falle des Onboardings über das Azure Security Center (ASC) werden möglicherweise mehrere Arbeitsbereiche verwendet. Sie müssen das oben beschriebene TestCloudConnection.exe auf einem integrierten Computer aus jedem Arbeitsbereich ausführen (um zu ermitteln, ob änderungen an den URLs *.blob.core.windows.net zwischen den Arbeitsbereichen vorhanden sind).
+> Im Falle des Onboardings über Azure Defender werden möglicherweise mehrere Arbeitsbereiche verwendet. Sie müssen das oben beschriebene TestCloudConnection.exe auf einem integrierten Computer aus jedem Arbeitsbereich ausführen (um zu ermitteln, ob änderungen an den URLs *.blob.core.windows.net zwischen den Arbeitsbereichen vorhanden sind).
 
 ## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>Überprüfen der Clientkonnektivität mit Microsoft Defender for Endpoint-Dienst-URLs
 

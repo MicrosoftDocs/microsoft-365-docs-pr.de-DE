@@ -1,7 +1,7 @@
 ---
 title: Sicherstellen, dass Ihre Geräte ordnungsgemäß konfiguriert sind
 description: Konfigurieren Sie Geräte ordnungsgemäß, um die Ausfallsicherheit gegen Bedrohungen insgesamt zu erhöhen und Ihre Fähigkeit zum Erkennen und Reagieren auf Angriffe zu verbessern.
-keywords: Onboard, Intune-Verwaltung, MDATP, WDATP, Microsoft Defender, Windows Defender, erweiterter Bedrohungsschutz, Reduzierung der Angriffsfläche, ASR, Sicherheitsgrundlinie
+keywords: Onboard, Intune-Verwaltung, Microsoft Defender for Endpoint, Microsoft Defender, Windows Defender, Attack Surface Reduction, ASR, Security Baseline
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e7b00ceafc2761f42c316f434a27acf7c551e7cf
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3fd58ee17b2cb86c0bcc858b9b0fd57c12ac501e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163363"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932811"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>Sicherstellen, dass Ihre Geräte ordnungsgemäß konfiguriert sind
 

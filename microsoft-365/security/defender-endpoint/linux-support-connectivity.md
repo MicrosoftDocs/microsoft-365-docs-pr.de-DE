@@ -2,7 +2,7 @@
 title: Behandeln von Problemen mit der Cloudverbindung für Microsoft Defender for Endpoint unter Linux
 ms.reviewer: ''
 description: Behandeln von Problemen mit der Cloudverbindung für Microsoft Defender for Endpoint unter Linux
-keywords: microsoft, defender, atp, linux, cloud, connectivity, communication
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, cloud, connectivity, communication
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 985e4c39c60600da892c010b6ee26e9c98bb0611
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0345d7f88d147abb750e66a5e61f516abf38d553
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903166"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933109"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Behandeln von Problemen mit der Cloudverbindung für Microsoft Defender for Endpoint unter Linux
 
@@ -37,7 +37,7 @@ ms.locfileid: "51903166"
 
 ## <a name="run-the-connectivity-test"></a>Ausführen des Konnektivitätstests
 
-Um zu testen, ob Defender for Endpoint für Linux mit den aktuellen Netzwerkeinstellungen mit der Cloud kommunizieren kann, führen Sie einen Verbindungstest über die Befehlszeile aus:
+Um zu testen, ob Defender for Endpoint unter Linux mit den aktuellen Netzwerkeinstellungen mit der Cloud kommunizieren kann, führen Sie einen Konnektivitätstest über die Befehlszeile aus:
 
 ```bash
 mdatp connectivity test
@@ -86,7 +86,7 @@ OK https://cdn.x.cp.wd.microsoft.com/ping
 > [!WARNING]
 > PAC-, WPAD- und authentifizierte Proxys werden nicht unterstützt. Stellen Sie sicher, dass nur ein statischer oder transparenter Proxy verwendet wird.
 >
-> Ssl-Überprüfung und Abfangen von Proxys werden aus Sicherheitsgründen ebenfalls nicht unterstützt. Konfigurieren Sie eine Ausnahme für die SSL-Überprüfung und Ihren Proxyserver, um Daten von Defender for Endpoint für Linux direkt an die relevanten URLs ohne Abfangen zu übergeben. Wenn Sie Ihr Abfangzertifikat zum globalen Speicher hinzufügen, ist das Abfangen nicht zulässig.
+> Ssl-Überprüfung und Abfangen von Proxys werden aus Sicherheitsgründen ebenfalls nicht unterstützt. Konfigurieren Sie eine Ausnahme für die SSL-Überprüfung und Ihren Proxyserver, um Daten von Defender for Endpoint unter Linux direkt an die relevanten URLs ohne Abfangen zu übergeben. Wenn Sie Ihr Abfangzertifikat zum globalen Speicher hinzufügen, ist das Abfangen nicht zulässig.
 
 Wenn ein statischer Proxy erforderlich ist, fügen Sie dem obigen Befehl einen Proxyparameter hinzu, der der Proxyadresse und dem Port `proxy_address:port` entspricht:
 
@@ -107,7 +107,7 @@ Um einen statischen Proxy verwenden zu können, `mdatp.service` muss die Datei g
 
 Stellen Sie außerdem sicher, dass die richtige statische Proxyadresse ausgefüllt wird, um zu `address:port` ersetzen.
 
-Wenn diese Datei richtig ist, führen Sie den folgenden Befehl im Terminal aus, um Defender for Endpoint für Linux neu zu laden und die Einstellung weiterzuververmehren:
+Wenn diese Datei richtig ist, führen Sie den folgenden Befehl im Terminal aus, um Defender for Endpoint unter Linux neu zu laden und die Einstellung zu proppagieren:
 
 ```bash
 sudo systemctl daemon-reload; sudo systemctl restart mdatp

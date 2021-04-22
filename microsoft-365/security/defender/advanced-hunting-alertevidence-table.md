@@ -1,7 +1,7 @@
 ---
 title: AlertEvidence-Tabelle im schema der erweiterten Suche
 description: Informationen zu Den Warnungen zugeordneten Informationen in der AlertEvidence-Tabelle des Schemas für die erweiterte Suche
-keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft Threat Protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, entities, evidence, file, IP address, device, machine, user, account
+keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, entities, evidence, file, IP address, device, machine, user, account
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7b1f581e1cfc8345df6e7b8053621cf46110c355
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 5ecab217a6181096e4689d78fa2bdddc0a767d0d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499892"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932583"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 154ecd66399b031ef2e60eef16227bb9bc2f8785
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: c1e572910ad311daba18a8b0f5eeb546ffe36956
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587719"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929109"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Untersuchen von Geräten in der Microsoft Defender for Endpoint Devices-Liste
 
@@ -172,12 +172,12 @@ Auf der Registerkarte Fehlende **KBs** werden die fehlenden Sicherheitsupdates f
 
 ### <a name="active-alerts"></a>Aktive Warnungen
 
-Die **Azure Advanced Threat Protection-Karte** zeigt eine übersicht über Warnungen im Zusammenhang mit dem Gerät und deren Risikostufe an, wenn Sie das Azure ATP-Feature aktiviert haben und aktive Warnungen verfügbar sind. Weitere Informationen finden Sie im Drilldown "Alerts".
+Die **Azure Advanced Threat Protection-Karte** zeigt eine übersicht über Warnungen im Zusammenhang mit dem Gerät und deren Risikostufe an, wenn Sie das Microsoft Defender for Identity-Feature aktiviert haben und aktive Warnungen verfügbar sind. Weitere Informationen finden Sie im Drilldown "Alerts".
 
 ![Abbildung der aktiven Benachrichtigungskarte](images/risk-level-small.png)
 
 >[!NOTE]
->Sie müssen die Integration in Azure ATP und Defender for Endpoint aktivieren, um dieses Feature verwenden zu können. In Defender for Endpoint können Sie dieses Feature in erweiterten Features aktivieren. Weitere Informationen zum Aktivieren erweiterter Features finden Sie unter [Turn on advanced features](advanced-features.md).
+>Sie müssen die Integration in Microsoft Defender for Identity und Defender for Endpoint aktivieren, um dieses Feature verwenden zu können. In Defender for Endpoint können Sie dieses Feature in erweiterten Features aktivieren. Weitere Informationen zum Aktivieren erweiterter Features finden Sie unter [Turn on advanced features](advanced-features.md).
 
 ### <a name="logged-on-users"></a>Angemeldete Benutzer
 

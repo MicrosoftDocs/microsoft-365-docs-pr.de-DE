@@ -16,12 +16,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Erfahren Sie mehr über das Business Assist-Programm und darüber, wie es Ihrer Organisation mit verbesserter Hilfe und Verwendung für Microsoft 365 Business helfen kann.
-ms.openlocfilehash: 4531c841b4856e22b364906c180aa336cb8fd04a
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 767146cbbb68ff2e6632a7cae74a8b232834b01b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408525"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929030"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Business-Assistent für Microsoft 365
 
@@ -55,7 +55,7 @@ Nur Organisationen, die berechtigt sind, sehen die Option zum Kauf von Business 
 
 2. Wählen **Sie Details** im Small Business Assist für Microsoft **365** aus, und schließen Sie Ihren Kauf ab.
 
-:::image type="content" source="../../media/projectgenie-purchase services.png" alt-text="Screeenshot: Kauf von Business Assist im Abschnitt Add-Ons auf der Seite Dienste kaufen":::
+:::image type="content" source="../../media/business-assist-april.png" alt-text="Screeenshot: Kauf von Business Assist im Abschnitt Add-Ons auf der Seite Dienste kaufen":::
 
 > [!div class="nextstepaction"]
 > [Jetzt kaufen](https://go.microsoft.com/fwlink/p/?linkid=2158423)

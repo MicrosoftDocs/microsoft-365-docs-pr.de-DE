@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint-Evaluierungslabor
 description: Erfahren Sie mehr über Microsoft Defender for Endpoint-Funktionen, führen Sie Angriffssimulationen aus, und erfahren Sie, wie Bedrohungen verhindert, erkannt und behoben werden.
-keywords: evaluieren von mdatp, evaluation, lab, simulation, windows 10, windows server 2019, evaluation lab
+keywords: evaluieren von Microsoft Defender for Endpoint, Evaluation, Lab, Simulation, Windows 10, Windows Server 2019, Evaluierungslabor
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2382281fbb975daa18ec21aabaf5acf8d3fbfb2f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: ed2165c0102170256f50964180a550d8eccbce8c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893437"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932787"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint-Evaluierungslabor
 
@@ -52,7 +52,7 @@ Sie können auch Bedrohungssimulatoren installieren. Defender for Endpoint hat s
  Installieren Sie Ihren bevorzugten Simulator, führen Sie Szenarien innerhalb des Evaluierungslabors aus, und sehen Sie sich sofort an, wie die Plattform funktioniert – alles bequem und ohne zusätzliche Kosten für Sie verfügbar. Außerdem haben Sie bequemen Zugriff auf eine breite Palette von Simulationen, auf die Sie im Simulationskatalog zugreifen und diese ausführen können.
     
 
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 Sie müssen die Lizenzierungsanforderungen [erfüllen](minimum-requirements.md#licensing-requirements) oder Testzugriff auf Microsoft Defender for Endpoint haben, um auf das Evaluierungslabor zu zugreifen.
 
 Sie müssen über **Berechtigungen zum Verwalten von Sicherheitseinstellungen verfügen** für:

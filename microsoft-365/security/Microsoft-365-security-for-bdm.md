@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: die gängigsten Bedrohungs- und Angriffsszenarien, mit denen Organisationen derzeit für ihre Microsoft 365-Umgebungen konfrontiert sind, und empfohlene Maßnahmen zur Minderung dieser Risiken.
-ms.openlocfilehash: 504a2d4628c265b387941e2e4de0461f7ac3be9b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 056e1e64a992f12f3bf9a4b76c29f723ac1b5f3a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199041"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930173"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business Decision Makers (BDMs)
 
@@ -29,7 +29,7 @@ Dieser Artikel ist nach Priorität der Arbeit organisiert, beginnend mit dem Sch
 
 [![Thumb image Microsoft 365 BDM security recommendations spreadsheet](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
-Microsoft bietet Ihnen das Tool für die sichere Bewertung innerhalb Ihres Mandanten, um Ihre Sicherheitslage basierend auf Ihren regulären Aktivitäten automatisch zu analysieren, eine Bewertung zuzuordnen und Empfehlungen zur Verbesserung der Sicherheit zu geben. Bevor Sie die in diesem Artikel empfohlenen Aktionen ausführen, notieren Sie sich Ihre aktuelle Bewertung und Empfehlungen. Die in diesem Artikel empfohlenen Aktionen erhöhen Ihre Bewertung. Das Ziel ist nicht, die maximale Punktzahl zu erreichen, sondern die Möglichkeiten zum Schutz Ihrer Umgebung auf eine Weise zu nutzen, die sich nicht negativ auf die Produktivität ihrer Benutzer auswirken. Weitere [Informationen finden Sie unter Microsoft Secure Score](defender/microsoft-secure-score.md).
+Microsoft bietet Ihnen das Tool für die sichere Bewertung innerhalb Ihres Mandanten, um Ihre Sicherheitslage basierend auf Ihren regulären Aktivitäten automatisch zu analysieren, eine Bewertung zuzuordnen und Empfehlungen zur Verbesserung der Sicherheit zu geben. Bevor Sie die in diesem Artikel empfohlenen Aktionen ausführen, notieren Sie sich Ihre aktuelle Bewertung und Empfehlungen. Die in diesem Artikel empfohlenen Aktionen erhöhen Ihre Bewertung. Ziel ist es nicht, die maximale Punktzahl zu erreichen, sondern die Möglichkeiten zum Schutz Ihrer Umgebung auf eine Weise zu nutzen, die sich nicht negativ auf die Produktivität ihrer Benutzer auswirken kann. Weitere [Informationen finden Sie unter Microsoft Secure Score](defender/microsoft-secure-score.md).
 
 ![Führen Sie diese Schritte aus, um Risiken für Ihr Unternehmen zu mindern.](../media/security/security-for-bdms-overview.png)
 
@@ -37,7 +37,7 @@ Noch eine Sache, bevor wir beginnen. . . Stellen Sie [sicher, dass Sie das Über
 
 ## <a name="protect-privileged-accounts"></a>Schützen privilegierter Konten
 
-Als ersten Schritt wird empfohlen, dafür zu sorgen, dass kritische Konten in der Umgebung eine zusätzliche Schutzebene erhalten, da diese Konten über Zugriff und Berechtigungen zum Verwalten und Ändern kritischer Dienste und Ressourcen verfügen, die sich negativ auf die gesamte Organisation auswirken können, wenn sie gefährdet sind. Der Schutz privilegierter Konten ist eine der effektivsten Möglichkeiten zum Schutz vor einem Angreifer, der versucht, die Berechtigungen eines gefährdeten Kontos auf ein administratives Konto zu erhöhen. 
+Als ersten Schritt wird empfohlen, sicherzustellen, dass kritische Konten in der Umgebung eine zusätzliche Schutzebene erhalten, da diese Konten über Zugriff und Berechtigungen zum Verwalten und Ändern kritischer Dienste und Ressourcen verfügen, was sich negativ auf die gesamte Organisation auswirken kann, wenn sie gefährdet ist. Der Schutz privilegierter Konten ist eine der effektivsten Möglichkeiten zum Schutz vor einem Angreifer, der versucht, die Berechtigungen eines gefährdeten Kontos auf ein administratives Konto zu erhöhen. 
 
 |Empfehlung  |E3 |E5  |
 |---------|---------|---------|
@@ -50,7 +50,7 @@ Das folgende Diagramm veranschaulicht diese Funktionen.
 ![Empfohlene Funktionen zum Schutz privilegierter Konten](../media/m365-security-bdm-illustrations-privileged-accounts.png)
 
 Weitere Empfehlungen:
-- Stellen Sie sicher, dass Konten, die lokal synchronisiert werden, keine Administratorrollen für Clouddienste zugewiesen sind. Dadurch wird verhindert, dass ein Angreifer lokale Konten nutzt, um Administratorzugriff auf Clouddienste zu erhalten. 
+- Stellen Sie sicher, dass Konten, die lokal synchronisiert werden, keine Administratorrollen für Clouddienste zugewiesen sind. Dadurch wird verhindert, dass angreifer lokale Konten anwenden, um Administratorzugriff auf Clouddienste zu erhalten. 
 - Stellen Sie sicher, dass Dienstkonten keine Administratorrollen zugewiesen sind. Diese Konten werden häufig nicht überwacht und mit Kennwörtern festgelegt, die nicht ablaufen. Stellen Sie zunächst sicher, dass die AADConnect- und ADFS-Dienstkonten standardmäßig keine globalen Administratoren sind.
 - Entfernen von Lizenzen aus Administratorkonten. Wenn kein spezifischer Verwendungsfall zum Zuweisen von Lizenzen zu bestimmten Administratorkonten vor liegt, entfernen Sie Lizenzen aus diesen Konten. 
 
@@ -82,12 +82,12 @@ Das folgende Diagramm veranschaulicht diese Funktionen.
 
 ## <a name="protect-against-unknown-threats"></a>Schutz vor unbekannten Bedrohungen
 
-Nachdem Sie Ihren privilegierten Konten zusätzlichen Schutz hinzugefügt und vor bekannten Angriffen geschützt haben, sollten Sie ihre Aufmerksamkeit auf den Schutz vor unbekannten Bedrohungen enwenden. Die entschlosseneren und fortgeschritteneren Gegner verwenden innovative und neue, unbekannte Methoden, um Organisationen angreift. Mit den umfangreichen Telemetriedaten von Microsoft, die über Milliarden von Geräten, Anwendungen und Diensten gesammelt wurden, können wir Defender for Office 365 unter Windows, Office 365 und Azure ausführen, um Zero Day-Angriffe zu verhindern, Sandkastenumgebungen zu nutzen und die Gültigkeit zu überprüfen, bevor der Zugriff auf Ihre Inhalte ermöglicht wird. 
+Nachdem Sie Ihren privilegierten Konten zusätzlichen Schutz hinzugefügt und vor bekannten Angriffen geschützt haben, sollten Sie ihre Aufmerksamkeit auf den Schutz vor unbekannten Bedrohungen enwenden. Die entschlosseneren und fortgeschritteneren Gegner verwenden innovative und neue, unbekannte Methoden, um Organisationen angreift. Mit der umfangreichen Telemetrie von Daten, die von Microsoft über Milliarden von Geräten, Anwendungen und Diensten gesammelt wurden, können wir Defender for Office 365 unter Windows, Office 365 und Azure ausführen, um Zero-Day-Angriffe zu verhindern, Sandkastenumgebungen zu verwenden und die Gültigkeit zu überprüfen, bevor Wir Zugriff auf Ihre Inhalte zulassen. 
 
 
 |Empfehlung  |E3  |E5  |
 |---------|---------|---------|
-|**Konfigurieren von Microsoft Defender für Office 365**:<br>* Sichere Anlagen<br>* Sichere Links<br>* ATP für SharePoint, OneDrive und Microsoft Teams<br>* Antiphishing in Defender for Office 365 Protection|         |![grünes Häkchen](../media/green-check-mark.png) |
+|**Konfigurieren von Microsoft Defender für Office 365**:<br>* Sichere Anlagen<br>* Sichere Links<br>* Microsoft Defender for Endpoint für SharePoint, OneDrive und Microsoft Teams<br>* Antiphishing in Defender for Office 365 Protection|         |![grünes Häkchen](../media/green-check-mark.png) |
 |**Konfigurieren von Microsoft Defender for Endpoint-Funktionen:**<br>* Windows Defender Antivirus <br>* Exploit-Schutz <br> * Reduzierung der Angriffsfläche <br> * Hardwarebasierte Isolation <br>* Kontrollierter Ordnerzugriff     |         |![grünes Häkchen](../media/green-check-mark.png) |
 |**Verwenden Sie Microsoft Cloud App Security,** um SaaS-Apps zu ermitteln und mit der Verwendung von Verhaltensanalysen und Anomalieerkennung zu beginnen. |         |![grünes Häkchen](../media/green-check-mark.png) |
 
@@ -97,7 +97,7 @@ Das folgende Diagramm veranschaulicht diese Funktionen.
 Weitere Empfehlungen:
 - Sichere Partnerkanalkommunikation wie E-Mails mit TLS.
 - Öffnen Sie den Teamverbund nur für Partner, mit dem Sie kommunizieren.
-- Fügen Sie Ihrer Liste zugelassener E-Mails keine Absenderdomänen, einzelne Absender oder Quell-IPs hinzu, da diese Spam- und Schadsoftwareprüfungen umgehen können – Eine gängige Praxis bei Kunden ist das Hinzufügen ihrer eigenen akzeptierten Domänen oder einer Reihe anderer Domänen, bei denen E-Mail-Flussprobleme möglicherweise in der Liste zugelassener Domänen gemeldet wurden. Fügen Sie der Liste Spam- und Verbindungsfilter keine Domänen hinzu, da dadurch potenziell alle Spamprüfungen umgeht. 
+- Fügen Sie Ihrer Allowlist keine Absenderdomänen, einzelne Absender oder Quell-IPs hinzu, da diese Spam- und Schadsoftwareprüfungen umgehen können – Eine gängige Praxis bei Kunden ist das Hinzufügen ihrer eigenen akzeptierten Domänen oder einer Reihe anderer Domänen, bei denen E-Mail-Flussprobleme möglicherweise der Allowlist gemeldet wurden. Fügen Sie der Liste Spam- und Verbindungsfilter keine Domänen hinzu, da dadurch potenziell alle Spamprüfungen umgeht. 
 - Ausgehende Spambenachrichtigungen aktivieren – Aktivieren Sie ausgehende Spambenachrichtigungen intern an eine Verteilerliste an das Helpdesk- oder IT-Administratorteam, um zu melden, ob interne Benutzer Spam-E-Mails extern senden. Dies kann ein Indikator dafür sein, dass das Konto gefährdet wurde.
 - Remote PowerShell für alle Benutzer deaktivieren – Remote PowerShell wird hauptsächlich von Administratoren für den Zugriff auf Dienste für administrative Zwecke oder programmgesteuerten API-Zugriff verwendet. Es wird empfohlen, diese Option für Benutzer ohne Administratorrechte zu deaktivieren, um eine Aufklärung zu vermeiden, es sei denn, sie haben eine geschäftliche Anforderung, darauf zu zugreifen. 
 - Blockieren des Zugriffs auf das Microsoft Azure-Verwaltungsportal für alle Nichtadministratoren. Sie können dies erreichen, indem Sie eine Regel für bedingten Zugriff erstellen, um alle Benutzer zu blockieren, mit Ausnahme von Administratoren. 
@@ -109,14 +109,14 @@ Microsoft unternimmt zwar alle möglichen Maßnahmen, um Bedrohungen und Angriff
 
 Die "Assume Breach"-Einstellung erfordert die Implementierung einer Netzwerkstrategie ohne Vertrauenswürdigkeit, was bedeutet, dass Benutzer nicht vollständig vertrauenswürdig sind, nur weil sie sich intern im Netzwerk befinden. Im Rahmen der Autorisierung der Benutzer können stattdessen Sätze von Bedingungen angegeben werden, und wenn diese Bedingungen erfüllt sind, werden bestimmte Steuerelemente erzwungen. Zu den Bedingungen können der Geräteintestatus, der Zugriff auf die Anwendung, ausgeführte Vorgänge und das Benutzerrisiko gehören. Beispielsweise sollte eine Geräteregistrierungsaktion immer die MFA-Authentifizierung auslösen, um sicherzustellen, dass Ihrer Umgebung keine nicht mehr verwendeten Geräte hinzugefügt werden. 
 
-Eine Netzwerkstrategie ohne Vertrauenswürdigkeit erfordert außerdem, dass Sie wissen, wo Ihre Informationen gespeichert werden, und geeignete Steuerelemente für Klassifizierung, Schutz und Aufbewahrung anwenden. Um Ihre kritischsten und sensibelsten Ressourcen effektiv zu schützen, müssen Sie zuerst ermitteln, wo sich diese befinden, und Bestandsaufnahmen übernehmen, was eine Herausforderung darstellen kann. Als Nächstes arbeiten Sie mit Ihrer Organisation zusammen, um eine Steuerungsstrategie zu definieren. Das Definieren eines Klassifikationsschemas für eine Organisation und das Konfigurieren von Richtlinien, Bezeichnungen und Bedingungen erfordert eine sorgfältige Planung und Vorbereitung. Es ist wichtig zu wissen, dass dies kein IT-gesteuerter Prozess ist. Arbeiten Sie unbedingt mit Ihrem Rechts- und Complianceteam zusammen, um ein geeignetes Klassifizierungs- und Bezeichnungsschema für die Daten Ihrer Organisation zu entwickeln.
+Eine Netzwerkstrategie ohne Vertrauenswürdigkeit erfordert außerdem, dass Sie wissen, wo Ihre Informationen gespeichert werden, und geeignete Steuerelemente für Klassifizierung, Schutz und Aufbewahrung anwenden. Um Ihre kritischsten und sensibelsten Ressourcen effektiv zu schützen, müssen Sie zuerst ermitteln, wo sich diese befinden, und Bestandsaufnahmen übernehmen, was eine Herausforderung darstellen kann. Als Nächstes arbeiten Sie mit Ihrer Organisation zusammen, um eine Steuerungsstrategie zu definieren. Das Definieren eines Klassifikationsschemas für eine Organisation und das Konfigurieren von Richtlinien, Bezeichnungen und Bedingungen erfordern eine sorgfältige Planung und Vorbereitung. Es ist wichtig zu wissen, dass dies kein IT-gesteuerter Prozess ist. Arbeiten Sie unbedingt mit Ihrem Rechts- und Complianceteam zusammen, um ein geeignetes Klassifizierungs- und Bezeichnungsschema für die Daten Ihrer Organisation zu entwickeln.
 
 Mithilfe von Microsoft 365 Information Protection-Funktionen können Sie ermitteln, welche Informationen Sie haben, wo sie gespeichert sind und welche Informationen zusätzlichen Schutz erfordern. Der Informationsschutz ist ein kontinuierlicher Prozess, und Microsoft 365-Funktionen bieten Ihnen Einblick in die Verwendung und Verteilung vertraulicher Informationen durch Benutzer, wo Ihre Informationen derzeit gespeichert sind und wo sie fließen. Sie können auch sehen, wie Benutzer regulierte Informationen behandeln, um sicherzustellen, dass die entsprechenden Bezeichnungen und Schutzmaßnahmen angewendet werden.
 
 
 |Empfehlung |E3|E5 |
 |---------|---------|---------|
-|**Überprüfen und optimieren Sie Ihren bedingten Zugriff und die** zugehörigen Richtlinien, um ihre Ziele für ein vertrauenswürdiges Netzwerk ohne Vertrauensstellung zu erfüllen. Der Schutz vor bekannten Bedrohungen umfasst die Implementierung einer Reihe [empfohlener Richtlinien.](./office-365-security/microsoft-365-policies-configurations.md) Überprüfen Sie Ihre Implementierung dieser Richtlinien, um sicherzustellen, dass Sie Ihre Apps und Daten vor Hackern schützen, die Zugriff auf Ihr Netzwerk erhalten haben. Beachten Sie, dass die empfohlene Intune-App-Schutzrichtlinie für Windows 10 Windows Information Protection (WIP) aktiviert. WIP schützt vor versehentlichen Lecks ihrer Organisationsdaten über Apps und Dienste, z. B. E-Mails, soziale Medien und die öffentliche Cloud. |         |![grünes Häkchen](../media/green-check-mark.png)|
+|**Überprüfen und optimieren Sie Ihren bedingten Zugriff und die** zugehörigen Richtlinien, um ihre Ziele für ein vertrauenswürdiges Netzwerk ohne Vertrauensstellung zu erfüllen. Der Schutz vor bekannten Bedrohungen umfasst die Implementierung einer Reihe [empfohlener Richtlinien.](./office-365-security/microsoft-365-policies-configurations.md) Überprüfen Sie Ihre Implementierung dieser Richtlinien, um sicherzustellen, dass Sie Ihre Apps und Daten vor Hackern schützen, die Zugriff auf Ihr Netzwerk erhalten haben. Die empfohlene Intune-App-Schutzrichtlinie für Windows 10 aktiviert Windows Information Protection (WIP). WIP schützt vor versehentlichen Lecks ihrer Organisationsdaten über Apps und Dienste, z. B. E-Mails, soziale Medien und die öffentliche Cloud. |         |![grünes Häkchen](../media/green-check-mark.png)|
 |**Deaktivieren der externen E-Mail-Weiterleitung**. Hacker, die Zugriff auf das Postfach eines Benutzers erhalten, können Ihre E-Mails stehlen, indem sie das Postfach so festlegen, dass E-Mails automatisch weitergeleitet werden. Dies kann auch ohne das Bewusstsein des Benutzers geschehen. Sie können dies verhindern, indem Sie eine Nachrichtenflussregel konfigurieren.|![grünes Häkchen](../media/green-check-mark.png) |![grünes Häkchen](../media/green-check-mark.png)|
 |**Deaktivieren der anonymen externen Kalenderfreigabe**. Standardmäßig ist die externe anonyme Kalenderfreigabe zulässig. [Deaktivieren sie die Kalenderfreigabe,](/exchange/sharing/sharing-policies/modify-a-sharing-policy) um potenzielle lecks an vertraulichen Informationen zu reduzieren.|![grünes Häkchen](../media/green-check-mark.png) |![grünes Häkchen](../media/green-check-mark.png)|
 |**Konfigurieren von Richtlinien zur Verhinderung von Datenverlust für vertrauliche Daten**. Erstellen Sie eine Richtlinie zur Verhinderung von Datenverlust im Security Compliance Center, um vertrauliche Daten wie Kreditkartennummern, Sozialversicherungsnummern und Bankkontonummern zu ermitteln und &amp; zu schützen. Microsoft 365 enthält viele vordefinierte Typen vertraulicher Informationen, die Sie in Richtlinien zur Verhinderung von Datenverlust verwenden können. Sie können auch eigene Typen vertraulicher Informationen für vertrauliche Daten erstellen, die für Ihre Umgebung angepasst sind. |![grünes Häkchen](../media/green-check-mark.png)|![grünes Häkchen](../media/green-check-mark.png)|

@@ -1,7 +1,7 @@
 ---
 title: Zusammenfassung ihrer Microsoft 365 Defender-Pilotprojektergebnisse
 description: Schließen Sie Ihr Microsoft 365 Defender-Pilotprojekt ab, indem Sie Ihre Scorecard abschließen, Ihre Berichtsergebnisse analysieren und entscheiden, wie Sie vorankommen.
-keywords: Microsoft Threat Protection-Pilot, entscheiden Sie nach dem Microsoft Threat Protection-Pilotprojekt, was nach der Auswertung von Microsoft Threat Protection in der Produktion, dem Übergang vom Microsoft Threat Protection-Pilot zur Bereitstellung, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Geräte, Gerät, Identität, Benutzer, Daten, Anwendungen, Vorfälle, automatisierte Untersuchung und Behebung, erweiterte Suche
+keywords: Microsoft 365 Defender-Pilot, entscheiden Sie, was nach dem Microsoft 365 Defender-Pilotprojekt als Nächstes zu tun ist, was nach der Auswertung von Microsoft 365 Defender in der Produktion, dem Übergang von Microsoft 365 Defender-Piloten zur Bereitstellung, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Geräte, Gerät, Identität, Benutzer, Daten, Anwendungen, Vorfälle, automatisierte Untersuchung und Behebung, erweiterte Suche
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2553e88992b7eca906b4697edee4cdf632929444
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 64cdb37b64780a651b2689e68e21c5a385df5ba9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068608"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932869"
 ---
 # <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>Schließen und Zusammenfassen Ihres Microsoft 365 Defender-Pilotprojekts  
 

@@ -1,7 +1,7 @@
 ---
 title: Datenschutz für Microsoft Defender for Endpoint unter Linux
 description: Datenschutzsteuerelemente, konfigurieren von Richtlinieneinstellungen, die sich auf den Datenschutz auswirken, sowie Informationen zu den diagnosedaten, die in Microsoft Defender for Endpoint unter Linux gesammelt werden.
-keywords: microsoft, defender, atp, linux, privacy, diagnostic
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, privacy, diagnostic
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 69af56efa57f389842ed31afa5f0a74667bd8f7b
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: cbf68b6ce8397f0339b374a041ba2629b20db699
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903250"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933337"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Datenschutz für Microsoft Defender for Endpoint unter Linux
 
@@ -33,13 +33,13 @@ ms.locfileid: "51903250"
 
 > Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft verpflichtet sich, Ihnen die Informationen und Steuerelemente zur Verfügung zu stellen, die Sie benötigen, um entscheidungen darüber zu treffen, wie Ihre Daten gesammelt und verwendet werden, wenn Sie Defender for Endpoint für Linux verwenden.
+Microsoft verpflichtet sich, Ihnen die Informationen und Steuerelemente zur Verfügung zu stellen, die Sie benötigen, um Entscheidungen darüber zu treffen, wie Ihre Daten gesammelt und verwendet werden, wenn Sie Defender for Endpoint unter Linux verwenden.
 
 In diesem Thema werden die im Produkt verfügbaren Datenschutzsteuerelemente, die Verwaltung dieser Steuerelemente mit Richtlinieneinstellungen und weitere Details zu den erfassten Datenereignissen beschrieben.
 
 ## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Übersicht über Datenschutzsteuerelemente in Microsoft Defender for Endpoint unter Linux
 
-In diesem Abschnitt werden die Datenschutzsteuerelemente für die verschiedenen Arten von Daten beschrieben, die von Defender for Endpoint für Linux erfasst werden.
+In diesem Abschnitt werden die Datenschutzsteuerelemente für die verschiedenen Arten von Daten beschrieben, die von Defender for Endpoint unter Linux gesammelt werden.
 
 ### <a name="diagnostic-data"></a>Diagnosedaten
 
@@ -75,7 +75,7 @@ Es gibt drei Ebenen zum Steuern der Beispielübermittlung:
 
 Wenn Sie ein IT-Administrator sind, können Sie diese Steuerelemente auf Unternehmensebene konfigurieren. 
 
-Die Datenschutzsteuerelemente für die verschiedenen Arten von Daten, die im vorherigen Abschnitt beschrieben werden, werden in [Set preferences for Defender for Endpoint for Linux ausführlich beschrieben.](linux-preferences.md)
+Die Datenschutzsteuerelemente für die verschiedenen Arten von Daten, die im vorherigen Abschnitt beschrieben werden, werden in [Set preferences for Defender for Endpoint on Linux ausführlich beschrieben.](linux-preferences.md)
 
 Wie bei allen neuen Richtlinieneinstellungen sollten Sie sie sorgfältig in einer begrenzten, kontrollierten Umgebung testen, um sicherzustellen, dass die von Ihnen konfigurierten Einstellungen den gewünschten Effekt haben, bevor Sie die Richtlinieneinstellungen in Ihrer Organisation weiterverbreiten.
 
@@ -96,7 +96,7 @@ Die folgenden Felder gelten für alle Ereignisse als üblich:
 | org_id                  | Eindeutige ID, die dem Unternehmen zugeordnet ist, zu dem das Gerät gehört. Ermöglicht Microsoft zu ermitteln, ob sich Probleme auf eine ausgewählte Gruppe von Unternehmen auswirken und wie viele Unternehmen betroffen sind. |
 | hostname                | Lokaler Gerätename (ohne DNS-Suffix). Ermöglicht Microsoft zu ermitteln, ob sich Probleme auf eine ausgewählte Gruppe von Installationen auswirken und wie viele Benutzer betroffen sind. |
 | product_guid            | Eindeutige ID des Produkts. Ermöglicht Es Microsoft, Probleme zu unterscheiden, die sich auf unterschiedliche Produktrichtungen auswirken. |
-| app_version             | Version der Defender for Endpoint für Linux-Anwendung. Ermöglicht Microsoft, zu ermitteln, welche Versionen des Produkts ein Problem anzeigen, damit es ordnungsgemäß priorisiert werden kann.|
+| app_version             | Version der Defender for Endpoint unter Linux-Anwendung. Ermöglicht Microsoft, zu ermitteln, welche Versionen des Produkts ein Problem anzeigen, damit es ordnungsgemäß priorisiert werden kann.|
 | sig_version             | Version der Security Intelligence-Datenbank. Ermöglicht Microsoft, zu ermitteln, welche Versionen der Sicherheitsintelligenz ein Problem anzeigen, damit es ordnungsgemäß priorisiert werden kann. |
 | supported_compressions  | Liste der von der Anwendung unterstützten Komprimierungsalgorithmen, z. B. `['gzip']` . Ermöglicht Microsoft zu verstehen, welche Arten von Komprimierung verwendet werden können, wenn es mit der Anwendung kommuniziert. |
 | release_ring            | Ring, dem das Gerät zugeordnet ist (z. B. Insider Fast, Insider Slow, Production). Ermöglicht Microsoft, zu ermitteln, auf welchem Releasering ein Problem auftreten kann, damit es ordnungsgemäß priorisiert werden kann. |
@@ -163,7 +163,7 @@ Die folgenden Felder werden erfasst:
 
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
-| Version          | Version von Defender for Endpoint für Linux. |
+| Version          | Version von Defender for Endpoint unter Linux. |
 | instance_id      | Eindeutiger Bezeichner, der beim Start der Kernelerweiterung generiert wird. |
 | trace_level      | Ablaufverfolgungsebene der Kernelerweiterung. |
 | Subsystem        | Das zugrunde liegende Subsystem, das für den Echtzeitschutz verwendet wird. |
@@ -178,7 +178,7 @@ Die folgenden Felder werden erfasst:
 Diagnoseprotokolle werden nur mit Zustimmung des Benutzers im Rahmen des Feedback-Übermittlungsfeatures gesammelt. Die folgenden Dateien werden im Rahmen der Supportprotokolle gesammelt:
 
 - Alle Dateien unter */var/log/microsoft/mdatp*
-- Teilmenge der Dateien unter */etc/opt/microsoft/mdatp,* die von Defender for Endpoint für Linux erstellt und verwendet werden
+- Teilmenge der Dateien unter */etc/opt/microsoft/mdatp,* die von Defender for Endpoint unter Linux erstellt und verwendet werden
 - Produktinstallations- und Deinstallationsprotokolle unter */var/log/microsoft_mdatp_ \* .log*
 
 ### <a name="optional-diagnostic-data"></a>Optionale Diagnosedaten

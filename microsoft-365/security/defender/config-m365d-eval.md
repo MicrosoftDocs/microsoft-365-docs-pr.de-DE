@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren von Microsoft 365 Defender-Säulen für die Testumgebung oder Pilotumgebung
 description: Konfigurieren Sie Microsoft 365 Defender-Säulen, z. B. Microsoft Defender für Office 365, Microsoft Defender for Identity, Microsoft Cloud App Security und Microsoft Defender for Endpoint, für Ihre Testumgebung oder Pilotumgebung.
-keywords: Konfigurieren der Microsoft Threat Protection-Testversion, Microsoft Threat Protection-Testkonfiguration, Konfigurieren des Microsoft Threat Protection-Pilotprojekts, Konfigurieren von Microsoft Threat Protection-Säulen, Microsoft Threat Protection-Säulen
+keywords: Konfigurieren der Microsoft 365 Defender-Testversion, Microsoft 365 Defender-Testkonfiguration, Konfigurieren des Microsoft 365 Defender-Pilotprojekts, Konfigurieren von Microsoft 365 Defender-Säulen, Microsoft 365 Defender-Säulen
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9b192a029704d1354867b169efdf0d489345030e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 05bdc9cbb678a3d6c1cee726fc4d8c2e45d2d360
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580966"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933505"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Konfigurieren von Microsoft 365 Defender-Säulen für Ihre Testumgebung oder Pilotumgebung
 
@@ -162,9 +162,6 @@ Es gibt ein PowerShell-Modul namens *Office 365 Advanced Threat Protection Recom
 11. Wählen Sie [im Abschnitt Microsoft Defender for Identity-Einstellungen](https://go.microsoft.com/fwlink/?linkid=2040449) **Microsoft Defender for Endpoint **, und aktivieren Sie dann den Umschalter. Klicken Sie auf **Speichern**. 
 
     ![Bild of_the Microsoft Defender for Identity-Einstellungsseite, auf der Sie die Microsoft Defender for Endpoint-Umschaltseite aktivieren sollten](../../media/mtp-eval-52.png)
-
-> [!NOTE]
-> Windows Defender ATP wurde als Microsoft Defender for Endpoint umbenannt. Das Umbranding von Änderungen in allen unseren Portalen wird zur Konsistenz ausgeführt.
 
 
 ## <a name="configure-microsoft-cloud-app-security"></a>Konfigurieren von Microsoft Cloud App Security

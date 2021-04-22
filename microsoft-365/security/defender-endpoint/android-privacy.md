@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP für Android – Datenschutzinformationen
-description: Datenschutzsteuerelemente, Konfigurieren von Richtlinieneinstellungen, die sich auf den Datenschutz auswirken, sowie Informationen zu den diagnosedaten, die in Microsoft Defender ATP für Android gesammelt werden.
-keywords: microsoft, defender, atp, android, privacy, diagnostic
+title: Microsoft Defender für Endpunkt unter Android – Datenschutzinformationen
+description: Datenschutzsteuerelemente, Konfigurieren von Richtlinieneinstellungen, die sich auf den Datenschutz auswirken, sowie Informationen zu den diagnosedaten, die in Microsoft Defender for Endpoint auf Android gesammelt werden.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, android, privacy, diagnostic
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79f8882e21f23e75d85813cde03260ef17adf246
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 415a1f555e1a33c103894221086b783aa754cf32
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876109"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930137"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender für Endpunkt unter Android – Datenschutzinformationen
 
@@ -32,7 +32,7 @@ ms.locfileid: "51876109"
 > Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Defender for Endpoint für Android sammelt Informationen von Ihren konfigurierten Android-Geräten und speichert sie im selben Mandanten, in dem Sie Defender for Endpoint haben. Die Informationen werden gesammelt, um Defender for Endpoint für iOS sicher, aktuell und wie erwartet zu halten und den Dienst zu unterstützen.
+Defender for Endpoint unter Android sammelt Informationen von Ihren konfigurierten Android-Geräten und speichert sie im selben Mandanten, in dem Sie Defender for Endpoint haben. Die Informationen werden gesammelt, um Defender for Endpoint für Android sicher, auf dem neuesten Stand zu halten, wie erwartet zu gewährleisten und den Dienst zu unterstützen.
 
 Weitere Informationen zur Datenspeicherung finden Sie unter [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md).
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender testen
 description: Richten Sie Ihre Microsoft 365 Defender-Testumgebung oder Pilotumgebung ein, um die Sicherheitslösung zum Schutz von Geräten, Identität, Daten und Anwendungen in Ihrer Organisation auszuprobieren und zu erleben.
-keywords: Microsoft Threat Protection-Testversion, Testen von Microsoft Threat Protection, Bewerten von Microsoft Threat Protection, Microsoft Threat Protection-Evaluierungslabor, Microsoft Threat Protection-Pilot, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Geräte, Gerät, Identität, Benutzer, Daten, Anwendungen, Vorfälle, automatisierte Untersuchung und Behebung, erweiterte Suche
+keywords: Microsoft 365 Defender-Testversion, Testen von Microsoft 365 Defender, Evaluieren von Microsoft 365 Defender, Microsoft 365 Defender-Evaluierungslabor, Microsoft 365 Defender-Pilot, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Geräte, Gerät, Identität, Benutzer, Daten, Anwendungen, Vorfälle, automatisierte Untersuchung und Korrektur, erweiterte Suche
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2ea829e0e2697facd2522dbf16ced7d620662eee
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1c260588b80d8325567b74148a7a62586cfbc707
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068616"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933169"
 ---
 # <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Erstellen einer Microsoft 365 Defender-Testumgebung oder Pilotumgebung 
 

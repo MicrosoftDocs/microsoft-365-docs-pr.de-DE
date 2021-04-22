@@ -1,7 +1,7 @@
 ---
 title: Behandeln von Leistungsproblemen für Microsoft Defender for Endpoint unter Linux
-description: Behandeln von Leistungsproblemen in Microsoft Defender Endpoint unter Linux.
-keywords: microsoft, defender, atp, linux, performance
+description: Behandeln von Leistungsproblemen in Microsoft Defender for Endpoint unter Linux.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5aaa95ef8202f3d0957113d8f20a39e4d3840227
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 9964b27f29654a7cc474dc4fb8f84334ddaf381c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903986"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933217"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Behandeln von Leistungsproblemen für Microsoft Defender for Endpoint unter Linux
 
@@ -34,17 +34,17 @@ ms.locfileid: "51903986"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 > Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Dieser Artikel enthält einige allgemeine Schritte, die verwendet werden können, um Leistungsprobleme im Zusammenhang mit Defender for Endpoint für Linux zu einenten.
+Dieser Artikel enthält einige allgemeine Schritte, die verwendet werden können, um Leistungsprobleme im Zusammenhang mit Defender for Endpoint unter Linux zu einenten.
 
-Der Echtzeitschutz (Real-Time Protection, RTP) ist ein Feature von Defender for Endpoint für Linux, das Ihr Gerät kontinuierlich überwacht und vor Bedrohungen schützt. Es besteht aus Datei- und Prozessüberwachung und anderen Heuristiken.
+Der Echtzeitschutz (Real-Time Protection, RTP) ist ein Feature von Defender for Endpoint unter Linux, das Ihr Gerät kontinuierlich überwacht und vor Bedrohungen schützt. Es besteht aus Datei- und Prozessüberwachung und anderen Heuristiken.
 
-Abhängig von den ausgeführten Anwendungen und den Gerätemerkmalen kann es bei der Ausführung von Defender for Endpoint für Linux zu einer suboptimalen Leistung kommen. Insbesondere Anwendungen oder Systemprozesse, die über einen kurzen Zeitraum auf viele Ressourcen zugreifen, können zu Leistungsproblemen in Defender for Endpoint für Linux führen.
+Je nach den ausgeführten Anwendungen und den Gerätemerkmalen kann es bei der Ausführung von Defender for Endpoint unter Linux zu einer suboptimalen Leistung kommen. Insbesondere Anwendungen oder Systemprozesse, die über einen kurzen Zeitraum auf viele Ressourcen zugreifen, können zu Leistungsproblemen in Defender for Endpoint unter Linux führen.
 
 Stellen Sie vor dem Start sicher, dass andere Sicherheitsprodukte derzeit **nicht auf dem Gerät ausgeführt werden.** Mehrere Sicherheitsprodukte können Konflikte und Auswirkungen auf die Hostleistung haben.
 
 Die folgenden Schritte können verwendet werden, um diese Probleme zu beheben und zu beheben:
 
-1. Deaktivieren Sie den Echtzeitschutz mithilfe einer der folgenden Methoden, und beobachten Sie, ob sich die Leistung verbessert. Dieser Ansatz trägt dazu bei, die Leistungsprobleme von Defender for Endpoint für Linux zu eind nen.
+1. Deaktivieren Sie den Echtzeitschutz mithilfe einer der folgenden Methoden, und beobachten Sie, ob sich die Leistung verbessert. Dieser Ansatz hilft, die Leistungsprobleme von Defender for Endpoint unter Linux zu verengt.
 
     Wenn Ihr Gerät nicht von Ihrer Organisation verwaltet wird, kann der Echtzeitschutz über die Befehlszeile deaktiviert werden:
 
@@ -55,11 +55,11 @@ Die folgenden Schritte können verwendet werden, um diese Probleme zu beheben un
     Configuration property updated
     ```
 
-    Wenn Ihr Gerät von Ihrer Organisation verwaltet wird, kann der Echtzeitschutz von Ihrem Administrator mithilfe der Anweisungen unter Festlegen von Einstellungen für [Defender for Endpoint für Linux deaktiviert werden.](linux-preferences.md)
+    Wenn Ihr Gerät von Ihrer Organisation verwaltet wird, kann der Echtzeitschutz von Ihrem Administrator mithilfe der Anweisungen unter Festlegen von Einstellungen für [Defender for Endpoint unter Linux deaktiviert werden.](linux-preferences.md)
 
     Wenn das Leistungsproblem weiterhin besteht, während der Echtzeitschutz deaktiviert ist, könnte der Ursprung des Problems die Endpunkterkennungs- und Reaktionskomponente sein. In diesem Fall wenden Sie sich an den Kundensupport, um weitere Anweisungen und Gegenmaßnahmen zu erhalten.
 
-2. Um die Anwendungen zu finden, die die meisten Scans auslösen, können Sie von Defender for Endpoint für Linux gesammelte Echtzeitstatistiken verwenden.
+2. Um die Anwendungen zu finden, die die meisten Scans auslösen, können Sie Echtzeitstatistiken verwenden, die von Defender for Endpoint unter Linux gesammelt wurden.
 
     > [!NOTE]
     > Dieses Feature ist in Version 100.90.70 oder neuer verfügbar.
@@ -140,11 +140,11 @@ Die folgenden Schritte können verwendet werden, um diese Probleme zu beheben un
     125  CrashPlanService 164
     ```
 
-    Um die Leistung von Defender for Endpoint für Linux zu verbessern, suchen Sie den Server mit der höchsten Anzahl unter der Zeile, und fügen Sie einen Ausschluss `Total files scanned` hinzu. Weitere Informationen finden Sie unter [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).
+    Um die Leistung von Defender for Endpoint unter Linux zu verbessern, suchen Sie den Server mit der höchsten Nummer unter der Zeile, und fügen Sie einen Ausschluss `Total files scanned` hinzu. Weitere Informationen finden Sie unter [Configure and validate exclusions for Defender for Endpoint on Linux](linux-exclusions.md).
 
     >[!NOTE]
     > Die Anwendung speichert Statistiken im Arbeitsspeicher und verfolgt nur die Dateiaktivität, seit sie gestartet wurde und der Echtzeitschutz aktiviert wurde. Prozesse, die vor oder während Zeiträumen gestartet wurden, in denen der Echtzeitschutz deaktiviert war, werden nicht gezählt. Darüber hinaus werden nur Ereignisse gezählt, die Scans ausgelöst haben.
 
-5. Konfigurieren Sie Microsoft Defender Endpoint unter Linux mit Ausschlüssen für die Prozesse oder Datenträgerspeicherorte, die zu Leistungsproblemen beitragen, und aktivieren Sie den Echtzeitschutz erneut.
+5. Konfigurieren Sie Microsoft Defender for Endpoint unter Linux mit Ausschlüssen für die Prozesse oder Datenträgerspeicherorte, die zu Leistungsproblemen beitragen, und aktivieren Sie den Echtzeitschutz erneut.
 
-    Weitere Informationen finden Sie unter [Configure and validate exclusions for Microsoft Defender for Endpoint for Linux](linux-exclusions.md).
+    Weitere Informationen finden Sie unter [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions.md).

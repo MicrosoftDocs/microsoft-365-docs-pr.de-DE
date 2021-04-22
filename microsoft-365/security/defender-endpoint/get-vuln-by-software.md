@@ -1,7 +1,7 @@
 ---
 title: Auflisten von Sicherheitsrisiken nach Software
 description: Rufen Sie eine Liste der Sicherheitsrisiken in der installierten Software ab.
-keywords: apis, graph api, supported apis, get, vulnerabilities list, mdatp tvm api
+keywords: apis, graph api, supported apis, get, vulnerabilities list, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f05c1a67c845e7f88cbcb3ee88cf7a664d5a4bf
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c28417d9782d14d890e771ed401f8ee5d3c26bc0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166741"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932763"
 ---
 # <a name="list-vulnerabilities-by-software"></a>Auflisten von Sicherheitsrisiken nach Software
 
@@ -58,7 +58,7 @@ GET /api/Software/{Id}/vulnerabilities
 
 | Name        | Typ | Beschreibung
 |:--------------|:-------|:--------------|
-| Authorization | String | Bearer {token}. **Erforderlich.**
+| Authorization | Zeichenfolge | Bearer {token}. **Erforderlich.**
 
 ## <a name="request-body"></a>Anforderungstext
 Empty

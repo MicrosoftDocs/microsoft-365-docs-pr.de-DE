@@ -1,7 +1,7 @@
 ---
 title: Untersuchen von Microsoft Defender for Endpoint-Domänen
 description: Verwenden Sie die Untersuchungsoptionen, um zu sehen, ob Geräte und Server mit bösartigen Domänen kommuniziert haben.
-keywords: Untersuchen von Domäne, Domäne, bösartiger Domäne, Microsoft Defender Atp, Warnung, URL
+keywords: Untersuchen von Domäne, Domäne, bösartiger Domäne, Microsoft Defender for Endpoint, Warnung, URL
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 3d4520c805332bac41746a39bb8b668dbfb1a570
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 7826229ba67384137c033745a5b85e557fc9c4a7
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587491"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933469"
 ---
 # <a name="investigate-a-domain-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Untersuchen einer Domäne, die einer Microsoft Defender for Endpoint-Warnung zugeordnet ist
 

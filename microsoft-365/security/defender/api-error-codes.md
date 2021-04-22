@@ -1,7 +1,7 @@
 ---
 title: Allgemeine Microsoft 365 Defender REST-API-Fehlercodes
 description: Informationen zu den allgemeinen Microsoft 365 Defender REST-API-Fehlercodes
-keywords: api, error, codes, common errors, mtp, api error codes
+keywords: api, error, codes, common errors, Microsoft 365 Defender, api error codes
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ab564ddb0263b501b6aca979f2148dfb5cf92758
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e621b79d37a2c3a22394bd51e0493334eff461c7
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068656"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932881"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Allgemeine Microsoft 365 Defender REST-API-Fehlercodes
 
@@ -33,7 +33,7 @@ ms.locfileid: "51068656"
 
 **Gilt für:**
 
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.

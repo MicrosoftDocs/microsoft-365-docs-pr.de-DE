@@ -1,6 +1,6 @@
 ---
 title: Untersuchen schädlicher E-Mails, die in Office 365 zugestellt wurden, Suchen und Untersuchen von schädlichen E-Mails
-keywords: TIMailData-Inline, Sicherheitsvorfall, Vorfall, ATP PowerShell, E-Mail-Schadsoftware, gefährdete Benutzer, E-Mail-Phish, E-Mail-Schadsoftware, E-Mail-Kopfzeilen lesen, Kopfzeilen lesen, E-Mail-Kopfzeilen öffnen,spezielle Aktionen
+keywords: TIMailData-Inline, Sicherheitsvorfall, Vorfall, Microsoft Defender for Endpoint PowerShell, E-Mail-Schadsoftware, gefährdete Benutzer, E-Mail-Phish, E-Mail-Schadsoftware, E-Mail-Kopfzeilen lesen, Kopfzeilen lesen, E-Mail-Kopfzeilen öffnen,spezielle Aktionen
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -20,12 +20,12 @@ description: Erfahren Sie, wie Sie Bedrohungsuntersuchungs- und Reaktionsfunktio
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2781850eacf8b0fcf4909406aca335f1bbeb0753
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 02e396cac060f2b8431b2b70e89c18950596d9c2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204240"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933373"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Untersuchen schädlicher E-Mails, die in Office 365 zugestellt wurden
 
@@ -41,7 +41,7 @@ ms.locfileid: "51204240"
 > [!NOTE]
 > Wechseln Sie hier zum [Korrekturartikel.](remediate-malicious-email-delivered-office-365.md)
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Stellen Sie sicher, dass folgende Anforderungen erfüllt sind:
 

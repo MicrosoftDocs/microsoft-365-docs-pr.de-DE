@@ -1,7 +1,7 @@
 ---
 title: Häufig gestellte Fragen beim Aktivieren von Microsoft 365 Defender
 description: Erhalten Sie Antworten auf die am häufigsten gestellten Fragen zu Lizenzierung, Berechtigungen, Anfänglichen Einstellungen und anderen Produkten und Diensten im Zusammenhang mit der Aktivierung von Microsoft 365 Defender.
-keywords: häufig gestellte Fragen, HÄUFIG GESTELLTE Fragen, GCC, erste Schritte, Aktivieren von MTP, Microsoft Threat Protection, M365, Sicherheit, Datenspeicherort, erforderliche Berechtigungen, Lizenzberechtigung, Einstellungsseite
+keywords: Häufig gestellte Fragen, HÄUFIG GESTELLTE Fragen, GCC, erste Schritte, Aktivieren von Microsoft 365 Defender, Microsoft 365 Defender, M365, Sicherheit, Datenspeicherort, erforderlichen Berechtigungen, Lizenzberechtigung, Einstellungsseite
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7482bf614e7cb3ffad6596f3c5d8bc554d46d912
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 55c1a3807fe8e28ca12f4f638c1ab2ca717523ed
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068648"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933433"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Häufig gestellte Fragen beim Aktivieren von Microsoft 365 Defender
 

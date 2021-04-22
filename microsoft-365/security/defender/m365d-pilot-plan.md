@@ -1,7 +1,7 @@
 ---
 title: Planen Ihres Microsoft 365 Defender-Pilotprojekts
 description: Planen Sie Ihr Microsoft 365 Defender-Pilotprojekt mit Denkbeteiligten, um die Erwartungen zu verwalten und ein erfolgreiches Ergebnis sicherzustellen.
-keywords: Microsoft Threat Protection-Pilotprojekt, Planen des Microsoft Threat Protection-Pilotprojekts, Bewerten von Microsoft Threat Protection in der Produktion, Microsoft Threat Protection-Pilotprojekt, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Geräte, Gerät, Identität, Benutzer, Daten, Anwendungen, Vorfälle, automatisierte Untersuchung und Behebung, erweiterte Suche
+keywords: Microsoft 365 Defender-Pilotprojekt, Planen des Microsoft 365 Defender-Pilotprojekts, Evaluieren von Microsoft 365 Defender in der Produktion, Microsoft 365 Defender-Pilotprojekt, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Geräte, Gerät, Identität, Benutzer, Daten, Anwendungen, Vorfälle, automatisierte Untersuchung und Behebung, erweiterte Suche
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: aee508414b2388b04ab362eedb1f894a4c3d54fd
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 98f0c91a51cc2b73cc26e6fb53143a417a7a147e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063439"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932547"
 ---
 # <a name="planning-your-pilot-microsoft-365-defender-project"></a>Planen Ihres Microsoft 365 Defender-Pilotprojekts 
 
@@ -63,7 +63,7 @@ Die Typen von Betriebssystemen, die ausgewertet werden sollen, sollten auch basi
 
 ## <a name="use-cases"></a>Anwendungsfälle
 
-Use Cases stellen Anweisungen dar, wie das getestete Tool von den beabsichtigten Benutzern genutzt werden soll. Diese können aus der Sicht einer bestimmten Person, z. B. eines SOC-Analysten, als Benutzerberichte formuliert werden. Zum Beispiel:
+Use Cases stellen Anweisungen dar, wie das getestete Tool von den beabsichtigten Benutzern genutzt werden soll. Diese können aus der Sicht einer bestimmten Person, z. B. eines SOC-Analysten, als Benutzerberichte formuliert werden. Beispiel:
 - Als SOC-Analyst muss ich Warnungen und Ereignisse auf allen Geräten, Benutzern und Postfächern in meinem Netzwerk anzeigen, korrelieren, bewerten und verwalten. [Vorfallverwaltung]
 - Als SOC-Analyst muss ich über das Tool und den Prozess verfügen, um bösartige Ereignisse in meinem Netzwerk automatisch zu untersuchen und darauf zu reagieren. [Auto IR]
 - Als SOC-Analyst muss ich Daten aus meiner Umgebung durchsuchen, um bekannte und potenzielle Bedrohungen und verdächtige Aktivitäten zu finden. [Erweiterte Suche]

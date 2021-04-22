@@ -1,7 +1,7 @@
 ---
 title: Suche nach Bedrohungen auf geräten, E-Mails, Apps und Identitäten mit erweiterter Suche
 description: Untersuchen Sie gängige Suchszenarien und Beispielabfragen, die Geräte, E-Mails, Apps und Identitäten abdecken.
-keywords: Erweiterte Suche, Office365-Daten, Windows-Geräte, Office365-E-Mails normalisieren, E-Mails, Apps, Identitäten, Bedrohungssuche, Cyberbedrohungensuche, Suche, Abfrage, Telemetrie, Microsoft 365, Microsoft Threat Protection
+keywords: Erweiterte Suche, Office365-Daten, Windows-Geräte, Office365-E-Mails normalisieren, E-Mails, Apps, Identitäten, Bedrohungssuche, Suche nach Cyberbedrohungen, Suche, Abfrage, Telemetrie, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0fb8bb54e6a893fb434fe453c70ed38b8e8ccb30
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 8a811d60af281bb534776736e77c3eb54ab6a760
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499314"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932965"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Gefahrensuche über Geräte, E-Mails, Apps und Identitäten hinweg
 

@@ -19,12 +19,12 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: a9625b391260d27610bb304b0ae3788b541b7709
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9f6489425a924c15d1a5cddb8c9a7d3d7812e5f0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911995"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930233"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>Informationen zu Registrierungsnummern und Benachrichtigungen zur Überprüfung
 
@@ -36,7 +36,7 @@ Wir verwenden die Registrierungsnummer, um die Details Ihres Kontos zu überprü
 
 Für Länder, in denen die Registrierungsnummer erforderlich ist, gibt die Bezeichnung über dem Textfeld an, welcher Nummerntyp erforderlich ist.
 
-Im folgenden Screenshot gibt die Bezeichnung beispielsweise an, dass eine #A0 erforderlich ist.
+Im folgenden Screenshot gibt die Bezeichnung beispielsweise an, dass eine CNPJ -Registrierungsnummer (Brasilien) erforderlich ist.
 
 :::image type="content" source="../media/macregnum-cnpj-screenshot-400.png" alt-text="Screenshot des Registrierungsnummerfelds für C N P J-Nummer.":::
 

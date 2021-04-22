@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren von Microsoft Defender for Endpoint unter iOS-Features
 description: Beschreibt die Bereitstellung von Microsoft Defender for Endpoint unter iOS-Features
-keywords: microsoft, defender, atp, ios, configure, features, ios
+keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, configure, features, ios
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f5f7345f92b3ac76aa647a9caed63e5684be9c30
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 834ce13917237dd822bdfbb7b88967dcac4bc0f8
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903310"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929013"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Konfigurieren von Microsoft Defender for Endpoint unter iOS-Features
 
@@ -35,16 +35,16 @@ ms.locfileid: "51903310"
 > Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 > [!NOTE]
-> Defender for Endpoint für iOS würde ein VPN verwenden, um das Web Protection-Feature zur Verfügung zu stellen. Dies ist kein normales VPN und ein lokales VPN mit selbstschleifender Schleife, das keinen Datenverkehr außerhalb des Geräts verwendet.
+> Defender for Endpoint unter iOS würde ein VPN verwenden, um das Web Protection-Feature zur Verfügung zu stellen. Dies ist kein normales VPN und ein lokales VPN mit selbstschleifender Schleife, das keinen Datenverkehr außerhalb des Geräts verwendet.
 
-## <a name="conditional-access-with-defender-for-endpoint-for-ios"></a>Bedingter Zugriff mit Defender for Endpoint für iOS  
+## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>Bedingter Zugriff mit Defender for Endpoint unter iOS  
 Microsoft Defender for Endpoint unter iOS ermöglicht zusammen mit Microsoft Intune und Azure Active Directory die Erzwingung der Gerätekonformität und Richtlinien für bedingten Zugriff auf der Grundlage von Geräterisikostufen. Defender for Endpoint ist eine Mobile Threat Defense (MTD)-Lösung, die Sie bereitstellen können, um diese Funktion über Intune zu nutzen.
 
-Weitere Informationen zum Einrichten des bedingten Zugriffs mit Defender for Endpoint für iOS finden Sie unter [Defender for Endpoint und Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
+Weitere Informationen zum Einrichten des bedingten Zugriffs mit Defender for Endpoint unter iOS finden Sie unter [Defender for Endpoint und Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
 
 ## <a name="web-protection-and-vpn"></a>Web Protection und VPN
 
-Standardmäßig enthält defender for Endpoint für iOS das Webschutzfeature und aktiviert es. [Webschutz trägt](web-protection-overview.md) dazu bei, Geräte vor Webbedrohungen zu schützen und Benutzer vor Phishingangriffen zu schützen. Defender for Endpoint für iOS verwendet ein VPN, um diesen Schutz zu gewährleisten. Beachten Sie, dass es sich um ein lokales VPN handelt und im Gegensatz zu herkömmlichem VPN kein Netzwerkdatenverkehr außerhalb des Geräts gesendet wird.
+Standardmäßig enthält und aktiviert Defender for Endpoint unter iOS das Webschutzfeature. [Webschutz trägt](web-protection-overview.md) dazu bei, Geräte vor Webbedrohungen zu schützen und Benutzer vor Phishingangriffen zu schützen. Defender for Endpoint unter iOS verwendet ein VPN, um diesen Schutz zu gewährleisten. Beachten Sie, dass es sich um ein lokales VPN handelt und im Gegensatz zu herkömmlichem VPN kein Netzwerkdatenverkehr außerhalb des Geräts gesendet wird.
 
 Obwohl standardmäßig aktiviert, kann es einige Fälle sein, in denen Sie VPN deaktivieren müssen. Beispielsweise möchten Sie einige Apps ausführen, die nicht funktionieren, wenn ein VPN konfiguriert ist. In solchen Fällen können Sie vpn von der App auf dem Gerät deaktivieren, indem Sie die folgenden Schritte ausführen:
 
@@ -93,10 +93,10 @@ Führen Sie die folgenden Schritte aus, um eine Compliancerichtlinie für jailbr
 
 ## <a name="configure-custom-indicators"></a>Konfigurieren benutzerdefinierter Indikatoren
 
-Mit Defender for Endpoint für iOS können Administratoren auch benutzerdefinierte Indikatoren auf iOS-Geräten konfigurieren. Weitere Informationen zum Konfigurieren benutzerdefinierter Indikatoren finden Sie unter [Manage indicators](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-indicators).
+Mit Defender for Endpoint unter iOS können Administratoren auch benutzerdefinierte Indikatoren auf iOS-Geräten konfigurieren. Weitere Informationen zum Konfigurieren benutzerdefinierter Indikatoren finden Sie unter [Manage indicators](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-indicators).
 
 > [!NOTE]
-> Defender for Endpoint für iOS unterstützt das Erstellen benutzerdefinierter Indikatoren nur für IP-Adressen und URLs/Domänen.
+> Defender for Endpoint unter iOS unterstützt das Erstellen benutzerdefinierter Indikatoren nur für IP-Adressen und URLs/Domänen.
 
 ## <a name="report-unsafe-site"></a>Unsichere Website melden
 

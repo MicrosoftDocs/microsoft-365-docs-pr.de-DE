@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Schützen Sie Ihre Geschäftlichen E-Mails und Daten vor Cyberbedrohungen, einschließlich Ransomware, Phishing und schädlichen Anlagen.
-ms.openlocfilehash: 9d24381b5947049c506b19553a2ab3d77b95d7c8
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 109ba05b21ce9c1355be73dbdfb000d6eb8c4e4d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200317"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930471"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Top 12 Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus
 
@@ -46,12 +46,12 @@ Für Kunden, die unsere Unternehmenspläne verwenden, empfiehlt Microsoft, die i
 |2|[Schutz vor Bedrohungen](#2-protect-against-threats)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[Konfigurieren von Microsoft Defender für Office 365](#3-configure-microsoft-defender-for-office-365)|||![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Konfigurieren von Microsoft Defender for Identity](#4-configure-microsoft-defender-for-identity)|||![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[Aktivieren von Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5 |[Microsoft 365 Defender aktivieren](#5-turn-on-microsoft-365-defender)|||![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[Konfigurieren des Intune-Mobile-App-Schutzes für Smartphones und Tablets](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Konfigurieren von MFA und bedingten Zugriff für Gäste, einschließlich Intune-App-Schutz](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Registrieren von PCs für die Geräteverwaltung und Erfordern kompatibler PCs](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[Optimieren Ihres Netzwerks für cloudbasierte Konnektivität](#9-optimize-your-network-for-cloud-connectivity)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10  |[Benutzer trainieren](#10-train-users)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10  |[Schulung der Benutzer](#10-train-users)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |11|[Erste Schritte mit Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security)|||![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12 |[Überwachen auf Bedrohungen und Ergreifen von Maßnahmen](#12-monitor-for-threats-and-take-action)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
@@ -108,7 +108,7 @@ Ihr globaler Administrator kann die folgenden Schutzmaßnahmen konfigurieren:
 
 Sie müssen mit Ihrem Exchange Online-Administrator und SharePoint Online-Administrator zusammenarbeiten, um Defender für Office 365 für diese Workloads zu konfigurieren:
 
-- [ATP für SharePoint, OneDrive und Microsoft Teams](office-365-security/mdo-for-spo-odb-and-teams.md)
+- [Microsoft Defender for Endpoint für SharePoint, OneDrive und Microsoft Teams](office-365-security/mdo-for-spo-odb-and-teams.md)
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4: Konfigurieren von Microsoft Defender for Identity
 
@@ -132,7 +132,7 @@ Nachdem Sie einen oder mehrere Ihrer Defender for Office 365-Dienste konfigurier
 
 ## <a name="6-configure-intune-mobile-app-protection-for-phones-and-tablets"></a>6: Konfigurieren des Mobile App-Schutzes für Intune für Smartphones und Tablets
 
-Mit Microsoft Intune Mobile Application Management (MAM) können Sie die Daten Ihrer Organisation auf Smartphones und Tablets verwalten und schützen, ohne diese Geräte zu verwalten. So funktioniert es:
+Mit Microsoft Intune Mobile Application Management (MAM) können Sie die Daten Ihrer Organisation auf Smartphones und Tablets verwalten und schützen, ohne diese Geräte zu verwalten. Funktionsweise:
 
 - Sie erstellen eine App Protection Policy (APP), die bestimmt, welche Apps auf einem Gerät verwaltet werden und welche Verhaltensweisen zulässig sind (z. B. verhindern, dass Daten aus einer verwalteten App in eine nicht verwaltete App kopiert werden). Sie erstellen eine Richtlinie für jede Plattform (iOS, Android).
 - Nachdem Sie die App-Schutzrichtlinien erstellt haben, erzwingen Sie diese, indem Sie eine Regel für den bedingten Zugriff in Azure AD erstellen, um genehmigte Apps und app-Datenschutz zu benötigen.

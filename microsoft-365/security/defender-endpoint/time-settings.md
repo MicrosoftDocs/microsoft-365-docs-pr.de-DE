@@ -1,7 +1,7 @@
 ---
 title: Zeitzoneneinstellungen für Microsoft Defender Security Center
 description: Verwenden Sie die hier enthaltenen Informationen, um die Microsoft Defender Security Center-Zeitzoneneinstellungen zu konfigurieren und Lizenzinformationen anzeigen.
-keywords: Einstellungen, Microsoft Defender, Cybersecurity Threat Intelligence, Advanced Threat Protection, Zeitzone, utc, Ortszeit, Lizenz
+keywords: Einstellungen, Microsoft Defender, Cybersecurity Threat Intelligence, Microsoft Defender for Endpoint, Zeitzone, utc, Ortszeit, Lizenz
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e395420b92c29977f1c802d1c10683492c1aba10
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: df55a1b0e92c24b5f52032330ef95bf19aeb8cb3
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470465"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932631"
 ---
 # <a name="microsoft-defender-security-center-time-zone-settings"></a>Zeitzoneneinstellungen für Microsoft Defender Security Center
 

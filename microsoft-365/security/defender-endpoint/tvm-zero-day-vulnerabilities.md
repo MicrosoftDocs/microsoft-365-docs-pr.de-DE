@@ -1,7 +1,7 @@
 ---
 title: Minimieren von Zero-Day-Sicherheitsrisiken – Bedrohungs- und Sicherheitsrisikoverwaltung
 description: Erfahren Sie, wie Sie Zero-Day-Sicherheitsrisiken in Ihrer Umgebung durch das Bedrohungs- und Sicherheitsrisikomanagement finden und mindern können.
-keywords: mdatp tvm zero day vulnerabilites, tvm, threat & vulnerability management, zero day, 0-day, mitigate 0 day vulnerabilites, vulnerable CVE
+keywords: Microsoft Defender for Endpoint tvm zero day vulnerabilites, tvm, threat & vulnerability management, zero day, 0-day, mitigate 0 day vulnerabilites, vulnerable CVE
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 941e4989dcb91ff9240131f5980d0e1eced2b21d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: be508e646a67f01887814a0e72170e438ee86212
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501223"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933061"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Minimieren von Zero-Day-Sicherheitsrisiken – Bedrohungs- und Sicherheitsrisikoverwaltung
 

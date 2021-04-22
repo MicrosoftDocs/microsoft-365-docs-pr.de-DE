@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Microsoft Defender for Endpoint mithilfe von Configuration Manager
 description: Informationen zum Verwalten von Microsoft Defender for Endpoint mit Configuration Manager
-keywords: nach der Migration, verwalten, Betrieb, Wartung, Auslastung, Configuration Manager, windows defender advanced threat protection, atp, edr
+keywords: nach der Migration, Verwalten, Betrieb, Wartung, Auslastung, Configuration Manager, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: bd6b6bd2721b686ab10922d09a9e94b9ebcce522
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 0cd52388feb987b4231d911cd3c3fd10babba017
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185650"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933205"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Verwalten von Microsoft Defender for Endpoint mit Configuration Manager
 

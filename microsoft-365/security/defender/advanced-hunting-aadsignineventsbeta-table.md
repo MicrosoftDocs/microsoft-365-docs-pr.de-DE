@@ -1,7 +1,7 @@
 ---
 title: AADSignInEventsBeta-Tabelle im schema der erweiterten Suche
 description: Informationen zu Informationen zur Tabelle mit Azure Active Directory-Anmeldeereignissen des schemas für die erweiterte Suche
-keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft Threat Protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, file, IP address, device, machine, user, account, identity, AAD
+keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, file, IP address, device, machine, user, account, identity, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7b595496c28710bfa25fc88653425242770bf57f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 93735ee3bf8d9b95ab320c2bc158d6ebfe27186c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063616"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932607"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -35,7 +35,7 @@ ms.locfileid: "51063616"
 
 >[!IMPORTANT]
 > Die Tabelle befindet sich derzeit in der Betaversion und wird kurzfristig angeboten, damit Sie Azure `AADSignInEventsBeta` Active Directory (AAD)-Anmeldeereignisse durchsuchen können. Wir verschieben schließlich alle Anmeldeschemainformationen in die `IdentityLogonEvents` Tabelle.<br><br>
-> Kunden, die über die integrierte Microsoft Defender for Endpoint-Lösung des Azure Security Centers auf Microsoft 365 Defender zugreifen können, aber keine Lizenzen für Microsoft Defender for Office, Microsoft Defender for Identity oder Microsoft Cloud App Security besitzen, können dieses Schema nicht anzeigen. 
+> Kunden, die über die integrierte Microsoft Defender for Endpoint-Lösung von Azure Defender auf Microsoft 365 Defender zugreifen können, aber keine Lizenzen für Microsoft Defender for Office, Microsoft Defender for Identity oder Microsoft Cloud App Security besitzen, können dieses Schema nicht anzeigen. 
 
  
 
@@ -61,7 +61,7 @@ Informationen zu anderen Tabellen im Schema „Erweiterte Suche“ finden Sie un
 | `AccountObjectId`                 | Zeichenfolge        | Eindeutige ID für das Konto in Azure AD                                                                                                                                       |
 | `AccountUpn`                      | Zeichenfolge        | Benutzerprinzipalname (UPN) des Kontos                                                                                                                                            |
 | `IsExternalUser`                  | int        | Gibt an, ob der angemeldete Benutzer extern ist. Mögliche Werte: -1 (nicht festgelegt), 0 (nicht extern), 1 (extern).                                                                   |
-| `IsGuestUser`                     | boolean       | Gibt an, ob der angemeldete Benutzer ein Gast im Mandanten ist                                                                                                                  |
+| `IsGuestUser`                     | Boolescher Wert       | Gibt an, ob der angemeldete Benutzer ein Gast im Mandanten ist                                                                                                                  |
 | `AlternateSignInName`             | Zeichenfolge        | On-premises user principal name (UPN) of the user signing in to Azure AD                                                                                                            |
 | `LastPasswordChangeTimestamp`     | Datum/Uhrzeit        | Datum und Uhrzeit, zu dem der benutzer, der sich zuletzt angemeldet hat, sein Kennwort geändert hat                                                                                                              |
 | `ResourceDisplayName`             | Zeichenfolge        | Anzeigename der Ressource, auf die zugegriffen wird                                                                                                                                               |

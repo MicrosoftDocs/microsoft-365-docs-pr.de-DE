@@ -1,7 +1,7 @@
 ---
 title: Übersicht – Erweiterte Suche
 description: Erfahren Sie mehr über erweiterte Suchabfragen in Microsoft 365 und wie Sie diese verwenden, um Bedrohungen und Schwachstellen in Ihrem Netzwerk proaktiv zu ermitteln.
-keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungensuche, Microsoft Threat Protection, microsoft 365, mtp, m365, Suche, Abfrage, Telemetrie, benutzerdefinierte Erkennungen, Schema, Kusto, microsoft 365, Microsoft Threat Protection
+keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 3532fd461fff02fac54e96e0a1a1e69c39c16907
-ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
+ms.openlocfilehash: df48ec921dee7d8f3b441ed3f68ed148c5c6c857
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51657019"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932977"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Proaktive Suche nach Bedrohungen mit erweiterter Suche in Microsoft 365 Defender
 
@@ -55,7 +55,7 @@ Diese Funktion ähnelt der [erweiterten Suche in Microsoft Defender for Endpoint
 
 Um die erweiterte Suche zu verwenden, [aktivieren Sie Microsoft 365 Defender](m365d-enable.md).
 
-### <a name="before-you-begin"></a>Bevor Sie beginnen
+### <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Benutzer benötigen eine der folgenden Berechtigungsstufen für den Zugriff auf Microsoft Defender:
 

@@ -2,7 +2,7 @@
 title: Beheben von Installationsproblemen für Microsoft Defender for Endpoint unter Linux
 ms.reviewer: ''
 description: Beheben von Installationsproblemen für Microsoft Defender for Endpoint unter Linux
-keywords: microsoft, defender, atp, linux, installation
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 270ad1145308aaa2af703cda84307a4a96097a53
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 12f648ce476f6e29cbb6b038cc42f2e744d77104
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903130"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933301"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Beheben von Installationsproblemen für Microsoft Defender for Endpoint unter Linux
 

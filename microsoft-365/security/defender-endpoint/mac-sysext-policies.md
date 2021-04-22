@@ -1,7 +1,7 @@
 ---
 title: Neue Konfigurationsprofile für macOS Catalina und neuere Versionen von macOS
 description: In diesem Thema werden die Änderungen beschrieben, die vorgenommen werden müssen, um von den Systemerweiterungen zu profitieren, die als Ersatz für Kernelerweiterungen unter macOS Catalina und neueren Versionen von macOS verwendet werden.
-keywords: microsoft, defender, atp, mac, kernel, system, extensions, catalina
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: db24bea3bddc682eceda8e6ea3fe2749b6b2778f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 28a332cec68521741bdda62aeecd25440552344a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689125"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932739"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Neue Konfigurationsprofile für macOS Catalina und neuere Versionen von macOS
 

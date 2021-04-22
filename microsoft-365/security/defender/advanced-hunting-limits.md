@@ -1,7 +1,7 @@
 ---
 title: Erweiterte Kontingente und Verwendungsparameter in Microsoft 365 Defender
 description: Verstehen verschiedener Kontingente und Verwendungsparameter (Dienstbeschränkungen), die den erweiterten Suchesdienst reaktionsfähig halten
-keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungensuche, Microsoft Threat Protection, microsoft 365, mtp, m365, Suche, Abfrage, Telemetrie, Schema, Kusto, CPU-Grenzwert, Abfragebeschränkung, Ressourcen, maximale Ergebnisse, Kontingent, Parameter, Zuordnung
+keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema, kusto, CPU limit, query limit, resources, maximum results, quota, parameters, allocation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ca79abfa95feb65f98ec32ae8dbc0093e34d58e6
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: c9526363b0430514455db1fbdf12cfb7a18229f1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498431"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932989"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>Erweiterte Kontingente und Verwendungsparameter
 

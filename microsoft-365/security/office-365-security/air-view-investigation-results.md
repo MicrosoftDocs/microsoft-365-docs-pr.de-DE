@@ -1,6 +1,6 @@
 ---
 title: Anzeigen der Ergebnisse einer automatisierten Untersuchung in Microsoft 365
-keywords: AIR, AutoIR, ATP, automatisiert, Untersuchung, Korrektur, Aktionen
+keywords: AIR, autoIR, Microsoft Defender for Endpoint, automatisiert, Untersuchung, Korrektur, Aktionen
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -19,12 +19,12 @@ description: Während und nach einer automatisierten Untersuchung in Microsoft 3
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8bf18a9fb80805581a1439b3965a664fd0868248
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ebdd25e9bddf53682f747fff7477d49dd1c94755
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205531"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933493"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Details und Ergebnisse einer automatisierten Untersuchung in Microsoft 365
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender advanced hunting API
 description: Erfahren Sie, wie Sie erweiterte Suchabfragen mithilfe der erweiterten Such-API von Microsoft 365 Defender ausführen.
-keywords: Erweiterte Suche, APIs, API, MTP, M365 Defender, Microsoft 365 Defender
+keywords: Erweiterte Suche, APIs, API, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 482801bb47429ae370e06cfcbcf26bacfb8b2a92
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c988a609a329c8f7f8988314e56aae942beebac5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066760"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932893"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender Advanced hunting API
 
@@ -33,7 +33,7 @@ ms.locfileid: "51066760"
 
 **Gilt für:**
 
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.

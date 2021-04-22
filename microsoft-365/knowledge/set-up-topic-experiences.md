@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Informationen zum Einrichten von Microsoft Viva Topics
-ms.openlocfilehash: 629008e083d71e09632b05e21eaefb011d7d9ce2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19395cf3a9ecc991f08f375425803cb81a2a1d35
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929444"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930221"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Einrichten von Microsoft Viva Topics
 
@@ -36,6 +36,27 @@ Dieses Video zeigt den Prozess zum Einrichten von Themen in Microsoft 365.
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Li0E]  
 
 <br>
+
+## <a name="assign-licenses"></a>Lizenzen zuweisen
+
+Sie müssen lizenzen für die Benutzer zuweisen, die Themen verwenden. Nur Benutzer mit einer Lizenz können Informationen zu Themen wie Highlights, Themenkarten, Themenseiten und dem Themencenter anzeigen. 
+
+So weisen Sie Lizenzen zu
+
+1. Klicken Sie im Microsoft 365 Admin Center auf **Benutzer** > **Aktive Benutzer**.
+
+2. Wählen Sie die Benutzer aus, die Sie lizenzen möchten, und klicken Sie auf **Lizenzen und Apps**.
+
+3. Wählen **Sie unter Lizenzen** die Option Viva Topics **aus.**
+
+4. Stellen **Sie unter Apps** sicher, dass Graph Connectors Search with Index **(Viva Topics)** und Viva **Topics** beide ausgewählt sind.
+
+   > [!div class="mx-imgBorder"]
+   > ![Microsoft Viva Topics-Lizenzen im Microsoft 365 Admin Center](../media/topic-experiences-licenses.png)
+
+5. Klicken Sie auf **Änderungen speichern**.
+
+Es kann bis zu einer Stunde dauern, bis Benutzer zugriff auf Themen erhalten, nachdem die Lizenzen zugewiesen wurden.
 
 ## <a name="set-up-topics"></a>Einrichten von Themen
 
@@ -124,25 +145,6 @@ So richten Sie Themen ein
     ![Angewendete Einstellungen](../media/ksetup7.png)    
 
 Beachten Sie, dass es bei der ersten Aktivierung der Themenermittlung bis zu zwei Wochen dauern kann, bis alle vorgeschlagenen Themen in der Ansicht Themen verwalten angezeigt werden. Die Themenermittlung wird fortgesetzt, wenn neue Inhalte oder Aktualisierungen von Inhalten vorgenommen werden. Es ist normal, dass es Schwankungen bei der Anzahl vorgeschlagener Themen in Ihrer Organisation gibt, wenn Neue Informationen von Viva Topics ausgewertet werden.
-
-## <a name="assign-licenses"></a>Zuweisen von Lizenzen
-
-Nachdem Sie die Themenerfahrung konfiguriert haben, müssen Sie den Benutzern, die Themen verwenden, Lizenzen zuweisen. Nur Benutzer mit einer Lizenz können Informationen zu Themen wie Highlights, Themenkarten, Themenseiten und dem Themencenter anzeigen. 
-
-So weisen Sie Lizenzen zu
-
-1. Klicken Sie im Microsoft 365 Admin Center auf **Benutzer** > **Aktive Benutzer**.
-
-2. Wählen Sie die Benutzer aus, die Sie lizenzen möchten, und klicken Sie auf **Lizenzen und Apps**.
-
-3. Wählen **Sie unter Lizenzen** die Option Viva Topics **aus.**
-
-4. Stellen **Sie unter Apps** sicher, dass Graph Connectors Search with Index **(Viva Topics)** und Viva **Topics** beide ausgewählt sind.
-
-   > [!div class="mx-imgBorder"]
-   > ![Microsoft Viva Topics-Lizenzen im Microsoft 365 Admin Center](../media/topic-experiences-licenses.png)
-
-5. Klicken Sie auf **Änderungen speichern**.
 
 ## <a name="manage-topic-experiences"></a>Verwalten von Themenerfahrungen
 

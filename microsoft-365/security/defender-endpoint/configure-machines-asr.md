@@ -1,7 +1,7 @@
 ---
 title: Optimieren der Bereitstellung und Erkennung von ASR-Regeln
 description: Optimieren Sie Ihre Regeln zur Reduzierung der Angriffsfläche (Attack Surface Reduction, ASR), um typische Schadsoftware-Exploits zu identifizieren und zu verhindern.
-keywords: Onboard, Intune-Verwaltung, MDATP, WDATP, Microsoft Defender, Windows Defender, erweiterter Bedrohungsschutz, Reduzierung der Angriffsfläche, ASR, Sicherheitsgrundlinie
+keywords: Onboard, Intune-Verwaltung, Microsoft Defender for Endpoint, Microsoft Defender, Windows Defender, Attack Surface Reduction, ASR, Security Baseline
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a5ce39bb3ff0bf3eea4ac4e89c554de43499b15f
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 91295135c833c6b403078bdfd517c7b84ec7d630
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165477"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932847"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>Optimieren der Bereitstellung und Erkennung von ASR-Regeln
 

@@ -1,7 +1,7 @@
 ---
 title: Get devices onboarded to Microsoft Defender for Endpoint
 description: Verfolgen Sie das Onboarding von von Intune verwalteten Geräten zu Microsoft Defender for Endpoint, und erhöhen Sie die Onboardingrate.
-keywords: Onboard, Intune-Verwaltung, MDATP, WDATP, Microsoft Defender, Windows Defender, erweiterter Bedrohungsschutz, Konfigurationsverwaltung
+keywords: Onboard, Intune-Verwaltung, Microsoft Defender for Endpoint, Microsoft Defender, Windows Defender, Konfigurationsverwaltung
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 09ca9fb466efd7764f7459a4754cfb30c8100bdb
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: e0d5a13b0c33516209bd2d18361a1de6ab9245c2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904140"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932941"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Get devices onboarded to Microsoft Defender for Endpoint
 
@@ -71,7 +71,7 @@ Erstellen Sie auf der Seite Gerätekonformität ein Konfigurationsprofil speziel
 
 Weitere Informationen finden Sie [unter Verwenden von Intune-Gerätekonfigurationsprofilen zum Onboarding von Geräten in Defender for Endpoint](https://docs.microsoft.com/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile).
 
->Möchten Sie Microsoft Defender ATP erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+>Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Sicherstellen, dass Ihre Geräte ordnungsgemäß konfiguriert sind](configure-machines.md)
