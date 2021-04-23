@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bf635ed03cb0d99d54fc94b622bf244447b32a80
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 748b3534ef1f6ca5736667fc3910bb9fa96d23ff
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935701"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952536"
 ---
 # <a name="custom-detections-overview"></a>Benutzerdefinierte Erkennungen – Übersicht
 
@@ -32,6 +32,7 @@ ms.locfileid: "51935701"
 
 **Gilt für:**
 - Microsoft 365 Defender
+- Microsoft Defender für Endpunkt
 
 Mit benutzerdefinierten Erkennungen können Sie proaktiv verschiedene Ereignisse und Systemzustände überwachen und darauf reagieren, einschließlich mutmaßlicher Sicherheitsverletzungen und falsch konfigurierter Endpunkte. Dies wird durch anpassbare Erkennungsregeln ermöglicht, die automatisch Warnungen auslösen, sowie Reaktionsaktionen.
 

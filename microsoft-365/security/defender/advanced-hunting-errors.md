@@ -20,16 +20,21 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d8d165f39c45bd235800dc951d50934b47dd7ff5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 32d50103c6476a89f24568edeea75a206e37e227
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935449"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952680"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Behandeln von Fehlern bei der erweiterten Suche
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+**Gilt für:**
+- Microsoft 365 Defender
+- Microsoft Defender für Endpunkt
 
 
 Bei der erweiterten Suche werden Fehler angezeigt, die bei Syntaxfehlern angezeigt werden sollen, und immer dann, wenn Abfragen vordefinierte [Kontingente und Verwendungsparameter treffen.](advanced-hunting-limits.md) In der folgenden Tabelle finden Sie Tipps zum Beheben oder Vermeiden von Fehlern.
@@ -43,6 +48,8 @@ Bei der erweiterten Suche werden Fehler angezeigt, die bei Syntaxfehlern angezei
 | Grenzwert für die Ergebnisgröße überschritten  | Die Aggregatgröße des Ergebnissets für die Abfrage hat die maximale Größe überschritten. Dieser Fehler kann auftreten, wenn das Ergebnisset so groß ist, dass das Abschneiden an der Grenze von 10.000 Datensatz nicht auf eine akzeptable Größe reduziert werden kann. Ergebnisse mit mehreren Spalten mit ansehnlichem Inhalt sind wahrscheinlicher von diesem Fehler betroffen. | [Optimieren der Abfrage](advanced-hunting-best-practices.md) | `Result size limit exceeded. Use "summarize" to aggregate results, "project" to drop uninteresting columns, or "take" to truncate results.` |
 | Übermäßiger Ressourcenverbrauch | Die Abfrage hat zu viele Ressourcen verbraucht und wurde nicht mehr abgeschlossen. In einigen Fällen identifiziert die erweiterte Suche den bestimmten Operator, der nicht optimiert wurde. | [Optimieren der Abfrage](advanced-hunting-best-practices.md) | -`Query stopped due to excessive resource consumption.`<br>-`Query stopped. Adjust use of the <operator name> operator to avoid excessive resource consumption.` |
 | Unbekannte Fehler | Die Abfrage ist aus einem unbekannten Grund fehlgeschlagen. | Führen Sie die Abfrage erneut aus. Wenden Sie sich über das Portal an Microsoft, wenn Abfragen weiterhin unbekannte Fehler zurückgeben. | `An unexpected error occurred during query execution. Please try again in a few minutes.`
+
+
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Bewährte Methoden für die erweiterte Suche](advanced-hunting-best-practices.md)

@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: fcfddadf13e000156fa5431cc30bc72f4f3537e2
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e4469d8abcfa8308c64e2efa7f7dc4f0156e5718
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581046"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957527"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Voraussetzungen für Microsoft Managed Desktop
 
@@ -27,7 +27,7 @@ In diesem Thema werden die Infrastrukturanforderungen beschrieben, die Sie erfü
 
 Bereich | Erforderliche Details
 --- | ---
-Lizenzierung |Microsoft Managed Desktop erfordert die Microsoft 365 E3-Lizenz mit Microsoft Defender for Endpoint (oder entsprechenden), die Ihren Benutzern zugewiesen ist. Zwei Lizenzen für Azure Active Directory Premium 2 müssen im Mandanten verfügbar sein, benutzer benötigen diese Lizenz jedoch nicht. <br>Weitere Informationen zu den spezifischen Dienstplänen finden Sie [unter Weitere Informationen zu Lizenzen](#more-about-licenses) in diesem Thema.<br>Weitere Informationen zu verfügbaren Lizenzen finden Sie unter [Microsoft 365-Lizenzierung](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
+Lizenzierung |Microsoft Managed Desktop erfordert die Microsoft 365 E3-Lizenz mit Microsoft Defender for Endpoint (oder entsprechenden), die Ihren Benutzern zugewiesen ist.<br>Weitere Informationen zu den spezifischen Dienstplänen finden Sie [unter Weitere Informationen zu Lizenzen](#more-about-licenses) in diesem Thema.<br>Weitere Informationen zu verfügbaren Lizenzen finden Sie unter [Microsoft 365-Lizenzierung](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).
 Konnektivität |  Alle Microsoft Managed Desktop-Geräte erfordern Konnektivität mit zahlreichen Microsoft-Dienstendpunkten aus dem Unternehmensnetzwerk.<br><br>Die vollständige Liste der erforderlichen IPs und URLs finden Sie unter [Netzwerkkonfiguration](../get-ready/network.md). 
 Azure Active Directory |    Azure Active Directory (Azure AD) muss entweder die Autoritätsquelle für alle Benutzerkonten sein, oder Benutzerkonten müssen mit der neuesten unterstützten Version von Azure AD Connect aus lokalem Active Directory synchronisiert werden.<br><br>[Enterprise State Roaming](/azure/active-directory/devices/enterprise-state-roaming-overview) muss für Microsoft Managed Desktop-Benutzer aktiviert sein.<br><br>Weitere Informationen finden Sie unter [Azure AD Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect).<br><br>Weitere Informationen zu unterstützten Azure AD Connect-Versionen finden Sie unter [Azure AD Connect:Version Release History](/azure/active-directory/hybrid/reference-connect-version-history).
 Authentifizierung |    Wenn Azure AD nicht die Quelle der primären Authentifizierung für Benutzerkonten ist, müssen Sie eine der folgenden Einstellungen in Azure AD Connect konfigurieren:<br>- Kennworthashsynchronisierung<br>- Pass-Through-Authentifizierung<br>– Ein externer Identitätsanbieter (einschließlich Windows Server ADFS und Nicht-Microsoft-IDPs), der für die Erfüllung der Azure AD-Integrationsanforderungen konfiguriert ist. Weitere Informationen [finden Sie in](https://www.microsoft.com/download/details.aspx?id=56843) den Richtlinien. <br><br>Beim Festlegen von Authentifizierungsoptionen mit Azure AD Connect wird auch ein Kennwortrückschreiben empfohlen. Weitere Informationen finden Sie unter [Kennwortrückschreiben](/azure/active-directory/authentication/howto-sspr-writeback). <br><br>Wenn ein externer Identitätsanbieter implementiert ist, müssen Sie die Lösung überprüfen:<br>– Erfüllt die Azure AD-Integrationsanforderungen<br>– Unterstützt bedingten Azure AD-Zugriff, wodurch die Microsoft Managed Desktop-Gerätekonformitätsrichtlinie konfiguriert werden kann<br>– Ermöglicht die Geräteregistrierung und -verwendung von Microsoft 365-Diensten oder -Features, die als Teil von Microsoft Managed Desktop erforderlich sind <br><br>Weitere Informationen zu Authentifizierungsoptionen mit Azure AD finden Sie unter [Azure AD Connect-Benutzer-Anmeldeoptionen](/azure/active-directory/connect/active-directory-aadconnect-user-signin).
@@ -65,6 +65,6 @@ Microsoft Managed Desktop erfordert bestimmte Lizenzoptionen, um funktionieren z
 4. [Netzwerkkonfiguration für Microsoft Managed Desktop](network.md)
 5. [Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop](certs-wifi-lan.md)
 6. [Vorbereiten des lokalen Ressourcenzugriffs für Microsoft Managed Desktop](authentication.md)
-7. [Anwendungen in Microsoft Managed Desktop](apps.md)
-8. [Voraussetzungen von zugeordneten Laufwerken für Microsoft Managed Desktop](mapped-drives.md)
-9. [Voraussetzungen von Druckressourcen für Microsoft Managed Desktop](printing.md)
+7. [Apps im Microsoft Managed Desktop](apps.md)
+8. [Vorbereiten zugeordneter Laufwerke für Microsoft Managed Desktop](mapped-drives.md)
+9. [Vorbereiten der Druckressourcen für Microsoft Managed Desktop](printing.md)

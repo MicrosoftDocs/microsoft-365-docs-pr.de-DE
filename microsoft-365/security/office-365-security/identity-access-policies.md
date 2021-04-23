@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 7ade29259a5552bc9bbaac4b143842c69d05f917
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4b7315cbb8704b691ce4f3d6b96958f18248b478
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204168"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952632"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 
@@ -55,18 +55,18 @@ Der Rest dieses Artikels beschreibt, wie Diese Richtlinien konfiguriert werden.
 
 Um Ihnen Zeit zum Ausführen dieser Aufgaben zu geben, empfehlen wir die Implementierung der Basisrichtlinien in der in dieser Tabelle aufgeführten Reihenfolge. Die MFA-Richtlinien für vertrauliche und streng regulierte Schutzebenen können jedoch jederzeit implementiert werden.
 
-|Schutzebene|Richtlinien|Weitere Informationen|
-|---|---|---|
-|**Basisplan**|[MFA erforderlich, wenn das Anmelderisiko *mittel oder* hoch *ist*](#require-mfa-based-on-sign-in-risk)||
-||[Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](#block-clients-that-dont-support-multi-factor)|Clients, die keine moderne Authentifizierung verwenden, können Richtlinien für bedingten Zugriff umgehen, daher ist es wichtig, diese zu blockieren.|
-||[Nutzer mit hohem Risiko müssen das Kennwort ändern](#high-risk-users-must-change-password)|Zwingt Benutzer, ihr Kennwort bei der Anmeldung zu ändern, wenn für ihr Konto Aktivitäten mit hohem Risiko erkannt werden.|
-||[Anwenden von Datenschutzrichtlinien für Apps](#apply-app-data-protection-policies)|Eine Intune App Protection-Richtlinie pro Plattform (Windows, iOS/iPadOS, Android).|
-||[Erforderlicher genehmigter Apps und App-Schutz](#require-approved-apps-and-app-protection)|Erzwingt mobilen App-Schutz für Smartphones und Tablets mit iOS, iPadOS oder Android.|
-||[Definieren von Richtlinien zur Gerätekonformität](#define-device-compliance-policies)|Eine Richtlinie für jede Plattform.|
-||[Kompatible PCs erforderlich](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Erzwingt die Intune-Verwaltung von PCs mithilfe von Windows oder MacOS.|
-|**Vertraulich**|[MFA erforderlich, wenn das Anmelderisiko *niedrig,* *mittel* oder hoch *ist*](#require-mfa-based-on-sign-in-risk)||
-||[Erfordern kompatibler PCs *und* mobiler Geräte](#require-compliant-pcs-and-mobile-devices)|Erzwingt die Intune-Verwaltung für PCs (Windows oder MacOS) und Smartphones oder Tablets (iOS, iPadOS oder Android).|
-|**Streng geregelt**|[*MFA* immer erforderlich](#require-mfa-based-on-sign-in-risk)|
+|Schutzebene|Richtlinien|Weitere Informationen|Lizenzierung|
+|---|---|---|---|
+|**Basisplan**|[MFA erforderlich, wenn das Anmelderisiko *mittel oder* hoch *ist*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 oder Microsoft 365 E3 mit dem E5 Security-Add-On|
+||[Blockieren von Clients, die die moderne Authentifizierung nicht unterstützen](#block-clients-that-dont-support-multi-factor)|Clients, die keine moderne Authentifizierung verwenden, können Richtlinien für bedingten Zugriff umgehen, daher ist es wichtig, diese zu blockieren.|Microsoft 365 E3 oder E5|
+||[Nutzer mit hohem Risiko müssen das Kennwort ändern](#high-risk-users-must-change-password)|Zwingt Benutzer, ihr Kennwort bei der Anmeldung zu ändern, wenn für ihr Konto Aktivitäten mit hohem Risiko erkannt werden.|Microsoft 365 E5 oder Microsoft 365 E3 mit dem E5 Security-Add-On|
+||[Anwenden von Anwendungsschutzrichtlinien (Application Protection Policies, APP)-Datenschutz](#apply-app-data-protection-policies)|Eine Intune App Protection-Richtlinie pro Plattform (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 oder E5|
+||[Erforderlicher genehmigter Apps und App-Schutz](#require-approved-apps-and-app-protection)|Erzwingt mobilen App-Schutz für Smartphones und Tablets mit iOS, iPadOS oder Android.|Microsoft 365 E3 oder E5|
+||[Definieren von Richtlinien zur Gerätekonformität](#define-device-compliance-policies)|Eine Richtlinie für jede Plattform.|Microsoft 365 E3 oder E5|
+||[Kompatible PCs erforderlich](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Erzwingt die Intune-Verwaltung von PCs mithilfe von Windows oder MacOS.|Microsoft 365 E3 oder E5|
+|**Vertraulich**|[MFA erforderlich, wenn das Anmelderisiko *niedrig,* *mittel* oder hoch *ist*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 oder Microsoft 365 E3 mit dem E5 Security-Add-On|
+||[Erfordern kompatibler PCs *und* mobiler Geräte](#require-compliant-pcs-and-mobile-devices)|Erzwingt die Intune-Verwaltung für PCs (Windows oder MacOS) und Smartphones oder Tablets (iOS, iPadOS oder Android).|Microsoft 365 E3 oder E5|
+|**Streng geregelt**|[*MFA* immer erforderlich](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 oder E5|
 |
 
 ## <a name="assigning-policies-to-groups-and-users"></a>Zuweisen von Richtlinien zu Gruppen und Benutzern
@@ -95,11 +95,11 @@ Seien Sie vorsichtig, wenn Sie auf Gruppen und Benutzer höhere Schutzebenen anw
 
 Alle Azure AD-Gruppen, die im Rahmen dieser Empfehlungen erstellt wurden, müssen als Microsoft 365-Gruppen erstellt werden. Dies ist wichtig für die Bereitstellung von Vertraulichkeitsbezeichnungen beim Sichern von Dokumenten in Microsoft Teams und SharePoint.
 
-![Bildschirmaufnahme zum Erstellen von Microsoft 365-Gruppen](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+![Beispiel für das Erstellen einer Microsoft 365-Gruppe](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>MFA basierend auf dem Anmelderisiko erfordern
 
-Ihre Benutzer sollten sich vor der Verwendung für MFA registrieren lassen. Wenn Sie über Microsoft 365 E5, Microsoft 365 E3 mit dem Identity & Threat Protection-Add-On, Office 365 mit EMS E5 oder einzelnen Azure AD Premium P2-Lizenzen verfügen, können Sie die MFA-Registrierungsrichtlinie mit Azure AD Identity Protection verwenden, um zu verlangen, dass sich Benutzer für MFA registrieren. Die [erforderliche Arbeit umfasst](identity-access-prerequisites.md) die Registrierung aller Benutzer mit MFA.
+Ihre Benutzer sollten sich vor der Verwendung für MFA registrieren lassen. Wenn Sie über Microsoft 365 E5, Microsoft 365 E3 mit dem E5 Security-Add-On, Office 365 mit EMS E5 oder einzelne Azure AD Premium P2-Lizenzen verfügen, können Sie die MFA-Registrierungsrichtlinie mit Azure AD Identity Protection verwenden, um zu verlangen, dass sich Benutzer für MFA registrieren. Die [erforderliche Arbeit umfasst](identity-access-prerequisites.md) die Registrierung aller Benutzer mit MFA.
 
 Nachdem Ihre Benutzer registriert wurden, können Sie MFA für die Anmeldung mit einer neuen Richtlinie für bedingten Zugriff benötigen.
 
@@ -112,7 +112,7 @@ In den folgenden Tabellen werden die Richtlinieneinstellungen für bedingten Zug
 
 Im Abschnitt **Zuordnungen:**
 
-|Setting|Eigenschaften|Werte|Hinweise|
+|Einstellung|Eigenschaften|Werte|Hinweise|
 |---|---|---|---|
 |Benutzer und Gruppen|Einschließen|**Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen** aus: Wählen Sie bestimmte Gruppen aus, die zielgerichtete Benutzerkonten enthalten.|Beginnen Sie mit der Gruppe, die Pilotbenutzerkonten enthält.|
 ||Ausschließen|**Benutzer und Gruppen**: Wählen Sie Ihre Ausnahmegruppe für bedingten Zugriff aus. Dienstkonten (App-Identitäten).|Die Mitgliedschaft sollte bei Bedarf vorübergehend geändert werden.|
@@ -134,7 +134,7 @@ Wenden Sie die Risikoebeneneinstellungen basierend auf der zielorientierten Schu
 
 Im Abschnitt **Zugriffssteuerelemente:**
 
-|Setting|Eigenschaften|Werte|Aktion|
+|Einstellung|Eigenschaften|Werte|Aktion|
 |---|---|---|---|
 |Gewähren|**Grant access**||Auswählen|
 |||**Mehrstufige Authentifizierung erforderlich**|Scheck|
@@ -155,7 +155,7 @@ In [diesem Artikel finden](../../enterprise/microsoft-365-client-support-multi-f
 
 Im Abschnitt **Zuordnungen:**
 
-|Setting|Eigenschaften|Werte|Hinweise|
+|Einstellung|Eigenschaften|Werte|Hinweise|
 |---|---|---|---|
 |Benutzer und Gruppen|Einschließen|**Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen** aus: Wählen Sie bestimmte Gruppen aus, die zielgerichtete Benutzerkonten enthalten.|Beginnen Sie mit der Gruppe, die Pilotbenutzerkonten enthält.|
 ||Ausschließen|**Benutzer und Gruppen**: Wählen Sie Ihre Ausnahmegruppe für bedingten Zugriff aus. Dienstkonten (App-Identitäten).|Die Mitgliedschaft sollte bei Bedarf vorübergehend geändert werden.|
@@ -165,7 +165,7 @@ Im Abschnitt **Zuordnungen:**
 
 Im Abschnitt **Zugriffssteuerelemente:**
 
-|Setting|Eigenschaften|Werte|Aktion|
+|Einstellung|Eigenschaften|Werte|Aktion|
 |---|---|---|---|
 |Gewähren|**Zugriff blockieren**||Auswählen|
 ||**Alle ausgewählten Steuerelemente erforderlich**||Auswählen|
@@ -211,7 +211,7 @@ Verwenden Sie diese Richtlinie in Verbindung mit [Configure Azure AD password pr
 
 ## <a name="apply-app-data-protection-policies"></a>Anwenden von APP-Datenschutzrichtlinien
 
-App Protection Policies (APP) definieren, welche Apps zulässig sind und welche Aktionen sie mit den Daten Ihrer Organisation ausführen können. Die in APP verfügbaren Optionen ermöglichen Es Organisationen, den Schutz an ihre spezifischen Anforderungen anzupassen. Für einige ist es möglicherweise nicht offensichtlich, welche Richtlinieneinstellungen erforderlich sind, um ein vollständiges Szenario zu implementieren. Um Organisationen dabei zu helfen, die Sicherheit mobiler Clientendpunkte zu priorisieren, hat Microsoft die Taxonomie für das APP-Datenschutzframework für die Verwaltung mobiler iOS- und Android-Apps eingeführt.
+APPs definieren, welche Apps zulässig sind und welche Aktionen sie mit den Daten Ihrer Organisation ausführen können. Die in APP verfügbaren Optionen ermöglichen Es Organisationen, den Schutz an ihre spezifischen Anforderungen anzupassen. Für einige ist es möglicherweise nicht offensichtlich, welche Richtlinieneinstellungen erforderlich sind, um ein vollständiges Szenario zu implementieren. Um Organisationen dabei zu helfen, die Sicherheit mobiler Clientendpunkte zu priorisieren, hat Microsoft die Taxonomie für das APP-Datenschutzframework für die Verwaltung mobiler iOS- und Android-Apps eingeführt.
 
 Das APP-Datenschutzframework ist in drei verschiedene Konfigurationsebenen organisiert, auf der jede Ebene von der vorherigen Ebene abhing:
 
@@ -331,12 +331,12 @@ Informationen **zur Systemsicherheit** finden Sie in dieser Tabelle.
 
 |Typ|Eigenschaften|Wert|Aktion|
 |---|---|---|---|
-|Regeln für Microsoft Defender für Endpunkte|Fordern Sie an, dass sich das Gerät bei oder unter der Bewertung des Computerrisikos|Mittel|Auswählen|
+|Microsoft Defender for Endpoint-Regeln im Microsoft Endpoint Manager Admin Center|[Fordern Sie an, dass sich das Gerät bei oder unter der Bewertung des Computerrisikos](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Mittel|Auswählen|
 |
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Erfordern kompatibler PCs (aber nicht kompatible Telefone und Tablets)
 
-Bevor Sie eine Richtlinie hinzufügen, um kompatible PCs zu erfordern, müssen Sie geräte für die Verwaltung bei Intune registrieren. Die Verwendung der mehrstufigen Authentifizierung wird empfohlen, bevor Sie Geräte bei Intune registrieren, um sicher zu sein, dass sich das Gerät im Besitz des beabsichtigten Benutzers befindet.
+Bevor Sie eine Richtlinie hinzufügen, um kompatible PCs zu erfordern, müssen Sie Ihre Geräte für die Verwaltung in Intune registrieren. Die Verwendung der mehrstufigen Authentifizierung wird empfohlen, bevor Sie Geräte bei Intune registrieren, um sicher zu sein, dass sich das Gerät im Besitz des beabsichtigten Benutzers befindet.
 
 So fordern Sie kompatible PCs an:
 

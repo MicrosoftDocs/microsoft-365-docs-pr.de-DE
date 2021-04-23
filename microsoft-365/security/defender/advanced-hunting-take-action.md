@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0c088375cd784b411fdce417d77b1ea176bcee26
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 15eebbba102640a92f9c7712194aaef685a96cfb
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932905"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952608"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Ergreifen von Maßnahmen für erweiterte Suchabfrageergebnisse
 
@@ -34,6 +34,7 @@ ms.locfileid: "51932905"
 
 **Gilt für:**
 - Microsoft 365 Defender
+- Microsoft Defender für Endpunkt
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -79,6 +80,9 @@ Wenn Sie eine der beschriebenen Aktionen ausführen möchten, wählen Sie einen 
 ## <a name="review-actions-taken"></a>Überprüfen der ergriffenen Aktionen
 Jede Aktion wird einzeln im [](m365d-action-center.md) Aktionscenter unter **Aktionscenterverlauf**  >   ( security.microsoft.com/action-center/history )[aufgezeichnet.](https://security.microsoft.com/action-center/history) Wechseln Sie zum Aktionscenter, um den Status der einzelnen Aktionen zu überprüfen.
  
+>[!NOTE]
+>Einige Tabellen in diesem Artikel sind möglicherweise nicht in Microsoft Defender for Endpoint verfügbar. [Aktivieren Sie Microsoft 365 Defender,](m365d-enable.md) um bedrohungen mithilfe von weiteren Datenquellen nach Bedrohungen zu fahnen. Sie können Ihre erweiterten Suchworkflows von Microsoft Defender for Endpoint zu Microsoft 365 Defender verschieben, indem Sie die Schritte unter [Migrate advanced hunting queries from Microsoft Defender for Endpoint ausführen.](advanced-hunting-migrate-from-mde.md)
+
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Lernen der Abfragesprache](advanced-hunting-query-language.md)

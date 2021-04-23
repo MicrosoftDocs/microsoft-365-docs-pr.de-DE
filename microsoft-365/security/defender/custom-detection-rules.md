@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bcb31b904f8e6156d644864f03143e9fc37ae34b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f37cc63c958331f7c03e09689de92c73fd06b4d4
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935713"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952560"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Erstellen und Verwalten von benutzerdefinierten Erkennungsregeln
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935713"
 
 **Gilt für:**
 - Microsoft 365 Defender
+- Microsoft Defender für Endpunkt
 
 Benutzerdefinierte Erkennungsregeln sind Regeln, die Sie mit erweiterten Suchabfragen entwerfen [und](advanced-hunting-overview.md) optimieren können. Mit diesen Regeln können Sie verschiedene Ereignisse und Systemzustände proaktiv überwachen, einschließlich mutmaßlicher Verletzungsaktivitäten und falsch konfigurierter Endpunkte. Sie können festlegen, dass sie in regelmäßigen Intervallen ausgeführt werden, Warnungen generieren und Reaktionsaktionen ausführen, wenn Übereinstimmungen angezeigt werden.
 
@@ -219,6 +220,9 @@ Wechseln Sie im Regeldetailsescreen (**Suche** nach benutzerdefinierten Erkennun
 
 >[!TIP]
 >Verwenden Sie die Auswahlspalte [&#10003;] links neben der Tabelle, um Informationen schnell anzeigen und Aktionen für ein Element in einer Tabelle ergreifen zu können.
+
+>[!NOTE]
+>Einige Spalten in diesem Artikel sind möglicherweise nicht in Microsoft Defender for Endpoint verfügbar. [Aktivieren Sie Microsoft 365 Defender,](m365d-enable.md) um bedrohungen mithilfe von weiteren Datenquellen nach Bedrohungen zu fahnen. Sie können Ihre erweiterten Suchworkflows von Microsoft Defender for Endpoint zu Microsoft 365 Defender verschieben, indem Sie die Schritte unter [Migrate advanced hunting queries from Microsoft Defender for Endpoint ausführen.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="see-also"></a>Siehe auch
 - [Benutzerdefinierte Erkennungen – Übersicht](custom-detections-overview.md)

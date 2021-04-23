@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4eea2931196c192620812c1609c506e1fb99093d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 17aca5fb388aef26504902ee63b22410420c8827
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932953"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952488"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Onboarding von Windows-Servern in den Microsoft Defender for Endpoint-Dienst
 
@@ -73,7 +73,7 @@ Im Allgemeinen müssen Sie die folgenden Schritte ausführen:
 > [!TIP]
 > Nach dem Onboarding des Geräts können Sie einen Erkennungstest ausführen, um zu überprüfen, ob es ordnungsgemäß in den Dienst integrierte ist. Weitere Informationen finden Sie unter [Ausführen eines Erkennungstests auf einem neu integrierten Defender for Endpoint-Endpunkt](run-detection-test.md).
 
-#### <a name="before-you-begin"></a>Bevor Sie beginnen:
+#### <a name="before-you-begin"></a>Bevor Sie loslegen
 
 Führen Sie die folgenden Schritte aus, um die Onboardinganforderungen zu erfüllen:
 
@@ -194,7 +194,7 @@ Defender for Endpoint kann in Azure Defender integriert werden, um eine umfassen
 
 Die folgenden Funktionen sind in dieser Integration enthalten:
 
-- Automatisiertes Onboarding – Der Defender for Endpoint-Sensor wird automatisch auf Windows-Servern aktiviert, die in Azure Defender onboarded sind. Weitere Informationen zum Azure Defender-Onboarding finden Sie [unter Onboarding to Azure Defender Standard for enhanced security](https://docs.microsoft.com/azure/security-center/security-center-onboarding).
+- Automatisiertes Onboarding – Der Defender for Endpoint-Sensor wird automatisch auf Windows-Servern aktiviert, die in Azure Defender onboarded sind. Weitere Informationen zum Azure Defender-Onboarding finden Sie unter [Verwenden der integrierten Microsoft Defender for Endpoint-Lizenz.](https://docs.microsoft.com/azure/security-center/security-center-wdatp)
 
     > [!NOTE]
     > Die Integration zwischen Azure Defender for Servers und Microsoft Defender for Endpoint wurde erweitert, um [Windows Server 2019 und Windows Virtual Desktop (WVD) zu unterstützen.](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
@@ -293,7 +293,7 @@ Zum Offboarden des Windows-Servers können Sie eine der folgenden Methoden verwe
     > [!NOTE]
     > In diesem Artikel wird davon ausgegangen, dass Sie x64-basierte Server verwenden (MMA Agent .exe x64 [Neue SHA-2-kompatible Version](https://go.microsoft.com/fwlink/?LinkId=828603))
 
-**Schritt 2: Erstellen eines Dateinamens DeployMMA.cmd (mithilfe des Editors)** Fügen Sie der Cmd-Datei die folgenden Zeilen hinzu. Beachten Sie, dass Sie Ihre ARBEITSBEREICHs-ID und den SCHLÜSSEL benötigen.
+**Schritt 2: Erstellen eines Dateinamens DeployMMA.cmd (mithilfe des Editors)** Fügen Sie der Cmd-Datei die folgenden Zeilen hinzu. Beachten Sie, dass Sie Ihre ARBEITSBEREICHs-ID und ihren SCHLÜSSEL benötigen.
 
 ```dos
 @echo off 
@@ -338,12 +338,13 @@ Sobald dies geschehen ist, müssen Sie eine Startskriptrichtlinie erstellen:
 
 :::image type="content" source="images/startupprops.png" alt-text="Starteigenschaften":::
 
-Der Name der Datei, die hier ausgeführt werden soll, ist c:\windows\MMA\DeployMMA.cmd Sobald der Server im Rahmen des Startvorgangs neu gestartet wird, wird das Update für die Benutzererfahrung und die Diagnosetelemetrie KB installiert, und dann der MMAAgent installiert, während die Arbeitsbereich-ID und der Schlüssel festgelegt werden, und der Server wird onboarded.
+Der Name der Datei, die hier ausgeführt werden soll, ist c:\windows\MMA\DeployMMA.cmd.
+Sobald der Server im Rahmen des Startvorgangs neu gestartet wurde, installiert er die Update for customer experience and diagnostic telemetry KB, und installiert dann den MMA Agent, während die Arbeitsbereichs-ID und der Schlüssel festgelegt werden, und der Server wird onboarded.
 
-Sie können auch eine sofortige **Aufgabe zum** Ausführen von deployMMA.cmd verwenden, wenn Sie nicht alle Server neu starten möchten.
+Sie können auch eine sofortige **Aufgabe verwenden,** um deployMMA.cmd auszuführen, wenn Sie nicht alle Server neu starten möchten.
 Dies kann in zwei Phasen geschehen. Erstellen Sie **zuerst die Dateien und** den Ordner im GPO – Geben Sie dem System Zeit, um sicherzustellen, dass das Gruppenrichtlinienobjekt angewendet wurde, und alle Server verfügen über die Installationsdateien. Fügen Sie dann die sofortige Aufgabe hinzu. Dadurch wird dasselbe Ergebnis erzielt, ohne dass ein Neustart erforderlich ist.
 
-Da das Skript über eine Exit-Methode verfügt und nicht erneut ausgeführt wird, wenn das MMA installiert ist, können Sie auch eine tägliche geplante Aufgabe verwenden, um dasselbe Ergebnis zu erzielen. Ähnlich wie bei einer Configuration Manager-Konformitätsrichtlinie wird täglich überprüft, ob die MMA vorhanden ist.
+Da das Skript über eine Exit-Methode verfügt und nicht erneut ausgeführt wird, wenn das MMA installiert ist, können Sie auch eine tägliche geplante Aufgabe verwenden, um dasselbe Ergebnis zu erzielen. Ähnlich wie bei einer Configuration Manager-Konformitätsrichtlinie wird täglich überprüft, ob das MMA vorhanden ist.
 
 :::image type="content" source="images/schtask.png" alt-text="Zeitplanaufgabe":::
 

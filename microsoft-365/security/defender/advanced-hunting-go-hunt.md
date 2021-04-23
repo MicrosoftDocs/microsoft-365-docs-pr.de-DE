@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 51d33ea9a372b5bfe017f4c3544e0d6413d53001
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: a78f37d8c1fed1063095e25f19136f0362f17db7
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935833"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952656"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Schnelle Suche nach Entitäts- oder Ereignisinformationen mit Go Hunt
 
@@ -34,12 +34,13 @@ ms.locfileid: "51935833"
 
 **Gilt für:**
 - Microsoft 365 Defender
+- Microsoft Defender für Endpunkt
 
 Mit der *Go-Hunt-Aktion* können Sie Ereignisse und verschiedene Entitätstypen mithilfe leistungsstarker abfragebasierter erweiterter [Suchfunktionen schnell](advanced-hunting-overview.md) untersuchen. Mit dieser Aktion wird automatisch eine erweiterte Suchabfrage ausgeführt, um relevante Informationen zum ausgewählten Ereignis oder der ausgewählten Entität zu finden.
 
 Die *Aktion zum Aufsuchen* ist in verschiedenen Abschnitten des Sicherheitscenters verfügbar, wenn Ereignis- oder Entitätsdetails angezeigt werden. Sie können z. B. die *suche in* den folgenden Abschnitten verwenden:
 
-- Auf der [Seite Vorfall](investigate-incidents.md#summary)können Sie Details zu Benutzern, Geräten und vielen anderen Entitäten überprüfen, die einem Vorfall zugeordnet sind. Wenn Sie eine Entität auswählen, erhalten Sie zusätzliche Informationen sowie verschiedene Aktionen, die Sie für diese Verlockung ergreifen können. Im folgenden Beispiel wird ein Postfach ausgewählt, das Details zum Postfach sowie die Option zum Aufsuchen nach weiteren Informationen zum Postfach enthält.
+- Auf der [Seite Vorfall](investigate-incidents.md#summary)können Sie Details zu Benutzern, Geräten und vielen anderen Entitäten überprüfen, die einem Vorfall zugeordnet sind. Wenn Sie eine Entität auswählen, erhalten Sie zusätzliche Informationen sowie verschiedene Aktionen, die Sie für diese Entität ausführen können. Im folgenden Beispiel wird ein Postfach ausgewählt, das Details zum Postfach sowie die Option zum Aufsuchen nach weiteren Informationen zum Postfach enthält.
 
     ![Abbildung mit Postfachdetails mit der Option zum Aufsuchen](../../media/mtp-ah/go-hunt-email.png)
 
@@ -106,6 +107,9 @@ Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
 Zusätzlich zum Ändern der Abfrage, um relevantere Ergebnisse zu erhalten, können Sie auch:
 - [Anzeigen der Ergebnisse als Diagramme](advanced-hunting-query-results.md#view-query-results-as-a-table-or-chart)
 - [Erstellen einer benutzerdefinierten Erkennungsregel](custom-detection-rules.md)
+
+>[!NOTE]
+>Einige Tabellen in diesem Artikel sind möglicherweise nicht in Microsoft Defender for Endpoint verfügbar. [Aktivieren Sie Microsoft 365 Defender,](m365d-enable.md) um bedrohungen mithilfe von weiteren Datenquellen nach Bedrohungen zu fahnen. Sie können Ihre erweiterten Suchworkflows von Microsoft Defender for Endpoint zu Microsoft 365 Defender verschieben, indem Sie die Schritte unter [Migrate advanced hunting queries from Microsoft Defender for Endpoint ausführen.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 1fb5a4eee41384ef1afc9b46e5bf538344718fe9
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 2fd9b958cdbdaf22346f8171c789f2ca9a8336d1
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939730"
+ms.locfileid: "51957607"
 ---
 # <a name="analyze-users-in-microsoft-365-security-center"></a>Analysieren von Benutzern im Microsoft 365 Security Center
 
@@ -41,6 +41,13 @@ Ein Teil ihrer Vorfallanalyse kann Benutzerkonten enthalten. Beginnen Sie mit de
 Um eine kurze Zusammenfassung eines Benutzerkontos für den Vorfall zu erhalten, aktivieren Sie das Kontrollkästchen neben dem Benutzernamen. Im Folgenden sehen Sie ein Beispiel.
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Beispiel für den Zusammenfassungsbereich des Benutzerkontos für einen Vorfall im Microsoft 365 Security Center":::
+
+> [!NOTE]
+> Auf der Seite Benutzer werden die Azure Active Directory (AD)-Organisation sowie Gruppen angezeigt, die Ihnen dabei helfen, die Gruppen und Berechtigungen zu verstehen, die einem Benutzer zugeordnet sind.
+
+Auf dieser Fly-Out-Seite können Sie Informationen zu Benutzerbedrohungen überprüfen, einschließlich aktueller Vorfälle, aktiver Warnungen und Risikostufe sowie benutzerexposition, Konten, Geräte und mehr.
+
+Darüber hinaus können Sie direkt im Microsoft 365 Security Center Maßnahmen ergreifen, um einen gefährdeten Benutzer zu adressieren, um zu bestätigen, dass der Benutzer gefährdet ist oder dass er sich erneut anmelden muss.
 
 Hier können Sie zur Benutzerseite wechseln **auswählen,** um die Details eines Benutzerkontos anzuzeigen. Im Folgenden sehen Sie ein Beispiel.
 

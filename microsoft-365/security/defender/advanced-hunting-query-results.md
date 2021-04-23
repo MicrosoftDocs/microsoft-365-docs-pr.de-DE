@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 34880c870cdf398ab1565f7f532ac95a6fde475d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: eccf93b019baa240a46260a28f3f0bc109345dd4
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932929"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952596"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Arbeiten mit erweiterten Suchabfrageergebnissen
 
@@ -34,6 +34,7 @@ ms.locfileid: "51932929"
 
 **Gilt für:**
 - Microsoft 365 Defender
+- Microsoft Defender für Endpunkt
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -152,6 +153,9 @@ Verfeinern Sie Ihre Abfrage, indem Sie die Schaltflächen oder für die Werte au
 ![Abbildung eines erweiterten Suchfilters](../../media/advanced-hunting-filter.png)
 
 Sobald der Filter zum Ändern der Abfrage angewendet und die Abfrage ausgeführt wurde, werden die Ergebnisse entsprechend aktualisiert.
+
+>[!NOTE]
+>Einige Tabellen in diesem Artikel sind möglicherweise nicht in Microsoft Defender for Endpoint verfügbar. [Aktivieren Sie Microsoft 365 Defender,](m365d-enable.md) um bedrohungen mithilfe von weiteren Datenquellen nach Bedrohungen zu fahnen. Sie können Ihre erweiterten Suchworkflows von Microsoft Defender for Endpoint zu Microsoft 365 Defender verschieben, indem Sie die Schritte unter [Migrate advanced hunting queries from Microsoft Defender for Endpoint ausführen.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dce9a3d41d8a9d7c260cda8a930867da8c2ae8ac
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: a4714ad9a4388654cbf865ed54afe260a67d724f
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862247"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957503"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender für Endpunkt auf Nicht-Windows-Plattformen
 
@@ -45,25 +45,25 @@ Mit Microsoft Defender for Endpoint profitieren Kunden von einer einheitlichen A
 
 Microsoft Defender for Endpoint auf macOS bietet Antivirus- und Endpunkterkennungs- und Reaktionsfunktionen (EDR) für die drei neuesten versionen von macOS. Kunden können die Lösung über Microsoft Endpoint Manager und Jamf bereitstellen und verwalten. Genau wie bei Microsoft Office unter macOS wird Microsoft Auto Update zum Verwalten von Microsoft Defender for Endpoint auf Mac-Updates verwendet. Informationen zu den wichtigsten Features und Vorteilen finden Sie in unseren [Ankündigungen](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS).
 
-Weitere Informationen zum Einstieg finden Sie in der Defender [](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac)for Endpoint on macOS-Dokumentation .
+Weitere Informationen zum Einstieg finden Sie in der Defender [](microsoft-defender-endpoint-mac.md)for Endpoint on macOS-Dokumentation .
 
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender für Endpunkt unter Linux
 
 Microsoft Defender for Endpoint unter Linux bietet vorbeugende (AV)-Funktionen für Linux-Server. Dies umfasst eine vollständige Befehlszeilenerfahrung, um den Agent zu konfigurieren und zu verwalten, Scans zu initiieren und Bedrohungen zu verwalten. Wir unterstützen die neuesten Versionen der sechs gängigsten Linux Server-Distributionen: RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS oder höher LTS, SLES 12+, Debian 9+ und Oracle Linux 7.2. Microsoft Defender for Endpoint unter Linux kann mithilfe von Puppet, Ansible oder mit Ihrem vorhandenen Linux-Konfigurationsverwaltungstool bereitgestellt und konfiguriert werden. Informationen zu den wichtigsten Features und Vorteilen finden Sie in unseren [Ankündigungen](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux).
 
-Weitere Informationen zu den ersten Schritte finden Sie in der Microsoft Defender for Endpoint on [Linux-Dokumentation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-linux).
+Weitere Informationen zu den ersten Schritte finden Sie in der Microsoft Defender for Endpoint on [Linux-Dokumentation](microsoft-defender-endpoint-linux.md).
 
 ## <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender für Endpunkt unter Android
 
 Microsoft Defender for Endpoint unter Android ist unsere Mobile Threat Defense-Lösung für Geräte mit Android 6.0 und höher. Sowohl die Modi Android Enterprise (Arbeitsprofil) als auch Geräteadministratoren werden unterstützt. Unter Android bieten wir Webschutz, der Antiphishing, das Blockieren unsicherer Verbindungen und das Festlegen benutzerdefinierter Indikatoren umfasst. Die Lösung sucht nach Schadsoftware und potenziell unerwünschten Anwendungen (PUA) und bietet zusätzliche Funktionen zur Verhinderung von Sicherheitsverletzungen durch die Integration in Microsoft Endpoint Manager und bedingten Zugriff. Informationen zu den wichtigsten Features und Vorteilen finden Sie in unseren [Ankündigungen](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android).
 
-Weitere Informationen zum Einstieg finden Sie in der Microsoft Defender for Endpoint on [Android-Dokumentation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-android).
+Weitere Informationen zum Einstieg finden Sie in der Microsoft Defender for Endpoint on [Android-Dokumentation](microsoft-defender-endpoint-android.md).
 
 ## <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender für Endpunkt für iOS
 
 Microsoft Defender for Endpoint unter iOS ist unsere Mobile Threat Defense-Lösung für Geräte mit iOS 11.0 und höher. Überwachte und nicht überwachte Geräte werden unterstützt. Unter iOS bieten wir Webschutz, der Antiphishing, das Blockieren unsicherer Verbindungen und das Festlegen benutzerdefinierter Indikatoren umfasst. Weitere Informationen zu den wichtigsten Features und Vorteilen finden Sie in unseren [Ankündigungen](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS). 
 
-Weitere Informationen zu den ersten Schritte finden Sie in [](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-ios)der Microsoft Defender for Endpoint on iOS-Dokumentation .
+Weitere Informationen zu den ersten Schritte finden Sie in [](microsoft-defender-endpoint-ios.md)der Microsoft Defender for Endpoint on iOS-Dokumentation .
 
 ## <a name="licensing-requirements"></a>Lizenzierungsanforderungen 
 

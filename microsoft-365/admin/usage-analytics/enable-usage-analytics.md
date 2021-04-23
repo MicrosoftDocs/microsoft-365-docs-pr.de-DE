@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Erfahren Sie, wie Sie mit dem Sammeln von Daten für Ihren Mandanten mithilfe der Microsoft 365 Usage Analytics-Vorlagen-App in Power BI beginnen.
-ms.openlocfilehash: 7c92fb643f9be6b5f1474f08df659c4f488a9a41
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d9cadcc8258478fd1d5dbc0d9ae6bf4e814a8435
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579062"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957515"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Aktivieren von Microsoft 365-Nutzungsanalysen
 
@@ -53,11 +53,11 @@ Um die Vorlagen-App zu aktivieren, müssen Sie ein **globaler Administrator sein
   
 Weitere [Informationen finden Sie unter Informationen](../add-users/about-admin-roles.md) zu Administratorrollen. 
   
-1. Wechseln Sie im Admin Center zur Seite **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a>. 
+1. Wechseln Sie im Admin Center zur Registerkarte **Einstellungen** \> **Organisationseinstellungen** \> **Dienste.** 
     
-2. Suchen Sie **auf** der Seite Verwendung die **Microsoft 365-Verwendungsanalysekarte,** und wählen Sie **Erste Schritte aus.**
+2. Wählen Sie **auf der** Registerkarte Dienste die Option **Berichte aus.**
     
-3. Legen Sie im bereich Berichte, der geöffnet wird, Daten für **Microsoft 365-Verwendungsanalysen** für Power BI verfügbar machen auf **On** \> **Save fest.** 
+3. Legen Sie im bereich Berichte, der geöffnet wird, Berichtsdaten für **Microsoft 365-Verwendungsanalysen** für Power BI verfügbar machen auf **On** \> **Save fest.** 
   
 Der Datensammlungsprozess wird in zwei bis 48 Stunden abgeschlossen, abhängig von der Größe Ihres Mandanten. Die **Schaltfläche Zu Power BI** wechseln wird aktiviert (nicht mehr grau), wenn die Datensammlung abgeschlossen ist. 
     
